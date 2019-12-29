@@ -1,7 +1,7 @@
 
 # Scala.js typings for match-sorter
 
-Typings are for version 2.3
+Typings are for version 4.0
 
 ## Library description:
 Simple, expected, and deterministic best-match sorting of an array in JavaScript

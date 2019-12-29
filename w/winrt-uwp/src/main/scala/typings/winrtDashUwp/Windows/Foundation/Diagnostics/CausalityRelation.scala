@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.assignDelegate
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.cancel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.choice
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.error
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.join
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

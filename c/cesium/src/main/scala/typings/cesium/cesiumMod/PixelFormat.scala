@@ -1,13 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.PixelFormat.ALPHA
-import typings.cesium.cesiumMod.PixelFormat.DEPTH_COMPONENT
-import typings.cesium.cesiumMod.PixelFormat.DEPTH_STENCIL
-import typings.cesium.cesiumMod.PixelFormat.LUMINANCE
-import typings.cesium.cesiumMod.PixelFormat.LUMINANCE_ALPHA
-import typings.cesium.cesiumMod.PixelFormat.RGB
-import typings.cesium.cesiumMod.PixelFormat.RGBA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

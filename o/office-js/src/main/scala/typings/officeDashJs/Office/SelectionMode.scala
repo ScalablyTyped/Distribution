@@ -1,9 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.SelectionMode.Default
-import typings.officeDashJs.Office.SelectionMode.None
-import typings.officeDashJs.Office.SelectionMode.Selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

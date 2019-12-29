@@ -1,11 +1,6 @@
 package typings.atFirebaseDatabase.distSrcCoreRepoUnderscoreTransactionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseDatabase.distSrcCoreRepoUnderscoreTransactionMod.TransactionStatus.COMPLETED
-import typings.atFirebaseDatabase.distSrcCoreRepoUnderscoreTransactionMod.TransactionStatus.NEEDS_ABORT
-import typings.atFirebaseDatabase.distSrcCoreRepoUnderscoreTransactionMod.TransactionStatus.RUN
-import typings.atFirebaseDatabase.distSrcCoreRepoUnderscoreTransactionMod.TransactionStatus.SENT
-import typings.atFirebaseDatabase.distSrcCoreRepoUnderscoreTransactionMod.TransactionStatus.SENT_NEEDS_ABORT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

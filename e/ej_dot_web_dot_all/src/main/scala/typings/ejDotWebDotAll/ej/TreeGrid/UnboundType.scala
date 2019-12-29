@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Cancel
-import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Delete
-import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Edit
-import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Save
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

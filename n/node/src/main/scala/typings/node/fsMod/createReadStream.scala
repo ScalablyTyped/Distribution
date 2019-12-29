@@ -14,7 +14,7 @@ object createReadStream extends js.Object {
     * URL support is _experimental_.
     */
   def apply(path: PathLike): ReadStream = js.native
-  def apply(path: PathLike, options: java.lang.String): ReadStream = js.native
+  def apply(path: PathLike, options: String): ReadStream = js.native
   def apply(path: PathLike, options: Anon_AutoClose): ReadStream = js.native
 }
 

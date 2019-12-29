@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.MXXMLWriter60")
 @js.native
 class MXXMLWriter60 protected () extends js.Object {
-  var `MSXML2.MXXMLWriter60_typekey`: MXXMLWriter60 = js.native
+  @JSName("MSXML2.MXXMLWriter60_typekey")
+  var MSXML2DotMXXMLWriter60_typekey: MXXMLWriter60 = js.native
   /** Determine whether or not to write the byte order mark */
   var byteOrderMark: Boolean = js.native
   /** When enabled, the writer no longer escapes out its input when writing it out. */

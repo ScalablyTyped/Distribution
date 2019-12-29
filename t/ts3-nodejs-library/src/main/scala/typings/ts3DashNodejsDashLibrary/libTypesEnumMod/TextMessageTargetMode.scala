@@ -1,9 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TextMessageTargetMode.CHANNEL
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TextMessageTargetMode.CLIENT
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TextMessageTargetMode.SERVER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

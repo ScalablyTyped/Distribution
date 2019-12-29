@@ -72,9 +72,7 @@ trait IRegion extends IBase {
   		* @param p Ext.util.Point/Number The point / offset.
   		* @returns Boolean
   		*/
-  var isOutOfBound: js.UndefOr[
-    js.Function2[/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[js.Any], Boolean]
-  ] = js.undefined
+  var isOutOfBound: js.UndefOr[js.Function2[/* axis */ js.UndefOr[String], /* p */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Method] Check whether the offset is out of bound in the x axis
   		* @param p Number The offset.
   		* @returns Boolean
@@ -93,7 +91,7 @@ trait IRegion extends IBase {
   		* @returns String For example Region[0,1,3,2].
   		*/
   @JSName("toString")
-  var toString_FIRegion: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIRegion: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Translate this region by the given offset amount
   		* @param offset Object
   		* @returns Ext.util.Region This Region.
@@ -121,15 +119,15 @@ object IRegion {
     copy: () => IRegion = null,
     destroy: () => Unit = null,
     equals: /* region */ js.UndefOr[IRegion] => Boolean = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getOutOfBoundOffset: (/* axis */ js.UndefOr[js.Any], /* p */ js.UndefOr[IPoint]) => IRegion = null,
     getOutOfBoundOffsetX: /* p */ js.UndefOr[Double] => Double = null,
     getOutOfBoundOffsetY: /* p */ js.UndefOr[Double] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     intersect: /* region */ js.UndefOr[IRegion] => _ = null,
-    isOutOfBound: (/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[js.Any]) => Boolean = null,
+    isOutOfBound: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[js.Any]) => Boolean = null,
     isOutOfBoundX: /* p */ js.UndefOr[Double] => Boolean = null,
     isOutOfBoundY: /* p */ js.UndefOr[Double] => Boolean = null,
     mixins: js.Any = null,
@@ -138,7 +136,7 @@ object IRegion {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     translateBy: /* offset */ js.UndefOr[js.Any] => IRegion = null,
     union: /* region */ js.UndefOr[IRegion] => IRegion = null,
     uses: Array = null

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.allEntriesLimitedReadWrite
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.allEntriesReadWrite
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.appEntriesReadWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

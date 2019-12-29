@@ -2,7 +2,7 @@ package typings.terminalDashKit.terminalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
-import typings.terminalDashKit.terminalDashKitNumbers.`true`
+import typings.terminalDashKit.terminalDashKitBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

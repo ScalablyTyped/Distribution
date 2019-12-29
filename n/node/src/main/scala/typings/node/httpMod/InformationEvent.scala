@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait InformationEvent extends js.Object {
   var headers: IncomingHttpHeaders
-  var httpVersion: java.lang.String
+  var httpVersion: String
   var httpVersionMajor: Double
   var httpVersionMinor: Double
-  var rawHeaders: js.Array[java.lang.String]
+  var rawHeaders: js.Array[String]
   var statusCode: Double
-  var statusMessage: java.lang.String
+  var statusMessage: String
 }
 
 object InformationEvent {
   @scala.inline
   def apply(
     headers: IncomingHttpHeaders,
-    httpVersion: java.lang.String,
+    httpVersion: String,
     httpVersionMajor: Double,
     httpVersionMinor: Double,
-    rawHeaders: js.Array[java.lang.String],
+    rawHeaders: js.Array[String],
     statusCode: Double,
-    statusMessage: java.lang.String
+    statusMessage: String
   ): InformationEvent = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpVersion = httpVersion.asInstanceOf[js.Any], httpVersionMajor = httpVersionMajor.asInstanceOf[js.Any], httpVersionMinor = httpVersionMinor.asInstanceOf[js.Any], rawHeaders = rawHeaders.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
   

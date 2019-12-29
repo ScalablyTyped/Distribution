@@ -1,7 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerOptions.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

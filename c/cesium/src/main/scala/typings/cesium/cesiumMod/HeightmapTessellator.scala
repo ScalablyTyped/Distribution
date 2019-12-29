@@ -2,7 +2,6 @@ package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.cesium.Anon_EllipsoidHeight
-import typings.cesium.cesiumMod.HeightmapTessellator.DEFAULT_STRUCTURE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

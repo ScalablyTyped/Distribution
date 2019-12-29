@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distEsmSrcParseoptionsMod extends js.Object {
   def buildTimeset(opts: ParsedOptions): js.Array[Time] = js.native
-  def initializeOptions(options: Partial[Options]): Partial[Options] = js.native
+  def initializeOptions(options: Partial[Options]): Anon_Byeaster = js.native
   def parseOptions(options: Partial[Options]): Anon_ParsedOptions = js.native
 }
 

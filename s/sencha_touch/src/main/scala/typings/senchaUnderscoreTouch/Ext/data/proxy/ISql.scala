@@ -24,7 +24,7 @@ trait ISql extends IClient {
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var database: js.UndefOr[java.lang.String] = js.undefined
+  var database: js.UndefOr[String] = js.undefined
   /** [Method] Performs the given destroy operation
   		* @param operation Object
   		* @param callback Object
@@ -42,15 +42,15 @@ trait ISql extends IClient {
   /** [Method] Returns the value of columns
   		* @returns String
   		*/
-  var getColumns: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getColumns: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of database
   		* @returns String
   		*/
-  var getDatabase: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDatabase: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of defaultDateFormat
   		* @returns String
   		*/
-  var getDefaultDateFormat: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDefaultDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Formats the data for each record before sending it to the server
   		* @param record Object The record that we are writing to the server.
   		* @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
@@ -59,7 +59,7 @@ trait ISql extends IClient {
   /** [Method] Returns the value of table
   		* @returns String
   		*/
-  var getTable: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTable: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of tableExists
   		* @returns Boolean
   		*/
@@ -85,19 +85,19 @@ trait ISql extends IClient {
   /** [Method] Sets the value of columns
   		* @param columns String The new value.
   		*/
-  var setColumns: js.UndefOr[js.Function1[/* columns */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setColumns: js.UndefOr[js.Function1[/* columns */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of database
   		* @param database String The new value.
   		*/
-  var setDatabase: js.UndefOr[js.Function1[/* database */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDatabase: js.UndefOr[js.Function1[/* database */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of defaultDateFormat
   		* @param defaultDateFormat String The new value.
   		*/
-  var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of table
   		* @param table String The new value.
   		*/
-  var setTable: js.UndefOr[js.Function1[/* table */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTable: js.UndefOr[js.Function1[/* table */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of tableExists
   		* @param tableExists Boolean The new value.
   		*/
@@ -107,7 +107,7 @@ trait ISql extends IClient {
   		*/
   var setUniqueIdStrategy: js.UndefOr[js.Function1[/* uniqueIdStrategy */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var table: js.UndefOr[java.lang.String] = js.undefined
+  var table: js.UndefOr[String] = js.undefined
   /** [Method] Performs the given update operation
   		* @param operation Object
   		* @param callback Object
@@ -130,13 +130,13 @@ object ISql {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     batch: /* options */ js.UndefOr[js.Any] => IBatch = null,
     batchActions: js.UndefOr[Boolean] = js.undefined,
-    batchOrder: java.lang.String = null,
+    batchOrder: String = null,
     bubbleEvents: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -145,29 +145,29 @@ object ISql {
     clearListeners: () => Unit = null,
     config: js.Any = null,
     create: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    database: java.lang.String = null,
+    database: String = null,
     destroy: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBatchActions: () => Boolean = null,
-    getBatchOrder: () => java.lang.String = null,
+    getBatchOrder: () => String = null,
     getBubbleEvents: () => _ = null,
-    getColumns: () => java.lang.String = null,
-    getDatabase: () => java.lang.String = null,
-    getDefaultDateFormat: () => java.lang.String = null,
+    getColumns: () => String = null,
+    getDatabase: () => String = null,
+    getDefaultDateFormat: () => String = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getModel: () => _ = null,
     getReader: () => _ = null,
     getRecordData: /* record */ js.UndefOr[js.Any] => _ = null,
-    getTable: () => java.lang.String = null,
+    getTable: () => String = null,
     getTableExists: () => Boolean = null,
     getUniqueIdStrategy: () => Boolean = null,
     getWriter: () => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     listeners: js.Any = null,
@@ -175,7 +175,7 @@ object ISql {
     model: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -184,28 +184,28 @@ object ISql {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setBatchActions: /* batchActions */ js.UndefOr[Boolean] => Unit = null,
-    setBatchOrder: /* batchOrder */ js.UndefOr[java.lang.String] => Unit = null,
+    setBatchOrder: /* batchOrder */ js.UndefOr[String] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setColumns: /* columns */ js.UndefOr[java.lang.String] => Unit = null,
-    setDatabase: /* database */ js.UndefOr[java.lang.String] => Unit = null,
-    setDefaultDateFormat: /* defaultDateFormat */ js.UndefOr[java.lang.String] => Unit = null,
+    setColumns: /* columns */ js.UndefOr[String] => Unit = null,
+    setDatabase: /* database */ js.UndefOr[String] => Unit = null,
+    setDefaultDateFormat: /* defaultDateFormat */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setModel: /* model */ js.UndefOr[js.Any] => Unit = null,
     setReader: /* reader */ js.UndefOr[js.Any] => Unit = null,
-    setTable: /* table */ js.UndefOr[java.lang.String] => Unit = null,
+    setTable: /* table */ js.UndefOr[String] => Unit = null,
     setTableExists: /* tableExists */ js.UndefOr[Boolean] => Unit = null,
     setUniqueIdStrategy: /* uniqueIdStrategy */ js.UndefOr[Boolean] => Unit = null,
     setWriter: /* writer */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    table: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    table: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     update: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,

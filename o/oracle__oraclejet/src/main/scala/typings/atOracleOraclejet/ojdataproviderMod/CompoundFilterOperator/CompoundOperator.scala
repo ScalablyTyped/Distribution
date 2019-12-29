@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARand
-  - typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARor
+  - typings.atOracleOraclejet.atOracleOraclejetStrings.$and
+  - typings.atOracleOraclejet.atOracleOraclejetStrings.$or
 */
 trait CompoundOperator extends js.Object
 
 object CompoundOperator {
   @scala.inline
-  def DOLLARand: typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARand = this.cast("$and")
+  def $and: typings.atOracleOraclejet.atOracleOraclejetStrings.$and = this.cast("$and")
   @scala.inline
-  def DOLLARor: typings.atOracleOraclejet.atOracleOraclejetStrings.DOLLARor = this.cast("$or")
+  def $or: typings.atOracleOraclejet.atOracleOraclejetStrings.$or = this.cast("$or")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

@@ -1,7 +1,6 @@
 package typings.reactDashNativeDashNavigation
 
 import typings.reactDashNativeDashNavigation.libDistAdaptersUniqueIdProviderMod.UniqueIdProvider
-import typings.reactDashNativeDashNavigation.libDistEventsCommandsObserverMod.CommandsListener
 import typings.reactDashNativeDashNavigation.libDistInterfacesEventSubscriptionMod.EventSubscription
 import typings.std.Record
 import scala.scalajs.js

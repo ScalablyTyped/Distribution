@@ -1,8 +1,6 @@
 package typings.atFirebaseFirestore.distSrcCoreTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineStateSource.RemoteStore
-import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineStateSource.SharedClientState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

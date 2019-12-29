@@ -1,6 +1,5 @@
 package typings.antdDashMobileDashRn
 
-import typings.antdDashMobileDashRn.libDateDashPickerDashViewDateDashPickerDashViewMod.DatePickerView
 import typings.antdDashMobileDashRn.libDateDashPickerDashViewPropsTypeMod.DatePickerProps
 import typings.react.reactMod.Component
 import scala.scalajs.js

@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait SketchViewModelProperties extends js.Object {
   /**
+    * Default create options set for the Sketch widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultCreateOptions)
+    */
+  var defaultCreateOptions: js.UndefOr[SketchViewModelDefaultCreateOptions] = js.undefined
+  /**
     * Default update options set for the SketchViewModel. Update options set on this property will be overridden by options passed to the [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
@@ -81,6 +87,7 @@ trait SketchViewModelProperties extends js.Object {
 object SketchViewModelProperties {
   @scala.inline
   def apply(
+    defaultCreateOptions: SketchViewModelDefaultCreateOptions = null,
     defaultUpdateOptions: SketchViewModelDefaultUpdateOptions = null,
     layer: GraphicsLayerProperties = null,
     pointSymbol: SimpleMarkerSymbolProperties | PointSymbol3DProperties = null,
@@ -90,6 +97,7 @@ object SketchViewModelProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): SketchViewModelProperties = {
     val __obj = js.Dynamic.literal()
+    if (defaultCreateOptions != null) __obj.updateDynamic("defaultCreateOptions")(defaultCreateOptions.asInstanceOf[js.Any])
     if (defaultUpdateOptions != null) __obj.updateDynamic("defaultUpdateOptions")(defaultUpdateOptions.asInstanceOf[js.Any])
     if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol.asInstanceOf[js.Any])

@@ -1,7 +1,6 @@
 package typings.mobxDashCookie
 
 import typings.jsDashCookie.jsDashCookieMod.CookieAttributes
-import typings.mobxDashCookie.libMobxDashCookieMod.MobxCookie
 import typings.node.NodeJS.Timeout
 import typings.std.Date
 import scala.scalajs.js

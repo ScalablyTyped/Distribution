@@ -4,8 +4,8 @@ import typings.senchaUnderscoreTouch.Ext.Array
 import typings.senchaUnderscoreTouch.Ext.IClass
 import typings.senchaUnderscoreTouch.Ext.IComponent
 import typings.senchaUnderscoreTouch.Ext.IContainer
-import typings.senchaUnderscoreTouch.Ext.IElement
 import typings.senchaUnderscoreTouch.Ext.data.IModel
+import typings.senchaUnderscoreTouch.Ext.dom.IElement
 import typings.senchaUnderscoreTouch.Ext.mixin.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,11 +15,11 @@ trait IIndexBar extends IComponent {
   /** [Config Option] (Boolean) */
   var alphabet: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of direction
   		* @returns String
   		*/
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of letters
   		* @returns Array
   		*/
@@ -27,7 +27,7 @@ trait IIndexBar extends IComponent {
   /** [Method] Returns the value of listPrefix
   		* @returns String
   		*/
-  var getListPrefix: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getListPrefix: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns true when direction is horizontal  */
   var isHorizontal: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns true when direction is vertical  */
@@ -37,13 +37,13 @@ trait IIndexBar extends IComponent {
   /** [Config Option] (Array) */
   var letters: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var listPrefix: js.UndefOr[java.lang.String] = js.undefined
+  var listPrefix: js.UndefOr[String] = js.undefined
   /** [Method] Refreshes the view by reloading the data from the store and re rendering the template  */
   var refresh: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Sets the value of direction
   		* @param direction String The new value.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of letters
   		* @param letters Array The new value.
   		*/
@@ -51,7 +51,7 @@ trait IIndexBar extends IComponent {
   /** [Method] Sets the value of listPrefix
   		* @param listPrefix String The new value.
   		*/
-  var setListPrefix: js.UndefOr[js.Function1[/* listPrefix */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setListPrefix: js.UndefOr[js.Function1[/* listPrefix */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var store: js.UndefOr[Boolean] = js.undefined
 }
@@ -61,14 +61,14 @@ object IIndexBar {
   def apply(
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
+    addCls: (/* cls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alphabet: js.UndefOr[Boolean] = js.undefined,
     alternateClassName: js.Any = null,
-    baseCls: java.lang.String = null,
+    baseCls: String = null,
     border: js.Any = null,
     bottom: js.Any = null,
     bubbleEvents: js.Any = null,
@@ -78,30 +78,30 @@ object IIndexBar {
     centered: js.UndefOr[Boolean] = js.undefined,
     clearListeners: () => Unit = null,
     cls: js.Any = null,
-    componentCls: java.lang.String = null,
+    componentCls: String = null,
     config: js.Any = null,
     contentEl: js.Any = null,
     data: js.Any = null,
     destroy: () => Unit = null,
-    direction: java.lang.String = null,
+    direction: String = null,
     disable: () => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledCls: java.lang.String = null,
-    dock: java.lang.String = null,
-    docked: java.lang.String = null,
+    disabledCls: String = null,
+    dock: String = null,
+    docked: String = null,
     enable: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     enterAnimation: js.Any = null,
     exitAnimation: js.Any = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     flex: Int | Double = null,
     floating: js.UndefOr[Boolean] = js.undefined,
-    floatingCls: java.lang.String = null,
+    floatingCls: String = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     getAlignmentInfo: (/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any]) => Unit = null,
-    getBaseCls: () => java.lang.String = null,
+    getBaseCls: () => String = null,
     getBorder: () => _ = null,
     getBottom: () => _ = null,
     getBubbleEvents: () => _ = null,
@@ -109,26 +109,26 @@ object IIndexBar {
     getCls: () => _ = null,
     getContentEl: () => _ = null,
     getData: () => _ = null,
-    getDirection: () => java.lang.String = null,
+    getDirection: () => String = null,
     getDisabled: () => Boolean = null,
-    getDisabledCls: () => java.lang.String = null,
-    getDocked: () => java.lang.String = null,
-    getEl: () => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    getDisabledCls: () => String = null,
+    getDocked: () => String = null,
+    getEl: () => IElement = null,
     getEnterAnimation: () => _ = null,
     getExitAnimation: () => _ = null,
     getFlex: () => Double = null,
-    getFloatingCls: () => java.lang.String = null,
+    getFloatingCls: () => String = null,
     getHeight: () => _ = null,
     getHidden: () => Boolean = null,
-    getHiddenCls: () => java.lang.String = null,
+    getHiddenCls: () => String = null,
     getHideAnimation: () => _ = null,
     getHtml: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getItemId: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getItemId: () => String = null,
     getLeft: () => _ = null,
     getLetters: () => Array = null,
-    getListPrefix: () => java.lang.String = null,
+    getListPrefix: () => String = null,
     getListeners: () => _ = null,
     getMargin: () => _ = null,
     getMaxHeight: () => _ = null,
@@ -136,33 +136,33 @@ object IIndexBar {
     getMinHeight: () => _ = null,
     getMinWidth: () => _ = null,
     getPadding: () => _ = null,
-    getParent: () => typings.senchaUnderscoreTouch.Ext.dataview.IIndexBar = null,
+    getParent: () => IIndexBar = null,
     getPlugins: () => _ = null,
     getRecord: () => IModel = null,
-    getRenderTo: () => IElement = null,
+    getRenderTo: () => typings.senchaUnderscoreTouch.Ext.IElement = null,
     getRight: () => _ = null,
     getShowAnimation: () => _ = null,
     getSize: () => _ = null,
     getStyle: () => _ = null,
-    getStyleHtmlCls: () => java.lang.String = null,
+    getStyleHtmlCls: () => String = null,
     getStyleHtmlContent: () => Boolean = null,
     getTop: () => _ = null,
     getTpl: () => _ = null,
-    getTplWriteMode: () => java.lang.String = null,
-    getUi: () => java.lang.String = null,
+    getTplWriteMode: () => String = null,
+    getUi: () => String = null,
     getWidth: () => _ = null,
-    getXTypes: () => java.lang.String = null,
+    getXTypes: () => String = null,
     getZIndex: () => Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasParent: () => Boolean = null,
     height: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    hiddenCls: java.lang.String = null,
-    hide: /* animation */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dataview.IIndexBar = null,
+    hiddenCls: String = null,
+    hide: /* animation */ js.UndefOr[js.Any] => IIndexBar = null,
     hideAnimation: js.Any = null,
     hideOnMaskTap: js.UndefOr[Boolean] = js.undefined,
     html: js.Any = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initialize: () => Unit = null,
@@ -170,13 +170,13 @@ object IIndexBar {
     isHidden: () => Boolean = null,
     isHorizontal: () => Unit = null,
     isVertical: () => Unit = null,
-    isXType: (/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean]) => Boolean = null,
-    itemId: java.lang.String = null,
+    isXType: (/* xtype */ js.UndefOr[String], /* shallow */ js.UndefOr[Boolean]) => Boolean = null,
+    itemId: String = null,
     itemSelector: js.UndefOr[Boolean] = js.undefined,
     layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined,
     left: js.Any = null,
     letters: Array = null,
-    listPrefix: java.lang.String = null,
+    listPrefix: String = null,
     listeners: js.Any = null,
     margin: js.Any = null,
     maxHeight: js.Any = null,
@@ -188,7 +188,7 @@ object IIndexBar {
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     monitorOrientation: js.UndefOr[Boolean] = js.undefined,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     padding: js.Any = null,
@@ -199,17 +199,17 @@ object IIndexBar {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeCls: (/* cls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    renderTo: IElement = null,
-    replaceCls: (/* oldCls */ js.UndefOr[java.lang.String], /* newCls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
+    renderTo: typings.senchaUnderscoreTouch.Ext.IElement = null,
+    replaceCls: (/* oldCls */ js.UndefOr[String], /* newCls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
     resetFloating: () => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     right: js.Any = null,
     scroll: js.Any = null,
     self: IClass = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[String] => Unit = null,
     setBorder: /* border */ js.UndefOr[js.Any] => Unit = null,
     setBottom: /* bottom */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
@@ -217,25 +217,25 @@ object IIndexBar {
     setCls: /* cls */ js.UndefOr[js.Any] => Unit = null,
     setContentEl: /* contentEl */ js.UndefOr[js.Any] => Unit = null,
     setData: /* data */ js.UndefOr[js.Any] => Unit = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setDisabled: /* disabled */ js.UndefOr[Boolean] => Unit = null,
-    setDisabledCls: /* disabledCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setDocked: /* docked */ js.UndefOr[java.lang.String] => Unit = null,
+    setDisabledCls: /* disabledCls */ js.UndefOr[String] => Unit = null,
+    setDocked: /* docked */ js.UndefOr[String] => Unit = null,
     setDraggable: /* draggable */ js.UndefOr[js.Any] => Unit = null,
     setEnterAnimation: /* enterAnimation */ js.UndefOr[js.Any] => Unit = null,
     setExitAnimation: /* exitAnimation */ js.UndefOr[js.Any] => Unit = null,
     setFlex: /* flex */ js.UndefOr[Double] => Unit = null,
     setFloating: /* floating */ js.UndefOr[Boolean] => Unit = null,
-    setFloatingCls: /* floatingCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setFloatingCls: /* floatingCls */ js.UndefOr[String] => Unit = null,
     setHeight: /* height */ js.UndefOr[js.Any] => Unit = null,
     setHidden: /* hidden */ js.UndefOr[Boolean] => Unit = null,
-    setHiddenCls: /* hiddenCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setHiddenCls: /* hiddenCls */ js.UndefOr[String] => Unit = null,
     setHideAnimation: /* hideAnimation */ js.UndefOr[js.Any] => Unit = null,
     setHtml: /* html */ js.UndefOr[js.Any] => Unit = null,
-    setItemId: /* itemId */ js.UndefOr[java.lang.String] => Unit = null,
+    setItemId: /* itemId */ js.UndefOr[String] => Unit = null,
     setLeft: /* left */ js.UndefOr[js.Any] => Unit = null,
     setLetters: /* letters */ js.UndefOr[Array] => Unit = null,
-    setListPrefix: /* listPrefix */ js.UndefOr[java.lang.String] => Unit = null,
+    setListPrefix: /* listPrefix */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setMargin: /* margin */ js.UndefOr[js.Any] => Unit = null,
     setMaxHeight: /* maxHeight */ js.UndefOr[js.Any] => Unit = null,
@@ -245,44 +245,44 @@ object IIndexBar {
     setPadding: /* padding */ js.UndefOr[js.Any] => Unit = null,
     setPlugins: /* plugins */ js.UndefOr[js.Any] => Unit = null,
     setRecord: /* record */ js.UndefOr[IModel] => Unit = null,
-    setRenderTo: /* renderTo */ js.UndefOr[IElement] => Unit = null,
+    setRenderTo: /* renderTo */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.IElement] => Unit = null,
     setRight: /* right */ js.UndefOr[js.Any] => Unit = null,
     setScrollable: () => Unit = null,
     setShowAnimation: /* showAnimation */ js.UndefOr[js.Any] => Unit = null,
     setSize: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit = null,
     setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
-    setStyleHtmlCls: /* styleHtmlCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setStyleHtmlCls: /* styleHtmlCls */ js.UndefOr[String] => Unit = null,
     setStyleHtmlContent: /* styleHtmlContent */ js.UndefOr[Boolean] => Unit = null,
     setTop: /* top */ js.UndefOr[js.Any] => Unit = null,
     setTpl: /* tpl */ js.UndefOr[js.Any] => Unit = null,
-    setTplWriteMode: /* tplWriteMode */ js.UndefOr[java.lang.String] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
+    setTplWriteMode: /* tplWriteMode */ js.UndefOr[String] => Unit = null,
+    setUi: /* ui */ js.UndefOr[String] => Unit = null,
     setWidth: /* width */ js.UndefOr[js.Any] => Unit = null,
     setZIndex: /* zIndex */ js.UndefOr[Double] => Unit = null,
-    show: /* animation */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dataview.IIndexBar = null,
+    show: /* animation */ js.UndefOr[js.Any] => IIndexBar = null,
     showAnimation: js.Any = null,
-    showBy: (/* component */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.dataview.IIndexBar], /* alignment */ js.UndefOr[java.lang.String]) => Unit = null,
+    showBy: (/* component */ js.UndefOr[IIndexBar], /* alignment */ js.UndefOr[String]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined,
     store: js.UndefOr[Boolean] = js.undefined,
     style: js.Any = null,
-    styleHtmlCls: java.lang.String = null,
+    styleHtmlCls: String = null,
     styleHtmlContent: js.UndefOr[Boolean] = js.undefined,
     suspendEvents: () => Unit = null,
     top: js.Any = null,
     tpl: js.Any = null,
-    tplWriteMode: java.lang.String = null,
-    ui: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    tplWriteMode: String = null,
+    ui: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    up: /* selector */ js.UndefOr[java.lang.String] => IContainer = null,
+    up: /* selector */ js.UndefOr[String] => IContainer = null,
     update: () => Unit = null,
     updateStyleHtmlCls: (/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     width: js.Any = null,
-    xtype: java.lang.String = null,
+    xtype: String = null,
     zIndex: Int | Double = null
   ): IIndexBar = {
     val __obj = js.Dynamic.literal()

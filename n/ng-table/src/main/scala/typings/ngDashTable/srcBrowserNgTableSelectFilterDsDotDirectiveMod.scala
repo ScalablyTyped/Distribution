@@ -7,8 +7,6 @@ import typings.angular.angularMod.IDirective
 import typings.angular.angularMod.IParseService
 import typings.angular.angularMod.IQService
 import typings.angular.angularMod.IScope
-import typings.ngDashTable.srcBrowserNgTableSelectFilterDsDotDirectiveMod.IInputAttributes
-import typings.ngDashTable.srcBrowserNgTableSelectFilterDsDotDirectiveMod.IScopeExtensions
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.IColumnDef
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.ISelectOption
 import scala.scalajs.js

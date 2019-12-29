@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherQueryFlags.IncludeEmailAddress
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherQueryFlags.IncludeExtensions
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherQueryFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

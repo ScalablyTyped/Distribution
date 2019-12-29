@@ -25,19 +25,19 @@ trait TestOptions[P /* <: Record[String, _] */, R] extends js.Object {
   /**
     * Test function, determines schema validity
     */
-  def test(`this`: TestContext, value: js.Any): Boolean | ValidationError | (js.Promise[Boolean | ValidationError])
+  def test(value: js.Any): Boolean | ValidationError | (js.Promise[Boolean | ValidationError])
 }
 
 object TestOptions {
   @scala.inline
   def apply[P /* <: Record[String, _] */, R](
-    test: (TestContext, js.Any) => Boolean | ValidationError | (js.Promise[Boolean | ValidationError]),
+    test: js.Any => Boolean | ValidationError | (js.Promise[Boolean | ValidationError]),
     exclusive: js.UndefOr[Boolean] = js.undefined,
     message: TestOptionsMessage[P, R] = null,
     name: String = null,
     params: P = null
   ): TestOptions[P, R] = {
-    val __obj = js.Dynamic.literal(test = js.Any.fromFunction2(test))
+    val __obj = js.Dynamic.literal(test = js.Any.fromFunction1(test))
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.authors
   - typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.tags
-  - typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.countDOTposts
+  - typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.countDotposts
 */
 trait IncludeParam extends js.Object
 
@@ -17,7 +17,7 @@ object IncludeParam {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def countDOTposts: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.countDOTposts = this.cast("count.posts")
+  def countDotposts: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.countDotposts = this.cast("count.posts")
   @scala.inline
   def tags: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.tags = this.cast("tags")
 }

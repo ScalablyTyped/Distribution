@@ -16,7 +16,7 @@ class Transaction protected ()
   var _firestore: js.Any = js.native
   var _transaction: js.Any = js.native
   def update(
-    documentRef: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentReference,
+    documentRef: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentReference[_],
     field: FieldPath,
     value: js.Any,
     moreFieldsAndValues: js.Any*

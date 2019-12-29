@@ -11,7 +11,8 @@ class StyleSheets protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.StyleSheets_typekey`: StyleSheets = js.native
+  @JSName("Word.StyleSheets_typekey")
+  var WordDotStyleSheets_typekey: StyleSheets = js.native
   def Add(
     FileName: String,
     LinkType: WdStyleSheetLinkType,

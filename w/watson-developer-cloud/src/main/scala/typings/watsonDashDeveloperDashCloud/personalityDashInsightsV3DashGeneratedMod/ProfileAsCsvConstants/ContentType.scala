@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentType.APPLICATION_JSON
-import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentType.TEXT_HTML
-import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentType.TEXT_PLAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

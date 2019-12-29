@@ -1,19 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_PixelType.TWPT_BW
-import typings.dwt.EnumDWT_PixelType.TWPT_CIEXYZ
-import typings.dwt.EnumDWT_PixelType.TWPT_CMY
-import typings.dwt.EnumDWT_PixelType.TWPT_CMYK
-import typings.dwt.EnumDWT_PixelType.TWPT_GRAY
-import typings.dwt.EnumDWT_PixelType.TWPT_INFRARED
-import typings.dwt.EnumDWT_PixelType.TWPT_LAB
-import typings.dwt.EnumDWT_PixelType.TWPT_PALLETE
-import typings.dwt.EnumDWT_PixelType.TWPT_RGB
-import typings.dwt.EnumDWT_PixelType.TWPT_SCRGB
-import typings.dwt.EnumDWT_PixelType.TWPT_SRGB
-import typings.dwt.EnumDWT_PixelType.TWPT_YUV
-import typings.dwt.EnumDWT_PixelType.TWPT_YUVK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

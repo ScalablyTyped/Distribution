@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bcryptEccFullPublicKey
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bcryptPublicKey
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.capi1PublicKey
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.pkcs1RsaPublicKey
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.x509SubjectPublicKeyInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

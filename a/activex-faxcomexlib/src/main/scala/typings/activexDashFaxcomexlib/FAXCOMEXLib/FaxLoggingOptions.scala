@@ -12,6 +12,7 @@ class FaxLoggingOptions protected () extends js.Object {
   val ActivityLogging: FaxActivityLogging = js.native
   /** Event logging configuration object */
   val EventLogging: FaxEventLogging = js.native
-  var `FAXCOMEXLib.FaxLoggingOptions_typekey`: FaxLoggingOptions = js.native
+  @JSName("FAXCOMEXLib.FaxLoggingOptions_typekey")
+  var FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions = js.native
 }
 

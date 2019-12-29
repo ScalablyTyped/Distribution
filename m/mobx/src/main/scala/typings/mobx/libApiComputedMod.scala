@@ -1,6 +1,5 @@
 package typings.mobx
 
-import typings.mobx.libApiComputedMod.IComputed
 import typings.mobx.libCoreComputedvalueMod.IComputedValue
 import typings.mobx.libCoreComputedvalueMod.IComputedValueOptions
 import typings.std.PropertyDescriptor

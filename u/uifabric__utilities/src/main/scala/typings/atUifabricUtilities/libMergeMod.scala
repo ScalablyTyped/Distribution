@@ -1,6 +1,6 @@
 package typings.atUifabricUtilities
 
-import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`false`
+import typings.atUifabricUtilities.atUifabricUtilitiesBooleans.`false`
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

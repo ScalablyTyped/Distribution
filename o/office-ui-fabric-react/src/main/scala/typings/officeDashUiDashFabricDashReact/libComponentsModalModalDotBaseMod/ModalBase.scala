@@ -14,6 +14,7 @@ class ModalBase protected ()
      with IModal {
   def this(props: IModalProps) = this()
   var _allowScrollOnModal: js.Any = js.native
+  var _allowTouchBodyScroll: js.Any = js.native
   var _focusTrapZone: js.Any = js.native
   var _getMoveDelta: js.Any = js.native
   var _hasRegisteredKeyUp: js.Any = js.native

@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait IRequest extends IBase {
   /** [Config Option] (String) */
-  var action: js.UndefOr[java.lang.String] = js.undefined
+  var action: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var callbackKey: js.UndefOr[java.lang.String] = js.undefined
+  var callbackKey: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var disableCaching: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the value of action
   		* @returns String
   		*/
-  var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAction: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of args
   		* @returns Object
   		*/
@@ -29,7 +29,7 @@ trait IRequest extends IBase {
   /** [Method] Returns the value of callbackKey
   		* @returns String
   		*/
-  var getCallbackKey: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCallbackKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of directFn
   		* @returns Object
   		*/
@@ -49,7 +49,7 @@ trait IRequest extends IBase {
   /** [Method] Returns the value of method
   		* @returns String
   		*/
-  var getMethod: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of operation
   		* @returns Ext.data.Operation
   		*/
@@ -61,7 +61,7 @@ trait IRequest extends IBase {
   /** [Method] Returns the value of password
   		* @returns String
   		*/
-  var getPassword: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of proxy
   		* @returns Ext.data.proxy.Proxy
   		*/
@@ -81,7 +81,7 @@ trait IRequest extends IBase {
   /** [Method] Returns the value of url
   		* @returns String
   		*/
-  var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of useDefaultXhrHeader
   		* @returns Object
   		*/
@@ -89,7 +89,7 @@ trait IRequest extends IBase {
   /** [Method] Returns the value of username
   		* @returns String
   		*/
-  var getUsername: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of withCredentials
   		* @returns Boolean
   		*/
@@ -105,19 +105,19 @@ trait IRequest extends IBase {
   /** [Config Option] (Ext.data.JsonP) */
   var jsonp: js.UndefOr[IJsonP] = js.undefined
   /** [Config Option] (String) */
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.data.Operation) */
   var operation: js.UndefOr[IOperation] = js.undefined
   /** [Config Option] (Object) */
   var params: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var password: js.UndefOr[java.lang.String] = js.undefined
+  var password: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.data.proxy.Proxy) */
   var proxy: js.UndefOr[typings.senchaUnderscoreTouch.Ext.data.proxy.IProxy] = js.undefined
   /** [Method] Sets the value of action
   		* @param action String The new value.
   		*/
-  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of args
   		* @param args Object The new value.
   		*/
@@ -129,7 +129,7 @@ trait IRequest extends IBase {
   /** [Method] Sets the value of callbackKey
   		* @param callbackKey String The new value.
   		*/
-  var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of directFn
   		* @param directFn Object The new value.
   		*/
@@ -149,7 +149,7 @@ trait IRequest extends IBase {
   /** [Method] Sets the value of method
   		* @param method String The new value.
   		*/
-  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of operation
   		* @param operation Ext.data.Operation The new value.
   		*/
@@ -161,7 +161,7 @@ trait IRequest extends IBase {
   /** [Method] Sets the value of password
   		* @param password String The new value.
   		*/
-  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of proxy
   		* @param proxy Ext.data.proxy.Proxy The new value.
   		*/
@@ -183,7 +183,7 @@ trait IRequest extends IBase {
   /** [Method] Sets the value of url
   		* @param url String The new value.
   		*/
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of useDefaultXhrHeader
   		* @param useDefaultXhrHeader Object The new value.
   		*/
@@ -191,7 +191,7 @@ trait IRequest extends IBase {
   /** [Method] Sets the value of username
   		* @param username String The new value.
   		*/
-  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of withCredentials
   		* @param withCredentials Boolean The new value.
   		*/
@@ -201,9 +201,9 @@ trait IRequest extends IBase {
   		*/
   var setXmlData: js.UndefOr[js.Function1[/* xmlData */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var username: js.UndefOr[java.lang.String] = js.undefined
+  var username: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Object) */
@@ -213,37 +213,37 @@ trait IRequest extends IBase {
 object IRequest {
   @scala.inline
   def apply(
-    action: java.lang.String = null,
+    action: String = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    callbackKey: java.lang.String = null,
+    callbackKey: String = null,
     config: js.Any = null,
     destroy: () => Unit = null,
     disableCaching: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
-    getAction: () => java.lang.String = null,
+    extend: String = null,
+    getAction: () => String = null,
     getArgs: () => _ = null,
     getCallback: () => _ = null,
-    getCallbackKey: () => java.lang.String = null,
+    getCallbackKey: () => String = null,
     getDirectFn: () => _ = null,
     getDisableCaching: () => Boolean = null,
     getHeaders: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getJsonData: () => _ = null,
-    getMethod: () => java.lang.String = null,
+    getMethod: () => String = null,
     getOperation: () => IOperation = null,
     getParams: () => _ = null,
-    getPassword: () => java.lang.String = null,
+    getPassword: () => String = null,
     getProxy: () => typings.senchaUnderscoreTouch.Ext.data.proxy.IProxy = null,
     getRecords: () => _ = null,
     getScope: () => _ = null,
     getTimeout: () => Double = null,
-    getUrl: () => java.lang.String = null,
+    getUrl: () => String = null,
     getUseDefaultXhrHeader: () => _ = null,
-    getUsername: () => java.lang.String = null,
+    getUsername: () => String = null,
     getWithCredentials: () => Boolean = null,
     getXmlData: () => _ = null,
     headers: js.Any = null,
@@ -251,39 +251,39 @@ object IRequest {
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     jsonData: js.Any = null,
     jsonp: IJsonP = null,
-    method: java.lang.String = null,
+    method: String = null,
     mixins: js.Any = null,
     operation: IOperation = null,
     params: js.Any = null,
-    password: java.lang.String = null,
+    password: String = null,
     platformConfig: js.Any = null,
     proxy: typings.senchaUnderscoreTouch.Ext.data.proxy.IProxy = null,
     self: IClass = null,
-    setAction: /* action */ js.UndefOr[java.lang.String] => Unit = null,
+    setAction: /* action */ js.UndefOr[String] => Unit = null,
     setArgs: /* args */ js.UndefOr[js.Any] => Unit = null,
     setCallback: /* callback */ js.UndefOr[js.Any] => Unit = null,
-    setCallbackKey: /* callbackKey */ js.UndefOr[java.lang.String] => Unit = null,
+    setCallbackKey: /* callbackKey */ js.UndefOr[String] => Unit = null,
     setDirectFn: /* directFn */ js.UndefOr[js.Any] => Unit = null,
     setDisableCaching: /* disableCaching */ js.UndefOr[Boolean] => Unit = null,
     setHeaders: /* headers */ js.UndefOr[js.Any] => Unit = null,
     setJsonData: /* jsonData */ js.UndefOr[js.Any] => Unit = null,
-    setMethod: /* method */ js.UndefOr[java.lang.String] => Unit = null,
+    setMethod: /* method */ js.UndefOr[String] => Unit = null,
     setOperation: /* operation */ js.UndefOr[IOperation] => Unit = null,
     setParams: /* params */ js.UndefOr[js.Any] => Unit = null,
-    setPassword: /* password */ js.UndefOr[java.lang.String] => Unit = null,
+    setPassword: /* password */ js.UndefOr[String] => Unit = null,
     setProxy: /* proxy */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.data.proxy.IProxy] => Unit = null,
     setRecords: /* records */ js.UndefOr[js.Any] => Unit = null,
     setScope: /* scope */ js.UndefOr[js.Any] => Unit = null,
     setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
     setUseDefaultXhrHeader: /* useDefaultXhrHeader */ js.UndefOr[js.Any] => Unit = null,
-    setUsername: /* username */ js.UndefOr[java.lang.String] => Unit = null,
+    setUsername: /* username */ js.UndefOr[String] => Unit = null,
     setWithCredentials: /* withCredentials */ js.UndefOr[Boolean] => Unit = null,
     setXmlData: /* xmlData */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    url: java.lang.String = null,
-    username: java.lang.String = null,
+    url: String = null,
+    username: String = null,
     uses: Array = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined,
     xmlData: js.Any = null

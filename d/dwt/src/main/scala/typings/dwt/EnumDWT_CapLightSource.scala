@@ -1,13 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapLightSource.TWLS_BLUE
-import typings.dwt.EnumDWT_CapLightSource.TWLS_GREEN
-import typings.dwt.EnumDWT_CapLightSource.TWLS_IR
-import typings.dwt.EnumDWT_CapLightSource.TWLS_NONE
-import typings.dwt.EnumDWT_CapLightSource.TWLS_RED
-import typings.dwt.EnumDWT_CapLightSource.TWLS_UV
-import typings.dwt.EnumDWT_CapLightSource.TWLS_WHITE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

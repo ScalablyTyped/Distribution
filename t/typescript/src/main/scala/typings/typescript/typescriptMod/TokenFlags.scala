@@ -1,12 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.TokenFlags.BinarySpecifier
-import typings.typescript.typescriptMod.TokenFlags.HexSpecifier
-import typings.typescript.typescriptMod.TokenFlags.None
-import typings.typescript.typescriptMod.TokenFlags.Octal
-import typings.typescript.typescriptMod.TokenFlags.OctalSpecifier
-import typings.typescript.typescriptMod.TokenFlags.Scientific
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

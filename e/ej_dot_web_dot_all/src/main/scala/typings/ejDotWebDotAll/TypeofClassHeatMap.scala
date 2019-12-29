@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassHeatMap
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, HeatMap]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), HeatMap] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), HeatMap]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, HeatMap] {
   var Locale: js.Any = js.native
   var fn: HeatMap = js.native
 }

@@ -3,13 +3,13 @@ package typings.uidDashGenerator.uidDashGeneratorMod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.uidDashGenerator.uidDashGeneratorStrings.`!BACKSLASH#DOLLAR%&_quote()*+,-DOT/0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[BACKSLASHBACKSLASH]^_BACKTICKabcdefghijklmnopqrstuvwxyz{|}~`
 import typings.uidDashGenerator.uidDashGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`
-import typings.uidDashGenerator.uidDashGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!_quote()*-DOT_~`
-import typings.uidDashGenerator.uidDashGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-DOT_~`
+import typings.uidDashGenerator.uidDashGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde`
+import typings.uidDashGenerator.uidDashGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde`
 import typings.uidDashGenerator.uidDashGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
 import typings.uidDashGenerator.uidDashGeneratorStrings.`0123456789abcdef`
 import typings.uidDashGenerator.uidDashGeneratorStrings.`123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz`
+import typings.uidDashGenerator.uidDashGeneratorStrings.`ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZLeftsquarebracketBackslashRightsquarebracket^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +23,8 @@ trait UIDGeneratorClass
   val BASE36: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ` = js.native
   val BASE58: `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz` = js.native
   val BASE62: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz` = js.native
-  val BASE66: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-DOT_~` = js.native
-  val BASE71: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!_quote()*-DOT_~` = js.native
-  val BASE94: `!BACKSLASH#DOLLAR%&_quote()*+,-DOT/0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[BACKSLASHBACKSLASH]^_BACKTICKabcdefghijklmnopqrstuvwxyz{|}~` = js.native
+  val BASE66: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde` = js.native
+  val BASE71: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde` = js.native
+  val BASE94: `ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZLeftsquarebracketBackslashRightsquarebracket^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde` = js.native
 }
 

@@ -1,13 +1,6 @@
 package typings.clearbladejsDashClient.CbClient
 
 import org.scalablytyped.runtime.TopLevel
-import typings.clearbladejsDashClient.CbClient.QueryConditions.QUERY_EQUAL
-import typings.clearbladejsDashClient.CbClient.QueryConditions.QUERY_GREATERTHAN
-import typings.clearbladejsDashClient.CbClient.QueryConditions.QUERY_GREATERTHAN_EQUAL
-import typings.clearbladejsDashClient.CbClient.QueryConditions.QUERY_LESSTHAN
-import typings.clearbladejsDashClient.CbClient.QueryConditions.QUERY_LESSTHAN_EQUAL
-import typings.clearbladejsDashClient.CbClient.QueryConditions.QUERY_MATCHES
-import typings.clearbladejsDashClient.CbClient.QueryConditions.QUERY_NOTEQUAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

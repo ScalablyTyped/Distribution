@@ -2,7 +2,6 @@ package typings.microeventDotTs
 
 import typings.microeventDotTs.microeventLibEventInterfaceMod.EventInterface
 import typings.microeventDotTs.microeventLibEventInterfaceMod.EventInterface.HandlerInterface
-import typings.microeventDotTs.microeventLibEventMod.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

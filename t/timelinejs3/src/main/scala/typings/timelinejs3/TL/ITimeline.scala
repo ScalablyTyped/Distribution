@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ITimeline
   extends ITimelineEvents
-     with Instantiable2[
-      /* containerId */ String, 
-      (/* data */ ITimelineConfig) | (/* data */ String), 
-      ITimeline
-    ]
      with Instantiable3[
       /* containerId */ String, 
       (/* data */ ITimelineConfig) | (/* data */ String), 
       /* options */ ITimelineOptions, 
+      ITimeline
+    ]
+     with Instantiable2[
+      /* containerId */ String, 
+      (/* data */ ITimelineConfig) | (/* data */ String), 
       ITimeline
     ] {
   var current_id: String = js.native

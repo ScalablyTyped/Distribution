@@ -34,22 +34,22 @@ trait DOMMatrixReadOnly extends js.Object {
   var m42: Double = js.native
   var m43: Double = js.native
   var m44: Double = js.native
-  def flipX(): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def flipY(): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def inverse(): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def multiply(other: typings.geometryDashDom.GeometryDom.DOMMatrix): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def rotate(angle: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def rotate(angle: Double, originX: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def rotate(angle: Double, originX: Double, originY: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def rotateAxisAngle(x: Double, y: Double, z: Double, angle: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def rotateFromVector(x: Double, y: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def scale(scale: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def scale(scale: Double, originX: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def scale(scale: Double, originX: Double, originY: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def scale3d(scale: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def scale3d(scale: Double, originX: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def scale3d(scale: Double, originX: Double, originY: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def scale3d(scale: Double, originX: Double, originY: Double, originZ: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
+  def flipX(): DOMMatrix = js.native
+  def flipY(): DOMMatrix = js.native
+  def inverse(): DOMMatrix = js.native
+  def multiply(other: DOMMatrix): DOMMatrix = js.native
+  def rotate(angle: Double): DOMMatrix = js.native
+  def rotate(angle: Double, originX: Double): DOMMatrix = js.native
+  def rotate(angle: Double, originX: Double, originY: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Double, y: Double, z: Double, angle: Double): DOMMatrix = js.native
+  def rotateFromVector(x: Double, y: Double): DOMMatrix = js.native
+  def scale(scale: Double): DOMMatrix = js.native
+  def scale(scale: Double, originX: Double): DOMMatrix = js.native
+  def scale(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
+  def scale3d(scale: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
   def scaleNonUniform(
     scale: Double,
     scaleX: Double,
@@ -58,14 +58,14 @@ trait DOMMatrixReadOnly extends js.Object {
     originX: Double,
     originY: Double,
     originZ: Double
-  ): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def skewX(sx: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def skewY(sx: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
+  ): DOMMatrix = js.native
+  def skewX(sx: Double): DOMMatrix = js.native
+  def skewY(sx: Double): DOMMatrix = js.native
   def toFloat32Array(): js.Array[Double] = js.native
   def toFloat64Array(): js.Array[Double] = js.native
-  def transformPoint(): typings.geometryDashDom.GeometryDom.DOMPoint = js.native
-  def transformPoint(point: DOMPointInit): typings.geometryDashDom.GeometryDom.DOMPoint = js.native
-  def translate(tx: Double, ty: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
-  def translate(tx: Double, ty: Double, tz: Double): typings.geometryDashDom.GeometryDom.DOMMatrix = js.native
+  def transformPoint(): DOMPoint = js.native
+  def transformPoint(point: DOMPointInit): DOMPoint = js.native
+  def translate(tx: Double, ty: Double): DOMMatrix = js.native
+  def translate(tx: Double, ty: Double, tz: Double): DOMMatrix = js.native
 }
 

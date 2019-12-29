@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore
 
 import typings.atBlueprintjsCore.libEsmCommonConstructorMod.IConstructor
-import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysTargetMod.IHotkeysTargetComponent
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactElement
 import scala.scalajs.js

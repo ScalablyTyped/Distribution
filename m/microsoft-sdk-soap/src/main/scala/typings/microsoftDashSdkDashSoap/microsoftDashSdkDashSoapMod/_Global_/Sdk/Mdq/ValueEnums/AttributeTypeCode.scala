@@ -1,18 +1,6 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.BigInt
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.CalendarRules
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Customer
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.EntityName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Integer
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Memo
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Owner
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Picklist
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.State
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Status
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Uniqueidentifier
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Virtual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,9 +82,7 @@ object AttributeTypeCode extends js.Object {
   
   /* 1 */ @js.native
   object Boolean
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Boolean with scala.Double
-        ]
+    extends TopLevel[Boolean with scala.Double]
   
   /* 2 */ @js.native
   object CalendarRules
@@ -108,21 +94,15 @@ object AttributeTypeCode extends js.Object {
   
   /* 4 */ @js.native
   object DateTime
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.DateTime with scala.Double
-        ]
+    extends TopLevel[DateTime with scala.Double]
   
   /* 5 */ @js.native
   object Decimal
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Decimal with scala.Double
-        ]
+    extends TopLevel[Decimal with scala.Double]
   
   /* 6 */ @js.native
   object Double
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Double with scala.Double
-        ]
+    extends TopLevel[Double with scala.Double]
   
   /* 7 */ @js.native
   object EntityName
@@ -134,15 +114,11 @@ object AttributeTypeCode extends js.Object {
   
   /* 9 */ @js.native
   object Lookup
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Lookup with scala.Double
-        ]
+    extends TopLevel[Lookup with scala.Double]
   
   /* 10 */ @js.native
   object ManagedProperty
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.ManagedProperty with scala.Double
-        ]
+    extends TopLevel[ManagedProperty with scala.Double]
   
   /* 11 */ @js.native
   object Memo
@@ -150,9 +126,7 @@ object AttributeTypeCode extends js.Object {
   
   /* 12 */ @js.native
   object Money
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.Money with scala.Double
-        ]
+    extends TopLevel[Money with scala.Double]
   
   /* 13 */ @js.native
   object Owner
@@ -160,9 +134,7 @@ object AttributeTypeCode extends js.Object {
   
   /* 14 */ @js.native
   object PartyList
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.PartyList with scala.Double
-        ]
+    extends TopLevel[PartyList with scala.Double]
   
   /* 15 */ @js.native
   object Picklist
@@ -178,9 +150,7 @@ object AttributeTypeCode extends js.Object {
   
   /* 18 */ @js.native
   object String
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.AttributeTypeCode.String with scala.Double
-        ]
+    extends TopLevel[String with scala.Double]
   
   /* 19 */ @js.native
   object Uniqueidentifier

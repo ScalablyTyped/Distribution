@@ -1,11 +1,6 @@
 package typings.pako.pakoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pako.pakoMod.StrategyValues.Z_DEFAULT_STRATEGY
-import typings.pako.pakoMod.StrategyValues.Z_FILTERED
-import typings.pako.pakoMod.StrategyValues.Z_FIXED
-import typings.pako.pakoMod.StrategyValues.Z_HUFFMAN_ONLY
-import typings.pako.pakoMod.StrategyValues.Z_RLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

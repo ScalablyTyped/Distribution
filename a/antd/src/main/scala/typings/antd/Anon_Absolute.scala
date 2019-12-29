@@ -306,7 +306,7 @@ trait Anon_Absolute extends js.Object {
   var MozAnimationPlayState: js.UndefOr[String] = js.undefined
   var MozAnimationTimingFunction: js.UndefOr[String] = js.undefined
   var MozAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any
   ] = js.undefined
   var MozBackfaceVisibility: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | hidden | visible] = js.undefined
   var MozBackgroundClip: js.UndefOr[String] = js.undefined
@@ -460,7 +460,7 @@ trait Anon_Absolute extends js.Object {
   var WebkitAnimationPlayState: js.UndefOr[String] = js.undefined
   var WebkitAnimationTimingFunction: js.UndefOr[String] = js.undefined
   var WebkitAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 54 */ js.Any
   ] = js.undefined
   var WebkitBackdropFilter: js.UndefOr[String] = js.undefined
   var WebkitBackfaceVisibility: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | hidden | visible] = js.undefined
@@ -618,6 +618,7 @@ trait Anon_Absolute extends js.Object {
   var appearance: js.UndefOr[
     button | meter | textarea | none | inherit | `-moz-initial` | initial | revert | unset | `button-bevel` | checkbox | listbox | menulist | `menulist-button` | `progress-bar` | `push-button` | radio | searchfield | `slider-horizontal` | `square-button` | textfield
   ] = js.undefined
+  var aspectRatio: js.UndefOr[String] = js.undefined
   var backdropFilter: js.UndefOr[String] = js.undefined
   var backfaceVisibility: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | hidden | visible] = js.undefined
   var background: js.UndefOr[String | Double] = js.undefined
@@ -1044,7 +1045,6 @@ trait Anon_Absolute extends js.Object {
   var offsetInlineEnd: js.UndefOr[String | Double] = js.undefined
   var offsetInlineStart: js.UndefOr[String | Double] = js.undefined
   var offsetPath: js.UndefOr[String] = js.undefined
-  var offsetPosition: js.UndefOr[String | Double] = js.undefined
   var offsetRotate: js.UndefOr[String] = js.undefined
   var offsetRotation: js.UndefOr[String] = js.undefined
   var opacity: js.UndefOr[String | Double] = js.undefined
@@ -1284,7 +1284,7 @@ object Anon_Absolute {
     MozAnimationName: String = null,
     MozAnimationPlayState: String = null,
     MozAnimationTimingFunction: String = null,
-    MozAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
+    MozAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any = null,
     MozBackfaceVisibility: inherit | `-moz-initial` | initial | revert | unset | hidden | visible = null,
     MozBackgroundClip: String = null,
     MozBackgroundInlinePolicy: inherit | `-moz-initial` | initial | revert | unset | clone | slice = null,
@@ -1402,7 +1402,7 @@ object Anon_Absolute {
     WebkitAnimationName: String = null,
     WebkitAnimationPlayState: String = null,
     WebkitAnimationTimingFunction: String = null,
-    WebkitAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any = null,
+    WebkitAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 54 */ js.Any = null,
     WebkitBackdropFilter: String = null,
     WebkitBackfaceVisibility: inherit | `-moz-initial` | initial | revert | unset | hidden | visible = null,
     WebkitBackgroundClip: String = null,

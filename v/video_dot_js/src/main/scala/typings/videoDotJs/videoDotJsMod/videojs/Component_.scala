@@ -67,11 +67,11 @@ trait Component_ extends EventedMixin {
     * @see [Information on CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
     */
   @JSName("$$")
-  def $$(selector: String): NodeList = js.native
+  def DollarDollar(selector: String): NodeList = js.native
   @JSName("$$")
-  def $$(selector: String, context: String): NodeList = js.native
+  def DollarDollar(selector: String, context: String): NodeList = js.native
   @JSName("$$")
-  def $$(selector: String, context: Element): NodeList = js.native
+  def DollarDollar(selector: String, context: Element): NodeList = js.native
   /**
     * Add a child `Component` inside the current `Component`.
     *

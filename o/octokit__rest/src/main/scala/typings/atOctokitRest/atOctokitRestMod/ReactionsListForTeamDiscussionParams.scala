@@ -1,6 +1,6 @@
 package typings.atOctokitRest.atOctokitRestMod
 
-import typings.atOctokitRest.atOctokitRestStrings.`+1`
+import typings.atOctokitRest.atOctokitRestStrings.Plussign1
 import typings.atOctokitRest.atOctokitRestStrings.`-1`
 import typings.atOctokitRest.atOctokitRestStrings.confused
 import typings.atOctokitRest.atOctokitRestStrings.eyes
@@ -16,7 +16,7 @@ trait ReactionsListForTeamDiscussionParams extends js.Object {
   /**
     * Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to a team discussion.
     */
-  var content: js.UndefOr[`+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
+  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
   var discussion_number: Double
   /**
     * Page number of the results to fetch.
@@ -34,7 +34,7 @@ object ReactionsListForTeamDiscussionParams {
   def apply(
     discussion_number: Double,
     team_id: Double,
-    content: `+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes = null,
+    content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes = null,
     page: Int | Double = null,
     per_page: Int | Double = null
   ): ReactionsListForTeamDiscussionParams = {

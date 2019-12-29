@@ -27,7 +27,7 @@ object default extends TopLevel[
       (ForwardRefExoticComponent[
         (Pick[
           Props, 
-          children | other | zero | one | two | few | many | localeMatcher | `type` | format | value
+          children | other | zero | one | two | few | many | format | localeMatcher | `type` | value
         ]) with Anon_ForwardedRefInstance with RefAttributes[_]
       ]) with Anon_WrappedComponentComponentType
     ]

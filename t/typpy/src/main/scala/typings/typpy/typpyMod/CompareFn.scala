@@ -8,7 +8,7 @@ import typings.std.ObjectConstructor
 import typings.std.RegExp
 import typings.std.RegExpConstructor
 import typings.std.StringConstructor
-import typings.typpy.typpyNumbers.`true`
+import typings.typpy.typpyBooleans.`true`
 import typings.typpy.typpyStrings.`null`
 import typings.typpy.typpyStrings.`object`
 import typings.typpy.typpyStrings.array

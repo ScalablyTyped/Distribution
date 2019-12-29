@@ -17,6 +17,6 @@ package object fsMod {
     - typings.node.Buffer
     - typings.node.urlMod.URL
   */
-  type PathLike = _PathLike | java.lang.String
-  type WriteFileOptions = Anon_EncodingFlagMode | java.lang.String | Null
+  type PathLike = _PathLike | String
+  type WriteFileOptions = Anon_EncodingFlagMode | String | Null
 }

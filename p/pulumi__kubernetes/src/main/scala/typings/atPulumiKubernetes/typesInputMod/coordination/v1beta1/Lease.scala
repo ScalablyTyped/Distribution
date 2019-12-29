@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.coordination.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.coordinationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait Lease extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`coordinationDOTk8sDOTio/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[coordinationDotk8sDotioSlashv1beta1]] = js.undefined
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -40,7 +40,7 @@ trait Lease extends js.Object {
 object Lease {
   @scala.inline
   def apply(
-    apiVersion: Input[`coordinationDOTk8sDOTio/v1beta1`] = null,
+    apiVersion: Input[coordinationDotk8sDotioSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Lease] = null,
     metadata: Input[ObjectMeta] = null,
     spec: Input[LeaseSpec] = null

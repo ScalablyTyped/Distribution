@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.Placement.absolute
-import typings.officeDashJs.Excel.Placement.oneCell
-import typings.officeDashJs.Excel.Placement.twoCell
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

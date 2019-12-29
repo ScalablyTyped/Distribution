@@ -43,7 +43,8 @@ class JournalItem protected () extends js.Object {
   var MessageClass: String = js.native
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
-  var `Outlook.JournalItem_typekey`: JournalItem = js.native
+  @JSName("Outlook.JournalItem_typekey")
+  var OutlookDotJournalItem_typekey: JournalItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

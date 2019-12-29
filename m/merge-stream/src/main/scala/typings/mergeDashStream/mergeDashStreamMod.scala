@@ -1,6 +1,5 @@
 package typings.mergeDashStream
 
-import typings.mergeDashStream.mergeDashStreamMod.MergedStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js

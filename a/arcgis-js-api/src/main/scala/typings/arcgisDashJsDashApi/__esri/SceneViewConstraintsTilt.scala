@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.HashMap
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.manual
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +22,7 @@ trait SceneViewConstraintsTilt extends AnonymousAccessor {
     *
     * @default auto
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[auto | manual] = js.undefined
 }
 
 object SceneViewConstraintsTilt {
@@ -31,7 +33,7 @@ object SceneViewConstraintsTilt {
     propertyIsEnumerable: PropertyKey => Boolean,
     get: /* propertyName */ String => _ = null,
     max: Int | Double = null,
-    mode: String = null,
+    mode: auto | manual = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewConstraintsTilt]) with (js.Function1[/* props */ HashMap[_], SceneViewConstraintsTilt]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): SceneViewConstraintsTilt = {

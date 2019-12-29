@@ -1,6 +1,5 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.srcOutputAbstractUnderscoreEmitterMod.EmitterVisitorContext
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.AssertNotNull
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperatorExpr
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinMethod

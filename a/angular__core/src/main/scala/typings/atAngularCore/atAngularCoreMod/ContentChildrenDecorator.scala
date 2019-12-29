@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ContentChildrenDecorator
-  extends Instantiable2[
+  extends Instantiable1[
       (/* selector */ js.Function) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
-      /* opts */ Anon_Descendants, 
       Query
     ]
-     with Instantiable1[
+     with Instantiable2[
       (/* selector */ js.Function) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
+      /* opts */ Anon_Descendants, 
       Query
     ] {
   def apply(selector: String): js.Any = js.native

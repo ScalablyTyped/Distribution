@@ -19,10 +19,10 @@ object ^ extends js.Object {
   def apply(src: Anon_Uri, options: Anon_Buffer with Options): js.Promise[Buffer] = js.native
   def apply(src: Anon_Uri, options: Anon_Base64 with Options): js.Promise[String] = js.native
   def apply(src: Buffer): js.Promise[Buffer] = js.native
-  def apply(src: Buffer, options: Anon_Buffer with Options): js.Promise[Buffer] = js.native
   def apply(src: Buffer, options: Anon_Base64 with Options): js.Promise[String] = js.native
+  def apply(src: Buffer, options: Anon_Buffer with Options): js.Promise[Buffer] = js.native
   def apply(src: ReadStream): js.Promise[Buffer] = js.native
-  def apply(src: ReadStream, options: Anon_Buffer with Options): js.Promise[Buffer] = js.native
   def apply(src: ReadStream, options: Anon_Base64 with Options): js.Promise[String] = js.native
+  def apply(src: ReadStream, options: Anon_Buffer with Options): js.Promise[Buffer] = js.native
 }
 

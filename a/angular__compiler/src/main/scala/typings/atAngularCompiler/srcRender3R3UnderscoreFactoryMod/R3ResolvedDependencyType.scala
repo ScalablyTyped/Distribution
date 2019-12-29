@@ -1,9 +1,6 @@
 package typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType.Attribute
-import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType.ChangeDetectorRef
-import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

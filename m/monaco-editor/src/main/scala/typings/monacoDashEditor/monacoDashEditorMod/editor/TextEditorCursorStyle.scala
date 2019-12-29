@@ -1,12 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Block
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.BlockOutline
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Line
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.LineThin
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Underline
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.UnderlineThin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

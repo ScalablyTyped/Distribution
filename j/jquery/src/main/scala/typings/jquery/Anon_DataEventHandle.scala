@@ -14,7 +14,6 @@ trait Anon_DataEventHandle[TTarget, TData] extends _SpecialEventHook[TTarget, TD
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#handle-function-event-jquery-event-data-object }\`
     */
   def handle(
-    `this`: TTarget,
     event: (TriggeredEvent[TTarget, TData, _, _]) with (Anon_HandleObjHandleObject[TTarget, TData]),
     data: TData*
   ): Unit
@@ -23,9 +22,9 @@ trait Anon_DataEventHandle[TTarget, TData] extends _SpecialEventHook[TTarget, TD
 object Anon_DataEventHandle {
   @scala.inline
   def apply[TTarget, TData](
-    handle: (TTarget, (TriggeredEvent[TTarget, TData, _, _]) with (Anon_HandleObjHandleObject[TTarget, TData]), /* repeated */ TData) => Unit
+    handle: ((TriggeredEvent[TTarget, TData, _, _]) with (Anon_HandleObjHandleObject[TTarget, TData]), /* repeated */ TData) => Unit
   ): Anon_DataEventHandle[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction3(handle))
+    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
   
     __obj.asInstanceOf[Anon_DataEventHandle[TTarget, TData]]
   }

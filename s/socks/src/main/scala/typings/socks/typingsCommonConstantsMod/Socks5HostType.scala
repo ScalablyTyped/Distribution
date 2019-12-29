@@ -1,9 +1,6 @@
 package typings.socks.typingsCommonConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.socks.typingsCommonConstantsMod.Socks5HostType.Hostname
-import typings.socks.typingsCommonConstantsMod.Socks5HostType.IPv4
-import typings.socks.typingsCommonConstantsMod.Socks5HostType.IPv6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

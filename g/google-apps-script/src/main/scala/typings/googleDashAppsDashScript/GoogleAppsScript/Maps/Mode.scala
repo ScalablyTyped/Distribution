@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Mode.BICYCLING
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Mode.DRIVING
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Mode.TRANSIT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Mode.WALKING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

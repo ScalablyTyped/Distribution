@@ -3,8 +3,6 @@ package typings.nodeDashXmppDashCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.ltx.libElementMod.Node
 import typings.node.eventsMod.EventEmitter
-import typings.nodeDashXmppDashCore.nodeDashXmppDashCoreMod.JID
-import typings.nodeDashXmppDashCore.nodeDashXmppDashCoreMod.Stanza
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait UnselectEventArgs extends js.Object {
   /** Returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the name of unselected item.
     */
   var name: js.UndefOr[String] = js.undefined
@@ -34,7 +34,7 @@ trait UnselectEventArgs extends js.Object {
 object UnselectEventArgs {
   @scala.inline
   def apply(
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     name: String = null,
     names: js.Array[String] = null,
     nodeType: String = null,

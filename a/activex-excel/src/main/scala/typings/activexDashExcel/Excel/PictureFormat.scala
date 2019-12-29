@@ -20,7 +20,8 @@ class PictureFormat protected () extends js.Object {
   var CropLeft: Double = js.native
   var CropRight: Double = js.native
   var CropTop: Double = js.native
-  var `Excel.PictureFormat_typekey`: PictureFormat = js.native
+  @JSName("Excel.PictureFormat_typekey")
+  var ExcelDotPictureFormat_typekey: PictureFormat = js.native
   val Parent: js.Any = js.native
   var TransparencyColor: MsoRGBType = js.native
   var TransparentBackground: MsoTriState = js.native

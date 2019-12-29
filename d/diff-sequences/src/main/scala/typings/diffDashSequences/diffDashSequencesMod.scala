@@ -1,7 +1,5 @@
 package typings.diffDashSequences
 
-import typings.diffDashSequences.diffDashSequencesMod.FoundSubsequence
-import typings.diffDashSequences.diffDashSequencesMod.IsCommon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

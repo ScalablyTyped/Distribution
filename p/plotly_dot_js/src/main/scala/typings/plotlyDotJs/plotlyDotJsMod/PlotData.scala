@@ -1,65 +1,16 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
-import typings.plotlyDotJs.Anon_Angular
-import typings.plotlyDotJs.Anon_Bottom
 import typings.plotlyDotJs.Anon_End
-import typings.plotlyDotJs.Anon_Font
-import typings.plotlyDotJs.plotlyDotJsNumbers.`false`
+import typings.plotlyDotJs.plotlyDotJsBooleans.`false`
 import typings.plotlyDotJs.plotlyDotJsStrings.`bottom center`
 import typings.plotlyDotJs.plotlyDotJsStrings.`bottom left`
 import typings.plotlyDotJs.plotlyDotJsStrings.`bottom right`
-import typings.plotlyDotJs.plotlyDotJsStrings.`gauge+delta`
-import typings.plotlyDotJs.plotlyDotJsStrings.`gauge+number+delta`
-import typings.plotlyDotJs.plotlyDotJsStrings.`gauge+number`
-import typings.plotlyDotJs.plotlyDotJsStrings.`label+percent`
-import typings.plotlyDotJs.plotlyDotJsStrings.`label+text+percent`
-import typings.plotlyDotJs.plotlyDotJsStrings.`label+text+value`
-import typings.plotlyDotJs.plotlyDotJsStrings.`label+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`label+value+percent`
-import typings.plotlyDotJs.plotlyDotJsStrings.`label+value`
-import typings.plotlyDotJs.plotlyDotJsStrings.`lines+markers`
 import typings.plotlyDotJs.plotlyDotJsStrings.`middle center`
 import typings.plotlyDotJs.plotlyDotJsStrings.`middle left`
 import typings.plotlyDotJs.plotlyDotJsStrings.`middle right`
-import typings.plotlyDotJs.plotlyDotJsStrings.`number+delta`
-import typings.plotlyDotJs.plotlyDotJsStrings.`text+lines+markers`
-import typings.plotlyDotJs.plotlyDotJsStrings.`text+lines`
-import typings.plotlyDotJs.plotlyDotJsStrings.`text+markers`
-import typings.plotlyDotJs.plotlyDotJsStrings.`text+percent`
-import typings.plotlyDotJs.plotlyDotJsStrings.`text+value+percent`
-import typings.plotlyDotJs.plotlyDotJsStrings.`text+value`
 import typings.plotlyDotJs.plotlyDotJsStrings.`top center`
 import typings.plotlyDotJs.plotlyDotJsStrings.`top left`
 import typings.plotlyDotJs.plotlyDotJsStrings.`top right`
-import typings.plotlyDotJs.plotlyDotJsStrings.`value+percent`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+y+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+y+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+y+z+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+y+z+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+y+z`
-import typings.plotlyDotJs.plotlyDotJsStrings.`x+y`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+x+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+x+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+x+z+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+x+z+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+x+z`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+x`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+z+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+z+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`y+z`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+x+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+x+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+x+y+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+x+y+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+x+y`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+x`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+y+x+name`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+y+x+text`
-import typings.plotlyDotJs.plotlyDotJsStrings.`z+y+x`
 import typings.plotlyDotJs.plotlyDotJsStrings.all
 import typings.plotlyDotJs.plotlyDotJsStrings.area
 import typings.plotlyDotJs.plotlyDotJsStrings.bar
@@ -77,6 +28,9 @@ import typings.plotlyDotJs.plotlyDotJsStrings.fills
 import typings.plotlyDotJs.plotlyDotJsStrings.funnel
 import typings.plotlyDotJs.plotlyDotJsStrings.funnelarea
 import typings.plotlyDotJs.plotlyDotJsStrings.gauge
+import typings.plotlyDotJs.plotlyDotJsStrings.gaugePlussigndelta
+import typings.plotlyDotJs.plotlyDotJsStrings.gaugePlussignnumber
+import typings.plotlyDotJs.plotlyDotJsStrings.gaugePlussignnumberPlussigndelta
 import typings.plotlyDotJs.plotlyDotJsStrings.h
 import typings.plotlyDotJs.plotlyDotJsStrings.heatmap
 import typings.plotlyDotJs.plotlyDotJsStrings.histogram
@@ -85,14 +39,22 @@ import typings.plotlyDotJs.plotlyDotJsStrings.hvh
 import typings.plotlyDotJs.plotlyDotJsStrings.indicator
 import typings.plotlyDotJs.plotlyDotJsStrings.inside
 import typings.plotlyDotJs.plotlyDotJsStrings.label
+import typings.plotlyDotJs.plotlyDotJsStrings.labelPlussignpercent
+import typings.plotlyDotJs.plotlyDotJsStrings.labelPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.labelPlussigntextPlussignpercent
+import typings.plotlyDotJs.plotlyDotJsStrings.labelPlussigntextPlussignvalue
+import typings.plotlyDotJs.plotlyDotJsStrings.labelPlussignvalue
+import typings.plotlyDotJs.plotlyDotJsStrings.labelPlussignvaluePlussignpercent
 import typings.plotlyDotJs.plotlyDotJsStrings.legendonly
 import typings.plotlyDotJs.plotlyDotJsStrings.linear
 import typings.plotlyDotJs.plotlyDotJsStrings.lines
+import typings.plotlyDotJs.plotlyDotJsStrings.linesPlussignmarkers
 import typings.plotlyDotJs.plotlyDotJsStrings.markers
 import typings.plotlyDotJs.plotlyDotJsStrings.mesh3d
 import typings.plotlyDotJs.plotlyDotJsStrings.name
 import typings.plotlyDotJs.plotlyDotJsStrings.none
 import typings.plotlyDotJs.plotlyDotJsStrings.number
+import typings.plotlyDotJs.plotlyDotJsStrings.numberPlussigndelta
 import typings.plotlyDotJs.plotlyDotJsStrings.ohlc
 import typings.plotlyDotJs.plotlyDotJsStrings.parcoords
 import typings.plotlyDotJs.plotlyDotJsStrings.percent
@@ -110,6 +72,12 @@ import typings.plotlyDotJs.plotlyDotJsStrings.skip
 import typings.plotlyDotJs.plotlyDotJsStrings.spline
 import typings.plotlyDotJs.plotlyDotJsStrings.surface
 import typings.plotlyDotJs.plotlyDotJsStrings.text
+import typings.plotlyDotJs.plotlyDotJsStrings.textPlussignlines
+import typings.plotlyDotJs.plotlyDotJsStrings.textPlussignlinesPlussignmarkers
+import typings.plotlyDotJs.plotlyDotJsStrings.textPlussignmarkers
+import typings.plotlyDotJs.plotlyDotJsStrings.textPlussignpercent
+import typings.plotlyDotJs.plotlyDotJsStrings.textPlussignvalue
+import typings.plotlyDotJs.plotlyDotJsStrings.textPlussignvaluePlussignpercent
 import typings.plotlyDotJs.plotlyDotJsStrings.tonext
 import typings.plotlyDotJs.plotlyDotJsStrings.tonextx
 import typings.plotlyDotJs.plotlyDotJsStrings.tonexty
@@ -119,10 +87,39 @@ import typings.plotlyDotJs.plotlyDotJsStrings.tozeroy
 import typings.plotlyDotJs.plotlyDotJsStrings.treemap
 import typings.plotlyDotJs.plotlyDotJsStrings.v
 import typings.plotlyDotJs.plotlyDotJsStrings.value
+import typings.plotlyDotJs.plotlyDotJsStrings.valuePlussignpercent
 import typings.plotlyDotJs.plotlyDotJsStrings.vh
 import typings.plotlyDotJs.plotlyDotJsStrings.vhv
 import typings.plotlyDotJs.plotlyDotJsStrings.waterfall
 import typings.plotlyDotJs.plotlyDotJsStrings.x
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussigny
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussignyPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussignyPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussignyPlussignz
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussignyPlussignzPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.xPlussignyPlussignzPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignx
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignxPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignxPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignxPlussignz
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignxPlussignzPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignxPlussignzPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignz
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignzPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.yPlussignzPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignx
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignxPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignxPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignxPlussigny
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignxPlussignyPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignxPlussignyPlussigntext
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignyPlussignx
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignyPlussignxPlussignname
+import typings.plotlyDotJs.plotlyDotJsStrings.zPlussignyPlussignxPlussigntext
 import typings.std.Float32Array
 import typings.std.Partial
 import scala.scalajs.js
@@ -135,57 +132,81 @@ trait PlotData extends js.Object {
   var colorscale: ColorScale
   var connectgaps: Boolean
   var customdata: js.Array[Datum]
-  var delta: Anon_Bottom
+  var delta: Partial[Delta]
   var direction: clockwise | counterclockwise
   var error_x: ErrorBar
   var error_y: ErrorBar
   var fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext
   var fillcolor: String
-  var gauge: Anon_Angular
+  var gauge: Partial[Gauge]
   var hole: Double
-  var hoverinfo: all | name | none | skip | text | x | `x+text` | `x+name` | `x+y` | `x+y+text` | `x+y+name` | `x+y+z` | `x+y+z+text` | `x+y+z+name` | `y+name` | `y+x` | `y+text` | `y+x+text` | `y+x+name` | `y+z` | `y+z+text` | `y+z+name` | `y+x+z` | `y+x+z+text` | `y+x+z+name` | `z+x` | `z+x+text` | `z+x+name` | `z+y+x` | `z+y+x+text` | `z+y+x+name` | `z+x+y` | `z+x+y+text` | `z+x+y+name`
+  var hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
   var hoverlabel: Partial[HoverLabel]
   var hoveron: points | fills
   var hovertemplate: String | js.Array[String]
   var labels: js.Array[Datum]
   var legendgroup: String
   var line: Partial[ScatterLine]
-  var `line.color`: Color
-  var `line.dash`: Dash
-  var `line.shape`: linear | spline | hv | vh | hvh | vhv
-  var `line.simplify`: Boolean
-  var `line.smoothing`: Double
-  var `line.width`: Double
+  @JSName("line.color")
+  var lineDotcolor: Color
+  @JSName("line.dash")
+  var lineDotdash: Dash
+  @JSName("line.shape")
+  var lineDotshape: linear | spline | hv | vh | hvh | vhv
+  @JSName("line.simplify")
+  var lineDotsimplify: Boolean
+  @JSName("line.smoothing")
+  var lineDotsmoothing: Double
+  @JSName("line.width")
+  var lineDotwidth: Double
   var marker: Partial[PlotMarker]
-  var `marker.color`: Color
-  var `marker.colorscale`: ColorScale | js.Array[ColorScale]
-  var `marker.line`: Partial[ScatterMarkerLine]
-  var `marker.line.color`: Color
-  var `marker.line.colorscale`: ColorScale | js.Array[ColorScale]
-  var `marker.maxdisplayed`: Double
-  var `marker.opacity`: Double | js.Array[Double]
-  var `marker.pad.b`: Double
-  var `marker.pad.l`: Double
-  var `marker.pad.r`: Double
+  @JSName("marker.color")
+  var markerDotcolor: Color
+  @JSName("marker.colorscale")
+  var markerDotcolorscale: ColorScale | js.Array[ColorScale]
+  @JSName("marker.line")
+  var markerDotline: Partial[ScatterMarkerLine]
+  @JSName("marker.line.color")
+  var markerDotlineDotcolor: Color
+  @JSName("marker.line.colorscale")
+  var markerDotlineDotcolorscale: ColorScale | js.Array[ColorScale]
+  @JSName("marker.maxdisplayed")
+  var markerDotmaxdisplayed: Double
+  @JSName("marker.opacity")
+  var markerDotopacity: Double | js.Array[Double]
+  @JSName("marker.pad.b")
+  var markerDotpadDotb: Double
+  @JSName("marker.pad.l")
+  var markerDotpadDotl: Double
+  @JSName("marker.pad.r")
+  var markerDotpadDotr: Double
    // TODO
-  var `marker.pad.t`: Double
-  var `marker.showscale`: Boolean
-  var `marker.size`: Double | (js.Array[js.Array[Double] | Double])
-  var `marker.sizemax`: Double
-  var `marker.sizemin`: Double
-  var `marker.sizemode`: diameter | area
-  var `marker.sizeref`: Double
-  var `marker.symbol`: MarkerSymbol | js.Array[MarkerSymbol]
-  var mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none | gauge | number | delta | `number+delta` | `gauge+number` | `gauge+number+delta` | `gauge+delta`
+  @JSName("marker.pad.t")
+  var markerDotpadDott: Double
+  @JSName("marker.showscale")
+  var markerDotshowscale: Boolean
+  @JSName("marker.size")
+  var markerDotsize: Double | (js.Array[js.Array[Double] | Double])
+  @JSName("marker.sizemax")
+  var markerDotsizemax: Double
+  @JSName("marker.sizemin")
+  var markerDotsizemin: Double
+  @JSName("marker.sizemode")
+  var markerDotsizemode: diameter | area
+  @JSName("marker.sizeref")
+  var markerDotsizeref: Double
+  @JSName("marker.symbol")
+  var markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol]
+  var mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta
   var name: String
-  var number: Anon_Font
+  var number: Partial[PlotNumber]
   var orientation: v | h
   var parents: js.Array[String]
   var r: js.Array[Datum]
   var rotation: Double
   var stackgroup: String
   var text: String | js.Array[String]
-  var textinfo: label | `label+text` | `label+value` | `label+percent` | `label+text+value` | `label+text+percent` | `label+value+percent` | text | `text+value` | `text+percent` | `text+value+percent` | value | `value+percent` | percent | none
+  var textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none
   var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside
   var theta: js.Array[Datum]
   var transforms: js.Array[DataTransform]
@@ -215,56 +236,56 @@ object PlotData {
     colorscale: ColorScale,
     connectgaps: Boolean,
     customdata: js.Array[Datum],
-    delta: Anon_Bottom,
+    delta: Partial[Delta],
     direction: clockwise | counterclockwise,
     error_x: ErrorBar,
     error_y: ErrorBar,
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
     fillcolor: String,
-    gauge: Anon_Angular,
+    gauge: Partial[Gauge],
     hole: Double,
-    hoverinfo: all | name | none | skip | text | x | `x+text` | `x+name` | `x+y` | `x+y+text` | `x+y+name` | `x+y+z` | `x+y+z+text` | `x+y+z+name` | `y+name` | `y+x` | `y+text` | `y+x+text` | `y+x+name` | `y+z` | `y+z+text` | `y+z+name` | `y+x+z` | `y+x+z+text` | `y+x+z+name` | `z+x` | `z+x+text` | `z+x+name` | `z+y+x` | `z+y+x+text` | `z+y+x+name` | `z+x+y` | `z+x+y+text` | `z+x+y+name`,
+    hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname,
     hoverlabel: Partial[HoverLabel],
     hoveron: points | fills,
     hovertemplate: String | js.Array[String],
     labels: js.Array[Datum],
     legendgroup: String,
     line: Partial[ScatterLine],
-    `line.color`: Color,
-    `line.dash`: Dash,
-    `line.shape`: linear | spline | hv | vh | hvh | vhv,
-    `line.simplify`: Boolean,
-    `line.smoothing`: Double,
-    `line.width`: Double,
+    lineDotcolor: Color,
+    lineDotdash: Dash,
+    lineDotshape: linear | spline | hv | vh | hvh | vhv,
+    lineDotsimplify: Boolean,
+    lineDotsmoothing: Double,
+    lineDotwidth: Double,
     marker: Partial[PlotMarker],
-    `marker.color`: Color,
-    `marker.colorscale`: ColorScale | js.Array[ColorScale],
-    `marker.line`: Partial[ScatterMarkerLine],
-    `marker.line.color`: Color,
-    `marker.line.colorscale`: ColorScale | js.Array[ColorScale],
-    `marker.maxdisplayed`: Double,
-    `marker.opacity`: Double | js.Array[Double],
-    `marker.pad.b`: Double,
-    `marker.pad.l`: Double,
-    `marker.pad.r`: Double,
-    `marker.pad.t`: Double,
-    `marker.showscale`: Boolean,
-    `marker.size`: Double | (js.Array[js.Array[Double] | Double]),
-    `marker.sizemax`: Double,
-    `marker.sizemin`: Double,
-    `marker.sizemode`: diameter | area,
-    `marker.sizeref`: Double,
-    `marker.symbol`: MarkerSymbol | js.Array[MarkerSymbol],
-    mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none | gauge | number | delta | `number+delta` | `gauge+number` | `gauge+number+delta` | `gauge+delta`,
+    markerDotcolor: Color,
+    markerDotcolorscale: ColorScale | js.Array[ColorScale],
+    markerDotline: Partial[ScatterMarkerLine],
+    markerDotlineDotcolor: Color,
+    markerDotlineDotcolorscale: ColorScale | js.Array[ColorScale],
+    markerDotmaxdisplayed: Double,
+    markerDotopacity: Double | js.Array[Double],
+    markerDotpadDotb: Double,
+    markerDotpadDotl: Double,
+    markerDotpadDotr: Double,
+    markerDotpadDott: Double,
+    markerDotshowscale: Boolean,
+    markerDotsize: Double | (js.Array[js.Array[Double] | Double]),
+    markerDotsizemax: Double,
+    markerDotsizemin: Double,
+    markerDotsizemode: diameter | area,
+    markerDotsizeref: Double,
+    markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol],
+    mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta,
     name: String,
-    number: Anon_Font,
+    number: Partial[PlotNumber],
     orientation: v | h,
     parents: js.Array[String],
     r: js.Array[Datum],
     rotation: Double,
     stackgroup: String,
     text: String | js.Array[String],
-    textinfo: label | `label+text` | `label+value` | `label+percent` | `label+text+value` | `label+text+percent` | `label+value+percent` | text | `text+value` | `text+percent` | `text+value+percent` | value | `value+percent` | percent | none,
+    textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside,
     theta: js.Array[Datum],
     transforms: js.Array[DataTransform],
@@ -286,30 +307,30 @@ object PlotData {
     zsmooth: fast | best | `false`
   ): PlotData = {
     val __obj = js.Dynamic.literal(autobinx = autobinx.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
-    __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
-    __obj.updateDynamic("line.dash")(`line.dash`.asInstanceOf[js.Any])
-    __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])
-    __obj.updateDynamic("line.simplify")(`line.simplify`.asInstanceOf[js.Any])
-    __obj.updateDynamic("line.smoothing")(`line.smoothing`.asInstanceOf[js.Any])
-    __obj.updateDynamic("line.width")(`line.width`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.color")(`marker.color`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.colorscale")(`marker.colorscale`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.line")(`marker.line`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.line.color")(`marker.line.color`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.line.colorscale")(`marker.line.colorscale`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.maxdisplayed")(`marker.maxdisplayed`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.opacity")(`marker.opacity`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.pad.b")(`marker.pad.b`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.pad.l")(`marker.pad.l`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.pad.r")(`marker.pad.r`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.pad.t")(`marker.pad.t`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.showscale")(`marker.showscale`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.size")(`marker.size`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.sizemax")(`marker.sizemax`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.sizemin")(`marker.sizemin`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.sizemode")(`marker.sizemode`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.sizeref")(`marker.sizeref`.asInstanceOf[js.Any])
-    __obj.updateDynamic("marker.symbol")(`marker.symbol`.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.color")(lineDotcolor.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.dash")(lineDotdash.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.shape")(lineDotshape.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.simplify")(lineDotsimplify.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.smoothing")(lineDotsmoothing.asInstanceOf[js.Any])
+    __obj.updateDynamic("line.width")(lineDotwidth.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.color")(markerDotcolor.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.colorscale")(markerDotcolorscale.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.line")(markerDotline.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.line.color")(markerDotlineDotcolor.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.line.colorscale")(markerDotlineDotcolorscale.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.maxdisplayed")(markerDotmaxdisplayed.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.opacity")(markerDotopacity.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.pad.b")(markerDotpadDotb.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.pad.l")(markerDotpadDotl.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.pad.r")(markerDotpadDotr.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.pad.t")(markerDotpadDott.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.showscale")(markerDotshowscale.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.size")(markerDotsize.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.sizemax")(markerDotsizemax.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.sizemin")(markerDotsizemin.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.sizemode")(markerDotsizemode.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.sizeref")(markerDotsizeref.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.symbol")(markerDotsymbol.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotData]
   }

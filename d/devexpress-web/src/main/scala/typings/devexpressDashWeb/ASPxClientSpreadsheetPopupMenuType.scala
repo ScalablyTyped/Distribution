@@ -1,15 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.AutoFilter
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Cell
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Chart
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.ColumnHeading
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Picture
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.PivotTable
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.PivotTableAutoFilter
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.RowHeading
-import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.SheetTab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

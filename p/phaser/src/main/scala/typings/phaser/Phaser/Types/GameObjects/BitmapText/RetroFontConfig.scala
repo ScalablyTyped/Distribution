@@ -28,19 +28,23 @@ trait RetroFontConfig extends js.Object {
   /**
     * If the font set doesn't start at the top left of the given image, specify the X coordinate offset here.
     */
-  var `offset.x`: Double
+  @JSName("offset.x")
+  var offsetDotx: Double
   /**
     * If the font set doesn't start at the top left of the given image, specify the Y coordinate offset here.
     */
-  var `offset.y`: Double
+  @JSName("offset.y")
+  var offsetDoty: Double
   /**
     * If the characters in the font set have horizontal spacing between them set the required amount here.
     */
-  var `spacing.x`: Double
+  @JSName("spacing.x")
+  var spacingDotx: Double
   /**
     * If the characters in the font set have vertical spacing between them set the required amount here.
     */
-  var `spacing.y`: Double
+  @JSName("spacing.y")
+  var spacingDoty: Double
   /**
     * The width of each character in the font set.
     */
@@ -55,17 +59,17 @@ object RetroFontConfig {
     height: Double,
     image: String,
     lineSpacing: Double,
-    `offset.x`: Double,
-    `offset.y`: Double,
-    `spacing.x`: Double,
-    `spacing.y`: Double,
+    offsetDotx: Double,
+    offsetDoty: Double,
+    spacingDotx: Double,
+    spacingDoty: Double,
     width: Double
   ): RetroFontConfig = {
     val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], charsPerRow = charsPerRow.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], lineSpacing = lineSpacing.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.updateDynamic("offset.x")(`offset.x`.asInstanceOf[js.Any])
-    __obj.updateDynamic("offset.y")(`offset.y`.asInstanceOf[js.Any])
-    __obj.updateDynamic("spacing.x")(`spacing.x`.asInstanceOf[js.Any])
-    __obj.updateDynamic("spacing.y")(`spacing.y`.asInstanceOf[js.Any])
+    __obj.updateDynamic("offset.x")(offsetDotx.asInstanceOf[js.Any])
+    __obj.updateDynamic("offset.y")(offsetDoty.asInstanceOf[js.Any])
+    __obj.updateDynamic("spacing.x")(spacingDotx.asInstanceOf[js.Any])
+    __obj.updateDynamic("spacing.y")(spacingDoty.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetroFontConfig]
   }
 }

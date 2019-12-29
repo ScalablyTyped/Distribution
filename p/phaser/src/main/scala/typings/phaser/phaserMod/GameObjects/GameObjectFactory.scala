@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +20,6 @@ class GameObjectFactory protected ()
     * 
     * @param scene The Scene to which this Game Object Factory belongs.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
+  def this(scene: Scene) = this()
 }
 

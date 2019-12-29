@@ -13,10 +13,9 @@ package object libIStyleMod {
   /* Rewritten from type alias, can be one of: 
     - typings.atUifabricMergeDashStyles.libIStyleMod.IRawStyle
     - java.lang.String
-    - typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`false`
+    - typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
   */
   type IStyleBase = js.UndefOr[_IStyleBase | String | Null]
 }

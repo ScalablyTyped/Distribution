@@ -2,8 +2,6 @@ package typings.xrm.Xrm
 
 import typings.xrm.Xrm.Controls.ProcessControl
 import typings.xrm.Xrm.Controls.QuickFormControl
-import typings.xrm.Xrm.Page.AutoLookupControl
-import typings.xrm.Xrm.Page.StandardControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

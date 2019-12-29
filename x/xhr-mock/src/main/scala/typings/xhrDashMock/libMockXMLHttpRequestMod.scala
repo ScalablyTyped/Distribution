@@ -6,18 +6,10 @@ import typings.std.BodyInit
 import typings.std.Document
 import typings.std.Event
 import typings.std.EventListenerOptions
-import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestResponseType
 import typings.std.XMLHttpRequestUpload
 import typings.std.stdStrings.readystatechange
 import typings.xhrDashMock.libMockXMLHttpRequestEventTargetMod.MockXMLHttpRequestEventTarget
-import typings.xhrDashMock.libMockXMLHttpRequestMod.MockXMLHttpRequest
-import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState
-import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.DONE
-import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.HEADERS_RECEIVED
-import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.LOADING
-import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.OPENED
-import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.UNSENT
 import typings.xhrDashMock.libTypesMod.ErrorCallbackEvent
 import typings.xhrDashMock.libTypesMod.MockFunction
 import scala.scalajs.js
@@ -83,7 +75,7 @@ object libMockXMLHttpRequestMod extends js.Object {
     /* private */ def handleError(error: js.Any): js.Any = js.native
     /* private */ def handleResponseBody(res: js.Any): js.Any = js.native
     def msCachingEnabled(): Boolean = js.native
-    def onreadystatechange(`this`: XMLHttpRequest, ev: Event): js.Any = js.native
+    def onreadystatechange(ev: Event): js.Any = js.native
     /**
       * Sets the request method, request URL, and synchronous flag.
       * 

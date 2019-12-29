@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Label")
 @js.native
 class Label protected () extends js.Object {
-  var `Access.Label_typekey`: Label = js.native
+  @JSName("Access.Label_typekey")
+  var AccessDotLabel_typekey: Label = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BackColor: Double = js.native
   var BackShade: Double = js.native

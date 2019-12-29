@@ -1,8 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Resources.Management
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Resources.Management.IndexedResourceType.path
-import typings.winrt.Windows.ApplicationModel.Resources.Management.IndexedResourceType.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

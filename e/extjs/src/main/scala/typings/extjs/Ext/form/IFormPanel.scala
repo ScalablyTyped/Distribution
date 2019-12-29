@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation._
   		* @param field Ext.form.Labelable The sub-field whose active error changed
   		* @param error String The new active error message
   		*/
-  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Fired when the validity of any field within the container changes
   		* @param field Ext.form.field.Field The sub-field whose validity changed
   		* @param valid Boolean The new validity state
@@ -107,7 +107,7 @@ object IFormPanel {
     isValid: () => Boolean = null,
     load: /* options */ js.UndefOr[js.Any] => Unit = null,
     loadRecord: /* record */ js.UndefOr[IModel] => IBasic = null,
-    onFieldErrorChange: (js.UndefOr[ILabelable], js.UndefOr[java.lang.String]) => Unit = null,
+    onFieldErrorChange: (js.UndefOr[ILabelable], js.UndefOr[String]) => Unit = null,
     onFieldValidityChange: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit = null,
     pollForChanges: js.UndefOr[Boolean] = js.undefined,
     pollInterval: Int | Double = null,

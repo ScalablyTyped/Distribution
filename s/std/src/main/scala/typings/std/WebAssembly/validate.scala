@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WebAssembly.validate")
 @js.native
 object validate extends js.Object {
-  def apply(bytes: BufferSource): scala.Boolean = js.native
+  def apply(bytes: BufferSource): Boolean = js.native
 }
 

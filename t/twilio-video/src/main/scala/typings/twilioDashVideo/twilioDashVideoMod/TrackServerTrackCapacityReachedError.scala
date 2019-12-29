@@ -1,7 +1,7 @@
 package typings.twilioDashVideo.twilioDashVideoMod
 
 import typings.twilioDashVideo.twilioDashVideoNumbers.`53305`
-import typings.twilioDashVideo.twilioDashVideoStrings.`The server has reached capacity and cannot fulfill this requestDOT`
+import typings.twilioDashVideo.twilioDashVideoStrings.`The server has reached capacity and cannot fulfill this requestDot`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ class TrackServerTrackCapacityReachedError () extends TwilioError {
   @JSName("code")
   var code_TrackServerTrackCapacityReachedError: `53305` = js.native
   @JSName("message")
-  var message_TrackServerTrackCapacityReachedError: `The server has reached capacity and cannot fulfill this requestDOT` = js.native
+  var message_TrackServerTrackCapacityReachedError: `The server has reached capacity and cannot fulfill this requestDot` = js.native
 }
 

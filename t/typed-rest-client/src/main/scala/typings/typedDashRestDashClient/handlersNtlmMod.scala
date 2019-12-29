@@ -18,15 +18,15 @@ object handlersNtlmMod extends js.Object {
     def this(username: String, password: String, workstation: String) = this()
     def this(username: String, password: String, workstation: String, domain: String) = this()
     var _ntlmOptions: js.Any = js.native
+    var handleAuthenticationPrivate: js.Any = js.native
+    var sendType1Message: js.Any = js.native
+    var sendType3Message: js.Any = js.native
     /* CompleteClass */
     override def canHandleAuthentication(response: IHttpClientResponse): Boolean = js.native
     /* CompleteClass */
     override def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse] = js.native
-    /* private */ def handleAuthenticationPrivate(httpClient: js.Any, requestInfo: js.Any, objs: js.Any, finalCallback: js.Any): js.Any = js.native
     /* CompleteClass */
     override def prepareRequest(options: RequestOptions): Unit = js.native
-    /* private */ def sendType1Message(httpClient: js.Any, requestInfo: js.Any, objs: js.Any, finalCallback: js.Any): js.Any = js.native
-    /* private */ def sendType3Message(httpClient: js.Any, requestInfo: js.Any, objs: js.Any, res: js.Any, callback: js.Any): js.Any = js.native
   }
   
 }

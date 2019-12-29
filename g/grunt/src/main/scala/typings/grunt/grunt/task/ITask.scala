@@ -17,7 +17,7 @@ trait ITask extends js.Object {
     * For example, if a "sample" task was run as grunt sample:foo:bar,
     * inside the task function, this.args would be ["foo", "bar"].
     */
-  var args: js.Array[java.lang.String] = js.native
+  var args: js.Array[String] = js.native
   /**
     * The number of grunt.log.error calls that occurred during this task.
     * This can be used to fail a task if errors were logged during the task.
@@ -34,13 +34,13 @@ trait ITask extends js.Object {
     * For example, if a "sample" task was run as grunt sample or grunt sample:foo,
     * inside the task function, this.name would be "sample".
     */
-  var name: java.lang.String = js.native
+  var name: String = js.native
   /**
     * The name of the task, including any colon-separated arguments or flags specified on the command-line.
     * For example, if a "sample" task was run as grunt sample:foo,
     * inside the task function, this.nameArgs would be "sample:foo".
     */
-  var nameArgs: java.lang.String = js.native
+  var nameArgs: String = js.native
   /**
     * If a task is asynchronous, this method must be invoked to instruct Grunt to wait.
     * It returns a handle to a "done" function that should be called when the task has completed.
@@ -64,7 +64,7 @@ trait ITask extends js.Object {
     * options object properties.
     */
   def options[T](defaultsObj: T): T = js.native
-  def requires(tasks: java.lang.String, otherTasks: java.lang.String*): Unit = js.native
+  def requires(tasks: String, otherTasks: String*): Unit = js.native
   /**
     * If one task depends on the successful completion of another task (or tasks),
     * this method can be used to force Grunt to abort if the other task didn't run,
@@ -74,13 +74,13 @@ trait ITask extends js.Object {
     * @note that this won't actually run the specified task(s),
     * it will just fail the current task if they haven't already run successfully.
     */
-  def requires(tasks: js.Array[java.lang.String]): Unit = js.native
-  def requires(tasks: js.Array[java.lang.String], otherTasks: js.Array[java.lang.String]*): Unit = js.native
+  def requires(tasks: js.Array[String]): Unit = js.native
+  def requires(tasks: js.Array[String], otherTasks: js.Array[String]*): Unit = js.native
   /**
     * Fail the current task if one or more required config properties is missing.
     * One or more string or array config properties may be specified.
     * this.requiresConfig(prop [, prop [, ...]])
     */
-  def requiresConfig(prop: java.lang.String, andProps: java.lang.String*): Unit = js.native
+  def requiresConfig(prop: String, andProps: String*): Unit = js.native
 }
 

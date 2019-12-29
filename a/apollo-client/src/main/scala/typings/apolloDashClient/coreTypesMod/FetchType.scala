@@ -1,9 +1,6 @@
 package typings.apolloDashClient.coreTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.apolloDashClient.coreTypesMod.FetchType.normal
-import typings.apolloDashClient.coreTypesMod.FetchType.poll
-import typings.apolloDashClient.coreTypesMod.FetchType.refetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

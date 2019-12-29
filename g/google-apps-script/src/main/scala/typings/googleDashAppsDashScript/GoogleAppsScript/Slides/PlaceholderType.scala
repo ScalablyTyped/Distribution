@@ -1,24 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.BODY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CENTERED_TITLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CHART
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CLIP_ART
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.DATE_AND_TIME
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.DIAGRAM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.FOOTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.HEADER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.MEDIA
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.OBJECT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.PICTURE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SLIDE_IMAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SLIDE_NUMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SUBTITLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.TABLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.TITLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

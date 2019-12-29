@@ -1,11 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.OverflowToolbarPriority.AlwaysOverflow
-import typings.openui5.sap.m.OverflowToolbarPriority.Disappear
-import typings.openui5.sap.m.OverflowToolbarPriority.High
-import typings.openui5.sap.m.OverflowToolbarPriority.Low
-import typings.openui5.sap.m.OverflowToolbarPriority.NeverOverflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

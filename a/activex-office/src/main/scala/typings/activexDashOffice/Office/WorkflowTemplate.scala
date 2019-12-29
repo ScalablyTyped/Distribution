@@ -14,7 +14,8 @@ class WorkflowTemplate protected () extends js.Object {
   val DocumentLibraryURL: String = js.native
   val Id: String = js.native
   val Name: String = js.native
-  var `Office.WorkflowTemplate_typekey`: WorkflowTemplate = js.native
+  @JSName("Office.WorkflowTemplate_typekey")
+  var OfficeDotWorkflowTemplate_typekey: WorkflowTemplate = js.native
   def Show(): Double = js.native
 }
 

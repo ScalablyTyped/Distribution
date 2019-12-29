@@ -1,8 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.RatingIndicatorVisualMode.Full
-import typings.openui5.sap.m.RatingIndicatorVisualMode.Half
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.chromeDashApps.chrome.fileSystem
 
-import typings.chromeDashApps.chromeDashAppsNumbers.`false`
+import typings.chromeDashApps.chromeDashAppsBooleans.`false`
 import typings.chromeDashApps.chromeDashAppsStrings.openFile
 import typings.chromeDashApps.chromeDashAppsStrings.openWritableFile
 import scala.scalajs.js

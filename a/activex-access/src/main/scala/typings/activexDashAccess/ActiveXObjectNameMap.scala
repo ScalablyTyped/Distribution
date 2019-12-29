@@ -9,24 +9,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var `ACCWIZ.FieldListCtrl`: FieldList
-  var `ACCWIZ.ImexGridCtrl`: ImexGrid
-  var `Access.Application`: Application
+  @JSName("ACCWIZ.FieldListCtrl")
+  var ACCWIZDotFieldListCtrl: FieldList
+  @JSName("ACCWIZ.ImexGridCtrl")
+  var ACCWIZDotImexGridCtrl: ImexGrid
+  @JSName("Access.Application")
+  var AccessDotApplication: Application
   var lnkfile: WizShellLinkA
 }
 
 object ActiveXObjectNameMap {
   @scala.inline
   def apply(
-    `ACCWIZ.FieldListCtrl`: FieldList,
-    `ACCWIZ.ImexGridCtrl`: ImexGrid,
-    `Access.Application`: Application,
+    ACCWIZDotFieldListCtrl: FieldList,
+    ACCWIZDotImexGridCtrl: ImexGrid,
+    AccessDotApplication: Application,
     lnkfile: WizShellLinkA
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal(lnkfile = lnkfile.asInstanceOf[js.Any])
-    __obj.updateDynamic("ACCWIZ.FieldListCtrl")(`ACCWIZ.FieldListCtrl`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ACCWIZ.ImexGridCtrl")(`ACCWIZ.ImexGridCtrl`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Access.Application")(`Access.Application`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ACCWIZ.FieldListCtrl")(ACCWIZDotFieldListCtrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("ACCWIZ.ImexGridCtrl")(ACCWIZDotImexGridCtrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.Application")(AccessDotApplication.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

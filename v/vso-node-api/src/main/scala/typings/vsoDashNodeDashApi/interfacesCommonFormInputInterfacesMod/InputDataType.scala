@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Boolean
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Guid
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.None
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Number
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.String
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

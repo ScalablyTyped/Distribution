@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.model.odata
 
 import typings.openui5.sap.ui.model.SimpleType
-import typings.openui5.sap.ui.model.odata.`type`.Date
-import typings.openui5.sap.ui.model.odata.`type`.DateTimeBase
-import typings.openui5.sap.ui.model.odata.`type`.Int
-import typings.openui5.sap.ui.model.odata.`type`.ODataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

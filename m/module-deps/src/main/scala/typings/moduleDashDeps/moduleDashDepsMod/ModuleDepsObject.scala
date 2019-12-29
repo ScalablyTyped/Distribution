@@ -5,7 +5,7 @@ import typings.moduleDashDeps.Anon_Entry
 import typings.moduleDashDeps.Anon_Filename
 import typings.moduleDashDeps.Anon_Id
 import typings.moduleDashDeps.Anon_Modules
-import typings.moduleDashDeps.moduleDashDepsStrings.PACKAGE
+import typings.moduleDashDeps.moduleDashDepsStrings._package
 import typings.moduleDashDeps.moduleDashDepsStrings.file
 import typings.moduleDashDeps.moduleDashDepsStrings.missing
 import typings.moduleDashDeps.moduleDashDepsStrings.transform
@@ -43,7 +43,7 @@ trait ModuleDepsObject
     * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
     */
   @JSName("on")
-  def on_package(event: PACKAGE, listener: js.Function1[/* package */ PackageObject, _]): this.type = js.native
+  def on_package(event: _package, listener: js.Function1[/* package */ PackageObject, _]): this.type = js.native
   /**
     * Every time a transform is applied to a file, a 'transform' event fires with the instantiated transform stream tr.
     */

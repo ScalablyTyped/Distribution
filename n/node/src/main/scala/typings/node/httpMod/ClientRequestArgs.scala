@@ -1,7 +1,7 @@
 package typings.node.httpMod
 
-import typings.node.Error
 import typings.node.netMod.Socket
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ClientRequestArgs extends js.Object {
   var _defaultAgent: js.UndefOr[Agent] = js.undefined
   var agent: js.UndefOr[Agent | Boolean] = js.undefined
-  var auth: js.UndefOr[java.lang.String | Null] = js.undefined
+  var auth: js.UndefOr[String | Null] = js.undefined
   // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
   var createConnection: js.UndefOr[
     js.Function2[
@@ -18,18 +18,18 @@ trait ClientRequestArgs extends js.Object {
       Socket
     ]
   ] = js.undefined
-  var defaultPort: js.UndefOr[Double | java.lang.String] = js.undefined
+  var defaultPort: js.UndefOr[Double | String] = js.undefined
   var family: js.UndefOr[Double] = js.undefined
   var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
-  var host: js.UndefOr[java.lang.String | Null] = js.undefined
-  var hostname: js.UndefOr[java.lang.String | Null] = js.undefined
-  var localAddress: js.UndefOr[java.lang.String] = js.undefined
-  var method: js.UndefOr[java.lang.String] = js.undefined
-  var path: js.UndefOr[java.lang.String | Null] = js.undefined
-  var port: js.UndefOr[Double | java.lang.String | Null] = js.undefined
-  var protocol: js.UndefOr[java.lang.String | Null] = js.undefined
+  var host: js.UndefOr[String | Null] = js.undefined
+  var hostname: js.UndefOr[String | Null] = js.undefined
+  var localAddress: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String | Null] = js.undefined
+  var port: js.UndefOr[Double | String | Null] = js.undefined
+  var protocol: js.UndefOr[String | Null] = js.undefined
   var setHost: js.UndefOr[Boolean] = js.undefined
-  var socketPath: js.UndefOr[java.lang.String] = js.undefined
+  var socketPath: js.UndefOr[String] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
 }
 
@@ -38,20 +38,20 @@ object ClientRequestArgs {
   def apply(
     _defaultAgent: Agent = null,
     agent: Agent | Boolean = null,
-    auth: java.lang.String = null,
+    auth: String = null,
     createConnection: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket = null,
-    defaultPort: Double | java.lang.String = null,
+    defaultPort: Double | String = null,
     family: Int | Double = null,
     headers: OutgoingHttpHeaders = null,
-    host: java.lang.String = null,
-    hostname: java.lang.String = null,
-    localAddress: java.lang.String = null,
-    method: java.lang.String = null,
-    path: java.lang.String = null,
-    port: Double | java.lang.String = null,
-    protocol: java.lang.String = null,
+    host: String = null,
+    hostname: String = null,
+    localAddress: String = null,
+    method: String = null,
+    path: String = null,
+    port: Double | String = null,
+    protocol: String = null,
     setHost: js.UndefOr[Boolean] = js.undefined,
-    socketPath: java.lang.String = null,
+    socketPath: String = null,
     timeout: Int | Double = null
   ): ClientRequestArgs = {
     val __obj = js.Dynamic.literal()

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait IOperation extends IBase {
   /** [Config Option] (String) */
-  var action: js.UndefOr[java.lang.String] = js.undefined
+  var action: js.UndefOr[String] = js.undefined
   /** [Method] Checks whether this operation should cause writing to occur
   		* @returns Boolean Whether the operation should cause a write to occur.
   		*/
@@ -24,7 +24,7 @@ trait IOperation extends IBase {
   /** [Method] Returns the value of action
   		* @returns String
   		*/
-  var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAction: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of addRecords
   		* @returns Boolean
   		*/
@@ -144,7 +144,7 @@ trait IOperation extends IBase {
   /** [Method] Sets the value of action
   		* @param action String The new value.
   		*/
-  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of addRecords
   		* @param addRecords Boolean The new value.
   		*/
@@ -252,7 +252,7 @@ trait IOperation extends IBase {
 object IOperation {
   @scala.inline
   def apply(
-    action: java.lang.String = null,
+    action: String = null,
     alias: Array = null,
     allowWrite: () => Boolean = null,
     alternateClassName: js.Any = null,
@@ -263,16 +263,16 @@ object IOperation {
     callback: js.Any = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     filters: Array = null,
-    getAction: () => java.lang.String = null,
+    getAction: () => String = null,
     getAddRecords: () => Boolean = null,
     getBatch: () => IBatch = null,
     getCallback: () => _ = null,
     getError: () => _ = null,
     getFilters: () => Array = null,
     getGrouper: () => IGrouper = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLimit: () => Double = null,
     getModel: () => IModel = null,
     getNode: () => _ = null,
@@ -306,7 +306,7 @@ object IOperation {
     resultSet: IResultSet = null,
     scope: js.Any = null,
     self: IClass = null,
-    setAction: /* action */ js.UndefOr[java.lang.String] => Unit = null,
+    setAction: /* action */ js.UndefOr[String] => Unit = null,
     setAddRecords: /* addRecords */ js.UndefOr[Boolean] => Unit = null,
     setBatch: /* batch */ js.UndefOr[IBatch] => Unit = null,
     setCallback: /* callback */ js.UndefOr[js.Any] => Unit = null,

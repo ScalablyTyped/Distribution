@@ -6,10 +6,6 @@ import typings.node.Anon_End
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.DuplexOptions
 import typings.node.streamMod.Transform
-import typings.through2.through2Mod.FlushCallback
-import typings.through2.through2Mod.Through2Constructor
-import typings.through2.through2Mod.TransformCallback
-import typings.through2.through2Mod.TransformFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +21,7 @@ object through2Mod extends js.Object {
     def apply(): Transform = js.native
     def apply(opts: DuplexOptions): Transform = js.native
     /* InferMemberOverrides */
-    /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
   }

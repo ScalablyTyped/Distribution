@@ -25,7 +25,8 @@ class Item protected () extends js.Object {
   /** A collection of all properties for this item */
   @JSName("Properties")
   val Properties_Original: Properties = js.native
-  var `WIA.Item_typekey`: Item = js.native
+  @JSName("WIA.Item_typekey")
+  var WIADotItem_typekey: Item = js.native
   /** Returns the specified item in the collection by position */
   /** A collection of all commands for this item */
   def Commands(Index: Double): DeviceCommand = js.native

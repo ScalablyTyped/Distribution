@@ -1,11 +1,8 @@
 package typings.sass.sassMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sass.sassMod.types.Boolean
-import typings.sass.sassMod.types.Null
-import typings.sass.sassMod.types.SassType
-import typings.sass.sassNumbers.`false`
-import typings.sass.sassNumbers.`true`
+import typings.sass.sassBooleans.`false`
+import typings.sass.sassBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

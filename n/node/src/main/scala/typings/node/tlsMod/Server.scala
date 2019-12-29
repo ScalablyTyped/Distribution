@@ -1,13 +1,13 @@
 package typings.node.tlsMod
 
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.nodeStrings.OCSPRequest
 import typings.node.nodeStrings.keylog
 import typings.node.nodeStrings.newSession
 import typings.node.nodeStrings.resumeSession
 import typings.node.nodeStrings.secureConnection
 import typings.node.nodeStrings.tlsClientError
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Server ()
   extends typings.node.netMod.Server {
-  def addContext(hostName: java.lang.String, credentials: SecureContextOptions): Unit = js.native
+  /**
+    * The server.addContext() method adds a secure context that will be
+    * used if the client request's SNI name matches the supplied hostname
+    * (or wildcard).
+    */
+  def addContext(hostName: String, credentials: SecureContextOptions): Unit = js.native
   @JSName("addListener")
   def addListener_OCSPRequest(
     event: OCSPRequest,
@@ -78,6 +83,10 @@ class Server ()
   def emit_secureConnection(event: secureConnection, tlsSocket: TLSSocket): Boolean = js.native
   @JSName("emit")
   def emit_tlsClientError(event: tlsClientError, err: Error, tlsSocket: TLSSocket): Boolean = js.native
+  /**
+    * Returns the session ticket keys.
+    */
+  def getTicketKeys(): Buffer = js.native
   @JSName("on")
   def on_OCSPRequest(
     event: OCSPRequest,
@@ -218,5 +227,18 @@ class Server ()
   def prependOnceListener_secureConnection(event: secureConnection, listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_tlsClientError(event: tlsClientError, listener: js.Function2[/* err */ Error, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+  /**
+    *
+    * The server.setSecureContext() method replaces the
+    * secure context of an existing server. Existing connections to the
+    * server are not interrupted.
+    */
+  def setSecureContext(details: SecureContextOptions): Unit = js.native
+  /**
+    * The server.setSecureContext() method replaces the secure context of
+    * an existing server. Existing connections to the server are not
+    * interrupted.
+    */
+  def setTicketKeys(keys: Buffer): Unit = js.native
 }
 

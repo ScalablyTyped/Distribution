@@ -1,17 +1,6 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.DST_ALPHA
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.DST_COLOR
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.ONE
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.ONE_MINUS_DST_ALPH
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.ONE_MINUS_DST_COLOR
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.ONE_MINUS_SRC_ALPHA
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.ONE_MINUS_SRC_COLOR
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.SRC_ALPHA
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.SRC_ALPHA_SATURATE
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.SRC_COLOR
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendFunc.ZERO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

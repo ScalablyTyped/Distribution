@@ -21,17 +21,17 @@ trait EdgeSingular
      with EdgeSingularData
      with EdgeSingularPoints
      with EdgeSingularTraversing
-     with CollectionStyle
+     with CollectionData
+     with CollectionAlgorithms
+     with CollectionBuildingFiltering[EdgeSingular, EdgeSingular]
      with CollectionComparision
      with CollectionAnimation
-     with CollectionBuildingFiltering[EdgeSingular, EdgeSingular]
-     with CollectionTraversing
      with CollectionEvents
-     with CollectionGraphManipulation
-     with CollectionAlgorithms
-     with CollectionData
+     with CollectionStyle
+     with CollectionPosition
+     with CollectionTraversing
      with CollectionLayout
      with CollectionSelection
-     with CollectionPosition
+     with CollectionGraphManipulation
      with SingularElementArgument
 

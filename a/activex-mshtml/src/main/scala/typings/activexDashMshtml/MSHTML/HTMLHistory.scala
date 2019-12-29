@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLHistory")
 @js.native
 class HTMLHistory protected () extends js.Object {
-  var `MSHTML.HTMLHistory_typekey`: HTMLHistory = js.native
+  @JSName("MSHTML.HTMLHistory_typekey")
+  var MSHTMLDotHTMLHistory_typekey: HTMLHistory = js.native
   val constructor: js.Any = js.native
   val length: Double = js.native
   def back(): Unit = js.native

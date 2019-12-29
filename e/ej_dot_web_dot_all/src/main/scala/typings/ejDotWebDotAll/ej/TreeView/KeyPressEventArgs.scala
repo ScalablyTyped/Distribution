@@ -25,7 +25,7 @@ trait KeyPressEventArgs extends js.Object {
   var keyCode: js.UndefOr[Double] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the parentId of current TreeView node
     */
   var parentId: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ object KeyPressEventArgs {
     id: String = null,
     isExpanded: js.UndefOr[Boolean] = js.undefined,
     keyCode: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     parentId: String = null,
     path: String = null,
     `type`: String = null,

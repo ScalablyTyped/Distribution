@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.OptionGroup")
 @js.native
 class OptionGroup protected () extends js.Object {
-  var `Access.OptionGroup_typekey`: OptionGroup = js.native
+  @JSName("Access.OptionGroup_typekey")
+  var AccessDotOptionGroup_typekey: OptionGroup = js.native
   var AddColon: Boolean = js.native
   var AfterUpdate: String = js.native
   var AfterUpdateMacro: String = js.native

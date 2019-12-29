@@ -19,7 +19,8 @@ class Store protected () extends js.Object {
   val IsInstantSearchEnabled: Boolean = js.native
   val IsOpen: Boolean = js.native
   val MAPIOBJECT: js.Any = js.native
-  var `Outlook.Store_typekey`: Store = js.native
+  @JSName("Outlook.Store_typekey")
+  var OutlookDotStore_typekey: Store = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val Session: NameSpace = js.native

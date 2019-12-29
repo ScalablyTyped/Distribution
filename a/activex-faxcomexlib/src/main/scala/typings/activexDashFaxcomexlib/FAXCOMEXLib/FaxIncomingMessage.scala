@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FAXCOMEXLib.FaxIncomingMessage")
 @js.native
 class FaxIncomingMessage protected () extends IFaxIncomingMessage {
-  var `FAXCOMEXLib.FaxIncomingMessage_typekey`: FaxIncomingMessage = js.native
+  @JSName("FAXCOMEXLib.FaxIncomingMessage_typekey")
+  var FAXCOMEXLibDotFaxIncomingMessage_typekey: FaxIncomingMessage = js.native
   /** Has Cover page */
   var HasCoverPage: Boolean = js.native
   /** Read flag on the message */

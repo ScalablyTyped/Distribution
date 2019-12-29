@@ -3,6 +3,7 @@ package typings.jsrsasign.jsrsasignMod.KJUR.asn1.x509
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsrsasign.Anon_AnyExtendedKeyUsage
 import typings.jsrsasign.Anon_BusinessCategory
+import typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +42,7 @@ object OID extends js.Object {
   /** for oid name and oid (ex. 'keyUsage' and '2.5.29.15') */
   val name2oidList: Anon_AnyExtendedKeyUsage = js.native
   /** for caching name and DERObjectIdentifier object */
-  val objCache: StringDictionary[typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier] = js.native
+  val objCache: StringDictionary[DERObjectIdentifier] = js.native
   /**
     * get DERObjectIdentifier by registered attribute type name such like 'C' or 'CN'
     * @param atype short attribute type name such like 'C' or 'CN'
@@ -56,7 +57,7 @@ object OID extends js.Object {
     * @example
     * var asn1ObjOID = OID.name2obj('SHA1withRSA');
     */
-  def name2obj(name: String): typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier = js.native
+  def name2obj(name: String): DERObjectIdentifier = js.native
   /**
     * convert OID name to OID value
     * @param OID name

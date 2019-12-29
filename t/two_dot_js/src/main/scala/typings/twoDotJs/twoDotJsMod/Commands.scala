@@ -1,11 +1,6 @@
 package typings.twoDotJs.twoDotJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.twoDotJs.twoDotJsMod.Commands.arc
-import typings.twoDotJs.twoDotJsMod.Commands.close
-import typings.twoDotJs.twoDotJsMod.Commands.curve
-import typings.twoDotJs.twoDotJsMod.Commands.line
-import typings.twoDotJs.twoDotJsMod.Commands.move
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

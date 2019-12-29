@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGEllipseElement")
 @js.native
 class SVGEllipseElement protected () extends js.Object {
-  var `MSHTML.SVGEllipseElement_typekey`: SVGEllipseElement = js.native
+  @JSName("MSHTML.SVGEllipseElement_typekey")
+  var MSHTMLDotSVGEllipseElement_typekey: SVGEllipseElement = js.native
   var cx: SVGAnimatedLength = js.native
   var cy: SVGAnimatedLength = js.native
   val farthestViewportElement: ISVGElement = js.native

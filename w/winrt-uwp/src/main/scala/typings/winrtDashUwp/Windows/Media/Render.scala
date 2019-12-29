@@ -1,19 +1,6 @@
 package typings.winrtDashUwp.Windows.Media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.alerts
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.backgroundCapableMedia
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.communications
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.foregroundOnlyMedia
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.gameChat
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.gameEffects
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.gameMedia
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.media
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.movie
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.other
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.soundEffects
-import typings.winrtDashUwp.Windows.Media.Render.AudioRenderCategory.speech
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

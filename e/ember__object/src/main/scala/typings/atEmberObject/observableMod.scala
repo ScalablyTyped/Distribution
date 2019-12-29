@@ -4,7 +4,6 @@ import typings.atEmberObject.dashPrivateTypesMod.ObserverMethod
 import typings.atEmberObject.dashPrivateTypesMod.UnwrapComputedPropertyGetter
 import typings.atEmberObject.dashPrivateTypesMod.UnwrapComputedPropertyGetters
 import typings.atEmberObject.dashPrivateTypesMod.UnwrapComputedPropertySetters
-import typings.atEmberObject.observableMod.Observable
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`

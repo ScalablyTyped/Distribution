@@ -1,8 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.InsertShiftDirection.down
-import typings.officeDashJsDashPreview.Excel.InsertShiftDirection.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

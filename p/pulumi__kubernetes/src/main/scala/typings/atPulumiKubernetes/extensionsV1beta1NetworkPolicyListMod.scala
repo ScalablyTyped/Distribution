@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
-import typings.atPulumiKubernetes.extensionsV1beta1NetworkPolicyListMod.NetworkPolicyList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.NetworkPolicy
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object extensionsV1beta1NetworkPolicyListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`extensions/v1beta1`] = js.native
+    val apiVersion: Output[extensionsSlashv1beta1] = js.native
     /**
       * Items is a list of schema objects.
       */

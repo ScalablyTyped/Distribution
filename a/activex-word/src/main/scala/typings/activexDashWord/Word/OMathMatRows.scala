@@ -11,7 +11,8 @@ class OMathMatRows protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathMatRows_typekey`: OMathMatRows = js.native
+  @JSName("Word.OMathMatRows_typekey")
+  var WordDotOMathMatRows_typekey: OMathMatRows = js.native
   def Add(): OMathMatRow = js.native
   def Add(BeforeRow: js.Any): OMathMatRow = js.native
   def Item(Index: Double): OMathMatRow = js.native

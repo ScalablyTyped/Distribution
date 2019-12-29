@@ -2,6 +2,7 @@ package typings.eslint.eslintMod.Rule
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.eslint.eslintMod.Linter.ParserOptions
+import typings.eslint.eslintMod.Scope.Scope
 import typings.eslint.eslintMod.Scope.Variable
 import typings.eslint.eslintMod.SourceCode
 import typings.eslint.eslintMod.SourceCode.ParserServices
@@ -20,7 +21,7 @@ trait RuleContext extends js.Object {
   def getAncestors(): js.Array[Node]
   def getDeclaredVariables(node: Node): js.Array[Variable]
   def getFilename(): String
-  def getScope(): typings.eslint.eslintMod.Scope.Scope
+  def getScope(): Scope
   def getSourceCode(): SourceCode
   def markVariableAsUsed(name: String): Boolean
   def report(descriptor: ReportDescriptor): Unit
@@ -32,7 +33,7 @@ object RuleContext {
     getAncestors: () => js.Array[Node],
     getDeclaredVariables: Node => js.Array[Variable],
     getFilename: () => String,
-    getScope: () => typings.eslint.eslintMod.Scope.Scope,
+    getScope: () => Scope,
     getSourceCode: () => SourceCode,
     id: String,
     markVariableAsUsed: String => Boolean,

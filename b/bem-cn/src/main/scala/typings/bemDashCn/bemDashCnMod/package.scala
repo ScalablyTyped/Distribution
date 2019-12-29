@@ -15,7 +15,6 @@ package object bemDashCnMod {
     - typings.bemDashCn.bemDashCnMod.BemBlock
     - typings.bemDashCn.Anon_ToString
     - `js.undefined`
-    - scala.Nothing
   */
   type BemMix = js.UndefOr[_BemMix | js.Array[String] | String]
   type BemMods = StringDictionary[String | Boolean | js.Any]

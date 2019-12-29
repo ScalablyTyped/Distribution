@@ -3,7 +3,6 @@ package typings.three
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreGeometryMod.Geometry
 import typings.three.srcExtrasCoreShapeMod.Shape
-import typings.three.srcGeometriesShapeGeometryMod.ShapeGeometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

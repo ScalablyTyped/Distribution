@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵɵi18nLocalize")
+@JSImport("@angular/core", "\u0275\u0275i18nLocalize")
 @js.native
 object ɵɵi18nLocalize extends js.Object {
   def apply(input: String): String = js.native

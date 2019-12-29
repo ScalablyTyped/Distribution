@@ -34,8 +34,8 @@ object internalSchedulerAsyncActionMod extends js.Object {
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
-    /* protected */ def work(`this`: SchedulerAction[T]): Unit = js.native
-    /* protected */ def work(`this`: SchedulerAction[T], state: T): Unit = js.native
+    /* protected */ def work(): Unit = js.native
+    /* protected */ def work(state: T): Unit = js.native
   }
   
 }

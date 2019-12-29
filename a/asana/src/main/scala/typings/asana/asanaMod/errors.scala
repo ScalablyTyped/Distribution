@@ -1,6 +1,5 @@
 package typings.asana.asanaMod
 
-import typings.asana.asanaMod.errors.AsanaError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

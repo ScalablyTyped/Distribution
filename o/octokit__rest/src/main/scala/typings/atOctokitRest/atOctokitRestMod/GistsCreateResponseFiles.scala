@@ -5,25 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GistsCreateResponseFiles extends js.Object {
-  var `hello_world.py`: GistsCreateResponseFilesHelloWorldPy
-  var `hello_world.rb`: GistsCreateResponseFilesHelloWorldRb
-  var `hello_world_python.txt`: GistsCreateResponseFilesHelloWorldPythonTxt
-  var `hello_world_ruby.txt`: GistsCreateResponseFilesHelloWorldRubyTxt
+  @JSName("hello_world.py")
+  var hello_worldDotpy: GistsCreateResponseFilesHelloWorldPy
+  @JSName("hello_world.rb")
+  var hello_worldDotrb: GistsCreateResponseFilesHelloWorldRb
+  @JSName("hello_world_python.txt")
+  var hello_world_pythonDottxt: GistsCreateResponseFilesHelloWorldPythonTxt
+  @JSName("hello_world_ruby.txt")
+  var hello_world_rubyDottxt: GistsCreateResponseFilesHelloWorldRubyTxt
 }
 
 object GistsCreateResponseFiles {
   @scala.inline
   def apply(
-    `hello_world.py`: GistsCreateResponseFilesHelloWorldPy,
-    `hello_world.rb`: GistsCreateResponseFilesHelloWorldRb,
-    `hello_world_python.txt`: GistsCreateResponseFilesHelloWorldPythonTxt,
-    `hello_world_ruby.txt`: GistsCreateResponseFilesHelloWorldRubyTxt
+    hello_worldDotpy: GistsCreateResponseFilesHelloWorldPy,
+    hello_worldDotrb: GistsCreateResponseFilesHelloWorldRb,
+    hello_world_pythonDottxt: GistsCreateResponseFilesHelloWorldPythonTxt,
+    hello_world_rubyDottxt: GistsCreateResponseFilesHelloWorldRubyTxt
   ): GistsCreateResponseFiles = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hello_world.py")(`hello_world.py`.asInstanceOf[js.Any])
-    __obj.updateDynamic("hello_world.rb")(`hello_world.rb`.asInstanceOf[js.Any])
-    __obj.updateDynamic("hello_world_python.txt")(`hello_world_python.txt`.asInstanceOf[js.Any])
-    __obj.updateDynamic("hello_world_ruby.txt")(`hello_world_ruby.txt`.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.py")(hello_worldDotpy.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.rb")(hello_worldDotrb.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world_python.txt")(hello_world_pythonDottxt.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world_ruby.txt")(hello_world_rubyDottxt.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsCreateResponseFiles]
   }
 }

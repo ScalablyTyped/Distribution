@@ -4,7 +4,6 @@ import typings.dndDashCore.libInterfacesMod.Backend
 import typings.dndDashCore.libInterfacesMod.DragDropManager
 import typings.dndDashCore.libInterfacesMod.Unsubscribe
 import typings.reactDashDndDashTouchDashBackend.libInterfacesMod.TouchBackendOptions
-import typings.reactDashDndDashTouchDashBackend.libTouchBackendMod.TouchBackend
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

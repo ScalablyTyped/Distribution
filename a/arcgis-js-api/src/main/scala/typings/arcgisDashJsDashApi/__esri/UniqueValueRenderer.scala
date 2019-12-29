@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`unique-value`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -156,7 +155,7 @@ trait UniqueValueRenderer
     * @param graphic The graphic whose rendering and legend information will be returned.
     *
     */
-  def getUniqueValueInfo(graphic: Graphic): IPromise[UniqueValueInfo] = js.native
+  def getUniqueValueInfo(graphic: Graphic): js.Promise[UniqueValueInfo] = js.native
   /**
     * Removes a unique value from the renderer.
     *

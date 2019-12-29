@@ -1,6 +1,6 @@
 package typings.arangodb.Foxx
 
-import typings.arangodb.arangodbNumbers.`false`
+import typings.arangodb.arangodbBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

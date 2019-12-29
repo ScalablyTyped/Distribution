@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object raspiDashSerialStrings {
   @js.native
-  sealed trait `/dev/ttyAMA0` extends js.Object
+  sealed trait SlashdevSlashttyAMA0 extends js.Object
   
   @js.native
   sealed trait even extends js.Object
@@ -24,7 +24,7 @@ object raspiDashSerialStrings {
   sealed trait space extends js.Object
   
   @scala.inline
-  def `/dev/ttyAMA0`: `/dev/ttyAMA0` = "/dev/ttyAMA0".asInstanceOf[`/dev/ttyAMA0`]
+  def SlashdevSlashttyAMA0: SlashdevSlashttyAMA0 = "/dev/ttyAMA0".asInstanceOf[SlashdevSlashttyAMA0]
   @scala.inline
   def even: even = "even".asInstanceOf[even]
   @scala.inline

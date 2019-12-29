@@ -1,54 +1,54 @@
 package typings.activexDashDao.DAO
 
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x00000439;CP=65001;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x00040411;CP=65001;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0401;CP=1256;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0404;CP=950;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0405;CP=1250;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0406;CP=1252;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0408;CP=1253;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0409;CP=1252;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040A;CP=1252;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040D;CP=1255;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040E;CP=1250;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040F;CP=1252;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0411;CP=932;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0412;CP=949;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0413;CP=1252;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0415;CP=1250;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0419;CP=1251;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x041D;CP=1252;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x041E;CP=874;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x041F;CP=1254;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0424;CP=1250;COUNTRY=0`
-import typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0804;CP=936;COUNTRY=0`
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x00000439SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x00040411SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0404SemicolonCPEqualssign950SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0406SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0411SemicolonCPEqualssign932SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0412SemicolonCPEqualssign949SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x041ESemicolonCPEqualssign874SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0424SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+import typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0401;CP=1256;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0804;CP=936;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0404;CP=950;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0419;CP=1251;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0405;CP=1250;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0413;CP=1252;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0409;CP=1252;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0408;CP=1253;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040D;CP=1255;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x00000439;CP=65001;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040E;CP=1250;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040F;CP=1252;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0411;CP=932;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x00040411;CP=65001;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0412;CP=949;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x041D;CP=1252;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0406;CP=1252;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0415;CP=1250;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x0424;CP=1250;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x040A;CP=1252;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x041E;CP=874;COUNTRY=0`
-  - typings.activexDashDao.activexDashDaoStrings.`;LANGID=0x041F;CP=1254;COUNTRY=0`
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0404SemicolonCPEqualssign950SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x00000439SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0411SemicolonCPEqualssign932SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x00040411SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0412SemicolonCPEqualssign949SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0406SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x0424SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x041ESemicolonCPEqualssign874SemicolonCOUNTRYEqualssign0
+  - typings.activexDashDao.activexDashDaoStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
 */
 trait LanguageConstants extends js.Object
 
@@ -56,50 +56,50 @@ object LanguageConstants {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def dbLangArabic: `;LANGID=0x0401;CP=1256;COUNTRY=0` = this.cast(";LANGID=0x0401;CP=1256;COUNTRY=0")
+  def dbLangArabic: SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0401;CP=1256;COUNTRY=0")
   @scala.inline
-  def dbLangChineseSimplified: `;LANGID=0x0804;CP=936;COUNTRY=0` = this.cast(";LANGID=0x0804;CP=936;COUNTRY=0")
+  def dbLangChineseSimplified: SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0804;CP=936;COUNTRY=0")
   @scala.inline
-  def dbLangChineseTraditional: `;LANGID=0x0404;CP=950;COUNTRY=0` = this.cast(";LANGID=0x0404;CP=950;COUNTRY=0")
+  def dbLangChineseTraditional: SemicolonLANGIDEqualssign0x0404SemicolonCPEqualssign950SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0404;CP=950;COUNTRY=0")
   @scala.inline
-  def dbLangCyrillic: `;LANGID=0x0419;CP=1251;COUNTRY=0` = this.cast(";LANGID=0x0419;CP=1251;COUNTRY=0")
+  def dbLangCyrillic: SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0419;CP=1251;COUNTRY=0")
   @scala.inline
-  def dbLangCzech: `;LANGID=0x0405;CP=1250;COUNTRY=0` = this.cast(";LANGID=0x0405;CP=1250;COUNTRY=0")
+  def dbLangCzech: SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0405;CP=1250;COUNTRY=0")
   @scala.inline
-  def dbLangDutch: `;LANGID=0x0413;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x0413;CP=1252;COUNTRY=0")
+  def dbLangDutch: SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0413;CP=1252;COUNTRY=0")
   @scala.inline
-  def dbLangGeneral: `;LANGID=0x0409;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x0409;CP=1252;COUNTRY=0")
+  def dbLangGeneral: SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0409;CP=1252;COUNTRY=0")
   @scala.inline
-  def dbLangGreek: `;LANGID=0x0408;CP=1253;COUNTRY=0` = this.cast(";LANGID=0x0408;CP=1253;COUNTRY=0")
+  def dbLangGreek: SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0408;CP=1253;COUNTRY=0")
   @scala.inline
-  def dbLangHebrew: `;LANGID=0x040D;CP=1255;COUNTRY=0` = this.cast(";LANGID=0x040D;CP=1255;COUNTRY=0")
+  def dbLangHebrew: SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040D;CP=1255;COUNTRY=0")
   @scala.inline
-  def dbLangHindi: `;LANGID=0x00000439;CP=65001;COUNTRY=0` = this.cast(";LANGID=0x00000439;CP=65001;COUNTRY=0")
+  def dbLangHindi: SemicolonLANGIDEqualssign0x00000439SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x00000439;CP=65001;COUNTRY=0")
   @scala.inline
-  def dbLangHungarian: `;LANGID=0x040E;CP=1250;COUNTRY=0` = this.cast(";LANGID=0x040E;CP=1250;COUNTRY=0")
+  def dbLangHungarian: SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040E;CP=1250;COUNTRY=0")
   @scala.inline
-  def dbLangIcelandic: `;LANGID=0x040F;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x040F;CP=1252;COUNTRY=0")
+  def dbLangIcelandic: SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040F;CP=1252;COUNTRY=0")
   @scala.inline
-  def dbLangJapanese: `;LANGID=0x0411;CP=932;COUNTRY=0` = this.cast(";LANGID=0x0411;CP=932;COUNTRY=0")
+  def dbLangJapanese: SemicolonLANGIDEqualssign0x0411SemicolonCPEqualssign932SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0411;CP=932;COUNTRY=0")
   @scala.inline
-  def dbLangJapaneseRadicalStrokeCount: `;LANGID=0x00040411;CP=65001;COUNTRY=0` = this.cast(";LANGID=0x00040411;CP=65001;COUNTRY=0")
+  def dbLangJapaneseRadicalStrokeCount: SemicolonLANGIDEqualssign0x00040411SemicolonCPEqualssign65001SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x00040411;CP=65001;COUNTRY=0")
   @scala.inline
-  def dbLangKorean: `;LANGID=0x0412;CP=949;COUNTRY=0` = this.cast(";LANGID=0x0412;CP=949;COUNTRY=0")
+  def dbLangKorean: SemicolonLANGIDEqualssign0x0412SemicolonCPEqualssign949SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0412;CP=949;COUNTRY=0")
   @scala.inline
-  def dbLangNordic: `;LANGID=0x041D;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x041D;CP=1252;COUNTRY=0")
+  def dbLangNordic: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x041D;CP=1252;COUNTRY=0")
   @scala.inline
-  def dbLangNorwDan: `;LANGID=0x0406;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x0406;CP=1252;COUNTRY=0")
+  def dbLangNorwDan: SemicolonLANGIDEqualssign0x0406SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0406;CP=1252;COUNTRY=0")
   @scala.inline
-  def dbLangPolish: `;LANGID=0x0415;CP=1250;COUNTRY=0` = this.cast(";LANGID=0x0415;CP=1250;COUNTRY=0")
+  def dbLangPolish: SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0415;CP=1250;COUNTRY=0")
   @scala.inline
-  def dbLangSlovenian: `;LANGID=0x0424;CP=1250;COUNTRY=0` = this.cast(";LANGID=0x0424;CP=1250;COUNTRY=0")
+  def dbLangSlovenian: SemicolonLANGIDEqualssign0x0424SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0424;CP=1250;COUNTRY=0")
   @scala.inline
-  def dbLangSpanish: `;LANGID=0x040A;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x040A;CP=1252;COUNTRY=0")
+  def dbLangSpanish: SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040A;CP=1252;COUNTRY=0")
   @scala.inline
-  def dbLangSwedFin: `;LANGID=0x041D;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x041D;CP=1252;COUNTRY=0")
+  def dbLangSwedFin: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x041D;CP=1252;COUNTRY=0")
   @scala.inline
-  def dbLangThai: `;LANGID=0x041E;CP=874;COUNTRY=0` = this.cast(";LANGID=0x041E;CP=874;COUNTRY=0")
+  def dbLangThai: SemicolonLANGIDEqualssign0x041ESemicolonCPEqualssign874SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x041E;CP=874;COUNTRY=0")
   @scala.inline
-  def dbLangTurkish: `;LANGID=0x041F;CP=1254;COUNTRY=0` = this.cast(";LANGID=0x041F;CP=1254;COUNTRY=0")
+  def dbLangTurkish: SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x041F;CP=1254;COUNTRY=0")
 }
 

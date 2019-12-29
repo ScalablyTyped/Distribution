@@ -24,6 +24,8 @@ trait ModalProps
   var closeProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /* Additional props to be spread to the content section of the dialog. */
   var contentProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   /* Additional props to be spread to the footer of the dialog. */
   var footerProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /* Additional props to be spread to the header of the dialog. */
@@ -49,6 +51,8 @@ object ModalProps {
     bodyProps: StringDictionary[js.Any] = null,
     closeProps: StringDictionary[js.Any] = null,
     contentProps: StringDictionary[js.Any] = null,
+    customStyles: StringDictionary[js.Any] = null,
+    disableStyles: js.UndefOr[Boolean] = js.undefined,
     footerProps: StringDictionary[js.Any] = null,
     headerProps: StringDictionary[js.Any] = null,
     headingLevel: `2` | `3` | `4` | `5` | `6` = null,
@@ -63,6 +67,8 @@ object ModalProps {
     if (bodyProps != null) __obj.updateDynamic("bodyProps")(bodyProps.asInstanceOf[js.Any])
     if (closeProps != null) __obj.updateDynamic("closeProps")(closeProps.asInstanceOf[js.Any])
     if (contentProps != null) __obj.updateDynamic("contentProps")(contentProps.asInstanceOf[js.Any])
+    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (footerProps != null) __obj.updateDynamic("footerProps")(footerProps.asInstanceOf[js.Any])
     if (headerProps != null) __obj.updateDynamic("headerProps")(headerProps.asInstanceOf[js.Any])
     if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.atGoogleDashCloudPubsub
 
-import typings.atGoogleDashCloudPubsub.atGoogleDashCloudPubsubMod.PubSub
 import typings.atGoogleDashCloudPubsub.buildProtoPubsubMod.google.pubsub.v1.IReceivedMessage
 import typings.atGoogleDashCloudPubsub.buildProtoPubsubMod.google.pubsub.v1.ISubscription
 import typings.atGoogleDashCloudPubsub.buildSrcPublisherMod.PublishOptions

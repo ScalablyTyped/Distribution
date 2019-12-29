@@ -9,31 +9,31 @@ object bip174Strings {
   sealed trait Buffer extends js.Object
   
   @js.native
+  sealed trait `Leftcurlybracket masterFingerprintColon BufferSemicolon extendedPubkeyColon BufferSemicolon pathColon stringSemicolon Rightcurlybracket` extends js.Object
+  
+  @js.native
+  sealed trait `Leftcurlybracket pubkeyColon BufferSemicolon signatureColon BufferSemicolon Rightcurlybracket` extends js.Object
+  
+  @js.native
+  sealed trait `Leftcurlybracket scriptColon BufferSemicolon valueColon numberSemicolon Rightcurlybracket` extends js.Object
+  
+  @js.native
   sealed trait number extends js.Object
   
   @js.native
   sealed trait string extends js.Object
   
-  @js.native
-  sealed trait `{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }` extends js.Object
-  
-  @js.native
-  sealed trait `{ pubkey: Buffer; signature: Buffer; }` extends js.Object
-  
-  @js.native
-  sealed trait `{ script: Buffer; value: number; }` extends js.Object
-  
   @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  @scala.inline
+  def `Leftcurlybracket masterFingerprintColon BufferSemicolon extendedPubkeyColon BufferSemicolon pathColon stringSemicolon Rightcurlybracket`: `Leftcurlybracket masterFingerprintColon BufferSemicolon extendedPubkeyColon BufferSemicolon pathColon stringSemicolon Rightcurlybracket` = "{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }".asInstanceOf[`Leftcurlybracket masterFingerprintColon BufferSemicolon extendedPubkeyColon BufferSemicolon pathColon stringSemicolon Rightcurlybracket`]
+  @scala.inline
+  def `Leftcurlybracket pubkeyColon BufferSemicolon signatureColon BufferSemicolon Rightcurlybracket`: `Leftcurlybracket pubkeyColon BufferSemicolon signatureColon BufferSemicolon Rightcurlybracket` = "{ pubkey: Buffer; signature: Buffer; }".asInstanceOf[`Leftcurlybracket pubkeyColon BufferSemicolon signatureColon BufferSemicolon Rightcurlybracket`]
+  @scala.inline
+  def `Leftcurlybracket scriptColon BufferSemicolon valueColon numberSemicolon Rightcurlybracket`: `Leftcurlybracket scriptColon BufferSemicolon valueColon numberSemicolon Rightcurlybracket` = "{ script: Buffer; value: number; }".asInstanceOf[`Leftcurlybracket scriptColon BufferSemicolon valueColon numberSemicolon Rightcurlybracket`]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def `{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }`: `{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }` = "{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }".asInstanceOf[`{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }`]
-  @scala.inline
-  def `{ pubkey: Buffer; signature: Buffer; }`: `{ pubkey: Buffer; signature: Buffer; }` = "{ pubkey: Buffer; signature: Buffer; }".asInstanceOf[`{ pubkey: Buffer; signature: Buffer; }`]
-  @scala.inline
-  def `{ script: Buffer; value: number; }`: `{ script: Buffer; value: number; }` = "{ script: Buffer; value: number; }".asInstanceOf[`{ script: Buffer; value: number; }`]
 }
 

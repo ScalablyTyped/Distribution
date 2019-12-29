@@ -1,6 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.renderQueueMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cluster", "listenerCount")
 @js.native
 object listenerCount extends js.Object {
-  def apply(`type`: java.lang.String): Double = js.native
+  def apply(`type`: String): Double = js.native
 }
 

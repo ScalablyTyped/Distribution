@@ -9,11 +9,11 @@ object atStorybookAddonDashBackgroundsStrings {
   sealed trait backgrounds extends js.Object
   
   @js.native
-  sealed trait `storybook/background` extends js.Object
+  sealed trait storybookSlashbackground extends js.Object
   
   @scala.inline
   def backgrounds: backgrounds = "backgrounds".asInstanceOf[backgrounds]
   @scala.inline
-  def `storybook/background`: `storybook/background` = "storybook/background".asInstanceOf[`storybook/background`]
+  def storybookSlashbackground: storybookSlashbackground = "storybook/background".asInstanceOf[storybookSlashbackground]
 }
 

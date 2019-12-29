@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait NetworkPolicy extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `extensions/v1beta1`
+  val apiVersion: extensionsSlashv1beta1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -40,7 +40,7 @@ trait NetworkPolicy extends js.Object {
 object NetworkPolicy {
   @scala.inline
   def apply(
-    apiVersion: `extensions/v1beta1`,
+    apiVersion: extensionsSlashv1beta1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.NetworkPolicy,
     metadata: ObjectMeta,
     spec: NetworkPolicySpec

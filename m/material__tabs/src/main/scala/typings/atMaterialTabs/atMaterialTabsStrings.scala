@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation._
 
 object atMaterialTabsStrings {
   @js.native
-  sealed trait `DOTmdc-tab` extends js.Object
+  sealed trait `Dotmdc-tab` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-tab-bar-scroller__indicator--back` extends js.Object
+  sealed trait `Dotmdc-tab-bar-scroller__indicator--back` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-tab-bar-scroller__indicator--forward` extends js.Object
+  sealed trait `Dotmdc-tab-bar-scroller__indicator--forward` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-tab-bar-scroller__scroll-frame` extends js.Object
+  sealed trait `Dotmdc-tab-bar-scroller__scroll-frame` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-tab-bar-scroller__scroll-frame__tabs` extends js.Object
+  sealed trait `Dotmdc-tab-bar-scroller__scroll-frame__tabs` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-tab-bar__indicator` extends js.Object
+  sealed trait `Dotmdc-tab-bar__indicator` extends js.Object
   
   @js.native
-  sealed trait `MDCTab:selected` extends js.Object
+  sealed trait MDCTabBarColonchange extends js.Object
   
   @js.native
-  sealed trait `MDCTabBar:change` extends js.Object
+  sealed trait MDCTabColonselected extends js.Object
   
   @js.native
   sealed trait `mdc-tab` extends js.Object
@@ -48,21 +48,21 @@ object atMaterialTabsStrings {
   sealed trait `mdc-tab-bar-upgraded` extends js.Object
   
   @scala.inline
-  def `DOTmdc-tab`: `DOTmdc-tab` = ".mdc-tab".asInstanceOf[`DOTmdc-tab`]
+  def `Dotmdc-tab`: `Dotmdc-tab` = ".mdc-tab".asInstanceOf[`Dotmdc-tab`]
   @scala.inline
-  def `DOTmdc-tab-bar-scroller__indicator--back`: `DOTmdc-tab-bar-scroller__indicator--back` = ".mdc-tab-bar-scroller__indicator--back".asInstanceOf[`DOTmdc-tab-bar-scroller__indicator--back`]
+  def `Dotmdc-tab-bar-scroller__indicator--back`: `Dotmdc-tab-bar-scroller__indicator--back` = ".mdc-tab-bar-scroller__indicator--back".asInstanceOf[`Dotmdc-tab-bar-scroller__indicator--back`]
   @scala.inline
-  def `DOTmdc-tab-bar-scroller__indicator--forward`: `DOTmdc-tab-bar-scroller__indicator--forward` = ".mdc-tab-bar-scroller__indicator--forward".asInstanceOf[`DOTmdc-tab-bar-scroller__indicator--forward`]
+  def `Dotmdc-tab-bar-scroller__indicator--forward`: `Dotmdc-tab-bar-scroller__indicator--forward` = ".mdc-tab-bar-scroller__indicator--forward".asInstanceOf[`Dotmdc-tab-bar-scroller__indicator--forward`]
   @scala.inline
-  def `DOTmdc-tab-bar-scroller__scroll-frame`: `DOTmdc-tab-bar-scroller__scroll-frame` = ".mdc-tab-bar-scroller__scroll-frame".asInstanceOf[`DOTmdc-tab-bar-scroller__scroll-frame`]
+  def `Dotmdc-tab-bar-scroller__scroll-frame`: `Dotmdc-tab-bar-scroller__scroll-frame` = ".mdc-tab-bar-scroller__scroll-frame".asInstanceOf[`Dotmdc-tab-bar-scroller__scroll-frame`]
   @scala.inline
-  def `DOTmdc-tab-bar-scroller__scroll-frame__tabs`: `DOTmdc-tab-bar-scroller__scroll-frame__tabs` = ".mdc-tab-bar-scroller__scroll-frame__tabs".asInstanceOf[`DOTmdc-tab-bar-scroller__scroll-frame__tabs`]
+  def `Dotmdc-tab-bar-scroller__scroll-frame__tabs`: `Dotmdc-tab-bar-scroller__scroll-frame__tabs` = ".mdc-tab-bar-scroller__scroll-frame__tabs".asInstanceOf[`Dotmdc-tab-bar-scroller__scroll-frame__tabs`]
   @scala.inline
-  def `DOTmdc-tab-bar__indicator`: `DOTmdc-tab-bar__indicator` = ".mdc-tab-bar__indicator".asInstanceOf[`DOTmdc-tab-bar__indicator`]
+  def `Dotmdc-tab-bar__indicator`: `Dotmdc-tab-bar__indicator` = ".mdc-tab-bar__indicator".asInstanceOf[`Dotmdc-tab-bar__indicator`]
   @scala.inline
-  def `MDCTab:selected`: `MDCTab:selected` = "MDCTab:selected".asInstanceOf[`MDCTab:selected`]
+  def MDCTabBarColonchange: MDCTabBarColonchange = "MDCTabBar:change".asInstanceOf[MDCTabBarColonchange]
   @scala.inline
-  def `MDCTabBar:change`: `MDCTabBar:change` = "MDCTabBar:change".asInstanceOf[`MDCTabBar:change`]
+  def MDCTabColonselected: MDCTabColonselected = "MDCTab:selected".asInstanceOf[MDCTabColonselected]
   @scala.inline
   def `mdc-tab`: `mdc-tab` = "mdc-tab".asInstanceOf[`mdc-tab`]
   @scala.inline

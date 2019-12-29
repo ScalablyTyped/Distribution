@@ -17,6 +17,7 @@ class Rectangle protected () extends js.Object {
   val RectangleType: WdRectangleType = js.native
   val Top: Double = js.native
   val Width: Double = js.native
-  var `Word.Rectangle_typekey`: Rectangle = js.native
+  @JSName("Word.Rectangle_typekey")
+  var WordDotRectangle_typekey: Rectangle = js.native
 }
 

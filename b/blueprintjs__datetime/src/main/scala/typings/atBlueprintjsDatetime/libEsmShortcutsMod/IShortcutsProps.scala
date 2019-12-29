@@ -1,6 +1,6 @@
 package typings.atBlueprintjsDatetime.libEsmShortcutsMod
 
-import typings.atBlueprintjsDatetime.atBlueprintjsDatetimeNumbers.`true`
+import typings.atBlueprintjsDatetime.atBlueprintjsDatetimeBooleans.`true`
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.TimePrecision
 import typings.std.Date
 import scala.scalajs.js

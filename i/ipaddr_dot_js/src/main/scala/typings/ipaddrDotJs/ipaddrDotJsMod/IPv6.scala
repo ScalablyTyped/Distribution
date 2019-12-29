@@ -1,6 +1,6 @@
 package typings.ipaddrDotJs.ipaddrDotJsMod
 
-import typings.ipaddrDotJs.ipaddrDotJsNumbers.`false`
+import typings.ipaddrDotJs.ipaddrDotJsBooleans.`false`
 import typings.ipaddrDotJs.ipaddrDotJsStrings.ipv6
 import scala.scalajs.js
 import scala.scalajs.js.`|`

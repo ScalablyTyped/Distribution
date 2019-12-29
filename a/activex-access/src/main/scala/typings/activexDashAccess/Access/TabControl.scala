@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.TabControl")
 @js.native
 class TabControl protected () extends js.Object {
-  var `Access.TabControl_typekey`: TabControl = js.native
+  @JSName("Access.TabControl_typekey")
+  var AccessDotTabControl_typekey: TabControl = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BackColor: Double = js.native
   var BackShade: Double = js.native

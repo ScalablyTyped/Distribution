@@ -1,6 +1,5 @@
 package typings.typesafeDashActions
 
-import typings.typesafeDashActions.distIsDashActionDashOfMod.ActionCreator
 import typings.typesafeDashActions.distTypeDashHelpersMod.TypeMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`

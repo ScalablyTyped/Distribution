@@ -1,8 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.ToolbarPosition.BOTTOM
-import typings.tableau.tableau.ToolbarPosition.TOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

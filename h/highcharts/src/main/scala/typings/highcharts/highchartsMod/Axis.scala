@@ -148,7 +148,7 @@ class Axis protected () extends js.Object {
     *
     * @return The formatted label content.
     */
-  def defaultLabelFormatter(`this`: AxisLabelsFormatterContextObject): String = js.native
+  def defaultLabelFormatter(): String = js.native
   /**
     * Internal function to draw a crosshair.
     *

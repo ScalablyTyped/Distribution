@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.appservices
 
+import typings.mendixmodelsdk.distGenAppservicesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -27,7 +28,7 @@ class ConsumedAppService protected ()
 @js.native
 object ConsumedAppService extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenAppservicesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates a new ConsumedAppService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.

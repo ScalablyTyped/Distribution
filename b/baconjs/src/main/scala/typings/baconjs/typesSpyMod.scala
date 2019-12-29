@@ -1,7 +1,6 @@
 package typings.baconjs
 
 import typings.baconjs.typesObservableMod.default
-import typings.baconjs.typesSpyMod.Spy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

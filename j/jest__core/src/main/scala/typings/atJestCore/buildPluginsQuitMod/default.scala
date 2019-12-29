@@ -2,7 +2,7 @@ package typings.atJestCore.buildPluginsQuitMod
 
 import typings.atJestCore.Anon_Key
 import typings.atJestCore.Anon_Stdin
-import typings.atJestCore.atJestCoreNumbers.`true`
+import typings.atJestCore.atJestCoreBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

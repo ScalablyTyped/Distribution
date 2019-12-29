@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.PivotLayoutType.compact
-import typings.officeDashJs.Excel.PivotLayoutType.outline
-import typings.officeDashJs.Excel.PivotLayoutType.tabular
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

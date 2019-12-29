@@ -1,6 +1,6 @@
 package typings.johnnyDashFive.johnnyDashFiveMod
 
-import typings.johnnyDashFive.johnnyDashFiveStrings.`move:complete`
+import typings.johnnyDashFive.johnnyDashFiveStrings.moveColoncomplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ class Servo protected () extends js.Object {
   def min(): Unit = js.native
   def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_movecomplete(event: `move:complete`, cb: js.Function0[Unit]): this.type = js.native
+  def on_movecomplete(event: moveColoncomplete, cb: js.Function0[Unit]): this.type = js.native
   def stop(): Unit = js.native
   def sweep(): Unit = js.native
   def sweep(opt: ServoSweepOpts): Unit = js.native

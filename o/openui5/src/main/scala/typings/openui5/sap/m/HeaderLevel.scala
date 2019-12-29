@@ -1,12 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.HeaderLevel.H1
-import typings.openui5.sap.m.HeaderLevel.H2
-import typings.openui5.sap.m.HeaderLevel.H3
-import typings.openui5.sap.m.HeaderLevel.H4
-import typings.openui5.sap.m.HeaderLevel.H5
-import typings.openui5.sap.m.HeaderLevel.H6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

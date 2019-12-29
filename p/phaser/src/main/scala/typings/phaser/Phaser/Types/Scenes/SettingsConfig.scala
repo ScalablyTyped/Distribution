@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Types.Cameras.Scene2D.JSONCamera
 import typings.phaser.Phaser.Types.Core.LoaderConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileConfig
-import typings.phaser.phaserNumbers.`false`
+import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

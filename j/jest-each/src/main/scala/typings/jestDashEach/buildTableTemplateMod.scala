@@ -1,6 +1,5 @@
 package typings.jestDashEach
 
-import typings.jestDashEach.buildTableTemplateMod.Template
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

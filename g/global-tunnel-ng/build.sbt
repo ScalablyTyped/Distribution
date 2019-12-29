@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "global-tunnel-ng"
-version := "2.1-dt-20180214Z-742e1f"
+version := "2.1-dt-20180214Z-132cfa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -31,7 +31,8 @@ class ChartFillFormat protected () extends js.Object {
   val TextureType: MsoTextureType = js.native
   val Type: MsoFillType = js.native
   var Visible: MsoTriState = js.native
-  var `Word.ChartFillFormat_typekey`: ChartFillFormat = js.native
+  @JSName("Word.ChartFillFormat_typekey")
+  var WordDotChartFillFormat_typekey: ChartFillFormat = js.native
   def OneColorGradient(Style: MsoGradientStyle, Variant: Double, Degree: Double): Unit = js.native
   def Patterned(Pattern: MsoPatternType): Unit = js.native
   def PresetGradient(Style: MsoGradientStyle, Variant: Double, PresetGradientType: MsoPresetGradientType): Unit = js.native

@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LineCap.Butt
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LineCap.Round
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LineCap.Square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

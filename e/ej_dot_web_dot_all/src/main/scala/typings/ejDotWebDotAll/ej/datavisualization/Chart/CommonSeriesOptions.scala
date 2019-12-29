@@ -235,7 +235,7 @@ trait CommonSeriesOptions extends js.Object {
   /** Specifies the type of the series to render in chart.
     * @Default {column. See Type}
     */
-  var `type`: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Chart.Type | String] = js.undefined
+  var `type`: js.UndefOr[Type | String] = js.undefined
   /** Enables or disables the visibility of legend item.
     * @Default {visible}
     */
@@ -326,7 +326,7 @@ object CommonSeriesOptions {
     startAngle: Int | Double = null,
     tooltip: CommonSeriesOptionsTooltip = null,
     trendlines: js.Array[CommonSeriesOptionsTrendline] = null,
-    `type`: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type | String = null,
+    `type`: Type | String = null,
     visibleOnLegend: String = null,
     xAxisName: String = null,
     xName: String = null,

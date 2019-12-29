@@ -1,6 +1,5 @@
 package typings.antdDashMobileDashRn
 
-import typings.antdDashMobileDashRn.libModalDemoBasicDotNativeMod.BasicModalExample
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

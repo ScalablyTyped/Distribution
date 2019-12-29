@@ -1,10 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.SceneMode.COLUMBUS_VIEW
-import typings.cesium.cesiumMod.SceneMode.MORPHING
-import typings.cesium.cesiumMod.SceneMode.SCENE2D
-import typings.cesium.cesiumMod.SceneMode.SCENE3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

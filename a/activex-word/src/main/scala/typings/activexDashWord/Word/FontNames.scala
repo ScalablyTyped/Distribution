@@ -11,7 +11,8 @@ class FontNames protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.FontNames_typekey`: FontNames = js.native
+  @JSName("Word.FontNames_typekey")
+  var WordDotFontNames_typekey: FontNames = js.native
   def Item(Index: Double): String = js.native
 }
 

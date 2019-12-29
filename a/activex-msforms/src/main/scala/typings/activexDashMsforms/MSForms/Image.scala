@@ -14,7 +14,8 @@ class Image protected () extends js.Object {
   var BorderColor: Double = js.native
   var BorderStyle: fmBorderStyle = js.native
   var Enabled: Boolean = js.native
-  var `MSForms.Image_typekey`: Image = js.native
+  @JSName("MSForms.Image_typekey")
+  var MSFormsDotImage_typekey: Image = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var Picture: StdPicture = js.native

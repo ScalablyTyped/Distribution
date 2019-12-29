@@ -21,7 +21,7 @@ class Layout protected ()
 @JSGlobal("kendo.mobile.ui.Layout")
 @js.native
 object Layout extends js.Object {
-  var fn: typings.kendoDashUi.kendo.mobile.ui.Layout = js.native
-  def extend(proto: js.Object): typings.kendoDashUi.kendo.mobile.ui.Layout = js.native
+  var fn: Layout = js.native
+  def extend(proto: js.Object): Layout = js.native
 }
 

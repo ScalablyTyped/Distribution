@@ -1,7 +1,7 @@
 package typings.tabulatorDashTables.Tabulator
 
 import typings.std.HTMLElement
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`false`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.alphanum
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.array
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.boolean

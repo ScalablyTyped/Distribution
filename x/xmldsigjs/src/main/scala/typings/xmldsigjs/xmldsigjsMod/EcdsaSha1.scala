@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "EcdsaSha1")
 @js.native
-class EcdsaSha1 () extends SignatureAlgorithm
+class EcdsaSha1 ()
+  extends typings.xmldsigjs.buildTypesAlgorithmsEcdsaUnderscoreSignMod.EcdsaSha1
 

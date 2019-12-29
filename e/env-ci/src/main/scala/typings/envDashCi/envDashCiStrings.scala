@@ -42,7 +42,7 @@ object envDashCiStrings {
   sealed trait Drone extends js.Object
   
   @js.native
-  sealed trait `GitLab CI/CD` extends js.Object
+  sealed trait `GitLab CISlashCD` extends js.Object
   
   @js.native
   sealed trait Jenkins extends js.Object
@@ -156,7 +156,7 @@ object envDashCiStrings {
   @scala.inline
   def Drone: Drone = "Drone".asInstanceOf[Drone]
   @scala.inline
-  def `GitLab CI/CD`: `GitLab CI/CD` = "GitLab CI/CD".asInstanceOf[`GitLab CI/CD`]
+  def `GitLab CISlashCD`: `GitLab CISlashCD` = "GitLab CI/CD".asInstanceOf[`GitLab CISlashCD`]
   @scala.inline
   def Jenkins: Jenkins = "Jenkins".asInstanceOf[Jenkins]
   @scala.inline

@@ -12,7 +12,7 @@ trait ITree extends IObservable {
   		* @param id String
   		* @returns Ext.data.NodeInterface The match node.
   		*/
-  var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], INodeInterface]] = js.undefined
+  var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], INodeInterface]] = js.undefined
   /** [Method] Returns the root node for this tree
   		* @returns Ext.data.NodeInterface
   		*/
@@ -45,13 +45,13 @@ object ITree {
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getNodeById: /* id */ js.UndefOr[java.lang.String] => INodeInterface = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getNodeById: /* id */ js.UndefOr[String] => INodeInterface = null,
     getRootNode: () => INodeInterface = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ITree = null,
@@ -61,8 +61,8 @@ object ITree {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeRootNode: () => INodeInterface = null,
     requires: Array = null,
@@ -75,7 +75,7 @@ object ITree {
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): ITree = {
     val __obj = js.Dynamic.literal()

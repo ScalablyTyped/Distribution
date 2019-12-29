@@ -1,12 +1,6 @@
 package typings.jpegDashAutorotate.jpegDashAutorotateMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jpegDashAutorotate.jpegDashAutorotateMod.errors.correct_orientation
-import typings.jpegDashAutorotate.jpegDashAutorotateMod.errors.no_orientation
-import typings.jpegDashAutorotate.jpegDashAutorotateMod.errors.read_exif
-import typings.jpegDashAutorotate.jpegDashAutorotateMod.errors.read_file
-import typings.jpegDashAutorotate.jpegDashAutorotateMod.errors.rotate_file
-import typings.jpegDashAutorotate.jpegDashAutorotateMod.errors.unknown_orientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

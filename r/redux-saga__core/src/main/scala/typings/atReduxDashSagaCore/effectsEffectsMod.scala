@@ -1,6 +1,7 @@
 package typings.atReduxDashSagaCore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.apply
 import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.call_
 import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.cps_
 import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.fork_
@@ -49,17 +50,17 @@ object effectsEffectsMod extends js.Object {
   def all[T](effects: js.Array[T]): AllEffect[T] = js.native
   def all[T](effects: StringDictionary[T]): AllEffect[T] = js.native
   @JSName("apply")
-  def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](ctx: Ctx, fn: Fn, args: Parameters[Fn]): CallEffect = js.native
+  @JSName("apply")
+  def apply_Ctx_IntersectionapplyAnyName_String[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.apply with js.Any */, Name /* <: String */](
+    */ apply with js.Any */, Name /* <: String */](
     ctx: Ctx,
     fnName: Name,
     args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
   ): CallEffect = js.native
-  @JSName("apply")
-  def apply_CtxFn_ThisFunction1CtxAnyWildcard[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](ctx: Ctx, fn: Fn, args: Parameters[Fn]): CallEffect = js.native
   def call[Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]

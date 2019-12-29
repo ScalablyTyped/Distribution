@@ -1,11 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.FollowResultType.failed
-import typings.sharepoint.SP.UserProfiles.FollowResultType.followed
-import typings.sharepoint.SP.UserProfiles.FollowResultType.hitFollowLimit
-import typings.sharepoint.SP.UserProfiles.FollowResultType.refollowed
-import typings.sharepoint.SP.UserProfiles.FollowResultType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

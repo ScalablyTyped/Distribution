@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapRotation.clockwise180Degrees
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapRotation.clockwise270Degrees
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapRotation.clockwise90Degrees
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapRotation.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

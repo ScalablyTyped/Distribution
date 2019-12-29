@@ -1,6 +1,7 @@
 package typings.dojo.dojox.gauges
 
 import typings.dojo.Anon_Unwatch
+import typings.dojo.dojoStrings.color
 import typings.dojo.dojoStrings.font
 import typings.dojo.dojoStrings.majorTicksColor
 import typings.dojo.dojoStrings.majorTicksInterval
@@ -124,7 +125,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
     */
   def getMinorTicksOffset(): js.Any = js.native
   @JSName("get")
-  def get_color(property: typings.dojo.dojoStrings.color): String = js.native
+  def get_color(property: color): String = js.native
   @JSName("get")
   def get_font(property: font): js.Object = js.native
   @JSName("get")
@@ -183,7 +184,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
     */
   def setMinorTicksOffset(offset: js.Any): js.Function = js.native
   @JSName("set")
-  def set_color(property: typings.dojo.dojoStrings.color, value: String): Unit = js.native
+  def set_color(property: color, value: String): Unit = js.native
   @JSName("set")
   def set_font(property: font, value: js.Object): Unit = js.native
   @JSName("set")
@@ -214,7 +215,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
   def set_value(property: value, value: Double): Unit = js.native
   @JSName("watch")
   def watch_color(
-    property: typings.dojo.dojoStrings.color,
+    property: color,
     callback: js.Function3[
       /* property */ js.UndefOr[String], 
       /* oldValue */ js.UndefOr[String], 

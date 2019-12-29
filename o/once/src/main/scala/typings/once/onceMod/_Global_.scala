@@ -1,6 +1,5 @@
 package typings.once.onceMod
 
-import typings.once.onceMod._Global_.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,7 @@ package typings.atWordpressNux.atWordpressNuxMod
 
 import typings.atWordpressNux.Typeofimported_actions
 import typings.atWordpressNux.Typeofimported_selectors
-import typings.atWordpressNux.atWordpressNuxStrings.`core/nux`
+import typings.atWordpressNux.atWordpressNuxStrings.coreSlashnux
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object atWordpressDataMod extends js.Object {
   @JSName("dispatch")
-  def dispatch_corenux(key: `core/nux`): Typeofimported_actions = js.native
+  def dispatch_corenux(key: coreSlashnux): Typeofimported_actions = js.native
   @JSName("select")
-  def select_corenux(key: `core/nux`): Typeofimported_selectors = js.native
+  def select_corenux(key: coreSlashnux): Typeofimported_selectors = js.native
 }
 

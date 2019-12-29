@@ -14,7 +14,8 @@ class MotionEffect protected () extends js.Object {
   var FromY: Double = js.native
   val Parent: js.Any = js.native
   var Path: String = js.native
-  var `PowerPoint.MotionEffect_typekey`: MotionEffect = js.native
+  @JSName("PowerPoint.MotionEffect_typekey")
+  var PowerPointDotMotionEffect_typekey: MotionEffect = js.native
   var ToX: Double = js.native
   var ToY: Double = js.native
 }

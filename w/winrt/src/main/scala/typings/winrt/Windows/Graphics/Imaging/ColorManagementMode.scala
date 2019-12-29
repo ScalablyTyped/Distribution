@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Imaging.ColorManagementMode.colorManageToSRgb
-import typings.winrt.Windows.Graphics.Imaging.ColorManagementMode.doNotColorManage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,6 @@ import typings.dropboxjs.Anon_ReceiverPath
 import typings.dropboxjs.Anon_RedirectFile
 import typings.dropboxjs.Anon_RememberUser
 import typings.dropboxjs.Anon_Scope
-import typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver
 import typings.std.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`

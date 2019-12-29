@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Resources.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifierPersistence.localMachine
-import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifierPersistence.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

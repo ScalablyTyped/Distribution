@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Imaging.BitmapPixelFormat.bgra8
-import typings.winrt.Windows.Graphics.Imaging.BitmapPixelFormat.rgba16
-import typings.winrt.Windows.Graphics.Imaging.BitmapPixelFormat.rgba8
-import typings.winrt.Windows.Graphics.Imaging.BitmapPixelFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,7 +4,6 @@ import typings.tstl.baseDisposableIPartialContainersMod._IInsert
 import typings.tstl.baseIteratorUnderscoreInsertIteratorMod._InsertIterator
 import typings.tstl.functionalIPointerMod.IPointer.ValueType
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.iteratorInsertIteratorMod.InsertIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

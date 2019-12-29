@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceError
-import typings.winrtDashUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceLocked
-import typings.winrtDashUwp.Windows.Media.PlayTo.PlayToConnectionError.deviceNotResponding
-import typings.winrtDashUwp.Windows.Media.PlayTo.PlayToConnectionError.none
-import typings.winrtDashUwp.Windows.Media.PlayTo.PlayToConnectionError.protectedPlaybackFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

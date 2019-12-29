@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.HEAD
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.MERGED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.NORMAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

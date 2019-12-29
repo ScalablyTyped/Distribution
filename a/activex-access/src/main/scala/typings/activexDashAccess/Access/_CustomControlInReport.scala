@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class _CustomControlInReport protected () extends js.Object {
   var About: String = js.native
-  var `Access._CustomControlInReport_typekey`: _CustomControlInReport = js.native
+  @JSName("Access._CustomControlInReport_typekey")
+  var AccessDot_CustomControlInReport_typekey: _CustomControlInReport = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BorderColor: Double = js.native
   var BorderLineStyle: Double = js.native

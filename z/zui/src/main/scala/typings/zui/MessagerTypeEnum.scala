@@ -1,14 +1,6 @@
 package typings.zui
 
 import org.scalablytyped.runtime.TopLevel
-import typings.zui.MessagerTypeEnum.danger
-import typings.zui.MessagerTypeEnum.default
-import typings.zui.MessagerTypeEnum.important
-import typings.zui.MessagerTypeEnum.info
-import typings.zui.MessagerTypeEnum.primary
-import typings.zui.MessagerTypeEnum.special
-import typings.zui.MessagerTypeEnum.success
-import typings.zui.MessagerTypeEnum.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

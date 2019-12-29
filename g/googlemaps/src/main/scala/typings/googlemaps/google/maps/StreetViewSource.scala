@@ -1,8 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.StreetViewSource.DEFAULT
-import typings.googlemaps.google.maps.StreetViewSource.OUTDOOR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

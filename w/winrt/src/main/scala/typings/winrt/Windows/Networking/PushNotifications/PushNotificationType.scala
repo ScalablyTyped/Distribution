@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Networking.PushNotifications
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.badge
-import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.raw
-import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.tile
-import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.toast
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

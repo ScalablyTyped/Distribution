@@ -6,10 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IAction
-  extends typings.extjs.Ext.grid.column.IColumn {
+trait IAction extends IColumn {
   /** [Config Option] (String) */
-  var altText: js.UndefOr[java.lang.String] = js.undefined
+  var altText: js.UndefOr[String] = js.undefined
   /** [Method] Cascades down the component container heirarchy from this component passed in the first call  calling the specified
   		* @param fn Object
   		* @param scope Object
@@ -66,9 +65,9 @@ trait IAction
   /** [Config Option] (Function) */
   var handler: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.undefined
+  var iconCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object[]) */
   @JSName("items")
   var items_IAction: js.UndefOr[Array] = js.undefined
@@ -79,8 +78,8 @@ trait IAction
 object IAction {
   @scala.inline
   def apply(
-    IColumn: typings.extjs.Ext.grid.column.IColumn = null,
-    altText: java.lang.String = null,
+    IColumn: IColumn = null,
+    altText: String = null,
     cascade: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IContainer = null,
     defaultRenderer: (/* v */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any], /* rowIdx */ js.UndefOr[js.Any], /* colIdx */ js.UndefOr[js.Any], /* store */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any]) => Unit = null,
     disableAction: (/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean]) => Unit = null,
@@ -89,8 +88,8 @@ object IAction {
     getRefItems: () => Unit = null,
     getTip: js.Any = null,
     handler: js.Any = null,
-    icon: java.lang.String = null,
-    iconCls: java.lang.String = null,
+    icon: String = null,
+    iconCls: String = null,
     items: Array = null,
     stopSelection: js.UndefOr[Boolean] = js.undefined
   ): IAction = {

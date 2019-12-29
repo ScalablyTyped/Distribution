@@ -2,7 +2,7 @@ package typings.botvs.botvsMod._Global_
 
 import typings.botvs.Anon_Body
 import typings.botvs.Anon_Data
-import typings.botvs.botvsNumbers.`true`
+import typings.botvs.botvsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

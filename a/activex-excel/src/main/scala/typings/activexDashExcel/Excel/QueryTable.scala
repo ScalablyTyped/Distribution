@@ -20,7 +20,8 @@ class QueryTable protected () extends js.Object {
   var EditWebPage: String = js.native
   var EnableEditing: Boolean = js.native
   var EnableRefresh: Boolean = js.native
-  var `Excel.QueryTable_typekey`: QueryTable = js.native
+  @JSName("Excel.QueryTable_typekey")
+  var ExcelDotQueryTable_typekey: QueryTable = js.native
   val FetchedRowOverflow: Boolean = js.native
   var FieldNames: Boolean = js.native
   var FillAdjacentFormulas: Boolean = js.native

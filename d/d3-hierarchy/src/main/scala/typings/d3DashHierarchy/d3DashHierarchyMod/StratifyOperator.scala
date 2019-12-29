@@ -1,6 +1,6 @@
 package typings.d3DashHierarchy.d3DashHierarchyMod
 
-import typings.d3DashHierarchy.d3DashHierarchyStrings.Empty
+import typings.d3DashHierarchy.d3DashHierarchyStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait StratifyOperator[Datum] extends js.Object {
     /* d */ Datum, 
     /* i */ Double, 
     /* data */ js.Array[Datum], 
-    js.UndefOr[String | Null | Empty]
+    js.UndefOr[String | Null | _empty]
   ] = js.native
   /**
     * Sets the id accessor to the given function.
@@ -37,7 +37,7 @@ trait StratifyOperator[Datum] extends js.Object {
       /* d */ Datum, 
       /* i */ Double, 
       /* data */ js.Array[Datum], 
-      js.UndefOr[String | Null | Empty]
+      js.UndefOr[String | Null | _empty]
     ]
   ): this.type = js.native
   /**
@@ -47,7 +47,7 @@ trait StratifyOperator[Datum] extends js.Object {
     /* d */ Datum, 
     /* i */ Double, 
     /* data */ js.Array[Datum], 
-    js.UndefOr[String | Null | Empty]
+    js.UndefOr[String | Null | _empty]
   ] = js.native
   /**
     * Sets the parent id accessor to the given function.
@@ -63,7 +63,7 @@ trait StratifyOperator[Datum] extends js.Object {
       /* d */ Datum, 
       /* i */ Double, 
       /* data */ js.Array[Datum], 
-      js.UndefOr[String | Null | Empty]
+      js.UndefOr[String | Null | _empty]
     ]
   ): this.type = js.native
 }

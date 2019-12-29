@@ -1,11 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_InitMsg.DownloadError
-import typings.dwt.EnumDWT_InitMsg.DownloadNotRestartError
-import typings.dwt.EnumDWT_InitMsg.Error
-import typings.dwt.EnumDWT_InitMsg.Info
-import typings.dwt.EnumDWT_InitMsg.NotInstalledError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

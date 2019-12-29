@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Media.Transcoding
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.codecNotFound
-import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.invalidProfile
-import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.none
-import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

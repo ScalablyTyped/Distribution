@@ -1,9 +1,6 @@
 package typings.es6DashPromisify
 
 import org.scalablytyped.runtime.TopLevel
-import typings.es6DashPromisify.es6DashPromisifyMod.Callback
-import typings.es6DashPromisify.es6DashPromisifyMod.CallbackFunction
-import typings.es6DashPromisify.es6DashPromisifyMod.PromiseFunction
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`

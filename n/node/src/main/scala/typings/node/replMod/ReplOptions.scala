@@ -51,7 +51,7 @@ trait ReplOptions extends js.Object {
     * The input prompt to display.
     * Default: `"> "`
     */
-  var prompt: js.UndefOr[java.lang.String] = js.undefined
+  var prompt: js.UndefOr[String] = js.undefined
   /**
     * A flag that specifies whether the default evaluator executes all JavaScript commands in
     * strict mode or default (sloppy) mode.
@@ -100,7 +100,7 @@ object ReplOptions {
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
     input: ReadableStream = null,
     output: WritableStream = null,
-    prompt: java.lang.String = null,
+    prompt: String = null,
     replMode: js.Symbol = null,
     terminal: js.UndefOr[Boolean] = js.undefined,
     useColors: js.UndefOr[Boolean] = js.undefined,

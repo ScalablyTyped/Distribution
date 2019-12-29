@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Particles.DeathZoneSource
 import typings.phaser.Phaser.Types.GameObjects.Particles.EdgeZoneSource
 import typings.phaser.Phaser.Types.GameObjects.Particles.GravityWellConfig
@@ -107,33 +108,13 @@ object Particles extends js.Object {
       * @param frame An optional frame from the Texture this Emitter Manager will use to render particles.
       * @param emitters Configuration settings for one or more emitters to create.
       */
-    def this(scene: typings.phaser.Phaser.Scene, texture: String) = this()
-    def this(scene: typings.phaser.Phaser.Scene, texture: String, frame: String) = this()
-    def this(scene: typings.phaser.Phaser.Scene, texture: String, frame: integer) = this()
-    def this(
-      scene: typings.phaser.Phaser.Scene,
-      texture: String,
-      frame: String,
-      emitters: js.Array[ParticleEmitterConfig]
-    ) = this()
-    def this(
-      scene: typings.phaser.Phaser.Scene,
-      texture: String,
-      frame: String,
-      emitters: ParticleEmitterConfig
-    ) = this()
-    def this(
-      scene: typings.phaser.Phaser.Scene,
-      texture: String,
-      frame: integer,
-      emitters: js.Array[ParticleEmitterConfig]
-    ) = this()
-    def this(
-      scene: typings.phaser.Phaser.Scene,
-      texture: String,
-      frame: integer,
-      emitters: ParticleEmitterConfig
-    ) = this()
+    def this(scene: Scene, texture: String) = this()
+    def this(scene: Scene, texture: String, frame: String) = this()
+    def this(scene: Scene, texture: String, frame: integer) = this()
+    def this(scene: Scene, texture: String, frame: String, emitters: js.Array[ParticleEmitterConfig]) = this()
+    def this(scene: Scene, texture: String, frame: String, emitters: ParticleEmitterConfig) = this()
+    def this(scene: Scene, texture: String, frame: integer, emitters: js.Array[ParticleEmitterConfig]) = this()
+    def this(scene: Scene, texture: String, frame: integer, emitters: ParticleEmitterConfig) = this()
   }
   
   @js.native

@@ -22,7 +22,8 @@ class TextRange protected () extends js.Object {
   val Length: Double = js.native
   val ParagraphFormat: typings.activexDashPowerpoint.PowerPoint.ParagraphFormat = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TextRange_typekey`: TextRange = js.native
+  @JSName("PowerPoint.TextRange_typekey")
+  var PowerPointDotTextRange_typekey: TextRange = js.native
   val Start: Double = js.native
   var Text: String = js.native
   def AddPeriods(): Unit = js.native

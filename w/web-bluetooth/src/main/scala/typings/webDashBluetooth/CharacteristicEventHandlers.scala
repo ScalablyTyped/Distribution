@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CharacteristicEventHandlers extends js.Object {
-  def oncharacteristicvaluechanged(`this`: this.type, ev: Event): js.Any
+  def oncharacteristicvaluechanged(ev: Event): js.Any
 }
 
 object CharacteristicEventHandlers {
   @scala.inline
-  def apply(oncharacteristicvaluechanged: (CharacteristicEventHandlers, Event) => js.Any): CharacteristicEventHandlers = {
-    val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = js.Any.fromFunction2(oncharacteristicvaluechanged))
+  def apply(oncharacteristicvaluechanged: Event => js.Any): CharacteristicEventHandlers = {
+    val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = js.Any.fromFunction1(oncharacteristicvaluechanged))
   
     __obj.asInstanceOf[CharacteristicEventHandlers]
   }

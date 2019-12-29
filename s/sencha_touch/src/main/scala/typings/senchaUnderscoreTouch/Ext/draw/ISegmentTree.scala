@@ -25,7 +25,7 @@ trait ISegmentTree extends IBase {
   /** [Method] Returns the value of strategy
   		* @returns String
   		*/
-  var getStrategy: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getStrategy: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the data of the segment tree
   		* @param dataX Number
   		* @param dataOpen Number
@@ -46,7 +46,7 @@ trait ISegmentTree extends IBase {
   /** [Method] Sets the value of strategy
   		* @param strategy String The new value.
   		*/
-  var setStrategy: js.UndefOr[js.Function1[/* strategy */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setStrategy: js.UndefOr[js.Function1[/* strategy */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object ISegmentTree {
@@ -59,17 +59,17 @@ object ISegmentTree {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getAggregation: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getStrategy: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getStrategy: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
     setData: (/* dataX */ js.UndefOr[Double], /* dataOpen */ js.UndefOr[Double], /* dataHigh */ js.UndefOr[Double], /* dataLow */ js.UndefOr[Double], /* dataClose */ js.UndefOr[Double]) => Unit = null,
-    setStrategy: /* strategy */ js.UndefOr[java.lang.String] => Unit = null,
+    setStrategy: /* strategy */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     uses: Array = null

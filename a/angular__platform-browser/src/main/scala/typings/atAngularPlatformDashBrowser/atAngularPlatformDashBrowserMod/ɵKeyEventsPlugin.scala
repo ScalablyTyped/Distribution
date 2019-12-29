@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵKeyEventsPlugin")
+@JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin")
 @js.native
 class ɵKeyEventsPlugin protected () extends ɵangular_packages_platform_browser_platform_browser_g {
   /**
@@ -18,7 +18,7 @@ class ɵKeyEventsPlugin protected () extends ɵangular_packages_platform_browser
 }
 
 /* static members */
-@JSImport("@angular/platform-browser", "ɵKeyEventsPlugin")
+@JSImport("@angular/platform-browser", "\u0275KeyEventsPlugin")
 @js.native
 object ɵKeyEventsPlugin extends js.Object {
   /**

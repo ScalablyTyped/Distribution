@@ -1,9 +1,6 @@
 package typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Comment
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Imports
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

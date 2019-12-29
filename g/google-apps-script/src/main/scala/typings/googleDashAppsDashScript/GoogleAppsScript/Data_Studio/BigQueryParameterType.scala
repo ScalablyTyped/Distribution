@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.BOOL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.FLOAT64
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.INT64
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

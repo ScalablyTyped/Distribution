@@ -2,12 +2,11 @@ package typings.ionic
 
 import typings.ionic.definitionsMod.ReactBuildOptions
 import typings.ionic.ionicStrings.`React Scripts`
-import typings.ionic.ionicStrings.`ionic:build`
 import typings.ionic.ionicStrings.`react-scripts`
+import typings.ionic.ionicStrings.ionicColonbuild
 import typings.ionic.libBuildMod.BuildCLI
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libBuildMod.BuildRunnerDeps
-import typings.ionic.libProjectReactBuildMod.ReactBuildRunnerDeps
 import typings.ionic.libProjectReactMod.ReactProject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +25,7 @@ object libProjectReactBuildMod extends js.Object {
     @JSName("program")
     val program_ReactBuildCLI: `react-scripts` = js.native
     @JSName("script")
-    val script_ReactBuildCLI: `ionic:build` = js.native
+    val script_ReactBuildCLI: ionicColonbuild = js.native
   }
   
   @js.native

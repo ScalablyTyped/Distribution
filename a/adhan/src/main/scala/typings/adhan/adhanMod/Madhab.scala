@@ -1,8 +1,6 @@
 package typings.adhan.adhanMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.adhan.adhanMod.Madhab.Hanafi
-import typings.adhan.adhanMod.Madhab.Shafi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

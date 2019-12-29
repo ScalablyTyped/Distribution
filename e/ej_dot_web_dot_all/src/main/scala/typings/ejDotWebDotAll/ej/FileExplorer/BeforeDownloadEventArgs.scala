@@ -13,7 +13,7 @@ trait BeforeDownloadEventArgs extends js.Object {
   var files: js.UndefOr[js.Array[String]] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the path of currently opened item.
     */
   var path: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ object BeforeDownloadEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     files: js.Array[String] = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     path: String = null,
     selectedItems: js.Any = null,
     `type`: String = null

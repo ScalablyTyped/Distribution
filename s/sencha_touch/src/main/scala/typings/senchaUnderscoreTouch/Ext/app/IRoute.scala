@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait IRoute extends IBase {
   /** [Config Option] (String) */
-  var action: js.UndefOr[java.lang.String] = js.undefined
+  var action: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var conditions: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var controller: js.UndefOr[java.lang.String] = js.undefined
+  var controller: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of action
   		* @returns String
   		*/
-  var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAction: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of conditions
   		* @returns Object
   		*/
@@ -25,22 +25,22 @@ trait IRoute extends IBase {
   /** [Method] Returns the value of controller
   		* @returns String
   		*/
-  var getController: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getController: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of url
   		* @returns String
   		*/
-  var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Property] (Object) */
   var paramsInMatchString: js.UndefOr[js.Any] = js.undefined
   /** [Method] Attempts to recognize a given url string and return controller action pair for it
   		* @param url String The url to recognize.
   		* @returns Object/Boolean The matched data, or false if no match.
   		*/
-  var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Sets the value of action
   		* @param action String The new value.
   		*/
-  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of conditions
   		* @param conditions Object The new value.
   		*/
@@ -48,19 +48,19 @@ trait IRoute extends IBase {
   /** [Method] Sets the value of controller
   		* @param controller String The new value.
   		*/
-  var setController: js.UndefOr[js.Function1[/* controller */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setController: js.UndefOr[js.Function1[/* controller */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of url
   		* @param url String The new value.
   		*/
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object IRoute {
   @scala.inline
   def apply(
-    action: java.lang.String = null,
+    action: String = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -68,28 +68,28 @@ object IRoute {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     conditions: js.Any = null,
     config: js.Any = null,
-    controller: java.lang.String = null,
+    controller: String = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getAction: () => java.lang.String = null,
+    extend: String = null,
+    getAction: () => String = null,
     getConditions: () => _ = null,
-    getController: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getUrl: () => java.lang.String = null,
+    getController: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getUrl: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     paramsInMatchString: js.Any = null,
     platformConfig: js.Any = null,
-    recognize: /* url */ js.UndefOr[java.lang.String] => _ = null,
+    recognize: /* url */ js.UndefOr[String] => _ = null,
     self: IClass = null,
-    setAction: /* action */ js.UndefOr[java.lang.String] => Unit = null,
+    setAction: /* action */ js.UndefOr[String] => Unit = null,
     setConditions: /* conditions */ js.UndefOr[js.Any] => Unit = null,
-    setController: /* controller */ js.UndefOr[java.lang.String] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
+    setController: /* controller */ js.UndefOr[String] => Unit = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    url: java.lang.String = null,
+    url: String = null,
     uses: Array = null
   ): IRoute = {
     val __obj = js.Dynamic.literal()

@@ -1,9 +1,6 @@
 package typings.ssDashUtils.ssutils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ssDashUtils.ssutils.ReadyState.CLOSED
-import typings.ssDashUtils.ssutils.ReadyState.CONNECTING
-import typings.ssDashUtils.ssutils.ReadyState.OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

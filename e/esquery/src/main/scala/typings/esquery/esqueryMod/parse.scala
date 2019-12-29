@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object parse extends js.Object {
   /** Parse a selector and return its AST. */
-  def apply(selector: String): js.UndefOr[Selector] = js.native
+  def apply(selector: String): Selector = js.native
 }
 

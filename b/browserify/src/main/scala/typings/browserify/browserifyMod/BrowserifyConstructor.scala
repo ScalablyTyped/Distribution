@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BrowserifyConstructor
   extends Instantiable0[BrowserifyObject]
+     with Instantiable1[
+      (/* files */ js.Array[InputFile]) | (/* file */ InputFile) | (/* opts */ Options), 
+      BrowserifyObject
+    ]
      with Instantiable2[
       (/* files */ js.Array[InputFile]) | (/* file */ InputFile), 
       /* opts */ Options, 
-      BrowserifyObject
-    ]
-     with Instantiable1[
-      (/* files */ js.Array[InputFile]) | (/* file */ InputFile) | (/* opts */ Options), 
       BrowserifyObject
     ] {
   def apply(): BrowserifyObject = js.native

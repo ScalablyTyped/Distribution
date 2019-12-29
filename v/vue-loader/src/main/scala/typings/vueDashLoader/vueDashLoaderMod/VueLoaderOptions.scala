@@ -1,6 +1,7 @@
 package typings.vueDashLoader.vueDashLoaderMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atVueComponentDashCompilerDashUtils.distTypesMod.VueTemplateCompiler
 import typings.vueDashTemplateDashCompiler.vueDashTemplateDashCompilerMod.CompilerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation._
 trait VueLoaderOptions extends js.Object {
   var cacheDirectory: js.UndefOr[String] = js.undefined
   var cacheIdentifier: js.UndefOr[String] = js.undefined
-  var compiler: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueTemplateCompiler */ js.Any
-  ] = js.undefined
+  var compiler: js.UndefOr[VueTemplateCompiler] = js.undefined
   var compilerOptions: js.UndefOr[CompilerOptions] = js.undefined
   var exposeFilename: js.UndefOr[Boolean] = js.undefined
   var hotReload: js.UndefOr[Boolean] = js.undefined
@@ -28,7 +27,7 @@ object VueLoaderOptions {
   def apply(
     cacheDirectory: String = null,
     cacheIdentifier: String = null,
-    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueTemplateCompiler */ js.Any = null,
+    compiler: VueTemplateCompiler = null,
     compilerOptions: CompilerOptions = null,
     exposeFilename: js.UndefOr[Boolean] = js.undefined,
     hotReload: js.UndefOr[Boolean] = js.undefined,

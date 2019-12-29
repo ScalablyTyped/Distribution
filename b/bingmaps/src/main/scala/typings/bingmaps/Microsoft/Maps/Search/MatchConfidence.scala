@@ -1,10 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.high
-import typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.low
-import typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.medium
-import typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

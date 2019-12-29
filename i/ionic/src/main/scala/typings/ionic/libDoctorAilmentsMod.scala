@@ -1,7 +1,7 @@
 package typings.ionic
 
 import typings.ionic.definitionsMod.IAilment
-import typings.ionic.ionicNumbers.`true`
+import typings.ionic.ionicBooleans.`true`
 import typings.ionic.ionicStrings.`cordova-platforms-committed`
 import typings.ionic.ionicStrings.`default-cordova-bundle-id-used`
 import typings.ionic.ionicStrings.`git-config-invalid`

@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated extensions/v1beta1/ReplicaSet is not supported by Kubernetes 1.16+ clusters. Use
-  * apps/v1/ReplicaSet instead.
+  * @deprecated extensions/v1beta1/ReplicaSet is deprecated by apps/v1/ReplicaSet and not
+  * supported by Kubernetes v1.16+ clusters.
   *
   * ReplicaSet ensures that a specified number of pod replicas are running at any given time.
   */
@@ -20,7 +20,7 @@ trait ReplicaSet extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`extensions/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[extensionsSlashv1beta1]] = js.undefined
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -44,7 +44,7 @@ trait ReplicaSet extends js.Object {
 object ReplicaSet {
   @scala.inline
   def apply(
-    apiVersion: Input[`extensions/v1beta1`] = null,
+    apiVersion: Input[extensionsSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSet] = null,
     metadata: Input[ObjectMeta] = null,
     spec: Input[ReplicaSetSpec] = null

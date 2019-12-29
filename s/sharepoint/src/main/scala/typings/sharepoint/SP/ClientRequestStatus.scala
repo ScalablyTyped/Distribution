@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ClientRequestStatus.active
-import typings.sharepoint.SP.ClientRequestStatus.completedException
-import typings.sharepoint.SP.ClientRequestStatus.completedSuccess
-import typings.sharepoint.SP.ClientRequestStatus.inProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -39,11 +39,11 @@ trait ExceptionDetails extends js.Object {
   /**
     * Exception text, which should be used together with exception object when available.
     */
-  var text: java.lang.String
+  var text: String
   /**
     * URL of the exception location, to be used when the script was not reported.
     */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object ExceptionDetails {
@@ -52,12 +52,12 @@ object ExceptionDetails {
     columnNumber: Double,
     exceptionId: Double,
     lineNumber: Double,
-    text: java.lang.String,
+    text: String,
     exception: RemoteObject = null,
     executionContextId: Int | Double = null,
     scriptId: ScriptId = null,
     stackTrace: StackTrace = null,
-    url: java.lang.String = null
+    url: String = null
   ): ExceptionDetails = {
     val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], exceptionId = exceptionId.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (exception != null) __obj.updateDynamic("exception")(exception.asInstanceOf[js.Any])

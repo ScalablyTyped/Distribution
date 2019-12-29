@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.rbacDotauthorizationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiKubernetes.typesOutputMod.rbac.v1beta1.ClusterRoleBinding
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object rbacV1beta1ClusterRoleBindingListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`rbacDOTauthorizationDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[rbacDotauthorizationDotk8sDotioSlashv1beta1] = js.native
     /**
       * Items is a list of ClusterRoleBindings
       */

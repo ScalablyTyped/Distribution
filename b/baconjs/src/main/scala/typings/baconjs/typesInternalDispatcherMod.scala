@@ -1,8 +1,6 @@
 package typings.baconjs
 
 import typings.baconjs.typesEventMod.Event
-import typings.baconjs.typesInternalDispatcherMod.Dispatcher
-import typings.baconjs.typesInternalDispatcherMod.Subscription
 import typings.baconjs.typesReplyMod.Reply
 import typings.baconjs.typesTypesMod.EventSink
 import typings.baconjs.typesTypesMod.Subscribe

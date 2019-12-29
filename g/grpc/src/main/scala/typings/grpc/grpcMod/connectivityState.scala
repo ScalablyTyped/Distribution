@@ -1,11 +1,6 @@
 package typings.grpc.grpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grpc.grpcMod.connectivityState.CONNECTING
-import typings.grpc.grpcMod.connectivityState.IDLE
-import typings.grpc.grpcMod.connectivityState.READY
-import typings.grpc.grpcMod.connectivityState.SHUTDOWN
-import typings.grpc.grpcMod.connectivityState.TRANSIENT_FAILURE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

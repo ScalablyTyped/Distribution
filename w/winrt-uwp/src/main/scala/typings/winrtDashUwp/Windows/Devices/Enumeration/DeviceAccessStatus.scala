@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceAccessStatus.allowed
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceAccessStatus.deniedBySystem
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceAccessStatus.deniedByUser
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.xml
 
-import typings.xml.xmlNumbers.`true`
+import typings.xml.xmlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

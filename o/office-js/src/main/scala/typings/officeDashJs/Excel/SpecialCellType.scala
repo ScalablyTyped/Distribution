@@ -1,14 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.SpecialCellType.blanks
-import typings.officeDashJs.Excel.SpecialCellType.conditionalFormats
-import typings.officeDashJs.Excel.SpecialCellType.constants
-import typings.officeDashJs.Excel.SpecialCellType.dataValidations
-import typings.officeDashJs.Excel.SpecialCellType.formulas
-import typings.officeDashJs.Excel.SpecialCellType.sameConditionalFormat
-import typings.officeDashJs.Excel.SpecialCellType.sameDataValidation
-import typings.officeDashJs.Excel.SpecialCellType.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

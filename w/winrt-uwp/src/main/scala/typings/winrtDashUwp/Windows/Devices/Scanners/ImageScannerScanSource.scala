@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Scanners
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.autoConfigured
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.default
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.feeder
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.flatbed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

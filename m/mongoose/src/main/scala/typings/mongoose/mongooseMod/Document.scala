@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.mongoose.mongooseMod.ModelProperties because var conflicts: schema. Inlined base, baseModelName, collection, db, discriminators, modelName */ @js.native
 trait Document
-  extends EventEmitter
-     with MongooseDocument {
+  extends MongooseDocument
+     with EventEmitter {
   /**
     * Version using default version key. See http://mongoosejs.com/docs/guide.html#versionKey
     * If you're using another key, you will have to access it using []: doc[_myVersionKey]

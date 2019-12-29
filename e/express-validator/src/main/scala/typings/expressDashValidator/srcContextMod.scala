@@ -8,8 +8,6 @@ import typings.expressDashValidator.srcBaseMod.Location
 import typings.expressDashValidator.srcBaseMod.Meta
 import typings.expressDashValidator.srcBaseMod.ValidationError
 import typings.expressDashValidator.srcContextDashItemsContextDashItemMod.ContextItem
-import typings.expressDashValidator.srcContextMod.Context
-import typings.expressDashValidator.srcContextMod.Optional
 import typings.std.Exclude
 import typings.std.Pick
 import scala.scalajs.js
@@ -52,7 +50,7 @@ object srcContextMod extends js.Object {
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressDashValidator.Anon_CheckFalsyNullable
-    - typings.expressDashValidator.expressDashValidatorNumbers.`false`
+    - typings.expressDashValidator.expressDashValidatorBooleans.`false`
   */
   trait Optional extends js.Object
   

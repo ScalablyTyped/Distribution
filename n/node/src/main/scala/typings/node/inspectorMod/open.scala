@@ -17,7 +17,7 @@ object open extends js.Object {
     */
   def apply(): Unit = js.native
   def apply(port: Double): Unit = js.native
-  def apply(port: Double, host: java.lang.String): Unit = js.native
-  def apply(port: Double, host: java.lang.String, wait: Boolean): Unit = js.native
+  def apply(port: Double, host: String): Unit = js.native
+  def apply(port: Double, host: String, wait: Boolean): Unit = js.native
 }
 

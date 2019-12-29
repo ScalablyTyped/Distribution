@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.Inside
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.Outside
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.OutsideExtended
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

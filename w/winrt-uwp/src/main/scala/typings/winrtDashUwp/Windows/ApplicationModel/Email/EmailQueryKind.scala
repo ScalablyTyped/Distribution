@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.all
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.flagged
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.important
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.read
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.unread
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.unseen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

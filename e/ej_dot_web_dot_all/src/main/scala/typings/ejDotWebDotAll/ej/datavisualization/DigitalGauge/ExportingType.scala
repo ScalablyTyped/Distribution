@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.ExportingType.JPG
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.ExportingType.PNG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

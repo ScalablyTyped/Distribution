@@ -1,11 +1,6 @@
 package typings.tsutils.utilUsageMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tsutils.utilUsageMod.DeclarationDomain.Any
-import typings.tsutils.utilUsageMod.DeclarationDomain.Import
-import typings.tsutils.utilUsageMod.DeclarationDomain.Namespace
-import typings.tsutils.utilUsageMod.DeclarationDomain.Type
-import typings.tsutils.utilUsageMod.DeclarationDomain.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

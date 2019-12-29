@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.GeolocationAccessStatus.allowed
-import typings.winrtDashUwp.Windows.Devices.Geolocation.GeolocationAccessStatus.denied
-import typings.winrtDashUwp.Windows.Devices.Geolocation.GeolocationAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

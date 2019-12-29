@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.NavigationButton")
 @js.native
 class NavigationButton protected () extends js.Object {
-  var `Access.NavigationButton_typekey`: NavigationButton = js.native
+  @JSName("Access.NavigationButton_typekey")
+  var AccessDotNavigationButton_typekey: NavigationButton = js.native
   var AddColon: Boolean = js.native
   var AfterUpdateMacro: String = js.native
   var Alignment: Double = js.native

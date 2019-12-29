@@ -2,7 +2,6 @@ package typings.atAntDashDesignReactDashNative
 
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.ActionSheet
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.`ActionSheet example`
-import typings.atAntDashDesignReactDashNative.libActionDashSheetDemoBasicMod.Test
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

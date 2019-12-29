@@ -1,7 +1,7 @@
 package typings.gapiDotDrive.gapi.client.drive
 
 import typings.gapiDotDrive.Anon_AdditionalRoles
-import typings.gapiDotDrive.gapiDotDriveStrings.`drive#permission`
+import typings.gapiDotDrive.gapiDotDriveStrings.driveNumbersignpermission
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait PermissionResource extends js.Object {
   var etag: String
   var expirationDate: Date
   var id: String
-  var kind: `drive#permission`
+  var kind: driveNumbersignpermission
   var name: String
   var photoLink: String
   var role: String
@@ -38,7 +38,7 @@ object PermissionResource {
     etag: String,
     expirationDate: Date,
     id: String,
-    kind: `drive#permission`,
+    kind: driveNumbersignpermission,
     name: String,
     photoLink: String,
     role: String,

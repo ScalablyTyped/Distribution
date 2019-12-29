@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation._
   *     var xml = XmlService.getPrettyFormat().format(document);
   *     Logger.log(xml);
   */
-trait Cdata
-  extends typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content {
+trait Cdata extends Content {
   def append(text: String): Text
   def getText(): String
   def setText(text: String): Text
@@ -35,7 +34,7 @@ object Cdata {
     asEntityRef: () => EntityRef,
     asProcessingInstruction: () => ProcessingInstruction,
     asText: () => Text,
-    detach: () => typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content,
+    detach: () => Content,
     getParentElement: () => Element,
     getText: () => String,
     getType: () => ContentType,

@@ -2,8 +2,6 @@ package typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Glob
 
 import typings.knuddelsDashUserappsDashApi.Anon_Data
 import typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.KnuddelsEvent
-import typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.Client.Event
-import typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.Client.HostFrame
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

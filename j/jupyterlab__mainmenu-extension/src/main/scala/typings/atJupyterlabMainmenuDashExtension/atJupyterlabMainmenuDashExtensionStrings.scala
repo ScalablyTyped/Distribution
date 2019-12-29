@@ -6,179 +6,179 @@ import scala.scalajs.js.annotation._
 
 object atJupyterlabMainmenuDashExtensionStrings {
   @js.native
-  sealed trait `editmenu:clear-all` extends js.Object
+  sealed trait `editmenuColonclear-all` extends js.Object
   
   @js.native
-  sealed trait `editmenu:clear-current` extends js.Object
+  sealed trait `editmenuColonclear-current` extends js.Object
   
   @js.native
-  sealed trait `editmenu:find` extends js.Object
+  sealed trait editmenuColonfind extends js.Object
   
   @js.native
-  sealed trait `editmenu:go-to-line` extends js.Object
+  sealed trait `editmenuColongo-to-line` extends js.Object
   
   @js.native
-  sealed trait `editmenu:open` extends js.Object
+  sealed trait editmenuColonopen extends js.Object
   
   @js.native
-  sealed trait `editmenu:redo` extends js.Object
+  sealed trait editmenuColonredo extends js.Object
   
   @js.native
-  sealed trait `editmenu:undo` extends js.Object
+  sealed trait editmenuColonundo extends js.Object
   
   @js.native
-  sealed trait `filemenu:close-and-cleanup` extends js.Object
+  sealed trait `filemenuColonclose-and-cleanup` extends js.Object
   
   @js.native
-  sealed trait `filemenu:create-console` extends js.Object
+  sealed trait `filemenuColoncreate-console` extends js.Object
   
   @js.native
-  sealed trait `filemenu:logout` extends js.Object
+  sealed trait filemenuColonlogout extends js.Object
   
   @js.native
-  sealed trait `filemenu:open` extends js.Object
+  sealed trait filemenuColonopen extends js.Object
   
   @js.native
-  sealed trait `filemenu:shutdown` extends js.Object
+  sealed trait filemenuColonshutdown extends js.Object
   
   @js.native
-  sealed trait `helpmenu:open` extends js.Object
+  sealed trait helpmenuColonopen extends js.Object
   
   @js.native
-  sealed trait `kernelmenu:change` extends js.Object
+  sealed trait kernelmenuColonchange extends js.Object
   
   @js.native
-  sealed trait `kernelmenu:interrupt` extends js.Object
+  sealed trait kernelmenuColoninterrupt extends js.Object
   
   @js.native
-  sealed trait `kernelmenu:open` extends js.Object
+  sealed trait kernelmenuColonopen extends js.Object
   
   @js.native
-  sealed trait `kernelmenu:restart` extends js.Object
+  sealed trait kernelmenuColonrestart extends js.Object
   
   @js.native
-  sealed trait `kernelmenu:restart-and-clear` extends js.Object
+  sealed trait `kernelmenuColonrestart-and-clear` extends js.Object
   
   @js.native
-  sealed trait `kernelmenu:shutdown` extends js.Object
+  sealed trait kernelmenuColonshutdown extends js.Object
   
   @js.native
-  sealed trait `kernelmenu:shutdownAll` extends js.Object
+  sealed trait kernelmenuColonshutdownAll extends js.Object
   
   @js.native
-  sealed trait `mainmenu:open-first` extends js.Object
+  sealed trait `mainmenuColonopen-first` extends js.Object
   
   @js.native
-  sealed trait `runmenu:open` extends js.Object
+  sealed trait runmenuColonopen extends js.Object
   
   @js.native
-  sealed trait `runmenu:restart-and-run-all` extends js.Object
+  sealed trait `runmenuColonrestart-and-run-all` extends js.Object
   
   @js.native
-  sealed trait `runmenu:run` extends js.Object
+  sealed trait runmenuColonrun extends js.Object
   
   @js.native
-  sealed trait `runmenu:run-above` extends js.Object
+  sealed trait `runmenuColonrun-above` extends js.Object
   
   @js.native
-  sealed trait `runmenu:run-all` extends js.Object
+  sealed trait `runmenuColonrun-all` extends js.Object
   
   @js.native
-  sealed trait `runmenu:run-below` extends js.Object
+  sealed trait `runmenuColonrun-below` extends js.Object
   
   @js.native
-  sealed trait `settingsmenu:open` extends js.Object
+  sealed trait settingsmenuColonopen extends js.Object
   
   @js.native
-  sealed trait `tabsmenu:activate-by-id` extends js.Object
+  sealed trait `tabsmenuColonactivate-by-id` extends js.Object
   
   @js.native
-  sealed trait `tabsmenu:activate-previously-used-tab` extends js.Object
+  sealed trait `tabsmenuColonactivate-previously-used-tab` extends js.Object
   
   @js.native
-  sealed trait `tabsmenu:open` extends js.Object
+  sealed trait tabsmenuColonopen extends js.Object
   
   @js.native
-  sealed trait `viewmenu:line-numbering` extends js.Object
+  sealed trait `viewmenuColonline-numbering` extends js.Object
   
   @js.native
-  sealed trait `viewmenu:match-brackets` extends js.Object
+  sealed trait `viewmenuColonmatch-brackets` extends js.Object
   
   @js.native
-  sealed trait `viewmenu:open` extends js.Object
+  sealed trait viewmenuColonopen extends js.Object
   
   @js.native
-  sealed trait `viewmenu:word-wrap` extends js.Object
+  sealed trait `viewmenuColonword-wrap` extends js.Object
   
   @scala.inline
-  def `editmenu:clear-all`: `editmenu:clear-all` = "editmenu:clear-all".asInstanceOf[`editmenu:clear-all`]
+  def `editmenuColonclear-all`: `editmenuColonclear-all` = "editmenu:clear-all".asInstanceOf[`editmenuColonclear-all`]
   @scala.inline
-  def `editmenu:clear-current`: `editmenu:clear-current` = "editmenu:clear-current".asInstanceOf[`editmenu:clear-current`]
+  def `editmenuColonclear-current`: `editmenuColonclear-current` = "editmenu:clear-current".asInstanceOf[`editmenuColonclear-current`]
   @scala.inline
-  def `editmenu:find`: `editmenu:find` = "editmenu:find".asInstanceOf[`editmenu:find`]
+  def editmenuColonfind: editmenuColonfind = "editmenu:find".asInstanceOf[editmenuColonfind]
   @scala.inline
-  def `editmenu:go-to-line`: `editmenu:go-to-line` = "editmenu:go-to-line".asInstanceOf[`editmenu:go-to-line`]
+  def `editmenuColongo-to-line`: `editmenuColongo-to-line` = "editmenu:go-to-line".asInstanceOf[`editmenuColongo-to-line`]
   @scala.inline
-  def `editmenu:open`: `editmenu:open` = "editmenu:open".asInstanceOf[`editmenu:open`]
+  def editmenuColonopen: editmenuColonopen = "editmenu:open".asInstanceOf[editmenuColonopen]
   @scala.inline
-  def `editmenu:redo`: `editmenu:redo` = "editmenu:redo".asInstanceOf[`editmenu:redo`]
+  def editmenuColonredo: editmenuColonredo = "editmenu:redo".asInstanceOf[editmenuColonredo]
   @scala.inline
-  def `editmenu:undo`: `editmenu:undo` = "editmenu:undo".asInstanceOf[`editmenu:undo`]
+  def editmenuColonundo: editmenuColonundo = "editmenu:undo".asInstanceOf[editmenuColonundo]
   @scala.inline
-  def `filemenu:close-and-cleanup`: `filemenu:close-and-cleanup` = "filemenu:close-and-cleanup".asInstanceOf[`filemenu:close-and-cleanup`]
+  def `filemenuColonclose-and-cleanup`: `filemenuColonclose-and-cleanup` = "filemenu:close-and-cleanup".asInstanceOf[`filemenuColonclose-and-cleanup`]
   @scala.inline
-  def `filemenu:create-console`: `filemenu:create-console` = "filemenu:create-console".asInstanceOf[`filemenu:create-console`]
+  def `filemenuColoncreate-console`: `filemenuColoncreate-console` = "filemenu:create-console".asInstanceOf[`filemenuColoncreate-console`]
   @scala.inline
-  def `filemenu:logout`: `filemenu:logout` = "filemenu:logout".asInstanceOf[`filemenu:logout`]
+  def filemenuColonlogout: filemenuColonlogout = "filemenu:logout".asInstanceOf[filemenuColonlogout]
   @scala.inline
-  def `filemenu:open`: `filemenu:open` = "filemenu:open".asInstanceOf[`filemenu:open`]
+  def filemenuColonopen: filemenuColonopen = "filemenu:open".asInstanceOf[filemenuColonopen]
   @scala.inline
-  def `filemenu:shutdown`: `filemenu:shutdown` = "filemenu:shutdown".asInstanceOf[`filemenu:shutdown`]
+  def filemenuColonshutdown: filemenuColonshutdown = "filemenu:shutdown".asInstanceOf[filemenuColonshutdown]
   @scala.inline
-  def `helpmenu:open`: `helpmenu:open` = "helpmenu:open".asInstanceOf[`helpmenu:open`]
+  def helpmenuColonopen: helpmenuColonopen = "helpmenu:open".asInstanceOf[helpmenuColonopen]
   @scala.inline
-  def `kernelmenu:change`: `kernelmenu:change` = "kernelmenu:change".asInstanceOf[`kernelmenu:change`]
+  def kernelmenuColonchange: kernelmenuColonchange = "kernelmenu:change".asInstanceOf[kernelmenuColonchange]
   @scala.inline
-  def `kernelmenu:interrupt`: `kernelmenu:interrupt` = "kernelmenu:interrupt".asInstanceOf[`kernelmenu:interrupt`]
+  def kernelmenuColoninterrupt: kernelmenuColoninterrupt = "kernelmenu:interrupt".asInstanceOf[kernelmenuColoninterrupt]
   @scala.inline
-  def `kernelmenu:open`: `kernelmenu:open` = "kernelmenu:open".asInstanceOf[`kernelmenu:open`]
+  def kernelmenuColonopen: kernelmenuColonopen = "kernelmenu:open".asInstanceOf[kernelmenuColonopen]
   @scala.inline
-  def `kernelmenu:restart`: `kernelmenu:restart` = "kernelmenu:restart".asInstanceOf[`kernelmenu:restart`]
+  def kernelmenuColonrestart: kernelmenuColonrestart = "kernelmenu:restart".asInstanceOf[kernelmenuColonrestart]
   @scala.inline
-  def `kernelmenu:restart-and-clear`: `kernelmenu:restart-and-clear` = "kernelmenu:restart-and-clear".asInstanceOf[`kernelmenu:restart-and-clear`]
+  def `kernelmenuColonrestart-and-clear`: `kernelmenuColonrestart-and-clear` = "kernelmenu:restart-and-clear".asInstanceOf[`kernelmenuColonrestart-and-clear`]
   @scala.inline
-  def `kernelmenu:shutdown`: `kernelmenu:shutdown` = "kernelmenu:shutdown".asInstanceOf[`kernelmenu:shutdown`]
+  def kernelmenuColonshutdown: kernelmenuColonshutdown = "kernelmenu:shutdown".asInstanceOf[kernelmenuColonshutdown]
   @scala.inline
-  def `kernelmenu:shutdownAll`: `kernelmenu:shutdownAll` = "kernelmenu:shutdownAll".asInstanceOf[`kernelmenu:shutdownAll`]
+  def kernelmenuColonshutdownAll: kernelmenuColonshutdownAll = "kernelmenu:shutdownAll".asInstanceOf[kernelmenuColonshutdownAll]
   @scala.inline
-  def `mainmenu:open-first`: `mainmenu:open-first` = "mainmenu:open-first".asInstanceOf[`mainmenu:open-first`]
+  def `mainmenuColonopen-first`: `mainmenuColonopen-first` = "mainmenu:open-first".asInstanceOf[`mainmenuColonopen-first`]
   @scala.inline
-  def `runmenu:open`: `runmenu:open` = "runmenu:open".asInstanceOf[`runmenu:open`]
+  def runmenuColonopen: runmenuColonopen = "runmenu:open".asInstanceOf[runmenuColonopen]
   @scala.inline
-  def `runmenu:restart-and-run-all`: `runmenu:restart-and-run-all` = "runmenu:restart-and-run-all".asInstanceOf[`runmenu:restart-and-run-all`]
+  def `runmenuColonrestart-and-run-all`: `runmenuColonrestart-and-run-all` = "runmenu:restart-and-run-all".asInstanceOf[`runmenuColonrestart-and-run-all`]
   @scala.inline
-  def `runmenu:run`: `runmenu:run` = "runmenu:run".asInstanceOf[`runmenu:run`]
+  def runmenuColonrun: runmenuColonrun = "runmenu:run".asInstanceOf[runmenuColonrun]
   @scala.inline
-  def `runmenu:run-above`: `runmenu:run-above` = "runmenu:run-above".asInstanceOf[`runmenu:run-above`]
+  def `runmenuColonrun-above`: `runmenuColonrun-above` = "runmenu:run-above".asInstanceOf[`runmenuColonrun-above`]
   @scala.inline
-  def `runmenu:run-all`: `runmenu:run-all` = "runmenu:run-all".asInstanceOf[`runmenu:run-all`]
+  def `runmenuColonrun-all`: `runmenuColonrun-all` = "runmenu:run-all".asInstanceOf[`runmenuColonrun-all`]
   @scala.inline
-  def `runmenu:run-below`: `runmenu:run-below` = "runmenu:run-below".asInstanceOf[`runmenu:run-below`]
+  def `runmenuColonrun-below`: `runmenuColonrun-below` = "runmenu:run-below".asInstanceOf[`runmenuColonrun-below`]
   @scala.inline
-  def `settingsmenu:open`: `settingsmenu:open` = "settingsmenu:open".asInstanceOf[`settingsmenu:open`]
+  def settingsmenuColonopen: settingsmenuColonopen = "settingsmenu:open".asInstanceOf[settingsmenuColonopen]
   @scala.inline
-  def `tabsmenu:activate-by-id`: `tabsmenu:activate-by-id` = "tabsmenu:activate-by-id".asInstanceOf[`tabsmenu:activate-by-id`]
+  def `tabsmenuColonactivate-by-id`: `tabsmenuColonactivate-by-id` = "tabsmenu:activate-by-id".asInstanceOf[`tabsmenuColonactivate-by-id`]
   @scala.inline
-  def `tabsmenu:activate-previously-used-tab`: `tabsmenu:activate-previously-used-tab` = "tabsmenu:activate-previously-used-tab".asInstanceOf[`tabsmenu:activate-previously-used-tab`]
+  def `tabsmenuColonactivate-previously-used-tab`: `tabsmenuColonactivate-previously-used-tab` = "tabsmenu:activate-previously-used-tab".asInstanceOf[`tabsmenuColonactivate-previously-used-tab`]
   @scala.inline
-  def `tabsmenu:open`: `tabsmenu:open` = "tabsmenu:open".asInstanceOf[`tabsmenu:open`]
+  def tabsmenuColonopen: tabsmenuColonopen = "tabsmenu:open".asInstanceOf[tabsmenuColonopen]
   @scala.inline
-  def `viewmenu:line-numbering`: `viewmenu:line-numbering` = "viewmenu:line-numbering".asInstanceOf[`viewmenu:line-numbering`]
+  def `viewmenuColonline-numbering`: `viewmenuColonline-numbering` = "viewmenu:line-numbering".asInstanceOf[`viewmenuColonline-numbering`]
   @scala.inline
-  def `viewmenu:match-brackets`: `viewmenu:match-brackets` = "viewmenu:match-brackets".asInstanceOf[`viewmenu:match-brackets`]
+  def `viewmenuColonmatch-brackets`: `viewmenuColonmatch-brackets` = "viewmenu:match-brackets".asInstanceOf[`viewmenuColonmatch-brackets`]
   @scala.inline
-  def `viewmenu:open`: `viewmenu:open` = "viewmenu:open".asInstanceOf[`viewmenu:open`]
+  def viewmenuColonopen: viewmenuColonopen = "viewmenu:open".asInstanceOf[viewmenuColonopen]
   @scala.inline
-  def `viewmenu:word-wrap`: `viewmenu:word-wrap` = "viewmenu:word-wrap".asInstanceOf[`viewmenu:word-wrap`]
+  def `viewmenuColonword-wrap`: `viewmenuColonword-wrap` = "viewmenu:word-wrap".asInstanceOf[`viewmenuColonword-wrap`]
 }
 

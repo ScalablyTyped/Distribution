@@ -1,6 +1,5 @@
 package typings.easyDashXDashHeaders
 
-import typings.easyDashXDashHeaders.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

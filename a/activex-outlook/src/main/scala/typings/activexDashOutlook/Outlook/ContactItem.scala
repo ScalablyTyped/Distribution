@@ -136,7 +136,8 @@ class ContactItem protected () extends js.Object {
   var OtherAddressStreet: String = js.native
   var OtherFaxNumber: String = js.native
   var OtherTelephoneNumber: String = js.native
-  var `Outlook.ContactItem_typekey`: ContactItem = js.native
+  @JSName("Outlook.ContactItem_typekey")
+  var OutlookDotContactItem_typekey: ContactItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   var PagerNumber: String = js.native

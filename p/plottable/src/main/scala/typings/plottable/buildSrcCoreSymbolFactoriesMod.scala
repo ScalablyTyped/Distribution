@@ -1,7 +1,6 @@
 package typings.plottable
 
 import typings.d3DashShape.d3DashShapeMod.Symbol
-import typings.plottable.buildSrcCoreSymbolFactoriesMod.SymbolFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

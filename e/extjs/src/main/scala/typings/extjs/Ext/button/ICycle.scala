@@ -13,7 +13,7 @@ trait ICycle extends ISplit {
   /** [Config Option] (Number/String) */
   var forceGlyph: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var forceIcon: js.UndefOr[java.lang.String] = js.undefined
+  var forceIcon: js.UndefOr[String] = js.undefined
   /** [Method] Gets the currently active menu item
   		* @returns Ext.menu.CheckItem The active item
   		*/
@@ -24,7 +24,7 @@ trait ICycle extends ISplit {
   @JSName("menu")
   var menu_ICycle: js.UndefOr[IMenu] = js.undefined
   /** [Config Option] (String) */
-  var prependText: js.UndefOr[java.lang.String] = js.undefined
+  var prependText: js.UndefOr[String] = js.undefined
   /** [Method] Sets the button s active menu item
   		* @param item Ext.menu.CheckItem The item to activate
   		* @param suppressEvent Boolean True to prevent the button's change event from firing.
@@ -44,11 +44,11 @@ object ICycle {
     ISplit: ISplit = null,
     changeHandler: js.Any = null,
     forceGlyph: js.Any = null,
-    forceIcon: java.lang.String = null,
+    forceIcon: String = null,
     getActiveItem: () => ICheckItem = null,
     items: Array = null,
     menu: IMenu = null,
-    prependText: java.lang.String = null,
+    prependText: String = null,
     setActiveItem: (/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
     showText: js.UndefOr[Boolean] = js.undefined,
     toggleSelected: () => Unit = null

@@ -37,7 +37,7 @@ trait IPolar extends ISeries {
   /** [Method] Returns the value of xField
   		* @returns String
   		*/
-  var getXField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getXField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of yAxis
   		* @returns Object
   		*/
@@ -45,7 +45,7 @@ trait IPolar extends ISeries {
   /** [Method] Returns the value of yField
   		* @returns String
   		*/
-  var getYField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getYField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Number) */
   var offsetX: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -81,7 +81,7 @@ trait IPolar extends ISeries {
   /** [Method] Sets the value of xField
   		* @param xField String The new value.
   		*/
-  var setXField: js.UndefOr[js.Function1[/* xField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setXField: js.UndefOr[js.Function1[/* xField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of yAxis
   		* @param yAxis Object The new value.
   		*/
@@ -89,11 +89,11 @@ trait IPolar extends ISeries {
   /** [Method] Sets the value of yField
   		* @param yField String The new value.
   		*/
-  var setYField: js.UndefOr[js.Function1[/* yField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setYField: js.UndefOr[js.Function1[/* yField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var xField: js.UndefOr[java.lang.String] = js.undefined
+  var xField: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var yField: js.UndefOr[java.lang.String] = js.undefined
+  var yField: js.UndefOr[String] = js.undefined
 }
 
 object IPolar {
@@ -102,7 +102,7 @@ object IPolar {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -118,9 +118,9 @@ object IPolar {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getAnimate: () => _ = null,
     getBackground: () => _ = null,
     getBubbleEvents: () => _ = null,
@@ -130,7 +130,7 @@ object IPolar {
     getHighlightCfg: () => _ = null,
     getHighlightItem: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemForPoint: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => _ = null,
     getItemInstancing: () => _ = null,
     getLabel: () => _ = null,
@@ -150,12 +150,12 @@ object IPolar {
     getStyle: () => _ = null,
     getSubStyle: () => _ = null,
     getSurface: () => _ = null,
-    getTitle: () => java.lang.String = null,
+    getTitle: () => String = null,
     getXAxis: () => _ = null,
-    getXField: () => java.lang.String = null,
+    getXField: () => String = null,
     getYAxis: () => _ = null,
-    getYField: () => java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getYField: () => String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.Any = null,
     highlightCfg: js.Any = null,
     highlightItem: js.Any = null,
@@ -173,7 +173,7 @@ object IPolar {
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     overlaySurface: js.Any = null,
@@ -183,13 +183,13 @@ object IPolar {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: js.Any = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     rotation: Int | Double = null,
     self: IClass = null,
-    seriesType: java.lang.String = null,
+    seriesType: String = null,
     setAnimate: /* animate */ js.UndefOr[js.Any] => Unit = null,
     setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
@@ -217,11 +217,11 @@ object IPolar {
     setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
     setSubStyle: /* subStyle */ js.UndefOr[js.Any] => Unit = null,
     setSurface: /* surface */ js.UndefOr[js.Any] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     setXAxis: /* xAxis */ js.UndefOr[js.Any] => Unit = null,
-    setXField: /* xField */ js.UndefOr[java.lang.String] => Unit = null,
+    setXField: /* xField */ js.UndefOr[String] => Unit = null,
     setYAxis: /* yAxis */ js.UndefOr[js.Any] => Unit = null,
-    setYField: /* yField */ js.UndefOr[java.lang.String] => Unit = null,
+    setYField: /* yField */ js.UndefOr[String] => Unit = null,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
@@ -230,14 +230,14 @@ object IPolar {
     subStyle: js.Any = null,
     surface: js.Any = null,
     suspendEvents: () => Unit = null,
-    title: java.lang.String = null,
-    `type`: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    title: String = null,
+    `type`: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
-    xField: java.lang.String = null,
-    yField: java.lang.String = null
+    xField: String = null,
+    yField: String = null
   ): IPolar = {
     val __obj = js.Dynamic.literal()
     if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))

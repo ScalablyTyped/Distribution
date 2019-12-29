@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPager
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Pager]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Pager] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Pager]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Pager] {
   var Locale: js.Any = js.native
   var fn: Pager = js.native
 }

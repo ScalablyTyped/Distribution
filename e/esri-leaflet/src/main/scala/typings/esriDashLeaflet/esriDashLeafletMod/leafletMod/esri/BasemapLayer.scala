@@ -23,7 +23,7 @@ object basemapLayer extends js.Object {
     * `L.esri.basemapLayer` is used to display Esri hosted basemaps and attributes data providers appropriately.
     * The Terms of Use for Esri hosted services apply to all Leaflet applications.
     */
-  def apply(key: Basemaps): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.BasemapLayer = js.native
-  def apply(key: Basemaps, options: BasemapLayerOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.BasemapLayer = js.native
+  def apply(key: Basemaps): BasemapLayer = js.native
+  def apply(key: Basemaps, options: BasemapLayerOptions): BasemapLayer = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.weakDashNapi.weakDashNapiMod
 
-import typings.weakDashNapi.weakDashNapiNumbers.`false`
+import typings.weakDashNapi.weakDashNapiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.smoothDashScrollbar
 
 import typings.smoothDashScrollbar.interfacesScrollbarMod.ScrollbarOptions
-import typings.smoothDashScrollbar.scrollbarMod.Scrollbar
 import typings.std.HTMLElement
 import typings.std.Map
 import typings.std.Partial

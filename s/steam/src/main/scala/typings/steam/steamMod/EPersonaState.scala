@@ -1,7 +1,6 @@
 package typings.steam.steamMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steam.steamMod.EPersonaState.Online
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

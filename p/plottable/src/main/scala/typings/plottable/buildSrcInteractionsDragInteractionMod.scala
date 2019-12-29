@@ -1,8 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcCoreInterfacesMod.Point
-import typings.plottable.buildSrcInteractionsDragInteractionMod.DragCallback
-import typings.plottable.buildSrcInteractionsDragInteractionMod.MouseFilter
 import typings.plottable.buildSrcInteractionsInteractionMod.Interaction
 import typings.std.MouseEvent
 import scala.scalajs.js

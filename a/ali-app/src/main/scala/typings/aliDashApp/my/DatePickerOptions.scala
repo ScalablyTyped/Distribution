@@ -2,8 +2,8 @@ package typings.aliDashApp.my
 
 import typings.aliDashApp.Anon_Date
 import typings.aliDashApp.aliDashAppNumbers.`11`
-import typings.aliDashApp.aliDashAppStrings.`HH:mm`
-import typings.aliDashApp.aliDashAppStrings.`yyyy-MM-dd HH:mm`
+import typings.aliDashApp.aliDashAppStrings.HHColonmm
+import typings.aliDashApp.aliDashAppStrings.`yyyy-MM-dd HHColonmm`
 import typings.aliDashApp.aliDashAppStrings.`yyyy-MM-dd`
 import typings.aliDashApp.aliDashAppStrings.`yyyy-MM`
 import typings.aliDashApp.aliDashAppStrings.yyyy
@@ -27,7 +27,7 @@ trait DatePickerOptions
   		 * 4. yyyy-MM （最低基础库：1.1.1, 可用 canIUse('datePicker.object.format.yyyy-MM') 判断）
   		 * 5. yyyy （最低基础库：1.1.1,可用 canIUse('datePicker.object.format.yyyy') 判断）
   		 */
-  var format: `yyyy-MM-dd` | `HH:mm` | (`yyyy-MM-dd HH:mm`) | `yyyy-MM` | yyyy
+  var format: `yyyy-MM-dd` | HHColonmm | (`yyyy-MM-dd HHColonmm`) | `yyyy-MM` | yyyy
   /** 最小日期时间 */
   var startDate: String
   /** 11 用户取消操作 */
@@ -43,7 +43,7 @@ object DatePickerOptions {
     currentDate: String,
     endDate: String,
     fail: `11` => Unit,
-    format: `yyyy-MM-dd` | `HH:mm` | (`yyyy-MM-dd HH:mm`) | `yyyy-MM` | yyyy,
+    format: `yyyy-MM-dd` | HHColonmm | (`yyyy-MM-dd HHColonmm`) | `yyyy-MM` | yyyy,
     startDate: String,
     success: Anon_Date => Unit,
     complete: /* res */ js.Any => Unit = null

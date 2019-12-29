@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class UserPermissionObject protected () extends js.Object {
   var ExpirationDate: js.Any = js.native
-  var `InfoPath.UserPermissionObject_typekey`: UserPermissionObject = js.native
+  @JSName("InfoPath.UserPermissionObject_typekey")
+  var InfoPathDotUserPermissionObject_typekey: UserPermissionObject = js.native
   val Parent: js.Any = js.native
   var Permission: Double = js.native
   val UserId: String = js.native

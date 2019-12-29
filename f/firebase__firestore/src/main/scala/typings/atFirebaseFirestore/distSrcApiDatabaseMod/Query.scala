@@ -3,6 +3,7 @@ package typings.atFirebaseFirestore.distSrcApiDatabaseMod
 import typings.atFirebaseFirestore.distSrcApiFieldUnderscorePathMod.FieldPath
 import typings.atFirebaseFirestore.distSrcApiObserverMod.PartialObserver
 import typings.atFirebaseFirestore.distSrcApiObserverMod.Unsubscribe
+import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.FirestoreDataConverter
 import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.OrderByDirection
 import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.SnapshotListenOptions
 import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.WhereFilterOp
@@ -12,9 +13,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@firebase/firestore/dist/src/api/database", "Query")
 @js.native
-class Query protected ()
-  extends typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query {
+class Query[T] protected ()
+  extends typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] {
   def this(_query: typings.atFirebaseFirestore.distSrcCoreQueryMod.Query, firestore: Firestore) = this()
+  def this(
+    _query: typings.atFirebaseFirestore.distSrcCoreQueryMod.Query,
+    firestore: Firestore,
+    _converter: FirestoreDataConverter[T]
+  ) = this()
+  val _converter: js.UndefOr[FirestoreDataConverter[T]] = js.native
   var _query: typings.atFirebaseFirestore.distSrcCoreQueryMod.Query = js.native
   /** Helper function to create a bound from a document or fields */
   var boundFromDocOrFields: js.Any = js.native
@@ -51,39 +58,39 @@ class Query protected ()
   var validateNewFilter: js.Any = js.native
   var validateNewOrderBy: js.Any = js.native
   var validateOrderByAndInequalityMatch: js.Any = js.native
-  def endAt(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
+  def endAt(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
   def endAt(
-    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot,
+    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot[_],
     fields: js.Any*
-  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
-  def endBefore(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
+  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
+  def endBefore(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
   def endBefore(
-    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot,
+    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot[_],
     fields: js.Any*
-  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
+  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
   def onSnapshot(
     observer: PartialObserver[
-      typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.QuerySnapshot
+      typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.QuerySnapshot[T]
     ]
   ): Unsubscribe = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
     observer: PartialObserver[
-      typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.QuerySnapshot
+      typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.QuerySnapshot[T]
     ]
   ): Unsubscribe = js.native
-  def orderBy(field: FieldPath): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
-  def orderBy(field: FieldPath, directionStr: OrderByDirection): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
-  def startAfter(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
+  def orderBy(field: FieldPath): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
+  def orderBy(field: FieldPath, directionStr: OrderByDirection): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
+  def startAfter(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
   def startAfter(
-    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot,
+    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot[_],
     fields: js.Any*
-  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
-  def startAt(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
+  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
+  def startAt(docOrField: js.Any, fields: js.Any*): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
   def startAt(
-    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot,
+    docOrField: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot[_],
     fields: js.Any*
-  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
-  def where(field: FieldPath, opStr: WhereFilterOp, value: js.Any): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query = js.native
+  ): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
+  def where(field: FieldPath, opStr: WhereFilterOp, value: js.Any): typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.Query[T] = js.native
 }
 

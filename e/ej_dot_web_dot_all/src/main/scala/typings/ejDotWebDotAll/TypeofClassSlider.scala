@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSlider
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Slider]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Slider] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Slider]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Slider] {
   var Locale: js.Any = js.native
   var fn: Slider = js.native
 }

@@ -1,10 +1,6 @@
 package typings.formstate
 
-import typings.formstate.formstateNumbers.`false`
-import typings.formstate.libCoreTypesMod.Validatable
-import typings.formstate.libCoreTypesMod.ValidationResponse
-import typings.formstate.libCoreTypesMod.Validator
-import typings.formstate.libCoreTypesMod.ValidatorResponse
+import typings.formstate.formstateBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStatus.aborted
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStatus.created
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStatus.started
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStatus.stopped
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStatus.stopping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerAdaptorContainerMod.AdaptorContainer
 import typings.tstl.containerListMod.List
-import typings.tstl.containerQueueMod.Queue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

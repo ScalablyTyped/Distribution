@@ -2,10 +2,10 @@ package typings.mongodb.mongodbMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.Anon_Date
+import typings.mongodb.mongodbBooleans.`true`
 import typings.mongodb.mongodbNumbers.`-1`
 import typings.mongodb.mongodbNumbers.`1`
-import typings.mongodb.mongodbNumbers.`true`
-import typings.mongodb.mongodbStrings.Empty
+import typings.mongodb.mongodbStrings._empty
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,6 +45,6 @@ trait UpdateQuery[TSchema] extends js.Object {
   @JSName("$setOnInsert")
   var $setOnInsert: js.UndefOr[MatchKeysAndValues[TSchema]] = js.native
   @JSName("$unset")
-  var $unset: js.UndefOr[OnlyFieldsOfType[TSchema, _, Empty]] = js.native
+  var $unset: js.UndefOr[OnlyFieldsOfType[TSchema, _, _empty]] = js.native
 }
 

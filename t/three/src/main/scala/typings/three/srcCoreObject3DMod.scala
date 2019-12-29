@@ -6,7 +6,6 @@ import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcCoreGeometryMod.Geometry
 import typings.three.srcCoreLayersMod.Layers
-import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcCoreRaycasterMod.Intersection
 import typings.three.srcCoreRaycasterMod.Raycaster
 import typings.three.srcMaterialsMaterialMod.Material
@@ -18,7 +17,7 @@ import typings.three.srcMathVector3Mod.Vector3
 import typings.three.srcObjectsGroupMod.Group
 import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
 import typings.three.srcScenesSceneMod.Scene
-import typings.three.threeNumbers.`true`
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

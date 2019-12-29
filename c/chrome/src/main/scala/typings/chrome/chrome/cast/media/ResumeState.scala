@@ -1,8 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.ResumeState.PLAYBACK_PAUSE
-import typings.chrome.chrome.cast.media.ResumeState.PLAYBACK_START
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

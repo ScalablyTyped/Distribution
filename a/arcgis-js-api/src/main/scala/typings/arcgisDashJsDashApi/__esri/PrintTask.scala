@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.async
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.sync
 import scala.scalajs.js
@@ -35,8 +34,8 @@ trait PrintTask extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def execute(params: PrintParameters): IPromise[PrintResponse] = js.native
-  def execute(params: PrintParameters, requestOptions: js.Any): IPromise[PrintResponse] = js.native
+  def execute(params: PrintParameters): js.Promise[PrintResponse] = js.native
+  def execute(params: PrintParameters, requestOptions: js.Any): js.Promise[PrintResponse] = js.native
 }
 
 @JSGlobal("__esri.PrintTask")

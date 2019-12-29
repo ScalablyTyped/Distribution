@@ -53,13 +53,16 @@ object ioredisStrings {
   sealed trait TLSv1 extends SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT1 extends SecureVersion
+  sealed trait TLSv1Dot1 extends SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT2 extends SecureVersion
+  sealed trait TLSv1Dot2 extends SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT3 extends SecureVersion
+  sealed trait TLSv1Dot3 extends SecureVersion
+  
+  @js.native
+  sealed trait Tilde extends js.Object
   
   @js.native
   sealed trait WITHSCORES extends js.Object
@@ -84,9 +87,6 @@ object ioredisStrings {
   
   @js.native
   sealed trait slave extends NodeRole
-  
-  @js.native
-  sealed trait `~` extends js.Object
   
   @scala.inline
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
@@ -119,11 +119,13 @@ object ioredisStrings {
   @scala.inline
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   @scala.inline
-  def TLSv1DOT1: TLSv1DOT1 = "TLSv1.1".asInstanceOf[TLSv1DOT1]
+  def TLSv1Dot1: TLSv1Dot1 = "TLSv1.1".asInstanceOf[TLSv1Dot1]
   @scala.inline
-  def TLSv1DOT2: TLSv1DOT2 = "TLSv1.2".asInstanceOf[TLSv1DOT2]
+  def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
   @scala.inline
-  def TLSv1DOT3: TLSv1DOT3 = "TLSv1.3".asInstanceOf[TLSv1DOT3]
+  def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
+  @scala.inline
+  def Tilde: Tilde = "~".asInstanceOf[Tilde]
   @scala.inline
   def WITHSCORES: WITHSCORES = "WITHSCORES".asInstanceOf[WITHSCORES]
   @scala.inline
@@ -140,7 +142,5 @@ object ioredisStrings {
   def maxlen_ : maxlen_ = "maxlen".asInstanceOf[maxlen_]
   @scala.inline
   def slave: slave = "slave".asInstanceOf[slave]
-  @scala.inline
-  def `~`: `~` = "~".asInstanceOf[`~`]
 }
 

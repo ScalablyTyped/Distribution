@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class XMLNodesCollection protected () extends js.Object {
   val Count: Double = js.native
-  var `InfoPath.XMLNodesCollection_typekey`: XMLNodesCollection = js.native
+  @JSName("InfoPath.XMLNodesCollection_typekey")
+  var InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection = js.native
   def Item(varIndex: js.Any): IXMLDOMNode = js.native
 }
 

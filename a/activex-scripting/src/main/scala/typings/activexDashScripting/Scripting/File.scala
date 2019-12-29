@@ -25,7 +25,8 @@ class File protected () extends js.Object {
   val ParentFolder: Folder = js.native
   /** Path to the file */
   val Path: String = js.native
-  var `Scripting.File_typekey`: File = js.native
+  @JSName("Scripting.File_typekey")
+  var ScriptingDotFile_typekey: File = js.native
   /** Short name */
   val ShortName: String = js.native
   /** Short path */

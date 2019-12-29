@@ -1,6 +1,5 @@
 package typings.pDashTimes
 
-import typings.pDashTimes.pDashTimesMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

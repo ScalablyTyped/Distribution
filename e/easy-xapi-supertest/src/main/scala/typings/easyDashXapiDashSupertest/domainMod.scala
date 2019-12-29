@@ -1,6 +1,5 @@
 package typings.easyDashXapiDashSupertest
 
-import typings.easyDashXapiDashSupertest.domainMod.Domain
 import typings.easyDashXapiDashSupertest.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js

@@ -1,7 +1,5 @@
 package typings.mutexify
 
-import typings.mutexify.mutexifyMod.Lock
-import typings.mutexify.mutexifyMod.Release
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

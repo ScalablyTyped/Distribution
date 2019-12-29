@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Screen")
 @js.native
 class Screen protected () extends js.Object {
-  var `Access.Screen_typekey`: Screen = js.native
+  @JSName("Access.Screen_typekey")
+  var AccessDotScreen_typekey: Screen = js.native
   val ActiveControl: Control = js.native
   val ActiveDataAccessPage: DataAccessPage = js.native
   val ActiveDatasheet: Form = js.native

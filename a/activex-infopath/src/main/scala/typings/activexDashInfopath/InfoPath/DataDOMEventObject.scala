@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InfoPath.DataDOMEventObject")
 @js.native
 class DataDOMEventObject protected () extends js.Object {
-  var `InfoPath.DataDOMEventObject_typekey`: DataDOMEventObject = js.native
+  @JSName("InfoPath.DataDOMEventObject_typekey")
+  var InfoPathDotDataDOMEventObject_typekey: DataDOMEventObject = js.native
   val IsUndoRedo: Boolean = js.native
   val MatchExpression: String = js.native
   val NewValue: js.Any = js.native

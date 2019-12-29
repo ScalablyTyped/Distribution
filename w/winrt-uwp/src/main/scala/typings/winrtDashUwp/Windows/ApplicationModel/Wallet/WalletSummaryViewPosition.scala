@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.field1
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.field2
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.hidden
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

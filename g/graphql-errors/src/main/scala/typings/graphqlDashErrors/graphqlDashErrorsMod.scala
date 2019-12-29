@@ -1,7 +1,6 @@
 package typings.graphqlDashErrors
 
 import typings.graphql.graphqlMod.GraphQLSchema
-import typings.graphqlDashErrors.graphqlDashErrorsMod.HandlerFunction
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

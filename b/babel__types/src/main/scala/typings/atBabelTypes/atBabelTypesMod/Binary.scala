@@ -1,26 +1,28 @@
 package typings.atBabelTypes.atBabelTypesMod
 
-import typings.atBabelTypes.atBabelTypesStrings.`!==`
-import typings.atBabelTypes.atBabelTypesStrings.`!=`
-import typings.atBabelTypes.atBabelTypesStrings.`%`
-import typings.atBabelTypes.atBabelTypesStrings.`&&`
-import typings.atBabelTypes.atBabelTypesStrings.`&`
-import typings.atBabelTypes.atBabelTypesStrings.`**`
-import typings.atBabelTypes.atBabelTypesStrings.`+`
-import typings.atBabelTypes.atBabelTypesStrings.`-`
-import typings.atBabelTypes.atBabelTypesStrings.`/`
-import typings.atBabelTypes.atBabelTypesStrings.`<<`
-import typings.atBabelTypes.atBabelTypesStrings.`<=`
-import typings.atBabelTypes.atBabelTypesStrings.`<`
-import typings.atBabelTypes.atBabelTypesStrings.`===`
-import typings.atBabelTypes.atBabelTypesStrings.`==`
-import typings.atBabelTypes.atBabelTypesStrings.`>=`
-import typings.atBabelTypes.atBabelTypesStrings.`>>>`
-import typings.atBabelTypes.atBabelTypesStrings.`>>`
-import typings.atBabelTypes.atBabelTypesStrings.`>`
-import typings.atBabelTypes.atBabelTypesStrings.`??`
-import typings.atBabelTypes.atBabelTypesStrings.`_backtick^_backtick`
-import typings.atBabelTypes.atBabelTypesStrings.`||`
+import typings.atBabelTypes.atBabelTypesStrings.Ampersand
+import typings.atBabelTypes.atBabelTypesStrings.AmpersandAmpersand
+import typings.atBabelTypes.atBabelTypesStrings.Asterisk
+import typings.atBabelTypes.atBabelTypesStrings.AsteriskAsterisk
+import typings.atBabelTypes.atBabelTypesStrings.EqualssignEqualssign
+import typings.atBabelTypes.atBabelTypesStrings.EqualssignEqualssignEqualssign
+import typings.atBabelTypes.atBabelTypesStrings.ExclamationmarkEqualssign
+import typings.atBabelTypes.atBabelTypesStrings.ExclamationmarkEqualssignEqualssign
+import typings.atBabelTypes.atBabelTypesStrings.Greaterthansign
+import typings.atBabelTypes.atBabelTypesStrings.GreaterthansignEqualssign
+import typings.atBabelTypes.atBabelTypesStrings.GreaterthansignGreaterthansign
+import typings.atBabelTypes.atBabelTypesStrings.GreaterthansignGreaterthansignGreaterthansign
+import typings.atBabelTypes.atBabelTypesStrings.Lessthansign
+import typings.atBabelTypes.atBabelTypesStrings.LessthansignEqualssign
+import typings.atBabelTypes.atBabelTypesStrings.LessthansignLessthansign
+import typings.atBabelTypes.atBabelTypesStrings.Percentsign
+import typings.atBabelTypes.atBabelTypesStrings.Plussign
+import typings.atBabelTypes.atBabelTypesStrings.QuestionmarkQuestionmark
+import typings.atBabelTypes.atBabelTypesStrings.Slash
+import typings.atBabelTypes.atBabelTypesStrings.Verticalline
+import typings.atBabelTypes.atBabelTypesStrings.VerticallineVerticalline
+import typings.atBabelTypes.atBabelTypesStrings.^
+import typings.atBabelTypes.atBabelTypesStrings.`-_`
 import typings.atBabelTypes.atBabelTypesStrings.in
 import typings.atBabelTypes.atBabelTypesStrings.instanceof
 import scala.scalajs.js
@@ -37,7 +39,7 @@ object Binary {
   @scala.inline
   def BinaryExpression(
     left: Expression,
-    operator: `+` | `-` | `/` | `%` | typings.atBabelTypes.atBabelTypesStrings.`*` | `**` | `&` | typings.atBabelTypes.atBabelTypesStrings.`|` | `>>` | `>>>` | `<<` | `_backtick^_backtick` | `==` | `===` | `!=` | `!==` | in | instanceof | `>` | `<` | `>=` | `<=`,
+    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression,
     `type`: typings.atBabelTypes.atBabelTypesStrings.BinaryExpression,
     end: Int | Double = null,
@@ -60,7 +62,7 @@ object Binary {
   @scala.inline
   def LogicalExpression(
     left: Expression,
-    operator: `||` | `&&` | `??`,
+    operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
     right: Expression,
     `type`: typings.atBabelTypes.atBabelTypesStrings.LogicalExpression,
     end: Int | Double = null,

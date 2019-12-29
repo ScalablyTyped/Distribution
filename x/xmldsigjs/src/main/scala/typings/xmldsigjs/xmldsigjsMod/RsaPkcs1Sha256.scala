@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "RsaPkcs1Sha256")
 @js.native
-class RsaPkcs1Sha256 () extends SignatureAlgorithm
+class RsaPkcs1Sha256 ()
+  extends typings.xmldsigjs.buildTypesAlgorithmsRsaUnderscorePkcs1UnderscoreSignMod.RsaPkcs1Sha256
 

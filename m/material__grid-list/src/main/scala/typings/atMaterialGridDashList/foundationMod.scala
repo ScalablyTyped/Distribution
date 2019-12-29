@@ -2,7 +2,6 @@ package typings.atMaterialGridDashList
 
 import typings.atMaterialBase.atMaterialBaseMod.MDCFoundation
 import typings.atMaterialGridDashList.adapterMod.MDCGridListAdapter
-import typings.atMaterialGridDashList.foundationMod.MDCGridListFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

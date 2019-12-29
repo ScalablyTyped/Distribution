@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.CertificateChainPolicy.base
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.CertificateChainPolicy.microsoftRoot
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.CertificateChainPolicy.ntAuthentication
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.CertificateChainPolicy.ssl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

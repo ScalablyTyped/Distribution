@@ -2,6 +2,7 @@ package typings.xstate.libTypesMod
 
 import typings.std.Record
 import typings.xstate.libStateNodeMod.StateNode
+import typings.xstate.xstateStrings.Asterisk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ object DelayedTransitionDefinition {
   def apply[TContext, TEvent /* <: EventObject */](
     actions: js.Array[ActionObject[TContext, TEvent]],
     delay: Double | String | (DelayExpr[TContext, TEvent]),
-    eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.libTypesMod.ActionTypes.NullEvent | typings.xstate.xstateStrings.`*`,
+    eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.libTypesMod.ActionTypes.NullEvent | Asterisk,
     source: StateNode[TContext, _, TEvent, _],
     cond: Guard[TContext, TEvent] = null,
     in: StateValue = null,

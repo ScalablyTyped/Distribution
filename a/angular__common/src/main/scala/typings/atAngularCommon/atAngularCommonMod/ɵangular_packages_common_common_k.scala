@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵangular_packages_common_common_k")
+@JSImport("@angular/common", "\u0275angular_packages_common_common_k")
 @js.native
 object ɵangular_packages_common_common_k extends js.Object {
   @js.native

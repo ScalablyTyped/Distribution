@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Orientation.HORIZONTAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Orientation.VERTICAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

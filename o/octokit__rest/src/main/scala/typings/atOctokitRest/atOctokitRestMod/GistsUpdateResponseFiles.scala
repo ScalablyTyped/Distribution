@@ -5,25 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GistsUpdateResponseFiles extends js.Object {
-  var `hello_world.md`: GistsUpdateResponseFilesHelloWorldMd
-  var `hello_world.py`: GistsUpdateResponseFilesHelloWorldPy
-  var `hello_world.rb`: GistsUpdateResponseFilesHelloWorldRb
-  var `new_file.txt`: GistsUpdateResponseFilesNewFileTxt
+  @JSName("hello_world.md")
+  var hello_worldDotmd: GistsUpdateResponseFilesHelloWorldMd
+  @JSName("hello_world.py")
+  var hello_worldDotpy: GistsUpdateResponseFilesHelloWorldPy
+  @JSName("hello_world.rb")
+  var hello_worldDotrb: GistsUpdateResponseFilesHelloWorldRb
+  @JSName("new_file.txt")
+  var new_fileDottxt: GistsUpdateResponseFilesNewFileTxt
 }
 
 object GistsUpdateResponseFiles {
   @scala.inline
   def apply(
-    `hello_world.md`: GistsUpdateResponseFilesHelloWorldMd,
-    `hello_world.py`: GistsUpdateResponseFilesHelloWorldPy,
-    `hello_world.rb`: GistsUpdateResponseFilesHelloWorldRb,
-    `new_file.txt`: GistsUpdateResponseFilesNewFileTxt
+    hello_worldDotmd: GistsUpdateResponseFilesHelloWorldMd,
+    hello_worldDotpy: GistsUpdateResponseFilesHelloWorldPy,
+    hello_worldDotrb: GistsUpdateResponseFilesHelloWorldRb,
+    new_fileDottxt: GistsUpdateResponseFilesNewFileTxt
   ): GistsUpdateResponseFiles = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hello_world.md")(`hello_world.md`.asInstanceOf[js.Any])
-    __obj.updateDynamic("hello_world.py")(`hello_world.py`.asInstanceOf[js.Any])
-    __obj.updateDynamic("hello_world.rb")(`hello_world.rb`.asInstanceOf[js.Any])
-    __obj.updateDynamic("new_file.txt")(`new_file.txt`.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.md")(hello_worldDotmd.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.py")(hello_worldDotpy.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.rb")(hello_worldDotrb.asInstanceOf[js.Any])
+    __obj.updateDynamic("new_file.txt")(new_fileDottxt.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsUpdateResponseFiles]
   }
 }

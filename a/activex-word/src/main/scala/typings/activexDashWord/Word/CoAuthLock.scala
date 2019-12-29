@@ -14,7 +14,8 @@ class CoAuthLock protected () extends js.Object {
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
   val Type: WdLockType = js.native
-  var `Word.CoAuthLock_typekey`: CoAuthLock = js.native
+  @JSName("Word.CoAuthLock_typekey")
+  var WordDotCoAuthLock_typekey: CoAuthLock = js.native
   def Unlock(): Unit = js.native
 }
 

@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Auto
-import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Month
-import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Week
-import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

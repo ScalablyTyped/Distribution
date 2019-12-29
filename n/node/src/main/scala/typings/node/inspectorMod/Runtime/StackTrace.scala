@@ -15,7 +15,7 @@ trait StackTrace extends js.Object {
   /**
     * String label of this stack trace. For async traces this may be a name of the function that initiated the async call.
     */
-  var description: js.UndefOr[java.lang.String] = js.undefined
+  var description: js.UndefOr[String] = js.undefined
   /**
     * Asynchronous JavaScript stack trace that preceded this stack, if available.
     */
@@ -31,7 +31,7 @@ object StackTrace {
   @scala.inline
   def apply(
     callFrames: js.Array[CallFrame],
-    description: java.lang.String = null,
+    description: String = null,
     parent: StackTrace = null,
     parentId: StackTraceId = null
   ): StackTrace = {

@@ -15,7 +15,8 @@ class Version protected () extends js.Object {
   val Index: Double = js.native
   val Parent: js.Any = js.native
   val SavedBy: String = js.native
-  var `Word.Version_typekey`: Version = js.native
+  @JSName("Word.Version_typekey")
+  var WordDotVersion_typekey: Version = js.native
   def Delete(): Unit = js.native
   def Open(): Document = js.native
   def OpenOld(): Unit = js.native

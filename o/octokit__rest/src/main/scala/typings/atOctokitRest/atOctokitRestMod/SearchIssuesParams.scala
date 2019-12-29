@@ -1,7 +1,7 @@
 package typings.atOctokitRest.atOctokitRestMod
 
-import typings.atOctokitRest.atOctokitRestStrings.`reactions-+1`
 import typings.atOctokitRest.atOctokitRestStrings.`reactions--1`
+import typings.atOctokitRest.atOctokitRestStrings.`reactions-Plussign1`
 import typings.atOctokitRest.atOctokitRestStrings.`reactions-heart`
 import typings.atOctokitRest.atOctokitRestStrings.`reactions-smile`
 import typings.atOctokitRest.atOctokitRestStrings.`reactions-tada`
@@ -38,7 +38,7 @@ trait SearchIssuesParams extends js.Object {
     * Sorts the results of your query by the number of `comments`, `reactions`, `reactions-+1`, `reactions--1`, `reactions-smile`, `reactions-thinking_face`, `reactions-heart`, `reactions-tada`, or `interactions`. You can also sort results by how recently the items were `created` or `updated`, Default: [best match](https://developer.github.com/v3/search/#ranking-search-results)
     */
   var sort: js.UndefOr[
-    comments | reactions | `reactions-+1` | `reactions--1` | `reactions-smile` | `reactions-thinking_face` | `reactions-heart` | `reactions-tada` | interactions | created | updated
+    comments | reactions | `reactions-Plussign1` | `reactions--1` | `reactions-smile` | `reactions-thinking_face` | `reactions-heart` | `reactions-tada` | interactions | created | updated
   ] = js.undefined
 }
 
@@ -49,7 +49,7 @@ object SearchIssuesParams {
     order: desc | asc = null,
     page: Int | Double = null,
     per_page: Int | Double = null,
-    sort: comments | reactions | `reactions-+1` | `reactions--1` | `reactions-smile` | `reactions-thinking_face` | `reactions-heart` | `reactions-tada` | interactions | created | updated = null
+    sort: comments | reactions | `reactions-Plussign1` | `reactions--1` | `reactions-smile` | `reactions-thinking_face` | `reactions-heart` | `reactions-tada` | interactions | created | updated = null
   ): SearchIssuesParams = {
     val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])

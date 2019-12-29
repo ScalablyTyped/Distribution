@@ -22,12 +22,12 @@ import scala.scalajs.js.annotation._
   		* @param key String
   		* @returns *
   		*/
-  var binarySearch: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var binarySearch: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], _]] = js.undefined
   /** [Method]
   		* @param name String
   		* @param marker Ext.chart.Markers
   		*/
-  var bindMarker: js.UndefOr[js.Function2[js.UndefOr[java.lang.String], js.UndefOr[IMarkers], Unit]] = js.undefined
+  var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var dataMaxX: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -41,11 +41,11 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Object) */
   var dataY: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var field: js.UndefOr[java.lang.String] = js.undefined
+  var field: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of field
   		* @returns String
   		*/
-  var getField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Get the nearest item index from point x y
   		* @param x Number
   		* @param y Number
@@ -91,7 +91,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of field
   		* @param field String The new value.
   		*/
-  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object ICartesian {
@@ -104,13 +104,13 @@ object ICartesian {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     attr: js.Any = null,
-    binarySearch: /* key */ js.UndefOr[java.lang.String] => _ = null,
-    bindMarker: (js.UndefOr[java.lang.String], js.UndefOr[IMarkers]) => Unit = null,
+    binarySearch: /* key */ js.UndefOr[String] => _ = null,
+    bindMarker: (js.UndefOr[String], js.UndefOr[IMarkers]) => Unit = null,
     bubbleEvents: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -125,38 +125,38 @@ object ICartesian {
     dataY: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    field: java.lang.String = null,
+    extend: String = null,
+    field: String = null,
     fillOpacity: Int | Double = null,
-    fillStyle: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fillStyle: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBBox: /* isWithoutTransform */ js.UndefOr[Boolean] => Unit = null,
     getBBoxCenter: /* isWithoutTransform */ js.UndefOr[Boolean] => Array = null,
     getBubbleEvents: () => _ = null,
-    getField: () => java.lang.String = null,
+    getField: () => String = null,
     getId: () => _ = null,
     getIndexNearPoint: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getParent: () => _ = null,
     globalAlpha: Int | Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    hide: () => typings.senchaUnderscoreTouch.Ext.chart.series.sprite.ICartesian = null,
+    hide: () => ICartesian = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     labelOverflowPadding: Int | Double = null,
     labels: js.Any = null,
-    lineCap: java.lang.String = null,
-    lineJoin: java.lang.String = null,
+    lineCap: String = null,
+    lineJoin: String = null,
     lineWidth: Int | Double = null,
     listeners: js.Any = null,
     miterLimit: Int | Double = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -164,7 +164,7 @@ object ICartesian {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     render: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => _ = null,
     renderClipped: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[js.Any], /* clip */ js.UndefOr[Array], /* region */ js.UndefOr[Array]) => Unit = null,
@@ -181,23 +181,23 @@ object ICartesian {
     setAttributes: (/* changes */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => Unit = null,
     setAttributesBypassingNormalization: (/* changes */ js.UndefOr[js.Any], /* avoidCopy */ js.UndefOr[Boolean]) => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setField: /* field */ js.UndefOr[java.lang.String] => Unit = null,
+    setField: /* field */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setParent: /* parent */ js.UndefOr[js.Any] => Unit = null,
     shadowBlur: Int | Double = null,
-    shadowColor: java.lang.String = null,
+    shadowColor: String = null,
     shadowOffsetX: Int | Double = null,
     shadowOffsetY: Int | Double = null,
-    show: () => typings.senchaUnderscoreTouch.Ext.chart.series.sprite.ICartesian = null,
+    show: () => ICartesian = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     strokeOpacity: Int | Double = null,
-    strokeStyle: java.lang.String = null,
+    strokeStyle: String = null,
     suspendEvents: () => Unit = null,
     transformFillStroke: js.UndefOr[Boolean] = js.undefined,
     translationX: Int | Double = null,
     translationY: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     updatePlainBBox: /* plain */ js.UndefOr[js.Any] => Unit = null,

@@ -1,8 +1,6 @@
 package typings.atHyperlorisTyson.distTypesAnnotationsJsonPropertyMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atHyperlorisTyson.distTypesAnnotationsJsonPropertyMod.Access.FROMJSON_ONLY
-import typings.atHyperlorisTyson.distTypesAnnotationsJsonPropertyMod.Access.TOJSON_ONLY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

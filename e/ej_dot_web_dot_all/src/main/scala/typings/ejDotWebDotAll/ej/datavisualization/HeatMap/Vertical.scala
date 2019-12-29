@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Vertical.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Vertical.Center
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Vertical.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

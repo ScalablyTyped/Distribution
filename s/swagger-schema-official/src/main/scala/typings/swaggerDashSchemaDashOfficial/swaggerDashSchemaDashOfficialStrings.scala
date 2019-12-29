@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 object swaggerDashSchemaDashOfficialStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait accessCode extends js.Object
@@ -107,7 +107,7 @@ object swaggerDashSchemaDashOfficialStrings {
   sealed trait tsv extends ParameterCollectionFormat
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def accessCode: accessCode = "accessCode".asInstanceOf[accessCode]
   @scala.inline

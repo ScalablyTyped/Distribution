@@ -1,11 +1,6 @@
 package typings.metalsmith
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.metalsmith.metalsmithMod.Callback
-import typings.metalsmith.metalsmithMod.Files
-import typings.metalsmith.metalsmithMod.Ignore
-import typings.metalsmith.metalsmithMod.Metalsmith
-import typings.metalsmith.metalsmithMod.Plugin
 import typings.node.fsMod.Stats
 import typings.std.Error
 import scala.scalajs.js

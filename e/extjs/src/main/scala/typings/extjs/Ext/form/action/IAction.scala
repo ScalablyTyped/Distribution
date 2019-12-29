@@ -10,23 +10,23 @@ import scala.scalajs.js.annotation._
 
 trait IAction extends IBase {
   /** [Property] (String) */
-  var CLIENT_INVALID: js.UndefOr[java.lang.String] = js.undefined
+  var CLIENT_INVALID: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var CONNECT_FAILURE: js.UndefOr[java.lang.String] = js.undefined
+  var CONNECT_FAILURE: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var LOAD_FAILURE: js.UndefOr[java.lang.String] = js.undefined
+  var LOAD_FAILURE: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var SERVER_INVALID: js.UndefOr[java.lang.String] = js.undefined
+  var SERVER_INVALID: js.UndefOr[String] = js.undefined
   /** [Config Option] (Function) */
   var failure: js.UndefOr[js.Any] = js.undefined
   /** [Property] (String) */
-  var failureType: js.UndefOr[java.lang.String] = js.undefined
+  var failureType: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.form.Basic) */
   var form: js.UndefOr[IBasic] = js.undefined
   /** [Config Option] (Object) */
   var headers: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object/String) */
   var params: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -46,37 +46,37 @@ trait IAction extends IBase {
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
   /** [Property] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var waitMsg: js.UndefOr[java.lang.String] = js.undefined
+  var waitMsg: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var waitTitle: js.UndefOr[java.lang.String] = js.undefined
+  var waitTitle: js.UndefOr[String] = js.undefined
 }
 
 object IAction {
   @scala.inline
   def apply(
-    CLIENT_INVALID: java.lang.String = null,
-    CONNECT_FAILURE: java.lang.String = null,
-    LOAD_FAILURE: java.lang.String = null,
-    SERVER_INVALID: java.lang.String = null,
+    CLIENT_INVALID: String = null,
+    CONNECT_FAILURE: String = null,
+    LOAD_FAILURE: String = null,
+    SERVER_INVALID: String = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     failure: js.Any = null,
-    failureType: java.lang.String = null,
+    failureType: String = null,
     form: IBasic = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     headers: js.Any = null,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.form.action.IAction = null,
-    method: java.lang.String = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IAction = null,
+    method: String = null,
     mixins: js.Any = null,
     params: js.Any = null,
     requires: Array = null,
@@ -91,11 +91,11 @@ object IAction {
     submitEmptyText: js.UndefOr[Boolean] = js.undefined,
     success: js.Any = null,
     timeout: Int | Double = null,
-    `type`: java.lang.String = null,
-    url: java.lang.String = null,
+    `type`: String = null,
+    url: String = null,
     uses: Array = null,
-    waitMsg: java.lang.String = null,
-    waitTitle: java.lang.String = null
+    waitMsg: String = null,
+    waitTitle: String = null
   ): IAction = {
     val __obj = js.Dynamic.literal()
     if (CLIENT_INVALID != null) __obj.updateDynamic("CLIENT_INVALID")(CLIENT_INVALID.asInstanceOf[js.Any])

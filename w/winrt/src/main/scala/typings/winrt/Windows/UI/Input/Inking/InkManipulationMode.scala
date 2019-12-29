@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Input.Inking
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Input.Inking.InkManipulationMode.erasing
-import typings.winrt.Windows.UI.Input.Inking.InkManipulationMode.inking
-import typings.winrt.Windows.UI.Input.Inking.InkManipulationMode.selecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.exceptionErrorCategoryMod.ErrorCategory
 import typings.tstl.exceptionErrorCodeMod.ErrorCode
 import typings.tstl.exceptionErrorConditionMod.ErrorCondition
 import scala.scalajs.js

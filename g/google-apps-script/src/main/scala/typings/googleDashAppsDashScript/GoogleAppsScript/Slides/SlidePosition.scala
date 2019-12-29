@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlidePosition.FIRST_SLIDE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlidePosition.LAST_SLIDE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlidePosition.NEXT_SLIDE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlidePosition.PREVIOUS_SLIDE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

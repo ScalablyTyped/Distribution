@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class IMsoChartData protected () extends js.Object {
   val IsLinked: Boolean = js.native
-  var `Office.IMsoChartData_typekey`: IMsoChartData = js.native
+  @JSName("Office.IMsoChartData_typekey")
+  var OfficeDotIMsoChartData_typekey: IMsoChartData = js.native
   val Workbook: js.Any = js.native
   def Activate(): Unit = js.native
   def ActivateChartDataWindow(): Unit = js.native

@@ -20,7 +20,7 @@ trait CallFrame extends js.Object {
   /**
     * Name of the JavaScript function called on this call frame.
     */
-  var functionName: java.lang.String
+  var functionName: String
   /**
     * Location in the source code.
     */
@@ -40,18 +40,18 @@ trait CallFrame extends js.Object {
   /**
     * JavaScript script name or url.
     */
-  var url: java.lang.String
+  var url: String
 }
 
 object CallFrame {
   @scala.inline
   def apply(
     callFrameId: CallFrameId,
-    functionName: java.lang.String,
+    functionName: String,
     location: Location,
     scopeChain: js.Array[Scope],
     `this`: RemoteObject,
-    url: java.lang.String,
+    url: String,
     functionLocation: Location = null,
     returnValue: RemoteObject = null
   ): CallFrame = {

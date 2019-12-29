@@ -1,5 +1,13 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`in-cubic`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`in-expo`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`in-out-coast-quadratic`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`in-out-cubic`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`in-out-expo`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`out-cubic`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`out-expo`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.linear
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
@@ -25,7 +33,9 @@ trait GoToOptions3D extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D)
     */
-  var easing: js.UndefOr[String | EasingFunction] = js.undefined
+  var easing: js.UndefOr[
+    linear | `in-cubic` | `out-cubic` | `in-out-cubic` | `in-expo` | `out-expo` | `in-out-expo` | `in-out-coast-quadratic` | EasingFunction
+  ] = js.undefined
   /**
     * The maximum allowed duration (in milliseconds) of the animation. The default maxDuration value takes the specified speedFactor into account.
     *
@@ -54,7 +64,7 @@ object GoToOptions3D {
     propertyIsEnumerable: PropertyKey => Boolean,
     animate: js.UndefOr[Boolean] = js.undefined,
     duration: Int | Double = null,
-    easing: String | EasingFunction = null,
+    easing: linear | `in-cubic` | `out-cubic` | `in-out-cubic` | `in-expo` | `out-expo` | `in-out-expo` | `in-out-coast-quadratic` | EasingFunction = null,
     maxDuration: Int | Double = null,
     signal: AbortSignal = null,
     speedFactor: Int | Double = null

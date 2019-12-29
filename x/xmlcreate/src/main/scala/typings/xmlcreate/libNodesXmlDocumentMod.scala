@@ -1,6 +1,5 @@
 package typings.xmlcreate
 
-import typings.xmlcreate.libNodesXmlDocumentMod.XmlDocument
 import typings.xmlcreate.libOptionsMod.IDeclarationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

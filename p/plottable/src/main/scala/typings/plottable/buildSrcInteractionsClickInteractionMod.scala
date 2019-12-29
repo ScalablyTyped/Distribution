@@ -1,7 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcCoreInterfacesMod.Point
-import typings.plottable.buildSrcInteractionsClickInteractionMod.ClickCallback
 import typings.plottable.buildSrcInteractionsInteractionMod.Interaction
 import typings.std.MouseEvent
 import typings.std.TouchEvent

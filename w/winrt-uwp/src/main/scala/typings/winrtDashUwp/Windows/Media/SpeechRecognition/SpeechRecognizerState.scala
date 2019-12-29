@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.capturing
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.idle
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.paused
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.processing
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.soundEnded
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.soundStarted
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.speechDetected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

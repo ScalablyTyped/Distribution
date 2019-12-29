@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionLifecycleEventType.Acquisition
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionLifecycleEventType.Install
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionLifecycleEventType.Other
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionLifecycleEventType.Sales
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionLifecycleEventType.Uninstall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

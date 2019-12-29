@@ -1,7 +1,7 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiHapi.Anon_Integrity
-import typings.atHapiHapi.atHapiHapiNumbers.`false`
+import typings.atHapiHapi.atHapiHapiBooleans.`false`
 import typings.atHapiHapi.atHapiHapiStrings.Lax
 import typings.atHapiHapi.atHapiHapiStrings.Strict
 import typings.atHapiHapi.atHapiHapiStrings.base64

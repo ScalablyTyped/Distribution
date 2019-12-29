@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.mediaGalleries
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.mediaGalleries.onGalleryChanged")
 @js.native
 object onGalleryChanged
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* args */ GalleryChangedEventArgs, Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* args */ GalleryChangedEventArgs, Unit]]]
 

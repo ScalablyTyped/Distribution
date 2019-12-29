@@ -1,10 +1,6 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashLanguageclient.libClientMod.RevealOutputChannelOn.Error
-import typings.vscodeDashLanguageclient.libClientMod.RevealOutputChannelOn.Info
-import typings.vscodeDashLanguageclient.libClientMod.RevealOutputChannelOn.Never
-import typings.vscodeDashLanguageclient.libClientMod.RevealOutputChannelOn.Warn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

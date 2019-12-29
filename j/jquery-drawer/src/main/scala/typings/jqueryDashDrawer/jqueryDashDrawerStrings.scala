@@ -12,10 +12,10 @@ object jqueryDashDrawerStrings {
   sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait drawerDOTclosed extends js.Object
+  sealed trait drawerDotclosed extends js.Object
   
   @js.native
-  sealed trait drawerDOTopened extends js.Object
+  sealed trait drawerDotopened extends js.Object
   
   @js.native
   sealed trait open extends js.Object
@@ -28,9 +28,9 @@ object jqueryDashDrawerStrings {
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def drawerDOTclosed: drawerDOTclosed = "drawer.closed".asInstanceOf[drawerDOTclosed]
+  def drawerDotclosed: drawerDotclosed = "drawer.closed".asInstanceOf[drawerDotclosed]
   @scala.inline
-  def drawerDOTopened: drawerDOTopened = "drawer.opened".asInstanceOf[drawerDOTopened]
+  def drawerDotopened: drawerDotopened = "drawer.opened".asInstanceOf[drawerDotopened]
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline

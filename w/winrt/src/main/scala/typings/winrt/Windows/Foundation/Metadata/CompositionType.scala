@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Foundation.Metadata.CompositionType.`protected`
-import typings.winrt.Windows.Foundation.Metadata.CompositionType.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

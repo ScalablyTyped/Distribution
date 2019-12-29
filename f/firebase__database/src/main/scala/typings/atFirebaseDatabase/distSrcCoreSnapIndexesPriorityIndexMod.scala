@@ -1,7 +1,6 @@
 package typings.atFirebaseDatabase
 
 import typings.atFirebaseDatabase.distSrcCoreSnapIndexesIndexMod.Index
-import typings.atFirebaseDatabase.distSrcCoreSnapIndexesPriorityIndexMod.PriorityIndex
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

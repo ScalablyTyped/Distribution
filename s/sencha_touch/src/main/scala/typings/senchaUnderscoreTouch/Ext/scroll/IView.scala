@@ -12,7 +12,7 @@ trait IView extends IEvented {
   /** [Method] Returns the value of cls
   		* @returns String
   		*/
-  var getCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of element
   		* @returns Object
   		*/
@@ -28,17 +28,17 @@ trait IView extends IEvented {
   /** [Method] Returns the value of indicatorsUi
   		* @returns String
   		*/
-  var getIndicatorsUi: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getIndicatorsUi: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the scroller instance in this view
   		* @returns Ext.scroll.View The scroller
   		*/
   var getScroller: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
-  var indicatorsUi: js.UndefOr[java.lang.String] = js.undefined
+  var indicatorsUi: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of cls
   		* @param cls String The new value.
   		*/
-  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of element
   		* @param element Object The new value.
   		*/
@@ -54,7 +54,7 @@ trait IView extends IEvented {
   /** [Method] Sets the value of indicatorsUi
   		* @param indicatorsUi String The new value.
   		*/
-  var setIndicatorsUi: js.UndefOr[js.Function1[/* indicatorsUi */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIndicatorsUi: js.UndefOr[js.Function1[/* indicatorsUi */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of scroller
   		* @param scroller Object The new value.
   		*/
@@ -67,7 +67,7 @@ object IView {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -79,50 +79,50 @@ object IView {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBubbleEvents: () => _ = null,
-    getCls: () => java.lang.String = null,
+    getCls: () => String = null,
     getElement: () => _ = null,
     getId: () => _ = null,
     getIndicators: () => _ = null,
     getIndicatorsHidingDelay: () => Double = null,
-    getIndicatorsUi: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getIndicatorsUi: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getScroller: () => IView = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
-    indicatorsUi: java.lang.String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
+    indicatorsUi: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
+    setCls: /* cls */ js.UndefOr[String] => Unit = null,
     setElement: /* element */ js.UndefOr[js.Any] => Unit = null,
     setIndicators: /* indicators */ js.UndefOr[js.Any] => Unit = null,
     setIndicatorsHidingDelay: /* indicatorsHidingDelay */ js.UndefOr[Double] => Unit = null,
-    setIndicatorsUi: /* indicatorsUi */ js.UndefOr[java.lang.String] => Unit = null,
+    setIndicatorsUi: /* indicatorsUi */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setScroller: /* scroller */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

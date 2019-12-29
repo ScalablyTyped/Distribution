@@ -91,17 +91,17 @@ trait JfpStatic extends js.Object {
   		 * @param userFn Function to count arguments of
   		 */
   def countArguments(userFn: js.Function1[/* repeated */ js.Any, _]): Double = js.native
+  def curry(userFn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def curry(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   /**
   		 * Curries function until all arguments are satisfied
   		 * @param userFn Function to curry
   		 * @param ...argments Initial arguments for currying application
   		 */
-  def curry(userFn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
-  def curry(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("curry")
-  def curry_Any(userFn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def curry_Function1(userFn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("curry")
-  def curry_Any(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
+  def curry_Function1(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
     * Traverses object tree and retrieves dot-delimited key or returns null
     */

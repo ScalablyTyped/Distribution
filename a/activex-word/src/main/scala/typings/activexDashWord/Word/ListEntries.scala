@@ -11,7 +11,8 @@ class ListEntries protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ListEntries_typekey`: ListEntries = js.native
+  @JSName("Word.ListEntries_typekey")
+  var WordDotListEntries_typekey: ListEntries = js.native
   def Add(Name: String): ListEntry = js.native
   def Add(Name: String, Index: js.Any): ListEntry = js.native
   def Clear(): Unit = js.native

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object fullcalendarStrings {
   @js.native
-  sealed trait `<%= version %>` extends js.Object
+  sealed trait ISO extends js.Object
   
   @js.native
-  sealed trait ISO extends js.Object
+  sealed trait `LessthansignPercentsignEqualssign version PercentsignGreaterthansign` extends js.Object
   
   @js.native
   sealed trait addEventSource extends js.Object
@@ -148,9 +148,9 @@ object fullcalendarStrings {
   sealed trait zoomTo extends js.Object
   
   @scala.inline
-  def `<%= version %>`: `<%= version %>` = "<%= version %>".asInstanceOf[`<%= version %>`]
-  @scala.inline
   def ISO: ISO = "ISO".asInstanceOf[ISO]
+  @scala.inline
+  def `LessthansignPercentsignEqualssign version PercentsignGreaterthansign`: `LessthansignPercentsignEqualssign version PercentsignGreaterthansign` = "<%= version %>".asInstanceOf[`LessthansignPercentsignEqualssign version PercentsignGreaterthansign`]
   @scala.inline
   def addEventSource: addEventSource = "addEventSource".asInstanceOf[addEventSource]
   @scala.inline

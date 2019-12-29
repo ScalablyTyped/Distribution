@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.TreeItemCollapsibleState.Collapsed
-import typings.vscode.vscodeMod.TreeItemCollapsibleState.Expanded
-import typings.vscode.vscodeMod.TreeItemCollapsibleState.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

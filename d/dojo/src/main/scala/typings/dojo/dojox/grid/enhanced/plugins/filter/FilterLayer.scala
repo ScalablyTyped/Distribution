@@ -1,6 +1,7 @@
 package typings.dojo.dojox.grid.enhanced.plugins.filter
 
 import typings.dojo.dojo.data.api.Request
+import typings.dojo.dojox.grid.enhanced.plugins._StoreLayer._StoreLayer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,12 +29,7 @@ trait FilterLayer extends js.Object {
     * @param layer The layer to be used
     * @param layerFuncName
     */
-  def wrap(
-    store: js.Any,
-    funcName: js.Any,
-    layer: typings.dojo.dojox.grid.enhanced.plugins._StoreLayer._StoreLayer,
-    layerFuncName: js.Any
-  ): js.Any
+  def wrap(store: js.Any, funcName: js.Any, layer: _StoreLayer, layerFuncName: js.Any): js.Any
 }
 
 @JSGlobal("dojox.grid.enhanced.plugins.filter.FilterLayer")

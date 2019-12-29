@@ -16,7 +16,7 @@ trait NodeUnselectEventArgs extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the id of the parent element of current element of the node unselected
     */
   var parentId: js.UndefOr[String] = js.undefined
@@ -37,7 +37,7 @@ object NodeUnselectEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     currentElement: js.Any = null,
     id: String = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     parentId: String = null,
     selectedNodes: js.Array[_] = null,
     `type`: String = null,

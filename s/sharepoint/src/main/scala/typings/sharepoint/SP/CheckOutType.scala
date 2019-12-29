@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.CheckOutType.none
-import typings.sharepoint.SP.CheckOutType.offline
-import typings.sharepoint.SP.CheckOutType.online
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

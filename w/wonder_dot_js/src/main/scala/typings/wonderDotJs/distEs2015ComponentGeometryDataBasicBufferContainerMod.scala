@@ -1,6 +1,5 @@
 package typings.wonderDotJs
 
-import typings.wonderDotJs.distEs2015ComponentGeometryDataBasicBufferContainerMod.BasicBufferContainer
 import typings.wonderDotJs.distEs2015ComponentGeometryDataCommonBufferContainerMod.CommonBufferContainer
 import typings.wonderDotJs.distEs2015CoreEntityObjectGameObjectGameObjectMod.GameObject
 import scala.scalajs.js

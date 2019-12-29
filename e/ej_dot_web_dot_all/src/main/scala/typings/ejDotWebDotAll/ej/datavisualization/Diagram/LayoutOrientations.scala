@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutOrientations.BottomToTop
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutOrientations.LeftToRight
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutOrientations.RightToLeft
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutOrientations.TopToBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

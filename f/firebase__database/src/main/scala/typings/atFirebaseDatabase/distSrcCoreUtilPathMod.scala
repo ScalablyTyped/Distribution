@@ -1,6 +1,5 @@
 package typings.atFirebaseDatabase
 
-import typings.atFirebaseDatabase.distSrcCoreUtilPathMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,7 +102,7 @@ object distSrcCoreUtilPathMod extends js.Object {
       *
       * @const
       */
-    val Empty: Path = js.native
+    def Empty(): Path = js.native
     /**
       * @param {!Path} left
       * @param {!Path} right
@@ -122,9 +121,9 @@ object distSrcCoreUtilPathMod extends js.Object {
   @js.native
   object ValidationPath extends js.Object {
     /** @const {number} Maximum key depth. */
-    val MAX_PATH_DEPTH: Double = js.native
+    def MAX_PATH_DEPTH(): Double = js.native
     /** @const {number} Maximum number of (UTF8) bytes in a Firebase path. */
-    val MAX_PATH_LENGTH_BYTES: Double = js.native
+    def MAX_PATH_LENGTH_BYTES(): Double = js.native
   }
   
 }

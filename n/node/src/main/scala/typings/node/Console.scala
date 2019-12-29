@@ -78,14 +78,6 @@ trait Console extends js.Object {
   // --- Inspector mode only ---
   /**
     * This method does not display anything unless used in the inspector.
-    *  The console.markTimeline() method is the deprecated form of console.timeStamp().
-    *
-    * @deprecated Use console.timeStamp() instead.
-    */
-  def markTimeline(): Unit = js.native
-  def markTimeline(label: java.lang.String): Unit = js.native
-  /**
-    * This method does not display anything unless used in the inspector.
     *  Starts a JavaScript CPU profile with an optional label.
     */
   def profile(): Unit = js.native
@@ -123,22 +115,6 @@ trait Console extends js.Object {
     */
   def timeStamp(): Unit = js.native
   def timeStamp(label: java.lang.String): Unit = js.native
-  /**
-    * This method does not display anything unless used in the inspector.
-    *  The console.timeline() method is the deprecated form of console.time().
-    *
-    * @deprecated Use console.time() instead.
-    */
-  def timeline(): Unit = js.native
-  def timeline(label: java.lang.String): Unit = js.native
-  /**
-    * This method does not display anything unless used in the inspector.
-    *  The console.timelineEnd() method is the deprecated form of console.timeEnd().
-    *
-    * @deprecated Use console.timeEnd() instead.
-    */
-  def timelineEnd(): Unit = js.native
-  def timelineEnd(label: java.lang.String): Unit = js.native
   /**
     * Prints to `stderr` the string 'Trace :', followed by the {@link util.format()} formatted message and stack trace to the current position in the code.
     */

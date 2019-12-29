@@ -18,7 +18,7 @@ object atStorybookAddonDashViewportStrings {
   sealed trait responsive extends js.Object
   
   @js.native
-  sealed trait `storybook/viewport` extends js.Object
+  sealed trait storybookSlashviewport extends js.Object
   
   @js.native
   sealed trait tablet extends js.Object
@@ -35,7 +35,7 @@ object atStorybookAddonDashViewportStrings {
   @scala.inline
   def responsive: responsive = "responsive".asInstanceOf[responsive]
   @scala.inline
-  def `storybook/viewport`: `storybook/viewport` = "storybook/viewport".asInstanceOf[`storybook/viewport`]
+  def storybookSlashviewport: storybookSlashviewport = "storybook/viewport".asInstanceOf[storybookSlashviewport]
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
   @scala.inline

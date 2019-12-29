@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassBarcode
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Barcode]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Barcode] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Barcode]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Barcode] {
   var Locale: js.Any = js.native
   var fn: Barcode = js.native
 }

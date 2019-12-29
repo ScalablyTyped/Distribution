@@ -1,15 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EPlatformType.Linux
-import typings.steamDashClient.steamDashClientMod.EPlatformType.Linux32
-import typings.steamDashClient.steamDashClientMod.EPlatformType.Linux64
-import typings.steamDashClient.steamDashClientMod.EPlatformType.Max
-import typings.steamDashClient.steamDashClientMod.EPlatformType.OSX
-import typings.steamDashClient.steamDashClientMod.EPlatformType.PS3
-import typings.steamDashClient.steamDashClientMod.EPlatformType.Unknown
-import typings.steamDashClient.steamDashClientMod.EPlatformType.Win32
-import typings.steamDashClient.steamDashClientMod.EPlatformType.Win64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

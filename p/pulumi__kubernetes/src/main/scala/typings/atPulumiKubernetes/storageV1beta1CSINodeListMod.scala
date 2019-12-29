@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.storageV1beta1CSINodeListMod.CSINodeList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.storageDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINode
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object storageV1beta1CSINodeListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`storageDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[storageDotk8sDotioSlashv1beta1] = js.native
     /**
       * items is the list of CSINode
       */

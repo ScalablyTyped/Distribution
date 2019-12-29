@@ -1,12 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.TextEditorCursorStyle.Block
-import typings.vscode.vscodeMod.TextEditorCursorStyle.BlockOutline
-import typings.vscode.vscodeMod.TextEditorCursorStyle.Line
-import typings.vscode.vscodeMod.TextEditorCursorStyle.LineThin
-import typings.vscode.vscodeMod.TextEditorCursorStyle.Underline
-import typings.vscode.vscodeMod.TextEditorCursorStyle.UnderlineThin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -36,121 +36,121 @@ object olStrings {
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait `change:accuracy` extends js.Object
+  sealed trait changeColonaccuracy extends js.Object
   
   @js.native
-  sealed trait `change:accuracyGeometry` extends js.Object
+  sealed trait changeColonaccuracyGeometry extends js.Object
   
   @js.native
-  sealed trait `change:active` extends js.Object
+  sealed trait changeColonactive extends js.Object
   
   @js.native
-  sealed trait `change:altitude` extends js.Object
+  sealed trait changeColonaltitude extends js.Object
   
   @js.native
-  sealed trait `change:altitudeAccuracy` extends js.Object
+  sealed trait changeColonaltitudeAccuracy extends js.Object
   
   @js.native
-  sealed trait `change:blur` extends js.Object
+  sealed trait changeColonblur extends js.Object
   
   @js.native
-  sealed trait `change:center` extends js.Object
+  sealed trait changeColoncenter extends js.Object
   
   @js.native
-  sealed trait `change:coordinateFormat` extends js.Object
+  sealed trait changeColoncoordinateFormat extends js.Object
   
   @js.native
-  sealed trait `change:element` extends js.Object
+  sealed trait changeColonelement extends js.Object
   
   @js.native
-  sealed trait `change:extent` extends js.Object
+  sealed trait changeColonextent extends js.Object
   
   @js.native
-  sealed trait `change:geometry` extends js.Object
+  sealed trait changeColongeometry extends js.Object
   
   @js.native
-  sealed trait `change:gradient` extends js.Object
+  sealed trait changeColongradient extends js.Object
   
   @js.native
-  sealed trait `change:heading` extends js.Object
+  sealed trait changeColonheading extends js.Object
   
   @js.native
-  sealed trait `change:layerGroup` extends js.Object
+  sealed trait changeColonlayerGroup extends js.Object
   
   @js.native
-  sealed trait `change:layers` extends js.Object
+  sealed trait changeColonlayers extends js.Object
   
   @js.native
-  sealed trait `change:length` extends js.Object
+  sealed trait changeColonlength extends js.Object
   
   @js.native
-  sealed trait `change:map` extends js.Object
+  sealed trait changeColonmap extends js.Object
   
   @js.native
-  sealed trait `change:maxResolution` extends js.Object
+  sealed trait changeColonmaxResolution extends js.Object
   
   @js.native
-  sealed trait `change:minResolution` extends js.Object
+  sealed trait changeColonminResolution extends js.Object
   
   @js.native
-  sealed trait `change:offset` extends js.Object
+  sealed trait changeColonoffset extends js.Object
   
   @js.native
-  sealed trait `change:opacity` extends js.Object
+  sealed trait changeColonopacity extends js.Object
   
   @js.native
-  sealed trait `change:position` extends js.Object
+  sealed trait changeColonposition extends js.Object
   
   @js.native
-  sealed trait `change:positioning` extends js.Object
+  sealed trait changeColonpositioning extends js.Object
   
   @js.native
-  sealed trait `change:preload` extends js.Object
+  sealed trait changeColonpreload extends js.Object
   
   @js.native
-  sealed trait `change:projection` extends js.Object
+  sealed trait changeColonprojection extends js.Object
   
   @js.native
-  sealed trait `change:radius` extends js.Object
+  sealed trait changeColonradius extends js.Object
   
   @js.native
-  sealed trait `change:resolution` extends js.Object
+  sealed trait changeColonresolution extends js.Object
   
   @js.native
-  sealed trait `change:rotation` extends js.Object
+  sealed trait changeColonrotation extends js.Object
   
   @js.native
-  sealed trait `change:size` extends js.Object
+  sealed trait changeColonsize extends js.Object
   
   @js.native
-  sealed trait `change:source` extends js.Object
+  sealed trait changeColonsource extends js.Object
   
   @js.native
-  sealed trait `change:speed` extends js.Object
+  sealed trait changeColonspeed extends js.Object
   
   @js.native
-  sealed trait `change:target` extends js.Object
+  sealed trait changeColontarget extends js.Object
   
   @js.native
-  sealed trait `change:tracking` extends js.Object
+  sealed trait changeColontracking extends js.Object
   
   @js.native
-  sealed trait `change:trackingOptions` extends js.Object
+  sealed trait changeColontrackingOptions extends js.Object
   
   @js.native
-  sealed trait `change:units` extends js.Object
+  sealed trait changeColonunits extends js.Object
   
   @js.native
-  sealed trait `change:useInterimTilesOnError` extends js.Object
+  sealed trait changeColonuseInterimTilesOnError extends js.Object
   
   @js.native
-  sealed trait `change:view` extends js.Object
+  sealed trait changeColonview extends js.Object
   
   @js.native
-  sealed trait `change:visible` extends js.Object
+  sealed trait changeColonvisible extends js.Object
   
   @js.native
-  sealed trait `change:zIndex` extends js.Object
+  sealed trait changeColonzIndex extends js.Object
   
   @js.native
   sealed trait changefeature extends js.Object
@@ -278,83 +278,83 @@ object olStrings {
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
-  def `change:accuracy`: `change:accuracy` = "change:accuracy".asInstanceOf[`change:accuracy`]
+  def changeColonaccuracy: changeColonaccuracy = "change:accuracy".asInstanceOf[changeColonaccuracy]
   @scala.inline
-  def `change:accuracyGeometry`: `change:accuracyGeometry` = "change:accuracyGeometry".asInstanceOf[`change:accuracyGeometry`]
+  def changeColonaccuracyGeometry: changeColonaccuracyGeometry = "change:accuracyGeometry".asInstanceOf[changeColonaccuracyGeometry]
   @scala.inline
-  def `change:active`: `change:active` = "change:active".asInstanceOf[`change:active`]
+  def changeColonactive: changeColonactive = "change:active".asInstanceOf[changeColonactive]
   @scala.inline
-  def `change:altitude`: `change:altitude` = "change:altitude".asInstanceOf[`change:altitude`]
+  def changeColonaltitude: changeColonaltitude = "change:altitude".asInstanceOf[changeColonaltitude]
   @scala.inline
-  def `change:altitudeAccuracy`: `change:altitudeAccuracy` = "change:altitudeAccuracy".asInstanceOf[`change:altitudeAccuracy`]
+  def changeColonaltitudeAccuracy: changeColonaltitudeAccuracy = "change:altitudeAccuracy".asInstanceOf[changeColonaltitudeAccuracy]
   @scala.inline
-  def `change:blur`: `change:blur` = "change:blur".asInstanceOf[`change:blur`]
+  def changeColonblur: changeColonblur = "change:blur".asInstanceOf[changeColonblur]
   @scala.inline
-  def `change:center`: `change:center` = "change:center".asInstanceOf[`change:center`]
+  def changeColoncenter: changeColoncenter = "change:center".asInstanceOf[changeColoncenter]
   @scala.inline
-  def `change:coordinateFormat`: `change:coordinateFormat` = "change:coordinateFormat".asInstanceOf[`change:coordinateFormat`]
+  def changeColoncoordinateFormat: changeColoncoordinateFormat = "change:coordinateFormat".asInstanceOf[changeColoncoordinateFormat]
   @scala.inline
-  def `change:element`: `change:element` = "change:element".asInstanceOf[`change:element`]
+  def changeColonelement: changeColonelement = "change:element".asInstanceOf[changeColonelement]
   @scala.inline
-  def `change:extent`: `change:extent` = "change:extent".asInstanceOf[`change:extent`]
+  def changeColonextent: changeColonextent = "change:extent".asInstanceOf[changeColonextent]
   @scala.inline
-  def `change:geometry`: `change:geometry` = "change:geometry".asInstanceOf[`change:geometry`]
+  def changeColongeometry: changeColongeometry = "change:geometry".asInstanceOf[changeColongeometry]
   @scala.inline
-  def `change:gradient`: `change:gradient` = "change:gradient".asInstanceOf[`change:gradient`]
+  def changeColongradient: changeColongradient = "change:gradient".asInstanceOf[changeColongradient]
   @scala.inline
-  def `change:heading`: `change:heading` = "change:heading".asInstanceOf[`change:heading`]
+  def changeColonheading: changeColonheading = "change:heading".asInstanceOf[changeColonheading]
   @scala.inline
-  def `change:layerGroup`: `change:layerGroup` = "change:layerGroup".asInstanceOf[`change:layerGroup`]
+  def changeColonlayerGroup: changeColonlayerGroup = "change:layerGroup".asInstanceOf[changeColonlayerGroup]
   @scala.inline
-  def `change:layers`: `change:layers` = "change:layers".asInstanceOf[`change:layers`]
+  def changeColonlayers: changeColonlayers = "change:layers".asInstanceOf[changeColonlayers]
   @scala.inline
-  def `change:length`: `change:length` = "change:length".asInstanceOf[`change:length`]
+  def changeColonlength: changeColonlength = "change:length".asInstanceOf[changeColonlength]
   @scala.inline
-  def `change:map`: `change:map` = "change:map".asInstanceOf[`change:map`]
+  def changeColonmap: changeColonmap = "change:map".asInstanceOf[changeColonmap]
   @scala.inline
-  def `change:maxResolution`: `change:maxResolution` = "change:maxResolution".asInstanceOf[`change:maxResolution`]
+  def changeColonmaxResolution: changeColonmaxResolution = "change:maxResolution".asInstanceOf[changeColonmaxResolution]
   @scala.inline
-  def `change:minResolution`: `change:minResolution` = "change:minResolution".asInstanceOf[`change:minResolution`]
+  def changeColonminResolution: changeColonminResolution = "change:minResolution".asInstanceOf[changeColonminResolution]
   @scala.inline
-  def `change:offset`: `change:offset` = "change:offset".asInstanceOf[`change:offset`]
+  def changeColonoffset: changeColonoffset = "change:offset".asInstanceOf[changeColonoffset]
   @scala.inline
-  def `change:opacity`: `change:opacity` = "change:opacity".asInstanceOf[`change:opacity`]
+  def changeColonopacity: changeColonopacity = "change:opacity".asInstanceOf[changeColonopacity]
   @scala.inline
-  def `change:position`: `change:position` = "change:position".asInstanceOf[`change:position`]
+  def changeColonposition: changeColonposition = "change:position".asInstanceOf[changeColonposition]
   @scala.inline
-  def `change:positioning`: `change:positioning` = "change:positioning".asInstanceOf[`change:positioning`]
+  def changeColonpositioning: changeColonpositioning = "change:positioning".asInstanceOf[changeColonpositioning]
   @scala.inline
-  def `change:preload`: `change:preload` = "change:preload".asInstanceOf[`change:preload`]
+  def changeColonpreload: changeColonpreload = "change:preload".asInstanceOf[changeColonpreload]
   @scala.inline
-  def `change:projection`: `change:projection` = "change:projection".asInstanceOf[`change:projection`]
+  def changeColonprojection: changeColonprojection = "change:projection".asInstanceOf[changeColonprojection]
   @scala.inline
-  def `change:radius`: `change:radius` = "change:radius".asInstanceOf[`change:radius`]
+  def changeColonradius: changeColonradius = "change:radius".asInstanceOf[changeColonradius]
   @scala.inline
-  def `change:resolution`: `change:resolution` = "change:resolution".asInstanceOf[`change:resolution`]
+  def changeColonresolution: changeColonresolution = "change:resolution".asInstanceOf[changeColonresolution]
   @scala.inline
-  def `change:rotation`: `change:rotation` = "change:rotation".asInstanceOf[`change:rotation`]
+  def changeColonrotation: changeColonrotation = "change:rotation".asInstanceOf[changeColonrotation]
   @scala.inline
-  def `change:size`: `change:size` = "change:size".asInstanceOf[`change:size`]
+  def changeColonsize: changeColonsize = "change:size".asInstanceOf[changeColonsize]
   @scala.inline
-  def `change:source`: `change:source` = "change:source".asInstanceOf[`change:source`]
+  def changeColonsource: changeColonsource = "change:source".asInstanceOf[changeColonsource]
   @scala.inline
-  def `change:speed`: `change:speed` = "change:speed".asInstanceOf[`change:speed`]
+  def changeColonspeed: changeColonspeed = "change:speed".asInstanceOf[changeColonspeed]
   @scala.inline
-  def `change:target`: `change:target` = "change:target".asInstanceOf[`change:target`]
+  def changeColontarget: changeColontarget = "change:target".asInstanceOf[changeColontarget]
   @scala.inline
-  def `change:tracking`: `change:tracking` = "change:tracking".asInstanceOf[`change:tracking`]
+  def changeColontracking: changeColontracking = "change:tracking".asInstanceOf[changeColontracking]
   @scala.inline
-  def `change:trackingOptions`: `change:trackingOptions` = "change:trackingOptions".asInstanceOf[`change:trackingOptions`]
+  def changeColontrackingOptions: changeColontrackingOptions = "change:trackingOptions".asInstanceOf[changeColontrackingOptions]
   @scala.inline
-  def `change:units`: `change:units` = "change:units".asInstanceOf[`change:units`]
+  def changeColonunits: changeColonunits = "change:units".asInstanceOf[changeColonunits]
   @scala.inline
-  def `change:useInterimTilesOnError`: `change:useInterimTilesOnError` = "change:useInterimTilesOnError".asInstanceOf[`change:useInterimTilesOnError`]
+  def changeColonuseInterimTilesOnError: changeColonuseInterimTilesOnError = "change:useInterimTilesOnError".asInstanceOf[changeColonuseInterimTilesOnError]
   @scala.inline
-  def `change:view`: `change:view` = "change:view".asInstanceOf[`change:view`]
+  def changeColonview: changeColonview = "change:view".asInstanceOf[changeColonview]
   @scala.inline
-  def `change:visible`: `change:visible` = "change:visible".asInstanceOf[`change:visible`]
+  def changeColonvisible: changeColonvisible = "change:visible".asInstanceOf[changeColonvisible]
   @scala.inline
-  def `change:zIndex`: `change:zIndex` = "change:zIndex".asInstanceOf[`change:zIndex`]
+  def changeColonzIndex: changeColonzIndex = "change:zIndex".asInstanceOf[changeColonzIndex]
   @scala.inline
   def changefeature: changefeature = "changefeature".asInstanceOf[changefeature]
   @scala.inline

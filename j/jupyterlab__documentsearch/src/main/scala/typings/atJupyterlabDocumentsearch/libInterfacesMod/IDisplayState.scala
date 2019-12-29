@@ -72,7 +72,7 @@ object IDisplayState {
     totalMatches: Double,
     useRegex: Boolean
   ): IDisplayState = {
-    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive, currentIndex = currentIndex, errorMessage = errorMessage, forceFocus = forceFocus, query = query, replaceEntryShown = replaceEntryShown, replaceInputFocused = replaceInputFocused, replaceText = replaceText, searchInputFocused = searchInputFocused, searchText = searchText, totalMatches = totalMatches, useRegex = useRegex)
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], currentIndex = currentIndex.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], forceFocus = forceFocus.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], replaceEntryShown = replaceEntryShown.asInstanceOf[js.Any], replaceInputFocused = replaceInputFocused.asInstanceOf[js.Any], replaceText = replaceText.asInstanceOf[js.Any], searchInputFocused = searchInputFocused.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], totalMatches = totalMatches.asInstanceOf[js.Any], useRegex = useRegex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDisplayState]
   }

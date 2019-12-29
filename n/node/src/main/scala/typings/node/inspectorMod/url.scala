@@ -10,6 +10,6 @@ object url extends js.Object {
   /**
     * Return the URL of the active inspector, or `undefined` if there is none.
     */
-  def apply(): js.UndefOr[java.lang.String] = js.native
+  def apply(): js.UndefOr[String] = js.native
 }
 

@@ -3,7 +3,7 @@ package typings.karma.karmaMod
 import org.scalablytyped.runtime.TopLevel
 import typings.bluebird.bluebirdMod.^
 import typings.karma.karmaStrings.run_complete
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

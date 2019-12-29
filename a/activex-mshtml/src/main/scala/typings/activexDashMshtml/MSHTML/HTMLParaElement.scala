@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLParaElement")
 @js.native
 class HTMLParaElement protected () extends js.Object {
-  var `MSHTML.HTMLParaElement_typekey`: HTMLParaElement = js.native
+  @JSName("MSHTML.HTMLParaElement_typekey")
+  var MSHTMLDotHTMLParaElement_typekey: HTMLParaElement = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

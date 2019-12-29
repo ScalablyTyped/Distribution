@@ -18,7 +18,6 @@ package object distModulesStoriesMod {
     - typings.atStorybookApi.atStorybookApiStrings.info
     - typings.atStorybookApi.atStorybookApiStrings.settings
     - `js.undefined`
-    - scala.Nothing
   */
   type ViewMode = js.UndefOr[_ViewMode]
 }

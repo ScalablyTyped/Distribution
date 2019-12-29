@@ -1,6 +1,6 @@
 package typings.jss.jssMod
 
-import typings.jss.jssNumbers.`false`
+import typings.jss.jssBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

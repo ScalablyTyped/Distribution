@@ -1,6 +1,5 @@
 package typings.ethers
 
-import typings.ethers.distTypesUtilsAbiDashCoderMod.AbiCoder
 import typings.ethers.distTypesUtilsTypesMod.Arrayish
 import typings.ethers.distTypesUtilsTypesMod.CoerceFunc
 import typings.ethers.distTypesUtilsTypesMod.EventFragment

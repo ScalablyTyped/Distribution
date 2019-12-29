@@ -23,7 +23,7 @@ trait IComponent extends IContainer {
   		* @returns String
   		*/
   @JSName("getCls")
-  var getCls_IComponent: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCls_IComponent: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of fitSurface
   		* @returns Boolean
   		*/
@@ -44,7 +44,7 @@ trait IComponent extends IContainer {
   		* @param id String
   		* @returns Ext.draw.Surface
   		*/
-  var getSurface: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], ISurface]] = js.undefined
+  var getSurface: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], ISurface]] = js.undefined
   /** [Method] Returns the value of viewBox
   		* @returns Boolean
   		*/
@@ -69,7 +69,7 @@ trait IComponent extends IContainer {
   		* @param cls String The new value.
   		*/
   @JSName("setCls")
-  var setCls_IComponent: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCls_IComponent: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of fitSurface
   		* @param fitSurface Boolean The new value.
   		*/
@@ -102,12 +102,12 @@ object IComponent {
     fitSurface: js.UndefOr[Boolean] = js.undefined,
     getAutoSize: () => Boolean = null,
     getBackground: () => _ = null,
-    getCls: () => java.lang.String = null,
+    getCls: () => String = null,
     getFitSurface: () => Boolean = null,
     getGradients: () => Array = null,
     getResizeHandler: () => _ = null,
     getSprites: () => _ = null,
-    getSurface: /* id */ js.UndefOr[java.lang.String] => ISurface = null,
+    getSurface: /* id */ js.UndefOr[String] => ISurface = null,
     getViewBox: () => Boolean = null,
     gradients: Array = null,
     onPlaceWatermark: () => Unit = null,
@@ -115,7 +115,7 @@ object IComponent {
     resizeHandler: js.Any = null,
     setAutoSize: /* autoSize */ js.UndefOr[Boolean] => Unit = null,
     setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
-    setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
+    setCls: /* cls */ js.UndefOr[String] => Unit = null,
     setFitSurface: /* fitSurface */ js.UndefOr[Boolean] => Unit = null,
     setGradients: /* gradients */ js.UndefOr[Array] => Unit = null,
     setResizeHandler: /* resizeHandler */ js.UndefOr[js.Any] => Unit = null,

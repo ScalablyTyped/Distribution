@@ -1,16 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_AUTO
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_FAX3
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_FAX4
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_JPEG
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_LZW
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_NONE
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_PACKBITS
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_RLE
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_T4
-import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_T6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

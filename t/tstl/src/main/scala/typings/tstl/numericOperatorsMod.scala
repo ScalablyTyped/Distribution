@@ -3,7 +3,6 @@ package typings.tstl
 import typings.std.Pick
 import typings.tstl.numericIComputableMod.IComputable
 import typings.tstl.numericINegatableMod.INegatable
-import typings.tstl.numericOperatorsMod.Param
 import typings.tstl.tstlStrings.plus
 import scala.scalajs.js
 import scala.scalajs.js.`|`

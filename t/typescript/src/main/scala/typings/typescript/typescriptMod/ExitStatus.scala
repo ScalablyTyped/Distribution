@@ -1,12 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.ExitStatus.DiagnosticsPresent_OutputsGenerated
-import typings.typescript.typescriptMod.ExitStatus.DiagnosticsPresent_OutputsSkipped
-import typings.typescript.typescriptMod.ExitStatus.InvalidProject_OutputsSkipped
-import typings.typescript.typescriptMod.ExitStatus.ProjectReferenceCycle_OutputsSkipped
-import typings.typescript.typescriptMod.ExitStatus.ProjectReferenceCycle_OutputsSkupped
-import typings.typescript.typescriptMod.ExitStatus.Success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_OPTIONAL
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_REPEATED
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_REQUIRED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

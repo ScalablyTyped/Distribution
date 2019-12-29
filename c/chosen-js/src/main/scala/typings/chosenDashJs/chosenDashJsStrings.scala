@@ -11,31 +11,31 @@ object chosenDashJsStrings {
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait `chosen:activate` extends TriggerEvent
+  sealed trait chosenColonactivate extends TriggerEvent
   
   @js.native
-  sealed trait `chosen:close` extends TriggerEvent
+  sealed trait chosenColonclose extends TriggerEvent
   
   @js.native
-  sealed trait `chosen:hiding_dropdown` extends OnEvent
+  sealed trait chosenColonhiding_dropdown extends OnEvent
   
   @js.native
-  sealed trait `chosen:maxselected` extends OnEvent
+  sealed trait chosenColonmaxselected extends OnEvent
   
   @js.native
-  sealed trait `chosen:no_results` extends OnEvent
+  sealed trait chosenColonno_results extends OnEvent
   
   @js.native
-  sealed trait `chosen:open` extends TriggerEvent
+  sealed trait chosenColonopen extends TriggerEvent
   
   @js.native
-  sealed trait `chosen:ready` extends OnEvent
+  sealed trait chosenColonready extends OnEvent
   
   @js.native
-  sealed trait `chosen:showing_dropdown` extends OnEvent
+  sealed trait chosenColonshowing_dropdown extends OnEvent
   
   @js.native
-  sealed trait `chosen:updated` extends TriggerEvent
+  sealed trait chosenColonupdated extends TriggerEvent
   
   @js.native
   sealed trait destroy extends js.Object
@@ -43,23 +43,23 @@ object chosenDashJsStrings {
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
-  def `chosen:activate`: `chosen:activate` = "chosen:activate".asInstanceOf[`chosen:activate`]
+  def chosenColonactivate: chosenColonactivate = "chosen:activate".asInstanceOf[chosenColonactivate]
   @scala.inline
-  def `chosen:close`: `chosen:close` = "chosen:close".asInstanceOf[`chosen:close`]
+  def chosenColonclose: chosenColonclose = "chosen:close".asInstanceOf[chosenColonclose]
   @scala.inline
-  def `chosen:hiding_dropdown`: `chosen:hiding_dropdown` = "chosen:hiding_dropdown".asInstanceOf[`chosen:hiding_dropdown`]
+  def chosenColonhiding_dropdown: chosenColonhiding_dropdown = "chosen:hiding_dropdown".asInstanceOf[chosenColonhiding_dropdown]
   @scala.inline
-  def `chosen:maxselected`: `chosen:maxselected` = "chosen:maxselected".asInstanceOf[`chosen:maxselected`]
+  def chosenColonmaxselected: chosenColonmaxselected = "chosen:maxselected".asInstanceOf[chosenColonmaxselected]
   @scala.inline
-  def `chosen:no_results`: `chosen:no_results` = "chosen:no_results".asInstanceOf[`chosen:no_results`]
+  def chosenColonno_results: chosenColonno_results = "chosen:no_results".asInstanceOf[chosenColonno_results]
   @scala.inline
-  def `chosen:open`: `chosen:open` = "chosen:open".asInstanceOf[`chosen:open`]
+  def chosenColonopen: chosenColonopen = "chosen:open".asInstanceOf[chosenColonopen]
   @scala.inline
-  def `chosen:ready`: `chosen:ready` = "chosen:ready".asInstanceOf[`chosen:ready`]
+  def chosenColonready: chosenColonready = "chosen:ready".asInstanceOf[chosenColonready]
   @scala.inline
-  def `chosen:showing_dropdown`: `chosen:showing_dropdown` = "chosen:showing_dropdown".asInstanceOf[`chosen:showing_dropdown`]
+  def chosenColonshowing_dropdown: chosenColonshowing_dropdown = "chosen:showing_dropdown".asInstanceOf[chosenColonshowing_dropdown]
   @scala.inline
-  def `chosen:updated`: `chosen:updated` = "chosen:updated".asInstanceOf[`chosen:updated`]
+  def chosenColonupdated: chosenColonupdated = "chosen:updated".asInstanceOf[chosenColonupdated]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
 }

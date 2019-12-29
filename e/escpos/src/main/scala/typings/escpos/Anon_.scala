@@ -1,39 +1,39 @@
 package typings.escpos
 
-import typings.escpos.escposStrings.BACKSLASHu0000
-import typings.escpos.escposStrings.BACKSLASHu0010
-import typings.escpos.escposStrings.BACKTICK
-import typings.escpos.escposStrings.P
-import typings.escpos.escposStrings.` `
-import typings.escpos.escposStrings.`0`
-import typings.escpos.escposStrings.`@`
-import typings.escpos.escposStrings.p_
+import typings.escpos.escposStrings.Acknowledge
+import typings.escpos.escposStrings.Bell
+import typings.escpos.escposStrings.Endoftext
+import typings.escpos.escposStrings.Endoftransmission
+import typings.escpos.escposStrings.Enquiry
+import typings.escpos.escposStrings.Null
+import typings.escpos.escposStrings.Startofheading
+import typings.escpos.escposStrings.Startoftext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ extends js.Object {
-  var `1`: BACKSLASHu0000
-  var `2`: BACKSLASHu0010
-  var `3`: ` `
-  var `4`: `0`
-  var `5`: `@`
-  var `6`: P
-  var `7`: BACKTICK
-  var `8`: p_
+  var `1`: Null
+  var `2`: Startofheading
+  var `3`: Startoftext
+  var `4`: Endoftext
+  var `5`: Endoftransmission
+  var `6`: Enquiry
+  var `7`: Acknowledge
+  var `8`: Bell
 }
 
 object Anon_ {
   @scala.inline
   def apply(
-    `1`: BACKSLASHu0000,
-    `2`: BACKSLASHu0010,
-    `3`: ` `,
-    `4`: `0`,
-    `5`: `@`,
-    `6`: P,
-    `7`: BACKTICK,
-    `8`: p_
+    `1`: Null,
+    `2`: Startofheading,
+    `3`: Startoftext,
+    `4`: Endoftext,
+    `5`: Endoftransmission,
+    `6`: Enquiry,
+    `7`: Acknowledge,
+    `8`: Bell
   ): Anon_ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])

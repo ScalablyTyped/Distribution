@@ -33,7 +33,8 @@ trait Localization extends js.Object {
   /*The function (described in detail above) that returns the translated string for a given id, substituting the
     * given arguments as needed.
     */
-  def `_`(id: Double, message: String, args: js.Any*): Unit = js.native
+  @JSName("_")
+  def _underscore(id: Double, message: String, args: js.Any*): Unit = js.native
   /*Defines (or adds to) the translation data for the given locale and domain. The def is the definition to be
     * merged with the current translation data (if it exists) or to be used as the complete definition (if not).
     */

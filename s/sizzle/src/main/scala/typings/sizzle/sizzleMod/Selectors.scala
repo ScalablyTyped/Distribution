@@ -1,19 +1,14 @@
 package typings.sizzle.sizzleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sizzle.sizzleMod.Selectors.AttrHandleFunction
 import typings.sizzle.sizzleMod.Selectors.AttrHandleFunctions
 import typings.sizzle.sizzleMod.Selectors.CreatePseudoFunction
-import typings.sizzle.sizzleMod.Selectors.FilterFunction
 import typings.sizzle.sizzleMod.Selectors.FilterFunctions
-import typings.sizzle.sizzleMod.Selectors.FindFunction
 import typings.sizzle.sizzleMod.Selectors.FindFunctions
 import typings.sizzle.sizzleMod.Selectors.Matches
-import typings.sizzle.sizzleMod.Selectors.PreFilterFunction
 import typings.sizzle.sizzleMod.Selectors.PreFilterFunctions
 import typings.sizzle.sizzleMod.Selectors.PseudoFunction
 import typings.sizzle.sizzleMod.Selectors.PseudoFunctions
-import typings.sizzle.sizzleMod.Selectors.SetFilterFunction
 import typings.sizzle.sizzleMod.Selectors.SetFilterFunctions
 import typings.std.Document
 import typings.std.Element

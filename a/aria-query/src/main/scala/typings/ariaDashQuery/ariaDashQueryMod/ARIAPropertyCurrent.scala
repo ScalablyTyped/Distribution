@@ -1,14 +1,14 @@
 package typings.ariaDashQuery.ariaDashQueryMod
 
-import typings.ariaDashQuery.ariaDashQueryNumbers.`false`
+import typings.ariaDashQuery.ariaDashQueryStrings.`false`
 import typings.ariaDashQuery.ariaDashQueryStrings.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.ariaDashQuery.ariaDashQueryNumbers.`true`
-  - typings.ariaDashQuery.ariaDashQueryNumbers.`false`
+  - typings.ariaDashQuery.ariaDashQueryBooleans.`true`
+  - typings.ariaDashQuery.ariaDashQueryBooleans.`false`
   - typings.ariaDashQuery.ariaDashQueryStrings.page
   - typings.ariaDashQuery.ariaDashQueryStrings.step
   - typings.ariaDashQuery.ariaDashQueryStrings.location
@@ -25,10 +25,10 @@ object ARIAPropertyCurrent {
   @scala.inline
   def date: typings.ariaDashQuery.ariaDashQueryStrings.date = this.cast("date")
   @scala.inline
-  def `false`: typings.ariaDashQuery.ariaDashQueryStrings.`false` = this.cast("false")
+  def `false`: typings.ariaDashQuery.ariaDashQueryBooleans.`false` = this.cast(false)
   @JSName("false")
   @scala.inline
-  def false_false: `false` = this.cast(false)
+  def false_false: `false` = this.cast("false")
   @scala.inline
   def location: typings.ariaDashQuery.ariaDashQueryStrings.location = this.cast("location")
   @scala.inline
@@ -38,7 +38,7 @@ object ARIAPropertyCurrent {
   @scala.inline
   def time: typings.ariaDashQuery.ariaDashQueryStrings.time = this.cast("time")
   @scala.inline
-  def `true`: typings.ariaDashQuery.ariaDashQueryNumbers.`true` = this.cast(true)
+  def `true`: typings.ariaDashQuery.ariaDashQueryBooleans.`true` = this.cast(true)
   @JSName("true")
   @scala.inline
   def true_true: `true` = this.cast("true")

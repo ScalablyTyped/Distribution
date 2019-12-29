@@ -1,6 +1,6 @@
 package typings.mongoose
 
-import typings.mongoose.mongooseNumbers.`true`
+import typings.mongoose.mongooseBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.ServerXMLHTTP60")
 @js.native
 class ServerXMLHTTP60 protected () extends js.Object {
-  var `MSXML2.ServerXMLHTTP60_typekey`: ServerXMLHTTP60 = js.native
+  @JSName("MSXML2.ServerXMLHTTP60_typekey")
+  var MSXML2DotServerXMLHTTP60_typekey: ServerXMLHTTP60 = js.native
   /** Register a complete event handler */
   val onreadystatechange: js.Any = js.native
   /** Get ready state */

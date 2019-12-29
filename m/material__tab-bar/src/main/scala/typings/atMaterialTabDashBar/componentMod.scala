@@ -2,7 +2,6 @@ package typings.atMaterialTabDashBar
 
 import typings.atMaterialBase.componentMod.MDCComponent
 import typings.atMaterialBase.foundationMod.default
-import typings.atMaterialTabDashBar.componentMod.MDCTabBar
 import typings.atMaterialTabDashBar.foundationMod.MDCTabBarFoundation
 import typings.atMaterialTabDashScroller.componentMod.MDCTabScrollerFactory
 import typings.std.Element

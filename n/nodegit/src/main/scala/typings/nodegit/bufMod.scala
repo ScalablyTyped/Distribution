@@ -1,7 +1,6 @@
 package typings.nodegit
 
 import typings.node.Buffer
-import typings.nodegit.bufMod.Buf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

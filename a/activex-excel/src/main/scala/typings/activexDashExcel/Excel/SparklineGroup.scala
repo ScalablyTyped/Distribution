@@ -14,7 +14,8 @@ class SparklineGroup protected () extends js.Object {
   var DateRange: String = js.native
   var DisplayBlanksAs: XlDisplayBlanksAs = js.native
   var DisplayHidden: Boolean = js.native
-  var `Excel.SparklineGroup_typekey`: SparklineGroup = js.native
+  @JSName("Excel.SparklineGroup_typekey")
+  var ExcelDotSparklineGroup_typekey: SparklineGroup = js.native
   var LineWeight: js.Any = js.native
   @JSName("Location")
   var Location_Original: Range = js.native

@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.webservices
 
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.distGenWebservicesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +25,6 @@ abstract class PublishedServiceBase protected ()
 @js.native
 object PublishedServiceBase extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenWebservicesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

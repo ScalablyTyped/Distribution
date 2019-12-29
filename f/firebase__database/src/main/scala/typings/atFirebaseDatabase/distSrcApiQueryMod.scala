@@ -1,9 +1,8 @@
 package typings.atFirebaseDatabase
 
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseDatabase.distSrcApiDataSnapshotMod.DataSnapshot
-import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
-import typings.atFirebaseDatabase.distSrcApiQueryMod.SnapshotCallback
 import typings.atFirebaseDatabase.distSrcApiReferenceMod.Reference
 import typings.atFirebaseDatabase.distSrcCoreRepoMod.Repo
 import typings.atFirebaseDatabase.distSrcCoreUtilPathMod.Path
@@ -22,7 +21,6 @@ object distSrcApiQueryMod extends js.Object {
     var orderByCalled_ : js.Any = js.native
     var path: Path = js.native
     var queryParams_ : js.Any = js.native
-    val ref: Reference = js.native
     var repo: Repo = js.native
     /**
       * Validates that no other order by call has been made
@@ -215,6 +213,7 @@ object distSrcApiQueryMod extends js.Object {
       * @return {!Object}
       */
     def queryObject(): js.Object = js.native
+    def ref(): Reference = js.native
     /**
       * @param {number|string|boolean|null} value
       * @param {?string=} name
@@ -234,7 +233,6 @@ object distSrcApiQueryMod extends js.Object {
   /* static members */
   @js.native
   object Query extends js.Object {
-    var __referenceConstructor: js.Any = js.native
     /**
       * Helper used by .on and .once to extract the context and or cancel arguments.
       * @param {!string} fnName The function name (on or once)
@@ -256,6 +254,8 @@ object distSrcApiQueryMod extends js.Object {
       * @private
       */
     var validateQueryEndpoints_ : js.Any = js.native
+    def __referenceConstructor(): Instantiable2[/* repo */ Repo, /* path */ Path, Query] = js.native
+    def __referenceConstructor(`val`: Instantiable2[/* repo */ Repo, /* path */ Path, Query]): js.Any = js.native
   }
   
   type SnapshotCallback = js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]

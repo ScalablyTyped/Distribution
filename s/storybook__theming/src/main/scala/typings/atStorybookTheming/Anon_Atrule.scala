@@ -5,36 +5,66 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Atrule extends js.Object {
-  var `&.atrule`: Anon_ColorString
-  var `&.attr-name`: Anon_ColorString
-  var `&.attr-value`: Anon_ColorString
-  var `&.bold`: Anon_FontWeight
-  var `&.boolean`: Anon_ColorString
-  var `&.cdata`: Anon_Color
-  var `&.class-name`: Anon_ColorString
-  var `&.comment`: Anon_Color
-  var `&.constant`: Anon_ColorString
-  var `&.deleted`: Anon_ColorString
-  var `&.directive.tag .tag`: Anon_BackgroundColor
-  var `&.doctype`: Anon_Color
-  var `&.entity`: Anon_ColorString
-  var `&.function`: Anon_ColorString
-  var `&.important`: Anon_FontWeight
-  var `&.inserted`: Anon_ColorString
-  var `&.italic`: Anon_FontStyle
-  var `&.keyword`: Anon_ColorString
-  var `&.number`: Anon_ColorString
-  var `&.operator`: Anon_ColorString
-  var `&.prolog`: Anon_Color
-  var `&.property`: Anon_ColorString
-  var `&.punctuation`: Anon_ColorString
-  var `&.regex`: Anon_ColorString
-  var `&.selector`: Anon_ColorString
-  var `&.string`: Anon_ColorString
-  var `&.symbol`: Anon_ColorString
-  var `&.tag`: Anon_ColorString
-  var `&.url`: Anon_ColorString
-  var `&.variable`: Anon_ColorString
+  @JSName("&.atrule")
+  var AmpersandDotatrule: Anon_ColorString
+  @JSName("&.attr-name")
+  var `AmpersandDotattr-name`: Anon_ColorString
+  @JSName("&.attr-value")
+  var `AmpersandDotattr-value`: Anon_ColorString
+  @JSName("&.bold")
+  var AmpersandDotbold: Anon_FontWeight
+  @JSName("&.boolean")
+  var AmpersandDotboolean: Anon_ColorString
+  @JSName("&.cdata")
+  var AmpersandDotcdata: Anon_Color
+  @JSName("&.class-name")
+  var `AmpersandDotclass-name`: Anon_ColorString
+  @JSName("&.comment")
+  var AmpersandDotcomment: Anon_Color
+  @JSName("&.constant")
+  var AmpersandDotconstant: Anon_ColorString
+  @JSName("&.deleted")
+  var AmpersandDotdeleted: Anon_ColorString
+  @JSName("&.directive.tag .tag")
+  var `AmpersandDotdirectiveDottag Dottag`: Anon_BackgroundColor
+  @JSName("&.doctype")
+  var AmpersandDotdoctype: Anon_Color
+  @JSName("&.entity")
+  var AmpersandDotentity: Anon_ColorString
+  @JSName("&.function")
+  var AmpersandDotfunction: Anon_ColorString
+  @JSName("&.important")
+  var AmpersandDotimportant: Anon_FontWeight
+  @JSName("&.inserted")
+  var AmpersandDotinserted: Anon_ColorString
+  @JSName("&.italic")
+  var AmpersandDotitalic: Anon_FontStyle
+  @JSName("&.keyword")
+  var AmpersandDotkeyword: Anon_ColorString
+  @JSName("&.number")
+  var AmpersandDotnumber: Anon_ColorString
+  @JSName("&.operator")
+  var AmpersandDotoperator: Anon_ColorString
+  @JSName("&.prolog")
+  var AmpersandDotprolog: Anon_Color
+  @JSName("&.property")
+  var AmpersandDotproperty: Anon_ColorString
+  @JSName("&.punctuation")
+  var AmpersandDotpunctuation: Anon_ColorString
+  @JSName("&.regex")
+  var AmpersandDotregex: Anon_ColorString
+  @JSName("&.selector")
+  var AmpersandDotselector: Anon_ColorString
+  @JSName("&.string")
+  var AmpersandDotstring: Anon_ColorString
+  @JSName("&.symbol")
+  var AmpersandDotsymbol: Anon_ColorString
+  @JSName("&.tag")
+  var AmpersandDottag: Anon_ColorString
+  @JSName("&.url")
+  var AmpersandDoturl: Anon_ColorString
+  @JSName("&.variable")
+  var AmpersandDotvariable: Anon_ColorString
   var WebkitFontSmoothing: String
   var fontFamily: String
 }
@@ -42,70 +72,70 @@ trait Anon_Atrule extends js.Object {
 object Anon_Atrule {
   @scala.inline
   def apply(
-    `&.atrule`: Anon_ColorString,
-    `&.attr-name`: Anon_ColorString,
-    `&.attr-value`: Anon_ColorString,
-    `&.bold`: Anon_FontWeight,
-    `&.boolean`: Anon_ColorString,
-    `&.cdata`: Anon_Color,
-    `&.class-name`: Anon_ColorString,
-    `&.comment`: Anon_Color,
-    `&.constant`: Anon_ColorString,
-    `&.deleted`: Anon_ColorString,
-    `&.directive.tag .tag`: Anon_BackgroundColor,
-    `&.doctype`: Anon_Color,
-    `&.entity`: Anon_ColorString,
-    `&.function`: Anon_ColorString,
-    `&.important`: Anon_FontWeight,
-    `&.inserted`: Anon_ColorString,
-    `&.italic`: Anon_FontStyle,
-    `&.keyword`: Anon_ColorString,
-    `&.number`: Anon_ColorString,
-    `&.operator`: Anon_ColorString,
-    `&.prolog`: Anon_Color,
-    `&.property`: Anon_ColorString,
-    `&.punctuation`: Anon_ColorString,
-    `&.regex`: Anon_ColorString,
-    `&.selector`: Anon_ColorString,
-    `&.string`: Anon_ColorString,
-    `&.symbol`: Anon_ColorString,
-    `&.tag`: Anon_ColorString,
-    `&.url`: Anon_ColorString,
-    `&.variable`: Anon_ColorString,
+    AmpersandDotatrule: Anon_ColorString,
+    `AmpersandDotattr-name`: Anon_ColorString,
+    `AmpersandDotattr-value`: Anon_ColorString,
+    AmpersandDotbold: Anon_FontWeight,
+    AmpersandDotboolean: Anon_ColorString,
+    AmpersandDotcdata: Anon_Color,
+    `AmpersandDotclass-name`: Anon_ColorString,
+    AmpersandDotcomment: Anon_Color,
+    AmpersandDotconstant: Anon_ColorString,
+    AmpersandDotdeleted: Anon_ColorString,
+    `AmpersandDotdirectiveDottag Dottag`: Anon_BackgroundColor,
+    AmpersandDotdoctype: Anon_Color,
+    AmpersandDotentity: Anon_ColorString,
+    AmpersandDotfunction: Anon_ColorString,
+    AmpersandDotimportant: Anon_FontWeight,
+    AmpersandDotinserted: Anon_ColorString,
+    AmpersandDotitalic: Anon_FontStyle,
+    AmpersandDotkeyword: Anon_ColorString,
+    AmpersandDotnumber: Anon_ColorString,
+    AmpersandDotoperator: Anon_ColorString,
+    AmpersandDotprolog: Anon_Color,
+    AmpersandDotproperty: Anon_ColorString,
+    AmpersandDotpunctuation: Anon_ColorString,
+    AmpersandDotregex: Anon_ColorString,
+    AmpersandDotselector: Anon_ColorString,
+    AmpersandDotstring: Anon_ColorString,
+    AmpersandDotsymbol: Anon_ColorString,
+    AmpersandDottag: Anon_ColorString,
+    AmpersandDoturl: Anon_ColorString,
+    AmpersandDotvariable: Anon_ColorString,
     WebkitFontSmoothing: String,
     fontFamily: String
   ): Anon_Atrule = {
     val __obj = js.Dynamic.literal(WebkitFontSmoothing = WebkitFontSmoothing.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.atrule")(`&.atrule`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.attr-name")(`&.attr-name`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.attr-value")(`&.attr-value`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.bold")(`&.bold`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.boolean")(`&.boolean`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.cdata")(`&.cdata`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.class-name")(`&.class-name`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.comment")(`&.comment`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.constant")(`&.constant`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.deleted")(`&.deleted`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.directive.tag .tag")(`&.directive.tag .tag`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.doctype")(`&.doctype`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.entity")(`&.entity`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.function")(`&.function`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.important")(`&.important`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.inserted")(`&.inserted`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.italic")(`&.italic`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.keyword")(`&.keyword`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.number")(`&.number`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.operator")(`&.operator`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.prolog")(`&.prolog`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.property")(`&.property`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.punctuation")(`&.punctuation`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.regex")(`&.regex`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.selector")(`&.selector`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.string")(`&.string`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.symbol")(`&.symbol`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.tag")(`&.tag`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.url")(`&.url`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.variable")(`&.variable`.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.atrule")(AmpersandDotatrule.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.attr-name")(`AmpersandDotattr-name`.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.attr-value")(`AmpersandDotattr-value`.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.bold")(AmpersandDotbold.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.boolean")(AmpersandDotboolean.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.cdata")(AmpersandDotcdata.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.class-name")(`AmpersandDotclass-name`.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.comment")(AmpersandDotcomment.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.constant")(AmpersandDotconstant.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.deleted")(AmpersandDotdeleted.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.directive.tag .tag")(`AmpersandDotdirectiveDottag Dottag`.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.doctype")(AmpersandDotdoctype.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.entity")(AmpersandDotentity.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.function")(AmpersandDotfunction.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.important")(AmpersandDotimportant.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.inserted")(AmpersandDotinserted.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.italic")(AmpersandDotitalic.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.keyword")(AmpersandDotkeyword.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.number")(AmpersandDotnumber.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.operator")(AmpersandDotoperator.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.prolog")(AmpersandDotprolog.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.property")(AmpersandDotproperty.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.punctuation")(AmpersandDotpunctuation.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.regex")(AmpersandDotregex.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.selector")(AmpersandDotselector.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.string")(AmpersandDotstring.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.symbol")(AmpersandDotsymbol.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.tag")(AmpersandDottag.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.url")(AmpersandDoturl.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.variable")(AmpersandDotvariable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Atrule]
   }
 }

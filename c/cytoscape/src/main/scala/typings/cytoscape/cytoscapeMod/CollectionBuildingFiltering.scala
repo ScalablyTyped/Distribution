@@ -11,22 +11,24 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
-  @JSName("!")
-  var `!_Original`: CollectionBuildingDifferenceFunc = js.native
   @JSName("&")
-  var `&_Original`: CollectionBuildingIntersectionFunc = js.native
-  @JSName("(+)")
-  var `(+)_Original`: CollectionSymmetricDifferenceFunc = js.native
-  @JSName("(-)")
-  var `(-)_Original`: CollectionSymmetricDifferenceFunc = js.native
-  @JSName("+")
-  var `+_Original`: CollectionBuildingUnionFunc = js.native
-  @JSName("-")
-  var `-_Original`: CollectionBuildingDifferenceFunc = js.native
-  @JSName(".")
-  var `._Original`: CollectionBuildingIntersectionFunc = js.native
+  var Ampersand_Original: CollectionBuildingIntersectionFunc = js.native
   @JSName("\\")
-  var `\\_Original`: CollectionBuildingDifferenceFunc = js.native
+  var Backslash_Original: CollectionBuildingDifferenceFunc = js.native
+  @JSName(".")
+  var Dot_Original: CollectionBuildingIntersectionFunc = js.native
+  @JSName("!")
+  var Exclamationmark_Original: CollectionBuildingDifferenceFunc = js.native
+  @JSName("(-)")
+  var `Leftparenthesis-Rightparenthesis_Original`: CollectionSymmetricDifferenceFunc = js.native
+  @JSName("(+)")
+  var LeftparenthesisPlussignRightparenthesis_Original: CollectionSymmetricDifferenceFunc = js.native
+  @JSName("+")
+  var Plussign_Original: CollectionBuildingUnionFunc = js.native
+  @JSName("|")
+  var Verticalline_Original: CollectionBuildingUnionFunc = js.native
+  @JSName("-")
+  var _dash_Original: CollectionBuildingDifferenceFunc = js.native
   @JSName("add")
   var add_Original: CollectionBuildingUnionFunc = js.native
   @JSName("and")
@@ -74,35 +76,54 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
   var union_Original: CollectionBuildingUnionFunc = js.native
   @JSName("xor")
   var xor_Original: CollectionSymmetricDifferenceFunc = js.native
-  @JSName("|")
-  var `|_Original`: CollectionBuildingUnionFunc = js.native
-  def `!`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `!`(eles: Selector): CollectionReturnValue = js.native
   /**
     * Get an element in the collection from its ID in a very performant way.
     * @param id The ID of the element to get.
     */
   @JSName("$id")
   def $id(id: String): TOut = js.native
-  def `&`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `&`(eles: Selector): CollectionReturnValue = js.native
-  def `(+)`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `(+)`(eles: Selector): CollectionReturnValue = js.native
-  def `(-)`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `(-)`(eles: Selector): CollectionReturnValue = js.native
-  def `+`(eles: js.Array[CollectionArgument]): CollectionReturnValue = js.native
-  def `+`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `+`(eles: Selector): CollectionReturnValue = js.native
-  @JSName("-")
-  def `-_`(eles: CollectionArgument): CollectionReturnValue = js.native
-  @JSName("-")
-  def `-_`(eles: Selector): CollectionReturnValue = js.native
-  def `.`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `.`(eles: Selector): CollectionReturnValue = js.native
   def apply(eles: CollectionArgument): CollectionReturnValue = js.native
   def apply(eles: Selector): CollectionReturnValue = js.native
-  def `\\`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `\\`(eles: Selector): CollectionReturnValue = js.native
+  @JSName("&")
+  def Ampersand(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("&")
+  def Ampersand(eles: Selector): CollectionReturnValue = js.native
+  @JSName("\\")
+  def Backslash(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("\\")
+  def Backslash(eles: Selector): CollectionReturnValue = js.native
+  @JSName(".")
+  def Dot(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName(".")
+  def Dot(eles: Selector): CollectionReturnValue = js.native
+  @JSName("!")
+  def Exclamationmark(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("!")
+  def Exclamationmark(eles: Selector): CollectionReturnValue = js.native
+  @JSName("(-)")
+  def `Leftparenthesis-Rightparenthesis`(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("(-)")
+  def `Leftparenthesis-Rightparenthesis`(eles: Selector): CollectionReturnValue = js.native
+  @JSName("(+)")
+  def LeftparenthesisPlussignRightparenthesis(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("(+)")
+  def LeftparenthesisPlussignRightparenthesis(eles: Selector): CollectionReturnValue = js.native
+  @JSName("+")
+  def Plussign(eles: js.Array[CollectionArgument]): CollectionReturnValue = js.native
+  @JSName("+")
+  def Plussign(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("+")
+  def Plussign(eles: Selector): CollectionReturnValue = js.native
+  @JSName("|")
+  def Verticalline(eles: js.Array[CollectionArgument]): CollectionReturnValue = js.native
+  @JSName("|")
+  def Verticalline(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("|")
+  def Verticalline(eles: Selector): CollectionReturnValue = js.native
+  @JSName("-")
+  def _dash(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("-")
+  def _dash(eles: Selector): CollectionReturnValue = js.native
   def abscomp(): CollectionReturnValue = js.native
   /**
     * Get all elements in the graph that are not in the calling collection.
@@ -327,8 +348,5 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
   def unmerge(eles: Selector): this.type = js.native
   def xor(eles: CollectionArgument): CollectionReturnValue = js.native
   def xor(eles: Selector): CollectionReturnValue = js.native
-  def `|`(eles: js.Array[CollectionArgument]): CollectionReturnValue = js.native
-  def `|`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `|`(eles: Selector): CollectionReturnValue = js.native
 }
 

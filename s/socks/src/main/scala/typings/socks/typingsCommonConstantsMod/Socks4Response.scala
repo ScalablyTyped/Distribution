@@ -1,10 +1,6 @@
 package typings.socks.typingsCommonConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.socks.typingsCommonConstantsMod.Socks4Response.Failed
-import typings.socks.typingsCommonConstantsMod.Socks4Response.Granted
-import typings.socks.typingsCommonConstantsMod.Socks4Response.Rejected
-import typings.socks.typingsCommonConstantsMod.Socks4Response.RejectedIdent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/pulumi", "ComponentResource")
 @js.native
-class ComponentResource protected ()
-  extends typings.atPulumiPulumi.resourceMod.ComponentResource {
+class ComponentResource[TData] protected ()
+  extends typings.atPulumiPulumi.resourceMod.ComponentResource[TData] {
   /**
     * Creates and registers a new component resource.  [type] is the fully qualified type token and
     * [name] is the "name" part to use in creating a stable and globally unique URN for the object.
@@ -19,13 +19,12 @@ class ComponentResource protected ()
     *
     * @param t The type of the resource.
     * @param name The _unique_ name of the resource.
-    * @param unused [Deprecated].  Component resources do not communicate or store their properties
-    *               with the Pulumi engine.
+    * @param args Information passed to [initialize] method.
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(`type`: String, name: String) = this()
-  def this(`type`: String, name: String, unused: Inputs) = this()
-  def this(`type`: String, name: String, unused: Inputs, opts: ComponentResourceOptions) = this()
+  def this(`type`: String, name: String, args: Inputs) = this()
+  def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions) = this()
 }
 
 /* static members */
@@ -36,6 +35,6 @@ object ComponentResource extends js.Object {
     * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
     * multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = js.native
 }
 

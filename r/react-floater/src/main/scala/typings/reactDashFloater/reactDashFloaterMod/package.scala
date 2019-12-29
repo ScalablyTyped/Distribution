@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 package object reactDashFloaterMod {
   import typings.react.reactMod.Component
 
-  type ReactFloater = Component[Props, js.Object, js.Any]
+  type ReactFloater = Component[PropsWithComponent | PropsWithContent, js.Object, js.Any]
 }

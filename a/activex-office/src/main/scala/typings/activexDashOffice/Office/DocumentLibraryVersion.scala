@@ -14,7 +14,8 @@ class DocumentLibraryVersion protected () extends js.Object {
   val Index: Double = js.native
   val Modified: VarDate = js.native
   val ModifiedBy: String = js.native
-  var `Office.DocumentLibraryVersion_typekey`: DocumentLibraryVersion = js.native
+  @JSName("Office.DocumentLibraryVersion_typekey")
+  var OfficeDotDocumentLibraryVersion_typekey: DocumentLibraryVersion = js.native
   val Parent: js.Any = js.native
   def Delete(): Unit = js.native
   def Open(): js.Any = js.native

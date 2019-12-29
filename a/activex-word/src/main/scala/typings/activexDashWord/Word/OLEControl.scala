@@ -14,7 +14,8 @@ class OLEControl protected () extends js.Object {
   var Name: String = js.native
   var Top: Double = js.native
   var Width: Double = js.native
-  var `Word.OLEControl_typekey`: OLEControl = js.native
+  @JSName("Word.OLEControl_typekey")
+  var WordDotOLEControl_typekey: OLEControl = js.native
   def Activate(): Unit = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native

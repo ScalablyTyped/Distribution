@@ -1,8 +1,6 @@
 package typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.HDirection.Left
-import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.HDirection.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

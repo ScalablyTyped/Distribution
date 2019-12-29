@@ -1,8 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.MarkerTag.Deprecated
-import typings.monacoDashEditor.monacoDashEditorMod.MarkerTag.Unnecessary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

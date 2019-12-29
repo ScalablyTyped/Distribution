@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.DeploymentGroupExpands.Machines
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.DeploymentGroupExpands.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

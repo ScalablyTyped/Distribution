@@ -6,6 +6,7 @@ import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenConstantsMod.constants.Constant
 import typings.mendixmodelsdk.distGenDatasetsMod.datasets.DataSetColumn
 import typings.mendixmodelsdk.distGenDatasetsMod.datasets.DataSetParameter
+import typings.mendixmodelsdk.distGenDatatypesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.DocumentTemplateParameter
 import typings.mendixmodelsdk.distGenImportmappingsMod.importmappings.ImportMapping
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.ValueMappingElement
@@ -46,7 +47,7 @@ class DecimalType protected ()
 @js.native
 object DecimalType extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDatatypesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new DecimalType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

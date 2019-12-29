@@ -1,16 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.All
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.BatchedCI
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.CheckInShelveset
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.IndividualCI
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.Manual
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.None
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.PullRequest
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.Triggered
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.UserCreated
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildReason.ValidateShelveset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

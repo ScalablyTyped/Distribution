@@ -2,6 +2,7 @@ package typings.reactDashScrollDashIntoDashViewDashIfDashNeeded.reactDashScrollD
 
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.ClassAttributes
+import typings.scrollDashIntoDashViewDashIfDashNeeded.scrollDashIntoDashViewDashIfDashNeededMod.Options
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +15,7 @@ trait ReactScrollIntoViewIfNeededProps
   var elementType: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
-  var options: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.Any
-  ] = js.undefined
+  var options: js.UndefOr[Options[_]] = js.undefined
 }
 
 object ReactScrollIntoViewIfNeededProps {
@@ -26,7 +25,7 @@ object ReactScrollIntoViewIfNeededProps {
     ClassAttributes: ClassAttributes[HTMLElement] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     elementType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
-    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.Any = null
+    options: Options[_] = null
   ): ReactScrollIntoViewIfNeededProps = {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)

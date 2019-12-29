@@ -10,66 +10,6 @@ import scala.scalajs.js.annotation._
 
 object webpackStrings {
   @js.native
-  sealed trait `#@cheap-eval-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@cheap-module-eval-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@cheap-module-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@cheap-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@eval` extends _Devtool
-  
-  @js.native
-  sealed trait `#@eval-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@hidden-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@inline-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@nosources-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#@source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#cheap-eval-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#cheap-module-eval-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#cheap-module-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#cheap-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#eval` extends _Devtool
-  
-  @js.native
-  sealed trait `#eval-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#hidden-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#inline-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#nosources-source-map` extends _Devtool
-  
-  @js.native
-  sealed trait `#source-map` extends _Devtool
-  
-  @js.native
   sealed trait `@cheap-eval-source-map` extends _Devtool
   
   @js.native
@@ -101,6 +41,66 @@ object webpackStrings {
   
   @js.native
   sealed trait AuxiliaryCommentObject extends js.Object
+  
+  @js.native
+  sealed trait `Numbersign@cheap-eval-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@cheap-module-eval-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@cheap-module-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@cheap-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@eval` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@eval-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@hidden-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@inline-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@nosources-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersign@source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersigncheap-eval-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersigncheap-module-eval-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersigncheap-module-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersigncheap-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait Numbersigneval extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersigneval-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersignhidden-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersigninline-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersignnosources-source-map` extends _Devtool
+  
+  @js.native
+  sealed trait `Numbersignsource-map` extends _Devtool
   
   @js.native
   sealed trait `accepted harmony modules` extends ReasonType
@@ -244,19 +244,19 @@ object webpackStrings {
   sealed trait `hidden-source-map` extends _Devtool
   
   @js.native
-  sealed trait `import()` extends ReasonType
+  sealed trait importLeftparenthesisRightparenthesis extends ReasonType
   
   @js.native
-  sealed trait `import() context development` extends ReasonType
+  sealed trait `importLeftparenthesisRightparenthesis context development` extends ReasonType
   
   @js.native
-  sealed trait `import() context production` extends ReasonType
+  sealed trait `importLeftparenthesisRightparenthesis context production` extends ReasonType
   
   @js.native
-  sealed trait `import() eager` extends ReasonType
+  sealed trait `importLeftparenthesisRightparenthesis eager` extends ReasonType
   
   @js.native
-  sealed trait `import() weak` extends ReasonType
+  sealed trait `importLeftparenthesisRightparenthesis weak` extends ReasonType
   
   @js.native
   sealed trait initial extends js.Object
@@ -271,13 +271,13 @@ object webpackStrings {
   sealed trait `inline-source-map` extends _Devtool
   
   @js.native
-  sealed trait `javascript/auto` extends js.Object
+  sealed trait javascriptSlashauto extends js.Object
   
   @js.native
-  sealed trait `javascript/dynamic` extends js.Object
+  sealed trait javascriptSlashdynamic extends js.Object
   
   @js.native
-  sealed trait `javascript/esm` extends js.Object
+  sealed trait javascriptSlashesm extends js.Object
   
   @js.native
   sealed trait json extends js.Object
@@ -304,10 +304,10 @@ object webpackStrings {
   sealed trait module extends js.Object
   
   @js.native
-  sealed trait moduleDOThotDOTaccept extends ReasonType
+  sealed trait moduleDothotDotaccept extends ReasonType
   
   @js.native
-  sealed trait moduleDOThotDOTdecline extends ReasonType
+  sealed trait moduleDothotDotdecline extends ReasonType
   
   @js.native
   sealed trait `multi entry` extends ReasonType
@@ -352,19 +352,19 @@ object webpackStrings {
   sealed trait production extends js.Object
   
   @js.native
-  sealed trait requireDOTcontext extends ReasonType
+  sealed trait requireDotcontext extends ReasonType
   
   @js.native
-  sealed trait requireDOTensure extends ReasonType
+  sealed trait requireDotensure extends ReasonType
   
   @js.native
-  sealed trait `requireDOTensure item` extends ReasonType
+  sealed trait `requireDotensure item` extends ReasonType
   
   @js.native
-  sealed trait requireDOTinclude extends ReasonType
+  sealed trait requireDotinclude extends ReasonType
   
   @js.native
-  sealed trait requireDOTresolve extends ReasonType
+  sealed trait requireDotresolve extends ReasonType
   
   @js.native
   sealed trait single extends js.Object
@@ -379,7 +379,7 @@ object webpackStrings {
   sealed trait `source-map` extends _Devtool
   
   @js.native
-  sealed trait `text/javascript` extends js.Object
+  sealed trait textSlashjavascript extends js.Object
   
   @js.native
   sealed trait `this` extends LibraryTarget
@@ -409,7 +409,7 @@ object webpackStrings {
   sealed trait web extends js.Object
   
   @js.native
-  sealed trait `webassembly/experimental` extends js.Object
+  sealed trait webassemblySlashexperimental extends js.Object
   
   @js.native
   sealed trait webworker extends js.Object
@@ -417,46 +417,6 @@ object webpackStrings {
   @js.native
   sealed trait window extends LibraryTarget
   
-  @scala.inline
-  def `#@cheap-eval-source-map`: `#@cheap-eval-source-map` = "#@cheap-eval-source-map".asInstanceOf[`#@cheap-eval-source-map`]
-  @scala.inline
-  def `#@cheap-module-eval-source-map`: `#@cheap-module-eval-source-map` = "#@cheap-module-eval-source-map".asInstanceOf[`#@cheap-module-eval-source-map`]
-  @scala.inline
-  def `#@cheap-module-source-map`: `#@cheap-module-source-map` = "#@cheap-module-source-map".asInstanceOf[`#@cheap-module-source-map`]
-  @scala.inline
-  def `#@cheap-source-map`: `#@cheap-source-map` = "#@cheap-source-map".asInstanceOf[`#@cheap-source-map`]
-  @scala.inline
-  def `#@eval`: `#@eval` = "#@eval".asInstanceOf[`#@eval`]
-  @scala.inline
-  def `#@eval-source-map`: `#@eval-source-map` = "#@eval-source-map".asInstanceOf[`#@eval-source-map`]
-  @scala.inline
-  def `#@hidden-source-map`: `#@hidden-source-map` = "#@hidden-source-map".asInstanceOf[`#@hidden-source-map`]
-  @scala.inline
-  def `#@inline-source-map`: `#@inline-source-map` = "#@inline-source-map".asInstanceOf[`#@inline-source-map`]
-  @scala.inline
-  def `#@nosources-source-map`: `#@nosources-source-map` = "#@nosources-source-map".asInstanceOf[`#@nosources-source-map`]
-  @scala.inline
-  def `#@source-map`: `#@source-map` = "#@source-map".asInstanceOf[`#@source-map`]
-  @scala.inline
-  def `#cheap-eval-source-map`: `#cheap-eval-source-map` = "#cheap-eval-source-map".asInstanceOf[`#cheap-eval-source-map`]
-  @scala.inline
-  def `#cheap-module-eval-source-map`: `#cheap-module-eval-source-map` = "#cheap-module-eval-source-map".asInstanceOf[`#cheap-module-eval-source-map`]
-  @scala.inline
-  def `#cheap-module-source-map`: `#cheap-module-source-map` = "#cheap-module-source-map".asInstanceOf[`#cheap-module-source-map`]
-  @scala.inline
-  def `#cheap-source-map`: `#cheap-source-map` = "#cheap-source-map".asInstanceOf[`#cheap-source-map`]
-  @scala.inline
-  def `#eval`: `#eval` = "#eval".asInstanceOf[`#eval`]
-  @scala.inline
-  def `#eval-source-map`: `#eval-source-map` = "#eval-source-map".asInstanceOf[`#eval-source-map`]
-  @scala.inline
-  def `#hidden-source-map`: `#hidden-source-map` = "#hidden-source-map".asInstanceOf[`#hidden-source-map`]
-  @scala.inline
-  def `#inline-source-map`: `#inline-source-map` = "#inline-source-map".asInstanceOf[`#inline-source-map`]
-  @scala.inline
-  def `#nosources-source-map`: `#nosources-source-map` = "#nosources-source-map".asInstanceOf[`#nosources-source-map`]
-  @scala.inline
-  def `#source-map`: `#source-map` = "#source-map".asInstanceOf[`#source-map`]
   @scala.inline
   def `@cheap-eval-source-map`: `@cheap-eval-source-map` = "@cheap-eval-source-map".asInstanceOf[`@cheap-eval-source-map`]
   @scala.inline
@@ -479,6 +439,46 @@ object webpackStrings {
   def `@source-map`: `@source-map` = "@source-map".asInstanceOf[`@source-map`]
   @scala.inline
   def AuxiliaryCommentObject: AuxiliaryCommentObject = "AuxiliaryCommentObject".asInstanceOf[AuxiliaryCommentObject]
+  @scala.inline
+  def `Numbersign@cheap-eval-source-map`: `Numbersign@cheap-eval-source-map` = "#@cheap-eval-source-map".asInstanceOf[`Numbersign@cheap-eval-source-map`]
+  @scala.inline
+  def `Numbersign@cheap-module-eval-source-map`: `Numbersign@cheap-module-eval-source-map` = "#@cheap-module-eval-source-map".asInstanceOf[`Numbersign@cheap-module-eval-source-map`]
+  @scala.inline
+  def `Numbersign@cheap-module-source-map`: `Numbersign@cheap-module-source-map` = "#@cheap-module-source-map".asInstanceOf[`Numbersign@cheap-module-source-map`]
+  @scala.inline
+  def `Numbersign@cheap-source-map`: `Numbersign@cheap-source-map` = "#@cheap-source-map".asInstanceOf[`Numbersign@cheap-source-map`]
+  @scala.inline
+  def `Numbersign@eval`: `Numbersign@eval` = "#@eval".asInstanceOf[`Numbersign@eval`]
+  @scala.inline
+  def `Numbersign@eval-source-map`: `Numbersign@eval-source-map` = "#@eval-source-map".asInstanceOf[`Numbersign@eval-source-map`]
+  @scala.inline
+  def `Numbersign@hidden-source-map`: `Numbersign@hidden-source-map` = "#@hidden-source-map".asInstanceOf[`Numbersign@hidden-source-map`]
+  @scala.inline
+  def `Numbersign@inline-source-map`: `Numbersign@inline-source-map` = "#@inline-source-map".asInstanceOf[`Numbersign@inline-source-map`]
+  @scala.inline
+  def `Numbersign@nosources-source-map`: `Numbersign@nosources-source-map` = "#@nosources-source-map".asInstanceOf[`Numbersign@nosources-source-map`]
+  @scala.inline
+  def `Numbersign@source-map`: `Numbersign@source-map` = "#@source-map".asInstanceOf[`Numbersign@source-map`]
+  @scala.inline
+  def `Numbersigncheap-eval-source-map`: `Numbersigncheap-eval-source-map` = "#cheap-eval-source-map".asInstanceOf[`Numbersigncheap-eval-source-map`]
+  @scala.inline
+  def `Numbersigncheap-module-eval-source-map`: `Numbersigncheap-module-eval-source-map` = "#cheap-module-eval-source-map".asInstanceOf[`Numbersigncheap-module-eval-source-map`]
+  @scala.inline
+  def `Numbersigncheap-module-source-map`: `Numbersigncheap-module-source-map` = "#cheap-module-source-map".asInstanceOf[`Numbersigncheap-module-source-map`]
+  @scala.inline
+  def `Numbersigncheap-source-map`: `Numbersigncheap-source-map` = "#cheap-source-map".asInstanceOf[`Numbersigncheap-source-map`]
+  @scala.inline
+  def Numbersigneval: Numbersigneval = "#eval".asInstanceOf[Numbersigneval]
+  @scala.inline
+  def `Numbersigneval-source-map`: `Numbersigneval-source-map` = "#eval-source-map".asInstanceOf[`Numbersigneval-source-map`]
+  @scala.inline
+  def `Numbersignhidden-source-map`: `Numbersignhidden-source-map` = "#hidden-source-map".asInstanceOf[`Numbersignhidden-source-map`]
+  @scala.inline
+  def `Numbersigninline-source-map`: `Numbersigninline-source-map` = "#inline-source-map".asInstanceOf[`Numbersigninline-source-map`]
+  @scala.inline
+  def `Numbersignnosources-source-map`: `Numbersignnosources-source-map` = "#nosources-source-map".asInstanceOf[`Numbersignnosources-source-map`]
+  @scala.inline
+  def `Numbersignsource-map`: `Numbersignsource-map` = "#source-map".asInstanceOf[`Numbersignsource-map`]
   @scala.inline
   def `accepted harmony modules`: `accepted harmony modules` = "accepted harmony modules".asInstanceOf[`accepted harmony modules`]
   @scala.inline
@@ -574,15 +574,15 @@ object webpackStrings {
   @scala.inline
   def `hidden-source-map`: `hidden-source-map` = "hidden-source-map".asInstanceOf[`hidden-source-map`]
   @scala.inline
-  def `import()`: `import()` = "import()".asInstanceOf[`import()`]
+  def importLeftparenthesisRightparenthesis: importLeftparenthesisRightparenthesis = "import()".asInstanceOf[importLeftparenthesisRightparenthesis]
   @scala.inline
-  def `import() context development`: `import() context development` = "import() context development".asInstanceOf[`import() context development`]
+  def `importLeftparenthesisRightparenthesis context development`: `importLeftparenthesisRightparenthesis context development` = "import() context development".asInstanceOf[`importLeftparenthesisRightparenthesis context development`]
   @scala.inline
-  def `import() context production`: `import() context production` = "import() context production".asInstanceOf[`import() context production`]
+  def `importLeftparenthesisRightparenthesis context production`: `importLeftparenthesisRightparenthesis context production` = "import() context production".asInstanceOf[`importLeftparenthesisRightparenthesis context production`]
   @scala.inline
-  def `import() eager`: `import() eager` = "import() eager".asInstanceOf[`import() eager`]
+  def `importLeftparenthesisRightparenthesis eager`: `importLeftparenthesisRightparenthesis eager` = "import() eager".asInstanceOf[`importLeftparenthesisRightparenthesis eager`]
   @scala.inline
-  def `import() weak`: `import() weak` = "import() weak".asInstanceOf[`import() weak`]
+  def `importLeftparenthesisRightparenthesis weak`: `importLeftparenthesisRightparenthesis weak` = "import() weak".asInstanceOf[`importLeftparenthesisRightparenthesis weak`]
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
@@ -592,11 +592,11 @@ object webpackStrings {
   @scala.inline
   def `inline-source-map`: `inline-source-map` = "inline-source-map".asInstanceOf[`inline-source-map`]
   @scala.inline
-  def `javascript/auto`: `javascript/auto` = "javascript/auto".asInstanceOf[`javascript/auto`]
+  def javascriptSlashauto: javascriptSlashauto = "javascript/auto".asInstanceOf[javascriptSlashauto]
   @scala.inline
-  def `javascript/dynamic`: `javascript/dynamic` = "javascript/dynamic".asInstanceOf[`javascript/dynamic`]
+  def javascriptSlashdynamic: javascriptSlashdynamic = "javascript/dynamic".asInstanceOf[javascriptSlashdynamic]
   @scala.inline
-  def `javascript/esm`: `javascript/esm` = "javascript/esm".asInstanceOf[`javascript/esm`]
+  def javascriptSlashesm: javascriptSlashesm = "javascript/esm".asInstanceOf[javascriptSlashesm]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
@@ -614,9 +614,9 @@ object webpackStrings {
   @scala.inline
   def module: module = "module".asInstanceOf[module]
   @scala.inline
-  def moduleDOThotDOTaccept: moduleDOThotDOTaccept = "module.hot.accept".asInstanceOf[moduleDOThotDOTaccept]
+  def moduleDothotDotaccept: moduleDothotDotaccept = "module.hot.accept".asInstanceOf[moduleDothotDotaccept]
   @scala.inline
-  def moduleDOThotDOTdecline: moduleDOThotDOTdecline = "module.hot.decline".asInstanceOf[moduleDOThotDOTdecline]
+  def moduleDothotDotdecline: moduleDothotDotdecline = "module.hot.decline".asInstanceOf[moduleDothotDotdecline]
   @scala.inline
   def `multi entry`: `multi entry` = "multi entry".asInstanceOf[`multi entry`]
   @scala.inline
@@ -646,15 +646,15 @@ object webpackStrings {
   @scala.inline
   def production: production = "production".asInstanceOf[production]
   @scala.inline
-  def requireDOTcontext: requireDOTcontext = "require.context".asInstanceOf[requireDOTcontext]
+  def requireDotcontext: requireDotcontext = "require.context".asInstanceOf[requireDotcontext]
   @scala.inline
-  def requireDOTensure: requireDOTensure = "require.ensure".asInstanceOf[requireDOTensure]
+  def requireDotensure: requireDotensure = "require.ensure".asInstanceOf[requireDotensure]
   @scala.inline
-  def `requireDOTensure item`: `requireDOTensure item` = "require.ensure item".asInstanceOf[`requireDOTensure item`]
+  def `requireDotensure item`: `requireDotensure item` = "require.ensure item".asInstanceOf[`requireDotensure item`]
   @scala.inline
-  def requireDOTinclude: requireDOTinclude = "require.include".asInstanceOf[requireDOTinclude]
+  def requireDotinclude: requireDotinclude = "require.include".asInstanceOf[requireDotinclude]
   @scala.inline
-  def requireDOTresolve: requireDOTresolve = "require.resolve".asInstanceOf[requireDOTresolve]
+  def requireDotresolve: requireDotresolve = "require.resolve".asInstanceOf[requireDotresolve]
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   @scala.inline
@@ -664,7 +664,7 @@ object webpackStrings {
   @scala.inline
   def `source-map`: `source-map` = "source-map".asInstanceOf[`source-map`]
   @scala.inline
-  def `text/javascript`: `text/javascript` = "text/javascript".asInstanceOf[`text/javascript`]
+  def textSlashjavascript: textSlashjavascript = "text/javascript".asInstanceOf[textSlashjavascript]
   @scala.inline
   def `this`: `this` = "this".asInstanceOf[`this`]
   @scala.inline
@@ -684,7 +684,7 @@ object webpackStrings {
   @scala.inline
   def web: web = "web".asInstanceOf[web]
   @scala.inline
-  def `webassembly/experimental`: `webassembly/experimental` = "webassembly/experimental".asInstanceOf[`webassembly/experimental`]
+  def webassemblySlashexperimental: webassemblySlashexperimental = "webassembly/experimental".asInstanceOf[webassemblySlashexperimental]
   @scala.inline
   def webworker: webworker = "webworker".asInstanceOf[webworker]
   @scala.inline

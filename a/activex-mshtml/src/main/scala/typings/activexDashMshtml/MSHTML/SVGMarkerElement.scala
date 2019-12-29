@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGMarkerElement")
 @js.native
 class SVGMarkerElement protected () extends js.Object {
-  var `MSHTML.SVGMarkerElement_typekey`: SVGMarkerElement = js.native
+  @JSName("MSHTML.SVGMarkerElement_typekey")
+  var MSHTMLDotSVGMarkerElement_typekey: SVGMarkerElement = js.native
   val className: SVGAnimatedString = js.native
   val externalResourcesRequired: SVGAnimatedBoolean = js.native
   var focusable: SVGAnimatedEnumeration = js.native

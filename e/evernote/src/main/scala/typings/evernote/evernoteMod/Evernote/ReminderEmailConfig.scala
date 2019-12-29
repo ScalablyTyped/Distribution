@@ -1,8 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.ReminderEmailConfig.DO_NOT_SEND
-import typings.evernote.evernoteMod.Evernote.ReminderEmailConfig.SEND_DAILY_EMAIL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

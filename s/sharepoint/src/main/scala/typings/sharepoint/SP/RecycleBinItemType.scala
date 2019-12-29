@@ -1,17 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.RecycleBinItemType.attachment
-import typings.sharepoint.SP.RecycleBinItemType.cascadeParent
-import typings.sharepoint.SP.RecycleBinItemType.file
-import typings.sharepoint.SP.RecycleBinItemType.fileVersion
-import typings.sharepoint.SP.RecycleBinItemType.folder
-import typings.sharepoint.SP.RecycleBinItemType.folderWithLists
-import typings.sharepoint.SP.RecycleBinItemType.list
-import typings.sharepoint.SP.RecycleBinItemType.listItem
-import typings.sharepoint.SP.RecycleBinItemType.listItemVersion
-import typings.sharepoint.SP.RecycleBinItemType.none
-import typings.sharepoint.SP.RecycleBinItemType.web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

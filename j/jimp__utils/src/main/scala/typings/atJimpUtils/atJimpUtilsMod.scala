@@ -1,7 +1,7 @@
 package typings.atJimpUtils
 
-import typings.atJimpUtils.atJimpUtilsNumbers.`false`
-import typings.atJimpUtils.atJimpUtilsNumbers.`true`
+import typings.atJimpUtils.atJimpUtilsBooleans.`false`
+import typings.atJimpUtils.atJimpUtilsBooleans.`true`
 import typings.std.Error
 import typings.std.Image
 import typings.std.Omit

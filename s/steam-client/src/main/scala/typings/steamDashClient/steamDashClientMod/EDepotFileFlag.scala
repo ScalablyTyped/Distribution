@@ -1,16 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.CustomExecutable
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Directory
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Encrypted
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Executable
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Hidden
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.InstallScript
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.ReadOnly
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Symlink
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.UserConfig
-import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.VersionedUserConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

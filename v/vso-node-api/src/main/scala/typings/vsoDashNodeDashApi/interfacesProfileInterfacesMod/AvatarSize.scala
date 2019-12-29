@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesProfileInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesProfileInterfacesMod.AvatarSize.Large
-import typings.vsoDashNodeDashApi.interfacesProfileInterfacesMod.AvatarSize.Medium
-import typings.vsoDashNodeDashApi.interfacesProfileInterfacesMod.AvatarSize.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.global
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.local
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,13 +24,13 @@ trait websceneInitialViewProperties
     */
   var spatialReference: SpatialReference = js.native
   /**
-    * The viewing mode of the scene. Global scenes allow the user to navigate the globe. Local scenes allow for navigation and feature display in a particular "localized" area. Users may also navigate the view's camera below the surface of a basemap in local scenes.  **Possible Values:** global | local
+    * The viewing mode of the scene. Global scenes allow the user to navigate the globe. Local scenes allow for navigation and feature display in a particular "localized" area. Users may also navigate the view's camera below the surface of a basemap in local scenes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#viewingMode)
     *
     * @default global
     */
-  var viewingMode: String = js.native
+  var viewingMode: global | local = js.native
   /**
     * The initial viewpoint of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *

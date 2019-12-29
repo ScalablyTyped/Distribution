@@ -18,7 +18,8 @@ class ChartFont protected () extends js.Object {
   var Name: js.Any = js.native
   var OutlineFont: js.Any = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ChartFont_typekey`: ChartFont = js.native
+  @JSName("PowerPoint.ChartFont_typekey")
+  var PowerPointDotChartFont_typekey: ChartFont = js.native
   var Shadow: js.Any = js.native
   var Size: js.Any = js.native
   var Strikethrough: js.Any = js.native

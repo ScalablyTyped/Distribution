@@ -11,7 +11,7 @@ trait Revision extends js.Object {
   var fileSize: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var kind: js.UndefOr[String] = js.undefined
-  var lastModifyingUser: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
+  var lastModifyingUser: js.UndefOr[User] = js.undefined
   var lastModifyingUserName: js.UndefOr[String] = js.undefined
   var md5Checksum: js.UndefOr[String] = js.undefined
   var mimeType: js.UndefOr[String] = js.undefined
@@ -34,7 +34,7 @@ object Revision {
     fileSize: String = null,
     id: String = null,
     kind: String = null,
-    lastModifyingUser: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User = null,
+    lastModifyingUser: User = null,
     lastModifyingUserName: String = null,
     md5Checksum: String = null,
     mimeType: String = null,

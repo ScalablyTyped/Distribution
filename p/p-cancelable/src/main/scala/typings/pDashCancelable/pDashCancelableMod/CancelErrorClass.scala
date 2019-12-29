@@ -1,6 +1,6 @@
 package typings.pDashCancelable.pDashCancelableMod
 
-import typings.pDashCancelable.pDashCancelableNumbers.`true`
+import typings.pDashCancelable.pDashCancelableBooleans.`true`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

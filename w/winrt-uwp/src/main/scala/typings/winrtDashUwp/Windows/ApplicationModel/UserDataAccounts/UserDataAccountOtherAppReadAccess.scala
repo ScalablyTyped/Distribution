@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountOtherAppReadAccess.full
-import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountOtherAppReadAccess.systemOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

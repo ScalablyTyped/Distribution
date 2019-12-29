@@ -1,7 +1,5 @@
 package typings.vscodeDashJsonrpc
 
-import typings.vscodeDashJsonrpc.libLinkedMapMod.LinkedMap
-import typings.vscodeDashJsonrpc.libLinkedMapMod.Touch
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcNumbers.`0`
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcNumbers.`1`
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcNumbers.`2`

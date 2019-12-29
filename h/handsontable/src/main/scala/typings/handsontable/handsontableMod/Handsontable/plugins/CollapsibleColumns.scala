@@ -10,7 +10,7 @@ trait CollapsibleColumns extends Base {
   var buttonEnabledList: js.Object
   var collapsedSections: js.Object
   var columnHeaderLevelCount: Double
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var hiddenColumnsPlugin: js.Object
   var nestedHeadersPlugin: js.Object
   var settings: Boolean | js.Array[_]
@@ -43,7 +43,7 @@ object CollapsibleColumns {
     disablePlugin: () => Unit,
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     expandAll: () => Unit,
     expandSection: js.Object => Unit,
     generateIndicator: (Double, HTMLElement) => HTMLElement,

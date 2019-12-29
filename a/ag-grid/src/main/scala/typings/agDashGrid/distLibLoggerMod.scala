@@ -1,6 +1,5 @@
 package typings.agDashGrid
 
-import typings.agDashGrid.distLibLoggerMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

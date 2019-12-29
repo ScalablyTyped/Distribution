@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 // interfaces
 trait ClusterSettings extends js.Object {
-  var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.undefined
    // default: process.execArgv
-  var exec: js.UndefOr[java.lang.String] = js.undefined
-  var execArgv: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var exec: js.UndefOr[String] = js.undefined
+  var execArgv: js.UndefOr[js.Array[String]] = js.undefined
   var gid: js.UndefOr[Double] = js.undefined
   var inspectPort: js.UndefOr[Double | js.Function0[Double]] = js.undefined
   var silent: js.UndefOr[Boolean] = js.undefined
@@ -20,9 +20,9 @@ trait ClusterSettings extends js.Object {
 object ClusterSettings {
   @scala.inline
   def apply(
-    args: js.Array[java.lang.String] = null,
-    exec: java.lang.String = null,
-    execArgv: js.Array[java.lang.String] = null,
+    args: js.Array[String] = null,
+    exec: String = null,
+    execArgv: js.Array[String] = null,
     gid: Int | Double = null,
     inspectPort: Double | js.Function0[Double] = null,
     silent: js.UndefOr[Boolean] = js.undefined,

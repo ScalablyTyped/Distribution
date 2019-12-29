@@ -25,9 +25,9 @@ object Animator extends js.Object {
   		* @param scope Object
   		* @returns String
   		*/
-  def addFrameCallback(): java.lang.String = js.native
-  def addFrameCallback(callback: js.Any): java.lang.String = js.native
-  def addFrameCallback(callback: js.Any, scope: js.Any): java.lang.String = js.native
+  def addFrameCallback(): String = js.native
+  def addFrameCallback(callback: js.Any): String = js.native
+  def addFrameCallback(callback: js.Any, scope: js.Any): String = js.native
   /** [Method] Cross platform animationTime implementation
   		* @returns Number
   		*/
@@ -54,7 +54,7 @@ object Animator extends js.Object {
   		* @param id String
   		*/
   def cancel(): Unit = js.native
-  def cancel(id: java.lang.String): Unit = js.native
+  def cancel(id: String): Unit = js.native
   /** [Method] Returns true or false whether it contains the given animation or not
   		* @param animation Object The animation to check for.
   		* @returns Boolean
@@ -72,7 +72,7 @@ object Animator extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -88,15 +88,15 @@ object Animator extends js.Object {
   		* @param id String
   		*/
   def removeFrameCallback(): Unit = js.native
-  def removeFrameCallback(id: java.lang.String): Unit = js.native
+  def removeFrameCallback(id: String): Unit = js.native
   /** [Method] Register an one time callback that will be called at the next frame
   		* @param callback Function
   		* @param scope Object
   		* @returns String
   		*/
-  def schedule(): java.lang.String = js.native
-  def schedule(callback: js.Any): java.lang.String = js.native
-  def schedule(callback: js.Any, scope: js.Any): java.lang.String = js.native
+  def schedule(): String = js.native
+  def schedule(callback: js.Any): String = js.native
+  def schedule(callback: js.Any, scope: js.Any): String = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
   		*/

@@ -1,7 +1,6 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ECanvasType.TwoDUI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

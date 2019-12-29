@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.FormPosition.BottomLeft
-import typings.ejDotWebDotAll.ej.Grid.FormPosition.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

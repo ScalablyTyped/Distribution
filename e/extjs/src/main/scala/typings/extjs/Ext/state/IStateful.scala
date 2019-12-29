@@ -32,9 +32,9 @@ trait IStateful extends IObservable {
   		*/
   var savePropToState: js.UndefOr[
     js.Function3[
-      /* propName */ js.UndefOr[java.lang.String], 
+      /* propName */ js.UndefOr[String], 
       /* state */ js.UndefOr[js.Any], 
-      /* stateName */ js.UndefOr[java.lang.String], 
+      /* stateName */ js.UndefOr[String], 
       Boolean
     ]
   ] = js.undefined
@@ -51,7 +51,7 @@ trait IStateful extends IObservable {
   /** [Config Option] (String[]) */
   var stateEvents: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var stateId: js.UndefOr[java.lang.String] = js.undefined
+  var stateId: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var stateful: js.UndefOr[Boolean] = js.undefined
 }
@@ -74,12 +74,12 @@ object IStateful {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getState: () => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IStateful = null,
@@ -89,25 +89,25 @@ object IStateful {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     saveDelay: Int | Double = null,
-    savePropToState: (/* propName */ js.UndefOr[java.lang.String], /* state */ js.UndefOr[js.Any], /* stateName */ js.UndefOr[java.lang.String]) => Boolean = null,
+    savePropToState: (/* propName */ js.UndefOr[String], /* state */ js.UndefOr[js.Any], /* stateName */ js.UndefOr[String]) => Boolean = null,
     savePropsToState: (/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any]) => _ = null,
     saveState: () => Unit = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     stateEvents: Array = null,
-    stateId: java.lang.String = null,
+    stateId: String = null,
     stateful: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IStateful = {
     val __obj = js.Dynamic.literal()

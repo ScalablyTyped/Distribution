@@ -1,10 +1,5 @@
 package typings.jsonfile
 
-import typings.jsonfile.jsonfileMod.JFReadOptions
-import typings.jsonfile.jsonfileMod.JFWriteOptions
-import typings.jsonfile.jsonfileMod.Path
-import typings.jsonfile.jsonfileMod.ReadCallback
-import typings.jsonfile.jsonfileMod.WriteCallback
 import typings.node.Anon_EncodingFlag
 import typings.node.Anon_EncodingFlagNull
 import typings.node.Anon_EncodingFlagString
@@ -28,24 +23,24 @@ object jsonfileMod extends js.Object {
     var writeFile: TypeoffsWriteFile = js.native
     @JSName("writeFileSync")
     var writeFileSync_Original: Fn_Data = js.native
-    def readFileSync(path: Double): Buffer = js.native
+    def readFileSync(path: Double): String | Buffer = js.native
     def readFileSync(path: Double, options: String): String | Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlag): Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlagNull): String | Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlagString): String = js.native
-    def readFileSync(path: PathLike): Buffer = js.native
+    def readFileSync(path: PathLike): String | Buffer = js.native
     def readFileSync(path: PathLike, options: String): String | Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlag): Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlagNull): String | Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlagString): String = js.native
     @JSName("readFileSync")
+    def readFileSync_Buffer(path: Double): Buffer = js.native
+    @JSName("readFileSync")
+    def readFileSync_Buffer(path: PathLike): Buffer = js.native
+    @JSName("readFileSync")
     def readFileSync_String(path: Double, options: String): String = js.native
     @JSName("readFileSync")
     def readFileSync_String(path: PathLike, options: String): String = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: Double): String | Buffer = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: PathLike): String | Buffer = js.native
     def writeFileSync(path: Double, data: js.Any): Unit = js.native
     def writeFileSync(path: Double, data: js.Any, options: WriteFileOptions): Unit = js.native
     def writeFileSync(path: PathLike, data: js.Any): Unit = js.native

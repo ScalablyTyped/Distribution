@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeofClassCollection
   extends Instantiable0[Collection[Model]]
+     with Instantiable1[
+      /* models */ js.Array[
+        (/* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any) | js.Object
+      ], 
+      Collection[Model]
+    ]
      with Instantiable2[
       /* models */ js.Array[
         (/* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any) | js.Object
       ], 
       /* options */ js.Any, 
-      Collection[Model]
-    ]
-     with Instantiable1[
-      /* models */ js.Array[
-        (/* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any) | js.Object
-      ], 
       Collection[Model]
     ] {
   /**

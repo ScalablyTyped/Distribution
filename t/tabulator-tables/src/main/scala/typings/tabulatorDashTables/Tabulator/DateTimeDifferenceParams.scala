@@ -1,6 +1,6 @@
 package typings.tabulatorDashTables.Tabulator
 
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`true`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`true`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.days
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.hours
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.minutes

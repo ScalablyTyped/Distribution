@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.FindOptions.case_
-import typings.winrt.Windows.UI.Text.FindOptions.none
-import typings.winrt.Windows.UI.Text.FindOptions.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -27,7 +27,8 @@ class FormField protected () extends js.Object {
   var StatusText: String = js.native
   val TextInput: typings.activexDashWord.Word.TextInput = js.native
   val Type: WdFieldType = js.native
-  var `Word.FormField_typekey`: FormField = js.native
+  @JSName("Word.FormField_typekey")
+  var WordDotFormField_typekey: FormField = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native
   def Delete(): Unit = js.native

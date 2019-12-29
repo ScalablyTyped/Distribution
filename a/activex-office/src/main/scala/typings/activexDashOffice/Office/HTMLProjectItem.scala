@@ -11,7 +11,8 @@ class HTMLProjectItem protected () extends js.Object {
   val Creator: Double = js.native
   val IsOpen: Boolean = js.native
   val Name: String = js.native
-  var `Office.HTMLProjectItem_typekey`: HTMLProjectItem = js.native
+  @JSName("Office.HTMLProjectItem_typekey")
+  var OfficeDotHTMLProjectItem_typekey: HTMLProjectItem = js.native
   val Parent: js.Any = js.native
   var Text: String = js.native
   def LoadFromFile(FileName: String): Unit = js.native

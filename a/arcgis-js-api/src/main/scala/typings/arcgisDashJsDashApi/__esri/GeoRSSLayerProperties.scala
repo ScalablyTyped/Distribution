@@ -21,7 +21,7 @@ trait GeoRSSLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#pointSymbol)
     */
-  var pointSymbol: js.UndefOr[PictureMarkerSymbolProperties] = js.undefined
+  var pointSymbol: js.UndefOr[PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties] = js.undefined
   /**
     * Symbol used to represent polygon features from the GeoRSS feed.
     *
@@ -46,7 +46,7 @@ object GeoRSSLayerProperties {
     maxScale: Int | Double = null,
     minScale: Int | Double = null,
     opacity: Int | Double = null,
-    pointSymbol: PictureMarkerSymbolProperties = null,
+    pointSymbol: PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties = null,
     polygonSymbol: SimpleFillSymbolProperties = null,
     title: String = null,
     url: String = null,

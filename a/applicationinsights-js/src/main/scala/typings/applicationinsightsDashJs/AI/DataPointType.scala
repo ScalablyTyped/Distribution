@@ -1,8 +1,6 @@
 package typings.applicationinsightsDashJs.AI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.applicationinsightsDashJs.AI.DataPointType.Aggregation
-import typings.applicationinsightsDashJs.AI.DataPointType.Measurement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

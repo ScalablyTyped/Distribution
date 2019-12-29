@@ -2,7 +2,6 @@ package typings.steamDashTotp
 
 import typings.node.Buffer
 import typings.std.Error
-import typings.steamDashTotp.steamDashTotpMod.TimeOffsetFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

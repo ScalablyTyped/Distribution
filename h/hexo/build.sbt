@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "hexo"
-version := "3.8-dt-20190808Z-592a18"
+version := "3.8-dt-20190808Z-573f86"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-24f004",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-b2c6f4",
-  "org.scalablytyped" %%% "hexo-util" % "0.6-dt-20190808Z-d2e4c5",
-  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-eace7d",
-  "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "underscore" % "1.9-dt-20191118Z-6a6110")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-f56c5c",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-f02e41",
+  "org.scalablytyped" %%% "hexo-util" % "0.6-dt-20190808Z-8454dc",
+  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-c95c3a",
+  "org.scalablytyped" %%% "moment" % "2.24.0-8ebd48",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "std" % "3.7-953338",
+  "org.scalablytyped" %%% "underscore" % "1.9-dt-20191118Z-0ac6cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

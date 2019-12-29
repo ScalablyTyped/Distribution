@@ -1,11 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.SymbolFormatFlags.AllowAnyNodeKind
-import typings.typescript.typescriptMod.SymbolFormatFlags.None
-import typings.typescript.typescriptMod.SymbolFormatFlags.UseAliasDefinedOutsideCurrentScope
-import typings.typescript.typescriptMod.SymbolFormatFlags.UseOnlyExternalAliasing
-import typings.typescript.typescriptMod.SymbolFormatFlags.WriteTypeParametersOrArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

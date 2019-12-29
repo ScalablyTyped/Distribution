@@ -5,7 +5,7 @@ import typings.angular.JQuery
 import typings.angular.angularMod.IControllerConstructor
 import typings.angular.angularMod.IScope
 import typings.angular.angularMod.Injectable
-import typings.angularDashMaterial.angularDashMaterialNumbers.`false`
+import typings.angularDashMaterial.angularDashMaterialBooleans.`false`
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

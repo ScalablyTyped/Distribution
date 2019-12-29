@@ -13,7 +13,8 @@ class NavigationPane protected () extends js.Object {
   var DisplayedModuleCount: Double = js.native
   var IsCollapsed: Boolean = js.native
   val Modules: NavigationModules = js.native
-  var `Outlook.NavigationPane_typekey`: NavigationPane = js.native
+  @JSName("Outlook.NavigationPane_typekey")
+  var OutlookDotNavigationPane_typekey: NavigationPane = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

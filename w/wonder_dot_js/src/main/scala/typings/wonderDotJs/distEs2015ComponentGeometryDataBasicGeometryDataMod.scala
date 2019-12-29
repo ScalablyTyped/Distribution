@@ -1,6 +1,5 @@
 package typings.wonderDotJs
 
-import typings.wonderDotJs.distEs2015ComponentGeometryDataBasicGeometryDataMod.BasicGeometryData
 import typings.wonderDotJs.distEs2015ComponentGeometryDataGeometryDataMod.GeometryData
 import typings.wonderDotJs.distEs2015ComponentGeometryGeometryMod.Geometry
 import scala.scalajs.js

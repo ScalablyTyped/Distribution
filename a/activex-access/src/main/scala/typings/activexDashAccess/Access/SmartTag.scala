@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.SmartTag")
 @js.native
 class SmartTag protected () extends js.Object {
-  var `Access.SmartTag_typekey`: SmartTag = js.native
+  @JSName("Access.SmartTag_typekey")
+  var AccessDotSmartTag_typekey: SmartTag = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   val IsMissing: Boolean = js.native
   val Name: String = js.native

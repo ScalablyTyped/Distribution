@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Organization
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Private
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Public
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Unchanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

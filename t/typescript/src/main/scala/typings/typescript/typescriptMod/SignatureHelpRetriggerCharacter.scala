@@ -5,22 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.typescript.typescriptStrings.`)`
-  - typings.typescript.typescriptStrings.`,`
-  - typings.typescript.typescriptStrings.`(`
-  - typings.typescript.typescriptStrings.`<`
+  - typings.typescript.typescriptStrings.Rightparenthesis
+  - typings.typescript.typescriptStrings.Comma
+  - typings.typescript.typescriptStrings.Leftparenthesis
+  - typings.typescript.typescriptStrings.Lessthansign
 */
 trait SignatureHelpRetriggerCharacter extends js.Object
 
 object SignatureHelpRetriggerCharacter {
   @scala.inline
-  def `(`: typings.typescript.typescriptStrings.`(` = this.cast("(")
+  def Comma: typings.typescript.typescriptStrings.Comma = this.cast(",")
   @scala.inline
-  def `)`: typings.typescript.typescriptStrings.`)` = this.cast(")")
+  def Leftparenthesis: typings.typescript.typescriptStrings.Leftparenthesis = this.cast("(")
   @scala.inline
-  def `,`: typings.typescript.typescriptStrings.`,` = this.cast(",")
+  def Lessthansign: typings.typescript.typescriptStrings.Lessthansign = this.cast("<")
   @scala.inline
-  def `<`: typings.typescript.typescriptStrings.`<` = this.cast("<")
+  def Rightparenthesis: typings.typescript.typescriptStrings.Rightparenthesis = this.cast(")")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

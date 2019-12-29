@@ -1,7 +1,6 @@
 package typings.atAngularHttp
 
 import typings.atAngularHttp.srcBaseUnderscoreRequestUnderscoreOptionsMod.RequestOptions
-import typings.atAngularHttp.srcHttpMod.Http
 import typings.atAngularHttp.srcInterfacesMod.ConnectionBackend
 import typings.atAngularHttp.srcInterfacesMod.RequestOptionsArgs
 import typings.atAngularHttp.srcStaticUnderscoreRequestMod.Request

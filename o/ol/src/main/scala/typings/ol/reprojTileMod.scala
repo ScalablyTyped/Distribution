@@ -1,7 +1,5 @@
 package typings.ol
 
-import typings.ol.reprojTileMod.FunctionType
-import typings.ol.reprojTileMod.ReprojTile
 import typings.ol.tilecoordMod.TileCoord
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

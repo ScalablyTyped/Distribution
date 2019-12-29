@@ -1,12 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.ModuleKind.AMD
-import typings.typescript.typescriptMod.ModuleKind.CommonJS
-import typings.typescript.typescriptMod.ModuleKind.ES2015
-import typings.typescript.typescriptMod.ModuleKind.ESNext
-import typings.typescript.typescriptMod.ModuleKind.None
-import typings.typescript.typescriptMod.ModuleKind.UMD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

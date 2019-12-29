@@ -14,7 +14,7 @@ trait OpenEventArgs extends js.Object {
   var element: js.UndefOr[HTMLElement] = js.undefined
   /** returns the DateRangePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DateRangePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -22,12 +22,7 @@ trait OpenEventArgs extends js.Object {
 
 object OpenEventArgs {
   @scala.inline
-  def apply(
-    date: js.Any = null,
-    element: HTMLElement = null,
-    model: typings.ejDotWebDotAll.ej.DateRangePicker.Model = null,
-    `type`: String = null
-  ): OpenEventArgs = {
+  def apply(date: js.Any = null, element: HTMLElement = null, model: Model = null, `type`: String = null): OpenEventArgs = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])

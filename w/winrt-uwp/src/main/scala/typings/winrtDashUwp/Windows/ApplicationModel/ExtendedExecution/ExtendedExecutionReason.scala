@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.locationTracking
-import typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.savingData
-import typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

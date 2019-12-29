@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dns", "ADDRGETNETWORKPARAMS")
 @js.native
-object ADDRGETNETWORKPARAMS
-  extends TopLevel[java.lang.String]
+object ADDRGETNETWORKPARAMS extends TopLevel[String]
 

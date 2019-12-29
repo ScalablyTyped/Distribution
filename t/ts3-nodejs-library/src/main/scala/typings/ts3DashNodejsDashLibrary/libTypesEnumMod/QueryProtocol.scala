@@ -1,8 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol.RAW
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol.SSH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

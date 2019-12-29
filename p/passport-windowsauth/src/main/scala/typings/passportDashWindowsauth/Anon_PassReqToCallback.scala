@@ -1,6 +1,6 @@
 package typings.passportDashWindowsauth
 
-import typings.passportDashWindowsauth.passportDashWindowsauthNumbers.`true`
+import typings.passportDashWindowsauth.passportDashWindowsauthBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

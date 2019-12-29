@@ -1,6 +1,6 @@
 package typings.saslDashDigestDashMd5.saslDashDigestDashMd5Mod
 
-import typings.saslDashDigestDashMd5.saslDashDigestDashMd5Numbers.`false`
+import typings.saslDashDigestDashMd5.saslDashDigestDashMd5Booleans.`false`
 import typings.saslDashDigestDashMd5.saslDashDigestDashMd5Strings.`DIGEST-MD5`
 import typings.saslmechanisms.saslmechanismsMod.Mechanism
 import scala.scalajs.js

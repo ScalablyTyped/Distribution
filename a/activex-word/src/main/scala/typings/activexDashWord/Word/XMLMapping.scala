@@ -14,7 +14,8 @@ class XMLMapping protected () extends js.Object {
   val IsMapped: Boolean = js.native
   val Parent: js.Any = js.native
   val PrefixMappings: String = js.native
-  var `Word.XMLMapping_typekey`: XMLMapping = js.native
+  @JSName("Word.XMLMapping_typekey")
+  var WordDotXMLMapping_typekey: XMLMapping = js.native
   val XPath: String = js.native
   def Delete(): Unit = js.native
   /**

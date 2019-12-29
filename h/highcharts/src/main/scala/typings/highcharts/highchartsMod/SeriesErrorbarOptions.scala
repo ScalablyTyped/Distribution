@@ -177,7 +177,7 @@ object SeriesErrorbarOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     stacking: OptionsStackingValue = null,
     stemDashStyle: DashStyleValue = null,
     stemWidth: Int | Double = null,

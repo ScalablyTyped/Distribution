@@ -3,22 +3,22 @@ package typings.typeahead
 import typings.jquery.JQueryEventObject
 import typings.typeahead.Twitter.Typeahead.Dataset
 import typings.typeahead.Twitter.Typeahead.Options
-import typings.typeahead.typeaheadStrings.`typeahead:active`
-import typings.typeahead.typeaheadStrings.`typeahead:asynccancel`
-import typings.typeahead.typeaheadStrings.`typeahead:asyncreceive`
-import typings.typeahead.typeaheadStrings.`typeahead:asyncrequest`
-import typings.typeahead.typeaheadStrings.`typeahead:autocomplete`
-import typings.typeahead.typeaheadStrings.`typeahead:change`
-import typings.typeahead.typeaheadStrings.`typeahead:close`
-import typings.typeahead.typeaheadStrings.`typeahead:cursorchange`
-import typings.typeahead.typeaheadStrings.`typeahead:idle`
-import typings.typeahead.typeaheadStrings.`typeahead:open`
-import typings.typeahead.typeaheadStrings.`typeahead:render`
-import typings.typeahead.typeaheadStrings.`typeahead:select`
 import typings.typeahead.typeaheadStrings.`val`
 import typings.typeahead.typeaheadStrings.close
 import typings.typeahead.typeaheadStrings.destroy
 import typings.typeahead.typeaheadStrings.open
+import typings.typeahead.typeaheadStrings.typeaheadColonactive
+import typings.typeahead.typeaheadStrings.typeaheadColonasynccancel
+import typings.typeahead.typeaheadStrings.typeaheadColonasyncreceive
+import typings.typeahead.typeaheadStrings.typeaheadColonasyncrequest
+import typings.typeahead.typeaheadStrings.typeaheadColonautocomplete
+import typings.typeahead.typeaheadStrings.typeaheadColonchange
+import typings.typeahead.typeaheadStrings.typeaheadColonclose
+import typings.typeahead.typeaheadStrings.typeaheadColoncursorchange
+import typings.typeahead.typeaheadStrings.typeaheadColonidle
+import typings.typeahead.typeaheadStrings.typeaheadColonopen
+import typings.typeahead.typeaheadStrings.typeaheadColonrender
+import typings.typeahead.typeaheadStrings.typeaheadColonselect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadactive(events: `typeahead:active`): JQuery = js.native
+  def off_typeaheadactive(events: typeaheadColonactive): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -40,12 +40,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadactive(events: `typeahead:active`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadactive(events: typeaheadColonactive, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadactive(events: `typeahead:active`, selector: String): JQuery = js.native
+  def off_typeaheadactive(events: typeaheadColonactive, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadactive(
-    events: `typeahead:active`,
+    events: typeaheadColonactive,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -56,7 +56,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasynccancel(events: `typeahead:asynccancel`): JQuery = js.native
+  def off_typeaheadasynccancel(events: typeaheadColonasynccancel): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -64,12 +64,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasynccancel(events: `typeahead:asynccancel`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadasynccancel(events: typeaheadColonasynccancel, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadasynccancel(events: `typeahead:asynccancel`, selector: String): JQuery = js.native
+  def off_typeaheadasynccancel(events: typeaheadColonasynccancel, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadasynccancel(
-    events: `typeahead:asynccancel`,
+    events: typeaheadColonasynccancel,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -80,7 +80,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasyncreceive(events: `typeahead:asyncreceive`): JQuery = js.native
+  def off_typeaheadasyncreceive(events: typeaheadColonasyncreceive): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -88,12 +88,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasyncreceive(events: `typeahead:asyncreceive`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadasyncreceive(events: typeaheadColonasyncreceive, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadasyncreceive(events: `typeahead:asyncreceive`, selector: String): JQuery = js.native
+  def off_typeaheadasyncreceive(events: typeaheadColonasyncreceive, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadasyncreceive(
-    events: `typeahead:asyncreceive`,
+    events: typeaheadColonasyncreceive,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -104,7 +104,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasyncrequest(events: `typeahead:asyncrequest`): JQuery = js.native
+  def off_typeaheadasyncrequest(events: typeaheadColonasyncrequest): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -112,12 +112,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasyncrequest(events: `typeahead:asyncrequest`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadasyncrequest(events: typeaheadColonasyncrequest, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadasyncrequest(events: `typeahead:asyncrequest`, selector: String): JQuery = js.native
+  def off_typeaheadasyncrequest(events: typeaheadColonasyncrequest, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadasyncrequest(
-    events: `typeahead:asyncrequest`,
+    events: typeaheadColonasyncrequest,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -128,7 +128,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadautocomplete(events: `typeahead:autocomplete`): JQuery = js.native
+  def off_typeaheadautocomplete(events: typeaheadColonautocomplete): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -136,12 +136,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadautocomplete(events: `typeahead:autocomplete`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadautocomplete(events: typeaheadColonautocomplete, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadautocomplete(events: `typeahead:autocomplete`, selector: String): JQuery = js.native
+  def off_typeaheadautocomplete(events: typeaheadColonautocomplete, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadautocomplete(
-    events: `typeahead:autocomplete`,
+    events: typeaheadColonautocomplete,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -152,7 +152,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadchange(events: `typeahead:change`): JQuery = js.native
+  def off_typeaheadchange(events: typeaheadColonchange): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -160,12 +160,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadchange(events: `typeahead:change`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadchange(events: typeaheadColonchange, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadchange(events: `typeahead:change`, selector: String): JQuery = js.native
+  def off_typeaheadchange(events: typeaheadColonchange, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadchange(
-    events: `typeahead:change`,
+    events: typeaheadColonchange,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -176,7 +176,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadclose(events: `typeahead:close`): JQuery = js.native
+  def off_typeaheadclose(events: typeaheadColonclose): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -184,12 +184,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadclose(events: `typeahead:close`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadclose(events: typeaheadColonclose, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadclose(events: `typeahead:close`, selector: String): JQuery = js.native
+  def off_typeaheadclose(events: typeaheadColonclose, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadclose(
-    events: `typeahead:close`,
+    events: typeaheadColonclose,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -200,7 +200,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadcursorchange(events: `typeahead:cursorchange`): JQuery = js.native
+  def off_typeaheadcursorchange(events: typeaheadColoncursorchange): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -208,12 +208,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadcursorchange(events: `typeahead:cursorchange`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadcursorchange(events: typeaheadColoncursorchange, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadcursorchange(events: `typeahead:cursorchange`, selector: String): JQuery = js.native
+  def off_typeaheadcursorchange(events: typeaheadColoncursorchange, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadcursorchange(
-    events: `typeahead:cursorchange`,
+    events: typeaheadColoncursorchange,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -224,7 +224,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadidle(events: `typeahead:idle`): JQuery = js.native
+  def off_typeaheadidle(events: typeaheadColonidle): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -232,12 +232,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadidle(events: `typeahead:idle`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadidle(events: typeaheadColonidle, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadidle(events: `typeahead:idle`, selector: String): JQuery = js.native
+  def off_typeaheadidle(events: typeaheadColonidle, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadidle(
-    events: `typeahead:idle`,
+    events: typeaheadColonidle,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -248,7 +248,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadopen(events: `typeahead:open`): JQuery = js.native
+  def off_typeaheadopen(events: typeaheadColonopen): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -256,12 +256,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadopen(events: `typeahead:open`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadopen(events: typeaheadColonopen, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadopen(events: `typeahead:open`, selector: String): JQuery = js.native
+  def off_typeaheadopen(events: typeaheadColonopen, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadopen(
-    events: `typeahead:open`,
+    events: typeaheadColonopen,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -272,7 +272,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadrender(events: `typeahead:render`): JQuery = js.native
+  def off_typeaheadrender(events: typeaheadColonrender): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -280,12 +280,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadrender(events: `typeahead:render`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadrender(events: typeaheadColonrender, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadrender(events: `typeahead:render`, selector: String): JQuery = js.native
+  def off_typeaheadrender(events: typeaheadColonrender, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadrender(
-    events: `typeahead:render`,
+    events: typeaheadColonrender,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -296,7 +296,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadselect(events: `typeahead:select`): JQuery = js.native
+  def off_typeaheadselect(events: typeaheadColonselect): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -304,12 +304,12 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadselect(events: `typeahead:select`, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off_typeaheadselect(events: typeaheadColonselect, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
-  def off_typeaheadselect(events: `typeahead:select`, selector: String): JQuery = js.native
+  def off_typeaheadselect(events: typeaheadColonselect, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadselect(
-    events: `typeahead:select`,
+    events: typeaheadColonselect,
     selector: String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
@@ -322,7 +322,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadactive(
-    events: `typeahead:active`,
+    events: typeaheadColonactive,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -334,7 +334,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadactive(
-    events: `typeahead:active`,
+    events: typeaheadColonactive,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -347,7 +347,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadactive(
-    events: `typeahead:active`,
+    events: typeaheadColonactive,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -361,7 +361,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadactive(
-    events: `typeahead:active`,
+    events: typeaheadColonactive,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -374,7 +374,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasynccancel(
-    events: `typeahead:asynccancel`,
+    events: typeaheadColonasynccancel,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -386,7 +386,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasynccancel(
-    events: `typeahead:asynccancel`,
+    events: typeaheadColonasynccancel,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -399,7 +399,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasynccancel(
-    events: `typeahead:asynccancel`,
+    events: typeaheadColonasynccancel,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -413,7 +413,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasynccancel(
-    events: `typeahead:asynccancel`,
+    events: typeaheadColonasynccancel,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -426,7 +426,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncreceive(
-    events: `typeahead:asyncreceive`,
+    events: typeaheadColonasyncreceive,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -438,7 +438,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncreceive(
-    events: `typeahead:asyncreceive`,
+    events: typeaheadColonasyncreceive,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -451,7 +451,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncreceive(
-    events: `typeahead:asyncreceive`,
+    events: typeaheadColonasyncreceive,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -465,7 +465,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncreceive(
-    events: `typeahead:asyncreceive`,
+    events: typeaheadColonasyncreceive,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -478,7 +478,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncrequest(
-    events: `typeahead:asyncrequest`,
+    events: typeaheadColonasyncrequest,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -490,7 +490,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncrequest(
-    events: `typeahead:asyncrequest`,
+    events: typeaheadColonasyncrequest,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -503,7 +503,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncrequest(
-    events: `typeahead:asyncrequest`,
+    events: typeaheadColonasyncrequest,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -517,7 +517,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadasyncrequest(
-    events: `typeahead:asyncrequest`,
+    events: typeaheadColonasyncrequest,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -530,7 +530,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadautocomplete(
-    events: `typeahead:autocomplete`,
+    events: typeaheadColonautocomplete,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -542,7 +542,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadautocomplete(
-    events: `typeahead:autocomplete`,
+    events: typeaheadColonautocomplete,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -555,7 +555,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadautocomplete(
-    events: `typeahead:autocomplete`,
+    events: typeaheadColonautocomplete,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -569,7 +569,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadautocomplete(
-    events: `typeahead:autocomplete`,
+    events: typeaheadColonautocomplete,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -582,7 +582,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadchange(
-    events: `typeahead:change`,
+    events: typeaheadColonchange,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -594,7 +594,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadchange(
-    events: `typeahead:change`,
+    events: typeaheadColonchange,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -607,7 +607,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadchange(
-    events: `typeahead:change`,
+    events: typeaheadColonchange,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -621,7 +621,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadchange(
-    events: `typeahead:change`,
+    events: typeaheadColonchange,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -634,7 +634,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadclose(
-    events: `typeahead:close`,
+    events: typeaheadColonclose,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -646,7 +646,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadclose(
-    events: `typeahead:close`,
+    events: typeaheadColonclose,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -659,7 +659,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadclose(
-    events: `typeahead:close`,
+    events: typeaheadColonclose,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -673,7 +673,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadclose(
-    events: `typeahead:close`,
+    events: typeaheadColonclose,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -686,7 +686,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadcursorchange(
-    events: `typeahead:cursorchange`,
+    events: typeaheadColoncursorchange,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -698,7 +698,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadcursorchange(
-    events: `typeahead:cursorchange`,
+    events: typeaheadColoncursorchange,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -711,7 +711,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadcursorchange(
-    events: `typeahead:cursorchange`,
+    events: typeaheadColoncursorchange,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -725,7 +725,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadcursorchange(
-    events: `typeahead:cursorchange`,
+    events: typeaheadColoncursorchange,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -738,7 +738,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadidle(
-    events: `typeahead:idle`,
+    events: typeaheadColonidle,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -750,7 +750,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadidle(
-    events: `typeahead:idle`,
+    events: typeaheadColonidle,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -763,7 +763,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadidle(
-    events: `typeahead:idle`,
+    events: typeaheadColonidle,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -777,7 +777,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadidle(
-    events: `typeahead:idle`,
+    events: typeaheadColonidle,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -790,7 +790,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadopen(
-    events: `typeahead:open`,
+    events: typeaheadColonopen,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -802,7 +802,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadopen(
-    events: `typeahead:open`,
+    events: typeaheadColonopen,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -815,7 +815,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadopen(
-    events: `typeahead:open`,
+    events: typeaheadColonopen,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -829,7 +829,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadopen(
-    events: `typeahead:open`,
+    events: typeaheadColonopen,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -842,7 +842,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadrender(
-    events: `typeahead:render`,
+    events: typeaheadColonrender,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -854,7 +854,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadrender(
-    events: `typeahead:render`,
+    events: typeaheadColonrender,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -867,7 +867,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadrender(
-    events: `typeahead:render`,
+    events: typeaheadColonrender,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -881,7 +881,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadrender(
-    events: `typeahead:render`,
+    events: typeaheadColonrender,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -894,7 +894,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadselect(
-    events: `typeahead:select`,
+    events: typeaheadColonselect,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -906,7 +906,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadselect(
-    events: `typeahead:select`,
+    events: typeaheadColonselect,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
   /**
@@ -919,7 +919,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadselect(
-    events: `typeahead:select`,
+    events: typeaheadColonselect,
     selector: String,
     data: js.Any,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
@@ -933,7 +933,7 @@ trait JQuery extends js.Object {
     */
   @JSName("on")
   def on_typeaheadselect(
-    events: `typeahead:select`,
+    events: typeaheadColonselect,
     selector: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native

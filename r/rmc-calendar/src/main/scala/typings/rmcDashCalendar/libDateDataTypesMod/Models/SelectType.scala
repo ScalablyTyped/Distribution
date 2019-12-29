@@ -1,13 +1,6 @@
 package typings.rmcDashCalendar.libDateDataTypesMod.Models
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.All
-import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.End
-import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Middle
-import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.None
-import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Only
-import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Single
-import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

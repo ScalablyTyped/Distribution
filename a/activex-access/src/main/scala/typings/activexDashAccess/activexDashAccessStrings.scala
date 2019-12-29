@@ -10,51 +10,6 @@ import scala.scalajs.js.annotation._
 
 object activexDashAccessStrings {
   @js.native
-  sealed trait `;LANGID=0x0401;CP=1256;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x0405;CP=1250;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x0408;CP=1253;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x0409;CP=1252;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x040A;CP=1252;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x040B;CP=1252;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x040D;CP=1255;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x040E;CP=1250;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x040F;CP=1252;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x0413;CP=1252;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x0414;CP=1252;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x0415;CP=1250;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x0419;CP=1251;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x041D;CP=1252;COUNTRY=0` extends OldConstants
-  
-  @js.native
-  sealed trait `;LANGID=0x041F;CP=1254;COUNTRY=0` extends OldConstants
-  
-  @js.native
   sealed trait Activate extends js.Object
   
   @js.native
@@ -277,7 +232,7 @@ object activexDashAccessStrings {
   sealed trait GotFocus extends js.Object
   
   @js.native
-  sealed trait `HTML (*DOThtml)`
+  sealed trait `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`
     extends AcOutputFormat
        with Constants
   
@@ -294,10 +249,10 @@ object activexDashAccessStrings {
   sealed trait ItemRemoved extends js.Object
   
   @js.native
-  sealed trait `Jet 2DOTx` extends DatabaseType
+  sealed trait `Jet 2Dotx` extends DatabaseType
   
   @js.native
-  sealed trait `Jet 3DOTx` extends DatabaseType
+  sealed trait `Jet 3Dotx` extends DatabaseType
   
   @js.native
   sealed trait KeyAscii extends js.Object
@@ -321,42 +276,42 @@ object activexDashAccessStrings {
   sealed trait LostFocus extends js.Object
   
   @js.native
-  sealed trait `MS-DOS Text (*DOTtxt)`
+  sealed trait `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
     extends AcOutputFormat
        with Constants
        with OldConstants
   
   @js.native
-  sealed trait `Microsoft Access (default)` extends DatabaseType
-  
-  @js.native
-  sealed trait `Microsoft Access Data Access Page (*DOThtm; *DOThtml)`
+  sealed trait `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`
     extends AcOutputFormat
        with Constants
   
   @js.native
-  sealed trait `Microsoft Active Server Pages (*DOTasp)`
+  sealed trait `Microsoft Access LeftparenthesisdefaultRightparenthesis` extends DatabaseType
+  
+  @js.native
+  sealed trait `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`
     extends AcOutputFormat
        with Constants
   
   @js.native
-  sealed trait `Microsoft Excel (*DOTxls)`
+  sealed trait `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`
+    extends AcOutputFormat
+       with Constants
+  
+  @js.native
+  sealed trait `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
     extends AcOutputFormat
        with Constants
        with OldConstants
   
   @js.native
-  sealed trait `Microsoft Excel Binary Workbook (*DOTxlsb)`
+  sealed trait `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`
     extends AcOutputFormat
        with Constants
   
   @js.native
-  sealed trait `Microsoft Excel Workbook (*DOTxlsx)`
-    extends AcOutputFormat
-       with Constants
-  
-  @js.native
-  sealed trait `Microsoft IIS (*DOThtx; *DOTidc)`
+  sealed trait `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`
     extends AcOutputFormat
        with Constants
   
@@ -397,7 +352,7 @@ object activexDashAccessStrings {
   sealed trait Open extends js.Object
   
   @js.native
-  sealed trait `PDF Format (*DOTpdf)`
+  sealed trait `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`
     extends AcOutputFormat
        with Constants
   
@@ -408,16 +363,16 @@ object activexDashAccessStrings {
   sealed trait Paint extends js.Object
   
   @js.native
-  sealed trait `Paradox 3DOTx` extends DatabaseType
+  sealed trait `Paradox 3Dotx` extends DatabaseType
   
   @js.native
-  sealed trait `Paradox 4DOTx` extends DatabaseType
+  sealed trait `Paradox 4Dotx` extends DatabaseType
   
   @js.native
-  sealed trait `Paradox 5DOTx` extends DatabaseType
+  sealed trait `Paradox 5Dotx` extends DatabaseType
   
   @js.native
-  sealed trait `Paradox 7DOTx` extends DatabaseType
+  sealed trait `Paradox 7Dotx` extends DatabaseType
   
   @js.native
   sealed trait PivotTableChange extends js.Object
@@ -462,7 +417,7 @@ object activexDashAccessStrings {
   sealed trait Retreat extends js.Object
   
   @js.native
-  sealed trait `Rich Text Format (*DOTrtf)`
+  sealed trait `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
     extends AcOutputFormat
        with Constants
        with OldConstants
@@ -480,10 +435,55 @@ object activexDashAccessStrings {
   sealed trait SelectionChange extends js.Object
   
   @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
+  sealed trait SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 extends OldConstants
+  
+  @js.native
   sealed trait Shift extends js.Object
   
   @js.native
-  sealed trait `Snapshot Format (*DOTsnp)`
+  sealed trait `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`
     extends AcOutputFormat
        with Constants
   
@@ -551,7 +551,7 @@ object activexDashAccessStrings {
   sealed trait X extends js.Object
   
   @js.native
-  sealed trait `XPS Format (*DOTxps)`
+  sealed trait `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`
     extends AcOutputFormat
        with Constants
   
@@ -568,7 +568,7 @@ object activexDashAccessStrings {
   sealed trait chartObject extends js.Object
   
   @js.native
-  sealed trait `dBase 5DOT0` extends DatabaseType
+  sealed trait `dBase 5Dot0` extends DatabaseType
   
   @js.native
   sealed trait `dBase III` extends DatabaseType
@@ -585,36 +585,6 @@ object activexDashAccessStrings {
   @js.native
   sealed trait pDisp extends js.Object
   
-  @scala.inline
-  def `;LANGID=0x0401;CP=1256;COUNTRY=0`: `;LANGID=0x0401;CP=1256;COUNTRY=0` = ";LANGID=0x0401;CP=1256;COUNTRY=0".asInstanceOf[`;LANGID=0x0401;CP=1256;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x0405;CP=1250;COUNTRY=0`: `;LANGID=0x0405;CP=1250;COUNTRY=0` = ";LANGID=0x0405;CP=1250;COUNTRY=0".asInstanceOf[`;LANGID=0x0405;CP=1250;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x0408;CP=1253;COUNTRY=0`: `;LANGID=0x0408;CP=1253;COUNTRY=0` = ";LANGID=0x0408;CP=1253;COUNTRY=0".asInstanceOf[`;LANGID=0x0408;CP=1253;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x0409;CP=1252;COUNTRY=0`: `;LANGID=0x0409;CP=1252;COUNTRY=0` = ";LANGID=0x0409;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x0409;CP=1252;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x040A;CP=1252;COUNTRY=0`: `;LANGID=0x040A;CP=1252;COUNTRY=0` = ";LANGID=0x040A;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x040A;CP=1252;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x040B;CP=1252;COUNTRY=0`: `;LANGID=0x040B;CP=1252;COUNTRY=0` = ";LANGID=0x040B;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x040B;CP=1252;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x040D;CP=1255;COUNTRY=0`: `;LANGID=0x040D;CP=1255;COUNTRY=0` = ";LANGID=0x040D;CP=1255;COUNTRY=0".asInstanceOf[`;LANGID=0x040D;CP=1255;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x040E;CP=1250;COUNTRY=0`: `;LANGID=0x040E;CP=1250;COUNTRY=0` = ";LANGID=0x040E;CP=1250;COUNTRY=0".asInstanceOf[`;LANGID=0x040E;CP=1250;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x040F;CP=1252;COUNTRY=0`: `;LANGID=0x040F;CP=1252;COUNTRY=0` = ";LANGID=0x040F;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x040F;CP=1252;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x0413;CP=1252;COUNTRY=0`: `;LANGID=0x0413;CP=1252;COUNTRY=0` = ";LANGID=0x0413;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x0413;CP=1252;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x0414;CP=1252;COUNTRY=0`: `;LANGID=0x0414;CP=1252;COUNTRY=0` = ";LANGID=0x0414;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x0414;CP=1252;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x0415;CP=1250;COUNTRY=0`: `;LANGID=0x0415;CP=1250;COUNTRY=0` = ";LANGID=0x0415;CP=1250;COUNTRY=0".asInstanceOf[`;LANGID=0x0415;CP=1250;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x0419;CP=1251;COUNTRY=0`: `;LANGID=0x0419;CP=1251;COUNTRY=0` = ";LANGID=0x0419;CP=1251;COUNTRY=0".asInstanceOf[`;LANGID=0x0419;CP=1251;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x041D;CP=1252;COUNTRY=0`: `;LANGID=0x041D;CP=1252;COUNTRY=0` = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x041D;CP=1252;COUNTRY=0`]
-  @scala.inline
-  def `;LANGID=0x041F;CP=1254;COUNTRY=0`: `;LANGID=0x041F;CP=1254;COUNTRY=0` = ";LANGID=0x041F;CP=1254;COUNTRY=0".asInstanceOf[`;LANGID=0x041F;CP=1254;COUNTRY=0`]
   @scala.inline
   def Activate: Activate = "Activate".asInstanceOf[Activate]
   @scala.inline
@@ -764,7 +734,7 @@ object activexDashAccessStrings {
   @scala.inline
   def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
   @scala.inline
-  def `HTML (*DOThtml)`: `HTML (*DOThtml)` = "HTML (*.html)".asInstanceOf[`HTML (*DOThtml)`]
+  def `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = "HTML (*.html)".asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
   @scala.inline
   def Headers: Headers = "Headers".asInstanceOf[Headers]
   @scala.inline
@@ -774,9 +744,9 @@ object activexDashAccessStrings {
   @scala.inline
   def ItemRemoved: ItemRemoved = "ItemRemoved".asInstanceOf[ItemRemoved]
   @scala.inline
-  def `Jet 2DOTx`: `Jet 2DOTx` = "Jet 2.x".asInstanceOf[`Jet 2DOTx`]
+  def `Jet 2Dotx`: `Jet 2Dotx` = "Jet 2.x".asInstanceOf[`Jet 2Dotx`]
   @scala.inline
-  def `Jet 3DOTx`: `Jet 3DOTx` = "Jet 3.x".asInstanceOf[`Jet 3DOTx`]
+  def `Jet 3Dotx`: `Jet 3Dotx` = "Jet 3.x".asInstanceOf[`Jet 3Dotx`]
   @scala.inline
   def KeyAscii: KeyAscii = "KeyAscii".asInstanceOf[KeyAscii]
   @scala.inline
@@ -792,21 +762,21 @@ object activexDashAccessStrings {
   @scala.inline
   def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
   @scala.inline
-  def `MS-DOS Text (*DOTtxt)`: `MS-DOS Text (*DOTtxt)` = "MS-DOS Text (*.txt)".asInstanceOf[`MS-DOS Text (*DOTtxt)`]
+  def `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = "MS-DOS Text (*.txt)".asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
   @scala.inline
-  def `Microsoft Access (default)`: `Microsoft Access (default)` = "Microsoft Access (default)".asInstanceOf[`Microsoft Access (default)`]
+  def `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = "Microsoft Access Data Access Page (*.htm; *.html)".asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
   @scala.inline
-  def `Microsoft Access Data Access Page (*DOThtm; *DOThtml)`: `Microsoft Access Data Access Page (*DOThtm; *DOThtml)` = "Microsoft Access Data Access Page (*.htm; *.html)".asInstanceOf[`Microsoft Access Data Access Page (*DOThtm; *DOThtml)`]
+  def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: `Microsoft Access LeftparenthesisdefaultRightparenthesis` = "Microsoft Access (default)".asInstanceOf[`Microsoft Access LeftparenthesisdefaultRightparenthesis`]
   @scala.inline
-  def `Microsoft Active Server Pages (*DOTasp)`: `Microsoft Active Server Pages (*DOTasp)` = "Microsoft Active Server Pages (*.asp)".asInstanceOf[`Microsoft Active Server Pages (*DOTasp)`]
+  def `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = "Microsoft Active Server Pages (*.asp)".asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
   @scala.inline
-  def `Microsoft Excel (*DOTxls)`: `Microsoft Excel (*DOTxls)` = "Microsoft Excel (*.xls)".asInstanceOf[`Microsoft Excel (*DOTxls)`]
+  def `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = "Microsoft Excel Binary Workbook (*.xlsb)".asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
   @scala.inline
-  def `Microsoft Excel Binary Workbook (*DOTxlsb)`: `Microsoft Excel Binary Workbook (*DOTxlsb)` = "Microsoft Excel Binary Workbook (*.xlsb)".asInstanceOf[`Microsoft Excel Binary Workbook (*DOTxlsb)`]
+  def `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = "Microsoft Excel (*.xls)".asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
   @scala.inline
-  def `Microsoft Excel Workbook (*DOTxlsx)`: `Microsoft Excel Workbook (*DOTxlsx)` = "Microsoft Excel Workbook (*.xlsx)".asInstanceOf[`Microsoft Excel Workbook (*DOTxlsx)`]
+  def `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = "Microsoft Excel Workbook (*.xlsx)".asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
   @scala.inline
-  def `Microsoft IIS (*DOThtx; *DOTidc)`: `Microsoft IIS (*DOThtx; *DOTidc)` = "Microsoft IIS (*.htx; *.idc)".asInstanceOf[`Microsoft IIS (*DOThtx; *DOTidc)`]
+  def `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = "Microsoft IIS (*.htx; *.idc)".asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
   @scala.inline
   def MouseDown: MouseDown = "MouseDown".asInstanceOf[MouseDown]
   @scala.inline
@@ -832,19 +802,19 @@ object activexDashAccessStrings {
   @scala.inline
   def Open: Open = "Open".asInstanceOf[Open]
   @scala.inline
-  def `PDF Format (*DOTpdf)`: `PDF Format (*DOTpdf)` = "PDF Format (*.pdf)".asInstanceOf[`PDF Format (*DOTpdf)`]
+  def `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = "PDF Format (*.pdf)".asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
   @scala.inline
   def Page: Page = "Page".asInstanceOf[Page]
   @scala.inline
   def Paint: Paint = "Paint".asInstanceOf[Paint]
   @scala.inline
-  def `Paradox 3DOTx`: `Paradox 3DOTx` = "Paradox 3.x".asInstanceOf[`Paradox 3DOTx`]
+  def `Paradox 3Dotx`: `Paradox 3Dotx` = "Paradox 3.x".asInstanceOf[`Paradox 3Dotx`]
   @scala.inline
-  def `Paradox 4DOTx`: `Paradox 4DOTx` = "Paradox 4.x".asInstanceOf[`Paradox 4DOTx`]
+  def `Paradox 4Dotx`: `Paradox 4Dotx` = "Paradox 4.x".asInstanceOf[`Paradox 4Dotx`]
   @scala.inline
-  def `Paradox 5DOTx`: `Paradox 5DOTx` = "Paradox 5.x".asInstanceOf[`Paradox 5DOTx`]
+  def `Paradox 5Dotx`: `Paradox 5Dotx` = "Paradox 5.x".asInstanceOf[`Paradox 5Dotx`]
   @scala.inline
-  def `Paradox 7DOTx`: `Paradox 7DOTx` = "Paradox 7.x".asInstanceOf[`Paradox 7DOTx`]
+  def `Paradox 7Dotx`: `Paradox 7Dotx` = "Paradox 7.x".asInstanceOf[`Paradox 7Dotx`]
   @scala.inline
   def PivotTableChange: PivotTableChange = "PivotTableChange".asInstanceOf[PivotTableChange]
   @scala.inline
@@ -874,7 +844,7 @@ object activexDashAccessStrings {
   @scala.inline
   def Retreat: Retreat = "Retreat".asInstanceOf[Retreat]
   @scala.inline
-  def `Rich Text Format (*DOTrtf)`: `Rich Text Format (*DOTrtf)` = "Rich Text Format (*.rtf)".asInstanceOf[`Rich Text Format (*DOTrtf)`]
+  def `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = "Rich Text Format (*.rtf)".asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
   @scala.inline
   def RowText: RowText = "RowText".asInstanceOf[RowText]
   @scala.inline
@@ -884,9 +854,39 @@ object activexDashAccessStrings {
   @scala.inline
   def SelectionChange: SelectionChange = "SelectionChange".asInstanceOf[SelectionChange]
   @scala.inline
+  def SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0401;CP=1256;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0405;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0408;CP=1253;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0409;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040A;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040B;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040D;CP=1255;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040E;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040F;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0413;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0414;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0415;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0419;CP=1251;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
+  @scala.inline
+  def SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041F;CP=1254;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0]
+  @scala.inline
   def Shift: Shift = "Shift".asInstanceOf[Shift]
   @scala.inline
-  def `Snapshot Format (*DOTsnp)`: `Snapshot Format (*DOTsnp)` = "Snapshot Format (*.snp)".asInstanceOf[`Snapshot Format (*DOTsnp)`]
+  def `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = "Snapshot Format (*.snp)".asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
   @scala.inline
   def SourceCtlName: SourceCtlName = "SourceCtlName".asInstanceOf[SourceCtlName]
   @scala.inline
@@ -930,7 +930,7 @@ object activexDashAccessStrings {
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   @scala.inline
-  def `XPS Format (*DOTxps)`: `XPS Format (*DOTxps)` = "XPS Format (*.xps)".asInstanceOf[`XPS Format (*DOTxps)`]
+  def `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = "XPS Format (*.xps)".asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
   @scala.inline
   def Y: Y = "Y".asInstanceOf[Y]
   @scala.inline
@@ -940,7 +940,7 @@ object activexDashAccessStrings {
   @scala.inline
   def chartObject: chartObject = "chartObject".asInstanceOf[chartObject]
   @scala.inline
-  def `dBase 5DOT0`: `dBase 5DOT0` = "dBase 5.0".asInstanceOf[`dBase 5DOT0`]
+  def `dBase 5Dot0`: `dBase 5Dot0` = "dBase 5.0".asInstanceOf[`dBase 5Dot0`]
   @scala.inline
   def `dBase III`: `dBase III` = "dBase III".asInstanceOf[`dBase III`]
   @scala.inline

@@ -17,12 +17,6 @@ import scala.scalajs.js.annotation._
 
 object momentStrings {
   @js.native
-  sealed trait `()` extends js.Object
-  
-  @js.native
-  sealed trait `(]` extends js.Object
-  
-  @js.native
   sealed trait D
     extends _date
        with All
@@ -56,6 +50,18 @@ object momentStrings {
   sealed trait LTS extends LongDateFormatKey
   
   @js.native
+  sealed trait LeftparenthesisRightparenthesis extends js.Object
+  
+  @js.native
+  sealed trait LeftparenthesisRightsquarebracket extends js.Object
+  
+  @js.native
+  sealed trait LeftsquarebracketRightparenthesis extends js.Object
+  
+  @js.native
+  sealed trait LeftsquarebracketRightsquarebracket extends js.Object
+  
+  @js.native
   sealed trait M
     extends Base
        with All
@@ -78,12 +84,6 @@ object momentStrings {
   sealed trait W
     extends _isoWeek
        with All
-  
-  @js.native
-  sealed trait `[)` extends js.Object
-  
-  @js.native
-  sealed trait `[]` extends js.Object
   
   @js.native
   sealed trait d_
@@ -398,10 +398,6 @@ object momentStrings {
   sealed trait yy extends RelativeTimeKey
   
   @scala.inline
-  def `()`: `()` = "()".asInstanceOf[`()`]
-  @scala.inline
-  def `(]`: `(]` = "(]".asInstanceOf[`(]`]
-  @scala.inline
   def D: D = "D".asInstanceOf[D]
   @scala.inline
   def DDD: DDD = "DDD".asInstanceOf[DDD]
@@ -422,6 +418,14 @@ object momentStrings {
   @scala.inline
   def LTS: LTS = "LTS".asInstanceOf[LTS]
   @scala.inline
+  def LeftparenthesisRightparenthesis: LeftparenthesisRightparenthesis = "()".asInstanceOf[LeftparenthesisRightparenthesis]
+  @scala.inline
+  def LeftparenthesisRightsquarebracket: LeftparenthesisRightsquarebracket = "(]".asInstanceOf[LeftparenthesisRightsquarebracket]
+  @scala.inline
+  def LeftsquarebracketRightparenthesis: LeftsquarebracketRightparenthesis = "[)".asInstanceOf[LeftsquarebracketRightparenthesis]
+  @scala.inline
+  def LeftsquarebracketRightsquarebracket: LeftsquarebracketRightsquarebracket = "[]".asInstanceOf[LeftsquarebracketRightsquarebracket]
+  @scala.inline
   def M: M = "M".asInstanceOf[M]
   @scala.inline
   def MM: MM = "MM".asInstanceOf[MM]
@@ -429,10 +433,6 @@ object momentStrings {
   def Q: Q = "Q".asInstanceOf[Q]
   @scala.inline
   def W: W = "W".asInstanceOf[W]
-  @scala.inline
-  def `[)`: `[)` = "[)".asInstanceOf[`[)`]
-  @scala.inline
-  def `[]`: `[]` = "[]".asInstanceOf[`[]`]
   @scala.inline
   def d_ : d_ = "d".asInstanceOf[d_]
   @scala.inline

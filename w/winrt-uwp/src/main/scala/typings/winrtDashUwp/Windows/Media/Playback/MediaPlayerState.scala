@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerState.buffering
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerState.closed
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerState.opening
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerState.paused
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerState.playing
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerState.stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

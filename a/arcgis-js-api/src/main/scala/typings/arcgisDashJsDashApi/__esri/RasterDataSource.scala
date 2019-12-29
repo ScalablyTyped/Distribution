@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.raster
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -18,7 +19,7 @@ trait RasterDataSource extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
     */
-  var `type`: String
+  var `type`: raster
   /**
     * The workspace where the raster resides as defined in the ArcGIS Server Manager.
     *
@@ -34,7 +35,7 @@ object RasterDataSource {
     dataSourceName: String,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String,
+    `type`: raster,
     workspaceId: String
   ): RasterDataSource = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSourceName = dataSourceName.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), workspaceId = workspaceId.asInstanceOf[js.Any])

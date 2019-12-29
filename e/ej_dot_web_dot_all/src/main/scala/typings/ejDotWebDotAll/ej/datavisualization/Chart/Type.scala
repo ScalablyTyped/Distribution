@@ -1,35 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Area
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Bar
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Bubble
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Candle
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Column
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Doughnut
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Funnel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.HiLo
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.HiLoOpenClose
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Line
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Pie
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Polar
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Pyramid
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Radar
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.RangeArea
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.RangeColumn
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Scatter
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Spline
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.SplineArea
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingArea
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingArea100
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingBar
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingBar100
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingColumn
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingColumn100
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingSplineArea
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingSplineArea100
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StepArea
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StepLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,151 +13,122 @@ sealed trait Type extends js.Object
 object Type extends js.Object {
   //string
   @js.native
-  sealed trait Area
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Area extends Type
   
   //string
   @js.native
-  sealed trait Bar
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Bar extends Type
   
   //string
   @js.native
-  sealed trait Bubble
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Bubble extends Type
   
   //string
   @js.native
-  sealed trait Candle
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Candle extends Type
   
   //string
   @js.native
-  sealed trait Column
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Column extends Type
   
   //string
   @js.native
-  sealed trait Doughnut
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Doughnut extends Type
   
   //string
   @js.native
-  sealed trait Funnel
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Funnel extends Type
   
   //string
   @js.native
-  sealed trait HiLo
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait HiLo extends Type
   
   //string
   @js.native
-  sealed trait HiLoOpenClose
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait HiLoOpenClose extends Type
   
   //string
   @js.native
-  sealed trait Line
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Line extends Type
   
   //string
   @js.native
-  sealed trait Pie
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Pie extends Type
   
   //string
   @js.native
-  sealed trait Polar
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Polar extends Type
   
   //string
   @js.native
-  sealed trait Pyramid
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Pyramid extends Type
   
   //string
   @js.native
-  sealed trait Radar
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Radar extends Type
   
   //string
   @js.native
-  sealed trait RangeArea
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait RangeArea extends Type
   
   //string
   @js.native
-  sealed trait RangeColumn
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait RangeColumn extends Type
   
   //string
   @js.native
-  sealed trait Scatter
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Scatter extends Type
   
   //string
   @js.native
-  sealed trait Spline
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait Spline extends Type
   
   //string
   @js.native
-  sealed trait SplineArea
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait SplineArea extends Type
   
   //string
   @js.native
-  sealed trait StackingArea
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingArea extends Type
   
   //string
   @js.native
-  sealed trait StackingArea100
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingArea100 extends Type
   
   //string
   @js.native
-  sealed trait StackingBar
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingBar extends Type
   
   //string
   @js.native
-  sealed trait StackingBar100
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingBar100 extends Type
   
   //string
   @js.native
-  sealed trait StackingColumn
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingColumn extends Type
   
   //string
   @js.native
-  sealed trait StackingColumn100
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingColumn100 extends Type
   
   //string
   @js.native
-  sealed trait StackingSplineArea
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingSplineArea extends Type
   
   //string
   @js.native
-  sealed trait StackingSplineArea100
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StackingSplineArea100 extends Type
   
   //string
   @js.native
-  sealed trait StepArea
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StepArea extends Type
   
   //string
   @js.native
-  sealed trait StepLine
-    extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
+  sealed trait StepLine extends Type
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Chart.Type with Double] = js.native
+  def apply(value: Double): js.UndefOr[Type with Double] = js.native
   /* 0 */ @js.native
   object Area extends TopLevel[Area with Double]
   

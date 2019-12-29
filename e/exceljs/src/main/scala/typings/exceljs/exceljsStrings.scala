@@ -10,27 +10,6 @@ import scala.scalajs.js.annotation._
 
 object exceljsStrings {
   @js.native
-  sealed trait `#DIV/0!` extends js.Object
-  
-  @js.native
-  sealed trait `#N/A` extends js.Object
-  
-  @js.native
-  sealed trait `#NAME?` extends js.Object
-  
-  @js.native
-  sealed trait `#NULL!` extends js.Object
-  
-  @js.native
-  sealed trait `#NUM!` extends js.Object
-  
-  @js.native
-  sealed trait `#REF!` extends js.Object
-  
-  @js.native
-  sealed trait `#VALUE!` extends js.Object
-  
-  @js.native
   sealed trait DEFLATE extends js.Object
   
   @js.native
@@ -38,6 +17,27 @@ object exceljsStrings {
   
   @js.native
   sealed trait None extends js.Object
+  
+  @js.native
+  sealed trait NumbersignDIVSlash0Exclamationmark extends js.Object
+  
+  @js.native
+  sealed trait NumbersignNAMEQuestionmark extends js.Object
+  
+  @js.native
+  sealed trait NumbersignNSlashA extends js.Object
+  
+  @js.native
+  sealed trait NumbersignNULLExclamationmark extends js.Object
+  
+  @js.native
+  sealed trait NumbersignNUMExclamationmark extends js.Object
+  
+  @js.native
+  sealed trait NumbersignREFExclamationmark extends js.Object
+  
+  @js.native
+  sealed trait NumbersignVALUEExclamationmark extends js.Object
   
   @js.native
   sealed trait STORE extends js.Object
@@ -532,25 +532,25 @@ object exceljsStrings {
   sealed trait whole extends js.Object
   
   @scala.inline
-  def `#DIV/0!`: `#DIV/0!` = "#DIV/0!".asInstanceOf[`#DIV/0!`]
-  @scala.inline
-  def `#N/A`: `#N/A` = "#N/A".asInstanceOf[`#N/A`]
-  @scala.inline
-  def `#NAME?`: `#NAME?` = "#NAME?".asInstanceOf[`#NAME?`]
-  @scala.inline
-  def `#NULL!`: `#NULL!` = "#NULL!".asInstanceOf[`#NULL!`]
-  @scala.inline
-  def `#NUM!`: `#NUM!` = "#NUM!".asInstanceOf[`#NUM!`]
-  @scala.inline
-  def `#REF!`: `#REF!` = "#REF!".asInstanceOf[`#REF!`]
-  @scala.inline
-  def `#VALUE!`: `#VALUE!` = "#VALUE!".asInstanceOf[`#VALUE!`]
-  @scala.inline
   def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
   @scala.inline
   def NA: NA = "NA".asInstanceOf[NA]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
+  @scala.inline
+  def NumbersignDIVSlash0Exclamationmark: NumbersignDIVSlash0Exclamationmark = "#DIV/0!".asInstanceOf[NumbersignDIVSlash0Exclamationmark]
+  @scala.inline
+  def NumbersignNAMEQuestionmark: NumbersignNAMEQuestionmark = "#NAME?".asInstanceOf[NumbersignNAMEQuestionmark]
+  @scala.inline
+  def NumbersignNSlashA: NumbersignNSlashA = "#N/A".asInstanceOf[NumbersignNSlashA]
+  @scala.inline
+  def NumbersignNULLExclamationmark: NumbersignNULLExclamationmark = "#NULL!".asInstanceOf[NumbersignNULLExclamationmark]
+  @scala.inline
+  def NumbersignNUMExclamationmark: NumbersignNUMExclamationmark = "#NUM!".asInstanceOf[NumbersignNUMExclamationmark]
+  @scala.inline
+  def NumbersignREFExclamationmark: NumbersignREFExclamationmark = "#REF!".asInstanceOf[NumbersignREFExclamationmark]
+  @scala.inline
+  def NumbersignVALUEExclamationmark: NumbersignVALUEExclamationmark = "#VALUE!".asInstanceOf[NumbersignVALUEExclamationmark]
   @scala.inline
   def STORE: STORE = "STORE".asInstanceOf[STORE]
   @scala.inline

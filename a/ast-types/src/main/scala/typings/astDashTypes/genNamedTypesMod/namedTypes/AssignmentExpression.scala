@@ -1,18 +1,18 @@
 package typings.astDashTypes.genNamedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
-import typings.astDashTypes.astDashTypesStrings.`%=`
-import typings.astDashTypes.astDashTypesStrings.`&=`
-import typings.astDashTypes.astDashTypesStrings.`*=`
-import typings.astDashTypes.astDashTypesStrings.`+=`
-import typings.astDashTypes.astDashTypesStrings.`-=`
-import typings.astDashTypes.astDashTypesStrings.`/=`
-import typings.astDashTypes.astDashTypesStrings.`<<=`
-import typings.astDashTypes.astDashTypesStrings.`=`
-import typings.astDashTypes.astDashTypesStrings.`>>=`
-import typings.astDashTypes.astDashTypesStrings.`>>>=`
-import typings.astDashTypes.astDashTypesStrings.`^=`
-import typings.astDashTypes.astDashTypesStrings.`|=`
+import typings.astDashTypes.astDashTypesStrings.AmpersandEqualssign
+import typings.astDashTypes.astDashTypesStrings.AsteriskEqualssign
+import typings.astDashTypes.astDashTypesStrings.Equalssign
+import typings.astDashTypes.astDashTypesStrings.GreaterthansignGreaterthansignEqualssign
+import typings.astDashTypes.astDashTypesStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign
+import typings.astDashTypes.astDashTypesStrings.LessthansignLessthansignEqualssign
+import typings.astDashTypes.astDashTypesStrings.PercentsignEqualssign
+import typings.astDashTypes.astDashTypesStrings.PlussignEqualssign
+import typings.astDashTypes.astDashTypesStrings.SlashEqualssign
+import typings.astDashTypes.astDashTypesStrings.VerticallineEqualssign
+import typings.astDashTypes.astDashTypesStrings.`-Equalssign`
+import typings.astDashTypes.astDashTypesStrings.`^Equalssign`
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.MemberExpressionKind
 import typings.astDashTypes.genKindsMod.NodeKind
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
      with NodeKind
      with PrintableKind {
   var left: PatternKind | MemberExpressionKind
-  var operator: `=` | `+=` | `-=` | `*=` | `/=` | `%=` | `<<=` | `>>=` | `>>>=` | `|=` | `^=` | `&=`
+  var operator: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign
   var right: ExpressionKind
   var `type`: typings.astDashTypes.astDashTypesStrings.AssignmentExpression
 }

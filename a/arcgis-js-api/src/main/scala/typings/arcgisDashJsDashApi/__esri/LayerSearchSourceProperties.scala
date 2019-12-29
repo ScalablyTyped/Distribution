@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.__esri
 
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,6 +33,12 @@ trait LayerSearchSourceProperties extends SearchSourceProperties {
     */
   var name: js.UndefOr[String] = js.undefined
   /**
+    * One or more field names used to order the query results. Specfiy `ASC` (ascending) or `DESC` (descending) after the field name to control the order. The default order is `ASC`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#orderByFields)
+    */
+  var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
+  /**
     * An array of string values representing the names of fields in the feature layer to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#searchFields)
@@ -60,13 +65,14 @@ object LayerSearchSourceProperties {
     displayField: String = null,
     exactMatch: js.UndefOr[Boolean] = js.undefined,
     filter: SearchSourceFilter = null,
-    getResults: /* params */ js.Any => IPromise[js.Array[SearchResult]] = null,
-    getSuggestions: /* params */ js.Any => IPromise[js.Array[SuggestResult]] = null,
+    getResults: /* params */ js.Any => js.Promise[js.Array[SearchResult]] = null,
+    getSuggestions: /* params */ js.Any => js.Promise[js.Array[SuggestResult]] = null,
     layer: LayerProperties = null,
     maxResults: Int | Double = null,
     maxSuggestions: Int | Double = null,
     minSuggestCharacters: Int | Double = null,
     name: String = null,
+    orderByFields: js.Array[String] = null,
     outFields: js.Array[String] = null,
     placeholder: String = null,
     popupEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -94,6 +100,7 @@ object LayerSearchSourceProperties {
     if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
     if (minSuggestCharacters != null) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (orderByFields != null) __obj.updateDynamic("orderByFields")(orderByFields.asInstanceOf[js.Any])
     if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])

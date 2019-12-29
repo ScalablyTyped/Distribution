@@ -12,7 +12,8 @@ class FromRssFeedRuleCondition protected () extends js.Object {
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: Boolean = js.native
   var FromRssFeed: js.Any = js.native
-  var `Outlook.FromRssFeedRuleCondition_typekey`: FromRssFeedRuleCondition = js.native
+  @JSName("Outlook.FromRssFeedRuleCondition_typekey")
+  var OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

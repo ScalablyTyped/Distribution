@@ -36,7 +36,8 @@ class Property protected () extends js.Object {
   val Type: Double = js.native
   /** Returns/Sets the Property Value */
   var Value: js.Any = js.native
-  var `WIA.Property_typekey`: Property = js.native
+  @JSName("WIA.Property_typekey")
+  var WIADotProperty_typekey: Property = js.native
   /** Returns the specified item in the vector by position */
   /** Returns a Vector of valid Property Values if the SubType is ListSubType or valid flag Values that can be ored together if the SubType is FlagSubType */
   def SubTypeValues(Index: Double): js.Any = js.native

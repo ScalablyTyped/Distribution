@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Deleted
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Edited
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Restored
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Visited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

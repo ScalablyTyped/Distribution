@@ -1,6 +1,6 @@
 package typings.std
 
-import typings.std.stdNumbers.`false`
+import typings.std.stdBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

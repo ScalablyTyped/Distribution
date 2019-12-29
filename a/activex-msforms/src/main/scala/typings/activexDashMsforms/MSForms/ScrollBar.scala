@@ -13,7 +13,8 @@ class ScrollBar protected () extends js.Object {
   var Enabled: Boolean = js.native
   var ForeColor: Double = js.native
   var LargeChange: Double = js.native
-  var `MSForms.ScrollBar_typekey`: ScrollBar = js.native
+  @JSName("MSForms.ScrollBar_typekey")
+  var MSFormsDotScrollBar_typekey: ScrollBar = js.native
   var Max: Double = js.native
   var Min: Double = js.native
   var MouseIcon: StdPicture = js.native

@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedDuration
-import typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedUnit
-import typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedWork
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

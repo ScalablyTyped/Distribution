@@ -1,7 +1,6 @@
 package typings.stringDashFormat
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.stringDashFormat.stringDashFormatMod.Transformers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

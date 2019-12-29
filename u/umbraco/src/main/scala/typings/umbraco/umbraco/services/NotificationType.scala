@@ -1,10 +1,6 @@
 package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.TopLevel
-import typings.umbraco.umbraco.services.NotificationType.error
-import typings.umbraco.umbraco.services.NotificationType.info
-import typings.umbraco.umbraco.services.NotificationType.success
-import typings.umbraco.umbraco.services.NotificationType.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

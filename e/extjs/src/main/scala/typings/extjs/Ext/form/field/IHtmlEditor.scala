@@ -3,6 +3,7 @@ package typings.extjs.Ext.form.field
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.form.IFieldContainer
+import typings.extjs.Ext.toolbar.IToolbar
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,17 +37,17 @@ import scala.scalajs.js.annotation._
   		* @param html String The HTML to be cleaned
   		* @returns String The cleaned HTML
   		*/
-  var cleanHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[java.lang.String], java.lang.String]] = js.undefined
+  var cleanHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[String], String]] = js.undefined
   /** [Method] Clear any invalid styles messages for this field  */
   var clearInvalid: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var createLinkText: js.UndefOr[java.lang.String] = js.undefined
+  var createLinkText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var defaultButtonUI: js.UndefOr[java.lang.String] = js.undefined
+  var defaultButtonUI: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var defaultLinkValue: js.UndefOr[java.lang.String] = js.undefined
+  var defaultLinkValue: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var defaultValue: js.UndefOr[java.lang.String] = js.undefined
+  var defaultValue: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var enableAlignments: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -67,9 +68,7 @@ import scala.scalajs.js.annotation._
   		* @param cmd String The Midas command
   		* @param value String/Boolean The value to pass to the command
   		*/
-  var execCmd: js.UndefOr[
-    js.Function2[/* cmd */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var execCmd: js.UndefOr[js.Function2[/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Only relevant if the instance s isFileUpload method returns true
   		* @returns HTMLElement
   		*/
@@ -99,7 +98,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the name attribute of the field
   		* @returns String name The field name
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the parameter s that would be included in a standard form submit for this field
   		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -107,7 +106,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the editor s toolbar
   		* @returns Ext.toolbar.Toolbar
   		*/
-  var getToolbar: js.UndefOr[js.Function0[typings.extjs.Ext.toolbar.IToolbar]] = js.undefined
+  var getToolbar: js.UndefOr[js.Function0[IToolbar]] = js.undefined
   /** [Method] Returns the current data value of the field
   		* @returns Object value The field value
   		*/
@@ -121,7 +120,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Inserts the passed text at the current cursor position
   		* @param text String
   		*/
-  var insertAtCursor: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var insertAtCursor: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
   		* @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
   		*/
@@ -147,7 +146,7 @@ import scala.scalajs.js.annotation._
   		*/
   var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Property] (Object) */
   var originalValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Pushes the value of the textarea into the iframe editor  */
@@ -156,9 +155,7 @@ import scala.scalajs.js.annotation._
   		* @param cmd String The Midas command
   		* @param value String/Boolean The value to pass to the command
   		*/
-  var relayCmd: js.UndefOr[
-    js.Function2[/* cmd */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var relayCmd: js.UndefOr[js.Function2[/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
   var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Resets the field s originalValue property so it matches the current value  */
@@ -210,12 +207,12 @@ object IHtmlEditor {
     buttonTips: js.Any = null,
     checkChange: () => Unit = null,
     checkDirty: () => Unit = null,
-    cleanHtml: /* html */ js.UndefOr[java.lang.String] => java.lang.String = null,
+    cleanHtml: /* html */ js.UndefOr[String] => String = null,
     clearInvalid: () => Unit = null,
-    createLinkText: java.lang.String = null,
-    defaultButtonUI: java.lang.String = null,
-    defaultLinkValue: java.lang.String = null,
-    defaultValue: java.lang.String = null,
+    createLinkText: String = null,
+    defaultButtonUI: String = null,
+    defaultLinkValue: String = null,
+    defaultValue: String = null,
     enableAlignments: js.UndefOr[Boolean] = js.undefined,
     enableColors: js.UndefOr[Boolean] = js.undefined,
     enableFont: js.UndefOr[Boolean] = js.undefined,
@@ -224,31 +221,31 @@ object IHtmlEditor {
     enableLinks: js.UndefOr[Boolean] = js.undefined,
     enableLists: js.UndefOr[Boolean] = js.undefined,
     enableSourceEdit: js.UndefOr[Boolean] = js.undefined,
-    execCmd: (/* cmd */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => Unit = null,
+    execCmd: (/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit = null,
     extractFileInput: () => _ | HTMLElement = null,
     focus: (/* selectText */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any]) => IComponent = null,
     fontFamilies: Array = null,
     getDocMarkup: () => Unit = null,
     getErrors: js.UndefOr[js.Any] => _ | Array = null,
     getModelData: () => _ = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getSubmitData: () => _ = null,
-    getToolbar: () => typings.extjs.Ext.toolbar.IToolbar = null,
+    getToolbar: () => IToolbar = null,
     getValue: () => _ = null,
     iframeAttrTpl: js.Any = null,
     initField: () => Unit = null,
     initValue: () => Unit = null,
-    insertAtCursor: /* text */ js.UndefOr[java.lang.String] => Unit = null,
+    insertAtCursor: /* text */ js.UndefOr[String] => Unit = null,
     isDirty: () => _ | Boolean = null,
     isEqual: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ | Boolean = null,
     isFileUpload: () => _ | Boolean = null,
     isFormField: js.UndefOr[Boolean] = js.undefined,
     isValid: () => _ | Boolean = null,
     markInvalid: js.UndefOr[js.Any] => Unit = null,
-    name: java.lang.String = null,
+    name: String = null,
     originalValue: js.Any = null,
     pushValue: () => Unit = null,
-    relayCmd: (/* cmd */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => Unit = null,
+    relayCmd: (/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit = null,
     reset: () => Unit = null,
     resetOriginalValue: () => Unit = null,
     setReadOnly: /* readOnly */ js.UndefOr[Boolean] => Unit = null,

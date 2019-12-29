@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintTaskCompletion.abandoned
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintTaskCompletion.canceled
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintTaskCompletion.failed
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintTaskCompletion.submitted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

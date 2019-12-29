@@ -5,23 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Filter extends js.Object {
-  var compositeFilter: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.CompositeFilter
-  ] = js.undefined
-  var fieldFilter: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.FieldFilter
-  ] = js.undefined
-  var unaryFilter: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.UnaryFilter
-  ] = js.undefined
+  var compositeFilter: js.UndefOr[CompositeFilter] = js.undefined
+  var fieldFilter: js.UndefOr[FieldFilter] = js.undefined
+  var unaryFilter: js.UndefOr[UnaryFilter] = js.undefined
 }
 
 object Filter {
   @scala.inline
   def apply(
-    compositeFilter: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.CompositeFilter = null,
-    fieldFilter: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.FieldFilter = null,
-    unaryFilter: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.UnaryFilter = null
+    compositeFilter: CompositeFilter = null,
+    fieldFilter: FieldFilter = null,
+    unaryFilter: UnaryFilter = null
   ): Filter = {
     val __obj = js.Dynamic.literal()
     if (compositeFilter != null) __obj.updateDynamic("compositeFilter")(compositeFilter.asInstanceOf[js.Any])

@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libScrollMod extends js.Object {
   val DATA_IS_SCROLLABLE_ATTRIBUTE: `data-is-scrollable` = js.native
+  def allowOverscrollOnElement(element: Null, events: EventGroup): Unit = js.native
+  def allowOverscrollOnElement(element: HTMLElement, events: EventGroup): Unit = js.native
   def allowScrollOnElement(element: Null, events: EventGroup): Unit = js.native
   def allowScrollOnElement(element: HTMLElement, events: EventGroup): Unit = js.native
   def disableBodyScroll(): Unit = js.native

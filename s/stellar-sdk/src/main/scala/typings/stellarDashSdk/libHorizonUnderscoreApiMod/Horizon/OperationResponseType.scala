@@ -1,18 +1,6 @@
 package typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon
 
 import org.scalablytyped.runtime.TopLevel
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.accountMerge
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.allowTrust
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.bumpSequence
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.changeTrust
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.createAccount
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.createPassiveOffer
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.inflation
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.manageData
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.manageOffer
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.pathPayment
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.payment
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.setOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

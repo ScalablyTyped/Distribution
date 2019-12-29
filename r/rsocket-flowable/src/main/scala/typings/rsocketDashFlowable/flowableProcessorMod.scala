@@ -1,6 +1,5 @@
 package typings.rsocketDashFlowable
 
-import typings.rsocketDashFlowable.flowableProcessorMod.FlowableProcessor
 import typings.std.Error
 import typings.std.Partial
 import scala.scalajs.js

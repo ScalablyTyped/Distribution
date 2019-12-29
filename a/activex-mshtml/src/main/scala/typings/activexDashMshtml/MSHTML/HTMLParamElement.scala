@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLParamElement")
 @js.native
 class HTMLParamElement protected () extends js.Object {
-  var `MSHTML.HTMLParamElement_typekey`: HTMLParamElement = js.native
+  @JSName("MSHTML.HTMLParamElement_typekey")
+  var MSHTMLDotHTMLParamElement_typekey: HTMLParamElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

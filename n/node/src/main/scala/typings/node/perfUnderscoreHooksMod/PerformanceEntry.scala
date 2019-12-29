@@ -14,7 +14,7 @@ trait PerformanceEntry extends js.Object {
     * The type of the performance entry.
     * Currently it may be one of: 'node', 'mark', 'measure', 'gc', or 'function'.
     */
-  val entryType: java.lang.String
+  val entryType: String
   /**
     * When performanceEntry.entryType is equal to 'gc', the performance.kind property identifies
     * the type of garbage collection operation that occurred.
@@ -24,7 +24,7 @@ trait PerformanceEntry extends js.Object {
   /**
     * The name of the performance entry.
     */
-  val name: java.lang.String
+  val name: String
   /**
     * The high resolution millisecond timestamp marking the starting time of the Performance Entry.
     */
@@ -33,13 +33,7 @@ trait PerformanceEntry extends js.Object {
 
 object PerformanceEntry {
   @scala.inline
-  def apply(
-    duration: Double,
-    entryType: java.lang.String,
-    name: java.lang.String,
-    startTime: Double,
-    kind: Int | Double = null
-  ): PerformanceEntry = {
+  def apply(duration: Double, entryType: String, name: String, startTime: Double, kind: Int | Double = null): PerformanceEntry = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceEntry]

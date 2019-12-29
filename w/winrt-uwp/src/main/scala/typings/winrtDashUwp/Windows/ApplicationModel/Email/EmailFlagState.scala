@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.cleared
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.completed
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.flagged
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.unflagged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

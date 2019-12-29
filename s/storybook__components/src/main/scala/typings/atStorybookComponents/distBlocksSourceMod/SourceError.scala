@@ -1,8 +1,6 @@
 package typings.atStorybookComponents.distBlocksSourceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookComponents.distBlocksSourceMod.SourceError.NO_STORY
-import typings.atStorybookComponents.distBlocksSourceMod.SourceError.SOURCE_UNAVAILABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

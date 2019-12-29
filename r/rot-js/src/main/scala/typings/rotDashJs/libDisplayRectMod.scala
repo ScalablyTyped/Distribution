@@ -1,7 +1,6 @@
 package typings.rotDashJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rotDashJs.libDisplayRectMod.Rect
 import typings.rotDashJs.libDisplayTypesMod.DisplayData
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

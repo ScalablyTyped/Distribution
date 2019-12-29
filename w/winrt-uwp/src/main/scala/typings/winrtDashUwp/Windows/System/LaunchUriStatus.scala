@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.LaunchUriStatus.appUnavailable
-import typings.winrtDashUwp.Windows.System.LaunchUriStatus.protocolUnavailable
-import typings.winrtDashUwp.Windows.System.LaunchUriStatus.success
-import typings.winrtDashUwp.Windows.System.LaunchUriStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

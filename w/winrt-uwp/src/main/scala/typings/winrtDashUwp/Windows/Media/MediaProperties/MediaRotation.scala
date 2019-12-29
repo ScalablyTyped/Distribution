@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise180Degrees
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise270Degrees
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise90Degrees
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

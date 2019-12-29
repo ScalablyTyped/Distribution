@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.ListBox")
 @js.native
 class ListBox protected () extends js.Object {
-  var `Access.ListBox_typekey`: ListBox = js.native
+  @JSName("Access.ListBox_typekey")
+  var AccessDotListBox_typekey: ListBox = js.native
   var AddColon: Boolean = js.native
   var AfterUpdate: String = js.native
   var AfterUpdateMacro: String = js.native

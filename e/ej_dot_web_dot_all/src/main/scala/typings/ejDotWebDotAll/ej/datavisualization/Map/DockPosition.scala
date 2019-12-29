@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Map.DockPosition.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.Map.DockPosition.Left
-import typings.ejDotWebDotAll.ej.datavisualization.Map.DockPosition.Right
-import typings.ejDotWebDotAll.ej.datavisualization.Map.DockPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

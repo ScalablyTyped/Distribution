@@ -1,11 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.SymbolPath.BACKWARD_CLOSED_ARROW
-import typings.googlemaps.google.maps.SymbolPath.BACKWARD_OPEN_ARROW
-import typings.googlemaps.google.maps.SymbolPath.CIRCLE
-import typings.googlemaps.google.maps.SymbolPath.FORWARD_CLOSED_ARROW
-import typings.googlemaps.google.maps.SymbolPath.FORWARD_OPEN_ARROW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

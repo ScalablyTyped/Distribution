@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Kanban
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Kanban.FormPosition.Bottom
-import typings.ejDotWebDotAll.ej.Kanban.FormPosition.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -33,17 +33,8 @@ class FilterExpression protected () extends js.Object {
     *  - Sdk.Query.OptionSets
     *  - Sdk.Query.Strings
     */
-  def addCondition(
-    entityName: java.lang.String,
-    attributeName: java.lang.String,
-    conditionOperator: ConditionOperator
-  ): Unit = js.native
-  def addCondition(
-    entityName: java.lang.String,
-    attributeName: java.lang.String,
-    conditionOperator: ConditionOperator,
-    values: ValueBase
-  ): Unit = js.native
+  def addCondition(entityName: String, attributeName: String, conditionOperator: ConditionOperator): Unit = js.native
+  def addCondition(entityName: String, attributeName: String, conditionOperator: ConditionOperator, values: ValueBase): Unit = js.native
   /**
     * Adds a condition to the filter expression setting the attribute name, condition operator, and values.
     * @param conditionExpression The expression that will set the condition.
@@ -74,7 +65,7 @@ class FilterExpression protected () extends js.Object {
   /**
     * Gets whether the expression is part of a quick find query.
     */
-  def getIsQuickFindFilter(): scala.Boolean = js.native
+  def getIsQuickFindFilter(): Boolean = js.native
   /**
     * Sets the filter operator.
     * @param filterOperator The filter operator.
@@ -84,6 +75,6 @@ class FilterExpression protected () extends js.Object {
     * Sets whether the expression is part of a quick find query.
     * @param isQuickFind True if the filter is part of a quick find query; otherwise, false.
     */
-  def setIsQuickFindFilter(isQuickFind: scala.Boolean): Unit = js.native
+  def setIsQuickFindFilter(isQuickFind: Boolean): Unit = js.native
 }
 

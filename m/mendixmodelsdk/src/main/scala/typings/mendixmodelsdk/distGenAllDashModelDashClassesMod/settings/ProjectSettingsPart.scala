@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.settings
 
+import typings.mendixmodelsdk.distGenSettingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -26,6 +27,6 @@ abstract class ProjectSettingsPart protected ()
 @js.native
 object ProjectSettingsPart extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenSettingsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

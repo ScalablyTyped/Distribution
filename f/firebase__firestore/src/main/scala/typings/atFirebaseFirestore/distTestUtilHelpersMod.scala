@@ -1,6 +1,6 @@
 package typings.atFirebaseFirestore
 
-import typings.atFirebaseFirestore.atFirebaseFirestoreStrings.`<DELETE>`
+import typings.atFirebaseFirestore.atFirebaseFirestoreStrings.LessthansignDELETEGreaterthansign
 import typings.atFirebaseFirestore.distSrcApiBlobMod.Blob
 import typings.atFirebaseFirestore.distSrcApiUserUnderscoreDataUnderscoreConverterMod.DocumentKeyReference
 import typings.atFirebaseFirestore.distSrcCoreDatabaseUnderscoreInfoMod.DatabaseId
@@ -43,7 +43,6 @@ import typings.atFirebaseFirestore.distSrcRemoteRemoteUnderscoreEventMod.TargetC
 import typings.atFirebaseFirestore.distSrcUtilObjMod.Dict
 import typings.atFirebaseFirestore.distSrcUtilSortedUnderscoreMapMod.SortedMap
 import typings.atFirebaseFirestore.distSrcUtilSortedUnderscoreSetMod.SortedSet
-import typings.atFirebaseFirestore.distTestUtilHelpersMod.TestSnapshotVersion
 import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.OrderByDirection
 import typings.std.Error
 import scala.scalajs.js
@@ -56,7 +55,7 @@ object distTestUtilHelpersMod extends js.Object {
   @js.native
   class DocComparator () extends js.Object
   
-  val DELETE_SENTINEL: `<DELETE>` = js.native
+  val DELETE_SENTINEL: LessthansignDELETEGreaterthansign = js.native
   def ackTarget(docsOrKeys: (Document | String)*): TargetChange = js.native
   def addTargetMapping(docsOrKeys: (Document | String)*): TargetChange = js.native
   def applyDocChanges(view: View, docsOrKeys: (Document | DocumentKey)*): ViewChange = js.native

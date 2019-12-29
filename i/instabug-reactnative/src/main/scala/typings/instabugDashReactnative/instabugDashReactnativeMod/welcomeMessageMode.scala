@@ -1,9 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.welcomeMessageMode.beta
-import typings.instabugDashReactnative.instabugDashReactnativeMod.welcomeMessageMode.disabled
-import typings.instabugDashReactnative.instabugDashReactnativeMod.welcomeMessageMode.live
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

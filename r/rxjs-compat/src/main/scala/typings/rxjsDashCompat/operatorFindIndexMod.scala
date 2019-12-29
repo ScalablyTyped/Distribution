@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorFindIndexMod extends js.Object {
   def findIndex[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -17,7 +16,6 @@ object operatorFindIndexMod extends js.Object {
     ]
   ): js.Any = js.native
   def findIndex[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

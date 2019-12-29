@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/operators/exhaust", JSImport.Namespace)
 @js.native
 object internalOperatorsExhaustMod extends js.Object {
-  def exhaust[T](): OperatorFunction[ObservableInput[T], T] = js.native
+  def exhaust[R](): OperatorFunction[_, R] = js.native
   @JSName("exhaust")
-  def exhaust_R[R](): OperatorFunction[_, R] = js.native
+  def exhaust_T[T](): OperatorFunction[ObservableInput[T], T] = js.native
 }
 

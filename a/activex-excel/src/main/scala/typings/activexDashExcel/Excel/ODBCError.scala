@@ -10,7 +10,8 @@ class ODBCError protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   val ErrorString: String = js.native
-  var `Excel.ODBCError_typekey`: ODBCError = js.native
+  @JSName("Excel.ODBCError_typekey")
+  var ExcelDotODBCError_typekey: ODBCError = js.native
   val Parent: js.Any = js.native
   val SqlState: String = js.native
 }

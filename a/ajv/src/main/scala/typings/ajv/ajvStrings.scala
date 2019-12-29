@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object ajvStrings {
   @js.native
-  sealed trait DOLLARid extends js.Object
+  sealed trait $id extends js.Object
   
   @js.native
   sealed trait all extends js.Object
@@ -45,7 +45,7 @@ object ajvStrings {
   sealed trait string extends js.Object
   
   @scala.inline
-  def DOLLARid: DOLLARid = "$id".asInstanceOf[DOLLARid]
+  def $id: $id = "$id".asInstanceOf[$id]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

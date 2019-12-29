@@ -7,7 +7,6 @@ import typings.atFirebaseDatabase.distSrcCoreViewChangeMod.Change
 import typings.atFirebaseDatabase.distSrcCoreViewChildChangeAccumulatorMod.ChildChangeAccumulator
 import typings.atFirebaseDatabase.distSrcCoreViewFilterNodeFilterMod.NodeFilter
 import typings.atFirebaseDatabase.distSrcCoreViewViewCacheMod.ViewCache
-import typings.atFirebaseDatabase.distSrcCoreViewViewProcessorMod.ProcessorResult
 import typings.atFirebaseDatabase.distSrcCoreWriteTreeMod.WriteTreeRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`

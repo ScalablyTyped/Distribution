@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSubfolderCreationMode.createSubfoldersFromExifDate
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSubfolderCreationMode.createSubfoldersFromFileDate
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSubfolderCreationMode.doNotCreateSubfolders
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSubfolderCreationMode.keepOriginalFolderStructure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

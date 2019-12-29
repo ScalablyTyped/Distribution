@@ -1,7 +1,7 @@
 package typings.reactDashJsonDashView.reactDashJsonDashViewMod
 
 import typings.react.reactMod.CSSProperties
-import typings.reactDashJsonDashView.reactDashJsonDashViewNumbers.`false`
+import typings.reactDashJsonDashView.reactDashJsonDashViewBooleans.`false`
 import typings.reactDashJsonDashView.reactDashJsonDashViewStrings.circle
 import typings.reactDashJsonDashView.reactDashJsonDashViewStrings.square
 import typings.reactDashJsonDashView.reactDashJsonDashViewStrings.triangle

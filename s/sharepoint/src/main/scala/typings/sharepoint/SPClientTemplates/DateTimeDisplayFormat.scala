@@ -1,9 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.DateOnly
-import typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.DateTime
-import typings.sharepoint.SPClientTemplates.DateTimeDisplayFormat.TimeOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

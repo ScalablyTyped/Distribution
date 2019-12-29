@@ -2,7 +2,7 @@ package typings.fullcalendar.srcExportsMod
 
 import typings.fullcalendar.eventDateProfileMod.Default
 import typings.fullcalendar.eventDateProfileMod.default
-import typings.fullcalendar.fullcalendarNumbers.`false`
+import typings.fullcalendar.fullcalendarBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

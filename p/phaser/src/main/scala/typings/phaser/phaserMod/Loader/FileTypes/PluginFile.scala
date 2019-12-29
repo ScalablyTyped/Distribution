@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.PluginFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
@@ -26,33 +27,16 @@ class PluginFile protected ()
     * @param mapping If this plugin is to be injected into the Scene, this is the property key used.
     * @param xhrSettings Extra XHR Settings specifically for this file.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: PluginFileConfig) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: PluginFileConfig, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, start: Boolean) = this()
+  def this(loader: LoaderPlugin, key: String) = this()
+  def this(loader: LoaderPlugin, key: PluginFileConfig) = this()
+  def this(loader: LoaderPlugin, key: String, url: String) = this()
+  def this(loader: LoaderPlugin, key: PluginFileConfig, url: String) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, start: Boolean) = this()
+  def this(loader: LoaderPlugin, key: PluginFileConfig, url: String, start: Boolean) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, start: Boolean, mapping: String) = this()
+  def this(loader: LoaderPlugin, key: PluginFileConfig, url: String, start: Boolean, mapping: String) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: PluginFileConfig,
-    url: String,
-    start: Boolean
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    url: String,
-    start: Boolean,
-    mapping: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: PluginFileConfig,
-    url: String,
-    start: Boolean,
-    mapping: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     url: String,
     start: Boolean,
@@ -60,7 +44,7 @@ class PluginFile protected ()
     xhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: PluginFileConfig,
     url: String,
     start: Boolean,

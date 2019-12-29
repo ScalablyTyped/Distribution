@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object pouchdbDashUpsertStrings {
   @js.native
-  sealed trait Empty extends _CancelUpsert
+  sealed trait _empty extends _CancelUpsert
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
 }
 

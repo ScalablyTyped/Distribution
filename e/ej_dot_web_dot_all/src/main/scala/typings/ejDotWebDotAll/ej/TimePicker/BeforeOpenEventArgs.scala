@@ -10,7 +10,7 @@ trait BeforeOpenEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the TimePicker model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TimePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previously selected time value
     */
   var prevTime: js.UndefOr[String] = js.undefined
@@ -26,7 +26,7 @@ object BeforeOpenEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.TimePicker.Model = null,
+    model: Model = null,
     prevTime: String = null,
     `type`: String = null,
     value: String = null

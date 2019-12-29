@@ -3,7 +3,6 @@ package typings.cassandraDashDriver
 import typings.cassandraDashDriver.cassandraDashDriverMod.errors.AuthenticationError
 import typings.cassandraDashDriver.cassandraDashDriverMod.errors.OperationTimedOutError
 import typings.cassandraDashDriver.cassandraDashDriverMod.errors.ResponseError
-import typings.cassandraDashDriver.libMetricsMod.metrics.ClientMetrics
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

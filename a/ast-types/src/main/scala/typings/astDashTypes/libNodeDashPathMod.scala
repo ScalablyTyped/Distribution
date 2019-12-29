@@ -3,8 +3,6 @@ package typings.astDashTypes
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.astDashTypes.libNodeDashPathMod.NodePath
-import typings.astDashTypes.libNodeDashPathMod.NodePathConstructor
 import typings.astDashTypes.libPathMod.Path
 import typings.astDashTypes.libScopeMod.Scope
 import typings.astDashTypes.libTypesMod.ASTNode

@@ -1,10 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.SplitAppMode.HideMode
-import typings.openui5.sap.m.SplitAppMode.PopoverMode
-import typings.openui5.sap.m.SplitAppMode.ShowHideMode
-import typings.openui5.sap.m.SplitAppMode.StretchCompressMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

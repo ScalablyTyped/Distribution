@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.appInstalled
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.appNotInstalled
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemSystemStore
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncAction

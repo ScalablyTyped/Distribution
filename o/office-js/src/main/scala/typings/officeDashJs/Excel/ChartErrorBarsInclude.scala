@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartErrorBarsInclude.both
-import typings.officeDashJs.Excel.ChartErrorBarsInclude.minusValues
-import typings.officeDashJs.Excel.ChartErrorBarsInclude.plusValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

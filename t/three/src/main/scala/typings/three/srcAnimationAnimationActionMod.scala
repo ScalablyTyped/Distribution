@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcAnimationAnimationActionMod.AnimationAction
 import typings.three.srcAnimationAnimationClipMod.AnimationClip
 import typings.three.srcAnimationAnimationMixerMod.AnimationMixer
 import typings.three.srcConstantsMod.AnimationActionLoopStyles

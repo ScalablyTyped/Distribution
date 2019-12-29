@@ -25,6 +25,70 @@ trait JSX extends _Node
 
 object JSX {
   @scala.inline
+  def JSXText(
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXText,
+    value: String,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): JSX = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSX]
+  }
+  @scala.inline
+  def JSXOpeningFragment(
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXOpeningFragment,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): JSX = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSX]
+  }
+  @scala.inline
+  def JSXMemberExpression(
+    `object`: typings.atBabelTypes.atBabelTypesMod.JSXMemberExpression | JSXIdentifier,
+    property: JSXIdentifier,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXMemberExpression,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): JSX = {
+    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSX]
+  }
+  @scala.inline
   def JSXEmptyExpression(
     `type`: typings.atBabelTypes.atBabelTypesStrings.JSXEmptyExpression,
     end: Int | Double = null,
@@ -45,10 +109,9 @@ object JSX {
     __obj.asInstanceOf[JSX]
   }
   @scala.inline
-  def JSXNamespacedName(
-    name: JSXIdentifier,
-    namespace: JSXIdentifier,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXNamespacedName,
+  def JSXSpreadChild(
+    expression: Expression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXSpreadChild,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
@@ -56,7 +119,7 @@ object JSX {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): JSX = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
@@ -67,9 +130,8 @@ object JSX {
     __obj.asInstanceOf[JSX]
   }
   @scala.inline
-  def JSXSpreadAttribute(
-    argument: Expression,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXSpreadAttribute,
+  def JSXClosingFragment(
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXClosingFragment,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
@@ -77,32 +139,7 @@ object JSX {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): JSX = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  @scala.inline
-  def JSXFragment(
-    children: js.Array[
-      JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | typings.atBabelTypes.atBabelTypesMod.JSXFragment
-    ],
-    closingFragment: JSXClosingFragment,
-    openingFragment: JSXOpeningFragment,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXFragment,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): JSX = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingFragment = closingFragment.asInstanceOf[js.Any], openingFragment = openingFragment.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
@@ -140,6 +177,27 @@ object JSX {
     __obj.asInstanceOf[JSX]
   }
   @scala.inline
+  def JSXSpreadAttribute(
+    argument: Expression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXSpreadAttribute,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): JSX = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSX]
+  }
+  @scala.inline
   def JSXIdentifier(
     name: String,
     `type`: typings.atBabelTypes.atBabelTypesStrings.JSXIdentifier,
@@ -151,29 +209,6 @@ object JSX {
     trailingComments: js.Array[Comment] = null
   ): JSX = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  @scala.inline
-  def JSXMemberExpression(
-    `object`: typings.atBabelTypes.atBabelTypesMod.JSXMemberExpression | JSXIdentifier,
-    property: JSXIdentifier,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXMemberExpression,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): JSX = {
-    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
@@ -205,6 +240,51 @@ object JSX {
     __obj.asInstanceOf[JSX]
   }
   @scala.inline
+  def JSXAttribute(
+    name: JSXIdentifier | JSXNamespacedName,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXAttribute,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null,
+    value: JSXElement | JSXFragment | StringLiteral | JSXExpressionContainer = null
+  ): JSX = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSX]
+  }
+  @scala.inline
+  def JSXNamespacedName(
+    name: JSXIdentifier,
+    namespace: JSXIdentifier,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXNamespacedName,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): JSX = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSX]
+  }
+  @scala.inline
   def JSXClosingElement(
     name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName,
     `type`: typings.atBabelTypes.atBabelTypesStrings.JSXClosingElement,
@@ -226,9 +306,13 @@ object JSX {
     __obj.asInstanceOf[JSX]
   }
   @scala.inline
-  def JSXText(
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXText,
-    value: String,
+  def JSXFragment(
+    children: js.Array[
+      JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | typings.atBabelTypes.atBabelTypesMod.JSXFragment
+    ],
+    closingFragment: JSXClosingFragment,
+    openingFragment: JSXOpeningFragment,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXFragment,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
@@ -236,28 +320,7 @@ object JSX {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): JSX = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  @scala.inline
-  def JSXSpreadChild(
-    expression: Expression,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXSpreadChild,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): JSX = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingFragment = closingFragment.asInstanceOf[js.Any], openingFragment = openingFragment.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
@@ -290,69 +353,6 @@ object JSX {
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  @scala.inline
-  def JSXOpeningFragment(
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXOpeningFragment,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): JSX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  @scala.inline
-  def JSXClosingFragment(
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXClosingFragment,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): JSX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  @scala.inline
-  def JSXAttribute(
-    name: JSXIdentifier | JSXNamespacedName,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.JSXAttribute,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    value: JSXElement | JSXFragment | StringLiteral | JSXExpressionContainer = null
-  ): JSX = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSX]
   }
 }

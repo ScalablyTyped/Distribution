@@ -1,6 +1,5 @@
 package typings.typedoc
 
-import typings.typedoc.distLibModelsCommentsCommentMod.Comment
 import typings.typedoc.distLibModelsCommentsTagMod.CommentTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`

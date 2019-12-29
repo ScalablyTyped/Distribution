@@ -5,9 +5,7 @@ import typings.std.Attr
 import typings.std.Node
 import typings.std.XPathNSResolver
 import typings.std.XPathResult
-import typings.xpath.xpathMod.SelectedValue
-import typings.xpath.xpathMod.XPathSelect
-import typings.xpath.xpathNumbers.`true`
+import typings.xpath.xpathBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

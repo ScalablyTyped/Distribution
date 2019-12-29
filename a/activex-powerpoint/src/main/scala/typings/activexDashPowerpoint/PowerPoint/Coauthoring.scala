@@ -13,7 +13,8 @@ class Coauthoring protected () extends js.Object {
   val MergeMode: Boolean = js.native
   val Parent: js.Any = js.native
   val PendingUpdates: Boolean = js.native
-  var `PowerPoint.Coauthoring_typekey`: Coauthoring = js.native
+  @JSName("PowerPoint.Coauthoring_typekey")
+  var PowerPointDotCoauthoring_typekey: Coauthoring = js.native
   def EndReview(): Unit = js.native
 }
 

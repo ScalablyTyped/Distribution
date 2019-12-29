@@ -1,13 +1,6 @@
 package typings.winrt.Windows.Security.Credentials.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.basic
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.credSsp
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.custom
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.digest
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.kerberos
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.negotiate
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.ntlm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

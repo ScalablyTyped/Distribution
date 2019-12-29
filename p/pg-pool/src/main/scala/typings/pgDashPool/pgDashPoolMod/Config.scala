@@ -2,9 +2,9 @@ package typings.pgDashPool.pgDashPoolMod
 
 import typings.node.streamMod.Duplex
 import typings.node.tlsMod.ConnectionOptions
+import typings.pg.pgBooleans.`false`
 import typings.pg.pgMod.Client
 import typings.pg.pgMod.PoolConfig
-import typings.pg.pgNumbers.`false`
 import typings.std.PromiseConstructorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,6 +32,7 @@ object Config {
     min: Int | Double = null,
     password: String = null,
     port: Int | Double = null,
+    query_timeout: Int | Double = null,
     ssl: Boolean | ConnectionOptions = null,
     statement_timeout: `false` | Double = null,
     stream: Duplex = null,
@@ -53,6 +54,7 @@ object Config {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (query_timeout != null) __obj.updateDynamic("query_timeout")(query_timeout.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (statement_timeout != null) __obj.updateDynamic("statement_timeout")(statement_timeout.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])

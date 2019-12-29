@@ -19,13 +19,13 @@ trait IFilter extends IBase {
   /** [Config Option] (Function) */
   var filterFn: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var operator: js.UndefOr[java.lang.String] = js.undefined
+  var operator: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var property: js.UndefOr[java.lang.String] = js.undefined
+  var property: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
   /** [Method] Changes the filtering function which this Filter uses to choose items to include
   		* @param filterFn Function A function which returns true or false to either include or exclude the passed object.
   		*/
@@ -51,17 +51,17 @@ object IFilter {
     config: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     exactMatch: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     filterFn: js.Any = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    id: java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IFilter = null,
     mixins: js.Any = null,
-    operator: java.lang.String = null,
-    property: java.lang.String = null,
+    operator: String = null,
+    property: String = null,
     requires: Array = null,
-    root: java.lang.String = null,
+    root: String = null,
     self: IClass = null,
     setFilterFn: /* filterFn */ js.UndefOr[js.Any] => Unit = null,
     setValue: /* value */ js.UndefOr[js.Any] => Unit = null,

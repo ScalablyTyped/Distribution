@@ -1,17 +1,6 @@
 package typings.navermaps.naver.maps.visualization
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.COOL
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.GREYS
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.HOT
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.HSV
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.JET
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.OXYGEN
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.PORTLAND
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.RAINBOW
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.RdBu
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.YIGnBu
-import typings.navermaps.naver.maps.visualization.SpectrumStyle.YIOrRd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

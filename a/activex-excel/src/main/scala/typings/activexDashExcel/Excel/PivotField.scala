@@ -43,7 +43,8 @@ class PivotField protected () extends js.Object {
   var DrilledDown: Boolean = js.native
   var EnableItemSelection: Boolean = js.native
   var EnableMultiplePageItems: Boolean = js.native
-  var `Excel.PivotField_typekey`: PivotField = js.native
+  @JSName("Excel.PivotField_typekey")
+  var ExcelDotPivotField_typekey: PivotField = js.native
   var Formula: String = js.native
   var Function: XlConsolidationFunction = js.native
   val GroupLevel: Double = js.native

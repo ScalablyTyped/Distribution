@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConnectorType.curve
-import typings.officeDashJs.Excel.ConnectorType.elbow
-import typings.officeDashJs.Excel.ConnectorType.straight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

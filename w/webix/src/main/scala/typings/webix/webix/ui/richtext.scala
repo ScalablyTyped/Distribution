@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class richtext () extends baseview {
   @JSName("$$")
-  var $$: js.Any = js.native
+  var DollarDollar: js.Any = js.native
   @JSName("config")
   var config_richtext: richtextConfig = js.native
   def attachEvent(`type`: richtextEventName, functor: WebixCallback): String | Double = js.native

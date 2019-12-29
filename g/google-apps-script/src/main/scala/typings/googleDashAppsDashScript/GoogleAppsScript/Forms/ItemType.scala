@@ -1,22 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.CHECKBOX
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.CHECKBOX_GRID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DATE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DATETIME
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DURATION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.GRID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.IMAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.LIST
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.MULTIPLE_CHOICE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.PAGE_BREAK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.PARAGRAPH_TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.SCALE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.SECTION_HEADER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.TIME
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.VIDEO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

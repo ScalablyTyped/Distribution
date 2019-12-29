@@ -1,7 +1,6 @@
 package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsObserverIObserverMod.IObserver
-import typings.wonderDashFrp.distCommonjsTestingMockPromiseMod.MockPromise
 import typings.wonderDashFrp.distCommonjsTestingRecordMod.Record
 import typings.wonderDashFrp.distCommonjsTestingTestSchedulerMod.TestScheduler
 import scala.scalajs.js

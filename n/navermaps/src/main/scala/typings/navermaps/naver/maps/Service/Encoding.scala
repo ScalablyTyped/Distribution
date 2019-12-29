@@ -1,8 +1,6 @@
 package typings.navermaps.naver.maps.Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.Service.Encoding.EUC_KR
-import typings.navermaps.naver.maps.Service.Encoding.UTF_8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

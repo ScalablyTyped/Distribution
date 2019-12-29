@@ -1,5 +1,13 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`geo-ref`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dd
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ddm
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dms
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gars
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mrgs
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.usng
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.utm
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -14,13 +22,13 @@ trait GeometryServiceFromGeoCoordinateStringParams extends Object {
     */
   var conversionMode: js.UndefOr[String] = js.undefined
   /**
-    * The conversion type of the input strings.  **Possible Values:** mrgs | usng | utm | geo-ref | gars | dms | ddm | dd
+    * The conversion type of the input strings.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#fromGeoCoordinateString)
     *
     * @default mrgs
     */
-  var conversionType: js.UndefOr[String] = js.undefined
+  var conversionType: js.UndefOr[mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd] = js.undefined
   /**
     * The spatial reference or well-known ID to convert the input string coordinates to.
     *
@@ -44,7 +52,7 @@ object GeometryServiceFromGeoCoordinateStringParams {
     sr: SpatialReference | String | Double,
     strings: js.Array[String],
     conversionMode: String = null,
-    conversionType: String = null
+    conversionType: mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd = null
   ): GeometryServiceFromGeoCoordinateStringParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sr = sr.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
     if (conversionMode != null) __obj.updateDynamic("conversionMode")(conversionMode.asInstanceOf[js.Any])

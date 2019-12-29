@@ -29,7 +29,6 @@ import typings.dojo.dojoStrings.titleNode
 import typings.dojo.dojoStrings.url
 import typings.dojo.dojoStrings.widgetsInTemplate
 import typings.dojo.dojoStrings.xmethod
-import typings.dojo.dojox.atom.widget.FeedEntryViewer
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

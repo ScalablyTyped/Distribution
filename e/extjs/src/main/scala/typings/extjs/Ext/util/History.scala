@@ -16,11 +16,11 @@ class History () extends js.Object
 @js.native
 object History extends js.Object {
   /** [Property] (String) */
-  var fieldId: java.lang.String = js.native
+  var fieldId: String = js.native
   /** [Property] (Object) */
   var hasListeners: js.Any = js.native
   /** [Property] (String) */
-  var iframeId: java.lang.String = js.native
+  var iframeId: String = js.native
   /** [Property] (Boolean) */
   var isObservable: Boolean = js.native
   /** [Property] (Ext.Class) */
@@ -32,8 +32,8 @@ object History extends js.Object {
   		* @param preventDuplicates Boolean When true, if the passed token matches the current token it will not save a new history step. Set to false if the same state can be saved more than once at the same history stack location.
   		*/
   def add(): Unit = js.native
-  def add(token: java.lang.String): Unit = js.native
-  def add(token: java.lang.String, preventDuplicates: Boolean): Unit = js.native
+  def add(token: String): Unit = js.native
+  def add(token: String, preventDuplicates: Boolean): Unit = js.native
   /** [Method] Adds the specified events to the list of events which this Observable may fire
   		* @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
   		*/
@@ -99,15 +99,15 @@ object History extends js.Object {
   		* @param args Object... Variable number of parameters are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
-  def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = js.native
+  def fireEvent(eventName: String, args: js.Any*): Boolean = js.native
   /** [Method] Fires the specified event with the passed parameter list
   		* @param eventName String The name of the event to fire.
   		* @param args Object[] An array of parameters which are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
   def fireEventArgs(): Boolean = js.native
-  def fireEventArgs(eventName: java.lang.String): Boolean = js.native
-  def fireEventArgs(eventName: java.lang.String, args: Array): Boolean = js.native
+  def fireEventArgs(eventName: String): Boolean = js.native
+  def fireEventArgs(eventName: String, args: Array): Boolean = js.native
   /** [Method] Programmatically steps forward one step in browser history equivalent to the user pressing the Forward button */
   def forward(): Unit = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
@@ -115,17 +115,17 @@ object History extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Retrieves the currently active history token
   		* @returns String The token
   		*/
-  def getToken(): java.lang.String = js.native
+  def getToken(): String = js.native
   /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
   		* @param eventName String The name of the event to check for
   		* @returns Boolean true if the event is being listened for or bubbles, else false
   		*/
   def hasListener(): Boolean = js.native
-  def hasListener(eventName: java.lang.String): Boolean = js.native
+  def hasListener(eventName: String): Boolean = js.native
   /** [Method] Initializes the global History instance
   		* @param onReady Function A callback function that will be called once the history component is fully initialized.
   		* @param scope Object The scope (this reference) in which the callback is executed. Defaults to the browser window.
@@ -185,16 +185,16 @@ object History extends js.Object {
   def relayEvents(): js.Any = js.native
   def relayEvents(origin: js.Any): js.Any = js.native
   def relayEvents(origin: js.Any, events: Array): js.Any = js.native
-  def relayEvents(origin: js.Any, events: Array, prefix: java.lang.String): js.Any = js.native
+  def relayEvents(origin: js.Any, events: Array, prefix: String): js.Any = js.native
   /** [Method] Removes an event handler
   		* @param eventName String The type of event the handler was associated with.
   		* @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
   def removeListener(): Unit = js.native
-  def removeListener(eventName: java.lang.String): Unit = js.native
-  def removeListener(eventName: java.lang.String, fn: js.Any): Unit = js.native
-  def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  def removeListener(eventName: String): Unit = js.native
+  def removeListener(eventName: String, fn: js.Any): Unit = js.native
+  def removeListener(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes listeners that were added by the mon method
   		* @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
   		* @param ename Object/String The event name, or an object containing event name properties.
@@ -231,8 +231,8 @@ object History extends js.Object {
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
   def un(): Unit = js.native
-  def un(eventName: java.lang.String): Unit = js.native
-  def un(eventName: java.lang.String, fn: js.Any): Unit = js.native
-  def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  def un(eventName: String): Unit = js.native
+  def un(eventName: String, fn: js.Any): Unit = js.native
+  def un(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
 }
 

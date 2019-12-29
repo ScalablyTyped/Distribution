@@ -1,7 +1,6 @@
 package typings.atOracleOraclejet
 
 import typings.atOracleOraclejet.ojdataproviderMod.DataProvider
-import typings.atOracleOraclejet.ojtreedataproviderMod.TreeDataProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

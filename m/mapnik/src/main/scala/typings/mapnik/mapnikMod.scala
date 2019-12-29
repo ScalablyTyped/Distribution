@@ -1,11 +1,6 @@
 package typings.mapnik
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.mapnik.mapnikMod.Feature
-import typings.mapnik.mapnikMod.Featureset
-import typings.mapnik.mapnikMod.FeaturesetNext
-import typings.mapnik.mapnikMod.Image
-import typings.mapnik.mapnikMod.VectorTile
 import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js

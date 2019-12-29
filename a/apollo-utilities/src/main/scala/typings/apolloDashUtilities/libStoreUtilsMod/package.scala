@@ -26,7 +26,6 @@ package object libStoreUtilsMod {
     - typings.apolloDashUtilities.libStoreUtilsMod.JsonValue
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
     - scala.Unit
     - js.Object
   */

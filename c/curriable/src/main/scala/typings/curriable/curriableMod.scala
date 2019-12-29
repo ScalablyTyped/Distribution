@@ -1,19 +1,5 @@
 package typings.curriable
 
-import typings.curriable.curriableMod.Append
-import typings.curriable.curriableMod.Cast
-import typings.curriable.curriableMod.CleanedGaps
-import typings.curriable.curriableMod.Concat
-import typings.curriable.curriableMod.Curried
-import typings.curriable.curriableMod.Curry
-import typings.curriable.curriableMod.Gaps
-import typings.curriable.curriableMod.Handler
-import typings.curriable.curriableMod.Length
-import typings.curriable.curriableMod.PartialGaps
-import typings.curriable.curriableMod.Placeholder
-import typings.curriable.curriableMod.Prepend
-import typings.curriable.curriableMod.Reverse
-import typings.curriable.curriableMod.Tail
 import typings.std.Parameters
 import typings.std.ReturnType
 import typings.std.Symbol
@@ -25,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object curriableMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.curriable.curriableNumbers.`true`
-    - typings.curriable.curriableNumbers.`false`
+    - typings.curriable.curriableBooleans.`true`
+    - typings.curriable.curriableBooleans.`false`
   */
   trait HasTail[T /* <: js.Array[_] */] extends js.Object
   

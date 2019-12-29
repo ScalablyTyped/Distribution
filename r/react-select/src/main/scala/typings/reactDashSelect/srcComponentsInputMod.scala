@@ -6,7 +6,6 @@ import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Ref
-import typings.reactDashSelect.srcComponentsInputMod.InputProps
 import typings.reactDashSelect.srcTypesMod.ClassNamesState
 import scala.scalajs.js
 import scala.scalajs.js.`|`

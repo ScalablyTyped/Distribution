@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object jssStrings {
   @js.native
-  sealed trait `!important` extends js.Object
+  sealed trait Exclamationmarkimportant extends js.Object
   
   @scala.inline
-  def `!important`: `!important` = "!important".asInstanceOf[`!important`]
+  def Exclamationmarkimportant: Exclamationmarkimportant = "!important".asInstanceOf[Exclamationmarkimportant]
 }
 

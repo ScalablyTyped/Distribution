@@ -12,7 +12,6 @@ import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskOrchestra
 import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskOrchestrationQueuedPlanGroup
 import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.Timeline
 import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TimelineRecord
-import typings.vsoDashNodeDashApi.taskApiMod.ITaskApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

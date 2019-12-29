@@ -1,13 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.OperatorACDStatuses.AfterService
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.OperatorACDStatuses.DND
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.OperatorACDStatuses.InService
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.OperatorACDStatuses.Offline
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.OperatorACDStatuses.Online
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.OperatorACDStatuses.Ready
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.OperatorACDStatuses.Timeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

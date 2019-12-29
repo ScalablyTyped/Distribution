@@ -2,7 +2,6 @@ package typings.ranjs.ranjsMod
 
 import typings.ranjs.Anon_Accepted
 import typings.ranjs.Anon_Cv
-import typings.ranjs.ranjsMod._mc.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

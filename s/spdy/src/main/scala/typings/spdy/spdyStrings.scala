@@ -10,31 +10,31 @@ object spdyStrings {
   sealed trait h2 extends Protocol
   
   @js.native
-  sealed trait `http/1DOT0` extends Protocol
+  sealed trait httpSlash1Dot0 extends Protocol
   
   @js.native
-  sealed trait `http/1DOT1` extends Protocol
+  sealed trait httpSlash1Dot1 extends Protocol
   
   @js.native
-  sealed trait `spdy/2` extends Protocol
+  sealed trait spdySlash2 extends Protocol
   
   @js.native
-  sealed trait `spdy/3` extends Protocol
+  sealed trait spdySlash3 extends Protocol
   
   @js.native
-  sealed trait `spdy/3DOT1` extends Protocol
+  sealed trait spdySlash3Dot1 extends Protocol
   
   @scala.inline
   def h2: h2 = "h2".asInstanceOf[h2]
   @scala.inline
-  def `http/1DOT0`: `http/1DOT0` = "http/1.0".asInstanceOf[`http/1DOT0`]
+  def httpSlash1Dot0: httpSlash1Dot0 = "http/1.0".asInstanceOf[httpSlash1Dot0]
   @scala.inline
-  def `http/1DOT1`: `http/1DOT1` = "http/1.1".asInstanceOf[`http/1DOT1`]
+  def httpSlash1Dot1: httpSlash1Dot1 = "http/1.1".asInstanceOf[httpSlash1Dot1]
   @scala.inline
-  def `spdy/2`: `spdy/2` = "spdy/2".asInstanceOf[`spdy/2`]
+  def spdySlash2: spdySlash2 = "spdy/2".asInstanceOf[spdySlash2]
   @scala.inline
-  def `spdy/3`: `spdy/3` = "spdy/3".asInstanceOf[`spdy/3`]
+  def spdySlash3: spdySlash3 = "spdy/3".asInstanceOf[spdySlash3]
   @scala.inline
-  def `spdy/3DOT1`: `spdy/3DOT1` = "spdy/3.1".asInstanceOf[`spdy/3DOT1`]
+  def spdySlash3Dot1: spdySlash3Dot1 = "spdy/3.1".asInstanceOf[spdySlash3Dot1]
 }
 

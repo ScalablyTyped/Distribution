@@ -11,6 +11,7 @@ class CoAuthUpdate protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
-  var `Word.CoAuthUpdate_typekey`: CoAuthUpdate = js.native
+  @JSName("Word.CoAuthUpdate_typekey")
+  var WordDotCoAuthUpdate_typekey: CoAuthUpdate = js.native
 }
 

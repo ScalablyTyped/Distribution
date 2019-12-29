@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.TaskRevealKind.Always
-import typings.vscode.vscodeMod.TaskRevealKind.Never
-import typings.vscode.vscodeMod.TaskRevealKind.Silent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

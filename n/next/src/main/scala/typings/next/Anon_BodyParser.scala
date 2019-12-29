@@ -1,6 +1,6 @@
 package typings.next
 
-import typings.next.nextNumbers.`false`
+import typings.next.nextBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

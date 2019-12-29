@@ -1,9 +1,6 @@
 package typings.smoothDashScrollbar
 
 import org.scalablytyped.runtime.TopLevel
-import typings.smoothDashScrollbar.trackDirectionMod.TrackDirection
-import typings.smoothDashScrollbar.trackDirectionMod.TrackDirection.X
-import typings.smoothDashScrollbar.trackDirectionMod.TrackDirection.Y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

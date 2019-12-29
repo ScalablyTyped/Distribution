@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Call
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Default
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,5 @@
 package typings.pullDashStream
 
-import typings.pullDashStream.pullDashStreamMod.Sink
-import typings.pullDashStream.pullDashStreamMod.Source
-import typings.pullDashStream.pullDashStreamMod.Through
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

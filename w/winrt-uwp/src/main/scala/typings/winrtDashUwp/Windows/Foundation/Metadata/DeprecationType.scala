@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Metadata.DeprecationType.deprecate
-import typings.winrtDashUwp.Windows.Foundation.Metadata.DeprecationType.remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

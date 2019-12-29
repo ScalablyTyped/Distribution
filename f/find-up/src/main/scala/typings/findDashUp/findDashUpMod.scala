@@ -1,8 +1,5 @@
 package typings.findDashUp
 
-import typings.findDashUp.findDashUpMod.Match
-import typings.findDashUp.findDashUpMod.Options
-import typings.findDashUp.findDashUpMod.StopSymbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

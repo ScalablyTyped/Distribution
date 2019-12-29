@@ -1,10 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.LoadState.Disabled
-import typings.openui5.sap.m.LoadState.Failed
-import typings.openui5.sap.m.LoadState.Loaded
-import typings.openui5.sap.m.LoadState.Loading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus.accepted
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus.lostControl
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus.propertyNotSupported
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus.propertyReadOnly
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus.unknown
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus.valueOutOfRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

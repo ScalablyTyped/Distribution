@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SharePointListAdapterRWObject protected () extends js.Object {
   var ContentTypeId: String = js.native
-  var `InfoPath.SharePointListAdapterRWObject_typekey`: SharePointListAdapterRWObject = js.native
+  @JSName("InfoPath.SharePointListAdapterRWObject_typekey")
+  var InfoPathDotSharePointListAdapterRWObject_typekey: SharePointListAdapterRWObject = js.native
   var ListId: String = js.native
   val Name: String = js.native
   val QueryAllowed: Boolean = js.native

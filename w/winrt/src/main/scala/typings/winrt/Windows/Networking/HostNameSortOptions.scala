@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Networking
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.HostNameSortOptions.none
-import typings.winrt.Windows.Networking.HostNameSortOptions.optimizeForLongConnections
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

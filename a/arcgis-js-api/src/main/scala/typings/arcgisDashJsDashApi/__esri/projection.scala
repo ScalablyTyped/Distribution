@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -102,7 +101,7 @@ trait projection extends js.Object {
     *
     *
     */
-  def load(): IPromise[_] = js.native
+  def load(): js.Promise[_] = js.native
   def project(geometry: js.Array[Geometry], outSpatialReference: SpatialReference): Geometry | js.Array[Geometry] = js.native
   def project(geometry: js.Array[Geometry], outSpatialReference: SpatialReferenceProperties): Geometry | js.Array[Geometry] = js.native
   def project(

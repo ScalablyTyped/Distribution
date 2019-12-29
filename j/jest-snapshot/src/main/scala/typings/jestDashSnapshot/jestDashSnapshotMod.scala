@@ -8,7 +8,6 @@ import typings.atJestTypes.buildConfigMod.SnapshotUpdateState
 import typings.expect.expectMod.MatcherState
 import typings.jestDashSnapshot.buildStateMod.SnapshotStateOptions
 import typings.jestDashSnapshot.buildStateMod.default
-import typings.jestDashSnapshot.jestDashSnapshotMod.Context
 import typings.prettyDashFormat.buildTypesMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,23 +38,18 @@ object jestDashSnapshotMod extends js.Object {
   ): Anon_FilesRemoved = js.native
   def getSerializers(): js.Array[Plugin] = js.native
   def isSnapshotPath(path: String): Boolean = js.native
-  def toMatchInlineSnapshot(`this`: Context, received: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toMatchInlineSnapshot(`this`: Context, received: js.Any, propertyMatchersOrInlineSnapshot: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toMatchInlineSnapshot(
-    `this`: Context,
-    received: js.Any,
-    propertyMatchersOrInlineSnapshot: js.Any,
-    inlineSnapshot: String
-  ): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toMatchSnapshot(`this`: Context, received: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toMatchSnapshot(`this`: Context, received: js.Any, propertyMatchers: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toMatchSnapshot(`this`: Context, received: js.Any, propertyMatchers: js.Any, hint: String): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toThrowErrorMatchingInlineSnapshot(`this`: Context, received: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toThrowErrorMatchingInlineSnapshot(`this`: Context, received: js.Any, inlineSnapshot: js.UndefOr[scala.Nothing], fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toThrowErrorMatchingInlineSnapshot(`this`: Context, received: js.Any, inlineSnapshot: String): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toThrowErrorMatchingInlineSnapshot(`this`: Context, received: js.Any, inlineSnapshot: String, fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toThrowErrorMatchingSnapshot(`this`: Context, received: js.Any, hint: js.UndefOr[scala.Nothing], fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
-  def toThrowErrorMatchingSnapshot(`this`: Context, received: js.Any, hint: String, fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toMatchInlineSnapshot(received: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any, inlineSnapshot: String): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toMatchSnapshot(received: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any, hint: String): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: js.UndefOr[scala.Nothing], fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String, fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toThrowErrorMatchingSnapshot(received: js.Any, hint: js.UndefOr[scala.Nothing], fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  def toThrowErrorMatchingSnapshot(received: js.Any, hint: String, fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
   @js.native
   object SnapshotState extends TopLevel[
           Instantiable2[/* snapshotPath */ Path, /* options */ SnapshotStateOptions, default]

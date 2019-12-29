@@ -21,17 +21,17 @@ import typings.jimp.jimpNumbers.`32`
 import typings.jimp.jimpNumbers.`3`
 import typings.jimp.jimpNumbers.`4`
 import typings.jimp.jimpNumbers.`8`
-import typings.jimp.jimpStrings.`image/bmp`
-import typings.jimp.jimpStrings.`image/gif`
-import typings.jimp.jimpStrings.`image/jgd`
-import typings.jimp.jimpStrings.`image/jpeg`
-import typings.jimp.jimpStrings.`image/png`
-import typings.jimp.jimpStrings.`image/tiff`
-import typings.jimp.jimpStrings.`image/x-ms-bmp`
+import typings.jimp.jimpStrings.`imageSlashx-ms-bmp`
 import typings.jimp.jimpStrings.bezierInterpolation
 import typings.jimp.jimpStrings.bicubicInterpolation
 import typings.jimp.jimpStrings.bilinearInterpolation
 import typings.jimp.jimpStrings.hermiteInterpolation
+import typings.jimp.jimpStrings.imageSlashbmp
+import typings.jimp.jimpStrings.imageSlashgif
+import typings.jimp.jimpStrings.imageSlashjgd
+import typings.jimp.jimpStrings.imageSlashjpeg
+import typings.jimp.jimpStrings.imageSlashpng
+import typings.jimp.jimpStrings.imageSlashtiff
 import typings.jimp.jimpStrings.nearestNeighbor
 import typings.node.Buffer
 import typings.std.Error
@@ -45,18 +45,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DepreciatedJimp
-  extends Instantiable2[
-      (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* w */ Double) | (/* path */ String) | (/* urlOptions */ URLOptions), 
-      (/* h */ Double) | (/* cb */ ImageCallback[js.Any]), 
-      DepreciatedJimp
-    ]
-     with // Constructors
-// For custom constructors when using Jimp.appendConstructorOption
-Instantiable1[
-      (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
-      DepreciatedJimp
-    ]
-     with Instantiable3[
+  extends Instantiable3[
       /* w */ Double, 
       /* h */ Double, 
       (/* background */ Double) | (/* cb */ ImageCallback[js.Any]) | (/* background */ String), 
@@ -67,6 +56,17 @@ Instantiable1[
       /* h */ Double, 
       (/* background */ Double) | (/* background */ String), 
       /* cb */ ImageCallback[js.Any], 
+      DepreciatedJimp
+    ]
+     with // Constructors
+// For custom constructors when using Jimp.appendConstructorOption
+Instantiable1[
+      (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
+      DepreciatedJimp
+    ]
+     with Instantiable2[
+      (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* w */ Double) | (/* path */ String) | (/* urlOptions */ URLOptions), 
+      (/* h */ Double) | (/* cb */ ImageCallback[js.Any]), 
       DepreciatedJimp
     ] {
   // Constants
@@ -104,14 +104,14 @@ Instantiable1[
   // Align modes for cover, contain, bit masks
   var HORIZONTAL_ALIGN_LEFT: `1` = js.native
   var HORIZONTAL_ALIGN_RIGHT: `4` = js.native
-  var MIME_BMP: `image/bmp` = js.native
-  var MIME_GIF: `image/gif` = js.native
-  var MIME_JGD: `image/jgd` = js.native
-  var MIME_JPEG: `image/jpeg` = js.native
+  var MIME_BMP: imageSlashbmp = js.native
+  var MIME_GIF: imageSlashgif = js.native
+  var MIME_JGD: imageSlashjgd = js.native
+  var MIME_JPEG: imageSlashjpeg = js.native
   // supported mime types
-  var MIME_PNG: `image/png` = js.native
-  var MIME_TIFF: `image/tiff` = js.native
-  var MIME_X_MS_BMP: `image/x-ms-bmp` = js.native
+  var MIME_PNG: imageSlashpng = js.native
+  var MIME_TIFF: imageSlashtiff = js.native
+  var MIME_X_MS_BMP: `imageSlashx-ms-bmp` = js.native
   // PNG filter types
   var PNG_FILTER_AUTO: `-1` = js.native
   var PNG_FILTER_AVERAGE: `3` = js.native

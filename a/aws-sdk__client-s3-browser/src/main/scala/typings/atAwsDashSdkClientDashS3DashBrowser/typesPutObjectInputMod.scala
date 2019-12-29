@@ -8,12 +8,12 @@ import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashB
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.STANDARD_IA
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`authenticated-read`
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`aws-exec-read`
-import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`aws:kms`
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`bucket-owner-full-control`
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`bucket-owner-read`
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`private`
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`public-read-write`
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.`public-read`
+import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.awsColonkms
 import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.requester_
 import typings.atAwsDashSdkTypes.buildAbortMod.AbortSignal
 import typings.atAwsDashSdkTypes.buildCryptoMod.SourceData
@@ -167,7 +167,7 @@ object typesPutObjectInputMod extends js.Object {
     /**
       * <p>The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).</p>
       */
-    var ServerSideEncryption: js.UndefOr[AES256 | `aws:kms` | String] = js.native
+    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.native
     /**
       * <p>The type of storage to use for the object. Defaults to 'STANDARD'.</p>
       */

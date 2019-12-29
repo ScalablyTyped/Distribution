@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "imap-simple"
-version := "v4.2.0-dt-20190322Z-2c98cd"
+version := "v4.2.0-dt-20191223Z-ef6270"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imap" % "v0.8.14-dt-20190322Z-43212f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "imap" % "v0.8.14-dt-20191223Z-53321e",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

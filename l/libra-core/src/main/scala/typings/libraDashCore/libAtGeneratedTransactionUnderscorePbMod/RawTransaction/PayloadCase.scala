@@ -1,9 +1,6 @@
 package typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction
 
 import org.scalablytyped.runtime.TopLevel
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.PAYLOAD_NOT_SET
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.PROGRAM
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.WRITE_SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

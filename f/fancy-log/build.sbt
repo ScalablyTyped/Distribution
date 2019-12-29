@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fancy-log"
-version := "1.3-dt-20190212Z-e2c1f2"
+version := "1.3-dt-20190212Z-99536d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

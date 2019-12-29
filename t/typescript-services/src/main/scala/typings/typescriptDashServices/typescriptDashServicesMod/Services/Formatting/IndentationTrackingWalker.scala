@@ -2,6 +2,8 @@ package typings.typescriptDashServices.typescriptDashServicesMod.Services.Format
 
 import typings.typescriptDashServices.FormattingOptions
 import typings.typescriptDashServices.TypeScript.Services.Formatting.ITextSnapshot
+import typings.typescriptDashServices.TypeScript.SourceUnitSyntax
+import typings.typescriptDashServices.TypeScript.TextSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +13,8 @@ import scala.scalajs.js.annotation._
 class IndentationTrackingWalker protected ()
   extends typings.typescriptDashServices.TypeScript.Services.Formatting.IndentationTrackingWalker {
   def this(
-    textSpan: typings.typescriptDashServices.TypeScript.TextSpan,
-    sourceUnit: typings.typescriptDashServices.TypeScript.SourceUnitSyntax,
+    textSpan: TextSpan,
+    sourceUnit: SourceUnitSyntax,
     snapshot: ITextSnapshot,
     indentFirstToken: Boolean,
     options: FormattingOptions

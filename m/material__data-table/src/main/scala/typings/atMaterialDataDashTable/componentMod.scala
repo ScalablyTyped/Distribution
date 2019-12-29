@@ -2,7 +2,6 @@ package typings.atMaterialDataDashTable
 
 import typings.atMaterialBase.componentMod.MDCComponent
 import typings.atMaterialBase.foundationMod.default
-import typings.atMaterialDataDashTable.componentMod.MDCDataTable
 import typings.atMaterialDataDashTable.foundationMod.MDCDataTableFoundation
 import typings.std.Element
 import scala.scalajs.js

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-calendar" : "9.15.8"
+      "rc-calendar" : "9.15.9"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-calendar" : "9.15.8"
+      "rc-calendar" : "9.15.9"
     }
   ],
   "compile-devDependencies" : [

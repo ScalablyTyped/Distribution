@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Storage.Compression
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Compression.CompressAlgorithm.invalidAlgorithm
-import typings.winrt.Windows.Storage.Compression.CompressAlgorithm.lzms
-import typings.winrt.Windows.Storage.Compression.CompressAlgorithm.mszip
-import typings.winrt.Windows.Storage.Compression.CompressAlgorithm.nullAlgorithm
-import typings.winrt.Windows.Storage.Compression.CompressAlgorithm.xpress
-import typings.winrt.Windows.Storage.Compression.CompressAlgorithm.xpressHuff
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

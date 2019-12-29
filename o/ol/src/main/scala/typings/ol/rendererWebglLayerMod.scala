@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.layerLayerMod.State
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
-import typings.ol.rendererWebglLayerMod.WebGLLayerRenderer
 import typings.ol.transformMod.Transform
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray

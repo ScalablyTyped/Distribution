@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("webix.ui.pivot")
 @js.native
 class pivot () extends baseview {
-  @JSName("$$")
-  var $$: js.Any = js.native
   @JSName("$divider")
   var $divider: String = js.native
+  @JSName("$$")
+  var DollarDollar: js.Any = js.native
   @JSName("config")
   var config_pivot: pivotConfig = js.native
   var data: DataStore = js.native

@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityConnectedStandbyAction.doNotWake
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityConnectedStandbyAction.wake
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

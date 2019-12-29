@@ -10,7 +10,8 @@ class PropertyPages protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.PropertyPages_typekey`: PropertyPages = js.native
+  @JSName("Outlook.PropertyPages_typekey")
+  var OutlookDotPropertyPages_typekey: PropertyPages = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Page: js.Any, Title: String): Unit = js.native

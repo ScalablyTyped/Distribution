@@ -1,9 +1,6 @@
 package typings.chromeDashApps.chrome.wallpaper
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.CENTER
-import typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.CENTER_CROPPED
-import typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.STRETCH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

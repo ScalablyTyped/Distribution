@@ -12,7 +12,8 @@ class BulletFormat2 protected () extends js.Object {
   val Creator: Double = js.native
   val Font: Font2 = js.native
   val Number: Double = js.native
-  var `Office.BulletFormat2_typekey`: BulletFormat2 = js.native
+  @JSName("Office.BulletFormat2_typekey")
+  var OfficeDotBulletFormat2_typekey: BulletFormat2 = js.native
   val Parent: js.Any = js.native
   var RelativeSize: Double = js.native
   var StartValue: Double = js.native

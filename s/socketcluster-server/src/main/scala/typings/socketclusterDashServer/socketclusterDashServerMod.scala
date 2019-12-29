@@ -3,7 +3,6 @@ package typings.socketclusterDashServer
 import typings.node.httpMod.Server
 import typings.socketclusterDashServer.scserverMod.SCServerOptions
 import typings.socketclusterDashServer.scserverMod.^
-import typings.socketclusterDashServer.socketclusterDashServerMod.SCServer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

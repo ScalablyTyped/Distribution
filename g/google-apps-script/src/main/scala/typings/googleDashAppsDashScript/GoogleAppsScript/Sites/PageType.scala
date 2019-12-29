@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Sites
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Sites.PageType.ANNOUNCEMENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Sites.PageType.ANNOUNCEMENTS_PAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Sites.PageType.FILE_CABINET_PAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Sites.PageType.LIST_PAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Sites.PageType.WEB_PAGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

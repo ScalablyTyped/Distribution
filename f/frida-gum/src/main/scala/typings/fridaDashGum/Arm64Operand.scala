@@ -49,9 +49,9 @@ object Arm64Operand {
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
-  def Arm64PrefetchOperand(
-    `type`: prefetch,
-    value: Double,
+  def Arm64RegMsrOperand(
+    `type`: `reg-msr`,
+    value: Arm64Register,
     ext: Arm64Extender = null,
     shift: Anon_TypeValue = null,
     vas: Arm64Vas = null,
@@ -83,42 +83,8 @@ object Arm64Operand {
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
-  def Arm64BarrierOperand(
-    `type`: barrier,
-    value: Double,
-    ext: Arm64Extender = null,
-    shift: Anon_TypeValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
-  }
-  @scala.inline
-  def Arm64CimmOperand(
-    `type`: cimm,
-    value: Int64,
-    ext: Arm64Extender = null,
-    shift: Anon_TypeValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
-  }
-  @scala.inline
-  def Arm64FpOperand(
-    `type`: fp,
+  def Arm64PrefetchOperand(
+    `type`: prefetch,
     value: Double,
     ext: Arm64Extender = null,
     shift: Anon_TypeValue = null,
@@ -168,9 +134,9 @@ object Arm64Operand {
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
-  def Arm64RegMsrOperand(
-    `type`: `reg-msr`,
-    value: Arm64Register,
+  def Arm64SysOperand(
+    `type`: sys,
+    value: Double,
     ext: Arm64Extender = null,
     shift: Anon_TypeValue = null,
     vas: Arm64Vas = null,
@@ -185,8 +151,8 @@ object Arm64Operand {
     __obj.asInstanceOf[Arm64Operand]
   }
   @scala.inline
-  def Arm64SysOperand(
-    `type`: sys,
+  def Arm64BarrierOperand(
+    `type`: barrier,
     value: Double,
     ext: Arm64Extender = null,
     shift: Anon_TypeValue = null,
@@ -205,6 +171,40 @@ object Arm64Operand {
   def Arm64MemOperand(
     `type`: mem,
     value: Anon_BaseDispIndex,
+    ext: Arm64Extender = null,
+    shift: Anon_TypeValue = null,
+    vas: Arm64Vas = null,
+    vectorIndex: Int | Double = null
+  ): Arm64Operand = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
+    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Arm64Operand]
+  }
+  @scala.inline
+  def Arm64CimmOperand(
+    `type`: cimm,
+    value: Int64,
+    ext: Arm64Extender = null,
+    shift: Anon_TypeValue = null,
+    vas: Arm64Vas = null,
+    vectorIndex: Int | Double = null
+  ): Arm64Operand = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
+    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Arm64Operand]
+  }
+  @scala.inline
+  def Arm64FpOperand(
+    `type`: fp,
+    value: Double,
     ext: Arm64Extender = null,
     shift: Anon_TypeValue = null,
     vas: Arm64Vas = null,

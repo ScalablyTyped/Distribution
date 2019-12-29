@@ -6,10 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IToolTip
-  extends typings.extjs.Ext.tip.ITip {
+trait IToolTip extends ITip {
   /** [Config Option] (String) */
-  var anchor: js.UndefOr[java.lang.String] = js.undefined
+  var anchor: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var anchorOffset: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Boolean) */
@@ -17,7 +16,7 @@ trait IToolTip
   /** [Config Option] (Boolean) */
   var autoHide: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var delegate: js.UndefOr[java.lang.String] = js.undefined
+  var delegate: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var dismissDelay: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -41,12 +40,12 @@ trait IToolTip
 object IToolTip {
   @scala.inline
   def apply(
-    ITip: typings.extjs.Ext.tip.ITip = null,
-    anchor: java.lang.String = null,
+    ITip: ITip = null,
+    anchor: String = null,
     anchorOffset: Int | Double = null,
     anchorToTarget: js.UndefOr[Boolean] = js.undefined,
     autoHide: js.UndefOr[Boolean] = js.undefined,
-    delegate: java.lang.String = null,
+    delegate: String = null,
     dismissDelay: Int | Double = null,
     hideDelay: Int | Double = null,
     mouseOffset: Array = null,

@@ -1,6 +1,6 @@
 package typings.atUifabricMergeDashStyles
 
-import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`false`
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesBooleans.`false`
 import typings.atUifabricMergeDashStyles.libIStyleMod.IStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`

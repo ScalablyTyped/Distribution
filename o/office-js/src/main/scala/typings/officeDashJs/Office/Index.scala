@@ -1,10 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.Index.First
-import typings.officeDashJs.Office.Index.Last
-import typings.officeDashJs.Office.Index.Next
-import typings.officeDashJs.Office.Index.Previous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

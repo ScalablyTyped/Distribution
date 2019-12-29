@@ -84,6 +84,10 @@ trait IComboBoxStyles extends js.Object {
     * the comboBox is disabled.
     */
   var rootPressed: IStyle
+  /**
+    * Styles for hidden screen reader text.
+    */
+  var screenReaderText: IStyle
 }
 
 object IComboBoxStyles {
@@ -106,7 +110,8 @@ object IComboBoxStyles {
     rootError: IStyle = null,
     rootFocused: IStyle = null,
     rootHovered: IStyle = null,
-    rootPressed: IStyle = null
+    rootPressed: IStyle = null,
+    screenReaderText: IStyle = null
   ): IComboBoxStyles = {
     val __obj = js.Dynamic.literal()
     if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
@@ -127,6 +132,7 @@ object IComboBoxStyles {
     if (rootFocused != null) __obj.updateDynamic("rootFocused")(rootFocused.asInstanceOf[js.Any])
     if (rootHovered != null) __obj.updateDynamic("rootHovered")(rootHovered.asInstanceOf[js.Any])
     if (rootPressed != null) __obj.updateDynamic("rootPressed")(rootPressed.asInstanceOf[js.Any])
+    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComboBoxStyles]
   }
 }

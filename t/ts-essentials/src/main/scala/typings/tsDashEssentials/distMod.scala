@@ -13,11 +13,11 @@ object distMod extends js.Object {
     def this(value: scala.Nothing) = this()
   }
   
-  def literal(): js.UndefOr[scala.Nothing] = js.native
+  def literal(): Null = js.native
   def literal(value: String): String = js.native
   def literal(value: Boolean): Boolean = js.native
   def literal(value: Double): Double = js.native
   @JSName("literal")
-  def literal_Null(): Null = js.native
+  def literal_Union(): js.UndefOr[scala.Nothing] = js.native
 }
 

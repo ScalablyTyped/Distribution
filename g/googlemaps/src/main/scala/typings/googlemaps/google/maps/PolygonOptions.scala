@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +36,7 @@ trait PolygonOptions extends js.Object {
     */
   var geodesic: js.UndefOr[Boolean] = js.undefined
   /** Map on which to display Polygon. */
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   /**
     * The ordered sequence of coordinates that designates a closed loop. Unlike
     * polylines, a polygon may consist of one or more paths. As a result, the
@@ -79,7 +80,7 @@ object PolygonOptions {
     fillColor: String = null,
     fillOpacity: Int | Double = null,
     geodesic: js.UndefOr[Boolean] = js.undefined,
-    map: Map = null,
+    map: Map[Element] = null,
     paths: (MVCArray[LatLng | MVCArray[LatLng]]) | (js.Array[(js.Array[LatLng | LatLngLiteral]) | LatLng | LatLngLiteral]) = null,
     strokeColor: String = null,
     strokeOpacity: Int | Double = null,

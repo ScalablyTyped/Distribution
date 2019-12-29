@@ -10,7 +10,8 @@ class LegendEntry protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   var AutoScaleFont: js.Any = js.native
   val Creator: XlCreator = js.native
-  var `Excel.LegendEntry_typekey`: LegendEntry = js.native
+  @JSName("Excel.LegendEntry_typekey")
+  var ExcelDotLegendEntry_typekey: LegendEntry = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Format: ChartFormat = js.native
   val Height: Double = js.native

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Radios
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.disabled
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.off
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.on
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

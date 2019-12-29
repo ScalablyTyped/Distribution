@@ -1,9 +1,6 @@
 package typings.mobx.libCoreDerivationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mobx.libCoreDerivationMod.TraceMode.BREAK
-import typings.mobx.libCoreDerivationMod.TraceMode.LOG
-import typings.mobx.libCoreDerivationMod.TraceMode.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

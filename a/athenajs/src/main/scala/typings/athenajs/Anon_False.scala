@@ -1,6 +1,6 @@
 package typings.athenajs
 
-import typings.athenajs.athenajsNumbers.`false`
+import typings.athenajs.athenajsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

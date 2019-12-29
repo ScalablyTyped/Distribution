@@ -75,7 +75,7 @@ object johnnyDashFiveStrings {
   sealed trait motionstart extends js.Object
   
   @js.native
-  sealed trait `move:complete` extends js.Object
+  sealed trait moveColoncomplete extends js.Object
   
   @js.native
   sealed trait open extends js.Object
@@ -139,7 +139,7 @@ object johnnyDashFiveStrings {
   @scala.inline
   def motionstart: motionstart = "motionstart".asInstanceOf[motionstart]
   @scala.inline
-  def `move:complete`: `move:complete` = "move:complete".asInstanceOf[`move:complete`]
+  def moveColoncomplete: moveColoncomplete = "move:complete".asInstanceOf[moveColoncomplete]
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline

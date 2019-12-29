@@ -1,12 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.EventType.complete
-import typings.pixiDashSpine.PIXI.spine.core.EventType.dispose
-import typings.pixiDashSpine.PIXI.spine.core.EventType.end
-import typings.pixiDashSpine.PIXI.spine.core.EventType.event
-import typings.pixiDashSpine.PIXI.spine.core.EventType.interrupt
-import typings.pixiDashSpine.PIXI.spine.core.EventType.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

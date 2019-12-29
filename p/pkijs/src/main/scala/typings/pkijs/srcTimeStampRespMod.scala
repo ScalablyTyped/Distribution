@@ -2,7 +2,6 @@ package typings.pkijs
 
 import typings.pkijs.srcSignedDataMod.VerifyParams
 import typings.pkijs.srcSignedDataMod.VerifyResult
-import typings.pkijs.srcTimeStampRespMod.TimeStampResp
 import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import scala.scalajs.js

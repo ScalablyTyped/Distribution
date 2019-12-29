@@ -7,7 +7,6 @@ import typings.node.nodeStrings.data
 import typings.node.nodeStrings.end
 import typings.node.nodeStrings.readable
 import typings.readableDashStream.Anon_End
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,6 @@ class Duplex ()
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
   val readableObjectMode: Boolean = js.native
-  def _destroy(err: Error, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
   def _read(): Unit = js.native
   def _read(size: Double): Unit = js.native
   @JSName("addListener")

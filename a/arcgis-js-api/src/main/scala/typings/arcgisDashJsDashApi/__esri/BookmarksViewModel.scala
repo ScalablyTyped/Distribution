@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,8 +43,8 @@ trait BookmarksViewModel
     * @param bookmarkCreationOptions Specifies how new bookmarks will be created. Can be used to enable/disable taking screenshots or capturing the extent when a new bookmark is added.
     *
     */
-  def createBookmark(): IPromise[Bookmark] = js.native
-  def createBookmark(bookmarkCreationOptions: BookmarkCreationOptions): IPromise[Bookmark] = js.native
+  def createBookmark(): js.Promise[Bookmark] = js.native
+  def createBookmark(bookmarkCreationOptions: BookmarkCreationOptions): js.Promise[Bookmark] = js.native
   /**
     * Zoom to a specific bookmark.
     *
@@ -54,7 +53,7 @@ trait BookmarksViewModel
     * @param Bookmark The bookmark to zoom to.
     *
     */
-  def goTo(Bookmark: Bookmark): IPromise[_] = js.native
+  def goTo(Bookmark: Bookmark): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.BookmarksViewModel")

@@ -5,6 +5,7 @@ import typings.chromeDashApps.Anon_CHECKBOX
 import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chrome.integer
 import typings.chromeDashApps.chromeDashAppsStrings.all_
+import typings.chromeDashApps.chromeDashAppsStrings.audio
 import typings.chromeDashApps.chromeDashAppsStrings.browser_action
 import typings.chromeDashApps.chromeDashAppsStrings.checkbox
 import typings.chromeDashApps.chromeDashAppsStrings.editable
@@ -44,7 +45,7 @@ trait CreateProperties extends js.Object {
         String, 
         Exclude[
           String, 
-          browser_action | launcher | all_ | frame | typings.chromeDashApps.chromeDashAppsStrings.audio | link | page | selection | page_action | editable | video | image
+          browser_action | launcher | all_ | frame | audio | link | page | selection | page_action | editable | video | image
         ]
       ]
     ]
@@ -116,7 +117,7 @@ object CreateProperties {
         String, 
         Exclude[
           String, 
-          browser_action | launcher | all_ | frame | typings.chromeDashApps.chromeDashAppsStrings.audio | link | page | selection | page_action | editable | video | image
+          browser_action | launcher | all_ | frame | audio | link | page | selection | page_action | editable | video | image
         ]
       ]
     ] = null,

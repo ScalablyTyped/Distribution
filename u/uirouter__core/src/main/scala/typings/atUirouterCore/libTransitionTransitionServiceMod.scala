@@ -19,7 +19,6 @@ import typings.atUirouterCore.libTransitionTransitionEventTypeMod.TransitionEven
 import typings.atUirouterCore.libTransitionTransitionHookMod.GetErrorHandler
 import typings.atUirouterCore.libTransitionTransitionHookMod.GetResultHandler
 import typings.atUirouterCore.libTransitionTransitionMod.Transition
-import typings.atUirouterCore.libTransitionTransitionServiceMod.TransitionServicePluginAPI
 import typings.atUirouterCore.libViewViewMod.ViewService
 import scala.scalajs.js
 import scala.scalajs.js.`|`

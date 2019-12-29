@@ -4,7 +4,6 @@ import typings.three.srcMathBox3Mod.Box3
 import typings.three.srcMathLine3Mod.Line3
 import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathMatrix4Mod.Matrix4
-import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathSphereMod.Sphere
 import typings.three.srcMathVector3Mod.Vector3
 import scala.scalajs.js

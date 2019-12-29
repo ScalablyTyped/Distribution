@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.bCryptPrivateKey
-import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.capi1PrivateKey
-import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs1RsaPrivateKey
-import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs8RawPrivateKeyInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

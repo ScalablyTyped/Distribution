@@ -1,6 +1,6 @@
 package typings.antd.libModalModalMod
 
-import typings.antd.antdNumbers.`false`
+import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.cancel
 import typings.antd.antdStrings.ok
 import typings.antd.libButtonButtonMod.ButtonType

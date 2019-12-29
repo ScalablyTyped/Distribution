@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADOX.Table")
 @js.native
 class Table protected () extends js.Object {
-  var `ADOX.Table_typekey`: Table = js.native
+  @JSName("ADOX.Table_typekey")
+  var ADOXDotTable_typekey: Table = js.native
   @JSName("Columns")
   val Columns_Original: Columns = js.native
   val DateCreated: VarDate = js.native

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reverse extends js.Object {
   def apply(
-    ip: java.lang.String,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[java.lang.String], Unit]
+    ip: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit]
   ): Unit = js.native
 }
 

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
 import typings.std.Date
-import typings.winrtDashUwp.Windows.Devices.Sensors.Custom.CustomSensor
-import typings.winrtDashUwp.Windows.Devices.Sensors.Custom.CustomSensorReading
-import typings.winrtDashUwp.Windows.Devices.Sensors.Custom.CustomSensorReadingChangedEventArgs
 import typings.winrtDashUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation

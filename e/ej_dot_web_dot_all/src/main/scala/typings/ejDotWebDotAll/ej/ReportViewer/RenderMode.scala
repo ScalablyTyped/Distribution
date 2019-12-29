@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportViewer.RenderMode.Default
-import typings.ejDotWebDotAll.ej.ReportViewer.RenderMode.Desktop
-import typings.ejDotWebDotAll.ej.ReportViewer.RenderMode.Mobile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

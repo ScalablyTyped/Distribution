@@ -54,16 +54,16 @@ object jssipStrings {
   sealed trait peerconnection extends js.Object
   
   @js.native
-  sealed trait `peerconnection:createanswerfailed` extends js.Object
+  sealed trait peerconnectionColoncreateanswerfailed extends js.Object
   
   @js.native
-  sealed trait `peerconnection:createofferfailed` extends js.Object
+  sealed trait peerconnectionColoncreateofferfailed extends js.Object
   
   @js.native
-  sealed trait `peerconnection:setlocaldescriptionfailed` extends js.Object
+  sealed trait peerconnectionColonsetlocaldescriptionfailed extends js.Object
   
   @js.native
-  sealed trait `peerconnection:setremotedescriptionfailed` extends js.Object
+  sealed trait peerconnectionColonsetremotedescriptionfailed extends js.Object
   
   @js.native
   sealed trait progress extends js.Object
@@ -143,13 +143,13 @@ object jssipStrings {
   @scala.inline
   def peerconnection: peerconnection = "peerconnection".asInstanceOf[peerconnection]
   @scala.inline
-  def `peerconnection:createanswerfailed`: `peerconnection:createanswerfailed` = "peerconnection:createanswerfailed".asInstanceOf[`peerconnection:createanswerfailed`]
+  def peerconnectionColoncreateanswerfailed: peerconnectionColoncreateanswerfailed = "peerconnection:createanswerfailed".asInstanceOf[peerconnectionColoncreateanswerfailed]
   @scala.inline
-  def `peerconnection:createofferfailed`: `peerconnection:createofferfailed` = "peerconnection:createofferfailed".asInstanceOf[`peerconnection:createofferfailed`]
+  def peerconnectionColoncreateofferfailed: peerconnectionColoncreateofferfailed = "peerconnection:createofferfailed".asInstanceOf[peerconnectionColoncreateofferfailed]
   @scala.inline
-  def `peerconnection:setlocaldescriptionfailed`: `peerconnection:setlocaldescriptionfailed` = "peerconnection:setlocaldescriptionfailed".asInstanceOf[`peerconnection:setlocaldescriptionfailed`]
+  def peerconnectionColonsetlocaldescriptionfailed: peerconnectionColonsetlocaldescriptionfailed = "peerconnection:setlocaldescriptionfailed".asInstanceOf[peerconnectionColonsetlocaldescriptionfailed]
   @scala.inline
-  def `peerconnection:setremotedescriptionfailed`: `peerconnection:setremotedescriptionfailed` = "peerconnection:setremotedescriptionfailed".asInstanceOf[`peerconnection:setremotedescriptionfailed`]
+  def peerconnectionColonsetremotedescriptionfailed: peerconnectionColonsetremotedescriptionfailed = "peerconnection:setremotedescriptionfailed".asInstanceOf[peerconnectionColonsetremotedescriptionfailed]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline

@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ILocationService extends js.Object {
   def absUrl(): String = js.native
-  /**
-    * Returns the hash fragment
-    */
-  def hash(): String = js.native
+  def hash(): ILocationService = js.native
   /**
     * Changes the hash fragment and returns `$location`
     */
   def hash(newHash: String): ILocationService = js.native
+  /**
+    * Returns the hash fragment
+    */
   @JSName("hash")
-  def hash_ILocationService(): ILocationService = js.native
+  def hash_String(): String = js.native
   def host(): String = js.native
   /**
     * Return path of current url

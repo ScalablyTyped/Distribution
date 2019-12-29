@@ -6,7 +6,9 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.english
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.immediate
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multitenant
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.singletenant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -260,6 +262,12 @@ trait PortalProperties extends LoadableProperties {
     */
   var isPortal: js.UndefOr[Boolean] = js.undefined
   /**
+    * Indicates if the portal is in read-only mode. When `true`, content cannot be created, modified, or deleted on the Portal.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#isReadOnly)
+    */
+  var isReadOnly: js.UndefOr[Boolean] = js.undefined
+  /**
     * The query that identifies the group containing editing templates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#layerTemplatesGroupQuery)
@@ -290,11 +298,11 @@ trait PortalProperties extends LoadableProperties {
     */
   var portalHostname: js.UndefOr[String] = js.undefined
   /**
-    * The portal mode.  **Possible Values:** multitenant | singletenant
+    * The portal mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalMode)
     */
-  var portalMode: js.UndefOr[String] = js.undefined
+  var portalMode: js.UndefOr[multitenant | singletenant] = js.undefined
   /**
     * Properties specific to the organization, for example the "contact us" link. If the organization is public, the properties are visible to the anonymous user.
     *
@@ -431,12 +439,13 @@ object PortalProperties {
     id: String = null,
     ipCntryCode: String = null,
     isPortal: js.UndefOr[Boolean] = js.undefined,
+    isReadOnly: js.UndefOr[Boolean] = js.undefined,
     layerTemplatesGroupQuery: String = null,
     maxTokenExpirationMinutes: Int | Double = null,
     modified: DateProperties = null,
     name: String = null,
     portalHostname: String = null,
-    portalMode: String = null,
+    portalMode: multitenant | singletenant = null,
     portalProperties: js.Any = null,
     region: String = null,
     rotatorPanels: js.Array[_] = null,
@@ -491,6 +500,7 @@ object PortalProperties {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ipCntryCode != null) __obj.updateDynamic("ipCntryCode")(ipCntryCode.asInstanceOf[js.Any])
     if (!js.isUndefined(isPortal)) __obj.updateDynamic("isPortal")(isPortal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.asInstanceOf[js.Any])
     if (layerTemplatesGroupQuery != null) __obj.updateDynamic("layerTemplatesGroupQuery")(layerTemplatesGroupQuery.asInstanceOf[js.Any])
     if (maxTokenExpirationMinutes != null) __obj.updateDynamic("maxTokenExpirationMinutes")(maxTokenExpirationMinutes.asInstanceOf[js.Any])
     if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])

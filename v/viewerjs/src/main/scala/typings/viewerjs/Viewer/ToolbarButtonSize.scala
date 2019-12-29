@@ -1,9 +1,6 @@
 package typings.viewerjs.Viewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.viewerjs.Viewer.ToolbarButtonSize.Large
-import typings.viewerjs.Viewer.ToolbarButtonSize.Medium
-import typings.viewerjs.Viewer.ToolbarButtonSize.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

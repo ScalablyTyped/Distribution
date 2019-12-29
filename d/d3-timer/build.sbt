@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-timer"
-version := "1.0-dt-20190212Z-dbab0e"
+version := "1.0-dt-20190212Z-b4618c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

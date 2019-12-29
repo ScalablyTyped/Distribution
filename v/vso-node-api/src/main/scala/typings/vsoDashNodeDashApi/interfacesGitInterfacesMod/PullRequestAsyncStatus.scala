@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Conflicts
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Failure
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.NotSet
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Queued
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.RejectedByPolicy
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

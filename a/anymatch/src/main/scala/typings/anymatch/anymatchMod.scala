@@ -1,9 +1,6 @@
 package typings.anymatch
 
-import typings.anymatch.anymatchMod.CurrriedMatcher
-import typings.anymatch.anymatchMod.Matcher
-import typings.anymatch.anymatchMod.MatcherType
-import typings.anymatch.anymatchNumbers.`true`
+import typings.anymatch.anymatchBooleans.`true`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

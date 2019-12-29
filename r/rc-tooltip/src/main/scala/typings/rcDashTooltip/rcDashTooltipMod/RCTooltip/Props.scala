@@ -3,7 +3,10 @@ package typings.rcDashTooltip.rcDashTooltipMod.RCTooltip
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
+import typings.react.reactMod.ReactChild
+import typings.react.reactMod.ReactFragment
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod.ReactPortal
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +25,7 @@ trait Props
   var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
   var onPopupAlign: js.UndefOr[js.Function2[/* popupDomNode */ Element, /* align */ js.Object, Unit]] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], Unit]] = js.undefined
-  var overlay: ReactNode
+  var overlay: js.Function0[ReactChild] | ReactChild | ReactFragment | ReactPortal
   var overlayClassName: js.UndefOr[String] = js.undefined
   var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   var placement: js.UndefOr[Placement | js.Object] = js.undefined
@@ -35,6 +38,7 @@ trait Props
 object Props {
   @scala.inline
   def apply(
+    overlay: js.Function0[ReactChild] | ReactChild | ReactFragment | ReactPortal,
     afterVisibleChange: /* visible */ js.UndefOr[Boolean] => Unit = null,
     align: js.Object = null,
     arrowContent: ReactNode = null,
@@ -48,7 +52,6 @@ object Props {
     mouseLeaveDelay: Int | Double = null,
     onPopupAlign: (/* popupDomNode */ Element, /* align */ js.Object) => Unit = null,
     onVisibleChange: /* visible */ js.UndefOr[Boolean] => Unit = null,
-    overlay: ReactNode = null,
     overlayClassName: String = null,
     overlayStyle: CSSProperties = null,
     placement: Placement | js.Object = null,
@@ -58,7 +61,7 @@ object Props {
     trigger: js.Array[Trigger] = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): Props = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     if (afterVisibleChange != null) __obj.updateDynamic("afterVisibleChange")(js.Any.fromFunction1(afterVisibleChange))
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (arrowContent != null) __obj.updateDynamic("arrowContent")(arrowContent.asInstanceOf[js.Any])
@@ -72,7 +75,6 @@ object Props {
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
     if (onPopupAlign != null) __obj.updateDynamic("onPopupAlign")(js.Any.fromFunction2(onPopupAlign))
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])

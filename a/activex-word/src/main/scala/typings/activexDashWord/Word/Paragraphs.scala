@@ -49,7 +49,8 @@ class Paragraphs protected () extends js.Object {
   var Style: js.Any = js.native
   var TabStops: typings.activexDashWord.Word.TabStops = js.native
   var WidowControl: Double = js.native
-  var `Word.Paragraphs_typekey`: Paragraphs = js.native
+  @JSName("Word.Paragraphs_typekey")
+  var WordDotParagraphs_typekey: Paragraphs = js.native
   var WordWrap: Double = js.native
   def Add(): Paragraph = js.native
   def Add(Range: js.Any): Paragraph = js.native

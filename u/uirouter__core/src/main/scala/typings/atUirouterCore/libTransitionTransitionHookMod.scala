@@ -5,11 +5,6 @@ import typings.atUirouterCore.libTransitionHookRegistryMod.RegisteredHook
 import typings.atUirouterCore.libTransitionInterfaceMod.HookResult
 import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookOptions
 import typings.atUirouterCore.libTransitionTransitionEventTypeMod.TransitionEventType
-import typings.atUirouterCore.libTransitionTransitionHookMod.ErrorHandler
-import typings.atUirouterCore.libTransitionTransitionHookMod.GetErrorHandler
-import typings.atUirouterCore.libTransitionTransitionHookMod.GetResultHandler
-import typings.atUirouterCore.libTransitionTransitionHookMod.ResultHandler
-import typings.atUirouterCore.libTransitionTransitionHookMod.TransitionHook
 import typings.atUirouterCore.libTransitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`

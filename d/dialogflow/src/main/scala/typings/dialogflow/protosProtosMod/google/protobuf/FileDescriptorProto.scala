@@ -18,6 +18,9 @@ import scala.scalajs.js.annotation._
   */
 class FileDescriptorProto () extends IFileDescriptorProto {
   def this(properties: IFileDescriptorProto) = this()
+  /** FileDescriptorProto package. */
+  @JSName("package")
+  var _package_FileDescriptorProto: String = js.native
   /** FileDescriptorProto dependency. */
   @JSName("dependency")
   var dependency_FileDescriptorProto: js.Array[String] = js.native
@@ -33,9 +36,6 @@ class FileDescriptorProto () extends IFileDescriptorProto {
   /** FileDescriptorProto name. */
   @JSName("name")
   var name_FileDescriptorProto: String = js.native
-  /** FileDescriptorProto package. */
-  @JSName("package")
-  var package_FileDescriptorProto: String = js.native
   /** FileDescriptorProto publicDependency. */
   @JSName("publicDependency")
   var publicDependency_FileDescriptorProto: js.Array[Double] = js.native

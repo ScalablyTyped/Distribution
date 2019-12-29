@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Allow
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Completed
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Disallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

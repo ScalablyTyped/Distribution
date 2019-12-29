@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Sockets.SocketQualityOfService.lowLatency
-import typings.winrt.Windows.Networking.Sockets.SocketQualityOfService.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

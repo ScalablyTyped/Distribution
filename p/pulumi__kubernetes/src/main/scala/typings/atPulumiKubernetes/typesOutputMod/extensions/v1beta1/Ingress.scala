@@ -1,14 +1,14 @@
 package typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated extensions/v1beta1/Ingress is not supported by Kubernetes 1.16+ clusters. Use
-  * networking/v1beta1/Ingress instead.
+  * @deprecated extensions/v1beta1/Ingress is deprecated by networking/v1beta1/Ingress and not
+  * supported by Kubernetes v1.20+ clusters.
   *
   * Ingress is a collection of rules that allow inbound connections to reach the endpoints
   * defined by a backend. An Ingress can be configured to give services externally-reachable
@@ -21,7 +21,7 @@ trait Ingress extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `extensions/v1beta1`
+  val apiVersion: extensionsSlashv1beta1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -49,7 +49,7 @@ trait Ingress extends js.Object {
 object Ingress {
   @scala.inline
   def apply(
-    apiVersion: `extensions/v1beta1`,
+    apiVersion: extensionsSlashv1beta1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.Ingress,
     metadata: ObjectMeta,
     spec: IngressSpec,

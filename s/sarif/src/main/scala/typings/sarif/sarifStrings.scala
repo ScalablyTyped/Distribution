@@ -1,7 +1,7 @@
 package typings.sarif
 
 import typings.sarif.sarifMod.Artifact.roles
-import typings.sarif.sarifMod.Notification.level
+import typings.sarif.sarifMod.ReportingConfiguration.level
 import typings.sarif.sarifMod.Result.baselineState
 import typings.sarif.sarifMod.Run.columnKind
 import typings.sarif.sarifMod.Suppression.kind
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 object sarifStrings {
   @js.native
-  sealed trait `2DOT1DOT0` extends js.Object
+  sealed trait `2Dot1Dot0` extends js.Object
   
   @js.native
   sealed trait absent extends baselineState
@@ -46,7 +46,7 @@ object sarifStrings {
   @js.native
   sealed trait error
     extends level
-       with typings.sarif.sarifMod.ReportingConfiguration.level
+       with typings.sarif.sarifMod.Notification.level
        with typings.sarif.sarifMod.Result.level
   
   @js.native
@@ -90,7 +90,7 @@ object sarifStrings {
   @js.native
   sealed trait none
     extends level
-       with typings.sarif.sarifMod.ReportingConfiguration.level
+       with typings.sarif.sarifMod.Notification.level
        with typings.sarif.sarifMod.Result.level
   
   @js.native
@@ -100,7 +100,7 @@ object sarifStrings {
   @js.native
   sealed trait note
     extends level
-       with typings.sarif.sarifMod.ReportingConfiguration.level
+       with typings.sarif.sarifMod.Notification.level
        with typings.sarif.sarifMod.Result.level
   
   @js.native
@@ -178,11 +178,11 @@ object sarifStrings {
   @js.native
   sealed trait warning
     extends level
-       with typings.sarif.sarifMod.ReportingConfiguration.level
+       with typings.sarif.sarifMod.Notification.level
        with typings.sarif.sarifMod.Result.level
   
   @scala.inline
-  def `2DOT1DOT0`: `2DOT1DOT0` = "2.1.0".asInstanceOf[`2DOT1DOT0`]
+  def `2Dot1Dot0`: `2Dot1Dot0` = "2.1.0".asInstanceOf[`2Dot1Dot0`]
   @scala.inline
   def absent: absent = "absent".asInstanceOf[absent]
   @scala.inline

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class dbllist ()
   extends typings.webix.webix.ui.baseview {
-  @JSName("$$")
-  var $$: js.Any = js.native
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
   @JSName("$skin")
   var $skin_Original_dbllist: WebixCallback = js.native
+  @JSName("$$")
+  var DollarDollar: js.Any = js.native
   @JSName("config")
   var config_dbllist: dbllistConfig = js.native
   @JSName("$onLoad")

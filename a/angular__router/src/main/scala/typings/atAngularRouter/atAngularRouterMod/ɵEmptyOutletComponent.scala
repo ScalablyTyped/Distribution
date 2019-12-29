@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * In order to render, there needs to be a component on this config, which will default
   * to this `EmptyOutletComponent`.
   */
-@JSImport("@angular/router", "ɵEmptyOutletComponent")
+@JSImport("@angular/router", "\u0275EmptyOutletComponent")
 @js.native
 class ɵEmptyOutletComponent () extends js.Object
 

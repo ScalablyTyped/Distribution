@@ -28,8 +28,8 @@ package object Css {
     * https://js.cytoscape.org/#style/mappers
     */
   type MapperFunction[Element, Type] = js.Function1[/* ele */ Element, Type]
-  type PropertyValue[SingularType /* <: NodeSingular | EdgeSingular | typings.cytoscape.cytoscapeMod.Css.Core */, Type] = Type | (MapperFunction[SingularType, Type])
-  type PropertyValueCore[Type] = PropertyValue[typings.cytoscape.cytoscapeMod.Css.Core, Type]
+  type PropertyValue[SingularType /* <: NodeSingular | EdgeSingular | Core */, Type] = Type | (MapperFunction[SingularType, Type])
+  type PropertyValueCore[Type] = PropertyValue[Core, Type]
   type PropertyValueEdge[Type] = PropertyValue[EdgeSingular, Type]
   type PropertyValueNode[Type] = PropertyValue[NodeSingular, Type]
   /**

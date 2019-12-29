@@ -14,7 +14,8 @@ class List protected () extends js.Object {
   val Range: typings.activexDashWord.Word.Range = js.native
   val SingleListTemplate: Boolean = js.native
   val StyleName: String = js.native
-  var `Word.List_typekey`: List = js.native
+  @JSName("Word.List_typekey")
+  var WordDotList_typekey: List = js.native
   def ApplyListTemplate(ListTemplate: ListTemplate): Unit = js.native
   def ApplyListTemplate(ListTemplate: ListTemplate, ContinuePreviousList: js.Any): Unit = js.native
   def ApplyListTemplate(ListTemplate: ListTemplate, ContinuePreviousList: js.Any, DefaultListBehavior: js.Any): Unit = js.native

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object cldrjsStrings {
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait `-_` extends js.Object
   
   @js.native
-  sealed trait Underscore extends js.Object
+  sealed trait _underscore extends js.Object
   
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def Underscore: Underscore = "_".asInstanceOf[Underscore]
+  def _underscore: _underscore = "_".asInstanceOf[_underscore]
 }
 

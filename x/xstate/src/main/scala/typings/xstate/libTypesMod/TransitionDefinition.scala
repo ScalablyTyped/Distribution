@@ -2,6 +2,7 @@ package typings.xstate.libTypesMod
 
 import typings.std.Record
 import typings.xstate.libStateNodeMod.StateNode
+import typings.xstate.xstateStrings.Asterisk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait TransitionDefinition[TContext, TEvent /* <: EventObject */] extends Transi
   var actions_TransitionDefinition: js.Array[ActionObject[TContext, TEvent]]
   @JSName("cond")
   var cond_TransitionDefinition: js.UndefOr[Guard[TContext, TEvent]] = js.undefined
-  var eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.libTypesMod.ActionTypes.NullEvent | typings.xstate.xstateStrings.`*`
+  var eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.libTypesMod.ActionTypes.NullEvent | Asterisk
   var source: StateNode[TContext, _, TEvent, _]
   @JSName("target")
   var target_TransitionDefinition: js.UndefOr[js.Array[StateNode[TContext, _, TEvent, _]]] = js.undefined
@@ -21,7 +22,7 @@ object TransitionDefinition {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
     actions: js.Array[ActionObject[TContext, TEvent]],
-    eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.libTypesMod.ActionTypes.NullEvent | typings.xstate.xstateStrings.`*`,
+    eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.libTypesMod.ActionTypes.NullEvent | Asterisk,
     source: StateNode[TContext, _, TEvent, _],
     cond: Guard[TContext, TEvent] = null,
     in: StateValue = null,

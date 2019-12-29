@@ -19,7 +19,7 @@ trait ActionCompleteEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the action complete request type.
     */
   var requestType: js.UndefOr[String] = js.undefined
@@ -35,7 +35,7 @@ object ActionCompleteEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     currentAction: String = null,
     data: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     requestType: String = null,
     `type`: String = null
   ): ActionCompleteEventArgs = {

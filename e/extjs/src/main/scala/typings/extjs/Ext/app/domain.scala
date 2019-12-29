@@ -52,7 +52,7 @@ object domain extends js.Object {
     		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
     		*/
     def getInitialConfig(): js.Any = js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    def getInitialConfig(name: String): js.Any = js.native
     /** [Method] Initialize configuration for this class
     		* @param config Object
     		* @returns Ext.Base this
@@ -82,7 +82,7 @@ object domain extends js.Object {
   @js.native
   object Controller extends js.Object {
     /** [Config Option] (String) */
-    var idProperty: java.lang.String = js.native
+    var idProperty: String = js.native
     /** [Property] (Ext.Class) */
     var self: IClass = js.native
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
@@ -108,7 +108,7 @@ object domain extends js.Object {
     		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
     		*/
     def getInitialConfig(): js.Any = js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    def getInitialConfig(name: String): js.Any = js.native
     /** [Method] Initialize configuration for this class
     		* @param config Object
     		* @returns Ext.Base this
@@ -122,7 +122,7 @@ object domain extends js.Object {
     		*/
     def `match`(): Boolean = js.native
     def `match`(target: js.Any): Boolean = js.native
-    def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
+    def `match`(target: js.Any, selector: String): Boolean = js.native
     /** [Method] This method is called by the derived class to monitor fireEvent calls
     		* @param observable Ext.Class The Observable to monitor for events.
     		*/
@@ -138,7 +138,7 @@ object domain extends js.Object {
   @js.native
   object Direct extends js.Object {
     /** [Config Option] (String) */
-    var idProperty: java.lang.String = js.native
+    var idProperty: String = js.native
     /** [Property] (Ext.Class) */
     var self: IClass = js.native
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
@@ -164,7 +164,7 @@ object domain extends js.Object {
     		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
     		*/
     def getInitialConfig(): js.Any = js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    def getInitialConfig(name: String): js.Any = js.native
     /** [Method] Initialize configuration for this class
     		* @param config Object
     		* @returns Ext.Base this
@@ -178,7 +178,7 @@ object domain extends js.Object {
     		*/
     def `match`(): Boolean = js.native
     def `match`(target: js.Any): Boolean = js.native
-    def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
+    def `match`(target: js.Any, selector: String): Boolean = js.native
     /** [Method] This method is called by the derived class to monitor fireEvent calls
     		* @param observable Ext.Class The Observable to monitor for events.
     		*/
@@ -218,7 +218,7 @@ object domain extends js.Object {
     		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
     		*/
     def getInitialConfig(): js.Any = js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    def getInitialConfig(name: String): js.Any = js.native
     /** [Method] Initialize configuration for this class
     		* @param config Object
     		* @returns Ext.Base this
@@ -244,7 +244,7 @@ object domain extends js.Object {
   @js.native
   object Store extends js.Object {
     /** [Config Option] (String) */
-    var idProperty: java.lang.String = js.native
+    var idProperty: String = js.native
     /** [Property] (Ext.Class) */
     var self: IClass = js.native
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
@@ -270,7 +270,7 @@ object domain extends js.Object {
     		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
     		*/
     def getInitialConfig(): js.Any = js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    def getInitialConfig(name: String): js.Any = js.native
     /** [Method] Initialize configuration for this class
     		* @param config Object
     		* @returns Ext.Base this
@@ -284,7 +284,7 @@ object domain extends js.Object {
     		*/
     def `match`(): Boolean = js.native
     def `match`(target: js.Any): Boolean = js.native
-    def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
+    def `match`(target: js.Any, selector: String): Boolean = js.native
     /** [Method] This method is called by the derived class to monitor fireEvent calls
     		* @param observable Ext.Class The Observable to monitor for events.
     		*/

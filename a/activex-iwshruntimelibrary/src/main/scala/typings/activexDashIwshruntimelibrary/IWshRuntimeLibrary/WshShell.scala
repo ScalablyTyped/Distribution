@@ -28,7 +28,8 @@ class WshShell protected () extends js.Object {
     */
   @JSName("Environment")
   var Environment_Original: WshEnvironment with (js.Function1[/* Type */ System | User | Process | Volatile, WshEnvironment]) = js.native
-  var `IWshRuntimeLibrary.WshShell_typekey`: WshShell = js.native
+  @JSName("IWshRuntimeLibrary.WshShell_typekey")
+  var IWshRuntimeLibraryDotWshShell_typekey: WshShell = js.native
   @JSName("SpecialFolders")
   val SpecialFolders_Original: WshCollection = js.native
   /**

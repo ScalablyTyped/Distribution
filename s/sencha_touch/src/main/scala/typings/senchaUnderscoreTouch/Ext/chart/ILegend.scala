@@ -1,12 +1,12 @@
 package typings.senchaUnderscoreTouch.Ext.chart
 
 import typings.senchaUnderscoreTouch.Ext.Array
+import typings.senchaUnderscoreTouch.Ext.dataview.IDataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ILegend
-  extends typings.senchaUnderscoreTouch.Ext.dataview.IDataView {
+trait ILegend extends IDataView {
   /** [Method] Returns the value of disableSelection
   		* @returns Boolean
   		*/
@@ -40,7 +40,7 @@ trait ILegend
   		*/
   var getVerticalWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (String) */
-  var position: js.UndefOr[java.lang.String] = js.undefined
+  var position: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of disableSelection
   		* @param disableSelection Boolean The new value.
   		*/
@@ -80,7 +80,7 @@ trait ILegend
 object ILegend {
   @scala.inline
   def apply(
-    IDataView: typings.senchaUnderscoreTouch.Ext.dataview.IDataView = null,
+    IDataView: IDataView = null,
     getDisableSelection: () => Boolean = null,
     getHorizontalHeight: () => Double = null,
     getInline: () => Boolean = null,
@@ -88,7 +88,7 @@ object ILegend {
     getPadding: () => Double = null,
     getToggleable: () => Boolean = null,
     getVerticalWidth: () => Double = null,
-    position: java.lang.String = null,
+    position: String = null,
     setDisableSelection: /* disableSelection */ js.UndefOr[Boolean] => Unit = null,
     setHorizontalHeight: /* horizontalHeight */ js.UndefOr[Double] => Unit = null,
     setInline: /* inline */ js.UndefOr[Boolean] => Unit = null,

@@ -2,6 +2,7 @@ package typings.leaflet
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.leaflet.leafletMod.DomEvent.EventHandlerFn
+import typings.leaflet.leafletMod.DomEvent.PropagableEvent
 import typings.leaflet.leafletMod.Point
 import typings.std.Event
 import typings.std.HTMLElement
@@ -34,7 +35,7 @@ trait TypeofDomEvent extends js.Object {
   def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
   def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
   def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-  def stop(ev: Event): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-  def stopPropagation(ev: Event): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+  def stop(ev: PropagableEvent): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+  def stopPropagation(ev: PropagableEvent): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
 }
 

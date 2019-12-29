@@ -1,21 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Add
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Cancel
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.CollapseAll
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.CriticalPath
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Delete
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Edit
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.ExcelExport
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.ExpandAll
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Indent
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.NextTimeSpan
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Outdent
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.PdfExport
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.PrevTimeSpan
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Search
-import typings.ejDotWebDotAll.ej.Gantt.ToolbarItems.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

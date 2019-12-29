@@ -46,11 +46,6 @@ import typings.mendixmodelsdk.distGenReportsMod.reports.ReportChart
 import typings.mendixmodelsdk.distGenReportsMod.reports.ReportChartSeries
 import typings.mendixmodelsdk.distGenReportsMod.reports.ReportDateRangeField
 import typings.mendixmodelsdk.distGenReportsMod.reports.ReportDateRangeSelector
-import typings.mendixmodelsdk.distGenTextsMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenTextsMod.texts.SystemText
-import typings.mendixmodelsdk.distGenTextsMod.texts.SystemTextCollection
-import typings.mendixmodelsdk.distGenTextsMod.texts.Text
-import typings.mendixmodelsdk.distGenTextsMod.texts.Translation
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel

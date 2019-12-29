@@ -1,8 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ThreeColumnLayoutType.EndColumnEmphasized
-import typings.openui5.sap.m.ThreeColumnLayoutType.MidColumnEmphasized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

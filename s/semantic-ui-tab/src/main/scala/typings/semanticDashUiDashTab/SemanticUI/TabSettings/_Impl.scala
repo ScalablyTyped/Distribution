@@ -7,7 +7,7 @@ import typings.semanticDashUiDashTab.SemanticUI.Tab.ErrorSettings
 import typings.semanticDashUiDashTab.SemanticUI.Tab.MetadataSettings
 import typings.semanticDashUiDashTab.SemanticUI.Tab.SelectorSettings
 import typings.semanticDashUiDashTab.SemanticUI.Tab.TemplatesSettings
-import typings.semanticDashUiDashTab.semanticDashUiDashTabNumbers.`false`
+import typings.semanticDashUiDashTab.semanticDashUiDashTabBooleans.`false`
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.DOM
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.all
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.hash
@@ -177,19 +177,19 @@ trait _Impl extends js.Object {
   /**
     * Callback only the first time a tab is loaded
     */
-  def onFirstLoad(`this`: JQuery, tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit
+  def onFirstLoad(tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit
   /**
     * Callback every time a tab is loaded
     */
-  def onLoad(`this`: JQuery, tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit
+  def onLoad(tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit
   /**
     * Called when a tab begins loading remote content
     */
-  def onRequest(`this`: JQuery, tabPath: String): Unit
+  def onRequest(tabPath: String): Unit
   /**
     * Called after a tab becomes visible
     */
-  def onVisible(`this`: JQuery, tabPath: String): Unit
+  def onVisible(tabPath: String): Unit
 }
 
 object _Impl {
@@ -215,10 +215,10 @@ object _Impl {
     metadata: MetadataSettings,
     name: String,
     namespace: String,
-    onFirstLoad: (JQuery, String, js.Array[_], js.Any) => Unit,
-    onLoad: (JQuery, String, js.Array[_], js.Any) => Unit,
-    onRequest: (JQuery, String) => Unit,
-    onVisible: (JQuery, String) => Unit,
+    onFirstLoad: (String, js.Array[_], js.Any) => Unit,
+    onLoad: (String, js.Array[_], js.Any) => Unit,
+    onRequest: String => Unit,
+    onVisible: String => Unit,
     path: `false` | String,
     performance: Boolean,
     selector: SelectorSettings,
@@ -226,7 +226,7 @@ object _Impl {
     templates: TemplatesSettings,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(alwaysRefresh = alwaysRefresh.asInstanceOf[js.Any], apiSettings = apiSettings.asInstanceOf[js.Any], auto = auto.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cacheType = cacheType.asInstanceOf[js.Any], childrenOnly = childrenOnly.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], deactivate = deactivate.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], evaluateScripts = evaluateScripts.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], historyType = historyType.asInstanceOf[js.Any], ignoreFirstLoad = ignoreFirstLoad.asInstanceOf[js.Any], loadOnce = loadOnce.asInstanceOf[js.Any], maxDepth = maxDepth.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onFirstLoad = js.Any.fromFunction4(onFirstLoad), onLoad = js.Any.fromFunction4(onLoad), onRequest = js.Any.fromFunction2(onRequest), onVisible = js.Any.fromFunction2(onVisible), path = path.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alwaysRefresh = alwaysRefresh.asInstanceOf[js.Any], apiSettings = apiSettings.asInstanceOf[js.Any], auto = auto.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cacheType = cacheType.asInstanceOf[js.Any], childrenOnly = childrenOnly.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], deactivate = deactivate.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], evaluateScripts = evaluateScripts.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], historyType = historyType.asInstanceOf[js.Any], ignoreFirstLoad = ignoreFirstLoad.asInstanceOf[js.Any], loadOnce = loadOnce.asInstanceOf[js.Any], maxDepth = maxDepth.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onFirstLoad = js.Any.fromFunction3(onFirstLoad), onLoad = js.Any.fromFunction3(onLoad), onRequest = js.Any.fromFunction1(onRequest), onVisible = js.Any.fromFunction1(onVisible), path = path.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

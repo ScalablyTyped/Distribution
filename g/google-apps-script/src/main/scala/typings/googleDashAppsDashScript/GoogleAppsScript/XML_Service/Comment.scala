@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A representation of an XML Comment node.
   */
-trait Comment
-  extends typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content {
+trait Comment extends Content {
   def getText(): String
   def setText(text: String): Comment
 }
@@ -23,7 +22,7 @@ object Comment {
     asEntityRef: () => EntityRef,
     asProcessingInstruction: () => ProcessingInstruction,
     asText: () => Text,
-    detach: () => typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content,
+    detach: () => Content,
     getParentElement: () => Element,
     getText: () => String,
     getType: () => ContentType,

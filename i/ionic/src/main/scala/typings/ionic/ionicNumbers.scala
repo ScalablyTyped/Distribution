@@ -20,12 +20,6 @@ object ionicNumbers {
   @js.native
   sealed trait `8200` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `35729`: `35729` = 35729.asInstanceOf[`35729`]
   @scala.inline
@@ -36,9 +30,5 @@ object ionicNumbers {
   def `8100`: `8100` = 8100.asInstanceOf[`8100`]
   @scala.inline
   def `8200`: `8200` = 8200.asInstanceOf[`8200`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

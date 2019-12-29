@@ -1,6 +1,5 @@
 package typings.rotDashJs
 
-import typings.rotDashJs.libColorMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

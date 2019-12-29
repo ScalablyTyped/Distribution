@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IRootScopeService extends js.Object {
-  // Hidden members
-  @JSName("$$isolateBindings")
-  var $$isolateBindings: js.Any = js.native
-  @JSName("$$phase")
-  var $$phase: js.Any = js.native
   @JSName("$id")
   var $id: Double = js.native
   @JSName("$parent")
   var $parent: IScope = js.native
   @JSName("$root")
   var $root: IRootScopeService = js.native
+  // Hidden members
+  @JSName("$$isolateBindings")
+  var DollarDollarisolateBindings: js.Any = js.native
+  @JSName("$$phase")
+  var DollarDollarphase: js.Any = js.native
   @JSName("$apply")
   def $apply(): js.Any = js.native
   @JSName("$apply")

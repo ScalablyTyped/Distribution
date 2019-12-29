@@ -1,6 +1,5 @@
 package typings.baconjs
 
-import typings.baconjs.typesDescribeMod.Desc
 import typings.baconjs.typesObservableMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

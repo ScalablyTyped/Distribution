@@ -1,6 +1,5 @@
 package typings.broccoliDashOutputDashWrapper
 
-import typings.broccoliDashOutputDashWrapper.broccoliDashOutputDashWrapperMod.FSOutput
 import typings.broccoliDashOutputDashWrapper.broccoliDashOutputDashWrapperStrings.buffer
 import typings.node.Anon_BufferEncodingFalse
 import typings.node.Anon_EncodingFalse
@@ -54,24 +53,24 @@ object broccoliDashOutputDashWrapperMod extends js.Object {
     def mkdirSync(path: PathLike, options: String): Unit = js.native
     def mkdirSync(path: PathLike, options: Double): Unit = js.native
     def mkdirSync(path: PathLike, options: MakeDirectoryOptions): Unit = js.native
-    def readFileSync(path: Double): Buffer = js.native
+    def readFileSync(path: Double): String | Buffer = js.native
     def readFileSync(path: Double, options: String): String | Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlag): Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlagNull): String | Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlagString): String = js.native
-    def readFileSync(path: PathLike): Buffer = js.native
+    def readFileSync(path: PathLike): String | Buffer = js.native
     def readFileSync(path: PathLike, options: String): String | Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlag): Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlagNull): String | Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlagString): String = js.native
     @JSName("readFileSync")
+    def readFileSync_Buffer(path: Double): Buffer = js.native
+    @JSName("readFileSync")
+    def readFileSync_Buffer(path: PathLike): Buffer = js.native
+    @JSName("readFileSync")
     def readFileSync_String(path: Double, options: String): String = js.native
     @JSName("readFileSync")
     def readFileSync_String(path: PathLike, options: String): String = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: Double): String | Buffer = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: PathLike): String | Buffer = js.native
     def readdirSync(path: PathLike): js.Array[Buffer | String] = js.native
     def readdirSync(path: PathLike, options: String): js.Array[Buffer | String] = js.native
     def readdirSync(path: PathLike, options: Anon_BufferEncodingFalse): js.Array[Buffer] = js.native

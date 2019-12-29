@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Left
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Right
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

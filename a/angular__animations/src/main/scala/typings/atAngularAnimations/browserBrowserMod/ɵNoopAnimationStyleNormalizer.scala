@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/animations/browser/browser", "ɵNoopAnimationStyleNormalizer")
+@JSImport("@angular/animations/browser/browser", "\u0275NoopAnimationStyleNormalizer")
 @js.native
 class ɵNoopAnimationStyleNormalizer () extends js.Object {
   def normalizePropertyName(propertyName: String, errors: js.Array[String]): String = js.native

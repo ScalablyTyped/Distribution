@@ -3,7 +3,7 @@ package typings.fabric.fabricDashImplMod
 import typings.fabric.Anon_Baseline
 import typings.fabric.Anon_BlBrMbMl
 import typings.fabric.Anon_BlBrTlTr
-import typings.fabric.fabricStrings.Empty
+import typings.fabric.fabricStrings._empty
 import typings.fabric.fabricStrings.circle
 import typings.fabric.fabricStrings.italic
 import typings.fabric.fabricStrings.normal
@@ -39,7 +39,7 @@ trait TextOptions extends IObjectOptions {
   	 * Font style . Possible values: "", "normal", "italic" or "oblique".
   	 * @type String
   	 */
-  var fontStyle: js.UndefOr[Empty | normal | italic | oblique] = js.undefined
+  var fontStyle: js.UndefOr[_empty | normal | italic | oblique] = js.undefined
   /**
   	 * Font weight (e.g. bold, normal, 400, 600, 800)
   	 * @type {(Number|String)}
@@ -129,7 +129,7 @@ object TextOptions {
     flipY: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
     fontSize: Int | Double = null,
-    fontStyle: Empty | normal | italic | oblique = null,
+    fontStyle: _empty | normal | italic | oblique = null,
     fontWeight: String | Double = null,
     globalCompositeOperation: String = null,
     group: Group = null,

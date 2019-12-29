@@ -208,7 +208,7 @@ trait Model extends js.Object {
     * values that are accepted by orientation(ej.Schedule.Orientation) are as follows,
     * @Default {ej.Schedule.Orientation.Vertical}
     */
-  var orientation: js.UndefOr[String | typings.ejDotWebDotAll.ej.Schedule.Orientation] = js.undefined
+  var orientation: js.UndefOr[String | Orientation] = js.undefined
   /** Triggers when the overflow button is clicked.
     */
   var overflowButtonClick: js.UndefOr[js.Function1[/* e */ OverflowButtonClickEventArgs, Unit]] = js.undefined
@@ -400,7 +400,7 @@ object Model {
     menuItemClick: /* e */ MenuItemClickEventArgs => Unit = null,
     minDate: js.Any = null,
     navigation: /* e */ NavigationEventArgs => Unit = null,
-    orientation: String | typings.ejDotWebDotAll.ej.Schedule.Orientation = null,
+    orientation: String | Orientation = null,
     overflowButtonClick: /* e */ OverflowButtonClickEventArgs => Unit = null,
     overflowButtonHover: /* e */ OverflowButtonHoverEventArgs => Unit = null,
     prioritySettings: PrioritySettings = null,

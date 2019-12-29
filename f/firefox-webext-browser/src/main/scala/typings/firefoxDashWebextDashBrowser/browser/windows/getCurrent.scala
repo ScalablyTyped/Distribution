@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getCurrent extends js.Object {
   /** Gets the current window. */
-  def apply(): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
-  def apply(getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
+  def apply(): js.Promise[Window] = js.native
+  def apply(getInfo: GetInfo): js.Promise[Window] = js.native
 }
 

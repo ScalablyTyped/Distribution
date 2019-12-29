@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppRecordKind.recordOriented
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppRecordKind.transparent
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppRecordKind.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

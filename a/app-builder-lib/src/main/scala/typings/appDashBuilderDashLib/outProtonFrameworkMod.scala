@@ -1,6 +1,6 @@
 package typings.appDashBuilderDashLib
 
-import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.`comDOTproton-nativeDOT`
+import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.`comDotproton-nativeDot`
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.proton
 import typings.appDashBuilderDashLib.outCoreMod.Platform
 import typings.appDashBuilderDashLib.outFrameworksLibUiFrameworkMod.LibUiFramework
@@ -16,7 +16,7 @@ object outProtonFrameworkMod extends js.Object {
   class ProtonFramework protected () extends LibUiFramework {
     def this(version: String, distMacOsAppName: String, isUseLaunchUi: Boolean) = this()
     @JSName("defaultAppIdPrefix")
-    val defaultAppIdPrefix_ProtonFramework: `comDOTproton-nativeDOT` = js.native
+    val defaultAppIdPrefix_ProtonFramework: `comDotproton-nativeDot` = js.native
     @JSName("name")
     val name_ProtonFramework: proton = js.native
     @JSName("createTransformer")

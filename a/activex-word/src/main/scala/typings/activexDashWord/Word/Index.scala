@@ -20,7 +20,8 @@ class Index protected () extends js.Object {
   var SortBy: WdIndexSortBy = js.native
   var TabLeader: WdTabLeader = js.native
   var Type: WdIndexType = js.native
-  var `Word.Index_typekey`: Index = js.native
+  @JSName("Word.Index_typekey")
+  var WordDotIndex_typekey: Index = js.native
   def Delete(): Unit = js.native
   def Update(): Unit = js.native
 }

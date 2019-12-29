@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LabelConstraints.All
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LabelConstraints.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LabelConstraints.Rotatable
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LabelConstraints.Selectable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,19 +41,13 @@ object LabelConstraints extends js.Object {
   object All extends TopLevel[All with Double]
   
   /* 2 */ @js.native
-  object Draggable
-    extends TopLevel[
-          typings.ejDotWebDotAll.ej.datavisualization.Diagram.LabelConstraints.Draggable with Double
-        ]
+  object Draggable extends TopLevel[Draggable with Double]
   
   /* 0 */ @js.native
   object None extends TopLevel[None with Double]
   
   /* 3 */ @js.native
-  object Resizable
-    extends TopLevel[
-          typings.ejDotWebDotAll.ej.datavisualization.Diagram.LabelConstraints.Resizable with Double
-        ]
+  object Resizable extends TopLevel[Resizable with Double]
   
   /* 4 */ @js.native
   object Rotatable extends TopLevel[Rotatable with Double]

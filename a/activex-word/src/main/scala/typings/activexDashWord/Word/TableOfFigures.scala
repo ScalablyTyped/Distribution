@@ -24,7 +24,8 @@ class TableOfFigures protected () extends js.Object {
   var UseFields: Boolean = js.native
   var UseHeadingStyles: Boolean = js.native
   var UseHyperlinks: Boolean = js.native
-  var `Word.TableOfFigures_typekey`: TableOfFigures = js.native
+  @JSName("Word.TableOfFigures_typekey")
+  var WordDotTableOfFigures_typekey: TableOfFigures = js.native
   def Delete(): Unit = js.native
   def Update(): Unit = js.native
   def UpdatePageNumbers(): Unit = js.native

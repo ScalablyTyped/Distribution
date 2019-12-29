@@ -153,7 +153,7 @@ object SeriesVennOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     states: PlotVennStatesOptions = null,
     step: OptionsStepValue = null,
     steps: js.UndefOr[scala.Nothing] = js.undefined,
@@ -162,8 +162,8 @@ object SeriesVennOptions {
     treemap: SeriesTreemapOptions = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    xAxis: Double | String = null,
-    yAxis: Double | String = null,
+    xAxis: Double | scala.Nothing | String = null,
+    yAxis: Double | scala.Nothing | String = null,
     zIndex: Int | Double = null
   ): SeriesVennOptions = {
     val __obj = js.Dynamic.literal()

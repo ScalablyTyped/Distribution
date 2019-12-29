@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Input.HoldingState.canceled
-import typings.winrtDashUwp.Windows.UI.Input.HoldingState.completed
-import typings.winrtDashUwp.Windows.UI.Input.HoldingState.started
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

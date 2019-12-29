@@ -1,9 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.SelectionUpdateType.ADD
-import typings.tableau.tableau.SelectionUpdateType.REMOVE
-import typings.tableau.tableau.SelectionUpdateType.REPLACE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

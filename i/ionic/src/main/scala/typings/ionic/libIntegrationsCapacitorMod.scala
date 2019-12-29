@@ -1,7 +1,7 @@
 package typings.ionic
 
 import typings.ionic.definitionsMod.ProjectIntegration
-import typings.ionic.ionicStrings.`Target native iOS and Android with Capacitor, Ionic_quotes new native layer`
+import typings.ionic.ionicStrings.`Target native iOS and Android with CapacitorComma IonicApostrophes new native layer`
 import typings.ionic.libIntegrationsCapacitorConfigMod.CapacitorConfig
 import typings.ionic.libIntegrationsMod.BaseIntegration
 import typings.ionic.libIntegrationsMod.IntegationUnion
@@ -20,7 +20,7 @@ object libIntegrationsCapacitorMod extends js.Object {
     @JSName("archiveUrl")
     val archiveUrl_Integration: js.UndefOr[scala.Nothing] = js.native
     @JSName("summary")
-    val summary_Integration: `Target native iOS and Android with Capacitor, Ionic_quotes new native layer` = js.native
+    val summary_Integration: `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer` = js.native
     @JSName("config")
     def config_MIntegration(): IntegrationConfig = js.native
     /* InferMemberOverrides */

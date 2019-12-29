@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.TypeScript
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +23,19 @@ object EmitOutputResult extends js.Object {
   @js.native
   sealed trait Succeeded extends EmitOutputResult
   
-  /* 2 */ val FailedBecauseOfCompilerOptionsErrors: typings.typescriptDashServices.TypeScript.EmitOutputResult.FailedBecauseOfCompilerOptionsErrors with Double = js.native
-  /* 1 */ val FailedBecauseOfSyntaxErrors: typings.typescriptDashServices.TypeScript.EmitOutputResult.FailedBecauseOfSyntaxErrors with Double = js.native
-  /* 3 */ val FailedToGenerateDeclarationsBecauseOfSemanticErrors: typings.typescriptDashServices.TypeScript.EmitOutputResult.FailedToGenerateDeclarationsBecauseOfSemanticErrors with Double = js.native
-  /* 0 */ val Succeeded: typings.typescriptDashServices.TypeScript.EmitOutputResult.Succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmitOutputResult with Double] = js.native
+  /* 2 */ @js.native
+  object FailedBecauseOfCompilerOptionsErrors extends TopLevel[FailedBecauseOfCompilerOptionsErrors with Double]
+  
+  /* 1 */ @js.native
+  object FailedBecauseOfSyntaxErrors extends TopLevel[FailedBecauseOfSyntaxErrors with Double]
+  
+  /* 3 */ @js.native
+  object FailedToGenerateDeclarationsBecauseOfSemanticErrors extends TopLevel[FailedToGenerateDeclarationsBecauseOfSemanticErrors with Double]
+  
+  /* 0 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
 }
 

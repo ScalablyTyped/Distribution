@@ -12,6 +12,7 @@ class Helpers () extends js.Object
 @JSImport("survey-knockout", "Helpers")
 @js.native
 object Helpers extends js.Object {
+  def createCopy(obj: js.Any): js.Any = js.native
   def getMaxLength(maxLength: Double, surveyLength: Double): js.Any = js.native
   def getUnbindValue(value: js.Any): js.Any = js.native
   def isArrayContainsEqual(x: js.Any, y: js.Any): Boolean = js.native

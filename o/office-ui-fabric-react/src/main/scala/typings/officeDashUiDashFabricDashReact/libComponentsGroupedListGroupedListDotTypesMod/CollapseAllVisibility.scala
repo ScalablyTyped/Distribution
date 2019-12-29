@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.CollapseAllVisibility.hidden
-import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.CollapseAllVisibility.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

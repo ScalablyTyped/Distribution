@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.VerticalAlignment.bottom
-import typings.officeDashJs.Excel.VerticalAlignment.center
-import typings.officeDashJs.Excel.VerticalAlignment.distributed
-import typings.officeDashJs.Excel.VerticalAlignment.justify
-import typings.officeDashJs.Excel.VerticalAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

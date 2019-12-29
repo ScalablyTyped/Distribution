@@ -2,6 +2,7 @@ package typings.openlayers.openlayersMod.olx.interaction
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.openlayers.openlayersMod.ProjectionLike
+import typings.openlayers.openlayersMod.format.Feature
 import typings.openlayers.openlayersMod.source.Vector
 import typings.std.Element
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DragAndDropOptions extends js.Object {
-  var formatConstructors: js.UndefOr[js.Array[Instantiable0[typings.openlayers.openlayersMod.format.Feature]]] = js.undefined
+  var formatConstructors: js.UndefOr[js.Array[Instantiable0[Feature]]] = js.undefined
   var projection: ProjectionLike
   var source: js.UndefOr[Vector] = js.undefined
   var target: js.UndefOr[Element] = js.undefined
@@ -18,7 +19,7 @@ trait DragAndDropOptions extends js.Object {
 object DragAndDropOptions {
   @scala.inline
   def apply(
-    formatConstructors: js.Array[Instantiable0[typings.openlayers.openlayersMod.format.Feature]] = null,
+    formatConstructors: js.Array[Instantiable0[Feature]] = null,
     projection: ProjectionLike = null,
     source: Vector = null,
     target: Element = null

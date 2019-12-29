@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.BinaryFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
@@ -25,31 +26,15 @@ class BinaryFile protected ()
     * @param xhrSettings Extra XHR Settings specifically for this file.
     * @param dataType Optional type to cast the binary file to once loaded. For example, `Uint8Array`.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: BinaryFileConfig) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: BinaryFileConfig, url: String) = this()
+  def this(loader: LoaderPlugin, key: String) = this()
+  def this(loader: LoaderPlugin, key: BinaryFileConfig) = this()
+  def this(loader: LoaderPlugin, key: String, url: String) = this()
+  def this(loader: LoaderPlugin, key: BinaryFileConfig, url: String) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, xhrSettings: XHRSettingsObject) = this()
+  def this(loader: LoaderPlugin, key: BinaryFileConfig, url: String, xhrSettings: XHRSettingsObject) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, xhrSettings: XHRSettingsObject, dataType: js.Any) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    url: String,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: BinaryFileConfig,
-    url: String,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    url: String,
-    xhrSettings: XHRSettingsObject,
-    dataType: js.Any
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: BinaryFileConfig,
     url: String,
     xhrSettings: XHRSettingsObject,

@@ -7,29 +7,29 @@ import scala.scalajs.js.annotation._
 
 object compareDashVersionsStrings {
   @js.native
-  sealed trait `<` extends CompareOperator
+  sealed trait Equalssign extends CompareOperator
   
   @js.native
-  sealed trait `<=` extends CompareOperator
+  sealed trait Greaterthansign extends CompareOperator
   
   @js.native
-  sealed trait `=` extends CompareOperator
+  sealed trait GreaterthansignEqualssign extends CompareOperator
   
   @js.native
-  sealed trait `>` extends CompareOperator
+  sealed trait Lessthansign extends CompareOperator
   
   @js.native
-  sealed trait `>=` extends CompareOperator
+  sealed trait LessthansignEqualssign extends CompareOperator
   
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
 }
 

@@ -1,11 +1,6 @@
 package typings.framesync.libTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.framesync.libTypesMod.StepId.FixedUpdate
-import typings.framesync.libTypesMod.StepId.PostRender
-import typings.framesync.libTypesMod.StepId.Read
-import typings.framesync.libTypesMod.StepId.Render
-import typings.framesync.libTypesMod.StepId.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

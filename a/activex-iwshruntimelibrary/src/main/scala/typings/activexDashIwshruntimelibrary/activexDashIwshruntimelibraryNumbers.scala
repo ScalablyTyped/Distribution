@@ -122,9 +122,6 @@ object activexDashIwshruntimelibraryNumbers {
   @js.native
   sealed trait `9` extends WindowStyle
   
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
@@ -169,7 +166,5 @@ object activexDashIwshruntimelibraryNumbers {
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

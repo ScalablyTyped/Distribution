@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Sms.CellularClass.cdma
-import typings.winrt.Windows.Devices.Sms.CellularClass.gsm
-import typings.winrt.Windows.Devices.Sms.CellularClass.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

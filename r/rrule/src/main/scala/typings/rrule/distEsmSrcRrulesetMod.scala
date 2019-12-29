@@ -1,6 +1,5 @@
 package typings.rrule
 
-import typings.rrule.distEsmSrcRrulesetMod.RRuleSet
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

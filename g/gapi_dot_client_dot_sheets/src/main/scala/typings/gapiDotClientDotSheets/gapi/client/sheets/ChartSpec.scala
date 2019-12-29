@@ -45,6 +45,8 @@ trait ChartSpec extends js.Object {
   var orgChart: js.UndefOr[OrgChartSpec] = js.undefined
   /** A pie chart specification. */
   var pieChart: js.UndefOr[PieChartSpec] = js.undefined
+  /** A scorecard chart specification. */
+  var scorecardChart: js.UndefOr[ScorecardChartSpec] = js.undefined
   /** The subtitle of the chart. */
   var subtitle: js.UndefOr[String] = js.undefined
   /**
@@ -89,6 +91,7 @@ object ChartSpec {
     maximized: js.UndefOr[Boolean] = js.undefined,
     orgChart: OrgChartSpec = null,
     pieChart: PieChartSpec = null,
+    scorecardChart: ScorecardChartSpec = null,
     subtitle: String = null,
     subtitleTextFormat: TextFormat = null,
     subtitleTextPosition: TextPosition = null,
@@ -110,6 +113,7 @@ object ChartSpec {
     if (!js.isUndefined(maximized)) __obj.updateDynamic("maximized")(maximized.asInstanceOf[js.Any])
     if (orgChart != null) __obj.updateDynamic("orgChart")(orgChart.asInstanceOf[js.Any])
     if (pieChart != null) __obj.updateDynamic("pieChart")(pieChart.asInstanceOf[js.Any])
+    if (scorecardChart != null) __obj.updateDynamic("scorecardChart")(scorecardChart.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
     if (subtitleTextFormat != null) __obj.updateDynamic("subtitleTextFormat")(subtitleTextFormat.asInstanceOf[js.Any])
     if (subtitleTextPosition != null) __obj.updateDynamic("subtitleTextPosition")(subtitleTextPosition.asInstanceOf[js.Any])

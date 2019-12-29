@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Ribbon
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Ribbon.AlignType.Columns
-import typings.ejDotWebDotAll.ej.Ribbon.AlignType.Rows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

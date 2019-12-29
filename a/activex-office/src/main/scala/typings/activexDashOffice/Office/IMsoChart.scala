@@ -38,7 +38,8 @@ class IMsoChart protected () extends js.Object {
   var HeightPercent: Double = js.native
   val Legend: IMsoLegend = js.native
   val Line3DGroup: IMsoChartGroup = js.native
-  var `Office.IMsoChart_typekey`: IMsoChart = js.native
+  @JSName("Office.IMsoChart_typekey")
+  var OfficeDotIMsoChart_typekey: IMsoChart = js.native
   val Parent: js.Any = js.native
   var Perspective: Double = js.native
   val Pie3DGroup: IMsoChartGroup = js.native

@@ -2,8 +2,8 @@ package typings.hexo.hexoMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.hexo.Anon_Autodetect
+import typings.hexo.hexoBooleans.`false`
 import typings.hexo.hexoMod.extend.Deployer.Config
-import typings.hexo.hexoNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

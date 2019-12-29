@@ -15,6 +15,7 @@ class LineNumbering protected () extends js.Object {
   val Parent: js.Any = js.native
   var RestartMode: WdNumberingRule = js.native
   var StartingNumber: Double = js.native
-  var `Word.LineNumbering_typekey`: LineNumbering = js.native
+  @JSName("Word.LineNumbering_typekey")
+  var WordDotLineNumbering_typekey: LineNumbering = js.native
 }
 

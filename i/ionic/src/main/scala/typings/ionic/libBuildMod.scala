@@ -19,15 +19,12 @@ import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.IShell
 import typings.ionic.definitionsMod.NpmClient
 import typings.ionic.definitionsMod.Runner
-import typings.ionic.ionicNumbers.`true`
+import typings.ionic.ionicBooleans.`true`
 import typings.ionic.ionicStrings.Yarn
-import typings.ionic.ionicStrings.`ionic:build`
 import typings.ionic.ionicStrings.`npm CLI`
+import typings.ionic.ionicStrings.ionicColonbuild
 import typings.ionic.ionicStrings.npm
 import typings.ionic.ionicStrings.yarn_
-import typings.ionic.libBuildMod.BuildCLI
-import typings.ionic.libBuildMod.BuildRunnerDeps
-import typings.ionic.libBuildMod.PkgManagerBuildCLI
 import typings.node.NodeJS.ProcessEnv
 import typings.std.Partial
 import scala.scalajs.js
@@ -125,7 +122,7 @@ object libBuildMod extends js.Object {
     @JSName("program")
     val program_PkgManagerBuildCLI: NpmClient = js.native
     @JSName("script")
-    val script_PkgManagerBuildCLI: `ionic:build` = js.native
+    val script_PkgManagerBuildCLI: ionicColonbuild = js.native
   }
   
   @js.native
@@ -138,7 +135,7 @@ object libBuildMod extends js.Object {
     val program_YarnBuildCLI: yarn_ = js.native
   }
   
-  val BUILD_SCRIPT: `ionic:build` = js.native
+  val BUILD_SCRIPT: ionicColonbuild = js.native
   val COMMON_BUILD_COMMAND_OPTIONS: js.Array[CommandMetadataOption] = js.native
 }
 

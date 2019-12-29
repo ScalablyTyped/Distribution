@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "handsontable"
-version := "7.3.0-470bea"
+version := "7.3.0-13e753"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
-  "org.scalablytyped" %%% "pikaday" % "1.7-dt-20190224Z-b262c3",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "moment" % "2.24.0-8ebd48",
+  "org.scalablytyped" %%% "pikaday" % "1.7-dt-20190224Z-0b8149",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

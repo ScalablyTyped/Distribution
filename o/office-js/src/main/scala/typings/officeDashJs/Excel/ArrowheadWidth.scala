@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ArrowheadWidth.medium
-import typings.officeDashJs.Excel.ArrowheadWidth.narrow
-import typings.officeDashJs.Excel.ArrowheadWidth.wide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

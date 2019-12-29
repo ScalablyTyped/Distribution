@@ -16,6 +16,24 @@ trait Pattern extends Node
 
 object Pattern {
   @scala.inline
+  def AssignmentPattern(
+    left: Pattern,
+    right: Expression,
+    `type`: typings.estree.estreeStrings.AssignmentPattern,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Pattern = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pattern]
+  }
+  @scala.inline
   def ObjectPattern(
     properties: js.Array[AssignmentProperty],
     `type`: typings.estree.estreeStrings.ObjectPattern,
@@ -50,23 +68,6 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   @scala.inline
-  def RestElement(
-    argument: Pattern,
-    `type`: typings.estree.estreeStrings.RestElement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Pattern = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Pattern]
-  }
-  @scala.inline
   def MemberExpression(
     computed: Boolean,
     `object`: Expression | Super,
@@ -87,16 +88,15 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   @scala.inline
-  def AssignmentPattern(
-    left: Pattern,
-    right: Expression,
-    `type`: typings.estree.estreeStrings.AssignmentPattern,
+  def RestElement(
+    argument: Pattern,
+    `type`: typings.estree.estreeStrings.RestElement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Pattern = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])

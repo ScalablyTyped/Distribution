@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "transliteration" : "2.1.7"
+      "transliteration" : "2.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "transliteration" : "2.1.7"
+      "transliteration" : "2.1.8"
     }
   ],
   "compile-devDependencies" : [

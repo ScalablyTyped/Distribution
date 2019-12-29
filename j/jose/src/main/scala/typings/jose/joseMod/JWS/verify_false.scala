@@ -1,7 +1,7 @@
 package typings.jose.joseMod.JWS
 
+import typings.jose.joseBooleans.`false`
 import typings.jose.joseMod.ConsumeKeyInput
-import typings.jose.joseNumbers.`false`
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

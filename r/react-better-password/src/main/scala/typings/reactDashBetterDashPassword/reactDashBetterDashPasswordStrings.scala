@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashBetterDashPasswordStrings {
   @js.native
-  sealed trait BACKSLASHu2022 extends js.Object
+  sealed trait Bullet extends js.Object
   
   @scala.inline
-  def BACKSLASHu2022: BACKSLASHu2022 = "\u2022".asInstanceOf[BACKSLASHu2022]
+  def Bullet: Bullet = "\u2022".asInstanceOf[Bullet]
 }
 

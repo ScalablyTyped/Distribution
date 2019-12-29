@@ -1,19 +1,21 @@
 package typings.stompit.libConnectMod
 
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.OnReadOpts
 import typings.node.netMod.Socket
+import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PeerCertificate
+import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
+import typings.std.Error
 import typings.std.Uint8Array
 import typings.stompit.libSocketMod.CommandHandlers
 import typings.stompit.libSocketMod.Heartbeat
-import typings.stompit.stompitNumbers.`false`
-import typings.stompit.stompitNumbers.`true`
+import typings.stompit.stompitBooleans.`false`
+import typings.stompit.stompitBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -138,7 +140,7 @@ object ConnectOptions {
     heartbeatOutputMargin: Int | Double = null,
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
-    key: String | Buffer | (js.Array[Buffer | js.Object]) = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     maxVersion: SecureVersion = null,
     minDHSize: Int | Double = null,
@@ -146,8 +148,10 @@ object ConnectOptions {
     outgoingFrameStream: typings.stompit.libOutgoingFrameStreamMod.^ = null,
     passphrase: String = null,
     path: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     port: Int | Double = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     resetDisconnect: js.UndefOr[Boolean] = js.undefined,
@@ -157,6 +161,7 @@ object ConnectOptions {
     servername: String = null,
     session: Buffer = null,
     sessionIdContext: String = null,
+    sigalgs: String = null,
     socket: Socket = null,
     timeout: Int | Double = null,
     unknownCommand: () => Unit = null
@@ -191,6 +196,8 @@ object ConnectOptions {
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect.asInstanceOf[js.Any])
@@ -200,6 +207,7 @@ object ConnectOptions {
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(js.Any.fromFunction0(unknownCommand))

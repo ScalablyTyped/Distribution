@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Management.Deployment.DeploymentOptions.developmentMode
-import typings.winrtDashUwp.Windows.Management.Deployment.DeploymentOptions.forceApplicationShutdown
-import typings.winrtDashUwp.Windows.Management.Deployment.DeploymentOptions.forceTargetApplicationShutdown
-import typings.winrtDashUwp.Windows.Management.Deployment.DeploymentOptions.installAllResources
-import typings.winrtDashUwp.Windows.Management.Deployment.DeploymentOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

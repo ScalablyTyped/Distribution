@@ -8,8 +8,6 @@ import typings.fb.PayDialogParams
 import typings.fb.RequestsDialogParams
 import typings.fb.SendDialogParams
 import typings.fb.ShareDialogParams
-import typings.ngDashFacebook.angularMod.ngFacebook.FBUIParams
-import typings.ngDashFacebook.angularMod.ngFacebook.IFacebookProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

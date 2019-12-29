@@ -12,7 +12,8 @@ class FormFields protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   var Shaded: Boolean = js.native
-  var `Word.FormFields_typekey`: FormFields = js.native
+  @JSName("Word.FormFields_typekey")
+  var WordDotFormFields_typekey: FormFields = js.native
   def Add(Range: Range, Type: WdFieldType): FormField = js.native
   def Item(Index: js.Any): FormField = js.native
 }

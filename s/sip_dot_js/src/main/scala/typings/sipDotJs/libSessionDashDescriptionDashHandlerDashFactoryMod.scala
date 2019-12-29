@@ -1,6 +1,5 @@
 package typings.sipDotJs
 
-import typings.sipDotJs.libSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactoryOptions
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext

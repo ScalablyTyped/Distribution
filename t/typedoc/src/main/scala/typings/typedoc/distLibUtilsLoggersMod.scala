@@ -1,13 +1,6 @@
 package typings.typedoc
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typedoc.distLibUtilsLoggersMod.LogLevel
-import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Error
-import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Info
-import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Success
-import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Verbose
-import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Warn
-import typings.typedoc.distLibUtilsLoggersMod.Logger
 import typings.typescript.typescriptMod.Diagnostic
 import scala.scalajs.js
 import scala.scalajs.js.`|`

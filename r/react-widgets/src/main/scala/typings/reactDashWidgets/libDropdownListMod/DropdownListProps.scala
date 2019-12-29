@@ -6,7 +6,7 @@ import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactType
 import typings.reactDashWidgets.libCommonPropsMod.AutoFocus
 import typings.reactDashWidgets.libCommonPropsMod.ReactWidgetsCommonDropdownProps
-import typings.reactDashWidgets.reactDashWidgetsNumbers.`false`
+import typings.reactDashWidgets.reactDashWidgetsBooleans.`false`
 import typings.reactDashWidgets.reactDashWidgetsStrings.contains
 import typings.reactDashWidgets.reactDashWidgetsStrings.endsWith
 import typings.reactDashWidgets.reactDashWidgetsStrings.onFilter

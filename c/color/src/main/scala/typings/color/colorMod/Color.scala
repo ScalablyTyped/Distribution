@@ -4,7 +4,7 @@ import typings.color.Anon_Alpha
 import typings.color.Anon_AlphaB
 import typings.color.colorStrings.AA
 import typings.color.colorStrings.AAA
-import typings.color.colorStrings.Empty
+import typings.color.colorStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ trait Color extends js.Object {
   def l(`val`: Double): Color = js.native
   def lab(args: Double*): Color = js.native
   def lch(args: Double*): Color = js.native
-  def level(color2: Color): AAA | AA | Empty = js.native
+  def level(color2: Color): AAA | AA | _empty = js.native
   def lighten(ratio: Double): Color = js.native
   def lightness(): Double = js.native
   def lightness(`val`: Double): Color = js.native

@@ -27,8 +27,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api stable
   */
-class ImageWMS ()
-  extends typings.openlayers.openlayersMod.source.Image {
+class ImageWMS () extends Image {
   def this(opt_options: ImageWMSOptions) = this()
   /**
     * Return the GetFeatureInfo URL for the passed coordinate, resolution, and

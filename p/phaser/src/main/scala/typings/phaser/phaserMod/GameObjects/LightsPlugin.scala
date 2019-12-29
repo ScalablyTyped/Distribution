@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +34,6 @@ class LightsPlugin protected ()
     * 
     * @param scene The Scene that this Lights Plugin belongs to.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
+  def this(scene: Scene) = this()
 }
 

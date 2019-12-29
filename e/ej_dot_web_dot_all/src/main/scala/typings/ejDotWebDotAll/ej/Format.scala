@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Format.Cloud
-import typings.ejDotWebDotAll.ej.Format.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

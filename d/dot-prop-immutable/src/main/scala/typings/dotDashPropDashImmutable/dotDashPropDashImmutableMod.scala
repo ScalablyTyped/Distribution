@@ -1,7 +1,5 @@
 package typings.dotDashPropDashImmutable
 
-import typings.dotDashPropDashImmutable.dotDashPropDashImmutableMod.ArrayOrObject
-import typings.dotDashPropDashImmutable.dotDashPropDashImmutableMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

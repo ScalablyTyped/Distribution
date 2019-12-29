@@ -3,8 +3,6 @@ package typings.atStorybookUi
 import typings.atStorybookUi.atStorybookUiStrings.button
 import typings.atStorybookUi.atStorybookUiStrings.form
 import typings.atStorybookUi.atStorybookUiStrings.input
-import typings.atStorybookUi.distComponentsSidebarSidebarSearchMod.FilterFieldProps
-import typings.atStorybookUi.distComponentsSidebarSidebarSearchMod.PureSidebarSearchProps
 import typings.react.reactMod.ComponentProps
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js

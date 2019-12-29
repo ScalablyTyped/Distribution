@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassReportDesigner
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), ReportDesigner]
+     with Instantiable2[
       (/* element */ Element) | (/* element */ JQuery), 
       /* options */ Model, 
       ReportDesigner
-    ]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), ReportDesigner] {
+    ] {
   var Locale: js.Any = js.native
   var fn: ReportDesigner = js.native
 }

@@ -11,7 +11,8 @@ class Selection protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
   val Location: OlSelectionLocation = js.native
-  var `Outlook.Selection_typekey`: Selection = js.native
+  @JSName("Outlook.Selection_typekey")
+  var OutlookDotSelection_typekey: Selection = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def GetSelection(SelectionContents: OlSelectionContents): Selection = js.native

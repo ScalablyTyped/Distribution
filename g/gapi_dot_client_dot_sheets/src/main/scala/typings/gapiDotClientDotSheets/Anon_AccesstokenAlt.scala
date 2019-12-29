@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAlt extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -27,7 +27,7 @@ trait Anon_AccesstokenAlt extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.native
   /** Request body */
-  var resource: js.UndefOr[SearchDeveloperMetadataRequest] = js.native
+  var resource: SearchDeveloperMetadataRequest = js.native
   /** The ID of the spreadsheet to retrieve metadata from. */
   var spreadsheetId: String = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

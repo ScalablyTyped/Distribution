@@ -1,6 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.businessHourRendererMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

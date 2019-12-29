@@ -124,9 +124,7 @@ trait Logger
   def notice(message: String, meta: js.Any*): Logger = js.native
   def notice(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
   def profile(id: String): Logger = js.native

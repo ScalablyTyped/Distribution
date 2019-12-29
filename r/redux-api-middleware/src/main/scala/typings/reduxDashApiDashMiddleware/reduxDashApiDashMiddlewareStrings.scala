@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object reduxDashApiDashMiddlewareStrings {
   @js.native
-  sealed trait `@@redux-api-middleware/RSAA` extends js.Object
+  sealed trait `@@redux-api-middlewareSlashRSAA` extends js.Object
   
   @js.native
   sealed trait ApiError extends js.Object
@@ -45,7 +45,7 @@ object reduxDashApiDashMiddlewareStrings {
   sealed trait RequestError extends js.Object
   
   @scala.inline
-  def `@@redux-api-middleware/RSAA`: `@@redux-api-middleware/RSAA` = "@@redux-api-middleware/RSAA".asInstanceOf[`@@redux-api-middleware/RSAA`]
+  def `@@redux-api-middlewareSlashRSAA`: `@@redux-api-middlewareSlashRSAA` = "@@redux-api-middleware/RSAA".asInstanceOf[`@@redux-api-middlewareSlashRSAA`]
   @scala.inline
   def ApiError: ApiError = "ApiError".asInstanceOf[ApiError]
   @scala.inline

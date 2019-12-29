@@ -20,7 +20,8 @@ class SmartTagAction protected () extends js.Object {
   var RadioGroupSelection: Double = js.native
   var TextboxText: String = js.native
   val Type: WdSmartTagControlType = js.native
-  var `Word.SmartTagAction_typekey`: SmartTagAction = js.native
+  @JSName("Word.SmartTagAction_typekey")
+  var WordDotSmartTagAction_typekey: SmartTagAction = js.native
   def Execute(): Unit = js.native
 }
 

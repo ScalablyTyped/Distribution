@@ -1,13 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CASUAL
-import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CURSIVE
-import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SANS_SERIF
-import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SERIF
-import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SANS_SERIF
-import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SERIF
-import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SMALL_CAPITALS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

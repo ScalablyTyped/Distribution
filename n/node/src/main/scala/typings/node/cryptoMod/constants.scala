@@ -90,8 +90,8 @@ object constants extends js.Object {
   /** Instructs OpenSSL to disable version rollback attack detection. */
   val SSL_OP_TLS_ROLLBACK_BUG: Double = js.native
   /** Specifies the active default cipher list used by the current Node.js process  (colon-separated values). */
-  val defaultCipherList: java.lang.String = js.native
+  val defaultCipherList: String = js.native
   /** Specifies the built-in default cipher list used by Node.js (colon-separated values). */
-  val defaultCoreCipherList: java.lang.String = js.native
+  val defaultCoreCipherList: String = js.native
 }
 

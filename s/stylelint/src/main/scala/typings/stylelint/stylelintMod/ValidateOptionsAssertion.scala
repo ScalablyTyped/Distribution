@@ -1,7 +1,7 @@
 package typings.stylelint.stylelintMod
 
-import typings.stylelint.stylelintNumbers.`false`
-import typings.stylelint.stylelintNumbers.`true`
+import typings.stylelint.stylelintBooleans.`false`
+import typings.stylelint.stylelintBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

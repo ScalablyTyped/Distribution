@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 class Strategy protected ()
   extends typings.passport.passportMod.Strategy {
   def this(options: CognitoStrategyOptions, verify: CognitoVerifyFunction) = this()
-  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
   def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

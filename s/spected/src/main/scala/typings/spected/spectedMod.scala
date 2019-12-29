@@ -1,13 +1,5 @@
 package typings.spected
 
-import typings.spected.spectedMod.ErrorMsg
-import typings.spected.spectedMod.Predicate
-import typings.spected.spectedMod.Result
-import typings.spected.spectedMod.Spec
-import typings.spected.spectedMod.SpecArray
-import typings.spected.spectedMod.SpecFunction
-import typings.spected.spectedMod.SpecObject
-import typings.spected.spectedMod.SpecValue
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

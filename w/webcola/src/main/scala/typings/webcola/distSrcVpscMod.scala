@@ -1,10 +1,5 @@
 package typings.webcola
 
-import typings.webcola.distSrcVpscMod.Block
-import typings.webcola.distSrcVpscMod.Blocks
-import typings.webcola.distSrcVpscMod.Constraint
-import typings.webcola.distSrcVpscMod.PositionStats
-import typings.webcola.distSrcVpscMod.Variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

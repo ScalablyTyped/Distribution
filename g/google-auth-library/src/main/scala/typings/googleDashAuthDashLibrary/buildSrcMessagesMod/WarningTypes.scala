@@ -1,8 +1,6 @@
 package typings.googleDashAuthDashLibrary.buildSrcMessagesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAuthDashLibrary.buildSrcMessagesMod.WarningTypes.DEPRECATION
-import typings.googleDashAuthDashLibrary.buildSrcMessagesMod.WarningTypes.WARNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

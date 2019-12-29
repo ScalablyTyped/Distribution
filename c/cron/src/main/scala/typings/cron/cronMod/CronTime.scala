@@ -33,15 +33,15 @@ class CronTime protected () extends js.Object {
   def getTimeout(): Double = js.native
   /**
     * Tells you when ```CronTime``` will be run.
-    */
-  def sendAt(): Moment = js.native
-  def sendAt(i: Double): Moment | js.Array[Moment] = js.native
-  /**
-    * Tells you when ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
     * @returns A `Moment` when the source passed in the constructor is a `Date` or a `Moment` and an array of `Moment` when the source is a string
     */
+  def sendAt(): Moment | js.Array[Moment] = js.native
+  def sendAt(i: Double): Moment | js.Array[Moment] = js.native
+  /**
+    * Tells you when ```CronTime``` will be run.
+    */
   @JSName("sendAt")
-  def sendAt_Union(): Moment | js.Array[Moment] = js.native
+  def sendAt_Moment(): Moment = js.native
 }
 

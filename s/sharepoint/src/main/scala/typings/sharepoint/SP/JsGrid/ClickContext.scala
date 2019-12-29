@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.ClickContext.Cell
-import typings.sharepoint.SP.JsGrid.ClickContext.ColumnHeader
-import typings.sharepoint.SP.JsGrid.ClickContext.Gantt
-import typings.sharepoint.SP.JsGrid.ClickContext.Other
-import typings.sharepoint.SP.JsGrid.ClickContext.RowHeader
-import typings.sharepoint.SP.JsGrid.ClickContext.SelectAllSquare
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

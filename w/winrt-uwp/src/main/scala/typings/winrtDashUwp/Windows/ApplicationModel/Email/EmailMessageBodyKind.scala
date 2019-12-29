@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind.html
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind.plainText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,9 +3,8 @@ package typings.semanticDashUiDashCheckbox.SemanticUI.CheckboxSettings
 import typings.semanticDashUiDashCheckbox.SemanticUI.Checkbox.ClassNameSettings
 import typings.semanticDashUiDashCheckbox.SemanticUI.Checkbox.ErrorSettings
 import typings.semanticDashUiDashCheckbox.SemanticUI.Checkbox.SelectorSettings
-import typings.semanticDashUiDashCheckbox.semanticDashUiDashCheckboxNumbers.`false`
+import typings.semanticDashUiDashCheckbox.semanticDashUiDashCheckboxBooleans.`false`
 import typings.semanticDashUiDashCheckbox.semanticDashUiDashCheckboxStrings.auto
-import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,92 +68,92 @@ trait _Impl extends js.Object {
   /**
     * Callback before a checkbox is checked. Can cancel change by returning false
     */
-  def beforeChecked(`this`: HTMLInputElement): Unit | `false`
+  def beforeChecked(): Unit | `false`
   /**
     * Callback before a checkbox is set to determinate. Can cancel change by returning false
     */
-  def beforeDeterminate(`this`: HTMLInputElement): Unit | `false`
+  def beforeDeterminate(): Unit | `false`
   /**
     * Callback before a checkbox is set to undeterminate. Can cancel change by returning false
     */
-  def beforeIndeterminate(`this`: HTMLInputElement): Unit | `false`
+  def beforeIndeterminate(): Unit | `false`
   /**
     * Callback before a checkbox is unchecked. Can cancel change by returning false
     */
-  def beforeUnchecked(`this`: HTMLInputElement): Unit | `false`
+  def beforeUnchecked(): Unit | `false`
   // endregion
   // region Callbacks
   /**
     * Callback after a checkbox is either checked or unchecked.
     */
-  def onChange(`this`: HTMLInputElement): Unit
+  def onChange(): Unit
   /**
     * Callback after a checkbox is checked.
     */
-  def onChecked(`this`: HTMLInputElement): Unit
+  def onChecked(): Unit
   /**
     * Callback after a checkbox is set to determinate.
     */
-  def onDeterminate(`this`: HTMLInputElement): Unit
+  def onDeterminate(): Unit
   /**
     * Callback after a checkbox is disabled.
     */
-  def onDisable(`this`: HTMLInputElement): Unit
+  def onDisable(): Unit
   /**
     * Callback after a checkbox is disabled.
     *
     * @deprecated
     */
-  def onDisabled(`this`: HTMLInputElement): Unit
+  def onDisabled(): Unit
   /**
     * Callback after a checkbox is enabled.
     */
-  def onEnable(`this`: HTMLInputElement): Unit
+  def onEnable(): Unit
   /**
     * Callback after a checkbox is enabled.
     *
     * @deprecated
     */
-  def onEnabled(`this`: HTMLInputElement): Unit
+  def onEnabled(): Unit
   /**
     * Callback after a checkbox is set to undeterminate.
     */
-  def onIndeterminate(`this`: HTMLInputElement): Unit
+  def onIndeterminate(): Unit
   /**
     * Callback after a checkbox is unchecked.
     */
-  def onUnchecked(`this`: HTMLInputElement): Unit
+  def onUnchecked(): Unit
 }
 
 object _Impl {
   @scala.inline
   def apply(
-    beforeChecked: HTMLInputElement => Unit | `false`,
-    beforeDeterminate: HTMLInputElement => Unit | `false`,
-    beforeIndeterminate: HTMLInputElement => Unit | `false`,
-    beforeUnchecked: HTMLInputElement => Unit | `false`,
+    beforeChecked: () => Unit | `false`,
+    beforeDeterminate: () => Unit | `false`,
+    beforeIndeterminate: () => Unit | `false`,
+    beforeUnchecked: () => Unit | `false`,
     className: ClassNameSettings,
     debug: Boolean,
     error: ErrorSettings,
     fireOnInit: Boolean,
     name: String,
     namespace: String,
-    onChange: HTMLInputElement => Unit,
-    onChecked: HTMLInputElement => Unit,
-    onDeterminate: HTMLInputElement => Unit,
-    onDisable: HTMLInputElement => Unit,
-    onDisabled: HTMLInputElement => Unit,
-    onEnable: HTMLInputElement => Unit,
-    onEnabled: HTMLInputElement => Unit,
-    onIndeterminate: HTMLInputElement => Unit,
-    onUnchecked: HTMLInputElement => Unit,
+    onChange: () => Unit,
+    onChecked: () => Unit,
+    onDeterminate: () => Unit,
+    onDisable: () => Unit,
+    onDisabled: () => Unit,
+    onEnable: () => Unit,
+    onEnabled: () => Unit,
+    onIndeterminate: () => Unit,
+    onUnchecked: () => Unit,
     performance: Boolean,
     selector: SelectorSettings,
     silent: Boolean,
     uncheckable: auto | Boolean,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(beforeChecked = js.Any.fromFunction1(beforeChecked), beforeDeterminate = js.Any.fromFunction1(beforeDeterminate), beforeIndeterminate = js.Any.fromFunction1(beforeIndeterminate), beforeUnchecked = js.Any.fromFunction1(beforeUnchecked), className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fireOnInit = fireOnInit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onChecked = js.Any.fromFunction1(onChecked), onDeterminate = js.Any.fromFunction1(onDeterminate), onDisable = js.Any.fromFunction1(onDisable), onDisabled = js.Any.fromFunction1(onDisabled), onEnable = js.Any.fromFunction1(onEnable), onEnabled = js.Any.fromFunction1(onEnabled), onIndeterminate = js.Any.fromFunction1(onIndeterminate), onUnchecked = js.Any.fromFunction1(onUnchecked), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], uncheckable = uncheckable.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beforeChecked = js.Any.fromFunction0(beforeChecked), beforeDeterminate = js.Any.fromFunction0(beforeDeterminate), beforeIndeterminate = js.Any.fromFunction0(beforeIndeterminate), beforeUnchecked = js.Any.fromFunction0(beforeUnchecked), className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fireOnInit = fireOnInit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onChecked = js.Any.fromFunction0(onChecked), onDeterminate = js.Any.fromFunction0(onDeterminate), onDisable = js.Any.fromFunction0(onDisable), onDisabled = js.Any.fromFunction0(onDisabled), onEnable = js.Any.fromFunction0(onEnable), onEnabled = js.Any.fromFunction0(onEnabled), onIndeterminate = js.Any.fromFunction0(onIndeterminate), onUnchecked = js.Any.fromFunction0(onUnchecked), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], uncheckable = uncheckable.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

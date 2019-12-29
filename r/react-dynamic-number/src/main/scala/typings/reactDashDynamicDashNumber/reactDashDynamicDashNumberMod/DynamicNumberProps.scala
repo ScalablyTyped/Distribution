@@ -1,10 +1,10 @@
 package typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberMod
 
 import typings.react.reactMod.ChangeEvent
-import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings.DOT
-import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings.Empty
-import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings.` `
-import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings.`,`
+import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings.Comma
+import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings.Dot
+import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings.Space
+import typings.reactDashDynamicDashNumber.reactDashDynamicDashNumberStrings._empty
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,9 +25,9 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
-  var separator: js.UndefOr[DOT | `,`] = js.undefined
-  var thousand: js.UndefOr[Boolean | (` `)] = js.undefined
-  var value: js.UndefOr[Double | Empty] = js.undefined
+  var separator: js.UndefOr[Dot | Comma] = js.undefined
+  var thousand: js.UndefOr[Boolean | Space] = js.undefined
+  var value: js.UndefOr[Double | _empty] = js.undefined
 }
 
 object DynamicNumberProps {
@@ -39,9 +39,9 @@ object DynamicNumberProps {
     onChange: (/* event */ ChangeEvent[HTMLInputElement], /* modelValue */ Double, /* viewValue */ String) => Unit = null,
     placeholder: String = null,
     positive: js.UndefOr[Boolean] = js.undefined,
-    separator: DOT | `,` = null,
-    thousand: Boolean | (` `) = null,
-    value: Double | Empty = null
+    separator: Dot | Comma = null,
+    thousand: Boolean | Space = null,
+    value: Double | _empty = null
   ): DynamicNumberProps = {
     val __obj = js.Dynamic.literal()
     if (fraction != null) __obj.updateDynamic("fraction")(fraction.asInstanceOf[js.Any])

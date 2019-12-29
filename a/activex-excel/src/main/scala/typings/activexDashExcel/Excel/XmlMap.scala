@@ -12,7 +12,8 @@ class XmlMap protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   val DataBinding: XmlDataBinding = js.native
-  var `Excel.XmlMap_typekey`: XmlMap = js.native
+  @JSName("Excel.XmlMap_typekey")
+  var ExcelDotXmlMap_typekey: XmlMap = js.native
   val IsExportable: Boolean = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native

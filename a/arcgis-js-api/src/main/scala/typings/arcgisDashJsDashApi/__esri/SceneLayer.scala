@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.scene
@@ -33,7 +32,7 @@ trait SceneLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#featureReduction)
     */
-  var featureReduction: SceneLayerFeatureReduction = js.native
+  var featureReduction: FeatureReductionSelection = js.native
   /**
     * An array of fields accessible in the layer. Depending on the scene service, fields may have limited support for certain capabilities. Use [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) to query the contexts (rendering, labeling, popups or querying) for which a particular field may be used.
     *
@@ -54,13 +53,13 @@ trait SceneLayer
   var geometryType: point | mesh = js.native
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.
-    * > **Known Limitations**  This property is only relevant to SceneLayers with [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries. This property has no effect on SceneLayers with other geometry types.  Each point can have only one label. Multiple [Label classes](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) with different [where](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where) clauses can be used to have different label styles on different features that belong to the same layer (for example blue labels for lakes and green labels for parks).
+    * > **Known Limitations**  Each feature can have only one label. Multiple [Label classes](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) with different [where](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where) clauses can be used to have different label styles on different features that belong to the same layer (for example blue labels for lakes and green labels for parks).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelingInfo)
     */
   var labelingInfo: js.Array[LabelClass] = js.native
   /**
-    * Indicates whether to display labels for this layer. If `true`, labels will appear as defined in the [labelingInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelingInfo) property.  This property is only relevant to SceneLayers with [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries. This property has no effect on SceneLayers with other geometry types.
+    * Indicates whether to display labels for this layer. If `true`, labels will appear as defined in the [labelingInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelingInfo) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelsVisible)
     *
@@ -197,11 +196,11 @@ trait SceneLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryExtent(): IPromise[_] = js.native
-  def queryExtent(query: Query): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties, options: SceneLayerQueryExtentOptions): IPromise[_] = js.native
-  def queryExtent(query: Query, options: SceneLayerQueryExtentOptions): IPromise[_] = js.native
+  def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: Query): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties, options: SceneLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(query: Query, options: SceneLayerQueryExtentOptions): js.Promise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns the number of the features that satisfy the query. The query succeeds only if the layer's `supportsLayerQuery` capability is enabled. Use the [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) method to check if the layer supports queries. If querying is not enabled, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.
     *
@@ -212,11 +211,11 @@ trait SceneLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatureCount(): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties, options: SceneLayerQueryFeatureCountOptions): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query, options: SceneLayerQueryFeatureCountOptions): IPromise[Double] = js.native
+  def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: SceneLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query, options: SceneLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). The query succeeds only if the layer's `supportsLayerQuery` capability is enabled. Use the [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) method to check if the layer supports queries. If querying is not enabled, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.
     *
@@ -227,11 +226,11 @@ trait SceneLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatures(): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties, options: SceneLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: SceneLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: SceneLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: SceneLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the service and returns an array of the ObjectIDs of features that satisfy the input query. The query succeeds only if the layer's `supportsLayerQuery` capability is enabled. Use the [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) method to check if the layer supports queries. If querying is not enabled, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.
     *
@@ -242,11 +241,11 @@ trait SceneLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryObjectIds(): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties, options: SceneLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query, options: SceneLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query, options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }
 
 @JSGlobal("__esri.SceneLayer")

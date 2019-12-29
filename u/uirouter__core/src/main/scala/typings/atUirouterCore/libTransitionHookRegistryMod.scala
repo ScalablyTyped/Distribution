@@ -1,7 +1,6 @@
 package typings.atUirouterCore
 
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
-import typings.atUirouterCore.libTransitionHookRegistryMod.RegisteredHook
 import typings.atUirouterCore.libTransitionInterfaceMod.HookFn
 import typings.atUirouterCore.libTransitionInterfaceMod.HookMatchCriteria
 import typings.atUirouterCore.libTransitionInterfaceMod.HookMatchCriterion

@@ -7,7 +7,7 @@ import typings.nodeDashIpc.nodeDashIpcStrings.data
 import typings.nodeDashIpc.nodeDashIpcStrings.destroy
 import typings.nodeDashIpc.nodeDashIpcStrings.disconnect
 import typings.nodeDashIpc.nodeDashIpcStrings.error
-import typings.nodeDashIpc.nodeDashIpcStrings.socketDOTdisconnected
+import typings.nodeDashIpc.nodeDashIpcStrings.socketDotdisconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ trait Client extends js.Object {
     */
   @JSName("on")
   def on_socketdisconnected(
-    event: socketDOTdisconnected,
+    event: socketDotdisconnected,
     callback: js.Function2[/* socket */ Socket, /* destroyedSocketID */ String, Unit]
   ): Client = js.native
 }

@@ -36,24 +36,24 @@ object libFsMod extends js.Object {
     def readFile(path: PathLike, options: Anon_EncodingFlag): js.Promise[Buffer] = js.native
     def readFile(path: PathLike, options: Anon_EncodingFlagNull): js.Promise[String | Buffer] = js.native
     def readFile(path: PathLike, options: Anon_EncodingFlagString): js.Promise[String] = js.native
-    def readFileSync(path: Double): Buffer = js.native
+    def readFileSync(path: Double): String | Buffer = js.native
     def readFileSync(path: Double, options: String): String | Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlag): Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlagNull): String | Buffer = js.native
     def readFileSync(path: Double, options: Anon_EncodingFlagString): String = js.native
-    def readFileSync(path: PathLike): Buffer = js.native
+    def readFileSync(path: PathLike): String | Buffer = js.native
     def readFileSync(path: PathLike, options: String): String | Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlag): Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlagNull): String | Buffer = js.native
     def readFileSync(path: PathLike, options: Anon_EncodingFlagString): String = js.native
     @JSName("readFileSync")
+    def readFileSync_Buffer(path: Double): Buffer = js.native
+    @JSName("readFileSync")
+    def readFileSync_Buffer(path: PathLike): Buffer = js.native
+    @JSName("readFileSync")
     def readFileSync_String(path: Double, options: String): String = js.native
     @JSName("readFileSync")
     def readFileSync_String(path: PathLike, options: String): String = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: Double): String | Buffer = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: PathLike): String | Buffer = js.native
     def watch(filename: PathLike): FSWatcher = js.native
     def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
     def watch(
@@ -70,7 +70,7 @@ object libFsMod extends js.Object {
     def watch(
       filename: PathLike,
       options: Null,
-      listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
+      listener: js.Function2[/* event */ String, Buffer | String, Unit]
     ): FSWatcher = js.native
     def watch(filename: PathLike, options: Anon_BufferEncodingPersistent): FSWatcher = js.native
     def watch(

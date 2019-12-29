@@ -12,7 +12,8 @@ class FaxOutgoingArchive protected () extends js.Object {
   var AgeLimit: Double = js.native
   /** Location of the outgoing archive on the server */
   var ArchiveFolder: String = js.native
-  var `FAXCOMEXLib.FaxOutgoingArchive_typekey`: FaxOutgoingArchive = js.native
+  @JSName("FAXCOMEXLib.FaxOutgoingArchive_typekey")
+  var FAXCOMEXLibDotFaxOutgoingArchive_typekey: FaxOutgoingArchive = js.native
   /** High quota water mark */
   var HighQuotaWaterMark: Double = js.native
   /** Low quota water mark */

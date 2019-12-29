@@ -1,6 +1,6 @@
 package typings.store2.store2Mod
 
-import typings.store2.store2Numbers.`true`
+import typings.store2.store2Booleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

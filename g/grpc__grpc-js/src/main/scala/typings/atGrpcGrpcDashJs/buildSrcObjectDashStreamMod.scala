@@ -2,11 +2,6 @@ package typings.atGrpcGrpcDashJs
 
 import typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.data
 import typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1
-import typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable
-import typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectWritable
-import typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectReadable
-import typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.ObjectWritable
-import typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.WriteCallback
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable

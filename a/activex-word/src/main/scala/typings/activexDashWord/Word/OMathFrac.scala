@@ -13,6 +13,7 @@ class OMathFrac protected () extends js.Object {
   val Num: OMath = js.native
   val Parent: js.Any = js.native
   var Type: WdOMathFracType = js.native
-  var `Word.OMathFrac_typekey`: OMathFrac = js.native
+  @JSName("Word.OMathFrac_typekey")
+  var WordDotOMathFrac_typekey: OMathFrac = js.native
 }
 

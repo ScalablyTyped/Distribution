@@ -16,7 +16,8 @@ class BusinessCardView protected () extends js.Object {
   var Language: String = js.native
   var LockUserChanges: Boolean = js.native
   var Name: String = js.native
-  var `Outlook.BusinessCardView_typekey`: BusinessCardView = js.native
+  @JSName("Outlook.BusinessCardView_typekey")
+  var OutlookDotBusinessCardView_typekey: BusinessCardView = js.native
   val Parent: js.Any = js.native
   val SaveOption: OlViewSaveOption = js.native
   val Session: NameSpace = js.native

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 object apolloDashServerDashEnvStrings {
   @js.native
-  sealed trait Empty extends ReferrerPolicy
+  sealed trait _empty extends ReferrerPolicy
   
   @js.native
   sealed trait cors extends RequestMode
@@ -83,7 +83,7 @@ object apolloDashServerDashEnvStrings {
   sealed trait `unsafe-url` extends ReferrerPolicy
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def cors: cors = "cors".asInstanceOf[cors]
   @scala.inline

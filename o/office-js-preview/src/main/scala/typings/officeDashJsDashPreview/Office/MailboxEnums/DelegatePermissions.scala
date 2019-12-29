@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.DeleteAll
-import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.DeleteOwn
-import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.EditAll
-import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.EditOwn
-import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.Read
-import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.Write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

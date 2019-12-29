@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("CKEDITOR.ui.dialog.fileButton")
 @js.native
-class fileButton protected ()
-  extends typings.ckeditor.CKEDITOR.ui.dialog.button {
+class fileButton protected () extends button {
   def this(
     dialog: typings.ckeditor.CKEDITOR.dialog,
     elementDefinition: typings.ckeditor.CKEDITOR.ui.dialog.definitions.fileButton,

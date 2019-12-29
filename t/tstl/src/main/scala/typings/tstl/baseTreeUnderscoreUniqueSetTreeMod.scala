@@ -4,7 +4,7 @@ import typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator
 import typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator
 import typings.tstl.baseContainerUniqueSetMod.UniqueSet
 import typings.tstl.baseTreeUnderscoreSetTreeMod._SetTree
-import typings.tstl.tstlNumbers.`true`
+import typings.tstl.tstlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

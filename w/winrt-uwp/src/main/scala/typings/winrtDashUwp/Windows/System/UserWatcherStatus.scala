@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.UserWatcherStatus.aborted
-import typings.winrtDashUwp.Windows.System.UserWatcherStatus.created
-import typings.winrtDashUwp.Windows.System.UserWatcherStatus.enumerationCompleted
-import typings.winrtDashUwp.Windows.System.UserWatcherStatus.started
-import typings.winrtDashUwp.Windows.System.UserWatcherStatus.stopped
-import typings.winrtDashUwp.Windows.System.UserWatcherStatus.stopping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

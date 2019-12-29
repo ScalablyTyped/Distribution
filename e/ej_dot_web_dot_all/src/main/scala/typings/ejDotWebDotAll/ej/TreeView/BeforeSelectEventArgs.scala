@@ -10,7 +10,7 @@ trait BeforeSelectEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the given target node values
     */
   var nodeDetails: js.UndefOr[js.Any] = js.undefined
@@ -26,7 +26,7 @@ object BeforeSelectEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     nodeDetails: js.Any = null,
     target: js.Any = null,
     `type`: String = null

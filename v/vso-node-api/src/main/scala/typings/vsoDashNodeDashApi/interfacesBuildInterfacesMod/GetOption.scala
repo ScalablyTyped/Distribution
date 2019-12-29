@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.GetOption.Custom
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.GetOption.LatestOnBuild
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.GetOption.LatestOnQueue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

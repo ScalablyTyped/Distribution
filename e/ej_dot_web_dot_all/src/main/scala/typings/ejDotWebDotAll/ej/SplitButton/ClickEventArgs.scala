@@ -10,7 +10,7 @@ trait ClickEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the split button model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.SplitButton.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** return the button state
     */
   var status: js.UndefOr[Boolean] = js.undefined
@@ -26,7 +26,7 @@ object ClickEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.SplitButton.Model = null,
+    model: Model = null,
     status: js.UndefOr[Boolean] = js.undefined,
     target: js.Any = null,
     `type`: String = null

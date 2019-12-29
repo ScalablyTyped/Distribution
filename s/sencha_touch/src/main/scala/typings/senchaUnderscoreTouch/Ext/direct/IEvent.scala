@@ -21,11 +21,11 @@ trait IEvent extends IBase {
   /** [Method] Returns the value of message
   		* @returns String
   		*/
-  var getMessage: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMessage: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of name
   		* @returns String
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of result
   		* @returns Object
   		*/
@@ -43,7 +43,7 @@ trait IEvent extends IBase {
   		*/
   var getXhr: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of code
   		* @param code Object The new value.
   		*/
@@ -55,11 +55,11 @@ trait IEvent extends IBase {
   /** [Method] Sets the value of message
   		* @param message String The new value.
   		*/
-  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of name
   		* @param name String The new value.
   		*/
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of result
   		* @param result Object The new value.
   		*/
@@ -89,12 +89,12 @@ object IEvent {
     config: js.Any = null,
     data: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getCode: () => _ = null,
     getData: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getMessage: () => java.lang.String = null,
-    getName: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getMessage: () => String = null,
+    getName: () => String = null,
     getResult: () => _ = null,
     getStatus: () => Boolean = null,
     getTransaction: () => _ = null,
@@ -102,13 +102,13 @@ object IEvent {
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
-    name: java.lang.String = null,
+    name: String = null,
     platformConfig: js.Any = null,
     self: IClass = null,
     setCode: /* code */ js.UndefOr[js.Any] => Unit = null,
     setData: /* data */ js.UndefOr[js.Any] => Unit = null,
-    setMessage: /* message */ js.UndefOr[java.lang.String] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
+    setMessage: /* message */ js.UndefOr[String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
     setResult: /* result */ js.UndefOr[js.Any] => Unit = null,
     setStatus: /* status */ js.UndefOr[Boolean] => Unit = null,
     setTransaction: /* transaction */ js.UndefOr[js.Any] => Unit = null,

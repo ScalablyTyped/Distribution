@@ -12,7 +12,8 @@ class TablesOfAuthorities protected () extends js.Object {
   val Creator: Double = js.native
   var Format: WdToaFormat = js.native
   val Parent: js.Any = js.native
-  var `Word.TablesOfAuthorities_typekey`: TablesOfAuthorities = js.native
+  @JSName("Word.TablesOfAuthorities_typekey")
+  var WordDotTablesOfAuthorities_typekey: TablesOfAuthorities = js.native
   def Add(
     Range: Range,
     Category: js.UndefOr[js.Any],

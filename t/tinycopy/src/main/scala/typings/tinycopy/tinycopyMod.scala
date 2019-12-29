@@ -3,7 +3,6 @@ package typings.tinycopy
 import typings.std.Element
 import typings.std.Error
 import typings.std.NodeListOf
-import typings.tinycopy.tinycopyMod.TinyCopy
 import typings.tinycopy.tinycopyStrings.error
 import typings.tinycopy.tinycopyStrings.success
 import scala.scalajs.js

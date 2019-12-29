@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +18,6 @@ import scala.scalajs.js.annotation._
   */
 class Marker () extends MVCObject {
   def this(opts: ReadonlyMarkerOptions) = this()
-  /** @deprecated */
-  def addListener(eventName: String, handler: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): MapsEventListener = js.native
   def addListener(eventName: MarkerChangeOptionEventNames, handler: js.ThisFunction0[/* this */ this.type, Unit]): MapsEventListener = js.native
   def addListener(
     eventName: MarkerMouseEventNames,
@@ -37,7 +36,7 @@ class Marker () extends MVCObject {
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.getLabel Maps JavaScript API} */
   def getLabel(): js.UndefOr[ReadonlyMarkerLabel | Null] = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.getMap Maps JavaScript API} */
-  def getMap(): js.UndefOr[Map | StreetViewPanorama | Null] = js.native
+  def getMap(): js.UndefOr[Map[Element] | StreetViewPanorama | Null] = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.getOpacity Maps JavaScript API} */
   def getOpacity(): js.UndefOr[Double | Null] = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.getPosition Maps JavaScript API} */
@@ -82,7 +81,7 @@ class Marker () extends MVCObject {
     * `null`, the marker will be removed.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setMap Maps JavaScript API}
     */
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map[Element]): Unit = js.native
   def setMap(map: StreetViewPanorama): Unit = js.native
   def setOpacity(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setOpacity Maps JavaScript API} */

@@ -11,6 +11,6 @@ trait Accordion
   extends Component[AccordionNativeProps, js.Any, js.Any] {
   def onChange(idx: Double): Unit = js.native
   def renderContent(section: AccordionHeader): Element = js.native
-  def renderHeader(section: AccordionHeader, `_`: Double, isActive: Boolean): Element = js.native
+  def renderHeader(section: AccordionHeader, _underscore: Double, isActive: Boolean): Element = js.native
 }
 

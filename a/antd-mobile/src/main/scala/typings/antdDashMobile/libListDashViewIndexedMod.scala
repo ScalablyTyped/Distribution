@@ -1,7 +1,5 @@
 package typings.antdDashMobile
 
-import typings.antdDashMobile.libListDashViewIndexedMod.MIndexedList
-import typings.antdDashMobile.libListDashViewIndexedMod.MIndexedListProps
 import typings.antdDashMobile.libListDashViewPropsTypeMod.ListViewPropsType
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Component

@@ -2,7 +2,6 @@ package typings.atMaterialGridDashList
 
 import typings.atMaterialBase.atMaterialBaseMod.MDCComponent
 import typings.atMaterialGridDashList.adapterMod.MDCGridListAdapter
-import typings.atMaterialGridDashList.atMaterialGridDashListMod.MDCGridList
 import typings.atMaterialGridDashList.foundationMod.default
 import typings.std.Element
 import scala.scalajs.js

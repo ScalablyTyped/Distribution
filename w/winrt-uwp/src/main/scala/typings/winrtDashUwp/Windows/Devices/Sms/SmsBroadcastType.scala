@@ -1,21 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasAmber
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasExtreme
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasPresidential
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasSevere
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasTest
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsEarthquake
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsTsunami
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsTsunamiAndEarthquake
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert1
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert2
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert3
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlertAmber
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlertInfo
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.latAlertLocal
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.other
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

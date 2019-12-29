@@ -2,6 +2,7 @@ package typings.atFirebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternal
 import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
 import typings.atFirebaseStorage.atFirebaseStorageStrings.`totally-legit-auth-token`
 import typings.atFirebaseStorage.atFirebaseStorageStrings.mybucket
@@ -23,9 +24,7 @@ object distTestTestsharedMod extends js.Object {
   val bucket: mybucket = js.native
   val emptyAuthProvider: js.Any = js.native
   val fakeApp: FirebaseApp = js.native
-  val fakeAuthProvider: Provider[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternal */ js.Any
-  ] = js.native
+  val fakeAuthProvider: Provider[FirebaseAuthInternal] = js.native
   def assertObjectIncludes(included: StringDictionary[js.Any], obj: StringDictionary[js.Any]): Unit = js.native
   def assertThrows(f: js.Function0[Unit], code: Code): FirebaseStorageError = js.native
   def assertUint8ArrayEquals(arr1: Uint8Array, arr2: Uint8Array): Unit = js.native
@@ -34,12 +33,8 @@ object distTestTestsharedMod extends js.Object {
   def fakeXhrIo(headers: Headers, status: Double): XhrIo = js.native
   def makeFakeApp(): FirebaseApp = js.native
   def makeFakeApp(bucketArg: String): FirebaseApp = js.native
-  def makeFakeAuthProvider(): Provider[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternal */ _
-  ] = js.native
-  def makeFakeAuthProvider(token: js.Object): Provider[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternal */ _
-  ] = js.native
+  def makeFakeAuthProvider(): Provider[FirebaseAuthInternal] = js.native
+  def makeFakeAuthProvider(token: js.Object): Provider[FirebaseAuthInternal] = js.native
   def makePool(): XhrIoPool = js.native
   def makePool(sendHook: SendHook): XhrIoPool = js.native
 }

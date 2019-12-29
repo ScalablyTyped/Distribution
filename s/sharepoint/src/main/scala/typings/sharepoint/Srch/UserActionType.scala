@@ -1,12 +1,6 @@
 package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Srch.UserActionType.filterLanguage
-import typings.sharepoint.Srch.UserActionType.pageNext
-import typings.sharepoint.Srch.UserActionType.pagePrev
-import typings.sharepoint.Srch.UserActionType.refine
-import typings.sharepoint.Srch.UserActionType.search
-import typings.sharepoint.Srch.UserActionType.sort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

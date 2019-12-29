@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMMutationEvent")
 @js.native
 class DOMMutationEvent protected () extends js.Object {
-  var `MSHTML.DOMMutationEvent_typekey`: DOMMutationEvent = js.native
+  @JSName("MSHTML.DOMMutationEvent_typekey")
+  var MSHTMLDotDOMMutationEvent_typekey: DOMMutationEvent = js.native
   val attrChange: Double = js.native
   val attrName: String = js.native
   val bubbles: Boolean = js.native

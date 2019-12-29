@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.ICanvasRenderingContext2D")
 @js.native
 class ICanvasRenderingContext2D protected () extends js.Object {
-  var `MSHTML.ICanvasRenderingContext2D_typekey`: ICanvasRenderingContext2D = js.native
+  @JSName("MSHTML.ICanvasRenderingContext2D_typekey")
+  var MSHTMLDotICanvasRenderingContext2D_typekey: ICanvasRenderingContext2D = js.native
   val canvas: IHTMLCanvasElement = js.native
   var fillStyle: js.Any = js.native
   var font: String = js.native

@@ -2,7 +2,7 @@ package typings.vueDashScrollto.vueDashScrolltoMod
 
 import typings.std.Element
 import typings.std.Event
-import typings.vueDashScrollto.vueDashScrolltoNumbers.`false`
+import typings.vueDashScrollto.vueDashScrolltoBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

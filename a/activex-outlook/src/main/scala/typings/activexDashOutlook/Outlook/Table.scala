@@ -11,7 +11,8 @@ class Table protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Columns: typings.activexDashOutlook.Outlook.Columns = js.native
   val EndOfTable: Boolean = js.native
-  var `Outlook.Table_typekey`: Table = js.native
+  @JSName("Outlook.Table_typekey")
+  var OutlookDotTable_typekey: Table = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def FindNextRow(): Row = js.native

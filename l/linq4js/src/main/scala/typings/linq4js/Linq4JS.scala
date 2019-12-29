@@ -1,11 +1,6 @@
 package typings.linq4js
 
 import org.scalablytyped.runtime.TopLevel
-import typings.linq4js.Linq4JS.EvaluateCommand
-import typings.linq4js.Linq4JS.EvaluateCommandResult
-import typings.linq4js.Linq4JS.OrderDirection
-import typings.linq4js.Linq4JS.OrderDirection.Ascending
-import typings.linq4js.Linq4JS.OrderDirection.Descending
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

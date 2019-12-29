@@ -2,7 +2,6 @@ package typings.atFirebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseStorage.distSrcImplementationErrorMod.FirebaseStorageError
-import typings.atFirebaseStorage.distSrcImplementationRequestinfoMod.UrlParams
 import typings.atFirebaseStorage.distSrcImplementationXhrioMod.Headers
 import typings.atFirebaseStorage.distSrcImplementationXhrioMod.XhrIo
 import typings.std.Blob

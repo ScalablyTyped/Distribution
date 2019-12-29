@@ -1,18 +1,18 @@
 package typings.select2.select2Mod
 
-import typings.select2.select2Mod._Global_.JQuery
-import typings.select2.select2Strings.`select2:close`
-import typings.select2.select2Strings.`select2:closing`
-import typings.select2.select2Strings.`select2:open`
-import typings.select2.select2Strings.`select2:opening`
-import typings.select2.select2Strings.`select2:select`
-import typings.select2.select2Strings.`select2:selecting`
-import typings.select2.select2Strings.`select2:unselect`
-import typings.select2.select2Strings.`select2:unselecting`
 import typings.select2.select2Strings.close
 import typings.select2.select2Strings.data
 import typings.select2.select2Strings.destroy
 import typings.select2.select2Strings.open
+import typings.select2.select2Strings.select2
+import typings.select2.select2Strings.select2Colonclose
+import typings.select2.select2Strings.select2Colonclosing
+import typings.select2.select2Strings.select2Colonopen
+import typings.select2.select2Strings.select2Colonopening
+import typings.select2.select2Strings.select2Colonselect
+import typings.select2.select2Strings.select2Colonselecting
+import typings.select2.select2Strings.select2Colonunselect
+import typings.select2.select2Strings.select2Colonunselecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,41 +25,47 @@ object _Global_ extends js.Object {
     @JSName("select2")
     var select2_Original: Select2Plugin[TElement] = js.native
     @JSName("data")
-    def data_select2(key: typings.select2.select2Strings.select2): Select2 = js.native
+    def data_select2(key: select2): Select2 = js.native
     @JSName("on")
-    def on_select2close(events: `select2:close`): this.type = js.native
+    def on_select2close(events: select2Colonclose): this.type = js.native
     @JSName("on")
-    def on_select2close(events: `select2:close`, handler: JQueryEventHandlerBase[TElement, Event[TElement, js.Object]]): this.type = js.native
+    def on_select2close(events: select2Colonclose, handler: JQueryEventHandlerBase[TElement, Event[TElement, js.Object]]): this.type = js.native
     // TODO: events "change" and "change.select2"
     @JSName("on")
-    def on_select2closing(events: `select2:closing`): this.type = js.native
+    def on_select2closing(events: select2Colonclosing): this.type = js.native
     @JSName("on")
-    def on_select2closing(events: `select2:closing`, handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]): this.type = js.native
+    def on_select2closing(events: select2Colonclosing, handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]): this.type = js.native
     @JSName("on")
-    def on_select2open(events: `select2:open`): this.type = js.native
+    def on_select2open(events: select2Colonopen): this.type = js.native
     @JSName("on")
-    def on_select2open(events: `select2:open`, handler: JQueryEventHandlerBase[TElement, Event[TElement, js.Object]]): this.type = js.native
+    def on_select2open(events: select2Colonopen, handler: JQueryEventHandlerBase[TElement, Event[TElement, js.Object]]): this.type = js.native
     @JSName("on")
-    def on_select2opening(events: `select2:opening`): this.type = js.native
+    def on_select2opening(events: select2Colonopening): this.type = js.native
     @JSName("on")
-    def on_select2opening(events: `select2:opening`, handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]): this.type = js.native
+    def on_select2opening(events: select2Colonopening, handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]): this.type = js.native
     @JSName("on")
-    def on_select2select(events: `select2:select`): this.type = js.native
+    def on_select2select(events: select2Colonselect): this.type = js.native
     @JSName("on")
-    def on_select2select(events: `select2:select`, handler: JQueryEventHandlerBase[TElement, Event[TElement, DataParams]]): this.type = js.native
+    def on_select2select(events: select2Colonselect, handler: JQueryEventHandlerBase[TElement, Event[TElement, DataParams]]): this.type = js.native
     @JSName("on")
-    def on_select2selecting(events: `select2:selecting`): this.type = js.native
+    def on_select2selecting(events: select2Colonselecting): this.type = js.native
     @JSName("on")
-    def on_select2selecting(events: `select2:selecting`, handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]): this.type = js.native
+    def on_select2selecting(
+      events: select2Colonselecting,
+      handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]
+    ): this.type = js.native
     @JSName("on")
-    def on_select2unselect(events: `select2:unselect`): this.type = js.native
+    def on_select2unselect(events: select2Colonunselect): this.type = js.native
     @JSName("on")
-    def on_select2unselect(events: `select2:unselect`, handler: JQueryEventHandlerBase[TElement, Event[TElement, DataParams]]): this.type = js.native
+    def on_select2unselect(
+      events: select2Colonunselect,
+      handler: JQueryEventHandlerBase[TElement, Event[TElement, DataParams]]
+    ): this.type = js.native
     @JSName("on")
-    def on_select2unselecting(events: `select2:unselecting`): this.type = js.native
+    def on_select2unselecting(events: select2Colonunselecting): this.type = js.native
     @JSName("on")
     def on_select2unselecting(
-      events: `select2:unselecting`,
+      events: select2Colonunselecting,
       handler: JQueryEventHandlerBase[TElement, Event[TElement, IngParams]]
     ): this.type = js.native
     def select2(): JQuery[TElement] = js.native

@@ -1,6 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod
 
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutBooleans.`false`
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

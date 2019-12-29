@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.audioQualityFailure
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.grammarCompilationFailure
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.grammarLanguageMismatch
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.microphoneUnavailable
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.networkFailure
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.pauseLimitExceeded
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.success
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.timeoutExceeded
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.topicLanguageNotSupported
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.unknown
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.userCanceled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

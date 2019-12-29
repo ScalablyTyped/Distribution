@@ -1,9 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey
-import typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_INDEX
-import typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_VERTEX
 import typings.wonderDotJs.distEs2015RendererBufferBufferMod.Buffer
 import typings.wonderDotJs.distEs2015RendererBufferElementBufferMod.ElementBuffer
 import scala.scalajs.js

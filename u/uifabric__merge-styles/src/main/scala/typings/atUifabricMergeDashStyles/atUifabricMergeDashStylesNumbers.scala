@@ -1,7 +1,6 @@
 package typings.atUifabricMergeDashStyles
 
 import typings.atUifabricMergeDashStyles.libIRawStyleBaseMod.IFontWeight
-import typings.atUifabricMergeDashStyles.libIStyleMod._IStyleBase
 import typings.atUifabricMergeDashStyles.libStylesheetMod.InjectionMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,9 +43,6 @@ object atUifabricMergeDashStylesNumbers {
   @js.native
   sealed trait `900` extends IFontWeight
   
-  @js.native
-  sealed trait `false` extends _IStyleBase
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -71,7 +67,5 @@ object atUifabricMergeDashStylesNumbers {
   def `800`: `800` = 800.asInstanceOf[`800`]
   @scala.inline
   def `900`: `900` = 900.asInstanceOf[`900`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

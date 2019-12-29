@@ -15,6 +15,7 @@ class CoAuthor protected () extends js.Object {
   val Locks: CoAuthLocks = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.CoAuthor_typekey`: CoAuthor = js.native
+  @JSName("Word.CoAuthor_typekey")
+  var WordDotCoAuthor_typekey: CoAuthor = js.native
 }
 

@@ -2,7 +2,6 @@ package typings.antd
 
 import typings.antd.libTableInterfaceMod.SelectionBoxProps
 import typings.antd.libTableInterfaceMod.SelectionBoxState
-import typings.antd.libTableSelectionBoxMod.SelectionBox
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

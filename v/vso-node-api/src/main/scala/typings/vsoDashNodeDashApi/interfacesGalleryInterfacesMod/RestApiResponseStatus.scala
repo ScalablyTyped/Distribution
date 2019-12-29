@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Completed
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Failed
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Inprogress
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Skipped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

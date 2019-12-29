@@ -19,7 +19,7 @@ trait ItemMouseOverEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
   /** returns the split button model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.SplitButton.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -32,7 +32,7 @@ object ItemMouseOverEventArgs {
     Text: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     element: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.SplitButton.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ItemMouseOverEventArgs = {
     val __obj = js.Dynamic.literal()

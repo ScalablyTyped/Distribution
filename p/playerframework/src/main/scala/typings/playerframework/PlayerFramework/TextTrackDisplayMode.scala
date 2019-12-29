@@ -1,10 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.TextTrackDisplayMode.all
-import typings.playerframework.PlayerFramework.TextTrackDisplayMode.custom
-import typings.playerframework.PlayerFramework.TextTrackDisplayMode.native
-import typings.playerframework.PlayerFramework.TextTrackDisplayMode.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

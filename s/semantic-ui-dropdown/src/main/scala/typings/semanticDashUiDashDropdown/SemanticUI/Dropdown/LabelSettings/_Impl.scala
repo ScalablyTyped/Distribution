@@ -1,6 +1,6 @@
 package typings.semanticDashUiDashDropdown.SemanticUI.Dropdown.LabelSettings
 
-import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownNumbers.`false`
+import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -238,7 +238,7 @@ class WebDriver protected () extends js.Object {
     * @return {!Promise.<!Capabilities>} A promise
     *     that will resolve with the this instance's capabilities.
     */
-  def getCapabilities(): js.Promise[Capabilities] = js.native
+  def getCapabilities(): js.Promise[typings.seleniumDashWebdriver.libCapabilitiesMod.Capabilities] = js.native
   /**
     * Schedules a command to retrieve the URL of the current page.
     * @return {!Promise.<string>} A promise that will be

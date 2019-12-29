@@ -1,16 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_VideoProperty.VP_BACKLIGHTCOMPENSATION
-import typings.dwt.EnumDWT_VideoProperty.VP_BRIGHTNESS
-import typings.dwt.EnumDWT_VideoProperty.VP_COLORENABLE
-import typings.dwt.EnumDWT_VideoProperty.VP_CONTRAST
-import typings.dwt.EnumDWT_VideoProperty.VP_GAIN
-import typings.dwt.EnumDWT_VideoProperty.VP_GAMMA
-import typings.dwt.EnumDWT_VideoProperty.VP_HUE
-import typings.dwt.EnumDWT_VideoProperty.VP_SATURATION
-import typings.dwt.EnumDWT_VideoProperty.VP_SHARPNESS
-import typings.dwt.EnumDWT_VideoProperty.VP_WHITEBALANCE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

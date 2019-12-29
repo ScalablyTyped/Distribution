@@ -16,7 +16,6 @@ import typings.ionic.definitionsMod.InfoItem
 import typings.ionic.definitionsMod.IonicContext
 import typings.ionic.definitionsMod.IonicEnvironment
 import typings.ionic.definitionsMod.IonicEnvironmentFlags
-import typings.ionic.libEnvironmentMod.EnvironmentDeps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

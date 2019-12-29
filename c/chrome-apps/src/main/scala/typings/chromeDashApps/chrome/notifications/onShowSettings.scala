@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.notifications
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,5 +15,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.notifications.onShowSettings")
 @js.native
 object onShowSettings
-  extends TopLevel[typings.chromeDashApps.chrome.events.Event[js.Function0[Unit]]]
+  extends TopLevel[Event[js.Function0[Unit]]]
 

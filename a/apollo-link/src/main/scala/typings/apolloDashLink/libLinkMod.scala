@@ -1,7 +1,6 @@
 package typings.apolloDashLink
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloDashLink.libLinkMod.ApolloLink
 import typings.apolloDashLink.libTypesMod.FetchResult
 import typings.apolloDashLink.libTypesMod.GraphQLRequest
 import typings.apolloDashLink.libTypesMod.NextLink

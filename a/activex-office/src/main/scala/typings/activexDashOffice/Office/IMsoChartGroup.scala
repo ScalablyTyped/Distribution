@@ -31,7 +31,8 @@ class IMsoChartGroup protected () extends js.Object {
   var HasUpDownBars: Boolean = js.native
   val HiLoLines: IMsoHiLoLines = js.native
   val Index: Double = js.native
-  var `Office.IMsoChartGroup_typekey`: IMsoChartGroup = js.native
+  @JSName("Office.IMsoChartGroup_typekey")
+  var OfficeDotIMsoChartGroup_typekey: IMsoChartGroup = js.native
   var Overlap: Double = js.native
   val Parent: js.Any = js.native
   val RadarAxisLabels: js.Any = js.native

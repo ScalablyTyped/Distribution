@@ -17,55 +17,55 @@ import scala.scalajs.js.annotation._
   - typings.handsontable.handsontableStrings.timeValidate
   - typings.handsontable.handsontableStrings.dateValidate
   - typings.handsontable.handsontableStrings.validateCells
-  - typings.handsontable.handsontableStrings.AutofillDOTfill
-  - typings.handsontable.handsontableStrings.ContextMenuDOTclearColumns
-  - typings.handsontable.handsontableStrings.ContextMenuDOTcolumnLeft
-  - typings.handsontable.handsontableStrings.ContextMenuDOTcolumnRight
-  - typings.handsontable.handsontableStrings.ContextMenuDOTremoveColumn
-  - typings.handsontable.handsontableStrings.ContextMenuDOTremoveRow
-  - typings.handsontable.handsontableStrings.ContextMenuDOTrowAbove
-  - typings.handsontable.handsontableStrings.ContextMenuDOTrowBelow
-  - typings.handsontable.handsontableStrings.CopyPasteDOTpaste
-  - typings.handsontable.handsontableStrings.ObserveChangesDOTchange
-  - typings.handsontable.handsontableStrings.UndoRedoDOTredo
-  - typings.handsontable.handsontableStrings.UndoRedoDOTundo
-  - typings.handsontable.handsontableStrings.GantChartDOTloadData
-  - typings.handsontable.handsontableStrings.ColumnSummaryDOTset
-  - typings.handsontable.handsontableStrings.ColumnSummaryDOTreset
+  - typings.handsontable.handsontableStrings.AutofillDotfill
+  - typings.handsontable.handsontableStrings.ContextMenuDotclearColumns
+  - typings.handsontable.handsontableStrings.ContextMenuDotcolumnLeft
+  - typings.handsontable.handsontableStrings.ContextMenuDotcolumnRight
+  - typings.handsontable.handsontableStrings.ContextMenuDotremoveColumn
+  - typings.handsontable.handsontableStrings.ContextMenuDotremoveRow
+  - typings.handsontable.handsontableStrings.ContextMenuDotrowAbove
+  - typings.handsontable.handsontableStrings.ContextMenuDotrowBelow
+  - typings.handsontable.handsontableStrings.CopyPasteDotpaste
+  - typings.handsontable.handsontableStrings.ObserveChangesDotchange
+  - typings.handsontable.handsontableStrings.UndoRedoDotredo
+  - typings.handsontable.handsontableStrings.UndoRedoDotundo
+  - typings.handsontable.handsontableStrings.GantChartDotloadData
+  - typings.handsontable.handsontableStrings.ColumnSummaryDotset
+  - typings.handsontable.handsontableStrings.ColumnSummaryDotreset
 */
 trait ChangeSource extends js.Object
 
 object ChangeSource {
   @scala.inline
-  def AutofillDOTfill: typings.handsontable.handsontableStrings.AutofillDOTfill = this.cast("Autofill.fill")
+  def AutofillDotfill: typings.handsontable.handsontableStrings.AutofillDotfill = this.cast("Autofill.fill")
   @scala.inline
-  def ColumnSummaryDOTreset: typings.handsontable.handsontableStrings.ColumnSummaryDOTreset = this.cast("ColumnSummary.reset")
+  def ColumnSummaryDotreset: typings.handsontable.handsontableStrings.ColumnSummaryDotreset = this.cast("ColumnSummary.reset")
   @scala.inline
-  def ColumnSummaryDOTset: typings.handsontable.handsontableStrings.ColumnSummaryDOTset = this.cast("ColumnSummary.set")
+  def ColumnSummaryDotset: typings.handsontable.handsontableStrings.ColumnSummaryDotset = this.cast("ColumnSummary.set")
   @scala.inline
-  def ContextMenuDOTclearColumns: typings.handsontable.handsontableStrings.ContextMenuDOTclearColumns = this.cast("ContextMenu.clearColumns")
+  def ContextMenuDotclearColumns: typings.handsontable.handsontableStrings.ContextMenuDotclearColumns = this.cast("ContextMenu.clearColumns")
   @scala.inline
-  def ContextMenuDOTcolumnLeft: typings.handsontable.handsontableStrings.ContextMenuDOTcolumnLeft = this.cast("ContextMenu.columnLeft")
+  def ContextMenuDotcolumnLeft: typings.handsontable.handsontableStrings.ContextMenuDotcolumnLeft = this.cast("ContextMenu.columnLeft")
   @scala.inline
-  def ContextMenuDOTcolumnRight: typings.handsontable.handsontableStrings.ContextMenuDOTcolumnRight = this.cast("ContextMenu.columnRight")
+  def ContextMenuDotcolumnRight: typings.handsontable.handsontableStrings.ContextMenuDotcolumnRight = this.cast("ContextMenu.columnRight")
   @scala.inline
-  def ContextMenuDOTremoveColumn: typings.handsontable.handsontableStrings.ContextMenuDOTremoveColumn = this.cast("ContextMenu.removeColumn")
+  def ContextMenuDotremoveColumn: typings.handsontable.handsontableStrings.ContextMenuDotremoveColumn = this.cast("ContextMenu.removeColumn")
   @scala.inline
-  def ContextMenuDOTremoveRow: typings.handsontable.handsontableStrings.ContextMenuDOTremoveRow = this.cast("ContextMenu.removeRow")
+  def ContextMenuDotremoveRow: typings.handsontable.handsontableStrings.ContextMenuDotremoveRow = this.cast("ContextMenu.removeRow")
   @scala.inline
-  def ContextMenuDOTrowAbove: typings.handsontable.handsontableStrings.ContextMenuDOTrowAbove = this.cast("ContextMenu.rowAbove")
+  def ContextMenuDotrowAbove: typings.handsontable.handsontableStrings.ContextMenuDotrowAbove = this.cast("ContextMenu.rowAbove")
   @scala.inline
-  def ContextMenuDOTrowBelow: typings.handsontable.handsontableStrings.ContextMenuDOTrowBelow = this.cast("ContextMenu.rowBelow")
+  def ContextMenuDotrowBelow: typings.handsontable.handsontableStrings.ContextMenuDotrowBelow = this.cast("ContextMenu.rowBelow")
   @scala.inline
-  def CopyPasteDOTpaste: typings.handsontable.handsontableStrings.CopyPasteDOTpaste = this.cast("CopyPaste.paste")
+  def CopyPasteDotpaste: typings.handsontable.handsontableStrings.CopyPasteDotpaste = this.cast("CopyPaste.paste")
   @scala.inline
-  def GantChartDOTloadData: typings.handsontable.handsontableStrings.GantChartDOTloadData = this.cast("GantChart.loadData")
+  def GantChartDotloadData: typings.handsontable.handsontableStrings.GantChartDotloadData = this.cast("GantChart.loadData")
   @scala.inline
-  def ObserveChangesDOTchange: typings.handsontable.handsontableStrings.ObserveChangesDOTchange = this.cast("ObserveChanges.change")
+  def ObserveChangesDotchange: typings.handsontable.handsontableStrings.ObserveChangesDotchange = this.cast("ObserveChanges.change")
   @scala.inline
-  def UndoRedoDOTredo: typings.handsontable.handsontableStrings.UndoRedoDOTredo = this.cast("UndoRedo.redo")
+  def UndoRedoDotredo: typings.handsontable.handsontableStrings.UndoRedoDotredo = this.cast("UndoRedo.redo")
   @scala.inline
-  def UndoRedoDOTundo: typings.handsontable.handsontableStrings.UndoRedoDOTundo = this.cast("UndoRedo.undo")
+  def UndoRedoDotundo: typings.handsontable.handsontableStrings.UndoRedoDotundo = this.cast("UndoRedo.undo")
   @scala.inline
   def auto: typings.handsontable.handsontableStrings.auto = this.cast("auto")
   @scala.inline

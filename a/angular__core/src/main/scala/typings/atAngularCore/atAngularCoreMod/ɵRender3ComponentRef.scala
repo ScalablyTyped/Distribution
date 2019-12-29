@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵRender3ComponentRef")
+@JSImport("@angular/core", "\u0275Render3ComponentRef")
 @js.native
 class ɵRender3ComponentRef[T] protected () extends ComponentRef[T] {
   def this(

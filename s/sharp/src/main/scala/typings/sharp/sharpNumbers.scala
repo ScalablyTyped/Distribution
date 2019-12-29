@@ -18,12 +18,6 @@ object sharpNumbers {
   @js.native
   sealed trait `4` extends Channels
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
@@ -32,9 +26,5 @@ object sharpNumbers {
   def `3`: `3` = 3.asInstanceOf[`3`]
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

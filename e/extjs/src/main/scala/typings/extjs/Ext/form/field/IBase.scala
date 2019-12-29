@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - typings.extjs.Ext.form.field.IField because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined name, submitValue, validateOnChange, value, isFormField, originalValue, batchChanges, beforeReset, checkChange, checkDirty, clearInvalid, extractFileInput, getErrors, getModelData, getName, getSubmitData, getValue, initField, initValue, isDirty, isEqual, isFileUpload, isValid, markInvalid, reset, resetOriginalValue, setValue, transformOriginalValue, validate
 - typings.extjs.Ext.form.ILabelable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined activeError, activeErrorsTpl, afterBodyEl, afterLabelTextTpl, afterLabelTpl, afterSubTpl, autoFitErrors, baseBodyCls, beforeBodyEl, beforeLabelTextTpl, beforeLabelTpl, beforeSubTpl, clearCls, errorMsgCls, fieldBodyCls, fieldLabel, formItemCls, hideEmptyLabel, hideLabel, invalidCls, labelAlign, labelAttrTpl, labelCls, labelClsExtra, labelPad, labelSeparator, labelStyle, labelWidth, msgTarget, preventMark, bodyEl, errorEl, isFieldLabelable, labelCell, labelEl, getActiveError, getActiveErrors, getFieldLabel, getInputId, getLabelWidth, getLabelableRenderData, getSubTplMarkup, hasActiveError, hasVisibleLabel, initLabelable, setActiveError, setActiveErrors, setFieldDefaults, setFieldLabel, trimLabelSeparator, unsetActiveError */ trait IBase extends IComponent {
   /** [Config Option] (String) */
-  var activeError: js.UndefOr[java.lang.String] = js.undefined
+  var activeError: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/String[]/Ext.XTemplate) */
   var activeErrorsTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var autoFitErrors: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var baseBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  var baseBodyCls: js.UndefOr[String] = js.undefined
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
   		* @param fn Object A function containing the transaction code
   		*/
@@ -54,35 +54,35 @@ import scala.scalajs.js.annotation._
   /** [Method] Checks the isDirty state of the field and if it has changed since the last time it was checked fires the dirtychange  */
   var checkDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var clearCls: js.UndefOr[java.lang.String] = js.undefined
+  var clearCls: js.UndefOr[String] = js.undefined
   /** [Method] Clear any invalid styles messages for this field  */
   var clearInvalid: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var dirtyCls: js.UndefOr[java.lang.String] = js.undefined
+  var dirtyCls: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var errorEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var errorMsgCls: js.UndefOr[java.lang.String] = js.undefined
+  var errorMsgCls: js.UndefOr[String] = js.undefined
   /** [Method] Only relevant if the instance s isFileUpload method returns true
   		* @returns HTMLElement
   		*/
   var extractFileInput: js.UndefOr[js.Function0[_ | HTMLElement]] = js.undefined
   /** [Config Option] (String) */
-  var fieldBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  var fieldBodyCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fieldCls: js.UndefOr[java.lang.String] = js.undefined
+  var fieldCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fieldLabel: js.UndefOr[java.lang.String] = js.undefined
+  var fieldLabel: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fieldStyle: js.UndefOr[java.lang.String] = js.undefined
+  var fieldStyle: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var focusCls: js.UndefOr[java.lang.String] = js.undefined
+  var focusCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var formItemCls: js.UndefOr[java.lang.String] = js.undefined
+  var formItemCls: js.UndefOr[String] = js.undefined
   /** [Method] Gets the active error message for this component if any
   		* @returns String The active error message on the component; if there is no error, an empty string is returned.
   		*/
-  var getActiveError: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getActiveError: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets an Array of any active error messages currently applied to the field
   		* @returns String[] The active error messages on the component; if there are no errors, an empty Array is returned.
   		*/
@@ -95,11 +95,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the label for the field
   		* @returns String The configured field label, or empty string if not defined
   		*/
-  var getFieldLabel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFieldLabel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Get the input id if any for this component
   		* @returns String The input id
   		*/
-  var getInputId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getInputId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets the width of the label if visible
   		* @returns Number The label width
   		*/
@@ -115,7 +115,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the name attribute of the field
   		* @returns String name The field name
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the raw value of the field without performing any normalization conversion or validation
   		* @returns any value The raw String value of the field
   		*/
@@ -127,7 +127,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Gets the markup to be inserted into the outer template s bodyEl
   		* @returns String The markup to be inserted
   		*/
-  var getSubTplMarkup: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSubTplMarkup: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] private override to use getSubmitValue  as a convenience
   		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -168,13 +168,13 @@ import scala.scalajs.js.annotation._
   /** [Property] (Ext.Element) */
   var inputEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var inputId: js.UndefOr[java.lang.String] = js.undefined
+  var inputId: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var inputType: js.UndefOr[java.lang.String] = js.undefined
+  var inputType: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var invalidCls: js.UndefOr[java.lang.String] = js.undefined
+  var invalidCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var invalidText: js.UndefOr[java.lang.String] = js.undefined
+  var invalidText: js.UndefOr[String] = js.undefined
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
   		* @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
   		*/
@@ -198,23 +198,23 @@ import scala.scalajs.js.annotation._
   		*/
   var isValid: js.UndefOr[js.Function0[_ | Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var labelAlign: js.UndefOr[java.lang.String] = js.undefined
+  var labelAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var labelAttrTpl: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Ext.Element) */
   var labelCell: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var labelCls: js.UndefOr[java.lang.String] = js.undefined
+  var labelCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelClsExtra: js.UndefOr[java.lang.String] = js.undefined
+  var labelClsExtra: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var labelEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (Number) */
   var labelPad: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var labelSeparator: js.UndefOr[java.lang.String] = js.undefined
+  var labelSeparator: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelStyle: js.UndefOr[java.lang.String] = js.undefined
+  var labelStyle: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var labelWidth: js.UndefOr[Double] = js.undefined
   /** [Method] Display one or more error messages associated with this field using msgTarget to determine how to display the messag
@@ -222,9 +222,9 @@ import scala.scalajs.js.annotation._
   		*/
   var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var msgTarget: js.UndefOr[java.lang.String] = js.undefined
+  var msgTarget: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Method] private */
   @JSName("onRender")
   var onRender_IBase: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -245,7 +245,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var readOnlyCls: js.UndefOr[java.lang.String] = js.undefined
+  var readOnlyCls: js.UndefOr[String] = js.undefined
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
   var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Resets the field s originalValue property so it matches the current value  */
@@ -253,7 +253,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the active error message to the given string
   		* @param msg String The error message
   		*/
-  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the active error message to an Array of error messages
   		* @param errors String[] The error messages
   		*/
@@ -265,7 +265,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Set the label of this field
   		* @param label String The new label. The labelSeparator will be automatically appended to the label string.
   		*/
-  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the CSS style of the field input element
   		* @param style String/Object/Function The style(s) to apply. Should be a valid argument to Ext.Element.applyStyles.
   		*/
@@ -301,7 +301,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the trimmed label by slicing off the label separator character
   		* @returns String The trimmed field label, or empty string if not defined
   		*/
-  var trimLabelSeparator: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var trimLabelSeparator: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Clears the active error message s */
   var unsetActiveError: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
@@ -330,14 +330,14 @@ object IBase {
   @scala.inline
   def apply(
     IComponent: IComponent = null,
-    activeError: java.lang.String = null,
+    activeError: String = null,
     activeErrorsTpl: js.Any = null,
     afterBodyEl: js.Any = null,
     afterLabelTextTpl: js.Any = null,
     afterLabelTpl: js.Any = null,
     afterSubTpl: js.Any = null,
     autoFitErrors: js.UndefOr[Boolean] = js.undefined,
-    baseBodyCls: java.lang.String = null,
+    baseBodyCls: String = null,
     batchChanges: js.UndefOr[js.Any] => Unit = null,
     beforeBodyEl: js.Any = null,
     beforeLabelTextTpl: js.Any = null,
@@ -349,30 +349,30 @@ object IBase {
     checkChangeBuffer: Int | Double = null,
     checkChangeEvents: Array = null,
     checkDirty: () => Unit = null,
-    clearCls: java.lang.String = null,
+    clearCls: String = null,
     clearInvalid: () => Unit = null,
-    dirtyCls: java.lang.String = null,
+    dirtyCls: String = null,
     errorEl: IElement = null,
-    errorMsgCls: java.lang.String = null,
+    errorMsgCls: String = null,
     extractFileInput: () => _ | HTMLElement = null,
-    fieldBodyCls: java.lang.String = null,
-    fieldCls: java.lang.String = null,
-    fieldLabel: java.lang.String = null,
-    fieldStyle: java.lang.String = null,
-    focusCls: java.lang.String = null,
-    formItemCls: java.lang.String = null,
-    getActiveError: () => java.lang.String = null,
+    fieldBodyCls: String = null,
+    fieldCls: String = null,
+    fieldLabel: String = null,
+    fieldStyle: String = null,
+    focusCls: String = null,
+    formItemCls: String = null,
+    getActiveError: () => String = null,
     getActiveErrors: () => Array = null,
     getErrors: js.UndefOr[js.Any] => _ | Array = null,
-    getFieldLabel: () => java.lang.String = null,
-    getInputId: () => java.lang.String = null,
+    getFieldLabel: () => String = null,
+    getInputId: () => String = null,
     getLabelWidth: () => Double = null,
     getLabelableRenderData: () => _ = null,
     getModelData: () => _ = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getRawValue: () => _ = null,
     getSubTplData: () => _ = null,
-    getSubTplMarkup: () => java.lang.String = null,
+    getSubTplMarkup: () => String = null,
     getSubmitData: () => _ = null,
     getSubmitValue: () => _ = null,
     getValue: () => _ = null,
@@ -386,42 +386,42 @@ object IBase {
     initValue: () => Unit = null,
     inputAttrTpl: js.Any = null,
     inputEl: IElement = null,
-    inputId: java.lang.String = null,
-    inputType: java.lang.String = null,
-    invalidCls: java.lang.String = null,
-    invalidText: java.lang.String = null,
+    inputId: String = null,
+    inputType: String = null,
+    invalidCls: String = null,
+    invalidText: String = null,
     isDirty: () => _ | Boolean = null,
     isEqual: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ | Boolean = null,
     isFieldLabelable: js.UndefOr[Boolean] = js.undefined,
     isFileUpload: () => _ | Boolean = null,
     isFormField: js.UndefOr[Boolean] = js.undefined,
     isValid: () => _ | Boolean = null,
-    labelAlign: java.lang.String = null,
+    labelAlign: String = null,
     labelAttrTpl: js.Any = null,
     labelCell: IElement = null,
-    labelCls: java.lang.String = null,
-    labelClsExtra: java.lang.String = null,
+    labelCls: String = null,
+    labelClsExtra: String = null,
     labelEl: IElement = null,
     labelPad: Int | Double = null,
-    labelSeparator: java.lang.String = null,
-    labelStyle: java.lang.String = null,
+    labelSeparator: String = null,
+    labelStyle: String = null,
     labelWidth: Int | Double = null,
     markInvalid: js.UndefOr[js.Any] => Unit = null,
-    msgTarget: java.lang.String = null,
-    name: java.lang.String = null,
+    msgTarget: String = null,
+    name: String = null,
     onRender: () => Unit = null,
     originalValue: js.Any = null,
     preventMark: js.UndefOr[Boolean] = js.undefined,
     processRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
     rawToValue: /* rawValue */ js.UndefOr[js.Any] => _ = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    readOnlyCls: java.lang.String = null,
+    readOnlyCls: String = null,
     reset: () => Unit = null,
     resetOriginalValue: () => Unit = null,
-    setActiveError: js.UndefOr[java.lang.String] => Unit = null,
+    setActiveError: js.UndefOr[String] => Unit = null,
     setActiveErrors: js.UndefOr[Array] => Unit = null,
     setFieldDefaults: js.UndefOr[js.Any] => Unit = null,
-    setFieldLabel: js.UndefOr[java.lang.String] => Unit = null,
+    setFieldLabel: js.UndefOr[String] => Unit = null,
     setFieldStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
     setRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
     setReadOnly: /* readOnly */ js.UndefOr[Boolean] => Unit = null,
@@ -430,7 +430,7 @@ object IBase {
     tabIndex: Int | Double = null,
     transformOriginalValue: js.UndefOr[js.Any] => _ = null,
     transformRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
-    trimLabelSeparator: () => java.lang.String = null,
+    trimLabelSeparator: () => String = null,
     unsetActiveError: () => Unit = null,
     validate: () => _ | Boolean = null,
     validateOnBlur: js.UndefOr[Boolean] = js.undefined,

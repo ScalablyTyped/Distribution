@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Span protected () extends js.Object {
   def this(traceId: TraceId) = this()
-  val annotations: js.Array[typings.zipkin.zipkinMod.model.Annotation] = js.native
+  val annotations: js.Array[Annotation] = js.native
   val debug: Boolean = js.native
   val duration: js.UndefOr[Double] = js.native
   val id: String = js.native

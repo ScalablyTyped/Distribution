@@ -1,8 +1,5 @@
 package typings.apolloDashEnv
 
-import typings.apolloDashEnv.libFetchGlobalMod.RequestInfo
-import typings.apolloDashEnv.libFetchGlobalMod.RequestInit
-import typings.apolloDashEnv.libFetchGlobalMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -26,11 +26,6 @@ trait CustomProtocol1 extends CustomProtocol {
     * the temporary credentials (request token) endpoint).
     */
   var temporary: js.UndefOr[String] = js.native
-  def profile(
-    `this`: CustomProviderOptions,
-    credentials: Credentials1,
-    params: StringDictionary[String],
-    get: AuthedRequest
-  ): js.Promise[Unit] = js.native
+  def profile(credentials: Credentials1, params: StringDictionary[String], get: AuthedRequest): js.Promise[Unit] = js.native
 }
 

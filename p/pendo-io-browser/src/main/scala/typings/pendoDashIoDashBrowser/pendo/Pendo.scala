@@ -2,8 +2,8 @@ package typings.pendoDashIoDashBrowser.pendo
 
 import typings.pendoDashIoDashBrowser.Anon_Reload
 import typings.pendoDashIoDashBrowser.Anon_Steps
-import typings.pendoDashIoDashBrowser.pendoDashIoDashBrowserNumbers.`false`
-import typings.pendoDashIoDashBrowser.pendoDashIoDashBrowserNumbers.`true`
+import typings.pendoDashIoDashBrowser.pendoDashIoDashBrowserBooleans.`false`
+import typings.pendoDashIoDashBrowser.pendoDashIoDashBrowserBooleans.`true`
 import typings.pendoDashIoDashBrowser.pendoDashIoDashBrowserStrings.No
 import typings.pendoDashIoDashBrowser.pendoDashIoDashBrowserStrings.Yes
 import typings.std.HTMLElement

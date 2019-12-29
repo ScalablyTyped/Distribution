@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IList
-  extends typings.senchaUnderscoreTouch.Ext.dataview.IDataView {
+trait IList extends IDataView {
   /** [Property] (Number) */
   var bufferSize: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var disclosureProperty: js.UndefOr[java.lang.String] = js.undefined
+  var disclosureProperty: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of disclosureProperty
   		* @returns String
   		*/
-  var getDisclosureProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDisclosureProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of grouped
   		* @returns Boolean
   		*/
@@ -107,7 +106,7 @@ trait IList
   /** [Method] Sets the value of disclosureProperty
   		* @param disclosureProperty String The new value.
   		*/
-  var setDisclosureProperty: js.UndefOr[js.Function1[/* disclosureProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDisclosureProperty: js.UndefOr[js.Function1[/* disclosureProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of grouped
   		* @param grouped Boolean The new value.
   		*/
@@ -175,10 +174,10 @@ trait IList
 object IList {
   @scala.inline
   def apply(
-    IDataView: typings.senchaUnderscoreTouch.Ext.dataview.IDataView = null,
+    IDataView: IDataView = null,
     bufferSize: Int | Double = null,
-    disclosureProperty: java.lang.String = null,
-    getDisclosureProperty: () => java.lang.String = null,
+    disclosureProperty: String = null,
+    getDisclosureProperty: () => String = null,
     getGrouped: () => Boolean = null,
     getIcon: () => _ = null,
     getIndexBar: () => _ = null,
@@ -203,7 +202,7 @@ object IList {
     preventSelectionOnDisclose: js.UndefOr[Boolean] = js.undefined,
     refreshHeightOnUpdate: js.UndefOr[Boolean] = js.undefined,
     scrollToRecord: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => Unit = null,
-    setDisclosureProperty: /* disclosureProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setDisclosureProperty: /* disclosureProperty */ js.UndefOr[String] => Unit = null,
     setGrouped: /* grouped */ js.UndefOr[Boolean] => Unit = null,
     setIcon: /* icon */ js.UndefOr[js.Any] => Unit = null,
     setIndexBar: /* indexBar */ js.UndefOr[js.Any] => Unit = null,

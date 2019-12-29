@@ -1,6 +1,5 @@
 package typings.fastDashGlob
 
-import typings.fastDashGlob.outTypesPatternsMod.Pattern
 import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js

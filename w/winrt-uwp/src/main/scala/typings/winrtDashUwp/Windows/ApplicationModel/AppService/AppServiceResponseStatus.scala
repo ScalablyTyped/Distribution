@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.AppService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.failure
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.resourceLimitsExceeded
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.success
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

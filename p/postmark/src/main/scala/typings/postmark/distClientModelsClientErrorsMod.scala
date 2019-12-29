@@ -1,7 +1,5 @@
 package typings.postmark
 
-import typings.postmark.distClientModelsClientErrorsMod.HttpError
-import typings.postmark.distClientModelsClientErrorsMod.PostmarkError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,9 +1,6 @@
 package typings.timezonecomplete
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibJavascriptMod.DateFunctions
-import typings.timezonecomplete.distLibJavascriptMod.DateFunctions.Get
-import typings.timezonecomplete.distLibJavascriptMod.DateFunctions.GetUTC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

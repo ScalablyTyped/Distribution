@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class PropertyAccessor protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
-  var `Outlook.PropertyAccessor_typekey`: PropertyAccessor = js.native
+  @JSName("Outlook.PropertyAccessor_typekey")
+  var OutlookDotPropertyAccessor_typekey: PropertyAccessor = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def BinaryToString(Value: js.Any): String = js.native

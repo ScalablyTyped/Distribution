@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLOptionElement")
 @js.native
 class IHTMLOptionElement protected () extends js.Object {
-  var `MSHTML.IHTMLOptionElement_typekey`: IHTMLOptionElement = js.native
+  @JSName("MSHTML.IHTMLOptionElement_typekey")
+  var MSHTMLDotIHTMLOptionElement_typekey: IHTMLOptionElement = js.native
   var defaultSelected: Boolean = js.native
   @JSName("form")
   val form_Original: IHTMLFormElement = js.native

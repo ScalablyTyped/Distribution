@@ -1,8 +1,6 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentStatus.Added
-import typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentStatus.Removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

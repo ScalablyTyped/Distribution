@@ -1,8 +1,6 @@
 package typings.postmark.distClientModelsTemplatesTemplateMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes.Layout
-import typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes.Standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

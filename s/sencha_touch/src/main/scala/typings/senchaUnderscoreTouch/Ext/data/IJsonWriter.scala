@@ -27,11 +27,11 @@ trait IJsonWriter
   /** [Method] Returns the value of rootProperty
   		* @returns String
   		*/
-  var getRootProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var rootProperty: js.UndefOr[java.lang.String] = js.undefined
+  var rootProperty: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of allowSingle
   		* @param allowSingle Boolean The new value.
   		*/
@@ -47,7 +47,7 @@ trait IJsonWriter
   /** [Method] Sets the value of rootProperty
   		* @param rootProperty String The new value.
   		*/
-  var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IJsonWriter {
@@ -62,28 +62,28 @@ object IJsonWriter {
     config: js.Any = null,
     destroy: () => Unit = null,
     encode: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     getAllowSingle: () => Boolean = null,
     getEncode: () => Boolean = null,
     getEncodeRequest: () => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getNameProperty: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getNameProperty: () => String = null,
     getRecordData: /* record */ js.UndefOr[js.Any] => _ = null,
-    getRootProperty: () => java.lang.String = null,
+    getRootProperty: () => String = null,
     getWriteAllFields: () => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
-    nameProperty: java.lang.String = null,
+    nameProperty: String = null,
     platformConfig: js.Any = null,
-    root: java.lang.String = null,
-    rootProperty: java.lang.String = null,
+    root: String = null,
+    rootProperty: String = null,
     self: IClass = null,
     setAllowSingle: /* allowSingle */ js.UndefOr[Boolean] => Unit = null,
     setEncode: /* encode */ js.UndefOr[Boolean] => Unit = null,
     setEncodeRequest: /* encodeRequest */ js.UndefOr[Boolean] => Unit = null,
-    setNameProperty: /* nameProperty */ js.UndefOr[java.lang.String] => Unit = null,
-    setRootProperty: /* rootProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setNameProperty: /* nameProperty */ js.UndefOr[String] => Unit = null,
+    setRootProperty: /* rootProperty */ js.UndefOr[String] => Unit = null,
     setWriteAllFields: /* writeAllFields */ js.UndefOr[Boolean] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,

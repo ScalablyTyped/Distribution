@@ -2,7 +2,7 @@ package typings.rxjs
 
 import typings.rxjs.internalTypesMod.MonoTypeOperatorFunction
 import typings.rxjs.internalTypesMod.OperatorFunction
-import typings.rxjs.rxjsNumbers.`false`
+import typings.rxjs.rxjsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

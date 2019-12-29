@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.edits
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geojson
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
@@ -49,11 +48,13 @@ trait GeoJSONLayer
     */
   var elevationInfo: GeoJSONLayerElevationInfo = js.native
   /**
-    * Configures the method for decluttering overlapping features in the view. If this property is not set (or set to `null`), every feature is drawn individually.  Currently this property is only supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) for point features with non-draped [Icons](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html) or [Text](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html) symbol layers.  ![declutter](https://developers.arcgis.com/javascript/assets/img/samples/city-points-declutter.gif)
+    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  There are two types of feature reduction: `selection` and `cluster`.
+    *   * [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen. This has been available since version 4.4.
+    *   * [Cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) spatially groups points in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) into _clusters_. The size of each cluster is proportional to the number of features within the cluster. This has been available since version 4.14.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#featureReduction)
     */
-  var featureReduction: GeoJSONLayerFeatureReduction = js.native
+  var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   /**
     * An array of fields in the layer.
     *
@@ -169,12 +170,12 @@ trait GeoJSONLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#applyEdits)
     *
     * @param edits Object containing features to be added, updated or deleted.
-    * @param edits.addFeatures Array of features to be added. Values of non nullable fields must be provided when adding new features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
-    * @param edits.updateFeatures Array of features to be updated. Each feature must have valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#objectIdField). Values of non nullable fields must be provided when updating features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
-    * @param edits.deleteFeatures An array of features or objects to be deleted. When an array of features is passed, each feature must have a valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#objectIdField). When an array of objects is used, each object must have a valid `objectId` property.
+    * @param edits.addFeatures An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be added. Values of non nullable fields must be provided when adding new features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
+    * @param edits.updateFeatures An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be updated. Each feature must have valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#objectIdField). Values of non nullable fields must be provided when updating features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
+    * @param edits.deleteFeatures An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features, or objects to be deleted. When an array or collection of features is passed, each feature must have a valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#objectIdField). When an array of objects is used, each object must have a valid `objectId` property.
     *
     */
-  def applyEdits(edits: GeoJSONLayerApplyEditsEdits): IPromise[_] = js.native
+  def applyEdits(edits: GeoJSONLayerApplyEditsEdits): js.Promise[_] = js.native
   /**
     * Creates a popup template for the layer, populated with all the fields of the layer.
     *
@@ -235,11 +236,11 @@ trait GeoJSONLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryExtent(): IPromise[_] = js.native
-  def queryExtent(query: Query): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties, options: GeoJSONLayerQueryExtentOptions): IPromise[_] = js.native
-  def queryExtent(query: Query, options: GeoJSONLayerQueryExtentOptions): IPromise[_] = js.native
+  def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: Query): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties, options: GeoJSONLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(query: Query, options: GeoJSONLayerQueryExtentOptions): js.Promise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns the number of features that satisfy the query. If no parameters are specified, the total number of features satisfying the layer's configuration/filters is returned.
     * > **Known Limitations**
@@ -257,11 +258,11 @@ trait GeoJSONLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatureCount(): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties, options: GeoJSONLayerQueryFeatureCountOptions): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query, options: GeoJSONLayerQueryFeatureCountOptions): IPromise[Double] = js.native
+  def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: GeoJSONLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query, options: GeoJSONLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves. A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) contains an array of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) features, which can be added to the [view's graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics). This array will not be populated if zero results are found.
     * > **Known Limitations**
@@ -280,11 +281,11 @@ trait GeoJSONLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatures(): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties, options: GeoJSONLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: GeoJSONLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: GeoJSONLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: GeoJSONLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns an array of Object IDs for features that satisfy the input query. If no parameters are specified, then the Object IDs of all features satisfying the layer's configuration/filters are returned.
     * > **Known Limitations**
@@ -302,11 +303,11 @@ trait GeoJSONLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryObjectIds(): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties, options: GeoJSONLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query, options: GeoJSONLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: GeoJSONLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query, options: GeoJSONLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }
 
 @JSGlobal("__esri.GeoJSONLayer")

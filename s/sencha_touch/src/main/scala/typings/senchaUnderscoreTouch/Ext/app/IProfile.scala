@@ -27,11 +27,11 @@ trait IProfile extends IObservable {
   /** [Method] Returns the value of name
   		* @returns String
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of namespace
   		* @returns String
   		*/
-  var getNamespace: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getNamespace: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of stores
   		* @returns Array
   		*/
@@ -49,9 +49,9 @@ trait IProfile extends IObservable {
   /** [Config Option] (Array) */
   var models: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var namespace: js.UndefOr[java.lang.String] = js.undefined
+  var namespace: js.UndefOr[String] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
   		* @param object Object The Observable whose events this object is to relay.
   		* @param events String/Array/Object Array of event names to relay.
@@ -76,11 +76,11 @@ trait IProfile extends IObservable {
   /** [Method] Sets the value of name
   		* @param name String The new value.
   		*/
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of namespace
   		* @param namespace String The new value.
   		*/
-  var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of stores
   		* @param stores Array The new value.
   		*/
@@ -101,7 +101,7 @@ object IProfile {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -115,21 +115,21 @@ object IProfile {
     controllers: Array = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getApplication: () => IApplication = null,
     getBubbleEvents: () => _ = null,
     getControllers: () => Array = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getModels: () => Array = null,
-    getName: () => java.lang.String = null,
-    getNamespace: () => java.lang.String = null,
+    getName: () => String = null,
+    getNamespace: () => String = null,
     getStores: () => Array = null,
     getViews: () => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     isActive: () => Boolean = null,
@@ -139,16 +139,16 @@ object IProfile {
     models: Array = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    name: java.lang.String = null,
-    namespace: java.lang.String = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    name: String = null,
+    namespace: String = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
@@ -157,15 +157,15 @@ object IProfile {
     setControllers: /* controllers */ js.UndefOr[Array] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setModels: /* models */ js.UndefOr[Array] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
-    setNamespace: /* namespace */ js.UndefOr[java.lang.String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
+    setNamespace: /* namespace */ js.UndefOr[String] => Unit = null,
     setStores: /* stores */ js.UndefOr[Array] => Unit = null,
     setViews: /* views */ js.UndefOr[Array] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     stores: Array = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,

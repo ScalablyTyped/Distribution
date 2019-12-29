@@ -1,7 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.protobuf
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.protobuf.NullValue.NULL_VALUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

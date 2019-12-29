@@ -1,12 +1,6 @@
 package typings.resourceDashLoader.resourceDashLoaderMod.Resource
 
 import org.scalablytyped.runtime.TopLevel
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.XHR_RESPONSE_TYPE.BLOB
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.XHR_RESPONSE_TYPE.BUFFER
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.XHR_RESPONSE_TYPE.DEFAULT
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.XHR_RESPONSE_TYPE.DOCUMENT
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.XHR_RESPONSE_TYPE.JSON
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.XHR_RESPONSE_TYPE.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

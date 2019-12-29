@@ -1,7 +1,6 @@
 package typings.atFirebaseDatabase
 
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.Node
-import typings.atFirebaseDatabase.distSrcCoreViewChangeMod.Change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

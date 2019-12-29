@@ -1,8 +1,6 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MarkerUnits.STROKE_WIDTH
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MarkerUnits.USER_SPACE_ON_USE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

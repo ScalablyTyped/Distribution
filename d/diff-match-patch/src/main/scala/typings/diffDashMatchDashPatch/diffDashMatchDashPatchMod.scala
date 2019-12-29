@@ -1,8 +1,6 @@
 package typings.diffDashMatchDashPatch
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.diffDashMatchDashPatch.diffDashMatchDashPatchMod.Diff
-import typings.diffDashMatchDashPatch.diffDashMatchDashPatchMod.patch_obj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

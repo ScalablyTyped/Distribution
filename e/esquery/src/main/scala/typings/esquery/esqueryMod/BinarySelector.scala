@@ -8,19 +8,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BinarySelector extends Selector {
-  var left: Selector
-  var right: Selector
-  @JSName("type")
-  var type_BinarySelector: child | sibling | adjacent | descendant
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.esquery.esqueryMod.Descendant
+  - typings.esquery.esqueryMod.Child
+  - typings.esquery.esqueryMod.Sibling
+  - typings.esquery.esqueryMod.Adjacent
+*/
+trait BinarySelector extends SubjectSelector
 
 object BinarySelector {
   @scala.inline
-  def apply(
-    left: Selector,
-    right: Selector,
-    `type`: child | sibling | adjacent | descendant,
+  def Descendant(
+    left: SubjectSelector,
+    right: SubjectSelector,
+    `type`: descendant,
+    subject: js.UndefOr[Boolean] = js.undefined
+  ): BinarySelector = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BinarySelector]
+  }
+  @scala.inline
+  def Child(
+    left: SubjectSelector,
+    right: SubjectSelector,
+    `type`: child,
+    subject: js.UndefOr[Boolean] = js.undefined
+  ): BinarySelector = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BinarySelector]
+  }
+  @scala.inline
+  def Sibling(
+    left: SubjectSelector,
+    right: SubjectSelector,
+    `type`: sibling,
+    subject: js.UndefOr[Boolean] = js.undefined
+  ): BinarySelector = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BinarySelector]
+  }
+  @scala.inline
+  def Adjacent(
+    left: SubjectSelector,
+    right: SubjectSelector,
+    `type`: adjacent,
     subject: js.UndefOr[Boolean] = js.undefined
   ): BinarySelector = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])

@@ -21,7 +21,7 @@ class WriteBatch protected () extends js.Object {
     * @param documentRef A reference to the document to be deleted.
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
-  def delete(documentRef: DocumentReference): WriteBatch = js.native
+  def delete(documentRef: DocumentReference[_]): WriteBatch = js.native
   /**
     * Writes to the document referred to by the provided `DocumentReference`.
     * If the document does not exist yet, it will be created. If you pass
@@ -32,8 +32,8 @@ class WriteBatch protected () extends js.Object {
     * @param options An object to configure the set behavior.
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
-  def set(documentRef: DocumentReference, data: DocumentData): WriteBatch = js.native
-  def set(documentRef: DocumentReference, data: DocumentData, options: SetOptions): WriteBatch = js.native
+  def set[T](documentRef: DocumentReference[T], data: T): WriteBatch = js.native
+  def set[T](documentRef: DocumentReference[T], data: T, options: SetOptions): WriteBatch = js.native
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that
@@ -45,7 +45,7 @@ class WriteBatch protected () extends js.Object {
     * within the document.
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
-  def update(documentRef: DocumentReference, data: UpdateData): WriteBatch = js.native
+  def update(documentRef: DocumentReference[_], data: UpdateData): WriteBatch = js.native
   /**
     * Updates fields in the document referred to by this `DocumentReference`.
     * The update will fail if applied to a document that does not exist.
@@ -60,7 +60,7 @@ class WriteBatch protected () extends js.Object {
     * @return A Promise resolved once the data has been successfully written
     * to the backend (Note that it won't resolve while you're offline).
     */
-  def update(documentRef: DocumentReference, field: String, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
-  def update(documentRef: DocumentReference, field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
+  def update(documentRef: DocumentReference[_], field: String, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
+  def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
 }
 

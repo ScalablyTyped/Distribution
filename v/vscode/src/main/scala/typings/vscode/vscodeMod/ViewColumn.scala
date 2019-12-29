@@ -1,17 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.ViewColumn.Active
-import typings.vscode.vscodeMod.ViewColumn.Beside
-import typings.vscode.vscodeMod.ViewColumn.Eight
-import typings.vscode.vscodeMod.ViewColumn.Five
-import typings.vscode.vscodeMod.ViewColumn.Four
-import typings.vscode.vscodeMod.ViewColumn.Nine
-import typings.vscode.vscodeMod.ViewColumn.One
-import typings.vscode.vscodeMod.ViewColumn.Seven
-import typings.vscode.vscodeMod.ViewColumn.Six
-import typings.vscode.vscodeMod.ViewColumn.Three
-import typings.vscode.vscodeMod.ViewColumn.Two
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

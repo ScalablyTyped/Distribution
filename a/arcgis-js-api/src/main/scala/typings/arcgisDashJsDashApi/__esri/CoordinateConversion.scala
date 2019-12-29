@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,7 +82,7 @@ trait CoordinateConversion
     * @param format Specifies the format of the input coordinate.
     *
     */
-  def reverseConvert(coordinate: String, format: Format): IPromise[Point] = js.native
+  def reverseConvert(coordinate: String, format: Format): js.Promise[Point] = js.native
 }
 
 @JSGlobal("__esri.CoordinateConversion")

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object peerjsStrings {
   @js.native
-  sealed trait `Not a browserDOT` extends js.Object
+  sealed trait `Not a browserDot` extends js.Object
   
   @js.native
-  sealed trait `Not a supported browserDOT` extends js.Object
+  sealed trait `Not a supported browserDot` extends js.Object
   
   @js.native
   sealed trait call extends js.Object
@@ -48,9 +48,9 @@ object peerjsStrings {
   sealed trait stream extends js.Object
   
   @scala.inline
-  def `Not a browserDOT`: `Not a browserDOT` = "Not a browser.".asInstanceOf[`Not a browserDOT`]
+  def `Not a browserDot`: `Not a browserDot` = "Not a browser.".asInstanceOf[`Not a browserDot`]
   @scala.inline
-  def `Not a supported browserDOT`: `Not a supported browserDOT` = "Not a supported browser.".asInstanceOf[`Not a supported browserDOT`]
+  def `Not a supported browserDot`: `Not a supported browserDot` = "Not a supported browser.".asInstanceOf[`Not a supported browserDot`]
   @scala.inline
   def call: call = "call".asInstanceOf[call]
   @scala.inline

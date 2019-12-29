@@ -41,20 +41,20 @@ object SortTypes extends js.Object {
   		* @param s Object The value being converted
   		* @returns String The comparison value
   		*/
-  def asText(): java.lang.String = js.native
-  def asText(s: js.Any): java.lang.String = js.native
+  def asText(): String = js.native
+  def asText(s: js.Any): String = js.native
   /** [Method] Case insensitive string
   		* @param s Object The value being converted
   		* @returns String The comparison value
   		*/
-  def asUCString(): java.lang.String = js.native
-  def asUCString(s: js.Any): java.lang.String = js.native
+  def asUCString(): String = js.native
+  def asUCString(s: js.Any): String = js.native
   /** [Method] Strips all HTML tags to sort on text only  Case insensitive
   		* @param s Object The value being converted
   		* @returns String The comparison value
   		*/
-  def asUCText(): java.lang.String = js.native
-  def asUCText(s: js.Any): java.lang.String = js.native
+  def asUCText(): String = js.native
+  def asUCText(s: js.Any): String = js.native
   /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
   		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
   		* @returns Object Returns the result of calling the overridden method
@@ -78,7 +78,7 @@ object SortTypes extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this

@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashTab.SemanticUI
 
 import typings.semanticDashUiDashTab.JQuery
-import typings.semanticDashUiDashTab.semanticDashUiDashTabNumbers.`false`
+import typings.semanticDashUiDashTab.semanticDashUiDashTabBooleans.`false`
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.`cache add`
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.`cache read`
 import typings.semanticDashUiDashTab.semanticDashUiDashTabStrings.`cache remove`

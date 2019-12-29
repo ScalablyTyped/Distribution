@@ -97,7 +97,6 @@ trait ConnectorDescription[TProvided, TExposed] extends js.Object {
     * searchForFacetValuesResults holds the search for facet values results.
     */
   def getProvidedProps(
-    `this`: Component[TExposed, js.Object, _],
     props: TExposed,
     searchState: SearchState,
     searchResults: ConnectorSearchResults[_],
@@ -110,7 +109,7 @@ object ConnectorDescription {
   @scala.inline
   def apply[TProvided, TExposed](
     displayName: String,
-    getProvidedProps: (Component[TExposed, js.Object, _], TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided,
+    getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided,
     cleanUp: js.ThisFunction2[
       /* this */ Component[TExposed, js.Object, _], 
       /* props */ TExposed, 
@@ -147,7 +146,7 @@ object ConnectorDescription {
       _
     ] = null
   ): ConnectorDescription[TProvided, TExposed] = {
-    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], getProvidedProps = js.Any.fromFunction6(getProvidedProps))
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], getProvidedProps = js.Any.fromFunction5(getProvidedProps))
     if (cleanUp != null) __obj.updateDynamic("cleanUp")(cleanUp.asInstanceOf[js.Any])
     if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps.asInstanceOf[js.Any])
     if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata.asInstanceOf[js.Any])

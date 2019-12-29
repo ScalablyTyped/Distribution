@@ -1,13 +1,6 @@
 package typings.clearbladejsDashNode.clearbladejsDashNodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QueryConditions.QUERY_EQUAL
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QueryConditions.QUERY_GREATERTHAN
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QueryConditions.QUERY_GREATERTHAN_EQUAL
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QueryConditions.QUERY_LESSTHAN
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QueryConditions.QUERY_LESSTHAN_EQUAL
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QueryConditions.QUERY_MATCHES
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QueryConditions.QUERY_NOTEQUAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

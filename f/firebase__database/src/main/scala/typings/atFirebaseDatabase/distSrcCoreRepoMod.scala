@@ -2,7 +2,9 @@ package typings.atFirebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
-import typings.atFirebaseDatabase.atFirebaseDatabaseMod.DataSnapshot
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternalName
+import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
+import typings.atFirebaseDatabase.distSrcApiDataSnapshotMod.DataSnapshot
 import typings.atFirebaseDatabase.distSrcApiDatabaseMod.Database
 import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
 import typings.atFirebaseDatabase.distSrcCorePersistentConnectionMod.PersistentConnection
@@ -19,12 +21,16 @@ import scala.scalajs.js.annotation._
 object distSrcCoreRepoMod extends js.Object {
   @js.native
   class Repo protected () extends js.Object {
-    def this(repoInfo_ : RepoInfo, forceRestClient: Boolean, app: FirebaseApp) = this()
+    def this(
+      repoInfo_ : RepoInfo,
+      forceRestClient: Boolean,
+      app: FirebaseApp,
+      authProvider: Provider[FirebaseAuthInternalName]
+    ) = this()
     var __database: js.Any = js.native
     var abortTransactions_ : js.Any = js.native
     var app: FirebaseApp = js.native
     var dataUpdateCount: Double = js.native
-    val database: Database = js.native
     var eventQueue_ : js.Any = js.native
     var getNextWriteId_ : js.Any = js.native
     var infoData_ : js.Any = js.native
@@ -66,6 +72,7 @@ object distSrcCoreRepoMod extends js.Object {
     ): Unit = js.native
     def callOnCompleteCallback(callback: Null, status: String): Unit = js.native
     def callOnCompleteCallback(callback: Null, status: String, errorReason: String): Unit = js.native
+    def database(): Database = js.native
     /**
       * Generate ServerValues using some variables from the repo object.
       */

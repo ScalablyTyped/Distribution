@@ -1,7 +1,6 @@
 package typings.reactDashSpinners
 
 import typings.react.reactMod.Component
-import typings.reactDashSpinners.fadeLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
 import typings.reactDashSpinners.interfacesMod.StyleFunctionWithIndex

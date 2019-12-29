@@ -1,8 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialFeedSortOrder.byCreatedTime
-import typings.sharepoint.SP.Social.SocialFeedSortOrder.byModifiedTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

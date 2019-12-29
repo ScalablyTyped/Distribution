@@ -18,7 +18,7 @@ trait ISprite extends IObservable {
   /** [Config Option] (Number) */
   var fillOpacity: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var fillStyle: js.UndefOr[java.lang.String] = js.undefined
+  var fillStyle: js.UndefOr[String] = js.undefined
   /** [Method] Returns the bounding box for the given Sprite as calculated with the Canvas engine
   		* @param isWithoutTransform Boolean Whether to calculate the bounding box with the current transforms or not.
   		*/
@@ -41,9 +41,9 @@ trait ISprite extends IObservable {
   		*/
   var hide: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
-  var lineCap: js.UndefOr[java.lang.String] = js.undefined
+  var lineCap: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var lineJoin: js.UndefOr[java.lang.String] = js.undefined
+  var lineJoin: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var lineWidth: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -114,7 +114,7 @@ trait ISprite extends IObservable {
   /** [Config Option] (Number) */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var shadowColor: js.UndefOr[java.lang.String] = js.undefined
+  var shadowColor: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -126,7 +126,7 @@ trait ISprite extends IObservable {
   /** [Config Option] (Number) */
   var strokeOpacity: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var strokeStyle: js.UndefOr[java.lang.String] = js.undefined
+  var strokeStyle: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var transformFillStroke: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Number) */
@@ -161,7 +161,7 @@ object ISprite {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -174,33 +174,33 @@ object ISprite {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fillOpacity: Int | Double = null,
-    fillStyle: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fillStyle: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBBox: /* isWithoutTransform */ js.UndefOr[Boolean] => Unit = null,
     getBBoxCenter: /* isWithoutTransform */ js.UndefOr[Boolean] => Array = null,
     getBubbleEvents: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getParent: () => _ = null,
     globalAlpha: Int | Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hide: () => ISprite = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    lineCap: java.lang.String = null,
-    lineJoin: java.lang.String = null,
+    lineCap: String = null,
+    lineJoin: String = null,
     lineWidth: Int | Double = null,
     listeners: js.Any = null,
     miterLimit: Int | Double = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -208,7 +208,7 @@ object ISprite {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     render: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => _ = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
@@ -226,19 +226,19 @@ object ISprite {
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setParent: /* parent */ js.UndefOr[js.Any] => Unit = null,
     shadowBlur: Int | Double = null,
-    shadowColor: java.lang.String = null,
+    shadowColor: String = null,
     shadowOffsetX: Int | Double = null,
     shadowOffsetY: Int | Double = null,
     show: () => ISprite = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     strokeOpacity: Int | Double = null,
-    strokeStyle: java.lang.String = null,
+    strokeStyle: String = null,
     suspendEvents: () => Unit = null,
     transformFillStroke: js.UndefOr[Boolean] = js.undefined,
     translationX: Int | Double = null,
     translationY: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     updatePlainBBox: /* plain */ js.UndefOr[js.Any] => Unit = null,

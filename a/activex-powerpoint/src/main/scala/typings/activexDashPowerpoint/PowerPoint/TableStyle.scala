@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class TableStyle protected () extends js.Object {
   val Id: String = js.native
   val Name: String = js.native
-  var `PowerPoint.TableStyle_typekey`: TableStyle = js.native
+  @JSName("PowerPoint.TableStyle_typekey")
+  var PowerPointDotTableStyle_typekey: TableStyle = js.native
 }
 

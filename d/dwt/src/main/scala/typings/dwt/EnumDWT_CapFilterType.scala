@@ -1,15 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapFilterType.TWFT_BLACK
-import typings.dwt.EnumDWT_CapFilterType.TWFT_BLUE
-import typings.dwt.EnumDWT_CapFilterType.TWFT_CYAN
-import typings.dwt.EnumDWT_CapFilterType.TWFT_GREEN
-import typings.dwt.EnumDWT_CapFilterType.TWFT_MAGENTA
-import typings.dwt.EnumDWT_CapFilterType.TWFT_NONE
-import typings.dwt.EnumDWT_CapFilterType.TWFT_RED
-import typings.dwt.EnumDWT_CapFilterType.TWFT_WHITE
-import typings.dwt.EnumDWT_CapFilterType.TWFT_YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

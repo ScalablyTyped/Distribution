@@ -1,6 +1,5 @@
 package typings.androiduix.java.lang
 
-import typings.androiduix.java.lang.util.concurrent.CopyOnWriteArrayList
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

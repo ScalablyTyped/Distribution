@@ -33,5 +33,12 @@ trait FirebaseNamespace extends js.Object {
   def initializeApp(options: FirebaseOptions): FirebaseApp = js.native
   def initializeApp(options: FirebaseOptions, config: FirebaseAppConfig): FirebaseApp = js.native
   def initializeApp(options: FirebaseOptions, name: String): FirebaseApp = js.native
+  /**
+    * Registers a library's name and version for platform logging purposes.
+    * @param library Name of 1p or 3p library (e.g. firestore, angularfire)
+    * @param version Current version of that library.
+    */
+  def registerVersion(library: String, version: String): Unit = js.native
+  def registerVersion(library: String, version: String, variant: String): Unit = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.plugapi.plugapiMod.Event
 
 import typings.plugapi.plugapiMod.RawChatMessage
+import typings.plugapi.plugapiMod.User.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ object Command {
   def apply(
     args: js.Array[String],
     command: String,
-    from: typings.plugapi.plugapiMod.User.User,
+    from: User,
     havePermission: /* repeated */ js.Any => Boolean,
     id: String,
     isFrom: /* repeated */ js.Any => Boolean,

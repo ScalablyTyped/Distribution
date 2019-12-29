@@ -1,11 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.TextTrackEdgeType.DEPRESSED
-import typings.chrome.chrome.cast.media.TextTrackEdgeType.DROP_SHADOW
-import typings.chrome.chrome.cast.media.TextTrackEdgeType.NONE
-import typings.chrome.chrome.cast.media.TextTrackEdgeType.OUTLINE
-import typings.chrome.chrome.cast.media.TextTrackEdgeType.RAISED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

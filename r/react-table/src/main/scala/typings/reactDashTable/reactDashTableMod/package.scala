@@ -5,67 +5,94 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashTableMod {
-  import typings.react.reactMod.Component
-  import typings.react.reactMod.ReactElement
+  import typings.react.reactMod.ComponentType
   import typings.react.reactMod.ReactNode
+  import typings.reactDashTable.Anon_Action
+  import typings.reactDashTable.Anon_Aggregate
+  import typings.reactDashTable.Anon_Aggregations
+  import typings.reactDashTable.Anon_AutoResetExpanded
+  import typings.reactDashTable.Anon_AutoResetFilters
+  import typings.reactDashTable.Anon_AutoResetGlobalFilter
+  import typings.reactDashTable.Anon_AutoResetPage
+  import typings.reactDashTable.Anon_AutoResetRowState
+  import typings.reactDashTable.Anon_AutoResetSelectedRows
+  import typings.reactDashTable.Anon_AutoResetSortBy
+  import typings.reactDashTable.Anon_CellColumn
+  import typings.reactDashTable.Anon_CellD
   import typings.reactDashTable.Anon_Column
+  import typings.reactDashTable.Anon_ColumnColumnInstance
+  import typings.reactDashTable.Anon_Columns
+  import typings.reactDashTable.Anon_DefaultCanFilter
+  import typings.reactDashTable.Anon_DefaultCanSort
+  import typings.reactDashTable.Anon_Id
+  import typings.reactDashTable.Anon_Row
+  import typings.reactDashTable.Anon_Type
+  import typings.reactDashTable.reactDashTableNumbers.`-1`
+  import typings.reactDashTable.reactDashTableNumbers.`0`
+  import typings.reactDashTable.reactDashTableNumbers.`1`
+  import typings.std.Extract
   import typings.std.Partial
+  import typings.std.Record
 
-  type Accessor[D] = String | js.Array[String] | AccessorFunction[D]
-  type AccessorFunction[D] = js.Function1[/* row */ D, js.Any]
-  type Aggregator = js.Function2[/* values */ js.Any, /* rows */ js.Any, js.Any]
-  type Column[D] = Column_[D]
-  type ComponentPropsGetter0 = js.Function4[
-    /* finalState */ js.Any, 
-    /* rowInfo */ js.UndefOr[scala.Nothing], 
-    /* column */ js.UndefOr[scala.Nothing], 
-    /* instance */ js.UndefOr[js.Any], 
-    js.UndefOr[js.Object]
+  type ActionType = Anon_Type with (Record[String, _])
+  type AggregatedValue = js.Any
+  type Aggregator[D /* <: js.Object */] = AggregatorFn[D] | DefaultAggregators | String
+  type AggregatorFn[D /* <: js.Object */] = js.Function3[
+    /* columnValues */ js.Array[CellValue], 
+    /* rows */ js.Array[Row[D]], 
+    /* isAggregated */ Boolean, 
+    AggregatedValue
   ]
-  type ComponentPropsGetterC = js.Function4[
-    /* finalState */ js.Any, 
-    /* rowInfo */ js.UndefOr[scala.Nothing], 
-    /* column */ js.UndefOr[Column[js.Any]], 
-    /* instance */ js.UndefOr[js.Any], 
-    js.UndefOr[js.Object]
-  ]
-  type ComponentPropsGetterR = js.Function4[
-    /* finalState */ js.Any, 
-    /* rowInfo */ js.UndefOr[RowInfo], 
-    /* column */ js.UndefOr[scala.Nothing], 
-    /* instance */ js.UndefOr[js.Any], 
-    js.UndefOr[js.Object]
-  ]
-  type ComponentPropsGetterRC = js.Function4[
-    /* finalState */ js.Any, 
-    /* rowInfo */ js.UndefOr[RowInfo], 
-    /* column */ js.UndefOr[Column[js.Any]], 
-    /* instance */ js.UndefOr[js.Any], 
-    js.UndefOr[js.Object]
-  ]
-  type DefaultFilterFunction = js.Function3[/* filter */ Filter, /* row */ js.Any, /* column */ js.Any, Boolean]
-  type ExpandedChangeFunction = js.Function3[/* column */ js.Any, /* event */ js.Any, /* isTouch */ Boolean, Unit]
-  type FilterFunction = js.Function3[
-    /* filter */ Filter, 
-    /* rows */ js.Array[js.Any], 
-    /* column */ js.Any, 
-    js.Array[js.Any]
-  ]
-  type FilterRender = js.Function1[/* params */ Anon_Column, ReactElement]
-  type FilteredChangeFunction = js.Function3[/* newFiltering */ js.Array[Filter], /* column */ js.Any, /* value */ js.Any, Unit]
-  type PageChangeFunction = js.Function1[/* page */ Double, Unit]
-  type PageSizeChangeFunction = js.Function2[/* newPageSize */ Double, /* newPage */ Double, Unit]
-  type PivotRenderer = (js.Function1[/* cellInfo */ CellInfo, ReactNode]) | js.Function0[js.Any] | String | ReactNode
-  type ReactTable[D] = Component[Partial[TableProps[D, D]], js.Object, js.Any]
-  type ReactTableFunction = js.Function1[/* value */ js.UndefOr[js.Any], Unit]
-  type ResizedChangeFunction = js.Function2[/* newResized */ js.Array[Resize], /* event */ js.Any, Unit]
-  type SortFunction = js.Function3[/* a */ js.Any, /* b */ js.Any, /* desc */ js.Any, Double]
-  type SortedChangeFunction = js.Function3[
-    /* newSorted */ js.Array[SortingRule], 
-    /* column */ js.Any, 
-    /* additive */ Boolean, 
-    Unit
-  ]
-  type SubComponentFunction = js.Function1[/* rowInfo */ RowInfo, ReactNode]
-  type TableCellRenderer = (js.Function2[/* cellInfo */ CellInfo, /* column */ js.Any, ReactNode]) | ReactNode
+  type Cell[D /* <: js.Object */] = UseTableCellProps[D]
+  type CellPropGetter[D /* <: js.Object */] = PropGetter[D, TableCellProps, Anon_CellD[D], Partial[TableCellProps]]
+  type CellProps[D /* <: js.Object */] = TableInstance[D] with Anon_CellColumn[D]
+  type CellValue = js.Any
+  type FilterProps[D /* <: js.Object */] = HeaderProps[D]
+  type FilterTypes[D /* <: js.Object */] = Record[String, FilterValue]
+  type FilterValue = js.Any
+  type Filters[D /* <: js.Object */] = js.Array[Anon_Id[D]]
+  type FooterGroupPropGetter[D /* <: js.Object */] = PropGetter[D, TableFooterGroupProps, Anon_Column[D], Partial[TableFooterGroupProps]]
+  type FooterPropGetter[D /* <: js.Object */] = PropGetter[D, TableFooterProps, Anon_Column[D], Partial[TableFooterProps]]
+  type HeaderGroupPropGetter[D /* <: js.Object */] = PropGetter[D, TableHeaderGroupProps, Anon_Column[D], Partial[TableHeaderGroupProps]]
+  type HeaderPropGetter[D /* <: js.Object */] = PropGetter[D, TableHeaderProps, Anon_Column[D], Partial[TableHeaderProps]]
+  type HeaderProps[D /* <: js.Object */] = TableInstance[D] with Anon_ColumnColumnInstance[D]
+  type Hooks[D /* <: js.Object */] = UseTableHooks[D]
+  type IdType[D] = StringKey[D] | String
+  type Meta[D /* <: js.Object */, Extension, M] = (M with Extension) | M
+  type PropGetter[D /* <: js.Object */, Props, T /* <: js.Object */, P] = (js.Function2[/* props */ P, /* meta */ Meta[D, T, MetaBase[D]], P | js.Array[P]]) | P | js.Array[P]
+  type Renderer[Props] = ComponentType[Props] | ReactNode
+  type Row[D /* <: js.Object */] = UseTableRowProps[D]
+  type RowPropGetter[D /* <: js.Object */] = PropGetter[D, TableRowProps, Anon_Row[D], Partial[TableRowProps]]
+  type SortByFn[D /* <: js.Object */] = js.Function3[/* rowA */ Row[D], /* rowB */ Row[D], /* columnId */ IdType[D], `0` | `1` | `-1`]
+  type StringKey[D] = Extract[String, String]
+  type TableBodyPropGetter[D /* <: js.Object */] = PropGetter[D, TableBodyProps, scala.Nothing, Partial[TableBodyProps]]
+  type TableBodyProps = TableCommonProps
+  type TableCellProps = TableKeyedProps
+  type TableDispatch[A] = js.Function1[/* action */ A, Unit]
+  type TableExpandedToggleProps = TableKeyedProps
+  type TableFooterGroupProps = TableKeyedProps
+  type TableFooterProps = TableKeyedProps
+  type TableHeaderGroupProps = TableKeyedProps
+  type TableHeaderProps = TableKeyedProps
+  type TablePropGetter[D /* <: js.Object */] = PropGetter[D, TableProps, scala.Nothing, Partial[TableProps]]
+  type TableProps = TableCommonProps
+  type TableRowProps = TableKeyedProps
+  type TableToggleAllRowsSelectedProps = TableToggleCommonProps
+  type TableToggleHideAllColumnProps = TableToggleCommonProps
+  type TableToggleRowsSelectedProps = TableToggleCommonProps
+  type UpdateHiddenColumns[D /* <: js.Object */] = js.Function1[/* oldHidden */ js.Array[IdType[D]], js.Array[IdType[D]]]
+  type UseExpandedOptions[D /* <: js.Object */] = Partial[Anon_AutoResetExpanded[D]]
+  type UseFiltersColumnOptions[D /* <: js.Object */] = Partial[Anon_DefaultCanFilter[D]]
+  type UseFiltersOptions[D /* <: js.Object */] = Partial[Anon_AutoResetFilters[D]]
+  type UseGlobalFiltersOptions[D /* <: js.Object */] = Partial[Anon_AutoResetGlobalFilter[D]]
+  type UseGroupByColumnOptions[D /* <: js.Object */] = Partial[Anon_Aggregate[D]]
+  type UseGroupByOptions[D /* <: js.Object */] = Partial[Anon_Aggregations[D]]
+  type UsePaginationOptions[D /* <: js.Object */] = Partial[Anon_AutoResetPage]
+  type UseRowSelectOptions[D /* <: js.Object */] = Partial[Anon_AutoResetSelectedRows[D]]
+  type UseRowStateLocalState[D /* <: js.Object */, T] = Record[IdType[D], T]
+  type UseRowStateOptions[D /* <: js.Object */] = Partial[Anon_AutoResetRowState[D]]
+  type UseRowUpdater[T] = T | (js.Function1[/* prev */ T, T])
+  type UseSortByColumnOptions[D /* <: js.Object */] = Partial[Anon_DefaultCanSort[D]]
+  type UseSortByOptions[D /* <: js.Object */] = Partial[Anon_AutoResetSortBy[D]]
+  type UseTableOptions[D /* <: js.Object */] = Anon_Columns[D] with Partial[Anon_Action[D]]
 }

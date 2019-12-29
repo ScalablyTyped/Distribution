@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ViewManagement.HandPreference.leftHanded
-import typings.winrtDashUwp.Windows.UI.ViewManagement.HandPreference.rightHanded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class WebPageFont protected () extends js.Object {
   val Creator: Double = js.native
   var FixedWidthFont: String = js.native
   var FixedWidthFontSize: Double = js.native
-  var `Office.WebPageFont_typekey`: WebPageFont = js.native
+  @JSName("Office.WebPageFont_typekey")
+  var OfficeDotWebPageFont_typekey: WebPageFont = js.native
   var ProportionalFont: String = js.native
   var ProportionalFontSize: Double = js.native
 }

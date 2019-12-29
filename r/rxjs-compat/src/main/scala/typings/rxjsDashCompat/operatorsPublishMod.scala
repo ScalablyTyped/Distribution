@@ -7,11 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operators/publish", JSImport.Namespace)
 @js.native
 object operatorsPublishMod extends js.Object {
+  def publish[T](): js.Any = js.native
   def publish[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
-  ): js.Any = js.native
-  def publish[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     selector: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
@@ -19,7 +16,6 @@ object operatorsPublishMod extends js.Object {
   ): js.Any = js.native
   @JSName("publish")
   def publish_TR[T, R](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     selector: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _

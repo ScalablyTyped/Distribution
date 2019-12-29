@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mendixmodelsdk.distCommonMod.common.ICallback
 import typings.mendixmodelsdk.distCommonMod.common.IErrorCallback
 import typings.mendixmodelsdk.distCommonMod.common.IVoidCallback
-import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.distSdkInternalIModelServerClientMod.IModelServerClient
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure
 import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.IAbstractUnitJson

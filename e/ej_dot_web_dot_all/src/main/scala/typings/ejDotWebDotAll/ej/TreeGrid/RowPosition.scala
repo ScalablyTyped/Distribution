@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.RowPosition.Above
-import typings.ejDotWebDotAll.ej.TreeGrid.RowPosition.Below
-import typings.ejDotWebDotAll.ej.TreeGrid.RowPosition.Bottom
-import typings.ejDotWebDotAll.ej.TreeGrid.RowPosition.Child
-import typings.ejDotWebDotAll.ej.TreeGrid.RowPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

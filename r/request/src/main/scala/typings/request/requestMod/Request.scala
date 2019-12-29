@@ -1,6 +1,5 @@
 package typings.request.requestMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.caseless.caselessMod.Httpified
 import typings.node.Buffer
 import typings.node.httpMod.Agent
@@ -11,12 +10,13 @@ import typings.node.streamMod.internal
 import typings.node.urlMod.Url
 import typings.request.Anon_Connect
 import typings.request.Anon_Href
-import typings.request.requestNumbers.`false`
-import typings.request.requestNumbers.`true`
+import typings.request.requestBooleans.`false`
+import typings.request.requestBooleans.`true`
 import typings.request.requestStrings.complete
 import typings.request.requestStrings.data
 import typings.request.requestStrings.error
 import typings.request.requestStrings.pipe
+import typings.request.requestStrings.request
 import typings.request.requestStrings.response
 import typings.request.requestStrings.socket
 import typings.std.Error
@@ -55,7 +55,7 @@ trait Request
   var method: String = js.native
   var passphrase: js.UndefOr[String] = js.native
   var path: String = js.native
-  var pool: `false` | (StringDictionary[Agent | typings.node.httpsMod.Agent]) = js.native
+  var pool: PoolOptions = js.native
   var port: js.UndefOr[Double] = js.native
   var postambleCRLF: js.UndefOr[Boolean] = js.native
   var preambleCRLF: js.UndefOr[Boolean] = js.native
@@ -112,10 +112,7 @@ trait Request
   @JSName("on")
   def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("on")
-  def on_request(
-    event: typings.request.requestStrings.request,
-    listener: js.Function1[/* req */ ClientRequest, Unit]
-  ): this.type = js.native
+  def on_request(event: request, listener: js.Function1[/* req */ ClientRequest, Unit]): this.type = js.native
   @JSName("on")
   def on_response(event: response, listener: js.Function1[/* resp */ Response, Unit]): this.type = js.native
   @JSName("on")

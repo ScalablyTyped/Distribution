@@ -1,6 +1,6 @@
 package typings.shelljs.shelljsMod
 
-import typings.shelljs.shelljsStrings.`+N`
+import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
 import typings.shelljs.shelljsStrings.`-c`
 import scala.scalajs.js
@@ -28,7 +28,7 @@ trait DirsFunction extends js.Object {
   	 *                printed by dirs when invoked without options), starting with zero.
   	 * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
   	 */
-  def apply(options: `+N`): ShellString = js.native
+  def apply(options: PlussignN): ShellString = js.native
   /**
   	 * Displays the list of currently remembered directories.
   	 *

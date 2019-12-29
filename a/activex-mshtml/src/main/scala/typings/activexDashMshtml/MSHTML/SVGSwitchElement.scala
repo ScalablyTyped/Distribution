@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGSwitchElement")
 @js.native
 class SVGSwitchElement protected () extends js.Object {
-  var `MSHTML.SVGSwitchElement_typekey`: SVGSwitchElement = js.native
+  @JSName("MSHTML.SVGSwitchElement_typekey")
+  var MSHTMLDotSVGSwitchElement_typekey: SVGSwitchElement = js.native
   val className: SVGAnimatedString = js.native
   val externalResourcesRequired: SVGAnimatedBoolean = js.native
   val farthestViewportElement: ISVGElement = js.native

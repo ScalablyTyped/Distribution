@@ -1,6 +1,5 @@
 package typings.node.workerUnderscoreThreadsMod
 
-import typings.node.Error
 import typings.node.eventsMod.EventEmitter
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.exit
@@ -10,6 +9,7 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.node.vmMod.Context
 import typings.std.ArrayBuffer
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +17,9 @@ import scala.scalajs.js.annotation._
 @JSImport("worker_threads", "Worker")
 @js.native
 class Worker protected () extends EventEmitter {
-  def this(filename: java.lang.String) = this()
-  def this(filename: java.lang.String, options: WorkerOptions) = this()
+  def this(filename: String) = this()
+  def this(filename: String, options: WorkerOptions) = this()
+  val resourceLimits: js.UndefOr[ResourceLimits] = js.native
   val stderr: Readable = js.native
   val stdin: Writable | Null = js.native
   val stdout: Readable = js.native

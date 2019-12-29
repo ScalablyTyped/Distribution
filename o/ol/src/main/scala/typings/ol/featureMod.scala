@@ -2,11 +2,8 @@ package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.eventsMod.EventsKey
-import typings.ol.featureMod.Feature
-import typings.ol.featureMod.FeatureClass
-import typings.ol.featureMod.FeatureLike
 import typings.ol.objectMod.ObjectEvent
-import typings.ol.olStrings.`change:geometry`
+import typings.ol.olStrings.changeColongeometry
 import typings.ol.styleStyleMod.StyleFunction
 import typings.ol.styleStyleMod.StyleLike
 import scala.scalajs.js
@@ -27,9 +24,9 @@ object featureMod extends js.Object {
     def getStyle(): StyleLike | Null = js.native
     def getStyleFunction(): js.UndefOr[StyleFunction] = js.native
     @JSName("on")
-    def on_changegeometry(`type`: `change:geometry`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+    def on_changegeometry(`type`: changeColongeometry, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
     @JSName("once")
-    def once_changegeometry(`type`: `change:geometry`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+    def once_changegeometry(`type`: changeColongeometry, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
     def setGeometry(): Unit = js.native
     def setGeometry(geometry: typings.ol.geomGeometryMod.default): Unit = js.native
     def setGeometryName(name: String): Unit = js.native
@@ -39,7 +36,7 @@ object featureMod extends js.Object {
     def setStyle(): Unit = js.native
     def setStyle(style: StyleLike): Unit = js.native
     @JSName("un")
-    def un_changegeometry(`type`: `change:geometry`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+    def un_changegeometry(`type`: changeColongeometry, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

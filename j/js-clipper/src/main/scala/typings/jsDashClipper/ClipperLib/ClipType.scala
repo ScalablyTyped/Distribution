@@ -1,10 +1,6 @@
 package typings.jsDashClipper.ClipperLib
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsDashClipper.ClipperLib.ClipType.ctDifference
-import typings.jsDashClipper.ClipperLib.ClipType.ctIntersection
-import typings.jsDashClipper.ClipperLib.ClipType.ctUnion
-import typings.jsDashClipper.ClipperLib.ClipType.ctXor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

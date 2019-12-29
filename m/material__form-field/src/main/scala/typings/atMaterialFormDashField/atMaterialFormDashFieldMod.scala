@@ -1,7 +1,6 @@
 package typings.atMaterialFormDashField
 
 import typings.atMaterialFormDashField.adapterMod.MDCFormFieldAdapter
-import typings.atMaterialFormDashField.atMaterialFormDashFieldMod.MDCFormField
 import typings.atMaterialFormDashField.foundationMod.default
 import typings.atMaterialSelectionDashControl.atMaterialSelectionDashControlMod.MDCSelectionControl
 import typings.std.Element

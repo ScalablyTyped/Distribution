@@ -30,19 +30,19 @@ object eonasdanDashBootstrapDashDatetimepickerStrings {
   sealed trait default extends ToolbarPlacement
   
   @js.native
-  sealed trait dpDOTchange extends js.Object
+  sealed trait dpDotchange extends js.Object
   
   @js.native
-  sealed trait dpDOTerror extends js.Object
+  sealed trait dpDoterror extends js.Object
   
   @js.native
-  sealed trait dpDOThide extends js.Object
+  sealed trait dpDothide extends js.Object
   
   @js.native
-  sealed trait dpDOTshow extends js.Object
+  sealed trait dpDotshow extends js.Object
   
   @js.native
-  sealed trait dpDOTupdate extends js.Object
+  sealed trait dpDotupdate extends js.Object
   
   @js.native
   sealed trait hour extends UseCurrent
@@ -86,15 +86,15 @@ object eonasdanDashBootstrapDashDatetimepickerStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def dpDOTchange: dpDOTchange = "dp.change".asInstanceOf[dpDOTchange]
+  def dpDotchange: dpDotchange = "dp.change".asInstanceOf[dpDotchange]
   @scala.inline
-  def dpDOTerror: dpDOTerror = "dp.error".asInstanceOf[dpDOTerror]
+  def dpDoterror: dpDoterror = "dp.error".asInstanceOf[dpDoterror]
   @scala.inline
-  def dpDOThide: dpDOThide = "dp.hide".asInstanceOf[dpDOThide]
+  def dpDothide: dpDothide = "dp.hide".asInstanceOf[dpDothide]
   @scala.inline
-  def dpDOTshow: dpDOTshow = "dp.show".asInstanceOf[dpDOTshow]
+  def dpDotshow: dpDotshow = "dp.show".asInstanceOf[dpDotshow]
   @scala.inline
-  def dpDOTupdate: dpDOTupdate = "dp.update".asInstanceOf[dpDOTupdate]
+  def dpDotupdate: dpDotupdate = "dp.update".asInstanceOf[dpDotupdate]
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline

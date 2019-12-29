@@ -1,22 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatAction.Ban
-import typings.steamDashClient.steamDashClientMod.EChatAction.CloseChat
-import typings.steamDashClient.steamDashClientMod.EChatAction.EndVoiceSpeak
-import typings.steamDashClient.steamDashClientMod.EChatAction.InviteChat
-import typings.steamDashClient.steamDashClientMod.EChatAction.Kick
-import typings.steamDashClient.steamDashClientMod.EChatAction.LockChat
-import typings.steamDashClient.steamDashClientMod.EChatAction.SetInvisibleToFriends
-import typings.steamDashClient.steamDashClientMod.EChatAction.SetJoinable
-import typings.steamDashClient.steamDashClientMod.EChatAction.SetModerated
-import typings.steamDashClient.steamDashClientMod.EChatAction.SetOwner
-import typings.steamDashClient.steamDashClientMod.EChatAction.SetUnjoinable
-import typings.steamDashClient.steamDashClientMod.EChatAction.SetUnmoderated
-import typings.steamDashClient.steamDashClientMod.EChatAction.SetVisibleToFriends
-import typings.steamDashClient.steamDashClientMod.EChatAction.StartVoiceSpeak
-import typings.steamDashClient.steamDashClientMod.EChatAction.UnBan
-import typings.steamDashClient.steamDashClientMod.EChatAction.UnlockChat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

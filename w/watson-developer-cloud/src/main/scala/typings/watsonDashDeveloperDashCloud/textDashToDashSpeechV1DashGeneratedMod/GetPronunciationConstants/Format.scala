@@ -1,8 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Format.IBM
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Format.IPA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

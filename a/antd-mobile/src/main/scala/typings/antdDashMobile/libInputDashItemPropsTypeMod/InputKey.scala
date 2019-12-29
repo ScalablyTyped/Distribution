@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.antdDashMobile.antdDashMobileStrings.`7`
   - typings.antdDashMobile.antdDashMobileStrings.`8`
   - typings.antdDashMobile.antdDashMobileStrings.`9`
-  - typings.antdDashMobile.antdDashMobileStrings.DOT
+  - typings.antdDashMobile.antdDashMobileStrings.Dot
 */
 trait InputKey extends js.Object
 
@@ -41,7 +41,7 @@ object InputKey {
   @scala.inline
   def `9`: typings.antdDashMobile.antdDashMobileStrings.`9` = this.cast("9")
   @scala.inline
-  def DOT: typings.antdDashMobile.antdDashMobileStrings.DOT = this.cast(".")
+  def Dot: typings.antdDashMobile.antdDashMobileStrings.Dot = this.cast(".")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

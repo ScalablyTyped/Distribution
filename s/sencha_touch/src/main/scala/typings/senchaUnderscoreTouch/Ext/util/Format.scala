@@ -15,7 +15,7 @@ class Format () extends js.Object
 @js.native
 object Format extends js.Object {
   /** [Property] (String) */
-  var defaultDateFormat: java.lang.String = js.native
+  var defaultDateFormat: String = js.native
   /** [Property] (Array) */
   var potentialUndefinedKeys: Array = js.native
   /** [Property] (Ext.Class) */
@@ -43,9 +43,9 @@ object Format extends js.Object {
   		* @param format String Any valid date format string.
   		* @returns String The formatted date string.
   		*/
-  def date(): java.lang.String = js.native
-  def date(value: js.Any): java.lang.String = js.native
-  def date(value: js.Any, format: java.lang.String): java.lang.String = js.native
+  def date(): String = js.native
+  def date(value: js.Any): String = js.native
+  def date(value: js.Any, format: String): String = js.native
   /** [Method]  */
   def destroy(): Unit = js.native
   /** [Method] Truncate a string and add an ellipsis  to the end if it exceeds the specified length
@@ -54,46 +54,46 @@ object Format extends js.Object {
   		* @param word Boolean True to try to find a common word break.
   		* @returns String The converted text.
   		*/
-  def ellipsis(): java.lang.String = js.native
-  def ellipsis(value: java.lang.String): java.lang.String = js.native
-  def ellipsis(value: java.lang.String, length: Double): java.lang.String = js.native
-  def ellipsis(value: java.lang.String, length: Double, word: Boolean): java.lang.String = js.native
+  def ellipsis(): String = js.native
+  def ellipsis(value: String): String = js.native
+  def ellipsis(value: String, length: Double): String = js.native
+  def ellipsis(value: String, length: Double, word: Boolean): String = js.native
   /** [Method] Escapes the passed string for  and
   		* @param string String The string to escape.
   		* @returns String The escaped string.
   		*/
-  def escape(): java.lang.String = js.native
-  def escape(string: java.lang.String): java.lang.String = js.native
+  def escape(): String = js.native
+  def escape(string: String): String = js.native
   /** [Method] Escapes the passed string for use in a regular expression
   		* @param str String
   		* @returns String
   		*/
-  def escapeRegex(): java.lang.String = js.native
-  def escapeRegex(str: java.lang.String): java.lang.String = js.native
+  def escapeRegex(): String = js.native
+  def escapeRegex(str: String): String = js.native
   /** [Method] Allows you to define a tokenized string and pass an arbitrary number of arguments to replace the tokens
   		* @param string String The tokenized string to be formatted.
   		* @param values String... The values to replace token {0}, {1}, etc.
   		* @returns String The formatted string.
   		*/
-  def format(string: java.lang.String, values: js.Any*): java.lang.String = js.native
+  def format(string: String, values: js.Any*): String = js.native
   /** [Method] Returns the initial configuration passed to constructor
   		* @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Convert certain characters  amp lt and from their HTML character equivalents
   		* @param value String The string to decode.
   		* @returns String The decoded text.
   		*/
-  def htmlDecode(): java.lang.String = js.native
-  def htmlDecode(value: java.lang.String): java.lang.String = js.native
+  def htmlDecode(): String = js.native
+  def htmlDecode(value: String): String = js.native
   /** [Method] Convert certain characters  amp lt and to their HTML character equivalents for literal display in web pages
   		* @param value String The string to encode.
   		* @returns String The encoded text.
   		*/
-  def htmlEncode(): java.lang.String = js.native
-  def htmlEncode(value: java.lang.String): java.lang.String = js.native
+  def htmlEncode(): String = js.native
+  def htmlEncode(value: String): String = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -106,10 +106,10 @@ object Format extends js.Object {
   		* @param char String The character with which to pad the original string.
   		* @returns String The padded string.
   		*/
-  def leftPad(): java.lang.String = js.native
-  def leftPad(string: java.lang.String): java.lang.String = js.native
-  def leftPad(string: java.lang.String, size: Double): java.lang.String = js.native
-  def leftPad(string: java.lang.String, size: Double, char: java.lang.String): java.lang.String = js.native
+  def leftPad(): String = js.native
+  def leftPad(string: String): String = js.native
+  def leftPad(string: String, size: Double): String = js.native
+  def leftPad(string: String, size: Double, char: String): String = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
   		*/
@@ -120,15 +120,15 @@ object Format extends js.Object {
   		* @param other String The new value to use if the string already equals the first value passed in
   		* @returns String The new value
   		*/
-  def toggle(): java.lang.String = js.native
-  def toggle(string: java.lang.String): java.lang.String = js.native
-  def toggle(string: java.lang.String, value: java.lang.String): java.lang.String = js.native
-  def toggle(string: java.lang.String, value: java.lang.String, other: java.lang.String): java.lang.String = js.native
+  def toggle(): String = js.native
+  def toggle(string: String): String = js.native
+  def toggle(string: String, value: String): String = js.native
+  def toggle(string: String, value: String, other: String): String = js.native
   /** [Method] Trims whitespace from either end of a string leaving spaces within the string intact
   		* @param string String The string to escape
   		* @returns String The trimmed string
   		*/
-  def trim(): java.lang.String = js.native
-  def trim(string: java.lang.String): java.lang.String = js.native
+  def trim(): String = js.native
+  def trim(string: String): String = js.native
 }
 

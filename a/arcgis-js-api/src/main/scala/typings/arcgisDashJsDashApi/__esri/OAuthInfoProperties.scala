@@ -75,6 +75,14 @@ trait OAuthInfoProperties extends js.Object {
     * @default "https://www.arcgis.com"
     */
   var portalUrl: js.UndefOr[String] = js.undefined
+  /**
+    * Set this property to `true` when [popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popup) is `false` in order to have the window's location hash value restored after signing in.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#preserveUrlHash)
+    *
+    * @default false
+    */
+  var preserveUrlHash: js.UndefOr[Boolean] = js.undefined
 }
 
 object OAuthInfoProperties {
@@ -88,7 +96,8 @@ object OAuthInfoProperties {
     popup: js.UndefOr[Boolean] = js.undefined,
     popupCallbackUrl: String = null,
     popupWindowFeatures: String = null,
-    portalUrl: String = null
+    portalUrl: String = null,
+    preserveUrlHash: js.UndefOr[Boolean] = js.undefined
   ): OAuthInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
@@ -100,6 +109,7 @@ object OAuthInfoProperties {
     if (popupCallbackUrl != null) __obj.updateDynamic("popupCallbackUrl")(popupCallbackUrl.asInstanceOf[js.Any])
     if (popupWindowFeatures != null) __obj.updateDynamic("popupWindowFeatures")(popupWindowFeatures.asInstanceOf[js.Any])
     if (portalUrl != null) __obj.updateDynamic("portalUrl")(portalUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveUrlHash)) __obj.updateDynamic("preserveUrlHash")(preserveUrlHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthInfoProperties]
   }
 }

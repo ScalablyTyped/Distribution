@@ -1,9 +1,5 @@
 package typings.basicauthDashMiddleware
 
-import typings.basicauthDashMiddleware.basicauthDashMiddlewareMod.CheckFunction
-import typings.basicauthDashMiddleware.basicauthDashMiddlewareMod.checkFunctionCallback
-import typings.basicauthDashMiddleware.basicauthDashMiddlewareMod.checkFunctionPromise
-import typings.basicauthDashMiddleware.basicauthDashMiddlewareMod.checkFunctionSync
 import typings.express.expressMod.RequestHandler
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.std.Error

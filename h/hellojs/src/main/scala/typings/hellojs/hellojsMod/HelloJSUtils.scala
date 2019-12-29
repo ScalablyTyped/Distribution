@@ -1,7 +1,7 @@
 package typings.hellojs.hellojsMod
 
 import typings.hellojs.Anon_Code
-import typings.hellojs.hellojsNumbers.`false`
+import typings.hellojs.hellojsBooleans.`false`
 import typings.std.Blob
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement

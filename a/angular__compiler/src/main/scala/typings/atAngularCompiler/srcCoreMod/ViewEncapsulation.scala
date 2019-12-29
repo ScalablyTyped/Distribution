@@ -1,10 +1,6 @@
 package typings.atAngularCompiler.srcCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcCoreMod.ViewEncapsulation.Emulated
-import typings.atAngularCompiler.srcCoreMod.ViewEncapsulation.Native
-import typings.atAngularCompiler.srcCoreMod.ViewEncapsulation.None
-import typings.atAngularCompiler.srcCoreMod.ViewEncapsulation.ShadowDom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

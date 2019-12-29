@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NumberFormat extends js.Object {
-  def format(value: Double): java.lang.String
+  def format(value: Double): String
   def resolvedOptions(): ResolvedNumberFormatOptions
 }
 
@@ -17,23 +17,20 @@ trait NumberFormat extends js.Object {
 @js.native
 object NumberFormat
   extends Instantiable0[NumberFormat]
+     with Instantiable1[(/* locales */ Array[String]) | (/* locales */ String), NumberFormat]
      with Instantiable2[
-      (/* locales */ Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      (/* locales */ Array[String]) | (/* locales */ String), 
       /* options */ NumberFormatOptions, 
-      NumberFormat
-    ]
-     with Instantiable1[
-      (/* locales */ Array[java.lang.String]) | (/* locales */ java.lang.String), 
       NumberFormat
     ] {
   def apply(): NumberFormat = js.native
-  def apply(locales: java.lang.String): NumberFormat = js.native
-  def apply(locales: java.lang.String, options: NumberFormatOptions): NumberFormat = js.native
-  def apply(locales: Array[java.lang.String]): NumberFormat = js.native
-  def apply(locales: Array[java.lang.String], options: NumberFormatOptions): NumberFormat = js.native
-  def supportedLocalesOf(locales: java.lang.String): Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: java.lang.String, options: NumberFormatOptions): Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: Array[java.lang.String]): Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: Array[java.lang.String], options: NumberFormatOptions): Array[java.lang.String] = js.native
+  def apply(locales: String): NumberFormat = js.native
+  def apply(locales: String, options: NumberFormatOptions): NumberFormat = js.native
+  def apply(locales: Array[String]): NumberFormat = js.native
+  def apply(locales: Array[String], options: NumberFormatOptions): NumberFormat = js.native
+  def supportedLocalesOf(locales: String): Array[String] = js.native
+  def supportedLocalesOf(locales: String, options: NumberFormatOptions): Array[String] = js.native
+  def supportedLocalesOf(locales: Array[String]): Array[String] = js.native
+  def supportedLocalesOf(locales: Array[String], options: NumberFormatOptions): Array[String] = js.native
 }
 

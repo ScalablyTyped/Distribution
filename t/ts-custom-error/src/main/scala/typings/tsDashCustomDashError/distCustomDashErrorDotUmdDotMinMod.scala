@@ -9,10 +9,6 @@ import typings.std.ReferenceErrorConstructor
 import typings.std.SyntaxErrorConstructor
 import typings.std.TypeErrorConstructor
 import typings.std.URIErrorConstructor
-import typings.tsDashCustomDashError.distCustomDashErrorDotUmdDotMinMod.CustomErrorConstructor
-import typings.tsDashCustomDashError.distCustomDashErrorDotUmdDotMinMod.CustomErrorInterface
-import typings.tsDashCustomDashError.distCustomDashErrorDotUmdDotMinMod.CustomErrorProperties
-import typings.tsDashCustomDashError.distCustomDashErrorDotUmdDotMinMod.GenericErrorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.braintree.braintreeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.braintree.braintreeMod.TransactionRequestSource.moto
-import typings.braintree.braintreeMod.TransactionRequestSource.recurring
-import typings.braintree.braintreeMod.TransactionRequestSource.recurring_first
-import typings.braintree.braintreeMod.TransactionRequestSource.unscheduled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

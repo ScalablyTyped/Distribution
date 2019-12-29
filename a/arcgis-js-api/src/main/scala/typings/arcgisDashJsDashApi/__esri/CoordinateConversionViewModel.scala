@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.capture
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.live
@@ -80,7 +79,7 @@ trait CoordinateConversionViewModel
     * @param format The format that describes how the point should be converted.
     *
     */
-  def convert(point: Point, format: Format): IPromise[Position] = js.native
+  def convert(point: Point, format: Format): js.Promise[Position] = js.native
   /**
     * Attempt to convert a string into a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).  The format of the string must be specified.  A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of available formats can be obtained from the [formats](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#formats) property.
     *
@@ -90,7 +89,7 @@ trait CoordinateConversionViewModel
     * @param format Specifies the format of the input coordinate.
     *
     */
-  def reverseConvert(coordinate: String, format: Format): IPromise[Point] = js.native
+  def reverseConvert(coordinate: String, format: Format): js.Promise[Point] = js.native
   /**
     * Update the input conversions based on the input point.
     *
@@ -100,7 +99,7 @@ trait CoordinateConversionViewModel
     * @param conversions An array of [Conversions](esri-widgets-CoordinateConversion-support-Conversion.html) to be updated.
     *
     */
-  def updateConversions(location: Point, conversions: js.Array[Conversion]): IPromise[js.Array[Conversion]] = js.native
+  def updateConversions(location: Point, conversions: js.Array[Conversion]): js.Promise[js.Array[Conversion]] = js.native
 }
 
 @JSGlobal("__esri.CoordinateConversionViewModel")

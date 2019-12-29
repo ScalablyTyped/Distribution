@@ -1,8 +1,6 @@
 package typings.clearbladejsDashNode.clearbladejsDashNodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QuerySortDirections.QUERY_SORT_ASCENDING
-import typings.clearbladejsDashNode.clearbladejsDashNodeMod.QuerySortDirections.QUERY_SORT_DESCENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

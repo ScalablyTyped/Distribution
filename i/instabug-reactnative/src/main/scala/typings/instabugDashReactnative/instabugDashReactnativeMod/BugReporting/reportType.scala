@@ -1,9 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.reportType.bug
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.reportType.feedback
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.reportType.question
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -19,7 +19,7 @@ trait OverflowCloseEventArgs extends js.Object {
   var currentTarget: js.UndefOr[js.Any] = js.undefined
   /** returns the Toolbar model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Toolbar.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -32,7 +32,7 @@ object OverflowCloseEventArgs {
     clientX: Int | Double = null,
     clientY: Int | Double = null,
     currentTarget: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Toolbar.Model = null,
+    model: Model = null,
     `type`: String = null
   ): OverflowCloseEventArgs = {
     val __obj = js.Dynamic.literal()

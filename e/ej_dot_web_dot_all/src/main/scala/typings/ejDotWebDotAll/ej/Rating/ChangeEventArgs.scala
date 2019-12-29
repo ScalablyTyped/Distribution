@@ -13,7 +13,7 @@ trait ChangeEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the rating model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Rating.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object ChangeEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Rating.Model = null,
+    model: Model = null,
     `type`: String = null,
     value: Int | Double = null
   ): ChangeEventArgs = {

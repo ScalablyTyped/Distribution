@@ -1,12 +1,6 @@
 package typings.kiiDashCloudDashSdk.KiiCloud
 
 import org.scalablytyped.runtime.TopLevel
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSite.CN
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSite.CN3
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSite.EU
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSite.JP
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSite.SG
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSite.US
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

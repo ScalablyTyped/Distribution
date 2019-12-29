@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait victoryProps {
   @scala.inline
+  def FlyoutProps: typings.victory.victoryMod.FlyoutProps.type = typings.victory.victoryMod.FlyoutProps
+  type FlyoutProps = typings.victory.victoryMod.FlyoutProps
+  @scala.inline
   def VictoryAnimationProps: typings.victory.victoryMod.VictoryAnimationProps.type = typings.victory.victoryMod.VictoryAnimationProps
   type VictoryAnimationProps = typings.victory.victoryMod.VictoryAnimationProps
   @scala.inline
@@ -26,6 +29,9 @@ trait victoryProps {
   @scala.inline
   def VictoryChartProps: typings.victory.victoryMod.VictoryChartProps.type = typings.victory.victoryMod.VictoryChartProps
   type VictoryChartProps = typings.victory.victoryMod.VictoryChartProps
+  @scala.inline
+  def VictoryClipContainerProps: typings.victory.victoryMod.VictoryClipContainerProps.type = typings.victory.victoryMod.VictoryClipContainerProps
+  type VictoryClipContainerProps = typings.victory.victoryMod.VictoryClipContainerProps
   @scala.inline
   def VictoryContainerProps: typings.victory.victoryMod.VictoryContainerProps.type = typings.victory.victoryMod.VictoryContainerProps
   type VictoryContainerProps = typings.victory.victoryMod.VictoryContainerProps

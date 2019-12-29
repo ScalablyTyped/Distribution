@@ -2,20 +2,20 @@ package typings.extjs.Ext.data.association
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
+import typings.extjs.Ext.data.reader.IReader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IHasOne
-  extends typings.extjs.Ext.data.association.IAssociation {
+trait IHasOne extends IAssociation {
   /** [Config Option] (String) */
-  var foreignKey: js.UndefOr[java.lang.String] = js.undefined
+  var foreignKey: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var getterName: js.UndefOr[java.lang.String] = js.undefined
+  var getterName: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var setterName: js.UndefOr[java.lang.String] = js.undefined
+  var setterName: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 
 object IHasOne {
@@ -23,32 +23,32 @@ object IHasOne {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    associatedModel: java.lang.String = null,
-    associatedName: java.lang.String = null,
-    associationKey: java.lang.String = null,
+    associatedModel: String = null,
+    associatedName: String = null,
+    associationKey: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    foreignKey: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getReader: () => typings.extjs.Ext.data.reader.IReader = null,
-    getterName: java.lang.String = null,
+    extend: String = null,
+    foreignKey: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getReader: () => IReader = null,
+    getterName: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IHasOne = null,
     mixins: js.Any = null,
-    model: java.lang.String = null,
-    ownerModel: java.lang.String = null,
-    ownerName: java.lang.String = null,
-    primaryKey: java.lang.String = null,
-    reader: typings.extjs.Ext.data.reader.IReader = null,
+    model: String = null,
+    ownerModel: String = null,
+    ownerName: String = null,
+    primaryKey: String = null,
+    reader: IReader = null,
     requires: Array = null,
     self: IClass = null,
-    setterName: java.lang.String = null,
+    setterName: String = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    `type`: java.lang.String = null,
+    `type`: String = null,
     uses: Array = null
   ): IHasOne = {
     val __obj = js.Dynamic.literal()

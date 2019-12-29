@@ -1,8 +1,6 @@
 package typings.reactDashTransitionDashGroup.switchTransitionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashTransitionDashGroup.switchTransitionMod.modes.in
-import typings.reactDashTransitionDashGroup.switchTransitionMod.modes.out
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

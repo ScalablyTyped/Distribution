@@ -1,10 +1,6 @@
 package typings.atGoogleDashCloudStorage.buildSrcFileMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.delete
-import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.read
-import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.resumable
-import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

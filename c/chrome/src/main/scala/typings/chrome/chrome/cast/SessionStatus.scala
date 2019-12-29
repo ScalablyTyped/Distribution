@@ -1,9 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.SessionStatus.CONNECTED
-import typings.chrome.chrome.cast.SessionStatus.DISCONNECTED
-import typings.chrome.chrome.cast.SessionStatus.STOPPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,31 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListenResponse extends js.Object {
-  var documentChange: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentChange
-  ] = js.undefined
-  var documentDelete: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentDelete
-  ] = js.undefined
-  var documentRemove: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentRemove
-  ] = js.undefined
-  var filter: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ExistenceFilter
-  ] = js.undefined
-  var targetChange: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.TargetChange
-  ] = js.undefined
+  var documentChange: js.UndefOr[DocumentChange] = js.undefined
+  var documentDelete: js.UndefOr[DocumentDelete] = js.undefined
+  var documentRemove: js.UndefOr[DocumentRemove] = js.undefined
+  var filter: js.UndefOr[ExistenceFilter] = js.undefined
+  var targetChange: js.UndefOr[TargetChange] = js.undefined
 }
 
 object ListenResponse {
   @scala.inline
   def apply(
-    documentChange: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentChange = null,
-    documentDelete: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentDelete = null,
-    documentRemove: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentRemove = null,
-    filter: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ExistenceFilter = null,
-    targetChange: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.TargetChange = null
+    documentChange: DocumentChange = null,
+    documentDelete: DocumentDelete = null,
+    documentRemove: DocumentRemove = null,
+    filter: ExistenceFilter = null,
+    targetChange: TargetChange = null
   ): ListenResponse = {
     val __obj = js.Dynamic.literal()
     if (documentChange != null) __obj.updateDynamic("documentChange")(documentChange.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ object libSrcTypesExtendedRequestMod extends js.Object {
   trait ExtendedRequest
     extends Request[ParamsDictionary, js.Any, js.Any] {
     @JSName("$$tokeninfo")
-    var $$tokeninfo: js.UndefOr[Anon_Scope] = js.native
+    var DollarDollartokeninfo: js.UndefOr[Anon_Scope] = js.native
   }
   
 }

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.atsc
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.scte20
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

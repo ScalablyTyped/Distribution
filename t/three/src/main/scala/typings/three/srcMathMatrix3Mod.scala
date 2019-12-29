@@ -2,8 +2,6 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
-import typings.three.srcMathMatrix3Mod.Matrix
-import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathVector3Mod.Vector3
 import scala.scalajs.js

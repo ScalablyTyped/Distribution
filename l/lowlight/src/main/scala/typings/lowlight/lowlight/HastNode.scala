@@ -23,23 +23,8 @@ trait HastNode extends js.Object
 
 object HastNode {
   @scala.inline
-  def Element(
-    children: js.Array[Node],
-    properties: Properties,
-    tagName: String,
-    `type`: element,
-    data: Data = null,
-    position: Location = null
-  ): HastNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.asInstanceOf[HastNode]
-  }
-  @scala.inline
-  def Root(children: js.Array[Node], `type`: root, data: Data = null, position: Location = null): HastNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def Text(`type`: String, value: String, data: Data = null, position: Location = null): HastNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
@@ -63,8 +48,15 @@ object HastNode {
     __obj.asInstanceOf[HastNode]
   }
   @scala.inline
-  def Text(`type`: String, value: String, data: Data = null, position: Location = null): HastNode = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def Element(
+    children: js.Array[Node],
+    properties: Properties,
+    tagName: String,
+    `type`: element,
+    data: Data = null,
+    position: Location = null
+  ): HastNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
@@ -73,6 +65,14 @@ object HastNode {
   @scala.inline
   def Comment(`type`: comment, value: String, data: Data = null, position: Location = null): HastNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HastNode]
+  }
+  @scala.inline
+  def Root(children: js.Array[Node], `type`: root, data: Data = null, position: Location = null): HastNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

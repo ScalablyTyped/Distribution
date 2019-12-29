@@ -1,6 +1,6 @@
 package typings.shelljs.shelljsMod
 
-import typings.shelljs.shelljsStrings.`+N`
+import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ trait PushDirFunction extends js.Object {
   	 *            starting with zero) to the top of the list by rotating the stack.
   	 * @return    Returns an array of paths in the stack.
   	 */
-  def apply(dir: `+N`): ShellArray = js.native
+  def apply(dir: PlussignN): ShellArray = js.native
   /**
   	 * Saves the current directory on the top of the directory stack and then cd to dir.
   	 * With no arguments, `pushd` exchanges the top two directories.
@@ -67,7 +67,7 @@ trait PushDirFunction extends js.Object {
   	 *                starting with zero) to the top of the list by rotating the stack.
   	 * @return        Returns an array of paths in the stack.
   	 */
-  def apply(options: String, dir: `+N`): ShellArray = js.native
+  def apply(options: String, dir: PlussignN): ShellArray = js.native
   /**
   	 * Saves the current directory on the top of the directory stack and then cd to dir.
   	 * With no arguments, `pushd` exchanges the top two directories.

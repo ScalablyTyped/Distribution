@@ -1,24 +1,6 @@
 package typings.xmlDashCore.xmlDashCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Attribute
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.CDATA
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Comment
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Document
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.DocumentFragment
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.DocumentType
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Element
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.EndElement
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.EndEntity
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Entity
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.EntityReference
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.None
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Notation
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.ProcessingInstruction
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.SignificantWhitespace
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Text
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.Whitespace
-import typings.xmlDashCore.xmlDashCoreMod.XmlNodeType.XmlDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

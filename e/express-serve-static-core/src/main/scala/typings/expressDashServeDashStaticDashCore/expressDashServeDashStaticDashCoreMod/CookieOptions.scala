@@ -1,5 +1,8 @@
 package typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod
 
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.lax
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.none
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.strict
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +15,7 @@ trait CookieOptions extends js.Object {
   var httpOnly: js.UndefOr[Boolean] = js.undefined
   var maxAge: js.UndefOr[Double] = js.undefined
   var path: js.UndefOr[String] = js.undefined
-  var sameSite: js.UndefOr[Boolean | String] = js.undefined
+  var sameSite: js.UndefOr[Boolean | lax | strict | none] = js.undefined
   var secure: js.UndefOr[Boolean] = js.undefined
   var signed: js.UndefOr[Boolean] = js.undefined
 }
@@ -26,7 +29,7 @@ object CookieOptions {
     httpOnly: js.UndefOr[Boolean] = js.undefined,
     maxAge: Int | Double = null,
     path: String = null,
-    sameSite: Boolean | String = null,
+    sameSite: Boolean | lax | strict | none = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     signed: js.UndefOr[Boolean] = js.undefined
   ): CookieOptions = {

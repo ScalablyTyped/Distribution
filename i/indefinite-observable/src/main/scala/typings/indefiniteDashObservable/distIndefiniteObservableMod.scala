@@ -1,6 +1,5 @@
 package typings.indefiniteDashObservable
 
-import typings.indefiniteDashObservable.distIndefiniteObservableMod.IndefiniteObservable
 import typings.indefiniteDashObservable.distTypesMod.Connect
 import typings.indefiniteDashObservable.distTypesMod.Observable
 import typings.indefiniteDashObservable.distTypesMod.ObserverOrNext

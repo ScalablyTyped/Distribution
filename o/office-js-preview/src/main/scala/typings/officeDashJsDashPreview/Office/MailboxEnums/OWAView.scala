@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.OneColumn
-import typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.ThreeColumns
-import typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.TwoColumns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

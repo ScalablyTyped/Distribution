@@ -1,6 +1,5 @@
 package typings.atEmberApplication
 
-import typings.atEmberApplication.dashPrivateDefaultDashResolverMod.DefaultResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

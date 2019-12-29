@@ -28,7 +28,8 @@ class OptionButton protected () extends js.Object {
   var ForeColor: Double = js.native
   var GroupName: String = js.native
   var Locked: Boolean = js.native
-  var `MSForms.OptionButton_typekey`: OptionButton = js.native
+  @JSName("MSForms.OptionButton_typekey")
+  var MSFormsDotOptionButton_typekey: OptionButton = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var MultiSelect: fmMultiSelect = js.native

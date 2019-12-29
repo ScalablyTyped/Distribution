@@ -1,19 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.ProjectProjectFields.CurrencyDigits
-import typings.officeDashJs.Office.ProjectProjectFields.CurrencySymbol
-import typings.officeDashJs.Office.ProjectProjectFields.CurrencySymbolPosition
-import typings.officeDashJs.Office.ProjectProjectFields.DurationUnits
-import typings.officeDashJs.Office.ProjectProjectFields.Finish
-import typings.officeDashJs.Office.ProjectProjectFields.GUID
-import typings.officeDashJs.Office.ProjectProjectFields.ProjectServerUrl
-import typings.officeDashJs.Office.ProjectProjectFields.ReadOnly
-import typings.officeDashJs.Office.ProjectProjectFields.Start
-import typings.officeDashJs.Office.ProjectProjectFields.VERSION
-import typings.officeDashJs.Office.ProjectProjectFields.WSSList
-import typings.officeDashJs.Office.ProjectProjectFields.WSSUrl
-import typings.officeDashJs.Office.ProjectProjectFields.WorkUnits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

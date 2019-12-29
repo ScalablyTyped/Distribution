@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sensors.PedometerStepKind.running
-import typings.winrtDashUwp.Windows.Devices.Sensors.PedometerStepKind.unknown
-import typings.winrtDashUwp.Windows.Devices.Sensors.PedometerStepKind.walking
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

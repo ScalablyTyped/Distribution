@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.ValidationState.Invalid
-import typings.sharepoint.SP.JsGrid.ValidationState.Pending
-import typings.sharepoint.SP.JsGrid.ValidationState.Valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

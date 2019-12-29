@@ -1,7 +1,7 @@
 package typings.koaDashSession.koaDashSessionMod
 
+import typings.koaDashSession.koaDashSessionBooleans.`false`
 import typings.koaDashSession.koaDashSessionMod.koaMod.Context
-import typings.koaDashSession.koaDashSessionNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -30,9 +30,7 @@ trait IWebSocket extends js.Object {
   /**
     * List of callbacks to be executed when a message is received from the socket.
     */
-  var onMessageCallbacks: js.Array[
-    typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocketMessageHandler
-  ] = js.native
+  var onMessageCallbacks: js.Array[IWebSocketMessageHandler] = js.native
   /**
     * List of callbacks to be executed when the socket is opened.
     */
@@ -45,9 +43,7 @@ trait IWebSocket extends js.Object {
   /**
     * Queue of send calls to be made on socket when socket is able to receive data.
     */
-  var sendQueue: js.Array[
-    typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocketQueueItem
-  ] = js.native
+  var sendQueue: js.Array[IWebSocketQueueItem] = js.native
   /**
     * WebSocket instance.
     */
@@ -58,8 +54,8 @@ trait IWebSocket extends js.Object {
     * @param force if `true`, force close even if data is still being sent
     * @returns this instance, for method chaining
     */
-  def close(): typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket = js.native
-  def close(force: Boolean): typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket = js.native
+  def close(): IWebSocket = js.native
+  def close(force: Boolean): IWebSocket = js.native
   /**
     * Adds a callback to be executed each time a socket connection is closed for
     * this instance.
@@ -67,7 +63,7 @@ trait IWebSocket extends js.Object {
     * @param event event object
     * @returns this instance, for method chaining
     */
-  def onClose(callback: js.Function1[/* event */ CloseEvent, Unit]): typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket = js.native
+  def onClose(callback: js.Function1[/* event */ CloseEvent, Unit]): IWebSocket = js.native
   /**
     * Adds a callback to be executed each time a socket connection is closed for
     * this instance.
@@ -75,7 +71,7 @@ trait IWebSocket extends js.Object {
     * @param event event object
     * @returns this instance, for method chaining
     */
-  def onError(callback: js.Function1[/* event */ Event, Unit]): typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket = js.native
+  def onError(callback: js.Function1[/* event */ Event, Unit]): IWebSocket = js.native
   /**
     * Adds a callback to be executed each time a socket connection has an error for
     * this instance.
@@ -83,11 +79,8 @@ trait IWebSocket extends js.Object {
     * @param event event object
     * @returns this instance, for method chaining
     */
-  def onMessage(callback: js.Function1[/* event */ MessageEvent, Unit]): typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket = js.native
-  def onMessage(
-    callback: js.Function1[/* event */ MessageEvent, Unit],
-    options: typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocketMessageOptions
-  ): typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket = js.native
+  def onMessage(callback: js.Function1[/* event */ MessageEvent, Unit]): IWebSocket = js.native
+  def onMessage(callback: js.Function1[/* event */ MessageEvent, Unit], options: IWebSocketMessageOptions): IWebSocket = js.native
   /**
     * Adds a callback to be executed each time a socket connection is opened for
     * this instance.
@@ -95,7 +88,7 @@ trait IWebSocket extends js.Object {
     * @param event event object
     * @returns this instance, for method chaining
     */
-  def onOpen(callback: js.Function1[/* event */ Event, Unit]): typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket = js.native
+  def onOpen(callback: js.Function1[/* event */ Event, Unit]): IWebSocket = js.native
   /**
     * Adds data to a queue, and attempts to send if the socket is ready.
     *

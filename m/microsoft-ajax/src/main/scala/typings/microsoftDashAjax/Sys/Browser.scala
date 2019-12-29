@@ -32,7 +32,7 @@ trait Browser extends js.Object {
     * @return
     *   The name of the browser
     */
-  var name: java.lang.String
+  var name: String
   /*
     * Gets the version number of the browser.
     * @return

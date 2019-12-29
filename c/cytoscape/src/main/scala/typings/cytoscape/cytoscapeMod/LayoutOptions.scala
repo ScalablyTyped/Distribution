@@ -3,8 +3,8 @@ package typings.cytoscape.cytoscapeMod
 import typings.cytoscape.Anon_Col
 import typings.cytoscape.Anon_Degree
 import typings.cytoscape.Anon_MaxDegree
+import typings.cytoscape.cytoscapeBooleans.`false`
 import typings.cytoscape.cytoscapeNumbers.`10`
-import typings.cytoscape.cytoscapeNumbers.`false`
 import typings.cytoscape.cytoscapeStrings.`null`
 import typings.cytoscape.cytoscapeStrings.breadthfirst
 import typings.cytoscape.cytoscapeStrings.circle
@@ -66,6 +66,91 @@ object LayoutOptions {
     __obj.asInstanceOf[LayoutOptions]
   }
   @scala.inline
+  def CircleLayoutOptions(
+    fit: Boolean,
+    name: circle,
+    nodeDimensionsIncludeLabels: Boolean,
+    startAngle: Double,
+    animate: js.UndefOr[Boolean] = js.undefined,
+    animationDuration: Int | Double = null,
+    animationEasing: js.UndefOr[Boolean] = js.undefined,
+    avoidOverlap: js.UndefOr[Boolean] = js.undefined,
+    boundingBox: BoundingBox12 | BoundingBoxWH = null,
+    clockwise: js.UndefOr[Boolean] = js.undefined,
+    padding: Int | Double = null,
+    radius: Int | Double = null,
+    ready: /* e */ LayoutEventObject => Unit = null,
+    sort: (/* a */ SortableNode, /* b */ SortableNode) => Double = null,
+    spacingFactor: Int | Double = null,
+    stop: /* e */ LayoutEventObject => Unit = null,
+    sweep: Int | Double = null
+  ): LayoutOptions = {
+    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.asInstanceOf[js.Any])
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
+    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
+    if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
+    if (sweep != null) __obj.updateDynamic("sweep")(sweep.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayoutOptions]
+  }
+  @scala.inline
+  def PresetLayoutOptions(
+    name: preset,
+    animate: js.UndefOr[Boolean] = js.undefined,
+    animationDuration: Int | Double = null,
+    animationEasing: js.UndefOr[Boolean] = js.undefined,
+    fit: js.UndefOr[Boolean] = js.undefined,
+    padding: Int | Double = null,
+    pan: Int | Double = null,
+    positions: NodePositionMap | NodePositionFunction = null,
+    ready: /* e */ LayoutEventObject => Unit = null,
+    stop: /* e */ LayoutEventObject => Unit = null,
+    zoom: Int | Double = null
+  ): LayoutOptions = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayoutOptions]
+  }
+  @scala.inline
+  def RandomLayoutOptions(
+    fit: Boolean,
+    name: random,
+    animate: js.UndefOr[Boolean] = js.undefined,
+    animationDuration: Int | Double = null,
+    animationEasing: js.UndefOr[Boolean] = js.undefined,
+    boundingBox: BoundingBox12 | BoundingBoxWH = null,
+    padding: Int | Double = null,
+    ready: /* e */ LayoutEventObject => Unit = null,
+    stop: /* e */ LayoutEventObject => Unit = null
+  ): LayoutOptions = {
+    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
+    __obj.asInstanceOf[LayoutOptions]
+  }
+  @scala.inline
   def CoseLayoutOptions(
     componentSpacing: Double,
     coolingFactor: Double,
@@ -105,144 +190,6 @@ object LayoutOptions {
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    __obj.asInstanceOf[LayoutOptions]
-  }
-  @scala.inline
-  def CircleLayoutOptions(
-    fit: Boolean,
-    name: circle,
-    nodeDimensionsIncludeLabels: Boolean,
-    startAngle: Double,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
-    animationEasing: js.UndefOr[Boolean] = js.undefined,
-    avoidOverlap: js.UndefOr[Boolean] = js.undefined,
-    boundingBox: BoundingBox12 | BoundingBoxWH = null,
-    clockwise: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
-    radius: Int | Double = null,
-    ready: /* e */ LayoutEventObject => Unit = null,
-    sort: (/* a */ SortableNode, /* b */ SortableNode) => Double = null,
-    spacingFactor: Int | Double = null,
-    stop: /* e */ LayoutEventObject => Unit = null,
-    sweep: Int | Double = null
-  ): LayoutOptions = {
-    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (sweep != null) __obj.updateDynamic("sweep")(sweep.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LayoutOptions]
-  }
-  @scala.inline
-  def BaseLayoutOptions(
-    name: String,
-    ready: /* e */ LayoutEventObject => Unit = null,
-    stop: /* e */ LayoutEventObject => Unit = null
-  ): LayoutOptions = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    __obj.asInstanceOf[LayoutOptions]
-  }
-  @scala.inline
-  def PresetLayoutOptions(
-    name: preset,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
-    animationEasing: js.UndefOr[Boolean] = js.undefined,
-    fit: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
-    pan: Int | Double = null,
-    positions: NodePositionMap | NodePositionFunction = null,
-    ready: /* e */ LayoutEventObject => Unit = null,
-    stop: /* e */ LayoutEventObject => Unit = null,
-    zoom: Int | Double = null
-  ): LayoutOptions = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
-    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LayoutOptions]
-  }
-  @scala.inline
-  def ConcentricLayoutOptions(
-    concentric: Anon_Degree => Double,
-    equidistant: `false`,
-    fit: Boolean,
-    levelWidth: Anon_MaxDegree => Double,
-    minNodeSpacing: `10`,
-    name: concentric,
-    nodeDimensionsIncludeLabels: Boolean,
-    startAngle: Double,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
-    animationEasing: js.UndefOr[Boolean] = js.undefined,
-    avoidOverlap: js.UndefOr[Boolean] = js.undefined,
-    boundingBox: BoundingBox12 | BoundingBoxWH = null,
-    clockwise: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[scala.Nothing] = js.undefined,
-    padding: Int | Double = null,
-    ready: /* e */ LayoutEventObject => Unit = null,
-    sort: (/* a */ SortableNode, /* b */ SortableNode) => Double = null,
-    spacingFactor: js.UndefOr[scala.Nothing] = js.undefined,
-    stop: /* e */ LayoutEventObject => Unit = null,
-    sweep: Int | Double = null,
-    width: js.UndefOr[scala.Nothing] = js.undefined
-  ): LayoutOptions = {
-    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = equidistant.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = minNodeSpacing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (!js.isUndefined(spacingFactor)) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (sweep != null) __obj.updateDynamic("sweep")(sweep.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LayoutOptions]
-  }
-  @scala.inline
-  def RandomLayoutOptions(
-    fit: Boolean,
-    name: random,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
-    animationEasing: js.UndefOr[Boolean] = js.undefined,
-    boundingBox: BoundingBox12 | BoundingBoxWH = null,
-    padding: Int | Double = null,
-    ready: /* e */ LayoutEventObject => Unit = null,
-    stop: /* e */ LayoutEventObject => Unit = null
-  ): LayoutOptions = {
-    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
     __obj.asInstanceOf[LayoutOptions]
   }
@@ -287,6 +234,59 @@ object LayoutOptions {
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
+    __obj.asInstanceOf[LayoutOptions]
+  }
+  @scala.inline
+  def BaseLayoutOptions(
+    name: String,
+    ready: /* e */ LayoutEventObject => Unit = null,
+    stop: /* e */ LayoutEventObject => Unit = null
+  ): LayoutOptions = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
+    __obj.asInstanceOf[LayoutOptions]
+  }
+  @scala.inline
+  def ConcentricLayoutOptions(
+    concentric: Anon_Degree => Double,
+    equidistant: `false`,
+    fit: Boolean,
+    levelWidth: Anon_MaxDegree => Double,
+    minNodeSpacing: `10`,
+    name: concentric,
+    nodeDimensionsIncludeLabels: Boolean,
+    startAngle: Double,
+    animate: js.UndefOr[Boolean] = js.undefined,
+    animationDuration: Int | Double = null,
+    animationEasing: js.UndefOr[Boolean] = js.undefined,
+    avoidOverlap: js.UndefOr[Boolean] = js.undefined,
+    boundingBox: BoundingBox12 | BoundingBoxWH = null,
+    clockwise: js.UndefOr[Boolean] = js.undefined,
+    height: js.UndefOr[scala.Nothing] = js.undefined,
+    padding: Int | Double = null,
+    ready: /* e */ LayoutEventObject => Unit = null,
+    sort: (/* a */ SortableNode, /* b */ SortableNode) => Double = null,
+    spacingFactor: js.UndefOr[scala.Nothing] = js.undefined,
+    stop: /* e */ LayoutEventObject => Unit = null,
+    sweep: Int | Double = null,
+    width: js.UndefOr[scala.Nothing] = js.undefined
+  ): LayoutOptions = {
+    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = equidistant.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = minNodeSpacing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.asInstanceOf[js.Any])
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
+    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
+    if (!js.isUndefined(spacingFactor)) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
+    if (sweep != null) __obj.updateDynamic("sweep")(sweep.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutOptions]
   }
 }

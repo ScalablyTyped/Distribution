@@ -10,7 +10,8 @@ class OutlookBarShortcuts protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.OutlookBarShortcuts_typekey`: OutlookBarShortcuts = js.native
+  @JSName("Outlook.OutlookBarShortcuts_typekey")
+  var OutlookDotOutlookBarShortcuts_typekey: OutlookBarShortcuts = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Target: js.Any, Name: String): OutlookBarShortcut = js.native

@@ -5,12 +5,6 @@ import typings.sipDotJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequ
 import typings.sipDotJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequestDelegate
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.RequestOptions
 import typings.sipDotJs.libCoreSubscriptionSubscriptionDashDelegateMod.SubscriptionDelegate
-import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState
-import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Active
-import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Initial
-import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.NotifyWait
-import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Pending
-import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

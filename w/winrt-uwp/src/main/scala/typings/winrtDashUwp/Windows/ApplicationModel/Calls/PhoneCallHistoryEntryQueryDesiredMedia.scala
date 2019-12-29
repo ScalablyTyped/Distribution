@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryDesiredMedia.all
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryDesiredMedia.audio
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryDesiredMedia.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryDesiredMedia.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

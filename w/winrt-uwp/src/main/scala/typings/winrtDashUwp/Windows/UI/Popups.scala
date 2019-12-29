@@ -5,17 +5,6 @@ import typings.winrtDashUwp.Windows.Foundation.Collections.IVector
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.Point
 import typings.winrtDashUwp.Windows.Foundation.Rect
-import typings.winrtDashUwp.Windows.UI.Popups.IUICommand
-import typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions
-import typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay
-import typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions.none
-import typings.winrtDashUwp.Windows.UI.Popups.Placement
-import typings.winrtDashUwp.Windows.UI.Popups.Placement.above
-import typings.winrtDashUwp.Windows.UI.Popups.Placement.below
-import typings.winrtDashUwp.Windows.UI.Popups.Placement.default
-import typings.winrtDashUwp.Windows.UI.Popups.Placement.left
-import typings.winrtDashUwp.Windows.UI.Popups.Placement.right
-import typings.winrtDashUwp.Windows.UI.Popups.UICommandInvokedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

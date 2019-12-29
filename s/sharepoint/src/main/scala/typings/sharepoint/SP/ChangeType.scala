@@ -1,27 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ChangeType.add
-import typings.sharepoint.SP.ChangeType.assignmentAdd
-import typings.sharepoint.SP.ChangeType.assignmentDelete
-import typings.sharepoint.SP.ChangeType.deleteObject
-import typings.sharepoint.SP.ChangeType.listContentTypeAdd
-import typings.sharepoint.SP.ChangeType.listContentTypeDelete
-import typings.sharepoint.SP.ChangeType.memberAdd
-import typings.sharepoint.SP.ChangeType.memberDelete
-import typings.sharepoint.SP.ChangeType.moveAway
-import typings.sharepoint.SP.ChangeType.moveInto
-import typings.sharepoint.SP.ChangeType.navigation
-import typings.sharepoint.SP.ChangeType.noChange
-import typings.sharepoint.SP.ChangeType.rename
-import typings.sharepoint.SP.ChangeType.restore
-import typings.sharepoint.SP.ChangeType.roleAdd
-import typings.sharepoint.SP.ChangeType.roleDelete
-import typings.sharepoint.SP.ChangeType.roleUpdate
-import typings.sharepoint.SP.ChangeType.scopeAdd
-import typings.sharepoint.SP.ChangeType.scopeDelete
-import typings.sharepoint.SP.ChangeType.systemUpdate
-import typings.sharepoint.SP.ChangeType.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

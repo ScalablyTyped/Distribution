@@ -1,6 +1,6 @@
 package typings.koaDashEjs.koaDashEjsMod
 
-import typings.koaDashEjs.koaDashEjsNumbers.`false`
+import typings.koaDashEjs.koaDashEjsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

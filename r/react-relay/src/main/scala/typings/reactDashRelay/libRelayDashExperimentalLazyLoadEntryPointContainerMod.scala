@@ -1,7 +1,6 @@
 package typings.reactDashRelay
 
 import typings.react.reactMod._Global_.JSX.Element
-import typings.reactDashRelay.libRelayDashExperimentalLazyLoadEntryPointContainerMod.EntryPointContainerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

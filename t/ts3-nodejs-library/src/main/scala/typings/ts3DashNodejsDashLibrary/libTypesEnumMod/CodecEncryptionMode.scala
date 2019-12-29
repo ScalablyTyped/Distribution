@@ -1,9 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.CodecEncryptionMode.DISABLED
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.CodecEncryptionMode.ENABLED
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.CodecEncryptionMode.INDIVIDUAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

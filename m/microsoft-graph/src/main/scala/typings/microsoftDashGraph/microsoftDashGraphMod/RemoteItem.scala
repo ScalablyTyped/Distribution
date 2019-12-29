@@ -5,6 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RemoteItem extends js.Object {
+  /**
+    * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
+    * contexts and folders in others. Read-only.
+    */
+  @JSName("package")
+  var _package: js.UndefOr[Package] = js.undefined
   // Identity of the user, device, and application which created the item. Read-only.
   var createdBy: js.UndefOr[IdentitySet] = js.undefined
   // Date and time of item creation. Read-only.
@@ -23,11 +29,6 @@ trait RemoteItem extends js.Object {
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   // Optional. Filename of the remote item. Read-only.
   var name: js.UndefOr[String] = js.undefined
-  /**
-    * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
-    * contexts and folders in others. Read-only.
-    */
-  var `package`: js.UndefOr[Package] = js.undefined
   // Properties of the parent of the remote item. Read-only.
   var parentReference: js.UndefOr[ItemReference] = js.undefined
   /**
@@ -53,6 +54,7 @@ trait RemoteItem extends js.Object {
 object RemoteItem {
   @scala.inline
   def apply(
+    _package: Package = null,
     createdBy: IdentitySet = null,
     createdDateTime: String = null,
     file: File = null,
@@ -62,7 +64,6 @@ object RemoteItem {
     lastModifiedBy: IdentitySet = null,
     lastModifiedDateTime: String = null,
     name: String = null,
-    `package`: Package = null,
     parentReference: ItemReference = null,
     shared: Shared = null,
     sharepointIds: SharepointIds = null,
@@ -72,6 +73,7 @@ object RemoteItem {
     webUrl: String = null
   ): RemoteItem = {
     val __obj = js.Dynamic.literal()
+    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
@@ -81,7 +83,6 @@ object RemoteItem {
     if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (parentReference != null) __obj.updateDynamic("parentReference")(parentReference.asInstanceOf[js.Any])
     if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     if (sharepointIds != null) __obj.updateDynamic("sharepointIds")(sharepointIds.asInstanceOf[js.Any])

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class SmartDocument protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
-  var `Office.SmartDocument_typekey`: SmartDocument = js.native
+  @JSName("Office.SmartDocument_typekey")
+  var OfficeDotSmartDocument_typekey: SmartDocument = js.native
   var SolutionID: String = js.native
   var SolutionURL: String = js.native
   /** @param ConsiderAllSchemas [ConsiderAllSchemas=false] */

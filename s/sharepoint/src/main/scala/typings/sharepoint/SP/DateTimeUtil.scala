@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.sharepoint.SP.DateTimeUtil.SimpleDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

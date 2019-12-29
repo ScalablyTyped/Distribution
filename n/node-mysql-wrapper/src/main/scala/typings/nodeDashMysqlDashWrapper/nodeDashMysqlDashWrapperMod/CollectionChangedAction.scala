@@ -1,9 +1,6 @@
 package typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod.CollectionChangedAction.DELETE
-import typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod.CollectionChangedAction.INSERT
-import typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod.CollectionChangedAction.RESET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

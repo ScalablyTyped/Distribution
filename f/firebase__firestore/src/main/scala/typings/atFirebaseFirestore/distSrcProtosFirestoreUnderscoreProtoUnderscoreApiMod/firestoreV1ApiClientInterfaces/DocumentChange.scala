@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DocumentChange extends js.Object {
-  var document: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Document
-  ] = js.undefined
+  var document: js.UndefOr[Document] = js.undefined
   var removedTargetIds: js.UndefOr[js.Array[Double]] = js.undefined
   var targetIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
@@ -15,7 +13,7 @@ trait DocumentChange extends js.Object {
 object DocumentChange {
   @scala.inline
   def apply(
-    document: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Document = null,
+    document: Document = null,
     removedTargetIds: js.Array[Double] = null,
     targetIds: js.Array[Double] = null
   ): DocumentChange = {

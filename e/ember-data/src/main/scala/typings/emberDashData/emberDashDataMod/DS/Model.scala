@@ -1,5 +1,6 @@
 package typings.emberDashData.emberDashDataMod.DS
 
+import typings.atEmberObject.atEmberObjectMod.default
 import typings.ember.emberMod.Ember.NativeArray
 import typings.ember.emberMod.default.ComputedProperty
 import typings.ember.emberMod.default.Map
@@ -26,8 +27,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.Model")
 @js.native
-class Model ()
-  extends typings.atEmberObject.atEmberObjectMod.default {
+class Model () extends default {
   /**
     * This property holds the `DS.AdapterError` object with which
     * last adapter operation was rejected.
@@ -172,9 +172,8 @@ class Model ()
     * invoking the callback with the name of each relationship and its relationship
     * descriptor.
     */
-  def eachRelationship[T /* <: Model */](`this`: T, callback: js.Function2[/* name */ String, /* details */ RelationshipMeta[T], Unit]): Unit = js.native
+  def eachRelationship[T /* <: Model */](callback: js.Function2[/* name */ String, /* details */ RelationshipMeta[T], Unit]): Unit = js.native
   def eachRelationship[T /* <: Model */](
-    `this`: T,
     callback: js.Function2[/* name */ String, /* details */ RelationshipMeta[T], Unit],
     binding: js.Any
   ): Unit = js.native
@@ -281,9 +280,8 @@ object Model extends js.Object {
     * Iterates through the attributes of the model, calling the passed function on each
     * attribute.
     */
-  def eachAttribute[Class /* <: TypeofClassModel */, M /* <: InstanceType[Class] */](`this`: Class, callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
+  def eachAttribute[Class /* <: TypeofClassModel */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
   def eachAttribute[Class /* <: TypeofClassModel */, M /* <: InstanceType[Class] */](
-    `this`: Class,
     callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit],
     binding: js.Any
   ): Unit = js.native
@@ -310,12 +308,8 @@ object Model extends js.Object {
     * the passed function on each attribute. Note the callback will not be
     * called for any attributes that do not have an transformation type.
     */
+  def eachTransformedAttribute[Class /* <: TypeofClassModel */](callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]): Unit = js.native
   def eachTransformedAttribute[Class /* <: TypeofClassModel */](
-    `this`: Class,
-    callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]
-  ): Unit = js.native
-  def eachTransformedAttribute[Class /* <: TypeofClassModel */](
-    `this`: Class,
     callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit],
     binding: js.Any
   ): Unit = js.native

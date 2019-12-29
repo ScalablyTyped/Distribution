@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkHttpDashSerialization
 
-import typings.atAwsDashSdkHttpDashSerialization.atAwsDashSdkHttpDashSerializationMod.DerivedHttpRequest
 import typings.atAwsDashSdkTypes.buildHttpMod.HttpMessage
 import typings.atAwsDashSdkTypes.buildHttpMod.HttpRequest
 import typings.atAwsDashSdkTypes.buildHttpMod.HttpResponse

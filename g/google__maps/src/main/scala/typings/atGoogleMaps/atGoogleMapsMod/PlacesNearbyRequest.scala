@@ -64,7 +64,7 @@ trait PlacesNearbyRequest extends js.Object {
     * Restricts the results to places matching the specified type.
     * Only one type may be specified (if more than one type is provided, all types following the first entry are ignored).
     */
-  var `type`: js.UndefOr[AddressType] = js.undefined
+  var `type`: js.UndefOr[PlaceType1 | PlaceType2] = js.undefined
 }
 
 object PlacesNearbyRequest {
@@ -80,7 +80,7 @@ object PlacesNearbyRequest {
     pagetoken: String = null,
     radius: Int | Double = null,
     rankby: PlacesNearbyRanking = null,
-    `type`: AddressType = null
+    `type`: PlaceType1 | PlaceType2 = null
   ): PlacesNearbyRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])

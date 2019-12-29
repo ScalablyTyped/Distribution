@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@firebase/firestore/dist/src/api/database", "PublicQueryDocumentSnapshot")
 @js.native
-object PublicQueryDocumentSnapshot extends TopLevel[Instantiable0[QueryDocumentSnapshot]]
+object PublicQueryDocumentSnapshot
+  extends TopLevel[Instantiable0[QueryDocumentSnapshot[js.Object]]]
 

@@ -15,7 +15,7 @@ trait Model extends js.Object {
   /** Specifies the ajaxSettings option to load the content to the NavigationDrawer control.
     * @Default {null}
     */
-  var ajaxSettings: js.UndefOr[typings.ejDotWebDotAll.ej.NavigationDrawer.AjaxSettings] = js.undefined
+  var ajaxSettings: js.UndefOr[AjaxSettings] = js.undefined
   /** Event triggers after the AJAX content loaded successfully.
     */
   var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
@@ -77,7 +77,7 @@ object Model {
   def apply(
     ajaxComplete: /* e */ AjaxCompleteEventArgs => Unit = null,
     ajaxError: /* e */ AjaxErrorEventArgs => Unit = null,
-    ajaxSettings: typings.ejDotWebDotAll.ej.NavigationDrawer.AjaxSettings = null,
+    ajaxSettings: AjaxSettings = null,
     ajaxSuccess: /* e */ AjaxSuccessEventArgs => Unit = null,
     beforeClose: /* e */ BeforeCloseEventArgs => Unit = null,
     contentId: String = null,

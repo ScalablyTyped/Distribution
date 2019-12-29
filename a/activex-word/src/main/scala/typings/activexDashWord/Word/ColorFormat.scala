@@ -23,7 +23,8 @@ class ColorFormat protected () extends js.Object {
   var SchemeColor: Double = js.native
   var TintAndShade: Double = js.native
   val Type: MsoColorType = js.native
-  var `Word.ColorFormat_typekey`: ColorFormat = js.native
+  @JSName("Word.ColorFormat_typekey")
+  var WordDotColorFormat_typekey: ColorFormat = js.native
   var Yellow: Double = js.native
   def Ink(Index: Double): Double = js.native
   def SetCMYK(Cyan: Double, Magenta: Double, Yellow: Double, Black: Double): Unit = js.native

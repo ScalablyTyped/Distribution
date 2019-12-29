@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.Hide
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.None
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.Wrap
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.WrapByWord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

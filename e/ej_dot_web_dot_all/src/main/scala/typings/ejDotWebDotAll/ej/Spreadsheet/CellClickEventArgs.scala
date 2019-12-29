@@ -23,7 +23,7 @@ trait CellClickEventArgs extends js.Object {
   var columnObject: js.UndefOr[js.Any] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the row index of clicked cell.
     */
   var rowIndex: js.UndefOr[Double] = js.undefined
@@ -46,7 +46,7 @@ object CellClickEventArgs {
     columnIndex: Int | Double = null,
     columnName: String = null,
     columnObject: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     rowIndex: Int | Double = null,
     target: HTMLElement = null,
     `type`: String = null,

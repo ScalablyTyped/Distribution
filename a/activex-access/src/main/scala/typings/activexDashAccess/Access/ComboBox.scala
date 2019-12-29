@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.ComboBox")
 @js.native
 class ComboBox protected () extends js.Object {
-  var `Access.ComboBox_typekey`: ComboBox = js.native
+  @JSName("Access.ComboBox_typekey")
+  var AccessDotComboBox_typekey: ComboBox = js.native
   var AddColon: Boolean = js.native
   var AfterUpdate: String = js.native
   var AfterUpdateMacro: String = js.native

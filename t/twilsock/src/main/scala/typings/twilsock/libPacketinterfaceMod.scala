@@ -2,7 +2,6 @@ package typings.twilsock
 
 import typings.twilsock.libConfigurationMod.Configuration
 import typings.twilsock.libInterfacesChannelMod.Channel
-import typings.twilsock.libPacketinterfaceMod.PacketResponse
 import typings.twilsock.libProtocolMessagesMod.InitReply
 import typings.twilsock.libProtocolProtocolMod.Protocol.Header
 import scala.scalajs.js

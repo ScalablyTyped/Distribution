@@ -1,6 +1,5 @@
 package typings.dojo.dojox.app
 
-import typings.dojo.dojox.app.controllers.LayoutBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

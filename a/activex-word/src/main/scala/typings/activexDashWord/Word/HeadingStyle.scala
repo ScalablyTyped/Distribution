@@ -12,7 +12,8 @@ class HeadingStyle protected () extends js.Object {
   var Level: Double = js.native
   val Parent: js.Any = js.native
   var Style: js.Any = js.native
-  var `Word.HeadingStyle_typekey`: HeadingStyle = js.native
+  @JSName("Word.HeadingStyle_typekey")
+  var WordDotHeadingStyle_typekey: HeadingStyle = js.native
   def Delete(): Unit = js.native
 }
 

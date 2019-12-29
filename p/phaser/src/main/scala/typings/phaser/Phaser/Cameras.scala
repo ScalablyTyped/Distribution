@@ -1,10 +1,6 @@
 package typings.phaser.Phaser
 
-import typings.phaser.Phaser.Cameras.Controls.FixedKeyControl
-import typings.phaser.Phaser.Cameras.Controls.SmoothedKeyControl
-import typings.phaser.Phaser.Cameras.Scene2D.BaseCamera
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
-import typings.phaser.Phaser.Cameras.Scene2D.CameraManager
 import typings.phaser.Phaser.Cameras.Scene2D.Effects.Fade
 import typings.phaser.Phaser.Cameras.Scene2D.Effects.Flash
 import typings.phaser.Phaser.Cameras.Scene2D.Effects.Pan

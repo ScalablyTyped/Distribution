@@ -1,8 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.ListViewAnimationType.contentTransition
-import typings.winjs.WinJS.UI.ListViewAnimationType.entrance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

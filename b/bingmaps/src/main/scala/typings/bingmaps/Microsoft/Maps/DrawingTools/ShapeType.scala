@@ -1,8 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.DrawingTools
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType.polygon
-import typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType.polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

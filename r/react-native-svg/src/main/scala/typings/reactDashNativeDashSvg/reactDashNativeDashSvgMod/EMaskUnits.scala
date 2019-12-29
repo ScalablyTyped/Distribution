@@ -1,8 +1,6 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.EMaskUnits.OBJECT_BOUNDING_BOX
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.EMaskUnits.USER_SPACE_ON_USE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

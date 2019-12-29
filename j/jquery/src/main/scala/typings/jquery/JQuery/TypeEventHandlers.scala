@@ -1,7 +1,7 @@
 package typings.jquery.JQuery
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.jqueryNumbers.`false`
+import typings.jquery.jqueryBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

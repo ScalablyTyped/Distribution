@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.DialProtocol
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppLaunchResult.failedToLaunch
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppLaunchResult.launched
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppLaunchResult.networkFailure
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppLaunchResult.notFound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

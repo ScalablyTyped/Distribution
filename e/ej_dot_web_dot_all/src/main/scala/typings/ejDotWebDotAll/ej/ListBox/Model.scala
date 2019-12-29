@@ -161,7 +161,7 @@ trait Model extends js.Object {
     * purpose.
     * @Default {ej.SortOrder.None}
     */
-  var sortOrder: js.UndefOr[typings.ejDotWebDotAll.ej.ListBox.SortOrder | String] = js.undefined
+  var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   /** Specifies the targetID for the listbox items.
     * @Default {null}
     */
@@ -235,7 +235,7 @@ object Model {
     selectedIndices: js.Array[_] = null,
     showCheckbox: js.UndefOr[Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
-    sortOrder: typings.ejDotWebDotAll.ej.ListBox.SortOrder | String = null,
+    sortOrder: SortOrder | String = null,
     targetID: String = null,
     template: String = null,
     totalItemsCount: Int | Double = null,

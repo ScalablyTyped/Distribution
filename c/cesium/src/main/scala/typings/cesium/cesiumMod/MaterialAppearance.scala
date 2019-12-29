@@ -3,9 +3,6 @@ package typings.cesium.cesiumMod
 import org.scalablytyped.runtime.TopLevel
 import typings.cesium.Anon_ClosedFaceForward
 import typings.cesium.cesiumMod.MaterialAppearance.MaterialSupport
-import typings.cesium.cesiumMod.MaterialAppearance.MaterialSupport.ALL
-import typings.cesium.cesiumMod.MaterialAppearance.MaterialSupport.BASIC
-import typings.cesium.cesiumMod.MaterialAppearance.MaterialSupport.TEXTURED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

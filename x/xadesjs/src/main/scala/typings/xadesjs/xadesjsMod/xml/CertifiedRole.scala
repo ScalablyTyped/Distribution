@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.CertifiedRole")
 @js.native
-class CertifiedRole () extends EncapsulatedPKIData
+class CertifiedRole ()
+  extends typings.xadesjs.buildTypesXmlMod.CertifiedRole
 

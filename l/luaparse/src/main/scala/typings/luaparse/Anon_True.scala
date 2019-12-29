@@ -1,6 +1,6 @@
 package typings.luaparse
 
-import typings.luaparse.luaparseNumbers.`true`
+import typings.luaparse.luaparseBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

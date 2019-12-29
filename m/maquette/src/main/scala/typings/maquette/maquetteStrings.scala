@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object maquetteStrings {
   @js.native
-  sealed trait `Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead` extends js.Object
+  sealed trait `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` extends js.Object
   
   @js.native
   sealed trait domEvent extends PerformanceLoggerEvent
@@ -28,7 +28,7 @@ object maquetteStrings {
   sealed trait rendered extends PerformanceLoggerEvent
   
   @scala.inline
-  def `Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead`: `Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead` = "Hint: do not use `className`, use `class` instead".asInstanceOf[`Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead`]
+  def `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`: `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` = "Hint: do not use `className`, use `class` instead".asInstanceOf[`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`]
   @scala.inline
   def domEvent: domEvent = "domEvent".asInstanceOf[domEvent]
   @scala.inline

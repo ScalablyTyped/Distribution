@@ -15,7 +15,8 @@ class SlideShowSettings protected () extends js.Object {
   val NamedSlideShows: typings.activexDashPowerpoint.PowerPoint.NamedSlideShows = js.native
   val Parent: js.Any = js.native
   val PointerColor: ColorFormat = js.native
-  var `PowerPoint.SlideShowSettings_typekey`: SlideShowSettings = js.native
+  @JSName("PowerPoint.SlideShowSettings_typekey")
+  var PowerPointDotSlideShowSettings_typekey: SlideShowSettings = js.native
   var RangeType: PpSlideShowRangeType = js.native
   var ShowMediaControls: MsoTriState = js.native
   var ShowPresenterView: MsoTriState = js.native

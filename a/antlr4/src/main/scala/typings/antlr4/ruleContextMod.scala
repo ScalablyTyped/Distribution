@@ -2,7 +2,6 @@ package typings.antlr4
 
 import typings.antlr4.intervalSetMod.Interval
 import typings.antlr4.parserRuleContextMod.ParserRuleContext
-import typings.antlr4.ruleContextMod.RuleContext
 import typings.antlr4.treeTreeMod.ParseTree
 import typings.antlr4.treeTreeMod.ParseTreeVisitor
 import scala.scalajs.js

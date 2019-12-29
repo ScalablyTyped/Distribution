@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.node.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`nodeDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.nodeDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait RuntimeClass extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`nodeDOTk8sDOTio/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[nodeDotk8sDotioSlashv1beta1]] = js.undefined
   /**
     * Handler specifies the underlying runtime and configuration that the CRI implementation will
     * use to handle pods of this class. The possible values are specific to the node & CRI
@@ -65,7 +65,7 @@ object RuntimeClass {
   @scala.inline
   def apply(
     handler: Input[String],
-    apiVersion: Input[`nodeDOTk8sDOTio/v1beta1`] = null,
+    apiVersion: Input[nodeDotk8sDotioSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.RuntimeClass] = null,
     metadata: Input[ObjectMeta] = null,
     overhead: Input[Overhead] = null,

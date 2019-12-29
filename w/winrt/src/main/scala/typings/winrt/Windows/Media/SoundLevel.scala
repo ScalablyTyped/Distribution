@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.SoundLevel.full
-import typings.winrt.Windows.Media.SoundLevel.low
-import typings.winrt.Windows.Media.SoundLevel.muted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

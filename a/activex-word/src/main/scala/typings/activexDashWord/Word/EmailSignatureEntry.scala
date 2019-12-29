@@ -12,7 +12,8 @@ class EmailSignatureEntry protected () extends js.Object {
   val Index: Double = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.EmailSignatureEntry_typekey`: EmailSignatureEntry = js.native
+  @JSName("Word.EmailSignatureEntry_typekey")
+  var WordDotEmailSignatureEntry_typekey: EmailSignatureEntry = js.native
   def Delete(): Unit = js.native
 }
 

@@ -36,10 +36,17 @@ trait SinonSandbox extends js.Object {
     *
     * @template TType Type being stubbed.
     * @param constructor   Object or class to stub.
+    * @param overrides     An optional map overriding created stubs
     * @returns A stubbed version of the constructor.
     * @remarks The given constructor function is not invoked. See also the stub API.
     */
   def createStubInstance[TType](constructor: StubbableType[TType]): SinonStubbedInstance[TType] = js.native
+  def createStubInstance[TType](
+    constructor: StubbableType[TType],
+    overrides: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof TType ]:? any}
+    */ typings.cypress.cypressStrings.SinonSandbox with js.Any
+  ): SinonStubbedInstance[TType] = js.native
   /**
     * Works exactly like sinon.mock
     */
@@ -139,6 +146,7 @@ trait SinonSandbox extends js.Object {
     * Works exactly like sinon.spy
     */
   def spy[T](obj: T, method: String): SinonSpy = js.native
+  def spy[T](obj: T, method: String, types: js.Array[String]): SinonSpy = js.native
   /**
     * Creates an anonymous stub function
     */

@@ -1,11 +1,6 @@
 package typings.winrt.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Notifications.PeriodicUpdateRecurrence.daily
-import typings.winrt.Windows.UI.Notifications.PeriodicUpdateRecurrence.halfHour
-import typings.winrt.Windows.UI.Notifications.PeriodicUpdateRecurrence.hour
-import typings.winrt.Windows.UI.Notifications.PeriodicUpdateRecurrence.sixHours
-import typings.winrt.Windows.UI.Notifications.PeriodicUpdateRecurrence.twelveHours
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

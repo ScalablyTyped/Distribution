@@ -2,12 +2,12 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.echarts.EChartOption.Tooltip.Formatter
 import typings.echarts.echarts.EChartOption.Tooltip.Position.Type
-import typings.echarts.echartsStrings.`mousemove|click`
 import typings.echarts.echartsStrings.axis
 import typings.echarts.echartsStrings.click
 import typings.echarts.echartsStrings.html
 import typings.echarts.echartsStrings.item
 import typings.echarts.echartsStrings.mousemove
+import typings.echarts.echartsStrings.mousemoveVerticallineclick
 import typings.echarts.echartsStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -304,7 +304,7 @@ trait Tooltip_ extends js.Object {
     *
     * @default 'mousemove|click'
     */
-  var triggerOn: js.UndefOr[mousemove | click | `mousemove|click` | none] = js.undefined
+  var triggerOn: js.UndefOr[mousemove | click | mousemoveVerticallineclick | none] = js.undefined
 }
 
 object Tooltip_ {
@@ -329,7 +329,7 @@ object Tooltip_ {
     textStyle: BaseTextStyle = null,
     transitionDuration: Int | Double = null,
     trigger: item | axis | none = null,
-    triggerOn: mousemove | click | `mousemove|click` | none = null
+    triggerOn: mousemove | click | mousemoveVerticallineclick | none = null
   ): Tooltip_ = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(alwaysShowContent)) __obj.updateDynamic("alwaysShowContent")(alwaysShowContent.asInstanceOf[js.Any])

@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`base-elevation`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +32,7 @@ trait BaseElevationLayer extends Layer {
     * @param promiseToLoad A promise that must resolve for the layer to resolve and move from the `loading` [status](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#loadStatus) to being [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#loaded).
     *
     */
-  def addResolvingPromise(promiseToLoad: IPromise[_]): IPromise[_] = js.native
+  def addResolvingPromise(promiseToLoad: js.Promise[_]): js.Promise[_] = js.native
   /**
     * Creates an elevation sampler for the given [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) by querying the service layer for elevation data and caching it so values may be sampled quickly afterwards. The resolution of the cached data can be set using the `demResolution` option. In many cases, `auto` demResolution can be used to get high quality elevation samples without the need to know exactly where the data in the service is located. This is particularly useful for services which combine elevation data from many sources (such as the world elevation service). If more control, or higher quality samples are required, use either `finest-contiguous` or a fixed `{number}` resolution.
     *
@@ -45,8 +44,8 @@ trait BaseElevationLayer extends Layer {
     * @param options.noDataValue The value to use when there is no data available.
     *
     */
-  def createElevationSampler(extent: Extent): IPromise[ElevationSampler] = js.native
-  def createElevationSampler(extent: Extent, options: BaseElevationLayerCreateElevationSamplerOptions): IPromise[ElevationSampler] = js.native
+  def createElevationSampler(extent: Extent): js.Promise[ElevationSampler] = js.native
+  def createElevationSampler(extent: Extent, options: BaseElevationLayerCreateElevationSamplerOptions): js.Promise[ElevationSampler] = js.native
   /**
     * Fetches a tile at the given level, row, and column present in the view. This method must be overwritten to display custom elevation values in the [Map.ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground). Note that this method must return a promise that resolves to an object with the properties defined in [ElevationTileData](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#ElevationTileData).  See the following samples for examples of how to overwrite this method:
     *   * [Sample - Custom ElevationLayer: Exaggerating elevation](https://developers.arcgis.com/javascript/latest/sample-code/layers-custom-elevation-exaggerated/index.html)
@@ -59,11 +58,11 @@ trait BaseElevationLayer extends Layer {
     * @param column The column (x) position of the tile to fetch.
     * @param options Optional settings for the tile request.
     * @param options.noDataValue The value representing pixels in the tile that don't contain an elevation value.
-    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. When overriding fetchTile, `signal` should be handled, for example by passing it on to [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html) or by aborting pending operations. An aborted call to fetchTile should reject its returned promise with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def fetchTile(level: Double, row: Double, column: Double): IPromise[ElevationTileData] = js.native
-  def fetchTile(level: Double, row: Double, column: Double, options: BaseElevationLayerFetchTileOptions): IPromise[ElevationTileData] = js.native
+  def fetchTile(level: Double, row: Double, column: Double): js.Promise[ElevationTileData] = js.native
+  def fetchTile(level: Double, row: Double, column: Double, options: BaseElevationLayerFetchTileOptions): js.Promise[ElevationTileData] = js.native
   /**
     * Returns the bounds of the tile as an array of four numbers that can be readily converted to an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object. See the table in the `returns` section below for more details about the values returned by this method.  This function can be used inside [fetchTile()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#fetchTile) so you can get the bounds of the current tile, convert it to an extent object, and request the desired data for the given extent. See the [Custom ElevationLayer: Thematic data as elevation](https://developers.arcgis.com/javascript/latest/sample-code/layers-custom-elevation-thematic/index.html) sample for an example of how this method works.
     *
@@ -77,8 +76,8 @@ trait BaseElevationLayer extends Layer {
     */
   def getTileBounds(level: Double, row: Double, column: Double): js.Array[Double] = js.native
   def getTileBounds(level: Double, row: Double, column: Double, out: js.Array[Double]): js.Array[Double] = js.native
-  def queryElevation(geometry: Multipoint): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Multipoint, options: BaseElevationLayerQueryElevationOptions): IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Multipoint): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Multipoint, options: BaseElevationLayerQueryElevationOptions): js.Promise[ElevationLayerElevationQueryResult] = js.native
   /**
     * Queries the service layer for elevation values for the given geometry. The returned result contains a copy of the geometry with z-values sampled from elevation data from the service. The resolution from which the elevation is queried can be set using the `demResolution` option. In many cases, `auto` demResolution can be used to get high quality elevation samples without the need to know exactly where the data in the service is located. This is particularly useful for services which combine elevation data from many sources (such as the world elevation service). If more control, or higher quality samples are required, use either `finest-contiguous` or a fixed `{number}` resolution.
     *
@@ -98,10 +97,10 @@ trait BaseElevationLayer extends Layer {
     * @param options.noDataValue The value to use when there is no data available.
     *
     */
-  def queryElevation(geometry: Point): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Point, options: BaseElevationLayerQueryElevationOptions): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Polyline): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Polyline, options: BaseElevationLayerQueryElevationOptions): IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Point): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Point, options: BaseElevationLayerQueryElevationOptions): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline, options: BaseElevationLayerQueryElevationOptions): js.Promise[ElevationLayerElevationQueryResult] = js.native
 }
 
 @JSGlobal("__esri.BaseElevationLayer")

@@ -7,16 +7,12 @@ import scala.scalajs.js.annotation._
 trait PageElementProperties extends js.Object {
   var pageObjectId: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[Size] = js.undefined
-  var transform: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.undefined
+  var transform: js.UndefOr[AffineTransform] = js.undefined
 }
 
 object PageElementProperties {
   @scala.inline
-  def apply(
-    pageObjectId: String = null,
-    size: Size = null,
-    transform: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.AffineTransform = null
-  ): PageElementProperties = {
+  def apply(pageObjectId: String = null, size: Size = null, transform: AffineTransform = null): PageElementProperties = {
     val __obj = js.Dynamic.literal()
     if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

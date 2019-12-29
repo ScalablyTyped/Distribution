@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiLab.speedDialSpeedDialMod
 
+import typings.atMaterialDashUiCore.Anon_ClassName
 import typings.atMaterialDashUiCore.stylesWithStylesMod.ClassNameMap
 import typings.atMaterialDashUiCore.stylesWithStylesMod.StyledComponentProps
 import typings.atMaterialDashUiLab.PartialFabProps
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any> extends any ? std.Pick<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, 'classes' | 'children'>> : never */ trait SpeedDialProps
   extends StyledComponentProps[SpeedDialClassKey]
-     with typings.atMaterialDashUiCore.Anon_ClassName {
+     with Anon_ClassName {
   /**
     * Props applied to the [`Fab`](/api/fab/) element.
     */
@@ -63,7 +64,7 @@ import scala.scalajs.js.annotation._
     * Callback fired when the component requests to be closed.
     *
     * @param {object} event The event source of the callback.
-    * @param {string} reason Can be:`"toggle"`, `"blur"`, `"mouseLeave"`, `"escapeKeyDown"`.
+    * @param {string} reason Can be: `"toggle"`, `"blur"`, `"mouseLeave"`, `"escapeKeyDown"`.
     */
   var onClose: js.UndefOr[
     js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* reason */ CloseReason, Unit]
@@ -72,7 +73,7 @@ import scala.scalajs.js.annotation._
     * Callback fired when the component requests to be open.
     *
     * @param {object} event The event source of the callback.
-    * @param {string} reason Can be:`"toggle"`, `"focus"`, `"mouseEnter"`.
+    * @param {string} reason Can be: `"toggle"`, `"focus"`, `"mouseEnter"`.
     */
   var onOpen: js.UndefOr[
     js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* reason */ OpenReason, Unit]

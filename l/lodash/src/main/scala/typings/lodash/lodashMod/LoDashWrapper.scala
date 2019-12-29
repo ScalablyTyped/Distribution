@@ -25,47 +25,41 @@ trait LoDashWrapper[TValue] extends js.Object {
   /**
     * @see _.forEach
     */
-  def each(`this`: LoDashWrapper[js.UndefOr[String | Null]]): this.type = js.native
-  def each(`this`: LoDashWrapper[js.UndefOr[String | Null]], iteratee: StringIterator[_]): this.type = js.native
+  def each(): this.type = js.native
+  def each(iteratee: StringIterator[_]): this.type = js.native
   /**
     * @see _.forEachRight
     */
-  def eachRight(`this`: LoDashWrapper[js.UndefOr[String | Null]]): this.type = js.native
-  def eachRight(`this`: LoDashWrapper[js.UndefOr[String | Null]], iteratee: StringIterator[_]): this.type = js.native
-  /**
-    * @see _.forEachRight
-    */
-  @JSName("eachRight")
-  def eachRight_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]]): this.type = js.native
-  @JSName("eachRight")
-  def eachRight_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]],
-    iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
-  ): this.type = js.native
+  def eachRight(): this.type = js.native
+  def eachRight(iteratee: StringIterator[_]): this.type = js.native
   /**
     * @see _.forEachRight
     */
   @JSName("eachRight")
-  def eachRight_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
+  def eachRight_T[T](): this.type = js.native
   @JSName("eachRight")
-  def eachRight_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def eachRight_T[T](iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])): this.type = js.native
+  /**
+    * @see _.forEachRight
+    */
+  @JSName("eachRight")
+  def eachRight_T_Object[T /* <: js.Object */](): this.type = js.native
+  @JSName("eachRight")
+  def eachRight_T_Object[T /* <: js.Object */](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.forEach
     */
   @JSName("each")
-  def each_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]]): this.type = js.native
+  def each_T[T](): this.type = js.native
   @JSName("each")
-  def each_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]],
-    iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
-  ): this.type = js.native
+  def each_T[T](iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])): this.type = js.native
   /**
     * @see _.forEach
     */
   @JSName("each")
-  def each_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
+  def each_T_Object[T /* <: js.Object */](): this.type = js.native
   @JSName("each")
-  def each_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def each_T_Object[T /* <: js.Object */](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.flip
     */
@@ -73,67 +67,61 @@ trait LoDashWrapper[TValue] extends js.Object {
   /**
     * @see _.forEach
     */
-  def forEach(`this`: LoDashWrapper[js.UndefOr[String | Null]]): this.type = js.native
-  def forEach(`this`: LoDashWrapper[js.UndefOr[String | Null]], iteratee: StringIterator[_]): this.type = js.native
+  def forEach(): this.type = js.native
+  def forEach(iteratee: StringIterator[_]): this.type = js.native
   /**
     * @see _.forEachRight
     */
-  def forEachRight(`this`: LoDashWrapper[js.UndefOr[String | Null]]): this.type = js.native
-  def forEachRight(`this`: LoDashWrapper[js.UndefOr[String | Null]], iteratee: StringIterator[_]): this.type = js.native
-  /**
-    * @see _.forEachRight
-    */
-  @JSName("forEachRight")
-  def forEachRight_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]]): this.type = js.native
-  @JSName("forEachRight")
-  def forEachRight_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]],
-    iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
-  ): this.type = js.native
+  def forEachRight(): this.type = js.native
+  def forEachRight(iteratee: StringIterator[_]): this.type = js.native
   /**
     * @see _.forEachRight
     */
   @JSName("forEachRight")
-  def forEachRight_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
+  def forEachRight_T[T](): this.type = js.native
   @JSName("forEachRight")
-  def forEachRight_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def forEachRight_T[T](iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])): this.type = js.native
+  /**
+    * @see _.forEachRight
+    */
+  @JSName("forEachRight")
+  def forEachRight_T_Object[T /* <: js.Object */](): this.type = js.native
+  @JSName("forEachRight")
+  def forEachRight_T_Object[T /* <: js.Object */](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.forEach
     */
   @JSName("forEach")
-  def forEach_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]]): this.type = js.native
+  def forEach_T[T](): this.type = js.native
   @JSName("forEach")
-  def forEach_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | Null]],
-    iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
-  ): this.type = js.native
+  def forEach_T[T](iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])): this.type = js.native
   /**
     * @see _.forEach
     */
   @JSName("forEach")
-  def forEach_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
+  def forEach_T_Object[T /* <: js.Object */](): this.type = js.native
   @JSName("forEach")
-  def forEach_T_Object[T /* <: js.Object */](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def forEach_T_Object[T /* <: js.Object */](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.forIn
     */
-  def forIn[T](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
-  def forIn[T](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def forIn[T](): this.type = js.native
+  def forIn[T](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.forInRight
     */
-  def forInRight[T](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
-  def forInRight[T](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def forInRight[T](): this.type = js.native
+  def forInRight[T](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.forOwn
     */
-  def forOwn[T](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
-  def forOwn[T](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def forOwn[T](): this.type = js.native
+  def forOwn[T](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.forOwnRight
     */
-  def forOwnRight[T](`this`: LoDashWrapper[js.UndefOr[T | Null]]): this.type = js.native
-  def forOwnRight[T](`this`: LoDashWrapper[js.UndefOr[T | Null]], iteratee: ObjectIterator[T, _]): this.type = js.native
+  def forOwnRight[T](): this.type = js.native
+  def forOwnRight[T](iteratee: ObjectIterator[T, _]): this.type = js.native
   /**
     * @see _.once
     */
@@ -141,25 +129,25 @@ trait LoDashWrapper[TValue] extends js.Object {
   /**
     * @see _.pullAllBy
     */
-  def pullAllBy[T](`this`: LoDashWrapper[List[T]]): this.type = js.native
-  def pullAllBy[T](`this`: LoDashWrapper[List[T]], values: List[T]): this.type = js.native
-  def pullAllBy[T](`this`: LoDashWrapper[List[T]], values: List[T], iteratee: ValueIteratee[T]): this.type = js.native
+  def pullAllBy[T](): this.type = js.native
+  def pullAllBy[T](values: List[T]): this.type = js.native
+  def pullAllBy[T](values: List[T], iteratee: ValueIteratee[T]): this.type = js.native
   /**
     * @see _.pullAllBy
     */
   @JSName("pullAllBy")
-  def pullAllBy_T1T2[T1, T2](`this`: LoDashWrapper[List[T1]], values: List[T2], iteratee: ValueIteratee[T1 | T2]): this.type = js.native
+  def pullAllBy_T1T2[T1, T2](values: List[T2], iteratee: ValueIteratee[T1 | T2]): this.type = js.native
   /**
     * @see _.pullAllWith
     */
-  def pullAllWith[T](`this`: LoDashWrapper[List[T]]): this.type = js.native
-  def pullAllWith[T](`this`: LoDashWrapper[List[T]], values: List[T]): this.type = js.native
-  def pullAllWith[T](`this`: LoDashWrapper[List[T]], values: List[T], comparator: Comparator[T]): this.type = js.native
+  def pullAllWith[T](): this.type = js.native
+  def pullAllWith[T](values: List[T]): this.type = js.native
+  def pullAllWith[T](values: List[T], comparator: Comparator[T]): this.type = js.native
   /**
     * @see _.pullAllWith
     */
   @JSName("pullAllWith")
-  def pullAllWith_T1T2[T1, T2](`this`: LoDashWrapper[List[T1]], values: List[T2], comparator: Comparator2[T1, T2]): this.type = js.native
+  def pullAllWith_T1T2[T1, T2](values: List[T2], comparator: Comparator2[T1, T2]): this.type = js.native
   /**
     * @see _.pullAt
     */

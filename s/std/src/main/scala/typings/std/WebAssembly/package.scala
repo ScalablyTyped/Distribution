@@ -15,9 +15,9 @@ package object WebAssembly {
     - typings.std.WebAssembly.Table
   */
   type ExportValue = _ExportValue | js.Function
-  type Exports = Record[java.lang.String, ExportValue]
+  type Exports = Record[String, ExportValue]
   type ImportValue = ExportValue | Double
-  type Imports = Record[java.lang.String, ModuleImports]
-  type ModuleImports = Record[java.lang.String, ImportValue]
+  type Imports = Record[String, ModuleImports]
+  type ModuleImports = Record[String, ImportValue]
   type TableKind = anyfunc
 }

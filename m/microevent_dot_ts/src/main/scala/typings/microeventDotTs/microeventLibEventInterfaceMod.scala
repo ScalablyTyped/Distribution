@@ -1,6 +1,5 @@
 package typings.microeventDotTs
 
-import typings.microeventDotTs.microeventLibEventInterfaceMod.EventInterface
 import typings.microeventDotTs.microeventLibEventInterfaceMod.EventInterface.HandlerInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`

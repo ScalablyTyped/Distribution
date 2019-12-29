@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage.AccessCache
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appAndSystem
-import typings.winrtDashUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

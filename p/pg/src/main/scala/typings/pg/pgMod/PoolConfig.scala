@@ -2,7 +2,7 @@ package typings.pg.pgMod
 
 import typings.node.streamMod.Duplex
 import typings.node.tlsMod.ConnectionOptions
-import typings.pg.pgNumbers.`false`
+import typings.pg.pgBooleans.`false`
 import typings.std.PromiseConstructorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 trait PoolConfig extends ClientConfig {
   var Promise: js.UndefOr[PromiseConstructorLike] = js.undefined
   var application_name: js.UndefOr[String] = js.undefined
+  var connectionTimeoutMillis: js.UndefOr[Double] = js.undefined
   var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
   var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   // properties from module 'node-pool'
@@ -35,6 +36,7 @@ object PoolConfig {
     min: Int | Double = null,
     password: String = null,
     port: Int | Double = null,
+    query_timeout: Int | Double = null,
     ssl: Boolean | ConnectionOptions = null,
     statement_timeout: `false` | Double = null,
     stream: Duplex = null,
@@ -55,6 +57,7 @@ object PoolConfig {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (query_timeout != null) __obj.updateDynamic("query_timeout")(query_timeout.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (statement_timeout != null) __obj.updateDynamic("statement_timeout")(statement_timeout.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])

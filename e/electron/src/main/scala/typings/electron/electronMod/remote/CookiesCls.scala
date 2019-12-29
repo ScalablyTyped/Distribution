@@ -1,11 +1,11 @@
 package typings.electron.electronMod.remote
 
+import typings.electron.Electron.Cookies
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("electron", "remote.Cookies")
 @js.native
-class CookiesCls ()
-  extends typings.electron.Electron.Cookies
+class CookiesCls () extends Cookies
 

@@ -1,7 +1,6 @@
 package typings.operationDashRetrier
 
 import typings.node.eventsMod.EventEmitter
-import typings.operationDashRetrier.libRetrierMod.Retrier
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

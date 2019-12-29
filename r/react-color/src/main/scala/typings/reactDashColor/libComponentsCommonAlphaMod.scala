@@ -1,8 +1,6 @@
 package typings.reactDashColor
 
 import typings.react.reactMod.Component
-import typings.reactDashColor.libComponentsCommonAlphaMod.Alpha
-import typings.reactDashColor.libComponentsCommonAlphaMod.AlphaProps
 import typings.reactDashColor.reactDashColorMod.CustomPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

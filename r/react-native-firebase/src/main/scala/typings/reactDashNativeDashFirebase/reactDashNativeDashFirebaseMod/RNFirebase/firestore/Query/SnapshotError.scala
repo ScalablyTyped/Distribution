@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SnapshotError
-  extends typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.firestore.Query.NativeError {
+trait SnapshotError extends NativeError {
   var appName: String
   var path: String
 }

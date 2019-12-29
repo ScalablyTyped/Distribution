@@ -66,24 +66,6 @@ import scala.scalajs.js.annotation._
 
 object highchartsStrings {
   @js.native
-  sealed trait `<` extends DataLabelsFilterOperatorValue
-  
-  @js.native
-  sealed trait `<=` extends DataLabelsFilterOperatorValue
-  
-  @js.native
-  sealed trait `==` extends DataLabelsFilterOperatorValue
-  
-  @js.native
-  sealed trait `===` extends DataLabelsFilterOperatorValue
-  
-  @js.native
-  sealed trait `>` extends DataLabelsFilterOperatorValue
-  
-  @js.native
-  sealed trait `>=` extends DataLabelsFilterOperatorValue
-  
-  @js.native
   sealed trait A extends SVGPathCommand
   
   @js.native
@@ -105,16 +87,31 @@ object highchartsStrings {
   sealed trait Dot extends DashStyleValue
   
   @js.native
-  sealed trait Empty extends OptionsDraggableValue
+  sealed trait EqualssignEqualssign extends DataLabelsFilterOperatorValue
+  
+  @js.native
+  sealed trait EqualssignEqualssignEqualssign extends DataLabelsFilterOperatorValue
   
   @js.native
   sealed trait GET extends js.Object
+  
+  @js.native
+  sealed trait Greaterthansign extends DataLabelsFilterOperatorValue
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends DataLabelsFilterOperatorValue
   
   @js.native
   sealed trait H extends SVGPathCommand
   
   @js.native
   sealed trait L extends SVGPathCommand
+  
+  @js.native
+  sealed trait Lessthansign extends DataLabelsFilterOperatorValue
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends DataLabelsFilterOperatorValue
   
   @js.native
   sealed trait LongDash extends DashStyleValue
@@ -168,10 +165,13 @@ object highchartsStrings {
   sealed trait V extends SVGPathCommand
   
   @js.native
-  sealed trait `YYYY/mm/dd` extends OptionsDateFormatValue
+  sealed trait YYYYSlashmmSlashdd extends OptionsDateFormatValue
   
   @js.native
   sealed trait Z extends SVGPathCommand
+  
+  @js.native
+  sealed trait _empty extends OptionsDraggableValue
   
   @js.native
   sealed trait a_ extends SVGPathCommand
@@ -219,7 +219,7 @@ object highchartsStrings {
   sealed trait apo extends js.Object
   
   @js.native
-  sealed trait `application/pdf` extends ExportingMimeTypeValue
+  sealed trait applicationSlashpdf extends ExportingMimeTypeValue
   
   @js.native
   sealed trait arc
@@ -399,10 +399,10 @@ object highchartsStrings {
        with RangeSelectorButtonTypeValue
   
   @js.native
-  sealed trait `dd/mm/YY` extends OptionsDateFormatValue
+  sealed trait ddSlashmmSlashYY extends OptionsDateFormatValue
   
   @js.native
-  sealed trait `dd/mm/YYYY` extends OptionsDateFormatValue
+  sealed trait ddSlashmmSlashYYYY extends OptionsDateFormatValue
   
   @js.native
   sealed trait default extends CursorValue
@@ -527,13 +527,13 @@ object highchartsStrings {
   sealed trait ikh extends js.Object
   
   @js.native
-  sealed trait `image/jpeg` extends ExportingMimeTypeValue
+  sealed trait imageSlashjpeg extends ExportingMimeTypeValue
   
   @js.native
-  sealed trait `image/png` extends ExportingMimeTypeValue
+  sealed trait imageSlashpng extends ExportingMimeTypeValue
   
   @js.native
-  sealed trait `image/svg+xml` extends ExportingMimeTypeValue
+  sealed trait imageSlashsvgPlussignxml extends ExportingMimeTypeValue
   
   @js.native
   sealed trait inside
@@ -642,10 +642,10 @@ object highchartsStrings {
   sealed trait minute extends RangeSelectorButtonTypeValue
   
   @js.native
-  sealed trait `mm/dd/YY` extends OptionsDateFormatValue
+  sealed trait mmSlashddSlashYY extends OptionsDateFormatValue
   
   @js.native
-  sealed trait `mm/dd/YYYY` extends OptionsDateFormatValue
+  sealed trait mmSlashddSlashYYYY extends OptionsDateFormatValue
   
   @js.native
   sealed trait momentum extends js.Object
@@ -1116,18 +1116,6 @@ object highchartsStrings {
   sealed trait `zoom-out` extends CursorValue
   
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
-  @scala.inline
-  def `===`: `===` = "===".asInstanceOf[`===`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
-  @scala.inline
   def A: A = "A".asInstanceOf[A]
   @scala.inline
   def C: C = "C".asInstanceOf[C]
@@ -1142,13 +1130,23 @@ object highchartsStrings {
   @scala.inline
   def Dot: Dot = "Dot".asInstanceOf[Dot]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  @scala.inline
+  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   @scala.inline
   def L: L = "L".asInstanceOf[L]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def LongDash: LongDash = "LongDash".asInstanceOf[LongDash]
   @scala.inline
@@ -1184,9 +1182,11 @@ object highchartsStrings {
   @scala.inline
   def V: V = "V".asInstanceOf[V]
   @scala.inline
-  def `YYYY/mm/dd`: `YYYY/mm/dd` = "YYYY/mm/dd".asInstanceOf[`YYYY/mm/dd`]
+  def YYYYSlashmmSlashdd: YYYYSlashmmSlashdd = "YYYY/mm/dd".asInstanceOf[YYYYSlashmmSlashdd]
   @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def a_ : a_ = "a".asInstanceOf[a_]
   @scala.inline
@@ -1214,7 +1214,7 @@ object highchartsStrings {
   @scala.inline
   def apo: apo = "apo".asInstanceOf[apo]
   @scala.inline
-  def `application/pdf`: `application/pdf` = "application/pdf".asInstanceOf[`application/pdf`]
+  def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
   @scala.inline
   def arc: arc = "arc".asInstanceOf[arc]
   @scala.inline
@@ -1316,9 +1316,9 @@ object highchartsStrings {
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
-  def `dd/mm/YY`: `dd/mm/YY` = "dd/mm/YY".asInstanceOf[`dd/mm/YY`]
+  def ddSlashmmSlashYY: ddSlashmmSlashYY = "dd/mm/YY".asInstanceOf[ddSlashmmSlashYY]
   @scala.inline
-  def `dd/mm/YYYY`: `dd/mm/YYYY` = "dd/mm/YYYY".asInstanceOf[`dd/mm/YYYY`]
+  def ddSlashmmSlashYYYY: ddSlashmmSlashYYYY = "dd/mm/YYYY".asInstanceOf[ddSlashmmSlashYYYY]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
@@ -1396,11 +1396,11 @@ object highchartsStrings {
   @scala.inline
   def ikh: ikh = "ikh".asInstanceOf[ikh]
   @scala.inline
-  def `image/jpeg`: `image/jpeg` = "image/jpeg".asInstanceOf[`image/jpeg`]
+  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   @scala.inline
-  def `image/png`: `image/png` = "image/png".asInstanceOf[`image/png`]
+  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   @scala.inline
-  def `image/svg+xml`: `image/svg+xml` = "image/svg+xml".asInstanceOf[`image/svg+xml`]
+  def imageSlashsvgPlussignxml: imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[imageSlashsvgPlussignxml]
   @scala.inline
   def inside: inside = "inside".asInstanceOf[inside]
   @scala.inline
@@ -1460,9 +1460,9 @@ object highchartsStrings {
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
-  def `mm/dd/YY`: `mm/dd/YY` = "mm/dd/YY".asInstanceOf[`mm/dd/YY`]
+  def mmSlashddSlashYY: mmSlashddSlashYY = "mm/dd/YY".asInstanceOf[mmSlashddSlashYY]
   @scala.inline
-  def `mm/dd/YYYY`: `mm/dd/YYYY` = "mm/dd/YYYY".asInstanceOf[`mm/dd/YYYY`]
+  def mmSlashddSlashYYYY: mmSlashddSlashYYYY = "mm/dd/YYYY".asInstanceOf[mmSlashddSlashYYYY]
   @scala.inline
   def momentum: momentum = "momentum".asInstanceOf[momentum]
   @scala.inline

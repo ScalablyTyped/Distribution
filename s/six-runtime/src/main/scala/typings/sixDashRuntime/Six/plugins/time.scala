@@ -1,6 +1,5 @@
 package typings.sixDashRuntime.Six.plugins
 
-import typings.sixDashRuntime.Six.plugins.time.filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

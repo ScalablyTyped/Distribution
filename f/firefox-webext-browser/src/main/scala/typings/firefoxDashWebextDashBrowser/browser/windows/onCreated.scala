@@ -14,9 +14,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.windows.onCreated")
 @js.native
 object onCreated
-  extends TopLevel[
-      WebExtEvent[
-        js.Function1[/* window */ typings.firefoxDashWebextDashBrowser.browser.windows.Window, Unit]
-      ]
-    ]
+  extends TopLevel[WebExtEvent[js.Function1[/* window */ Window, Unit]]]
 

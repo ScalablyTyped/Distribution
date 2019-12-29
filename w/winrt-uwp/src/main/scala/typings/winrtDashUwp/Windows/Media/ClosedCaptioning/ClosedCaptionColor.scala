@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.ClosedCaptioning
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.black
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.blue
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.cyan
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.default
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.green
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.magenta
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.red
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.white
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.yellow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

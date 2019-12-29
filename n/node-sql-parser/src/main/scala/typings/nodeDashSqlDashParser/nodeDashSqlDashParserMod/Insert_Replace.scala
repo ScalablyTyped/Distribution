@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Insert_Replace extends AST {
   var columns: js.Array[String] | Null
   var db: String | Null
-  var table: String
+  var table: js.Any
   var `type`: replace | insert
   var values: js.Array[InsertReplaceValue]
 }
@@ -17,7 +17,7 @@ trait Insert_Replace extends AST {
 object Insert_Replace {
   @scala.inline
   def apply(
-    table: String,
+    table: js.Any,
     `type`: replace | insert,
     values: js.Array[InsertReplaceValue],
     columns: js.Array[String] = null,

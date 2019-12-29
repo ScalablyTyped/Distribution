@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.gcm
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.gcm.onSendError")
 @js.native
 object onSendError
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* error */ GcmError, Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* error */ GcmError, Unit]]]
 

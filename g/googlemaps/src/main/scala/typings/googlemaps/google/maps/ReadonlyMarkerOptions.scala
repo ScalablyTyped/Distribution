@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ trait ReadonlyMarkerOptions extends js.Object {
   /** @see {@link MarkerOptions#label} */
   val label: js.UndefOr[String | ReadonlyMarkerLabel] = js.undefined
   /** @see {@link MarkerOptions#map} */
-  val map: js.UndefOr[Map | StreetViewPanorama] = js.undefined
+  val map: js.UndefOr[Map[Element] | StreetViewPanorama] = js.undefined
   /** @see {@link MarkerOptions#opacity} */
   val opacity: js.UndefOr[Double] = js.undefined
   /** @see {@link MarkerOptions#optimized} */
@@ -53,7 +54,7 @@ object ReadonlyMarkerOptions {
     draggable: js.UndefOr[Boolean] = js.undefined,
     icon: String | ReadonlyIcon | ReadonlySymbol = null,
     label: String | ReadonlyMarkerLabel = null,
-    map: Map | StreetViewPanorama = null,
+    map: Map[Element] | StreetViewPanorama = null,
     opacity: Int | Double = null,
     optimized: js.UndefOr[Boolean] = js.undefined,
     place: Place = null,

@@ -1,8 +1,6 @@
 package typings.typedoc
 
 import typings.std.ClassDecorator
-import typings.typedoc.distLibConverterComponentsMod.ConverterTypeComponent
-import typings.typedoc.distLibConverterComponentsMod.TypeTypeConverter
 import typings.typedoc.distLibConverterContextMod.Context
 import typings.typedoc.distLibConverterConverterMod.Converter
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection

@@ -16,9 +16,7 @@ trait QueryStream
   var text: String = js.native
   var values: js.UndefOr[js.Array[_]] = js.native
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
 }

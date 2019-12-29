@@ -1,6 +1,6 @@
 package typings.queryDashString.queryDashStringMod
 
-import typings.queryDashString.queryDashStringNumbers.`false`
+import typings.queryDashString.queryDashStringBooleans.`false`
 import typings.queryDashString.queryDashStringStrings.bracket
 import typings.queryDashString.queryDashStringStrings.comma
 import typings.queryDashString.queryDashStringStrings.index

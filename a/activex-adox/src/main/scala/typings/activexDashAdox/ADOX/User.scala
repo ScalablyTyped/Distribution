@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADOX.User")
 @js.native
 class User protected () extends js.Object {
-  var `ADOX.User_typekey`: User = js.native
+  @JSName("ADOX.User_typekey")
+  var ADOXDotUser_typekey: User = js.native
   @JSName("Groups")
   val Groups_Original: Groups = js.native
   var Name: String = js.native

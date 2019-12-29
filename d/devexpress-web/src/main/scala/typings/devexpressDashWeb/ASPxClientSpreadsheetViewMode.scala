@@ -1,8 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.ASPxClientSpreadsheetViewMode.Editing
-import typings.devexpressDashWeb.ASPxClientSpreadsheetViewMode.Reading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

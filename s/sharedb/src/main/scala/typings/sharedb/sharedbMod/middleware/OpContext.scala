@@ -1,5 +1,8 @@
 package typings.sharedb.sharedbMod.middleware
 
+import typings.sharedb.libAgentMod.^
+import typings.sharedb.libSharedbMod.Op
+import typings.sharedb.sharedbMod.sharedb
 import typings.sharedb.sharedbStrings.afterSubmit
 import typings.sharedb.sharedbStrings.apply
 import typings.sharedb.sharedbStrings.commit
@@ -18,18 +21,18 @@ import scala.scalajs.js.annotation._
 trait OpContext extends BaseContext {
   var collection: String
   var id: String
-  var op: typings.sharedb.libSharedbMod.Op
+  var op: Op
 }
 
 object OpContext {
   @scala.inline
   def apply(
     action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
-    agent: typings.sharedb.libAgentMod.^,
-    backend: typings.sharedb.sharedbMod.sharedb,
+    agent: ^,
+    backend: sharedb,
     collection: String,
     id: String,
-    op: typings.sharedb.libSharedbMod.Op
+    op: Op
   ): OpContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
   

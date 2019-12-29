@@ -1,23 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EBillingType.AutoGrant
-import typings.steamDashClient.steamDashClientMod.EBillingType.BillMonthly
-import typings.steamDashClient.steamDashClientMod.EBillingType.BillOnceOnly
-import typings.steamDashClient.steamDashClientMod.EBillingType.BillOnceOrCDKey
-import typings.steamDashClient.steamDashClientMod.EBillingType.CommercialLicense
-import typings.steamDashClient.steamDashClientMod.EBillingType.FreeCommercialLicense
-import typings.steamDashClient.steamDashClientMod.EBillingType.FreeOnDemand
-import typings.steamDashClient.steamDashClientMod.EBillingType.Gift
-import typings.steamDashClient.steamDashClientMod.EBillingType.GuestPass
-import typings.steamDashClient.steamDashClientMod.EBillingType.HardwarePromo
-import typings.steamDashClient.steamDashClientMod.EBillingType.NoCost
-import typings.steamDashClient.steamDashClientMod.EBillingType.NumBillingTypes
-import typings.steamDashClient.steamDashClientMod.EBillingType.OEMTicket
-import typings.steamDashClient.steamDashClientMod.EBillingType.ProofOfPrepurchaseOnly
-import typings.steamDashClient.steamDashClientMod.EBillingType.RecurringOption
-import typings.steamDashClient.steamDashClientMod.EBillingType.Rental
-import typings.steamDashClient.steamDashClientMod.EBillingType.Repurchaseable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

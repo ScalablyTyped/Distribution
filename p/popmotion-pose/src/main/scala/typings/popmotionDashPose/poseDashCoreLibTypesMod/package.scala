@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object poseDashCoreLibTypesMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.popmotionDashPose.popmotionDashPoseBooleans.`false`
   import typings.popmotionDashPose.popmotionDashPoseNumbers.`-1`
   import typings.popmotionDashPose.popmotionDashPoseNumbers.`1`
-  import typings.popmotionDashPose.popmotionDashPoseNumbers.`false`
   import typings.std.Map
   import typings.std.Set
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait IDraggable
   extends typings.senchaUnderscoreTouch.Ext.mixin.IObservable {
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Method] Disable the Draggable
   		* @returns Ext.util.Draggable This Draggable instance
   		*/
@@ -21,15 +21,15 @@ trait IDraggable
   /** [Method] Returns the value of cls
   		* @returns String
   		*/
-  var getCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of constraint
   		* @returns String
   		*/
-  var getConstraint: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getConstraint: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of direction
   		* @returns String
   		*/
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of disabled
   		* @returns Object
   		*/
@@ -37,7 +37,7 @@ trait IDraggable
   /** [Method] Returns the value of draggingCls
   		* @returns String
   		*/
-  var getDraggingCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDraggingCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of element
   		* @returns Object
   		*/
@@ -68,15 +68,15 @@ trait IDraggable
   /** [Method] Sets the value of cls
   		* @param cls String The new value.
   		*/
-  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of constraint
   		* @param constraint String The new value.
   		*/
-  var setConstraint: js.UndefOr[js.Function1[/* constraint */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setConstraint: js.UndefOr[js.Function1[/* constraint */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of direction
   		* @param direction String The new value.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of disabled
   		* @param disabled Object The new value.
   		*/
@@ -84,7 +84,7 @@ trait IDraggable
   /** [Method] Sets the value of draggingCls
   		* @param draggingCls String The new value.
   		*/
-  var setDraggingCls: js.UndefOr[js.Function1[/* draggingCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDraggingCls: js.UndefOr[js.Function1[/* draggingCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of element
   		* @param element Object The new value.
   		*/
@@ -105,7 +105,7 @@ object IDraggable {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -116,26 +116,26 @@ object IDraggable {
     clearListeners: () => Unit = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    direction: java.lang.String = null,
+    direction: String = null,
     disable: () => IDraggable = null,
     enable: () => IDraggable = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBubbleEvents: () => _ = null,
-    getCls: () => java.lang.String = null,
-    getConstraint: () => java.lang.String = null,
-    getDirection: () => java.lang.String = null,
+    getCls: () => String = null,
+    getConstraint: () => String = null,
+    getDirection: () => String = null,
     getDisabled: () => _ = null,
-    getDraggingCls: () => java.lang.String = null,
+    getDraggingCls: () => String = null,
     getElement: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getInitialOffset: () => _ = null,
     getListeners: () => _ = null,
     getTranslatable: () => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initialOffset: js.Any = null,
@@ -143,23 +143,23 @@ object IDraggable {
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.mixin.IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
-    setConstraint: /* constraint */ js.UndefOr[java.lang.String] => Unit = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setCls: /* cls */ js.UndefOr[String] => Unit = null,
+    setConstraint: /* constraint */ js.UndefOr[String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setDisabled: /* disabled */ js.UndefOr[js.Any] => Unit = null,
-    setDraggingCls: /* draggingCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setDraggingCls: /* draggingCls */ js.UndefOr[String] => Unit = null,
     setElement: /* element */ js.UndefOr[js.Any] => Unit = null,
     setInitialOffset: /* initialOffset */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
@@ -167,7 +167,7 @@ object IDraggable {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

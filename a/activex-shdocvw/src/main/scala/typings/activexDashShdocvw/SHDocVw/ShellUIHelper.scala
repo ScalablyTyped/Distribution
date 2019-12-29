@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SHDocVw.ShellUIHelper")
 @js.native
 class ShellUIHelper protected () extends js.Object {
-  var `SHDocVw.ShellUIHelper_typekey`: ShellUIHelper = js.native
+  @JSName("SHDocVw.ShellUIHelper_typekey")
+  var SHDocVwDotShellUIHelper_typekey: ShellUIHelper = js.native
   def AddChannel(URL: String): Unit = js.native
   def AddDesktopComponent(URL: String, Type: String): Unit = js.native
   def AddDesktopComponent(URL: String, Type: String, Left: js.Any): Unit = js.native

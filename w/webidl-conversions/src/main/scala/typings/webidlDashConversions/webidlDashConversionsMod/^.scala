@@ -23,8 +23,6 @@ object ^ extends js.Object {
   def DOMTimeStamp(V: js.Any, opts: Options): Double = js.native
   def DataView(V: js.Any): typings.std.DataView = js.native
   def DataView(V: js.Any, opts: Options): typings.std.DataView = js.native
-  def Error(V: js.Any): typings.std.Error = js.native
-  def Error(V: js.Any, opts: Options): typings.std.Error = js.native
   def Float32Array(V: js.Any): typings.std.Float32Array = js.native
   def Float32Array(V: js.Any, opts: Options): typings.std.Float32Array = js.native
   def Float64Array(V: js.Any): typings.std.Float64Array = js.native
@@ -64,8 +62,8 @@ object ^ extends js.Object {
   def long(V: js.Any, opts: IntegerOptions): Double = js.native
   def `long long`(V: js.Any): Double = js.native
   def `long long`(V: js.Any, opts: IntegerOptions): Double = js.native
-  def `object`(V: js.Any): js.Object = js.native
-  def `object`(V: js.Any, opts: Options): js.Object = js.native
+  def `object`[V](V: V): (V with js.Object) | V = js.native
+  def `object`[V](V: V, opts: Options): (V with js.Object) | V = js.native
   def octet(V: js.Any): Double = js.native
   def octet(V: js.Any, opts: IntegerOptions): Double = js.native
   def short(V: js.Any): Double = js.native

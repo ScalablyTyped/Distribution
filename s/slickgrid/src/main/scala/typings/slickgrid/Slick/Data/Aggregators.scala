@@ -1,6 +1,5 @@
 package typings.slickgrid.Slick.Data
 
-import typings.slickgrid.Slick.Data.Aggregators.Aggregator
 import typings.slickgrid.Slick.GroupTotals
 import typings.slickgrid.Slick.SlickData
 import scala.scalajs.js

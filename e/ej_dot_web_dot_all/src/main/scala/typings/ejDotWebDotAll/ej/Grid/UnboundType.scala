@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.UnboundType.Cancel
-import typings.ejDotWebDotAll.ej.Grid.UnboundType.Delete
-import typings.ejDotWebDotAll.ej.Grid.UnboundType.Edit
-import typings.ejDotWebDotAll.ej.Grid.UnboundType.Save
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

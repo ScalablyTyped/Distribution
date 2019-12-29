@@ -1,7 +1,5 @@
 package typings.antlr4
 
-import typings.antlr4.intervalSetMod.Interval
-import typings.antlr4.intervalSetMod.IntervalSet
 import typings.antlr4.tokenMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`

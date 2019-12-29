@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2007
-import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2010
-import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2013
-import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint97to2003
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

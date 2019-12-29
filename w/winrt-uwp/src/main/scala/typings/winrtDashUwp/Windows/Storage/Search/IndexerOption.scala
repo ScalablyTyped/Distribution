@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.doNotUseIndexer
-import typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.onlyUseIndexer
-import typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.useIndexerWhenAvailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

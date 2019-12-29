@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.basic
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.default
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.enterprise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

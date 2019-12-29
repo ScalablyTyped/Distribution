@@ -26,9 +26,6 @@ object gotNumbers {
   @js.native
   sealed trait `504` extends js.Object
   
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `408`: `408` = 408.asInstanceOf[`408`]
   @scala.inline
@@ -43,7 +40,5 @@ object gotNumbers {
   def `503`: `503` = 503.asInstanceOf[`503`]
   @scala.inline
   def `504`: `504` = 504.asInstanceOf[`504`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

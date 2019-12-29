@@ -1,36 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.BMP
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.CSS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.CSV
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.FOLDER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GIF
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_APPS_SCRIPT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_DOCS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_DRAWINGS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_FORMS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SHEETS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SITES
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SLIDES
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.JAVASCRIPT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.JPEG
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL_LEGACY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT_LEGACY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD_LEGACY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_GRAPHICS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_PRESENTATION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_SPREADSHEET
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PDF
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PLAIN_TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PNG
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.RTF
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.SVG
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.ZIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -193,8 +163,7 @@ object MimeType extends js.Object {
   object GOOGLE_SLIDES extends TopLevel[GOOGLE_SLIDES with Double]
   
   /* 16 */ @js.native
-  object HTML
-    extends TopLevel[typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.HTML with Double]
+  object HTML extends TopLevel[HTML with Double]
   
   /* 17 */ @js.native
   object JAVASCRIPT extends TopLevel[JAVASCRIPT with Double]

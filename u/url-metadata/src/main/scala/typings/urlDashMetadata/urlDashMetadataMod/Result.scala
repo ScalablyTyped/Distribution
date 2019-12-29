@@ -5,36 +5,61 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Result extends js.Object {
-  var `article:author`: js.UndefOr[String] = js.undefined
-  var `article:expiration_time`: js.UndefOr[String] = js.undefined
-  var `article:modified_time`: js.UndefOr[String] = js.undefined
-  var `article:published_time`: js.UndefOr[String] = js.undefined
-  var `article:section`: js.UndefOr[String] = js.undefined
-  var `article:tag`: js.UndefOr[String] = js.undefined
+  @JSName("article:author")
+  var articleColonauthor: js.UndefOr[String] = js.undefined
+  @JSName("article:expiration_time")
+  var articleColonexpiration_time: js.UndefOr[String] = js.undefined
+  @JSName("article:modified_time")
+  var articleColonmodified_time: js.UndefOr[String] = js.undefined
+  @JSName("article:published_time")
+  var articleColonpublished_time: js.UndefOr[String] = js.undefined
+  @JSName("article:section")
+  var articleColonsection: js.UndefOr[String] = js.undefined
+  @JSName("article:tag")
+  var articleColontag: js.UndefOr[String] = js.undefined
   var author: String
   var canonical: String
   var description: String
   var image: String
   var keywords: String
-  var `og:article:author`: js.UndefOr[String] = js.undefined
-  var `og:article:expiration_time`: js.UndefOr[String] = js.undefined
-  var `og:article:modified_time`: js.UndefOr[String] = js.undefined
-  var `og:article:published_time`: js.UndefOr[String] = js.undefined
-  var `og:article:section`: js.UndefOr[String] = js.undefined
-  var `og:article:tag`: js.UndefOr[String] = js.undefined
-  var `og:description`: String
-  var `og:determiner`: String
-  var `og:image`: String
-  var `og:image:height`: String
-  var `og:image:secure_url`: String
-  var `og:image:type`: String
-  var `og:image:width`: String
-  var `og:locale`: String
-  var `og:locale:alternate`: String
-  var `og:site_name`: String
-  var `og:title`: String
-  var `og:type`: String
-  var `og:url`: String
+  @JSName("og:article:author")
+  var ogColonarticleColonauthor: js.UndefOr[String] = js.undefined
+  @JSName("og:article:expiration_time")
+  var ogColonarticleColonexpiration_time: js.UndefOr[String] = js.undefined
+  @JSName("og:article:modified_time")
+  var ogColonarticleColonmodified_time: js.UndefOr[String] = js.undefined
+  @JSName("og:article:published_time")
+  var ogColonarticleColonpublished_time: js.UndefOr[String] = js.undefined
+  @JSName("og:article:section")
+  var ogColonarticleColonsection: js.UndefOr[String] = js.undefined
+  @JSName("og:article:tag")
+  var ogColonarticleColontag: js.UndefOr[String] = js.undefined
+  @JSName("og:description")
+  var ogColondescription: String
+  @JSName("og:determiner")
+  var ogColondeterminer: String
+  @JSName("og:image")
+  var ogColonimage: String
+  @JSName("og:image:height")
+  var ogColonimageColonheight: String
+  @JSName("og:image:secure_url")
+  var ogColonimageColonsecure_url: String
+  @JSName("og:image:type")
+  var ogColonimageColontype: String
+  @JSName("og:image:width")
+  var ogColonimageColonwidth: String
+  @JSName("og:locale")
+  var ogColonlocale: String
+  @JSName("og:locale:alternate")
+  var ogColonlocaleColonalternate: String
+  @JSName("og:site_name")
+  var ogColonsite_name: String
+  @JSName("og:title")
+  var ogColontitle: String
+  @JSName("og:type")
+  var ogColontype: String
+  @JSName("og:url")
+  var ogColonurl: String
   var source: String
   var title: String
   var url: String
@@ -48,61 +73,61 @@ object Result {
     description: String,
     image: String,
     keywords: String,
-    `og:description`: String,
-    `og:determiner`: String,
-    `og:image`: String,
-    `og:image:height`: String,
-    `og:image:secure_url`: String,
-    `og:image:type`: String,
-    `og:image:width`: String,
-    `og:locale`: String,
-    `og:locale:alternate`: String,
-    `og:site_name`: String,
-    `og:title`: String,
-    `og:type`: String,
-    `og:url`: String,
+    ogColondescription: String,
+    ogColondeterminer: String,
+    ogColonimage: String,
+    ogColonimageColonheight: String,
+    ogColonimageColonsecure_url: String,
+    ogColonimageColontype: String,
+    ogColonimageColonwidth: String,
+    ogColonlocale: String,
+    ogColonlocaleColonalternate: String,
+    ogColonsite_name: String,
+    ogColontitle: String,
+    ogColontype: String,
+    ogColonurl: String,
     source: String,
     title: String,
     url: String,
-    `article:author`: String = null,
-    `article:expiration_time`: String = null,
-    `article:modified_time`: String = null,
-    `article:published_time`: String = null,
-    `article:section`: String = null,
-    `article:tag`: String = null,
-    `og:article:author`: String = null,
-    `og:article:expiration_time`: String = null,
-    `og:article:modified_time`: String = null,
-    `og:article:published_time`: String = null,
-    `og:article:section`: String = null,
-    `og:article:tag`: String = null
+    articleColonauthor: String = null,
+    articleColonexpiration_time: String = null,
+    articleColonmodified_time: String = null,
+    articleColonpublished_time: String = null,
+    articleColonsection: String = null,
+    articleColontag: String = null,
+    ogColonarticleColonauthor: String = null,
+    ogColonarticleColonexpiration_time: String = null,
+    ogColonarticleColonmodified_time: String = null,
+    ogColonarticleColonpublished_time: String = null,
+    ogColonarticleColonsection: String = null,
+    ogColonarticleColontag: String = null
   ): Result = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], canonical = canonical.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:description")(`og:description`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:determiner")(`og:determiner`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:image")(`og:image`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:image:height")(`og:image:height`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:image:secure_url")(`og:image:secure_url`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:image:type")(`og:image:type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:image:width")(`og:image:width`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:locale")(`og:locale`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:locale:alternate")(`og:locale:alternate`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:site_name")(`og:site_name`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:title")(`og:title`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:type")(`og:type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("og:url")(`og:url`.asInstanceOf[js.Any])
-    if (`article:author` != null) __obj.updateDynamic("article:author")(`article:author`.asInstanceOf[js.Any])
-    if (`article:expiration_time` != null) __obj.updateDynamic("article:expiration_time")(`article:expiration_time`.asInstanceOf[js.Any])
-    if (`article:modified_time` != null) __obj.updateDynamic("article:modified_time")(`article:modified_time`.asInstanceOf[js.Any])
-    if (`article:published_time` != null) __obj.updateDynamic("article:published_time")(`article:published_time`.asInstanceOf[js.Any])
-    if (`article:section` != null) __obj.updateDynamic("article:section")(`article:section`.asInstanceOf[js.Any])
-    if (`article:tag` != null) __obj.updateDynamic("article:tag")(`article:tag`.asInstanceOf[js.Any])
-    if (`og:article:author` != null) __obj.updateDynamic("og:article:author")(`og:article:author`.asInstanceOf[js.Any])
-    if (`og:article:expiration_time` != null) __obj.updateDynamic("og:article:expiration_time")(`og:article:expiration_time`.asInstanceOf[js.Any])
-    if (`og:article:modified_time` != null) __obj.updateDynamic("og:article:modified_time")(`og:article:modified_time`.asInstanceOf[js.Any])
-    if (`og:article:published_time` != null) __obj.updateDynamic("og:article:published_time")(`og:article:published_time`.asInstanceOf[js.Any])
-    if (`og:article:section` != null) __obj.updateDynamic("og:article:section")(`og:article:section`.asInstanceOf[js.Any])
-    if (`og:article:tag` != null) __obj.updateDynamic("og:article:tag")(`og:article:tag`.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:description")(ogColondescription.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:determiner")(ogColondeterminer.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:image")(ogColonimage.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:image:height")(ogColonimageColonheight.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:image:secure_url")(ogColonimageColonsecure_url.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:image:type")(ogColonimageColontype.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:image:width")(ogColonimageColonwidth.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:locale")(ogColonlocale.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:locale:alternate")(ogColonlocaleColonalternate.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:site_name")(ogColonsite_name.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:title")(ogColontitle.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:type")(ogColontype.asInstanceOf[js.Any])
+    __obj.updateDynamic("og:url")(ogColonurl.asInstanceOf[js.Any])
+    if (articleColonauthor != null) __obj.updateDynamic("article:author")(articleColonauthor.asInstanceOf[js.Any])
+    if (articleColonexpiration_time != null) __obj.updateDynamic("article:expiration_time")(articleColonexpiration_time.asInstanceOf[js.Any])
+    if (articleColonmodified_time != null) __obj.updateDynamic("article:modified_time")(articleColonmodified_time.asInstanceOf[js.Any])
+    if (articleColonpublished_time != null) __obj.updateDynamic("article:published_time")(articleColonpublished_time.asInstanceOf[js.Any])
+    if (articleColonsection != null) __obj.updateDynamic("article:section")(articleColonsection.asInstanceOf[js.Any])
+    if (articleColontag != null) __obj.updateDynamic("article:tag")(articleColontag.asInstanceOf[js.Any])
+    if (ogColonarticleColonauthor != null) __obj.updateDynamic("og:article:author")(ogColonarticleColonauthor.asInstanceOf[js.Any])
+    if (ogColonarticleColonexpiration_time != null) __obj.updateDynamic("og:article:expiration_time")(ogColonarticleColonexpiration_time.asInstanceOf[js.Any])
+    if (ogColonarticleColonmodified_time != null) __obj.updateDynamic("og:article:modified_time")(ogColonarticleColonmodified_time.asInstanceOf[js.Any])
+    if (ogColonarticleColonpublished_time != null) __obj.updateDynamic("og:article:published_time")(ogColonarticleColonpublished_time.asInstanceOf[js.Any])
+    if (ogColonarticleColonsection != null) __obj.updateDynamic("og:article:section")(ogColonarticleColonsection.asInstanceOf[js.Any])
+    if (ogColonarticleColontag != null) __obj.updateDynamic("og:article:tag")(ogColonarticleColontag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

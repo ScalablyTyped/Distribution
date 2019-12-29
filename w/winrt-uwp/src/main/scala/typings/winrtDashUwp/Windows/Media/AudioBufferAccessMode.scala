@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.read
-import typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.readWrite
-import typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

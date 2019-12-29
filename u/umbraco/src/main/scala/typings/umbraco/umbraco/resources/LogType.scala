@@ -1,8 +1,6 @@
 package typings.umbraco.umbraco.resources
 
 import org.scalablytyped.runtime.TopLevel
-import typings.umbraco.umbraco.resources.LogType.Debug
-import typings.umbraco.umbraco.resources.LogType.Info
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

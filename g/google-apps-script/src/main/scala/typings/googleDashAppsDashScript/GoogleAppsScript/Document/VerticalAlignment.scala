@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.VerticalAlignment.BOTTOM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.VerticalAlignment.CENTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.VerticalAlignment.TOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -24,7 +24,7 @@ trait Scale extends js.Object {
   /** Specifies the scale Direction of the Scale. See
     * @Default {CounterClockwise}
     */
-  var direction: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Direction | String] = js.undefined
+  var direction: js.UndefOr[Direction | String] = js.undefined
   /** Specifies the indicator
     * @Default {Array}
     */
@@ -122,7 +122,7 @@ object Scale {
     barPointers: js.Array[ScalesBarPointer] = null,
     border: ScalesBorder = null,
     customLabels: js.Array[ScalesCustomLabel] = null,
-    direction: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Direction | String = null,
+    direction: Direction | String = null,
     indicators: js.Array[ScalesIndicator] = null,
     labels: js.Array[ScalesLabel] = null,
     length: Int | Double = null,

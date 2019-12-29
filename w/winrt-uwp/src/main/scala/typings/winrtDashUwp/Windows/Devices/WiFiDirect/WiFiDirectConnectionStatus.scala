@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionStatus.connected
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionStatus.disconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

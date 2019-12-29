@@ -21,7 +21,8 @@ class Shell protected () extends js.Object {
   val Application: js.Any = js.native
   /** Get Parent object */
   val Parent: js.Any = js.native
-  var `Shell32.Shell_typekey`: Shell = js.native
+  @JSName("Shell32.Shell_typekey")
+  var Shell32DotShell_typekey: Shell = js.native
   def AddToRecent(): Unit = js.native
   /** Add an object to the Recent Docuements */
   def AddToRecent(varFile: String): Unit = js.native

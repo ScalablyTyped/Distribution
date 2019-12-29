@@ -1,6 +1,5 @@
 package typings.geolib
 
-import typings.geolib.esGetCompassDirectionMod.BearingFunction
 import typings.geolib.esTypesMod.GeolibInputCoordinates
 import typings.geolib.geolibStrings.E
 import typings.geolib.geolibStrings.ENE

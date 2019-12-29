@@ -1,6 +1,7 @@
 package typings.ember.emberMod.Ember
 
 import org.scalablytyped.runtime.TopLevel
+import typings.atEmberObject.atEmberObjectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,5 @@ trait Comparable extends js.Object {
 @JSImport("ember", "Ember.Comparable")
 @js.native
 object Comparable
-  extends TopLevel[
-      typings.atEmberObject.mixinMod.default[Comparable, typings.atEmberObject.atEmberObjectMod.default]
-    ]
+  extends TopLevel[typings.atEmberObject.mixinMod.default[Comparable, default]]
 

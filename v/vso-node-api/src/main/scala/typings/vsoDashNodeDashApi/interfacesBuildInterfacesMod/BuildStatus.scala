@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.All
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Cancelling
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Completed
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.InProgress
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.None
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.NotStarted
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Postponed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation._
 
 object atMaterialTextfieldStrings {
   @js.native
-  sealed trait `DOTmdc-floating-label` extends js.Object
+  sealed trait `Dotmdc-floating-label` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-line-ripple` extends js.Object
+  sealed trait `Dotmdc-line-ripple` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-notched-outline` extends js.Object
+  sealed trait `Dotmdc-notched-outline` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-text-field__icon` extends js.Object
+  sealed trait `Dotmdc-text-field__icon` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-text-field__input` extends js.Object
+  sealed trait `Dotmdc-text-field__input` extends js.Object
   
   @js.native
-  sealed trait `MDCTextField:icon` extends js.Object
+  sealed trait MDCTextFieldColonicon extends js.Object
   
   @js.native
   sealed trait `aria-controls` extends js.Object
@@ -66,17 +66,17 @@ object atMaterialTextfieldStrings {
   sealed trait role extends js.Object
   
   @scala.inline
-  def `DOTmdc-floating-label`: `DOTmdc-floating-label` = ".mdc-floating-label".asInstanceOf[`DOTmdc-floating-label`]
+  def `Dotmdc-floating-label`: `Dotmdc-floating-label` = ".mdc-floating-label".asInstanceOf[`Dotmdc-floating-label`]
   @scala.inline
-  def `DOTmdc-line-ripple`: `DOTmdc-line-ripple` = ".mdc-line-ripple".asInstanceOf[`DOTmdc-line-ripple`]
+  def `Dotmdc-line-ripple`: `Dotmdc-line-ripple` = ".mdc-line-ripple".asInstanceOf[`Dotmdc-line-ripple`]
   @scala.inline
-  def `DOTmdc-notched-outline`: `DOTmdc-notched-outline` = ".mdc-notched-outline".asInstanceOf[`DOTmdc-notched-outline`]
+  def `Dotmdc-notched-outline`: `Dotmdc-notched-outline` = ".mdc-notched-outline".asInstanceOf[`Dotmdc-notched-outline`]
   @scala.inline
-  def `DOTmdc-text-field__icon`: `DOTmdc-text-field__icon` = ".mdc-text-field__icon".asInstanceOf[`DOTmdc-text-field__icon`]
+  def `Dotmdc-text-field__icon`: `Dotmdc-text-field__icon` = ".mdc-text-field__icon".asInstanceOf[`Dotmdc-text-field__icon`]
   @scala.inline
-  def `DOTmdc-text-field__input`: `DOTmdc-text-field__input` = ".mdc-text-field__input".asInstanceOf[`DOTmdc-text-field__input`]
+  def `Dotmdc-text-field__input`: `Dotmdc-text-field__input` = ".mdc-text-field__input".asInstanceOf[`Dotmdc-text-field__input`]
   @scala.inline
-  def `MDCTextField:icon`: `MDCTextField:icon` = "MDCTextField:icon".asInstanceOf[`MDCTextField:icon`]
+  def MDCTextFieldColonicon: MDCTextFieldColonicon = "MDCTextField:icon".asInstanceOf[MDCTextFieldColonicon]
   @scala.inline
   def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
   @scala.inline

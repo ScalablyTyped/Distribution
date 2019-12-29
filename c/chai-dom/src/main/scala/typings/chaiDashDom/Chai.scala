@@ -1,6 +1,5 @@
 package typings.chaiDashDom
 
-import typings.chaiDashDom.Chai.Assertion
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -13,7 +13,8 @@ class ChartBorder protected () extends js.Object {
   val Creator: Double = js.native
   var LineStyle: js.Any = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ChartBorder_typekey`: ChartBorder = js.native
+  @JSName("PowerPoint.ChartBorder_typekey")
+  var PowerPointDotChartBorder_typekey: ChartBorder = js.native
   var Weight: js.Any = js.native
 }
 

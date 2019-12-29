@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.VariableGroupActionFilter.Manage
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.VariableGroupActionFilter.None
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.VariableGroupActionFilter.Use
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

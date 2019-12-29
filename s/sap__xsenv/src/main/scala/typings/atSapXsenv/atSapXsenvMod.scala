@@ -1,6 +1,5 @@
 package typings.atSapXsenv
 
-import typings.atSapXsenv.atSapXsenvMod.ServiceFilter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

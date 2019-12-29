@@ -29,7 +29,8 @@ trait MimeNode extends js.Object {
   def addHeader(key: String, value: String): this.type = js.native
   /** Appends an existing node to the mime tree. Removes the node from an existing tree if needed */
   def appendChild(childNode: MimeNode): MimeNode = js.native
-  /** Generate the message and return it with a callback */
+  def build(): js.Promise[Buffer] = js.native
+  /** Generate the message and return it with a callback or promise */
   def build(callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = js.native
   /** Builds the header block for the mime node. Append \r\n\r\n before writing the content */
   def buildHeaders(): String = js.native

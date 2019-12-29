@@ -10,7 +10,7 @@ trait ChangeEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the ProgressBar model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ProgressBar.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the current progress percentage
     */
   var percentage: js.UndefOr[js.Any] = js.undefined
@@ -26,7 +26,7 @@ object ChangeEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.ProgressBar.Model = null,
+    model: Model = null,
     percentage: js.Any = null,
     `type`: String = null,
     value: String = null

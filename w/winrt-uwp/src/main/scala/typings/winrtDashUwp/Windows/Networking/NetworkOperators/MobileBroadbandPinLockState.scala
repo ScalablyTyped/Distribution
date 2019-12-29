@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinLockState.pinRequired
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinLockState.pinUnblockKeyRequired
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinLockState.unknown
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinLockState.unlocked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

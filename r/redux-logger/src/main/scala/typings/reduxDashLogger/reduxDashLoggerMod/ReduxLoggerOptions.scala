@@ -1,6 +1,6 @@
 package typings.reduxDashLogger.reduxDashLoggerMod
 
-import typings.reduxDashLogger.reduxDashLoggerNumbers.`false`
+import typings.reduxDashLogger.reduxDashLoggerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

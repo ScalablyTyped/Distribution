@@ -12,7 +12,8 @@ class OMathLimUpp protected () extends js.Object {
   val E: OMath = js.native
   val Lim: OMath = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathLimUpp_typekey`: OMathLimUpp = js.native
+  @JSName("Word.OMathLimUpp_typekey")
+  var WordDotOMathLimUpp_typekey: OMathLimUpp = js.native
   def ToLimLow(): OMathFunction = js.native
 }
 

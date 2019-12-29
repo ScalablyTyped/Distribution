@@ -25,7 +25,7 @@ trait DialogflowApp[TConvData, TUserStorage, TContexts /* <: Contexts */, TConve
   def fallback(
     handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, Parameters, Argument]
   ): this.type = js.native
-  def intent[TParameters /* <: Parameters */](intent: String, handler: String): this.type = js.native
+  def intent[TArgument /* <: Argument */](intent: String, handler: String): this.type = js.native
   /**
     * Sets the IntentHandler to be execute when the fulfillment is called
     * with a given Dialogflow intent name.
@@ -37,58 +37,33 @@ trait DialogflowApp[TConvData, TUserStorage, TContexts /* <: Contexts */, TConve
     *     to the IntentHandler of the redirected intent name.
     * @public
     */
-  def intent[TParameters /* <: Parameters */](
-    intent: String,
-    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, TParameters, Argument]
-  ): this.type = js.native
-  def intent[TParameters /* <: Parameters */](intent: js.Array[DefaultDialogflowIntent | String], handler: String): this.type = js.native
-  def intent[TParameters /* <: Parameters */](
-    intent: js.Array[DefaultDialogflowIntent | String],
-    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, TParameters, Argument]
-  ): this.type = js.native
-  def intent[TParameters /* <: Parameters */](intent: DefaultDialogflowIntent, handler: String): this.type = js.native
-  /**
-    * Sets the IntentHandler to be execute when the fulfillment is called
-    * with a given Dialogflow intent name.
-    *
-    * @param intent The Dialogflow intent name to match.
-    *     When given an array, sets the IntentHandler for any intent name in the array.
-    * @param handler The IntentHandler to be executed when the intent name is matched.
-    *     When given a string instead of a function, the intent fulfillment will be redirected
-    *     to the IntentHandler of the redirected intent name.
-    * @public
-    */
-  def intent[TParameters /* <: Parameters */](
-    intent: DefaultDialogflowIntent,
-    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, TParameters, Argument]
-  ): this.type = js.native
-  @JSName("intent")
-  def intent_TArgument_Argument[TArgument /* <: Argument */](intent: String, handler: String): this.type = js.native
-  /**
-    * Sets the IntentHandler to be execute when the fulfillment is called
-    * with a given Dialogflow intent name.
-    *
-    * @param intent The Dialogflow intent name to match.
-    *     When given an array, sets the IntentHandler for any intent name in the array.
-    * @param handler The IntentHandler to be executed when the intent name is matched.
-    *     When given a string instead of a function, the intent fulfillment will be redirected
-    *     to the IntentHandler of the redirected intent name.
-    * @public
-    */
-  @JSName("intent")
-  def intent_TArgument_Argument[TArgument /* <: Argument */](
+  def intent[TArgument /* <: Argument */](
     intent: String,
     handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, Parameters, TArgument]
   ): this.type = js.native
-  @JSName("intent")
-  def intent_TArgument_Argument[TArgument /* <: Argument */](intent: js.Array[DefaultDialogflowIntent | String], handler: String): this.type = js.native
-  @JSName("intent")
-  def intent_TArgument_Argument[TArgument /* <: Argument */](
+  def intent[TArgument /* <: Argument */](intent: js.Array[DefaultDialogflowIntent | String], handler: String): this.type = js.native
+  def intent[TArgument /* <: Argument */](
     intent: js.Array[DefaultDialogflowIntent | String],
     handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, Parameters, TArgument]
   ): this.type = js.native
+  def intent[TArgument /* <: Argument */](intent: DefaultDialogflowIntent, handler: String): this.type = js.native
+  /**
+    * Sets the IntentHandler to be execute when the fulfillment is called
+    * with a given Dialogflow intent name.
+    *
+    * @param intent The Dialogflow intent name to match.
+    *     When given an array, sets the IntentHandler for any intent name in the array.
+    * @param handler The IntentHandler to be executed when the intent name is matched.
+    *     When given a string instead of a function, the intent fulfillment will be redirected
+    *     to the IntentHandler of the redirected intent name.
+    * @public
+    */
+  def intent[TArgument /* <: Argument */](
+    intent: DefaultDialogflowIntent,
+    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, Parameters, TArgument]
+  ): this.type = js.native
   @JSName("intent")
-  def intent_TArgument_Argument[TArgument /* <: Argument */](intent: DefaultDialogflowIntent, handler: String): this.type = js.native
+  def intent_TParameters_Parameters[TParameters /* <: Parameters */](intent: String, handler: String): this.type = js.native
   /**
     * Sets the IntentHandler to be execute when the fulfillment is called
     * with a given Dialogflow intent name.
@@ -101,9 +76,34 @@ trait DialogflowApp[TConvData, TUserStorage, TContexts /* <: Contexts */, TConve
     * @public
     */
   @JSName("intent")
-  def intent_TArgument_Argument[TArgument /* <: Argument */](
+  def intent_TParameters_Parameters[TParameters /* <: Parameters */](
+    intent: String,
+    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, TParameters, Argument]
+  ): this.type = js.native
+  @JSName("intent")
+  def intent_TParameters_Parameters[TParameters /* <: Parameters */](intent: js.Array[DefaultDialogflowIntent | String], handler: String): this.type = js.native
+  @JSName("intent")
+  def intent_TParameters_Parameters[TParameters /* <: Parameters */](
+    intent: js.Array[DefaultDialogflowIntent | String],
+    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, TParameters, Argument]
+  ): this.type = js.native
+  @JSName("intent")
+  def intent_TParameters_Parameters[TParameters /* <: Parameters */](intent: DefaultDialogflowIntent, handler: String): this.type = js.native
+  /**
+    * Sets the IntentHandler to be execute when the fulfillment is called
+    * with a given Dialogflow intent name.
+    *
+    * @param intent The Dialogflow intent name to match.
+    *     When given an array, sets the IntentHandler for any intent name in the array.
+    * @param handler The IntentHandler to be executed when the intent name is matched.
+    *     When given a string instead of a function, the intent fulfillment will be redirected
+    *     to the IntentHandler of the redirected intent name.
+    * @public
+    */
+  @JSName("intent")
+  def intent_TParameters_Parameters[TParameters /* <: Parameters */](
     intent: DefaultDialogflowIntent,
-    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, Parameters, TArgument]
+    handler: DialogflowIntentHandler[TConvData, TUserStorage, TContexts, TConversation, TParameters, Argument]
   ): this.type = js.native
   @JSName("intent")
   def intent_TParameters_ParametersTArgument_Argument[TParameters /* <: Parameters */, TArgument /* <: Argument */](intent: String, handler: String): this.type = js.native

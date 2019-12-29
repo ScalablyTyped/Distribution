@@ -16,7 +16,8 @@ class AddIn protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   val Path: String = js.native
-  var `Word.AddIn_typekey`: AddIn = js.native
+  @JSName("Word.AddIn_typekey")
+  var WordDotAddIn_typekey: AddIn = js.native
   def Delete(): Unit = js.native
 }
 

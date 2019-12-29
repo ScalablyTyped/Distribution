@@ -3,9 +3,6 @@ package typings.protractor
 import org.scalablytyped.runtime.StringDictionary
 import typings.protractor.builtBrowserMod.ElementHelper
 import typings.protractor.builtBrowserMod.ProtractorBrowser
-import typings.protractor.builtElementMod.ElementArrayFinder
-import typings.protractor.builtElementMod.ElementFinder
-import typings.protractor.builtElementMod.WebdriverWebElement
 import typings.protractor.builtLocatorsMod.Locator
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.IWebElementId
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebElement
@@ -65,7 +62,7 @@ object builtElementMod extends js.Object {
       *     array of the located {@link webdriver.WebElement}s.
       */
     @JSName("$$")
-    def $$(selector: String): ElementArrayFinder = js.native
+    def DollarDollar(selector: String): ElementArrayFinder = js.native
     /**
       * Calls to ElementArrayFinder may be chained to find an array of elements
       * using the current elements in this ElementArrayFinder as the starting
@@ -604,7 +601,7 @@ object builtElementMod extends js.Object {
       * @returns {ElementArrayFinder}
       */
     @JSName("$$")
-    def $$(selector: String): ElementArrayFinder = js.native
+    def DollarDollar(selector: String): ElementArrayFinder = js.native
     /**
       * Calls to {@code all} may be chained to find an array of elements within a
       * parent.
@@ -789,7 +786,7 @@ object builtElementMod extends js.Object {
     js.Function1[/* selector */ String, ElementFinder]
   ] = js.native
   @JSName("build$$")
-  var build$$: js.Function2[
+  var buildDollarDollar: js.Function2[
     /* element */ ElementHelper, 
     /* by */ TypeofClassBy, 
     js.Function1[/* selector */ String, ElementArrayFinder]

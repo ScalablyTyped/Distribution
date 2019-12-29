@@ -7,8 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITrigger
-  extends typings.extjs.Ext.form.field.IText {
+trait ITrigger extends IText {
   /** [Config Option] (Boolean) */
   var editable: js.UndefOr[Boolean] = js.undefined
   /** [Method] Generates the arguments for the field decorations rendering template
@@ -35,23 +34,23 @@ trait ITrigger
   		*/
   var setEditable: js.UndefOr[js.Function1[/* editable */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var triggerBaseCls: js.UndefOr[java.lang.String] = js.undefined
+  var triggerBaseCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var triggerCls: js.UndefOr[java.lang.String] = js.undefined
+  var triggerCls: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.CompositeElement) */
   var triggerEl: js.UndefOr[ICompositeElement] = js.undefined
   /** [Config Option] (String) */
-  var triggerNoEditCls: js.UndefOr[java.lang.String] = js.undefined
+  var triggerNoEditCls: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var triggerWrap: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var triggerWrapCls: js.UndefOr[java.lang.String] = js.undefined
+  var triggerWrapCls: js.UndefOr[String] = js.undefined
 }
 
 object ITrigger {
   @scala.inline
   def apply(
-    IText: typings.extjs.Ext.form.field.IText = null,
+    IText: IText = null,
     editable: js.UndefOr[Boolean] = js.undefined,
     getLabelableRenderData: () => _ = null,
     getTriggerWidth: () => Double = null,
@@ -60,12 +59,12 @@ object ITrigger {
     onTriggerClick: /* e */ js.UndefOr[IEventObject] => Unit = null,
     repeatTriggerClick: js.UndefOr[Boolean] = js.undefined,
     setEditable: /* editable */ js.UndefOr[Boolean] => Unit = null,
-    triggerBaseCls: java.lang.String = null,
-    triggerCls: java.lang.String = null,
+    triggerBaseCls: String = null,
+    triggerCls: String = null,
     triggerEl: ICompositeElement = null,
-    triggerNoEditCls: java.lang.String = null,
+    triggerNoEditCls: String = null,
     triggerWrap: IElement = null,
-    triggerWrapCls: java.lang.String = null
+    triggerWrapCls: String = null
   ): ITrigger = {
     val __obj = js.Dynamic.literal()
     if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.SubForm")
 @js.native
 class SubForm protected () extends js.Object {
-  var `Access.SubForm_typekey`: SubForm = js.native
+  @JSName("Access.SubForm_typekey")
+  var AccessDotSubForm_typekey: SubForm = js.native
   var AddColon: Boolean = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var AutoLabel: Boolean = js.native

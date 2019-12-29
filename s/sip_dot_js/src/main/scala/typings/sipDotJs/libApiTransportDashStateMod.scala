@@ -1,11 +1,6 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libApiTransportDashStateMod.TransportState
-import typings.sipDotJs.libApiTransportDashStateMod.TransportState.Connected
-import typings.sipDotJs.libApiTransportDashStateMod.TransportState.Connecting
-import typings.sipDotJs.libApiTransportDashStateMod.TransportState.Disconnected
-import typings.sipDotJs.libApiTransportDashStateMod.TransportState.Disconnecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +14,7 @@ object libApiTransportDashStateMod extends js.Object {
   @js.native
   object TransportState extends js.Object {
     /**
-      * The `connect()` method resovled.
+      * The `connect()` method resolved.
       */
     @js.native
     sealed trait Connected extends TransportState

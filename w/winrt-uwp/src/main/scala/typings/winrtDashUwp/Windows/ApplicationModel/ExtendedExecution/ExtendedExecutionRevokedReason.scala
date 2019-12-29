@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.resumed
-import typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.systemPolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

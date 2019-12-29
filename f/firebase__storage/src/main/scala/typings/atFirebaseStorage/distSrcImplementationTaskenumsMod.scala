@@ -1,7 +1,5 @@
 package typings.atFirebaseStorage
 
-import typings.atFirebaseStorage.distSrcImplementationTaskenumsMod.InternalTaskState
-import typings.atFirebaseStorage.distSrcImplementationTaskenumsMod.TaskState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

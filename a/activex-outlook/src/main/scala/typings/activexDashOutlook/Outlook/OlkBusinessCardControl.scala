@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class OlkBusinessCardControl protected () extends js.Object {
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkBusinessCardControl_typekey`: OlkBusinessCardControl = js.native
+  @JSName("Outlook.OlkBusinessCardControl_typekey")
+  var OutlookDotOlkBusinessCardControl_typekey: OlkBusinessCardControl = js.native
 }
 

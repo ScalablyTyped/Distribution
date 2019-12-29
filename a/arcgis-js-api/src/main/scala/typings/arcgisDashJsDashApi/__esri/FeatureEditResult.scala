@@ -14,7 +14,13 @@ trait FeatureEditResult extends Object {
     */
   var error: FeatureEditResultError
   /**
-    * Object Id of the feature that was edited.
+    * The globalId of the feature or the attachment that was edited.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
+    */
+  var globalId: String
+  /**
+    * The objectId of the feature or the attachmentId of the attachment that was edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
     */
@@ -26,11 +32,12 @@ object FeatureEditResult {
   def apply(
     constructor: js.Function,
     error: FeatureEditResultError,
+    globalId: String,
     hasOwnProperty: PropertyKey => Boolean,
     objectId: Double,
     propertyIsEnumerable: PropertyKey => Boolean
   ): FeatureEditResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), objectId = objectId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), objectId = objectId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[FeatureEditResult]
   }

@@ -38,142 +38,142 @@ object fileDashTypeStrings {
   sealed trait apng extends FileType
   
   @js.native
-  sealed trait `application/dicom` extends MimeType
+  sealed trait applicationSlashdicom extends MimeType
   
   @js.native
-  sealed trait `application/epub+zip` extends MimeType
+  sealed trait applicationSlashepubPlussignzip extends MimeType
   
   @js.native
-  sealed trait `application/gzip` extends MimeType
+  sealed trait applicationSlashgzip extends MimeType
   
   @js.native
-  sealed trait `application/mxf` extends MimeType
+  sealed trait applicationSlashmxf extends MimeType
   
   @js.native
-  sealed trait `application/ogg` extends MimeType
+  sealed trait applicationSlashogg extends MimeType
   
   @js.native
-  sealed trait `application/pdf` extends MimeType
+  sealed trait applicationSlashpdf extends MimeType
   
   @js.native
-  sealed trait `application/postscript` extends MimeType
+  sealed trait applicationSlashpostscript extends MimeType
   
   @js.native
-  sealed trait `application/rtf` extends MimeType
+  sealed trait applicationSlashrtf extends MimeType
   
   @js.native
-  sealed trait `application/vndDOTms-asf` extends MimeType
+  sealed trait `applicationSlashvndDotms-asf` extends MimeType
   
   @js.native
-  sealed trait `application/vndDOTms-cab-compressed` extends MimeType
+  sealed trait `applicationSlashvndDotms-cab-compressed` extends MimeType
   
   @js.native
-  sealed trait `application/vndDOTms-fontobject` extends MimeType
+  sealed trait `applicationSlashvndDotms-fontobject` extends MimeType
   
   @js.native
-  sealed trait `application/vndDOToasisDOTopendocumentDOTpresentation` extends MimeType
+  sealed trait applicationSlashvndDotoasisDotopendocumentDotpresentation extends MimeType
   
   @js.native
-  sealed trait `application/vndDOToasisDOTopendocumentDOTspreadsheet` extends MimeType
+  sealed trait applicationSlashvndDotoasisDotopendocumentDotspreadsheet extends MimeType
   
   @js.native
-  sealed trait `application/vndDOToasisDOTopendocumentDOTtext` extends MimeType
+  sealed trait applicationSlashvndDotoasisDotopendocumentDottext extends MimeType
   
   @js.native
-  sealed trait `application/vndDOTopenxmlformats-officedocumentDOTpresentationmlDOTpresentation` extends MimeType
+  sealed trait `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation` extends MimeType
   
   @js.native
-  sealed trait `application/vndDOTopenxmlformats-officedocumentDOTspreadsheetmlDOTsheet` extends MimeType
+  sealed trait `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet` extends MimeType
   
   @js.native
-  sealed trait `application/vndDOTopenxmlformats-officedocumentDOTwordprocessingmlDOTdocument` extends MimeType
+  sealed trait `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` extends MimeType
   
   @js.native
-  sealed trait `application/vndDOTtcpdumpDOTpcap` extends MimeType
+  sealed trait applicationSlashvndDottcpdumpDotpcap extends MimeType
   
   @js.native
-  sealed trait `application/wasm` extends MimeType
+  sealed trait applicationSlashwasm extends MimeType
   
   @js.native
-  sealed trait `application/x-7z-compressed` extends MimeType
+  sealed trait `applicationSlashx-7z-compressed` extends MimeType
   
   @js.native
-  sealed trait `application/x-apache-arrow` extends MimeType
+  sealed trait `applicationSlashx-apache-arrow` extends MimeType
   
   @js.native
-  sealed trait `application/x-apple-diskimage` extends MimeType
+  sealed trait `applicationSlashx-apple-diskimage` extends MimeType
   
   @js.native
-  sealed trait `application/x-blender` extends MimeType
+  sealed trait `applicationSlashx-blender` extends MimeType
   
   @js.native
-  sealed trait `application/x-bzip2` extends MimeType
+  sealed trait `applicationSlashx-bzip2` extends MimeType
   
   @js.native
-  sealed trait `application/x-compress` extends MimeType
+  sealed trait `applicationSlashx-compress` extends MimeType
   
   @js.native
-  sealed trait `application/x-deb` extends MimeType
+  sealed trait `applicationSlashx-deb` extends MimeType
   
   @js.native
-  sealed trait `application/x-esri-shape` extends MimeType
+  sealed trait `applicationSlashx-esri-shape` extends MimeType
   
   @js.native
-  sealed trait `application/x-google-chrome-extension` extends MimeType
+  sealed trait `applicationSlashx-google-chrome-extension` extends MimeType
   
   @js.native
-  sealed trait `application/x-lzip` extends MimeType
+  sealed trait `applicationSlashx-lzip` extends MimeType
   
   @js.native
-  sealed trait `application/x-mie` extends MimeType
+  sealed trait `applicationSlashx-mie` extends MimeType
   
   @js.native
-  sealed trait `application/x-mobipocket-ebook` extends MimeType
+  sealed trait `applicationSlashx-mobipocket-ebook` extends MimeType
   
   @js.native
-  sealed trait `application/x-msdownload` extends MimeType
+  sealed trait `applicationSlashx-msdownload` extends MimeType
   
   @js.native
-  sealed trait `application/x-msi` extends MimeType
+  sealed trait `applicationSlashx-msi` extends MimeType
   
   @js.native
-  sealed trait `application/x-nintendo-nes-rom` extends MimeType
+  sealed trait `applicationSlashx-nintendo-nes-rom` extends MimeType
   
   @js.native
-  sealed trait `application/x-rar-compressed` extends MimeType
+  sealed trait `applicationSlashx-rar-compressed` extends MimeType
   
   @js.native
-  sealed trait `application/x-rpm` extends MimeType
+  sealed trait `applicationSlashx-rpm` extends MimeType
   
   @js.native
-  sealed trait `application/x-shockwave-flash` extends MimeType
+  sealed trait `applicationSlashx-shockwave-flash` extends MimeType
   
   @js.native
-  sealed trait `application/x-sqlite3` extends MimeType
+  sealed trait `applicationSlashx-sqlite3` extends MimeType
   
   @js.native
-  sealed trait `application/x-tar` extends MimeType
+  sealed trait `applicationSlashx-tar` extends MimeType
   
   @js.native
-  sealed trait `application/x-unix-archive` extends MimeType
+  sealed trait `applicationSlashx-unix-archive` extends MimeType
   
   @js.native
-  sealed trait `application/x-xpinstall` extends MimeType
+  sealed trait `applicationSlashx-xpinstall` extends MimeType
   
   @js.native
-  sealed trait `application/x-xz` extends MimeType
+  sealed trait `applicationSlashx-xz` extends MimeType
   
   @js.native
-  sealed trait `application/xDOTappleDOTalias` extends MimeType
+  sealed trait applicationSlashxDotappleDotalias extends MimeType
   
   @js.native
-  sealed trait `application/xDOTmsDOTshortcut` extends MimeType
+  sealed trait applicationSlashxDotmsDotshortcut extends MimeType
   
   @js.native
-  sealed trait `application/xml` extends MimeType
+  sealed trait applicationSlashxml extends MimeType
   
   @js.native
-  sealed trait `application/zip` extends MimeType
+  sealed trait applicationSlashzip extends MimeType
   
   @js.native
   sealed trait ar extends FileType
@@ -188,58 +188,58 @@ object fileDashTypeStrings {
   sealed trait asf extends FileType
   
   @js.native
-  sealed trait `audio/aiff` extends MimeType
+  sealed trait audioSlashaiff extends MimeType
   
   @js.native
-  sealed trait `audio/amr` extends MimeType
+  sealed trait audioSlashamr extends MimeType
   
   @js.native
-  sealed trait `audio/ape` extends MimeType
+  sealed trait audioSlashape extends MimeType
   
   @js.native
-  sealed trait `audio/midi` extends MimeType
+  sealed trait audioSlashmidi extends MimeType
   
   @js.native
-  sealed trait `audio/mp4` extends MimeType
+  sealed trait audioSlashmp4 extends MimeType
   
   @js.native
-  sealed trait `audio/mpeg` extends MimeType
+  sealed trait audioSlashmpeg extends MimeType
   
   @js.native
-  sealed trait `audio/ogg` extends MimeType
+  sealed trait audioSlashogg extends MimeType
   
   @js.native
-  sealed trait `audio/opus` extends MimeType
+  sealed trait audioSlashopus extends MimeType
   
   @js.native
-  sealed trait `audio/qcelp` extends MimeType
+  sealed trait audioSlashqcelp extends MimeType
   
   @js.native
-  sealed trait `audio/vndDOTdolbyDOTdd-raw` extends MimeType
+  sealed trait `audioSlashvndDotdolbyDotdd-raw` extends MimeType
   
   @js.native
-  sealed trait `audio/vndDOTwave` extends MimeType
+  sealed trait audioSlashvndDotwave extends MimeType
   
   @js.native
-  sealed trait `audio/wavpack` extends MimeType
+  sealed trait audioSlashwavpack extends MimeType
   
   @js.native
-  sealed trait `audio/x-dsf` extends MimeType
+  sealed trait `audioSlashx-dsf` extends MimeType
   
   @js.native
-  sealed trait `audio/x-flac` extends MimeType
+  sealed trait `audioSlashx-flac` extends MimeType
   
   @js.native
-  sealed trait `audio/x-m4a` extends MimeType
+  sealed trait `audioSlashx-m4a` extends MimeType
   
   @js.native
-  sealed trait `audio/x-ms-wma` extends MimeType
+  sealed trait `audioSlashx-ms-wma` extends MimeType
   
   @js.native
-  sealed trait `audio/x-musepack` extends MimeType
+  sealed trait `audioSlashx-musepack` extends MimeType
   
   @js.native
-  sealed trait `audio/x-voc` extends MimeType
+  sealed trait `audioSlashx-voc` extends MimeType
   
   @js.native
   sealed trait avi extends FileType
@@ -317,16 +317,16 @@ object fileDashTypeStrings {
   sealed trait flv extends FileType
   
   @js.native
-  sealed trait `font/otf` extends MimeType
+  sealed trait fontSlashotf extends MimeType
   
   @js.native
-  sealed trait `font/ttf` extends MimeType
+  sealed trait fontSlashttf extends MimeType
   
   @js.native
-  sealed trait `font/woff` extends MimeType
+  sealed trait fontSlashwoff extends MimeType
   
   @js.native
-  sealed trait `font/woff2` extends MimeType
+  sealed trait fontSlashwoff2 extends MimeType
   
   @js.native
   sealed trait gif extends FileType
@@ -347,88 +347,88 @@ object fileDashTypeStrings {
   sealed trait ics extends FileType
   
   @js.native
-  sealed trait `image/apng` extends MimeType
+  sealed trait imageSlashapng extends MimeType
   
   @js.native
-  sealed trait `image/bmp` extends MimeType
+  sealed trait imageSlashbmp extends MimeType
   
   @js.native
-  sealed trait `image/bpg` extends MimeType
+  sealed trait imageSlashbpg extends MimeType
   
   @js.native
-  sealed trait `image/flif` extends MimeType
+  sealed trait imageSlashflif extends MimeType
   
   @js.native
-  sealed trait `image/gif` extends MimeType
+  sealed trait imageSlashgif extends MimeType
   
   @js.native
-  sealed trait `image/heic` extends MimeType
+  sealed trait imageSlashheic extends MimeType
   
   @js.native
-  sealed trait `image/heic-sequence` extends MimeType
+  sealed trait `imageSlashheic-sequence` extends MimeType
   
   @js.native
-  sealed trait `image/heif` extends MimeType
+  sealed trait imageSlashheif extends MimeType
   
   @js.native
-  sealed trait `image/heif-sequence` extends MimeType
+  sealed trait `imageSlashheif-sequence` extends MimeType
   
   @js.native
-  sealed trait `image/jp2` extends MimeType
+  sealed trait imageSlashjp2 extends MimeType
   
   @js.native
-  sealed trait `image/jpeg` extends MimeType
+  sealed trait imageSlashjpeg extends MimeType
   
   @js.native
-  sealed trait `image/jpm` extends MimeType
+  sealed trait imageSlashjpm extends MimeType
   
   @js.native
-  sealed trait `image/jpx` extends MimeType
+  sealed trait imageSlashjpx extends MimeType
   
   @js.native
-  sealed trait `image/ktx` extends MimeType
+  sealed trait imageSlashktx extends MimeType
   
   @js.native
-  sealed trait `image/mj2` extends MimeType
+  sealed trait imageSlashmj2 extends MimeType
   
   @js.native
-  sealed trait `image/png` extends MimeType
+  sealed trait imageSlashpng extends MimeType
   
   @js.native
-  sealed trait `image/tiff` extends MimeType
+  sealed trait imageSlashtiff extends MimeType
   
   @js.native
-  sealed trait `image/vndDOTadobeDOTphotoshop` extends MimeType
+  sealed trait imageSlashvndDotadobeDotphotoshop extends MimeType
   
   @js.native
-  sealed trait `image/vndDOTms-photo` extends MimeType
+  sealed trait `imageSlashvndDotms-photo` extends MimeType
   
   @js.native
-  sealed trait `image/webp` extends MimeType
+  sealed trait imageSlashwebp extends MimeType
   
   @js.native
-  sealed trait `image/x-adobe-dng` extends MimeType
+  sealed trait `imageSlashx-adobe-dng` extends MimeType
   
   @js.native
-  sealed trait `image/x-canon-cr2` extends MimeType
+  sealed trait `imageSlashx-canon-cr2` extends MimeType
   
   @js.native
-  sealed trait `image/x-fujifilm-raf` extends MimeType
+  sealed trait `imageSlashx-fujifilm-raf` extends MimeType
   
   @js.native
-  sealed trait `image/x-icon` extends MimeType
+  sealed trait `imageSlashx-icon` extends MimeType
   
   @js.native
-  sealed trait `image/x-nikon-nef` extends MimeType
+  sealed trait `imageSlashx-nikon-nef` extends MimeType
   
   @js.native
-  sealed trait `image/x-olympus-orf` extends MimeType
+  sealed trait `imageSlashx-olympus-orf` extends MimeType
   
   @js.native
-  sealed trait `image/x-panasonic-rw2` extends MimeType
+  sealed trait `imageSlashx-panasonic-rw2` extends MimeType
   
   @js.native
-  sealed trait `image/x-sony-arw` extends MimeType
+  sealed trait `imageSlashx-sony-arw` extends MimeType
   
   @js.native
   sealed trait jp2 extends FileType
@@ -482,7 +482,7 @@ object fileDashTypeStrings {
   sealed trait mobi extends FileType
   
   @js.native
-  sealed trait `model/gltf-binary` extends MimeType
+  sealed trait `modelSlashgltf-binary` extends MimeType
   
   @js.native
   sealed trait mov extends FileType
@@ -602,7 +602,7 @@ object fileDashTypeStrings {
   sealed trait tar extends FileType
   
   @js.native
-  sealed trait `text/calendar` extends MimeType
+  sealed trait textSlashcalendar extends MimeType
   
   @js.native
   sealed trait tif extends FileType
@@ -611,43 +611,43 @@ object fileDashTypeStrings {
   sealed trait ttf extends FileType
   
   @js.native
-  sealed trait `video/3gpp` extends MimeType
+  sealed trait videoSlash3gpp extends MimeType
   
   @js.native
-  sealed trait `video/3gpp2` extends MimeType
+  sealed trait videoSlash3gpp2 extends MimeType
   
   @js.native
-  sealed trait `video/mp2t` extends MimeType
+  sealed trait videoSlashmp2t extends MimeType
   
   @js.native
-  sealed trait `video/mp4` extends MimeType
+  sealed trait videoSlashmp4 extends MimeType
   
   @js.native
-  sealed trait `video/mpeg` extends MimeType
+  sealed trait videoSlashmpeg extends MimeType
   
   @js.native
-  sealed trait `video/ogg` extends MimeType
+  sealed trait videoSlashogg extends MimeType
   
   @js.native
-  sealed trait `video/quicktime` extends MimeType
+  sealed trait videoSlashquicktime extends MimeType
   
   @js.native
-  sealed trait `video/vndDOTavi` extends MimeType
+  sealed trait videoSlashvndDotavi extends MimeType
   
   @js.native
-  sealed trait `video/webm` extends MimeType
+  sealed trait videoSlashwebm extends MimeType
   
   @js.native
-  sealed trait `video/x-flv` extends MimeType
+  sealed trait `videoSlashx-flv` extends MimeType
   
   @js.native
-  sealed trait `video/x-m4v` extends MimeType
+  sealed trait `videoSlashx-m4v` extends MimeType
   
   @js.native
-  sealed trait `video/x-matroska` extends MimeType
+  sealed trait `videoSlashx-matroska` extends MimeType
   
   @js.native
-  sealed trait `video/x-ms-asf` extends MimeType
+  sealed trait `videoSlashx-ms-asf` extends MimeType
   
   @js.native
   sealed trait voc extends FileType
@@ -715,97 +715,97 @@ object fileDashTypeStrings {
   @scala.inline
   def apng: apng = "apng".asInstanceOf[apng]
   @scala.inline
-  def `application/dicom`: `application/dicom` = "application/dicom".asInstanceOf[`application/dicom`]
+  def applicationSlashdicom: applicationSlashdicom = "application/dicom".asInstanceOf[applicationSlashdicom]
   @scala.inline
-  def `application/epub+zip`: `application/epub+zip` = "application/epub+zip".asInstanceOf[`application/epub+zip`]
+  def applicationSlashepubPlussignzip: applicationSlashepubPlussignzip = "application/epub+zip".asInstanceOf[applicationSlashepubPlussignzip]
   @scala.inline
-  def `application/gzip`: `application/gzip` = "application/gzip".asInstanceOf[`application/gzip`]
+  def applicationSlashgzip: applicationSlashgzip = "application/gzip".asInstanceOf[applicationSlashgzip]
   @scala.inline
-  def `application/mxf`: `application/mxf` = "application/mxf".asInstanceOf[`application/mxf`]
+  def applicationSlashmxf: applicationSlashmxf = "application/mxf".asInstanceOf[applicationSlashmxf]
   @scala.inline
-  def `application/ogg`: `application/ogg` = "application/ogg".asInstanceOf[`application/ogg`]
+  def applicationSlashogg: applicationSlashogg = "application/ogg".asInstanceOf[applicationSlashogg]
   @scala.inline
-  def `application/pdf`: `application/pdf` = "application/pdf".asInstanceOf[`application/pdf`]
+  def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
   @scala.inline
-  def `application/postscript`: `application/postscript` = "application/postscript".asInstanceOf[`application/postscript`]
+  def applicationSlashpostscript: applicationSlashpostscript = "application/postscript".asInstanceOf[applicationSlashpostscript]
   @scala.inline
-  def `application/rtf`: `application/rtf` = "application/rtf".asInstanceOf[`application/rtf`]
+  def applicationSlashrtf: applicationSlashrtf = "application/rtf".asInstanceOf[applicationSlashrtf]
   @scala.inline
-  def `application/vndDOTms-asf`: `application/vndDOTms-asf` = "application/vnd.ms-asf".asInstanceOf[`application/vndDOTms-asf`]
+  def `applicationSlashvndDotms-asf`: `applicationSlashvndDotms-asf` = "application/vnd.ms-asf".asInstanceOf[`applicationSlashvndDotms-asf`]
   @scala.inline
-  def `application/vndDOTms-cab-compressed`: `application/vndDOTms-cab-compressed` = "application/vnd.ms-cab-compressed".asInstanceOf[`application/vndDOTms-cab-compressed`]
+  def `applicationSlashvndDotms-cab-compressed`: `applicationSlashvndDotms-cab-compressed` = "application/vnd.ms-cab-compressed".asInstanceOf[`applicationSlashvndDotms-cab-compressed`]
   @scala.inline
-  def `application/vndDOTms-fontobject`: `application/vndDOTms-fontobject` = "application/vnd.ms-fontobject".asInstanceOf[`application/vndDOTms-fontobject`]
+  def `applicationSlashvndDotms-fontobject`: `applicationSlashvndDotms-fontobject` = "application/vnd.ms-fontobject".asInstanceOf[`applicationSlashvndDotms-fontobject`]
   @scala.inline
-  def `application/vndDOToasisDOTopendocumentDOTpresentation`: `application/vndDOToasisDOTopendocumentDOTpresentation` = "application/vnd.oasis.opendocument.presentation".asInstanceOf[`application/vndDOToasisDOTopendocumentDOTpresentation`]
+  def applicationSlashvndDotoasisDotopendocumentDotpresentation: applicationSlashvndDotoasisDotopendocumentDotpresentation = "application/vnd.oasis.opendocument.presentation".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotpresentation]
   @scala.inline
-  def `application/vndDOToasisDOTopendocumentDOTspreadsheet`: `application/vndDOToasisDOTopendocumentDOTspreadsheet` = "application/vnd.oasis.opendocument.spreadsheet".asInstanceOf[`application/vndDOToasisDOTopendocumentDOTspreadsheet`]
+  def applicationSlashvndDotoasisDotopendocumentDotspreadsheet: applicationSlashvndDotoasisDotopendocumentDotspreadsheet = "application/vnd.oasis.opendocument.spreadsheet".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotspreadsheet]
   @scala.inline
-  def `application/vndDOToasisDOTopendocumentDOTtext`: `application/vndDOToasisDOTopendocumentDOTtext` = "application/vnd.oasis.opendocument.text".asInstanceOf[`application/vndDOToasisDOTopendocumentDOTtext`]
+  def applicationSlashvndDotoasisDotopendocumentDottext: applicationSlashvndDotoasisDotopendocumentDottext = "application/vnd.oasis.opendocument.text".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDottext]
   @scala.inline
-  def `application/vndDOTopenxmlformats-officedocumentDOTpresentationmlDOTpresentation`: `application/vndDOTopenxmlformats-officedocumentDOTpresentationmlDOTpresentation` = "application/vnd.openxmlformats-officedocument.presentationml.presentation".asInstanceOf[`application/vndDOTopenxmlformats-officedocumentDOTpresentationmlDOTpresentation`]
+  def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation` = "application/vnd.openxmlformats-officedocument.presentationml.presentation".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`]
   @scala.inline
-  def `application/vndDOTopenxmlformats-officedocumentDOTspreadsheetmlDOTsheet`: `application/vndDOTopenxmlformats-officedocumentDOTspreadsheetmlDOTsheet` = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet".asInstanceOf[`application/vndDOTopenxmlformats-officedocumentDOTspreadsheetmlDOTsheet`]
+  def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet` = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`]
   @scala.inline
-  def `application/vndDOTopenxmlformats-officedocumentDOTwordprocessingmlDOTdocument`: `application/vndDOTopenxmlformats-officedocumentDOTwordprocessingmlDOTdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[`application/vndDOTopenxmlformats-officedocumentDOTwordprocessingmlDOTdocument`]
+  def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`]
   @scala.inline
-  def `application/vndDOTtcpdumpDOTpcap`: `application/vndDOTtcpdumpDOTpcap` = "application/vnd.tcpdump.pcap".asInstanceOf[`application/vndDOTtcpdumpDOTpcap`]
+  def applicationSlashvndDottcpdumpDotpcap: applicationSlashvndDottcpdumpDotpcap = "application/vnd.tcpdump.pcap".asInstanceOf[applicationSlashvndDottcpdumpDotpcap]
   @scala.inline
-  def `application/wasm`: `application/wasm` = "application/wasm".asInstanceOf[`application/wasm`]
+  def applicationSlashwasm: applicationSlashwasm = "application/wasm".asInstanceOf[applicationSlashwasm]
   @scala.inline
-  def `application/x-7z-compressed`: `application/x-7z-compressed` = "application/x-7z-compressed".asInstanceOf[`application/x-7z-compressed`]
+  def `applicationSlashx-7z-compressed`: `applicationSlashx-7z-compressed` = "application/x-7z-compressed".asInstanceOf[`applicationSlashx-7z-compressed`]
   @scala.inline
-  def `application/x-apache-arrow`: `application/x-apache-arrow` = "application/x-apache-arrow".asInstanceOf[`application/x-apache-arrow`]
+  def `applicationSlashx-apache-arrow`: `applicationSlashx-apache-arrow` = "application/x-apache-arrow".asInstanceOf[`applicationSlashx-apache-arrow`]
   @scala.inline
-  def `application/x-apple-diskimage`: `application/x-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`application/x-apple-diskimage`]
+  def `applicationSlashx-apple-diskimage`: `applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`applicationSlashx-apple-diskimage`]
   @scala.inline
-  def `application/x-blender`: `application/x-blender` = "application/x-blender".asInstanceOf[`application/x-blender`]
+  def `applicationSlashx-blender`: `applicationSlashx-blender` = "application/x-blender".asInstanceOf[`applicationSlashx-blender`]
   @scala.inline
-  def `application/x-bzip2`: `application/x-bzip2` = "application/x-bzip2".asInstanceOf[`application/x-bzip2`]
+  def `applicationSlashx-bzip2`: `applicationSlashx-bzip2` = "application/x-bzip2".asInstanceOf[`applicationSlashx-bzip2`]
   @scala.inline
-  def `application/x-compress`: `application/x-compress` = "application/x-compress".asInstanceOf[`application/x-compress`]
+  def `applicationSlashx-compress`: `applicationSlashx-compress` = "application/x-compress".asInstanceOf[`applicationSlashx-compress`]
   @scala.inline
-  def `application/x-deb`: `application/x-deb` = "application/x-deb".asInstanceOf[`application/x-deb`]
+  def `applicationSlashx-deb`: `applicationSlashx-deb` = "application/x-deb".asInstanceOf[`applicationSlashx-deb`]
   @scala.inline
-  def `application/x-esri-shape`: `application/x-esri-shape` = "application/x-esri-shape".asInstanceOf[`application/x-esri-shape`]
+  def `applicationSlashx-esri-shape`: `applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[`applicationSlashx-esri-shape`]
   @scala.inline
-  def `application/x-google-chrome-extension`: `application/x-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`application/x-google-chrome-extension`]
+  def `applicationSlashx-google-chrome-extension`: `applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`applicationSlashx-google-chrome-extension`]
   @scala.inline
-  def `application/x-lzip`: `application/x-lzip` = "application/x-lzip".asInstanceOf[`application/x-lzip`]
+  def `applicationSlashx-lzip`: `applicationSlashx-lzip` = "application/x-lzip".asInstanceOf[`applicationSlashx-lzip`]
   @scala.inline
-  def `application/x-mie`: `application/x-mie` = "application/x-mie".asInstanceOf[`application/x-mie`]
+  def `applicationSlashx-mie`: `applicationSlashx-mie` = "application/x-mie".asInstanceOf[`applicationSlashx-mie`]
   @scala.inline
-  def `application/x-mobipocket-ebook`: `application/x-mobipocket-ebook` = "application/x-mobipocket-ebook".asInstanceOf[`application/x-mobipocket-ebook`]
+  def `applicationSlashx-mobipocket-ebook`: `applicationSlashx-mobipocket-ebook` = "application/x-mobipocket-ebook".asInstanceOf[`applicationSlashx-mobipocket-ebook`]
   @scala.inline
-  def `application/x-msdownload`: `application/x-msdownload` = "application/x-msdownload".asInstanceOf[`application/x-msdownload`]
+  def `applicationSlashx-msdownload`: `applicationSlashx-msdownload` = "application/x-msdownload".asInstanceOf[`applicationSlashx-msdownload`]
   @scala.inline
-  def `application/x-msi`: `application/x-msi` = "application/x-msi".asInstanceOf[`application/x-msi`]
+  def `applicationSlashx-msi`: `applicationSlashx-msi` = "application/x-msi".asInstanceOf[`applicationSlashx-msi`]
   @scala.inline
-  def `application/x-nintendo-nes-rom`: `application/x-nintendo-nes-rom` = "application/x-nintendo-nes-rom".asInstanceOf[`application/x-nintendo-nes-rom`]
+  def `applicationSlashx-nintendo-nes-rom`: `applicationSlashx-nintendo-nes-rom` = "application/x-nintendo-nes-rom".asInstanceOf[`applicationSlashx-nintendo-nes-rom`]
   @scala.inline
-  def `application/x-rar-compressed`: `application/x-rar-compressed` = "application/x-rar-compressed".asInstanceOf[`application/x-rar-compressed`]
+  def `applicationSlashx-rar-compressed`: `applicationSlashx-rar-compressed` = "application/x-rar-compressed".asInstanceOf[`applicationSlashx-rar-compressed`]
   @scala.inline
-  def `application/x-rpm`: `application/x-rpm` = "application/x-rpm".asInstanceOf[`application/x-rpm`]
+  def `applicationSlashx-rpm`: `applicationSlashx-rpm` = "application/x-rpm".asInstanceOf[`applicationSlashx-rpm`]
   @scala.inline
-  def `application/x-shockwave-flash`: `application/x-shockwave-flash` = "application/x-shockwave-flash".asInstanceOf[`application/x-shockwave-flash`]
+  def `applicationSlashx-shockwave-flash`: `applicationSlashx-shockwave-flash` = "application/x-shockwave-flash".asInstanceOf[`applicationSlashx-shockwave-flash`]
   @scala.inline
-  def `application/x-sqlite3`: `application/x-sqlite3` = "application/x-sqlite3".asInstanceOf[`application/x-sqlite3`]
+  def `applicationSlashx-sqlite3`: `applicationSlashx-sqlite3` = "application/x-sqlite3".asInstanceOf[`applicationSlashx-sqlite3`]
   @scala.inline
-  def `application/x-tar`: `application/x-tar` = "application/x-tar".asInstanceOf[`application/x-tar`]
+  def `applicationSlashx-tar`: `applicationSlashx-tar` = "application/x-tar".asInstanceOf[`applicationSlashx-tar`]
   @scala.inline
-  def `application/x-unix-archive`: `application/x-unix-archive` = "application/x-unix-archive".asInstanceOf[`application/x-unix-archive`]
+  def `applicationSlashx-unix-archive`: `applicationSlashx-unix-archive` = "application/x-unix-archive".asInstanceOf[`applicationSlashx-unix-archive`]
   @scala.inline
-  def `application/x-xpinstall`: `application/x-xpinstall` = "application/x-xpinstall".asInstanceOf[`application/x-xpinstall`]
+  def `applicationSlashx-xpinstall`: `applicationSlashx-xpinstall` = "application/x-xpinstall".asInstanceOf[`applicationSlashx-xpinstall`]
   @scala.inline
-  def `application/x-xz`: `application/x-xz` = "application/x-xz".asInstanceOf[`application/x-xz`]
+  def `applicationSlashx-xz`: `applicationSlashx-xz` = "application/x-xz".asInstanceOf[`applicationSlashx-xz`]
   @scala.inline
-  def `application/xDOTappleDOTalias`: `application/xDOTappleDOTalias` = "application/x.apple.alias".asInstanceOf[`application/xDOTappleDOTalias`]
+  def applicationSlashxDotappleDotalias: applicationSlashxDotappleDotalias = "application/x.apple.alias".asInstanceOf[applicationSlashxDotappleDotalias]
   @scala.inline
-  def `application/xDOTmsDOTshortcut`: `application/xDOTmsDOTshortcut` = "application/x.ms.shortcut".asInstanceOf[`application/xDOTmsDOTshortcut`]
+  def applicationSlashxDotmsDotshortcut: applicationSlashxDotmsDotshortcut = "application/x.ms.shortcut".asInstanceOf[applicationSlashxDotmsDotshortcut]
   @scala.inline
-  def `application/xml`: `application/xml` = "application/xml".asInstanceOf[`application/xml`]
+  def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
   @scala.inline
-  def `application/zip`: `application/zip` = "application/zip".asInstanceOf[`application/zip`]
+  def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
   @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
   @scala.inline
@@ -815,41 +815,41 @@ object fileDashTypeStrings {
   @scala.inline
   def asf: asf = "asf".asInstanceOf[asf]
   @scala.inline
-  def `audio/aiff`: `audio/aiff` = "audio/aiff".asInstanceOf[`audio/aiff`]
+  def audioSlashaiff: audioSlashaiff = "audio/aiff".asInstanceOf[audioSlashaiff]
   @scala.inline
-  def `audio/amr`: `audio/amr` = "audio/amr".asInstanceOf[`audio/amr`]
+  def audioSlashamr: audioSlashamr = "audio/amr".asInstanceOf[audioSlashamr]
   @scala.inline
-  def `audio/ape`: `audio/ape` = "audio/ape".asInstanceOf[`audio/ape`]
+  def audioSlashape: audioSlashape = "audio/ape".asInstanceOf[audioSlashape]
   @scala.inline
-  def `audio/midi`: `audio/midi` = "audio/midi".asInstanceOf[`audio/midi`]
+  def audioSlashmidi: audioSlashmidi = "audio/midi".asInstanceOf[audioSlashmidi]
   @scala.inline
-  def `audio/mp4`: `audio/mp4` = "audio/mp4".asInstanceOf[`audio/mp4`]
+  def audioSlashmp4: audioSlashmp4 = "audio/mp4".asInstanceOf[audioSlashmp4]
   @scala.inline
-  def `audio/mpeg`: `audio/mpeg` = "audio/mpeg".asInstanceOf[`audio/mpeg`]
+  def audioSlashmpeg: audioSlashmpeg = "audio/mpeg".asInstanceOf[audioSlashmpeg]
   @scala.inline
-  def `audio/ogg`: `audio/ogg` = "audio/ogg".asInstanceOf[`audio/ogg`]
+  def audioSlashogg: audioSlashogg = "audio/ogg".asInstanceOf[audioSlashogg]
   @scala.inline
-  def `audio/opus`: `audio/opus` = "audio/opus".asInstanceOf[`audio/opus`]
+  def audioSlashopus: audioSlashopus = "audio/opus".asInstanceOf[audioSlashopus]
   @scala.inline
-  def `audio/qcelp`: `audio/qcelp` = "audio/qcelp".asInstanceOf[`audio/qcelp`]
+  def audioSlashqcelp: audioSlashqcelp = "audio/qcelp".asInstanceOf[audioSlashqcelp]
   @scala.inline
-  def `audio/vndDOTdolbyDOTdd-raw`: `audio/vndDOTdolbyDOTdd-raw` = "audio/vnd.dolby.dd-raw".asInstanceOf[`audio/vndDOTdolbyDOTdd-raw`]
+  def `audioSlashvndDotdolbyDotdd-raw`: `audioSlashvndDotdolbyDotdd-raw` = "audio/vnd.dolby.dd-raw".asInstanceOf[`audioSlashvndDotdolbyDotdd-raw`]
   @scala.inline
-  def `audio/vndDOTwave`: `audio/vndDOTwave` = "audio/vnd.wave".asInstanceOf[`audio/vndDOTwave`]
+  def audioSlashvndDotwave: audioSlashvndDotwave = "audio/vnd.wave".asInstanceOf[audioSlashvndDotwave]
   @scala.inline
-  def `audio/wavpack`: `audio/wavpack` = "audio/wavpack".asInstanceOf[`audio/wavpack`]
+  def audioSlashwavpack: audioSlashwavpack = "audio/wavpack".asInstanceOf[audioSlashwavpack]
   @scala.inline
-  def `audio/x-dsf`: `audio/x-dsf` = "audio/x-dsf".asInstanceOf[`audio/x-dsf`]
+  def `audioSlashx-dsf`: `audioSlashx-dsf` = "audio/x-dsf".asInstanceOf[`audioSlashx-dsf`]
   @scala.inline
-  def `audio/x-flac`: `audio/x-flac` = "audio/x-flac".asInstanceOf[`audio/x-flac`]
+  def `audioSlashx-flac`: `audioSlashx-flac` = "audio/x-flac".asInstanceOf[`audioSlashx-flac`]
   @scala.inline
-  def `audio/x-m4a`: `audio/x-m4a` = "audio/x-m4a".asInstanceOf[`audio/x-m4a`]
+  def `audioSlashx-m4a`: `audioSlashx-m4a` = "audio/x-m4a".asInstanceOf[`audioSlashx-m4a`]
   @scala.inline
-  def `audio/x-ms-wma`: `audio/x-ms-wma` = "audio/x-ms-wma".asInstanceOf[`audio/x-ms-wma`]
+  def `audioSlashx-ms-wma`: `audioSlashx-ms-wma` = "audio/x-ms-wma".asInstanceOf[`audioSlashx-ms-wma`]
   @scala.inline
-  def `audio/x-musepack`: `audio/x-musepack` = "audio/x-musepack".asInstanceOf[`audio/x-musepack`]
+  def `audioSlashx-musepack`: `audioSlashx-musepack` = "audio/x-musepack".asInstanceOf[`audioSlashx-musepack`]
   @scala.inline
-  def `audio/x-voc`: `audio/x-voc` = "audio/x-voc".asInstanceOf[`audio/x-voc`]
+  def `audioSlashx-voc`: `audioSlashx-voc` = "audio/x-voc".asInstanceOf[`audioSlashx-voc`]
   @scala.inline
   def avi: avi = "avi".asInstanceOf[avi]
   @scala.inline
@@ -901,13 +901,13 @@ object fileDashTypeStrings {
   @scala.inline
   def flv: flv = "flv".asInstanceOf[flv]
   @scala.inline
-  def `font/otf`: `font/otf` = "font/otf".asInstanceOf[`font/otf`]
+  def fontSlashotf: fontSlashotf = "font/otf".asInstanceOf[fontSlashotf]
   @scala.inline
-  def `font/ttf`: `font/ttf` = "font/ttf".asInstanceOf[`font/ttf`]
+  def fontSlashttf: fontSlashttf = "font/ttf".asInstanceOf[fontSlashttf]
   @scala.inline
-  def `font/woff`: `font/woff` = "font/woff".asInstanceOf[`font/woff`]
+  def fontSlashwoff: fontSlashwoff = "font/woff".asInstanceOf[fontSlashwoff]
   @scala.inline
-  def `font/woff2`: `font/woff2` = "font/woff2".asInstanceOf[`font/woff2`]
+  def fontSlashwoff2: fontSlashwoff2 = "font/woff2".asInstanceOf[fontSlashwoff2]
   @scala.inline
   def gif: gif = "gif".asInstanceOf[gif]
   @scala.inline
@@ -921,61 +921,61 @@ object fileDashTypeStrings {
   @scala.inline
   def ics: ics = "ics".asInstanceOf[ics]
   @scala.inline
-  def `image/apng`: `image/apng` = "image/apng".asInstanceOf[`image/apng`]
+  def imageSlashapng: imageSlashapng = "image/apng".asInstanceOf[imageSlashapng]
   @scala.inline
-  def `image/bmp`: `image/bmp` = "image/bmp".asInstanceOf[`image/bmp`]
+  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   @scala.inline
-  def `image/bpg`: `image/bpg` = "image/bpg".asInstanceOf[`image/bpg`]
+  def imageSlashbpg: imageSlashbpg = "image/bpg".asInstanceOf[imageSlashbpg]
   @scala.inline
-  def `image/flif`: `image/flif` = "image/flif".asInstanceOf[`image/flif`]
+  def imageSlashflif: imageSlashflif = "image/flif".asInstanceOf[imageSlashflif]
   @scala.inline
-  def `image/gif`: `image/gif` = "image/gif".asInstanceOf[`image/gif`]
+  def imageSlashgif: imageSlashgif = "image/gif".asInstanceOf[imageSlashgif]
   @scala.inline
-  def `image/heic`: `image/heic` = "image/heic".asInstanceOf[`image/heic`]
+  def imageSlashheic: imageSlashheic = "image/heic".asInstanceOf[imageSlashheic]
   @scala.inline
-  def `image/heic-sequence`: `image/heic-sequence` = "image/heic-sequence".asInstanceOf[`image/heic-sequence`]
+  def `imageSlashheic-sequence`: `imageSlashheic-sequence` = "image/heic-sequence".asInstanceOf[`imageSlashheic-sequence`]
   @scala.inline
-  def `image/heif`: `image/heif` = "image/heif".asInstanceOf[`image/heif`]
+  def imageSlashheif: imageSlashheif = "image/heif".asInstanceOf[imageSlashheif]
   @scala.inline
-  def `image/heif-sequence`: `image/heif-sequence` = "image/heif-sequence".asInstanceOf[`image/heif-sequence`]
+  def `imageSlashheif-sequence`: `imageSlashheif-sequence` = "image/heif-sequence".asInstanceOf[`imageSlashheif-sequence`]
   @scala.inline
-  def `image/jp2`: `image/jp2` = "image/jp2".asInstanceOf[`image/jp2`]
+  def imageSlashjp2: imageSlashjp2 = "image/jp2".asInstanceOf[imageSlashjp2]
   @scala.inline
-  def `image/jpeg`: `image/jpeg` = "image/jpeg".asInstanceOf[`image/jpeg`]
+  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   @scala.inline
-  def `image/jpm`: `image/jpm` = "image/jpm".asInstanceOf[`image/jpm`]
+  def imageSlashjpm: imageSlashjpm = "image/jpm".asInstanceOf[imageSlashjpm]
   @scala.inline
-  def `image/jpx`: `image/jpx` = "image/jpx".asInstanceOf[`image/jpx`]
+  def imageSlashjpx: imageSlashjpx = "image/jpx".asInstanceOf[imageSlashjpx]
   @scala.inline
-  def `image/ktx`: `image/ktx` = "image/ktx".asInstanceOf[`image/ktx`]
+  def imageSlashktx: imageSlashktx = "image/ktx".asInstanceOf[imageSlashktx]
   @scala.inline
-  def `image/mj2`: `image/mj2` = "image/mj2".asInstanceOf[`image/mj2`]
+  def imageSlashmj2: imageSlashmj2 = "image/mj2".asInstanceOf[imageSlashmj2]
   @scala.inline
-  def `image/png`: `image/png` = "image/png".asInstanceOf[`image/png`]
+  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   @scala.inline
-  def `image/tiff`: `image/tiff` = "image/tiff".asInstanceOf[`image/tiff`]
+  def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
   @scala.inline
-  def `image/vndDOTadobeDOTphotoshop`: `image/vndDOTadobeDOTphotoshop` = "image/vnd.adobe.photoshop".asInstanceOf[`image/vndDOTadobeDOTphotoshop`]
+  def imageSlashvndDotadobeDotphotoshop: imageSlashvndDotadobeDotphotoshop = "image/vnd.adobe.photoshop".asInstanceOf[imageSlashvndDotadobeDotphotoshop]
   @scala.inline
-  def `image/vndDOTms-photo`: `image/vndDOTms-photo` = "image/vnd.ms-photo".asInstanceOf[`image/vndDOTms-photo`]
+  def `imageSlashvndDotms-photo`: `imageSlashvndDotms-photo` = "image/vnd.ms-photo".asInstanceOf[`imageSlashvndDotms-photo`]
   @scala.inline
-  def `image/webp`: `image/webp` = "image/webp".asInstanceOf[`image/webp`]
+  def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
   @scala.inline
-  def `image/x-adobe-dng`: `image/x-adobe-dng` = "image/x-adobe-dng".asInstanceOf[`image/x-adobe-dng`]
+  def `imageSlashx-adobe-dng`: `imageSlashx-adobe-dng` = "image/x-adobe-dng".asInstanceOf[`imageSlashx-adobe-dng`]
   @scala.inline
-  def `image/x-canon-cr2`: `image/x-canon-cr2` = "image/x-canon-cr2".asInstanceOf[`image/x-canon-cr2`]
+  def `imageSlashx-canon-cr2`: `imageSlashx-canon-cr2` = "image/x-canon-cr2".asInstanceOf[`imageSlashx-canon-cr2`]
   @scala.inline
-  def `image/x-fujifilm-raf`: `image/x-fujifilm-raf` = "image/x-fujifilm-raf".asInstanceOf[`image/x-fujifilm-raf`]
+  def `imageSlashx-fujifilm-raf`: `imageSlashx-fujifilm-raf` = "image/x-fujifilm-raf".asInstanceOf[`imageSlashx-fujifilm-raf`]
   @scala.inline
-  def `image/x-icon`: `image/x-icon` = "image/x-icon".asInstanceOf[`image/x-icon`]
+  def `imageSlashx-icon`: `imageSlashx-icon` = "image/x-icon".asInstanceOf[`imageSlashx-icon`]
   @scala.inline
-  def `image/x-nikon-nef`: `image/x-nikon-nef` = "image/x-nikon-nef".asInstanceOf[`image/x-nikon-nef`]
+  def `imageSlashx-nikon-nef`: `imageSlashx-nikon-nef` = "image/x-nikon-nef".asInstanceOf[`imageSlashx-nikon-nef`]
   @scala.inline
-  def `image/x-olympus-orf`: `image/x-olympus-orf` = "image/x-olympus-orf".asInstanceOf[`image/x-olympus-orf`]
+  def `imageSlashx-olympus-orf`: `imageSlashx-olympus-orf` = "image/x-olympus-orf".asInstanceOf[`imageSlashx-olympus-orf`]
   @scala.inline
-  def `image/x-panasonic-rw2`: `image/x-panasonic-rw2` = "image/x-panasonic-rw2".asInstanceOf[`image/x-panasonic-rw2`]
+  def `imageSlashx-panasonic-rw2`: `imageSlashx-panasonic-rw2` = "image/x-panasonic-rw2".asInstanceOf[`imageSlashx-panasonic-rw2`]
   @scala.inline
-  def `image/x-sony-arw`: `image/x-sony-arw` = "image/x-sony-arw".asInstanceOf[`image/x-sony-arw`]
+  def `imageSlashx-sony-arw`: `imageSlashx-sony-arw` = "image/x-sony-arw".asInstanceOf[`imageSlashx-sony-arw`]
   @scala.inline
   def jp2: jp2 = "jp2".asInstanceOf[jp2]
   @scala.inline
@@ -1011,7 +1011,7 @@ object fileDashTypeStrings {
   @scala.inline
   def mobi: mobi = "mobi".asInstanceOf[mobi]
   @scala.inline
-  def `model/gltf-binary`: `model/gltf-binary` = "model/gltf-binary".asInstanceOf[`model/gltf-binary`]
+  def `modelSlashgltf-binary`: `modelSlashgltf-binary` = "model/gltf-binary".asInstanceOf[`modelSlashgltf-binary`]
   @scala.inline
   def mov: mov = "mov".asInstanceOf[mov]
   @scala.inline
@@ -1091,37 +1091,37 @@ object fileDashTypeStrings {
   @scala.inline
   def tar: tar = "tar".asInstanceOf[tar]
   @scala.inline
-  def `text/calendar`: `text/calendar` = "text/calendar".asInstanceOf[`text/calendar`]
+  def textSlashcalendar: textSlashcalendar = "text/calendar".asInstanceOf[textSlashcalendar]
   @scala.inline
   def tif: tif = "tif".asInstanceOf[tif]
   @scala.inline
   def ttf: ttf = "ttf".asInstanceOf[ttf]
   @scala.inline
-  def `video/3gpp`: `video/3gpp` = "video/3gpp".asInstanceOf[`video/3gpp`]
+  def videoSlash3gpp: videoSlash3gpp = "video/3gpp".asInstanceOf[videoSlash3gpp]
   @scala.inline
-  def `video/3gpp2`: `video/3gpp2` = "video/3gpp2".asInstanceOf[`video/3gpp2`]
+  def videoSlash3gpp2: videoSlash3gpp2 = "video/3gpp2".asInstanceOf[videoSlash3gpp2]
   @scala.inline
-  def `video/mp2t`: `video/mp2t` = "video/mp2t".asInstanceOf[`video/mp2t`]
+  def videoSlashmp2t: videoSlashmp2t = "video/mp2t".asInstanceOf[videoSlashmp2t]
   @scala.inline
-  def `video/mp4`: `video/mp4` = "video/mp4".asInstanceOf[`video/mp4`]
+  def videoSlashmp4: videoSlashmp4 = "video/mp4".asInstanceOf[videoSlashmp4]
   @scala.inline
-  def `video/mpeg`: `video/mpeg` = "video/mpeg".asInstanceOf[`video/mpeg`]
+  def videoSlashmpeg: videoSlashmpeg = "video/mpeg".asInstanceOf[videoSlashmpeg]
   @scala.inline
-  def `video/ogg`: `video/ogg` = "video/ogg".asInstanceOf[`video/ogg`]
+  def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
   @scala.inline
-  def `video/quicktime`: `video/quicktime` = "video/quicktime".asInstanceOf[`video/quicktime`]
+  def videoSlashquicktime: videoSlashquicktime = "video/quicktime".asInstanceOf[videoSlashquicktime]
   @scala.inline
-  def `video/vndDOTavi`: `video/vndDOTavi` = "video/vnd.avi".asInstanceOf[`video/vndDOTavi`]
+  def videoSlashvndDotavi: videoSlashvndDotavi = "video/vnd.avi".asInstanceOf[videoSlashvndDotavi]
   @scala.inline
-  def `video/webm`: `video/webm` = "video/webm".asInstanceOf[`video/webm`]
+  def videoSlashwebm: videoSlashwebm = "video/webm".asInstanceOf[videoSlashwebm]
   @scala.inline
-  def `video/x-flv`: `video/x-flv` = "video/x-flv".asInstanceOf[`video/x-flv`]
+  def `videoSlashx-flv`: `videoSlashx-flv` = "video/x-flv".asInstanceOf[`videoSlashx-flv`]
   @scala.inline
-  def `video/x-m4v`: `video/x-m4v` = "video/x-m4v".asInstanceOf[`video/x-m4v`]
+  def `videoSlashx-m4v`: `videoSlashx-m4v` = "video/x-m4v".asInstanceOf[`videoSlashx-m4v`]
   @scala.inline
-  def `video/x-matroska`: `video/x-matroska` = "video/x-matroska".asInstanceOf[`video/x-matroska`]
+  def `videoSlashx-matroska`: `videoSlashx-matroska` = "video/x-matroska".asInstanceOf[`videoSlashx-matroska`]
   @scala.inline
-  def `video/x-ms-asf`: `video/x-ms-asf` = "video/x-ms-asf".asInstanceOf[`video/x-ms-asf`]
+  def `videoSlashx-ms-asf`: `videoSlashx-ms-asf` = "video/x-ms-asf".asInstanceOf[`videoSlashx-ms-asf`]
   @scala.inline
   def voc: voc = "voc".asInstanceOf[voc]
   @scala.inline

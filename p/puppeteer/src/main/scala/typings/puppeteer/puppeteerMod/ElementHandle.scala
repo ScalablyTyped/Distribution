@@ -21,18 +21,18 @@ trait ElementHandle[E /* <: Element */]
   @JSName("$")
   def $(selector: String): js.Promise[ElementHandle[Element] | Null] = js.native
   /**
+    * @param selector XPath expression to evaluate.
+    */
+  @JSName("$x")
+  def $x(expression: String): js.Promise[js.Array[ElementHandle[Element]]] = js.native
+  /**
     * The method runs element.querySelectorAll within the page.
     * If no elements match the selector, the return value resolve to [].
     * @param selector A selector to query element for
     * @since 0.13.0
     */
   @JSName("$$")
-  def $$(selector: String): js.Promise[js.Array[ElementHandle[Element]]] = js.native
-  /**
-    * @param selector XPath expression to evaluate.
-    */
-  @JSName("$x")
-  def $x(expression: String): js.Promise[js.Array[ElementHandle[Element]]] = js.native
+  def DollarDollar(selector: String): js.Promise[js.Array[ElementHandle[Element]]] = js.native
   /**
     * This method returns the value resolve to the bounding box of the element (relative to the main frame), or null if the element is not visible.
     */

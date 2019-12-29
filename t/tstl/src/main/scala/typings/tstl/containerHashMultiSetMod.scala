@@ -3,12 +3,10 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerMultiSetMod.MultiSet
 import typings.tstl.baseContainerSetContainerMod.SetContainer
-import typings.tstl.baseContainerSetContainerMod.SetContainer.InsertRet
-import typings.tstl.containerHashMultiSetMod.HashMultiSet
 import typings.tstl.containerHashMultiSetMod.HashMultiSet.Iterator
 import typings.tstl.containerHashMultiSetMod.HashMultiSet.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlNumbers.`false`
+import typings.tstl.tstlBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,38 +101,29 @@ object containerHashMultiSetMod extends js.Object {
       * @hidden
       */
     @JSName("_Insert_by_hint")
-    /* protected */ def _Insert_by_hint_Iterator(
-      hint: typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]],
-      key: Key
-    ): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
+    /* protected */ def _Insert_by_hint_Iterator(hint: Iterator[Key], key: Key): Iterator[Key] = js.native
     /**
       * @hidden
       */
     @JSName("_Insert_by_key")
-    /* protected */ def _Insert_by_key_InsertRet(key: Key): InsertRet[
-        Key, 
-        `false`, 
-        HashMultiSet[Key], 
-        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]], 
-        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `false`, HashMultiSet[Key]]
-      ] = js.native
-    /**
-      * @inheritDoc
-      */
-    def begin(index: Double): Iterator[Key] = js.native
-    /**
-      * @inheritDoc
-      */
-    @JSName("begin")
-    def begin_Iterator(): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
+    /* protected */ def _Insert_by_key_Iterator(key: Key): Iterator[Key] = js.native
     /**
       * Iterator to the first element in a specific bucket.
       *
       * @param index Index number of the specific bucket.
       * @return Iterator from the specific bucket.
       */
+    def begin(index: Double): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
+    /**
+      * @inheritDoc
+      */
     @JSName("begin")
-    def begin_Iterator(index: Double): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
+    def begin_Iterator(): Iterator[Key] = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("begin")
+    def begin_Iterator(index: Double): Iterator[Key] = js.native
     /**
       * @inheritDoc
       */
@@ -163,27 +152,31 @@ object containerHashMultiSetMod extends js.Object {
       */
     def bucket_size(n: Double): Double = js.native
     /**
-      * @inheritDoc
-      */
-    def end(index: Double): Iterator[Key] = js.native
-    /**
-      * @inheritDoc
-      */
-    @JSName("end")
-    def end_Iterator(): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
-    /**
       * Iterator to the end in a specific bucket.
       *
       * @param index Index number of the specific bucket.
       * @return Iterator from the specific bucket.
       */
+    def end(index: Double): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
+    /**
+      * @inheritDoc
+      */
     @JSName("end")
-    def end_Iterator(index: Double): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
+    def end_Iterator(): Iterator[Key] = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("end")
+    def end_Iterator(index: Double): Iterator[Key] = js.native
+    /**
+      * @inheritDoc
+      */
+    def erase(key: Key): Double = js.native
     /**
       * @inheritDoc
       */
     @JSName("find")
-    def find_Iterator(key: Key): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `false`, HashMultiSet[Key]] = js.native
+    def find_Iterator(key: Key): Iterator[Key] = js.native
     /**
       * @inheritDoc
       */
@@ -238,7 +231,7 @@ object containerHashMultiSetMod extends js.Object {
       * @inheritDoc
       */
     @JSName("rbegin")
-    def rbegin_ReverseIterator(): ReverseIterator[Key] = js.native
+    def rbegin_ReverseIterator(): typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `false`, HashMultiSet[Key]] = js.native
     /**
       * @inheritDoc
       */
@@ -256,7 +249,7 @@ object containerHashMultiSetMod extends js.Object {
       * @inheritDoc
       */
     @JSName("rend")
-    def rend_ReverseIterator(): ReverseIterator[Key] = js.native
+    def rend_ReverseIterator(): typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `false`, HashMultiSet[Key]] = js.native
     /**
       * @inheritDoc
       */

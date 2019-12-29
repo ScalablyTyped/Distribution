@@ -1,9 +1,6 @@
 package typings.wonderDotJs.distEs2015DefinitionTypescriptDecoratorCloneMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DefinitionTypescriptDecoratorCloneMod.CloneType.BASIC
-import typings.wonderDotJs.distEs2015DefinitionTypescriptDecoratorCloneMod.CloneType.CLONEABLE
-import typings.wonderDotJs.distEs2015DefinitionTypescriptDecoratorCloneMod.CloneType.CUSTOM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.__esri
 
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,8 +67,8 @@ object LocatorSearchSourceProperties {
     countryCode: String = null,
     defaultZoomScale: Int | Double = null,
     filter: SearchSourceFilter = null,
-    getResults: /* params */ js.Any => IPromise[js.Array[SearchResult]] = null,
-    getSuggestions: /* params */ js.Any => IPromise[js.Array[SuggestResult]] = null,
+    getResults: /* params */ js.Any => js.Promise[js.Array[SearchResult]] = null,
+    getSuggestions: /* params */ js.Any => js.Promise[js.Array[SuggestResult]] = null,
     locationType: String = null,
     locator: LocatorProperties = null,
     maxResults: Int | Double = null,

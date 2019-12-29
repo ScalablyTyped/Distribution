@@ -19,7 +19,8 @@ class OMathMat protected () extends js.Object {
   var RowSpacing: Double = js.native
   var RowSpacingRule: WdOMathSpacingRule = js.native
   val Rows: OMathMatRows = js.native
-  var `Word.OMathMat_typekey`: OMathMat = js.native
+  @JSName("Word.OMathMat_typekey")
+  var WordDotOMathMat_typekey: OMathMat = js.native
   def Cell(Row: Double, Col: Double): OMath = js.native
 }
 

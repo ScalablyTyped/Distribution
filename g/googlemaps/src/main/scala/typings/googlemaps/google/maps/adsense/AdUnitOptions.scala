@@ -2,6 +2,7 @@ package typings.googlemaps.google.maps.adsense
 
 import typings.googlemaps.google.maps.ControlPosition
 import typings.googlemaps.google.maps.Map
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait AdUnitOptions extends js.Object {
   var borderColor: js.UndefOr[String] = js.undefined
   var channelNumber: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[AdFormat] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var position: js.UndefOr[ControlPosition] = js.undefined
   var publisherId: js.UndefOr[String] = js.undefined
   var textColor: js.UndefOr[String] = js.undefined
@@ -26,7 +27,7 @@ object AdUnitOptions {
     borderColor: String = null,
     channelNumber: String = null,
     format: AdFormat = null,
-    map: Map = null,
+    map: Map[Element] = null,
     position: ControlPosition = null,
     publisherId: String = null,
     textColor: String = null,

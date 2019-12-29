@@ -1,12 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.WebParts.PersonalizationScope
-import typings.sharepoint.SP.WebParts.PersonalizationScope.shared
-import typings.sharepoint.SP.WebParts.PersonalizationScope.user
-import typings.sharepoint.SP.WebParts.WebPart
-import typings.sharepoint.SP.WebParts.WebPartDefinition
-import typings.sharepoint.SP.WebParts.WebPartDefinitionCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

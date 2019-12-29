@@ -25,7 +25,6 @@ object libBasicICollectionMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -63,6 +62,7 @@ object libBasicICollectionMod extends js.Object {
     /**
       * Number of elements in the container.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

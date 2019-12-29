@@ -1,8 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseContainerSetContainerMod.SetContainer
-import typings.tstl.baseIteratorISetIteratorMod.ISetIterator
-import typings.tstl.baseIteratorISetIteratorMod.ISetReverseIterator
 import typings.tstl.baseIteratorIteratorMod.Iterator
 import typings.tstl.baseIteratorReverseIteratorMod.IReverseIterator
 import scala.scalajs.js

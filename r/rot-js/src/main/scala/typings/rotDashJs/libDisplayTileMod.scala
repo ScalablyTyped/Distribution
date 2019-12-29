@@ -1,6 +1,5 @@
 package typings.rotDashJs
 
-import typings.rotDashJs.libDisplayTileMod.Tile
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

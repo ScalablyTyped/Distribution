@@ -23,7 +23,8 @@ class TabStrip protected () extends js.Object {
   var FontUnderline: Boolean = js.native
   var FontWeight: Double = js.native
   var ForeColor: Double = js.native
-  var `MSForms.TabStrip_typekey`: TabStrip = js.native
+  @JSName("MSForms.TabStrip_typekey")
+  var MSFormsDotTabStrip_typekey: TabStrip = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var MultiRow: Boolean = js.native

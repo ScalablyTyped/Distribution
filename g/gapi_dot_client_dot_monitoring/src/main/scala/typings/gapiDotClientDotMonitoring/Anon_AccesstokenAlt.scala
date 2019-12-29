@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAlt extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -26,9 +26,11 @@ trait Anon_AccesstokenAlt extends js.Object {
     */
   var filter: js.UndefOr[String] = js.native
   /** Required. The end of the time interval. */
-  var `interval.endTime`: js.UndefOr[String] = js.native
+  @JSName("interval.endTime")
+  var intervalDotendTime: js.UndefOr[String] = js.native
   /** Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time. */
-  var `interval.startTime`: js.UndefOr[String] = js.native
+  @JSName("interval.startTime")
+  var intervalDotstartTime: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.native
   /** The group whose members are listed. The format is "projects/{project_id_or_number}/groups/{group_id}". */

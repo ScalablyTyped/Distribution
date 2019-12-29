@@ -1,8 +1,6 @@
 package typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm.General
-import typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm.TrySimple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

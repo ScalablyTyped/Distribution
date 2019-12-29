@@ -1,8 +1,6 @@
 package typings.simplecrawler
 
 import typings.node.eventsMod.EventEmitter
-import typings.simplecrawler.cookiesMod.Cookie
-import typings.simplecrawler.cookiesMod.CookieJar
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

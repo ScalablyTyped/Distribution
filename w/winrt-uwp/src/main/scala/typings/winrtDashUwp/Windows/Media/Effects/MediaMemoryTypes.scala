@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Effects
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.cpu
-import typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.gpu
-import typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.gpuAndCpu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

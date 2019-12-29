@@ -11,9 +11,9 @@ trait IIdGenerator extends IBase {
   /** [Method] Generates and returns the next id
   		* @returns String The next id.
   		*/
-  var generate: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var generate: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var isGenerator: js.UndefOr[Boolean] = js.undefined
 }
@@ -27,10 +27,10 @@ object IIdGenerator {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    generate: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    id: java.lang.String = null,
+    extend: String = null,
+    generate: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IIdGenerator = null,
     isGenerator: js.UndefOr[Boolean] = js.undefined,

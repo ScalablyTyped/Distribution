@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.forceExceptions
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.none
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.suppressExceptions
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.suppressSetErrorInfo
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.useSetErrorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

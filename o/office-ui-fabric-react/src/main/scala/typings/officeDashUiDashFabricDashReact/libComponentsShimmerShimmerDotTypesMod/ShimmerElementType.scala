@@ -1,9 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementType.circle
-import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementType.gap
-import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementType.line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

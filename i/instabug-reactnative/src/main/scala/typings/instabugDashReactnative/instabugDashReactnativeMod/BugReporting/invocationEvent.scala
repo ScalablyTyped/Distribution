@@ -1,11 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent.floatingButton
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent.none
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent.screenshot
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent.shake
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent.twoFingersSwipe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,29 +12,22 @@ sealed trait invocationEvent extends js.Object
 @js.native
 object invocationEvent extends js.Object {
   @js.native
-  sealed trait floatingButton
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent
+  sealed trait floatingButton extends invocationEvent
   
   @js.native
-  sealed trait none
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent
+  sealed trait none extends invocationEvent
   
   @js.native
-  sealed trait screenshot
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent
+  sealed trait screenshot extends invocationEvent
   
   @js.native
-  sealed trait shake
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent
+  sealed trait shake extends invocationEvent
   
   @js.native
-  sealed trait twoFingersSwipe
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent
+  sealed trait twoFingersSwipe extends invocationEvent
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[
-    typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationEvent with Double
-  ] = js.native
+  def apply(value: Double): js.UndefOr[invocationEvent with Double] = js.native
   /* 4 */ @js.native
   object floatingButton extends TopLevel[floatingButton with Double]
   

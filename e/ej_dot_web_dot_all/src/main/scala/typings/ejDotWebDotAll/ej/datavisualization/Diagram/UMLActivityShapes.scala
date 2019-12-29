@@ -1,19 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.AcceptingEvent
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.Action
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.Decision
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.FinalNode
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.ForkNode
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.InitialNode
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.JoinNode
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.MergeNode
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.Note
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.ReceiveSignal
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.SendSignal
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.StructuredNode
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityShapes.TimeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -16,6 +16,6 @@ class RecursiveType[C /* <: Any */, A, O, I] protected () extends Type[A, O, I] 
   ) = this()
   val _tag: typings.ioDashTs.ioDashTsStrings.RecursiveType = js.native
   var runDefinition: js.Any = js.native
-  val `type`: C = js.native
+  def `type`(): C = js.native
 }
 

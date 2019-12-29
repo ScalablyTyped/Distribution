@@ -1,7 +1,6 @@
 package typings.imageDashSize
 
 import typings.imageDashSize.distTypesInterfaceMod.ISizeCalculationResult
-import typings.imageDashSize.imageDashSizeMod.CallbackFn
 import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js

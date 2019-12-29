@@ -1,6 +1,6 @@
 package typings.sbd.sbdMod
 
-import typings.sbd.sbdNumbers.`false`
+import typings.sbd.sbdBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

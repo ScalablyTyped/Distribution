@@ -16,7 +16,8 @@ class TabStop protected () extends js.Object {
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Previous: TabStop = js.native
-  var `Word.TabStop_typekey`: TabStop = js.native
+  @JSName("Word.TabStop_typekey")
+  var WordDotTabStop_typekey: TabStop = js.native
   def Clear(): Unit = js.native
 }
 

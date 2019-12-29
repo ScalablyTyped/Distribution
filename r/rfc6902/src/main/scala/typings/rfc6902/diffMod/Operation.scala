@@ -28,8 +28,8 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   @scala.inline
-  def CopyOperation(from: String, op: copy, path: String): Operation = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  def AddOperation(op: add, path: String, value: js.Any): Operation = {
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operation]
   }
@@ -46,14 +46,14 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   @scala.inline
-  def AddOperation(op: add, path: String, value: js.Any): Operation = {
+  def TestOperation(op: test, path: String, value: js.Any): Operation = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operation]
   }
   @scala.inline
-  def TestOperation(op: test, path: String, value: js.Any): Operation = {
-    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def CopyOperation(from: String, op: copy, path: String): Operation = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operation]
   }

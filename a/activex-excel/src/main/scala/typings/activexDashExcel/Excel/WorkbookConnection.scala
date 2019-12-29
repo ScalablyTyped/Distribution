@@ -10,7 +10,8 @@ class WorkbookConnection protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var Description: String = js.native
-  var `Excel.WorkbookConnection_typekey`: WorkbookConnection = js.native
+  @JSName("Excel.WorkbookConnection_typekey")
+  var ExcelDotWorkbookConnection_typekey: WorkbookConnection = js.native
   var Name: String = js.native
   val ODBCConnection: typings.activexDashExcel.Excel.ODBCConnection = js.native
   val OLEDBConnection: typings.activexDashExcel.Excel.OLEDBConnection = js.native

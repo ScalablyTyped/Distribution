@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object radiumStrings {
   @js.native
-  sealed trait `:active` extends js.Object
+  sealed trait Colonactive extends js.Object
   
   @js.native
-  sealed trait `:focus` extends js.Object
+  sealed trait Colonfocus extends js.Object
   
   @js.native
-  sealed trait `:hover` extends js.Object
+  sealed trait Colonhover extends js.Object
   
   @scala.inline
-  def `:active`: `:active` = ":active".asInstanceOf[`:active`]
+  def Colonactive: Colonactive = ":active".asInstanceOf[Colonactive]
   @scala.inline
-  def `:focus`: `:focus` = ":focus".asInstanceOf[`:focus`]
+  def Colonfocus: Colonfocus = ":focus".asInstanceOf[Colonfocus]
   @scala.inline
-  def `:hover`: `:hover` = ":hover".asInstanceOf[`:hover`]
+  def Colonhover: Colonhover = ":hover".asInstanceOf[Colonhover]
 }
 

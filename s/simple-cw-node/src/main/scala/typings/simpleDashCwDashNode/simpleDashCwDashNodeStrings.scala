@@ -12,10 +12,10 @@ object simpleDashCwDashNodeStrings {
   sealed trait me extends js.Object
   
   @js.native
-  sealed trait `my/status` extends js.Object
+  sealed trait mySlashstatus extends js.Object
   
   @js.native
-  sealed trait `my/tasks` extends js.Object
+  sealed trait mySlashtasks extends js.Object
   
   @js.native
   sealed trait rooms extends js.Object
@@ -25,9 +25,9 @@ object simpleDashCwDashNodeStrings {
   @scala.inline
   def me: me = "me".asInstanceOf[me]
   @scala.inline
-  def `my/status`: `my/status` = "my/status".asInstanceOf[`my/status`]
+  def mySlashstatus: mySlashstatus = "my/status".asInstanceOf[mySlashstatus]
   @scala.inline
-  def `my/tasks`: `my/tasks` = "my/tasks".asInstanceOf[`my/tasks`]
+  def mySlashtasks: mySlashtasks = "my/tasks".asInstanceOf[mySlashtasks]
   @scala.inline
   def rooms: rooms = "rooms".asInstanceOf[rooms]
 }

@@ -2,7 +2,7 @@ package typings.ecol
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.ecol.ecolNumbers.`false`
+import typings.ecol.ecolBooleans.`false`
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
@@ -43,7 +43,6 @@ object libSetsHashMultiSetCollectionMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, HashMultiSet[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -51,7 +50,6 @@ object libSetsHashMultiSetCollectionMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -59,7 +57,6 @@ object libSetsHashMultiSetCollectionMod extends js.Object {
       *
       * @return Iterator to the end.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, HashMultiSet[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */

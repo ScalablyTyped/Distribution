@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation._
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
+      /* order */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -96,7 +96,7 @@ import scala.scalajs.js.annotation._
   		*/
   var fireAction: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
+      /* eventName */ js.UndefOr[String], 
       /* args */ js.UndefOr[Array], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
@@ -108,7 +108,7 @@ import scala.scalajs.js.annotation._
   		* @param args Object... Variable number of parameters are passed to handlers.
   		* @returns Boolean Returns false if any of the handlers return false.
   		*/
-  var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.undefined
+  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
   /** [Method] Returns the value of bubbleEvents
   		* @returns String/String[]
   		*/
@@ -133,7 +133,7 @@ import scala.scalajs.js.annotation._
   		* @param eventName String The name of the event to check for
   		* @returns Boolean True if the event is being listened for, else false
   		*/
-  var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Config Option] (Object) */
   var listeners: js.UndefOr[js.Any] = js.undefined
   /** [Method] Alias for addManagedListener
@@ -181,7 +181,7 @@ import scala.scalajs.js.annotation._
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
+      /* order */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -266,7 +266,7 @@ import scala.scalajs.js.annotation._
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
+      /* order */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -320,7 +320,7 @@ import scala.scalajs.js.annotation._
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
-      /* order */ js.UndefOr[java.lang.String], 
+      /* order */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -359,17 +359,17 @@ import scala.scalajs.js.annotation._
 object IBufferedCollection {
   @scala.inline
   def apply(
-    add: (/* key */ js.UndefOr[java.lang.String], /* item */ js.UndefOr[js.Any]) => _ = null,
+    add: (/* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => _ = null,
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addAll: /* addItems */ js.UndefOr[js.Any] => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     addFilter: js.UndefOr[js.Any] => Unit = null,
     addFilters: js.UndefOr[js.Any | Array] => _ = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addSorter: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
-    addSorters: (/* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
+    addSorter: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String]) => Unit = null,
+    addSorters: (/* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[String]) => Unit = null,
     alias: Array = null,
     all: Array = null,
     alternateClassName: js.Any = null,
@@ -382,16 +382,16 @@ object IBufferedCollection {
     clone: () => IMixedCollection = null,
     config: js.Any = null,
     contains: /* item */ js.UndefOr[js.Any] => Boolean = null,
-    containsKey: /* key */ js.UndefOr[java.lang.String] => Boolean = null,
+    containsKey: /* key */ js.UndefOr[String] => Boolean = null,
     currentSortFn: js.Any = null,
-    defaultSortDirection: java.lang.String = null,
+    defaultSortDirection: String = null,
     destroy: () => Unit = null,
     dirtyFilterFn: js.UndefOr[Boolean] = js.undefined,
     dirtySortFn: js.UndefOr[Boolean] = js.undefined,
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     eachKey: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     filter: (js.Function1[/* data */ js.UndefOr[Array], Array]) | (js.Function4[
       /* property */ js.UndefOr[js.Any], 
       /* value */ js.UndefOr[js.Any], 
@@ -400,14 +400,14 @@ object IBufferedCollection {
       Array
     ]) = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
-    filterRoot: java.lang.String = null,
+    filterRoot: String = null,
     filtered: js.UndefOr[Boolean] = js.undefined,
     filters: Array = null,
     findBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     findIndexBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double = null,
     findInsertionIndex: (/* items */ js.UndefOr[Array], /* item */ js.UndefOr[js.Any]) => Double = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     first: () => _ = null,
     get: /* key */ js.UndefOr[js.Any] => _ = null,
     getAt: /* index */ js.UndefOr[Double] => _ = null,
@@ -416,30 +416,30 @@ object IBufferedCollection {
     getBubbleEvents: () => _ = null,
     getByKey: /* key */ js.UndefOr[js.Any] => _ = null,
     getCount: () => Double = null,
-    getDefaultSortDirection: () => java.lang.String = null,
+    getDefaultSortDirection: () => String = null,
     getFilterFn: () => _ = null,
-    getFilterRoot: () => java.lang.String = null,
+    getFilterRoot: () => String = null,
     getFilters: () => Array = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getKey: /* item */ js.UndefOr[js.Any] => _ = null,
     getListeners: () => _ = null,
     getPageSize: () => Double = null,
     getRange: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Array = null,
     getSortFn: () => _ = null,
-    getSortRoot: () => java.lang.String = null,
+    getSortRoot: () => String = null,
     getSorters: () => Array = null,
     getTotalCount: () => Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     indexOf: /* item */ js.UndefOr[js.Any] => Double = null,
-    indexOfKey: /* key */ js.UndefOr[java.lang.String] => Double = null,
+    indexOfKey: /* key */ js.UndefOr[String] => Double = null,
     indices: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[java.lang.String], /* item */ js.UndefOr[js.Any]) => _ = null,
+    insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => _ = null,
     insertFilter: (js.UndefOr[Double], js.UndefOr[js.Any]) => _ = null,
     insertFilters: (js.UndefOr[Double], js.UndefOr[Array]) => Array = null,
-    insertSorter: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
+    insertSorter: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String]) => Unit = null,
     insertSorters: () => IBufferedCollection = null,
     items: Array = null,
     keys: Array = null,
@@ -450,7 +450,7 @@ object IBufferedCollection {
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -459,35 +459,35 @@ object IBufferedCollection {
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeAll: /* items */ js.UndefOr[Array] => IMixedCollection = null,
     removeAt: /* index */ js.UndefOr[Double] => _ = null,
-    removeAtKey: /* key */ js.UndefOr[java.lang.String] => _ = null,
+    removeAtKey: /* key */ js.UndefOr[String] => _ = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeFilters: js.UndefOr[js.Any | Array] => IBufferedCollection | Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeSorter: /* sorter */ js.UndefOr[js.Any] => Unit = null,
     removeSorters: /* sorters */ js.UndefOr[js.Any] => IBufferedCollection = null,
-    replace: (/* oldKey */ js.UndefOr[java.lang.String], /* item */ js.UndefOr[js.Any]) => _ = null,
+    replace: (/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => _ = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setAutoFilter: /* autoFilter */ js.UndefOr[Boolean] => Unit = null,
     setAutoSort: /* autoSort */ js.UndefOr[Boolean] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setDefaultSortDirection: /* defaultSortDirection */ js.UndefOr[java.lang.String] => Unit = null,
-    setFilterRoot: js.UndefOr[java.lang.String] => Unit = null,
+    setDefaultSortDirection: /* defaultSortDirection */ js.UndefOr[String] => Unit = null,
+    setFilterRoot: js.UndefOr[String] => Unit = null,
     setFilters: js.UndefOr[Array] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setPageSize: /* pageSize */ js.UndefOr[Double] => Unit = null,
-    setSortRoot: /* sortRoot */ js.UndefOr[java.lang.String] => Unit = null,
+    setSortRoot: /* sortRoot */ js.UndefOr[String] => Unit = null,
     setSorters: /* sorters */ js.UndefOr[Array] => Unit = null,
     setTotalCount: /* totalCount */ js.UndefOr[Double] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     sort: (/* sorters */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[js.Any]) => Array = null,
-    sortRoot: java.lang.String = null,
+    sortRoot: String = null,
     sorted: js.UndefOr[Boolean] = js.undefined,
     sorters: Array = null,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

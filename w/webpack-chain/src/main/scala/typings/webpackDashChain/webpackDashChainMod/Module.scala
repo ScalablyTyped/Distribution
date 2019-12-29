@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Module ()
   extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedMap[Config, js.Any] {
-  var rules: TypedChainedMap[this.type, Rule] = js.native
+  var rules: TypedChainedMap[this.type, Rule[Module]] = js.native
   /* CompleteClass */
   override def end(): Config = js.native
   def noParse(noParse: js.Array[RegExp]): this.type = js.native
   def noParse(noParse: js.Function1[/* contentPath */ String, Boolean]): this.type = js.native
   def noParse(noParse: RegExp): this.type = js.native
-  def rule(name: String): Rule = js.native
+  def rule(name: String): Rule[Module] = js.native
   def strictExportPresence(value: Boolean): this.type = js.native
 }
 

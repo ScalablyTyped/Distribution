@@ -10,7 +10,6 @@ import typings.ethers.distTypesUtilsTypesMod.Signer
 import typings.ethers.distTypesUtilsTypesMod.TransactionRequest
 import typings.ethers.distTypesUtilsTypesMod.Wordlist
 import typings.ethers.distTypesWalletSigningDashKeyMod.SigningKey
-import typings.ethers.distTypesWalletWalletMod.Wallet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

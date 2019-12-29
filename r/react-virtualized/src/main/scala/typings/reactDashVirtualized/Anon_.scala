@@ -1,18 +1,18 @@
 package typings.reactDashVirtualized
 
+import typings.reactDashVirtualized.reactDashVirtualizedBooleans.`false`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`-1`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`0`
-import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`false`
-import typings.reactDashVirtualized.reactDashVirtualizedStrings.Empty
+import typings.reactDashVirtualized.reactDashVirtualizedStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ extends js.Object {
-  var classNameBottomLeftGrid: Empty
-  var classNameBottomRightGrid: Empty
-  var classNameTopLeftGrid: Empty
-  var classNameTopRightGrid: Empty
+  var classNameBottomLeftGrid: _empty
+  var classNameBottomRightGrid: _empty
+  var classNameTopLeftGrid: _empty
+  var classNameTopRightGrid: _empty
   var enableFixedColumnScroll: `false`
   var enableFixedRowScroll: `false`
   var fixedColumnCount: `0`
@@ -24,10 +24,10 @@ trait Anon_ extends js.Object {
 object Anon_ {
   @scala.inline
   def apply(
-    classNameBottomLeftGrid: Empty,
-    classNameBottomRightGrid: Empty,
-    classNameTopLeftGrid: Empty,
-    classNameTopRightGrid: Empty,
+    classNameBottomLeftGrid: _empty,
+    classNameBottomRightGrid: _empty,
+    classNameTopLeftGrid: _empty,
+    classNameTopRightGrid: _empty,
     enableFixedColumnScroll: `false`,
     enableFixedRowScroll: `false`,
     fixedColumnCount: `0`,

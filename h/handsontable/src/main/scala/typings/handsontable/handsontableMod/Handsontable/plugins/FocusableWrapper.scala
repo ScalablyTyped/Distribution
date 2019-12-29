@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FocusableWrapper extends js.Object {
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var listenersCount: WeakSet[HTMLElement]
   var mainElement: HTMLElement
   var rootDocument: Document
@@ -21,7 +21,7 @@ trait FocusableWrapper extends js.Object {
 object FocusableWrapper {
   @scala.inline
   def apply(
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     focus: () => Unit,
     getFocusableElement: () => HTMLElement,
     listenersCount: WeakSet[HTMLElement],

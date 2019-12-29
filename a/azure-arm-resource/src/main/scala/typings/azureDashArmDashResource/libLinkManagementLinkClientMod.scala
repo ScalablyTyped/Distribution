@@ -1,6 +1,5 @@
 package typings.azureDashArmDashResource
 
-import typings.azureDashArmDashResource.libLinkManagementLinkClientMod.ManagementLinkClient
 import typings.azureDashArmDashResource.libLinkOperationsMod.Operations
 import typings.azureDashArmDashResource.libLinkOperationsMod.ResourceLinks
 import typings.msDashRest.msDashRestMod.ServiceClientCredentials

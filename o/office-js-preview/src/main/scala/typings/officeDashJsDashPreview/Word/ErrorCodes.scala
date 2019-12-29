@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.ErrorCodes.accessDenied
-import typings.officeDashJsDashPreview.Word.ErrorCodes.generalException
-import typings.officeDashJsDashPreview.Word.ErrorCodes.invalidArgument
-import typings.officeDashJsDashPreview.Word.ErrorCodes.itemNotFound
-import typings.officeDashJsDashPreview.Word.ErrorCodes.notImplemented
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

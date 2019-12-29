@@ -23,7 +23,7 @@ trait AjaxLoadEventArgs extends js.Object {
   var isInteraction: js.UndefOr[Boolean] = js.undefined
   /** returns the tab model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Tab.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns previous active tab header.
     */
   var prevActiveHeader: js.UndefOr[HTMLElement] = js.undefined
@@ -43,7 +43,7 @@ object AjaxLoadEventArgs {
     activeIndex: Int | Double = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Tab.Model = null,
+    model: Model = null,
     prevActiveHeader: HTMLElement = null,
     prevActiveIndex: Int | Double = null,
     `type`: String = null

@@ -1,8 +1,6 @@
 package typings.antd
 
 import typings.antd.libListMod.ColumnCount
-import typings.antd.libStatisticUtilsMod._Formatter
-import typings.antd.libTreeDirectoryTreeMod.ExpandAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,14 +33,6 @@ object antdNumbers {
   @js.native
   sealed trait `8` extends ColumnCount
   
-  @js.native
-  sealed trait `false`
-    extends ExpandAction
-       with _Formatter
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -61,9 +51,5 @@ object antdNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

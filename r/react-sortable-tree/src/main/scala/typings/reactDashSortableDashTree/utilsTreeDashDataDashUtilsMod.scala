@@ -6,7 +6,6 @@ import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeIndex
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeItem
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreeNode
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeMod.TreePath
-import typings.reactDashSortableDashTree.utilsTreeDashDataDashUtilsMod.WalkAndMapFunctionParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

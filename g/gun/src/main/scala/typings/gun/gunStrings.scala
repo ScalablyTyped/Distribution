@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object gunStrings {
   @js.native
-  sealed trait AccessObject extends js.Object
+  sealed trait $ extends js.Object
   
   @js.native
-  sealed trait DOLLAR extends js.Object
+  sealed trait AccessObject extends js.Object
   
   @js.native
   sealed trait PBKDF2 extends js.Object
@@ -90,9 +90,9 @@ object gunStrings {
   sealed trait to extends js.Object
   
   @scala.inline
-  def AccessObject: AccessObject = "AccessObject".asInstanceOf[AccessObject]
+  def $: $ = "$".asInstanceOf[$]
   @scala.inline
-  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
+  def AccessObject: AccessObject = "AccessObject".asInstanceOf[AccessObject]
   @scala.inline
   def PBKDF2: PBKDF2 = "PBKDF2".asInstanceOf[PBKDF2]
   @scala.inline

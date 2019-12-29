@@ -17,7 +17,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Shell32.ShellFolderViewOC")
 @js.native
 class ShellFolderViewOC protected () extends js.Object {
-  var `Shell32.ShellFolderViewOC_typekey`: ShellFolderViewOC = js.native
+  @JSName("Shell32.ShellFolderViewOC_typekey")
+  var Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC = js.native
   /** Set the ShellFolderView object to monitor events of. */
   def SetFolderView(pdisp: ShellFolderView): Unit = js.native
 }

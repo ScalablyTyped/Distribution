@@ -18,7 +18,8 @@ class KeyBinding protected () extends js.Object {
   val KeyString: String = js.native
   val Parent: js.Any = js.native
   val Protected: Boolean = js.native
-  var `Word.KeyBinding_typekey`: KeyBinding = js.native
+  @JSName("Word.KeyBinding_typekey")
+  var WordDotKeyBinding_typekey: KeyBinding = js.native
   def Clear(): Unit = js.native
   def Disable(): Unit = js.native
   def Execute(): Unit = js.native

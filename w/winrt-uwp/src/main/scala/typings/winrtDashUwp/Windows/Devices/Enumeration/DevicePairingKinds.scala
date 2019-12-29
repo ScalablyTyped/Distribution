@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingKinds.confirmOnly
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingKinds.confirmPinMatch
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingKinds.displayPin
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingKinds.none
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingKinds.providePin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

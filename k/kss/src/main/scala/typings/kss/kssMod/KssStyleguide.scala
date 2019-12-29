@@ -1,6 +1,6 @@
 package typings.kss.kssMod
 
-import typings.kss.kssNumbers.`false`
+import typings.kss.kssBooleans.`false`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

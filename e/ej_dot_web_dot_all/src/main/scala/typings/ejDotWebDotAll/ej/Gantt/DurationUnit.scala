@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.DurationUnit.Day
-import typings.ejDotWebDotAll.ej.Gantt.DurationUnit.Hour
-import typings.ejDotWebDotAll.ej.Gantt.DurationUnit.Minute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

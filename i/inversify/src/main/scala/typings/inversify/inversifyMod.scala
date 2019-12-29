@@ -9,11 +9,11 @@ import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ContainerOptions
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Newable
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Request
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ServiceIdentifier
-import typings.inversify.inversifyStrings.`design:paramtypes`
-import typings.inversify.inversifyStrings.`inversify:paramtypes`
-import typings.inversify.inversifyStrings.`inversify:tagged_props`
-import typings.inversify.inversifyStrings.`inversify:tagged`
+import typings.inversify.inversifyStrings.designColonparamtypes
 import typings.inversify.inversifyStrings.inject
+import typings.inversify.inversifyStrings.inversifyColonparamtypes
+import typings.inversify.inversifyStrings.inversifyColontagged
+import typings.inversify.inversifyStrings.inversifyColontagged_props
 import typings.inversify.inversifyStrings.multi_inject
 import typings.inversify.inversifyStrings.name
 import typings.inversify.inversifyStrings.named
@@ -109,16 +109,16 @@ object inversifyMod extends js.Object {
   
   @js.native
   object METADATA_KEY extends js.Object {
-    val DESIGN_PARAM_TYPES: `design:paramtypes` = js.native
+    val DESIGN_PARAM_TYPES: designColonparamtypes = js.native
     val INJECT_TAG: inject = js.native
     val MULTI_INJECT_TAG: multi_inject = js.native
     val NAMED_TAG: named = js.native
     val NAME_TAG: name = js.native
     val OPTIONAL_TAG: optional = js.native
-    val PARAM_TYPES: `inversify:paramtypes` = js.native
+    val PARAM_TYPES: inversifyColonparamtypes = js.native
     val POST_CONSTRUCT: post_construct = js.native
-    val TAGGED: `inversify:tagged` = js.native
-    val TAGGED_PROP: `inversify:tagged_props` = js.native
+    val TAGGED: inversifyColontagged = js.native
+    val TAGGED_PROP: inversifyColontagged_props = js.native
     val UNMANAGED_TAG: unmanaged = js.native
   }
   

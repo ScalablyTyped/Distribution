@@ -43,12 +43,12 @@ trait IMultiTask[T] extends ITask {
     * If your task is "read only" and doesn't care about destination filepaths,
     * use this array instead of this.files.
     */
-  var filesSrc: js.Array[java.lang.String] = js.native
+  var filesSrc: js.Array[String] = js.native
   /**
     * In a multi task, this property contains the name of the target currently being iterated over.
     * For example, if a "sample" multi task was run as grunt sample:foo with the config data
     * {sample: {foo: "bar"}}, inside the task function, this.target would be "foo".
     */
-  var target: java.lang.String = js.native
+  var target: String = js.native
 }
 

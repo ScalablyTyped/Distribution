@@ -9,11 +9,11 @@ object gapiDotClientDotAdexchangebuyerStrings {
   sealed trait adexchangebuyer extends js.Object
   
   @js.native
-  sealed trait v1DOT4 extends js.Object
+  sealed trait v1Dot4 extends js.Object
   
   @scala.inline
   def adexchangebuyer: adexchangebuyer = "adexchangebuyer".asInstanceOf[adexchangebuyer]
   @scala.inline
-  def v1DOT4: v1DOT4 = "v1.4".asInstanceOf[v1DOT4]
+  def v1Dot4: v1Dot4 = "v1.4".asInstanceOf[v1Dot4]
 }
 

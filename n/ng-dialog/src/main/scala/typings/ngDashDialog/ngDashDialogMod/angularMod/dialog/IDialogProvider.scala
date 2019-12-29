@@ -12,7 +12,7 @@ trait IDialogProvider extends IServiceProvider {
   			 * @param defaultOptions
   			 * @returns {}
   			 */
-  def setDefaults(defaultOptions: typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogOptions): Unit = js.native
+  def setDefaults(defaultOptions: IDialogOptions): Unit = js.native
   /**
   			 * Adds additional listener on every $locationChangeSuccess event and gets updated version of body into dialog.
   			 * Maybe useful in some rare cases when you're dependant on DOM changes, defaults to false. Use it in module's

@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.DocumentCardType.compact
-import typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.DocumentCardType.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

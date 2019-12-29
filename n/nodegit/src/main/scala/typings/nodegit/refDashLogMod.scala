@@ -1,8 +1,6 @@
 package typings.nodegit
 
 import typings.nodegit.oidMod.Oid
-import typings.nodegit.refDashLogMod.Reflog
-import typings.nodegit.refDashLogMod.ReflogEntry
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
 import scala.scalajs.js

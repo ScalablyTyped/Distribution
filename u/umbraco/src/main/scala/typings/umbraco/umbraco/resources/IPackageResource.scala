@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @description handles data for package installations
   **/
 trait IPackageResource extends js.Object {
-  def cleanUp(`package`: String): Unit
+  def cleanUp(_package: String): Unit
   /**
     * @ngdoc method
     * @name umbraco.resources.packageInstallResource#fetchPackage
@@ -55,9 +55,9 @@ trait IPackageResource extends js.Object {
     * @returns {Int} the ID assigned to the saved package manifest
     *
     */
-  def `import`(`package`: String): Double
-  def installData(`package`: String): Unit
-  def installFiles(`package`: String): Unit
+  def `import`(_package: String): Double
+  def installData(_package: String): Unit
+  def installFiles(_package: String): Unit
 }
 
 object IPackageResource {

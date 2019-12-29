@@ -21,9 +21,6 @@ object vueDashTemplateDashCompilerNumbers {
   @js.native
   sealed trait `4` extends SSROptimizability
   
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -34,7 +31,5 @@ object vueDashTemplateDashCompilerNumbers {
   def `3`: `3` = 3.asInstanceOf[`3`]
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

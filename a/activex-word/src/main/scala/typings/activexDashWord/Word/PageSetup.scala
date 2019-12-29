@@ -43,7 +43,8 @@ class PageSetup protected () extends js.Object {
   var TopMargin: Double = js.native
   var TwoPagesOnOne: Boolean = js.native
   var VerticalAlignment: WdVerticalAlignment = js.native
-  var `Word.PageSetup_typekey`: PageSetup = js.native
+  @JSName("Word.PageSetup_typekey")
+  var WordDotPageSetup_typekey: PageSetup = js.native
   def SetAsTemplateDefault(): Unit = js.native
   def TogglePortrait(): Unit = js.native
 }

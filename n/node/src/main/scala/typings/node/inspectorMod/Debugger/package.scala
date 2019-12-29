@@ -8,9 +8,9 @@ package object Debugger {
   /**
     * Breakpoint identifier.
     */
-  type BreakpointId = java.lang.String
+  type BreakpointId = String
   /**
     * Call frame identifier.
     */
-  type CallFrameId = java.lang.String
+  type CallFrameId = String
 }

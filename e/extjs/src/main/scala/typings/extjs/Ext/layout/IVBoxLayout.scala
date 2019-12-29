@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait IVBoxLayout extends IBox {
   /** [Config Option] (String) */
-  var align: js.UndefOr[java.lang.String] = js.undefined
+  var align: js.UndefOr[String] = js.undefined
   /** [Config Option] ("round"/"floor"/"ceil") */
   var alignRoundingMethod: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -24,7 +24,7 @@ object IVBoxLayout {
     addChildEls: () => Unit = null,
     afterRemove: /* item */ js.UndefOr[js.Any] => Unit = null,
     alias: Array = null,
-    align: java.lang.String = null,
+    align: String = null,
     alignRoundingMethod: js.Any = null,
     alternateClassName: js.Any = null,
     beginLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
@@ -41,13 +41,13 @@ object IVBoxLayout {
     defaultMargins: js.Any = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
     flex: Int | Double = null,
     getContainerSize: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => _ = null,
     getElementTarget: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy = null,
     getLayoutItems: () => Array = null,
     getRenderTarget: () => IElement = null,
@@ -59,13 +59,13 @@ object IVBoxLayout {
     initLayout: () => Unit = null,
     isLayout: js.UndefOr[Boolean] = js.undefined,
     isValidParent: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     mixins: js.Any = null,
     notifyOwner: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     onContentChange: /* child */ js.UndefOr[IComponent] => Boolean = null,
     overflowPadderEl: IElement = null,
-    pack: java.lang.String = null,
-    padding: java.lang.String = null,
+    pack: String = null,
+    padding: String = null,
     removeChildEls: js.UndefOr[js.Any] => Unit = null,
     renderItems: (/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,

@@ -7,9 +7,9 @@ import typings.semanticDashUiDashReact.distCommonjsElementsIconIconMod.IconProps
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.HtmlIframeProps
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`16:9`
-import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`21:9`
-import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`4:3`
+import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`16Colon9`
+import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`21Colon9`
+import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`4Colon3`
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.vimeo
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.youtube
 import typings.std.HTMLDivElement
@@ -23,7 +23,7 @@ trait StrictEmbedProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** An embed can specify an alternative aspect ratio. */
-  var aspectRatio: js.UndefOr[`4:3` | `16:9` | `21:9`] = js.undefined
+  var aspectRatio: js.UndefOr[`4Colon3` | `16Colon9` | `21Colon9`] = js.undefined
   /** Setting to true or false will force autoplay. */
   var autoplay: js.UndefOr[Boolean] = js.undefined
   /** Whether to show networks branded UI like title cards, or after video calls to action. */
@@ -72,7 +72,7 @@ object StrictEmbedProps {
   def apply(
     active: js.UndefOr[Boolean] = js.undefined,
     as: js.Any = null,
-    aspectRatio: `4:3` | `16:9` | `21:9` = null,
+    aspectRatio: `4Colon3` | `16Colon9` | `21Colon9` = null,
     autoplay: js.UndefOr[Boolean] = js.undefined,
     brandedUI: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,

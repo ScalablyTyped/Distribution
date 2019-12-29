@@ -2,7 +2,7 @@ package typings.tar.tarMod
 
 import typings.node.Buffer
 import typings.node.NodeJS.WritableStream
-import typings.tar.tarNumbers.`false`
+import typings.tar.tarBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

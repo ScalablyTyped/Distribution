@@ -1,14 +1,6 @@
 package typings.winrt.Windows.Storage.Pickers
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.computerFolder
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.desktop
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.documentsLibrary
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.downloads
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.homeGroup
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.musicLibrary
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.picturesLibrary
-import typings.winrt.Windows.Storage.Pickers.PickerLocationId.videosLibrary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

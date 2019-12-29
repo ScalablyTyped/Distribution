@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`cursor-update`
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -20,7 +21,7 @@ trait CursorUpdateEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#CursorUpdateEventInfo)
     */
-  var `type`: String
+  var `type`: `cursor-update`
 }
 
 object CursorUpdateEventInfo {
@@ -30,7 +31,7 @@ object CursorUpdateEventInfo {
     coordinates: js.Array[Double],
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String
+    `type`: `cursor-update`
   ): CursorUpdateEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +29,8 @@ class Zone protected ()
     * @param width The width of the Game Object. Default 1.
     * @param height The height of the Game Object. Default 1.
     */
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, width: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, width: Double, height: Double) = this()
+  def this(scene: Scene, x: Double, y: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, width: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, width: Double, height: Double) = this()
 }
 

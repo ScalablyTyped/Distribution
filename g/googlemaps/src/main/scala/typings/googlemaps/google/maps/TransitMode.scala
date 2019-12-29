@@ -1,11 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.TransitMode.BUS
-import typings.googlemaps.google.maps.TransitMode.RAIL
-import typings.googlemaps.google.maps.TransitMode.SUBWAY
-import typings.googlemaps.google.maps.TransitMode.TRAIN
-import typings.googlemaps.google.maps.TransitMode.TRAM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

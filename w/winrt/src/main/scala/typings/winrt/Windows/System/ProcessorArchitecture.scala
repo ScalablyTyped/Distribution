@@ -1,11 +1,6 @@
 package typings.winrt.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.System.ProcessorArchitecture.arm
-import typings.winrt.Windows.System.ProcessorArchitecture.neutral
-import typings.winrt.Windows.System.ProcessorArchitecture.unknown
-import typings.winrt.Windows.System.ProcessorArchitecture.x64
-import typings.winrt.Windows.System.ProcessorArchitecture.x86
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

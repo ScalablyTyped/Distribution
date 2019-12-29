@@ -9,8 +9,6 @@ import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda5
 import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda6
 import typings.sodiumjs.distTypingsSodiumLazyMod.Lazy
 import typings.sodiumjs.distTypingsSodiumListenerMod.Listener
-import typings.sodiumjs.distTypingsSodiumStreamMod.Stream
-import typings.sodiumjs.distTypingsSodiumStreamMod.StreamWithSend
 import typings.sodiumjs.distTypingsSodiumTuple2Mod.Tuple2
 import typings.sodiumjs.distTypingsSodiumVertexMod.Vertex
 import scala.scalajs.js
@@ -55,14 +53,17 @@ object distTypingsSodiumStreamMod extends js.Object {
       */
     def collectLazy[B, S](initState: Lazy[S], f: js.Function2[/* a */ A, /* s */ S, Tuple2[B, S]]): Stream[B] = js.native
     def collectLazy[B, S](initState: Lazy[S], f: Lambda2[A, S, Tuple2[B, S]]): Stream[B] = js.native
-    def `fantasy-land/concat`(a: Stream[A]): Stream[A] = js.native
-    def `fantasy-land/empty`(): Stream[A] = js.native
+    @JSName("fantasy-land/concat")
+    def `fantasy-landSlashconcat`(a: Stream[A]): Stream[A] = js.native
+    @JSName("fantasy-land/empty")
+    def `fantasy-landSlashempty`(): Stream[A] = js.native
     /**
       * Fantasy-land Algebraic Data Type Compatability.
       * Stream satisfies the Functor and Monoid Categories (and hence Semigroup)
       * @see {@link https://github.com/fantasyland/fantasy-land} for more info
       */
-    def `fantasy-land/map`[B](f: js.Function1[/* a */ A, B]): Stream[B] = js.native
+    @JSName("fantasy-land/map")
+    def `fantasy-landSlashmap`[B](f: js.Function1[/* a */ A, B]): Stream[B] = js.native
     /**
       * Return a stream that only outputs events for which the predicate returns true.
       */

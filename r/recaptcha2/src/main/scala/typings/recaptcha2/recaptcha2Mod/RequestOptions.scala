@@ -1,6 +1,6 @@
 package typings.recaptcha2.recaptcha2Mod
 
-import typings.recaptcha2.recaptcha2Numbers.`true`
+import typings.recaptcha2.recaptcha2Booleans.`true`
 import typings.recaptcha2.recaptcha2Strings.POST
 import scala.scalajs.js
 import scala.scalajs.js.`|`

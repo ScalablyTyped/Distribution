@@ -1,6 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,13 @@ trait DirectionsFeatureSet extends FeatureSet {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#extent)
     */
   var extent: Extent = js.native
+  /**
+    * The geometry type of the FeatureSet.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#geometryType)
+    */
+  @JSName("geometryType")
+  var geometryType_DirectionsFeatureSet: polyline = js.native
   /**
     * A single polyline representing the route.
     *

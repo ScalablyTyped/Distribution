@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPivotSchemaDesigner
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotSchemaDesigner]
+     with Instantiable2[
       (/* element */ Element) | (/* element */ JQuery), 
       /* options */ Model, 
       PivotSchemaDesigner
-    ]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotSchemaDesigner] {
+    ] {
   var Locale: js.Any = js.native
   var fn: PivotSchemaDesigner = js.native
 }

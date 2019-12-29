@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.networking.onc.onNetworkListChanged")
 @js.native
 object onNetworkListChanged
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* changes */ js.Array[String], Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* changes */ js.Array[String], Unit]]]
 

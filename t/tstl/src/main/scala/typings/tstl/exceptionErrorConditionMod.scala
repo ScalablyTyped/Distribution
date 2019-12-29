@@ -3,7 +3,6 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseErrorInstanceMod.ErrorInstance
 import typings.tstl.exceptionErrorCategoryMod.ErrorCategory
-import typings.tstl.exceptionErrorConditionMod.ErrorCondition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

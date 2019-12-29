@@ -1,9 +1,6 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Auto
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Left
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

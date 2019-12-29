@@ -1,7 +1,6 @@
 package typings.atJupyterlabApputils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atJupyterlabApputils.libSplashMod.ISplashScreen
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js

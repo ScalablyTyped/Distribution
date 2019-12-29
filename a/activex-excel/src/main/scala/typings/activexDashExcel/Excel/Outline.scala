@@ -10,7 +10,8 @@ class Outline protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   var AutomaticStyles: Boolean = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Outline_typekey`: Outline = js.native
+  @JSName("Excel.Outline_typekey")
+  var ExcelDotOutline_typekey: Outline = js.native
   val Parent: js.Any = js.native
   var SummaryColumn: XlSummaryColumn = js.native
   var SummaryRow: XlSummaryRow = js.native

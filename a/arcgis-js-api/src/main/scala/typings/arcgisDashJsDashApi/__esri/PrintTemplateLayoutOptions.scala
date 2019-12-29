@@ -1,5 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.Feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.Kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.Meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.Miles
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -14,31 +18,31 @@ trait PrintTemplateLayoutOptions extends Object {
     */
   var authorText: js.UndefOr[String] = js.undefined
   /**
-    * The text used for the copyright if the specified layout contains an copyright text element.
+    * The text used for the copyright if the specified layout contains a copyright text element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
   var copyrightText: js.UndefOr[String] = js.undefined
   /**
-    * An array of name-value pairs. Use this property to update the text for custom text elements on the page layout. Values must be strings.
+    * An array of name-value pair objects. Use this property to update the text for custom text elements on the page layout. Values must be strings. The custom text elements must exist in the print service. All out-of-the-box print service layout templates contain a text element named `date` that gets populated by default with the system date-time, but can be overwritten.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
   var customTextElements: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html) containing the ids of the layers that will be included in the legend. Tiled layers and GraphicsLayer will not appear in the legend. If `legendLayers` is not specified, all operational layers (non-tiled layers) except [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) will be present in the legend. To specify that no layers will be included in the legend set `legendLayer = []`.
+    * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html) containing the ids of the layers that will be included in the legend. Tiled layers and GraphicsLayer will not appear in the legend. If `legendLayers` is not specified, all operational layers (non-tiled layers) except [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) will be present in the legend. To specify that no layers will be included in the legend, set `legendLayer = []`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
   var legendLayers: js.UndefOr[js.Array[LegendLayer]] = js.undefined
   /**
-    * The unit used for the scalebar.  **Possible Values:** `Miles` | `Kilometers` | `Meters` | `Feet`
+    * The unit used for the scalebar.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     *
     * @default Miles
     */
-  var scalebarUnit: js.UndefOr[String] = js.undefined
+  var scalebarUnit: js.UndefOr[Miles | Kilometers | Meters | Feet] = js.undefined
   /**
     * The text used for the map title if the specified layout contains a title text element.
     *
@@ -57,7 +61,7 @@ object PrintTemplateLayoutOptions {
     copyrightText: String = null,
     customTextElements: js.Array[_] = null,
     legendLayers: js.Array[LegendLayer] = null,
-    scalebarUnit: String = null,
+    scalebarUnit: Miles | Kilometers | Meters | Feet = null,
     titleText: String = null
   ): PrintTemplateLayoutOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))

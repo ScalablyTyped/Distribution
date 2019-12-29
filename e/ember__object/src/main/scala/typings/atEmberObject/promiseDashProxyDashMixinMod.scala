@@ -1,6 +1,5 @@
 package typings.atEmberObject
 
-import typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin
 import typings.rsvp.rsvpMod.default.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`

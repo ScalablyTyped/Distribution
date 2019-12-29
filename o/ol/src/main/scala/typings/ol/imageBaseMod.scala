@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.imageBaseMod.ImageBase
 import typings.ol.imageStateMod.ImageState
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement

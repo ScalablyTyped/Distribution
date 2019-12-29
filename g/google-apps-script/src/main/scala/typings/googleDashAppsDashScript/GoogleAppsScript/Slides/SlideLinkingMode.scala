@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.LINKED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.NOT_LINKED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

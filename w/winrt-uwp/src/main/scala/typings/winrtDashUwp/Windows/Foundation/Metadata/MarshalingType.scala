@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Metadata.MarshalingType.agile
-import typings.winrtDashUwp.Windows.Foundation.Metadata.MarshalingType.invalidMarshaling
-import typings.winrtDashUwp.Windows.Foundation.Metadata.MarshalingType.none
-import typings.winrtDashUwp.Windows.Foundation.Metadata.MarshalingType.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

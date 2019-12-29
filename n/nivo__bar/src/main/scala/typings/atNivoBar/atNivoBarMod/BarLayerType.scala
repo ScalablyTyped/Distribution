@@ -1,11 +1,6 @@
 package typings.atNivoBar.atNivoBarMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atNivoBar.atNivoBarMod.BarLayerType.Axes
-import typings.atNivoBar.atNivoBarMod.BarLayerType.Bars
-import typings.atNivoBar.atNivoBarMod.BarLayerType.Grid
-import typings.atNivoBar.atNivoBarMod.BarLayerType.Legends
-import typings.atNivoBar.atNivoBarMod.BarLayerType.Markers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

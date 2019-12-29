@@ -1,11 +1,6 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libCoreLogLevelsMod.Levels
-import typings.sipDotJs.libCoreLogLevelsMod.Levels.debug
-import typings.sipDotJs.libCoreLogLevelsMod.Levels.error
-import typings.sipDotJs.libCoreLogLevelsMod.Levels.log
-import typings.sipDotJs.libCoreLogLevelsMod.Levels.warn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

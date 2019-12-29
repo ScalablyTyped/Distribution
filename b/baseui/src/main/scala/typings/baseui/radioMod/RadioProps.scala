@@ -4,10 +4,10 @@ import typings.baseui.baseuiStrings.bottom
 import typings.baseui.baseuiStrings.left
 import typings.baseui.baseuiStrings.right
 import typings.baseui.baseuiStrings.top
+import typings.react.reactMod.ChangeEvent
+import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.FormEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.NativeMouseEvent
@@ -29,7 +29,7 @@ trait RadioProps extends js.Object {
   var labelPlacement: js.UndefOr[top | right | bottom | left] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
-  var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
@@ -53,7 +53,7 @@ object RadioProps {
     labelPlacement: top | right | bottom | left = null,
     name: String = null,
     onBlur: FocusEvent[HTMLInputElement] => Unit = null,
-    onChange: FormEvent[HTMLInputElement] => Unit = null,
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
     onFocus: FocusEvent[HTMLInputElement] => Unit = null,
     onMouseDown: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,

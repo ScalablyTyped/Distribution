@@ -2,7 +2,6 @@ package typings.inversifyDashRestifyDashUtils
 
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Container
 import typings.inversifyDashRestifyDashUtils.dtsInterfacesMod.interfaces.ConfigFunction
-import typings.inversifyDashRestifyDashUtils.dtsServerMod.InversifyRestifyServer
 import typings.restify.restifyMod.Server
 import typings.restify.restifyMod.ServerOptions
 import scala.scalajs.js

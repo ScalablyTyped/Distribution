@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.ISVGSVGElement")
 @js.native
 class ISVGSVGElement protected () extends js.Object {
-  var `MSHTML.ISVGSVGElement_typekey`: ISVGSVGElement = js.native
+  @JSName("MSHTML.ISVGSVGElement_typekey")
+  var MSHTMLDotISVGSVGElement_typekey: ISVGSVGElement = js.native
   var contentScriptType: String = js.native
   var contentStyleType: String = js.native
   var currentScale: Double = js.native

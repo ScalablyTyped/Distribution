@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.node.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`nodeDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.nodeDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait RuntimeClassList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `nodeDOTk8sDOTio/v1alpha1`
+  val apiVersion: nodeDotk8sDotioSlashv1alpha1
   /**
     * Items is a list of schema objects.
     */
@@ -38,7 +38,7 @@ trait RuntimeClassList extends js.Object {
 object RuntimeClassList {
   @scala.inline
   def apply(
-    apiVersion: `nodeDOTk8sDOTio/v1alpha1`,
+    apiVersion: nodeDotk8sDotioSlashv1alpha1,
     items: js.Array[RuntimeClass],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.RuntimeClassList,
     metadata: ListMeta

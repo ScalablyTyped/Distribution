@@ -16,7 +16,8 @@ class DiagramNode protected () extends js.Object {
   val Children_Original: DiagramNodeChildren = js.native
   val Creator: Double = js.native
   val Diagram: IMsoDiagram = js.native
-  var `Excel.DiagramNode_typekey`: DiagramNode = js.native
+  @JSName("Excel.DiagramNode_typekey")
+  var ExcelDotDiagramNode_typekey: DiagramNode = js.native
   var Layout: MsoOrgChartLayoutType = js.native
   val Parent: js.Any = js.native
   val Root: DiagramNode = js.native

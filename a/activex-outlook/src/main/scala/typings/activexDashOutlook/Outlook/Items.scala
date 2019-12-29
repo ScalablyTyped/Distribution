@@ -11,7 +11,8 @@ class Items protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
   var IncludeRecurrences: Boolean = js.native
-  var `Outlook.Items_typekey`: Items = js.native
+  @JSName("Outlook.Items_typekey")
+  var OutlookDotItems_typekey: Items = js.native
   val Parent: js.Any = js.native
   val RawTable: js.Any = js.native
   val Session: NameSpace = js.native

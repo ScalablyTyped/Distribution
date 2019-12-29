@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ObjectMarkerVisibility.IconAndText
-import typings.openui5.sap.m.ObjectMarkerVisibility.IconOnly
-import typings.openui5.sap.m.ObjectMarkerVisibility.TextOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

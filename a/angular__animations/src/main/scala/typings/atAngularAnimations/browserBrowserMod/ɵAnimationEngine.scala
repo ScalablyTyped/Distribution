@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/animations/browser/browser", "ɵAnimationEngine")
+@JSImport("@angular/animations/browser/browser", "\u0275AnimationEngine")
 @js.native
 class ɵAnimationEngine protected () extends js.Object {
   def this(bodyNode: js.Any, _driver: AnimationDriver, normalizer: ɵAnimationStyleNormalizer) = this()

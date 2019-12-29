@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.disabled
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.initializing
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.noData
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.notAvailable
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.notInitialized
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

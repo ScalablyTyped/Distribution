@@ -16,7 +16,8 @@ class ChartFont protected () extends js.Object {
   var FontStyle: js.Any = js.native
   var Italic: js.Any = js.native
   var Name: js.Any = js.native
-  var `Office.ChartFont_typekey`: ChartFont = js.native
+  @JSName("Office.ChartFont_typekey")
+  var OfficeDotChartFont_typekey: ChartFont = js.native
   var OutlineFont: js.Any = js.native
   val Parent: js.Any = js.native
   var Shadow: js.Any = js.native

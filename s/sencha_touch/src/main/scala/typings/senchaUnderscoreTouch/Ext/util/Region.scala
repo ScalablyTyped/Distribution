@@ -49,7 +49,7 @@ object Region extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Retrieves an Ext util Region for a particular element
   		* @param el String/HTMLElement/Ext.Element The element or its ID.
   		* @returns Ext.util.Region region

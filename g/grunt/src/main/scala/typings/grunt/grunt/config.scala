@@ -1,8 +1,6 @@
 package typings.grunt.grunt
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.grunt.grunt.config.ConfigModule
-import typings.grunt.grunt.config.IProjectConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,18 +13,18 @@ object config extends js.Object {
     */
   @js.native
   trait ConfigModule extends js.Object {
-    def apply(prop: java.lang.String): js.Any = js.native
+    def apply(prop: String): js.Any = js.native
     /**
       * Get or set a value from the project's Grunt configuration.
       * This method serves as an alias to other methods;
       * if two arguments are passed, grunt.config.set is called,
       * otherwise grunt.config.get is called.
       */
-    def apply(prop: java.lang.String, value: js.Any): js.Any = js.native
+    def apply(prop: String, value: js.Any): js.Any = js.native
     /**
       * Escape '.' dots in the given propString. This should be used for property names that contain dots.
       */
-    def escape(propString: java.lang.String): java.lang.String = js.native
+    def escape(propString: String): String = js.native
     def get(): ConfigModule = js.native
     /**
       * Get a value from the project's Grunt configuration.
@@ -36,13 +34,13 @@ object config extends js.Object {
       *
       * @note Although this accepts a generic type, you may still get the wrong typed value.
       */
-    def get[T](prop: java.lang.String): T = js.native
+    def get[T](prop: String): T = js.native
     /**
       * Get a raw value from the project's Grunt configuration, without processing <% %> template strings.
       * If prop is specified, that property's value is returned, or null if that property is not defined.
       * If prop isn't specified, a copy of the entire config object is returned.
       */
-    def getRaw[T](prop: java.lang.String): T = js.native
+    def getRaw[T](prop: String): T = js.native
     /**
       * Initialize a configuration object for the current project.
       * The specified configObject is used by tasks and can be accessed using the grunt.config method.
@@ -64,18 +62,18 @@ object config extends js.Object {
       * it will be expanded to the actual value. That, combined with grunt's task system automatically
       * flattening arrays, can be extremely useful.
       */
-    def process[T](value: java.lang.String): T = js.native
+    def process[T](value: String): T = js.native
     /**
       * Fail the current task if one or more required config properties is missing, null or undefined.
       * One or more string or array config properties may be specified.
       */
-    def requires(prop: java.lang.String, andProps: java.lang.String*): Unit = js.native
-    def requires(prop: js.Array[java.lang.String], andProps: js.Array[java.lang.String]*): Unit = js.native
+    def requires(prop: String, andProps: String*): Unit = js.native
+    def requires(prop: js.Array[String], andProps: js.Array[String]*): Unit = js.native
     /**
       * Set a value into the project's Grunt configuration.
       * @note any specified <% %> template strings will only be processed when config data is retrieved.
       */
-    def set[T](prop: java.lang.String, value: T): T = js.native
+    def set[T](prop: String, value: T): T = js.native
   }
   
   /**

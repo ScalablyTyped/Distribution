@@ -24,7 +24,8 @@ class MailMerge protected () extends js.Object {
   var SuppressBlankLines: Boolean = js.native
   var ViewMailMergeFieldCodes: Double = js.native
   var WizardState: Double = js.native
-  var `Word.MailMerge_typekey`: MailMerge = js.native
+  @JSName("Word.MailMerge_typekey")
+  var WordDotMailMerge_typekey: MailMerge = js.native
   def Check(): Unit = js.native
   def CreateDataSource(
     Name: js.UndefOr[js.Any],

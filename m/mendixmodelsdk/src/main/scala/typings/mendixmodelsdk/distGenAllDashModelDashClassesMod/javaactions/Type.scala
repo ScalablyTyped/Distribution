@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.javaactions
 
+import typings.mendixmodelsdk.distGenJavaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -30,6 +31,6 @@ abstract class Type protected ()
 @js.native
 object Type extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenJavaactionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

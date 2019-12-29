@@ -5,7 +5,6 @@ import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularCore.atAngularCoreMod.EventEmitter
 import typings.atAngularCore.atAngularCoreMod.Renderer2
 import typings.homeworks.homeworks.StepEvent
-import typings.homeworks.libNg2DashHomeworksSrcComponentsStepComponentDotStepMod.WorksStepTitle
 import typings.homeworks.libNg2DashHomeworksSrcCoreManagerMod.HomeworksManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`

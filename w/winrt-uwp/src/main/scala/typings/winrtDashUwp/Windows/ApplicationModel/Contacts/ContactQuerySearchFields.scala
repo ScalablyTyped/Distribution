@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.all
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.email
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.name
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.phone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

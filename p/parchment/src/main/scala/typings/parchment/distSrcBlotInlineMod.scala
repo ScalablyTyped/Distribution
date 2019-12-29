@@ -1,6 +1,5 @@
 package typings.parchment
 
-import typings.parchment.distSrcBlotInlineMod.InlineBlot
 import typings.parchment.distSrcRegistryMod.Scope
 import typings.std.HTMLElement
 import scala.scalajs.js

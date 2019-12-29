@@ -16,7 +16,7 @@ trait NodeCutEventArgs extends js.Object {
   var keyCode: js.UndefOr[Double] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the given parent node details
     */
   var parentDetails: js.UndefOr[js.Any] = js.undefined
@@ -34,7 +34,7 @@ object NodeCutEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     event: js.Any = null,
     keyCode: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     parentDetails: js.Any = null,
     parentElement: js.Any = null,
     `type`: String = null

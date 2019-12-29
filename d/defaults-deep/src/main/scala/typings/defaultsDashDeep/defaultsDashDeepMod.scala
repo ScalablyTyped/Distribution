@@ -1,7 +1,6 @@
 package typings.defaultsDashDeep
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.defaultsDashDeep.defaultsDashDeepMod.Obj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

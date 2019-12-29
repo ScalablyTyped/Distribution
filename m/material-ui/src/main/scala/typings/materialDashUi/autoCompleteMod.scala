@@ -1,7 +1,6 @@
 package typings.materialDashUi
 
 import typings.materialDashUi.__MaterialUI.Menus.MenuItem
-import typings.materialDashUi.autoCompleteMod.AutoComplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

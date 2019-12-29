@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionFlags.CanOptOut
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionFlags.ContributedSubscription
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionFlags.GroupSubscription
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionFlags.None
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionFlags.TeamSubscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

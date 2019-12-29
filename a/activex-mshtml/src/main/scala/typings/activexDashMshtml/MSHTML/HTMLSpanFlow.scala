@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLSpanFlow")
 @js.native
 class HTMLSpanFlow protected () extends js.Object {
-  var `MSHTML.HTMLSpanFlow_typekey`: HTMLSpanFlow = js.native
+  @JSName("MSHTML.HTMLSpanFlow_typekey")
+  var MSHTMLDotHTMLSpanFlow_typekey: HTMLSpanFlow = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

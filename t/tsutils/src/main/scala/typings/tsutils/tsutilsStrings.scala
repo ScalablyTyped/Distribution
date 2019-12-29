@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object tsutilsStrings {
   @js.native
-  sealed trait BACKSLASHn extends js.Object
+  sealed trait CarriagereturnLinefeed extends js.Object
   
   @js.native
-  sealed trait BACKSLASHrBACKSLASHn extends js.Object
+  sealed trait Linefeed extends js.Object
   
   @js.native
   sealed trait Symbol extends js.Object
@@ -46,9 +46,9 @@ object tsutilsStrings {
   sealed trait symbol_ extends js.Object
   
   @scala.inline
-  def BACKSLASHn: BACKSLASHn = "\n".asInstanceOf[BACKSLASHn]
+  def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
   @scala.inline
-  def BACKSLASHrBACKSLASHn: BACKSLASHrBACKSLASHn = "\r\n".asInstanceOf[BACKSLASHrBACKSLASHn]
+  def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
   @scala.inline
   def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   @scala.inline

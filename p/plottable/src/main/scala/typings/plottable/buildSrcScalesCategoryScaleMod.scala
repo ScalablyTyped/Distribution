@@ -1,6 +1,5 @@
 package typings.plottable
 
-import typings.plottable.buildSrcScalesCategoryScaleMod.Category
 import typings.plottable.buildSrcScalesMod.ITransformableScale
 import typings.plottable.buildSrcScalesScaleMod.Scale
 import scala.scalajs.js

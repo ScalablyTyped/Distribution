@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("daterangepicker", JSImport.Namespace)
 @js.native
-class ^ protected ()
-  extends typings.daterangepicker.daterangepickerMod.daterangepicker {
+class ^ protected () extends daterangepicker {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: Options) = this()
   def this(element: HTMLElement, options: Options, callback: DataRangePickerCallback) = this()

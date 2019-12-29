@@ -10,7 +10,7 @@ trait SelectEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of selected items.
     */
   var name: js.UndefOr[js.Array[String]] = js.undefined
@@ -29,7 +29,7 @@ object SelectEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     name: js.Array[String] = null,
     path: String = null,
     selectedItems: js.Any = null,

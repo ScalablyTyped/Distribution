@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.events.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.eventsDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.EventSource
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ObjectReference
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
@@ -23,7 +23,7 @@ trait Event extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `eventsDOTk8sDOTio/v1beta1`
+  val apiVersion: eventsDotk8sDotioSlashv1beta1
   /**
     * Deprecated field assuring backward compatibility with core.v1 Event type
     */
@@ -94,7 +94,7 @@ object Event {
   @scala.inline
   def apply(
     action: String,
-    apiVersion: `eventsDOTk8sDOTio/v1beta1`,
+    apiVersion: eventsDotk8sDotioSlashv1beta1,
     deprecatedCount: Double,
     deprecatedFirstTimestamp: String,
     deprecatedLastTimestamp: String,

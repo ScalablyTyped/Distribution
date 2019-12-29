@@ -18,10 +18,10 @@ class Dragger () extends js.Object {
   @JSName("onDragStart")
   var onDragStart_Original: DragStartListener = js.native
   /** @see {@link DraggerOptions#onDragEnd} */
-  def onDragEnd(`this`: Dragger): Unit = js.native
+  def onDragEnd(): Unit = js.native
   /** @see {@link DraggerOptions#onDragMove} */
-  def onDragMove(`this`: Dragger, pointer: PointerPosition, moveX: Double, moveY: Double): Unit = js.native
+  def onDragMove(pointer: PointerPosition, moveX: Double, moveY: Double): Unit = js.native
   /** @see {@link DraggerOptions#onDragStart} */
-  def onDragStart(`this`: Dragger, pointer: PointerPosition): Unit = js.native
+  def onDragStart(pointer: PointerPosition): Unit = js.native
 }
 

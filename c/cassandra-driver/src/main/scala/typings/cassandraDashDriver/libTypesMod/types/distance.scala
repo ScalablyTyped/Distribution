@@ -1,9 +1,6 @@
 package typings.cassandraDashDriver.libTypesMod.types
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cassandraDashDriver.libTypesMod.types.distance.ignored
-import typings.cassandraDashDriver.libTypesMod.types.distance.local
-import typings.cassandraDashDriver.libTypesMod.types.distance.remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

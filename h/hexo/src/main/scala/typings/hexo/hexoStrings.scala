@@ -18,7 +18,7 @@ object hexoStrings {
   sealed trait after_post_render extends js.Object
   
   @js.native
-  sealed trait `after_render:html` extends js.Object
+  sealed trait after_renderColonhtml extends js.Object
   
   @js.native
   sealed trait before_exit extends js.Object
@@ -101,7 +101,7 @@ object hexoStrings {
   @scala.inline
   def after_post_render: after_post_render = "after_post_render".asInstanceOf[after_post_render]
   @scala.inline
-  def `after_render:html`: `after_render:html` = "after_render:html".asInstanceOf[`after_render:html`]
+  def after_renderColonhtml: after_renderColonhtml = "after_render:html".asInstanceOf[after_renderColonhtml]
   @scala.inline
   def before_exit: before_exit = "before_exit".asInstanceOf[before_exit]
   @scala.inline

@@ -1,8 +1,6 @@
 package typings.browserfs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.browserfs.distNodeBackendMountableFileSystemMod.MountableFileSystem
-import typings.browserfs.distNodeBackendMountableFileSystemMod.MountableFileSystemOptions
 import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ApiError
 import typings.browserfs.distNodeCoreFileMod.File
 import typings.browserfs.distNodeCoreFileUnderscoreFlagMod.FileFlag

@@ -2,7 +2,6 @@ package typings.jestDashHasteDashMap
 
 import typings.atJestTypes.buildConfigMod.Glob
 import typings.atJestTypes.buildConfigMod.Path
-import typings.jestDashHasteDashMap.buildHasteFSMod.HasteFS
 import typings.std.Iterable
 import typings.std.RegExp
 import typings.std.Set

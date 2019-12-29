@@ -1,6 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Document
 import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Form
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,9 +29,9 @@ trait ScriptApp extends js.Object {
   def getScriptId(): String = js.native
   /** @deprecated DO NOT USE */ def getScriptTriggers(): js.Array[Trigger] = js.native
   def getService(): Service = js.native
-  def getUserTriggers(document: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Document): js.Array[Trigger] = js.native
+  def getUserTriggers(document: Document): js.Array[Trigger] = js.native
   def getUserTriggers(form: Form): js.Array[Trigger] = js.native
-  def getUserTriggers(spreadsheet: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet): js.Array[Trigger] = js.native
+  def getUserTriggers(spreadsheet: Spreadsheet): js.Array[Trigger] = js.native
   def invalidateAuth(): Unit = js.native
   def newStateToken(): StateTokenBuilder = js.native
   def newTrigger(functionName: String): TriggerBuilder = js.native

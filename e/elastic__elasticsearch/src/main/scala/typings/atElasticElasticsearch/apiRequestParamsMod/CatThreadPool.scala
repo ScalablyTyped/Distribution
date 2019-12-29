@@ -1,6 +1,6 @@
 package typings.atElasticElasticsearch.apiRequestParamsMod
 
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.Empty
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings._empty
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.g
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.k
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.m
@@ -17,7 +17,7 @@ trait CatThreadPool extends Generic {
   var local: js.UndefOr[Boolean] = js.undefined
   var master_timeout: js.UndefOr[String] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
-  var size: js.UndefOr[Empty | k | m | g | t | p] = js.undefined
+  var size: js.UndefOr[_empty | k | m | g | t | p] = js.undefined
   var thread_pool_patterns: js.UndefOr[String | js.Array[String]] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
 }
@@ -37,7 +37,7 @@ object CatThreadPool {
     method: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
     s: String | js.Array[String] = null,
-    size: Empty | k | m | g | t | p = null,
+    size: _empty | k | m | g | t | p = null,
     source: String = null,
     thread_pool_patterns: String | js.Array[String] = null,
     v: js.UndefOr[Boolean] = js.undefined

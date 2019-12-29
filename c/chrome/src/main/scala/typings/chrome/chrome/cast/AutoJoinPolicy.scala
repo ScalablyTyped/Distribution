@@ -1,10 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.AutoJoinPolicy.CUSTOM_CONTROLLER_SCOPED
-import typings.chrome.chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
-import typings.chrome.chrome.cast.AutoJoinPolicy.PAGE_SCOPED
-import typings.chrome.chrome.cast.AutoJoinPolicy.TAB_AND_ORIGIN_SCOPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

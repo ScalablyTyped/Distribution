@@ -1,6 +1,5 @@
 package typings.atEmberEngine
 
-import typings.atEmberEngine.atEmberEngineMod.Engine
 import typings.atEmberEngine.dashPrivateTypesInitializerMod.Initializer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -22,7 +22,8 @@ class PictureFormat protected () extends js.Object {
   val Parent: js.Any = js.native
   var TransparencyColor: Double = js.native
   var TransparentBackground: MsoTriState = js.native
-  var `Word.PictureFormat_typekey`: PictureFormat = js.native
+  @JSName("Word.PictureFormat_typekey")
+  var WordDotPictureFormat_typekey: PictureFormat = js.native
   def IncrementBrightness(Increment: Double): Unit = js.native
   def IncrementContrast(Increment: Double): Unit = js.native
 }

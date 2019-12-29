@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto", "createECDH")
 @js.native
 object createECDH extends js.Object {
-  def apply(curve_name: java.lang.String): ECDH = js.native
+  def apply(curve_name: String): ECDH = js.native
 }
 

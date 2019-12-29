@@ -1,14 +1,6 @@
 package typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.DOWNLOADING
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.FAILED
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.FINISHED
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.IDLE
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.PAUSED
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.RESUMED
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.STARTED
-import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.STOPPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

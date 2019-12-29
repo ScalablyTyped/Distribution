@@ -1,5 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`at-least`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`at-most`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`greater-than`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`less-than`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-between`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-equal`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.between
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.equal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -102,7 +115,7 @@ trait HistogramRangeSliderProperties extends WidgetProperties {
     */
   var precision: js.UndefOr[Double] = js.undefined
   /**
-    * Indicates how the histogram bins should be rendered as the user slides the thumbs. By default, blue bars indicate data bins included in the range. Gray bars indicate data bins excluded from the range. These colors can be customized with the [includedBarColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#includedBarColor) and [excludedBarColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#includedBarColor) properties.  This property also determines the SQL where clause generated in [generateWhereClause()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#generateWhereClause) for filtering purposes. The value set here determines the number of [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#values) allowed on the slider.  **Possible Values:** equal | not-equal | less-than | greater-than | at-most | at-least | between | not-between  See the table below for a description and requirements of all possible values. `value1` refers to the value of the first thumb position. `value2` refers to the value of the final thumb position, if applicable.
+    * Indicates how the histogram bins should be rendered as the user slides the thumbs. By default, blue bars indicate data bins included in the range. Gray bars indicate data bins excluded from the range. These colors can be customized with the [includedBarColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#includedBarColor) and [excludedBarColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#includedBarColor) properties.  This property also determines the SQL where clause generated in [generateWhereClause()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#generateWhereClause) for filtering purposes. The value set here determines the number of [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#values) allowed on the slider.  See the table below for a description and requirements of all possible values. `value1` refers to the value of the first thumb position. `value2` refers to the value of the final thumb position, if applicable.
     *
     * Possible Value | Number of [Values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#values) | [Where clause](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#generateWhereClause)
     * ---------------|----------------------------|----------------------
@@ -118,7 +131,9 @@ trait HistogramRangeSliderProperties extends WidgetProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType)
     */
-  var rangeType: js.UndefOr[String] = js.undefined
+  var rangeType: js.UndefOr[
+    equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
+  ] = js.undefined
   /**
     * Indicates the standard deviation of the dataset. When set, computed [dataLines](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#dataLines) will render on the histogram at the location of the given standard deviation above and below the `average`.
     *
@@ -161,11 +176,11 @@ object HistogramRangeSliderProperties {
     id: String = null,
     includedBarColor: Color | js.Array[Double] | String = null,
     label: String = null,
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
     max: Int | Double = null,
     min: Int | Double = null,
     precision: Int | Double = null,
-    rangeType: String = null,
+    rangeType: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between` = null,
     standardDeviation: Int | Double = null,
     standardDeviationCount: Int | Double = null,
     values: js.Array[Double] = null,

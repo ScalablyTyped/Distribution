@@ -3,7 +3,6 @@ package typings.shopifyDashPrime
 import typings.shopifyDashPrime.distInfrastructureMod.BaseService
 import typings.shopifyDashPrime.distModelsDraftUnderscoreOrderMod.DraftOrder
 import typings.shopifyDashPrime.distOptionsBaseMod.ListOptions
-import typings.shopifyDashPrime.distServicesDraftUnderscoreOrdersMod.DraftOrders
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

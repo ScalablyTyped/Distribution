@@ -1,6 +1,6 @@
 package typings.connectDashPgDashSimple.connectDashPgDashSimpleMod
 
-import typings.connectDashPgDashSimple.connectDashPgDashSimpleNumbers.`false`
+import typings.connectDashPgDashSimple.connectDashPgDashSimpleBooleans.`false`
 import typings.pg.pgMod.Pool
 import typings.pg.pgMod.PoolConfig
 import scala.scalajs.js

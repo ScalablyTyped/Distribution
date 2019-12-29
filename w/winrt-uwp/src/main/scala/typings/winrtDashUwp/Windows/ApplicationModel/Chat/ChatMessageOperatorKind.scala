@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageOperatorKind.mms
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageOperatorKind.rcs
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageOperatorKind.sms
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageOperatorKind.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

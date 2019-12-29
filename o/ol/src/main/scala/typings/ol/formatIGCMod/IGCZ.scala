@@ -1,9 +1,6 @@
 package typings.ol.formatIGCMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.formatIGCMod.IGCZ.BAROMETRIC
-import typings.ol.formatIGCMod.IGCZ.GPS
-import typings.ol.formatIGCMod.IGCZ.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.stellarDashSdk
 
 import typings.std.Error
-import typings.stellarDashSdk.libErrorsMod.InvalidSep10ChallengeError
-import typings.stellarDashSdk.libErrorsMod.NetworkError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

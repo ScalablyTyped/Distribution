@@ -1,7 +1,5 @@
 package typings.find
 
-import typings.find.findMod.AsyncFindStream
-import typings.find.findMod.FindEachStream
 import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js

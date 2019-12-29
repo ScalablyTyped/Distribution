@@ -2,7 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.threadILockableMod.ILockable
-import typings.tstl.threadMutexMod.Mutex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

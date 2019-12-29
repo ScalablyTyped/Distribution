@@ -3,7 +3,7 @@ package typings.videoDotJs.videoDotJsMod.videojs
 import typings.std.Event
 import typings.std.HTMLTextAreaElement
 import typings.std.HTMLTrackElement
-import typings.videoDotJs.videoDotJsNumbers.`true`
+import typings.videoDotJs.videoDotJsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

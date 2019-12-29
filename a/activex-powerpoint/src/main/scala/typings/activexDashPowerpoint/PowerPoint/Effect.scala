@@ -18,7 +18,8 @@ class Effect protected () extends js.Object {
   val Index: Double = js.native
   var Paragraph: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Effect_typekey`: Effect = js.native
+  @JSName("PowerPoint.Effect_typekey")
+  var PowerPointDotEffect_typekey: Effect = js.native
   var Shape: typings.activexDashPowerpoint.PowerPoint.Shape = js.native
   val TextRangeLength: Double = js.native
   val TextRangeStart: Double = js.native

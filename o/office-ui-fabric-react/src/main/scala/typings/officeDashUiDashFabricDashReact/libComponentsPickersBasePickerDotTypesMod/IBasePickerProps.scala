@@ -94,7 +94,7 @@ trait IBasePickerProps[T]
     * A callback for what should happen when suggestions are shown without
     * input provided.
     * Returns the already selected items so the resolver can filter them out.
-    * If used in conjunction with resolveDelay this will ony kick off after the delay throttle.
+    * If used in conjunction with resolveDelay this will only kick off after the delay throttle.
     */
   var onEmptyResolveSuggestions: js.UndefOr[
     js.Function1[
@@ -181,7 +181,7 @@ trait IBasePickerProps[T]
   /**
     * A callback for what should happen when a person types text into the input.
     * Returns the already selected items so the resolver can filter them out.
-    * If used in conjunction with resolveDelay this will ony kick off after the delay throttle.
+    * If used in conjunction with resolveDelay this will only kick off after the delay throttle.
     */
   def onResolveSuggestions(filter: String): js.Array[T] | js.Thenable[js.Array[T]] = js.native
   def onResolveSuggestions(filter: String, selectedItems: js.Array[T]): js.Array[T] | js.Thenable[js.Array[T]] = js.native

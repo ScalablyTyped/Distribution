@@ -1,10 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_md5
-import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha256
-import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha384
-import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

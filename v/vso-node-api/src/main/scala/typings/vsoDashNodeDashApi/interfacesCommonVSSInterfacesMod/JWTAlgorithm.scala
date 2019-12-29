@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.JWTAlgorithm.HS256
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.JWTAlgorithm.None
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.JWTAlgorithm.RS256
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

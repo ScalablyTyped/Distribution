@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingLevel.critical
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingLevel.error
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingLevel.information
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingLevel.verbose
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingLevel.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

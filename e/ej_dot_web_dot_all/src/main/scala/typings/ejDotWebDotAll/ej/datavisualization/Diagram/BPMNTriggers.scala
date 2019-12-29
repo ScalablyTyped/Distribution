@@ -1,19 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Cancel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Compensation
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Conditional
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Error
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Escalation
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Link
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Message
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Multiple
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Parallel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Signal
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Terminate
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTriggers.Timer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

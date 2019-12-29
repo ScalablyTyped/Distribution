@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.PrintComments.endSheet
-import typings.officeDashJs.Excel.PrintComments.inPlace
-import typings.officeDashJs.Excel.PrintComments.noComments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

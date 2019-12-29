@@ -1,6 +1,5 @@
 package typings.rxjs
 
-import typings.rxjs.internalOperatorsTimestampMod.Timestamp
 import typings.rxjs.internalTypesMod.OperatorFunction
 import typings.rxjs.internalTypesMod.SchedulerLike
 import scala.scalajs.js

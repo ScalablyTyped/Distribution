@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("leaflet", "esri.IdentifyFeatures")
 @js.native
-class IdentifyFeatures protected ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Task {
+class IdentifyFeatures protected () extends Task {
   def this(options: IdentifyFeaturesOptions) = this()
-  def this(options: typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.ImageService) = this()
+  def this(options: ImageService) = this()
   /**
     * Identifies features at a given LatLng geometry can also be an instance of `L.Marker`, `L.Polygon`,
     * `L.Polyline`, `L.LatLngBounds`, `L.GeoJSON` or a valid GeoJSON object literal.
@@ -74,7 +73,7 @@ object identifyFeatures extends js.Object {
     * `L.esri.IdentifyFeatures` is an abstraction for the Identify API found in Map Services. It provides a
     * chainable API for building request parameters and executing the request.
     */
-  def apply(options: IdentifyFeaturesOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.IdentifyFeatures = js.native
-  def apply(options: typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.ImageService): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.IdentifyFeatures = js.native
+  def apply(options: IdentifyFeaturesOptions): IdentifyFeatures = js.native
+  def apply(options: ImageService): IdentifyFeatures = js.native
 }
 

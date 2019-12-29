@@ -1,8 +1,6 @@
 package typings.msDashRestDashAzure.msDashRestDashAzureMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.msDashRestDashAzure.msDashRestDashAzureMod.UserType.servicePrincipal
-import typings.msDashRestDashAzure.msDashRestDashAzureMod.UserType.user
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

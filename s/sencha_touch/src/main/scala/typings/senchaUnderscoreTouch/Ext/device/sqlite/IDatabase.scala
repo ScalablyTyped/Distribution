@@ -15,7 +15,7 @@ trait IDatabase extends IBase {
   /** [Method] Returns the current version of the database
   		* @returns String The database current version.
   		*/
-  var getVersion: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getVersion: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Works the same way as transaction but performs a Ext device sqlite SQLTransaction instance in a read only mode
   		* @param config Object
   		*/
@@ -37,9 +37,9 @@ object IDatabase {
     changeVersion: /* config */ js.UndefOr[js.Any] => Unit = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getVersion: () => java.lang.String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getVersion: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,

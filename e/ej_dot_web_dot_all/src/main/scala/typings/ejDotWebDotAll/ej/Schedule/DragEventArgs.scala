@@ -13,7 +13,7 @@ trait DragEventArgs extends js.Object {
   var interval: js.UndefOr[Double] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the target of the drag over appointment.
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -27,7 +27,7 @@ object DragEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     interval: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     target: js.Any = null,
     `type`: String = null
   ): DragEventArgs = {

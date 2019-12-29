@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProcessType.Custom
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProcessType.Inherited
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProcessType.System
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,8 @@ class ErrorCheckingOptions protected () extends js.Object {
   val Creator: XlCreator = js.native
   var EmptyCellReferences: Boolean = js.native
   var EvaluateToError: Boolean = js.native
-  var `Excel.ErrorCheckingOptions_typekey`: ErrorCheckingOptions = js.native
+  @JSName("Excel.ErrorCheckingOptions_typekey")
+  var ExcelDotErrorCheckingOptions_typekey: ErrorCheckingOptions = js.native
   var InconsistentFormula: Boolean = js.native
   var InconsistentTableFormula: Boolean = js.native
   var IndicatorColorIndex: XlColorIndex = js.native

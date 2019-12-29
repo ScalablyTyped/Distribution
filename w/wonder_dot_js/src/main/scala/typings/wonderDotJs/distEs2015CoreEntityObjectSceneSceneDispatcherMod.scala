@@ -3,7 +3,6 @@ package typings.wonderDotJs
 import typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject
 import typings.wonderDotJs.distEs2015CoreEntityObjectGameObjectGameObjectMod.GameObject
 import typings.wonderDotJs.distEs2015CoreEntityObjectSceneGameObjectSceneGameObjectSceneMod.GameObjectScene
-import typings.wonderDotJs.distEs2015CoreEntityObjectSceneSceneDispatcherMod.SceneDispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.wonderDotJs
 import typings.wonderDotJs.distEs2015EventInterfaceIEventDataMod.IKeyboardEventData
 import typings.wonderDotJs.distEs2015EventObjectDomEventMod.DomEvent
 import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
-import typings.wonderDotJs.distEs2015EventObjectKeyboardEventMod.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

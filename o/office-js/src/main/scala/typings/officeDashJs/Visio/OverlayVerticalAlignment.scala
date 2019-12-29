@@ -1,9 +1,6 @@
 package typings.officeDashJs.Visio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Visio.OverlayVerticalAlignment.bottom
-import typings.officeDashJs.Visio.OverlayVerticalAlignment.middle
-import typings.officeDashJs.Visio.OverlayVerticalAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

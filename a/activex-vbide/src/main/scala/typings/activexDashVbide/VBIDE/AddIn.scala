@@ -15,7 +15,8 @@ class AddIn protected () extends js.Object {
   var Object: js.Any = js.native
   val ProgId: String = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
-  var `VBIDE.AddIn_typekey`: AddIn = js.native
+  @JSName("VBIDE.AddIn_typekey")
+  var VBIDEDotAddIn_typekey: AddIn = js.native
   def Collection(index: js.Any): AddIn = js.native
 }
 

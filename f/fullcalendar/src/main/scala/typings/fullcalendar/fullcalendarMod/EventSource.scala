@@ -1,7 +1,7 @@
 package typings.fullcalendar.fullcalendarMod
 
 import typings.fullcalendar.eventSourceMod.Default
-import typings.fullcalendar.fullcalendarNumbers.`false`
+import typings.fullcalendar.fullcalendarBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

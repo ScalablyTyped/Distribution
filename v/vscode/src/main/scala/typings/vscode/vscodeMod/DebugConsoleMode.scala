@@ -1,8 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.DebugConsoleMode.MergeWithParent
-import typings.vscode.vscodeMod.DebugConsoleMode.Separate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

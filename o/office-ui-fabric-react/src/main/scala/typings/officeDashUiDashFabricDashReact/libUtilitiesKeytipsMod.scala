@@ -4,8 +4,8 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesKeytipsIKeytipTransit
 import typings.officeDashUiDashFabricDashReact.libUtilitiesKeytipsKeytipConfigMod.IKeytipConfig
 import typings.officeDashUiDashFabricDashReact.libUtilitiesKeytipsKeytipConfigMod.IKeytipConfigItem
 import typings.officeDashUiDashFabricDashReact.libUtilitiesKeytipsKeytipConfigMod.IKeytipConfigMap
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`, `
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`-`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`-_`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`Comma `
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`data-ktp-execute-target`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`data-ktp-target`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`ktp-layer-id`
@@ -31,11 +31,11 @@ object libUtilitiesKeytipsMod extends js.Object {
   
   val DATAKTP_EXECUTE_TARGET: `data-ktp-execute-target` = js.native
   val DATAKTP_TARGET: `data-ktp-target` = js.native
-  val KTP_ARIA_SEPARATOR: `, ` = js.native
+  val KTP_ARIA_SEPARATOR: `Comma ` = js.native
   val KTP_FULL_PREFIX: String = js.native
   val KTP_LAYER_ID: `ktp-layer-id` = js.native
   val KTP_PREFIX: ktp = js.native
-  val KTP_SEPARATOR: `-` = js.native
+  val KTP_SEPARATOR: `-_` = js.native
   def buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap = js.native
   def constructKeytip(configMap: IKeytipConfigMap, parentSequence: js.Array[String], keytip: IKeytipConfigItem): Unit = js.native
   def getAriaDescribedBy(keySequences: js.Array[String]): String = js.native

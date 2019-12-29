@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputMode.CheckBox
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputMode.Combo
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputMode.None
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputMode.PasswordBox
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputMode.RadioButtons
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputMode.TextArea
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputMode.TextBox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

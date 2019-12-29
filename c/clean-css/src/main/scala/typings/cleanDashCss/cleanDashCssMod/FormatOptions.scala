@@ -2,7 +2,7 @@ package typings.cleanDashCss.cleanDashCssMod
 
 import typings.cleanDashCss.Anon_AfterAtRule
 import typings.cleanDashCss.Anon_AroundSelectorRelation
-import typings.cleanDashCss.cleanDashCssNumbers.`false`
+import typings.cleanDashCss.cleanDashCssBooleans.`false`
 import typings.cleanDashCss.cleanDashCssStrings.space
 import typings.cleanDashCss.cleanDashCssStrings.tab
 import scala.scalajs.js

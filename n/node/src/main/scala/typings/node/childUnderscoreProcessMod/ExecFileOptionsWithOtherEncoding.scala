@@ -7,19 +7,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExecFileOptionsWithOtherEncoding extends ExecFileOptions {
-  var encoding: java.lang.String
+  var encoding: String
 }
 
 object ExecFileOptionsWithOtherEncoding {
   @scala.inline
   def apply(
-    encoding: java.lang.String,
-    cwd: java.lang.String = null,
+    encoding: String,
+    cwd: String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
-    shell: Boolean | java.lang.String = null,
+    shell: Boolean | String = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,
     windowsHide: js.UndefOr[Boolean] = js.undefined,

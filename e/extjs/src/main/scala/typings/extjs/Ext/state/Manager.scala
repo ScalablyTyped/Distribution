@@ -38,21 +38,21 @@ object Manager extends js.Object {
   		* @param name String The key name
   		*/
   def clear(): Unit = js.native
-  def clear(name: java.lang.String): Unit = js.native
+  def clear(name: String): Unit = js.native
   /** [Method] Returns the current value for a key
   		* @param name String The key name
   		* @param defaultValue Object The default value to return if the key lookup does not match
   		* @returns Object The state data
   		*/
   def get(): js.Any = js.native
-  def get(name: java.lang.String): js.Any = js.native
-  def get(name: java.lang.String, defaultValue: js.Any): js.Any = js.native
+  def get(name: String): js.Any = js.native
+  def get(name: String, defaultValue: js.Any): js.Any = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
   		* @param name String Name of the config option to return.
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Gets the currently configured state provider
   		* @returns Ext.state.Provider The state provider
   		*/
@@ -68,8 +68,8 @@ object Manager extends js.Object {
   		* @param value Object The state data
   		*/
   def set(): Unit = js.native
-  def set(name: java.lang.String): Unit = js.native
-  def set(name: java.lang.String, value: js.Any): Unit = js.native
+  def set(name: String): Unit = js.native
+  def set(name: String, value: js.Any): Unit = js.native
   /** [Method] Configures the default state provider for your application
   		* @param stateProvider Ext.state.Provider The state provider to set
   		*/

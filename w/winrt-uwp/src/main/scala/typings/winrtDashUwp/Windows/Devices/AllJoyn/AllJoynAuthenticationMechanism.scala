@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdheEcdsa
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdheNull
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdhePsk
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.none
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.srpAnonymous
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.srpLogon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

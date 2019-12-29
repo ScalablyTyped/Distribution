@@ -1,9 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.FieldRoleType.DIMENSION
-import typings.tableau.tableau.FieldRoleType.MEASURE
-import typings.tableau.tableau.FieldRoleType.UKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

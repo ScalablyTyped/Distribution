@@ -1,21 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.SpecialCellValueType.all
-import typings.officeDashJs.Excel.SpecialCellValueType.errors
-import typings.officeDashJs.Excel.SpecialCellValueType.errorsLogical
-import typings.officeDashJs.Excel.SpecialCellValueType.errorsLogicalNumber
-import typings.officeDashJs.Excel.SpecialCellValueType.errorsLogicalText
-import typings.officeDashJs.Excel.SpecialCellValueType.errorsNumberText
-import typings.officeDashJs.Excel.SpecialCellValueType.errorsNumbers
-import typings.officeDashJs.Excel.SpecialCellValueType.errorsText
-import typings.officeDashJs.Excel.SpecialCellValueType.logical
-import typings.officeDashJs.Excel.SpecialCellValueType.logicalNumbers
-import typings.officeDashJs.Excel.SpecialCellValueType.logicalNumbersText
-import typings.officeDashJs.Excel.SpecialCellValueType.logicalText
-import typings.officeDashJs.Excel.SpecialCellValueType.numbers
-import typings.officeDashJs.Excel.SpecialCellValueType.numbersText
-import typings.officeDashJs.Excel.SpecialCellValueType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

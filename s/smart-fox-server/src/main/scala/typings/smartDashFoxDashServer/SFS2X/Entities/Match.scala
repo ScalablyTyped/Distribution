@@ -1,12 +1,5 @@
 package typings.smartDashFoxDashServer.SFS2X.Entities
 
-import typings.smartDashFoxDashServer.SFS2X.Entities.Match.BoolMatch
-import typings.smartDashFoxDashServer.SFS2X.Entities.Match.LogicOperator
-import typings.smartDashFoxDashServer.SFS2X.Entities.Match.MatchExpression
-import typings.smartDashFoxDashServer.SFS2X.Entities.Match.NumberMatch
-import typings.smartDashFoxDashServer.SFS2X.Entities.Match.RoomProperties
-import typings.smartDashFoxDashServer.SFS2X.Entities.Match.StringMatch
-import typings.smartDashFoxDashServer.SFS2X.Entities.Match.UserProperties
 import typings.smartDashFoxDashServer.SFS2X.Requests.Game.CreateSFSGameRequest
 import typings.smartDashFoxDashServer.SFS2X.Requests.System.FindRoomsRequest
 import typings.smartDashFoxDashServer.SFS2X.Requests.System.FindUsersRequest

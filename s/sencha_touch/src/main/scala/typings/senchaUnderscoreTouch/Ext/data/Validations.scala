@@ -15,19 +15,19 @@ class Validations () extends js.Object
 @js.native
 object Validations extends js.Object {
   /** [Property] (String) */
-  var emailMessage: java.lang.String = js.native
+  var emailMessage: String = js.native
   /** [Property] (RegExp) */
   var emailRe: RegExp = js.native
   /** [Property] (String) */
-  var exclusionMessage: java.lang.String = js.native
+  var exclusionMessage: String = js.native
   /** [Property] (String) */
-  var formatMessage: java.lang.String = js.native
+  var formatMessage: String = js.native
   /** [Property] (String) */
-  var inclusionMessage: java.lang.String = js.native
+  var inclusionMessage: String = js.native
   /** [Property] (String) */
-  var lengthMessage: java.lang.String = js.native
+  var lengthMessage: String = js.native
   /** [Property] (String) */
-  var presenceMessage: java.lang.String = js.native
+  var presenceMessage: String = js.native
   /** [Property] (Ext.Class) */
   var self: IClass = js.native
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
@@ -57,7 +57,7 @@ object Validations extends js.Object {
   		*/
   def email(): Boolean = js.native
   def email(config: js.Any): Boolean = js.native
-  def email(config: js.Any, email: java.lang.String): Boolean = js.native
+  def email(config: js.Any, email: String): Boolean = js.native
   /** [Method] Validates that the given value is present in the configured list
   		* @param config Object Config object.
   		* @param value String The value to validate.
@@ -65,7 +65,7 @@ object Validations extends js.Object {
   		*/
   def exclusion(): Boolean = js.native
   def exclusion(config: js.Any): Boolean = js.native
-  def exclusion(config: js.Any, value: java.lang.String): Boolean = js.native
+  def exclusion(config: js.Any, value: String): Boolean = js.native
   /** [Method] Returns true if the given value passes validation against the configured matcher regex
   		* @param config Object Config object.
   		* @param value String The value to validate.
@@ -73,19 +73,19 @@ object Validations extends js.Object {
   		*/
   def format(): Boolean = js.native
   def format(config: js.Any): Boolean = js.native
-  def format(config: js.Any, value: java.lang.String): Boolean = js.native
+  def format(config: js.Any, value: String): Boolean = js.native
   /** [Method] Returns the initial configuration passed to constructor
   		* @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Returns the configured error message for any of the validation types
   		* @param type String The type of validation you want to get the error message for.
   		* @returns Object
   		*/
   def getMessage(): js.Any = js.native
-  def getMessage(`type`: java.lang.String): js.Any = js.native
+  def getMessage(`type`: String): js.Any = js.native
   /** [Method] Validates that the given value is present in the configured list
   		* @param config Object Config object.
   		* @param value String The value to validate.
@@ -93,7 +93,7 @@ object Validations extends js.Object {
   		*/
   def inclusion(): Boolean = js.native
   def inclusion(config: js.Any): Boolean = js.native
-  def inclusion(config: js.Any, value: java.lang.String): Boolean = js.native
+  def inclusion(config: js.Any, value: String): Boolean = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -107,7 +107,7 @@ object Validations extends js.Object {
   		*/
   def length(): Boolean = js.native
   def length(config: js.Any): Boolean = js.native
-  def length(config: js.Any, value: java.lang.String): Boolean = js.native
+  def length(config: js.Any, value: String): Boolean = js.native
   /** [Method] Validates that the given value is present
   		* @param config Object Config object.
   		* @param value Object The value to validate.

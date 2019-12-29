@@ -42,7 +42,8 @@ class Find[TParent] protected () extends js.Object {
   val Replacement: typings.activexDashWord.Word.Replacement = js.native
   var Style: js.Any = js.native
   var Text: String = js.native
-  var `Word.Find_typekey`: Find[Range | Selection] = js.native
+  @JSName("Word.Find_typekey")
+  var WordDotFind_typekey: Find[Range | Selection] = js.native
   var Wrap: WdFindWrap = js.native
   def ClearAllFuzzyOptions(): Unit = js.native
   def ClearFormatting(): Unit = js.native

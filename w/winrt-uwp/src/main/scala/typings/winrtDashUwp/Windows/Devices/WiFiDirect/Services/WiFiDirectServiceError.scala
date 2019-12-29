@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.noHardware
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.radioNotAvailable
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.resourceInUse
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.success
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.unsupportedHardware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

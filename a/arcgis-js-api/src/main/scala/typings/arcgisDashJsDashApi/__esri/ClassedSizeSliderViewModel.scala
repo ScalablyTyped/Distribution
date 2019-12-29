@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ClassedSizeSliderViewModel extends SliderViewModel {
+trait ClassedSizeSliderViewModel extends SmartMappingSliderViewModel {
   /**
     * An array of class breaks with associated sizes. The size mapped to each break can be used to update the renderer of a layer. A minimum of two breaks must be provided to the slider.
     *

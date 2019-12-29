@@ -17,7 +17,7 @@ object SCXML extends js.Object {
       * @private
       */
     @JSName("$$type")
-    var $$type: scxml = js.native
+    var DollarDollartype: scxml = js.native
     /**
       * This field contains whatever data the sending entity chose to include in this event.
       * The receiving SCXML Processor should reformat this data to match its data model,

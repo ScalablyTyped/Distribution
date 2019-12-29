@@ -1,7 +1,7 @@
 package typings.emberDashData.emberDashDataMod
 
+import typings.emberDashData.emberDashDataBooleans.`true`
 import typings.emberDashData.emberDashDataMod.DS.Model
-import typings.emberDashData.emberDashDataNumbers.`true`
 import typings.emberDashData.emberDashDataStrings.belongsTo
 import typings.emberDashData.emberDashDataStrings.hasMany
 import scala.scalajs.js

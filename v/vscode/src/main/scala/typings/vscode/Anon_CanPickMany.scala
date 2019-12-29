@@ -1,6 +1,6 @@
 package typings.vscode
 
-import typings.vscode.vscodeNumbers.`true`
+import typings.vscode.vscodeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.seleniumDashWebdriver.libInputMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.seleniumDashWebdriver.libInputMod.Origin.POINTER
-import typings.seleniumDashWebdriver.libInputMod.Origin.VIEWPORT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

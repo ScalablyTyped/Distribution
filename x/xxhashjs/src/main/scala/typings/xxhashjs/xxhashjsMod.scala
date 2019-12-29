@@ -2,9 +2,6 @@ package typings.xxhashjs
 
 import typings.node.Buffer
 import typings.std.ArrayBuffer
-import typings.xxhashjs.xxhashjsMod.HashInterface
-import typings.xxhashjs.xxhashjsMod.HashObject
-import typings.xxhashjs.xxhashjsMod.UINT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

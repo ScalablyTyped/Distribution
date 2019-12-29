@@ -13,7 +13,7 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Config Option] (Number/Boolean) */
   var enableBuffer: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var enableUrlEncode: js.UndefOr[java.lang.String] = js.undefined
+  var enableUrlEncode: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of actions
   		* @returns Object
   		*/
@@ -25,7 +25,7 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Method] Returns the value of enableUrlEncode
   		* @returns String
   		*/
-  var getEnableUrlEncode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getEnableUrlEncode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of maxRetries
   		* @returns Number
   		*/
@@ -41,7 +41,7 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Method] Returns the value of url
   		* @returns String
   		*/
-  var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Number) */
   var maxRetries: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String/Object) */
@@ -57,7 +57,7 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Method] Sets the value of enableUrlEncode
   		* @param enableUrlEncode String The new value.
   		*/
-  var setEnableUrlEncode: js.UndefOr[js.Function1[/* enableUrlEncode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setEnableUrlEncode: js.UndefOr[js.Function1[/* enableUrlEncode */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of maxRetries
   		* @param maxRetries Number The new value.
   		*/
@@ -73,11 +73,11 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Method] Sets the value of url
   		* @param url String The new value.
   		*/
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object IRemotingProvider {
@@ -87,7 +87,7 @@ object IRemotingProvider {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -103,23 +103,23 @@ object IRemotingProvider {
     disconnect: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     enableBuffer: js.Any = null,
-    enableUrlEncode: java.lang.String = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    enableUrlEncode: String = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getActions: () => _ = null,
     getBubbleEvents: () => _ = null,
     getEnableBuffer: () => _ = null,
-    getEnableUrlEncode: () => java.lang.String = null,
-    getId: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getEnableUrlEncode: () => String = null,
+    getId: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getMaxRetries: () => Double = null,
     getNamespace: () => _ = null,
     getTimeout: () => Double = null,
-    getUrl: () => java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
-    id: java.lang.String = null,
+    getUrl: () => String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     isConnected: () => Boolean = null,
@@ -130,35 +130,35 @@ object IRemotingProvider {
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     namespace: js.Any = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setActions: /* actions */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setEnableBuffer: /* enableBuffer */ js.UndefOr[js.Any] => Unit = null,
-    setEnableUrlEncode: /* enableUrlEncode */ js.UndefOr[java.lang.String] => Unit = null,
-    setId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setEnableUrlEncode: /* enableUrlEncode */ js.UndefOr[String] => Unit = null,
+    setId: /* id */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setMaxRetries: /* maxRetries */ js.UndefOr[Double] => Unit = null,
     setNamespace: /* namespace */ js.UndefOr[js.Any] => Unit = null,
     setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
     timeout: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    url: java.lang.String = null,
+    url: String = null,
     uses: Array = null
   ): IRemotingProvider = {
     val __obj = js.Dynamic.literal()

@@ -1,11 +1,6 @@
 package typings.backlogDashJs.backlogDashJsMod.Option.Issue
 
 import org.scalablytyped.runtime.TopLevel
-import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.All
-import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.Child
-import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.NotChild
-import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.NotChildNotParent
-import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.Parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

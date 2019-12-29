@@ -46,9 +46,7 @@ trait IGridOptions extends js.Object {
     * Makes it possible to specify a method that evaluates for each row and sets its "enableSelection"
     * property.
     */
-  var isRowSelectable: js.UndefOr[
-    js.Function1[/* row */ typings.uiDashGrid.uiDashGridMod.selection.IGridRow, Boolean]
-  ] = js.undefined
+  var isRowSelectable: js.UndefOr[js.Function1[/* row */ IGridRow, Boolean]] = js.undefined
   /**
     * Enable multiple row selection only when using the ctrlKey or shiftKey. Requires multiSelect to be true.
     * Defaults to false
@@ -87,7 +85,7 @@ object IGridOptions {
     enableRowSelection: js.UndefOr[Boolean] = js.undefined,
     enableSelectAll: js.UndefOr[Boolean] = js.undefined,
     enableSelectionBatchEvent: js.UndefOr[Boolean] = js.undefined,
-    isRowSelectable: /* row */ typings.uiDashGrid.uiDashGridMod.selection.IGridRow => Boolean = null,
+    isRowSelectable: /* row */ IGridRow => Boolean = null,
     modifierKeysToMultiSelect: js.UndefOr[Boolean] = js.undefined,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     noUnselect: js.UndefOr[Boolean] = js.undefined,

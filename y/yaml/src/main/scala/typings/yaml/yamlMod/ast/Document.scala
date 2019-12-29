@@ -85,7 +85,7 @@ object Document {
     anchors: Anchors,
     errors: js.Array[YAMLError],
     listNonDefaultTags: () => js.Array[String],
-    parse: typings.yaml.yamlMod.cst.Document => typings.yaml.yamlMod.ast.Document,
+    parse: typings.yaml.yamlMod.cst.Document => Document,
     schema: Schema,
     setTagPrefix: (String, String) => Unit,
     tagPrefixes: js.Array[Prefix],

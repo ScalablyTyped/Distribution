@@ -1,10 +1,6 @@
 package typings.libsodiumDashWrappers.libsodiumDashWrappersMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.libsodiumDashWrappers.libsodiumDashWrappersMod.base64_variants.ORIGINAL
-import typings.libsodiumDashWrappers.libsodiumDashWrappersMod.base64_variants.ORIGINAL_NO_PADDING
-import typings.libsodiumDashWrappers.libsodiumDashWrappersMod.base64_variants.URLSAFE
-import typings.libsodiumDashWrappers.libsodiumDashWrappersMod.base64_variants.URLSAFE_NO_PADDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

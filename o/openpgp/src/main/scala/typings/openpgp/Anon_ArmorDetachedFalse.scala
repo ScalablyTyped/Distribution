@@ -1,6 +1,6 @@
 package typings.openpgp
 
-import typings.openpgp.openpgpNumbers.`false`
+import typings.openpgp.openpgpBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

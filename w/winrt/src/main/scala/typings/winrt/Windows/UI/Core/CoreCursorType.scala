@@ -1,20 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreCursorType.arrow
-import typings.winrt.Windows.UI.Core.CoreCursorType.cross
-import typings.winrt.Windows.UI.Core.CoreCursorType.custom
-import typings.winrt.Windows.UI.Core.CoreCursorType.hand
-import typings.winrt.Windows.UI.Core.CoreCursorType.help
-import typings.winrt.Windows.UI.Core.CoreCursorType.iBeam
-import typings.winrt.Windows.UI.Core.CoreCursorType.sizeAll
-import typings.winrt.Windows.UI.Core.CoreCursorType.sizeNorthSouth
-import typings.winrt.Windows.UI.Core.CoreCursorType.sizeNortheastSouthwest
-import typings.winrt.Windows.UI.Core.CoreCursorType.sizeNorthwestSoutheast
-import typings.winrt.Windows.UI.Core.CoreCursorType.sizeWestEast
-import typings.winrt.Windows.UI.Core.CoreCursorType.universalNo
-import typings.winrt.Windows.UI.Core.CoreCursorType.upArrow
-import typings.winrt.Windows.UI.Core.CoreCursorType.wait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

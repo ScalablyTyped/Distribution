@@ -6,85 +6,85 @@ import scala.scalajs.js.annotation._
 
 object angularStrings {
   @js.native
-  sealed trait DOLLARanchorScroll extends js.Object
+  sealed trait $anchorScroll extends js.Object
   
   @js.native
-  sealed trait DOLLARcacheFactory extends js.Object
+  sealed trait $cacheFactory extends js.Object
   
   @js.native
-  sealed trait DOLLARcompile extends js.Object
+  sealed trait $compile extends js.Object
   
   @js.native
-  sealed trait DOLLARcontroller extends js.Object
+  sealed trait $controller extends js.Object
   
   @js.native
-  sealed trait DOLLARdocument extends js.Object
+  sealed trait $document extends js.Object
   
   @js.native
-  sealed trait DOLLARexceptionHandler extends js.Object
+  sealed trait $exceptionHandler extends js.Object
   
   @js.native
-  sealed trait DOLLARfilter extends js.Object
+  sealed trait $filter extends js.Object
   
   @js.native
-  sealed trait DOLLARhttp extends js.Object
+  sealed trait $http extends js.Object
   
   @js.native
-  sealed trait DOLLARhttpBackend extends js.Object
+  sealed trait $httpBackend extends js.Object
   
   @js.native
-  sealed trait DOLLARhttpParamSerializer extends js.Object
+  sealed trait $httpParamSerializer extends js.Object
   
   @js.native
-  sealed trait DOLLARhttpParamSerializerJQLike extends js.Object
+  sealed trait $httpParamSerializerJQLike extends js.Object
   
   @js.native
-  sealed trait DOLLARinterpolate extends js.Object
+  sealed trait $interpolate extends js.Object
   
   @js.native
-  sealed trait DOLLARinterval extends js.Object
+  sealed trait $interval extends js.Object
   
   @js.native
-  sealed trait DOLLARlocale extends js.Object
+  sealed trait $locale extends js.Object
   
   @js.native
-  sealed trait DOLLARlocation extends js.Object
+  sealed trait $location extends js.Object
   
   @js.native
-  sealed trait DOLLARlog extends js.Object
+  sealed trait $log extends js.Object
   
   @js.native
-  sealed trait DOLLARparse extends js.Object
+  sealed trait $parse extends js.Object
   
   @js.native
-  sealed trait DOLLARq extends js.Object
+  sealed trait $q extends js.Object
   
   @js.native
-  sealed trait DOLLARrootElement extends js.Object
+  sealed trait $rootElement extends js.Object
   
   @js.native
-  sealed trait DOLLARrootScope extends js.Object
+  sealed trait $rootScope extends js.Object
   
   @js.native
-  sealed trait DOLLARsce extends js.Object
+  sealed trait $sce extends js.Object
   
   @js.native
-  sealed trait DOLLARsceDelegate extends js.Object
+  sealed trait $sceDelegate extends js.Object
   
   @js.native
-  sealed trait DOLLARtemplateCache extends js.Object
+  sealed trait $templateCache extends js.Object
   
   @js.native
-  sealed trait DOLLARtemplateRequest extends js.Object
+  sealed trait $templateRequest extends js.Object
   
   @js.native
-  sealed trait DOLLARtimeout extends js.Object
+  sealed trait $timeout extends js.Object
   
   @js.native
-  sealed trait DOLLARwindow extends js.Object
+  sealed trait $window extends js.Object
   
   @js.native
-  sealed trait DOLLARxhrFactory extends js.Object
+  sealed trait $xhrFactory extends js.Object
   
   @js.native
   sealed trait IQService extends js.Object
@@ -132,59 +132,59 @@ object angularStrings {
   sealed trait uppercase extends js.Object
   
   @scala.inline
-  def DOLLARanchorScroll: DOLLARanchorScroll = "$anchorScroll".asInstanceOf[DOLLARanchorScroll]
+  def $anchorScroll: $anchorScroll = "$anchorScroll".asInstanceOf[$anchorScroll]
   @scala.inline
-  def DOLLARcacheFactory: DOLLARcacheFactory = "$cacheFactory".asInstanceOf[DOLLARcacheFactory]
+  def $cacheFactory: $cacheFactory = "$cacheFactory".asInstanceOf[$cacheFactory]
   @scala.inline
-  def DOLLARcompile: DOLLARcompile = "$compile".asInstanceOf[DOLLARcompile]
+  def $compile: $compile = "$compile".asInstanceOf[$compile]
   @scala.inline
-  def DOLLARcontroller: DOLLARcontroller = "$controller".asInstanceOf[DOLLARcontroller]
+  def $controller: $controller = "$controller".asInstanceOf[$controller]
   @scala.inline
-  def DOLLARdocument: DOLLARdocument = "$document".asInstanceOf[DOLLARdocument]
+  def $document: $document = "$document".asInstanceOf[$document]
   @scala.inline
-  def DOLLARexceptionHandler: DOLLARexceptionHandler = "$exceptionHandler".asInstanceOf[DOLLARexceptionHandler]
+  def $exceptionHandler: $exceptionHandler = "$exceptionHandler".asInstanceOf[$exceptionHandler]
   @scala.inline
-  def DOLLARfilter: DOLLARfilter = "$filter".asInstanceOf[DOLLARfilter]
+  def $filter: $filter = "$filter".asInstanceOf[$filter]
   @scala.inline
-  def DOLLARhttp: DOLLARhttp = "$http".asInstanceOf[DOLLARhttp]
+  def $http: $http = "$http".asInstanceOf[$http]
   @scala.inline
-  def DOLLARhttpBackend: DOLLARhttpBackend = "$httpBackend".asInstanceOf[DOLLARhttpBackend]
+  def $httpBackend: $httpBackend = "$httpBackend".asInstanceOf[$httpBackend]
   @scala.inline
-  def DOLLARhttpParamSerializer: DOLLARhttpParamSerializer = "$httpParamSerializer".asInstanceOf[DOLLARhttpParamSerializer]
+  def $httpParamSerializer: $httpParamSerializer = "$httpParamSerializer".asInstanceOf[$httpParamSerializer]
   @scala.inline
-  def DOLLARhttpParamSerializerJQLike: DOLLARhttpParamSerializerJQLike = "$httpParamSerializerJQLike".asInstanceOf[DOLLARhttpParamSerializerJQLike]
+  def $httpParamSerializerJQLike: $httpParamSerializerJQLike = "$httpParamSerializerJQLike".asInstanceOf[$httpParamSerializerJQLike]
   @scala.inline
-  def DOLLARinterpolate: DOLLARinterpolate = "$interpolate".asInstanceOf[DOLLARinterpolate]
+  def $interpolate: $interpolate = "$interpolate".asInstanceOf[$interpolate]
   @scala.inline
-  def DOLLARinterval: DOLLARinterval = "$interval".asInstanceOf[DOLLARinterval]
+  def $interval: $interval = "$interval".asInstanceOf[$interval]
   @scala.inline
-  def DOLLARlocale: DOLLARlocale = "$locale".asInstanceOf[DOLLARlocale]
+  def $locale: $locale = "$locale".asInstanceOf[$locale]
   @scala.inline
-  def DOLLARlocation: DOLLARlocation = "$location".asInstanceOf[DOLLARlocation]
+  def $location: $location = "$location".asInstanceOf[$location]
   @scala.inline
-  def DOLLARlog: DOLLARlog = "$log".asInstanceOf[DOLLARlog]
+  def $log: $log = "$log".asInstanceOf[$log]
   @scala.inline
-  def DOLLARparse: DOLLARparse = "$parse".asInstanceOf[DOLLARparse]
+  def $parse: $parse = "$parse".asInstanceOf[$parse]
   @scala.inline
-  def DOLLARq: DOLLARq = "$q".asInstanceOf[DOLLARq]
+  def $q: $q = "$q".asInstanceOf[$q]
   @scala.inline
-  def DOLLARrootElement: DOLLARrootElement = "$rootElement".asInstanceOf[DOLLARrootElement]
+  def $rootElement: $rootElement = "$rootElement".asInstanceOf[$rootElement]
   @scala.inline
-  def DOLLARrootScope: DOLLARrootScope = "$rootScope".asInstanceOf[DOLLARrootScope]
+  def $rootScope: $rootScope = "$rootScope".asInstanceOf[$rootScope]
   @scala.inline
-  def DOLLARsce: DOLLARsce = "$sce".asInstanceOf[DOLLARsce]
+  def $sce: $sce = "$sce".asInstanceOf[$sce]
   @scala.inline
-  def DOLLARsceDelegate: DOLLARsceDelegate = "$sceDelegate".asInstanceOf[DOLLARsceDelegate]
+  def $sceDelegate: $sceDelegate = "$sceDelegate".asInstanceOf[$sceDelegate]
   @scala.inline
-  def DOLLARtemplateCache: DOLLARtemplateCache = "$templateCache".asInstanceOf[DOLLARtemplateCache]
+  def $templateCache: $templateCache = "$templateCache".asInstanceOf[$templateCache]
   @scala.inline
-  def DOLLARtemplateRequest: DOLLARtemplateRequest = "$templateRequest".asInstanceOf[DOLLARtemplateRequest]
+  def $templateRequest: $templateRequest = "$templateRequest".asInstanceOf[$templateRequest]
   @scala.inline
-  def DOLLARtimeout: DOLLARtimeout = "$timeout".asInstanceOf[DOLLARtimeout]
+  def $timeout: $timeout = "$timeout".asInstanceOf[$timeout]
   @scala.inline
-  def DOLLARwindow: DOLLARwindow = "$window".asInstanceOf[DOLLARwindow]
+  def $window: $window = "$window".asInstanceOf[$window]
   @scala.inline
-  def DOLLARxhrFactory: DOLLARxhrFactory = "$xhrFactory".asInstanceOf[DOLLARxhrFactory]
+  def $xhrFactory: $xhrFactory = "$xhrFactory".asInstanceOf[$xhrFactory]
   @scala.inline
   def IQService: IQService = "IQService".asInstanceOf[IQService]
   @scala.inline

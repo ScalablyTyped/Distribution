@@ -21,6 +21,6 @@ trait Project extends js.Object {
   val typescript: js.UndefOr[Typeofts] = js.native
   def apply(): ICompileStream = js.native
   def apply(reporter: Reporter): ICompileStream = js.native
-  def src(`this`: Project): ReadWriteStream = js.native
+  def src(): ReadWriteStream = js.native
 }
 

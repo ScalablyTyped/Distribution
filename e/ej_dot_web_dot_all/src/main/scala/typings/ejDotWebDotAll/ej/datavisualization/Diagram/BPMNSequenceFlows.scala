@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNSequenceFlows.Conditional
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNSequenceFlows.Default
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNSequenceFlows.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

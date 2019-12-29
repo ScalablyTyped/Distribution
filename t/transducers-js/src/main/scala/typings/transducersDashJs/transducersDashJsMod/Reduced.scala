@@ -5,16 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Reduced[TResult] extends js.Object {
-  var `@@transducer/reduced`: Boolean
-  var `@@transducer/value`: TResult
+  @JSName("@@transducer/reduced")
+  var `@@transducerSlashreduced`: Boolean
+  @JSName("@@transducer/value")
+  var `@@transducerSlashvalue`: TResult
 }
 
 object Reduced {
   @scala.inline
-  def apply[TResult](`@@transducer/reduced`: Boolean, `@@transducer/value`: TResult): Reduced[TResult] = {
+  def apply[TResult](`@@transducerSlashreduced`: Boolean, `@@transducerSlashvalue`: TResult): Reduced[TResult] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("@@transducer/reduced")(`@@transducer/reduced`.asInstanceOf[js.Any])
-    __obj.updateDynamic("@@transducer/value")(`@@transducer/value`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@@transducer/reduced")(`@@transducerSlashreduced`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@@transducer/value")(`@@transducerSlashvalue`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reduced[TResult]]
   }
 }

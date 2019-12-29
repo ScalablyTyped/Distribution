@@ -1,10 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.TapBehavior.directSelect
-import typings.winjs.WinJS.UI.TapBehavior.invokeOnly
-import typings.winjs.WinJS.UI.TapBehavior.none
-import typings.winjs.WinJS.UI.TapBehavior.toggleSelect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

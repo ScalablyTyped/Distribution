@@ -1,10 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.VerticalAlignment.bottom
-import typings.officeDashJs.Word.VerticalAlignment.center
-import typings.officeDashJs.Word.VerticalAlignment.mixed
-import typings.officeDashJs.Word.VerticalAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

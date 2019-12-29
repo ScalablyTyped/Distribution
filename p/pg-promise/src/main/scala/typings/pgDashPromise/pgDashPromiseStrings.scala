@@ -7,31 +7,34 @@ import scala.scalajs.js.annotation._
 
 object pgDashPromiseStrings {
   @js.native
-  sealed trait `#` extends FormattingFilter
+  sealed trait Colonalias extends FormattingFilter
   
   @js.native
-  sealed trait `:alias` extends FormattingFilter
+  sealed trait Coloncsv extends FormattingFilter
   
   @js.native
-  sealed trait `:csv` extends FormattingFilter
+  sealed trait Colonjson extends FormattingFilter
   
   @js.native
-  sealed trait `:json` extends FormattingFilter
+  sealed trait Colonlist extends FormattingFilter
   
   @js.native
-  sealed trait `:list` extends FormattingFilter
+  sealed trait Colonname extends FormattingFilter
   
   @js.native
-  sealed trait `:name` extends FormattingFilter
+  sealed trait Colonraw extends FormattingFilter
   
   @js.native
-  sealed trait `:raw` extends FormattingFilter
+  sealed trait Colonvalue extends FormattingFilter
   
   @js.native
-  sealed trait `:value` extends FormattingFilter
+  sealed trait Numbersign extends FormattingFilter
   
   @js.native
-  sealed trait `_backtick^_backtick` extends FormattingFilter
+  sealed trait Tilde extends FormattingFilter
+  
+  @js.native
+  sealed trait ^ extends FormattingFilter
   
   @js.native
   sealed trait after extends js.Object
@@ -39,32 +42,29 @@ object pgDashPromiseStrings {
   @js.native
   sealed trait array extends js.Object
   
-  @js.native
-  sealed trait `~` extends FormattingFilter
-  
   @scala.inline
-  def `#`: `#` = "#".asInstanceOf[`#`]
+  def Colonalias: Colonalias = ":alias".asInstanceOf[Colonalias]
   @scala.inline
-  def `:alias`: `:alias` = ":alias".asInstanceOf[`:alias`]
+  def Coloncsv: Coloncsv = ":csv".asInstanceOf[Coloncsv]
   @scala.inline
-  def `:csv`: `:csv` = ":csv".asInstanceOf[`:csv`]
+  def Colonjson: Colonjson = ":json".asInstanceOf[Colonjson]
   @scala.inline
-  def `:json`: `:json` = ":json".asInstanceOf[`:json`]
+  def Colonlist: Colonlist = ":list".asInstanceOf[Colonlist]
   @scala.inline
-  def `:list`: `:list` = ":list".asInstanceOf[`:list`]
+  def Colonname: Colonname = ":name".asInstanceOf[Colonname]
   @scala.inline
-  def `:name`: `:name` = ":name".asInstanceOf[`:name`]
+  def Colonraw: Colonraw = ":raw".asInstanceOf[Colonraw]
   @scala.inline
-  def `:raw`: `:raw` = ":raw".asInstanceOf[`:raw`]
+  def Colonvalue: Colonvalue = ":value".asInstanceOf[Colonvalue]
   @scala.inline
-  def `:value`: `:value` = ":value".asInstanceOf[`:value`]
+  def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def Tilde: Tilde = "~".asInstanceOf[Tilde]
+  @scala.inline
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def `~`: `~` = "~".asInstanceOf[`~`]
 }
 

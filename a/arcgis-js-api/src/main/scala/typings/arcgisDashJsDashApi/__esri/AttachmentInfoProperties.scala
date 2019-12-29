@@ -18,6 +18,12 @@ trait AttachmentInfoProperties extends js.Object {
     */
   var exifInfo: js.UndefOr[js.Array[ExifInfo]] = js.undefined
   /**
+    * The global identifier for the attachment.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#globalId)
+    */
+  var globalId: js.UndefOr[String] = js.undefined
+  /**
     * The identifier for the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#id)
@@ -35,6 +41,12 @@ trait AttachmentInfoProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
+  /**
+    * The parent or the feature global id of the attachment.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#parentGlobalId)
+    */
+  var parentGlobalId: js.UndefOr[Double] = js.undefined
   /**
     * The parent or the feature object id of the attachment.
     *
@@ -60,9 +72,11 @@ object AttachmentInfoProperties {
   def apply(
     contentType: String = null,
     exifInfo: js.Array[ExifInfo] = null,
+    globalId: String = null,
     id: Int | Double = null,
     keywords: String = null,
     name: String = null,
+    parentGlobalId: Int | Double = null,
     parentObjectId: Int | Double = null,
     size: Int | Double = null,
     url: String = null
@@ -70,9 +84,11 @@ object AttachmentInfoProperties {
     val __obj = js.Dynamic.literal()
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (exifInfo != null) __obj.updateDynamic("exifInfo")(exifInfo.asInstanceOf[js.Any])
+    if (globalId != null) __obj.updateDynamic("globalId")(globalId.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentGlobalId != null) __obj.updateDynamic("parentGlobalId")(parentGlobalId.asInstanceOf[js.Any])
     if (parentObjectId != null) __obj.updateDynamic("parentObjectId")(parentObjectId.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

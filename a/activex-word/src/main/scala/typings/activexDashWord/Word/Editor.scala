@@ -14,7 +14,8 @@ class Editor protected () extends js.Object {
   val NextRange: typings.activexDashWord.Word.Range = js.native
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
-  var `Word.Editor_typekey`: Editor = js.native
+  @JSName("Word.Editor_typekey")
+  var WordDotEditor_typekey: Editor = js.native
   def Delete(): Unit = js.native
   def DeleteAll(): Unit = js.native
   def SelectAll(): Unit = js.native

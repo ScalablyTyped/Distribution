@@ -1,17 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ListLevelPermissionMask.approveItems
-import typings.sharepoint.SP.ListLevelPermissionMask.breakCheckout
-import typings.sharepoint.SP.ListLevelPermissionMask.deleteListItems
-import typings.sharepoint.SP.ListLevelPermissionMask.deleteVersions
-import typings.sharepoint.SP.ListLevelPermissionMask.editListItems
-import typings.sharepoint.SP.ListLevelPermissionMask.insertListItems
-import typings.sharepoint.SP.ListLevelPermissionMask.manageLists
-import typings.sharepoint.SP.ListLevelPermissionMask.managePersonalViews
-import typings.sharepoint.SP.ListLevelPermissionMask.openItems
-import typings.sharepoint.SP.ListLevelPermissionMask.viewListItems
-import typings.sharepoint.SP.ListLevelPermissionMask.viewVersions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

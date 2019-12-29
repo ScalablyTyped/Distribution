@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReceivedMessageFromWorkerEventDataType extends js.Object {
-  var message: java.lang.String
+  var message: String
   /**
     * Identifier of a session which sends a message.
     */
@@ -14,7 +14,7 @@ trait ReceivedMessageFromWorkerEventDataType extends js.Object {
 
 object ReceivedMessageFromWorkerEventDataType {
   @scala.inline
-  def apply(message: java.lang.String, sessionId: SessionID): ReceivedMessageFromWorkerEventDataType = {
+  def apply(message: String, sessionId: SessionID): ReceivedMessageFromWorkerEventDataType = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReceivedMessageFromWorkerEventDataType]

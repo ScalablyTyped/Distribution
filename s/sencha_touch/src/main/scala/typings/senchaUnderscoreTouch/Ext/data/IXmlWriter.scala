@@ -9,45 +9,45 @@ import scala.scalajs.js.annotation._
 trait IXmlWriter
   extends typings.senchaUnderscoreTouch.Ext.data.writer.IWriter {
   /** [Config Option] (String) */
-  var defaultDocumentRoot: js.UndefOr[java.lang.String] = js.undefined
+  var defaultDocumentRoot: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var documentRoot: js.UndefOr[java.lang.String] = js.undefined
+  var documentRoot: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of defaultDocumentRoot
   		* @returns String
   		*/
-  var getDefaultDocumentRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDefaultDocumentRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of documentRoot
   		* @returns String
   		*/
-  var getDocumentRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDocumentRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of header
   		* @returns String
   		*/
-  var getHeader: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getHeader: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of record
   		* @returns String
   		*/
-  var getRecord: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var header: js.UndefOr[java.lang.String] = js.undefined
+  var header: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var record: js.UndefOr[java.lang.String] = js.undefined
+  var record: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of defaultDocumentRoot
   		* @param defaultDocumentRoot String The new value.
   		*/
-  var setDefaultDocumentRoot: js.UndefOr[js.Function1[/* defaultDocumentRoot */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDefaultDocumentRoot: js.UndefOr[js.Function1[/* defaultDocumentRoot */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of documentRoot
   		* @param documentRoot String The new value.
   		*/
-  var setDocumentRoot: js.UndefOr[js.Function1[/* documentRoot */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDocumentRoot: js.UndefOr[js.Function1[/* documentRoot */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of header
   		* @param header String The new value.
   		*/
-  var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of record
   		* @param record String The new value.
   		*/
-  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method]
   		* @param request Object
   		* @param data Array
@@ -65,31 +65,31 @@ object IXmlWriter {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    defaultDocumentRoot: java.lang.String = null,
+    defaultDocumentRoot: String = null,
     destroy: () => Unit = null,
-    documentRoot: java.lang.String = null,
-    extend: java.lang.String = null,
-    getDefaultDocumentRoot: () => java.lang.String = null,
-    getDocumentRoot: () => java.lang.String = null,
-    getHeader: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getNameProperty: () => java.lang.String = null,
-    getRecord: () => java.lang.String = null,
+    documentRoot: String = null,
+    extend: String = null,
+    getDefaultDocumentRoot: () => String = null,
+    getDocumentRoot: () => String = null,
+    getHeader: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getNameProperty: () => String = null,
+    getRecord: () => String = null,
     getRecordData: /* record */ js.UndefOr[js.Any] => _ = null,
     getWriteAllFields: () => Boolean = null,
-    header: java.lang.String = null,
+    header: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
-    nameProperty: java.lang.String = null,
+    nameProperty: String = null,
     platformConfig: js.Any = null,
-    record: java.lang.String = null,
+    record: String = null,
     self: IClass = null,
-    setDefaultDocumentRoot: /* defaultDocumentRoot */ js.UndefOr[java.lang.String] => Unit = null,
-    setDocumentRoot: /* documentRoot */ js.UndefOr[java.lang.String] => Unit = null,
-    setHeader: /* header */ js.UndefOr[java.lang.String] => Unit = null,
-    setNameProperty: /* nameProperty */ js.UndefOr[java.lang.String] => Unit = null,
-    setRecord: /* record */ js.UndefOr[java.lang.String] => Unit = null,
+    setDefaultDocumentRoot: /* defaultDocumentRoot */ js.UndefOr[String] => Unit = null,
+    setDocumentRoot: /* documentRoot */ js.UndefOr[String] => Unit = null,
+    setHeader: /* header */ js.UndefOr[String] => Unit = null,
+    setNameProperty: /* nameProperty */ js.UndefOr[String] => Unit = null,
+    setRecord: /* record */ js.UndefOr[String] => Unit = null,
     setWriteAllFields: /* writeAllFields */ js.UndefOr[Boolean] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,

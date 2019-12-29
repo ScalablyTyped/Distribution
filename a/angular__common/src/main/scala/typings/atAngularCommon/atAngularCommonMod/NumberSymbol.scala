@@ -1,20 +1,6 @@
 package typings.atAngularCommon.atAngularCommonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.CurrencyDecimal
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.CurrencyGroup
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.Decimal
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.Exponential
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.Group
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.Infinity
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.List
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.MinusSign
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.NaN
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.PerMille
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.PercentSign
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.PlusSign
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.SuperscriptingExponent
-import typings.atAngularCommon.atAngularCommonMod.NumberSymbol.TimeSeparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

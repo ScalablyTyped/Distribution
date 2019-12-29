@@ -24,7 +24,8 @@ class PlotArea protected () extends js.Object {
   var Position: XlChartElementPosition = js.native
   var Top: Double = js.native
   var Width: Double = js.native
-  var `Word.PlotArea_typekey`: PlotArea = js.native
+  @JSName("Word.PlotArea_typekey")
+  var WordDotPlotArea_typekey: PlotArea = js.native
   def ClearFormats(): js.Any = js.native
   def Select(): js.Any = js.native
 }

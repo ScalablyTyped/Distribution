@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation._
 
 object atMaterialChipsStrings {
   @js.native
-  sealed trait `DOTmdc-chip` extends js.Object
+  sealed trait `Dotmdc-chip` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-chip__checkmark` extends js.Object
+  sealed trait `Dotmdc-chip__checkmark` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-chip__icon--leading` extends js.Object
+  sealed trait `Dotmdc-chip__icon--leading` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-chip__icon--trailing` extends js.Object
+  sealed trait `Dotmdc-chip__icon--trailing` extends js.Object
   
   @js.native
-  sealed trait `MDCChip:interaction` extends js.Object
+  sealed trait MDCChipColoninteraction extends js.Object
   
   @js.native
-  sealed trait `MDCChip:removal` extends js.Object
+  sealed trait MDCChipColonremoval extends js.Object
   
   @js.native
-  sealed trait `MDCChip:trailingIconInteraction` extends js.Object
+  sealed trait MDCChipColontrailingIconInteraction extends js.Object
   
   @js.native
   sealed trait `mdc-chip` extends js.Object
@@ -60,19 +60,19 @@ object atMaterialChipsStrings {
   sealed trait `mdc-chip__text` extends js.Object
   
   @scala.inline
-  def `DOTmdc-chip`: `DOTmdc-chip` = ".mdc-chip".asInstanceOf[`DOTmdc-chip`]
+  def `Dotmdc-chip`: `Dotmdc-chip` = ".mdc-chip".asInstanceOf[`Dotmdc-chip`]
   @scala.inline
-  def `DOTmdc-chip__checkmark`: `DOTmdc-chip__checkmark` = ".mdc-chip__checkmark".asInstanceOf[`DOTmdc-chip__checkmark`]
+  def `Dotmdc-chip__checkmark`: `Dotmdc-chip__checkmark` = ".mdc-chip__checkmark".asInstanceOf[`Dotmdc-chip__checkmark`]
   @scala.inline
-  def `DOTmdc-chip__icon--leading`: `DOTmdc-chip__icon--leading` = ".mdc-chip__icon--leading".asInstanceOf[`DOTmdc-chip__icon--leading`]
+  def `Dotmdc-chip__icon--leading`: `Dotmdc-chip__icon--leading` = ".mdc-chip__icon--leading".asInstanceOf[`Dotmdc-chip__icon--leading`]
   @scala.inline
-  def `DOTmdc-chip__icon--trailing`: `DOTmdc-chip__icon--trailing` = ".mdc-chip__icon--trailing".asInstanceOf[`DOTmdc-chip__icon--trailing`]
+  def `Dotmdc-chip__icon--trailing`: `Dotmdc-chip__icon--trailing` = ".mdc-chip__icon--trailing".asInstanceOf[`Dotmdc-chip__icon--trailing`]
   @scala.inline
-  def `MDCChip:interaction`: `MDCChip:interaction` = "MDCChip:interaction".asInstanceOf[`MDCChip:interaction`]
+  def MDCChipColoninteraction: MDCChipColoninteraction = "MDCChip:interaction".asInstanceOf[MDCChipColoninteraction]
   @scala.inline
-  def `MDCChip:removal`: `MDCChip:removal` = "MDCChip:removal".asInstanceOf[`MDCChip:removal`]
+  def MDCChipColonremoval: MDCChipColonremoval = "MDCChip:removal".asInstanceOf[MDCChipColonremoval]
   @scala.inline
-  def `MDCChip:trailingIconInteraction`: `MDCChip:trailingIconInteraction` = "MDCChip:trailingIconInteraction".asInstanceOf[`MDCChip:trailingIconInteraction`]
+  def MDCChipColontrailingIconInteraction: MDCChipColontrailingIconInteraction = "MDCChip:trailingIconInteraction".asInstanceOf[MDCChipColontrailingIconInteraction]
   @scala.inline
   def `mdc-chip`: `mdc-chip` = "mdc-chip".asInstanceOf[`mdc-chip`]
   @scala.inline

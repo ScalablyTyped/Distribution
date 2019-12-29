@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.SelectionType.Multiple
-import typings.ejDotWebDotAll.ej.Grid.SelectionType.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

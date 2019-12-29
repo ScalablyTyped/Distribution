@@ -200,19 +200,19 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait user_about_me extends _Permissions
   
   @js.native
-  sealed trait user_actionsDOTbooks extends _Permissions
+  sealed trait user_actionsDotbooks extends _Permissions
   
   @js.native
-  sealed trait user_actionsDOTfitness extends _Permissions
+  sealed trait user_actionsDotfitness extends _Permissions
   
   @js.native
-  sealed trait user_actionsDOTmusic extends _Permissions
+  sealed trait user_actionsDotmusic extends _Permissions
   
   @js.native
-  sealed trait user_actionsDOTnews extends _Permissions
+  sealed trait user_actionsDotnews extends _Permissions
   
   @js.native
-  sealed trait user_actionsDOTvideo extends _Permissions
+  sealed trait user_actionsDotvideo extends _Permissions
   
   @js.native
   sealed trait user_birthday extends _Permissions
@@ -397,15 +397,15 @@ object reactDashNativeDashFbsdkStrings {
   @scala.inline
   def user_about_me: user_about_me = "user_about_me".asInstanceOf[user_about_me]
   @scala.inline
-  def user_actionsDOTbooks: user_actionsDOTbooks = "user_actions.books".asInstanceOf[user_actionsDOTbooks]
+  def user_actionsDotbooks: user_actionsDotbooks = "user_actions.books".asInstanceOf[user_actionsDotbooks]
   @scala.inline
-  def user_actionsDOTfitness: user_actionsDOTfitness = "user_actions.fitness".asInstanceOf[user_actionsDOTfitness]
+  def user_actionsDotfitness: user_actionsDotfitness = "user_actions.fitness".asInstanceOf[user_actionsDotfitness]
   @scala.inline
-  def user_actionsDOTmusic: user_actionsDOTmusic = "user_actions.music".asInstanceOf[user_actionsDOTmusic]
+  def user_actionsDotmusic: user_actionsDotmusic = "user_actions.music".asInstanceOf[user_actionsDotmusic]
   @scala.inline
-  def user_actionsDOTnews: user_actionsDOTnews = "user_actions.news".asInstanceOf[user_actionsDOTnews]
+  def user_actionsDotnews: user_actionsDotnews = "user_actions.news".asInstanceOf[user_actionsDotnews]
   @scala.inline
-  def user_actionsDOTvideo: user_actionsDOTvideo = "user_actions.video".asInstanceOf[user_actionsDOTvideo]
+  def user_actionsDotvideo: user_actionsDotvideo = "user_actions.video".asInstanceOf[user_actionsDotvideo]
   @scala.inline
   def user_birthday: user_birthday = "user_birthday".asInstanceOf[user_birthday]
   @scala.inline

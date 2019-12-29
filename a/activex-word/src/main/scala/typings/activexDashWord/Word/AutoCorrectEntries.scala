@@ -11,7 +11,8 @@ class AutoCorrectEntries protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.AutoCorrectEntries_typekey`: AutoCorrectEntries = js.native
+  @JSName("Word.AutoCorrectEntries_typekey")
+  var WordDotAutoCorrectEntries_typekey: AutoCorrectEntries = js.native
   def Add(Name: String, Value: String): AutoCorrectEntry = js.native
   def AddRichText(Name: String, Range: Range): AutoCorrectEntry = js.native
   def Item(Index: js.Any): AutoCorrectEntry = js.native

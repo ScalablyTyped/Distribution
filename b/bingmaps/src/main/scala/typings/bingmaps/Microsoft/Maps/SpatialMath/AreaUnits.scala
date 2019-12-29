@@ -1,13 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.SpatialMath
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.SpatialMath.AreaUnits.Acres
-import typings.bingmaps.Microsoft.Maps.SpatialMath.AreaUnits.Hectares
-import typings.bingmaps.Microsoft.Maps.SpatialMath.AreaUnits.SquareFeet
-import typings.bingmaps.Microsoft.Maps.SpatialMath.AreaUnits.SquareKilometers
-import typings.bingmaps.Microsoft.Maps.SpatialMath.AreaUnits.SquareMeters
-import typings.bingmaps.Microsoft.Maps.SpatialMath.AreaUnits.SquareMiles
-import typings.bingmaps.Microsoft.Maps.SpatialMath.AreaUnits.SquareYards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

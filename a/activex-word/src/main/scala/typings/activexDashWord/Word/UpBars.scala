@@ -15,7 +15,8 @@ class UpBars protected () extends js.Object {
   val Interior: typings.activexDashWord.Word.Interior = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.UpBars_typekey`: UpBars = js.native
+  @JSName("Word.UpBars_typekey")
+  var WordDotUpBars_typekey: UpBars = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native
 }

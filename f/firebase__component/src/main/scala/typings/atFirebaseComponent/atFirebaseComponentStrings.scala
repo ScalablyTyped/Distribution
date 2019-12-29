@@ -15,6 +15,9 @@ object atFirebaseComponentStrings {
   sealed trait LAZY extends InstantiationMode
   
   @js.native
+  sealed trait LeftsquarebracketDEFAULTRightsquarebracket extends js.Object
+  
+  @js.native
   sealed trait PRIVATE extends ComponentType
   
   @js.native
@@ -22,9 +25,6 @@ object atFirebaseComponentStrings {
   
   @js.native
   sealed trait VERSION extends ComponentType
-  
-  @js.native
-  sealed trait `[DEFAULT]` extends js.Object
   
   @js.native
   sealed trait badtest extends Name
@@ -46,13 +46,13 @@ object atFirebaseComponentStrings {
   @scala.inline
   def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
   @scala.inline
+  def LeftsquarebracketDEFAULTRightsquarebracket: LeftsquarebracketDEFAULTRightsquarebracket = "[DEFAULT]".asInstanceOf[LeftsquarebracketDEFAULTRightsquarebracket]
+  @scala.inline
   def PRIVATE: PRIVATE = "PRIVATE".asInstanceOf[PRIVATE]
   @scala.inline
   def PUBLIC: PUBLIC = "PUBLIC".asInstanceOf[PUBLIC]
   @scala.inline
   def VERSION: VERSION = "VERSION".asInstanceOf[VERSION]
-  @scala.inline
-  def `[DEFAULT]`: `[DEFAULT]` = "[DEFAULT]".asInstanceOf[`[DEFAULT]`]
   @scala.inline
   def badtest: badtest = "badtest".asInstanceOf[badtest]
   @scala.inline

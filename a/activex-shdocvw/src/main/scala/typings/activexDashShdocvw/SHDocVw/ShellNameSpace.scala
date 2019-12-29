@@ -17,7 +17,8 @@ class ShellNameSpace protected () extends js.Object {
   var Mode: Double = js.native
   /** get the root item */
   var Root: js.Any = js.native
-  var `SHDocVw.ShellNameSpace_typekey`: ShellNameSpace = js.native
+  @JSName("SHDocVw.ShellNameSpace_typekey")
+  var SHDocVwDotShellNameSpace_typekey: ShellNameSpace = js.native
   /** get the selected item */
   var SelectedItem: js.Any = js.native
   /** Query to see if subscriptions are enabled */

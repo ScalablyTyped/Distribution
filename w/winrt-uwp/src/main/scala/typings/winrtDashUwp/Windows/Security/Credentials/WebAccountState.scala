@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.connected
-import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.error
-import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

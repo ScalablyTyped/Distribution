@@ -1,11 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.TransformMode.NoRotationOrReflection
-import typings.pixiDashSpine.PIXI.spine.core.TransformMode.NoScale
-import typings.pixiDashSpine.PIXI.spine.core.TransformMode.NoScaleOrReflection
-import typings.pixiDashSpine.PIXI.spine.core.TransformMode.Normal
-import typings.pixiDashSpine.PIXI.spine.core.TransformMode.OnlyTranslation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

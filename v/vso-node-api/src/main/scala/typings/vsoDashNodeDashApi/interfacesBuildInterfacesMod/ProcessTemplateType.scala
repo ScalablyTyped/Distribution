@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Custom
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Default
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Upgrade
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

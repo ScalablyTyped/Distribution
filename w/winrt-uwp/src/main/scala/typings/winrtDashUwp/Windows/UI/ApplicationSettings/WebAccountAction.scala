@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ApplicationSettings
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.manage
-import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.more
-import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.reconnect
-import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.remove
-import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.viewDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

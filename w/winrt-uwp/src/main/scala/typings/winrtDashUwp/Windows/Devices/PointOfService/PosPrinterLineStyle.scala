@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineStyle.broken
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineStyle.chain
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineStyle.doubleSolid
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineStyle.singleSolid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IQuickTip
-  extends typings.extjs.Ext.tip.IToolTip {
+trait IQuickTip extends IToolTip {
   /** [Method] Hides a visible tip or cancels an impending show for a particular element
   		* @param el String/HTMLElement/Ext.Element The element that is the target of the tip or ID of the element.
   		*/
@@ -25,7 +24,7 @@ trait IQuickTip
 object IQuickTip {
   @scala.inline
   def apply(
-    IToolTip: typings.extjs.Ext.tip.IToolTip = null,
+    IToolTip: IToolTip = null,
     cancelShow: /* el */ js.UndefOr[js.Any] => Unit = null,
     interceptTitles: js.UndefOr[Boolean] = js.undefined,
     register: /* config */ js.UndefOr[js.Any] => Unit = null,

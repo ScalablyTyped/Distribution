@@ -1,13 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.GeocoderStatus.ERROR
-import typings.googlemaps.google.maps.GeocoderStatus.INVALID_REQUEST
-import typings.googlemaps.google.maps.GeocoderStatus.OK
-import typings.googlemaps.google.maps.GeocoderStatus.OVER_QUERY_LIMIT
-import typings.googlemaps.google.maps.GeocoderStatus.REQUEST_DENIED
-import typings.googlemaps.google.maps.GeocoderStatus.UNKNOWN_ERROR
-import typings.googlemaps.google.maps.GeocoderStatus.ZERO_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

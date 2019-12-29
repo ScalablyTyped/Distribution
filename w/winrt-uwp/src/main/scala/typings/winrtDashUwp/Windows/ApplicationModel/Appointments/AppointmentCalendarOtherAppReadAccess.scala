@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.full
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.limited
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.systemOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

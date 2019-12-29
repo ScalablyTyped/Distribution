@@ -1,6 +1,6 @@
 package typings.html5plus
 
-import typings.html5plus.html5plusStrings.Empty
+import typings.html5plus.html5plusStrings._empty
 import typings.html5plus.html5plusStrings.allow
 import typings.html5plus.html5plusStrings.instant
 import typings.html5plus.html5plusStrings.none
@@ -31,7 +31,7 @@ trait PlusWebviewWebviewOverrideUrlOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var effect: js.UndefOr[instant | Empty] = js.undefined
+  var effect: js.UndefOr[instant | _empty] = js.undefined
   /**
     * 排除拦截处理请求类型
     * 不拦截处理指定类型的URL请求，直接使用系统默认处理逻辑。
@@ -78,7 +78,7 @@ trait PlusWebviewWebviewOverrideUrlOptions extends js.Object {
 object PlusWebviewWebviewOverrideUrlOptions {
   @scala.inline
   def apply(
-    effect: instant | Empty = null,
+    effect: instant | _empty = null,
     exclude: none | redirect = null,
     `match`: String = null,
     mode: allow | reject = null

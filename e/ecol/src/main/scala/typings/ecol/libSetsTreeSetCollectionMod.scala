@@ -2,7 +2,7 @@ package typings.ecol
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.ecol.ecolNumbers.`true`
+import typings.ecol.ecolBooleans.`true`
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
@@ -50,7 +50,6 @@ object libSetsTreeSetCollectionMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -75,7 +74,6 @@ object libSetsTreeSetCollectionMod extends js.Object {
       *
       * @return Reverse iterator to the first.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[T] = js.native
     /**
@@ -97,7 +95,6 @@ object libSetsTreeSetCollectionMod extends js.Object {
       *
       * @return Reverse iterator to the end.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def rend(): ReverseIterator[T] = js.native
     /**

@@ -1,6 +1,5 @@
 package typings.gulpDashTap
 
-import typings.gulpDashTap.gulpDashTapMod.TapFunction
 import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.vinylMod.File
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.reactDashOverlays
 
-import typings.reactDashOverlays.reactDashOverlaysNumbers.`true`
+import typings.reactDashOverlays.reactDashOverlaysBooleans.`true`
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

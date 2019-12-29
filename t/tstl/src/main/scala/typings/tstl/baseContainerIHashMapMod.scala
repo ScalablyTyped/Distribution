@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseContainerIHashMapMod.IHashMap
 import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator
 import typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator

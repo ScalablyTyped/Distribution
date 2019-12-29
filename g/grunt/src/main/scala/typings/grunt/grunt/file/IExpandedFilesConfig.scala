@@ -11,7 +11,7 @@ trait IExpandedFilesConfig extends IFilesConfig {
   /**
     * Replace any existing extension with this value in generated {@link IExpandedFilesConfig.dest} paths.
     */
-  var ext: js.UndefOr[java.lang.String] = js.undefined
+  var ext: js.UndefOr[String] = js.undefined
   /**
     * Remove all path parts from generated {@link IExpandedFilesConfig.dest} paths.
     */
@@ -28,12 +28,12 @@ trait IExpandedFilesConfig extends IFilesConfig {
 object IExpandedFilesConfig {
   @scala.inline
   def apply(
-    cwd: java.lang.String = null,
+    cwd: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    dest: java.lang.String = null,
+    dest: String = null,
     dot: js.UndefOr[Boolean] = js.undefined,
     expand: js.UndefOr[Boolean] = js.undefined,
-    ext: java.lang.String = null,
+    ext: String = null,
     filter: js.Any = null,
     flatten: js.UndefOr[Boolean] = js.undefined,
     flipNegate: js.UndefOr[Boolean] = js.undefined,
@@ -46,7 +46,7 @@ object IExpandedFilesConfig {
     nonegate: js.UndefOr[Boolean] = js.undefined,
     nonull: js.UndefOr[Boolean] = js.undefined,
     rename: js.Function = null,
-    src: js.Array[java.lang.String] = null
+    src: js.Array[String] = null
   ): IExpandedFilesConfig = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])

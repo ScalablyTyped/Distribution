@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atWebpackDashBlocksDevDashServerMod {
-  import typings.atWebpackDashBlocksDevDashServer.atWebpackDashBlocksDevDashServerNumbers.`false`
+  import typings.atWebpackDashBlocksDevDashServer.atWebpackDashBlocksDevDashServerBooleans.`false`
 
   type InjectClientFunction = js.Function1[/* compilerConfig */ js.Any, Boolean]
   type PathFunction = js.Function0[String]

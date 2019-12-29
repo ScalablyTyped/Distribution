@@ -1,12 +1,12 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atHapiCatbox.atHapiCatboxBooleans.`false`
 import typings.atHapiCatbox.atHapiCatboxMod.ClientApi
 import typings.atHapiCatbox.atHapiCatboxMod.ClientOptions
 import typings.atHapiCatbox.atHapiCatboxMod.GenerateFuncFlags
 import typings.atHapiCatbox.atHapiCatboxMod.Id
 import typings.atHapiCatbox.atHapiCatboxMod.PolicyOptions
-import typings.atHapiCatbox.atHapiCatboxNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

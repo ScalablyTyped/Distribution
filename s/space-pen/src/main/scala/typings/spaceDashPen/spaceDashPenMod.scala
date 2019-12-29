@@ -42,9 +42,9 @@ object spaceDashPenMod extends js.Object {
   @JSName("$")
   var $: JQueryStatic = js.native
   @JSName("$$")
-  var $$: js.Function1[/* fn */ js.Function, JQuery] = js.native
+  var DollarDollar: js.Function1[/* fn */ js.Function, JQuery] = js.native
   @JSName("$$$")
-  var $$$: js.Function1[/* fn */ js.Function, js.Any] = js.native
+  var DollarDollarDollar: js.Function1[/* fn */ js.Function, js.Any] = js.native
   // copy & paste end
   var jQuery: JQueryStatic = js.native
   /* static members */

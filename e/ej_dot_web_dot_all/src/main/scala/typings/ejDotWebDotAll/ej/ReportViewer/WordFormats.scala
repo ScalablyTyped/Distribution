@@ -1,27 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Automatic
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.DOCX
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Doc
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Dot
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.EPUB
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.HTML
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.RTF
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Txt
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2007
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2007Docm
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2007Dotm
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2007Dotx
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2010
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2010Docm
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2010Dotm
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2010Dotx
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2013
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2013Docm
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2013Dotm
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.Word2013Dotx
-import typings.ejDotWebDotAll.ej.ReportViewer.WordFormats.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

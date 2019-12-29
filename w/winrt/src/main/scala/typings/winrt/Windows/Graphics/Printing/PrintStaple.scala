@@ -1,19 +1,6 @@
 package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.default
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.none
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.notAvailable
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.printerCustom
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.saddleStitch
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleBottomLeft
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleBottomRight
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleDualBottom
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleDualLeft
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleDualRight
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleDualTop
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleTopLeft
-import typings.winrt.Windows.Graphics.Printing.PrintStaple.stapleTopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

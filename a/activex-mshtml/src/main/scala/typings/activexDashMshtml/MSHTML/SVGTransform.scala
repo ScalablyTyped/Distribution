@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGTransform")
 @js.native
 class SVGTransform protected () extends js.Object {
-  var `MSHTML.SVGTransform_typekey`: SVGTransform = js.native
+  @JSName("MSHTML.SVGTransform_typekey")
+  var MSHTMLDotSVGTransform_typekey: SVGTransform = js.native
   var angle: Double = js.native
   var matrix: SVGMatrix = js.native
   var `type`: Double = js.native

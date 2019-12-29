@@ -1,6 +1,6 @@
 package typings.actionsDashOnDashGoogle
 
-import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDOTintentDOTTRANSACTION_REQUIREMENTS_CHECK
+import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsTransactionsV3TransactionRequirementsCheckSpec
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2TransactionRequirementsCheckSpec
 import typings.actionsDashOnDashGoogle.distServiceActionssdkConversationHelperHelperMod.Helper
@@ -19,7 +19,7 @@ object distServiceActionssdkConversationHelperTransactionRequirementsMod extends
     * @public
     */
   class TransactionRequirements () extends Helper[
-          actionsDOTintentDOTTRANSACTION_REQUIREMENTS_CHECK, 
+          actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK, 
           GoogleActionsV2TransactionRequirementsCheckSpec | GoogleActionsTransactionsV3TransactionRequirementsCheckSpec
         ] {
     def this(options: GoogleActionsTransactionsV3TransactionRequirementsCheckSpec) = this()

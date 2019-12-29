@@ -1,7 +1,7 @@
 package typings.promiseDashFs
 
 import typings.node.BufferEncoding
-import typings.promiseDashFs.promiseDashFsNumbers.`false`
+import typings.promiseDashFs.promiseDashFsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

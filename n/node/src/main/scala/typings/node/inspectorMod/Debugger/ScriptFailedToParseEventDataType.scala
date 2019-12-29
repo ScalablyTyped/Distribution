@@ -31,7 +31,7 @@ trait ScriptFailedToParseEventDataType extends js.Object {
   /**
     * Content hash of the script.
     */
-  var hash: java.lang.String
+  var hash: String
   /**
     * True, if this script is ES6 module.
     */
@@ -47,7 +47,7 @@ trait ScriptFailedToParseEventDataType extends js.Object {
   /**
     * URL of source map associated with script (if any).
     */
-  var sourceMapURL: js.UndefOr[java.lang.String] = js.undefined
+  var sourceMapURL: js.UndefOr[String] = js.undefined
   /**
     * JavaScript top stack frame of where the script parsed event was triggered if available.
     * @experimental
@@ -64,7 +64,7 @@ trait ScriptFailedToParseEventDataType extends js.Object {
   /**
     * URL or name of the script parsed (if any).
     */
-  var url: java.lang.String
+  var url: String
 }
 
 object ScriptFailedToParseEventDataType {
@@ -73,16 +73,16 @@ object ScriptFailedToParseEventDataType {
     endColumn: Double,
     endLine: Double,
     executionContextId: ExecutionContextId,
-    hash: java.lang.String,
+    hash: String,
     scriptId: ScriptId,
     startColumn: Double,
     startLine: Double,
-    url: java.lang.String,
+    url: String,
     executionContextAuxData: js.Object = null,
     hasSourceURL: js.UndefOr[Boolean] = js.undefined,
     isModule: js.UndefOr[Boolean] = js.undefined,
     length: Int | Double = null,
-    sourceMapURL: java.lang.String = null,
+    sourceMapURL: String = null,
     stackTrace: StackTrace = null
   ): ScriptFailedToParseEventDataType = {
     val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], executionContextId = executionContextId.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])

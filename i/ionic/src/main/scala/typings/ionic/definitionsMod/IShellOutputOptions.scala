@@ -1,6 +1,7 @@
 package typings.ionic.definitionsMod
 
 import typings.node.NodeJS.ProcessEnv
+import typings.node.childUnderscoreProcessMod.SerializationType
 import typings.node.childUnderscoreProcessMod.StdioOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,6 +23,7 @@ object IShellOutputOptions {
     fatalOnError: js.UndefOr[Boolean] = js.undefined,
     fatalOnNotFound: js.UndefOr[Boolean] = js.undefined,
     gid: Int | Double = null,
+    serialization: SerializationType = null,
     shell: Boolean | String = null,
     showCommand: js.UndefOr[Boolean] = js.undefined,
     showError: js.UndefOr[Boolean] = js.undefined,
@@ -39,6 +41,7 @@ object IShellOutputOptions {
     if (!js.isUndefined(fatalOnError)) __obj.updateDynamic("fatalOnError")(fatalOnError.asInstanceOf[js.Any])
     if (!js.isUndefined(fatalOnNotFound)) __obj.updateDynamic("fatalOnNotFound")(fatalOnNotFound.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (!js.isUndefined(showCommand)) __obj.updateDynamic("showCommand")(showCommand.asInstanceOf[js.Any])
     if (!js.isUndefined(showError)) __obj.updateDynamic("showError")(showError.asInstanceOf[js.Any])

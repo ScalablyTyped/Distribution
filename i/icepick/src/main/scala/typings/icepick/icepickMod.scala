@@ -1,6 +1,5 @@
 package typings.icepick
 
-import typings.icepick.icepickMod.IcepickWrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

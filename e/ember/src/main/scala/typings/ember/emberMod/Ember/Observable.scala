@@ -1,6 +1,7 @@
 package typings.ember.emberMod.Ember
 
 import org.scalablytyped.runtime.TopLevel
+import typings.atEmberObject.coreMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Observable
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.atEmberObject.observableMod.Observable, 
-        typings.atEmberObject.coreMod.default
-      ]
+      typings.atEmberObject.mixinMod.default[typings.atEmberObject.observableMod.Observable, default]
     ]
 

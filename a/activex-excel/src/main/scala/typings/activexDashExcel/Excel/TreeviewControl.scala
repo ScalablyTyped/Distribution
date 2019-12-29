@@ -11,7 +11,8 @@ class TreeviewControl protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var Drilled: js.Any = js.native
-  var `Excel.TreeviewControl_typekey`: TreeviewControl = js.native
+  @JSName("Excel.TreeviewControl_typekey")
+  var ExcelDotTreeviewControl_typekey: TreeviewControl = js.native
   var Hidden: SafeArray[SafeArray[String]] = js.native
   val Parent: js.Any = js.native
 }

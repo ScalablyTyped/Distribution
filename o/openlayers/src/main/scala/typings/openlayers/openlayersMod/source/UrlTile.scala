@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.UrlTile")
 @js.native
-class UrlTile protected ()
-  extends typings.openlayers.openlayersMod.source.Tile {
+class UrlTile protected () extends Tile {
   /**
     * @classdesc
     * Base class for sources providing tiles divided into a tile grid over http.

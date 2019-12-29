@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.PivotLinkSize.large
-import typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.PivotLinkSize.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

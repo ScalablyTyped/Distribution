@@ -1,6 +1,5 @@
 package typings.nodeDashJsonDashDb
 
-import typings.nodeDashJsonDashDb.distLibErrorsMod.NestedError
 import typings.std.Error
 import typings.std.Number
 import scala.scalajs.js

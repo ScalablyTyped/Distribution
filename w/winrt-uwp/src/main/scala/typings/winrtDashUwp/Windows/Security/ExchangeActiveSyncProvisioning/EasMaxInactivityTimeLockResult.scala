@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult.canBeCompliant
-import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult.compliant
-import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult.invalidParameter
-import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult.notEvaluated
-import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult.requestedPolicyIsStricter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

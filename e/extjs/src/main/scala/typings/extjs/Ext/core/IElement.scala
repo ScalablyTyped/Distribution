@@ -8,6 +8,7 @@ import typings.extjs.Ext.dd.IDD
 import typings.extjs.Ext.dd.IDDProxy
 import typings.extjs.Ext.dd.IDDTarget
 import typings.extjs.Ext.dom.IAbstractElement
+import typings.extjs.Ext.util.IKeyMap
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,7 @@ trait IElement extends IAbstractElement {
   		*/
   var addClsOnClick: js.UndefOr[
     js.Function3[
-      /* className */ js.UndefOr[java.lang.String], 
+      /* className */ js.UndefOr[String], 
       /* testFn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       this.type
@@ -36,7 +37,7 @@ trait IElement extends IAbstractElement {
   		*/
   var addClsOnFocus: js.UndefOr[
     js.Function3[
-      /* className */ js.UndefOr[java.lang.String], 
+      /* className */ js.UndefOr[String], 
       /* testFn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       this.type
@@ -50,7 +51,7 @@ trait IElement extends IAbstractElement {
   		*/
   var addClsOnOver: js.UndefOr[
     js.Function3[
-      /* className */ js.UndefOr[java.lang.String], 
+      /* className */ js.UndefOr[String], 
       /* testFn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       this.type
@@ -67,14 +68,14 @@ trait IElement extends IAbstractElement {
       /* key */ js.UndefOr[js.Any], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.util.IKeyMap
+      IKeyMap
     ]
   ] = js.undefined
   /** [Method] Creates a KeyMap for this element
   		* @param config Object The KeyMap config. See Ext.util.KeyMap for more details
   		* @returns Ext.util.KeyMap The KeyMap created
   		*/
-  var addKeyMap: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], typings.extjs.Ext.util.IKeyMap]] = js.undefined
+  var addKeyMap: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], IKeyMap]] = js.undefined
   /** [Method] Shorthand for on
   		* @param eventName String The name of event to handle.
   		* @param fn Function The handler function the event invokes. This function is passed the following parameters: evt : EventObject The EventObject describing the event. el : HtmlElement The DOM element which was the target of the event. Note that this may be filtered by using the delegate option. o : Object The options object from the call that setup the listener.
@@ -84,7 +85,7 @@ trait IElement extends IAbstractElement {
   		*/
   var addListener: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
+      /* eventName */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
@@ -106,7 +107,7 @@ trait IElement extends IAbstractElement {
   		* @param class String A base CSS class to apply to the containing wrapper element. Note that there are a number of CSS rules that are dependent on this name to make the overall effect work, so if you supply an alternate base class, make sure you also supply all of the necessary rules.
   		* @returns Ext.dom.Element The outermost wrapping element of the created box structure.
   		*/
-  var boxWrap: js.UndefOr[js.Function1[/* clazz */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var boxWrap: js.UndefOr[js.Function1[/* clazz */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] When an element is moved around in the DOM or is hidden using display none it loses layout and therefore all scrol
   		* @returns Function A function which will restore all descentant elements of this Element to their scroll positions recorded when this function was executed. Be aware that the returned function is a closure which has captured the scope of cacheScrollValues, so take care to derefence it as soon as not needed - if is it is a var it will drop out of scope, and the reference will be freed.
   		*/
@@ -131,7 +132,7 @@ trait IElement extends IAbstractElement {
   		* @param value String The value to use for the left, right, top, bottom. You could use 'auto'.
   		* @returns Ext.dom.Element this
   		*/
-  var clearPositioning: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var clearPositioning: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Store the current overflow setting and clip overflow on the element  use unclip to remove Defined in override Ext d
   		* @returns Ext.dom.Element this
   		*/
@@ -158,7 +159,7 @@ trait IElement extends IAbstractElement {
   		* @param display String What to set display to when visible
   		* @returns Ext.dom.Element this
   		*/
-  var enableDisplayMode: js.UndefOr[js.Function1[/* display */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var enableDisplayMode: js.UndefOr[js.Function1[/* display */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Fade an element in from transparent to opaque
   		* @param options Object Object literal with any of the Ext.fx.Anim config options
   		* @returns Ext.Element The Element
@@ -186,7 +187,7 @@ trait IElement extends IAbstractElement {
   		*/
   var frame: js.UndefOr[
     js.Function3[
-      /* color */ js.UndefOr[java.lang.String], 
+      /* color */ js.UndefOr[String], 
       /* count */ js.UndefOr[Double], 
       /* options */ js.UndefOr[js.Any], 
       this.type
@@ -198,11 +199,7 @@ trait IElement extends IAbstractElement {
   		* @returns String The attribute value
   		*/
   var getAttributeNS: js.UndefOr[
-    js.Function2[
-      /* namespace */ js.UndefOr[java.lang.String], 
-      /* name */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ]
+    js.Function2[/* namespace */ js.UndefOr[String], /* name */ js.UndefOr[String], String]
   ] = js.undefined
   /** [Method] Gets the bottom Y coordinate of the element element Y position  element height  Defined in override Ext dom Elemen
   		* @param local Boolean True to get the local css position instead of page coordinate
@@ -220,9 +217,9 @@ trait IElement extends IAbstractElement {
   		*/
   var getColor: js.UndefOr[
     js.Function3[
-      /* attr */ js.UndefOr[java.lang.String], 
-      /* defaultValue */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
+      /* attr */ js.UndefOr[String], 
+      /* defaultValue */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -238,7 +235,7 @@ trait IElement extends IAbstractElement {
   		* @param sides String
   		* @returns Number
   		*/
-  var getFrameWidth: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var getFrameWidth: js.UndefOr[js.Function1[/* sides */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Gets the left X coordinate Defined in override Ext dom Element_position
   		* @param local Boolean True to get the local css position instead of page coordinate
   		* @returns Number
@@ -299,7 +296,7 @@ trait IElement extends IAbstractElement {
   		*/
   var getTextWidth: js.UndefOr[
     js.Function3[
-      /* text */ js.UndefOr[java.lang.String], 
+      /* text */ js.UndefOr[String], 
       /* min */ js.UndefOr[Double], 
       /* max */ js.UndefOr[Double], 
       Double
@@ -328,11 +325,7 @@ trait IElement extends IAbstractElement {
   		* @returns Ext.dom.Element The Element
   		*/
   var ghost: js.UndefOr[
-    js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], this.type]
   ] = js.undefined
   /** [Method] Hide this element  Uses display mode to determine whether to use display or visibility
   		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
@@ -346,11 +339,7 @@ trait IElement extends IAbstractElement {
   		* @returns Ext.dom.Element The Element
   		*/
   var highlight: js.UndefOr[
-    js.Function2[
-      /* color */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* color */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], this.type]
   ] = js.undefined
   /** [Method] Sets up event handlers to call the passed functions when the mouse is moved into and out of the Element
   		* @param overFn Function The function to call when the mouse enters the Element.
@@ -376,7 +365,7 @@ trait IElement extends IAbstractElement {
   		*/
   var initDD: js.UndefOr[
     js.Function3[
-      /* group */ js.UndefOr[java.lang.String], 
+      /* group */ js.UndefOr[String], 
       /* config */ js.UndefOr[js.Any], 
       /* overrides */ js.UndefOr[js.Any], 
       IDD
@@ -390,7 +379,7 @@ trait IElement extends IAbstractElement {
   		*/
   var initDDProxy: js.UndefOr[
     js.Function3[
-      /* group */ js.UndefOr[java.lang.String], 
+      /* group */ js.UndefOr[String], 
       /* config */ js.UndefOr[js.Any], 
       /* overrides */ js.UndefOr[js.Any], 
       IDDProxy
@@ -404,7 +393,7 @@ trait IElement extends IAbstractElement {
   		*/
   var initDDTarget: js.UndefOr[
     js.Function3[
-      /* group */ js.UndefOr[java.lang.String], 
+      /* group */ js.UndefOr[String], 
       /* config */ js.UndefOr[js.Any], 
       /* overrides */ js.UndefOr[js.Any], 
       IDDTarget
@@ -448,11 +437,7 @@ trait IElement extends IAbstractElement {
   		*/
   @JSName("mask")
   var mask_IElement: js.UndefOr[
-    js.Function2[
-      /* msg */ js.UndefOr[java.lang.String], 
-      /* msgCls */ js.UndefOr[java.lang.String], 
-      this.type
-    ]
+    js.Function2[/* msg */ js.UndefOr[String], /* msgCls */ js.UndefOr[String], this.type]
   ] = js.undefined
   /** [Method] Monitors this Element for the mouse leaving
   		* @param delay Number The delay in milliseconds to wait for possible mouse re-entry before calling the handler function.
@@ -493,7 +478,7 @@ trait IElement extends IAbstractElement {
   		*/
   var on: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[java.lang.String], 
+      /* eventName */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
@@ -501,7 +486,7 @@ trait IElement extends IAbstractElement {
     ]
   ] = js.undefined
   /** [Property] (String) */
-  var originalDisplay: js.UndefOr[java.lang.String] = js.undefined
+  var originalDisplay: js.UndefOr[String] = js.undefined
   /** [Method] Creates a pause before any subsequent queued effects begin
   		* @param seconds Number The length of time to pause (in seconds)
   		* @returns Ext.Element The Element
@@ -515,7 +500,7 @@ trait IElement extends IAbstractElement {
   		*/
   var position: js.UndefOr[
     js.Function4[
-      /* pos */ js.UndefOr[java.lang.String], 
+      /* pos */ js.UndefOr[String], 
       /* zIndex */ js.UndefOr[Double], 
       /* x */ js.UndefOr[Double], 
       /* y */ js.UndefOr[Double], 
@@ -536,11 +521,7 @@ trait IElement extends IAbstractElement {
   		* @param observable Object Any object that extends Ext.util.Observable that will provide the context for firing the relayed event
   		*/
   var relayEvent: js.UndefOr[
-    js.Function2[
-      /* eventName */ js.UndefOr[java.lang.String], 
-      /* observable */ js.UndefOr[js.Any], 
-      Unit
-    ]
+    js.Function2[/* eventName */ js.UndefOr[String], /* observable */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Removes all previous added listeners from this element
   		* @returns Ext.dom.Element this
@@ -554,7 +535,7 @@ trait IElement extends IAbstractElement {
   		*/
   var removeListener: js.UndefOr[
     js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
+      /* eventName */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       this.type
@@ -582,7 +563,7 @@ trait IElement extends IAbstractElement {
   		*/
   var scroll: js.UndefOr[
     js.Function3[
-      /* direction */ js.UndefOr[java.lang.String], 
+      /* direction */ js.UndefOr[String], 
       /* distance */ js.UndefOr[Double], 
       /* animate */ js.UndefOr[js.Any], 
       Boolean
@@ -626,7 +607,7 @@ trait IElement extends IAbstractElement {
   		*/
   var scrollTo: js.UndefOr[
     js.Function3[
-      /* side */ js.UndefOr[java.lang.String], 
+      /* side */ js.UndefOr[String], 
       /* value */ js.UndefOr[Double], 
       /* animate */ js.UndefOr[js.Any], 
       this.type
@@ -750,11 +731,7 @@ trait IElement extends IAbstractElement {
   		* @returns Ext.dom.Element The Element
   		*/
   var slideIn: js.UndefOr[
-    js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], this.type]
   ] = js.undefined
   /** [Method] Slides the element out of view
   		* @param anchor String One of the valid Ext.fx.Anim anchor positions (defaults to top: 't')
@@ -762,11 +739,7 @@ trait IElement extends IAbstractElement {
   		* @returns Ext.dom.Element The Element
   		*/
   var slideOut: js.UndefOr[
-    js.Function2[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* options */ js.UndefOr[js.Any], 
-      this.type
-    ]
+    js.Function2[/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], this.type]
   ] = js.undefined
   /** [Method] Stops the specified event s from bubbling and optionally prevents the default action
   		* @param eventName String/String[] an event / array of events to stop from bubbling
@@ -798,7 +771,7 @@ trait IElement extends IAbstractElement {
   		*/
   var un: js.UndefOr[
     js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
+      /* eventName */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       this.type
@@ -821,7 +794,7 @@ trait IElement extends IAbstractElement {
   @JSName("update")
   var update_IElement: js.UndefOr[
     js.Function3[
-      /* html */ js.UndefOr[java.lang.String], 
+      /* html */ js.UndefOr[String], 
       /* loadScripts */ js.UndefOr[Boolean], 
       /* callback */ js.UndefOr[js.Any], 
       this.type
@@ -837,72 +810,72 @@ object IElement {
     OFFSETS: Int | Double = null,
     VISIBILITY: Int | Double = null,
     addCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    addClsOnClick: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    addClsOnFocus: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    addClsOnOver: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    addKeyListener: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.util.IKeyMap = null,
-    addKeyMap: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.util.IKeyMap = null,
-    addListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
+    addClsOnClick: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    addClsOnFocus: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    addClsOnOver: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    addKeyListener: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IKeyMap = null,
+    addKeyMap: /* config */ js.UndefOr[js.Any] => IKeyMap = null,
+    addListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    animate: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    appendChild: (/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.core.IElement = null,
-    appendTo: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
+    animate: /* config */ js.UndefOr[js.Any] => IElement = null,
+    appendChild: (/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => IElement = null,
+    appendTo: /* el */ js.UndefOr[js.Any] => IElement = null,
     applyStyles: /* styles */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
     autoBoxAdjust: js.UndefOr[Boolean] = js.undefined,
-    blur: () => typings.extjs.Ext.core.IElement = null,
-    boxWrap: /* clazz */ js.UndefOr[java.lang.String] => typings.extjs.Ext.core.IElement = null,
+    blur: () => IElement = null,
+    boxWrap: /* clazz */ js.UndefOr[String] => IElement = null,
     cacheScrollValues: () => _ = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     center: /* centerIn */ js.UndefOr[js.Any] => Unit = null,
-    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    child: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     clean: /* forceReclean */ js.UndefOr[Boolean] => Unit = null,
-    clearListeners: () => typings.extjs.Ext.core.IElement = null,
-    clearOpacity: () => typings.extjs.Ext.core.IElement = null,
-    clearPositioning: /* value */ js.UndefOr[java.lang.String] => typings.extjs.Ext.core.IElement = null,
-    clip: () => typings.extjs.Ext.core.IElement = null,
+    clearListeners: () => IElement = null,
+    clearOpacity: () => IElement = null,
+    clearPositioning: /* value */ js.UndefOr[String] => IElement = null,
+    clip: () => IElement = null,
     config: js.Any = null,
     contains: /* el */ js.UndefOr[js.Any] => Boolean = null,
-    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.core.IElement = null,
-    createProxy: (/* config */ js.UndefOr[js.Any], /* renderTo */ js.UndefOr[js.Any], /* matchBox */ js.UndefOr[Boolean]) => typings.extjs.Ext.core.IElement = null,
-    createShim: () => typings.extjs.Ext.core.IElement = null,
-    defaultUnit: java.lang.String = null,
+    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => IElement = null,
+    createProxy: (/* config */ js.UndefOr[js.Any], /* renderTo */ js.UndefOr[js.Any], /* matchBox */ js.UndefOr[Boolean]) => IElement = null,
+    createShim: () => IElement = null,
+    defaultUnit: String = null,
     destroy: () => Unit = null,
     dom: HTMLElement = null,
-    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    enableDisplayMode: /* display */ js.UndefOr[java.lang.String] => typings.extjs.Ext.core.IElement = null,
-    extend: java.lang.String = null,
-    fadeIn: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    fadeOut: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    findParent: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
-    findParentNode: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
-    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    focus: /* defer */ js.UndefOr[Double] => typings.extjs.Ext.core.IElement = null,
+    down: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    enableDisplayMode: /* display */ js.UndefOr[String] => IElement = null,
+    extend: String = null,
+    fadeIn: /* options */ js.UndefOr[js.Any] => IElement = null,
+    fadeOut: /* options */ js.UndefOr[js.Any] => IElement = null,
+    findParent: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
+    findParentNode: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
+    first: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    focus: /* defer */ js.UndefOr[Double] => IElement = null,
     focusable: () => Boolean = null,
-    frame: (/* color */ js.UndefOr[java.lang.String], /* count */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
+    frame: (/* color */ js.UndefOr[String], /* count */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => IElement = null,
     getActiveElement: () => HTMLElement = null,
-    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getAttributeNS: (/* namespace */ js.UndefOr[java.lang.String], /* name */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    getAttribute: (/* name */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => String = null,
+    getAttributeNS: (/* namespace */ js.UndefOr[String], /* name */ js.UndefOr[String]) => String = null,
+    getBorderWidth: /* side */ js.UndefOr[String] => Double = null,
     getBottom: /* local */ js.UndefOr[Boolean] => Double = null,
-    getById: (/* id */ js.UndefOr[java.lang.String], /* asDom */ js.UndefOr[Boolean]) => Unit = null,
+    getById: (/* id */ js.UndefOr[String], /* asDom */ js.UndefOr[Boolean]) => Unit = null,
     getCenterXY: () => Array = null,
-    getColor: (/* attr */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String]) => Unit = null,
+    getColor: (/* attr */ js.UndefOr[String], /* defaultValue */ js.UndefOr[String], /* prefix */ js.UndefOr[String]) => Unit = null,
     getComputedHeight: () => Double = null,
     getComputedWidth: () => Double = null,
-    getFrameWidth: /* sides */ js.UndefOr[java.lang.String] => Double = null,
+    getFrameWidth: /* sides */ js.UndefOr[String] => Double = null,
     getHTML: () => Unit = null,
     getHeight: /* contentHeight */ js.UndefOr[Boolean] => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLeft: /* local */ js.UndefOr[Boolean] => Double = null,
     getLoader: () => IElementLoader = null,
     getLocalX: () => Double = null,
     getLocalXY: () => Array = null,
     getLocalY: () => Double = null,
-    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
-    getPadding: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    getMargin: /* sides */ js.UndefOr[String] => _ = null,
+    getPadding: /* side */ js.UndefOr[String] => Double = null,
     getPageBox: /* asRegion */ js.UndefOr[Boolean] => _ = null,
     getPositioning: /* autoPx */ js.UndefOr[Boolean] => _ = null,
     getRight: /* local */ js.UndefOr[Boolean] => Double = null,
@@ -912,7 +885,7 @@ object IElement {
     getSize: /* contentSize */ js.UndefOr[Boolean] => _ = null,
     getStyle: (/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[Boolean]) => _ = null,
     getStyleSize: () => _ = null,
-    getTextWidth: (/* text */ js.UndefOr[java.lang.String], /* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double]) => Double = null,
+    getTextWidth: (/* text */ js.UndefOr[String], /* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double]) => Double = null,
     getTop: /* local */ js.UndefOr[Boolean] => Double = null,
     getValue: /* asNumber */ js.UndefOr[Boolean] => _ = null,
     getViewSize: () => _ = null,
@@ -920,106 +893,106 @@ object IElement {
     getX: () => Double = null,
     getXY: () => Array = null,
     getY: () => Double = null,
-    ghost: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    hasCls: /* className */ js.UndefOr[java.lang.String] => Boolean = null,
-    hide: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    highlight: (/* color */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    hover: (/* overFn */ js.UndefOr[js.Any], /* outFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    id: java.lang.String = null,
+    ghost: (/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    hasCls: /* className */ js.UndefOr[String] => Boolean = null,
+    hide: /* animate */ js.UndefOr[js.Any] => IElement = null,
+    highlight: (/* color */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    hover: (/* overFn */ js.UndefOr[js.Any], /* outFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    initDD: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDD = null,
-    initDDProxy: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDProxy = null,
-    initDDTarget: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDTarget = null,
-    insertAfter: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    insertBefore: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    insertFirst: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.core.IElement = null,
-    is: /* selector */ js.UndefOr[java.lang.String] => Boolean = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IElement = null,
+    initDD: (/* group */ js.UndefOr[String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDD = null,
+    initDDProxy: (/* group */ js.UndefOr[String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDProxy = null,
+    initDDTarget: (/* group */ js.UndefOr[String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDTarget = null,
+    insertAfter: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertBefore: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertFirst: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertHtml: (/* where */ js.UndefOr[String], /* html */ js.UndefOr[String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => IElement = null,
+    is: /* selector */ js.UndefOr[String] => Boolean = null,
     isBorderBox: () => Boolean = null,
     isDisplayed: () => Boolean = null,
     isFocusable: /* asFocusEl */ js.UndefOr[js.Any] => Boolean = null,
     isMasked: () => Boolean = null,
     isScrollable: () => Boolean = null,
-    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean = null,
-    isTransparent: /* prop */ js.UndefOr[java.lang.String] => Boolean = null,
+    isStyle: (/* style */ js.UndefOr[String], /* value */ js.UndefOr[String]) => Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[String] => Boolean = null,
     isVisible: /* deep */ js.UndefOr[Boolean] => Boolean = null,
-    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    load: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    mask: (/* msg */ js.UndefOr[java.lang.String], /* msgCls */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.core.IElement = null,
+    last: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    load: /* options */ js.UndefOr[js.Any] => IElement = null,
+    mask: (/* msg */ js.UndefOr[String], /* msgCls */ js.UndefOr[String]) => IElement = null,
     mixins: js.Any = null,
     monitorMouseLeave: (/* delay */ js.UndefOr[Double], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    moveTo: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
+    moveTo: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
     needsTabIndex: () => Unit = null,
-    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    on: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    originalDisplay: java.lang.String = null,
-    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    pause: /* seconds */ js.UndefOr[Double] => typings.extjs.Ext.core.IElement = null,
-    position: (/* pos */ js.UndefOr[java.lang.String], /* zIndex */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
-    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    puff: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    purgeAllListeners: () => typings.extjs.Ext.core.IElement = null,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
+    next: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    on: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    originalDisplay: String = null,
+    parent: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    pause: /* seconds */ js.UndefOr[Double] => IElement = null,
+    position: (/* pos */ js.UndefOr[String], /* zIndex */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
+    prev: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    puff: /* options */ js.UndefOr[js.Any] => IElement = null,
+    purgeAllListeners: () => IElement = null,
+    query: /* selector */ js.UndefOr[String] => Array = null,
     radioCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    relayEvent: (/* eventName */ js.UndefOr[java.lang.String], /* observable */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvent: (/* eventName */ js.UndefOr[String], /* observable */ js.UndefOr[js.Any]) => Unit = null,
     remove: () => Unit = null,
-    removeAllListeners: () => typings.extjs.Ext.core.IElement = null,
+    removeAllListeners: () => IElement = null,
     removeCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
     repaint: () => typings.extjs.Ext.dom.IElement = null,
-    replace: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    replaceCls: (/* oldClassName */ js.UndefOr[java.lang.String], /* newClassName */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.dom.IElement = null,
-    replaceWith: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
+    replace: /* el */ js.UndefOr[js.Any] => IElement = null,
+    replaceCls: (/* oldClassName */ js.UndefOr[String], /* newClassName */ js.UndefOr[String]) => typings.extjs.Ext.dom.IElement = null,
+    replaceWith: /* el */ js.UndefOr[js.Any] => IElement = null,
     requires: Array = null,
-    scale: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    scroll: (/* direction */ js.UndefOr[java.lang.String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Boolean = null,
-    scrollBy: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    scrollIntoView: (/* container */ js.UndefOr[js.Any], /* hscroll */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], /* highlight */ js.UndefOr[Boolean]) => typings.extjs.Ext.core.IElement = null,
-    scrollTo: (/* side */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    select: (/* selector */ js.UndefOr[java.lang.String], /* unique */ js.UndefOr[Boolean]) => ICompositeElement = null,
-    selectable: () => typings.extjs.Ext.core.IElement = null,
+    scale: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    scroll: (/* direction */ js.UndefOr[String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Boolean = null,
+    scrollBy: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    scrollIntoView: (/* container */ js.UndefOr[js.Any], /* hscroll */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], /* highlight */ js.UndefOr[Boolean]) => IElement = null,
+    scrollTo: (/* side */ js.UndefOr[String], /* value */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    select: (/* selector */ js.UndefOr[String], /* unique */ js.UndefOr[Boolean]) => ICompositeElement = null,
+    selectable: () => IElement = null,
     self: IClass = null,
-    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => String = null,
     set: (/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.IElement = null,
-    setBottom: /* bottom */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    setBounds: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    setDisplayed: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    setHTML: /* html */ js.UndefOr[java.lang.String] => typings.extjs.Ext.IElement = null,
+    setBottom: /* bottom */ js.UndefOr[js.Any] => IElement = null,
+    setBounds: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setDisplayed: /* value */ js.UndefOr[js.Any] => IElement = null,
+    setHTML: /* html */ js.UndefOr[String] => typings.extjs.Ext.IElement = null,
     setHeight: /* height */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    setLeft: /* left */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    setLeftTop: (/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    setLocation: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    setOpacity: (/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    setPositioning: /* posCfg */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    setRight: /* right */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    setScrollLeft: /* left */ js.UndefOr[Double] => typings.extjs.Ext.core.IElement = null,
-    setScrollTop: /* top */ js.UndefOr[Double] => typings.extjs.Ext.core.IElement = null,
+    setLeft: /* left */ js.UndefOr[js.Any] => IElement = null,
+    setLeftTop: (/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any]) => IElement = null,
+    setLocation: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setOpacity: (/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setPositioning: /* posCfg */ js.UndefOr[js.Any] => IElement = null,
+    setRight: /* right */ js.UndefOr[js.Any] => IElement = null,
+    setScrollLeft: /* left */ js.UndefOr[Double] => IElement = null,
+    setScrollTop: /* top */ js.UndefOr[Double] => IElement = null,
     setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.dom.IElement = null,
-    setTop: /* top */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    setVisible: (/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => typings.extjs.Ext.dom.IElement = null,
+    setTop: /* top */ js.UndefOr[js.Any] => IElement = null,
+    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => IElement = null,
+    setVisible: (/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any]) => IElement = null,
     setWidth: /* width */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    shift: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    show: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
+    shift: /* options */ js.UndefOr[js.Any] => IElement = null,
+    show: /* animate */ js.UndefOr[js.Any] => IElement = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    slideIn: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    slideOut: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
+    slideIn: (/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => IElement = null,
+    slideOut: (/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => IElement = null,
     statics: js.Any = null,
-    swallowEvent: (/* eventName */ js.UndefOr[js.Any], /* preventDefault */ js.UndefOr[Boolean]) => typings.extjs.Ext.core.IElement = null,
-    switchOff: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    toggle: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.core.IElement = null,
-    toggleCls: /* className */ js.UndefOr[java.lang.String] => typings.extjs.Ext.dom.IElement = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
-    unclip: () => typings.extjs.Ext.core.IElement = null,
+    swallowEvent: (/* eventName */ js.UndefOr[js.Any], /* preventDefault */ js.UndefOr[Boolean]) => IElement = null,
+    switchOff: /* options */ js.UndefOr[js.Any] => IElement = null,
+    toggle: /* animate */ js.UndefOr[js.Any] => IElement = null,
+    toggleCls: /* className */ js.UndefOr[String] => typings.extjs.Ext.dom.IElement = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IElement = null,
+    unclip: () => IElement = null,
     unmask: () => Unit = null,
-    unselectable: () => typings.extjs.Ext.core.IElement = null,
-    up: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.IElement = null,
-    update: (/* html */ js.UndefOr[java.lang.String], /* loadScripts */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any]) => typings.extjs.Ext.core.IElement = null,
+    unselectable: () => IElement = null,
+    up: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.IElement = null,
+    update: (/* html */ js.UndefOr[String], /* loadScripts */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any]) => IElement = null,
     uses: Array = null,
-    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[java.lang.String]) => _ = null
+    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[String]) => _ = null
   ): IElement = {
     val __obj = js.Dynamic.literal()
     if (ASCLASS != null) __obj.updateDynamic("ASCLASS")(ASCLASS.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.gulpDashInsert
 
-import typings.gulpDashInsert.gulpDashInsertMod.Transformer
 import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.vinylMod.File
 import scala.scalajs.js

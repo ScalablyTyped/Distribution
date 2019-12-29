@@ -1,14 +1,14 @@
 package typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated extensions/v1beta1/DaemonSet is not supported by Kubernetes 1.16+ clusters. Use
-  * apps/v1/DaemonSet instead.
+  * @deprecated extensions/v1beta1/DaemonSet is deprecated by apps/v1/DaemonSet and not supported
+  * by Kubernetes v1.16+ clusters.
   *
   * DaemonSet represents the configuration of a daemon set.
   */
@@ -19,7 +19,7 @@ trait DaemonSet extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `extensions/v1beta1`
+  val apiVersion: extensionsSlashv1beta1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -48,7 +48,7 @@ trait DaemonSet extends js.Object {
 object DaemonSet {
   @scala.inline
   def apply(
-    apiVersion: `extensions/v1beta1`,
+    apiVersion: extensionsSlashv1beta1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSet,
     metadata: ObjectMeta,
     spec: DaemonSetSpec,

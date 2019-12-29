@@ -1,7 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.atAngularCoreMod.InjectFlags.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

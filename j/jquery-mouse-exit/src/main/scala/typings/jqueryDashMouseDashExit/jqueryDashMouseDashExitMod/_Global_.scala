@@ -1,7 +1,6 @@
 package typings.jqueryDashMouseDashExit.jqueryDashMouseDashExitMod
 
 import typings.jquery.JQuery.TriggeredEvent
-import typings.jqueryDashMouseDashExit.jqueryDashMouseDashExitMod._Global_.JQuery
 import typings.jqueryDashMouseDashExit.jqueryDashMouseDashExitStrings.mouseExit
 import typings.std.HTMLElement
 import scala.scalajs.js

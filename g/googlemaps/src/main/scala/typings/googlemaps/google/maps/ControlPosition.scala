@@ -1,18 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.ControlPosition.BOTTOM_CENTER
-import typings.googlemaps.google.maps.ControlPosition.BOTTOM_LEFT
-import typings.googlemaps.google.maps.ControlPosition.BOTTOM_RIGHT
-import typings.googlemaps.google.maps.ControlPosition.LEFT_BOTTOM
-import typings.googlemaps.google.maps.ControlPosition.LEFT_CENTER
-import typings.googlemaps.google.maps.ControlPosition.LEFT_TOP
-import typings.googlemaps.google.maps.ControlPosition.RIGHT_BOTTOM
-import typings.googlemaps.google.maps.ControlPosition.RIGHT_CENTER
-import typings.googlemaps.google.maps.ControlPosition.RIGHT_TOP
-import typings.googlemaps.google.maps.ControlPosition.TOP_CENTER
-import typings.googlemaps.google.maps.ControlPosition.TOP_LEFT
-import typings.googlemaps.google.maps.ControlPosition.TOP_RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

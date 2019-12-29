@@ -1,21 +1,21 @@
 package typings.leafletDashDraw.leafletMod.Draw
 
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:created`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:deleted`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:deletestart`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:deletestop`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:drawstart`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:drawstop`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:drawvertex`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:edited`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:editmove`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:editresize`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:editstart`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:editstop`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:editvertex`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:markercontext`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:toolbarclosed`
-import typings.leafletDashDraw.leafletDashDrawStrings.`draw:toolbaropened`
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColoncreated
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColondeleted
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColondeletestart
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColondeletestop
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColondrawstart
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColondrawstop
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColondrawvertex
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColonedited
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColoneditmove
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColoneditresize
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColoneditstart
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColoneditstop
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColoneditvertex
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColonmarkercontext
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColontoolbarclosed
+import typings.leafletDashDraw.leafletDashDrawStrings.drawColontoolbaropened
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,21 +23,21 @@ import scala.scalajs.js.annotation._
 @JSImport("leaflet", "Draw.Event")
 @js.native
 object Event extends js.Object {
-  val CREATED: `draw:created` = js.native
-  val DELETED: `draw:deleted` = js.native
-  val DELETESTART: `draw:deletestart` = js.native
-  val DELETESTOP: `draw:deletestop` = js.native
-  val DRAWSTART: `draw:drawstart` = js.native
-  val DRAWSTOP: `draw:drawstop` = js.native
-  val DRAWVERTEX: `draw:drawvertex` = js.native
-  val EDITED: `draw:edited` = js.native
-  val EDITMOVE: `draw:editmove` = js.native
-  val EDITRESIZE: `draw:editresize` = js.native
-  val EDITSTART: `draw:editstart` = js.native
-  val EDITSTOP: `draw:editstop` = js.native
-  val EDITVERTEX: `draw:editvertex` = js.native
-  val MARKERCONTEXT: `draw:markercontext` = js.native
-  val TOOLBARCLOSED: `draw:toolbarclosed` = js.native
-  val TOOLBAROPENED: `draw:toolbaropened` = js.native
+  val CREATED: drawColoncreated = js.native
+  val DELETED: drawColondeleted = js.native
+  val DELETESTART: drawColondeletestart = js.native
+  val DELETESTOP: drawColondeletestop = js.native
+  val DRAWSTART: drawColondrawstart = js.native
+  val DRAWSTOP: drawColondrawstop = js.native
+  val DRAWVERTEX: drawColondrawvertex = js.native
+  val EDITED: drawColonedited = js.native
+  val EDITMOVE: drawColoneditmove = js.native
+  val EDITRESIZE: drawColoneditresize = js.native
+  val EDITSTART: drawColoneditstart = js.native
+  val EDITSTOP: drawColoneditstop = js.native
+  val EDITVERTEX: drawColoneditvertex = js.native
+  val MARKERCONTEXT: drawColonmarkercontext = js.native
+  val TOOLBARCLOSED: drawColontoolbarclosed = js.native
+  val TOOLBAROPENED: drawColontoolbaropened = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.incrementalDashDom
 
-import typings.incrementalDashDom.incrementalDashDomMod.NameOrCtorDef
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.Node

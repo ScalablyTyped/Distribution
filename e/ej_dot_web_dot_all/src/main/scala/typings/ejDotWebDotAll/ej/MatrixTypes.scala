@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.MatrixTypes.Identity
-import typings.ejDotWebDotAll.ej.MatrixTypes.Scaling
-import typings.ejDotWebDotAll.ej.MatrixTypes.Translation
-import typings.ejDotWebDotAll.ej.MatrixTypes.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

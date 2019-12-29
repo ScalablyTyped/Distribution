@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵBrowserGetTestability")
+@JSImport("@angular/platform-browser", "\u0275BrowserGetTestability")
 @js.native
 class ɵBrowserGetTestability () extends GetTestability {
   /* CompleteClass */
@@ -17,7 +17,7 @@ class ɵBrowserGetTestability () extends GetTestability {
 }
 
 /* static members */
-@JSImport("@angular/platform-browser", "ɵBrowserGetTestability")
+@JSImport("@angular/platform-browser", "\u0275BrowserGetTestability")
 @js.native
 object ɵBrowserGetTestability extends js.Object {
   def init(): Unit = js.native

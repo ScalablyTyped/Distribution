@@ -2,7 +2,6 @@ package typings.atMaterialTextfield
 
 import typings.atMaterialTextfield.iconAdapterMod.MDCTextFieldIconAdapter
 import typings.atMaterialTextfield.iconFoundationMod.default
-import typings.atMaterialTextfield.iconMod.MDCTextFieldIcon
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

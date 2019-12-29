@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.microflows
 
+import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -26,6 +27,6 @@ abstract class SplitCondition protected ()
 @js.native
 object SplitCondition extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

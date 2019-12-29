@@ -32,6 +32,7 @@ class LineFormat protected () extends js.Object {
   var Transparency: Double = js.native
   var Visible: MsoTriState = js.native
   var Weight: Double = js.native
-  var `Word.LineFormat_typekey`: LineFormat = js.native
+  @JSName("Word.LineFormat_typekey")
+  var WordDotLineFormat_typekey: LineFormat = js.native
 }
 

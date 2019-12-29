@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.ListLevelNumberAlignment.Center
-import typings.devexpressDashWeb.ListLevelNumberAlignment.Left
-import typings.devexpressDashWeb.ListLevelNumberAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

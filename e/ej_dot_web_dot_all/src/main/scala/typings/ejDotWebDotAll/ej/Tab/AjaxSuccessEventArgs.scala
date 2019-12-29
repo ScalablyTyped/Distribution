@@ -19,7 +19,7 @@ trait AjaxSuccessEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /** returns the tab model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Tab.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -32,7 +32,7 @@ object AjaxSuccessEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     content: js.Any = null,
     data: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Tab.Model = null,
+    model: Model = null,
     `type`: String = null
   ): AjaxSuccessEventArgs = {
     val __obj = js.Dynamic.literal()

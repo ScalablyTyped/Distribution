@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.fileNotFound
-import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.formatNotSupported
-import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.invalidFileType
-import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.success
-import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.unknownFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

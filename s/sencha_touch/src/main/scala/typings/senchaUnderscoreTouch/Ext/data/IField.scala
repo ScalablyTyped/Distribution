@@ -13,7 +13,7 @@ trait IField extends IBase {
   /** [Config Option] (Function) */
   var convert: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[java.lang.String] = js.undefined
+  var dateFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of allowNull
@@ -23,7 +23,7 @@ trait IField extends IBase {
   /** [Method] Returns the value of bubbleEvents
   		* @returns String
   		*/
-  var getBubbleEvents: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getBubbleEvents: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of convert
   		* @returns Function
   		*/
@@ -31,7 +31,7 @@ trait IField extends IBase {
   /** [Method] Returns the value of dateFormat
   		* @returns String
   		*/
-  var getDateFormat: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of decode
   		* @returns Object
   		*/
@@ -51,7 +51,7 @@ trait IField extends IBase {
   /** [Method] Returns the value of name
   		* @returns String
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of persist
   		* @returns Boolean
   		*/
@@ -59,7 +59,7 @@ trait IField extends IBase {
   /** [Method] Returns the value of sortDir
   		* @returns String
   		*/
-  var getSortDir: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSortDir: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of sortType
   		* @returns Function
   		*/
@@ -71,7 +71,7 @@ trait IField extends IBase {
   /** [Config Option] (String/Number) */
   var mapping: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var persist: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of allowNull
@@ -81,7 +81,7 @@ trait IField extends IBase {
   /** [Method] Sets the value of bubbleEvents
   		* @param bubbleEvents String The new value.
   		*/
-  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of convert
   		* @param convert Function The new value.
   		*/
@@ -89,7 +89,7 @@ trait IField extends IBase {
   /** [Method] Sets the value of dateFormat
   		* @param dateFormat String The new value.
   		*/
-  var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of decode
   		* @param decode Object The new value.
   		*/
@@ -109,7 +109,7 @@ trait IField extends IBase {
   /** [Method] Sets the value of name
   		* @param name String The new value.
   		*/
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of persist
   		* @param persist Boolean The new value.
   		*/
@@ -117,7 +117,7 @@ trait IField extends IBase {
   /** [Method] Sets the value of sortDir
   		* @param sortDir String The new value.
   		*/
-  var setSortDir: js.UndefOr[js.Function1[/* sortDir */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSortDir: js.UndefOr[js.Function1[/* sortDir */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of sortType
   		* @param sortType Function The new value.
   		*/
@@ -127,7 +127,7 @@ trait IField extends IBase {
   		*/
   var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var sortDir: js.UndefOr[java.lang.String] = js.undefined
+  var sortDir: js.UndefOr[String] = js.undefined
   /** [Config Option] (Function) */
   var sortType: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Object) */
@@ -147,47 +147,47 @@ object IField {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     convert: js.Any = null,
-    dateFormat: java.lang.String = null,
+    dateFormat: String = null,
     defaultValue: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getAllowNull: () => Boolean = null,
-    getBubbleEvents: () => java.lang.String = null,
+    getBubbleEvents: () => String = null,
     getConvert: () => _ = null,
-    getDateFormat: () => java.lang.String = null,
+    getDateFormat: () => String = null,
     getDecode: () => _ = null,
     getDefaultValue: () => _ = null,
     getEncode: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getMapping: () => _ = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getPersist: () => Boolean = null,
-    getSortDir: () => java.lang.String = null,
+    getSortDir: () => String = null,
     getSortType: () => _ = null,
     getType: () => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mapping: js.Any = null,
     mixins: js.Any = null,
-    name: java.lang.String = null,
+    name: String = null,
     persist: js.UndefOr[Boolean] = js.undefined,
     platformConfig: js.Any = null,
     self: IClass = null,
     setAllowNull: /* allowNull */ js.UndefOr[Boolean] => Unit = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[java.lang.String] => Unit = null,
+    setBubbleEvents: /* bubbleEvents */ js.UndefOr[String] => Unit = null,
     setConvert: /* convert */ js.UndefOr[js.Any] => Unit = null,
-    setDateFormat: /* dateFormat */ js.UndefOr[java.lang.String] => Unit = null,
+    setDateFormat: /* dateFormat */ js.UndefOr[String] => Unit = null,
     setDecode: /* decode */ js.UndefOr[js.Any] => Unit = null,
     setDefaultValue: /* defaultValue */ js.UndefOr[js.Any] => Unit = null,
     setEncode: /* encode */ js.UndefOr[js.Any] => Unit = null,
     setMapping: /* mapping */ js.UndefOr[js.Any] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
     setPersist: /* persist */ js.UndefOr[Boolean] => Unit = null,
-    setSortDir: /* sortDir */ js.UndefOr[java.lang.String] => Unit = null,
+    setSortDir: /* sortDir */ js.UndefOr[String] => Unit = null,
     setSortType: /* sortType */ js.UndefOr[js.Any] => Unit = null,
     setType: /* type */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sortDir: java.lang.String = null,
+    sortDir: String = null,
     sortType: js.Any = null,
     statics: js.Any = null,
     `type`: js.Any = null,

@@ -1,7 +1,6 @@
 package typings.operationDashRetrier
 
 import typings.node.eventsMod.EventEmitter
-import typings.operationDashRetrier.libBackoffMod.Backoff
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

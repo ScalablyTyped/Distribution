@@ -7,7 +7,6 @@ import typings.ol.tileMod.LoadFunction
 import typings.ol.tileMod.Options
 import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
-import typings.ol.vectorTileMod.VectorTile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

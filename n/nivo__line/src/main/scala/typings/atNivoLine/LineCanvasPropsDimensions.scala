@@ -6,6 +6,7 @@ import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.CartesianMarkerProps
 import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
+import typings.atNivoLine.atNivoLineBooleans.`false`
 import typings.atNivoLine.atNivoLineMod.DataFormatter
 import typings.atNivoLine.atNivoLineMod.Layer
 import typings.atNivoLine.atNivoLineMod.LineSerieData
@@ -13,7 +14,6 @@ import typings.atNivoLine.atNivoLineMod.LineSliceData
 import typings.atNivoLine.atNivoLineMod.LineValue
 import typings.atNivoLine.atNivoLineMod.TooltipFormatter
 import typings.atNivoLine.atNivoLineMod.TooltipProp
-import typings.atNivoLine.atNivoLineNumbers.`false`
 import typings.atNivoLine.atNivoLineStrings.linear
 import typings.atNivoLine.atNivoLineStrings.monotoneX
 import typings.atNivoLine.atNivoLineStrings.monotoneY

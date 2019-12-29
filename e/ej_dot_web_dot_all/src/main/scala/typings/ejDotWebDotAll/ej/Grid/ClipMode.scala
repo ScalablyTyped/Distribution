@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.ClipMode.Clip
-import typings.ejDotWebDotAll.ej.Grid.ClipMode.Ellipsis
-import typings.ejDotWebDotAll.ej.Grid.ClipMode.EllipsisWithTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

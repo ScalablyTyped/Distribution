@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.pointerPointerEventHandlerMod.PointerEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDocument

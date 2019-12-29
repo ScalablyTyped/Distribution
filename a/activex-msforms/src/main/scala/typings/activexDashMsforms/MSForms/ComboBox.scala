@@ -49,7 +49,8 @@ class ComboBox protected () extends js.Object {
   var ListStyle: fmListStyle = js.native
   var ListWidth: Double = js.native
   var Locked: Boolean = js.native
-  var `MSForms.ComboBox_typekey`: ComboBox = js.native
+  @JSName("MSForms.ComboBox_typekey")
+  var MSFormsDotComboBox_typekey: ComboBox = js.native
   var MatchEntry: fmMatchEntry = js.native
   val MatchFound: Boolean = js.native
   var MatchRequired: Boolean = js.native

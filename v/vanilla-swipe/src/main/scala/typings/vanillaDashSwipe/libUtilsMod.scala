@@ -13,10 +13,14 @@ import scala.scalajs.js.annotation._
 @JSImport("vanilla-swipe/lib/utils", JSImport.Namespace)
 @js.native
 object libUtilsMod extends js.Object {
+  def calculateDuration(): Double = js.native
+  def calculateDuration(prevTime: Double): Double = js.native
+  def calculateDuration(prevTime: Double, nextTime: Double): Double = js.native
   def calculateMovingPosition[T /* <: E */](e: T): Anon_X = js.native
   def calculateMovingPosition[T /* <: E */](e: MouseEvent): Anon_X = js.native
   def calculateMovingPosition[T /* <: E */](e: TouchEvent): Anon_X = js.native
   def calculatePosition(prevPos: prevPosition, nextPos: nextPosition): Value = js.native
+  def calculateVelocity(x: Double, y: Double, time: Double): Double = js.native
   def checkIsMoreThanSingleTouches(e: js.Any): Boolean = js.native
   def checkIsPassiveSupported(): Boolean = js.native
   def checkIsPassiveSupported(isPassiveSupported: Boolean): Boolean = js.native

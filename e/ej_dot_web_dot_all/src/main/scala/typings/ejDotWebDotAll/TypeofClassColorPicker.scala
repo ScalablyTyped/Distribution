@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassColorPicker
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ColorPicker]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), ColorPicker] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), ColorPicker]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ColorPicker] {
   var Locale: js.Any = js.native
   var fn: ColorPicker = js.native
 }

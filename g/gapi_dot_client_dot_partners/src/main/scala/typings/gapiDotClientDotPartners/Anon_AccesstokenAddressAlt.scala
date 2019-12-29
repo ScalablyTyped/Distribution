@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAddressAlt extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /**
@@ -40,7 +40,8 @@ trait Anon_AccesstokenAddressAlt extends js.Object {
     */
   var languageCodes: js.UndefOr[String] = js.native
   /** The 3-letter currency code defined in ISO 4217. */
-  var `maxMonthlyBudget.currencyCode`: js.UndefOr[String] = js.native
+  @JSName("maxMonthlyBudget.currencyCode")
+  var maxMonthlyBudgetDotcurrencyCode: js.UndefOr[String] = js.native
   /**
     * Number of nano (10^-9) units of the amount.
     * The value must be between -999,999,999 and +999,999,999 inclusive.
@@ -49,14 +50,17 @@ trait Anon_AccesstokenAddressAlt extends js.Object {
     * If `units` is negative, `nanos` must be negative or zero.
     * For example $-1.75 is represented as `units`=-1 and `nanos`=-750,000,000.
     */
-  var `maxMonthlyBudget.nanos`: js.UndefOr[Double] = js.native
+  @JSName("maxMonthlyBudget.nanos")
+  var maxMonthlyBudgetDotnanos: js.UndefOr[Double] = js.native
   /**
     * The whole units of the amount.
     * For example if `currencyCode` is `"USD"`, then 1 unit is one US dollar.
     */
-  var `maxMonthlyBudget.units`: js.UndefOr[String] = js.native
+  @JSName("maxMonthlyBudget.units")
+  var maxMonthlyBudgetDotunits: js.UndefOr[String] = js.native
   /** The 3-letter currency code defined in ISO 4217. */
-  var `minMonthlyBudget.currencyCode`: js.UndefOr[String] = js.native
+  @JSName("minMonthlyBudget.currencyCode")
+  var minMonthlyBudgetDotcurrencyCode: js.UndefOr[String] = js.native
   /**
     * Number of nano (10^-9) units of the amount.
     * The value must be between -999,999,999 and +999,999,999 inclusive.
@@ -65,12 +69,14 @@ trait Anon_AccesstokenAddressAlt extends js.Object {
     * If `units` is negative, `nanos` must be negative or zero.
     * For example $-1.75 is represented as `units`=-1 and `nanos`=-750,000,000.
     */
-  var `minMonthlyBudget.nanos`: js.UndefOr[Double] = js.native
+  @JSName("minMonthlyBudget.nanos")
+  var minMonthlyBudgetDotnanos: js.UndefOr[Double] = js.native
   /**
     * The whole units of the amount.
     * For example if `currencyCode` is `"USD"`, then 1 unit is one US dollar.
     */
-  var `minMonthlyBudget.units`: js.UndefOr[String] = js.native
+  @JSName("minMonthlyBudget.units")
+  var minMonthlyBudgetDotunits: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.native
   /**
@@ -99,27 +105,34 @@ trait Anon_AccesstokenAddressAlt extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.native
   /** Experiment IDs the current request belongs to. */
-  var `requestMetadata.experimentIds`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.experimentIds")
+  var requestMetadataDotexperimentIds: js.UndefOr[String] = js.native
   /** Locale to use for the current request. */
-  var `requestMetadata.locale`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.locale")
+  var requestMetadataDotlocale: js.UndefOr[String] = js.native
   /** Google Partners session ID. */
-  var `requestMetadata.partnersSessionId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.partnersSessionId")
+  var requestMetadataDotpartnersSessionId: js.UndefOr[String] = js.native
   /**
     * Identifier to indicate where the traffic comes from.
     * An identifier has multiple letters created by a team which redirected the
     * traffic to us.
     */
-  var `requestMetadata.trafficSource.trafficSourceId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.trafficSource.trafficSourceId")
+  var requestMetadataDottrafficSourceDottrafficSourceId: js.UndefOr[String] = js.native
   /**
     * Second level identifier to indicate where the traffic comes from.
     * An identifier has multiple letters created by a team which redirected the
     * traffic to us.
     */
-  var `requestMetadata.trafficSource.trafficSubId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.trafficSource.trafficSubId")
+  var requestMetadataDottrafficSourceDottrafficSubId: js.UndefOr[String] = js.native
   /** IP address to use instead of the user's geo-located IP address. */
-  var `requestMetadata.userOverrides.ipAddress`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.userOverrides.ipAddress")
+  var requestMetadataDotuserOverridesDotipAddress: js.UndefOr[String] = js.native
   /** Logged-in user ID to impersonate instead of the user's ID. */
-  var `requestMetadata.userOverrides.userId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.userOverrides.userId")
+  var requestMetadataDotuserOverridesDotuserId: js.UndefOr[String] = js.native
   /**
     * List of services that the returned agencies should provide. If this is
     * not empty, any returned agency must have at least one of these services,

@@ -8,8 +8,6 @@ import typings.std.stdStrings.MutationEvents
 import typings.std.stdStrings.SVGZoomEvents
 import typings.std.stdStrings.UIEvents
 import typings.std.stdStrings.`VRDisplayEvent `
-import typings.std.stdStrings.`http://wwwDOTw3DOTorg/1999/xhtml`
-import typings.std.stdStrings.`http://wwwDOTw3DOTorg/2000/svg`
 import typings.std.stdStrings.`object`
 import typings.std.stdStrings.`var`
 import typings.std.stdStrings.a
@@ -100,6 +98,8 @@ import typings.std.stdStrings.header
 import typings.std.stdStrings.hgroup
 import typings.std.stdStrings.hr
 import typings.std.stdStrings.html
+import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
+import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
 import typings.std.stdStrings.i
 import typings.std.stdStrings.iframe
 import typings.std.stdStrings.image
@@ -385,19 +385,6 @@ trait Document
     */
   /** @deprecated */
   var vlinkColor: java.lang.String = js.native
-  /**
-    * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-    * 
-    * The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-    * 
-    * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-    * 
-    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-    * 
-    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
-    * 
-    * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-    */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -535,63 +522,72 @@ trait Document
   def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
   def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String): Element = js.native
   def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: a): SVGAElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: circle): SVGCircleElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: clipPath): SVGClipPathElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: defs): SVGDefsElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: desc): SVGDescElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: ellipse): SVGEllipseElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feBlend): SVGFEBlendElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feColorMatrix): SVGFEColorMatrixElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feComponentTransfer): SVGFEComponentTransferElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feComposite): SVGFECompositeElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feConvolveMatrix): SVGFEConvolveMatrixElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feDiffuseLighting): SVGFEDiffuseLightingElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feDisplacementMap): SVGFEDisplacementMapElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feDistantLight): SVGFEDistantLightElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feFlood): SVGFEFloodElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feFuncA): SVGFEFuncAElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feFuncB): SVGFEFuncBElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feFuncG): SVGFEFuncGElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feFuncR): SVGFEFuncRElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feGaussianBlur): SVGFEGaussianBlurElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feImage): SVGFEImageElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feMerge): SVGFEMergeElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feMergeNode): SVGFEMergeNodeElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feMorphology): SVGFEMorphologyElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feOffset): SVGFEOffsetElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: fePointLight): SVGFEPointLightElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feSpecularLighting): SVGFESpecularLightingElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feSpotLight): SVGFESpotLightElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feTile): SVGFETileElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: feTurbulence): SVGFETurbulenceElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: filter): SVGFilterElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: foreignObject): SVGForeignObjectElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: g): SVGGElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: image): SVGImageElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: line): SVGLineElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: linearGradient): SVGLinearGradientElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: marker): SVGMarkerElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: mask): SVGMaskElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: metadata): SVGMetadataElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: path): SVGPathElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: pattern): SVGPatternElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: polygon): SVGPolygonElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: polyline): SVGPolylineElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: radialGradient): SVGRadialGradientElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: rect): SVGRectElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: script): SVGScriptElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: typings.std.stdStrings.stop): SVGStopElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: style): SVGStyleElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: svg): SVGSVGElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: switch): SVGSwitchElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: symbol): SVGSymbolElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: text): SVGTextElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: textPath): SVGTextPathElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: title): SVGTitleElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: tspan): SVGTSpanElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: use): SVGUseElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: view): SVGViewElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: a): SVGAElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: circle): SVGCircleElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: clipPath): SVGClipPathElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: defs): SVGDefsElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: desc): SVGDescElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: ellipse): SVGEllipseElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feBlend): SVGFEBlendElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feColorMatrix): SVGFEColorMatrixElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg,
+    qualifiedName: feComponentTransfer
+  ): SVGFEComponentTransferElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feComposite): SVGFECompositeElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feConvolveMatrix): SVGFEConvolveMatrixElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDiffuseLighting): SVGFEDiffuseLightingElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDisplacementMap): SVGFEDisplacementMapElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDistantLight): SVGFEDistantLightElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFlood): SVGFEFloodElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncA): SVGFEFuncAElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncB): SVGFEFuncBElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncG): SVGFEFuncGElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncR): SVGFEFuncRElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feGaussianBlur): SVGFEGaussianBlurElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feImage): SVGFEImageElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feMerge): SVGFEMergeElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feMergeNode): SVGFEMergeNodeElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feMorphology): SVGFEMorphologyElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feOffset): SVGFEOffsetElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: fePointLight): SVGFEPointLightElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg,
+    qualifiedName: feSpecularLighting
+  ): SVGFESpecularLightingElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feSpotLight): SVGFESpotLightElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feTile): SVGFETileElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feTurbulence): SVGFETurbulenceElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: filter): SVGFilterElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: foreignObject): SVGForeignObjectElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: g): SVGGElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: image): SVGImageElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: line): SVGLineElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: linearGradient): SVGLinearGradientElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: marker): SVGMarkerElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: mask): SVGMaskElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: metadata): SVGMetadataElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: path): SVGPathElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: pattern): SVGPatternElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: polygon): SVGPolygonElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: polyline): SVGPolylineElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: radialGradient): SVGRadialGradientElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: rect): SVGRectElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: script): SVGScriptElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg,
+    qualifiedName: typings.std.stdStrings.stop
+  ): SVGStopElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: style): SVGStyleElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: svg): SVGSVGElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: switch): SVGSwitchElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: symbol): SVGSymbolElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: text): SVGTextElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: textPath): SVGTextPathElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: title): SVGTitleElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: tspan): SVGTSpanElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: use): SVGUseElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: view): SVGViewElement = js.native
   def createElementNS(namespace: java.lang.String, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
   def createElementNS(namespace: Null, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
   /**
@@ -610,9 +606,12 @@ trait Document
     * When supplied, options's is can be used to create a customized built-in element.
     */
   @JSName("createElementNS")
-  def createElementNS_httpwwww3org1999xhtml(namespaceURI: `http://wwwDOTw3DOTorg/1999/xhtml`, qualifiedName: java.lang.String): HTMLElement = js.native
+  def createElementNS_httpwwww3org1999xhtml(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml,
+    qualifiedName: java.lang.String
+  ): HTMLElement = js.native
   @JSName("createElementNS")
-  def createElementNS_httpwwww3org2000svg(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: java.lang.String): SVGElement = js.native
+  def createElementNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: java.lang.String): SVGElement = js.native
   /**
     * Creates an instance of the element for the specified tag.
     * @param tagName The name of an element.
@@ -1330,9 +1329,9 @@ trait Document
     * Otherwise, returns a HTMLCollection of all descendant elements whose namespace is namespace and local name is localName.
     */
   @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: `http://wwwDOTw3DOTorg/1999/xhtml`, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   /**
     * Retrieves a collection of objects based on the specified element name.
     * @param name Specifies the name of an element.
@@ -1730,17 +1729,14 @@ trait Document
   def queryCommandValue(commandId: java.lang.String): java.lang.String = js.native
   /** @deprecated */
   def releaseEvents(): Unit = js.native
-  /**
-    * Removes the event listener in target's event listener list with the same type, callback, and options.
-    */
   /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
-    callback: EventListenerOrEventListenerObject,
+    listener: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

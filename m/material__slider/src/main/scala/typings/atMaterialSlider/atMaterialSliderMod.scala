@@ -1,7 +1,6 @@
 package typings.atMaterialSlider
 
 import typings.atMaterialSlider.adapterMod.MDCSliderAdapter
-import typings.atMaterialSlider.atMaterialSliderMod.MDCSlider
 import typings.atMaterialSlider.foundationMod.default
 import typings.std.Element
 import scala.scalajs.js

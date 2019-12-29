@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 
 object cassanknexStrings {
   @js.native
-  sealed trait `<` extends ComparisonRestriction
+  sealed trait Equalssign extends ComparisonRestriction
   
   @js.native
-  sealed trait `<=` extends ComparisonRestriction
+  sealed trait Greaterthansign extends ComparisonRestriction
   
   @js.native
-  sealed trait `=` extends ComparisonRestriction
-  
-  @js.native
-  sealed trait `>` extends ComparisonRestriction
-  
-  @js.native
-  sealed trait `>=` extends ComparisonRestriction
+  sealed trait GreaterthansignEqualssign extends ComparisonRestriction
   
   @js.native
   sealed trait IN extends InRestriction
+  
+  @js.native
+  sealed trait Lessthansign extends ComparisonRestriction
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends ComparisonRestriction
   
   @js.native
   sealed trait SelectAsClause extends js.Object
@@ -38,17 +38,17 @@ object cassanknexStrings {
   sealed trait in_ extends InRestriction
   
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def SelectAsClause: SelectAsClause = "SelectAsClause".asInstanceOf[SelectAsClause]
   @scala.inline

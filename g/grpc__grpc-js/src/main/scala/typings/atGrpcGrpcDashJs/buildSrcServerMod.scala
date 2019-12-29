@@ -6,8 +6,6 @@ import typings.atGrpcGrpcDashJs.buildSrcMakeDashClientMod.Serialize
 import typings.atGrpcGrpcDashJs.buildSrcMakeDashClientMod.ServiceDefinition
 import typings.atGrpcGrpcDashJs.buildSrcServerDashCallMod.HandleCall
 import typings.atGrpcGrpcDashJs.buildSrcServerDashCredentialsMod.ServerCredentials
-import typings.atGrpcGrpcDashJs.buildSrcServerMod.UntypedHandleCall
-import typings.atGrpcGrpcDashJs.buildSrcServerMod.UntypedServiceImplementation
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

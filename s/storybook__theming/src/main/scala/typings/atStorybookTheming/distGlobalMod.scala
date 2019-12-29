@@ -1,8 +1,6 @@
 package typings.atStorybookTheming
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atStorybookTheming.distGlobalMod.Return
-import typings.atStorybookTheming.distGlobalMod.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

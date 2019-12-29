@@ -5,9 +5,6 @@ import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Reducer
 import typings.redux.reduxMod.Store
 import typings.redux.reduxMod.StoreEnhancer
-import typings.reduxDashInjectableDashStore.reduxDashInjectableDashStoreMod.InjectableStore
-import typings.reduxDashInjectableDashStore.reduxDashInjectableDashStoreMod.InjectableStoreCreator
-import typings.reduxDashInjectableDashStore.reduxDashInjectableDashStoreMod.WrapReducer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

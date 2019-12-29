@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_TransferMode.TWSX_FILE
-import typings.dwt.EnumDWT_TransferMode.TWSX_MEMORY
-import typings.dwt.EnumDWT_TransferMode.TWSX_NATIVE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

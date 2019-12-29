@@ -1,11 +1,11 @@
 package typings.grommet.componentsTableCellMod
 
-import typings.grommet.grommetStrings.`1/2`
-import typings.grommet.grommetStrings.`1/3`
-import typings.grommet.grommetStrings.`1/4`
-import typings.grommet.grommetStrings.`2/3`
-import typings.grommet.grommetStrings.`2/4`
-import typings.grommet.grommetStrings.`3/4`
+import typings.grommet.grommetStrings.`1Slash2`
+import typings.grommet.grommetStrings.`1Slash3`
+import typings.grommet.grommetStrings.`1Slash4`
+import typings.grommet.grommetStrings.`2Slash3`
+import typings.grommet.grommetStrings.`2Slash4`
+import typings.grommet.grommetStrings.`3Slash4`
 import typings.grommet.grommetStrings.bottom
 import typings.grommet.grommetStrings.col
 import typings.grommet.grommetStrings.large
@@ -25,7 +25,7 @@ trait TableCellProps extends js.Object {
   var plain: js.UndefOr[Boolean] = js.undefined
   var scope: js.UndefOr[col | row] = js.undefined
   var size: js.UndefOr[
-    xxsmall | xsmall | small | medium | large | xlarge | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | String
+    xxsmall | xsmall | small | medium | large | xlarge | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | String
   ] = js.undefined
   var verticalAlign: js.UndefOr[top | middle | bottom] = js.undefined
 }
@@ -35,7 +35,7 @@ object TableCellProps {
   def apply(
     plain: js.UndefOr[Boolean] = js.undefined,
     scope: col | row = null,
-    size: xxsmall | xsmall | small | medium | large | xlarge | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | String = null,
+    size: xxsmall | xsmall | small | medium | large | xlarge | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | String = null,
     verticalAlign: top | middle | bottom = null
   ): TableCellProps = {
     val __obj = js.Dynamic.literal()

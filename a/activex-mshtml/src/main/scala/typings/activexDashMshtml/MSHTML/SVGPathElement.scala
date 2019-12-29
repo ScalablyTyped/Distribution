@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGPathElement")
 @js.native
 class SVGPathElement protected () extends js.Object {
-  var `MSHTML.SVGPathElement_typekey`: SVGPathElement = js.native
+  @JSName("MSHTML.SVGPathElement_typekey")
+  var MSHTMLDotSVGPathElement_typekey: SVGPathElement = js.native
   var animatedNormalizedPathSegList: SVGPathSegList = js.native
   var animatedPathSegList: SVGPathSegList = js.native
   val farthestViewportElement: ISVGElement = js.native

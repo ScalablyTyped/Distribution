@@ -1,18 +1,6 @@
 package typings.chessboardjs.chessboardjsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chessboardjs.chessboardjsMod.Piece.bB
-import typings.chessboardjs.chessboardjsMod.Piece.bK
-import typings.chessboardjs.chessboardjsMod.Piece.bN
-import typings.chessboardjs.chessboardjsMod.Piece.bP
-import typings.chessboardjs.chessboardjsMod.Piece.bQ
-import typings.chessboardjs.chessboardjsMod.Piece.bR
-import typings.chessboardjs.chessboardjsMod.Piece.wB
-import typings.chessboardjs.chessboardjsMod.Piece.wK
-import typings.chessboardjs.chessboardjsMod.Piece.wN
-import typings.chessboardjs.chessboardjsMod.Piece.wP
-import typings.chessboardjs.chessboardjsMod.Piece.wQ
-import typings.chessboardjs.chessboardjsMod.Piece.wR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

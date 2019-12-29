@@ -1,12 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.BUSINESS_FULL_ACCESS
-import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.FULL_ACCESS
-import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.GROUP
-import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.MODIFY_NOTEBOOK_PLUS_ACTIVITY
-import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.READ_NOTEBOOK
-import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.READ_NOTEBOOK_PLUS_ACTIVITY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Metadata.ThreadingModel.both
-import typings.winrtDashUwp.Windows.Foundation.Metadata.ThreadingModel.invalidThreading
-import typings.winrtDashUwp.Windows.Foundation.Metadata.ThreadingModel.mta
-import typings.winrtDashUwp.Windows.Foundation.Metadata.ThreadingModel.sta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

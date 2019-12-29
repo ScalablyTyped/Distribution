@@ -1,13 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.AttachmentType.BoundingBox
-import typings.pixiDashSpine.PIXI.spine.core.AttachmentType.Clipping
-import typings.pixiDashSpine.PIXI.spine.core.AttachmentType.LinkedMesh
-import typings.pixiDashSpine.PIXI.spine.core.AttachmentType.Mesh
-import typings.pixiDashSpine.PIXI.spine.core.AttachmentType.Path
-import typings.pixiDashSpine.PIXI.spine.core.AttachmentType.Point
-import typings.pixiDashSpine.PIXI.spine.core.AttachmentType.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

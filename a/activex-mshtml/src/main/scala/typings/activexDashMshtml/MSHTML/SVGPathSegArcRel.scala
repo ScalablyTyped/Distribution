@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGPathSegArcRel")
 @js.native
 class SVGPathSegArcRel protected () extends js.Object {
-  var `MSHTML.SVGPathSegArcRel_typekey`: SVGPathSegArcRel = js.native
+  @JSName("MSHTML.SVGPathSegArcRel_typekey")
+  var MSHTMLDotSVGPathSegArcRel_typekey: SVGPathSegArcRel = js.native
   var angle: Double = js.native
   var largeArcFlag: Boolean = js.native
   var pathSegType: Double = js.native

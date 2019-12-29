@@ -2,7 +2,7 @@ package typings.handsontable.handsontableMod.Handsontable._editors
 
 import typings.handsontable.handsontableMod.Handsontable.CellProperties
 import typings.handsontable.handsontableMod._Handsontable.Core
-import typings.handsontable.handsontableStrings.Empty
+import typings.handsontable.handsontableStrings._empty
 import typings.handsontable.handsontableStrings.`bottom-left-corner`
 import typings.handsontable.handsontableStrings.`top-left-corner`
 import typings.handsontable.handsontableStrings.bottom
@@ -29,7 +29,7 @@ trait Base extends js.Object {
   def beginEditing(initialValue: js.Any): Unit = js.native
   def beginEditing(initialValue: js.Any, event: Event): Unit = js.native
   def cancelChanges(): Unit = js.native
-  def checkEditorSection(): `top-left-corner` | top | `bottom-left-corner` | bottom | left | Empty = js.native
+  def checkEditorSection(): `top-left-corner` | top | `bottom-left-corner` | bottom | left | _empty = js.native
   def close(): Unit = js.native
   def discardEditor(): Unit = js.native
   def discardEditor(validationResult: Boolean): Unit = js.native

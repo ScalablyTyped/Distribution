@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcOperationsExecutorsSliceUnderscoreJoinUnderscoreExecutorMod extends js.Object {
   val CATEGORY: slice_join = js.native
-  var executeOp: InternalOpExecutor = js.native
+  val executeOp: InternalOpExecutor = js.native
 }
 

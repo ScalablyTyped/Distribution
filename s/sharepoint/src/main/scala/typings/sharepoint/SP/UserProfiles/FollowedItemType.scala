@@ -1,10 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.FollowedItemType.all
-import typings.sharepoint.SP.UserProfiles.FollowedItemType.document
-import typings.sharepoint.SP.UserProfiles.FollowedItemType.site
-import typings.sharepoint.SP.UserProfiles.FollowedItemType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

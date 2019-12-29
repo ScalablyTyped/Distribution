@@ -23,7 +23,8 @@ class Field protected () extends js.Object {
   var Result: Range = js.native
   var ShowCodes: Boolean = js.native
   val Type: WdFieldType = js.native
-  var `Word.Field_typekey`: Field = js.native
+  @JSName("Word.Field_typekey")
+  var WordDotField_typekey: Field = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native
   def Delete(): Unit = js.native

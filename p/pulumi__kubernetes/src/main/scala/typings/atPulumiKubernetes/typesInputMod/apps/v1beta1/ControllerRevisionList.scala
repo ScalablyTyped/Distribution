@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.apps.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait ControllerRevisionList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[appsSlashv1beta1]] = js.undefined
   /**
     * Items is the list of ControllerRevisions
     */
@@ -42,7 +42,7 @@ object ControllerRevisionList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[ControllerRevision]]],
-    apiVersion: Input[`apps/v1beta1`] = null,
+    apiVersion: Input[appsSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevisionList] = null,
     metadata: Input[ListMeta] = null
   ): ControllerRevisionList = {

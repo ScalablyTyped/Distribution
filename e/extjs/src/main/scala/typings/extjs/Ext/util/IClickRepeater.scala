@@ -22,7 +22,7 @@ trait IClickRepeater extends IObservable {
   /** [Config Option] (Number) */
   var interval: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var pressedCls: js.UndefOr[java.lang.String] = js.undefined
+  var pressedCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var preventDefault: js.UndefOr[Boolean] = js.undefined
   /** [Method] Convenience function for setting disabled enabled by boolean
@@ -53,11 +53,11 @@ object IClickRepeater {
     el: js.Any = null,
     enable: () => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IClickRepeater = null,
@@ -68,10 +68,10 @@ object IClickRepeater {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    pressedCls: java.lang.String = null,
+    pressedCls: String = null,
     preventDefault: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -83,7 +83,7 @@ object IClickRepeater {
     stopDefault: js.UndefOr[Boolean] = js.undefined,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IClickRepeater = {
     val __obj = js.Dynamic.literal()

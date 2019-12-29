@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.allowedWithWakeupCapability
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.allowedWithoutWakeupCapability
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.denied
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

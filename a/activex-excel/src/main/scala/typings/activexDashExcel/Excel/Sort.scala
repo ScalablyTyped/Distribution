@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Sort protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Sort_typekey`: Sort = js.native
+  @JSName("Excel.Sort_typekey")
+  var ExcelDotSort_typekey: Sort = js.native
   var Header: XlYesNoGuess = js.native
   var MatchCase: Boolean = js.native
   var Orientation: XlSortOrientation = js.native

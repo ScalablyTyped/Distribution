@@ -1,6 +1,6 @@
 package typings.gapiDotDrive.gapi.client.drive
 
-import typings.gapiDotDrive.gapiDotDriveStrings.driveDOLLARproperty
+import typings.gapiDotDrive.gapiDotDriveStrings.drive$property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait PropertiesResource extends js.Object {
   var etag: String
   var key: String
-  var kind: driveDOLLARproperty
+  var kind: drive$property
   var selfLink: String
   var value: String
   var visibility: String
@@ -19,7 +19,7 @@ object PropertiesResource {
   def apply(
     etag: String,
     key: String,
-    kind: driveDOLLARproperty,
+    kind: drive$property,
     selfLink: String,
     value: String,
     visibility: String

@@ -14,7 +14,8 @@ class Dialog protected () extends js.Object {
   var DefaultTab: WdWordDialogTab = js.native
   val Parent: js.Any = js.native
   val Type: WdWordDialog = js.native
-  var `Word.Dialog_typekey`: Dialog = js.native
+  @JSName("Word.Dialog_typekey")
+  var WordDotDialog_typekey: Dialog = js.native
   def Display(): Double = js.native
   def Display(TimeOut: Double): Double = js.native
   def Execute(): Unit = js.native

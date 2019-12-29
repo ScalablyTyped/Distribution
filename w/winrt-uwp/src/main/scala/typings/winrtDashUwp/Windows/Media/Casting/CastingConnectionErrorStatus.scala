@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Casting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceDidNotRespond
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceError
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceLocked
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.invalidCastingSource
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.protectedPlaybackFailed
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.succeeded
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

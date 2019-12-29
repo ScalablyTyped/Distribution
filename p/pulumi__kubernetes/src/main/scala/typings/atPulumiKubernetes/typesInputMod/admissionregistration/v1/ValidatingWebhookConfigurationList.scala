@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.admissionregistration.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.admissionregistrationDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait ValidatingWebhookConfigurationList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`admissionregistrationDOTk8sDOTio/v1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[admissionregistrationDotk8sDotioSlashv1]] = js.undefined
   /**
     * List of ValidatingWebhookConfiguration.
     */
@@ -44,7 +44,7 @@ object ValidatingWebhookConfigurationList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[ValidatingWebhookConfiguration]]],
-    apiVersion: Input[`admissionregistrationDOTk8sDOTio/v1`] = null,
+    apiVersion: Input[admissionregistrationDotk8sDotioSlashv1] = null,
     kind: Input[
       typings.atPulumiKubernetes.atPulumiKubernetesStrings.ValidatingWebhookConfigurationList
     ] = null,

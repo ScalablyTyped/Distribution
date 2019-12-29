@@ -1,7 +1,6 @@
 package typings.jsmediatags
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsmediatags.build2MediaTagReaderMod.MediaTagReader
 import typings.jsmediatags.typesMod.ByteRange
 import typings.jsmediatags.typesMod.CallbackType
 import typings.jsmediatags.typesMod.LoadCallbackType

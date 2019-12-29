@@ -1,7 +1,6 @@
 package typings.tarn
 
 import typings.std.Error
-import typings.tarn.libPromiseInspectionMod.PromiseInspectionArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.apps.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated apps/v1beta1/StatefulSet is not supported by Kubernetes 1.16+ clusters. Use
-  * apps/v1/StatefulSet instead.
+  * @deprecated apps/v1beta1/StatefulSet is deprecated by apps/v1/StatefulSet and not supported
+  * by Kubernetes v1.16+ clusters.
   *
   * StatefulSet represents a set of pods with consistent identities. Identities are defined as:
   *  - Network: A single stable DNS and hostname.
@@ -24,7 +24,7 @@ trait StatefulSet extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`apps/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[appsSlashv1beta1]] = js.undefined
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -42,7 +42,7 @@ trait StatefulSet extends js.Object {
 object StatefulSet {
   @scala.inline
   def apply(
-    apiVersion: Input[`apps/v1beta1`] = null,
+    apiVersion: Input[appsSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.StatefulSet] = null,
     metadata: Input[ObjectMeta] = null,
     spec: Input[StatefulSetSpec] = null

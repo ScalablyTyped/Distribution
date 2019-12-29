@@ -1,10 +1,6 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.WebControls.MessageLevel
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.WebControls.MessageLevel.error
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.WebControls.MessageLevel.information
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.WebControls.MessageLevel.warning
 import typings.sharepoint.SP.ClientValueObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

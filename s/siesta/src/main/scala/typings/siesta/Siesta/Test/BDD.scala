@@ -1,6 +1,5 @@
 package typings.siesta.Siesta.Test
 
-import typings.siesta.Siesta.Test.BDD.Expectation
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

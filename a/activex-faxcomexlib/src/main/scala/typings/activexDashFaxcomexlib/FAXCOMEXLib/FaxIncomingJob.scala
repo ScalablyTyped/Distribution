@@ -23,7 +23,8 @@ class FaxIncomingJob protected () extends js.Object {
   val ExtendedStatus: String = js.native
   /** Code of the job's extended status */
   val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM = js.native
-  var `FAXCOMEXLib.FaxIncomingJob_typekey`: FaxIncomingJob = js.native
+  @JSName("FAXCOMEXLib.FaxIncomingJob_typekey")
+  var FAXCOMEXLibDotFaxIncomingJob_typekey: FaxIncomingJob = js.native
   /** Unique message ID */
   val Id: String = js.native
   /** Job type */

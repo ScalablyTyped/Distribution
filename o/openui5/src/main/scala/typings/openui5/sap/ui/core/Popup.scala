@@ -1,5 +1,6 @@
 package typings.openui5.sap.ui.core
 
+import typings.jquery.JQueryStatic
 import typings.openui5.TypeofDock
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.std.Number
@@ -178,7 +179,7 @@ class Popup protected () extends ManagedObject {
     iDuration: Double,
     my: js.UndefOr[TypeofDock],
     at: js.UndefOr[TypeofDock],
-    of: js.UndefOr[js.Any | Element | typings.jquery.JQueryStatic | String],
+    of: js.UndefOr[js.Any | Element | JQueryStatic | String],
     offset: js.UndefOr[String],
     collision: js.UndefOr[String],
     followOf: js.UndefOr[Boolean]
@@ -272,9 +273,9 @@ class Popup protected () extends ManagedObject {
   def setPosition(my: TypeofDock, at: js.Any, of: js.Any): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: js.Any, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: js.Any, offset: String, collision: String): Popup = js.native
-  def setPosition(my: TypeofDock, at: js.Any, of: typings.jquery.JQueryStatic): Popup = js.native
-  def setPosition(my: TypeofDock, at: js.Any, of: typings.jquery.JQueryStatic, offset: String): Popup = js.native
-  def setPosition(my: TypeofDock, at: js.Any, of: typings.jquery.JQueryStatic, offset: String, collision: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: JQueryStatic): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: JQueryStatic, offset: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: JQueryStatic, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: Element): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: Element, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: Element, offset: String, collision: String): Popup = js.native
@@ -302,9 +303,9 @@ class Popup protected () extends ManagedObject {
   def setPosition(my: TypeofDock, at: TypeofDock, of: js.Any): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: js.Any, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: js.Any, offset: String, collision: String): Popup = js.native
-  def setPosition(my: TypeofDock, at: TypeofDock, of: typings.jquery.JQueryStatic): Popup = js.native
-  def setPosition(my: TypeofDock, at: TypeofDock, of: typings.jquery.JQueryStatic, offset: String): Popup = js.native
-  def setPosition(my: TypeofDock, at: TypeofDock, of: typings.jquery.JQueryStatic, offset: String, collision: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: JQueryStatic): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: JQueryStatic, offset: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: JQueryStatic, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: String, collision: String): Popup = js.native

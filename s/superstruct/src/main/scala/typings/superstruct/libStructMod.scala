@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.superstruct.libStructDashErrorMod.Branch
 import typings.superstruct.libStructDashErrorMod.Failure
 import typings.superstruct.libStructDashErrorMod.Path
-import typings.superstruct.libStructMod.Struct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

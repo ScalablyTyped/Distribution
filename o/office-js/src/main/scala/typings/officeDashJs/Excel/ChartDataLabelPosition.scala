@@ -1,18 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartDataLabelPosition.bestFit
-import typings.officeDashJs.Excel.ChartDataLabelPosition.bottom
-import typings.officeDashJs.Excel.ChartDataLabelPosition.callout
-import typings.officeDashJs.Excel.ChartDataLabelPosition.center
-import typings.officeDashJs.Excel.ChartDataLabelPosition.insideBase
-import typings.officeDashJs.Excel.ChartDataLabelPosition.insideEnd
-import typings.officeDashJs.Excel.ChartDataLabelPosition.invalid
-import typings.officeDashJs.Excel.ChartDataLabelPosition.left
-import typings.officeDashJs.Excel.ChartDataLabelPosition.none
-import typings.officeDashJs.Excel.ChartDataLabelPosition.outsideEnd
-import typings.officeDashJs.Excel.ChartDataLabelPosition.right
-import typings.officeDashJs.Excel.ChartDataLabelPosition.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.roxDashReactDashNative.roxDashReactDashNativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.roxDashReactDashNative.roxDashReactDashNativeMod.RoxFetcherStatus.AppliedFromCache
-import typings.roxDashReactDashNative.roxDashReactDashNativeMod.RoxFetcherStatus.AppliedFromEmbedded
-import typings.roxDashReactDashNative.roxDashReactDashNativeMod.RoxFetcherStatus.AppliedFromNetwork
-import typings.roxDashReactDashNative.roxDashReactDashNativeMod.RoxFetcherStatus.ErrorFetchFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

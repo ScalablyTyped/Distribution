@@ -17,7 +17,8 @@ class Floor protected () extends js.Object {
   val Parent: js.Any = js.native
   var PictureType: js.Any = js.native
   var Thickness: Double = js.native
-  var `Word.Floor_typekey`: Floor = js.native
+  @JSName("Word.Floor_typekey")
+  var WordDotFloor_typekey: Floor = js.native
   def ClearFormats(): js.Any = js.native
   def Paste(): Unit = js.native
   def Select(): js.Any = js.native

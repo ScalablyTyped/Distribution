@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.colorMod.Color
 import typings.ol.imageStateMod.ImageState
 import typings.ol.sizeMod.Size
-import typings.ol.styleIconImageMod.IconImage
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js

@@ -11,7 +11,8 @@ object noConflict extends js.Object {
   /**
     * This is relevant to browser environments with no module loader.
     *
-    * Release control of the Promise namespace to whatever it was before this library was loaded. Returns a reference to the library namespace so you can attach it to something else.
+    * Release control of the Promise namespace to whatever it was before this library was loaded.
+    * Returns a reference to the library namespace so you can attach it to something else.
     */
   def apply(): TypeofClassBluebird = js.native
 }

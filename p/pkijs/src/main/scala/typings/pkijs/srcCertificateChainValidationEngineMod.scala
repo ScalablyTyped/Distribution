@@ -1,6 +1,5 @@
 package typings.pkijs
 
-import typings.pkijs.srcCertificateChainValidationEngineMod.CertificateChainValidationEngine
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

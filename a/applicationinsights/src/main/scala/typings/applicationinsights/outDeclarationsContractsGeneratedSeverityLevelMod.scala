@@ -1,6 +1,5 @@
 package typings.applicationinsights
 
-import typings.applicationinsights.outDeclarationsContractsGeneratedSeverityLevelMod.SeverityLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

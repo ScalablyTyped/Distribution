@@ -1,9 +1,6 @@
 package typings.lyricist.lyricistMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.lyricist.lyricistMod.LyricistTextFormat.DOM
-import typings.lyricist.lyricistMod.LyricistTextFormat.HTML
-import typings.lyricist.lyricistMod.LyricistTextFormat.PLAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

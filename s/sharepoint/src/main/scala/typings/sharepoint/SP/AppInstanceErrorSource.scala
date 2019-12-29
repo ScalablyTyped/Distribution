@@ -1,14 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.AppInstanceErrorSource.appWeb
-import typings.sharepoint.SP.AppInstanceErrorSource.common
-import typings.sharepoint.SP.AppInstanceErrorSource.database
-import typings.sharepoint.SP.AppInstanceErrorSource.eventCallouts
-import typings.sharepoint.SP.AppInstanceErrorSource.finalization
-import typings.sharepoint.SP.AppInstanceErrorSource.officeExtension
-import typings.sharepoint.SP.AppInstanceErrorSource.parentWeb
-import typings.sharepoint.SP.AppInstanceErrorSource.remoteWebSite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

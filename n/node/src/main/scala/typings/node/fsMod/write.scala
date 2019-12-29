@@ -1070,59 +1070,34 @@ object write extends js.Object {
   def apply(
     fd: Double,
     string: js.Any,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: js.UndefOr[scala.Nothing],
     encoding: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: js.UndefOr[scala.Nothing],
-    encoding: java.lang.String,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    encoding: String,
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: js.UndefOr[scala.Nothing],
     encoding: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
@@ -1134,24 +1109,14 @@ object write extends js.Object {
     fd: Double,
     string: js.Any,
     position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: Double,
     encoding: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
@@ -1164,72 +1129,42 @@ object write extends js.Object {
     fd: Double,
     string: js.Any,
     position: Double,
-    encoding: java.lang.String,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    encoding: String,
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: Double,
     encoding: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: Null,
     encoding: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: Null,
-    encoding: java.lang.String,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    encoding: String,
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     string: js.Any,
     position: Null,
     encoding: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* str */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
@@ -1288,7 +1223,7 @@ object write extends js.Object {
     */
   def __promisify__(fd: Double, string: js.Any): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
   def __promisify__(fd: Double, string: js.Any, position: Double): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
-  def __promisify__(fd: Double, string: js.Any, position: Double, encoding: java.lang.String): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
-  def __promisify__(fd: Double, string: js.Any, position: Null, encoding: java.lang.String): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
+  def __promisify__(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
+  def __promisify__(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
 }
 

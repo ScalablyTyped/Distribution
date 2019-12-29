@@ -1,6 +1,6 @@
 package typings.parse5.parse5Mod
 
-import typings.parse5.parse5Strings.`#comment`
+import typings.parse5.parse5Strings.Numbersigncomment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DefaultTreeCommentNode extends DefaultTreeChildNode {
     * The name of the node.
     */
   @JSName("nodeName")
-  var nodeName_DefaultTreeCommentNode: `#comment`
+  var nodeName_DefaultTreeCommentNode: Numbersigncomment
   /**
     * Comment source code location info. Available if location info is enabled via {@link ParserOptions}.
     */
@@ -25,7 +25,7 @@ object DefaultTreeCommentNode {
   @scala.inline
   def apply(
     data: String,
-    nodeName: `#comment`,
+    nodeName: Numbersigncomment,
     parentNode: DefaultTreeParentNode,
     sourceCodeLocation: Location = null
   ): DefaultTreeCommentNode = {

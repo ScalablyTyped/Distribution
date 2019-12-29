@@ -79,6 +79,14 @@ trait OAuthInfo
     * @default "https://www.arcgis.com"
     */
   var portalUrl: String = js.native
+  /**
+    * Set this property to `true` when [popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popup) is `false` in order to have the window's location hash value restored after signing in.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#preserveUrlHash)
+    *
+    * @default false
+    */
+  var preserveUrlHash: Boolean = js.native
 }
 
 @JSGlobal("__esri.OAuthInfo")

@@ -12,7 +12,8 @@ class FaxServer protected () extends IFaxServer {
   val Configuration: FaxConfiguration = js.native
   /** FaxAccount for the current connection */
   val CurrentAccount: FaxAccount = js.native
-  var `FAXCOMEXLib.FaxServer_typekey`: FaxServer = js.native
+  @JSName("FAXCOMEXLib.FaxServer_typekey")
+  var FAXCOMEXLibDotFaxServer_typekey: FaxServer = js.native
   /** The FaxAccountSet configuration object */
   val FaxAccountSet: typings.activexDashFaxcomexlib.FAXCOMEXLib.FaxAccountSet = js.native
   /** The security configuration object */

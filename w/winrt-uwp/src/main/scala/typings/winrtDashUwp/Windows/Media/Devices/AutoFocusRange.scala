@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.AutoFocusRange.`macro`
-import typings.winrtDashUwp.Windows.Media.Devices.AutoFocusRange.fullRange
-import typings.winrtDashUwp.Windows.Media.Devices.AutoFocusRange.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

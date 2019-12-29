@@ -1,8 +1,6 @@
 package typings.typedoc.distLibUtilsOptionsDeclarationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterScope.TypeDoc
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterScope.TypeScript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

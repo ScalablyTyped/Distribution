@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.eightBit
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.gsmSevenBit
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.ia5
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.korean
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.latin
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.latinHebrew
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.optimal
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.sevenBitAscii
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.shiftJis
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.unicode
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

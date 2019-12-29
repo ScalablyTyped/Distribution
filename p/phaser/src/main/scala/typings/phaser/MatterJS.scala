@@ -1,6 +1,5 @@
 package typings.phaser
 
-import typings.phaser.MatterJS.Composite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

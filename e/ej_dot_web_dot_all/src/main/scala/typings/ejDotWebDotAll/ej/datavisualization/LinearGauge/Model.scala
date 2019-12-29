@@ -144,7 +144,7 @@ trait Model extends js.Object {
   /** Specify tooltip options of linear gauge
     * @Default {false}
     */
-  var tooltip: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Tooltip] = js.undefined
+  var tooltip: js.UndefOr[Tooltip] = js.undefined
   /** Specifies the value of the Gauge.
     * @Default {0}
     */
@@ -196,7 +196,7 @@ object Model {
     scales: js.Array[Scale] = null,
     theme: Themes | String = null,
     tickColor: String = null,
-    tooltip: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Tooltip = null,
+    tooltip: Tooltip = null,
     value: Int | Double = null,
     width: Int | Double = null
   ): Model = {

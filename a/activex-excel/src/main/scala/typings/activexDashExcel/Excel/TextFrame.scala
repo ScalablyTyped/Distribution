@@ -12,7 +12,8 @@ class TextFrame protected () extends js.Object {
   var AutoMargins: Boolean = js.native
   var AutoSize: Boolean = js.native
   val Creator: XlCreator = js.native
-  var `Excel.TextFrame_typekey`: TextFrame = js.native
+  @JSName("Excel.TextFrame_typekey")
+  var ExcelDotTextFrame_typekey: TextFrame = js.native
   var HorizontalAlignment: XlHAlign = js.native
   var HorizontalOverflow: XlOartHorizontalOverflow = js.native
   var MarginBottom: Double = js.native

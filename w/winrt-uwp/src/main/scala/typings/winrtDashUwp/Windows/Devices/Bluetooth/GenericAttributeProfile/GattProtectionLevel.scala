@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.authenticationRequired
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionAndAuthenticationRequired
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionRequired
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.plain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

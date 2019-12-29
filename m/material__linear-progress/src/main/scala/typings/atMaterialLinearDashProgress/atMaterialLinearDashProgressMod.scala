@@ -2,7 +2,6 @@ package typings.atMaterialLinearDashProgress
 
 import typings.atMaterialBase.atMaterialBaseMod.MDCComponent
 import typings.atMaterialLinearDashProgress.adapterMod.MDCLinearProgressAdapter
-import typings.atMaterialLinearDashProgress.atMaterialLinearDashProgressMod.MDCLinearProgress
 import typings.atMaterialLinearDashProgress.foundationMod.default
 import typings.std.Element
 import scala.scalajs.js

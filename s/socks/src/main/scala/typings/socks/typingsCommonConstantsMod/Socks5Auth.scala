@@ -1,9 +1,6 @@
 package typings.socks.typingsCommonConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.socks.typingsCommonConstantsMod.Socks5Auth.GSSApi
-import typings.socks.typingsCommonConstantsMod.Socks5Auth.NoAuth
-import typings.socks.typingsCommonConstantsMod.Socks5Auth.UserPass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

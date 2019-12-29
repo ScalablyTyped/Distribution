@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.InterpolationType.MAX
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.InterpolationType.MIN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.InterpolationType.NUMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.InterpolationType.PERCENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.InterpolationType.PERCENTILE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

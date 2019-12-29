@@ -1,9 +1,6 @@
 package typings.phaser.Phaser.Physics.Impact
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.Phaser.Physics.Impact.TYPE.A
-import typings.phaser.Phaser.Physics.Impact.TYPE.B
-import typings.phaser.Phaser.Physics.Impact.TYPE.BOTH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,8 +56,7 @@ object TYPE extends js.Object {
   object BOTH extends TopLevel[BOTH with Double]
   
   /* 0 */ @js.native
-  object NONE
-    extends TopLevel[typings.phaser.Phaser.Physics.Impact.TYPE.NONE with Double]
+  object NONE extends TopLevel[NONE with Double]
   
 }
 

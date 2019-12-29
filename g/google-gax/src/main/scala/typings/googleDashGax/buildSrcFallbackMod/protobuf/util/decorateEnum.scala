@@ -1,5 +1,6 @@
 package typings.googleDashGax.buildSrcFallbackMod.protobuf.util
 
+import typings.protobufjs.protobufjsMod.Enum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,6 @@ object decorateEnum extends js.Object {
     * @param object Enum object
     * @returns Reflected enum
     */
-  def apply(`object`: js.Object): typings.protobufjs.protobufjsMod.Enum = js.native
+  def apply(`object`: js.Object): Enum = js.native
 }
 

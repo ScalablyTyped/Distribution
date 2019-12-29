@@ -25,10 +25,10 @@ object nodeDashTelegramDashBotDashApiStrings {
   sealed trait animation extends MessageType
   
   @js.native
-  sealed trait `application/pdf` extends DocumentMimeType
+  sealed trait applicationSlashpdf extends DocumentMimeType
   
   @js.native
-  sealed trait `application/zip` extends DocumentMimeType
+  sealed trait applicationSlashzip extends DocumentMimeType
   
   @js.native
   sealed trait article extends js.Object
@@ -264,9 +264,9 @@ object nodeDashTelegramDashBotDashApiStrings {
   @scala.inline
   def animation: animation = "animation".asInstanceOf[animation]
   @scala.inline
-  def `application/pdf`: `application/pdf` = "application/pdf".asInstanceOf[`application/pdf`]
+  def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
   @scala.inline
-  def `application/zip`: `application/zip` = "application/zip".asInstanceOf[`application/zip`]
+  def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
   @scala.inline
   def article: article = "article".asInstanceOf[article]
   @scala.inline

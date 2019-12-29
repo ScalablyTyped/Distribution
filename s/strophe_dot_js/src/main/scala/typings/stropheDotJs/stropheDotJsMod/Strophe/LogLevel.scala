@@ -1,11 +1,6 @@
 package typings.stropheDotJs.stropheDotJsMod.Strophe
 
 import org.scalablytyped.runtime.TopLevel
-import typings.stropheDotJs.stropheDotJsMod.Strophe.LogLevel.DEBUG
-import typings.stropheDotJs.stropheDotJsMod.Strophe.LogLevel.ERROR
-import typings.stropheDotJs.stropheDotJsMod.Strophe.LogLevel.FATAL
-import typings.stropheDotJs.stropheDotJsMod.Strophe.LogLevel.INFO
-import typings.stropheDotJs.stropheDotJsMod.Strophe.LogLevel.WARN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

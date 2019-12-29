@@ -1,7 +1,6 @@
 package typings.dndDashCore
 
 import typings.dndDashCore.libInterfacesMod.XYCoord
-import typings.dndDashCore.libUtilsEqualityMod.EqualityCheck
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

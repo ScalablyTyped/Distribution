@@ -1,7 +1,5 @@
 package typings.graphqlDashSubscriptions
 
-import typings.graphqlDashSubscriptions.distWithDashFilterMod.FilterFn
-import typings.graphqlDashSubscriptions.distWithDashFilterMod.ResolverFn
 import typings.std.AsyncIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

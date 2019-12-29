@@ -1,22 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.ProjectViewTypes.Calendar
-import typings.officeDashJs.Office.ProjectViewTypes.Gantt
-import typings.officeDashJs.Office.ProjectViewTypes.NetworkDiagram
-import typings.officeDashJs.Office.ProjectViewTypes.ResourceForm
-import typings.officeDashJs.Office.ProjectViewTypes.ResourceGraph
-import typings.officeDashJs.Office.ProjectViewTypes.ResourceNames
-import typings.officeDashJs.Office.ProjectViewTypes.ResourceSheet
-import typings.officeDashJs.Office.ProjectViewTypes.ResourceUsage
-import typings.officeDashJs.Office.ProjectViewTypes.TaskDetails
-import typings.officeDashJs.Office.ProjectViewTypes.TaskDiagram
-import typings.officeDashJs.Office.ProjectViewTypes.TaskForm
-import typings.officeDashJs.Office.ProjectViewTypes.TaskNameForm
-import typings.officeDashJs.Office.ProjectViewTypes.TaskSheet
-import typings.officeDashJs.Office.ProjectViewTypes.TaskUsage
-import typings.officeDashJs.Office.ProjectViewTypes.TeamPlanner
-import typings.officeDashJs.Office.ProjectViewTypes.Timeline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

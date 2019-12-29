@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sparkline
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sparkline.Type.Area
-import typings.ejDotWebDotAll.ej.Sparkline.Type.Column
-import typings.ejDotWebDotAll.ej.Sparkline.Type.Line
-import typings.ejDotWebDotAll.ej.Sparkline.Type.Pie
-import typings.ejDotWebDotAll.ej.Sparkline.Type.WinLoss
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,31 +13,26 @@ sealed trait Type extends js.Object
 object Type extends js.Object {
   //string
   @js.native
-  sealed trait Area
-    extends typings.ejDotWebDotAll.ej.Sparkline.Type
+  sealed trait Area extends Type
   
   //string
   @js.native
-  sealed trait Column
-    extends typings.ejDotWebDotAll.ej.Sparkline.Type
+  sealed trait Column extends Type
   
   //string
   @js.native
-  sealed trait Line
-    extends typings.ejDotWebDotAll.ej.Sparkline.Type
+  sealed trait Line extends Type
   
   //string
   @js.native
-  sealed trait Pie
-    extends typings.ejDotWebDotAll.ej.Sparkline.Type
+  sealed trait Pie extends Type
   
   //string
   @js.native
-  sealed trait WinLoss
-    extends typings.ejDotWebDotAll.ej.Sparkline.Type
+  sealed trait WinLoss extends Type
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.Sparkline.Type with Double] = js.native
+  def apply(value: Double): js.UndefOr[Type with Double] = js.native
   /* 0 */ @js.native
   object Area extends TopLevel[Area with Double]
   

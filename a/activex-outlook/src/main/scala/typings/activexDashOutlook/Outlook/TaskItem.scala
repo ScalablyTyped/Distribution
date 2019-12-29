@@ -48,7 +48,8 @@ class TaskItem protected () extends js.Object {
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
   var Ordinal: Double = js.native
-  var `Outlook.TaskItem_typekey`: TaskItem = js.native
+  @JSName("Outlook.TaskItem_typekey")
+  var OutlookDotTaskItem_typekey: TaskItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   var Owner: String = js.native

@@ -1,7 +1,7 @@
 package typings.expressDashBruteDashMongo.expressDashBruteDashMongoMod
 
 import typings.mongodb.mongodbMod.Collection
-import typings.mongodb.mongodbMod.Default
+import typings.mongodb.mongodbMod.DefaultSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 @JSImport("express-brute-mongo", JSImport.Namespace)
 @js.native
 class ^ protected () extends MongoStore {
-  def this(getCollection: js.Function1[/* collection */ js.Function1[/* c */ Collection[Default], Unit], Unit]) = this()
+  def this(getCollection: js.Function1[/* collection */ js.Function1[/* c */ Collection[DefaultSchema], Unit], Unit]) = this()
   def this(
-    getCollection: js.Function1[/* collection */ js.Function1[/* c */ Collection[Default], Unit], Unit],
+    getCollection: js.Function1[/* collection */ js.Function1[/* c */ Collection[DefaultSchema], Unit], Unit],
     options: js.Object
   ) = this()
 }

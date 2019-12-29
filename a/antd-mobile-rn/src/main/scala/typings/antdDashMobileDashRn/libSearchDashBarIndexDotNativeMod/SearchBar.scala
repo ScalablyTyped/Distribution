@@ -18,6 +18,6 @@ trait SearchBar
   def onCancel(): Unit = js.native
   def onChangeText(value: String): Unit = js.native
   def onFocus(): Unit = js.native
-  def onSubmit(`_`: Anon_NativeEvent): Unit = js.native
+  def onSubmit(_underscore: Anon_NativeEvent): Unit = js.native
 }
 

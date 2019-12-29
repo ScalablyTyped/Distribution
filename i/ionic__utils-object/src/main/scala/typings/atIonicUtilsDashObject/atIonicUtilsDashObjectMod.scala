@@ -1,7 +1,6 @@
 package typings.atIonicUtilsDashObject
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicUtilsDashObject.atIonicUtilsDashObjectMod.AliasedMapKey
 import typings.std.Map
 import typings.std.ProxyHandler
 import scala.scalajs.js

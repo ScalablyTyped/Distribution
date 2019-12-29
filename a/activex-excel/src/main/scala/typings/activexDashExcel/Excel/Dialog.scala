@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Dialog protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Dialog_typekey`: Dialog = js.native
+  @JSName("Excel.Dialog_typekey")
+  var ExcelDotDialog_typekey: Dialog = js.native
   val Parent: js.Any = js.native
   def Show(
     Arg1: js.UndefOr[js.Any],

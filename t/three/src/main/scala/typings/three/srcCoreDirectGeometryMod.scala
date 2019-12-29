@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcCoreDirectGeometryMod.DirectGeometry
 import typings.three.srcCoreGeometryMod.Geometry
 import typings.three.srcCoreGeometryMod.MorphTarget
 import typings.three.srcMathBox3Mod.Box3

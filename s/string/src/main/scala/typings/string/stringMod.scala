@@ -1,6 +1,5 @@
 package typings.string
 
-import typings.string.stringMod.StringJS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

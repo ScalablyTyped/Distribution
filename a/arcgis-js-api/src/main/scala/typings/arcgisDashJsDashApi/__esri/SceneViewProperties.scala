@@ -1,6 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.global
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.high
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.large
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.local
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.low
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.medium
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.small
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xlarge
@@ -113,7 +117,7 @@ trait SceneViewProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#qualityProfile)
     */
-  var qualityProfile: js.UndefOr[String] = js.undefined
+  var qualityProfile: js.UndefOr[low | medium | high] = js.undefined
   /**
     * Represents an approximation of the map scale at the center of the view. Setting the scale immediately changes the current view. For animating the view, see [goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo).  When set in the constructor, this property overrides the [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#zoom) property. This property will be ignored if the [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewpoint), [camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#camera), or [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#extent) properties are also set in the constructor.
     *
@@ -134,7 +138,7 @@ trait SceneViewProperties
     *
     * @default global
     */
-  var viewingMode: js.UndefOr[String] = js.undefined
+  var viewingMode: js.UndefOr[global | local] = js.undefined
   /**
     * Represents the current view as a [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) or point of observation on the view. In SceneViews, [camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#camera) should be used in favor of viewpoint for watching or changing the point of view. Setting the viewpoint immediately changes the current view. For animating the view, see [goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo).  When set in the constructor, this property overrides the [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#extent), [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#center), [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale), and [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#zoom) properties. This property will be ignored if [camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#camera) is also set in the constructor.  The viewpoint property contains an internal reference which may be modified in the future. To persist or modify the viewpoint, create a clone using [viewpoint.clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#clone).
     *
@@ -170,14 +174,15 @@ object SceneViewProperties {
     highlightOptions: SceneViewHighlightOptionsProperties = null,
     layerViews: CollectionProperties[LayerViewProperties] = null,
     map: MapProperties = null,
+    navigation: NavigationProperties = null,
     padding: ViewPadding = null,
     popup: PopupProperties = null,
-    qualityProfile: String = null,
+    qualityProfile: low | medium | high = null,
     scale: Int | Double = null,
     spatialReference: SpatialReferenceProperties = null,
     timeExtent: TimeExtentProperties = null,
     ui: DefaultUIProperties = null,
-    viewingMode: String = null,
+    viewingMode: global | local = null,
     viewpoint: ViewpointProperties = null,
     widthBreakpoint: xsmall | small | medium | large | xlarge = null,
     zoom: Int | Double = null
@@ -201,6 +206,7 @@ object SceneViewProperties {
     if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions.asInstanceOf[js.Any])
     if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (qualityProfile != null) __obj.updateDynamic("qualityProfile")(qualityProfile.asInstanceOf[js.Any])

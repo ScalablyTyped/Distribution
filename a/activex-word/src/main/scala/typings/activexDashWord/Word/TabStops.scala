@@ -11,7 +11,8 @@ class TabStops protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.TabStops_typekey`: TabStops = js.native
+  @JSName("Word.TabStops_typekey")
+  var WordDotTabStops_typekey: TabStops = js.native
   def Add(Position: Double): TabStop = js.native
   def Add(Position: Double, Alignment: js.Any): TabStop = js.native
   def Add(Position: Double, Alignment: js.Any, Leader: js.Any): TabStop = js.native

@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.daily
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.monthly
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.monthlyOnDay
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.weekly
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.yearly
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.yearlyOnDay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

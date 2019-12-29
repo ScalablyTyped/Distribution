@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionConverted
-import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionTargetConverted
-import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionTargetUnconverted
-import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionUnconverted
-import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

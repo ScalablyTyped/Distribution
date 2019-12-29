@@ -1,15 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.ICE_COLLECTION_TIMEOUT
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.MICROPHONE_NOT_SHARED
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.OTHER
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.REALTIME_COMMUNICATION_ERROR
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.SIGNALLING_CONNECTION_FAILURE
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.SIGNALLING_HANDSHAKE_FAILURE
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.UNSUPPORTED_BROWSER
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.USER_BUSY_ERROR
-import typings.amazonDashConnectDashStreams.connect.SoftphoneErrorTypes.WEBRTC_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

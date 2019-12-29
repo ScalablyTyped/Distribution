@@ -1,9 +1,6 @@
 package typings.webcola.distSrcLayoutMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.webcola.distSrcLayoutMod.EventType.end
-import typings.webcola.distSrcLayoutMod.EventType.start
-import typings.webcola.distSrcLayoutMod.EventType.tick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 
 trait IText extends ISprite {
   /** [Config Option] (String) */
-  var font: js.UndefOr[java.lang.String] = js.undefined
+  var font: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
+  var fontFamily: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Number) */
   var fontSize: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
+  var fontStyle: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fontVariant: js.UndefOr[java.lang.String] = js.undefined
+  var fontVariant: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
+  var fontWeight: js.UndefOr[String] = js.undefined
   /** [Method] Render method
   		* @param surface Object
   		* @param ctx Object
@@ -28,11 +28,11 @@ trait IText extends ISprite {
   @JSName("render")
   var render_IText: js.UndefOr[js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var textAlign: js.UndefOr[java.lang.String] = js.undefined
+  var textAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var textBaseline: js.UndefOr[java.lang.String] = js.undefined
+  var textBaseline: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var x: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -47,7 +47,7 @@ object IText {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -60,39 +60,39 @@ object IText {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fillOpacity: Int | Double = null,
-    fillStyle: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    font: java.lang.String = null,
-    fontFamily: java.lang.String = null,
+    fillStyle: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    font: String = null,
+    fontFamily: String = null,
     fontSize: js.Any = null,
-    fontStyle: java.lang.String = null,
-    fontVariant: java.lang.String = null,
-    fontWeight: java.lang.String = null,
+    fontStyle: String = null,
+    fontVariant: String = null,
+    fontWeight: String = null,
     getBBox: /* isWithoutTransform */ js.UndefOr[Boolean] => Unit = null,
     getBBoxCenter: /* isWithoutTransform */ js.UndefOr[Boolean] => Array = null,
     getBubbleEvents: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getParent: () => _ = null,
     globalAlpha: Int | Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hide: () => IText = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    lineCap: java.lang.String = null,
-    lineJoin: java.lang.String = null,
+    lineCap: String = null,
+    lineJoin: String = null,
     lineWidth: Int | Double = null,
     listeners: js.Any = null,
     miterLimit: Int | Double = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -100,7 +100,7 @@ object IText {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     render: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => _ = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
@@ -118,22 +118,22 @@ object IText {
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setParent: /* parent */ js.UndefOr[js.Any] => Unit = null,
     shadowBlur: Int | Double = null,
-    shadowColor: java.lang.String = null,
+    shadowColor: String = null,
     shadowOffsetX: Int | Double = null,
     shadowOffsetY: Int | Double = null,
     show: () => IText = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     strokeOpacity: Int | Double = null,
-    strokeStyle: java.lang.String = null,
+    strokeStyle: String = null,
     suspendEvents: () => Unit = null,
-    text: java.lang.String = null,
-    textAlign: java.lang.String = null,
-    textBaseline: java.lang.String = null,
+    text: String = null,
+    textAlign: String = null,
+    textBaseline: String = null,
     transformFillStroke: js.UndefOr[Boolean] = js.undefined,
     translationX: Int | Double = null,
     translationY: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     updatePlainBBox: /* plain */ js.UndefOr[js.Any] => Unit = null,

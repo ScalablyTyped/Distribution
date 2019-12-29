@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.other
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.personal
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.work
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

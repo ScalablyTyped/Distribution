@@ -5,37 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RiotComponentExport[P, S]
+trait RiotComponentExport[Props, State]
   extends /* key */ StringDictionary[js.Any] {
   // optional alias to map the children component names
-  var components: js.UndefOr[StringDictionary[RiotComponentShell[P, S]]] = js.undefined
+  var components: js.UndefOr[StringDictionary[RiotComponentShell[Props, State]]] = js.undefined
   // lifecycle methods
-  var onBeforeMount: js.UndefOr[js.Function2[/* currentProps */ P, /* currentState */ S, Unit]] = js.undefined
-  var onBeforeUnmount: js.UndefOr[js.Function2[/* currentProps */ P, /* currentState */ S, Unit]] = js.undefined
-  var onBeforeUpdate: js.UndefOr[js.Function2[/* currentProps */ P, /* currentState */ S, Unit]] = js.undefined
-  var onMounted: js.UndefOr[js.Function2[/* currentProps */ P, /* currentState */ S, Unit]] = js.undefined
-  var onUnmounted: js.UndefOr[js.Function2[/* currentProps */ P, /* currentState */ S, Unit]] = js.undefined
-  var onUpdated: js.UndefOr[js.Function2[/* currentProps */ P, /* currentState */ S, Unit]] = js.undefined
+  var onBeforeMount: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+  var onBeforeUnmount: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+  var onBeforeUpdate: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+  var onMounted: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+  var onUnmounted: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+  var onUpdated: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
   // state handling methods
-  var shouldUpdate: js.UndefOr[js.Function2[/* newProps */ P, /* currentProps */ P, Boolean]] = js.undefined
+  var shouldUpdate: js.UndefOr[js.Function2[/* newProps */ Props, /* currentProps */ Props, Boolean]] = js.undefined
   // optional on the component object
-  var state: js.UndefOr[S] = js.undefined
+  var state: js.UndefOr[State] = js.undefined
 }
 
 object RiotComponentExport {
   @scala.inline
-  def apply[P, S](
+  def apply[Props, State](
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    components: StringDictionary[RiotComponentShell[P, S]] = null,
-    onBeforeMount: (/* currentProps */ P, /* currentState */ S) => Unit = null,
-    onBeforeUnmount: (/* currentProps */ P, /* currentState */ S) => Unit = null,
-    onBeforeUpdate: (/* currentProps */ P, /* currentState */ S) => Unit = null,
-    onMounted: (/* currentProps */ P, /* currentState */ S) => Unit = null,
-    onUnmounted: (/* currentProps */ P, /* currentState */ S) => Unit = null,
-    onUpdated: (/* currentProps */ P, /* currentState */ S) => Unit = null,
-    shouldUpdate: (/* newProps */ P, /* currentProps */ P) => Boolean = null,
-    state: S = null
-  ): RiotComponentExport[P, S] = {
+    components: StringDictionary[RiotComponentShell[Props, State]] = null,
+    onBeforeMount: (/* currentProps */ Props, /* currentState */ State) => Unit = null,
+    onBeforeUnmount: (/* currentProps */ Props, /* currentState */ State) => Unit = null,
+    onBeforeUpdate: (/* currentProps */ Props, /* currentState */ State) => Unit = null,
+    onMounted: (/* currentProps */ Props, /* currentState */ State) => Unit = null,
+    onUnmounted: (/* currentProps */ Props, /* currentState */ State) => Unit = null,
+    onUpdated: (/* currentProps */ Props, /* currentState */ State) => Unit = null,
+    shouldUpdate: (/* newProps */ Props, /* currentProps */ Props) => Boolean = null,
+    state: State = null
+  ): RiotComponentExport[Props, State] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object RiotComponentExport {
     if (onUpdated != null) __obj.updateDynamic("onUpdated")(js.Any.fromFunction2(onUpdated))
     if (shouldUpdate != null) __obj.updateDynamic("shouldUpdate")(js.Any.fromFunction2(shouldUpdate))
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RiotComponentExport[P, S]]
+    __obj.asInstanceOf[RiotComponentExport[Props, State]]
   }
 }
 

@@ -14,7 +14,7 @@ trait ScrollNumber
   extends Component[ScrollNumberProps, ScrollNumberState, js.Any] {
   var lastCount: js.UndefOr[String | Double | Null] = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MScrollNumber(`_`: js.Any, prevState: ScrollNumberState): Unit = js.native
+  def componentDidUpdate_MScrollNumber(_underscore: js.Any, prevState: ScrollNumberState): Unit = js.native
   def getPositionByNum(num: Double, i: Double): Double = js.native
   def onAnimated(): Unit = js.native
   def renderCurrentNumber(prefixCls: String, num: String, i: Double): Element = js.native

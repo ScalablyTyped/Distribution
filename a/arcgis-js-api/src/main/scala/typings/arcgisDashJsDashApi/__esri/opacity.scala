@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,7 @@ trait opacity extends js.Object {
     * @param params.view A [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) or [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance is required when a `valueExpression` is specified.
     *
     */
-  def createVisualVariable(params: opacityCreateVisualVariableParams): IPromise[opacityVisualVariableResult]
+  def createVisualVariable(params: opacityCreateVisualVariableParams): js.Promise[opacityVisualVariableResult]
 }
 
 @JSGlobal("__esri.opacity")

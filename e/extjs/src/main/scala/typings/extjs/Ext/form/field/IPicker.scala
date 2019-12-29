@@ -6,8 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IPicker
-  extends typings.extjs.Ext.form.field.ITrigger {
+trait IPicker extends ITrigger {
   /** [Method] Aligns the picker to the input element */
   var alignPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Collapses this field s picker dropdown  */
@@ -28,9 +27,9 @@ trait IPicker
   @JSName("onTriggerClick")
   var onTriggerClick_IPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var openCls: js.UndefOr[java.lang.String] = js.undefined
+  var openCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var pickerAlign: js.UndefOr[java.lang.String] = js.undefined
+  var pickerAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number[]) */
   var pickerOffset: js.UndefOr[Array] = js.undefined
 }
@@ -38,7 +37,7 @@ trait IPicker
 object IPicker {
   @scala.inline
   def apply(
-    ITrigger: typings.extjs.Ext.form.field.ITrigger = null,
+    ITrigger: ITrigger = null,
     alignPicker: () => Unit = null,
     collapse: () => Unit = null,
     createPicker: () => Unit = null,
@@ -47,8 +46,8 @@ object IPicker {
     isExpanded: js.UndefOr[Boolean] = js.undefined,
     matchFieldWidth: js.UndefOr[Boolean] = js.undefined,
     onTriggerClick: () => Unit = null,
-    openCls: java.lang.String = null,
-    pickerAlign: java.lang.String = null,
+    openCls: String = null,
+    pickerAlign: String = null,
     pickerOffset: Array = null
   ): IPicker = {
     val __obj = js.Dynamic.literal()

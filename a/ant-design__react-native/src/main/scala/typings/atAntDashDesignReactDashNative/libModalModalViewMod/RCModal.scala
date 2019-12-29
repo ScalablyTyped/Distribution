@@ -1,7 +1,7 @@
 package typings.atAntDashDesignReactDashNative.libModalModalViewMod
 
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeNumbers.`0`
-import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeNumbers.`1DOT05`
+import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeNumbers.`1.05`
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeNumbers.`1`
 import typings.react.reactMod.Component
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait RCModal
   def componentWillUnmount_MRCModal(): Unit = js.native
   def getOpacity(visible: Boolean): `1` | `0` = js.native
   def getPosition(visible: Boolean): Double = js.native
-  def getScale(visible: Boolean): `1` | `1DOT05` = js.native
+  def getScale(visible: Boolean): `1` | `1.05` = js.native
   def onMaskClose(): Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MRCModal(nextProps: IModalPropTypes, nextState: js.Any): Boolean = js.native

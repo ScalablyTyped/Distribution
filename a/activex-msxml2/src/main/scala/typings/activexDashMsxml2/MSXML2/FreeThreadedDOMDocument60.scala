@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.FreeThreadedDOMDocument60")
 @js.native
 class FreeThreadedDOMDocument60 protected () extends js.Object {
-  var `MSXML2.FreeThreadedDOMDocument60_typekey`: FreeThreadedDOMDocument60 = js.native
+  @JSName("MSXML2.FreeThreadedDOMDocument60_typekey")
+  var MSXML2DotFreeThreadedDOMDocument60_typekey: FreeThreadedDOMDocument60 = js.native
   /** flag for asynchronous download */
   var async: Boolean = js.native
   /** the collection of the node's attributes */

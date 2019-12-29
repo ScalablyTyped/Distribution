@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.AttributeRevocationRefs")
 @js.native
-class AttributeRevocationRefs () extends CompleteRevocationRefs
+class AttributeRevocationRefs ()
+  extends typings.xadesjs.buildTypesXmlMod.AttributeRevocationRefs
 

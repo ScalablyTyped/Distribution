@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,13 +40,13 @@ trait classBreaks extends js.Object {
     * @param params.features A subset of features for which to generate the class breaks.
     *
     */
-  def classBreaks(params: classBreaksClassBreaksParams): IPromise[ClassBreaksResult]
+  def classBreaks(params: classBreaksClassBreaksParams): js.Promise[ClassBreaksResult]
 }
 
 @JSGlobal("__esri.classBreaks")
 @js.native
 object classBreaks
   extends TopLevel[
-      js.Function1[/* params */ classBreaksClassBreaksParams, IPromise[ClassBreaksResult]]
+      js.Function1[/* params */ classBreaksClassBreaksParams, js.Promise[ClassBreaksResult]]
     ]
 

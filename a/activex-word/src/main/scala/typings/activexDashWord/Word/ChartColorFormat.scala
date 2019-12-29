@@ -13,7 +13,8 @@ class ChartColorFormat protected () extends js.Object {
   val RGB: Double = js.native
   var SchemeColor: Double = js.native
   val Type: Double = js.native
-  var `Word.ChartColorFormat_typekey`: ChartColorFormat = js.native
+  @JSName("Word.ChartColorFormat_typekey")
+  var WordDotChartColorFormat_typekey: ChartColorFormat = js.native
   val _Default: Double = js.native
 }
 

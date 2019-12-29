@@ -1,10 +1,6 @@
 package typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.ArithmeticError
 
 import org.scalablytyped.runtime.TopLevel
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.ArithmeticError.ArithmeticErrorType.DIVISIONBYZERO
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.ArithmeticError.ArithmeticErrorType.OVERFLOW
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.ArithmeticError.ArithmeticErrorType.UNDERFLOW
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.ArithmeticError.ArithmeticErrorType.UNKNOWNARITHMETICERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.builderDashUtil.outArchMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.builderDashUtil.outArchMod.Arch.arm64
-import typings.builderDashUtil.outArchMod.Arch.armv7l
-import typings.builderDashUtil.outArchMod.Arch.ia32
-import typings.builderDashUtil.outArchMod.Arch.x64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

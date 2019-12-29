@@ -3,7 +3,6 @@ package typings.wonderDashFrp
 import typings.wonderDashFrp.distCommonjsCoreEntityMod.Entity
 import typings.wonderDashFrp.distCommonjsCoreObserverMod.Observer
 import typings.wonderDashFrp.distCommonjsCoreSchedulerMod.Scheduler
-import typings.wonderDashFrp.distCommonjsCoreStreamMod.Stream
 import typings.wonderDashFrp.distCommonjsDisposableIDisposableMod.IDisposable
 import typings.wonderDashFrp.distCommonjsObserverIObserverMod.IObserver
 import typings.wonderDashFrp.distCommonjsSubjectSubjectMod.Subject

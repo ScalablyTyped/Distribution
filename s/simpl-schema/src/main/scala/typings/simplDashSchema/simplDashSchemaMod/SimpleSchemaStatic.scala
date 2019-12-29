@@ -17,17 +17,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SimpleSchemaStatic
-  extends Instantiable2[
+  extends Instantiable1[
+      (/* schema */ js.Array[js.Any]) | (/* schema */ StringDictionary[
+        SchemaDefinition | BooleanConstructor | StringConstructor | NumberConstructor | DateConstructor | ArrayConstructor | String | RegExp | SimpleSchema
+      ]), 
+      SimpleSchema
+    ]
+     with Instantiable2[
       (/* schema */ js.Array[js.Any]) | (/* schema */ StringDictionary[
         SchemaDefinition | BooleanConstructor | StringConstructor | NumberConstructor | DateConstructor | ArrayConstructor | String | RegExp | SimpleSchema
       ]), 
       /* options */ SimpleSchemaOptions, 
-      SimpleSchema
-    ]
-     with Instantiable1[
-      (/* schema */ js.Array[js.Any]) | (/* schema */ StringDictionary[
-        SchemaDefinition | BooleanConstructor | StringConstructor | NumberConstructor | DateConstructor | ArrayConstructor | String | RegExp | SimpleSchema
-      ]), 
       SimpleSchema
     ] {
   var ErrorTypes: Anon_BADDATE = js.native

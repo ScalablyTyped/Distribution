@@ -1,12 +1,12 @@
 package typings.extjs.Ext.panel
 
 import typings.extjs.Ext.Array
+import typings.extjs.Ext.container.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IHeader
-  extends typings.extjs.Ext.container.IContainer {
+trait IHeader extends IContainer {
   /** [Method] Add a tool to the header
   		* @param tool Object
   		*/
@@ -26,9 +26,9 @@ trait IHeader
   /** [Config Option] (Number/String) */
   var glyph: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.undefined
+  var iconCls: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var isHeader: js.UndefOr[Boolean] = js.undefined
   /** [Method] Set up the tools lt tool type gt link in the owning Panel
@@ -51,19 +51,19 @@ trait IHeader
   /** [Method] Sets the image path that provides the icon image for this header
   		* @param icon String The new icon path
   		*/
-  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the CSS class that provides the icon image for this header
   		* @param cls String The new CSS class name
   		*/
-  var setIconCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIconCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the title of the header
   		* @param title String The title to be set
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var titleAlign: js.UndefOr[java.lang.String] = js.undefined
+  var titleAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var titlePosition: js.UndefOr[Double] = js.undefined
 }
@@ -71,23 +71,23 @@ trait IHeader
 object IHeader {
   @scala.inline
   def apply(
-    IContainer: typings.extjs.Ext.container.IContainer = null,
+    IContainer: IContainer = null,
     addTool: /* tool */ js.UndefOr[js.Any] => Unit = null,
     addUIClsToElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
     afterLayout: () => Unit = null,
     getTools: () => Array = null,
     glyph: js.Any = null,
-    icon: java.lang.String = null,
-    iconCls: java.lang.String = null,
+    icon: String = null,
+    iconCls: String = null,
     isHeader: js.UndefOr[Boolean] = js.undefined,
     onAdd: (/* component */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Unit = null,
     removeUIClsFromElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
     setGlyph: /* glyph */ js.UndefOr[js.Any] => Unit = null,
-    setIcon: /* icon */ js.UndefOr[java.lang.String] => Unit = null,
-    setIconCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
-    title: java.lang.String = null,
-    titleAlign: java.lang.String = null,
+    setIcon: /* icon */ js.UndefOr[String] => Unit = null,
+    setIconCls: /* cls */ js.UndefOr[String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
+    title: String = null,
+    titleAlign: String = null,
     titlePosition: Int | Double = null
   ): IHeader = {
     val __obj = js.Dynamic.literal()

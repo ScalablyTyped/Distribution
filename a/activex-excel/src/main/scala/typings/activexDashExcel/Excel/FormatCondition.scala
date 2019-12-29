@@ -16,7 +16,8 @@ class FormatCondition protected () extends js.Object {
   val Borders_Original: Borders = js.native
   val Creator: XlCreator = js.native
   var DateOperator: XlTimePeriods = js.native
-  var `Excel.FormatCondition_typekey`: FormatCondition = js.native
+  @JSName("Excel.FormatCondition_typekey")
+  var ExcelDotFormatCondition_typekey: FormatCondition = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Formula1: String = js.native
   val Formula2: String = js.native

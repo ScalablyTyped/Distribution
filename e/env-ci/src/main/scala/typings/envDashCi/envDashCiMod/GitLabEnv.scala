@@ -1,7 +1,7 @@
 package typings.envDashCi.envDashCiMod
 
-import typings.envDashCi.envDashCiNumbers.`true`
-import typings.envDashCi.envDashCiStrings.`GitLab CI/CD`
+import typings.envDashCi.envDashCiBooleans.`true`
+import typings.envDashCi.envDashCiStrings.`GitLab CISlashCD`
 import typings.envDashCi.envDashCiStrings.gitlab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait GitLabEnv
   var commit: String
   var job: String
   var jobUrl: String
-  var name: `GitLab CI/CD`
+  var name: `GitLab CISlashCD`
   var root: String
   var service: gitlab
   var slug: String
@@ -33,7 +33,7 @@ object GitLabEnv {
     isCi: `true`,
     job: String,
     jobUrl: String,
-    name: `GitLab CI/CD`,
+    name: `GitLab CISlashCD`,
     root: String,
     service: gitlab,
     slug: String,

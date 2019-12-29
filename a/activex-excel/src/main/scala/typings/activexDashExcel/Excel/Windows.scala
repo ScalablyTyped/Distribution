@@ -1,6 +1,6 @@
 package typings.activexDashExcel.Excel
 
-import typings.activexDashExcel.activexDashExcelNumbers.`true`
+import typings.activexDashExcel.activexDashExcelBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

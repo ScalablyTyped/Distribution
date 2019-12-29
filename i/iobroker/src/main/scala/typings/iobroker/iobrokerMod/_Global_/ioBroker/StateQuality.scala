@@ -1,15 +1,6 @@
 package typings.iobroker.iobrokerMod._Global_.ioBroker
 
 import org.scalablytyped.runtime.TopLevel
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.bad
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.device_not_connected
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.device_reports_error
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_device_problem
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_problem
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_sensor_problem
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.good
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.sensor_not_connected
-import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.sensor_reports_error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

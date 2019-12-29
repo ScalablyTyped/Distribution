@@ -1,6 +1,6 @@
 package typings.detectDashBrowser.detectDashBrowserMod
 
-import typings.detectDashBrowser.detectDashBrowserNumbers.`true`
+import typings.detectDashBrowser.detectDashBrowserBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

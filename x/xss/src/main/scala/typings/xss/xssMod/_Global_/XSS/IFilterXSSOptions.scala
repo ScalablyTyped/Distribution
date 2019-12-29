@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 trait IFilterXSSOptions extends js.Object {
   var allowCommentTag: js.UndefOr[Boolean] = js.undefined
   var css: js.UndefOr[js.Object | Boolean] = js.undefined
-  var escapeHtml: js.UndefOr[typings.xss.xssMod._Global_.XSS.EscapeHandler] = js.undefined
-  var onIgnoreTag: js.UndefOr[typings.xss.xssMod._Global_.XSS.OnTagHandler] = js.undefined
-  var onIgnoreTagAttr: js.UndefOr[typings.xss.xssMod._Global_.XSS.OnTagAttrHandler] = js.undefined
-  var onTag: js.UndefOr[typings.xss.xssMod._Global_.XSS.OnTagHandler] = js.undefined
-  var onTagAttr: js.UndefOr[typings.xss.xssMod._Global_.XSS.OnTagAttrHandler] = js.undefined
-  var safeAttrValue: js.UndefOr[typings.xss.xssMod._Global_.XSS.SafeAttrValueHandler] = js.undefined
+  var escapeHtml: js.UndefOr[EscapeHandler] = js.undefined
+  var onIgnoreTag: js.UndefOr[OnTagHandler] = js.undefined
+  var onIgnoreTagAttr: js.UndefOr[OnTagAttrHandler] = js.undefined
+  var onTag: js.UndefOr[OnTagHandler] = js.undefined
+  var onTagAttr: js.UndefOr[OnTagAttrHandler] = js.undefined
+  var safeAttrValue: js.UndefOr[SafeAttrValueHandler] = js.undefined
   var stripBlankChar: js.UndefOr[Boolean] = js.undefined
   var stripIgnoreTag: js.UndefOr[Boolean] = js.undefined
   var stripIgnoreTagBody: js.UndefOr[Boolean | js.Array[String]] = js.undefined
-  var whiteList: js.UndefOr[typings.xss.xssMod._Global_.XSS.IWhiteList] = js.undefined
+  var whiteList: js.UndefOr[IWhiteList] = js.undefined
 }
 
 object IFilterXSSOptions {
@@ -29,11 +29,11 @@ object IFilterXSSOptions {
     onIgnoreTagAttr: (/* tag */ String, /* name */ String, /* value */ String, /* isWhiteAttr */ Boolean) => String | Unit = null,
     onTag: (/* tag */ String, /* html */ String, /* options */ js.Object) => String | Unit = null,
     onTagAttr: (/* tag */ String, /* name */ String, /* value */ String, /* isWhiteAttr */ Boolean) => String | Unit = null,
-    safeAttrValue: (/* tag */ String, /* name */ String, /* value */ String, /* cssFilter */ typings.xss.xssMod._Global_.XSS.ICSSFilter) => String = null,
+    safeAttrValue: (/* tag */ String, /* name */ String, /* value */ String, /* cssFilter */ ICSSFilter) => String = null,
     stripBlankChar: js.UndefOr[Boolean] = js.undefined,
     stripIgnoreTag: js.UndefOr[Boolean] = js.undefined,
     stripIgnoreTagBody: Boolean | js.Array[String] = null,
-    whiteList: typings.xss.xssMod._Global_.XSS.IWhiteList = null
+    whiteList: IWhiteList = null
   ): IFilterXSSOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowCommentTag)) __obj.updateDynamic("allowCommentTag")(allowCommentTag.asInstanceOf[js.Any])

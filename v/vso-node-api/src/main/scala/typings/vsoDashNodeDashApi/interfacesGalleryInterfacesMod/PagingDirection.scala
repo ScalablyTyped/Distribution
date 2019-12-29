@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PagingDirection.Backward
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PagingDirection.Forward
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

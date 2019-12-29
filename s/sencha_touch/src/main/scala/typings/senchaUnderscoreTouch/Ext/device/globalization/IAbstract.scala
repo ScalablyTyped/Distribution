@@ -11,27 +11,27 @@ trait IAbstract extends IObservable {
   /** [Method] Returns the value of currencyCode
   		* @returns String
   		*/
-  var getCurrencyCode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCurrencyCode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of dateType
   		* @returns String
   		*/
-  var getDateType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDateType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of formatLength
   		* @returns String
   		*/
-  var getFormatLength: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFormatLength: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of items
   		* @returns String
   		*/
-  var getItems: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getItems: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of numberType
   		* @returns String
   		*/
-  var getNumberType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getNumberType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of selector
   		* @returns String
   		*/
-  var getSelector: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSelector: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
   		* @param object Object The Observable whose events this object is to relay.
   		* @param events String/Array/Object Array of event names to relay.
@@ -44,27 +44,27 @@ trait IAbstract extends IObservable {
   /** [Method] Sets the value of currencyCode
   		* @param currencyCode String The new value.
   		*/
-  var setCurrencyCode: js.UndefOr[js.Function1[/* currencyCode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCurrencyCode: js.UndefOr[js.Function1[/* currencyCode */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of dateType
   		* @param dateType String The new value.
   		*/
-  var setDateType: js.UndefOr[js.Function1[/* dateType */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDateType: js.UndefOr[js.Function1[/* dateType */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of formatLength
   		* @param formatLength String The new value.
   		*/
-  var setFormatLength: js.UndefOr[js.Function1[/* formatLength */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFormatLength: js.UndefOr[js.Function1[/* formatLength */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of items
   		* @param items String The new value.
   		*/
-  var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of numberType
   		* @param numberType String The new value.
   		*/
-  var setNumberType: js.UndefOr[js.Function1[/* numberType */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setNumberType: js.UndefOr[js.Function1[/* numberType */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of selector
   		* @param selector String The new value.
   		*/
-  var setSelector: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSelector: js.UndefOr[js.Function1[/* selector */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IAbstract {
@@ -73,7 +73,7 @@ object IAbstract {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -85,49 +85,49 @@ object IAbstract {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBubbleEvents: () => _ = null,
-    getCurrencyCode: () => java.lang.String = null,
-    getDateType: () => java.lang.String = null,
-    getFormatLength: () => java.lang.String = null,
+    getCurrencyCode: () => String = null,
+    getDateType: () => String = null,
+    getFormatLength: () => String = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getItems: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getItems: () => String = null,
     getListeners: () => _ = null,
-    getNumberType: () => java.lang.String = null,
-    getSelector: () => java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getNumberType: () => String = null,
+    getSelector: () => String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCurrencyCode: /* currencyCode */ js.UndefOr[java.lang.String] => Unit = null,
-    setDateType: /* dateType */ js.UndefOr[java.lang.String] => Unit = null,
-    setFormatLength: /* formatLength */ js.UndefOr[java.lang.String] => Unit = null,
-    setItems: /* items */ js.UndefOr[java.lang.String] => Unit = null,
+    setCurrencyCode: /* currencyCode */ js.UndefOr[String] => Unit = null,
+    setDateType: /* dateType */ js.UndefOr[String] => Unit = null,
+    setFormatLength: /* formatLength */ js.UndefOr[String] => Unit = null,
+    setItems: /* items */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setNumberType: /* numberType */ js.UndefOr[java.lang.String] => Unit = null,
-    setSelector: /* selector */ js.UndefOr[java.lang.String] => Unit = null,
+    setNumberType: /* numberType */ js.UndefOr[String] => Unit = null,
+    setSelector: /* selector */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

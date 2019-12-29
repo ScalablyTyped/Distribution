@@ -1,13 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.CustomXMLNodeType.Attribute
-import typings.officeDashJsDashPreview.Office.CustomXMLNodeType.CData
-import typings.officeDashJsDashPreview.Office.CustomXMLNodeType.Element
-import typings.officeDashJsDashPreview.Office.CustomXMLNodeType.NodeComment
-import typings.officeDashJsDashPreview.Office.CustomXMLNodeType.NodeDocument
-import typings.officeDashJsDashPreview.Office.CustomXMLNodeType.ProcessingInstruction
-import typings.officeDashJsDashPreview.Office.CustomXMLNodeType.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

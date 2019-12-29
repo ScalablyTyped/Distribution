@@ -33,7 +33,7 @@ object vuexStrings {
   sealed trait NamespacedMappers extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
   
   @scala.inline
   def Mapper: Mapper = "Mapper".asInstanceOf[Mapper]
@@ -54,6 +54,6 @@ object vuexStrings {
   @scala.inline
   def NamespacedMappers: NamespacedMappers = "NamespacedMappers".asInstanceOf[NamespacedMappers]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
 }
 

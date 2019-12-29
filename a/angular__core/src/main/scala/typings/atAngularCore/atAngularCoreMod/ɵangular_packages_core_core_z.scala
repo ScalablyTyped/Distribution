@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵangular_packages_core_core_z")
+@JSImport("@angular/core", "\u0275angular_packages_core_core_z")
 @js.native
 abstract class ɵangular_packages_core_core_z () extends js.Object {
   val component: js.Any = js.native

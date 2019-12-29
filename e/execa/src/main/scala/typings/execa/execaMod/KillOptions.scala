@@ -1,6 +1,6 @@
 package typings.execa.execaMod
 
-import typings.execa.execaNumbers.`false`
+import typings.execa.execaBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

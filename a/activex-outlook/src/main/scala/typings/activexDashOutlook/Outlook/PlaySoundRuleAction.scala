@@ -12,7 +12,8 @@ class PlaySoundRuleAction protected () extends js.Object {
   val Class: OlObjectClass = js.native
   var Enabled: Boolean = js.native
   var FilePath: String = js.native
-  var `Outlook.PlaySoundRuleAction_typekey`: PlaySoundRuleAction = js.native
+  @JSName("Outlook.PlaySoundRuleAction_typekey")
+  var OutlookDotPlaySoundRuleAction_typekey: PlaySoundRuleAction = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

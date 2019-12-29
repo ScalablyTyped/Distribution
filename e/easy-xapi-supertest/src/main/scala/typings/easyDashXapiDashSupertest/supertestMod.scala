@@ -2,10 +2,6 @@ package typings.easyDashXapiDashSupertest
 
 import typings.easyDashXapiDashSupertest.superagentMod.Request
 import typings.easyDashXapiDashSupertest.superagentMod.SuperAgent
-import typings.easyDashXapiDashSupertest.supertestMod.CallbackHandler
-import typings.easyDashXapiDashSupertest.supertestMod.Response
-import typings.easyDashXapiDashSupertest.supertestMod.SuperTest
-import typings.easyDashXapiDashSupertest.supertestMod.Test
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

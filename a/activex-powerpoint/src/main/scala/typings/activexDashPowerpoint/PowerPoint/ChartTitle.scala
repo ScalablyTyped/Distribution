@@ -28,7 +28,8 @@ class ChartTitle protected () extends js.Object {
   var Orientation: js.Any = js.native
   val Parent: js.Any = js.native
   var Position: XlChartElementPosition = js.native
-  var `PowerPoint.ChartTitle_typekey`: ChartTitle = js.native
+  @JSName("PowerPoint.ChartTitle_typekey")
+  var PowerPointDotChartTitle_typekey: ChartTitle = js.native
   var ReadingOrder: Double = js.native
   var Shadow: Boolean = js.native
   var Text: String = js.native

@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.documenttemplates
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -30,7 +31,7 @@ class DataGridColumn protected ()
 @js.native
 object DataGridColumn extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new DataGridColumn instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

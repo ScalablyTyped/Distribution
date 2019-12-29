@@ -1,9 +1,9 @@
 package typings.webpack.webpackMod
 
 import typings.webpack.Anon_IdNumber
+import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackMod.compilation.Chunk
 import typings.webpack.webpackMod.compilation.ModuleTemplate
-import typings.webpack.webpackNumbers.`false`
 import typings.webpackDashSources.webpackDashSourcesMod.ConcatSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,13 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ViewType.calendar
-import typings.sharepoint.SP.ViewType.chart
-import typings.sharepoint.SP.ViewType.gantt
-import typings.sharepoint.SP.ViewType.grid
-import typings.sharepoint.SP.ViewType.html
-import typings.sharepoint.SP.ViewType.none
-import typings.sharepoint.SP.ViewType.recurrence
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

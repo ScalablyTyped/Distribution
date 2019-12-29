@@ -91,21 +91,21 @@ object Manager extends js.Object {
   		* @param args Object... Variable number of parameters are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
-  def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = js.native
+  def fireEvent(eventName: String, args: js.Any*): Boolean = js.native
   /** [Method] Fires the specified event with the passed parameter list
   		* @param eventName String The name of the event to fire.
   		* @param args Object[] An array of parameters which are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
   def fireEventArgs(): Boolean = js.native
-  def fireEventArgs(eventName: java.lang.String): Boolean = js.native
-  def fireEventArgs(eventName: java.lang.String, args: Array): Boolean = js.native
+  def fireEventArgs(eventName: String): Boolean = js.native
+  def fireEventArgs(eventName: String, args: Array): Boolean = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
   		* @param name String Name of the config option to return.
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Retrieves a provider by the id specified when the provider is added
   		* @param id String/Ext.direct.Provider The id of the provider, or the provider instance.
   		*/
@@ -116,7 +116,7 @@ object Manager extends js.Object {
   		* @returns Boolean true if the event is being listened for or bubbles, else false
   		*/
   def hasListener(): Boolean = js.native
-  def hasListener(eventName: java.lang.String): Boolean = js.native
+  def hasListener(eventName: String): Boolean = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this
@@ -175,16 +175,16 @@ object Manager extends js.Object {
   def relayEvents(): js.Any = js.native
   def relayEvents(origin: js.Any): js.Any = js.native
   def relayEvents(origin: js.Any, events: Array): js.Any = js.native
-  def relayEvents(origin: js.Any, events: Array, prefix: java.lang.String): js.Any = js.native
+  def relayEvents(origin: js.Any, events: Array, prefix: String): js.Any = js.native
   /** [Method] Removes an event handler
   		* @param eventName String The type of event the handler was associated with.
   		* @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
   def removeListener(): Unit = js.native
-  def removeListener(eventName: java.lang.String): Unit = js.native
-  def removeListener(eventName: java.lang.String, fn: js.Any): Unit = js.native
-  def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  def removeListener(eventName: String): Unit = js.native
+  def removeListener(eventName: String, fn: js.Any): Unit = js.native
+  def removeListener(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes listeners that were added by the mon method
   		* @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
   		* @param ename Object/String The event name, or an object containing event name properties.
@@ -227,8 +227,8 @@ object Manager extends js.Object {
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
   def un(): Unit = js.native
-  def un(eventName: java.lang.String): Unit = js.native
-  def un(eventName: java.lang.String, fn: js.Any): Unit = js.native
-  def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  def un(eventName: String): Unit = js.native
+  def un(eventName: String, fn: js.Any): Unit = js.native
+  def un(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
 }
 

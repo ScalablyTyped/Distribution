@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Modifiers extends js.Object {
-  var `%`: String
   var A: String
   var B: String
   var C: js.UndefOr[String] = js.undefined
@@ -23,6 +22,8 @@ trait Modifiers extends js.Object {
   var N: js.UndefOr[String] = js.undefined
   var O: js.UndefOr[String] = js.undefined
   var P: String
+  @JSName("%")
+  var Percentsign: String
   var Q: js.UndefOr[String] = js.undefined
   var R: String
   var S: String
@@ -64,7 +65,6 @@ trait Modifiers extends js.Object {
 object Modifiers {
   @scala.inline
   def apply(
-    `%`: String,
     A: String,
     B: String,
     D: String,
@@ -74,6 +74,7 @@ object Modifiers {
     L: String,
     M: String,
     P: String,
+    Percentsign: String,
     R: String,
     S: String,
     T: String,
@@ -119,7 +120,7 @@ object Modifiers {
     x: String = null
   ): Modifiers = {
     val __obj = js.Dynamic.literal(A = A.asInstanceOf[js.Any], B = B.asInstanceOf[js.Any], D = D.asInstanceOf[js.Any], F = F.asInstanceOf[js.Any], H = H.asInstanceOf[js.Any], I = I.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], M = M.asInstanceOf[js.Any], P = P.asInstanceOf[js.Any], R = R.asInstanceOf[js.Any], S = S.asInstanceOf[js.Any], T = T.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any], W = W.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any], Z = Z.asInstanceOf[js.Any], a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
-    __obj.updateDynamic("%")(`%`.asInstanceOf[js.Any])
+    __obj.updateDynamic("%")(Percentsign.asInstanceOf[js.Any])
     if (C != null) __obj.updateDynamic("C")(C.asInstanceOf[js.Any])
     if (E != null) __obj.updateDynamic("E")(E.asInstanceOf[js.Any])
     if (G != null) __obj.updateDynamic("G")(G.asInstanceOf[js.Any])

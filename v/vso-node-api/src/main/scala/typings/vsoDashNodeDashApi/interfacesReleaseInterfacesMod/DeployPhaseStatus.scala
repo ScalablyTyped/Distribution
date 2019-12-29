@@ -1,15 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.Canceled
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.Cancelling
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.Failed
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.InProgress
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.NotStarted
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.PartiallySucceeded
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.Skipped
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.Succeeded
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseStatus.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

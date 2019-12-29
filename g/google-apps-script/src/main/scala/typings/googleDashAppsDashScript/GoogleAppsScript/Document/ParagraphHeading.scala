@@ -1,15 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.HEADING1
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.HEADING2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.HEADING3
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.HEADING4
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.HEADING5
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.HEADING6
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.NORMAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.SUBTITLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ParagraphHeading.TITLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

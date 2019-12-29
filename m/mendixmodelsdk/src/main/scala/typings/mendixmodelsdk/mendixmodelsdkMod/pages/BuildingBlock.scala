@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.pages
 
+import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +17,7 @@ import scala.scalajs.js.annotation._
 class BuildingBlock protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.pages.BuildingBlock {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
@@ -28,7 +30,7 @@ class BuildingBlock protected ()
 @js.native
 object BuildingBlock extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates a new BuildingBlock unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.

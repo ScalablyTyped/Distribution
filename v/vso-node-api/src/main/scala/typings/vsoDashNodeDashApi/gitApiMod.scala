@@ -2,7 +2,6 @@ package typings.vsoDashNodeDashApi
 
 import typings.node.NodeJS.ReadableStream
 import typings.vsoDashNodeDashApi.clientApiBasesMod.ClientApiBase
-import typings.vsoDashNodeDashApi.gitApiMod.IGitApi
 import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.IdentityRef
 import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.JsonPatchDocument
 import typings.vsoDashNodeDashApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler

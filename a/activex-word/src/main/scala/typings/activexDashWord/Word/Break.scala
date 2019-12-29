@@ -12,6 +12,7 @@ class Break protected () extends js.Object {
   val PageIndex: Double = js.native
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
-  var `Word.Break_typekey`: Break = js.native
+  @JSName("Word.Break_typekey")
+  var WordDotBreak_typekey: Break = js.native
 }
 

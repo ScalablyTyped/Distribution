@@ -1,9 +1,6 @@
 package typings.expo.buildScreenOrientationScreenOrientationDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.SizeClassIOS.COMPACT
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.SizeClassIOS.REGULAR
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.SizeClassIOS.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

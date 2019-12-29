@@ -1,9 +1,6 @@
 package typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldDescriptorProto
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldDescriptorProto.Label.LABEL_OPTIONAL
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REPEATED
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REQUIRED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

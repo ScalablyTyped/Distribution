@@ -1,14 +1,6 @@
 package typings.postmark
 
 import org.scalablytyped.runtime.TopLevel
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.HTML
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.Text
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlAndText
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlOnly
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.None
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.TextOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityKind.datagramSocket
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityKind.none
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityKind.streamSocket
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityKind.streamSocketListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

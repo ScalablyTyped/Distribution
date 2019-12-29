@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.TypeScript
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -130,47 +131,156 @@ object PullElementKind extends js.Object {
   @js.native
   sealed trait WithBlock extends PullElementKind
   
-  /* 59753052 */ val AcceptableAlias: typings.typescriptDashServices.TypeScript.PullElementKind.AcceptableAlias with Double = js.native
-  /* 536869887 */ val All: typings.typescriptDashServices.TypeScript.PullElementKind.All with Double = js.native
-  /* 1048576 */ val CallSignature: typings.typescriptDashServices.TypeScript.PullElementKind.CallSignature with Double = js.native
-  /* 268435456 */ val CatchBlock: typings.typescriptDashServices.TypeScript.PullElementKind.CatchBlock with Double = js.native
-  /* 1024 */ val CatchVariable: typings.typescriptDashServices.TypeScript.PullElementKind.CatchVariable with Double = js.native
-  /* 8 */ val Class: typings.typescriptDashServices.TypeScript.PullElementKind.Class with Double = js.native
-  /* 2097152 */ val ConstructSignature: typings.typescriptDashServices.TypeScript.PullElementKind.ConstructSignature with Double = js.native
-  /* 32768 */ val ConstructorMethod: typings.typescriptDashServices.TypeScript.PullElementKind.ConstructorMethod with Double = js.native
-  /* 33554432 */ val ConstructorType: typings.typescriptDashServices.TypeScript.PullElementKind.ConstructorType with Double = js.native
-  /* 4 */ val Container: typings.typescriptDashServices.TypeScript.PullElementKind.Container with Double = js.native
-  /* 32 */ val DynamicModule: typings.typescriptDashServices.TypeScript.PullElementKind.DynamicModule with Double = js.native
-  /* 64 */ val Enum: typings.typescriptDashServices.TypeScript.PullElementKind.Enum with Double = js.native
-  /* 67108864 */ val EnumMember: typings.typescriptDashServices.TypeScript.PullElementKind.EnumMember with Double = js.native
-  /* 16384 */ val Function: typings.typescriptDashServices.TypeScript.PullElementKind.Function with Double = js.native
-  /* 131072 */ val FunctionExpression: typings.typescriptDashServices.TypeScript.PullElementKind.FunctionExpression with Double = js.native
-  /* 16777216 */ val FunctionType: typings.typescriptDashServices.TypeScript.PullElementKind.FunctionType with Double = js.native
-  /* 262144 */ val GetAccessor: typings.typescriptDashServices.TypeScript.PullElementKind.GetAccessor with Double = js.native
-  /* 0 */ val Global: typings.typescriptDashServices.TypeScript.PullElementKind.Global with Double = js.native
-  /* 4194304 */ val IndexSignature: typings.typescriptDashServices.TypeScript.PullElementKind.IndexSignature with Double = js.native
-  /* 16 */ val Interface: typings.typescriptDashServices.TypeScript.PullElementKind.Interface with Double = js.native
-  /* 65536 */ val Method: typings.typescriptDashServices.TypeScript.PullElementKind.Method with Double = js.native
-  /* 0 */ val None: typings.typescriptDashServices.TypeScript.PullElementKind.None with Double = js.native
-  /* 256 */ val ObjectLiteral: typings.typescriptDashServices.TypeScript.PullElementKind.ObjectLiteral with Double = js.native
-  /* 8388608 */ val ObjectType: typings.typescriptDashServices.TypeScript.PullElementKind.ObjectType with Double = js.native
-  /* 2048 */ val Parameter: typings.typescriptDashServices.TypeScript.PullElementKind.Parameter with Double = js.native
-  /* 2 */ val Primitive: typings.typescriptDashServices.TypeScript.PullElementKind.Primitive with Double = js.native
-  /* 4096 */ val Property: typings.typescriptDashServices.TypeScript.PullElementKind.Property with Double = js.native
-  /* 1 */ val Script: typings.typescriptDashServices.TypeScript.PullElementKind.Script with Double = js.native
-  /* 524288 */ val SetAccessor: typings.typescriptDashServices.TypeScript.PullElementKind.SetAccessor with Double = js.native
-  /* 164 */ val SomeContainer: typings.typescriptDashServices.TypeScript.PullElementKind.SomeContainer with Double = js.native
-  /* 1032192 */ val SomeFunction: typings.typescriptDashServices.TypeScript.PullElementKind.SomeFunction with Double = js.native
-  /* 8216 */ val SomeInstantiatableType: typings.typescriptDashServices.TypeScript.PullElementKind.SomeInstantiatableType with Double = js.native
-  /* 7340032 */ val SomeSignature: typings.typescriptDashServices.TypeScript.PullElementKind.SomeSignature with Double = js.native
-  /* 58728795 */ val SomeType: typings.typescriptDashServices.TypeScript.PullElementKind.SomeType with Double = js.native
-  /* 58720272 */ val SomeTypeReference: typings.typescriptDashServices.TypeScript.PullElementKind.SomeTypeReference with Double = js.native
-  /* 68147712 */ val SomeValue: typings.typescriptDashServices.TypeScript.PullElementKind.SomeValue with Double = js.native
-  /* 128 */ val TypeAlias: typings.typescriptDashServices.TypeScript.PullElementKind.TypeAlias with Double = js.native
-  /* 8192 */ val TypeParameter: typings.typescriptDashServices.TypeScript.PullElementKind.TypeParameter with Double = js.native
-  /* 512 */ val Variable: typings.typescriptDashServices.TypeScript.PullElementKind.Variable with Double = js.native
-  /* 134217728 */ val WithBlock: typings.typescriptDashServices.TypeScript.PullElementKind.WithBlock with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PullElementKind with Double] = js.native
+  /* 59753052 */ @js.native
+  object AcceptableAlias extends TopLevel[AcceptableAlias with Double]
+  
+  /* 536869887 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 1048576 */ @js.native
+  object CallSignature
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.CallSignature with Double
+        ]
+  
+  /* 268435456 */ @js.native
+  object CatchBlock extends TopLevel[CatchBlock with Double]
+  
+  /* 1024 */ @js.native
+  object CatchVariable extends TopLevel[CatchVariable with Double]
+  
+  /* 8 */ @js.native
+  object Class extends TopLevel[Class with Double]
+  
+  /* 2097152 */ @js.native
+  object ConstructSignature
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.ConstructSignature with Double
+        ]
+  
+  /* 32768 */ @js.native
+  object ConstructorMethod extends TopLevel[ConstructorMethod with Double]
+  
+  /* 33554432 */ @js.native
+  object ConstructorType
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.ConstructorType with Double
+        ]
+  
+  /* 4 */ @js.native
+  object Container extends TopLevel[Container with Double]
+  
+  /* 32 */ @js.native
+  object DynamicModule extends TopLevel[DynamicModule with Double]
+  
+  /* 64 */ @js.native
+  object Enum extends TopLevel[Enum with Double]
+  
+  /* 67108864 */ @js.native
+  object EnumMember extends TopLevel[EnumMember with Double]
+  
+  /* 16384 */ @js.native
+  object Function extends TopLevel[Function with Double]
+  
+  /* 131072 */ @js.native
+  object FunctionExpression
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.FunctionExpression with Double
+        ]
+  
+  /* 16777216 */ @js.native
+  object FunctionType
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.FunctionType with Double
+        ]
+  
+  /* 262144 */ @js.native
+  object GetAccessor
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.GetAccessor with Double
+        ]
+  
+  /* 0 */ @js.native
+  object Global extends TopLevel[Global with Double]
+  
+  /* 4194304 */ @js.native
+  object IndexSignature
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.IndexSignature with Double
+        ]
+  
+  /* 16 */ @js.native
+  object Interface extends TopLevel[Interface with Double]
+  
+  /* 65536 */ @js.native
+  object Method extends TopLevel[Method with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 256 */ @js.native
+  object ObjectLiteral extends TopLevel[ObjectLiteral with Double]
+  
+  /* 8388608 */ @js.native
+  object ObjectType
+    extends TopLevel[typings.typescriptDashServices.TypeScript.PullElementKind.ObjectType with Double]
+  
+  /* 2048 */ @js.native
+  object Parameter
+    extends TopLevel[typings.typescriptDashServices.TypeScript.PullElementKind.Parameter with Double]
+  
+  /* 2 */ @js.native
+  object Primitive extends TopLevel[Primitive with Double]
+  
+  /* 4096 */ @js.native
+  object Property extends TopLevel[Property with Double]
+  
+  /* 1 */ @js.native
+  object Script extends TopLevel[Script with Double]
+  
+  /* 524288 */ @js.native
+  object SetAccessor
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.SetAccessor with Double
+        ]
+  
+  /* 164 */ @js.native
+  object SomeContainer extends TopLevel[SomeContainer with Double]
+  
+  /* 1032192 */ @js.native
+  object SomeFunction extends TopLevel[SomeFunction with Double]
+  
+  /* 8216 */ @js.native
+  object SomeInstantiatableType extends TopLevel[SomeInstantiatableType with Double]
+  
+  /* 7340032 */ @js.native
+  object SomeSignature extends TopLevel[SomeSignature with Double]
+  
+  /* 58728795 */ @js.native
+  object SomeType extends TopLevel[SomeType with Double]
+  
+  /* 58720272 */ @js.native
+  object SomeTypeReference extends TopLevel[SomeTypeReference with Double]
+  
+  /* 68147712 */ @js.native
+  object SomeValue extends TopLevel[SomeValue with Double]
+  
+  /* 128 */ @js.native
+  object TypeAlias extends TopLevel[TypeAlias with Double]
+  
+  /* 8192 */ @js.native
+  object TypeParameter
+    extends TopLevel[
+          typings.typescriptDashServices.TypeScript.PullElementKind.TypeParameter with Double
+        ]
+  
+  /* 512 */ @js.native
+  object Variable extends TopLevel[Variable with Double]
+  
+  /* 134217728 */ @js.native
+  object WithBlock extends TopLevel[WithBlock with Double]
+  
 }
 

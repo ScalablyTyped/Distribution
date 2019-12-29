@@ -1,7 +1,5 @@
 package typings.heremaps.H.ui
 
-import typings.heremaps.H.ui.base.Container
-import typings.heremaps.H.ui.base.Element
 import typings.heremaps.H.util.EventTarget
 import typings.std.Document
 import typings.std.HTMLElement

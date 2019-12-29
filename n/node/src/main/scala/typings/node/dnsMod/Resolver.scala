@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Resolver () extends js.Object {
   @JSName("getServers")
-  var getServers_Original: js.Function0[js.Array[java.lang.String]] = js.native
+  var getServers_Original: js.Function0[js.Array[String]] = js.native
   var resolve: Typeofresolve = js.native
   var resolve4: Typeofresolve4 = js.native
   var resolve6: Typeofresolve6 = js.native
@@ -36,18 +36,18 @@ class Resolver () extends js.Object {
   var resolveTxt: TypeofresolveTxt = js.native
   @JSName("reverse")
   var reverse_Original: js.Function2[
-    /* ip */ java.lang.String, 
-    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[java.lang.String], Unit], 
+    /* ip */ String, 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit], 
     Unit
   ] = js.native
   @JSName("setServers")
-  var setServers_Original: js.Function1[/* servers */ js.Array[java.lang.String], Unit] = js.native
+  var setServers_Original: js.Function1[/* servers */ js.Array[String], Unit] = js.native
   def cancel(): Unit = js.native
-  def getServers(): js.Array[java.lang.String] = js.native
+  def getServers(): js.Array[String] = js.native
   def reverse(
-    ip: java.lang.String,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[java.lang.String], Unit]
+    ip: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit]
   ): Unit = js.native
-  def setServers(servers: js.Array[java.lang.String]): Unit = js.native
+  def setServers(servers: js.Array[String]): Unit = js.native
 }
 

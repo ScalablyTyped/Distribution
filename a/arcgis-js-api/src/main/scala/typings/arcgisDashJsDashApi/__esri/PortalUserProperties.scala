@@ -3,6 +3,9 @@ package typings.arcgisDashJsDashApi.__esri
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.english
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org_admin
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org_publisher
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org_user
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -76,11 +79,11 @@ trait PortalUserProperties extends js.Object {
     */
   var region: js.UndefOr[String] = js.undefined
   /**
-    * Defines the user's role in the organization. See [roleId](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#roleId) for more details about when user has a custom role.  **Possible Values:** org_admin | org_publisher | org_user
+    * Defines the user's role in the organization. See [roleId](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#roleId) for more details about when user has a custom role.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#role)
     */
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[org_admin | org_publisher | org_user] = js.undefined
   /**
     * The ID of the user's role.  Only set if the user is assigned a custom role.  When present, the [role](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#role) will indicate the "base" role of the custom role based on the privileges the custom role contains. For example, if the custom role contains some publisher privileges, the [role](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#role) will be set to `org_publisher`.
     *
@@ -121,7 +124,7 @@ object PortalUserProperties {
     portal: PortalProperties = null,
     preferredView: String = null,
     region: String = null,
-    role: String = null,
+    role: org_admin | org_publisher | org_user = null,
     roleId: String = null,
     sourceJSON: js.Any = null,
     units: english | metric = null,

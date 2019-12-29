@@ -1,17 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hold
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MapViewHoldEvent extends js.Object {
-  var button: Double
+  var button: js.Any
   var buttons: Double
   var mapPoint: Point
   var native: js.Any
   var stopPropagation: js.Function
   var timestamp: Double
-  var `type`: String
+  var `type`: hold
   var x: Double
   var y: Double
 }
@@ -19,13 +20,13 @@ trait MapViewHoldEvent extends js.Object {
 object MapViewHoldEvent {
   @scala.inline
   def apply(
-    button: Double,
+    button: js.Any,
     buttons: Double,
     mapPoint: Point,
     native: js.Any,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: String,
+    `type`: hold,
     x: Double,
     y: Double
   ): MapViewHoldEvent = {

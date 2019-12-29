@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`<`
-  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`<=`
-  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`=`
-  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`>=`
-  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`>`
+  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.Lessthansign
+  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.LessthansignEqualssign
+  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.Equalssign
+  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.GreaterthansignEqualssign
+  - typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.Greaterthansign
 */
 trait QueryFilterOperator extends js.Object
 
 object QueryFilterOperator {
   @scala.inline
-  def `<`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`<` = this.cast("<")
+  def Equalssign: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.Equalssign = this.cast("=")
   @scala.inline
-  def `<=`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`<=` = this.cast("<=")
+  def Greaterthansign: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.Greaterthansign = this.cast(">")
   @scala.inline
-  def `=`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`=` = this.cast("=")
+  def GreaterthansignEqualssign: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.GreaterthansignEqualssign = this.cast(">=")
   @scala.inline
-  def `>`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`>` = this.cast(">")
+  def Lessthansign: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.Lessthansign = this.cast("<")
   @scala.inline
-  def `>=`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`>=` = this.cast(">=")
+  def LessthansignEqualssign: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.LessthansignEqualssign = this.cast("<=")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

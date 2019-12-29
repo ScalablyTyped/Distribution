@@ -2,7 +2,6 @@ package typings.baconjs
 
 import typings.baconjs.typesObservableMod.default
 import typings.baconjs.typesTransformMod.Transformer
-import typings.baconjs.typesWithstatemachineMod.StateF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

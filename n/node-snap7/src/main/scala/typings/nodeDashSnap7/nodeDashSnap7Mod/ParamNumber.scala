@@ -1,14 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.DstRef
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.PDURequest
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.PingTimeout
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.RecvTimeout
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.RemotePort
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SendTimeout
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SrcRef
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SrcTSap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

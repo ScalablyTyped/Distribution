@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLNoShowElement")
 @js.native
 class HTMLNoShowElement protected () extends js.Object {
-  var `MSHTML.HTMLNoShowElement_typekey`: HTMLNoShowElement = js.native
+  @JSName("MSHTML.HTMLNoShowElement_typekey")
+  var MSHTMLDotHTMLNoShowElement_typekey: HTMLNoShowElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.All
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowLines
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToHorizontalLines
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToLines
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToVerticalLines
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.ndnDashJs.nameMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ndnDashJs.nameMod.ComponentType.GENERIC
-import typings.ndnDashJs.nameMod.ComponentType.IMPLICIT_SHA256_DIGEST
-import typings.ndnDashJs.nameMod.ComponentType.OTHER_CODE
-import typings.ndnDashJs.nameMod.ComponentType.PARAMETERS_SHA256_DIGEST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

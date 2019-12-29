@@ -1,11 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.SheetSizeBehaviour.ATLEAST
-import typings.tableau.tableau.SheetSizeBehaviour.ATMOST
-import typings.tableau.tableau.SheetSizeBehaviour.AUTOMATIC
-import typings.tableau.tableau.SheetSizeBehaviour.EXACTLY
-import typings.tableau.tableau.SheetSizeBehaviour.RANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

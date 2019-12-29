@@ -10,12 +10,13 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings> */
 trait PartialSettings extends js.Object {
+  var colorWeak: js.UndefOr[Boolean] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   var fixSiderbar: js.UndefOr[Boolean] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
   var iconfontUrl: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
-  var menu: js.UndefOr[Anon_Locale] = js.undefined
+  var menu: js.UndefOr[Anon_DefaultOpenAll] = js.undefined
   var navTheme: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
   ] = js.undefined
@@ -26,17 +27,19 @@ trait PartialSettings extends js.Object {
 object PartialSettings {
   @scala.inline
   def apply(
+    colorWeak: js.UndefOr[Boolean] = js.undefined,
     contentWidth: ContentWidth = null,
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
     iconfontUrl: String = null,
     layout: sidemenu | topmenu = null,
-    menu: Anon_Locale = null,
+    menu: Anon_DefaultOpenAll = null,
     navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
     primaryColor: String = null,
     title: String = null
   ): PartialSettings = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])

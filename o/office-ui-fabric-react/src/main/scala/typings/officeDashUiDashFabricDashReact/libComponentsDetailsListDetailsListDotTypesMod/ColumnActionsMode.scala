@@ -1,9 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.clickable
-import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.disabled
-import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.hasDropdown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

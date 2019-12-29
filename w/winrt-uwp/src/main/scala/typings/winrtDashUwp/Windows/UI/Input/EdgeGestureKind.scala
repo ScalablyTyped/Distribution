@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Input.EdgeGestureKind.keyboard
-import typings.winrtDashUwp.Windows.UI.Input.EdgeGestureKind.mouse
-import typings.winrtDashUwp.Windows.UI.Input.EdgeGestureKind.touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

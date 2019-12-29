@@ -1,13 +1,6 @@
 package typings.officeDashJs.OneNote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.OneNote.NoteTagStatus.completed
-import typings.officeDashJs.OneNote.NoteTagStatus.disabled
-import typings.officeDashJs.OneNote.NoteTagStatus.normal
-import typings.officeDashJs.OneNote.NoteTagStatus.outlookTask
-import typings.officeDashJs.OneNote.NoteTagStatus.taskNotSyncedYet
-import typings.officeDashJs.OneNote.NoteTagStatus.taskRemoved
-import typings.officeDashJs.OneNote.NoteTagStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

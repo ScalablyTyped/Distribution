@@ -1,10 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.HeaderFooterType.Even
-import typings.devexpressDashWeb.HeaderFooterType.First
-import typings.devexpressDashWeb.HeaderFooterType.Odd
-import typings.devexpressDashWeb.HeaderFooterType.Primary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

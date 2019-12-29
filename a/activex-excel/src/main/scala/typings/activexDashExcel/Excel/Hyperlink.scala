@@ -13,7 +13,8 @@ class Hyperlink protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var EmailSubject: String = js.native
-  var `Excel.Hyperlink_typekey`: Hyperlink = js.native
+  @JSName("Excel.Hyperlink_typekey")
+  var ExcelDotHyperlink_typekey: Hyperlink = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
   @JSName("Range")

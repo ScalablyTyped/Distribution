@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Folder
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Invalid
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

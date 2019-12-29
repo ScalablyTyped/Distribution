@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.WebUI.PrintContent.allPages
-import typings.winrtDashUwp.Windows.UI.WebUI.PrintContent.currentPage
-import typings.winrtDashUwp.Windows.UI.WebUI.PrintContent.currentSelection
-import typings.winrtDashUwp.Windows.UI.WebUI.PrintContent.customPageRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

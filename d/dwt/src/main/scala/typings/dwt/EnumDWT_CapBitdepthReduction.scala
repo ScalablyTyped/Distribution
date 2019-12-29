@@ -1,10 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapBitdepthReduction.TWBR_CUSTHALFTONE
-import typings.dwt.EnumDWT_CapBitdepthReduction.TWBR_DIFFUSION
-import typings.dwt.EnumDWT_CapBitdepthReduction.TWBR_HALFTONE
-import typings.dwt.EnumDWT_CapBitdepthReduction.TWBR_THRESHOLD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

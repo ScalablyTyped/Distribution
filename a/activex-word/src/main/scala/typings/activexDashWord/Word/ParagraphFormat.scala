@@ -48,7 +48,8 @@ class ParagraphFormat protected () extends js.Object {
   var TabStops: typings.activexDashWord.Word.TabStops = js.native
   var TextboxTightWrap: WdTextboxTightWrap = js.native
   var WidowControl: Double = js.native
-  var `Word.ParagraphFormat_typekey`: ParagraphFormat = js.native
+  @JSName("Word.ParagraphFormat_typekey")
+  var WordDotParagraphFormat_typekey: ParagraphFormat = js.native
   var WordWrap: Double = js.native
   def CloseUp(): Unit = js.native
   def IndentCharWidth(Count: Double): Unit = js.native

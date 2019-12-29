@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Pivot.AnalysisMode
-import typings.ejDotWebDotAll.ej.Pivot.AnalysisMode.OLAP
-import typings.ejDotWebDotAll.ej.Pivot.OperationalMode
-import typings.ejDotWebDotAll.ej.Pivot.OperationalMode.ClientMode
-import typings.ejDotWebDotAll.ej.Pivot.OperationalMode.ServerMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

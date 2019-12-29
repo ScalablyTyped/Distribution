@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait IngressList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `extensions/v1beta1`
+  val apiVersion: extensionsSlashv1beta1
   /**
     * Items is the list of Ingress.
     */
@@ -38,7 +38,7 @@ trait IngressList extends js.Object {
 object IngressList {
   @scala.inline
   def apply(
-    apiVersion: `extensions/v1beta1`,
+    apiVersion: extensionsSlashv1beta1,
     items: js.Array[Ingress],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.IngressList,
     metadata: ListMeta

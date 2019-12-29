@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Address extends js.Object {
   @JSName("$col$row")
-  var $col$row: String = js.native
+  var DollarcolDollarrow: String = js.native
   var address: String = js.native
   var col: String = js.native
   var row: String = js.native

@@ -1,6 +1,5 @@
 package typings.atFirebaseComponent
 
-import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseComponent.atFirebaseComponentStrings.badtest
 import typings.atFirebaseComponent.atFirebaseComponentStrings.fireball
 import typings.atFirebaseComponent.atFirebaseComponentStrings.rocket
@@ -16,8 +15,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/component/dist/test/util", JSImport.Namespace)
 @js.native
 object distTestUtilMod extends js.Object {
-  def getFakeApp(): FirebaseApp = js.native
-  def getFakeApp(appName: String): FirebaseApp = js.native
+  def getFakeApp(): js.Any = js.native
+  def getFakeApp(appName: String): js.Any = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = js.native
   @JSName("getFakeComponent")

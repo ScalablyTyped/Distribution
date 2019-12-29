@@ -10,7 +10,8 @@ class ViewField protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val ColumnFormat: typings.activexDashOutlook.Outlook.ColumnFormat = js.native
-  var `Outlook.ViewField_typekey`: ViewField = js.native
+  @JSName("Outlook.ViewField_typekey")
+  var OutlookDotViewField_typekey: ViewField = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val ViewXMLSchemaName: String = js.native

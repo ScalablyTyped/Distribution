@@ -13,7 +13,8 @@ class MetaProperty protected () extends js.Object {
   val IsReadOnly: Boolean = js.native
   val IsRequired: Boolean = js.native
   val Name: String = js.native
-  var `Office.MetaProperty_typekey`: MetaProperty = js.native
+  @JSName("Office.MetaProperty_typekey")
+  var OfficeDotMetaProperty_typekey: MetaProperty = js.native
   val Parent: js.Any = js.native
   val Type: MsoMetaPropertyType = js.native
   val ValidationError: String = js.native

@@ -1,11 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.ElevationStatus.INVALID_REQUEST
-import typings.googlemaps.google.maps.ElevationStatus.OK
-import typings.googlemaps.google.maps.ElevationStatus.OVER_QUERY_LIMIT
-import typings.googlemaps.google.maps.ElevationStatus.REQUEST_DENIED
-import typings.googlemaps.google.maps.ElevationStatus.UNKNOWN_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

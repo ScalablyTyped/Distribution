@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactBatchStatus.serverSearchSyncManagerError
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactBatchStatus.serverSearchUnknownError
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactBatchStatus.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

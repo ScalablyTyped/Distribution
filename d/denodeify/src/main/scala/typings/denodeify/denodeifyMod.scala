@@ -1,16 +1,5 @@
 package typings.denodeify
 
-import typings.denodeify.denodeifyMod.Callback
-import typings.denodeify.denodeifyMod.F
-import typings.denodeify.denodeifyMod.F1
-import typings.denodeify.denodeifyMod.F2
-import typings.denodeify.denodeifyMod.F3
-import typings.denodeify.denodeifyMod.F4
-import typings.denodeify.denodeifyMod.F5
-import typings.denodeify.denodeifyMod.F6
-import typings.denodeify.denodeifyMod.F7
-import typings.denodeify.denodeifyMod.F8
-import typings.denodeify.denodeifyMod.M
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

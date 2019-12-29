@@ -1,5 +1,6 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins.UndoRedoAction
 
+import typings.handsontable.handsontableMod.Handsontable.plugins.CellValue
 import typings.handsontable.handsontableStrings.remove_col
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,7 @@ trait RemoveCol extends js.Object {
   var actionType: remove_col
   var amount: Double
   var columnPositions: js.Array[Double]
-  var data: js.Array[js.Array[typings.handsontable.handsontableMod.Handsontable.plugins.CellValue]]
+  var data: js.Array[js.Array[CellValue]]
   var headers: js.Array[String]
   var index: Double
   var indexes: js.Array[Double]
@@ -21,7 +22,7 @@ object RemoveCol {
     actionType: remove_col,
     amount: Double,
     columnPositions: js.Array[Double],
-    data: js.Array[js.Array[typings.handsontable.handsontableMod.Handsontable.plugins.CellValue]],
+    data: js.Array[js.Array[CellValue]],
     headers: js.Array[String],
     index: Double,
     indexes: js.Array[Double]

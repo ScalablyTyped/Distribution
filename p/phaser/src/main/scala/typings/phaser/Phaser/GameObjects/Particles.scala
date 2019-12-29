@@ -7,11 +7,6 @@ import typings.phaser.Phaser.GameObjects.Components.Pipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
-import typings.phaser.Phaser.GameObjects.Particles.EmitterOp
-import typings.phaser.Phaser.GameObjects.Particles.GravityWell
-import typings.phaser.Phaser.GameObjects.Particles.Particle
-import typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter
-import typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager
 import typings.phaser.Phaser.GameObjects.Particles.Zones.DeathZone
 import typings.phaser.Phaser.GameObjects.Particles.Zones.EdgeZone
 import typings.phaser.Phaser.GameObjects.Particles.Zones.RandomZone

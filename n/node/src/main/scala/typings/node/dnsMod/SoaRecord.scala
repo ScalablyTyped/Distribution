@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait SoaRecord extends js.Object {
   var expire: Double
-  var hostmaster: java.lang.String
+  var hostmaster: String
   var minttl: Double
-  var nsname: java.lang.String
+  var nsname: String
   var refresh: Double
   var retry: Double
   var serial: Double
@@ -18,9 +18,9 @@ object SoaRecord {
   @scala.inline
   def apply(
     expire: Double,
-    hostmaster: java.lang.String,
+    hostmaster: String,
     minttl: Double,
-    nsname: java.lang.String,
+    nsname: String,
     refresh: Double,
     retry: Double,
     serial: Double

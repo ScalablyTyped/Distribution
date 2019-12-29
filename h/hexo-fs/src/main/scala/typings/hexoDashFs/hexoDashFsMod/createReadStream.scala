@@ -1,5 +1,6 @@
 package typings.hexoDashFs.hexoDashFsMod
 
+import typings.node.Anon_AutoClose
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +16,6 @@ object createReadStream extends js.Object {
     */
   def apply(path: PathLike): typings.node.fsMod.ReadStream = js.native
   def apply(path: PathLike, options: String): typings.node.fsMod.ReadStream = js.native
-  def apply(path: PathLike, options: typings.node.Anon_AutoClose): typings.node.fsMod.ReadStream = js.native
+  def apply(path: PathLike, options: Anon_AutoClose): typings.node.fsMod.ReadStream = js.native
 }
 

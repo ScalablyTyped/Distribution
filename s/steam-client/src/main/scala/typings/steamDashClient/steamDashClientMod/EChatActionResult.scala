@@ -1,16 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.ChatDoesntExist
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.ChatFull
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.Error
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.NotAllowedOnBannedUser
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.NotAllowedOnChatOwner
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.NotAllowedOnClanMember
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.NotAllowedOnSelf
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.NotPermitted
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.Success
-import typings.steamDashClient.steamDashClientMod.EChatActionResult.VoiceSlotsFull
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

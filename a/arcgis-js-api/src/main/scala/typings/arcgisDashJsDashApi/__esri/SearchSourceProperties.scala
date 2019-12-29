@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.__esri
 
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -138,8 +137,8 @@ object SearchSourceProperties {
   def apply(
     autoNavigate: js.UndefOr[Boolean] = js.undefined,
     filter: SearchSourceFilter = null,
-    getResults: /* params */ js.Any => IPromise[js.Array[SearchResult]] = null,
-    getSuggestions: /* params */ js.Any => IPromise[js.Array[SuggestResult]] = null,
+    getResults: /* params */ js.Any => js.Promise[js.Array[SearchResult]] = null,
+    getSuggestions: /* params */ js.Any => js.Promise[js.Array[SuggestResult]] = null,
     maxResults: Int | Double = null,
     maxSuggestions: Int | Double = null,
     minSuggestCharacters: Int | Double = null,

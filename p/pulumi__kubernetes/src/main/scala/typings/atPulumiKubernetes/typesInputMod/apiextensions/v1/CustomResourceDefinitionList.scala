@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.apiextensions.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.apiextensionsDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait CustomResourceDefinitionList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`apiextensionsDOTk8sDOTio/v1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[apiextensionsDotk8sDotioSlashv1]] = js.undefined
   /**
     * items list individual CustomResourceDefinition objects
     */
@@ -40,7 +40,7 @@ object CustomResourceDefinitionList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[CustomResourceDefinition]]],
-    apiVersion: Input[`apiextensionsDOTk8sDOTio/v1`] = null,
+    apiVersion: Input[apiextensionsDotk8sDotioSlashv1] = null,
     kind: Input[
       typings.atPulumiKubernetes.atPulumiKubernetesStrings.CustomResourceDefinitionList
     ] = null,

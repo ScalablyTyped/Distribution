@@ -1,7 +1,6 @@
 package typings.ckeditor.CKEDITOR.plugins
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.CKEDITOR.plugins.condesnippet.highlighter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.FrameworkIdentityType.AggregateIdentity
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.FrameworkIdentityType.ImportedIdentity
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.FrameworkIdentityType.None
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.FrameworkIdentityType.ServiceIdentity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

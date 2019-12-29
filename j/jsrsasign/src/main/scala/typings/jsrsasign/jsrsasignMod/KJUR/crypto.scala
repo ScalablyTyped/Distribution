@@ -9,7 +9,9 @@ import typings.jsrsasign.Anon_Hmacmd5
 import typings.jsrsasign.Anon_Md2
 import typings.jsrsasign.Anon_Md5
 import typings.jsrsasign.Anon_Md5Ripemd160
+import typings.jsrsasign.jsrsasign.BigInteger
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECParameter
+import typings.jsrsasign.jsrsasign.RSAKey
 import typings.jsrsasign.jsrsasignStrings.SIGN
 import typings.jsrsasign.jsrsasignStrings.VERIFY
 import scala.scalajs.js
@@ -231,7 +233,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj) → "1abc2d..."
       * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj, "RSAOAEP) → "23ab02..."
       */
-    def decrypt(hex: String, keyObj: typings.jsrsasign.jsrsasign.RSAKey, algName: String): String = js.native
+    def decrypt(hex: String, keyObj: RSAKey, algName: String): String = js.native
     def encrypt(s: String, keyObj: String, algName: String): String = js.native
     /**
       * encrypt raw string by specified key and algorithm
@@ -245,7 +247,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj) → "1abc2d..."
       * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj, "RSAOAEP") → "23ab02..."
       */
-    def encrypt(s: String, keyObj: typings.jsrsasign.jsrsasign.RSAKey, algName: String): String = js.native
+    def encrypt(s: String, keyObj: RSAKey, algName: String): String = js.native
     def getAlgByKeyAndName(keyObj: String, algName: String): String = js.native
     /**
       * get canonicalized encrypt/decrypt algorithm name by key and short/long algorithm name
@@ -265,7 +267,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey) → "RSA"
       * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey, "RSAOAEP") → "RSAOAEP"
       */
-    def getAlgByKeyAndName(keyObj: typings.jsrsasign.jsrsasign.RSAKey, algName: String): String = js.native
+    def getAlgByKeyAndName(keyObj: RSAKey, algName: String): String = js.native
   }
   
   /* static members */
@@ -283,7 +285,7 @@ object crypto extends js.Object {
       * @param biS BIgInteger object of S field of ECDSA signature value
       * @return hexadecimal string of ASN.1 encoded ECDSA signature value
       */
-    def biRSSigToASN1Sig(biR: typings.jsrsasign.jsrsasign.BigInteger, biS: typings.jsrsasign.jsrsasign.BigInteger): String = js.native
+    def biRSSigToASN1Sig(biR: BigInteger, biS: BigInteger): String = js.native
     /**
       * convert hexadecimal concatinated signature to ASN.1 encoded signature
       * @param concatSig r-s concatinated format of ECDSA signature value
@@ -461,7 +463,7 @@ object crypto extends js.Object {
       * biMax = new BigInteger("3fa411...", 16);
       * KJUR.crypto.Util.getRandomBigIntegerMinToMax(biMin, biMax) → 32f1... of BigInteger
       */
-    def getRandomBigIntegerMinToMax(biMin: Double, biMax: Double): typings.jsrsasign.jsrsasign.BigInteger = js.native
+    def getRandomBigIntegerMinToMax(biMin: Double, biMax: Double): BigInteger = js.native
     /**
       * get BigInteger object of random value from with specified bit length
       * @param n length of bits of random
@@ -470,7 +472,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomBigIntegerOfNbits(24) → 6314af of BigInteger
       * KJUR.crypto.Util.getRandomBigIntegerOfNbits(1024) → 8fbc... of BigInteger
       */
-    def getRandomBigIntegerOfNbits(n: Double): typings.jsrsasign.jsrsasign.BigInteger = js.native
+    def getRandomBigIntegerOfNbits(n: Double): BigInteger = js.native
     /**
       * get BigInteger object of random value from with specified byte length
       * @param n length of bytes of random
@@ -479,7 +481,7 @@ object crypto extends js.Object {
       * KJUR.crypto.Util.getRandomBigIntegerOfNbytes(3) → 6314af of BigInteger
       * KJUR.crypto.Util.getRandomBigIntegerOfNbytes(128) → 8fbc... of BigInteger
       */
-    def getRandomBigIntegerOfNbytes(n: Double): typings.jsrsasign.jsrsasign.BigInteger = js.native
+    def getRandomBigIntegerOfNbytes(n: Double): BigInteger = js.native
     /**
       * get BigInteger object of random value from zero to max value
       * @param biMax max value of BigInteger object for random value
@@ -492,7 +494,7 @@ object crypto extends js.Object {
       * biMax = new BigInteger("3fa411...", 16);
       * KJUR.crypto.Util.getRandomBigIntegerZeroToMax(biMax) → 8fbc... of BigInteger
       */
-    def getRandomBigIntegerZeroToMax(biMax: Double): typings.jsrsasign.jsrsasign.BigInteger = js.native
+    def getRandomBigIntegerZeroToMax(biMax: Double): BigInteger = js.native
     /**
       * get hexadecimal string of random value from with specified bit length
       * @param n length of bits of random

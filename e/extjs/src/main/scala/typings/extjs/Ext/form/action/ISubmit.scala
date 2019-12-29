@@ -7,8 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISubmit
-  extends typings.extjs.Ext.form.action.IAction {
+trait ISubmit extends IAction {
   /** [Config Option] (Boolean) */
   var clientValidation: js.UndefOr[Boolean] = js.undefined
 }
@@ -16,10 +15,10 @@ trait ISubmit
 object ISubmit {
   @scala.inline
   def apply(
-    CLIENT_INVALID: java.lang.String = null,
-    CONNECT_FAILURE: java.lang.String = null,
-    LOAD_FAILURE: java.lang.String = null,
-    SERVER_INVALID: java.lang.String = null,
+    CLIENT_INVALID: String = null,
+    CONNECT_FAILURE: String = null,
+    LOAD_FAILURE: String = null,
+    SERVER_INVALID: String = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -27,15 +26,15 @@ object ISubmit {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clientValidation: js.UndefOr[Boolean] = js.undefined,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     failure: js.Any = null,
-    failureType: java.lang.String = null,
+    failureType: String = null,
     form: IBasic = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     headers: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ISubmit = null,
-    method: java.lang.String = null,
+    method: String = null,
     mixins: js.Any = null,
     params: js.Any = null,
     requires: Array = null,
@@ -50,11 +49,11 @@ object ISubmit {
     submitEmptyText: js.UndefOr[Boolean] = js.undefined,
     success: js.Any = null,
     timeout: Int | Double = null,
-    `type`: java.lang.String = null,
-    url: java.lang.String = null,
+    `type`: String = null,
+    url: String = null,
     uses: Array = null,
-    waitMsg: java.lang.String = null,
-    waitTitle: java.lang.String = null
+    waitMsg: String = null,
+    waitTitle: String = null
   ): ISubmit = {
     val __obj = js.Dynamic.literal()
     if (CLIENT_INVALID != null) __obj.updateDynamic("CLIENT_INVALID")(CLIENT_INVALID.asInstanceOf[js.Any])

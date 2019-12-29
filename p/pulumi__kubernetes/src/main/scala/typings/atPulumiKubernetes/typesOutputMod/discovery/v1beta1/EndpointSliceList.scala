@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.discovery.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.discoveryDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait EndpointSliceList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `discoveryDOTk8sDOTio/v1beta1`
+  val apiVersion: discoveryDotk8sDotioSlashv1beta1
   /**
     * List of endpoint slices
     */
@@ -37,7 +37,7 @@ trait EndpointSliceList extends js.Object {
 object EndpointSliceList {
   @scala.inline
   def apply(
-    apiVersion: `discoveryDOTk8sDOTio/v1beta1`,
+    apiVersion: discoveryDotk8sDotioSlashv1beta1,
     items: js.Array[EndpointSlice],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSliceList,
     metadata: ListMeta

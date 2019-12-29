@@ -153,7 +153,7 @@ object SeriesHeatmapOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     states: PlotHeatmapStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     tooltip: PlotHeatmapTooltipOptions = null,

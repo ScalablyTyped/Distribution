@@ -7,8 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait INumeric
-  extends typings.extjs.Ext.chart.axis.IAxis {
+trait INumeric extends IAxis {
   /** [Config Option] (Boolean) */
   var adjustMaximumByMajorUnit: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -41,9 +40,9 @@ object INumeric {
     drawAxis: /* init */ js.UndefOr[js.Any] => Unit = null,
     drawGrid: () => Unit = null,
     drawLabel: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     grid: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
@@ -55,13 +54,13 @@ object INumeric {
     minimum: Int | Double = null,
     minorTickSteps: Int | Double = null,
     mixins: js.Any = null,
-    position: java.lang.String = null,
+    position: String = null,
     requires: Array = null,
     self: IClass = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    title: java.lang.String = null,
+    title: String = null,
     uses: Array = null,
     width: Int | Double = null
   ): INumeric = {

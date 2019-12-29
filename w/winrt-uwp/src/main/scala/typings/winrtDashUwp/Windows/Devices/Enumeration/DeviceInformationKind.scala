@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpoint
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpointContainer
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpointService
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.device
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceContainer
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceInterface
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceInterfaceClass
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

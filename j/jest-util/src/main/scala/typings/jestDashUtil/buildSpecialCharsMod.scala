@@ -1,6 +1,6 @@
 package typings.jestDashUtil
 
-import typings.jestDashUtil.jestDashUtilStrings.` BACKSLASHu203A `
+import typings.jestDashUtil.jestDashUtilStrings.`SpaceSinglerightpointinganglequotationmark `
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-util/build/specialChars", JSImport.Namespace)
 @js.native
 object buildSpecialCharsMod extends js.Object {
-  val ARROW: ` BACKSLASHu203A ` = js.native
+  val ARROW: `SpaceSinglerightpointinganglequotationmark ` = js.native
   val CLEAR: String = js.native
   @js.native
   object ICONS extends js.Object {

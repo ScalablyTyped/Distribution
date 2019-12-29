@@ -12,7 +12,7 @@ trait SetBreakpointByUrlParameterType extends js.Object {
   /**
     * Expression to use as a breakpoint condition. When specified, debugger will only stop on the breakpoint if this expression evaluates to true.
     */
-  var condition: js.UndefOr[java.lang.String] = js.undefined
+  var condition: js.UndefOr[String] = js.undefined
   /**
     * Line number to set breakpoint at.
     */
@@ -20,15 +20,15 @@ trait SetBreakpointByUrlParameterType extends js.Object {
   /**
     * Script hash of the resources to set breakpoint on.
     */
-  var scriptHash: js.UndefOr[java.lang.String] = js.undefined
+  var scriptHash: js.UndefOr[String] = js.undefined
   /**
     * URL of the resources to set breakpoint on.
     */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
   /**
     * Regex pattern for the URLs of the resources to set breakpoints on. Either <code>url</code> or <code>urlRegex</code> must be specified.
     */
-  var urlRegex: js.UndefOr[java.lang.String] = js.undefined
+  var urlRegex: js.UndefOr[String] = js.undefined
 }
 
 object SetBreakpointByUrlParameterType {
@@ -36,10 +36,10 @@ object SetBreakpointByUrlParameterType {
   def apply(
     lineNumber: Double,
     columnNumber: Int | Double = null,
-    condition: java.lang.String = null,
-    scriptHash: java.lang.String = null,
-    url: java.lang.String = null,
-    urlRegex: java.lang.String = null
+    condition: String = null,
+    scriptHash: String = null,
+    url: String = null,
+    urlRegex: String = null
   ): SetBreakpointByUrlParameterType = {
     val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])

@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.ResultPhase.Full
-import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.ResultPhase.Preliminary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

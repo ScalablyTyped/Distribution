@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.allowOffClient
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.clientCoordinates
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.includeInset
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.noHorizontalScroll
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.noVerticalScroll
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.none
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.start
-import typings.winrtDashUwp.Windows.UI.Text.PointOptions.transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

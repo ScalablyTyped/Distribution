@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommentReply extends js.Object {
-  var author: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
+  var author: js.UndefOr[User] = js.undefined
   var content: js.UndefOr[String] = js.undefined
   var createdDate: js.UndefOr[String] = js.undefined
   var deleted: js.UndefOr[Boolean] = js.undefined
@@ -19,7 +19,7 @@ trait CommentReply extends js.Object {
 object CommentReply {
   @scala.inline
   def apply(
-    author: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User = null,
+    author: User = null,
     content: String = null,
     createdDate: String = null,
     deleted: js.UndefOr[Boolean] = js.undefined,

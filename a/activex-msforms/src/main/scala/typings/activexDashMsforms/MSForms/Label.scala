@@ -25,7 +25,8 @@ class Label protected () extends js.Object {
   var FontUnderline: Boolean = js.native
   var FontWeight: Double = js.native
   var ForeColor: Double = js.native
-  var `MSForms.Label_typekey`: Label = js.native
+  @JSName("MSForms.Label_typekey")
+  var MSFormsDotLabel_typekey: Label = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var Picture: StdPicture = js.native

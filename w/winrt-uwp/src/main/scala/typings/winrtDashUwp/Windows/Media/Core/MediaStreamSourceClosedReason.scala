@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.appReportedError
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.done
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.missingSampleRequestedEventHandler
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.protectionSystemFailure
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unknownError
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unsupportedEncodingFormat
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unsupportedProtectionSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -63,28 +63,28 @@ object zchatDashBrowserStrings {
   sealed trait chat extends EventName
   
   @js.native
-  sealed trait chatDOTcomment extends js.Object
+  sealed trait chatDotcomment extends js.Object
   
   @js.native
-  sealed trait chatDOTfile extends js.Object
+  sealed trait chatDotfile extends js.Object
   
   @js.native
-  sealed trait chatDOTmemberjoin extends js.Object
+  sealed trait chatDotmemberjoin extends js.Object
   
   @js.native
-  sealed trait chatDOTmemberleave extends js.Object
+  sealed trait chatDotmemberleave extends js.Object
   
   @js.native
-  sealed trait chatDOTmsg extends js.Object
+  sealed trait chatDotmsg extends js.Object
   
   @js.native
-  sealed trait chatDOTqueue_position extends js.Object
+  sealed trait chatDotqueue_position extends js.Object
   
   @js.native
-  sealed trait chatDOTrating extends js.Object
+  sealed trait chatDotrating extends js.Object
   
   @js.native
-  sealed trait chatDOTrequestDOTrating extends js.Object
+  sealed trait chatDotrequestDotrating extends js.Object
   
   @js.native
   sealed trait closed extends _EventData
@@ -162,21 +162,21 @@ object zchatDashBrowserStrings {
   @scala.inline
   def chat: chat = "chat".asInstanceOf[chat]
   @scala.inline
-  def chatDOTcomment: chatDOTcomment = "chat.comment".asInstanceOf[chatDOTcomment]
+  def chatDotcomment: chatDotcomment = "chat.comment".asInstanceOf[chatDotcomment]
   @scala.inline
-  def chatDOTfile: chatDOTfile = "chat.file".asInstanceOf[chatDOTfile]
+  def chatDotfile: chatDotfile = "chat.file".asInstanceOf[chatDotfile]
   @scala.inline
-  def chatDOTmemberjoin: chatDOTmemberjoin = "chat.memberjoin".asInstanceOf[chatDOTmemberjoin]
+  def chatDotmemberjoin: chatDotmemberjoin = "chat.memberjoin".asInstanceOf[chatDotmemberjoin]
   @scala.inline
-  def chatDOTmemberleave: chatDOTmemberleave = "chat.memberleave".asInstanceOf[chatDOTmemberleave]
+  def chatDotmemberleave: chatDotmemberleave = "chat.memberleave".asInstanceOf[chatDotmemberleave]
   @scala.inline
-  def chatDOTmsg: chatDOTmsg = "chat.msg".asInstanceOf[chatDOTmsg]
+  def chatDotmsg: chatDotmsg = "chat.msg".asInstanceOf[chatDotmsg]
   @scala.inline
-  def chatDOTqueue_position: chatDOTqueue_position = "chat.queue_position".asInstanceOf[chatDOTqueue_position]
+  def chatDotqueue_position: chatDotqueue_position = "chat.queue_position".asInstanceOf[chatDotqueue_position]
   @scala.inline
-  def chatDOTrating: chatDOTrating = "chat.rating".asInstanceOf[chatDOTrating]
+  def chatDotrating: chatDotrating = "chat.rating".asInstanceOf[chatDotrating]
   @scala.inline
-  def chatDOTrequestDOTrating: chatDOTrequestDOTrating = "chat.request.rating".asInstanceOf[chatDOTrequestDOTrating]
+  def chatDotrequestDotrating: chatDotrequestDotrating = "chat.request.rating".asInstanceOf[chatDotrequestDotrating]
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline

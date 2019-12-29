@@ -1,7 +1,6 @@
 package typings.antd
 
 import typings.antd.libTypographyBaseMod.BlockProps
-import typings.antd.libTypographyParagraphMod.ParagraphProps
 import typings.react.reactMod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`

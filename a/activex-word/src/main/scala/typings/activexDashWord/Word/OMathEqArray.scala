@@ -16,6 +16,7 @@ class OMathEqArray protected () extends js.Object {
   val Parent: js.Any = js.native
   var RowSpacing: Double = js.native
   var RowSpacingRule: WdOMathSpacingRule = js.native
-  var `Word.OMathEqArray_typekey`: OMathEqArray = js.native
+  @JSName("Word.OMathEqArray_typekey")
+  var WordDotOMathEqArray_typekey: OMathEqArray = js.native
 }
 

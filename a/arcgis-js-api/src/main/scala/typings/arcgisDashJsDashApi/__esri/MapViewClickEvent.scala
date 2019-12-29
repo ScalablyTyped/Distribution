@@ -1,17 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.click
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MapViewClickEvent extends js.Object {
   var button: Double
-  var buttons: Double
+  var buttons: js.Any
   var mapPoint: Point
   var native: js.Any
   var stopPropagation: js.Function
   var timestamp: Double
-  var `type`: String
+  var `type`: click
   var x: Double
   var y: Double
 }
@@ -20,12 +21,12 @@ object MapViewClickEvent {
   @scala.inline
   def apply(
     button: Double,
-    buttons: Double,
+    buttons: js.Any,
     mapPoint: Point,
     native: js.Any,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: String,
+    `type`: click,
     x: Double,
     y: Double
   ): MapViewClickEvent = {

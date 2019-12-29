@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait Key extends js.Object {
   var ctrl: js.UndefOr[Boolean] = js.undefined
   var meta: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[java.lang.String] = js.undefined
-  var sequence: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+  var sequence: js.UndefOr[String] = js.undefined
   var shift: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -17,8 +17,8 @@ object Key {
   def apply(
     ctrl: js.UndefOr[Boolean] = js.undefined,
     meta: js.UndefOr[Boolean] = js.undefined,
-    name: java.lang.String = null,
-    sequence: java.lang.String = null,
+    name: String = null,
+    sequence: String = null,
     shift: js.UndefOr[Boolean] = js.undefined
   ): Key = {
     val __obj = js.Dynamic.literal()

@@ -1,18 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading1
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading2
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading3
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading4
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading5
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading6
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading7
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading8
-import typings.winrt.Windows.UI.Text.ParagraphStyle.heading9
-import typings.winrt.Windows.UI.Text.ParagraphStyle.none
-import typings.winrt.Windows.UI.Text.ParagraphStyle.normal
-import typings.winrt.Windows.UI.Text.ParagraphStyle.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

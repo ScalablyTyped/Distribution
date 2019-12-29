@@ -8,14 +8,17 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`segment-drag`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-change`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-drag`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`value-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`values-change`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertical-reversed`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dragging
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.editing
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -218,16 +221,52 @@ trait Slider extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
-  def inputFormatFunction(value: Double, `type`: String): String = js.native
-  def inputFormatFunction(value: Double, `type`: String, index: Double): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_average(value: Double, `type`: average): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_max(value: Double, `type`: max): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_min(value: Double, `type`: min): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_tick(value: Double, `type`: tick): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_tick(value: Double, `type`: tick, index: Double): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_value(value: Double, `type`: value): String = js.native
+  @JSName("inputFormatFunction")
+  def inputFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction). This property must be set if an `inputFormatFunction` is set. Otherwise the slider values will likely not update to their expected positions.  Overrides the default input parses, which is a parsed floating point number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
-  def inputParseFunction(value: String, `type`: String): Double = js.native
-  def inputParseFunction(value: String, `type`: String, index: Double): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_average(value: String, `type`: average): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_average(value: String, `type`: average, index: Double): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_max(value: String, `type`: max): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_max(value: String, `type`: max, index: Double): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_min(value: String, `type`: min): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_min(value: String, `type`: min, index: Double): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_tick(value: String, `type`: tick): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_tick(value: String, `type`: tick, index: Double): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_value(value: String, `type`: value): Double = js.native
+  @JSName("inputParseFunction")
+  def inputParseFunction_value(value: String, `type`: value, index: Double): Double = js.native
   /**
     * A function used to format labels. Overrides the default label formatter.  By default labels are formatted in the following way:
     *   * When the data range is less than `10` (`(max - min) < 10`), labels are rounded based on the value set in the [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#precision) property.
@@ -239,8 +278,26 @@ trait Slider extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: String): String = js.native
-  def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_average(value: Double, `type`: average): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_max(value: Double, `type`: max): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_min(value: Double, `type`: min): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_tick(value: Double, `type`: tick): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_tick(value: Double, `type`: tick, index: Double): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_value(value: Double, `type`: value): String = js.native
+  @JSName("labelFormatFunction")
+  def labelFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   @JSName("on")
   def on_maxchange(name: `max-change`, eventHandler: SliderMaxChangeEventHandler): IHandle = js.native
   @JSName("on")
@@ -251,10 +308,6 @@ trait Slider extends Widget {
   def on_thumbchange(name: `thumb-change`, eventHandler: SliderThumbChangeEventHandler): IHandle = js.native
   @JSName("on")
   def on_thumbdrag(name: `thumb-drag`, eventHandler: SliderThumbDragEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_valuechange(name: `value-change`, eventHandler: SliderValueChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_valueschange(name: `values-change`, eventHandler: SliderValuesChangeEventHandler): IHandle = js.native
   /**
     * Function that executes each time a thumb is created on the slider. This can be used to add custom styling to each thumb or hook event listeners to specific thumbs.
     *

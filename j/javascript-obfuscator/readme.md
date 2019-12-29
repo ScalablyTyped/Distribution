@@ -1,7 +1,7 @@
 
 # Scala.js typings for javascript-obfuscator
 
-Typings are for version 0.18.7
+Typings are for version 0.18.8
 
 ## Library description:
 JavaScript obfuscator

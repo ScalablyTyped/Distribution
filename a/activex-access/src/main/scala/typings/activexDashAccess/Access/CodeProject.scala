@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.CodeProject")
 @js.native
 class CodeProject protected () extends js.Object {
-  var `Access.CodeProject_typekey`: CodeProject = js.native
   val AccessConnection: typings.activexDashAdodb.ADODB.Connection = js.native
+  @JSName("Access.CodeProject_typekey")
+  var AccessDotCodeProject_typekey: CodeProject = js.native
   @JSName("AllDataAccessPages")
   val AllDataAccessPages_Original: AccessObjects = js.native
   @JSName("AllForms")

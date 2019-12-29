@@ -25,11 +25,11 @@ trait ChartOptions extends js.Object {
   var noteHover: js.UndefOr[js.Function1[/* e */ ChartNoteHoverEvent, Unit]] = js.undefined
   var noteLeave: js.UndefOr[js.Function1[/* e */ ChartNoteLeaveEvent, Unit]] = js.undefined
   var paneRender: js.UndefOr[js.Function1[/* e */ ChartPaneRenderEvent, Unit]] = js.undefined
-  var panes: js.UndefOr[js.Array[typings.kendoDashUi.kendo.dataviz.ui.ChartPane]] = js.undefined
+  var panes: js.UndefOr[js.Array[ChartPane]] = js.undefined
   var pannable: js.UndefOr[Boolean | ChartPannable] = js.undefined
   var pdf: js.UndefOr[ChartPdf] = js.undefined
   var persistSeriesVisibility: js.UndefOr[Boolean] = js.undefined
-  var plotArea: js.UndefOr[typings.kendoDashUi.kendo.dataviz.ui.ChartPlotArea] = js.undefined
+  var plotArea: js.UndefOr[ChartPlotArea] = js.undefined
   var plotAreaClick: js.UndefOr[js.Function1[/* e */ ChartPlotAreaClickEvent, Unit]] = js.undefined
   var plotAreaHover: js.UndefOr[js.Function1[/* e */ ChartPlotAreaHoverEvent, Unit]] = js.undefined
   var plotAreaLeave: js.UndefOr[js.Function1[/* e */ ChartPlotAreaLeaveEvent, Unit]] = js.undefined
@@ -80,11 +80,11 @@ object ChartOptions {
     noteHover: /* e */ ChartNoteHoverEvent => Unit = null,
     noteLeave: /* e */ ChartNoteLeaveEvent => Unit = null,
     paneRender: /* e */ ChartPaneRenderEvent => Unit = null,
-    panes: js.Array[typings.kendoDashUi.kendo.dataviz.ui.ChartPane] = null,
+    panes: js.Array[ChartPane] = null,
     pannable: Boolean | ChartPannable = null,
     pdf: ChartPdf = null,
     persistSeriesVisibility: js.UndefOr[Boolean] = js.undefined,
-    plotArea: typings.kendoDashUi.kendo.dataviz.ui.ChartPlotArea = null,
+    plotArea: ChartPlotArea = null,
     plotAreaClick: /* e */ ChartPlotAreaClickEvent => Unit = null,
     plotAreaHover: /* e */ ChartPlotAreaHoverEvent => Unit = null,
     plotAreaLeave: /* e */ ChartPlotAreaLeaveEvent => Unit = null,

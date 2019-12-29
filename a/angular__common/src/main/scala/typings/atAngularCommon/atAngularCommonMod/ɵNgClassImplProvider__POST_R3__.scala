@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵNgClassImplProvider__POST_R3__")
+@JSImport("@angular/common", "\u0275NgClassImplProvider__POST_R3__")
 @js.native
 object ɵNgClassImplProvider__POST_R3__ extends js.Object {
   @js.native

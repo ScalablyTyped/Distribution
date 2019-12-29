@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.documenttemplates
 
+import typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +15,7 @@ import scala.scalajs.js.annotation._
 class DocumentTemplate protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.documenttemplates.DocumentTemplate {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
@@ -26,7 +28,7 @@ class DocumentTemplate protected ()
 @js.native
 object DocumentTemplate extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates a new DocumentTemplate unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.

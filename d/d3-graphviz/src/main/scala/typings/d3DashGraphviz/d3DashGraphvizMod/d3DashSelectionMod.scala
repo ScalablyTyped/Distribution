@@ -1,6 +1,5 @@
 package typings.d3DashGraphviz.d3DashGraphvizMod
 
-import typings.d3DashGraphviz.d3DashGraphvizMod.d3DashSelectionMod.Selection
 import typings.d3DashSelection.d3DashSelectionMod.BaseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

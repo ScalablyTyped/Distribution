@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemWatcherError.authenticationError
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemWatcherError.internetNotAvailable
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemWatcherError.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

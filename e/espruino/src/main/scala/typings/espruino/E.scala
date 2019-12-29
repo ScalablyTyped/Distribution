@@ -2,7 +2,6 @@ package typings.espruino
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.espruino.E.FFT
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js

@@ -1,7 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.UpdateDraftBodyType.IN_PLACE_INSERT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

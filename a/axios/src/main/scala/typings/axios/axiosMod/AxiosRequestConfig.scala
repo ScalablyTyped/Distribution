@@ -1,6 +1,6 @@
 package typings.axios.axiosMod
 
-import typings.axios.axiosNumbers.`false`
+import typings.axios.axiosBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

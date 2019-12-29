@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.custom
-import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.high
-import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

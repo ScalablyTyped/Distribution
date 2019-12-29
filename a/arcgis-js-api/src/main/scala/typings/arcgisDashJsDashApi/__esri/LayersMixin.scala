@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +22,8 @@ trait LayersMixin extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers)
     */
   var layers: Collection[Layer] = js.native
-  def add(layer: IPromise[_]): Unit = js.native
-  def add(layer: IPromise[_], index: Double): Unit = js.native
+  def add(layer: js.Promise[_]): Unit = js.native
+  def add(layer: js.Promise[_], index: Double): Unit = js.native
   /**
     * Adds a layer to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
     *

@@ -1,7 +1,7 @@
 package typings.jsonDashSchema.jsonDashSchemaMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsonDashSchema.jsonDashSchemaNumbers.`false`
+import typings.jsonDashSchema.jsonDashSchemaBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

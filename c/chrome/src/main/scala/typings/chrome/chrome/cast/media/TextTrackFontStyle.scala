@@ -1,10 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD
-import typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD_ITALIC
-import typings.chrome.chrome.cast.media.TextTrackFontStyle.ITALIC
-import typings.chrome.chrome.cast.media.TextTrackFontStyle.NORMAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

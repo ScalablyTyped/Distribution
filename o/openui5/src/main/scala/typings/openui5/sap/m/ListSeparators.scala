@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ListSeparators.All
-import typings.openui5.sap.m.ListSeparators.Inner
-import typings.openui5.sap.m.ListSeparators.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

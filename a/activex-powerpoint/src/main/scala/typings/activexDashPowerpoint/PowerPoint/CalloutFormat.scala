@@ -23,7 +23,8 @@ class CalloutFormat protected () extends js.Object {
   var Gap: Double = js.native
   val Length: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.CalloutFormat_typekey`: CalloutFormat = js.native
+  @JSName("PowerPoint.CalloutFormat_typekey")
+  var PowerPointDotCalloutFormat_typekey: CalloutFormat = js.native
   var Type: MsoCalloutType = js.native
   def AutomaticLength(): Unit = js.native
   def CustomDrop(Drop: Double): Unit = js.native

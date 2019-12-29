@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.FileType.Compressed
-import typings.officeDashJsDashPreview.Office.FileType.Pdf
-import typings.officeDashJsDashPreview.Office.FileType.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

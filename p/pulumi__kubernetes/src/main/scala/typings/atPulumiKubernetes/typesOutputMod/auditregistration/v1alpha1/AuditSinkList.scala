@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.auditregistration.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.auditregistrationDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait AuditSinkList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `auditregistrationDOTk8sDOTio/v1alpha1`
+  val apiVersion: auditregistrationDotk8sDotioSlashv1alpha1
   /**
     * List of audit configurations.
     */
@@ -34,7 +34,7 @@ trait AuditSinkList extends js.Object {
 object AuditSinkList {
   @scala.inline
   def apply(
-    apiVersion: `auditregistrationDOTk8sDOTio/v1alpha1`,
+    apiVersion: auditregistrationDotk8sDotioSlashv1alpha1,
     items: js.Array[AuditSink],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.AuditSinkList,
     metadata: ListMeta

@@ -11,9 +11,9 @@ trait IMenu extends IBase {
   /** [Property] (Array) */
   var menuItems: js.UndefOr[Array] = js.undefined
   /** [Property] (String) */
-  var noItemsMenuText: js.UndefOr[java.lang.String] = js.undefined
+  var noItemsMenuText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var triggerButtonCls: js.UndefOr[java.lang.String] = js.undefined
+  var triggerButtonCls: js.UndefOr[String] = js.undefined
 }
 
 object IMenu {
@@ -25,18 +25,18 @@ object IMenu {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IMenu = null,
     menuItems: Array = null,
     mixins: js.Any = null,
-    noItemsMenuText: java.lang.String = null,
+    noItemsMenuText: String = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    triggerButtonCls: java.lang.String = null,
+    triggerButtonCls: String = null,
     uses: Array = null
   ): IMenu = {
     val __obj = js.Dynamic.literal()

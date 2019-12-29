@@ -1,8 +1,6 @@
 package typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.HORIZONTAL
-import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.VERTICAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,7 @@
 package typings.atFirebaseFirestore.distSrcApiCredentialsMod
 
-import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternalName
+import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/firestore/dist/src/api/credentials", "FirebaseCredentialsProvider")
 @js.native
 class FirebaseCredentialsProvider protected () extends CredentialsProvider {
-  def this(app: FirebaseApp) = this()
-  val app: js.Any = js.native
+  def this(authProvider: Provider[FirebaseAuthInternalName]) = this()
+  var auth: js.Any = js.native
   /** The listener registered with setChangeListener(). */
   var changeListener: js.Any = js.native
   /** Tracks the current User. */

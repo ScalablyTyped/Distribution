@@ -1,8 +1,8 @@
 package typings.atBabelCore.atBabelCoreMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atBabelCore.atBabelCoreNumbers.`false`
-import typings.atBabelCore.atBabelCoreNumbers.`true`
+import typings.atBabelCore.atBabelCoreBooleans.`false`
+import typings.atBabelCore.atBabelCoreBooleans.`true`
 import typings.atBabelCore.atBabelCoreStrings.`inline`
 import typings.atBabelCore.atBabelCoreStrings.`upward-optional`
 import typings.atBabelCore.atBabelCoreStrings.auto

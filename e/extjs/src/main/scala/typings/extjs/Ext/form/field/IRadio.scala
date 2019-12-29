@@ -4,12 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IRadio
-  extends typings.extjs.Ext.form.field.ICheckbox {
+trait IRadio extends ICheckbox {
   /** [Method] If this radio is part of a group it will return the selected value
   		* @returns String
   		*/
-  var getGroupValue: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getGroupValue: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value s that should be saved to the Ext data Model instance for this field when Ext form Basic updateRe
   		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -25,8 +24,8 @@ trait IRadio
 object IRadio {
   @scala.inline
   def apply(
-    ICheckbox: typings.extjs.Ext.form.field.ICheckbox = null,
-    getGroupValue: () => java.lang.String = null,
+    ICheckbox: ICheckbox = null,
+    getGroupValue: () => String = null,
     getModelData: () => _ = null,
     isRadio: js.UndefOr[Boolean] = js.undefined,
     onRemoved: () => Unit = null

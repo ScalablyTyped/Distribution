@@ -14,7 +14,8 @@ class ChartObject protected () extends js.Object {
   val Chart: typings.activexDashExcel.Excel.Chart = js.native
   val Creator: XlCreator = js.native
   var Enabled: Boolean = js.native
-  var `Excel.ChartObject_typekey`: ChartObject = js.native
+  @JSName("Excel.ChartObject_typekey")
+  var ExcelDotChartObject_typekey: ChartObject = js.native
   var Height: Double = js.native
   val Index: Double = js.native
   val Interior: typings.activexDashExcel.Excel.Interior = js.native

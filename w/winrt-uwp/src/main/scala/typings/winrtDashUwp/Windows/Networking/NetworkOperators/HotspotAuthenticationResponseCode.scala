@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.accessGatewayInternalError
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginAborted
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginFailed
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginSucceeded
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.networkAdministratorError
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.noError
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.radiusServerError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

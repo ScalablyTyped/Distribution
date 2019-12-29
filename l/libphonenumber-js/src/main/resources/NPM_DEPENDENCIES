@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "libphonenumber-js" : "1.7.29"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "libphonenumber-js" : "1.7.29"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

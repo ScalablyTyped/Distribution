@@ -2,6 +2,7 @@ package typings.extjs.Ext.layout.component.field
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
+import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.IElement
 import typings.extjs.Ext.layout.IContextItem
 import typings.extjs.Ext.layout.ISizePolicy
@@ -61,17 +62,17 @@ object IField {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     completeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     config: js.Any = null,
-    configureItem: /* item */ js.UndefOr[typings.extjs.Ext.IComponent] => Unit = null,
+    configureItem: /* item */ js.UndefOr[IComponent] => Unit = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
     elementId: js.Any = null,
     errorStrategies: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
     getErrorStrategy: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getItemSizePolicy: /* item */ js.UndefOr[typings.extjs.Ext.IComponent] => ISizePolicy = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getItemSizePolicy: /* item */ js.UndefOr[IComponent] => ISizePolicy = null,
     getLabelStrategy: () => Unit = null,
     getLayoutItems: () => Unit = null,
     getRenderTarget: () => IElement = null,
@@ -85,7 +86,7 @@ object IField {
     left: js.Any = null,
     mixins: js.Any = null,
     notifyOwner: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
-    onContentChange: /* child */ js.UndefOr[typings.extjs.Ext.IComponent] => Boolean = null,
+    onContentChange: /* child */ js.UndefOr[IComponent] => Boolean = null,
     qtip: js.Any = null,
     renderItems: (/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,

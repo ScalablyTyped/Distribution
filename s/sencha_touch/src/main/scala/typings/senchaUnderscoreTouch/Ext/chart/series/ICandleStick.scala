@@ -10,45 +10,45 @@ import scala.scalajs.js.annotation._
 
 trait ICandleStick extends ICartesian {
   /** [Config Option] (String) */
-  var closeField: js.UndefOr[java.lang.String] = js.undefined
+  var closeField: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of closeField
   		* @returns String
   		*/
-  var getCloseField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCloseField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of highField
   		* @returns String
   		*/
-  var getHighField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getHighField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of lowField
   		* @returns String
   		*/
-  var getLowField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLowField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of openField
   		* @returns String
   		*/
-  var getOpenField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getOpenField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var highField: js.UndefOr[java.lang.String] = js.undefined
+  var highField: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var lowField: js.UndefOr[java.lang.String] = js.undefined
+  var lowField: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var openField: js.UndefOr[java.lang.String] = js.undefined
+  var openField: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of closeField
   		* @param closeField String The new value.
   		*/
-  var setCloseField: js.UndefOr[js.Function1[/* closeField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCloseField: js.UndefOr[js.Function1[/* closeField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of highField
   		* @param highField String The new value.
   		*/
-  var setHighField: js.UndefOr[js.Function1[/* highField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHighField: js.UndefOr[js.Function1[/* highField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of lowField
   		* @param lowField String The new value.
   		*/
-  var setLowField: js.UndefOr[js.Function1[/* lowField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLowField: js.UndefOr[js.Function1[/* lowField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of openField
   		* @param openField String The new value.
   		*/
-  var setOpenField: js.UndefOr[js.Function1[/* openField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setOpenField: js.UndefOr[js.Function1[/* openField */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object ICandleStick {
@@ -57,7 +57,7 @@ object ICandleStick {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -68,35 +68,35 @@ object ICandleStick {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clearListeners: () => Unit = null,
-    closeField: java.lang.String = null,
+    closeField: String = null,
     colors: Array = null,
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getAnimate: () => _ = null,
     getBackground: () => _ = null,
     getBubbleEvents: () => _ = null,
-    getCloseField: () => java.lang.String = null,
+    getCloseField: () => String = null,
     getColors: () => Array = null,
     getHidden: () => _ = null,
-    getHighField: () => java.lang.String = null,
+    getHighField: () => String = null,
     getHighlightCfg: () => _ = null,
     getHighlightItem: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemForPoint: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => _ = null,
     getItemInstancing: () => _ = null,
     getLabel: () => _ = null,
     getLabelField: () => _ = null,
     getLabelOverflowPadding: () => Double = null,
     getListeners: () => _ = null,
-    getLowField: () => java.lang.String = null,
+    getLowField: () => String = null,
     getMarker: () => _ = null,
     getMarkerSubStyle: () => _ = null,
-    getOpenField: () => java.lang.String = null,
+    getOpenField: () => String = null,
     getOverlaySurface: () => _ = null,
     getRenderer: () => _ = null,
     getShowInLegend: () => Boolean = null,
@@ -104,14 +104,14 @@ object ICandleStick {
     getStyle: () => _ = null,
     getSubStyle: () => _ = null,
     getSurface: () => _ = null,
-    getTitle: () => java.lang.String = null,
+    getTitle: () => String = null,
     getXAxis: () => IAxis = null,
-    getXField: () => java.lang.String = null,
+    getXField: () => String = null,
     getYAxis: () => IAxis = null,
-    getYField: () => java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getYField: () => String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.Any = null,
-    highField: java.lang.String = null,
+    highField: String = null,
     highlightCfg: js.Any = null,
     highlightItem: js.Any = null,
     inheritableStatics: js.Any = null,
@@ -121,36 +121,36 @@ object ICandleStick {
     labelField: js.Any = null,
     labelOverflowPadding: Int | Double = null,
     listeners: js.Any = null,
-    lowField: java.lang.String = null,
+    lowField: String = null,
     marker: js.Any = null,
     markerSubStyle: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    openField: java.lang.String = null,
+    openField: String = null,
     overlaySurface: js.Any = null,
     platformConfig: js.Any = null,
     provideLegendInfo: /* target */ js.UndefOr[js.Any] => Unit = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: js.Any = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
-    seriesType: java.lang.String = null,
+    seriesType: String = null,
     setAnimate: /* animate */ js.UndefOr[js.Any] => Unit = null,
     setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCloseField: /* closeField */ js.UndefOr[java.lang.String] => Unit = null,
+    setCloseField: /* closeField */ js.UndefOr[String] => Unit = null,
     setColors: /* colors */ js.UndefOr[Array] => Unit = null,
     setHidden: /* hidden */ js.UndefOr[js.Any] => Unit = null,
     setHiddenByIndex: (/* index */ js.UndefOr[Double], /* value */ js.UndefOr[Boolean]) => Unit = null,
-    setHighField: /* highField */ js.UndefOr[java.lang.String] => Unit = null,
+    setHighField: /* highField */ js.UndefOr[String] => Unit = null,
     setHighlightCfg: /* highlightCfg */ js.UndefOr[js.Any] => Unit = null,
     setHighlightItem: /* highlightItem */ js.UndefOr[js.Any] => Unit = null,
     setItemInstancing: /* itemInstancing */ js.UndefOr[js.Any] => Unit = null,
@@ -158,10 +158,10 @@ object ICandleStick {
     setLabelField: /* labelField */ js.UndefOr[js.Any] => Unit = null,
     setLabelOverflowPadding: /* labelOverflowPadding */ js.UndefOr[Double] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setLowField: /* lowField */ js.UndefOr[java.lang.String] => Unit = null,
+    setLowField: /* lowField */ js.UndefOr[String] => Unit = null,
     setMarker: /* marker */ js.UndefOr[js.Any] => Unit = null,
     setMarkerSubStyle: /* markerSubStyle */ js.UndefOr[js.Any] => Unit = null,
-    setOpenField: /* openField */ js.UndefOr[java.lang.String] => Unit = null,
+    setOpenField: /* openField */ js.UndefOr[String] => Unit = null,
     setOverlaySurface: /* overlaySurface */ js.UndefOr[js.Any] => Unit = null,
     setRenderer: /* renderer */ js.UndefOr[js.Any] => _ = null,
     setShowInLegend: /* showInLegend */ js.UndefOr[Boolean] => Unit = null,
@@ -169,11 +169,11 @@ object ICandleStick {
     setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
     setSubStyle: /* subStyle */ js.UndefOr[js.Any] => Unit = null,
     setSurface: /* surface */ js.UndefOr[js.Any] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     setXAxis: /* xAxis */ js.UndefOr[IAxis] => Unit = null,
-    setXField: /* xField */ js.UndefOr[java.lang.String] => Unit = null,
+    setXField: /* xField */ js.UndefOr[String] => Unit = null,
     setYAxis: /* yAxis */ js.UndefOr[IAxis] => Unit = null,
-    setYField: /* yField */ js.UndefOr[java.lang.String] => Unit = null,
+    setYField: /* yField */ js.UndefOr[String] => Unit = null,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
@@ -182,16 +182,16 @@ object ICandleStick {
     subStyle: js.Any = null,
     surface: js.Any = null,
     suspendEvents: () => Unit = null,
-    title: java.lang.String = null,
-    `type`: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    title: String = null,
+    `type`: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     xAxis: IAxis = null,
-    xField: java.lang.String = null,
+    xField: String = null,
     yAxis: IAxis = null,
-    yField: java.lang.String = null
+    yField: String = null
   ): ICandleStick = {
     val __obj = js.Dynamic.literal()
     if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))

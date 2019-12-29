@@ -15,12 +15,12 @@ object open extends js.Object {
     */
   def apply(
     path: PathLike,
-    flags: java.lang.String,
+    flags: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
-    flags: java.lang.String,
+    flags: String,
     mode: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
@@ -31,19 +31,19 @@ object open extends js.Object {
     */
   def apply(
     path: PathLike,
-    flags: java.lang.String,
-    mode: java.lang.String,
+    flags: String,
+    mode: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
-    flags: java.lang.String,
+    flags: String,
     mode: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
-    flags: java.lang.String,
+    flags: String,
     mode: Null,
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
@@ -61,7 +61,7 @@ object open extends js.Object {
   def apply(
     path: PathLike,
     flags: Double,
-    mode: java.lang.String,
+    mode: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
@@ -81,11 +81,11 @@ object open extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer. If not supplied, defaults to `0o666`.
     */
-  def __promisify__(path: PathLike, flags: java.lang.String): js.Promise[Double] = js.native
-  def __promisify__(path: PathLike, flags: java.lang.String, mode: java.lang.String): js.Promise[Double] = js.native
-  def __promisify__(path: PathLike, flags: java.lang.String, mode: Double): js.Promise[Double] = js.native
+  def __promisify__(path: PathLike, flags: String): js.Promise[Double] = js.native
+  def __promisify__(path: PathLike, flags: String, mode: String): js.Promise[Double] = js.native
+  def __promisify__(path: PathLike, flags: String, mode: Double): js.Promise[Double] = js.native
   def __promisify__(path: PathLike, flags: Double): js.Promise[Double] = js.native
-  def __promisify__(path: PathLike, flags: Double, mode: java.lang.String): js.Promise[Double] = js.native
+  def __promisify__(path: PathLike, flags: Double, mode: String): js.Promise[Double] = js.native
   def __promisify__(path: PathLike, flags: Double, mode: Double): js.Promise[Double] = js.native
 }
 

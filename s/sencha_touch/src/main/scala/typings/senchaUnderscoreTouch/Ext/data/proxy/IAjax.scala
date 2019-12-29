@@ -36,11 +36,11 @@ trait IAjax extends IServer {
   		* @param request Ext.data.Request The request object.
   		* @returns String The HTTP method to use (should be one of 'GET', 'POST', 'PUT' or 'DELETE').
   		*/
-  var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], java.lang.String]] = js.undefined
+  var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
   /** [Method] Returns the value of password
   		* @returns String
   		*/
-  var getPassword: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of useDefaultXhrHeader
   		* @returns Boolean
   		*/
@@ -48,7 +48,7 @@ trait IAjax extends IServer {
   /** [Method] Returns the value of username
   		* @returns String
   		*/
-  var getUsername: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of withCredentials
   		* @returns Boolean
   		*/
@@ -56,7 +56,7 @@ trait IAjax extends IServer {
   /** [Config Option] (Object) */
   var headers: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var password: js.UndefOr[java.lang.String] = js.undefined
+  var password: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of headers
   		* @param headers Object The new value.
   		*/
@@ -64,7 +64,7 @@ trait IAjax extends IServer {
   /** [Method] Sets the value of password
   		* @param password String The new value.
   		*/
-  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of useDefaultXhrHeader
   		* @param useDefaultXhrHeader Boolean The new value.
   		*/
@@ -72,7 +72,7 @@ trait IAjax extends IServer {
   /** [Method] Sets the value of username
   		* @param username String The new value.
   		*/
-  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of withCredentials
   		* @param withCredentials Boolean The new value.
   		*/
@@ -80,7 +80,7 @@ trait IAjax extends IServer {
   /** [Config Option] (Boolean) */
   var useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var username: js.UndefOr[java.lang.String] = js.undefined
+  var username: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
@@ -92,7 +92,7 @@ object IAjax {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     afterRequest: (/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean]) => Unit = null,
     alias: Array = null,
@@ -100,11 +100,11 @@ object IAjax {
     api: js.Any = null,
     batch: /* options */ js.UndefOr[js.Any] => IBatch = null,
     batchActions: js.UndefOr[Boolean] = js.undefined,
-    batchOrder: java.lang.String = null,
+    batchOrder: String = null,
     bubbleEvents: js.Any = null,
     buildRequest: /* operation */ js.UndefOr[IOperation] => IRequest = null,
-    buildUrl: /* request */ js.UndefOr[IRequest] => java.lang.String = null,
-    cacheString: java.lang.String = null,
+    buildUrl: /* request */ js.UndefOr[IRequest] => String = null,
+    cacheString: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -112,63 +112,63 @@ object IAjax {
     config: js.Any = null,
     create: () => Unit = null,
     destroy: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    directionParam: java.lang.String = null,
+    directionParam: String = null,
     doRequest: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     enablePagingParams: js.UndefOr[Boolean] = js.undefined,
-    encodeFilters: /* filters */ js.UndefOr[Array] => java.lang.String = null,
-    encodeSorters: /* sorters */ js.UndefOr[Array] => java.lang.String = null,
-    extend: java.lang.String = null,
+    encodeFilters: /* filters */ js.UndefOr[Array] => String = null,
+    encodeSorters: /* sorters */ js.UndefOr[Array] => String = null,
+    extend: String = null,
     extraParams: js.Any = null,
-    filterParam: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    filterParam: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getApi: () => _ = null,
     getBatchActions: () => Boolean = null,
-    getBatchOrder: () => java.lang.String = null,
+    getBatchOrder: () => String = null,
     getBubbleEvents: () => _ = null,
-    getCacheString: () => java.lang.String = null,
-    getDirectionParam: () => java.lang.String = null,
+    getCacheString: () => String = null,
+    getDirectionParam: () => String = null,
     getEnablePagingParams: () => Boolean = null,
     getExtraParams: () => _ = null,
-    getFilterParam: () => java.lang.String = null,
-    getGroupParam: () => java.lang.String = null,
+    getFilterParam: () => String = null,
+    getGroupParam: () => String = null,
     getHeaders: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getLimitParam: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getLimitParam: () => String = null,
     getListeners: () => _ = null,
-    getMethod: /* request */ js.UndefOr[IRequest] => java.lang.String = null,
+    getMethod: /* request */ js.UndefOr[IRequest] => String = null,
     getModel: () => _ = null,
     getNoCache: () => Boolean = null,
-    getPageParam: () => java.lang.String = null,
-    getPassword: () => java.lang.String = null,
+    getPageParam: () => String = null,
+    getPassword: () => String = null,
     getReader: () => _ = null,
     getSimpleSortMode: () => Boolean = null,
-    getSortParam: () => java.lang.String = null,
-    getStartParam: () => java.lang.String = null,
+    getSortParam: () => String = null,
+    getStartParam: () => String = null,
     getTimeout: () => Double = null,
     getUseDefaultXhrHeader: () => Boolean = null,
-    getUsername: () => java.lang.String = null,
+    getUsername: () => String = null,
     getWithCredentials: () => Boolean = null,
     getWriter: () => _ = null,
-    groupParam: java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    groupParam: String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     headers: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    limitParam: java.lang.String = null,
+    limitParam: String = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     model: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     noCache: js.UndefOr[Boolean] = js.undefined,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    pageParam: java.lang.String = null,
-    password: java.lang.String = null,
+    pageParam: String = null,
+    password: String = null,
     platformConfig: js.Any = null,
     processResponse: (/* success */ js.UndefOr[Boolean], /* operation */ js.UndefOr[IOperation], /* request */ js.UndefOr[IRequest], /* response */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     read: () => Unit = null,
@@ -176,52 +176,52 @@ object IAjax {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setApi: /* api */ js.UndefOr[js.Any] => Unit = null,
     setBatchActions: /* batchActions */ js.UndefOr[Boolean] => Unit = null,
-    setBatchOrder: /* batchOrder */ js.UndefOr[java.lang.String] => Unit = null,
+    setBatchOrder: /* batchOrder */ js.UndefOr[String] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCacheString: /* cacheString */ js.UndefOr[java.lang.String] => Unit = null,
-    setDirectionParam: /* directionParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setCacheString: /* cacheString */ js.UndefOr[String] => Unit = null,
+    setDirectionParam: /* directionParam */ js.UndefOr[String] => Unit = null,
     setEnablePagingParams: /* enablePagingParams */ js.UndefOr[Boolean] => Unit = null,
-    setExtraParam: (/* name */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => Unit = null,
+    setExtraParam: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit = null,
     setExtraParams: /* extraParams */ js.UndefOr[js.Any] => Unit = null,
-    setFilterParam: /* filterParam */ js.UndefOr[java.lang.String] => Unit = null,
-    setGroupParam: /* groupParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setFilterParam: /* filterParam */ js.UndefOr[String] => Unit = null,
+    setGroupParam: /* groupParam */ js.UndefOr[String] => Unit = null,
     setHeaders: /* headers */ js.UndefOr[js.Any] => Unit = null,
-    setLimitParam: /* limitParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setLimitParam: /* limitParam */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setModel: /* model */ js.UndefOr[js.Any] => Unit = null,
     setNoCache: /* noCache */ js.UndefOr[Boolean] => Unit = null,
-    setPageParam: /* pageParam */ js.UndefOr[java.lang.String] => Unit = null,
-    setPassword: /* password */ js.UndefOr[java.lang.String] => Unit = null,
+    setPageParam: /* pageParam */ js.UndefOr[String] => Unit = null,
+    setPassword: /* password */ js.UndefOr[String] => Unit = null,
     setReader: /* reader */ js.UndefOr[js.Any] => Unit = null,
     setSimpleSortMode: /* simpleSortMode */ js.UndefOr[Boolean] => Unit = null,
-    setSortParam: /* sortParam */ js.UndefOr[java.lang.String] => Unit = null,
-    setStartParam: /* startParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setSortParam: /* sortParam */ js.UndefOr[String] => Unit = null,
+    setStartParam: /* startParam */ js.UndefOr[String] => Unit = null,
     setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
     setUseDefaultXhrHeader: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit = null,
-    setUsername: /* username */ js.UndefOr[java.lang.String] => Unit = null,
+    setUsername: /* username */ js.UndefOr[String] => Unit = null,
     setWithCredentials: /* withCredentials */ js.UndefOr[Boolean] => Unit = null,
     setWriter: /* writer */ js.UndefOr[js.Any] => Unit = null,
     simpleSortMode: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sortParam: java.lang.String = null,
-    startParam: java.lang.String = null,
+    sortParam: String = null,
+    startParam: String = null,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
     timeout: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     update: () => Unit = null,
-    url: java.lang.String = null,
+    url: String = null,
     useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined,
-    username: java.lang.String = null,
+    username: String = null,
     uses: Array = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined,
     writer: js.Any = null

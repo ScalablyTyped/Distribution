@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 object victoryComponents extends victoryProps {
   @scala.inline
+  def Flyout: ComponentType[FlyoutProps] = js.constructorOf[typings.victory.victoryMod.Flyout].asInstanceOf[typings.react.reactMod.ComponentType[FlyoutProps]]
+  @scala.inline
   def VictoryAnimation: ComponentType[VictoryAnimationProps] = js.constructorOf[typings.victory.victoryMod.VictoryAnimation].asInstanceOf[typings.react.reactMod.ComponentType[VictoryAnimationProps]]
   @scala.inline
   def VictoryArea: ComponentType[VictoryAreaProps] = js.constructorOf[typings.victory.victoryMod.VictoryArea].asInstanceOf[typings.react.reactMod.ComponentType[VictoryAreaProps]]
@@ -20,6 +22,8 @@ object victoryComponents extends victoryProps {
   def VictoryBrushContainer: ComponentType[VictoryBrushContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryBrushContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryBrushContainerProps]]
   @scala.inline
   def VictoryChart: ComponentType[VictoryChartProps] = js.constructorOf[typings.victory.victoryMod.VictoryChart].asInstanceOf[typings.react.reactMod.ComponentType[VictoryChartProps]]
+  @scala.inline
+  def VictoryClipContainer: ComponentType[VictoryClipContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryClipContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryClipContainerProps]]
   @scala.inline
   def VictoryContainer: ComponentType[VictoryContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryContainerProps]]
   @scala.inline

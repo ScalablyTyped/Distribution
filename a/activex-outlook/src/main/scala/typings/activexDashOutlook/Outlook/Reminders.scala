@@ -10,7 +10,8 @@ class Reminders protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.Reminders_typekey`: Reminders = js.native
+  @JSName("Outlook.Reminders_typekey")
+  var OutlookDotReminders_typekey: Reminders = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Item(Index: js.Any): Reminder = js.native

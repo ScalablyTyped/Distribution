@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.pixelMod.Pixel
-import typings.ol.renderBoxMod.RenderBox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class SparkVerticalAxis protected () extends js.Object {
   val Creator: XlCreator = js.native
   var CustomMaxScaleValue: js.Any = js.native
   var CustomMinScaleValue: js.Any = js.native
-  var `Excel.SparkVerticalAxis_typekey`: SparkVerticalAxis = js.native
+  @JSName("Excel.SparkVerticalAxis_typekey")
+  var ExcelDotSparkVerticalAxis_typekey: SparkVerticalAxis = js.native
   var MaxScaleType: XlSparkScale = js.native
   var MinScaleType: XlSparkScale = js.native
   val Parent: js.Any = js.native

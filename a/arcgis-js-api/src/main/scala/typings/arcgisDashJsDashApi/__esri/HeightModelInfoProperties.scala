@@ -7,6 +7,7 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`clarke-feet`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`clarke-links`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`clarke-yards`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`gold-coast-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`gravity-related-height`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`indian-1937-yards`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`indian-yards`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`sears-1922-truncated-chains`
@@ -14,8 +15,9 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`sears-chains`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`sears-feet`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`sears-yards`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ellipsoidal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +36,7 @@ trait HeightModelInfoProperties extends js.Object {
     *
     * @default "gravity-related-height"
     */
-  var heightModel: js.UndefOr[String] = js.undefined
+  var heightModel: js.UndefOr[`gravity-related-height` | ellipsoidal] = js.undefined
   /**
     * The unit of the vertical coordinate system. A [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) will use this property to check that the vertical data of layers that define a HeightModelInfo is compatible with the view.
     *
@@ -43,7 +45,7 @@ trait HeightModelInfoProperties extends js.Object {
     * @default "meters"
     */
   var heightUnit: js.UndefOr[
-    meters | feet | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers`
+    meters_ | feet_ | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers`
   ] = js.undefined
   /**
     * The datum realization of the vertical coordinate system. A [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) will only render layers that define a HeightModelInfo with an identical `vertCRS` to that of the scene, when using an `ellipsoidal` height model.
@@ -56,8 +58,8 @@ trait HeightModelInfoProperties extends js.Object {
 object HeightModelInfoProperties {
   @scala.inline
   def apply(
-    heightModel: String = null,
-    heightUnit: meters | feet | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers` = null,
+    heightModel: `gravity-related-height` | ellipsoidal = null,
+    heightUnit: meters_ | feet_ | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers` = null,
     vertCRS: String = null
   ): HeightModelInfoProperties = {
     val __obj = js.Dynamic.literal()

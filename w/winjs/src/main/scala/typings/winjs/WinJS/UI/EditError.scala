@@ -1,10 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.EditError.canceled
-import typings.winjs.WinJS.UI.EditError.noLongerMeaningful
-import typings.winjs.WinJS.UI.EditError.noResponse
-import typings.winjs.WinJS.UI.EditError.notPermitted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

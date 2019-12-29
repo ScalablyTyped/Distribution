@@ -62,7 +62,6 @@ import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Anim
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.HTMLIonOverlayElement
 import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayInterface
-import typings.atIonicCore.distTypesUtilsOverlaysMod.IonicAnimationInterface
 import typings.std.Document
 import typings.std.Event
 import typings.std.HTMLElement

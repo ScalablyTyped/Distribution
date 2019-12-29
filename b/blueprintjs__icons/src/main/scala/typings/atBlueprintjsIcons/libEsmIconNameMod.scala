@@ -35,6 +35,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`th-list`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.compressed
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.th
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tractor
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`oil-field`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`circle-arrow-down`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.shield
@@ -78,6 +79,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.presentation
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`arrow-right`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`git-push`
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`bring-data`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`regression-chart`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`key-tab`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.exchange
@@ -108,7 +110,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.square
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.header
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`issue-new`
-    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.envelope
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.envelope_
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`symbol-triangle-up`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.ring
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.percentage
@@ -158,7 +160,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tag
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.media
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`volume-up`
-    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.cloud
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.cloud_
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.plus
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.shop
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`swap-horizontal`
@@ -258,7 +260,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.remove
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`panel-stats`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.cube
-    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.asterisk
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.asterisk_
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.fork
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.disable
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.user
@@ -439,6 +441,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.flame
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unpin
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`id-number`
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.truck
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`manually-entered-data`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`key-option`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`symbol-triangle-down`

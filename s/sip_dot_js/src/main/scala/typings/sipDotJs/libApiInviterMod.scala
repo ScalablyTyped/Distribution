@@ -26,16 +26,29 @@ object libApiInviterMod extends js.Object {
       */
     def this(userAgent: UserAgent, targetURI: URI) = this()
     def this(userAgent: UserAgent, targetURI: URI, options: InviterOptions) = this()
-    /** @internal */
-    @JSName("body")
-    var body_Inviter: js.UndefOr[BodyAndContentType] = js.native
+    /**
+      * If this Inviter was created as a result of a REFER, the referred Session. Otherwise undefined.
+      * @internal
+      */
+    var _referred: js.UndefOr[Session] = js.native
+    /**
+      * Initial outgoing INVITE request message body.
+      */
+    val body: js.UndefOr[BodyAndContentType] = js.native
     var disposeEarlyMedia: js.Any = js.native
+    /** True if dispose() has been called. */
     var disposed: js.Any = js.native
+    /** True if early media use is enabled. */
     var earlyMedia: js.Any = js.native
+    /** The early media session. */
     var earlyMediaDialog: js.Any = js.native
+    /** The early media session description handlers. */
     var earlyMediaSessionDescriptionHandlers: js.Any = js.native
+    /** Our From tag. */
     var fromTag: js.Any = js.native
+    /** True if initial INVITE without SDP. */
     var inviteWithoutSdp: js.Any = js.native
+    /** True if cancel() was called. */
     var isCanceled: js.Any = js.native
     var notifyReferer: js.Any = js.native
     /**
@@ -63,14 +76,14 @@ object libApiInviterMod extends js.Object {
       * @param inviteResponse - 100 response.
       */
     var onTrying: js.Any = js.native
+    /** Initial INVITE request sent by core. Undefined until sent. */
     var outgoingInviteRequest: js.Any = js.native
+    /** Initial INVITE message provided to core to send. */
+    var outgoingRequestMessage: js.Any = js.native
     /**
-      * If this Inviter was created as a result of a REFER, the reffered Session. Otherwise undefined.
-      * @internal
+      * Initial outgoing INVITE request message.
       */
-    var referred: js.UndefOr[Session] = js.native
-    /** @internal */
-    var request: OutgoingRequestMessage = js.native
+    val request: OutgoingRequestMessage = js.native
     /**
       * 13.2.1 Creating the Initial INVITE
       *

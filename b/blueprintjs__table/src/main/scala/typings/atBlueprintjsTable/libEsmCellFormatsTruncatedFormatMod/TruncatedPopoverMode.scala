@@ -1,10 +1,6 @@
 package typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.ALWAYS
-import typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.NEVER
-import typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED
-import typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED_APPROX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

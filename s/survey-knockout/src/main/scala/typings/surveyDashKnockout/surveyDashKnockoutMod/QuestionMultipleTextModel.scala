@@ -26,9 +26,9 @@ class QuestionMultipleTextModel protected () extends Question {
     * The list of input items.
     */
   var items: js.Array[MultipleTextItemModel] = js.native
-  def addElement(element: IElement, index: Double): Unit = js.native
+  def addElement(element: IElement, index: Double): js.Any = js.native
   @JSName("addElement")
-  def addElement_Any(element: IElement, index: Double): js.Any = js.native
+  def addElement_Unit(element: IElement, index: Double): Unit = js.native
   /**
     * Add a new text item.
     * @param name a item name
@@ -38,9 +38,9 @@ class QuestionMultipleTextModel protected () extends Question {
   def addItem(name: String, title: String): MultipleTextItemModel = js.native
   def colCountChangedCallback(): Unit = js.native
   /* protected */ def createTextItem(name: String, title: String): MultipleTextItemModel = js.native
-  def elementWidthChanged(el: IElement): Unit = js.native
+  def elementWidthChanged(el: IElement): js.Any = js.native
   @JSName("elementWidthChanged")
-  def elementWidthChanged_Any(el: IElement): js.Any = js.native
+  def elementWidthChanged_Unit(el: IElement): Unit = js.native
   def getChildrenLayoutType(): String = js.native
   def getIsRequiredText(): String = js.native
   def getItemByName(name: String): MultipleTextItemModel = js.native
@@ -55,8 +55,8 @@ class QuestionMultipleTextModel protected () extends Question {
   def getTextProcessor(): ITextProcessor = js.native
   def indexOf(el: IElement): Double = js.native
   /* protected */ def onItemValueChanged(): Unit = js.native
-  def setMultipleTextValue(name: String, value: js.Any): Unit = js.native
+  def setMultipleTextValue(name: String, value: js.Any): js.Any = js.native
   @JSName("setMultipleTextValue")
-  def setMultipleTextValue_Any(name: String, value: js.Any): js.Any = js.native
+  def setMultipleTextValue_Unit(name: String, value: js.Any): Unit = js.native
 }
 

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Resources
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Management.IndexedResourceType
-import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Management.IndexedResourceType.embeddedData
-import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Management.IndexedResourceType.path
-import typings.winrtDashUwp.Windows.ApplicationModel.Resources.Management.IndexedResourceType.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

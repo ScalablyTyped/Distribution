@@ -2,7 +2,6 @@ package typings.semanticDashUiDashForm.SemanticUI.FormSettings
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQuery.TriggeredEvent
-import typings.semanticDashUiDashForm.JQuery
 import typings.semanticDashUiDashForm.SemanticUI.Form.ClassNameSettings
 import typings.semanticDashUiDashForm.SemanticUI.Form.ErrorSettings
 import typings.semanticDashUiDashForm.SemanticUI.Form.Field
@@ -125,21 +124,21 @@ trait _Impl extends js.Object {
   /**
     * Callback if any form field is invalid
     */
-  def onFailure(`this`: JQuery, formErrors: js.Array[String], fields: js.Any): Unit
+  def onFailure(formErrors: js.Array[String], fields: js.Any): Unit
   /**
     * Callback on each invalid field
     */
-  def onInvalid(`this`: JQuery): Unit
+  def onInvalid(): Unit
   /**
     * Callback if a form is all valid
     */
-  def onSuccess(`this`: JQuery, event: TriggeredEvent[HTMLElement, _, _, _], fields: js.Any): Unit
+  def onSuccess(event: TriggeredEvent[HTMLElement, _, _, _], fields: js.Any): Unit
   // endregion
   // region Callbacks
   /**
     * Callback on each valid field
     */
-  def onValid(`this`: JQuery): Unit
+  def onValid(): Unit
 }
 
 object _Impl {
@@ -158,10 +157,10 @@ object _Impl {
     name: String,
     namespace: String,
     on: submit | blur | change,
-    onFailure: (JQuery, js.Array[String], js.Any) => Unit,
-    onInvalid: JQuery => Unit,
-    onSuccess: (JQuery, TriggeredEvent[HTMLElement, _, _, _], js.Any) => Unit,
-    onValid: JQuery => Unit,
+    onFailure: (js.Array[String], js.Any) => Unit,
+    onInvalid: () => Unit,
+    onSuccess: (TriggeredEvent[HTMLElement, _, _, _], js.Any) => Unit,
+    onValid: () => Unit,
     performance: Boolean,
     prompt: PromptSettings,
     revalidate: Boolean,
@@ -173,7 +172,7 @@ object _Impl {
     transition: String,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onFailure = js.Any.fromFunction3(onFailure), onInvalid = js.Any.fromFunction1(onInvalid), onSuccess = js.Any.fromFunction3(onSuccess), onValid = js.Any.fromFunction1(onValid), performance = performance.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], revalidate = revalidate.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onFailure = js.Any.fromFunction2(onFailure), onInvalid = js.Any.fromFunction0(onInvalid), onSuccess = js.Any.fromFunction2(onSuccess), onValid = js.Any.fromFunction0(onValid), performance = performance.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], revalidate = revalidate.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
     __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }

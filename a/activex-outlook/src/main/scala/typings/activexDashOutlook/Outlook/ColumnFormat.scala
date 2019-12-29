@@ -13,7 +13,8 @@ class ColumnFormat protected () extends js.Object {
   var FieldFormat: Double = js.native
   val FieldType: OlUserPropertyType = js.native
   var Label: String = js.native
-  var `Outlook.ColumnFormat_typekey`: ColumnFormat = js.native
+  @JSName("Outlook.ColumnFormat_typekey")
+  var OutlookDotColumnFormat_typekey: ColumnFormat = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   var Width: Double = js.native

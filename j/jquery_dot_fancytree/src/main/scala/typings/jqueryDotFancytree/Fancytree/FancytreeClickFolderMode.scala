@@ -1,10 +1,6 @@
 package typings.jqueryDotFancytree.Fancytree
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jqueryDotFancytree.Fancytree.FancytreeClickFolderMode.activate
-import typings.jqueryDotFancytree.Fancytree.FancytreeClickFolderMode.activate_and_expand
-import typings.jqueryDotFancytree.Fancytree.FancytreeClickFolderMode.activate_dblclick_expands
-import typings.jqueryDotFancytree.Fancytree.FancytreeClickFolderMode.expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

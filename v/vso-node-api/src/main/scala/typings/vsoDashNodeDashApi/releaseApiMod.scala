@@ -50,7 +50,6 @@ import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTaskAtta
 import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseUpdateMetadata
 import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseWorkItemRef
 import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.SummaryMailSection
-import typings.vsoDashNodeDashApi.releaseApiMod.IReleaseApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

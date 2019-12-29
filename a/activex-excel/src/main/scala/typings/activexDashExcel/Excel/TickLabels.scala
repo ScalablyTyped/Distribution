@@ -12,7 +12,8 @@ class TickLabels protected () extends js.Object {
   var AutoScaleFont: js.Any = js.native
   val Creator: XlCreator = js.native
   val Depth: Double = js.native
-  var `Excel.TickLabels_typekey`: TickLabels = js.native
+  @JSName("Excel.TickLabels_typekey")
+  var ExcelDotTickLabels_typekey: TickLabels = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Format: ChartFormat = js.native
   var MultiLevel: Boolean = js.native

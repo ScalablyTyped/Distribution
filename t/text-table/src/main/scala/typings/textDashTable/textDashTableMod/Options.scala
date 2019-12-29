@@ -1,6 +1,6 @@
 package typings.textDashTable.textDashTableMod
 
-import typings.textDashTable.textDashTableStrings.DOT
+import typings.textDashTable.textDashTableStrings.Dot
 import typings.textDashTable.textDashTableStrings.c
 import typings.textDashTable.textDashTableStrings.l
 import typings.textDashTable.textDashTableStrings.r
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /** An array of alignment types for each column, default ['l','l',...]. */
-  var align: js.UndefOr[js.Array[js.UndefOr[l | r | c | DOT | Null]]] = js.undefined
+  var align: js.UndefOr[js.Array[js.UndefOr[l | r | c | Dot | Null]]] = js.undefined
   /** Separator to use between columns, (default: ' '). */
   var hsep: js.UndefOr[String] = js.undefined
   /** A callback function to use when calculating the string length. */
@@ -20,7 +20,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    align: js.Array[js.UndefOr[l | r | c | DOT | Null]] = null,
+    align: js.Array[js.UndefOr[l | r | c | Dot | Null]] = null,
     hsep: String = null,
     stringLength: /* str */ String => Double = null
   ): Options = {

@@ -1,7 +1,5 @@
 package typings.atPopmotionPopcorn
 
-import typings.atPopmotionPopcorn.libUtilsConditionalMod.Apply
-import typings.atPopmotionPopcorn.libUtilsConditionalMod.Check
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

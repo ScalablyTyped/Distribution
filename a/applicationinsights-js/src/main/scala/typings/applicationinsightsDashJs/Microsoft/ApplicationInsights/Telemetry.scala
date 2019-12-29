@@ -13,8 +13,6 @@ import typings.applicationinsightsDashJs.Anon_Exceptions
 import typings.applicationinsightsDashJs.Anon_Measurements
 import typings.applicationinsightsDashJs.Anon_MeasurementsMessage
 import typings.applicationinsightsDashJs.Anon_Metrics
-import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.Telemetry.Common.Base
-import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.Telemetry.Exception
 import typings.std.Error
 import typings.std.PerformanceTiming
 import scala.scalajs.js

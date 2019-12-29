@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.invalidXml
-import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.missingRequiredAttribute
-import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.missingRequiredElement
-import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unexpectedContent
-import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unknown
-import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unsupportedFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

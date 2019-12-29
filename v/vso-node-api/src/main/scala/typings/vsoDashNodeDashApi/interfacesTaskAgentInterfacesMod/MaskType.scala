@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.MaskType.Regex
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.MaskType.Variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

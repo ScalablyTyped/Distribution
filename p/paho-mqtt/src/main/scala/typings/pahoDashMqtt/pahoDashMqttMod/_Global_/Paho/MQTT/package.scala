@@ -36,10 +36,7 @@ package object MQTT {
     * Called when a message was delivered or has arrived.
     * @param message The {@link Paho.MQTT.Message} that was delivered or has arrived.
     */
-  type OnMessageHandler = js.Function1[
-    /* message */ typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Message, 
-    Unit
-  ]
+  type OnMessageHandler = js.Function1[/* message */ Message, Unit]
   /**
     * Called when the subscribe acknowledgement has been received from the server.
     * @param o

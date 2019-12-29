@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Graphics.Display
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Display.ResolutionScale.invalid
-import typings.winrt.Windows.Graphics.Display.ResolutionScale.scale100Percent
-import typings.winrt.Windows.Graphics.Display.ResolutionScale.scale140Percent
-import typings.winrt.Windows.Graphics.Display.ResolutionScale.scale180Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

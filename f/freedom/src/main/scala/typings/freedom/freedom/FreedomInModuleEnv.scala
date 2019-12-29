@@ -13,17 +13,17 @@ trait FreedomInModuleEnv
 // this.
 /* moduleName */ StringDictionary[FreedomModuleFactoryManager[_]] {
   @JSName("core.console")
-  var `core.console_Original`: FreedomModuleFactoryManager[typings.freedom.freedom.Console.Console] = js.native
+  var coreDotconsole_Original: FreedomModuleFactoryManager[typings.freedom.freedom.Console.Console] = js.native
   @JSName("core.rtcdatachannel")
-  var `core.rtcdatachannel_Original`: FreedomModuleFactoryManager[typings.freedom.freedom.RTCDataChannel.RTCDataChannel] = js.native
+  var coreDotrtcdatachannel_Original: FreedomModuleFactoryManager[typings.freedom.freedom.RTCDataChannel.RTCDataChannel] = js.native
   @JSName("core.rtcpeerconnection")
-  var `core.rtcpeerconnection_Original`: FreedomModuleFactoryManager[typings.freedom.freedom.RTCPeerConnection.RTCPeerConnection] = js.native
+  var coreDotrtcpeerconnection_Original: FreedomModuleFactoryManager[typings.freedom.freedom.RTCPeerConnection.RTCPeerConnection] = js.native
   @JSName("core.storage")
-  var `core.storage_Original`: FreedomModuleFactoryManager[typings.freedom.freedom.Storage.Storage] = js.native
+  var coreDotstorage_Original: FreedomModuleFactoryManager[typings.freedom.freedom.Storage.Storage] = js.native
   @JSName("core.tcpsocket")
-  var `core.tcpsocket_Original`: FreedomModuleFactoryManager[Socket] = js.native
+  var coreDottcpsocket_Original: FreedomModuleFactoryManager[Socket] = js.native
   @JSName("core.udpsocket")
-  var `core.udpsocket_Original`: FreedomModuleFactoryManager[typings.freedom.freedom.UdpSocket.Socket] = js.native
+  var coreDotudpsocket_Original: FreedomModuleFactoryManager[typings.freedom.freedom.UdpSocket.Socket] = js.native
   // Creates an interface to the freedom core provider which can be used to
   // create loggers and channels.
   // Note: unlike other providers, core is a getter.
@@ -44,22 +44,28 @@ trait FreedomInModuleEnv
   def core(args: js.Any*): Core = js.native
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
-  def `core.console`(args: js.Any*): typings.freedom.freedom.Console.Console = js.native
+  @JSName("core.console")
+  def coreDotconsole(args: js.Any*): typings.freedom.freedom.Console.Console = js.native
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
-  def `core.rtcdatachannel`(args: js.Any*): typings.freedom.freedom.RTCDataChannel.RTCDataChannel = js.native
+  @JSName("core.rtcdatachannel")
+  def coreDotrtcdatachannel(args: js.Any*): typings.freedom.freedom.RTCDataChannel.RTCDataChannel = js.native
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
-  def `core.rtcpeerconnection`(args: js.Any*): typings.freedom.freedom.RTCPeerConnection.RTCPeerConnection = js.native
+  @JSName("core.rtcpeerconnection")
+  def coreDotrtcpeerconnection(args: js.Any*): typings.freedom.freedom.RTCPeerConnection.RTCPeerConnection = js.native
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
-  def `core.storage`(args: js.Any*): typings.freedom.freedom.Storage.Storage = js.native
+  @JSName("core.storage")
+  def coreDotstorage(args: js.Any*): typings.freedom.freedom.Storage.Storage = js.native
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
-  def `core.tcpsocket`(args: js.Any*): Socket = js.native
+  @JSName("core.tcpsocket")
+  def coreDottcpsocket(args: js.Any*): Socket = js.native
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
-  def `core.udpsocket`(args: js.Any*): typings.freedom.freedom.UdpSocket.Socket = js.native
+  @JSName("core.udpsocket")
+  def coreDotudpsocket(args: js.Any*): typings.freedom.freedom.UdpSocket.Socket = js.native
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.
   def pgp(args: js.Any*): typings.freedom.freedom.PgpProvider.PgpProvider = js.native

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cluster", "listeners")
 @js.native
 object listeners extends js.Object {
-  def apply(event: java.lang.String): js.Array[js.Function] = js.native
+  def apply(event: String): js.Array[js.Function] = js.native
 }
 

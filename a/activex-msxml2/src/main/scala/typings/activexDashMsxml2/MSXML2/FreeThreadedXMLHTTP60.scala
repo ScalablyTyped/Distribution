@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.FreeThreadedXMLHTTP60")
 @js.native
 class FreeThreadedXMLHTTP60 protected () extends js.Object {
-  var `MSXML2.FreeThreadedXMLHTTP60_typekey`: FreeThreadedXMLHTTP60 = js.native
+  @JSName("MSXML2.FreeThreadedXMLHTTP60_typekey")
+  var MSXML2DotFreeThreadedXMLHTTP60_typekey: FreeThreadedXMLHTTP60 = js.native
   def GetCookie(pwszUrl: String, pwszName: String, dwFlags: Double, pcCookies: Double, ppCookies: tagXHR_COOKIE): Unit = js.native
   def SetCookie(pCookie: tagXHR_COOKIE, pdwCookieState: Double): Unit = js.native
   def SetCustomResponseStream(pSequentialStream: ISequentialStream): Unit = js.native

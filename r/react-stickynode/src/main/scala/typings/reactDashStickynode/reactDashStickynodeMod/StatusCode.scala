@@ -1,9 +1,6 @@
 package typings.reactDashStickynode.reactDashStickynodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_FIXED
-import typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_ORIGINAL
-import typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_RELEASED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

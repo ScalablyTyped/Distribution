@@ -13,11 +13,11 @@ trait ITreeStore extends IAbstractStore {
   /** [Config Option] (Boolean) */
   var clearRemovedOnLoad: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var defaultRootId: js.UndefOr[java.lang.String] = js.undefined
+  var defaultRootId: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var defaultRootProperty: js.UndefOr[java.lang.String] = js.undefined
+  var defaultRootProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var defaultRootText: js.UndefOr[java.lang.String] = js.undefined
+  var defaultRootText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var folderSort: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the record node by id
@@ -30,7 +30,7 @@ trait ITreeStore extends IAbstractStore {
   		*/
   var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.undefined
   /** [Config Option] (String) */
-  var nodeParam: js.UndefOr[java.lang.String] = js.undefined
+  var nodeParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
   var root: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the root node for this store
@@ -50,7 +50,7 @@ object ITreeStore {
     alternateClassName: js.Any = null,
     autoLoad: js.Any = null,
     autoSync: js.UndefOr[Boolean] = js.undefined,
-    batchUpdateMode: java.lang.String = null,
+    batchUpdateMode: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -59,22 +59,22 @@ object ITreeStore {
     clearOnLoad: js.UndefOr[Boolean] = js.undefined,
     clearRemovedOnLoad: js.UndefOr[Boolean] = js.undefined,
     config: js.Any = null,
-    defaultProxyType: java.lang.String = null,
-    defaultRootId: java.lang.String = null,
-    defaultRootProperty: java.lang.String = null,
-    defaultRootText: java.lang.String = null,
-    defaultSortDirection: java.lang.String = null,
+    defaultProxyType: String = null,
+    defaultRootId: String = null,
+    defaultRootProperty: String = null,
+    defaultRootText: String = null,
+    defaultSortDirection: String = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
     filterOnLoad: js.UndefOr[Boolean] = js.undefined,
     filters: js.Any = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     folderSort: js.UndefOr[Boolean] = js.undefined,
     generateComparator: () => Unit = null,
     getFirstSorter: () => ISorter = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getModifiedRecords: () => Array = null,
     getNewRecords: () => Array = null,
     getNodeById: /* id */ js.UndefOr[js.Any] => INodeInterface = null,
@@ -82,7 +82,7 @@ object ITreeStore {
     getRemovedRecords: () => Array = null,
     getRootNode: () => INodeInterface = null,
     getUpdatedRecords: () => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ITreeStore = null,
@@ -95,18 +95,18 @@ object ITreeStore {
     listeners: js.Any = null,
     load: /* options */ js.UndefOr[js.Any] => Unit = null,
     mixins: js.Any = null,
-    model: java.lang.String = null,
+    model: String = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    nodeParam: java.lang.String = null,
+    nodeParam: String = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     proxy: js.Any = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     reload: /* options */ js.UndefOr[js.Any] => Unit = null,
     remoteFilter: js.UndefOr[Boolean] = js.undefined,
     remoteSort: js.UndefOr[Boolean] = js.undefined,
     removeAll: () => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removed: Array = null,
     requires: Array = null,
@@ -119,18 +119,18 @@ object ITreeStore {
     setProxy: /* proxy */ js.UndefOr[js.Any] => typings.extjs.Ext.data.proxy.IProxy = null,
     setRootNode: /* root */ js.UndefOr[js.Any] => INodeInterface = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (js.UndefOr[js.Any], js.UndefOr[java.lang.String]) => Array = null,
+    sort: (js.UndefOr[js.Any], js.UndefOr[String]) => Array = null,
     sortOnLoad: js.UndefOr[Boolean] = js.undefined,
-    sortRoot: java.lang.String = null,
+    sortRoot: String = null,
     sorters: js.Any = null,
     statefulFilters: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    storeId: java.lang.String = null,
+    storeId: String = null,
     suspendAutoSync: () => Unit = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     sync: /* options */ js.UndefOr[js.Any] => IStore = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): ITreeStore = {
     val __obj = js.Dynamic.literal()

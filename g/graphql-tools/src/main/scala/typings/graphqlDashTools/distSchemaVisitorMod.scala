@@ -14,9 +14,6 @@ import typings.graphql.typeDefinitionMod.GraphQLEnumValue
 import typings.graphql.typeDefinitionMod.GraphQLField
 import typings.graphql.typeDefinitionMod.GraphQLInputField
 import typings.graphql.typeDefinitionMod.GraphQLNamedType
-import typings.graphqlDashTools.distSchemaVisitorMod.SchemaDirectiveVisitor
-import typings.graphqlDashTools.distSchemaVisitorMod.SchemaVisitor
-import typings.graphqlDashTools.distSchemaVisitorMod.VisitableSchemaType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

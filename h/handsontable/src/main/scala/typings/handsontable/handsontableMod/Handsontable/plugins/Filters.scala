@@ -18,7 +18,7 @@ trait Filters extends Base {
   var conditionComponent: ConditionComponent | Unit = js.native
   var conditionUpdateObserver: ConditionUpdateObserver | Unit = js.native
   var dropdownMenuPlugin: DropdownMenu | Unit = js.native
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager = js.native
+  var eventManager: EventManager = js.native
   var lastSelectedColumn: js.UndefOr[Double | Unit] = js.native
   var trimRowsPlugin: TrimRows | Unit = js.native
   var valueComponent: ValueComponent | Unit = js.native

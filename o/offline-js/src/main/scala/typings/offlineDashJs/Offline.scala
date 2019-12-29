@@ -2,15 +2,15 @@ package typings.offlineDashJs
 
 import typings.offlineDashJs.offlineDashJsStrings.`confirmed-down`
 import typings.offlineDashJs.offlineDashJsStrings.`confirmed-up`
-import typings.offlineDashJs.offlineDashJsStrings.`reconnect:connecting`
-import typings.offlineDashJs.offlineDashJsStrings.`reconnect:failure`
-import typings.offlineDashJs.offlineDashJsStrings.`reconnect:started`
-import typings.offlineDashJs.offlineDashJsStrings.`reconnect:stopped`
-import typings.offlineDashJs.offlineDashJsStrings.`reconnect:tick`
-import typings.offlineDashJs.offlineDashJsStrings.`requests:flush`
-import typings.offlineDashJs.offlineDashJsStrings.`requests:hold`
 import typings.offlineDashJs.offlineDashJsStrings.checking
 import typings.offlineDashJs.offlineDashJsStrings.down
+import typings.offlineDashJs.offlineDashJsStrings.reconnectColonconnecting
+import typings.offlineDashJs.offlineDashJsStrings.reconnectColonfailure
+import typings.offlineDashJs.offlineDashJsStrings.reconnectColonstarted
+import typings.offlineDashJs.offlineDashJsStrings.reconnectColonstopped
+import typings.offlineDashJs.offlineDashJsStrings.reconnectColontick
+import typings.offlineDashJs.offlineDashJsStrings.requestsColonflush
+import typings.offlineDashJs.offlineDashJsStrings.requestsColonhold
 import typings.offlineDashJs.offlineDashJsStrings.up
 import typings.std.Event
 import scala.scalajs.js
@@ -42,33 +42,33 @@ object Offline extends js.Object {
   @JSName("off")
   def off_down(event: down, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
-  def off_reconnectconnecting(event: `reconnect:connecting`): Unit = js.native
+  def off_reconnectconnecting(event: reconnectColonconnecting): Unit = js.native
   @JSName("off")
-  def off_reconnectconnecting(event: `reconnect:connecting`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def off_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
-  def off_reconnectfailure(event: `reconnect:failure`): Unit = js.native
+  def off_reconnectfailure(event: reconnectColonfailure): Unit = js.native
   @JSName("off")
-  def off_reconnectfailure(event: `reconnect:failure`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def off_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
-  def off_reconnectstarted(event: `reconnect:started`): Unit = js.native
+  def off_reconnectstarted(event: reconnectColonstarted): Unit = js.native
   @JSName("off")
-  def off_reconnectstarted(event: `reconnect:started`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def off_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
-  def off_reconnectstopped(event: `reconnect:stopped`): Unit = js.native
+  def off_reconnectstopped(event: reconnectColonstopped): Unit = js.native
   @JSName("off")
-  def off_reconnectstopped(event: `reconnect:stopped`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def off_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
-  def off_reconnecttick(event: `reconnect:tick`): Unit = js.native
+  def off_reconnecttick(event: reconnectColontick): Unit = js.native
   @JSName("off")
-  def off_reconnecttick(event: `reconnect:tick`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def off_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
-  def off_requestsflush(event: `requests:flush`): Unit = js.native
+  def off_requestsflush(event: requestsColonflush): Unit = js.native
   @JSName("off")
-  def off_requestsflush(event: `requests:flush`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def off_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
-  def off_requestshold(event: `requests:hold`): Unit = js.native
+  def off_requestshold(event: requestsColonhold): Unit = js.native
   @JSName("off")
-  def off_requestshold(event: `requests:hold`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def off_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("off")
   def off_up(event: up): Unit = js.native
   @JSName("off")
@@ -92,33 +92,33 @@ object Offline extends js.Object {
   @JSName("on")
   def on_down(event: down, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
-  def on_reconnectconnecting(event: `reconnect:connecting`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def on_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")
-  def on_reconnectconnecting(event: `reconnect:connecting`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+  def on_reconnectconnecting(event: reconnectColonconnecting, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
-  def on_reconnectfailure(event: `reconnect:failure`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def on_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")
-  def on_reconnectfailure(event: `reconnect:failure`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+  def on_reconnectfailure(event: reconnectColonfailure, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
-  def on_reconnectstarted(event: `reconnect:started`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def on_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")
-  def on_reconnectstarted(event: `reconnect:started`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+  def on_reconnectstarted(event: reconnectColonstarted, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
-  def on_reconnectstopped(event: `reconnect:stopped`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def on_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")
-  def on_reconnectstopped(event: `reconnect:stopped`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+  def on_reconnectstopped(event: reconnectColonstopped, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
-  def on_reconnecttick(event: `reconnect:tick`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def on_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")
-  def on_reconnecttick(event: `reconnect:tick`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+  def on_reconnecttick(event: reconnectColontick, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
-  def on_requestsflush(event: `requests:flush`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def on_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")
-  def on_requestsflush(event: `requests:flush`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+  def on_requestsflush(event: requestsColonflush, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
-  def on_requestshold(event: `requests:hold`, handler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def on_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")
-  def on_requestshold(event: `requests:hold`, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
+  def on_requestshold(event: requestsColonhold, handler: js.Function1[/* e */ Event, _], context: js.Any): Unit = js.native
   @JSName("on")
   def on_up(event: up, handler: js.Function1[/* e */ Event, _]): Unit = js.native
   @JSName("on")

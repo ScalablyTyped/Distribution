@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.selectionMode.Default
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.selectionMode.Multiple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

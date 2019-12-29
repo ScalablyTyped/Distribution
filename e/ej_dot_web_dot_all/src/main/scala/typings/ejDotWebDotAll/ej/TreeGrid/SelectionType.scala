@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.SelectionType.Checkbox
-import typings.ejDotWebDotAll.ej.TreeGrid.SelectionType.Multiple
-import typings.ejDotWebDotAll.ej.TreeGrid.SelectionType.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

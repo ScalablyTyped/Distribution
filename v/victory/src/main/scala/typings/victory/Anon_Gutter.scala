@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Gutter extends js.Object {
   var gutter: js.UndefOr[Double] = js.undefined
   var orientation: js.UndefOr[vertical | horizontal] = js.undefined
-  var style: js.UndefOr[Anon_DataLabelsTitle] = js.undefined
+  var style: js.UndefOr[Anon_DataLabels] = js.undefined
   var titleOrientation: js.UndefOr[OrientationTypes] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object Anon_Gutter {
   def apply(
     gutter: Int | Double = null,
     orientation: vertical | horizontal = null,
-    style: Anon_DataLabelsTitle = null,
+    style: Anon_DataLabels = null,
     titleOrientation: OrientationTypes = null
   ): Anon_Gutter = {
     val __obj = js.Dynamic.literal()

@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.ManyToMany
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.ManyToOne
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.OneToMany
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.OneToOne
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

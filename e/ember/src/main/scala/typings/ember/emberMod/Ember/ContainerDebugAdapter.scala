@@ -1,5 +1,6 @@
 package typings.ember.emberMod.Ember
 
+import typings.atEmberEngine.dashPrivateResolverMod.default
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ class ContainerDebugAdapter ()
   /* CompleteClass */
   override var constructor: js.Function = js.native
   /* CompleteClass */
-  override var resolver: typings.atEmberEngine.dashPrivateResolverMod.default = js.native
+  override var resolver: default = js.native
   /* CompleteClass */
   override def canCatalogEntriesByType(`type`: java.lang.String): Boolean = js.native
   /* CompleteClass */

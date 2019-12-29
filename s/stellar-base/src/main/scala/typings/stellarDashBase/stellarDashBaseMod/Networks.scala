@@ -1,8 +1,6 @@
 package typings.stellarDashBase.stellarDashBaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.stellarDashBase.stellarDashBaseMod.Networks.PUBLIC
-import typings.stellarDashBase.stellarDashBaseMod.Networks.TESTNET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

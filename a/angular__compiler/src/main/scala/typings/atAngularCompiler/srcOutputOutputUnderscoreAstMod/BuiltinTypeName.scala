@@ -1,14 +1,6 @@
 package typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Bool
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Dynamic
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Function
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Inferred
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Int
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.None
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Number
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

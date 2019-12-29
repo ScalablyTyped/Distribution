@@ -7,7 +7,6 @@ import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactNode
-import typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps
 import typings.reactDashSelect.srcSelectMod.Props
 import typings.reactDashSelect.srcTypesMod.ActionTypes
 import typings.reactDashSelect.srcTypesMod.ClassNamesState

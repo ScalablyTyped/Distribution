@@ -6,6 +6,7 @@ import typings.extjs.Ext.IElementLoader
 import typings.extjs.Ext.dd.IDD
 import typings.extjs.Ext.dd.IDDProxy
 import typings.extjs.Ext.dd.IDDTarget
+import typings.extjs.Ext.util.IKeyMap
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,13 +15,13 @@ import scala.scalajs.js.annotation._
 trait ILayer
   extends typings.extjs.Ext.IElement {
   /** [Config Option] (String) */
-  var cls: js.UndefOr[java.lang.String] = js.undefined
+  var cls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var constrain: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Object) */
   var dh: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var hideMode: js.UndefOr[java.lang.String] = js.undefined
+  var hideMode: js.UndefOr[String] = js.undefined
   /** [Method] overridden Element method
   		* @param x Object
   		* @param y Object
@@ -43,7 +44,7 @@ trait ILayer
       /* duration */ js.UndefOr[js.Any], 
       /* callback */ js.UndefOr[js.Any], 
       /* easing */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
+      IElement
     ]
   ] = js.undefined
   /** [Method] overridden Element method
@@ -62,7 +63,7 @@ trait ILayer
       /* duration */ js.UndefOr[js.Any], 
       /* callback */ js.UndefOr[js.Any], 
       /* easing */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
+      IElement
     ]
   ] = js.undefined
   /** [Method] Sets the element s left and top positions directly using CSS style Defined in override Ext dom Element_position
@@ -72,18 +73,14 @@ trait ILayer
   		*/
   @JSName("setLeftTop")
   var setLeftTop_ILayer: js.UndefOr[
-    js.Function2[
-      /* left */ js.UndefOr[js.Any], 
-      /* top */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
-    ]
+    js.Function2[/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any], IElement]
   ] = js.undefined
   /** [Method] overridden Element method
   		* @param left Object
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setLeft")
-  var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] overridden Element method
   		* @param w Object
   		* @param h Object
@@ -102,7 +99,7 @@ trait ILayer
       /* duration */ js.UndefOr[js.Any], 
       /* callback */ js.UndefOr[js.Any], 
       /* easing */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
+      IElement
     ]
   ] = js.undefined
   /** [Method] Sets the element s top position directly using CSS style instead of setY
@@ -110,7 +107,7 @@ trait ILayer
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setTop")
-  var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] overridden Element method
   		* @param visible Object
   		* @param animate Object
@@ -127,7 +124,7 @@ trait ILayer
       /* duration */ js.UndefOr[js.Any], 
       /* callback */ js.UndefOr[js.Any], 
       /* easing */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
+      IElement
     ]
   ] = js.undefined
   /** [Method] overridden Element method
@@ -146,7 +143,7 @@ trait ILayer
       /* duration */ js.UndefOr[js.Any], 
       /* callback */ js.UndefOr[js.Any], 
       /* easing */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
+      IElement
     ]
   ] = js.undefined
   /** [Method] Sets the z index of this layer and adjusts any shadow and shim z indexes
@@ -163,7 +160,7 @@ trait ILayer
   /** [Config Option] (Boolean) */
   var useDisplay: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var visibilityCls: js.UndefOr[java.lang.String] = js.undefined
+  var visibilityCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var zindex: js.UndefOr[Double] = js.undefined
 }
@@ -175,76 +172,76 @@ object ILayer {
     DISPLAY: Int | Double = null,
     OFFSETS: Int | Double = null,
     VISIBILITY: Int | Double = null,
-    addCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    addClsOnClick: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    addClsOnFocus: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    addClsOnOver: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    addKeyListener: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.util.IKeyMap = null,
-    addKeyMap: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.util.IKeyMap = null,
-    addListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
+    addCls: /* className */ js.UndefOr[js.Any] => IElement = null,
+    addClsOnClick: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ILayer = null,
+    addClsOnFocus: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ILayer = null,
+    addClsOnOver: (/* className */ js.UndefOr[String], /* testFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ILayer = null,
+    addKeyListener: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IKeyMap = null,
+    addKeyMap: /* config */ js.UndefOr[js.Any] => IKeyMap = null,
+    addListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => ILayer = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    animate: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    appendChild: (/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ILayer = null,
-    appendTo: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    applyStyles: /* styles */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
+    animate: /* config */ js.UndefOr[js.Any] => ILayer = null,
+    appendChild: (/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => ILayer = null,
+    appendTo: /* el */ js.UndefOr[js.Any] => ILayer = null,
+    applyStyles: /* styles */ js.UndefOr[js.Any] => IElement = null,
     autoBoxAdjust: js.UndefOr[Boolean] = js.undefined,
-    blur: () => typings.extjs.Ext.dom.ILayer = null,
-    boxWrap: /* clazz */ js.UndefOr[java.lang.String] => typings.extjs.Ext.dom.ILayer = null,
+    blur: () => ILayer = null,
+    boxWrap: /* clazz */ js.UndefOr[String] => ILayer = null,
     cacheScrollValues: () => _ = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     center: /* centerIn */ js.UndefOr[js.Any] => Unit = null,
-    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    child: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     clean: /* forceReclean */ js.UndefOr[Boolean] => Unit = null,
-    clearListeners: () => typings.extjs.Ext.dom.ILayer = null,
-    clearOpacity: () => typings.extjs.Ext.dom.ILayer = null,
-    clearPositioning: /* value */ js.UndefOr[java.lang.String] => typings.extjs.Ext.dom.ILayer = null,
-    clip: () => typings.extjs.Ext.dom.ILayer = null,
-    cls: java.lang.String = null,
+    clearListeners: () => ILayer = null,
+    clearOpacity: () => ILayer = null,
+    clearPositioning: /* value */ js.UndefOr[String] => ILayer = null,
+    clip: () => ILayer = null,
+    cls: String = null,
     config: js.Any = null,
     constrain: js.UndefOr[Boolean] = js.undefined,
     contains: /* el */ js.UndefOr[js.Any] => Boolean = null,
-    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ILayer = null,
-    createProxy: (/* config */ js.UndefOr[js.Any], /* renderTo */ js.UndefOr[js.Any], /* matchBox */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ILayer = null,
-    createShim: () => typings.extjs.Ext.dom.ILayer = null,
-    defaultUnit: java.lang.String = null,
+    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => ILayer = null,
+    createProxy: (/* config */ js.UndefOr[js.Any], /* renderTo */ js.UndefOr[js.Any], /* matchBox */ js.UndefOr[Boolean]) => ILayer = null,
+    createShim: () => ILayer = null,
+    defaultUnit: String = null,
     destroy: () => Unit = null,
     dh: js.Any = null,
     dom: HTMLElement = null,
-    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    enableDisplayMode: /* display */ js.UndefOr[java.lang.String] => typings.extjs.Ext.dom.ILayer = null,
-    extend: java.lang.String = null,
-    fadeIn: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    fadeOut: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    findParent: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
-    findParentNode: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
-    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    focus: /* defer */ js.UndefOr[Double] => typings.extjs.Ext.dom.ILayer = null,
+    down: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    enableDisplayMode: /* display */ js.UndefOr[String] => ILayer = null,
+    extend: String = null,
+    fadeIn: /* options */ js.UndefOr[js.Any] => ILayer = null,
+    fadeOut: /* options */ js.UndefOr[js.Any] => ILayer = null,
+    findParent: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
+    findParentNode: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
+    first: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    focus: /* defer */ js.UndefOr[Double] => ILayer = null,
     focusable: () => Boolean = null,
-    frame: (/* color */ js.UndefOr[java.lang.String], /* count */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
+    frame: (/* color */ js.UndefOr[String], /* count */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => ILayer = null,
     getActiveElement: () => HTMLElement = null,
-    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getAttributeNS: (/* namespace */ js.UndefOr[java.lang.String], /* name */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    getAttribute: (/* name */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => String = null,
+    getAttributeNS: (/* namespace */ js.UndefOr[String], /* name */ js.UndefOr[String]) => String = null,
+    getBorderWidth: /* side */ js.UndefOr[String] => Double = null,
     getBottom: /* local */ js.UndefOr[Boolean] => Double = null,
-    getById: (/* id */ js.UndefOr[java.lang.String], /* asDom */ js.UndefOr[Boolean]) => Unit = null,
+    getById: (/* id */ js.UndefOr[String], /* asDom */ js.UndefOr[Boolean]) => Unit = null,
     getCenterXY: () => Array = null,
-    getColor: (/* attr */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String]) => Unit = null,
+    getColor: (/* attr */ js.UndefOr[String], /* defaultValue */ js.UndefOr[String], /* prefix */ js.UndefOr[String]) => Unit = null,
     getComputedHeight: () => Double = null,
     getComputedWidth: () => Double = null,
-    getFrameWidth: /* sides */ js.UndefOr[java.lang.String] => Double = null,
+    getFrameWidth: /* sides */ js.UndefOr[String] => Double = null,
     getHTML: () => Unit = null,
     getHeight: /* contentHeight */ js.UndefOr[Boolean] => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLeft: /* local */ js.UndefOr[Boolean] => Double = null,
     getLoader: () => IElementLoader = null,
     getLocalX: () => Double = null,
     getLocalXY: () => Array = null,
     getLocalY: () => Double = null,
-    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
-    getPadding: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    getMargin: /* sides */ js.UndefOr[String] => _ = null,
+    getPadding: /* side */ js.UndefOr[String] => Double = null,
     getPageBox: /* asRegion */ js.UndefOr[Boolean] => _ = null,
     getPositioning: /* autoPx */ js.UndefOr[Boolean] => _ = null,
     getRight: /* local */ js.UndefOr[Boolean] => Double = null,
@@ -254,7 +251,7 @@ object ILayer {
     getSize: /* contentSize */ js.UndefOr[Boolean] => _ = null,
     getStyle: (/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[Boolean]) => _ = null,
     getStyleSize: () => _ = null,
-    getTextWidth: (/* text */ js.UndefOr[java.lang.String], /* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double]) => Double = null,
+    getTextWidth: (/* text */ js.UndefOr[String], /* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double]) => Double = null,
     getTop: /* local */ js.UndefOr[Boolean] => Double = null,
     getValue: /* asNumber */ js.UndefOr[Boolean] => _ = null,
     getViewSize: () => _ = null,
@@ -262,113 +259,113 @@ object ILayer {
     getX: () => Double = null,
     getXY: () => Array = null,
     getY: () => Double = null,
-    ghost: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    hasCls: /* className */ js.UndefOr[java.lang.String] => Boolean = null,
-    hide: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    hideMode: java.lang.String = null,
-    highlight: (/* color */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    hover: (/* overFn */ js.UndefOr[js.Any], /* outFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    id: java.lang.String = null,
+    ghost: (/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => ILayer = null,
+    hasCls: /* className */ js.UndefOr[String] => Boolean = null,
+    hide: /* animate */ js.UndefOr[js.Any] => ILayer = null,
+    hideMode: String = null,
+    highlight: (/* color */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => ILayer = null,
+    hover: (/* overFn */ js.UndefOr[js.Any], /* outFn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => ILayer = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    initDD: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDD = null,
-    initDDProxy: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDProxy = null,
-    initDDTarget: (/* group */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDTarget = null,
-    insertAfter: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    insertBefore: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    insertFirst: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ILayer = null,
-    is: /* selector */ js.UndefOr[java.lang.String] => Boolean = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => ILayer = null,
+    initDD: (/* group */ js.UndefOr[String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDD = null,
+    initDDProxy: (/* group */ js.UndefOr[String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDProxy = null,
+    initDDTarget: (/* group */ js.UndefOr[String], /* config */ js.UndefOr[js.Any], /* overrides */ js.UndefOr[js.Any]) => IDDTarget = null,
+    insertAfter: /* el */ js.UndefOr[js.Any] => ILayer = null,
+    insertBefore: /* el */ js.UndefOr[js.Any] => ILayer = null,
+    insertFirst: /* el */ js.UndefOr[js.Any] => ILayer = null,
+    insertHtml: (/* where */ js.UndefOr[String], /* html */ js.UndefOr[String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => ILayer = null,
+    is: /* selector */ js.UndefOr[String] => Boolean = null,
     isBorderBox: () => Boolean = null,
     isDisplayed: () => Boolean = null,
     isFocusable: /* asFocusEl */ js.UndefOr[js.Any] => Boolean = null,
     isMasked: () => Boolean = null,
     isScrollable: () => Boolean = null,
-    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean = null,
-    isTransparent: /* prop */ js.UndefOr[java.lang.String] => Boolean = null,
+    isStyle: (/* style */ js.UndefOr[String], /* value */ js.UndefOr[String]) => Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[String] => Boolean = null,
     isVisible: /* deep */ js.UndefOr[Boolean] => Boolean = null,
-    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    load: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    mask: (/* msg */ js.UndefOr[java.lang.String], /* msgCls */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.dom.ILayer = null,
+    last: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    load: /* options */ js.UndefOr[js.Any] => ILayer = null,
+    mask: (/* msg */ js.UndefOr[String], /* msgCls */ js.UndefOr[String]) => ILayer = null,
     mixins: js.Any = null,
     monitorMouseLeave: (/* delay */ js.UndefOr[Double], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    moveTo: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
+    moveTo: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => ILayer = null,
     needsTabIndex: () => Unit = null,
-    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    on: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    originalDisplay: java.lang.String = null,
-    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    pause: /* seconds */ js.UndefOr[Double] => typings.extjs.Ext.dom.ILayer = null,
-    position: (/* pos */ js.UndefOr[java.lang.String], /* zIndex */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
-    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    puff: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    purgeAllListeners: () => typings.extjs.Ext.dom.ILayer = null,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    radioCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    relayEvent: (/* eventName */ js.UndefOr[java.lang.String], /* observable */ js.UndefOr[js.Any]) => Unit = null,
+    next: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    on: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => ILayer = null,
+    originalDisplay: String = null,
+    parent: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    pause: /* seconds */ js.UndefOr[Double] => ILayer = null,
+    position: (/* pos */ js.UndefOr[String], /* zIndex */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
+    prev: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    puff: /* options */ js.UndefOr[js.Any] => ILayer = null,
+    purgeAllListeners: () => ILayer = null,
+    query: /* selector */ js.UndefOr[String] => Array = null,
+    radioCls: /* className */ js.UndefOr[js.Any] => IElement = null,
+    relayEvent: (/* eventName */ js.UndefOr[String], /* observable */ js.UndefOr[js.Any]) => Unit = null,
     remove: () => Unit = null,
-    removeAllListeners: () => typings.extjs.Ext.dom.ILayer = null,
-    removeCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    repaint: () => typings.extjs.Ext.dom.IElement = null,
-    replace: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    replaceCls: (/* oldClassName */ js.UndefOr[java.lang.String], /* newClassName */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.dom.IElement = null,
-    replaceWith: /* el */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
+    removeAllListeners: () => ILayer = null,
+    removeCls: /* className */ js.UndefOr[js.Any] => IElement = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ILayer = null,
+    repaint: () => IElement = null,
+    replace: /* el */ js.UndefOr[js.Any] => ILayer = null,
+    replaceCls: (/* oldClassName */ js.UndefOr[String], /* newClassName */ js.UndefOr[String]) => IElement = null,
+    replaceWith: /* el */ js.UndefOr[js.Any] => ILayer = null,
     requires: Array = null,
-    scale: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    scroll: (/* direction */ js.UndefOr[java.lang.String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Boolean = null,
-    scrollBy: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    scrollIntoView: (/* container */ js.UndefOr[js.Any], /* hscroll */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], /* highlight */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ILayer = null,
-    scrollTo: (/* side */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    select: (/* selector */ js.UndefOr[java.lang.String], /* unique */ js.UndefOr[Boolean]) => typings.extjs.Ext.ICompositeElement = null,
-    selectable: () => typings.extjs.Ext.dom.ILayer = null,
+    scale: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => ILayer = null,
+    scroll: (/* direction */ js.UndefOr[String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Boolean = null,
+    scrollBy: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => ILayer = null,
+    scrollIntoView: (/* container */ js.UndefOr[js.Any], /* hscroll */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], /* highlight */ js.UndefOr[Boolean]) => ILayer = null,
+    scrollTo: (/* side */ js.UndefOr[String], /* value */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => ILayer = null,
+    select: (/* selector */ js.UndefOr[String], /* unique */ js.UndefOr[Boolean]) => typings.extjs.Ext.ICompositeElement = null,
+    selectable: () => ILayer = null,
     self: IClass = null,
-    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
-    set: (/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.IElement = null,
-    setBottom: /* bottom */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    setBounds: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], /* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setDisplayed: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    setHTML: /* html */ js.UndefOr[java.lang.String] => typings.extjs.Ext.IElement = null,
-    setHeight: (/* h */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setLeft: /* left */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    setLeftTop: (/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setLocation: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    setOpacity: (/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    setPositioning: /* posCfg */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    setRight: /* right */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    setScrollLeft: /* left */ js.UndefOr[Double] => typings.extjs.Ext.dom.ILayer = null,
-    setScrollTop: /* top */ js.UndefOr[Double] => typings.extjs.Ext.dom.ILayer = null,
-    setSize: (/* w */ js.UndefOr[js.Any], /* h */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.dom.IElement = null,
-    setTop: /* top */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    setVisible: (/* visible */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setWidth: (/* w */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setZIndex: /* zindex */ js.UndefOr[Double] => typings.extjs.Ext.dom.ILayer = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => String = null,
+    set: (/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => IElement = null,
+    setBottom: /* bottom */ js.UndefOr[js.Any] => ILayer = null,
+    setBounds: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], /* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => IElement = null,
+    setDisplayed: /* value */ js.UndefOr[js.Any] => ILayer = null,
+    setHTML: /* html */ js.UndefOr[String] => typings.extjs.Ext.IElement = null,
+    setHeight: (/* h */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => IElement = null,
+    setLeft: /* left */ js.UndefOr[js.Any] => IElement = null,
+    setLeftTop: (/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any]) => IElement = null,
+    setLocation: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => ILayer = null,
+    setOpacity: (/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => ILayer = null,
+    setPositioning: /* posCfg */ js.UndefOr[js.Any] => ILayer = null,
+    setRight: /* right */ js.UndefOr[js.Any] => ILayer = null,
+    setScrollLeft: /* left */ js.UndefOr[Double] => ILayer = null,
+    setScrollTop: /* top */ js.UndefOr[Double] => ILayer = null,
+    setSize: (/* w */ js.UndefOr[js.Any], /* h */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IElement = null,
+    setTop: /* top */ js.UndefOr[js.Any] => IElement = null,
+    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => ILayer = null,
+    setVisible: (/* visible */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => IElement = null,
+    setWidth: (/* w */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* duration */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* easing */ js.UndefOr[js.Any]) => IElement = null,
+    setZIndex: /* zindex */ js.UndefOr[Double] => ILayer = null,
     shadow: js.Any = null,
     shadowOffset: Int | Double = null,
-    shift: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
+    shift: /* options */ js.UndefOr[js.Any] => ILayer = null,
     shim: js.UndefOr[Boolean] = js.undefined,
-    show: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
+    show: /* animate */ js.UndefOr[js.Any] => ILayer = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    slideIn: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    slideOut: (/* anchor */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
+    slideIn: (/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => ILayer = null,
+    slideOut: (/* anchor */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => ILayer = null,
     statics: js.Any = null,
-    swallowEvent: (/* eventName */ js.UndefOr[js.Any], /* preventDefault */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ILayer = null,
-    switchOff: /* options */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    toggle: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ILayer = null,
-    toggleCls: /* className */ js.UndefOr[java.lang.String] => typings.extjs.Ext.dom.IElement = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
-    unclip: () => typings.extjs.Ext.dom.ILayer = null,
+    swallowEvent: (/* eventName */ js.UndefOr[js.Any], /* preventDefault */ js.UndefOr[Boolean]) => ILayer = null,
+    switchOff: /* options */ js.UndefOr[js.Any] => ILayer = null,
+    toggle: /* animate */ js.UndefOr[js.Any] => ILayer = null,
+    toggleCls: /* className */ js.UndefOr[String] => IElement = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ILayer = null,
+    unclip: () => ILayer = null,
     unmask: () => Unit = null,
-    unselectable: () => typings.extjs.Ext.dom.ILayer = null,
-    up: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.IElement = null,
-    update: (/* html */ js.UndefOr[java.lang.String], /* loadScripts */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ILayer = null,
+    unselectable: () => ILayer = null,
+    up: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.IElement = null,
+    update: (/* html */ js.UndefOr[String], /* loadScripts */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any]) => ILayer = null,
     useDisplay: js.UndefOr[Boolean] = js.undefined,
     uses: Array = null,
-    visibilityCls: java.lang.String = null,
-    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[java.lang.String]) => _ = null,
+    visibilityCls: String = null,
+    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[String]) => _ = null,
     zindex: Int | Double = null
   ): ILayer = {
     val __obj = js.Dynamic.literal()

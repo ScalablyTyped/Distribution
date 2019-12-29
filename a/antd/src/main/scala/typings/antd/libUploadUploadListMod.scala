@@ -3,7 +3,6 @@ package typings.antd
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.libUploadInterfaceMod.UploadFile
 import typings.antd.libUploadInterfaceMod.UploadListProps
-import typings.antd.libUploadUploadListMod.UploadList
 import typings.react.reactMod.Component
 import typings.react.reactMod.SyntheticEvent
 import typings.react.reactMod._Global_.JSX.Element

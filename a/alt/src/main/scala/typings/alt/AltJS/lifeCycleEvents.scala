@@ -1,11 +1,6 @@
 package typings.alt.AltJS
 
 import org.scalablytyped.runtime.TopLevel
-import typings.alt.AltJS.lifeCycleEvents.bootstrap
-import typings.alt.AltJS.lifeCycleEvents.error
-import typings.alt.AltJS.lifeCycleEvents.init
-import typings.alt.AltJS.lifeCycleEvents.rollback
-import typings.alt.AltJS.lifeCycleEvents.snapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

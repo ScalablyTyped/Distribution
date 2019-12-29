@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.ApplicationDataCreateDisposition.always
-import typings.winrt.Windows.Storage.ApplicationDataCreateDisposition.existing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

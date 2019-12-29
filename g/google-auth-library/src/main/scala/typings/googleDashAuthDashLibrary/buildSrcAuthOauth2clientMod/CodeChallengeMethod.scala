@@ -1,8 +1,6 @@
 package typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.CodeChallengeMethod.Plain
-import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.CodeChallengeMethod.S256
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

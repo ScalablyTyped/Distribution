@@ -1,9 +1,6 @@
 package typings.heremaps.H.service.venues.Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.service.venues.Service.State.ERROR
-import typings.heremaps.H.service.venues.Service.State.INIT
-import typings.heremaps.H.service.venues.Service.State.READY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

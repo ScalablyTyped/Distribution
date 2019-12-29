@@ -1,11 +1,6 @@
 package typings.rxjs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rxjs.internalNotificationMod.Notification
-import typings.rxjs.internalNotificationMod.NotificationKind
-import typings.rxjs.internalNotificationMod.NotificationKind.COMPLETE
-import typings.rxjs.internalNotificationMod.NotificationKind.ERROR
-import typings.rxjs.internalNotificationMod.NotificationKind.NEXT
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.internalTypesMod.PartialObserver
 import typings.rxjs.rxjsStrings.C

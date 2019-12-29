@@ -1,8 +1,8 @@
 package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
+import typings.victory.Anon_XY
 import typings.victory.Anon_XYD3Scale
-import typings.victory.Anon_XYNumberOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ trait VictoryCommonProps extends js.Object {
     * and the y value refers to the dependent variable. This may cause confusion in
     * horizontal charts, as the independent variable will corresponds to the y axis.
     */
-  var maxDomain: js.UndefOr[Double | Anon_XYNumberOptional] = js.undefined
+  var maxDomain: js.UndefOr[Double | Anon_XY] = js.undefined
   /**
     * The minDomain prop defines a minimum domain value for a chart. This prop is useful in
     * situations where the minimum domain of a chart is static, while the maximum value
@@ -75,7 +75,7 @@ trait VictoryCommonProps extends js.Object {
     * and the y value refers to the dependent variable. This may cause confusion in
     * horizontal charts, as the independent variable will corresponds to the y axis.
     */
-  var minDomain: js.UndefOr[Double | Anon_XYNumberOptional] = js.undefined
+  var minDomain: js.UndefOr[Double | Anon_XY] = js.undefined
   /**
     * The name prop is used to reference a component instance when defining shared events.
     */
@@ -128,8 +128,8 @@ object VictoryCommonProps {
     groupComponent: ReactElement = null,
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
-    maxDomain: Double | Anon_XYNumberOptional = null,
-    minDomain: Double | Anon_XYNumberOptional = null,
+    maxDomain: Double | Anon_XY = null,
+    minDomain: Double | Anon_XY = null,
     name: String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,

@@ -26,14 +26,14 @@ trait MessageType extends js.Object
 
 object MessageType {
   @scala.inline
-  def ActionCard(actionCard: Anon_0, msgtype: actionCard): MessageType = {
-    val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+  def FeedCardItem(feedCard: Anon_MessageURL, msgtype: feedCard): MessageType = {
+    val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageType]
   }
   @scala.inline
-  def Markdown(markdown: Anon_AtMobilesIsAtAll, msgtype: markdown): MessageType = {
-    val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+  def ActionCard(actionCard: Anon_0, msgtype: actionCard): MessageType = {
+    val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageType]
   }
@@ -44,8 +44,8 @@ object MessageType {
     __obj.asInstanceOf[MessageType]
   }
   @scala.inline
-  def FeedCardItem(feedCard: Anon_MessageURL, msgtype: feedCard): MessageType = {
-    val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
+  def Markdown(markdown: Anon_AtMobilesIsAtAll, msgtype: markdown): MessageType = {
+    val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageType]
   }

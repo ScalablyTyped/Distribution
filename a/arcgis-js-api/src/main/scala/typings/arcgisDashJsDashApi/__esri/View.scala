@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`double-click`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`immediate-click`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`key-down`
@@ -93,7 +92,7 @@ trait View
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#navigation)
     */
-  val navigation: Navigation = js.native
+  var navigation: Navigation = js.native
   /**
     * Use the padding property to make the [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center), and [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent), etc. work off a subsection of the full view. This is particularly useful when layering UI elements or semi-transparent content on top of portions of the view. See the [view padding sample](https://developers.arcgis.com/javascript/latest/sample-code/view-padding/index.html) for an example of how this works.
     *
@@ -296,7 +295,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: CSVLayer): IPromise[CSVLayerView] = js.native
+  def whenLayerView(layer: CSVLayer): js.Promise[CSVLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -305,7 +304,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: FeatureLayer): IPromise[FeatureLayerView] = js.native
+  def whenLayerView(layer: FeatureLayer): js.Promise[FeatureLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -314,7 +313,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: GeoJSONLayer): IPromise[GeoJSONLayerView] = js.native
+  def whenLayerView(layer: GeoJSONLayer): js.Promise[GeoJSONLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -323,7 +322,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: GeoRSSLayer): IPromise[GeoRSSLayerView] = js.native
+  def whenLayerView(layer: GeoRSSLayer): js.Promise[GeoRSSLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -332,7 +331,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: GraphicsLayer): IPromise[GraphicsLayerView] = js.native
+  def whenLayerView(layer: GraphicsLayer): js.Promise[GraphicsLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -341,7 +340,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: ImageryLayer): IPromise[ImageryLayerView] = js.native
+  def whenLayerView(layer: ImageryLayer): js.Promise[ImageryLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -350,7 +349,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: KMLLayer): IPromise[KMLLayerView] = js.native
+  def whenLayerView(layer: KMLLayer): js.Promise[KMLLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -359,7 +358,7 @@ trait View
     * @param layer The layer for which to obtain its LayerView.
     *
     */
-  def whenLayerView(layer: Layer): IPromise[LayerView] = js.native
+  def whenLayerView(layer: Layer): js.Promise[LayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -368,7 +367,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: PointCloudLayer): IPromise[PointCloudLayerView] = js.native
+  def whenLayerView(layer: PointCloudLayer): js.Promise[PointCloudLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -377,7 +376,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: SceneLayer): IPromise[SceneLayerView] = js.native
+  def whenLayerView(layer: SceneLayer): js.Promise[SceneLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *
@@ -386,7 +385,7 @@ trait View
     * @param layer
     *
     */
-  def whenLayerView(layer: StreamLayer): IPromise[StreamLayerView] = js.native
+  def whenLayerView(layer: StreamLayer): js.Promise[StreamLayerView] = js.native
 }
 
 @JSGlobal("__esri.View")

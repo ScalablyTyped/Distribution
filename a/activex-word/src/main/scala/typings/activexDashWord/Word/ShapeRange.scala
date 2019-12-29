@@ -78,7 +78,8 @@ class ShapeRange protected () extends js.Object {
   var Visible: MsoTriState = js.native
   var Width: Double = js.native
   var WidthRelative: Double = js.native
-  var `Word.ShapeRange_typekey`: ShapeRange = js.native
+  @JSName("Word.ShapeRange_typekey")
+  var WordDotShapeRange_typekey: ShapeRange = js.native
   val WrapFormat: typings.activexDashWord.Word.WrapFormat = js.native
   val ZOrderPosition: Double = js.native
   def Activate(): Unit = js.native

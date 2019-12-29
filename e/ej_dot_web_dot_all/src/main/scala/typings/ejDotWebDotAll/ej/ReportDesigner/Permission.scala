@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportDesigner
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportDesigner.Permission.All
-import typings.ejDotWebDotAll.ej.ReportDesigner.Permission.Create
-import typings.ejDotWebDotAll.ej.ReportDesigner.Permission.Delete
-import typings.ejDotWebDotAll.ej.ReportDesigner.Permission.Edit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

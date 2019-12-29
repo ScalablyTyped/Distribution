@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Imaging.PngFilterMode.adaptive
-import typings.winrtDashUwp.Windows.Graphics.Imaging.PngFilterMode.automatic
-import typings.winrtDashUwp.Windows.Graphics.Imaging.PngFilterMode.average
-import typings.winrtDashUwp.Windows.Graphics.Imaging.PngFilterMode.none
-import typings.winrtDashUwp.Windows.Graphics.Imaging.PngFilterMode.paeth
-import typings.winrtDashUwp.Windows.Graphics.Imaging.PngFilterMode.sub
-import typings.winrtDashUwp.Windows.Graphics.Imaging.PngFilterMode.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

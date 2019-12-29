@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.automatic
-import typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.dateAxis
-import typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.textAxis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

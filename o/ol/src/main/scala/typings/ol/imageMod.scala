@@ -1,8 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.imageMod.ImageWrapper
-import typings.ol.imageMod.LoadFunction
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement

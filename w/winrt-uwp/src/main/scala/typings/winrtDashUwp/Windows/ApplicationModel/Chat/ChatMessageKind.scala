@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.fileTransferRequest
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.joinedConversation
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.leftConversation
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.otherParticipantJoinedConversation
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.otherParticipantLeftConversation
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.standard
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.transportCustom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

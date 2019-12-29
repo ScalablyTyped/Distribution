@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.VerticalCharacterAlignment.baseline
-import typings.winrtDashUwp.Windows.UI.Text.VerticalCharacterAlignment.bottom
-import typings.winrtDashUwp.Windows.UI.Text.VerticalCharacterAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,7 +14,7 @@ trait UtilModule extends js.Object {
     * The linefeed character, normalized for the current operating system.
     * (\r\n on Windows, \n otherwise)
     */
-  var linefeed: java.lang.String = js.native
+  var linefeed: String = js.native
   // Internal libraries
   var namespace: js.Any = js.native
   var task: js.Any = js.native
@@ -47,25 +47,25 @@ trait UtilModule extends js.Object {
     * Also, if an Error object is specified for origError and Grunt was run with the --debug 9 option,
     * the original Error stack will be dumped.
     */
-  def error(message: java.lang.String): Error = js.native
-  def error(message: java.lang.String, origError: Error): Error = js.native
+  def error(message: String): Error = js.native
+  def error(message: String, origError: Error): Error = js.native
   /**
     * Return the "kind" of a value. Like typeof but returns the internal [Class](Class/) value.
     * Possible results are "number", "string", "boolean", "function", "regexp", "array", "date",
     * "error", "null", "undefined" and the catch-all "object".
     */
-  def kindOf(value: js.Any): java.lang.String = js.native
+  def kindOf(value: js.Any): String = js.native
   /**
     * Given a string, return a new string with all the linefeeds normalized for the current operating system.
     * (\r\n on Windows, \n otherwise)
     */
-  def normalizelf(str: java.lang.String): java.lang.String = js.native
+  def normalizelf(str: String): String = js.native
   /**
     * Given str of "a/b", If n is 1, return "a" otherwise "b".
     * You can specify a custom separator if '/' doesn't work for you.
     */
-  def pluralize(n: Double, str: java.lang.String): java.lang.String = js.native
-  def pluralize(n: Double, str: java.lang.String, separator: java.lang.String): java.lang.String = js.native
+  def pluralize(n: Double, str: String): String = js.native
+  def pluralize(n: Double, str: String, separator: String): String = js.native
   /**
     * Recurse through nested objects and arrays, executing callbackFunction for each non-object value.
     * If continueFunction returns false, a given object or value will be skipped.
@@ -78,7 +78,7 @@ trait UtilModule extends js.Object {
   /**
     * Return string str repeated n times.
     */
-  def repeat(n: Double, str: java.lang.String): java.lang.String = js.native
+  def repeat(n: Double, str: String): String = js.native
   /**
     * Spawn a child process, keeping track of its stdout, stderr and exit code.
     * The method returns a reference to the spawned child.

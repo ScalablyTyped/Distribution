@@ -3,7 +3,7 @@ package typings.polished
 import typings.polished.polishedNumbers.`0`
 import typings.polished.polishedNumbers.`2`
 import typings.polished.polishedNumbers.`4`
-import typings.polished.polishedStrings.`/`
+import typings.polished.polishedStrings.Slash
 import typings.polished.polishedStrings.infix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait Anon_02 extends js.Object {
   var notation: infix
   var precedence: `4`
   var rightToLeft: `0`
-  var symbol: `/`
+  var symbol: Slash
 }
 
 object Anon_02 {
@@ -26,7 +26,7 @@ object Anon_02 {
     notation: infix,
     precedence: `4`,
     rightToLeft: `0`,
-    symbol: `/`
+    symbol: Slash
   ): Anon_02 = {
     val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
   

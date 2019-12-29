@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FAXCOMEXLib.FaxAccountOutgoingArchive")
 @js.native
 class FaxAccountOutgoingArchive protected () extends js.Object {
-  var `FAXCOMEXLib.FaxAccountOutgoingArchive_typekey`: FaxAccountOutgoingArchive = js.native
+  @JSName("FAXCOMEXLib.FaxAccountOutgoingArchive_typekey")
+  var FAXCOMEXLibDotFaxAccountOutgoingArchive_typekey: FaxAccountOutgoingArchive = js.native
   /** The high 32-bit value of the archive size */
   val SizeHigh: Double = js.native
   /** The low 32-bit value of the archive size */

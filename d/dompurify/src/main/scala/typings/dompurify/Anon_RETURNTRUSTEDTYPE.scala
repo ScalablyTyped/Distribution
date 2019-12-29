@@ -1,6 +1,6 @@
 package typings.dompurify
 
-import typings.dompurify.dompurifyNumbers.`true`
+import typings.dompurify.dompurifyBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

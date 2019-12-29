@@ -1,18 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.AutoFillType.fillCopy
-import typings.officeDashJs.Excel.AutoFillType.fillDays
-import typings.officeDashJs.Excel.AutoFillType.fillDefault
-import typings.officeDashJs.Excel.AutoFillType.fillFormats
-import typings.officeDashJs.Excel.AutoFillType.fillMonths
-import typings.officeDashJs.Excel.AutoFillType.fillSeries
-import typings.officeDashJs.Excel.AutoFillType.fillValues
-import typings.officeDashJs.Excel.AutoFillType.fillWeekdays
-import typings.officeDashJs.Excel.AutoFillType.fillYears
-import typings.officeDashJs.Excel.AutoFillType.flashFill
-import typings.officeDashJs.Excel.AutoFillType.growthTrend
-import typings.officeDashJs.Excel.AutoFillType.linearTrend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

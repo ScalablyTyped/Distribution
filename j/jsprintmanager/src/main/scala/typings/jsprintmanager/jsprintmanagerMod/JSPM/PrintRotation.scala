@@ -1,10 +1,6 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.None
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot180
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot270
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot90
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

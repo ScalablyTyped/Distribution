@@ -36,17 +36,17 @@ trait ChipsOptions extends js.Object {
     * Callback for chip add
     * @default null
     */
-  def onChipAdd(`this`: Chips, element: Element, chip: Element): Unit
+  def onChipAdd(element: Element, chip: Element): Unit
   /**
     * Callback for chip delete
     * @default null
     */
-  def onChipDelete(`this`: Chips, element: Element, chip: Element): Unit
+  def onChipDelete(element: Element, chip: Element): Unit
   /**
     * Callback for chip select
     * @default null
     */
-  def onChipSelect(`this`: Chips, element: Element, chip: Element): Unit
+  def onChipSelect(element: Element, chip: Element): Unit
 }
 
 object ChipsOptions {
@@ -55,13 +55,13 @@ object ChipsOptions {
     autocompleteOptions: Partial[AutocompleteOptions],
     data: js.Array[ChipData],
     limit: Double,
-    onChipAdd: (Chips, Element, Element) => Unit,
-    onChipDelete: (Chips, Element, Element) => Unit,
-    onChipSelect: (Chips, Element, Element) => Unit,
+    onChipAdd: (Element, Element) => Unit,
+    onChipDelete: (Element, Element) => Unit,
+    onChipSelect: (Element, Element) => Unit,
     placeholder: String,
     secondaryPlaceholder: String
   ): ChipsOptions = {
-    val __obj = js.Dynamic.literal(autocompleteOptions = autocompleteOptions.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], onChipAdd = js.Any.fromFunction3(onChipAdd), onChipDelete = js.Any.fromFunction3(onChipDelete), onChipSelect = js.Any.fromFunction3(onChipSelect), placeholder = placeholder.asInstanceOf[js.Any], secondaryPlaceholder = secondaryPlaceholder.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autocompleteOptions = autocompleteOptions.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], onChipAdd = js.Any.fromFunction2(onChipAdd), onChipDelete = js.Any.fromFunction2(onChipDelete), onChipSelect = js.Any.fromFunction2(onChipSelect), placeholder = placeholder.asInstanceOf[js.Any], secondaryPlaceholder = secondaryPlaceholder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChipsOptions]
   }

@@ -12,7 +12,7 @@ trait ObjectPreview extends js.Object {
   /**
     * String representation of the object.
     */
-  var description: js.UndefOr[java.lang.String] = js.undefined
+  var description: js.UndefOr[String] = js.undefined
   /**
     * List of the entries. Specified for <code>map</code> and <code>set</code> subtype values only.
     */
@@ -28,11 +28,11 @@ trait ObjectPreview extends js.Object {
   /**
     * Object subtype hint. Specified for <code>object</code> type values only.
     */
-  var subtype: js.UndefOr[java.lang.String] = js.undefined
+  var subtype: js.UndefOr[String] = js.undefined
   /**
     * Object type.
     */
-  var `type`: java.lang.String
+  var `type`: String
 }
 
 object ObjectPreview {
@@ -40,10 +40,10 @@ object ObjectPreview {
   def apply(
     overflow: Boolean,
     properties: js.Array[PropertyPreview],
-    `type`: java.lang.String,
-    description: java.lang.String = null,
+    `type`: String,
+    description: String = null,
     entries: js.Array[EntryPreview] = null,
-    subtype: java.lang.String = null
+    subtype: String = null
   ): ObjectPreview = {
     val __obj = js.Dynamic.literal(overflow = overflow.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

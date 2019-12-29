@@ -12,6 +12,7 @@ import typings.apolloDashServerDashErrors.Anon_Extensions
 import typings.apolloDashServerDashErrors.Anon_ExtensionsAny
 import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.ValueOrPromise
 import typings.atApollographqlGraphqlDashPlaygroundDashHtml.distRenderDashPlaygroundDashPageMod.RenderPageOptions
+import typings.graphql.graphqlMod.GraphQLError
 import typings.graphql.graphqlMod.GraphQLScalarType
 import typings.graphql.languageAstMod.DocumentNode
 import typings.node.httpMod.IncomingMessage
@@ -64,12 +65,7 @@ object apolloDashServerDashCoreMod extends js.Object {
   }
   
   @js.native
-  class InvalidGraphQLRequestError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class InvalidGraphQLRequestError () extends GraphQLError
   
   @js.native
   class SyntaxError protected ()

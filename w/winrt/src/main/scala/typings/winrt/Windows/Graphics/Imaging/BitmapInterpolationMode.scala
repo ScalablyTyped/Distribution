@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Imaging.BitmapInterpolationMode.cubic
-import typings.winrt.Windows.Graphics.Imaging.BitmapInterpolationMode.fant
-import typings.winrt.Windows.Graphics.Imaging.BitmapInterpolationMode.linear
-import typings.winrt.Windows.Graphics.Imaging.BitmapInterpolationMode.nearestNeighbor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

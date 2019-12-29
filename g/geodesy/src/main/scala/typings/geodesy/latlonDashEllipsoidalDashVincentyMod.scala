@@ -3,7 +3,6 @@ package typings.geodesy
 import typings.geodesy.dmsMod.Precision
 import typings.geodesy.geodesyMod.Dp
 import typings.geodesy.geodesyMod.Format
-import typings.geodesy.latlonDashEllipsoidalDashVincentyMod.LatLonEllipsoidal_Vincenty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGRect")
 @js.native
 class SVGRect protected () extends js.Object {
-  var `MSHTML.SVGRect_typekey`: SVGRect = js.native
+  @JSName("MSHTML.SVGRect_typekey")
+  var MSHTMLDotSVGRect_typekey: SVGRect = js.native
   var height: Double = js.native
   var width: Double = js.native
   var x: Double = js.native

@@ -1,14 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ButtonType.Accept
-import typings.openui5.sap.m.ButtonType.Back
-import typings.openui5.sap.m.ButtonType.Default
-import typings.openui5.sap.m.ButtonType.Emphasized
-import typings.openui5.sap.m.ButtonType.Reject
-import typings.openui5.sap.m.ButtonType.Transparent
-import typings.openui5.sap.m.ButtonType.Unstyled
-import typings.openui5.sap.m.ButtonType.Up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

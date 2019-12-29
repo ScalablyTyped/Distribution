@@ -1,16 +1,6 @@
 package typings.twoDotJs.twoDotJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.twoDotJs.twoDotJsMod.Events.change
-import typings.twoDotJs.twoDotJsMod.Events.insert
-import typings.twoDotJs.twoDotJsMod.Events.load
-import typings.twoDotJs.twoDotJsMod.Events.order
-import typings.twoDotJs.twoDotJsMod.Events.pause
-import typings.twoDotJs.twoDotJsMod.Events.play
-import typings.twoDotJs.twoDotJsMod.Events.remove
-import typings.twoDotJs.twoDotJsMod.Events.render
-import typings.twoDotJs.twoDotJsMod.Events.resize
-import typings.twoDotJs.twoDotJsMod.Events.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

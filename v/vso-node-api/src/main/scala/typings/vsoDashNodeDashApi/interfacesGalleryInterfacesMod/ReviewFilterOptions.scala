@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.FilterEmptyReviews
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.FilterEmptyUserNames
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

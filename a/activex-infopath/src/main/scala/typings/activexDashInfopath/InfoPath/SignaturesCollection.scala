@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignaturesCollection protected () extends js.Object {
   val Count: Double = js.native
-  var `InfoPath.SignaturesCollection_typekey`: SignaturesCollection = js.native
+  @JSName("InfoPath.SignaturesCollection_typekey")
+  var InfoPathDotSignaturesCollection_typekey: SignaturesCollection = js.native
   def Create(): SignatureObject = js.native
   def Item(varIndex: js.Any): SignatureObject = js.native
 }

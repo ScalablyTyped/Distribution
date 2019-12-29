@@ -2,7 +2,6 @@ package typings.atAwsDashSdkClientDashS3DashNode
 
 import typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectOutputMod.GetObjectOutput
 import typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectTorrentOutputMod.GetObjectTorrentOutput
-import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.atBabelCore.atBabelCoreMod
 
 import typings.atBabelCore.Anon_Request
-import typings.atBabelCore.atBabelCoreNumbers.`false`
+import typings.atBabelCore.atBabelCoreBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

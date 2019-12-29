@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Schedule
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Schedule.TimeMode.Hour12
-import typings.ejDotWebDotAll.ej.Schedule.TimeMode.Hour24
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

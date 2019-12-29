@@ -1,10 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.FilterType.CATEGORICAL
-import typings.tableau.tableau.FilterType.HIERARCHICAL
-import typings.tableau.tableau.FilterType.QUANTITATIVE
-import typings.tableau.tableau.FilterType.RELATIVE_DATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

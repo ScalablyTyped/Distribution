@@ -1,11 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialThreadType.likeReference
-import typings.sharepoint.SP.Social.SocialThreadType.mentionReference
-import typings.sharepoint.SP.Social.SocialThreadType.normal
-import typings.sharepoint.SP.Social.SocialThreadType.replyReference
-import typings.sharepoint.SP.Social.SocialThreadType.tagReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

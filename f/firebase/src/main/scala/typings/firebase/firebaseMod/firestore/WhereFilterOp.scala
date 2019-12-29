@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.firebase.firebaseStrings.`<`
-  - typings.firebase.firebaseStrings.`<=`
-  - typings.firebase.firebaseStrings.`==`
-  - typings.firebase.firebaseStrings.`>=`
-  - typings.firebase.firebaseStrings.`>`
+  - typings.firebase.firebaseStrings.Lessthansign
+  - typings.firebase.firebaseStrings.LessthansignEqualssign
+  - typings.firebase.firebaseStrings.EqualssignEqualssign
+  - typings.firebase.firebaseStrings.GreaterthansignEqualssign
+  - typings.firebase.firebaseStrings.Greaterthansign
   - typings.firebase.firebaseStrings.`array-contains`
   - typings.firebase.firebaseStrings.in
   - typings.firebase.firebaseStrings.`array-contains-any`
@@ -18,15 +18,15 @@ trait WhereFilterOp extends js.Object
 
 object WhereFilterOp {
   @scala.inline
-  def `<`: typings.firebase.firebaseStrings.`<` = this.cast("<")
+  def EqualssignEqualssign: typings.firebase.firebaseStrings.EqualssignEqualssign = this.cast("==")
   @scala.inline
-  def `<=`: typings.firebase.firebaseStrings.`<=` = this.cast("<=")
+  def Greaterthansign: typings.firebase.firebaseStrings.Greaterthansign = this.cast(">")
   @scala.inline
-  def `==`: typings.firebase.firebaseStrings.`==` = this.cast("==")
+  def GreaterthansignEqualssign: typings.firebase.firebaseStrings.GreaterthansignEqualssign = this.cast(">=")
   @scala.inline
-  def `>`: typings.firebase.firebaseStrings.`>` = this.cast(">")
+  def Lessthansign: typings.firebase.firebaseStrings.Lessthansign = this.cast("<")
   @scala.inline
-  def `>=`: typings.firebase.firebaseStrings.`>=` = this.cast(">=")
+  def LessthansignEqualssign: typings.firebase.firebaseStrings.LessthansignEqualssign = this.cast("<=")
   @scala.inline
   def `array-contains`: typings.firebase.firebaseStrings.`array-contains` = this.cast("array-contains")
   @scala.inline

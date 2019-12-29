@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassCalculate
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Calculate]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Calculate] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Calculate]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Calculate] {
   var Locale: js.Any = js.native
   var fn: Calculate = js.native
 }

@@ -1,14 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.center
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.centerAcrossSelection
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.distributed
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.fill
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.general
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.justify
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.left
-import typings.officeDashJsDashPreview.Excel.HorizontalAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

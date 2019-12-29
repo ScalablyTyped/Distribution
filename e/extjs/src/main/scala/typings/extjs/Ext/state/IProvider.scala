@@ -11,33 +11,33 @@ trait IProvider extends IObservable {
   /** [Method] Clears a value from the state
   		* @param name String The key name
   		*/
-  var clear: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var clear: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Decodes a string previously encoded with encodeValue
   		* @param value String The value to decode
   		* @returns Object The decoded value
   		*/
-  var decodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var decodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Encodes a value including type information
   		* @param value Object The value to encode
   		* @returns String The encoded value
   		*/
-  var encodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var encodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Returns the current value for a key
   		* @param name String The key name
   		* @param defaultValue Object A default value to return if the key's value is not found
   		* @returns Object The state data
   		*/
   var get: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[js.Any], _]
+    js.Function2[/* name */ js.UndefOr[String], /* defaultValue */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Config Option] (String) */
-  var prefix: js.UndefOr[java.lang.String] = js.undefined
+  var prefix: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value for a key
   		* @param name String The key name
   		* @param value Object The value to set
   		*/
   var set: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
 }
 
@@ -52,19 +52,19 @@ object IProvider {
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clear: /* name */ js.UndefOr[java.lang.String] => Unit = null,
+    clear: /* name */ js.UndefOr[String] => Unit = null,
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
-    decodeValue: /* value */ js.UndefOr[java.lang.String] => _ = null,
+    decodeValue: /* value */ js.UndefOr[String] => _ = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    encodeValue: /* value */ js.UndefOr[js.Any] => java.lang.String = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    get: (/* name */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[js.Any]) => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    encodeValue: /* value */ js.UndefOr[js.Any] => String = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    get: (/* name */ js.UndefOr[String], /* defaultValue */ js.UndefOr[js.Any]) => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IProvider = null,
@@ -74,20 +74,20 @@ object IProvider {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    prefix: java.lang.String = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    prefix: String = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     self: IClass = null,
-    set: (/* name */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => Unit = null,
+    set: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IProvider = {
     val __obj = js.Dynamic.literal()

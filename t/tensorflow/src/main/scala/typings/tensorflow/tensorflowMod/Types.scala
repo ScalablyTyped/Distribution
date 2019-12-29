@@ -1,8 +1,6 @@
 package typings.tensorflow.tensorflowMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tensorflow.tensorflowMod.Types.float
-import typings.tensorflow.tensorflowMod.Types.int32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

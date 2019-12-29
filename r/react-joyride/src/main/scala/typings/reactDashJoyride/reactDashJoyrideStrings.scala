@@ -37,7 +37,7 @@ object reactDashJoyrideStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait `error:target_not_found` extends js.Object
+  sealed trait errorColontarget_not_found extends js.Object
   
   @js.native
   sealed trait finished extends js.Object
@@ -107,10 +107,10 @@ object reactDashJoyrideStrings {
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait `step:after` extends js.Object
+  sealed trait stepColonafter extends js.Object
   
   @js.native
-  sealed trait `step:before` extends js.Object
+  sealed trait stepColonbefore extends js.Object
   
   @js.native
   sealed trait stop extends js.Object
@@ -130,13 +130,13 @@ object reactDashJoyrideStrings {
   sealed trait `top-start` extends Placement
   
   @js.native
-  sealed trait `tour:end` extends js.Object
+  sealed trait tourColonend extends js.Object
   
   @js.native
-  sealed trait `tour:start` extends js.Object
+  sealed trait tourColonstart extends js.Object
   
   @js.native
-  sealed trait `tour:status` extends js.Object
+  sealed trait tourColonstatus extends js.Object
   
   @js.native
   sealed trait update extends js.Object
@@ -163,7 +163,7 @@ object reactDashJoyrideStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def `error:target_not_found`: `error:target_not_found` = "error:target_not_found".asInstanceOf[`error:target_not_found`]
+  def errorColontarget_not_found: errorColontarget_not_found = "error:target_not_found".asInstanceOf[errorColontarget_not_found]
   @scala.inline
   def finished: finished = "finished".asInstanceOf[finished]
   @scala.inline
@@ -207,9 +207,9 @@ object reactDashJoyrideStrings {
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
-  def `step:after`: `step:after` = "step:after".asInstanceOf[`step:after`]
+  def stepColonafter: stepColonafter = "step:after".asInstanceOf[stepColonafter]
   @scala.inline
-  def `step:before`: `step:before` = "step:before".asInstanceOf[`step:before`]
+  def stepColonbefore: stepColonbefore = "step:before".asInstanceOf[stepColonbefore]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
@@ -221,11 +221,11 @@ object reactDashJoyrideStrings {
   @scala.inline
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
   @scala.inline
-  def `tour:end`: `tour:end` = "tour:end".asInstanceOf[`tour:end`]
+  def tourColonend: tourColonend = "tour:end".asInstanceOf[tourColonend]
   @scala.inline
-  def `tour:start`: `tour:start` = "tour:start".asInstanceOf[`tour:start`]
+  def tourColonstart: tourColonstart = "tour:start".asInstanceOf[tourColonstart]
   @scala.inline
-  def `tour:status`: `tour:status` = "tour:status".asInstanceOf[`tour:status`]
+  def tourColonstatus: tourColonstatus = "tour:status".asInstanceOf[tourColonstatus]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline

@@ -1,6 +1,5 @@
 package typings.atJupyterlabServices
 
-import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.std.Error
 import typings.std.Partial
 import typings.std.RequestInfo

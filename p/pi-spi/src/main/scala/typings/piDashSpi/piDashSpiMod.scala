@@ -2,13 +2,6 @@ package typings.piDashSpi
 
 import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
-import typings.piDashSpi.piDashSpiMod.SPI
-import typings.piDashSpi.piDashSpiMod.mode
-import typings.piDashSpi.piDashSpiMod.mode.CPHA
-import typings.piDashSpi.piDashSpiMod.mode.CPOL
-import typings.piDashSpi.piDashSpiMod.order
-import typings.piDashSpi.piDashSpiMod.order.LSB_FIRST
-import typings.piDashSpi.piDashSpiMod.order.MSB_FIRST
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

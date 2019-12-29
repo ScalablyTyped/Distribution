@@ -3,6 +3,7 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IClass
+import typings.extjs.Ext.tree.IPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,7 +60,7 @@ trait INodeInterface extends IBase {
   /** [Config Option] (Ext.data.NodeInterface[]) */
   var children: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var cls: js.UndefOr[java.lang.String] = js.undefined
+  var cls: js.UndefOr[String] = js.undefined
   /** [Method] Collapse this node
   		* @param recursive Boolean True to recursively collapse all the children
   		* @param callback Function The function to execute once the collapse completes
@@ -97,7 +98,7 @@ trait INodeInterface extends IBase {
   		* @returns Ext.data.NodeInterface A copy of this Node.
   		*/
   var copy: js.UndefOr[
-    js.Function2[/* id */ js.UndefOr[java.lang.String], /* deep */ js.UndefOr[Boolean], this.type]
+    js.Function2[/* id */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
   /** [Method] Ensures that the passed object is an instance of a Record with the NodeInterface applied
   		* @param node Object
@@ -161,7 +162,7 @@ trait INodeInterface extends IBase {
   		*/
   var findChild: js.UndefOr[
     js.Function3[
-      /* attribute */ js.UndefOr[java.lang.String], 
+      /* attribute */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* deep */ js.UndefOr[Boolean], 
       this.type
@@ -195,31 +196,27 @@ trait INodeInterface extends IBase {
   /** [Method] Returns the tree this node is in
   		* @returns Ext.tree.Panel The tree panel which owns this node.
   		*/
-  var getOwnerTree: js.UndefOr[js.Function0[typings.extjs.Ext.tree.IPanel]] = js.undefined
+  var getOwnerTree: js.UndefOr[js.Function0[IPanel]] = js.undefined
   /** [Method] Gets the hierarchical path from the root of the current node
   		* @param field String The field to construct the path from. Defaults to the model idProperty.
   		* @param separator String A separator to use.
   		* @returns String The node path
   		*/
   var getPath: js.UndefOr[
-    js.Function2[
-      /* field */ js.UndefOr[java.lang.String], 
-      /* separator */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ]
+    js.Function2[/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], String]
   ] = js.undefined
   /** [Method] Returns true if this node has one or more child nodes else false
   		* @returns Boolean
   		*/
   var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var href: js.UndefOr[java.lang.String] = js.undefined
+  var href: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var hrefTarget: js.UndefOr[java.lang.String] = js.undefined
+  var hrefTarget: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.undefined
+  var iconCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var index: js.UndefOr[Double] = js.undefined
   /** [Method] Returns the index of a child node
@@ -231,7 +228,7 @@ trait INodeInterface extends IBase {
   		* @param id String The id of the node to find
   		* @returns Number The index of the node or -1 if it was not found
   		*/
-  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Inserts the first node before the second node in this nodes childNodes collection
   		* @param node Ext.data.NodeInterface The node to insert
   		* @param refNode Ext.data.NodeInterface The node to insert before (if null the node is appended)
@@ -298,7 +295,7 @@ trait INodeInterface extends IBase {
   /** [Property] (Ext.data.NodeInterface) */
   var nextSibling: js.UndefOr[INodeInterface] = js.undefined
   /** [Config Option] (String) */
-  var parentId: js.UndefOr[java.lang.String] = js.undefined
+  var parentId: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.data.NodeInterface) */
   var parentNode: js.UndefOr[INodeInterface] = js.undefined
   /** [Property] (Ext.data.NodeInterface) */
@@ -306,9 +303,9 @@ trait INodeInterface extends IBase {
   /** [Config Option] (Number) */
   var qshowDelay: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var qtip: js.UndefOr[java.lang.String] = js.undefined
+  var qtip: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var qtitle: js.UndefOr[java.lang.String] = js.undefined
+  var qtitle: js.UndefOr[String] = js.undefined
   /** [Method] Removes this node from its parent
   		* @param destroy Boolean True to destroy the node upon removal.
   		* @returns Ext.data.NodeInterface this
@@ -357,7 +354,7 @@ trait INodeInterface extends IBase {
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
   /** [Method] Updates general data of this node like isFirst isLast depth
   		* @param commit Boolean
   		* @param info Object The info to update. May contain any of the following
@@ -383,12 +380,12 @@ object INodeInterface {
     checked: js.UndefOr[Boolean] = js.undefined,
     childNodes: Array = null,
     children: Array = null,
-    cls: java.lang.String = null,
+    cls: String = null,
     collapse: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     collapseChildren: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     config: js.Any = null,
     contains: /* node */ js.UndefOr[INodeInterface] => Boolean = null,
-    copy: (/* id */ js.UndefOr[java.lang.String], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
+    copy: (/* id */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
     createNode: /* node */ js.UndefOr[js.Any] => INodeInterface = null,
     depth: Int | Double = null,
     destroy: /* silent */ js.UndefOr[js.Any] => Unit = null,
@@ -397,23 +394,23 @@ object INodeInterface {
     expandChildren: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     expandable: js.UndefOr[Boolean] = js.undefined,
     expanded: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
-    findChild: (/* attribute */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
+    extend: String = null,
+    findChild: (/* attribute */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
     findChildBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
     firstChild: INodeInterface = null,
     getChildAt: /* index */ js.UndefOr[Double] => INodeInterface = null,
     getDepth: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getOwnerTree: () => typings.extjs.Ext.tree.IPanel = null,
-    getPath: (/* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getOwnerTree: () => IPanel = null,
+    getPath: (/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String]) => String = null,
     hasChildNodes: () => Boolean = null,
-    href: java.lang.String = null,
-    hrefTarget: java.lang.String = null,
-    icon: java.lang.String = null,
-    iconCls: java.lang.String = null,
+    href: String = null,
+    hrefTarget: String = null,
+    icon: String = null,
+    iconCls: String = null,
     index: Int | Double = null,
     indexOf: /* node */ js.UndefOr[INodeInterface] => Double = null,
-    indexOfId: /* id */ js.UndefOr[java.lang.String] => Double = null,
+    indexOfId: /* id */ js.UndefOr[String] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => INodeInterface = null,
     insertBefore: (/* node */ js.UndefOr[INodeInterface], /* refNode */ js.UndefOr[INodeInterface]) => INodeInterface = null,
@@ -435,12 +432,12 @@ object INodeInterface {
     loading: js.UndefOr[Boolean] = js.undefined,
     mixins: js.Any = null,
     nextSibling: INodeInterface = null,
-    parentId: java.lang.String = null,
+    parentId: String = null,
     parentNode: INodeInterface = null,
     previousSibling: INodeInterface = null,
     qshowDelay: Int | Double = null,
-    qtip: java.lang.String = null,
-    qtitle: java.lang.String = null,
+    qtip: String = null,
+    qtitle: String = null,
     remove: /* destroy */ js.UndefOr[Boolean] => INodeInterface = null,
     removeAll: /* destroy */ js.UndefOr[Boolean] => INodeInterface = null,
     removeChild: (/* node */ js.UndefOr[INodeInterface], /* destroy */ js.UndefOr[Boolean]) => INodeInterface = null,
@@ -452,7 +449,7 @@ object INodeInterface {
     singleton: js.UndefOr[Boolean] = js.undefined,
     sort: (/* fn */ js.UndefOr[js.Any], /* recursive */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
     statics: js.Any = null,
-    text: java.lang.String = null,
+    text: String = null,
     updateInfo: (/* commit */ js.UndefOr[Boolean], /* info */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): INodeInterface = {

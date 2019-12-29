@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ImagebmpImagexmsbmp extends js.Object {
   @JSName("image/bmp")
-  var `image/bmp_Original`: DecoderFn = js.native
+  var imageSlashbmp_Original: DecoderFn = js.native
   @JSName("image/x-ms-bmp")
-  var `image/x-ms-bmp_Original`: DecoderFn = js.native
-  def `image/bmp`(data: Buffer): Bitmap = js.native
-  def `image/x-ms-bmp`(data: Buffer): Bitmap = js.native
+  var `imageSlashx-ms-bmp_Original`: DecoderFn = js.native
+  @JSName("image/bmp")
+  def imageSlashbmp(data: Buffer): Bitmap = js.native
+  @JSName("image/x-ms-bmp")
+  def `imageSlashx-ms-bmp`(data: Buffer): Bitmap = js.native
 }
 

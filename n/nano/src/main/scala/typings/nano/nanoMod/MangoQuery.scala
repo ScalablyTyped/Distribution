@@ -1,6 +1,6 @@
 package typings.nano.nanoMod
 
-import typings.nano.nanoNumbers.`false`
+import typings.nano.nanoBooleans.`false`
 import typings.nano.nanoStrings.ok
 import scala.scalajs.js
 import scala.scalajs.js.`|`

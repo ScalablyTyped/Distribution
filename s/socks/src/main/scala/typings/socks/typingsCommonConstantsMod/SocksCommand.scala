@@ -1,9 +1,6 @@
 package typings.socks.typingsCommonConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.socks.typingsCommonConstantsMod.SocksCommand.associate
-import typings.socks.typingsCommonConstantsMod.SocksCommand.bind
-import typings.socks.typingsCommonConstantsMod.SocksCommand.connect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

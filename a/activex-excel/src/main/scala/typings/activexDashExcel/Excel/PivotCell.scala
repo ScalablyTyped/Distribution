@@ -16,7 +16,8 @@ class PivotCell protected () extends js.Object {
   val DataField: typings.activexDashExcel.Excel.PivotField = js.native
   val DataSourceValue: js.Any = js.native
   val Dummy18: String = js.native
-  var `Excel.PivotCell_typekey`: PivotCell = js.native
+  @JSName("Excel.PivotCell_typekey")
+  var ExcelDotPivotCell_typekey: PivotCell = js.native
   val MDX: String = js.native
   val Parent: js.Any = js.native
   val PivotCellType: XlPivotCellType = js.native

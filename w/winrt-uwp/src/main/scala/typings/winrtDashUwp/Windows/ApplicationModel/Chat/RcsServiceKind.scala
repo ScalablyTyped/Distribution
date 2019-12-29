@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.capability
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.chat
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.fileTransfer
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.groupChat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

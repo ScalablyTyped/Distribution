@@ -1,6 +1,6 @@
 package typings.bootstrap.bootstrapMod
 
-import typings.bootstrap.bootstrapNumbers.`false`
+import typings.bootstrap.bootstrapBooleans.`false`
 import typings.bootstrap.bootstrapStrings.hover
 import typings.bootstrap.bootstrapStrings.next
 import typings.bootstrap.bootstrapStrings.prev

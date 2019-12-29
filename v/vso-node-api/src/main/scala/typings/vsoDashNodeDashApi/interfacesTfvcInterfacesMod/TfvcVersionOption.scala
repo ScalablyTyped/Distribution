@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionOption.None
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionOption.Previous
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionOption.UseRename
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

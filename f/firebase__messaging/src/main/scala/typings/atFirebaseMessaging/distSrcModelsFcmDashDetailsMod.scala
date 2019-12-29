@@ -1,10 +1,10 @@
 package typings.atFirebaseMessaging
 
-import typings.atFirebaseMessaging.atFirebaseMessagingStrings.`https://fcmregistrationsDOTgoogleapisDOTcom/v1`
-import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDOTcDOTaDOTc_id
-import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDOTcDOTaDOTc_l
-import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDOTcDOTaDOTe
-import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDOTcDOTaDOTts
+import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDotcDotaDotc_id
+import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDotcDotaDotc_l
+import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDotcDotaDote
+import typings.atFirebaseMessaging.atFirebaseMessagingStrings.googleDotcDotaDotts
+import typings.atFirebaseMessaging.atFirebaseMessagingStrings.httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcModelsFcmDashDetailsMod extends js.Object {
   val DEFAULT_PUBLIC_VAPID_KEY: Uint8Array = js.native
-  val ENDPOINT: `https://fcmregistrationsDOTgoogleapisDOTcom/v1` = js.native
-  val FN_CAMPAIGN_ANALYTICS_ENABLED: googleDOTcDOTaDOTe = js.native
-  val FN_CAMPAIGN_ID: googleDOTcDOTaDOTc_id = js.native
-  val FN_CAMPAIGN_NAME: googleDOTcDOTaDOTc_l = js.native
-  val FN_CAMPAIGN_TIME: googleDOTcDOTaDOTts = js.native
+  val ENDPOINT: httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1 = js.native
+  val FN_CAMPAIGN_ANALYTICS_ENABLED: googleDotcDotaDote = js.native
+  val FN_CAMPAIGN_ID: googleDotcDotaDotc_id = js.native
+  val FN_CAMPAIGN_NAME: googleDotcDotaDotc_l = js.native
+  val FN_CAMPAIGN_TIME: googleDotcDotaDotts = js.native
   @js.native
   object SUBSCRIPTION_DETAILS extends js.Object {
     var applicationServerKey: Uint8Array = js.native

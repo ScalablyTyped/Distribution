@@ -3,6 +3,7 @@ package typings.meteor.meteorMeteorMod.Meteor
 import typings.meteor.Anon_ErrorOnResultReceivedResult
 import typings.meteor.EJSONable
 import typings.meteor.EJSONableProperty
+import typings.meteor.meteorMeteorMod.global_Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,11 +21,7 @@ object apply extends js.Object {
     name: String,
     args: js.Array[EJSONable | EJSONableProperty],
     options: Anon_ErrorOnResultReceivedResult[Result],
-    asyncCallback: js.Function2[
-      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error], 
-      /* result */ js.UndefOr[Result], 
-      Unit
-    ]
+    asyncCallback: js.Function2[/* error */ js.UndefOr[global_Error | Error], /* result */ js.UndefOr[Result], Unit]
   ): js.Any = js.native
 }
 

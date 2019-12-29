@@ -1,7 +1,7 @@
 package typings.atAtlaskitTree
 
+import typings.atAtlaskitTree.atAtlaskitTreeBooleans.`false`
 import typings.atAtlaskitTree.atAtlaskitTreeNumbers.`35`
-import typings.atAtlaskitTree.atAtlaskitTreeNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

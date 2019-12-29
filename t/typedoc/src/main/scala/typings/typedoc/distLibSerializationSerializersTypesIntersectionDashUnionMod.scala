@@ -1,7 +1,6 @@
 package typings.typedoc
 
 import typings.typedoc.distLibSerializationComponentsMod.TypeSerializerComponent
-import typings.typedoc.distLibSerializationSerializersTypesIntersectionDashUnionMod.IntersectionUnion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

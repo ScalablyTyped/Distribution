@@ -1,12 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.CLOCK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_CHANGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_EDIT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_EVENT_UPDATED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_FORM_SUBMIT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

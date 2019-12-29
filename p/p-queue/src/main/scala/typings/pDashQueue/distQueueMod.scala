@@ -1,6 +1,5 @@
 package typings.pDashQueue
 
-import typings.pDashQueue.distQueueMod.RunFunction
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -16,7 +16,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.DOMDocument60")
 @js.native
 class DOMDocument60 protected () extends js.Object {
-  var `MSXML2.DOMDocument60_typekey`: DOMDocument60 = js.native
+  @JSName("MSXML2.DOMDocument60_typekey")
+  var MSXML2DotDOMDocument60_typekey: DOMDocument60 = js.native
   /** flag for asynchronous download */
   var async: Boolean = js.native
   /** the collection of the node's attributes */

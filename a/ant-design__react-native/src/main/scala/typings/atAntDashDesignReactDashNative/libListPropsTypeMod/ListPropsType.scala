@@ -1,6 +1,6 @@
 package typings.atAntDashDesignReactDashNative.libListPropsTypeMod
 
-import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeNumbers.`false`
+import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeBooleans.`false`
 import typings.react.reactMod.ReactType
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js

@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1ComponentStatusMod.ComponentStatus
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ComponentCondition
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource

@@ -1,8 +1,6 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
-import typings.mendixmodelsdk.distGenConstantsMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenConstantsMod.constants.Constant
 import typings.mendixmodelsdk.distGenDatatypesMod.datatypes.DataType
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
 import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase

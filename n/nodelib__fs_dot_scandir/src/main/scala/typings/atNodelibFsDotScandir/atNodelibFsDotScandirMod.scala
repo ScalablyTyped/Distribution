@@ -1,6 +1,5 @@
 package typings.atNodelibFsDotScandir
 
-import typings.atNodelibFsDotScandir.atNodelibFsDotScandirMod.AsyncCallback
 import typings.atNodelibFsDotScandir.outSettingsMod.Options
 import typings.atNodelibFsDotScandir.outSettingsMod.default
 import typings.atNodelibFsDotScandir.outTypesMod.Entry

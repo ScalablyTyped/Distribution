@@ -1,11 +1,11 @@
 package typings.grommet
 
-import typings.grommet.grommetStrings.`1/2`
-import typings.grommet.grommetStrings.`1/3`
-import typings.grommet.grommetStrings.`1/4`
-import typings.grommet.grommetStrings.`2/3`
-import typings.grommet.grommetStrings.`2/4`
-import typings.grommet.grommetStrings.`3/4`
+import typings.grommet.grommetStrings.`1Slash2`
+import typings.grommet.grommetStrings.`1Slash3`
+import typings.grommet.grommetStrings.`1Slash4`
+import typings.grommet.grommetStrings.`2Slash3`
+import typings.grommet.grommetStrings.`2Slash4`
+import typings.grommet.grommetStrings.`3Slash4`
 import typings.grommet.grommetStrings.auto
 import typings.grommet.grommetStrings.fill
 import typings.grommet.grommetStrings.fit
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 trait Anon_12 extends js.Object {
   var count: js.UndefOr[fit | fill | Double] = js.undefined
   var size: js.UndefOr[
-    xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
+    xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
   ] = js.undefined
 }
 
@@ -31,7 +31,7 @@ object Anon_12 {
   @scala.inline
   def apply(
     count: fit | fill | Double = null,
-    size: xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String] = null
+    size: xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String] = null
   ): Anon_12 = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])

@@ -1,16 +1,6 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.cdma
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.dataPlanDeleted
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.dataPlanReset
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.dataPlanThresholdReached
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.gsm
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.profileConnected
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.profileDisconnected
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.registeredHome
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.registeredRoaming
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType.ussd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

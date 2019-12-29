@@ -8,7 +8,6 @@ import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.Aggrega
 import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.ProjectActivityMetrics
 import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.ProjectLanguageAnalytics
 import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.RepositoryActivityMetrics
-import typings.vsoDashNodeDashApi.projectAnalysisApiMod.IProjectAnalysisApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

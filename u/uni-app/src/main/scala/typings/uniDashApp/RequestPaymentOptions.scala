@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 
 trait RequestPaymentOptions extends js.Object {
   /**
+    * 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=xx，微信小程序独有
+    */
+  @JSName("package")
+  var _package: js.UndefOr[String] = js.undefined
+  /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -25,10 +30,6 @@ trait RequestPaymentOptions extends js.Object {
     * 订单数据
     */
   var orderInfo: js.UndefOr[String] = js.undefined
-  /**
-    * 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=xx，微信小程序独有
-    */
-  var `package`: js.UndefOr[String] = js.undefined
   /**
     * 签名，具体签名方案参见小程序支付接口文档，微信小程序独有
     */
@@ -58,11 +59,11 @@ trait RequestPaymentOptions extends js.Object {
 object RequestPaymentOptions {
   @scala.inline
   def apply(
+    _package: String = null,
     complete: () => Unit = null,
     fail: () => Unit = null,
     nonceStr: String = null,
     orderInfo: String = null,
-    `package`: String = null,
     paySign: String = null,
     provider: alipay | wxpay | baidu | appleiap = null,
     signType: String = null,
@@ -70,11 +71,11 @@ object RequestPaymentOptions {
     timeStamp: String = null
   ): RequestPaymentOptions = {
     val __obj = js.Dynamic.literal()
+    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (nonceStr != null) __obj.updateDynamic("nonceStr")(nonceStr.asInstanceOf[js.Any])
     if (orderInfo != null) __obj.updateDynamic("orderInfo")(orderInfo.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (paySign != null) __obj.updateDynamic("paySign")(paySign.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (signType != null) __obj.updateDynamic("signType")(signType.asInstanceOf[js.Any])

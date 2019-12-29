@@ -10,7 +10,8 @@ class DownBars protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.DownBars_typekey`: DownBars = js.native
+  @JSName("Excel.DownBars_typekey")
+  var ExcelDotDownBars_typekey: DownBars = js.native
   val Fill: ChartFillFormat = js.native
   val Format: ChartFormat = js.native
   val Interior: typings.activexDashExcel.Excel.Interior = js.native

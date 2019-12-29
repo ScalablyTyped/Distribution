@@ -7,9 +7,6 @@ import typings.yandexDashMaps.yandexDashMapsMod.IGeoObject
 import typings.yandexDashMaps.yandexDashMapsMod.Map
 import typings.yandexDashMaps.yandexDashMapsMod.data.Manager
 import typings.yandexDashMaps.yandexDashMapsMod.geometry.base.LineString
-import typings.yandexDashMaps.yandexDashMapsMod.multiRouter.driving.PathModel
-import typings.yandexDashMaps.yandexDashMapsMod.multiRouter.driving.RouteModel
-import typings.yandexDashMaps.yandexDashMapsMod.multiRouter.driving.SegmentModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

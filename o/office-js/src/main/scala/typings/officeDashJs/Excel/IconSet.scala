@@ -1,27 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.IconSet.fiveArrows
-import typings.officeDashJs.Excel.IconSet.fiveArrowsGray
-import typings.officeDashJs.Excel.IconSet.fiveBoxes
-import typings.officeDashJs.Excel.IconSet.fiveQuarters
-import typings.officeDashJs.Excel.IconSet.fiveRating
-import typings.officeDashJs.Excel.IconSet.fourArrows
-import typings.officeDashJs.Excel.IconSet.fourArrowsGray
-import typings.officeDashJs.Excel.IconSet.fourRating
-import typings.officeDashJs.Excel.IconSet.fourRedToBlack
-import typings.officeDashJs.Excel.IconSet.fourTrafficLights
-import typings.officeDashJs.Excel.IconSet.invalid
-import typings.officeDashJs.Excel.IconSet.threeArrows
-import typings.officeDashJs.Excel.IconSet.threeArrowsGray
-import typings.officeDashJs.Excel.IconSet.threeFlags
-import typings.officeDashJs.Excel.IconSet.threeSigns
-import typings.officeDashJs.Excel.IconSet.threeStars
-import typings.officeDashJs.Excel.IconSet.threeSymbols
-import typings.officeDashJs.Excel.IconSet.threeSymbols2
-import typings.officeDashJs.Excel.IconSet.threeTrafficLights1
-import typings.officeDashJs.Excel.IconSet.threeTrafficLights2
-import typings.officeDashJs.Excel.IconSet.threeTriangles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

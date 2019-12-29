@@ -1,11 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapType.TWON_ARRAY
-import typings.dwt.EnumDWT_CapType.TWON_ENUMERATION
-import typings.dwt.EnumDWT_CapType.TWON_NONE
-import typings.dwt.EnumDWT_CapType.TWON_ONEVALUE
-import typings.dwt.EnumDWT_CapType.TWON_RANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.admissionregistrationV1beta1ValidatingWebhookConfigurationMod.ValidatingWebhookConfiguration
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.admissionregistrationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.ValidatingWebhook
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -41,7 +40,7 @@ object admissionregistrationV1beta1ValidatingWebhookConfigurationMod extends js.
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`admissionregistrationDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[admissionregistrationDotk8sDotioSlashv1beta1] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In

@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendAlignment.Center
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendAlignment.Far
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendAlignment.Near
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

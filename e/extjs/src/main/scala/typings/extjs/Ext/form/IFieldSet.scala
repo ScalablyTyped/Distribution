@@ -1,6 +1,7 @@
 package typings.extjs.Ext.form
 
 import typings.extjs.Ext.IComponent
+import typings.extjs.Ext.container.IContainer
 import typings.extjs.Ext.panel.ITool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,12 +10,11 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IFieldSet
-  extends typings.extjs.Ext.container.IContainer {
+- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IFieldSet extends IContainer {
   /** [Property] (Ext.form.field.Checkbox) */
   var checkboxCmp: js.UndefOr[typings.extjs.Ext.form.field.ICheckbox] = js.undefined
   /** [Config Option] (String) */
-  var checkboxName: js.UndefOr[java.lang.String] = js.undefined
+  var checkboxName: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var checkboxToggle: js.UndefOr[Boolean] = js.undefined
   /** [Method] Collapses the fieldset
@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation._
   		* @param field Ext.form.Labelable The sub-field whose active error changed
   		* @param error String The new active error message
   		*/
-  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Fired when the validity of any field within the container changes
   		* @param field Ext.form.field.Field The sub-field whose validity changed
   		* @param valid Boolean The new validity state
@@ -63,9 +63,9 @@ import scala.scalajs.js.annotation._
   		* @param title String The new title.
   		* @returns Ext.form.FieldSet this
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], this.type]] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   /** [Method] Toggle the fieldset s collapsed state to the opposite of what it is currently  */
   var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Ext.panel.Tool) */
@@ -77,9 +77,9 @@ import scala.scalajs.js.annotation._
 object IFieldSet {
   @scala.inline
   def apply(
-    IContainer: typings.extjs.Ext.container.IContainer = null,
+    IContainer: IContainer = null,
     checkboxCmp: typings.extjs.Ext.form.field.ICheckbox = null,
-    checkboxName: java.lang.String = null,
+    checkboxName: String = null,
     checkboxToggle: js.UndefOr[Boolean] = js.undefined,
     collapse: () => IFieldSet = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
@@ -91,10 +91,10 @@ object IFieldSet {
     fieldDefaults: js.Any = null,
     initFieldAncestor: () => Unit = null,
     legend: IComponent = null,
-    onFieldErrorChange: (js.UndefOr[ILabelable], js.UndefOr[java.lang.String]) => Unit = null,
+    onFieldErrorChange: (js.UndefOr[ILabelable], js.UndefOr[String]) => Unit = null,
     onFieldValidityChange: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => IFieldSet = null,
-    title: java.lang.String = null,
+    setTitle: /* title */ js.UndefOr[String] => IFieldSet = null,
+    title: String = null,
     toggle: () => Unit = null,
     toggleCmp: ITool = null,
     toggleOnTitleClick: js.UndefOr[Boolean] = js.undefined

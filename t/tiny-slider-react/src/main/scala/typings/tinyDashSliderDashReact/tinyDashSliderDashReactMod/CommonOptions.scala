@@ -1,6 +1,6 @@
 package typings.tinyDashSliderDashReact.tinyDashSliderDashReactMod
 
-import typings.tinyDashSliderDashReact.tinyDashSliderDashReactNumbers.`false`
+import typings.tinyDashSliderDashReact.tinyDashSliderDashReactBooleans.`false`
 import typings.tinyDashSliderDashReact.tinyDashSliderDashReactStrings.page
 import scala.scalajs.js
 import scala.scalajs.js.`|`

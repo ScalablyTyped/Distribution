@@ -1,7 +1,6 @@
 package typings.atMaterialTabDashIndicator
 
 import typings.atMaterialTabDashIndicator.foundationMod.MDCTabIndicatorFoundation
-import typings.atMaterialTabDashIndicator.slidingDashFoundationMod.MDCSlidingTabIndicatorFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -32,7 +32,7 @@ trait SceneLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[SceneLayerFeatureReduction] = js.undefined
+  var featureReduction: js.UndefOr[FeatureReductionSelectionProperties] = js.undefined
   /**
     * The geometry type of features in the layer.
     *
@@ -41,13 +41,13 @@ trait SceneLayerProperties
   var geometryType: js.UndefOr[point | mesh] = js.undefined
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.
-    * > **Known Limitations**  This property is only relevant to SceneLayers with [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries. This property has no effect on SceneLayers with other geometry types.  Each point can have only one label. Multiple [Label classes](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) with different [where](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where) clauses can be used to have different label styles on different features that belong to the same layer (for example blue labels for lakes and green labels for parks).
+    * > **Known Limitations**  Each feature can have only one label. Multiple [Label classes](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) with different [where](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where) clauses can be used to have different label styles on different features that belong to the same layer (for example blue labels for lakes and green labels for parks).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelingInfo)
     */
   var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.undefined
   /**
-    * Indicates whether to display labels for this layer. If `true`, labels will appear as defined in the [labelingInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelingInfo) property.  This property is only relevant to SceneLayers with [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries. This property has no effect on SceneLayers with other geometry types.
+    * Indicates whether to display labels for this layer. If `true`, labels will appear as defined in the [labelingInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelingInfo) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelsVisible)
     *
@@ -113,7 +113,7 @@ object SceneLayerProperties {
     copyright: String = null,
     definitionExpression: String = null,
     elevationInfo: SceneLayerElevationInfo = null,
-    featureReduction: SceneLayerFeatureReduction = null,
+    featureReduction: FeatureReductionSelectionProperties = null,
     fullExtent: ExtentProperties = null,
     geometryType: point | mesh = null,
     id: String = null,

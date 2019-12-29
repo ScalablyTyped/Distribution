@@ -69,7 +69,7 @@ trait Column extends js.Object {
   /** Gets or sets a value to render either excel or menu filtering in TreeGrid column filtering.
     * @Default {null}
     */
-  var filterType: js.UndefOr[typings.ejDotWebDotAll.ej.TreeGrid.FilterType | String] = js.undefined
+  var filterType: js.UndefOr[FilterType | String] = js.undefined
   /** Specifies the display format of a column
     * @Default {null}
     */
@@ -154,7 +154,7 @@ object Column {
     editType: EditingType | String = null,
     field: String = null,
     filterEditType: EditingType | String = null,
-    filterType: typings.ejDotWebDotAll.ej.TreeGrid.FilterType | String = null,
+    filterType: FilterType | String = null,
     format: js.Any = null,
     headerTemplateID: String = null,
     headerText: String = null,

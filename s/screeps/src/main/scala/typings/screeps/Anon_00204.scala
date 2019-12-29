@@ -1,12 +1,12 @@
 package typings.screeps
 
-import typings.screeps.screepsNumbers.`0DOT2`
-import typings.screeps.screepsNumbers.`0DOT4`
-import typings.screeps.screepsNumbers.`0DOT6`
-import typings.screeps.screepsNumbers.`0DOT8`
+import typings.screeps.screepsNumbers.`0.2`
+import typings.screeps.screepsNumbers.`0.4`
+import typings.screeps.screepsNumbers.`0.6`
+import typings.screeps.screepsNumbers.`0.8`
 import typings.screeps.screepsNumbers.`0`
+import typings.screeps.screepsNumbers.`1.0`
 import typings.screeps.screepsNumbers.`14`
-import typings.screeps.screepsNumbers.`1DOT0`
 import typings.screeps.screepsNumbers.`22`
 import typings.screeps.screepsNumbers.`2`
 import typings.screeps.screepsNumbers.`3`
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 trait Anon_00204 extends js.Object {
   var className: operator
   var cooldown: `50`
-  var effect: js.Tuple5[`0DOT2`, `0DOT4`, `0DOT6`, `0DOT8`, `1DOT0`]
+  var effect: js.Tuple5[`0.2`, `0.4`, `0.6`, `0.8`, `1.0`]
   var level: js.Tuple5[`0`, `2`, `7`, `14`, `22`]
   var ops: `2`
   var range: `3`
@@ -31,7 +31,7 @@ object Anon_00204 {
   def apply(
     className: operator,
     cooldown: `50`,
-    effect: js.Tuple5[`0DOT2`, `0DOT4`, `0DOT6`, `0DOT8`, `1DOT0`],
+    effect: js.Tuple5[`0.2`, `0.4`, `0.6`, `0.8`, `1.0`],
     level: js.Tuple5[`0`, `2`, `7`, `14`, `22`],
     ops: `2`,
     range: `3`

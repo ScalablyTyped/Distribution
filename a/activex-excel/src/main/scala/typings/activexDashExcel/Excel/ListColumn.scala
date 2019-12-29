@@ -11,7 +11,8 @@ class ListColumn protected () extends js.Object {
   val Creator: XlCreator = js.native
   @JSName("DataBodyRange")
   val DataBodyRange_Original: Range = js.native
-  var `Excel.ListColumn_typekey`: ListColumn = js.native
+  @JSName("Excel.ListColumn_typekey")
+  var ExcelDotListColumn_typekey: ListColumn = js.native
   val Index: Double = js.native
   val ListDataFormat: typings.activexDashExcel.Excel.ListDataFormat = js.native
   var Name: String = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashCalendarsStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait custom extends js.Object
@@ -39,7 +39,7 @@ object reactDashNativeDashCalendarsStrings {
   sealed trait today extends js.Object
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline

@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_BOTH
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_COLUMNS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_ROWS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.SHOW_BOTH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

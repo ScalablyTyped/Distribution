@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.all
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.preview
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.recipients
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.sender
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

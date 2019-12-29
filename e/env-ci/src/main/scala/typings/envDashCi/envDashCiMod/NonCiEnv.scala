@@ -1,6 +1,6 @@
 package typings.envDashCi.envDashCiMod
 
-import typings.envDashCi.envDashCiNumbers.`false`
+import typings.envDashCi.envDashCiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

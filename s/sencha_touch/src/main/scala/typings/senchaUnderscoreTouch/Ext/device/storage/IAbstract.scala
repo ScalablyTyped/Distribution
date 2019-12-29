@@ -11,11 +11,11 @@ trait IAbstract extends IBase {
   /** [Method] Returns the value of databaseDisplayName
   		* @returns String
   		*/
-  var getDatabaseDisplayName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDatabaseDisplayName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of databaseName
   		* @returns String
   		*/
-  var getDatabaseName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDatabaseName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of databaseSize
   		* @returns Object
   		*/
@@ -23,15 +23,15 @@ trait IAbstract extends IBase {
   /** [Method] Returns the value of databaseVersion
   		* @returns String
   		*/
-  var getDatabaseVersion: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDatabaseVersion: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of databaseDisplayName
   		* @param databaseDisplayName String The new value.
   		*/
-  var setDatabaseDisplayName: js.UndefOr[js.Function1[/* databaseDisplayName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDatabaseDisplayName: js.UndefOr[js.Function1[/* databaseDisplayName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of databaseName
   		* @param databaseName String The new value.
   		*/
-  var setDatabaseName: js.UndefOr[js.Function1[/* databaseName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDatabaseName: js.UndefOr[js.Function1[/* databaseName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of databaseSize
   		* @param databaseSize Object The new value.
   		*/
@@ -39,7 +39,7 @@ trait IAbstract extends IBase {
   /** [Method] Sets the value of databaseVersion
   		* @param databaseVersion String The new value.
   		*/
-  var setDatabaseVersion: js.UndefOr[js.Function1[/* databaseVersion */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDatabaseVersion: js.UndefOr[js.Function1[/* databaseVersion */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IAbstract {
@@ -52,21 +52,21 @@ object IAbstract {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getDatabaseDisplayName: () => java.lang.String = null,
-    getDatabaseName: () => java.lang.String = null,
+    extend: String = null,
+    getDatabaseDisplayName: () => String = null,
+    getDatabaseName: () => String = null,
     getDatabaseSize: () => _ = null,
-    getDatabaseVersion: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getDatabaseVersion: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
-    setDatabaseDisplayName: /* databaseDisplayName */ js.UndefOr[java.lang.String] => Unit = null,
-    setDatabaseName: /* databaseName */ js.UndefOr[java.lang.String] => Unit = null,
+    setDatabaseDisplayName: /* databaseDisplayName */ js.UndefOr[String] => Unit = null,
+    setDatabaseName: /* databaseName */ js.UndefOr[String] => Unit = null,
     setDatabaseSize: /* databaseSize */ js.UndefOr[js.Any] => Unit = null,
-    setDatabaseVersion: /* databaseVersion */ js.UndefOr[java.lang.String] => Unit = null,
+    setDatabaseVersion: /* databaseVersion */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     uses: Array = null

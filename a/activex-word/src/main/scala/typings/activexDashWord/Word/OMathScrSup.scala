@@ -12,6 +12,7 @@ class OMathScrSup protected () extends js.Object {
   val E: OMath = js.native
   val Parent: js.Any = js.native
   val Sup: OMath = js.native
-  var `Word.OMathScrSup_typekey`: OMathScrSup = js.native
+  @JSName("Word.OMathScrSup_typekey")
+  var WordDotOMathScrSup_typekey: OMathScrSup = js.native
 }
 

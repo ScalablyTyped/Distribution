@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.expressions
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenExpressionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.AppServiceCallParameterMapping
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.BasicCodeActionParameterValue
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.BasicJavaActionParameterValue
@@ -61,7 +62,7 @@ class FunctionCallExpression protected ()
 @js.native
 object FunctionCallExpression extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenExpressionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

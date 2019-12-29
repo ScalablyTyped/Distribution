@@ -13,7 +13,8 @@ class Design protected () extends js.Object {
   val Index: Double = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Design_typekey`: Design = js.native
+  @JSName("PowerPoint.Design_typekey")
+  var PowerPointDotDesign_typekey: Design = js.native
   var Preserved: MsoTriState = js.native
   val SlideMaster: Master = js.native
   val TitleMaster: Master = js.native

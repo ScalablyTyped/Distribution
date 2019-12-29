@@ -2,7 +2,6 @@ package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsCoreSchedulerMod.Scheduler
 import typings.wonderDashFrp.distCommonjsStreamBaseStreamMod.BaseStream
-import typings.wonderDashFrp.distCommonjsStreamIntervalStreamMod.IntervalStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

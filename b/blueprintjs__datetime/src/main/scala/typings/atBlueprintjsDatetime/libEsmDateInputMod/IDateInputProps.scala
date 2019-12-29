@@ -4,7 +4,7 @@ import typings.atBlueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmComponentsFormsInputGroupMod.IInputGroupProps
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
-import typings.atBlueprintjsDatetime.atBlueprintjsDatetimeNumbers.`false`
+import typings.atBlueprintjsDatetime.atBlueprintjsDatetimeBooleans.`false`
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerBaseProps
 import typings.atBlueprintjsDatetime.libEsmShortcutsMod.IDatePickerShortcut
 import typings.react.reactMod._Global_.JSX.Element

@@ -2,6 +2,7 @@ package typings.sparqljs.sparqljsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.Anon_Default
+import typings.sparqljs.sparqljsStrings.Asterisk
 import typings.sparqljs.sparqljsStrings.SELECT
 import typings.sparqljs.sparqljsStrings.bgp
 import typings.sparqljs.sparqljsStrings.bind
@@ -32,8 +33,14 @@ trait Pattern extends js.Object
 
 object Pattern {
   @scala.inline
-  def ServicePattern(name: Term, patterns: js.Array[Pattern], silent: Boolean, `type`: service): Pattern = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
+  def FilterPattern(expression: Expression, `type`: filter): Pattern = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pattern]
+  }
+  @scala.inline
+  def ValuesPattern(`type`: values, values: js.Array[ValuePatternRow]): Pattern = {
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }
@@ -44,8 +51,8 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   @scala.inline
-  def FilterPattern(expression: Expression, `type`: filter): Pattern = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+  def GraphPattern(name: Term, patterns: js.Array[Pattern], `type`: graph): Pattern = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }
@@ -56,17 +63,11 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   @scala.inline
-  def GraphPattern(name: Term, patterns: js.Array[Pattern], `type`: graph): Pattern = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Pattern]
-  }
-  @scala.inline
   def SelectQuery(
     prefixes: StringDictionary[String],
     queryType: SELECT,
     `type`: query,
-    variables: js.Array[typings.sparqljs.sparqljsStrings.`*` | Variable],
+    variables: js.Array[Asterisk | Variable],
     base: String = null,
     distinct: js.UndefOr[Boolean] = js.undefined,
     from: Anon_Default = null,
@@ -95,14 +96,14 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   @scala.inline
-  def BgpPattern(triples: js.Array[Triple], `type`: bgp): Pattern = {
-    val __obj = js.Dynamic.literal(triples = triples.asInstanceOf[js.Any])
+  def ServicePattern(name: Term, patterns: js.Array[Pattern], silent: Boolean, `type`: service): Pattern = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }
   @scala.inline
-  def ValuesPattern(`type`: values, values: js.Array[ValuePatternRow]): Pattern = {
-    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+  def BgpPattern(triples: js.Array[Triple], `type`: bgp): Pattern = {
+    val __obj = js.Dynamic.literal(triples = triples.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }

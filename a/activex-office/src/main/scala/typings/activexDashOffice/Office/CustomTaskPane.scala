@@ -12,7 +12,8 @@ class CustomTaskPane protected () extends js.Object {
   var DockPosition: MsoCTPDockPosition = js.native
   var DockPositionRestrict: MsoCTPDockPositionRestrict = js.native
   var Height: Double = js.native
-  var `Office.CustomTaskPane_typekey`: CustomTaskPane = js.native
+  @JSName("Office.CustomTaskPane_typekey")
+  var OfficeDotCustomTaskPane_typekey: CustomTaskPane = js.native
   val Title: String = js.native
   var Visible: Boolean = js.native
   var Width: Double = js.native

@@ -1,7 +1,6 @@
 package typings.chaiDashEnzyme
 
 import typings.chai.Chai.ChaiPlugin
-import typings.chaiDashEnzyme.chaiDashEnzymeMod.DebugWrapper
 import typings.cheerio.Cheerio
 import typings.enzyme.enzymeMod.ReactWrapper
 import typings.enzyme.enzymeMod.ShallowWrapper

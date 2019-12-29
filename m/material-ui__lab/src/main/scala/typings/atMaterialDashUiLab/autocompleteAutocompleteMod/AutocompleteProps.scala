@@ -2,12 +2,15 @@ package typings.atMaterialDashUiLab.autocompleteAutocompleteMod
 
 import typings.atMaterialDashUiCore.popperPopperMod.PopperProps
 import typings.atMaterialDashUiLab.PartialClassNameMapAutocompleteClassKey
+import typings.atMaterialDashUiLab.atMaterialDashUiLabBooleans.`false`
+import typings.atMaterialDashUiLab.atMaterialDashUiLabBooleans.`true`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`additions text`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`inline`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.additions
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.all
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.ascending
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.assertive
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.auto
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.both
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.copy
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.date
@@ -28,6 +31,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.location
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.medium
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.menu
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mixed
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mouse
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.move
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.no
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.none
@@ -47,6 +51,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.step
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tel
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.text
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.time
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.touch
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tree
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.url
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.vertical
@@ -101,9 +106,17 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/lab.@material-ui/lab/Autocomplete/Autocomplete.AutocompleteClassKey, 'defaultValue' | 'onChange' | 'children'> */
 trait AutocompleteProps extends js.Object {
   /**
+    * Props applied to the [`Chip`](/api/chip/) element.
+    */
+  var ChipProps: js.UndefOr[js.Object] = js.undefined
+  /**
     * The component used to render the listbox.
     */
   var ListboxComponent: js.UndefOr[ComponentType[HTMLAttributes[HTMLElement]]] = js.undefined
+  /**
+    * Props applied to the Listbox element.
+    */
+  var ListboxProps: js.UndefOr[js.Object] = js.undefined
   /**
     * The component used to render the body of the popup.
     */
@@ -181,6 +194,15 @@ trait AutocompleteProps extends js.Object {
     * a different option or changes the character string in the input.
     */
   var autoSelect: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Control if the input should be blurred when an option is selected:
+    *
+    * - `false` the input is not blurred.
+    * - `true` the input is always blurred.
+    * - `touch` the input is blurred after a touch event.
+    * - `mouse` the input is blurred after a mouse event.
+    */
+  var blurOnSelect: js.UndefOr[touch | mouse | `true` | `false`] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapAutocompleteClassKey] = js.undefined
   /**
@@ -260,6 +282,10 @@ trait AutocompleteProps extends js.Object {
     * If `true`, hide the selected options from the list box.
     */
   var filterSelectedOptions: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Force the visibility display of the popup icon.
+    */
+  var forcePopupIcon: js.UndefOr[`true` | `false` | auto] = js.undefined
   /**
     * If `true`, the Autocomplete is free solo, meaning that the user input is not bound to provided options.
     */
@@ -381,7 +407,7 @@ trait AutocompleteProps extends js.Object {
     *
     * @param {object} event The event source of the callback.
     * @param {string} value The new value of the text input
-    * @param {string} reason One of "input" (user input) or "reset" (programmatic change)
+    * @param {string} reason Can be: "input" (user input), "reset" (programmatic change), `"clear"`.
     */
   var onInputChange: js.UndefOr[
     js.Function3[
@@ -528,7 +554,9 @@ object AutocompleteProps {
   @scala.inline
   def apply(
     renderInput: RenderInputParams => ReactNode,
+    ChipProps: js.Object = null,
     ListboxComponent: ComponentType[HTMLAttributes[HTMLElement]] = null,
+    ListboxProps: js.Object = null,
     PaperComponent: ComponentType[HTMLAttributes[HTMLElement]] = null,
     PopperComponent: ComponentType[PopperProps] = null,
     about: String = null,
@@ -587,6 +615,7 @@ object AutocompleteProps {
     autoHighlight: js.UndefOr[Boolean] = js.undefined,
     autoSave: String = null,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
+    blurOnSelect: touch | mouse | `true` | `false` = null,
     className: String = null,
     classes: PartialClassNameMapAutocompleteClassKey = null,
     clearOnEscape: js.UndefOr[Boolean] = js.undefined,
@@ -611,6 +640,7 @@ object AutocompleteProps {
     draggable: js.UndefOr[Boolean] = js.undefined,
     filterOptions: (/* options */ js.Array[_], /* state */ FilterOptionsState) => js.Array[_] = null,
     filterSelectedOptions: js.UndefOr[Boolean] = js.undefined,
+    forcePopupIcon: `true` | `false` | auto = null,
     freeSolo: js.UndefOr[Boolean] = js.undefined,
     getOptionDisabled: /* option */ js.Any => Boolean = null,
     getOptionLabel: /* option */ js.Any => String = null,
@@ -746,7 +776,9 @@ object AutocompleteProps {
     vocab: String = null
   ): AutocompleteProps = {
     val __obj = js.Dynamic.literal(renderInput = js.Any.fromFunction1(renderInput))
+    if (ChipProps != null) __obj.updateDynamic("ChipProps")(ChipProps.asInstanceOf[js.Any])
     if (ListboxComponent != null) __obj.updateDynamic("ListboxComponent")(ListboxComponent.asInstanceOf[js.Any])
+    if (ListboxProps != null) __obj.updateDynamic("ListboxProps")(ListboxProps.asInstanceOf[js.Any])
     if (PaperComponent != null) __obj.updateDynamic("PaperComponent")(PaperComponent.asInstanceOf[js.Any])
     if (PopperComponent != null) __obj.updateDynamic("PopperComponent")(PopperComponent.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -805,6 +837,7 @@ object AutocompleteProps {
     if (!js.isUndefined(autoHighlight)) __obj.updateDynamic("autoHighlight")(autoHighlight.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
+    if (blurOnSelect != null) __obj.updateDynamic("blurOnSelect")(blurOnSelect.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (!js.isUndefined(clearOnEscape)) __obj.updateDynamic("clearOnEscape")(clearOnEscape.asInstanceOf[js.Any])
@@ -829,6 +862,7 @@ object AutocompleteProps {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(js.Any.fromFunction2(filterOptions))
     if (!js.isUndefined(filterSelectedOptions)) __obj.updateDynamic("filterSelectedOptions")(filterSelectedOptions.asInstanceOf[js.Any])
+    if (forcePopupIcon != null) __obj.updateDynamic("forcePopupIcon")(forcePopupIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(freeSolo)) __obj.updateDynamic("freeSolo")(freeSolo.asInstanceOf[js.Any])
     if (getOptionDisabled != null) __obj.updateDynamic("getOptionDisabled")(js.Any.fromFunction1(getOptionDisabled))
     if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(js.Any.fromFunction1(getOptionLabel))

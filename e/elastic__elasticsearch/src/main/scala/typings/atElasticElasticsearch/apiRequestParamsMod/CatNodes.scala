@@ -1,12 +1,12 @@
 package typings.atElasticElasticsearch.apiRequestParamsMod
 
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`d (Days)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`h (Hours)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`m (Minutes)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`micros (Microseconds)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`ms (Milliseconds)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`nanos (Nanoseconds)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`s (Seconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`d LeftparenthesisDaysRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`h LeftparenthesisHoursRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`m LeftparenthesisMinutesRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`micros LeftparenthesisMicrosecondsRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`ms LeftparenthesisMillisecondsRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`nanos LeftparenthesisNanosecondsRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`s LeftparenthesisSecondsRightparenthesis`
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.b
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.g
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.gb
@@ -32,7 +32,7 @@ trait CatNodes extends Generic {
   var master_timeout: js.UndefOr[String] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
   var time: js.UndefOr[
-    (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`)
+    (`d LeftparenthesisDaysRightparenthesis`) | (`h LeftparenthesisHoursRightparenthesis`) | (`m LeftparenthesisMinutesRightparenthesis`) | (`s LeftparenthesisSecondsRightparenthesis`) | (`ms LeftparenthesisMillisecondsRightparenthesis`) | (`micros LeftparenthesisMicrosecondsRightparenthesis`) | (`nanos LeftparenthesisNanosecondsRightparenthesis`)
   ] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
 }
@@ -55,7 +55,7 @@ object CatNodes {
     pretty: js.UndefOr[Boolean] = js.undefined,
     s: String | js.Array[String] = null,
     source: String = null,
-    time: (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`) = null,
+    time: (`d LeftparenthesisDaysRightparenthesis`) | (`h LeftparenthesisHoursRightparenthesis`) | (`m LeftparenthesisMinutesRightparenthesis`) | (`s LeftparenthesisSecondsRightparenthesis`) | (`ms LeftparenthesisMillisecondsRightparenthesis`) | (`micros LeftparenthesisMicrosecondsRightparenthesis`) | (`nanos LeftparenthesisNanosecondsRightparenthesis`) = null,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatNodes = {
     val __obj = js.Dynamic.literal()

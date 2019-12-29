@@ -5,7 +5,6 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.renderCanvasMod.DeclutterGroup
 import typings.ol.renderCanvasMod.FillStrokeState
-import typings.ol.renderCanvasReplayMod.CanvasReplay
 import typings.ol.transformMod.Transform
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement

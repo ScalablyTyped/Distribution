@@ -3,16 +3,11 @@ package typings.atTensorflowTfjsDashNode
 import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.Empty
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings._empty
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.cm
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.grayscale
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.in
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.rgb
-import typings.atTensorflowTfjsDashNode.distImageMod.ImageType
-import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.BMP
-import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.GIF
-import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.JPEG
-import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.PNG
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -58,7 +53,7 @@ object distImageMod extends js.Object {
   @JSName("encodeJpeg")
   def encodeJpeg_cm(
     image: Tensor3D,
-    format: js.UndefOr[Empty],
+    format: js.UndefOr[_empty],
     quality: js.UndefOr[Double],
     progressive: js.UndefOr[Boolean],
     optimizeSize: js.UndefOr[Boolean],
@@ -71,7 +66,7 @@ object distImageMod extends js.Object {
   @JSName("encodeJpeg")
   def encodeJpeg_in(
     image: Tensor3D,
-    format: js.UndefOr[Empty],
+    format: js.UndefOr[_empty],
     quality: js.UndefOr[Double],
     progressive: js.UndefOr[Boolean],
     optimizeSize: js.UndefOr[Boolean],

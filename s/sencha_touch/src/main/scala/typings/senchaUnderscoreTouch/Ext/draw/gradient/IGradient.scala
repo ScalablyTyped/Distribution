@@ -23,7 +23,7 @@ trait IGradient extends IIdentifiable {
   		* @returns String id
   		*/
   @JSName("getId")
-  var getId_IGradient: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getId_IGradient: js.UndefOr[js.Function0[String]] = js.undefined
 }
 
 object IGradient {
@@ -37,10 +37,10 @@ object IGradient {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     generateGradient: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any]) => _ = null,
-    getId: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getId: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,

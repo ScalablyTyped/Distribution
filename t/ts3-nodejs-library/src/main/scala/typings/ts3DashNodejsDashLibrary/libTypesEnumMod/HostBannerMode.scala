@@ -1,9 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostBannerMode.IGNOREASPECT
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostBannerMode.KEEPASPECT
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostBannerMode.NOADJUST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

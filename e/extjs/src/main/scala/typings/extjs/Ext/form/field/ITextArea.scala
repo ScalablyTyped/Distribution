@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITextArea
-  extends typings.extjs.Ext.form.field.IText {
+trait ITextArea extends IText {
   /** [Config Option] (Number) */
   var cols: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Boolean) */
@@ -30,7 +29,7 @@ trait ITextArea
 object ITextArea {
   @scala.inline
   def apply(
-    IText: typings.extjs.Ext.form.field.IText = null,
+    IText: IText = null,
     cols: Int | Double = null,
     enterIsSpecial: js.UndefOr[Boolean] = js.undefined,
     getValue: () => _ = null,

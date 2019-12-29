@@ -12,7 +12,8 @@ class JournalModule protected () extends js.Object {
   val Name: String = js.native
   val NavigationGroups: typings.activexDashOutlook.Outlook.NavigationGroups = js.native
   val NavigationModuleType: OlNavigationModuleType = js.native
-  var `Outlook.JournalModule_typekey`: JournalModule = js.native
+  @JSName("Outlook.JournalModule_typekey")
+  var OutlookDotJournalModule_typekey: JournalModule = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

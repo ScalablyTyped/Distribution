@@ -1,6 +1,5 @@
 package typings.numDashSort
 
-import typings.numDashSort.numDashSortMod.NumberComparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

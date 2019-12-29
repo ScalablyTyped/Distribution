@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.SortMode.Ascending
-import typings.sharepoint.SP.JsGrid.SortMode.Descending
-import typings.sharepoint.SP.JsGrid.SortMode.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

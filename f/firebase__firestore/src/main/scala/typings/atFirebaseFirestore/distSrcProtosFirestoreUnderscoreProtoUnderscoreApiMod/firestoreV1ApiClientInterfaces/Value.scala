@@ -8,19 +8,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Value extends js.Object {
-  var arrayValue: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ArrayValue
-  ] = js.undefined
+  var arrayValue: js.UndefOr[ArrayValue] = js.undefined
   var booleanValue: js.UndefOr[Boolean] = js.undefined
   var bytesValue: js.UndefOr[String | Uint8Array] = js.undefined
   var doubleValue: js.UndefOr[Double] = js.undefined
-  var geoPointValue: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.LatLng
-  ] = js.undefined
+  var geoPointValue: js.UndefOr[LatLng] = js.undefined
   var integerValue: js.UndefOr[String] = js.undefined
-  var mapValue: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.MapValue
-  ] = js.undefined
+  var mapValue: js.UndefOr[MapValue] = js.undefined
   var nullValue: js.UndefOr[ValueNullValue] = js.undefined
   var referenceValue: js.UndefOr[String] = js.undefined
   var stringValue: js.UndefOr[String] = js.undefined
@@ -30,13 +24,13 @@ trait Value extends js.Object {
 object Value {
   @scala.inline
   def apply(
-    arrayValue: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ArrayValue = null,
+    arrayValue: ArrayValue = null,
     booleanValue: js.UndefOr[Boolean] = js.undefined,
     bytesValue: String | Uint8Array = null,
     doubleValue: Int | Double = null,
-    geoPointValue: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.LatLng = null,
+    geoPointValue: LatLng = null,
     integerValue: String = null,
-    mapValue: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.MapValue = null,
+    mapValue: MapValue = null,
     nullValue: ValueNullValue = null,
     referenceValue: String = null,
     stringValue: String = null,

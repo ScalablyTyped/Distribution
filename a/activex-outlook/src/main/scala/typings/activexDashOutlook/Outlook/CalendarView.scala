@@ -26,7 +26,8 @@ class CalendarView protected () extends js.Object {
   val MonthFont: ViewFont = js.native
   var MonthShowEndTime: Boolean = js.native
   var Name: String = js.native
-  var `Outlook.CalendarView_typekey`: CalendarView = js.native
+  @JSName("Outlook.CalendarView_typekey")
+  var OutlookDotCalendarView_typekey: CalendarView = js.native
   val Parent: js.Any = js.native
   val SaveOption: OlViewSaveOption = js.native
   val SelectedEndTime: VarDate = js.native

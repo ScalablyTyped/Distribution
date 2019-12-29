@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.abort
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.conditionLoss
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.energySaver
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.executionTimeExceeded
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.idleTask
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.loggingOff
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.quietHoursEntered
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.resourceRevocation
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.servicingUpdate
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.systemPolicy
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.terminating
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.uninstall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.Schedule
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Agenda
-import typings.ejDotWebDotAll.ej.Schedule.CurrentView.CustomView
-import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Day
-import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Month
-import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Week
-import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Workweek
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

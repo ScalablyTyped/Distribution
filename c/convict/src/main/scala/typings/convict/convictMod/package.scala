@@ -11,7 +11,7 @@ package object convictMod {
   // Taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-307871458
   type Overwrite[T, U] = typings.convict.convictStrings.Overwrite with T with U
   /* Rewritten from type alias, can be one of: 
-    - typings.convict.convictStrings.`*`
+    - typings.convict.convictStrings.Asterisk
     - typings.convict.convictStrings.int
     - typings.convict.convictStrings.port
     - typings.convict.convictStrings.windows_named_pipe

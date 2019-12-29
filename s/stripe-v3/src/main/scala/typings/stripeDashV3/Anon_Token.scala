@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Token extends js.Object {
-  /**
-    * Converts the provided token into a PaymentMethod to
-    * use for the payment.
+  /*
+    * Converts the provided token into a PaymentMethod to use for
+    * confirmation.
     */
   var token: String
 }

@@ -11,7 +11,8 @@ class CoAuthUpdates protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.CoAuthUpdates_typekey`: CoAuthUpdates = js.native
+  @JSName("Word.CoAuthUpdates_typekey")
+  var WordDotCoAuthUpdates_typekey: CoAuthUpdates = js.native
   def Item(Index: Double): CoAuthUpdate = js.native
 }
 

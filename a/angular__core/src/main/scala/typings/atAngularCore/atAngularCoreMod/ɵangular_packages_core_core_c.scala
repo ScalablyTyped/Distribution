@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵangular_packages_core_core_c")
+@JSImport("@angular/core", "\u0275angular_packages_core_core_c")
 @js.native
 class ɵangular_packages_core_core_c protected () extends ReflectiveInjector {
   /**
@@ -25,7 +25,7 @@ class ɵangular_packages_core_core_c protected () extends ReflectiveInjector {
 }
 
 /* static members */
-@JSImport("@angular/core", "ɵangular_packages_core_core_c")
+@JSImport("@angular/core", "\u0275angular_packages_core_core_c")
 @js.native
 object ɵangular_packages_core_core_c extends js.Object {
   var INJECTOR_KEY: js.Any = js.native

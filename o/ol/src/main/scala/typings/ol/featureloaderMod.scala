@@ -1,8 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.featureloaderMod.FeatureLoader
-import typings.ol.featureloaderMod.FeatureUrlFunction
 import typings.ol.formatFeatureMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

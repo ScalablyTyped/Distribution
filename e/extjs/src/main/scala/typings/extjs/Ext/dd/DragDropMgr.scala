@@ -27,7 +27,7 @@ object DragDropMgr extends js.Object {
   /** [Property] (Number) */
   var clickTimeThresh: Double = js.native
   /** [Property] (String) */
-  var dragCls: java.lang.String = js.native
+  var dragCls: String = js.native
   /** [Property] (Number) */
   var mode: Double = js.native
   /** [Property] (Boolean) */
@@ -69,25 +69,25 @@ object DragDropMgr extends js.Object {
   		* @returns Object The style property of the element
   		*/
   def getCss(): js.Any = js.native
-  def getCss(id: java.lang.String): js.Any = js.native
+  def getCss(id: String): js.Any = js.native
   /** [Method] Returns the DragDrop instance for a given id
   		* @param id String the id of the DragDrop object
   		* @returns Ext.dd.DragDrop the drag drop object, null if it is not found
   		*/
   def getDDById(): IDragDrop = js.native
-  def getDDById(id: java.lang.String): IDragDrop = js.native
+  def getDDById(id: String): IDragDrop = js.native
   /** [Method] Returns the actual DOM element
   		* @param id String the id of the elment to get
   		* @returns Object The element
   		*/
   def getElement(): js.Any = js.native
-  def getElement(id: java.lang.String): js.Any = js.native
+  def getElement(id: String): js.Any = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
   		* @param name String Name of the config option to return.
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Returns a Region object containing the drag and drop element s position and size including the padding configured fo
   		* @param oDD Ext.dd.DragDrop the drag and drop object to get the location for.
   		* @returns Ext.util.Region a Region object representing the total area the element occupies, including any padding the instance is configured for.
@@ -113,13 +113,13 @@ object DragDropMgr extends js.Object {
   		* @returns Boolean true if this element is a DragDrop item, false otherwise
   		*/
   def isDragDrop(): Boolean = js.native
-  def isDragDrop(id: java.lang.String): Boolean = js.native
+  def isDragDrop(id: String): Boolean = js.native
   /** [Method] Utility function to determine if a given element has been registered as a drag drop handle for the given Drag Drop ob
   		* @param id String the element id to check
   		* @returns Boolean true if this element is a DragDrop handle, false otherwise
   		*/
   def isHandle(): Boolean = js.native
-  def isHandle(id: java.lang.String): Boolean = js.native
+  def isHandle(id: String): Boolean = js.native
   /** [Method] Returns true if the specified dd target is a legal target for the specifice drag obj
   		* @param oDD Ext.dd.DragDrop the drag obj
   		* @param oTargetDD Ext.dd.DragDrop the target
@@ -151,14 +151,14 @@ object DragDropMgr extends js.Object {
   		*/
   def regDragDrop(): Unit = js.native
   def regDragDrop(oDD: IDragDrop): Unit = js.native
-  def regDragDrop(oDD: IDragDrop, sGroup: java.lang.String): Unit = js.native
+  def regDragDrop(oDD: IDragDrop, sGroup: String): Unit = js.native
   /** [Method] Each DragDrop handle element must be registered
   		* @param sDDId String the DragDrop id this element is a handle for
   		* @param sHandleId String the id of the element that is the drag handle
   		*/
   def regHandle(): Unit = js.native
-  def regHandle(sDDId: java.lang.String): Unit = js.native
-  def regHandle(sDDId: java.lang.String, sHandleId: java.lang.String): Unit = js.native
+  def regHandle(sDDId: String): Unit = js.native
+  def regHandle(sDDId: String, sHandleId: String): Unit = js.native
   /** [Method] Fired when either the drag pixel threshold or the mousedown hold time threshold has been met
   		* @param x Number the X position of the original mousedown
   		* @param y Number the Y position of the original mousedown

@@ -15,7 +15,7 @@ trait CallFrame extends js.Object {
   /**
     * JavaScript function name.
     */
-  var functionName: java.lang.String
+  var functionName: String
   /**
     * JavaScript script line number (0-based).
     */
@@ -27,18 +27,12 @@ trait CallFrame extends js.Object {
   /**
     * JavaScript script name or url.
     */
-  var url: java.lang.String
+  var url: String
 }
 
 object CallFrame {
   @scala.inline
-  def apply(
-    columnNumber: Double,
-    functionName: java.lang.String,
-    lineNumber: Double,
-    scriptId: ScriptId,
-    url: java.lang.String
-  ): CallFrame = {
+  def apply(columnNumber: Double, functionName: String, lineNumber: Double, scriptId: ScriptId, url: String): CallFrame = {
     val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CallFrame]

@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.UI.ApplicationPages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UI.ApplicationPages.CalendarScope.daily
-import typings.sharepoint.SP.UI.ApplicationPages.CalendarScope.dailyGroup
-import typings.sharepoint.SP.UI.ApplicationPages.CalendarScope.monthly
-import typings.sharepoint.SP.UI.ApplicationPages.CalendarScope.nothing
-import typings.sharepoint.SP.UI.ApplicationPages.CalendarScope.weekly
-import typings.sharepoint.SP.UI.ApplicationPages.CalendarScope.weeklyGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

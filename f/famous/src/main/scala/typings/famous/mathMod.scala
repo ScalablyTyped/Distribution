@@ -1,9 +1,5 @@
 package typings.famous
 
-import typings.famous.mathMod.Mat33
-import typings.famous.mathMod.Quaternion
-import typings.famous.mathMod.Vec2
-import typings.famous.mathMod.Vec3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

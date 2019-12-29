@@ -1,9 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.EndpointType.AGENT
-import typings.amazonDashConnectDashStreams.connect.EndpointType.PHONE_NUMBER
-import typings.amazonDashConnectDashStreams.connect.EndpointType.QUEUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

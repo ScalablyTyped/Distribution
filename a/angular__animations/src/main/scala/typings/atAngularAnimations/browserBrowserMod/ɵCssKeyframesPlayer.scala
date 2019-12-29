@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/animations/browser/browser", "ɵCssKeyframesPlayer")
+@JSImport("@angular/animations/browser/browser", "\u0275CssKeyframesPlayer")
 @js.native
 class ɵCssKeyframesPlayer protected () extends AnimationPlayer {
   def this(

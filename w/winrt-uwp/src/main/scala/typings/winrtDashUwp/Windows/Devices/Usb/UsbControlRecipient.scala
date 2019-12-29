@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlRecipient.defaultInterface
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlRecipient.device
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlRecipient.endpoint
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlRecipient.other
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlRecipient.specifiedInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

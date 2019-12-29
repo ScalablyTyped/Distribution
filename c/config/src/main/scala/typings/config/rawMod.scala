@@ -1,6 +1,5 @@
 package typings.config
 
-import typings.config.rawMod.RawConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

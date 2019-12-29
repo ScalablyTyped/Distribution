@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 
 object strangeStrings {
   @js.native
-  sealed trait `()` extends Bounds
+  sealed trait LeftparenthesisRightparenthesis extends Bounds
   
   @js.native
-  sealed trait `(]` extends Bounds
+  sealed trait LeftparenthesisRightsquarebracket extends Bounds
   
   @js.native
-  sealed trait `[)` extends Bounds
+  sealed trait LeftsquarebracketRightparenthesis extends Bounds
   
   @js.native
-  sealed trait `[]` extends Bounds
+  sealed trait LeftsquarebracketRightsquarebracket extends Bounds
   
   @scala.inline
-  def `()`: `()` = "()".asInstanceOf[`()`]
+  def LeftparenthesisRightparenthesis: LeftparenthesisRightparenthesis = "()".asInstanceOf[LeftparenthesisRightparenthesis]
   @scala.inline
-  def `(]`: `(]` = "(]".asInstanceOf[`(]`]
+  def LeftparenthesisRightsquarebracket: LeftparenthesisRightsquarebracket = "(]".asInstanceOf[LeftparenthesisRightsquarebracket]
   @scala.inline
-  def `[)`: `[)` = "[)".asInstanceOf[`[)`]
+  def LeftsquarebracketRightparenthesis: LeftsquarebracketRightparenthesis = "[)".asInstanceOf[LeftsquarebracketRightparenthesis]
   @scala.inline
-  def `[]`: `[]` = "[]".asInstanceOf[`[]`]
+  def LeftsquarebracketRightsquarebracket: LeftsquarebracketRightsquarebracket = "[]".asInstanceOf[LeftsquarebracketRightsquarebracket]
 }
 

@@ -2,7 +2,6 @@ package typings.atEmberArray
 
 import typings.atEmberArray.dashPrivateNativeDashArrayMod.NativeArray
 import typings.atEmberArray.mutableMod.MutableArray
-import typings.atEmberArray.proxyMod.ArrayProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

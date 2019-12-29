@@ -16,7 +16,7 @@ trait AjaxCompleteEventArgs extends js.Object {
   var data: js.UndefOr[String] = js.undefined
   /** Instance of the navigation drawer model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.NavigationDrawer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object AjaxCompleteEventArgs {
     URL: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     data: String = null,
-    model: typings.ejDotWebDotAll.ej.NavigationDrawer.Model = null,
+    model: Model = null,
     `type`: String = null
   ): AjaxCompleteEventArgs = {
     val __obj = js.Dynamic.literal()

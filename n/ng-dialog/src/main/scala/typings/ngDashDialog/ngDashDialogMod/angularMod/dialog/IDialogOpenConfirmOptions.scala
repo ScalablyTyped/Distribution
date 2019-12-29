@@ -6,10 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IDialogOpenConfirmOptions
-  extends typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogOpenOptions {
+trait IDialogOpenConfirmOptions extends IDialogOpenOptions {
   @JSName("scope")
-  var scope_IDialogOpenConfirmOptions: js.UndefOr[typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogConfirmScope] = js.undefined
+  var scope_IDialogOpenConfirmOptions: js.UndefOr[IDialogConfirmScope] = js.undefined
 }
 
 object IDialogOpenConfirmOptions {
@@ -41,7 +40,7 @@ object IDialogOpenConfirmOptions {
     preCloseCallback: String | Function = null,
     preserveFocus: js.UndefOr[Boolean] = js.undefined,
     resolve: StringDictionary[String | Function] = null,
-    scope: typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogConfirmScope = null,
+    scope: IDialogConfirmScope = null,
     showClose: js.UndefOr[Boolean] = js.undefined,
     trapFocus: js.UndefOr[Boolean] = js.undefined,
     width: String | Double = null

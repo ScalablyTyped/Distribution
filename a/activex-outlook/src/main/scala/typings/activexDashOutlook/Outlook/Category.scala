@@ -16,7 +16,8 @@ class Category protected () extends js.Object {
   val Class: OlObjectClass = js.native
   var Color: OlCategoryColor = js.native
   var Name: String = js.native
-  var `Outlook.Category_typekey`: Category = js.native
+  @JSName("Outlook.Category_typekey")
+  var OutlookDotCategory_typekey: Category = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   var ShortcutKey: OlCategoryShortcutKey = js.native

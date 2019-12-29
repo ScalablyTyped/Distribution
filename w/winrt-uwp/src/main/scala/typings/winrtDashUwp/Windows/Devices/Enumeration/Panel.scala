@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.Panel.back
-import typings.winrtDashUwp.Windows.Devices.Enumeration.Panel.bottom
-import typings.winrtDashUwp.Windows.Devices.Enumeration.Panel.front
-import typings.winrtDashUwp.Windows.Devices.Enumeration.Panel.left
-import typings.winrtDashUwp.Windows.Devices.Enumeration.Panel.right
-import typings.winrtDashUwp.Windows.Devices.Enumeration.Panel.top
-import typings.winrtDashUwp.Windows.Devices.Enumeration.Panel.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

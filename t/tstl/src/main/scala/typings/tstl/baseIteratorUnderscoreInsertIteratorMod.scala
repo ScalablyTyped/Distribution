@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseIteratorUnderscoreInsertIteratorMod._InsertIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

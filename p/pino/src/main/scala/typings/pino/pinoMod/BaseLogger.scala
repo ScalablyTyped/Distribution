@@ -1,7 +1,7 @@
 package typings.pino.pinoMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.pino.pinoStrings.`level-change`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

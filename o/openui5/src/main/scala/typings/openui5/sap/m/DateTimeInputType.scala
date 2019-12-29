@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.DateTimeInputType.Date
-import typings.openui5.sap.m.DateTimeInputType.DateTime
-import typings.openui5.sap.m.DateTimeInputType.Time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

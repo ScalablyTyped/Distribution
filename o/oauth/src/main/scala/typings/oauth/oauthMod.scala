@@ -8,10 +8,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.UrlWithStringQuery
-import typings.oauth.oauthMod.OAuth
-import typings.oauth.oauthMod.dataCallback
-import typings.oauth.oauthMod.oauth1tokenCallback
-import typings.oauth.oauthMod.oauth2tokenCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

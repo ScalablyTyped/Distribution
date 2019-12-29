@@ -17,7 +17,8 @@ class HTMLDivision protected () extends js.Object {
   var RightIndent: Double = js.native
   var SpaceAfter: Double = js.native
   var SpaceBefore: Double = js.native
-  var `Word.HTMLDivision_typekey`: HTMLDivision = js.native
+  @JSName("Word.HTMLDivision_typekey")
+  var WordDotHTMLDivision_typekey: HTMLDivision = js.native
   def Delete(): Unit = js.native
   def HTMLDivisionParent(): HTMLDivision = js.native
   def HTMLDivisionParent(LevelsUp: js.Any): HTMLDivision = js.native

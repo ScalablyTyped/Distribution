@@ -1,6 +1,5 @@
 package typings.shopifyDashPrime
 
-import typings.shopifyDashPrime.distEnumsBlogUnderscoreCommentableMod._BlogCommentable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

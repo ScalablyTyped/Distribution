@@ -17,7 +17,8 @@ class CustomXMLPart protected () extends js.Object {
   @JSName("NamespaceManager")
   val NamespaceManager_Original: CustomXMLPrefixMappings = js.native
   val NamespaceURI: String = js.native
-  var `Office.CustomXMLPart_typekey`: CustomXMLPart = js.native
+  @JSName("Office.CustomXMLPart_typekey")
+  var OfficeDotCustomXMLPart_typekey: CustomXMLPart = js.native
   val Parent: js.Any = js.native
   @JSName("SchemaCollection")
   var SchemaCollection_Original: CustomXMLSchemaCollection = js.native

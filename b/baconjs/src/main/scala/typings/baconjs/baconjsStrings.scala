@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation._
 
 object baconjsStrings {
   @js.native
-  sealed trait `<no-more>` extends js.Object
+  sealed trait `Lessthansignno-moreGreaterthansign` extends js.Object
   
   @js.native
-  sealed trait `<version>` extends js.Object
+  sealed trait LessthansignversionGreaterthansign extends js.Object
   
   @js.native
   sealed trait ObjectTemplate extends js.Object
   
   @scala.inline
-  def `<no-more>`: `<no-more>` = "<no-more>".asInstanceOf[`<no-more>`]
+  def `Lessthansignno-moreGreaterthansign`: `Lessthansignno-moreGreaterthansign` = "<no-more>".asInstanceOf[`Lessthansignno-moreGreaterthansign`]
   @scala.inline
-  def `<version>`: `<version>` = "<version>".asInstanceOf[`<version>`]
+  def LessthansignversionGreaterthansign: LessthansignversionGreaterthansign = "<version>".asInstanceOf[LessthansignversionGreaterthansign]
   @scala.inline
   def ObjectTemplate: ObjectTemplate = "ObjectTemplate".asInstanceOf[ObjectTemplate]
 }

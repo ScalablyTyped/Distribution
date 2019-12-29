@@ -89,11 +89,11 @@ class ChildrenNode protected () extends Node {
 @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "ChildrenNode")
 @js.native
 object ChildrenNode extends js.Object {
-  val EMPTY_NODE: ChildrenNode = js.native
   /**
     * @private
     * @type {RegExp}
     */
   var INTEGER_REGEXP_ : js.Any = js.native
+  def EMPTY_NODE(): ChildrenNode = js.native
 }
 

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDialogStrings {
   @js.native
-  sealed trait `DOTmdc-dialog--open` extends js.Object
+  sealed trait `Dotmdc-dialog--open` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-dialog__footer__button--accept` extends js.Object
+  sealed trait `Dotmdc-dialog__footer__button--accept` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-dialog__surface` extends js.Object
+  sealed trait `Dotmdc-dialog__surface` extends js.Object
   
   @js.native
-  sealed trait `MDCDialog:accept` extends js.Object
+  sealed trait MDCDialogColonaccept extends js.Object
   
   @js.native
-  sealed trait `MDCDialog:cancel` extends js.Object
+  sealed trait MDCDialogColoncancel extends js.Object
   
   @js.native
   sealed trait `mdc-dialog` extends js.Object
@@ -42,15 +42,15 @@ object atMaterialDialogStrings {
   sealed trait `mdc-dialog__footer__button--cancel` extends js.Object
   
   @scala.inline
-  def `DOTmdc-dialog--open`: `DOTmdc-dialog--open` = ".mdc-dialog--open".asInstanceOf[`DOTmdc-dialog--open`]
+  def `Dotmdc-dialog--open`: `Dotmdc-dialog--open` = ".mdc-dialog--open".asInstanceOf[`Dotmdc-dialog--open`]
   @scala.inline
-  def `DOTmdc-dialog__footer__button--accept`: `DOTmdc-dialog__footer__button--accept` = ".mdc-dialog__footer__button--accept".asInstanceOf[`DOTmdc-dialog__footer__button--accept`]
+  def `Dotmdc-dialog__footer__button--accept`: `Dotmdc-dialog__footer__button--accept` = ".mdc-dialog__footer__button--accept".asInstanceOf[`Dotmdc-dialog__footer__button--accept`]
   @scala.inline
-  def `DOTmdc-dialog__surface`: `DOTmdc-dialog__surface` = ".mdc-dialog__surface".asInstanceOf[`DOTmdc-dialog__surface`]
+  def `Dotmdc-dialog__surface`: `Dotmdc-dialog__surface` = ".mdc-dialog__surface".asInstanceOf[`Dotmdc-dialog__surface`]
   @scala.inline
-  def `MDCDialog:accept`: `MDCDialog:accept` = "MDCDialog:accept".asInstanceOf[`MDCDialog:accept`]
+  def MDCDialogColonaccept: MDCDialogColonaccept = "MDCDialog:accept".asInstanceOf[MDCDialogColonaccept]
   @scala.inline
-  def `MDCDialog:cancel`: `MDCDialog:cancel` = "MDCDialog:cancel".asInstanceOf[`MDCDialog:cancel`]
+  def MDCDialogColoncancel: MDCDialogColoncancel = "MDCDialog:cancel".asInstanceOf[MDCDialogColoncancel]
   @scala.inline
   def `mdc-dialog`: `mdc-dialog` = "mdc-dialog".asInstanceOf[`mdc-dialog`]
   @scala.inline

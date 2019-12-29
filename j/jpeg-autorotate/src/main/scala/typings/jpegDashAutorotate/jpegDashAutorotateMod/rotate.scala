@@ -1,6 +1,5 @@
 package typings.jpegDashAutorotate.jpegDashAutorotateMod
 
-import typings.jpegDashAutorotate.Anon_Buffer
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jpeg-autorotate", "rotate")
 @js.native
 object rotate extends js.Object {
-  def apply(path_or_buffer: String, options: RotateOptions): js.Promise[Anon_Buffer] = js.native
+  def apply(path_or_buffer: String, options: RotateOptions): Unit = js.native
   def apply(
     path_or_buffer: String,
     options: RotateOptions,
@@ -22,7 +21,7 @@ object rotate extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def apply(path_or_buffer: Buffer, options: RotateOptions): js.Promise[Anon_Buffer] = js.native
+  def apply(path_or_buffer: Buffer, options: RotateOptions): Unit = js.native
   def apply(
     path_or_buffer: Buffer,
     options: RotateOptions,

@@ -1,6 +1,5 @@
 package typings.ydnDashDb
 
-import typings.ydnDashDb.ydb.db.algo.Solver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

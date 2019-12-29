@@ -11,7 +11,8 @@ class Interior protected () extends js.Object {
   var Color: XlRgbColor | Double = js.native
   var ColorIndex: Double | XlColorIndex = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Interior_typekey`: Interior = js.native
+  @JSName("Excel.Interior_typekey")
+  var ExcelDotInterior_typekey: Interior = js.native
   val Gradient: js.Any = js.native
   var InvertIfNegative: Boolean = js.native
   val Parent: js.Any = js.native

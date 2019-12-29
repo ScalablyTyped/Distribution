@@ -1,14 +1,14 @@
 package typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.`ROUTER/GO`
+import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.ROUTERSlashGO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("redux-first-routing", "GO")
 @js.native
-object GO extends TopLevel[`ROUTER/GO`]
+object GO extends TopLevel[ROUTERSlashGO]
 
 @JSImport("redux-first-routing", "go")
 @js.native

@@ -5,24 +5,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigFile extends js.Object {
-  var `features.ssl-commands`: js.UndefOr[Boolean] = js.undefined
-  var `git.host`: js.UndefOr[String] = js.undefined
-  var `git.port`: js.UndefOr[Double] = js.undefined
-  var `git.setup`: js.UndefOr[Boolean] = js.undefined
+  @JSName("features.ssl-commands")
+  var `featuresDotssl-commands`: js.UndefOr[Boolean] = js.undefined
+  @JSName("git.host")
+  var gitDothost: js.UndefOr[String] = js.undefined
+  @JSName("git.port")
+  var gitDotport: js.UndefOr[Double] = js.undefined
+  @JSName("git.setup")
+  var gitDotsetup: js.UndefOr[Boolean] = js.undefined
   var interactive: js.UndefOr[Boolean] = js.undefined
   var npmClient: NpmClient
-  var `org.id`: js.UndefOr[String] = js.undefined
+  @JSName("org.id")
+  var orgDotid: js.UndefOr[String] = js.undefined
   var proxy: js.UndefOr[String] = js.undefined
-  var `ssl.cafile`: js.UndefOr[String | js.Array[String]] = js.undefined
-  var `ssl.certfile`: js.UndefOr[String | js.Array[String]] = js.undefined
-  var `ssl.keyfile`: js.UndefOr[String | js.Array[String]] = js.undefined
+  @JSName("ssl.cafile")
+  var sslDotcafile: js.UndefOr[String | js.Array[String]] = js.undefined
+  @JSName("ssl.certfile")
+  var sslDotcertfile: js.UndefOr[String | js.Array[String]] = js.undefined
+  @JSName("ssl.keyfile")
+  var sslDotkeyfile: js.UndefOr[String | js.Array[String]] = js.undefined
   var telemetry: Boolean
-  var `tokens.telemetry`: js.UndefOr[String] = js.undefined
-  var `tokens.user`: js.UndefOr[String] = js.undefined
-  var `urls.api`: js.UndefOr[String] = js.undefined
-  var `urls.dash`: js.UndefOr[String] = js.undefined
-  var `user.email`: js.UndefOr[String] = js.undefined
-  var `user.id`: js.UndefOr[Double] = js.undefined
+  @JSName("tokens.telemetry")
+  var tokensDottelemetry: js.UndefOr[String] = js.undefined
+  @JSName("tokens.user")
+  var tokensDotuser: js.UndefOr[String] = js.undefined
+  @JSName("urls.api")
+  var urlsDotapi: js.UndefOr[String] = js.undefined
+  @JSName("urls.dash")
+  var urlsDotdash: js.UndefOr[String] = js.undefined
+  @JSName("user.email")
+  var userDotemail: js.UndefOr[String] = js.undefined
+  @JSName("user.id")
+  var userDotid: js.UndefOr[Double] = js.undefined
   var version: String
 }
 
@@ -32,40 +46,40 @@ object ConfigFile {
     npmClient: NpmClient,
     telemetry: Boolean,
     version: String,
-    `features.ssl-commands`: js.UndefOr[Boolean] = js.undefined,
-    `git.host`: String = null,
-    `git.port`: Int | Double = null,
-    `git.setup`: js.UndefOr[Boolean] = js.undefined,
+    `featuresDotssl-commands`: js.UndefOr[Boolean] = js.undefined,
+    gitDothost: String = null,
+    gitDotport: Int | Double = null,
+    gitDotsetup: js.UndefOr[Boolean] = js.undefined,
     interactive: js.UndefOr[Boolean] = js.undefined,
-    `org.id`: String = null,
+    orgDotid: String = null,
     proxy: String = null,
-    `ssl.cafile`: String | js.Array[String] = null,
-    `ssl.certfile`: String | js.Array[String] = null,
-    `ssl.keyfile`: String | js.Array[String] = null,
-    `tokens.telemetry`: String = null,
-    `tokens.user`: String = null,
-    `urls.api`: String = null,
-    `urls.dash`: String = null,
-    `user.email`: String = null,
-    `user.id`: Int | Double = null
+    sslDotcafile: String | js.Array[String] = null,
+    sslDotcertfile: String | js.Array[String] = null,
+    sslDotkeyfile: String | js.Array[String] = null,
+    tokensDottelemetry: String = null,
+    tokensDotuser: String = null,
+    urlsDotapi: String = null,
+    urlsDotdash: String = null,
+    userDotemail: String = null,
+    userDotid: Int | Double = null
   ): ConfigFile = {
     val __obj = js.Dynamic.literal(npmClient = npmClient.asInstanceOf[js.Any], telemetry = telemetry.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (!js.isUndefined(`features.ssl-commands`)) __obj.updateDynamic("features.ssl-commands")(`features.ssl-commands`.asInstanceOf[js.Any])
-    if (`git.host` != null) __obj.updateDynamic("git.host")(`git.host`.asInstanceOf[js.Any])
-    if (`git.port` != null) __obj.updateDynamic("git.port")(`git.port`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`git.setup`)) __obj.updateDynamic("git.setup")(`git.setup`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`featuresDotssl-commands`)) __obj.updateDynamic("features.ssl-commands")(`featuresDotssl-commands`.asInstanceOf[js.Any])
+    if (gitDothost != null) __obj.updateDynamic("git.host")(gitDothost.asInstanceOf[js.Any])
+    if (gitDotport != null) __obj.updateDynamic("git.port")(gitDotport.asInstanceOf[js.Any])
+    if (!js.isUndefined(gitDotsetup)) __obj.updateDynamic("git.setup")(gitDotsetup.asInstanceOf[js.Any])
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (`org.id` != null) __obj.updateDynamic("org.id")(`org.id`.asInstanceOf[js.Any])
+    if (orgDotid != null) __obj.updateDynamic("org.id")(orgDotid.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (`ssl.cafile` != null) __obj.updateDynamic("ssl.cafile")(`ssl.cafile`.asInstanceOf[js.Any])
-    if (`ssl.certfile` != null) __obj.updateDynamic("ssl.certfile")(`ssl.certfile`.asInstanceOf[js.Any])
-    if (`ssl.keyfile` != null) __obj.updateDynamic("ssl.keyfile")(`ssl.keyfile`.asInstanceOf[js.Any])
-    if (`tokens.telemetry` != null) __obj.updateDynamic("tokens.telemetry")(`tokens.telemetry`.asInstanceOf[js.Any])
-    if (`tokens.user` != null) __obj.updateDynamic("tokens.user")(`tokens.user`.asInstanceOf[js.Any])
-    if (`urls.api` != null) __obj.updateDynamic("urls.api")(`urls.api`.asInstanceOf[js.Any])
-    if (`urls.dash` != null) __obj.updateDynamic("urls.dash")(`urls.dash`.asInstanceOf[js.Any])
-    if (`user.email` != null) __obj.updateDynamic("user.email")(`user.email`.asInstanceOf[js.Any])
-    if (`user.id` != null) __obj.updateDynamic("user.id")(`user.id`.asInstanceOf[js.Any])
+    if (sslDotcafile != null) __obj.updateDynamic("ssl.cafile")(sslDotcafile.asInstanceOf[js.Any])
+    if (sslDotcertfile != null) __obj.updateDynamic("ssl.certfile")(sslDotcertfile.asInstanceOf[js.Any])
+    if (sslDotkeyfile != null) __obj.updateDynamic("ssl.keyfile")(sslDotkeyfile.asInstanceOf[js.Any])
+    if (tokensDottelemetry != null) __obj.updateDynamic("tokens.telemetry")(tokensDottelemetry.asInstanceOf[js.Any])
+    if (tokensDotuser != null) __obj.updateDynamic("tokens.user")(tokensDotuser.asInstanceOf[js.Any])
+    if (urlsDotapi != null) __obj.updateDynamic("urls.api")(urlsDotapi.asInstanceOf[js.Any])
+    if (urlsDotdash != null) __obj.updateDynamic("urls.dash")(urlsDotdash.asInstanceOf[js.Any])
+    if (userDotemail != null) __obj.updateDynamic("user.email")(userDotemail.asInstanceOf[js.Any])
+    if (userDotid != null) __obj.updateDynamic("user.id")(userDotid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigFile]
   }
 }

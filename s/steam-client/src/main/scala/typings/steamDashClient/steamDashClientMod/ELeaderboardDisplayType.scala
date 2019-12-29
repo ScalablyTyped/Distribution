@@ -1,10 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDisplayType.None
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDisplayType.Numeric
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDisplayType.TimeMilliSeconds
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDisplayType.TimeSeconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

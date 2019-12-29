@@ -1,13 +1,12 @@
 package typings.semanticDashUiDashEmbed.SemanticUI.EmbedSettings
 
-import typings.semanticDashUiDashEmbed.JQuery
 import typings.semanticDashUiDashEmbed.SemanticUI.Embed.ClassNameSettings
 import typings.semanticDashUiDashEmbed.SemanticUI.Embed.ErrorSettings
 import typings.semanticDashUiDashEmbed.SemanticUI.Embed.MetadataSettings
 import typings.semanticDashUiDashEmbed.SemanticUI.Embed.ParametersSettings
 import typings.semanticDashUiDashEmbed.SemanticUI.Embed.SelectorSettings
 import typings.semanticDashUiDashEmbed.SemanticUI.Embed.TemplatesSettings
-import typings.semanticDashUiDashEmbed.semanticDashUiDashEmbedNumbers.`false`
+import typings.semanticDashUiDashEmbed.semanticDashUiDashEmbedBooleans.`false`
 import typings.semanticDashUiDashEmbed.semanticDashUiDashEmbedStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -123,19 +122,19 @@ trait _Impl extends js.Object {
   /**
     * Callback when iframe is generated
     */
-  def onCreate(`this`: JQuery, url: String): Unit
+  def onCreate(url: String): Unit
   /**
     * Whenever an iframe contents is shown
     */
-  def onDisplay(`this`: JQuery): Unit
+  def onDisplay(): Unit
   /**
     * Callback when module parameters are determined. Allows you to adjust parameters at run time by returning a new parameters object.
     */
-  def onEmbed(`this`: JQuery, parameters: ParametersSettings): ParametersSettings
+  def onEmbed(parameters: ParametersSettings): ParametersSettings
   /**
     * Callback immediately before Embed is removed from DOM
     */
-  def onPlaceholderDisplay(`this`: JQuery): Unit
+  def onPlaceholderDisplay(): Unit
 }
 
 object _Impl {
@@ -153,10 +152,10 @@ object _Impl {
     metadata: MetadataSettings,
     name: String,
     namespace: String,
-    onCreate: (JQuery, String) => Unit,
-    onDisplay: JQuery => Unit,
-    onEmbed: (JQuery, ParametersSettings) => ParametersSettings,
-    onPlaceholderDisplay: JQuery => Unit,
+    onCreate: String => Unit,
+    onDisplay: () => Unit,
+    onEmbed: ParametersSettings => ParametersSettings,
+    onPlaceholderDisplay: () => Unit,
     parameters: `false` | ParametersSettings,
     performance: Boolean,
     selector: SelectorSettings,
@@ -166,7 +165,7 @@ object _Impl {
     url: `false` | String,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hd = hd.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onCreate = js.Any.fromFunction2(onCreate), onDisplay = js.Any.fromFunction1(onDisplay), onEmbed = js.Any.fromFunction2(onEmbed), onPlaceholderDisplay = js.Any.fromFunction1(onPlaceholderDisplay), parameters = parameters.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hd = hd.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onCreate = js.Any.fromFunction1(onCreate), onDisplay = js.Any.fromFunction0(onDisplay), onEmbed = js.Any.fromFunction1(onEmbed), onPlaceholderDisplay = js.Any.fromFunction0(onPlaceholderDisplay), parameters = parameters.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

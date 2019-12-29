@@ -18,6 +18,6 @@ trait ComputationDescriptor[T /* <: Ractive[T] */] extends js.Object {
   /**
   	 * Called when Ractive needs to get the computed value. Computations are lazy, so this is only called when a dependency asks for a value.
   	 */
-  def get(`this`: T): js.Any = js.native
+  def get(): js.Any = js.native
 }
 

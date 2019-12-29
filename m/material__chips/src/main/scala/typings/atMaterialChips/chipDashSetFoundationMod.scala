@@ -1,8 +1,6 @@
 package typings.atMaterialChips
 
 import typings.atMaterialChips.chipDashSetAdapterMod.MDCChipSetAdapter
-import typings.atMaterialChips.chipDashSetFoundationMod.MDCChipSetFoundation
-import typings.atMaterialChips.chipDashSetFoundationMod.default
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

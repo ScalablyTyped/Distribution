@@ -1,19 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.AR
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.DE
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.EN
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ES
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.FR
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.IT
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.JA
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.KO
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.PT_BR
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ZH_CN
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ZH_TW
-import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -113,16 +100,10 @@ object ToneChatConstants extends js.Object {
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ContentLanguage with String] = js.native
     /* "en" */ @js.native
-    object EN
-      extends TopLevel[
-              typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage.EN with String
-            ]
+    object EN extends TopLevel[EN with String]
     
     /* "fr" */ @js.native
-    object FR
-      extends TopLevel[
-              typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage.FR with String
-            ]
+    object FR extends TopLevel[FR with String]
     
   }
   

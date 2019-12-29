@@ -2,7 +2,7 @@ package typings.atMaterialDashUiCore.svgIconSvgIconMod
 
 import typings.atMaterialDashUiCore.PartialClassNameMapSvgIconClassKey
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypes.Color
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.Empty
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings._empty
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`additions text`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`after-edge`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`before-edge`
@@ -205,7 +205,7 @@ trait SvgIconProps extends js.Object {
   var component: js.UndefOr[ReactType[SvgIconProps]] = js.undefined
   var contentScriptType: js.UndefOr[Double | String] = js.undefined
   var contentStyleType: js.UndefOr[Double | String] = js.undefined
-  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | Empty] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   var cursor: js.UndefOr[Double | String] = js.undefined
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
@@ -605,7 +605,7 @@ object SvgIconProps {
     component: ReactType[SvgIconProps] = null,
     contentScriptType: Double | String = null,
     contentStyleType: Double | String = null,
-    crossOrigin: anonymous | `use-credentials` | Empty = null,
+    crossOrigin: anonymous | `use-credentials` | _empty = null,
     cursor: Double | String = null,
     cx: Double | String = null,
     cy: Double | String = null,

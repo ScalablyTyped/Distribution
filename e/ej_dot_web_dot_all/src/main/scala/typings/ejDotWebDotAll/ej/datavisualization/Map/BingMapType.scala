@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Aerial
-import typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Aerialwithlabel
-import typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Road
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,21 +10,6 @@ import typings.chayns.DialogInputConfig
 import typings.chayns.DialogInputResult
 import typings.chayns.DialogSelectConfig
 import typings.chayns.DialogSelectResult
-import typings.chayns.chayns.dialog.buttonText
-import typings.chayns.chayns.dialog.buttonText.CANCEL
-import typings.chayns.chayns.dialog.buttonText.NO
-import typings.chayns.chayns.dialog.buttonText.OK
-import typings.chayns.chayns.dialog.buttonText.YES
-import typings.chayns.chayns.dialog.buttonType
-import typings.chayns.chayns.dialog.buttonType.NEGATIVE
-import typings.chayns.chayns.dialog.buttonType.POSITIVE
-import typings.chayns.chayns.dialog.dateType
-import typings.chayns.chayns.dialog.dateType.DATE
-import typings.chayns.chayns.dialog.dateType.DATE_TIME
-import typings.chayns.chayns.dialog.dateType.TIME
-import typings.chayns.chayns.dialog.inputType
-import typings.chayns.chayns.dialog.inputType.DEFAULT
-import typings.chayns.chayns.dialog.inputType.PASSWORD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,8 +86,7 @@ object dialog extends js.Object {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[buttonType with Double] = js.native
     /* -1 */ @js.native
-    object CANCEL
-      extends TopLevel[typings.chayns.chayns.dialog.buttonType.CANCEL with Double]
+    object CANCEL extends TopLevel[CANCEL with Double]
     
     /* 0 */ @js.native
     object NEGATIVE extends TopLevel[NEGATIVE with Double]

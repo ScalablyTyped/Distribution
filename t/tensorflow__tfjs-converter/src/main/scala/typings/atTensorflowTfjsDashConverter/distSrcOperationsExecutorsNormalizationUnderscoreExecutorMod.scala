@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcOperationsExecutorsNormalizationUnderscoreExecutorMod extends js.Object {
   val CATEGORY: normalization = js.native
-  var executeOp: InternalOpExecutor = js.native
+  val executeOp: InternalOpExecutor = js.native
 }
 

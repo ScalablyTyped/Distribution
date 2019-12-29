@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashImageDashCropStrings {
   @js.native
-  sealed trait `%` extends js.Object
+  sealed trait Percentsign extends js.Object
   
   @js.native
   sealed trait anonymous extends js.Object
@@ -18,7 +18,7 @@ object reactDashImageDashCropStrings {
   sealed trait `use-credentials` extends js.Object
   
   @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   @scala.inline
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   @scala.inline

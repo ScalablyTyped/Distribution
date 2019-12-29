@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Comment extends js.Object {
   var anchor: js.UndefOr[String] = js.undefined
-  var author: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
+  var author: js.UndefOr[User] = js.undefined
   var commentId: js.UndefOr[String] = js.undefined
   var content: js.UndefOr[String] = js.undefined
   var context: js.UndefOr[CommentContext] = js.undefined
@@ -26,7 +26,7 @@ object Comment {
   @scala.inline
   def apply(
     anchor: String = null,
-    author: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User = null,
+    author: User = null,
     commentId: String = null,
     content: String = null,
     context: CommentContext = null,

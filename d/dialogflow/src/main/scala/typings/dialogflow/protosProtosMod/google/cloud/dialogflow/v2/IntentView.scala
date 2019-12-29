@@ -1,8 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.IntentView.INTENT_VIEW_FULL
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.IntentView.INTENT_VIEW_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,17 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.endsWith
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.equals
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThan
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThanOrEqual
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.isIn
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThan
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThanOrEqual
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEndsWith
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEquals
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notStartsWith
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.startsWith
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

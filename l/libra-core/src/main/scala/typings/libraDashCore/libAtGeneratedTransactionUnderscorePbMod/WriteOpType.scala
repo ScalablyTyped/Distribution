@@ -1,8 +1,6 @@
 package typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.WriteOpType.DELETE
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.WriteOpType.WRITE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

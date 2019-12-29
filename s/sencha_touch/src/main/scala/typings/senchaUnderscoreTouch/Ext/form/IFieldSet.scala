@@ -12,17 +12,17 @@ trait IFieldSet extends IContainer {
   		*/
   var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (String) */
-  var instructions: js.UndefOr[java.lang.String] = js.undefined
+  var instructions: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of instructions
   		* @param instructions String The new value.
   		*/
-  var setInstructions: js.UndefOr[js.Function1[/* instructions */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setInstructions: js.UndefOr[js.Function1[/* instructions */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of title
   		* @param title String The new value.
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
 }
 
 object IFieldSet {
@@ -30,10 +30,10 @@ object IFieldSet {
   def apply(
     IContainer: IContainer = null,
     doSetDisabled: /* newDisabled */ js.UndefOr[js.Any] => IFieldSet = null,
-    instructions: java.lang.String = null,
-    setInstructions: /* instructions */ js.UndefOr[java.lang.String] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
-    title: java.lang.String = null
+    instructions: String = null,
+    setInstructions: /* instructions */ js.UndefOr[String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
+    title: String = null
   ): IFieldSet = {
     val __obj = js.Dynamic.literal()
     if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)

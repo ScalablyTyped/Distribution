@@ -1,13 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Days
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Hours
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Milliseconds
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Minutes
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Months
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Seconds
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Years
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

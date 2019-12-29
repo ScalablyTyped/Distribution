@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.TemplateFileType.formPage
-import typings.sharepoint.SP.TemplateFileType.standardPage
-import typings.sharepoint.SP.TemplateFileType.wikiPage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

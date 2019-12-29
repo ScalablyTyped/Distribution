@@ -24,6 +24,12 @@ trait DictionaryRenderer
     */
   var fieldMap: HashMap[String] = js.native
   /**
+    * A scaling expression can be set to increase or decrease the size of the dictionary symbols. The scaling expression can be a constant value for all symbols or an Arcade expression.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression)
+    */
+  var scaleExpression: String = js.native
+  /**
     * The type of renderer. For this renderer the type is always `dictionary`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#type)

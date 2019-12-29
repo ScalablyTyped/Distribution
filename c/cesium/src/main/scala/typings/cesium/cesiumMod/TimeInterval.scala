@@ -3,7 +3,6 @@ package typings.cesium.cesiumMod
 import typings.cesium.Anon_Data
 import typings.cesium.Anon_DataIsStartIncluded
 import typings.cesium.cesiumMod.TimeInterval.DataComparer
-import typings.cesium.cesiumMod.TimeInterval.MergeCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

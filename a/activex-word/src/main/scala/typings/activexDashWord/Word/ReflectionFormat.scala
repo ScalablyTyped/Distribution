@@ -16,6 +16,7 @@ class ReflectionFormat protected () extends js.Object {
   var Size: Double = js.native
   var Transparency: Double = js.native
   var Type: MsoReflectionType = js.native
-  var `Word.ReflectionFormat_typekey`: ReflectionFormat = js.native
+  @JSName("Word.ReflectionFormat_typekey")
+  var WordDotReflectionFormat_typekey: ReflectionFormat = js.native
 }
 

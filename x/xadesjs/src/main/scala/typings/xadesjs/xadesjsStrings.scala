@@ -1,7 +1,7 @@
 package typings.xadesjs
 
-import typings.xadesjs.xadesjsMod.xml.IdentifierQualifier
-import typings.xadesjs.xadesjsMod.xml._EncodingType
+import typings.xadesjs.buildTypesXmlEncapsulatedUnderscorePkiUnderscoreDataMod._EncodingType
+import typings.xadesjs.buildTypesXmlObjectUnderscoreIdentifierMod.IdentifierQualifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

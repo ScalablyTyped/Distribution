@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Operation extends js.Object {
   var done: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Status
-  ] = js.undefined
+  var error: js.UndefOr[Status] = js.undefined
   var metadata: js.UndefOr[ApiClientObjectMap[_]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var response: js.UndefOr[ApiClientObjectMap[_]] = js.undefined
@@ -19,7 +17,7 @@ object Operation {
   @scala.inline
   def apply(
     done: js.UndefOr[Boolean] = js.undefined,
-    error: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Status = null,
+    error: Status = null,
     metadata: ApiClientObjectMap[_] = null,
     name: String = null,
     response: ApiClientObjectMap[_] = null

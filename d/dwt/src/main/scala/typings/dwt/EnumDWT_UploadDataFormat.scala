@@ -1,8 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_UploadDataFormat.Base64
-import typings.dwt.EnumDWT_UploadDataFormat.Binary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

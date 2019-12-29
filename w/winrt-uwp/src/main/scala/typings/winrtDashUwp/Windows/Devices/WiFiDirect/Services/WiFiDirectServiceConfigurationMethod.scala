@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceConfigurationMethod.default
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceConfigurationMethod.pinDisplay
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceConfigurationMethod.pinEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

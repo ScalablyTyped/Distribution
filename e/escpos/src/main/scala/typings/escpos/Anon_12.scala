@@ -1,30 +1,30 @@
 package typings.escpos
 
-import typings.escpos.escposStrings.BACKSLASHu001DwBACKSLASHu0002
-import typings.escpos.escposStrings.BACKSLASHu001DwBACKSLASHu0003
-import typings.escpos.escposStrings.BACKSLASHu001DwBACKSLASHu0004
-import typings.escpos.escposStrings.BACKSLASHu001DwBACKSLASHu0005
-import typings.escpos.escposStrings.BACKSLASHu001DwBACKSLASHu0006
+import typings.escpos.escposStrings.InformationseparatorthreewAcknowledge
+import typings.escpos.escposStrings.InformationseparatorthreewEndoftext
+import typings.escpos.escposStrings.InformationseparatorthreewEndoftransmission
+import typings.escpos.escposStrings.InformationseparatorthreewEnquiry
+import typings.escpos.escposStrings.InformationseparatorthreewStartoftext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_12 extends js.Object {
-  var `1`: BACKSLASHu001DwBACKSLASHu0002
-  var `2`: BACKSLASHu001DwBACKSLASHu0003
-  var `3`: BACKSLASHu001DwBACKSLASHu0004
-  var `4`: BACKSLASHu001DwBACKSLASHu0005
-  var `5`: BACKSLASHu001DwBACKSLASHu0006
+  var `1`: InformationseparatorthreewStartoftext
+  var `2`: InformationseparatorthreewEndoftext
+  var `3`: InformationseparatorthreewEndoftransmission
+  var `4`: InformationseparatorthreewEnquiry
+  var `5`: InformationseparatorthreewAcknowledge
 }
 
 object Anon_12 {
   @scala.inline
   def apply(
-    `1`: BACKSLASHu001DwBACKSLASHu0002,
-    `2`: BACKSLASHu001DwBACKSLASHu0003,
-    `3`: BACKSLASHu001DwBACKSLASHu0004,
-    `4`: BACKSLASHu001DwBACKSLASHu0005,
-    `5`: BACKSLASHu001DwBACKSLASHu0006
+    `1`: InformationseparatorthreewStartoftext,
+    `2`: InformationseparatorthreewEndoftext,
+    `3`: InformationseparatorthreewEndoftransmission,
+    `4`: InformationseparatorthreewEnquiry,
+    `5`: InformationseparatorthreewAcknowledge
   ): Anon_12 = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])

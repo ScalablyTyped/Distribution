@@ -1,7 +1,5 @@
 package typings.apolloDashServerDashCore
 
-import typings.apolloDashServerDashCore.distPlaygroundMod.PlaygroundConfig
-import typings.apolloDashServerDashCore.distPlaygroundMod.RecursivePartial
 import typings.atApollographqlGraphqlDashPlaygroundDashHtml.distRenderDashPlaygroundDashPageMod.RenderPageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

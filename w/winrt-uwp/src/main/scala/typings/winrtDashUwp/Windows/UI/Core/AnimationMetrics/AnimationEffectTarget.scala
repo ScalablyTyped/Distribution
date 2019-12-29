@@ -1,26 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.added
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.affected
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.background
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.content
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deleted
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deselected
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.dragSource
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.hidden
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.incoming
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outgoing
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outline
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.primary
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.remaining
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.revealed
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowIn
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowOut
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selected
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selection
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.shown
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.tapped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

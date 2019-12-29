@@ -1,8 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.Design.Monospace
-import typings.openui5.sap.ui.core.Design.Standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

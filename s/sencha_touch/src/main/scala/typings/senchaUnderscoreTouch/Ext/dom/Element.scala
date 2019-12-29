@@ -41,23 +41,23 @@ object Element extends js.Object {
   		* @param named String Allows for creation of named reusable flyweights to prevent conflicts (e.g. internally Ext uses "_global").
   		* @returns Ext.dom.Element The shared Element object (or null if no matching element was found).
   		*/
-  def fly(): typings.senchaUnderscoreTouch.Ext.dom.IElement = js.native
-  def fly(element: js.Any): typings.senchaUnderscoreTouch.Ext.dom.IElement = js.native
-  def fly(element: js.Any, named: java.lang.String): typings.senchaUnderscoreTouch.Ext.dom.IElement = js.native
+  def fly(): IElement = js.native
+  def fly(element: js.Any): IElement = js.native
+  def fly(element: js.Any, named: String): IElement = js.native
   /** [Method] Returns the top Element that is located at the passed coordinates
   		* @param x Number The x coordinate
   		* @param y Number The y coordinate
   		* @returns String The found Element
   		*/
-  def fromPoint(): java.lang.String = js.native
-  def fromPoint(x: Double): java.lang.String = js.native
-  def fromPoint(x: Double, y: Double): java.lang.String = js.native
+  def fromPoint(): String = js.native
+  def fromPoint(x: Double): String = js.native
+  def fromPoint(x: Double, y: Double): String = js.native
   /** [Method] Retrieves Ext dom Element objects
   		* @param element String/HTMLElement/Ext.Element The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.Element The Element object (or null if no matching element was found).
   		*/
-  def get(): typings.senchaUnderscoreTouch.Ext.dom.IElement = js.native
-  def get(element: js.Any): typings.senchaUnderscoreTouch.Ext.dom.IElement = js.native
+  def get(): IElement = js.native
+  def get(element: js.Any): IElement = js.native
   /** [Method] Retrieves the document height
   		* @returns Number documentHeight
   		*/
@@ -69,11 +69,11 @@ object Element extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Retrieves the current orientation of the window
   		* @returns String Orientation of window: 'portrait' or 'landscape'
   		*/
-  def getOrientation(): java.lang.String = js.native
+  def getOrientation(): String = js.native
   /** [Method] Retrieves the viewport size of the window
   		* @returns Object object containing width and height properties
   		*/
@@ -90,8 +90,8 @@ object Element extends js.Object {
   		* @param prop String The property to normalize
   		* @returns String The normalized string
   		*/
-  def normalize(): java.lang.String = js.native
-  def normalize(prop: java.lang.String): java.lang.String = js.native
+  def normalize(): String = js.native
+  def normalize(prop: String): String = js.native
   /** [Method] Override members of this class
   		* @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
   		* @returns Ext.Base this class
@@ -109,36 +109,36 @@ object Element extends js.Object {
   		* @returns Object styles
   		*/
   def parseStyles(): js.Any = js.native
-  def parseStyles(styles: java.lang.String): js.Any = js.native
+  def parseStyles(styles: String): js.Any = js.native
   /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
   		* @param selector String/HTMLElement[] The CSS selector or an array of elements
   		* @param composite Boolean Return a CompositeElement as opposed to a CompositeElementLite. Defaults to false.
   		* @param root HTMLElement/String The root element of the query or id of the root
   		* @returns Ext.dom.CompositeElementLite/Ext.dom.CompositeElement
   		*/
-  def select(): typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = js.native
-  def select(selector: js.Any): typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = js.native
-  def select(selector: js.Any, composite: Boolean): typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = js.native
-  def select(selector: js.Any, composite: Boolean, root: js.Any): typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = js.native
+  def select(): ICompositeElementLite = js.native
+  def select(selector: js.Any): ICompositeElementLite = js.native
+  def select(selector: js.Any, composite: Boolean): ICompositeElementLite = js.native
+  def select(selector: js.Any, composite: Boolean, root: js.Any): ICompositeElementLite = js.native
   /** [Method] Serializes a DOM form into a url encoded string
   		* @param form Object The form
   		* @returns String The url encoded form
   		*/
-  def serializeForm(): java.lang.String = js.native
-  def serializeForm(form: js.Any): java.lang.String = js.native
+  def serializeForm(): String = js.native
+  def serializeForm(form: js.Any): String = js.native
   /** [Method] Serializes a DOM element and its children recursively into a string
   		* @param node Object DOM element to serialize.
   		* @returns String
   		*/
-  def serializeNode(): java.lang.String = js.native
-  def serializeNode(node: js.Any): java.lang.String = js.native
+  def serializeNode(): String = js.native
+  def serializeNode(node: js.Any): String = js.native
   /** [Method] Parses a number or string representing margin sizes into an object
   		* @param box Number/String The encoded margins
   		* @param units String The type of units to add
   		* @returns String An string with unitized (px if units is not specified) metrics for top, right, bottom and left
   		*/
-  def unitizeBox(): java.lang.String = js.native
-  def unitizeBox(box: js.Any): java.lang.String = js.native
-  def unitizeBox(box: js.Any, units: java.lang.String): java.lang.String = js.native
+  def unitizeBox(): String = js.native
+  def unitizeBox(box: js.Any): String = js.native
+  def unitizeBox(box: js.Any, units: String): String = js.native
 }
 

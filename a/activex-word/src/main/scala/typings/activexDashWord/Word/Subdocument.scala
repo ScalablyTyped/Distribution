@@ -16,7 +16,8 @@ class Subdocument protected () extends js.Object {
   val Parent: js.Any = js.native
   val Path: String = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
-  var `Word.Subdocument_typekey`: Subdocument = js.native
+  @JSName("Word.Subdocument_typekey")
+  var WordDotSubdocument_typekey: Subdocument = js.native
   def Delete(): Unit = js.native
   def Open(): Document = js.native
   def Split(Range: typings.activexDashWord.Word.Range): Unit = js.native

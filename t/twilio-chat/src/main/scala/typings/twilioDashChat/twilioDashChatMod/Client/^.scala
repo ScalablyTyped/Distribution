@@ -1,5 +1,6 @@
 package typings.twilioDashChat.twilioDashChatMod.Client
 
+import typings.twilioDashChat.libPushnotificationMod.PushNotification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +28,6 @@ object ^ extends js.Object {
     * @param {Object} notificationPayload - Push notification payload
     * @returns {PushNotification|Error}
     */
-  def parsePushNotification(notificationPayload: js.Any): typings.twilioDashChat.libPushnotificationMod.PushNotification = js.native
+  def parsePushNotification(notificationPayload: js.Any): PushNotification = js.native
 }
 

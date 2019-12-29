@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLSelection")
 @js.native
 class IHTMLSelection protected () extends js.Object {
-  var `MSHTML.IHTMLSelection_typekey`: IHTMLSelection = js.native
+  @JSName("MSHTML.IHTMLSelection_typekey")
+  var MSHTMLDotIHTMLSelection_typekey: IHTMLSelection = js.native
   val anchorNode: IHTMLDOMNode = js.native
   val anchorOffset: Double = js.native
   val focusNode: IHTMLDOMNode = js.native

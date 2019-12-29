@@ -6,13 +6,13 @@ import typings.atJimpPng.atJimpPngNumbers.`1`
 import typings.atJimpPng.atJimpPngNumbers.`2`
 import typings.atJimpPng.atJimpPngNumbers.`3`
 import typings.atJimpPng.atJimpPngNumbers.`4`
-import typings.atJimpPng.atJimpPngStrings.`image/png`
+import typings.atJimpPng.atJimpPngStrings.imageSlashpng
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_0 extends js.Object {
-  var MIME_PNG: `image/png`
+  var MIME_PNG: imageSlashpng
   // PNG filter types
   var PNG_FILTER_AUTO: `-1`
   var PNG_FILTER_AVERAGE: `3`
@@ -25,7 +25,7 @@ trait Anon_0 extends js.Object {
 object Anon_0 {
   @scala.inline
   def apply(
-    MIME_PNG: `image/png`,
+    MIME_PNG: imageSlashpng,
     PNG_FILTER_AUTO: `-1`,
     PNG_FILTER_AVERAGE: `3`,
     PNG_FILTER_NONE: `0`,

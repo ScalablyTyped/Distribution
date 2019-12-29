@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.CheckState.Check
-import typings.ejDotWebDotAll.ej.CheckState.Indeterminate
-import typings.ejDotWebDotAll.ej.CheckState.Uncheck
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

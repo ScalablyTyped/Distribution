@@ -6,14 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var `PowerPoint.Application`: Application
+  @JSName("PowerPoint.Application")
+  var PowerPointDotApplication: Application
 }
 
 object ActiveXObjectNameMap {
   @scala.inline
-  def apply(`PowerPoint.Application`: Application): ActiveXObjectNameMap = {
+  def apply(PowerPointDotApplication: Application): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PowerPoint.Application")(`PowerPoint.Application`.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.Application")(PowerPointDotApplication.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

@@ -4,7 +4,6 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.layerLayerMod.State
 import typings.ol.pluggableMapMod.FrameState
-import typings.ol.rendererCanvasLayerMod.CanvasLayerRenderer
 import typings.ol.transformMod.Transform
 import typings.std.CanvasRenderingContext2D
 import typings.std.Uint8Array

@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.SigAndRefsTimeStamp")
 @js.native
-class SigAndRefsTimeStamp () extends XAdESTimeStamp
+class SigAndRefsTimeStamp ()
+  extends typings.xadesjs.buildTypesXmlMod.SigAndRefsTimeStamp
 

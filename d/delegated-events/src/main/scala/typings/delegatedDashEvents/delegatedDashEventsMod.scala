@@ -1,6 +1,5 @@
 package typings.delegatedDashEvents
 
-import typings.delegatedDashEvents.delegatedDashEventsMod.DelegatedEventListener
 import typings.delegatedDashEvents.delegatedDashEventsStrings.abort
 import typings.delegatedDashEvents.delegatedDashEventsStrings.animationcancel
 import typings.delegatedDashEvents.delegatedDashEventsStrings.animationend

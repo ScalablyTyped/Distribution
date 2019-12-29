@@ -31,7 +31,8 @@ class ExchangeUser protected () extends js.Object {
   var MobileTelephoneNumber: String = js.native
   var Name: String = js.native
   var OfficeLocation: String = js.native
-  var `Outlook.ExchangeUser_typekey`: ExchangeUser = js.native
+  @JSName("Outlook.ExchangeUser_typekey")
+  var OutlookDotExchangeUser_typekey: ExchangeUser = js.native
   val Parent: js.Any = js.native
   var PostalCode: String = js.native
   val PrimarySmtpAddress: String = js.native

@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmailTemplates extends js.Object {
-  var enrollAccount: typings.meteor.accountsDashBaseMod.EmailFields
+  var enrollAccount: EmailFields
   var from: String
-  var headers: js.UndefOr[typings.meteor.accountsDashBaseMod.Header] = js.undefined
-  var resetPassword: typings.meteor.accountsDashBaseMod.EmailFields
+  var headers: js.UndefOr[Header] = js.undefined
+  var resetPassword: EmailFields
   var siteName: String
-  var verifyEmail: typings.meteor.accountsDashBaseMod.EmailFields
+  var verifyEmail: EmailFields
 }
 
 object EmailTemplates {
   @scala.inline
   def apply(
-    enrollAccount: typings.meteor.accountsDashBaseMod.EmailFields,
+    enrollAccount: EmailFields,
     from: String,
-    resetPassword: typings.meteor.accountsDashBaseMod.EmailFields,
+    resetPassword: EmailFields,
     siteName: String,
-    verifyEmail: typings.meteor.accountsDashBaseMod.EmailFields,
-    headers: typings.meteor.accountsDashBaseMod.Header = null
+    verifyEmail: EmailFields,
+    headers: Header = null
   ): EmailTemplates = {
     val __obj = js.Dynamic.literal(enrollAccount = enrollAccount.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], resetPassword = resetPassword.asInstanceOf[js.Any], siteName = siteName.asInstanceOf[js.Any], verifyEmail = verifyEmail.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

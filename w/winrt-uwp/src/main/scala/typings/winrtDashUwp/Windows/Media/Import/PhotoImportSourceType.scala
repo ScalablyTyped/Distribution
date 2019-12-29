@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSourceType.audioRecorder
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSourceType.camera
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSourceType.generic
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSourceType.mediaPlayer
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSourceType.personalInfoManager
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSourceType.phone
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportSourceType.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

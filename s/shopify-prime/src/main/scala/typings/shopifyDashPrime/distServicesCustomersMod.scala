@@ -8,7 +8,6 @@ import typings.shopifyDashPrime.distOptionsBaseMod.DateOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.FieldOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.ListOptions
 import typings.shopifyDashPrime.distOptionsCustomersMod.CustomerSearchOptions
-import typings.shopifyDashPrime.distServicesCustomersMod.Customers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

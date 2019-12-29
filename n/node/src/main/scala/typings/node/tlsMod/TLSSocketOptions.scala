@@ -1,7 +1,7 @@
 package typings.node.tlsMod
 
 import typings.node.Buffer
-import typings.node.Error
+import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,32 +34,35 @@ trait TLSSocketOptions
 object TLSSocketOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[java.lang.String | Uint8Array]) | Uint8Array = null,
-    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
-    ca: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    cert: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    ciphers: java.lang.String = null,
-    clientCertEngine: java.lang.String = null,
-    crl: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    dhparam: java.lang.String | Buffer = null,
-    ecdhCurve: java.lang.String = null,
+    ALPNProtocols: (js.Array[String | Uint8Array]) | Uint8Array = null,
+    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
+    ca: String | Buffer | (js.Array[String | Buffer]) = null,
+    cert: String | Buffer | (js.Array[String | Buffer]) = null,
+    ciphers: String = null,
+    clientCertEngine: String = null,
+    crl: String | Buffer | (js.Array[String | Buffer]) = null,
+    dhparam: String | Buffer = null,
+    ecdhCurve: String = null,
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
     isServer: js.UndefOr[Boolean] = js.undefined,
-    key: java.lang.String | Buffer | (js.Array[Buffer | js.Object]) = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     maxVersion: SecureVersion = null,
     minVersion: SecureVersion = null,
-    passphrase: java.lang.String = null,
-    pfx: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer | js.Object]) = null,
+    passphrase: String = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     requestOCSP: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
     secureOptions: Int | Double = null,
-    secureProtocol: java.lang.String = null,
+    secureProtocol: String = null,
     server: typings.node.netMod.Server = null,
     session: Buffer = null,
-    sessionIdContext: java.lang.String = null
+    sessionIdContext: String = null,
+    sigalgs: String = null
   ): TLSSocketOptions = {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
@@ -79,6 +82,8 @@ object TLSSocketOptions {
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (!js.isUndefined(requestOCSP)) __obj.updateDynamic("requestOCSP")(requestOCSP.asInstanceOf[js.Any])
@@ -88,6 +93,7 @@ object TLSSocketOptions {
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[TLSSocketOptions]
   }
 }

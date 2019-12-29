@@ -11,7 +11,8 @@ class Border protected () extends js.Object {
   var Color: XlRgbColor | Double = js.native
   var ColorIndex: Double | XlColorIndex = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Border_typekey`: Border = js.native
+  @JSName("Excel.Border_typekey")
+  var ExcelDotBorder_typekey: Border = js.native
   var LineStyle: typings.activexDashExcel.Excel.LineStyle = js.native
   val Parent: js.Any = js.native
   var ThemeColor: XlThemeColor = js.native

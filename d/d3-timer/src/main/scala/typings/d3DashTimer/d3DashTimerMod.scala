@@ -1,6 +1,5 @@
 package typings.d3DashTimer
 
-import typings.d3DashTimer.d3DashTimerMod.Timer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

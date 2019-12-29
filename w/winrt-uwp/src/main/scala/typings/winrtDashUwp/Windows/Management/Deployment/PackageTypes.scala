@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageTypes.bundle
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageTypes.framework
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageTypes.main
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageTypes.none
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageTypes.resource
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageTypes.xap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

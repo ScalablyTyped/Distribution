@@ -2,7 +2,6 @@ package typings.jssDashPluginDashRuleDashValueDashObservable
 
 import typings.jss.jssMod.Plugin
 import typings.jss.jssMod.UpdateOptions
-import typings.jssDashPluginDashRuleDashValueDashObservable.jssDashPluginDashRuleDashValueDashObservableMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

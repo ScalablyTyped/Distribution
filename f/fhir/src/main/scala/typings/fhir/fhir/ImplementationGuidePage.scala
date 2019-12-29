@@ -17,9 +17,10 @@ trait ImplementationGuidePage extends BackboneElement {
     */
   var _kind: js.UndefOr[Element] = js.undefined
   /**
-    * Contains extended information for property 'package'.
+    * Name of package to include
     */
-  var _package: js.UndefOr[js.Array[Element]] = js.undefined
+  @JSName("package")
+  var _package: js.UndefOr[js.Array[Element | String]] = js.undefined
   /**
     * Contains extended information for property 'source'.
     */
@@ -40,10 +41,6 @@ trait ImplementationGuidePage extends BackboneElement {
     * page | example | list | include | directory | dictionary | toc | resource
     */
   var kind: code
-  /**
-    * Name of package to include
-    */
-  var `package`: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Nested Pages / Sections
     */
@@ -72,7 +69,7 @@ object ImplementationGuidePage {
     _format: Element = null,
     _id: Element = null,
     _kind: Element = null,
-    _package: js.Array[Element] = null,
+    _package: js.Array[Element | String] = null,
     _source: Element = null,
     _title: Element = null,
     _type: js.Array[Element] = null,
@@ -81,7 +78,6 @@ object ImplementationGuidePage {
     format: code = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    `package`: js.Array[String] = null,
     page: js.Array[ImplementationGuidePage] = null,
     `type`: js.Array[code] = null
   ): ImplementationGuidePage = {
@@ -90,7 +86,7 @@ object ImplementationGuidePage {
     if (_format != null) __obj.updateDynamic("_format")(_format.asInstanceOf[js.Any])
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     if (_kind != null) __obj.updateDynamic("_kind")(_kind.asInstanceOf[js.Any])
-    if (_package != null) __obj.updateDynamic("_package")(_package.asInstanceOf[js.Any])
+    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
     if (_title != null) __obj.updateDynamic("_title")(_title.asInstanceOf[js.Any])
     if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
@@ -99,7 +95,6 @@ object ImplementationGuidePage {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImplementationGuidePage]

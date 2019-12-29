@@ -6,18 +6,6 @@ import scala.scalajs.js.annotation._
 
 object browserfsStrings {
   @js.native
-  sealed trait `/` extends js.Object
-  
-  @js.native
-  sealed trait `:` extends js.Object
-  
-  @js.native
-  sealed trait `;` extends js.Object
-  
-  @js.native
-  sealed trait BACKSLASHBACKSLASH extends js.Object
-  
-  @js.native
   sealed trait bfs_utils extends js.Object
   
   @js.native
@@ -41,14 +29,6 @@ object browserfsStrings {
   @js.native
   sealed trait readwrite extends js.Object
   
-  @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
-  @scala.inline
-  def `:`: `:` = ":".asInstanceOf[`:`]
-  @scala.inline
-  def `;`: `;` = ";".asInstanceOf[`;`]
-  @scala.inline
-  def BACKSLASHBACKSLASH: BACKSLASHBACKSLASH = "\\".asInstanceOf[BACKSLASHBACKSLASH]
   @scala.inline
   def bfs_utils: bfs_utils = "bfs_utils".asInstanceOf[bfs_utils]
   @scala.inline

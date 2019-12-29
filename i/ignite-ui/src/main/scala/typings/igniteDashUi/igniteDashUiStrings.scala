@@ -7120,7 +7120,6 @@ object igniteDashUiStrings {
   def appliedColumnSortDirections: appliedColumnSortDirections = "appliedColumnSortDirections".asInstanceOf[appliedColumnSortDirections]
   @scala.inline
   def appliedLevelSortDirections: appliedLevelSortDirections = "appliedLevelSortDirections".asInstanceOf[appliedLevelSortDirections]
-  @JSName("apply")
   @scala.inline
   def apply: apply = "apply".asInstanceOf[apply]
   @scala.inline

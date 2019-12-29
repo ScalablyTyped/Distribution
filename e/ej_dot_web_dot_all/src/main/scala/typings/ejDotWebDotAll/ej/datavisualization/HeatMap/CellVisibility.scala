@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.CellVisibility.Hidden
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.CellVisibility.Visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

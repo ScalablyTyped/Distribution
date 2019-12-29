@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__")
+@JSImport("@angular/core", "\u0275SWITCH_ELEMENT_REF_FACTORY__POST_R3__")
 @js.native
 object ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__
   extends TopLevel[

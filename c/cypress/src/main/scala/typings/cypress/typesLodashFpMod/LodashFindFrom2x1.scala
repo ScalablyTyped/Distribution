@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashFindFrom2x1[T] extends js.Object {
-  def apply(fromIndex: Double): js.UndefOr[T] = js.native
+  def apply(fromIndex: Double): LodashFindFrom2x3[T] = js.native
   def apply(fromIndex: Double, collection: js.Object): js.UndefOr[T] = js.native
   def apply(fromIndex: Double, collection: List[T]): js.UndefOr[T] = js.native
   def apply(fromIndex: __): LodashFindFrom2x5[T] = js.native

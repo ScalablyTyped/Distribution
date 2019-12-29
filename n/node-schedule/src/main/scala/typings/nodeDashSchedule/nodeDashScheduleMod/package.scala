@@ -10,4 +10,5 @@ package object nodeDashScheduleMod {
   type JobCallback = js.Function1[/* fireDate */ Date, Unit]
   type Recurrence = Double | Range | String
   type RecurrenceSegment = Recurrence | js.Array[Recurrence]
+  type Timezone = String
 }

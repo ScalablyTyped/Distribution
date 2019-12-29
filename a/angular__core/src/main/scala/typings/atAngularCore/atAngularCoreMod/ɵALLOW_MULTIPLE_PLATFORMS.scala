@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵALLOW_MULTIPLE_PLATFORMS")
+@JSImport("@angular/core", "\u0275ALLOW_MULTIPLE_PLATFORMS")
 @js.native
 object ɵALLOW_MULTIPLE_PLATFORMS extends TopLevel[InjectionToken[Boolean]]
 

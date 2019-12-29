@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Boolean
-import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Dropdown
-import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Maskedit
-import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Numeric
-import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,12 +45,10 @@ object EditingType extends js.Object {
   object Boolean extends TopLevel[Boolean with Double]
   
   /* 4 */ @js.native
-  object DatePicker
-    extends TopLevel[typings.ejDotWebDotAll.ej.TreeGrid.EditingType.DatePicker with Double]
+  object DatePicker extends TopLevel[DatePicker with Double]
   
   /* 5 */ @js.native
-  object DateTimePicker
-    extends TopLevel[typings.ejDotWebDotAll.ej.TreeGrid.EditingType.DateTimePicker with Double]
+  object DateTimePicker extends TopLevel[DateTimePicker with Double]
   
   /* 3 */ @js.native
   object Dropdown extends TopLevel[Dropdown with Double]

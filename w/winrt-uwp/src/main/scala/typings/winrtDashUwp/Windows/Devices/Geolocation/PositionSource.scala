@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.cellular
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.ipAddress
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.satellite
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.unknown
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.wiFi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

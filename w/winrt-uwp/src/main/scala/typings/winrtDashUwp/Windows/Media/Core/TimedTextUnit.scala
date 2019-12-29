@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.TimedTextUnit.percentage
-import typings.winrtDashUwp.Windows.Media.Core.TimedTextUnit.pixels
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

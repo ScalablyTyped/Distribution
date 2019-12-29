@@ -18,7 +18,6 @@ class Strategy protected ()
     issue: IssueFunctionWithRequest
   ) = this()
   def this(options: StrategyOption, verify: VerifyFunction, issue: IssueFunction) = this()
-  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
   def authenticate(req: Request[ParamsDictionary], options: AuthenticateOptions): Unit = js.native
 }
 

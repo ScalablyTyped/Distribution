@@ -1,7 +1,5 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.createTaskProcessorWorker.TaskProcessorWorkerFunction
-import typings.cesium.cesiumMod.createTaskProcessorWorker.WorkerFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.dwt.dynamsoft.BarcodeReader
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_CandidateText
-import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_PartialText
-import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_RawText
-import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_StandardText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

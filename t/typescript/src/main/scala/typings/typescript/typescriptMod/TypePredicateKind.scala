@@ -1,9 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.TypePredicateKind.AssertsIdentifier
-import typings.typescript.typescriptMod.TypePredicateKind.AssertsThis
-import typings.typescript.typescriptMod.TypePredicateKind.This
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

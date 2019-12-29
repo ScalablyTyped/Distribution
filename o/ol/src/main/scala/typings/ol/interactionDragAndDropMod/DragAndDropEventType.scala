@@ -1,7 +1,6 @@
 package typings.ol.interactionDragAndDropMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.interactionDragAndDropMod.DragAndDropEventType.ADD_FEATURES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

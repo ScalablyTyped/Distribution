@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAccountIdAltBearertokenCallbackCountries extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** REQUIRED. See _General rules_ for more information about this field. */

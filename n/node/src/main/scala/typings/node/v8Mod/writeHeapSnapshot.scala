@@ -16,7 +16,7 @@ object writeHeapSnapshot extends js.Object {
     * `{thread_id}` will be `0` when `writeHeapSnapshot()` is called from
     * the main Node.js thread or the id of a worker thread.
     */
-  def apply(): java.lang.String = js.native
-  def apply(fileName: java.lang.String): java.lang.String = js.native
+  def apply(): String = js.native
+  def apply(fileName: String): String = js.native
 }
 

@@ -1,11 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.MediaErrorCode.aborted
-import typings.playerframework.PlayerFramework.MediaErrorCode.decode
-import typings.playerframework.PlayerFramework.MediaErrorCode.network
-import typings.playerframework.PlayerFramework.MediaErrorCode.notSupported
-import typings.playerframework.PlayerFramework.MediaErrorCode.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

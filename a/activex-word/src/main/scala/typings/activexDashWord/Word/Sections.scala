@@ -14,7 +14,8 @@ class Sections protected () extends js.Object {
   val Last: Section = js.native
   var PageSetup: typings.activexDashWord.Word.PageSetup = js.native
   val Parent: js.Any = js.native
-  var `Word.Sections_typekey`: Sections = js.native
+  @JSName("Word.Sections_typekey")
+  var WordDotSections_typekey: Sections = js.native
   def Add(): Section = js.native
   def Add(Range: js.Any): Section = js.native
   def Add(Range: js.Any, Start: js.Any): Section = js.native

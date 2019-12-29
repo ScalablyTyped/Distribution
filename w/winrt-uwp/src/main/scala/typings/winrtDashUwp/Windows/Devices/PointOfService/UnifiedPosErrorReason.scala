@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.busy
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.closed
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.disabled
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.extended
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.failure
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.illegal
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.noHardware
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.noService
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.offline
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.timeout
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorReason.unknownErrorReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

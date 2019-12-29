@@ -13,7 +13,8 @@ class Conflict protected () extends js.Object {
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
   val Type: WdRevisionType = js.native
-  var `Word.Conflict_typekey`: Conflict = js.native
+  @JSName("Word.Conflict_typekey")
+  var WordDotConflict_typekey: Conflict = js.native
   def Accept(): Unit = js.native
   def Reject(): Unit = js.native
 }

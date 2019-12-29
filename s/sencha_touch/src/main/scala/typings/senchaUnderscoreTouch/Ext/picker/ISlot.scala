@@ -1,13 +1,13 @@
 package typings.senchaUnderscoreTouch.Ext.picker
 
+import typings.senchaUnderscoreTouch.Ext.dataview.IDataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISlot
-  extends typings.senchaUnderscoreTouch.Ext.dataview.IDataView {
+trait ISlot extends IDataView {
   /** [Config Option] (String) */
-  var align: js.UndefOr[java.lang.String] = js.undefined
+  var align: js.UndefOr[String] = js.undefined
   /** [Method] Looks at the data configuration and turns it into store
   		* @param data Object
   		* @returns Object
@@ -17,61 +17,61 @@ trait ISlot
   		* @param title String
   		* @returns String
   		*/
-  var applyTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], java.lang.String]] = js.undefined
+  var applyTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], String]] = js.undefined
   /** [Config Option] (String) */
-  var displayField: js.UndefOr[java.lang.String] = js.undefined
+  var displayField: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of align
   		* @returns String
   		*/
-  var getAlign: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAlign: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of displayField
   		* @returns String
   		*/
-  var getDisplayField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDisplayField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of name
   		* @returns String
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of title
   		* @returns String
   		*/
-  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of valueField
   		* @returns String
   		*/
-  var getValueField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getValueField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   @JSName("itemTpl")
-  var itemTpl_ISlot: js.UndefOr[java.lang.String] = js.undefined
+  var itemTpl_ISlot: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of align
   		* @param align String The new value.
   		*/
-  var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of displayField
   		* @param displayField String The new value.
   		*/
-  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of itemTpl
   		* @param itemTpl String The new value.
   		*/
   @JSName("setItemTpl")
-  var setItemTpl_ISlot: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setItemTpl_ISlot: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of name
   		* @param name String The new value.
   		*/
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of title
   		* @param title String The new value.
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of valueField
   		* @param valueField String The new value.
   		*/
-  var setValueField: js.UndefOr[js.Function1[/* valueField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setValueField: js.UndefOr[js.Function1[/* valueField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   /** [Method] Updates the align configuration
   		* @param newAlign Object
   		* @param oldAlign Object
@@ -82,34 +82,34 @@ trait ISlot
   /** [Config Option] (Number) */
   var value: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var valueField: js.UndefOr[java.lang.String] = js.undefined
+  var valueField: js.UndefOr[String] = js.undefined
 }
 
 object ISlot {
   @scala.inline
   def apply(
-    IDataView: typings.senchaUnderscoreTouch.Ext.dataview.IDataView = null,
-    align: java.lang.String = null,
+    IDataView: IDataView = null,
+    align: String = null,
     applyData: /* data */ js.UndefOr[js.Any] => _ = null,
-    applyTitle: /* title */ js.UndefOr[java.lang.String] => java.lang.String = null,
-    displayField: java.lang.String = null,
-    getAlign: () => java.lang.String = null,
-    getDisplayField: () => java.lang.String = null,
-    getName: () => java.lang.String = null,
-    getTitle: () => java.lang.String = null,
-    getValueField: () => java.lang.String = null,
-    itemTpl: java.lang.String = null,
-    name: java.lang.String = null,
-    setAlign: /* align */ js.UndefOr[java.lang.String] => Unit = null,
-    setDisplayField: /* displayField */ js.UndefOr[java.lang.String] => Unit = null,
-    setItemTpl: /* itemTpl */ js.UndefOr[java.lang.String] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
-    setValueField: /* valueField */ js.UndefOr[java.lang.String] => Unit = null,
-    title: java.lang.String = null,
+    applyTitle: /* title */ js.UndefOr[String] => String = null,
+    displayField: String = null,
+    getAlign: () => String = null,
+    getDisplayField: () => String = null,
+    getName: () => String = null,
+    getTitle: () => String = null,
+    getValueField: () => String = null,
+    itemTpl: String = null,
+    name: String = null,
+    setAlign: /* align */ js.UndefOr[String] => Unit = null,
+    setDisplayField: /* displayField */ js.UndefOr[String] => Unit = null,
+    setItemTpl: /* itemTpl */ js.UndefOr[String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
+    setValueField: /* valueField */ js.UndefOr[String] => Unit = null,
+    title: String = null,
     updateAlign: (/* newAlign */ js.UndefOr[js.Any], /* oldAlign */ js.UndefOr[js.Any]) => Unit = null,
     value: Int | Double = null,
-    valueField: java.lang.String = null
+    valueField: String = null
   ): ISlot = {
     val __obj = js.Dynamic.literal()
     if (IDataView != null) js.Dynamic.global.Object.assign(__obj, IDataView)

@@ -12,11 +12,11 @@ trait ISpawnOptions extends js.Object {
   /**
     * An array of arguments to pass to the command.
     */
-  var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * The command to execute. It should be in the system path.
     */
-  var cmd: js.UndefOr[java.lang.String] = js.undefined
+  var cmd: js.UndefOr[String] = js.undefined
   /**
     * If this value is set and an error occurs, it will be used as the value
     * and null will be passed as the error value.
@@ -37,8 +37,8 @@ trait ISpawnOptions extends js.Object {
 object ISpawnOptions {
   @scala.inline
   def apply(
-    args: js.Array[java.lang.String] = null,
-    cmd: java.lang.String = null,
+    args: js.Array[String] = null,
+    cmd: String = null,
     fallback: js.Any = null,
     grunt: js.UndefOr[Boolean] = js.undefined,
     opts: Anon_Custom = null

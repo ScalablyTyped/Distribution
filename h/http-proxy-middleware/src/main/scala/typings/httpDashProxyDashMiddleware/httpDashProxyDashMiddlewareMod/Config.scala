@@ -2,7 +2,7 @@ package typings.httpDashProxyDashMiddleware.httpDashProxyDashMiddlewareMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.httpDashProxy.httpDashProxyMod.ServerOptions
-import typings.httpDashProxyDashMiddleware.httpDashProxyDashMiddlewareNumbers.`false`
+import typings.httpDashProxyDashMiddleware.httpDashProxyDashMiddlewareBooleans.`false`
 import typings.httpDashProxyDashMiddleware.httpDashProxyDashMiddlewareStrings.debug
 import typings.httpDashProxyDashMiddleware.httpDashProxyDashMiddlewareStrings.error
 import typings.httpDashProxyDashMiddleware.httpDashProxyDashMiddlewareStrings.info

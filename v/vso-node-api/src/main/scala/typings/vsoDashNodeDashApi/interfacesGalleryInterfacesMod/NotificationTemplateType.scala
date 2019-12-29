@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.NotificationTemplateType.CustomerContactNotification
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.NotificationTemplateType.PublisherMemberUpdateNotification
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.NotificationTemplateType.QnaNotification
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.NotificationTemplateType.ReviewNotification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

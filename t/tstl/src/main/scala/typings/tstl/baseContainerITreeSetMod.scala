@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseContainerITreeSetMod.ITreeSet
 import typings.tstl.baseContainerSetContainerMod.SetContainer
 import typings.tstl.baseIteratorISetIteratorMod.ISetIterator
 import typings.tstl.baseIteratorISetIteratorMod.ISetReverseIterator

@@ -1,6 +1,5 @@
 package typings.chaiDashWebdriverio
 
-import typings.chaiDashWebdriverio.Chai.Assertion
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

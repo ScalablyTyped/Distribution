@@ -1,5 +1,6 @@
 package typings.lodash.fpMod
 
+import typings.lodash.lodashMod.Function0
 import typings.lodash.lodashMod.Function1
 import typings.lodash.lodashMod.Function2
 import typings.lodash.lodashMod.Function3
@@ -21,15 +22,15 @@ trait LodashPartialRight extends js.Object {
   def apply[T1](func: __, arg1: js.Tuple4[T1, __, __, __]): LodashPartialRight12x2[T1] = js.native
   def apply[T3](func: __, arg3: js.Tuple2[T3, __]): LodashPartialRight15x2[T3] = js.native
   def apply[T1, T2, R](func: Function2[T1, T2, R]): LodashPartialRight2x1[T1, T2, R] = js.native
-  def apply[T1, T2, R](func: Function2[T1, T2, R], arg1: js.Tuple2[T1, __]): Function1[T2, R] = js.native
+  def apply[T1, T2, R](func: Function2[T1, T2, R], arg1: js.Tuple2[T1, T2]): Function0[R] = js.native
   def apply[T1, T2, R](func: Function2[T1, T2, R], arg2: js.Array[T2]): Function1[T1, R] = js.native
   def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R]): LodashPartialRight5x1[T1, T2, T3, R] = js.native
-  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: js.Tuple3[T1, T2 | __, T3 | __]): Function1[T3, R] = js.native
-  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg2: js.Tuple2[T2, T3]): Function1[T1, R] = js.native
+  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: js.Tuple3[T1, __, __]): Function2[T2, T3, R] = js.native
+  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg2: js.Tuple2[T2, __]): Function2[T1, T3, R] = js.native
   def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg3: js.Array[T3]): Function2[T1, T2, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R]): LodashPartialRight12x1[T1, T2, T3, T4, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple4[T1, T2 | __, T3 | __, T4 | __]): Function1[T4, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: js.Tuple3[T2, T3, T4]): Function1[T1, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple4[T1, T2 | __, T3 | __, T4 | __]): Function2[T3, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: js.Tuple3[T2, T3 | __, T4 | __]): Function2[T1, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg3: js.Tuple2[T3, T4]): Function2[T1, T2, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg4: js.Array[T4]): Function3[T1, T2, T3, R] = js.native
   /**

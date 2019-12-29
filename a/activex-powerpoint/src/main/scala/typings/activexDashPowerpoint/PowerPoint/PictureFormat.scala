@@ -21,7 +21,8 @@ class PictureFormat protected () extends js.Object {
   var CropRight: Double = js.native
   var CropTop: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.PictureFormat_typekey`: PictureFormat = js.native
+  @JSName("PowerPoint.PictureFormat_typekey")
+  var PowerPointDotPictureFormat_typekey: PictureFormat = js.native
   var TransparencyColor: MsoRGBType = js.native
   var TransparentBackground: MsoTriState = js.native
   def IncrementBrightness(Increment: Double): Unit = js.native

@@ -13,7 +13,8 @@ class MarkAsTaskRuleAction protected () extends js.Object {
   var Enabled: Boolean = js.native
   var FlagTo: String = js.native
   var MarkInterval: OlMarkInterval = js.native
-  var `Outlook.MarkAsTaskRuleAction_typekey`: MarkAsTaskRuleAction = js.native
+  @JSName("Outlook.MarkAsTaskRuleAction_typekey")
+  var OutlookDotMarkAsTaskRuleAction_typekey: MarkAsTaskRuleAction = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

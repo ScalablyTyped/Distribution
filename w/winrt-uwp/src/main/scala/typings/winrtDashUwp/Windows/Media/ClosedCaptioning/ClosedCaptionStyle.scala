@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.ClosedCaptioning
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.casual
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.cursive
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.default
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.monospacedWithSerifs
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.monospacedWithoutSerifs
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.proportionalWithSerifs
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.proportionalWithoutSerifs
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.smallCapitals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

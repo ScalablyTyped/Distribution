@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Area
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Column
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

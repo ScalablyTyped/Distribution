@@ -1,12 +1,12 @@
 package typings.extjs.Ext.slider
 
 import typings.extjs.Ext.Array
+import typings.extjs.Ext.form.field.IBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IMultiSlider
-  extends typings.extjs.Ext.form.field.IBase {
+trait IMultiSlider extends IBase {
   /** [Method] Creates a new thumb and adds it to the slider
   		* @param value Number The initial value to set on the thumb.
   		* @returns any The thumb
@@ -82,7 +82,7 @@ trait IMultiSlider
 object IMultiSlider {
   @scala.inline
   def apply(
-    IBase: typings.extjs.Ext.form.field.IBase = null,
+    IBase: IBase = null,
     addThumb: /* value */ js.UndefOr[Double] => _ = null,
     animate: js.UndefOr[Boolean] = js.undefined,
     clickToChange: js.UndefOr[Boolean] = js.undefined,

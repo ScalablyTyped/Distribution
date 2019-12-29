@@ -1,18 +1,6 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Apr
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Aug
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Dec
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Feb
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jan
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jul
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jun
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Mar
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.May
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Nov
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Oct
-import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Sep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

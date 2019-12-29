@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLHeadElement")
 @js.native
 class HTMLHeadElement protected () extends js.Object {
-  var `MSHTML.HTMLHeadElement_typekey`: HTMLHeadElement = js.native
+  @JSName("MSHTML.HTMLHeadElement_typekey")
+  var MSHTMLDotHTMLHeadElement_typekey: HTMLHeadElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

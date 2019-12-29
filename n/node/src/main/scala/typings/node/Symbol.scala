@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 object Symbol extends SymbolConstructor {
   /* CompleteClass */
   override val asyncIterator: js.Symbol = js.native
-  /* CompleteClass */
-  override val iterator: js.Symbol = js.native
-  /* CompleteClass */
-  override val observable: js.Symbol = js.native
 }
 

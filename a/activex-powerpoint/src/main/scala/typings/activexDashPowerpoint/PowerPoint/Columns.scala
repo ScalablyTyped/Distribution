@@ -10,7 +10,8 @@ class Columns protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Columns_typekey`: Columns = js.native
+  @JSName("PowerPoint.Columns_typekey")
+  var PowerPointDotColumns_typekey: Columns = js.native
   /** @param number [BeforeColumn=-1] */
   def Add(): Column = js.native
   def Add(BeforeColumn: Double): Column = js.native

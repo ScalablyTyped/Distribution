@@ -3,12 +3,6 @@ package typings.lambdaDashTester
 import typings.awsDashLambda.awsDashLambdaMod.ClientContext
 import typings.awsDashLambda.awsDashLambdaMod.Context
 import typings.awsDashLambda.awsDashLambdaMod.Handler
-import typings.lambdaDashTester.lambdaDashTesterMod.HandlerError
-import typings.lambdaDashTester.lambdaDashTesterMod.HandlerEvent
-import typings.lambdaDashTester.lambdaDashTesterMod.HandlerResult
-import typings.lambdaDashTester.lambdaDashTesterMod.LambdaTester
-import typings.lambdaDashTester.lambdaDashTesterMod.Verifier
-import typings.lambdaDashTester.lambdaDashTesterMod.VerifierFn
 import typings.std.Error
 import typings.std.NonNullable
 import scala.scalajs.js

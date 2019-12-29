@@ -1,9 +1,6 @@
 package typings.sipDotJs.libConstantsMod.C
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libConstantsMod.C.supported.REQUIRED
-import typings.sipDotJs.libConstantsMod.C.supported.SUPPORTED
-import typings.sipDotJs.libConstantsMod.C.supported.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

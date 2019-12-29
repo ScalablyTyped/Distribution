@@ -1,8 +1,6 @@
 package typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceFormat.JSON
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceFormat.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

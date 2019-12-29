@@ -30,7 +30,7 @@ trait IFileInput extends IInput {
   		* @returns String value The field value.
   		*/
   @JSName("getValue")
-  var getValue_IFileInput: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getValue_IFileInput: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function) */
   var me: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Function) */
@@ -65,7 +65,7 @@ object IFileInput {
     getCapture: () => _ = null,
     getFiles: () => FileList = null,
     getMultiple: () => Boolean = null,
-    getValue: () => java.lang.String = null,
+    getValue: () => String = null,
     me: js.Any = null,
     newValue: js.Any = null,
     setAccept: /* accept */ js.UndefOr[js.Any] => Unit = null,

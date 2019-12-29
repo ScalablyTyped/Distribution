@@ -17,7 +17,7 @@ trait SearchInContentParameterType extends js.Object {
   /**
     * String to search for.
     */
-  var query: java.lang.String
+  var query: String
   /**
     * Id of the script to search in.
     */
@@ -27,7 +27,7 @@ trait SearchInContentParameterType extends js.Object {
 object SearchInContentParameterType {
   @scala.inline
   def apply(
-    query: java.lang.String,
+    query: String,
     scriptId: ScriptId,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     isRegex: js.UndefOr[Boolean] = js.undefined

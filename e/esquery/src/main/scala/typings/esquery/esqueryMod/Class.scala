@@ -10,7 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Class extends Atom {
+trait Class
+  extends Atom
+     with Selector {
   var name: declaration | expression | function | pattern | statement
   @JSName("type")
   var type_Class: `class`

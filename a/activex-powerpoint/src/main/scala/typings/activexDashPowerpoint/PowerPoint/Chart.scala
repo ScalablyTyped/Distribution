@@ -45,7 +45,8 @@ class Chart protected () extends js.Object {
   val PlotArea: typings.activexDashPowerpoint.PowerPoint.PlotArea = js.native
   var PlotBy: XlRowCol = js.native
   var PlotVisibleOnly: Boolean = js.native
-  var `PowerPoint.Chart_typekey`: Chart = js.native
+  @JSName("PowerPoint.Chart_typekey")
+  var PowerPointDotChart_typekey: Chart = js.native
   var RightAngleAxes: js.Any = js.native
   var Rotation: js.Any = js.native
   val Shapes: typings.activexDashPowerpoint.PowerPoint.Shapes = js.native

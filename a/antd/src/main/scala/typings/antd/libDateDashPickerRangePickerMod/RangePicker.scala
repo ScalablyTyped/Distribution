@@ -23,7 +23,7 @@ trait RangePicker
   def clearHoverValue(): Unit = js.native
   def clearSelection(e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MRangePicker(`_`: js.Any, prevState: RangePickerState): Unit = js.native
+  def componentDidUpdate_MRangePicker(_underscore: js.Any, prevState: RangePickerState): Unit = js.native
   def focus(): Unit = js.native
   def handleCalendarInputSelect(value: RangePickerValue): Unit = js.native
   def handleChange(value: RangePickerValue): Unit = js.native

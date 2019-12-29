@@ -67,7 +67,7 @@ import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.reactDashTextDashMask.Anon_IndexesOfPipedChars
-import typings.reactDashTextDashMask.reactDashTextDashMaskNumbers.`false`
+import typings.reactDashTextDashMask.reactDashTextDashMaskBooleans.`false`
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement

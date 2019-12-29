@@ -38,7 +38,7 @@ trait IRendererOptions extends js.Object {
   /**
     * Render wireframes only
     * @type boolean
-    * @default true 
+    * @default true
     */
   var wireframes: js.UndefOr[Boolean] = js.undefined
 }

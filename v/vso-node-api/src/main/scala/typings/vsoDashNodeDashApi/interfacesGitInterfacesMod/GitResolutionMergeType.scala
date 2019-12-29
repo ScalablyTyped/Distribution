@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionMergeType.AutoMerged
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionMergeType.TakeSourceContent
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionMergeType.TakeTargetContent
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionMergeType.Undecided
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionMergeType.UserMerged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

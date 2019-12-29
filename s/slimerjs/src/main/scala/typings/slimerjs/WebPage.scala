@@ -73,9 +73,9 @@ trait WebPage extends js.Object {
   def includeJs(url: String): js.Promise[Unit] = js.native
   def includeJs(url: String, callback: js.Function0[Unit]): Unit = js.native
   def initialized(): Unit = js.native
-  def injectJs(filename: String): js.Promise[Boolean] = js.native
+  def injectJs(filename: String): Boolean = js.native
   @JSName("injectJs")
-  def injectJs_Boolean(filename: String): Boolean = js.native
+  def injectJs_Promise(filename: String): js.Promise[Boolean] = js.native
   def javaScriptAlertSent(msg: String): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String, lineNum: Double): Unit = js.native
@@ -126,9 +126,9 @@ trait WebPage extends js.Object {
   def reload(): Unit = js.native
   def render(filename: String): js.Promise[Unit] = js.native
   def render(filename: String, options: Anon_Format): js.Promise[Unit] = js.native
-  def renderBase64(`type`: String): js.Promise[String] = js.native
+  def renderBase64(format: String): String = js.native
   @JSName("renderBase64")
-  def renderBase64_String(format: String): String = js.native
+  def renderBase64_Promise(`type`: String): js.Promise[String] = js.native
   // render(filename: string): Promise<void>;
   @JSName("render")
   def render_Unit(filename: String): Unit = js.native
@@ -140,21 +140,21 @@ trait WebPage extends js.Object {
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any, modifier: Double): Unit = js.native
   def sendEvent(keyboardEventType: String, key: String): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Null, null2: Null, modifier: Double): js.Promise[Unit] = js.native
-  def sendEvent(mouseEventType: String): js.Promise[Unit] = js.native
-  def sendEvent(mouseEventType: String, mouseX: Double): js.Promise[Unit] = js.native
-  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
-  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
+  def sendEvent(mouseEventType: String): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): Unit = js.native
   @JSName("sendEvent")
-  def sendEvent_Unit(mouseEventType: String): Unit = js.native
+  def sendEvent_Promise(mouseEventType: String): js.Promise[Unit] = js.native
   @JSName("sendEvent")
-  def sendEvent_Unit(mouseEventType: String, mouseX: Double): Unit = js.native
+  def sendEvent_Promise(mouseEventType: String, mouseX: Double): js.Promise[Unit] = js.native
   @JSName("sendEvent")
-  def sendEvent_Unit(mouseEventType: String, mouseX: Double, mouseY: Double): Unit = js.native
+  def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
   @JSName("sendEvent")
-  def sendEvent_Unit(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): Unit = js.native
-  def setContent(html: String, url: String): js.Promise[String] = js.native
+  def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
+  def setContent(content: String, url: String): Unit = js.native
   @JSName("setContent")
-  def setContent_Unit(content: String, url: String): Unit = js.native
+  def setContent_Promise(html: String, url: String): js.Promise[String] = js.native
   def stop(): Unit = js.native
   def switchToChildFrame(framePosOrName: String): Unit = js.native
   // switchToFrame(framePosition: number): void;

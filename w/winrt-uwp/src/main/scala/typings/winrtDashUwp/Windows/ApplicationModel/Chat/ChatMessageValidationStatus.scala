@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidBody
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidData
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidOther
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidRecipients
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.messageTooLarge
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.noRecipients
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.tooManyAttachments
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.tooManyRecipients
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.transportInactive
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.transportNotFound
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,9 +22,6 @@ object create extends js.Object {
     * @param properties The socket properties.
     * @param callback   Called when the socket has been created.
     */
-  def apply(
-    properties: typings.chromeDashApps.chrome.sockets.tcpServer.SocketProperties,
-    callback: js.Function1[/* createInfo */ CreateInfo, Unit]
-  ): Unit = js.native
+  def apply(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = js.native
 }
 

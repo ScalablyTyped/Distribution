@@ -1,14 +1,13 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait requireUtils extends js.Object {
-  def when(moduleRequire: js.Any, moduleNames: String): IPromise[_] = js.native
+  def when(moduleRequire: js.Any, moduleNames: String): js.Promise[_] = js.native
   /**
     * Dynamically requires one or more modules and returns a promise that resolves when all the specified modules have loaded.
     *
@@ -18,7 +17,7 @@ trait requireUtils extends js.Object {
     * @param moduleNames The names of the modules to load.
     *
     */
-  def when(moduleRequire: js.Any, moduleNames: js.Array[String]): IPromise[_] = js.native
+  def when(moduleRequire: js.Any, moduleNames: js.Array[String]): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.requireUtils")

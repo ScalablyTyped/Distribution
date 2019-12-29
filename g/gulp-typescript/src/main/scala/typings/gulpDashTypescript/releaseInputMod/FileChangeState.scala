@@ -1,11 +1,6 @@
 package typings.gulpDashTypescript.releaseInputMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.gulpDashTypescript.releaseInputMod.FileChangeState.Deleted
-import typings.gulpDashTypescript.releaseInputMod.FileChangeState.Equal
-import typings.gulpDashTypescript.releaseInputMod.FileChangeState.Modified
-import typings.gulpDashTypescript.releaseInputMod.FileChangeState.New
-import typings.gulpDashTypescript.releaseInputMod.FileChangeState.NotFound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

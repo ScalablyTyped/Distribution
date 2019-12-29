@@ -1,13 +1,6 @@
 package typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSMathOperator.clamp
-import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSMathOperator.invert
-import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSMathOperator.max
-import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSMathOperator.min
-import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSMathOperator.negate
-import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSMathOperator.product
-import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSMathOperator.sum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

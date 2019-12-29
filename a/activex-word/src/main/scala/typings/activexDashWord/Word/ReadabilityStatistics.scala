@@ -11,7 +11,8 @@ class ReadabilityStatistics protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ReadabilityStatistics_typekey`: ReadabilityStatistics = js.native
+  @JSName("Word.ReadabilityStatistics_typekey")
+  var WordDotReadabilityStatistics_typekey: ReadabilityStatistics = js.native
   def Item(Index: js.Any): ReadabilityStatistic = js.native
 }
 

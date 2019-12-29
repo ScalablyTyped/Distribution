@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassToolbar
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Toolbar]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Toolbar] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Toolbar]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Toolbar] {
   var Locale: js.Any = js.native
   var fn: Toolbar = js.native
 }

@@ -13,6 +13,7 @@ import typings.instagramDashPrivateDashApi.distFeedsMod.DirectThreadFeed
 import typings.instagramDashPrivateDashApi.distFeedsMod.DiscoverFeed
 import typings.instagramDashPrivateDashApi.distFeedsMod.IgtvBrowseFeed
 import typings.instagramDashPrivateDashApi.distFeedsMod.IgtvChannelFeed
+import typings.instagramDashPrivateDashApi.distFeedsMod.LikedFeed
 import typings.instagramDashPrivateDashApi.distFeedsMod.LocationFeed
 import typings.instagramDashPrivateDashApi.distFeedsMod.MediaCommentsFeed
 import typings.instagramDashPrivateDashApi.distFeedsMod.MusicGenreFeed
@@ -81,6 +82,7 @@ object distCoreFeedDotFactoryMod extends js.Object {
     def igtvChaining(id: Double): IgtvChannelFeed = js.native
     def igtvChannel(id: String): IgtvChannelFeed = js.native
     def igtvChannel(id: Double): IgtvChannelFeed = js.native
+    def liked(): LikedFeed = js.native
     def listReelMediaViewers(mediaId: String): ListReelMediaViewerFeed = js.native
     def location(id: String): LocationFeed = js.native
     def location(id: Double): LocationFeed = js.native

@@ -41,10 +41,8 @@ trait Adapter extends js.Object {
   var name: String = js.native
   /** Namespace of adapter objects: "<name>.<instance>" */
   val namespace: String = js.native
-  var objects: Objects = js.native
   /** content of package.json */
   var pack: js.Any = js.native
-  var states: States = js.native
   /** Stops the adapter. Note: Is not always defined. */
   var stop: js.UndefOr[js.Function0[Unit]] = js.native
   /** system part of the adapter settings */

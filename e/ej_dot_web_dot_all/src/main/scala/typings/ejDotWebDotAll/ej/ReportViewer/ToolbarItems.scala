@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.Export
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.FittoPage
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.PageNavigation
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.PageSetup
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.Parameters
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.PrintLayout
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.Refresh
-import typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,8 +65,7 @@ object ToolbarItems extends js.Object {
   object Parameters extends TopLevel[Parameters with Double]
   
   /* 0 */ @js.native
-  object Print
-    extends TopLevel[typings.ejDotWebDotAll.ej.ReportViewer.ToolbarItems.Print with Double]
+  object Print extends TopLevel[Print with Double]
   
   /* 7 */ @js.native
   object PrintLayout extends TopLevel[PrintLayout with Double]

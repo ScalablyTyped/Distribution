@@ -1,6 +1,6 @@
 package typings.logger.loggerMod
 
-import typings.logger.loggerNumbers.`false`
+import typings.logger.loggerBooleans.`false`
 import typings.logger.loggerStrings.debug
 import typings.logger.loggerStrings.error
 import typings.logger.loggerStrings.fatal

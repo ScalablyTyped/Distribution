@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.IVBSAXDTDHandler")
 @js.native
 class IVBSAXDTDHandler protected () extends js.Object {
-  var `MSXML2.IVBSAXDTDHandler_typekey`: IVBSAXDTDHandler = js.native
+  @JSName("MSXML2.IVBSAXDTDHandler_typekey")
+  var MSXML2DotIVBSAXDTDHandler_typekey: IVBSAXDTDHandler = js.native
   /** Receive notification of a notation declaration event. */
   def notationDecl(strName: String, strPublicId: String, strSystemId: String): Unit = js.native
   /** Receive notification of an unparsed entity declaration event. */

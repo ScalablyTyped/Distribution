@@ -1,27 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.FillPattern.checker
-import typings.officeDashJs.Excel.FillPattern.crissCross
-import typings.officeDashJs.Excel.FillPattern.down
-import typings.officeDashJs.Excel.FillPattern.gray16
-import typings.officeDashJs.Excel.FillPattern.gray25
-import typings.officeDashJs.Excel.FillPattern.gray50
-import typings.officeDashJs.Excel.FillPattern.gray75
-import typings.officeDashJs.Excel.FillPattern.gray8
-import typings.officeDashJs.Excel.FillPattern.grid
-import typings.officeDashJs.Excel.FillPattern.horizontal
-import typings.officeDashJs.Excel.FillPattern.lightDown
-import typings.officeDashJs.Excel.FillPattern.lightHorizontal
-import typings.officeDashJs.Excel.FillPattern.lightUp
-import typings.officeDashJs.Excel.FillPattern.lightVertical
-import typings.officeDashJs.Excel.FillPattern.linearGradient
-import typings.officeDashJs.Excel.FillPattern.none
-import typings.officeDashJs.Excel.FillPattern.rectangularGradient
-import typings.officeDashJs.Excel.FillPattern.semiGray75
-import typings.officeDashJs.Excel.FillPattern.solid
-import typings.officeDashJs.Excel.FillPattern.up
-import typings.officeDashJs.Excel.FillPattern.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

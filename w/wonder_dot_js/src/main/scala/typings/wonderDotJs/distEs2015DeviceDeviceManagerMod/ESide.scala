@@ -1,10 +1,6 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.BACK
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.BOTH
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.FRONT
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

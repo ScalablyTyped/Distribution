@@ -48,15 +48,15 @@ object FileSystem extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Returns the value of readerType
   		* @returns String
   		*/
-  def getReaderType(): java.lang.String = js.native
+  def getReaderType(): String = js.native
   /** [Method] Returns the value of stringEncoding
   		* @returns String
   		*/
-  def getStringEncoding(): java.lang.String = js.native
+  def getStringEncoding(): String = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -82,12 +82,12 @@ object FileSystem extends js.Object {
   		* @param readerType String The new value.
   		*/
   def setReaderType(): Unit = js.native
-  def setReaderType(readerType: java.lang.String): Unit = js.native
+  def setReaderType(readerType: String): Unit = js.native
   /** [Method] Sets the value of stringEncoding
   		* @param stringEncoding String The new value.
   		*/
   def setStringEncoding(): Unit = js.native
-  def setStringEncoding(stringEncoding: java.lang.String): Unit = js.native
+  def setStringEncoding(stringEncoding: String): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
   		*/

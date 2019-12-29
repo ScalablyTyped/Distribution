@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.IBarHTMLTag.Div
-import typings.openui5.sap.m.IBarHTMLTag.Footer
-import typings.openui5.sap.m.IBarHTMLTag.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

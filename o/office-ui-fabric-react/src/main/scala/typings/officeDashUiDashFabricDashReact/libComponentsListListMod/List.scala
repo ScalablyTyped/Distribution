@@ -104,6 +104,9 @@ class List[T] protected ()
   def componentDidMount_MList(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MList(): Unit = js.native
+  /**
+    * Force the component to update.
+    */
   /* InferMemberOverrides */
   override def forceUpdate(): Unit = js.native
   def getStartItemIndexInView(measureItem: js.Function1[/* itemIndex */ Double, Double]): Double = js.native

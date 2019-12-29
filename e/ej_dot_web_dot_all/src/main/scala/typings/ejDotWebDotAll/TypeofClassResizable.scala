@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassResizable
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Resizable]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Resizable] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Resizable]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Resizable] {
   var Locale: js.Any = js.native
   var fn: Resizable = js.native
 }

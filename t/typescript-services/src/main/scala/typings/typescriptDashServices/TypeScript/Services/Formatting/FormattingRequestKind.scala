@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.TypeScript.Services.Formatting
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +29,25 @@ object FormattingRequestKind extends js.Object {
   @js.native
   sealed trait FormatSelection extends FormattingRequestKind
   
-  /* 0 */ val FormatDocument: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind.FormatDocument with Double = js.native
-  /* 4 */ val FormatOnClosingCurlyBrace: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind.FormatOnClosingCurlyBrace with Double = js.native
-  /* 2 */ val FormatOnEnter: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind.FormatOnEnter with Double = js.native
-  /* 5 */ val FormatOnPaste: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind.FormatOnPaste with Double = js.native
-  /* 3 */ val FormatOnSemicolon: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind.FormatOnSemicolon with Double = js.native
-  /* 1 */ val FormatSelection: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind.FormatSelection with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FormattingRequestKind with Double] = js.native
+  /* 0 */ @js.native
+  object FormatDocument extends TopLevel[FormatDocument with Double]
+  
+  /* 4 */ @js.native
+  object FormatOnClosingCurlyBrace extends TopLevel[FormatOnClosingCurlyBrace with Double]
+  
+  /* 2 */ @js.native
+  object FormatOnEnter extends TopLevel[FormatOnEnter with Double]
+  
+  /* 5 */ @js.native
+  object FormatOnPaste extends TopLevel[FormatOnPaste with Double]
+  
+  /* 3 */ @js.native
+  object FormatOnSemicolon extends TopLevel[FormatOnSemicolon with Double]
+  
+  /* 1 */ @js.native
+  object FormatSelection extends TopLevel[FormatSelection with Double]
+  
 }
 

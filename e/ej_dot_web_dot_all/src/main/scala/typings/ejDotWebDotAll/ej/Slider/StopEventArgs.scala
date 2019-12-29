@@ -13,7 +13,7 @@ trait StopEventArgs extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   /** returns the slider model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Slider.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns current handle number or index
     */
   var sliderIndex: js.UndefOr[Double] = js.undefined
@@ -30,7 +30,7 @@ object StopEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    model: typings.ejDotWebDotAll.ej.Slider.Model = null,
+    model: Model = null,
     sliderIndex: Int | Double = null,
     `type`: String = null,
     value: Int | Double = null

@@ -11,7 +11,8 @@ class PictureEffect protected () extends js.Object {
   val Creator: Double = js.native
   @JSName("EffectParameters")
   val EffectParameters_Original: EffectParameters = js.native
-  var `Office.PictureEffect_typekey`: PictureEffect = js.native
+  @JSName("Office.PictureEffect_typekey")
+  var OfficeDotPictureEffect_typekey: PictureEffect = js.native
   var Position: Double = js.native
   val Type: MsoPictureEffectType = js.native
   var Visible: MsoTriState = js.native

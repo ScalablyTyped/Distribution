@@ -28,7 +28,7 @@ trait MouseDownEventArgs extends js.Object {
   var item: js.UndefOr[String] = js.undefined
   /** returns the model value of the control.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ListView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the current text of item.
     */
   var text: js.UndefOr[String] = js.undefined
@@ -47,7 +47,7 @@ object MouseDownEventArgs {
     index: Int | Double = null,
     isChecked: js.UndefOr[Boolean] = js.undefined,
     item: String = null,
-    model: typings.ejDotWebDotAll.ej.ListView.Model = null,
+    model: Model = null,
     text: String = null,
     `type`: String = null
   ): MouseDownEventArgs = {

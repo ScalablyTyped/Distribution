@@ -38,10 +38,10 @@ object antdDashMobileStrings {
   sealed trait `9` extends InputKey
   
   @js.native
-  sealed trait DOT extends InputKey
+  sealed trait Dot extends InputKey
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait android extends js.Object
@@ -286,9 +286,9 @@ object antdDashMobileStrings {
   @scala.inline
   def `9`: `9` = "9".asInstanceOf[`9`]
   @scala.inline
-  def DOT: DOT = ".".asInstanceOf[DOT]
+  def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline

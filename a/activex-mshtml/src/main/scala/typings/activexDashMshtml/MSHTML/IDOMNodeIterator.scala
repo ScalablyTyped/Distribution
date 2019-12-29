@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IDOMNodeIterator")
 @js.native
 class IDOMNodeIterator protected () extends js.Object {
-  var `MSHTML.IDOMNodeIterator_typekey`: IDOMNodeIterator = js.native
+  @JSName("MSHTML.IDOMNodeIterator_typekey")
+  var MSHTMLDotIDOMNodeIterator_typekey: IDOMNodeIterator = js.native
   val expandEntityReferences: Boolean = js.native
   val filter: js.Any = js.native
   val root: js.Any = js.native

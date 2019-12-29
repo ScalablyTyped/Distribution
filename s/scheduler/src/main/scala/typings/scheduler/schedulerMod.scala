@@ -1,7 +1,5 @@
 package typings.scheduler
 
-import typings.scheduler.schedulerMod.CallbackNode
-import typings.scheduler.schedulerMod.FrameCallbackType
 import typings.scheduler.schedulerNumbers.`1`
 import typings.scheduler.schedulerNumbers.`2`
 import typings.scheduler.schedulerNumbers.`3`

@@ -13,7 +13,7 @@ object atOracleOraclejetNumbers {
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `0DOT5` extends js.Object
+  sealed trait `0.5` extends js.Object
   
   @js.native
   sealed trait `1` extends SEVERITY_LEVEL
@@ -44,7 +44,7 @@ object atOracleOraclejetNumbers {
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def `0DOT5`: `0DOT5` = 0.5.asInstanceOf[`0DOT5`]
+  def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline

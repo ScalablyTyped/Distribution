@@ -1,6 +1,5 @@
 package typings.dayjs.pluginWeekdayMod
 
-import typings.dayjs.pluginWeekdayMod.dayjsMod.Dayjs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,20 +21,20 @@ trait Performance extends js.Object {
     * @param name
     */
   def clearFunctions(): Unit = js.native
-  def clearFunctions(name: java.lang.String): Unit = js.native
+  def clearFunctions(name: String): Unit = js.native
   /**
     * If name is not provided, removes all PerformanceMark objects from the Performance Timeline.
     * If name is provided, removes only the named mark.
     * @param name
     */
   def clearMarks(): Unit = js.native
-  def clearMarks(name: java.lang.String): Unit = js.native
+  def clearMarks(name: String): Unit = js.native
   /**
     * If name is not provided, removes all PerformanceMeasure objects from the Performance Timeline.
     * If name is provided, removes only objects whose performanceEntry.name matches name.
     */
   def clearMeasures(): Unit = js.native
-  def clearMeasures(name: java.lang.String): Unit = js.native
+  def clearMeasures(name: String): Unit = js.native
   /**
     * Returns a list of all PerformanceEntry objects in chronological order with respect to performanceEntry.startTime.
     * @return list of all PerformanceEntry objects
@@ -47,15 +47,15 @@ trait Performance extends js.Object {
     * @param type
     * @return list of all PerformanceEntry objects
     */
-  def getEntriesByName(name: java.lang.String): js.Array[PerformanceEntry] = js.native
-  def getEntriesByName(name: java.lang.String, `type`: java.lang.String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByName(name: String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByName(name: String, `type`: String): js.Array[PerformanceEntry] = js.native
   /**
     * Returns a list of all PerformanceEntry objects in chronological order with respect to performanceEntry.startTime
     * whose performanceEntry.entryType is equal to type.
     * @param type
     * @return list of all PerformanceEntry objects
     */
-  def getEntriesByType(`type`: java.lang.String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByType(`type`: String): js.Array[PerformanceEntry] = js.native
   /**
     * Creates a new PerformanceMark entry in the Performance Timeline.
     * A PerformanceMark is a subclass of PerformanceEntry whose performanceEntry.entryType is always 'mark',
@@ -64,7 +64,7 @@ trait Performance extends js.Object {
     * @param name
     */
   def mark(): Unit = js.native
-  def mark(name: java.lang.String): Unit = js.native
+  def mark(name: String): Unit = js.native
   /**
     * Creates a new PerformanceMeasure entry in the Performance Timeline.
     * A PerformanceMeasure is a subclass of PerformanceEntry whose performanceEntry.entryType is always 'measure',
@@ -80,7 +80,7 @@ trait Performance extends js.Object {
     * @param startMark
     * @param endMark
     */
-  def measure(name: java.lang.String, startMark: java.lang.String, endMark: java.lang.String): Unit = js.native
+  def measure(name: String, startMark: String, endMark: String): Unit = js.native
   /**
     * @return the current high resolution millisecond timestamp
     */

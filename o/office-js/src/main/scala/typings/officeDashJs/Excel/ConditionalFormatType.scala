@@ -1,14 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalFormatType.cellValue
-import typings.officeDashJs.Excel.ConditionalFormatType.colorScale
-import typings.officeDashJs.Excel.ConditionalFormatType.containsText
-import typings.officeDashJs.Excel.ConditionalFormatType.custom
-import typings.officeDashJs.Excel.ConditionalFormatType.dataBar
-import typings.officeDashJs.Excel.ConditionalFormatType.iconSet
-import typings.officeDashJs.Excel.ConditionalFormatType.presetCriteria
-import typings.officeDashJs.Excel.ConditionalFormatType.topBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -18,10 +18,8 @@ import typings.ionic.definitionsMod.SuperAgentError
 import typings.ionic.definitionsMod.TokenPaginatorState
 import typings.ionic.ionicStrings.UNKNOWN_CONTENT_TYPE
 import typings.ionic.ionicStrings.UNKNOWN_RESPONSE_FORMAT
-import typings.ionic.ionicStrings.`application/json`
+import typings.ionic.ionicStrings.applicationSlashjson
 import typings.ionic.libErrorsMod.FatalException
-import typings.ionic.libHttpMod.SuperAgentRequest
-import typings.ionic.libHttpMod.SuperAgentResponse
 import typings.std.IteratorResult
 import typings.superagent.superagentMod.Request
 import scala.scalajs.js
@@ -84,7 +82,7 @@ object libHttpMod extends js.Object {
     /* protected */ def reqgen(): js.Promise[Anon_Req] = js.native
   }
   
-  val CONTENT_TYPE_JSON: `application/json` = js.native
+  val CONTENT_TYPE_JSON: applicationSlashjson = js.native
   val ERROR_UNKNOWN_CONTENT_TYPE: UNKNOWN_CONTENT_TYPE = js.native
   val ERROR_UNKNOWN_RESPONSE_FORMAT: UNKNOWN_RESPONSE_FORMAT = js.native
   def createFatalAPIFormat(req: SuperAgentRequest, res: APIResponse): FatalException = js.native

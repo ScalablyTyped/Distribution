@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IInfinite
-  extends typings.senchaUnderscoreTouch.Ext.carousel.ICarousel {
+trait IInfinite extends ICarousel {
   /** [Method] Returns the value of innerItemConfig
   		* @returns Object
   		*/
@@ -32,7 +31,7 @@ trait IInfinite
 object IInfinite {
   @scala.inline
   def apply(
-    ICarousel: typings.senchaUnderscoreTouch.Ext.carousel.ICarousel = null,
+    ICarousel: ICarousel = null,
     getInnerItemConfig: () => _ = null,
     getMaxItemIndex: () => _ = null,
     setIndicator: /* indicator */ js.UndefOr[js.Any] => Unit = null,

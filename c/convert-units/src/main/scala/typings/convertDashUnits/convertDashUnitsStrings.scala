@@ -191,7 +191,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `Tbs/s`
+  sealed trait TbsSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -266,7 +266,7 @@ object convertDashUnitsStrings {
   sealed trait bytes extends system
   
   @js.native
-  sealed trait `cl/s`
+  sealed trait clSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -286,7 +286,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `cm3/s`
+  sealed trait cm3Slashs
     extends uVolumeFlowRate
        with unit
   
@@ -296,7 +296,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `cup/s`
+  sealed trait cupSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -314,7 +314,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `deg/s`
+  sealed trait degSlashs
     extends uFrequency
        with unit
   
@@ -325,7 +325,7 @@ object convertDashUnitsStrings {
   sealed trait ditgital extends measure
   
   @js.native
-  sealed trait `dl/s`
+  sealed trait dlSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -338,17 +338,17 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `fl-oz/h`
+  sealed trait `fl-ozSlashh`
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `fl-oz/min`
+  sealed trait `fl-ozSlashmin`
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `fl-oz/s`
+  sealed trait `fl-ozSlashs`
     extends uVolumeFlowRate
        with unit
   
@@ -371,11 +371,6 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `ft/s`
-    extends uSpeed
-       with unit
-  
-  @js.native
   sealed trait ft2
     extends uArea
        with unit
@@ -386,18 +381,23 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `ft3/h`
+  sealed trait ft3Slashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `ft3/min`
+  sealed trait ft3Slashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `ft3/s`
+  sealed trait ft3Slashs
     extends uVolumeFlowRate
+       with unit
+  
+  @js.native
+  sealed trait ftSlashs
+    extends uSpeed
        with unit
   
   @js.native
@@ -411,17 +411,17 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `gal/h`
+  sealed trait galSlashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `gal/min`
+  sealed trait galSlashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `gal/s`
+  sealed trait galSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -467,17 +467,17 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `in3/h`
+  sealed trait in3Slashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `in3/min`
+  sealed trait in3Slashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `in3/s`
+  sealed trait in3Slashs
     extends uVolumeFlowRate
        with unit
   
@@ -542,23 +542,18 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `kl/h`
+  sealed trait klSlashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `kl/min`
+  sealed trait klSlashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `kl/s`
+  sealed trait klSlashs
     extends uVolumeFlowRate
-       with unit
-  
-  @js.native
-  sealed trait `km/h`
-    extends uSpeed
        with unit
   
   @js.native
@@ -572,8 +567,13 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `km3/s`
+  sealed trait km3Slashs
     extends uVolumeFlowRate
+       with unit
+  
+  @js.native
+  sealed trait kmSlashh
+    extends uSpeed
        with unit
   
   @js.native
@@ -597,17 +597,17 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `l/h`
+  sealed trait lSlashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `l/min`
+  sealed trait lSlashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `l/s`
+  sealed trait lSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -627,16 +627,6 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `m/h`
-    extends uSpeed
-       with unit
-  
-  @js.native
-  sealed trait `m/s`
-    extends uSpeed
-       with unit
-  
-  @js.native
   sealed trait m2
     extends uArea
        with unit
@@ -647,17 +637,17 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `m3/h`
+  sealed trait m3Slashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `m3/min`
+  sealed trait m3Slashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `m3/s`
+  sealed trait m3Slashs
     extends uVolumeFlowRate
        with unit
   
@@ -669,6 +659,16 @@ object convertDashUnitsStrings {
   @js.native
   sealed trait mHz_
     extends uFrequency
+       with unit
+  
+  @js.native
+  sealed trait mSlashh
+    extends uSpeed
+       with unit
+  
+  @js.native
+  sealed trait mSlashs
+    extends uSpeed
        with unit
   
   @js.native
@@ -733,7 +733,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `min/km`
+  sealed trait minSlashkm
     extends uPace
        with unit
   
@@ -743,7 +743,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `ml/s`
+  sealed trait mlSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -763,7 +763,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `mm3/s`
+  sealed trait mm3Slashs
     extends uVolumeFlowRate
        with unit
   
@@ -809,17 +809,17 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `pnt/h`
+  sealed trait pntSlashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `pnt/min`
+  sealed trait pntSlashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `pnt/s`
+  sealed trait pntSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -860,7 +860,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `qt/s`
+  sealed trait qtSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -870,7 +870,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `rad/s`
+  sealed trait radSlashs
     extends uFrequency
        with unit
   
@@ -891,12 +891,12 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `s/ft`
+  sealed trait sSlashft
     extends uPace
        with unit
   
   @js.native
-  sealed trait `s/m`
+  sealed trait sSlashm
     extends uPace
        with unit
   
@@ -925,7 +925,7 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `tsp/s`
+  sealed trait tspSlashs
     extends uVolumeFlowRate
        with unit
   
@@ -949,17 +949,17 @@ object convertDashUnitsStrings {
        with unit
   
   @js.native
-  sealed trait `yd3/h`
+  sealed trait yd3Slashh
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `yd3/min`
+  sealed trait yd3Slashmin
     extends uVolumeFlowRate
        with unit
   
   @js.native
-  sealed trait `yd3/s`
+  sealed trait yd3Slashs
     extends uVolumeFlowRate
        with unit
   
@@ -1033,7 +1033,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def Tbs: Tbs = "Tbs".asInstanceOf[Tbs]
   @scala.inline
-  def `Tbs/s`: `Tbs/s` = "Tbs/s".asInstanceOf[`Tbs/s`]
+  def TbsSlashs: TbsSlashs = "Tbs/s".asInstanceOf[TbsSlashs]
   @scala.inline
   def V: V = "V".asInstanceOf[V]
   @scala.inline
@@ -1067,7 +1067,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def bytes: bytes = "bytes".asInstanceOf[bytes]
   @scala.inline
-  def `cl/s`: `cl/s` = "cl/s".asInstanceOf[`cl/s`]
+  def clSlashs: clSlashs = "cl/s".asInstanceOf[clSlashs]
   @scala.inline
   def cm: cm = "cm".asInstanceOf[cm]
   @scala.inline
@@ -1075,11 +1075,11 @@ object convertDashUnitsStrings {
   @scala.inline
   def cm3: cm3 = "cm3".asInstanceOf[cm3]
   @scala.inline
-  def `cm3/s`: `cm3/s` = "cm3/s".asInstanceOf[`cm3/s`]
+  def cm3Slashs: cm3Slashs = "cm3/s".asInstanceOf[cm3Slashs]
   @scala.inline
   def cup: cup = "cup".asInstanceOf[cup]
   @scala.inline
-  def `cup/s`: `cup/s` = "cup/s".asInstanceOf[`cup/s`]
+  def cupSlashs: cupSlashs = "cup/s".asInstanceOf[cupSlashs]
   @scala.inline
   def current: current = "current".asInstanceOf[current]
   @scala.inline
@@ -1087,23 +1087,23 @@ object convertDashUnitsStrings {
   @scala.inline
   def deg: deg = "deg".asInstanceOf[deg]
   @scala.inline
-  def `deg/s`: `deg/s` = "deg/s".asInstanceOf[`deg/s`]
+  def degSlashs: degSlashs = "deg/s".asInstanceOf[degSlashs]
   @scala.inline
   def distance: distance = "distance".asInstanceOf[distance]
   @scala.inline
   def ditgital: ditgital = "ditgital".asInstanceOf[ditgital]
   @scala.inline
-  def `dl/s`: `dl/s` = "dl/s".asInstanceOf[`dl/s`]
+  def dlSlashs: dlSlashs = "dl/s".asInstanceOf[dlSlashs]
   @scala.inline
   def energy: energy = "energy".asInstanceOf[energy]
   @scala.inline
   def `fl-oz`: `fl-oz` = "fl-oz".asInstanceOf[`fl-oz`]
   @scala.inline
-  def `fl-oz/h`: `fl-oz/h` = "fl-oz/h".asInstanceOf[`fl-oz/h`]
+  def `fl-ozSlashh`: `fl-ozSlashh` = "fl-oz/h".asInstanceOf[`fl-ozSlashh`]
   @scala.inline
-  def `fl-oz/min`: `fl-oz/min` = "fl-oz/min".asInstanceOf[`fl-oz/min`]
+  def `fl-ozSlashmin`: `fl-ozSlashmin` = "fl-oz/min".asInstanceOf[`fl-ozSlashmin`]
   @scala.inline
-  def `fl-oz/s`: `fl-oz/s` = "fl-oz/s".asInstanceOf[`fl-oz/s`]
+  def `fl-ozSlashs`: `fl-ozSlashs` = "fl-oz/s".asInstanceOf[`fl-ozSlashs`]
   @scala.inline
   def frequency: frequency = "frequency".asInstanceOf[frequency]
   @scala.inline
@@ -1113,27 +1113,27 @@ object convertDashUnitsStrings {
   @scala.inline
   def `ft-us`: `ft-us` = "ft-us".asInstanceOf[`ft-us`]
   @scala.inline
-  def `ft/s`: `ft/s` = "ft/s".asInstanceOf[`ft/s`]
-  @scala.inline
   def ft2: ft2 = "ft2".asInstanceOf[ft2]
   @scala.inline
   def ft3: ft3 = "ft3".asInstanceOf[ft3]
   @scala.inline
-  def `ft3/h`: `ft3/h` = "ft3/h".asInstanceOf[`ft3/h`]
+  def ft3Slashh: ft3Slashh = "ft3/h".asInstanceOf[ft3Slashh]
   @scala.inline
-  def `ft3/min`: `ft3/min` = "ft3/min".asInstanceOf[`ft3/min`]
+  def ft3Slashmin: ft3Slashmin = "ft3/min".asInstanceOf[ft3Slashmin]
   @scala.inline
-  def `ft3/s`: `ft3/s` = "ft3/s".asInstanceOf[`ft3/s`]
+  def ft3Slashs: ft3Slashs = "ft3/s".asInstanceOf[ft3Slashs]
+  @scala.inline
+  def ftSlashs: ftSlashs = "ft/s".asInstanceOf[ftSlashs]
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
   def gal: gal = "gal".asInstanceOf[gal]
   @scala.inline
-  def `gal/h`: `gal/h` = "gal/h".asInstanceOf[`gal/h`]
+  def galSlashh: galSlashh = "gal/h".asInstanceOf[galSlashh]
   @scala.inline
-  def `gal/min`: `gal/min` = "gal/min".asInstanceOf[`gal/min`]
+  def galSlashmin: galSlashmin = "gal/min".asInstanceOf[galSlashmin]
   @scala.inline
-  def `gal/s`: `gal/s` = "gal/s".asInstanceOf[`gal/s`]
+  def galSlashs: galSlashs = "gal/s".asInstanceOf[galSlashs]
   @scala.inline
   def grad: grad = "grad".asInstanceOf[grad]
   @scala.inline
@@ -1153,11 +1153,11 @@ object convertDashUnitsStrings {
   @scala.inline
   def in3: in3 = "in3".asInstanceOf[in3]
   @scala.inline
-  def `in3/h`: `in3/h` = "in3/h".asInstanceOf[`in3/h`]
+  def in3Slashh: in3Slashh = "in3/h".asInstanceOf[in3Slashh]
   @scala.inline
-  def `in3/min`: `in3/min` = "in3/min".asInstanceOf[`in3/min`]
+  def in3Slashmin: in3Slashmin = "in3/min".asInstanceOf[in3Slashmin]
   @scala.inline
-  def `in3/s`: `in3/s` = "in3/s".asInstanceOf[`in3/s`]
+  def in3Slashs: in3Slashs = "in3/s".asInstanceOf[in3Slashs]
   @scala.inline
   def kA: kA = "kA".asInstanceOf[kA]
   @scala.inline
@@ -1183,19 +1183,19 @@ object convertDashUnitsStrings {
   @scala.inline
   def kl: kl = "kl".asInstanceOf[kl]
   @scala.inline
-  def `kl/h`: `kl/h` = "kl/h".asInstanceOf[`kl/h`]
+  def klSlashh: klSlashh = "kl/h".asInstanceOf[klSlashh]
   @scala.inline
-  def `kl/min`: `kl/min` = "kl/min".asInstanceOf[`kl/min`]
+  def klSlashmin: klSlashmin = "kl/min".asInstanceOf[klSlashmin]
   @scala.inline
-  def `kl/s`: `kl/s` = "kl/s".asInstanceOf[`kl/s`]
-  @scala.inline
-  def `km/h`: `km/h` = "km/h".asInstanceOf[`km/h`]
+  def klSlashs: klSlashs = "kl/s".asInstanceOf[klSlashs]
   @scala.inline
   def km2: km2 = "km2".asInstanceOf[km2]
   @scala.inline
   def km3: km3 = "km3".asInstanceOf[km3]
   @scala.inline
-  def `km3/s`: `km3/s` = "km3/s".asInstanceOf[`km3/s`]
+  def km3Slashs: km3Slashs = "km3/s".asInstanceOf[km3Slashs]
+  @scala.inline
+  def kmSlashh: kmSlashh = "km/h".asInstanceOf[kmSlashh]
   @scala.inline
   def km_ : km_ = "km".asInstanceOf[km_]
   @scala.inline
@@ -1205,11 +1205,11 @@ object convertDashUnitsStrings {
   @scala.inline
   def l: l = "l".asInstanceOf[l]
   @scala.inline
-  def `l/h`: `l/h` = "l/h".asInstanceOf[`l/h`]
+  def lSlashh: lSlashh = "l/h".asInstanceOf[lSlashh]
   @scala.inline
-  def `l/min`: `l/min` = "l/min".asInstanceOf[`l/min`]
+  def lSlashmin: lSlashmin = "l/min".asInstanceOf[lSlashmin]
   @scala.inline
-  def `l/s`: `l/s` = "l/s".asInstanceOf[`l/s`]
+  def lSlashs: lSlashs = "l/s".asInstanceOf[lSlashs]
   @scala.inline
   def lb: lb = "lb".asInstanceOf[lb]
   @scala.inline
@@ -1217,23 +1217,23 @@ object convertDashUnitsStrings {
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   @scala.inline
-  def `m/h`: `m/h` = "m/h".asInstanceOf[`m/h`]
-  @scala.inline
-  def `m/s`: `m/s` = "m/s".asInstanceOf[`m/s`]
-  @scala.inline
   def m2: m2 = "m2".asInstanceOf[m2]
   @scala.inline
   def m3: m3 = "m3".asInstanceOf[m3]
   @scala.inline
-  def `m3/h`: `m3/h` = "m3/h".asInstanceOf[`m3/h`]
+  def m3Slashh: m3Slashh = "m3/h".asInstanceOf[m3Slashh]
   @scala.inline
-  def `m3/min`: `m3/min` = "m3/min".asInstanceOf[`m3/min`]
+  def m3Slashmin: m3Slashmin = "m3/min".asInstanceOf[m3Slashmin]
   @scala.inline
-  def `m3/s`: `m3/s` = "m3/s".asInstanceOf[`m3/s`]
+  def m3Slashs: m3Slashs = "m3/s".asInstanceOf[m3Slashs]
   @scala.inline
   def mA: mA = "mA".asInstanceOf[mA]
   @scala.inline
   def mHz_ : mHz_ = "mHz".asInstanceOf[mHz_]
+  @scala.inline
+  def mSlashh: mSlashh = "m/h".asInstanceOf[mSlashh]
+  @scala.inline
+  def mSlashs: mSlashs = "m/s".asInstanceOf[mSlashs]
   @scala.inline
   def mV: mV = "mV".asInstanceOf[mV]
   @scala.inline
@@ -1261,11 +1261,11 @@ object convertDashUnitsStrings {
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
-  def `min/km`: `min/km` = "min/km".asInstanceOf[`min/km`]
+  def minSlashkm: minSlashkm = "min/km".asInstanceOf[minSlashkm]
   @scala.inline
   def ml: ml = "ml".asInstanceOf[ml]
   @scala.inline
-  def `ml/s`: `ml/s` = "ml/s".asInstanceOf[`ml/s`]
+  def mlSlashs: mlSlashs = "ml/s".asInstanceOf[mlSlashs]
   @scala.inline
   def mm: mm = "mm".asInstanceOf[mm]
   @scala.inline
@@ -1273,7 +1273,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def mm3: mm3 = "mm3".asInstanceOf[mm3]
   @scala.inline
-  def `mm3/s`: `mm3/s` = "mm3/s".asInstanceOf[`mm3/s`]
+  def mm3Slashs: mm3Slashs = "mm3/s".asInstanceOf[mm3Slashs]
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
@@ -1293,11 +1293,11 @@ object convertDashUnitsStrings {
   @scala.inline
   def pnt: pnt = "pnt".asInstanceOf[pnt]
   @scala.inline
-  def `pnt/h`: `pnt/h` = "pnt/h".asInstanceOf[`pnt/h`]
+  def pntSlashh: pntSlashh = "pnt/h".asInstanceOf[pntSlashh]
   @scala.inline
-  def `pnt/min`: `pnt/min` = "pnt/min".asInstanceOf[`pnt/min`]
+  def pntSlashmin: pntSlashmin = "pnt/min".asInstanceOf[pntSlashmin]
   @scala.inline
-  def `pnt/s`: `pnt/s` = "pnt/s".asInstanceOf[`pnt/s`]
+  def pntSlashs: pntSlashs = "pnt/s".asInstanceOf[pntSlashs]
   @scala.inline
   def power: power = "power".asInstanceOf[power]
   @scala.inline
@@ -1315,11 +1315,11 @@ object convertDashUnitsStrings {
   @scala.inline
   def qt: qt = "qt".asInstanceOf[qt]
   @scala.inline
-  def `qt/s`: `qt/s` = "qt/s".asInstanceOf[`qt/s`]
+  def qtSlashs: qtSlashs = "qt/s".asInstanceOf[qtSlashs]
   @scala.inline
   def rad: rad = "rad".asInstanceOf[rad]
   @scala.inline
-  def `rad/s`: `rad/s` = "rad/s".asInstanceOf[`rad/s`]
+  def radSlashs: radSlashs = "rad/s".asInstanceOf[radSlashs]
   @scala.inline
   def reactiveEnergy: reactiveEnergy = "reactiveEnergy".asInstanceOf[reactiveEnergy]
   @scala.inline
@@ -1329,9 +1329,9 @@ object convertDashUnitsStrings {
   @scala.inline
   def s: s = "s".asInstanceOf[s]
   @scala.inline
-  def `s/ft`: `s/ft` = "s/ft".asInstanceOf[`s/ft`]
+  def sSlashft: sSlashft = "s/ft".asInstanceOf[sSlashft]
   @scala.inline
-  def `s/m`: `s/m` = "s/m".asInstanceOf[`s/m`]
+  def sSlashm: sSlashm = "s/m".asInstanceOf[sSlashm]
   @scala.inline
   def speed: speed = "speed".asInstanceOf[speed]
   @scala.inline
@@ -1345,7 +1345,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def tsp: tsp = "tsp".asInstanceOf[tsp]
   @scala.inline
-  def `tsp/s`: `tsp/s` = "tsp/s".asInstanceOf[`tsp/s`]
+  def tspSlashs: tspSlashs = "tsp/s".asInstanceOf[tspSlashs]
   @scala.inline
   def voltage: voltage = "voltage".asInstanceOf[voltage]
   @scala.inline
@@ -1357,11 +1357,11 @@ object convertDashUnitsStrings {
   @scala.inline
   def yd3: yd3 = "yd3".asInstanceOf[yd3]
   @scala.inline
-  def `yd3/h`: `yd3/h` = "yd3/h".asInstanceOf[`yd3/h`]
+  def yd3Slashh: yd3Slashh = "yd3/h".asInstanceOf[yd3Slashh]
   @scala.inline
-  def `yd3/min`: `yd3/min` = "yd3/min".asInstanceOf[`yd3/min`]
+  def yd3Slashmin: yd3Slashmin = "yd3/min".asInstanceOf[yd3Slashmin]
   @scala.inline
-  def `yd3/s`: `yd3/s` = "yd3/s".asInstanceOf[`yd3/s`]
+  def yd3Slashs: yd3Slashs = "yd3/s".asInstanceOf[yd3Slashs]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
 }

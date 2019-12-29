@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFieldsPp extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -67,7 +67,8 @@ trait Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFieldsPp ex
     * response. Each path should start with `person.`: for example,
     * `person.names` or `person.photos`.
     */
-  var `requestMask.includeField`: js.UndefOr[String] = js.native
+  @JSName("requestMask.includeField")
+  var requestMaskDotincludeField: js.UndefOr[String] = js.native
   /**
     * The resource names of the people to provide information about.
     *

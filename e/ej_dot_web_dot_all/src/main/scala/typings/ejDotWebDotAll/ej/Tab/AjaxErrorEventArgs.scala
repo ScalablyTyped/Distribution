@@ -16,7 +16,7 @@ trait AjaxErrorEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /** returns the tab model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Tab.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object AjaxErrorEventArgs {
     URL: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     data: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Tab.Model = null,
+    model: Model = null,
     `type`: String = null
   ): AjaxErrorEventArgs = {
     val __obj = js.Dynamic.literal()

@@ -1,7 +1,6 @@
 package typings.multimatch
 
 import typings.minimatch.minimatchMod.IOptions
-import typings.multimatch.multimatchMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReadStream () extends Readable {
   var bytesRead: Double = js.native
-  var path: java.lang.String | Buffer = js.native
+  var path: String | Buffer = js.native
   @JSName("addListener")
   def addListener_open(event: typings.node.nodeStrings.open, listener: js.Function1[/* fd */ Double, Unit]): this.type = js.native
   def close(): Unit = js.native

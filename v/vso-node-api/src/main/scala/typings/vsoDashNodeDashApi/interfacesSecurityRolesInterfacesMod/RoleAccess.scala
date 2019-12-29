@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesSecurityRolesInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesSecurityRolesInterfacesMod.RoleAccess.Assigned
-import typings.vsoDashNodeDashApi.interfacesSecurityRolesInterfacesMod.RoleAccess.Inherited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

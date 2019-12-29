@@ -14,17 +14,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JimpConstructors
-  extends Instantiable2[
-      (/* data */ Bitmap) | (/* data */ Buffer) | (/* w */ Double) | (/* image */ Jimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
-      (/* h */ Double) | (/* cb */ ImageCallback[JimpConstructors]), 
-      JimpConstructors
-    ]
-     with // For custom constructors when using Jimp.appendConstructorOption
-Instantiable1[
-      (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ Jimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
-      JimpConstructors
-    ]
-     with Instantiable3[
+  extends Instantiable3[
       /* w */ Double, 
       /* h */ Double, 
       (/* background */ Double) | (/* cb */ ImageCallback[JimpConstructors]) | (/* background */ String), 
@@ -35,6 +25,16 @@ Instantiable1[
       /* h */ Double, 
       (/* background */ Double) | (/* background */ String), 
       /* cb */ ImageCallback[JimpConstructors], 
+      JimpConstructors
+    ]
+     with // For custom constructors when using Jimp.appendConstructorOption
+Instantiable1[
+      (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ Jimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
+      JimpConstructors
+    ]
+     with Instantiable2[
+      (/* data */ Bitmap) | (/* data */ Buffer) | (/* w */ Double) | (/* image */ Jimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
+      (/* h */ Double) | (/* cb */ ImageCallback[JimpConstructors]), 
       JimpConstructors
     ]
 

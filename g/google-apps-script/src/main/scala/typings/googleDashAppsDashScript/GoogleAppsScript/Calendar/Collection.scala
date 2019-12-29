@@ -7,6 +7,7 @@ import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Calenda
 import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Channel
 import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Colors
 import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Event
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Events
 import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.FreeBusyRequest
 import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.FreeBusyResponse
 import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Setting
@@ -187,17 +188,17 @@ object Collection extends js.Object {
     // Creates an event.
     def insert(resource: Event, calendarId: String, optionalArgs: js.Object, headers: js.Object): Event = js.native
     // Returns instances of the specified recurring event.
-    def instances(calendarId: String, eventId: String): typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Events = js.native
+    def instances(calendarId: String, eventId: String): Events = js.native
     // Returns instances of the specified recurring event.
-    def instances(calendarId: String, eventId: String, optionalArgs: js.Object): typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Events = js.native
+    def instances(calendarId: String, eventId: String, optionalArgs: js.Object): Events = js.native
     // Returns instances of the specified recurring event.
-    def instances(calendarId: String, eventId: String, optionalArgs: js.Object, headers: js.Object): typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Events = js.native
+    def instances(calendarId: String, eventId: String, optionalArgs: js.Object, headers: js.Object): Events = js.native
     // Returns events on the specified calendar.
-    def list(calendarId: String): typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Events = js.native
+    def list(calendarId: String): Events = js.native
     // Returns events on the specified calendar.
-    def list(calendarId: String, optionalArgs: js.Object): typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Events = js.native
+    def list(calendarId: String, optionalArgs: js.Object): Events = js.native
     // Returns events on the specified calendar.
-    def list(calendarId: String, optionalArgs: js.Object, headers: js.Object): typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Schema.Events = js.native
+    def list(calendarId: String, optionalArgs: js.Object, headers: js.Object): Events = js.native
     // Moves an event to another calendar, i.e. changes an event's organizer.
     def move(calendarId: String, eventId: String, destination: String): Event = js.native
     // Moves an event to another calendar, i.e. changes an event's organizer.

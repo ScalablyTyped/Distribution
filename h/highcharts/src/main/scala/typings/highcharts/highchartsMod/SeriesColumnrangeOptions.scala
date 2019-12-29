@@ -175,7 +175,7 @@ object SeriesColumnrangeOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     states: PlotColumnrangeStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     tooltip: PlotColumnrangeTooltipOptions = null,

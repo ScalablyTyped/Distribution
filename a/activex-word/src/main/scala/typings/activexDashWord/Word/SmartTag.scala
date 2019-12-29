@@ -15,7 +15,8 @@ class SmartTag protected () extends js.Object {
   val Properties: CustomProperties = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
   val SmartTagActions: typings.activexDashWord.Word.SmartTagActions = js.native
-  var `Word.SmartTag_typekey`: SmartTag = js.native
+  @JSName("Word.SmartTag_typekey")
+  var WordDotSmartTag_typekey: SmartTag = js.native
   val XML: String = js.native
   val XMLNode: typings.activexDashWord.Word.XMLNode = js.native
   def Delete(): Unit = js.native

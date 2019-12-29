@@ -1,6 +1,5 @@
 package typings.antdDashMobile
 
-import typings.antdDashMobile.libTabsMod.Tabs
 import typings.antdDashMobile.libTabsPropsTypeMod.TabsProps
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element

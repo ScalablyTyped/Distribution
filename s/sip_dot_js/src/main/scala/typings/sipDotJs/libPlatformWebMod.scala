@@ -24,11 +24,11 @@ object libPlatformWebMod extends js.Object {
     extends typings.sipDotJs.libPlatformWebSimpleDashUserMod.SimpleUser {
     /**
       * Constructs a new instance of the `SimpleUser` class.
-      * @param webSocketServerURL - SIP WebSocket Server URL.
+      * @param server - SIP WebSocket Server URL.
       * @param options - Options bucket. See {@link SimpleUserOptions} for details.
       */
-    def this(webSocketServerURL: String) = this()
-    def this(webSocketServerURL: String, options: SimpleUserOptions) = this()
+    def this(server: String) = this()
+    def this(server: String, options: SimpleUserOptions) = this()
   }
   
   @js.native

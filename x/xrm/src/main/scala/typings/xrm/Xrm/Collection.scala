@@ -1,10 +1,6 @@
 package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.xrm.Xrm.Collection.Dictionary
-import typings.xrm.Xrm.Collection.ItemCollection
-import typings.xrm.Xrm.Collection.IterativeDelegate
-import typings.xrm.Xrm.Collection.MatchingDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

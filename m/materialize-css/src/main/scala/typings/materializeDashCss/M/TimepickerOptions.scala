@@ -54,27 +54,27 @@ trait TimepickerOptions extends js.Object {
     * Callback function called after modal is closed
     * @default null
     */
-  def onCloseEnd(`this`: Modal, el: Element): Unit
+  def onCloseEnd(el: Element): Unit
   /**
     * Callback function called before modal is closed
     * @default null
     */
-  def onCloseStart(`this`: Modal, el: Element): Unit
+  def onCloseStart(el: Element): Unit
   /**
     * Callback function called after modal is opened
     * @default null
     */
-  def onOpenEnd(`this`: Modal, el: Element): Unit
+  def onOpenEnd(el: Element): Unit
   /**
     * Callback function called before modal is opened
     * @default null
     */
-  def onOpenStart(`this`: Modal, el: Element): Unit
+  def onOpenStart(el: Element): Unit
   /**
     * Callback function when a time is selected
     * @default null
     */
-  def onSelect(`this`: Modal, hour: Double, minute: Double): Unit
+  def onSelect(hour: Double, minute: Double): Unit
 }
 
 object TimepickerOptions {
@@ -86,16 +86,16 @@ object TimepickerOptions {
     duration: Double,
     fromNow: Double,
     i18n: Partial[InternationalizationOptions],
-    onCloseEnd: (Modal, Element) => Unit,
-    onCloseStart: (Modal, Element) => Unit,
-    onOpenEnd: (Modal, Element) => Unit,
-    onOpenStart: (Modal, Element) => Unit,
-    onSelect: (Modal, Double, Double) => Unit,
+    onCloseEnd: Element => Unit,
+    onCloseStart: Element => Unit,
+    onOpenEnd: Element => Unit,
+    onOpenStart: Element => Unit,
+    onSelect: (Double, Double) => Unit,
     showClearBtn: Boolean,
     twelveHour: Boolean,
     vibrate: Boolean
   ): TimepickerOptions = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], defaultTime = defaultTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], fromNow = fromNow.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), onSelect = js.Any.fromFunction3(onSelect), showClearBtn = showClearBtn.asInstanceOf[js.Any], twelveHour = twelveHour.asInstanceOf[js.Any], vibrate = vibrate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], defaultTime = defaultTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], fromNow = fromNow.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1(onCloseEnd), onCloseStart = js.Any.fromFunction1(onCloseStart), onOpenEnd = js.Any.fromFunction1(onOpenEnd), onOpenStart = js.Any.fromFunction1(onOpenStart), onSelect = js.Any.fromFunction2(onSelect), showClearBtn = showClearBtn.asInstanceOf[js.Any], twelveHour = twelveHour.asInstanceOf[js.Any], vibrate = vibrate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimepickerOptions]
   }

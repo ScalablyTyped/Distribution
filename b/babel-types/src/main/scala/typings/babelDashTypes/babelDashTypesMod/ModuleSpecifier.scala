@@ -16,18 +16,17 @@ trait ModuleSpecifier extends js.Object
 
 object ModuleSpecifier {
   @scala.inline
-  def ImportSpecifier(
+  def ExportDefaultSpecifier(
     end: Double,
-    imported: Identifier,
+    exported: Identifier,
     loc: SourceLocation,
-    local: Identifier,
     start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.ImportSpecifier,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.ExportDefaultSpecifier,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
@@ -53,17 +52,38 @@ object ModuleSpecifier {
     __obj.asInstanceOf[ModuleSpecifier]
   }
   @scala.inline
-  def ExportDefaultSpecifier(
+  def ExportSpecifier(
     end: Double,
     exported: Identifier,
+    imported: Identifier,
     loc: SourceLocation,
+    local: Identifier,
     start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.ExportDefaultSpecifier,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.ExportSpecifier,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ModuleSpecifier]
+  }
+  @scala.inline
+  def ImportSpecifier(
+    end: Double,
+    imported: Identifier,
+    loc: SourceLocation,
+    local: Identifier,
+    start: Double,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.ImportSpecifier,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): ModuleSpecifier = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
@@ -82,26 +102,6 @@ object ModuleSpecifier {
     trailingComments: js.Array[Comment] = null
   ): ModuleSpecifier = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
-  }
-  @scala.inline
-  def ExportSpecifier(
-    end: Double,
-    exported: Identifier,
-    imported: Identifier,
-    loc: SourceLocation,
-    local: Identifier,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.ExportSpecifier,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])

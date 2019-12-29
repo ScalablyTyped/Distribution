@@ -21,6 +21,7 @@ object OpenIDCallbackChecks {
   @scala.inline
   def apply(
     code_verifier: String = null,
+    jarm: js.UndefOr[Boolean] = js.undefined,
     max_age: Int | Double = null,
     nonce: String = null,
     response_type: String = null,
@@ -28,6 +29,7 @@ object OpenIDCallbackChecks {
   ): OpenIDCallbackChecks = {
     val __obj = js.Dynamic.literal()
     if (code_verifier != null) __obj.updateDynamic("code_verifier")(code_verifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(jarm)) __obj.updateDynamic("jarm")(jarm.asInstanceOf[js.Any])
     if (max_age != null) __obj.updateDynamic("max_age")(max_age.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])

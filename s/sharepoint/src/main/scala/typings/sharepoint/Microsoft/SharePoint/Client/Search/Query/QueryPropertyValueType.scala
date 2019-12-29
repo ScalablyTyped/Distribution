@@ -1,12 +1,6 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.booleanType
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.int32TYpe
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.none
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.stringArrayType
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.stringType
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.unSupportedType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

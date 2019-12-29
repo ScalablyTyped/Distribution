@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.atMaterialDashUiCore.atMaterialDashUiCoreNumbers.`false`
+  - typings.atMaterialDashUiCore.atMaterialDashUiCoreBooleans.`false`
   - typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.asc
   - typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.desc
 */
@@ -19,6 +19,6 @@ object SortDirection {
   @scala.inline
   def desc: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.desc = this.cast("desc")
   @scala.inline
-  def `false`: typings.atMaterialDashUiCore.atMaterialDashUiCoreNumbers.`false` = this.cast(false)
+  def `false`: typings.atMaterialDashUiCore.atMaterialDashUiCoreBooleans.`false` = this.cast(false)
 }
 

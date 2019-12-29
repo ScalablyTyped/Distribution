@@ -5,14 +5,6 @@ import typings.std.Date
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.TypedEventHandler
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationChannel
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.badge
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.raw
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.tile
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.tileFlyout
-import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.toast
 import typings.winrtDashUwp.Windows.UI.Notifications.BadgeNotification
 import typings.winrtDashUwp.Windows.UI.Notifications.TileNotification
 import typings.winrtDashUwp.Windows.UI.Notifications.ToastNotification

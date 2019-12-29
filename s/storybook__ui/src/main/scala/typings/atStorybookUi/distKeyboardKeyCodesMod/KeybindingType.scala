@@ -1,8 +1,6 @@
 package typings.atStorybookUi.distKeyboardKeyCodesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookUi.distKeyboardKeyCodesMod.KeybindingType.Chord
-import typings.atStorybookUi.distKeyboardKeyCodesMod.KeybindingType.Simple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

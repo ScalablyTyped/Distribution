@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.AdminResponseForReview
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.DeleteAdminReply
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.DeletePublisherReply
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.FlagReview
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.ReplyToReview
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.UpdateReview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

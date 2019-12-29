@@ -1,9 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.TrafficModel.BEST_GUESS
-import typings.googlemaps.google.maps.TrafficModel.OPTIMISTIC
-import typings.googlemaps.google.maps.TrafficModel.PESSIMISTIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

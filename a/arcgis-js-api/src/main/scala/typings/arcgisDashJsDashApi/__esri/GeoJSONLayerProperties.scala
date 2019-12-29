@@ -40,11 +40,13 @@ trait GeoJSONLayerProperties
     */
   var elevationInfo: js.UndefOr[GeoJSONLayerElevationInfo] = js.undefined
   /**
-    * Configures the method for decluttering overlapping features in the view. If this property is not set (or set to `null`), every feature is drawn individually.  Currently this property is only supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) for point features with non-draped [Icons](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html) or [Text](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html) symbol layers.  ![declutter](https://developers.arcgis.com/javascript/assets/img/samples/city-points-declutter.gif)
+    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  There are two types of feature reduction: `selection` and `cluster`.
+    *   * [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen. This has been available since version 4.4.
+    *   * [Cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) spatially groups points in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) into _clusters_. The size of each cluster is proportional to the number of features within the cluster. This has been available since version 4.14.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[GeoJSONLayerFeatureReduction] = js.undefined
+  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.undefined
   /**
     * An array of fields in the layer.
     *
@@ -147,7 +149,7 @@ object GeoJSONLayerProperties {
     definitionExpression: String = null,
     displayField: String = null,
     elevationInfo: GeoJSONLayerElevationInfo = null,
-    featureReduction: GeoJSONLayerFeatureReduction = null,
+    featureReduction: FeatureReductionClusterProperties | FeatureReductionSelectionProperties = null,
     fields: js.Array[FieldProperties] = null,
     fullExtent: ExtentProperties = null,
     geometryType: point | polygon | polyline | multipoint = null,
@@ -166,9 +168,12 @@ object GeoJSONLayerProperties {
     screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined,
     spatialReference: SpatialReferenceProperties = null,
     templates: js.Array[FeatureTemplateProperties] = null,
+    timeExtent: TimeExtentProperties = null,
     timeInfo: TimeInfoProperties = null,
+    timeOffset: TimeIntervalProperties = null,
     title: String = null,
     url: String = null,
+    useViewTime: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): GeoJSONLayerProperties = {
     val __obj = js.Dynamic.literal()
@@ -195,9 +200,12 @@ object GeoJSONLayerProperties {
     if (!js.isUndefined(screenSizePerspectiveEnabled)) __obj.updateDynamic("screenSizePerspectiveEnabled")(screenSizePerspectiveEnabled.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo.asInstanceOf[js.Any])
+    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useViewTime)) __obj.updateDynamic("useViewTime")(useViewTime.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONLayerProperties]
   }

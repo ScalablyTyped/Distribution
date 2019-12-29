@@ -1,6 +1,5 @@
 package typings.atTensorflowTfjsDashLayers
 
-import typings.atTensorflowTfjsDashLayers.distEngineDatasetUnderscoreStubMod.LazyIterator
 import typings.std.IteratorResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -40,7 +40,7 @@ object AbstractStore extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Adds members to class  */
   def implement(): Unit = js.native
   /** [Method] Override members of this class

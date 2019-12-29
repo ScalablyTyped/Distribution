@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISpinner
-  extends typings.senchaUnderscoreTouch.Ext.field.INumber {
+trait ISpinner extends INumber {
   /** [Config Option] (Boolean) */
   var accelerateOnTapHold: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -20,7 +19,7 @@ trait ISpinner
   		* @returns String
   		*/
   @JSName("getCls")
-  var getCls_ISpinner: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCls_ISpinner: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of cycle
   		* @returns Boolean
   		*/
@@ -36,9 +35,9 @@ trait ISpinner
   /** [Config Option] (Boolean) */
   var groupButtons: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var increment: js.UndefOr[java.lang.String] = js.undefined
+  var increment: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var incrementValue: js.UndefOr[java.lang.String] = js.undefined
+  var incrementValue: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of accelerateOnTapHold
   		* @param accelerateOnTapHold Boolean The new value.
   		*/
@@ -47,7 +46,7 @@ trait ISpinner
   		* @param cls String The new value.
   		*/
   @JSName("setCls")
-  var setCls_ISpinner: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCls_ISpinner: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of cycle
   		* @param cycle Boolean The new value.
   		*/
@@ -69,20 +68,20 @@ trait ISpinner
 object ISpinner {
   @scala.inline
   def apply(
-    INumber: typings.senchaUnderscoreTouch.Ext.field.INumber = null,
+    INumber: INumber = null,
     accelerateOnTapHold: js.UndefOr[Boolean] = js.undefined,
     cycle: js.UndefOr[Boolean] = js.undefined,
     defaultValue: Int | Double = null,
     getAccelerateOnTapHold: () => Boolean = null,
-    getCls: () => java.lang.String = null,
+    getCls: () => String = null,
     getCycle: () => Boolean = null,
     getDefaultValue: () => Double = null,
     getGroupButtons: () => Boolean = null,
     groupButtons: js.UndefOr[Boolean] = js.undefined,
-    increment: java.lang.String = null,
-    incrementValue: java.lang.String = null,
+    increment: String = null,
+    incrementValue: String = null,
     setAccelerateOnTapHold: /* accelerateOnTapHold */ js.UndefOr[Boolean] => Unit = null,
-    setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
+    setCls: /* cls */ js.UndefOr[String] => Unit = null,
     setCycle: /* cycle */ js.UndefOr[Boolean] => Unit = null,
     setDefaultValue: /* defaultValue */ js.UndefOr[Double] => Unit = null,
     setGroupButtons: /* groupButtons */ js.UndefOr[Boolean] => Unit = null,

@@ -11,7 +11,8 @@ class ContentControls protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ContentControls_typekey`: ContentControls = js.native
+  @JSName("Word.ContentControls_typekey")
+  var WordDotContentControls_typekey: ContentControls = js.native
   /** @param Word.WdContentControlType [Type=0] */
   def Add(): ContentControl = js.native
   def Add(Type: WdContentControlType): ContentControl = js.native

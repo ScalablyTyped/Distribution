@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ProtectionSelectionMode.none
-import typings.officeDashJsDashPreview.Excel.ProtectionSelectionMode.normal
-import typings.officeDashJsDashPreview.Excel.ProtectionSelectionMode.unlocked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

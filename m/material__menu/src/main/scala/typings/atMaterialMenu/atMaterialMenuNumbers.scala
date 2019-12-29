@@ -9,10 +9,10 @@ object atMaterialMenuNumbers {
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `0DOT1` extends js.Object
+  sealed trait `0.1` extends js.Object
   
   @js.native
-  sealed trait `0DOT67` extends js.Object
+  sealed trait `0.67` extends js.Object
   
   @js.native
   sealed trait `1` extends js.Object
@@ -53,9 +53,9 @@ object atMaterialMenuNumbers {
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def `0DOT1`: `0DOT1` = 0.1.asInstanceOf[`0DOT1`]
+  def `0.1`: `0.1` = 0.1.asInstanceOf[`0.1`]
   @scala.inline
-  def `0DOT67`: `0DOT67` = 0.67.asInstanceOf[`0DOT67`]
+  def `0.67`: `0.67` = 0.67.asInstanceOf[`0.67`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline

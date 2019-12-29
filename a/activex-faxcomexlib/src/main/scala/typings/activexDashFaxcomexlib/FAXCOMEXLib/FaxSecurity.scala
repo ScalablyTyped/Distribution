@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class FaxSecurity protected () extends js.Object {
   /** Security descriptor */
   var Descriptor: js.Any = js.native
-  var `FAXCOMEXLib.FaxSecurity_typekey`: FaxSecurity = js.native
+  @JSName("FAXCOMEXLib.FaxSecurity_typekey")
+  var FAXCOMEXLibDotFaxSecurity_typekey: FaxSecurity = js.native
   /** Granted rights, a bit-wise combination of FAX_ACCESS_RIGHTS values */
   val GrantedRights: FAX_ACCESS_RIGHTS_ENUM = js.native
   /** Security Information Type */

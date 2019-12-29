@@ -1,9 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.ScrollbarVisibility.Auto
-import typings.monacoDashEditor.monacoDashEditorMod.editor.ScrollbarVisibility.Hidden
-import typings.monacoDashEditor.monacoDashEditorMod.editor.ScrollbarVisibility.Visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

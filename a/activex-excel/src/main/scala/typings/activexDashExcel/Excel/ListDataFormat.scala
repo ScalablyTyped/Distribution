@@ -14,7 +14,8 @@ class ListDataFormat protected () extends js.Object {
   val Creator: XlCreator = js.native
   val DecimalPlaces: Double = js.native
   val DefaultValue: js.Any = js.native
-  var `Excel.ListDataFormat_typekey`: ListDataFormat = js.native
+  @JSName("Excel.ListDataFormat_typekey")
+  var ExcelDotListDataFormat_typekey: ListDataFormat = js.native
   val IsPercent: Boolean = js.native
   val MaxCharacters: Double = js.native
   val MaxNumber: Double | Null = js.native

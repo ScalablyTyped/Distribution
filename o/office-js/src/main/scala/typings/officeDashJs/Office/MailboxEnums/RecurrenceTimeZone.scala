@@ -1,142 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AUSCentralStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AUSEasternStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AfghanistanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AlaskanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AleutianStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AltaiStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.ArabStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.ArabianStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.ArabicStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.ArgentinaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AstrakhanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AtlanticStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AusCentralW_StandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AzerbaijanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.AzoresStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.BahiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.BangladeshStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.BelarusStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.BougainvilleStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CanadaCentralStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CapeVerdeStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CaucasusStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CenAustraliaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralAmericaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralAsiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralBrazilianStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralPacificStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime_Mexico
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.ChathamIslandsStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.ChinaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.CubaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.DatelineStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.E_AfricaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.E_AustraliaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.E_EuropeStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.E_SouthAmericaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.EasterIslandStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime_Mexico
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.EgyptStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.EkaterinburgStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.FLEStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.FijiStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.GMTStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.GTBStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.GeorgianStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.GreenlandStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.GreenwichStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.HaitiStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.HawaiianStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.IndiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.IranStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.IsraelStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.JordanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.KaliningradStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.KamchatkaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.KoreaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.LibyaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.LineIslandsStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.LordHoweStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MagadanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MagallanesStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MarquesasStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MauritiusStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MidAtlanticStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MiddleEastStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MontevideoStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MoroccoStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime_Mexico
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.MyanmarStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.N_CentralAsiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NamibiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NepalStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NewZealandStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NewfoundlandStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NorfolkStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaEastStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.NorthKoreaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.OmskStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.PacificSAStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTimeMexico
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.PakistanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.ParaguayStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.RomanceStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone10
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone11
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone3
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.RussianStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SAEasternStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SAPacificStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SAWesternStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SEAsiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SaintPierreStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SakhalinStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SamoaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SaratovStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SingaporeStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SouthAfricaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SriLankaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SudanStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.SyriaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TaipeiStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TasmaniaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TocantinsStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TokyoStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TomskStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TongaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TransbaikalStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TurkeyStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.TurksAndCaicosStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.USEasternStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.USMountainStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UTC
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS02
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS08
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS09
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS11
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS12
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS13
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.UlaanbaatarStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.VenezuelaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.VladivostokStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.W_AustraliaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.W_CentralAfricaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.W_EuropeStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.W_MongoliaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.WestAsiaStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.WestBankStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.WestPacificStandardTime
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone.YakutskStandardTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -160,956 +24,820 @@ object RecurrenceTimeZone extends js.Object {
     * Australia Central Standard Time
     */
   @js.native
-  sealed trait AUSCentralStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AUSCentralStandardTime extends RecurrenceTimeZone
   
   /**
     * AUS Eastern Standard Time
     */
   @js.native
-  sealed trait AUSEasternStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AUSEasternStandardTime extends RecurrenceTimeZone
   
   /**
     * Afghanistan Standard Time
     */
   @js.native
-  sealed trait AfghanistanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AfghanistanStandardTime extends RecurrenceTimeZone
   
   /**
     * Alaskan Standard Time
     */
   @js.native
-  sealed trait AlaskanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AlaskanStandardTime extends RecurrenceTimeZone
   
   /**
     * Aleutian Standard Time
     */
   @js.native
-  sealed trait AleutianStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AleutianStandardTime extends RecurrenceTimeZone
   
   /**
     * Altai Standard Time
     */
   @js.native
-  sealed trait AltaiStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AltaiStandardTime extends RecurrenceTimeZone
   
   /**
     * Arab Standard Time
     */
   @js.native
-  sealed trait ArabStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait ArabStandardTime extends RecurrenceTimeZone
   
   /**
     * Arabian Standard Time
     */
   @js.native
-  sealed trait ArabianStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait ArabianStandardTime extends RecurrenceTimeZone
   
   /**
     * Arabic Standard Time
     */
   @js.native
-  sealed trait ArabicStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait ArabicStandardTime extends RecurrenceTimeZone
   
   /**
     * Argentina Standard Time
     */
   @js.native
-  sealed trait ArgentinaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait ArgentinaStandardTime extends RecurrenceTimeZone
   
   /**
     * Astrakhan Standard Time
     */
   @js.native
-  sealed trait AstrakhanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AstrakhanStandardTime extends RecurrenceTimeZone
   
   /**
     * Atlantic Standard Time
     */
   @js.native
-  sealed trait AtlanticStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AtlanticStandardTime extends RecurrenceTimeZone
   
   /**
     * Australia Central West Standard Time
     */
   @js.native
-  sealed trait AusCentralW_StandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AusCentralW_StandardTime extends RecurrenceTimeZone
   
   /**
     * Azerbaijan Standard Time
     */
   @js.native
-  sealed trait AzerbaijanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AzerbaijanStandardTime extends RecurrenceTimeZone
   
   /**
     * Azores Standard Time
     */
   @js.native
-  sealed trait AzoresStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait AzoresStandardTime extends RecurrenceTimeZone
   
   /**
     * Bahia Standard Time
     */
   @js.native
-  sealed trait BahiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait BahiaStandardTime extends RecurrenceTimeZone
   
   /**
     * Bangladesh Standard Time
     */
   @js.native
-  sealed trait BangladeshStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait BangladeshStandardTime extends RecurrenceTimeZone
   
   /**
     * Belarus Standard Time
     */
   @js.native
-  sealed trait BelarusStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait BelarusStandardTime extends RecurrenceTimeZone
   
   /**
     * Bougainville Standard Time
     */
   @js.native
-  sealed trait BougainvilleStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait BougainvilleStandardTime extends RecurrenceTimeZone
   
   /**
     * Canada Central Standard Time
     */
   @js.native
-  sealed trait CanadaCentralStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CanadaCentralStandardTime extends RecurrenceTimeZone
   
   /**
     * Cape Verde Standard Time
     */
   @js.native
-  sealed trait CapeVerdeStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CapeVerdeStandardTime extends RecurrenceTimeZone
   
   /**
     * Caucasus Standard Time
     */
   @js.native
-  sealed trait CaucasusStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CaucasusStandardTime extends RecurrenceTimeZone
   
   /**
     * Central Australia Standard Time
     */
   @js.native
-  sealed trait CenAustraliaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CenAustraliaStandardTime extends RecurrenceTimeZone
   
   /**
     * Central America Standard Time
     */
   @js.native
-  sealed trait CentralAmericaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralAmericaStandardTime extends RecurrenceTimeZone
   
   /**
     * Central Asia Standard Time
     */
   @js.native
-  sealed trait CentralAsiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralAsiaStandardTime extends RecurrenceTimeZone
   
   /**
     * Central Brazilian Standard Time
     */
   @js.native
-  sealed trait CentralBrazilianStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralBrazilianStandardTime extends RecurrenceTimeZone
   
   /**
     * Central Europe Standard Time
     */
   @js.native
-  sealed trait CentralEuropeStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralEuropeStandardTime extends RecurrenceTimeZone
   
   /**
     * Central European Standard Time
     */
   @js.native
-  sealed trait CentralEuropeanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralEuropeanStandardTime extends RecurrenceTimeZone
   
   /**
     * Central Pacific Standard Time
     */
   @js.native
-  sealed trait CentralPacificStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralPacificStandardTime extends RecurrenceTimeZone
   
   /**
     * Central Standard Time
     */
   @js.native
-  sealed trait CentralStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralStandardTime extends RecurrenceTimeZone
   
   /**
     * Central Standard Time (Mexico)
     */
   @js.native
-  sealed trait CentralStandardTime_Mexico
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CentralStandardTime_Mexico extends RecurrenceTimeZone
   
   /**
     * Chatham Islands Standard Time
     */
   @js.native
-  sealed trait ChathamIslandsStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait ChathamIslandsStandardTime extends RecurrenceTimeZone
   
   /**
     * China Standard Time
     */
   @js.native
-  sealed trait ChinaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait ChinaStandardTime extends RecurrenceTimeZone
   
   /**
     * Cuba Standard Time
     */
   @js.native
-  sealed trait CubaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait CubaStandardTime extends RecurrenceTimeZone
   
   /**
     * Dateline Standard Time
     */
   @js.native
-  sealed trait DatelineStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait DatelineStandardTime extends RecurrenceTimeZone
   
   /**
     * East Africa Standard Time
     */
   @js.native
-  sealed trait E_AfricaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait E_AfricaStandardTime extends RecurrenceTimeZone
   
   /**
     * East Australia Standard Time
     */
   @js.native
-  sealed trait E_AustraliaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait E_AustraliaStandardTime extends RecurrenceTimeZone
   
   /**
     * East Europe Standard Time
     */
   @js.native
-  sealed trait E_EuropeStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait E_EuropeStandardTime extends RecurrenceTimeZone
   
   /**
     * East South America Standard Time
     */
   @js.native
-  sealed trait E_SouthAmericaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait E_SouthAmericaStandardTime extends RecurrenceTimeZone
   
   /**
     * Easter Island Standard Time
     */
   @js.native
-  sealed trait EasterIslandStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait EasterIslandStandardTime extends RecurrenceTimeZone
   
   /**
     * Eastern Standard Time
     */
   @js.native
-  sealed trait EasternStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait EasternStandardTime extends RecurrenceTimeZone
   
   /**
     * Eastern Standard Time (Mexico)
     */
   @js.native
-  sealed trait EasternStandardTime_Mexico
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait EasternStandardTime_Mexico extends RecurrenceTimeZone
   
   /**
     * Egypt Standard Time
     */
   @js.native
-  sealed trait EgyptStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait EgyptStandardTime extends RecurrenceTimeZone
   
   /**
     * Ekaterinburg Standard Time
     */
   @js.native
-  sealed trait EkaterinburgStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait EkaterinburgStandardTime extends RecurrenceTimeZone
   
   /**
     * FLE Standard Time
     */
   @js.native
-  sealed trait FLEStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait FLEStandardTime extends RecurrenceTimeZone
   
   /**
     * Fiji Standard Time
     */
   @js.native
-  sealed trait FijiStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait FijiStandardTime extends RecurrenceTimeZone
   
   /**
     * GMT Standard Time
     */
   @js.native
-  sealed trait GMTStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait GMTStandardTime extends RecurrenceTimeZone
   
   /**
     * GTB Standard Time
     */
   @js.native
-  sealed trait GTBStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait GTBStandardTime extends RecurrenceTimeZone
   
   /**
     * Georgian Standard Time
     */
   @js.native
-  sealed trait GeorgianStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait GeorgianStandardTime extends RecurrenceTimeZone
   
   /**
     * Greenland Standard Time
     */
   @js.native
-  sealed trait GreenlandStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait GreenlandStandardTime extends RecurrenceTimeZone
   
   /**
     * Greenwich Standard Time
     */
   @js.native
-  sealed trait GreenwichStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait GreenwichStandardTime extends RecurrenceTimeZone
   
   /**
     * Haiti Standard Time
     */
   @js.native
-  sealed trait HaitiStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait HaitiStandardTime extends RecurrenceTimeZone
   
   /**
     * Hawaiian Standard Time
     */
   @js.native
-  sealed trait HawaiianStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait HawaiianStandardTime extends RecurrenceTimeZone
   
   /**
     * India Standard Time
     */
   @js.native
-  sealed trait IndiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait IndiaStandardTime extends RecurrenceTimeZone
   
   /**
     * Iran Standard Time
     */
   @js.native
-  sealed trait IranStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait IranStandardTime extends RecurrenceTimeZone
   
   /**
     * Israel Standard Time
     */
   @js.native
-  sealed trait IsraelStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait IsraelStandardTime extends RecurrenceTimeZone
   
   /**
     * Jordan Standard Time
     */
   @js.native
-  sealed trait JordanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait JordanStandardTime extends RecurrenceTimeZone
   
   /**
     * Kaliningrad Standard Time
     */
   @js.native
-  sealed trait KaliningradStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait KaliningradStandardTime extends RecurrenceTimeZone
   
   /**
     * Kamchatka Standard Time
     */
   @js.native
-  sealed trait KamchatkaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait KamchatkaStandardTime extends RecurrenceTimeZone
   
   /**
     * Korea Standard Time
     */
   @js.native
-  sealed trait KoreaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait KoreaStandardTime extends RecurrenceTimeZone
   
   /**
     * Libya Standard Time
     */
   @js.native
-  sealed trait LibyaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait LibyaStandardTime extends RecurrenceTimeZone
   
   /**
     * Line Islands Standard Time
     */
   @js.native
-  sealed trait LineIslandsStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait LineIslandsStandardTime extends RecurrenceTimeZone
   
   /**
     * Lord Howe Standard Time
     */
   @js.native
-  sealed trait LordHoweStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait LordHoweStandardTime extends RecurrenceTimeZone
   
   /**
     * Magadan Standard Time
     */
   @js.native
-  sealed trait MagadanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MagadanStandardTime extends RecurrenceTimeZone
   
   /**
     * Magallanes Standard Time
     */
   @js.native
-  sealed trait MagallanesStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MagallanesStandardTime extends RecurrenceTimeZone
   
   /**
     * Marquesas Standard Time
     */
   @js.native
-  sealed trait MarquesasStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MarquesasStandardTime extends RecurrenceTimeZone
   
   /**
     * Mauritius Standard Time
     */
   @js.native
-  sealed trait MauritiusStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MauritiusStandardTime extends RecurrenceTimeZone
   
   /**
     * Mid-Atlantic Standard Time
     */
   @js.native
-  sealed trait MidAtlanticStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MidAtlanticStandardTime extends RecurrenceTimeZone
   
   /**
     * Middle East Standard Time
     */
   @js.native
-  sealed trait MiddleEastStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MiddleEastStandardTime extends RecurrenceTimeZone
   
   /**
     * Montevideo Standard Time
     */
   @js.native
-  sealed trait MontevideoStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MontevideoStandardTime extends RecurrenceTimeZone
   
   /**
     * Morocco Standard Time
     */
   @js.native
-  sealed trait MoroccoStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MoroccoStandardTime extends RecurrenceTimeZone
   
   /**
     * Mountain Standard Time
     */
   @js.native
-  sealed trait MountainStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MountainStandardTime extends RecurrenceTimeZone
   
   /**
     * Mountain Standard Time (Mexico)
     */
   @js.native
-  sealed trait MountainStandardTime_Mexico
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MountainStandardTime_Mexico extends RecurrenceTimeZone
   
   /**
     * Myanmar Standard Time
     */
   @js.native
-  sealed trait MyanmarStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait MyanmarStandardTime extends RecurrenceTimeZone
   
   /**
     * North Central Asia Standard Time
     */
   @js.native
-  sealed trait N_CentralAsiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait N_CentralAsiaStandardTime extends RecurrenceTimeZone
   
   /**
     * Namibia Standard Time
     */
   @js.native
-  sealed trait NamibiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NamibiaStandardTime extends RecurrenceTimeZone
   
   /**
     * Nepal Standard Time
     */
   @js.native
-  sealed trait NepalStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NepalStandardTime extends RecurrenceTimeZone
   
   /**
     * New Zealand Standard Time
     */
   @js.native
-  sealed trait NewZealandStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NewZealandStandardTime extends RecurrenceTimeZone
   
   /**
     * Newfoundland Standard Time
     */
   @js.native
-  sealed trait NewfoundlandStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NewfoundlandStandardTime extends RecurrenceTimeZone
   
   /**
     * Norfolk Standard Time
     */
   @js.native
-  sealed trait NorfolkStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NorfolkStandardTime extends RecurrenceTimeZone
   
   /**
     * North Asia East Standard Time
     */
   @js.native
-  sealed trait NorthAsiaEastStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NorthAsiaEastStandardTime extends RecurrenceTimeZone
   
   /**
     * North Asia Standard Time
     */
   @js.native
-  sealed trait NorthAsiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NorthAsiaStandardTime extends RecurrenceTimeZone
   
   /**
     * North Korea Standard Time
     */
   @js.native
-  sealed trait NorthKoreaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait NorthKoreaStandardTime extends RecurrenceTimeZone
   
   /**
     * Omsk Standard Time
     */
   @js.native
-  sealed trait OmskStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait OmskStandardTime extends RecurrenceTimeZone
   
   /**
     * Pacific SA Standard Time
     */
   @js.native
-  sealed trait PacificSAStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait PacificSAStandardTime extends RecurrenceTimeZone
   
   /**
     * Pacific Standard Time
     */
   @js.native
-  sealed trait PacificStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait PacificStandardTime extends RecurrenceTimeZone
   
   /**
     * Pacific Standard Time (Mexico)
     */
   @js.native
-  sealed trait PacificStandardTimeMexico
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait PacificStandardTimeMexico extends RecurrenceTimeZone
   
   /**
     * Pakistan Standard Time
     */
   @js.native
-  sealed trait PakistanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait PakistanStandardTime extends RecurrenceTimeZone
   
   /**
     * Paraguay Standard Time
     */
   @js.native
-  sealed trait ParaguayStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait ParaguayStandardTime extends RecurrenceTimeZone
   
   /**
     * Romance Standard Time
     */
   @js.native
-  sealed trait RomanceStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait RomanceStandardTime extends RecurrenceTimeZone
   
   /**
     * Russia Time Zone 10
     */
   @js.native
-  sealed trait RussiaTimeZone10
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait RussiaTimeZone10 extends RecurrenceTimeZone
   
   /**
     * Russia Time Zone 11
     */
   @js.native
-  sealed trait RussiaTimeZone11
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait RussiaTimeZone11 extends RecurrenceTimeZone
   
   /**
     * Russia Time Zone 3
     */
   @js.native
-  sealed trait RussiaTimeZone3
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait RussiaTimeZone3 extends RecurrenceTimeZone
   
   /**
     * Russian Standard Time
     */
   @js.native
-  sealed trait RussianStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait RussianStandardTime extends RecurrenceTimeZone
   
   /**
     * SA Eastern Standard Time
     */
   @js.native
-  sealed trait SAEasternStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SAEasternStandardTime extends RecurrenceTimeZone
   
   /**
     * SA Pacific Standard Time
     */
   @js.native
-  sealed trait SAPacificStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SAPacificStandardTime extends RecurrenceTimeZone
   
   /**
     * SA Western Standard Time
     */
   @js.native
-  sealed trait SAWesternStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SAWesternStandardTime extends RecurrenceTimeZone
   
   /**
     * Southeast Asia Standard Time
     */
   @js.native
-  sealed trait SEAsiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SEAsiaStandardTime extends RecurrenceTimeZone
   
   /**
     * Saint Pierre Standard Time
     */
   @js.native
-  sealed trait SaintPierreStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SaintPierreStandardTime extends RecurrenceTimeZone
   
   /**
     * Sakhalin Standard Time
     */
   @js.native
-  sealed trait SakhalinStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SakhalinStandardTime extends RecurrenceTimeZone
   
   /**
     * Samoa Standard Time
     */
   @js.native
-  sealed trait SamoaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SamoaStandardTime extends RecurrenceTimeZone
   
   /**
     * Saratov Standard Time
     */
   @js.native
-  sealed trait SaratovStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SaratovStandardTime extends RecurrenceTimeZone
   
   /**
     * Singapore Standard Time
     */
   @js.native
-  sealed trait SingaporeStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SingaporeStandardTime extends RecurrenceTimeZone
   
   /**
     * South Africa Standard Time
     */
   @js.native
-  sealed trait SouthAfricaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SouthAfricaStandardTime extends RecurrenceTimeZone
   
   /**
     * Sri Lanka Standard Time
     */
   @js.native
-  sealed trait SriLankaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SriLankaStandardTime extends RecurrenceTimeZone
   
   /**
     * Sudan Standard Time
     */
   @js.native
-  sealed trait SudanStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SudanStandardTime extends RecurrenceTimeZone
   
   /**
     * Syria Standard Time
     */
   @js.native
-  sealed trait SyriaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait SyriaStandardTime extends RecurrenceTimeZone
   
   /**
     * Taipei Standard Time
     */
   @js.native
-  sealed trait TaipeiStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TaipeiStandardTime extends RecurrenceTimeZone
   
   /**
     * Tasmania Standard Time
     */
   @js.native
-  sealed trait TasmaniaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TasmaniaStandardTime extends RecurrenceTimeZone
   
   /**
     * Tocantins Standard Time
     */
   @js.native
-  sealed trait TocantinsStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TocantinsStandardTime extends RecurrenceTimeZone
   
   /**
     * Tokyo Standard Time
     */
   @js.native
-  sealed trait TokyoStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TokyoStandardTime extends RecurrenceTimeZone
   
   /**
     * Tomsk Standard Time
     */
   @js.native
-  sealed trait TomskStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TomskStandardTime extends RecurrenceTimeZone
   
   /**
     * Tonga Standard Time
     */
   @js.native
-  sealed trait TongaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TongaStandardTime extends RecurrenceTimeZone
   
   /**
     * Transbaikal Standard Time
     */
   @js.native
-  sealed trait TransbaikalStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TransbaikalStandardTime extends RecurrenceTimeZone
   
   /**
     * Turkey Standard Time
     */
   @js.native
-  sealed trait TurkeyStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TurkeyStandardTime extends RecurrenceTimeZone
   
   /**
     * Turks And Caicos Standard Time
     */
   @js.native
-  sealed trait TurksAndCaicosStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait TurksAndCaicosStandardTime extends RecurrenceTimeZone
   
   /**
     * United States Eastern Standard Time
     */
   @js.native
-  sealed trait USEasternStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait USEasternStandardTime extends RecurrenceTimeZone
   
   /**
     * United States Mountain Standard Time
     */
   @js.native
-  sealed trait USMountainStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait USMountainStandardTime extends RecurrenceTimeZone
   
   /**
     * Coordinated Universal Time (UTC)
     */
   @js.native
-  sealed trait UTC
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UTC extends RecurrenceTimeZone
   
   /**
     * Coordinated Universal Time (UTC) - 2 hours
     */
   @js.native
-  sealed trait UTCMINUS02
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UTCMINUS02 extends RecurrenceTimeZone
   
   /**
     * Coordinated Universal Time (UTC) - 8 hours
     */
   @js.native
-  sealed trait UTCMINUS08
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UTCMINUS08 extends RecurrenceTimeZone
   
   /**
     * Coordinated Universal Time (UTC) - 9 hours
     */
   @js.native
-  sealed trait UTCMINUS09
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UTCMINUS09 extends RecurrenceTimeZone
   
   /**
     * Coordinated Universal Time (UTC) - 11 hours
     */
   @js.native
-  sealed trait UTCMINUS11
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UTCMINUS11 extends RecurrenceTimeZone
   
   /**
     * Coordinated Universal Time (UTC) + 12 hours
     */
   @js.native
-  sealed trait UTCPLUS12
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UTCPLUS12 extends RecurrenceTimeZone
   
   /**
     * Coordinated Universal Time (UTC) + 13 hours
     */
   @js.native
-  sealed trait UTCPLUS13
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UTCPLUS13 extends RecurrenceTimeZone
   
   /**
     * Ulaanbaatar Standard Time
     */
   @js.native
-  sealed trait UlaanbaatarStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait UlaanbaatarStandardTime extends RecurrenceTimeZone
   
   /**
     * Venezuela Standard Time
     */
   @js.native
-  sealed trait VenezuelaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait VenezuelaStandardTime extends RecurrenceTimeZone
   
   /**
     * Vladivostok Standard Time
     */
   @js.native
-  sealed trait VladivostokStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait VladivostokStandardTime extends RecurrenceTimeZone
   
   /**
     * West Australia Standard Time
     */
   @js.native
-  sealed trait W_AustraliaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait W_AustraliaStandardTime extends RecurrenceTimeZone
   
   /**
     * West Central Africa Standard Time
     */
   @js.native
-  sealed trait W_CentralAfricaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait W_CentralAfricaStandardTime extends RecurrenceTimeZone
   
   /**
     * West Europe Standard Time
     */
   @js.native
-  sealed trait W_EuropeStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait W_EuropeStandardTime extends RecurrenceTimeZone
   
   /**
     * West Mongolia Standard Time
     */
   @js.native
-  sealed trait W_MongoliaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait W_MongoliaStandardTime extends RecurrenceTimeZone
   
   /**
     * West Asia Standard Time
     */
   @js.native
-  sealed trait WestAsiaStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait WestAsiaStandardTime extends RecurrenceTimeZone
   
   /**
     * West Bank Standard Time
     */
   @js.native
-  sealed trait WestBankStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait WestBankStandardTime extends RecurrenceTimeZone
   
   /**
     * West Pacific Standard Time
     */
   @js.native
-  sealed trait WestPacificStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait WestPacificStandardTime extends RecurrenceTimeZone
   
   /**
     * Yakutsk Standard Time
     */
   @js.native
-  sealed trait YakutskStandardTime
-    extends typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone
+  sealed trait YakutskStandardTime extends RecurrenceTimeZone
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeDashJs.Office.MailboxEnums.RecurrenceTimeZone with String] = js.native
+  def apply(value: String): js.UndefOr[RecurrenceTimeZone with String] = js.native
   /* "AUS Central Standard Time" */ @js.native
   object AUSCentralStandardTime extends TopLevel[AUSCentralStandardTime with String]
   

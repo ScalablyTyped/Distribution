@@ -15,7 +15,7 @@ object atUirouterAngularjsStrings {
   sealed trait onRetain extends js.Object
   
   @js.native
-  sealed trait uiDOTrouter extends js.Object
+  sealed trait uiDotrouter extends js.Object
   
   @scala.inline
   def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
@@ -24,6 +24,6 @@ object atUirouterAngularjsStrings {
   @scala.inline
   def onRetain: onRetain = "onRetain".asInstanceOf[onRetain]
   @scala.inline
-  def uiDOTrouter: uiDOTrouter = "ui.router".asInstanceOf[uiDOTrouter]
+  def uiDotrouter: uiDotrouter = "ui.router".asInstanceOf[uiDotrouter]
 }
 

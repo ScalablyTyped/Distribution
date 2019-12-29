@@ -6,44 +6,44 @@ import scala.scalajs.js.annotation._
 
 object gapiDotDriveStrings {
   @js.native
-  sealed trait `api#channel` extends js.Object
+  sealed trait apiNumbersignchannel extends js.Object
   
   @js.native
-  sealed trait `drive#file` extends js.Object
+  sealed trait drive$property extends js.Object
   
   @js.native
-  sealed trait `drive#fileList` extends js.Object
+  sealed trait driveNumbersignfile extends js.Object
   
   @js.native
-  sealed trait `drive#generatedIds` extends js.Object
+  sealed trait driveNumbersignfileList extends js.Object
   
   @js.native
-  sealed trait `drive#parentReference` extends js.Object
+  sealed trait driveNumbersigngeneratedIds extends js.Object
   
   @js.native
-  sealed trait `drive#permission` extends js.Object
+  sealed trait driveNumbersignparentReference extends js.Object
   
   @js.native
-  sealed trait `drive#user` extends js.Object
+  sealed trait driveNumbersignpermission extends js.Object
   
   @js.native
-  sealed trait driveDOLLARproperty extends js.Object
+  sealed trait driveNumbersignuser extends js.Object
   
   @scala.inline
-  def `api#channel`: `api#channel` = "api#channel".asInstanceOf[`api#channel`]
+  def apiNumbersignchannel: apiNumbersignchannel = "api#channel".asInstanceOf[apiNumbersignchannel]
   @scala.inline
-  def `drive#file`: `drive#file` = "drive#file".asInstanceOf[`drive#file`]
+  def drive$property: drive$property = "drive$property".asInstanceOf[drive$property]
   @scala.inline
-  def `drive#fileList`: `drive#fileList` = "drive#fileList".asInstanceOf[`drive#fileList`]
+  def driveNumbersignfile: driveNumbersignfile = "drive#file".asInstanceOf[driveNumbersignfile]
   @scala.inline
-  def `drive#generatedIds`: `drive#generatedIds` = "drive#generatedIds".asInstanceOf[`drive#generatedIds`]
+  def driveNumbersignfileList: driveNumbersignfileList = "drive#fileList".asInstanceOf[driveNumbersignfileList]
   @scala.inline
-  def `drive#parentReference`: `drive#parentReference` = "drive#parentReference".asInstanceOf[`drive#parentReference`]
+  def driveNumbersigngeneratedIds: driveNumbersigngeneratedIds = "drive#generatedIds".asInstanceOf[driveNumbersigngeneratedIds]
   @scala.inline
-  def `drive#permission`: `drive#permission` = "drive#permission".asInstanceOf[`drive#permission`]
+  def driveNumbersignparentReference: driveNumbersignparentReference = "drive#parentReference".asInstanceOf[driveNumbersignparentReference]
   @scala.inline
-  def `drive#user`: `drive#user` = "drive#user".asInstanceOf[`drive#user`]
+  def driveNumbersignpermission: driveNumbersignpermission = "drive#permission".asInstanceOf[driveNumbersignpermission]
   @scala.inline
-  def driveDOLLARproperty: driveDOLLARproperty = "drive$property".asInstanceOf[driveDOLLARproperty]
+  def driveNumbersignuser: driveNumbersignuser = "drive#user".asInstanceOf[driveNumbersignuser]
 }
 

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassUploadbox
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Uploadbox]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Uploadbox] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Uploadbox]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Uploadbox] {
   var Locale: js.Any = js.native
   var fn: Uploadbox = js.native
 }

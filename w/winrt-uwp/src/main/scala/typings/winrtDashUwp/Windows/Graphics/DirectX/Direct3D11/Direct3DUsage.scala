@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.default
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.dynamic
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.immutable
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.staging
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

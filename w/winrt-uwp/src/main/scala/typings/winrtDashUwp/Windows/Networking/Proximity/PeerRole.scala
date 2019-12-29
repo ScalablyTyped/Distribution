@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerRole.client
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerRole.host
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerRole.peer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

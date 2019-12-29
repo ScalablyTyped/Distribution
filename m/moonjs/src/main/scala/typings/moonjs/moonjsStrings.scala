@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object moonjsStrings {
   @js.native
-  sealed trait `#text` extends js.Object
+  sealed trait Numbersigntext extends js.Object
   
   @scala.inline
-  def `#text`: `#text` = "#text".asInstanceOf[`#text`]
+  def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
 }
 

@@ -24,7 +24,8 @@ class Device protected () extends js.Object {
   val Properties_Original: Properties = js.native
   /** Returns the Type of Device */
   val Type: WiaDeviceType = js.native
-  var `WIA.Device_typekey`: Device = js.native
+  @JSName("WIA.Device_typekey")
+  var WIADotDevice_typekey: Device = js.native
   /** Returns the specified item in the collection by position */
   /** A collection of all commands for this imaging device */
   def Commands(Index: Double): DeviceCommand = js.native

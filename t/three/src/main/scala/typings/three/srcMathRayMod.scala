@@ -3,7 +3,6 @@ package typings.three
 import typings.three.srcMathBox3Mod.Box3
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathPlaneMod.Plane
-import typings.three.srcMathRayMod.Ray
 import typings.three.srcMathSphereMod.Sphere
 import typings.three.srcMathVector3Mod.Vector3
 import scala.scalajs.js

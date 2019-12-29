@@ -2,7 +2,7 @@ package typings.jweixin.jweixinMod
 
 import typings.jweixin.jweixinStrings.link
 import typings.jweixin.jweixinStrings.music
-import typings.jweixin.jweixinStrings.videoBACKSLASHu6216link
+import typings.jweixin.jweixinStrings.video或link
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait IonMenuShareAppMessage extends BaseParams {
   var link: String
   var title: String
   	// 分享图标
-  var `type`: js.UndefOr[music | videoBACKSLASHu6216link | link] = js.undefined
+  var `type`: js.UndefOr[music | video或link | link] = js.undefined
   // 用户取消分享后执行的回调函数
   def cancel(): Unit
    // 如果type是music或video，则要提供数据链接，默认为空
@@ -39,7 +39,7 @@ object IonMenuShareAppMessage {
     complete: /* repeated */ js.Any => Unit = null,
     dataUrl: String = null,
     fail: /* repeated */ js.Any => Unit = null,
-    `type`: music | videoBACKSLASHu6216link | link = null
+    `type`: music | video或link | link = null
   ): IonMenuShareAppMessage = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), desc = desc.asInstanceOf[js.Any], imgUrl = imgUrl.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], success = js.Any.fromFunction0(success), title = title.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

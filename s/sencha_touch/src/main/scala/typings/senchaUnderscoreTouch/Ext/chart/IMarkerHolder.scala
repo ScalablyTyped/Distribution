@@ -13,7 +13,7 @@ trait IMarkerHolder extends IBase {
   		* @param marker Ext.chart.Markers
   		*/
   var bindMarker: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[java.lang.String], /* marker */ js.UndefOr[IMarkers], Unit]
+    js.Function2[/* name */ js.UndefOr[String], /* marker */ js.UndefOr[IMarkers], Unit]
   ] = js.undefined
 }
 
@@ -22,14 +22,14 @@ object IMarkerHolder {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    bindMarker: (/* name */ js.UndefOr[java.lang.String], /* marker */ js.UndefOr[IMarkers]) => Unit = null,
+    bindMarker: (/* name */ js.UndefOr[String], /* marker */ js.UndefOr[IMarkers]) => Unit = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,

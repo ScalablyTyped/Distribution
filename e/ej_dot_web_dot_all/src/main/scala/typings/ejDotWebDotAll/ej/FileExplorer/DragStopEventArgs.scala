@@ -16,7 +16,7 @@ trait DragStopEventArgs extends js.Object {
   var fileInfo: js.UndefOr[js.Any] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the target element.
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -37,7 +37,7 @@ object DragStopEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     dropAction: String = null,
     fileInfo: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     target: js.Any = null,
     targetElementName: String = null,
     targetPath: String = null,

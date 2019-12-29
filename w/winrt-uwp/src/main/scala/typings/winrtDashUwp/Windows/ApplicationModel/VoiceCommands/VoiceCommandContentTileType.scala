@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleOnly
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith280x140Icon
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith280x140IconAndText
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x68Icon
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x68IconAndText
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x92Icon
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x92IconAndText
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWithText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

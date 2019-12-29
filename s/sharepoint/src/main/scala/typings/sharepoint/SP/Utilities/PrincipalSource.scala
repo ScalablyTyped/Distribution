@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Utilities.PrincipalSource.all
-import typings.sharepoint.SP.Utilities.PrincipalSource.membershipProvider
-import typings.sharepoint.SP.Utilities.PrincipalSource.none
-import typings.sharepoint.SP.Utilities.PrincipalSource.roleProvider
-import typings.sharepoint.SP.Utilities.PrincipalSource.userInfoList
-import typings.sharepoint.SP.Utilities.PrincipalSource.windows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

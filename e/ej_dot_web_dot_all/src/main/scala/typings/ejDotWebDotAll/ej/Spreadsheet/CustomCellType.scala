@@ -30,20 +30,16 @@ object CustomCellType extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CustomCellType with Double] = js.native
   /* 0 */ @js.native
-  object Button
-    extends TopLevel[typings.ejDotWebDotAll.ej.Spreadsheet.CustomCellType.Button with Double]
+  object Button extends TopLevel[Button with Double]
   
   /* 1 */ @js.native
-  object CheckBox
-    extends TopLevel[typings.ejDotWebDotAll.ej.Spreadsheet.CustomCellType.CheckBox with Double]
+  object CheckBox extends TopLevel[CheckBox with Double]
   
   /* 2 */ @js.native
-  object DatePicker
-    extends TopLevel[typings.ejDotWebDotAll.ej.Spreadsheet.CustomCellType.DatePicker with Double]
+  object DatePicker extends TopLevel[DatePicker with Double]
   
   /* 3 */ @js.native
-  object DropDownList
-    extends TopLevel[typings.ejDotWebDotAll.ej.Spreadsheet.CustomCellType.DropDownList with Double]
+  object DropDownList extends TopLevel[DropDownList with Double]
   
 }
 

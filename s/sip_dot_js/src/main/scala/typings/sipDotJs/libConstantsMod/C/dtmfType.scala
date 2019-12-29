@@ -1,7 +1,6 @@
 package typings.sipDotJs.libConstantsMod.C
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libConstantsMod.C.dtmfType.RTP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

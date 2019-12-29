@@ -11,7 +11,8 @@ class ColorEffect protected () extends js.Object {
   val By: ColorFormat = js.native
   val From: ColorFormat = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ColorEffect_typekey`: ColorEffect = js.native
+  @JSName("PowerPoint.ColorEffect_typekey")
+  var PowerPointDotColorEffect_typekey: ColorEffect = js.native
   val To: ColorFormat = js.native
 }
 

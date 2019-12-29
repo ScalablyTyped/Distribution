@@ -1,6 +1,7 @@
 package typings.winjs.winjsMod.UI
 
 import typings.std.HTMLElement
+import typings.winjs.WinJS.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ object Fragments extends js.Object {
     * @param href The URI that contains the fragment to be copied.
     * @returns A promise that is fulfilled when the fragment has been prepared for copying.
     **/
-  def cache(href: String): typings.winjs.WinJS.Promise[_] = js.native
+  def cache(href: String): Promise[_] = js.native
   /**
     * Removes any cached information about the specified fragment. This method does not unload any scripts or styles that are referenced by the fragment.
     * @param href The URI that contains the fragment to be cleared. If no URI is provided, the entire contents of the cache are cleared.
@@ -30,17 +31,17 @@ object Fragments extends js.Object {
     * @param element Optional. The element to which the fragment is appended.
     * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The element is not added to the cache. See also rendercopy, where the element is added to the cache.
     **/
-  def render(href: String): typings.winjs.WinJS.Promise[HTMLElement] = js.native
-  def render(href: String, element: HTMLElement): typings.winjs.WinJS.Promise[HTMLElement] = js.native
+  def render(href: String): Promise[HTMLElement] = js.native
+  def render(href: String, element: HTMLElement): Promise[HTMLElement] = js.native
   /**
     * Loads and copies the contents of the specified URI into the specified element.
     * @param href The URI that contains the fragment to copy.
     * @param target The element to which the fragment is appended.
     * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The fragment is added to the cache. See also render, where the element is not added to the cache.
     **/
-  def renderCopy(href: String): typings.winjs.WinJS.Promise[HTMLElement] = js.native
-  def renderCopy(href: String, target: HTMLElement): typings.winjs.WinJS.Promise[HTMLElement] = js.native
-  def renderCopy(href: HTMLElement): typings.winjs.WinJS.Promise[HTMLElement] = js.native
-  def renderCopy(href: HTMLElement, target: HTMLElement): typings.winjs.WinJS.Promise[HTMLElement] = js.native
+  def renderCopy(href: String): Promise[HTMLElement] = js.native
+  def renderCopy(href: String, target: HTMLElement): Promise[HTMLElement] = js.native
+  def renderCopy(href: HTMLElement): Promise[HTMLElement] = js.native
+  def renderCopy(href: HTMLElement, target: HTMLElement): Promise[HTMLElement] = js.native
 }
 

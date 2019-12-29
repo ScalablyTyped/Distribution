@@ -1,8 +1,6 @@
 package typings.atUirouterCore.libTransitionInterfaceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookScope.STATE
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookScope.TRANSITION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,13 +1,9 @@
 package typings.bser
 
-import typings.bser.bserMod.Accumulator
-import typings.bser.bserMod.AnyWrapper
-import typings.bser.bserMod.InputWrapper
-import typings.bser.bserMod.IntWrapper
+import typings.bser.bserBooleans.`false`
+import typings.bser.bserBooleans.`true`
 import typings.bser.bserNumbers.`0`
 import typings.bser.bserNumbers.`1`
-import typings.bser.bserNumbers.`false`
-import typings.bser.bserNumbers.`true`
 import typings.node.Buffer
 import typings.node.NodeJS.TypedArray
 import typings.node.eventsMod.EventEmitter

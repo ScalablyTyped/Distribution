@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatXMLMod.XML
 import typings.std.Document
 import typings.std.Element
 import scala.scalajs.js

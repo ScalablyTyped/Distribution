@@ -1,25 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.boolean
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.default
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.fileTime
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.hexadecimal
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.hidden
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.hresult
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.ipv4Address
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.ipv6Address
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.json
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.ntStatus
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.port
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.processId
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.signed
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.socketAddress
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.string
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.threadId
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.unsigned
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.win32Error
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingFieldFormat.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

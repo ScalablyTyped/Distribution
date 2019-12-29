@@ -1,7 +1,7 @@
 package typings.ethjsDashSigner
 
-import typings.ethjsDashSigner.ethjsDashSignerNumbers.`false`
-import typings.ethjsDashSigner.ethjsDashSignerNumbers.`true`
+import typings.ethjsDashSigner.ethjsDashSignerBooleans.`false`
+import typings.ethjsDashSigner.ethjsDashSignerBooleans.`true`
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

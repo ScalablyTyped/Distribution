@@ -1,16 +1,6 @@
 package typings.atFirebaseFirestore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.Bound
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.Direction
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.FieldFilter
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.Filter
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType.First
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType.Last
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.Operator
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.OrderBy
-import typings.atFirebaseFirestore.distSrcCoreQueryMod.Query
 import typings.atFirebaseFirestore.distSrcCoreTargetMod.Target
 import typings.atFirebaseFirestore.distSrcModelDocumentMod.Document
 import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ArrayValue
@@ -147,7 +137,7 @@ object distSrcCoreQueryMod extends js.Object {
     var matchesOrderBy: js.Any = js.native
     var matchesPathAndCollectionGroup: js.Any = js.native
     var memoizedOrderBy: js.Any = js.native
-    var memorizedTarget: js.Any = js.native
+    var memoizedTarget: js.Any = js.native
     val path: ResourcePath = js.native
     val startAt: Bound | Null = js.native
     def addFilter(filter: Filter): Query = js.native

@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.ReadIdentitiesOptions.FilterIllegalMemberships
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.ReadIdentitiesOptions.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

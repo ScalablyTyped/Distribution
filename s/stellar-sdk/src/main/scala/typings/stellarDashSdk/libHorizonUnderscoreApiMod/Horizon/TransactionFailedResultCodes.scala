@@ -1,10 +1,6 @@
 package typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon
 
 import org.scalablytyped.runtime.TopLevel
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_AUTH
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_AUTH_EXTRA
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_SEQ
-import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_FAILED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -32,12 +32,6 @@ object reactDashVirtualizedNumbers {
   @js.native
   sealed trait `30` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
@@ -56,9 +50,5 @@ object reactDashVirtualizedNumbers {
   def `20`: `20` = 20.asInstanceOf[`20`]
   @scala.inline
   def `30`: `30` = 30.asInstanceOf[`30`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

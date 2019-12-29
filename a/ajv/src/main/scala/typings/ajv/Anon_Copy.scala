@@ -1,7 +1,7 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.ajvNumbers.`true`
+import typings.ajv.ajvBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

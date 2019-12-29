@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.VerticalAlign.Bottom
-import typings.openui5.sap.ui.core.VerticalAlign.Inherit
-import typings.openui5.sap.ui.core.VerticalAlign.Middle
-import typings.openui5.sap.ui.core.VerticalAlign.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

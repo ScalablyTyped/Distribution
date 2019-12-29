@@ -1,6 +1,5 @@
 package typings.rafDashSchd
 
-import typings.rafDashSchd.rafDashSchdMod.Schedule
 import typings.std.Parameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`

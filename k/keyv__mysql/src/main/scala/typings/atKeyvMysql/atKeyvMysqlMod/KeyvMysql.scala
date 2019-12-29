@@ -1,6 +1,6 @@
 package typings.atKeyvMysql.atKeyvMysqlMod
 
-import typings.atKeyvMysql.atKeyvMysqlNumbers.`false`
+import typings.atKeyvMysql.atKeyvMysqlBooleans.`false`
 import typings.keyv.keyvMod.Store
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js

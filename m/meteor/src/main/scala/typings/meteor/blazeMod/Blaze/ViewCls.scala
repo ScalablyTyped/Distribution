@@ -24,7 +24,7 @@ class ViewCls () extends View {
   /* CompleteClass */
   override var renderCount: Double = js.native
   /* CompleteClass */
-  override var template: typings.meteor.blazeMod.Blaze.Template = js.native
+  override var template: Template = js.native
   /* CompleteClass */
   override def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
   /* CompleteClass */

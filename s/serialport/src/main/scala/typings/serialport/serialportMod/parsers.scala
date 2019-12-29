@@ -6,7 +6,6 @@ import typings.serialport.Anon_Delimiter
 import typings.serialport.Anon_DelimiterArray
 import typings.serialport.Anon_Length
 import typings.serialport.Anon_Regex
-import typings.serialport.serialportMod.parsers.Delimiter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

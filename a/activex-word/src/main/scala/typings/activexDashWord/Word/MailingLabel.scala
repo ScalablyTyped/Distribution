@@ -15,7 +15,8 @@ class MailingLabel protected () extends js.Object {
   var DefaultPrintBarCode: Boolean = js.native
   val Parent: js.Any = js.native
   var Vertical: Boolean = js.native
-  var `Word.MailingLabel_typekey`: MailingLabel = js.native
+  @JSName("Word.MailingLabel_typekey")
+  var WordDotMailingLabel_typekey: MailingLabel = js.native
   def CreateNewDocument(
     Name: js.UndefOr[js.Any],
     Address: js.UndefOr[js.Any],

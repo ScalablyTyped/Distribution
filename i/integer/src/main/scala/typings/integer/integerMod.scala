@@ -1,7 +1,5 @@
 package typings.integer
 
-import typings.integer.integerMod.IntClass
-import typings.integer.integerMod.IntLike
 import typings.integer.integerNumbers.`-1`
 import typings.integer.integerNumbers.`0`
 import typings.integer.integerNumbers.`1`

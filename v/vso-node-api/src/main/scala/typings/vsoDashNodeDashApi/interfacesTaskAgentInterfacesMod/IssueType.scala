@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.IssueType.Error
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.IssueType.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

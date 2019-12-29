@@ -1,8 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.HeartbeatMessageType.heartbeat_request
-import typings.nodeDashForge.nodeDashForgeMod.tls.HeartbeatMessageType.heartbeat_response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

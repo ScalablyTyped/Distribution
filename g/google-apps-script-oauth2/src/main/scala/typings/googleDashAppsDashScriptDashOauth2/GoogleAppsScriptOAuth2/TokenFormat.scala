@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.TokenFormat.FORM_URL_ENCODED
-import typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.TokenFormat.JSON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

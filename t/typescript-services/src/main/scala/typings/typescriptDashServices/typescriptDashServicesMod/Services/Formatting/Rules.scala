@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
+import typings.typescriptDashServices.TypeScript.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,10 +35,7 @@ object Rules extends js.Object {
   def IsSameLineTokenContext(context: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingContext): Boolean = js.native
   def IsSameLineTokenOrBeforeMultilineBlockContext(context: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingContext): Boolean = js.native
   def IsSingleLineBlockContext(context: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingContext): Boolean = js.native
-  def IsTypeArgumentOrParameter(
-    tokenKind: typings.typescriptDashServices.TypeScript.SyntaxKind,
-    parentKind: typings.typescriptDashServices.TypeScript.SyntaxKind
-  ): Boolean = js.native
+  def IsTypeArgumentOrParameter(tokenKind: SyntaxKind, parentKind: SyntaxKind): Boolean = js.native
   def IsTypeArgumentOrParameterContext(context: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingContext): Boolean = js.native
   def IsTypeScriptDeclWithBlockContext(context: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingContext): Boolean = js.native
   def IsVoidOpContext(context: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingContext): Boolean = js.native

@@ -5,37 +5,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DateTimeFormatOptions extends js.Object {
-  var day: js.UndefOr[java.lang.String] = js.undefined
-  var era: js.UndefOr[java.lang.String] = js.undefined
-  var formatMatcher: js.UndefOr[java.lang.String] = js.undefined
-  var hour: js.UndefOr[java.lang.String] = js.undefined
-  var hour12: js.UndefOr[scala.Boolean] = js.undefined
-  var localeMatcher: js.UndefOr[java.lang.String] = js.undefined
-  var minute: js.UndefOr[java.lang.String] = js.undefined
-  var month: js.UndefOr[java.lang.String] = js.undefined
-  var second: js.UndefOr[java.lang.String] = js.undefined
-  var timeZone: js.UndefOr[java.lang.String] = js.undefined
-  var timeZoneName: js.UndefOr[java.lang.String] = js.undefined
-  var weekday: js.UndefOr[java.lang.String] = js.undefined
-  var year: js.UndefOr[java.lang.String] = js.undefined
+  var day: js.UndefOr[String] = js.undefined
+  var era: js.UndefOr[String] = js.undefined
+  var formatMatcher: js.UndefOr[String] = js.undefined
+  var hour: js.UndefOr[String] = js.undefined
+  var hour12: js.UndefOr[Boolean] = js.undefined
+  var localeMatcher: js.UndefOr[String] = js.undefined
+  var minute: js.UndefOr[String] = js.undefined
+  var month: js.UndefOr[String] = js.undefined
+  var second: js.UndefOr[String] = js.undefined
+  var timeZone: js.UndefOr[String] = js.undefined
+  var timeZoneName: js.UndefOr[String] = js.undefined
+  var weekday: js.UndefOr[String] = js.undefined
+  var year: js.UndefOr[String] = js.undefined
 }
 
 object DateTimeFormatOptions {
   @scala.inline
   def apply(
-    day: java.lang.String = null,
-    era: java.lang.String = null,
-    formatMatcher: java.lang.String = null,
-    hour: java.lang.String = null,
-    hour12: js.UndefOr[scala.Boolean] = js.undefined,
-    localeMatcher: java.lang.String = null,
-    minute: java.lang.String = null,
-    month: java.lang.String = null,
-    second: java.lang.String = null,
-    timeZone: java.lang.String = null,
-    timeZoneName: java.lang.String = null,
-    weekday: java.lang.String = null,
-    year: java.lang.String = null
+    day: String = null,
+    era: String = null,
+    formatMatcher: String = null,
+    hour: String = null,
+    hour12: js.UndefOr[Boolean] = js.undefined,
+    localeMatcher: String = null,
+    minute: String = null,
+    month: String = null,
+    second: String = null,
+    timeZone: String = null,
+    timeZoneName: String = null,
+    weekday: String = null,
+    year: String = null
   ): DateTimeFormatOptions = {
     val __obj = js.Dynamic.literal()
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])

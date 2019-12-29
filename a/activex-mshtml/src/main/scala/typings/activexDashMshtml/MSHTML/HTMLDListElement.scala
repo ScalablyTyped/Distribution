@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLDListElement")
 @js.native
 class HTMLDListElement protected () extends js.Object {
-  var `MSHTML.HTMLDListElement_typekey`: HTMLDListElement = js.native
+  @JSName("MSHTML.HTMLDListElement_typekey")
+  var MSHTMLDotHTMLDListElement_typekey: HTMLDListElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

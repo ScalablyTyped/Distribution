@@ -1,7 +1,6 @@
 package typings.ecmarkup
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ecmarkup.libAutolinkerMod.AutoLinkMap
 import typings.ecmarkup.libBiblioMod.BiblioEntry
 import typings.ecmarkup.libSpecMod.Spec
 import typings.std.Node

@@ -22,7 +22,8 @@ class ShellFolderView protected () extends js.Object {
   var GroupBy: String = js.native
   /** Set Icon Size */
   var IconSize: Double = js.native
-  var `Shell32.ShellFolderView_typekey`: ShellFolderView = js.native
+  @JSName("Shell32.ShellFolderView_typekey")
+  var Shell32DotShellFolderView_typekey: ShellFolderView = js.native
   /** Get Sorting Columns */
   var SortColumns: String = js.native
   /** Returns the view options for showing a folder. */

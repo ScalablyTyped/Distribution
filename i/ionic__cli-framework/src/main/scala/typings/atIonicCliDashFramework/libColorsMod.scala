@@ -1,10 +1,5 @@
 package typings.atIonicCliDashFramework
 
-import typings.atIonicCliDashFramework.libColorsMod.ColorFunction
-import typings.atIonicCliDashFramework.libColorsMod.Colors
-import typings.atIonicCliDashFramework.libColorsMod.HelpColors
-import typings.atIonicCliDashFramework.libColorsMod.HelpGroupColors
-import typings.atIonicCliDashFramework.libColorsMod.LoggerColors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

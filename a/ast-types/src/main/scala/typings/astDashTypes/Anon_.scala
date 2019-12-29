@@ -1,9 +1,9 @@
 package typings.astDashTypes
 
-import typings.astDashTypes.astDashTypesStrings.`!`
-import typings.astDashTypes.astDashTypesStrings.`+`
-import typings.astDashTypes.astDashTypesStrings.`-`
-import typings.astDashTypes.astDashTypesStrings.`~`
+import typings.astDashTypes.astDashTypesStrings.Exclamationmark
+import typings.astDashTypes.astDashTypesStrings.Plussign
+import typings.astDashTypes.astDashTypesStrings.Tilde
+import typings.astDashTypes.astDashTypesStrings.`-_`
 import typings.astDashTypes.astDashTypesStrings.delete
 import typings.astDashTypes.astDashTypesStrings.typeof
 import typings.astDashTypes.astDashTypesStrings.void
@@ -18,7 +18,7 @@ trait Anon_ extends js.Object {
   var argument: ExpressionKind
   var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
-  var operator: `-` | `+` | `!` | `~` | typeof | void | delete
+  var operator: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete
   var prefix: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -26,7 +26,7 @@ object Anon_ {
   @scala.inline
   def apply(
     argument: ExpressionKind,
-    operator: `-` | `+` | `!` | `~` | typeof | void | delete,
+    operator: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete,
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null,
     prefix: js.UndefOr[Boolean] = js.undefined

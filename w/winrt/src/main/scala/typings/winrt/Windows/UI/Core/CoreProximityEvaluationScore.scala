@@ -1,8 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreProximityEvaluationScore.closest
-import typings.winrt.Windows.UI.Core.CoreProximityEvaluationScore.farthest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

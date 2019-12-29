@@ -1,8 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls.Alert
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Level.fatal
-import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Level.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

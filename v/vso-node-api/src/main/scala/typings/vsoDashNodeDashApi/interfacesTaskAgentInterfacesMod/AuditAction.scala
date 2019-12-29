@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AuditAction.Add
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AuditAction.Delete
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AuditAction.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

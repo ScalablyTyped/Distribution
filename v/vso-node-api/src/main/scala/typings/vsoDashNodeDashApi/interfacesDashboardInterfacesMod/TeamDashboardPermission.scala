@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Create
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Delete
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Edit
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.ManagePermissions
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.None
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Read
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

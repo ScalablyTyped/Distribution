@@ -204,9 +204,9 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_multiDrag(name: multiDrag, value: Boolean): Unit = js.native
   @JSName("option")
-  def option_multiDragKey(name: multiDragKey): Unit = js.native
+  def option_multiDragKey(name: multiDragKey): Null = js.native
   @JSName("option")
-  def option_multiDragKey_Null(name: multiDragKey): Null = js.native
+  def option_multiDragKey_Unit(name: multiDragKey): Unit = js.native
   @JSName("option")
   def option_preventOnFilter(name: preventOnFilter): Boolean = js.native
   @JSName("option")

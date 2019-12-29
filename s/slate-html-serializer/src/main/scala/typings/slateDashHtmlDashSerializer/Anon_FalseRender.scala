@@ -1,6 +1,6 @@
 package typings.slateDashHtmlDashSerializer
 
-import typings.slateDashHtmlDashSerializer.slateDashHtmlDashSerializerNumbers.`false`
+import typings.slateDashHtmlDashSerializer.slateDashHtmlDashSerializerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

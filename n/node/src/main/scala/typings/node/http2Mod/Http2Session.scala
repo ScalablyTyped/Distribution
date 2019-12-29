@@ -1,7 +1,6 @@
 package typings.node.http2Mod
 
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
@@ -12,19 +11,20 @@ import typings.node.nodeStrings.goaway
 import typings.node.nodeStrings.ping
 import typings.node.nodeStrings.timeout
 import typings.node.tlsMod.TLSSocket
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Http2Session extends EventEmitter {
-  val alpnProtocol: js.UndefOr[java.lang.String] = js.native
+  val alpnProtocol: js.UndefOr[String] = js.native
   val closed: Boolean = js.native
   val connecting: Boolean = js.native
   val destroyed: Boolean = js.native
   val encrypted: js.UndefOr[Boolean] = js.native
   val localSettings: Settings = js.native
-  val originSet: js.UndefOr[js.Array[java.lang.String]] = js.native
+  val originSet: js.UndefOr[js.Array[String]] = js.native
   val pendingSettingsAck: Boolean = js.native
   val remoteSettings: Settings = js.native
   val socket: Socket | TLSSocket = js.native

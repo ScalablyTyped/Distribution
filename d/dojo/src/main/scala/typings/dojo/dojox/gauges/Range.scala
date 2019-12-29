@@ -2,6 +2,7 @@ package typings.dojo.dojox.gauges
 
 import typings.dojo.Anon_Unwatch
 import typings.dojo.dijit._Widget
+import typings.dojo.dojoStrings.color
 import typings.dojo.dojoStrings.high
 import typings.dojo.dojoStrings.hover
 import typings.dojo.dojoStrings.low
@@ -62,7 +63,7 @@ class Range () extends _Widget {
   @JSName("style")
   var style_Range: String = js.native
   @JSName("get")
-  def get_color(property: typings.dojo.dojoStrings.color): js.Object = js.native
+  def get_color(property: color): js.Object = js.native
   @JSName("get")
   def get_high(property: high): Double = js.native
   @JSName("get")
@@ -72,7 +73,7 @@ class Range () extends _Widget {
   @JSName("get")
   def get_size(property: size): Double = js.native
   @JSName("set")
-  def set_color(property: typings.dojo.dojoStrings.color, value: js.Object): Unit = js.native
+  def set_color(property: color, value: js.Object): Unit = js.native
   @JSName("set")
   def set_high(property: high, value: Double): Unit = js.native
   @JSName("set")
@@ -85,7 +86,7 @@ class Range () extends _Widget {
   def set_style(property: style, value: String): Unit = js.native
   @JSName("watch")
   def watch_color(
-    property: typings.dojo.dojoStrings.color,
+    property: color,
     callback: js.Function3[
       /* property */ js.UndefOr[String], 
       /* oldValue */ js.UndefOr[js.Object], 

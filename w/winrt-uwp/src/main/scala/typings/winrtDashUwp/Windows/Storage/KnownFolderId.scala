@@ -1,20 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.appCaptures
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.cameraRoll
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.documentsLibrary
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.homeGroup
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.mediaServerDevices
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.musicLibrary
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.objects3D
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.picturesLibrary
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.playlists
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.recordedCalls
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.removableDevices
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.savedPictures
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.screenshots
-import typings.winrtDashUwp.Windows.Storage.KnownFolderId.videosLibrary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

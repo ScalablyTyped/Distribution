@@ -1,9 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.dismissType.addAttachment
-import typings.instabugDashReactnative.instabugDashReactnativeMod.dismissType.cancel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.dismissType.submit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

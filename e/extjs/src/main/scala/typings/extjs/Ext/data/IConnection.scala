@@ -25,7 +25,7 @@ trait IConnection extends IObservable {
   /** [Config Option] (Boolean) */
   var disableCaching: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var disableCachingParam: js.UndefOr[java.lang.String] = js.undefined
+  var disableCachingParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var extraParams: js.UndefOr[js.Any] = js.undefined
   /** [Method] Determines whether this object has a request outstanding
@@ -34,7 +34,7 @@ trait IConnection extends IObservable {
   		*/
   var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   /** [Method] Checks if the response status was successful
   		* @param status Number The status code
   		* @returns Object An object containing success/status state
@@ -64,8 +64,8 @@ trait IConnection extends IObservable {
   var upload: js.UndefOr[
     js.Function4[
       /* form */ js.UndefOr[js.Any], 
-      /* url */ js.UndefOr[java.lang.String], 
-      /* params */ js.UndefOr[java.lang.String], 
+      /* url */ js.UndefOr[String], 
+      /* params */ js.UndefOr[String], 
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
@@ -95,28 +95,28 @@ object IConnection {
     cors: js.UndefOr[Boolean] = js.undefined,
     defaultHeaders: js.Any = null,
     disableCaching: js.UndefOr[Boolean] = js.undefined,
-    disableCachingParam: java.lang.String = null,
+    disableCachingParam: String = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     extraParams: js.Any = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IConnection = null,
     isLoading: /* request */ js.UndefOr[js.Any] => Boolean = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     listeners: js.Any = null,
-    method: java.lang.String = null,
+    method: String = null,
     mixins: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     parseStatus: /* status */ js.UndefOr[Double] => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     request: /* options */ js.UndefOr[js.Any] => _ = null,
     requires: Array = null,
@@ -129,8 +129,8 @@ object IConnection {
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     timeout: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    upload: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    upload: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): IConnection = {

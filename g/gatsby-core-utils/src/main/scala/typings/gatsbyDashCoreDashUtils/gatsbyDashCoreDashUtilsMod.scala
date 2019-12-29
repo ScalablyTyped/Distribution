@@ -14,6 +14,7 @@ object gatsbyDashCoreDashUtilsMod extends js.Object {
   def isCI(): Boolean = js.native
   def isNodeInternalModulePath(fileName: String): Boolean = js.native
   def joinPath(paths: String*): String = js.native
+  def slash(path: String): String = js.native
   def urlResolve(segments: String*): String = js.native
 }
 

@@ -1,10 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.SubDocumentType.Footer
-import typings.devexpressDashWeb.SubDocumentType.Header
-import typings.devexpressDashWeb.SubDocumentType.Main
-import typings.devexpressDashWeb.SubDocumentType.TextBox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

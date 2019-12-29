@@ -1,17 +1,6 @@
 package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Srch.EventType.batchQueryIssuing
-import typings.sharepoint.Srch.EventType.batchResultReady
-import typings.sharepoint.Srch.EventType.load
-import typings.sharepoint.Srch.EventType.none
-import typings.sharepoint.Srch.EventType.postLoad
-import typings.sharepoint.Srch.EventType.preLoad
-import typings.sharepoint.Srch.EventType.queryIssuing
-import typings.sharepoint.Srch.EventType.queryReady
-import typings.sharepoint.Srch.EventType.queryStateChanged
-import typings.sharepoint.Srch.EventType.resultReady
-import typings.sharepoint.Srch.EventType.resultRendered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

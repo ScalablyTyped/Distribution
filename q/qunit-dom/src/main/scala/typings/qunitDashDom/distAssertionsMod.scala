@@ -1,6 +1,5 @@
 package typings.qunitDashDom
 
-import typings.qunitDashDom.distAssertionsMod.DOMAssertions
 import typings.qunitDashDom.qunitDashDomMod._Global_.Assert
 import typings.std.Element
 import typings.std.RegExp

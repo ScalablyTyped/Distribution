@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.eventsV1beta1EventListMod.EventList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.eventsDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.events.v1beta1.Event
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object eventsV1beta1EventListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`eventsDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[eventsDotk8sDotioSlashv1beta1] = js.native
     /**
       * Items is a list of schema objects.
       */

@@ -1,5 +1,6 @@
 package typings.dojo.dojox.NodeList.delegate
 
+import typings.dojo.dojo.NodeList
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,8 +23,8 @@ trait addContent extends js.Object {
   def apply(content: String, position: Double): js.Function = js.native
   def apply(content: js.Object, position: String): js.Function = js.native
   def apply(content: js.Object, position: Double): js.Function = js.native
-  def apply(content: typings.dojo.dojo.NodeList, position: String): js.Function = js.native
-  def apply(content: typings.dojo.dojo.NodeList, position: Double): js.Function = js.native
+  def apply(content: NodeList, position: String): js.Function = js.native
+  def apply(content: NodeList, position: Double): js.Function = js.native
   def apply(content: HTMLElement, position: String): js.Function = js.native
   def apply(content: HTMLElement, position: Double): js.Function = js.native
 }

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem.ellipsoid
-import typings.winrtDashUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem.geoid
-import typings.winrtDashUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem.surface
-import typings.winrtDashUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem.terrain
-import typings.winrtDashUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

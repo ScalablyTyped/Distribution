@@ -17,7 +17,8 @@ class TextRange2 protected () extends js.Object {
   val Font: Font2 = js.native
   var LanguageID: MsoLanguageID = js.native
   val Length: Double = js.native
-  var `Office.TextRange2_typekey`: TextRange2 = js.native
+  @JSName("Office.TextRange2_typekey")
+  var OfficeDotTextRange2_typekey: TextRange2 = js.native
   val ParagraphFormat: ParagraphFormat2 = js.native
   val Parent: js.Any = js.native
   val Start: Double = js.native

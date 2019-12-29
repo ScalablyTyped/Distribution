@@ -1,13 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CameraControlProperty.CCP_EXPOSURE
-import typings.dwt.EnumDWT_CameraControlProperty.CCP_FOCUS
-import typings.dwt.EnumDWT_CameraControlProperty.CCP_IRIS
-import typings.dwt.EnumDWT_CameraControlProperty.CCP_PAN
-import typings.dwt.EnumDWT_CameraControlProperty.CCP_ROLL
-import typings.dwt.EnumDWT_CameraControlProperty.CCP_TILT
-import typings.dwt.EnumDWT_CameraControlProperty.CCP_ZOOM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

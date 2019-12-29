@@ -1,6 +1,6 @@
 package typings.remarkable.libMod
 
-import typings.remarkable.remarkableNumbers.`false`
+import typings.remarkable.remarkableBooleans.`false`
 import typings.remarkable.remarkableStrings.htmlblock
 import scala.scalajs.js
 import scala.scalajs.js.`|`

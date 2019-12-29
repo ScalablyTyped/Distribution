@@ -1,13 +1,6 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.adaptive
-import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.automatic
-import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.average
-import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.none
-import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.paeth
-import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.sub
-import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

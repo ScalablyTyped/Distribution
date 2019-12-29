@@ -1,8 +1,8 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsNumbers.`false`
-import typings.screeps.screepsNumbers.`true`
+import typings.screeps.screepsBooleans.`false`
+import typings.screeps.screepsBooleans.`true`
 import typings.screeps.screepsStrings.constructionSite
 import typings.screeps.screepsStrings.creep
 import typings.screeps.screepsStrings.deposit

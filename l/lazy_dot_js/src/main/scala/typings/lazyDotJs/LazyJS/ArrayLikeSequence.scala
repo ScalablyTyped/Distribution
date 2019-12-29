@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ArrayLikeSequence[T] extends Sequence[T] {
   @JSName("first")
-  def first_ArrayLikeSequence(): ArrayLikeSequence[T] = js.native
+  def first_T(): T = js.native
   def get(index: Double): T = js.native
   def length(): Double = js.native
   def pop(): ArrayLikeSequence[T] = js.native

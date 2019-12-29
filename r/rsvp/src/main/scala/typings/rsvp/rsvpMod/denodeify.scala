@@ -1,7 +1,7 @@
 package typings.rsvp.rsvpMod
 
-import typings.rsvp.rsvpNumbers.`false`
-import typings.rsvp.rsvpNumbers.`true`
+import typings.rsvp.rsvpBooleans.`false`
+import typings.rsvp.rsvpBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

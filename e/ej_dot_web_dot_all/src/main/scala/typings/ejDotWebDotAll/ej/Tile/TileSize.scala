@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tile.TileSize.Large
-import typings.ejDotWebDotAll.ej.Tile.TileSize.Medium
-import typings.ejDotWebDotAll.ej.Tile.TileSize.Small
-import typings.ejDotWebDotAll.ej.Tile.TileSize.Wide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

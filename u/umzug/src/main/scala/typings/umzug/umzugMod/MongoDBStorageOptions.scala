@@ -2,7 +2,7 @@ package typings.umzug.umzugMod
 
 import typings.mongodb.mongodbMod.Collection
 import typings.mongodb.mongodbMod.Db
-import typings.mongodb.mongodbMod.Default
+import typings.mongodb.mongodbMod.DefaultSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait MongoDBStorageOptions extends Storage {
     * The to be used Mongo collection cursor.
     * Defaults to collection created from collectionName attribute.
     */
-  var collection: js.UndefOr[Collection[Default]] = js.undefined
+  var collection: js.UndefOr[Collection[DefaultSchema]] = js.undefined
   /**
     * The name of the collection used by the connection.
     * Defaults to 'migrations'
@@ -30,7 +30,7 @@ object MongoDBStorageOptions {
     executed: () => js.Promise[js.Array[String]],
     logMigration: String => js.Promise[Unit],
     unlogMigration: String => js.Promise[Unit],
-    collection: Collection[Default] = null,
+    collection: Collection[DefaultSchema] = null,
     collectionName: String = null,
     connection: Db = null
   ): MongoDBStorageOptions = {

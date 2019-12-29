@@ -1,8 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.DepthDataAccuracy.Absolute
-import typings.expo.buildARMod.DepthDataAccuracy.Relative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

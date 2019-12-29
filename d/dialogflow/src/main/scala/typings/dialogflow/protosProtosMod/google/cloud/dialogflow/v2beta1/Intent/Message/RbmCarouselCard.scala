@@ -3,9 +3,6 @@ package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Inten
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.CARD_WIDTH_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.MEDIUM
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth.SMALL
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

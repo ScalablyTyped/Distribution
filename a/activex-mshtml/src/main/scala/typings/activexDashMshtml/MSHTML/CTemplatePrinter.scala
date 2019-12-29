@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.CTemplatePrinter")
 @js.native
 class CTemplatePrinter protected () extends js.Object {
-  var `MSHTML.CTemplatePrinter_typekey`: CTemplatePrinter = js.native
+  @JSName("MSHTML.CTemplatePrinter_typekey")
+  var MSHTMLDotCTemplatePrinter_typekey: CTemplatePrinter = js.native
   var allLinkedDocuments: Boolean = js.native
   var collate: Boolean = js.native
   var copies: Double = js.native

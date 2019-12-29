@@ -32,29 +32,29 @@ trait IController extends IObservable {
   		* @param id String
   		* @returns Ext.app.Controller controller instance or undefined.
   		*/
-  var getController: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var getController: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Returns a Model class with the given name
   		* @param name String
   		* @returns Ext.data.Model a model class.
   		*/
-  var getModel: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IModel]] = js.undefined
+  var getModel: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], IModel]] = js.undefined
   /** [Method] Returns instance of a Store with the given name
   		* @param name String
   		* @returns Ext.data.Store a store instance.
   		*/
-  var getStore: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IStore]] = js.undefined
+  var getStore: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], IStore]] = js.undefined
   /** [Method] Returns a View class with the given name
   		* @param name String
   		* @returns Ext.Base a view class.
   		*/
-  var getView: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IBase]] = js.undefined
+  var getView: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], IBase]] = js.undefined
   /** [Method] Returns true if a reference is registered
   		* @param ref Object
   		* @returns Boolean
   		*/
   var hasRef: js.UndefOr[js.Function1[/* ref */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Method] A template method that is called when your application boots
   		* @param application Ext.app.Application
   		*/
@@ -95,19 +95,19 @@ object IController {
     config: js.Any = null,
     control: (/* selectors */ js.UndefOr[js.Any], /* listeners */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getApplication: () => IApplication = null,
-    getController: /* id */ js.UndefOr[java.lang.String] => IController = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getModel: /* name */ js.UndefOr[java.lang.String] => IModel = null,
-    getStore: /* name */ js.UndefOr[java.lang.String] => IStore = null,
-    getView: /* name */ js.UndefOr[java.lang.String] => IBase = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getController: /* id */ js.UndefOr[String] => IController = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getModel: /* name */ js.UndefOr[String] => IModel = null,
+    getStore: /* name */ js.UndefOr[String] => IStore = null,
+    getView: /* name */ js.UndefOr[String] => IBase = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hasRef: /* ref */ js.UndefOr[js.Any] => Boolean = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     init: /* application */ js.UndefOr[IApplication] => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IController = null,
@@ -121,8 +121,8 @@ object IController {
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     onLaunch: /* application */ js.UndefOr[IApplication] => Unit = null,
     refs: Array = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -133,7 +133,7 @@ object IController {
     stores: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     views: js.Any = null
   ): IController = {

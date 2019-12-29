@@ -1,12 +1,12 @@
 package typings.extjs.Ext.form
 
 import typings.extjs.Ext.IElement
+import typings.extjs.Ext.form.field.IBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICheckbox
-  extends typings.extjs.Ext.form.field.IBase {
+trait ICheckbox extends IBase {
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var afterBoxLabelTextTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -16,19 +16,19 @@ trait ICheckbox
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var beforeBoxLabelTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var boxLabel: js.UndefOr[java.lang.String] = js.undefined
+  var boxLabel: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var boxLabelAlign: js.UndefOr[java.lang.String] = js.undefined
+  var boxLabelAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var boxLabelAttrTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var boxLabelCls: js.UndefOr[java.lang.String] = js.undefined
+  var boxLabelCls: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var boxLabelEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (Boolean) */
   var checked: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var checkedCls: js.UndefOr[java.lang.String] = js.undefined
+  var checkedCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the checked state of the checkbox
   		* @returns Boolean True if checked, else false
   		*/
@@ -45,7 +45,7 @@ trait ICheckbox
   @JSName("initValue")
   var initValue_ICheckbox: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var inputValue: js.UndefOr[java.lang.String] = js.undefined
+  var inputValue: js.UndefOr[String] = js.undefined
   /** [Method] Resets the field s originalValue property so it matches the current value
   		* @param fromBoxInGroup Object
   		*/
@@ -56,7 +56,7 @@ trait ICheckbox
   /** [Method] Sets the boxLabel for this checkbox
   		* @param boxLabel String The new label
   		*/
-  var setBoxLabel: js.UndefOr[js.Function1[/* boxLabel */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setBoxLabel: js.UndefOr[js.Function1[/* boxLabel */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the checked state of the checkbox
   		* @param value Boolean/String/Number The following values will check the checkbox: true, 'true', '1', 1, or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
   		* @returns Boolean the new checked state of the checkbox
@@ -75,36 +75,36 @@ trait ICheckbox
   @JSName("setValue")
   var setValue_ICheckbox: js.UndefOr[js.Function1[/* checked */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (String) */
-  var uncheckedValue: js.UndefOr[java.lang.String] = js.undefined
+  var uncheckedValue: js.UndefOr[String] = js.undefined
 }
 
 object ICheckbox {
   @scala.inline
   def apply(
-    IBase: typings.extjs.Ext.form.field.IBase = null,
+    IBase: IBase = null,
     afterBoxLabelTextTpl: js.Any = null,
     afterBoxLabelTpl: js.Any = null,
     beforeBoxLabelTextTpl: js.Any = null,
     beforeBoxLabelTpl: js.Any = null,
-    boxLabel: java.lang.String = null,
-    boxLabelAlign: java.lang.String = null,
+    boxLabel: String = null,
+    boxLabelAlign: String = null,
     boxLabelAttrTpl: js.Any = null,
-    boxLabelCls: java.lang.String = null,
+    boxLabelCls: String = null,
     boxLabelEl: IElement = null,
     checked: js.UndefOr[Boolean] = js.undefined,
-    checkedCls: java.lang.String = null,
+    checkedCls: String = null,
     getRawValue: () => Boolean = null,
     getValue: () => Boolean = null,
     handler: js.Any = null,
     initValue: () => Unit = null,
-    inputValue: java.lang.String = null,
+    inputValue: String = null,
     resetOriginalValue: /* fromBoxInGroup */ js.UndefOr[js.Any] => Unit = null,
     scope: js.Any = null,
-    setBoxLabel: /* boxLabel */ js.UndefOr[java.lang.String] => Unit = null,
+    setBoxLabel: /* boxLabel */ js.UndefOr[String] => Unit = null,
     setRawValue: /* value */ js.UndefOr[js.Any] => Boolean = null,
     setReadOnly: /* readOnly */ js.UndefOr[js.Any] => Unit = null,
     setValue: /* checked */ js.UndefOr[js.Any] => ICheckbox = null,
-    uncheckedValue: java.lang.String = null
+    uncheckedValue: String = null
   ): ICheckbox = {
     val __obj = js.Dynamic.literal()
     if (IBase != null) js.Dynamic.global.Object.assign(__obj, IBase)

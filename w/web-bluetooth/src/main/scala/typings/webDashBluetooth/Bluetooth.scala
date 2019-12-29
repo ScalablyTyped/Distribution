@@ -23,7 +23,7 @@ trait Bluetooth
     useCapture: Boolean
   ): Unit = js.native
   def getAvailability(): js.Promise[Boolean] = js.native
-  def onavailabilitychanged(`this`: this.type, ev: Event): js.Any = js.native
+  def onavailabilitychanged(ev: Event): js.Any = js.native
   def requestDevice(): js.Promise[BluetoothDevice] = js.native
   def requestDevice(options: RequestDeviceOptions): js.Promise[BluetoothDevice] = js.native
 }

@@ -149,7 +149,7 @@ object SeriesFunnelOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     slicedOffset: Int | Double = null,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     startAngle: Int | Double = null,
     states: PlotFunnelStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
@@ -158,8 +158,8 @@ object SeriesFunnelOptions {
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null,
-    xAxis: Double | String = null,
-    yAxis: Double | String = null,
+    xAxis: Double | scala.Nothing | String = null,
+    yAxis: Double | scala.Nothing | String = null,
     zIndex: Int | Double = null
   ): SeriesFunnelOptions = {
     val __obj = js.Dynamic.literal()

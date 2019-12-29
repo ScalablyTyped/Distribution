@@ -1,7 +1,7 @@
 package typings.antdDashMobileDashRn.libListIndexDotNativeMod
 
 import typings.antdDashMobileDashRn.Anon_ArrowArrowV
-import typings.antdDashMobileDashRn.antdDashMobileDashRnNumbers.`false`
+import typings.antdDashMobileDashRn.antdDashMobileDashRnBooleans.`false`
 import typings.antdDashMobileDashRn.libListPropsTypeMod.ListPropsType
 import typings.react.reactMod.ReactType
 import typings.react.reactMod._Global_.JSX.Element

@@ -2,8 +2,6 @@ package typings.rosie
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.rosie.rosieMod.IFactory
-import typings.rosie.rosieMod.IFactoryStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheScope.Private
-import typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheScope.Public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

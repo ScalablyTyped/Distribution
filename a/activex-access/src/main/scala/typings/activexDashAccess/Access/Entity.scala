@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Entity")
 @js.native
 class Entity protected () extends js.Object {
-  var `Access.Entity_typekey`: Entity = js.native
+  @JSName("Access.Entity_typekey")
+  var AccessDotEntity_typekey: Entity = js.native
   val Name: String = js.native
   @JSName("Operations")
   val Operations_Original: Operations = js.native

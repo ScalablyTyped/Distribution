@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.Delete
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.Edit
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.None
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

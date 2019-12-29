@@ -263,41 +263,43 @@ import typings.atBabelTypes.atBabelTypesMod.VoidTypeAnnotation
 import typings.atBabelTypes.atBabelTypesMod.WhileStatement
 import typings.atBabelTypes.atBabelTypesMod.WithStatement
 import typings.atBabelTypes.atBabelTypesMod.YieldExpression
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosNumbers.`false`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosNumbers.`true`
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosBooleans.`false`
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosBooleans.`true`
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Ampersand
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.AmpersandAmpersand
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Asterisk
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.AsteriskAsterisk
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.CommonJS
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.ES
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`!==`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`!=`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`!`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`%`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`&&`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`&`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`**`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`++`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`+`
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.EqualssignEqualssign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.EqualssignEqualssignEqualssign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Exclamationmark
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.ExclamationmarkEqualssign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.ExclamationmarkEqualssignEqualssign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Greaterthansign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.GreaterthansignEqualssign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.GreaterthansignGreaterthansign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.GreaterthansignGreaterthansignGreaterthansign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Lessthansign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.LessthansignEqualssign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.LessthansignLessthansign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Percentsign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Plussign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.PlussignPlussign
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.QuestionmarkQuestionmark
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Slash
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Tilde
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Verticalline
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.VerticallineVerticalline
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.^
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`--`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`-`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`/`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`<<`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`<=`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`<`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`===`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`==`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`>=`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`>>>`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`>>`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`>`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`??`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`_backtick^_backtick`
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`-_`
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`object`
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`private`
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`protected`
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`throw`
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`type`
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`var`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`||`
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`~`
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.boolean
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.const
 import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.constructor
@@ -673,7 +675,7 @@ trait Typeoftypes extends js.Object {
   def awaitExpression(argument: Expression): AwaitExpression = js.native
   def bigIntLiteral(value: String): BigIntLiteral = js.native
   def binaryExpression(
-    operator: `+` | `-` | `/` | `%` | typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`*` | `**` | `&` | typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.`|` | `>>` | `>>>` | `<<` | `_backtick^_backtick` | `==` | `===` | `!=` | `!==` | in | instanceof | `>` | `<` | `>=` | `<=`,
+    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     left: Expression,
     right: Expression
   ): BinaryExpression = js.native
@@ -3998,9 +4000,9 @@ trait Typeoftypes extends js.Object {
   def jsxSpreadChild(expression: Expression): JSXSpreadChild = js.native
   def jsxText(value: String): JSXText = js.native
   def labeledStatement(label: Identifier, body: Statement): LabeledStatement = js.native
-  def logicalExpression(operator: `&&`, left: Expression, right: Expression): LogicalExpression = js.native
-  def logicalExpression(operator: `??`, left: Expression, right: Expression): LogicalExpression = js.native
-  def logicalExpression(operator: `||`, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: AmpersandAmpersand, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: QuestionmarkQuestionmark, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: VerticallineVerticalline, left: Expression, right: Expression): LogicalExpression = js.native
   def matchesPattern(node: js.UndefOr[Node], `match`: String): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
   def matchesPattern(node: js.UndefOr[Node], `match`: String, allowPartial: Boolean): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
   def matchesPattern(node: js.UndefOr[Node], `match`: js.Array[String]): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
@@ -4680,14 +4682,14 @@ trait Typeoftypes extends js.Object {
   def toComputedKey[T /* <: Extract[Node, Anon_Computed] */](node: T): Expression = js.native
   def toComputedKey[T /* <: Extract[Node, Anon_Computed] */](node: T, key: Expression): Expression = js.native
   def toComputedKey[T /* <: Extract[Node, Anon_Computed] */](node: T, key: Identifier): Expression = js.native
-  def toExpression(node: Class): ClassExpression = js.native
+  def toExpression(node: Class): Expression = js.native
   def toExpression(node: Expression): Expression = js.native
   def toExpression(node: ExpressionStatement): Expression = js.native
-  def toExpression(node: Function): FunctionExpression = js.native
+  def toExpression(node: Function): Expression = js.native
   @JSName("toExpression")
-  def toExpression_Expression(node: Class): Expression = js.native
+  def toExpression_ClassExpression(node: Class): ClassExpression = js.native
   @JSName("toExpression")
-  def toExpression_Expression(node: Function): Expression = js.native
+  def toExpression_FunctionExpression(node: Function): FunctionExpression = js.native
   def toIdentifier(): String = js.native
   def toIdentifier(name: Anon_ToString): String = js.native
   def toKeyAlias(node: Method): String = js.native
@@ -4695,22 +4697,22 @@ trait Typeoftypes extends js.Object {
   def toKeyAlias(node: Property): String = js.native
   def toKeyAlias(node: Property, key: Node): String = js.native
   def toSequenceExpression(nodes: js.Array[Node], scope: Anon_BuildUndefinedNode): js.UndefOr[SequenceExpression] = js.native
-  def toStatement(node: AssignmentExpression): ExpressionStatement = js.native
-  def toStatement(node: AssignmentExpression, ignore: Boolean): ExpressionStatement = js.native
-  def toStatement(node: Class): ClassDeclaration = js.native
-  def toStatement(node: Class, ignore: Boolean): ClassDeclaration = js.native
+  def toStatement(node: AssignmentExpression): Statement = js.native
+  def toStatement(node: AssignmentExpression, ignore: Boolean): Statement = js.native
+  def toStatement(node: Class): Statement = js.native
+  def toStatement(node: Class, ignore: Boolean): Statement = js.native
   def toStatement(node: Function): FunctionDeclaration = js.native
   def toStatement(node: Function, ignore: Boolean): FunctionDeclaration = js.native
   def toStatement(node: Statement): Statement = js.native
   def toStatement(node: Statement, ignore: Boolean): Statement = js.native
   @JSName("toStatement")
-  def toStatement_Statement(node: AssignmentExpression): Statement = js.native
+  def toStatement_ClassDeclaration(node: Class): ClassDeclaration = js.native
   @JSName("toStatement")
-  def toStatement_Statement(node: AssignmentExpression, ignore: Boolean): Statement = js.native
+  def toStatement_ClassDeclaration(node: Class, ignore: Boolean): ClassDeclaration = js.native
   @JSName("toStatement")
-  def toStatement_Statement(node: Class): Statement = js.native
+  def toStatement_ExpressionStatement(node: AssignmentExpression): ExpressionStatement = js.native
   @JSName("toStatement")
-  def toStatement_Statement(node: Class, ignore: Boolean): Statement = js.native
+  def toStatement_ExpressionStatement(node: AssignmentExpression, ignore: Boolean): ExpressionStatement = js.native
   @JSName("toStatement")
   def toStatement_Statement(node: Function): Statement = js.native
   @JSName("toStatement")
@@ -5300,14 +5302,14 @@ trait Typeoftypes extends js.Object {
   def typeParameterDeclaration(params: js.Array[TypeParameter]): TypeParameterDeclaration = js.native
   def typeParameterInstantiation(params: js.Array[FlowType]): TypeParameterInstantiation = js.native
   def typeofTypeAnnotation(argument: FlowType): TypeofTypeAnnotation = js.native
-  def unaryExpression(operator: `!`, argument: Expression): UnaryExpression = js.native
-  def unaryExpression(operator: `!`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
-  def unaryExpression(operator: `+`, argument: Expression): UnaryExpression = js.native
-  def unaryExpression(operator: `+`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
-  def unaryExpression(operator: `-`, argument: Expression): UnaryExpression = js.native
-  def unaryExpression(operator: `-`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
-  def unaryExpression(operator: `~`, argument: Expression): UnaryExpression = js.native
-  def unaryExpression(operator: `~`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: Exclamationmark, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: Exclamationmark, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: Plussign, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: Plussign, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: Tilde, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: Tilde, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: `-_`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: `-_`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
   @JSName("unaryExpression")
   def unaryExpression_delete(operator: delete, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
@@ -5325,8 +5327,8 @@ trait Typeoftypes extends js.Object {
   @JSName("unaryExpression")
   def unaryExpression_void(operator: void, argument: Expression, prefix: Boolean): UnaryExpression = js.native
   def unionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation = js.native
-  def updateExpression(operator: `++`, argument: Expression): UpdateExpression = js.native
-  def updateExpression(operator: `++`, argument: Expression, prefix: Boolean): UpdateExpression = js.native
+  def updateExpression(operator: PlussignPlussign, argument: Expression): UpdateExpression = js.native
+  def updateExpression(operator: PlussignPlussign, argument: Expression, prefix: Boolean): UpdateExpression = js.native
   def updateExpression(operator: `--`, argument: Expression): UpdateExpression = js.native
   def updateExpression(operator: `--`, argument: Expression, prefix: Boolean): UpdateExpression = js.native
   def v8IntrinsicIdentifier(name: String): V8IntrinsicIdentifier = js.native
@@ -5341,27 +5343,27 @@ trait Typeoftypes extends js.Object {
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native
-  def valueToNode(): NullLiteral = js.native
-  def valueToNode(value: String): StringLiteral = js.native
+  def valueToNode(): Expression = js.native
+  def valueToNode(value: String): Expression = js.native
   def valueToNode(value: js.Array[js.UndefOr[Boolean | Null | String | Double | RegExp | js.Object]]): ArrayExpression = js.native
-  def valueToNode(value: js.Object): ObjectExpression = js.native
-  def valueToNode(value: Boolean): BooleanLiteral = js.native
-  def valueToNode(value: Double): NumericLiteral | BinaryExpression | UnaryExpression = js.native
-  def valueToNode(value: RegExp): RegExpLiteral = js.native
+  def valueToNode(value: js.Object): Expression = js.native
+  def valueToNode(value: Boolean): Expression = js.native
+  def valueToNode(value: Double): Expression = js.native
+  def valueToNode(value: RegExp): Expression = js.native
   @JSName("valueToNode")
-  def valueToNode_Expression(): Expression = js.native
-  @JSName("valueToNode")
-  def valueToNode_Expression(value: String): Expression = js.native
-  @JSName("valueToNode")
-  def valueToNode_Expression(value: js.Object): Expression = js.native
-  @JSName("valueToNode")
-  def valueToNode_Expression(value: Boolean): Expression = js.native
-  @JSName("valueToNode")
-  def valueToNode_Expression(value: Double): Expression = js.native
-  @JSName("valueToNode")
-  def valueToNode_Expression(value: RegExp): Expression = js.native
+  def valueToNode_BooleanLiteral(value: Boolean): BooleanLiteral = js.native
   @JSName("valueToNode")
   def valueToNode_Identifier(): Identifier = js.native
+  @JSName("valueToNode")
+  def valueToNode_NullLiteral(): NullLiteral = js.native
+  @JSName("valueToNode")
+  def valueToNode_ObjectExpression(value: js.Object): ObjectExpression = js.native
+  @JSName("valueToNode")
+  def valueToNode_RegExpLiteral(value: RegExp): RegExpLiteral = js.native
+  @JSName("valueToNode")
+  def valueToNode_StringLiteral(value: String): StringLiteral = js.native
+  @JSName("valueToNode")
+  def valueToNode_Union(value: Double): NumericLiteral | BinaryExpression | UnaryExpression = js.native
   @JSName("variableDeclaration")
   def variableDeclaration_const(kind: const, declarations: js.Array[VariableDeclarator]): VariableDeclaration = js.native
   @JSName("variableDeclaration")

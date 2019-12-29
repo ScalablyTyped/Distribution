@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorConcatMapMod extends js.Object {
   def concatMap[T, R](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 

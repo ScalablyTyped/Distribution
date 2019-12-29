@@ -13,7 +13,7 @@ trait DragStopEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the draggable model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Draggable.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the exact mouse down target element
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -27,7 +27,7 @@ object DragStopEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Draggable.Model = null,
+    model: Model = null,
     target: js.Any = null,
     `type`: String = null
   ): DragStopEventArgs = {

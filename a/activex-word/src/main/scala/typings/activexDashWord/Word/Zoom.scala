@@ -14,6 +14,7 @@ class Zoom protected () extends js.Object {
   var PageRows: Double = js.native
   val Parent: js.Any = js.native
   var Percentage: Double = js.native
-  var `Word.Zoom_typekey`: Zoom = js.native
+  @JSName("Word.Zoom_typekey")
+  var WordDotZoom_typekey: Zoom = js.native
 }
 

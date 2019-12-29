@@ -1,5 +1,11 @@
 package typings.mosca.moscaMod
 
+import typings.mosca.moscaStrings.clientConnected
+import typings.mosca.moscaStrings.clientDisconnected
+import typings.mosca.moscaStrings.clientDisconnecting
+import typings.mosca.moscaStrings.published
+import typings.mosca.moscaStrings.subscribed
+import typings.mosca.moscaStrings.unsubscribed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,8 +13,8 @@ import scala.scalajs.js.annotation._
 @JSImport("mosca", "Server")
 @js.native
 class Server protected () extends js.Object {
-  def this(opts: js.Any) = this()
-  def this(opts: js.Any, callback: js.Function0[Unit]) = this()
+  def this(opts: ServerOptions) = this()
+  def this(opts: ServerOptions, callback: js.Function0[Unit]) = this()
   var clients: js.Any = js.native
   var closed: Boolean = js.native
   var id: String = js.native
@@ -46,6 +52,18 @@ class Server protected () extends js.Object {
   def on(when: String, callback: js.Function0[Unit]): Unit = js.native
   def on(when: String, callback: js.Function1[/* client */ Client, Unit]): Unit = js.native
   def on(when: String, callback: js.Function2[/* packet */ Packet, /* client */ Client, Unit]): Unit = js.native
+  @JSName("on")
+  def on_clientConnected(when: clientConnected, callback: js.Function1[/* client */ Client, Unit]): Unit = js.native
+  @JSName("on")
+  def on_clientDisconnected(when: clientDisconnected, callback: js.Function1[/* client */ Client, Unit]): Unit = js.native
+  @JSName("on")
+  def on_clientDisconnecting(when: clientDisconnecting, callback: js.Function1[/* client */ Client, Unit]): Unit = js.native
+  @JSName("on")
+  def on_published(when: published, callback: js.Function2[/* packet */ Packet, /* client */ Client, Unit]): Unit = js.native
+  @JSName("on")
+  def on_subscribed(when: subscribed, callback: js.Function2[/* topic */ String, /* client */ Client, Unit]): Unit = js.native
+  @JSName("on")
+  def on_unsubscribed(when: unsubscribed, callback: js.Function2[/* topic */ String, /* client */ Client, Unit]): Unit = js.native
   def once(when: String, callback: js.Function0[Unit]): Unit = js.native
   def persistClient(client: Client, callback: js.Function0[Unit]): Unit = js.native
   def publish(message: Message, callback: js.Function2[/* obj */ js.Any, /* packet */ Packet, Unit]): Unit = js.native

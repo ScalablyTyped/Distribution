@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ShapeType.geometricShape
-import typings.officeDashJs.Excel.ShapeType.group
-import typings.officeDashJs.Excel.ShapeType.image
-import typings.officeDashJs.Excel.ShapeType.line
-import typings.officeDashJs.Excel.ShapeType.unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.streamDashJson.utilsWithParserMod
 
 import typings.node.Anon_Chunk
-import typings.node.Error
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,6 +53,7 @@ object StreamOptions {
     packStrings: js.UndefOr[Boolean] = js.undefined,
     packValues: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit] = null,
+    readableHighWaterMark: Int | Double = null,
     readableObjectMode: js.UndefOr[Boolean] = js.undefined,
     streamKeys: js.UndefOr[Boolean] = js.undefined,
     streamNumbers: js.UndefOr[Boolean] = js.undefined,
@@ -65,6 +66,8 @@ object StreamOptions {
       /* callback */ TransformCallback, 
       Unit
     ] = null,
+    writableCorked: Int | Double = null,
+    writableHighWaterMark: Int | Double = null,
     writableObjectMode: js.UndefOr[Boolean] = js.undefined,
     write: js.ThisFunction3[
       /* this */ Transform, 
@@ -100,12 +103,15 @@ object StreamOptions {
     if (!js.isUndefined(packStrings)) __obj.updateDynamic("packStrings")(packStrings.asInstanceOf[js.Any])
     if (!js.isUndefined(packValues)) __obj.updateDynamic("packValues")(packValues.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (readableHighWaterMark != null) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
     if (!js.isUndefined(streamKeys)) __obj.updateDynamic("streamKeys")(streamKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(streamNumbers)) __obj.updateDynamic("streamNumbers")(streamNumbers.asInstanceOf[js.Any])
     if (!js.isUndefined(streamStrings)) __obj.updateDynamic("streamStrings")(streamStrings.asInstanceOf[js.Any])
     if (!js.isUndefined(streamValues)) __obj.updateDynamic("streamValues")(streamValues.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (writableCorked != null) __obj.updateDynamic("writableCorked")(writableCorked.asInstanceOf[js.Any])
+    if (writableHighWaterMark != null) __obj.updateDynamic("writableHighWaterMark")(writableHighWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(writableObjectMode)) __obj.updateDynamic("writableObjectMode")(writableObjectMode.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])

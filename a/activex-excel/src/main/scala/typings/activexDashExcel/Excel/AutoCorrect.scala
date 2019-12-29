@@ -16,7 +16,8 @@ class AutoCorrect protected () extends js.Object {
   var CorrectSentenceCap: Boolean = js.native
   val Creator: XlCreator = js.native
   var DisplayAutoCorrectOptions: Boolean = js.native
-  var `Excel.AutoCorrect_typekey`: AutoCorrect = js.native
+  @JSName("Excel.AutoCorrect_typekey")
+  var ExcelDotAutoCorrect_typekey: AutoCorrect = js.native
   val Parent: js.Any = js.native
   var ReplaceText: Boolean = js.native
   var TwoInitialCapitals: Boolean = js.native

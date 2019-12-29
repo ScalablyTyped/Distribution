@@ -1,12 +1,6 @@
 package typings.tedious.tediousMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tedious.tediousMod.ISOLATION_LEVEL.NO_CHANGE
-import typings.tedious.tediousMod.ISOLATION_LEVEL.READ_COMMITTED
-import typings.tedious.tediousMod.ISOLATION_LEVEL.READ_UNCOMMITTED
-import typings.tedious.tediousMod.ISOLATION_LEVEL.REPEATABLE_READ
-import typings.tedious.tediousMod.ISOLATION_LEVEL.SERIALIZABLE
-import typings.tedious.tediousMod.ISOLATION_LEVEL.SNAPSHOT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

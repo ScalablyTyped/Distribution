@@ -1,6 +1,6 @@
 package typings.gulpDashShell.gulpDashShellMod
 
-import typings.gulpDashShell.gulpDashShellNumbers.`true`
+import typings.gulpDashShell.gulpDashShellBooleans.`true`
 import typings.node.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`

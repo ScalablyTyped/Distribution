@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BridgeDirection.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BridgeDirection.Left
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BridgeDirection.Right
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BridgeDirection.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

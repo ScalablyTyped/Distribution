@@ -44,22 +44,22 @@ object CSS extends js.Object {
   		*/
   def createRule(): CSSStyleRule = js.native
   def createRule(styleSheet: CSSStyleSheet): CSSStyleRule = js.native
-  def createRule(styleSheet: CSSStyleSheet, selector: java.lang.String): CSSStyleRule = js.native
-  def createRule(styleSheet: CSSStyleSheet, selector: java.lang.String, property: java.lang.String): CSSStyleRule = js.native
+  def createRule(styleSheet: CSSStyleSheet, selector: String): CSSStyleRule = js.native
+  def createRule(styleSheet: CSSStyleSheet, selector: String, property: String): CSSStyleRule = js.native
   /** [Method] Creates a stylesheet from a text blob of rules
   		* @param cssText String The text containing the css rules
   		* @param id String An id to add to the stylesheet for later removal
   		* @returns CSSStyleSheet
   		*/
   def createStyleSheet(): CSSStyleSheet = js.native
-  def createStyleSheet(cssText: java.lang.String): CSSStyleSheet = js.native
-  def createStyleSheet(cssText: java.lang.String, id: java.lang.String): CSSStyleSheet = js.native
+  def createStyleSheet(cssText: String): CSSStyleSheet = js.native
+  def createStyleSheet(cssText: String, id: String): CSSStyleSheet = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
   		* @param name String Name of the config option to return.
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Gets an an individual CSS rule by selector s
   		* @param selector String/String[] The CSS selector or an array of selectors to try. The first selector that is found is returned.
   		* @param refreshCache Boolean true to refresh the internal cache if you have recently updated any rules or added styles dynamically
@@ -88,7 +88,7 @@ object CSS extends js.Object {
   		* @param id String The id of the tag
   		*/
   def removeStyleSheet(): Unit = js.native
-  def removeStyleSheet(id: java.lang.String): Unit = js.native
+  def removeStyleSheet(id: String): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
   		*/
@@ -98,8 +98,8 @@ object CSS extends js.Object {
   		* @param url String The href of the new stylesheet to include
   		*/
   def swapStyleSheet(): Unit = js.native
-  def swapStyleSheet(id: java.lang.String): Unit = js.native
-  def swapStyleSheet(id: java.lang.String, url: java.lang.String): Unit = js.native
+  def swapStyleSheet(id: String): Unit = js.native
+  def swapStyleSheet(id: String, url: String): Unit = js.native
   /** [Method] Updates a rule property
   		* @param selector String/String[] If it's an array it tries each selector until it finds one. Stops immediately once one is found.
   		* @param property String The css property or a cssText specification eg "color:red;font-weight:bold;text-decoration:underline"
@@ -108,7 +108,7 @@ object CSS extends js.Object {
   		*/
   def updateRule(): Boolean = js.native
   def updateRule(selector: js.Any): Boolean = js.native
-  def updateRule(selector: js.Any, property: java.lang.String): Boolean = js.native
-  def updateRule(selector: js.Any, property: java.lang.String, value: java.lang.String): Boolean = js.native
+  def updateRule(selector: js.Any, property: String): Boolean = js.native
+  def updateRule(selector: js.Any, property: String, value: String): Boolean = js.native
 }
 

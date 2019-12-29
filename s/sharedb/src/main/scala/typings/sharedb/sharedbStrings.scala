@@ -142,7 +142,6 @@ object sharedbStrings {
   
   @scala.inline
   def afterSubmit: afterSubmit = "afterSubmit".asInstanceOf[afterSubmit]
-  @JSName("apply")
   @scala.inline
   def apply: apply = "apply".asInstanceOf[apply]
   @scala.inline

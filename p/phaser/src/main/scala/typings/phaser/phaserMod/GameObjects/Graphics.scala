@@ -1,6 +1,7 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
+import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Graphics.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,8 +56,8 @@ class Graphics protected ()
     * @param scene The Scene to which this Graphics object belongs.
     * @param options Options that set the position and default style of this Graphics object.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
-  def this(scene: typings.phaser.Phaser.Scene, options: Options) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, options: Options) = this()
 }
 
 /* static members */

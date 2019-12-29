@@ -3,7 +3,7 @@ package typings.polished
 import typings.polished.polishedNumbers.`0`
 import typings.polished.polishedNumbers.`1`
 import typings.polished.polishedNumbers.`3`
-import typings.polished.polishedStrings.`+`
+import typings.polished.polishedStrings.Plussign
 import typings.polished.polishedStrings.prefix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait Anon_01 extends js.Object {
   var notation: prefix
   var precedence: `3`
   var rightToLeft: `0`
-  var symbol: `+`
+  var symbol: Plussign
 }
 
 object Anon_01 {
@@ -26,7 +26,7 @@ object Anon_01 {
     notation: prefix,
     precedence: `3`,
     rightToLeft: `0`,
-    symbol: `+`
+    symbol: Plussign
   ): Anon_01 = {
     val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
   

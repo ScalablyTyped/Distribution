@@ -1,13 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.ContentFlush
-import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Explicit
-import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.NotSet
-import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Paste
-import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.RecoverFromMarkers
-import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Redo
-import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Undo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

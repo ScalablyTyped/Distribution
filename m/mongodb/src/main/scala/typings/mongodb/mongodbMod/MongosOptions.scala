@@ -1,8 +1,8 @@
 package typings.mongodb.mongodbMod
 
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.tlsMod.PeerCertificate
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

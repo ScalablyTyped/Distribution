@@ -1,5 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotChart
 
+import typings.ejDotWebDotAll.ej.PivotAnalysis.FilterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ trait DataSourceColumnsFilterItems extends js.Object {
   /** Sets the type of filter whether to include/exclude the mentioned values.
     * @Default {ej.PivotAnalysis.FilterType.Exclude}
     */
-  var filterType: js.UndefOr[typings.ejDotWebDotAll.ej.PivotAnalysis.FilterType | String] = js.undefined
+  var filterType: js.UndefOr[FilterType | String] = js.undefined
   /** Contains the collection of items to be included/excluded among the field members.
     * @Default {[]}
     */
@@ -17,10 +18,7 @@ trait DataSourceColumnsFilterItems extends js.Object {
 
 object DataSourceColumnsFilterItems {
   @scala.inline
-  def apply(
-    filterType: typings.ejDotWebDotAll.ej.PivotAnalysis.FilterType | String = null,
-    values: js.Array[_] = null
-  ): DataSourceColumnsFilterItems = {
+  def apply(filterType: FilterType | String = null, values: js.Array[_] = null): DataSourceColumnsFilterItems = {
     val __obj = js.Dynamic.literal()
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])

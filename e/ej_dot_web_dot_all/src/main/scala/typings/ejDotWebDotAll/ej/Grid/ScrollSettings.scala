@@ -48,7 +48,7 @@ trait ScrollSettings extends js.Object {
   /** This is used to define the mode of virtual scrolling in grid. See virtualScrollMode
     * @Default {ej.Grid.VirtualScrollMode.Normal}
     */
-  var virtualScrollMode: js.UndefOr[typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode | String] = js.undefined
+  var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.undefined
   /** This specify the grid to show the horizontal scroll bar, to scroll and view the grid contents
     * @Default {250}
     */
@@ -68,7 +68,7 @@ object ScrollSettings {
     height: String | Double = null,
     scrollOneStepBy: Int | Double = null,
     scrollerSize: Int | Double = null,
-    virtualScrollMode: typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode | String = null,
+    virtualScrollMode: VirtualScrollMode | String = null,
     width: String | Double = null
   ): ScrollSettings = {
     val __obj = js.Dynamic.literal()

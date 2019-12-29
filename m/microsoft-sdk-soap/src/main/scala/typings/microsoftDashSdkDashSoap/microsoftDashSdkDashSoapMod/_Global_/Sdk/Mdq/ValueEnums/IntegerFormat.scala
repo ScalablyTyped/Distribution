@@ -1,11 +1,6 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Duration
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Language
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Locale
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.None
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.TimeZone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,26 +27,21 @@ object IntegerFormat extends js.Object {
   sealed trait TimeZone extends IntegerFormat
   
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[IntegerFormat with scala.Double] = js.native
+  def apply(value: Double): js.UndefOr[IntegerFormat with Double] = js.native
   /* 0 */ @js.native
-  object Duration
-    extends TopLevel[Duration with scala.Double]
+  object Duration extends TopLevel[Duration with Double]
   
   /* 1 */ @js.native
-  object Language
-    extends TopLevel[Language with scala.Double]
+  object Language extends TopLevel[Language with Double]
   
   /* 2 */ @js.native
-  object Locale
-    extends TopLevel[Locale with scala.Double]
+  object Locale extends TopLevel[Locale with Double]
   
   /* 3 */ @js.native
-  object None
-    extends TopLevel[None with scala.Double]
+  object None extends TopLevel[None with Double]
   
   /* 4 */ @js.native
-  object TimeZone
-    extends TopLevel[TimeZone with scala.Double]
+  object TimeZone extends TopLevel[TimeZone with Double]
   
 }
 

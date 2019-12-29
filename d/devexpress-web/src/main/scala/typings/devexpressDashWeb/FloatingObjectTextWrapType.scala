@@ -1,11 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.FloatingObjectTextWrapType.None
-import typings.devexpressDashWeb.FloatingObjectTextWrapType.Square
-import typings.devexpressDashWeb.FloatingObjectTextWrapType.Through
-import typings.devexpressDashWeb.FloatingObjectTextWrapType.Tight
-import typings.devexpressDashWeb.FloatingObjectTextWrapType.TopAndBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

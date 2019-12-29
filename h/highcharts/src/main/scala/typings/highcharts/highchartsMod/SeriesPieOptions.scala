@@ -149,7 +149,7 @@ object SeriesPieOptions {
     size: Double | String = null,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     slicedOffset: Int | Double = null,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     startAngle: Int | Double = null,
     states: PlotPieStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
@@ -157,8 +157,8 @@ object SeriesPieOptions {
     treemap: SeriesTreemapOptions = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    xAxis: Double | String = null,
-    yAxis: Double | String = null,
+    xAxis: Double | scala.Nothing | String = null,
+    yAxis: Double | scala.Nothing | String = null,
     zIndex: Int | Double = null
   ): SeriesPieOptions = {
     val __obj = js.Dynamic.literal()

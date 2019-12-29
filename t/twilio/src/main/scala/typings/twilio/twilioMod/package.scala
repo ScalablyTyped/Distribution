@@ -42,7 +42,7 @@ package object twilioMod {
   type PhoneNumberResource = BaseMappedResource[PhoneNumberInstance]
   type QueueResource = CreatableMappedResource[QueueInstance]
   type RecordingTranscriptionResource = ListableResource
-  type RequestCallback = js.Function3[/* err */ js.Any, /* data */ js.Any, /* response */ IncomingMessage, Unit]
+  type RequestCallback = js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
   type SMSMessageInstance = Resource
   type SMSMessageResource = CreatableMappedResource[SMSMessageInstance]
   type ServiceChannelMemberInstance = InstanceResource

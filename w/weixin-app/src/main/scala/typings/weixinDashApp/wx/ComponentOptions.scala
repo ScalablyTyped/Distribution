@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 	 * Component组件参数
 	 */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof weixin-app.wx.Lifetimes ]:? weixin-app.wx.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: typings.weixinDashApp.wx.Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] extends js.Object {
+- Dropped {[ P in keyof weixin-app.wx.Lifetimes ]:? weixin-app.wx.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] extends js.Object {
   /**
   		 * 类似于mixins和traits的组件间代码复用机制
   		 * 参见 [behaviors](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/behaviors.html)
@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation._
 
 object ComponentOptions {
   @scala.inline
-  def apply[Instance /* <: typings.weixinDashApp.wx.Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](
+  def apply[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */](
     behaviors: Behaviors = null,
     data: Data = null,
     externalClasses: js.Array[String] = null,

@@ -11,33 +11,33 @@ import typings.summernote.summernoteStrings.createLink
 import typings.summernote.summernoteStrings.createRange
 import typings.summernote.summernoteStrings.destroy
 import typings.summernote.summernoteStrings.disable
-import typings.summernote.summernoteStrings.editorDOTbold
-import typings.summernote.summernoteStrings.editorDOTcreateRange
-import typings.summernote.summernoteStrings.editorDOTfocus
-import typings.summernote.summernoteStrings.editorDOTfontSize
-import typings.summernote.summernoteStrings.editorDOTindent
-import typings.summernote.summernoteStrings.editorDOTinsertImage
-import typings.summernote.summernoteStrings.editorDOTinsertNode
-import typings.summernote.summernoteStrings.editorDOTinsertOrderedList
-import typings.summernote.summernoteStrings.editorDOTinsertText
-import typings.summernote.summernoteStrings.editorDOTinsertUnorderedList
-import typings.summernote.summernoteStrings.editorDOTisEmpty
-import typings.summernote.summernoteStrings.editorDOTitalic
-import typings.summernote.summernoteStrings.editorDOTjustifyCenter
-import typings.summernote.summernoteStrings.editorDOTjustifyFull
-import typings.summernote.summernoteStrings.editorDOTjustifyLeft
-import typings.summernote.summernoteStrings.editorDOTjustifyRight
-import typings.summernote.summernoteStrings.editorDOToutdent
-import typings.summernote.summernoteStrings.editorDOTpasteHTML
-import typings.summernote.summernoteStrings.editorDOTredo
-import typings.summernote.summernoteStrings.editorDOTremoveFormat
-import typings.summernote.summernoteStrings.editorDOTrestoreRange
-import typings.summernote.summernoteStrings.editorDOTsaveRange
-import typings.summernote.summernoteStrings.editorDOTstrikethrough
-import typings.summernote.summernoteStrings.editorDOTsubscript
-import typings.summernote.summernoteStrings.editorDOTsuperscript
-import typings.summernote.summernoteStrings.editorDOTunderline
-import typings.summernote.summernoteStrings.editorDOTundo
+import typings.summernote.summernoteStrings.editorDotbold
+import typings.summernote.summernoteStrings.editorDotcreateRange
+import typings.summernote.summernoteStrings.editorDotfocus
+import typings.summernote.summernoteStrings.editorDotfontSize
+import typings.summernote.summernoteStrings.editorDotindent
+import typings.summernote.summernoteStrings.editorDotinsertImage
+import typings.summernote.summernoteStrings.editorDotinsertNode
+import typings.summernote.summernoteStrings.editorDotinsertOrderedList
+import typings.summernote.summernoteStrings.editorDotinsertText
+import typings.summernote.summernoteStrings.editorDotinsertUnorderedList
+import typings.summernote.summernoteStrings.editorDotisEmpty
+import typings.summernote.summernoteStrings.editorDotitalic
+import typings.summernote.summernoteStrings.editorDotjustifyCenter
+import typings.summernote.summernoteStrings.editorDotjustifyFull
+import typings.summernote.summernoteStrings.editorDotjustifyLeft
+import typings.summernote.summernoteStrings.editorDotjustifyRight
+import typings.summernote.summernoteStrings.editorDotoutdent
+import typings.summernote.summernoteStrings.editorDotpasteHTML
+import typings.summernote.summernoteStrings.editorDotredo
+import typings.summernote.summernoteStrings.editorDotremoveFormat
+import typings.summernote.summernoteStrings.editorDotrestoreRange
+import typings.summernote.summernoteStrings.editorDotsaveRange
+import typings.summernote.summernoteStrings.editorDotstrikethrough
+import typings.summernote.summernoteStrings.editorDotsubscript
+import typings.summernote.summernoteStrings.editorDotsuperscript
+import typings.summernote.summernoteStrings.editorDotunderline
+import typings.summernote.summernoteStrings.editorDotundo
 import typings.summernote.summernoteStrings.enable
 import typings.summernote.summernoteStrings.focus
 import typings.summernote.summernoteStrings.fontName
@@ -107,66 +107,66 @@ trait JQuery extends js.Object {
   def summernote_disable(command: disable): JQuery = js.native
   // Font style API
   @JSName("summernote")
-  def summernote_editorbold(fontStyle: editorDOTbold): JQuery = js.native
+  def summernote_editorbold(fontStyle: editorDotbold): JQuery = js.native
   // Basic API
   @JSName("summernote")
-  def summernote_editorcreateRange(command: editorDOTcreateRange): JQuery = js.native
+  def summernote_editorcreateRange(command: editorDotcreateRange): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorfocus(command: editorDOTfocus): JQuery = js.native
+  def summernote_editorfocus(command: editorDotfocus): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorfontSize(command: editorDOTfontSize, fontSize: Double): JQuery = js.native
+  def summernote_editorfontSize(command: editorDotfontSize, fontSize: Double): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorindent(command: editorDOTindent): JQuery = js.native
+  def summernote_editorindent(command: editorDotindent): JQuery = js.native
   // Insertion API
   @JSName("summernote")
-  def summernote_editorinsertImage(command: editorDOTinsertImage, url: String): JQuery = js.native
+  def summernote_editorinsertImage(command: editorDotinsertImage, url: String): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorinsertImage(command: editorDOTinsertImage, url: String, filename: String): JQuery = js.native
+  def summernote_editorinsertImage(command: editorDotinsertImage, url: String, filename: String): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorinsertImage(command: editorDOTinsertImage, url: String, filename: EditImageCallback): JQuery = js.native
+  def summernote_editorinsertImage(command: editorDotinsertImage, url: String, filename: EditImageCallback): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorinsertNode(command: editorDOTinsertNode, node: Node): JQuery = js.native
+  def summernote_editorinsertNode(command: editorDotinsertNode, node: Node): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorinsertOrderedList(command: editorDOTinsertOrderedList): JQuery = js.native
+  def summernote_editorinsertOrderedList(command: editorDotinsertOrderedList): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorinsertText(command: editorDOTinsertText, text: String): JQuery = js.native
+  def summernote_editorinsertText(command: editorDotinsertText, text: String): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorinsertUnorderedList(command: editorDOTinsertUnorderedList): JQuery = js.native
+  def summernote_editorinsertUnorderedList(command: editorDotinsertUnorderedList): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorisEmpty(command: editorDOTisEmpty): Boolean = js.native
+  def summernote_editorisEmpty(command: editorDotisEmpty): Boolean = js.native
   @JSName("summernote")
-  def summernote_editoritalic(fontStyle: editorDOTitalic): JQuery = js.native
+  def summernote_editoritalic(fontStyle: editorDotitalic): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorjustifyCenter(command: editorDOTjustifyCenter): JQuery = js.native
+  def summernote_editorjustifyCenter(command: editorDotjustifyCenter): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorjustifyFull(command: editorDOTjustifyFull): JQuery = js.native
+  def summernote_editorjustifyFull(command: editorDotjustifyFull): JQuery = js.native
   // Paragraph API
   @JSName("summernote")
-  def summernote_editorjustifyLeft(command: editorDOTjustifyLeft): JQuery = js.native
+  def summernote_editorjustifyLeft(command: editorDotjustifyLeft): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorjustifyRight(command: editorDOTjustifyRight): JQuery = js.native
+  def summernote_editorjustifyRight(command: editorDotjustifyRight): JQuery = js.native
   @JSName("summernote")
-  def summernote_editoroutdent(command: editorDOToutdent): JQuery = js.native
+  def summernote_editoroutdent(command: editorDotoutdent): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorpasteHTML(command: editorDOTpasteHTML, markup: String): JQuery = js.native
+  def summernote_editorpasteHTML(command: editorDotpasteHTML, markup: String): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorredo(command: editorDOTredo): JQuery = js.native
+  def summernote_editorredo(command: editorDotredo): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorremoveFormat(command: editorDOTremoveFormat): JQuery = js.native
+  def summernote_editorremoveFormat(command: editorDotremoveFormat): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorrestoreRange(command: editorDOTrestoreRange): JQuery = js.native
+  def summernote_editorrestoreRange(command: editorDotrestoreRange): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorsaveRange(command: editorDOTsaveRange): JQuery = js.native
+  def summernote_editorsaveRange(command: editorDotsaveRange): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorstrikethrough(fontStyle: editorDOTstrikethrough): JQuery = js.native
+  def summernote_editorstrikethrough(fontStyle: editorDotstrikethrough): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorsubscript(command: editorDOTsubscript): JQuery = js.native
+  def summernote_editorsubscript(command: editorDotsubscript): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorsuperscript(command: editorDOTsuperscript): JQuery = js.native
+  def summernote_editorsuperscript(command: editorDotsuperscript): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorunderline(fontStyle: editorDOTunderline): JQuery = js.native
+  def summernote_editorunderline(fontStyle: editorDotunderline): JQuery = js.native
   @JSName("summernote")
-  def summernote_editorundo(command: editorDOTundo): JQuery = js.native
+  def summernote_editorundo(command: editorDotundo): JQuery = js.native
   @JSName("summernote")
   def summernote_enable(command: enable): JQuery = js.native
   @JSName("summernote")

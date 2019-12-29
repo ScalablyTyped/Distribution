@@ -1,10 +1,6 @@
 package typings.braintree.braintreeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.braintree.braintreeMod.Environment.Development
-import typings.braintree.braintreeMod.Environment.Production
-import typings.braintree.braintreeMod.Environment.Qa
-import typings.braintree.braintreeMod.Environment.Sandbox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

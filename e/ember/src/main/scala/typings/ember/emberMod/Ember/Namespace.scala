@@ -1,5 +1,6 @@
 package typings.ember.emberMod.Ember
 
+import typings.atEmberObject.atEmberObjectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember", "Ember.Namespace")
 @js.native
-class Namespace ()
-  extends typings.atEmberObject.atEmberObjectMod.default
+class Namespace () extends default
 

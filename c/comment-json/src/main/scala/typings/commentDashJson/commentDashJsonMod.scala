@@ -1,6 +1,5 @@
 package typings.commentDashJson
 
-import typings.commentDashJson.commentDashJsonMod.Reviver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

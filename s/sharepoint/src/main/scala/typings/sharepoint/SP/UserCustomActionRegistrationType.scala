@@ -1,11 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserCustomActionRegistrationType.contentType
-import typings.sharepoint.SP.UserCustomActionRegistrationType.fileType
-import typings.sharepoint.SP.UserCustomActionRegistrationType.list
-import typings.sharepoint.SP.UserCustomActionRegistrationType.none
-import typings.sharepoint.SP.UserCustomActionRegistrationType.progId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.vueDashRouter.typesRouterMod
 
 import typings.vue.typesVueMod.Vue
-import typings.vueDashRouter.vueDashRouterNumbers.`false`
+import typings.vueDashRouter.vueDashRouterBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

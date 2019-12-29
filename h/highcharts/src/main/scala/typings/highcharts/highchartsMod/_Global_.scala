@@ -1,6 +1,5 @@
 package typings.highcharts.highchartsMod
 
-import typings.highcharts.highchartsMod._Global_.JQuery
 import typings.highcharts.highchartsStrings.Map
 import typings.highcharts.highchartsStrings.StockChart
 import scala.scalajs.js

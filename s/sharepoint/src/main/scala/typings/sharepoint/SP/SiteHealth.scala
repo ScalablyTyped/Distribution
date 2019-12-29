@@ -1,11 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.SiteHealth.SiteHealthResult
-import typings.sharepoint.SP.SiteHealth.SiteHealthStatusType
-import typings.sharepoint.SP.SiteHealth.SiteHealthStatusType.failedError
-import typings.sharepoint.SP.SiteHealth.SiteHealthStatusType.failedWarning
-import typings.sharepoint.SP.SiteHealth.SiteHealthStatusType.passed
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

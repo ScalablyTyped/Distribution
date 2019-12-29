@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Details
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Environments
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Issues
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.ReleaseInfo
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.TestResults
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.WorkItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

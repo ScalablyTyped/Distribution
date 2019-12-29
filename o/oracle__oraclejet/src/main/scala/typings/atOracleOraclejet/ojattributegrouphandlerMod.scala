@@ -1,7 +1,6 @@
 package typings.atOracleOraclejet
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atOracleOraclejet.ojattributegrouphandlerMod.AttributeGroupHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

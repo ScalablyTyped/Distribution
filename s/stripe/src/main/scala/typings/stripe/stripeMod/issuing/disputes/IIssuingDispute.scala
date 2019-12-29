@@ -3,7 +3,7 @@ package typings.stripe.stripeMod.issuing.disputes
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
 import typings.stripe.stripeMod.issuing.transactions.ITransaction
-import typings.stripe.stripeStrings.issuingDOTdispute
+import typings.stripe.stripeStrings.issuingDotdispute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ trait IIssuingDispute extends IResourceObject {
     * String representing the object’s type. Objects of the same type share the same value.
     */
   @JSName("object")
-  var object_IIssuingDispute: issuingDOTdispute
+  var object_IIssuingDispute: issuingDotdispute
   /**
     * Reason for this dispute. One of other or fraudulent.
     */
@@ -66,7 +66,7 @@ object IIssuingDispute {
     id: String,
     livemode: Boolean,
     metadata: IMetadata,
-    `object`: issuingDOTdispute,
+    `object`: issuingDotdispute,
     reason: IssuingDisputeReason,
     status: IssuingDisputeStatus
   ): IIssuingDispute = {

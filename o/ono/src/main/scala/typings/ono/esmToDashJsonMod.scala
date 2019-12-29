@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 object esmToDashJsonMod extends js.Object {
   def getDeepKeys(obj: js.Object): Set[String | js.Symbol] = js.native
   def getDeepKeys(obj: js.Object, omit: js.Array[String | js.Symbol]): Set[String | js.Symbol] = js.native
-  def toJSON(`this`: ErrorPOJO): ErrorPOJO = js.native
-  def toJSON(`this`: Error): ErrorPOJO with Error = js.native
+  def toJSON(): ErrorPOJO = js.native
+  @JSName("toJSON")
+  def toJSON_Intersection(): ErrorPOJO with Error = js.native
 }
 

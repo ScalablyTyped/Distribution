@@ -1,10 +1,6 @@
 package typings.sipDotJs.libWebTransportMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CLOSED
-import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CLOSING
-import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CONNECTING
-import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

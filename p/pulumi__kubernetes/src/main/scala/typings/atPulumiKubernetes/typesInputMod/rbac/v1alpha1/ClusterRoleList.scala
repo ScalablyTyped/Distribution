@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.rbac.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.rbacDotauthorizationDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait ClusterRoleList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]] = js.undefined
   /**
     * Items is a list of ClusterRoles
     */
@@ -40,7 +40,7 @@ object ClusterRoleList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[ClusterRole]]],
-    apiVersion: Input[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`] = null,
+    apiVersion: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ClusterRoleList] = null,
     metadata: Input[ListMeta] = null
   ): ClusterRoleList = {

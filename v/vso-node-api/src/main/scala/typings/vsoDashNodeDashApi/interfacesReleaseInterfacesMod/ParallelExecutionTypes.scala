@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ParallelExecutionTypes.MultiConfiguration
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ParallelExecutionTypes.MultiMachine
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ParallelExecutionTypes.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

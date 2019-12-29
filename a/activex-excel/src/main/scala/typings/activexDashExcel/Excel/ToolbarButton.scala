@@ -12,7 +12,8 @@ class ToolbarButton protected () extends js.Object {
   var BuiltInFace: Boolean = js.native
   val Creator: XlCreator = js.native
   var Enabled: Boolean = js.native
-  var `Excel.ToolbarButton_typekey`: ToolbarButton = js.native
+  @JSName("Excel.ToolbarButton_typekey")
+  var ExcelDotToolbarButton_typekey: ToolbarButton = js.native
   var HelpContextID: Double = js.native
   var HelpFile: String = js.native
   val ID: Double = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "intl-format-cache" : "4.2.13"
+      "intl-format-cache" : "4.2.15"
     }
   ],
   "test-dependencies" : [
     {
-      "intl-format-cache" : "4.2.13"
+      "intl-format-cache" : "4.2.15"
     }
   ],
   "compile-devDependencies" : [

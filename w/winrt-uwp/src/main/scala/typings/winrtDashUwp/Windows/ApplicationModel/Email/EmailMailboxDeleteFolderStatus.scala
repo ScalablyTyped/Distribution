@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxDeleteFolderStatus.couldNotDeleteEverything
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxDeleteFolderStatus.networkError
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxDeleteFolderStatus.permissionsError
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxDeleteFolderStatus.serverError
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxDeleteFolderStatus.success
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxDeleteFolderStatus.unknownFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

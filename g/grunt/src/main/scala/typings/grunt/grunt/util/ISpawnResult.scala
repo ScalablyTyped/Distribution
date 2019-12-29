@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
   */
 trait ISpawnResult extends js.Object {
   var code: Double
-  var stderr: java.lang.String
-  var stdout: java.lang.String
+  var stderr: String
+  var stdout: String
 }
 
 object ISpawnResult {
   @scala.inline
-  def apply(code: Double, stderr: java.lang.String, stdout: java.lang.String): ISpawnResult = {
+  def apply(code: Double, stderr: String, stdout: String): ISpawnResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISpawnResult]

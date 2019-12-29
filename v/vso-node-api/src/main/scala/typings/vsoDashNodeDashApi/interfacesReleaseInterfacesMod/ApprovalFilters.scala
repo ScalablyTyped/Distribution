@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalFilters.All
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalFilters.ApprovalSnapshots
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalFilters.AutomatedApprovals
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalFilters.ManualApprovals
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalFilters.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

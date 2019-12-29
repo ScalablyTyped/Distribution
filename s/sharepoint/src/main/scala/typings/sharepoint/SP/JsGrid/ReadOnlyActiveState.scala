@@ -1,8 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.ReadOnlyActiveState.ReadOnlyActive
-import typings.sharepoint.SP.JsGrid.ReadOnlyActiveState.ReadOnlyDisabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

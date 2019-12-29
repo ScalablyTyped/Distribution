@@ -21,6 +21,6 @@ trait Request
 @JSGlobal("Request")
 @js.native
 object Request
-  extends Instantiable2[(/* input */ Request) | (/* input */ String), /* init */ RequestInit, Request]
-     with Instantiable1[(/* input */ Request) | (/* input */ String), Request]
+  extends Instantiable1[(/* input */ Request) | (/* input */ String), Request]
+     with Instantiable2[(/* input */ Request) | (/* input */ String), /* init */ RequestInit, Request]
 

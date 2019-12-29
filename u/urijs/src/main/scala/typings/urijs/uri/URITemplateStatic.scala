@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait URITemplateStatic
-  extends Instantiable1[/* template */ String, typings.urijs.uri.URITemplate] {
-  def apply(template: String): typings.urijs.uri.URITemplate = js.native
+trait URITemplateStatic extends Instantiable1[/* template */ String, URITemplate] {
+  def apply(template: String): URITemplate = js.native
 }
 

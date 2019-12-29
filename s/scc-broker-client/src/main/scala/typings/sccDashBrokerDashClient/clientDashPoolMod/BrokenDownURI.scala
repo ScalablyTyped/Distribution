@@ -1,6 +1,6 @@
 package typings.sccDashBrokerDashClient.clientDashPoolMod
 
-import typings.sccDashBrokerDashClient.sccDashBrokerDashClientNumbers.`true`
+import typings.sccDashBrokerDashClient.sccDashBrokerDashClientBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

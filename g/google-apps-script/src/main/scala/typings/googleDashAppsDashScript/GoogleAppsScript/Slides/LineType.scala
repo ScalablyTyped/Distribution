@@ -1,17 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_3
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_4
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_5
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_3
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_4
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_5
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.STRAIGHT_CONNECTOR_1
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.STRAIGHT_LINE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

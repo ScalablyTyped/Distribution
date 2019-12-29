@@ -1,13 +1,6 @@
 package typings.pako.pakoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pako.pakoMod.FlushValues.Z_BLOCK
-import typings.pako.pakoMod.FlushValues.Z_FINISH
-import typings.pako.pakoMod.FlushValues.Z_FULL_FLUSH
-import typings.pako.pakoMod.FlushValues.Z_NO_FLUSH
-import typings.pako.pakoMod.FlushValues.Z_PARTIAL_FLUSH
-import typings.pako.pakoMod.FlushValues.Z_SYNC_FLUSH
-import typings.pako.pakoMod.FlushValues.Z_TREES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

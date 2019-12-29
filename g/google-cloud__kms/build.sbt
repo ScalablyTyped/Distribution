@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "google-cloud__kms"
-version := "1.5-dt-20191112Z-37bc69"
+version := "1.5-dt-20191112Z-5b67ee"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "google-protobuf" % "3.7-dt-20191126Z-e71648",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "google-protobuf" % "3.7-dt-20191126Z-fecc04",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -5,7 +5,7 @@ import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularCore.atAngularCoreMod.Renderer2
 import typings.atAngularCore.atAngularCoreMod.RendererFactory2
 import typings.atAngularPlatformDashBrowser.atAngularPlatformDashBrowserMod.DomSanitizer
-import typings.atAntDashDesignIconsDashAngular.atAntDashDesignIconsDashAngularStrings.`[@ant-design/icons-angular]:`
+import typings.atAntDashDesignIconsDashAngular.atAntDashDesignIconsDashAngularStrings.`Leftsquarebracket@ant-designSlashicons-angularRightsquarebracketColon`
 import typings.atAntDashDesignIconsDashAngular.typesMod.IconDefinition
 import typings.atAntDashDesignIconsDashAngular.typesMod.Manifest
 import typings.atAntDashDesignIconsDashAngular.typesMod.ThemeType
@@ -43,7 +43,7 @@ object atAntDashDesignIconsDashAngularMod extends js.Object {
     ) = this()
   }
   
-  val ANT_ICON_ANGULAR_CONSOLE_PREFIX: `[@ant-design/icons-angular]:` = js.native
+  val ANT_ICON_ANGULAR_CONSOLE_PREFIX: `Leftsquarebracket@ant-designSlashicons-angularRightsquarebracketColon` = js.native
   val manifest: Manifest = js.native
   def DynamicLoadingTimeoutError(): Error = js.native
   def HttpModuleNotImport(): Null = js.native

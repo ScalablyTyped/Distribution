@@ -16,8 +16,8 @@ trait Rellax
   * @param options Options
   */
 Instantiable0[RellaxInstance]
-     with Instantiable2[(/* el */ Element) | (/* el */ String), /* options */ RellaxOptions, RellaxInstance]
-     with Instantiable1[(/* el */ Element) | (/* el */ String), RellaxInstance] {
+     with Instantiable1[(/* el */ Element) | (/* el */ String), RellaxInstance]
+     with Instantiable2[(/* el */ Element) | (/* el */ String), /* options */ RellaxOptions, RellaxInstance] {
   /**
     * Inits and starts the Parallax animations
     * @param el Single element or string with selector of elements

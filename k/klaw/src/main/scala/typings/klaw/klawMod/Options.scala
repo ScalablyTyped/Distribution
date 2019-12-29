@@ -1,8 +1,8 @@
 package typings.klaw.klawMod
 
-import typings.node.Error
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

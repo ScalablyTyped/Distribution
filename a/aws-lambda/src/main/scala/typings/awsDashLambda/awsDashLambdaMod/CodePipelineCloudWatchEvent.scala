@@ -6,7 +6,7 @@ import typings.awsDashLambda.Anon_ExecutionidPipeline
 import typings.awsDashLambda.awsDashLambdaStrings.`CodePipeline Action Execution State Change`
 import typings.awsDashLambda.awsDashLambdaStrings.`CodePipeline Pipeline Execution State Change`
 import typings.awsDashLambda.awsDashLambdaStrings.`CodePipeline Stage Execution State Change`
-import typings.awsDashLambda.awsDashLambdaStrings.awsDOTcodepipeline
+import typings.awsDashLambda.awsDashLambdaStrings.awsDotcodepipeline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ object CodePipelineCloudWatchEvent {
     id: String,
     region: String,
     resources: js.Array[String],
-    source: awsDOTcodepipeline,
+    source: awsDotcodepipeline,
     time: String,
     version: String
   ): CodePipelineCloudWatchEvent = {
@@ -43,7 +43,7 @@ object CodePipelineCloudWatchEvent {
     id: String,
     region: String,
     resources: js.Array[String],
-    source: awsDOTcodepipeline,
+    source: awsDotcodepipeline,
     time: String,
     version: String
   ): CodePipelineCloudWatchEvent = {
@@ -59,7 +59,7 @@ object CodePipelineCloudWatchEvent {
     id: String,
     region: String,
     resources: js.Array[String],
-    source: awsDOTcodepipeline,
+    source: awsDotcodepipeline,
     time: String,
     version: String
   ): CodePipelineCloudWatchEvent = {

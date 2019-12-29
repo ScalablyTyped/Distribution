@@ -3,7 +3,6 @@ package typings.atAngularCompiler
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileProviderMetadata
 import typings.atAngularCompiler.srcCompileUnderscoreReflectorMod.CompileReflector
-import typings.atAngularCompiler.srcNgUnderscoreModuleUnderscoreCompilerMod.NgModuleCompileResult
 import typings.atAngularCompiler.srcUtilMod.OutputContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`

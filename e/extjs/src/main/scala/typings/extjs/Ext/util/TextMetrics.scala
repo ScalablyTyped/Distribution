@@ -40,7 +40,7 @@ object TextMetrics extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Adds members to class  */
   def implement(): Unit = js.native
   /** [Method] Measures the size of the specified text
@@ -51,8 +51,8 @@ object TextMetrics extends js.Object {
   		*/
   def measure(): js.Any = js.native
   def measure(el: js.Any): js.Any = js.native
-  def measure(el: js.Any, text: java.lang.String): js.Any = js.native
-  def measure(el: js.Any, text: java.lang.String, fixedWidth: Double): js.Any = js.native
+  def measure(el: js.Any, text: String): js.Any = js.native
+  def measure(el: js.Any, text: String, fixedWidth: Double): js.Any = js.native
   /** [Method] Override members of this class
   		* @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
   		* @returns Ext.Base this class

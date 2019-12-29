@@ -1,8 +1,6 @@
 package typings.mobx
 
 import typings.mobx.libCoreDerivationMod.IDerivation
-import typings.mobx.libCoreGlobalstateMod.IUNCHANGED
-import typings.mobx.libCoreGlobalstateMod.MobXGlobals
 import typings.mobx.libCoreObservableMod.IObservable
 import typings.mobx.libInternalMod.Reaction
 import typings.mobx.mobxStrings.strict

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.typedoc.distLibModelsMod.Reflection
 import typings.typedoc.distLibModelsMod.Type
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind
-import typings.typedoc.distLibSerializationComponentsMod.SerializerComponent
 import typings.typedoc.distLibSerializationSerializerMod.Serializer
 import typings.typedoc.distLibUtilsMod.AbstractComponent
 import scala.scalajs.js

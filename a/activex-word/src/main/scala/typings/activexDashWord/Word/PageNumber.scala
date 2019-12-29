@@ -12,7 +12,8 @@ class PageNumber protected () extends js.Object {
   val Creator: Double = js.native
   val Index: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.PageNumber_typekey`: PageNumber = js.native
+  @JSName("Word.PageNumber_typekey")
+  var WordDotPageNumber_typekey: PageNumber = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native
   def Delete(): Unit = js.native

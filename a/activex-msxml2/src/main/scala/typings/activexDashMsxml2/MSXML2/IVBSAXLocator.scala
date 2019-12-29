@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.IVBSAXLocator")
 @js.native
 class IVBSAXLocator protected () extends js.Object {
-  var `MSXML2.IVBSAXLocator_typekey`: IVBSAXLocator = js.native
+  @JSName("MSXML2.IVBSAXLocator_typekey")
+  var MSXML2DotIVBSAXLocator_typekey: IVBSAXLocator = js.native
   /** Get the column number where the current document event ends. */
   val columnNumber: Double = js.native
   /** Get the line number where the current document event ends. */

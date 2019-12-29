@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalExecutionOrder.AfterGatesAlways
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalExecutionOrder.AfterSuccessfulGates
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalExecutionOrder.BeforeGates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

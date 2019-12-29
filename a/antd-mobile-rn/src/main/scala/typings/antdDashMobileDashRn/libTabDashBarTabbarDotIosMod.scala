@@ -1,7 +1,6 @@
 package typings.antdDashMobileDashRn
 
 import typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps
-import typings.antdDashMobileDashRn.libTabDashBarTabbarDotIosMod.TabBar
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

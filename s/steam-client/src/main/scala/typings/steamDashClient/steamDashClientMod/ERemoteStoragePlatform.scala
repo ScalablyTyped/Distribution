@@ -1,14 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.All
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.Linux
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.None
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.OSX
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.PS3
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.Reserved1
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.Reserved2
-import typings.steamDashClient.steamDashClientMod.ERemoteStoragePlatform.Windows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

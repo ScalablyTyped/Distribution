@@ -1,7 +1,5 @@
 package typings.mustacheDashExpress
 
-import typings.mustacheDashExpress.mustacheDashExpressMod.ExpessEngine
-import typings.mustacheDashExpress.mustacheDashExpressMod.TemplateCache
 import typings.std.Cache
 import scala.scalajs.js
 import scala.scalajs.js.`|`

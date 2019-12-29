@@ -1,7 +1,6 @@
 package typings.memoryDashCache
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.memoryDashCache.memoryDashCacheMod.CacheClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

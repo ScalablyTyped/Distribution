@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ParagraphAlignment.CENTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ParagraphAlignment.END
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ParagraphAlignment.JUSTIFIED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ParagraphAlignment.START
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ParagraphAlignment.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

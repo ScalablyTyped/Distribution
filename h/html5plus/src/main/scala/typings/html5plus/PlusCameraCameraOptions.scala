@@ -1,10 +1,10 @@
 package typings.html5plus
 
+import typings.html5plus.html5plusStrings._docSlash
+import typings.html5plus.html5plusStrings._documentsSlash
+import typings.html5plus.html5plusStrings._downloadsSlash
 import typings.html5plus.html5plusStrings.`1`
 import typings.html5plus.html5plusStrings.`2`
-import typings.html5plus.html5plusStrings.`_doc/`
-import typings.html5plus.html5plusStrings.`_documents/`
-import typings.html5plus.html5plusStrings.`_downloads/`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait PlusCameraCameraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var filename: js.UndefOr[`_doc/` | `_documents/` | `_downloads/`] = js.undefined
+  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   /**
     * 拍照或摄像的文件格式
     * 可通过Camera对象的supportedImageFormats或supportedVideoFormats获取，如果设置的参数无效则使用系统默认值。
@@ -82,7 +82,7 @@ trait PlusCameraCameraOptions extends js.Object {
 object PlusCameraCameraOptions {
   @scala.inline
   def apply(
-    filename: `_doc/` | `_documents/` | `_downloads/` = null,
+    filename: _docSlash | _documentsSlash | _downloadsSlash = null,
     format: String = null,
     index: `1` | `2` = null,
     optimize: js.UndefOr[Boolean] = js.undefined,

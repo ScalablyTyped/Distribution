@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ICarousel extends IContainer {
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the index of the currently active card
   		* @returns Number The index of the currently active card.
   		*/
@@ -23,7 +23,7 @@ trait ICarousel extends IContainer {
   /** [Method] Returns the value of direction
   		* @returns String
   		*/
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of directionLock
   		* @returns Boolean
   		*/
@@ -73,7 +73,7 @@ trait ICarousel extends IContainer {
   /** [Method] Sets the value of direction
   		* @param direction String The new value.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of directionLock
   		* @param directionLock Boolean The new value.
   		*/
@@ -96,11 +96,11 @@ object ICarousel {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    direction: java.lang.String = null,
+    direction: String = null,
     getActiveIndex: () => Double = null,
     getAnimation: () => _ = null,
     getBufferSize: () => Double = null,
-    getDirection: () => java.lang.String = null,
+    getDirection: () => String = null,
     getDirectionLock: () => Boolean = null,
     getIndicator: () => _ = null,
     getItemConfig: () => _ = null,
@@ -108,12 +108,12 @@ object ICarousel {
     indicator: js.UndefOr[Boolean] = js.undefined,
     isHorizontal: () => Boolean = null,
     isVertical: () => Boolean = null,
-    next: () => typings.senchaUnderscoreTouch.Ext.carousel.ICarousel = null,
-    prev: () => typings.senchaUnderscoreTouch.Ext.carousel.ICarousel = null,
-    previous: () => typings.senchaUnderscoreTouch.Ext.carousel.ICarousel = null,
+    next: () => ICarousel = null,
+    prev: () => ICarousel = null,
+    previous: () => ICarousel = null,
     setAnimation: /* animation */ js.UndefOr[js.Any] => Unit = null,
     setBufferSize: /* bufferSize */ js.UndefOr[Double] => Unit = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setDirectionLock: /* directionLock */ js.UndefOr[Boolean] => Unit = null,
     setIndicator: /* indicator */ js.UndefOr[Boolean] => Unit = null,
     setItemConfig: /* itemConfig */ js.UndefOr[js.Any] => Unit = null,

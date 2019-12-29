@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimationType.opacity
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimationType.scale
-import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimationType.translation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

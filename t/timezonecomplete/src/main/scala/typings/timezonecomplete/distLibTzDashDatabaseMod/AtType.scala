@@ -1,9 +1,6 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibTzDashDatabaseMod.AtType.Standard
-import typings.timezonecomplete.distLibTzDashDatabaseMod.AtType.Utc
-import typings.timezonecomplete.distLibTzDashDatabaseMod.AtType.Wall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

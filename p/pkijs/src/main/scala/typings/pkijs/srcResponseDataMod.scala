@@ -1,6 +1,5 @@
 package typings.pkijs
 
-import typings.pkijs.srcResponseDataMod.ResponseData
 import typings.std.ArrayBuffer
 import typings.std.Date
 import scala.scalajs.js

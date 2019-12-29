@@ -1,12 +1,6 @@
 package typings.mobservable
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mobservable.libDnodeMod.DataNode
-import typings.mobservable.libDnodeMod.NodeState
-import typings.mobservable.libDnodeMod.NodeState.PENDING
-import typings.mobservable.libDnodeMod.NodeState.READY
-import typings.mobservable.libDnodeMod.NodeState.STALE
-import typings.mobservable.libDnodeMod.ViewNode
 import typings.mobservable.libInterfacesMod.IContextInfoStruct
 import scala.scalajs.js
 import scala.scalajs.js.`|`

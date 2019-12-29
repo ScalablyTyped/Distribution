@@ -1,13 +1,6 @@
 package typings.atUirouterCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType
-import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.ABORTED
-import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.ERROR
-import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.IGNORED
-import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.INVALID
-import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.SUPERSEDED
-import typings.atUirouterCore.libTransitionRejectFactoryMod.Rejection
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

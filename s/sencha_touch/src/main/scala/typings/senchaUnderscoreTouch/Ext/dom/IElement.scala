@@ -23,9 +23,9 @@ trait IElement extends IObservable {
   		*/
   var addCls: js.UndefOr[
     js.Function3[
-      /* names */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
+      /* names */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
       this.type
     ]
   ] = js.undefined
@@ -50,7 +50,7 @@ trait IElement extends IObservable {
   		* @returns HTMLElement/Ext.dom.Element The child Ext.dom.Element (or DOM node if returnDom is true)
   		*/
   var child: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Returns true if this element is an ancestor of the passed element
   		* @param element HTMLElement/String The element to check.
@@ -74,7 +74,7 @@ trait IElement extends IObservable {
   /** [Method] Translates an element using CSS 3 in 2D  */
   var cssTranslate: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (String) */
-  var defaultUnit: js.UndefOr[java.lang.String] = js.undefined
+  var defaultUnit: js.UndefOr[String] = js.undefined
   /** [Property] (HTMLElement) */
   var dom: js.UndefOr[HTMLElement] = js.undefined
   /** [Method] Selects a single child at any depth below this element based on the passed CSS selector the selector should not cont
@@ -83,7 +83,7 @@ trait IElement extends IObservable {
   		* @returns HTMLElement/Ext.dom.Element The child Ext.dom.Element (or DOM node if returnDom is true).
   		*/
   var down: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Looks at this node and then at parent nodes for a match of the passed simple selector e g
   		* @param simpleSelector String The simple selector to test.
@@ -93,7 +93,7 @@ trait IElement extends IObservable {
   		*/
   var findParent: js.UndefOr[
     js.Function3[
-      /* simpleSelector */ js.UndefOr[java.lang.String], 
+      /* simpleSelector */ js.UndefOr[String], 
       /* maxDepth */ js.UndefOr[js.Any], 
       /* returnEl */ js.UndefOr[Boolean], 
       _
@@ -107,7 +107,7 @@ trait IElement extends IObservable {
   		*/
   var findParentNode: js.UndefOr[
     js.Function3[
-      /* simpleSelector */ js.UndefOr[java.lang.String], 
+      /* simpleSelector */ js.UndefOr[String], 
       /* maxDepth */ js.UndefOr[js.Any], 
       /* returnEl */ js.UndefOr[Boolean], 
       _
@@ -119,7 +119,7 @@ trait IElement extends IObservable {
   		* @returns Ext.dom.Element/HTMLElement/null The first child or null.
   		*/
   var first: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Gets the x y coordinates to align this element with another element
   		* @param element Mixed The element to align to.
@@ -130,7 +130,7 @@ trait IElement extends IObservable {
   var getAlignToXY: js.UndefOr[
     js.Function3[
       /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
+      /* position */ js.UndefOr[String], 
       /* offsets */ js.UndefOr[Array], 
       Array
     ]
@@ -143,7 +143,7 @@ trait IElement extends IObservable {
   		*/
   var getAnchorXY: js.UndefOr[
     js.Function3[
-      /* anchor */ js.UndefOr[java.lang.String], 
+      /* anchor */ js.UndefOr[String], 
       /* local */ js.UndefOr[Boolean], 
       /* size */ js.UndefOr[js.Any], 
       Array
@@ -155,17 +155,13 @@ trait IElement extends IObservable {
   		* @returns String The attribute value.
   		*/
   var getAttribute: js.UndefOr[
-    js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* namespace */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ]
+    js.Function2[/* name */ js.UndefOr[String], /* namespace */ js.UndefOr[String], String]
   ] = js.undefined
   /** [Method] Gets the width of the border s for the specified side s
   		* @param side String Can be t, l, r, b or any combination of those to add multiple values. For example, passing 'lr' would get the border left width + the border right width.
   		* @returns Number The width of the sides passed added together
   		*/
-  var getBorderWidth: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var getBorderWidth: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Gets the bottom Y coordinate of the element element Y position  element height
   		* @returns Number
   		*/
@@ -181,7 +177,7 @@ trait IElement extends IObservable {
   /** [Method] Returns the innerHTML of an element
   		* @returns String
   		*/
-  var getHTML: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getHTML: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the offset height of the element
   		* @param contentHeight Boolean true to get the height minus borders and padding.
   		* @returns Number The element's height.
@@ -190,7 +186,7 @@ trait IElement extends IObservable {
   /** [Method] Returns the innerHTML of an element
   		* @returns String
   		*/
-  var getHtml: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getHtml: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets the left X coordinate
   		* @returns Number
   		*/
@@ -199,7 +195,7 @@ trait IElement extends IObservable {
   		* @param sides String Any combination of 'l', 'r', 't', 'b' to get the sum of those sides.
   		* @returns Object/Number
   		*/
-  var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the offsets of this element from the passed element
   		* @param element Mixed The element to get the offsets from.
   		* @returns Array The XY page offsets (e.g. [100, -200])
@@ -213,7 +209,7 @@ trait IElement extends IObservable {
   		* @param side String Can be t, l, r, b or any combination of those to add multiple values. For example, passing 'lr' would get the padding left + the padding right.
   		* @returns Number The padding of the sides passed added together.
   		*/
-  var getPadding: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var getPadding: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Return an object defining the area of this Element which can be passed to setBox to set another Element s size locati
   		* @param asRegion Boolean If true an Ext.util.Region will be returned.
   		* @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. So the result may also be used for setXY.
@@ -234,7 +230,7 @@ trait IElement extends IObservable {
   		* @param prop String The style property whose value is returned.
   		* @returns String The current value of the style property for this element.
   		*/
-  var getStyle: js.UndefOr[js.Function1[/* prop */ js.UndefOr[java.lang.String], java.lang.String]] = js.undefined
+  var getStyle: js.UndefOr[js.Function1[/* prop */ js.UndefOr[String], String]] = js.undefined
   /** [Method] Gets the top Y coordinate
   		* @returns Number
   		*/
@@ -269,11 +265,11 @@ trait IElement extends IObservable {
   		* @param name String The CSS class to check for.
   		* @returns Boolean true if the class exists, else false.
   		*/
-  var hasCls: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasCls: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Hides this element  */
   var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Method] Inserts this element after the passed element in the DOM
   		* @param el String/HTMLElement/Ext.dom.Element The element to insert after. The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.Element This element.
@@ -297,8 +293,8 @@ trait IElement extends IObservable {
   		*/
   var insertHtml: js.UndefOr[
     js.Function3[
-      /* where */ js.UndefOr[java.lang.String], 
-      /* html */ js.UndefOr[java.lang.String], 
+      /* where */ js.UndefOr[String], 
+      /* html */ js.UndefOr[String], 
       /* returnEl */ js.UndefOr[Boolean], 
       _
     ]
@@ -312,7 +308,7 @@ trait IElement extends IObservable {
   var insertSibling: js.UndefOr[
     js.Function3[
       /* el */ js.UndefOr[js.Any], 
-      /* where */ js.UndefOr[java.lang.String], 
+      /* where */ js.UndefOr[String], 
       /* returnDom */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -321,7 +317,7 @@ trait IElement extends IObservable {
   		* @param selector String The simple selector to test.
   		* @returns Boolean true if this element matches the selector, else false.
   		*/
-  var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Determines if this element is a descendant of the passed in Element  */
   var isDescendent: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Checks if the current value of a style is equal to a given value
@@ -330,24 +326,20 @@ trait IElement extends IObservable {
   		* @returns Boolean true for when the current value equals the given value.
   		*/
   var isStyle: js.UndefOr[
-    js.Function2[
-      /* style */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[java.lang.String], 
-      Boolean
-    ]
+    js.Function2[/* style */ js.UndefOr[String], /* value */ js.UndefOr[String], Boolean]
   ] = js.undefined
   /** [Method] Returns true if the value of the given property is visually transparent
   		* @param prop String The style property whose value is to be tested.
   		* @returns Boolean true if the style property is visually transparent.
   		*/
-  var isTransparent: js.UndefOr[js.Function1[/* prop */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var isTransparent: js.UndefOr[js.Function1[/* prop */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Gets the last child skipping text nodes
   		* @param selector String Find the previous sibling that matches the passed simple selector.
   		* @param returnDom Boolean true to return a raw DOM node instead of an Ext.dom.Element.
   		* @returns Ext.dom.Element/HTMLElement/null The last child or null.
   		*/
   var last: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Puts a mask over this element to disable user interaction  */
   var mask: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -357,7 +349,7 @@ trait IElement extends IObservable {
   		* @returns Ext.dom.Element/HTMLElement/null The next sibling or null.
   		*/
   var next: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Gets the parent node for this element optionally chaining up trying to match a selector
   		* @param selector String Find a parent node that matches the passed simple selector.
@@ -365,7 +357,7 @@ trait IElement extends IObservable {
   		* @returns Ext.dom.Element/HTMLElement/null The parent node or null.
   		*/
   var parent: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Gets the previous sibling skipping text nodes
   		* @param selector String Find the previous sibling that matches the passed simple selector.
@@ -373,7 +365,7 @@ trait IElement extends IObservable {
   		* @returns Ext.dom.Element/HTMLElement/null The previous sibling or null.
   		*/
   var prev: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Removes all listeners for this object  */
   var purgeAllListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -381,7 +373,7 @@ trait IElement extends IObservable {
   		* @param selector String The CSS selector.
   		* @returns HTMLElement[] An array of the matched nodes.
   		*/
-  var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Array]] = js.undefined
+  var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[String], Array]] = js.undefined
   /** [Method] Adds one or more CSS classes to this element and removes the same class es from all siblings
   		* @param className String/String[] The CSS class to add, or an array of classes.
   		* @returns Ext.dom.Element this
@@ -408,9 +400,9 @@ trait IElement extends IObservable {
   		*/
   var removeCls: js.UndefOr[
     js.Function3[
-      /* names */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
+      /* names */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
       this.type
     ]
   ] = js.undefined
@@ -432,10 +424,10 @@ trait IElement extends IObservable {
   		*/
   var replaceCls: js.UndefOr[
     js.Function4[
-      /* oldName */ js.UndefOr[java.lang.String], 
-      /* newName */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
+      /* oldName */ js.UndefOr[String], 
+      /* newName */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
       this.type
     ]
   ] = js.undefined
@@ -448,7 +440,7 @@ trait IElement extends IObservable {
   		* @param form Object The form
   		* @returns String The url encoded form
   		*/
-  var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Sets the passed attributes as attributes of this element a style attribute can be a string object or function
   		* @param attributes Object The object with the attributes.
   		* @param useSet Boolean false to override the default setAttribute to use expandos.
@@ -461,7 +453,7 @@ trait IElement extends IObservable {
   		* @param bottom String The bottom CSS property value.
   		* @returns Ext.dom.Element this
   		*/
-  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Sets the element s box
   		* @param box Object The box to fill, for example: {  left: ...,  top: ...,  width: ...,  height: ... }
   		* @returns Ext.dom.Element this
@@ -474,7 +466,7 @@ trait IElement extends IObservable {
   /** [Method] Sets the innerHTML of this element
   		* @param html String The new HTML.
   		*/
-  var setHTML: js.UndefOr[js.Function1[/* html */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHTML: js.UndefOr[js.Function1[/* html */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the height of this Element
   		* @param height Number/String The new height.
   		* @returns Ext.dom.Element this
@@ -483,12 +475,12 @@ trait IElement extends IObservable {
   /** [Method] Sets the innerHTML of this element
   		* @param html String The new HTML.
   		*/
-  var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the element s left position directly using CSS style instead of setX
   		* @param left String The left CSS property value.
   		* @returns Ext.dom.Element this
   		*/
-  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Set the maximum height of this Element
   		* @param height Number/String The new maximum height.
   		* @returns Ext.dom.Element this
@@ -513,7 +505,7 @@ trait IElement extends IObservable {
   		* @param right String The right CSS property value.
   		* @returns Ext.dom.Element this
   		*/
-  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Set the size of this Element
   		* @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used. A size object in the format {width: widthValue, height: heightValue}.
   		* @param height Number/String The new height. This may be one of:  A Number specifying the new height in this Element's defaultUnits (by default, pixels). A String used to set the CSS height style. Animation may not be used.
@@ -528,17 +520,13 @@ trait IElement extends IObservable {
   		* @returns Ext.dom.Element this
   		*/
   var setStyle: js.UndefOr[
-    js.Function2[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
-      this.type
-    ]
+    js.Function2[/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], this.type]
   ] = js.undefined
   /** [Method] Sets the element s top position directly using CSS style instead of setY
   		* @param top String The top CSS property value.
   		* @returns Ext.dom.Element this
   		*/
-  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Sets the element s top and left positions directly using CSS style  */
   var setTopLeft: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Use this to change the visibility mode between VISIBILITY DISPLAY or OFFSETS
@@ -577,7 +565,7 @@ trait IElement extends IObservable {
   		* @param className String The CSS class to toggle.
   		* @returns Ext.dom.Element this
   		*/
-  var toggleCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var toggleCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Translates the passed page coordinates into left top CSS values for this element
   		* @param x Number/Array The page x or an array containing [x, y].
   		* @param y Number The page y, required if x is not an array.
@@ -592,16 +580,12 @@ trait IElement extends IObservable {
   		* @returns Ext.dom.Element/null The matching DOM node (or null if no match was found).
   		*/
   var up: js.UndefOr[
-    js.Function2[
-      /* simpleSelector */ js.UndefOr[java.lang.String], 
-      /* maxDepth */ js.UndefOr[js.Any], 
-      _
-    ]
+    js.Function2[/* simpleSelector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Method] Sets the innerHTML of this element
   		* @param html String The new HTML.
   		*/
-  var update: js.UndefOr[js.Function1[/* html */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var update: js.UndefOr[js.Function1[/* html */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Creates and wraps this element with another element
   		* @param config Object DomHelper element config object for the wrapper element or null for an empty div
   		* @param domNode Boolean true to return the raw DOM element instead of Ext.dom.Element.
@@ -620,60 +604,60 @@ object IElement {
     VISIBILITY: Int | Double = null,
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    addCls: (/* names */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => IElement = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    appendChild: /* element */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    appendTo: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    applyStyles: /* styles */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    appendChild: /* element */ js.UndefOr[js.Any] => IElement = null,
+    appendTo: /* el */ js.UndefOr[js.Any] => IElement = null,
+    applyStyles: /* styles */ js.UndefOr[js.Any] => IElement = null,
     bubbleEvents: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    child: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     clearListeners: () => Unit = null,
     config: js.Any = null,
     contains: /* element */ js.UndefOr[js.Any] => Boolean = null,
-    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => IElement = null,
     cssTranslate: () => Unit = null,
-    defaultUnit: java.lang.String = null,
+    defaultUnit: String = null,
     destroy: () => Unit = null,
     dom: HTMLElement = null,
-    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    down: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    findParent: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    findParentNode: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array = null,
-    getAnchorXY: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
-    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    extend: String = null,
+    findParent: (/* simpleSelector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    findParentNode: (/* simpleSelector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    first: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array]) => Array = null,
+    getAnchorXY: (/* anchor */ js.UndefOr[String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
+    getAttribute: (/* name */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => String = null,
+    getBorderWidth: /* side */ js.UndefOr[String] => Double = null,
     getBottom: () => Double = null,
     getBox: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => _ = null,
     getBubbleEvents: () => _ = null,
-    getHTML: () => java.lang.String = null,
+    getHTML: () => String = null,
     getHeight: /* contentHeight */ js.UndefOr[Boolean] => Double = null,
-    getHtml: () => java.lang.String = null,
+    getHtml: () => String = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLeft: () => Double = null,
     getListeners: () => _ = null,
-    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
+    getMargin: /* sides */ js.UndefOr[String] => _ = null,
     getOffsetsTo: /* element */ js.UndefOr[js.Any] => Array = null,
     getOuterHeight: () => Unit = null,
     getOuterWidth: () => Unit = null,
-    getPadding: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    getPadding: /* side */ js.UndefOr[String] => Double = null,
     getPageBox: /* asRegion */ js.UndefOr[Boolean] => _ = null,
     getRight: () => Double = null,
     getScrollParent: () => Unit = null,
     getSize: /* contentSize */ js.UndefOr[Boolean] => _ = null,
-    getStyle: /* prop */ js.UndefOr[java.lang.String] => java.lang.String = null,
+    getStyle: /* prop */ js.UndefOr[String] => String = null,
     getTop: () => Double = null,
     getValue: /* asNumber */ js.UndefOr[Boolean] => _ = null,
     getViewSize: () => _ = null,
@@ -681,89 +665,89 @@ object IElement {
     getX: () => Double = null,
     getXY: () => Array = null,
     getY: () => Double = null,
-    hasCls: /* name */ js.UndefOr[java.lang.String] => Boolean = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasCls: /* name */ js.UndefOr[String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hide: () => Unit = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    insertAfter: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    insertBefore: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    insertFirst: /* element */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    is: /* selector */ js.UndefOr[java.lang.String] => Boolean = null,
+    insertAfter: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertBefore: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertFirst: /* element */ js.UndefOr[js.Any] => IElement = null,
+    insertHtml: (/* where */ js.UndefOr[String], /* html */ js.UndefOr[String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => IElement = null,
+    is: /* selector */ js.UndefOr[String] => Boolean = null,
     isDescendent: () => Unit = null,
-    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean = null,
-    isTransparent: /* prop */ js.UndefOr[java.lang.String] => Boolean = null,
-    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    isStyle: (/* style */ js.UndefOr[String], /* value */ js.UndefOr[String]) => Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[String] => Boolean = null,
+    last: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     listeners: js.Any = null,
     mask: () => Unit = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    next: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    parent: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     platformConfig: js.Any = null,
-    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    prev: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     purgeAllListeners: () => Unit = null,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    radioCls: /* className */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    query: /* selector */ js.UndefOr[String] => Array = null,
+    radioCls: /* className */ js.UndefOr[js.Any] => IElement = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     remove: () => Unit = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeAllListeners: () => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeCls: (/* names */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => IElement = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    repaint: () => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    replace: /* element */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    replaceCls: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    replaceWith: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    repaint: () => IElement = null,
+    replace: /* element */ js.UndefOr[js.Any] => IElement = null,
+    replaceCls: (/* oldName */ js.UndefOr[String], /* newName */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => IElement = null,
+    replaceWith: /* el */ js.UndefOr[js.Any] => IElement = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
-    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
-    set: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setBottom: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setBox: /* box */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => String = null,
+    set: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => IElement = null,
+    setBottom: /* bottom */ js.UndefOr[String] => IElement = null,
+    setBox: /* box */ js.UndefOr[js.Any] => IElement = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setCls: /* className */ js.UndefOr[js.Any] => Unit = null,
-    setHTML: /* html */ js.UndefOr[java.lang.String] => Unit = null,
-    setHeight: /* height */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setHtml: /* html */ js.UndefOr[java.lang.String] => Unit = null,
-    setLeft: /* left */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    setHTML: /* html */ js.UndefOr[String] => Unit = null,
+    setHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setHtml: /* html */ js.UndefOr[String] => Unit = null,
+    setLeft: /* left */ js.UndefOr[String] => IElement = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMaxHeight: /* height */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setMaxWidth: /* width */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setMinHeight: /* height */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setMinWidth: /* width */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setRight: /* right */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setTop: /* top */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    setMaxHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setMaxWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    setMinHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setMinWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    setRight: /* right */ js.UndefOr[String] => IElement = null,
+    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IElement = null,
+    setTop: /* top */ js.UndefOr[String] => IElement = null,
     setTopLeft: () => Unit = null,
-    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setVisible: /* visible */ js.UndefOr[Boolean] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setWidth: /* width */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setX: /* x */ js.UndefOr[Double] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setXY: /* pos */ js.UndefOr[Array] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setY: /* y */ js.UndefOr[Double] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => IElement = null,
+    setVisible: /* visible */ js.UndefOr[Boolean] => IElement = null,
+    setWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    setX: /* x */ js.UndefOr[Double] => IElement = null,
+    setXY: /* pos */ js.UndefOr[Array] => IElement = null,
+    setY: /* y */ js.UndefOr[Double] => IElement = null,
     show: () => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    toggleCls: /* className */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    toggleCls: /* className */ js.UndefOr[String] => IElement = null,
     translatePoints: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => _ = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unmask: () => Unit = null,
-    up: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any]) => _ = null,
-    update: /* html */ js.UndefOr[java.lang.String] => Unit = null,
+    up: (/* simpleSelector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any]) => _ = null,
+    update: /* html */ js.UndefOr[String] => Unit = null,
     uses: Array = null,
     wrap: (/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[Boolean]) => _ = null
   ): IElement = {

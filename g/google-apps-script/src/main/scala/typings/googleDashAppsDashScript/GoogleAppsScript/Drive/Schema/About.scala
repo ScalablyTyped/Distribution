@@ -32,7 +32,7 @@ trait About extends js.Object {
   var rootFolderId: js.UndefOr[String] = js.undefined
   var selfLink: js.UndefOr[String] = js.undefined
   var teamDriveThemes: js.UndefOr[js.Array[AboutTeamDriveThemes]] = js.undefined
-  var user: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
+  var user: js.UndefOr[User] = js.undefined
 }
 
 object About {
@@ -65,7 +65,7 @@ object About {
     rootFolderId: String = null,
     selfLink: String = null,
     teamDriveThemes: js.Array[AboutTeamDriveThemes] = null,
-    user: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User = null
+    user: User = null
   ): About = {
     val __obj = js.Dynamic.literal()
     if (additionalRoleInfo != null) __obj.updateDynamic("additionalRoleInfo")(additionalRoleInfo.asInstanceOf[js.Any])

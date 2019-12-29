@@ -4,8 +4,8 @@ import typings.moment.momentMod.Moment
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
 import typings.react.reactMod.SyntheticEvent
-import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineNumbers.`false`
-import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineNumbers.`true`
+import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineBooleans.`false`
+import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineBooleans.`true`
 import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineStrings.both
 import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineStrings.left
 import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineStrings.move

@@ -15,7 +15,8 @@ class FaxDevice protected () extends js.Object {
   var Description: String = js.native
   /** Device name */
   val DeviceName: String = js.native
-  var `FAXCOMEXLib.FaxDevice_typekey`: FaxDevice = js.native
+  @JSName("FAXCOMEXLib.FaxDevice_typekey")
+  var FAXCOMEXLibDotFaxDevice_typekey: FaxDevice = js.native
   /** Unique device ID */
   val Id: Double = js.native
   /** Is the device is turned off */

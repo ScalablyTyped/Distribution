@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcOperationsExecutorsBasicUnderscoreMathUnderscoreExecutorMod extends js.Object {
   val CATEGORY: basic_math = js.native
-  var executeOp: InternalOpExecutor = js.native
+  val executeOp: InternalOpExecutor = js.native
 }
 

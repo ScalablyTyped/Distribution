@@ -1,19 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.AggregationFunction.automatic
-import typings.officeDashJs.Excel.AggregationFunction.average
-import typings.officeDashJs.Excel.AggregationFunction.count
-import typings.officeDashJs.Excel.AggregationFunction.countNumbers
-import typings.officeDashJs.Excel.AggregationFunction.max
-import typings.officeDashJs.Excel.AggregationFunction.min
-import typings.officeDashJs.Excel.AggregationFunction.product
-import typings.officeDashJs.Excel.AggregationFunction.standardDeviation
-import typings.officeDashJs.Excel.AggregationFunction.standardDeviationP
-import typings.officeDashJs.Excel.AggregationFunction.sum
-import typings.officeDashJs.Excel.AggregationFunction.unknown
-import typings.officeDashJs.Excel.AggregationFunction.variance
-import typings.officeDashJs.Excel.AggregationFunction.varianceP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

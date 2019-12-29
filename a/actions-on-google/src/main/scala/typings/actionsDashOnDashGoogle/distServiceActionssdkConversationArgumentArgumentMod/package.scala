@@ -13,7 +13,6 @@ package object distServiceActionssdkConversationArgumentArgumentMod {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - `js.undefined`
-    - scala.Nothing
     - typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2DateTime
     - typings.actionsDashOnDashGoogle.distCommonMod.ApiClientObjectMap[js.Any]
     - scala.Boolean

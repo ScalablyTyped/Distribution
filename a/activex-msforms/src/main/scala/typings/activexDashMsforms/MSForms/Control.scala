@@ -17,7 +17,8 @@ class Control protected () extends js.Object {
   var InSelection: Boolean = js.native
   val LayoutEffect: fmLayoutEffect = js.native
   var Left: Double = js.native
-  var `MSForms.Control_typekey`: Control = js.native
+  @JSName("MSForms.Control_typekey")
+  var MSFormsDotControl_typekey: Control = js.native
   var Name: String = js.native
   val Object: js.Any = js.native
   val OldHeight: Double = js.native

@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.androidOnARM
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.iOSOnARM
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.osx
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windows
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsMobile7
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsOnARM
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone81OnARM
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone81OnX86
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone8OnARM
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone8OnX86
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.xboxOnPPC
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.xboxOne
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

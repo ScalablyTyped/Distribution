@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.backboneMod.Model
 import typings.backboneDotMarionette.Anon_BehaviorClass
-import typings.backboneDotMarionette.backboneDotMarionetteNumbers.`false`
+import typings.backboneDotMarionette.backboneDotMarionetteBooleans.`false`
 import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js

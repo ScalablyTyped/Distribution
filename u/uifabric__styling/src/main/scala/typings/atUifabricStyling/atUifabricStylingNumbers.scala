@@ -35,9 +35,6 @@ object atUifabricStylingNumbers {
   @js.native
   sealed trait `768` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -58,7 +55,5 @@ object atUifabricStylingNumbers {
   def `640`: `640` = 640.asInstanceOf[`640`]
   @scala.inline
   def `768`: `768` = 768.asInstanceOf[`768`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

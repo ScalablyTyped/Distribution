@@ -5,7 +5,6 @@ import typings.react.reactMod.ComponentProps
 import typings.react.reactMod.Context
 import typings.react.reactMod.ContextType
 import typings.reactDashNavigation.reactDashNavigationMod.SupportedThemes
-import typings.reactDashNavigationDashStack.libTypescriptViewsHeaderHeaderTitleMod.HeaderTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

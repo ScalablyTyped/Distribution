@@ -1,16 +1,6 @@
 package typings.postmark
 
 import org.scalablytyped.runtime.TopLevel
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames.ACCOUNT_TOKEN
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.DELETE
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.GET
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.HEAD
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.OPTIONS
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.POST
-import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.PUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

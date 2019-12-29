@@ -12,6 +12,7 @@ class TableOfAuthoritiesCategory protected () extends js.Object {
   val Index: Double = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.TableOfAuthoritiesCategory_typekey`: TableOfAuthoritiesCategory = js.native
+  @JSName("Word.TableOfAuthoritiesCategory_typekey")
+  var WordDotTableOfAuthoritiesCategory_typekey: TableOfAuthoritiesCategory = js.native
 }
 

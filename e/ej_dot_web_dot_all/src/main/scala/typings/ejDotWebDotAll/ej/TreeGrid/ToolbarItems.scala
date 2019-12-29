@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.Add
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.Cancel
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.CollapseAll
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.Delete
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.Edit
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.ExcelExport
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.ExpandAll
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.PdfExport
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.Search
-import typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -92,8 +82,7 @@ object ToolbarItems extends js.Object {
   object PdfExport extends TopLevel[PdfExport with Double]
   
   /* 9 */ @js.native
-  object Print
-    extends TopLevel[typings.ejDotWebDotAll.ej.TreeGrid.ToolbarItems.Print with Double]
+  object Print extends TopLevel[Print with Double]
   
   /* 10 */ @js.native
   object Search extends TopLevel[Search with Double]

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.alreadyPurchased
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notFulfilled
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notPurchased
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

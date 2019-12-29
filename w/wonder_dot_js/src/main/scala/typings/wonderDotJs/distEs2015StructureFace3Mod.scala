@@ -1,7 +1,6 @@
 package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015MathVector3Mod.Vector3
-import typings.wonderDotJs.distEs2015StructureFace3Mod.Face3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

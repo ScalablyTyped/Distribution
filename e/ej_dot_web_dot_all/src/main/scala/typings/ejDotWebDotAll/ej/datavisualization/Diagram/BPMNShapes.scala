@@ -1,13 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNShapes.Activity
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNShapes.DataObject
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNShapes.DataSource
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNShapes.Event
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNShapes.Gateway
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNShapes.Group
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNShapes.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

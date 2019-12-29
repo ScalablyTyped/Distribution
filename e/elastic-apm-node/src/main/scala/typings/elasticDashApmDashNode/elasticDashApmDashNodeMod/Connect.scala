@@ -1,6 +1,5 @@
 package typings.elasticDashApmDashNode.elasticDashApmDashNodeMod
 
-import typings.elasticDashApmDashNode.elasticDashApmDashNodeMod.Connect.NextFunction
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js

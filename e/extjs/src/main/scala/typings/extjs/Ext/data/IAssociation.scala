@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation._
 
 trait IAssociation extends IBase {
   /** [Config Option] (String) */
-  var associatedModel: js.UndefOr[java.lang.String] = js.undefined
+  var associatedModel: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var associatedName: js.UndefOr[java.lang.String] = js.undefined
+  var associatedName: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var associationKey: js.UndefOr[java.lang.String] = js.undefined
+  var associationKey: js.UndefOr[String] = js.undefined
   /** [Method] Get a specialized reader for reading associated data
   		* @returns Ext.data.reader.Reader The reader, null if not supplied
   		*/
   var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.undefined
   /** [Config Option] (String) */
-  var model: js.UndefOr[java.lang.String] = js.undefined
+  var model: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var ownerModel: js.UndefOr[java.lang.String] = js.undefined
+  var ownerModel: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var ownerName: js.UndefOr[java.lang.String] = js.undefined
+  var ownerName: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var primaryKey: js.UndefOr[java.lang.String] = js.undefined
+  var primaryKey: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.data.reader.Reader) */
   var reader: js.UndefOr[typings.extjs.Ext.data.reader.IReader] = js.undefined
 }
@@ -35,23 +35,23 @@ object IAssociation {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    associatedModel: java.lang.String = null,
-    associatedName: java.lang.String = null,
-    associationKey: java.lang.String = null,
+    associatedModel: String = null,
+    associatedName: String = null,
+    associationKey: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getReader: () => typings.extjs.Ext.data.reader.IReader = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IAssociation = null,
     mixins: js.Any = null,
-    model: java.lang.String = null,
-    ownerModel: java.lang.String = null,
-    ownerName: java.lang.String = null,
-    primaryKey: java.lang.String = null,
+    model: String = null,
+    ownerModel: String = null,
+    ownerName: String = null,
+    primaryKey: String = null,
     reader: typings.extjs.Ext.data.reader.IReader = null,
     requires: Array = null,
     self: IClass = null,

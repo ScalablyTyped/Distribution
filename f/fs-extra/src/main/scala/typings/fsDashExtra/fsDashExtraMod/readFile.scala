@@ -73,18 +73,14 @@ object readFile extends js.Object {
   def apply(
     path: Double,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     path: Double,
     options: String,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
-  def apply(
-    path: Double,
-    options: Null,
-    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
-  ): Unit = js.native
+  def apply(path: Double, options: Null, callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]): Unit = js.native
   def apply(
     path: Double,
     options: Anon_EncodingFlagNull,
@@ -109,17 +105,17 @@ object readFile extends js.Object {
   def apply(
     path: PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: String,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: Null,
-    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously reads the entire contents of a file.

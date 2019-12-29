@@ -1,10 +1,10 @@
 package typings.bignumberDotJs.bignumberDotJsMod
 
+import typings.bignumberDotJs.bignumberDotJsBooleans.`true`
 import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.Format
 import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.Instance
 import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.RoundingMode
 import typings.bignumberDotJs.bignumberDotJsMod.BigNumber.Value
-import typings.bignumberDotJs.bignumberDotJsNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

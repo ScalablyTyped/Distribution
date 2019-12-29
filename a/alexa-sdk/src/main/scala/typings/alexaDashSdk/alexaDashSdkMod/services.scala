@@ -1,6 +1,5 @@
 package typings.alexaDashSdk.alexaDashSdkMod
 
-import typings.alexaDashSdk.alexaDashSdkMod.services.ApiClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.MoveOperations.allowBrokenThickets
-import typings.sharepoint.SP.MoveOperations.bypassApprovePermission
-import typings.sharepoint.SP.MoveOperations.none
-import typings.sharepoint.SP.MoveOperations.overwrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

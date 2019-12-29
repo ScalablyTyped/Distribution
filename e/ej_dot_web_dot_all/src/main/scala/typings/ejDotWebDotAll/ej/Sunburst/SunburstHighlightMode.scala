@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstHighlightMode.All
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstHighlightMode.Child
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstHighlightMode.Parent
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstHighlightMode.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

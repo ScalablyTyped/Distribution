@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotSchemaDesigner
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotSchemaDesigner.Layouts.Excel
-import typings.ejDotWebDotAll.ej.PivotSchemaDesigner.Layouts.Normal
-import typings.ejDotWebDotAll.ej.PivotSchemaDesigner.Layouts.OneByOne
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

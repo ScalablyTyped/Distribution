@@ -1,25 +1,33 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.active
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cancel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.complete
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.move
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.reshape
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.start
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.transform
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SketchViewModelUpdateEvent extends js.Object {
   var graphics: js.Array[Graphic]
-  var state: String
-  var tool: String
+  var state: start | active | complete | cancel
+  var tool: move | transform | reshape
   var toolEventInfo: UpdateToolEventInfo
-  var `type`: String
+  var `type`: update
 }
 
 object SketchViewModelUpdateEvent {
   @scala.inline
   def apply(
     graphics: js.Array[Graphic],
-    state: String,
-    tool: String,
+    state: start | active | complete | cancel,
+    tool: move | transform | reshape,
     toolEventInfo: UpdateToolEventInfo,
-    `type`: String
+    `type`: update
   ): SketchViewModelUpdateEvent = {
     val __obj = js.Dynamic.literal(graphics = graphics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], toolEventInfo = toolEventInfo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

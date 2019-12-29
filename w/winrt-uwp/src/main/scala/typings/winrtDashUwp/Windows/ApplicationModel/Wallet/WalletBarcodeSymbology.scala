@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.aztec
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.code128
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.code39
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.custom
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.ean13
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.ean8
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.invalid
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.itf
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.pdf417
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.qr
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.upca
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.upce
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,8 @@ class Field protected () extends js.Object {
   val CollatingOrder: Double = js.native
   val CollectionIndex: Double = js.native
   val ComplexType: typings.activexDashDao.DAO.ComplexType = js.native
-  var `DAO.Field2_typekey`: Field = js.native
+  @JSName("DAO.Field2_typekey")
+  var DAODotField2_typekey: Field = js.native
   val DataUpdatable: Boolean = js.native
   var DefaultValue: js.Any = js.native
   var Expression: String = js.native

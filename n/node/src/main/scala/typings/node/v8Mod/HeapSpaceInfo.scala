@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait HeapSpaceInfo extends js.Object {
   var physical_space_size: Double
   var space_available_size: Double
-  var space_name: java.lang.String
+  var space_name: String
   var space_size: Double
   var space_used_size: Double
 }
@@ -17,7 +17,7 @@ object HeapSpaceInfo {
   def apply(
     physical_space_size: Double,
     space_available_size: Double,
-    space_name: java.lang.String,
+    space_name: String,
     space_size: Double,
     space_used_size: Double
   ): HeapSpaceInfo = {

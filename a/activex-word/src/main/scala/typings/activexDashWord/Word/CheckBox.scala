@@ -15,6 +15,7 @@ class CheckBox protected () extends js.Object {
   var Size: Double = js.native
   val Valid: Boolean = js.native
   var Value: Boolean = js.native
-  var `Word.CheckBox_typekey`: CheckBox = js.native
+  @JSName("Word.CheckBox_typekey")
+  var WordDotCheckBox_typekey: CheckBox = js.native
 }
 

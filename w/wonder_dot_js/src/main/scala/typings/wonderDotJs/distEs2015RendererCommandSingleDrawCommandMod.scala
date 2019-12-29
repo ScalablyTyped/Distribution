@@ -2,7 +2,6 @@ package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015MathMatrix3Mod.Matrix3
 import typings.wonderDotJs.distEs2015RendererCommandQuadCommandMod.QuadCommand
-import typings.wonderDotJs.distEs2015RendererCommandSingleDrawCommandMod.SingleDrawCommand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

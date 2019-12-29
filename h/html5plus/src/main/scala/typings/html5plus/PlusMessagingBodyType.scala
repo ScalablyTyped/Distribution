@@ -17,22 +17,24 @@ trait PlusMessagingBodyType extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
     */
-  var `text/html`: js.UndefOr[String] = js.undefined
+  @JSName("text/html")
+  var textSlashhtml: js.UndefOr[String] = js.undefined
   /**
     * 文本类型
     * 纯文本类型消息体内容，默认消息体内容类型。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
     */
-  var `text/plain`: js.UndefOr[String] = js.undefined
+  @JSName("text/plain")
+  var textSlashplain: js.UndefOr[String] = js.undefined
 }
 
 object PlusMessagingBodyType {
   @scala.inline
-  def apply(`text/html`: String = null, `text/plain`: String = null): PlusMessagingBodyType = {
+  def apply(textSlashhtml: String = null, textSlashplain: String = null): PlusMessagingBodyType = {
     val __obj = js.Dynamic.literal()
-    if (`text/html` != null) __obj.updateDynamic("text/html")(`text/html`.asInstanceOf[js.Any])
-    if (`text/plain` != null) __obj.updateDynamic("text/plain")(`text/plain`.asInstanceOf[js.Any])
+    if (textSlashhtml != null) __obj.updateDynamic("text/html")(textSlashhtml.asInstanceOf[js.Any])
+    if (textSlashplain != null) __obj.updateDynamic("text/plain")(textSlashplain.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMessagingBodyType]
   }
 }

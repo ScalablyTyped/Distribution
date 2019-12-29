@@ -1,11 +1,6 @@
 package typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models
 
 import org.scalablytyped.runtime.TopLevel
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Available
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Limited
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Renaming
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Restoring
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

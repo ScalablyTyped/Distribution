@@ -19,7 +19,7 @@ trait AjaxErrorEventArgs extends js.Object {
   var item: js.UndefOr[js.Any] = js.undefined
   /** returns the model value of the control.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ListView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the current item text.
     */
   var text: js.UndefOr[String] = js.undefined
@@ -38,7 +38,7 @@ object AjaxErrorEventArgs {
     errorThrown: js.Any = null,
     index: Int | Double = null,
     item: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.ListView.Model = null,
+    model: Model = null,
     text: String = null,
     textStatus: js.Any = null,
     `type`: String = null

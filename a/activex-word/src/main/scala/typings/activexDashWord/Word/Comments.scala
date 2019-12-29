@@ -12,7 +12,8 @@ class Comments protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   var ShowBy: String = js.native
-  var `Word.Comments_typekey`: Comments = js.native
+  @JSName("Word.Comments_typekey")
+  var WordDotComments_typekey: Comments = js.native
   def Add(Range: Range): Comment = js.native
   def Add(Range: Range, Text: js.Any): Comment = js.native
   def Item(Index: Double): Comment = js.native

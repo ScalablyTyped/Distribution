@@ -11,7 +11,8 @@ class PivotLayout protected () extends js.Object {
   val Creator: XlCreator = js.native
   @JSName("CubeFields")
   val CubeFields_Original: CubeFields = js.native
-  var `Excel.PivotLayout_typekey`: PivotLayout = js.native
+  @JSName("Excel.PivotLayout_typekey")
+  var ExcelDotPivotLayout_typekey: PivotLayout = js.native
   var InnerDetail: String = js.native
   val Parent: js.Any = js.native
   val PivotCache: typings.activexDashExcel.Excel.PivotCache = js.native

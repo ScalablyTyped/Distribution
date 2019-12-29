@@ -22,7 +22,6 @@ import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcShelvesetRef
 import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcShelvesetRequestData
 import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionDescriptor
 import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType
-import typings.vsoDashNodeDashApi.tfvcApiMod.ITfvcApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

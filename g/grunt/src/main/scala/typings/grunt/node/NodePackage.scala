@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
   * {@link http://npmjs.org/doc/json.html}
   */
 trait NodePackage extends js.Object {
-  var description: js.UndefOr[java.lang.String] = js.undefined
-  var homepage: js.UndefOr[java.lang.String] = js.undefined
-  var keywords: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var name: java.lang.String
-  var version: java.lang.String
+  var description: js.UndefOr[String] = js.undefined
+  var homepage: js.UndefOr[String] = js.undefined
+  var keywords: js.UndefOr[js.Array[String]] = js.undefined
+  var name: String
+  var version: String
 }
 
 object NodePackage {
   @scala.inline
   def apply(
-    name: java.lang.String,
-    version: java.lang.String,
-    description: java.lang.String = null,
-    homepage: java.lang.String = null,
-    keywords: js.Array[java.lang.String] = null
+    name: String,
+    version: String,
+    description: String = null,
+    homepage: String = null,
+    keywords: js.Array[String] = null
   ): NodePackage = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLCanvasElement")
 @js.native
 class IHTMLCanvasElement protected () extends js.Object {
-  var `MSHTML.IHTMLCanvasElement_typekey`: IHTMLCanvasElement = js.native
+  @JSName("MSHTML.IHTMLCanvasElement_typekey")
+  var MSHTMLDotIHTMLCanvasElement_typekey: IHTMLCanvasElement = js.native
   var height: Double = js.native
   var width: Double = js.native
   def getContext(contextId: String): ICanvasRenderingContext2D = js.native

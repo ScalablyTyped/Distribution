@@ -37,6 +37,7 @@ class LauncherModel ()
     * It is undefined behavior to use any functionality of the object
     * after it has been disposed unless otherwise explicitly noted.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
   /**

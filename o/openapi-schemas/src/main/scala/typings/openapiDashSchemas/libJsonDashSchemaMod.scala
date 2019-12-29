@@ -1,7 +1,6 @@
 package typings.openapiDashSchemas
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openapiDashSchemas.libJsonDashSchemaMod.JsonSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

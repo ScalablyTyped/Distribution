@@ -13,8 +13,8 @@ trait HelperOptions extends js.Object {
   @JSName("inverse")
   var inverse_Original: TemplateDelegate[_] = js.native
   def fn(context: js.Any): String = js.native
-  def fn(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String = js.native
+  def fn(context: js.Any, options: RuntimeOptions): String = js.native
   def inverse(context: js.Any): String = js.native
-  def inverse(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String = js.native
+  def inverse(context: js.Any, options: RuntimeOptions): String = js.native
 }
 

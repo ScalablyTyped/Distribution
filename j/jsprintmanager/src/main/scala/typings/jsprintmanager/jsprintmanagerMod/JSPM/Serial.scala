@@ -1,20 +1,6 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.None
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.RequestToSend
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.RequestToSendXOnXOff
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.XOnXOff
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Even
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Mark
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Odd
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Space
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.One
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.OnePointFive
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.Two
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,8 +73,7 @@ object Serial extends js.Object {
     object Mark extends TopLevel[Mark with Double]
     
     /* 0 */ @js.native
-    object None
-      extends TopLevel[typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.None with Double]
+    object None extends TopLevel[None with Double]
     
     /* 1 */ @js.native
     object Odd extends TopLevel[Odd with Double]
@@ -115,8 +100,7 @@ object Serial extends js.Object {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[StopBits with Double] = js.native
     /* 0 */ @js.native
-    object None
-      extends TopLevel[typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.None with Double]
+    object None extends TopLevel[None with Double]
     
     /* 1 */ @js.native
     object One extends TopLevel[One with Double]

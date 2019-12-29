@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.layout
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.layout.SideContentFallDown.BelowL
-import typings.openui5.sap.ui.layout.SideContentFallDown.BelowM
-import typings.openui5.sap.ui.layout.SideContentFallDown.BelowXL
-import typings.openui5.sap.ui.layout.SideContentFallDown.OnMinimumWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

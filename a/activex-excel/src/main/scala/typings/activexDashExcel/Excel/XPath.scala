@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class XPath protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.XPath_typekey`: XPath = js.native
+  @JSName("Excel.XPath_typekey")
+  var ExcelDotXPath_typekey: XPath = js.native
   val Map: XmlMap = js.native
   val Parent: js.Any = js.native
   val Repeating: Boolean = js.native

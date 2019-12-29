@@ -1,6 +1,6 @@
 package typings.expect.buildUtilsMod
 
-import typings.expect.expectNumbers.`false`
+import typings.expect.expectBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -25,7 +25,8 @@ class Frameset protected () extends js.Object {
   val Type: WdFramesetType = js.native
   var Width: Double = js.native
   var WidthType: WdFramesetSizeType = js.native
-  var `Word.Frameset_typekey`: Frameset = js.native
+  @JSName("Word.Frameset_typekey")
+  var WordDotFrameset_typekey: Frameset = js.native
   def AddNewFrame(Where: WdFramesetNewFrameLocation): Frameset = js.native
   def ChildFramesetItem(Index: Double): Frameset = js.native
   def Delete(): Unit = js.native

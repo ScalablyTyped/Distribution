@@ -1,7 +1,6 @@
 package typings.xhrDashMock
 
 import typings.xhrDashMock.libMockHeadersMod.MockHeaders
-import typings.xhrDashMock.libMockResponseMod.MockResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

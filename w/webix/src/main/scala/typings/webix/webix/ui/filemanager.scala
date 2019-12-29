@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("webix.ui.filemanager")
 @js.native
 class filemanager () extends baseview {
-  @JSName("$$")
-  var $$: js.Any = js.native
   @JSName("$dropAllow")
   var $dropAllow_Original: WebixCallback = js.native
+  @JSName("$$")
+  var DollarDollar: js.Any = js.native
   @JSName("config")
   var config_filemanager: filemanagerConfig = js.native
   var data: DataStore = js.native

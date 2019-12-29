@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomCenter
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomLeft
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomRight
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.MiddleLeft
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.MiddleRight
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopCenter
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopLeft
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

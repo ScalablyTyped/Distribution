@@ -10,7 +10,8 @@ class NavigationGroups protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.NavigationGroups_typekey`: NavigationGroups = js.native
+  @JSName("Outlook.NavigationGroups_typekey")
+  var OutlookDotNavigationGroups_typekey: NavigationGroups = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Create(GroupDisplayName: String): NavigationGroup = js.native

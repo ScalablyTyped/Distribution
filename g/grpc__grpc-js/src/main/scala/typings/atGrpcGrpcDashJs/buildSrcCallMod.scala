@@ -5,10 +5,6 @@ import typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.metadata
 import typings.atGrpcGrpcDashJs.atGrpcGrpcDashJsStrings.status
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Call
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject
-import typings.atGrpcGrpcDashJs.buildSrcCallMod.ClientReadableStream
-import typings.atGrpcGrpcDashJs.buildSrcCallMod.ClientWritableStream
-import typings.atGrpcGrpcDashJs.buildSrcCallMod.ServiceError
-import typings.atGrpcGrpcDashJs.buildSrcCallMod.SurfaceCall
 import typings.atGrpcGrpcDashJs.buildSrcEventsMod.EmitterAugmentation1
 import typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata
 import typings.atGrpcGrpcDashJs.buildSrcObjectDashStreamMod.IntermediateObjectReadable
@@ -81,9 +77,7 @@ object buildSrcCallMod extends js.Object {
       listener: js.Function1[Metadata | ResponseType | StatusObject, Unit]
     ): this.type = js.native
     /* InferMemberOverrides */
-    /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
     /* CompleteClass */
@@ -146,9 +140,7 @@ object buildSrcCallMod extends js.Object {
       listener: js.Function1[Metadata | ResponseType | StatusObject, Unit]
     ): this.type = js.native
     /* InferMemberOverrides */
-    /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
     /* CompleteClass */

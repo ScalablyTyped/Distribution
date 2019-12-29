@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Boolean
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.DateTime
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Double
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Integer
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.PlainText
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.String
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.TreePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

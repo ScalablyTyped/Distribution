@@ -1,10 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.TableWidthUnitType.Auto
-import typings.devexpressDashWeb.TableWidthUnitType.FiftiethsOfPercent
-import typings.devexpressDashWeb.TableWidthUnitType.ModelUnits
-import typings.devexpressDashWeb.TableWidthUnitType.Nil
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

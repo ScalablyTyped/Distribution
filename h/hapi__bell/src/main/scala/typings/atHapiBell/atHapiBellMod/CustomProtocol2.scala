@@ -32,11 +32,6 @@ trait CustomProtocol2 extends CustomProtocol {
     * Defaults to false.
     */
   var useParamsAuth: js.UndefOr[Boolean] = js.native
-  def profile(
-    `this`: CustomProviderOptions,
-    credentials: Credentials2,
-    params: StringDictionary[String],
-    get: AuthedRequest
-  ): js.Promise[Unit] = js.native
+  def profile(credentials: Credentials2, params: StringDictionary[String], get: AuthedRequest): js.Promise[Unit] = js.native
 }
 

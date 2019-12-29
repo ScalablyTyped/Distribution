@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.redux.reduxMod.Action
 import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Reducer
-import typings.reduxDashSeamlessDashImmutable.reduxDashSeamlessDashImmutableMod.SeamlessReducers
 import typings.seamlessDashImmutable.seamlessDashImmutableMod.Immutable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

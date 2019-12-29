@@ -18,7 +18,8 @@ class OLEObject protected () extends js.Object {
   val BottomRightCell_Original: Range = js.native
   val Creator: XlCreator = js.native
   var Enabled: Boolean = js.native
-  var `Excel.OLEObject_typekey`: OLEObject = js.native
+  @JSName("Excel.OLEObject_typekey")
+  var ExcelDotOLEObject_typekey: OLEObject = js.native
   var Height: Double = js.native
   val Index: Double = js.native
   val Interior: typings.activexDashExcel.Excel.Interior = js.native

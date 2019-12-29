@@ -16,7 +16,7 @@ trait Model extends js.Object {
   var ajaxLoad: js.UndefOr[js.Function1[/* e */ AjaxLoadEventArgs, Unit]] = js.undefined
   /** Specifies the ajaxSettings option to load the content to the Tab control.
     */
-  var ajaxSettings: js.UndefOr[typings.ejDotWebDotAll.ej.Tab.AjaxSettings] = js.undefined
+  var ajaxSettings: js.UndefOr[AjaxSettings] = js.undefined
   /** Triggered after a tab item activated.
     */
   var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
@@ -140,7 +140,7 @@ object Model {
     ajaxBeforeLoad: /* e */ AjaxBeforeLoadEventArgs => Unit = null,
     ajaxError: /* e */ AjaxErrorEventArgs => Unit = null,
     ajaxLoad: /* e */ AjaxLoadEventArgs => Unit = null,
-    ajaxSettings: typings.ejDotWebDotAll.ej.Tab.AjaxSettings = null,
+    ajaxSettings: AjaxSettings = null,
     ajaxSuccess: /* e */ AjaxSuccessEventArgs => Unit = null,
     allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     beforeActive: /* e */ BeforeActiveEventArgs => Unit = null,

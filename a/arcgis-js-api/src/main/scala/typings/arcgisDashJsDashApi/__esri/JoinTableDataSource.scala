@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`join-table`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`left-inner-join`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`left-outer-join`
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -18,7 +21,7 @@ trait JoinTableDataSource extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var joinType: String
+  var joinType: `left-outer-join` | `left-inner-join`
   /**
     * The field name used for joining or matching records in the left table to records in the right table.
     *
@@ -48,7 +51,7 @@ trait JoinTableDataSource extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var `type`: String
+  var `type`: `join-table`
 }
 
 object JoinTableDataSource {
@@ -56,13 +59,13 @@ object JoinTableDataSource {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    joinType: String,
+    joinType: `left-outer-join` | `left-inner-join`,
     leftTableKey: String,
     leftTableSource: DynamicMapLayer | DynamicDataLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     rightTableKey: String,
     rightTableSource: DynamicMapLayer | DynamicDataLayer,
-    `type`: String
+    `type`: `join-table`
   ): JoinTableDataSource = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), joinType = joinType.asInstanceOf[js.Any], leftTableKey = leftTableKey.asInstanceOf[js.Any], leftTableSource = leftTableSource.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rightTableKey = rightTableKey.asInstanceOf[js.Any], rightTableSource = rightTableSource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

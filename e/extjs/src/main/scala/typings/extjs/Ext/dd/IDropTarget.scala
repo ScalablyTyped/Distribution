@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 
 trait IDropTarget extends IDDTarget {
   /** [Config Option] (String) */
-  var ddGroup: js.UndefOr[java.lang.String] = js.undefined
+  var ddGroup: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dropAllowed: js.UndefOr[java.lang.String] = js.undefined
+  var dropAllowed: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dropNotAllowed: js.UndefOr[java.lang.String] = js.undefined
+  var dropNotAllowed: js.UndefOr[String] = js.undefined
   /** [Method] The function a Ext dd DragSource calls once to notify this drop target that the dragged item has been dropped on it
   		* @param source Ext.dd.DragSource The drag source that was dragged over this drop target
   		* @param e Event The event
@@ -40,7 +40,7 @@ trait IDropTarget extends IDDTarget {
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
       /* data */ js.UndefOr[js.Any], 
-      java.lang.String
+      String
     ]
   ] = js.undefined
   /** [Method] The function a Ext dd DragSource calls once to notify this drop target that the source has been dragged out of the ta
@@ -67,20 +67,20 @@ trait IDropTarget extends IDDTarget {
       /* source */ js.UndefOr[IDragSource], 
       /* e */ js.UndefOr[Event], 
       /* data */ js.UndefOr[js.Any], 
-      java.lang.String
+      String
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var overClass: js.UndefOr[java.lang.String] = js.undefined
+  var overClass: js.UndefOr[String] = js.undefined
 }
 
 object IDropTarget {
   @scala.inline
   def apply(
-    addInvalidHandleClass: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
-    addInvalidHandleId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    addInvalidHandleType: /* tagName */ js.UndefOr[java.lang.String] => Unit = null,
-    addToGroup: /* sGroup */ js.UndefOr[java.lang.String] => Unit = null,
+    addInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
+    addInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
+    addInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
+    addToGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     applyConfig: () => Unit = null,
@@ -92,24 +92,24 @@ object IDropTarget {
     clearTicks: () => Unit = null,
     config: js.Any = null,
     constrainTo: (/* constrainTo */ js.UndefOr[js.Any], /* pad */ js.UndefOr[js.Any], /* inContent */ js.UndefOr[Boolean]) => Unit = null,
-    ddGroup: java.lang.String = null,
+    ddGroup: String = null,
     defaultPadding: js.Any = null,
     destroy: () => Unit = null,
-    dropAllowed: java.lang.String = null,
-    dropNotAllowed: java.lang.String = null,
+    dropAllowed: String = null,
+    dropNotAllowed: String = null,
     endDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
-    id: java.lang.String = null,
+    id: String = null,
     ignoreSelf: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    init: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
+    init: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IDropTarget = null,
-    initTarget: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
+    initTarget: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
     invalidHandleClasses: Array = null,
     invalidHandleIds: js.Any = null,
     invalidHandleTypes: js.Any = null,
@@ -121,9 +121,9 @@ object IDropTarget {
     mixins: js.Any = null,
     moveOnly: js.UndefOr[Boolean] = js.undefined,
     notifyDrop: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
-    notifyEnter: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
+    notifyEnter: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String = null,
     notifyOut: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
-    notifyOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
+    notifyOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String = null,
     onAvailable: () => Unit = null,
     onDrag: /* e */ js.UndefOr[Event] => Unit = null,
     onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
@@ -133,27 +133,27 @@ object IDropTarget {
     onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
-    overClass: java.lang.String = null,
+    overClass: String = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
-    removeFromGroup: /* sGroup */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleClass: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleType: /* tagName */ js.UndefOr[java.lang.String] => Unit = null,
+    removeFromGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
     requires: Array = null,
     resetConstraints: /* maintainOffset */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
-    setDragElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    setHandleElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setDragElId: /* id */ js.UndefOr[String] => Unit = null,
+    setHandleElId: /* id */ js.UndefOr[String] => Unit = null,
     setInitPosition: (/* diffX */ js.UndefOr[Double], /* diffY */ js.UndefOr[Double]) => Unit = null,
-    setOuterHandleElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setOuterHandleElId: /* id */ js.UndefOr[String] => Unit = null,
     setPadding: (/* iTop */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iBot */ js.UndefOr[Double], /* iLeft */ js.UndefOr[Double]) => Unit = null,
     setXConstraint: (/* iLeft */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
     setYConstraint: (/* iUp */ js.UndefOr[Double], /* iDown */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     startDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     unlock: () => Unit = null,
     unreg: () => Unit = null,
     uses: Array = null,

@@ -1,10 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.bottom
-import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.end
-import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.start
-import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

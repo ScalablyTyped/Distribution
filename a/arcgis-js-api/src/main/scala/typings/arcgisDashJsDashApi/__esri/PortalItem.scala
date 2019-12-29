@@ -1,7 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`array-buffer`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`null`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.admin
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.blob
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.document
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.json
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.text
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.update
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xml
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -96,7 +104,7 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#itemControl)
     */
-  val itemControl: String = js.native
+  val itemControl: admin | update | `null` = js.native
   /**
     * The URL to the item.
     *
@@ -250,8 +258,8 @@ trait PortalItem
     * @param rating Rating to set for the item. Rating must be a number between 1.0 and 5.0.
     *
     */
-  def addRating(rating: Double): IPromise[PortalRating] = js.native
-  def addRating(rating: PortalRating): IPromise[PortalRating] = js.native
+  def addRating(rating: Double): js.Promise[PortalRating] = js.native
+  def addRating(rating: PortalRating): js.Promise[PortalRating] = js.native
   /**
     * Deletes a rating for the specified item.
     *
@@ -259,20 +267,42 @@ trait PortalItem
     *
     *
     */
-  def deleteRating(): IPromise[_] = js.native
+  def deleteRating(): js.Promise[_] = js.native
   /**
     * Requests a PortalItem in the format specified in `responseType`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchData)
     *
-    * @param responseType The format of the response. **Possible Values:** json | xml | text | blob | array-buffer | document
+    * @param responseType The format of the response.
     * @param options An object with the following properties.
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def fetchData(): IPromise[_] = js.native
-  def fetchData(responseType: String): IPromise[_] = js.native
-  def fetchData(responseType: String, options: PortalItemFetchDataOptions): IPromise[_] = js.native
+  def fetchData(): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_arraybuffer(responseType: `array-buffer`): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_arraybuffer(responseType: `array-buffer`, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_blob(responseType: blob): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_blob(responseType: blob, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_document(responseType: document): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_document(responseType: document, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_json(responseType: json): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_json(responseType: json, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_text(responseType: text): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_text(responseType: text, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_xml(responseType: xml): js.Promise[_] = js.native
+  @JSName("fetchData")
+  def fetchData_xml(responseType: xml, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
   /**
     * Returns the rating (if any) given to the item.
     *
@@ -282,8 +312,8 @@ trait PortalItem
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def fetchRating(): IPromise[PortalRating] = js.native
-  def fetchRating(options: PortalItemFetchRatingOptions): IPromise[PortalRating] = js.native
+  def fetchRating(): js.Promise[PortalRating] = js.native
+  def fetchRating(options: PortalItemFetchRatingOptions): js.Promise[PortalRating] = js.native
   /**
     * Gets all the related items of a certain relationship type for the portal item. An optional direction can be specified if the direction of the relationship is ambiguous. Otherwise, the service will try to infer it.
     *
@@ -291,13 +321,13 @@ trait PortalItem
     *
     * @param params See the object specifications table below for the parameters that may be passed as properties in this object.
     * @param params.relationshipType The type of relationship between the two items. See [Relationship types](https://developers.arcgis.com/rest/users-groups-and-items/relationship-types.htm) for a complete listing of types.
-    * @param params.direction The direction of the relationship. Can either be `forward` (from origin to destination) or `reverse` (from destination to origin). **Possible Values:** forward | reverse
+    * @param params.direction The direction of the relationship. Can either be `forward` (from origin to destination) or `reverse` (from destination to origin).
     * @param options An object with the following properties.
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams): IPromise[js.Array[PortalItem]] = js.native
-  def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams, options: PortalItemFetchRelatedItemsOptions): IPromise[js.Array[PortalItem]] = js.native
+  def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams): js.Promise[js.Array[PortalItem]] = js.native
+  def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams, options: PortalItemFetchRelatedItemsOptions): js.Promise[js.Array[PortalItem]] = js.native
   /**
     * Get the URL to the thumbnail image for the item.  Available width sizes: 200, 400, 800 and 2400.
     *
@@ -317,8 +347,8 @@ trait PortalItem
     * @param params.data **Optional**. The component used to stream the data represented by the item to the client.
     *
     */
-  def update(): IPromise[PortalItem] = js.native
-  def update(params: PortalItemUpdateParams): IPromise[PortalItem] = js.native
+  def update(): js.Promise[PortalItem] = js.native
+  def update(params: PortalItemUpdateParams): js.Promise[PortalItem] = js.native
   /**
     * Updates the item's thumbnail on the portal.
     *
@@ -326,9 +356,10 @@ trait PortalItem
     *
     * @param params See the object specification table below for the parameters that may be passed as properties in this object.
     * @param params.thumbnail A URL, Data URI, Blob, or File. The accepted formats are `GIF`, `JPG`, and `PNG`.
+    * @param params.filename The file name used for the thumbnail in [thumbnailUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#thumbnailUrl).
     *
     */
-  def updateThumbnail(params: PortalItemUpdateThumbnailParams): IPromise[PortalItem] = js.native
+  def updateThumbnail(params: PortalItemUpdateThumbnailParams): js.Promise[PortalItem] = js.native
 }
 
 @JSGlobal("__esri.PortalItem")

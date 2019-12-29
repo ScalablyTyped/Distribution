@@ -1,10 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.HighlightSpanKind.definition
-import typings.typescript.typescriptMod.HighlightSpanKind.none
-import typings.typescript.typescriptMod.HighlightSpanKind.reference
-import typings.typescript.typescriptMod.HighlightSpanKind.writtenReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

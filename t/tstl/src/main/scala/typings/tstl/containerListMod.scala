@@ -5,7 +5,6 @@ import typings.tstl.baseContainerListContainerMod.ListContainer
 import typings.tstl.baseDisposableIListAlgorithmMod._IListAlgorithm
 import typings.tstl.baseDisposableIPartialContainersMod._IPushBack
 import typings.tstl.baseIteratorListIteratorMod.ListIterator
-import typings.tstl.containerListMod.List
 import typings.tstl.containerListMod.List.Iterator
 import typings.tstl.containerListMod.List.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
@@ -106,7 +105,9 @@ object containerListMod extends js.Object {
     /* InferMemberOverrides */
     override def pop_front(): Unit = js.native
     /**
-      * @inheritDoc
+      * Insert an element at the end.
+      *
+      * @param val Value to insert.
       */
     /* InferMemberOverrides */
     override def push_back(`val`: T): Unit = js.native

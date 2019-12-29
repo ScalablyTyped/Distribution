@@ -16,16 +16,16 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.area
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ares
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.distance
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hectares
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imperial
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measured
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measuring
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
@@ -59,7 +59,7 @@ trait MeasurementViewModel extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement-MeasurementViewModel.html#linearUnit)
     */
-  var linearUnit: metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers = js.native
+  var linearUnit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_ = js.native
   /**
     * The ViewModel's state.
     *

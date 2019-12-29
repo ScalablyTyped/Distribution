@@ -24,6 +24,7 @@ class ChartFont protected () extends js.Object {
   var Subscript: js.Any = js.native
   var Superscript: js.Any = js.native
   var Underline: js.Any = js.native
-  var `Word.ChartFont_typekey`: ChartFont = js.native
+  @JSName("Word.ChartFont_typekey")
+  var WordDotChartFont_typekey: ChartFont = js.native
 }
 

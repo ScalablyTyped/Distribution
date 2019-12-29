@@ -10,3 +10,10 @@ import scala.scalajs.js.annotation._
 class default ()
   extends Component[ShellbarProps, js.Object, js.Any]
 
+/* static members */
+@JSImport("fundamental-react/lib/Shellbar/Shellbar", JSImport.Default)
+@js.native
+object default extends js.Object {
+  var displayName: typings.fundamentalDashReact.fundamentalDashReactStrings.Shellbar = js.native
+}
+

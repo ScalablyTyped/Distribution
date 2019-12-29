@@ -1,7 +1,6 @@
 package typings.utilDotPromisify
 
 import typings.std.Error
-import typings.utilDotPromisify.utilDotPromisifyMod.CustomPromisify
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

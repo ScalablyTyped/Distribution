@@ -27,7 +27,7 @@ object MediaConfigureSidecarItem {
     height: Double,
     upload_id: String,
     width: Double,
-    caption: Null = null,
+    caption: js.UndefOr[scala.Nothing] = js.undefined,
     device: Anon_AndroidreleaseAndroidversion | String = null,
     edits: Anon_Cropcenter | String = null,
     extra: Anon_Sourceheight | String = null,
@@ -36,7 +36,7 @@ object MediaConfigureSidecarItem {
     usertags: PostingUsertags | String = null
   ): MediaConfigureSidecarItem = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (!js.isUndefined(caption)) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])

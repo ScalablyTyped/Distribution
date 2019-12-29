@@ -26,10 +26,6 @@ import typings.mobx.libCoreObservableMod.IDepTreeNode
 import typings.mobx.libCoreObservableMod.IObservable
 import typings.mobx.libCoreReactionMod.IReactionDisposer
 import typings.mobx.libCoreReactionMod.IReactionPublic
-import typings.mobx.libInternalMod.ComputedValue
-import typings.mobx.libInternalMod.ObservableMap
-import typings.mobx.libInternalMod.ObservableSet
-import typings.mobx.libInternalMod.ObservableValue
 import typings.mobx.libTypesInterceptDashUtilsMod.IInterceptable
 import typings.mobx.libTypesInterceptDashUtilsMod.IInterceptor
 import typings.mobx.libTypesListenDashUtilsMod.IListenable
@@ -55,9 +51,9 @@ import typings.mobx.libUtilsComparerMod.IEqualsComparer
 import typings.mobx.libUtilsDecoratorsMod.BabelDescriptor
 import typings.mobx.libUtilsDecoratorsMod.PropertyCreator
 import typings.mobx.libUtilsUtilsMod.Lambda
-import typings.mobx.mobxNumbers.`false`
-import typings.mobx.mobxNumbers.`true`
-import typings.mobx.mobxStrings.`An invariant failed, however the error is obfuscated because this is a production buildDOT`
+import typings.mobx.mobxBooleans.`false`
+import typings.mobx.mobxBooleans.`true`
+import typings.mobx.mobxStrings.`An invariant failedComma however the error is obfuscated because this is a production buildDot`
 import typings.std.AsyncGenerator
 import typings.std.Error
 import typings.std.Generator
@@ -174,7 +170,7 @@ object libInternalMod extends js.Object {
   @JSName("$mobx")
   val $mobx: js.Symbol = js.native
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
-  val OBFUSCATED_ERROR: `An invariant failed, however the error is obfuscated because this is a production buildDOT` = js.native
+  val OBFUSCATED_ERROR: `An invariant failedComma however the error is obfuscated because this is a production buildDot` = js.native
   val action: IActionFactory = js.native
   val computed: IComputed = js.native
   val computedDecorator: js.Function = js.native
@@ -245,7 +241,7 @@ object libInternalMod extends js.Object {
   {[ P in keyof T ]:? std.MethodDecorator | std.PropertyDecorator | std.Array<std.MethodDecorator> | std.Array<std.PropertyDecorator>}
     */ typings.mobx.mobxStrings.decorate with js.Any
   ): T = js.native
-  def deepEnhancer(v: js.Any, `_`: js.Any, name: js.Any): js.Any = js.native
+  def deepEnhancer(v: js.Any, _underscore: js.Any, name: js.Any): js.Any = js.native
   def deepEqual(a: js.Any, b: js.Any): Boolean = js.native
   def deepEqual(a: js.Any, b: js.Any, depth: Double): Boolean = js.native
   def defineBoundAction(target: js.Any, propertyName: String, fn: js.Function): Unit = js.native
@@ -510,7 +506,7 @@ object libInternalMod extends js.Object {
   def set[T](obj: IObservableArray[T], index: Double, value: T): js.Any = js.native
   def set[K, V](obj: ObservableMap[K, V], key: K, value: V): js.Any = js.native
   def setReactionScheduler(fn: js.Function1[/* f */ js.Function0[Unit], Unit]): Unit = js.native
-  def shallowEnhancer(v: js.Any, `_`: js.Any, name: js.Any): js.Any = js.native
+  def shallowEnhancer(v: js.Any, _underscore: js.Any, name: js.Any): js.Any = js.native
   def shouldCompute(derivation: IDerivation): Boolean = js.native
   def spy(listener: js.Function1[/* change */ js.Any, Unit]): Lambda = js.native
   def spyReport(event: js.Any): Unit = js.native

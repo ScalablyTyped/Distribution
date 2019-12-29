@@ -36,8 +36,8 @@ object Debug extends js.Object {
     *      (Optional) true to indicate that the name of the function that is calling assert should be displayed in the message. The default is false.
     */
   def assert(condition: Boolean): Unit = js.native
-  def assert(condition: Boolean, message: java.lang.String): Unit = js.native
-  def assert(condition: Boolean, message: java.lang.String, displayCaller: Boolean): Unit = js.native
+  def assert(condition: Boolean, message: String): Unit = js.native
+  def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = js.native
   /**
     * Clears all trace messages from the trace console.
     */
@@ -47,13 +47,13 @@ object Debug extends js.Object {
     * @param message
     *           The message to display.
     */
-  def fail(message: java.lang.String): Unit = js.native
+  def fail(message: String): Unit = js.native
   /**
     * Appends a text line to the debugger console and to the trace console, if available.
     * @param text
     *       The text to display.
     */
-  def trace(text: java.lang.String): Unit = js.native
+  def trace(text: String): Unit = js.native
   /**
     * Dumps an object to the debugger console and to the trace console, if available.
     * @param object
@@ -62,6 +62,6 @@ object Debug extends js.Object {
     *      (Optional) The name of the object.
     */
   def traceDump(`object`: js.Any): Unit = js.native
-  def traceDump(`object`: js.Any, name: java.lang.String): Unit = js.native
+  def traceDump(`object`: js.Any, name: String): Unit = js.native
 }
 

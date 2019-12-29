@@ -12,7 +12,8 @@ class ItemProperty protected () extends js.Object {
   var Formula: String = js.native
   val IsUserProperty: Boolean = js.native
   val Name: String = js.native
-  var `Outlook.ItemProperty_typekey`: ItemProperty = js.native
+  @JSName("Outlook.ItemProperty_typekey")
+  var OutlookDotItemProperty_typekey: ItemProperty = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val Type: OlUserPropertyType = js.native

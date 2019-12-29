@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Management.Deployment.DeploymentOptions.developmentMode
-import typings.winrt.Windows.Management.Deployment.DeploymentOptions.forceApplicationShutdown
-import typings.winrt.Windows.Management.Deployment.DeploymentOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

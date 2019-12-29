@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.RowPosition.AboveSelectedRow
-import typings.ejDotWebDotAll.ej.Gantt.RowPosition.BelowSelectedRow
-import typings.ejDotWebDotAll.ej.Gantt.RowPosition.Bottom
-import typings.ejDotWebDotAll.ej.Gantt.RowPosition.Child
-import typings.ejDotWebDotAll.ej.Gantt.RowPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

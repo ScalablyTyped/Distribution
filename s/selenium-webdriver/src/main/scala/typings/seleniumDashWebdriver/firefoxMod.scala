@@ -1,7 +1,5 @@
 package typings.seleniumDashWebdriver
 
-import typings.seleniumDashWebdriver.firefoxMod.Driver
-import typings.seleniumDashWebdriver.firefoxMod.Options
 import typings.seleniumDashWebdriver.httpMod.Executor
 import typings.seleniumDashWebdriver.remoteMod.DriverService
 import typings.seleniumDashWebdriver.remoteMod.DriverService.Builder

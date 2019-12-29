@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.plottable.buildSrcComponentsComponentMod.Component
 import typings.plottable.buildSrcCoreInterfacesMod.Point
 import typings.plottable.buildSrcDispatchersDispatcherMod.Dispatcher
-import typings.plottable.buildSrcDispatchersTouchDispatcherMod.TouchCallback
 import typings.std.TouchEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.ramda
 
-import typings.ramda.ramdaNumbers.`false`
+import typings.ramda.ramdaBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

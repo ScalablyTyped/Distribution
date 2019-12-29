@@ -16,7 +16,8 @@ class Rule protected () extends js.Object {
   var ExecutionOrder: Double = js.native
   val IsLocalRule: Boolean = js.native
   var Name: String = js.native
-  var `Outlook.Rule_typekey`: Rule = js.native
+  @JSName("Outlook.Rule_typekey")
+  var OutlookDotRule_typekey: Rule = js.native
   val Parent: js.Any = js.native
   val RuleType: OlRuleType = js.native
   val Session: NameSpace = js.native

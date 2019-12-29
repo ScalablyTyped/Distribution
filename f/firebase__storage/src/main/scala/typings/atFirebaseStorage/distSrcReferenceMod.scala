@@ -7,7 +7,6 @@ import typings.atFirebaseStorage.distSrcImplementationStringMod.StringFormat
 import typings.atFirebaseStorage.distSrcListMod.ListOptions
 import typings.atFirebaseStorage.distSrcListMod.ListResult
 import typings.atFirebaseStorage.distSrcMetadataMod.Metadata
-import typings.atFirebaseStorage.distSrcReferenceMod.Reference
 import typings.atFirebaseStorage.distSrcServiceMod.Service
 import typings.atFirebaseStorage.distSrcTaskMod.UploadTask
 import typings.std.ArrayBuffer

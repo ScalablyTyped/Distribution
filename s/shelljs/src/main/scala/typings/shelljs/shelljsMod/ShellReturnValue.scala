@@ -149,7 +149,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   	 */
   def exec(command: String, callback: ExecCallback): ChildProcess = js.native
   /**
-  	 * Executes the given command synchronously.
+  	 * Executes the given command.
   	 *
   	 * @param command The command to execute.
   	 * @param options Silence and synchronous options.
@@ -165,7 +165,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   	 * @return Returns an object containing the return code and output as string,
   	 *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
   	 */
-  def exec(command: String, options: ExecOptions with Anon_Async): ShellString = js.native
+  def exec(command: String, options: ExecOptions): ShellString | ChildProcess = js.native
   /**
   	 * Executes the given command synchronously.
   	 *
@@ -203,7 +203,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   @JSName("exec")
   def exec_ChildProcess(command: String, options: ExecOptions with Anon_AsyncTrue): ChildProcess = js.native
   /**
-  	 * Executes the given command.
+  	 * Executes the given command synchronously.
   	 *
   	 * @param command The command to execute.
   	 * @param options Silence and synchronous options.
@@ -220,7 +220,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   	 *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
   	 */
   @JSName("exec")
-  def exec_Union(command: String, options: ExecOptions): ShellString | ChildProcess = js.native
+  def exec_ShellString(command: String, options: ExecOptions with Anon_Async): ShellString = js.native
   /**
   	 * Reads input string from given files and returns a string containing all lines
   	 * of the file that match the given `regex_filter`. Wildcard `*` accepted.

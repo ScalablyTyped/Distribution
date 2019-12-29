@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sunburst.FontStyle.Italic
-import typings.ejDotWebDotAll.ej.Sunburst.FontStyle.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

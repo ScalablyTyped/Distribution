@@ -1,6 +1,5 @@
 package typings.azureDashArmDashResource
 
-import typings.azureDashArmDashResource.libManagedApplicationClientMod.ManagedApplicationClient
 import typings.azureDashArmDashResource.libModelsMod.OperationListResult
 import typings.azureDashArmDashResource.libOperationsMod.ApplianceDefinitions
 import typings.azureDashArmDashResource.libOperationsMod.Appliances

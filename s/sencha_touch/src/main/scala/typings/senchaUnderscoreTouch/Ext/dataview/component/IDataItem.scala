@@ -16,14 +16,14 @@ trait IDataItem
   /** [Method] Returns the value of itemCls
   		* @returns String
   		*/
-  var getItemCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getItemCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of items
   		* @returns Array
   		*/
   @JSName("getItems")
   var getItems_IDataItem: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[java.lang.String] = js.undefined
+  var itemCls: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of dataMap
   		* @param dataMap Object The new value.
   		*/
@@ -31,7 +31,7 @@ trait IDataItem
   /** [Method] Sets the value of itemCls
   		* @param itemCls String The new value.
   		*/
-  var setItemCls: js.UndefOr[js.Function1[/* itemCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setItemCls: js.UndefOr[js.Function1[/* itemCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of items
   		* @param items Array The new value.
   		*/
@@ -41,7 +41,7 @@ trait IDataItem
   		* @param width String The new value.
   		*/
   @JSName("setWidth")
-  var setWidth_IDataItem: js.UndefOr[js.Function1[/* width */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setWidth_IDataItem: js.UndefOr[js.Function1[/* width */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IDataItem {
@@ -50,13 +50,13 @@ object IDataItem {
     IContainer: typings.senchaUnderscoreTouch.Ext.IContainer = null,
     dataMap: js.Any = null,
     getDataMap: () => _ = null,
-    getItemCls: () => java.lang.String = null,
+    getItemCls: () => String = null,
     getItems: () => Array = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     setDataMap: /* dataMap */ js.UndefOr[js.Any] => Unit = null,
-    setItemCls: /* itemCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setItemCls: /* itemCls */ js.UndefOr[String] => Unit = null,
     setItems: /* items */ js.UndefOr[Array] => Unit = null,
-    setWidth: /* width */ js.UndefOr[java.lang.String] => Unit = null
+    setWidth: /* width */ js.UndefOr[String] => Unit = null
   ): IDataItem = {
     val __obj = js.Dynamic.literal()
     if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)

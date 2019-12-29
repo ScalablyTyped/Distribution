@@ -30,6 +30,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`automatic-updates`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`ban-circle`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`bank-account`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`blocked-person`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`bring-data`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`caret-down`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`caret-left`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`caret-right`
@@ -285,7 +286,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.annotation
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.application
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.applications
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.archive
-import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.asterisk
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.asterisk_
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.badge
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.barcode
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.blank
@@ -305,7 +306,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.circle
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.citation
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.clean
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.clipboard
-import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.cloud
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.cloud_
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.code
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.cog
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.comment
@@ -335,7 +336,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.duplicate
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.edit
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.eject
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.endorsed
-import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.envelope
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.envelope_
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.equals
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.eraser
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.error
@@ -463,10 +464,12 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tick
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.time
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tint
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.torch
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tractor
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.train
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.translate
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.trash
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tree
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.truck
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unarchive
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.underline
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.undo
@@ -520,7 +523,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val ARROW_TOP_LEFT: `arrow-top-left` = js.native
   val ARROW_TOP_RIGHT: `arrow-top-right` = js.native
   val ARROW_UP: `arrow-up` = js.native
-  val ASTERISK: asterisk = js.native
+  val ASTERISK: asterisk_ = js.native
   val AUTOMATIC_UPDATES: `automatic-updates` = js.native
   val BADGE: badge = js.native
   val BANK_ACCOUNT: `bank-account` = js.native
@@ -533,6 +536,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val BOOKMARK: bookmark = js.native
   val BOX: box = js.native
   val BRIEFCASE: briefcase = js.native
+  val BRING_DATA: `bring-data` = js.native
   val BUILD: build = js.native
   val CALCULATOR: calculator = js.native
   val CALENDAR: calendar = js.native
@@ -559,7 +563,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val CITATION: citation = js.native
   val CLEAN: clean = js.native
   val CLIPBOARD: clipboard = js.native
-  val CLOUD: cloud = js.native
+  val CLOUD: cloud_ = js.native
   val CLOUD_DOWNLOAD: `cloud-download` = js.native
   val CLOUD_UPLOAD: `cloud-upload` = js.native
   val CODE: code = js.native
@@ -615,7 +619,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val EDIT: edit = js.native
   val EJECT: eject = js.native
   val ENDORSED: endorsed = js.native
-  val ENVELOPE: envelope = js.native
+  val ENVELOPE: envelope_ = js.native
   val EQUALS: equals = js.native
   val ERASER: eraser = js.native
   val ERROR: error = js.native
@@ -932,12 +936,14 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val TIMELINE_LINE_CHART: `timeline-line-chart` = js.native
   val TINT: tint = js.native
   val TORCH: torch = js.native
+  val TRACTOR: tractor = js.native
   val TRAIN: train = js.native
   val TRANSLATE: translate = js.native
   val TRASH: trash = js.native
   val TREE: tree = js.native
   val TRENDING_DOWN: `trending-down` = js.native
   val TRENDING_UP: `trending-up` = js.native
+  val TRUCK: truck = js.native
   val TWO_COLUMNS: `two-columns` = js.native
   val UNARCHIVE: unarchive = js.native
   val UNDERLINE: underline = js.native

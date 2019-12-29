@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.external
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.interactive
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.posinternal
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.unknownHealthCheckLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,5 @@
 package typings.d3DashBrush
 
-import typings.d3DashBrush.d3DashBrushMod.BrushBehavior
-import typings.d3DashBrush.d3DashBrushMod.BrushSelection
 import typings.d3DashBrush.d3DashBrushStrings.brush
 import typings.d3DashBrush.d3DashBrushStrings.end
 import typings.d3DashBrush.d3DashBrushStrings.start

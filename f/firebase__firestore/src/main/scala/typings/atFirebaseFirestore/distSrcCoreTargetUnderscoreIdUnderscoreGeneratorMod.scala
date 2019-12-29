@@ -1,6 +1,5 @@
 package typings.atFirebaseFirestore
 
-import typings.atFirebaseFirestore.distSrcCoreTargetUnderscoreIdUnderscoreGeneratorMod.TargetIdGenerator
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.TargetId
 import scala.scalajs.js
 import scala.scalajs.js.`|`

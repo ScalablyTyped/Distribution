@@ -9,7 +9,7 @@ package object reactDashDraggableMod {
   import typings.react.reactMod.MouseEvent
   import typings.react.reactMod.NativeMouseEvent
   import typings.react.reactMod.TouchEvent
-  import typings.reactDashDraggable.reactDashDraggableNumbers.`false`
+  import typings.reactDashDraggable.reactDashDraggableBooleans.`false`
   import typings.std.HTMLElement
   import typings.std.Partial
   import typings.std.SVGElement

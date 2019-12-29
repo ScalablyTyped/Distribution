@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   - typings.chromeDashApps.chromeDashAppsStrings.clipboard
   - typings.chromeDashApps.chromeDashAppsStrings.dns
   - typings.chromeDashApps.chromeDashAppsStrings.documentScan
-  - typings.chromeDashApps.chromeDashAppsStrings.enterpriseDOTplatformKeys
-  - typings.chromeDashApps.chromeDashAppsStrings.enterpriseDOTdeviceAttributes
+  - typings.chromeDashApps.chromeDashAppsStrings.enterpriseDotplatformKeys
+  - typings.chromeDashApps.chromeDashAppsStrings.enterpriseDotdeviceAttributes
   - typings.chromeDashApps.chromeDashAppsStrings.fileBrowserHandler
   - typings.chromeDashApps.chromeDashAppsStrings.fileSystemProvider
-  - typings.chromeDashApps.chromeDashAppsStrings.networkingDOTconfig
+  - typings.chromeDashApps.chromeDashAppsStrings.networkingDotconfig
   - typings.chromeDashApps.chromeDashAppsStrings.platformKeys
   - typings.chromeDashApps.chromeDashAppsStrings.vpnProvider
   - typings.chromeDashApps.chromeDashAppsStrings.wallpaper

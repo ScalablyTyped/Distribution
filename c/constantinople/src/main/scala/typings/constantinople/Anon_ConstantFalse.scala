@@ -1,6 +1,6 @@
 package typings.constantinople
 
-import typings.constantinople.constantinopleNumbers.`false`
+import typings.constantinople.constantinopleBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,5 @@
 package typings.topojsonDashSimplify
 
-import typings.topojsonDashSimplify.topojsonDashSimplifyMod.Filter
-import typings.topojsonDashSimplify.topojsonDashSimplifyMod.Ring
-import typings.topojsonDashSimplify.topojsonDashSimplifyMod.RingWeighter
-import typings.topojsonDashSimplify.topojsonDashSimplifyMod.Triangle
-import typings.topojsonDashSimplify.topojsonDashSimplifyMod.TriangleWeighter
 import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Objects
 import typings.topojsonDashSpecification.topojsonDashSpecificationMod.OrNull
 import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Properties

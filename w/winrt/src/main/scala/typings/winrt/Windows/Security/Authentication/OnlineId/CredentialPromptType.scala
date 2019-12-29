@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Security.Authentication.OnlineId
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Authentication.OnlineId.CredentialPromptType.doNotPrompt
-import typings.winrt.Windows.Security.Authentication.OnlineId.CredentialPromptType.promptIfNeeded
-import typings.winrt.Windows.Security.Authentication.OnlineId.CredentialPromptType.retypeCredentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

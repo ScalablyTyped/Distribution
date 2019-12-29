@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "subscriptions-transport-ws"
-version := "0.9.16-dafec3"
+version := "0.9.16-bf7abc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-74902e",
-  "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20191125Z-3445a5")
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-1e33b0",
+  "org.scalablytyped" %%% "graphql" % "14.5.8-8daf73",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "std" % "3.7-953338",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20191125Z-c264c7")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

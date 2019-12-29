@@ -11,10 +11,6 @@ package object windows {
     js.Function2[/* windowId */ Double, /* filters */ js.UndefOr[WindowEventFilter], Unit]
   ]
   type WindowReferenceEvent = Event[
-    js.Function2[
-      /* window */ typings.chrome.chrome.windows.Window, 
-      /* filters */ js.UndefOr[WindowEventFilter], 
-      Unit
-    ]
+    js.Function2[/* window */ Window, /* filters */ js.UndefOr[WindowEventFilter], Unit]
   ]
 }

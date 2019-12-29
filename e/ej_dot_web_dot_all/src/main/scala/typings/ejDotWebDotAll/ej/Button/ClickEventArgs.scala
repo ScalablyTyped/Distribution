@@ -13,7 +13,7 @@ trait ClickEventArgs extends js.Object {
   var e: js.UndefOr[js.Any] = js.undefined
   /** returns the button model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Button.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** return the button state
     */
   var status: js.UndefOr[Boolean] = js.undefined
@@ -27,7 +27,7 @@ object ClickEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     e: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Button.Model = null,
+    model: Model = null,
     status: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): ClickEventArgs = {

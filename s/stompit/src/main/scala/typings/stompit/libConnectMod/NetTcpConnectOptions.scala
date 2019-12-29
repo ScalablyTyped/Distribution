@@ -7,7 +7,7 @@ import typings.node.netMod.Socket
 import typings.node.netMod.TcpNetConnectOpts
 import typings.stompit.libSocketMod.CommandHandlers
 import typings.stompit.libSocketMod.Heartbeat
-import typings.stompit.stompitNumbers.`false`
+import typings.stompit.stompitBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

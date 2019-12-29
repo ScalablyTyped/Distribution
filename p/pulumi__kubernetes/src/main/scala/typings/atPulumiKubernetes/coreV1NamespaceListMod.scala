@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1NamespaceListMod.NamespaceList
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.Namespace
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource

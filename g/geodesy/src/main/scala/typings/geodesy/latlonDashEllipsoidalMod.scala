@@ -7,8 +7,6 @@ import typings.geodesy.geodesyMod.Dp
 import typings.geodesy.geodesyMod.Ellipsoid
 import typings.geodesy.geodesyMod.Ellipsoids
 import typings.geodesy.geodesyMod.Format
-import typings.geodesy.latlonDashEllipsoidalMod.Cartesian
-import typings.geodesy.latlonDashEllipsoidalMod.LatLonEllipsoidal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

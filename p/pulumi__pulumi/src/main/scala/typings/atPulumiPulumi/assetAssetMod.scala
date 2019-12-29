@@ -1,6 +1,5 @@
 package typings.atPulumiPulumi
 
-import typings.atPulumiPulumi.assetAssetMod.Asset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

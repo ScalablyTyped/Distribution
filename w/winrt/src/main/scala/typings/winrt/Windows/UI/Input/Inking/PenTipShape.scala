@@ -1,8 +1,6 @@
 package typings.winrt.Windows.UI.Input.Inking
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Input.Inking.PenTipShape.circle
-import typings.winrt.Windows.UI.Input.Inking.PenTipShape.rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

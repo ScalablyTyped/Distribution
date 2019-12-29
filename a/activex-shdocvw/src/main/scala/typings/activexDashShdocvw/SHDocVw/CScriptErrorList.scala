@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SHDocVw.CScriptErrorList")
 @js.native
 class CScriptErrorList protected () extends js.Object {
-  var `SHDocVw.CScriptErrorList_typekey`: CScriptErrorList = js.native
+  @JSName("SHDocVw.CScriptErrorList_typekey")
+  var SHDocVwDotCScriptErrorList_typekey: CScriptErrorList = js.native
   def advanceError(): Unit = js.native
   def canAdvanceError(): Double = js.native
   def canRetreatError(): Double = js.native

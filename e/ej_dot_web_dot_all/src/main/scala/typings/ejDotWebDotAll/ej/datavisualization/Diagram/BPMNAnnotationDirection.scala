@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNAnnotationDirection.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNAnnotationDirection.Left
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNAnnotationDirection.Right
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNAnnotationDirection.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

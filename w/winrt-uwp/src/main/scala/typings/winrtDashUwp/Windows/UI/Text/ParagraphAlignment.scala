@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.ParagraphAlignment.center
-import typings.winrtDashUwp.Windows.UI.Text.ParagraphAlignment.justify
-import typings.winrtDashUwp.Windows.UI.Text.ParagraphAlignment.left
-import typings.winrtDashUwp.Windows.UI.Text.ParagraphAlignment.right
-import typings.winrtDashUwp.Windows.UI.Text.ParagraphAlignment.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

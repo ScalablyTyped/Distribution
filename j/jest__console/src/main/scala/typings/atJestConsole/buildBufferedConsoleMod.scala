@@ -1,6 +1,5 @@
 package typings.atJestConsole
 
-import typings.atJestConsole.buildBufferedConsoleMod.BufferedConsole
 import typings.atJestConsole.buildTypesMod.ConsoleBuffer
 import typings.atJestConsole.buildTypesMod.LogEntry
 import typings.atJestConsole.buildTypesMod.LogMessage

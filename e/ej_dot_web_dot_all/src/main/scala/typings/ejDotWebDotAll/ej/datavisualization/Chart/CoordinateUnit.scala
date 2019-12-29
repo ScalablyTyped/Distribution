@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.CoordinateUnit.None
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.CoordinateUnit.Pixels
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.CoordinateUnit.Points
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

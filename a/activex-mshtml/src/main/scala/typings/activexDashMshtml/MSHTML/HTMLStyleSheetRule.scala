@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLStyleSheetRule")
 @js.native
 class HTMLStyleSheetRule protected () extends js.Object {
-  var `MSHTML.HTMLStyleSheetRule_typekey`: HTMLStyleSheetRule = js.native
+  @JSName("MSHTML.HTMLStyleSheetRule_typekey")
+  var MSHTMLDotHTMLStyleSheetRule_typekey: HTMLStyleSheetRule = js.native
   val constructor: js.Any = js.native
   var cssText: String = js.native
   var ie9_selectorText: String = js.native

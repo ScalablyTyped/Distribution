@@ -2,12 +2,6 @@ package typings.cassandraDashDriver.libPoliciesMod.policies
 
 import org.scalablytyped.runtime.TopLevel
 import typings.cassandraDashDriver.cassandraDashDriverMod.ExecutionOptions
-import typings.cassandraDashDriver.libPoliciesMod.policies.retry.DecisionInfo
-import typings.cassandraDashDriver.libPoliciesMod.policies.retry.OperationInfo
-import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision
-import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.ignore
-import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.rethrow
-import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryPolicy
 import typings.cassandraDashDriver.libTypesMod.types.consistencies
 import typings.std.Error
 import scala.scalajs.js

@@ -61,7 +61,7 @@ trait ConnectionOptions extends js.Object {
   /** Authentication username for this connection. */
   var userName: js.UndefOr[String] = js.undefined
   /** Sent by the server when the client disconnects abnormally. */
-  var willMessage: js.UndefOr[typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Message] = js.undefined
+  var willMessage: js.UndefOr[Message] = js.undefined
 }
 
 object ConnectionOptions {
@@ -79,7 +79,7 @@ object ConnectionOptions {
     timeout: Int | Double = null,
     useSSL: js.UndefOr[Boolean] = js.undefined,
     userName: String = null,
-    willMessage: typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Message = null
+    willMessage: Message = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.asInstanceOf[js.Any])

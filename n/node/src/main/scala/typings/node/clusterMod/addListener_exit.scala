@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object addListener_exit extends js.Object {
   def apply(
     event: exit,
-    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ java.lang.String, Unit]
+    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ String, Unit]
   ): Cluster = js.native
 }
 

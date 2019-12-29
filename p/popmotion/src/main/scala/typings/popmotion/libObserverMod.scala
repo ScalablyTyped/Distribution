@@ -1,6 +1,5 @@
 package typings.popmotion
 
-import typings.popmotion.libObserverMod.Observer
 import typings.popmotion.libObserverTypesMod.IObserver
 import typings.popmotion.libObserverTypesMod.ObserverCandidate
 import typings.popmotion.libObserverTypesMod.ObserverProps

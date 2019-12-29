@@ -1,7 +1,5 @@
 package typings.karmaDashViewport
 
-import typings.karmaDashViewport.distAdapterUtilInspectMod.InspectFunction
-import typings.karmaDashViewport.distAdapterUtilInspectMod.InspectValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

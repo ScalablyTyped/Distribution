@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ArrowPosition.Bottom
-import typings.ejDotWebDotAll.ej.ArrowPosition.Left
-import typings.ejDotWebDotAll.ej.ArrowPosition.Right
-import typings.ejDotWebDotAll.ej.ArrowPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

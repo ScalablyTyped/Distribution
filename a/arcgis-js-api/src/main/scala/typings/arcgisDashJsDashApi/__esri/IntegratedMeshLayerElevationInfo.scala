@@ -1,5 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -27,13 +33,13 @@ trait IntegratedMeshLayerElevationInfo extends Object {
     */
   var offset: js.UndefOr[Double] = js.undefined
   /**
-    * The unit for `offset` values.  **Possible Values:** feet | meters | kilometers | miles | us-feet | yards
+    * The unit for `offset` values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html#elevationInfo)
     *
     * @default meters
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards] = js.undefined
 }
 
 object IntegratedMeshLayerElevationInfo {
@@ -44,7 +50,7 @@ object IntegratedMeshLayerElevationInfo {
     mode: String,
     propertyIsEnumerable: PropertyKey => Boolean,
     offset: Int | Double = null,
-    unit: String = null
+    unit: feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards = null
   ): IntegratedMeshLayerElevationInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

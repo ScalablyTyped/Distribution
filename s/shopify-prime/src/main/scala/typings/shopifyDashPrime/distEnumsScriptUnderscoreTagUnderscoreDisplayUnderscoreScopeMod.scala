@@ -1,6 +1,5 @@
 package typings.shopifyDashPrime
 
-import typings.shopifyDashPrime.distEnumsScriptUnderscoreTagUnderscoreDisplayUnderscoreScopeMod._ScriptTagDisplayScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,8 @@ class OMathAutoCorrectEntry protected () extends js.Object {
   var Name: String = js.native
   val Parent: js.Any = js.native
   var Value: String = js.native
-  var `Word.OMathAutoCorrectEntry_typekey`: OMathAutoCorrectEntry = js.native
+  @JSName("Word.OMathAutoCorrectEntry_typekey")
+  var WordDotOMathAutoCorrectEntry_typekey: OMathAutoCorrectEntry = js.native
   def Delete(): Unit = js.native
 }
 

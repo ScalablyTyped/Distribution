@@ -6,11 +6,6 @@ import typings.phaser.EachMapCallback
 import typings.phaser.EachSetCallback
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Math.Vector2
-import typings.phaser.Phaser.Structs.List
-import typings.phaser.Phaser.Structs.Map
-import typings.phaser.Phaser.Structs.ProcessQueue
-import typings.phaser.Phaser.Structs.Set
-import typings.phaser.Phaser.Structs.Size
 import typings.phaser.integer
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -24,7 +24,7 @@ object eventemitter3Strings {
   sealed trait EventNames extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
   
   @scala.inline
   def Class: Class = "Class".asInstanceOf[Class]
@@ -39,6 +39,6 @@ object eventemitter3Strings {
   @scala.inline
   def EventNames: EventNames = "EventNames".asInstanceOf[EventNames]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
 }
 

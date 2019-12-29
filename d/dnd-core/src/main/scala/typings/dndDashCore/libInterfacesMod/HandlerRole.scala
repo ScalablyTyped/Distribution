@@ -1,8 +1,6 @@
 package typings.dndDashCore.libInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dndDashCore.libInterfacesMod.HandlerRole.SOURCE
-import typings.dndDashCore.libInterfacesMod.HandlerRole.TARGET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

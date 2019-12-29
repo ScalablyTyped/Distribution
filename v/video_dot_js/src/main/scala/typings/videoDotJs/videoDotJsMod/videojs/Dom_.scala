@@ -66,11 +66,11 @@ trait Dom_ extends js.Object {
     *
     */
   @JSName("$$")
-  def $$(selector: String): NodeList = js.native
+  def DollarDollar(selector: String): NodeList = js.native
   @JSName("$$")
-  def $$(selector: String, context: String): NodeList = js.native
+  def DollarDollar(selector: String, context: String): NodeList = js.native
   @JSName("$$")
-  def $$(selector: String, context: Element): NodeList = js.native
+  def DollarDollar(selector: String, context: Element): NodeList = js.native
   /**
     * Add a CSS class name to an element
     *

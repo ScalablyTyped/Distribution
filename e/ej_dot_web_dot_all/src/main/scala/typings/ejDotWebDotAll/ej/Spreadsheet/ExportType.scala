@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Csv
-import typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Excel
-import typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Pdf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

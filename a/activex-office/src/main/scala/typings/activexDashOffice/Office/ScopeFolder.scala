@@ -10,7 +10,8 @@ class ScopeFolder protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val Name: String = js.native
-  var `Office.ScopeFolder_typekey`: ScopeFolder = js.native
+  @JSName("Office.ScopeFolder_typekey")
+  var OfficeDotScopeFolder_typekey: ScopeFolder = js.native
   val Path: String = js.native
   @JSName("ScopeFolders")
   val ScopeFolders_Original: ScopeFolders = js.native

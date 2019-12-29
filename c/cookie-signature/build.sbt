@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cookie-signature"
-version := "1.0-dt-20190805Z-be50f1"
+version := "1.0-dt-20190805Z-f9316d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

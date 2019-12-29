@@ -12,49 +12,49 @@ object polishedNumbers {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `1DOT067` extends js.Object
+  sealed trait `1.067` extends js.Object
   
   @js.native
-  sealed trait `1DOT125` extends js.Object
+  sealed trait `1.125` extends js.Object
   
   @js.native
-  sealed trait `1DOT2` extends js.Object
+  sealed trait `1.2` extends js.Object
   
   @js.native
-  sealed trait `1DOT25` extends js.Object
+  sealed trait `1.25` extends js.Object
   
   @js.native
-  sealed trait `1DOT333` extends js.Object
+  sealed trait `1.333` extends js.Object
   
   @js.native
-  sealed trait `1DOT414` extends js.Object
+  sealed trait `1.414` extends js.Object
   
   @js.native
-  sealed trait `1DOT5` extends js.Object
+  sealed trait `1.5` extends js.Object
   
   @js.native
-  sealed trait `1DOT6` extends js.Object
+  sealed trait `1.6` extends js.Object
   
   @js.native
-  sealed trait `1DOT618` extends js.Object
+  sealed trait `1.618` extends js.Object
   
   @js.native
-  sealed trait `1DOT667` extends js.Object
+  sealed trait `1.667` extends js.Object
   
   @js.native
-  sealed trait `1DOT778` extends js.Object
+  sealed trait `1.778` extends js.Object
   
   @js.native
-  sealed trait `1DOT875` extends js.Object
+  sealed trait `1.875` extends js.Object
   
   @js.native
   sealed trait `2` extends js.Object
   
   @js.native
-  sealed trait `2DOT5` extends js.Object
+  sealed trait `2.5` extends js.Object
   
   @js.native
-  sealed trait `2DOT667` extends js.Object
+  sealed trait `2.667` extends js.Object
   
   @js.native
   sealed trait `3` extends js.Object
@@ -73,35 +73,35 @@ object polishedNumbers {
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def `1DOT067`: `1DOT067` = 1.067.asInstanceOf[`1DOT067`]
+  def `1.067`: `1.067` = 1.067.asInstanceOf[`1.067`]
   @scala.inline
-  def `1DOT125`: `1DOT125` = 1.125.asInstanceOf[`1DOT125`]
+  def `1.125`: `1.125` = 1.125.asInstanceOf[`1.125`]
   @scala.inline
-  def `1DOT2`: `1DOT2` = 1.2.asInstanceOf[`1DOT2`]
+  def `1.2`: `1.2` = 1.2.asInstanceOf[`1.2`]
   @scala.inline
-  def `1DOT25`: `1DOT25` = 1.25.asInstanceOf[`1DOT25`]
+  def `1.25`: `1.25` = 1.25.asInstanceOf[`1.25`]
   @scala.inline
-  def `1DOT333`: `1DOT333` = 1.333.asInstanceOf[`1DOT333`]
+  def `1.333`: `1.333` = 1.333.asInstanceOf[`1.333`]
   @scala.inline
-  def `1DOT414`: `1DOT414` = 1.414.asInstanceOf[`1DOT414`]
+  def `1.414`: `1.414` = 1.414.asInstanceOf[`1.414`]
   @scala.inline
-  def `1DOT5`: `1DOT5` = 1.5.asInstanceOf[`1DOT5`]
+  def `1.5`: `1.5` = 1.5.asInstanceOf[`1.5`]
   @scala.inline
-  def `1DOT6`: `1DOT6` = 1.6.asInstanceOf[`1DOT6`]
+  def `1.6`: `1.6` = 1.6.asInstanceOf[`1.6`]
   @scala.inline
-  def `1DOT618`: `1DOT618` = 1.618.asInstanceOf[`1DOT618`]
+  def `1.618`: `1.618` = 1.618.asInstanceOf[`1.618`]
   @scala.inline
-  def `1DOT667`: `1DOT667` = 1.667.asInstanceOf[`1DOT667`]
+  def `1.667`: `1.667` = 1.667.asInstanceOf[`1.667`]
   @scala.inline
-  def `1DOT778`: `1DOT778` = 1.778.asInstanceOf[`1DOT778`]
+  def `1.778`: `1.778` = 1.778.asInstanceOf[`1.778`]
   @scala.inline
-  def `1DOT875`: `1DOT875` = 1.875.asInstanceOf[`1DOT875`]
+  def `1.875`: `1.875` = 1.875.asInstanceOf[`1.875`]
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def `2DOT5`: `2DOT5` = 2.5.asInstanceOf[`2DOT5`]
+  def `2.5`: `2.5` = 2.5.asInstanceOf[`2.5`]
   @scala.inline
-  def `2DOT667`: `2DOT667` = 2.667.asInstanceOf[`2DOT667`]
+  def `2.667`: `2.667` = 2.667.asInstanceOf[`2.667`]
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   @scala.inline

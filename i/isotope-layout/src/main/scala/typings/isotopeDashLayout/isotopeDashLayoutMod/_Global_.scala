@@ -1,6 +1,5 @@
 package typings.isotopeDashLayout.isotopeDashLayoutMod
 
-import typings.isotopeDashLayout.isotopeDashLayoutMod._Global_.JQuery
 import typings.isotopeDashLayout.isotopeDashLayoutStrings.addItems
 import typings.isotopeDashLayout.isotopeDashLayoutStrings.appended
 import typings.isotopeDashLayout.isotopeDashLayoutStrings.destroy

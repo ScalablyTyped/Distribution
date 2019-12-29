@@ -16,7 +16,7 @@ trait BeforeAppointmentRemoveEventArgs extends js.Object {
   var currentAction: js.UndefOr[String] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the name of the Scheduler event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object BeforeAppointmentRemoveEventArgs {
     appointment: js.Any = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     currentAction: String = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     `type`: String = null
   ): BeforeAppointmentRemoveEventArgs = {
     val __obj = js.Dynamic.literal()

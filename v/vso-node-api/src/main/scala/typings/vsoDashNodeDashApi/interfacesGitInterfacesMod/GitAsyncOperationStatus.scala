@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Abandoned
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Completed
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Failed
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.InProgress
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Queued
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

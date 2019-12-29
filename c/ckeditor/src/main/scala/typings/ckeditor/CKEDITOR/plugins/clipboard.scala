@@ -3,9 +3,9 @@ package typings.ckeditor.CKEDITOR.plugins
 import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.dom.domObject
 import typings.ckeditor.CKEDITOR.dom.element
+import typings.ckeditor.CKEDITOR.dom.event
 import typings.ckeditor.CKEDITOR.dom.range
 import typings.ckeditor.CKEDITOR.editor
-import typings.ckeditor.CKEDITOR.plugins.clipboard.dataTransfer
 import typings.std.DataTransfer
 import typings.std.Event
 import typings.std.File
@@ -53,11 +53,11 @@ object clipboard extends js.Object {
   def getDropTarget(editor: editor): domObject = js.native
   def getRangeAtDropPosition(domEvent: Event, editor: editor): range = js.native
   def initDragDataTransfer(): Unit = js.native
-  def initDragDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event): Unit = js.native
-  def initDragDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event, editor: editor): Unit = js.native
+  def initDragDataTransfer(evt: event): Unit = js.native
+  def initDragDataTransfer(evt: event, editor: editor): Unit = js.native
   def initPasteDataTransfer(): Unit = js.native
-  def initPasteDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event): Unit = js.native
-  def initPasteDataTransfer(evt: typings.ckeditor.CKEDITOR.dom.event, sourceEditor: editor): Unit = js.native
+  def initPasteDataTransfer(evt: event): Unit = js.native
+  def initPasteDataTransfer(evt: event, sourceEditor: editor): Unit = js.native
   def preventDefaultDropOnElement(element: element): Unit = js.native
   def resetDragDataTransfer(): Unit = js.native
 }

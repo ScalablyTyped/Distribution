@@ -1,10 +1,6 @@
 package typings.couchbase.couchbaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.couchbase.couchbaseMod.N1qlQuery.Consistency
-import typings.couchbase.couchbaseMod.N1qlQuery.Consistency.NOT_BOUND
-import typings.couchbase.couchbaseMod.N1qlQuery.Consistency.REQUEST_PLUS
-import typings.couchbase.couchbaseMod.N1qlQuery.Consistency.STATEMENT_PLUS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

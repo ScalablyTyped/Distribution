@@ -4,8 +4,8 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.ssh2.ssh2Mod.ConnectConfig
 import typings.ssh2.ssh2Mod.SFTPWrapper
-import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientNumbers.`false`
-import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientStrings.`-`
+import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientBooleans.`false`
+import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientStrings.`-_`
 import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientStrings.d
 import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientStrings.l
 import typings.ssh2DashStreams.ssh2DashStreamsMod.TransferOptions
@@ -26,7 +26,7 @@ trait sftp extends js.Object {
   def cwd(): js.Promise[String] = js.native
   def delete(remoteFilePath: String): js.Promise[String] = js.native
   def end(): js.Promise[Unit] = js.native
-  def exists(remotePath: String): js.Promise[`false` | d | `-` | l] = js.native
+  def exists(remotePath: String): js.Promise[`false` | d | `-_` | l] = js.native
   def fastGet(remoteFilePath: String, localPath: String): js.Promise[String] = js.native
   def fastGet(remoteFilePath: String, localPath: String, options: TransferOptions): js.Promise[String] = js.native
   def fastPut(localPath: String, remoteFilePath: String): js.Promise[String] = js.native

@@ -10,7 +10,8 @@ class CustomLayouts protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.CustomLayouts_typekey`: CustomLayouts = js.native
+  @JSName("PowerPoint.CustomLayouts_typekey")
+  var PowerPointDotCustomLayouts_typekey: CustomLayouts = js.native
   def Add(Index: Double): CustomLayout = js.native
   def Item(Index: js.Any): CustomLayout = js.native
   /** @param number [Index=-1] */

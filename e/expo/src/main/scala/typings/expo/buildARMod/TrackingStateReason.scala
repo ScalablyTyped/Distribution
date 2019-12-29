@@ -1,11 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.TrackingStateReason.ExcessiveMotion
-import typings.expo.buildARMod.TrackingStateReason.Initializing
-import typings.expo.buildARMod.TrackingStateReason.InsufficientFeatures
-import typings.expo.buildARMod.TrackingStateReason.None
-import typings.expo.buildARMod.TrackingStateReason.Relocalizing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

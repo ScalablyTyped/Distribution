@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.changeMessageFlagState
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseForwardMessage
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseReplyAllMessage
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseReplyMessage
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markFolderForSyncEnabled
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markMessageAsSeen
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markMessageRead
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.moveFolder
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.moveMessage
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.saveDraft
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.sendMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

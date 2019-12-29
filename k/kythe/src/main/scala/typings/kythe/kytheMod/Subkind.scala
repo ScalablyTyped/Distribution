@@ -1,23 +1,6 @@
 package typings.kythe.kytheMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.kythe.kytheMod.Subkind.CATEGORY
-import typings.kythe.kytheMod.Subkind.CLASS
-import typings.kythe.kytheMod.Subkind.CONSTRUCTOR
-import typings.kythe.kytheMod.Subkind.DESTRUCTOR
-import typings.kythe.kytheMod.Subkind.ENUM
-import typings.kythe.kytheMod.Subkind.ENUM_CLASS
-import typings.kythe.kytheMod.Subkind.FIELD
-import typings.kythe.kytheMod.Subkind.IMPLICIT
-import typings.kythe.kytheMod.Subkind.IMPORT
-import typings.kythe.kytheMod.Subkind.INITIALIZER
-import typings.kythe.kytheMod.Subkind.LOCAL
-import typings.kythe.kytheMod.Subkind.LOCAL_PARAMETER
-import typings.kythe.kytheMod.Subkind.METHOD
-import typings.kythe.kytheMod.Subkind.NAMESPACE
-import typings.kythe.kytheMod.Subkind.STRUCT
-import typings.kythe.kytheMod.Subkind.TYPE
-import typings.kythe.kytheMod.Subkind.UNION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

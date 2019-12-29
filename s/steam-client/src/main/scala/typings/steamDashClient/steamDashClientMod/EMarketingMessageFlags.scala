@@ -1,12 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EMarketingMessageFlags.HighPriority
-import typings.steamDashClient.steamDashClientMod.EMarketingMessageFlags.None
-import typings.steamDashClient.steamDashClientMod.EMarketingMessageFlags.PlatformLinux
-import typings.steamDashClient.steamDashClientMod.EMarketingMessageFlags.PlatformMac
-import typings.steamDashClient.steamDashClientMod.EMarketingMessageFlags.PlatformRestrictions
-import typings.steamDashClient.steamDashClientMod.EMarketingMessageFlags.PlatformWindows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.jose.joseMod.JWK
 
+import typings.jose.joseBooleans.`false`
 import typings.jose.joseMod.ECCurve
 import typings.jose.joseMod.JWKECKey
 import typings.jose.joseMod.asymmetricKeyObjectTypes
-import typings.jose.joseNumbers.`false`
 import typings.jose.joseStrings.EC
 import scala.scalajs.js
 import scala.scalajs.js.`|`

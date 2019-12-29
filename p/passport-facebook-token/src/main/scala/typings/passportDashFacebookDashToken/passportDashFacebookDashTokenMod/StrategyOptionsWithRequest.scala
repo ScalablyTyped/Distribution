@@ -1,6 +1,6 @@
 package typings.passportDashFacebookDashToken.passportDashFacebookDashTokenMod
 
-import typings.passportDashFacebookDashToken.passportDashFacebookDashTokenNumbers.`true`
+import typings.passportDashFacebookDashToken.passportDashFacebookDashTokenBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

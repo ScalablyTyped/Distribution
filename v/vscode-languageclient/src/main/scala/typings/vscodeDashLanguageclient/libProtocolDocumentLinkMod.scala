@@ -3,7 +3,6 @@ package typings.vscodeDashLanguageclient
 import typings.vscode.vscodeMod.DocumentLink
 import typings.vscode.vscodeMod.Range
 import typings.vscode.vscodeMod.Uri
-import typings.vscodeDashLanguageclient.libProtocolDocumentLinkMod.ProtocolDocumentLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

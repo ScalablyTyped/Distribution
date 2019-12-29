@@ -2,11 +2,6 @@ package typings.pgDashPromise.pgDashPromiseMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.pgDashMinify.pgDashMinifyMod.SQLParsingError
-import typings.pgDashPromise.pgDashPromiseMod.errors.QueryFileError
-import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode
-import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.multiple
-import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.noData
-import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.notEmpty
 import typings.pgDashPromise.typescriptPgDashSubsetMod.IResult
 import typings.std.Error
 import scala.scalajs.js

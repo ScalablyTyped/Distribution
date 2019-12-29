@@ -1,6 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.clamp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mirror
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.repeat
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
@@ -43,7 +44,7 @@ trait MeshTextureProperties extends js.Object {
     *
     * @default "repeat"
     */
-  var wrap: js.UndefOr[clamp | repeat | SeparableWrapModes] = js.undefined
+  var wrap: js.UndefOr[clamp | repeat | mirror | SeparableWrapModes] = js.undefined
 }
 
 object MeshTextureProperties {
@@ -52,7 +53,7 @@ object MeshTextureProperties {
     data: HTMLImageElement | HTMLCanvasElement | ImageData = null,
     transparent: js.UndefOr[Boolean] = js.undefined,
     url: String = null,
-    wrap: clamp | repeat | SeparableWrapModes = null
+    wrap: clamp | repeat | mirror | SeparableWrapModes = null
   ): MeshTextureProperties = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

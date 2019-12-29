@@ -1,11 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Activation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.closedByUser
-import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.notRunning
-import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.running
-import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.suspended
-import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

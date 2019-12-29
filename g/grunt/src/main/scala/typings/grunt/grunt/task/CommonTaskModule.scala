@@ -14,10 +14,10 @@ trait CommonTaskModule extends js.Object {
     * @param name The task name to check.
     * @since 0.4.5
     */
-  def exists(name: java.lang.String): Boolean = js.native
+  def exists(name: String): Boolean = js.native
   def registerMultiTask(
-    taskName: java.lang.String,
-    taskDescription: java.lang.String,
+    taskName: String,
+    taskDescription: String,
     taskFunction: js.ThisFunction1[/* this */ IMultiTask[_], /* repeated */ js.Any, Unit]
   ): Unit = js.native
   /**
@@ -29,15 +29,15 @@ trait CommonTaskModule extends js.Object {
     * @note taskFunction.apply(scope: grunt.task.IMultiTask<any>, args: any[])
     */
   def registerMultiTask(
-    taskName: java.lang.String,
+    taskName: String,
     taskFunction: js.ThisFunction1[/* this */ IMultiTask[_], /* repeated */ js.Any, Unit]
   ): Unit = js.native
   def registerTask(
-    taskName: java.lang.String,
-    description: java.lang.String,
+    taskName: String,
+    description: String,
     taskFunction: js.ThisFunction1[/* this */ ITask, /* repeated */ js.Any, Unit]
   ): Unit = js.native
-  def registerTask(taskName: java.lang.String, description: java.lang.String, taskList: js.Array[java.lang.String]): Unit = js.native
+  def registerTask(taskName: String, description: String, taskList: js.Array[String]): Unit = js.native
   /**
     * If a description and taskFunction are passed, the specified function will be executed
     * whenever the task is run.
@@ -48,16 +48,13 @@ trait CommonTaskModule extends js.Object {
     *
     * @note taskFunction.apply(scope: grunt.task.ITask, args: any[])
     */
-  def registerTask(
-    taskName: java.lang.String,
-    taskFunction: js.ThisFunction1[/* this */ ITask, /* repeated */ js.Any, Unit]
-  ): Unit = js.native
+  def registerTask(taskName: String, taskFunction: js.ThisFunction1[/* this */ ITask, /* repeated */ js.Any, Unit]): Unit = js.native
   /**
     * If a task list is specified, the new task will be an alias for one or more other tasks.
     * Whenever this "alias task" is run, every specified task in taskList will be run, in the order specified.
     * The taskList argument must be an array of tasks.
     */
-  def registerTask(taskName: java.lang.String, taskList: js.Array[java.lang.String]): Unit = js.native
+  def registerTask(taskName: String, taskList: js.Array[String]): Unit = js.native
   /**
     * Rename a task. This might be useful if you want to override the default behavior of a task, while retaining the old name.
     * Note that if a task has been renamed, the this.name and this.nameArgs properties will change accordingly.
@@ -65,6 +62,6 @@ trait CommonTaskModule extends js.Object {
     * @param oldname The previous name of the task.
     * @param newname The new name for the task.
     */
-  def renameTask(oldname: java.lang.String, newname: java.lang.String): Unit = js.native
+  def renameTask(oldname: String, newname: String): Unit = js.native
 }
 

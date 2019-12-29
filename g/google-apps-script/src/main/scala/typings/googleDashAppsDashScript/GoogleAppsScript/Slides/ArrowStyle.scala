@@ -1,17 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_ARROW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_CIRCLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_DIAMOND
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_SQUARE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_ARROW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_CIRCLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_DIAMOND
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_SQUARE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.STEALTH_ARROW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

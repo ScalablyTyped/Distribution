@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Report")
 @js.native
 class Report protected () extends js.Object {
-  var `Access.Report_typekey`: typings.activexDashAccess.Access.Report = js.native
+  @JSName("Access.Report_typekey")
+  var AccessDotReport_typekey: typings.activexDashAccess.Access.Report = js.native
   val ActiveControl: Control = js.native
   var AllowDesignChanges: Boolean = js.native
   var AllowLayoutView: Boolean = js.native

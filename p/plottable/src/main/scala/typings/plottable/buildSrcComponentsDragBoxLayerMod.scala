@@ -1,6 +1,5 @@
 package typings.plottable
 
-import typings.plottable.buildSrcComponentsDragBoxLayerMod.DragBoxCallback
 import typings.plottable.buildSrcComponentsSelectionBoxLayerMod.SelectionBoxLayer
 import typings.plottable.buildSrcCoreInterfacesMod.Bounds
 import typings.plottable.buildSrcInteractionsMod.Drag

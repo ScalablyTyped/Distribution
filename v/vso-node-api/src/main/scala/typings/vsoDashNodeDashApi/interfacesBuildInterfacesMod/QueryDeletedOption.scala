@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueryDeletedOption.ExcludeDeleted
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueryDeletedOption.IncludeDeleted
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueryDeletedOption.OnlyDeleted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

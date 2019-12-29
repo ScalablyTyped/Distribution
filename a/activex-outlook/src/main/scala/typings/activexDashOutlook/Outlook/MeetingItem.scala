@@ -47,7 +47,8 @@ class MeetingItem protected () extends js.Object {
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
   var OriginatorDeliveryReportRequested: Boolean = js.native
-  var `Outlook.MeetingItem_typekey`: MeetingItem = js.native
+  @JSName("Outlook.MeetingItem_typekey")
+  var OutlookDotMeetingItem_typekey: MeetingItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

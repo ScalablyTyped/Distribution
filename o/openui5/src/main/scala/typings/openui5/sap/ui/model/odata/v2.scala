@@ -10,7 +10,6 @@ import typings.openui5.sap.ui.model.ListBinding
 import typings.openui5.sap.ui.model.Model
 import typings.openui5.sap.ui.model.Sorter
 import typings.openui5.sap.ui.model.TreeBinding
-import typings.openui5.sap.ui.model.odata.v2.ODataTreeBinding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

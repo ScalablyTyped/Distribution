@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsTagDashInputTagInputMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`false`
+import typings.atBlueprintjsCore.atBlueprintjsCoreBooleans.`false`
 import typings.atBlueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IIntentProps

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDialogOpenResult extends js.Object {
-  var closePromise: IPromise[typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogClosePromise] = js.native
+  var closePromise: IPromise[IDialogClosePromise] = js.native
   var id: String = js.native
   def close(): Unit = js.native
   def close(value: js.Any): Unit = js.native

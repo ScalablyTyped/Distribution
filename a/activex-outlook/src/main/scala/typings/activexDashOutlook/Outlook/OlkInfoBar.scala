@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class OlkInfoBar protected () extends js.Object {
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkInfoBar_typekey`: OlkInfoBar = js.native
+  @JSName("Outlook.OlkInfoBar_typekey")
+  var OutlookDotOlkInfoBar_typekey: OlkInfoBar = js.native
 }
 

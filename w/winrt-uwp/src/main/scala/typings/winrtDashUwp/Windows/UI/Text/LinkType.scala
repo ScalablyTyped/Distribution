@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.autoLink
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.autoLinkEmail
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.autoLinkPath
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.autoLinkPhone
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.clientLink
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.friendlyLinkAddress
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.friendlyLinkName
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.notALink
-import typings.winrtDashUwp.Windows.UI.Text.LinkType.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

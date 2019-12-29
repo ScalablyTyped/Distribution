@@ -5,7 +5,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.node.streamMod.Readable
 import typings.nodemailer.libSharedMod.Logger
-import typings.nodemailer.nodemailerNumbers.`false`
+import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerStrings.connect
 import typings.nodemailer.nodemailerStrings.connected
 import typings.nodemailer.nodemailerStrings.end

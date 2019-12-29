@@ -62,7 +62,8 @@ class Font protected () extends js.Object {
   var ThreeD: ThreeDFormat = js.native
   var Underline: WdUnderline = js.native
   var UnderlineColor: WdColor = js.native
-  var `Word.Font_typekey`: Font = js.native
+  @JSName("Word.Font_typekey")
+  var WordDotFont_typekey: Font = js.native
   def Grow(): Unit = js.native
   def Reset(): Unit = js.native
   def SetAsTemplateDefault(): Unit = js.native

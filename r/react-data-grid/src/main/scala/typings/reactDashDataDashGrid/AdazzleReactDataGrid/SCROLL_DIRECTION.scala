@@ -1,11 +1,6 @@
 package typings.reactDashDataDashGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashDataDashGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.DOWN
-import typings.reactDashDataDashGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.LEFT
-import typings.reactDashDataDashGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.NONE
-import typings.reactDashDataDashGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.RIGHT
-import typings.reactDashDataDashGrid.AdazzleReactDataGrid.SCROLL_DIRECTION.UP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

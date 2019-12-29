@@ -2,7 +2,6 @@ package typings.marko
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.marko.srcCompilerTaglibDashLoaderTagMod.^
-import typings.marko.srcCompilerTaglibDashLoaderTaglibMod.Taglib
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

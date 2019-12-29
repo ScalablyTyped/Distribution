@@ -1,21 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EClanPermission.AllMembers
-import typings.steamDashClient.steamDashClientMod.EClanPermission.Anybody
-import typings.steamDashClient.steamDashClientMod.EClanPermission.Member
-import typings.steamDashClient.steamDashClientMod.EClanPermission.MemberAllowed
-import typings.steamDashClient.steamDashClientMod.EClanPermission.Moderator
-import typings.steamDashClient.steamDashClientMod.EClanPermission.ModeratorAllowed
-import typings.steamDashClient.steamDashClientMod.EClanPermission.Nobody
-import typings.steamDashClient.steamDashClientMod.EClanPermission.NonMember
-import typings.steamDashClient.steamDashClientMod.EClanPermission.OGGGameOwner
-import typings.steamDashClient.steamDashClientMod.EClanPermission.Officer
-import typings.steamDashClient.steamDashClientMod.EClanPermission.OfficerAllowed
-import typings.steamDashClient.steamDashClientMod.EClanPermission.Owner
-import typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerAllowed
-import typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerAndOfficer
-import typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerOfficerModerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

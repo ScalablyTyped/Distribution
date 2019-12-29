@@ -16,7 +16,8 @@ class StyleSheet protected () extends js.Object {
   val Path: String = js.native
   var Title: String = js.native
   var Type: WdStyleSheetLinkType = js.native
-  var `Word.StyleSheet_typekey`: StyleSheet = js.native
+  @JSName("Word.StyleSheet_typekey")
+  var WordDotStyleSheet_typekey: StyleSheet = js.native
   def Delete(): Unit = js.native
   def Move(Precedence: WdStyleSheetPrecedence): Unit = js.native
 }

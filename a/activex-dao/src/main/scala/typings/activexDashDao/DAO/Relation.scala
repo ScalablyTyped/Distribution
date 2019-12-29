@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Relation protected () extends js.Object {
   var Attributes: RelationAttributeEnum = js.native
-  var `DAO.Relation_typekey`: Relation = js.native
+  @JSName("DAO.Relation_typekey")
+  var DAODotRelation_typekey: Relation = js.native
   @JSName("Fields")
   val Fields_Original: Fields = js.native
   var ForeignTable: String = js.native

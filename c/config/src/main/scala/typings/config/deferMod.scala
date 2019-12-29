@@ -1,6 +1,5 @@
 package typings.config
 
-import typings.config.deferMod.DeferFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

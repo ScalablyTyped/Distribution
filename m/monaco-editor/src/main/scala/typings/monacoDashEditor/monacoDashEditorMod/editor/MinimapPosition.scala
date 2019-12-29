@@ -1,7 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MinimapPosition.Inline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

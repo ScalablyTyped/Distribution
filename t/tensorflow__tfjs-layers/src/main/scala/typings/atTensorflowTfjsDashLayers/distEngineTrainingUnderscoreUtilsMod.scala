@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.temporal
-import typings.atTensorflowTfjsDashLayers.distEngineTrainingUnderscoreUtilsMod.ClassWeight
-import typings.atTensorflowTfjsDashLayers.distEngineTrainingUnderscoreUtilsMod.ClassWeightMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

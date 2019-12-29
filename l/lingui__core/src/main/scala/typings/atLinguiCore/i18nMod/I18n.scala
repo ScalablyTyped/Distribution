@@ -17,10 +17,14 @@ class I18n () extends js.Object {
   var language: String = js.native
   var languageData: LanguageData = js.native
   var messages: Messages = js.native
-  def `_`(id: String): String = js.native
-  def `_`(id: String, values: js.Object): String = js.native
-  def `_`(id: String, values: js.Object, messageOptions: MessageOptions): String = js.native
-  def `_`(id: MessageDescriptor): String = js.native
+  @JSName("_")
+  def _underscore(id: String): String = js.native
+  @JSName("_")
+  def _underscore(id: String, values: js.Object): String = js.native
+  @JSName("_")
+  def _underscore(id: String, values: js.Object, messageOptions: MessageOptions): String = js.native
+  @JSName("_")
+  def _underscore(id: MessageDescriptor): String = js.native
   def activate(language: String): Unit = js.native
   def load(catalogs: Catalogs): Unit = js.native
   def plural(config: PluralProps): String = js.native

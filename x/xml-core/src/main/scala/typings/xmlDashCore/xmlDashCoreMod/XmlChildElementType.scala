@@ -9,21 +9,21 @@ trait XmlChildElementType[T]
      with XmlSchemaItemParser {
   /**
     * max occurs of items in collection
-    * 
+    *
     * @type {number}
     * @memberOf XmlChildElementType
     */
   var maxOccurs: js.UndefOr[Double] = js.undefined
   /**
     * min occurs of items in collection
-    * 
+    *
     * @type {number}
     * @memberOf XmlChildElementType
     */
   var minOccurs: js.UndefOr[Double] = js.undefined
   /**
     * Don't add root element of XmlCollection to compiled element
-    * 
+    *
     * @type {boolean}
     * @memberOf XmlChildElementType
     */

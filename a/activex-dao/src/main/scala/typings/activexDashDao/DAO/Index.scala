@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Index protected () extends js.Object {
   var Clustered: Boolean = js.native
-  var `DAO.Index_typekey`: Index = js.native
+  @JSName("DAO.Index_typekey")
+  var DAODotIndex_typekey: Index = js.native
   val DistinctCount: Double = js.native
   @JSName("Fields")
   var Fields_Original: Fields = js.native

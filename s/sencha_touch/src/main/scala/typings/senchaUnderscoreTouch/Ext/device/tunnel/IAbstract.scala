@@ -13,12 +13,12 @@ trait IAbstract extends IBase {
   		* @param message String
   		* @returns Ext.Promise A promise which provides an array of objects upon fulfilled. Each object contains information about a receiver, with 'id', 'name' and 'icon' keys.
   		*/
-  var broadcast: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], IPromise]] = js.undefined
+  var broadcast: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], IPromise]] = js.undefined
   /** [Method] Create a connection to another application with the given id
   		* @param receiverId String The id of the application to connect to. Get this id from broadcast
   		* @returns Ext.Promise
   		*/
-  var connect: js.UndefOr[js.Function1[/* receiverId */ js.UndefOr[java.lang.String], IPromise]] = js.undefined
+  var connect: js.UndefOr[js.Function1[/* receiverId */ js.UndefOr[String], IPromise]] = js.undefined
   /** [Method] Assign the callback to handle new connection
   		* @param callback Function
   		*/
@@ -35,7 +35,7 @@ trait IAbstract extends IBase {
   		*/
   var send: js.UndefOr[
     js.Function3[
-      /* receiverId */ js.UndefOr[java.lang.String], 
+      /* receiverId */ js.UndefOr[String], 
       /* message */ js.UndefOr[js.Any], 
       /* foreground */ js.UndefOr[Boolean], 
       IPromise
@@ -48,15 +48,15 @@ object IAbstract {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    broadcast: /* message */ js.UndefOr[java.lang.String] => IPromise = null,
+    broadcast: /* message */ js.UndefOr[String] => IPromise = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    connect: /* receiverId */ js.UndefOr[java.lang.String] => IPromise = null,
+    connect: /* receiverId */ js.UndefOr[String] => IPromise = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
@@ -64,7 +64,7 @@ object IAbstract {
     onMessage: /* callback */ js.UndefOr[js.Any] => Unit = null,
     platformConfig: js.Any = null,
     self: IClass = null,
-    send: (/* receiverId */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[js.Any], /* foreground */ js.UndefOr[Boolean]) => IPromise = null,
+    send: (/* receiverId */ js.UndefOr[String], /* message */ js.UndefOr[js.Any], /* foreground */ js.UndefOr[Boolean]) => IPromise = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     uses: Array = null

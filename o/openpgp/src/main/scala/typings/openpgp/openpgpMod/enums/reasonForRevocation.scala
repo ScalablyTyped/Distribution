@@ -1,11 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.reasonForRevocation.key_comPromised
-import typings.openpgp.openpgpMod.enums.reasonForRevocation.key_retired
-import typings.openpgp.openpgpMod.enums.reasonForRevocation.key_superseded
-import typings.openpgp.openpgpMod.enums.reasonForRevocation.no_reason
-import typings.openpgp.openpgpMod.enums.reasonForRevocation.userid_invalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

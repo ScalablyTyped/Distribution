@@ -1,7 +1,7 @@
 package typings.terser.terserMod
 
 import typings.std.RegExp
-import typings.terser.terserNumbers.`false`
+import typings.terser.terserBooleans.`false`
 import typings.terser.terserStrings.all
 import typings.terser.terserStrings.some
 import scala.scalajs.js

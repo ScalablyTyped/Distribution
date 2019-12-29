@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageTransportKind.blocked
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageTransportKind.custom
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageTransportKind.text
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageTransportKind.untriaged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

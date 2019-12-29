@@ -10,28 +10,7 @@ import scala.scalajs.js.annotation._
 
 object graphqlStrings {
   @js.native
-  sealed trait `!` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `&` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `(` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `)` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `:` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `<EOF>` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `<SOF>` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `=` extends TokenKindEnum
+  sealed trait $ extends TokenKindEnum
   
   @js.native
   sealed trait `@` extends TokenKindEnum
@@ -49,6 +28,9 @@ object graphqlStrings {
   sealed trait ARG_REMOVED extends js.Object
   
   @js.native
+  sealed trait Ampersand extends TokenKindEnum
+  
+  @js.native
   sealed trait Argument extends KindEnum
   
   @js.native
@@ -56,6 +38,9 @@ object graphqlStrings {
   
   @js.native
   sealed trait BooleanValue extends KindEnum
+  
+  @js.native
+  sealed trait Colon extends TokenKindEnum
   
   @js.native
   sealed trait Comment extends TokenKindEnum
@@ -70,12 +55,6 @@ object graphqlStrings {
   sealed trait DIRECTIVE_REMOVED extends js.Object
   
   @js.native
-  sealed trait DOLLAR extends TokenKindEnum
-  
-  @js.native
-  sealed trait DOTDOTDOT extends TokenKindEnum
-  
-  @js.native
   sealed trait Directive extends KindEnum
   
   @js.native
@@ -83,6 +62,9 @@ object graphqlStrings {
   
   @js.native
   sealed trait Document extends KindEnum
+  
+  @js.native
+  sealed trait DotDotDot extends TokenKindEnum
   
   @js.native
   sealed trait ENUM extends DirectiveLocationEnum
@@ -104,6 +86,12 @@ object graphqlStrings {
   
   @js.native
   sealed trait EnumValueDefinition extends KindEnum
+  
+  @js.native
+  sealed trait Equalssign extends TokenKindEnum
+  
+  @js.native
+  sealed trait Exclamationmark extends TokenKindEnum
   
   @js.native
   sealed trait FIELD extends DirectiveLocationEnum
@@ -187,6 +175,21 @@ object graphqlStrings {
   sealed trait LIST extends js.Object
   
   @js.native
+  sealed trait Leftcurlybracket extends TokenKindEnum
+  
+  @js.native
+  sealed trait Leftparenthesis extends TokenKindEnum
+  
+  @js.native
+  sealed trait Leftsquarebracket extends TokenKindEnum
+  
+  @js.native
+  sealed trait LessthansignEOFGreaterthansign extends TokenKindEnum
+  
+  @js.native
+  sealed trait LessthansignSOFGreaterthansign extends TokenKindEnum
+  
+  @js.native
   sealed trait ListType extends KindEnum
   
   @js.native
@@ -253,6 +256,15 @@ object graphqlStrings {
   
   @js.native
   sealed trait REQUIRED_INPUT_FIELD_ADDED extends js.Object
+  
+  @js.native
+  sealed trait Rightcurlybracket extends TokenKindEnum
+  
+  @js.native
+  sealed trait Rightparenthesis extends TokenKindEnum
+  
+  @js.native
+  sealed trait Rightsquarebracket extends TokenKindEnum
   
   @js.native
   sealed trait SCALAR extends DirectiveLocationEnum
@@ -324,13 +336,10 @@ object graphqlStrings {
   sealed trait VariableDefinition extends KindEnum
   
   @js.native
+  sealed trait Verticalline extends TokenKindEnum
+  
+  @js.native
   sealed trait VisitorKeyMap extends js.Object
-  
-  @js.native
-  sealed trait `[` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `]` extends TokenKindEnum
   
   @js.native
   sealed trait alias extends js.Object
@@ -401,31 +410,8 @@ object graphqlStrings {
   @js.native
   sealed trait variable_ extends js.Object
   
-  @js.native
-  sealed trait `{` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `|` extends TokenKindEnum
-  
-  @js.native
-  sealed trait `}` extends TokenKindEnum
-  
   @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
-  @scala.inline
-  def `&`: `&` = "&".asInstanceOf[`&`]
-  @scala.inline
-  def `(`: `(` = "(".asInstanceOf[`(`]
-  @scala.inline
-  def `)`: `)` = ")".asInstanceOf[`)`]
-  @scala.inline
-  def `:`: `:` = ":".asInstanceOf[`:`]
-  @scala.inline
-  def `<EOF>`: `<EOF>` = "<EOF>".asInstanceOf[`<EOF>`]
-  @scala.inline
-  def `<SOF>`: `<SOF>` = "<SOF>".asInstanceOf[`<SOF>`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
+  def $: $ = "$".asInstanceOf[$]
   @scala.inline
   def `@`: `@` = "@".asInstanceOf[`@`]
   @scala.inline
@@ -437,11 +423,15 @@ object graphqlStrings {
   @scala.inline
   def ARG_REMOVED: ARG_REMOVED = "ARG_REMOVED".asInstanceOf[ARG_REMOVED]
   @scala.inline
+  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
+  @scala.inline
   def Argument: Argument = "Argument".asInstanceOf[Argument]
   @scala.inline
   def BlockString: BlockString = "BlockString".asInstanceOf[BlockString]
   @scala.inline
   def BooleanValue: BooleanValue = "BooleanValue".asInstanceOf[BooleanValue]
+  @scala.inline
+  def Colon: Colon = ":".asInstanceOf[Colon]
   @scala.inline
   def Comment: Comment = "Comment".asInstanceOf[Comment]
   @scala.inline
@@ -451,15 +441,13 @@ object graphqlStrings {
   @scala.inline
   def DIRECTIVE_REMOVED: DIRECTIVE_REMOVED = "DIRECTIVE_REMOVED".asInstanceOf[DIRECTIVE_REMOVED]
   @scala.inline
-  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
-  @scala.inline
-  def DOTDOTDOT: DOTDOTDOT = "...".asInstanceOf[DOTDOTDOT]
-  @scala.inline
   def Directive: Directive = "Directive".asInstanceOf[Directive]
   @scala.inline
   def DirectiveDefinition: DirectiveDefinition = "DirectiveDefinition".asInstanceOf[DirectiveDefinition]
   @scala.inline
   def Document: Document = "Document".asInstanceOf[Document]
+  @scala.inline
+  def DotDotDot: DotDotDot = "...".asInstanceOf[DotDotDot]
   @scala.inline
   def ENUM: ENUM = "ENUM".asInstanceOf[ENUM]
   @scala.inline
@@ -474,6 +462,10 @@ object graphqlStrings {
   def EnumValue: EnumValue = "EnumValue".asInstanceOf[EnumValue]
   @scala.inline
   def EnumValueDefinition: EnumValueDefinition = "EnumValueDefinition".asInstanceOf[EnumValueDefinition]
+  @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   @scala.inline
   def FIELD: FIELD = "FIELD".asInstanceOf[FIELD]
   @scala.inline
@@ -529,6 +521,16 @@ object graphqlStrings {
   @scala.inline
   def LIST: LIST = "LIST".asInstanceOf[LIST]
   @scala.inline
+  def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
+  @scala.inline
+  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
+  @scala.inline
+  def Leftsquarebracket: Leftsquarebracket = "[".asInstanceOf[Leftsquarebracket]
+  @scala.inline
+  def LessthansignEOFGreaterthansign: LessthansignEOFGreaterthansign = "<EOF>".asInstanceOf[LessthansignEOFGreaterthansign]
+  @scala.inline
+  def LessthansignSOFGreaterthansign: LessthansignSOFGreaterthansign = "<SOF>".asInstanceOf[LessthansignSOFGreaterthansign]
+  @scala.inline
   def ListType: ListType = "ListType".asInstanceOf[ListType]
   @scala.inline
   def ListValue: ListValue = "ListValue".asInstanceOf[ListValue]
@@ -572,6 +574,12 @@ object graphqlStrings {
   def REQUIRED_DIRECTIVE_ARG_ADDED: REQUIRED_DIRECTIVE_ARG_ADDED = "REQUIRED_DIRECTIVE_ARG_ADDED".asInstanceOf[REQUIRED_DIRECTIVE_ARG_ADDED]
   @scala.inline
   def REQUIRED_INPUT_FIELD_ADDED: REQUIRED_INPUT_FIELD_ADDED = "REQUIRED_INPUT_FIELD_ADDED".asInstanceOf[REQUIRED_INPUT_FIELD_ADDED]
+  @scala.inline
+  def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
+  @scala.inline
+  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
+  @scala.inline
+  def Rightsquarebracket: Rightsquarebracket = "]".asInstanceOf[Rightsquarebracket]
   @scala.inline
   def SCALAR: SCALAR = "SCALAR".asInstanceOf[SCALAR]
   @scala.inline
@@ -619,11 +627,9 @@ object graphqlStrings {
   @scala.inline
   def VariableDefinition: VariableDefinition = "VariableDefinition".asInstanceOf[VariableDefinition]
   @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
   def VisitorKeyMap: VisitorKeyMap = "VisitorKeyMap".asInstanceOf[VisitorKeyMap]
-  @scala.inline
-  def `[`: `[` = "[".asInstanceOf[`[`]
-  @scala.inline
-  def `]`: `]` = "]".asInstanceOf[`]`]
   @scala.inline
   def alias: alias = "alias".asInstanceOf[alias]
   @scala.inline
@@ -670,11 +676,5 @@ object graphqlStrings {
   def variableDefinitions: variableDefinitions = "variableDefinitions".asInstanceOf[variableDefinitions]
   @scala.inline
   def variable_ : variable_ = "variable".asInstanceOf[variable_]
-  @scala.inline
-  def `{`: `{` = "{".asInstanceOf[`{`]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
-  @scala.inline
-  def `}`: `}` = "}".asInstanceOf[`}`]
 }
 

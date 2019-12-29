@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testingbot-api"
-version := "1.0-dt-20180214Z-3be485"
+version := "1.0-dt-20180214Z-577967"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

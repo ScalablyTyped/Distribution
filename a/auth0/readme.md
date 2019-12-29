@@ -1,7 +1,7 @@
 
 # Scala.js typings for auth0
 
-Typings are for version 2.9.4
+Typings are for version 2.20.0
 
 ## Library description:
 SDK for Auth0 API v2

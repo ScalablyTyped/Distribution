@@ -10,12 +10,11 @@ package object PouchDB {
   import typings.std.Partial
 
   /* Rewritten from type alias, can be one of: 
-    - typings.pouchdbDashUpsert.pouchdbDashUpsertStrings.Empty
+    - typings.pouchdbDashUpsert.pouchdbDashUpsertStrings._empty
     - typings.pouchdbDashUpsert.pouchdbDashUpsertNumbers.`0`
-    - typings.pouchdbDashUpsert.pouchdbDashUpsertNumbers.`false`
+    - typings.pouchdbDashUpsert.pouchdbDashUpsertBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
   */
   type CancelUpsert = js.UndefOr[_CancelUpsert | Null]
   // `Partial<Core.Document<Content>>` seems more useful than

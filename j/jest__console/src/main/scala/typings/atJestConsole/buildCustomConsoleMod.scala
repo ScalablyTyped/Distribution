@@ -1,7 +1,5 @@
 package typings.atJestConsole
 
-import typings.atJestConsole.buildCustomConsoleMod.CustomConsole
-import typings.atJestConsole.buildCustomConsoleMod.Formatter
 import typings.atJestConsole.buildTypesMod.LogMessage
 import typings.atJestConsole.buildTypesMod.LogType
 import typings.node.NodeJS.WritableStream

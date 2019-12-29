@@ -11,7 +11,8 @@ class Panes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Panes_typekey`: Panes = js.native
+  @JSName("Word.Panes_typekey")
+  var WordDotPanes_typekey: Panes = js.native
   def Add(): Pane = js.native
   def Add(SplitVertical: js.Any): Pane = js.native
   def Item(Index: Double): Pane = js.native

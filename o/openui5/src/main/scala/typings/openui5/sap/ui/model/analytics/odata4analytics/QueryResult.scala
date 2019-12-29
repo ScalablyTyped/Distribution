@@ -14,12 +14,7 @@ class QueryResult protected () extends js.Object {
     * @param oEntitySet The OData entity set for this query offered by the           OData service
     * @param oParameterization The parameterization of this query, if any
     */
-  def this(
-    oModel: typings.openui5.sap.ui.model.analytics.odata4analytics.Model,
-    oEntityType: EntityType,
-    oEntitySet: EntitySet,
-    oParameterization: Parameterization
-  ) = this()
+  def this(oModel: Model, oEntityType: EntityType, oEntitySet: EntitySet, oParameterization: Parameterization) = this()
   /**
     * Find dimension by name
     * @param sName Dimension name

@@ -1,8 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.features.modification_detection
-import typings.openpgp.openpgpMod.enums.features.v5_keys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

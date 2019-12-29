@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLDialog")
 @js.native
 class HTMLDialog protected () extends js.Object {
-  var `MSHTML.HTMLDialog_typekey`: HTMLDialog = js.native
+  @JSName("MSHTML.HTMLDialog_typekey")
+  var MSHTMLDotHTMLDialog_typekey: HTMLDialog = js.native
   val dialogArguments: js.Any = js.native
   var dialogHeight: js.Any = js.native
   var dialogLeft: js.Any = js.native

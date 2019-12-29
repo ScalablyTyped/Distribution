@@ -1,12 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Utilities
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD5
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_1
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_256
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_384
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,33 +15,25 @@ sealed trait DigestAlgorithm extends js.Object
 @js.native
 object DigestAlgorithm extends js.Object {
   @js.native
-  sealed trait MD2
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
+  sealed trait MD2 extends DigestAlgorithm
   
   @js.native
-  sealed trait MD5
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
+  sealed trait MD5 extends DigestAlgorithm
   
   @js.native
-  sealed trait SHA_1
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
+  sealed trait SHA_1 extends DigestAlgorithm
   
   @js.native
-  sealed trait SHA_256
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
+  sealed trait SHA_256 extends DigestAlgorithm
   
   @js.native
-  sealed trait SHA_384
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
+  sealed trait SHA_384 extends DigestAlgorithm
   
   @js.native
-  sealed trait SHA_512
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
+  sealed trait SHA_512 extends DigestAlgorithm
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[
-    typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm with Double
-  ] = js.native
+  def apply(value: Double): js.UndefOr[DigestAlgorithm with Double] = js.native
   /* 0 */ @js.native
   object MD2 extends TopLevel[MD2 with Double]
   

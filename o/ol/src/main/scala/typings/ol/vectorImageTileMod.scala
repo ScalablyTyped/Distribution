@@ -7,8 +7,6 @@ import typings.ol.tileMod.LoadFunction
 import typings.ol.tileMod.UrlFunction
 import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
-import typings.ol.vectorImageTileMod.ReplayState
-import typings.ol.vectorImageTileMod.VectorImageTile
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

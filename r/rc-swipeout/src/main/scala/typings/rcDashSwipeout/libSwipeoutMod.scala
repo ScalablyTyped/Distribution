@@ -1,7 +1,6 @@
 package typings.rcDashSwipeout
 
 import typings.rcDashSwipeout.libPropTypesMod.IPropTypes
-import typings.rcDashSwipeout.libSwipeoutMod.Swipeout
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js

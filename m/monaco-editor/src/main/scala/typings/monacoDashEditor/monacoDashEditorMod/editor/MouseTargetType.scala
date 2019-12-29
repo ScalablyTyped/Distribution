@@ -1,20 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_EMPTY
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_TEXT
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_VIEW_ZONE
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_WIDGET
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_GLYPH_MARGIN
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_LINE_DECORATIONS
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_LINE_NUMBERS
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_VIEW_ZONE
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OUTSIDE_EDITOR
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OVERLAY_WIDGET
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OVERVIEW_RULER
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.SCROLLBAR
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.TEXTAREA
-import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

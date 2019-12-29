@@ -10,7 +10,7 @@ object apolloDashEnvStrings {
   sealed trait DeepPartial extends js.Object
   
   @js.native
-  sealed trait Empty extends ReferrerPolicy
+  sealed trait _empty extends ReferrerPolicy
   
   @js.native
   sealed trait `no-referrer` extends ReferrerPolicy
@@ -39,7 +39,7 @@ object apolloDashEnvStrings {
   @scala.inline
   def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
   @scala.inline

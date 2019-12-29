@@ -11,13 +11,13 @@ trait MSClearAttributes extends StyleAttributes {
 object MSClearAttributes {
   @scala.inline
   def apply(
-    `:-webkit-autofill`: StyleAttributes = null,
-    `::-ms-clear`: MSClearAttributes = null,
-    `::placeholder`: StyleAttributes = null,
-    `::selection`: StyleAttributes = null,
-    `:disabled`: StyleAttributes = null,
-    `:focus`: StyleAttributes = null,
-    `:hover`: StyleAttributes = null,
+    `Colon-webkit-autofill`: StyleAttributes = null,
+    `ColonColon-ms-clear`: MSClearAttributes = null,
+    ColonColonplaceholder: StyleAttributes = null,
+    ColonColonselection: StyleAttributes = null,
+    Colondisabled: StyleAttributes = null,
+    Colonfocus: StyleAttributes = null,
+    Colonhover: StyleAttributes = null,
     color: String = null,
     display: String = null,
     fontFamily: String = null,
@@ -35,13 +35,13 @@ object MSClearAttributes {
     textTransform: String = null
   ): MSClearAttributes = {
     val __obj = js.Dynamic.literal()
-    if (`:-webkit-autofill` != null) __obj.updateDynamic(":-webkit-autofill")(`:-webkit-autofill`.asInstanceOf[js.Any])
-    if (`::-ms-clear` != null) __obj.updateDynamic("::-ms-clear")(`::-ms-clear`.asInstanceOf[js.Any])
-    if (`::placeholder` != null) __obj.updateDynamic("::placeholder")(`::placeholder`.asInstanceOf[js.Any])
-    if (`::selection` != null) __obj.updateDynamic("::selection")(`::selection`.asInstanceOf[js.Any])
-    if (`:disabled` != null) __obj.updateDynamic(":disabled")(`:disabled`.asInstanceOf[js.Any])
-    if (`:focus` != null) __obj.updateDynamic(":focus")(`:focus`.asInstanceOf[js.Any])
-    if (`:hover` != null) __obj.updateDynamic(":hover")(`:hover`.asInstanceOf[js.Any])
+    if (`Colon-webkit-autofill` != null) __obj.updateDynamic(":-webkit-autofill")(`Colon-webkit-autofill`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-clear` != null) __obj.updateDynamic("::-ms-clear")(`ColonColon-ms-clear`.asInstanceOf[js.Any])
+    if (ColonColonplaceholder != null) __obj.updateDynamic("::placeholder")(ColonColonplaceholder.asInstanceOf[js.Any])
+    if (ColonColonselection != null) __obj.updateDynamic("::selection")(ColonColonselection.asInstanceOf[js.Any])
+    if (Colondisabled != null) __obj.updateDynamic(":disabled")(Colondisabled.asInstanceOf[js.Any])
+    if (Colonfocus != null) __obj.updateDynamic(":focus")(Colonfocus.asInstanceOf[js.Any])
+    if (Colonhover != null) __obj.updateDynamic(":hover")(Colonhover.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])

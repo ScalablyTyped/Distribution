@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Icon protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Icon_typekey`: Icon = js.native
+  @JSName("Excel.Icon_typekey")
+  var ExcelDotIcon_typekey: Icon = js.native
   val Index: Double = js.native
   @JSName("Parent")
   val Parent_Original: IconSet = js.native

@@ -22,7 +22,7 @@ package object Scale {
     * 
     * To find out what each mode does please see [Phaser.Scale.ScaleModes]{@link Phaser.Scale.ScaleModes}.
     */
-  type ScaleModeType = typings.phaser.Phaser.Scale.ScaleModes
+  type ScaleModeType = ScaleModes
   /**
     * Phaser Scale Manager constants for zoom modes.
     * 

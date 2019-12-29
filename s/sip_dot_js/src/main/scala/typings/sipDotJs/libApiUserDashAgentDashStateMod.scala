@@ -1,9 +1,6 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libApiUserDashAgentDashStateMod.UserAgentState
-import typings.sipDotJs.libApiUserDashAgentDashStateMod.UserAgentState.Started
-import typings.sipDotJs.libApiUserDashAgentDashStateMod.UserAgentState.Stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

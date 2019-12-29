@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLDefaults")
 @js.native
 class HTMLDefaults protected () extends js.Object {
-  var `MSHTML.HTMLDefaults_typekey`: HTMLDefaults = js.native
+  @JSName("MSHTML.HTMLDefaults_typekey")
+  var MSHTMLDotHTMLDefaults_typekey: HTMLDefaults = js.native
   var canHaveHTML: Boolean = js.native
   val constructor: js.Any = js.native
   var contentEditable: String = js.native

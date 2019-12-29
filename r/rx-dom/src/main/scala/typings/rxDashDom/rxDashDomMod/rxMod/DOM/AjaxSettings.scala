@@ -1,5 +1,6 @@
 package typings.rxDashDom.rxDashDomMod.rxMod.DOM
 
+import typings.rxDashCore.Rx.Observer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait AjaxSettings extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var method: js.UndefOr[String] = js.undefined
   var password: js.UndefOr[String] = js.undefined
-  var progressObserver: js.UndefOr[typings.rxDashCore.Rx.Observer[_]] = js.undefined
+  var progressObserver: js.UndefOr[Observer[_]] = js.undefined
   var responseType: js.UndefOr[String] = js.undefined
   var url: js.UndefOr[String] = js.undefined
   var user: js.UndefOr[String] = js.undefined
@@ -28,7 +29,7 @@ object AjaxSettings {
     headers: js.Any = null,
     method: String = null,
     password: String = null,
-    progressObserver: typings.rxDashCore.Rx.Observer[_] = null,
+    progressObserver: Observer[_] = null,
     responseType: String = null,
     url: String = null,
     user: String = null

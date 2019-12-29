@@ -6,7 +6,6 @@ import typings.std.SVGElement
 import typings.typesettable.buildSrcContextsCanvasMod.ICanvasFontStyle
 import typings.typesettable.buildSrcContextsMod.ITypesetterContext
 import typings.typesettable.buildSrcMeasurersMod.CacheMeasurer
-import typings.typesettable.buildSrcTypesetterMod.Typesetter
 import typings.typesettable.buildSrcWrappersMod.Wrapper
 import typings.typesettable.buildSrcWritersMod.Writer
 import typings.typesettable.buildSrcWritersWriterMod.IWriteOptions

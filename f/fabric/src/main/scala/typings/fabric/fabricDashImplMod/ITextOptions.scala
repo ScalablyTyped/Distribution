@@ -3,7 +3,7 @@ package typings.fabric.fabricDashImplMod
 import typings.fabric.Anon_Baseline
 import typings.fabric.Anon_BlBrMbMl
 import typings.fabric.Anon_BlBrTlTr
-import typings.fabric.fabricStrings.Empty
+import typings.fabric.fabricStrings._empty
 import typings.fabric.fabricStrings.circle
 import typings.fabric.fabricStrings.italic
 import typings.fabric.fabricStrings.normal
@@ -151,7 +151,7 @@ object ITextOptions {
     flipY: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
     fontSize: Int | Double = null,
-    fontStyle: Empty | normal | italic | oblique = null,
+    fontStyle: _empty | normal | italic | oblique = null,
     fontWeight: String | Double = null,
     globalCompositeOperation: String = null,
     group: Group = null,

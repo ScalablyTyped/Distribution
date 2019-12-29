@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ Instantiable0[Slide]
     * @param options.screenshot Screenshot options to use. See properties below for object specifications.
     *
     */
-  def createFrom(view: SceneView): IPromise[Slide] = js.native
-  def createFrom(view: SceneView, options: SlideCreateFromOptions): IPromise[Slide] = js.native
+  def createFrom(view: SceneView): js.Promise[Slide] = js.native
+  def createFrom(view: SceneView, options: SlideCreateFromOptions): js.Promise[Slide] = js.native
 }
 

@@ -7,1447 +7,1450 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsIconsStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait $ extends js.Object
   
   @js.native
-  sealed trait `+` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait `?` extends js.Object
+  sealed trait Ballotx extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu0394 extends js.Object
+  sealed trait Blackflag extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2022 extends js.Object
+  sealed trait Blackheartsuit extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu20AC extends js.Object
+  sealed trait Blackstar extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2139 extends js.Object
+  sealed trait Blacktelephone extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2190 extends js.Object
+  sealed trait Bullet extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHu2191 ` extends js.Object
+  sealed trait Checkmark extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2192 extends js.Object
+  sealed trait Circledbullet extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHu2193 ` extends js.Object
+  sealed trait Cloud extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHu2194 ` extends js.Object
+  sealed trait Continuousunderlinesymbol extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHu2195 ` extends js.Object
+  sealed trait Downarrowhead extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2196 extends js.Object
+  sealed trait `Downwardsarrow ` extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2197 extends js.Object
+  sealed trait Ejectsymbol extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2198 extends js.Object
+  sealed trait Envelope extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2199 extends js.Object
+  sealed trait Eurosign extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2212 extends js.Object
+  sealed trait House extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2302 extends js.Object
+  sealed trait Leftpointinganglebracket extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2303 extends js.Object
+  sealed trait `Leftrightarrow ` extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2304 extends js.Object
+  sealed trait Leftwardsarrow extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2329 extends js.Object
+  sealed trait Lowerrightpencil extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu232A extends js.Object
+  sealed trait Minussign extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2381 extends js.Object
+  sealed trait Northeastarrow extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu238C extends js.Object
+  sealed trait Northwestarrow extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2399 extends js.Object
+  sealed trait Plussign extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu23CF extends js.Object
+  sealed trait Printscreensymbol extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu23F2 extends js.Object
+  sealed trait Privateuseareae600 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2601 extends js.Object
+  sealed trait Privateuseareae601 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2605 extends js.Object
+  sealed trait Privateuseareae602 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2606 extends js.Object
+  sealed trait Privateuseareae603 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu260E extends js.Object
+  sealed trait Privateuseareae604 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2630 extends js.Object
+  sealed trait Privateuseareae605 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2665 extends js.Object
+  sealed trait Privateuseareae606 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2691 extends js.Object
+  sealed trait Privateuseareae607 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2709 extends js.Object
+  sealed trait Privateuseareae608 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu270E extends js.Object
+  sealed trait Privateuseareae609 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2713 extends js.Object
+  sealed trait Privateuseareae60a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2717 extends js.Object
+  sealed trait Privateuseareae60b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu29BF extends js.Object
+  sealed trait Privateuseareae60c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE600 extends js.Object
+  sealed trait Privateuseareae60d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE601 extends js.Object
+  sealed trait Privateuseareae60e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE602 extends js.Object
+  sealed trait Privateuseareae60f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE603 extends js.Object
+  sealed trait Privateuseareae610 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE604 extends js.Object
+  sealed trait Privateuseareae611 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE605 extends js.Object
+  sealed trait Privateuseareae612 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE606 extends js.Object
+  sealed trait Privateuseareae613 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE607 extends js.Object
+  sealed trait Privateuseareae614 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE608 extends js.Object
+  sealed trait Privateuseareae615 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE609 extends js.Object
+  sealed trait Privateuseareae616 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE60A extends js.Object
+  sealed trait Privateuseareae617 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE60B extends js.Object
+  sealed trait Privateuseareae618 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE60C extends js.Object
+  sealed trait Privateuseareae619 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE60D extends js.Object
+  sealed trait Privateuseareae61a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE60E extends js.Object
+  sealed trait Privateuseareae61b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE60F extends js.Object
+  sealed trait Privateuseareae61c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE610 extends js.Object
+  sealed trait Privateuseareae61d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE611 extends js.Object
+  sealed trait Privateuseareae61e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE612 extends js.Object
+  sealed trait Privateuseareae61f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE613 extends js.Object
+  sealed trait Privateuseareae620 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE614 extends js.Object
+  sealed trait Privateuseareae621 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE615 extends js.Object
+  sealed trait Privateuseareae622 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE616 extends js.Object
+  sealed trait Privateuseareae623 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE617 extends js.Object
+  sealed trait Privateuseareae624 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE618 extends js.Object
+  sealed trait Privateuseareae625 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE619 extends js.Object
+  sealed trait Privateuseareae626 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE61A extends js.Object
+  sealed trait Privateuseareae627 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE61B extends js.Object
+  sealed trait Privateuseareae628 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE61C extends js.Object
+  sealed trait Privateuseareae629 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE61D extends js.Object
+  sealed trait Privateuseareae62a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE61E extends js.Object
+  sealed trait Privateuseareae62b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE61F extends js.Object
+  sealed trait Privateuseareae62c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE620 extends js.Object
+  sealed trait Privateuseareae62d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE621 extends js.Object
+  sealed trait Privateuseareae62e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE622 extends js.Object
+  sealed trait Privateuseareae62f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE623 extends js.Object
+  sealed trait Privateuseareae630 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE624 extends js.Object
+  sealed trait Privateuseareae631 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE625 extends js.Object
+  sealed trait Privateuseareae632 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE626 extends js.Object
+  sealed trait Privateuseareae633 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE627 extends js.Object
+  sealed trait Privateuseareae634 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE628 extends js.Object
+  sealed trait Privateuseareae635 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE629 extends js.Object
+  sealed trait Privateuseareae636 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE62A extends js.Object
+  sealed trait Privateuseareae637 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE62B extends js.Object
+  sealed trait Privateuseareae638 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE62C extends js.Object
+  sealed trait Privateuseareae639 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE62D extends js.Object
+  sealed trait Privateuseareae63a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE62E extends js.Object
+  sealed trait Privateuseareae63b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE62F extends js.Object
+  sealed trait Privateuseareae63c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE630 extends js.Object
+  sealed trait Privateuseareae63d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE631 extends js.Object
+  sealed trait Privateuseareae63e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE632 extends js.Object
+  sealed trait Privateuseareae63f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE633 extends js.Object
+  sealed trait Privateuseareae640 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE634 extends js.Object
+  sealed trait Privateuseareae641 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE635 extends js.Object
+  sealed trait Privateuseareae642 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE636 extends js.Object
+  sealed trait Privateuseareae643 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE637 extends js.Object
+  sealed trait Privateuseareae644 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE638 extends js.Object
+  sealed trait Privateuseareae645 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE639 extends js.Object
+  sealed trait Privateuseareae646 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE63A extends js.Object
+  sealed trait Privateuseareae647 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE63B extends js.Object
+  sealed trait Privateuseareae648 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE63C extends js.Object
+  sealed trait Privateuseareae649 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE63D extends js.Object
+  sealed trait Privateuseareae64a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE63E extends js.Object
+  sealed trait Privateuseareae64b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE63F extends js.Object
+  sealed trait Privateuseareae64c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE640 extends js.Object
+  sealed trait Privateuseareae64d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE641 extends js.Object
+  sealed trait Privateuseareae64e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE642 extends js.Object
+  sealed trait Privateuseareae64f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE643 extends js.Object
+  sealed trait Privateuseareae650 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE644 extends js.Object
+  sealed trait Privateuseareae651 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE645 extends js.Object
+  sealed trait Privateuseareae652 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE646 extends js.Object
+  sealed trait Privateuseareae653 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE647 extends js.Object
+  sealed trait Privateuseareae654 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE648 extends js.Object
+  sealed trait Privateuseareae655 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE649 extends js.Object
+  sealed trait Privateuseareae656 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE64A extends js.Object
+  sealed trait Privateuseareae657 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE64B extends js.Object
+  sealed trait Privateuseareae658 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE64C extends js.Object
+  sealed trait Privateuseareae659 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE64D extends js.Object
+  sealed trait Privateuseareae65a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE64E extends js.Object
+  sealed trait Privateuseareae65b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE64F extends js.Object
+  sealed trait Privateuseareae65c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE650 extends js.Object
+  sealed trait Privateuseareae65d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE651 extends js.Object
+  sealed trait Privateuseareae65e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE652 extends js.Object
+  sealed trait Privateuseareae65f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE653 extends js.Object
+  sealed trait Privateuseareae660 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE654 extends js.Object
+  sealed trait Privateuseareae661 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE655 extends js.Object
+  sealed trait Privateuseareae662 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE656 extends js.Object
+  sealed trait Privateuseareae663 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE657 extends js.Object
+  sealed trait Privateuseareae664 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE658 extends js.Object
+  sealed trait Privateuseareae665 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE659 extends js.Object
+  sealed trait Privateuseareae666 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE65A extends js.Object
+  sealed trait Privateuseareae667 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE65B extends js.Object
+  sealed trait Privateuseareae668 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE65C extends js.Object
+  sealed trait Privateuseareae669 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE65D extends js.Object
+  sealed trait Privateuseareae66a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE65E extends js.Object
+  sealed trait Privateuseareae66b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE65F extends js.Object
+  sealed trait Privateuseareae66c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE660 extends js.Object
+  sealed trait Privateuseareae66d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE661 extends js.Object
+  sealed trait Privateuseareae66e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE662 extends js.Object
+  sealed trait Privateuseareae66f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE663 extends js.Object
+  sealed trait Privateuseareae670 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE664 extends js.Object
+  sealed trait Privateuseareae671 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE665 extends js.Object
+  sealed trait Privateuseareae672 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE666 extends js.Object
+  sealed trait Privateuseareae673 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE667 extends js.Object
+  sealed trait Privateuseareae674 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE668 extends js.Object
+  sealed trait Privateuseareae675 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE669 extends js.Object
+  sealed trait Privateuseareae676 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE66A extends js.Object
+  sealed trait Privateuseareae677 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE66B extends js.Object
+  sealed trait Privateuseareae678 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE66C extends js.Object
+  sealed trait Privateuseareae679 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE66D extends js.Object
+  sealed trait Privateuseareae67a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE66E extends js.Object
+  sealed trait Privateuseareae67b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE66F extends js.Object
+  sealed trait Privateuseareae67c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE670 extends js.Object
+  sealed trait Privateuseareae67d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE671 extends js.Object
+  sealed trait Privateuseareae67e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE672 extends js.Object
+  sealed trait Privateuseareae67f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE673 extends js.Object
+  sealed trait Privateuseareae680 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE674 extends js.Object
+  sealed trait Privateuseareae681 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE675 extends js.Object
+  sealed trait Privateuseareae682 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE676 extends js.Object
+  sealed trait Privateuseareae683 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE677 extends js.Object
+  sealed trait Privateuseareae684 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE678 extends js.Object
+  sealed trait Privateuseareae685 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE679 extends js.Object
+  sealed trait Privateuseareae686 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE67A extends js.Object
+  sealed trait Privateuseareae687 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE67B extends js.Object
+  sealed trait Privateuseareae688 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE67C extends js.Object
+  sealed trait Privateuseareae689 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE67D extends js.Object
+  sealed trait Privateuseareae68a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE67E extends js.Object
+  sealed trait Privateuseareae68b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE67F extends js.Object
+  sealed trait Privateuseareae68c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE680 extends js.Object
+  sealed trait Privateuseareae68d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE681 extends js.Object
+  sealed trait Privateuseareae68e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE682 extends js.Object
+  sealed trait Privateuseareae68f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE683 extends js.Object
+  sealed trait Privateuseareae690 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE684 extends js.Object
+  sealed trait Privateuseareae691 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE685 extends js.Object
+  sealed trait Privateuseareae692 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE686 extends js.Object
+  sealed trait Privateuseareae693 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE687 extends js.Object
+  sealed trait Privateuseareae694 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE688 extends js.Object
+  sealed trait Privateuseareae695 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE689 extends js.Object
+  sealed trait Privateuseareae696 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE68A extends js.Object
+  sealed trait Privateuseareae697 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE68B extends js.Object
+  sealed trait Privateuseareae698 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE68C extends js.Object
+  sealed trait Privateuseareae699 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE68D extends js.Object
+  sealed trait Privateuseareae69a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE68E extends js.Object
+  sealed trait Privateuseareae69b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE68F extends js.Object
+  sealed trait Privateuseareae69c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE690 extends js.Object
+  sealed trait Privateuseareae69d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE691 extends js.Object
+  sealed trait Privateuseareae69e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE692 extends js.Object
+  sealed trait Privateuseareae69f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE693 extends js.Object
+  sealed trait Privateuseareae6a0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE694 extends js.Object
+  sealed trait Privateuseareae6a1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE695 extends js.Object
+  sealed trait Privateuseareae6a2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE696 extends js.Object
+  sealed trait Privateuseareae6a3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE697 extends js.Object
+  sealed trait Privateuseareae6a4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE698 extends js.Object
+  sealed trait Privateuseareae6a5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE699 extends js.Object
+  sealed trait Privateuseareae6a6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE69A extends js.Object
+  sealed trait Privateuseareae6a7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE69B extends js.Object
+  sealed trait Privateuseareae6a8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE69C extends js.Object
+  sealed trait Privateuseareae6a9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE69D extends js.Object
+  sealed trait Privateuseareae6aa extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE69E extends js.Object
+  sealed trait Privateuseareae6ab extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE69F extends js.Object
+  sealed trait Privateuseareae6ac extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A0 extends js.Object
+  sealed trait Privateuseareae6ad extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A1 extends js.Object
+  sealed trait Privateuseareae6ae extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A2 extends js.Object
+  sealed trait Privateuseareae6af extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A3 extends js.Object
+  sealed trait Privateuseareae6b0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A4 extends js.Object
+  sealed trait Privateuseareae6b1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A5 extends js.Object
+  sealed trait Privateuseareae6b2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A6 extends js.Object
+  sealed trait Privateuseareae6b3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A7 extends js.Object
+  sealed trait Privateuseareae6b4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A8 extends js.Object
+  sealed trait Privateuseareae6b5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6A9 extends js.Object
+  sealed trait Privateuseareae6b6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6AA extends js.Object
+  sealed trait Privateuseareae6b7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6AB extends js.Object
+  sealed trait Privateuseareae6b8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6AC extends js.Object
+  sealed trait Privateuseareae6b9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6AD extends js.Object
+  sealed trait Privateuseareae6ba extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6AE extends js.Object
+  sealed trait Privateuseareae6bb extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6AF extends js.Object
+  sealed trait Privateuseareae6bc extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B0 extends js.Object
+  sealed trait Privateuseareae6bd extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B1 extends js.Object
+  sealed trait Privateuseareae6be extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B2 extends js.Object
+  sealed trait Privateuseareae6bf extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B3 extends js.Object
+  sealed trait Privateuseareae6c0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B4 extends js.Object
+  sealed trait Privateuseareae6c1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B5 extends js.Object
+  sealed trait Privateuseareae6c2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B6 extends js.Object
+  sealed trait Privateuseareae6c3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B7 extends js.Object
+  sealed trait Privateuseareae6c4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B8 extends js.Object
+  sealed trait Privateuseareae6c5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6B9 extends js.Object
+  sealed trait Privateuseareae6c6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6BA extends js.Object
+  sealed trait Privateuseareae6c7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6BB extends js.Object
+  sealed trait Privateuseareae6c8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6BC extends js.Object
+  sealed trait Privateuseareae6c9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6BD extends js.Object
+  sealed trait Privateuseareae6ca extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6BE extends js.Object
+  sealed trait Privateuseareae6cb extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6BF extends js.Object
+  sealed trait Privateuseareae6cc extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C0 extends js.Object
+  sealed trait Privateuseareae6cd extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C1 extends js.Object
+  sealed trait Privateuseareae6ce extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C2 extends js.Object
+  sealed trait Privateuseareae6cf extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C3 extends js.Object
+  sealed trait Privateuseareae6d0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C4 extends js.Object
+  sealed trait Privateuseareae6d1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C5 extends js.Object
+  sealed trait Privateuseareae6d2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C6 extends js.Object
+  sealed trait Privateuseareae6d3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C7 extends js.Object
+  sealed trait Privateuseareae6d4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C8 extends js.Object
+  sealed trait Privateuseareae6d5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6C9 extends js.Object
+  sealed trait Privateuseareae6d6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6CA extends js.Object
+  sealed trait Privateuseareae6d7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6CB extends js.Object
+  sealed trait Privateuseareae6d8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6CC extends js.Object
+  sealed trait Privateuseareae6d9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6CD extends js.Object
+  sealed trait Privateuseareae6da extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6CE extends js.Object
+  sealed trait Privateuseareae6db extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6CF extends js.Object
+  sealed trait Privateuseareae6dc extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D0 extends js.Object
+  sealed trait Privateuseareae6dd extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D1 extends js.Object
+  sealed trait Privateuseareae6de extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D2 extends js.Object
+  sealed trait Privateuseareae6df extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D3 extends js.Object
+  sealed trait Privateuseareae6e0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D4 extends js.Object
+  sealed trait Privateuseareae6e1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D5 extends js.Object
+  sealed trait Privateuseareae6e2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D6 extends js.Object
+  sealed trait Privateuseareae6e3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D7 extends js.Object
+  sealed trait Privateuseareae6e4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D8 extends js.Object
+  sealed trait Privateuseareae6e5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6D9 extends js.Object
+  sealed trait Privateuseareae6e6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6DA extends js.Object
+  sealed trait Privateuseareae6e7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6DB extends js.Object
+  sealed trait Privateuseareae6e8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6DC extends js.Object
+  sealed trait Privateuseareae6e9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6DD extends js.Object
+  sealed trait Privateuseareae6ea extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6DE extends js.Object
+  sealed trait Privateuseareae6eb extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6DF extends js.Object
+  sealed trait Privateuseareae6ec extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E0 extends js.Object
+  sealed trait Privateuseareae6ed extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E1 extends js.Object
+  sealed trait Privateuseareae6ee extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E2 extends js.Object
+  sealed trait Privateuseareae6ef extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E3 extends js.Object
+  sealed trait Privateuseareae6f0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E4 extends js.Object
+  sealed trait Privateuseareae6f1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E5 extends js.Object
+  sealed trait Privateuseareae6f2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E6 extends js.Object
+  sealed trait Privateuseareae6f3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E7 extends js.Object
+  sealed trait Privateuseareae6f4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E8 extends js.Object
+  sealed trait Privateuseareae6f5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6E9 extends js.Object
+  sealed trait Privateuseareae6f6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6EA extends js.Object
+  sealed trait Privateuseareae6f7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6EB extends js.Object
+  sealed trait Privateuseareae6f8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6EC extends js.Object
+  sealed trait Privateuseareae6f9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6ED extends js.Object
+  sealed trait Privateuseareae6fa extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6EE extends js.Object
+  sealed trait Privateuseareae6fb extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6EF extends js.Object
+  sealed trait Privateuseareae6fc extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F0 extends js.Object
+  sealed trait Privateuseareae6fd extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F1 extends js.Object
+  sealed trait Privateuseareae6fe extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F2 extends js.Object
+  sealed trait Privateuseareae6ff extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F3 extends js.Object
+  sealed trait Privateuseareae701 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F4 extends js.Object
+  sealed trait Privateuseareae702 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F5 extends js.Object
+  sealed trait Privateuseareae703 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F6 extends js.Object
+  sealed trait Privateuseareae704 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F7 extends js.Object
+  sealed trait Privateuseareae705 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F8 extends js.Object
+  sealed trait Privateuseareae706 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6F9 extends js.Object
+  sealed trait Privateuseareae707 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6FA extends js.Object
+  sealed trait Privateuseareae708 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6FB extends js.Object
+  sealed trait Privateuseareae709 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6FC extends js.Object
+  sealed trait Privateuseareae70a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6FD extends js.Object
+  sealed trait Privateuseareae70b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6FE extends js.Object
+  sealed trait Privateuseareae70c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE6FF extends js.Object
+  sealed trait Privateuseareae70d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE701 extends js.Object
+  sealed trait Privateuseareae70e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE702 extends js.Object
+  sealed trait Privateuseareae70f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE703 extends js.Object
+  sealed trait Privateuseareae715 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE704 extends js.Object
+  sealed trait Privateuseareae716 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE705 extends js.Object
+  sealed trait Privateuseareae717 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE706 extends js.Object
+  sealed trait Privateuseareae718 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE707 extends js.Object
+  sealed trait Privateuseareae719 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE708 extends js.Object
+  sealed trait Privateuseareae71a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE709 extends js.Object
+  sealed trait Privateuseareae71b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE70A extends js.Object
+  sealed trait Privateuseareae71c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE70B extends js.Object
+  sealed trait Privateuseareae71d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE70C extends js.Object
+  sealed trait Privateuseareae71e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE70D extends js.Object
+  sealed trait Privateuseareae71f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE70E extends js.Object
+  sealed trait Privateuseareae720 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE70F extends js.Object
+  sealed trait Privateuseareae721 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE715 extends js.Object
+  sealed trait Privateuseareae722 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE716 extends js.Object
+  sealed trait Privateuseareae723 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE717 extends js.Object
+  sealed trait Privateuseareae724 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE718 extends js.Object
+  sealed trait Privateuseareae725 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE719 extends js.Object
+  sealed trait Privateuseareae726 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE71A extends js.Object
+  sealed trait Privateuseareae727 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE71B extends js.Object
+  sealed trait Privateuseareae728 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE71C extends js.Object
+  sealed trait Privateuseareae729 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE71D extends js.Object
+  sealed trait Privateuseareae72a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE71E extends js.Object
+  sealed trait Privateuseareae72b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE71F extends js.Object
+  sealed trait Privateuseareae72c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE720 extends js.Object
+  sealed trait Privateuseareae72d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE721 extends js.Object
+  sealed trait Privateuseareae72e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE722 extends js.Object
+  sealed trait Privateuseareae72f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE723 extends js.Object
+  sealed trait Privateuseareae730 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE724 extends js.Object
+  sealed trait Privateuseareae731 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE725 extends js.Object
+  sealed trait Privateuseareae732 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE726 extends js.Object
+  sealed trait Privateuseareae733 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE727 extends js.Object
+  sealed trait Privateuseareae734 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE728 extends js.Object
+  sealed trait Privateuseareae735 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE729 extends js.Object
+  sealed trait Privateuseareae736 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE72A extends js.Object
+  sealed trait Privateuseareae737 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE72B extends js.Object
+  sealed trait Privateuseareae738 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE72C extends js.Object
+  sealed trait Privateuseareae739 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE72D extends js.Object
+  sealed trait Privateuseareae73a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE72E extends js.Object
+  sealed trait Privateuseareae73b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE72F extends js.Object
+  sealed trait Privateuseareae73c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE730 extends js.Object
+  sealed trait Privateuseareae73d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE731 extends js.Object
+  sealed trait Privateuseareae73e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE732 extends js.Object
+  sealed trait Privateuseareae73f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE733 extends js.Object
+  sealed trait Privateuseareae740 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE734 extends js.Object
+  sealed trait Privateuseareae741 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE735 extends js.Object
+  sealed trait Privateuseareae742 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE736 extends js.Object
+  sealed trait Privateuseareae743 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE737 extends js.Object
+  sealed trait Privateuseareae744 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE738 extends js.Object
+  sealed trait Privateuseareae745 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE739 extends js.Object
+  sealed trait Privateuseareae746 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE73A extends js.Object
+  sealed trait Privateuseareae747 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE73B extends js.Object
+  sealed trait Privateuseareae748 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE73C extends js.Object
+  sealed trait Privateuseareae749 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE73D extends js.Object
+  sealed trait Privateuseareae74a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE73E extends js.Object
+  sealed trait Privateuseareae74b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE73F extends js.Object
+  sealed trait Privateuseareae74f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE740 extends js.Object
+  sealed trait Privateuseareae750 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE741 extends js.Object
+  sealed trait Privateuseareae751 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE742 extends js.Object
+  sealed trait Privateuseareae752 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE743 extends js.Object
+  sealed trait Privateuseareae753 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE744 extends js.Object
+  sealed trait Privateuseareae754 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE745 extends js.Object
+  sealed trait Privateuseareae755 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE746 extends js.Object
+  sealed trait Privateuseareae756 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE747 extends js.Object
+  sealed trait Privateuseareae757 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE748 extends js.Object
+  sealed trait Privateuseareae758 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE749 extends js.Object
+  sealed trait Privateuseareae759 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE74A extends js.Object
+  sealed trait Privateuseareae75a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE74B extends js.Object
+  sealed trait Privateuseareae75b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE74F extends js.Object
+  sealed trait Privateuseareae75c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE750 extends js.Object
+  sealed trait Privateuseareae75d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE751 extends js.Object
+  sealed trait Privateuseareae75e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE752 extends js.Object
+  sealed trait Privateuseareae75f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE753 extends js.Object
+  sealed trait Privateuseareae760 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE754 extends js.Object
+  sealed trait Privateuseareae761 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE755 extends js.Object
+  sealed trait Privateuseareae762 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE756 extends js.Object
+  sealed trait Privateuseareae763 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE757 extends js.Object
+  sealed trait Privateuseareae764 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE758 extends js.Object
+  sealed trait Privateuseareae765 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE759 extends js.Object
+  sealed trait Privateuseareae768 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE75A extends js.Object
+  sealed trait Privateuseareae769 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE75B extends js.Object
+  sealed trait Privateuseareae76a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE75C extends js.Object
+  sealed trait Privateuseareae76b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE75D extends js.Object
+  sealed trait Privateuseareae76c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE75E extends js.Object
+  sealed trait Privateuseareae76f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE75F extends js.Object
+  sealed trait Privateuseareae770 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE760 extends js.Object
+  sealed trait Privateuseareae771 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE761 extends js.Object
+  sealed trait Privateuseareae772 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE762 extends js.Object
+  sealed trait Privateuseareae773 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE763 extends js.Object
+  sealed trait Privateuseareae774 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE764 extends js.Object
+  sealed trait Privateuseareae775 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE765 extends js.Object
+  sealed trait Privateuseareae776 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE768 extends js.Object
+  sealed trait Privateuseareae777 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE769 extends js.Object
+  sealed trait Privateuseareae778 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE76A extends js.Object
+  sealed trait Privateuseareae779 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE76B extends js.Object
+  sealed trait Privateuseareae78a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE76C extends js.Object
+  sealed trait Privateuseareae78b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE76F extends js.Object
+  sealed trait Privateuseareae78c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE770 extends js.Object
+  sealed trait Privateuseareae78d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE771 extends js.Object
+  sealed trait Privateuseareae78e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE772 extends js.Object
+  sealed trait Privateuseareae78f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE773 extends js.Object
+  sealed trait Privateuseareae790 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE774 extends js.Object
+  sealed trait Privateuseareae791 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE775 extends js.Object
+  sealed trait Privateuseareae792 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE776 extends js.Object
+  sealed trait Privateuseareae793 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE777 extends js.Object
+  sealed trait Privateuseareae794 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE778 extends js.Object
+  sealed trait Privateuseareae795 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE779 extends js.Object
+  sealed trait Privateuseareae796 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE78A extends js.Object
+  sealed trait Privateuseareae797 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE78B extends js.Object
+  sealed trait Privateuseareae798 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE78C extends js.Object
+  sealed trait Privateuseareae799 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE78D extends js.Object
+  sealed trait Privateuseareae79a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE78E extends js.Object
+  sealed trait Privateuseareae79b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE78F extends js.Object
+  sealed trait Privateuseareae79c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE790 extends js.Object
+  sealed trait Privateuseareae79d extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE791 extends js.Object
+  sealed trait Privateuseareae79e extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE792 extends js.Object
+  sealed trait Privateuseareae79f extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE793 extends js.Object
+  sealed trait Privateuseareae7a2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE794 extends js.Object
+  sealed trait Privateuseareae7a3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE795 extends js.Object
+  sealed trait Privateuseareae7a4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE796 extends js.Object
+  sealed trait Privateuseareae7a5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE797 extends js.Object
+  sealed trait Privateuseareae7a6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE798 extends js.Object
+  sealed trait Privateuseareae7a7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE799 extends js.Object
+  sealed trait Privateuseareae7a8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE79A extends js.Object
+  sealed trait Privateuseareae7a9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE79B extends js.Object
+  sealed trait Privateuseareae7b0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE79C extends js.Object
+  sealed trait Privateuseareae7b1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE79D extends js.Object
+  sealed trait Privateuseareae7b2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE79E extends js.Object
+  sealed trait Privateuseareae7b3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE79F extends js.Object
+  sealed trait Privateuseareae7b4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A2 extends js.Object
+  sealed trait Privateuseareae7b5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A3 extends js.Object
+  sealed trait Privateuseareae7b6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A4 extends js.Object
+  sealed trait Privateuseareae7b7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A5 extends js.Object
+  sealed trait Privateuseareae7b8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A6 extends js.Object
+  sealed trait Privateuseareae7b9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A7 extends js.Object
+  sealed trait Privateuseareae7c0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A8 extends js.Object
+  sealed trait Privateuseareae7c1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7A9 extends js.Object
+  sealed trait Privateuseareae7c2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B0 extends js.Object
+  sealed trait Privateuseareae7c3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B1 extends js.Object
+  sealed trait Privateuseareae7c4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B2 extends js.Object
+  sealed trait Privateuseareae7c5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B3 extends js.Object
+  sealed trait Privateuseareae7c6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B4 extends js.Object
+  sealed trait Privateuseareae7c7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B5 extends js.Object
+  sealed trait Privateuseareae7c8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B6 extends js.Object
+  sealed trait Privateuseareae7c9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B7 extends js.Object
+  sealed trait Privateuseareae7d0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B8 extends js.Object
+  sealed trait Privateuseareae7d1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7B9 extends js.Object
+  sealed trait Privateuseareae7d2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C0 extends js.Object
+  sealed trait Privateuseareae7d3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C1 extends js.Object
+  sealed trait Privateuseareae7d4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C2 extends js.Object
+  sealed trait Privateuseareae7d5 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C3 extends js.Object
+  sealed trait Privateuseareae7d6 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C4 extends js.Object
+  sealed trait Privateuseareae7d7 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C5 extends js.Object
+  sealed trait Privateuseareae7d8 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C6 extends js.Object
+  sealed trait Privateuseareae7d9 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C7 extends js.Object
+  sealed trait Privateuseareae7e0 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C8 extends js.Object
+  sealed trait Privateuseareae7e1 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7C9 extends js.Object
+  sealed trait Privateuseareae7e2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D0 extends js.Object
+  sealed trait Privateuseareae7e3 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D1 extends js.Object
+  sealed trait Privateuseareae7e4 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D2 extends js.Object
+  sealed trait Privateuseareae900 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D3 extends js.Object
+  sealed trait Privateuseareae901 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D4 extends js.Object
+  sealed trait Privateuseareae902 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D5 extends js.Object
+  sealed trait Privateuseareae903 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D6 extends js.Object
+  sealed trait Privateuseareae904 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D7 extends js.Object
+  sealed trait Privateuseareae905 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D8 extends js.Object
+  sealed trait Privateuseareae906 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7D9 extends js.Object
+  sealed trait Privateuseareae907 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7E0 extends js.Object
+  sealed trait Privateuseareae908 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7E1 extends js.Object
+  sealed trait Privateuseareae909 extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7E2 extends js.Object
+  sealed trait Privateuseareae90a extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7E3 extends js.Object
+  sealed trait Privateuseareae90b extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE7E4 extends js.Object
+  sealed trait Privateuseareae90c extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE900 extends js.Object
+  sealed trait Questionmark extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE901 extends js.Object
+  sealed trait Rightpointinganglebracket extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE902 extends js.Object
+  sealed trait Rightwardsarrow extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE903 extends js.Object
+  sealed trait Southeastarrow extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE904 extends js.Object
+  sealed trait Southwestarrow extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE905 extends js.Object
+  sealed trait Timerclock extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE906 extends js.Object
+  sealed trait Trigramforheaven extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE907 extends js.Object
+  sealed trait Undosymbol extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE908 extends js.Object
+  sealed trait Uparrowhead extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE909 extends js.Object
+  sealed trait `Updownarrow ` extends js.Object
   
   @js.native
-  sealed trait DOLLAR extends js.Object
+  sealed trait `Upwardsarrow ` extends js.Object
+  
+  @js.native
+  sealed trait Whitestar extends js.Object
   
   @js.native
   sealed trait add extends IconName
@@ -1546,7 +1549,7 @@ object atBlueprintjsIconsStrings {
   sealed trait `arrows-vertical` extends IconName
   
   @js.native
-  sealed trait asterisk extends IconName
+  sealed trait asterisk_ extends IconName
   
   @js.native
   sealed trait `automatic-updates` extends IconName
@@ -1583,6 +1586,9 @@ object atBlueprintjsIconsStrings {
   
   @js.native
   sealed trait briefcase extends IconName
+  
+  @js.native
+  sealed trait `bring-data` extends IconName
   
   @js.native
   sealed trait build extends IconName
@@ -1663,13 +1669,13 @@ object atBlueprintjsIconsStrings {
   sealed trait clipboard extends IconName
   
   @js.native
-  sealed trait cloud extends IconName
-  
-  @js.native
   sealed trait `cloud-download` extends IconName
   
   @js.native
   sealed trait `cloud-upload` extends IconName
+  
+  @js.native
+  sealed trait cloud_ extends IconName
   
   @js.native
   sealed trait code extends IconName
@@ -1831,7 +1837,7 @@ object atBlueprintjsIconsStrings {
   sealed trait endorsed extends IconName
   
   @js.native
-  sealed trait envelope extends IconName
+  sealed trait envelope_ extends IconName
   
   @js.native
   sealed trait equals extends IconName
@@ -2782,6 +2788,9 @@ object atBlueprintjsIconsStrings {
   sealed trait torch extends IconName
   
   @js.native
+  sealed trait tractor extends IconName
+  
+  @js.native
   sealed trait train extends IconName
   
   @js.native
@@ -2798,6 +2807,9 @@ object atBlueprintjsIconsStrings {
   
   @js.native
   sealed trait `trending-up` extends IconName
+  
+  @js.native
+  sealed trait truck extends IconName
   
   @js.native
   sealed trait `two-columns` extends IconName
@@ -2892,968 +2904,976 @@ object atBlueprintjsIconsStrings {
   @js.native
   sealed trait `zoom-to-fit` extends IconName
   
+  @js.native
+  sealed trait Δ extends js.Object
+  
+  @js.native
+  sealed trait ℹ extends js.Object
+  
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def $: $ = "$".asInstanceOf[$]
   @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `?`: `?` = "?".asInstanceOf[`?`]
+  def Ballotx: Ballotx = "\u2717".asInstanceOf[Ballotx]
   @scala.inline
-  def BACKSLASHu0394: BACKSLASHu0394 = "\u0394".asInstanceOf[BACKSLASHu0394]
+  def Blackflag: Blackflag = "\u2691".asInstanceOf[Blackflag]
   @scala.inline
-  def BACKSLASHu2022: BACKSLASHu2022 = "\u2022".asInstanceOf[BACKSLASHu2022]
+  def Blackheartsuit: Blackheartsuit = "\u2665".asInstanceOf[Blackheartsuit]
   @scala.inline
-  def BACKSLASHu20AC: BACKSLASHu20AC = "\u20AC".asInstanceOf[BACKSLASHu20AC]
+  def Blackstar: Blackstar = "\u2605".asInstanceOf[Blackstar]
   @scala.inline
-  def BACKSLASHu2139: BACKSLASHu2139 = "\u2139".asInstanceOf[BACKSLASHu2139]
+  def Blacktelephone: Blacktelephone = "\u260E".asInstanceOf[Blacktelephone]
   @scala.inline
-  def BACKSLASHu2190: BACKSLASHu2190 = "\u2190".asInstanceOf[BACKSLASHu2190]
+  def Bullet: Bullet = "\u2022".asInstanceOf[Bullet]
   @scala.inline
-  def `BACKSLASHu2191 `: `BACKSLASHu2191 ` = "\u2191 ".asInstanceOf[`BACKSLASHu2191 `]
+  def Checkmark: Checkmark = "\u2713".asInstanceOf[Checkmark]
   @scala.inline
-  def BACKSLASHu2192: BACKSLASHu2192 = "\u2192".asInstanceOf[BACKSLASHu2192]
+  def Circledbullet: Circledbullet = "\u29BF".asInstanceOf[Circledbullet]
   @scala.inline
-  def `BACKSLASHu2193 `: `BACKSLASHu2193 ` = "\u2193 ".asInstanceOf[`BACKSLASHu2193 `]
+  def Cloud: Cloud = "\u2601".asInstanceOf[Cloud]
   @scala.inline
-  def `BACKSLASHu2194 `: `BACKSLASHu2194 ` = "\u2194 ".asInstanceOf[`BACKSLASHu2194 `]
+  def Continuousunderlinesymbol: Continuousunderlinesymbol = "\u2381".asInstanceOf[Continuousunderlinesymbol]
   @scala.inline
-  def `BACKSLASHu2195 `: `BACKSLASHu2195 ` = "\u2195 ".asInstanceOf[`BACKSLASHu2195 `]
+  def Downarrowhead: Downarrowhead = "\u2304".asInstanceOf[Downarrowhead]
   @scala.inline
-  def BACKSLASHu2196: BACKSLASHu2196 = "\u2196".asInstanceOf[BACKSLASHu2196]
+  def `Downwardsarrow `: `Downwardsarrow ` = "\u2193 ".asInstanceOf[`Downwardsarrow `]
   @scala.inline
-  def BACKSLASHu2197: BACKSLASHu2197 = "\u2197".asInstanceOf[BACKSLASHu2197]
+  def Ejectsymbol: Ejectsymbol = "\u23CF".asInstanceOf[Ejectsymbol]
   @scala.inline
-  def BACKSLASHu2198: BACKSLASHu2198 = "\u2198".asInstanceOf[BACKSLASHu2198]
+  def Envelope: Envelope = "\u2709".asInstanceOf[Envelope]
   @scala.inline
-  def BACKSLASHu2199: BACKSLASHu2199 = "\u2199".asInstanceOf[BACKSLASHu2199]
+  def Eurosign: Eurosign = "\u20AC".asInstanceOf[Eurosign]
   @scala.inline
-  def BACKSLASHu2212: BACKSLASHu2212 = "\u2212".asInstanceOf[BACKSLASHu2212]
+  def House: House = "\u2302".asInstanceOf[House]
   @scala.inline
-  def BACKSLASHu2302: BACKSLASHu2302 = "\u2302".asInstanceOf[BACKSLASHu2302]
+  def Leftpointinganglebracket: Leftpointinganglebracket = "\u2329".asInstanceOf[Leftpointinganglebracket]
   @scala.inline
-  def BACKSLASHu2303: BACKSLASHu2303 = "\u2303".asInstanceOf[BACKSLASHu2303]
+  def `Leftrightarrow `: `Leftrightarrow ` = "\u2194 ".asInstanceOf[`Leftrightarrow `]
   @scala.inline
-  def BACKSLASHu2304: BACKSLASHu2304 = "\u2304".asInstanceOf[BACKSLASHu2304]
+  def Leftwardsarrow: Leftwardsarrow = "\u2190".asInstanceOf[Leftwardsarrow]
   @scala.inline
-  def BACKSLASHu2329: BACKSLASHu2329 = "\u2329".asInstanceOf[BACKSLASHu2329]
+  def Lowerrightpencil: Lowerrightpencil = "\u270E".asInstanceOf[Lowerrightpencil]
   @scala.inline
-  def BACKSLASHu232A: BACKSLASHu232A = "\u232A".asInstanceOf[BACKSLASHu232A]
+  def Minussign: Minussign = "\u2212".asInstanceOf[Minussign]
   @scala.inline
-  def BACKSLASHu2381: BACKSLASHu2381 = "\u2381".asInstanceOf[BACKSLASHu2381]
+  def Northeastarrow: Northeastarrow = "\u2197".asInstanceOf[Northeastarrow]
   @scala.inline
-  def BACKSLASHu238C: BACKSLASHu238C = "\u238C".asInstanceOf[BACKSLASHu238C]
+  def Northwestarrow: Northwestarrow = "\u2196".asInstanceOf[Northwestarrow]
   @scala.inline
-  def BACKSLASHu2399: BACKSLASHu2399 = "\u2399".asInstanceOf[BACKSLASHu2399]
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
   @scala.inline
-  def BACKSLASHu23CF: BACKSLASHu23CF = "\u23CF".asInstanceOf[BACKSLASHu23CF]
+  def Printscreensymbol: Printscreensymbol = "\u2399".asInstanceOf[Printscreensymbol]
   @scala.inline
-  def BACKSLASHu23F2: BACKSLASHu23F2 = "\u23F2".asInstanceOf[BACKSLASHu23F2]
+  def Privateuseareae600: Privateuseareae600 = "\uE600".asInstanceOf[Privateuseareae600]
   @scala.inline
-  def BACKSLASHu2601: BACKSLASHu2601 = "\u2601".asInstanceOf[BACKSLASHu2601]
+  def Privateuseareae601: Privateuseareae601 = "\uE601".asInstanceOf[Privateuseareae601]
   @scala.inline
-  def BACKSLASHu2605: BACKSLASHu2605 = "\u2605".asInstanceOf[BACKSLASHu2605]
+  def Privateuseareae602: Privateuseareae602 = "\uE602".asInstanceOf[Privateuseareae602]
   @scala.inline
-  def BACKSLASHu2606: BACKSLASHu2606 = "\u2606".asInstanceOf[BACKSLASHu2606]
+  def Privateuseareae603: Privateuseareae603 = "\uE603".asInstanceOf[Privateuseareae603]
   @scala.inline
-  def BACKSLASHu260E: BACKSLASHu260E = "\u260E".asInstanceOf[BACKSLASHu260E]
+  def Privateuseareae604: Privateuseareae604 = "\uE604".asInstanceOf[Privateuseareae604]
   @scala.inline
-  def BACKSLASHu2630: BACKSLASHu2630 = "\u2630".asInstanceOf[BACKSLASHu2630]
+  def Privateuseareae605: Privateuseareae605 = "\uE605".asInstanceOf[Privateuseareae605]
   @scala.inline
-  def BACKSLASHu2665: BACKSLASHu2665 = "\u2665".asInstanceOf[BACKSLASHu2665]
+  def Privateuseareae606: Privateuseareae606 = "\uE606".asInstanceOf[Privateuseareae606]
   @scala.inline
-  def BACKSLASHu2691: BACKSLASHu2691 = "\u2691".asInstanceOf[BACKSLASHu2691]
+  def Privateuseareae607: Privateuseareae607 = "\uE607".asInstanceOf[Privateuseareae607]
   @scala.inline
-  def BACKSLASHu2709: BACKSLASHu2709 = "\u2709".asInstanceOf[BACKSLASHu2709]
+  def Privateuseareae608: Privateuseareae608 = "\uE608".asInstanceOf[Privateuseareae608]
   @scala.inline
-  def BACKSLASHu270E: BACKSLASHu270E = "\u270E".asInstanceOf[BACKSLASHu270E]
+  def Privateuseareae609: Privateuseareae609 = "\uE609".asInstanceOf[Privateuseareae609]
   @scala.inline
-  def BACKSLASHu2713: BACKSLASHu2713 = "\u2713".asInstanceOf[BACKSLASHu2713]
+  def Privateuseareae60a: Privateuseareae60a = "\uE60A".asInstanceOf[Privateuseareae60a]
   @scala.inline
-  def BACKSLASHu2717: BACKSLASHu2717 = "\u2717".asInstanceOf[BACKSLASHu2717]
+  def Privateuseareae60b: Privateuseareae60b = "\uE60B".asInstanceOf[Privateuseareae60b]
   @scala.inline
-  def BACKSLASHu29BF: BACKSLASHu29BF = "\u29BF".asInstanceOf[BACKSLASHu29BF]
+  def Privateuseareae60c: Privateuseareae60c = "\uE60C".asInstanceOf[Privateuseareae60c]
   @scala.inline
-  def BACKSLASHuE600: BACKSLASHuE600 = "\uE600".asInstanceOf[BACKSLASHuE600]
+  def Privateuseareae60d: Privateuseareae60d = "\uE60D".asInstanceOf[Privateuseareae60d]
   @scala.inline
-  def BACKSLASHuE601: BACKSLASHuE601 = "\uE601".asInstanceOf[BACKSLASHuE601]
+  def Privateuseareae60e: Privateuseareae60e = "\uE60E".asInstanceOf[Privateuseareae60e]
   @scala.inline
-  def BACKSLASHuE602: BACKSLASHuE602 = "\uE602".asInstanceOf[BACKSLASHuE602]
+  def Privateuseareae60f: Privateuseareae60f = "\uE60F".asInstanceOf[Privateuseareae60f]
   @scala.inline
-  def BACKSLASHuE603: BACKSLASHuE603 = "\uE603".asInstanceOf[BACKSLASHuE603]
+  def Privateuseareae610: Privateuseareae610 = "\uE610".asInstanceOf[Privateuseareae610]
   @scala.inline
-  def BACKSLASHuE604: BACKSLASHuE604 = "\uE604".asInstanceOf[BACKSLASHuE604]
+  def Privateuseareae611: Privateuseareae611 = "\uE611".asInstanceOf[Privateuseareae611]
   @scala.inline
-  def BACKSLASHuE605: BACKSLASHuE605 = "\uE605".asInstanceOf[BACKSLASHuE605]
+  def Privateuseareae612: Privateuseareae612 = "\uE612".asInstanceOf[Privateuseareae612]
   @scala.inline
-  def BACKSLASHuE606: BACKSLASHuE606 = "\uE606".asInstanceOf[BACKSLASHuE606]
+  def Privateuseareae613: Privateuseareae613 = "\uE613".asInstanceOf[Privateuseareae613]
   @scala.inline
-  def BACKSLASHuE607: BACKSLASHuE607 = "\uE607".asInstanceOf[BACKSLASHuE607]
+  def Privateuseareae614: Privateuseareae614 = "\uE614".asInstanceOf[Privateuseareae614]
   @scala.inline
-  def BACKSLASHuE608: BACKSLASHuE608 = "\uE608".asInstanceOf[BACKSLASHuE608]
+  def Privateuseareae615: Privateuseareae615 = "\uE615".asInstanceOf[Privateuseareae615]
   @scala.inline
-  def BACKSLASHuE609: BACKSLASHuE609 = "\uE609".asInstanceOf[BACKSLASHuE609]
+  def Privateuseareae616: Privateuseareae616 = "\uE616".asInstanceOf[Privateuseareae616]
   @scala.inline
-  def BACKSLASHuE60A: BACKSLASHuE60A = "\uE60A".asInstanceOf[BACKSLASHuE60A]
+  def Privateuseareae617: Privateuseareae617 = "\uE617".asInstanceOf[Privateuseareae617]
   @scala.inline
-  def BACKSLASHuE60B: BACKSLASHuE60B = "\uE60B".asInstanceOf[BACKSLASHuE60B]
+  def Privateuseareae618: Privateuseareae618 = "\uE618".asInstanceOf[Privateuseareae618]
   @scala.inline
-  def BACKSLASHuE60C: BACKSLASHuE60C = "\uE60C".asInstanceOf[BACKSLASHuE60C]
+  def Privateuseareae619: Privateuseareae619 = "\uE619".asInstanceOf[Privateuseareae619]
   @scala.inline
-  def BACKSLASHuE60D: BACKSLASHuE60D = "\uE60D".asInstanceOf[BACKSLASHuE60D]
+  def Privateuseareae61a: Privateuseareae61a = "\uE61A".asInstanceOf[Privateuseareae61a]
   @scala.inline
-  def BACKSLASHuE60E: BACKSLASHuE60E = "\uE60E".asInstanceOf[BACKSLASHuE60E]
+  def Privateuseareae61b: Privateuseareae61b = "\uE61B".asInstanceOf[Privateuseareae61b]
   @scala.inline
-  def BACKSLASHuE60F: BACKSLASHuE60F = "\uE60F".asInstanceOf[BACKSLASHuE60F]
+  def Privateuseareae61c: Privateuseareae61c = "\uE61C".asInstanceOf[Privateuseareae61c]
   @scala.inline
-  def BACKSLASHuE610: BACKSLASHuE610 = "\uE610".asInstanceOf[BACKSLASHuE610]
+  def Privateuseareae61d: Privateuseareae61d = "\uE61D".asInstanceOf[Privateuseareae61d]
   @scala.inline
-  def BACKSLASHuE611: BACKSLASHuE611 = "\uE611".asInstanceOf[BACKSLASHuE611]
+  def Privateuseareae61e: Privateuseareae61e = "\uE61E".asInstanceOf[Privateuseareae61e]
   @scala.inline
-  def BACKSLASHuE612: BACKSLASHuE612 = "\uE612".asInstanceOf[BACKSLASHuE612]
+  def Privateuseareae61f: Privateuseareae61f = "\uE61F".asInstanceOf[Privateuseareae61f]
   @scala.inline
-  def BACKSLASHuE613: BACKSLASHuE613 = "\uE613".asInstanceOf[BACKSLASHuE613]
+  def Privateuseareae620: Privateuseareae620 = "\uE620".asInstanceOf[Privateuseareae620]
   @scala.inline
-  def BACKSLASHuE614: BACKSLASHuE614 = "\uE614".asInstanceOf[BACKSLASHuE614]
+  def Privateuseareae621: Privateuseareae621 = "\uE621".asInstanceOf[Privateuseareae621]
   @scala.inline
-  def BACKSLASHuE615: BACKSLASHuE615 = "\uE615".asInstanceOf[BACKSLASHuE615]
+  def Privateuseareae622: Privateuseareae622 = "\uE622".asInstanceOf[Privateuseareae622]
   @scala.inline
-  def BACKSLASHuE616: BACKSLASHuE616 = "\uE616".asInstanceOf[BACKSLASHuE616]
+  def Privateuseareae623: Privateuseareae623 = "\uE623".asInstanceOf[Privateuseareae623]
   @scala.inline
-  def BACKSLASHuE617: BACKSLASHuE617 = "\uE617".asInstanceOf[BACKSLASHuE617]
+  def Privateuseareae624: Privateuseareae624 = "\uE624".asInstanceOf[Privateuseareae624]
   @scala.inline
-  def BACKSLASHuE618: BACKSLASHuE618 = "\uE618".asInstanceOf[BACKSLASHuE618]
+  def Privateuseareae625: Privateuseareae625 = "\uE625".asInstanceOf[Privateuseareae625]
   @scala.inline
-  def BACKSLASHuE619: BACKSLASHuE619 = "\uE619".asInstanceOf[BACKSLASHuE619]
+  def Privateuseareae626: Privateuseareae626 = "\uE626".asInstanceOf[Privateuseareae626]
   @scala.inline
-  def BACKSLASHuE61A: BACKSLASHuE61A = "\uE61A".asInstanceOf[BACKSLASHuE61A]
+  def Privateuseareae627: Privateuseareae627 = "\uE627".asInstanceOf[Privateuseareae627]
   @scala.inline
-  def BACKSLASHuE61B: BACKSLASHuE61B = "\uE61B".asInstanceOf[BACKSLASHuE61B]
+  def Privateuseareae628: Privateuseareae628 = "\uE628".asInstanceOf[Privateuseareae628]
   @scala.inline
-  def BACKSLASHuE61C: BACKSLASHuE61C = "\uE61C".asInstanceOf[BACKSLASHuE61C]
+  def Privateuseareae629: Privateuseareae629 = "\uE629".asInstanceOf[Privateuseareae629]
   @scala.inline
-  def BACKSLASHuE61D: BACKSLASHuE61D = "\uE61D".asInstanceOf[BACKSLASHuE61D]
+  def Privateuseareae62a: Privateuseareae62a = "\uE62A".asInstanceOf[Privateuseareae62a]
   @scala.inline
-  def BACKSLASHuE61E: BACKSLASHuE61E = "\uE61E".asInstanceOf[BACKSLASHuE61E]
+  def Privateuseareae62b: Privateuseareae62b = "\uE62B".asInstanceOf[Privateuseareae62b]
   @scala.inline
-  def BACKSLASHuE61F: BACKSLASHuE61F = "\uE61F".asInstanceOf[BACKSLASHuE61F]
+  def Privateuseareae62c: Privateuseareae62c = "\uE62C".asInstanceOf[Privateuseareae62c]
   @scala.inline
-  def BACKSLASHuE620: BACKSLASHuE620 = "\uE620".asInstanceOf[BACKSLASHuE620]
+  def Privateuseareae62d: Privateuseareae62d = "\uE62D".asInstanceOf[Privateuseareae62d]
   @scala.inline
-  def BACKSLASHuE621: BACKSLASHuE621 = "\uE621".asInstanceOf[BACKSLASHuE621]
+  def Privateuseareae62e: Privateuseareae62e = "\uE62E".asInstanceOf[Privateuseareae62e]
   @scala.inline
-  def BACKSLASHuE622: BACKSLASHuE622 = "\uE622".asInstanceOf[BACKSLASHuE622]
+  def Privateuseareae62f: Privateuseareae62f = "\uE62F".asInstanceOf[Privateuseareae62f]
   @scala.inline
-  def BACKSLASHuE623: BACKSLASHuE623 = "\uE623".asInstanceOf[BACKSLASHuE623]
+  def Privateuseareae630: Privateuseareae630 = "\uE630".asInstanceOf[Privateuseareae630]
   @scala.inline
-  def BACKSLASHuE624: BACKSLASHuE624 = "\uE624".asInstanceOf[BACKSLASHuE624]
+  def Privateuseareae631: Privateuseareae631 = "\uE631".asInstanceOf[Privateuseareae631]
   @scala.inline
-  def BACKSLASHuE625: BACKSLASHuE625 = "\uE625".asInstanceOf[BACKSLASHuE625]
+  def Privateuseareae632: Privateuseareae632 = "\uE632".asInstanceOf[Privateuseareae632]
   @scala.inline
-  def BACKSLASHuE626: BACKSLASHuE626 = "\uE626".asInstanceOf[BACKSLASHuE626]
+  def Privateuseareae633: Privateuseareae633 = "\uE633".asInstanceOf[Privateuseareae633]
   @scala.inline
-  def BACKSLASHuE627: BACKSLASHuE627 = "\uE627".asInstanceOf[BACKSLASHuE627]
+  def Privateuseareae634: Privateuseareae634 = "\uE634".asInstanceOf[Privateuseareae634]
   @scala.inline
-  def BACKSLASHuE628: BACKSLASHuE628 = "\uE628".asInstanceOf[BACKSLASHuE628]
+  def Privateuseareae635: Privateuseareae635 = "\uE635".asInstanceOf[Privateuseareae635]
   @scala.inline
-  def BACKSLASHuE629: BACKSLASHuE629 = "\uE629".asInstanceOf[BACKSLASHuE629]
+  def Privateuseareae636: Privateuseareae636 = "\uE636".asInstanceOf[Privateuseareae636]
   @scala.inline
-  def BACKSLASHuE62A: BACKSLASHuE62A = "\uE62A".asInstanceOf[BACKSLASHuE62A]
+  def Privateuseareae637: Privateuseareae637 = "\uE637".asInstanceOf[Privateuseareae637]
   @scala.inline
-  def BACKSLASHuE62B: BACKSLASHuE62B = "\uE62B".asInstanceOf[BACKSLASHuE62B]
+  def Privateuseareae638: Privateuseareae638 = "\uE638".asInstanceOf[Privateuseareae638]
   @scala.inline
-  def BACKSLASHuE62C: BACKSLASHuE62C = "\uE62C".asInstanceOf[BACKSLASHuE62C]
+  def Privateuseareae639: Privateuseareae639 = "\uE639".asInstanceOf[Privateuseareae639]
   @scala.inline
-  def BACKSLASHuE62D: BACKSLASHuE62D = "\uE62D".asInstanceOf[BACKSLASHuE62D]
+  def Privateuseareae63a: Privateuseareae63a = "\uE63A".asInstanceOf[Privateuseareae63a]
   @scala.inline
-  def BACKSLASHuE62E: BACKSLASHuE62E = "\uE62E".asInstanceOf[BACKSLASHuE62E]
+  def Privateuseareae63b: Privateuseareae63b = "\uE63B".asInstanceOf[Privateuseareae63b]
   @scala.inline
-  def BACKSLASHuE62F: BACKSLASHuE62F = "\uE62F".asInstanceOf[BACKSLASHuE62F]
+  def Privateuseareae63c: Privateuseareae63c = "\uE63C".asInstanceOf[Privateuseareae63c]
   @scala.inline
-  def BACKSLASHuE630: BACKSLASHuE630 = "\uE630".asInstanceOf[BACKSLASHuE630]
+  def Privateuseareae63d: Privateuseareae63d = "\uE63D".asInstanceOf[Privateuseareae63d]
   @scala.inline
-  def BACKSLASHuE631: BACKSLASHuE631 = "\uE631".asInstanceOf[BACKSLASHuE631]
+  def Privateuseareae63e: Privateuseareae63e = "\uE63E".asInstanceOf[Privateuseareae63e]
   @scala.inline
-  def BACKSLASHuE632: BACKSLASHuE632 = "\uE632".asInstanceOf[BACKSLASHuE632]
+  def Privateuseareae63f: Privateuseareae63f = "\uE63F".asInstanceOf[Privateuseareae63f]
   @scala.inline
-  def BACKSLASHuE633: BACKSLASHuE633 = "\uE633".asInstanceOf[BACKSLASHuE633]
+  def Privateuseareae640: Privateuseareae640 = "\uE640".asInstanceOf[Privateuseareae640]
   @scala.inline
-  def BACKSLASHuE634: BACKSLASHuE634 = "\uE634".asInstanceOf[BACKSLASHuE634]
+  def Privateuseareae641: Privateuseareae641 = "\uE641".asInstanceOf[Privateuseareae641]
   @scala.inline
-  def BACKSLASHuE635: BACKSLASHuE635 = "\uE635".asInstanceOf[BACKSLASHuE635]
+  def Privateuseareae642: Privateuseareae642 = "\uE642".asInstanceOf[Privateuseareae642]
   @scala.inline
-  def BACKSLASHuE636: BACKSLASHuE636 = "\uE636".asInstanceOf[BACKSLASHuE636]
+  def Privateuseareae643: Privateuseareae643 = "\uE643".asInstanceOf[Privateuseareae643]
   @scala.inline
-  def BACKSLASHuE637: BACKSLASHuE637 = "\uE637".asInstanceOf[BACKSLASHuE637]
+  def Privateuseareae644: Privateuseareae644 = "\uE644".asInstanceOf[Privateuseareae644]
   @scala.inline
-  def BACKSLASHuE638: BACKSLASHuE638 = "\uE638".asInstanceOf[BACKSLASHuE638]
+  def Privateuseareae645: Privateuseareae645 = "\uE645".asInstanceOf[Privateuseareae645]
   @scala.inline
-  def BACKSLASHuE639: BACKSLASHuE639 = "\uE639".asInstanceOf[BACKSLASHuE639]
+  def Privateuseareae646: Privateuseareae646 = "\uE646".asInstanceOf[Privateuseareae646]
   @scala.inline
-  def BACKSLASHuE63A: BACKSLASHuE63A = "\uE63A".asInstanceOf[BACKSLASHuE63A]
+  def Privateuseareae647: Privateuseareae647 = "\uE647".asInstanceOf[Privateuseareae647]
   @scala.inline
-  def BACKSLASHuE63B: BACKSLASHuE63B = "\uE63B".asInstanceOf[BACKSLASHuE63B]
+  def Privateuseareae648: Privateuseareae648 = "\uE648".asInstanceOf[Privateuseareae648]
   @scala.inline
-  def BACKSLASHuE63C: BACKSLASHuE63C = "\uE63C".asInstanceOf[BACKSLASHuE63C]
+  def Privateuseareae649: Privateuseareae649 = "\uE649".asInstanceOf[Privateuseareae649]
   @scala.inline
-  def BACKSLASHuE63D: BACKSLASHuE63D = "\uE63D".asInstanceOf[BACKSLASHuE63D]
+  def Privateuseareae64a: Privateuseareae64a = "\uE64A".asInstanceOf[Privateuseareae64a]
   @scala.inline
-  def BACKSLASHuE63E: BACKSLASHuE63E = "\uE63E".asInstanceOf[BACKSLASHuE63E]
+  def Privateuseareae64b: Privateuseareae64b = "\uE64B".asInstanceOf[Privateuseareae64b]
   @scala.inline
-  def BACKSLASHuE63F: BACKSLASHuE63F = "\uE63F".asInstanceOf[BACKSLASHuE63F]
+  def Privateuseareae64c: Privateuseareae64c = "\uE64C".asInstanceOf[Privateuseareae64c]
   @scala.inline
-  def BACKSLASHuE640: BACKSLASHuE640 = "\uE640".asInstanceOf[BACKSLASHuE640]
+  def Privateuseareae64d: Privateuseareae64d = "\uE64D".asInstanceOf[Privateuseareae64d]
   @scala.inline
-  def BACKSLASHuE641: BACKSLASHuE641 = "\uE641".asInstanceOf[BACKSLASHuE641]
+  def Privateuseareae64e: Privateuseareae64e = "\uE64E".asInstanceOf[Privateuseareae64e]
   @scala.inline
-  def BACKSLASHuE642: BACKSLASHuE642 = "\uE642".asInstanceOf[BACKSLASHuE642]
+  def Privateuseareae64f: Privateuseareae64f = "\uE64F".asInstanceOf[Privateuseareae64f]
   @scala.inline
-  def BACKSLASHuE643: BACKSLASHuE643 = "\uE643".asInstanceOf[BACKSLASHuE643]
+  def Privateuseareae650: Privateuseareae650 = "\uE650".asInstanceOf[Privateuseareae650]
   @scala.inline
-  def BACKSLASHuE644: BACKSLASHuE644 = "\uE644".asInstanceOf[BACKSLASHuE644]
+  def Privateuseareae651: Privateuseareae651 = "\uE651".asInstanceOf[Privateuseareae651]
   @scala.inline
-  def BACKSLASHuE645: BACKSLASHuE645 = "\uE645".asInstanceOf[BACKSLASHuE645]
+  def Privateuseareae652: Privateuseareae652 = "\uE652".asInstanceOf[Privateuseareae652]
   @scala.inline
-  def BACKSLASHuE646: BACKSLASHuE646 = "\uE646".asInstanceOf[BACKSLASHuE646]
+  def Privateuseareae653: Privateuseareae653 = "\uE653".asInstanceOf[Privateuseareae653]
   @scala.inline
-  def BACKSLASHuE647: BACKSLASHuE647 = "\uE647".asInstanceOf[BACKSLASHuE647]
+  def Privateuseareae654: Privateuseareae654 = "\uE654".asInstanceOf[Privateuseareae654]
   @scala.inline
-  def BACKSLASHuE648: BACKSLASHuE648 = "\uE648".asInstanceOf[BACKSLASHuE648]
+  def Privateuseareae655: Privateuseareae655 = "\uE655".asInstanceOf[Privateuseareae655]
   @scala.inline
-  def BACKSLASHuE649: BACKSLASHuE649 = "\uE649".asInstanceOf[BACKSLASHuE649]
+  def Privateuseareae656: Privateuseareae656 = "\uE656".asInstanceOf[Privateuseareae656]
   @scala.inline
-  def BACKSLASHuE64A: BACKSLASHuE64A = "\uE64A".asInstanceOf[BACKSLASHuE64A]
+  def Privateuseareae657: Privateuseareae657 = "\uE657".asInstanceOf[Privateuseareae657]
   @scala.inline
-  def BACKSLASHuE64B: BACKSLASHuE64B = "\uE64B".asInstanceOf[BACKSLASHuE64B]
+  def Privateuseareae658: Privateuseareae658 = "\uE658".asInstanceOf[Privateuseareae658]
   @scala.inline
-  def BACKSLASHuE64C: BACKSLASHuE64C = "\uE64C".asInstanceOf[BACKSLASHuE64C]
+  def Privateuseareae659: Privateuseareae659 = "\uE659".asInstanceOf[Privateuseareae659]
   @scala.inline
-  def BACKSLASHuE64D: BACKSLASHuE64D = "\uE64D".asInstanceOf[BACKSLASHuE64D]
+  def Privateuseareae65a: Privateuseareae65a = "\uE65A".asInstanceOf[Privateuseareae65a]
   @scala.inline
-  def BACKSLASHuE64E: BACKSLASHuE64E = "\uE64E".asInstanceOf[BACKSLASHuE64E]
+  def Privateuseareae65b: Privateuseareae65b = "\uE65B".asInstanceOf[Privateuseareae65b]
   @scala.inline
-  def BACKSLASHuE64F: BACKSLASHuE64F = "\uE64F".asInstanceOf[BACKSLASHuE64F]
+  def Privateuseareae65c: Privateuseareae65c = "\uE65C".asInstanceOf[Privateuseareae65c]
   @scala.inline
-  def BACKSLASHuE650: BACKSLASHuE650 = "\uE650".asInstanceOf[BACKSLASHuE650]
+  def Privateuseareae65d: Privateuseareae65d = "\uE65D".asInstanceOf[Privateuseareae65d]
   @scala.inline
-  def BACKSLASHuE651: BACKSLASHuE651 = "\uE651".asInstanceOf[BACKSLASHuE651]
+  def Privateuseareae65e: Privateuseareae65e = "\uE65E".asInstanceOf[Privateuseareae65e]
   @scala.inline
-  def BACKSLASHuE652: BACKSLASHuE652 = "\uE652".asInstanceOf[BACKSLASHuE652]
+  def Privateuseareae65f: Privateuseareae65f = "\uE65F".asInstanceOf[Privateuseareae65f]
   @scala.inline
-  def BACKSLASHuE653: BACKSLASHuE653 = "\uE653".asInstanceOf[BACKSLASHuE653]
+  def Privateuseareae660: Privateuseareae660 = "\uE660".asInstanceOf[Privateuseareae660]
   @scala.inline
-  def BACKSLASHuE654: BACKSLASHuE654 = "\uE654".asInstanceOf[BACKSLASHuE654]
+  def Privateuseareae661: Privateuseareae661 = "\uE661".asInstanceOf[Privateuseareae661]
   @scala.inline
-  def BACKSLASHuE655: BACKSLASHuE655 = "\uE655".asInstanceOf[BACKSLASHuE655]
+  def Privateuseareae662: Privateuseareae662 = "\uE662".asInstanceOf[Privateuseareae662]
   @scala.inline
-  def BACKSLASHuE656: BACKSLASHuE656 = "\uE656".asInstanceOf[BACKSLASHuE656]
+  def Privateuseareae663: Privateuseareae663 = "\uE663".asInstanceOf[Privateuseareae663]
   @scala.inline
-  def BACKSLASHuE657: BACKSLASHuE657 = "\uE657".asInstanceOf[BACKSLASHuE657]
+  def Privateuseareae664: Privateuseareae664 = "\uE664".asInstanceOf[Privateuseareae664]
   @scala.inline
-  def BACKSLASHuE658: BACKSLASHuE658 = "\uE658".asInstanceOf[BACKSLASHuE658]
+  def Privateuseareae665: Privateuseareae665 = "\uE665".asInstanceOf[Privateuseareae665]
   @scala.inline
-  def BACKSLASHuE659: BACKSLASHuE659 = "\uE659".asInstanceOf[BACKSLASHuE659]
+  def Privateuseareae666: Privateuseareae666 = "\uE666".asInstanceOf[Privateuseareae666]
   @scala.inline
-  def BACKSLASHuE65A: BACKSLASHuE65A = "\uE65A".asInstanceOf[BACKSLASHuE65A]
+  def Privateuseareae667: Privateuseareae667 = "\uE667".asInstanceOf[Privateuseareae667]
   @scala.inline
-  def BACKSLASHuE65B: BACKSLASHuE65B = "\uE65B".asInstanceOf[BACKSLASHuE65B]
+  def Privateuseareae668: Privateuseareae668 = "\uE668".asInstanceOf[Privateuseareae668]
   @scala.inline
-  def BACKSLASHuE65C: BACKSLASHuE65C = "\uE65C".asInstanceOf[BACKSLASHuE65C]
+  def Privateuseareae669: Privateuseareae669 = "\uE669".asInstanceOf[Privateuseareae669]
   @scala.inline
-  def BACKSLASHuE65D: BACKSLASHuE65D = "\uE65D".asInstanceOf[BACKSLASHuE65D]
+  def Privateuseareae66a: Privateuseareae66a = "\uE66A".asInstanceOf[Privateuseareae66a]
   @scala.inline
-  def BACKSLASHuE65E: BACKSLASHuE65E = "\uE65E".asInstanceOf[BACKSLASHuE65E]
+  def Privateuseareae66b: Privateuseareae66b = "\uE66B".asInstanceOf[Privateuseareae66b]
   @scala.inline
-  def BACKSLASHuE65F: BACKSLASHuE65F = "\uE65F".asInstanceOf[BACKSLASHuE65F]
+  def Privateuseareae66c: Privateuseareae66c = "\uE66C".asInstanceOf[Privateuseareae66c]
   @scala.inline
-  def BACKSLASHuE660: BACKSLASHuE660 = "\uE660".asInstanceOf[BACKSLASHuE660]
+  def Privateuseareae66d: Privateuseareae66d = "\uE66D".asInstanceOf[Privateuseareae66d]
   @scala.inline
-  def BACKSLASHuE661: BACKSLASHuE661 = "\uE661".asInstanceOf[BACKSLASHuE661]
+  def Privateuseareae66e: Privateuseareae66e = "\uE66E".asInstanceOf[Privateuseareae66e]
   @scala.inline
-  def BACKSLASHuE662: BACKSLASHuE662 = "\uE662".asInstanceOf[BACKSLASHuE662]
+  def Privateuseareae66f: Privateuseareae66f = "\uE66F".asInstanceOf[Privateuseareae66f]
   @scala.inline
-  def BACKSLASHuE663: BACKSLASHuE663 = "\uE663".asInstanceOf[BACKSLASHuE663]
+  def Privateuseareae670: Privateuseareae670 = "\uE670".asInstanceOf[Privateuseareae670]
   @scala.inline
-  def BACKSLASHuE664: BACKSLASHuE664 = "\uE664".asInstanceOf[BACKSLASHuE664]
+  def Privateuseareae671: Privateuseareae671 = "\uE671".asInstanceOf[Privateuseareae671]
   @scala.inline
-  def BACKSLASHuE665: BACKSLASHuE665 = "\uE665".asInstanceOf[BACKSLASHuE665]
+  def Privateuseareae672: Privateuseareae672 = "\uE672".asInstanceOf[Privateuseareae672]
   @scala.inline
-  def BACKSLASHuE666: BACKSLASHuE666 = "\uE666".asInstanceOf[BACKSLASHuE666]
+  def Privateuseareae673: Privateuseareae673 = "\uE673".asInstanceOf[Privateuseareae673]
   @scala.inline
-  def BACKSLASHuE667: BACKSLASHuE667 = "\uE667".asInstanceOf[BACKSLASHuE667]
+  def Privateuseareae674: Privateuseareae674 = "\uE674".asInstanceOf[Privateuseareae674]
   @scala.inline
-  def BACKSLASHuE668: BACKSLASHuE668 = "\uE668".asInstanceOf[BACKSLASHuE668]
+  def Privateuseareae675: Privateuseareae675 = "\uE675".asInstanceOf[Privateuseareae675]
   @scala.inline
-  def BACKSLASHuE669: BACKSLASHuE669 = "\uE669".asInstanceOf[BACKSLASHuE669]
+  def Privateuseareae676: Privateuseareae676 = "\uE676".asInstanceOf[Privateuseareae676]
   @scala.inline
-  def BACKSLASHuE66A: BACKSLASHuE66A = "\uE66A".asInstanceOf[BACKSLASHuE66A]
+  def Privateuseareae677: Privateuseareae677 = "\uE677".asInstanceOf[Privateuseareae677]
   @scala.inline
-  def BACKSLASHuE66B: BACKSLASHuE66B = "\uE66B".asInstanceOf[BACKSLASHuE66B]
+  def Privateuseareae678: Privateuseareae678 = "\uE678".asInstanceOf[Privateuseareae678]
   @scala.inline
-  def BACKSLASHuE66C: BACKSLASHuE66C = "\uE66C".asInstanceOf[BACKSLASHuE66C]
+  def Privateuseareae679: Privateuseareae679 = "\uE679".asInstanceOf[Privateuseareae679]
   @scala.inline
-  def BACKSLASHuE66D: BACKSLASHuE66D = "\uE66D".asInstanceOf[BACKSLASHuE66D]
+  def Privateuseareae67a: Privateuseareae67a = "\uE67A".asInstanceOf[Privateuseareae67a]
   @scala.inline
-  def BACKSLASHuE66E: BACKSLASHuE66E = "\uE66E".asInstanceOf[BACKSLASHuE66E]
+  def Privateuseareae67b: Privateuseareae67b = "\uE67B".asInstanceOf[Privateuseareae67b]
   @scala.inline
-  def BACKSLASHuE66F: BACKSLASHuE66F = "\uE66F".asInstanceOf[BACKSLASHuE66F]
+  def Privateuseareae67c: Privateuseareae67c = "\uE67C".asInstanceOf[Privateuseareae67c]
   @scala.inline
-  def BACKSLASHuE670: BACKSLASHuE670 = "\uE670".asInstanceOf[BACKSLASHuE670]
+  def Privateuseareae67d: Privateuseareae67d = "\uE67D".asInstanceOf[Privateuseareae67d]
   @scala.inline
-  def BACKSLASHuE671: BACKSLASHuE671 = "\uE671".asInstanceOf[BACKSLASHuE671]
+  def Privateuseareae67e: Privateuseareae67e = "\uE67E".asInstanceOf[Privateuseareae67e]
   @scala.inline
-  def BACKSLASHuE672: BACKSLASHuE672 = "\uE672".asInstanceOf[BACKSLASHuE672]
+  def Privateuseareae67f: Privateuseareae67f = "\uE67F".asInstanceOf[Privateuseareae67f]
   @scala.inline
-  def BACKSLASHuE673: BACKSLASHuE673 = "\uE673".asInstanceOf[BACKSLASHuE673]
+  def Privateuseareae680: Privateuseareae680 = "\uE680".asInstanceOf[Privateuseareae680]
   @scala.inline
-  def BACKSLASHuE674: BACKSLASHuE674 = "\uE674".asInstanceOf[BACKSLASHuE674]
+  def Privateuseareae681: Privateuseareae681 = "\uE681".asInstanceOf[Privateuseareae681]
   @scala.inline
-  def BACKSLASHuE675: BACKSLASHuE675 = "\uE675".asInstanceOf[BACKSLASHuE675]
+  def Privateuseareae682: Privateuseareae682 = "\uE682".asInstanceOf[Privateuseareae682]
   @scala.inline
-  def BACKSLASHuE676: BACKSLASHuE676 = "\uE676".asInstanceOf[BACKSLASHuE676]
+  def Privateuseareae683: Privateuseareae683 = "\uE683".asInstanceOf[Privateuseareae683]
   @scala.inline
-  def BACKSLASHuE677: BACKSLASHuE677 = "\uE677".asInstanceOf[BACKSLASHuE677]
+  def Privateuseareae684: Privateuseareae684 = "\uE684".asInstanceOf[Privateuseareae684]
   @scala.inline
-  def BACKSLASHuE678: BACKSLASHuE678 = "\uE678".asInstanceOf[BACKSLASHuE678]
+  def Privateuseareae685: Privateuseareae685 = "\uE685".asInstanceOf[Privateuseareae685]
   @scala.inline
-  def BACKSLASHuE679: BACKSLASHuE679 = "\uE679".asInstanceOf[BACKSLASHuE679]
+  def Privateuseareae686: Privateuseareae686 = "\uE686".asInstanceOf[Privateuseareae686]
   @scala.inline
-  def BACKSLASHuE67A: BACKSLASHuE67A = "\uE67A".asInstanceOf[BACKSLASHuE67A]
+  def Privateuseareae687: Privateuseareae687 = "\uE687".asInstanceOf[Privateuseareae687]
   @scala.inline
-  def BACKSLASHuE67B: BACKSLASHuE67B = "\uE67B".asInstanceOf[BACKSLASHuE67B]
+  def Privateuseareae688: Privateuseareae688 = "\uE688".asInstanceOf[Privateuseareae688]
   @scala.inline
-  def BACKSLASHuE67C: BACKSLASHuE67C = "\uE67C".asInstanceOf[BACKSLASHuE67C]
+  def Privateuseareae689: Privateuseareae689 = "\uE689".asInstanceOf[Privateuseareae689]
   @scala.inline
-  def BACKSLASHuE67D: BACKSLASHuE67D = "\uE67D".asInstanceOf[BACKSLASHuE67D]
+  def Privateuseareae68a: Privateuseareae68a = "\uE68A".asInstanceOf[Privateuseareae68a]
   @scala.inline
-  def BACKSLASHuE67E: BACKSLASHuE67E = "\uE67E".asInstanceOf[BACKSLASHuE67E]
+  def Privateuseareae68b: Privateuseareae68b = "\uE68B".asInstanceOf[Privateuseareae68b]
   @scala.inline
-  def BACKSLASHuE67F: BACKSLASHuE67F = "\uE67F".asInstanceOf[BACKSLASHuE67F]
+  def Privateuseareae68c: Privateuseareae68c = "\uE68C".asInstanceOf[Privateuseareae68c]
   @scala.inline
-  def BACKSLASHuE680: BACKSLASHuE680 = "\uE680".asInstanceOf[BACKSLASHuE680]
+  def Privateuseareae68d: Privateuseareae68d = "\uE68D".asInstanceOf[Privateuseareae68d]
   @scala.inline
-  def BACKSLASHuE681: BACKSLASHuE681 = "\uE681".asInstanceOf[BACKSLASHuE681]
+  def Privateuseareae68e: Privateuseareae68e = "\uE68E".asInstanceOf[Privateuseareae68e]
   @scala.inline
-  def BACKSLASHuE682: BACKSLASHuE682 = "\uE682".asInstanceOf[BACKSLASHuE682]
+  def Privateuseareae68f: Privateuseareae68f = "\uE68F".asInstanceOf[Privateuseareae68f]
   @scala.inline
-  def BACKSLASHuE683: BACKSLASHuE683 = "\uE683".asInstanceOf[BACKSLASHuE683]
+  def Privateuseareae690: Privateuseareae690 = "\uE690".asInstanceOf[Privateuseareae690]
   @scala.inline
-  def BACKSLASHuE684: BACKSLASHuE684 = "\uE684".asInstanceOf[BACKSLASHuE684]
+  def Privateuseareae691: Privateuseareae691 = "\uE691".asInstanceOf[Privateuseareae691]
   @scala.inline
-  def BACKSLASHuE685: BACKSLASHuE685 = "\uE685".asInstanceOf[BACKSLASHuE685]
+  def Privateuseareae692: Privateuseareae692 = "\uE692".asInstanceOf[Privateuseareae692]
   @scala.inline
-  def BACKSLASHuE686: BACKSLASHuE686 = "\uE686".asInstanceOf[BACKSLASHuE686]
+  def Privateuseareae693: Privateuseareae693 = "\uE693".asInstanceOf[Privateuseareae693]
   @scala.inline
-  def BACKSLASHuE687: BACKSLASHuE687 = "\uE687".asInstanceOf[BACKSLASHuE687]
+  def Privateuseareae694: Privateuseareae694 = "\uE694".asInstanceOf[Privateuseareae694]
   @scala.inline
-  def BACKSLASHuE688: BACKSLASHuE688 = "\uE688".asInstanceOf[BACKSLASHuE688]
+  def Privateuseareae695: Privateuseareae695 = "\uE695".asInstanceOf[Privateuseareae695]
   @scala.inline
-  def BACKSLASHuE689: BACKSLASHuE689 = "\uE689".asInstanceOf[BACKSLASHuE689]
+  def Privateuseareae696: Privateuseareae696 = "\uE696".asInstanceOf[Privateuseareae696]
   @scala.inline
-  def BACKSLASHuE68A: BACKSLASHuE68A = "\uE68A".asInstanceOf[BACKSLASHuE68A]
+  def Privateuseareae697: Privateuseareae697 = "\uE697".asInstanceOf[Privateuseareae697]
   @scala.inline
-  def BACKSLASHuE68B: BACKSLASHuE68B = "\uE68B".asInstanceOf[BACKSLASHuE68B]
+  def Privateuseareae698: Privateuseareae698 = "\uE698".asInstanceOf[Privateuseareae698]
   @scala.inline
-  def BACKSLASHuE68C: BACKSLASHuE68C = "\uE68C".asInstanceOf[BACKSLASHuE68C]
+  def Privateuseareae699: Privateuseareae699 = "\uE699".asInstanceOf[Privateuseareae699]
   @scala.inline
-  def BACKSLASHuE68D: BACKSLASHuE68D = "\uE68D".asInstanceOf[BACKSLASHuE68D]
+  def Privateuseareae69a: Privateuseareae69a = "\uE69A".asInstanceOf[Privateuseareae69a]
   @scala.inline
-  def BACKSLASHuE68E: BACKSLASHuE68E = "\uE68E".asInstanceOf[BACKSLASHuE68E]
+  def Privateuseareae69b: Privateuseareae69b = "\uE69B".asInstanceOf[Privateuseareae69b]
   @scala.inline
-  def BACKSLASHuE68F: BACKSLASHuE68F = "\uE68F".asInstanceOf[BACKSLASHuE68F]
+  def Privateuseareae69c: Privateuseareae69c = "\uE69C".asInstanceOf[Privateuseareae69c]
   @scala.inline
-  def BACKSLASHuE690: BACKSLASHuE690 = "\uE690".asInstanceOf[BACKSLASHuE690]
+  def Privateuseareae69d: Privateuseareae69d = "\uE69D".asInstanceOf[Privateuseareae69d]
   @scala.inline
-  def BACKSLASHuE691: BACKSLASHuE691 = "\uE691".asInstanceOf[BACKSLASHuE691]
+  def Privateuseareae69e: Privateuseareae69e = "\uE69E".asInstanceOf[Privateuseareae69e]
   @scala.inline
-  def BACKSLASHuE692: BACKSLASHuE692 = "\uE692".asInstanceOf[BACKSLASHuE692]
+  def Privateuseareae69f: Privateuseareae69f = "\uE69F".asInstanceOf[Privateuseareae69f]
   @scala.inline
-  def BACKSLASHuE693: BACKSLASHuE693 = "\uE693".asInstanceOf[BACKSLASHuE693]
+  def Privateuseareae6a0: Privateuseareae6a0 = "\uE6A0".asInstanceOf[Privateuseareae6a0]
   @scala.inline
-  def BACKSLASHuE694: BACKSLASHuE694 = "\uE694".asInstanceOf[BACKSLASHuE694]
+  def Privateuseareae6a1: Privateuseareae6a1 = "\uE6A1".asInstanceOf[Privateuseareae6a1]
   @scala.inline
-  def BACKSLASHuE695: BACKSLASHuE695 = "\uE695".asInstanceOf[BACKSLASHuE695]
+  def Privateuseareae6a2: Privateuseareae6a2 = "\uE6A2".asInstanceOf[Privateuseareae6a2]
   @scala.inline
-  def BACKSLASHuE696: BACKSLASHuE696 = "\uE696".asInstanceOf[BACKSLASHuE696]
+  def Privateuseareae6a3: Privateuseareae6a3 = "\uE6A3".asInstanceOf[Privateuseareae6a3]
   @scala.inline
-  def BACKSLASHuE697: BACKSLASHuE697 = "\uE697".asInstanceOf[BACKSLASHuE697]
+  def Privateuseareae6a4: Privateuseareae6a4 = "\uE6A4".asInstanceOf[Privateuseareae6a4]
   @scala.inline
-  def BACKSLASHuE698: BACKSLASHuE698 = "\uE698".asInstanceOf[BACKSLASHuE698]
+  def Privateuseareae6a5: Privateuseareae6a5 = "\uE6A5".asInstanceOf[Privateuseareae6a5]
   @scala.inline
-  def BACKSLASHuE699: BACKSLASHuE699 = "\uE699".asInstanceOf[BACKSLASHuE699]
+  def Privateuseareae6a6: Privateuseareae6a6 = "\uE6A6".asInstanceOf[Privateuseareae6a6]
   @scala.inline
-  def BACKSLASHuE69A: BACKSLASHuE69A = "\uE69A".asInstanceOf[BACKSLASHuE69A]
+  def Privateuseareae6a7: Privateuseareae6a7 = "\uE6A7".asInstanceOf[Privateuseareae6a7]
   @scala.inline
-  def BACKSLASHuE69B: BACKSLASHuE69B = "\uE69B".asInstanceOf[BACKSLASHuE69B]
+  def Privateuseareae6a8: Privateuseareae6a8 = "\uE6A8".asInstanceOf[Privateuseareae6a8]
   @scala.inline
-  def BACKSLASHuE69C: BACKSLASHuE69C = "\uE69C".asInstanceOf[BACKSLASHuE69C]
+  def Privateuseareae6a9: Privateuseareae6a9 = "\uE6A9".asInstanceOf[Privateuseareae6a9]
   @scala.inline
-  def BACKSLASHuE69D: BACKSLASHuE69D = "\uE69D".asInstanceOf[BACKSLASHuE69D]
+  def Privateuseareae6aa: Privateuseareae6aa = "\uE6AA".asInstanceOf[Privateuseareae6aa]
   @scala.inline
-  def BACKSLASHuE69E: BACKSLASHuE69E = "\uE69E".asInstanceOf[BACKSLASHuE69E]
+  def Privateuseareae6ab: Privateuseareae6ab = "\uE6AB".asInstanceOf[Privateuseareae6ab]
   @scala.inline
-  def BACKSLASHuE69F: BACKSLASHuE69F = "\uE69F".asInstanceOf[BACKSLASHuE69F]
+  def Privateuseareae6ac: Privateuseareae6ac = "\uE6AC".asInstanceOf[Privateuseareae6ac]
   @scala.inline
-  def BACKSLASHuE6A0: BACKSLASHuE6A0 = "\uE6A0".asInstanceOf[BACKSLASHuE6A0]
+  def Privateuseareae6ad: Privateuseareae6ad = "\uE6AD".asInstanceOf[Privateuseareae6ad]
   @scala.inline
-  def BACKSLASHuE6A1: BACKSLASHuE6A1 = "\uE6A1".asInstanceOf[BACKSLASHuE6A1]
+  def Privateuseareae6ae: Privateuseareae6ae = "\uE6AE".asInstanceOf[Privateuseareae6ae]
   @scala.inline
-  def BACKSLASHuE6A2: BACKSLASHuE6A2 = "\uE6A2".asInstanceOf[BACKSLASHuE6A2]
+  def Privateuseareae6af: Privateuseareae6af = "\uE6AF".asInstanceOf[Privateuseareae6af]
   @scala.inline
-  def BACKSLASHuE6A3: BACKSLASHuE6A3 = "\uE6A3".asInstanceOf[BACKSLASHuE6A3]
+  def Privateuseareae6b0: Privateuseareae6b0 = "\uE6B0".asInstanceOf[Privateuseareae6b0]
   @scala.inline
-  def BACKSLASHuE6A4: BACKSLASHuE6A4 = "\uE6A4".asInstanceOf[BACKSLASHuE6A4]
+  def Privateuseareae6b1: Privateuseareae6b1 = "\uE6B1".asInstanceOf[Privateuseareae6b1]
   @scala.inline
-  def BACKSLASHuE6A5: BACKSLASHuE6A5 = "\uE6A5".asInstanceOf[BACKSLASHuE6A5]
+  def Privateuseareae6b2: Privateuseareae6b2 = "\uE6B2".asInstanceOf[Privateuseareae6b2]
   @scala.inline
-  def BACKSLASHuE6A6: BACKSLASHuE6A6 = "\uE6A6".asInstanceOf[BACKSLASHuE6A6]
+  def Privateuseareae6b3: Privateuseareae6b3 = "\uE6B3".asInstanceOf[Privateuseareae6b3]
   @scala.inline
-  def BACKSLASHuE6A7: BACKSLASHuE6A7 = "\uE6A7".asInstanceOf[BACKSLASHuE6A7]
+  def Privateuseareae6b4: Privateuseareae6b4 = "\uE6B4".asInstanceOf[Privateuseareae6b4]
   @scala.inline
-  def BACKSLASHuE6A8: BACKSLASHuE6A8 = "\uE6A8".asInstanceOf[BACKSLASHuE6A8]
+  def Privateuseareae6b5: Privateuseareae6b5 = "\uE6B5".asInstanceOf[Privateuseareae6b5]
   @scala.inline
-  def BACKSLASHuE6A9: BACKSLASHuE6A9 = "\uE6A9".asInstanceOf[BACKSLASHuE6A9]
+  def Privateuseareae6b6: Privateuseareae6b6 = "\uE6B6".asInstanceOf[Privateuseareae6b6]
   @scala.inline
-  def BACKSLASHuE6AA: BACKSLASHuE6AA = "\uE6AA".asInstanceOf[BACKSLASHuE6AA]
+  def Privateuseareae6b7: Privateuseareae6b7 = "\uE6B7".asInstanceOf[Privateuseareae6b7]
   @scala.inline
-  def BACKSLASHuE6AB: BACKSLASHuE6AB = "\uE6AB".asInstanceOf[BACKSLASHuE6AB]
+  def Privateuseareae6b8: Privateuseareae6b8 = "\uE6B8".asInstanceOf[Privateuseareae6b8]
   @scala.inline
-  def BACKSLASHuE6AC: BACKSLASHuE6AC = "\uE6AC".asInstanceOf[BACKSLASHuE6AC]
+  def Privateuseareae6b9: Privateuseareae6b9 = "\uE6B9".asInstanceOf[Privateuseareae6b9]
   @scala.inline
-  def BACKSLASHuE6AD: BACKSLASHuE6AD = "\uE6AD".asInstanceOf[BACKSLASHuE6AD]
+  def Privateuseareae6ba: Privateuseareae6ba = "\uE6BA".asInstanceOf[Privateuseareae6ba]
   @scala.inline
-  def BACKSLASHuE6AE: BACKSLASHuE6AE = "\uE6AE".asInstanceOf[BACKSLASHuE6AE]
+  def Privateuseareae6bb: Privateuseareae6bb = "\uE6BB".asInstanceOf[Privateuseareae6bb]
   @scala.inline
-  def BACKSLASHuE6AF: BACKSLASHuE6AF = "\uE6AF".asInstanceOf[BACKSLASHuE6AF]
+  def Privateuseareae6bc: Privateuseareae6bc = "\uE6BC".asInstanceOf[Privateuseareae6bc]
   @scala.inline
-  def BACKSLASHuE6B0: BACKSLASHuE6B0 = "\uE6B0".asInstanceOf[BACKSLASHuE6B0]
+  def Privateuseareae6bd: Privateuseareae6bd = "\uE6BD".asInstanceOf[Privateuseareae6bd]
   @scala.inline
-  def BACKSLASHuE6B1: BACKSLASHuE6B1 = "\uE6B1".asInstanceOf[BACKSLASHuE6B1]
+  def Privateuseareae6be: Privateuseareae6be = "\uE6BE".asInstanceOf[Privateuseareae6be]
   @scala.inline
-  def BACKSLASHuE6B2: BACKSLASHuE6B2 = "\uE6B2".asInstanceOf[BACKSLASHuE6B2]
+  def Privateuseareae6bf: Privateuseareae6bf = "\uE6BF".asInstanceOf[Privateuseareae6bf]
   @scala.inline
-  def BACKSLASHuE6B3: BACKSLASHuE6B3 = "\uE6B3".asInstanceOf[BACKSLASHuE6B3]
+  def Privateuseareae6c0: Privateuseareae6c0 = "\uE6C0".asInstanceOf[Privateuseareae6c0]
   @scala.inline
-  def BACKSLASHuE6B4: BACKSLASHuE6B4 = "\uE6B4".asInstanceOf[BACKSLASHuE6B4]
+  def Privateuseareae6c1: Privateuseareae6c1 = "\uE6C1".asInstanceOf[Privateuseareae6c1]
   @scala.inline
-  def BACKSLASHuE6B5: BACKSLASHuE6B5 = "\uE6B5".asInstanceOf[BACKSLASHuE6B5]
+  def Privateuseareae6c2: Privateuseareae6c2 = "\uE6C2".asInstanceOf[Privateuseareae6c2]
   @scala.inline
-  def BACKSLASHuE6B6: BACKSLASHuE6B6 = "\uE6B6".asInstanceOf[BACKSLASHuE6B6]
+  def Privateuseareae6c3: Privateuseareae6c3 = "\uE6C3".asInstanceOf[Privateuseareae6c3]
   @scala.inline
-  def BACKSLASHuE6B7: BACKSLASHuE6B7 = "\uE6B7".asInstanceOf[BACKSLASHuE6B7]
+  def Privateuseareae6c4: Privateuseareae6c4 = "\uE6C4".asInstanceOf[Privateuseareae6c4]
   @scala.inline
-  def BACKSLASHuE6B8: BACKSLASHuE6B8 = "\uE6B8".asInstanceOf[BACKSLASHuE6B8]
+  def Privateuseareae6c5: Privateuseareae6c5 = "\uE6C5".asInstanceOf[Privateuseareae6c5]
   @scala.inline
-  def BACKSLASHuE6B9: BACKSLASHuE6B9 = "\uE6B9".asInstanceOf[BACKSLASHuE6B9]
+  def Privateuseareae6c6: Privateuseareae6c6 = "\uE6C6".asInstanceOf[Privateuseareae6c6]
   @scala.inline
-  def BACKSLASHuE6BA: BACKSLASHuE6BA = "\uE6BA".asInstanceOf[BACKSLASHuE6BA]
+  def Privateuseareae6c7: Privateuseareae6c7 = "\uE6C7".asInstanceOf[Privateuseareae6c7]
   @scala.inline
-  def BACKSLASHuE6BB: BACKSLASHuE6BB = "\uE6BB".asInstanceOf[BACKSLASHuE6BB]
+  def Privateuseareae6c8: Privateuseareae6c8 = "\uE6C8".asInstanceOf[Privateuseareae6c8]
   @scala.inline
-  def BACKSLASHuE6BC: BACKSLASHuE6BC = "\uE6BC".asInstanceOf[BACKSLASHuE6BC]
+  def Privateuseareae6c9: Privateuseareae6c9 = "\uE6C9".asInstanceOf[Privateuseareae6c9]
   @scala.inline
-  def BACKSLASHuE6BD: BACKSLASHuE6BD = "\uE6BD".asInstanceOf[BACKSLASHuE6BD]
+  def Privateuseareae6ca: Privateuseareae6ca = "\uE6CA".asInstanceOf[Privateuseareae6ca]
   @scala.inline
-  def BACKSLASHuE6BE: BACKSLASHuE6BE = "\uE6BE".asInstanceOf[BACKSLASHuE6BE]
+  def Privateuseareae6cb: Privateuseareae6cb = "\uE6CB".asInstanceOf[Privateuseareae6cb]
   @scala.inline
-  def BACKSLASHuE6BF: BACKSLASHuE6BF = "\uE6BF".asInstanceOf[BACKSLASHuE6BF]
+  def Privateuseareae6cc: Privateuseareae6cc = "\uE6CC".asInstanceOf[Privateuseareae6cc]
   @scala.inline
-  def BACKSLASHuE6C0: BACKSLASHuE6C0 = "\uE6C0".asInstanceOf[BACKSLASHuE6C0]
+  def Privateuseareae6cd: Privateuseareae6cd = "\uE6CD".asInstanceOf[Privateuseareae6cd]
   @scala.inline
-  def BACKSLASHuE6C1: BACKSLASHuE6C1 = "\uE6C1".asInstanceOf[BACKSLASHuE6C1]
+  def Privateuseareae6ce: Privateuseareae6ce = "\uE6CE".asInstanceOf[Privateuseareae6ce]
   @scala.inline
-  def BACKSLASHuE6C2: BACKSLASHuE6C2 = "\uE6C2".asInstanceOf[BACKSLASHuE6C2]
+  def Privateuseareae6cf: Privateuseareae6cf = "\uE6CF".asInstanceOf[Privateuseareae6cf]
   @scala.inline
-  def BACKSLASHuE6C3: BACKSLASHuE6C3 = "\uE6C3".asInstanceOf[BACKSLASHuE6C3]
+  def Privateuseareae6d0: Privateuseareae6d0 = "\uE6D0".asInstanceOf[Privateuseareae6d0]
   @scala.inline
-  def BACKSLASHuE6C4: BACKSLASHuE6C4 = "\uE6C4".asInstanceOf[BACKSLASHuE6C4]
+  def Privateuseareae6d1: Privateuseareae6d1 = "\uE6D1".asInstanceOf[Privateuseareae6d1]
   @scala.inline
-  def BACKSLASHuE6C5: BACKSLASHuE6C5 = "\uE6C5".asInstanceOf[BACKSLASHuE6C5]
+  def Privateuseareae6d2: Privateuseareae6d2 = "\uE6D2".asInstanceOf[Privateuseareae6d2]
   @scala.inline
-  def BACKSLASHuE6C6: BACKSLASHuE6C6 = "\uE6C6".asInstanceOf[BACKSLASHuE6C6]
+  def Privateuseareae6d3: Privateuseareae6d3 = "\uE6D3".asInstanceOf[Privateuseareae6d3]
   @scala.inline
-  def BACKSLASHuE6C7: BACKSLASHuE6C7 = "\uE6C7".asInstanceOf[BACKSLASHuE6C7]
+  def Privateuseareae6d4: Privateuseareae6d4 = "\uE6D4".asInstanceOf[Privateuseareae6d4]
   @scala.inline
-  def BACKSLASHuE6C8: BACKSLASHuE6C8 = "\uE6C8".asInstanceOf[BACKSLASHuE6C8]
+  def Privateuseareae6d5: Privateuseareae6d5 = "\uE6D5".asInstanceOf[Privateuseareae6d5]
   @scala.inline
-  def BACKSLASHuE6C9: BACKSLASHuE6C9 = "\uE6C9".asInstanceOf[BACKSLASHuE6C9]
+  def Privateuseareae6d6: Privateuseareae6d6 = "\uE6D6".asInstanceOf[Privateuseareae6d6]
   @scala.inline
-  def BACKSLASHuE6CA: BACKSLASHuE6CA = "\uE6CA".asInstanceOf[BACKSLASHuE6CA]
+  def Privateuseareae6d7: Privateuseareae6d7 = "\uE6D7".asInstanceOf[Privateuseareae6d7]
   @scala.inline
-  def BACKSLASHuE6CB: BACKSLASHuE6CB = "\uE6CB".asInstanceOf[BACKSLASHuE6CB]
+  def Privateuseareae6d8: Privateuseareae6d8 = "\uE6D8".asInstanceOf[Privateuseareae6d8]
   @scala.inline
-  def BACKSLASHuE6CC: BACKSLASHuE6CC = "\uE6CC".asInstanceOf[BACKSLASHuE6CC]
+  def Privateuseareae6d9: Privateuseareae6d9 = "\uE6D9".asInstanceOf[Privateuseareae6d9]
   @scala.inline
-  def BACKSLASHuE6CD: BACKSLASHuE6CD = "\uE6CD".asInstanceOf[BACKSLASHuE6CD]
+  def Privateuseareae6da: Privateuseareae6da = "\uE6DA".asInstanceOf[Privateuseareae6da]
   @scala.inline
-  def BACKSLASHuE6CE: BACKSLASHuE6CE = "\uE6CE".asInstanceOf[BACKSLASHuE6CE]
+  def Privateuseareae6db: Privateuseareae6db = "\uE6DB".asInstanceOf[Privateuseareae6db]
   @scala.inline
-  def BACKSLASHuE6CF: BACKSLASHuE6CF = "\uE6CF".asInstanceOf[BACKSLASHuE6CF]
+  def Privateuseareae6dc: Privateuseareae6dc = "\uE6DC".asInstanceOf[Privateuseareae6dc]
   @scala.inline
-  def BACKSLASHuE6D0: BACKSLASHuE6D0 = "\uE6D0".asInstanceOf[BACKSLASHuE6D0]
+  def Privateuseareae6dd: Privateuseareae6dd = "\uE6DD".asInstanceOf[Privateuseareae6dd]
   @scala.inline
-  def BACKSLASHuE6D1: BACKSLASHuE6D1 = "\uE6D1".asInstanceOf[BACKSLASHuE6D1]
+  def Privateuseareae6de: Privateuseareae6de = "\uE6DE".asInstanceOf[Privateuseareae6de]
   @scala.inline
-  def BACKSLASHuE6D2: BACKSLASHuE6D2 = "\uE6D2".asInstanceOf[BACKSLASHuE6D2]
+  def Privateuseareae6df: Privateuseareae6df = "\uE6DF".asInstanceOf[Privateuseareae6df]
   @scala.inline
-  def BACKSLASHuE6D3: BACKSLASHuE6D3 = "\uE6D3".asInstanceOf[BACKSLASHuE6D3]
+  def Privateuseareae6e0: Privateuseareae6e0 = "\uE6E0".asInstanceOf[Privateuseareae6e0]
   @scala.inline
-  def BACKSLASHuE6D4: BACKSLASHuE6D4 = "\uE6D4".asInstanceOf[BACKSLASHuE6D4]
+  def Privateuseareae6e1: Privateuseareae6e1 = "\uE6E1".asInstanceOf[Privateuseareae6e1]
   @scala.inline
-  def BACKSLASHuE6D5: BACKSLASHuE6D5 = "\uE6D5".asInstanceOf[BACKSLASHuE6D5]
+  def Privateuseareae6e2: Privateuseareae6e2 = "\uE6E2".asInstanceOf[Privateuseareae6e2]
   @scala.inline
-  def BACKSLASHuE6D6: BACKSLASHuE6D6 = "\uE6D6".asInstanceOf[BACKSLASHuE6D6]
+  def Privateuseareae6e3: Privateuseareae6e3 = "\uE6E3".asInstanceOf[Privateuseareae6e3]
   @scala.inline
-  def BACKSLASHuE6D7: BACKSLASHuE6D7 = "\uE6D7".asInstanceOf[BACKSLASHuE6D7]
+  def Privateuseareae6e4: Privateuseareae6e4 = "\uE6E4".asInstanceOf[Privateuseareae6e4]
   @scala.inline
-  def BACKSLASHuE6D8: BACKSLASHuE6D8 = "\uE6D8".asInstanceOf[BACKSLASHuE6D8]
+  def Privateuseareae6e5: Privateuseareae6e5 = "\uE6E5".asInstanceOf[Privateuseareae6e5]
   @scala.inline
-  def BACKSLASHuE6D9: BACKSLASHuE6D9 = "\uE6D9".asInstanceOf[BACKSLASHuE6D9]
+  def Privateuseareae6e6: Privateuseareae6e6 = "\uE6E6".asInstanceOf[Privateuseareae6e6]
   @scala.inline
-  def BACKSLASHuE6DA: BACKSLASHuE6DA = "\uE6DA".asInstanceOf[BACKSLASHuE6DA]
+  def Privateuseareae6e7: Privateuseareae6e7 = "\uE6E7".asInstanceOf[Privateuseareae6e7]
   @scala.inline
-  def BACKSLASHuE6DB: BACKSLASHuE6DB = "\uE6DB".asInstanceOf[BACKSLASHuE6DB]
+  def Privateuseareae6e8: Privateuseareae6e8 = "\uE6E8".asInstanceOf[Privateuseareae6e8]
   @scala.inline
-  def BACKSLASHuE6DC: BACKSLASHuE6DC = "\uE6DC".asInstanceOf[BACKSLASHuE6DC]
+  def Privateuseareae6e9: Privateuseareae6e9 = "\uE6E9".asInstanceOf[Privateuseareae6e9]
   @scala.inline
-  def BACKSLASHuE6DD: BACKSLASHuE6DD = "\uE6DD".asInstanceOf[BACKSLASHuE6DD]
+  def Privateuseareae6ea: Privateuseareae6ea = "\uE6EA".asInstanceOf[Privateuseareae6ea]
   @scala.inline
-  def BACKSLASHuE6DE: BACKSLASHuE6DE = "\uE6DE".asInstanceOf[BACKSLASHuE6DE]
+  def Privateuseareae6eb: Privateuseareae6eb = "\uE6EB".asInstanceOf[Privateuseareae6eb]
   @scala.inline
-  def BACKSLASHuE6DF: BACKSLASHuE6DF = "\uE6DF".asInstanceOf[BACKSLASHuE6DF]
+  def Privateuseareae6ec: Privateuseareae6ec = "\uE6EC".asInstanceOf[Privateuseareae6ec]
   @scala.inline
-  def BACKSLASHuE6E0: BACKSLASHuE6E0 = "\uE6E0".asInstanceOf[BACKSLASHuE6E0]
+  def Privateuseareae6ed: Privateuseareae6ed = "\uE6ED".asInstanceOf[Privateuseareae6ed]
   @scala.inline
-  def BACKSLASHuE6E1: BACKSLASHuE6E1 = "\uE6E1".asInstanceOf[BACKSLASHuE6E1]
+  def Privateuseareae6ee: Privateuseareae6ee = "\uE6EE".asInstanceOf[Privateuseareae6ee]
   @scala.inline
-  def BACKSLASHuE6E2: BACKSLASHuE6E2 = "\uE6E2".asInstanceOf[BACKSLASHuE6E2]
+  def Privateuseareae6ef: Privateuseareae6ef = "\uE6EF".asInstanceOf[Privateuseareae6ef]
   @scala.inline
-  def BACKSLASHuE6E3: BACKSLASHuE6E3 = "\uE6E3".asInstanceOf[BACKSLASHuE6E3]
+  def Privateuseareae6f0: Privateuseareae6f0 = "\uE6F0".asInstanceOf[Privateuseareae6f0]
   @scala.inline
-  def BACKSLASHuE6E4: BACKSLASHuE6E4 = "\uE6E4".asInstanceOf[BACKSLASHuE6E4]
+  def Privateuseareae6f1: Privateuseareae6f1 = "\uE6F1".asInstanceOf[Privateuseareae6f1]
   @scala.inline
-  def BACKSLASHuE6E5: BACKSLASHuE6E5 = "\uE6E5".asInstanceOf[BACKSLASHuE6E5]
+  def Privateuseareae6f2: Privateuseareae6f2 = "\uE6F2".asInstanceOf[Privateuseareae6f2]
   @scala.inline
-  def BACKSLASHuE6E6: BACKSLASHuE6E6 = "\uE6E6".asInstanceOf[BACKSLASHuE6E6]
+  def Privateuseareae6f3: Privateuseareae6f3 = "\uE6F3".asInstanceOf[Privateuseareae6f3]
   @scala.inline
-  def BACKSLASHuE6E7: BACKSLASHuE6E7 = "\uE6E7".asInstanceOf[BACKSLASHuE6E7]
+  def Privateuseareae6f4: Privateuseareae6f4 = "\uE6F4".asInstanceOf[Privateuseareae6f4]
   @scala.inline
-  def BACKSLASHuE6E8: BACKSLASHuE6E8 = "\uE6E8".asInstanceOf[BACKSLASHuE6E8]
+  def Privateuseareae6f5: Privateuseareae6f5 = "\uE6F5".asInstanceOf[Privateuseareae6f5]
   @scala.inline
-  def BACKSLASHuE6E9: BACKSLASHuE6E9 = "\uE6E9".asInstanceOf[BACKSLASHuE6E9]
+  def Privateuseareae6f6: Privateuseareae6f6 = "\uE6F6".asInstanceOf[Privateuseareae6f6]
   @scala.inline
-  def BACKSLASHuE6EA: BACKSLASHuE6EA = "\uE6EA".asInstanceOf[BACKSLASHuE6EA]
+  def Privateuseareae6f7: Privateuseareae6f7 = "\uE6F7".asInstanceOf[Privateuseareae6f7]
   @scala.inline
-  def BACKSLASHuE6EB: BACKSLASHuE6EB = "\uE6EB".asInstanceOf[BACKSLASHuE6EB]
+  def Privateuseareae6f8: Privateuseareae6f8 = "\uE6F8".asInstanceOf[Privateuseareae6f8]
   @scala.inline
-  def BACKSLASHuE6EC: BACKSLASHuE6EC = "\uE6EC".asInstanceOf[BACKSLASHuE6EC]
+  def Privateuseareae6f9: Privateuseareae6f9 = "\uE6F9".asInstanceOf[Privateuseareae6f9]
   @scala.inline
-  def BACKSLASHuE6ED: BACKSLASHuE6ED = "\uE6ED".asInstanceOf[BACKSLASHuE6ED]
+  def Privateuseareae6fa: Privateuseareae6fa = "\uE6FA".asInstanceOf[Privateuseareae6fa]
   @scala.inline
-  def BACKSLASHuE6EE: BACKSLASHuE6EE = "\uE6EE".asInstanceOf[BACKSLASHuE6EE]
+  def Privateuseareae6fb: Privateuseareae6fb = "\uE6FB".asInstanceOf[Privateuseareae6fb]
   @scala.inline
-  def BACKSLASHuE6EF: BACKSLASHuE6EF = "\uE6EF".asInstanceOf[BACKSLASHuE6EF]
+  def Privateuseareae6fc: Privateuseareae6fc = "\uE6FC".asInstanceOf[Privateuseareae6fc]
   @scala.inline
-  def BACKSLASHuE6F0: BACKSLASHuE6F0 = "\uE6F0".asInstanceOf[BACKSLASHuE6F0]
+  def Privateuseareae6fd: Privateuseareae6fd = "\uE6FD".asInstanceOf[Privateuseareae6fd]
   @scala.inline
-  def BACKSLASHuE6F1: BACKSLASHuE6F1 = "\uE6F1".asInstanceOf[BACKSLASHuE6F1]
+  def Privateuseareae6fe: Privateuseareae6fe = "\uE6FE".asInstanceOf[Privateuseareae6fe]
   @scala.inline
-  def BACKSLASHuE6F2: BACKSLASHuE6F2 = "\uE6F2".asInstanceOf[BACKSLASHuE6F2]
+  def Privateuseareae6ff: Privateuseareae6ff = "\uE6FF".asInstanceOf[Privateuseareae6ff]
   @scala.inline
-  def BACKSLASHuE6F3: BACKSLASHuE6F3 = "\uE6F3".asInstanceOf[BACKSLASHuE6F3]
+  def Privateuseareae701: Privateuseareae701 = "\uE701".asInstanceOf[Privateuseareae701]
   @scala.inline
-  def BACKSLASHuE6F4: BACKSLASHuE6F4 = "\uE6F4".asInstanceOf[BACKSLASHuE6F4]
+  def Privateuseareae702: Privateuseareae702 = "\uE702".asInstanceOf[Privateuseareae702]
   @scala.inline
-  def BACKSLASHuE6F5: BACKSLASHuE6F5 = "\uE6F5".asInstanceOf[BACKSLASHuE6F5]
+  def Privateuseareae703: Privateuseareae703 = "\uE703".asInstanceOf[Privateuseareae703]
   @scala.inline
-  def BACKSLASHuE6F6: BACKSLASHuE6F6 = "\uE6F6".asInstanceOf[BACKSLASHuE6F6]
+  def Privateuseareae704: Privateuseareae704 = "\uE704".asInstanceOf[Privateuseareae704]
   @scala.inline
-  def BACKSLASHuE6F7: BACKSLASHuE6F7 = "\uE6F7".asInstanceOf[BACKSLASHuE6F7]
+  def Privateuseareae705: Privateuseareae705 = "\uE705".asInstanceOf[Privateuseareae705]
   @scala.inline
-  def BACKSLASHuE6F8: BACKSLASHuE6F8 = "\uE6F8".asInstanceOf[BACKSLASHuE6F8]
+  def Privateuseareae706: Privateuseareae706 = "\uE706".asInstanceOf[Privateuseareae706]
   @scala.inline
-  def BACKSLASHuE6F9: BACKSLASHuE6F9 = "\uE6F9".asInstanceOf[BACKSLASHuE6F9]
+  def Privateuseareae707: Privateuseareae707 = "\uE707".asInstanceOf[Privateuseareae707]
   @scala.inline
-  def BACKSLASHuE6FA: BACKSLASHuE6FA = "\uE6FA".asInstanceOf[BACKSLASHuE6FA]
+  def Privateuseareae708: Privateuseareae708 = "\uE708".asInstanceOf[Privateuseareae708]
   @scala.inline
-  def BACKSLASHuE6FB: BACKSLASHuE6FB = "\uE6FB".asInstanceOf[BACKSLASHuE6FB]
+  def Privateuseareae709: Privateuseareae709 = "\uE709".asInstanceOf[Privateuseareae709]
   @scala.inline
-  def BACKSLASHuE6FC: BACKSLASHuE6FC = "\uE6FC".asInstanceOf[BACKSLASHuE6FC]
+  def Privateuseareae70a: Privateuseareae70a = "\uE70A".asInstanceOf[Privateuseareae70a]
   @scala.inline
-  def BACKSLASHuE6FD: BACKSLASHuE6FD = "\uE6FD".asInstanceOf[BACKSLASHuE6FD]
+  def Privateuseareae70b: Privateuseareae70b = "\uE70B".asInstanceOf[Privateuseareae70b]
   @scala.inline
-  def BACKSLASHuE6FE: BACKSLASHuE6FE = "\uE6FE".asInstanceOf[BACKSLASHuE6FE]
+  def Privateuseareae70c: Privateuseareae70c = "\uE70C".asInstanceOf[Privateuseareae70c]
   @scala.inline
-  def BACKSLASHuE6FF: BACKSLASHuE6FF = "\uE6FF".asInstanceOf[BACKSLASHuE6FF]
+  def Privateuseareae70d: Privateuseareae70d = "\uE70D".asInstanceOf[Privateuseareae70d]
   @scala.inline
-  def BACKSLASHuE701: BACKSLASHuE701 = "\uE701".asInstanceOf[BACKSLASHuE701]
+  def Privateuseareae70e: Privateuseareae70e = "\uE70E".asInstanceOf[Privateuseareae70e]
   @scala.inline
-  def BACKSLASHuE702: BACKSLASHuE702 = "\uE702".asInstanceOf[BACKSLASHuE702]
+  def Privateuseareae70f: Privateuseareae70f = "\uE70F".asInstanceOf[Privateuseareae70f]
   @scala.inline
-  def BACKSLASHuE703: BACKSLASHuE703 = "\uE703".asInstanceOf[BACKSLASHuE703]
+  def Privateuseareae715: Privateuseareae715 = "\uE715".asInstanceOf[Privateuseareae715]
   @scala.inline
-  def BACKSLASHuE704: BACKSLASHuE704 = "\uE704".asInstanceOf[BACKSLASHuE704]
+  def Privateuseareae716: Privateuseareae716 = "\uE716".asInstanceOf[Privateuseareae716]
   @scala.inline
-  def BACKSLASHuE705: BACKSLASHuE705 = "\uE705".asInstanceOf[BACKSLASHuE705]
+  def Privateuseareae717: Privateuseareae717 = "\uE717".asInstanceOf[Privateuseareae717]
   @scala.inline
-  def BACKSLASHuE706: BACKSLASHuE706 = "\uE706".asInstanceOf[BACKSLASHuE706]
+  def Privateuseareae718: Privateuseareae718 = "\uE718".asInstanceOf[Privateuseareae718]
   @scala.inline
-  def BACKSLASHuE707: BACKSLASHuE707 = "\uE707".asInstanceOf[BACKSLASHuE707]
+  def Privateuseareae719: Privateuseareae719 = "\uE719".asInstanceOf[Privateuseareae719]
   @scala.inline
-  def BACKSLASHuE708: BACKSLASHuE708 = "\uE708".asInstanceOf[BACKSLASHuE708]
+  def Privateuseareae71a: Privateuseareae71a = "\uE71A".asInstanceOf[Privateuseareae71a]
   @scala.inline
-  def BACKSLASHuE709: BACKSLASHuE709 = "\uE709".asInstanceOf[BACKSLASHuE709]
+  def Privateuseareae71b: Privateuseareae71b = "\uE71B".asInstanceOf[Privateuseareae71b]
   @scala.inline
-  def BACKSLASHuE70A: BACKSLASHuE70A = "\uE70A".asInstanceOf[BACKSLASHuE70A]
+  def Privateuseareae71c: Privateuseareae71c = "\uE71C".asInstanceOf[Privateuseareae71c]
   @scala.inline
-  def BACKSLASHuE70B: BACKSLASHuE70B = "\uE70B".asInstanceOf[BACKSLASHuE70B]
+  def Privateuseareae71d: Privateuseareae71d = "\uE71D".asInstanceOf[Privateuseareae71d]
   @scala.inline
-  def BACKSLASHuE70C: BACKSLASHuE70C = "\uE70C".asInstanceOf[BACKSLASHuE70C]
+  def Privateuseareae71e: Privateuseareae71e = "\uE71E".asInstanceOf[Privateuseareae71e]
   @scala.inline
-  def BACKSLASHuE70D: BACKSLASHuE70D = "\uE70D".asInstanceOf[BACKSLASHuE70D]
+  def Privateuseareae71f: Privateuseareae71f = "\uE71F".asInstanceOf[Privateuseareae71f]
   @scala.inline
-  def BACKSLASHuE70E: BACKSLASHuE70E = "\uE70E".asInstanceOf[BACKSLASHuE70E]
+  def Privateuseareae720: Privateuseareae720 = "\uE720".asInstanceOf[Privateuseareae720]
   @scala.inline
-  def BACKSLASHuE70F: BACKSLASHuE70F = "\uE70F".asInstanceOf[BACKSLASHuE70F]
+  def Privateuseareae721: Privateuseareae721 = "\uE721".asInstanceOf[Privateuseareae721]
   @scala.inline
-  def BACKSLASHuE715: BACKSLASHuE715 = "\uE715".asInstanceOf[BACKSLASHuE715]
+  def Privateuseareae722: Privateuseareae722 = "\uE722".asInstanceOf[Privateuseareae722]
   @scala.inline
-  def BACKSLASHuE716: BACKSLASHuE716 = "\uE716".asInstanceOf[BACKSLASHuE716]
+  def Privateuseareae723: Privateuseareae723 = "\uE723".asInstanceOf[Privateuseareae723]
   @scala.inline
-  def BACKSLASHuE717: BACKSLASHuE717 = "\uE717".asInstanceOf[BACKSLASHuE717]
+  def Privateuseareae724: Privateuseareae724 = "\uE724".asInstanceOf[Privateuseareae724]
   @scala.inline
-  def BACKSLASHuE718: BACKSLASHuE718 = "\uE718".asInstanceOf[BACKSLASHuE718]
+  def Privateuseareae725: Privateuseareae725 = "\uE725".asInstanceOf[Privateuseareae725]
   @scala.inline
-  def BACKSLASHuE719: BACKSLASHuE719 = "\uE719".asInstanceOf[BACKSLASHuE719]
+  def Privateuseareae726: Privateuseareae726 = "\uE726".asInstanceOf[Privateuseareae726]
   @scala.inline
-  def BACKSLASHuE71A: BACKSLASHuE71A = "\uE71A".asInstanceOf[BACKSLASHuE71A]
+  def Privateuseareae727: Privateuseareae727 = "\uE727".asInstanceOf[Privateuseareae727]
   @scala.inline
-  def BACKSLASHuE71B: BACKSLASHuE71B = "\uE71B".asInstanceOf[BACKSLASHuE71B]
+  def Privateuseareae728: Privateuseareae728 = "\uE728".asInstanceOf[Privateuseareae728]
   @scala.inline
-  def BACKSLASHuE71C: BACKSLASHuE71C = "\uE71C".asInstanceOf[BACKSLASHuE71C]
+  def Privateuseareae729: Privateuseareae729 = "\uE729".asInstanceOf[Privateuseareae729]
   @scala.inline
-  def BACKSLASHuE71D: BACKSLASHuE71D = "\uE71D".asInstanceOf[BACKSLASHuE71D]
+  def Privateuseareae72a: Privateuseareae72a = "\uE72A".asInstanceOf[Privateuseareae72a]
   @scala.inline
-  def BACKSLASHuE71E: BACKSLASHuE71E = "\uE71E".asInstanceOf[BACKSLASHuE71E]
+  def Privateuseareae72b: Privateuseareae72b = "\uE72B".asInstanceOf[Privateuseareae72b]
   @scala.inline
-  def BACKSLASHuE71F: BACKSLASHuE71F = "\uE71F".asInstanceOf[BACKSLASHuE71F]
+  def Privateuseareae72c: Privateuseareae72c = "\uE72C".asInstanceOf[Privateuseareae72c]
   @scala.inline
-  def BACKSLASHuE720: BACKSLASHuE720 = "\uE720".asInstanceOf[BACKSLASHuE720]
+  def Privateuseareae72d: Privateuseareae72d = "\uE72D".asInstanceOf[Privateuseareae72d]
   @scala.inline
-  def BACKSLASHuE721: BACKSLASHuE721 = "\uE721".asInstanceOf[BACKSLASHuE721]
+  def Privateuseareae72e: Privateuseareae72e = "\uE72E".asInstanceOf[Privateuseareae72e]
   @scala.inline
-  def BACKSLASHuE722: BACKSLASHuE722 = "\uE722".asInstanceOf[BACKSLASHuE722]
+  def Privateuseareae72f: Privateuseareae72f = "\uE72F".asInstanceOf[Privateuseareae72f]
   @scala.inline
-  def BACKSLASHuE723: BACKSLASHuE723 = "\uE723".asInstanceOf[BACKSLASHuE723]
+  def Privateuseareae730: Privateuseareae730 = "\uE730".asInstanceOf[Privateuseareae730]
   @scala.inline
-  def BACKSLASHuE724: BACKSLASHuE724 = "\uE724".asInstanceOf[BACKSLASHuE724]
+  def Privateuseareae731: Privateuseareae731 = "\uE731".asInstanceOf[Privateuseareae731]
   @scala.inline
-  def BACKSLASHuE725: BACKSLASHuE725 = "\uE725".asInstanceOf[BACKSLASHuE725]
+  def Privateuseareae732: Privateuseareae732 = "\uE732".asInstanceOf[Privateuseareae732]
   @scala.inline
-  def BACKSLASHuE726: BACKSLASHuE726 = "\uE726".asInstanceOf[BACKSLASHuE726]
+  def Privateuseareae733: Privateuseareae733 = "\uE733".asInstanceOf[Privateuseareae733]
   @scala.inline
-  def BACKSLASHuE727: BACKSLASHuE727 = "\uE727".asInstanceOf[BACKSLASHuE727]
+  def Privateuseareae734: Privateuseareae734 = "\uE734".asInstanceOf[Privateuseareae734]
   @scala.inline
-  def BACKSLASHuE728: BACKSLASHuE728 = "\uE728".asInstanceOf[BACKSLASHuE728]
+  def Privateuseareae735: Privateuseareae735 = "\uE735".asInstanceOf[Privateuseareae735]
   @scala.inline
-  def BACKSLASHuE729: BACKSLASHuE729 = "\uE729".asInstanceOf[BACKSLASHuE729]
+  def Privateuseareae736: Privateuseareae736 = "\uE736".asInstanceOf[Privateuseareae736]
   @scala.inline
-  def BACKSLASHuE72A: BACKSLASHuE72A = "\uE72A".asInstanceOf[BACKSLASHuE72A]
+  def Privateuseareae737: Privateuseareae737 = "\uE737".asInstanceOf[Privateuseareae737]
   @scala.inline
-  def BACKSLASHuE72B: BACKSLASHuE72B = "\uE72B".asInstanceOf[BACKSLASHuE72B]
+  def Privateuseareae738: Privateuseareae738 = "\uE738".asInstanceOf[Privateuseareae738]
   @scala.inline
-  def BACKSLASHuE72C: BACKSLASHuE72C = "\uE72C".asInstanceOf[BACKSLASHuE72C]
+  def Privateuseareae739: Privateuseareae739 = "\uE739".asInstanceOf[Privateuseareae739]
   @scala.inline
-  def BACKSLASHuE72D: BACKSLASHuE72D = "\uE72D".asInstanceOf[BACKSLASHuE72D]
+  def Privateuseareae73a: Privateuseareae73a = "\uE73A".asInstanceOf[Privateuseareae73a]
   @scala.inline
-  def BACKSLASHuE72E: BACKSLASHuE72E = "\uE72E".asInstanceOf[BACKSLASHuE72E]
+  def Privateuseareae73b: Privateuseareae73b = "\uE73B".asInstanceOf[Privateuseareae73b]
   @scala.inline
-  def BACKSLASHuE72F: BACKSLASHuE72F = "\uE72F".asInstanceOf[BACKSLASHuE72F]
+  def Privateuseareae73c: Privateuseareae73c = "\uE73C".asInstanceOf[Privateuseareae73c]
   @scala.inline
-  def BACKSLASHuE730: BACKSLASHuE730 = "\uE730".asInstanceOf[BACKSLASHuE730]
+  def Privateuseareae73d: Privateuseareae73d = "\uE73D".asInstanceOf[Privateuseareae73d]
   @scala.inline
-  def BACKSLASHuE731: BACKSLASHuE731 = "\uE731".asInstanceOf[BACKSLASHuE731]
+  def Privateuseareae73e: Privateuseareae73e = "\uE73E".asInstanceOf[Privateuseareae73e]
   @scala.inline
-  def BACKSLASHuE732: BACKSLASHuE732 = "\uE732".asInstanceOf[BACKSLASHuE732]
+  def Privateuseareae73f: Privateuseareae73f = "\uE73F".asInstanceOf[Privateuseareae73f]
   @scala.inline
-  def BACKSLASHuE733: BACKSLASHuE733 = "\uE733".asInstanceOf[BACKSLASHuE733]
+  def Privateuseareae740: Privateuseareae740 = "\uE740".asInstanceOf[Privateuseareae740]
   @scala.inline
-  def BACKSLASHuE734: BACKSLASHuE734 = "\uE734".asInstanceOf[BACKSLASHuE734]
+  def Privateuseareae741: Privateuseareae741 = "\uE741".asInstanceOf[Privateuseareae741]
   @scala.inline
-  def BACKSLASHuE735: BACKSLASHuE735 = "\uE735".asInstanceOf[BACKSLASHuE735]
+  def Privateuseareae742: Privateuseareae742 = "\uE742".asInstanceOf[Privateuseareae742]
   @scala.inline
-  def BACKSLASHuE736: BACKSLASHuE736 = "\uE736".asInstanceOf[BACKSLASHuE736]
+  def Privateuseareae743: Privateuseareae743 = "\uE743".asInstanceOf[Privateuseareae743]
   @scala.inline
-  def BACKSLASHuE737: BACKSLASHuE737 = "\uE737".asInstanceOf[BACKSLASHuE737]
+  def Privateuseareae744: Privateuseareae744 = "\uE744".asInstanceOf[Privateuseareae744]
   @scala.inline
-  def BACKSLASHuE738: BACKSLASHuE738 = "\uE738".asInstanceOf[BACKSLASHuE738]
+  def Privateuseareae745: Privateuseareae745 = "\uE745".asInstanceOf[Privateuseareae745]
   @scala.inline
-  def BACKSLASHuE739: BACKSLASHuE739 = "\uE739".asInstanceOf[BACKSLASHuE739]
+  def Privateuseareae746: Privateuseareae746 = "\uE746".asInstanceOf[Privateuseareae746]
   @scala.inline
-  def BACKSLASHuE73A: BACKSLASHuE73A = "\uE73A".asInstanceOf[BACKSLASHuE73A]
+  def Privateuseareae747: Privateuseareae747 = "\uE747".asInstanceOf[Privateuseareae747]
   @scala.inline
-  def BACKSLASHuE73B: BACKSLASHuE73B = "\uE73B".asInstanceOf[BACKSLASHuE73B]
+  def Privateuseareae748: Privateuseareae748 = "\uE748".asInstanceOf[Privateuseareae748]
   @scala.inline
-  def BACKSLASHuE73C: BACKSLASHuE73C = "\uE73C".asInstanceOf[BACKSLASHuE73C]
+  def Privateuseareae749: Privateuseareae749 = "\uE749".asInstanceOf[Privateuseareae749]
   @scala.inline
-  def BACKSLASHuE73D: BACKSLASHuE73D = "\uE73D".asInstanceOf[BACKSLASHuE73D]
+  def Privateuseareae74a: Privateuseareae74a = "\uE74A".asInstanceOf[Privateuseareae74a]
   @scala.inline
-  def BACKSLASHuE73E: BACKSLASHuE73E = "\uE73E".asInstanceOf[BACKSLASHuE73E]
+  def Privateuseareae74b: Privateuseareae74b = "\uE74B".asInstanceOf[Privateuseareae74b]
   @scala.inline
-  def BACKSLASHuE73F: BACKSLASHuE73F = "\uE73F".asInstanceOf[BACKSLASHuE73F]
+  def Privateuseareae74f: Privateuseareae74f = "\uE74F".asInstanceOf[Privateuseareae74f]
   @scala.inline
-  def BACKSLASHuE740: BACKSLASHuE740 = "\uE740".asInstanceOf[BACKSLASHuE740]
+  def Privateuseareae750: Privateuseareae750 = "\uE750".asInstanceOf[Privateuseareae750]
   @scala.inline
-  def BACKSLASHuE741: BACKSLASHuE741 = "\uE741".asInstanceOf[BACKSLASHuE741]
+  def Privateuseareae751: Privateuseareae751 = "\uE751".asInstanceOf[Privateuseareae751]
   @scala.inline
-  def BACKSLASHuE742: BACKSLASHuE742 = "\uE742".asInstanceOf[BACKSLASHuE742]
+  def Privateuseareae752: Privateuseareae752 = "\uE752".asInstanceOf[Privateuseareae752]
   @scala.inline
-  def BACKSLASHuE743: BACKSLASHuE743 = "\uE743".asInstanceOf[BACKSLASHuE743]
+  def Privateuseareae753: Privateuseareae753 = "\uE753".asInstanceOf[Privateuseareae753]
   @scala.inline
-  def BACKSLASHuE744: BACKSLASHuE744 = "\uE744".asInstanceOf[BACKSLASHuE744]
+  def Privateuseareae754: Privateuseareae754 = "\uE754".asInstanceOf[Privateuseareae754]
   @scala.inline
-  def BACKSLASHuE745: BACKSLASHuE745 = "\uE745".asInstanceOf[BACKSLASHuE745]
+  def Privateuseareae755: Privateuseareae755 = "\uE755".asInstanceOf[Privateuseareae755]
   @scala.inline
-  def BACKSLASHuE746: BACKSLASHuE746 = "\uE746".asInstanceOf[BACKSLASHuE746]
+  def Privateuseareae756: Privateuseareae756 = "\uE756".asInstanceOf[Privateuseareae756]
   @scala.inline
-  def BACKSLASHuE747: BACKSLASHuE747 = "\uE747".asInstanceOf[BACKSLASHuE747]
+  def Privateuseareae757: Privateuseareae757 = "\uE757".asInstanceOf[Privateuseareae757]
   @scala.inline
-  def BACKSLASHuE748: BACKSLASHuE748 = "\uE748".asInstanceOf[BACKSLASHuE748]
+  def Privateuseareae758: Privateuseareae758 = "\uE758".asInstanceOf[Privateuseareae758]
   @scala.inline
-  def BACKSLASHuE749: BACKSLASHuE749 = "\uE749".asInstanceOf[BACKSLASHuE749]
+  def Privateuseareae759: Privateuseareae759 = "\uE759".asInstanceOf[Privateuseareae759]
   @scala.inline
-  def BACKSLASHuE74A: BACKSLASHuE74A = "\uE74A".asInstanceOf[BACKSLASHuE74A]
+  def Privateuseareae75a: Privateuseareae75a = "\uE75A".asInstanceOf[Privateuseareae75a]
   @scala.inline
-  def BACKSLASHuE74B: BACKSLASHuE74B = "\uE74B".asInstanceOf[BACKSLASHuE74B]
+  def Privateuseareae75b: Privateuseareae75b = "\uE75B".asInstanceOf[Privateuseareae75b]
   @scala.inline
-  def BACKSLASHuE74F: BACKSLASHuE74F = "\uE74F".asInstanceOf[BACKSLASHuE74F]
+  def Privateuseareae75c: Privateuseareae75c = "\uE75C".asInstanceOf[Privateuseareae75c]
   @scala.inline
-  def BACKSLASHuE750: BACKSLASHuE750 = "\uE750".asInstanceOf[BACKSLASHuE750]
+  def Privateuseareae75d: Privateuseareae75d = "\uE75D".asInstanceOf[Privateuseareae75d]
   @scala.inline
-  def BACKSLASHuE751: BACKSLASHuE751 = "\uE751".asInstanceOf[BACKSLASHuE751]
+  def Privateuseareae75e: Privateuseareae75e = "\uE75E".asInstanceOf[Privateuseareae75e]
   @scala.inline
-  def BACKSLASHuE752: BACKSLASHuE752 = "\uE752".asInstanceOf[BACKSLASHuE752]
+  def Privateuseareae75f: Privateuseareae75f = "\uE75F".asInstanceOf[Privateuseareae75f]
   @scala.inline
-  def BACKSLASHuE753: BACKSLASHuE753 = "\uE753".asInstanceOf[BACKSLASHuE753]
+  def Privateuseareae760: Privateuseareae760 = "\uE760".asInstanceOf[Privateuseareae760]
   @scala.inline
-  def BACKSLASHuE754: BACKSLASHuE754 = "\uE754".asInstanceOf[BACKSLASHuE754]
+  def Privateuseareae761: Privateuseareae761 = "\uE761".asInstanceOf[Privateuseareae761]
   @scala.inline
-  def BACKSLASHuE755: BACKSLASHuE755 = "\uE755".asInstanceOf[BACKSLASHuE755]
+  def Privateuseareae762: Privateuseareae762 = "\uE762".asInstanceOf[Privateuseareae762]
   @scala.inline
-  def BACKSLASHuE756: BACKSLASHuE756 = "\uE756".asInstanceOf[BACKSLASHuE756]
+  def Privateuseareae763: Privateuseareae763 = "\uE763".asInstanceOf[Privateuseareae763]
   @scala.inline
-  def BACKSLASHuE757: BACKSLASHuE757 = "\uE757".asInstanceOf[BACKSLASHuE757]
+  def Privateuseareae764: Privateuseareae764 = "\uE764".asInstanceOf[Privateuseareae764]
   @scala.inline
-  def BACKSLASHuE758: BACKSLASHuE758 = "\uE758".asInstanceOf[BACKSLASHuE758]
+  def Privateuseareae765: Privateuseareae765 = "\uE765".asInstanceOf[Privateuseareae765]
   @scala.inline
-  def BACKSLASHuE759: BACKSLASHuE759 = "\uE759".asInstanceOf[BACKSLASHuE759]
+  def Privateuseareae768: Privateuseareae768 = "\uE768".asInstanceOf[Privateuseareae768]
   @scala.inline
-  def BACKSLASHuE75A: BACKSLASHuE75A = "\uE75A".asInstanceOf[BACKSLASHuE75A]
+  def Privateuseareae769: Privateuseareae769 = "\uE769".asInstanceOf[Privateuseareae769]
   @scala.inline
-  def BACKSLASHuE75B: BACKSLASHuE75B = "\uE75B".asInstanceOf[BACKSLASHuE75B]
+  def Privateuseareae76a: Privateuseareae76a = "\uE76A".asInstanceOf[Privateuseareae76a]
   @scala.inline
-  def BACKSLASHuE75C: BACKSLASHuE75C = "\uE75C".asInstanceOf[BACKSLASHuE75C]
+  def Privateuseareae76b: Privateuseareae76b = "\uE76B".asInstanceOf[Privateuseareae76b]
   @scala.inline
-  def BACKSLASHuE75D: BACKSLASHuE75D = "\uE75D".asInstanceOf[BACKSLASHuE75D]
+  def Privateuseareae76c: Privateuseareae76c = "\uE76C".asInstanceOf[Privateuseareae76c]
   @scala.inline
-  def BACKSLASHuE75E: BACKSLASHuE75E = "\uE75E".asInstanceOf[BACKSLASHuE75E]
+  def Privateuseareae76f: Privateuseareae76f = "\uE76F".asInstanceOf[Privateuseareae76f]
   @scala.inline
-  def BACKSLASHuE75F: BACKSLASHuE75F = "\uE75F".asInstanceOf[BACKSLASHuE75F]
+  def Privateuseareae770: Privateuseareae770 = "\uE770".asInstanceOf[Privateuseareae770]
   @scala.inline
-  def BACKSLASHuE760: BACKSLASHuE760 = "\uE760".asInstanceOf[BACKSLASHuE760]
+  def Privateuseareae771: Privateuseareae771 = "\uE771".asInstanceOf[Privateuseareae771]
   @scala.inline
-  def BACKSLASHuE761: BACKSLASHuE761 = "\uE761".asInstanceOf[BACKSLASHuE761]
+  def Privateuseareae772: Privateuseareae772 = "\uE772".asInstanceOf[Privateuseareae772]
   @scala.inline
-  def BACKSLASHuE762: BACKSLASHuE762 = "\uE762".asInstanceOf[BACKSLASHuE762]
+  def Privateuseareae773: Privateuseareae773 = "\uE773".asInstanceOf[Privateuseareae773]
   @scala.inline
-  def BACKSLASHuE763: BACKSLASHuE763 = "\uE763".asInstanceOf[BACKSLASHuE763]
+  def Privateuseareae774: Privateuseareae774 = "\uE774".asInstanceOf[Privateuseareae774]
   @scala.inline
-  def BACKSLASHuE764: BACKSLASHuE764 = "\uE764".asInstanceOf[BACKSLASHuE764]
+  def Privateuseareae775: Privateuseareae775 = "\uE775".asInstanceOf[Privateuseareae775]
   @scala.inline
-  def BACKSLASHuE765: BACKSLASHuE765 = "\uE765".asInstanceOf[BACKSLASHuE765]
+  def Privateuseareae776: Privateuseareae776 = "\uE776".asInstanceOf[Privateuseareae776]
   @scala.inline
-  def BACKSLASHuE768: BACKSLASHuE768 = "\uE768".asInstanceOf[BACKSLASHuE768]
+  def Privateuseareae777: Privateuseareae777 = "\uE777".asInstanceOf[Privateuseareae777]
   @scala.inline
-  def BACKSLASHuE769: BACKSLASHuE769 = "\uE769".asInstanceOf[BACKSLASHuE769]
+  def Privateuseareae778: Privateuseareae778 = "\uE778".asInstanceOf[Privateuseareae778]
   @scala.inline
-  def BACKSLASHuE76A: BACKSLASHuE76A = "\uE76A".asInstanceOf[BACKSLASHuE76A]
+  def Privateuseareae779: Privateuseareae779 = "\uE779".asInstanceOf[Privateuseareae779]
   @scala.inline
-  def BACKSLASHuE76B: BACKSLASHuE76B = "\uE76B".asInstanceOf[BACKSLASHuE76B]
+  def Privateuseareae78a: Privateuseareae78a = "\uE78A".asInstanceOf[Privateuseareae78a]
   @scala.inline
-  def BACKSLASHuE76C: BACKSLASHuE76C = "\uE76C".asInstanceOf[BACKSLASHuE76C]
+  def Privateuseareae78b: Privateuseareae78b = "\uE78B".asInstanceOf[Privateuseareae78b]
   @scala.inline
-  def BACKSLASHuE76F: BACKSLASHuE76F = "\uE76F".asInstanceOf[BACKSLASHuE76F]
+  def Privateuseareae78c: Privateuseareae78c = "\uE78C".asInstanceOf[Privateuseareae78c]
   @scala.inline
-  def BACKSLASHuE770: BACKSLASHuE770 = "\uE770".asInstanceOf[BACKSLASHuE770]
+  def Privateuseareae78d: Privateuseareae78d = "\uE78D".asInstanceOf[Privateuseareae78d]
   @scala.inline
-  def BACKSLASHuE771: BACKSLASHuE771 = "\uE771".asInstanceOf[BACKSLASHuE771]
+  def Privateuseareae78e: Privateuseareae78e = "\uE78E".asInstanceOf[Privateuseareae78e]
   @scala.inline
-  def BACKSLASHuE772: BACKSLASHuE772 = "\uE772".asInstanceOf[BACKSLASHuE772]
+  def Privateuseareae78f: Privateuseareae78f = "\uE78F".asInstanceOf[Privateuseareae78f]
   @scala.inline
-  def BACKSLASHuE773: BACKSLASHuE773 = "\uE773".asInstanceOf[BACKSLASHuE773]
+  def Privateuseareae790: Privateuseareae790 = "\uE790".asInstanceOf[Privateuseareae790]
   @scala.inline
-  def BACKSLASHuE774: BACKSLASHuE774 = "\uE774".asInstanceOf[BACKSLASHuE774]
+  def Privateuseareae791: Privateuseareae791 = "\uE791".asInstanceOf[Privateuseareae791]
   @scala.inline
-  def BACKSLASHuE775: BACKSLASHuE775 = "\uE775".asInstanceOf[BACKSLASHuE775]
+  def Privateuseareae792: Privateuseareae792 = "\uE792".asInstanceOf[Privateuseareae792]
   @scala.inline
-  def BACKSLASHuE776: BACKSLASHuE776 = "\uE776".asInstanceOf[BACKSLASHuE776]
+  def Privateuseareae793: Privateuseareae793 = "\uE793".asInstanceOf[Privateuseareae793]
   @scala.inline
-  def BACKSLASHuE777: BACKSLASHuE777 = "\uE777".asInstanceOf[BACKSLASHuE777]
+  def Privateuseareae794: Privateuseareae794 = "\uE794".asInstanceOf[Privateuseareae794]
   @scala.inline
-  def BACKSLASHuE778: BACKSLASHuE778 = "\uE778".asInstanceOf[BACKSLASHuE778]
+  def Privateuseareae795: Privateuseareae795 = "\uE795".asInstanceOf[Privateuseareae795]
   @scala.inline
-  def BACKSLASHuE779: BACKSLASHuE779 = "\uE779".asInstanceOf[BACKSLASHuE779]
+  def Privateuseareae796: Privateuseareae796 = "\uE796".asInstanceOf[Privateuseareae796]
   @scala.inline
-  def BACKSLASHuE78A: BACKSLASHuE78A = "\uE78A".asInstanceOf[BACKSLASHuE78A]
+  def Privateuseareae797: Privateuseareae797 = "\uE797".asInstanceOf[Privateuseareae797]
   @scala.inline
-  def BACKSLASHuE78B: BACKSLASHuE78B = "\uE78B".asInstanceOf[BACKSLASHuE78B]
+  def Privateuseareae798: Privateuseareae798 = "\uE798".asInstanceOf[Privateuseareae798]
   @scala.inline
-  def BACKSLASHuE78C: BACKSLASHuE78C = "\uE78C".asInstanceOf[BACKSLASHuE78C]
+  def Privateuseareae799: Privateuseareae799 = "\uE799".asInstanceOf[Privateuseareae799]
   @scala.inline
-  def BACKSLASHuE78D: BACKSLASHuE78D = "\uE78D".asInstanceOf[BACKSLASHuE78D]
+  def Privateuseareae79a: Privateuseareae79a = "\uE79A".asInstanceOf[Privateuseareae79a]
   @scala.inline
-  def BACKSLASHuE78E: BACKSLASHuE78E = "\uE78E".asInstanceOf[BACKSLASHuE78E]
+  def Privateuseareae79b: Privateuseareae79b = "\uE79B".asInstanceOf[Privateuseareae79b]
   @scala.inline
-  def BACKSLASHuE78F: BACKSLASHuE78F = "\uE78F".asInstanceOf[BACKSLASHuE78F]
+  def Privateuseareae79c: Privateuseareae79c = "\uE79C".asInstanceOf[Privateuseareae79c]
   @scala.inline
-  def BACKSLASHuE790: BACKSLASHuE790 = "\uE790".asInstanceOf[BACKSLASHuE790]
+  def Privateuseareae79d: Privateuseareae79d = "\uE79D".asInstanceOf[Privateuseareae79d]
   @scala.inline
-  def BACKSLASHuE791: BACKSLASHuE791 = "\uE791".asInstanceOf[BACKSLASHuE791]
+  def Privateuseareae79e: Privateuseareae79e = "\uE79E".asInstanceOf[Privateuseareae79e]
   @scala.inline
-  def BACKSLASHuE792: BACKSLASHuE792 = "\uE792".asInstanceOf[BACKSLASHuE792]
+  def Privateuseareae79f: Privateuseareae79f = "\uE79F".asInstanceOf[Privateuseareae79f]
   @scala.inline
-  def BACKSLASHuE793: BACKSLASHuE793 = "\uE793".asInstanceOf[BACKSLASHuE793]
+  def Privateuseareae7a2: Privateuseareae7a2 = "\uE7A2".asInstanceOf[Privateuseareae7a2]
   @scala.inline
-  def BACKSLASHuE794: BACKSLASHuE794 = "\uE794".asInstanceOf[BACKSLASHuE794]
+  def Privateuseareae7a3: Privateuseareae7a3 = "\uE7A3".asInstanceOf[Privateuseareae7a3]
   @scala.inline
-  def BACKSLASHuE795: BACKSLASHuE795 = "\uE795".asInstanceOf[BACKSLASHuE795]
+  def Privateuseareae7a4: Privateuseareae7a4 = "\uE7A4".asInstanceOf[Privateuseareae7a4]
   @scala.inline
-  def BACKSLASHuE796: BACKSLASHuE796 = "\uE796".asInstanceOf[BACKSLASHuE796]
+  def Privateuseareae7a5: Privateuseareae7a5 = "\uE7A5".asInstanceOf[Privateuseareae7a5]
   @scala.inline
-  def BACKSLASHuE797: BACKSLASHuE797 = "\uE797".asInstanceOf[BACKSLASHuE797]
+  def Privateuseareae7a6: Privateuseareae7a6 = "\uE7A6".asInstanceOf[Privateuseareae7a6]
   @scala.inline
-  def BACKSLASHuE798: BACKSLASHuE798 = "\uE798".asInstanceOf[BACKSLASHuE798]
+  def Privateuseareae7a7: Privateuseareae7a7 = "\uE7A7".asInstanceOf[Privateuseareae7a7]
   @scala.inline
-  def BACKSLASHuE799: BACKSLASHuE799 = "\uE799".asInstanceOf[BACKSLASHuE799]
+  def Privateuseareae7a8: Privateuseareae7a8 = "\uE7A8".asInstanceOf[Privateuseareae7a8]
   @scala.inline
-  def BACKSLASHuE79A: BACKSLASHuE79A = "\uE79A".asInstanceOf[BACKSLASHuE79A]
+  def Privateuseareae7a9: Privateuseareae7a9 = "\uE7A9".asInstanceOf[Privateuseareae7a9]
   @scala.inline
-  def BACKSLASHuE79B: BACKSLASHuE79B = "\uE79B".asInstanceOf[BACKSLASHuE79B]
+  def Privateuseareae7b0: Privateuseareae7b0 = "\uE7B0".asInstanceOf[Privateuseareae7b0]
   @scala.inline
-  def BACKSLASHuE79C: BACKSLASHuE79C = "\uE79C".asInstanceOf[BACKSLASHuE79C]
+  def Privateuseareae7b1: Privateuseareae7b1 = "\uE7B1".asInstanceOf[Privateuseareae7b1]
   @scala.inline
-  def BACKSLASHuE79D: BACKSLASHuE79D = "\uE79D".asInstanceOf[BACKSLASHuE79D]
+  def Privateuseareae7b2: Privateuseareae7b2 = "\uE7B2".asInstanceOf[Privateuseareae7b2]
   @scala.inline
-  def BACKSLASHuE79E: BACKSLASHuE79E = "\uE79E".asInstanceOf[BACKSLASHuE79E]
+  def Privateuseareae7b3: Privateuseareae7b3 = "\uE7B3".asInstanceOf[Privateuseareae7b3]
   @scala.inline
-  def BACKSLASHuE79F: BACKSLASHuE79F = "\uE79F".asInstanceOf[BACKSLASHuE79F]
+  def Privateuseareae7b4: Privateuseareae7b4 = "\uE7B4".asInstanceOf[Privateuseareae7b4]
   @scala.inline
-  def BACKSLASHuE7A2: BACKSLASHuE7A2 = "\uE7A2".asInstanceOf[BACKSLASHuE7A2]
+  def Privateuseareae7b5: Privateuseareae7b5 = "\uE7B5".asInstanceOf[Privateuseareae7b5]
   @scala.inline
-  def BACKSLASHuE7A3: BACKSLASHuE7A3 = "\uE7A3".asInstanceOf[BACKSLASHuE7A3]
+  def Privateuseareae7b6: Privateuseareae7b6 = "\uE7B6".asInstanceOf[Privateuseareae7b6]
   @scala.inline
-  def BACKSLASHuE7A4: BACKSLASHuE7A4 = "\uE7A4".asInstanceOf[BACKSLASHuE7A4]
+  def Privateuseareae7b7: Privateuseareae7b7 = "\uE7B7".asInstanceOf[Privateuseareae7b7]
   @scala.inline
-  def BACKSLASHuE7A5: BACKSLASHuE7A5 = "\uE7A5".asInstanceOf[BACKSLASHuE7A5]
+  def Privateuseareae7b8: Privateuseareae7b8 = "\uE7B8".asInstanceOf[Privateuseareae7b8]
   @scala.inline
-  def BACKSLASHuE7A6: BACKSLASHuE7A6 = "\uE7A6".asInstanceOf[BACKSLASHuE7A6]
+  def Privateuseareae7b9: Privateuseareae7b9 = "\uE7B9".asInstanceOf[Privateuseareae7b9]
   @scala.inline
-  def BACKSLASHuE7A7: BACKSLASHuE7A7 = "\uE7A7".asInstanceOf[BACKSLASHuE7A7]
+  def Privateuseareae7c0: Privateuseareae7c0 = "\uE7C0".asInstanceOf[Privateuseareae7c0]
   @scala.inline
-  def BACKSLASHuE7A8: BACKSLASHuE7A8 = "\uE7A8".asInstanceOf[BACKSLASHuE7A8]
+  def Privateuseareae7c1: Privateuseareae7c1 = "\uE7C1".asInstanceOf[Privateuseareae7c1]
   @scala.inline
-  def BACKSLASHuE7A9: BACKSLASHuE7A9 = "\uE7A9".asInstanceOf[BACKSLASHuE7A9]
+  def Privateuseareae7c2: Privateuseareae7c2 = "\uE7C2".asInstanceOf[Privateuseareae7c2]
   @scala.inline
-  def BACKSLASHuE7B0: BACKSLASHuE7B0 = "\uE7B0".asInstanceOf[BACKSLASHuE7B0]
+  def Privateuseareae7c3: Privateuseareae7c3 = "\uE7C3".asInstanceOf[Privateuseareae7c3]
   @scala.inline
-  def BACKSLASHuE7B1: BACKSLASHuE7B1 = "\uE7B1".asInstanceOf[BACKSLASHuE7B1]
+  def Privateuseareae7c4: Privateuseareae7c4 = "\uE7C4".asInstanceOf[Privateuseareae7c4]
   @scala.inline
-  def BACKSLASHuE7B2: BACKSLASHuE7B2 = "\uE7B2".asInstanceOf[BACKSLASHuE7B2]
+  def Privateuseareae7c5: Privateuseareae7c5 = "\uE7C5".asInstanceOf[Privateuseareae7c5]
   @scala.inline
-  def BACKSLASHuE7B3: BACKSLASHuE7B3 = "\uE7B3".asInstanceOf[BACKSLASHuE7B3]
+  def Privateuseareae7c6: Privateuseareae7c6 = "\uE7C6".asInstanceOf[Privateuseareae7c6]
   @scala.inline
-  def BACKSLASHuE7B4: BACKSLASHuE7B4 = "\uE7B4".asInstanceOf[BACKSLASHuE7B4]
+  def Privateuseareae7c7: Privateuseareae7c7 = "\uE7C7".asInstanceOf[Privateuseareae7c7]
   @scala.inline
-  def BACKSLASHuE7B5: BACKSLASHuE7B5 = "\uE7B5".asInstanceOf[BACKSLASHuE7B5]
+  def Privateuseareae7c8: Privateuseareae7c8 = "\uE7C8".asInstanceOf[Privateuseareae7c8]
   @scala.inline
-  def BACKSLASHuE7B6: BACKSLASHuE7B6 = "\uE7B6".asInstanceOf[BACKSLASHuE7B6]
+  def Privateuseareae7c9: Privateuseareae7c9 = "\uE7C9".asInstanceOf[Privateuseareae7c9]
   @scala.inline
-  def BACKSLASHuE7B7: BACKSLASHuE7B7 = "\uE7B7".asInstanceOf[BACKSLASHuE7B7]
+  def Privateuseareae7d0: Privateuseareae7d0 = "\uE7D0".asInstanceOf[Privateuseareae7d0]
   @scala.inline
-  def BACKSLASHuE7B8: BACKSLASHuE7B8 = "\uE7B8".asInstanceOf[BACKSLASHuE7B8]
+  def Privateuseareae7d1: Privateuseareae7d1 = "\uE7D1".asInstanceOf[Privateuseareae7d1]
   @scala.inline
-  def BACKSLASHuE7B9: BACKSLASHuE7B9 = "\uE7B9".asInstanceOf[BACKSLASHuE7B9]
+  def Privateuseareae7d2: Privateuseareae7d2 = "\uE7D2".asInstanceOf[Privateuseareae7d2]
   @scala.inline
-  def BACKSLASHuE7C0: BACKSLASHuE7C0 = "\uE7C0".asInstanceOf[BACKSLASHuE7C0]
+  def Privateuseareae7d3: Privateuseareae7d3 = "\uE7D3".asInstanceOf[Privateuseareae7d3]
   @scala.inline
-  def BACKSLASHuE7C1: BACKSLASHuE7C1 = "\uE7C1".asInstanceOf[BACKSLASHuE7C1]
+  def Privateuseareae7d4: Privateuseareae7d4 = "\uE7D4".asInstanceOf[Privateuseareae7d4]
   @scala.inline
-  def BACKSLASHuE7C2: BACKSLASHuE7C2 = "\uE7C2".asInstanceOf[BACKSLASHuE7C2]
+  def Privateuseareae7d5: Privateuseareae7d5 = "\uE7D5".asInstanceOf[Privateuseareae7d5]
   @scala.inline
-  def BACKSLASHuE7C3: BACKSLASHuE7C3 = "\uE7C3".asInstanceOf[BACKSLASHuE7C3]
+  def Privateuseareae7d6: Privateuseareae7d6 = "\uE7D6".asInstanceOf[Privateuseareae7d6]
   @scala.inline
-  def BACKSLASHuE7C4: BACKSLASHuE7C4 = "\uE7C4".asInstanceOf[BACKSLASHuE7C4]
+  def Privateuseareae7d7: Privateuseareae7d7 = "\uE7D7".asInstanceOf[Privateuseareae7d7]
   @scala.inline
-  def BACKSLASHuE7C5: BACKSLASHuE7C5 = "\uE7C5".asInstanceOf[BACKSLASHuE7C5]
+  def Privateuseareae7d8: Privateuseareae7d8 = "\uE7D8".asInstanceOf[Privateuseareae7d8]
   @scala.inline
-  def BACKSLASHuE7C6: BACKSLASHuE7C6 = "\uE7C6".asInstanceOf[BACKSLASHuE7C6]
+  def Privateuseareae7d9: Privateuseareae7d9 = "\uE7D9".asInstanceOf[Privateuseareae7d9]
   @scala.inline
-  def BACKSLASHuE7C7: BACKSLASHuE7C7 = "\uE7C7".asInstanceOf[BACKSLASHuE7C7]
+  def Privateuseareae7e0: Privateuseareae7e0 = "\uE7E0".asInstanceOf[Privateuseareae7e0]
   @scala.inline
-  def BACKSLASHuE7C8: BACKSLASHuE7C8 = "\uE7C8".asInstanceOf[BACKSLASHuE7C8]
+  def Privateuseareae7e1: Privateuseareae7e1 = "\uE7E1".asInstanceOf[Privateuseareae7e1]
   @scala.inline
-  def BACKSLASHuE7C9: BACKSLASHuE7C9 = "\uE7C9".asInstanceOf[BACKSLASHuE7C9]
+  def Privateuseareae7e2: Privateuseareae7e2 = "\uE7E2".asInstanceOf[Privateuseareae7e2]
   @scala.inline
-  def BACKSLASHuE7D0: BACKSLASHuE7D0 = "\uE7D0".asInstanceOf[BACKSLASHuE7D0]
+  def Privateuseareae7e3: Privateuseareae7e3 = "\uE7E3".asInstanceOf[Privateuseareae7e3]
   @scala.inline
-  def BACKSLASHuE7D1: BACKSLASHuE7D1 = "\uE7D1".asInstanceOf[BACKSLASHuE7D1]
+  def Privateuseareae7e4: Privateuseareae7e4 = "\uE7E4".asInstanceOf[Privateuseareae7e4]
   @scala.inline
-  def BACKSLASHuE7D2: BACKSLASHuE7D2 = "\uE7D2".asInstanceOf[BACKSLASHuE7D2]
+  def Privateuseareae900: Privateuseareae900 = "\uE900".asInstanceOf[Privateuseareae900]
   @scala.inline
-  def BACKSLASHuE7D3: BACKSLASHuE7D3 = "\uE7D3".asInstanceOf[BACKSLASHuE7D3]
+  def Privateuseareae901: Privateuseareae901 = "\uE901".asInstanceOf[Privateuseareae901]
   @scala.inline
-  def BACKSLASHuE7D4: BACKSLASHuE7D4 = "\uE7D4".asInstanceOf[BACKSLASHuE7D4]
+  def Privateuseareae902: Privateuseareae902 = "\uE902".asInstanceOf[Privateuseareae902]
   @scala.inline
-  def BACKSLASHuE7D5: BACKSLASHuE7D5 = "\uE7D5".asInstanceOf[BACKSLASHuE7D5]
+  def Privateuseareae903: Privateuseareae903 = "\uE903".asInstanceOf[Privateuseareae903]
   @scala.inline
-  def BACKSLASHuE7D6: BACKSLASHuE7D6 = "\uE7D6".asInstanceOf[BACKSLASHuE7D6]
+  def Privateuseareae904: Privateuseareae904 = "\uE904".asInstanceOf[Privateuseareae904]
   @scala.inline
-  def BACKSLASHuE7D7: BACKSLASHuE7D7 = "\uE7D7".asInstanceOf[BACKSLASHuE7D7]
+  def Privateuseareae905: Privateuseareae905 = "\uE905".asInstanceOf[Privateuseareae905]
   @scala.inline
-  def BACKSLASHuE7D8: BACKSLASHuE7D8 = "\uE7D8".asInstanceOf[BACKSLASHuE7D8]
+  def Privateuseareae906: Privateuseareae906 = "\uE906".asInstanceOf[Privateuseareae906]
   @scala.inline
-  def BACKSLASHuE7D9: BACKSLASHuE7D9 = "\uE7D9".asInstanceOf[BACKSLASHuE7D9]
+  def Privateuseareae907: Privateuseareae907 = "\uE907".asInstanceOf[Privateuseareae907]
   @scala.inline
-  def BACKSLASHuE7E0: BACKSLASHuE7E0 = "\uE7E0".asInstanceOf[BACKSLASHuE7E0]
+  def Privateuseareae908: Privateuseareae908 = "\uE908".asInstanceOf[Privateuseareae908]
   @scala.inline
-  def BACKSLASHuE7E1: BACKSLASHuE7E1 = "\uE7E1".asInstanceOf[BACKSLASHuE7E1]
+  def Privateuseareae909: Privateuseareae909 = "\uE909".asInstanceOf[Privateuseareae909]
   @scala.inline
-  def BACKSLASHuE7E2: BACKSLASHuE7E2 = "\uE7E2".asInstanceOf[BACKSLASHuE7E2]
+  def Privateuseareae90a: Privateuseareae90a = "\uE90A".asInstanceOf[Privateuseareae90a]
   @scala.inline
-  def BACKSLASHuE7E3: BACKSLASHuE7E3 = "\uE7E3".asInstanceOf[BACKSLASHuE7E3]
+  def Privateuseareae90b: Privateuseareae90b = "\uE90B".asInstanceOf[Privateuseareae90b]
   @scala.inline
-  def BACKSLASHuE7E4: BACKSLASHuE7E4 = "\uE7E4".asInstanceOf[BACKSLASHuE7E4]
+  def Privateuseareae90c: Privateuseareae90c = "\uE90C".asInstanceOf[Privateuseareae90c]
   @scala.inline
-  def BACKSLASHuE900: BACKSLASHuE900 = "\uE900".asInstanceOf[BACKSLASHuE900]
+  def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
   @scala.inline
-  def BACKSLASHuE901: BACKSLASHuE901 = "\uE901".asInstanceOf[BACKSLASHuE901]
+  def Rightpointinganglebracket: Rightpointinganglebracket = "\u232A".asInstanceOf[Rightpointinganglebracket]
   @scala.inline
-  def BACKSLASHuE902: BACKSLASHuE902 = "\uE902".asInstanceOf[BACKSLASHuE902]
+  def Rightwardsarrow: Rightwardsarrow = "\u2192".asInstanceOf[Rightwardsarrow]
   @scala.inline
-  def BACKSLASHuE903: BACKSLASHuE903 = "\uE903".asInstanceOf[BACKSLASHuE903]
+  def Southeastarrow: Southeastarrow = "\u2198".asInstanceOf[Southeastarrow]
   @scala.inline
-  def BACKSLASHuE904: BACKSLASHuE904 = "\uE904".asInstanceOf[BACKSLASHuE904]
+  def Southwestarrow: Southwestarrow = "\u2199".asInstanceOf[Southwestarrow]
   @scala.inline
-  def BACKSLASHuE905: BACKSLASHuE905 = "\uE905".asInstanceOf[BACKSLASHuE905]
+  def Timerclock: Timerclock = "\u23F2".asInstanceOf[Timerclock]
   @scala.inline
-  def BACKSLASHuE906: BACKSLASHuE906 = "\uE906".asInstanceOf[BACKSLASHuE906]
+  def Trigramforheaven: Trigramforheaven = "\u2630".asInstanceOf[Trigramforheaven]
   @scala.inline
-  def BACKSLASHuE907: BACKSLASHuE907 = "\uE907".asInstanceOf[BACKSLASHuE907]
+  def Undosymbol: Undosymbol = "\u238C".asInstanceOf[Undosymbol]
   @scala.inline
-  def BACKSLASHuE908: BACKSLASHuE908 = "\uE908".asInstanceOf[BACKSLASHuE908]
+  def Uparrowhead: Uparrowhead = "\u2303".asInstanceOf[Uparrowhead]
   @scala.inline
-  def BACKSLASHuE909: BACKSLASHuE909 = "\uE909".asInstanceOf[BACKSLASHuE909]
+  def `Updownarrow `: `Updownarrow ` = "\u2195 ".asInstanceOf[`Updownarrow `]
   @scala.inline
-  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
+  def `Upwardsarrow `: `Upwardsarrow ` = "\u2191 ".asInstanceOf[`Upwardsarrow `]
+  @scala.inline
+  def Whitestar: Whitestar = "\u2606".asInstanceOf[Whitestar]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline
@@ -3919,7 +3939,7 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def `arrows-vertical`: `arrows-vertical` = "arrows-vertical".asInstanceOf[`arrows-vertical`]
   @scala.inline
-  def asterisk: asterisk = "asterisk".asInstanceOf[asterisk]
+  def asterisk_ : asterisk_ = "asterisk".asInstanceOf[asterisk_]
   @scala.inline
   def `automatic-updates`: `automatic-updates` = "automatic-updates".asInstanceOf[`automatic-updates`]
   @scala.inline
@@ -3944,6 +3964,8 @@ object atBlueprintjsIconsStrings {
   def box: box = "box".asInstanceOf[box]
   @scala.inline
   def briefcase: briefcase = "briefcase".asInstanceOf[briefcase]
+  @scala.inline
+  def `bring-data`: `bring-data` = "bring-data".asInstanceOf[`bring-data`]
   @scala.inline
   def build: build = "build".asInstanceOf[build]
   @scala.inline
@@ -3997,11 +4019,11 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
   @scala.inline
-  def cloud: cloud = "cloud".asInstanceOf[cloud]
-  @scala.inline
   def `cloud-download`: `cloud-download` = "cloud-download".asInstanceOf[`cloud-download`]
   @scala.inline
   def `cloud-upload`: `cloud-upload` = "cloud-upload".asInstanceOf[`cloud-upload`]
+  @scala.inline
+  def cloud_ : cloud_ = "cloud".asInstanceOf[cloud_]
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
@@ -4109,7 +4131,7 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def endorsed: endorsed = "endorsed".asInstanceOf[endorsed]
   @scala.inline
-  def envelope: envelope = "envelope".asInstanceOf[envelope]
+  def envelope_ : envelope_ = "envelope".asInstanceOf[envelope_]
   @scala.inline
   def equals: equals = "equals".asInstanceOf[equals]
   @scala.inline
@@ -4743,6 +4765,8 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def torch: torch = "torch".asInstanceOf[torch]
   @scala.inline
+  def tractor: tractor = "tractor".asInstanceOf[tractor]
+  @scala.inline
   def train: train = "train".asInstanceOf[train]
   @scala.inline
   def translate: translate = "translate".asInstanceOf[translate]
@@ -4754,6 +4778,8 @@ object atBlueprintjsIconsStrings {
   def `trending-down`: `trending-down` = "trending-down".asInstanceOf[`trending-down`]
   @scala.inline
   def `trending-up`: `trending-up` = "trending-up".asInstanceOf[`trending-up`]
+  @scala.inline
+  def truck: truck = "truck".asInstanceOf[truck]
   @scala.inline
   def `two-columns`: `two-columns` = "two-columns".asInstanceOf[`two-columns`]
   @scala.inline
@@ -4816,5 +4842,9 @@ object atBlueprintjsIconsStrings {
   def `zoom-out`: `zoom-out` = "zoom-out".asInstanceOf[`zoom-out`]
   @scala.inline
   def `zoom-to-fit`: `zoom-to-fit` = "zoom-to-fit".asInstanceOf[`zoom-to-fit`]
+  @scala.inline
+  def Δ: Δ = "\u0394".asInstanceOf[Δ]
+  @scala.inline
+  def ℹ: ℹ = "\u2139".asInstanceOf[ℹ]
 }
 

@@ -1,10 +1,6 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EPolygonOffsetMode.CUSTOM
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EPolygonOffsetMode.IN
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EPolygonOffsetMode.NONE
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EPolygonOffsetMode.OUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

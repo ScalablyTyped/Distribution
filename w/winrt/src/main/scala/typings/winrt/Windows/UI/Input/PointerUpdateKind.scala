@@ -1,17 +1,6 @@
 package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.leftButtonPressed
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.leftButtonReleased
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.middleButtonPressed
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.middleButtonReleased
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.other
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.rightButtonPressed
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.rightButtonReleased
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.xButton1Pressed
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.xButton1Released
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.xButton2Pressed
-import typings.winrt.Windows.UI.Input.PointerUpdateKind.xButton2Released
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

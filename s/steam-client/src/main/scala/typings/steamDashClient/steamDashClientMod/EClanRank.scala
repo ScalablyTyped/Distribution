@@ -1,11 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EClanRank.Member
-import typings.steamDashClient.steamDashClientMod.EClanRank.Moderator
-import typings.steamDashClient.steamDashClientMod.EClanRank.None
-import typings.steamDashClient.steamDashClientMod.EClanRank.Officer
-import typings.steamDashClient.steamDashClientMod.EClanRank.Owner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

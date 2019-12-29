@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildResult.Canceled
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildResult.Failed
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildResult.None
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildResult.PartiallySucceeded
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildResult.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

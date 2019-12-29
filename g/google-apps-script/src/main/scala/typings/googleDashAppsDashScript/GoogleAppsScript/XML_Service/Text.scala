@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A representation of an XML Text node.
   */
-trait Text
-  extends typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content {
+trait Text extends Content {
   def append(text: String): Text
   def getText(): String
   def setText(text: String): Text
@@ -25,7 +24,7 @@ object Text {
     asEntityRef: () => EntityRef,
     asProcessingInstruction: () => ProcessingInstruction,
     asText: () => Text,
-    detach: () => typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content,
+    detach: () => Content,
     getParentElement: () => Element,
     getText: () => String,
     getType: () => ContentType,

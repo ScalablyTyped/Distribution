@@ -1,10 +1,10 @@
 package typings.atBabelTypes.atBabelTypesMod
 
-import typings.atBabelTypes.atBabelTypesStrings.`!`
-import typings.atBabelTypes.atBabelTypesStrings.`+`
-import typings.atBabelTypes.atBabelTypesStrings.`-`
+import typings.atBabelTypes.atBabelTypesStrings.Exclamationmark
+import typings.atBabelTypes.atBabelTypesStrings.Plussign
+import typings.atBabelTypes.atBabelTypesStrings.Tilde
+import typings.atBabelTypes.atBabelTypesStrings.`-_`
 import typings.atBabelTypes.atBabelTypesStrings.`throw`
-import typings.atBabelTypes.atBabelTypesStrings.`~`
 import typings.atBabelTypes.atBabelTypesStrings.delete
 import typings.atBabelTypes.atBabelTypesStrings.typeof
 import typings.atBabelTypes.atBabelTypesStrings.void
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
      with BaseNode
      with UnaryLike {
   var argument: Expression
-  var operator: void | `throw` | delete | `!` | `+` | `-` | `~` | typeof
+  var operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof
   var prefix: Boolean
   @JSName("type")
   var type_UnaryExpression: typings.atBabelTypes.atBabelTypesStrings.UnaryExpression
@@ -28,7 +28,7 @@ object UnaryExpression {
   @scala.inline
   def apply(
     argument: Expression,
-    operator: void | `throw` | delete | `!` | `+` | `-` | `~` | typeof,
+    operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
     prefix: Boolean,
     `type`: typings.atBabelTypes.atBabelTypesStrings.UnaryExpression,
     end: Int | Double = null,
@@ -53,13 +53,13 @@ object UnaryExpression {
 @JSImport("@babel/types", "unaryExpression")
 @js.native
 object unaryExpression extends js.Object {
-  def apply(operator: `!`, argument: Expression): UnaryExpression = js.native
-  def apply(operator: `!`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
-  def apply(operator: `+`, argument: Expression): UnaryExpression = js.native
-  def apply(operator: `+`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
-  def apply(operator: `-`, argument: Expression): UnaryExpression = js.native
-  def apply(operator: `-`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
-  def apply(operator: `~`, argument: Expression): UnaryExpression = js.native
-  def apply(operator: `~`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def apply(operator: Exclamationmark, argument: Expression): UnaryExpression = js.native
+  def apply(operator: Exclamationmark, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def apply(operator: Plussign, argument: Expression): UnaryExpression = js.native
+  def apply(operator: Plussign, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def apply(operator: Tilde, argument: Expression): UnaryExpression = js.native
+  def apply(operator: Tilde, argument: Expression, prefix: Boolean): UnaryExpression = js.native
+  def apply(operator: `-_`, argument: Expression): UnaryExpression = js.native
+  def apply(operator: `-_`, argument: Expression, prefix: Boolean): UnaryExpression = js.native
 }
 

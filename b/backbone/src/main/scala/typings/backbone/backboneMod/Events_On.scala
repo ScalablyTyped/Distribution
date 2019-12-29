@@ -40,9 +40,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Events_On[BaseT] extends js.Object {
-  def apply[T /* <: BaseT */](`this`: T, eventMap: EventMap): T = js.native
-  def apply[T /* <: BaseT */](`this`: T, eventMap: EventMap, context: js.Any): T = js.native
-  def apply[T /* <: BaseT */](`this`: T, eventName: String, callback: EventHandler): T = js.native
-  def apply[T /* <: BaseT */](`this`: T, eventName: String, callback: EventHandler, context: js.Any): T = js.native
+  def apply[T /* <: BaseT */](eventMap: EventMap): T = js.native
+  def apply[T /* <: BaseT */](eventMap: EventMap, context: js.Any): T = js.native
+  def apply[T /* <: BaseT */](eventName: String, callback: EventHandler): T = js.native
+  def apply[T /* <: BaseT */](eventName: String, callback: EventHandler, context: js.Any): T = js.native
 }
 

@@ -20,7 +20,7 @@ trait IPanel
   		*/
   var getTabBar: js.UndefOr[js.Function0[IBar]] = js.undefined
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[java.lang.String] = js.undefined
+  var itemCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var maxTabWidth: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -48,7 +48,7 @@ object IPanel {
     deferredRender: js.UndefOr[Boolean] = js.undefined,
     getActiveTab: () => IComponent = null,
     getTabBar: () => IBar = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     maxTabWidth: Int | Double = null,
     minTabWidth: Int | Double = null,
     plain: js.UndefOr[Boolean] = js.undefined,

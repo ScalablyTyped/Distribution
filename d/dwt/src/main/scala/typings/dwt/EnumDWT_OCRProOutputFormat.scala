@@ -1,12 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_IOTPDF
-import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_IOTPDF_MRC
-import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTCSV
-import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTF
-import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTS
-import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

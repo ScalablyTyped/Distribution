@@ -11,7 +11,8 @@ class ListGalleries protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ListGalleries_typekey`: ListGalleries = js.native
+  @JSName("Word.ListGalleries_typekey")
+  var WordDotListGalleries_typekey: ListGalleries = js.native
   def Item(Index: WdListGalleryType): ListGallery = js.native
 }
 

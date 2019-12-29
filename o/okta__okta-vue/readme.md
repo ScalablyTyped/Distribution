@@ -1,7 +1,7 @@
 
 # Scala.js typings for okta__okta-vue
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Vue support for Okta

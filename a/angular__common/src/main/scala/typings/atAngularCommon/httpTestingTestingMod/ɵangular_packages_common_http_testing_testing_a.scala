@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atAngularCommon.httpTestingTestingMod.HttpTestingController because Inheritance from two classes. Inlined `match`, `match`, `match`, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, verify, verify */ @JSImport("@angular/common/http/testing/testing", "ɵangular_packages_common_http_testing_testing_a")
+- typings.atAngularCommon.httpTestingTestingMod.HttpTestingController because Inheritance from two classes. Inlined `match`, `match`, `match`, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, verify, verify */ @JSImport("@angular/common/http/testing/testing", "\u0275angular_packages_common_http_testing_testing_a")
 @js.native
 class ɵangular_packages_common_http_testing_testing_a () extends HttpBackend {
   /**

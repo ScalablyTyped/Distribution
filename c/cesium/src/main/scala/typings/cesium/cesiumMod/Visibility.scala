@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.Visibility.FULL
-import typings.cesium.cesiumMod.Visibility.NONE
-import typings.cesium.cesiumMod.Visibility.PARTIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

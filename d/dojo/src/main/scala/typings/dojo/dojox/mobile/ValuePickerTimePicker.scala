@@ -1,6 +1,7 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
+import typings.dojo.dojoStrings.date
 import typings.dojo.dojoStrings.hourMinusBtnLabel
 import typings.dojo.dojoStrings.hourMinusBtnLabelRef
 import typings.dojo.dojoStrings.hourPlusBtnLabel
@@ -100,7 +101,7 @@ class ValuePickerTimePicker () extends ValuePicker {
     */
   var values12: js.Array[_] = js.native
   @JSName("get")
-  def get_date(property: typings.dojo.dojoStrings.date): Date = js.native
+  def get_date(property: date): Date = js.native
   @JSName("get")
   def get_hourMinusBtnLabel(property: hourMinusBtnLabel): String = js.native
   @JSName("get")
@@ -129,7 +130,7 @@ class ValuePickerTimePicker () extends ValuePicker {
     */
   def onBtnClick(): Unit = js.native
   @JSName("set")
-  def set_date(property: typings.dojo.dojoStrings.date, value: Date): Unit = js.native
+  def set_date(property: date, value: Date): Unit = js.native
   @JSName("set")
   def set_hourMinusBtnLabel(property: hourMinusBtnLabel, value: String): Unit = js.native
   @JSName("set")
@@ -154,7 +155,7 @@ class ValuePickerTimePicker () extends ValuePicker {
   def set_values12(property: values12, value: js.Array[_]): Unit = js.native
   @JSName("watch")
   def watch_date(
-    property: typings.dojo.dojoStrings.date,
+    property: date,
     callback: js.Function3[
       /* property */ js.UndefOr[String], 
       /* oldValue */ js.UndefOr[Date], 

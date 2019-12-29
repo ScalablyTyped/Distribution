@@ -116,6 +116,14 @@ trait CarouselProps extends js.Object {
     */
   var initialSlideWidth: js.UndefOr[Double] = js.undefined
   /**
+    * When enableKeyboardControls is enabled, Configure keyCodes for corresponding slide actions as array of keyCodes
+    */
+  var keyCodeConfig: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ slideAction in nuka-carousel.nuka-carousel.CarouselSlideActions ]:? std.Array<number>}
+    */ typings.nukaDashCarousel.nukaDashCarouselStrings.CarouselProps with js.Any
+  ] = js.undefined
+  /**
     * optional callback function
     */
   var onDragStart: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -128,6 +136,10 @@ trait CarouselProps extends js.Object {
     * @default true
     */
   var pauseOnHover: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Function for rendering aria-live announcement messages
+    */
+  var renderAnnounceSlideMessage: js.UndefOr[js.Function1[/* hasCurrentSlideSlideCount */ js.Any, String]] = js.undefined
   /**
     * Function for rendering bottom center control
     */
@@ -246,9 +258,13 @@ object CarouselProps {
     heightMode: CarouselHeightModeProp = null,
     initialSlideHeight: Int | Double = null,
     initialSlideWidth: Int | Double = null,
+    keyCodeConfig: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ slideAction in nuka-carousel.nuka-carousel.CarouselSlideActions ]:? std.Array<number>}
+    */ typings.nukaDashCarousel.nukaDashCarouselStrings.CarouselProps with js.Any = null,
     onDragStart: () => Unit = null,
     onResize: () => Unit = null,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
+    renderAnnounceSlideMessage: /* hasCurrentSlideSlideCount */ js.Any => String = null,
     renderBottomCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
     renderBottomLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
     renderBottomRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
@@ -294,9 +310,11 @@ object CarouselProps {
     if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode.asInstanceOf[js.Any])
     if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])
     if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])
+    if (keyCodeConfig != null) __obj.updateDynamic("keyCodeConfig")(keyCodeConfig.asInstanceOf[js.Any])
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction0(onResize))
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
+    if (renderAnnounceSlideMessage != null) __obj.updateDynamic("renderAnnounceSlideMessage")(js.Any.fromFunction1(renderAnnounceSlideMessage))
     if (renderBottomCenterControls != null) __obj.updateDynamic("renderBottomCenterControls")(js.Any.fromFunction1(renderBottomCenterControls))
     if (renderBottomLeftControls != null) __obj.updateDynamic("renderBottomLeftControls")(js.Any.fromFunction1(renderBottomLeftControls))
     if (renderBottomRightControls != null) __obj.updateDynamic("renderBottomRightControls")(js.Any.fromFunction1(renderBottomRightControls))

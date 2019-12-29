@@ -19,11 +19,11 @@ package object reactDashNativeDashFbsdkMod {
     - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_friends
     - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.email
     - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_about_me
-    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDOTbooks
-    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDOTfitness
-    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDOTmusic
-    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDOTnews
-    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDOTvideo
+    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDotbooks
+    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDotfitness
+    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDotmusic
+    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDotnews
+    - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_actionsDotvideo
     - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_birthday
     - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_education_history
     - typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkStrings.user_events

@@ -1,6 +1,5 @@
 package typings.baseui
 
-import typings.baseui.aspectDashRatioDashBoxMod.AspectRatioBoxProps
 import typings.baseui.blockMod.BlockProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.FC

@@ -1,11 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.Capability.AUDIO_IN
-import typings.chrome.chrome.cast.Capability.AUDIO_OUT
-import typings.chrome.chrome.cast.Capability.MULTIZONE_GROUP
-import typings.chrome.chrome.cast.Capability.VIDEO_IN
-import typings.chrome.chrome.cast.Capability.VIDEO_OUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

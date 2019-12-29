@@ -3,7 +3,6 @@ package typings.youtubeDashPlayer
 import org.scalablytyped.runtime.StringDictionary
 import typings.youtubeDashPlayer.distTypesMod.EmitterType
 import typings.youtubeDashPlayer.distTypesMod.YouTubePlayer
-import typings.youtubeDashPlayer.distYouTubePlayerMod.EventHandlerMapType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,6 @@
 package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Utilities.DateTimeFormat.dateOnly
-import typings.sharepoint.SP.Utilities.DateTimeFormat.dateTime
-import typings.sharepoint.SP.Utilities.DateTimeFormat.iSO8601
-import typings.sharepoint.SP.Utilities.DateTimeFormat.longDate
-import typings.sharepoint.SP.Utilities.DateTimeFormat.monthDayOnly
-import typings.sharepoint.SP.Utilities.DateTimeFormat.monthYearOnly
-import typings.sharepoint.SP.Utilities.DateTimeFormat.timeOnly
-import typings.sharepoint.SP.Utilities.DateTimeFormat.unknownFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,5 @@
 package typings.atApolloProtobufjs.atApolloProtobufjsMod
 
-import typings.atApolloProtobufjs.atApolloProtobufjsMod.rpc.ServiceMethod
-import typings.atApolloProtobufjs.atApolloProtobufjsMod.rpc.ServiceMethodCallback
 import typings.atApolloProtobufjs.atApolloProtobufjsMod.util.EventEmitter
 import typings.std.Error
 import scala.scalajs.js

@@ -1,20 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.ImageFormat.bmp
-import typings.officeDashJs.Word.ImageFormat.emf
-import typings.officeDashJs.Word.ImageFormat.exif
-import typings.officeDashJs.Word.ImageFormat.gif
-import typings.officeDashJs.Word.ImageFormat.icon
-import typings.officeDashJs.Word.ImageFormat.jpeg
-import typings.officeDashJs.Word.ImageFormat.pdf
-import typings.officeDashJs.Word.ImageFormat.pict
-import typings.officeDashJs.Word.ImageFormat.png
-import typings.officeDashJs.Word.ImageFormat.svg
-import typings.officeDashJs.Word.ImageFormat.tiff
-import typings.officeDashJs.Word.ImageFormat.undefined
-import typings.officeDashJs.Word.ImageFormat.unsupported
-import typings.officeDashJs.Word.ImageFormat.wmf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

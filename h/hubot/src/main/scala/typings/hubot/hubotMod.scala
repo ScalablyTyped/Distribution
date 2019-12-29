@@ -1,12 +1,6 @@
 package typings.hubot
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hubot.hubotMod.Brain
-import typings.hubot.hubotMod.ListenerCallback
-import typings.hubot.hubotMod.Message
-import typings.hubot.hubotMod.Response
-import typings.hubot.hubotMod.Robot
-import typings.hubot.hubotMod.User
 import typings.node.eventsMod.EventEmitter
 import typings.std.RegExp
 import typings.std.RegExpMatchArray

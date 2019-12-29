@@ -2,7 +2,6 @@ package typings.atMaterialTabs
 
 import typings.atMaterialTabs.tabAdapterMod.MDCTabAdapter
 import typings.atMaterialTabs.tabFoundationMod.default
-import typings.atMaterialTabs.tabMod.MDCTab
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

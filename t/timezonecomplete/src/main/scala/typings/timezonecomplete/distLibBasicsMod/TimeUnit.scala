@@ -1,15 +1,6 @@
 package typings.timezonecomplete.distLibBasicsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Day
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Hour
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.MAX
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Millisecond
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Minute
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Month
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Second
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Week
-import typings.timezonecomplete.distLibBasicsMod.TimeUnit.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Imaging.ExifOrientationMode.ignoreExifOrientation
-import typings.winrt.Windows.Graphics.Imaging.ExifOrientationMode.respectExifOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

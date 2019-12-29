@@ -16,7 +16,8 @@ class StorageItem protected () extends js.Object {
   var Creator: String = js.native
   val EntryID: String = js.native
   val LastModificationTime: VarDate = js.native
-  var `Outlook.StorageItem_typekey`: StorageItem = js.native
+  @JSName("Outlook.StorageItem_typekey")
+  var OutlookDotStorageItem_typekey: StorageItem = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val Session: NameSpace = js.native

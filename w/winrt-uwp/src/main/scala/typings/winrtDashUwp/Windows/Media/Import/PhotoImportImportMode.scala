@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportImportMode.ignoreSiblings
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportImportMode.ignoreSidecars
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportImportMode.ignoreSidecarsAndSiblings
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportImportMode.importEverything
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

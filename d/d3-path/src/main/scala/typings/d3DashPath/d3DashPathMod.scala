@@ -1,6 +1,5 @@
 package typings.d3DashPath
 
-import typings.d3DashPath.d3DashPathMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkCredentialDashProviderDashImds
 
-import typings.atAwsDashSdkCredentialDashProviderDashImds.buildRemoteProviderRetryMod.RetryableProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

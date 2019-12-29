@@ -5,17 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaneViewShowEvent extends PaneEvent {
-  var view: js.UndefOr[typings.kendoDashUi.kendo.mobile.ui.View] = js.undefined
+  var view: js.UndefOr[View] = js.undefined
 }
 
 object PaneViewShowEvent {
   @scala.inline
-  def apply(
-    isDefaultPrevented: () => Boolean,
-    preventDefault: js.Function,
-    sender: Pane,
-    view: typings.kendoDashUi.kendo.mobile.ui.View = null
-  ): PaneViewShowEvent = {
+  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Pane, view: View = null): PaneViewShowEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneViewShowEvent]

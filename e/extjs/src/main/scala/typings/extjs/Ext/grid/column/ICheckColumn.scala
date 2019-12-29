@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICheckColumn
-  extends typings.extjs.Ext.grid.column.IColumn {
+trait ICheckColumn extends IColumn {
   /** [Method] Disables this CheckColumn
   		* @param silent Boolean
   		*/
@@ -23,7 +22,7 @@ trait ICheckColumn
 object ICheckColumn {
   @scala.inline
   def apply(
-    IColumn: typings.extjs.Ext.grid.column.IColumn = null,
+    IColumn: IColumn = null,
     onDisable: /* silent */ js.UndefOr[Boolean] => Unit = null,
     onEnable: /* silent */ js.UndefOr[Boolean] => Unit = null,
     stopSelection: js.UndefOr[Boolean] = js.undefined

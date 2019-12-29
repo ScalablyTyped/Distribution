@@ -1,19 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.`macro`
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.auto
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.backlit
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.beach
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.candlelight
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.landscape
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.manual
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.night
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.nightPortrait
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.portrait
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.snow
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.sport
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureSceneMode.sunset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

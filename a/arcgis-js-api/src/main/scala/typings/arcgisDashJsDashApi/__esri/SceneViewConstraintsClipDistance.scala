@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.HashMap
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.manual
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +22,7 @@ trait SceneViewConstraintsClipDistance extends AnonymousAccessor {
     *
     * @default auto
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[auto | manual] = js.undefined
   /**
     * The near clip distance.
     *
@@ -37,7 +39,7 @@ object SceneViewConstraintsClipDistance {
     propertyIsEnumerable: PropertyKey => Boolean,
     far: Int | Double = null,
     get: /* propertyName */ String => _ = null,
-    mode: String = null,
+    mode: auto | manual = null,
     near: Int | Double = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewConstraintsClipDistance]) with (js.Function1[/* props */ HashMap[_], SceneViewConstraintsClipDistance]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null

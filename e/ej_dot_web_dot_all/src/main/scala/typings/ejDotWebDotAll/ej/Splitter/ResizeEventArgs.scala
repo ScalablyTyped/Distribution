@@ -10,7 +10,7 @@ trait ResizeEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the splitter model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Splitter.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns next pane details.
     */
   var nextPane: js.UndefOr[js.Any] = js.undefined
@@ -29,7 +29,7 @@ object ResizeEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Splitter.Model = null,
+    model: Model = null,
     nextPane: js.Any = null,
     prevPane: js.Any = null,
     splitbarIndex: Int | Double = null,

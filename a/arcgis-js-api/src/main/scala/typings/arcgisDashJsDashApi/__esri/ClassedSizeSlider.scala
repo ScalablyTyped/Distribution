@@ -14,6 +14,12 @@ trait ClassedSizeSlider extends SmartMappingSliderBase {
     */
   var breaks: js.Array[ClassedSizeSliderBreaks] = js.native
   /**
+    * Exposes various properties of the widget that can be styled.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
+    */
+  var style: ClassedSizeSliderStyle = js.native
+  /**
     * The view model for the ClassedSizeSlider widget. This class contains all the logic (properties and methods) that controls this widget's behavior. See the [ClassedSizeSliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider-ClassedSizeSliderViewModel.html) class to access all properties and methods on the ClassedSizeSlider widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#viewModel)

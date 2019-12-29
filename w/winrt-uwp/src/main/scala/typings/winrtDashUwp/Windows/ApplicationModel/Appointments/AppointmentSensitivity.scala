@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSensitivity.`private`
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSensitivity.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

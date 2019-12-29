@@ -1,9 +1,6 @@
 package typings.phaser.spine.webgl
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.webgl.ResizeMode.Expand
-import typings.phaser.spine.webgl.ResizeMode.Fit
-import typings.phaser.spine.webgl.ResizeMode.Stretch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

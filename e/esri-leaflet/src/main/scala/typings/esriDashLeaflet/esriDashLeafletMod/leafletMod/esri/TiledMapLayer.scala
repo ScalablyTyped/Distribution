@@ -21,12 +21,12 @@ class TiledMapLayer protected () extends TileLayer {
     * Returns a new `L.esri.services.Find` object that can be used to find features. Your callback function
     * will be passed a GeoJSON FeatureCollection with the results or an error.
     */
-  def find(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Find = js.native
+  def find(): Find = js.native
   /**
     * Returns a new `L.esri.services.IdentifyFeatures` object that can be used to identify features on this
     * layer. Your callback function will be passed a GeoJSON FeatureCollection with the results or an error.
     */
-  def identify(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.IdentifyFeatures = js.native
+  def identify(): IdentifyFeatures = js.native
   /**
     * Requests metadata about this Feature Layer. Callback will be called with error and metadata.
     */
@@ -35,7 +35,7 @@ class TiledMapLayer protected () extends TileLayer {
   /**
     * Returns a new `L.esri.Query` object that can be used to query this service.
     */
-  def query(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Query = js.native
+  def query(): Query = js.native
 }
 
 @JSImport("leaflet", "esri.tiledMapLayer")
@@ -45,6 +45,6 @@ object tiledMapLayer extends js.Object {
     * Access tiles from ArcGIS Online and ArcGIS Server to visualize and identify features. Copyright text from the
     * service is added to map attribution automatically.
     */
-  def apply(options: TiledMapLayerOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.TiledMapLayer = js.native
+  def apply(options: TiledMapLayerOptions): TiledMapLayer = js.native
 }
 

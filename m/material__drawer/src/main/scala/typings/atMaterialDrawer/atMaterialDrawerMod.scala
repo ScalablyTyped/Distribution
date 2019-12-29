@@ -2,7 +2,6 @@ package typings.atMaterialDrawer
 
 import typings.atMaterialBase.componentMod.default
 import typings.atMaterialDrawer.adapterMod.MDCDrawerAdapter
-import typings.atMaterialDrawer.atMaterialDrawerMod.MDCDrawer
 import typings.atMaterialDrawer.focusDashTrapMod.FocusTrap
 import typings.atMaterialList.atMaterialListMod.MDCList
 import typings.std.Element

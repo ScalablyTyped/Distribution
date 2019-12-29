@@ -11,9 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait OrderMethods extends js.Object {
   /**
-    * Get the ordering applied to the table.
+    * Set the ordering applied to the table.
+    *
+    * @param order Order Model
     */
-  def apply(): js.Array[js.Array[String | Double]] = js.native
+  def apply(): Api = js.native
   def apply(order: js.Array[(js.Array[String | Double]) | Double | String]): Api = js.native
   def apply(order: js.Array[String | Double], args: js.Any*): Api = js.native
   /**

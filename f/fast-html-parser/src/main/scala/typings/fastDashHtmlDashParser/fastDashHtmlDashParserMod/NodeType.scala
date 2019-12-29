@@ -1,8 +1,6 @@
 package typings.fastDashHtmlDashParser.fastDashHtmlDashParserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.fastDashHtmlDashParser.fastDashHtmlDashParserMod.NodeType.ELEMENT_NODE
-import typings.fastDashHtmlDashParser.fastDashHtmlDashParserMod.NodeType.TEXT_NODE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

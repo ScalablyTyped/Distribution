@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atJestTransformStrings {
   @js.native
-  sealed trait `ObjectDOT<anonymous>` extends js.Object
+  sealed trait ObjectDotLessthansignanonymousGreaterthansign extends js.Object
   
   @js.native
   sealed trait collectCoverage extends js.Object
@@ -21,7 +21,7 @@ object atJestTransformStrings {
   sealed trait extraGlobals extends js.Object
   
   @scala.inline
-  def `ObjectDOT<anonymous>`: `ObjectDOT<anonymous>` = "Object.<anonymous>".asInstanceOf[`ObjectDOT<anonymous>`]
+  def ObjectDotLessthansignanonymousGreaterthansign: ObjectDotLessthansignanonymousGreaterthansign = "Object.<anonymous>".asInstanceOf[ObjectDotLessthansignanonymousGreaterthansign]
   @scala.inline
   def collectCoverage: collectCoverage = "collectCoverage".asInstanceOf[collectCoverage]
   @scala.inline

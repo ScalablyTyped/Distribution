@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.DefinitionNameAscending
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.DefinitionNameDescending
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.LastModifiedAscending
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.LastModifiedDescending
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

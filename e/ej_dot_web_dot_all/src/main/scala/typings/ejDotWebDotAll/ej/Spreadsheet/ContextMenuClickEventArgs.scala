@@ -23,7 +23,7 @@ trait ContextMenuClickEventArgs extends js.Object {
   var events: js.UndefOr[js.Any] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns target element parent Id.
     */
   var parentId: js.UndefOr[String] = js.undefined
@@ -46,7 +46,7 @@ object ContextMenuClickEventArgs {
     element: HTMLElement = null,
     event: js.Any = null,
     events: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     parentId: String = null,
     parentText: String = null,
     text: String = null,

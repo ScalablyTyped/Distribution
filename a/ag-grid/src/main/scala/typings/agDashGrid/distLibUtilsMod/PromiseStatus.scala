@@ -1,8 +1,6 @@
 package typings.agDashGrid.distLibUtilsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.agDashGrid.distLibUtilsMod.PromiseStatus.IN_PROGRESS
-import typings.agDashGrid.distLibUtilsMod.PromiseStatus.RESOLVED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

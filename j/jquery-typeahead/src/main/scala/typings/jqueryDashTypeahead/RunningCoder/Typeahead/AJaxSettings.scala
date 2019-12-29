@@ -10,8 +10,8 @@ import typings.jquery.JQuery.PlainObject
 import typings.jquery.JQuery.TypeOrArray
 import typings.jquery.JQuery.jqXHR
 import typings.jquery.JQueryXHR
-import typings.jquery.jqueryNumbers.`false`
-import typings.jquery.jqueryNumbers.`true`
+import typings.jquery.jqueryBooleans.`false`
+import typings.jquery.jqueryBooleans.`true`
 import typings.jquery.jqueryStrings.html
 import typings.jquery.jqueryStrings.json
 import typings.jquery.jqueryStrings.jsonp

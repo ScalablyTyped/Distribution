@@ -2,6 +2,7 @@ package typings.jsrsasign.jsrsasignMod.KJUR.asn1.x509
 
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
+import typings.jsrsasign.jsrsasign.RSAKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,6 +32,6 @@ class SubjectPublicKeyInfo ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.SubjectPublicKeyInfo {
   def this(params: DSA) = this()
   def this(params: ECDSA) = this()
-  def this(params: typings.jsrsasign.jsrsasign.RSAKey) = this()
+  def this(params: RSAKey) = this()
 }
 

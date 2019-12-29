@@ -1,7 +1,7 @@
 package typings.facebookDashJsDashSdk.facebook
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.facebookDashJsDashSdk.facebookDashJsDashSdkNumbers.`false`
+import typings.facebookDashJsDashSdk.facebookDashJsDashSdkBooleans.`false`
 import typings.facebookDashJsDashSdk.facebookDashJsDashSdkStrings.async
 import typings.facebookDashJsDashSdk.facebookDashJsDashSdkStrings.iframe
 import typings.facebookDashJsDashSdk.facebookDashJsDashSdkStrings.page

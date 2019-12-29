@@ -34,7 +34,7 @@ trait IAxis extends IObservable {
   var getCoordFor: js.UndefOr[
     js.Function4[
       /* value */ js.UndefOr[js.Any], 
-      /* field */ js.UndefOr[java.lang.String], 
+      /* field */ js.UndefOr[String], 
       /* idx */ js.UndefOr[Double], 
       /* items */ js.UndefOr[IMixedCollection], 
       Double
@@ -99,7 +99,7 @@ trait IAxis extends IObservable {
   /** [Method] Returns the value of position
   		* @returns String
   		*/
-  var getPosition: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPosition: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Get the range derived from all the bound series
   		* @returns Array
   		*/
@@ -155,7 +155,7 @@ trait IAxis extends IObservable {
   /** [Config Option] (Boolean) */
   var needHighPrecision: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var position: js.UndefOr[java.lang.String] = js.undefined
+  var position: js.UndefOr[String] = js.undefined
   /** [Method] Invoked when data has changed  */
   var processData: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
@@ -240,12 +240,12 @@ trait IAxis extends IObservable {
   /** [Method] Sets the value of position
   		* @param position String The new value.
   		*/
-  var setPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of renderer
   		* @param renderer Function The new value.
   		* @returns String The label to display.
   		*/
-  var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Sets the value of segmenter
   		* @param segmenter Object|Ext.chart.axis.segmenter.Segmenter The new value.
   		*/
@@ -282,7 +282,7 @@ object IAxis {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -296,20 +296,20 @@ object IAxis {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBackground: () => _ = null,
     getBubbleEvents: () => _ = null,
     getChart: () => IAbstractChart = null,
-    getCoordFor: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[java.lang.String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double = null,
+    getCoordFor: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double = null,
     getFields: () => Array = null,
     getGrid: () => _ = null,
     getHidden: () => Boolean = null,
     getId: () => _ = null,
     getIncrement: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLabel: () => _ = null,
     getLabelInSpan: () => Boolean = null,
     getLayout: () => _ = null,
@@ -321,7 +321,7 @@ object IAxis {
     getMinimum: () => Double = null,
     getMinorTickSteps: () => Double = null,
     getNeedHighPrecision: () => Boolean = null,
-    getPosition: () => java.lang.String = null,
+    getPosition: () => String = null,
     getRange: () => Array = null,
     getRenderer: () => _ = null,
     getSegmenter: () => _ = null,
@@ -330,7 +330,7 @@ object IAxis {
     getTitleMargin: () => Double = null,
     getVisibleRange: () => Array = null,
     grid: js.Any = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     increment: Int | Double = null,
     inheritableStatics: js.Any = null,
@@ -349,16 +349,16 @@ object IAxis {
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     needHighPrecision: js.UndefOr[Boolean] = js.undefined,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
-    position: java.lang.String = null,
+    position: String = null,
     processData: () => Unit = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderFrame: () => Unit = null,
     renderer: js.Any = null,
@@ -383,8 +383,8 @@ object IAxis {
     setMinimum: /* minimum */ js.UndefOr[Double] => Unit = null,
     setMinorTickSteps: /* minorTickSteps */ js.UndefOr[Double] => Unit = null,
     setNeedHighPrecision: /* needHighPrecision */ js.UndefOr[Boolean] => Unit = null,
-    setPosition: /* position */ js.UndefOr[java.lang.String] => Unit = null,
-    setRenderer: /* renderer */ js.UndefOr[js.Any] => java.lang.String = null,
+    setPosition: /* position */ js.UndefOr[String] => Unit = null,
+    setRenderer: /* renderer */ js.UndefOr[js.Any] => String = null,
     setSegmenter: /* segmenter */ js.UndefOr[js.Any] => Unit = null,
     setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
     setTitle: /* title */ js.UndefOr[js.Any] => Unit = null,
@@ -396,7 +396,7 @@ object IAxis {
     suspendEvents: () => Unit = null,
     title: js.Any = null,
     titleMargin: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,

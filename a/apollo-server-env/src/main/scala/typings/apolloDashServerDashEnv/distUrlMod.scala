@@ -1,9 +1,6 @@
 package typings.apolloDashServerDashEnv
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloDashServerDashEnv.distUrlMod.URL
-import typings.apolloDashServerDashEnv.distUrlMod.URLSearchParams
-import typings.apolloDashServerDashEnv.distUrlMod.URLSearchParamsInit
 import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js

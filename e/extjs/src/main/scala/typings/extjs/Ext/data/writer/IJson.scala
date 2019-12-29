@@ -9,8 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IJson
-  extends typings.extjs.Ext.data.writer.IWriter {
+trait IJson extends IWriter {
   /** [Config Option] (Boolean) */
   var allowSingle: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -22,7 +21,7 @@ trait IJson
   		*/
   var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
 }
 
 object IJson {
@@ -35,19 +34,19 @@ object IJson {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    dateFormat: java.lang.String = null,
+    dateFormat: String = null,
     encode: js.UndefOr[Boolean] = js.undefined,
     expandData: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     getExpandedData: /* data */ js.UndefOr[js.Any] => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getRecordData: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IJson = null,
     mixins: js.Any = null,
-    nameProperty: java.lang.String = null,
+    nameProperty: String = null,
     requires: Array = null,
-    root: java.lang.String = null,
+    root: String = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,

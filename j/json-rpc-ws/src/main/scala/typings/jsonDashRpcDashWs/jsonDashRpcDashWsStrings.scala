@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object jsonDashRpcDashWsStrings {
   @js.native
-  sealed trait `2DOT0` extends js.Object
+  sealed trait `2Dot0` extends js.Object
   
   @scala.inline
-  def `2DOT0`: `2DOT0` = "2.0".asInstanceOf[`2DOT0`]
+  def `2Dot0`: `2Dot0` = "2.0".asInstanceOf[`2Dot0`]
 }
 

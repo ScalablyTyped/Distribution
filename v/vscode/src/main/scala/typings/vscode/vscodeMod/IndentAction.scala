@@ -1,10 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.IndentAction.Indent
-import typings.vscode.vscodeMod.IndentAction.IndentOutdent
-import typings.vscode.vscodeMod.IndentAction.None
-import typings.vscode.vscodeMod.IndentAction.Outdent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

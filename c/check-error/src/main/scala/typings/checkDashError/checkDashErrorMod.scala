@@ -1,6 +1,5 @@
 package typings.checkDashError
 
-import typings.checkDashError.checkDashErrorMod.ErrorInstanceOrConstructor
 import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js

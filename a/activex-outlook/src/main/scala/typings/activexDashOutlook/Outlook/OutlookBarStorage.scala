@@ -10,7 +10,8 @@ class OutlookBarStorage protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Groups: OutlookBarGroups = js.native
-  var `Outlook.OutlookBarStorage_typekey`: OutlookBarStorage = js.native
+  @JSName("Outlook.OutlookBarStorage_typekey")
+  var OutlookDotOutlookBarStorage_typekey: OutlookBarStorage = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.CodeChange
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.System
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.Text
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,6 +6,33 @@ import scala.scalajs.js.annotation._
 
 object lokijsStrings {
   @js.native
+  sealed trait $aeq extends js.Object
+  
+  @js.native
+  sealed trait $between extends js.Object
+  
+  @js.native
+  sealed trait $dteq extends js.Object
+  
+  @js.native
+  sealed trait $eq extends js.Object
+  
+  @js.native
+  sealed trait $gt extends js.Object
+  
+  @js.native
+  sealed trait $gte extends js.Object
+  
+  @js.native
+  sealed trait $in extends js.Object
+  
+  @js.native
+  sealed trait $lt extends js.Object
+  
+  @js.native
+  sealed trait $lte extends js.Object
+  
+  @js.native
   sealed trait Anon_Exact extends js.Object
   
   @js.native
@@ -16,33 +43,6 @@ object lokijsStrings {
   
   @js.native
   sealed trait Collection extends js.Object
-  
-  @js.native
-  sealed trait DOLLARaeq extends js.Object
-  
-  @js.native
-  sealed trait DOLLARbetween extends js.Object
-  
-  @js.native
-  sealed trait DOLLARdteq extends js.Object
-  
-  @js.native
-  sealed trait DOLLAReq extends js.Object
-  
-  @js.native
-  sealed trait DOLLARgt extends js.Object
-  
-  @js.native
-  sealed trait DOLLARgte extends js.Object
-  
-  @js.native
-  sealed trait DOLLARin extends js.Object
-  
-  @js.native
-  sealed trait DOLLARlt extends js.Object
-  
-  @js.native
-  sealed trait DOLLARlte extends js.Object
   
   @js.native
   sealed trait LokiQuery extends js.Object
@@ -156,6 +156,24 @@ object lokijsStrings {
   sealed trait where extends js.Object
   
   @scala.inline
+  def $aeq: $aeq = "$aeq".asInstanceOf[$aeq]
+  @scala.inline
+  def $between: $between = "$between".asInstanceOf[$between]
+  @scala.inline
+  def $dteq: $dteq = "$dteq".asInstanceOf[$dteq]
+  @scala.inline
+  def $eq: $eq = "$eq".asInstanceOf[$eq]
+  @scala.inline
+  def $gt: $gt = "$gt".asInstanceOf[$gt]
+  @scala.inline
+  def $gte: $gte = "$gte".asInstanceOf[$gte]
+  @scala.inline
+  def $in: $in = "$in".asInstanceOf[$in]
+  @scala.inline
+  def $lt: $lt = "$lt".asInstanceOf[$lt]
+  @scala.inline
+  def $lte: $lte = "$lte".asInstanceOf[$lte]
+  @scala.inline
   def Anon_Exact: Anon_Exact = "Anon_Exact".asInstanceOf[Anon_Exact]
   @scala.inline
   def BROWSER: BROWSER = "BROWSER".asInstanceOf[BROWSER]
@@ -163,24 +181,6 @@ object lokijsStrings {
   def CORDOVA: CORDOVA = "CORDOVA".asInstanceOf[CORDOVA]
   @scala.inline
   def Collection: Collection = "Collection".asInstanceOf[Collection]
-  @scala.inline
-  def DOLLARaeq: DOLLARaeq = "$aeq".asInstanceOf[DOLLARaeq]
-  @scala.inline
-  def DOLLARbetween: DOLLARbetween = "$between".asInstanceOf[DOLLARbetween]
-  @scala.inline
-  def DOLLARdteq: DOLLARdteq = "$dteq".asInstanceOf[DOLLARdteq]
-  @scala.inline
-  def DOLLAReq: DOLLAReq = "$eq".asInstanceOf[DOLLAReq]
-  @scala.inline
-  def DOLLARgt: DOLLARgt = "$gt".asInstanceOf[DOLLARgt]
-  @scala.inline
-  def DOLLARgte: DOLLARgte = "$gte".asInstanceOf[DOLLARgte]
-  @scala.inline
-  def DOLLARin: DOLLARin = "$in".asInstanceOf[DOLLARin]
-  @scala.inline
-  def DOLLARlt: DOLLARlt = "$lt".asInstanceOf[DOLLARlt]
-  @scala.inline
-  def DOLLARlte: DOLLARlte = "$lte".asInstanceOf[DOLLARlte]
   @scala.inline
   def LokiQuery: LokiQuery = "LokiQuery".asInstanceOf[LokiQuery]
   @scala.inline

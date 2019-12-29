@@ -1,5 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.global
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.local
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +20,13 @@ trait websceneInitialViewPropertiesProperties extends js.Object {
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   /**
-    * The viewing mode of the scene. Global scenes allow the user to navigate the globe. Local scenes allow for navigation and feature display in a particular "localized" area. Users may also navigate the view's camera below the surface of a basemap in local scenes.  **Possible Values:** global | local
+    * The viewing mode of the scene. Global scenes allow the user to navigate the globe. Local scenes allow for navigation and feature display in a particular "localized" area. Users may also navigate the view's camera below the surface of a basemap in local scenes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#viewingMode)
     *
     * @default global
     */
-  var viewingMode: js.UndefOr[String] = js.undefined
+  var viewingMode: js.UndefOr[global | local] = js.undefined
   /**
     * The initial viewpoint of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *
@@ -38,7 +40,7 @@ object websceneInitialViewPropertiesProperties {
   def apply(
     environment: EnvironmentProperties = null,
     spatialReference: SpatialReferenceProperties = null,
-    viewingMode: String = null,
+    viewingMode: global | local = null,
     viewpoint: ViewpointProperties = null
   ): websceneInitialViewPropertiesProperties = {
     val __obj = js.Dynamic.literal()

@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tool.ContinuesDraw
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tool.DrawOnce
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tool.MultipleSelect
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tool.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tool.SingleSelect
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tool.ZoomPan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

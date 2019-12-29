@@ -1,19 +1,16 @@
 package typings.esriDashLeafletDashGeocoder.leafletMod.esri.Geocoding
 
-import typings.esriDashLeaflet.esriDashLeafletMod.Service
-import typings.esriDashLeaflet.esriDashLeafletMod.Task
-import typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.TaskOptions
 import typings.esriDashLeafletDashGeocoder.Anon_Address
 import typings.leaflet.leafletMod.LatLngExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("leaflet", "esri.Geocoding.ReverseGeocode")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task * / any */ @JSImport("leaflet", "esri.Geocoding.ReverseGeocode")
 @js.native
-class ReverseGeocode () extends Task {
-  def this(options: Service) = this()
-  def this(options: TaskOptions) = this()
+class ReverseGeocode () extends js.Object {
+  def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ js.Any) = this()
   def distance(distance: Double): this.type = js.native
   def language(language: String): this.type = js.native
   def latlng(latlng: LatLngExpression): this.type = js.native
@@ -40,7 +37,8 @@ class ReverseGeocode () extends Task {
 @js.native
 object reverseGeocode extends js.Object {
   def apply(): ReverseGeocode = js.native
-  def apply(options: Service): ReverseGeocode = js.native
-  def apply(options: TaskOptions): ReverseGeocode = js.native
+  def apply(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ js.Any
+  ): ReverseGeocode = js.native
 }
 

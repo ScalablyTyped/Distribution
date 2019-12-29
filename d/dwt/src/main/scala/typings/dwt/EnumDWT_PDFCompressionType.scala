@@ -1,12 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_PDFCompressionType.PDF_AUTO
-import typings.dwt.EnumDWT_PDFCompressionType.PDF_FAX3
-import typings.dwt.EnumDWT_PDFCompressionType.PDF_FAX4
-import typings.dwt.EnumDWT_PDFCompressionType.PDF_JPEG
-import typings.dwt.EnumDWT_PDFCompressionType.PDF_LZW
-import typings.dwt.EnumDWT_PDFCompressionType.PDF_RLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

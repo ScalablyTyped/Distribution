@@ -10,7 +10,8 @@ class Comments protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Comments_typekey`: Comments = js.native
+  @JSName("PowerPoint.Comments_typekey")
+  var PowerPointDotComments_typekey: Comments = js.native
   def Add(Left: Double, Top: Double, Author: String, AuthorInitials: String, Text: String): Comment = js.native
   def Item(Index: Double): Comment = js.native
 }

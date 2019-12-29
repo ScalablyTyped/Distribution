@@ -1,6 +1,5 @@
 package typings.postmark
 
-import typings.postmark.distClientBaseClientMod.BaseClient
 import typings.postmark.distClientErrorHandlerMod.ErrorHandler
 import typings.postmark.distClientModelsClientCallbackMod.Callback
 import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod

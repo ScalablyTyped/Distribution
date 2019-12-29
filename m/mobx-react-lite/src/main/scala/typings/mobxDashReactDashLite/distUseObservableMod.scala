@@ -1,6 +1,5 @@
 package typings.mobxDashReactDashLite
 
-import typings.mobxDashReactDashLite.distUseObservableMod.SupportedValues
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -2,7 +2,7 @@ package typings.teenyDashRequest.teenyDashRequestMod
 
 import typings.node.httpsMod.Agent
 import typings.node.streamMod.Transform
-import typings.teenyDashRequest.teenyDashRequestNumbers.`false`
+import typings.teenyDashRequest.teenyDashRequestBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -56,7 +56,7 @@ class Style () extends js.Object {
     * @return Image style.
     * @api
     */
-  def getImage(): typings.openlayers.openlayersMod.style.Image = js.native
+  def getImage(): Image = js.native
   /**
     * Get the stroke style.
     * @return Stroke style.
@@ -97,7 +97,7 @@ class Style () extends js.Object {
     * @param image Image style.
     * @api
     */
-  def setImage(image: typings.openlayers.openlayersMod.style.Image): Unit = js.native
+  def setImage(image: Image): Unit = js.native
   /**
     * Set the stroke style.
     * @param stroke Stroke style.

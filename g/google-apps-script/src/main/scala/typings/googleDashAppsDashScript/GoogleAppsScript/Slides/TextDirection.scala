@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextDirection.LEFT_TO_RIGHT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextDirection.RIGHT_TO_LEFT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextDirection.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

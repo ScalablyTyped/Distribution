@@ -1,8 +1,6 @@
 package typings.underscoreDotString.underscoreDotStringMod
 
 import typings.std.RegExp
-import typings.underscoreDotString.underscoreDotStringMod.underscoreMod.UnderscoreStringStatic
-import typings.underscoreDotString.underscoreDotStringMod.underscoreMod.UnderscoreStringStaticExports
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

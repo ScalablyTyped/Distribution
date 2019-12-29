@@ -1,6 +1,6 @@
 package typings.atFirebaseDatabase.distIndexDotNodeMod
 
-import typings.atFirebaseDatabase.Anon_TIMESTAMP
+import typings.atFirebaseDatabase.Anon_IncrementTIMESTAMP
 import typings.atFirebaseDatabase.distSrcCoreRepoMod.Repo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,6 +21,6 @@ class Database protected ()
 @JSImport("@firebase/database/dist/index.node", "Database")
 @js.native
 object Database extends js.Object {
-  val ServerValue: Anon_TIMESTAMP = js.native
+  val ServerValue: Anon_IncrementTIMESTAMP = js.native
 }
 

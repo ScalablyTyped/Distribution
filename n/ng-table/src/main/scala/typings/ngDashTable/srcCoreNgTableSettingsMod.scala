@@ -9,7 +9,6 @@ import typings.ngDashTable.srcCoreFilteringFilterSettingsMod.IFilterSettings
 import typings.ngDashTable.srcCoreGroupingGetGroupMod.IGetGroupFunc
 import typings.ngDashTable.srcCoreGroupingGroupSettingsMod.IGroupSettings
 import typings.ngDashTable.srcCoreNgTableDefaultsMod.IDefaults
-import typings.ngDashTable.srcCoreNgTableSettingsMod.ISettings
 import typings.ngDashTable.srcCoreSortingMod.SortDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object dayzedStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
 }
 

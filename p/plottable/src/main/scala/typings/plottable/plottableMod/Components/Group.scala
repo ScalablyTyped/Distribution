@@ -1,5 +1,6 @@
 package typings.plottable.plottableMod.Components
 
+import typings.plottable.buildSrcComponentsComponentMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,6 @@ import scala.scalajs.js.annotation._
   */
 class Group ()
   extends typings.plottable.buildSrcComponentsMod.Group {
-  def this(components: js.Array[typings.plottable.buildSrcComponentsComponentMod.Component]) = this()
+  def this(components: js.Array[Component]) = this()
 }
 

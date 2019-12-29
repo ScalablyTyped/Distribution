@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListItemKind.arguments
-import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListItemKind.separator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

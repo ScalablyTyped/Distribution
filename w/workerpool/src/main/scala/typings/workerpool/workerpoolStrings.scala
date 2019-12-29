@@ -9,6 +9,9 @@ object workerpoolStrings {
   sealed trait CancellationError extends js.Object
   
   @js.native
+  sealed trait Proxy extends js.Object
+  
+  @js.native
   sealed trait TimeoutError extends js.Object
   
   @js.native
@@ -34,6 +37,8 @@ object workerpoolStrings {
   
   @scala.inline
   def CancellationError: CancellationError = "CancellationError".asInstanceOf[CancellationError]
+  @scala.inline
+  def Proxy: Proxy = "Proxy".asInstanceOf[Proxy]
   @scala.inline
   def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
   @scala.inline

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Research protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Research_typekey`: Research = js.native
+  @JSName("Excel.Research_typekey")
+  var ExcelDotResearch_typekey: Research = js.native
   val Parent: js.Any = js.native
   def IsResearchService(ServiceID: String): Boolean = js.native
   def Query(ServiceID: String): js.Any = js.native

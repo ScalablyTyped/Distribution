@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.RegionOfInterestType.face
-import typings.winrtDashUwp.Windows.Media.Devices.RegionOfInterestType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

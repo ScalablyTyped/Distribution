@@ -1,19 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.PageType.defaultView
-import typings.sharepoint.SP.PageType.dialogView
-import typings.sharepoint.SP.PageType.displayForm
-import typings.sharepoint.SP.PageType.displayFormDialog
-import typings.sharepoint.SP.PageType.editForm
-import typings.sharepoint.SP.PageType.editFormDialog
-import typings.sharepoint.SP.PageType.invalid
-import typings.sharepoint.SP.PageType.newForm
-import typings.sharepoint.SP.PageType.newFormDialog
-import typings.sharepoint.SP.PageType.normalView
-import typings.sharepoint.SP.PageType.pAGE_MAXITEMS
-import typings.sharepoint.SP.PageType.solutionForm
-import typings.sharepoint.SP.PageType.view
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

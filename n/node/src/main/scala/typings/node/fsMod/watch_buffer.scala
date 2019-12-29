@@ -13,7 +13,7 @@ object watch_buffer extends js.Object {
   def apply(
     filename: PathLike,
     options: buffer_,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ Buffer, Unit]
+    listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
   ): FSWatcher = js.native
 }
 

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   - typings.fridaDashGum.fridaDashGumStrings.jne
   - typings.fridaDashGum.fridaDashGumStrings.jbe
   - typings.fridaDashGum.fridaDashGumStrings.ja
-  - typings.fridaDashGum.fridaDashGumStrings.JS
+  - typings.fridaDashGum.fridaDashGumStrings.js_
   - typings.fridaDashGum.fridaDashGumStrings.jns
   - typings.fridaDashGum.fridaDashGumStrings.jp
   - typings.fridaDashGum.fridaDashGumStrings.jnp
@@ -28,8 +28,6 @@ import scala.scalajs.js.annotation._
 trait X86InstructionId extends js.Object
 
 object X86InstructionId {
-  @scala.inline
-  def JS: typings.fridaDashGum.fridaDashGumStrings.JS = this.cast("js")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
@@ -68,5 +66,8 @@ object X86InstructionId {
   def jp: typings.fridaDashGum.fridaDashGumStrings.jp = this.cast("jp")
   @scala.inline
   def jrcxz: typings.fridaDashGum.fridaDashGumStrings.jrcxz = this.cast("jrcxz")
+  @JSName("js")
+  @scala.inline
+  def js_ : typings.fridaDashGum.fridaDashGumStrings.js_ = this.cast("js")
 }
 

@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.SOLID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

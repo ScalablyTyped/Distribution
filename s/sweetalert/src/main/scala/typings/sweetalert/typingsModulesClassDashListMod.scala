@@ -1,7 +1,6 @@
 package typings.sweetalert
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sweetalert.typingsModulesClassDashListMod.ClassNameList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

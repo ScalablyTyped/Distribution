@@ -4,6 +4,7 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.chart.theme.ITheme
 import typings.extjs.Ext.data.IAbstractStore
 import typings.extjs.Ext.data.IStore
+import typings.extjs.Ext.draw.IComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 - typings.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners
 - typings.extjs.Ext.chart.INavigation because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined restoreZoom, setZoom
 - typings.extjs.Ext.chart.IMask because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined mask */ trait IChart
-  extends typings.extjs.Ext.draw.IComponent
+  extends IComponent
      with ITheme {
   /** [Config Option] (Boolean/Object) */
   @JSName("animate")
@@ -81,7 +82,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Ext.data.Store) */
   var store: js.UndefOr[IStore] = js.undefined
   /** [Config Option] (String) */
-  var theme: js.UndefOr[java.lang.String] = js.undefined
+  var theme: js.UndefOr[String] = js.undefined
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/
@@ -91,7 +92,7 @@ import scala.scalajs.js.annotation._
 object IChart {
   @scala.inline
   def apply(
-    IComponent: typings.extjs.Ext.draw.IComponent = null,
+    IComponent: IComponent = null,
     ITheme: ITheme = null,
     animate: js.Any = null,
     axes: Array = null,
@@ -112,7 +113,7 @@ object IChart {
     series: Array = null,
     setZoom: js.UndefOr[js.Any] => Unit = null,
     store: IStore = null,
-    theme: java.lang.String = null,
+    theme: String = null,
     unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null
   ): IChart = {
     val __obj = js.Dynamic.literal()

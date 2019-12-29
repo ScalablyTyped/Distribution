@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation._
 
 object haversineStrings {
   @js.native
-  sealed trait `[lat,lon]` extends js.Object
+  sealed trait LeftcurlybracketlatCommalngRightcurlybracket extends js.Object
   
   @js.native
-  sealed trait `[lon,lat]` extends js.Object
+  sealed trait LeftcurlybracketlatCommalonRightcurlybracket extends js.Object
+  
+  @js.native
+  sealed trait LeftcurlybracketlonCommalatRightcurlybracket extends js.Object
+  
+  @js.native
+  sealed trait LeftsquarebracketlatCommalonRightsquarebracket extends js.Object
+  
+  @js.native
+  sealed trait LeftsquarebracketlonCommalatRightsquarebracket extends js.Object
   
   @js.native
   sealed trait geojson extends js.Object
@@ -26,19 +35,16 @@ object haversineStrings {
   @js.native
   sealed trait nmi extends js.Object
   
-  @js.native
-  sealed trait `{lat,lng}` extends js.Object
-  
-  @js.native
-  sealed trait `{lat,lon}` extends js.Object
-  
-  @js.native
-  sealed trait `{lon,lat}` extends js.Object
-  
   @scala.inline
-  def `[lat,lon]`: `[lat,lon]` = "[lat,lon]".asInstanceOf[`[lat,lon]`]
+  def LeftcurlybracketlatCommalngRightcurlybracket: LeftcurlybracketlatCommalngRightcurlybracket = "{lat,lng}".asInstanceOf[LeftcurlybracketlatCommalngRightcurlybracket]
   @scala.inline
-  def `[lon,lat]`: `[lon,lat]` = "[lon,lat]".asInstanceOf[`[lon,lat]`]
+  def LeftcurlybracketlatCommalonRightcurlybracket: LeftcurlybracketlatCommalonRightcurlybracket = "{lat,lon}".asInstanceOf[LeftcurlybracketlatCommalonRightcurlybracket]
+  @scala.inline
+  def LeftcurlybracketlonCommalatRightcurlybracket: LeftcurlybracketlonCommalatRightcurlybracket = "{lon,lat}".asInstanceOf[LeftcurlybracketlonCommalatRightcurlybracket]
+  @scala.inline
+  def LeftsquarebracketlatCommalonRightsquarebracket: LeftsquarebracketlatCommalonRightsquarebracket = "[lat,lon]".asInstanceOf[LeftsquarebracketlatCommalonRightsquarebracket]
+  @scala.inline
+  def LeftsquarebracketlonCommalatRightsquarebracket: LeftsquarebracketlonCommalatRightsquarebracket = "[lon,lat]".asInstanceOf[LeftsquarebracketlonCommalatRightsquarebracket]
   @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
   @scala.inline
@@ -49,11 +55,5 @@ object haversineStrings {
   def mile: mile = "mile".asInstanceOf[mile]
   @scala.inline
   def nmi: nmi = "nmi".asInstanceOf[nmi]
-  @scala.inline
-  def `{lat,lng}`: `{lat,lng}` = "{lat,lng}".asInstanceOf[`{lat,lng}`]
-  @scala.inline
-  def `{lat,lon}`: `{lat,lon}` = "{lat,lon}".asInstanceOf[`{lat,lon}`]
-  @scala.inline
-  def `{lon,lat}`: `{lon,lat}` = "{lon,lat}".asInstanceOf[`{lon,lat}`]
 }
 

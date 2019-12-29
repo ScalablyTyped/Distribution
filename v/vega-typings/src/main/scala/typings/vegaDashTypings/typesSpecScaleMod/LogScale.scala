@@ -1,7 +1,7 @@
 package typings.vegaDashTypings.typesSpecScaleMod
 
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
-import typings.vegaDashTypings.vegaDashTypingsNumbers.`false`
+import typings.vegaDashTypings.vegaDashTypingsBooleans.`false`
 import typings.vegaDashTypings.vegaDashTypingsStrings.log
 import scala.scalajs.js
 import scala.scalajs.js.`|`

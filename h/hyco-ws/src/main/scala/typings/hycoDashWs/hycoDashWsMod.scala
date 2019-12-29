@@ -1,7 +1,6 @@
 package typings.hycoDashWs
 
-import typings.hycoDashWs.hycoDashWsMod.HybridConnectionWebSocketServer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.ws.wsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`

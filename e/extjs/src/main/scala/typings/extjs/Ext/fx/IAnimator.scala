@@ -18,7 +18,7 @@ trait IAnimator extends IObservable {
   /** [Config Option] (Boolean) */
   var dynamic: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var easing: js.UndefOr[java.lang.String] = js.undefined
+  var easing: js.UndefOr[String] = js.undefined
   /** [Method] Fire afteranimate event and end the animation  */
   var end: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Boolean) */
@@ -55,14 +55,14 @@ object IAnimator {
     delay: Int | Double = null,
     duration: Int | Double = null,
     dynamic: js.UndefOr[Boolean] = js.undefined,
-    easing: java.lang.String = null,
+    easing: String = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     end: () => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IAnimator = null,
@@ -77,8 +77,8 @@ object IAnimator {
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     paused: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -90,7 +90,7 @@ object IAnimator {
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     target: ITarget = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IAnimator = {
     val __obj = js.Dynamic.literal()

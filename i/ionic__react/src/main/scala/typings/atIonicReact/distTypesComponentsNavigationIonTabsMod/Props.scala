@@ -1,5 +1,6 @@
 package typings.atIonicReact.distTypesComponentsNavigationIonTabsMod
 
+import typings.atIonicCore.Anon_Tab
 import typings.react.reactMod.ReactNode
 import typings.std.CustomEvent
 import scala.scalajs.js
@@ -15,8 +16,8 @@ object Props {
   @scala.inline
   def apply(
     children: ReactNode = null,
-    onIonTabsDidChange: /* event */ CustomEvent[typings.atIonicCore.Anon_Tab] => Unit = null,
-    onIonTabsWillChange: /* event */ CustomEvent[typings.atIonicCore.Anon_Tab] => Unit = null
+    onIonTabsDidChange: /* event */ CustomEvent[Anon_Tab] => Unit = null,
+    onIonTabsWillChange: /* event */ CustomEvent[Anon_Tab] => Unit = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

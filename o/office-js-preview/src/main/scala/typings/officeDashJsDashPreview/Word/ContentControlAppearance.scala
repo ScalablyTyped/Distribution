@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.ContentControlAppearance.boundingBox
-import typings.officeDashJsDashPreview.Word.ContentControlAppearance.hidden
-import typings.officeDashJsDashPreview.Word.ContentControlAppearance.tags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -50,117 +50,85 @@ trait HotkeysProvider extends js.Object {
   /**
     * Creates a new Hotkey and creates the Mousetrap binding.
     */
-  def add(combo: String): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
-  def add(combo: String, description: String): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  def add(combo: String): Hotkey = js.native
+  def add(combo: String, description: String): Hotkey = js.native
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ]
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit]
+  ): Hotkey = js.native
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  ): Hotkey = js.native
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String]
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  ): Hotkey = js.native
   def add(
     combo: String,
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String],
     persistent: Boolean
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
-  def add(combo: js.Array[String]): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
-  def add(combo: js.Array[String], description: String): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  ): Hotkey = js.native
+  def add(combo: js.Array[String]): Hotkey = js.native
+  def add(combo: js.Array[String], description: String): Hotkey = js.native
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ]
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit]
+  ): Hotkey = js.native
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  ): Hotkey = js.native
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String]
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  ): Hotkey = js.native
   def add(
     combo: js.Array[String],
     description: String,
-    callback: js.Function2[
-      /* event */ Event, 
-      /* hotkey */ typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey, 
-      Unit
-    ],
+    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
     action: String,
     allowIn: js.Array[String],
     persistent: Boolean
-  ): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  ): Hotkey = js.native
   /**
     * Creates a new Hotkey and creates the Mousetrap binding.
     */
-  def add(hotkeyObj: typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  def add(hotkeyObj: Hotkey): Hotkey = js.native
   /**
     * Binds the hotkey to a particular scope.
     * Useful if the scope is destroyed, we can automatically destroy the hotkey binding.
     * @param scope The scope to bind to
     */
-  def bindTo(scope: IScope): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.HotkeysProviderChained = js.native
+  def bindTo(scope: IScope): HotkeysProviderChained = js.native
   /**
     * Removes and unbinds a hotkey
     * @param combo The keyboard combo (shortcut) or the HotKey object
     */
   def del(combo: String): Unit = js.native
   def del(combo: js.Array[String]): Unit = js.native
-  def del(combo: typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey): Unit = js.native
+  def del(combo: Hotkey): Unit = js.native
   /**
     * Returns the Hotkey object
     * @param combo The keyboard combo (shortcut)
     */
-  def get(combo: String): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
-  def get(combo: js.Array[String]): typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey = js.native
+  def get(combo: String): Hotkey = js.native
+  def get(combo: js.Array[String]): Hotkey = js.native
   /**
     * Purges all non-persistent hotkeys (such as those defined in routes)
     *

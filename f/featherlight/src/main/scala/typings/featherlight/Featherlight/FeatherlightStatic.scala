@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FeatherlightStatic
   extends Instantiable0[typings.featherlight.Featherlight.Featherlight]
+     with Instantiable1[
+      (/* config */ Config) | (/* $content */ JQuery) | (/* $content */ String), 
+      typings.featherlight.Featherlight.Featherlight
+    ]
      with Instantiable2[
       (/* $content */ JQuery) | (/* $content */ String), 
       /* config */ Config, 
-      typings.featherlight.Featherlight.Featherlight
-    ]
-     with Instantiable1[
-      (/* config */ Config) | (/* $content */ JQuery) | (/* $content */ String), 
       typings.featherlight.Featherlight.Featherlight
     ] {
   var autoBind: Boolean | String = js.native

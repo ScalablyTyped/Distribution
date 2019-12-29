@@ -14,6 +14,7 @@ class TextRetrievalMode protected () extends js.Object {
   var IncludeHiddenText: Boolean = js.native
   val Parent: js.Any = js.native
   var ViewType: WdViewType = js.native
-  var `Word.TextRetrievalMode_typekey`: TextRetrievalMode = js.native
+  @JSName("Word.TextRetrievalMode_typekey")
+  var WordDotTextRetrievalMode_typekey: TextRetrievalMode = js.native
 }
 

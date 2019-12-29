@@ -1,9 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.reproStepsMode.disabled
-import typings.instabugDashReactnative.instabugDashReactnativeMod.reproStepsMode.enabled
-import typings.instabugDashReactnative.instabugDashReactnativeMod.reproStepsMode.enabledWithNoScreenshots
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

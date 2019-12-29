@@ -25,7 +25,10 @@ trait ReadonlyArray[T] extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
-  def flat[U](`this`: ReadonlyArray[Array[U] | ReadonlyArray[U]]): Array[U] = js.native
+  @JSName("flat")
+  def flat_0[U](depth: `0`): Array[U] = js.native
+  @JSName("flat")
+  def flat_1[U](depth: `1`): Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -33,9 +36,7 @@ trait ReadonlyArray[T] extends js.Object {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_0[U](`this`: ReadonlyArray[U], depth: `0`): Array[U] = js.native
-  @JSName("flat")
-  def flat_1[U](`this`: ReadonlyArray[Array[U] | ReadonlyArray[U]], depth: `1`): Array[U] = js.native
+  def flat_2[U](depth: `2`): Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -43,12 +44,7 @@ trait ReadonlyArray[T] extends js.Object {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_2[U](
-    `this`: ReadonlyArray[
-      (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
-    ],
-    depth: `2`
-  ): Array[U] = js.native
+  def flat_3[U](depth: `3`): Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -56,14 +52,7 @@ trait ReadonlyArray[T] extends js.Object {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_3[U](
-    `this`: ReadonlyArray[
-      (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[
-        (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
-      ])
-    ],
-    depth: `3`
-  ): Array[U] = js.native
+  def flat_4[U](depth: `4`): Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -71,17 +60,6 @@ trait ReadonlyArray[T] extends js.Object {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_4[U](
-    `this`: ReadonlyArray[
-      (Array[
-        (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[Array[Array[U]] | ReadonlyArray[ReadonlyArray[U]]])
-      ]) | (ReadonlyArray[
-        (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[
-          (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
-        ])
-      ])
-    ],
-    depth: `4`
-  ): Array[U] = js.native
+  def flat_U[U](): Array[U] = js.native
 }
 

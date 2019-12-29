@@ -1,10 +1,10 @@
 package typings.webpack.webpackMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackMod.Options.Devtool
 import typings.webpack.webpackMod.Options.Optimization
 import typings.webpack.webpackMod.Options.Performance
-import typings.webpack.webpackNumbers.`false`
 import typings.webpack.webpackStrings.`async-node`
 import typings.webpack.webpackStrings.`electron-main`
 import typings.webpack.webpackStrings.`electron-renderer`

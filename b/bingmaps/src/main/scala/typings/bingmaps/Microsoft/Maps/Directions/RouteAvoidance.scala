@@ -1,14 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidAirline
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidBulletTrain
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidExpressTrain
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidHighways
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidToll
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.minimizeHighways
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.minimizeToll
-import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

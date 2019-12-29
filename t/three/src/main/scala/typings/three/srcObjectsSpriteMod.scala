@@ -4,7 +4,7 @@ import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMaterialsMaterialsMod.SpriteMaterial
 import typings.three.srcMathVector2Mod.Vector2
-import typings.three.threeNumbers.`true`
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -18,8 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.TileDebug")
 @js.native
-class TileDebug protected ()
-  extends typings.openlayers.openlayersMod.source.Tile {
+class TileDebug protected () extends Tile {
   /**
     * @classdesc
     * A pseudo tile source, which does not fetch tiles from a server, but renders

@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.SourceControlTypes.Git
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.SourceControlTypes.Tfvc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

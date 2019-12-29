@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.printerProvider
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object onGetCapabilityRequested
   extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[
+      Event[
         js.Function2[
           /* printerId */ String, 
           /* resultCallback */ js.Function1[/* capabilities */ PrinterCapabilities, Unit], 

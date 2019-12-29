@@ -10,7 +10,8 @@ class ViewFields protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.ViewFields_typekey`: ViewFields = js.native
+  @JSName("Outlook.ViewFields_typekey")
+  var OutlookDotViewFields_typekey: ViewFields = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(PropertyName: String): ViewField = js.native

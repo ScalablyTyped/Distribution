@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dns", "CONNREFUSED")
 @js.native
-object CONNREFUSED
-  extends TopLevel[java.lang.String]
+object CONNREFUSED extends TopLevel[String]
 

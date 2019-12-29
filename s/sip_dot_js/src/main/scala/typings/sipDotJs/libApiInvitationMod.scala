@@ -43,15 +43,16 @@ object libApiInvitationMod extends js.Object {
       * @internal
       */
     val autoSendAnInitialProvisionalResponse: Boolean = js.native
-    /** @internal */
-    @JSName("body")
-    var body_Invitation: js.UndefOr[String] = js.native
+    /**
+      * Initial incoming INVITE request message body.
+      */
+    val body: js.UndefOr[String] = js.native
     /** True if dispose() has been called. */
     var disposed: js.Any = js.native
     /** INVITE will be rejected if not accepted within a certain period time. */
     var expiresTimer: js.Any = js.native
     /**
-      * Helper function to handline offer/answer in a PRACK.
+      * Helper function to handle offer/answer in a PRACK.
       */
     var handlePrackOfferAnswer: js.Any = js.native
     /**
@@ -82,7 +83,9 @@ object libApiInvitationMod extends js.Object {
     var prackNeverArrived: js.Any = js.native
     /** Are reliable provisional responses required or supported. */
     var rel100: js.Any = js.native
-    /** Incoming INVITE request message. */
+    /**
+      * Initial incoming INVITE request message.
+      */
     val request: IncomingRequestMessage = js.native
     /** The current RSeq header value. */
     var rseq: js.Any = js.native
@@ -126,8 +129,11 @@ object libApiInvitationMod extends js.Object {
     var waitForArrivalOfPrack: js.Any = js.native
     /** True if waiting for a PRACK before sending a 200 Ok. */
     var waitingForPrack: js.Any = js.native
+    /** A Promise providing a defer when waiting for a PRACK. */
     var waitingForPrackPromise: js.Any = js.native
+    /** Function to reject when PRACK never arrives. */
     var waitingForPrackReject: js.Any = js.native
+    /** Function to resolve when PRACK arrives. */
     var waitingForPrackResolve: js.Any = js.native
     /**
       * Handle CANCEL request.

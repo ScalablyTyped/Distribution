@@ -11,7 +11,8 @@ class Presentations protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Presentations_typekey`: Presentations = js.native
+  @JSName("PowerPoint.Presentations_typekey")
+  var PowerPointDotPresentations_typekey: Presentations = js.native
   /** @param Office.MsoTriState [WithWindow=-1] */
   def Add(): Presentation = js.native
   def Add(WithWindow: MsoTriState): Presentation = js.native

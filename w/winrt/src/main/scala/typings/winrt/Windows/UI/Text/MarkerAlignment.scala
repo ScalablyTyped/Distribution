@@ -1,10 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.MarkerAlignment.center
-import typings.winrt.Windows.UI.Text.MarkerAlignment.left
-import typings.winrt.Windows.UI.Text.MarkerAlignment.right
-import typings.winrt.Windows.UI.Text.MarkerAlignment.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

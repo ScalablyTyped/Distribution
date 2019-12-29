@@ -1,16 +1,6 @@
 package typings.ethereumDashProtocol.ethereumDashProtocolMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Call
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.CallCode
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Create
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.DelegateCall
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Invalid
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Return
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Revert
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.SelfDestruct
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.StaticCall
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

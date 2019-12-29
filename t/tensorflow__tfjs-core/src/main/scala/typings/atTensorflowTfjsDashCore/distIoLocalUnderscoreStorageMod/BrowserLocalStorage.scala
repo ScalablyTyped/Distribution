@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashCore.distIoLocalUnderscoreStorageMod
 
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.`localstorage://`
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.localstorageColonSlashSlash
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.IOHandler
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.ModelArtifacts
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.SaveResult
@@ -43,7 +43,7 @@ class BrowserLocalStorage protected () extends IOHandler {
 @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorage")
 @js.native
 object BrowserLocalStorage extends js.Object {
-  val URL_SCHEME: `localstorage://` = js.native
+  val URL_SCHEME: localstorageColonSlashSlash = js.native
 }
 
 @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "browserLocalStorage")

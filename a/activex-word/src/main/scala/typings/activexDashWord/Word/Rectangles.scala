@@ -11,7 +11,8 @@ class Rectangles protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Rectangles_typekey`: Rectangles = js.native
+  @JSName("Word.Rectangles_typekey")
+  var WordDotRectangles_typekey: Rectangles = js.native
   def Item(Index: Double): Rectangle = js.native
 }
 

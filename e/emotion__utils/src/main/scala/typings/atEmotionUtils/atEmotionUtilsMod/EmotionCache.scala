@@ -1,7 +1,7 @@
 package typings.atEmotionUtils.atEmotionUtilsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atEmotionUtils.atEmotionUtilsNumbers.`true`
+import typings.atEmotionUtils.atEmotionUtilsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,7 @@ package typings.jestDashSnapshot
 
 import typings.atJestTypes.buildConfigMod.SnapshotUpdateState
 import typings.jestDashSnapshot.jestDashSnapshotStrings.`1`
-import typings.jestDashSnapshot.jestDashSnapshotStrings.`https://gooDOTgl/fbAQLP`
+import typings.jestDashSnapshot.jestDashSnapshotStrings.httpsColonSlashSlashgooDotglSlashfbAQLP
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-snapshot/build/utils", JSImport.Namespace)
 @js.native
 object buildUtilsMod extends js.Object {
-  val SNAPSHOT_GUIDE_LINK: `https://gooDOTgl/fbAQLP` = js.native
+  val SNAPSHOT_GUIDE_LINK: httpsColonSlashSlashgooDotglSlashfbAQLP = js.native
   val SNAPSHOT_VERSION: `1` = js.native
   val SNAPSHOT_VERSION_WARNING: String = js.native
   def deepMerge(target: js.Any, source: js.Any): js.Any = js.native

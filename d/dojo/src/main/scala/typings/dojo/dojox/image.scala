@@ -17,7 +17,6 @@ import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.templatePath
 import typings.dojo.dojoStrings.templateString
 import typings.dojo.dojoStrings.threads
-import typings.dojo.dojox.image.MagnifierLite
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import scala.scalajs.js

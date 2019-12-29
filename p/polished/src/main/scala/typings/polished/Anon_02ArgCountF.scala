@@ -2,7 +2,7 @@ package typings.polished
 
 import typings.polished.polishedNumbers.`0`
 import typings.polished.polishedNumbers.`2`
-import typings.polished.polishedStrings.`-`
+import typings.polished.polishedStrings.`-_`
 import typings.polished.polishedStrings.infix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait Anon_02ArgCountF extends js.Object {
   var notation: infix
   var precedence: `2`
   var rightToLeft: `0`
-  var symbol: `-`
+  var symbol: `-_`
 }
 
 object Anon_02ArgCountF {
@@ -25,7 +25,7 @@ object Anon_02ArgCountF {
     notation: infix,
     precedence: `2`,
     rightToLeft: `0`,
-    symbol: `-`
+    symbol: `-_`
   ): Anon_02ArgCountF = {
     val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
   

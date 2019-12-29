@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
   - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.jc
   - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.jd
   - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.jh
-  - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.JS
+  - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.js_
   - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.qc
   - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.qd
   - typings.pokerDashEvaluator.pokerDashEvaluatorStrings.qh

@@ -15,10 +15,10 @@ object spectrumStrings {
   sealed trait disable extends js.Object
   
   @js.native
-  sealed trait dragstartDOTspectrum extends js.Object
+  sealed trait dragstartDotspectrum extends js.Object
   
   @js.native
-  sealed trait dragstopDOTspectrum extends js.Object
+  sealed trait dragstopDotspectrum extends js.Object
   
   @js.native
   sealed trait enable extends js.Object
@@ -51,9 +51,9 @@ object spectrumStrings {
   @scala.inline
   def disable: disable = "disable".asInstanceOf[disable]
   @scala.inline
-  def dragstartDOTspectrum: dragstartDOTspectrum = "dragstart.spectrum".asInstanceOf[dragstartDOTspectrum]
+  def dragstartDotspectrum: dragstartDotspectrum = "dragstart.spectrum".asInstanceOf[dragstartDotspectrum]
   @scala.inline
-  def dragstopDOTspectrum: dragstopDOTspectrum = "dragstop.spectrum".asInstanceOf[dragstopDOTspectrum]
+  def dragstopDotspectrum: dragstopDotspectrum = "dragstop.spectrum".asInstanceOf[dragstopDotspectrum]
   @scala.inline
   def enable: enable = "enable".asInstanceOf[enable]
   @scala.inline

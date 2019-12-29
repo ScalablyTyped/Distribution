@@ -10,7 +10,8 @@ class ChartColorFormat protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ChartColorFormat_typekey`: ChartColorFormat = js.native
+  @JSName("PowerPoint.ChartColorFormat_typekey")
+  var PowerPointDotChartColorFormat_typekey: ChartColorFormat = js.native
   val RGB: Double = js.native
   var SchemeColor: Double = js.native
   val Type: Double = js.native

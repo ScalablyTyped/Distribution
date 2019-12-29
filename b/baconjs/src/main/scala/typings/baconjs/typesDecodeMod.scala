@@ -1,7 +1,5 @@
 package typings.baconjs
 
-import typings.baconjs.typesDecodeMod.DecodedValueOf
-import typings.baconjs.typesDecodeMod.FlattenedObservable
 import typings.baconjs.typesObservableMod.Observable
 import typings.baconjs.typesObservableMod.Property
 import typings.std.Record

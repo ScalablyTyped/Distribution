@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object gapiDotPlusStrings {
   @js.native
-  sealed trait `plus#peopleFeed` extends js.Object
+  sealed trait plusNumbersignpeopleFeed extends js.Object
   
   @js.native
-  sealed trait `plus#person` extends js.Object
+  sealed trait plusNumbersignperson extends js.Object
   
   @scala.inline
-  def `plus#peopleFeed`: `plus#peopleFeed` = "plus#peopleFeed".asInstanceOf[`plus#peopleFeed`]
+  def plusNumbersignpeopleFeed: plusNumbersignpeopleFeed = "plus#peopleFeed".asInstanceOf[plusNumbersignpeopleFeed]
   @scala.inline
-  def `plus#person`: `plus#person` = "plus#person".asInstanceOf[`plus#person`]
+  def plusNumbersignperson: plusNumbersignperson = "plus#person".asInstanceOf[plusNumbersignperson]
 }
 

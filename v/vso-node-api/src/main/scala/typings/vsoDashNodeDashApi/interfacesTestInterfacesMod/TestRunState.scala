@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Aborted
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Completed
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.InProgress
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.NeedsInvestigation
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.NotStarted
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Unspecified
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Waiting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

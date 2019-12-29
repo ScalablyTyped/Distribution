@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkClientDashLambdaDashNode
 
-import typings.atAwsDashSdkClientDashLambdaDashNode.typesInputTypesUnionMod._InputTypesUnion
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesInvokeAsyncInputMod.InvokeAsyncInput
 import typings.node.streamMod.Readable
 import scala.scalajs.js

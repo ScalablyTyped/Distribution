@@ -1,10 +1,6 @@
 package typings.atAngularCompiler.srcCompileUnderscoreMetadataMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileSummaryKind.Directive
-import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileSummaryKind.Injectable
-import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileSummaryKind.NgModule
-import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileSummaryKind.Pipe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

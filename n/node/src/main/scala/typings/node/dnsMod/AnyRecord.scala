@@ -30,19 +30,7 @@ trait AnyRecord extends js.Object
 
 object AnyRecord {
   @scala.inline
-  def AnySrvRecord(name: java.lang.String, port: Double, priority: Double, `type`: SRV, weight: Double): AnyRecord = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  @scala.inline
-  def AnyTxtRecord(entries: js.Array[java.lang.String], `type`: TXT): AnyRecord = {
-    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  @scala.inline
-  def AnyNsRecord(`type`: NS, value: java.lang.String): AnyRecord = {
+  def AnyPtrRecord(`type`: PTR, value: String): AnyRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
@@ -50,9 +38,9 @@ object AnyRecord {
   @scala.inline
   def AnySoaRecord(
     expire: Double,
-    hostmaster: java.lang.String,
+    hostmaster: String,
     minttl: Double,
-    nsname: java.lang.String,
+    nsname: String,
     refresh: Double,
     retry: Double,
     serial: Double,
@@ -63,46 +51,58 @@ object AnyRecord {
     __obj.asInstanceOf[AnyRecord]
   }
   @scala.inline
-  def AnyAaaaRecord(address: java.lang.String, ttl: Double, `type`: AAAA): AnyRecord = {
+  def AnyNaptrRecord(
+    flags: String,
+    order: Double,
+    preference: Double,
+    regexp: String,
+    replacement: String,
+    service: String,
+    `type`: NAPTR
+  ): AnyRecord = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preference = preference.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnyRecord]
+  }
+  @scala.inline
+  def AnyCnameRecord(`type`: CNAME, value: String): AnyRecord = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnyRecord]
+  }
+  @scala.inline
+  def AnyNsRecord(`type`: NS, value: String): AnyRecord = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnyRecord]
+  }
+  @scala.inline
+  def AnySrvRecord(name: String, port: Double, priority: Double, `type`: SRV, weight: Double): AnyRecord = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnyRecord]
+  }
+  @scala.inline
+  def AnyARecord(address: String, ttl: Double, `type`: A): AnyRecord = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
   @scala.inline
-  def AnyMxRecord(exchange: java.lang.String, priority: Double, `type`: MX): AnyRecord = {
+  def AnyTxtRecord(entries: js.Array[String], `type`: TXT): AnyRecord = {
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnyRecord]
+  }
+  @scala.inline
+  def AnyMxRecord(exchange: String, priority: Double, `type`: MX): AnyRecord = {
     val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }
   @scala.inline
-  def AnyPtrRecord(`type`: PTR, value: java.lang.String): AnyRecord = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  @scala.inline
-  def AnyARecord(address: java.lang.String, ttl: Double, `type`: A): AnyRecord = {
+  def AnyAaaaRecord(address: String, ttl: Double, `type`: AAAA): AnyRecord = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  @scala.inline
-  def AnyCnameRecord(`type`: CNAME, value: java.lang.String): AnyRecord = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  @scala.inline
-  def AnyNaptrRecord(
-    flags: java.lang.String,
-    order: Double,
-    preference: Double,
-    regexp: java.lang.String,
-    replacement: java.lang.String,
-    service: java.lang.String,
-    `type`: NAPTR
-  ): AnyRecord = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preference = preference.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyRecord]
   }

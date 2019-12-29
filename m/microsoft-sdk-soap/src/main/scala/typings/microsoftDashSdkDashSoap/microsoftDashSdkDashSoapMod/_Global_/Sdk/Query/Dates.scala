@@ -17,7 +17,7 @@ class Dates protected () extends ValueBase {
   /**
     * Returns the type of value with namespace prefix.
     */
-  def getType(): java.lang.String = js.native
+  def getType(): String = js.native
   /**
     * Returns an Sdk.Collection of Date values.
     */

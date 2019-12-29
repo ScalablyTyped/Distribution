@@ -11,7 +11,7 @@ trait Shadow extends js.Object {
   var color: js.UndefOr[OpaqueColor] = js.undefined
   var propertyState: js.UndefOr[String] = js.undefined
   var rotateWithShape: js.UndefOr[Boolean] = js.undefined
-  var transform: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.undefined
+  var transform: js.UndefOr[AffineTransform] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object Shadow {
     color: OpaqueColor = null,
     propertyState: String = null,
     rotateWithShape: js.UndefOr[Boolean] = js.undefined,
-    transform: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.AffineTransform = null,
+    transform: AffineTransform = null,
     `type`: String = null
   ): Shadow = {
     val __obj = js.Dynamic.literal()

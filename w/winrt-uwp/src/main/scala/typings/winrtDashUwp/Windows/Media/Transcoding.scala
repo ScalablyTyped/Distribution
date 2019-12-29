@@ -6,15 +6,6 @@ import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncActionWithProgr
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Media.Core.IMediaSource
 import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaEncodingProfile
-import typings.winrtDashUwp.Windows.Media.Transcoding.MediaVideoProcessingAlgorithm
-import typings.winrtDashUwp.Windows.Media.Transcoding.MediaVideoProcessingAlgorithm.default
-import typings.winrtDashUwp.Windows.Media.Transcoding.MediaVideoProcessingAlgorithm.mrfCrf444
-import typings.winrtDashUwp.Windows.Media.Transcoding.PrepareTranscodeResult
-import typings.winrtDashUwp.Windows.Media.Transcoding.TranscodeFailureReason
-import typings.winrtDashUwp.Windows.Media.Transcoding.TranscodeFailureReason.codecNotFound
-import typings.winrtDashUwp.Windows.Media.Transcoding.TranscodeFailureReason.invalidProfile
-import typings.winrtDashUwp.Windows.Media.Transcoding.TranscodeFailureReason.none
-import typings.winrtDashUwp.Windows.Media.Transcoding.TranscodeFailureReason.unknown
 import typings.winrtDashUwp.Windows.Storage.IStorageFile
 import typings.winrtDashUwp.Windows.Storage.Streams.IRandomAccessStream
 import scala.scalajs.js

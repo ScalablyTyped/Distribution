@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait IWriter extends IBase {
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[java.lang.String] = js.undefined
+  var dateFormat: js.UndefOr[String] = js.undefined
   /** [Method] Formats the data for each record before sending it to the server
   		* @param record Ext.data.Model The record that we are writing to the server.
   		* @param operation Ext.data.Operation An operation object.
@@ -19,7 +19,7 @@ trait IWriter extends IBase {
     js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], _]
   ] = js.undefined
   /** [Config Option] (String) */
-  var nameProperty: js.UndefOr[java.lang.String] = js.undefined
+  var nameProperty: js.UndefOr[String] = js.undefined
   /** [Method] Prepares a Proxy s Ext data Request object
   		* @param request Ext.data.Request The request object
   		* @returns Ext.data.Request The modified request object
@@ -40,14 +40,14 @@ object IWriter {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    dateFormat: java.lang.String = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    dateFormat: String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getRecordData: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IWriter = null,
     mixins: js.Any = null,
-    nameProperty: java.lang.String = null,
+    nameProperty: String = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

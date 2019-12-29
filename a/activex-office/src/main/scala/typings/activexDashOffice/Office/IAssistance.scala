@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Office.IAssistance")
 @js.native
 class IAssistance protected () extends js.Object {
-  var `Office.IAssistance_typekey`: IAssistance = js.native
+  @JSName("Office.IAssistance_typekey")
+  var OfficeDotIAssistance_typekey: IAssistance = js.native
   /** ClearDefaultContext Method */
   def ClearDefaultContext(HelpId: String): Unit = js.native
   /**

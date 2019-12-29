@@ -1,12 +1,6 @@
 package typings.heremaps.H.service.PlacesService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.service.PlacesService.EntryPoint.AROUND
-import typings.heremaps.H.service.PlacesService.EntryPoint.CATEGORIES
-import typings.heremaps.H.service.PlacesService.EntryPoint.EXPLORE
-import typings.heremaps.H.service.PlacesService.EntryPoint.HERE
-import typings.heremaps.H.service.PlacesService.EntryPoint.SEARCH
-import typings.heremaps.H.service.PlacesService.EntryPoint.SUGGEST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

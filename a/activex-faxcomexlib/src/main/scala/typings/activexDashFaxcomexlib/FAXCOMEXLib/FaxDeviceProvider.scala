@@ -13,7 +13,8 @@ class FaxDeviceProvider protected () extends js.Object {
   val Debug: Boolean = js.native
   /** Array of device IDs exposed by the provider */
   val DeviceIds: SafeArray[Double] = js.native
-  var `FAXCOMEXLib.FaxDeviceProvider_typekey`: FaxDeviceProvider = js.native
+  @JSName("FAXCOMEXLib.FaxDeviceProvider_typekey")
+  var FAXCOMEXLibDotFaxDeviceProvider_typekey: FaxDeviceProvider = js.native
   /** Provider's friendly name */
   val FriendlyName: String = js.native
   /** Full path and file name of the provider DLL */

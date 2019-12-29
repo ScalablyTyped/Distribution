@@ -4,9 +4,6 @@ import typings.mobx.libCoreDerivationMod.IDerivation
 import typings.mobx.libCoreDerivationMod.IDerivationState
 import typings.mobx.libCoreDerivationMod.TraceMode
 import typings.mobx.libCoreObservableMod.IObservable
-import typings.mobx.libCoreReactionMod.IReactionDisposer
-import typings.mobx.libCoreReactionMod.IReactionPublic
-import typings.mobx.libCoreReactionMod.Reaction
 import typings.mobx.libUtilsUtilsMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`

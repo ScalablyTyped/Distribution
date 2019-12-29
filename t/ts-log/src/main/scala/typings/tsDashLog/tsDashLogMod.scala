@@ -1,7 +1,6 @@
 package typings.tsDashLog
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tsDashLog.tsDashLogMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.i18next.i18nextMod
 
-import typings.i18next.i18nextNumbers.`false`
+import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.default
 import typings.i18next.i18nextStrings.fallback
 import scala.scalajs.js

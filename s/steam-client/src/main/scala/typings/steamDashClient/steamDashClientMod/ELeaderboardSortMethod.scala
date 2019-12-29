@@ -1,9 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ELeaderboardSortMethod.Ascending
-import typings.steamDashClient.steamDashClientMod.ELeaderboardSortMethod.Descending
-import typings.steamDashClient.steamDashClientMod.ELeaderboardSortMethod.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

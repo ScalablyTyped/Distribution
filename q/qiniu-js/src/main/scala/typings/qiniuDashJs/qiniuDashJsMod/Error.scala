@@ -1,6 +1,6 @@
 package typings.qiniuDashJs.qiniuDashJsMod
 
-import typings.qiniuDashJs.qiniuDashJsNumbers.`true`
+import typings.qiniuDashJs.qiniuDashJsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

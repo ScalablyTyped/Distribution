@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class UtilObject protected () extends js.Object {
   val Date: VarDate = js.native
-  var `InfoPath.UtilObject_typekey`: UtilObject = js.native
+  @JSName("InfoPath.UtilObject_typekey")
+  var InfoPathDotUtilObject_typekey: UtilObject = js.native
   val Math: MathObject = js.native
   def Match(bstrValue: String, bstrPattern: String): Boolean = js.native
 }

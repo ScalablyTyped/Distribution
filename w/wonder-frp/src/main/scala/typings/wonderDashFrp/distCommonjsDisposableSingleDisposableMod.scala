@@ -2,7 +2,6 @@ package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsCoreEntityMod.Entity
 import typings.wonderDashFrp.distCommonjsDisposableIDisposableMod.IDisposable
-import typings.wonderDashFrp.distCommonjsDisposableSingleDisposableMod.SingleDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IMessageBox
-  extends typings.extjs.Ext.window.IWindow {
+trait IMessageBox extends IWindow {
   /** [Property] (Number) */
   var CANCEL: js.UndefOr[Double] = js.undefined
   /** [Property] (String) */
-  var ERROR: js.UndefOr[java.lang.String] = js.undefined
+  var ERROR: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var INFO: js.UndefOr[java.lang.String] = js.undefined
+  var INFO: js.UndefOr[String] = js.undefined
   /** [Property] (Number) */
   var NO: js.UndefOr[Double] = js.undefined
   /** [Property] (Number) */
@@ -20,9 +19,9 @@ trait IMessageBox
   /** [Property] (Number) */
   var OKCANCEL: js.UndefOr[Double] = js.undefined
   /** [Property] (String) */
-  var QUESTION: js.UndefOr[java.lang.String] = js.undefined
+  var QUESTION: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var WARNING: js.UndefOr[java.lang.String] = js.undefined
+  var WARNING: js.UndefOr[String] = js.undefined
   /** [Property] (Number) */
   var YES: js.UndefOr[Double] = js.undefined
   /** [Property] (Number) */
@@ -38,8 +37,8 @@ trait IMessageBox
   		*/
   var alert: js.UndefOr[
     js.Function4[
-      /* title */ js.UndefOr[java.lang.String], 
-      /* msg */ js.UndefOr[java.lang.String], 
+      /* title */ js.UndefOr[String], 
+      /* msg */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       this.type
@@ -56,8 +55,8 @@ trait IMessageBox
   		*/
   var confirm: js.UndefOr[
     js.Function4[
-      /* title */ js.UndefOr[java.lang.String], 
-      /* msg */ js.UndefOr[java.lang.String], 
+      /* title */ js.UndefOr[String], 
+      /* msg */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       this.type
@@ -82,9 +81,9 @@ trait IMessageBox
   		*/
   var progress: js.UndefOr[
     js.Function3[
-      /* title */ js.UndefOr[java.lang.String], 
-      /* msg */ js.UndefOr[java.lang.String], 
-      /* progressText */ js.UndefOr[java.lang.String], 
+      /* title */ js.UndefOr[String], 
+      /* msg */ js.UndefOr[String], 
+      /* progressText */ js.UndefOr[String], 
       this.type
     ]
   ] = js.undefined
@@ -99,12 +98,12 @@ trait IMessageBox
   		*/
   var prompt: js.UndefOr[
     js.Function6[
-      /* title */ js.UndefOr[java.lang.String], 
-      /* msg */ js.UndefOr[java.lang.String], 
+      /* title */ js.UndefOr[String], 
+      /* msg */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       /* multiline */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[String], 
       this.type
     ]
   ] = js.undefined
@@ -117,7 +116,7 @@ trait IMessageBox
   @JSName("setIcon")
   var setIcon_IMessageBox: js.UndefOr[
     js.Function3[
-      /* icon */ js.UndefOr[java.lang.String], 
+      /* icon */ js.UndefOr[String], 
       /* width */ js.UndefOr[Double], 
       /* height */ js.UndefOr[Double], 
       this.type
@@ -138,8 +137,8 @@ trait IMessageBox
   var updateProgress: js.UndefOr[
     js.Function3[
       /* value */ js.UndefOr[Double], 
-      /* progressText */ js.UndefOr[java.lang.String], 
-      /* msg */ js.UndefOr[java.lang.String], 
+      /* progressText */ js.UndefOr[String], 
+      /* msg */ js.UndefOr[String], 
       this.type
     ]
   ] = js.undefined
@@ -152,8 +151,8 @@ trait IMessageBox
   @JSName("wait")
   var wait_FIMessageBox: js.UndefOr[
     js.Function3[
-      /* msg */ js.UndefOr[java.lang.String], 
-      /* title */ js.UndefOr[java.lang.String], 
+      /* msg */ js.UndefOr[String], 
+      /* title */ js.UndefOr[String], 
       /* config */ js.UndefOr[js.Any], 
       this.type
     ]
@@ -164,30 +163,30 @@ object IMessageBox {
   @scala.inline
   def apply(
     CANCEL: Int | Double = null,
-    ERROR: java.lang.String = null,
-    INFO: java.lang.String = null,
-    IWindow: typings.extjs.Ext.window.IWindow = null,
+    ERROR: String = null,
+    INFO: String = null,
+    IWindow: IWindow = null,
     NO: Int | Double = null,
     OK: Int | Double = null,
     OKCANCEL: Int | Double = null,
-    QUESTION: java.lang.String = null,
-    WARNING: java.lang.String = null,
+    QUESTION: String = null,
+    WARNING: String = null,
     YES: Int | Double = null,
     YESNO: Int | Double = null,
     YESNOCANCEL: Int | Double = null,
-    alert: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox = null,
+    alert: (/* title */ js.UndefOr[String], /* msg */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox = null,
     buttonText: js.Any = null,
-    confirm: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox = null,
+    confirm: (/* title */ js.UndefOr[String], /* msg */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox = null,
     defaultTextHeight: Int | Double = null,
     hide: () => IComponent = null,
     minProgressWidth: Int | Double = null,
     minPromptWidth: Int | Double = null,
-    progress: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* progressText */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox = null,
-    prompt: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* multiline */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox = null,
-    setIcon: (/* icon */ js.UndefOr[java.lang.String], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => typings.extjs.Ext.window.IMessageBox = null,
-    show: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.window.IMessageBox = null,
-    updateProgress: (/* value */ js.UndefOr[Double], /* progressText */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox = null,
-    wait: (/* msg */ js.UndefOr[java.lang.String], /* title */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox = null
+    progress: (/* title */ js.UndefOr[String], /* msg */ js.UndefOr[String], /* progressText */ js.UndefOr[String]) => IMessageBox = null,
+    prompt: (/* title */ js.UndefOr[String], /* msg */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* multiline */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IMessageBox = null,
+    setIcon: (/* icon */ js.UndefOr[String], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => IMessageBox = null,
+    show: /* config */ js.UndefOr[js.Any] => IMessageBox = null,
+    updateProgress: (/* value */ js.UndefOr[Double], /* progressText */ js.UndefOr[String], /* msg */ js.UndefOr[String]) => IMessageBox = null,
+    wait: (/* msg */ js.UndefOr[String], /* title */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => IMessageBox = null
   ): IMessageBox = {
     val __obj = js.Dynamic.literal()
     if (CANCEL != null) __obj.updateDynamic("CANCEL")(CANCEL.asInstanceOf[js.Any])

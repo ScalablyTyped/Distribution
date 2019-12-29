@@ -1,10 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.MapTypeId.HYBRID
-import typings.googlemaps.google.maps.MapTypeId.ROADMAP
-import typings.googlemaps.google.maps.MapTypeId.SATELLITE
-import typings.googlemaps.google.maps.MapTypeId.TERRAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

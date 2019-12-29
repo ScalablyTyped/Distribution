@@ -16,7 +16,8 @@ class TextEffectFormat protected () extends js.Object {
   var FontSize: Double = js.native
   var KernedPairs: MsoTriState = js.native
   var NormalizedHeight: MsoTriState = js.native
-  var `Office.TextEffectFormat_typekey`: TextEffectFormat = js.native
+  @JSName("Office.TextEffectFormat_typekey")
+  var OfficeDotTextEffectFormat_typekey: TextEffectFormat = js.native
   val Parent: js.Any = js.native
   var PresetShape: MsoPresetTextEffectShape = js.native
   var PresetTextEffect: MsoPresetTextEffect = js.native

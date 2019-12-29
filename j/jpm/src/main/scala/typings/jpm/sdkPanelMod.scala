@@ -8,7 +8,6 @@ import typings.jpm.jpmStrings.message
 import typings.jpm.jpmStrings.ready
 import typings.jpm.jpmStrings.show
 import typings.jpm.jpmStrings.start
-import typings.jpm.sdkPanelMod.Panel
 import typings.std.Error
 import typings.std.URL
 import scala.scalajs.js

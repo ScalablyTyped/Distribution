@@ -1,6 +1,5 @@
 package typings.node.http2Mod
 
-import typings.node.Error
 import typings.node.netMod.Server
 import typings.node.nodeStrings.checkContinue
 import typings.node.nodeStrings.request
@@ -8,6 +7,7 @@ import typings.node.nodeStrings.session
 import typings.node.nodeStrings.sessionError
 import typings.node.nodeStrings.stream
 import typings.node.nodeStrings.timeout
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

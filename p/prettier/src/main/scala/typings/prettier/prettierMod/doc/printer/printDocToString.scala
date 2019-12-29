@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("prettier", "doc.printer.printDocToString")
 @js.native
 object printDocToString extends js.Object {
-  def apply(doc: Doc, options: typings.prettier.prettierMod.doc.printer.Options): Anon_CursorNodeStart = js.native
+  def apply(doc: Doc, options: Options): Anon_CursorNodeStart = js.native
 }
 

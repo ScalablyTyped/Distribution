@@ -13,7 +13,7 @@ object angularDashUiDashBootstrapStrings {
   sealed trait month extends DatepickerMode
   
   @js.native
-  sealed trait uiDOTbootstrap extends js.Object
+  sealed trait uiDotbootstrap extends js.Object
   
   @js.native
   sealed trait year extends DatepickerMode
@@ -23,7 +23,7 @@ object angularDashUiDashBootstrapStrings {
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
-  def uiDOTbootstrap: uiDOTbootstrap = "ui.bootstrap".asInstanceOf[uiDOTbootstrap]
+  def uiDotbootstrap: uiDotbootstrap = "ui.bootstrap".asInstanceOf[uiDotbootstrap]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
 }

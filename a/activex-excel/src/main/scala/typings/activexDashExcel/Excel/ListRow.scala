@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class ListRow protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ListRow_typekey`: ListRow = js.native
+  @JSName("Excel.ListRow_typekey")
+  var ExcelDotListRow_typekey: ListRow = js.native
   val Index: Double = js.native
   val InvalidData: Boolean = js.native
   val Parent: js.Any = js.native

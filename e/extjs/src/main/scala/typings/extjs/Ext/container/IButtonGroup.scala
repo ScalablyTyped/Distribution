@@ -1,15 +1,15 @@
 package typings.extjs.Ext.container
 
+import typings.extjs.Ext.panel.IPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IButtonGroup
-  extends typings.extjs.Ext.panel.IPanel {
+trait IButtonGroup extends IPanel {
   /** [Config Option] (Number) */
   var columns: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var defaultButtonUI: js.UndefOr[java.lang.String] = js.undefined
+  var defaultButtonUI: js.UndefOr[String] = js.undefined
   /** [Method] private
   		* @param component Object
   		*/
@@ -20,9 +20,9 @@ trait IButtonGroup
 object IButtonGroup {
   @scala.inline
   def apply(
-    IPanel: typings.extjs.Ext.panel.IPanel = null,
+    IPanel: IPanel = null,
     columns: Int | Double = null,
-    defaultButtonUI: java.lang.String = null,
+    defaultButtonUI: String = null,
     onBeforeAdd: /* component */ js.UndefOr[js.Any] => Unit = null
   ): IButtonGroup = {
     val __obj = js.Dynamic.literal()

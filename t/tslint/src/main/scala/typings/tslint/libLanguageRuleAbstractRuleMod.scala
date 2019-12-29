@@ -1,6 +1,5 @@
 package typings.tslint
 
-import typings.tslint.libLanguageRuleAbstractRuleMod.NoInfer
 import typings.tslint.libLanguageRuleRuleMod.IOptions
 import typings.tslint.libLanguageRuleRuleMod.IRule
 import typings.tslint.libLanguageRuleRuleMod.IRuleMetadata

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Connection protected () extends js.Object {
   val Connect: String = js.native
-  var `DAO.Connection_typekey`: Connection = js.native
+  @JSName("DAO.Connection_typekey")
+  var DAODotConnection_typekey: Connection = js.native
   val Database: typings.activexDashDao.DAO.Database = js.native
   val Name: String = js.native
   @JSName("QueryDefs")

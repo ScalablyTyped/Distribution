@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Sensitivity.CONFIDENTIAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Sensitivity.NORMAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Sensitivity.PERSONAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Sensitivity.PRIVATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

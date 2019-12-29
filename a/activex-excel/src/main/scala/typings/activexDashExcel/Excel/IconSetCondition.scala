@@ -11,7 +11,8 @@ class IconSetCondition protected () extends js.Object {
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native
   val Creator: XlCreator = js.native
-  var `Excel.IconSetCondition_typekey`: IconSetCondition = js.native
+  @JSName("Excel.IconSetCondition_typekey")
+  var ExcelDotIconSetCondition_typekey: IconSetCondition = js.native
   var Formula: String = js.native
   @JSName("IconCriteria")
   val IconCriteria_Original: IconCriteria = js.native

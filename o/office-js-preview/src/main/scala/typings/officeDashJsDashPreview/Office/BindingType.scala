@@ -1,8 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.BindingType.Matrix
-import typings.officeDashJsDashPreview.Office.BindingType.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

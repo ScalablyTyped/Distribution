@@ -1,12 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Drive
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Permission.COMMENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Permission.EDIT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Permission.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Permission.ORGANIZER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Permission.OWNER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Permission.VIEW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

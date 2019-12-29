@@ -1,11 +1,6 @@
 package typings.backlogDashJs.backlogDashJsMod.Option.User
 
 import org.scalablytyped.runtime.TopLevel
-import typings.backlogDashJs.backlogDashJsMod.Option.User.RoleType.Admin
-import typings.backlogDashJs.backlogDashJsMod.Option.User.RoleType.GuestReporter
-import typings.backlogDashJs.backlogDashJsMod.Option.User.RoleType.GuestViewer
-import typings.backlogDashJs.backlogDashJsMod.Option.User.RoleType.Reporter
-import typings.backlogDashJs.backlogDashJsMod.Option.User.RoleType.Viewer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

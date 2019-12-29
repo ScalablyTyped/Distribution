@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.ValueType.DateTime
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.ValueType.Numeric
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

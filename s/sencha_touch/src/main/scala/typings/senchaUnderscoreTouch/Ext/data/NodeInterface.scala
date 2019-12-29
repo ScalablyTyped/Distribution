@@ -48,7 +48,7 @@ object NodeInterface extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Override members of this class
   		* @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
   		* @returns Ext.Base this class

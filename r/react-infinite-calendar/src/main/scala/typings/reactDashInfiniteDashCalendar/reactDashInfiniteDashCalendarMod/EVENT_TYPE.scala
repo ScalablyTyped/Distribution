@@ -1,9 +1,6 @@
 package typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.END
-import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.HOVER
-import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.START
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

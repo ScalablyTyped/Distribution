@@ -34,7 +34,7 @@ trait GeoPath[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Objec
     *
     * @param object An object to be rendered.
     */
-  def apply(`this`: This, `object`: DatumObject, args: js.Any*): String | Null = js.native
+  def apply(`object`: DatumObject, args: js.Any*): String | Null = js.native
   /**
     * Returns the projected planar area (typically in square pixels) for the specified GeoJSON object.
     * Point, MultiPoint, LineString and MultiLineString geometries have zero area. For Polygon and MultiPolygon geometries,

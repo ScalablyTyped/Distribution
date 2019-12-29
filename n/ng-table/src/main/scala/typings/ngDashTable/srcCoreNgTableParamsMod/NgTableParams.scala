@@ -158,16 +158,16 @@ class NgTableParams[T] () extends js.Object {
     * Changing the page number will cause `isDataReloadRequired` to return true
     */
   def page(page: Double): this.type = js.native
-  /**
-    * Set new parameters
-    */
-  def parameters(): this.type = js.native
+  def parameters(): IParamValues[T] = js.native
   def parameters(newParameters: StringDictionary[String]): this.type = js.native
   def parameters(newParameters: StringDictionary[String], parseParamsFromUrl: Boolean): this.type = js.native
   def parameters(newParameters: IParamValues[T]): this.type = js.native
   def parameters(newParameters: IParamValues[T], parseParamsFromUrl: Boolean): this.type = js.native
+  /**
+    * Set new parameters
+    */
   @JSName("parameters")
-  def parameters_IParamValues(): IParamValues[T] = js.native
+  def parameters_This(): this.type = js.native
   /* private */ def parseGroup(group: js.Any): js.Any = js.native
   /**
     * Trigger a reload of the data rows

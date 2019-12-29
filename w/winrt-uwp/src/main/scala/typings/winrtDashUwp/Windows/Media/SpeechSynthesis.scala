@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
-import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.SpeechSynthesisStream
-import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender
-import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender.female
-import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender.male
-import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceInformation
 import typings.winrtDashUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtDashUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtDashUwp.Windows.Storage.Streams.IOutputStream

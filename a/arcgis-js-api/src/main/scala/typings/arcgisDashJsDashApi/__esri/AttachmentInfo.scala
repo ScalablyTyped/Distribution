@@ -22,6 +22,12 @@ trait AttachmentInfo
     */
   var exifInfo: js.Array[ExifInfo] = js.native
   /**
+    * The global identifier for the attachment.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#globalId)
+    */
+  var globalId: String = js.native
+  /**
     * The identifier for the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#id)
@@ -45,6 +51,12 @@ trait AttachmentInfo
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#orientationInfo)
     */
   val orientationInfo: OrientationInfo = js.native
+  /**
+    * The parent or the feature global id of the attachment.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#parentGlobalId)
+    */
+  var parentGlobalId: Double = js.native
   /**
     * The parent or the feature object id of the attachment.
     *

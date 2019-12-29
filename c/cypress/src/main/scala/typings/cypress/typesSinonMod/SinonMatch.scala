@@ -119,6 +119,10 @@ trait SinonMatch extends js.Object {
   def hasOwn(property: String): SinonMatcher = js.native
   def hasOwn(property: String, expect: js.Any): SinonMatcher = js.native
   /**
+    * Requires the value to be in the specified array.
+    */
+  def in(allowed: js.Array[_]): SinonMatcher = js.native
+  /**
     * Requires the value to be an instance of the given type.
     */
   def instanceOf(`type`: js.Any): SinonMatcher = js.native

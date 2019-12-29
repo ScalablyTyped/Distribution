@@ -1,6 +1,7 @@
 package typings.googlemaps.google.maps.places
 
 import typings.googlemaps.google.maps.Map
+import typings.std.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("google.maps.places.PlacesService")
 @js.native
 class PlacesService protected () extends js.Object {
-  def this(attrContainer: Map) = this()
+  def this(attrContainer: Map[Element]) = this()
   def this(attrContainer: HTMLDivElement) = this()
   def findPlaceFromPhoneNumber(
     request: FindPlaceFromPhoneNumberRequest,

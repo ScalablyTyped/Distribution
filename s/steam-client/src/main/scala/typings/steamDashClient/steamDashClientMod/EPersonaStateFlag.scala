@@ -1,18 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeMobile
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeTenfoot
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeVR
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeWeb
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.Golden
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.HasRichPresence
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.InJoinableGame
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.LaunchTypeGamepad
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingBigPicture
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingMobile
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingVR
-import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingWeb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

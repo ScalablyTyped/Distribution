@@ -21,7 +21,8 @@ class OlkLabel protected () extends js.Object {
   var ForeColor: OLE_COLOR = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkLabel_typekey`: OlkLabel = js.native
+  @JSName("Outlook.OlkLabel_typekey")
+  var OutlookDotOlkLabel_typekey: OlkLabel = js.native
   var TextAlign: OlTextAlign = js.native
   var UseHeaderColor: Boolean = js.native
   var Value: js.Any = js.native

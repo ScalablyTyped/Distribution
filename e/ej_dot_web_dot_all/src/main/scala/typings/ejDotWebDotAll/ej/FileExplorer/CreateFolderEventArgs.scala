@@ -13,7 +13,7 @@ trait CreateFolderEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /** returns the FileExplorer model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the selected item details
     */
   var selectedItems: js.UndefOr[js.Any] = js.undefined
@@ -27,7 +27,7 @@ object CreateFolderEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     data: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     selectedItems: js.Any = null,
     `type`: String = null
   ): CreateFolderEventArgs = {

@@ -1,6 +1,6 @@
 package typings.from2
 
-import typings.from2.from2Numbers.`false`
+import typings.from2.from2Booleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

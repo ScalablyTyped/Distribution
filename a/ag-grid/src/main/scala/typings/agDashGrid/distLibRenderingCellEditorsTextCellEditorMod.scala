@@ -2,7 +2,6 @@ package typings.agDashGrid
 
 import typings.agDashGrid.distLibRenderingCellEditorsICellEditorMod.ICellEditor
 import typings.agDashGrid.distLibRenderingCellEditorsICellEditorMod.ICellEditorParams
-import typings.agDashGrid.distLibRenderingCellEditorsTextCellEditorMod.ITextCellEditorParams
 import typings.agDashGrid.distLibWidgetsComponentMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

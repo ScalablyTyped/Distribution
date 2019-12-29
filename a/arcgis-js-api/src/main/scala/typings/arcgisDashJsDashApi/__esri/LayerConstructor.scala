@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ Instantiable0[Layer]
     * @param params.properties Set any of the layer's properties here for constructing the layer instance (e.g. popupTemplate, renderer, etc.).
     *
     */
-  def fromArcGISServerUrl(params: LayerFromArcGISServerUrlParams): IPromise[Layer] = js.native
+  def fromArcGISServerUrl(params: LayerFromArcGISServerUrlParams): js.Promise[Layer] = js.native
   /**
     * Creates a new layer instance of the appropriate layer class from an ArcGIS Online or ArcGIS Enterprise [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html). If the item points to a feature service with multiple layers, then a [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html) is created. If the item points to a service with a single layer, then it resolves to a layer of the same type of class as the service.  See also: [isLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#isLayer)
     *
@@ -36,6 +35,6 @@ Instantiable0[Layer]
     * @param params.portalItem The object representing an ArcGIS Online or ArcGIS Enterprise portal item from which to load the layer.
     *
     */
-  def fromPortalItem(params: LayerFromPortalItemParams): IPromise[Layer] = js.native
+  def fromPortalItem(params: LayerFromPortalItemParams): js.Promise[Layer] = js.native
 }
 

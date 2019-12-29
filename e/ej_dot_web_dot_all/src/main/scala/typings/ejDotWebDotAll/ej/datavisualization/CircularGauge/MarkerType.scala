@@ -1,17 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Diamond
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Ellipse
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Image
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Pentagon
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Pointer
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.RoundedRectangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Trapezoid
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Triangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Wedge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,10 +86,7 @@ object MarkerType extends js.Object {
   object RoundedRectangle extends TopLevel[RoundedRectangle with Double]
   
   /* 6 */ @js.native
-  object Slider
-    extends TopLevel[
-          typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.MarkerType.Slider with Double
-        ]
+  object Slider extends TopLevel[Slider with Double]
   
   /* 9 */ @js.native
   object Trapezoid extends TopLevel[Trapezoid with Double]

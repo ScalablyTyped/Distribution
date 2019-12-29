@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.TileUTFGrid")
 @js.native
-class TileUTFGrid protected ()
-  extends typings.openlayers.openlayersMod.source.Tile {
+class TileUTFGrid protected () extends Tile {
   /**
     * @classdesc
     * Layer source for UTFGrid interaction data loaded from TileJSON format.

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPivotPager
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotPager]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotPager] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotPager]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotPager] {
   var Locale: js.Any = js.native
   var fn: PivotPager = js.native
 }

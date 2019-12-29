@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.amcharts.amGraphMod.AmGraph
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

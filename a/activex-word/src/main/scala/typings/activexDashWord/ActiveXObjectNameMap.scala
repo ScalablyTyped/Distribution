@@ -7,16 +7,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var `Word.Application`: Application
-  var `Word.Document`: Document
+  @JSName("Word.Application")
+  var WordDotApplication: Application
+  @JSName("Word.Document")
+  var WordDotDocument: Document
 }
 
 object ActiveXObjectNameMap {
   @scala.inline
-  def apply(`Word.Application`: Application, `Word.Document`: Document): ActiveXObjectNameMap = {
+  def apply(WordDotApplication: Application, WordDotDocument: Document): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Word.Application")(`Word.Application`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Word.Document")(`Word.Document`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Application")(WordDotApplication.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Document")(WordDotDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

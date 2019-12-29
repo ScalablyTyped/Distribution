@@ -1,6 +1,5 @@
 package typings.grommet
 
-import typings.grommet.contextsResponsiveContextMod.ResponsiveValue
 import typings.react.reactMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`

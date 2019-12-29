@@ -1,8 +1,6 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.AttestationFormat.ATTESTATION_FORMAT_UNSPECIFIED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.AttestationFormat.CAVIUM_V1_COMPRESSED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

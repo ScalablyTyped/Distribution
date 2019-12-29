@@ -1,10 +1,6 @@
 package typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument
 
 import org.scalablytyped.runtime.TopLevel
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.ADDRESS
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.BYTEARRAY
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.STRING
-import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.U64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

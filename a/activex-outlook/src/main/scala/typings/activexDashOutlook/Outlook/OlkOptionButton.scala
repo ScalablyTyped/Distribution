@@ -21,7 +21,8 @@ class OlkOptionButton protected () extends js.Object {
   var GroupName: String = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkOptionButton_typekey`: OlkOptionButton = js.native
+  @JSName("Outlook.OlkOptionButton_typekey")
+  var OutlookDotOlkOptionButton_typekey: OlkOptionButton = js.native
   var Value: js.Any = js.native
   var WordWrap: Boolean = js.native
 }

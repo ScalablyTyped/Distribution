@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
   - typings.chaiDashUuid.chaiDashUuidStrings.v3
   - typings.chaiDashUuid.chaiDashUuidStrings.v4
   - typings.chaiDashUuid.chaiDashUuidStrings.v5
-  - typings.chaiDashUuid.chaiDashUuidStrings.Empty
+  - typings.chaiDashUuid.chaiDashUuidStrings._empty
 */
 trait UuidVersion extends js.Object
 
 object UuidVersion {
   @scala.inline
-  def Empty: typings.chaiDashUuid.chaiDashUuidStrings.Empty = this.cast("")
+  def _empty: typings.chaiDashUuid.chaiDashUuidStrings._empty = this.cast("")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

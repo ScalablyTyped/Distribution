@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAuthorizationKind.anonymous
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAuthorizationKind.sameUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

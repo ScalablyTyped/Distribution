@@ -48,7 +48,7 @@ object loginDashWithDashAmazonDashSdkDashBrowserStrings {
   sealed trait profile extends AuthorizationScopeOptions
   
   @js.native
-  sealed trait `profile:user_id` extends AuthorizationScopeOptions
+  sealed trait profileColonuser_id extends AuthorizationScopeOptions
   
   @js.native
   sealed trait queued extends AuthorizeRequestStatus
@@ -94,7 +94,7 @@ object loginDashWithDashAmazonDashSdkDashBrowserStrings {
   @scala.inline
   def profile: profile = "profile".asInstanceOf[profile]
   @scala.inline
-  def `profile:user_id`: `profile:user_id` = "profile:user_id".asInstanceOf[`profile:user_id`]
+  def profileColonuser_id: profileColonuser_id = "profile:user_id".asInstanceOf[profileColonuser_id]
   @scala.inline
   def queued: queued = "queued".asInstanceOf[queued]
   @scala.inline

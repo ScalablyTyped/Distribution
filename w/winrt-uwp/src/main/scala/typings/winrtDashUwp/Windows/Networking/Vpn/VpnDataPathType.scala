@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDataPathType.receive
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDataPathType.send
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

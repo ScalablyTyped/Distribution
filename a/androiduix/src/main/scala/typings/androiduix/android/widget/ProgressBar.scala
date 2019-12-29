@@ -4,7 +4,6 @@ import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.animation.Interpolator
-import typings.androiduix.android.widget.ProgressBar.RefreshData
 import typings.androiduix.androidui.image.NetDrawable
 import typings.std.HTMLElement
 import typings.std.Map

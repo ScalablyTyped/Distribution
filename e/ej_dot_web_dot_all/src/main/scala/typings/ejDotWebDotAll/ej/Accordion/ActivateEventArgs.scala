@@ -19,7 +19,7 @@ trait ActivateEventArgs extends js.Object {
   var isInteraction: js.UndefOr[Boolean] = js.undefined
   /** returns the accordion model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Accordion.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -32,7 +32,7 @@ object ActivateEventArgs {
     activeIndex: Int | Double = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Accordion.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ActivateEventArgs = {
     val __obj = js.Dynamic.literal()

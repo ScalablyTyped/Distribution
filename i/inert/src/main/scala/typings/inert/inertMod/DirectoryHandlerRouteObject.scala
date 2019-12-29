@@ -1,6 +1,6 @@
 package typings.inert.inertMod
 
-import typings.inert.inertNumbers.`false`
+import typings.inert.inertBooleans.`false`
 import typings.inert.inertStrings.hash
 import typings.inert.inertStrings.simple
 import typings.std.Error

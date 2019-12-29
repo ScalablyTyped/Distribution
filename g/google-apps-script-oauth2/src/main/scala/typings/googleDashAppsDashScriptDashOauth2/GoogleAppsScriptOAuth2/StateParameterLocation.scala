@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.StateParameterLocation.AUTHORIZATION_URL
-import typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.StateParameterLocation.REDIRECT_URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

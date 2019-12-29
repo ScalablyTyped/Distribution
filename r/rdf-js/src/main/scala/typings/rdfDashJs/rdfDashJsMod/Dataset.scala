@@ -1,5 +1,8 @@
 package typings.rdfDashJs.rdfDashJsMod
 
+import typings.rdfDashJs.rdfDashJsStrings.map
+import typings.rdfDashJs.rdfDashJsStrings.run
+import typings.rdfDashJs.rdfDashJsStrings.test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,19 +60,22 @@ trait Dataset[Q /* <: BaseQuad */] extends DatasetCore[Q] {
     *
     * This method is aligned with `Array.prototype.every()` in ECMAScript-262.
     */
-  def every(iteratee: QuadFilterIteratee[Q]): Boolean = js.native
+  @JSName("every")
+  def every_test(iteratee: PropType[QuadFilterIteratee[Q], test]): Boolean = js.native
   /**
     * Creates a new dataset with all the quads that pass the test implemented by the provided `iteratee`.
     *
     * This method is aligned with Array.prototype.filter() in ECMAScript-262.
     */
-  def filter(iteratee: QuadFilterIteratee[Q]): this.type = js.native
+  @JSName("filter")
+  def filter_test(iteratee: PropType[QuadFilterIteratee[Q], test]): this.type = js.native
   /**
     * Executes the provided `iteratee` once on each quad in the dataset.
     *
     * This method is aligned with `Array.prototype.forEach()` in ECMAScript-262.
     */
-  def forEach(iteratee: QuadRunIteratee[Q]): Unit = js.native
+  @JSName("forEach")
+  def forEach_run(iteratee: PropType[QuadRunIteratee[Q], run]): Unit = js.native
   /**
     * Imports all quads from the given stream into the dataset.
     *
@@ -83,7 +89,8 @@ trait Dataset[Q /* <: BaseQuad */] extends DatasetCore[Q] {
   /**
     * Returns a new dataset containing all quads returned by applying `iteratee` to each quad in the current dataset.
     */
-  def map(iteratee: QuadMapIteratee[Q]): this.type = js.native
+  @JSName("map")
+  def map_map(iteratee: PropType[QuadMapIteratee[Q], map]): this.type = js.native
   /**
     * This method calls the `iteratee` on each `quad` of the `Dataset`. The first time the `iteratee` is called, the
     * `accumulator` value is the `initialValue` or, if not given, equals to the first quad of the `Dataset`. The return
@@ -93,8 +100,10 @@ trait Dataset[Q /* <: BaseQuad */] extends DatasetCore[Q] {
     *
     * This method is aligned with `Array.prototype.reduce()` in ECMAScript-262.
     */
-  def reduce[A](iteratee: QuadReduceIteratee[A, Q]): A = js.native
-  def reduce[A](iteratee: QuadReduceIteratee[A, Q], initialValue: A): A = js.native
+  @JSName("reduce")
+  def reduce_run[A](iteratee: PropType[QuadReduceIteratee[A, Q], run]): A = js.native
+  @JSName("reduce")
+  def reduce_run[A](iteratee: PropType[QuadReduceIteratee[A, Q], run], initialValue: A): A = js.native
   /**
     * Existential quantification method, tests whether some quads in the dataset pass the test implemented by the
     * provided `iteratee`.
@@ -103,7 +112,8 @@ trait Dataset[Q /* <: BaseQuad */] extends DatasetCore[Q] {
     *
     * This method is aligned with `Array.prototype.some()` in ECMAScript-262.
     */
-  def some(iteratee: QuadFilterIteratee[Q]): Boolean = js.native
+  @JSName("some")
+  def some_test(iteratee: PropType[QuadFilterIteratee[Q], test]): Boolean = js.native
   /**
     * Returns the set of quads within the dataset as a host language native sequence, for example an `Array` in
     * ECMAScript-262.

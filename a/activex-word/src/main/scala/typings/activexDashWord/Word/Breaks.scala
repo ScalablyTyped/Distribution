@@ -11,7 +11,8 @@ class Breaks protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Breaks_typekey`: Breaks = js.native
+  @JSName("Word.Breaks_typekey")
+  var WordDotBreaks_typekey: Breaks = js.native
   def Item(Index: Double): Break = js.native
 }
 

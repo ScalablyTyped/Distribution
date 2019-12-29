@@ -1,5 +1,6 @@
 package typings.plottable.plottableMod.Components
 
+import typings.plottable.buildSrcComponentsComponentMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +21,7 @@ import scala.scalajs.js.annotation._
   */
 class Table ()
   extends typings.plottable.buildSrcComponentsMod.Table {
-  def this(rows: js.Array[
-        js.Array[js.UndefOr[typings.plottable.buildSrcComponentsComponentMod.Component | Null]]
-      ]) = this()
+  def this(rows: js.Array[js.Array[js.UndefOr[Component | Null]]]) = this()
 }
 
 /* static members */

@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendShape.Circle
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendShape.Cross
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendShape.Diamond
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendShape.Pentagon
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendShape.Rectangle
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendShape.Triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

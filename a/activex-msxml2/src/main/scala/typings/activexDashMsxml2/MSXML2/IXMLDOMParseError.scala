@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.IXMLDOMParseError")
 @js.native
 class IXMLDOMParseError protected () extends js.Object {
-  var `MSXML2.IXMLDOMParseError_typekey`: IXMLDOMParseError = js.native
+  @JSName("MSXML2.IXMLDOMParseError_typekey")
+  var MSXML2DotIXMLDOMParseError_typekey: IXMLDOMParseError = js.native
   /** the error code */
   val errorCode: Double = js.native
   /** the absolute file position in the XML document containing the error */

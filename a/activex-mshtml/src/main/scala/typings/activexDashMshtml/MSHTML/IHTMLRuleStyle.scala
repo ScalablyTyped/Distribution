@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLRuleStyle")
 @js.native
 class IHTMLRuleStyle protected () extends js.Object {
-  var `MSHTML.IHTMLRuleStyle_typekey`: IHTMLRuleStyle = js.native
+  @JSName("MSHTML.IHTMLRuleStyle_typekey")
+  var MSHTMLDotIHTMLRuleStyle_typekey: IHTMLRuleStyle = js.native
   var background: String = js.native
   var backgroundAttachment: String = js.native
   var backgroundColor: js.Any = js.native

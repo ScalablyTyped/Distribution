@@ -1,6 +1,6 @@
 package typings.qs.qsMod
 
-import typings.qs.qsNumbers.`false`
+import typings.qs.qsBooleans.`false`
 import typings.qs.qsStrings.`iso-8859-1`
 import typings.qs.qsStrings.`utf-8`
 import typings.qs.qsStrings.key

@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.First
-import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Fourth
-import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Last
-import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Second
-import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Third
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

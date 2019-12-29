@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.CalculationType.full
-import typings.officeDashJs.Excel.CalculationType.fullRebuild
-import typings.officeDashJs.Excel.CalculationType.recalculate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

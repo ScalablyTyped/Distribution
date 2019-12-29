@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "babel-core"
-version := "6.25-dt-20190212Z-b9ef91"
+version := "6.25-dt-20190212Z-946afb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel-generator" % "6.25-dt-20190212Z-89fa54",
-  "org.scalablytyped" %%% "babel-template" % "6.25-dt-20190212Z-07a039",
-  "org.scalablytyped" %%% "babel-traverse" % "6.25-dt-20190212Z-1d1164",
-  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-7d801c",
-  "org.scalablytyped" %%% "babylon" % "6.16-dt-20190212Z-18a705",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "babel-generator" % "6.25-dt-20190212Z-966bdc",
+  "org.scalablytyped" %%% "babel-template" % "6.25-dt-20190212Z-1bbf1a",
+  "org.scalablytyped" %%% "babel-traverse" % "6.25-dt-20190212Z-490217",
+  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-e4fb2c",
+  "org.scalablytyped" %%% "babylon" % "6.16-dt-20190212Z-6df318",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

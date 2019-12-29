@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.renderCanvasMod.DeclutterGroup
-import typings.ol.renderCanvasReplayGroupMod.CanvasReplayGroup
 import typings.ol.renderReplayTypeMod.ReplayType
 import typings.ol.transformMod.Transform
 import typings.std.CanvasRenderingContext2D

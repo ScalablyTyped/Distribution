@@ -6,6 +6,7 @@ import typings.googlemaps.google.maps.Data.FeatureOptions
 import typings.googlemaps.google.maps.Data.GeoJsonOptions
 import typings.googlemaps.google.maps.Data.StyleOptions
 import typings.googlemaps.google.maps.Data.StylingFunction
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ class Data_ () extends MVCObject {
   def getDrawingMode(): DrawingMode | Null = js.native
   def getFeatureById(id: String): Feature = js.native
   def getFeatureById(id: Double): Feature = js.native
-  def getMap(): Map = js.native
+  def getMap(): Map[Element] = js.native
   def getStyle(): StylingFunction | StyleOptions = js.native
   def loadGeoJson(url: String): Unit = js.native
   def loadGeoJson(url: String, options: GeoJsonOptions): Unit = js.native
@@ -45,7 +46,7 @@ class Data_ () extends MVCObject {
   def setDrawingMode(): Unit = js.native
   def setDrawingMode(drawingMode: DrawingMode): Unit = js.native
   def setMap(): Unit = js.native
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map[Element]): Unit = js.native
   def setStyle(style: StyleOptions): Unit = js.native
   def setStyle(style: StylingFunction): Unit = js.native
   def toGeoJson(callback: js.Function1[/* feature */ js.Object, Unit]): Unit = js.native

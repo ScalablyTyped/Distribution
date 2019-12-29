@@ -1,6 +1,6 @@
 package typings.libratoDashNode.libratoDashNodeMod
 
-import typings.libratoDashNode.libratoDashNodeNumbers.`false`
+import typings.libratoDashNode.libratoDashNodeBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

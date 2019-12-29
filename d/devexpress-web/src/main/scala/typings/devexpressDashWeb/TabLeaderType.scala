@@ -1,13 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.TabLeaderType.Dots
-import typings.devexpressDashWeb.TabLeaderType.EqualSign
-import typings.devexpressDashWeb.TabLeaderType.Hyphens
-import typings.devexpressDashWeb.TabLeaderType.MiddleDots
-import typings.devexpressDashWeb.TabLeaderType.None
-import typings.devexpressDashWeb.TabLeaderType.ThickLine
-import typings.devexpressDashWeb.TabLeaderType.Underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

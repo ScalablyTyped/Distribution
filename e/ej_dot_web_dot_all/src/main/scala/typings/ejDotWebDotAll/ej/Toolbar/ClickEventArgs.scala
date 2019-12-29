@@ -13,7 +13,7 @@ trait ClickEventArgs extends js.Object {
   var currentTarget: js.UndefOr[js.Any] = js.undefined
   /** returns the Toolbar model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Toolbar.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** return the Toolbar state
     */
   var status: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +30,7 @@ object ClickEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     currentTarget: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Toolbar.Model = null,
+    model: Model = null,
     status: js.UndefOr[Boolean] = js.undefined,
     target: js.Any = null,
     `type`: String = null

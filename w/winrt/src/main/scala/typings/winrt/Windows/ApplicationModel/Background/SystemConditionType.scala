@@ -1,13 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Background.SystemConditionType.internetAvailable
-import typings.winrt.Windows.ApplicationModel.Background.SystemConditionType.internetNotAvailable
-import typings.winrt.Windows.ApplicationModel.Background.SystemConditionType.invalid
-import typings.winrt.Windows.ApplicationModel.Background.SystemConditionType.sessionConnected
-import typings.winrt.Windows.ApplicationModel.Background.SystemConditionType.sessionDisconnected
-import typings.winrt.Windows.ApplicationModel.Background.SystemConditionType.userNotPresent
-import typings.winrt.Windows.ApplicationModel.Background.SystemConditionType.userPresent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

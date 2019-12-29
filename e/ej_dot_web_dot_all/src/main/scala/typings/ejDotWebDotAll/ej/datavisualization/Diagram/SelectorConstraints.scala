@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SelectorConstraints.All
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SelectorConstraints.AutoHideThumbs
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SelectorConstraints.DragOnEmptySpace
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SelectorConstraints.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SelectorConstraints.Resizer
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SelectorConstraints.UserHandles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,10 +61,7 @@ object SelectorConstraints extends js.Object {
   object Resizer extends TopLevel[Resizer with Double]
   
   /* 1 */ @js.native
-  object Rotator
-    extends TopLevel[
-          typings.ejDotWebDotAll.ej.datavisualization.Diagram.SelectorConstraints.Rotator with Double
-        ]
+  object Rotator extends TopLevel[Rotator with Double]
   
   /* 4 */ @js.native
   object Tooltip

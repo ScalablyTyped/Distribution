@@ -11,7 +11,8 @@ class StoryRanges protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.StoryRanges_typekey`: StoryRanges = js.native
+  @JSName("Word.StoryRanges_typekey")
+  var WordDotStoryRanges_typekey: StoryRanges = js.native
   def Item(Index: WdStoryType): Range = js.native
 }
 

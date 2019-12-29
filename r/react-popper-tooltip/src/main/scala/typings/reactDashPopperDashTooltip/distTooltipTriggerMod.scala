@@ -1,7 +1,6 @@
 package typings.reactDashPopperDashTooltip
 
 import typings.react.reactMod.Component
-import typings.reactDashPopperDashTooltip.distTooltipTriggerMod.TooltipTrigger
 import typings.reactDashPopperDashTooltip.distTypesMod.TooltipTriggerProps
 import typings.reactDashPopperDashTooltip.distTypesMod.TooltipTriggerState
 import scala.scalajs.js

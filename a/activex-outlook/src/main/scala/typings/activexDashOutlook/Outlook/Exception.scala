@@ -14,7 +14,8 @@ class Exception protected () extends js.Object {
   val Deleted: Boolean = js.native
   val ItemProperties: typings.activexDashOutlook.Outlook.ItemProperties = js.native
   val OriginalDate: VarDate = js.native
-  var `Outlook.Exception_typekey`: Exception = js.native
+  @JSName("Outlook.Exception_typekey")
+  var OutlookDotException_typekey: Exception = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

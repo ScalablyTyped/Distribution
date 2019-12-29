@@ -4,10 +4,10 @@ import typings.echarts.Anon_ColorIcon
 import typings.echarts.Anon_ColorOpacity
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Pointer
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.PointerLabel
-import typings.echarts.echartsStrings.`mousemove|click`
 import typings.echarts.echartsStrings.click
 import typings.echarts.echartsStrings.line
 import typings.echarts.echartsStrings.mousemove
+import typings.echarts.echartsStrings.mousemoveVerticallineclick
 import typings.echarts.echartsStrings.none
 import typings.echarts.echartsStrings.shadow
 import scala.scalajs.js
@@ -70,7 +70,7 @@ trait AxisPointer extends Pointer {
     *
     * @default 'mousemove|click'
     */
-  var triggerOn: js.UndefOr[mousemove | click | `mousemove|click` | none] = js.undefined
+  var triggerOn: js.UndefOr[mousemove | click | mousemoveVerticallineclick | none] = js.undefined
 }
 
 object AxisPointer {
@@ -85,7 +85,7 @@ object AxisPointer {
     show: js.UndefOr[Boolean] = js.undefined,
     snap: js.UndefOr[Boolean] = js.undefined,
     status: js.UndefOr[Boolean] = js.undefined,
-    triggerOn: mousemove | click | `mousemove|click` | none = null,
+    triggerOn: mousemove | click | mousemoveVerticallineclick | none = null,
     triggerTooltip: js.UndefOr[Boolean] = js.undefined,
     `type`: line | shadow | none = null,
     value: Int | Double = null,

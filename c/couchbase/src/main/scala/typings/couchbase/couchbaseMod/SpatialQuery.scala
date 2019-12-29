@@ -2,9 +2,6 @@ package typings.couchbase.couchbaseMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.couchbase.couchbaseMod.SpatialQuery.Update
-import typings.couchbase.couchbaseMod.SpatialQuery.Update.AFTER
-import typings.couchbase.couchbaseMod.SpatialQuery.Update.BEFORE
-import typings.couchbase.couchbaseMod.SpatialQuery.Update.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

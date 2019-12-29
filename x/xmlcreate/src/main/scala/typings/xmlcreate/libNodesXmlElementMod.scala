@@ -1,6 +1,5 @@
 package typings.xmlcreate
 
-import typings.xmlcreate.libNodesXmlElementMod.XmlElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

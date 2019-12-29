@@ -3,7 +3,6 @@ package typings.wonderDashFrp
 import typings.wonderDashFrp.distEs2015CoreEntityMod.Entity
 import typings.wonderDashFrp.distEs2015CoreObserverMod.Observer
 import typings.wonderDashFrp.distEs2015CoreSchedulerMod.Scheduler
-import typings.wonderDashFrp.distEs2015CoreStreamMod.Stream
 import typings.wonderDashFrp.distEs2015DisposableIDisposableMod.IDisposable
 import typings.wonderDashFrp.distEs2015ObserverIObserverMod.IObserver
 import typings.wonderDashFrp.distEs2015SubjectSubjectMod.Subject

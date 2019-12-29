@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingProtectionLevel.default
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingProtectionLevel.encryption
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingProtectionLevel.encryptionAndAuthentication
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingProtectionLevel.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.rbacDotauthorizationDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait RoleBinding extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+  val apiVersion: rbacDotauthorizationDotk8sDotioSlashv1alpha1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -46,7 +46,7 @@ trait RoleBinding extends js.Object {
 object RoleBinding {
   @scala.inline
   def apply(
-    apiVersion: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1`,
+    apiVersion: rbacDotauthorizationDotk8sDotioSlashv1alpha1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.RoleBinding,
     metadata: ObjectMeta,
     roleRef: RoleRef,

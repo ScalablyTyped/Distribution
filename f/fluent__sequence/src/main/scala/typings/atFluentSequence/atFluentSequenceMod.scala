@@ -1,8 +1,6 @@
 package typings.atFluentSequence
 
 import typings.atFluentBundle.atFluentBundleMod.FluentBundle
-import typings.atFluentSequence.atFluentSequenceMod.MapBundleAsync
-import typings.atFluentSequence.atFluentSequenceMod.MapBundleSync
 import typings.std.AsyncIterable
 import typings.std.Iterable
 import scala.scalajs.js

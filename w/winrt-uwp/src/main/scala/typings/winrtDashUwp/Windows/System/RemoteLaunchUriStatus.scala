@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.appUnavailable
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.deniedByLocalSystem
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.deniedByRemoteSystem
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.protocolUnavailable
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.remoteSystemUnavailable
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.success
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.unknown
-import typings.winrtDashUwp.Windows.System.RemoteLaunchUriStatus.valueSetTooLarge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

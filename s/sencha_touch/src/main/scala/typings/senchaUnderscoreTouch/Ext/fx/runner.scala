@@ -1,7 +1,6 @@
 package typings.senchaUnderscoreTouch.Ext.fx
 
 import typings.senchaUnderscoreTouch.Ext.IEvented
-import typings.senchaUnderscoreTouch.Ext.fx.runner.ICss
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

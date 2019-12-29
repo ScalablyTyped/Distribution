@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__react-hooks
 
-Typings are for version 3.1
+Typings are for version 3.2
 
 ## Library description:
 Simple and complete React hooks testing utilities that encourage good testing practices.

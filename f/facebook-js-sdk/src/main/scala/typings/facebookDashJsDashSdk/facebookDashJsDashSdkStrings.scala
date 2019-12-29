@@ -41,16 +41,16 @@ object facebookDashJsDashSdkStrings {
   sealed trait async extends js.Object
   
   @js.native
-  sealed trait authDOTauthResponseChange extends FacebookEventType
+  sealed trait authDotauthResponseChange extends FacebookEventType
   
   @js.native
-  sealed trait authDOTlogin extends FacebookEventType
+  sealed trait authDotlogin extends FacebookEventType
   
   @js.native
-  sealed trait authDOTlogout extends FacebookEventType
+  sealed trait authDotlogout extends FacebookEventType
   
   @js.native
-  sealed trait authDOTstatusChange extends FacebookEventType
+  sealed trait authDotstatusChange extends FacebookEventType
   
   @js.native
   sealed trait authorization_expired extends LoginStatus
@@ -143,7 +143,7 @@ object facebookDashJsDashSdkStrings {
   sealed trait unknown extends LoginStatus
   
   @js.native
-  sealed trait xfbmlDOTrender extends FacebookEventType
+  sealed trait xfbmlDotrender extends FacebookEventType
   
   @scala.inline
   def APP_INSTALLS: APP_INSTALLS = "APP_INSTALLS".asInstanceOf[APP_INSTALLS]
@@ -168,13 +168,13 @@ object facebookDashJsDashSdkStrings {
   @scala.inline
   def async: async = "async".asInstanceOf[async]
   @scala.inline
-  def authDOTauthResponseChange: authDOTauthResponseChange = "auth.authResponseChange".asInstanceOf[authDOTauthResponseChange]
+  def authDotauthResponseChange: authDotauthResponseChange = "auth.authResponseChange".asInstanceOf[authDotauthResponseChange]
   @scala.inline
-  def authDOTlogin: authDOTlogin = "auth.login".asInstanceOf[authDOTlogin]
+  def authDotlogin: authDotlogin = "auth.login".asInstanceOf[authDotlogin]
   @scala.inline
-  def authDOTlogout: authDOTlogout = "auth.logout".asInstanceOf[authDOTlogout]
+  def authDotlogout: authDotlogout = "auth.logout".asInstanceOf[authDotlogout]
   @scala.inline
-  def authDOTstatusChange: authDOTstatusChange = "auth.statusChange".asInstanceOf[authDOTstatusChange]
+  def authDotstatusChange: authDotstatusChange = "auth.statusChange".asInstanceOf[authDotstatusChange]
   @scala.inline
   def authorization_expired: authorization_expired = "authorization_expired".asInstanceOf[authorization_expired]
   @scala.inline
@@ -236,6 +236,6 @@ object facebookDashJsDashSdkStrings {
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline
-  def xfbmlDOTrender: xfbmlDOTrender = "xfbml.render".asInstanceOf[xfbmlDOTrender]
+  def xfbmlDotrender: xfbmlDotrender = "xfbml.render".asInstanceOf[xfbmlDotrender]
 }
 

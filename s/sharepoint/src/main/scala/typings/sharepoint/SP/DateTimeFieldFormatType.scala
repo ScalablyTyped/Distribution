@@ -1,8 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.DateTimeFieldFormatType.dateOnly
-import typings.sharepoint.SP.DateTimeFieldFormatType.dateTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

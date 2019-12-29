@@ -1,6 +1,6 @@
 package typings.marko
 
-import typings.marko.markoNumbers.`true`
+import typings.marko.markoBooleans.`true`
 import typings.marko.srcCompilerConfigMod.Config
 import typings.marko.srcCompilerTaglibDashLoaderTagMod.^
 import typings.marko.srcCompilerTaglibDashLoaderTaglibMod.default

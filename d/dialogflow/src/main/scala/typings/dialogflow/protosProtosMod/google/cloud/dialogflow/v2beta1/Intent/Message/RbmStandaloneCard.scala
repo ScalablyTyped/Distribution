@@ -3,13 +3,7 @@ package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Inten
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.CARD_ORIENTATION_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.HORIZONTAL
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.VERTICAL
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.LEFT
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.RIGHT
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

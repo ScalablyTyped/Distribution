@@ -13,7 +13,8 @@ class SpellingOptions protected () extends js.Object {
   var ArabicStrictTaaMarboota: Boolean = js.native
   var BrazilReform: XlPortugueseReform = js.native
   var DictLang: Double = js.native
-  var `Excel.SpellingOptions_typekey`: SpellingOptions = js.native
+  @JSName("Excel.SpellingOptions_typekey")
+  var ExcelDotSpellingOptions_typekey: SpellingOptions = js.native
   var GermanPostReform: Boolean = js.native
   var HebrewModes: XlHebrewModes = js.native
   var IgnoreCaps: Boolean = js.native

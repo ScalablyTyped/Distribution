@@ -1,5 +1,6 @@
 package typings.dojo.dojo._base.kernel
 
+import typings.dojo.dojo._base.NodeList
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,8 +48,8 @@ trait html extends js.Object {
     * @param cont the content to be set on the parent element.This can be an html string, a node reference or a NodeList, dojo/NodeList, Array or other enumerable list of nodes
     * @param params               OptionalOptional flags/properties to configure the content-setting. See dojo/html/_ContentSetter
     */
-  def set(node: HTMLElement, cont: typings.dojo.dojo._base.NodeList): js.Any = js.native
-  def set(node: HTMLElement, cont: typings.dojo.dojo._base.NodeList, params: js.Object): js.Any = js.native
+  def set(node: HTMLElement, cont: NodeList): js.Any = js.native
+  def set(node: HTMLElement, cont: NodeList, params: js.Object): js.Any = js.native
   /**
     * inserts (replaces) the given content into the given node. dojo/dom-construct.place(cont, node, "only")
     * may be a better choice for simple HTML insertion.

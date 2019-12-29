@@ -3,7 +3,7 @@ package typings.ionic
 import typings.atIonicCliDashFramework.libConfigMod.BaseConfigOptions
 import typings.ionic.definitionsMod.CommandMetadataOption
 import typings.ionic.definitionsMod.IConfig
-import typings.ionic.ionicStrings.configDOTjson
+import typings.ionic.ionicStrings.configDotjson
 import typings.minimist.minimistMod.ParsedArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object libConfigMod extends js.Object {
     def this(p: String, options: BaseConfigOptions) = this()
   }
   
-  val CONFIG_FILE: configDOTjson = js.native
+  val CONFIG_FILE: configDotjson = js.native
   val DEFAULT_CONFIG_DIRECTORY: String = js.native
   val GLOBAL_OPTIONS: js.Array[CommandMetadataOption] = js.native
   def parseGlobalOptions(pargv: js.Array[String]): ParsedArgs = js.native

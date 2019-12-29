@@ -1,11 +1,6 @@
 package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.SymbolPath.BACKWARD_CLOSED_ARROW
-import typings.navermaps.naver.maps.SymbolPath.BACKWARD_OPEN_ARROW
-import typings.navermaps.naver.maps.SymbolPath.CIRCLE
-import typings.navermaps.naver.maps.SymbolPath.FORWARD_CLOSED_ARROW
-import typings.navermaps.naver.maps.SymbolPath.FORWARD_OPEN_ARROW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

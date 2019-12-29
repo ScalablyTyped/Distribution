@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLIFrame")
 @js.native
 class HTMLIFrame protected () extends js.Object {
-  var `MSHTML.HTMLIFrame_typekey`: HTMLIFrame = js.native
+  @JSName("MSHTML.HTMLIFrame_typekey")
+  var MSHTMLDotHTMLIFrame_typekey: HTMLIFrame = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

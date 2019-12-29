@@ -20,7 +20,7 @@ trait IInput extends IComponent {
   var checked: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
   @JSName("cls")
-  var cls_IInput: js.UndefOr[java.lang.String] = js.undefined
+  var cls_IInput: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var fastFocus: js.UndefOr[Boolean] = js.undefined
   /** [Method] Attempts to set the field as the active input focus
@@ -28,7 +28,7 @@ trait IInput extends IComponent {
   		*/
   var focus: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
-  var focusCls: js.UndefOr[java.lang.String] = js.undefined
+  var focusCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of autoCapitalize
   		* @returns Boolean
   		*/
@@ -49,7 +49,7 @@ trait IInput extends IComponent {
   		* @returns String
   		*/
   @JSName("getCls")
-  var getCls_IInput: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCls_IInput: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of fastFocus
   		* @returns Boolean
   		*/
@@ -57,7 +57,7 @@ trait IInput extends IComponent {
   /** [Method] Returns the value of focusCls
   		* @returns String
   		*/
-  var getFocusCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFocusCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of maxLength
   		* @returns Number
   		*/
@@ -77,15 +77,15 @@ trait IInput extends IComponent {
   /** [Method] Returns the value of name
   		* @returns String
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of pattern
   		* @returns String
   		*/
-  var getPattern: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPattern: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of placeHolder
   		* @returns String
   		*/
-  var getPlaceHolder: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPlaceHolder: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of readOnly
   		* @returns Boolean
   		*/
@@ -105,7 +105,7 @@ trait IInput extends IComponent {
   /** [Method] Returns the value of type
   		* @returns String
   		*/
-  var getType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the field data value
   		* @returns Mixed value The field value.
   		*/
@@ -125,11 +125,11 @@ trait IInput extends IComponent {
   /** [Config Option] (Number) */
   var minValue: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var pattern: js.UndefOr[java.lang.String] = js.undefined
+  var pattern: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var placeHolder: js.UndefOr[java.lang.String] = js.undefined
+  var placeHolder: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   /** [Method] Resets the current field value to the original value  */
@@ -154,7 +154,7 @@ trait IInput extends IComponent {
   		* @param cls String The new value.
   		*/
   @JSName("setCls")
-  var setCls_IInput: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCls_IInput: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of fastFocus
   		* @param fastFocus Boolean The new value.
   		*/
@@ -162,7 +162,7 @@ trait IInput extends IComponent {
   /** [Method] Sets the value of focusCls
   		* @param focusCls String The new value.
   		*/
-  var setFocusCls: js.UndefOr[js.Function1[/* focusCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFocusCls: js.UndefOr[js.Function1[/* focusCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of maxLength
   		* @param maxLength Number The new value.
   		*/
@@ -182,15 +182,15 @@ trait IInput extends IComponent {
   /** [Method] Sets the value of name
   		* @param name String The new value.
   		*/
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pattern
   		* @param pattern String The new value.
   		*/
-  var setPattern: js.UndefOr[js.Function1[/* pattern */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPattern: js.UndefOr[js.Function1[/* pattern */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of placeHolder
   		* @param placeHolder String The new value.
   		*/
-  var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of readOnly
   		* @param readOnly Boolean The new value.
   		*/
@@ -210,7 +210,7 @@ trait IInput extends IComponent {
   /** [Method] Sets the value of type
   		* @param type String The new value.
   		*/
-  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Mixed) */
   var startValue: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number) */
@@ -218,7 +218,7 @@ trait IInput extends IComponent {
   /** [Config Option] (Number) */
   var tabIndex: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   /** [Method] Updates the cls configuration
   		* @param newCls Object
   		* @param oldCls Object
@@ -243,29 +243,29 @@ object IInput {
     autoCorrect: js.UndefOr[Boolean] = js.undefined,
     blur: () => IInput = null,
     checked: js.UndefOr[Boolean] = js.undefined,
-    cls: java.lang.String = null,
+    cls: String = null,
     fastFocus: js.UndefOr[Boolean] = js.undefined,
     focus: () => IInput = null,
-    focusCls: java.lang.String = null,
+    focusCls: String = null,
     getAutoCapitalize: () => Boolean = null,
     getAutoComplete: () => Boolean = null,
     getAutoCorrect: () => Boolean = null,
     getChecked: () => _ = null,
-    getCls: () => java.lang.String = null,
+    getCls: () => String = null,
     getFastFocus: () => Boolean = null,
-    getFocusCls: () => java.lang.String = null,
+    getFocusCls: () => String = null,
     getMaxLength: () => Double = null,
     getMaxRows: () => Double = null,
     getMaxValue: () => Double = null,
     getMinValue: () => Double = null,
-    getName: () => java.lang.String = null,
-    getPattern: () => java.lang.String = null,
-    getPlaceHolder: () => java.lang.String = null,
+    getName: () => String = null,
+    getPattern: () => String = null,
+    getPlaceHolder: () => String = null,
     getReadOnly: () => Boolean = null,
     getStartValue: () => _ = null,
     getStepValue: () => Double = null,
     getTabIndex: () => Double = null,
-    getType: () => java.lang.String = null,
+    getType: () => String = null,
     getValue: () => _ = null,
     isDirty: () => Boolean = null,
     isFocused: js.UndefOr[Boolean] = js.undefined,
@@ -273,34 +273,34 @@ object IInput {
     maxRows: Int | Double = null,
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
-    name: java.lang.String = null,
-    pattern: java.lang.String = null,
-    placeHolder: java.lang.String = null,
+    name: String = null,
+    pattern: String = null,
+    placeHolder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     reset: () => Unit = null,
     select: () => IInput = null,
     setAutoCapitalize: /* autoCapitalize */ js.UndefOr[Boolean] => Unit = null,
     setAutoComplete: /* autoComplete */ js.UndefOr[Boolean] => Unit = null,
     setAutoCorrect: /* autoCorrect */ js.UndefOr[Boolean] => Unit = null,
-    setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
+    setCls: /* cls */ js.UndefOr[String] => Unit = null,
     setFastFocus: /* fastFocus */ js.UndefOr[Boolean] => Unit = null,
-    setFocusCls: /* focusCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setFocusCls: /* focusCls */ js.UndefOr[String] => Unit = null,
     setMaxLength: /* maxLength */ js.UndefOr[Double] => Unit = null,
     setMaxRows: /* maxRows */ js.UndefOr[Double] => Unit = null,
     setMaxValue: /* maxValue */ js.UndefOr[Double] => Unit = null,
     setMinValue: /* minValue */ js.UndefOr[Double] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
-    setPattern: /* pattern */ js.UndefOr[java.lang.String] => Unit = null,
-    setPlaceHolder: /* placeHolder */ js.UndefOr[java.lang.String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
+    setPattern: /* pattern */ js.UndefOr[String] => Unit = null,
+    setPlaceHolder: /* placeHolder */ js.UndefOr[String] => Unit = null,
     setReadOnly: /* readOnly */ js.UndefOr[Boolean] => Unit = null,
     setStartValue: /* startValue */ js.UndefOr[js.Any] => Unit = null,
     setStepValue: /* stepValue */ js.UndefOr[Double] => Unit = null,
     setTabIndex: /* tabIndex */ js.UndefOr[Double] => Unit = null,
-    setType: /* type */ js.UndefOr[java.lang.String] => Unit = null,
+    setType: /* type */ js.UndefOr[String] => Unit = null,
     startValue: js.Any = null,
     stepValue: Int | Double = null,
     tabIndex: Int | Double = null,
-    `type`: java.lang.String = null,
+    `type`: String = null,
     updateCls: (/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any]) => Unit = null,
     updateUseMask: /* newUseMask */ js.UndefOr[js.Any] => Unit = null,
     value: js.Any = null

@@ -17,7 +17,7 @@ trait ILimitedCache extends IBase {
   		* @param args Mixed... Arguments appended to feeder.
   		* @returns Object
   		*/
-  var get: js.UndefOr[js.Function2[/* id */ java.lang.String, /* repeated */ js.Any, _]] = js.undefined
+  var get: js.UndefOr[js.Function2[/* id */ String, /* repeated */ js.Any, _]] = js.undefined
   /** [Method] Returns the value of feeder
   		* @returns Function
   		*/
@@ -60,11 +60,11 @@ object ILimitedCache {
     clear: () => Unit = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     feeder: js.Any = null,
-    get: (/* id */ java.lang.String, /* repeated */ js.Any) => _ = null,
+    get: (/* id */ String, /* repeated */ js.Any) => _ = null,
     getFeeder: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLimit: () => Double = null,
     getScope: () => _ = null,
     inheritableStatics: js.Any = null,

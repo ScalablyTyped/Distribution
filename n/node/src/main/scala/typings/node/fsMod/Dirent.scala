@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fs", "Dirent")
 @js.native
 class Dirent () extends js.Object {
-  var name: java.lang.String = js.native
+  var name: String = js.native
   def isBlockDevice(): Boolean = js.native
   def isCharacterDevice(): Boolean = js.native
   def isDirectory(): Boolean = js.native

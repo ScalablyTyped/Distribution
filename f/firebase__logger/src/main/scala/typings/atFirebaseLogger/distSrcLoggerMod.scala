@@ -1,15 +1,6 @@
 package typings.atFirebaseLogger
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseLogger.distSrcLoggerMod.LogHandler
-import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel
-import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.DEBUG
-import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.ERROR
-import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.INFO
-import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.SILENT
-import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.VERBOSE
-import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.WARN
-import typings.atFirebaseLogger.distSrcLoggerMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,9 +28,6 @@ object distSrcLoggerMod extends js.Object {
       * The log level of the given Logger instance.
       */
     var _logLevel: js.Any = js.native
-    @JSName("logHandler")
-    var logHandler_Original: LogHandler = js.native
-    var logLevel: LogLevel = js.native
     var name: String = js.native
     /**
       * The functions below are all based on the `console` interface
@@ -48,7 +36,10 @@ object distSrcLoggerMod extends js.Object {
     def error(args: js.Any*): Unit = js.native
     def info(args: js.Any*): Unit = js.native
     def log(args: js.Any*): Unit = js.native
-    def logHandler(loggerInstance: Logger, logType: LogLevel, args: js.Any*): Unit = js.native
+    def logHandler(): LogHandler = js.native
+    def logHandler(`val`: LogHandler): js.Any = js.native
+    def logLevel(): LogLevel = js.native
+    def logLevel(`val`: LogLevel): js.Any = js.native
     def warn(args: js.Any*): Unit = js.native
   }
   

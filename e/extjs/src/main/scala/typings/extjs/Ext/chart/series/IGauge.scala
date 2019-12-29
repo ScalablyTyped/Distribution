@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait IGauge extends ISeries {
   /** [Config Option] (String) */
-  var angleField: js.UndefOr[java.lang.String] = js.undefined
+  var angleField: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean/Number) */
   var donut: js.UndefOr[js.Any] = js.undefined
   /** [Method] Draws the series for the current chart  */
@@ -35,7 +35,7 @@ object IGauge {
     addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    angleField: java.lang.String = null,
+    angleField: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -46,14 +46,14 @@ object IGauge {
     drawSeries: () => Unit = null,
     eachRecord: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemForPoint: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => _ = null,
     getLegendColor: /* index */ js.UndefOr[js.Any] => Unit = null,
     getRecordCount: () => Unit = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hideAll: () => Unit = null,
     highlight: js.Any = null,
@@ -71,17 +71,17 @@ object IGauge {
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     needle: js.UndefOr[Boolean] = js.undefined,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    onCreateLabel: (js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[java.lang.String]) => ISprite = null,
-    onPlaceLabel: (js.UndefOr[ISprite], js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[java.lang.String], js.UndefOr[Boolean], js.UndefOr[Double]) => Unit = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    onCreateLabel: (js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String]) => ISprite = null,
+    onPlaceLabel: (js.UndefOr[ISprite], js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Double]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: js.Any = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     self: IClass = null,
-    setTitle: (/* index */ js.UndefOr[Double], /* title */ js.UndefOr[java.lang.String]) => Unit = null,
+    setTitle: (/* index */ js.UndefOr[Double], /* title */ js.UndefOr[String]) => Unit = null,
     setValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     shadowAttributes: Array = null,
     showAll: () => Unit = null,
@@ -92,9 +92,9 @@ object IGauge {
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     tips: js.Any = null,
-    title: java.lang.String = null,
-    `type`: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    title: String = null,
+    `type`: String = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     unHighlightItem: () => Unit = null,
     uses: Array = null
   ): IGauge = {

@@ -1,6 +1,6 @@
 package typings.i18next
 
-import typings.i18next.i18nextNumbers.`false`
+import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.altKey
 import typings.i18next.i18nextStrings.ctrlKey
 import typings.i18next.i18nextStrings.iframe

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait BatchUpdateSpreadsheetResponse extends js.Object {
   var replies: js.UndefOr[js.Array[Response]] = js.undefined
   var spreadsheetId: js.UndefOr[String] = js.undefined
-  var updatedSpreadsheet: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Sheets.Schema.Spreadsheet] = js.undefined
+  var updatedSpreadsheet: js.UndefOr[Spreadsheet] = js.undefined
 }
 
 object BatchUpdateSpreadsheetResponse {
@@ -15,7 +15,7 @@ object BatchUpdateSpreadsheetResponse {
   def apply(
     replies: js.Array[Response] = null,
     spreadsheetId: String = null,
-    updatedSpreadsheet: typings.googleDashAppsDashScript.GoogleAppsScript.Sheets.Schema.Spreadsheet = null
+    updatedSpreadsheet: Spreadsheet = null
   ): BatchUpdateSpreadsheetResponse = {
     val __obj = js.Dynamic.literal()
     if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])

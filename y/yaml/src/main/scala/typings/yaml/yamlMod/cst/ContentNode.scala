@@ -32,6 +32,70 @@ trait ContentNode extends js.Object
 
 object ContentNode {
   @scala.inline
+  def Seq(
+    hasComment: Boolean,
+    hasProps: Boolean,
+    items: js.Array[BlankLine | Comment | SeqItem],
+    jsonLike: Boolean,
+    props: js.Array[Range],
+    `type`: SEQ,
+    valueRangeContainsNewline: Boolean,
+    anchor: String = null,
+    comment: String = null,
+    context: ParseContext = null,
+    error: YAMLSyntaxError = null,
+    range: Range = null,
+    rawValue: String = null,
+    tag: Anon_Verbatim | Anon_Handle = null,
+    value: String = null,
+    valueRange: Range = null
+  ): ContentNode = {
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContentNode]
+  }
+  @scala.inline
+  def Map(
+    hasComment: Boolean,
+    hasProps: Boolean,
+    items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem],
+    jsonLike: Boolean,
+    props: js.Array[Range],
+    `type`: MAP,
+    valueRangeContainsNewline: Boolean,
+    anchor: String = null,
+    comment: String = null,
+    context: ParseContext = null,
+    error: YAMLSyntaxError = null,
+    range: Range = null,
+    rawValue: String = null,
+    tag: Anon_Verbatim | Anon_Handle = null,
+    value: String = null,
+    valueRange: Range = null
+  ): ContentNode = {
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContentNode]
+  }
+  @scala.inline
   def Alias(
     hasComment: Boolean,
     hasProps: Boolean,
@@ -99,6 +163,40 @@ object ContentNode {
     __obj.asInstanceOf[ContentNode]
   }
   @scala.inline
+  def FlowCollection(
+    hasComment: Boolean,
+    hasProps: Boolean,
+    items: js.Array[
+      FlowChar | BlankLine | Comment | Alias | Scalar | typings.yaml.yamlMod.cst.FlowCollection
+    ],
+    jsonLike: Boolean,
+    props: js.Array[Range],
+    `type`: FLOW_MAP | FLOW_SEQ,
+    valueRangeContainsNewline: Boolean,
+    anchor: String = null,
+    comment: String = null,
+    context: ParseContext = null,
+    error: YAMLSyntaxError = null,
+    range: Range = null,
+    rawValue: String = null,
+    tag: Anon_Verbatim | Anon_Handle = null,
+    value: String = null,
+    valueRange: Range = null
+  ): ContentNode = {
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContentNode]
+  }
+  @scala.inline
   def PlainValue(
     hasComment: Boolean,
     hasProps: Boolean,
@@ -159,104 +257,6 @@ object ContentNode {
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
     if (strValue != null) __obj.updateDynamic("strValue")(strValue.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ContentNode]
-  }
-  @scala.inline
-  def Map(
-    hasComment: Boolean,
-    hasProps: Boolean,
-    items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem],
-    jsonLike: Boolean,
-    props: js.Array[Range],
-    `type`: MAP,
-    valueRangeContainsNewline: Boolean,
-    anchor: String = null,
-    comment: String = null,
-    context: ParseContext = null,
-    error: YAMLSyntaxError = null,
-    range: Range = null,
-    rawValue: String = null,
-    tag: Anon_Verbatim | Anon_Handle = null,
-    value: String = null,
-    valueRange: Range = null
-  ): ContentNode = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ContentNode]
-  }
-  @scala.inline
-  def FlowCollection(
-    hasComment: Boolean,
-    hasProps: Boolean,
-    items: js.Array[
-      FlowChar | BlankLine | Comment | Alias | Scalar | typings.yaml.yamlMod.cst.FlowCollection
-    ],
-    jsonLike: Boolean,
-    props: js.Array[Range],
-    `type`: FLOW_MAP | FLOW_SEQ,
-    valueRangeContainsNewline: Boolean,
-    anchor: String = null,
-    comment: String = null,
-    context: ParseContext = null,
-    error: YAMLSyntaxError = null,
-    range: Range = null,
-    rawValue: String = null,
-    tag: Anon_Verbatim | Anon_Handle = null,
-    value: String = null,
-    valueRange: Range = null
-  ): ContentNode = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ContentNode]
-  }
-  @scala.inline
-  def Seq(
-    hasComment: Boolean,
-    hasProps: Boolean,
-    items: js.Array[BlankLine | Comment | SeqItem],
-    jsonLike: Boolean,
-    props: js.Array[Range],
-    `type`: SEQ,
-    valueRangeContainsNewline: Boolean,
-    anchor: String = null,
-    comment: String = null,
-    context: ParseContext = null,
-    error: YAMLSyntaxError = null,
-    range: Range = null,
-    rawValue: String = null,
-    tag: Anon_Verbatim | Anon_Handle = null,
-    value: String = null,
-    valueRange: Range = null
-  ): ContentNode = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])

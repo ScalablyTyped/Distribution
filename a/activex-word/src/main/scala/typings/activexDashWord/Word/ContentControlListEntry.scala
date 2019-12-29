@@ -13,7 +13,8 @@ class ContentControlListEntry protected () extends js.Object {
   val Parent: js.Any = js.native
   var Text: String = js.native
   var Value: String = js.native
-  var `Word.ContentControlListEntry_typekey`: ContentControlListEntry = js.native
+  @JSName("Word.ContentControlListEntry_typekey")
+  var WordDotContentControlListEntry_typekey: ContentControlListEntry = js.native
   def Delete(): Unit = js.native
   def MoveDown(): Unit = js.native
   def MoveUp(): Unit = js.native

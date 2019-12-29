@@ -1,24 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BOOL
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BYTES
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_DOUBLE
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_ENUM
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED32
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED64
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FLOAT
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_GROUP
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT32
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT64
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_MESSAGE
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED32
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED64
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT32
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT64
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_STRING
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT32
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

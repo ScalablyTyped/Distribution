@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.EnvironmentState
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Event
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

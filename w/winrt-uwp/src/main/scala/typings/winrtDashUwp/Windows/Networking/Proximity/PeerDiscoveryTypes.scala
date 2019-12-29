@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerDiscoveryTypes.browse
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerDiscoveryTypes.none
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerDiscoveryTypes.triggered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

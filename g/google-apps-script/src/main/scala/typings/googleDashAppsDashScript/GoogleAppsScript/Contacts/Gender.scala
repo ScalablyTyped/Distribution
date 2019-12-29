@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Gender.FEMALE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Gender.MALE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

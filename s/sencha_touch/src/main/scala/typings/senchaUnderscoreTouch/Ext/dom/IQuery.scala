@@ -15,7 +15,7 @@ trait IQuery extends IBase {
   		* @returns Boolean
   		*/
   var is: js.UndefOr[
-    js.Function2[/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String], Boolean]
+    js.Function2[/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[String], Boolean]
   ] = js.undefined
   /** [Method] Selects a group of elements
   		* @param selector String The selector/xpath query (can be a comma separated list of selectors)
@@ -23,7 +23,7 @@ trait IQuery extends IBase {
   		* @returns HTMLElement[] An Array of DOM elements which match the selector. If there are no matches, and empty Array is returned.
   		*/
   var select: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[js.Any], Array]
+    js.Function2[/* selector */ js.UndefOr[String], /* root */ js.UndefOr[js.Any], Array]
   ] = js.undefined
   /** [Method] Selects a single element
   		* @param selector String The selector/xpath query
@@ -31,11 +31,7 @@ trait IQuery extends IBase {
   		* @returns HTMLElement The DOM element which matched the selector.
   		*/
   var selectNode: js.UndefOr[
-    js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* root */ js.UndefOr[js.Any], 
-      HTMLElement
-    ]
+    js.Function2[/* selector */ js.UndefOr[String], /* root */ js.UndefOr[js.Any], HTMLElement]
   ] = js.undefined
 }
 
@@ -49,15 +45,15 @@ object IQuery {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    is: (/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean = null,
+    is: (/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[String]) => Boolean = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    select: (/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[js.Any]) => Array = null,
-    selectNode: (/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[js.Any]) => HTMLElement = null,
+    select: (/* selector */ js.UndefOr[String], /* root */ js.UndefOr[js.Any]) => Array = null,
+    selectNode: (/* selector */ js.UndefOr[String], /* root */ js.UndefOr[js.Any]) => HTMLElement = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,

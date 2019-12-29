@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object atNteractTransformDashVdomStrings {
   @js.native
-  sealed trait `application/vdomDOTv1+json` extends js.Object
+  sealed trait applicationSlashvdomDotv1Plussignjson extends js.Object
   
   @scala.inline
-  def `application/vdomDOTv1+json`: `application/vdomDOTv1+json` = "application/vdom.v1+json".asInstanceOf[`application/vdomDOTv1+json`]
+  def applicationSlashvdomDotv1Plussignjson: applicationSlashvdomDotv1Plussignjson = "application/vdom.v1+json".asInstanceOf[applicationSlashvdomDotv1Plussignjson]
 }
 

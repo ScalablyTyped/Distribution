@@ -12,7 +12,8 @@ class OLEFormat protected () extends js.Object {
   val Object: js.Any = js.native
   val ObjectVerbs: typings.activexDashPowerpoint.PowerPoint.ObjectVerbs = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.OLEFormat_typekey`: OLEFormat = js.native
+  @JSName("PowerPoint.OLEFormat_typekey")
+  var PowerPointDotOLEFormat_typekey: OLEFormat = js.native
   val ProgID: String = js.native
   def Activate(): Unit = js.native
   /** @param number [Index=0] */

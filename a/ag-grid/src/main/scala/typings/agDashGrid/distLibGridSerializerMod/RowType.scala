@@ -1,9 +1,6 @@
 package typings.agDashGrid.distLibGridSerializerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.agDashGrid.distLibGridSerializerMod.RowType.BODY
-import typings.agDashGrid.distLibGridSerializerMod.RowType.HEADER
-import typings.agDashGrid.distLibGridSerializerMod.RowType.HEADER_GROUPING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiextensionsDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.apiextensionsDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.apiextensions.v1beta1.CustomResourceDefinition
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -41,7 +40,7 @@ object apiextensionsV1beta1CustomResourceDefinitionListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`apiextensionsDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[apiextensionsDotk8sDotioSlashv1beta1] = js.native
     /**
       * items list individual CustomResourceDefinition objects
       */

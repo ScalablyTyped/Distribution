@@ -12,7 +12,7 @@ class Folder () extends ClientObject {
   def get_files(): FileCollection = js.native
   def get_folders(): FolderCollection = js.native
   def get_itemCount(): Double = js.native
-  def get_listItemAllFields[T](): typings.sharepoint.SP.ListItem[T] = js.native
+  def get_listItemAllFields[T](): ListItem[T] = js.native
   def get_name(): String = js.native
   def get_parentFolder(): Folder = js.native
   def get_properties(): PropertyValues = js.native

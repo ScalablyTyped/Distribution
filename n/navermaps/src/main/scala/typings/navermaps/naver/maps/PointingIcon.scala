@@ -1,10 +1,6 @@
 package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.PointingIcon.BLOCK_ARROW
-import typings.navermaps.naver.maps.PointingIcon.CIRCLE
-import typings.navermaps.naver.maps.PointingIcon.DIAMOND
-import typings.navermaps.naver.maps.PointingIcon.OPEN_ARROW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

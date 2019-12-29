@@ -1,7 +1,6 @@
 package typings.atBlueprintjsCore
 
 import typings.atBlueprintjsCore.libEsmCommonConstructorMod.IConstructor
-import typings.atBlueprintjsCore.libEsmComponentsContextDashMenuContextMenuTargetMod.IContextMenuTargetComponent
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.NativeMouseEvent

@@ -1,6 +1,5 @@
 package typings.memDashFs
 
-import typings.memDashFs.memDashFsMod.Store
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Transform
 import typings.vinyl.vinylMod.File

@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalTopBottomCriterionType.bottomItems
-import typings.officeDashJs.Excel.ConditionalTopBottomCriterionType.bottomPercent
-import typings.officeDashJs.Excel.ConditionalTopBottomCriterionType.invalid
-import typings.officeDashJs.Excel.ConditionalTopBottomCriterionType.topItems
-import typings.officeDashJs.Excel.ConditionalTopBottomCriterionType.topPercent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,13 +15,13 @@ object futimes extends js.Object {
     * @param atime The last access time. If a string is provided, it will be coerced to number.
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
-  def apply(fd: Double, atime: java.lang.String, mtime: java.lang.String, callback: NoParamCallback): Unit = js.native
-  def apply(fd: Double, atime: java.lang.String, mtime: Double, callback: NoParamCallback): Unit = js.native
-  def apply(fd: Double, atime: java.lang.String, mtime: Date, callback: NoParamCallback): Unit = js.native
-  def apply(fd: Double, atime: Double, mtime: java.lang.String, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: String, mtime: String, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: String, mtime: Double, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: String, mtime: Date, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: Double, mtime: String, callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, atime: Double, mtime: Double, callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, atime: Double, mtime: Date, callback: NoParamCallback): Unit = js.native
-  def apply(fd: Double, atime: Date, mtime: java.lang.String, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: Date, mtime: String, callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, atime: Date, mtime: Double, callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, atime: Date, mtime: Date, callback: NoParamCallback): Unit = js.native
   /**
@@ -30,13 +30,13 @@ object futimes extends js.Object {
     * @param atime The last access time. If a string is provided, it will be coerced to number.
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
-  def __promisify__(fd: Double, atime: java.lang.String, mtime: java.lang.String): js.Promise[Unit] = js.native
-  def __promisify__(fd: Double, atime: java.lang.String, mtime: Double): js.Promise[Unit] = js.native
-  def __promisify__(fd: Double, atime: java.lang.String, mtime: Date): js.Promise[Unit] = js.native
-  def __promisify__(fd: Double, atime: Double, mtime: java.lang.String): js.Promise[Unit] = js.native
+  def __promisify__(fd: Double, atime: String, mtime: String): js.Promise[Unit] = js.native
+  def __promisify__(fd: Double, atime: String, mtime: Double): js.Promise[Unit] = js.native
+  def __promisify__(fd: Double, atime: String, mtime: Date): js.Promise[Unit] = js.native
+  def __promisify__(fd: Double, atime: Double, mtime: String): js.Promise[Unit] = js.native
   def __promisify__(fd: Double, atime: Double, mtime: Double): js.Promise[Unit] = js.native
   def __promisify__(fd: Double, atime: Double, mtime: Date): js.Promise[Unit] = js.native
-  def __promisify__(fd: Double, atime: Date, mtime: java.lang.String): js.Promise[Unit] = js.native
+  def __promisify__(fd: Double, atime: Date, mtime: String): js.Promise[Unit] = js.native
   def __promisify__(fd: Double, atime: Date, mtime: Double): js.Promise[Unit] = js.native
   def __promisify__(fd: Double, atime: Date, mtime: Date): js.Promise[Unit] = js.native
 }

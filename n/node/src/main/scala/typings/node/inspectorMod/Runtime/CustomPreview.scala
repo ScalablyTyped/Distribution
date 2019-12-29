@@ -12,7 +12,7 @@ trait CustomPreview extends js.Object {
   var configObjectId: js.UndefOr[RemoteObjectId] = js.undefined
   var formatterObjectId: RemoteObjectId
   var hasBody: Boolean
-  var header: java.lang.String
+  var header: String
 }
 
 object CustomPreview {
@@ -21,7 +21,7 @@ object CustomPreview {
     bindRemoteObjectFunctionId: RemoteObjectId,
     formatterObjectId: RemoteObjectId,
     hasBody: Boolean,
-    header: java.lang.String,
+    header: String,
     configObjectId: RemoteObjectId = null
   ): CustomPreview = {
     val __obj = js.Dynamic.literal(bindRemoteObjectFunctionId = bindRemoteObjectFunctionId.asInstanceOf[js.Any], formatterObjectId = formatterObjectId.asInstanceOf[js.Any], hasBody = hasBody.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])

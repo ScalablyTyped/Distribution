@@ -1,8 +1,5 @@
 package typings.expo
 
-import typings.expo.buildUpdatesUpdatesMod.UpdateCheckResult
-import typings.expo.buildUpdatesUpdatesMod.UpdateEvent
-import typings.expo.buildUpdatesUpdatesMod.UpdateFetchResult
 import typings.expoDashConstants.buildConstantsDotTypesMod.AppManifest
 import typings.fbemitter.fbemitterMod.EventSubscription
 import scala.scalajs.js

@@ -1,17 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.TableauEventName.CUSTOM_VIEW_LOAD
-import typings.tableau.tableau.TableauEventName.CUSTOM_VIEW_REMOVE
-import typings.tableau.tableau.TableauEventName.CUSTOM_VIEW_SAVE
-import typings.tableau.tableau.TableauEventName.CUSTOM_VIEW_SET_DEFAULT
-import typings.tableau.tableau.TableauEventName.FILTER_CHANGE
-import typings.tableau.tableau.TableauEventName.MARKS_SELECTION
-import typings.tableau.tableau.TableauEventName.PARAMETER_VALUE_CHANGE
-import typings.tableau.tableau.TableauEventName.STORY_POINT_SWITCH
-import typings.tableau.tableau.TableauEventName.TAB_SWITCH
-import typings.tableau.tableau.TableauEventName.TOOLBAR_STATE_CHANGE
-import typings.tableau.tableau.TableauEventName.VIZ_RESIZE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TrendlinesType.Exponential
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TrendlinesType.Linear
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TrendlinesType.Logarithmic
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TrendlinesType.Polynomial
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TrendlinesType.Power
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

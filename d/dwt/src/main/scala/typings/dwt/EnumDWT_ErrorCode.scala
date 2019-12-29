@@ -1,21 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_ADDFILTER
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_BUILDGRAPH
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_FILTERGRAPH
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_ICREATEDEVENUM
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_IENUMMONIKER
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_REGFILTERGRAPH
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_SAMPLEGRABBER
-import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_VIDEOWINDOW
-import typings.dwt.EnumDWT_ErrorCode.WCERR_GRAB_TIMEOUT
-import typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_AUTOPROPERTY
-import typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_IAMCAMERACONTROL
-import typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_IAMVIDEOPROPERTY
-import typings.dwt.EnumDWT_ErrorCode.WCERR_NO_DEVICE
-import typings.dwt.EnumDWT_ErrorCode.WCERR_NULLRENDER
-import typings.dwt.EnumDWT_ErrorCode.WCERR_SYSTEM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

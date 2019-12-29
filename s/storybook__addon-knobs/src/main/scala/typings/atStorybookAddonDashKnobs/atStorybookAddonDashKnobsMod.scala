@@ -1,7 +1,7 @@
 package typings.atStorybookAddonDashKnobs
 
-import typings.atStorybookAddonDashKnobs.atStorybookAddonDashKnobsStrings.`storybookjs/knobs`
 import typings.atStorybookAddonDashKnobs.atStorybookAddonDashKnobsStrings.knobs
+import typings.atStorybookAddonDashKnobs.atStorybookAddonDashKnobsStrings.storybookjsSlashknobs
 import typings.atStorybookAddonDashKnobs.distComponentsTypesArrayMod.ArrayTypeKnobValue
 import typings.atStorybookAddonDashKnobs.distComponentsTypesButtonMod.ButtonTypeOnClickProp
 import typings.atStorybookAddonDashKnobs.distComponentsTypesMod.KnobType
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addon-knobs", JSImport.Namespace)
 @js.native
 object atStorybookAddonDashKnobsMod extends js.Object {
-  val ADDON_ID: `storybookjs/knobs` = js.native
+  val ADDON_ID: storybookjsSlashknobs = js.native
   val CHANGE: String = js.native
   val CLICK: String = js.native
   val PANEL_ID: String = js.native
@@ -64,7 +64,7 @@ object atStorybookAddonDashKnobsMod extends js.Object {
     optionsObj: OptionsKnobOptions,
     groupId: String
   ): T = js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
+  def radios(name: String, options: RadiosTypeOptionsProp[Null]): Null = js.native
   def radios(
     name: String,
     options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]],
@@ -77,8 +77,8 @@ object atStorybookAddonDashKnobsMod extends js.Object {
   def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double, groupId: String): Double = js.native
   def radios(name: String, options: RadiosTypeOptionsProp[Null], value: Null, groupId: String): Null = js.native
   @JSName("radios")
-  def radios_Null(name: String, options: RadiosTypeOptionsProp[Null]): Null = js.native
-  def select(name: String, options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
+  def radios_Union(name: String, options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
+  def select(name: String, options: SelectTypeOptionsProp[Null]): Null = js.native
   def select(
     name: String,
     options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]],
@@ -98,7 +98,7 @@ object atStorybookAddonDashKnobsMod extends js.Object {
   def select(name: String, options: SelectTypeOptionsProp[Double], value: Double, groupId: String): Double = js.native
   def select(name: String, options: SelectTypeOptionsProp[Null], value: Null, groupId: String): Null = js.native
   @JSName("select")
-  def select_Null(name: String, options: SelectTypeOptionsProp[Null]): Null = js.native
+  def select_Union(name: String, options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
   def text(name: String, value: String): String = js.native
   def text(name: String, value: String, groupId: String): String = js.native
   def withKnobs(

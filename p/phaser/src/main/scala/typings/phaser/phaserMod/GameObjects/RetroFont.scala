@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.RetroFontConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -58,6 +59,6 @@ object RetroFont extends js.Object {
     * @param scene A reference to the Phaser Scene.
     * @param config The font configuration object.
     */
-  def Parse(scene: typings.phaser.Phaser.Scene, config: RetroFontConfig): js.Object = js.native
+  def Parse(scene: Scene, config: RetroFontConfig): js.Object = js.native
 }
 

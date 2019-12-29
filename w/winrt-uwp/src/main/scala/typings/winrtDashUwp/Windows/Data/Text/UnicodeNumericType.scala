@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Data.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.decimal
-import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.digit
-import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.none
-import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.numeric
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

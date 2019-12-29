@@ -45,7 +45,7 @@ trait RequestInterceptor extends Object {
     */
   var urls: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
   /**
-    * When an error occurrs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened. For example, this could be used to log specific errors occuring with layers or services.
+    * When an error occurs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened. For example, this could be used to log specific errors occurring with layers or services.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     *

@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TimelineRecordState.Completed
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TimelineRecordState.InProgress
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TimelineRecordState.Pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Kanban
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Kanban.SelectionType.Multiple
-import typings.ejDotWebDotAll.ej.Kanban.SelectionType.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

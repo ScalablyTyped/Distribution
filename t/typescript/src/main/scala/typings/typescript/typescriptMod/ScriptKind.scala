@@ -1,14 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.ScriptKind.Deferred
-import typings.typescript.typescriptMod.ScriptKind.External
-import typings.typescript.typescriptMod.ScriptKind.JS
-import typings.typescript.typescriptMod.ScriptKind.JSON
-import typings.typescript.typescriptMod.ScriptKind.JSX
-import typings.typescript.typescriptMod.ScriptKind.TS
-import typings.typescript.typescriptMod.ScriptKind.TSX
-import typings.typescript.typescriptMod.ScriptKind.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

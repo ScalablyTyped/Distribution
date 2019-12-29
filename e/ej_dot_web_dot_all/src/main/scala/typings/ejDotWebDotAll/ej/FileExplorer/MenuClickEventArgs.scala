@@ -22,7 +22,7 @@ trait MenuClickEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the parent element ID of clicked ContextMenu item.
     */
   var parentId: js.UndefOr[String] = js.undefined
@@ -45,7 +45,7 @@ object MenuClickEventArgs {
     contextMenu: String = null,
     element: js.Any = null,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     parentId: String = null,
     parentText: String = null,
     text: String = null,

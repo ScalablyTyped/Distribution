@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Notifications.BadgeTemplateType.badgeGlyph
-import typings.winrtDashUwp.Windows.UI.Notifications.BadgeTemplateType.badgeNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

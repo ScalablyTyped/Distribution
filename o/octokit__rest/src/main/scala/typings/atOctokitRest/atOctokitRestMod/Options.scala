@@ -11,19 +11,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options
-  extends  // Deprecated
-/* option */ StringDictionary[js.Any] {
-   // Deprecated
+  extends /* option */ StringDictionary[js.Any] {
+  /**
+    * @deprecated Use {request: {agent}} instead. See https://github.com/octokit/request.js#request
+    */
   var agent: js.UndefOr[Agent] = js.undefined
   var auth: js.UndefOr[
     String | Anon_On2fa | Anon_ClientId | (js.Function0[String | js.Promise[String]])
   ] = js.undefined
   var baseUrl: js.UndefOr[String] = js.undefined
-   // Deprecated
+  /**
+    * @deprecated Use {userAgent, previews} instead. See https://github.com/octokit/request.js#request
+    */
   var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var log: js.UndefOr[Anon_Debug] = js.undefined
   var previews: js.UndefOr[js.Array[String]] = js.undefined
   var request: js.UndefOr[Anon_Agent] = js.undefined
+  /**
+    * @deprecated Use {request: {timeout}} instead. See https://github.com/octokit/request.js#request
+    */
   var timeout: js.UndefOr[Double] = js.undefined
   var userAgent: js.UndefOr[String] = js.undefined
 }
@@ -31,8 +37,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    StringDictionary:  // Deprecated
-  /* option */ StringDictionary[js.Any] = null,
+    StringDictionary: /* option */ StringDictionary[js.Any] = null,
     agent: Agent = null,
     auth: String | Anon_On2fa | Anon_ClientId | (js.Function0[String | js.Promise[String]]) = null,
     baseUrl: String = null,

@@ -23,36 +23,6 @@ trait FunctionParent extends _Node
 
 object FunctionParent {
   @scala.inline
-  def ArrowFunctionExpression(
-    async: Boolean,
-    body: BlockStatement | Expression,
-    generator: Boolean,
-    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
-    `type`: typings.atBabelTypes.atBabelTypesStrings.ArrowFunctionExpression,
-    end: Int | Double = null,
-    expression: js.UndefOr[Boolean] = js.undefined,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    returnType: TypeAnnotation | TSTypeAnnotation | Noop = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
-  ): FunctionParent = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FunctionParent]
-  }
-  @scala.inline
   def ObjectMethod(
     async: Boolean,
     body: BlockStatement,
@@ -86,14 +56,14 @@ object FunctionParent {
     __obj.asInstanceOf[FunctionParent]
   }
   @scala.inline
-  def FunctionExpression(
+  def ArrowFunctionExpression(
     async: Boolean,
-    body: BlockStatement,
+    body: BlockStatement | Expression,
     generator: Boolean,
     params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
-    `type`: typings.atBabelTypes.atBabelTypesStrings.FunctionExpression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.ArrowFunctionExpression,
     end: Int | Double = null,
-    id: Identifier = null,
+    expression: js.UndefOr[Boolean] = js.undefined,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
@@ -105,7 +75,7 @@ object FunctionParent {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
@@ -151,6 +121,36 @@ object FunctionParent {
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FunctionParent]
+  }
+  @scala.inline
+  def FunctionExpression(
+    async: Boolean,
+    body: BlockStatement,
+    generator: Boolean,
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    `type`: typings.atBabelTypes.atBabelTypesStrings.FunctionExpression,
+    end: Int | Double = null,
+    id: Identifier = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
+  ): FunctionParent = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])

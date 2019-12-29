@@ -1,6 +1,6 @@
 package typings.baseui
 
-import typings.baseui.baseuiNumbers.`false`
+import typings.baseui.baseuiBooleans.`false`
 import typings.baseui.baseuiStrings.auto
 import typings.baseui.baseuiStrings.bottom
 import typings.baseui.baseuiStrings.bottomLeft

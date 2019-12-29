@@ -1,13 +1,6 @@
 package typings.nodeDashVagrant
 
 import typings.node.eventsMod.EventEmitter
-import typings.nodeDashVagrant.nodeDashVagrantMod.Callback
-import typings.nodeDashVagrant.nodeDashVagrantMod.ErrorArg
-import typings.nodeDashVagrant.nodeDashVagrantMod.Machine
-import typings.nodeDashVagrant.nodeDashVagrantMod.MachineEmitter
-import typings.nodeDashVagrant.nodeDashVagrantMod.Plugin
-import typings.nodeDashVagrant.nodeDashVagrantMod.ProgressEmitter
-import typings.nodeDashVagrant.nodeDashVagrantMod.Snapshots
 import typings.nodeDashVagrant.nodeDashVagrantStrings.`up-progress`
 import typings.nodeDashVagrant.nodeDashVagrantStrings.progress
 import typings.nodeDashVagrant.nodeDashVagrantStrings.stderr

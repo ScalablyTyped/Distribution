@@ -7,7 +7,6 @@ import typings.node.streamMod.DuplexOptions
 import typings.std.ArrayLike
 import typings.std.Iterable
 import typings.std.IterableIterator
-import typings.streamDashMock.libDuplexDuplexMockMod.DuplexMock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

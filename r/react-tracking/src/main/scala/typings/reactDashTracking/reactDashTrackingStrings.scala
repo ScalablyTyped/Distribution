@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashTrackingStrings {
   @js.native
-  sealed trait Empty extends _Falsy
+  sealed trait _empty extends _Falsy
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
 }
 

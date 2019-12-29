@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPivotChart
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotChart]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotChart] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotChart]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotChart] {
   var Locale: js.Any = js.native
   var fn: PivotChart = js.native
 }

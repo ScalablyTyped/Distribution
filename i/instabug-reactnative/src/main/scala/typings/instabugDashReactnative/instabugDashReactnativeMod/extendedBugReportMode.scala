@@ -1,9 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.extendedBugReportMode.disabled
-import typings.instabugDashReactnative.instabugDashReactnativeMod.extendedBugReportMode.enabledWithOptionalFields
-import typings.instabugDashReactnative.instabugDashReactnativeMod.extendedBugReportMode.enabledWithRequiredFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

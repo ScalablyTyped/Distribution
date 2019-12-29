@@ -1,11 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.TabAlign.Center
-import typings.devexpressDashWeb.TabAlign.Decimal
-import typings.devexpressDashWeb.TabAlign.Left
-import typings.devexpressDashWeb.TabAlign.Numbering
-import typings.devexpressDashWeb.TabAlign.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

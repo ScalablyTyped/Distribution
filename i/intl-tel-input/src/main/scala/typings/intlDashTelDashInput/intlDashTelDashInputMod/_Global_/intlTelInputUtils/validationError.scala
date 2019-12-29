@@ -1,11 +1,6 @@
 package typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.validationError.INVALID_COUNTRY_CODE
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.validationError.IS_POSSIBLE
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.validationError.NOT_A_NUMBER
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.validationError.TOO_LONG
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.validationError.TOO_SHORT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

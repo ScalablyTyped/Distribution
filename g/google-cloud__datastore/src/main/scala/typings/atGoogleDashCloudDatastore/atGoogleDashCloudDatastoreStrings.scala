@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object atGoogleDashCloudDatastoreStrings {
   @js.native
-  sealed trait `<` extends QueryFilterOperator
+  sealed trait Equalssign extends QueryFilterOperator
   
   @js.native
-  sealed trait `<=` extends QueryFilterOperator
+  sealed trait Greaterthansign extends QueryFilterOperator
   
   @js.native
-  sealed trait `=` extends QueryFilterOperator
+  sealed trait GreaterthansignEqualssign extends QueryFilterOperator
   
   @js.native
-  sealed trait `>` extends QueryFilterOperator
+  sealed trait Lessthansign extends QueryFilterOperator
   
   @js.native
-  sealed trait `>=` extends QueryFilterOperator
+  sealed trait LessthansignEqualssign extends QueryFilterOperator
   
   @js.native
   sealed trait MORE_RESULTS_AFTER_CURSOR extends js.Object
@@ -37,15 +37,15 @@ object atGoogleDashCloudDatastoreStrings {
   sealed trait strong extends js.Object
   
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def MORE_RESULTS_AFTER_CURSOR: MORE_RESULTS_AFTER_CURSOR = "MORE_RESULTS_AFTER_CURSOR".asInstanceOf[MORE_RESULTS_AFTER_CURSOR]
   @scala.inline

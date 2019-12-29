@@ -12,7 +12,8 @@ class StdPicture protected () extends js.Object {
   val Type: Double = js.native
   val Width: Double = js.native
   val hPal: Double = js.native
-  var `stdole.StdPicture_typekey`: StdPicture = js.native
+  @JSName("stdole.StdPicture_typekey")
+  var stdoleDotStdPicture_typekey: StdPicture = js.native
   def Render(
     hdc: Double,
     x: Double,

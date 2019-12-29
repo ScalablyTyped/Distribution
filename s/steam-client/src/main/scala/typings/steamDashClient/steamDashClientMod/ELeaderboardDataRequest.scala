@@ -1,10 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDataRequest.Friends
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDataRequest.Global
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDataRequest.GlobalAroundUser
-import typings.steamDashClient.steamDashClientMod.ELeaderboardDataRequest.Users
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

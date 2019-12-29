@@ -30,9 +30,6 @@ object stripeDashV3Strings {
   sealed trait Discover extends brandType
   
   @js.native
-  sealed trait Empty extends billingAddressCollectionType
-  
-  @js.native
   sealed trait JCB extends brandType
   
   @js.native
@@ -43,6 +40,9 @@ object stripeDashV3Strings {
   
   @js.native
   sealed trait Visa extends brandType
+  
+  @js.native
+  sealed trait _empty extends billingAddressCollectionType
   
   @js.native
   sealed trait abandoned
@@ -541,8 +541,6 @@ object stripeDashV3Strings {
   @scala.inline
   def Discover: Discover = "Discover".asInstanceOf[Discover]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def JCB: JCB = "JCB".asInstanceOf[JCB]
   @scala.inline
   def MasterCard: MasterCard = "MasterCard".asInstanceOf[MasterCard]
@@ -550,6 +548,8 @@ object stripeDashV3Strings {
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   @scala.inline
   def Visa: Visa = "Visa".asInstanceOf[Visa]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abandoned: abandoned = "abandoned".asInstanceOf[abandoned]
   @scala.inline

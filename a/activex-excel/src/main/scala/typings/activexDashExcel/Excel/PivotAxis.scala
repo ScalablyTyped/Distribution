@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class PivotAxis protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.PivotAxis_typekey`: PivotAxis = js.native
+  @JSName("Excel.PivotAxis_typekey")
+  var ExcelDotPivotAxis_typekey: PivotAxis = js.native
   val Parent: js.Any = js.native
   @JSName("PivotLines")
   val PivotLines_Original: PivotLines = js.native

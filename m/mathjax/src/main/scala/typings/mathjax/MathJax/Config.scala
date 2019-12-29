@@ -152,7 +152,8 @@ trait Config extends js.Object {
     */
   var styles: js.UndefOr[js.Any] = js.undefined
   var tex2jax: js.UndefOr[TEX2jaxPreprocessor] = js.undefined
-  var `v1.0-compatible`: js.UndefOr[Boolean] = js.undefined
+  @JSName("v1.0-compatible")
+  var `v1Dot0-compatible`: js.UndefOr[Boolean] = js.undefined
 }
 
 object Config {
@@ -196,7 +197,7 @@ object Config {
     styleSheets: js.Array[String] = null,
     styles: js.Any = null,
     tex2jax: TEX2jaxPreprocessor = null,
-    `v1.0-compatible`: js.UndefOr[Boolean] = js.undefined
+    `v1Dot0-compatible`: js.UndefOr[Boolean] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (AsciiMath != null) __obj.updateDynamic("AsciiMath")(AsciiMath.asInstanceOf[js.Any])
@@ -237,7 +238,7 @@ object Config {
     if (styleSheets != null) __obj.updateDynamic("styleSheets")(styleSheets.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (tex2jax != null) __obj.updateDynamic("tex2jax")(tex2jax.asInstanceOf[js.Any])
-    if (!js.isUndefined(`v1.0-compatible`)) __obj.updateDynamic("v1.0-compatible")(`v1.0-compatible`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`v1Dot0-compatible`)) __obj.updateDynamic("v1.0-compatible")(`v1Dot0-compatible`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

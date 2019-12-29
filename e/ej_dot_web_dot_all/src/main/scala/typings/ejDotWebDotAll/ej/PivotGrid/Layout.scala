@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotGrid.Layout.ExcelLikeLayout
-import typings.ejDotWebDotAll.ej.PivotGrid.Layout.NoSummaries
-import typings.ejDotWebDotAll.ej.PivotGrid.Layout.Normal
-import typings.ejDotWebDotAll.ej.PivotGrid.Layout.NormalTopSummary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

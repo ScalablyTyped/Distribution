@@ -1,19 +1,19 @@
 package typings.extjs.Ext.toolbar
 
+import typings.extjs.Ext.container.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IToolbar
-  extends typings.extjs.Ext.container.IContainer {
+trait IToolbar extends IContainer {
   /** [Config Option] (String) */
-  var defaultButtonUI: js.UndefOr[java.lang.String] = js.undefined
+  var defaultButtonUI: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var enableOverflow: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Boolean) */
   var isToolbar: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var menuTriggerCls: js.UndefOr[java.lang.String] = js.undefined
+  var menuTriggerCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
@@ -21,11 +21,11 @@ trait IToolbar
 object IToolbar {
   @scala.inline
   def apply(
-    IContainer: typings.extjs.Ext.container.IContainer = null,
-    defaultButtonUI: java.lang.String = null,
+    IContainer: IContainer = null,
+    defaultButtonUI: String = null,
     enableOverflow: js.UndefOr[Boolean] = js.undefined,
     isToolbar: js.UndefOr[Boolean] = js.undefined,
-    menuTriggerCls: java.lang.String = null,
+    menuTriggerCls: String = null,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): IToolbar = {
     val __obj = js.Dynamic.literal()

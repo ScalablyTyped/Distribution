@@ -1,7 +1,6 @@
 package typings.workboxDashWindow
 
 import typings.workboxDashWindow.typesWorkboxEventMod.WorkboxEvent
-import typings.workboxDashWindow.utilsEventTargetShimMod.EventListenerShim
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

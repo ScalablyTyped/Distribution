@@ -18,28 +18,19 @@ trait IUrlRouterProvider extends IServiceProvider {
     */
   def deferIntercept(): Unit = js.native
   def deferIntercept(defer: Boolean): Unit = js.native
-  def otherwise(handler: js.Array[_]): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def otherwise(handler: Function): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def otherwise(path: String): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def rule(handler: js.Array[_]): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def rule(handler: Function): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(whenPath: String, handler: js.Array[_]): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(whenPath: String, handler: Function): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(whenPath: String, toPath: String): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(
-    whenPath: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher,
-    handler: js.Array[_]
-  ): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(
-    whenPath: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher,
-    hanlder: Function
-  ): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(
-    whenPath: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher,
-    toPath: String
-  ): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(whenPath: RegExp, handler: js.Array[_]): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(whenPath: RegExp, handler: Function): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
-  def when(whenPath: RegExp, toPath: String): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlRouterProvider = js.native
+  def otherwise(handler: js.Array[_]): IUrlRouterProvider = js.native
+  def otherwise(handler: Function): IUrlRouterProvider = js.native
+  def otherwise(path: String): IUrlRouterProvider = js.native
+  def rule(handler: js.Array[_]): IUrlRouterProvider = js.native
+  def rule(handler: Function): IUrlRouterProvider = js.native
+  def when(whenPath: String, handler: js.Array[_]): IUrlRouterProvider = js.native
+  def when(whenPath: String, handler: Function): IUrlRouterProvider = js.native
+  def when(whenPath: String, toPath: String): IUrlRouterProvider = js.native
+  def when(whenPath: IUrlMatcher, handler: js.Array[_]): IUrlRouterProvider = js.native
+  def when(whenPath: IUrlMatcher, hanlder: Function): IUrlRouterProvider = js.native
+  def when(whenPath: IUrlMatcher, toPath: String): IUrlRouterProvider = js.native
+  def when(whenPath: RegExp, handler: js.Array[_]): IUrlRouterProvider = js.native
+  def when(whenPath: RegExp, handler: Function): IUrlRouterProvider = js.native
+  def when(whenPath: RegExp, toPath: String): IUrlRouterProvider = js.native
 }
 

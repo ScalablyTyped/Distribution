@@ -1,9 +1,6 @@
 package typings.expoDashPermissions.buildPermissionsDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.DENIED
-import typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.GRANTED
-import typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.UNDETERMINED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

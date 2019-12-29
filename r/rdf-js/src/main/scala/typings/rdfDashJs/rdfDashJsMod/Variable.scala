@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Variable
   extends Quad_Graph
      with Quad_Object
@@ -13,24 +14,16 @@ trait Variable
   /**
     * Contains the constant "Variable".
     */
-  var termType: typings.rdfDashJs.rdfDashJsStrings.Variable
+  var termType: typings.rdfDashJs.rdfDashJsStrings.Variable = js.native
   /**
     * The name of the variable *without* leading ? (example: a).
     */
-  var value: String
+  var value: String = js.native
+  def equals(): Boolean = js.native
   /**
     * @param other The term to compare with.
     * @return True if and only if other has termType "Variable" and the same `value`.
     */
-  def equals(other: Term): Boolean
-}
-
-object Variable {
-  @scala.inline
-  def apply(equals: Term => Boolean, termType: typings.rdfDashJs.rdfDashJsStrings.Variable, value: String): Variable = {
-    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Variable]
-  }
+  def equals(other: Term): Boolean = js.native
 }
 

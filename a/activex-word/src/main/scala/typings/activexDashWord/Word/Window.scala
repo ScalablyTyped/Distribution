@@ -48,7 +48,8 @@ class Window protected () extends js.Object {
   var Width: Double = js.native
   val WindowNumber: Double = js.native
   var WindowState: WdWindowState = js.native
-  var `Word.Window_typekey`: Window = js.native
+  @JSName("Word.Window_typekey")
+  var WordDotWindow_typekey: Window = js.native
   def Activate(): Unit = js.native
   def Close(): Unit = js.native
   def Close(SaveChanges: js.Any): Unit = js.native

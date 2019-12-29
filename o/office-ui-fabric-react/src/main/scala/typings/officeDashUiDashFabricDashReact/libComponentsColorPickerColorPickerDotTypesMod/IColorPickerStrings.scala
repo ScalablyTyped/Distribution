@@ -6,10 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait IColorPickerStrings extends js.Object {
   /**
-    * Label for the alpha text field and slider.
+    * Label for the alpha text field.
+    * Also used as the aria label for the alpha slider if `alphaAriaLabel` is not provided.
     * @defaultvalue Alpha
     */
   var alpha: js.UndefOr[String] = js.undefined
+  /**
+    * Customized aria-label for the alpha slider.
+    */
+  var alphaAriaLabel: js.UndefOr[String] = js.undefined
   /**
     * Label for the blue text field.
     * @defaultvalue Blue
@@ -27,9 +32,14 @@ trait IColorPickerStrings extends js.Object {
   var hex: js.UndefOr[String] = js.undefined
   /**
     * Aria label for the hue slider.
-    * @defaultvalue Hue
+    * @deprecated Use `hueAriaLabel`
     */
   var hue: js.UndefOr[String] = js.undefined
+  /**
+    * Aria label for the hue slider.
+    * @defaultvalue Hue
+    */
+  var hueAriaLabel: js.UndefOr[String] = js.undefined
   /**
     * Label for the red text field.
     * @defaultvalue Red
@@ -65,10 +75,12 @@ object IColorPickerStrings {
   @scala.inline
   def apply(
     alpha: String = null,
+    alphaAriaLabel: String = null,
     blue: String = null,
     green: String = null,
     hex: String = null,
     hue: String = null,
+    hueAriaLabel: String = null,
     red: String = null,
     rootAriaLabelFormat: String = null,
     svAriaDescription: String = null,
@@ -77,10 +89,12 @@ object IColorPickerStrings {
   ): IColorPickerStrings = {
     val __obj = js.Dynamic.literal()
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (alphaAriaLabel != null) __obj.updateDynamic("alphaAriaLabel")(alphaAriaLabel.asInstanceOf[js.Any])
     if (blue != null) __obj.updateDynamic("blue")(blue.asInstanceOf[js.Any])
     if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
     if (hex != null) __obj.updateDynamic("hex")(hex.asInstanceOf[js.Any])
     if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
+    if (hueAriaLabel != null) __obj.updateDynamic("hueAriaLabel")(hueAriaLabel.asInstanceOf[js.Any])
     if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
     if (rootAriaLabelFormat != null) __obj.updateDynamic("rootAriaLabelFormat")(rootAriaLabelFormat.asInstanceOf[js.Any])
     if (svAriaDescription != null) __obj.updateDynamic("svAriaDescription")(svAriaDescription.asInstanceOf[js.Any])

@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ViewScope.defaultValue
-import typings.sharepoint.SP.ViewScope.filesOnly
-import typings.sharepoint.SP.ViewScope.recursive
-import typings.sharepoint.SP.ViewScope.recursiveAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

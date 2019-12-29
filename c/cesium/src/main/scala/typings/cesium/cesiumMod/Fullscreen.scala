@@ -1,11 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.Fullscreen.changeEventName
-import typings.cesium.cesiumMod.Fullscreen.element
-import typings.cesium.cesiumMod.Fullscreen.enabled
-import typings.cesium.cesiumMod.Fullscreen.errorEventName
-import typings.cesium.cesiumMod.Fullscreen.fullscreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A representation of an XML DocumentType node.
   */
-trait DocType
-  extends typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content {
+trait DocType extends Content {
   def getElementName(): String
   def getInternalSubset(): String
   def getPublicId(): String
@@ -29,7 +28,7 @@ object DocType {
     asEntityRef: () => EntityRef,
     asProcessingInstruction: () => ProcessingInstruction,
     asText: () => Text,
-    detach: () => typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content,
+    detach: () => Content,
     getElementName: () => String,
     getInternalSubset: () => String,
     getParentElement: () => Element,

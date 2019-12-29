@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseIteratorUnderscoreRepeaterMod._Repeater
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

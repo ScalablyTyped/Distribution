@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IDialogConfirmScope
-  extends typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogScope {
+trait IDialogConfirmScope extends IDialogScope {
   /**
   			 * Use this method to close the dialog and resolve the promise that was returned when opening the modal.
   			 *

@@ -3,7 +3,7 @@ package typings.betterDashQueue.betterDashQueueMod
 import typings.betterDashQueue.betterDashQueueStrings.task_failed
 import typings.betterDashQueue.betterDashQueueStrings.task_finish
 import typings.betterDashQueue.betterDashQueueStrings.task_progress
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

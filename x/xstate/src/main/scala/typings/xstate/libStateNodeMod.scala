@@ -2,7 +2,6 @@ package typings.xstate
 
 import typings.std.Partial
 import typings.xstate.libStateMod.State
-import typings.xstate.libStateNodeMod.StateNode
 import typings.xstate.libTypesMod.ActionObject
 import typings.xstate.libTypesMod.ActivityDefinition
 import typings.xstate.libTypesMod.DelayedTransitionDefinition
@@ -22,8 +21,8 @@ import typings.xstate.libTypesMod.StateValueMap
 import typings.xstate.libTypesMod.TransitionDefinition
 import typings.xstate.libTypesMod.TransitionDefinitionMap
 import typings.xstate.libTypesMod.Typestate
-import typings.xstate.xstateNumbers.`false`
-import typings.xstate.xstateNumbers.`true`
+import typings.xstate.xstateBooleans.`false`
+import typings.xstate.xstateBooleans.`true`
 import typings.xstate.xstateStrings.`final`
 import typings.xstate.xstateStrings.atomic
 import typings.xstate.xstateStrings.compound

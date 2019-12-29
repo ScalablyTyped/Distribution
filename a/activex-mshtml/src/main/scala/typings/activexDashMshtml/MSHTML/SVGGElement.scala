@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGGElement")
 @js.native
 class SVGGElement protected () extends js.Object {
-  var `MSHTML.SVGGElement_typekey`: SVGGElement = js.native
+  @JSName("MSHTML.SVGGElement_typekey")
+  var MSHTMLDotSVGGElement_typekey: SVGGElement = js.native
   val className: SVGAnimatedString = js.native
   val externalResourcesRequired: SVGAnimatedBoolean = js.native
   val farthestViewportElement: ISVGElement = js.native

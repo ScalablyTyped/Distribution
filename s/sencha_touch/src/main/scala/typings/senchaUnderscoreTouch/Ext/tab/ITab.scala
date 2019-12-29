@@ -9,7 +9,7 @@ trait ITab extends IButton {
   /** [Config Option] (Boolean) */
   var active: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[java.lang.String] = js.undefined
+  var activeCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of active
   		* @returns Boolean
   		*/
@@ -17,11 +17,11 @@ trait ITab extends IButton {
   /** [Method] Returns the value of activeCls
   		* @returns String
   		*/
-  var getActiveCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getActiveCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of title
   		* @returns String
   		*/
-  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of active
   		* @param active Boolean The new value.
   		*/
@@ -29,13 +29,13 @@ trait ITab extends IButton {
   /** [Method] Sets the value of activeCls
   		* @param activeCls String The new value.
   		*/
-  var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of title
   		* @param title String The new value.
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
 }
 
 object ITab {
@@ -43,14 +43,14 @@ object ITab {
   def apply(
     IButton: IButton = null,
     active: js.UndefOr[Boolean] = js.undefined,
-    activeCls: java.lang.String = null,
+    activeCls: String = null,
     getActive: () => Boolean = null,
-    getActiveCls: () => java.lang.String = null,
-    getTitle: () => java.lang.String = null,
+    getActiveCls: () => String = null,
+    getTitle: () => String = null,
     setActive: /* active */ js.UndefOr[Boolean] => Unit = null,
-    setActiveCls: /* activeCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
-    title: java.lang.String = null
+    setActiveCls: /* activeCls */ js.UndefOr[String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
+    title: String = null
   ): ITab = {
     val __obj = js.Dynamic.literal()
     if (IButton != null) js.Dynamic.global.Object.assign(__obj, IButton)

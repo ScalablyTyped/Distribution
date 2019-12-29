@@ -86,10 +86,10 @@ trait Worker
 @JSGlobal("Worker")
 @js.native
 object Worker
-  extends Instantiable2[
+  extends Instantiable1[(/* stringUrl */ java.lang.String) | (/* stringUrl */ URL), Worker]
+     with Instantiable2[
       (/* stringUrl */ java.lang.String) | (/* stringUrl */ URL), 
       /* options */ WorkerOptions, 
       Worker
     ]
-     with Instantiable1[(/* stringUrl */ java.lang.String) | (/* stringUrl */ URL), Worker]
 

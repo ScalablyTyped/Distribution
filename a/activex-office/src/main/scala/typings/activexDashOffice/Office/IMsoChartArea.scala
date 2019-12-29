@@ -18,7 +18,8 @@ class IMsoChartArea protected () extends js.Object {
   val Interior: IMsoInterior = js.native
   var Left: Double = js.native
   val Name: String = js.native
-  var `Office.IMsoChartArea_typekey`: IMsoChartArea = js.native
+  @JSName("Office.IMsoChartArea_typekey")
+  var OfficeDotIMsoChartArea_typekey: IMsoChartArea = js.native
   val Parent: js.Any = js.native
   var RoundedCorners: Boolean = js.native
   var Shadow: Boolean = js.native

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object htmlDashParserStrings {
   @js.native
-  sealed trait `/>` extends Token
+  sealed trait Greaterthansign extends Token
   
   @js.native
-  sealed trait `>` extends Token
+  sealed trait QuestionmarkGreaterthansign extends Token
   
   @js.native
-  sealed trait `?>` extends Token
+  sealed trait SlashGreaterthansign extends Token
   
   @scala.inline
-  def `/>`: `/>` = "/>".asInstanceOf[`/>`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def QuestionmarkGreaterthansign: QuestionmarkGreaterthansign = "?>".asInstanceOf[QuestionmarkGreaterthansign]
   @scala.inline
-  def `?>`: `?>` = "?>".asInstanceOf[`?>`]
+  def SlashGreaterthansign: SlashGreaterthansign = "/>".asInstanceOf[SlashGreaterthansign]
 }
 

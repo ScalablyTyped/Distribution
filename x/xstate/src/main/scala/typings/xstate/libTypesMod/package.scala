@@ -15,8 +15,8 @@ package object libTypesMod {
   import typings.xstate.Anon_TypeString
   import typings.xstate.libStateMod.State
   import typings.xstate.libStateNodeMod.StateNode
-  import typings.xstate.xstateNumbers.`false`
-  import typings.xstate.xstateStrings.xstateDOTguard
+  import typings.xstate.xstateBooleans.`false`
+  import typings.xstate.xstateStrings.xstateDotguard
 
   /* Rewritten from type alias, can be one of: 
     - typings.xstate.libTypesMod.ActionType
@@ -60,7 +60,7 @@ package object libTypesMod {
   ]
   type ConditionalTransitionConfig[TContext, TEvent /* <: EventObject */] = js.Array[TransitionConfig[TContext, TEvent]]
   type DefaultContext = js.UndefOr[Record[String, js.Any]]
-  type DefaultGuardType = xstateDOTguard
+  type DefaultGuardType = xstateDotguard
   type DelayConfig[TContext, TEvent /* <: EventObject */] = Double | (DelayExpr[TContext, TEvent])
   type DelayExpr[TContext, TEvent /* <: EventObject */] = ExprWithMeta[TContext, TEvent, Double]
   type DelayFunctionMap[TContext, TEvent /* <: EventObject */] = Record[String, DelayConfig[TContext, TEvent]]

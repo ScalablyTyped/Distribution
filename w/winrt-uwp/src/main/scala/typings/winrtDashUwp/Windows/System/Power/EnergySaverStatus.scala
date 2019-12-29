@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.System.Power
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.disabled
-import typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.off
-import typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

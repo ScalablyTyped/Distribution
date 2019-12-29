@@ -1,10 +1,10 @@
 package typings.openpgp.openpgpMod
 
+import typings.openpgp.openpgpBooleans.`false`
 import typings.openpgp.openpgpMod.cleartext.CleartextMessage
 import typings.openpgp.openpgpMod.key.Key
 import typings.openpgp.openpgpMod.message.Message
 import typings.openpgp.openpgpMod.signature.Signature
-import typings.openpgp.openpgpNumbers.`false`
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.web
 import typings.std.Date

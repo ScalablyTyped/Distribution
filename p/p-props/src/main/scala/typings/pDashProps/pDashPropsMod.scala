@@ -1,10 +1,7 @@
 package typings.pDashProps
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pDashProps.pDashPropsMod.Mapper
-import typings.pDashProps.pDashPropsMod.Options
-import typings.pDashProps.pDashPropsMod.PromiseResult
-import typings.pDashProps.pDashPropsStrings.`_backtick^_backtick`
+import typings.pDashProps.pDashPropsStrings.^
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,12 +13,12 @@ object pDashPropsMod extends js.Object {
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ `_backtick^_backtick` with js.Any
+    */ ^  with js.Any
   ] = js.native
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Mapper[PromiseResult[ValueType], String, MappedValueType]): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ `_backtick^_backtick` with js.Any
+    */ ^  with js.Any
   ] = js.native
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
@@ -30,7 +27,7 @@ object pDashPropsMod extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ `_backtick^_backtick` with js.Any
+    */ ^  with js.Any
   ] = js.native
   /**
   Like [`Promise.all()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) but for `Map` and `Object`.

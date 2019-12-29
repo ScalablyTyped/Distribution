@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 object awsDashLambdaStrings {
   @js.native
-  sealed trait `1DOT0` extends js.Object
+  sealed trait `1Dot0` extends js.Object
   
   @js.native
   sealed trait ADMIN_NO_SRP_AUTH extends js.Object
@@ -306,10 +306,10 @@ object awsDashLambdaStrings {
   sealed trait Voice extends js.Object
   
   @js.native
-  sealed trait `application/vndDOTamazonawsDOTcardDOTgeneric` extends js.Object
+  sealed trait applicationSlashvndDotamazonawsDotcardDotgeneric extends js.Object
   
   @js.native
-  sealed trait awsDOTcodepipeline extends js.Object
+  sealed trait awsDotcodepipeline extends js.Object
   
   @js.native
   sealed trait base64 extends js.Object
@@ -369,7 +369,7 @@ object awsDashLambdaStrings {
   sealed trait `viewer-response` extends js.Object
   
   @scala.inline
-  def `1DOT0`: `1DOT0` = "1.0".asInstanceOf[`1DOT0`]
+  def `1Dot0`: `1Dot0` = "1.0".asInstanceOf[`1Dot0`]
   @scala.inline
   def ADMIN_NO_SRP_AUTH: ADMIN_NO_SRP_AUTH = "ADMIN_NO_SRP_AUTH".asInstanceOf[ADMIN_NO_SRP_AUTH]
   @scala.inline
@@ -555,9 +555,9 @@ object awsDashLambdaStrings {
   @scala.inline
   def Voice: Voice = "Voice".asInstanceOf[Voice]
   @scala.inline
-  def `application/vndDOTamazonawsDOTcardDOTgeneric`: `application/vndDOTamazonawsDOTcardDOTgeneric` = "application/vnd.amazonaws.card.generic".asInstanceOf[`application/vndDOTamazonawsDOTcardDOTgeneric`]
+  def applicationSlashvndDotamazonawsDotcardDotgeneric: applicationSlashvndDotamazonawsDotcardDotgeneric = "application/vnd.amazonaws.card.generic".asInstanceOf[applicationSlashvndDotamazonawsDotcardDotgeneric]
   @scala.inline
-  def awsDOTcodepipeline: awsDOTcodepipeline = "aws.codepipeline".asInstanceOf[awsDOTcodepipeline]
+  def awsDotcodepipeline: awsDotcodepipeline = "aws.codepipeline".asInstanceOf[awsDotcodepipeline]
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline

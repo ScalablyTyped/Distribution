@@ -2,12 +2,12 @@ package typings.videoDotJs.videoDotJsMod.videojs
 
 import typings.std.XMLHttpRequest
 import typings.videoDotJs.videoDotJsStrings.DELETE
-import typings.videoDotJs.videoDotJsStrings.Empty
 import typings.videoDotJs.videoDotJsStrings.GET
 import typings.videoDotJs.videoDotJsStrings.HEAD
 import typings.videoDotJs.videoDotJsStrings.OPTIONS
 import typings.videoDotJs.videoDotJsStrings.POST
 import typings.videoDotJs.videoDotJsStrings.PUT
+import typings.videoDotJs.videoDotJsStrings._empty
 import typings.videoDotJs.videoDotJsStrings.arraybuffer
 import typings.videoDotJs.videoDotJsStrings.blob
 import typings.videoDotJs.videoDotJsStrings.document
@@ -24,7 +24,7 @@ trait XhrOptions extends js.Object {
   var json: js.UndefOr[Boolean] = js.undefined
   var method: js.UndefOr[DELETE | GET | HEAD | OPTIONS | POST | PUT] = js.undefined
   var password: js.UndefOr[String] = js.undefined
-  var responseType: js.UndefOr[Empty | arraybuffer | blob | document | json | text] = js.undefined
+  var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.undefined
   var sync: js.UndefOr[Boolean] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
   var uri: js.UndefOr[String] = js.undefined
@@ -44,7 +44,7 @@ object XhrOptions {
     json: js.UndefOr[Boolean] = js.undefined,
     method: DELETE | GET | HEAD | OPTIONS | POST | PUT = null,
     password: String = null,
-    responseType: Empty | arraybuffer | blob | document | json | text = null,
+    responseType: _empty | arraybuffer | blob | document | json | text = null,
     sync: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
     uri: String = null,

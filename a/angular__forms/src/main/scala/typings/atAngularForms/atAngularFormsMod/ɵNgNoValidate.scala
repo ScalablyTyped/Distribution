@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   * @ngModule ReactiveFormsModule
   * @ngModule FormsModule
   */
-@JSImport("@angular/forms", "ɵNgNoValidate")
+@JSImport("@angular/forms", "\u0275NgNoValidate")
 @js.native
 class ɵNgNoValidate () extends js.Object
 

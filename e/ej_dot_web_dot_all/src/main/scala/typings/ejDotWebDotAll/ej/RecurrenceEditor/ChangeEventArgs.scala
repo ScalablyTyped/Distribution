@@ -10,7 +10,7 @@ trait ChangeEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns the Recurrence Editor model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.RecurrenceEditor.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the recurrence rule value.
     */
   var recurrenceRule: js.UndefOr[String] = js.undefined
@@ -23,7 +23,7 @@ object ChangeEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.RecurrenceEditor.Model = null,
+    model: Model = null,
     recurrenceRule: String = null,
     `type`: String = null
   ): ChangeEventArgs = {

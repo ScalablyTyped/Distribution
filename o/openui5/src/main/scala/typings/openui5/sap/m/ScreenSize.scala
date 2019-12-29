@@ -1,16 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ScreenSize.Desktop
-import typings.openui5.sap.m.ScreenSize.Large
-import typings.openui5.sap.m.ScreenSize.Medium
-import typings.openui5.sap.m.ScreenSize.Phone
-import typings.openui5.sap.m.ScreenSize.Small
-import typings.openui5.sap.m.ScreenSize.Tablet
-import typings.openui5.sap.m.ScreenSize.XLarge
-import typings.openui5.sap.m.ScreenSize.XSmall
-import typings.openui5.sap.m.ScreenSize.XXLarge
-import typings.openui5.sap.m.ScreenSize.XXSmall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

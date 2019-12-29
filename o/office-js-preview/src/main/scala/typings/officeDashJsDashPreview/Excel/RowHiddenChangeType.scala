@@ -1,8 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.RowHiddenChangeType.hidden
-import typings.officeDashJsDashPreview.Excel.RowHiddenChangeType.unhidden
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

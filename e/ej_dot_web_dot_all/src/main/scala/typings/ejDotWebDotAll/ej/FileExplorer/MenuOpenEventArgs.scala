@@ -16,7 +16,7 @@ trait MenuOpenEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the target element.
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -31,7 +31,7 @@ object MenuOpenEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     contextMenu: String = null,
     element: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     target: js.Any = null,
     `type`: String = null
   ): MenuOpenEventArgs = {

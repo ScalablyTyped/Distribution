@@ -1,8 +1,6 @@
 package typings.vortexDashWebDashClient.DDS
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vortexDashWebDashClient.DDS.HistoryKind.KeepAll
-import typings.vortexDashWebDashClient.DDS.HistoryKind.KeepLast
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

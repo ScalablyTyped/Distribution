@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseStorage.distSrcImplementationXhrioMod.Headers
 import typings.atFirebaseStorage.distSrcImplementationXhrioMod.XhrIo
-import typings.atFirebaseStorage.distTestXhrioMod.SendHook
-import typings.atFirebaseStorage.distTestXhrioMod.State
-import typings.atFirebaseStorage.distTestXhrioMod.State.DONE
-import typings.atFirebaseStorage.distTestXhrioMod.State.SENT
-import typings.atFirebaseStorage.distTestXhrioMod.State.START
-import typings.atFirebaseStorage.distTestXhrioMod.TestingXhrIo
 import typings.std.ArrayBufferView
 import typings.std.Blob
 import scala.scalajs.js

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.WebBrowserControl")
 @js.native
 class WebBrowserControl protected () extends js.Object {
-  var `Access.WebBrowserControl_typekey`: WebBrowserControl = js.native
+  @JSName("Access.WebBrowserControl_typekey")
+  var AccessDotWebBrowserControl_typekey: WebBrowserControl = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BorderColor: Double = js.native
   var BorderLineStyle: Double = js.native

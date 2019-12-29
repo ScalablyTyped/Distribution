@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.BacklogInError
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.DoesntExistOrAccessDenied
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MaxTeamFieldsExceeded
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MaxTeamsExceeded
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MissingTeamFieldValue
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.NoIterationsExist
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.OK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

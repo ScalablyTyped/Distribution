@@ -1,6 +1,6 @@
 package typings.atMaterialDashUiCore
 
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreNumbers.`false`
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreBooleans.`false`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`additions text`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`inline`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.additions

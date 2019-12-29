@@ -12,9 +12,6 @@ object atAntDashDesignReactDashNativeStrings {
   sealed trait `ActionSheet example` extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait Icon extends js.Object
   
   @js.native
@@ -55,6 +52,9 @@ object atAntDashDesignReactDashNativeStrings {
   
   @js.native
   sealed trait URL extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait addressCity extends js.Object
@@ -430,8 +430,6 @@ object atAntDashDesignReactDashNativeStrings {
   @scala.inline
   def `ActionSheet example`: `ActionSheet example` = "ActionSheet example".asInstanceOf[`ActionSheet example`]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def Icon: Icon = "Icon".asInstanceOf[Icon]
   @scala.inline
   def `Icon Example`: `Icon Example` = "Icon Example".asInstanceOf[`Icon Example`]
@@ -459,6 +457,8 @@ object atAntDashDesignReactDashNativeStrings {
   def `Tabs example`: `Tabs example` = "Tabs example".asInstanceOf[`Tabs example`]
   @scala.inline
   def URL: URL = "URL".asInstanceOf[URL]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def addressCity: addressCity = "addressCity".asInstanceOf[addressCity]
   @scala.inline

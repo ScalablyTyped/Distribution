@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataSourceParameterType.CELL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataSourceParameterType.DATA_SOURCE_PARAMETER_TYPE_UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

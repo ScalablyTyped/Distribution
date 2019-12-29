@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object luceneStrings {
   @js.native
-  sealed trait `<implicit>` extends Operator
-  
-  @js.native
   sealed trait AND extends Operator
   
   @js.native
   sealed trait `AND NOT` extends Operator
+  
+  @js.native
+  sealed trait LessthansignimplicitGreaterthansign extends Operator
   
   @js.native
   sealed trait NOT extends Operator
@@ -25,11 +25,11 @@ object luceneStrings {
   sealed trait `OR NOT` extends Operator
   
   @scala.inline
-  def `<implicit>`: `<implicit>` = "<implicit>".asInstanceOf[`<implicit>`]
-  @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
   def `AND NOT`: `AND NOT` = "AND NOT".asInstanceOf[`AND NOT`]
+  @scala.inline
+  def LessthansignimplicitGreaterthansign: LessthansignimplicitGreaterthansign = "<implicit>".asInstanceOf[LessthansignimplicitGreaterthansign]
   @scala.inline
   def NOT: NOT = "NOT".asInstanceOf[NOT]
   @scala.inline

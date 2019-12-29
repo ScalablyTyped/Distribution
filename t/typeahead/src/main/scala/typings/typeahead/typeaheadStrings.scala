@@ -15,40 +15,40 @@ object typeaheadStrings {
   sealed trait open extends js.Object
   
   @js.native
-  sealed trait `typeahead:active` extends js.Object
+  sealed trait typeaheadColonactive extends js.Object
   
   @js.native
-  sealed trait `typeahead:asynccancel` extends js.Object
+  sealed trait typeaheadColonasynccancel extends js.Object
   
   @js.native
-  sealed trait `typeahead:asyncreceive` extends js.Object
+  sealed trait typeaheadColonasyncreceive extends js.Object
   
   @js.native
-  sealed trait `typeahead:asyncrequest` extends js.Object
+  sealed trait typeaheadColonasyncrequest extends js.Object
   
   @js.native
-  sealed trait `typeahead:autocomplete` extends js.Object
+  sealed trait typeaheadColonautocomplete extends js.Object
   
   @js.native
-  sealed trait `typeahead:change` extends js.Object
+  sealed trait typeaheadColonchange extends js.Object
   
   @js.native
-  sealed trait `typeahead:close` extends js.Object
+  sealed trait typeaheadColonclose extends js.Object
   
   @js.native
-  sealed trait `typeahead:cursorchange` extends js.Object
+  sealed trait typeaheadColoncursorchange extends js.Object
   
   @js.native
-  sealed trait `typeahead:idle` extends js.Object
+  sealed trait typeaheadColonidle extends js.Object
   
   @js.native
-  sealed trait `typeahead:open` extends js.Object
+  sealed trait typeaheadColonopen extends js.Object
   
   @js.native
-  sealed trait `typeahead:render` extends js.Object
+  sealed trait typeaheadColonrender extends js.Object
   
   @js.native
-  sealed trait `typeahead:select` extends js.Object
+  sealed trait typeaheadColonselect extends js.Object
   
   @js.native
   sealed trait `val` extends js.Object
@@ -60,29 +60,29 @@ object typeaheadStrings {
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline
-  def `typeahead:active`: `typeahead:active` = "typeahead:active".asInstanceOf[`typeahead:active`]
+  def typeaheadColonactive: typeaheadColonactive = "typeahead:active".asInstanceOf[typeaheadColonactive]
   @scala.inline
-  def `typeahead:asynccancel`: `typeahead:asynccancel` = "typeahead:asynccancel".asInstanceOf[`typeahead:asynccancel`]
+  def typeaheadColonasynccancel: typeaheadColonasynccancel = "typeahead:asynccancel".asInstanceOf[typeaheadColonasynccancel]
   @scala.inline
-  def `typeahead:asyncreceive`: `typeahead:asyncreceive` = "typeahead:asyncreceive".asInstanceOf[`typeahead:asyncreceive`]
+  def typeaheadColonasyncreceive: typeaheadColonasyncreceive = "typeahead:asyncreceive".asInstanceOf[typeaheadColonasyncreceive]
   @scala.inline
-  def `typeahead:asyncrequest`: `typeahead:asyncrequest` = "typeahead:asyncrequest".asInstanceOf[`typeahead:asyncrequest`]
+  def typeaheadColonasyncrequest: typeaheadColonasyncrequest = "typeahead:asyncrequest".asInstanceOf[typeaheadColonasyncrequest]
   @scala.inline
-  def `typeahead:autocomplete`: `typeahead:autocomplete` = "typeahead:autocomplete".asInstanceOf[`typeahead:autocomplete`]
+  def typeaheadColonautocomplete: typeaheadColonautocomplete = "typeahead:autocomplete".asInstanceOf[typeaheadColonautocomplete]
   @scala.inline
-  def `typeahead:change`: `typeahead:change` = "typeahead:change".asInstanceOf[`typeahead:change`]
+  def typeaheadColonchange: typeaheadColonchange = "typeahead:change".asInstanceOf[typeaheadColonchange]
   @scala.inline
-  def `typeahead:close`: `typeahead:close` = "typeahead:close".asInstanceOf[`typeahead:close`]
+  def typeaheadColonclose: typeaheadColonclose = "typeahead:close".asInstanceOf[typeaheadColonclose]
   @scala.inline
-  def `typeahead:cursorchange`: `typeahead:cursorchange` = "typeahead:cursorchange".asInstanceOf[`typeahead:cursorchange`]
+  def typeaheadColoncursorchange: typeaheadColoncursorchange = "typeahead:cursorchange".asInstanceOf[typeaheadColoncursorchange]
   @scala.inline
-  def `typeahead:idle`: `typeahead:idle` = "typeahead:idle".asInstanceOf[`typeahead:idle`]
+  def typeaheadColonidle: typeaheadColonidle = "typeahead:idle".asInstanceOf[typeaheadColonidle]
   @scala.inline
-  def `typeahead:open`: `typeahead:open` = "typeahead:open".asInstanceOf[`typeahead:open`]
+  def typeaheadColonopen: typeaheadColonopen = "typeahead:open".asInstanceOf[typeaheadColonopen]
   @scala.inline
-  def `typeahead:render`: `typeahead:render` = "typeahead:render".asInstanceOf[`typeahead:render`]
+  def typeaheadColonrender: typeaheadColonrender = "typeahead:render".asInstanceOf[typeaheadColonrender]
   @scala.inline
-  def `typeahead:select`: `typeahead:select` = "typeahead:select".asInstanceOf[`typeahead:select`]
+  def typeaheadColonselect: typeaheadColonselect = "typeahead:select".asInstanceOf[typeaheadColonselect]
   @scala.inline
   def `val`: `val` = "val".asInstanceOf[`val`]
 }

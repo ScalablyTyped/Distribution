@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.networking.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`networkingDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.networkingDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait NetworkPolicyList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `networkingDOTk8sDOTio/v1`
+  val apiVersion: networkingDotk8sDotioSlashv1
   /**
     * Items is a list of schema objects.
     */
@@ -38,7 +38,7 @@ trait NetworkPolicyList extends js.Object {
 object NetworkPolicyList {
   @scala.inline
   def apply(
-    apiVersion: `networkingDOTk8sDOTio/v1`,
+    apiVersion: networkingDotk8sDotioSlashv1,
     items: js.Array[NetworkPolicy],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.NetworkPolicyList,
     metadata: ListMeta

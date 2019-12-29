@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstVerticalAlignment.Bottom
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstVerticalAlignment.Middle
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstVerticalAlignment.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

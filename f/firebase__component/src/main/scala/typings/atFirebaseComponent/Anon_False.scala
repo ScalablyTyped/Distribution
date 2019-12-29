@@ -1,6 +1,6 @@
 package typings.atFirebaseComponent
 
-import typings.atFirebaseComponent.atFirebaseComponentNumbers.`false`
+import typings.atFirebaseComponent.atFirebaseComponentBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

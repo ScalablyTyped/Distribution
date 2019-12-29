@@ -11,7 +11,8 @@ class Characters protected () extends js.Object {
   var Caption: String = js.native
   val Count: Double = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Characters_typekey`: Characters = js.native
+  @JSName("Excel.Characters_typekey")
+  var ExcelDotCharacters_typekey: Characters = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Parent: js.Any = js.native
   var PhoneticCharacters: String = js.native

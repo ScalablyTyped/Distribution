@@ -1,7 +1,5 @@
 package typings.reduxDashPromise.reduxDashPromiseMod
 
-import typings.reduxDashPromise.reduxDashPromiseMod.reduxMod.Dispatch
-import typings.reduxDashPromise.reduxDashPromiseMod.reduxMod.PromiseAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsCoreObserverMod.Observer
-import typings.wonderDashFrp.distCommonjsObserverAnonymousObserverMod.AnonymousObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

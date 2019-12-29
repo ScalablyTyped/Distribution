@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +18,9 @@ trait Connection extends js.Object {
     * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the executions of the remote method. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def broadcast(methodName: String): js.Array[IPromise[_]] = js.native
-  def broadcast(methodName: String, data: js.Any): js.Array[IPromise[_]] = js.native
-  def broadcast(methodName: String, data: js.Any, options: ConnectionBroadcastOptions): js.Array[IPromise[_]] = js.native
+  def broadcast(methodName: String): js.Array[js.Promise[_]] = js.native
+  def broadcast(methodName: String, data: js.Any): js.Array[js.Promise[_]] = js.native
+  def broadcast(methodName: String, data: js.Any, options: ConnectionBroadcastOptions): js.Array[js.Promise[_]] = js.native
   /**
     * Closes the existing connection instance to workers. Notifies all workers to destroy the connection instance and dispose the remote module.
     *
@@ -42,9 +41,9 @@ trait Connection extends js.Object {
     * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the execution of the remote method. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def invoke(methodName: String): IPromise[_] = js.native
-  def invoke(methodName: String, data: js.Any): IPromise[_] = js.native
-  def invoke(methodName: String, data: js.Any, options: ConnectionInvokeOptions): IPromise[_] = js.native
+  def invoke(methodName: String): js.Promise[_] = js.native
+  def invoke(methodName: String, data: js.Any): js.Promise[_] = js.native
+  def invoke(methodName: String, data: js.Any, options: ConnectionInvokeOptions): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.Connection")

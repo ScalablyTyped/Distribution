@@ -1,8 +1,6 @@
 package typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod.Severity.Error
-import typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod.Severity.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

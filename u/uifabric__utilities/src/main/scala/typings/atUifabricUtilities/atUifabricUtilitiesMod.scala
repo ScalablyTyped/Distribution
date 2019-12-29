@@ -3,6 +3,7 @@ package typings.atUifabricUtilities
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IProcessedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
+import typings.atUifabricUtilities.atUifabricUtilitiesBooleans.`false`
 import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`100`
 import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`101`
 import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`102`
@@ -102,7 +103,6 @@ import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`97`
 import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`98`
 import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`99`
 import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`9`
-import typings.atUifabricUtilities.atUifabricUtilitiesNumbers.`false`
 import typings.atUifabricUtilities.atUifabricUtilitiesStrings.`data-is-scrollable`
 import typings.atUifabricUtilities.atUifabricUtilitiesStrings.`data-no-horizontal-wrap`
 import typings.atUifabricUtilities.atUifabricUtilitiesStrings.`data-no-vertical-wrap`
@@ -254,6 +254,8 @@ object atUifabricUtilitiesMod extends js.Object {
   val videoProperties: js.Array[String] = js.native
   def addDirectionalKeyCode(which: Double): Unit = js.native
   def addElementAtIndex[T](array: js.Array[T], index: Double, itemToAdd: T): js.Array[T] = js.native
+  def allowOverscrollOnElement(element: Null, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
+  def allowOverscrollOnElement(element: HTMLElement, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
   def allowScrollOnElement(element: Null, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
   def allowScrollOnElement(element: HTMLElement, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
   def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[Unit] = js.native
@@ -390,7 +392,9 @@ object atUifabricUtilitiesMod extends js.Object {
     tabbable: js.UndefOr[Boolean]
   ): HTMLElement | Null = js.native
   def getRTL(): Boolean = js.native
+  def getRTL(theme: Anon_Rtl): Boolean = js.native
   def getRTLSafeKeyCode(key: Double): Double = js.native
+  def getRTLSafeKeyCode(key: Double, theme: Anon_Rtl): Double = js.native
   def getRect(): js.UndefOr[IRectangle] = js.native
   def getRect(element: HTMLElement): js.UndefOr[IRectangle] = js.native
   def getRect(element: Window): js.UndefOr[IRectangle] = js.native

@@ -1,10 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.MediaCommand.PAUSE
-import typings.chrome.chrome.cast.media.MediaCommand.SEEK
-import typings.chrome.chrome.cast.media.MediaCommand.STREAM_MUTE
-import typings.chrome.chrome.cast.media.MediaCommand.STREAM_VOLUME
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

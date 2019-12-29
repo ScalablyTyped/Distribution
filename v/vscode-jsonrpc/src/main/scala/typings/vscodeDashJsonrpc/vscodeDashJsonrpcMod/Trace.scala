@@ -1,9 +1,6 @@
 package typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace.Messages
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace.Off
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace.Verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

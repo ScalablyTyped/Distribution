@@ -1,13 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.BreakType.line
-import typings.officeDashJsDashPreview.Word.BreakType.next
-import typings.officeDashJsDashPreview.Word.BreakType.page
-import typings.officeDashJsDashPreview.Word.BreakType.sectionContinuous
-import typings.officeDashJsDashPreview.Word.BreakType.sectionEven
-import typings.officeDashJsDashPreview.Word.BreakType.sectionNext
-import typings.officeDashJsDashPreview.Word.BreakType.sectionOdd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

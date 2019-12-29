@@ -13,5 +13,10 @@ object internalUtilImmediateMod extends js.Object {
     def setImmediate(cb: js.Function0[Unit]): Double = js.native
   }
   
+  @js.native
+  object TestTools extends js.Object {
+    def pending(): Double = js.native
+  }
+  
 }
 

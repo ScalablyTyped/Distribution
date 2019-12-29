@@ -1,7 +1,5 @@
 package typings.javascriptDashObfuscator
 
-import typings.javascriptDashObfuscator.javascriptDashObfuscatorMod.ObfuscatedCode
-import typings.javascriptDashObfuscator.javascriptDashObfuscatorMod.ObfuscatorOptions
 import typings.javascriptDashObfuscator.srcInterfacesSourceDashCodeIObfuscatedCodeMod.IObfuscatedCode
 import typings.javascriptDashObfuscator.srcTypesOptionsTInputOptionsMod.TInputOptions
 import scala.scalajs.js

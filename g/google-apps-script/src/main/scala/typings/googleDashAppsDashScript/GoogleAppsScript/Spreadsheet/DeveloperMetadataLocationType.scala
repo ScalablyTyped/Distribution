@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataLocationType.COLUMN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataLocationType.ROW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataLocationType.SHEET
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataLocationType.SPREADSHEET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

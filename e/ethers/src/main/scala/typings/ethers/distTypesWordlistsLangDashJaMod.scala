@@ -1,6 +1,5 @@
 package typings.ethers
 
-import typings.ethers.distTypesWordlistsLangDashJaMod.LangJa
 import typings.ethers.distTypesWordlistsWordlistMod.Wordlist
 import scala.scalajs.js
 import scala.scalajs.js.`|`

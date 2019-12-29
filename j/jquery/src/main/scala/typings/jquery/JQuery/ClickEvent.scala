@@ -71,7 +71,7 @@ object ClickEvent {
     originalEvent: _MouseEvent = null,
     pointerId: js.UndefOr[scala.Nothing] = js.undefined,
     pointerType: js.UndefOr[scala.Nothing] = js.undefined,
-    relatedTarget: Null = null,
+    relatedTarget: js.UndefOr[scala.Nothing] = js.undefined,
     result: js.Any = null,
     targetTouches: js.UndefOr[scala.Nothing] = js.undefined,
     touches: js.UndefOr[scala.Nothing] = js.undefined
@@ -87,7 +87,7 @@ object ClickEvent {
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     if (!js.isUndefined(pointerId)) __obj.updateDynamic("pointerId")(pointerId.asInstanceOf[js.Any])
     if (!js.isUndefined(pointerType)) __obj.updateDynamic("pointerType")(pointerType.asInstanceOf[js.Any])
-    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(relatedTarget)) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (!js.isUndefined(targetTouches)) __obj.updateDynamic("targetTouches")(targetTouches.asInstanceOf[js.Any])
     if (!js.isUndefined(touches)) __obj.updateDynamic("touches")(touches.asInstanceOf[js.Any])

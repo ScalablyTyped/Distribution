@@ -1,7 +1,6 @@
 package typings.dojo.dojox.drawing
 
 import typings.dojo.dojox.drawing.manager.Anchors
-import typings.dojo.dojox.drawing.stencil._Base
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

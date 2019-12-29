@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.android
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.ios
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.linux
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.unknown
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.windows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

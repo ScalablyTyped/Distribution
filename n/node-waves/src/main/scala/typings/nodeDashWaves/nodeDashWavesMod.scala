@@ -1,6 +1,5 @@
 package typings.nodeDashWaves
 
-import typings.nodeDashWaves.nodeDashWavesMod.ElementSelector
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

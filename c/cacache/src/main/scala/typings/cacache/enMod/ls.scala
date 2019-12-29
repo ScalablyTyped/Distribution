@@ -1,7 +1,6 @@
 package typings.cacache.enMod
 
 import typings.cacache.Anon_Size
-import typings.cacache.enMod.ls.Cache
 import typings.node.NodeJS.ReadableStream
 import typings.std.Record
 import scala.scalajs.js

@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.LabelStyle.FILL
-import typings.cesium.cesiumMod.LabelStyle.FILL_AND_OUTLINE
-import typings.cesium.cesiumMod.LabelStyle.OUTLINE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,8 +3,6 @@ package typings.winrtDashUwp.Windows.Media.Capture
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtDashUwp.Windows.Foundation.TypedEventHandler
-import typings.winrtDashUwp.Windows.Media.Capture.Core.VariablePhotoCapturedEventArgs
-import typings.winrtDashUwp.Windows.Media.Capture.Core.VariablePhotoSequenceCapture
 import typings.winrtDashUwp.Windows.WinRTEvent
 import typings.winrtDashUwp.winrtDashUwpStrings.photocaptured
 import typings.winrtDashUwp.winrtDashUwpStrings.stopped

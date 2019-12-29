@@ -1,6 +1,6 @@
 package typings.gapiDotCalendar.gapi.client.calendar
 
-import typings.gapiDotCalendar.gapiDotCalendarStrings.`calendar#calendar`
+import typings.gapiDotCalendar.gapiDotCalendarStrings.calendarNumbersigncalendar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Calendar extends js.Object {
   var description: js.UndefOr[String] = js.undefined
   var etag: typings.gapiDotCalendar.gapi.client.calendar.etag
   var id: String
-  var kind: `calendar#calendar`
+  var kind: calendarNumbersigncalendar
   var location: js.UndefOr[String] = js.undefined
   var summary: String
   var timeZone: js.UndefOr[String] = js.undefined
@@ -20,7 +20,7 @@ object Calendar {
   def apply(
     etag: etag,
     id: String,
-    kind: `calendar#calendar`,
+    kind: calendarNumbersigncalendar,
     summary: String,
     description: String = null,
     location: String = null,

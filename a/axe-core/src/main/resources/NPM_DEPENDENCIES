@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "axe-core" : "3.4.0"
+      "axe-core" : "3.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "axe-core" : "3.4.0"
+      "axe-core" : "3.4.1"
     }
   ],
   "compile-devDependencies" : [

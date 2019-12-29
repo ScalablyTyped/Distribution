@@ -1,6 +1,7 @@
 package typings.mocha.Mocha.reporters.XUnit
 
 import typings.mocha.Mocha.Interface
+import typings.mocha.Mocha.ReporterConstructor
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +28,7 @@ object MochaOptions {
     ignoreLeaks: js.UndefOr[Boolean] = js.undefined,
     inlineDiffs: js.UndefOr[Boolean] = js.undefined,
     noHighlighting: js.UndefOr[Boolean] = js.undefined,
-    reporter: String | typings.mocha.Mocha.ReporterConstructor = null,
+    reporter: String | ReporterConstructor = null,
     reporterOptions: js.Any = null,
     retries: Int | Double = null,
     slow: Int | Double = null,

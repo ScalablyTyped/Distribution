@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object ngDashTableStrings {
   @js.native
-  sealed trait Empty extends GroupSort
+  sealed trait _empty extends GroupSort
   
   @js.native
   sealed trait asc
@@ -28,7 +28,7 @@ object ngDashTableStrings {
   sealed trait stack extends FilterLayout
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline

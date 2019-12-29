@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionError.InvalidPath
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionError.MergeContentNotFound
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionError.None
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionError.OtherError
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionError.PathInUse
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionError.UnknownAction
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionError.UnknownMergeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

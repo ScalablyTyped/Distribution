@@ -28,7 +28,8 @@ class Frame protected () extends js.Object {
   val InsideHeight: Double = js.native
   val InsideWidth: Double = js.native
   var KeepScrollBarsVisible: fmScrollBars = js.native
-  var `MSForms.Frame_typekey`: Frame = js.native
+  @JSName("MSForms.Frame_typekey")
+  var MSFormsDotFrame_typekey: Frame = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var Picture: StdPicture = js.native

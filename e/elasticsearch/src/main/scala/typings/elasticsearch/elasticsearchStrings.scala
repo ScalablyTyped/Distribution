@@ -15,10 +15,10 @@ object elasticsearchStrings {
   sealed trait AND extends DefaultOperator
   
   @js.native
-  sealed trait Empty extends _Refresh
+  sealed trait OR extends DefaultOperator
   
   @js.native
-  sealed trait OR extends DefaultOperator
+  sealed trait _empty extends _Refresh
   
   @js.native
   sealed trait abort extends Conflicts
@@ -170,9 +170,9 @@ object elasticsearchStrings {
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def OR: OR = "OR".asInstanceOf[OR]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline

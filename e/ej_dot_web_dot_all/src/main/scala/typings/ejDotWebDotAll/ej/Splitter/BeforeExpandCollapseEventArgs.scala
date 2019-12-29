@@ -16,7 +16,7 @@ trait BeforeExpandCollapseEventArgs extends js.Object {
   var expanded: js.UndefOr[js.Any] = js.undefined
   /** returns the splitter model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Splitter.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the current split bar index.
     */
   var splitbarIndex: js.UndefOr[Double] = js.undefined
@@ -31,7 +31,7 @@ object BeforeExpandCollapseEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     collapsed: js.Any = null,
     expanded: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Splitter.Model = null,
+    model: Model = null,
     splitbarIndex: Int | Double = null,
     `type`: String = null
   ): BeforeExpandCollapseEventArgs = {

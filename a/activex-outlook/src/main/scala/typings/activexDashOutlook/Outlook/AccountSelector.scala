@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class AccountSelector protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
-  var `Outlook.AccountSelector_typekey`: AccountSelector = js.native
+  @JSName("Outlook.AccountSelector_typekey")
+  var OutlookDotAccountSelector_typekey: AccountSelector = js.native
   val Parent: js.Any = js.native
   val SelectedAccount: Account = js.native
   val Session: NameSpace = js.native

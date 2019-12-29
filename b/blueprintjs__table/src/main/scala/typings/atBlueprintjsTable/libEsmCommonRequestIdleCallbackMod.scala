@@ -1,6 +1,5 @@
 package typings.atBlueprintjsTable
 
-import typings.atBlueprintjsTable.libEsmCommonRequestIdleCallbackMod.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

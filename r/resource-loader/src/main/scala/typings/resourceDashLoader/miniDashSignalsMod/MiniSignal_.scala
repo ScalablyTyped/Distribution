@@ -1,8 +1,8 @@
 package typings.resourceDashLoader.miniDashSignalsMod
 
 import typings.resourceDashLoader.miniDashSignalsMod.MiniSignal.MiniSignalBinding
-import typings.resourceDashLoader.resourceDashLoaderNumbers.`false`
-import typings.resourceDashLoader.resourceDashLoaderNumbers.`true`
+import typings.resourceDashLoader.resourceDashLoaderBooleans.`false`
+import typings.resourceDashLoader.resourceDashLoaderBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.appDashBuilderDashLib
 
 import typings.appDashBuilderDashLib.outPlatformPackagerMod.PlatformPackager
-import typings.appDashBuilderDashLib.outTargetsNsisNsisLangMod.LangConfigurator
 import typings.appDashBuilderDashLib.outTargetsNsisNsisOptionsMod.NsisOptions
 import typings.appDashBuilderDashLib.outTargetsNsisNsisScriptGeneratorMod.NsisScriptGenerator
 import scala.scalajs.js

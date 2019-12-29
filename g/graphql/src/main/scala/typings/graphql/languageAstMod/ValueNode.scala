@@ -28,38 +28,20 @@ trait ValueNode extends js.Object
 
 object ValueNode {
   @scala.inline
-  def BooleanValueNode(kind: BooleanValue, value: Boolean, loc: Location = null): ValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValueNode]
-  }
-  @scala.inline
-  def FloatValueNode(kind: FloatValue, value: String, loc: Location = null): ValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValueNode]
-  }
-  @scala.inline
-  def ObjectValueNode(fields: js.Array[ObjectFieldNode], kind: ObjectValue, loc: Location = null): ValueNode = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValueNode]
-  }
-  @scala.inline
   def NullValueNode(kind: NullValue, loc: Location = null): ValueNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueNode]
   }
   @scala.inline
-  def ListValueNode(kind: ListValue, values: js.Array[ValueNode], loc: Location = null): ValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+  def VariableNode(kind: Variable, name: NameNode, loc: Location = null): ValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueNode]
   }
   @scala.inline
-  def EnumValueNode(kind: EnumValue, value: String, loc: Location = null): ValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def ObjectValueNode(fields: js.Array[ObjectFieldNode], kind: ObjectValue, loc: Location = null): ValueNode = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueNode]
   }
@@ -77,8 +59,26 @@ object ValueNode {
     __obj.asInstanceOf[ValueNode]
   }
   @scala.inline
-  def VariableNode(kind: Variable, name: NameNode, loc: Location = null): ValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def ListValueNode(kind: ListValue, values: js.Array[ValueNode], loc: Location = null): ValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueNode]
+  }
+  @scala.inline
+  def BooleanValueNode(kind: BooleanValue, value: Boolean, loc: Location = null): ValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueNode]
+  }
+  @scala.inline
+  def EnumValueNode(kind: EnumValue, value: String, loc: Location = null): ValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueNode]
+  }
+  @scala.inline
+  def FloatValueNode(kind: FloatValue, value: String, loc: Location = null): ValueNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueNode]
   }

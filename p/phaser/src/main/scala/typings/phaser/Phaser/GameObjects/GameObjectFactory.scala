@@ -48,7 +48,8 @@ class GameObjectFactory protected () extends js.Object {
   /**
     * A reference to the Scene Update List.
     */
-  var `updateList;`: UpdateList = js.native
+  @JSName("updateList;")
+  var updateListSemicolon: UpdateList = js.native
   /**
     * Creates a new Arc Shape Game Object and adds it to the Scene.
     * 

@@ -1,9 +1,6 @@
 package typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Default
-import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Estimate
-import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Previous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeTextReadingOrder.leftToRight
-import typings.officeDashJsDashPreview.Excel.ShapeTextReadingOrder.rightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

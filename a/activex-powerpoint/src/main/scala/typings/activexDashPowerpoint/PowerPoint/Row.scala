@@ -11,7 +11,8 @@ class Row protected () extends js.Object {
   val Cells: CellRange = js.native
   var Height: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Row_typekey`: Row = js.native
+  @JSName("PowerPoint.Row_typekey")
+  var PowerPointDotRow_typekey: Row = js.native
   def Delete(): Unit = js.native
   def Select(): Unit = js.native
 }

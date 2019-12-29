@@ -1,7 +1,6 @@
 package typings.opener
 
 import typings.node.childUnderscoreProcessMod.ChildProcess
-import typings.opener.openerMod.Callback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

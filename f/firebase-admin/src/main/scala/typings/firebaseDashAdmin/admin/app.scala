@@ -1,6 +1,5 @@
 package typings.firebaseDashAdmin.admin
 
-import typings.firebaseDashAdmin.admin.app.App
 import typings.firebaseDashAdmin.admin.auth.Auth
 import typings.firebaseDashAdmin.admin.database.Database
 import typings.firebaseDashAdmin.admin.firestore.Firestore

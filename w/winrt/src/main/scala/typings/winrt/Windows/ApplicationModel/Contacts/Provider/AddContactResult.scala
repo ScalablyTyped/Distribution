@@ -1,9 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Contacts.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Contacts.Provider.AddContactResult.added
-import typings.winrt.Windows.ApplicationModel.Contacts.Provider.AddContactResult.alreadyAdded
-import typings.winrt.Windows.ApplicationModel.Contacts.Provider.AddContactResult.unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

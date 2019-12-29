@@ -2,8 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Date
-import typings.tstl.threadConditionVariableMod.ConditionVariable
-import typings.tstl.threadConditionVariableMod.Predicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

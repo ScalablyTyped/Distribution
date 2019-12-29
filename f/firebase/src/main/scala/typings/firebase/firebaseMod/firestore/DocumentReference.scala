@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("firebase", "firestore.DocumentReference")
 @js.native
-class DocumentReference protected () extends js.Object {
+class DocumentReference[T] protected () extends js.Object {
   /**
     * The {@link firebase.firestore.Firestore} the document is in.
     * This is useful for performing transactions, for example.
@@ -22,7 +22,7 @@ class DocumentReference protected () extends js.Object {
   /**
     * The Collection this `DocumentReference` belongs to.
     */
-  val parent: CollectionReference = js.native
+  val parent: CollectionReference[T] = js.native
   /**
     * A string representing the path of the referenced document (relative
     * to the root of the database).
@@ -35,7 +35,7 @@ class DocumentReference protected () extends js.Object {
     * @param collectionPath A slash-separated path to a collection.
     * @return The `CollectionReference` instance.
     */
-  def collection(collectionPath: String): CollectionReference = js.native
+  def collection(collectionPath: String): CollectionReference[DocumentData] = js.native
   /**
     * Deletes the document referred to by this `DocumentReference`.
     *
@@ -56,15 +56,15 @@ class DocumentReference protected () extends js.Object {
     * @return A Promise resolved with a DocumentSnapshot containing the
     * current document contents.
     */
-  def get(): js.Promise[DocumentSnapshot] = js.native
-  def get(options: GetOptions): js.Promise[DocumentSnapshot] = js.native
+  def get(): js.Promise[DocumentSnapshot[T]] = js.native
+  def get(options: GetOptions): js.Promise[DocumentSnapshot[T]] = js.native
   /**
     * Returns true if this `DocumentReference` is equal to the provided one.
     *
     * @param other The `DocumentReference` to compare against.
     * @return true if this `DocumentReference` is equal to the provided one.
     */
-  def isEqual(other: DocumentReference): Boolean = js.native
+  def isEqual(other: DocumentReference[T]): Boolean = js.native
   /**
     * Attaches a listener for DocumentSnapshot events. You may either pass
     * individual `onNext` and `onError` callbacks or pass a single observer
@@ -77,7 +77,7 @@ class DocumentReference protected () extends js.Object {
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
-  def onSnapshot(observer: Anon_CompleteError): js.Function0[Unit] = js.native
+  def onSnapshot(observer: Anon_CompleteError[T]): js.Function0[Unit] = js.native
   /**
     * Attaches a listener for DocumentSnapshot events. You may either pass
     * individual `onNext` and `onError` callbacks or pass a single observer
@@ -93,13 +93,13 @@ class DocumentReference protected () extends js.Object {
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
-  def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot, Unit]): js.Function0[Unit] = js.native
+  def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
-    onNext: js.Function1[/* snapshot */ DocumentSnapshot, Unit],
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
-    onNext: js.Function1[/* snapshot */ DocumentSnapshot, Unit],
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ Error, Unit],
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
@@ -116,7 +116,7 @@ class DocumentReference protected () extends js.Object {
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
-  def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteErrorNext): js.Function0[Unit] = js.native
+  def onSnapshot(options: SnapshotListenOptions, observer: Anon_CompleteErrorNext[T]): js.Function0[Unit] = js.native
   /**
     * Attaches a listener for DocumentSnapshot events. You may either pass
     * individual `onNext` and `onError` callbacks or pass a single observer
@@ -133,15 +133,15 @@ class DocumentReference protected () extends js.Object {
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
-  def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ DocumentSnapshot, Unit]): js.Function0[Unit] = js.native
+  def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
-    onNext: js.Function1[/* snapshot */ DocumentSnapshot, Unit],
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
-    onNext: js.Function1[/* snapshot */ DocumentSnapshot, Unit],
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ Error, Unit],
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
@@ -155,8 +155,8 @@ class DocumentReference protected () extends js.Object {
     * @return A Promise resolved once the data has been successfully written
     * to the backend (Note that it won't resolve while you're offline).
     */
-  def set(data: DocumentData): js.Promise[Unit] = js.native
-  def set(data: DocumentData, options: SetOptions): js.Promise[Unit] = js.native
+  def set(data: T): js.Promise[Unit] = js.native
+  def set(data: T, options: SetOptions): js.Promise[Unit] = js.native
   /**
     * Updates fields in the document referred to by this `DocumentReference`.
     * The update will fail if applied to a document that does not exist.
@@ -183,5 +183,16 @@ class DocumentReference protected () extends js.Object {
     */
   def update(field: String, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[Unit] = js.native
   def update(field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[Unit] = js.native
+  /**
+    * Applies a custom data converter to this DocumentReference, allowing you
+    * to use your own custom model objects with Firestore. When you call
+    * set(), get(), etc. on the returned DocumentReference instance, the
+    * provided converter will convert between Firestore data and your custom
+    * type U.
+    *
+    * @param converter Converts objects to and from Firestore.
+    * @return A DocumentReference<U> that uses the provided converter.
+    */
+  def withConverter[U](converter: FirestoreDataConverter[U]): DocumentReference[U] = js.native
 }
 

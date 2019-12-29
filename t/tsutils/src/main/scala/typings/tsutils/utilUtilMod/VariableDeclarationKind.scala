@@ -1,9 +1,6 @@
 package typings.tsutils.utilUtilMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tsutils.utilUtilMod.VariableDeclarationKind.Const
-import typings.tsutils.utilUtilMod.VariableDeclarationKind.Let
-import typings.tsutils.utilUtilMod.VariableDeclarationKind.Var
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

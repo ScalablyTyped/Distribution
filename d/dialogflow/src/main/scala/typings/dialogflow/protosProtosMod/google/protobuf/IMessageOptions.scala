@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /** Properties of a MessageOptions. */
 trait IMessageOptions extends js.Object {
   /** MessageOptions .google.api.resource */
-  var `.google.api.resource`: js.UndefOr[IResourceDescriptor | Null] = js.undefined
+  @JSName(".google.api.resource")
+  var DotgoogleDotapiDotresource: js.UndefOr[IResourceDescriptor | Null] = js.undefined
   /** MessageOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   /** MessageOptions mapEntry */
@@ -24,7 +25,7 @@ trait IMessageOptions extends js.Object {
 object IMessageOptions {
   @scala.inline
   def apply(
-    `.google.api.resource`: IResourceDescriptor = null,
+    DotgoogleDotapiDotresource: IResourceDescriptor = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
     mapEntry: js.UndefOr[Boolean] = js.undefined,
     messageSetWireFormat: js.UndefOr[Boolean] = js.undefined,
@@ -32,7 +33,7 @@ object IMessageOptions {
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.resource` != null) __obj.updateDynamic(".google.api.resource")(`.google.api.resource`.asInstanceOf[js.Any])
+    if (DotgoogleDotapiDotresource != null) __obj.updateDynamic(".google.api.resource")(DotgoogleDotapiDotresource.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
     if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry.asInstanceOf[js.Any])
     if (!js.isUndefined(messageSetWireFormat)) __obj.updateDynamic("messageSetWireFormat")(messageSetWireFormat.asInstanceOf[js.Any])

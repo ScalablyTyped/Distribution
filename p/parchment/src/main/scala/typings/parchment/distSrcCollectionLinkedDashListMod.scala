@@ -1,6 +1,5 @@
 package typings.parchment
 
-import typings.parchment.distSrcCollectionLinkedDashListMod.LinkedList
 import typings.parchment.distSrcCollectionLinkedDashNodeMod.LinkedNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

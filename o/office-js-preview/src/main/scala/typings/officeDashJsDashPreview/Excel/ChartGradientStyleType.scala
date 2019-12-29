@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartGradientStyleType.extremeValue
-import typings.officeDashJsDashPreview.Excel.ChartGradientStyleType.number
-import typings.officeDashJsDashPreview.Excel.ChartGradientStyleType.percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

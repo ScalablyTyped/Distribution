@@ -2,7 +2,6 @@ package typings.ionic
 
 import typings.ionic.definitionsMod.IonicAngularServeOptions
 import typings.ionic.libProjectIonicDashAngularMod.IonicAngularProject
-import typings.ionic.libProjectIonicDashAngularServeMod.IonicAngularServeRunnerDeps
 import typings.ionic.libServeMod.ServeRunner
 import typings.ionic.libServeMod.ServeRunnerDeps
 import scala.scalajs.js

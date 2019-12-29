@@ -6,34 +6,34 @@ import scala.scalajs.js.annotation._
 
 object reduxDashFirstDashRoutingStrings {
   @js.native
-  sealed trait `ROUTER/GO` extends js.Object
+  sealed trait ROUTERSlashGO extends js.Object
   
   @js.native
-  sealed trait `ROUTER/GO_BACK` extends js.Object
+  sealed trait ROUTERSlashGO_BACK extends js.Object
   
   @js.native
-  sealed trait `ROUTER/GO_FORWARD` extends js.Object
+  sealed trait ROUTERSlashGO_FORWARD extends js.Object
   
   @js.native
-  sealed trait `ROUTER/LOCATION_CHANGE` extends js.Object
+  sealed trait ROUTERSlashLOCATION_CHANGE extends js.Object
   
   @js.native
-  sealed trait `ROUTER/PUSH` extends js.Object
+  sealed trait ROUTERSlashPUSH extends js.Object
   
   @js.native
-  sealed trait `ROUTER/REPLACE` extends js.Object
+  sealed trait ROUTERSlashREPLACE extends js.Object
   
   @scala.inline
-  def `ROUTER/GO`: `ROUTER/GO` = "ROUTER/GO".asInstanceOf[`ROUTER/GO`]
+  def ROUTERSlashGO: ROUTERSlashGO = "ROUTER/GO".asInstanceOf[ROUTERSlashGO]
   @scala.inline
-  def `ROUTER/GO_BACK`: `ROUTER/GO_BACK` = "ROUTER/GO_BACK".asInstanceOf[`ROUTER/GO_BACK`]
+  def ROUTERSlashGO_BACK: ROUTERSlashGO_BACK = "ROUTER/GO_BACK".asInstanceOf[ROUTERSlashGO_BACK]
   @scala.inline
-  def `ROUTER/GO_FORWARD`: `ROUTER/GO_FORWARD` = "ROUTER/GO_FORWARD".asInstanceOf[`ROUTER/GO_FORWARD`]
+  def ROUTERSlashGO_FORWARD: ROUTERSlashGO_FORWARD = "ROUTER/GO_FORWARD".asInstanceOf[ROUTERSlashGO_FORWARD]
   @scala.inline
-  def `ROUTER/LOCATION_CHANGE`: `ROUTER/LOCATION_CHANGE` = "ROUTER/LOCATION_CHANGE".asInstanceOf[`ROUTER/LOCATION_CHANGE`]
+  def ROUTERSlashLOCATION_CHANGE: ROUTERSlashLOCATION_CHANGE = "ROUTER/LOCATION_CHANGE".asInstanceOf[ROUTERSlashLOCATION_CHANGE]
   @scala.inline
-  def `ROUTER/PUSH`: `ROUTER/PUSH` = "ROUTER/PUSH".asInstanceOf[`ROUTER/PUSH`]
+  def ROUTERSlashPUSH: ROUTERSlashPUSH = "ROUTER/PUSH".asInstanceOf[ROUTERSlashPUSH]
   @scala.inline
-  def `ROUTER/REPLACE`: `ROUTER/REPLACE` = "ROUTER/REPLACE".asInstanceOf[`ROUTER/REPLACE`]
+  def ROUTERSlashREPLACE: ROUTERSlashREPLACE = "ROUTER/REPLACE".asInstanceOf[ROUTERSlashREPLACE]
 }
 

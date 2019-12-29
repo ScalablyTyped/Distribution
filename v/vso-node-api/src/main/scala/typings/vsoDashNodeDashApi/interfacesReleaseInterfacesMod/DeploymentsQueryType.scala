@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentsQueryType.FailingSince
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentsQueryType.Regular
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

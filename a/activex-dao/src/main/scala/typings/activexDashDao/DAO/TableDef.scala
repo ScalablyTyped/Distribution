@@ -11,7 +11,8 @@ class TableDef protected () extends js.Object {
   var Attributes: TableDefAttributeEnum = js.native
   val ConflictTable: String = js.native
   var Connect: String = js.native
-  var `DAO.TableDef_typekey`: TableDef = js.native
+  @JSName("DAO.TableDef_typekey")
+  var DAODotTableDef_typekey: TableDef = js.native
   val DateCreated: VarDate = js.native
   @JSName("Fields")
   val Fields_Original: Fields = js.native

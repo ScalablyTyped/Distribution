@@ -1,7 +1,6 @@
 package typings.smoothDashScrollbar
 
 import typings.smoothDashScrollbar.interfacesScrollbarMod.Scrollbar
-import typings.smoothDashScrollbar.utilsEventDashHubMod.EventHandler
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

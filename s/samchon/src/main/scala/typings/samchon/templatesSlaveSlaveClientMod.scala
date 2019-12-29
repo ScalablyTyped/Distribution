@@ -1,7 +1,6 @@
 package typings.samchon
 
 import typings.samchon.protocolCommunicatorIServerConnectorMod.IServerConnector
-import typings.samchon.templatesSlaveSlaveClientMod.ISlaveClient
 import typings.samchon.templatesSlaveSlaveSystemMod.SlaveSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`

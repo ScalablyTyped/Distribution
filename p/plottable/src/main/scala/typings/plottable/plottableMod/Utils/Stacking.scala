@@ -2,6 +2,7 @@ package typings.plottable.plottableMod.Utils
 
 import typings.lodash.lodashMod.MemoizedFunction
 import typings.plottable.Anon_MaximumExtents
+import typings.plottable.buildSrcCoreDatasetMod.Dataset
 import typings.plottable.buildSrcCoreInterfacesMod.IAccessor
 import typings.plottable.buildSrcUtilsStackingUtilsMod.GenericStackingResult
 import typings.plottable.buildSrcUtilsStackingUtilsMod.IStackingOrder
@@ -14,13 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object Stacking extends js.Object {
   val normalizeKey: (js.Function1[/* key */ js.Any, String]) with MemoizedFunction = js.native
+  def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[_], valueAccessor: IAccessor[Double]): StackingResult = js.native
   def stack(
-    datasets: js.Array[typings.plottable.buildSrcCoreDatasetMod.Dataset],
-    keyAccessor: IAccessor[_],
-    valueAccessor: IAccessor[Double]
-  ): StackingResult = js.native
-  def stack(
-    datasets: js.Array[typings.plottable.buildSrcCoreDatasetMod.Dataset],
+    datasets: js.Array[Dataset],
     keyAccessor: IAccessor[_],
     valueAccessor: IAccessor[Double],
     stackingOrder: IStackingOrder

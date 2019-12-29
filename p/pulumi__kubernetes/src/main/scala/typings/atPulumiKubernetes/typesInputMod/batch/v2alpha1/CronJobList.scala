@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.batch.v2alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`batch/v2alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.batchSlashv2alpha1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait CronJobList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`batch/v2alpha1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[batchSlashv2alpha1]] = js.undefined
   /**
     * items is the list of CronJobs.
     */
@@ -40,7 +40,7 @@ object CronJobList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[CronJob]]],
-    apiVersion: Input[`batch/v2alpha1`] = null,
+    apiVersion: Input[batchSlashv2alpha1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJobList] = null,
     metadata: Input[ListMeta] = null
   ): CronJobList = {

@@ -2,7 +2,6 @@ package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015MaterialStandardBasicMaterialMod.StandardBasicMaterial
 import typings.wonderDotJs.distEs2015RendererCommandQuadCommandMod.QuadCommand
-import typings.wonderDotJs.distEs2015RendererShaderLibBasicEndBasicShaderLibMod.EndBasicShaderLib
 import typings.wonderDotJs.distEs2015RendererShaderLibEngineShaderLibMod.EngineShaderLib
 import scala.scalajs.js
 import scala.scalajs.js.`|`

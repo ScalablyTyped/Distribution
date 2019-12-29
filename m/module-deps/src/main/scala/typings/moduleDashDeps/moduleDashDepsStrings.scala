@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object moduleDashDepsStrings {
   @js.native
-  sealed trait PACKAGE extends js.Object
+  sealed trait _package extends js.Object
   
   @js.native
   sealed trait file extends js.Object
@@ -18,7 +18,7 @@ object moduleDashDepsStrings {
   sealed trait transform extends js.Object
   
   @scala.inline
-  def PACKAGE: PACKAGE = "package".asInstanceOf[PACKAGE]
+  def _package: _package = "package".asInstanceOf[_package]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline

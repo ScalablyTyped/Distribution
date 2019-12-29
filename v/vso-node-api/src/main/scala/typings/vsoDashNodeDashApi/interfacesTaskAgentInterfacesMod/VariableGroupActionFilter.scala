@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.Manage
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.None
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.Use
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

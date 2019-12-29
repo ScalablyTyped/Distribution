@@ -1,15 +1,15 @@
 package typings.coinbaseDashCommerceDashNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`application/json`
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.applicationSlashjson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Accept
   extends /* key */ StringDictionary[js.Any] {
-  var Accept: `application/json`
-  var `Content-Type`: `application/json`
+  var Accept: applicationSlashjson
+  var `Content-Type`: applicationSlashjson
   var `User-Agent`: String
   var `X-CC-Api-Key`: String
   var `X-CC-Version`: String
@@ -18,8 +18,8 @@ trait Anon_Accept
 object Anon_Accept {
   @scala.inline
   def apply(
-    Accept: `application/json`,
-    `Content-Type`: `application/json`,
+    Accept: applicationSlashjson,
+    `Content-Type`: applicationSlashjson,
     `User-Agent`: String,
     `X-CC-Api-Key`: String,
     `X-CC-Version`: String,

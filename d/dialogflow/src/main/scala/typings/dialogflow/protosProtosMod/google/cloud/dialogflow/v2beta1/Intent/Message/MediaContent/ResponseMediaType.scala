@@ -1,8 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType.AUDIO
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType.RESPONSE_MEDIA_TYPE_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

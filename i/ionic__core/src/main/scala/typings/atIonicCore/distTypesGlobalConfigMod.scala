@@ -1,6 +1,5 @@
 package typings.atIonicCore
 
-import typings.atIonicCore.distTypesGlobalConfigMod.Config
 import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import typings.std.Window
 import scala.scalajs.js

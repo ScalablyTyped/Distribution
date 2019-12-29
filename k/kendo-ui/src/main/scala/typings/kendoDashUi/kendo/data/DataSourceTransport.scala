@@ -1,6 +1,7 @@
 package typings.kendoDashUi.kendo.data
 
 import typings.kendoDashUi.kendoDashUiStrings.create
+import typings.kendoDashUi.kendoDashUiStrings.destroy
 import typings.kendoDashUi.kendoDashUiStrings.read
 import typings.kendoDashUi.kendoDashUiStrings.update
 import scala.scalajs.js
@@ -17,7 +18,7 @@ trait DataSourceTransport extends js.Object {
   var parameterMap: js.UndefOr[
     js.Function2[
       /* data */ DataSourceTransportParameterMapData, 
-      /* type */ create | typings.kendoDashUi.kendoDashUiStrings.destroy | read | update, 
+      /* type */ create | destroy | read | update, 
       _
     ]
   ] = js.undefined
@@ -39,7 +40,7 @@ object DataSourceTransport {
   def apply(
     create: String | DataSourceTransportCreate | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
     destroy: String | DataSourceTransportDestroy | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
-    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ create | typings.kendoDashUi.kendoDashUiStrings.destroy | read | update) => _ = null,
+    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => _ = null,
     push: js.Function = null,
     read: String | DataSourceTransportRead | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
     signalr: DataSourceTransportSignalr | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,

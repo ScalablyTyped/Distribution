@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵDomRendererFactory2")
+@JSImport("@angular/platform-browser", "\u0275DomRendererFactory2")
 @js.native
 class ɵDomRendererFactory2 protected () extends RendererFactory2 {
   def this(eventManager: EventManager, sharedStylesHost: ɵDomSharedStylesHost, appId: String) = this()

@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IncomingHttpStatusHeader extends js.Object {
-  var `:status`: js.UndefOr[Double] = js.undefined
+  @JSName(":status")
+  var Colonstatus: js.UndefOr[Double] = js.undefined
 }
 
 object IncomingHttpStatusHeader {
   @scala.inline
-  def apply(`:status`: Int | Double = null): IncomingHttpStatusHeader = {
+  def apply(Colonstatus: Int | Double = null): IncomingHttpStatusHeader = {
     val __obj = js.Dynamic.literal()
-    if (`:status` != null) __obj.updateDynamic(":status")(`:status`.asInstanceOf[js.Any])
+    if (Colonstatus != null) __obj.updateDynamic(":status")(Colonstatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingHttpStatusHeader]
   }
 }

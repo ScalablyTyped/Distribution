@@ -27,7 +27,8 @@ class NoteItem protected () extends js.Object {
   val Links: typings.activexDashOutlook.Outlook.Links = js.native
   var MarkForDownload: OlRemoteStatus = js.native
   var MessageClass: String = js.native
-  var `Outlook.NoteItem_typekey`: NoteItem = js.native
+  @JSName("Outlook.NoteItem_typekey")
+  var OutlookDotNoteItem_typekey: NoteItem = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val Saved: Boolean = js.native

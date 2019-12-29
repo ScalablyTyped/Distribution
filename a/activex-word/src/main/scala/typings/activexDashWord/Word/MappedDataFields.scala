@@ -11,7 +11,8 @@ class MappedDataFields protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.MappedDataFields_typekey`: MappedDataFields = js.native
+  @JSName("Word.MappedDataFields_typekey")
+  var WordDotMappedDataFields_typekey: MappedDataFields = js.native
   def Item(Index: WdMappedDataFields): MappedDataField = js.native
 }
 

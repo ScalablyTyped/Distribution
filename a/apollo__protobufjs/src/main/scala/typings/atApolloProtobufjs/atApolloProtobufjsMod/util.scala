@@ -2,7 +2,6 @@ package typings.atApolloProtobufjs.atApolloProtobufjsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.atApolloProtobufjs.atApolloProtobufjsMod.util.LongBits
 import typings.long.longMod.^
 import typings.std.Error
 import typings.std.RegExp

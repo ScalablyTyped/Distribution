@@ -2,9 +2,6 @@ package typings.phaser.Phaser
 
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Scenes.Systems
-import typings.phaser.Phaser.Tweens.Timeline
-import typings.phaser.Phaser.Tweens.Tween
-import typings.phaser.Phaser.Tweens.TweenManager
 import typings.phaser.Phaser.Types.Tweens.Event
 import typings.phaser.Phaser.Types.Tweens.NumberTweenBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.StaggerConfig

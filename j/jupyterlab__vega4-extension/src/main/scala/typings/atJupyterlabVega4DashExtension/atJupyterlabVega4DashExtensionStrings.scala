@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object atJupyterlabVega4DashExtensionStrings {
   @js.native
-  sealed trait `application/vndDOTvegaDOTv4+json` extends js.Object
+  sealed trait applicationSlashvndDotvegaDotv4Plussignjson extends js.Object
   
   @js.native
-  sealed trait `application/vndDOTvegaliteDOTv2+json` extends js.Object
+  sealed trait applicationSlashvndDotvegaliteDotv2Plussignjson extends js.Object
   
   @scala.inline
-  def `application/vndDOTvegaDOTv4+json`: `application/vndDOTvegaDOTv4+json` = "application/vnd.vega.v4+json".asInstanceOf[`application/vndDOTvegaDOTv4+json`]
+  def applicationSlashvndDotvegaDotv4Plussignjson: applicationSlashvndDotvegaDotv4Plussignjson = "application/vnd.vega.v4+json".asInstanceOf[applicationSlashvndDotvegaDotv4Plussignjson]
   @scala.inline
-  def `application/vndDOTvegaliteDOTv2+json`: `application/vndDOTvegaliteDOTv2+json` = "application/vnd.vegalite.v2+json".asInstanceOf[`application/vndDOTvegaliteDOTv2+json`]
+  def applicationSlashvndDotvegaliteDotv2Plussignjson: applicationSlashvndDotvegaliteDotv2Plussignjson = "application/vnd.vegalite.v2+json".asInstanceOf[applicationSlashvndDotvegaliteDotv2Plussignjson]
 }
 

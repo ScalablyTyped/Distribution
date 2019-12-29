@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADODB.Field")
 @js.native
 class Field protected () extends js.Object {
-  var `ADODB.Field_typekey`: Field = js.native
+  @JSName("ADODB.Field_typekey")
+  var ADODBDotField_typekey: Field = js.native
   val ActualSize: Double = js.native
   /** Sum of one or more of the values in the **FieldAttributeEnum** enum */
   var Attributes: FieldAttributeEnum = js.native

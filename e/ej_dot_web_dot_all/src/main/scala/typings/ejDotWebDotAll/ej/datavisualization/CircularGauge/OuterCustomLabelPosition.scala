@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Left
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Right
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.OuterCustomLabelPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

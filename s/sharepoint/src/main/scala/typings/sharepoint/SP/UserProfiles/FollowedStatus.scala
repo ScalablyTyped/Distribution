@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.FollowedStatus.followed
-import typings.sharepoint.SP.UserProfiles.FollowedStatus.notFollowable
-import typings.sharepoint.SP.UserProfiles.FollowedStatus.notFollowed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

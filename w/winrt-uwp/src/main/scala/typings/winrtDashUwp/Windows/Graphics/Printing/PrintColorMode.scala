@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.color
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.default
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.grayscale
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.monochrome
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.notAvailable
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.printerCustom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

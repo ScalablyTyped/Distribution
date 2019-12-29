@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mqtt.Anon_AuthenticationData
 import typings.mqtt.Anon_Host
 import typings.mqtt.Anon_Payload
+import typings.mqtt.mqttStrings.mqtt
 import typings.mqtt.mqttStrings.mqtts
 import typings.mqtt.mqttStrings.ssl
 import typings.mqtt.mqttStrings.tcp
@@ -54,7 +55,7 @@ trait IClientOptions extends ISecureClientOptions {
   var path: js.UndefOr[String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var properties: js.UndefOr[Anon_AuthenticationData] = js.undefined
-  var protocol: js.UndefOr[wss | ws | typings.mqtt.mqttStrings.mqtt | mqtts | tcp | ssl | wx | wxs] = js.undefined
+  var protocol: js.UndefOr[wss | ws | mqtt | mqtts | tcp | ssl | wx | wxs] = js.undefined
   /**
     * 'MQTT'
     */
@@ -106,7 +107,7 @@ object IClientOptions {
     path: String = null,
     port: Int | Double = null,
     properties: Anon_AuthenticationData = null,
-    protocol: wss | ws | typings.mqtt.mqttStrings.mqtt | mqtts | tcp | ssl | wx | wxs = null,
+    protocol: wss | ws | mqtt | mqtts | tcp | ssl | wx | wxs = null,
     protocolId: String = null,
     protocolVersion: Int | Double = null,
     queueQoSZero: js.UndefOr[Boolean] = js.undefined,

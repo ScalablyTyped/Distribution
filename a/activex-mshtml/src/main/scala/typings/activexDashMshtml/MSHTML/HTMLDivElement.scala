@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLDivElement")
 @js.native
 class HTMLDivElement protected () extends js.Object {
-  var `MSHTML.HTMLDivElement_typekey`: HTMLDivElement = js.native
+  @JSName("MSHTML.HTMLDivElement_typekey")
+  var MSHTMLDotHTMLDivElement_typekey: HTMLDivElement = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MeshSymbol3D
   extends Symbol3D
-     with Symbol2D3D
      with typings.arcgisDashJsDashApi.__esri.symbols.Symbol2D3D
+     with Symbol2D3D
      with typings.arcgisDashJsDashApi.__esri.symbols.Symbol3D
      with symbolsSymbol3D {
   /**

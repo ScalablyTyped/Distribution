@@ -1,13 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.EditMode.Batch
-import typings.ejDotWebDotAll.ej.Grid.EditMode.DialogTemplate
-import typings.ejDotWebDotAll.ej.Grid.EditMode.ExternalForm
-import typings.ejDotWebDotAll.ej.Grid.EditMode.ExternalFormTemplate
-import typings.ejDotWebDotAll.ej.Grid.EditMode.InlineForm
-import typings.ejDotWebDotAll.ej.Grid.EditMode.InlineTemplateForm
-import typings.ejDotWebDotAll.ej.Grid.EditMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,8 +49,7 @@ object EditMode extends js.Object {
   object Batch extends TopLevel[Batch with Double]
   
   /* 1 */ @js.native
-  object Dialog
-    extends TopLevel[typings.ejDotWebDotAll.ej.Grid.EditMode.Dialog with Double]
+  object Dialog extends TopLevel[Dialog with Double]
   
   /* 2 */ @js.native
   object DialogTemplate extends TopLevel[DialogTemplate with Double]

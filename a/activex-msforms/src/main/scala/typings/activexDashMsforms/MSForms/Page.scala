@@ -26,7 +26,8 @@ class Page protected () extends js.Object {
   val InsideHeight: Double = js.native
   val InsideWidth: Double = js.native
   var KeepScrollBarsVisible: fmScrollBars = js.native
-  var `MSForms.Page_typekey`: Page = js.native
+  @JSName("MSForms.Page_typekey")
+  var MSFormsDotPage_typekey: Page = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
   var Picture: StdPicture = js.native

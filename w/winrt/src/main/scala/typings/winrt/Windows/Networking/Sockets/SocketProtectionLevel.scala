@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Sockets.SocketProtectionLevel.plainSocket
-import typings.winrt.Windows.Networking.Sockets.SocketProtectionLevel.ssl
-import typings.winrt.Windows.Networking.Sockets.SocketProtectionLevel.sslAllowNullEncryption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

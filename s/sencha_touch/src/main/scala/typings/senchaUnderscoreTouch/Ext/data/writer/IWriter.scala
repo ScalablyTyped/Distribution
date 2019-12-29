@@ -12,7 +12,7 @@ trait IWriter extends IBase {
   /** [Method] Returns the value of nameProperty
   		* @returns String
   		*/
-  var getNameProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getNameProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Formats the data for each record before sending it to the server
   		* @param record Object The record that we are writing to the server.
   		* @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
@@ -23,11 +23,11 @@ trait IWriter extends IBase {
   		*/
   var getWriteAllFields: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var nameProperty: js.UndefOr[java.lang.String] = js.undefined
+  var nameProperty: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of nameProperty
   		* @param nameProperty String The new value.
   		*/
-  var setNameProperty: js.UndefOr[js.Function1[/* nameProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setNameProperty: js.UndefOr[js.Function1[/* nameProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of writeAllFields
   		* @param writeAllFields Boolean The new value.
   		*/
@@ -51,18 +51,18 @@ object IWriter {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getNameProperty: () => java.lang.String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getNameProperty: () => String = null,
     getRecordData: /* record */ js.UndefOr[js.Any] => _ = null,
     getWriteAllFields: () => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
-    nameProperty: java.lang.String = null,
+    nameProperty: String = null,
     platformConfig: js.Any = null,
     self: IClass = null,
-    setNameProperty: /* nameProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setNameProperty: /* nameProperty */ js.UndefOr[String] => Unit = null,
     setWriteAllFields: /* writeAllFields */ js.UndefOr[Boolean] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,

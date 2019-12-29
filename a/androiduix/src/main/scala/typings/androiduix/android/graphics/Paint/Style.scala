@@ -1,9 +1,6 @@
 package typings.androiduix.android.graphics.Paint
 
 import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.android.graphics.Paint.Style.FILL
-import typings.androiduix.android.graphics.Paint.Style.FILL_AND_STROKE
-import typings.androiduix.android.graphics.Paint.Style.STROKE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

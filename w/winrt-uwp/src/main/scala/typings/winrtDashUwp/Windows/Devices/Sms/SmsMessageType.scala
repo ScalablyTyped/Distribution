@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.app
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.binary
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.broadcast
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.status
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.text
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.voicemail
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.wap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

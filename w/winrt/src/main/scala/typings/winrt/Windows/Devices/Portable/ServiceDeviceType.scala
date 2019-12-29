@@ -1,13 +1,6 @@
 package typings.winrt.Windows.Devices.Portable
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Portable.ServiceDeviceType.calendarService
-import typings.winrt.Windows.Devices.Portable.ServiceDeviceType.contactsService
-import typings.winrt.Windows.Devices.Portable.ServiceDeviceType.deviceStatusService
-import typings.winrt.Windows.Devices.Portable.ServiceDeviceType.notesService
-import typings.winrt.Windows.Devices.Portable.ServiceDeviceType.ringtonesService
-import typings.winrt.Windows.Devices.Portable.ServiceDeviceType.smsService
-import typings.winrt.Windows.Devices.Portable.ServiceDeviceType.tasksService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

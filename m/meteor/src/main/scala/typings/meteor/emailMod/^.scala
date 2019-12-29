@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/email", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var MailComposer: typings.meteor.emailMod.MailComposerStatic = js.native
+  var MailComposer: MailComposerStatic = js.native
 }
 

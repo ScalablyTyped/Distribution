@@ -18,6 +18,7 @@ class Border protected () extends js.Object {
   var LineWidth: WdLineWidth = js.native
   val Parent: js.Any = js.native
   var Visible: Boolean = js.native
-  var `Word.Border_typekey`: Border = js.native
+  @JSName("Word.Border_typekey")
+  var WordDotBorder_typekey: Border = js.native
 }
 

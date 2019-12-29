@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstHighlightType.Color
-import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstHighlightType.Opacity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

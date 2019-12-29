@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNLoops.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNLoops.ParallelMultiInstance
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNLoops.SequenceMultiInstance
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNLoops.Standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

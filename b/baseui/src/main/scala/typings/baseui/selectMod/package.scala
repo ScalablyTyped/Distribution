@@ -9,6 +9,7 @@ package object selectMod {
   import typings.baseui.Anon_InitialState
 
   type ChangeAction = js.Function0[js.Any]
+  type OptionsT = Value | OptgroupsT
   type StateReducer = js.Function3[/* stateType */ String, /* nextState */ State, /* currentState */ State, State]
   type StatefulSelectProps = SelectProps with Anon_InitialState
   type Value = js.Array[Option]

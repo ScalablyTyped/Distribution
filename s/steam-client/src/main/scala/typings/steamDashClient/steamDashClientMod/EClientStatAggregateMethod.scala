@@ -1,10 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EClientStatAggregateMethod.Event
-import typings.steamDashClient.steamDashClientMod.EClientStatAggregateMethod.LatestOnly
-import typings.steamDashClient.steamDashClientMod.EClientStatAggregateMethod.Scalar
-import typings.steamDashClient.steamDashClientMod.EClientStatAggregateMethod.Sum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,6 @@ package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject
 import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
-import typings.wonderDotJs.distEs2015EventStructureCustomEventListenerMapMod.CustomEventListenerMap
 import typings.wonderDotJs.distEs2015EventStructureEventListenerMapMod.EventListenerMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`

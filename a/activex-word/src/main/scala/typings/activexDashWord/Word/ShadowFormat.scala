@@ -24,7 +24,8 @@ class ShadowFormat protected () extends js.Object {
   var Transparency: Double = js.native
   var Type: MsoShadowType = js.native
   var Visible: MsoTriState = js.native
-  var `Word.ShadowFormat_typekey`: ShadowFormat = js.native
+  @JSName("Word.ShadowFormat_typekey")
+  var WordDotShadowFormat_typekey: ShadowFormat = js.native
   def IncrementOffsetX(Increment: Double): Unit = js.native
   def IncrementOffsetY(Increment: Double): Unit = js.native
 }

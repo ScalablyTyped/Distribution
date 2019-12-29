@@ -1,9 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ELeaderboardUploadScoreMethod.ForceUpdate
-import typings.steamDashClient.steamDashClientMod.ELeaderboardUploadScoreMethod.KeepBest
-import typings.steamDashClient.steamDashClientMod.ELeaderboardUploadScoreMethod.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

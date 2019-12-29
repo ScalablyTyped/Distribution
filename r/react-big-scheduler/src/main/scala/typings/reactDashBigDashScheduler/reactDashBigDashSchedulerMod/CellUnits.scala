@@ -1,8 +1,6 @@
 package typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.CellUnits.Day
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.CellUnits.Hour
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

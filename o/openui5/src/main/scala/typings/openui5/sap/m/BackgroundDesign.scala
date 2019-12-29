@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.BackgroundDesign.Solid
-import typings.openui5.sap.m.BackgroundDesign.Translucent
-import typings.openui5.sap.m.BackgroundDesign.Transparent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

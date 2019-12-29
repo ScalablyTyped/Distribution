@@ -1,6 +1,6 @@
 package typings.qlik.qlikMod
 
-import typings.qlik.qlikStrings.Empty
+import typings.qlik.qlikStrings._empty
 import typings.qlik.qlikStrings.always
 import typings.qlik.qlikStrings.optional
 import typings.qlik.qlikStrings.string
@@ -12,7 +12,7 @@ trait CustomPropertyString
   extends CustomPropertyCommon
      with CustomProperty {
   var defaultValue: js.UndefOr[String] = js.undefined
-  var expression: js.UndefOr[always | optional | Empty] = js.undefined
+  var expression: js.UndefOr[always | optional | _empty] = js.undefined
   var maxLength: js.UndefOr[Double] = js.undefined
   @JSName("type")
   var type_CustomPropertyString: string
@@ -23,7 +23,7 @@ object CustomPropertyString {
   def apply(
     `type`: string,
     defaultValue: String = null,
-    expression: always | optional | Empty = null,
+    expression: always | optional | _empty = null,
     label: String = null,
     maxLength: Int | Double = null,
     ref: String = null,

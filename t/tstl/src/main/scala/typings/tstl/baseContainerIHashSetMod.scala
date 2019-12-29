@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseContainerIHashSetMod.IHashSet
 import typings.tstl.baseContainerSetContainerMod.SetContainer
 import typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator
 import typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator

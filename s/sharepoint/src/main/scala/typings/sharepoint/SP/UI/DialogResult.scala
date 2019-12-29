@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UI.DialogResult.OK
-import typings.sharepoint.SP.UI.DialogResult.cancel
-import typings.sharepoint.SP.UI.DialogResult.invalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

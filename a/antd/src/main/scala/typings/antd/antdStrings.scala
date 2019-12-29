@@ -24,7 +24,7 @@ import typings.antd.libLayoutSiderMod.SiderTheme
 import typings.antd.libListMod.ColumnType
 import typings.antd.libListMod.ListItemLayout
 import typings.antd.libListMod.ListSize
-import typings.antd.libMentionsMod.MentionPlacement
+import typings.antd.libMentionMod.MentionPlacement
 import typings.antd.libMenuMenuContextMod.MenuTheme
 import typings.antd.libMenuMod.MenuMode
 import typings.antd.libMessageMod.NoticeType
@@ -156,13 +156,10 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT26DOT3` extends js.Object
+  sealed trait `3Dot26Dot4` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
-  
-  @js.native
-  sealed trait Empty extends js.Object
   
   @js.native
   sealed trait Matching extends js.Object
@@ -190,6 +187,9 @@ object antdStrings {
   
   @js.native
   sealed trait SHOW_PARENT extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait absolute extends js.Object
@@ -321,7 +321,7 @@ object antdStrings {
   sealed trait bottom
     extends DotPosition
        with MentionPlacement
-       with typings.antd.libMentionMod.MentionPlacement
+       with typings.antd.libMentionsMod.MentionPlacement
        with TabsPosition
        with TooltipPlacement
        with placementType
@@ -1719,7 +1719,7 @@ object antdStrings {
   sealed trait top
     extends DotPosition
        with MentionPlacement
-       with typings.antd.libMentionMod.MentionPlacement
+       with typings.antd.libMentionsMod.MentionPlacement
        with TabsPosition
        with TooltipPlacement
        with placementType
@@ -1962,11 +1962,9 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT26DOT3`: `3DOT26DOT3` = "3.26.3".asInstanceOf[`3DOT26DOT3`]
+  def `3Dot26Dot4`: `3Dot26Dot4` = "3.26.4".asInstanceOf[`3Dot26Dot4`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def Matching: Matching = "Matching".asInstanceOf[Matching]
   @scala.inline
@@ -1985,6 +1983,8 @@ object antdStrings {
   def SHOW_CHILD: SHOW_CHILD = "SHOW_CHILD".asInstanceOf[SHOW_CHILD]
   @scala.inline
   def SHOW_PARENT: SHOW_PARENT = "SHOW_PARENT".asInstanceOf[SHOW_PARENT]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline

@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ trait `type` extends js.Object {
     * @param params.statistics A statistics object generated from the [uniqueValues](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-uniqueValues.html) function. If statistics for the field have already been generated, then pass the object here to avoid making a second statistics query to the server.
     *
     */
-  def createPCClassRenderer(params: typeCreatePCClassRendererParams): IPromise[PCClassRendererResult]
+  def createPCClassRenderer(params: typeCreatePCClassRendererParams): js.Promise[PCClassRendererResult]
   /**
     * Generates a [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) that may be applied directly to a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) that supports renderers. The renderer contains unique symbols representing a string or a numeric value returned from the indicated field.  In most cases you will provide a `layer`, `basemap`, and `field` to generate this renderer. This is a scenario in which the values of the field aren't well known and the user doesn't know which colors to use in the visualization. You can also use a `valueExpression` instead of a `field` to visualize features based on a value returned from a script executed at runtime.
     *
@@ -51,6 +50,7 @@ trait `type` extends js.Object {
     * @param params.valueExpression An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number or a string. This expression can reference field values using the `$feature` global variable. This property overrides the `field` property and therefore is used instead of an input `field` value.
     * @param params.valueExpressionTitle Text describing the value returned from the `valueExpression`. This is used by the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget.
     * @param params.outlineOptimizationEnabled For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * @param params.sizeOptimizationEnabled For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     * @param params.legendOptions Provides options for setting a title to a field that will override the field alias defined in the service. This title will represent the field in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     * @param params.defaultSymbolEnabled Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
     * @param params.symbolType
@@ -71,9 +71,10 @@ trait `type` extends js.Object {
     * tint | Applies the symbol `color` to the desaturated geometry/texture color.
     * replace | Removes the geometry/texture color and applies the symbol `color`.
     * multiply | Multiplies geometry/texture color value with the symbol `color` value. The result is a darker color. Multiplying with white keeps the geometry color the same.
+    * @param params.returnAllCodedValues Indicates that all domain codes should be returned if the given field has domain values.
     *
     */
-  def createRenderer(params: typeCreateRendererParams): IPromise[typeRendererResult]
+  def createRenderer(params: typeCreateRendererParams): js.Promise[typeRendererResult]
 }
 
 @JSGlobal("__esri.type")

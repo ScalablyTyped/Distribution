@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.communications
-import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.gameChat
-import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.media
-import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.other
-import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.speech
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

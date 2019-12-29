@@ -20,7 +20,8 @@ class PivotCache protected () extends js.Object {
   var Connection: String = js.native
   val Creator: XlCreator = js.native
   var EnableRefresh: Boolean = js.native
-  var `Excel.PivotCache_typekey`: PivotCache = js.native
+  @JSName("Excel.PivotCache_typekey")
+  var ExcelDotPivotCache_typekey: PivotCache = js.native
   val Index: Double = js.native
   val IsConnected: Boolean = js.native
   var LocalConnection: String = js.native

@@ -32,6 +32,188 @@ trait Statement extends Node
 
 object Statement {
   @scala.inline
+  def BreakStatement(
+    `type`: typings.estree.estreeStrings.BreakStatement,
+    label: Identifier = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def ReturnStatement(
+    `type`: typings.estree.estreeStrings.ReturnStatement,
+    argument: Expression = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def WithStatement(
+    body: Statement,
+    `object`: Expression,
+    `type`: typings.estree.estreeStrings.WithStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def WhileStatement(
+    body: Statement,
+    test: Expression,
+    `type`: typings.estree.estreeStrings.WhileStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def DebuggerStatement(
+    `type`: typings.estree.estreeStrings.DebuggerStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def ForOfStatement(
+    body: Statement,
+    left: VariableDeclaration | Pattern,
+    right: Expression,
+    `type`: typings.estree.estreeStrings.ForOfStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def VariableDeclaration(
+    declarations: js.Array[VariableDeclarator],
+    kind: `var` | let | const,
+    `type`: typings.estree.estreeStrings.VariableDeclaration,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def ThrowStatement(
+    argument: Expression,
+    `type`: typings.estree.estreeStrings.ThrowStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def ClassDeclaration(
+    body: ClassBody,
+    `type`: typings.estree.estreeStrings.ClassDeclaration,
+    id: Identifier = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    superClass: Expression = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def DoWhileStatement(
+    body: Statement,
+    test: Expression,
+    `type`: typings.estree.estreeStrings.DoWhileStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
   def IfStatement(
     consequent: Statement,
     test: Expression,
@@ -107,113 +289,6 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   @scala.inline
-  def ClassDeclaration(
-    body: ClassBody,
-    `type`: typings.estree.estreeStrings.ClassDeclaration,
-    id: Identifier = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    superClass: Expression = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def EmptyStatement(
-    `type`: typings.estree.estreeStrings.EmptyStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def ReturnStatement(
-    `type`: typings.estree.estreeStrings.ReturnStatement,
-    argument: Expression = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def WhileStatement(
-    body: Statement,
-    test: Expression,
-    `type`: typings.estree.estreeStrings.WhileStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def DebuggerStatement(
-    `type`: typings.estree.estreeStrings.DebuggerStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def VariableDeclaration(
-    declarations: js.Array[VariableDeclarator],
-    kind: `var` | let | const,
-    `type`: typings.estree.estreeStrings.VariableDeclaration,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
   def TryStatement(
     block: BlockStatement,
     `type`: typings.estree.estreeStrings.TryStatement,
@@ -232,29 +307,6 @@ object Statement {
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def ForStatement(
-    body: Statement,
-    `type`: typings.estree.estreeStrings.ForStatement,
-    init: VariableDeclaration | Expression = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    test: Expression = null,
-    trailingComments: js.Array[Comment] = null,
-    update: Expression = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statement]
   }
   @scala.inline
@@ -277,89 +329,14 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   @scala.inline
-  def ForOfStatement(
-    body: Statement,
-    left: VariableDeclaration | Pattern,
-    right: Expression,
-    `type`: typings.estree.estreeStrings.ForOfStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def ThrowStatement(
-    argument: Expression,
-    `type`: typings.estree.estreeStrings.ThrowStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def WithStatement(
-    body: Statement,
-    `object`: Expression,
-    `type`: typings.estree.estreeStrings.WithStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def BreakStatement(
-    `type`: typings.estree.estreeStrings.BreakStatement,
-    label: Identifier = null,
+  def EmptyStatement(
+    `type`: typings.estree.estreeStrings.EmptyStatement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Statement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Statement]
-  }
-  @scala.inline
-  def DoWhileStatement(
-    body: Statement,
-    test: Expression,
-    `type`: typings.estree.estreeStrings.DoWhileStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
@@ -392,6 +369,23 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   @scala.inline
+  def ExpressionStatement(
+    expression: Expression,
+    `type`: typings.estree.estreeStrings.ExpressionStatement,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
   def SwitchStatement(
     cases: js.Array[SwitchCase],
     discriminant: Expression,
@@ -410,20 +404,26 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   @scala.inline
-  def ExpressionStatement(
-    expression: Expression,
-    `type`: typings.estree.estreeStrings.ExpressionStatement,
+  def ForStatement(
+    body: Statement,
+    `type`: typings.estree.estreeStrings.ForStatement,
+    init: VariableDeclaration | Expression = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
+    test: Expression = null,
+    trailingComments: js.Array[Comment] = null,
+    update: Expression = null
   ): Statement = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statement]
   }
 }

@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait IScroller extends IObservable {
   /** [Config Option] (String) */
-  var afterCtCls: js.UndefOr[java.lang.String] = js.undefined
+  var afterCtCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var afterScrollerCls: js.UndefOr[java.lang.String] = js.undefined
+  var afterScrollerCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var animateScroll: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var beforeCtCls: js.UndefOr[java.lang.String] = js.undefined
+  var beforeCtCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var beforeScrollerCls: js.UndefOr[java.lang.String] = js.undefined
+  var beforeScrollerCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the current scroll position of the innerCt element
   		* @returns Number The current scroll position
   		*/
@@ -36,7 +36,7 @@ trait IScroller extends IObservable {
     js.Function2[/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Config Option] (String) */
-  var scrollerCls: js.UndefOr[java.lang.String] = js.undefined
+  var scrollerCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var wheelIncrement: js.UndefOr[Double] = js.undefined
 }
@@ -47,13 +47,13 @@ object IScroller {
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    afterCtCls: java.lang.String = null,
-    afterScrollerCls: java.lang.String = null,
+    afterCtCls: String = null,
+    afterScrollerCls: String = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     animateScroll: js.UndefOr[Boolean] = js.undefined,
-    beforeCtCls: java.lang.String = null,
-    beforeScrollerCls: java.lang.String = null,
+    beforeCtCls: String = null,
+    beforeScrollerCls: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -61,12 +61,12 @@ object IScroller {
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getScrollPosition: () => Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IScroller = null,
@@ -76,8 +76,8 @@ object IScroller {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -86,13 +86,13 @@ object IScroller {
     scrollIncrement: Int | Double = null,
     scrollRepeatInterval: Int | Double = null,
     scrollToItem: (/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean]) => Unit = null,
-    scrollerCls: java.lang.String = null,
+    scrollerCls: String = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     wheelIncrement: Int | Double = null
   ): IScroller = {

@@ -1,15 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.between
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.equalTo
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.greaterThan
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.greaterThanOrEqual
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.invalid
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.lessThan
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.lessThanOrEqual
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.notBetween
-import typings.officeDashJs.Excel.ConditionalCellValueOperator.notEqualTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

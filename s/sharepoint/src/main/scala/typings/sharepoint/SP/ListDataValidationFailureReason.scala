@@ -1,8 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ListDataValidationFailureReason.dataFailure
-import typings.sharepoint.SP.ListDataValidationFailureReason.formulaError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

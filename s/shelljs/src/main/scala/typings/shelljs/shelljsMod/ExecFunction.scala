@@ -1,7 +1,6 @@
 package typings.shelljs.shelljsMod
 
 import typings.node.childUnderscoreProcessMod.ChildProcess
-import typings.shelljs.Anon_Async
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,14 +22,14 @@ trait ExecFunction extends js.Object {
   	 */
   def apply(command: String, callback: ExecCallback): ChildProcess = js.native
   /**
-  	 * Executes the given command synchronously.
+  	 * Executes the given command.
   	 *
   	 * @param command The command to execute.
   	 * @param options Silence and synchronous options.
   	 * @return        Returns an object containing the return code and output as string,
   	 *                or if `{async: true}` was passed, a `ChildProcess`.
   	 */
-  def apply(command: String, options: ExecOptions with Anon_Async): ShellString = js.native
+  def apply(command: String, options: ExecOptions): ShellString | ChildProcess = js.native
   /**
   	 * Executes the given command synchronously.
   	 *

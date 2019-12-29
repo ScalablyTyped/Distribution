@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcLightsLightMod.Light
-import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathVector2Mod.Vector2
 import typings.three.srcMathVector4Mod.Vector4

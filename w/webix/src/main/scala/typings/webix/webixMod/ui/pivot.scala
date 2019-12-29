@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class pivot ()
   extends typings.webix.webix.ui.baseview {
-  @JSName("$$")
-  var $$: js.Any = js.native
   @JSName("$divider")
   var $divider: String = js.native
   @JSName("$skin")
   var $skin_Original_pivot: WebixCallback = js.native
+  @JSName("$$")
+  var DollarDollar: js.Any = js.native
   @JSName("config")
   var config_pivot: pivotConfig = js.native
   var data: DataStore = js.native

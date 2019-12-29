@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestMergeFailureType.CaseSensitive
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestMergeFailureType.None
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestMergeFailureType.ObjectTooLarge
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestMergeFailureType.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

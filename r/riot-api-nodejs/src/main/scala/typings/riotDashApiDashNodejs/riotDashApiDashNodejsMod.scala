@@ -1,19 +1,6 @@
 package typings.riotDashApiDashNodejs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.API
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.BR
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.EUNE
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.EUW
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.KR
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.LAN
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.LAS
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.NA
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.OCE
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.PBE
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.RU
-import typings.riotDashApiDashNodejs.riotDashApiDashNodejsMod.region_e.TR
 import typings.riotDashGamesDashApi.RiotGamesAPI.Champion.ChampionDto
 import typings.riotDashGamesDashApi.RiotGamesAPI.Champion.ChampionListDto
 import typings.riotDashGamesDashApi.RiotGamesAPI.ChampionMastery.ChampionMasteryDto

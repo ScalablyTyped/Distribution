@@ -249,7 +249,8 @@ class Options protected () extends js.Object {
   var WPDocNavKeys: Boolean = js.native
   var WPHelp: Boolean = js.native
   var WarnBeforeSavingPrintingSendingMarkup: Boolean = js.native
-  var `Word.Options_typekey`: Options = js.native
+  @JSName("Word.Options_typekey")
+  var WordDotOptions_typekey: Options = js.native
   def DefaultFilePath(Path: WdDefaultFilePath): String = js.native
   def SetWPHelpOptions(
     CommandKeyHelp: js.UndefOr[js.Any],

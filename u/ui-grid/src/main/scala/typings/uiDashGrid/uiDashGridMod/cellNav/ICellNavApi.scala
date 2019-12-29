@@ -31,7 +31,7 @@ trait ICellNavApi[TEntity] extends js.Object {
     * @param {TEntity} rowEntity gridOptions.data[] array instance to make visible and set focus
     * @param {IColumnDef} colDef Column definition to make visible and set focus
     */
-  def scrollToFocus(rowEntity: TEntity, colDef: typings.uiDashGrid.uiDashGridMod.cellNav.IColumnDef): IPromise[_]
+  def scrollToFocus(rowEntity: TEntity, colDef: IColumnDef): IPromise[_]
 }
 
 object ICellNavApi {
@@ -41,7 +41,7 @@ object ICellNavApi {
     getFocusedCell: () => IRowCol[TEntity],
     on: Anon_Handler[TEntity],
     rowColSelectIndex: IRowCol[TEntity] => Double,
-    scrollToFocus: (TEntity, typings.uiDashGrid.uiDashGridMod.cellNav.IColumnDef) => IPromise[_]
+    scrollToFocus: (TEntity, IColumnDef) => IPromise[_]
   ): ICellNavApi[TEntity] = {
     val __obj = js.Dynamic.literal(getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getFocusedCell = js.Any.fromFunction0(getFocusedCell), on = on.asInstanceOf[js.Any], rowColSelectIndex = js.Any.fromFunction1(rowColSelectIndex), scrollToFocus = js.Any.fromFunction2(scrollToFocus))
   

@@ -5,8 +5,6 @@ import typings.reactDashSpinners.interfacesMod.CalcFunction
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import typings.reactDashSpinners.interfacesMod.PrecompiledCss
 import typings.reactDashSpinners.interfacesMod.StyleFunction
-import typings.reactDashSpinners.moonLoaderMod.BallStyleFunction
-import typings.reactDashSpinners.moonLoaderMod.Loader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

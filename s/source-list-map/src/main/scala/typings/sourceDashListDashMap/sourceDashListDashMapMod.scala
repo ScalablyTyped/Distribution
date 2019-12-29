@@ -1,9 +1,5 @@
 package typings.sourceDashListDashMap
 
-import typings.sourceDashListDashMap.sourceDashListDashMapMod.CodeNode
-import typings.sourceDashListDashMap.sourceDashListDashMapMod.MappingsContext
-import typings.sourceDashListDashMap.sourceDashListDashMapMod.SourceListMap
-import typings.sourceDashListDashMap.sourceDashListDashMapMod.SourceNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

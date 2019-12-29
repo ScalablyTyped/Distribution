@@ -1,7 +1,7 @@
 package typings.astDashTypes.genNamedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
-import typings.astDashTypes.astDashTypesNumbers.`false`
+import typings.astDashTypes.astDashTypesBooleans.`false`
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.FunctionKind

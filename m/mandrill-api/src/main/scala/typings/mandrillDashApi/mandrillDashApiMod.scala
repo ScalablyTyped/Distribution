@@ -1,23 +1,5 @@
 package typings.mandrillDashApi
 
-import typings.mandrillDashApi.mandrillDashApiMod.Exports
-import typings.mandrillDashApi.mandrillDashApiMod.ICallback
-import typings.mandrillDashApi.mandrillDashApiMod.IErrorCallback
-import typings.mandrillDashApi.mandrillDashApiMod.Inbound
-import typings.mandrillDashApi.mandrillDashApiMod.Internal
-import typings.mandrillDashApi.mandrillDashApiMod.Ips
-import typings.mandrillDashApi.mandrillDashApiMod.Mandrill
-import typings.mandrillDashApi.mandrillDashApiMod.Messages
-import typings.mandrillDashApi.mandrillDashApiMod.Metadata
-import typings.mandrillDashApi.mandrillDashApiMod.Rejects
-import typings.mandrillDashApi.mandrillDashApiMod.Senders
-import typings.mandrillDashApi.mandrillDashApiMod.Subaccounts
-import typings.mandrillDashApi.mandrillDashApiMod.Tags
-import typings.mandrillDashApi.mandrillDashApiMod.Templates
-import typings.mandrillDashApi.mandrillDashApiMod.Urls
-import typings.mandrillDashApi.mandrillDashApiMod.Users
-import typings.mandrillDashApi.mandrillDashApiMod.Webhooks
-import typings.mandrillDashApi.mandrillDashApiMod.Whitelists
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

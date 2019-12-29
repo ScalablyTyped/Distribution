@@ -1,7 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`many-to-many`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`one-to-many`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`one-to-one`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Relationship extends Accessor {
   /**
-    * The cardinality which specifies the number of objects in the origin [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) related to the number of objects in the destination [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). Please see the [Desktop help](http://desktop.arcgis.com/en/arcmap/10.3/manage-data/relationships/relationship-class-properties.htm#GUID-989CB1D1-AC51-4A4C-8D9D-0AB9E647FFFD) for additional information on cardinality.  **Possible values:** one-to-one | one-to-many | many-to-many
+    * The cardinality which specifies the number of objects in the origin [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) related to the number of objects in the destination [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). Please see the [Desktop help](http://desktop.arcgis.com/en/arcmap/10.3/manage-data/relationships/relationship-class-properties.htm#GUID-989CB1D1-AC51-4A4C-8D9D-0AB9E647FFFD) for additional information on cardinality.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#cardinality)
     */
-  var cardinality: String = js.native
+  var cardinality: `one-to-one` | `one-to-many` | `many-to-many` = js.native
   /**
     * The unique ID for the relationship. These ids for the relationships the [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) participates in are listed in the ArcGIS Services directory.
     *
@@ -77,6 +79,7 @@ trait relationship extends js.Object {
     * **Possible Values:** 2 | 3 | 4
     * @param params.basemap The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization. Determines optimal colors for the output renderer.
     * @param params.outlineOptimizationEnabled For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * @param params.sizeOptimizationEnabled For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     * @param params.legendOptions Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     * @param params.relationshipScheme In authoring apps, the user may select a pre-defined relationship scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     * @param params.symbolType
@@ -98,7 +101,7 @@ trait relationship extends js.Object {
     *   multiply | Multiplies geometry/texture color value with the symbol `color` value. The result is a darker color. Multiplying with white keeps the geometry color the same.
     *
     */
-  def createRenderer(params: relationshipCreateRendererParams): IPromise[relationshipRendererResult]
+  def createRenderer(params: relationshipCreateRendererParams): js.Promise[relationshipRendererResult]
   /**
     * Updates a relationship renderer (bivariate choropleth) generated from [createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#createRenderer) based on the given input parameters.
     *
@@ -129,7 +132,7 @@ trait relationship extends js.Object {
     * @param params.renderer The relationship renderer (generated from [createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#createRenderer)) to update with the other parameters provided in this method.
     *
     */
-  def updateRenderer(params: relationshipUpdateRendererParams): IPromise[UniqueValueRenderer]
+  def updateRenderer(params: relationshipUpdateRendererParams): js.Promise[UniqueValueRenderer]
 }
 
 @JSGlobal("__esri.Relationship")

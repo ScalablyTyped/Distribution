@@ -14,10 +14,6 @@ trait Cache extends js.Object {
   def set[T](key: String, value: T, options: CachingConfig, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   def set[T](key: String, value: T, ttl: Double): js.Promise[_] = js.native
   def set[T](key: String, value: T, ttl: Double, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-  @JSName("set")
-  def set_T_Unit[T](key: String, value: T, options: CachingConfig): Unit = js.native
-  @JSName("set")
-  def set_T_Unit[T](key: String, value: T, ttl: Double): Unit = js.native
   // Because the library accepts multiple keys as arguments but not as an array and rather as individual parameters
   // of the function, the type definition had to be changed to this rather than specific ones
   // actual definitions would looks like this (impossible in typescript):

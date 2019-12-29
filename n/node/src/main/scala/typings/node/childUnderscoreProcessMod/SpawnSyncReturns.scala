@@ -1,14 +1,14 @@
 package typings.node.childUnderscoreProcessMod
 
-import typings.node.Error
 import typings.node.NodeJS.Signals
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SpawnSyncReturns[T] extends js.Object {
   var error: js.UndefOr[Error] = js.undefined
-  var output: js.Array[java.lang.String]
+  var output: js.Array[String]
   var pid: Double
   var signal: Signals | Null
   var status: Double | Null
@@ -19,7 +19,7 @@ trait SpawnSyncReturns[T] extends js.Object {
 object SpawnSyncReturns {
   @scala.inline
   def apply[T](
-    output: js.Array[java.lang.String],
+    output: js.Array[String],
     pid: Double,
     stderr: T,
     stdout: T,

@@ -1,9 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType
-import typings.wonderDotJs.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType.INDICE
-import typings.wonderDotJs.distEs2015RendererBufferEBufferDataTypeMod.EBufferDataType.VERTICE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

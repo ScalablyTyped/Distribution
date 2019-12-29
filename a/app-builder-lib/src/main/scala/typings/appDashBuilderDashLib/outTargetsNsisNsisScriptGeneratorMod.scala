@@ -1,6 +1,5 @@
 package typings.appDashBuilderDashLib
 
-import typings.appDashBuilderDashLib.outTargetsNsisNsisScriptGeneratorMod.NsisScriptGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

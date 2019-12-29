@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.certificates.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`certificatesDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.certificatesDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait CertificateSigningRequest extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `certificatesDOTk8sDOTio/v1beta1`
+  val apiVersion: certificatesDotk8sDotioSlashv1beta1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -38,7 +38,7 @@ trait CertificateSigningRequest extends js.Object {
 object CertificateSigningRequest {
   @scala.inline
   def apply(
-    apiVersion: `certificatesDOTk8sDOTio/v1beta1`,
+    apiVersion: certificatesDotk8sDotioSlashv1beta1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.CertificateSigningRequest,
     metadata: ObjectMeta,
     spec: CertificateSigningRequestSpec,

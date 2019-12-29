@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tooltip
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tooltip.Associate.Axis
-import typings.ejDotWebDotAll.ej.Tooltip.Associate.MouseEnter
-import typings.ejDotWebDotAll.ej.Tooltip.Associate.MouseFollow
-import typings.ejDotWebDotAll.ej.Tooltip.Associate.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,8 +46,7 @@ object Associate extends js.Object {
   object Target extends TopLevel[Target with Double]
   
   /* 4 */ @js.native
-  object Window
-    extends TopLevel[typings.ejDotWebDotAll.ej.Tooltip.Associate.Window with Double]
+  object Window extends TopLevel[Window with Double]
   
 }
 

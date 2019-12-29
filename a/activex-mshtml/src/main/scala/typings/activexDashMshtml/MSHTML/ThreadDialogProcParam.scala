@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.ThreadDialogProcParam")
 @js.native
 class ThreadDialogProcParam protected () extends js.Object {
-  var `MSHTML.ThreadDialogProcParam_typekey`: ThreadDialogProcParam = js.native
+  @JSName("MSHTML.ThreadDialogProcParam_typekey")
+  var MSHTMLDotThreadDialogProcParam_typekey: ThreadDialogProcParam = js.native
   val document: js.Any = js.native
   val moniker: js.Any = js.native
   val optionString: js.Any = js.native

@@ -1,8 +1,5 @@
 package typings.couchbase.couchbaseMod
 
-import typings.couchbase.couchbaseMod.SearchFacet.DateFacet
-import typings.couchbase.couchbaseMod.SearchFacet.NumericFacet
-import typings.couchbase.couchbaseMod.SearchFacet.TermFacet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

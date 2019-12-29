@@ -67,7 +67,7 @@ trait Assertion
   @JSName("haveOwnPropertyDescriptor")
   var haveOwnPropertyDescriptor_Original: OwnPropertyDescriptor = js.native
   @JSName("haveOwnProperty")
-  var haveOwnProperty_Original: OwnProperty = js.native
+  var haveOwnProperty_Original: Property = js.native
   @JSName("include")
   var include_Original: Include = js.native
   @JSName("includes")
@@ -98,10 +98,11 @@ trait Assertion
   @JSName("ok")
   var ok_Original: Assertion = js.native
   var ordered: Ordered = js.native
+  var own: Own = js.native
   @JSName("ownPropertyDescriptor")
   var ownPropertyDescriptor_Original: OwnPropertyDescriptor = js.native
   @JSName("ownProperty")
-  var ownProperty_Original: OwnProperty = js.native
+  var ownProperty_Original: Property = js.native
   @JSName("property")
   var property_Original: Property = js.native
   @JSName("respondTo")
@@ -151,32 +152,28 @@ trait Assertion
   def arguments(`type`: String, message: String): Assertion = js.native
   def attr(name: String): Assertion = js.native
   def attr(name: String, value: String): Assertion = js.native
+  def change(`object`: Object): Assertion = js.native
   def change(`object`: Object, property: String): Assertion = js.native
   def change(`object`: Object, property: String, message: String): Assertion = js.native
+  def changes(`object`: Object): Assertion = js.native
   def changes(`object`: Object, property: String): Assertion = js.native
   def changes(`object`: Object, property: String, message: String): Assertion = js.native
   def checked(): Assertion = js.native
   def `class`(className: String): Assertion = js.native
   def closeTo(expected: Double, delta: Double): Assertion = js.native
   def closeTo(expected: Double, delta: Double, message: String): Assertion = js.native
-  def contain(value: String): Assertion = js.native
-  def contain(value: String, message: String): Assertion = js.native
-  def contain(value: Double): Assertion = js.native
-  def contain(value: Double, message: String): Assertion = js.native
-  def contain(value: Object): Assertion = js.native
-  def contain(value: Object, message: String): Assertion = js.native
-  def contains(value: String): Assertion = js.native
-  def contains(value: String, message: String): Assertion = js.native
-  def contains(value: Double): Assertion = js.native
-  def contains(value: Double, message: String): Assertion = js.native
-  def contains(value: Object): Assertion = js.native
-  def contains(value: Object, message: String): Assertion = js.native
+  def contain(value: js.Any): Assertion = js.native
+  def contain(value: js.Any, message: String): Assertion = js.native
+  def contains(value: js.Any): Assertion = js.native
+  def contains(value: js.Any, message: String): Assertion = js.native
   def css(name: String): Assertion = js.native
   def css(name: String, value: String): Assertion = js.native
   def data(name: String): Assertion = js.native
   def data(name: String, value: String): Assertion = js.native
+  def decrease(`object`: Object): Assertion = js.native
   def decrease(`object`: Object, property: String): Assertion = js.native
   def decrease(`object`: Object, property: String, message: String): Assertion = js.native
+  def decreases(`object`: Object): Assertion = js.native
   def decreases(`object`: Object, property: String): Assertion = js.native
   def decreases(`object`: Object, property: String, message: String): Assertion = js.native
   def descendants(selector: String): Assertion = js.native
@@ -204,6 +201,8 @@ trait Assertion
   def frozen(`type`: String, message: String): Assertion = js.native
   def haveOwnProperty(name: String): Assertion = js.native
   def haveOwnProperty(name: String, message: String): Assertion = js.native
+  def haveOwnProperty(name: String, value: js.Any): Assertion = js.native
+  def haveOwnProperty(name: String, value: js.Any, message: String): Assertion = js.native
   def haveOwnPropertyDescriptor(name: String): Assertion = js.native
   def haveOwnPropertyDescriptor(name: String, descriptor: PropertyDescriptor): Assertion = js.native
   def haveOwnPropertyDescriptor(name: String, descriptor: PropertyDescriptor, message: String): Assertion = js.native
@@ -211,20 +210,14 @@ trait Assertion
   def hidden(): Assertion = js.native
   def html(html: String): Assertion = js.native
   def id(id: String): Assertion = js.native
-  def include(value: String): Assertion = js.native
-  def include(value: String, message: String): Assertion = js.native
-  def include(value: Double): Assertion = js.native
-  def include(value: Double, message: String): Assertion = js.native
-  def include(value: Object): Assertion = js.native
-  def include(value: Object, message: String): Assertion = js.native
-  def includes(value: String): Assertion = js.native
-  def includes(value: String, message: String): Assertion = js.native
-  def includes(value: Double): Assertion = js.native
-  def includes(value: Double, message: String): Assertion = js.native
-  def includes(value: Object): Assertion = js.native
-  def includes(value: Object, message: String): Assertion = js.native
+  def include(value: js.Any): Assertion = js.native
+  def include(value: js.Any, message: String): Assertion = js.native
+  def includes(value: js.Any): Assertion = js.native
+  def includes(value: js.Any, message: String): Assertion = js.native
+  def increase(`object`: Object): Assertion = js.native
   def increase(`object`: Object, property: String): Assertion = js.native
   def increase(`object`: Object, property: String, message: String): Assertion = js.native
+  def increases(`object`: Object): Assertion = js.native
   def increases(`object`: Object, property: String): Assertion = js.native
   def increases(`object`: Object, property: String, message: String): Assertion = js.native
   def itself(selector: String): Assertion = js.native
@@ -237,11 +230,9 @@ trait Assertion
   def length(length: Double, message: String): Assertion = js.native
   def lengthOf(length: Double): Assertion = js.native
   def lengthOf(length: Double, message: String): Assertion = js.native
-  def `match`(regexp: String, message: String): Assertion = js.native
   def `match`(regexp: RegExp): Assertion = js.native
   def `match`(regexp: RegExp, message: String): Assertion = js.native
   def `match`(selector: String): Assertion = js.native
-  def matches(regexp: String, message: String): Assertion = js.native
   def matches(regexp: RegExp): Assertion = js.native
   def matches(regexp: RegExp, message: String): Assertion = js.native
   def matches(selector: String): Assertion = js.native
@@ -257,6 +248,8 @@ trait Assertion
   def oneOf(list: js.Array[_], message: String): Assertion = js.native
   def ownProperty(name: String): Assertion = js.native
   def ownProperty(name: String, message: String): Assertion = js.native
+  def ownProperty(name: String, value: js.Any): Assertion = js.native
+  def ownProperty(name: String, value: js.Any, message: String): Assertion = js.native
   def ownPropertyDescriptor(name: String): Assertion = js.native
   def ownPropertyDescriptor(name: String, descriptor: PropertyDescriptor): Assertion = js.native
   def ownPropertyDescriptor(name: String, descriptor: PropertyDescriptor, message: String): Assertion = js.native
@@ -264,6 +257,7 @@ trait Assertion
   def prop(name: String): Assertion = js.native
   def prop(name: String, value: js.Any): Assertion = js.native
   def property(name: String): Assertion = js.native
+  def property(name: String, message: String): Assertion = js.native
   def property(name: String, value: js.Any): Assertion = js.native
   def property(name: String, value: js.Any, message: String): Assertion = js.native
   def respondTo(method: String): Assertion = js.native

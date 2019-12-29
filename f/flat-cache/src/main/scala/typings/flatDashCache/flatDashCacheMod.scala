@@ -1,7 +1,6 @@
 package typings.flatDashCache
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.flatDashCache.flatDashCacheMod.Cache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

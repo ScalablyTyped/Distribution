@@ -1,8 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.ValueFormat.Formatted
-import typings.officeDashJsDashPreview.Office.ValueFormat.Unformatted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -23,7 +23,8 @@ class NameSpace protected () extends js.Object {
   val Folders: typings.activexDashOutlook.Outlook.Folders = js.native
   val MAPIOBJECT: js.Any = js.native
   val Offline: Boolean = js.native
-  var `Outlook.NameSpace_typekey`: NameSpace = js.native
+  @JSName("Outlook.NameSpace_typekey")
+  var OutlookDotNameSpace_typekey: NameSpace = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val Stores: typings.activexDashOutlook.Outlook.Stores = js.native

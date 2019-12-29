@@ -1,7 +1,6 @@
 package typings.phaser.Phaser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.phaser.Phaser.Cache.BaseCache
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Structs.Map
 import scala.scalajs.js

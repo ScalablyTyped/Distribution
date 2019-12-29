@@ -1,6 +1,5 @@
 package typings.polished
 
-import typings.polished.libTypesInteractionStateMod._InteractionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

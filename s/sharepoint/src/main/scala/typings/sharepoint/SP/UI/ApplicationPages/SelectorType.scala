@@ -1,11 +1,6 @@
 package typings.sharepoint.SP.UI.ApplicationPages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.event
-import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.none
-import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.people
-import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.people_And_Resource
-import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.resource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,5 @@
 package typings.seleniumDashWebdriver
 
-import typings.seleniumDashWebdriver.httpMod.HttpClient
-import typings.seleniumDashWebdriver.httpMod.Request
-import typings.seleniumDashWebdriver.httpMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

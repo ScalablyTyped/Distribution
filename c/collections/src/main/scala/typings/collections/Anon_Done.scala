@@ -1,6 +1,6 @@
 package typings.collections
 
-import typings.collections.collectionsNumbers.`true`
+import typings.collections.collectionsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

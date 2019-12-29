@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.PictureFormat.bmp
-import typings.officeDashJsDashPreview.Excel.PictureFormat.gif
-import typings.officeDashJsDashPreview.Excel.PictureFormat.jpeg
-import typings.officeDashJsDashPreview.Excel.PictureFormat.png
-import typings.officeDashJsDashPreview.Excel.PictureFormat.svg
-import typings.officeDashJsDashPreview.Excel.PictureFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

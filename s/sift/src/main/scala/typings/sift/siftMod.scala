@@ -1,18 +1,6 @@
 package typings.sift
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sift.siftMod.ElemMatch
-import typings.sift.siftMod.Exec
-import typings.sift.siftMod.ExternalQuery
-import typings.sift.siftMod.FilterFn
-import typings.sift.siftMod.InternalQuery
-import typings.sift.siftMod.PluginDefinition
-import typings.sift.siftMod.PluginFunction
-import typings.sift.siftMod.Query
-import typings.sift.siftMod.Sift
-import typings.sift.siftMod.SiftQuery
-import typings.sift.siftMod.SupportedTypes
-import typings.sift.siftMod.WhereFn
 import typings.sift.siftNumbers.`-1`
 import typings.sift.siftNumbers.`0`
 import typings.sift.siftNumbers.`1`

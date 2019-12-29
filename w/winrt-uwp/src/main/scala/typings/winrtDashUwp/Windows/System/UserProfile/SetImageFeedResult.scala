@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.System.UserProfile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.changeDisabled
-import typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.success
-import typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.userCanceled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

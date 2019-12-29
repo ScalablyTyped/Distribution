@@ -1,8 +1,8 @@
 package typings.tsutils
 
 import typings.std.Map
-import typings.tsutils.tsutilsStrings.BACKSLASHn
-import typings.tsutils.tsutilsStrings.BACKSLASHrBACKSLASHn
+import typings.tsutils.tsutilsStrings.CarriagereturnLinefeed
+import typings.tsutils.tsutilsStrings.Linefeed
 import typings.tsutils.tsutilsStrings.stripInternal
 import typings.tsutils.utilControlDashFlowMod.ControlFlowEnd
 import typings.tsutils.utilConvertDashAstMod.ConvertedAst
@@ -110,7 +110,7 @@ object tsutilsMod extends js.Object {
   def getJsDoc(node: Node, sourceFile: SourceFile): js.Array[JSDoc] = js.native
   def getLateBoundPropertyNames(node: Expression, checker: TypeChecker): LateBoundPropertyNames = js.native
   def getLateBoundPropertyNamesOfPropertyName(node: PropertyName, checker: TypeChecker): LateBoundPropertyNames = js.native
-  def getLineBreakStyle(sourceFile: SourceFile): BACKSLASHn | BACKSLASHrBACKSLASHn = js.native
+  def getLineBreakStyle(sourceFile: SourceFile): Linefeed | CarriagereturnLinefeed = js.native
   def getLineRanges(sourceFile: SourceFile): js.Array[LineRange] = js.native
   @JSName("getModifier")
   def getModifier_kind(

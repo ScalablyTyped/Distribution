@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PickStyledComponentBaseanyanyanyanykeyofStyledComp extends StyledComponentInterpolation {
   @JSName("$$typeof")
-  var $$typeof: js.Symbol = js.native
+  var DollarDollartypeof: js.Symbol = js.native
   var defaultProps: js.UndefOr[Partial[StyledComponentProps[_, _, _, _]]] = js.native
   var displayName: js.UndefOr[String] = js.native
   var propTypes: js.UndefOr[WeakValidationMap[StyledComponentProps[_, _, _, _]]] = js.native

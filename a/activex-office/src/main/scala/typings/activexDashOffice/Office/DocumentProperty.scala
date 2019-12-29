@@ -12,7 +12,8 @@ class DocumentProperty[TApplication] protected () extends js.Object {
   var LinkSource: String = js.native
   var LinkToContent: Boolean = js.native
   var Name: String = js.native
-  var `Office.DocumentProperty_typekey`: DocumentProperty[TApplication] = js.native
+  @JSName("Office.DocumentProperty_typekey")
+  var OfficeDotDocumentProperty_typekey: DocumentProperty[TApplication] = js.native
   var Parent: js.Any = js.native
   var Type: MsoDocProperties = js.native
   var Value: js.Any = js.native

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.none
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toCurrentTopOfForm
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toCutter
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toNextTopOfForm
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toTakeUp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

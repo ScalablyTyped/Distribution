@@ -1,6 +1,5 @@
 package typings.jsmediatags
 
-import typings.jsmediatags.build2ID3v1TagReaderMod.ID3v1TagReader
 import typings.jsmediatags.typesMod.ByteRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`

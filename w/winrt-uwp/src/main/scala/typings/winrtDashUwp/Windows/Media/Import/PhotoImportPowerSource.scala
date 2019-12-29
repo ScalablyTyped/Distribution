@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportPowerSource.battery
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportPowerSource.external
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportPowerSource.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

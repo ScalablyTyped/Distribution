@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.CharacterFormattingScript.Normal
-import typings.devexpressDashWeb.CharacterFormattingScript.Subscript
-import typings.devexpressDashWeb.CharacterFormattingScript.Superscript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

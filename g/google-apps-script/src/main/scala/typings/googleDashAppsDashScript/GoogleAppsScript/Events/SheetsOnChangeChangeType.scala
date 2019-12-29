@@ -1,15 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Events
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.EDIT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.FORMAT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_COLUMN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_GRID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_ROW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.OTHER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_COLUMN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_GRID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_ROW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

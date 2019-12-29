@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AccWizObjects.FieldList")
 @js.native
 class FieldList protected () extends js.Object {
-  var `AccWizObjects.FieldList_typekey`: FieldList = js.native
+  @JSName("AccWizObjects.FieldList_typekey")
+  var AccWizObjectsDotFieldList_typekey: FieldList = js.native
   val FieldListCount: Double = js.native
   var HScrollPos: Double = js.native
   val JoinLineCount: Double = js.native

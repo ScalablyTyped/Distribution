@@ -1,9 +1,6 @@
 package typings.synaptic.synapticMod.Layer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.synaptic.synapticMod.Layer.connectionType.ALL_TO_ALL
-import typings.synaptic.synapticMod.Layer.connectionType.ALL_TO_ELSE
-import typings.synaptic.synapticMod.Layer.connectionType.ONE_TO_ONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactStoreAccessType.allContactsReadOnly
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactStoreAccessType.allContactsReadWrite
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactStoreAccessType.appContactsReadWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

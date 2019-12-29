@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Web.Syndication.SyndicationTextType.html
-import typings.winrt.Windows.Web.Syndication.SyndicationTextType.text
-import typings.winrt.Windows.Web.Syndication.SyndicationTextType.xhtml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

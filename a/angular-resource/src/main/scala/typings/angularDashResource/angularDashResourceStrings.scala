@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object angularDashResourceStrings {
   @js.native
-  sealed trait DOLLARresource extends js.Object
+  sealed trait $resource extends js.Object
   
   @scala.inline
-  def DOLLARresource: DOLLARresource = "$resource".asInstanceOf[DOLLARresource]
+  def $resource: $resource = "$resource".asInstanceOf[$resource]
 }
 

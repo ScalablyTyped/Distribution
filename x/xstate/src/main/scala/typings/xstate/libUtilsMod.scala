@@ -26,6 +26,7 @@ import typings.xstate.libTypesMod.Subscribable
 import typings.xstate.libTypesMod.TransitionConfig
 import typings.xstate.libTypesMod.TransitionConfigTargetShortcut
 import typings.xstate.xstateMod.State
+import typings.xstate.xstateStrings.Asterisk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,7 +113,7 @@ object libUtilsMod extends js.Object {
     ]
   ): js.Array[(TransitionConfig[TContext, TEvent]) with Anon_[TEvent]] = js.native
   def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
-    event: typings.xstate.xstateStrings.`*`,
+    event: Asterisk,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTargetShortcut[TContext, TEvent])
     ]

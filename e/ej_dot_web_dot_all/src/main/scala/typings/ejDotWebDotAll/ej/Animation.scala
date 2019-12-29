@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Animation.Fade
-import typings.ejDotWebDotAll.ej.Animation.None
-import typings.ejDotWebDotAll.ej.Animation.Slide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

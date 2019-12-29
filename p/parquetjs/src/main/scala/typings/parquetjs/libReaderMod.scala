@@ -5,9 +5,6 @@ import typings.node.Buffer
 import typings.nodeDashInt64.nodeDashInt64Mod.^
 import typings.parquetjs.libMetadataDotInterfaceMod.MetadataInterface
 import typings.parquetjs.libMetadataDotInterfaceMod.MetadataRowGroupsInterface
-import typings.parquetjs.libReaderMod.ParquetCursor
-import typings.parquetjs.libReaderMod.ParquetEnvelopeReader
-import typings.parquetjs.libReaderMod.ParquetReader
 import typings.parquetjs.libRowBufferDotInterfaceMod.RowBufferInterface
 import typings.parquetjs.libRowDotInterfaceMod.RowInterface
 import typings.parquetjs.libSchemaMod.ParquetSchema

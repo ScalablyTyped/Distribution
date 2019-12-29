@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPullRequestQueryType.Commit
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPullRequestQueryType.LastMergeCommit
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPullRequestQueryType.NotSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

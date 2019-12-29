@@ -48,7 +48,8 @@ class EmailOptions protected () extends js.Object {
   var ThemeName: String = js.native
   var UseThemeStyle: Boolean = js.native
   var UseThemeStyleOnReply: Boolean = js.native
-  var `Word.EmailOptions_typekey`: EmailOptions = js.native
+  @JSName("Word.EmailOptions_typekey")
+  var WordDotEmailOptions_typekey: EmailOptions = js.native
   def Dummy3(): Unit = js.native
 }
 

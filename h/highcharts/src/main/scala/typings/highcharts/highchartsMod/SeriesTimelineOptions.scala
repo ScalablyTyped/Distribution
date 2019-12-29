@@ -147,7 +147,7 @@ object SeriesTimelineOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     states: PlotTimelineStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     tooltip: PlotTimelineTooltipOptions = null,

@@ -15,9 +15,9 @@ trait ITaskCompactOptions
 object ITaskCompactOptions {
   @scala.inline
   def apply(
-    cwd: java.lang.String = null,
+    cwd: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    dest: java.lang.String = null,
+    dest: String = null,
     dot: js.UndefOr[Boolean] = js.undefined,
     expand: js.UndefOr[Boolean] = js.undefined,
     files: js.Any = null,
@@ -32,7 +32,7 @@ object ITaskCompactOptions {
     nonegate: js.UndefOr[Boolean] = js.undefined,
     nonull: js.UndefOr[Boolean] = js.undefined,
     options: js.Any = null,
-    src: js.Array[java.lang.String] = null
+    src: js.Array[String] = null
   ): ITaskCompactOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])

@@ -5,9 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object node {
-  import org.scalablytyped.runtime.StringDictionary
+  import typings.node.NodeJS.Module
+  import typings.node.NodeJS.Require
 
-  type NodeRequireCache = StringDictionary[NodeModule]
-  // TODO: change to `type NodeRequireFunction = (id: string) => any;` in next mayor version.
-  type NodeRequireFunction = js.Function1[/* id */ java.lang.String, js.Any]
+  type NodeModule = Module
+  /*-----------------------------------------------*
+    *                                               *
+    *                   GLOBAL                      *
+    *                                               *
+    ------------------------------------------------*/
+  // For backwards compability
+  type NodeRequire = Require
+  type RequireResolve = typings.node.NodeJS.RequireResolve
 }

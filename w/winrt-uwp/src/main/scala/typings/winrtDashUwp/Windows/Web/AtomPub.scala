@@ -8,9 +8,6 @@ import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithPr
 import typings.winrtDashUwp.Windows.Foundation.Uri
 import typings.winrtDashUwp.Windows.Security.Credentials.PasswordCredential
 import typings.winrtDashUwp.Windows.Storage.Streams.IInputStream
-import typings.winrtDashUwp.Windows.Web.AtomPub.ResourceCollection
-import typings.winrtDashUwp.Windows.Web.AtomPub.ServiceDocument
-import typings.winrtDashUwp.Windows.Web.AtomPub.Workspace
 import typings.winrtDashUwp.Windows.Web.Syndication.ISyndicationNode
 import typings.winrtDashUwp.Windows.Web.Syndication.ISyndicationText
 import typings.winrtDashUwp.Windows.Web.Syndication.RetrievalProgress

@@ -11,7 +11,8 @@ class Rules protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
   var IsRssRulesProcessingEnabled: Boolean = js.native
-  var `Outlook.Rules_typekey`: Rules = js.native
+  @JSName("Outlook.Rules_typekey")
+  var OutlookDotRules_typekey: Rules = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Create(Name: String, RuleType: OlRuleType): Rule = js.native

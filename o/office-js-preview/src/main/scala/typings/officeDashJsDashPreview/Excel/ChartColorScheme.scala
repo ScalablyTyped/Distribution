@@ -1,23 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.colorfulPalette1
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.colorfulPalette2
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.colorfulPalette3
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.colorfulPalette4
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette1
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette10
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette11
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette12
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette13
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette2
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette3
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette4
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette5
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette6
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette7
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette8
-import typings.officeDashJsDashPreview.Excel.ChartColorScheme.monochromaticPalette9
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

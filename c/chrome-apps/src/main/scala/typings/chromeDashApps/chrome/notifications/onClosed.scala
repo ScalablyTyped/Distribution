@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.notifications
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.notifications.onClosed")
 @js.native
 object onClosed
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]]
-    ]
+  extends TopLevel[Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]]]
 

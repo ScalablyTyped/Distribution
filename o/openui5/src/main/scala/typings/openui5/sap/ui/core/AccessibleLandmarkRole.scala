@@ -1,13 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.AccessibleLandmarkRole.Banner
-import typings.openui5.sap.ui.core.AccessibleLandmarkRole.Complementary
-import typings.openui5.sap.ui.core.AccessibleLandmarkRole.Main
-import typings.openui5.sap.ui.core.AccessibleLandmarkRole.Navigation
-import typings.openui5.sap.ui.core.AccessibleLandmarkRole.None
-import typings.openui5.sap.ui.core.AccessibleLandmarkRole.Region
-import typings.openui5.sap.ui.core.AccessibleLandmarkRole.Search
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

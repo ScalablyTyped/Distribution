@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access._ControlInReportEvents")
 @js.native
 class _ControlInReportEvents protected () extends js.Object {
-  var `Access._ControlInReportEvents_typekey`: _ControlInReportEvents = js.native
+  @JSName("Access._ControlInReportEvents_typekey")
+  var AccessDot_ControlInReportEvents_typekey: _ControlInReportEvents = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BottomPadding: Double = js.native
   @JSName("Controls")

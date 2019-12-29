@@ -1,13 +1,7 @@
 package typings.atStorybookUi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookUi.atStorybookUiNumbers.`false`
-import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem
-import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Linux
-import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Macintosh
-import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Windows
-import typings.atStorybookUi.distKeyboardPlatformMod.Platform
-import typings.atStorybookUi.distKeyboardPlatformMod.Platform.Mac
+import typings.atStorybookUi.atStorybookUiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,15 +57,13 @@ object distKeyboardPlatformMod extends js.Object {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Platform with Double] = js.native
     /* 1 */ @js.native
-    object Linux
-      extends TopLevel[typings.atStorybookUi.distKeyboardPlatformMod.Platform.Linux with Double]
+    object Linux extends TopLevel[Linux with Double]
     
     /* 0 */ @js.native
     object Mac extends TopLevel[Mac with Double]
     
     /* 2 */ @js.native
-    object Windows
-      extends TopLevel[typings.atStorybookUi.distKeyboardPlatformMod.Platform.Windows with Double]
+    object Windows extends TopLevel[Windows with Double]
     
   }
   

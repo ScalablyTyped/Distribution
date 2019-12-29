@@ -34,7 +34,7 @@ object Services extends js.Object {
     /**
       * Specifies the path of the default authentication service.
       */
-    var DefaultWebServicePath: java.lang.String = js.native
+    var DefaultWebServicePath: String = js.native
     /**
       * Gets or sets the default succeeded callback function for the service.
       * @return A reference to the succeeded callback function for the service.
@@ -73,7 +73,7 @@ object Services extends js.Object {
       * Gets or sets the authentication service path.
       * By default, the path property is set to an empty string. If you do not set the path property, the internal default path is used, which points to the built-in authentication service.
       */
-    def get_path(): java.lang.String = js.native
+    def get_path(): String = js.native
     /**
       * Gets or sets the authentication service time-out value.
       * The timeout property represents the time in milliseconds that the current instance of the Sys.Net.WebRequestExecutor class should wait before timing out the request.
@@ -104,11 +104,11 @@ object Services extends js.Object {
       * @exception Sys.ArgumentNullException - username is null.
       */
     def login(
-      userName: java.lang.String,
-      password: java.lang.String,
+      userName: String,
+      password: String,
       isPersistent: Boolean,
       customInfo: js.Any,
-      redirectUrl: java.lang.String,
+      redirectUrl: String,
       loginCompletedCallback: js.Function,
       failedCallback: js.Function,
       userContext: js.Any
@@ -131,7 +131,7 @@ object Services extends js.Object {
       *            User context information that you are passing to the callback functions.
       */
     def logout(
-      redirectUrl: java.lang.String,
+      redirectUrl: String,
       logoutCompletedCallback: js.Function,
       failedCallback: js.Function,
       userContext: js.Any
@@ -141,7 +141,7 @@ object Services extends js.Object {
       * @param value
       *           A string that contains the name of the default failure callback function.
       */
-    def set_defaultFailedCallback(value: java.lang.String): Unit = js.native
+    def set_defaultFailedCallback(value: String): Unit = js.native
     /**
       * Gets or sets the authentication service path.
       * You usually set the path property in declarative markup. This value can be an absolute virtual path, a relative virtual path, or a fully qualified domain name and a path.
@@ -149,7 +149,7 @@ object Services extends js.Object {
       * @param value
       *           The authentication service path.
       */
-    def set_path(value: java.lang.String): Unit = js.native
+    def set_path(value: String): Unit = js.native
     /**
       * Gets or sets the authentication service time-out value.
       * The timeout property represents the time in milliseconds that the current instance of the Sys.Net.WebRequestExecutor class should wait before timing out the request.
@@ -198,7 +198,7 @@ object Services extends js.Object {
     /**
       * Specifies the path of the default profile service.
       */
-    var DefaultWebServicePath: java.lang.String = js.native
+    var DefaultWebServicePath: String = js.native
     /**
       * Contains the loaded profile data. You can access the loaded profile data directly from the properties field.
       * An element in the properties field can be a property group of type ProfileGroup. If it is, the related properties appear as sub-properties. For more information, see Sys.Services.ProfileGroup Class.
@@ -229,7 +229,7 @@ object Services extends js.Object {
       * @return
       *      The profile path
       */
-    def get_path(): java.lang.String = js.native
+    def get_path(): String = js.native
     /**
       * Gets or sets the profile service time-out value.
       */
@@ -255,7 +255,7 @@ object Services extends js.Object {
       *      User context information passed to the callback functions.
       */
     def load(
-      propertyNames: js.Array[java.lang.String],
+      propertyNames: js.Array[String],
       loadCompletedCallback: js.Function,
       failedCallback: js.Function,
       userContext: js.Any
@@ -271,7 +271,7 @@ object Services extends js.Object {
       *      User context information passed to the callback functions.
       */
     def save(
-      propertyNames: js.Array[java.lang.String],
+      propertyNames: js.Array[String],
       saveCompletedCallback: js.Function,
       failedCallback: js.Function,
       userContext: js.Any
@@ -283,26 +283,26 @@ object Services extends js.Object {
       * @param value
       *      A string that contains the name of the default failure callback function.
       */
-    def set_defaultFailedCallback(value: java.lang.String): Unit = js.native
+    def set_defaultFailedCallback(value: String): Unit = js.native
     /**
       * Gets or sets the name of the default load-completed callback function.
       *
       * @param value
       *      A string that contains the name of the default load-completed callback function.
       */
-    def set_defaultLoadCompletedCallback(value: java.lang.String): Unit = js.native
+    def set_defaultLoadCompletedCallback(value: String): Unit = js.native
     /**
       * Gets or sets the name of the default save-completed callback function.
       * @param value
       *      A string that contains the name of the default save-completed callback function.
       */
-    def set_defaultSaveCompletedCallback(value: java.lang.String): Unit = js.native
+    def set_defaultSaveCompletedCallback(value: String): Unit = js.native
     /**
       * Gets or sets the profile service path.
       * @param value
       *          A string that contains the profile service path.
       */
-    def set_path(value: java.lang.String): Unit = js.native
+    def set_path(value: String): Unit = js.native
     /**
       * Gets or sets the profile service time-out value.
       * The timeout property represents the time in milliseconds that the current instance of the Sys.Net.WebRequestExecutor class should wait before timing out the request.

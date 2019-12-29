@@ -18,7 +18,8 @@ class Footnotes protected () extends js.Object {
   val Parent: js.Any = js.native
   val Separator: Range = js.native
   var StartingNumber: Double = js.native
-  var `Word.Footnotes_typekey`: Footnotes = js.native
+  @JSName("Word.Footnotes_typekey")
+  var WordDotFootnotes_typekey: Footnotes = js.native
   def Add(Range: Range): Footnote = js.native
   def Add(Range: Range, Reference: js.Any): Footnote = js.native
   def Add(Range: Range, Reference: js.Any, Text: js.Any): Footnote = js.native

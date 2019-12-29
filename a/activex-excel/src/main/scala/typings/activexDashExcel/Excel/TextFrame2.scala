@@ -22,7 +22,8 @@ class TextFrame2 protected () extends js.Object {
   var AutoSize: MsoAutoSize = js.native
   val Column: TextColumn2 = js.native
   val Creator: Double = js.native
-  var `Excel.TextFrame2_typekey`: TextFrame2 = js.native
+  @JSName("Excel.TextFrame2_typekey")
+  var ExcelDotTextFrame2_typekey: TextFrame2 = js.native
   val HasText: MsoTriState = js.native
   var HorizontalAnchor: MsoHorizontalAnchor = js.native
   var MarginBottom: Double = js.native

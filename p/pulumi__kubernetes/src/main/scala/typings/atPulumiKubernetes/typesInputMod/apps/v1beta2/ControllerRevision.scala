@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.apps.v1beta2
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta2`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1beta2
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated apps/v1beta2/ControllerRevision is not supported by Kubernetes 1.16+ clusters.
-  * Use apps/v1/ControllerRevision instead.
+  * @deprecated apps/v1beta2/ControllerRevision is deprecated by apps/v1/ControllerRevision and
+  * not supported by Kubernetes v1.16+ clusters.
   *
   * ControllerRevision implements an immutable snapshot of state data. Clients are responsible
   * for serializing and deserializing the objects that contain their internal state. Once a
@@ -27,7 +27,7 @@ trait ControllerRevision extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`apps/v1beta2`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[appsSlashv1beta2]] = js.undefined
   /**
     * Data is the serialized representation of the state.
     */
@@ -54,7 +54,7 @@ object ControllerRevision {
   @scala.inline
   def apply(
     revision: Input[Double],
-    apiVersion: Input[`apps/v1beta2`] = null,
+    apiVersion: Input[appsSlashv1beta2] = null,
     data: Input[js.Object] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision] = null,
     metadata: Input[ObjectMeta] = null

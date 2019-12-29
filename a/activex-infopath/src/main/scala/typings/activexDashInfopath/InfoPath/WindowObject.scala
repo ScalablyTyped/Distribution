@@ -11,7 +11,8 @@ class WindowObject protected () extends js.Object {
   var Caption: String = js.native
   val CommandBars: js.Any = js.native
   var Height: Double = js.native
-  var `InfoPath.WindowObject_typekey`: WindowObject = js.native
+  @JSName("InfoPath.WindowObject_typekey")
+  var InfoPathDotWindowObject_typekey: WindowObject = js.native
   var Left: Double = js.native
   val MailEnvelope: MailEnvelopeObject = js.native
   val TaskPanes: TaskPanesCollection = js.native

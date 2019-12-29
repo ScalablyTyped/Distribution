@@ -11,7 +11,8 @@ class Results protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
   var DefaultItemType: OlItemType = js.native
-  var `Outlook.Results_typekey`: Results = js.native
+  @JSName("Outlook.Results_typekey")
+  var OutlookDotResults_typekey: Results = js.native
   val Parent: js.Any = js.native
   val RawTable: js.Any = js.native
   val Session: NameSpace = js.native

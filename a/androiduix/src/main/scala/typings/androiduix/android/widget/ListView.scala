@@ -8,7 +8,6 @@ import typings.androiduix.android.view.KeyEvent
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.View.Predicate
 import typings.androiduix.android.widget.ListView.FixedViewInfo
-import typings.androiduix.android.widget.ListView.FocusSelector
 import typings.androiduix.java.lang.Runnable
 import typings.androiduix.java.util.ArrayList
 import typings.std.HTMLElement

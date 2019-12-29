@@ -2,8 +2,6 @@ package typings.nodegit
 
 import typings.node.eventsMod.EventEmitter
 import typings.nodegit.bufMod.Buf
-import typings.nodegit.commitMod.Commit
-import typings.nodegit.commitMod.HistoryEventEmitter
 import typings.nodegit.diffMod.Diff
 import typings.nodegit.objectMod.Object
 import typings.nodegit.oidMod.Oid

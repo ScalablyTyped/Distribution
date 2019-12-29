@@ -1,6 +1,6 @@
 package typings.ono
 
-import typings.ono.onoNumbers.`false`
+import typings.ono.onoBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

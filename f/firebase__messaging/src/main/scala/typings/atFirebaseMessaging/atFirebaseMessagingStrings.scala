@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseMessagingStrings {
   @js.native
-  sealed trait `/firebase-cloud-messaging-push-scope` extends js.Object
+  sealed trait `Slashfirebase-cloud-messaging-push-scope` extends js.Object
   
   @js.native
-  sealed trait `/firebase-messaging-swDOTjs` extends js.Object
+  sealed trait `Slashfirebase-messaging-swDotjs` extends js.Object
   
   @js.native
   sealed trait `bad-scope` extends ErrorCode
@@ -49,19 +49,19 @@ object atFirebaseMessagingStrings {
   sealed trait `get-subscription-failed` extends ErrorCode
   
   @js.native
-  sealed trait googleDOTcDOTaDOTc_id extends js.Object
+  sealed trait googleDotcDotaDotc_id extends js.Object
   
   @js.native
-  sealed trait googleDOTcDOTaDOTc_l extends js.Object
+  sealed trait googleDotcDotaDotc_l extends js.Object
   
   @js.native
-  sealed trait googleDOTcDOTaDOTe extends js.Object
+  sealed trait googleDotcDotaDote extends js.Object
   
   @js.native
-  sealed trait googleDOTcDOTaDOTts extends js.Object
+  sealed trait googleDotcDotaDotts extends js.Object
   
   @js.native
-  sealed trait `https://fcmregistrationsDOTgoogleapisDOTcom/v1` extends js.Object
+  sealed trait httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1 extends js.Object
   
   @js.native
   sealed trait `invalid-delete-token` extends ErrorCode
@@ -145,9 +145,9 @@ object atFirebaseMessagingStrings {
   sealed trait `use-sw-before-get-token` extends ErrorCode
   
   @scala.inline
-  def `/firebase-cloud-messaging-push-scope`: `/firebase-cloud-messaging-push-scope` = "/firebase-cloud-messaging-push-scope".asInstanceOf[`/firebase-cloud-messaging-push-scope`]
+  def `Slashfirebase-cloud-messaging-push-scope`: `Slashfirebase-cloud-messaging-push-scope` = "/firebase-cloud-messaging-push-scope".asInstanceOf[`Slashfirebase-cloud-messaging-push-scope`]
   @scala.inline
-  def `/firebase-messaging-swDOTjs`: `/firebase-messaging-swDOTjs` = "/firebase-messaging-sw.js".asInstanceOf[`/firebase-messaging-swDOTjs`]
+  def `Slashfirebase-messaging-swDotjs`: `Slashfirebase-messaging-swDotjs` = "/firebase-messaging-sw.js".asInstanceOf[`Slashfirebase-messaging-swDotjs`]
   @scala.inline
   def `bad-scope`: `bad-scope` = "bad-scope".asInstanceOf[`bad-scope`]
   @scala.inline
@@ -173,15 +173,15 @@ object atFirebaseMessagingStrings {
   @scala.inline
   def `get-subscription-failed`: `get-subscription-failed` = "get-subscription-failed".asInstanceOf[`get-subscription-failed`]
   @scala.inline
-  def googleDOTcDOTaDOTc_id: googleDOTcDOTaDOTc_id = "google.c.a.c_id".asInstanceOf[googleDOTcDOTaDOTc_id]
+  def googleDotcDotaDotc_id: googleDotcDotaDotc_id = "google.c.a.c_id".asInstanceOf[googleDotcDotaDotc_id]
   @scala.inline
-  def googleDOTcDOTaDOTc_l: googleDOTcDOTaDOTc_l = "google.c.a.c_l".asInstanceOf[googleDOTcDOTaDOTc_l]
+  def googleDotcDotaDotc_l: googleDotcDotaDotc_l = "google.c.a.c_l".asInstanceOf[googleDotcDotaDotc_l]
   @scala.inline
-  def googleDOTcDOTaDOTe: googleDOTcDOTaDOTe = "google.c.a.e".asInstanceOf[googleDOTcDOTaDOTe]
+  def googleDotcDotaDote: googleDotcDotaDote = "google.c.a.e".asInstanceOf[googleDotcDotaDote]
   @scala.inline
-  def googleDOTcDOTaDOTts: googleDOTcDOTaDOTts = "google.c.a.ts".asInstanceOf[googleDOTcDOTaDOTts]
+  def googleDotcDotaDotts: googleDotcDotaDotts = "google.c.a.ts".asInstanceOf[googleDotcDotaDotts]
   @scala.inline
-  def `https://fcmregistrationsDOTgoogleapisDOTcom/v1`: `https://fcmregistrationsDOTgoogleapisDOTcom/v1` = "https://fcmregistrations.googleapis.com/v1".asInstanceOf[`https://fcmregistrationsDOTgoogleapisDOTcom/v1`]
+  def httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1: httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1 = "https://fcmregistrations.googleapis.com/v1".asInstanceOf[httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1]
   @scala.inline
   def `invalid-delete-token`: `invalid-delete-token` = "invalid-delete-token".asInstanceOf[`invalid-delete-token`]
   @scala.inline

@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.CalculationState.calculating
-import typings.officeDashJs.Excel.CalculationState.done
-import typings.officeDashJs.Excel.CalculationState.pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

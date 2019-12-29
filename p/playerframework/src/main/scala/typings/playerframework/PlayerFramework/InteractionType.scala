@@ -1,10 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.InteractionType.all
-import typings.playerframework.PlayerFramework.InteractionType.hard
-import typings.playerframework.PlayerFramework.InteractionType.none
-import typings.playerframework.PlayerFramework.InteractionType.soft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -104,9 +104,6 @@ object pokerDashEvaluatorStrings {
   sealed trait `9s` extends Card
   
   @js.native
-  sealed trait JS extends Card
-  
-  @js.native
   sealed trait ac extends Card
   
   @js.native
@@ -141,6 +138,9 @@ object pokerDashEvaluatorStrings {
   
   @js.native
   sealed trait jh extends Card
+  
+  @js.native
+  sealed trait js_ extends Card
   
   @js.native
   sealed trait kc extends Card
@@ -258,8 +258,6 @@ object pokerDashEvaluatorStrings {
   @scala.inline
   def `9s`: `9s` = "9s".asInstanceOf[`9s`]
   @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
-  @scala.inline
   def ac: ac = "ac".asInstanceOf[ac]
   @scala.inline
   def ad: ad = "ad".asInstanceOf[ad]
@@ -283,6 +281,8 @@ object pokerDashEvaluatorStrings {
   def jd: jd = "jd".asInstanceOf[jd]
   @scala.inline
   def jh: jh = "jh".asInstanceOf[jh]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def kc: kc = "kc".asInstanceOf[kc]
   @scala.inline

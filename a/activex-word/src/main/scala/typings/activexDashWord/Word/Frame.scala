@@ -25,7 +25,8 @@ class Frame protected () extends js.Object {
   var VerticalPosition: Double = js.native
   var Width: Double = js.native
   var WidthRule: WdFrameSizeRule = js.native
-  var `Word.Frame_typekey`: Frame = js.native
+  @JSName("Word.Frame_typekey")
+  var WordDotFrame_typekey: Frame = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native
   def Delete(): Unit = js.native

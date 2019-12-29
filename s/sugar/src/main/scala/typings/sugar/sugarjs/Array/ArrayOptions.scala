@@ -1,27 +1,29 @@
 package typings.sugar.sugarjs.Array
 
+import typings.sugar.Function
+import typings.sugar.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayOptions extends js.Object {
-  var sortCollate: js.UndefOr[typings.sugar.Function] = js.undefined
+  var sortCollate: js.UndefOr[Function] = js.undefined
   var sortEquivalents: js.UndefOr[js.Object] = js.undefined
-  var sortIgnore: js.UndefOr[typings.sugar.RegExp] = js.undefined
+  var sortIgnore: js.UndefOr[RegExp] = js.undefined
   var sortIgnoreCase: js.UndefOr[Boolean] = js.undefined
   var sortNatural: js.UndefOr[Boolean] = js.undefined
-  var sortOrder: js.UndefOr[java.lang.String] = js.undefined
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 
 object ArrayOptions {
   @scala.inline
   def apply(
-    sortCollate: typings.sugar.Function = null,
+    sortCollate: Function = null,
     sortEquivalents: js.Object = null,
-    sortIgnore: typings.sugar.RegExp = null,
+    sortIgnore: RegExp = null,
     sortIgnoreCase: js.UndefOr[Boolean] = js.undefined,
     sortNatural: js.UndefOr[Boolean] = js.undefined,
-    sortOrder: java.lang.String = null
+    sortOrder: String = null
   ): ArrayOptions = {
     val __obj = js.Dynamic.literal()
     if (sortCollate != null) __obj.updateDynamic("sortCollate")(sortCollate.asInstanceOf[js.Any])

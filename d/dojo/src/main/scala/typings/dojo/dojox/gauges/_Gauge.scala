@@ -7,6 +7,7 @@ import typings.dojo.dojoStrings.defaultColors
 import typings.dojo.dojoStrings.gaugeContent
 import typings.dojo.dojoStrings.height
 import typings.dojo.dojoStrings.hideValues
+import typings.dojo.dojoStrings.image
 import typings.dojo.dojoStrings.majorTicks
 import typings.dojo.dojoStrings.max
 import typings.dojo.dojoStrings.min
@@ -211,7 +212,7 @@ class _Gauge () extends _Widget {
   @JSName("get")
   def get_hideValues(property: hideValues): Boolean = js.native
   @JSName("get")
-  def get_image(property: typings.dojo.dojoStrings.image): String = js.native
+  def get_image(property: image): String = js.native
   @JSName("get")
   def get_majorTicks(property: majorTicks): js.Object = js.native
   @JSName("get")
@@ -343,7 +344,7 @@ class _Gauge () extends _Widget {
   @JSName("set")
   def set_hideValues(property: hideValues, value: Boolean): Unit = js.native
   @JSName("set")
-  def set_image(property: typings.dojo.dojoStrings.image, value: String): Unit = js.native
+  def set_image(property: image, value: String): Unit = js.native
   @JSName("set")
   def set_majorTicks(property: majorTicks, value: js.Object): Unit = js.native
   @JSName("set")
@@ -421,7 +422,7 @@ class _Gauge () extends _Widget {
   ): Anon_Unwatch = js.native
   @JSName("watch")
   def watch_image(
-    property: typings.dojo.dojoStrings.image,
+    property: image,
     callback: js.Function3[
       /* property */ js.UndefOr[String], 
       /* oldValue */ js.UndefOr[String], 

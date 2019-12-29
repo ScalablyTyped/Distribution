@@ -22,7 +22,8 @@ class TableOfAuthorities protected () extends js.Object {
   val Range: typings.activexDashWord.Word.Range = js.native
   var Separator: String = js.native
   var TabLeader: WdTabLeader = js.native
-  var `Word.TableOfAuthorities_typekey`: TableOfAuthorities = js.native
+  @JSName("Word.TableOfAuthorities_typekey")
+  var WordDotTableOfAuthorities_typekey: TableOfAuthorities = js.native
   def Delete(): Unit = js.native
   def Update(): Unit = js.native
 }

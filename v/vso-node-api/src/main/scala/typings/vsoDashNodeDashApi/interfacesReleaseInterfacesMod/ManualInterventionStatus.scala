@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ManualInterventionStatus.Approved
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ManualInterventionStatus.Canceled
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ManualInterventionStatus.Pending
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ManualInterventionStatus.Rejected
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ManualInterventionStatus.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

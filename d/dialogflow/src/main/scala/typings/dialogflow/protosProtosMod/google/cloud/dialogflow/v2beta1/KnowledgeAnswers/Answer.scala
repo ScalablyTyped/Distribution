@@ -3,10 +3,6 @@ package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Knowl
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.HIGH
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.LOW
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.MATCH_CONFIDENCE_LEVEL_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.MEDIUM
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewState.filled
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewState.fullScreenLandscape
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewState.fullScreenPortrait
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewState.snapped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

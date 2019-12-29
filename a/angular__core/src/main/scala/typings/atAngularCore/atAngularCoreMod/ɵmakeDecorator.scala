@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵmakeDecorator")
+@JSImport("@angular/core", "\u0275makeDecorator")
 @js.native
 object ɵmakeDecorator extends js.Object {
   def apply[T](name: String): Anon_ArgsCls = js.native

@@ -13,11 +13,6 @@ object getSockets extends js.Object {
     * @see https://developer.chrome.com/apps/sockets_tcpServer#method-getSockets
     * @param callback Called when the list of sockets is available.
     */
-  def apply(
-    callback: js.Function1[
-      /* socketInfos */ js.Array[typings.chromeDashApps.chrome.sockets.tcpServer.SocketInfo], 
-      Unit
-    ]
-  ): Unit = js.native
+  def apply(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = js.native
 }
 

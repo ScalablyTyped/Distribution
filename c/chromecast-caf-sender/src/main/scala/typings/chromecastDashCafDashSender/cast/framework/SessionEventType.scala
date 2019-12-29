@@ -1,11 +1,6 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromecastDashCafDashSender.cast.framework.SessionEventType.ACTIVE_INPUT_STATE_CHANGED
-import typings.chromecastDashCafDashSender.cast.framework.SessionEventType.APPLICATION_METADATA_CHANGED
-import typings.chromecastDashCafDashSender.cast.framework.SessionEventType.APPLICATION_STATUS_CHANGED
-import typings.chromecastDashCafDashSender.cast.framework.SessionEventType.MEDIA_SESSION
-import typings.chromecastDashCafDashSender.cast.framework.SessionEventType.VOLUME_CHANGED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

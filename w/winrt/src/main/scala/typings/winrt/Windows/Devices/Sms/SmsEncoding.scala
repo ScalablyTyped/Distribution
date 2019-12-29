@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Sms.SmsEncoding.gsmSevenBit
-import typings.winrt.Windows.Devices.Sms.SmsEncoding.optimal
-import typings.winrt.Windows.Devices.Sms.SmsEncoding.sevenBitAscii
-import typings.winrt.Windows.Devices.Sms.SmsEncoding.unicode
-import typings.winrt.Windows.Devices.Sms.SmsEncoding.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

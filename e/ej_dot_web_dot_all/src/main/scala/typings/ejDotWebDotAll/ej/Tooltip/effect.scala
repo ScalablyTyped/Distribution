@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tooltip
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tooltip.effect.Fade
-import typings.ejDotWebDotAll.ej.Tooltip.effect.None
-import typings.ejDotWebDotAll.ej.Tooltip.effect.Slide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -467,6 +467,8 @@ trait Router[StateT, CustomT] extends js.Object {
     middleware: Middleware[T, U],
     routeHandler: IMiddleware[StateT with T, CustomT with U]
   ): Router[StateT with T, CustomT with U] = js.native
+  def url(name: String, params: js.Any): Error = js.native
+  def url(name: String, params: js.Any, options: IUrlOptionsQuery): Error = js.native
   /**
     * Generate URL for route. Takes either map of named `params` or series of
     * arguments (for regular expression routes)
@@ -486,12 +488,10 @@ trait Router[StateT, CustomT] extends js.Object {
     * // => "/users/3?limit=1"
     *
     */
-  def url(name: String, params: js.Any): String = js.native
-  def url(name: String, params: js.Any, options: IUrlOptionsQuery): String = js.native
   @JSName("url")
-  def url_Error(name: String, params: js.Any): Error = js.native
+  def url_String(name: String, params: js.Any): String = js.native
   @JSName("url")
-  def url_Error(name: String, params: js.Any, options: IUrlOptionsQuery): Error = js.native
+  def url_String(name: String, params: js.Any, options: IUrlOptionsQuery): String = js.native
   /**
     * Use given middleware.
     *

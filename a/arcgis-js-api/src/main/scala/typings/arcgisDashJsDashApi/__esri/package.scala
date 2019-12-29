@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation._
 
 package object __esri {
   import org.scalablytyped.runtime.Instantiable1
-  import typings.arcgisDashJsDashApi.IPromise
+  import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
+  import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+  import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+  import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+  import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
   import typings.std.Date
   import typings.std.HTMLElement
 
@@ -102,7 +106,7 @@ package object __esri {
   type FeatureTemplatesSelectEventHandler = js.Function1[/* event */ FeatureTemplatesSelectEvent, Unit]
   type FeatureTemplatesViewModelSelectEventHandler = js.Function1[/* event */ FeatureTemplatesViewModelSelectEvent, Unit]
   type FilterFunction = js.Function1[/* filterName */ js.Any, Boolean]
-  type FilterPredicateCallback = js.Function2[/* value */ js.Any, /* index */ Double, IPromise[js.Any]]
+  type FilterPredicateCallback = js.Function2[/* value */ js.Any, /* index */ Double, js.Promise[js.Any]]
   type GeoJSONLayerEditsEventHandler = js.Function1[/* event */ GeoJSONLayerEditsEvent, Unit]
   type GeoJSONLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ GeoJSONLayerLayerviewCreateErrorEvent, Unit]
   type GeoJSONLayerLayerviewCreateEventHandler = js.Function1[/* event */ GeoJSONLayerLayerviewCreateEvent, Unit]
@@ -113,8 +117,8 @@ package object __esri {
   type GeoRSSLayerViewProperties = LayerViewProperties
   type GeometryServiceProperties = TaskProperties
   type GetHeader = js.Function1[/* headerName */ String, String]
-  type GetResultsHandler = js.Function1[/* params */ js.Any, IPromise[js.Array[SearchResult]]]
-  type GetSuggestionsParameters = js.Function1[/* params */ js.Any, IPromise[js.Array[SuggestResult]]]
+  type GetResultsHandler = js.Function1[/* params */ js.Any, js.Promise[js.Array[SearchResult]]]
+  type GetSuggestionsParameters = js.Function1[/* params */ js.Any, js.Promise[js.Array[SuggestResult]]]
   type GoToOverride = js.Function2[/* view */ MapView | SceneView, /* goToParameters */ js.Any, Unit]
   /* Rewritten from type alias, can be one of: 
     - js.Array[
@@ -164,8 +168,6 @@ package object __esri {
   type HistogramRangeSliderSegmentDragEventHandler = js.Function1[/* event */ HistogramRangeSliderSegmentDragEvent, Unit]
   type HistogramRangeSliderThumbChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderThumbChangeEvent, Unit]
   type HistogramRangeSliderThumbDragEventHandler = js.Function1[/* event */ HistogramRangeSliderThumbDragEvent, Unit]
-  type HistogramRangeSliderValueChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderValueChangeEvent, Unit]
-  type HistogramRangeSliderValuesChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderValuesChangeEvent, Unit]
   type HistogramRangeSliderViewModelMaxChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderViewModelMaxChangeEvent, Unit]
   type HistogramRangeSliderViewModelMinChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderViewModelMinChangeEvent, Unit]
   type HomeGoEventHandler = js.Function1[/* event */ HomeGoEvent, Unit]
@@ -180,7 +182,7 @@ package object __esri {
   type InheritedDomainProperties = DomainProperties
   type InputParser = js.Function3[
     /* value */ String, 
-    /* type */ js.UndefOr[String], 
+    /* type */ js.UndefOr[average | min | max | tick | value], 
     /* index */ js.UndefOr[Double], 
     Double
   ]
@@ -280,7 +282,7 @@ package object __esri {
   type PopupViewModelTriggerActionEventHandler = js.Function1[/* event */ PopupViewModelTriggerActionEvent, Unit]
   type RejectCallback = js.Function1[/* error */ js.UndefOr[js.Any], Unit]
   type RenderContextCallback = js.Function1[/* context */ js.UndefOr[RenderContext], Unit]
-  type ResolveCallback = js.Function1[/* value */ js.UndefOr[js.Any | IPromise[js.Any]], Unit]
+  type ResolveCallback = js.Function1[/* value */ js.UndefOr[js.Any | js.Promise[js.Any]], Unit]
   type RouteTaskProperties = TaskProperties
   type SceneLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ SceneLayerLayerviewCreateErrorEvent, Unit]
   type SceneLayerLayerviewCreateEventHandler = js.Function1[/* event */ SceneLayerLayerviewCreateEvent, Unit]
@@ -334,12 +336,13 @@ package object __esri {
   type SketchUndoEventHandler = js.Function1[/* event */ SketchUndoEvent, Unit]
   type SketchUpdateEventHandler = js.Function1[/* event */ SketchUpdateEvent, Unit]
   type SketchViewModelCreateEventHandler = js.Function1[/* event */ SketchViewModelCreateEvent, Unit]
+  type SketchViewModelDeleteEventHandler = js.Function1[/* event */ SketchViewModelDeleteEvent, Unit]
   type SketchViewModelRedoEventHandler = js.Function1[/* event */ SketchViewModelRedoEvent, Unit]
   type SketchViewModelUndoEventHandler = js.Function1[/* event */ SketchViewModelUndoEvent, Unit]
   type SketchViewModelUpdateEventHandler = js.Function1[/* event */ SketchViewModelUpdateEvent, Unit]
   type SliderLabelFormatter = js.Function3[
     /* value */ Double, 
-    /* type */ js.UndefOr[String], 
+    /* type */ js.UndefOr[average | min | max | tick | value], 
     /* index */ js.UndefOr[Double], 
     String
   ]
@@ -348,13 +351,11 @@ package object __esri {
   type SliderSegmentDragEventHandler = js.Function1[/* event */ SliderSegmentDragEvent, Unit]
   type SliderThumbChangeEventHandler = js.Function1[/* event */ SliderThumbChangeEvent, Unit]
   type SliderThumbDragEventHandler = js.Function1[/* event */ SliderThumbDragEvent, Unit]
-  type SliderValueChangeEventHandler = js.Function1[/* event */ SliderValueChangeEvent, Unit]
-  type SliderValuesChangeEventHandler = js.Function1[/* event */ SliderValuesChangeEvent, Unit]
   type SliderViewModelMaxChangeEventHandler = js.Function1[/* event */ SliderViewModelMaxChangeEvent, Unit]
   type SliderViewModelMinChangeEventHandler = js.Function1[/* event */ SliderViewModelMinChangeEvent, Unit]
   type SmartMappingSliderBaseLabelFormatter = js.Function3[
     /* value */ Double, 
-    /* type */ js.UndefOr[String], 
+    /* type */ js.UndefOr[average | min | max | value], 
     /* index */ js.UndefOr[Double], 
     String
   ]
@@ -362,6 +363,8 @@ package object __esri {
   type SmartMappingSliderBaseMinChangeEventHandler = js.Function1[/* event */ SmartMappingSliderBaseMinChangeEvent, Unit]
   type SmartMappingSliderBaseThumbChangeEventHandler = js.Function1[/* event */ SmartMappingSliderBaseThumbChangeEvent, Unit]
   type SmartMappingSliderBaseThumbDragEventHandler = js.Function1[/* event */ SmartMappingSliderBaseThumbDragEvent, Unit]
+  type SmartMappingSliderViewModelMaxChangeEventHandler = js.Function1[/* event */ SmartMappingSliderViewModelMaxChangeEvent, Unit]
+  type SmartMappingSliderViewModelMinChangeEventHandler = js.Function1[/* event */ SmartMappingSliderViewModelMinChangeEvent, Unit]
   type SpinnerViewModel = Accessor
   type StreamLayerEditsEventHandler = js.Function1[/* event */ StreamLayerEditsEvent, Unit]
   type StreamLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ StreamLayerLayerviewCreateErrorEvent, Unit]
@@ -385,7 +388,6 @@ package object __esri {
   type TileLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ TileLayerLayerviewCreateErrorEvent, Unit]
   type TileLayerLayerviewCreateEventHandler = js.Function1[/* event */ TileLayerLayerviewCreateEvent, Unit]
   type TileLayerLayerviewDestroyEventHandler = js.Function1[/* event */ TileLayerLayerviewDestroyEvent, Unit]
-  type TokenTaskProperties = TaskProperties
   type TrackTrackErrorEventHandler = js.Function1[/* event */ TrackTrackErrorEvent, Unit]
   type TrackTrackEventHandler = js.Function1[/* event */ TrackTrackEvent, Unit]
   type TrackViewModelTrackErrorEventHandler = js.Function1[/* event */ TrackViewModelTrackErrorEvent, Unit]

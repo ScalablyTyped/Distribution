@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.ChangeTypes.add
-import typings.sharepoint.SP.UserProfiles.ChangeTypes.all
-import typings.sharepoint.SP.UserProfiles.ChangeTypes.metadata
-import typings.sharepoint.SP.UserProfiles.ChangeTypes.modify
-import typings.sharepoint.SP.UserProfiles.ChangeTypes.none
-import typings.sharepoint.SP.UserProfiles.ChangeTypes.remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

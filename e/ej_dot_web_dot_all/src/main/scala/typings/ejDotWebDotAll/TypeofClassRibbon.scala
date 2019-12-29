@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassRibbon
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Ribbon]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Ribbon] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Ribbon]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Ribbon] {
   var Locale: js.Any = js.native
   var fn: Ribbon = js.native
 }

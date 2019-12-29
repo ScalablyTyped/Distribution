@@ -10,7 +10,8 @@ class Panes protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Panes_typekey`: Panes = js.native
+  @JSName("PowerPoint.Panes_typekey")
+  var PowerPointDotPanes_typekey: Panes = js.native
   def Item(Index: Double): Pane = js.native
 }
 

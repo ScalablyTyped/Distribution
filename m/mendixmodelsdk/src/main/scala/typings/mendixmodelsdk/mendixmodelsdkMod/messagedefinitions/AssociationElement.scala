@@ -2,6 +2,11 @@ package typings.mendixmodelsdk.mendixmodelsdkMod.messagedefinitions
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.JsonStructure
+import typings.mendixmodelsdk.distGenMappingsMod.mappings.Element
+import typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +22,12 @@ import scala.scalajs.js.annotation._
 class AssociationElement protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.messagedefinitions.AssociationElement {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -31,7 +36,7 @@ class AssociationElement protected ()
 @js.native
 object AssociationElement extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new AssociationElement instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
@@ -46,7 +51,7 @@ object AssociationElement extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.10.0 and higher
     */
-  def createInElementUnderChildren(container: typings.mendixmodelsdk.distGenMappingsMod.mappings.Element): typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.AssociationElement = js.native
+  def createInElementUnderChildren(container: Element): typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.AssociationElement = js.native
   /**
     * Creates and returns a new AssociationElement instance in the SDK and on the server.
     * The new AssociationElement will be automatically stored in the 'elements' property

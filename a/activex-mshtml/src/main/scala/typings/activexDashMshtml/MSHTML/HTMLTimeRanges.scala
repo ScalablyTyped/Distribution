@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLTimeRanges")
 @js.native
 class HTMLTimeRanges protected () extends js.Object {
-  var `MSHTML.HTMLTimeRanges_typekey`: HTMLTimeRanges = js.native
+  @JSName("MSHTML.HTMLTimeRanges_typekey")
+  var MSHTMLDotHTMLTimeRanges_typekey: HTMLTimeRanges = js.native
   val length: Double = js.native
   def end(index: Double): Double = js.native
   def endDouble(index: Double): Double = js.native

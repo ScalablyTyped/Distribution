@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.DialProtocol
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialDeviceDisplayStatus.connected
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialDeviceDisplayStatus.connecting
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialDeviceDisplayStatus.disconnected
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialDeviceDisplayStatus.disconnecting
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialDeviceDisplayStatus.error
-import typings.winrtDashUwp.Windows.Media.DialProtocol.DialDeviceDisplayStatus.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

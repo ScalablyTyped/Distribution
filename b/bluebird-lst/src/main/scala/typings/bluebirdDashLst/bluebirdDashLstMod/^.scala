@@ -71,7 +71,7 @@ object ^ extends js.Object {
     * The version number of the library
     */
   var version: String = js.native
-  def all[R](values: js.Array[js.Thenable[R] | R]): Bluebird[js.Array[R]] = js.native
+  def all[T1](values: js.Array[js.Thenable[T1] | T1]): Bluebird[js.Array[T1]] = js.native
   // array with values
   def all[R](values: js.Thenable[js.Array[js.Thenable[R] | R]]): Bluebird[js.Array[R]] = js.native
   def all[T1, T2](values: js.Tuple2[js.Thenable[T1] | T1, js.Thenable[T2] | T2]): Bluebird[js.Tuple2[T1, T2]] = js.native
@@ -94,7 +94,7 @@ object ^ extends js.Object {
     ]
   ): Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
   @JSName("all")
-  def all_T1[T1](values: js.Array[js.Thenable[T1] | T1]): Bluebird[js.Array[T1]] = js.native
+  def all_R[R](values: js.Array[js.Thenable[R] | R]): Bluebird[js.Array[R]] = js.native
   def any[R](values: js.Array[js.Thenable[R] | R]): Bluebird[R] = js.native
    // tslint:disable-line:unified-signatures
   /**

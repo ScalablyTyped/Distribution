@@ -1,10 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.FileType.Directory
-import typings.vscode.vscodeMod.FileType.File
-import typings.vscode.vscodeMod.FileType.SymbolicLink
-import typings.vscode.vscodeMod.FileType.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

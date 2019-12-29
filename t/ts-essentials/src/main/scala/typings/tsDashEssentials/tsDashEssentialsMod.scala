@@ -5,13 +5,6 @@ import typings.std.Exclude
 import typings.std.Extract
 import typings.std.Pick
 import typings.std.ReadonlyArray
-import typings.tsDashEssentials.tsDashEssentialsMod.DeepReadonly
-import typings.tsDashEssentials.tsDashEssentialsMod.DeepReadonlyArray
-import typings.tsDashEssentials.tsDashEssentialsMod.DeepReadonlyObject
-import typings.tsDashEssentials.tsDashEssentialsMod.DeepRequired
-import typings.tsDashEssentials.tsDashEssentialsMod.DeepRequiredArray
-import typings.tsDashEssentials.tsDashEssentialsMod.NonNullable
-import typings.tsDashEssentials.tsDashEssentialsMod.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

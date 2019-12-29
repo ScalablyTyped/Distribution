@@ -39,6 +39,7 @@ object libApiRegistererMod extends js.Object {
     var clearTimers: js.Any = js.native
     /** The registered contacts. */
     val contacts: js.Array[String] = js.native
+    var disposed: js.Any = js.native
     var expires: js.Any = js.native
     /**
       * Generate Contact Header
@@ -84,14 +85,14 @@ object libApiRegistererMod extends js.Object {
     /**
       * Sends the REGISTER request.
       * @remarks
-      * If successfull, sends re-REGISTER requests prior to registration expiration until `unsubscribe()` is called.
-      * Rejects with `RequestPendingError` if a REGISTER request is alreadly in progress.
+      * If successful, sends re-REGISTER requests prior to registration expiration until `unsubscribe()` is called.
+      * Rejects with `RequestPendingError` if a REGISTER request is already in progress.
       */
     def register(): js.Promise[OutgoingRegisterRequest] = js.native
     def register(options: RegistererRegisterOptions): js.Promise[OutgoingRegisterRequest] = js.native
     /**
       * Sends the REGISTER request with expires equal to zero.
-      * Rejects with `RequestPendingError` if a REGISTER request is alreadly in progress.
+      * Rejects with `RequestPendingError` if a REGISTER request is already in progress.
       */
     def unregister(): js.Promise[OutgoingRegisterRequest] = js.native
     def unregister(options: RegistererUnregisterOptions): js.Promise[OutgoingRegisterRequest] = js.native
@@ -103,6 +104,13 @@ object libApiRegistererMod extends js.Object {
     /** Default registerer options. */
     val defaultOptions: js.Any = js.native
     var newUUID: js.Any = js.native
+    /**
+      * Strip properties with undefined values from options.
+      * This is a work around while waiting for missing vs undefined to be addressed (or not)...
+      * https://github.com/Microsoft/TypeScript/issues/13195
+      * @param options - Options to reduce
+      */
+    var stripUndefinedProperties: js.Any = js.native
   }
   
 }

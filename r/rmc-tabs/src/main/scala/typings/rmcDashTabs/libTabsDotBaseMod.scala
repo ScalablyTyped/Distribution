@@ -8,7 +8,6 @@ import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ReactNode
 import typings.rmcDashTabs.libModelsMod.Models.TabData
 import typings.rmcDashTabs.libPropsTypeMod.PropsType
-import typings.rmcDashTabs.libTabsDotBaseMod.StateType
 import typings.rmcDashTabs.rmcDashTabsStrings.horizontal
 import typings.rmcDashTabs.rmcDashTabsStrings.vertical
 import scala.scalajs.js

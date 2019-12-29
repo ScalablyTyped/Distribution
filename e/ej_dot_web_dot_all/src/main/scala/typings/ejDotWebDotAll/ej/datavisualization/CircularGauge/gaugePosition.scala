@@ -1,15 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomCenter
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomLeft
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomRight
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.Center
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleLeft
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleRight
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopCenter
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopLeft
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

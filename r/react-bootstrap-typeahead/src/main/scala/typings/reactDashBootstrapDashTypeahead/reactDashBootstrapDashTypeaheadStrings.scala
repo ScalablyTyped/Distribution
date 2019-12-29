@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashBootstrapDashTypeaheadStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait activeIndex extends MenuItemContextKeys
@@ -164,7 +164,7 @@ object reactDashBootstrapDashTypeaheadStrings {
   sealed trait width extends js.Object
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def activeIndex: activeIndex = "activeIndex".asInstanceOf[activeIndex]
   @scala.inline

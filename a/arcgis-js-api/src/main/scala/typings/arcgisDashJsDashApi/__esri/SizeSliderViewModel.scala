@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SizeSliderViewModel extends SliderViewModel {
+trait SizeSliderViewModel extends SmartMappingSliderViewModel {
   /**
     * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
     *

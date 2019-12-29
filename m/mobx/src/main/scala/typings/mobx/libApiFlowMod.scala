@@ -1,6 +1,5 @@
 package typings.mobx
 
-import typings.mobx.libApiFlowMod.CancellablePromise
 import typings.std.AsyncGenerator
 import typings.std.Error
 import typings.std.Generator

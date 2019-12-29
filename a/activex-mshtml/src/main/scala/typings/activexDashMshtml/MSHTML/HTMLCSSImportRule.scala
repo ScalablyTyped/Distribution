@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLCSSImportRule")
 @js.native
 class HTMLCSSImportRule protected () extends js.Object {
-  var `MSHTML.HTMLCSSImportRule_typekey`: HTMLCSSImportRule = js.native
+  @JSName("MSHTML.HTMLCSSImportRule_typekey")
+  var MSHTMLDotHTMLCSSImportRule_typekey: HTMLCSSImportRule = js.native
   var cssText: String = js.native
   val href: String = js.native
   var media: js.Any = js.native

@@ -95,10 +95,10 @@ object applicationinsightsStrings {
   sealed trait endpointsuffix extends ConnectionStringKey
   
   @js.native
-  sealed trait `https://dcDOTservicesDOTvisualstudioDOTcom` extends js.Object
+  sealed trait httpsColonSlashSlashdcDotservicesDotvisualstudioDotcom extends js.Object
   
   @js.native
-  sealed trait `https://rtDOTservicesDOTvisualstudioDOTcom` extends js.Object
+  sealed trait httpsColonSlashSlashrtDotservicesDotvisualstudioDotcom extends js.Object
   
   @js.native
   sealed trait ingestionendpoint extends ConnectionStringKey
@@ -113,7 +113,7 @@ object applicationinsightsStrings {
   sealed trait location extends ConnectionStringKey
   
   @js.native
-  sealed trait rtDOTservicesDOTvisualstudioDOTcom extends js.Object
+  sealed trait rtDotservicesDotvisualstudioDotcom extends js.Object
   
   @scala.inline
   def Availability: Availability = "Availability".asInstanceOf[Availability]
@@ -164,9 +164,9 @@ object applicationinsightsStrings {
   @scala.inline
   def endpointsuffix: endpointsuffix = "endpointsuffix".asInstanceOf[endpointsuffix]
   @scala.inline
-  def `https://dcDOTservicesDOTvisualstudioDOTcom`: `https://dcDOTservicesDOTvisualstudioDOTcom` = "https://dc.services.visualstudio.com".asInstanceOf[`https://dcDOTservicesDOTvisualstudioDOTcom`]
+  def httpsColonSlashSlashdcDotservicesDotvisualstudioDotcom: httpsColonSlashSlashdcDotservicesDotvisualstudioDotcom = "https://dc.services.visualstudio.com".asInstanceOf[httpsColonSlashSlashdcDotservicesDotvisualstudioDotcom]
   @scala.inline
-  def `https://rtDOTservicesDOTvisualstudioDOTcom`: `https://rtDOTservicesDOTvisualstudioDOTcom` = "https://rt.services.visualstudio.com".asInstanceOf[`https://rtDOTservicesDOTvisualstudioDOTcom`]
+  def httpsColonSlashSlashrtDotservicesDotvisualstudioDotcom: httpsColonSlashSlashrtDotservicesDotvisualstudioDotcom = "https://rt.services.visualstudio.com".asInstanceOf[httpsColonSlashSlashrtDotservicesDotvisualstudioDotcom]
   @scala.inline
   def ingestionendpoint: ingestionendpoint = "ingestionendpoint".asInstanceOf[ingestionendpoint]
   @scala.inline
@@ -176,6 +176,6 @@ object applicationinsightsStrings {
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline
-  def rtDOTservicesDOTvisualstudioDOTcom: rtDOTservicesDOTvisualstudioDOTcom = "rt.services.visualstudio.com".asInstanceOf[rtDOTservicesDOTvisualstudioDOTcom]
+  def rtDotservicesDotvisualstudioDotcom: rtDotservicesDotvisualstudioDotcom = "rt.services.visualstudio.com".asInstanceOf[rtDotservicesDotvisualstudioDotcom]
 }
 

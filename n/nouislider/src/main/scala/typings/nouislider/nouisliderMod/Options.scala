@@ -2,8 +2,10 @@ package typings.nouislider.nouisliderMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nouislider.nouisliderStrings.horizontal
+import typings.nouislider.nouisliderStrings.lower
 import typings.nouislider.nouisliderStrings.ltr
 import typings.nouislider.nouisliderStrings.rtl
+import typings.nouislider.nouisliderStrings.upper
 import typings.nouislider.nouisliderStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,12 +26,13 @@ trait Options extends js.Object {
     */
   var behaviour: js.UndefOr[String] = js.undefined
   /**
-    * The connect setting can be used to control the (green) bar between the handles, or the edges of the slider.
-    * Pass an array with a boolean for every connecting element, including the edges of the slider.
-    * The length of this array must match the handle count + 1.
-    * Setting true sets the bars between the handles, but not between the handles and the sliders edges.
+    * The connect option can be used to control the bar between the handles or the edges of the slider.
+    * If you are using one handle, set the value to either `upper` or `lower`.
+    * For sliders with 2 or more handles, pass an array with a boolean for every connecting element,
+    * including the edges of the slider. The length of this array must match the handle `count + 1`.
+    * Setting `true` sets the bars between the handles, but not between the handles and the sliders edges.
     */
-  var connect: js.UndefOr[Boolean | js.Array[Boolean]] = js.undefined
+  var connect: js.UndefOr[lower | upper | Boolean | js.Array[Boolean]] = js.undefined
   /**
     * By default the sliders are top-to-bottom and left-to-right,
     * but you can change this using the direction option,
@@ -106,7 +109,7 @@ object Options {
     animate: js.UndefOr[Boolean] = js.undefined,
     animationDuration: Int | Double = null,
     behaviour: String = null,
-    connect: Boolean | js.Array[Boolean] = null,
+    connect: lower | upper | Boolean | js.Array[Boolean] = null,
     direction: ltr | rtl = null,
     format: js.Object | (js.Function1[/* repeated */ js.Any, _]) = null,
     limit: Int | Double = null,

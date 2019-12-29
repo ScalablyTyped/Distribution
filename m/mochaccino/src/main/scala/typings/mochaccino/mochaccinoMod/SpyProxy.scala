@@ -1,6 +1,6 @@
 package typings.mochaccino.mochaccinoMod
 
-import typings.mochaccino.mochaccinoNumbers.`true`
+import typings.mochaccino.mochaccinoBooleans.`true`
 import typings.sinon.sinonMod.SinonStub
 import scala.scalajs.js
 import scala.scalajs.js.`|`

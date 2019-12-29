@@ -13,7 +13,8 @@ class PolicyItem protected () extends js.Object {
   val Description: String = js.native
   val Id: String = js.native
   val Name: String = js.native
-  var `Office.PolicyItem_typekey`: PolicyItem = js.native
+  @JSName("Office.PolicyItem_typekey")
+  var OfficeDotPolicyItem_typekey: PolicyItem = js.native
   val Parent: js.Any = js.native
 }
 

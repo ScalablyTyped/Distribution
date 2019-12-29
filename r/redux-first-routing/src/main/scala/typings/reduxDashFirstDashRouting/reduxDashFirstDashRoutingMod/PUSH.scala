@@ -3,14 +3,14 @@ package typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingMod
 import org.scalablytyped.runtime.TopLevel
 import typings.history.historyMod.LocationDescriptorObject
 import typings.history.historyMod.LocationState
-import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.`ROUTER/PUSH`
+import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.ROUTERSlashPUSH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("redux-first-routing", "PUSH")
 @js.native
-object PUSH extends TopLevel[`ROUTER/PUSH`]
+object PUSH extends TopLevel[ROUTERSlashPUSH]
 
 @JSImport("redux-first-routing", "push")
 @js.native

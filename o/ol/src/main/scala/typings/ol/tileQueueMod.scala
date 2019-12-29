@@ -1,8 +1,6 @@
 package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.tileQueueMod.PriorityFunction
-import typings.ol.tileQueueMod.TileQueue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

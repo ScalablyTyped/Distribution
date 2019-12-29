@@ -1,8 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.PositionMode.Fixed
-import typings.phaser.spine.PositionMode.Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

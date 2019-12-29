@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextAnchor.End
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextAnchor.Middle
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextAnchor.Start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

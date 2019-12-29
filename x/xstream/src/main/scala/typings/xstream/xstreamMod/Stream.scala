@@ -118,7 +118,7 @@ class Stream[T] () extends InternalListener[T] {
     *
     * @return {Stream}
     */
-  def flatten[R](`this`: Stream[Stream[R] | MemoryStream[R]]): Stream[R] = js.native
+  def flatten[R](): Stream[R] = js.native
   /**
     * "Folds" the stream onto itself.
     *

@@ -1,15 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.CompliancePolicy.SPContainerId
-import typings.sharepoint.SP.CompliancePolicy.SPContainerType
-import typings.sharepoint.SP.CompliancePolicy.SPContainerType.list
-import typings.sharepoint.SP.CompliancePolicy.SPContainerType.site
-import typings.sharepoint.SP.CompliancePolicy.SPContainerType.web
-import typings.sharepoint.SP.CompliancePolicy.SPPolicyAssociation
-import typings.sharepoint.SP.CompliancePolicy.SPPolicyBinding
-import typings.sharepoint.SP.CompliancePolicy.SPPolicyDefinition
-import typings.sharepoint.SP.CompliancePolicy.SPPolicyRule
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

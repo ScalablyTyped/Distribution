@@ -1,6 +1,6 @@
 package typings.antd.libFormFormItemMod
 
-import typings.antd.antdStrings.Empty
+import typings.antd.antdStrings._empty
 import typings.antd.antdStrings.error
 import typings.antd.antdStrings.success
 import typings.antd.antdStrings.validating
@@ -26,7 +26,7 @@ trait FormItemProps extends js.Object {
   var prefixCls: js.UndefOr[String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var validateStatus: js.UndefOr[success | warning | error | validating | Empty] = js.undefined
+  var validateStatus: js.UndefOr[success | warning | error | validating | _empty] = js.undefined
   var wrapperCol: js.UndefOr[ColProps] = js.undefined
 }
 
@@ -46,7 +46,7 @@ object FormItemProps {
     prefixCls: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    validateStatus: success | warning | error | validating | Empty = null,
+    validateStatus: success | warning | error | validating | _empty = null,
     wrapperCol: ColProps = null
   ): FormItemProps = {
     val __obj = js.Dynamic.literal()

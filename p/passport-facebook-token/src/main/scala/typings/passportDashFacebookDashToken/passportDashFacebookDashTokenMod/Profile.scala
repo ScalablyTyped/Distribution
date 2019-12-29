@@ -1,5 +1,6 @@
 package typings.passportDashFacebookDashToken.passportDashFacebookDashTokenMod
 
+import typings.passport.Anon_FamilyName
 import typings.passport.Anon_Type
 import typings.passport.Anon_Value
 import scala.scalajs.js
@@ -23,7 +24,7 @@ object Profile {
     id: String,
     provider: String,
     emails: js.Array[Anon_Type] = null,
-    name: typings.passport.Anon_FamilyName = null,
+    name: Anon_FamilyName = null,
     photos: js.Array[Anon_Value] = null,
     username: String = null
   ): Profile = {

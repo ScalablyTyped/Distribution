@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.OpenState.CLOSED
-import typings.openui5.sap.ui.core.OpenState.CLOSING
-import typings.openui5.sap.ui.core.OpenState.OPEN
-import typings.openui5.sap.ui.core.OpenState.OPENING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

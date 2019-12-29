@@ -13,27 +13,19 @@ trait ISortable extends IBase {
   		* @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
   		*/
   var addSorter: js.UndefOr[
-    js.Function2[
-      /* sorter */ js.UndefOr[js.Any], 
-      /* defaultDirection */ js.UndefOr[java.lang.String], 
-      Unit
-    ]
+    js.Function2[/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] This method adds all the sorters in a passed array
   		* @param sorters Array An array with sorters. A sorter can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
   		* @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
   		*/
   var addSorters: js.UndefOr[
-    js.Function2[
-      /* sorters */ js.UndefOr[Array], 
-      /* defaultDirection */ js.UndefOr[java.lang.String], 
-      Unit
-    ]
+    js.Function2[/* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Property] (Object) */
   var currentSortFn: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var dirtySortFn: js.UndefOr[Boolean] = js.undefined
   /** [Method] This method returns the index that a given item would be inserted into a given array based on the current sorters
@@ -47,7 +39,7 @@ trait ISortable extends IBase {
   /** [Method] Returns the value of defaultSortDirection
   		* @returns String
   		*/
-  var getDefaultSortDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDefaultSortDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns an up to date sort function
   		* @returns Function The sort function.
   		*/
@@ -55,7 +47,7 @@ trait ISortable extends IBase {
   /** [Method] Returns the value of sortRoot
   		* @returns String
   		*/
-  var getSortRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSortRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of sorters
   		* @returns Array
   		*/
@@ -69,7 +61,7 @@ trait ISortable extends IBase {
     js.Function3[
       /* index */ js.UndefOr[Double], 
       /* sorter */ js.UndefOr[js.Any], 
-      /* defaultDirection */ js.UndefOr[java.lang.String], 
+      /* defaultDirection */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -82,7 +74,7 @@ trait ISortable extends IBase {
     js.Function3[
       /* index */ js.UndefOr[Double], 
       /* sorters */ js.UndefOr[Array], 
-      /* defaultDirection */ js.UndefOr[java.lang.String], 
+      /* defaultDirection */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -97,11 +89,11 @@ trait ISortable extends IBase {
   /** [Method] Sets the value of defaultSortDirection
   		* @param defaultSortDirection String The new value.
   		*/
-  var setDefaultSortDirection: js.UndefOr[js.Function1[/* defaultSortDirection */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDefaultSortDirection: js.UndefOr[js.Function1[/* defaultSortDirection */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of sortRoot
   		* @param sortRoot String The new value.
   		*/
-  var setSortRoot: js.UndefOr[js.Function1[/* sortRoot */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSortRoot: js.UndefOr[js.Function1[/* sortRoot */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of sorters
   		* @param sorters Array The new value.
   		*/
@@ -112,7 +104,7 @@ trait ISortable extends IBase {
   		*/
   var sort: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Array]] = js.undefined
   /** [Config Option] (String) */
-  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  var sortRoot: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var sorted: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Array) */
@@ -122,8 +114,8 @@ trait ISortable extends IBase {
 object ISortable {
   @scala.inline
   def apply(
-    addSorter: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
-    addSorters: (/* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
+    addSorter: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String]) => Unit = null,
+    addSorters: (/* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[String]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -131,31 +123,31 @@ object ISortable {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     currentSortFn: js.Any = null,
-    defaultSortDirection: java.lang.String = null,
+    defaultSortDirection: String = null,
     destroy: () => Unit = null,
     dirtySortFn: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     findInsertionIndex: (/* items */ js.UndefOr[Array], /* item */ js.UndefOr[js.Any]) => Double = null,
-    getDefaultSortDirection: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getDefaultSortDirection: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getSortFn: () => _ = null,
-    getSortRoot: () => java.lang.String = null,
+    getSortRoot: () => String = null,
     getSorters: () => Array = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    insertSorter: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
-    insertSorters: (/* index */ js.UndefOr[Double], /* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
+    insertSorter: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String]) => Unit = null,
+    insertSorters: (/* index */ js.UndefOr[Double], /* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[String]) => Unit = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     removeSorter: /* sorter */ js.UndefOr[js.Any] => Unit = null,
     removeSorters: /* sorters */ js.UndefOr[Array] => Unit = null,
     self: IClass = null,
-    setDefaultSortDirection: /* defaultSortDirection */ js.UndefOr[java.lang.String] => Unit = null,
-    setSortRoot: /* sortRoot */ js.UndefOr[java.lang.String] => Unit = null,
+    setDefaultSortDirection: /* defaultSortDirection */ js.UndefOr[String] => Unit = null,
+    setSortRoot: /* sortRoot */ js.UndefOr[String] => Unit = null,
     setSorters: /* sorters */ js.UndefOr[Array] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     sort: /* data */ js.UndefOr[Array] => Array = null,
-    sortRoot: java.lang.String = null,
+    sortRoot: String = null,
     sorted: js.UndefOr[Boolean] = js.undefined,
     sorters: Array = null,
     statics: js.Any = null,

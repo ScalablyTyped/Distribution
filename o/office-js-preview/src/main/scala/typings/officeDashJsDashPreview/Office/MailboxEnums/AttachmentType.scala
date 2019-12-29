@@ -1,7 +1,6 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentType.Cloud
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,16 +42,10 @@ object AttachmentType extends js.Object {
   object Cloud extends TopLevel[Cloud with String]
   
   /* "file" */ @js.native
-  object File
-    extends TopLevel[
-          typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentType.File with String
-        ]
+  object File extends TopLevel[File with String]
   
   /* "item" */ @js.native
-  object Item
-    extends TopLevel[
-          typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentType.Item with String
-        ]
+  object Item extends TopLevel[Item with String]
   
 }
 

@@ -15,7 +15,8 @@ class ChartFillFormat protected () extends js.Object {
   val GradientDegree: Double = js.native
   val GradientStyle: Double = js.native
   val GradientVariant: Double = js.native
-  var `Office.ChartFillFormat_typekey`: ChartFillFormat = js.native
+  @JSName("Office.ChartFillFormat_typekey")
+  var OfficeDotChartFillFormat_typekey: ChartFillFormat = js.native
   val Parent: js.Any = js.native
   val Pattern: Double = js.native
   val PresetGradientType: Double = js.native

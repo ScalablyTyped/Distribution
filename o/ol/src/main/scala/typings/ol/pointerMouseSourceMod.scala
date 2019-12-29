@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.pointerMouseSourceMod.MouseSource
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

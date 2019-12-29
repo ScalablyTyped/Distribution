@@ -13,9 +13,7 @@ trait IAbstractMixedCollection
   		* @param obj Object The item to add.
   		* @returns Object The item added.
   		*/
-  var add: js.UndefOr[
-    js.Function2[/* key */ js.UndefOr[java.lang.String], /* obj */ js.UndefOr[js.Any], _]
-  ] = js.undefined
+  var add: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Adds all elements of an Array or an Object to the collection
   		* @param objs Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if allowFunctions has been set to true.
   		*/
@@ -37,8 +35,8 @@ trait IAbstractMixedCollection
   		*/
   var collect: js.UndefOr[
     js.Function3[
-      /* property */ js.UndefOr[java.lang.String], 
-      /* root */ js.UndefOr[java.lang.String], 
+      /* property */ js.UndefOr[String], 
+      /* root */ js.UndefOr[String], 
       /* allowNull */ js.UndefOr[Boolean], 
       Array
     ]
@@ -52,7 +50,7 @@ trait IAbstractMixedCollection
   		* @param key String The key to look for in the collection.
   		* @returns Boolean true if the collection contains the Object as a key.
   		*/
-  var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Executes the specified function once for every item in the collection
   		* @param fn Function The function to execute for each item.
   		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
@@ -103,7 +101,7 @@ trait IAbstractMixedCollection
   		*/
   var findIndex: js.UndefOr[
     js.Function5[
-      /* property */ js.UndefOr[java.lang.String], 
+      /* property */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* start */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
@@ -170,7 +168,7 @@ trait IAbstractMixedCollection
   		* @param key String The key to find the index of.
   		* @returns Number The index of the key.
   		*/
-  var indexOfKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var indexOfKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Inserts an item at the specified index in the collection
   		* @param index Number The index to insert the item at.
   		* @param key String The key to associate with the new item, or the item itself.
@@ -180,7 +178,7 @@ trait IAbstractMixedCollection
   var insert: js.UndefOr[
     js.Function3[
       /* index */ js.UndefOr[Double], 
-      /* key */ js.UndefOr[java.lang.String], 
+      /* key */ js.UndefOr[String], 
       /* obj */ js.UndefOr[js.Any], 
       _
     ]
@@ -221,15 +219,13 @@ trait IAbstractMixedCollection
   		* @param key String The key of the item to remove.
   		* @returns Object/Boolean The item removed or false if no item was removed.
   		*/
-  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Replaces an item in the collection
   		* @param key String The key associated with the item to replace, or the replacement item. If you supplied a getKey implementation for this MixedCollection, or if the key of your stored items is in a property called id, then the MixedCollection will be able to derive the key of the replacement item. If you want to replace an item with one having the same key value, then just pass the replacement item in this parameter.
   		* @param o Object If the first parameter passed was a key, the item to associate with that key.
   		* @returns Object The new item.
   		*/
-  var replace: js.UndefOr[
-    js.Function2[/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any], _]
-  ] = js.undefined
+  var replace: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* o */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Collects all of the values of the given property and returns their sum
   		* @param property String The property to sum by.
   		* @param root String Optional 'root' property to extract the first argument from. This is used mainly when summing fields in records, where the fields are all stored inside the data object
@@ -239,8 +235,8 @@ trait IAbstractMixedCollection
   		*/
   var sum: js.UndefOr[
     js.Function4[
-      /* property */ js.UndefOr[java.lang.String], 
-      /* root */ js.UndefOr[java.lang.String], 
+      /* property */ js.UndefOr[String], 
+      /* root */ js.UndefOr[String], 
       /* start */ js.UndefOr[Double], 
       /* end */ js.UndefOr[Double], 
       Double
@@ -251,12 +247,12 @@ trait IAbstractMixedCollection
 object IAbstractMixedCollection {
   @scala.inline
   def apply(
-    add: (/* key */ js.UndefOr[java.lang.String], /* obj */ js.UndefOr[js.Any]) => _ = null,
+    add: (/* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any]) => _ = null,
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addAll: /* objs */ js.UndefOr[js.Any] => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     allowFunctions: js.UndefOr[Boolean] = js.undefined,
@@ -268,22 +264,22 @@ object IAbstractMixedCollection {
     clear: () => Unit = null,
     clearListeners: () => Unit = null,
     clone: () => IMixedCollection = null,
-    collect: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* allowNull */ js.UndefOr[Boolean]) => Array = null,
+    collect: (/* property */ js.UndefOr[String], /* root */ js.UndefOr[String], /* allowNull */ js.UndefOr[Boolean]) => Array = null,
     config: js.Any = null,
     contains: /* o */ js.UndefOr[js.Any] => Boolean = null,
-    containsKey: /* key */ js.UndefOr[java.lang.String] => Boolean = null,
+    containsKey: /* key */ js.UndefOr[String] => Boolean = null,
     destroy: () => Unit = null,
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     eachKey: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     filter: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => IMixedCollection = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
     findBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    findIndex: (/* property */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double = null,
+    findIndex: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double = null,
     findIndexBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     first: () => _ = null,
     get: /* key */ js.UndefOr[js.Any] => _ = null,
     getAt: /* index */ js.UndefOr[Double] => _ = null,
@@ -291,22 +287,22 @@ object IAbstractMixedCollection {
     getByKey: /* key */ js.UndefOr[js.Any] => _ = null,
     getCount: () => Double = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getKey: /* item */ js.UndefOr[js.Any] => _ = null,
     getListeners: () => _ = null,
     getRange: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     indexOf: /* o */ js.UndefOr[js.Any] => Double = null,
-    indexOfKey: /* key */ js.UndefOr[java.lang.String] => Double = null,
+    indexOfKey: /* key */ js.UndefOr[String] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[java.lang.String], /* obj */ js.UndefOr[js.Any]) => _ = null,
+    insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any]) => _ = null,
     last: () => _ = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -315,20 +311,20 @@ object IAbstractMixedCollection {
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeAll: /* items */ js.UndefOr[Array] => IMixedCollection = null,
     removeAt: /* index */ js.UndefOr[Double] => _ = null,
-    removeAtKey: /* key */ js.UndefOr[java.lang.String] => _ = null,
+    removeAtKey: /* key */ js.UndefOr[String] => _ = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    replace: (/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any]) => _ = null,
+    replace: (/* key */ js.UndefOr[String], /* o */ js.UndefOr[js.Any]) => _ = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    sum: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Double = null,
+    sum: (/* property */ js.UndefOr[String], /* root */ js.UndefOr[String], /* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Double = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

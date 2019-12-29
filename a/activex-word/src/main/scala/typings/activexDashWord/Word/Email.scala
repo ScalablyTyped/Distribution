@@ -11,6 +11,7 @@ class Email protected () extends js.Object {
   val Creator: Double = js.native
   val CurrentEmailAuthor: EmailAuthor = js.native
   val Parent: js.Any = js.native
-  var `Word.Email_typekey`: Email = js.native
+  @JSName("Word.Email_typekey")
+  var WordDotEmail_typekey: Email = js.native
 }
 

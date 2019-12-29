@@ -31,7 +31,8 @@ trait Typeofcore extends js.Object {
   val Symbol: SymbolConstructor = js.native
   val WeakMap: WeakMapConstructor = js.native
   val WeakSet: WeakSetConstructor = js.native
-  val `_`: Boolean = js.native
+  @JSName("_")
+  val _underscore: Boolean = js.native
   val global: js.Any = js.native
   val version: java.lang.String = js.native
   @JSName("$for")

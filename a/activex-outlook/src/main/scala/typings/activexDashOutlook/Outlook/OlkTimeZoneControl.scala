@@ -14,7 +14,8 @@ class OlkTimeZoneControl protected () extends js.Object {
   var Locked: Boolean = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkTimeZoneControl_typekey`: OlkTimeZoneControl = js.native
+  @JSName("Outlook.OlkTimeZoneControl_typekey")
+  var OutlookDotOlkTimeZoneControl_typekey: OlkTimeZoneControl = js.native
   var SelectedTimeZoneIndex: Double = js.native
   var Value: js.Any = js.native
   def DropDown(): Unit = js.native

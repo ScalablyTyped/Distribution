@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAccessStatus.allowed
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAccessStatus.deniedBySystem
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAccessStatus.deniedByUser
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

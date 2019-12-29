@@ -22,7 +22,8 @@ class OlkListBox protected () extends js.Object {
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
   var MultiSelect: OlMultiSelect = js.native
-  var `Outlook.OlkListBox_typekey`: OlkListBox = js.native
+  @JSName("Outlook.OlkListBox_typekey")
+  var OutlookDotOlkListBox_typekey: OlkListBox = js.native
   var Text: String = js.native
   var TextAlign: OlTextAlign = js.native
   var TopIndex: Double = js.native

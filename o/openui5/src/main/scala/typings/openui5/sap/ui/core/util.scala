@@ -5,14 +5,6 @@ import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.mvc.HTMLView
 import typings.openui5.sap.ui.core.mvc.XMLView
-import typings.openui5.sap.ui.core.util.Export
-import typings.openui5.sap.ui.core.util.ExportCell
-import typings.openui5.sap.ui.core.util.ExportColumn
-import typings.openui5.sap.ui.core.util.ExportRow
-import typings.openui5.sap.ui.core.util.ExportType
-import typings.openui5.sap.ui.core.util.ExportTypeCSV
-import typings.openui5.sap.ui.core.util.XMLPreprocessor.IContext
-import typings.openui5.sap.ui.core.util.serializer.delegate.Delegate
 import typings.openui5.sap.ui.model.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`

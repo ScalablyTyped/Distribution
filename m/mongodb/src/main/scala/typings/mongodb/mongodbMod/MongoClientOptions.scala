@@ -12,8 +12,8 @@ import typings.mongodb.mongodbStrings.`SCRAM-SHA-1`
 import typings.mongodb.mongodbStrings.`SCRAM-SHA-256`
 import typings.mongodb.mongodbStrings.majority
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.tlsMod.PeerCertificate
+import typings.std.Error
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`

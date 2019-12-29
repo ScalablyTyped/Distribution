@@ -12,13 +12,5 @@ package object ComputerSettings {
   import typings.std.Partial
   import typings.std.Pick
 
-  type Param = (Pick[
-    typings.semanticDashUiDashSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings._Impl, 
-    left | right | top | bottom
-  ]) with (Partial[
-    Pick[
-      typings.semanticDashUiDashSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings._Impl, 
-      left | right | top | bottom
-    ]
-  ])
+  type Param = (Pick[_Impl, left | right | top | bottom]) with (Partial[Pick[_Impl, left | right | top | bottom]])
 }

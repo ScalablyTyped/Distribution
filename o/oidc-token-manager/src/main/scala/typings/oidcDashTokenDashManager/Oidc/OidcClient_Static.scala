@@ -6,9 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OidcClient_Static
-  extends Instantiable1[
-      /* settings */ OidcClientSettings, 
-      typings.oidcDashTokenDashManager.Oidc.OidcTokenManager
-    ]
+trait OidcClient_Static extends Instantiable1[/* settings */ OidcClientSettings, OidcTokenManager]
 

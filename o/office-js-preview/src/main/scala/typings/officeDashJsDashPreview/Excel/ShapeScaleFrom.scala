@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeScaleFrom.scaleFromBottomRight
-import typings.officeDashJsDashPreview.Excel.ShapeScaleFrom.scaleFromMiddle
-import typings.officeDashJsDashPreview.Excel.ShapeScaleFrom.scaleFromTopLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

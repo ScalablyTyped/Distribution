@@ -13,7 +13,7 @@ trait OverflowOpenEventArgs extends js.Object {
   var e: js.UndefOr[js.Any] = js.undefined
   /** returns the menu model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Menu.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object OverflowOpenEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     e: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Menu.Model = null,
+    model: Model = null,
     `type`: String = null
   ): OverflowOpenEventArgs = {
     val __obj = js.Dynamic.literal()

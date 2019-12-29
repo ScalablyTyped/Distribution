@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class Row protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
-  var `Outlook.Row_typekey`: Row = js.native
+  @JSName("Outlook.Row_typekey")
+  var OutlookDotRow_typekey: Row = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def BinaryToString(Index: js.Any): String = js.native

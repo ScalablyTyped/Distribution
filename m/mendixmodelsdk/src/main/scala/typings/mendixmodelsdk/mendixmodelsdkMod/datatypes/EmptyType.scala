@@ -6,6 +6,7 @@ import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenConstantsMod.constants.Constant
 import typings.mendixmodelsdk.distGenDatasetsMod.datasets.DataSetColumn
 import typings.mendixmodelsdk.distGenDatasetsMod.datasets.DataSetParameter
+import typings.mendixmodelsdk.distGenDatatypesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.DocumentTemplateParameter
 import typings.mendixmodelsdk.distGenImportmappingsMod.importmappings.ImportMapping
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.ValueMappingElement
@@ -17,6 +18,9 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.ResultHandling
 import typings.mendixmodelsdk.distGenRestMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.distGenWebservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.distGenWebservicesMod.webservices.PublishedParameter
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,12 +33,12 @@ import scala.scalajs.js.annotation._
 class EmptyType protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.datatypes.EmptyType {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -43,7 +47,7 @@ class EmptyType protected ()
 @js.native
 object EmptyType extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDatatypesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new EmptyType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

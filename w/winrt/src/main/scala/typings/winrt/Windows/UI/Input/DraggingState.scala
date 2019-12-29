@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Input.DraggingState.completed
-import typings.winrt.Windows.UI.Input.DraggingState.continuing
-import typings.winrt.Windows.UI.Input.DraggingState.started
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

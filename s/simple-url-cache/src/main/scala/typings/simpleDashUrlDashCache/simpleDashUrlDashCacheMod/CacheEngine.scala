@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 class CacheEngine protected () extends js.Object {
   def this(storageConfig: FileStorageConfig, cacheRules: CacheRules) = this()
   def this(storageConfig: RedisStorageConfig, cacheRules: CacheRules) = this()
-  def url(url: String): RedisStorage = js.native
+  def url(url: String): FileStorage = js.native
   @JSName("url")
-  def url_FileStorage(url: String): FileStorage = js.native
+  def url_RedisStorage(url: String): RedisStorage = js.native
 }
 

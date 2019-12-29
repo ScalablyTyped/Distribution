@@ -1,9 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionTriggerKind.Invoke
-import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionTriggerKind.TriggerCharacter
-import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionTriggerKind.TriggerForIncompleteCompletions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,6 +13,6 @@ object getEnabledCategories extends js.Object {
     * determined by the union of all currently-enabled `Tracing` objects and
     * any categories enabled using the `--trace-event-categories` flag.
     */
-  def apply(): js.UndefOr[java.lang.String] = js.native
+  def apply(): js.UndefOr[String] = js.native
 }
 

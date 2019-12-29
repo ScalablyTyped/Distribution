@@ -1,6 +1,5 @@
 package typings.amapDashJsDashSdk.AMap
 
-import typings.amapDashJsDashSdk.AMap.TileLayer.MapTypeLayer
 import typings.amapDashJsDashSdk.Anon_AutoRefresh
 import typings.amapDashJsDashSdk.Anon_DetectRetina
 import typings.amapDashJsDashSdk.Anon_DetectRetinaMap

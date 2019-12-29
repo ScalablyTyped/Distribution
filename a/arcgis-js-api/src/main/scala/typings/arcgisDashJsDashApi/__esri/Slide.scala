@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,8 +95,8 @@ trait Slide extends Accessor {
     * @param options.signal Signal object that can be used to abort the asynchronous task. Aborting will cause the slide animation to stop. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def applyTo(view: SceneView): IPromise[Slide] = js.native
-  def applyTo(view: SceneView, options: SlideApplyToOptions): IPromise[Slide] = js.native
+  def applyTo(view: SceneView): js.Promise[Slide] = js.native
+  def applyTo(view: SceneView, options: SlideApplyToOptions): js.Promise[Slide] = js.native
   /**
     * Updates a slide from a [WebScene's slides](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Presentation.html#slides). Updating the slide is asynchronous and a snapshot of the view is only complete once the returned promise has resolved.
     *
@@ -108,8 +107,8 @@ trait Slide extends Accessor {
     * @param options.screenshot Screenshot options to use. See properties below for object specifications.
     *
     */
-  def updateFrom(view: SceneView): IPromise[Slide] = js.native
-  def updateFrom(view: SceneView, options: SlideUpdateFromOptions): IPromise[Slide] = js.native
+  def updateFrom(view: SceneView): js.Promise[Slide] = js.native
+  def updateFrom(view: SceneView, options: SlideUpdateFromOptions): js.Promise[Slide] = js.native
 }
 
 @JSGlobal("__esri.Slide")

@@ -97,7 +97,7 @@ class FeatureLayer protected () extends Layer {
     * Returns a new `L.esri.services.Find` object that can be used to find features. Your callback function
     * will be passed a GeoJSON FeatureCollection with the results or an error.
     */
-  def find(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Find = js.native
+  def find(): Find = js.native
   /**
     * Given the id of a Feature return the layer on the map that represents it. This will usually be a Leaflet
     * vector layer like Polyline or Polygon, or a Leaflet Marker.
@@ -116,7 +116,7 @@ class FeatureLayer protected () extends Layer {
     * Returns a new `L.esri.services.IdentifyFeatures` object that can be used to identify features on this
     * layer. Your callback function will be passed a GeoJSON FeatureCollection with the results or an error.
     */
-  def identify(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.IdentifyFeatures = js.native
+  def identify(): IdentifyFeatures = js.native
   /**
     * Requests metadata about this Feature Layer. Callback will be called with error and metadata.
     */
@@ -125,7 +125,7 @@ class FeatureLayer protected () extends Layer {
   /**
     * Returns a new `L.esri.Query` object that can be used to query this service.
     */
-  def query(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Query = js.native
+  def query(): Query = js.native
   /**
     * Redraws a feature with the provided id from the feature layer.
     */
@@ -209,6 +209,6 @@ object featureLayer extends js.Object {
     * queries to fetch nearby features. This technique is comparable to MODE_ONDEMAND in the ArcGIS API for
     * JavaScript.
     */
-  def apply(options: FeatureLayerOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.FeatureLayer = js.native
+  def apply(options: FeatureLayerOptions): FeatureLayer = js.native
 }
 

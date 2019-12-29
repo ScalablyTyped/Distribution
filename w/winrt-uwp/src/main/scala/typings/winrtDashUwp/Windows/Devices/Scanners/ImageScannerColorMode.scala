@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Scanners
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.autoColor
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.color
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.grayscale
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.monochrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

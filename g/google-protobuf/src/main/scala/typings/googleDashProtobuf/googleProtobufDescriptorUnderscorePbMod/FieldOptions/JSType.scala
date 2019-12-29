@@ -1,9 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_NORMAL
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_NUMBER
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

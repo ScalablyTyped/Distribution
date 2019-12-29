@@ -21,7 +21,8 @@ class Legend protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   var Position: XlLegendPosition = js.native
-  var `PowerPoint.Legend_typekey`: Legend = js.native
+  @JSName("PowerPoint.Legend_typekey")
+  var PowerPointDotLegend_typekey: Legend = js.native
   var Shadow: Boolean = js.native
   var Top: Double = js.native
   var Width: Double = js.native

@@ -3,7 +3,7 @@ package typings.atMaterialDashUiCore.dialogDialogMod
 import typings.atMaterialDashUiCore.PartialBackdropProps
 import typings.atMaterialDashUiCore.PartialClassNameMapDialogClassKey
 import typings.atMaterialDashUiCore.PartialPaperProps
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreNumbers.`false`
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreBooleans.`false`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`additions text`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`inline`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.additions

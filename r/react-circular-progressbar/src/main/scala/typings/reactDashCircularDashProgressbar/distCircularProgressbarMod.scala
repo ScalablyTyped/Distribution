@@ -1,7 +1,6 @@
 package typings.reactDashCircularDashProgressbar
 
 import typings.react.reactMod.Component
-import typings.reactDashCircularDashProgressbar.distCircularProgressbarMod.CircularProgressbar
 import typings.reactDashCircularDashProgressbar.distTypesMod.CircularProgressbarDefaultProps
 import typings.reactDashCircularDashProgressbar.distTypesMod.CircularProgressbarProps
 import scala.scalajs.js

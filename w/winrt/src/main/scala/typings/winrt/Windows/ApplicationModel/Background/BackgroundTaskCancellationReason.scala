@@ -1,10 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.abort
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.loggingOff
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.servicingUpdate
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.terminating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

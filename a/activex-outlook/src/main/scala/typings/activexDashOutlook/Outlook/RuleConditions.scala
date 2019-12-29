@@ -28,7 +28,8 @@ class RuleConditions protected () extends js.Object {
   val OnLocalMachine: RuleCondition = js.native
   val OnOtherMachine: RuleCondition = js.native
   val OnlyToMe: RuleCondition = js.native
-  var `Outlook.RuleConditions_typekey`: RuleConditions = js.native
+  @JSName("Outlook.RuleConditions_typekey")
+  var OutlookDotRuleConditions_typekey: RuleConditions = js.native
   val Parent: js.Any = js.native
   val RecipientAddress: AddressRuleCondition = js.native
   val SenderAddress: AddressRuleCondition = js.native

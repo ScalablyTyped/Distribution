@@ -1,5 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.AdminGroupsMigration
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +11,9 @@ object Collection extends js.Object {
   @js.native
   trait ArchiveCollection extends js.Object {
     // Inserts a new mail into the archive of the Google group.
-    def insert(groupId: String): typings.googleDashAppsDashScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = js.native
+    def insert(groupId: String): Groups = js.native
     // Inserts a new mail into the archive of the Google group.
-    def insert(groupId: String, mediaData: js.Any): typings.googleDashAppsDashScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = js.native
+    def insert(groupId: String, mediaData: js.Any): Groups = js.native
   }
   
 }

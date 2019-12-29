@@ -37,9 +37,6 @@ class GroupedListBase protected ()
   def UNSAFE_componentWillReceiveProps_MGroupedListBase(newProps: IGroupedListProps): Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MGroupedListBase(): Unit = js.native
-  /**
-    * Force the component to update.
-    */
   /* InferMemberOverrides */
   override def forceUpdate(): Unit = js.native
 }

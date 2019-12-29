@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLPerformanceNavigation")
 @js.native
 class HTMLPerformanceNavigation protected () extends js.Object {
-  var `MSHTML.HTMLPerformanceNavigation_typekey`: HTMLPerformanceNavigation = js.native
+  @JSName("MSHTML.HTMLPerformanceNavigation_typekey")
+  var MSHTMLDotHTMLPerformanceNavigation_typekey: HTMLPerformanceNavigation = js.native
   val redirectCount: Double = js.native
   val `type`: Double = js.native
   def toJSON(): js.Any = js.native

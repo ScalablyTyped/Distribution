@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ValueType.Category
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ValueType.DateTime
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ValueType.Double
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ValueType.Logarithmic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

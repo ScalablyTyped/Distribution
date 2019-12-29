@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcMathBox2Mod.Box2
 import typings.three.srcMathVector2Mod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`

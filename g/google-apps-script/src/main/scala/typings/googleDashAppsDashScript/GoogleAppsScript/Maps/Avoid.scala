@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Avoid.HIGHWAYS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Avoid.TOLLS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

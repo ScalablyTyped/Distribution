@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NumericLiteral extends Literal {
+trait NumericLiteral
+  extends LiteralAtom
+     with Literal {
   @JSName("value")
   var value_NumericLiteral: Double
 }

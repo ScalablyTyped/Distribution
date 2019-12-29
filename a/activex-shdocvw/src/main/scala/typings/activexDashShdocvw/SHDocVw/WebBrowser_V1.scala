@@ -26,7 +26,8 @@ class WebBrowser_V1 protected () extends js.Object {
   val LocationURL: String = js.native
   /** Returns the automation object of the container/parent if one exists or this automation object. */
   val Parent: js.Any = js.native
-  var `SHDocVw.WebBrowser_V1_typekey`: WebBrowser_V1 = js.native
+  @JSName("SHDocVw.WebBrowser_V1_typekey")
+  var SHDocVwDotWebBrowser_V1_typekey: WebBrowser_V1 = js.native
   /** The vertical position (pixels) of the frame window relative to the screen/container. */
   var Top: Double = js.native
   /** Returns True if this is the top level object. */

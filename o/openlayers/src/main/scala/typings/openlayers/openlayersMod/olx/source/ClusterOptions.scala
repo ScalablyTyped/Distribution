@@ -2,8 +2,8 @@ package typings.openlayers.openlayersMod.olx.source
 
 import typings.openlayers.openlayersMod.AttributionLike
 import typings.openlayers.openlayersMod.Extent
-import typings.openlayers.openlayersMod.Feature
 import typings.openlayers.openlayersMod.ProjectionLike
+import typings.openlayers.openlayersMod.format.Feature
 import typings.openlayers.openlayersMod.geom.Point
 import typings.openlayers.openlayersMod.source.Vector
 import scala.scalajs.js
@@ -14,8 +14,8 @@ trait ClusterOptions extends js.Object {
   var attributions: js.UndefOr[AttributionLike] = js.undefined
   var distance: js.UndefOr[Double] = js.undefined
   var extent: js.UndefOr[Extent] = js.undefined
-  var format: js.UndefOr[typings.openlayers.openlayersMod.format.Feature] = js.undefined
-  var geometryFunction: js.UndefOr[js.Function1[/* feature */ Feature, Point]] = js.undefined
+  var format: js.UndefOr[Feature] = js.undefined
+  var geometryFunction: js.UndefOr[js.Function1[/* feature */ typings.openlayers.openlayersMod.Feature, Point]] = js.undefined
   var logo: js.UndefOr[String] = js.undefined
   var projection: js.UndefOr[ProjectionLike] = js.undefined
   var source: Vector
@@ -29,8 +29,8 @@ object ClusterOptions {
     attributions: AttributionLike = null,
     distance: Int | Double = null,
     extent: Extent = null,
-    format: typings.openlayers.openlayersMod.format.Feature = null,
-    geometryFunction: /* feature */ Feature => Point = null,
+    format: Feature = null,
+    geometryFunction: /* feature */ typings.openlayers.openlayersMod.Feature => Point = null,
     logo: String = null,
     projection: ProjectionLike = null,
     wrapX: js.UndefOr[Boolean] = js.undefined

@@ -1,6 +1,5 @@
 package typings.emailDashValidator
 
-import typings.emailDashValidator.emailDashValidatorMod.AsyncCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

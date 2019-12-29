@@ -1,8 +1,6 @@
 package typings.vexdb
 
 import typings.std.RegExp
-import typings.vexdb.outUtilFilterMod.Filter
-import typings.vexdb.outUtilFilterMod.FilterFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

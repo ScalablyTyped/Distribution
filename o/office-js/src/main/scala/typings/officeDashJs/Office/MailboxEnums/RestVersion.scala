@@ -1,9 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.RestVersion.Beta
-import typings.officeDashJs.Office.MailboxEnums.RestVersion.v1_0
-import typings.officeDashJs.Office.MailboxEnums.RestVersion.v2_0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

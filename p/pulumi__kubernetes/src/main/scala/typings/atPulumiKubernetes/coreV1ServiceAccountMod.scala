@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1ServiceAccountMod.ServiceAccount
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.LocalObjectReference
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ObjectReference
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta

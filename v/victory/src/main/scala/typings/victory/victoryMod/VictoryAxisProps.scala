@@ -2,8 +2,8 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_AxisAxisLabel
+import typings.victory.Anon_XY
 import typings.victory.Anon_XYD3Scale
-import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.axis
 import typings.victory.victoryStrings.axisLabel
 import typings.victory.victoryStrings.bottom
@@ -236,8 +236,8 @@ object VictoryAxisProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     invertAxis: js.UndefOr[Boolean] = js.undefined,
     label: js.Any = null,
-    maxDomain: Double | Anon_XYNumberOptional = null,
-    minDomain: Double | Anon_XYNumberOptional = null,
+    maxDomain: Double | Anon_XY = null,
+    minDomain: Double | Anon_XY = null,
     name: String = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,

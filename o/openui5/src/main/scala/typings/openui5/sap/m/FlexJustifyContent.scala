@@ -1,12 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.FlexJustifyContent.Center
-import typings.openui5.sap.m.FlexJustifyContent.End
-import typings.openui5.sap.m.FlexJustifyContent.Inherit
-import typings.openui5.sap.m.FlexJustifyContent.SpaceAround
-import typings.openui5.sap.m.FlexJustifyContent.SpaceBetween
-import typings.openui5.sap.m.FlexJustifyContent.Start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

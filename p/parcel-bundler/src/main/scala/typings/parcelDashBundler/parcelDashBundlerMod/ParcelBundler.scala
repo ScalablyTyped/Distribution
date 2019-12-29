@@ -5,8 +5,8 @@ import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDash
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import typings.node.httpMod.Server
-import typings.parcelDashBundler.parcelDashBundlerNumbers.`false`
-import typings.parcelDashBundler.parcelDashBundlerNumbers.`true`
+import typings.parcelDashBundler.parcelDashBundlerBooleans.`false`
+import typings.parcelDashBundler.parcelDashBundlerBooleans.`true`
 import typings.parcelDashBundler.parcelDashBundlerStrings.buildEnd
 import typings.parcelDashBundler.parcelDashBundlerStrings.buildError
 import typings.parcelDashBundler.parcelDashBundlerStrings.buildStart

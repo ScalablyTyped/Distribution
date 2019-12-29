@@ -1,8 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.GetMetricsEventRateConstants.ResultType
-import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.GetMetricsEventRateConstants.ResultType.DOCUMENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

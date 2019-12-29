@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`policy/v1beta1`
-import typings.atPulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.policySlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodDisruptionBudgetSpec
 import typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1.PodDisruptionBudgetStatus
@@ -39,7 +38,7 @@ object policyV1beta1PodDisruptionBudgetMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`policy/v1beta1`] = js.native
+    val apiVersion: Output[policySlashv1beta1] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In

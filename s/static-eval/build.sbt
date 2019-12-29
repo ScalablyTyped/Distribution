@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "static-eval"
-version := "v0.2.4-dt-20190322Z-c2816e"
+version := "v0.2.4-dt-20190322Z-4a9375"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191119Z-069b07",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191223Z-0f319a",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

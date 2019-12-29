@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ZoomCommand.ZoomIn
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ZoomCommand.ZoomOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

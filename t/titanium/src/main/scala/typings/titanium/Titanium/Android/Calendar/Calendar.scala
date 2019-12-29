@@ -31,27 +31,27 @@ trait Calendar extends Proxy {
   /**
   				 * Creates an event in this calendar.
   				 */
-  def createEvent(properties: js.Any): typings.titanium.Titanium.Android.Calendar.Event
+  def createEvent(properties: js.Any): Event
   /**
   				 * Gets the event with the specified identifier.
   				 */
-  def getEventById(id: Double): typings.titanium.Titanium.Android.Calendar.Event
+  def getEventById(id: Double): Event
   /**
   				 * Gets events that occur between two dates.
   				 */
-  def getEventsBetweenDates(date1: Date, date2: Date): js.Array[typings.titanium.Titanium.Android.Calendar.Event]
+  def getEventsBetweenDates(date1: Date, date2: Date): js.Array[Event]
   /**
   				 * Gets events that occur on a specified date.
   				 */
-  def getEventsInDate(year: Double, month: Double, day: Double): js.Array[typings.titanium.Titanium.Android.Calendar.Event]
+  def getEventsInDate(year: Double, month: Double, day: Double): js.Array[Event]
   /**
   				 * Gets events that occur during a specified month.
   				 */
-  def getEventsInMonth(year: Double, month: Double): js.Array[typings.titanium.Titanium.Android.Calendar.Event]
+  def getEventsInMonth(year: Double, month: Double): js.Array[Event]
   /**
   				 * Gets all events that occur during a specified year.
   				 */
-  def getEventsInYear(year: Double): js.Array[typings.titanium.Titanium.Android.Calendar.Event]
+  def getEventsInYear(year: Double): js.Array[Event]
   /**
   				 * Gets the value of the <Titanium.Android.Calendar.Calendar.hidden> property.
   				 */
@@ -77,15 +77,15 @@ object Calendar {
     apiName: String,
     applyProperties: js.Any => Unit,
     bubbleParent: Boolean,
-    createEvent: js.Any => typings.titanium.Titanium.Android.Calendar.Event,
+    createEvent: js.Any => Event,
     fireEvent: (String, js.Any) => Unit,
     getApiName: () => String,
     getBubbleParent: () => Boolean,
-    getEventById: Double => typings.titanium.Titanium.Android.Calendar.Event,
-    getEventsBetweenDates: (Date, Date) => js.Array[typings.titanium.Titanium.Android.Calendar.Event],
-    getEventsInDate: (Double, Double, Double) => js.Array[typings.titanium.Titanium.Android.Calendar.Event],
-    getEventsInMonth: (Double, Double) => js.Array[typings.titanium.Titanium.Android.Calendar.Event],
-    getEventsInYear: Double => js.Array[typings.titanium.Titanium.Android.Calendar.Event],
+    getEventById: Double => Event,
+    getEventsBetweenDates: (Date, Date) => js.Array[Event],
+    getEventsInDate: (Double, Double, Double) => js.Array[Event],
+    getEventsInMonth: (Double, Double) => js.Array[Event],
+    getEventsInYear: Double => js.Array[Event],
     getHidden: () => Boolean,
     getId: () => String,
     getName: () => String,

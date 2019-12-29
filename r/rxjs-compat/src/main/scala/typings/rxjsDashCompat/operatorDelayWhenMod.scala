@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorDelayWhenMod extends js.Object {
   def delayWhen[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     delayDurationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
     ]
   ): js.Any = js.native
   def delayWhen[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     delayDurationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _

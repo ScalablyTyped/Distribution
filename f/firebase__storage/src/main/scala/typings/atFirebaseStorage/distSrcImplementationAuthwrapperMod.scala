@@ -1,8 +1,8 @@
 package typings.atFirebaseStorage
 
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternalName
 import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
-import typings.atFirebaseStorage.distSrcImplementationAuthwrapperMod.AuthWrapper
 import typings.atFirebaseStorage.distSrcImplementationLocationMod.Location
 import typings.atFirebaseStorage.distSrcImplementationRequestMod.Request
 import typings.atFirebaseStorage.distSrcImplementationRequestinfoMod.RequestInfo
@@ -21,9 +21,7 @@ object distSrcImplementationAuthwrapperMod extends js.Object {
   class AuthWrapper protected () extends js.Object {
     def this(
       app: Null,
-      authProvider: Provider[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
-          ],
+      authProvider: Provider[FirebaseAuthInternalName],
       maker: js.Function2[/* p1 */ AuthWrapper, /* p2 */ Location, Reference],
       requestMaker: requestMaker,
       service: Service,
@@ -31,9 +29,7 @@ object distSrcImplementationAuthwrapperMod extends js.Object {
     ) = this()
     def this(
       app: FirebaseApp,
-      authProvider: Provider[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
-          ],
+      authProvider: Provider[FirebaseAuthInternalName],
       maker: js.Function2[/* p1 */ AuthWrapper, /* p2 */ Location, Reference],
       requestMaker: requestMaker,
       service: Service,

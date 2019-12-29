@@ -2,6 +2,7 @@ package typings.chromeDashApps.chrome.syncFileSystem
 
 import org.scalablytyped.runtime.TopLevel
 import typings.chromeDashApps.Anon_Authenticationrequired
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.syncFileSystem.onServiceStatusChanged")
 @js.native
 object onServiceStatusChanged
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* detail */ Anon_Authenticationrequired, Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* detail */ Anon_Authenticationrequired, Unit]]]
 

@@ -4,7 +4,7 @@ import typings.ddDashTrace.ddDashTraceNumbers.`-1`
 import typings.ddDashTrace.ddDashTraceNumbers.`0`
 import typings.ddDashTrace.ddDashTraceNumbers.`1`
 import typings.ddDashTrace.ddDashTraceNumbers.`2`
-import typings.ddDashTrace.ddDashTraceStrings._dd1DOTsrDOTeausr
+import typings.ddDashTrace.ddDashTraceStrings._dd1DotsrDoteausr
 import typings.ddDashTrace.ddDashTraceStrings.`agent-exporter`
 import typings.ddDashTrace.ddDashTraceStrings.`log-exporter`
 import typings.ddDashTrace.ddDashTraceStrings.binary
@@ -12,23 +12,23 @@ import typings.ddDashTrace.ddDashTraceStrings.client
 import typings.ddDashTrace.ddDashTraceStrings.consumer
 import typings.ddDashTrace.ddDashTraceStrings.error
 import typings.ddDashTrace.ddDashTraceStrings.http
-import typings.ddDashTrace.ddDashTraceStrings.httpDOTmethod
-import typings.ddDashTrace.ddDashTraceStrings.httpDOTrequestDOTheaders
-import typings.ddDashTrace.ddDashTraceStrings.httpDOTresponseDOTheaders
-import typings.ddDashTrace.ddDashTraceStrings.httpDOTroute
-import typings.ddDashTrace.ddDashTraceStrings.httpDOTstatus_code
-import typings.ddDashTrace.ddDashTraceStrings.httpDOTurl
+import typings.ddDashTrace.ddDashTraceStrings.httpDotmethod
+import typings.ddDashTrace.ddDashTraceStrings.httpDotrequestDotheaders
+import typings.ddDashTrace.ddDashTraceStrings.httpDotresponseDotheaders
+import typings.ddDashTrace.ddDashTraceStrings.httpDotroute
+import typings.ddDashTrace.ddDashTraceStrings.httpDotstatus_code
+import typings.ddDashTrace.ddDashTraceStrings.httpDoturl
 import typings.ddDashTrace.ddDashTraceStrings.http_headers
 import typings.ddDashTrace.ddDashTraceStrings.log
-import typings.ddDashTrace.ddDashTraceStrings.manualDOTdrop
-import typings.ddDashTrace.ddDashTraceStrings.manualDOTkeep
+import typings.ddDashTrace.ddDashTraceStrings.manualDotdrop
+import typings.ddDashTrace.ddDashTraceStrings.manualDotkeep
 import typings.ddDashTrace.ddDashTraceStrings.producer
-import typings.ddDashTrace.ddDashTraceStrings.resourceDOTname
-import typings.ddDashTrace.ddDashTraceStrings.samplingDOTpriority
+import typings.ddDashTrace.ddDashTraceStrings.resourceDotname
+import typings.ddDashTrace.ddDashTraceStrings.samplingDotpriority
 import typings.ddDashTrace.ddDashTraceStrings.server
-import typings.ddDashTrace.ddDashTraceStrings.serviceDOTname
-import typings.ddDashTrace.ddDashTraceStrings.spanDOTkind
-import typings.ddDashTrace.ddDashTraceStrings.spanDOTtype
+import typings.ddDashTrace.ddDashTraceStrings.serviceDotname
+import typings.ddDashTrace.ddDashTraceStrings.spanDotkind
+import typings.ddDashTrace.ddDashTraceStrings.spanDottype
 import typings.ddDashTrace.ddDashTraceStrings.text_map
 import typings.ddDashTrace.ddDashTraceStrings.web
 import scala.scalajs.js
@@ -70,21 +70,21 @@ object extMod extends js.Object {
   
   @js.native
   object tags extends js.Object {
-    var ANALYTICS: _dd1DOTsrDOTeausr = js.native
+    var ANALYTICS: _dd1DotsrDoteausr = js.native
     var ERROR: error = js.native
-    var HTTP_METHOD: httpDOTmethod = js.native
-    var HTTP_REQUEST_HEADERS: httpDOTrequestDOTheaders = js.native
-    var HTTP_RESPONSE_HEADERS: httpDOTresponseDOTheaders = js.native
-    var HTTP_ROUTE: httpDOTroute = js.native
-    var HTTP_STATUS_CODE: httpDOTstatus_code = js.native
-    var HTTP_URL: httpDOTurl = js.native
-    var MANUAL_DROP: manualDOTdrop = js.native
-    var MANUAL_KEEP: manualDOTkeep = js.native
-    var RESOURCE_NAME: resourceDOTname = js.native
-    var SAMPLING_PRIORITY: samplingDOTpriority = js.native
-    var SERVICE_NAME: serviceDOTname = js.native
-    var SPAN_KIND: spanDOTkind = js.native
-    var SPAN_TYPE: spanDOTtype = js.native
+    var HTTP_METHOD: httpDotmethod = js.native
+    var HTTP_REQUEST_HEADERS: httpDotrequestDotheaders = js.native
+    var HTTP_RESPONSE_HEADERS: httpDotresponseDotheaders = js.native
+    var HTTP_ROUTE: httpDotroute = js.native
+    var HTTP_STATUS_CODE: httpDotstatus_code = js.native
+    var HTTP_URL: httpDoturl = js.native
+    var MANUAL_DROP: manualDotdrop = js.native
+    var MANUAL_KEEP: manualDotkeep = js.native
+    var RESOURCE_NAME: resourceDotname = js.native
+    var SAMPLING_PRIORITY: samplingDotpriority = js.native
+    var SERVICE_NAME: serviceDotname = js.native
+    var SPAN_KIND: spanDotkind = js.native
+    var SPAN_TYPE: spanDottype = js.native
   }
   
   @js.native

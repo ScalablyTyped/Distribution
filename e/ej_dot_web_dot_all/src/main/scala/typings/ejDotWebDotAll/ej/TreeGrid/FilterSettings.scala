@@ -24,7 +24,7 @@ trait FilterSettings extends js.Object {
   /** Specifies the type of column filtering.
     * @Default {ej.TreeGrid.FilterType.FilterBar}
     */
-  var filterType: js.UndefOr[typings.ejDotWebDotAll.ej.TreeGrid.FilterType | String] = js.undefined
+  var filterType: js.UndefOr[FilterType | String] = js.undefined
   /** Specifies the column collection for filtering the TreeGrid content on initial load
     * @Default {[]}
     */
@@ -42,7 +42,7 @@ object FilterSettings {
     enableComplexBlankFilter: js.UndefOr[Boolean] = js.undefined,
     filterBarMode: String = null,
     filterHierarchyMode: FilterHierarchyMode | String = null,
-    filterType: typings.ejDotWebDotAll.ej.TreeGrid.FilterType | String = null,
+    filterType: FilterType | String = null,
     filteredColumns: js.Array[FilterSettingsFilteredColumn] = null,
     maxFilterChoices: Int | Double = null
   ): FilterSettings = {

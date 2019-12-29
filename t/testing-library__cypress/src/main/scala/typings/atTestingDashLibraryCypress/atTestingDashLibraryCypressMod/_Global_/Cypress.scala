@@ -2,7 +2,6 @@ package typings.atTestingDashLibraryCypress.atTestingDashLibraryCypressMod._Glob
 
 import typings.atTestingDashLibraryCypress.atTestingDashLibraryCypressMod.MatcherOptions
 import typings.atTestingDashLibraryCypress.atTestingDashLibraryCypressMod.SelectorMatcherOptions
-import typings.atTestingDashLibraryCypress.atTestingDashLibraryCypressMod._Global_.Cypress.Chainable
 import typings.atTestingDashLibraryDom.matchesMod.Matcher
 import typings.cypress.JQuery
 import typings.std.HTMLElement

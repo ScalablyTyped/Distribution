@@ -11,7 +11,8 @@ class Hyperlinks protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Hyperlinks_typekey`: Hyperlinks = js.native
+  @JSName("Word.Hyperlinks_typekey")
+  var WordDotHyperlinks_typekey: Hyperlinks = js.native
   def Add(Anchor: js.Any): Hyperlink = js.native
   def Add(Anchor: js.Any, Address: js.Any): Hyperlink = js.native
   def Add(Anchor: js.Any, Address: js.Any, SubAddress: js.Any): Hyperlink = js.native

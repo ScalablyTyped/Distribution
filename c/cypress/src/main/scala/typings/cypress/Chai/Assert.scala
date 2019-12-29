@@ -3,6 +3,10 @@ package typings.cypress.Chai
 import org.scalablytyped.runtime.StringDictionary
 import typings.cypress.Anon_Length
 import typings.cypress.Object
+import typings.cypress.typesLodashMod._Global_.WeakSet
+import typings.std.Partial
+import typings.std.ReadonlyMap
+import typings.std.ReadonlySet
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -123,7 +127,7 @@ trait Assert extends js.Object {
   def decreases[T](modifier: js.Function, `object`: T, property: String): Unit = js.native
   def decreases[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
   /**
-    * Asserts that actual is deeply equal to expected.
+    * Asserts that actual is deeply equal (==) to expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -133,23 +137,40 @@ trait Assert extends js.Object {
   def deepEqual[T](actual: T, expected: T): Unit = js.native
   def deepEqual[T](actual: T, expected: T, message: String): Unit = js.native
   /**
-    * Asserts that haystack includes needle. Can be used to assert the inclusion of a value in an array or a subset of properties in an object. Deep equality is used.
+    * Asserts that haystack includes needle. Deep equality is used.
     *
     * @param haystack   Container string.
-    * @param needle   Potential expected substring of haystack.
+    * @param needle   Potential substring of haystack.
     * @param message   Message to display on error.
+    *
+    * @deprecated Does not have any effect on string. Use {@link Assert#include} instead.
     */
   def deepInclude(haystack: String, needle: String): Unit = js.native
   def deepInclude(haystack: String, needle: String, message: String): Unit = js.native
   /**
-    * Asserts that haystack includes needle. Can be used to assert the inclusion of a value in an array or a subset of properties in an object. Deep equality is used.
+    * Asserts that haystack does not includes needle.
     *
-    * @param haystack
-    * @param needle
+    * @type T   Type of haystack.
+    * @param haystack   Object.
+    * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
     */
-  def deepInclude[T](haystack: js.Any, needle: js.Any): Unit = js.native
-  def deepInclude[T](haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def deepInclude[T](haystack: T, needle: Partial[T]): Unit = js.native
+  def deepInclude[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  /**
+    * Asserts that haystack includes needle. Deep equality is used.
+    *
+    * @type T   Type of values in haystack.
+    * @param haystack   Container array, set or map.
+    * @param needle   Potential value contained in haystack.
+    * @param message   Message to display on error.
+    */
+  def deepInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
+  def deepInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
+  def deepInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
+  def deepInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def deepInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
+  def deepInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while checking for deep equality
     *
@@ -165,6 +186,18 @@ trait Assert extends js.Object {
     */
   def deepNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
   def deepNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  /**
+    * Asserts that object has a property named by property with a value given by value.
+    * property can use dot- and bracket-notation for nested reference. Uses a deep equality check.
+    *
+    * @type T   Type of object.
+    * @param object   Object to test.
+    * @param property    Property to test.
+    * @param value    Value to test.
+    * @param message    Message to display on error.
+    */
+  def deepNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
+  def deepNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while ignoring inherited properties and checking for deep
     *
@@ -211,6 +244,16 @@ trait Assert extends js.Object {
     */
   def deepPropertyVal[T, V](`object`: T, property: String, value: V): Unit = js.native
   def deepPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
+  /**
+    * Asserts that actual is deeply strict equal (===) to expected.
+    *
+    * @type T   Type of the objects.
+    * @param actual   Actual value.
+    * @param expected   Potential expected value.
+    * @param message   Message to display on error.
+    */
+  def deepStrictEqual[T](actual: T, expected: T): Unit = js.native
+  def deepStrictEqual[T](actual: T, expected: T, message: String): Unit = js.native
   /**
     * Asserts that a function does not change the value of a property.
     *
@@ -466,7 +509,7 @@ trait Assert extends js.Object {
     * Asserts that haystack includes needle.
     *
     * @param haystack   Container string.
-    * @param needle   Potential expected substring of haystack.
+    * @param needle   Potential substring of haystack.
     * @param message   Message to display on error.
     */
   def include(haystack: String, needle: String): Unit = js.native
@@ -474,13 +517,37 @@ trait Assert extends js.Object {
   /**
     * Asserts that haystack includes needle.
     *
+    * @type T   Type of haystack.
+    * @param haystack   Object.
+    * @param needle   Potential subset of the haystack's properties.
+    * @param message   Message to display on error.
+    */
+  def include[T](haystack: T, needle: Partial[T]): Unit = js.native
+  def include[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  /**
+    * Asserts that haystack includes needle.
+    *
     * @type T   Type of values in haystack.
-    * @param haystack   Container array.
+    * @param haystack   Container array, set or map.
     * @param needle   Potential value contained in haystack.
     * @param message   Message to display on error.
     */
   def include[T](haystack: js.Array[T], needle: T): Unit = js.native
   def include[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
+  /**
+    * Asserts that haystack includes needle.
+    *
+    * @type T   Type of values in haystack.
+    * @param haystack   WeakSet container.
+    * @param needle   Potential value contained in haystack.
+    * @param message   Message to display on error.
+    */
+  def include[T /* <: js.Object */](haystack: WeakSet[T], needle: T): Unit = js.native
+  def include[T /* <: js.Object */](haystack: WeakSet[T], needle: T, message: String): Unit = js.native
+  def include[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
+  def include[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def include[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
+  def include[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that subset is included in superset using deep equality checking.
     * Order is not take into account.
@@ -573,7 +640,7 @@ trait Assert extends js.Object {
   def isAtLeast(valueToCheck: Double, valueToBeAtLeast: Double): Unit = js.native
   def isAtLeast(valueToCheck: Double, valueToBeAtLeast: Double, message: String): Unit = js.native
   /**
-    * Asserts valueToCheck is greater than or equal to (>=) valueToBeAtMost.
+    * Asserts valueToCheck is less than or equal to (<=) valueToBeAtMost.
     *
     * @param valueToCheck   Actual value.
     * @param valueToBeAtMost   Minimum Potential expected value.
@@ -658,7 +725,7 @@ trait Assert extends js.Object {
   def isFunction[T](value: T): Unit = js.native
   def isFunction[T](value: T, message: String): Unit = js.native
   /**
-    * Asserts that value is not null.
+    * Asserts that value is NaN.
     *
     * @type T   Type of value.
     * @param value   Actual value.
@@ -733,7 +800,7 @@ trait Assert extends js.Object {
   def isNotFunction[T](value: T): Unit = js.native
   def isNotFunction[T](value: T, message: String): Unit = js.native
   /**
-    * Asserts that value is not null.
+    * Asserts that value is not NaN.
     *
     * @type T   Type of value.
     * @param value   Actual value.
@@ -915,7 +982,30 @@ trait Assert extends js.Object {
   def nestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
   def nestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
   /**
-    * Asserts that actual is not deeply equal to expected.
+    * Asserts that object has a direct or inherited property named by property,
+    * which can be a string using dot- and bracket-notation for nested reference.
+    *
+    * @type T   Type of object.
+    * @param object   Object to test.
+    * @param property    Property to test.
+    * @param message    Message to display on error.
+    */
+  def nestedProperty[T](`object`: T, property: String): Unit = js.native
+  def nestedProperty[T](`object`: T, property: String, message: String): Unit = js.native
+  /**
+    * Asserts that object has a property named by property with value given by value.
+    * property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===).
+    *
+    * @type T   Type of object.
+    * @param object   Object to test.
+    * @param property    Property to test.
+    * @param value    Value to test.
+    * @param message    Message to display on error.
+    */
+  def nestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
+  def nestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  /**
+    * Asserts that actual is not deeply equal (==) to expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -925,16 +1015,40 @@ trait Assert extends js.Object {
   def notDeepEqual[T](actual: T, expected: T): Unit = js.native
   def notDeepEqual[T](actual: T, expected: T, message: String): Unit = js.native
   /**
-    * Asserts that haystack does not include needle. Can be used to assert the absence of a value in an array or a subset of properties in an object. Deep equality is used.
+    * Asserts that haystack does not includes needle. Deep equality is used.
     *
-    * @param haystack   Container string or array.
-    * @param needle   Potential expected substring of haystack.
+    * @param haystack   Container string.
+    * @param needle   Potential substring of haystack.
+    * @param message   Message to display on error.
+    *
+    * @deprecated Does not have any effect on string. Use {@link Assert#notInclude} instead.
+    */
+  def notDeepInclude(haystack: String, needle: String): Unit = js.native
+  def notDeepInclude(haystack: String, needle: String, message: String): Unit = js.native
+  /**
+    * Asserts that haystack does not includes needle. Deep equality is used.
+    *
+    * @type T   Type of haystack.
+    * @param haystack   Object.
+    * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
     */
-  def notDeepInclude(haystack: String, needle: js.Any): Unit = js.native
-  def notDeepInclude(haystack: String, needle: js.Any, message: String): Unit = js.native
-  def notDeepInclude(haystack: js.Array[_], needle: js.Any): Unit = js.native
-  def notDeepInclude(haystack: js.Array[_], needle: js.Any, message: String): Unit = js.native
+  def notDeepInclude[T](haystack: T, needle: Partial[T]): Unit = js.native
+  def notDeepInclude[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  /**
+    * Asserts that haystack does not includes needle. Deep equality is used.
+    *
+    * @type T   Type of values in haystack.
+    * @param haystack   Container array, set or map.
+    * @param needle   Potential value contained in haystack.
+    * @param message   Message to display on error.
+    */
+  def notDeepInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
+  def notDeepInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that ‘haystack’ does not include ‘needle’. Can be used to assert the absence of a subset of properties in an object while checking for deep equality.
     *
@@ -950,6 +1064,18 @@ trait Assert extends js.Object {
     */
   def notDeepNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
   def notDeepNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  /**
+    * Asserts that object does not have a property named by property with value given by value.
+    * property can use dot- and bracket-notation for nested reference. Uses a deep equality check.
+    *
+    * @type T   Type of object.
+    * @param object   Object to test.
+    * @param property    Property to test.
+    * @param value    Value to test.
+    * @param message    Message to display on error.
+    */
+  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
+  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the absence of a subset of properties in an object while ignoring inherited properties and checking for deep equality.
     *
@@ -1009,16 +1135,48 @@ trait Assert extends js.Object {
   def notFrozen[T](`object`: T): Unit = js.native
   def notFrozen[T](`object`: T, message: String): Unit = js.native
   /**
-    * Asserts that haystack does not include needle.
+    * Asserts that haystack does not includes needle.
     *
-    * @param haystack   Container string or array.
-    * @param needle   Potential expected substring of haystack.
+    * @param haystack   Container string.
+    * @param needle   Potential substring of haystack.
     * @param message   Message to display on error.
     */
-  def notInclude(haystack: String, needle: js.Any): Unit = js.native
-  def notInclude(haystack: String, needle: js.Any, message: String): Unit = js.native
-  def notInclude(haystack: js.Array[_], needle: js.Any): Unit = js.native
-  def notInclude(haystack: js.Array[_], needle: js.Any, message: String): Unit = js.native
+  def notInclude(haystack: String, needle: String): Unit = js.native
+  def notInclude(haystack: String, needle: String, message: String): Unit = js.native
+  /**
+    * Asserts that haystack does not includes needle.
+    *
+    * @type T   Type of haystack.
+    * @param haystack   Object.
+    * @param needle   Potential subset of the haystack's properties.
+    * @param message   Message to display on error.
+    */
+  def notInclude[T](haystack: T, needle: Partial[T]): Unit = js.native
+  def notInclude[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  /**
+    * Asserts that haystack does not includes needle.
+    *
+    * @type T   Type of values in haystack.
+    * @param haystack   Container array, set or map.
+    * @param needle   Potential value contained in haystack.
+    * @param message   Message to display on error.
+    */
+  def notInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
+  def notInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
+  /**
+    * Asserts that haystack does not includes needle.
+    *
+    * @type T   Type of values in haystack.
+    * @param haystack   WeakSet container.
+    * @param needle   Potential value contained in haystack.
+    * @param message   Message to display on error.
+    */
+  def notInclude[T /* <: js.Object */](haystack: WeakSet[T], needle: T): Unit = js.native
+  def notInclude[T /* <: js.Object */](haystack: WeakSet[T], needle: T, message: String): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def notInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
+  def notInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that subset isn’t included in superset in the same order beginning with the first element in superset.
     * Uses a deep equality check.
@@ -1075,6 +1233,30 @@ trait Assert extends js.Object {
     */
   def notNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
   def notNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  /**
+    * Asserts that object does not have a property named by property,
+    * which can be a string using dot- and bracket-notation for nested reference.
+    * The property cannot exist on the object nor anywhere in its prototype chain.
+    *
+    * @type T   Type of object.
+    * @param object   Object to test.
+    * @param property    Property to test.
+    * @param message    Message to display on error.
+    */
+  def notNestedProperty[T](`object`: T, property: String): Unit = js.native
+  def notNestedProperty[T](`object`: T, property: String, message: String): Unit = js.native
+  /**
+    * Asserts that object does not have a property named by property with value given by value.
+    * property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===).
+    *
+    * @type T   Type of object.
+    * @param object   Object to test.
+    * @param property    Property to test.
+    * @param value    Value to test.
+    * @param message    Message to display on error.
+    */
+  def notNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
+  def notNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
   /**
     * Asserts that object is falsy.
     *

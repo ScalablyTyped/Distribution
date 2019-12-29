@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object emberStrings {
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
   
   @js.native
   sealed trait chained extends js.Object
@@ -27,7 +27,7 @@ object emberStrings {
   sealed trait undefined extends js.Object
   
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def chained: chained = "chained".asInstanceOf[chained]
   @scala.inline

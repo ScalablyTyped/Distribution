@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.BarColor.CRITICAL
-import typings.openui5.sap.ui.core.BarColor.NEGATIVE
-import typings.openui5.sap.ui.core.BarColor.NEUTRAL
-import typings.openui5.sap.ui.core.BarColor.POSITIVE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

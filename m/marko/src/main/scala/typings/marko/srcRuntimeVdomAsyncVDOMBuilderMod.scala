@@ -1,6 +1,6 @@
 package typings.marko
 
-import typings.marko.markoNumbers.`true`
+import typings.marko.markoBooleans.`true`
 import typings.marko.srcComponentsComponentMod.Component
 import typings.marko.srcRuntimeAsyncMod.Async
 import scala.scalajs.js

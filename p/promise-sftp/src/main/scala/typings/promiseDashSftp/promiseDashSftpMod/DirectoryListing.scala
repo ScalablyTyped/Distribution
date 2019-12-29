@@ -1,7 +1,7 @@
 package typings.promiseDashSftp.promiseDashSftpMod
 
 import typings.promiseDashSftp.Anon_Group
-import typings.promiseDashSftp.promiseDashSftpStrings.`-`
+import typings.promiseDashSftp.promiseDashSftpStrings.`-_`
 import typings.promiseDashSftp.promiseDashSftpStrings.d
 import typings.promiseDashSftp.promiseDashSftpStrings.l
 import typings.std.Date
@@ -26,7 +26,7 @@ trait DirectoryListing extends js.Object {
   /** For symlink entries, this is the symlink's target. *NIX only */
   var target: js.UndefOr[String] = js.undefined
   /** `d` for directory, `-` for file, and `l` for symlink only on *NIX. */
-  var `type`: d | `-` | l
+  var `type`: d | `-_` | l
 }
 
 object DirectoryListing {
@@ -34,7 +34,7 @@ object DirectoryListing {
   def apply(
     date: Date,
     name: String,
-    `type`: d | `-` | l,
+    `type`: d | `-_` | l,
     group: String = null,
     owner: String = null,
     rights: Anon_Group = null,

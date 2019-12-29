@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait CustomValueSpecifierEventArgs extends js.Object {
   /** Instance of the combobox model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ComboBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** text of the combobox.
     */
   var text: js.UndefOr[String] = js.undefined
@@ -18,7 +18,7 @@ trait CustomValueSpecifierEventArgs extends js.Object {
 
 object CustomValueSpecifierEventArgs {
   @scala.inline
-  def apply(model: typings.ejDotWebDotAll.ej.ComboBox.Model = null, text: String = null, `type`: String = null): CustomValueSpecifierEventArgs = {
+  def apply(model: Model = null, text: String = null, `type`: String = null): CustomValueSpecifierEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

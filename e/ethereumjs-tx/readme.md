@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereumjs-tx
 
-Typings are for version 2.1.1
+Typings are for version 2.1.2
 
 ## Library description:
 An simple module for creating, manipulating and signing ethereum transactions

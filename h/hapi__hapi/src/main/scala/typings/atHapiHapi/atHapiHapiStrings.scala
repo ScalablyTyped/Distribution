@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 object atHapiHapiStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
   sealed trait CommonRouteProperties extends js.Object
@@ -27,9 +27,6 @@ object atHapiHapiStrings {
   sealed trait DELETE
     extends HTTP_METHODS
        with HTTP_METHODS_PARTIAL
-  
-  @js.native
-  sealed trait Empty extends ReferrerPolicy
   
   @js.native
   sealed trait GET
@@ -64,6 +61,9 @@ object atHapiHapiStrings {
   
   @js.native
   sealed trait Strict extends js.Object
+  
+  @js.native
+  sealed trait _empty extends ReferrerPolicy
   
   @js.native
   sealed trait `allow-from` extends js.Object
@@ -327,13 +327,11 @@ object atHapiHapiStrings {
   sealed trait utf8 extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def CommonRouteProperties: CommonRouteProperties = "CommonRouteProperties".asInstanceOf[CommonRouteProperties]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
@@ -350,6 +348,8 @@ object atHapiHapiStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
   def Strict: Strict = "Strict".asInstanceOf[Strict]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def `allow-from`: `allow-from` = "allow-from".asInstanceOf[`allow-from`]
   @scala.inline

@@ -1,6 +1,6 @@
 package typings.astDashTypes
 
-import typings.astDashTypes.astDashTypesNumbers.`false`
+import typings.astDashTypes.astDashTypesBooleans.`false`
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.CommentKind
 import typings.astDashTypes.genKindsMod.ExpressionKind
@@ -40,7 +40,7 @@ object Anon_AsyncBodyComments {
     defaults: js.Array[ExpressionKind | Null] = null,
     expression: js.UndefOr[Boolean] = js.undefined,
     generator: `false` = null,
-    id: Null = null,
+    id: js.UndefOr[scala.Nothing] = js.undefined,
     loc: SourceLocationKind = null,
     rest: IdentifierKind = null,
     returnType: TypeAnnotationKind | TSTypeAnnotationKind = null,
@@ -52,7 +52,7 @@ object Anon_AsyncBodyComments {
     if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (rest != null) __obj.updateDynamic("rest")(rest.asInstanceOf[js.Any])
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])

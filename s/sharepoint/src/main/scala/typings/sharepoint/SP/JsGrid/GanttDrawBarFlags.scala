@@ -1,8 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.GanttDrawBarFlags.LeftLink
-import typings.sharepoint.SP.JsGrid.GanttDrawBarFlags.RightLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

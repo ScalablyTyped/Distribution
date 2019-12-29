@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object promiseDashSftpStrings {
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait `-_` extends js.Object
   
   @js.native
   sealed trait d extends js.Object
@@ -15,7 +15,7 @@ object promiseDashSftpStrings {
   sealed trait l extends js.Object
   
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
   def d: d = "d".asInstanceOf[d]
   @scala.inline

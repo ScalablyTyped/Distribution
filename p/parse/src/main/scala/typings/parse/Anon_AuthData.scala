@@ -1,6 +1,6 @@
 package typings.parse
 
-import typings.parse.Parse.AuthData
+import typings.parse.parseMod._Global_.Parse.AuthData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

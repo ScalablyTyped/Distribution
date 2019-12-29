@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.alphanumeric
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.numeric
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

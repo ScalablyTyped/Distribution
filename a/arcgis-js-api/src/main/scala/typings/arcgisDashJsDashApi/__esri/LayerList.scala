@@ -23,6 +23,14 @@ trait LayerList extends Widget {
   @JSName("listItemCreatedFunction")
   var listItemCreatedFunction_Original: ListItemCreatedHandler = js.native
   /**
+    * Indicates whether more than one list item may be selected by the user at a single time. You must first set [selectionEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled) to `true` for this property to have an effect on the widget.  Selected items are available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#multipleSelectionEnabled)
+    *
+    * @default false
+    */
+  var multipleSelectionEnabled: Boolean = js.native
+  /**
     * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing operational layers. To hide layers from the LayerList widget, set the [listMode](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode) property on the layer(s) to `hide`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#operationalItems)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tar", "c")
 @js.native
 object c extends js.Object {
-  def apply(options: CreateOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
+  def apply(options: CreateOptions, fileList: js.Array[String]): Readable = js.native
   def apply(
     options: CreateOptions,
     fileList: js.Array[String],

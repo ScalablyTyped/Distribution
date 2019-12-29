@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLImg")
 @js.native
 class HTMLImg protected () extends js.Object {
-  var `MSHTML.HTMLImg_typekey`: HTMLImg = js.native
+  @JSName("MSHTML.HTMLImg_typekey")
+  var MSHTMLDotHTMLImg_typekey: HTMLImg = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

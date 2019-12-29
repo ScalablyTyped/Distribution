@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 object jqueryDashCountdownStrings {
   @js.native
-  sealed trait finishDOTcountdown extends Methods
+  sealed trait finishDotcountdown extends Methods
   
   @js.native
   sealed trait pause extends Controls
@@ -23,13 +23,13 @@ object jqueryDashCountdownStrings {
   sealed trait stop extends Controls
   
   @js.native
-  sealed trait stopDOTcountdown extends Methods
+  sealed trait stopDotcountdown extends Methods
   
   @js.native
-  sealed trait updateDOTcountdown extends Methods
+  sealed trait updateDotcountdown extends Methods
   
   @scala.inline
-  def finishDOTcountdown: finishDOTcountdown = "finish.countdown".asInstanceOf[finishDOTcountdown]
+  def finishDotcountdown: finishDotcountdown = "finish.countdown".asInstanceOf[finishDotcountdown]
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
@@ -39,8 +39,8 @@ object jqueryDashCountdownStrings {
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
-  def stopDOTcountdown: stopDOTcountdown = "stop.countdown".asInstanceOf[stopDOTcountdown]
+  def stopDotcountdown: stopDotcountdown = "stop.countdown".asInstanceOf[stopDotcountdown]
   @scala.inline
-  def updateDOTcountdown: updateDOTcountdown = "update.countdown".asInstanceOf[updateDOTcountdown]
+  def updateDotcountdown: updateDotcountdown = "update.countdown".asInstanceOf[updateDotcountdown]
 }
 

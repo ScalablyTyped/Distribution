@@ -20,7 +20,7 @@ trait Series extends js.Object {
   /** Specifies the type of the series to render in chart.
     * @Default {column. see Type}
     */
-  var `type`: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type | String] = js.undefined
+  var `type`: js.UndefOr[Type | String] = js.undefined
   /** Name of the property in the datasource that contains x value for the series.
     * @Default {null}
     */
@@ -37,7 +37,7 @@ object Series {
     dataSource: js.Any = null,
     enableAnimation: js.UndefOr[Boolean] = js.undefined,
     fill: String = null,
-    `type`: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type | String = null,
+    `type`: Type | String = null,
     xName: String = null,
     yName: String = null
   ): Series = {

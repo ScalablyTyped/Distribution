@@ -2,7 +2,6 @@ package typings.xhrDashMock
 
 import typings.std.EventTarget
 import typings.std.ProgressEventInit
-import typings.xhrDashMock.libMockProgressEventMod.MockProgressEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

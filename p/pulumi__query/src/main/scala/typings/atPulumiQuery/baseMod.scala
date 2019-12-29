@@ -1,6 +1,5 @@
 package typings.atPulumiQuery
 
-import typings.atPulumiQuery.baseMod.IterableBase
 import typings.atPulumiQuery.interfacesMod.AsyncIterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

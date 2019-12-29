@@ -1,6 +1,6 @@
 package typings.atHapiInert.atHapiInertMod
 
-import typings.atHapiInert.atHapiInertNumbers.`false`
+import typings.atHapiInert.atHapiInertBooleans.`false`
 import typings.atHapiInert.atHapiInertStrings.hash
 import typings.atHapiInert.atHapiInertStrings.simple
 import typings.std.Error

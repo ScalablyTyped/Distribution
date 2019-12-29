@@ -1,7 +1,7 @@
 package typings.ebml.ebmlMod
 
 import typings.ebml.ebmlStrings.Informational
-import typings.ebml.ebmlStrings.`1 - bzlib,`
+import typings.ebml.ebmlStrings.`1 - bzlibComma`
 import typings.ebml.ebmlStrings.`2 - lzo1x`
 import typings.ebml.ebmlStrings.f
 import typings.ebml.ebmlStrings.i
@@ -32,7 +32,7 @@ object EBMLNumericTagSchema {
     br: String | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String]) | (js.Tuple4[String, String, String, String]) = null,
     cppname: String = null,
     default: js.Any = null,
-    del: (js.Tuple2[`1 - bzlib,`, `2 - lzo1x`]) | (`1 - bzlib,`) | (`2 - lzo1x`) = null,
+    del: (js.Tuple2[`1 - bzlibComma`, `2 - lzo1x`]) | (`1 - bzlibComma`) | (`2 - lzo1x`) = null,
     divx: js.UndefOr[Boolean] = js.undefined,
     i: String = null,
     mandatory: js.UndefOr[Boolean] = js.undefined,

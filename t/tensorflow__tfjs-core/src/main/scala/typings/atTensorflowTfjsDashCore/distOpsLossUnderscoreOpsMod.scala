@@ -1,11 +1,6 @@
 package typings.atTensorflowTfjsDashCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
-import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.MEAN
-import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.NONE
-import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.SUM
-import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.SUM_BY_NONZERO_WEIGHTS
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike

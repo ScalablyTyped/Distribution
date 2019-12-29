@@ -1,7 +1,5 @@
 package typings.rotDashJs
 
-import typings.rotDashJs.libMapDividedmazeMod.DividedMaze
-import typings.rotDashJs.libMapDividedmazeMod.Room
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

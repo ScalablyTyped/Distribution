@@ -1,7 +1,6 @@
 package typings.atAngularHttp
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atAngularHttp.srcHeadersMod.Headers
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`

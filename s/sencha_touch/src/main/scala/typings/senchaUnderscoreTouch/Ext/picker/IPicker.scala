@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IPicker extends ISheet {
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[java.lang.String] = js.undefined
+  var activeCls: js.UndefOr[String] = js.undefined
   /** [Method] Updates the cancelButton configuration
   		* @param config Object
   		* @returns Object
@@ -55,7 +55,7 @@ trait IPicker extends ISheet {
   /** [Method] Returns the value of toolbarPosition
   		* @returns String
   		*/
-  var getToolbarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getToolbarPosition: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of useTitles
   		* @returns Boolean
   		*/
@@ -115,7 +115,7 @@ trait IPicker extends ISheet {
   /** [Method] Sets the value of toolbarPosition
   		* @param toolbarPosition String The new value.
   		*/
-  var setToolbarPosition: js.UndefOr[js.Function1[/* toolbarPosition */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setToolbarPosition: js.UndefOr[js.Function1[/* toolbarPosition */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of useTitles
   		* @param useTitles Boolean The new value.
   		*/
@@ -142,7 +142,7 @@ object IPicker {
   @scala.inline
   def apply(
     ISheet: ISheet = null,
-    activeCls: java.lang.String = null,
+    activeCls: String = null,
     applyCancelButton: /* config */ js.UndefOr[js.Any] => _ = null,
     applyDoneButton: /* config */ js.UndefOr[js.Any] => _ = null,
     cancelButton: js.Any = null,
@@ -154,7 +154,7 @@ object IPicker {
     getLayout: () => _ = null,
     getSlots: () => Array = null,
     getToolbar: () => _ = null,
-    getToolbarPosition: () => java.lang.String = null,
+    getToolbarPosition: () => String = null,
     getUseTitles: () => Boolean = null,
     getValue: /* useDom */ js.UndefOr[js.Any] => _ = null,
     getValues: () => _ = null,
@@ -168,9 +168,9 @@ object IPicker {
     setRight: /* right */ js.UndefOr[Double] => Unit = null,
     setSlots: /* slots */ js.UndefOr[Array] => Unit = null,
     setToolbar: /* toolbar */ js.UndefOr[js.Any] => Unit = null,
-    setToolbarPosition: /* toolbarPosition */ js.UndefOr[java.lang.String] => Unit = null,
+    setToolbarPosition: /* toolbarPosition */ js.UndefOr[String] => Unit = null,
     setUseTitles: /* useTitles */ js.UndefOr[Boolean] => Unit = null,
-    setValue: (/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.picker.IPicker = null,
+    setValue: (/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[Boolean]) => IPicker = null,
     slots: Array = null,
     toolbar: js.Any = null,
     useTitles: js.UndefOr[Boolean] = js.undefined,

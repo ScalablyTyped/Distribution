@@ -53,6 +53,12 @@ trait TemplateOptions extends Accessor {
     */
   var dpi: String = js.native
   /**
+    * This property defines the printed map's file name. This only applies when the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is `map-only`. If the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is not `map-only`, see [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName)
+    */
+  var fileName: String = js.native
+  /**
     * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering. By default they are removed to reduce the request size. Only applicable to custom print services which use the feature attributes, for example to display a table of features and their attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#forceFeatureAttributes)
@@ -75,7 +81,7 @@ trait TemplateOptions extends Accessor {
     */
   var height: Double = js.native
   /**
-    * The layout used for the print output. When the value is `map-only` or is empty, the output map does not contain any page layout surroundings (for example, title, legend, scale bar and so forth). The print service provides out-of-the-box templates listed in possible values. The server administrator can add additional templates to the print service.  Possible values are listed below:
+    * The layout used for the print output. When the value is `map-only` or is empty, the output map does not contain any page layout surroundings (for example: legend, scale bar, and so forth). The print service provides out-of-the-box templates listed in possible values. The server administrator can add additional templates to the print service.  Possible values are listed below:
     *
     * Value | Description
     * | --- | ---
@@ -112,7 +118,7 @@ trait TemplateOptions extends Accessor {
     */
   var scaleEnabled: Boolean = js.native
   /**
-    * The text used for the map title if the specified layout contains a title text element.
+    * The text used for the map title if the specified layout contains a title text element. This only applies if the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is not `map-only`. For `map-only`, see [fileName](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title)
     */

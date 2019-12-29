@@ -12,31 +12,31 @@ import scala.scalajs.js.annotation._
 
 object esDashFeatureDashDetectionStrings {
   @js.native
-  sealed trait ArrayDOTfrom extends ES2015Builtins
+  sealed trait ArrayDotfrom extends ES2015Builtins
   
   @js.native
-  sealed trait ArrayDOTof extends ES2015Builtins
+  sealed trait ArrayDotof extends ES2015Builtins
   
   @js.native
-  sealed trait ArrayDOTprototypeDOTcopyWithin extends ES2015Builtins
+  sealed trait ArrayDotprototypeDotcopyWithin extends ES2015Builtins
   
   @js.native
-  sealed trait ArrayDOTprototypeDOTentries extends ES2015Builtins
+  sealed trait ArrayDotprototypeDotentries extends ES2015Builtins
   
   @js.native
-  sealed trait ArrayDOTprototypeDOTfill extends ES2015Builtins
+  sealed trait ArrayDotprototypeDotfill extends ES2015Builtins
   
   @js.native
-  sealed trait ArrayDOTprototypeDOTfind extends ES2015Builtins
+  sealed trait ArrayDotprototypeDotfind extends ES2015Builtins
   
   @js.native
-  sealed trait ArrayDOTprototypeDOTfindIndex extends ES2015Builtins
+  sealed trait ArrayDotprototypeDotfindIndex extends ES2015Builtins
   
   @js.native
-  sealed trait ArrayDOTprototypeDOTincludes extends ES2016Builtins
+  sealed trait ArrayDotprototypeDotincludes extends ES2016Builtins
   
   @js.native
-  sealed trait ArrayDOTprototypeDOTkeys extends ES2015Builtins
+  sealed trait ArrayDotprototypeDotkeys extends ES2015Builtins
   
   @js.native
   sealed trait `Arrow function` extends ES2015Syntax
@@ -69,103 +69,103 @@ object esDashFeatureDashDetectionStrings {
   sealed trait Map extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTacosh extends ES2015Builtins
+  sealed trait MathDotacosh extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTasinh extends ES2015Builtins
+  sealed trait MathDotasinh extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTcbrt extends ES2015Builtins
+  sealed trait MathDotcbrt extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTclz32 extends ES2015Builtins
+  sealed trait MathDotclz32 extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTcosh extends ES2015Builtins
+  sealed trait MathDotcosh extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTexpm1 extends ES2015Builtins
+  sealed trait MathDotexpm1 extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTfround extends ES2015Builtins
+  sealed trait MathDotfround extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOThypot extends ES2015Builtins
+  sealed trait MathDothypot extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTimul extends ES2015Builtins
+  sealed trait MathDotimul extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTlog10 extends ES2015Builtins
+  sealed trait MathDotlog10 extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTlog1p extends ES2015Builtins
+  sealed trait MathDotlog1p extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTlog2 extends ES2015Builtins
+  sealed trait MathDotlog2 extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTsign extends ES2015Builtins
+  sealed trait MathDotsign extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTsinh extends ES2015Builtins
+  sealed trait MathDotsinh extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTtanh extends ES2015Builtins
+  sealed trait MathDottanh extends ES2015Builtins
   
   @js.native
-  sealed trait MathDOTtrunc extends ES2015Builtins
+  sealed trait MathDottrunc extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTEPSILON extends ES2015Builtins
+  sealed trait NumberDotEPSILON extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTMAX_SAFE_INTEGER extends ES2015Builtins
+  sealed trait NumberDotMAX_SAFE_INTEGER extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTMIN_SAFE_INTEGER extends ES2015Builtins
+  sealed trait NumberDotMIN_SAFE_INTEGER extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTisFinite extends ES2015Builtins
+  sealed trait NumberDotisFinite extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTisInteger extends ES2015Builtins
+  sealed trait NumberDotisInteger extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTisNaN extends ES2015Builtins
+  sealed trait NumberDotisNaN extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTisSafeInteger extends ES2015Builtins
+  sealed trait NumberDotisSafeInteger extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTparseFloat extends ES2015Builtins
+  sealed trait NumberDotparseFloat extends ES2015Builtins
   
   @js.native
-  sealed trait NumberDOTparseInt extends ES2015Builtins
+  sealed trait NumberDotparseInt extends ES2015Builtins
   
   @js.native
-  sealed trait ObjectDOTassign extends ES2015Builtins
+  sealed trait ObjectDotassign extends ES2015Builtins
   
   @js.native
-  sealed trait ObjectDOTentries extends ES2017Builtins
+  sealed trait ObjectDotentries extends ES2017Builtins
   
   @js.native
-  sealed trait ObjectDOTgetOwnPropertyDescriptors extends ES2017Builtins
+  sealed trait ObjectDotgetOwnPropertyDescriptors extends ES2017Builtins
   
   @js.native
-  sealed trait ObjectDOTgetOwnPropertySymbols extends ES2015Builtins
+  sealed trait ObjectDotgetOwnPropertySymbols extends ES2015Builtins
   
   @js.native
-  sealed trait ObjectDOTis extends ES2015Builtins
+  sealed trait ObjectDotis extends ES2015Builtins
   
   @js.native
-  sealed trait ObjectDOTprototypeDOT__proto__ extends ES2015Builtins
+  sealed trait ObjectDotprototypeDot__proto__ extends ES2015Builtins
   
   @js.native
-  sealed trait ObjectDOTsetPrototypeOf extends ES2015Builtins
+  sealed trait ObjectDotsetPrototypeOf extends ES2015Builtins
   
   @js.native
-  sealed trait ObjectDOTvalues extends ES2017Builtins
+  sealed trait ObjectDotvalues extends ES2017Builtins
   
   @js.native
   sealed trait `Octal literals` extends ES2015Syntax
@@ -180,10 +180,10 @@ object esDashFeatureDashDetectionStrings {
   sealed trait Reflect extends ES2015Builtins
   
   @js.native
-  sealed trait RegExpDOTprototypeDOTsticky extends ES2015Syntax
+  sealed trait RegExpDotprototypeDotsticky extends ES2015Syntax
   
   @js.native
-  sealed trait RegExpDOTprototypeDOTunicode extends ES2015Syntax
+  sealed trait RegExpDotprototypeDotunicode extends ES2015Syntax
   
   @js.native
   sealed trait `Rest destructuring` extends ES2016Syntax
@@ -210,34 +210,34 @@ object esDashFeatureDashDetectionStrings {
   sealed trait `Spread Function call` extends ES2015Syntax
   
   @js.native
-  sealed trait StringDOTfromCodePoint extends ES2015Builtins
+  sealed trait StringDotfromCodePoint extends ES2015Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTcodePointAt extends ES2015Builtins
+  sealed trait StringDotprototypeDotcodePointAt extends ES2015Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTendsWith extends ES2015Builtins
+  sealed trait StringDotprototypeDotendsWith extends ES2015Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTincludes extends ES2015Builtins
+  sealed trait StringDotprototypeDotincludes extends ES2015Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTnormalize extends ES2015Builtins
+  sealed trait StringDotprototypeDotnormalize extends ES2015Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTpadEnd extends ES2017Builtins
+  sealed trait StringDotprototypeDotpadEnd extends ES2017Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTpadStart extends ES2017Builtins
+  sealed trait StringDotprototypeDotpadStart extends ES2017Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTrepeat extends ES2015Builtins
+  sealed trait StringDotprototypeDotrepeat extends ES2015Builtins
   
   @js.native
-  sealed trait StringDOTprototypeDOTstartsWith extends ES2015Builtins
+  sealed trait StringDotprototypeDotstartsWith extends ES2015Builtins
   
   @js.native
-  sealed trait StringDOTraw extends ES2015Builtins
+  sealed trait StringDotraw extends ES2015Builtins
   
   @js.native
   sealed trait Symbol extends ES2015Builtins
@@ -249,7 +249,7 @@ object esDashFeatureDashDetectionStrings {
   sealed trait `Trailing parameter commas` extends ES2017Syntax
   
   @js.native
-  sealed trait TypedArrayDOTprototypeDOTincludes extends ES2016Builtins
+  sealed trait TypedArrayDotprototypeDotincludes extends ES2016Builtins
   
   @js.native
   sealed trait TypedArrays extends ES2015Builtins
@@ -270,7 +270,7 @@ object esDashFeatureDashDetectionStrings {
        with ES2017Syntax
   
   @js.native
-  sealed trait `async/await` extends ES2017Syntax
+  sealed trait asyncSlashawait extends ES2017Syntax
   
   @js.native
   sealed trait base64 extends ES2015Builtins
@@ -282,35 +282,35 @@ object esDashFeatureDashDetectionStrings {
   sealed trait const extends ES2015Syntax
   
   @js.native
-  sealed trait forDOTDOTDOTof extends ES2015Syntax
+  sealed trait forDotDotDotof extends ES2015Syntax
   
   @js.native
   sealed trait let extends ES2015Syntax
   
   @js.native
-  sealed trait newDOTtarget extends ES2015Builtins
+  sealed trait newDottarget extends ES2015Builtins
   
   @js.native
   sealed trait requestAnimationFrame extends ES2015Builtins
   
   @scala.inline
-  def ArrayDOTfrom: ArrayDOTfrom = "Array.from".asInstanceOf[ArrayDOTfrom]
+  def ArrayDotfrom: ArrayDotfrom = "Array.from".asInstanceOf[ArrayDotfrom]
   @scala.inline
-  def ArrayDOTof: ArrayDOTof = "Array.of".asInstanceOf[ArrayDOTof]
+  def ArrayDotof: ArrayDotof = "Array.of".asInstanceOf[ArrayDotof]
   @scala.inline
-  def ArrayDOTprototypeDOTcopyWithin: ArrayDOTprototypeDOTcopyWithin = "Array.prototype.copyWithin".asInstanceOf[ArrayDOTprototypeDOTcopyWithin]
+  def ArrayDotprototypeDotcopyWithin: ArrayDotprototypeDotcopyWithin = "Array.prototype.copyWithin".asInstanceOf[ArrayDotprototypeDotcopyWithin]
   @scala.inline
-  def ArrayDOTprototypeDOTentries: ArrayDOTprototypeDOTentries = "Array.prototype.entries".asInstanceOf[ArrayDOTprototypeDOTentries]
+  def ArrayDotprototypeDotentries: ArrayDotprototypeDotentries = "Array.prototype.entries".asInstanceOf[ArrayDotprototypeDotentries]
   @scala.inline
-  def ArrayDOTprototypeDOTfill: ArrayDOTprototypeDOTfill = "Array.prototype.fill".asInstanceOf[ArrayDOTprototypeDOTfill]
+  def ArrayDotprototypeDotfill: ArrayDotprototypeDotfill = "Array.prototype.fill".asInstanceOf[ArrayDotprototypeDotfill]
   @scala.inline
-  def ArrayDOTprototypeDOTfind: ArrayDOTprototypeDOTfind = "Array.prototype.find".asInstanceOf[ArrayDOTprototypeDOTfind]
+  def ArrayDotprototypeDotfind: ArrayDotprototypeDotfind = "Array.prototype.find".asInstanceOf[ArrayDotprototypeDotfind]
   @scala.inline
-  def ArrayDOTprototypeDOTfindIndex: ArrayDOTprototypeDOTfindIndex = "Array.prototype.findIndex".asInstanceOf[ArrayDOTprototypeDOTfindIndex]
+  def ArrayDotprototypeDotfindIndex: ArrayDotprototypeDotfindIndex = "Array.prototype.findIndex".asInstanceOf[ArrayDotprototypeDotfindIndex]
   @scala.inline
-  def ArrayDOTprototypeDOTincludes: ArrayDOTprototypeDOTincludes = "Array.prototype.includes".asInstanceOf[ArrayDOTprototypeDOTincludes]
+  def ArrayDotprototypeDotincludes: ArrayDotprototypeDotincludes = "Array.prototype.includes".asInstanceOf[ArrayDotprototypeDotincludes]
   @scala.inline
-  def ArrayDOTprototypeDOTkeys: ArrayDOTprototypeDOTkeys = "Array.prototype.keys".asInstanceOf[ArrayDOTprototypeDOTkeys]
+  def ArrayDotprototypeDotkeys: ArrayDotprototypeDotkeys = "Array.prototype.keys".asInstanceOf[ArrayDotprototypeDotkeys]
   @scala.inline
   def `Arrow function`: `Arrow function` = "Arrow function".asInstanceOf[`Arrow function`]
   @scala.inline
@@ -332,71 +332,71 @@ object esDashFeatureDashDetectionStrings {
   @scala.inline
   def Map: Map = "Map".asInstanceOf[Map]
   @scala.inline
-  def MathDOTacosh: MathDOTacosh = "Math.acosh".asInstanceOf[MathDOTacosh]
+  def MathDotacosh: MathDotacosh = "Math.acosh".asInstanceOf[MathDotacosh]
   @scala.inline
-  def MathDOTasinh: MathDOTasinh = "Math.asinh".asInstanceOf[MathDOTasinh]
+  def MathDotasinh: MathDotasinh = "Math.asinh".asInstanceOf[MathDotasinh]
   @scala.inline
-  def MathDOTcbrt: MathDOTcbrt = "Math.cbrt".asInstanceOf[MathDOTcbrt]
+  def MathDotcbrt: MathDotcbrt = "Math.cbrt".asInstanceOf[MathDotcbrt]
   @scala.inline
-  def MathDOTclz32: MathDOTclz32 = "Math.clz32".asInstanceOf[MathDOTclz32]
+  def MathDotclz32: MathDotclz32 = "Math.clz32".asInstanceOf[MathDotclz32]
   @scala.inline
-  def MathDOTcosh: MathDOTcosh = "Math.cosh".asInstanceOf[MathDOTcosh]
+  def MathDotcosh: MathDotcosh = "Math.cosh".asInstanceOf[MathDotcosh]
   @scala.inline
-  def MathDOTexpm1: MathDOTexpm1 = "Math.expm1".asInstanceOf[MathDOTexpm1]
+  def MathDotexpm1: MathDotexpm1 = "Math.expm1".asInstanceOf[MathDotexpm1]
   @scala.inline
-  def MathDOTfround: MathDOTfround = "Math.fround".asInstanceOf[MathDOTfround]
+  def MathDotfround: MathDotfround = "Math.fround".asInstanceOf[MathDotfround]
   @scala.inline
-  def MathDOThypot: MathDOThypot = "Math.hypot".asInstanceOf[MathDOThypot]
+  def MathDothypot: MathDothypot = "Math.hypot".asInstanceOf[MathDothypot]
   @scala.inline
-  def MathDOTimul: MathDOTimul = "Math.imul".asInstanceOf[MathDOTimul]
+  def MathDotimul: MathDotimul = "Math.imul".asInstanceOf[MathDotimul]
   @scala.inline
-  def MathDOTlog10: MathDOTlog10 = "Math.log10".asInstanceOf[MathDOTlog10]
+  def MathDotlog10: MathDotlog10 = "Math.log10".asInstanceOf[MathDotlog10]
   @scala.inline
-  def MathDOTlog1p: MathDOTlog1p = "Math.log1p".asInstanceOf[MathDOTlog1p]
+  def MathDotlog1p: MathDotlog1p = "Math.log1p".asInstanceOf[MathDotlog1p]
   @scala.inline
-  def MathDOTlog2: MathDOTlog2 = "Math.log2".asInstanceOf[MathDOTlog2]
+  def MathDotlog2: MathDotlog2 = "Math.log2".asInstanceOf[MathDotlog2]
   @scala.inline
-  def MathDOTsign: MathDOTsign = "Math.sign".asInstanceOf[MathDOTsign]
+  def MathDotsign: MathDotsign = "Math.sign".asInstanceOf[MathDotsign]
   @scala.inline
-  def MathDOTsinh: MathDOTsinh = "Math.sinh".asInstanceOf[MathDOTsinh]
+  def MathDotsinh: MathDotsinh = "Math.sinh".asInstanceOf[MathDotsinh]
   @scala.inline
-  def MathDOTtanh: MathDOTtanh = "Math.tanh".asInstanceOf[MathDOTtanh]
+  def MathDottanh: MathDottanh = "Math.tanh".asInstanceOf[MathDottanh]
   @scala.inline
-  def MathDOTtrunc: MathDOTtrunc = "Math.trunc".asInstanceOf[MathDOTtrunc]
+  def MathDottrunc: MathDottrunc = "Math.trunc".asInstanceOf[MathDottrunc]
   @scala.inline
-  def NumberDOTEPSILON: NumberDOTEPSILON = "Number.EPSILON".asInstanceOf[NumberDOTEPSILON]
+  def NumberDotEPSILON: NumberDotEPSILON = "Number.EPSILON".asInstanceOf[NumberDotEPSILON]
   @scala.inline
-  def NumberDOTMAX_SAFE_INTEGER: NumberDOTMAX_SAFE_INTEGER = "Number.MAX_SAFE_INTEGER".asInstanceOf[NumberDOTMAX_SAFE_INTEGER]
+  def NumberDotMAX_SAFE_INTEGER: NumberDotMAX_SAFE_INTEGER = "Number.MAX_SAFE_INTEGER".asInstanceOf[NumberDotMAX_SAFE_INTEGER]
   @scala.inline
-  def NumberDOTMIN_SAFE_INTEGER: NumberDOTMIN_SAFE_INTEGER = "Number.MIN_SAFE_INTEGER".asInstanceOf[NumberDOTMIN_SAFE_INTEGER]
+  def NumberDotMIN_SAFE_INTEGER: NumberDotMIN_SAFE_INTEGER = "Number.MIN_SAFE_INTEGER".asInstanceOf[NumberDotMIN_SAFE_INTEGER]
   @scala.inline
-  def NumberDOTisFinite: NumberDOTisFinite = "Number.isFinite".asInstanceOf[NumberDOTisFinite]
+  def NumberDotisFinite: NumberDotisFinite = "Number.isFinite".asInstanceOf[NumberDotisFinite]
   @scala.inline
-  def NumberDOTisInteger: NumberDOTisInteger = "Number.isInteger".asInstanceOf[NumberDOTisInteger]
+  def NumberDotisInteger: NumberDotisInteger = "Number.isInteger".asInstanceOf[NumberDotisInteger]
   @scala.inline
-  def NumberDOTisNaN: NumberDOTisNaN = "Number.isNaN".asInstanceOf[NumberDOTisNaN]
+  def NumberDotisNaN: NumberDotisNaN = "Number.isNaN".asInstanceOf[NumberDotisNaN]
   @scala.inline
-  def NumberDOTisSafeInteger: NumberDOTisSafeInteger = "Number.isSafeInteger".asInstanceOf[NumberDOTisSafeInteger]
+  def NumberDotisSafeInteger: NumberDotisSafeInteger = "Number.isSafeInteger".asInstanceOf[NumberDotisSafeInteger]
   @scala.inline
-  def NumberDOTparseFloat: NumberDOTparseFloat = "Number.parseFloat".asInstanceOf[NumberDOTparseFloat]
+  def NumberDotparseFloat: NumberDotparseFloat = "Number.parseFloat".asInstanceOf[NumberDotparseFloat]
   @scala.inline
-  def NumberDOTparseInt: NumberDOTparseInt = "Number.parseInt".asInstanceOf[NumberDOTparseInt]
+  def NumberDotparseInt: NumberDotparseInt = "Number.parseInt".asInstanceOf[NumberDotparseInt]
   @scala.inline
-  def ObjectDOTassign: ObjectDOTassign = "Object.assign".asInstanceOf[ObjectDOTassign]
+  def ObjectDotassign: ObjectDotassign = "Object.assign".asInstanceOf[ObjectDotassign]
   @scala.inline
-  def ObjectDOTentries: ObjectDOTentries = "Object.entries".asInstanceOf[ObjectDOTentries]
+  def ObjectDotentries: ObjectDotentries = "Object.entries".asInstanceOf[ObjectDotentries]
   @scala.inline
-  def ObjectDOTgetOwnPropertyDescriptors: ObjectDOTgetOwnPropertyDescriptors = "Object.getOwnPropertyDescriptors".asInstanceOf[ObjectDOTgetOwnPropertyDescriptors]
+  def ObjectDotgetOwnPropertyDescriptors: ObjectDotgetOwnPropertyDescriptors = "Object.getOwnPropertyDescriptors".asInstanceOf[ObjectDotgetOwnPropertyDescriptors]
   @scala.inline
-  def ObjectDOTgetOwnPropertySymbols: ObjectDOTgetOwnPropertySymbols = "Object.getOwnPropertySymbols".asInstanceOf[ObjectDOTgetOwnPropertySymbols]
+  def ObjectDotgetOwnPropertySymbols: ObjectDotgetOwnPropertySymbols = "Object.getOwnPropertySymbols".asInstanceOf[ObjectDotgetOwnPropertySymbols]
   @scala.inline
-  def ObjectDOTis: ObjectDOTis = "Object.is".asInstanceOf[ObjectDOTis]
+  def ObjectDotis: ObjectDotis = "Object.is".asInstanceOf[ObjectDotis]
   @scala.inline
-  def ObjectDOTprototypeDOT__proto__ : ObjectDOTprototypeDOT__proto__ = "Object.prototype.__proto__".asInstanceOf[ObjectDOTprototypeDOT__proto__]
+  def ObjectDotprototypeDot__proto__ : ObjectDotprototypeDot__proto__ = "Object.prototype.__proto__".asInstanceOf[ObjectDotprototypeDot__proto__]
   @scala.inline
-  def ObjectDOTsetPrototypeOf: ObjectDOTsetPrototypeOf = "Object.setPrototypeOf".asInstanceOf[ObjectDOTsetPrototypeOf]
+  def ObjectDotsetPrototypeOf: ObjectDotsetPrototypeOf = "Object.setPrototypeOf".asInstanceOf[ObjectDotsetPrototypeOf]
   @scala.inline
-  def ObjectDOTvalues: ObjectDOTvalues = "Object.values".asInstanceOf[ObjectDOTvalues]
+  def ObjectDotvalues: ObjectDotvalues = "Object.values".asInstanceOf[ObjectDotvalues]
   @scala.inline
   def `Octal literals`: `Octal literals` = "Octal literals".asInstanceOf[`Octal literals`]
   @scala.inline
@@ -406,9 +406,9 @@ object esDashFeatureDashDetectionStrings {
   @scala.inline
   def Reflect: Reflect = "Reflect".asInstanceOf[Reflect]
   @scala.inline
-  def RegExpDOTprototypeDOTsticky: RegExpDOTprototypeDOTsticky = "RegExp.prototype.sticky".asInstanceOf[RegExpDOTprototypeDOTsticky]
+  def RegExpDotprototypeDotsticky: RegExpDotprototypeDotsticky = "RegExp.prototype.sticky".asInstanceOf[RegExpDotprototypeDotsticky]
   @scala.inline
-  def RegExpDOTprototypeDOTunicode: RegExpDOTprototypeDOTunicode = "RegExp.prototype.unicode".asInstanceOf[RegExpDOTprototypeDOTunicode]
+  def RegExpDotprototypeDotunicode: RegExpDotprototypeDotunicode = "RegExp.prototype.unicode".asInstanceOf[RegExpDotprototypeDotunicode]
   @scala.inline
   def `Rest destructuring`: `Rest destructuring` = "Rest destructuring".asInstanceOf[`Rest destructuring`]
   @scala.inline
@@ -426,25 +426,25 @@ object esDashFeatureDashDetectionStrings {
   @scala.inline
   def `Spread Function call`: `Spread Function call` = "Spread Function call".asInstanceOf[`Spread Function call`]
   @scala.inline
-  def StringDOTfromCodePoint: StringDOTfromCodePoint = "String.fromCodePoint".asInstanceOf[StringDOTfromCodePoint]
+  def StringDotfromCodePoint: StringDotfromCodePoint = "String.fromCodePoint".asInstanceOf[StringDotfromCodePoint]
   @scala.inline
-  def StringDOTprototypeDOTcodePointAt: StringDOTprototypeDOTcodePointAt = "String.prototype.codePointAt".asInstanceOf[StringDOTprototypeDOTcodePointAt]
+  def StringDotprototypeDotcodePointAt: StringDotprototypeDotcodePointAt = "String.prototype.codePointAt".asInstanceOf[StringDotprototypeDotcodePointAt]
   @scala.inline
-  def StringDOTprototypeDOTendsWith: StringDOTprototypeDOTendsWith = "String.prototype.endsWith".asInstanceOf[StringDOTprototypeDOTendsWith]
+  def StringDotprototypeDotendsWith: StringDotprototypeDotendsWith = "String.prototype.endsWith".asInstanceOf[StringDotprototypeDotendsWith]
   @scala.inline
-  def StringDOTprototypeDOTincludes: StringDOTprototypeDOTincludes = "String.prototype.includes".asInstanceOf[StringDOTprototypeDOTincludes]
+  def StringDotprototypeDotincludes: StringDotprototypeDotincludes = "String.prototype.includes".asInstanceOf[StringDotprototypeDotincludes]
   @scala.inline
-  def StringDOTprototypeDOTnormalize: StringDOTprototypeDOTnormalize = "String.prototype.normalize".asInstanceOf[StringDOTprototypeDOTnormalize]
+  def StringDotprototypeDotnormalize: StringDotprototypeDotnormalize = "String.prototype.normalize".asInstanceOf[StringDotprototypeDotnormalize]
   @scala.inline
-  def StringDOTprototypeDOTpadEnd: StringDOTprototypeDOTpadEnd = "String.prototype.padEnd".asInstanceOf[StringDOTprototypeDOTpadEnd]
+  def StringDotprototypeDotpadEnd: StringDotprototypeDotpadEnd = "String.prototype.padEnd".asInstanceOf[StringDotprototypeDotpadEnd]
   @scala.inline
-  def StringDOTprototypeDOTpadStart: StringDOTprototypeDOTpadStart = "String.prototype.padStart".asInstanceOf[StringDOTprototypeDOTpadStart]
+  def StringDotprototypeDotpadStart: StringDotprototypeDotpadStart = "String.prototype.padStart".asInstanceOf[StringDotprototypeDotpadStart]
   @scala.inline
-  def StringDOTprototypeDOTrepeat: StringDOTprototypeDOTrepeat = "String.prototype.repeat".asInstanceOf[StringDOTprototypeDOTrepeat]
+  def StringDotprototypeDotrepeat: StringDotprototypeDotrepeat = "String.prototype.repeat".asInstanceOf[StringDotprototypeDotrepeat]
   @scala.inline
-  def StringDOTprototypeDOTstartsWith: StringDOTprototypeDOTstartsWith = "String.prototype.startsWith".asInstanceOf[StringDOTprototypeDOTstartsWith]
+  def StringDotprototypeDotstartsWith: StringDotprototypeDotstartsWith = "String.prototype.startsWith".asInstanceOf[StringDotprototypeDotstartsWith]
   @scala.inline
-  def StringDOTraw: StringDOTraw = "String.raw".asInstanceOf[StringDOTraw]
+  def StringDotraw: StringDotraw = "String.raw".asInstanceOf[StringDotraw]
   @scala.inline
   def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   @scala.inline
@@ -452,7 +452,7 @@ object esDashFeatureDashDetectionStrings {
   @scala.inline
   def `Trailing parameter commas`: `Trailing parameter commas` = "Trailing parameter commas".asInstanceOf[`Trailing parameter commas`]
   @scala.inline
-  def TypedArrayDOTprototypeDOTincludes: TypedArrayDOTprototypeDOTincludes = "TypedArray.prototype.includes".asInstanceOf[TypedArrayDOTprototypeDOTincludes]
+  def TypedArrayDotprototypeDotincludes: TypedArrayDotprototypeDotincludes = "TypedArray.prototype.includes".asInstanceOf[TypedArrayDotprototypeDotincludes]
   @scala.inline
   def TypedArrays: TypedArrays = "TypedArrays".asInstanceOf[TypedArrays]
   @scala.inline
@@ -462,7 +462,7 @@ object esDashFeatureDashDetectionStrings {
   @scala.inline
   def __all: __all = "__all".asInstanceOf[__all]
   @scala.inline
-  def `async/await`: `async/await` = "async/await".asInstanceOf[`async/await`]
+  def asyncSlashawait: asyncSlashawait = "async/await".asInstanceOf[asyncSlashawait]
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
@@ -470,11 +470,11 @@ object esDashFeatureDashDetectionStrings {
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline
-  def forDOTDOTDOTof: forDOTDOTDOTof = "for...of".asInstanceOf[forDOTDOTDOTof]
+  def forDotDotDotof: forDotDotDotof = "for...of".asInstanceOf[forDotDotDotof]
   @scala.inline
   def let: let = "let".asInstanceOf[let]
   @scala.inline
-  def newDOTtarget: newDOTtarget = "new.target".asInstanceOf[newDOTtarget]
+  def newDottarget: newDottarget = "new.target".asInstanceOf[newDottarget]
   @scala.inline
   def requestAnimationFrame: requestAnimationFrame = "requestAnimationFrame".asInstanceOf[requestAnimationFrame]
 }

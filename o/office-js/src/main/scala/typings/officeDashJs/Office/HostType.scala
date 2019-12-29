@@ -1,9 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.HostType.Access
-import typings.officeDashJs.Office.HostType.Outlook
-import typings.officeDashJs.Office.HostType.Project
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,26 +66,22 @@ object HostType extends js.Object {
   object Access extends TopLevel[Access with Double]
   
   /* 1 */ @js.native
-  object Excel
-    extends TopLevel[typings.officeDashJs.Office.HostType.Excel with Double]
+  object Excel extends TopLevel[Excel with Double]
   
   /* 4 */ @js.native
-  object OneNote
-    extends TopLevel[typings.officeDashJs.Office.HostType.OneNote with Double]
+  object OneNote extends TopLevel[OneNote with Double]
   
   /* 3 */ @js.native
   object Outlook extends TopLevel[Outlook with Double]
   
   /* 2 */ @js.native
-  object PowerPoint
-    extends TopLevel[typings.officeDashJs.Office.HostType.PowerPoint with Double]
+  object PowerPoint extends TopLevel[PowerPoint with Double]
   
   /* 5 */ @js.native
   object Project extends TopLevel[Project with Double]
   
   /* 0 */ @js.native
-  object Word
-    extends TopLevel[typings.officeDashJs.Office.HostType.Word with Double]
+  object Word extends TopLevel[Word with Double]
   
 }
 

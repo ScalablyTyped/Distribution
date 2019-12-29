@@ -19,7 +19,6 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Csheet
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Dash
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.DownThenOver
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Dsheet
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Empty
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.EndSheet
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Envelope10
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Envelope11
@@ -62,6 +61,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Portrait
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Quatro
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Statement
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Tabloid
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -119,7 +119,7 @@ class PageLayout () extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var firstPageNumber: Double | Empty = js.native
+  var firstPageNumber: Double | _empty = js.native
   /**
     *
     * Gets or sets the worksheet's footer margin, in points, for use when printing.

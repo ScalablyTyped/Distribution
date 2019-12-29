@@ -12,7 +12,8 @@ class WshShortcut protected () extends js.Object {
   var Description: String = js.native
   val FullName: String = js.native
   var Hotkey: String = js.native
-  var `IWshRuntimeLibrary.WshShortcut_typekey`: WshShortcut = js.native
+  @JSName("IWshRuntimeLibrary.WshShortcut_typekey")
+  var IWshRuntimeLibraryDotWshShortcut_typekey: WshShortcut = js.native
   var IconLocation: String = js.native
   val RelativePath: String = js.native
   var TargetPath: String = js.native

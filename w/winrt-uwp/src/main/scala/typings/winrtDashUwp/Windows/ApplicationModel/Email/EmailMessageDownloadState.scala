@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageDownloadState.downloaded
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageDownloadState.downloading
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageDownloadState.failed
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageDownloadState.partiallyDownloaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Additive
-import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Multiply
-import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Normal
-import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Screen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

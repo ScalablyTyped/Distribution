@@ -1,6 +1,5 @@
 package typings.fridaDashGum
 
-import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,9 @@ object Stalker extends js.Object {
     * Time in milliseconds between each time the event queue is drained.
     *
     * Defaults to 250 ms, which means that the event queue is drained four
-    * times per second.
+    * times per second. You may also set this property to zero to disable
+    * periodic draining and instead call `Stalker.flush()` when you would
+    * like the queue to be drained.
     */
   var queueDrainInterval: Double = js.native
   /**

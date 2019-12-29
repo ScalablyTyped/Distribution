@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Streaming.Adaptive
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.initializationSegment
-import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.initializationVector
-import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.key
-import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.manifest
-import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.mediaSegment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

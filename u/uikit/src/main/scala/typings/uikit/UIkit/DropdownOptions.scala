@@ -3,7 +3,7 @@ package typings.uikit.UIkit
 import typings.jquery.JQuery
 import typings.std.HTMLElement
 import typings.std.Window
-import typings.uikit.uikitNumbers.`false`
+import typings.uikit.uikitBooleans.`false`
 import typings.uikit.uikitStrings.click
 import typings.uikit.uikitStrings.hover
 import typings.uikit.uikitStrings.x

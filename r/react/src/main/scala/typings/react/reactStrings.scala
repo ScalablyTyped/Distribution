@@ -14,9 +14,6 @@ object reactStrings {
   sealed trait A extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait Fn_TypeAny extends js.Object
   
   @js.native
@@ -24,6 +21,9 @@ object reactStrings {
   
   @js.native
   sealed trait WeakValidationMap extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait a_ extends js.Object
@@ -835,13 +835,13 @@ object reactStrings {
   @scala.inline
   def A: A = "A".asInstanceOf[A]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def Fn_TypeAny: Fn_TypeAny = "Fn_TypeAny".asInstanceOf[Fn_TypeAny]
   @scala.inline
   def I: I = "I".asInstanceOf[I]
   @scala.inline
   def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def a_ : a_ = "a".asInstanceOf[a_]
   @scala.inline

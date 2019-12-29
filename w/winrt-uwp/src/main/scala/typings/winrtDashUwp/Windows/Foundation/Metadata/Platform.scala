@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Metadata.Platform.windows
-import typings.winrtDashUwp.Windows.Foundation.Metadata.Platform.windowsPhone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

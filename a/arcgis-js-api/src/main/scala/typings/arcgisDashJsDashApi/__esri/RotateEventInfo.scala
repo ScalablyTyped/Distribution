@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`rotate-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`rotate-stop`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.rotate
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -27,7 +30,7 @@ trait RotateEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#RotateEventInfo)
     */
-  var `type`: String
+  var `type`: `rotate-start` | rotate | `rotate-stop`
 }
 
 object RotateEventInfo {
@@ -37,7 +40,7 @@ object RotateEventInfo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String
+    `type`: `rotate-start` | rotate | `rotate-stop`
   ): RotateEventInfo = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

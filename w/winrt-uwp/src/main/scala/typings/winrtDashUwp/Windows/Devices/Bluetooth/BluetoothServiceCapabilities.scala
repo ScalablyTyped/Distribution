@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.audioService
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.capturingService
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.informationService
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.limitedDiscoverableMode
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.networkingService
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.none
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.objectTransferService
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.positioningService
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.renderingService
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities.telephoneService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

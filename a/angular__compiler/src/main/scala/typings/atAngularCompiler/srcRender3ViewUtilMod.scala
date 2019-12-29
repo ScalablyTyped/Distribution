@@ -1,7 +1,7 @@
 package typings.atAngularCompiler
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atAngularCompiler.atAngularCompilerStrings.DOLLARimplicit
+import typings.atAngularCompiler.atAngularCompilerStrings.$implicit
 import typings.atAngularCompiler.atAngularCompilerStrings._r
 import typings.atAngularCompiler.atAngularCompilerStrings._t
 import typings.atAngularCompiler.atAngularCompilerStrings.ctx
@@ -18,7 +18,6 @@ import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
 import typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.Element
 import typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.Node
 import typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.Template
-import typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.Visitor
 import typings.atAngularCompiler.srcRender3ViewApiMod.R3QueryMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +35,7 @@ object srcRender3ViewUtilMod extends js.Object {
   }
   
   val CONTEXT_NAME: ctx = js.native
-  val IMPLICIT_REFERENCE: DOLLARimplicit = js.native
+  val IMPLICIT_REFERENCE: $implicit = js.native
   val NON_BINDABLE_ATTR: ngNonBindable = js.native
   val REFERENCE_PREFIX: _r = js.native
   val RENDER_FLAGS: rf = js.native
@@ -50,13 +49,12 @@ object srcRender3ViewUtilMod extends js.Object {
   def getAttrsForDirectiveMatching(elOrTpl: Template): StringDictionary[String] = js.native
   def getInterpolationArgsLength(interpolation: Interpolation): Double = js.native
   def getQueryPredicate(query: R3QueryMetadata, constantPool: ConstantPool): Expression = js.native
-  def invalid[T](`this`: Visitor[_], arg: Expression): scala.Nothing = js.native
-  def invalid[T](`this`: Visitor[_], arg: Statement): scala.Nothing = js.native
-  def invalid[T](`this`: Visitor[_], arg: Node): scala.Nothing = js.native
+  def invalid[T](arg: Expression): scala.Nothing = js.native
+  def invalid[T](arg: Statement): scala.Nothing = js.native
+  def invalid[T](arg: Node): scala.Nothing = js.native
   def noop(): Unit = js.native
   def temporaryAllocator(statements: js.Array[Statement], name: String): js.Function0[ReadVarExpr] = js.native
   def trimTrailingNulls(parameters: js.Array[Expression]): js.Array[Expression] = js.native
-  def unsupported(`this`: js.Function, feature: String): scala.Nothing = js.native
-  def unsupported(`this`: Unit, feature: String): scala.Nothing = js.native
+  def unsupported(feature: String): scala.Nothing = js.native
 }
 

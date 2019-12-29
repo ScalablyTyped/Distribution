@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`reshape-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`reshape-stop`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.reshape
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -21,7 +24,7 @@ trait ReshapeEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ReshapeEventInfo)
     */
-  var `type`: String
+  var `type`: `reshape-start` | reshape | `reshape-stop`
 }
 
 object ReshapeEventInfo {
@@ -30,7 +33,7 @@ object ReshapeEventInfo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String
+    `type`: `reshape-start` | reshape | `reshape-stop`
   ): ReshapeEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

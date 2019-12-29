@@ -1,9 +1,6 @@
 package typings.clearbladejsDashClient.CbClient
 
 import org.scalablytyped.runtime.TopLevel
-import typings.clearbladejsDashClient.CbClient.MessagingQOS.MESSAGING_QOS_AT_LEAST_ONCE
-import typings.clearbladejsDashClient.CbClient.MessagingQOS.MESSAGING_QOS_AT_MOST_ONCE
-import typings.clearbladejsDashClient.CbClient.MessagingQOS.MESSAGING_QOS_EXACTLY_ONCE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

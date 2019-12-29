@@ -6,19 +6,10 @@ import scala.scalajs.js.annotation._
 
 object sparqljsStrings {
   @js.native
-  sealed trait `!` extends js.Object
-  
-  @js.native
-  sealed trait `*` extends js.Object
-  
-  @js.native
-  sealed trait `+` extends js.Object
-  
-  @js.native
-  sealed trait `/` extends js.Object
-  
-  @js.native
   sealed trait ASK extends js.Object
+  
+  @js.native
+  sealed trait Asterisk extends js.Object
   
   @js.native
   sealed trait CONSTRUCT extends js.Object
@@ -27,10 +18,22 @@ object sparqljsStrings {
   sealed trait DESCRIBE extends js.Object
   
   @js.native
+  sealed trait Exclamationmark extends js.Object
+  
+  @js.native
+  sealed trait Plussign extends js.Object
+  
+  @js.native
   sealed trait SELECT extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait Slash extends js.Object
+  
+  @js.native
+  sealed trait Verticalline extends js.Object
+  
+  @js.native
+  sealed trait ^ extends js.Object
   
   @js.native
   sealed trait add extends js.Object
@@ -113,27 +116,26 @@ object sparqljsStrings {
   @js.native
   sealed trait values extends js.Object
   
-  @js.native
-  sealed trait `|` extends js.Object
-  
-  @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
-  @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
-  @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
   @scala.inline
   def ASK: ASK = "ASK".asInstanceOf[ASK]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def CONSTRUCT: CONSTRUCT = "CONSTRUCT".asInstanceOf[CONSTRUCT]
   @scala.inline
   def DESCRIBE: DESCRIBE = "DESCRIBE".asInstanceOf[DESCRIBE]
   @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  @scala.inline
   def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def Slash: Slash = "/".asInstanceOf[Slash]
+  @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline
@@ -188,7 +190,5 @@ object sparqljsStrings {
   def update: update = "update".asInstanceOf[update]
   @scala.inline
   def values: values = "values".asInstanceOf[values]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
 }
 

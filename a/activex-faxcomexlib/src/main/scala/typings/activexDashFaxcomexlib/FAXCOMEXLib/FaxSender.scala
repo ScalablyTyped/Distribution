@@ -20,7 +20,8 @@ class FaxSender protected () extends js.Object {
   var Department: String = js.native
   /** Sender's e-mail address */
   var Email: String = js.native
-  var `FAXCOMEXLib.FaxSender_typekey`: FaxSender = js.native
+  @JSName("FAXCOMEXLib.FaxSender_typekey")
+  var FAXCOMEXLibDotFaxSender_typekey: FaxSender = js.native
   /** Sender's fax number */
   var FaxNumber: String = js.native
   /** Sender's home phone */

@@ -12,7 +12,7 @@ trait LoggerOptions extends js.Object {
     */
   var base: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   /**
-    * Browser only, see http://getpino.io/#/?id=pino-in-the-browser.
+    * Browser only, see http://getpino.io/#/docs/browser.
     */
   var browser: js.UndefOr[Anon_AsObject] = js.undefined
   /**

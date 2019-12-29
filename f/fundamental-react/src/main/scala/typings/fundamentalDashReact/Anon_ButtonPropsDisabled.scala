@@ -12,6 +12,7 @@ trait Anon_ButtonPropsDisabled
   var id: js.UndefOr[String] = js.undefined
   var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var localizedText: js.UndefOr[Anon_MeridiemAM] = js.undefined
+  var popoverProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /* Additional props to be spread to the `Time` component. */
   var timeProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /* Initial time value for the input. */
@@ -27,6 +28,7 @@ object Anon_ButtonPropsDisabled {
     id: String = null,
     inputProps: StringDictionary[js.Any] = null,
     localizedText: Anon_MeridiemAM = null,
+    popoverProps: StringDictionary[js.Any] = null,
     timeProps: StringDictionary[js.Any] = null,
     value: String = null
   ): Anon_ButtonPropsDisabled = {
@@ -37,6 +39,7 @@ object Anon_ButtonPropsDisabled {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
     if (timeProps != null) __obj.updateDynamic("timeProps")(timeProps.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ButtonPropsDisabled]

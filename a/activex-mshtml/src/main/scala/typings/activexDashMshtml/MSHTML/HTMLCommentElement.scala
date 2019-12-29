@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLCommentElement")
 @js.native
 class HTMLCommentElement protected () extends js.Object {
-  var `MSHTML.HTMLCommentElement_typekey`: HTMLCommentElement = js.native
+  @JSName("MSHTML.HTMLCommentElement_typekey")
+  var MSHTMLDotHTMLCommentElement_typekey: HTMLCommentElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

@@ -3,7 +3,6 @@ package typings.sipDotJs
 import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libEnumsMod.TypeStrings
-import typings.sipDotJs.libReactSessionDescriptionHandlerMod.SessionDescriptionHandler
 import typings.sipDotJs.libReactSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.BodyObj
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers

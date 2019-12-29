@@ -1,9 +1,6 @@
 package typings.heremaps.H.map.render
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.map.render.RenderState.ACTIVE
-import typings.heremaps.H.map.render.RenderState.DONE
-import typings.heremaps.H.map.render.RenderState.PENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

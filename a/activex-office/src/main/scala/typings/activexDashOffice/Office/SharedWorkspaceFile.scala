@@ -14,7 +14,8 @@ class SharedWorkspaceFile protected () extends js.Object {
   val Creator: Double = js.native
   val ModifiedBy: String = js.native
   val ModifiedDate: VarDate = js.native
-  var `Office.SharedWorkspaceFile_typekey`: SharedWorkspaceFile = js.native
+  @JSName("Office.SharedWorkspaceFile_typekey")
+  var OfficeDotSharedWorkspaceFile_typekey: SharedWorkspaceFile = js.native
   val Parent: js.Any = js.native
   val URL: String = js.native
   def Delete(): Unit = js.native

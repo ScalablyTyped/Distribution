@@ -1,15 +1,5 @@
 package typings.sylvesterDashEs6
 
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.CircularLinkedList
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.Line
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.LineSegment
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.LinkedList
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.LinkedListNode
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.Matrix
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.Plane
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.Polygon
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.Vector
-import typings.sylvesterDashEs6.sylvesterDashEs6Mod.Vertex
 import typings.sylvesterDashEs6.sylvesterDashEs6Strings.convex
 import typings.sylvesterDashEs6.sylvesterDashEs6Strings.reflex
 import scala.scalajs.js

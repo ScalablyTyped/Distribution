@@ -21,7 +21,7 @@ class MVCObject () extends js.Object {
     * identifier for this listener that can be used with
     * google.maps.event.removeListener.
     */
-  def addListener(eventName: String, handler: js.Function1[/* repeated */ js.Any, Unit]): MapsEventListener = js.native
+  def addListener(eventName: String, handler: MVCEventHandler[this.type, js.Array[_]]): MapsEventListener = js.native
   /** Binds a View to a Model. */
   def bindTo(key: String, target: MVCObject): Unit = js.native
   def bindTo(key: String, target: MVCObject, targetKey: String): Unit = js.native

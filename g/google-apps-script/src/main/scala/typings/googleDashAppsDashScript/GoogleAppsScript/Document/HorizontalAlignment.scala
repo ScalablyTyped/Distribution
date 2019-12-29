@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.HorizontalAlignment.CENTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.HorizontalAlignment.JUSTIFY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.HorizontalAlignment.LEFT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.HorizontalAlignment.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

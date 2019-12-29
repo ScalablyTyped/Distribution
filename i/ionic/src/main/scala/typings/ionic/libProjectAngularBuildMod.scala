@@ -1,14 +1,13 @@
 package typings.ionic
 
 import typings.ionic.definitionsMod.AngularBuildOptions
-import typings.ionic.ionicStrings.`@angular/cli`
+import typings.ionic.ionicStrings.`@angularSlashcli`
 import typings.ionic.ionicStrings.`Angular CLI`
-import typings.ionic.ionicStrings.`ionic:build`
+import typings.ionic.ionicStrings.ionicColonbuild
 import typings.ionic.ionicStrings.ng
 import typings.ionic.libBuildMod.BuildCLI
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libBuildMod.BuildRunnerDeps
-import typings.ionic.libProjectAngularBuildMod.AngularBuildRunnerDeps
 import typings.ionic.libProjectAngularMod.AngularProject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,12 +21,12 @@ object libProjectAngularBuildMod extends js.Object {
     @JSName("name")
     val name_AngularBuildCLI: `Angular CLI` = js.native
     @JSName("pkg")
-    val pkg_AngularBuildCLI: `@angular/cli` = js.native
+    val pkg_AngularBuildCLI: `@angularSlashcli` = js.native
     val prefix: ng = js.native
     @JSName("program")
     val program_AngularBuildCLI: ng = js.native
     @JSName("script")
-    val script_AngularBuildCLI: `ionic:build` = js.native
+    val script_AngularBuildCLI: ionicColonbuild = js.native
     /* protected */ def buildArchitectCommand(options: AngularBuildOptions): js.Array[String] = js.native
     /* protected */ def buildOptionsToNgArgs(options: AngularBuildOptions): js.Promise[js.Array[String]] = js.native
   }

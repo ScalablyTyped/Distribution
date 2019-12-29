@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Attachments
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Custom
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.History
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Links
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

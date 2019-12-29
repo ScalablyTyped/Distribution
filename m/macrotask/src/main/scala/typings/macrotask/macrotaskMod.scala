@@ -1,6 +1,5 @@
 package typings.macrotask
 
-import typings.macrotask.macrotaskMod.CancelToken
 import typings.macrotask.macrotaskStrings.imaginary
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -10,7 +10,8 @@ class Designs protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Designs_typekey`: Designs = js.native
+  @JSName("PowerPoint.Designs_typekey")
+  var PowerPointDotDesigns_typekey: Designs = js.native
   /** @param number [Index=-1] */
   def Add(designName: String): Design = js.native
   def Add(designName: String, Index: Double): Design = js.native

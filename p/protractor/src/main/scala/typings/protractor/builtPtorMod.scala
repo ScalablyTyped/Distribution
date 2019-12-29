@@ -10,10 +10,7 @@ import typings.protractor.builtElementMod.ElementFinder
 import typings.protractor.builtExpectedConditionsMod.ProtractorExpectedConditions
 import typings.protractor.builtLocatorsMod.Locator
 import typings.protractor.builtLocatorsMod.ProtractorBy
-import typings.protractor.builtPtorMod.Ptor
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Capabilities
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.IBrowser
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.ICapability
+import typings.seleniumDashWebdriver.libCapabilitiesMod.Capabilities
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebDriver
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebElement
 import scala.scalajs.js
@@ -26,12 +23,12 @@ object builtPtorMod extends js.Object {
   @js.native
   class Ptor () extends js.Object {
     var ActionSequence: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webdriver.ActionSequence */ js.Any = js.native
-    var Browser: IBrowser = js.native
+    var Browser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IBrowser */ js.Any = js.native
     var Builder: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Builder] = js.native
     var Button: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IButton */ js.Any = js.native
     var By: ProtractorBy = js.native
     var Capabilities: TypeofClassCapabilities = js.native
-    var Capability: ICapability = js.native
+    var Capability: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.ICapability */ js.Any = js.native
     var Command: js.Any = js.native
     var CommandName: js.Any = js.native
     var ElementArrayFinder: js.Any = js.native
@@ -67,7 +64,7 @@ object builtPtorMod extends js.Object {
     @JSName("$")
     def $(search: String): ElementFinder = js.native
     @JSName("$$")
-    def $$(search: String): ElementArrayFinder = js.native
+    def DollarDollar(search: String): ElementArrayFinder = js.native
     def element(locator: Locator): ElementFinder = js.native
     def wrapDriver(webdriver: WebDriver): ProtractorBrowser = js.native
     def wrapDriver(webdriver: WebDriver, baseUrl: String): ProtractorBrowser = js.native

@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.SelectionMode.end
-import typings.officeDashJsDashPreview.Word.SelectionMode.select
-import typings.officeDashJsDashPreview.Word.SelectionMode.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

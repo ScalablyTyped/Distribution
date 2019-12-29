@@ -2,7 +2,6 @@ package typings.atMaterialDialog
 
 import typings.atMaterialBase.atMaterialBaseMod.MDCFoundation
 import typings.atMaterialDialog.adapterMod.MDCDialogAdapter
-import typings.atMaterialDialog.foundationMod.MDCDialogFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

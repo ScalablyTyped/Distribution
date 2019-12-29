@@ -12,7 +12,7 @@ object datatablesDotNetDashSelectStrings {
   sealed trait multi extends js.Object
   
   @js.native
-  sealed trait `multi+shift` extends js.Object
+  sealed trait multiPlussignshift extends js.Object
   
   @js.native
   sealed trait os extends js.Object
@@ -25,7 +25,7 @@ object datatablesDotNetDashSelectStrings {
   @scala.inline
   def multi: multi = "multi".asInstanceOf[multi]
   @scala.inline
-  def `multi+shift`: `multi+shift` = "multi+shift".asInstanceOf[`multi+shift`]
+  def multiPlussignshift: multiPlussignshift = "multi+shift".asInstanceOf[multiPlussignshift]
   @scala.inline
   def os: os = "os".asInstanceOf[os]
   @scala.inline

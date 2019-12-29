@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Sockets.SocketMessageType.binary
-import typings.winrt.Windows.Networking.Sockets.SocketMessageType.utf8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

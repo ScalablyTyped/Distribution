@@ -1,13 +1,13 @@
 package typings.extjs.Ext.form
 
 import typings.extjs.Ext.Array
+import typings.extjs.Ext.form.field.IBase
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITextField
-  extends typings.extjs.Ext.form.field.IBase {
+trait ITextField extends IBase {
   /** [Config Option] (Boolean) */
   var allowBlank: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -18,13 +18,13 @@ trait ITextField
   @JSName("beforeFocus")
   var beforeFocus_ITextField: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var blankText: js.UndefOr[java.lang.String] = js.undefined
+  var blankText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var disableKeyFilter: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var emptyCls: js.UndefOr[java.lang.String] = js.undefined
+  var emptyCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[java.lang.String] = js.undefined
+  var emptyText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var enableKeyEvents: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -39,11 +39,11 @@ trait ITextField
   		* @returns String The raw String value of the field
   		*/
   @JSName("getRawValue")
-  var getRawValue_ITextField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRawValue_ITextField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Boolean) */
   var grow: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var growAppend: js.UndefOr[java.lang.String] = js.undefined
+  var growAppend: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var growMax: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -53,11 +53,11 @@ trait ITextField
   /** [Config Option] (Number) */
   var maxLength: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var maxLengthText: js.UndefOr[java.lang.String] = js.undefined
+  var maxLengthText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var minLength: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var minLengthText: js.UndefOr[java.lang.String] = js.undefined
+  var minLengthText: js.UndefOr[String] = js.undefined
   /** [Method] private */
   @JSName("postBlur")
   var postBlur_ITextField: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -66,13 +66,13 @@ trait ITextField
   		* @returns String The processed string value
   		*/
   @JSName("processRawValue")
-  var processRawValue_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], java.lang.String]] = js.undefined
+  var processRawValue_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], String]] = js.undefined
   /** [Config Option] (RegExp) */
   var regex: js.UndefOr[RegExp] = js.undefined
   /** [Config Option] (String) */
-  var regexText: js.UndefOr[java.lang.String] = js.undefined
+  var regexText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var requiredCls: js.UndefOr[java.lang.String] = js.undefined
+  var requiredCls: js.UndefOr[String] = js.undefined
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
   @JSName("reset")
   var reset_ITextField: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -98,41 +98,41 @@ trait ITextField
   /** [Config Option] (Function) */
   var validator: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var vtype: js.UndefOr[java.lang.String] = js.undefined
+  var vtype: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var vtypeText: js.UndefOr[java.lang.String] = js.undefined
+  var vtypeText: js.UndefOr[String] = js.undefined
 }
 
 object ITextField {
   @scala.inline
   def apply(
-    IBase: typings.extjs.Ext.form.field.IBase = null,
+    IBase: IBase = null,
     allowBlank: js.UndefOr[Boolean] = js.undefined,
     allowOnlyWhitespace: js.UndefOr[Boolean] = js.undefined,
     autoSize: () => Unit = null,
     beforeFocus: () => Unit = null,
-    blankText: java.lang.String = null,
+    blankText: String = null,
     disableKeyFilter: js.UndefOr[Boolean] = js.undefined,
-    emptyCls: java.lang.String = null,
-    emptyText: java.lang.String = null,
+    emptyCls: String = null,
+    emptyText: String = null,
     enableKeyEvents: js.UndefOr[Boolean] = js.undefined,
     enforceMaxLength: js.UndefOr[Boolean] = js.undefined,
     getErrors: /* value */ js.UndefOr[js.Any] => Array = null,
-    getRawValue: () => java.lang.String = null,
+    getRawValue: () => String = null,
     grow: js.UndefOr[Boolean] = js.undefined,
-    growAppend: java.lang.String = null,
+    growAppend: String = null,
     growMax: Int | Double = null,
     growMin: Int | Double = null,
     maskRe: RegExp = null,
     maxLength: Int | Double = null,
-    maxLengthText: java.lang.String = null,
+    maxLengthText: String = null,
     minLength: Int | Double = null,
-    minLengthText: java.lang.String = null,
+    minLengthText: String = null,
     postBlur: () => Unit = null,
-    processRawValue: /* value */ js.UndefOr[java.lang.String] => java.lang.String = null,
+    processRawValue: /* value */ js.UndefOr[String] => String = null,
     regex: RegExp = null,
-    regexText: java.lang.String = null,
-    requiredCls: java.lang.String = null,
+    regexText: String = null,
+    requiredCls: String = null,
     reset: () => Unit = null,
     selectOnFocus: js.UndefOr[Boolean] = js.undefined,
     selectText: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Unit = null,
@@ -141,8 +141,8 @@ object ITextField {
     stripCharsRe: RegExp = null,
     validateBlank: js.UndefOr[Boolean] = js.undefined,
     validator: js.Any = null,
-    vtype: java.lang.String = null,
-    vtypeText: java.lang.String = null
+    vtype: String = null,
+    vtypeText: String = null
   ): ITextField = {
     val __obj = js.Dynamic.literal()
     if (IBase != null) js.Dynamic.global.Object.assign(__obj, IBase)

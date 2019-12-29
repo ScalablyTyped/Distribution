@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.OneNote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.OneNote.EventType.notebookChanged
-import typings.officeDashJsDashPreview.OneNote.EventType.pageSelectionChanged
-import typings.officeDashJsDashPreview.OneNote.EventType.sectionSelectionChanged
-import typings.officeDashJsDashPreview.OneNote.EventType.stickyNotesContextMenuExecuted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

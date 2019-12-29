@@ -1,5 +1,7 @@
 package typings.lazyDotJs.LazyJS
 
+import typings.lazyDotJs.lazyDotJsBooleans.`false`
+import typings.lazyDotJs.lazyDotJsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +22,11 @@ trait SequenceBaser[T] extends js.Object {
   def filter(predicateFn: TestCallback[T, String | Double]): Sequence[T] = js.native
   def find(predicateFn: TestCallback[T, String | Double]): T = js.native
   def findWhere(properties: js.Any): T = js.native
-  def flatten(): Sequence[T] = js.native
+  def flatten(): Sequence[Flatten[T, `false`]] = js.native
+  @JSName("flatten")
+  def flatten_false(shallow: `false`): Sequence[Flatten[T, `false`]] = js.native
+  @JSName("flatten")
+  def flatten_true(shallow: `true`): Sequence[Flatten[T, `true`]] = js.native
   def groupBy(keyFn: GetKeyCallback[T]): ObjectLikeSequence[T] = js.native
   def initial(): Sequence[T] = js.native
   def initial(count: Double): Sequence[T] = js.native

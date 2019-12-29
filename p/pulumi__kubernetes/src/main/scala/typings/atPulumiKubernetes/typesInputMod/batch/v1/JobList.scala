@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.batch.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`batch/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.batchSlashv1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait JobList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`batch/v1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[batchSlashv1]] = js.undefined
   /**
     * items is the list of Jobs.
     */
@@ -40,7 +40,7 @@ object JobList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[Job]]],
-    apiVersion: Input[`batch/v1`] = null,
+    apiVersion: Input[batchSlashv1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.JobList] = null,
     metadata: Input[ListMeta] = null
   ): JobList = {

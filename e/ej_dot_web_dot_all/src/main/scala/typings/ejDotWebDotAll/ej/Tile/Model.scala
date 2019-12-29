@@ -38,7 +38,7 @@ trait Model extends js.Object {
   /** Specifies the position of tile image.
     * @Default {center}
     */
-  var imagePosition: js.UndefOr[typings.ejDotWebDotAll.ej.Tile.ImagePosition | String] = js.undefined
+  var imagePosition: js.UndefOr[ImagePosition | String] = js.undefined
   /** Specifies the tile image in outside of template content.
     * @Default {null}
     */
@@ -84,7 +84,7 @@ object Model {
     enablePersistence: js.UndefOr[Boolean] = js.undefined,
     height: String | Double = null,
     imageClass: String = null,
-    imagePosition: typings.ejDotWebDotAll.ej.Tile.ImagePosition | String = null,
+    imagePosition: ImagePosition | String = null,
     imageTemplateId: String = null,
     imageUrl: String = null,
     liveTile: LiveTile = null,

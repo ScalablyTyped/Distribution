@@ -1,6 +1,6 @@
 package typings.atPulumiPulumi
 
-import typings.atPulumiPulumi.atPulumiPulumiStrings.`DOLLAR{VERSION}`
+import typings.atPulumiPulumi.atPulumiPulumiStrings.$LeftcurlybracketVERSIONRightcurlybracket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/pulumi/version", JSImport.Namespace)
 @js.native
 object versionMod extends js.Object {
-  val version: `DOLLAR{VERSION}` = js.native
+  val version: $LeftcurlybracketVERSIONRightcurlybracket = js.native
 }
 

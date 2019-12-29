@@ -590,10 +590,10 @@ object figletStrings {
   sealed trait `Old Banner` extends Fonts
   
   @js.native
-  sealed trait `Patorjk_quotes Cheese` extends Fonts
+  sealed trait `Patorjk-HeX` extends Fonts
   
   @js.native
-  sealed trait `Patorjk-HeX` extends Fonts
+  sealed trait `PatorjkApostrophes Cheese` extends Fonts
   
   @js.native
   sealed trait Pawp extends Fonts
@@ -1272,9 +1272,9 @@ object figletStrings {
   @scala.inline
   def `Old Banner`: `Old Banner` = "Old Banner".asInstanceOf[`Old Banner`]
   @scala.inline
-  def `Patorjk_quotes Cheese`: `Patorjk_quotes Cheese` = "Patorjk's Cheese".asInstanceOf[`Patorjk_quotes Cheese`]
-  @scala.inline
   def `Patorjk-HeX`: `Patorjk-HeX` = "Patorjk-HeX".asInstanceOf[`Patorjk-HeX`]
+  @scala.inline
+  def `PatorjkApostrophes Cheese`: `PatorjkApostrophes Cheese` = "Patorjk's Cheese".asInstanceOf[`PatorjkApostrophes Cheese`]
   @scala.inline
   def Pawp: Pawp = "Pawp".asInstanceOf[Pawp]
   @scala.inline

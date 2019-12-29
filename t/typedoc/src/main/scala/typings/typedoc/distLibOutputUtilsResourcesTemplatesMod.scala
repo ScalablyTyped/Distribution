@@ -3,8 +3,6 @@ package typings.typedoc
 import typings.handlebars.Handlebars.TemplateDelegate
 import typings.typedoc.distLibOutputUtilsResourcesStackMod.Resource
 import typings.typedoc.distLibOutputUtilsResourcesStackMod.ResourceStack
-import typings.typedoc.distLibOutputUtilsResourcesTemplatesMod.Template
-import typings.typedoc.distLibOutputUtilsResourcesTemplatesMod.TemplateStack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

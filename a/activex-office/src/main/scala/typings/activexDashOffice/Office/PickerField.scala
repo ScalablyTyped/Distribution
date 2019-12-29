@@ -11,7 +11,8 @@ class PickerField protected () extends js.Object {
   val Creator: Double = js.native
   val IsHidden: Boolean = js.native
   val Name: String = js.native
-  var `Office.PickerField_typekey`: PickerField = js.native
+  @JSName("Office.PickerField_typekey")
+  var OfficeDotPickerField_typekey: PickerField = js.native
   val Type: MsoPickerField = js.native
 }
 

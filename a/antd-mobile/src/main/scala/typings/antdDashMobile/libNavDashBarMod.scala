@@ -1,6 +1,5 @@
 package typings.antdDashMobile
 
-import typings.antdDashMobile.libNavDashBarMod.NavBar
 import typings.antdDashMobile.libNavDashBarPropsTypeMod.NavBarProps
 import typings.react.reactMod.Component
 import scala.scalajs.js

@@ -34,6 +34,7 @@ trait ReelsMediaFeedResponseItem extends js.Object {
   var pk: String
   var reel_mentions: js.UndefOr[js.Array[ReelsMediaFeedResponseReelMentionsItem]] = js.undefined
   var show_one_tap_fb_share_tooltip: Boolean
+  var story_countdowns: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryCountdownsItem]] = js.undefined
   var story_cta: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryCtaItem]] = js.undefined
   var story_polls: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryPollsItem]] = js.undefined
   var story_questions: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryQuestionsItem]] = js.undefined
@@ -87,6 +88,7 @@ object ReelsMediaFeedResponseItem {
     imported_taken_at: Int | Double = null,
     link_text: String = null,
     reel_mentions: js.Array[ReelsMediaFeedResponseReelMentionsItem] = null,
+    story_countdowns: js.Array[ReelsMediaFeedResponseStoryCountdownsItem] = null,
     story_cta: js.Array[ReelsMediaFeedResponseStoryCtaItem] = null,
     story_polls: js.Array[ReelsMediaFeedResponseStoryPollsItem] = null,
     story_questions: js.Array[ReelsMediaFeedResponseStoryQuestionsItem] = null,
@@ -98,6 +100,7 @@ object ReelsMediaFeedResponseItem {
     if (imported_taken_at != null) __obj.updateDynamic("imported_taken_at")(imported_taken_at.asInstanceOf[js.Any])
     if (link_text != null) __obj.updateDynamic("link_text")(link_text.asInstanceOf[js.Any])
     if (reel_mentions != null) __obj.updateDynamic("reel_mentions")(reel_mentions.asInstanceOf[js.Any])
+    if (story_countdowns != null) __obj.updateDynamic("story_countdowns")(story_countdowns.asInstanceOf[js.Any])
     if (story_cta != null) __obj.updateDynamic("story_cta")(story_cta.asInstanceOf[js.Any])
     if (story_polls != null) __obj.updateDynamic("story_polls")(story_polls.asInstanceOf[js.Any])
     if (story_questions != null) __obj.updateDynamic("story_questions")(story_questions.asInstanceOf[js.Any])

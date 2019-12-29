@@ -21,7 +21,7 @@ package object reactDashWithDashStylesMod {
     Nullable[
       CSSProperties with (StringDictionary[
         js.UndefOr[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 260 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 259 */ js.Any
         ]
       ])
     ]

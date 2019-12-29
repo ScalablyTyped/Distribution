@@ -1,7 +1,6 @@
 package typings.streamDashMock.libHelpersWarningMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.streamDashMock.libHelpersWarningMod.WARNING_TYPES.DEPRECATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

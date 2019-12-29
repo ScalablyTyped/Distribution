@@ -3,7 +3,6 @@ package typings.googleDashGax
 import typings.googleDashGax.buildSrcApiCallerMod.APICaller
 import typings.googleDashGax.buildSrcDescriptorMod.Descriptor
 import typings.googleDashGax.buildSrcGaxMod.CallSettings
-import typings.googleDashGax.buildSrcLongRunningCallsLongRunningDescriptorMod.AnyDecoder
 import typings.googleDashGax.buildSrcOperationsClientMod.OperationsClient
 import typings.protobufjs.protobufjsMod.Message
 import typings.protobufjs.protobufjsMod.Reader

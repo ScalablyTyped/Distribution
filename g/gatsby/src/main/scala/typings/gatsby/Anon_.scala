@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ extends js.Object {
-  var `*`: String
+  @JSName("*")
+  var Asterisk: String
   var children: js.UndefOr[scala.Nothing] = js.undefined
   var data: js.Object
   var location: js.Object
@@ -19,7 +20,7 @@ trait Anon_ extends js.Object {
 object Anon_ {
   @scala.inline
   def apply(
-    `*`: String,
+    Asterisk: String,
     data: js.Object,
     location: js.Object,
     navigate: js.Function,
@@ -30,7 +31,7 @@ object Anon_ {
     children: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any], pageContext = pageContext.asInstanceOf[js.Any], pageResources = pageResources.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("*")(`*`.asInstanceOf[js.Any])
+    __obj.updateDynamic("*")(Asterisk.asInstanceOf[js.Any])
     if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }

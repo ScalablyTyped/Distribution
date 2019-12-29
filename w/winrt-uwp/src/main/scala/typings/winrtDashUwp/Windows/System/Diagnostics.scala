@@ -2,13 +2,6 @@ package typings.winrtDashUwp.Windows.System
 
 import typings.std.Date
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtDashUwp.Windows.System.Diagnostics.ProcessCpuUsage
-import typings.winrtDashUwp.Windows.System.Diagnostics.ProcessCpuUsageReport
-import typings.winrtDashUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo
-import typings.winrtDashUwp.Windows.System.Diagnostics.ProcessDiskUsage
-import typings.winrtDashUwp.Windows.System.Diagnostics.ProcessDiskUsageReport
-import typings.winrtDashUwp.Windows.System.Diagnostics.ProcessMemoryUsage
-import typings.winrtDashUwp.Windows.System.Diagnostics.ProcessMemoryUsageReport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

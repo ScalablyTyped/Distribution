@@ -30,7 +30,7 @@ trait Fn_Buffer extends js.Object {
   def apply(
     filename: PathLike,
     options: Null,
-    listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
+    listener: js.Function2[/* event */ String, Buffer | String, Unit]
   ): FSWatcher = js.native
   def apply(filename: PathLike, options: buffer): FSWatcher = js.native
   def apply(

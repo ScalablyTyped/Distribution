@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.autoClearStall
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.none
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.shortPacketTerminate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

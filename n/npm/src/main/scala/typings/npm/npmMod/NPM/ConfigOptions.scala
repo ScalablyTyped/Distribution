@@ -43,11 +43,16 @@ trait ConfigOptions extends js.Object {
   var `https-proxy`: js.UndefOr[String] = js.undefined
   var `ignore-scripts`: js.UndefOr[Boolean] = js.undefined
   var `init-module`: js.UndefOr[String] = js.undefined
-  var `init.author.email`: js.UndefOr[String] = js.undefined
-  var `init.author.name`: js.UndefOr[String] = js.undefined
-  var `init.author.url`: js.UndefOr[String] = js.undefined
-  var `init.license`: js.UndefOr[String] = js.undefined
-  var `init.version`: js.UndefOr[String] = js.undefined
+  @JSName("init.author.email")
+  var initDotauthorDotemail: js.UndefOr[String] = js.undefined
+  @JSName("init.author.name")
+  var initDotauthorDotname: js.UndefOr[String] = js.undefined
+  @JSName("init.author.url")
+  var initDotauthorDoturl: js.UndefOr[String] = js.undefined
+  @JSName("init.license")
+  var initDotlicense: js.UndefOr[String] = js.undefined
+  @JSName("init.version")
+  var initDotversion: js.UndefOr[String] = js.undefined
   var json: js.UndefOr[Boolean] = js.undefined
   var key: js.UndefOr[String] = js.undefined
   var link: js.UndefOr[Boolean] = js.undefined
@@ -135,11 +140,11 @@ object ConfigOptions {
     `https-proxy`: String = null,
     `ignore-scripts`: js.UndefOr[Boolean] = js.undefined,
     `init-module`: String = null,
-    `init.author.email`: String = null,
-    `init.author.name`: String = null,
-    `init.author.url`: String = null,
-    `init.license`: String = null,
-    `init.version`: String = null,
+    initDotauthorDotemail: String = null,
+    initDotauthorDotname: String = null,
+    initDotauthorDoturl: String = null,
+    initDotlicense: String = null,
+    initDotversion: String = null,
     json: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     link: js.UndefOr[Boolean] = js.undefined,
@@ -222,11 +227,11 @@ object ConfigOptions {
     if (`https-proxy` != null) __obj.updateDynamic("https-proxy")(`https-proxy`.asInstanceOf[js.Any])
     if (!js.isUndefined(`ignore-scripts`)) __obj.updateDynamic("ignore-scripts")(`ignore-scripts`.asInstanceOf[js.Any])
     if (`init-module` != null) __obj.updateDynamic("init-module")(`init-module`.asInstanceOf[js.Any])
-    if (`init.author.email` != null) __obj.updateDynamic("init.author.email")(`init.author.email`.asInstanceOf[js.Any])
-    if (`init.author.name` != null) __obj.updateDynamic("init.author.name")(`init.author.name`.asInstanceOf[js.Any])
-    if (`init.author.url` != null) __obj.updateDynamic("init.author.url")(`init.author.url`.asInstanceOf[js.Any])
-    if (`init.license` != null) __obj.updateDynamic("init.license")(`init.license`.asInstanceOf[js.Any])
-    if (`init.version` != null) __obj.updateDynamic("init.version")(`init.version`.asInstanceOf[js.Any])
+    if (initDotauthorDotemail != null) __obj.updateDynamic("init.author.email")(initDotauthorDotemail.asInstanceOf[js.Any])
+    if (initDotauthorDotname != null) __obj.updateDynamic("init.author.name")(initDotauthorDotname.asInstanceOf[js.Any])
+    if (initDotauthorDoturl != null) __obj.updateDynamic("init.author.url")(initDotauthorDoturl.asInstanceOf[js.Any])
+    if (initDotlicense != null) __obj.updateDynamic("init.license")(initDotlicense.asInstanceOf[js.Any])
+    if (initDotversion != null) __obj.updateDynamic("init.version")(initDotversion.asInstanceOf[js.Any])
     if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])

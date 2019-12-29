@@ -2,7 +2,6 @@ package typings.atFirebaseFirestore
 
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.BatchId
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.TargetId
-import typings.atFirebaseFirestore.distSrcLocalReferenceUnderscoreSetMod.DocReference
 import typings.atFirebaseFirestore.distSrcModelCollectionsMod.DocumentKeySet
 import typings.atFirebaseFirestore.distSrcModelDocumentUnderscoreKeyMod.DocumentKey
 import scala.scalajs.js

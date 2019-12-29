@@ -17,7 +17,8 @@ class Bookmark protected () extends js.Object {
   val Range: typings.activexDashWord.Word.Range = js.native
   var Start: Double = js.native
   val StoryType: WdStoryType = js.native
-  var `Word.Bookmark_typekey`: Bookmark = js.native
+  @JSName("Word.Bookmark_typekey")
+  var WordDotBookmark_typekey: Bookmark = js.native
   def Copy(Name: String): Bookmark = js.native
   def Delete(): Unit = js.native
   def Select(): Unit = js.native

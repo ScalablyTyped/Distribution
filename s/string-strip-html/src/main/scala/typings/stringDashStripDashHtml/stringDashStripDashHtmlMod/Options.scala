@@ -1,6 +1,6 @@
 package typings.stringDashStripDashHtml.stringDashStripDashHtmlMod
 
-import typings.stringDashStripDashHtml.stringDashStripDashHtmlNumbers.`false`
+import typings.stringDashStripDashHtml.stringDashStripDashHtmlBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

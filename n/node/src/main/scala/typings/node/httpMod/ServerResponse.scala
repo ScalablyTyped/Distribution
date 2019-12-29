@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class ServerResponse protected () extends OutgoingMessage {
   def this(req: IncomingMessage) = this()
   var statusCode: Double = js.native
-  var statusMessage: java.lang.String = js.native
+  var statusMessage: String = js.native
   def assignSocket(socket: Socket): Unit = js.native
   def detachSocket(socket: Socket): Unit = js.native
   // https://github.com/nodejs/node/blob/master/test/parallel/test-http-write-callbacks.js#L53
@@ -20,8 +20,8 @@ class ServerResponse protected () extends OutgoingMessage {
   def writeContinue(callback: js.Function0[Unit]): Unit = js.native
   def writeHead(statusCode: Double): this.type = js.native
   def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
-  def writeHead(statusCode: Double, reasonPhrase: java.lang.String): this.type = js.native
-  def writeHead(statusCode: Double, reasonPhrase: java.lang.String, headers: OutgoingHttpHeaders): this.type = js.native
+  def writeHead(statusCode: Double, reasonPhrase: String): this.type = js.native
+  def writeHead(statusCode: Double, reasonPhrase: String, headers: OutgoingHttpHeaders): this.type = js.native
   def writeProcessing(): Unit = js.native
 }
 

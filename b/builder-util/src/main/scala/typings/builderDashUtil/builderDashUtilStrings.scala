@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 object builderDashUtilStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait arm64 extends ArchType
@@ -38,7 +38,7 @@ object builderDashUtilStrings {
   sealed trait x64 extends ArchType
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def arm64: arm64 = "arm64".asInstanceOf[arm64]
   @scala.inline

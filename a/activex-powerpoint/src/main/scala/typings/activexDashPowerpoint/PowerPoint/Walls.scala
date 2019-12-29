@@ -17,7 +17,8 @@ class Walls protected () extends js.Object {
   val Parent: js.Any = js.native
   var PictureType: js.Any = js.native
   var PictureUnit: js.Any = js.native
-  var `PowerPoint.Walls_typekey`: Walls = js.native
+  @JSName("PowerPoint.Walls_typekey")
+  var PowerPointDotWalls_typekey: Walls = js.native
   var Thickness: Double = js.native
   def ClearFormats(): js.Any = js.native
   def Paste(): Unit = js.native

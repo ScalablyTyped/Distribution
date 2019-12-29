@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("bigi", "ONE")
 @js.native
-object ONE
-  extends TopLevel[typings.bigi.bigiMod.bigi with Constants]
+object ONE extends TopLevel[bigi with Constants]
 

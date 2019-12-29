@@ -13,7 +13,7 @@ trait RemoveEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the names of deleted items.
     */
   var name: js.UndefOr[String] = js.undefined
@@ -33,7 +33,7 @@ object RemoveEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     data: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     name: String = null,
     path: String = null,
     selectedItems: js.Any = null,

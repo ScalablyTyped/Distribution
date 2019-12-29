@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 // TODO: Improve test by checking the type of common keys
 /* Rewritten from type alias, can be one of: 
-  - typings.stampit.stampitNumbers.`false`
-  - typings.stampit.stampitNumbers.`true`
+  - typings.stampit.stampitBooleans.`false`
+  - typings.stampit.stampitBooleans.`true`
 */
 trait IsADescriptor[Type] extends js.Object
 

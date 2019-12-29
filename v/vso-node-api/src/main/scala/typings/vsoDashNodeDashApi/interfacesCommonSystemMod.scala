@@ -1,14 +1,6 @@
 package typings.vsoDashNodeDashApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek.Friday
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek.Monday
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek.Saturday
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek.Sunday
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek.Thursday
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek.Tuesday
-import typings.vsoDashNodeDashApi.interfacesCommonSystemMod.DayOfWeek.Wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

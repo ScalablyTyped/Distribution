@@ -6,7 +6,6 @@ import typings.titanium.ConnectedCallbackArgs
 import typings.titanium.ErrorCallbackArgs
 import typings.titanium.ReadCallbackArgs
 import typings.titanium.Titanium.Buffer
-import typings.titanium.Titanium.Network.Socket.TCP
 import typings.titanium.Titanium.Proxy
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window

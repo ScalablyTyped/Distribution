@@ -1,6 +1,6 @@
 package typings.protooDashServer.protooDashServerMod
 
-import typings.protooDashServer.protooDashServerNumbers.`true`
+import typings.protooDashServer.protooDashServerBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

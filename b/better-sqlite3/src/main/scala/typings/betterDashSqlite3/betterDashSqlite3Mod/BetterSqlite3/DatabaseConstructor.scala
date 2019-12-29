@@ -12,15 +12,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DatabaseConstructor
-  extends Instantiable1[
-      /* filename */ String, 
-      typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Database
-    ]
-     with Instantiable2[
-      /* filename */ String, 
-      /* options */ Options, 
-      typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Database
-    ] {
+  extends Instantiable1[/* filename */ String, Database]
+     with Instantiable2[/* filename */ String, /* options */ Options, Database] {
   @JSName("Integer")
   var Integer_Original: (js.Function1[/* val */ IntLike, IntClass]) with TypeofInteger = js.native
   var SqliteError: Instantiable2[
@@ -28,8 +21,8 @@ trait DatabaseConstructor
     /* code */ String, 
     typings.betterDashSqlite3.betterDashSqlite3Mod.SqliteError
   ] = js.native
-  def apply(filename: String): typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Database = js.native
-  def apply(filename: String, options: Options): typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Database = js.native
+  def apply(filename: String): Database = js.native
+  def apply(filename: String, options: Options): Database = js.native
   def Integer(`val`: IntLike): IntClass = js.native
 }
 

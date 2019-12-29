@@ -9,11 +9,14 @@ import scala.scalajs.js.annotation._
 class PartitionAll[TResult, TInput] protected () extends CompletingTransformer[TResult, TResult, TInput] {
   def this(n: Double, xf: Transformer[TResult, js.Array[TInput]]) = this()
   /* CompleteClass */
-  override def `@@transducer/init`(): TResult | Unit = js.native
+  @JSName("@@transducer/init")
+  override def `@@transducerSlashinit`(): TResult | Unit = js.native
   /* CompleteClass */
-  override def `@@transducer/result`(result: TResult): TResult = js.native
+  @JSName("@@transducer/result")
+  override def `@@transducerSlashresult`(result: TResult): TResult = js.native
   /* CompleteClass */
-  override def `@@transducer/step`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
+  @JSName("@@transducer/step")
+  override def `@@transducerSlashstep`(result: TResult, input: TInput): TResult | Reduced[TResult] = js.native
 }
 
 @JSImport("transducers-js", "partitionAll")

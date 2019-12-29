@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSplitter
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Splitter]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Splitter] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Splitter]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Splitter] {
   var Locale: js.Any = js.native
   var fn: Splitter = js.native
 }

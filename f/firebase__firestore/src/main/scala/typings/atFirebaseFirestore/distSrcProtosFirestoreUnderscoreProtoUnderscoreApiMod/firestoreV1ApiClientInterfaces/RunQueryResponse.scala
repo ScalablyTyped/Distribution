@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RunQueryResponse extends js.Object {
-  var document: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Document
-  ] = js.undefined
+  var document: js.UndefOr[Document] = js.undefined
   var readTime: js.UndefOr[String] = js.undefined
   var skippedResults: js.UndefOr[Double] = js.undefined
   var transaction: js.UndefOr[String] = js.undefined
@@ -16,7 +14,7 @@ trait RunQueryResponse extends js.Object {
 object RunQueryResponse {
   @scala.inline
   def apply(
-    document: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Document = null,
+    document: Document = null,
     readTime: String = null,
     skippedResults: Int | Double = null,
     transaction: String = null

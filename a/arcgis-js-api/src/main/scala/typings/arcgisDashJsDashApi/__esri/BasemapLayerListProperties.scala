@@ -39,6 +39,14 @@ trait BasemapLayerListProperties extends WidgetProperties {
     */
   var iconClass: js.UndefOr[String] = js.undefined
   /**
+    * Indicates whether more than one list item may be selected by the user at a single time. Selected items are available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#selectedItems) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#multipleSelectionEnabled)
+    *
+    * @default false
+    */
+  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing the [referenceLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#referenceLayers).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#referenceItems)
@@ -84,6 +92,7 @@ object BasemapLayerListProperties {
     iconClass: String = null,
     id: String = null,
     label: String = null,
+    multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined,
     referenceItems: CollectionProperties[ListItem] = null,
     referenceListItemCreatedFunction: js.Function = null,
     statusIndicatorsVisible: js.UndefOr[Boolean] = js.undefined,
@@ -100,6 +109,7 @@ object BasemapLayerListProperties {
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleSelectionEnabled)) __obj.updateDynamic("multipleSelectionEnabled")(multipleSelectionEnabled.asInstanceOf[js.Any])
     if (referenceItems != null) __obj.updateDynamic("referenceItems")(referenceItems.asInstanceOf[js.Any])
     if (referenceListItemCreatedFunction != null) __obj.updateDynamic("referenceListItemCreatedFunction")(referenceListItemCreatedFunction.asInstanceOf[js.Any])
     if (!js.isUndefined(statusIndicatorsVisible)) __obj.updateDynamic("statusIndicatorsVisible")(statusIndicatorsVisible.asInstanceOf[js.Any])

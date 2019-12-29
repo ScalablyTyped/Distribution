@@ -1,6 +1,6 @@
 package typings.jpegDashJs.jpegDashJsMod
 
-import typings.jpegDashJs.jpegDashJsNumbers.`false`
+import typings.jpegDashJs.jpegDashJsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

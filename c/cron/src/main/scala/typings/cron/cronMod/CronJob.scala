@@ -80,15 +80,15 @@ class CronJob protected () extends js.Object {
     * Tells you when a ```CronTime``` will be run.
     */
   def nextDate(): Moment = js.native
-  def nextDates(): Moment = js.native
-  def nextDates(i: Double): Moment | js.Array[Moment] = js.native
   /**
     * Tells you when a ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
     * @returns A `Moment` when the cronTime passed in the constructor is a `Date` or a `Moment` and an array of `Moment` when the cronTime is a string
     */
+  def nextDates(): Moment | js.Array[Moment] = js.native
+  def nextDates(i: Double): Moment | js.Array[Moment] = js.native
   @JSName("nextDates")
-  def nextDates_Union(): Moment | js.Array[Moment] = js.native
+  def nextDates_Moment(): Moment = js.native
   /**
     * Change the time for the ```CronJob```.
     * @param time Target time.

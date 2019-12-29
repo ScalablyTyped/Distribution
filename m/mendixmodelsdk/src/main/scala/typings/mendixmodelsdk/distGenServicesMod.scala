@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk
 
-import typings.mendixmodelsdk.distGenServicesMod.services.HttpMethod
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractEnum
 import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType

@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentContentFormat.Base64
-import typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentContentFormat.Eml
-import typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentContentFormat.ICalendar
-import typings.officeDashJsDashPreview.Office.MailboxEnums.AttachmentContentFormat.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -18,6 +18,6 @@ trait ListenerDescriptor[T /* <: Ractive[T] */] extends js.Object {
   /**
   	 * The callback to call when the event is fired.
   	 */
-  def handler(`this`: T, ctx: ContextHelper, args: js.Any*): Boolean | Unit | js.Promise[_] = js.native
+  def handler(ctx: ContextHelper, args: js.Any*): Boolean | Unit | js.Promise[_] = js.native
 }
 

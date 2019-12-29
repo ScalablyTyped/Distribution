@@ -30,7 +30,8 @@ class CommandBarButton protected () extends js.Object {
   val Left: Double = js.native
   var Mask: IPictureDisp = js.native
   var OLEUsage: MsoControlOLEUsage = js.native
-  var `Office.CommandBarButton_typekey`: CommandBarButton = js.native
+  @JSName("Office.CommandBarButton_typekey")
+  var OfficeDotCommandBarButton_typekey: CommandBarButton = js.native
   var OnAction: String = js.native
   var Parameter: String = js.native
   val Parent: CommandBar = js.native

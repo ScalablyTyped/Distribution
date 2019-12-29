@@ -1,8 +1,6 @@
 package typings.baseui.layoutDashGridMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.baseui.layoutDashGridMod.BEHAVIOR.fixed
-import typings.baseui.layoutDashGridMod.BEHAVIOR.fluid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

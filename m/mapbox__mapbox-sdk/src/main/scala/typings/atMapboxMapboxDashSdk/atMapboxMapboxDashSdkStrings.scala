@@ -125,10 +125,10 @@ object atMapboxMapboxDashSdkStrings {
   sealed trait locality extends GeocodeQueryType
   
   @js.native
-  sealed trait mapboxDOTplaces extends GeocodeMode
+  sealed trait mapboxDotplaces extends GeocodeMode
   
   @js.native
-  sealed trait `mapboxDOTplaces-permanent` extends GeocodeMode
+  sealed trait `mapboxDotplaces-permanent` extends GeocodeMode
   
   @js.native
   sealed trait merge extends ManeuverType
@@ -164,7 +164,7 @@ object atMapboxMapboxDashSdkStrings {
   sealed trait poi extends GeocodeQueryType
   
   @js.native
-  sealed trait poiDOTlandmark extends GeocodeQueryType
+  sealed trait poiDotlandmark extends GeocodeQueryType
   
   @js.native
   sealed trait point extends GeometryType
@@ -313,9 +313,9 @@ object atMapboxMapboxDashSdkStrings {
   @scala.inline
   def locality: locality = "locality".asInstanceOf[locality]
   @scala.inline
-  def mapboxDOTplaces: mapboxDOTplaces = "mapbox.places".asInstanceOf[mapboxDOTplaces]
+  def mapboxDotplaces: mapboxDotplaces = "mapbox.places".asInstanceOf[mapboxDotplaces]
   @scala.inline
-  def `mapboxDOTplaces-permanent`: `mapboxDOTplaces-permanent` = "mapbox.places-permanent".asInstanceOf[`mapboxDOTplaces-permanent`]
+  def `mapboxDotplaces-permanent`: `mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[`mapboxDotplaces-permanent`]
   @scala.inline
   def merge: merge = "merge".asInstanceOf[merge]
   @scala.inline
@@ -339,7 +339,7 @@ object atMapboxMapboxDashSdkStrings {
   @scala.inline
   def poi: poi = "poi".asInstanceOf[poi]
   @scala.inline
-  def poiDOTlandmark: poiDOTlandmark = "poi.landmark".asInstanceOf[poiDOTlandmark]
+  def poiDotlandmark: poiDotlandmark = "poi.landmark".asInstanceOf[poiDotlandmark]
   @scala.inline
   def point: point = "point".asInstanceOf[point]
   @scala.inline

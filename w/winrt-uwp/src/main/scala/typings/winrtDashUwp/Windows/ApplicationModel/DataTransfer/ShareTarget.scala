@@ -1,6 +1,5 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer
 
-import typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVector
 import typings.winrtDashUwp.Windows.Storage.Streams.RandomAccessStreamReference
 import scala.scalajs.js

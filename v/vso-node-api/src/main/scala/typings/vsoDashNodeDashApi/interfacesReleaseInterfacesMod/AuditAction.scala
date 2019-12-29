@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Add
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Delete
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Undelete
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

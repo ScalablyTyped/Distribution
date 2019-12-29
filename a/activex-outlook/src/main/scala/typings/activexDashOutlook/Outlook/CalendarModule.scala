@@ -12,7 +12,8 @@ class CalendarModule protected () extends js.Object {
   val Name: String = js.native
   val NavigationGroups: typings.activexDashOutlook.Outlook.NavigationGroups = js.native
   val NavigationModuleType: OlNavigationModuleType = js.native
-  var `Outlook.CalendarModule_typekey`: CalendarModule = js.native
+  @JSName("Outlook.CalendarModule_typekey")
+  var OutlookDotCalendarModule_typekey: CalendarModule = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

@@ -1,9 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.WorldAlignment.AlignmentCamera
-import typings.expo.buildARMod.WorldAlignment.Gravity
-import typings.expo.buildARMod.WorldAlignment.GravityAndHeading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

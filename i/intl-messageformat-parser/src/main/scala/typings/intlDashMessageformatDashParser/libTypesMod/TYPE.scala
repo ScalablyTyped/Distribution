@@ -1,13 +1,6 @@
 package typings.intlDashMessageformatDashParser.libTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.argument
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.date
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.literal
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.number
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.plural
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.select
-import typings.intlDashMessageformatDashParser.libTypesMod.TYPE.time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

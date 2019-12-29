@@ -16,7 +16,8 @@ class IMsoDataTable protected () extends js.Object {
   var HasBorderHorizontal: Boolean = js.native
   var HasBorderOutline: Boolean = js.native
   var HasBorderVertical: Boolean = js.native
-  var `Office.IMsoDataTable_typekey`: IMsoDataTable = js.native
+  @JSName("Office.IMsoDataTable_typekey")
+  var OfficeDotIMsoDataTable_typekey: IMsoDataTable = js.native
   val Parent: js.Any = js.native
   var ShowLegendKey: Boolean = js.native
   def Delete(): Unit = js.native

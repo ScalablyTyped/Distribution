@@ -1,6 +1,6 @@
 package typings.browserify.browserifyMod
 
-import typings.browserify.browserifyStrings.PACKAGE
+import typings.browserify.browserifyStrings._package
 import typings.browserify.browserifyStrings.bundle
 import typings.browserify.browserifyStrings.file
 import typings.browserify.browserifyStrings.reset
@@ -72,7 +72,7 @@ trait BrowserifyObject extends EventEmitter {
     * The package directory is available at pkg.__dirname.
     */
   @JSName("on")
-  def on_package(event: PACKAGE, listener: js.Function1[/* pkg */ js.Any, _]): this.type = js.native
+  def on_package(event: _package, listener: js.Function1[/* pkg */ js.Any, _]): this.type = js.native
   /**
     * When the .reset() method is called or implicitly called by another call to .bundle(), this event fires.
     */

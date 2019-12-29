@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.apps.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait Deployment extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`apps/v1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[appsSlashv1]] = js.undefined
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -38,7 +38,7 @@ trait Deployment extends js.Object {
 object Deployment {
   @scala.inline
   def apply(
-    apiVersion: Input[`apps/v1`] = null,
+    apiVersion: Input[appsSlashv1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Deployment] = null,
     metadata: Input[ObjectMeta] = null,
     spec: Input[DeploymentSpec] = null

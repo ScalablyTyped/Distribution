@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.contactId
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.conversationId
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.custom
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.participants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

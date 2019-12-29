@@ -3,11 +3,10 @@ package typings.atTensorflowTfjsDashNode
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.IOHandler
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.ModelArtifacts
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.SaveResult
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.`file://`
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.modelDOTjson
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.tensorflowjsDOTpb
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.weightsDOTbin
-import typings.atTensorflowTfjsDashNode.distIoFileUnderscoreSystemMod.NodeFileSystem
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.fileColonSlashSlash
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.modelDotjson
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.tensorflowjsDotpb
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.weightsDotbin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,9 +36,9 @@ object distIoFileUnderscoreSystemMod extends js.Object {
       */
     def this(path: String) = this()
     def this(path: js.Array[String]) = this()
-    val MODEL_BINARY_FILENAME: tensorflowjsDOTpb = js.native
-    val MODEL_JSON_FILENAME: modelDOTjson = js.native
-    val WEIGHTS_BINARY_FILENAME: weightsDOTbin = js.native
+    val MODEL_BINARY_FILENAME: tensorflowjsDotpb = js.native
+    val MODEL_JSON_FILENAME: modelDotjson = js.native
+    val WEIGHTS_BINARY_FILENAME: weightsDotbin = js.native
     var loadWeights: js.Any = js.native
     val path: String | js.Array[String] = js.native
     /**
@@ -62,7 +61,7 @@ object distIoFileUnderscoreSystemMod extends js.Object {
   /* static members */
   @js.native
   object NodeFileSystem extends js.Object {
-    val URL_SCHEME: `file://` = js.native
+    val URL_SCHEME: fileColonSlashSlash = js.native
   }
   
 }

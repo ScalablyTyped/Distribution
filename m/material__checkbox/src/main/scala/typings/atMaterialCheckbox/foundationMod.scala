@@ -1,7 +1,6 @@
 package typings.atMaterialCheckbox
 
 import typings.atMaterialCheckbox.adapterMod.MDCCheckboxAdapter
-import typings.atMaterialCheckbox.foundationMod.MDCCheckboxFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

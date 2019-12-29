@@ -45,9 +45,6 @@ object qlikDashEngineapiStrings {
   sealed trait `-1` extends TypeSortDirection
   
   @js.native
-  sealed trait `/qListObjectDef` extends js.Object
-  
-  @js.native
   sealed trait `0`
     extends ErrorDataCodeType
        with FieldDefExType
@@ -441,6 +438,9 @@ object qlikDashEngineapiStrings {
   sealed trait SYS extends FunctionGroupType
   
   @js.native
+  sealed trait SlashqListObjectDef extends js.Object
+  
+  @js.native
   sealed trait T
     extends DimensionType
        with FieldAttributesType
@@ -508,8 +508,6 @@ object qlikDashEngineapiStrings {
   
   @scala.inline
   def `-1`: `-1` = "-1".asInstanceOf[`-1`]
-  @scala.inline
-  def `/qListObjectDef`: `/qListObjectDef` = "/qListObjectDef".asInstanceOf[`/qListObjectDef`]
   @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]
   @scala.inline
@@ -740,6 +738,8 @@ object qlikDashEngineapiStrings {
   def STR: STR = "STR".asInstanceOf[STR]
   @scala.inline
   def SYS: SYS = "SYS".asInstanceOf[SYS]
+  @scala.inline
+  def SlashqListObjectDef: SlashqListObjectDef = "/qListObjectDef".asInstanceOf[SlashqListObjectDef]
   @scala.inline
   def T: T = "T".asInstanceOf[T]
   @scala.inline

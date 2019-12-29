@@ -1,7 +1,6 @@
 package typings.graphqlDashBinding
 
 import typings.graphql.graphqlMod.GraphQLSchema
-import typings.graphqlDashBinding.distCodegenGeneratorMod.Generator
 import typings.graphqlDashBinding.distCodegenTypesMod.Interpolation
 import typings.std.TemplateStringsArray
 import scala.scalajs.js

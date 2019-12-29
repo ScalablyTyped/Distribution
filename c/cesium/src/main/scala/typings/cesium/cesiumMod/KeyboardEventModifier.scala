@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.KeyboardEventModifier.ALT
-import typings.cesium.cesiumMod.KeyboardEventModifier.CTRL
-import typings.cesium.cesiumMod.KeyboardEventModifier.SHIFT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

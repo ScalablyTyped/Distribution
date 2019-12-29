@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,11 +33,11 @@ class Blitter protected ()
     * @param texture The key of the texture this Game Object will use for rendering. The Texture must already exist in the Texture Manager. Default '__DEFAULT'.
     * @param frame The Frame of the Texture that this Game Object will use. Only set if the Texture has multiple frames, such as a Texture Atlas or Sprite Sheet. Default 0.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, x: Double) = this()
+  def this(scene: Scene, x: Double, y: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, texture: String) = this()
+  def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
+  def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
 }
 

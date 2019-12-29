@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendPosition.Bottom
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendPosition.Left
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendPosition.Right
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstLegendPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

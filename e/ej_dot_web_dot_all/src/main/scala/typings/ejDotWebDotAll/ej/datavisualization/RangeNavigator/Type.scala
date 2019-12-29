@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Area
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Line
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Spline
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.SplineArea
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.StepArea
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.StepLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,36 +13,30 @@ sealed trait Type extends js.Object
 object Type extends js.Object {
   //string
   @js.native
-  sealed trait Area
-    extends typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type
+  sealed trait Area extends Type
   
   //string
   @js.native
-  sealed trait Line
-    extends typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type
+  sealed trait Line extends Type
   
   //string
   @js.native
-  sealed trait Spline
-    extends typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type
+  sealed trait Spline extends Type
   
   //string
   @js.native
-  sealed trait SplineArea
-    extends typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type
+  sealed trait SplineArea extends Type
   
   //string
   @js.native
-  sealed trait StepArea
-    extends typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type
+  sealed trait StepArea extends Type
   
   //string
   @js.native
-  sealed trait StepLine
-    extends typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type
+  sealed trait StepLine extends Type
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type with Double] = js.native
+  def apply(value: Double): js.UndefOr[Type with Double] = js.native
   /* 0 */ @js.native
   object Area extends TopLevel[Area with Double]
   

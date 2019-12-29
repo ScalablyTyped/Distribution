@@ -1,11 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCROutputFormat.OCROF_PDFIMAGEOVERTEXT
-import typings.dwt.EnumDWT_OCROutputFormat.OCROF_PDFIMAGEOVERTEXT_PDFX
-import typings.dwt.EnumDWT_OCROutputFormat.OCROF_PDFPLAINTEXT
-import typings.dwt.EnumDWT_OCROutputFormat.OCROF_PDFPLAINTEXT_PDFX
-import typings.dwt.EnumDWT_OCROutputFormat.OCROF_TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.findDashRoot
 
-import typings.findDashRoot.findDashRootMod.FindRootCheckFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

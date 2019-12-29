@@ -1,7 +1,5 @@
 package typings.rotDashJs
 
-import typings.rotDashJs.libFovPreciseDashShadowcastingMod.Arc
-import typings.rotDashJs.libFovPreciseDashShadowcastingMod.PreciseShadowcasting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

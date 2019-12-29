@@ -135,7 +135,7 @@ object SeriesNetworkgraphOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     states: PlotNetworkgraphStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     tooltip: PlotNetworkgraphTooltipOptions = null,
@@ -143,8 +143,8 @@ object SeriesNetworkgraphOptions {
     turboThreshold: Int | Double = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    xAxis: Double | String = null,
-    yAxis: Double | String = null,
+    xAxis: Double | scala.Nothing | String = null,
+    yAxis: Double | scala.Nothing | String = null,
     zIndex: Int | Double = null,
     zones: js.Array[PlotNetworkgraphZonesOptions] = null
   ): SeriesNetworkgraphOptions = {

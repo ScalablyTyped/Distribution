@@ -1,7 +1,5 @@
 package typings.atUirouterAngularjs
 
-import typings.atUirouterAngularjs.libUrlRouterProviderMod.RawNg1RuleFunction
-import typings.atUirouterAngularjs.libUrlRouterProviderMod.UrlRouterProvider
 import typings.atUirouterCore.atUirouterCoreMod.UIRouter
 import typings.atUirouterCore.atUirouterCoreMod.UrlMatcher
 import typings.atUirouterCore.atUirouterCoreMod.UrlRouter

@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.Media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.channelDown
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.channelUp
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.fastForward
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.next
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.pause
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.play
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.previous
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.record
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.rewind
-import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

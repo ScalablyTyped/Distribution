@@ -18,7 +18,8 @@ class GroupObject protected () extends js.Object {
   val BottomRightCell_Original: Range = js.native
   val Creator: XlCreator = js.native
   var Enabled: Boolean = js.native
-  var `Excel.GroupObject_typekey`: GroupObject = js.native
+  @JSName("Excel.GroupObject_typekey")
+  var ExcelDotGroupObject_typekey: GroupObject = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   var Height: Double = js.native
   var HorizontalAlignment: js.Any = js.native

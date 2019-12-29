@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.default
-import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latency
-import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latencyThenPower
-import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latencyThenQuality
-import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.power
-import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.powerAndQuality
-import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.quality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

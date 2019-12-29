@@ -13,7 +13,8 @@ class Action protected () extends js.Object {
   var Enabled: Boolean = js.native
   var MessageClass: String = js.native
   var Name: String = js.native
-  var `Outlook.Action_typekey`: Action = js.native
+  @JSName("Outlook.Action_typekey")
+  var OutlookDotAction_typekey: Action = js.native
   val Parent: js.Any = js.native
   var Prefix: String = js.native
   var ReplyStyle: OlActionReplyStyle = js.native

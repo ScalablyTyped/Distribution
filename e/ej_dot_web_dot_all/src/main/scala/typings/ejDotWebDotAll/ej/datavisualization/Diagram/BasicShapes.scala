@@ -1,20 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Cylinder
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Decagon
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Ellipse
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Heptagon
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Octagon
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Path
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Pentagon
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Plus
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Polygon
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.RightTriangle
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Star
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Trapezoid
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BasicShapes.Triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

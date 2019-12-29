@@ -14,12 +14,12 @@ trait AnyNaptrRecord
 object AnyNaptrRecord {
   @scala.inline
   def apply(
-    flags: java.lang.String,
+    flags: String,
     order: Double,
     preference: Double,
-    regexp: java.lang.String,
-    replacement: java.lang.String,
-    service: java.lang.String,
+    regexp: String,
+    replacement: String,
+    service: String,
     `type`: NAPTR
   ): AnyNaptrRecord = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preference = preference.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])

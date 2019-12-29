@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.idle
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.idle.onStateChanged")
 @js.native
 object onStateChanged
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* newState */ IdleState, Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* newState */ IdleState, Unit]]]
 

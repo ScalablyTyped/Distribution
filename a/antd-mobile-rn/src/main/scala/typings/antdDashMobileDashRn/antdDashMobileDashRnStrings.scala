@@ -12,9 +12,6 @@ object antdDashMobileDashRnStrings {
   sealed trait `ActionSheet example` extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait Icon extends js.Object
   
   @js.native
@@ -37,6 +34,9 @@ object antdDashMobileDashRnStrings {
   
   @js.native
   sealed trait `Tabs example` extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait android extends js.Object
@@ -223,8 +223,6 @@ object antdDashMobileDashRnStrings {
   @scala.inline
   def `ActionSheet example`: `ActionSheet example` = "ActionSheet example".asInstanceOf[`ActionSheet example`]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def Icon: Icon = "Icon".asInstanceOf[Icon]
   @scala.inline
   def `Icon Example`: `Icon Example` = "Icon Example".asInstanceOf[`Icon Example`]
@@ -240,6 +238,8 @@ object antdDashMobileDashRnStrings {
   def Tabs: Tabs = "Tabs".asInstanceOf[Tabs]
   @scala.inline
   def `Tabs example`: `Tabs example` = "Tabs example".asInstanceOf[`Tabs example`]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline

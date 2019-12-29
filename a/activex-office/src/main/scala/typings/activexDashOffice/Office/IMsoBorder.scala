@@ -12,7 +12,8 @@ class IMsoBorder protected () extends js.Object {
   var ColorIndex: js.Any = js.native
   val Creator: Double = js.native
   var LineStyle: js.Any = js.native
-  var `Office.IMsoBorder_typekey`: IMsoBorder = js.native
+  @JSName("Office.IMsoBorder_typekey")
+  var OfficeDotIMsoBorder_typekey: IMsoBorder = js.native
   val Parent: js.Any = js.native
   var Weight: js.Any = js.native
 }

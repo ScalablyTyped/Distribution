@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.ClosedCaptioning
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.default
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.depressed
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.dropShadow
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.none
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.raised
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.uniform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,21 +1,6 @@
 package typings.dockDashSpawn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dockDashSpawn.dockspawn.Dialog
-import typings.dockDashSpawn.dockspawn.DockManager
-import typings.dockDashSpawn.dockspawn.DockManagerContext
-import typings.dockDashSpawn.dockspawn.DockModel
-import typings.dockDashSpawn.dockspawn.DockNode
-import typings.dockDashSpawn.dockspawn.DocumentManagerContainer
-import typings.dockDashSpawn.dockspawn.FillDockContainer
-import typings.dockDashSpawn.dockspawn.PanelContainer
-import typings.dockDashSpawn.dockspawn.TabHost
-import typings.dockDashSpawn.dockspawn.TabPage
-import typings.dockDashSpawn.dockspawn.TabStripDirection
-import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_BOTTOM
-import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_LEFT
-import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_RIGHT
-import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_TOP
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

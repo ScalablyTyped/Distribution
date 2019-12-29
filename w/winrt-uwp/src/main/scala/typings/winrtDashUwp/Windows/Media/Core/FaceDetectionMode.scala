@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.balanced
-import typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.highPerformance
-import typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.highQuality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,24 +1,6 @@
 package typings.googlemaps.google.maps.adsense
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.adsense.AdFormat.BANNER
-import typings.googlemaps.google.maps.adsense.AdFormat.BUTTON
-import typings.googlemaps.google.maps.adsense.AdFormat.HALF_BANNER
-import typings.googlemaps.google.maps.adsense.AdFormat.LARGE_HORIZONTAL_LINK_UNIT
-import typings.googlemaps.google.maps.adsense.AdFormat.LARGE_RECTANGLE
-import typings.googlemaps.google.maps.adsense.AdFormat.LARGE_VERTICAL_LINK_UNIT
-import typings.googlemaps.google.maps.adsense.AdFormat.LEADERBOARD
-import typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_RECTANGLE
-import typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_VERTICAL_LINK_UNIT
-import typings.googlemaps.google.maps.adsense.AdFormat.SKYSCRAPER
-import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_HORIZONTAL_LINK_UNIT
-import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_RECTANGLE
-import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_SQUARE
-import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_VERTICAL_LINK_UNIT
-import typings.googlemaps.google.maps.adsense.AdFormat.SQUARE
-import typings.googlemaps.google.maps.adsense.AdFormat.VERTICAL_BANNER
-import typings.googlemaps.google.maps.adsense.AdFormat.WIDE_SKYSCRAPER
-import typings.googlemaps.google.maps.adsense.AdFormat.X_LARGE_VERTICAL_LINK_UNIT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

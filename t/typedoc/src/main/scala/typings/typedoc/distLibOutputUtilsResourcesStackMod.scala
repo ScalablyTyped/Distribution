@@ -3,11 +3,6 @@ package typings.typedoc
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
-import typings.typedoc.distLibOutputUtilsResourcesStackMod.Resource
-import typings.typedoc.distLibOutputUtilsResourcesStackMod.ResourceClass
-import typings.typedoc.distLibOutputUtilsResourcesStackMod.ResourceMap
-import typings.typedoc.distLibOutputUtilsResourcesStackMod.ResourceOrigin
-import typings.typedoc.distLibOutputUtilsResourcesStackMod.ResourceStack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

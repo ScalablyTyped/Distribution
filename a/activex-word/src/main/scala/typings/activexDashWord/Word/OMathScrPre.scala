@@ -13,7 +13,8 @@ class OMathScrPre protected () extends js.Object {
   val Parent: js.Any = js.native
   val Sub: OMath = js.native
   val Sup: OMath = js.native
-  var `Word.OMathScrPre_typekey`: OMathScrPre = js.native
+  @JSName("Word.OMathScrPre_typekey")
+  var WordDotOMathScrPre_typekey: OMathScrPre = js.native
   def ToScrSubSup(): OMathFunction = js.native
 }
 

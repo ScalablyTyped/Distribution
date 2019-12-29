@@ -1,12 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorBlinkingStyle.Blink
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorBlinkingStyle.Expand
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorBlinkingStyle.Hidden
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorBlinkingStyle.Phase
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorBlinkingStyle.Smooth
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorBlinkingStyle.Solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

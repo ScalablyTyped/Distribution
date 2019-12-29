@@ -1,6 +1,5 @@
 package typings.mongooseDashPromise
 
-import typings.mongooseDashPromise.mongooseMod.MongoosePromise
 import typings.mpromise.mpromiseMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`

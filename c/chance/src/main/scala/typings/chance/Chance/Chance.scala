@@ -51,10 +51,10 @@ trait Chance extends Seeded {
   def avatar(): String = js.native
   def avatar(opts: Options): String = js.native
   def bb_pin(): String = js.native
-  def birthday(): Date | String = js.native
+  def birthday(): Date = js.native
   def birthday(opts: Options): Date | String = js.native
   @JSName("birthday")
-  def birthday_Date(): Date = js.native
+  def birthday_Union(): Date | String = js.native
   // Basics
   def bool(): Boolean = js.native
   def bool(opts: Anon_Likelihood): Boolean = js.native
@@ -309,7 +309,7 @@ trait Chance extends Seeded {
   def tv(opts: Options): String = js.native
   def twitter(): String = js.native
   def unique[T](generator: js.Function0[T], count: Double): js.Array[T] = js.native
-  def unique[T, O /* <: Options */](generator: js.Function1[/* options */ O, T], count: Double, options: O): js.Array[T] = js.native
+  def unique[T, O /* <: UniqueOptions[T] */](generator: js.Function1[/* options */ O, T], count: Double, options: O): js.Array[T] = js.native
   def url(): String = js.native
   def url(
     opts: AtLeastOneKey[

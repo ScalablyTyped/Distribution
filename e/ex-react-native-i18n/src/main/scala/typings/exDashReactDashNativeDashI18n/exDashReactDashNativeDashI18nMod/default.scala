@@ -1,7 +1,6 @@
 package typings.exDashReactDashNativeDashI18n.exDashReactDashNativeDashI18nMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeRequireFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,9 @@ object default extends js.Object {
   var defaultLocale: String = js.native
   var fallbacks: Boolean = js.native
   var locale: String = js.native
-  var translations: StringDictionary[NodeRequireFunction] = js.native
+  var translations: StringDictionary[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ js.Any
+  ] = js.native
   def currentLocale(): String = js.native
   def getFallbackLocale(): String = js.native
   def localShort(): String = js.native

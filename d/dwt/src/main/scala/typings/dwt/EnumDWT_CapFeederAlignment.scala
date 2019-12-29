@@ -1,10 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_CENTER
-import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_LEFT
-import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_NONE
-import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

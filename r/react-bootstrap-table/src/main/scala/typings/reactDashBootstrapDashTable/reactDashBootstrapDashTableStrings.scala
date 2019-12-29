@@ -21,28 +21,10 @@ import scala.scalajs.js.annotation._
 
 object reactDashBootstrapDashTableStrings {
   @js.native
-  sealed trait `!=` extends FilterComparator
-  
-  @js.native
   sealed trait `3` extends BootstrapVersion
   
   @js.native
   sealed trait `4` extends BootstrapVersion
-  
-  @js.native
-  sealed trait `<` extends FilterComparator
-  
-  @js.native
-  sealed trait `<=` extends FilterComparator
-  
-  @js.native
-  sealed trait `=` extends FilterComparator
-  
-  @js.native
-  sealed trait `>` extends FilterComparator
-  
-  @js.native
-  sealed trait `>=` extends FilterComparator
   
   @js.native
   sealed trait ArrayFilter extends FilterType
@@ -55,6 +37,24 @@ object reactDashBootstrapDashTableStrings {
   
   @js.native
   sealed trait DateFilter extends FilterType
+  
+  @js.native
+  sealed trait Equalssign extends FilterComparator
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssign extends FilterComparator
+  
+  @js.native
+  sealed trait Greaterthansign extends FilterComparator
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends FilterComparator
+  
+  @js.native
+  sealed trait Lessthansign extends FilterComparator
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends FilterComparator
   
   @js.native
   sealed trait NumberFilter extends FilterType
@@ -160,21 +160,9 @@ object reactDashBootstrapDashTableStrings {
   sealed trait top_ extends PaginationPostion
   
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
-  @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
   @scala.inline
   def `4`: `4` = "4".asInstanceOf[`4`]
-  @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
   @scala.inline
   def ArrayFilter: ArrayFilter = "ArrayFilter".asInstanceOf[ArrayFilter]
   @scala.inline
@@ -183,6 +171,18 @@ object reactDashBootstrapDashTableStrings {
   def CustomFilter: CustomFilter = "CustomFilter".asInstanceOf[CustomFilter]
   @scala.inline
   def DateFilter: DateFilter = "DateFilter".asInstanceOf[DateFilter]
+  @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def NumberFilter: NumberFilter = "NumberFilter".asInstanceOf[NumberFilter]
   @scala.inline

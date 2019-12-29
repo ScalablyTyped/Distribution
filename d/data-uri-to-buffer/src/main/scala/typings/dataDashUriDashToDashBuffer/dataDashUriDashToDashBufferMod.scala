@@ -1,6 +1,5 @@
 package typings.dataDashUriDashToDashBuffer
 
-import typings.dataDashUriDashToDashBuffer.dataDashUriDashToDashBufferMod.MimeBuffer
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

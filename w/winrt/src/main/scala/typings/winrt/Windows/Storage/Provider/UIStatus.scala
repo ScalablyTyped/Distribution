@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Provider.UIStatus.complete
-import typings.winrt.Windows.Storage.Provider.UIStatus.hidden
-import typings.winrt.Windows.Storage.Provider.UIStatus.unavailable
-import typings.winrt.Windows.Storage.Provider.UIStatus.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

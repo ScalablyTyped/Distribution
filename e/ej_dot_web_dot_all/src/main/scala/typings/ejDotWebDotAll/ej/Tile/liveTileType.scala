@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tile.liveTileType.Carousel
-import typings.ejDotWebDotAll.ej.Tile.liveTileType.Flip
-import typings.ejDotWebDotAll.ej.Tile.liveTileType.Slide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus.authenticationError
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus.idle
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus.manualAccountRemovalRequired
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus.policyError
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus.syncing
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus.unknownError
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus.upToDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

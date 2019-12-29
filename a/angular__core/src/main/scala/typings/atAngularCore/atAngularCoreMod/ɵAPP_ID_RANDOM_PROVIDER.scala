@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵAPP_ID_RANDOM_PROVIDER")
+@JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER")
 @js.native
 object ɵAPP_ID_RANDOM_PROVIDER extends js.Object {
   var deps: js.Array[_] = js.native

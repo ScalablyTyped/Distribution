@@ -1,7 +1,5 @@
 package typings.divaDotJs
 
-import typings.divaDotJs.imageDashManifestMod.IIIFSourceAdapter
-import typings.divaDotJs.imageDashManifestMod.ImageManifest
 import typings.divaDotJs.interfacesMod.Dimensions
 import typings.divaDotJs.interfacesMod.ManifestData
 import typings.divaDotJs.interfacesMod.Page

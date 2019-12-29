@@ -1,10 +1,6 @@
 package typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.CatchError
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.CatchStack
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.Super
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.This
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

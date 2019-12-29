@@ -6,9 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Meta extends js.Object {
-  var `#ns`: js.Array[NS]
-  var `#type`: Type
-  var `#version`: String
+  @JSName("#ns")
+  var Numbersignns: js.Array[NS]
+  @JSName("#type")
+  var Numbersigntype: Type
+  @JSName("#version")
+  var Numbersignversion: String
   var author: String
   var categories: js.Array[String]
   var copyright: String
@@ -27,9 +30,9 @@ trait Meta extends js.Object {
 object Meta {
   @scala.inline
   def apply(
-    `#ns`: js.Array[NS],
-    `#type`: Type,
-    `#version`: String,
+    Numbersignns: js.Array[NS],
+    Numbersigntype: Type,
+    Numbersignversion: String,
     author: String,
     categories: js.Array[String],
     copyright: String,
@@ -45,9 +48,9 @@ object Meta {
     pubdate: Date = null
   ): Meta = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favicon = favicon.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], xmlurl = xmlurl.asInstanceOf[js.Any])
-    __obj.updateDynamic("#ns")(`#ns`.asInstanceOf[js.Any])
-    __obj.updateDynamic("#type")(`#type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("#version")(`#version`.asInstanceOf[js.Any])
+    __obj.updateDynamic("#ns")(Numbersignns.asInstanceOf[js.Any])
+    __obj.updateDynamic("#type")(Numbersigntype.asInstanceOf[js.Any])
+    __obj.updateDynamic("#version")(Numbersignversion.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (pubdate != null) __obj.updateDynamic("pubdate")(pubdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]

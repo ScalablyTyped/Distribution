@@ -1,13 +1,6 @@
 package typings.timezonecomplete.distLibBasicsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibBasicsMod.WeekDay.Friday
-import typings.timezonecomplete.distLibBasicsMod.WeekDay.Monday
-import typings.timezonecomplete.distLibBasicsMod.WeekDay.Saturday
-import typings.timezonecomplete.distLibBasicsMod.WeekDay.Sunday
-import typings.timezonecomplete.distLibBasicsMod.WeekDay.Thursday
-import typings.timezonecomplete.distLibBasicsMod.WeekDay.Tuesday
-import typings.timezonecomplete.distLibBasicsMod.WeekDay.Wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

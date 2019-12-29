@@ -13,9 +13,9 @@ class GraceNoteGroup protected () extends Modifier {
   def beamNotes(): GraceNoteGroup = js.native
   def preFormat(): Unit = js.native
   def setNote(note: StaveNote): Modifier = js.native
-  //TODO remove the following lines once TypeScript allows subclass overrides with type changes or type inconsistencies mentioned below are fixed
+   //inconsistent type: void -> GraceNoteGroup
   @JSName("setWidth")
-  def setWidth_Modifier(width: Double): Modifier = js.native
+  def setWidth_Unit(width: Double): Unit = js.native
 }
 
 /* static members */

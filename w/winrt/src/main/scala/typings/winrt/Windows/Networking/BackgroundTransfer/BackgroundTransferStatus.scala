@@ -1,14 +1,6 @@
 package typings.winrt.Windows.Networking.BackgroundTransfer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.canceled
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.completed
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.error
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.idle
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedByApplication
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedCostedNetwork
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedNoNetwork
-import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.running
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

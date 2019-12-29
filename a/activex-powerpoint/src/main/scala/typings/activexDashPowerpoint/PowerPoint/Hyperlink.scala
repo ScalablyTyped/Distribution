@@ -13,7 +13,8 @@ class Hyperlink protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   var EmailSubject: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Hyperlink_typekey`: Hyperlink = js.native
+  @JSName("PowerPoint.Hyperlink_typekey")
+  var PowerPointDotHyperlink_typekey: Hyperlink = js.native
   var ScreenTip: String = js.native
   var ShowAndReturn: MsoTriState = js.native
   var SubAddress: String = js.native

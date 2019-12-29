@@ -1,7 +1,7 @@
 package typings.atMaterialTabs.tabDashBarAdapterMod
 
 import typings.atMaterialTabs.Anon_ActiveTabIndex
-import typings.atMaterialTabs.atMaterialTabsNumbers.`true`
+import typings.atMaterialTabs.atMaterialTabsBooleans.`true`
 import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`

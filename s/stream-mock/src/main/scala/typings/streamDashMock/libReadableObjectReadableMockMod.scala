@@ -4,7 +4,6 @@ import typings.node.streamMod.ReadableOptions
 import typings.std.ArrayLike
 import typings.std.Iterable
 import typings.streamDashMock.libReadableIReadableMockMod.IReadableMock
-import typings.streamDashMock.libReadableObjectReadableMockMod.ObjectReadableMock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLHRElement")
 @js.native
 class HTMLHRElement protected () extends js.Object {
-  var `MSHTML.HTMLHRElement_typekey`: HTMLHRElement = js.native
+  @JSName("MSHTML.HTMLHRElement_typekey")
+  var MSHTMLDotHTMLHRElement_typekey: HTMLHRElement = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

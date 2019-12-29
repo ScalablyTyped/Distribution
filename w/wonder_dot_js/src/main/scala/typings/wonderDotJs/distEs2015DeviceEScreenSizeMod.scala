@@ -1,8 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceEScreenSizeMod.EScreenSize
-import typings.wonderDotJs.distEs2015DeviceEScreenSizeMod.EScreenSize.FULL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

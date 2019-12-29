@@ -16,11 +16,10 @@ package object reactDashTrackingMod {
   type ClassDecorator = js.Function1[/* target */ js.Function, js.Function]
   type Decorator = ClassDecorator with MethodDecorator
   /* Rewritten from type alias, can be one of: 
-    - typings.reactDashTracking.reactDashTrackingNumbers.`false`
+    - typings.reactDashTracking.reactDashTrackingBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
-    - typings.reactDashTracking.reactDashTrackingStrings.Empty
+    - typings.reactDashTracking.reactDashTrackingStrings._empty
   */
   type Falsy = js.UndefOr[_Falsy | Null]
   type MethodDecorator = js.Function3[
@@ -39,6 +38,6 @@ package object reactDashTrackingMod {
     /* props */ P, 
     /* state */ S, 
     /* import warning: importer.ImportType#apply Failed type conversion: any[any] */ /* args */ js.Any, 
-    T
+    T | Falsy
   ])
 }

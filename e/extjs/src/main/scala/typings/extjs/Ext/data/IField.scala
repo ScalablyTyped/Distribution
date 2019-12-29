@@ -11,23 +11,23 @@ trait IField extends IBase {
   /** [Config Option] (Function) */
   var convert: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[java.lang.String] = js.undefined
+  var dateFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dateReadFormat: js.UndefOr[java.lang.String] = js.undefined
+  var dateReadFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dateWriteFormat: js.UndefOr[java.lang.String] = js.undefined
+  var dateWriteFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Number) */
   var mapping: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var persist: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Function) */
   var serialize: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var sortDir: js.UndefOr[java.lang.String] = js.undefined
+  var sortDir: js.UndefOr[String] = js.undefined
   /** [Config Option] (Function/String) */
   var sortType: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Object) */
@@ -46,23 +46,23 @@ object IField {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     convert: js.Any = null,
-    dateFormat: java.lang.String = null,
-    dateReadFormat: java.lang.String = null,
-    dateWriteFormat: java.lang.String = null,
+    dateFormat: String = null,
+    dateReadFormat: String = null,
+    dateWriteFormat: String = null,
     defaultValue: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IField = null,
     mapping: js.Any = null,
     mixins: js.Any = null,
-    name: java.lang.String = null,
+    name: String = null,
     persist: js.UndefOr[Boolean] = js.undefined,
     requires: Array = null,
     self: IClass = null,
     serialize: js.Any = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sortDir: java.lang.String = null,
+    sortDir: String = null,
     sortType: js.Any = null,
     statics: js.Any = null,
     `type`: js.Any = null,

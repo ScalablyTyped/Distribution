@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentOnly
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithFingerprint
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithPassword
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.noConsent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

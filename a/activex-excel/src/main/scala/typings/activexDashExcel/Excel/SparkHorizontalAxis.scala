@@ -10,7 +10,8 @@ class SparkHorizontalAxis protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Axis: SparkColor = js.native
   val Creator: XlCreator = js.native
-  var `Excel.SparkHorizontalAxis_typekey`: SparkHorizontalAxis = js.native
+  @JSName("Excel.SparkHorizontalAxis_typekey")
+  var ExcelDotSparkHorizontalAxis_typekey: SparkHorizontalAxis = js.native
   val IsDateAxis: Boolean = js.native
   val Parent: js.Any = js.native
   var RightToLeftPlotOrder: Boolean = js.native

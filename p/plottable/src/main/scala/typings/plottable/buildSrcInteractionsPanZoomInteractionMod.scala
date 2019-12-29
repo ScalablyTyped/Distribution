@@ -3,10 +3,6 @@ package typings.plottable
 import typings.plottable.buildSrcCoreInterfacesMod.Point
 import typings.plottable.buildSrcInteractionsInteractionMod.Interaction
 import typings.plottable.buildSrcInteractionsMod.Drag
-import typings.plottable.buildSrcInteractionsPanZoomInteractionMod.PanCallback
-import typings.plottable.buildSrcInteractionsPanZoomInteractionMod.PanZoomUpdateCallback
-import typings.plottable.buildSrcInteractionsPanZoomInteractionMod.WheelFilter
-import typings.plottable.buildSrcInteractionsPanZoomInteractionMod.ZoomCallback
 import typings.plottable.buildSrcScalesScaleMod.TransformableScale
 import typings.std.WheelEvent
 import scala.scalajs.js

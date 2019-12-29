@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InfoPath.DataDOM")
 @js.native
 class DataDOM protected () extends js.Object {
-  var `InfoPath.DataDOM_typekey`: DataDOM = js.native
+  @JSName("InfoPath.DataDOM_typekey")
+  var InfoPathDotDataDOM_typekey: DataDOM = js.native
 }
 

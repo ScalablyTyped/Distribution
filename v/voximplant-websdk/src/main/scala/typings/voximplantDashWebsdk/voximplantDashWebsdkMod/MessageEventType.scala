@@ -1,12 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Cancel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Composing
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Delivered
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Displayed
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Invalid
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Offline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

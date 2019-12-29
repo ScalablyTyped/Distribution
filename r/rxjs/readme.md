@@ -1,7 +1,7 @@
 
 # Scala.js typings for rxjs
 
-Typings are for version 6.5.3
+Typings are for version 6.5.4
 
 ## Library description:
 Reactive Extensions for modern JavaScript

@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.fixed
-import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.unknown
-import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.unrestricted
-import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ trait SelectEventArgs extends js.Object {
   var isSpecialDay: js.UndefOr[String] = js.undefined
   /** returns the DatePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DatePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previously selected value.
     */
   var prevDate: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ object SelectEventArgs {
   def apply(
     date: js.Any = null,
     isSpecialDay: String = null,
-    model: typings.ejDotWebDotAll.ej.DatePicker.Model = null,
+    model: Model = null,
     prevDate: String = null,
     `type`: String = null,
     value: String = null

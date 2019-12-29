@@ -11,7 +11,8 @@ class RulerLevel2 protected () extends js.Object {
   val Creator: Double = js.native
   var FirstMargin: Double = js.native
   var LeftMargin: Double = js.native
-  var `Office.RulerLevel2_typekey`: RulerLevel2 = js.native
+  @JSName("Office.RulerLevel2_typekey")
+  var OfficeDotRulerLevel2_typekey: RulerLevel2 = js.native
   val Parent: js.Any = js.native
 }
 

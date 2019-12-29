@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.GridLines.Both
-import typings.ejDotWebDotAll.ej.Grid.GridLines.Horizontal
-import typings.ejDotWebDotAll.ej.Grid.GridLines.None
-import typings.ejDotWebDotAll.ej.Grid.GridLines.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

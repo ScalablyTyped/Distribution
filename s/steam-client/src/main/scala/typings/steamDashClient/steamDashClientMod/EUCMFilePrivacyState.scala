@@ -1,11 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EUCMFilePrivacyState.All
-import typings.steamDashClient.steamDashClientMod.EUCMFilePrivacyState.FriendsOnly
-import typings.steamDashClient.steamDashClientMod.EUCMFilePrivacyState.Invalid
-import typings.steamDashClient.steamDashClientMod.EUCMFilePrivacyState.Private
-import typings.steamDashClient.steamDashClientMod.EUCMFilePrivacyState.Public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,16 @@
 package typings.reactDashFloater.reactDashFloaterMod
 
+import typings.popperDotJs.popperDotJsMod.Data
+import typings.popperDotJs.popperDotJsMod.Modifiers
+import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
+import typings.reactDashFloater.Anon_Center
+import typings.reactDashFloater.reactDashFloaterStrings.click
+import typings.reactDashFloater.reactDashFloaterStrings.floater
+import typings.reactDashFloater.reactDashFloaterStrings.hover
+import typings.reactDashFloater.reactDashFloaterStrings.wrapper
+import typings.std.HTMLElement
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,21 +23,13 @@ trait Props extends js.Object {
   /**
     * It will be called when the Floater change state
     */
-  var callback: js.UndefOr[js.Function0[CallBackProps]] = js.undefined
+  var callback: js.UndefOr[
+    js.Function2[/* action */ Action, /* props */ PropsWithComponent | PropsWithContent, Unit]
+  ] = js.undefined
   /**
     * An element to trigger the Floater.
     */
   var children: js.UndefOr[ReactNode] = js.undefined
-  /**
-    * A React component or function to as a custom UI for the Floater.
-    * The prop closeFloater will be available in your component.
-    */
-  var component: js.UndefOr[js.Function1[/* renderProps */ RenderProps, ReactNode]] = js.undefined
-  /**
-    * The Floater content. It can be anything that can be rendered.
-    * This is the only required props, unless you pass a component.
-    */
-  var content: ReactNode
   /**
     * Log some basic actions.
     */
@@ -48,7 +50,7 @@ trait Props extends js.Object {
     * The event that will trigger the Floater. It can be hover | click.
     * These won't work in controlled mode.
     */
-  var event: js.UndefOr[String] = js.undefined
+  var event: js.UndefOr[click | hover] = js.undefined
   /**
     * The amount of time (in seconds) that the floater should wait after a mouseLeave event before hiding. Only valid for event type hover.
     */
@@ -58,9 +60,9 @@ trait Props extends js.Object {
     */
   var footer: js.UndefOr[ReactNode] = js.undefined
   /**
-    * Get the pooper.js instance
+    * Get the popper.js instance
     */
-  var getPopper: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var getPopper: js.UndefOr[js.Function2[/* popper */ Data, /* origin */ floater | wrapper, Unit]] = js.undefined
   /**
     * Don't show the arrow. Useful for centered or modal layout.
     */
@@ -69,19 +71,18 @@ trait Props extends js.Object {
     * In case that you need to identify the portal.
     */
   var id: js.UndefOr[String | Double] = js.undefined
-  var isPositioned: js.UndefOr[Boolean] = js.undefined
   /**
     * The distance between the Floater and its target in pixels.
     */
   var offset: js.UndefOr[Double] = js.undefined
   /**
-    * The switch between normal and controlled modes.
+    * Controlled mode.
     */
   var open: js.UndefOr[Boolean] = js.undefined
   /**
     * Customize popper.js modifiers.
     */
-  var options: js.UndefOr[Options] = js.undefined
+  var options: js.UndefOr[Modifiers] = js.undefined
   /**
     * The placement of the Floater. It will update the position if there's no space available.
     */
@@ -90,15 +91,15 @@ trait Props extends js.Object {
     * It will show a ⨉ button to close the Floater.
     */
   var showCloseButton: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
   /**
     * Customize the default UI.
     */
-  var styles: js.UndefOr[js.Object] = js.undefined
+  var styles: js.UndefOr[Partial[Styles]] = js.undefined
   /**
     * The target used to calculate the Floater position. If it's not set, it will use the `children` as the target.
     */
-  var target: js.UndefOr[String | js.Object] = js.undefined
+  var target: js.UndefOr[String | HTMLElement | Null] = js.undefined
   /**
     * It can be anything that can be rendered.
     */
@@ -106,45 +107,40 @@ trait Props extends js.Object {
   /**
     * Position the wrapper relative to the target.
     */
-  var wrapperOptions: js.UndefOr[js.Object] = js.undefined
+  var wrapperOptions: js.UndefOr[Anon_Center] = js.undefined
 }
 
 object Props {
   @scala.inline
   def apply(
     autoOpen: js.UndefOr[Boolean] = js.undefined,
-    callback: () => CallBackProps = null,
+    callback: (/* action */ Action, /* props */ PropsWithComponent | PropsWithContent) => Unit = null,
     children: ReactNode = null,
-    component: /* renderProps */ RenderProps => ReactNode = null,
-    content: ReactNode = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     disableAnimation: js.UndefOr[Boolean] = js.undefined,
     disableFlip: js.UndefOr[Boolean] = js.undefined,
     disableHoverToClick: js.UndefOr[Boolean] = js.undefined,
-    event: String = null,
+    event: click | hover = null,
     eventDelay: Int | Double = null,
     footer: ReactNode = null,
-    getPopper: () => Unit = null,
+    getPopper: (/* popper */ Data, /* origin */ floater | wrapper) => Unit = null,
     hideArrow: js.UndefOr[Boolean] = js.undefined,
     id: String | Double = null,
-    isPositioned: js.UndefOr[Boolean] = js.undefined,
     offset: Int | Double = null,
     open: js.UndefOr[Boolean] = js.undefined,
-    options: Options = null,
+    options: Modifiers = null,
     placement: Placement = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
-    style: js.Object = null,
-    styles: js.Object = null,
-    target: String | js.Object = null,
+    style: CSSProperties = null,
+    styles: Partial[Styles] = null,
+    target: String | HTMLElement = null,
     title: ReactNode = null,
-    wrapperOptions: js.Object = null
+    wrapperOptions: Anon_Center = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(js.Any.fromFunction1(component))
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.asInstanceOf[js.Any])
     if (!js.isUndefined(disableFlip)) __obj.updateDynamic("disableFlip")(disableFlip.asInstanceOf[js.Any])
@@ -152,10 +148,9 @@ object Props {
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (eventDelay != null) __obj.updateDynamic("eventDelay")(eventDelay.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (getPopper != null) __obj.updateDynamic("getPopper")(js.Any.fromFunction0(getPopper))
+    if (getPopper != null) __obj.updateDynamic("getPopper")(js.Any.fromFunction2(getPopper))
     if (!js.isUndefined(hideArrow)) __obj.updateDynamic("hideArrow")(hideArrow.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPositioned)) __obj.updateDynamic("isPositioned")(isPositioned.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

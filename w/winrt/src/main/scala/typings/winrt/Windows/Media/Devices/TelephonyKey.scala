@@ -1,22 +1,6 @@
 package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Devices.TelephonyKey.a
-import typings.winrt.Windows.Media.Devices.TelephonyKey.b
-import typings.winrt.Windows.Media.Devices.TelephonyKey.c
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d0
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d1
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d2
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d3
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d4
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d5
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d6
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d7
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d8
-import typings.winrt.Windows.Media.Devices.TelephonyKey.d9
-import typings.winrt.Windows.Media.Devices.TelephonyKey.pound
-import typings.winrt.Windows.Media.Devices.TelephonyKey.star
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

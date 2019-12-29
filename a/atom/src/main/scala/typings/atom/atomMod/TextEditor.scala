@@ -15,7 +15,7 @@ import typings.atom.Anon_PreserveLeadingWhitespace
 import typings.atom.Anon_ReversedBoolean
 import typings.atom.Anon_Scopes
 import typings.atom.Anon_Text
-import typings.atom.atomNumbers.`false`
+import typings.atom.atomBooleans.`false`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

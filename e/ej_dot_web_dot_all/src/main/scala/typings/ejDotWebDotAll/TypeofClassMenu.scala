@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassMenu
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Menu]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Menu] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Menu]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Menu] {
   var Locale: js.Any = js.native
   var fn: Menu = js.native
 }

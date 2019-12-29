@@ -23,7 +23,8 @@ class FaxOutgoingJob protected () extends js.Object {
   val ExtendedStatus: String = js.native
   /** Code of the job's extended status */
   val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM = js.native
-  var `FAXCOMEXLib.FaxOutgoingJob_typekey`: FaxOutgoingJob = js.native
+  @JSName("FAXCOMEXLib.FaxOutgoingJob_typekey")
+  var FAXCOMEXLibDotFaxOutgoingJob_typekey: FaxOutgoingJob = js.native
   /** Whether to group broadcast receipts */
   val GroupBroadcastReceipts: Boolean = js.native
   /** Has Cover page */

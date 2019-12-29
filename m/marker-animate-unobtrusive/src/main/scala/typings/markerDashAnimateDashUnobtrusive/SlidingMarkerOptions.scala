@@ -14,6 +14,7 @@ import typings.googlemaps.google.maps.StreetViewPanorama
 import typings.googlemaps.google.maps.Symbol
 import typings.markerDashAnimateDashUnobtrusive.jQuery.easing.IEasingType
 import typings.markerDashAnimateDashUnobtrusive.markerDashAnimateDashUnobtrusiveStrings.linear
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +47,7 @@ object SlidingMarkerOptions {
     easing: IEasingType = null,
     icon: String | Icon | Symbol = null,
     label: String | MarkerLabel = null,
-    map: Map | StreetViewPanorama = null,
+    map: Map[Element] | StreetViewPanorama = null,
     opacity: Int | Double = null,
     optimized: js.UndefOr[Boolean] = js.undefined,
     position: LatLng | LatLngLiteral = null,

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.node.streamMod.Writable
 import typings.node.tlsMod.TlsOptions
-import typings.nodemailer.nodemailerNumbers.`false`
+import typings.nodemailer.nodemailerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -31,7 +31,7 @@ Instantiable0[Unit] {
     * Creates a history point and adds it to the browser's history stack.
     */
   def addHistoryPoint(state: js.Object): Unit = js.native
-  def addHistoryPoint(state: js.Object, title: java.lang.String): Unit = js.native
+  def addHistoryPoint(state: js.Object, title: String): Unit = js.native
   //#endregion
   //#region Events
   /**
@@ -66,8 +66,8 @@ Instantiable0[Unit] {
     * Instructs the application to finalize component creation.
     */
   def endCreateComponents(): Unit = js.native
-  def findComponent(id: java.lang.String, parent: Component): Component = js.native
-  def findComponent(id: java.lang.String, parent: HTMLElement): Component = js.native
+  def findComponent(id: String, parent: Component): Component = js.native
+  def findComponent(id: String, parent: HTMLElement): Component = js.native
   //#endregion
   //#region Properties
   /**

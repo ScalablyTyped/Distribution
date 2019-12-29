@@ -10,7 +10,8 @@ class SectionProperties protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.SectionProperties_typekey`: SectionProperties = js.native
+  @JSName("PowerPoint.SectionProperties_typekey")
+  var PowerPointDotSectionProperties_typekey: SectionProperties = js.native
   def AddBeforeSlide(SlideIndex: Double, sectionName: String): Double = js.native
   def AddSection(sectionIndex: Double): Double = js.native
   def AddSection(sectionIndex: Double, sectionName: js.Any): Double = js.native

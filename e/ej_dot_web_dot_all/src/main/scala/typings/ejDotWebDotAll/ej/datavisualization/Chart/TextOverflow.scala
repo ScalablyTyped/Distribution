@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.None
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.Trim
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.Wrap
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.WrapAndTrim
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

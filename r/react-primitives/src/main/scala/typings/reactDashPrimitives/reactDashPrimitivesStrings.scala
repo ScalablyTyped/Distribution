@@ -13,7 +13,7 @@ object reactDashPrimitivesStrings {
   sealed trait disk extends js.Object
   
   @js.native
-  sealed trait `disk/memory` extends js.Object
+  sealed trait diskSlashmemory extends js.Object
   
   @js.native
   sealed trait memory extends js.Object
@@ -29,7 +29,7 @@ object reactDashPrimitivesStrings {
   @scala.inline
   def disk: disk = "disk".asInstanceOf[disk]
   @scala.inline
-  def `disk/memory`: `disk/memory` = "disk/memory".asInstanceOf[`disk/memory`]
+  def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
   @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
   @scala.inline

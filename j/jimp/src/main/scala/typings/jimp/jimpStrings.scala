@@ -61,25 +61,25 @@ object jimpStrings {
   sealed trait hue extends ColorActionName
   
   @js.native
-  sealed trait `image/bmp` extends js.Object
+  sealed trait imageSlashbmp extends js.Object
   
   @js.native
-  sealed trait `image/gif` extends js.Object
+  sealed trait imageSlashgif extends js.Object
   
   @js.native
-  sealed trait `image/jgd` extends js.Object
+  sealed trait imageSlashjgd extends js.Object
   
   @js.native
-  sealed trait `image/jpeg` extends js.Object
+  sealed trait imageSlashjpeg extends js.Object
   
   @js.native
-  sealed trait `image/png` extends js.Object
+  sealed trait imageSlashpng extends js.Object
   
   @js.native
-  sealed trait `image/tiff` extends js.Object
+  sealed trait imageSlashtiff extends js.Object
   
   @js.native
-  sealed trait `image/x-ms-bmp` extends js.Object
+  sealed trait `imageSlashx-ms-bmp` extends js.Object
   
   @js.native
   sealed trait initialized extends ListenableName
@@ -138,19 +138,19 @@ object jimpStrings {
   @scala.inline
   def hue: hue = "hue".asInstanceOf[hue]
   @scala.inline
-  def `image/bmp`: `image/bmp` = "image/bmp".asInstanceOf[`image/bmp`]
+  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   @scala.inline
-  def `image/gif`: `image/gif` = "image/gif".asInstanceOf[`image/gif`]
+  def imageSlashgif: imageSlashgif = "image/gif".asInstanceOf[imageSlashgif]
   @scala.inline
-  def `image/jgd`: `image/jgd` = "image/jgd".asInstanceOf[`image/jgd`]
+  def imageSlashjgd: imageSlashjgd = "image/jgd".asInstanceOf[imageSlashjgd]
   @scala.inline
-  def `image/jpeg`: `image/jpeg` = "image/jpeg".asInstanceOf[`image/jpeg`]
+  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   @scala.inline
-  def `image/png`: `image/png` = "image/png".asInstanceOf[`image/png`]
+  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   @scala.inline
-  def `image/tiff`: `image/tiff` = "image/tiff".asInstanceOf[`image/tiff`]
+  def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
   @scala.inline
-  def `image/x-ms-bmp`: `image/x-ms-bmp` = "image/x-ms-bmp".asInstanceOf[`image/x-ms-bmp`]
+  def `imageSlashx-ms-bmp`: `imageSlashx-ms-bmp` = "image/x-ms-bmp".asInstanceOf[`imageSlashx-ms-bmp`]
   @scala.inline
   def initialized: initialized = "initialized".asInstanceOf[initialized]
   @scala.inline

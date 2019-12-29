@@ -3,7 +3,6 @@ package typings.inversifyDashBindingDashDecorators
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Bind
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.BindingWhenSyntax
 import typings.inversifyDashBindingDashDecorators.dtsInterfacesInterfacesMod.interfaces.ProvideDoneSyntax
-import typings.inversifyDashBindingDashDecorators.dtsSyntaxProvideUnderscoreWhenUnderscoreSyntaxMod.ProvideWhenSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

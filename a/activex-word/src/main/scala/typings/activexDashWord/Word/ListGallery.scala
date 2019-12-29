@@ -11,7 +11,8 @@ class ListGallery protected () extends js.Object {
   val Creator: Double = js.native
   val ListTemplates: typings.activexDashWord.Word.ListTemplates = js.native
   val Parent: js.Any = js.native
-  var `Word.ListGallery_typekey`: ListGallery = js.native
+  @JSName("Word.ListGallery_typekey")
+  var WordDotListGallery_typekey: ListGallery = js.native
   def Modified(Index: Double): Boolean = js.native
   def Reset(Index: Double): Unit = js.native
 }

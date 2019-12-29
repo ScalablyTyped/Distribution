@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.audio
-import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.photo
-import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.videoPreview
-import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.videoRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

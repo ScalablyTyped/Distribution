@@ -40,10 +40,13 @@ class QuestionMatrixModel protected ()
   override def getProcessedText(text: String): String = js.native
   /* CompleteClass */
   override def getRows(): js.Array[_] = js.native
+  /**
+    * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
+    */
   /* InferMemberOverrides */
   override def getType(): String = js.native
   /* InferMemberOverrides */
-  override def locStrsChanged(): js.Any with Unit = js.native
+  override def locStrsChanged(): Unit with js.Any = js.native
   /* CompleteClass */
   override def onMatrixRowChanged(row: MatrixRowModel): Unit = js.native
   def setCellText(row: js.Any, column: js.Any, `val`: String): Unit = js.native

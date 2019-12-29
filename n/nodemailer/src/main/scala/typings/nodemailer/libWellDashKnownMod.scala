@@ -1,7 +1,7 @@
 package typings.nodemailer
 
 import typings.nodemailer.libSmtpDashConnectionMod.Options
-import typings.nodemailer.nodemailerNumbers.`false`
+import typings.nodemailer.nodemailerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

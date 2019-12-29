@@ -6,8 +6,8 @@ import typings.jquery.JQuery.Ajax.ErrorCallback
 import typings.jquery.JQuery.Ajax.StatusCodeCallbacks
 import typings.jquery.JQuery.Ajax.SuccessCallback
 import typings.jquery.JQuery.Ajax.XHRFields
-import typings.jquery.jqueryNumbers.`false`
-import typings.jquery.jqueryNumbers.`true`
+import typings.jquery.jqueryBooleans.`false`
+import typings.jquery.jqueryBooleans.`true`
 import typings.jquery.jqueryStrings.html
 import typings.jquery.jqueryStrings.json
 import typings.jquery.jqueryStrings.jsonp

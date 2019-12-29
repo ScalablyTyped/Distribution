@@ -16,7 +16,8 @@ class EffectInformation protected () extends js.Object {
   val Dim: ColorFormat = js.native
   val Parent: js.Any = js.native
   val PlaySettings: typings.activexDashPowerpoint.PowerPoint.PlaySettings = js.native
-  var `PowerPoint.EffectInformation_typekey`: EffectInformation = js.native
+  @JSName("PowerPoint.EffectInformation_typekey")
+  var PowerPointDotEffectInformation_typekey: EffectInformation = js.native
   val SoundEffect: typings.activexDashPowerpoint.PowerPoint.SoundEffect = js.native
   val TextUnitEffect: MsoAnimTextUnitEffect = js.native
 }

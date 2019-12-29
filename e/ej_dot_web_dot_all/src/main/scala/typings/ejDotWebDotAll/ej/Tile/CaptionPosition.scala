@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tile.CaptionPosition.Innerbottom
-import typings.ejDotWebDotAll.ej.Tile.CaptionPosition.Innertop
-import typings.ejDotWebDotAll.ej.Tile.CaptionPosition.Outer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,7 +14,7 @@ trait IDDProxy extends IDD {
   /** [Method] Creates the proxy element if it does not yet exist */
   var createFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (String) */
-  var dragElId: js.UndefOr[java.lang.String] = js.undefined
+  var dragElId: js.UndefOr[String] = js.undefined
   /** [Method] overrides Ext dd DragDrop By default we try to move the element to the last location of the frame
   		* @param e Object
   		*/
@@ -28,16 +28,16 @@ trait IDDProxy extends IDD {
   		* @returns String string representation of the dd obj
   		*/
   @JSName("toString")
-  var toString_FIDDProxy: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIDDProxy: js.UndefOr[js.Function0[String]] = js.undefined
 }
 
 object IDDProxy {
   @scala.inline
   def apply(
-    addInvalidHandleClass: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
-    addInvalidHandleId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    addInvalidHandleType: /* tagName */ js.UndefOr[java.lang.String] => Unit = null,
-    addToGroup: /* sGroup */ js.UndefOr[java.lang.String] => Unit = null,
+    addInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
+    addInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
+    addInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
+    addToGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
     alias: Array = null,
     alignElWithMouse: (/* el */ js.UndefOr[HTMLElement], /* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit = null,
     alternateClassName: js.Any = null,
@@ -58,21 +58,21 @@ object IDDProxy {
     createFrame: () => Unit = null,
     defaultPadding: js.Any = null,
     destroy: () => Unit = null,
-    dragElId: java.lang.String = null,
+    dragElId: String = null,
     endDrag: /* e */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
-    id: java.lang.String = null,
+    id: String = null,
     ignoreSelf: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    init: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
+    init: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IDDProxy = null,
     initFrame: () => Unit = null,
-    initTarget: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
+    initTarget: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
     invalidHandleClasses: Array = null,
     invalidHandleIds: js.Any = null,
     invalidHandleTypes: js.Any = null,
@@ -94,28 +94,28 @@ object IDDProxy {
     onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
-    removeFromGroup: /* sGroup */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleClass: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleType: /* tagName */ js.UndefOr[java.lang.String] => Unit = null,
+    removeFromGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
     requires: Array = null,
     resetConstraints: /* maintainOffset */ js.UndefOr[Boolean] => Unit = null,
     resizeFrame: js.UndefOr[Boolean] = js.undefined,
     scroll: js.UndefOr[Boolean] = js.undefined,
     self: IClass = null,
     setDelta: (/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double]) => Unit = null,
-    setDragElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setDragElId: /* id */ js.UndefOr[String] => Unit = null,
     setDragElPos: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit = null,
-    setHandleElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setHandleElId: /* id */ js.UndefOr[String] => Unit = null,
     setInitPosition: (/* diffX */ js.UndefOr[Double], /* diffY */ js.UndefOr[Double]) => Unit = null,
-    setOuterHandleElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setOuterHandleElId: /* id */ js.UndefOr[String] => Unit = null,
     setPadding: (/* iTop */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iBot */ js.UndefOr[Double], /* iLeft */ js.UndefOr[Double]) => Unit = null,
     setXConstraint: (/* iLeft */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
     setYConstraint: (/* iUp */ js.UndefOr[Double], /* iDown */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     startDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     unlock: () => Unit = null,
     unreg: () => Unit = null,
     uses: Array = null,

@@ -10,7 +10,8 @@ class Module protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val CodeName: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Module_typekey`: Module = js.native
+  @JSName("Excel.Module_typekey")
+  var ExcelDotModule_typekey: Module = js.native
   val Index: Double = js.native
   var Name: String = js.native
   val Next: js.Any = js.native

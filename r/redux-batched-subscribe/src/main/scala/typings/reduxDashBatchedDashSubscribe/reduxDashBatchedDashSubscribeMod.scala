@@ -2,9 +2,6 @@ package typings.reduxDashBatchedDashSubscribe
 
 import typings.redux.reduxMod.StoreEnhancer
 import typings.redux.reduxMod.Unsubscribe
-import typings.reduxDashBatchedDashSubscribe.reduxDashBatchedDashSubscribeMod.BatchFunction
-import typings.reduxDashBatchedDashSubscribe.reduxDashBatchedDashSubscribeMod.NotifyFunction
-import typings.reduxDashBatchedDashSubscribe.reduxDashBatchedDashSubscribeMod.StoreExtension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object atMaterialToolbarNumbers {
   @js.native
-  sealed trait `1DOT25` extends js.Object
+  sealed trait `1.25` extends js.Object
   
   @js.native
-  sealed trait `2DOT125` extends js.Object
+  sealed trait `2.125` extends js.Object
   
   @js.native
   sealed trait `56` extends js.Object
@@ -21,9 +21,9 @@ object atMaterialToolbarNumbers {
   sealed trait `64` extends js.Object
   
   @scala.inline
-  def `1DOT25`: `1DOT25` = 1.25.asInstanceOf[`1DOT25`]
+  def `1.25`: `1.25` = 1.25.asInstanceOf[`1.25`]
   @scala.inline
-  def `2DOT125`: `2DOT125` = 2.125.asInstanceOf[`2DOT125`]
+  def `2.125`: `2.125` = 2.125.asInstanceOf[`2.125`]
   @scala.inline
   def `56`: `56` = 56.asInstanceOf[`56`]
   @scala.inline

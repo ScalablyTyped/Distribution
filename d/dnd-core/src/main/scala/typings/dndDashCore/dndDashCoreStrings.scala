@@ -6,54 +6,54 @@ import scala.scalajs.js.annotation._
 
 object dndDashCoreStrings {
   @js.native
-  sealed trait `dnd-core/ADD_SOURCE` extends js.Object
+  sealed trait `dnd-coreSlashADD_SOURCE` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/ADD_TARGET` extends js.Object
+  sealed trait `dnd-coreSlashADD_TARGET` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/BEGIN_DRAG` extends js.Object
+  sealed trait `dnd-coreSlashBEGIN_DRAG` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/DROP` extends js.Object
+  sealed trait `dnd-coreSlashDROP` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/END_DRAG` extends js.Object
+  sealed trait `dnd-coreSlashEND_DRAG` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/HOVER` extends js.Object
+  sealed trait `dnd-coreSlashHOVER` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/INIT_COORDS` extends js.Object
+  sealed trait `dnd-coreSlashINIT_COORDS` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/PUBLISH_DRAG_SOURCE` extends js.Object
+  sealed trait `dnd-coreSlashPUBLISH_DRAG_SOURCE` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/REMOVE_SOURCE` extends js.Object
+  sealed trait `dnd-coreSlashREMOVE_SOURCE` extends js.Object
   
   @js.native
-  sealed trait `dnd-core/REMOVE_TARGET` extends js.Object
+  sealed trait `dnd-coreSlashREMOVE_TARGET` extends js.Object
   
   @scala.inline
-  def `dnd-core/ADD_SOURCE`: `dnd-core/ADD_SOURCE` = "dnd-core/ADD_SOURCE".asInstanceOf[`dnd-core/ADD_SOURCE`]
+  def `dnd-coreSlashADD_SOURCE`: `dnd-coreSlashADD_SOURCE` = "dnd-core/ADD_SOURCE".asInstanceOf[`dnd-coreSlashADD_SOURCE`]
   @scala.inline
-  def `dnd-core/ADD_TARGET`: `dnd-core/ADD_TARGET` = "dnd-core/ADD_TARGET".asInstanceOf[`dnd-core/ADD_TARGET`]
+  def `dnd-coreSlashADD_TARGET`: `dnd-coreSlashADD_TARGET` = "dnd-core/ADD_TARGET".asInstanceOf[`dnd-coreSlashADD_TARGET`]
   @scala.inline
-  def `dnd-core/BEGIN_DRAG`: `dnd-core/BEGIN_DRAG` = "dnd-core/BEGIN_DRAG".asInstanceOf[`dnd-core/BEGIN_DRAG`]
+  def `dnd-coreSlashBEGIN_DRAG`: `dnd-coreSlashBEGIN_DRAG` = "dnd-core/BEGIN_DRAG".asInstanceOf[`dnd-coreSlashBEGIN_DRAG`]
   @scala.inline
-  def `dnd-core/DROP`: `dnd-core/DROP` = "dnd-core/DROP".asInstanceOf[`dnd-core/DROP`]
+  def `dnd-coreSlashDROP`: `dnd-coreSlashDROP` = "dnd-core/DROP".asInstanceOf[`dnd-coreSlashDROP`]
   @scala.inline
-  def `dnd-core/END_DRAG`: `dnd-core/END_DRAG` = "dnd-core/END_DRAG".asInstanceOf[`dnd-core/END_DRAG`]
+  def `dnd-coreSlashEND_DRAG`: `dnd-coreSlashEND_DRAG` = "dnd-core/END_DRAG".asInstanceOf[`dnd-coreSlashEND_DRAG`]
   @scala.inline
-  def `dnd-core/HOVER`: `dnd-core/HOVER` = "dnd-core/HOVER".asInstanceOf[`dnd-core/HOVER`]
+  def `dnd-coreSlashHOVER`: `dnd-coreSlashHOVER` = "dnd-core/HOVER".asInstanceOf[`dnd-coreSlashHOVER`]
   @scala.inline
-  def `dnd-core/INIT_COORDS`: `dnd-core/INIT_COORDS` = "dnd-core/INIT_COORDS".asInstanceOf[`dnd-core/INIT_COORDS`]
+  def `dnd-coreSlashINIT_COORDS`: `dnd-coreSlashINIT_COORDS` = "dnd-core/INIT_COORDS".asInstanceOf[`dnd-coreSlashINIT_COORDS`]
   @scala.inline
-  def `dnd-core/PUBLISH_DRAG_SOURCE`: `dnd-core/PUBLISH_DRAG_SOURCE` = "dnd-core/PUBLISH_DRAG_SOURCE".asInstanceOf[`dnd-core/PUBLISH_DRAG_SOURCE`]
+  def `dnd-coreSlashPUBLISH_DRAG_SOURCE`: `dnd-coreSlashPUBLISH_DRAG_SOURCE` = "dnd-core/PUBLISH_DRAG_SOURCE".asInstanceOf[`dnd-coreSlashPUBLISH_DRAG_SOURCE`]
   @scala.inline
-  def `dnd-core/REMOVE_SOURCE`: `dnd-core/REMOVE_SOURCE` = "dnd-core/REMOVE_SOURCE".asInstanceOf[`dnd-core/REMOVE_SOURCE`]
+  def `dnd-coreSlashREMOVE_SOURCE`: `dnd-coreSlashREMOVE_SOURCE` = "dnd-core/REMOVE_SOURCE".asInstanceOf[`dnd-coreSlashREMOVE_SOURCE`]
   @scala.inline
-  def `dnd-core/REMOVE_TARGET`: `dnd-core/REMOVE_TARGET` = "dnd-core/REMOVE_TARGET".asInstanceOf[`dnd-core/REMOVE_TARGET`]
+  def `dnd-coreSlashREMOVE_TARGET`: `dnd-coreSlashREMOVE_TARGET` = "dnd-core/REMOVE_TARGET".asInstanceOf[`dnd-coreSlashREMOVE_TARGET`]
 }
 

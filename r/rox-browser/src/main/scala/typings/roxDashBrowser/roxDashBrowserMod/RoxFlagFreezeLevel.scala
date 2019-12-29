@@ -1,9 +1,6 @@
 package typings.roxDashBrowser.roxDashBrowserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.None
-import typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.UntilForeground
-import typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.UntilLaunch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

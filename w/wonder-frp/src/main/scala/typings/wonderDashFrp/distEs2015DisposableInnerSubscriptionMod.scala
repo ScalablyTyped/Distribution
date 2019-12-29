@@ -2,7 +2,6 @@ package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distEs2015CoreObserverMod.Observer
 import typings.wonderDashFrp.distEs2015DisposableIDisposableMod.IDisposable
-import typings.wonderDashFrp.distEs2015DisposableInnerSubscriptionMod.InnerSubscription
 import typings.wonderDashFrp.distEs2015SubjectGeneratorSubjectMod.GeneratorSubject
 import typings.wonderDashFrp.distEs2015SubjectSubjectMod.Subject
 import scala.scalajs.js

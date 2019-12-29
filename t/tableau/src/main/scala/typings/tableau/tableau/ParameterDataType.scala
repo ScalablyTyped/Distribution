@@ -1,12 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.ParameterDataType.BOOLEAN
-import typings.tableau.tableau.ParameterDataType.DATE
-import typings.tableau.tableau.ParameterDataType.DATETIME
-import typings.tableau.tableau.ParameterDataType.FLOAT
-import typings.tableau.tableau.ParameterDataType.INTEGER
-import typings.tableau.tableau.ParameterDataType.STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

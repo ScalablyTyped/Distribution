@@ -11,6 +11,7 @@ import typings.atUifabricMergeDashStyles.libIStyleSetMod.IConcatenatedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IProcessedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
 import typings.atUifabricMergeDashStyles.libStylesheetMod.IStyleSheetConfig
+import typings.atUifabricStyling.atUifabricStylingBooleans.`false`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`0`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`1024`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`1366`
@@ -21,10 +22,9 @@ import typings.atUifabricStyling.atUifabricStylingNumbers.`320`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`480`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`640`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`768`
-import typings.atUifabricStyling.atUifabricStylingNumbers.`false`
-import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and (-ms-high-contrast: active)`
-import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and (-ms-high-contrast: black-on-white)`
-import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and (-ms-high-contrast: white-on-black)`
+import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`
+import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`
+import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`
 import typings.atUifabricStyling.atUifabricStylingStrings.absolute
 import typings.atUifabricStyling.atUifabricStylingStrings.horizontal
 import typings.atUifabricStyling.atUifabricStylingStrings.relative
@@ -64,9 +64,9 @@ object atUifabricStylingMod extends js.Object {
   val DefaultEffects: IEffects = js.native
   val DefaultFontStyles: IFontStyles = js.native
   val DefaultPalette: IPalette = js.native
-  val HighContrastSelector: `@media screen and (-ms-high-contrast: active)` = js.native
-  val HighContrastSelectorBlack: `@media screen and (-ms-high-contrast: white-on-black)` = js.native
-  val HighContrastSelectorWhite: `@media screen and (-ms-high-contrast: black-on-white)` = js.native
+  val HighContrastSelector: `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis` = js.native
+  val HighContrastSelectorBlack: `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis` = js.native
+  val HighContrastSelectorWhite: `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis` = js.native
   val ScreenWidthMaxLarge: Double = js.native
   val ScreenWidthMaxMedium: Double = js.native
   val ScreenWidthMaxSmall: Double = js.native

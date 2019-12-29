@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object nestdbStrings {
   @js.native
-  sealed trait compactionDOTdone extends js.Object
+  sealed trait compactionDotdone extends js.Object
   
   @scala.inline
-  def compactionDOTdone: compactionDOTdone = "compaction.done".asInstanceOf[compactionDOTdone]
+  def compactionDotdone: compactionDotdone = "compaction.done".asInstanceOf[compactionDotdone]
 }
 

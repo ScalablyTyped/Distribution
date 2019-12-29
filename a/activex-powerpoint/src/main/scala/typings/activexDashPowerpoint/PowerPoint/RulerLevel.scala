@@ -11,6 +11,7 @@ class RulerLevel protected () extends js.Object {
   var FirstMargin: Double = js.native
   var LeftMargin: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.RulerLevel_typekey`: RulerLevel = js.native
+  @JSName("PowerPoint.RulerLevel_typekey")
+  var PowerPointDotRulerLevel_typekey: RulerLevel = js.native
 }
 

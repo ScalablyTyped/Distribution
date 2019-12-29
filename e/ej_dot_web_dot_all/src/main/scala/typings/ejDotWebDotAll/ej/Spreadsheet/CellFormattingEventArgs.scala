@@ -20,7 +20,7 @@ trait CellFormattingEventArgs extends js.Object {
   var cssClass: js.UndefOr[String] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the target element.
     */
   var target: js.UndefOr[HTMLElement] = js.undefined
@@ -36,7 +36,7 @@ object CellFormattingEventArgs {
     Format: js.Any = null,
     SheetIdx: Int | Double = null,
     cssClass: String = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     target: HTMLElement = null,
     `type`: String = null
   ): CellFormattingEventArgs = {

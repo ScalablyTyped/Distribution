@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Connectivity.DataUsageGranularity.perDay
-import typings.winrtDashUwp.Windows.Networking.Connectivity.DataUsageGranularity.perHour
-import typings.winrtDashUwp.Windows.Networking.Connectivity.DataUsageGranularity.perMinute
-import typings.winrtDashUwp.Windows.Networking.Connectivity.DataUsageGranularity.total
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

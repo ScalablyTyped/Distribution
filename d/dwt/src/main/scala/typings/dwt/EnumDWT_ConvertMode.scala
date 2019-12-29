@@ -1,8 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_ConvertMode.CM_DEFAULT
-import typings.dwt.EnumDWT_ConvertMode.CM_RENDERALL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

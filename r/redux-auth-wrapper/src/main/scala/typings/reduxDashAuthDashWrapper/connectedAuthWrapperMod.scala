@@ -2,7 +2,6 @@ package typings.reduxDashAuthDashWrapper
 
 import typings.reduxDashAuthDashWrapper.authWrapperMod.AuthWrapperConfig
 import typings.reduxDashAuthDashWrapper.authWrapperMod.InjectedAuthProps
-import typings.reduxDashAuthDashWrapper.connectedAuthWrapperMod.ConnectedAuthWrapperConfig
 import typings.reduxDashAuthDashWrapper.reduxDashAuthDashWrapperMod.AuthBaseConfig
 import typings.reduxDashAuthDashWrapper.reduxDashAuthDashWrapperMod.AuthWrapperDecorator
 import scala.scalajs.js

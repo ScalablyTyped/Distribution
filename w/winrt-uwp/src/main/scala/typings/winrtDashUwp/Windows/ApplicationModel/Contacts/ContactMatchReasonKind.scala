@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.emailAddress
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.jobInfo
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.name
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.other
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.phoneNumber
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.yomiName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Control")
 @js.native
 class Control protected () extends js.Object {
-  var `Access.Control_typekey`: Control = js.native
+  @JSName("Access.Control_typekey")
+  var AccessDotControl_typekey: Control = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BottomPadding: Double = js.native
   @JSName("Controls")

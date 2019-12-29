@@ -41,12 +41,6 @@ import scala.scalajs.js.annotation._
 
 object atGoogleMapsStrings {
   @js.native
-  sealed trait `(cities)` extends PlaceAutocompleteType
-  
-  @js.native
-  sealed trait `(regions)` extends PlaceAutocompleteType
-  
-  @js.native
   sealed trait APP extends PlaceIdScope
   
   @js.native
@@ -104,6 +98,12 @@ object atGoogleMapsStrings {
   
   @js.native
   sealed trait KPH extends SpeedLimitUnit
+  
+  @js.native
+  sealed trait LeftparenthesiscitiesRightparenthesis extends PlaceAutocompleteType
+  
+  @js.native
+  sealed trait LeftparenthesisregionsRightparenthesis extends PlaceAutocompleteType
   
   @js.native
   sealed trait MAX_ELEMENTS_EXCEEDED extends DistanceMatrixResponseTopLevelStatus
@@ -1140,10 +1140,6 @@ object atGoogleMapsStrings {
   sealed trait zoo extends PlaceType1
   
   @scala.inline
-  def `(cities)`: `(cities)` = "(cities)".asInstanceOf[`(cities)`]
-  @scala.inline
-  def `(regions)`: `(regions)` = "(regions)".asInstanceOf[`(regions)`]
-  @scala.inline
   def APP: APP = "APP".asInstanceOf[APP]
   @scala.inline
   def APPROXIMATE: APPROXIMATE = "APPROXIMATE".asInstanceOf[APPROXIMATE]
@@ -1173,6 +1169,10 @@ object atGoogleMapsStrings {
   def INVALID_REQUEST: INVALID_REQUEST = "INVALID_REQUEST".asInstanceOf[INVALID_REQUEST]
   @scala.inline
   def KPH: KPH = "KPH".asInstanceOf[KPH]
+  @scala.inline
+  def LeftparenthesiscitiesRightparenthesis: LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[LeftparenthesiscitiesRightparenthesis]
+  @scala.inline
+  def LeftparenthesisregionsRightparenthesis: LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[LeftparenthesisregionsRightparenthesis]
   @scala.inline
   def MAX_ELEMENTS_EXCEEDED: MAX_ELEMENTS_EXCEEDED = "MAX_ELEMENTS_EXCEEDED".asInstanceOf[MAX_ELEMENTS_EXCEEDED]
   @scala.inline

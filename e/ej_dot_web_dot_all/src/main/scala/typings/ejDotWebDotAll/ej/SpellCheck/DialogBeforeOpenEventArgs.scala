@@ -10,7 +10,7 @@ trait DialogBeforeOpenEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns the SpellCheck model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.SpellCheck.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the request type value.
     */
   var requestType: js.UndefOr[String] = js.undefined
@@ -26,7 +26,7 @@ object DialogBeforeOpenEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.SpellCheck.Model = null,
+    model: Model = null,
     requestType: String = null,
     spellCheckDialog: js.Any = null,
     `type`: String = null

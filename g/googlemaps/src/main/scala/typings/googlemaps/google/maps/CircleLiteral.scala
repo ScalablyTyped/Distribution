@@ -1,6 +1,7 @@
 package typings.googlemaps.google.maps
 
 import typings.googlemaps.google.maps.places._LocationBias
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object CircleLiteral {
     editable: js.UndefOr[Boolean] = js.undefined,
     fillColor: String = null,
     fillOpacity: Int | Double = null,
-    map: Map = null,
+    map: Map[Element] = null,
     radius: Int | Double = null,
     strokeColor: String = null,
     strokeOpacity: Int | Double = null,

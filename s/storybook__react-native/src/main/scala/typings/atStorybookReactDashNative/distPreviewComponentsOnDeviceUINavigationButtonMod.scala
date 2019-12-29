@@ -1,7 +1,5 @@
 package typings.atStorybookReactDashNative
 
-import typings.atStorybookReactDashNative.distPreviewComponentsOnDeviceUINavigationButtonMod.Button
-import typings.atStorybookReactDashNative.distPreviewComponentsOnDeviceUINavigationButtonMod.Props
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.rcDashDrawer.libIDrawerPropTypesMod
 
 import typings.rcDashDrawer.Anon_OpenTarget
-import typings.rcDashDrawer.rcDashDrawerNumbers.`false`
+import typings.rcDashDrawer.rcDashDrawerBooleans.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent

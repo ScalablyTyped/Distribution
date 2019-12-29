@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintOrientation.default
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintOrientation.landscape
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintOrientation.landscapeFlipped
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintOrientation.notAvailable
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintOrientation.portrait
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintOrientation.portraitFlipped
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintOrientation.printerCustom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

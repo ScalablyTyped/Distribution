@@ -1,6 +1,6 @@
 package typings.elasticsearch.elasticsearchMod
 
-import typings.elasticsearch.elasticsearchStrings.Empty
+import typings.elasticsearch.elasticsearchStrings._empty
 import typings.elasticsearch.elasticsearchStrings.g
 import typings.elasticsearch.elasticsearchStrings.k
 import typings.elasticsearch.elasticsearchStrings.m
@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CatThreadPoolParams extends CatCommonParams {
-  var size: js.UndefOr[Empty | k | m | g | t | p] = js.undefined
+  var size: js.UndefOr[_empty | k | m | g | t | p] = js.undefined
   var threadPoolPatterns: js.UndefOr[NameList] = js.undefined
 }
 
@@ -29,7 +29,7 @@ object CatThreadPoolParams {
     maxRetries: Int | Double = null,
     method: String = null,
     requestTimeout: Int | Double = null,
-    size: Empty | k | m | g | t | p = null,
+    size: _empty | k | m | g | t | p = null,
     threadPoolPatterns: NameList = null,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatThreadPoolParams = {

@@ -1,21 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ScreenSpaceEventType.LEFT_CLICK
-import typings.cesium.cesiumMod.ScreenSpaceEventType.LEFT_DOUBLE_CLICK
-import typings.cesium.cesiumMod.ScreenSpaceEventType.LEFT_DOWN
-import typings.cesium.cesiumMod.ScreenSpaceEventType.LEFT_UP
-import typings.cesium.cesiumMod.ScreenSpaceEventType.MIDDLE_CLICK
-import typings.cesium.cesiumMod.ScreenSpaceEventType.MIDDLE_DOWN
-import typings.cesium.cesiumMod.ScreenSpaceEventType.MIDDLE_UP
-import typings.cesium.cesiumMod.ScreenSpaceEventType.MOUSE_MOVE
-import typings.cesium.cesiumMod.ScreenSpaceEventType.PINCH_END
-import typings.cesium.cesiumMod.ScreenSpaceEventType.PINCH_MOVE
-import typings.cesium.cesiumMod.ScreenSpaceEventType.PINCH_START
-import typings.cesium.cesiumMod.ScreenSpaceEventType.RIGHT_CLICK
-import typings.cesium.cesiumMod.ScreenSpaceEventType.RIGHT_DOWN
-import typings.cesium.cesiumMod.ScreenSpaceEventType.RIGHT_UP
-import typings.cesium.cesiumMod.ScreenSpaceEventType.WHEEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -210,7 +210,7 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   sealed trait `aws-exec-read` extends js.Object
   
   @js.native
-  sealed trait `aws:kms` extends js.Object
+  sealed trait awsColonkms extends js.Object
   
   @js.native
   sealed trait `bucket-owner-full-control` extends js.Object
@@ -249,31 +249,31 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   sealed trait requester_ extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectCreated:*` extends js.Object
+  sealed trait s3ColonObjectCreatedColonAsterisk extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectCreated:CompleteMultipartUpload` extends js.Object
+  sealed trait s3ColonObjectCreatedColonCompleteMultipartUpload extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectCreated:Copy` extends js.Object
+  sealed trait s3ColonObjectCreatedColonCopy extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectCreated:Post` extends js.Object
+  sealed trait s3ColonObjectCreatedColonPost extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectCreated:Put` extends js.Object
+  sealed trait s3ColonObjectCreatedColonPut extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectRemoved:*` extends js.Object
+  sealed trait s3ColonObjectRemovedColonAsterisk extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectRemoved:Delete` extends js.Object
+  sealed trait s3ColonObjectRemovedColonDelete extends js.Object
   
   @js.native
-  sealed trait `s3:ObjectRemoved:DeleteMarkerCreated` extends js.Object
+  sealed trait s3ColonObjectRemovedColonDeleteMarkerCreated extends js.Object
   
   @js.native
-  sealed trait `s3:ReducedRedundancyLostObject` extends js.Object
+  sealed trait s3ColonReducedRedundancyLostObject extends js.Object
   
   @js.native
   sealed trait `sa-east-1` extends js.Object
@@ -427,7 +427,7 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   @scala.inline
   def `aws-exec-read`: `aws-exec-read` = "aws-exec-read".asInstanceOf[`aws-exec-read`]
   @scala.inline
-  def `aws:kms`: `aws:kms` = "aws:kms".asInstanceOf[`aws:kms`]
+  def awsColonkms: awsColonkms = "aws:kms".asInstanceOf[awsColonkms]
   @scala.inline
   def `bucket-owner-full-control`: `bucket-owner-full-control` = "bucket-owner-full-control".asInstanceOf[`bucket-owner-full-control`]
   @scala.inline
@@ -453,23 +453,23 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   @scala.inline
   def requester_ : requester_ = "requester".asInstanceOf[requester_]
   @scala.inline
-  def `s3:ObjectCreated:*`: `s3:ObjectCreated:*` = "s3:ObjectCreated:*".asInstanceOf[`s3:ObjectCreated:*`]
+  def s3ColonObjectCreatedColonAsterisk: s3ColonObjectCreatedColonAsterisk = "s3:ObjectCreated:*".asInstanceOf[s3ColonObjectCreatedColonAsterisk]
   @scala.inline
-  def `s3:ObjectCreated:CompleteMultipartUpload`: `s3:ObjectCreated:CompleteMultipartUpload` = "s3:ObjectCreated:CompleteMultipartUpload".asInstanceOf[`s3:ObjectCreated:CompleteMultipartUpload`]
+  def s3ColonObjectCreatedColonCompleteMultipartUpload: s3ColonObjectCreatedColonCompleteMultipartUpload = "s3:ObjectCreated:CompleteMultipartUpload".asInstanceOf[s3ColonObjectCreatedColonCompleteMultipartUpload]
   @scala.inline
-  def `s3:ObjectCreated:Copy`: `s3:ObjectCreated:Copy` = "s3:ObjectCreated:Copy".asInstanceOf[`s3:ObjectCreated:Copy`]
+  def s3ColonObjectCreatedColonCopy: s3ColonObjectCreatedColonCopy = "s3:ObjectCreated:Copy".asInstanceOf[s3ColonObjectCreatedColonCopy]
   @scala.inline
-  def `s3:ObjectCreated:Post`: `s3:ObjectCreated:Post` = "s3:ObjectCreated:Post".asInstanceOf[`s3:ObjectCreated:Post`]
+  def s3ColonObjectCreatedColonPost: s3ColonObjectCreatedColonPost = "s3:ObjectCreated:Post".asInstanceOf[s3ColonObjectCreatedColonPost]
   @scala.inline
-  def `s3:ObjectCreated:Put`: `s3:ObjectCreated:Put` = "s3:ObjectCreated:Put".asInstanceOf[`s3:ObjectCreated:Put`]
+  def s3ColonObjectCreatedColonPut: s3ColonObjectCreatedColonPut = "s3:ObjectCreated:Put".asInstanceOf[s3ColonObjectCreatedColonPut]
   @scala.inline
-  def `s3:ObjectRemoved:*`: `s3:ObjectRemoved:*` = "s3:ObjectRemoved:*".asInstanceOf[`s3:ObjectRemoved:*`]
+  def s3ColonObjectRemovedColonAsterisk: s3ColonObjectRemovedColonAsterisk = "s3:ObjectRemoved:*".asInstanceOf[s3ColonObjectRemovedColonAsterisk]
   @scala.inline
-  def `s3:ObjectRemoved:Delete`: `s3:ObjectRemoved:Delete` = "s3:ObjectRemoved:Delete".asInstanceOf[`s3:ObjectRemoved:Delete`]
+  def s3ColonObjectRemovedColonDelete: s3ColonObjectRemovedColonDelete = "s3:ObjectRemoved:Delete".asInstanceOf[s3ColonObjectRemovedColonDelete]
   @scala.inline
-  def `s3:ObjectRemoved:DeleteMarkerCreated`: `s3:ObjectRemoved:DeleteMarkerCreated` = "s3:ObjectRemoved:DeleteMarkerCreated".asInstanceOf[`s3:ObjectRemoved:DeleteMarkerCreated`]
+  def s3ColonObjectRemovedColonDeleteMarkerCreated: s3ColonObjectRemovedColonDeleteMarkerCreated = "s3:ObjectRemoved:DeleteMarkerCreated".asInstanceOf[s3ColonObjectRemovedColonDeleteMarkerCreated]
   @scala.inline
-  def `s3:ReducedRedundancyLostObject`: `s3:ReducedRedundancyLostObject` = "s3:ReducedRedundancyLostObject".asInstanceOf[`s3:ReducedRedundancyLostObject`]
+  def s3ColonReducedRedundancyLostObject: s3ColonReducedRedundancyLostObject = "s3:ReducedRedundancyLostObject".asInstanceOf[s3ColonReducedRedundancyLostObject]
   @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
   @scala.inline

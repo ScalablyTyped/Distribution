@@ -1,8 +1,6 @@
 package typings.lovefield.lovefieldMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.lovefield.lovefieldMod.Order.ASC
-import typings.lovefield.lovefieldMod.Order.DESC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

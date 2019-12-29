@@ -13,7 +13,7 @@ trait LoadErrorEventArgs extends js.Object {
   var error: js.UndefOr[js.Any] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object LoadErrorEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     error: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     `type`: String = null
   ): LoadErrorEventArgs = {
     val __obj = js.Dynamic.literal()

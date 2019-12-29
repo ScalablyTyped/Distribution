@@ -10,20 +10,20 @@ trait RsaPrivateKey extends js.Object {
   /**
     * @default 'sha1'
     */
-  var oaepHash: js.UndefOr[java.lang.String] = js.undefined
+  var oaepHash: js.UndefOr[String] = js.undefined
   var oaepLabel: js.UndefOr[TypedArray] = js.undefined
   var padding: js.UndefOr[Double] = js.undefined
-  var passphrase: js.UndefOr[java.lang.String] = js.undefined
+  var passphrase: js.UndefOr[String] = js.undefined
 }
 
 object RsaPrivateKey {
   @scala.inline
   def apply(
     key: KeyLike,
-    oaepHash: java.lang.String = null,
+    oaepHash: String = null,
     oaepLabel: TypedArray = null,
     padding: Int | Double = null,
-    passphrase: java.lang.String = null
+    passphrase: String = null
   ): RsaPrivateKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (oaepHash != null) __obj.updateDynamic("oaepHash")(oaepHash.asInstanceOf[js.Any])

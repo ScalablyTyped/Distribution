@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.atAngularRouter.atAngularRouterNumbers.`true`
-  - typings.atAngularRouter.atAngularRouterNumbers.`false`
+  - typings.atAngularRouter.atAngularRouterBooleans.`true`
+  - typings.atAngularRouter.atAngularRouterBooleans.`false`
   - typings.atAngularRouter.atAngularRouterStrings.enabled
   - typings.atAngularRouter.atAngularRouterStrings.disabled
   - typings.atAngularRouter.atAngularRouterStrings.legacy_enabled
@@ -22,12 +22,12 @@ object InitialNavigation {
   @scala.inline
   def enabled: typings.atAngularRouter.atAngularRouterStrings.enabled = this.cast("enabled")
   @scala.inline
-  def `false`: typings.atAngularRouter.atAngularRouterNumbers.`false` = this.cast(false)
+  def `false`: typings.atAngularRouter.atAngularRouterBooleans.`false` = this.cast(false)
   @scala.inline
   def legacy_disabled: typings.atAngularRouter.atAngularRouterStrings.legacy_disabled = this.cast("legacy_disabled")
   @scala.inline
   def legacy_enabled: typings.atAngularRouter.atAngularRouterStrings.legacy_enabled = this.cast("legacy_enabled")
   @scala.inline
-  def `true`: typings.atAngularRouter.atAngularRouterNumbers.`true` = this.cast(true)
+  def `true`: typings.atAngularRouter.atAngularRouterBooleans.`true` = this.cast(true)
 }
 

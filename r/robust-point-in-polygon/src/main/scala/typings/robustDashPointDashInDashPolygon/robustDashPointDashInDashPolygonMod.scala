@@ -1,6 +1,5 @@
 package typings.robustDashPointDashInDashPolygon
 
-import typings.robustDashPointDashInDashPolygon.robustDashPointDashInDashPolygonMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

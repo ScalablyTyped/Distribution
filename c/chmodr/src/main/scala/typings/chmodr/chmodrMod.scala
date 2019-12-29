@@ -1,6 +1,5 @@
 package typings.chmodr
 
-import typings.chmodr.chmodrMod.PathLike
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.urlMod.URL

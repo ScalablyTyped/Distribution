@@ -1,6 +1,6 @@
 package typings.antd.libFormInterfaceMod
 
-import typings.antd.antdNumbers.`true`
+import typings.antd.antdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

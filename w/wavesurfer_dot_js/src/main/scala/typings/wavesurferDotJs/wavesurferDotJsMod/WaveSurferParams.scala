@@ -16,6 +16,7 @@ trait WaveSurferParams extends js.Object {
   var backend: js.UndefOr[String] = js.undefined
   var barGap: js.UndefOr[Double] = js.undefined
   var barHeight: js.UndefOr[Double] = js.undefined
+  var barRadius: js.UndefOr[Double] = js.undefined
   var barWidth: js.UndefOr[Double] = js.undefined
   var closeAudioContext: js.UndefOr[Boolean] = js.undefined
   var container: String | HTMLElement
@@ -57,6 +58,7 @@ object WaveSurferParams {
     backend: String = null,
     barGap: Int | Double = null,
     barHeight: Int | Double = null,
+    barRadius: Int | Double = null,
     barWidth: Int | Double = null,
     closeAudioContext: js.UndefOr[Boolean] = js.undefined,
     cursorColor: String = null,
@@ -93,6 +95,7 @@ object WaveSurferParams {
     if (backend != null) __obj.updateDynamic("backend")(backend.asInstanceOf[js.Any])
     if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
     if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
+    if (barRadius != null) __obj.updateDynamic("barRadius")(barRadius.asInstanceOf[js.Any])
     if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(closeAudioContext)) __obj.updateDynamic("closeAudioContext")(closeAudioContext.asInstanceOf[js.Any])
     if (cursorColor != null) __obj.updateDynamic("cursorColor")(cursorColor.asInstanceOf[js.Any])

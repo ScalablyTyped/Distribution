@@ -1,11 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.MetadataType.GENERIC
-import typings.chrome.chrome.cast.media.MetadataType.MOVIE
-import typings.chrome.chrome.cast.media.MetadataType.MUSIC_TRACK
-import typings.chrome.chrome.cast.media.MetadataType.PHOTO
-import typings.chrome.chrome.cast.media.MetadataType.TV_SHOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

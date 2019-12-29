@@ -1,6 +1,5 @@
 package typings.singleDashLineDashLog
 
-import typings.singleDashLineDashLog.singleDashLineDashLogMod.SingleLineLog
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

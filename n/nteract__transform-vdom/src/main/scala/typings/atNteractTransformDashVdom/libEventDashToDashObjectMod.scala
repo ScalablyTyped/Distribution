@@ -1,6 +1,5 @@
 package typings.atNteractTransformDashVdom
 
-import typings.atNteractTransformDashVdom.libEventDashToDashObjectMod.SerializedEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ClipboardEvent

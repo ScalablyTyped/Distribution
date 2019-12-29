@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskOrchestrationPlanState.Completed
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskOrchestrationPlanState.InProgress
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskOrchestrationPlanState.Queued
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

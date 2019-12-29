@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Parameters for @link{Objects.getObjectView} */
+/** Parameters for adapter.getObjectView */
 trait GetObjectViewParams extends js.Object {
   /** Last id to include in the return list */
   var endkey: String

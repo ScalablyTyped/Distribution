@@ -10,7 +10,7 @@ trait OverEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the autocomplete model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Droppable.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the mouse over the element
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -23,7 +23,7 @@ object OverEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Droppable.Model = null,
+    model: Model = null,
     target: js.Any = null,
     `type`: String = null
   ): OverEventArgs = {

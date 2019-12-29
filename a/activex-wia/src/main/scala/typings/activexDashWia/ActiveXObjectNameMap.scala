@@ -12,14 +12,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ActiveXObjectNameMap extends js.Object {
-  var `WIA.CommonDialog`: CommonDialog = js.native
-  var `WIA.DeviceManager`: DeviceManager = js.native
-  var `WIA.ImageFile`: ImageFile = js.native
-  var `WIA.ImageProcess`: ImageProcess = js.native
-  var `WIA.Rational`: Rational = js.native
+  @JSName("WIA.CommonDialog")
+  var WIADotCommonDialog: CommonDialog = js.native
+  @JSName("WIA.DeviceManager")
+  var WIADotDeviceManager: DeviceManager = js.native
+  @JSName("WIA.ImageFile")
+  var WIADotImageFile: ImageFile = js.native
+  @JSName("WIA.ImageProcess")
+  var WIADotImageProcess: ImageProcess = js.native
+  @JSName("WIA.Rational")
+  var WIADotRational: Rational = js.native
   @JSName("WIA.Vector")
-  var `WIA.Vector_Original`: Vector[_] = js.native
+  var WIADotVector_Original: Vector[_] = js.native
   /** Returns the specified item in the vector by position */
-  def `WIA.Vector`(Index: Double): js.Any = js.native
+  @JSName("WIA.Vector")
+  def WIADotVector(Index: Double): js.Any = js.native
 }
 

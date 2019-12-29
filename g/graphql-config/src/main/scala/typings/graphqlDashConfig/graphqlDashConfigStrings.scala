@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object graphqlDashConfigStrings {
   @js.native
-  sealed trait DOTgraphqlconfig extends js.Object
+  sealed trait Dotgraphqlconfig extends js.Object
   
   @js.native
-  sealed trait DOTgraphqlconfigDOTyaml extends js.Object
+  sealed trait DotgraphqlconfigDotyaml extends js.Object
   
   @js.native
-  sealed trait DOTgraphqlconfigDOTyml extends js.Object
+  sealed trait DotgraphqlconfigDotyml extends js.Object
   
   @scala.inline
-  def DOTgraphqlconfig: DOTgraphqlconfig = ".graphqlconfig".asInstanceOf[DOTgraphqlconfig]
+  def Dotgraphqlconfig: Dotgraphqlconfig = ".graphqlconfig".asInstanceOf[Dotgraphqlconfig]
   @scala.inline
-  def DOTgraphqlconfigDOTyaml: DOTgraphqlconfigDOTyaml = ".graphqlconfig.yaml".asInstanceOf[DOTgraphqlconfigDOTyaml]
+  def DotgraphqlconfigDotyaml: DotgraphqlconfigDotyaml = ".graphqlconfig.yaml".asInstanceOf[DotgraphqlconfigDotyaml]
   @scala.inline
-  def DOTgraphqlconfigDOTyml: DOTgraphqlconfigDOTyml = ".graphqlconfig.yml".asInstanceOf[DOTgraphqlconfigDOTyml]
+  def DotgraphqlconfigDotyml: DotgraphqlconfigDotyml = ".graphqlconfig.yml".asInstanceOf[DotgraphqlconfigDotyml]
 }
 

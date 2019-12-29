@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "map-obj"
-version := "4.1.0-5562b4"
+version := "4.1.0-8fd2a9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

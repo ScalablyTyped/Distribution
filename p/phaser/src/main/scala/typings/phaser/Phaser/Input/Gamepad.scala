@@ -1,9 +1,6 @@
 package typings.phaser.Phaser.Input
 
 import typings.phaser.Phaser.Events.EventEmitter
-import typings.phaser.Phaser.Input.Gamepad.Axis
-import typings.phaser.Phaser.Input.Gamepad.Button
-import typings.phaser.Phaser.Input.Gamepad.GamepadPlugin
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.Input.Gamepad.Pad

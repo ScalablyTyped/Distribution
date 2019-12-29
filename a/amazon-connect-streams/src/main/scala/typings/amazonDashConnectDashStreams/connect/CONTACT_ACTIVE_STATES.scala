@@ -1,9 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.CONTACT_ACTIVE_STATES.CONNECTED
-import typings.amazonDashConnectDashStreams.connect.CONTACT_ACTIVE_STATES.CONNECTING
-import typings.amazonDashConnectDashStreams.connect.CONTACT_ACTIVE_STATES.INCOMING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

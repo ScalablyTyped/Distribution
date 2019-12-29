@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.networking.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`networkingDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.networkingDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait Ingress extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `networkingDOTk8sDOTio/v1beta1`
+  val apiVersion: networkingDotk8sDotioSlashv1beta1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -46,7 +46,7 @@ trait Ingress extends js.Object {
 object Ingress {
   @scala.inline
   def apply(
-    apiVersion: `networkingDOTk8sDOTio/v1beta1`,
+    apiVersion: networkingDotk8sDotioSlashv1beta1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.Ingress,
     metadata: ObjectMeta,
     spec: IngressSpec,

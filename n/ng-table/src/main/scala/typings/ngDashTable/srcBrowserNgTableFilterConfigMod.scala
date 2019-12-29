@@ -2,7 +2,6 @@ package typings.ngDashTable
 
 import typings.angular.angularMod.IServiceProvider
 import typings.angular.angularMod.auto.IInjectorService
-import typings.ngDashTable.srcBrowserNgTableFilterConfigMod.NgTableFilterConfig
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.IFilterConfigValues
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.IFilterTemplateDef
 import scala.scalajs.js

@@ -12,6 +12,7 @@ class OMathFunc protected () extends js.Object {
   val E: OMath = js.native
   val FName: OMath = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathFunc_typekey`: OMathFunc = js.native
+  @JSName("Word.OMathFunc_typekey")
+  var WordDotOMathFunc_typekey: OMathFunc = js.native
 }
 

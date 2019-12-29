@@ -13,7 +13,8 @@ class ShapeNodes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ShapeNodes_typekey`: ShapeNodes = js.native
+  @JSName("Word.ShapeNodes_typekey")
+  var WordDotShapeNodes_typekey: ShapeNodes = js.native
   def Delete(Index: Double): Unit = js.native
   /**
     * @param number [X2=0]

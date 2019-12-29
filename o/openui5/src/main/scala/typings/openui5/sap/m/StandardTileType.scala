@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.StandardTileType.Create
-import typings.openui5.sap.m.StandardTileType.Monitor
-import typings.openui5.sap.m.StandardTileType.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

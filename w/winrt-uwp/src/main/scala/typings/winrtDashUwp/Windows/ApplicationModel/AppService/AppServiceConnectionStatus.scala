@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.AppService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceConnectionStatus.appNotInstalled
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceConnectionStatus.appServiceUnavailable
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceConnectionStatus.appUnavailable
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceConnectionStatus.success
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceConnectionStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

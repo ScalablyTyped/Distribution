@@ -5,7 +5,7 @@ import typings.geolib.esGetPathLengthMod.DistanceFn
 import typings.geolib.esTypesMod.GeolibDistanceFn
 import typings.geolib.esTypesMod.GeolibInputCoordinates
 import typings.geolib.esTypesMod.GeolibInputCoordinatesWithTime
-import typings.geolib.geolibNumbers.`false`
+import typings.geolib.geolibBooleans.`false`
 import typings.geolib.geolibStrings.E
 import typings.geolib.geolibStrings.ENE
 import typings.geolib.geolibStrings.ESE

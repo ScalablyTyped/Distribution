@@ -1,6 +1,5 @@
 package typings.mobx
 
-import typings.mobx.libTypesListenDashUtilsMod.IListenable
 import typings.mobx.libUtilsUtilsMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -5,12 +5,12 @@ import typings.ol.extentMod.Extent
 import typings.ol.layerLayerMod.State
 import typings.ol.layerTypeMod.LayerType
 import typings.ol.objectMod.ObjectEvent
-import typings.ol.olStrings.`change:extent`
-import typings.ol.olStrings.`change:maxResolution`
-import typings.ol.olStrings.`change:minResolution`
-import typings.ol.olStrings.`change:opacity`
-import typings.ol.olStrings.`change:visible`
-import typings.ol.olStrings.`change:zIndex`
+import typings.ol.olStrings.changeColonextent
+import typings.ol.olStrings.changeColonmaxResolution
+import typings.ol.olStrings.changeColonminResolution
+import typings.ol.olStrings.changeColonopacity
+import typings.ol.olStrings.changeColonvisible
+import typings.ol.olStrings.changeColonzIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,29 +32,29 @@ trait BaseLayer
   def getVisible(): Boolean = js.native
   def getZIndex(): Double = js.native
   @JSName("on")
-  def on_changeextent(`type`: `change:extent`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changeextent(`type`: changeColonextent, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changemaxResolution(`type`: `change:maxResolution`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changemaxResolution(`type`: changeColonmaxResolution, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changeminResolution(`type`: `change:minResolution`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changeminResolution(`type`: changeColonminResolution, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changeopacity(`type`: `change:opacity`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changeopacity(`type`: changeColonopacity, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changevisible(`type`: `change:visible`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changevisible(`type`: changeColonvisible, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changezIndex(`type`: `change:zIndex`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changezIndex(`type`: changeColonzIndex, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changeextent(`type`: `change:extent`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changeextent(`type`: changeColonextent, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changemaxResolution(`type`: `change:maxResolution`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changemaxResolution(`type`: changeColonmaxResolution, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changeminResolution(`type`: `change:minResolution`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changeminResolution(`type`: changeColonminResolution, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changeopacity(`type`: `change:opacity`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changeopacity(`type`: changeColonopacity, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changevisible(`type`: `change:visible`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changevisible(`type`: changeColonvisible, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changezIndex(`type`: `change:zIndex`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changezIndex(`type`: changeColonzIndex, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   def setExtent(): Unit = js.native
   def setExtent(extent: Extent): Unit = js.native
   def setMaxResolution(maxResolution: Double): Unit = js.native
@@ -63,16 +63,16 @@ trait BaseLayer
   def setVisible(visible: Boolean): Unit = js.native
   def setZIndex(zindex: Double): Unit = js.native
   @JSName("un")
-  def un_changeextent(`type`: `change:extent`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changeextent(`type`: changeColonextent, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changemaxResolution(`type`: `change:maxResolution`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changemaxResolution(`type`: changeColonmaxResolution, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changeminResolution(`type`: `change:minResolution`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changeminResolution(`type`: changeColonminResolution, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changeopacity(`type`: `change:opacity`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changeopacity(`type`: changeColonopacity, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changevisible(`type`: `change:visible`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changevisible(`type`: changeColonvisible, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changezIndex(`type`: `change:zIndex`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changezIndex(`type`: changeColonzIndex, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
 }
 

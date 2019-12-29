@@ -26,17 +26,17 @@ class LogOutputModel_ protected ()
   /**
     * A signal emitted when the output model changes.
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override val changed: ISignal[this.type, Unit] = js.native
   /**
     * The data associated with the model.
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override val data: ReadonlyJSONObject = js.native
   /**
     * The execution count of the model.
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override val executionCount: ExecutionCount = js.native
   /**
     * Log level
@@ -49,7 +49,7 @@ class LogOutputModel_ protected ()
     * Among others, it can include an attribute named `fragment`
     * that stores a URI fragment identifier for the MIME resource.
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override val metadata: ReadonlyJSONObject = js.native
   /**
     * Date & time when output is logged.
@@ -59,17 +59,16 @@ class LogOutputModel_ protected ()
   /**
     * Whether the data in the model is trusted.
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override val trusted: Boolean = js.native
   /**
     * The output type.
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override val `type`: String = js.native
   /**
     * Dispose of the resources used by the output model.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
   /**
@@ -80,13 +79,11 @@ class LogOutputModel_ protected ()
     * that could cause the renderer to be rendered with a new model
     * containing the new data.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def setData(options: ISetDataOptions): Unit = js.native
   /**
     * Serialize the model to JSON.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def toJSON(): IOutput = js.native
 }

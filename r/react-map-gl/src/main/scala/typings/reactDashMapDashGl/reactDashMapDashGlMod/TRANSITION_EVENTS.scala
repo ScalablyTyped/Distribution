@@ -1,10 +1,6 @@
 package typings.reactDashMapDashGl.reactDashMapDashGlMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.BREAK
-import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.IGNORE
-import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.SNAP_TO_END
-import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.UPDATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

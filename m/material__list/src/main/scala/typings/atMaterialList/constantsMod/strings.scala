@@ -2,55 +2,55 @@ package typings.atMaterialList.constantsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atMaterialBase.foundationMod.MDCStrings
-import typings.atMaterialList.atMaterialListStrings.`DOTmdc-list-item button:not(:disabled), DOTmdc-list-item a, DOTmdc-list-item input[type=BACKSLASHradioBACKSLASH]:not(:disabled), DOTmdc-list-item input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled)`
-import typings.atMaterialList.atMaterialListStrings.`DOTmdc-list-item button:not(:disabled), DOTmdc-list-item a`
-import typings.atMaterialList.atMaterialListStrings.`DOTmdc-list-item:not(DOTmdc-list-item--disabled)`
-import typings.atMaterialList.atMaterialListStrings.`[role=BACKSLASHcheckboxBACKSLASH][aria-checked=BACKSLASHtrueBACKSLASH]`
-import typings.atMaterialList.atMaterialListStrings.`[role=BACKSLASHcheckboxBACKSLASH]`
-import typings.atMaterialList.atMaterialListStrings.`[role=BACKSLASHradioBACKSLASH][aria-checked=BACKSLASHtrueBACKSLASH]`
+import typings.atMaterialList.atMaterialListStrings.LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracket
+import typings.atMaterialList.atMaterialListStrings.`Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`
+import typings.atMaterialList.atMaterialListStrings.`Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item a`
+import typings.atMaterialList.atMaterialListStrings.`Dotmdc-list-itemColonnotLeftparenthesisDotmdc-list-item--disabledRightparenthesis`
+import typings.atMaterialList.atMaterialListStrings.`LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`
+import typings.atMaterialList.atMaterialListStrings.`LeftsquarebracketroleEqualssignQuotationmarkradioQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`
 import typings.atMaterialList.atMaterialListStrings.`aria-checked`
 import typings.atMaterialList.atMaterialListStrings.`aria-orientation`
 import typings.atMaterialList.atMaterialListStrings.`aria-selected`
-import typings.atMaterialList.atMaterialListStrings.`input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled), input[type=BACKSLASHradioBACKSLASH]:not(:disabled)`
-import typings.atMaterialList.atMaterialListStrings.`input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled)`
-import typings.atMaterialList.atMaterialListStrings.`input[type=BACKSLASHradioBACKSLASH]:not(:disabled)`
+import typings.atMaterialList.atMaterialListStrings.`inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`
 import typings.atMaterialList.atMaterialListStrings.horizontal
+import typings.atMaterialList.atMaterialListStrings.inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis
+import typings.atMaterialList.atMaterialListStrings.inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait strings extends MDCStrings {
   var ARIA_CHECKED: `aria-checked`
-  var ARIA_CHECKED_CHECKBOX_SELECTOR: `[role=BACKSLASHcheckboxBACKSLASH][aria-checked=BACKSLASHtrueBACKSLASH]`
-  var ARIA_CHECKED_RADIO_SELECTOR: `[role=BACKSLASHradioBACKSLASH][aria-checked=BACKSLASHtrueBACKSLASH]`
+  var ARIA_CHECKED_CHECKBOX_SELECTOR: `LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`
+  var ARIA_CHECKED_RADIO_SELECTOR: `LeftsquarebracketroleEqualssignQuotationmarkradioQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`
   var ARIA_ORIENTATION: `aria-orientation`
   var ARIA_ORIENTATION_HORIZONTAL: horizontal
-  var ARIA_ROLE_CHECKBOX_SELECTOR: `[role=BACKSLASHcheckboxBACKSLASH]`
+  var ARIA_ROLE_CHECKBOX_SELECTOR: LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracket
   var ARIA_SELECTED: `aria-selected`
-  var CHECKBOX_RADIO_SELECTOR: `input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled), input[type=BACKSLASHradioBACKSLASH]:not(:disabled)`
-  var CHECKBOX_SELECTOR: `input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled)`
-  var CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: `DOTmdc-list-item button:not(:disabled), DOTmdc-list-item a`
-  var ENABLED_ITEMS_SELECTOR: `DOTmdc-list-item:not(DOTmdc-list-item--disabled)`
-  var FOCUSABLE_CHILD_ELEMENTS: `DOTmdc-list-item button:not(:disabled), DOTmdc-list-item a, DOTmdc-list-item input[type=BACKSLASHradioBACKSLASH]:not(:disabled), DOTmdc-list-item input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled)`
-  var RADIO_SELECTOR: `input[type=BACKSLASHradioBACKSLASH]:not(:disabled)`
+  var CHECKBOX_RADIO_SELECTOR: `inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`
+  var CHECKBOX_SELECTOR: inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis
+  var CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item a`
+  var ENABLED_ITEMS_SELECTOR: `Dotmdc-list-itemColonnotLeftparenthesisDotmdc-list-item--disabledRightparenthesis`
+  var FOCUSABLE_CHILD_ELEMENTS: `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`
+  var RADIO_SELECTOR: inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis
 }
 
 object strings {
   @scala.inline
   def apply(
     ARIA_CHECKED: `aria-checked`,
-    ARIA_CHECKED_CHECKBOX_SELECTOR: `[role=BACKSLASHcheckboxBACKSLASH][aria-checked=BACKSLASHtrueBACKSLASH]`,
-    ARIA_CHECKED_RADIO_SELECTOR: `[role=BACKSLASHradioBACKSLASH][aria-checked=BACKSLASHtrueBACKSLASH]`,
+    ARIA_CHECKED_CHECKBOX_SELECTOR: `LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`,
+    ARIA_CHECKED_RADIO_SELECTOR: `LeftsquarebracketroleEqualssignQuotationmarkradioQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`,
     ARIA_ORIENTATION: `aria-orientation`,
     ARIA_ORIENTATION_HORIZONTAL: horizontal,
-    ARIA_ROLE_CHECKBOX_SELECTOR: `[role=BACKSLASHcheckboxBACKSLASH]`,
+    ARIA_ROLE_CHECKBOX_SELECTOR: LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracket,
     ARIA_SELECTED: `aria-selected`,
-    CHECKBOX_RADIO_SELECTOR: `input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled), input[type=BACKSLASHradioBACKSLASH]:not(:disabled)`,
-    CHECKBOX_SELECTOR: `input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled)`,
-    CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: `DOTmdc-list-item button:not(:disabled), DOTmdc-list-item a`,
-    ENABLED_ITEMS_SELECTOR: `DOTmdc-list-item:not(DOTmdc-list-item--disabled)`,
-    FOCUSABLE_CHILD_ELEMENTS: `DOTmdc-list-item button:not(:disabled), DOTmdc-list-item a, DOTmdc-list-item input[type=BACKSLASHradioBACKSLASH]:not(:disabled), DOTmdc-list-item input[type=BACKSLASHcheckboxBACKSLASH]:not(:disabled)`,
-    RADIO_SELECTOR: `input[type=BACKSLASHradioBACKSLASH]:not(:disabled)`,
+    CHECKBOX_RADIO_SELECTOR: `inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`,
+    CHECKBOX_SELECTOR: inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis,
+    CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item a`,
+    ENABLED_ITEMS_SELECTOR: `Dotmdc-list-itemColonnotLeftparenthesisDotmdc-list-item--disabledRightparenthesis`,
+    FOCUSABLE_CHILD_ELEMENTS: `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`,
+    RADIO_SELECTOR: inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(ARIA_CHECKED = ARIA_CHECKED.asInstanceOf[js.Any], ARIA_CHECKED_CHECKBOX_SELECTOR = ARIA_CHECKED_CHECKBOX_SELECTOR.asInstanceOf[js.Any], ARIA_CHECKED_RADIO_SELECTOR = ARIA_CHECKED_RADIO_SELECTOR.asInstanceOf[js.Any], ARIA_ORIENTATION = ARIA_ORIENTATION.asInstanceOf[js.Any], ARIA_ORIENTATION_HORIZONTAL = ARIA_ORIENTATION_HORIZONTAL.asInstanceOf[js.Any], ARIA_ROLE_CHECKBOX_SELECTOR = ARIA_ROLE_CHECKBOX_SELECTOR.asInstanceOf[js.Any], ARIA_SELECTED = ARIA_SELECTED.asInstanceOf[js.Any], CHECKBOX_RADIO_SELECTOR = CHECKBOX_RADIO_SELECTOR.asInstanceOf[js.Any], CHECKBOX_SELECTOR = CHECKBOX_SELECTOR.asInstanceOf[js.Any], CHILD_ELEMENTS_TO_TOGGLE_TABINDEX = CHILD_ELEMENTS_TO_TOGGLE_TABINDEX.asInstanceOf[js.Any], ENABLED_ITEMS_SELECTOR = ENABLED_ITEMS_SELECTOR.asInstanceOf[js.Any], FOCUSABLE_CHILD_ELEMENTS = FOCUSABLE_CHILD_ELEMENTS.asInstanceOf[js.Any], RADIO_SELECTOR = RADIO_SELECTOR.asInstanceOf[js.Any])

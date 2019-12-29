@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ClockRange.CLAMPED
-import typings.cesium.cesiumMod.ClockRange.LOOP_STOP
-import typings.cesium.cesiumMod.ClockRange.UNBOUNDED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.CENTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.LEFT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

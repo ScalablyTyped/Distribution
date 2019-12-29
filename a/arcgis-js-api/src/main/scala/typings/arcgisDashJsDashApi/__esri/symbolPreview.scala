@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,8 +24,8 @@ trait symbolPreview extends js.Object {
     * @param options.symbolConfig For "tall" symbols in portrait view, then the `tall` value should be used here.
     *
     */
-  def renderPreviewHTML(symbol: Symbol): IPromise[HTMLElement] = js.native
-  def renderPreviewHTML(symbol: Symbol, options: symbolPreviewRenderPreviewHTMLOptions): IPromise[HTMLElement] = js.native
+  def renderPreviewHTML(symbol: Symbol): js.Promise[HTMLElement] = js.native
+  def renderPreviewHTML(symbol: Symbol, options: symbolPreviewRenderPreviewHTMLOptions): js.Promise[HTMLElement] = js.native
 }
 
 @JSGlobal("__esri.symbolPreview")

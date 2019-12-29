@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
-import typings.three.srcLoadersImageBitmapLoaderMod.ImageBitmapLoader
 import typings.three.srcLoadersLoaderMod.Loader
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
 import scala.scalajs.js

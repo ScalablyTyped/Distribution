@@ -1,7 +1,6 @@
 package typings.atJimpPluginDashBlur
 
 import typings.atJimpCore.typesEtcMod.ImageCallback
-import typings.atJimpPluginDashBlur.atJimpPluginDashBlurMod.Blur
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

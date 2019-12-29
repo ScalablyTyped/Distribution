@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiReconnectionKind.automatic
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiReconnectionKind.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

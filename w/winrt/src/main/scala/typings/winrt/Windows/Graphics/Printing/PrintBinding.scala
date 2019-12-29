@@ -1,23 +1,6 @@
 package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.bale
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.bindBottom
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.bindLeft
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.bindRight
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.bindTop
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.booklet
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.default
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.edgeStitchBottom
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.edgeStitchLeft
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.edgeStitchRight
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.edgeStitchTop
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.fold
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.jogOffset
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.none
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.notAvailable
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.printerCustom
-import typings.winrt.Windows.Graphics.Printing.PrintBinding.trim
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,10 +4,10 @@ import typings.std.Record
 import typings.vueDashTemplateDashCompiler.Anon_Callback
 import typings.vueDashTemplateDashCompiler.Anon_Name
 import typings.vueDashTemplateDashCompiler.Anon_NameValue
+import typings.vueDashTemplateDashCompiler.vueDashTemplateDashCompilerBooleans.`true`
 import typings.vueDashTemplateDashCompiler.vueDashTemplateDashCompilerNumbers.`1`
 import typings.vueDashTemplateDashCompiler.vueDashTemplateDashCompilerNumbers.`2`
 import typings.vueDashTemplateDashCompiler.vueDashTemplateDashCompilerNumbers.`3`
-import typings.vueDashTemplateDashCompiler.vueDashTemplateDashCompilerNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Sms.SmsMessageFilter.all
-import typings.winrt.Windows.Devices.Sms.SmsMessageFilter.draft
-import typings.winrt.Windows.Devices.Sms.SmsMessageFilter.read
-import typings.winrt.Windows.Devices.Sms.SmsMessageFilter.sent
-import typings.winrt.Windows.Devices.Sms.SmsMessageFilter.unread
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

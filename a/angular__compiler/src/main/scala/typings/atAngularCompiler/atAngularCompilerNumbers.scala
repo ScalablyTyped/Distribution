@@ -373,9 +373,6 @@ object atAngularCompilerNumbers {
   @js.native
   sealed trait `98` extends js.Object
   
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -570,7 +567,5 @@ object atAngularCompilerNumbers {
   def `97`: `97` = 97.asInstanceOf[`97`]
   @scala.inline
   def `98`: `98` = 98.asInstanceOf[`98`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

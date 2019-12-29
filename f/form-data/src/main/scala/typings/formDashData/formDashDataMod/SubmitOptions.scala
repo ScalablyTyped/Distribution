@@ -1,19 +1,19 @@
 package typings.formDashData.formDashDataMod
 
-import typings.formDashData.formDashDataStrings.`http:`
-import typings.formDashData.formDashDataStrings.`https:`
-import typings.node.Error
+import typings.formDashData.formDashDataStrings.httpColon
+import typings.formDashData.formDashDataStrings.httpsColon
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.netMod.Socket
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubmitOptions extends ClientRequestArgs {
   @JSName("protocol")
-  var protocol_SubmitOptions: js.UndefOr[`https:` | `http:`] = js.undefined
+  var protocol_SubmitOptions: js.UndefOr[httpsColon | httpColon] = js.undefined
 }
 
 object SubmitOptions {
@@ -32,7 +32,7 @@ object SubmitOptions {
     method: String = null,
     path: String = null,
     port: Double | String = null,
-    protocol: `https:` | `http:` = null,
+    protocol: httpsColon | httpColon = null,
     setHost: js.UndefOr[Boolean] = js.undefined,
     socketPath: String = null,
     timeout: Int | Double = null

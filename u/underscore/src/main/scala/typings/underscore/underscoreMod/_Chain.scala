@@ -510,8 +510,11 @@ trait _Chain[T, V] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.map
     **/
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult, js.Array[TResult]] = js.native
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult, js.Array[TResult]] = js.native
+  def map[TArray](iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]])): _ChainOfArrays[TArray] = js.native
+  def map[TArray](
+    iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]]),
+    context: js.Any
+  ): _ChainOfArrays[TArray] = js.native
   /**
     * Wrapped type `object`.
     * @see _.mapObject
@@ -522,12 +525,9 @@ trait _Chain[T, V] extends js.Object {
     * @see _.map
     **/
   @JSName("map")
-  def map_TArray__ChainOfArrays[TArray](iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]])): _ChainOfArrays[TArray] = js.native
+  def map_TResult__Chain[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): _Chain[TResult, js.Array[TResult]] = js.native
   @JSName("map")
-  def map_TArray__ChainOfArrays[TArray](
-    iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]]),
-    context: js.Any
-  ): _ChainOfArrays[TArray] = js.native
+  def map_TResult__Chain[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): _Chain[TResult, js.Array[TResult]] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.matcher

@@ -2,7 +2,6 @@ package typings.atAwsDashSdkClientDashS3DashBrowser
 
 import typings.atAwsDashSdkClientDashS3DashBrowser.typesGetObjectOutputMod.GetObjectOutput
 import typings.atAwsDashSdkClientDashS3DashBrowser.typesGetObjectTorrentOutputMod.GetObjectTorrentOutput
-import typings.atAwsDashSdkClientDashS3DashBrowser.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`

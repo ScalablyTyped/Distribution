@@ -1,22 +1,27 @@
 package typings.esquery.esqueryMod
 
-import typings.esquery.esqueryStrings.`!=`
-import typings.esquery.esqueryStrings.`<=`
-import typings.esquery.esqueryStrings.`<`
-import typings.esquery.esqueryStrings.`=`
-import typings.esquery.esqueryStrings.`>=`
-import typings.esquery.esqueryStrings.`>`
+import typings.esquery.esqueryStrings.Equalssign
+import typings.esquery.esqueryStrings.ExclamationmarkEqualssign
+import typings.esquery.esqueryStrings.Greaterthansign
+import typings.esquery.esqueryStrings.GreaterthansignEqualssign
+import typings.esquery.esqueryStrings.Lessthansign
+import typings.esquery.esqueryStrings.LessthansignEqualssign
 import typings.esquery.esqueryStrings.attribute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Attribute extends Selector {
+trait Attribute
+  extends SubjectSelectorAtom
+     with Selector
+     with SubjectSelector {
   var name: String
-  var operator: js.UndefOr[`=` | `!=` | `>` | `<` | `>=` | `<=`] = js.undefined
+  var operator: js.UndefOr[
+    Equalssign | ExclamationmarkEqualssign | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign
+  ] = js.undefined
   @JSName("type")
   var type_Attribute: attribute
-  var value: js.UndefOr[Literal | RegExpSelector | Type] = js.undefined
+  var value: js.UndefOr[Literal | RegExpLiteral | Type] = js.undefined
 }
 
 object Attribute {
@@ -24,9 +29,9 @@ object Attribute {
   def apply(
     name: String,
     `type`: attribute,
-    operator: `=` | `!=` | `>` | `<` | `>=` | `<=` = null,
+    operator: Equalssign | ExclamationmarkEqualssign | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign = null,
     subject: js.UndefOr[Boolean] = js.undefined,
-    value: Literal | RegExpSelector | Type = null
+    value: Literal | RegExpLiteral | Type = null
   ): Attribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

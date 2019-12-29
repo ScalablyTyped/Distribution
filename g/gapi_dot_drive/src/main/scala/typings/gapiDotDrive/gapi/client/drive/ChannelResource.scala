@@ -1,6 +1,6 @@
 package typings.gapiDotDrive.gapi.client.drive
 
-import typings.gapiDotDrive.gapiDotDriveStrings.`api#channel`
+import typings.gapiDotDrive.gapiDotDriveStrings.apiNumbersignchannel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChannelResource extends js.Object {
   var expiration: Double
   var id: String
-  var kind: `api#channel`
+  var kind: apiNumbersignchannel
   var resourceId: String
   var resourceUri: String
   var token: String
@@ -19,7 +19,7 @@ object ChannelResource {
   def apply(
     expiration: Double,
     id: String,
-    kind: `api#channel`,
+    kind: apiNumbersignchannel,
     resourceId: String,
     resourceUri: String,
     token: String

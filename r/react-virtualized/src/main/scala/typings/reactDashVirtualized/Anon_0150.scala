@@ -3,10 +3,10 @@ package typings.reactDashVirtualized
 import typings.reactDashVirtualized.distEsMasonryMod.emptyObject
 import typings.reactDashVirtualized.distEsMasonryMod.identity
 import typings.reactDashVirtualized.distEsMasonryMod.noop
+import typings.reactDashVirtualized.reactDashVirtualizedBooleans.`false`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`0`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`150`
 import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`20`
-import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`false`
 import typings.reactDashVirtualized.reactDashVirtualizedStrings.grid
 import scala.scalajs.js
 import scala.scalajs.js.`|`

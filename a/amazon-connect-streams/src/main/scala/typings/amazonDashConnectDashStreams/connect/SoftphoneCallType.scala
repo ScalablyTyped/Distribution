@@ -1,10 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.SoftphoneCallType.AUDIO_ONLY
-import typings.amazonDashConnectDashStreams.connect.SoftphoneCallType.AUDIO_VIDEO
-import typings.amazonDashConnectDashStreams.connect.SoftphoneCallType.NONE
-import typings.amazonDashConnectDashStreams.connect.SoftphoneCallType.VIDEO_ONLY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

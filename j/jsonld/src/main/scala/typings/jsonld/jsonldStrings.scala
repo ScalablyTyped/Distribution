@@ -24,7 +24,7 @@ object jsonldStrings {
   sealed trait URGNA2012 extends js.Object
   
   @js.native
-  sealed trait `application/n-quads` extends js.Object
+  sealed trait `applicationSlashn-quads` extends js.Object
   
   @scala.inline
   def `@always`: `@always` = "@always".asInstanceOf[`@always`]
@@ -39,6 +39,6 @@ object jsonldStrings {
   @scala.inline
   def URGNA2012: URGNA2012 = "URGNA2012".asInstanceOf[URGNA2012]
   @scala.inline
-  def `application/n-quads`: `application/n-quads` = "application/n-quads".asInstanceOf[`application/n-quads`]
+  def `applicationSlashn-quads`: `applicationSlashn-quads` = "application/n-quads".asInstanceOf[`applicationSlashn-quads`]
 }
 

@@ -66,8 +66,8 @@ object DomHelper extends js.Object {
   		* @param spec Object The DOM object spec (and children)
   		* @returns String
   		*/
-  def createHtml(): java.lang.String = js.native
-  def createHtml(spec: js.Any): java.lang.String = js.native
+  def createHtml(): String = js.native
+  def createHtml(spec: js.Any): String = js.native
   /** [Method] Creates a new Ext Template from the DOM object spec
   		* @param o Object The DOM object spec (and children)
   		* @returns Ext.Template The new template
@@ -87,7 +87,7 @@ object DomHelper extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this
@@ -131,15 +131,15 @@ object DomHelper extends js.Object {
   		* @returns HTMLElement The new node
   		*/
   def insertHtml(): HTMLElement = js.native
-  def insertHtml(where: java.lang.String): HTMLElement = js.native
-  def insertHtml(where: java.lang.String, el: js.Any): HTMLElement = js.native
-  def insertHtml(where: java.lang.String, el: js.Any, html: java.lang.String): HTMLElement = js.native
+  def insertHtml(where: String): HTMLElement = js.native
+  def insertHtml(where: String, el: js.Any): HTMLElement = js.native
+  def insertHtml(where: String, el: js.Any, html: String): HTMLElement = js.native
   /** [Method] Returns the markup for the passed Element s config
   		* @param spec Object The DOM object spec (and children)
   		* @returns String
   		*/
-  def markup(): java.lang.String = js.native
-  def markup(spec: js.Any): java.lang.String = js.native
+  def markup(): String = js.native
+  def markup(spec: js.Any): String = js.native
   /** [Method] Creates new DOM element s and overwrites the contents of el with them
   		* @param el String/HTMLElement/Ext.Element The context element
   		* @param o Object/String The DOM object spec (and children) or raw HTML blob

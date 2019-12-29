@@ -11,107 +11,24 @@ import scala.scalajs.js.annotation._
 
 object estreeStrings {
   @js.native
-  sealed trait `!` extends UnaryOperator
-  
-  @js.native
-  sealed trait `!=` extends BinaryOperator
-  
-  @js.native
-  sealed trait `!==` extends BinaryOperator
-  
-  @js.native
-  sealed trait `%` extends BinaryOperator
-  
-  @js.native
-  sealed trait `%=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `&` extends BinaryOperator
-  
-  @js.native
-  sealed trait `&&` extends LogicalOperator
-  
-  @js.native
-  sealed trait `&=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `*` extends BinaryOperator
-  
-  @js.native
-  sealed trait `**` extends BinaryOperator
-  
-  @js.native
-  sealed trait `**=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `*=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `+`
-    extends BinaryOperator
-       with UnaryOperator
-  
-  @js.native
-  sealed trait `++` extends UpdateOperator
-  
-  @js.native
-  sealed trait `+=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `-`
-    extends BinaryOperator
-       with UnaryOperator
-  
-  @js.native
   sealed trait `--` extends UpdateOperator
   
   @js.native
-  sealed trait `-=` extends AssignmentOperator
+  sealed trait `-Equalssign` extends AssignmentOperator
   
   @js.native
-  sealed trait `/` extends BinaryOperator
+  sealed trait `-_`
+    extends BinaryOperator
+       with UnaryOperator
   
   @js.native
-  sealed trait `/=` extends AssignmentOperator
+  sealed trait Ampersand extends BinaryOperator
   
   @js.native
-  sealed trait `<` extends BinaryOperator
+  sealed trait AmpersandAmpersand extends LogicalOperator
   
   @js.native
-  sealed trait `<<` extends BinaryOperator
-  
-  @js.native
-  sealed trait `<<=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `<=` extends BinaryOperator
-  
-  @js.native
-  sealed trait `=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `==` extends BinaryOperator
-  
-  @js.native
-  sealed trait `===` extends BinaryOperator
-  
-  @js.native
-  sealed trait `>` extends BinaryOperator
-  
-  @js.native
-  sealed trait `>=` extends BinaryOperator
-  
-  @js.native
-  sealed trait `>>` extends BinaryOperator
-  
-  @js.native
-  sealed trait `>>=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `>>>` extends BinaryOperator
-  
-  @js.native
-  sealed trait `>>>=` extends AssignmentOperator
+  sealed trait AmpersandEqualssign extends AssignmentOperator
   
   @js.native
   sealed trait ArrayExpression extends js.Object
@@ -127,6 +44,18 @@ object estreeStrings {
   
   @js.native
   sealed trait AssignmentPattern extends js.Object
+  
+  @js.native
+  sealed trait Asterisk extends BinaryOperator
+  
+  @js.native
+  sealed trait AsteriskAsterisk extends BinaryOperator
+  
+  @js.native
+  sealed trait AsteriskAsteriskEqualssign extends AssignmentOperator
+  
+  @js.native
+  sealed trait AsteriskEqualssign extends AssignmentOperator
   
   @js.native
   sealed trait AwaitExpression extends js.Object
@@ -174,6 +103,24 @@ object estreeStrings {
   sealed trait EmptyStatement extends js.Object
   
   @js.native
+  sealed trait Equalssign extends AssignmentOperator
+  
+  @js.native
+  sealed trait EqualssignEqualssign extends BinaryOperator
+  
+  @js.native
+  sealed trait EqualssignEqualssignEqualssign extends BinaryOperator
+  
+  @js.native
+  sealed trait Exclamationmark extends UnaryOperator
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssign extends BinaryOperator
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssignEqualssign extends BinaryOperator
+  
+  @js.native
   sealed trait ExportAllDeclaration extends js.Object
   
   @js.native
@@ -204,6 +151,24 @@ object estreeStrings {
   sealed trait FunctionExpression extends js.Object
   
   @js.native
+  sealed trait Greaterthansign extends BinaryOperator
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends BinaryOperator
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansign extends BinaryOperator
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansignEqualssign extends AssignmentOperator
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansignGreaterthansign extends BinaryOperator
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansignGreaterthansignEqualssign extends AssignmentOperator
+  
+  @js.native
   sealed trait Identifier extends js.Object
   
   @js.native
@@ -223,6 +188,18 @@ object estreeStrings {
   
   @js.native
   sealed trait LabeledStatement extends js.Object
+  
+  @js.native
+  sealed trait Lessthansign extends BinaryOperator
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends BinaryOperator
+  
+  @js.native
+  sealed trait LessthansignLessthansign extends BinaryOperator
+  
+  @js.native
+  sealed trait LessthansignLessthansignEqualssign extends AssignmentOperator
   
   @js.native
   sealed trait Line extends js.Object
@@ -252,6 +229,23 @@ object estreeStrings {
   sealed trait ObjectPattern extends js.Object
   
   @js.native
+  sealed trait Percentsign extends BinaryOperator
+  
+  @js.native
+  sealed trait PercentsignEqualssign extends AssignmentOperator
+  
+  @js.native
+  sealed trait Plussign
+    extends BinaryOperator
+       with UnaryOperator
+  
+  @js.native
+  sealed trait PlussignEqualssign extends AssignmentOperator
+  
+  @js.native
+  sealed trait PlussignPlussign extends UpdateOperator
+  
+  @js.native
   sealed trait Program extends js.Object
   
   @js.native
@@ -265,6 +259,12 @@ object estreeStrings {
   
   @js.native
   sealed trait SequenceExpression extends js.Object
+  
+  @js.native
+  sealed trait Slash extends BinaryOperator
+  
+  @js.native
+  sealed trait SlashEqualssign extends AssignmentOperator
   
   @js.native
   sealed trait SpreadElement extends js.Object
@@ -294,6 +294,9 @@ object estreeStrings {
   sealed trait ThrowStatement extends js.Object
   
   @js.native
+  sealed trait Tilde extends UnaryOperator
+  
+  @js.native
   sealed trait TryStatement extends js.Object
   
   @js.native
@@ -309,6 +312,15 @@ object estreeStrings {
   sealed trait VariableDeclarator extends js.Object
   
   @js.native
+  sealed trait Verticalline extends BinaryOperator
+  
+  @js.native
+  sealed trait VerticallineEqualssign extends AssignmentOperator
+  
+  @js.native
+  sealed trait VerticallineVerticalline extends LogicalOperator
+  
+  @js.native
   sealed trait WhileStatement extends js.Object
   
   @js.native
@@ -318,10 +330,10 @@ object estreeStrings {
   sealed trait YieldExpression extends js.Object
   
   @js.native
-  sealed trait `^=` extends AssignmentOperator
+  sealed trait ^ extends BinaryOperator
   
   @js.native
-  sealed trait `_backtick^_backtick` extends BinaryOperator
+  sealed trait `^Equalssign` extends AssignmentOperator
   
   @js.native
   sealed trait const extends js.Object
@@ -368,84 +380,18 @@ object estreeStrings {
   @js.native
   sealed trait void extends UnaryOperator
   
-  @js.native
-  sealed trait `|` extends BinaryOperator
-  
-  @js.native
-  sealed trait `|=` extends AssignmentOperator
-  
-  @js.native
-  sealed trait `||` extends LogicalOperator
-  
-  @js.native
-  sealed trait `~` extends UnaryOperator
-  
-  @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
-  @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
-  @scala.inline
-  def `!==`: `!==` = "!==".asInstanceOf[`!==`]
-  @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
-  @scala.inline
-  def `%=`: `%=` = "%=".asInstanceOf[`%=`]
-  @scala.inline
-  def `&`: `&` = "&".asInstanceOf[`&`]
-  @scala.inline
-  def `&&`: `&&` = "&&".asInstanceOf[`&&`]
-  @scala.inline
-  def `&=`: `&=` = "&=".asInstanceOf[`&=`]
-  @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
-  def `**`: `**` = "**".asInstanceOf[`**`]
-  @scala.inline
-  def `**=`: `**=` = "**=".asInstanceOf[`**=`]
-  @scala.inline
-  def `*=`: `*=` = "*=".asInstanceOf[`*=`]
-  @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
-  @scala.inline
-  def `++`: `++` = "++".asInstanceOf[`++`]
-  @scala.inline
-  def `+=`: `+=` = "+=".asInstanceOf[`+=`]
-  @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
   @scala.inline
   def `--`: `--` = "--".asInstanceOf[`--`]
   @scala.inline
-  def `-=`: `-=` = "-=".asInstanceOf[`-=`]
+  def `-Equalssign`: `-Equalssign` = "-=".asInstanceOf[`-Equalssign`]
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `/=`: `/=` = "/=".asInstanceOf[`/=`]
+  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
   @scala.inline
-  def `<<`: `<<` = "<<".asInstanceOf[`<<`]
-  @scala.inline
-  def `<<=`: `<<=` = "<<=".asInstanceOf[`<<=`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
-  @scala.inline
-  def `===`: `===` = "===".asInstanceOf[`===`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
-  @scala.inline
-  def `>>`: `>>` = ">>".asInstanceOf[`>>`]
-  @scala.inline
-  def `>>=`: `>>=` = ">>=".asInstanceOf[`>>=`]
-  @scala.inline
-  def `>>>`: `>>>` = ">>>".asInstanceOf[`>>>`]
-  @scala.inline
-  def `>>>=`: `>>>=` = ">>>=".asInstanceOf[`>>>=`]
+  def AmpersandEqualssign: AmpersandEqualssign = "&=".asInstanceOf[AmpersandEqualssign]
   @scala.inline
   def ArrayExpression: ArrayExpression = "ArrayExpression".asInstanceOf[ArrayExpression]
   @scala.inline
@@ -456,6 +402,14 @@ object estreeStrings {
   def AssignmentExpression: AssignmentExpression = "AssignmentExpression".asInstanceOf[AssignmentExpression]
   @scala.inline
   def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  @scala.inline
+  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
+  @scala.inline
+  def AsteriskAsteriskEqualssign: AsteriskAsteriskEqualssign = "**=".asInstanceOf[AsteriskAsteriskEqualssign]
+  @scala.inline
+  def AsteriskEqualssign: AsteriskEqualssign = "*=".asInstanceOf[AsteriskEqualssign]
   @scala.inline
   def AwaitExpression: AwaitExpression = "AwaitExpression".asInstanceOf[AwaitExpression]
   @scala.inline
@@ -487,6 +441,18 @@ object estreeStrings {
   @scala.inline
   def EmptyStatement: EmptyStatement = "EmptyStatement".asInstanceOf[EmptyStatement]
   @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  @scala.inline
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  @scala.inline
+  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
+  @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  @scala.inline
+  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
+  @scala.inline
   def ExportAllDeclaration: ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[ExportAllDeclaration]
   @scala.inline
   def ExportDefaultDeclaration: ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[ExportDefaultDeclaration]
@@ -507,6 +473,18 @@ object estreeStrings {
   @scala.inline
   def FunctionExpression: FunctionExpression = "FunctionExpression".asInstanceOf[FunctionExpression]
   @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
+  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
+  @scala.inline
+  def GreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[GreaterthansignGreaterthansignEqualssign]
+  @scala.inline
+  def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
+  @scala.inline
+  def GreaterthansignGreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignGreaterthansignEqualssign = ">>>=".asInstanceOf[GreaterthansignGreaterthansignGreaterthansignEqualssign]
+  @scala.inline
   def Identifier: Identifier = "Identifier".asInstanceOf[Identifier]
   @scala.inline
   def IfStatement: IfStatement = "IfStatement".asInstanceOf[IfStatement]
@@ -520,6 +498,14 @@ object estreeStrings {
   def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
   @scala.inline
   def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  @scala.inline
+  def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
+  @scala.inline
+  def LessthansignLessthansignEqualssign: LessthansignLessthansignEqualssign = "<<=".asInstanceOf[LessthansignLessthansignEqualssign]
   @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
   @scala.inline
@@ -539,6 +525,16 @@ object estreeStrings {
   @scala.inline
   def ObjectPattern: ObjectPattern = "ObjectPattern".asInstanceOf[ObjectPattern]
   @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  @scala.inline
+  def PercentsignEqualssign: PercentsignEqualssign = "%=".asInstanceOf[PercentsignEqualssign]
+  @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  @scala.inline
+  def PlussignEqualssign: PlussignEqualssign = "+=".asInstanceOf[PlussignEqualssign]
+  @scala.inline
+  def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
+  @scala.inline
   def Program: Program = "Program".asInstanceOf[Program]
   @scala.inline
   def Property: Property = "Property".asInstanceOf[Property]
@@ -548,6 +544,10 @@ object estreeStrings {
   def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
   @scala.inline
   def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
+  @scala.inline
+  def Slash: Slash = "/".asInstanceOf[Slash]
+  @scala.inline
+  def SlashEqualssign: SlashEqualssign = "/=".asInstanceOf[SlashEqualssign]
   @scala.inline
   def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
   @scala.inline
@@ -567,6 +567,8 @@ object estreeStrings {
   @scala.inline
   def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
   @scala.inline
+  def Tilde: Tilde = "~".asInstanceOf[Tilde]
+  @scala.inline
   def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
   @scala.inline
   def UnaryExpression: UnaryExpression = "UnaryExpression".asInstanceOf[UnaryExpression]
@@ -577,15 +579,21 @@ object estreeStrings {
   @scala.inline
   def VariableDeclarator: VariableDeclarator = "VariableDeclarator".asInstanceOf[VariableDeclarator]
   @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
+  def VerticallineEqualssign: VerticallineEqualssign = "|=".asInstanceOf[VerticallineEqualssign]
+  @scala.inline
+  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
+  @scala.inline
   def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
   @scala.inline
   def WithStatement: WithStatement = "WithStatement".asInstanceOf[WithStatement]
   @scala.inline
   def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
   @scala.inline
-  def `^=`: `^=` = "^=".asInstanceOf[`^=`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def `^Equalssign`: `^Equalssign` = "^=".asInstanceOf[`^Equalssign`]
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline
@@ -616,13 +624,5 @@ object estreeStrings {
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
   def void: void = "void".asInstanceOf[void]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
-  @scala.inline
-  def `|=`: `|=` = "|=".asInstanceOf[`|=`]
-  @scala.inline
-  def `||`: `||` = "||".asInstanceOf[`||`]
-  @scala.inline
-  def `~`: `~` = "~".asInstanceOf[`~`]
 }
 

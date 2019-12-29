@@ -1,11 +1,6 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.ChangedOccurrence
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.DeletedOccurrence
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Normal
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Occurrence
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

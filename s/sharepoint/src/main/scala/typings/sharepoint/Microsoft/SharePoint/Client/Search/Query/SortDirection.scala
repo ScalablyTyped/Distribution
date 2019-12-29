@@ -1,9 +1,6 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.ascending
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.descending
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.fqlFormula
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

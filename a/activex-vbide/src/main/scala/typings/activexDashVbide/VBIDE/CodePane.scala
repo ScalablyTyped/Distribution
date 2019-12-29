@@ -14,7 +14,8 @@ class CodePane protected () extends js.Object {
   val CountOfVisibleLines: Double = js.native
   var TopLine: Double = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
-  var `VBIDE.CodePane_typekey`: CodePane = js.native
+  @JSName("VBIDE.CodePane_typekey")
+  var VBIDEDotCodePane_typekey: CodePane = js.native
   val Window: typings.activexDashVbide.VBIDE.Window = js.native
   def Collection(index: js.Any): CodePane = js.native
   def GetSelection(StartLine: Double, StartColumn: Double, EndLine: Double, EndColumn: Double): Unit = js.native

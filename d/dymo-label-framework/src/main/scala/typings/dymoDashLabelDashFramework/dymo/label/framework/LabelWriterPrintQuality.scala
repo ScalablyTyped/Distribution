@@ -1,9 +1,6 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.Auto
-import typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.BarcodeAndGraphics
-import typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

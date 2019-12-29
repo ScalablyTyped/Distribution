@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourceAccessStatus.allowed
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourceAccessStatus.deniedBySystem
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourceAccessStatus.deniedByUser
-import typings.winrtDashUwp.Windows.Devices.Perception.PerceptionFrameSourceAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

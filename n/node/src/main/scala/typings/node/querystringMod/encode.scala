@@ -14,10 +14,10 @@ object encode
   extends TopLevel[
       js.Function4[
         /* obj */ js.UndefOr[ParsedUrlQueryInput], 
-        /* sep */ js.UndefOr[java.lang.String], 
-        /* eq */ js.UndefOr[java.lang.String], 
+        /* sep */ js.UndefOr[String], 
+        /* eq */ js.UndefOr[String], 
         /* options */ js.UndefOr[StringifyOptions], 
-        java.lang.String
+        String
       ]
     ]
 

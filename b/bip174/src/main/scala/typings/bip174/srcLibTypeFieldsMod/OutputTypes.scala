@@ -1,9 +1,6 @@
 package typings.bip174.srcLibTypeFieldsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bip174.srcLibTypeFieldsMod.OutputTypes.BIP32_DERIVATION
-import typings.bip174.srcLibTypeFieldsMod.OutputTypes.REDEEM_SCRIPT
-import typings.bip174.srcLibTypeFieldsMod.OutputTypes.WITNESS_SCRIPT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

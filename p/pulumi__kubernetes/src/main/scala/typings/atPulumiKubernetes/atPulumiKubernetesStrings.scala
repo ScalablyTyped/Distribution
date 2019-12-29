@@ -330,34 +330,34 @@ object atPulumiKubernetesStrings {
   sealed trait addressType extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfiguration extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfigurationList extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfiguration extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfigurationList extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfiguration extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfigurationList extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfiguration extends js.Object
   
   @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList` extends js.Object
+  sealed trait admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfigurationList extends js.Object
   
   @js.native
   sealed trait aggregationRule extends js.Object
@@ -372,262 +372,262 @@ object atPulumiKubernetesStrings {
   sealed trait apiVersion extends js.Object
   
   @js.native
-  sealed trait `apiextensionsDOTk8sDOTio/v1` extends js.Object
+  sealed trait apiextensionsDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition` extends js.Object
+  sealed trait apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinition extends js.Object
   
   @js.native
-  sealed trait `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList` extends js.Object
+  sealed trait apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinitionList extends js.Object
   
   @js.native
-  sealed trait `apiextensionsDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait apiextensionsDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition` extends js.Object
+  sealed trait apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinition extends js.Object
   
   @js.native
-  sealed trait `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList` extends js.Object
+  sealed trait apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinitionList extends js.Object
   
   @js.native
-  sealed trait `apiregistration/v1/APIService` extends js.Object
+  sealed trait apiregistrationDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `apiregistration/v1/APIServiceList` extends js.Object
+  sealed trait apiregistrationDotk8sDotioSlashv1SlashAPIService extends js.Object
   
   @js.native
-  sealed trait `apiregistration/v1beta1/APIService` extends js.Object
+  sealed trait apiregistrationDotk8sDotioSlashv1SlashAPIServiceList extends js.Object
   
   @js.native
-  sealed trait `apiregistration/v1beta1/APIServiceList` extends js.Object
+  sealed trait apiregistrationDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `apiregistrationDOTk8sDOTio/v1` extends js.Object
+  sealed trait apiregistrationDotk8sDotioSlashv1beta1SlashAPIService extends js.Object
   
   @js.native
-  sealed trait `apiregistrationDOTk8sDOTio/v1/APIService` extends js.Object
+  sealed trait apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList extends js.Object
   
   @js.native
-  sealed trait `apiregistrationDOTk8sDOTio/v1/APIServiceList` extends js.Object
+  sealed trait apiregistrationSlashv1SlashAPIService extends js.Object
   
   @js.native
-  sealed trait `apiregistrationDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait apiregistrationSlashv1SlashAPIServiceList extends js.Object
   
   @js.native
-  sealed trait `apiregistrationDOTk8sDOTio/v1beta1/APIService` extends js.Object
+  sealed trait apiregistrationSlashv1beta1SlashAPIService extends js.Object
   
   @js.native
-  sealed trait `apiregistrationDOTk8sDOTio/v1beta1/APIServiceList` extends js.Object
+  sealed trait apiregistrationSlashv1beta1SlashAPIServiceList extends js.Object
   
   @js.native
-  sealed trait `apps/v1` extends js.Object
+  sealed trait appsSlashv1 extends js.Object
   
   @js.native
-  sealed trait `apps/v1/ControllerRevision` extends js.Object
+  sealed trait appsSlashv1SlashControllerRevision extends js.Object
   
   @js.native
-  sealed trait `apps/v1/ControllerRevisionList` extends js.Object
+  sealed trait appsSlashv1SlashControllerRevisionList extends js.Object
   
   @js.native
-  sealed trait `apps/v1/DaemonSet` extends js.Object
+  sealed trait appsSlashv1SlashDaemonSet extends js.Object
   
   @js.native
-  sealed trait `apps/v1/DaemonSetList` extends js.Object
+  sealed trait appsSlashv1SlashDaemonSetList extends js.Object
   
   @js.native
-  sealed trait `apps/v1/Deployment` extends js.Object
+  sealed trait appsSlashv1SlashDeployment extends js.Object
   
   @js.native
-  sealed trait `apps/v1/DeploymentList` extends js.Object
+  sealed trait appsSlashv1SlashDeploymentList extends js.Object
   
   @js.native
-  sealed trait `apps/v1/ReplicaSet` extends js.Object
+  sealed trait appsSlashv1SlashReplicaSet extends js.Object
   
   @js.native
-  sealed trait `apps/v1/ReplicaSetList` extends js.Object
+  sealed trait appsSlashv1SlashReplicaSetList extends js.Object
   
   @js.native
-  sealed trait `apps/v1/StatefulSet` extends js.Object
+  sealed trait appsSlashv1SlashStatefulSet extends js.Object
   
   @js.native
-  sealed trait `apps/v1/StatefulSetList` extends js.Object
+  sealed trait appsSlashv1SlashStatefulSetList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta1` extends js.Object
+  sealed trait appsSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta1/ControllerRevision` extends js.Object
+  sealed trait appsSlashv1beta1SlashControllerRevision extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta1/ControllerRevisionList` extends js.Object
+  sealed trait appsSlashv1beta1SlashControllerRevisionList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta1/Deployment` extends js.Object
+  sealed trait appsSlashv1beta1SlashDeployment extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta1/DeploymentList` extends js.Object
+  sealed trait appsSlashv1beta1SlashDeploymentList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta1/StatefulSet` extends js.Object
+  sealed trait appsSlashv1beta1SlashStatefulSet extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta1/StatefulSetList` extends js.Object
+  sealed trait appsSlashv1beta1SlashStatefulSetList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2` extends js.Object
+  sealed trait appsSlashv1beta2 extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/ControllerRevision` extends js.Object
+  sealed trait appsSlashv1beta2SlashControllerRevision extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/ControllerRevisionList` extends js.Object
+  sealed trait appsSlashv1beta2SlashControllerRevisionList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/DaemonSet` extends js.Object
+  sealed trait appsSlashv1beta2SlashDaemonSet extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/DaemonSetList` extends js.Object
+  sealed trait appsSlashv1beta2SlashDaemonSetList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/Deployment` extends js.Object
+  sealed trait appsSlashv1beta2SlashDeployment extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/DeploymentList` extends js.Object
+  sealed trait appsSlashv1beta2SlashDeploymentList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/ReplicaSet` extends js.Object
+  sealed trait appsSlashv1beta2SlashReplicaSet extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/ReplicaSetList` extends js.Object
+  sealed trait appsSlashv1beta2SlashReplicaSetList extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/StatefulSet` extends js.Object
+  sealed trait appsSlashv1beta2SlashStatefulSet extends js.Object
   
   @js.native
-  sealed trait `apps/v1beta2/StatefulSetList` extends js.Object
+  sealed trait appsSlashv1beta2SlashStatefulSetList extends js.Object
   
   @js.native
-  sealed trait `auditregistrationDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait auditregistrationDotk8sDotioSlashv1alpha1 extends js.Object
   
   @js.native
-  sealed trait `auditregistrationDOTk8sDOTio/v1alpha1/AuditSink` extends js.Object
+  sealed trait auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSink extends js.Object
   
   @js.native
-  sealed trait `auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList` extends js.Object
+  sealed trait auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSinkList extends js.Object
   
   @js.native
-  sealed trait `authenticationDOTk8sDOTio/v1` extends js.Object
+  sealed trait authenticationDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `authenticationDOTk8sDOTio/v1/TokenRequest` extends js.Object
+  sealed trait authenticationDotk8sDotioSlashv1SlashTokenRequest extends js.Object
   
   @js.native
-  sealed trait `authenticationDOTk8sDOTio/v1/TokenReview` extends js.Object
+  sealed trait authenticationDotk8sDotioSlashv1SlashTokenReview extends js.Object
   
   @js.native
-  sealed trait `authenticationDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait authenticationDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `authenticationDOTk8sDOTio/v1beta1/TokenReview` extends js.Object
+  sealed trait authenticationDotk8sDotioSlashv1beta1SlashTokenReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1SlashLocalSubjectAccessReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1SlashSelfSubjectAccessReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1SlashSelfSubjectRulesReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1/SubjectAccessReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1SlashSubjectAccessReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1beta1SlashLocalSubjectAccessReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectAccessReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectRulesReview extends js.Object
   
   @js.native
-  sealed trait `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview` extends js.Object
+  sealed trait authorizationDotk8sDotioSlashv1beta1SlashSubjectAccessReview extends js.Object
   
   @js.native
   sealed trait automountServiceAccountToken extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v1` extends js.Object
+  sealed trait autoscalingSlashv1 extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v1/HorizontalPodAutoscaler` extends js.Object
+  sealed trait autoscalingSlashv1SlashHorizontalPodAutoscaler extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v1/HorizontalPodAutoscalerList` extends js.Object
+  sealed trait autoscalingSlashv1SlashHorizontalPodAutoscalerList extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v2beta1` extends js.Object
+  sealed trait autoscalingSlashv2beta1 extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v2beta1/HorizontalPodAutoscaler` extends js.Object
+  sealed trait autoscalingSlashv2beta1SlashHorizontalPodAutoscaler extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v2beta1/HorizontalPodAutoscalerList` extends js.Object
+  sealed trait autoscalingSlashv2beta1SlashHorizontalPodAutoscalerList extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v2beta2` extends js.Object
+  sealed trait autoscalingSlashv2beta2 extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v2beta2/HorizontalPodAutoscaler` extends js.Object
+  sealed trait autoscalingSlashv2beta2SlashHorizontalPodAutoscaler extends js.Object
   
   @js.native
-  sealed trait `autoscaling/v2beta2/HorizontalPodAutoscalerList` extends js.Object
+  sealed trait autoscalingSlashv2beta2SlashHorizontalPodAutoscalerList extends js.Object
   
   @js.native
-  sealed trait `batch/v1` extends js.Object
+  sealed trait batchSlashv1 extends js.Object
   
   @js.native
-  sealed trait `batch/v1/Job` extends js.Object
+  sealed trait batchSlashv1SlashJob extends js.Object
   
   @js.native
-  sealed trait `batch/v1/JobList` extends js.Object
+  sealed trait batchSlashv1SlashJobList extends js.Object
   
   @js.native
-  sealed trait `batch/v1beta1` extends js.Object
+  sealed trait batchSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `batch/v1beta1/CronJob` extends js.Object
+  sealed trait batchSlashv1beta1SlashCronJob extends js.Object
   
   @js.native
-  sealed trait `batch/v1beta1/CronJobList` extends js.Object
+  sealed trait batchSlashv1beta1SlashCronJobList extends js.Object
   
   @js.native
-  sealed trait `batch/v2alpha1` extends js.Object
+  sealed trait batchSlashv2alpha1 extends js.Object
   
   @js.native
-  sealed trait `batch/v2alpha1/CronJob` extends js.Object
+  sealed trait batchSlashv2alpha1SlashCronJob extends js.Object
   
   @js.native
-  sealed trait `batch/v2alpha1/CronJobList` extends js.Object
+  sealed trait batchSlashv2alpha1SlashCronJobList extends js.Object
   
   @js.native
   sealed trait binaryData extends js.Object
   
   @js.native
-  sealed trait `certificatesDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait certificatesDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest` extends js.Object
+  sealed trait certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequest extends js.Object
   
   @js.native
-  sealed trait `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList` extends js.Object
+  sealed trait certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequestList extends js.Object
   
   @js.native
   sealed trait code extends js.Object
@@ -636,22 +636,22 @@ object atPulumiKubernetesStrings {
   sealed trait conditions extends js.Object
   
   @js.native
-  sealed trait `coordinationDOTk8sDOTio/v1` extends js.Object
+  sealed trait coordinationDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `coordinationDOTk8sDOTio/v1/Lease` extends js.Object
+  sealed trait coordinationDotk8sDotioSlashv1SlashLease extends js.Object
   
   @js.native
-  sealed trait `coordinationDOTk8sDOTio/v1/LeaseList` extends js.Object
+  sealed trait coordinationDotk8sDotioSlashv1SlashLeaseList extends js.Object
   
   @js.native
-  sealed trait `coordinationDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait coordinationDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `coordinationDOTk8sDOTio/v1beta1/Lease` extends js.Object
+  sealed trait coordinationDotk8sDotioSlashv1beta1SlashLease extends js.Object
   
   @js.native
-  sealed trait `coordinationDOTk8sDOTio/v1beta1/LeaseList` extends js.Object
+  sealed trait coordinationDotk8sDotioSlashv1beta1SlashLeaseList extends js.Object
   
   @js.native
   sealed trait count extends js.Object
@@ -678,13 +678,13 @@ object atPulumiKubernetesStrings {
   sealed trait details extends js.Object
   
   @js.native
-  sealed trait `discoveryDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait discoveryDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `discoveryDOTk8sDOTio/v1beta1/EndpointSlice` extends js.Object
+  sealed trait discoveryDotk8sDotioSlashv1beta1SlashEndpointSlice extends js.Object
   
   @js.native
-  sealed trait `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList` extends js.Object
+  sealed trait discoveryDotk8sDotioSlashv1beta1SlashEndpointSliceList extends js.Object
   
   @js.native
   sealed trait endpoints_ extends js.Object
@@ -693,70 +693,70 @@ object atPulumiKubernetesStrings {
   sealed trait eventTime extends js.Object
   
   @js.native
-  sealed trait `eventsDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait eventsDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `eventsDOTk8sDOTio/v1beta1/Event` extends js.Object
+  sealed trait eventsDotk8sDotioSlashv1beta1SlashEvent extends js.Object
   
   @js.native
-  sealed trait `eventsDOTk8sDOTio/v1beta1/EventList` extends js.Object
+  sealed trait eventsDotk8sDotioSlashv1beta1SlashEventList extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1` extends js.Object
+  sealed trait extensionsSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/DaemonSet` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashDaemonSet extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/DaemonSetList` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashDaemonSetList extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/Deployment` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashDeployment extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/DeploymentList` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashDeploymentList extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/Ingress` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashIngress extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/IngressList` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashIngressList extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/NetworkPolicy` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashNetworkPolicy extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/NetworkPolicyList` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashNetworkPolicyList extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/PodSecurityPolicy` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashPodSecurityPolicy extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/PodSecurityPolicyList` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashPodSecurityPolicyList extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/ReplicaSet` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashReplicaSet extends js.Object
   
   @js.native
-  sealed trait `extensions/v1beta1/ReplicaSetList` extends js.Object
+  sealed trait extensionsSlashv1beta1SlashReplicaSetList extends js.Object
   
   @js.native
   sealed trait firstTimestamp extends js.Object
   
   @js.native
-  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait flowcontrolDotapiserverDotk8sDotioSlashv1alpha1 extends js.Object
   
   @js.native
-  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema` extends js.Object
+  sealed trait flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchema extends js.Object
   
   @js.native
-  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList` extends js.Object
+  sealed trait flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchemaList extends js.Object
   
   @js.native
-  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration` extends js.Object
+  sealed trait flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfiguration extends js.Object
   
   @js.native
-  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList` extends js.Object
+  sealed trait flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfigurationList extends js.Object
   
   @js.native
   sealed trait globalDefault extends js.Object
@@ -789,40 +789,40 @@ object atPulumiKubernetesStrings {
   sealed trait mountOptions extends js.Object
   
   @js.native
-  sealed trait `networkingDOTk8sDOTio/v1` extends js.Object
+  sealed trait networkingDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `networkingDOTk8sDOTio/v1/NetworkPolicy` extends js.Object
+  sealed trait networkingDotk8sDotioSlashv1SlashNetworkPolicy extends js.Object
   
   @js.native
-  sealed trait `networkingDOTk8sDOTio/v1/NetworkPolicyList` extends js.Object
+  sealed trait networkingDotk8sDotioSlashv1SlashNetworkPolicyList extends js.Object
   
   @js.native
-  sealed trait `networkingDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait networkingDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `networkingDOTk8sDOTio/v1beta1/Ingress` extends js.Object
+  sealed trait networkingDotk8sDotioSlashv1beta1SlashIngress extends js.Object
   
   @js.native
-  sealed trait `networkingDOTk8sDOTio/v1beta1/IngressList` extends js.Object
+  sealed trait networkingDotk8sDotioSlashv1beta1SlashIngressList extends js.Object
   
   @js.native
-  sealed trait `nodeDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait nodeDotk8sDotioSlashv1alpha1 extends js.Object
   
   @js.native
-  sealed trait `nodeDOTk8sDOTio/v1alpha1/RuntimeClass` extends js.Object
+  sealed trait nodeDotk8sDotioSlashv1alpha1SlashRuntimeClass extends js.Object
   
   @js.native
-  sealed trait `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList` extends js.Object
+  sealed trait nodeDotk8sDotioSlashv1alpha1SlashRuntimeClassList extends js.Object
   
   @js.native
-  sealed trait `nodeDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait nodeDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `nodeDOTk8sDOTio/v1beta1/RuntimeClass` extends js.Object
+  sealed trait nodeDotk8sDotioSlashv1beta1SlashRuntimeClass extends js.Object
   
   @js.native
-  sealed trait `nodeDOTk8sDOTio/v1beta1/RuntimeClassList` extends js.Object
+  sealed trait nodeDotk8sDotioSlashv1beta1SlashRuntimeClassList extends js.Object
   
   @js.native
   sealed trait note extends js.Object
@@ -834,19 +834,19 @@ object atPulumiKubernetesStrings {
   sealed trait parameters extends js.Object
   
   @js.native
-  sealed trait `policy/v1beta1` extends js.Object
+  sealed trait policySlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `policy/v1beta1/PodDisruptionBudget` extends js.Object
+  sealed trait policySlashv1beta1SlashPodDisruptionBudget extends js.Object
   
   @js.native
-  sealed trait `policy/v1beta1/PodDisruptionBudgetList` extends js.Object
+  sealed trait policySlashv1beta1SlashPodDisruptionBudgetList extends js.Object
   
   @js.native
-  sealed trait `policy/v1beta1/PodSecurityPolicy` extends js.Object
+  sealed trait policySlashv1beta1SlashPodSecurityPolicy extends js.Object
   
   @js.native
-  sealed trait `policy/v1beta1/PodSecurityPolicyList` extends js.Object
+  sealed trait policySlashv1beta1SlashPodSecurityPolicyList extends js.Object
   
   @js.native
   sealed trait ports extends js.Object
@@ -858,85 +858,85 @@ object atPulumiKubernetesStrings {
   sealed trait provisioner extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRole extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBinding extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBindingList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/Role` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashRole extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBinding extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBindingList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1/RoleList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1SlashRoleList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1 extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRole extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBinding extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBindingList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRole extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBinding extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBindingList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRole extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBinding extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBindingList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRole extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBinding extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBindingList extends js.Object
   
   @js.native
-  sealed trait `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList` extends js.Object
+  sealed trait rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleList extends js.Object
   
   @js.native
   sealed trait reason extends js.Object
@@ -972,31 +972,31 @@ object atPulumiKubernetesStrings {
   sealed trait scheduling extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1/PriorityClass` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1SlashPriorityClass extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1/PriorityClassList` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1SlashPriorityClassList extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1alpha1 extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1alpha1/PriorityClass` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1alpha1SlashPriorityClass extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1alpha1/PriorityClassList` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1alpha1SlashPriorityClassList extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1beta1/PriorityClass` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1beta1SlashPriorityClass extends js.Object
   
   @js.native
-  sealed trait `schedulingDOTk8sDOTio/v1beta1/PriorityClassList` extends js.Object
+  sealed trait schedulingDotk8sDotioSlashv1beta1SlashPriorityClassList extends js.Object
   
   @js.native
   sealed trait secrets extends js.Object
@@ -1005,13 +1005,13 @@ object atPulumiKubernetesStrings {
   sealed trait series extends js.Object
   
   @js.native
-  sealed trait `settingsDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait settingsDotk8sDotioSlashv1alpha1 extends js.Object
   
   @js.native
-  sealed trait `settingsDOTk8sDOTio/v1alpha1/PodPreset` extends js.Object
+  sealed trait settingsDotk8sDotioSlashv1alpha1SlashPodPreset extends js.Object
   
   @js.native
-  sealed trait `settingsDOTk8sDOTio/v1alpha1/PodPresetList` extends js.Object
+  sealed trait settingsDotk8sDotioSlashv1alpha1SlashPodPresetList extends js.Object
   
   @js.native
   sealed trait source extends js.Object
@@ -1023,61 +1023,61 @@ object atPulumiKubernetesStrings {
   sealed trait status_ extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1 extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1/CSINode` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1SlashCSINode extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1/CSINodeList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1SlashCSINodeList extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1/StorageClass` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1SlashStorageClass extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1/StorageClassList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1SlashStorageClassList extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1/VolumeAttachment` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1SlashVolumeAttachment extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1/VolumeAttachmentList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1SlashVolumeAttachmentList extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1alpha1 extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1alpha1/VolumeAttachment` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1alpha1SlashVolumeAttachment extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1alpha1SlashVolumeAttachmentList extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1 extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/CSIDriver` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashCSIDriver extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/CSIDriverList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashCSIDriverList extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/CSINode` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashCSINode extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/CSINodeList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashCSINodeList extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/StorageClass` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashStorageClass extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/StorageClassList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashStorageClassList extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/VolumeAttachment` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashVolumeAttachment extends js.Object
   
   @js.native
-  sealed trait `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList` extends js.Object
+  sealed trait storageDotk8sDotioSlashv1beta1SlashVolumeAttachmentList extends js.Object
   
   @js.native
   sealed trait stringData extends js.Object
@@ -1101,106 +1101,106 @@ object atPulumiKubernetesStrings {
   sealed trait v1 extends js.Object
   
   @js.native
-  sealed trait `v1/Binding` extends js.Object
+  sealed trait v1SlashBinding extends js.Object
   
   @js.native
-  sealed trait `v1/ComponentStatus` extends js.Object
+  sealed trait v1SlashComponentStatus extends js.Object
   
   @js.native
-  sealed trait `v1/ComponentStatusList` extends js.Object
+  sealed trait v1SlashComponentStatusList extends js.Object
   
   @js.native
-  sealed trait `v1/ConfigMap` extends js.Object
+  sealed trait v1SlashConfigMap extends js.Object
   
   @js.native
-  sealed trait `v1/ConfigMapList` extends js.Object
+  sealed trait v1SlashConfigMapList extends js.Object
   
   @js.native
-  sealed trait `v1/Endpoints` extends js.Object
+  sealed trait v1SlashEndpoints extends js.Object
   
   @js.native
-  sealed trait `v1/EndpointsList` extends js.Object
+  sealed trait v1SlashEndpointsList extends js.Object
   
   @js.native
-  sealed trait `v1/Event` extends js.Object
+  sealed trait v1SlashEvent extends js.Object
   
   @js.native
-  sealed trait `v1/EventList` extends js.Object
+  sealed trait v1SlashEventList extends js.Object
   
   @js.native
-  sealed trait `v1/LimitRange` extends js.Object
+  sealed trait v1SlashLimitRange extends js.Object
   
   @js.native
-  sealed trait `v1/LimitRangeList` extends js.Object
+  sealed trait v1SlashLimitRangeList extends js.Object
   
   @js.native
-  sealed trait `v1/Namespace` extends js.Object
+  sealed trait v1SlashNamespace extends js.Object
   
   @js.native
-  sealed trait `v1/NamespaceList` extends js.Object
+  sealed trait v1SlashNamespaceList extends js.Object
   
   @js.native
-  sealed trait `v1/Node` extends js.Object
+  sealed trait v1SlashNode extends js.Object
   
   @js.native
-  sealed trait `v1/NodeList` extends js.Object
+  sealed trait v1SlashNodeList extends js.Object
   
   @js.native
-  sealed trait `v1/PersistentVolume` extends js.Object
+  sealed trait v1SlashPersistentVolume extends js.Object
   
   @js.native
-  sealed trait `v1/PersistentVolumeClaim` extends js.Object
+  sealed trait v1SlashPersistentVolumeClaim extends js.Object
   
   @js.native
-  sealed trait `v1/PersistentVolumeClaimList` extends js.Object
+  sealed trait v1SlashPersistentVolumeClaimList extends js.Object
   
   @js.native
-  sealed trait `v1/PersistentVolumeList` extends js.Object
+  sealed trait v1SlashPersistentVolumeList extends js.Object
   
   @js.native
-  sealed trait `v1/Pod` extends js.Object
+  sealed trait v1SlashPod extends js.Object
   
   @js.native
-  sealed trait `v1/PodList` extends js.Object
+  sealed trait v1SlashPodList extends js.Object
   
   @js.native
-  sealed trait `v1/PodTemplate` extends js.Object
+  sealed trait v1SlashPodTemplate extends js.Object
   
   @js.native
-  sealed trait `v1/PodTemplateList` extends js.Object
+  sealed trait v1SlashPodTemplateList extends js.Object
   
   @js.native
-  sealed trait `v1/ReplicationController` extends js.Object
+  sealed trait v1SlashReplicationController extends js.Object
   
   @js.native
-  sealed trait `v1/ReplicationControllerList` extends js.Object
+  sealed trait v1SlashReplicationControllerList extends js.Object
   
   @js.native
-  sealed trait `v1/ResourceQuota` extends js.Object
+  sealed trait v1SlashResourceQuota extends js.Object
   
   @js.native
-  sealed trait `v1/ResourceQuotaList` extends js.Object
+  sealed trait v1SlashResourceQuotaList extends js.Object
   
   @js.native
-  sealed trait `v1/Secret` extends js.Object
+  sealed trait v1SlashSecret extends js.Object
   
   @js.native
-  sealed trait `v1/SecretList` extends js.Object
+  sealed trait v1SlashSecretList extends js.Object
   
   @js.native
-  sealed trait `v1/Service` extends js.Object
+  sealed trait v1SlashService extends js.Object
   
   @js.native
-  sealed trait `v1/ServiceAccount` extends js.Object
+  sealed trait v1SlashServiceAccount extends js.Object
   
   @js.native
-  sealed trait `v1/ServiceAccountList` extends js.Object
+  sealed trait v1SlashServiceAccountList extends js.Object
   
   @js.native
-  sealed trait `v1/ServiceList` extends js.Object
+  sealed trait v1SlashServiceList extends js.Object
   
   @js.native
-  sealed trait `v1/Status` extends js.Object
+  sealed trait v1SlashStatus extends js.Object
   
   @js.native
   sealed trait value extends js.Object
@@ -1428,25 +1428,25 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def addressType: addressType = "addressType".asInstanceOf[addressType]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1`: `admissionregistrationDOTk8sDOTio/v1` = "admissionregistration.k8s.io/v1".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1`]
+  def admissionregistrationDotk8sDotioSlashv1: admissionregistrationDotk8sDotioSlashv1 = "admissionregistration.k8s.io/v1".asInstanceOf[admissionregistrationDotk8sDotioSlashv1]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration` = "admissionregistration.k8s.io/v1/MutatingWebhookConfiguration".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfiguration`]
+  def admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfiguration: admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfiguration = "admissionregistration.k8s.io/v1/MutatingWebhookConfiguration".asInstanceOf[admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfiguration]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`: `admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList` = "admissionregistration.k8s.io/v1/MutatingWebhookConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/MutatingWebhookConfigurationList`]
+  def admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfigurationList: admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfigurationList = "admissionregistration.k8s.io/v1/MutatingWebhookConfigurationList".asInstanceOf[admissionregistrationDotk8sDotioSlashv1SlashMutatingWebhookConfigurationList]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration` = "admissionregistration.k8s.io/v1/ValidatingWebhookConfiguration".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfiguration`]
+  def admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfiguration: admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfiguration = "admissionregistration.k8s.io/v1/ValidatingWebhookConfiguration".asInstanceOf[admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfiguration]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`: `admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList` = "admissionregistration.k8s.io/v1/ValidatingWebhookConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1/ValidatingWebhookConfigurationList`]
+  def admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfigurationList: admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfigurationList = "admissionregistration.k8s.io/v1/ValidatingWebhookConfigurationList".asInstanceOf[admissionregistrationDotk8sDotioSlashv1SlashValidatingWebhookConfigurationList]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1beta1`: `admissionregistrationDOTk8sDOTio/v1beta1` = "admissionregistration.k8s.io/v1beta1".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1`]
+  def admissionregistrationDotk8sDotioSlashv1beta1: admissionregistrationDotk8sDotioSlashv1beta1 = "admissionregistration.k8s.io/v1beta1".asInstanceOf[admissionregistrationDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration` = "admissionregistration.k8s.io/v1beta1/MutatingWebhookConfiguration".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`]
+  def admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfiguration: admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfiguration = "admissionregistration.k8s.io/v1beta1/MutatingWebhookConfiguration".asInstanceOf[admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfiguration]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`: `admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList` = "admissionregistration.k8s.io/v1beta1/MutatingWebhookConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`]
+  def admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfigurationList: admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfigurationList = "admissionregistration.k8s.io/v1beta1/MutatingWebhookConfigurationList".asInstanceOf[admissionregistrationDotk8sDotioSlashv1beta1SlashMutatingWebhookConfigurationList]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration` = "admissionregistration.k8s.io/v1beta1/ValidatingWebhookConfiguration".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`]
+  def admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfiguration: admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfiguration = "admissionregistration.k8s.io/v1beta1/ValidatingWebhookConfiguration".asInstanceOf[admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfiguration]
   @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList` = "admissionregistration.k8s.io/v1beta1/ValidatingWebhookConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`]
+  def admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfigurationList: admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfigurationList = "admissionregistration.k8s.io/v1beta1/ValidatingWebhookConfigurationList".asInstanceOf[admissionregistrationDotk8sDotioSlashv1beta1SlashValidatingWebhookConfigurationList]
   @scala.inline
   def aggregationRule: aggregationRule = "aggregationRule".asInstanceOf[aggregationRule]
   @scala.inline
@@ -1456,193 +1456,193 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def apiVersion: apiVersion = "apiVersion".asInstanceOf[apiVersion]
   @scala.inline
-  def `apiextensionsDOTk8sDOTio/v1`: `apiextensionsDOTk8sDOTio/v1` = "apiextensions.k8s.io/v1".asInstanceOf[`apiextensionsDOTk8sDOTio/v1`]
+  def apiextensionsDotk8sDotioSlashv1: apiextensionsDotk8sDotioSlashv1 = "apiextensions.k8s.io/v1".asInstanceOf[apiextensionsDotk8sDotioSlashv1]
   @scala.inline
-  def `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition` = "apiextensions.k8s.io/v1/CustomResourceDefinition".asInstanceOf[`apiextensionsDOTk8sDOTio/v1/CustomResourceDefinition`]
+  def apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinition: apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinition = "apiextensions.k8s.io/v1/CustomResourceDefinition".asInstanceOf[apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinition]
   @scala.inline
-  def `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`: `apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList` = "apiextensions.k8s.io/v1/CustomResourceDefinitionList".asInstanceOf[`apiextensionsDOTk8sDOTio/v1/CustomResourceDefinitionList`]
+  def apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinitionList: apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinitionList = "apiextensions.k8s.io/v1/CustomResourceDefinitionList".asInstanceOf[apiextensionsDotk8sDotioSlashv1SlashCustomResourceDefinitionList]
   @scala.inline
-  def `apiextensionsDOTk8sDOTio/v1beta1`: `apiextensionsDOTk8sDOTio/v1beta1` = "apiextensions.k8s.io/v1beta1".asInstanceOf[`apiextensionsDOTk8sDOTio/v1beta1`]
+  def apiextensionsDotk8sDotioSlashv1beta1: apiextensionsDotk8sDotioSlashv1beta1 = "apiextensions.k8s.io/v1beta1".asInstanceOf[apiextensionsDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition` = "apiextensions.k8s.io/v1beta1/CustomResourceDefinition".asInstanceOf[`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`]
+  def apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinition: apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinition = "apiextensions.k8s.io/v1beta1/CustomResourceDefinition".asInstanceOf[apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinition]
   @scala.inline
-  def `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`: `apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList` = "apiextensions.k8s.io/v1beta1/CustomResourceDefinitionList".asInstanceOf[`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`]
+  def apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinitionList: apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinitionList = "apiextensions.k8s.io/v1beta1/CustomResourceDefinitionList".asInstanceOf[apiextensionsDotk8sDotioSlashv1beta1SlashCustomResourceDefinitionList]
   @scala.inline
-  def `apiregistration/v1/APIService`: `apiregistration/v1/APIService` = "apiregistration/v1/APIService".asInstanceOf[`apiregistration/v1/APIService`]
+  def apiregistrationDotk8sDotioSlashv1: apiregistrationDotk8sDotioSlashv1 = "apiregistration.k8s.io/v1".asInstanceOf[apiregistrationDotk8sDotioSlashv1]
   @scala.inline
-  def `apiregistration/v1/APIServiceList`: `apiregistration/v1/APIServiceList` = "apiregistration/v1/APIServiceList".asInstanceOf[`apiregistration/v1/APIServiceList`]
+  def apiregistrationDotk8sDotioSlashv1SlashAPIService: apiregistrationDotk8sDotioSlashv1SlashAPIService = "apiregistration.k8s.io/v1/APIService".asInstanceOf[apiregistrationDotk8sDotioSlashv1SlashAPIService]
   @scala.inline
-  def `apiregistration/v1beta1/APIService`: `apiregistration/v1beta1/APIService` = "apiregistration/v1beta1/APIService".asInstanceOf[`apiregistration/v1beta1/APIService`]
+  def apiregistrationDotk8sDotioSlashv1SlashAPIServiceList: apiregistrationDotk8sDotioSlashv1SlashAPIServiceList = "apiregistration.k8s.io/v1/APIServiceList".asInstanceOf[apiregistrationDotk8sDotioSlashv1SlashAPIServiceList]
   @scala.inline
-  def `apiregistration/v1beta1/APIServiceList`: `apiregistration/v1beta1/APIServiceList` = "apiregistration/v1beta1/APIServiceList".asInstanceOf[`apiregistration/v1beta1/APIServiceList`]
+  def apiregistrationDotk8sDotioSlashv1beta1: apiregistrationDotk8sDotioSlashv1beta1 = "apiregistration.k8s.io/v1beta1".asInstanceOf[apiregistrationDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `apiregistrationDOTk8sDOTio/v1`: `apiregistrationDOTk8sDOTio/v1` = "apiregistration.k8s.io/v1".asInstanceOf[`apiregistrationDOTk8sDOTio/v1`]
+  def apiregistrationDotk8sDotioSlashv1beta1SlashAPIService: apiregistrationDotk8sDotioSlashv1beta1SlashAPIService = "apiregistration.k8s.io/v1beta1/APIService".asInstanceOf[apiregistrationDotk8sDotioSlashv1beta1SlashAPIService]
   @scala.inline
-  def `apiregistrationDOTk8sDOTio/v1/APIService`: `apiregistrationDOTk8sDOTio/v1/APIService` = "apiregistration.k8s.io/v1/APIService".asInstanceOf[`apiregistrationDOTk8sDOTio/v1/APIService`]
+  def apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList: apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList = "apiregistration.k8s.io/v1beta1/APIServiceList".asInstanceOf[apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList]
   @scala.inline
-  def `apiregistrationDOTk8sDOTio/v1/APIServiceList`: `apiregistrationDOTk8sDOTio/v1/APIServiceList` = "apiregistration.k8s.io/v1/APIServiceList".asInstanceOf[`apiregistrationDOTk8sDOTio/v1/APIServiceList`]
+  def apiregistrationSlashv1SlashAPIService: apiregistrationSlashv1SlashAPIService = "apiregistration/v1/APIService".asInstanceOf[apiregistrationSlashv1SlashAPIService]
   @scala.inline
-  def `apiregistrationDOTk8sDOTio/v1beta1`: `apiregistrationDOTk8sDOTio/v1beta1` = "apiregistration.k8s.io/v1beta1".asInstanceOf[`apiregistrationDOTk8sDOTio/v1beta1`]
+  def apiregistrationSlashv1SlashAPIServiceList: apiregistrationSlashv1SlashAPIServiceList = "apiregistration/v1/APIServiceList".asInstanceOf[apiregistrationSlashv1SlashAPIServiceList]
   @scala.inline
-  def `apiregistrationDOTk8sDOTio/v1beta1/APIService`: `apiregistrationDOTk8sDOTio/v1beta1/APIService` = "apiregistration.k8s.io/v1beta1/APIService".asInstanceOf[`apiregistrationDOTk8sDOTio/v1beta1/APIService`]
+  def apiregistrationSlashv1beta1SlashAPIService: apiregistrationSlashv1beta1SlashAPIService = "apiregistration/v1beta1/APIService".asInstanceOf[apiregistrationSlashv1beta1SlashAPIService]
   @scala.inline
-  def `apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`: `apiregistrationDOTk8sDOTio/v1beta1/APIServiceList` = "apiregistration.k8s.io/v1beta1/APIServiceList".asInstanceOf[`apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`]
+  def apiregistrationSlashv1beta1SlashAPIServiceList: apiregistrationSlashv1beta1SlashAPIServiceList = "apiregistration/v1beta1/APIServiceList".asInstanceOf[apiregistrationSlashv1beta1SlashAPIServiceList]
   @scala.inline
-  def `apps/v1`: `apps/v1` = "apps/v1".asInstanceOf[`apps/v1`]
+  def appsSlashv1: appsSlashv1 = "apps/v1".asInstanceOf[appsSlashv1]
   @scala.inline
-  def `apps/v1/ControllerRevision`: `apps/v1/ControllerRevision` = "apps/v1/ControllerRevision".asInstanceOf[`apps/v1/ControllerRevision`]
+  def appsSlashv1SlashControllerRevision: appsSlashv1SlashControllerRevision = "apps/v1/ControllerRevision".asInstanceOf[appsSlashv1SlashControllerRevision]
   @scala.inline
-  def `apps/v1/ControllerRevisionList`: `apps/v1/ControllerRevisionList` = "apps/v1/ControllerRevisionList".asInstanceOf[`apps/v1/ControllerRevisionList`]
+  def appsSlashv1SlashControllerRevisionList: appsSlashv1SlashControllerRevisionList = "apps/v1/ControllerRevisionList".asInstanceOf[appsSlashv1SlashControllerRevisionList]
   @scala.inline
-  def `apps/v1/DaemonSet`: `apps/v1/DaemonSet` = "apps/v1/DaemonSet".asInstanceOf[`apps/v1/DaemonSet`]
+  def appsSlashv1SlashDaemonSet: appsSlashv1SlashDaemonSet = "apps/v1/DaemonSet".asInstanceOf[appsSlashv1SlashDaemonSet]
   @scala.inline
-  def `apps/v1/DaemonSetList`: `apps/v1/DaemonSetList` = "apps/v1/DaemonSetList".asInstanceOf[`apps/v1/DaemonSetList`]
+  def appsSlashv1SlashDaemonSetList: appsSlashv1SlashDaemonSetList = "apps/v1/DaemonSetList".asInstanceOf[appsSlashv1SlashDaemonSetList]
   @scala.inline
-  def `apps/v1/Deployment`: `apps/v1/Deployment` = "apps/v1/Deployment".asInstanceOf[`apps/v1/Deployment`]
+  def appsSlashv1SlashDeployment: appsSlashv1SlashDeployment = "apps/v1/Deployment".asInstanceOf[appsSlashv1SlashDeployment]
   @scala.inline
-  def `apps/v1/DeploymentList`: `apps/v1/DeploymentList` = "apps/v1/DeploymentList".asInstanceOf[`apps/v1/DeploymentList`]
+  def appsSlashv1SlashDeploymentList: appsSlashv1SlashDeploymentList = "apps/v1/DeploymentList".asInstanceOf[appsSlashv1SlashDeploymentList]
   @scala.inline
-  def `apps/v1/ReplicaSet`: `apps/v1/ReplicaSet` = "apps/v1/ReplicaSet".asInstanceOf[`apps/v1/ReplicaSet`]
+  def appsSlashv1SlashReplicaSet: appsSlashv1SlashReplicaSet = "apps/v1/ReplicaSet".asInstanceOf[appsSlashv1SlashReplicaSet]
   @scala.inline
-  def `apps/v1/ReplicaSetList`: `apps/v1/ReplicaSetList` = "apps/v1/ReplicaSetList".asInstanceOf[`apps/v1/ReplicaSetList`]
+  def appsSlashv1SlashReplicaSetList: appsSlashv1SlashReplicaSetList = "apps/v1/ReplicaSetList".asInstanceOf[appsSlashv1SlashReplicaSetList]
   @scala.inline
-  def `apps/v1/StatefulSet`: `apps/v1/StatefulSet` = "apps/v1/StatefulSet".asInstanceOf[`apps/v1/StatefulSet`]
+  def appsSlashv1SlashStatefulSet: appsSlashv1SlashStatefulSet = "apps/v1/StatefulSet".asInstanceOf[appsSlashv1SlashStatefulSet]
   @scala.inline
-  def `apps/v1/StatefulSetList`: `apps/v1/StatefulSetList` = "apps/v1/StatefulSetList".asInstanceOf[`apps/v1/StatefulSetList`]
+  def appsSlashv1SlashStatefulSetList: appsSlashv1SlashStatefulSetList = "apps/v1/StatefulSetList".asInstanceOf[appsSlashv1SlashStatefulSetList]
   @scala.inline
-  def `apps/v1beta1`: `apps/v1beta1` = "apps/v1beta1".asInstanceOf[`apps/v1beta1`]
+  def appsSlashv1beta1: appsSlashv1beta1 = "apps/v1beta1".asInstanceOf[appsSlashv1beta1]
   @scala.inline
-  def `apps/v1beta1/ControllerRevision`: `apps/v1beta1/ControllerRevision` = "apps/v1beta1/ControllerRevision".asInstanceOf[`apps/v1beta1/ControllerRevision`]
+  def appsSlashv1beta1SlashControllerRevision: appsSlashv1beta1SlashControllerRevision = "apps/v1beta1/ControllerRevision".asInstanceOf[appsSlashv1beta1SlashControllerRevision]
   @scala.inline
-  def `apps/v1beta1/ControllerRevisionList`: `apps/v1beta1/ControllerRevisionList` = "apps/v1beta1/ControllerRevisionList".asInstanceOf[`apps/v1beta1/ControllerRevisionList`]
+  def appsSlashv1beta1SlashControllerRevisionList: appsSlashv1beta1SlashControllerRevisionList = "apps/v1beta1/ControllerRevisionList".asInstanceOf[appsSlashv1beta1SlashControllerRevisionList]
   @scala.inline
-  def `apps/v1beta1/Deployment`: `apps/v1beta1/Deployment` = "apps/v1beta1/Deployment".asInstanceOf[`apps/v1beta1/Deployment`]
+  def appsSlashv1beta1SlashDeployment: appsSlashv1beta1SlashDeployment = "apps/v1beta1/Deployment".asInstanceOf[appsSlashv1beta1SlashDeployment]
   @scala.inline
-  def `apps/v1beta1/DeploymentList`: `apps/v1beta1/DeploymentList` = "apps/v1beta1/DeploymentList".asInstanceOf[`apps/v1beta1/DeploymentList`]
+  def appsSlashv1beta1SlashDeploymentList: appsSlashv1beta1SlashDeploymentList = "apps/v1beta1/DeploymentList".asInstanceOf[appsSlashv1beta1SlashDeploymentList]
   @scala.inline
-  def `apps/v1beta1/StatefulSet`: `apps/v1beta1/StatefulSet` = "apps/v1beta1/StatefulSet".asInstanceOf[`apps/v1beta1/StatefulSet`]
+  def appsSlashv1beta1SlashStatefulSet: appsSlashv1beta1SlashStatefulSet = "apps/v1beta1/StatefulSet".asInstanceOf[appsSlashv1beta1SlashStatefulSet]
   @scala.inline
-  def `apps/v1beta1/StatefulSetList`: `apps/v1beta1/StatefulSetList` = "apps/v1beta1/StatefulSetList".asInstanceOf[`apps/v1beta1/StatefulSetList`]
+  def appsSlashv1beta1SlashStatefulSetList: appsSlashv1beta1SlashStatefulSetList = "apps/v1beta1/StatefulSetList".asInstanceOf[appsSlashv1beta1SlashStatefulSetList]
   @scala.inline
-  def `apps/v1beta2`: `apps/v1beta2` = "apps/v1beta2".asInstanceOf[`apps/v1beta2`]
+  def appsSlashv1beta2: appsSlashv1beta2 = "apps/v1beta2".asInstanceOf[appsSlashv1beta2]
   @scala.inline
-  def `apps/v1beta2/ControllerRevision`: `apps/v1beta2/ControllerRevision` = "apps/v1beta2/ControllerRevision".asInstanceOf[`apps/v1beta2/ControllerRevision`]
+  def appsSlashv1beta2SlashControllerRevision: appsSlashv1beta2SlashControllerRevision = "apps/v1beta2/ControllerRevision".asInstanceOf[appsSlashv1beta2SlashControllerRevision]
   @scala.inline
-  def `apps/v1beta2/ControllerRevisionList`: `apps/v1beta2/ControllerRevisionList` = "apps/v1beta2/ControllerRevisionList".asInstanceOf[`apps/v1beta2/ControllerRevisionList`]
+  def appsSlashv1beta2SlashControllerRevisionList: appsSlashv1beta2SlashControllerRevisionList = "apps/v1beta2/ControllerRevisionList".asInstanceOf[appsSlashv1beta2SlashControllerRevisionList]
   @scala.inline
-  def `apps/v1beta2/DaemonSet`: `apps/v1beta2/DaemonSet` = "apps/v1beta2/DaemonSet".asInstanceOf[`apps/v1beta2/DaemonSet`]
+  def appsSlashv1beta2SlashDaemonSet: appsSlashv1beta2SlashDaemonSet = "apps/v1beta2/DaemonSet".asInstanceOf[appsSlashv1beta2SlashDaemonSet]
   @scala.inline
-  def `apps/v1beta2/DaemonSetList`: `apps/v1beta2/DaemonSetList` = "apps/v1beta2/DaemonSetList".asInstanceOf[`apps/v1beta2/DaemonSetList`]
+  def appsSlashv1beta2SlashDaemonSetList: appsSlashv1beta2SlashDaemonSetList = "apps/v1beta2/DaemonSetList".asInstanceOf[appsSlashv1beta2SlashDaemonSetList]
   @scala.inline
-  def `apps/v1beta2/Deployment`: `apps/v1beta2/Deployment` = "apps/v1beta2/Deployment".asInstanceOf[`apps/v1beta2/Deployment`]
+  def appsSlashv1beta2SlashDeployment: appsSlashv1beta2SlashDeployment = "apps/v1beta2/Deployment".asInstanceOf[appsSlashv1beta2SlashDeployment]
   @scala.inline
-  def `apps/v1beta2/DeploymentList`: `apps/v1beta2/DeploymentList` = "apps/v1beta2/DeploymentList".asInstanceOf[`apps/v1beta2/DeploymentList`]
+  def appsSlashv1beta2SlashDeploymentList: appsSlashv1beta2SlashDeploymentList = "apps/v1beta2/DeploymentList".asInstanceOf[appsSlashv1beta2SlashDeploymentList]
   @scala.inline
-  def `apps/v1beta2/ReplicaSet`: `apps/v1beta2/ReplicaSet` = "apps/v1beta2/ReplicaSet".asInstanceOf[`apps/v1beta2/ReplicaSet`]
+  def appsSlashv1beta2SlashReplicaSet: appsSlashv1beta2SlashReplicaSet = "apps/v1beta2/ReplicaSet".asInstanceOf[appsSlashv1beta2SlashReplicaSet]
   @scala.inline
-  def `apps/v1beta2/ReplicaSetList`: `apps/v1beta2/ReplicaSetList` = "apps/v1beta2/ReplicaSetList".asInstanceOf[`apps/v1beta2/ReplicaSetList`]
+  def appsSlashv1beta2SlashReplicaSetList: appsSlashv1beta2SlashReplicaSetList = "apps/v1beta2/ReplicaSetList".asInstanceOf[appsSlashv1beta2SlashReplicaSetList]
   @scala.inline
-  def `apps/v1beta2/StatefulSet`: `apps/v1beta2/StatefulSet` = "apps/v1beta2/StatefulSet".asInstanceOf[`apps/v1beta2/StatefulSet`]
+  def appsSlashv1beta2SlashStatefulSet: appsSlashv1beta2SlashStatefulSet = "apps/v1beta2/StatefulSet".asInstanceOf[appsSlashv1beta2SlashStatefulSet]
   @scala.inline
-  def `apps/v1beta2/StatefulSetList`: `apps/v1beta2/StatefulSetList` = "apps/v1beta2/StatefulSetList".asInstanceOf[`apps/v1beta2/StatefulSetList`]
+  def appsSlashv1beta2SlashStatefulSetList: appsSlashv1beta2SlashStatefulSetList = "apps/v1beta2/StatefulSetList".asInstanceOf[appsSlashv1beta2SlashStatefulSetList]
   @scala.inline
-  def `auditregistrationDOTk8sDOTio/v1alpha1`: `auditregistrationDOTk8sDOTio/v1alpha1` = "auditregistration.k8s.io/v1alpha1".asInstanceOf[`auditregistrationDOTk8sDOTio/v1alpha1`]
+  def auditregistrationDotk8sDotioSlashv1alpha1: auditregistrationDotk8sDotioSlashv1alpha1 = "auditregistration.k8s.io/v1alpha1".asInstanceOf[auditregistrationDotk8sDotioSlashv1alpha1]
   @scala.inline
-  def `auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`: `auditregistrationDOTk8sDOTio/v1alpha1/AuditSink` = "auditregistration.k8s.io/v1alpha1/AuditSink".asInstanceOf[`auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`]
+  def auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSink: auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSink = "auditregistration.k8s.io/v1alpha1/AuditSink".asInstanceOf[auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSink]
   @scala.inline
-  def `auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`: `auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList` = "auditregistration.k8s.io/v1alpha1/AuditSinkList".asInstanceOf[`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`]
+  def auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSinkList: auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSinkList = "auditregistration.k8s.io/v1alpha1/AuditSinkList".asInstanceOf[auditregistrationDotk8sDotioSlashv1alpha1SlashAuditSinkList]
   @scala.inline
-  def `authenticationDOTk8sDOTio/v1`: `authenticationDOTk8sDOTio/v1` = "authentication.k8s.io/v1".asInstanceOf[`authenticationDOTk8sDOTio/v1`]
+  def authenticationDotk8sDotioSlashv1: authenticationDotk8sDotioSlashv1 = "authentication.k8s.io/v1".asInstanceOf[authenticationDotk8sDotioSlashv1]
   @scala.inline
-  def `authenticationDOTk8sDOTio/v1/TokenRequest`: `authenticationDOTk8sDOTio/v1/TokenRequest` = "authentication.k8s.io/v1/TokenRequest".asInstanceOf[`authenticationDOTk8sDOTio/v1/TokenRequest`]
+  def authenticationDotk8sDotioSlashv1SlashTokenRequest: authenticationDotk8sDotioSlashv1SlashTokenRequest = "authentication.k8s.io/v1/TokenRequest".asInstanceOf[authenticationDotk8sDotioSlashv1SlashTokenRequest]
   @scala.inline
-  def `authenticationDOTk8sDOTio/v1/TokenReview`: `authenticationDOTk8sDOTio/v1/TokenReview` = "authentication.k8s.io/v1/TokenReview".asInstanceOf[`authenticationDOTk8sDOTio/v1/TokenReview`]
+  def authenticationDotk8sDotioSlashv1SlashTokenReview: authenticationDotk8sDotioSlashv1SlashTokenReview = "authentication.k8s.io/v1/TokenReview".asInstanceOf[authenticationDotk8sDotioSlashv1SlashTokenReview]
   @scala.inline
-  def `authenticationDOTk8sDOTio/v1beta1`: `authenticationDOTk8sDOTio/v1beta1` = "authentication.k8s.io/v1beta1".asInstanceOf[`authenticationDOTk8sDOTio/v1beta1`]
+  def authenticationDotk8sDotioSlashv1beta1: authenticationDotk8sDotioSlashv1beta1 = "authentication.k8s.io/v1beta1".asInstanceOf[authenticationDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `authenticationDOTk8sDOTio/v1beta1/TokenReview`: `authenticationDOTk8sDOTio/v1beta1/TokenReview` = "authentication.k8s.io/v1beta1/TokenReview".asInstanceOf[`authenticationDOTk8sDOTio/v1beta1/TokenReview`]
+  def authenticationDotk8sDotioSlashv1beta1SlashTokenReview: authenticationDotk8sDotioSlashv1beta1SlashTokenReview = "authentication.k8s.io/v1beta1/TokenReview".asInstanceOf[authenticationDotk8sDotioSlashv1beta1SlashTokenReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1`: `authorizationDOTk8sDOTio/v1` = "authorization.k8s.io/v1".asInstanceOf[`authorizationDOTk8sDOTio/v1`]
+  def authorizationDotk8sDotioSlashv1: authorizationDotk8sDotioSlashv1 = "authorization.k8s.io/v1".asInstanceOf[authorizationDotk8sDotioSlashv1]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`: `authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview` = "authorization.k8s.io/v1/LocalSubjectAccessReview".asInstanceOf[`authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`]
+  def authorizationDotk8sDotioSlashv1SlashLocalSubjectAccessReview: authorizationDotk8sDotioSlashv1SlashLocalSubjectAccessReview = "authorization.k8s.io/v1/LocalSubjectAccessReview".asInstanceOf[authorizationDotk8sDotioSlashv1SlashLocalSubjectAccessReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`: `authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview` = "authorization.k8s.io/v1/SelfSubjectAccessReview".asInstanceOf[`authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`]
+  def authorizationDotk8sDotioSlashv1SlashSelfSubjectAccessReview: authorizationDotk8sDotioSlashv1SlashSelfSubjectAccessReview = "authorization.k8s.io/v1/SelfSubjectAccessReview".asInstanceOf[authorizationDotk8sDotioSlashv1SlashSelfSubjectAccessReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`: `authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview` = "authorization.k8s.io/v1/SelfSubjectRulesReview".asInstanceOf[`authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`]
+  def authorizationDotk8sDotioSlashv1SlashSelfSubjectRulesReview: authorizationDotk8sDotioSlashv1SlashSelfSubjectRulesReview = "authorization.k8s.io/v1/SelfSubjectRulesReview".asInstanceOf[authorizationDotk8sDotioSlashv1SlashSelfSubjectRulesReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1/SubjectAccessReview`: `authorizationDOTk8sDOTio/v1/SubjectAccessReview` = "authorization.k8s.io/v1/SubjectAccessReview".asInstanceOf[`authorizationDOTk8sDOTio/v1/SubjectAccessReview`]
+  def authorizationDotk8sDotioSlashv1SlashSubjectAccessReview: authorizationDotk8sDotioSlashv1SlashSubjectAccessReview = "authorization.k8s.io/v1/SubjectAccessReview".asInstanceOf[authorizationDotk8sDotioSlashv1SlashSubjectAccessReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1beta1`: `authorizationDOTk8sDOTio/v1beta1` = "authorization.k8s.io/v1beta1".asInstanceOf[`authorizationDOTk8sDOTio/v1beta1`]
+  def authorizationDotk8sDotioSlashv1beta1: authorizationDotk8sDotioSlashv1beta1 = "authorization.k8s.io/v1beta1".asInstanceOf[authorizationDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`: `authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview` = "authorization.k8s.io/v1beta1/LocalSubjectAccessReview".asInstanceOf[`authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`]
+  def authorizationDotk8sDotioSlashv1beta1SlashLocalSubjectAccessReview: authorizationDotk8sDotioSlashv1beta1SlashLocalSubjectAccessReview = "authorization.k8s.io/v1beta1/LocalSubjectAccessReview".asInstanceOf[authorizationDotk8sDotioSlashv1beta1SlashLocalSubjectAccessReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview` = "authorization.k8s.io/v1beta1/SelfSubjectAccessReview".asInstanceOf[`authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`]
+  def authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectAccessReview: authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectAccessReview = "authorization.k8s.io/v1beta1/SelfSubjectAccessReview".asInstanceOf[authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectAccessReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`: `authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview` = "authorization.k8s.io/v1beta1/SelfSubjectRulesReview".asInstanceOf[`authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`]
+  def authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectRulesReview: authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectRulesReview = "authorization.k8s.io/v1beta1/SelfSubjectRulesReview".asInstanceOf[authorizationDotk8sDotioSlashv1beta1SlashSelfSubjectRulesReview]
   @scala.inline
-  def `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`: `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview` = "authorization.k8s.io/v1beta1/SubjectAccessReview".asInstanceOf[`authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`]
+  def authorizationDotk8sDotioSlashv1beta1SlashSubjectAccessReview: authorizationDotk8sDotioSlashv1beta1SlashSubjectAccessReview = "authorization.k8s.io/v1beta1/SubjectAccessReview".asInstanceOf[authorizationDotk8sDotioSlashv1beta1SlashSubjectAccessReview]
   @scala.inline
   def automountServiceAccountToken: automountServiceAccountToken = "automountServiceAccountToken".asInstanceOf[automountServiceAccountToken]
   @scala.inline
-  def `autoscaling/v1`: `autoscaling/v1` = "autoscaling/v1".asInstanceOf[`autoscaling/v1`]
+  def autoscalingSlashv1: autoscalingSlashv1 = "autoscaling/v1".asInstanceOf[autoscalingSlashv1]
   @scala.inline
-  def `autoscaling/v1/HorizontalPodAutoscaler`: `autoscaling/v1/HorizontalPodAutoscaler` = "autoscaling/v1/HorizontalPodAutoscaler".asInstanceOf[`autoscaling/v1/HorizontalPodAutoscaler`]
+  def autoscalingSlashv1SlashHorizontalPodAutoscaler: autoscalingSlashv1SlashHorizontalPodAutoscaler = "autoscaling/v1/HorizontalPodAutoscaler".asInstanceOf[autoscalingSlashv1SlashHorizontalPodAutoscaler]
   @scala.inline
-  def `autoscaling/v1/HorizontalPodAutoscalerList`: `autoscaling/v1/HorizontalPodAutoscalerList` = "autoscaling/v1/HorizontalPodAutoscalerList".asInstanceOf[`autoscaling/v1/HorizontalPodAutoscalerList`]
+  def autoscalingSlashv1SlashHorizontalPodAutoscalerList: autoscalingSlashv1SlashHorizontalPodAutoscalerList = "autoscaling/v1/HorizontalPodAutoscalerList".asInstanceOf[autoscalingSlashv1SlashHorizontalPodAutoscalerList]
   @scala.inline
-  def `autoscaling/v2beta1`: `autoscaling/v2beta1` = "autoscaling/v2beta1".asInstanceOf[`autoscaling/v2beta1`]
+  def autoscalingSlashv2beta1: autoscalingSlashv2beta1 = "autoscaling/v2beta1".asInstanceOf[autoscalingSlashv2beta1]
   @scala.inline
-  def `autoscaling/v2beta1/HorizontalPodAutoscaler`: `autoscaling/v2beta1/HorizontalPodAutoscaler` = "autoscaling/v2beta1/HorizontalPodAutoscaler".asInstanceOf[`autoscaling/v2beta1/HorizontalPodAutoscaler`]
+  def autoscalingSlashv2beta1SlashHorizontalPodAutoscaler: autoscalingSlashv2beta1SlashHorizontalPodAutoscaler = "autoscaling/v2beta1/HorizontalPodAutoscaler".asInstanceOf[autoscalingSlashv2beta1SlashHorizontalPodAutoscaler]
   @scala.inline
-  def `autoscaling/v2beta1/HorizontalPodAutoscalerList`: `autoscaling/v2beta1/HorizontalPodAutoscalerList` = "autoscaling/v2beta1/HorizontalPodAutoscalerList".asInstanceOf[`autoscaling/v2beta1/HorizontalPodAutoscalerList`]
+  def autoscalingSlashv2beta1SlashHorizontalPodAutoscalerList: autoscalingSlashv2beta1SlashHorizontalPodAutoscalerList = "autoscaling/v2beta1/HorizontalPodAutoscalerList".asInstanceOf[autoscalingSlashv2beta1SlashHorizontalPodAutoscalerList]
   @scala.inline
-  def `autoscaling/v2beta2`: `autoscaling/v2beta2` = "autoscaling/v2beta2".asInstanceOf[`autoscaling/v2beta2`]
+  def autoscalingSlashv2beta2: autoscalingSlashv2beta2 = "autoscaling/v2beta2".asInstanceOf[autoscalingSlashv2beta2]
   @scala.inline
-  def `autoscaling/v2beta2/HorizontalPodAutoscaler`: `autoscaling/v2beta2/HorizontalPodAutoscaler` = "autoscaling/v2beta2/HorizontalPodAutoscaler".asInstanceOf[`autoscaling/v2beta2/HorizontalPodAutoscaler`]
+  def autoscalingSlashv2beta2SlashHorizontalPodAutoscaler: autoscalingSlashv2beta2SlashHorizontalPodAutoscaler = "autoscaling/v2beta2/HorizontalPodAutoscaler".asInstanceOf[autoscalingSlashv2beta2SlashHorizontalPodAutoscaler]
   @scala.inline
-  def `autoscaling/v2beta2/HorizontalPodAutoscalerList`: `autoscaling/v2beta2/HorizontalPodAutoscalerList` = "autoscaling/v2beta2/HorizontalPodAutoscalerList".asInstanceOf[`autoscaling/v2beta2/HorizontalPodAutoscalerList`]
+  def autoscalingSlashv2beta2SlashHorizontalPodAutoscalerList: autoscalingSlashv2beta2SlashHorizontalPodAutoscalerList = "autoscaling/v2beta2/HorizontalPodAutoscalerList".asInstanceOf[autoscalingSlashv2beta2SlashHorizontalPodAutoscalerList]
   @scala.inline
-  def `batch/v1`: `batch/v1` = "batch/v1".asInstanceOf[`batch/v1`]
+  def batchSlashv1: batchSlashv1 = "batch/v1".asInstanceOf[batchSlashv1]
   @scala.inline
-  def `batch/v1/Job`: `batch/v1/Job` = "batch/v1/Job".asInstanceOf[`batch/v1/Job`]
+  def batchSlashv1SlashJob: batchSlashv1SlashJob = "batch/v1/Job".asInstanceOf[batchSlashv1SlashJob]
   @scala.inline
-  def `batch/v1/JobList`: `batch/v1/JobList` = "batch/v1/JobList".asInstanceOf[`batch/v1/JobList`]
+  def batchSlashv1SlashJobList: batchSlashv1SlashJobList = "batch/v1/JobList".asInstanceOf[batchSlashv1SlashJobList]
   @scala.inline
-  def `batch/v1beta1`: `batch/v1beta1` = "batch/v1beta1".asInstanceOf[`batch/v1beta1`]
+  def batchSlashv1beta1: batchSlashv1beta1 = "batch/v1beta1".asInstanceOf[batchSlashv1beta1]
   @scala.inline
-  def `batch/v1beta1/CronJob`: `batch/v1beta1/CronJob` = "batch/v1beta1/CronJob".asInstanceOf[`batch/v1beta1/CronJob`]
+  def batchSlashv1beta1SlashCronJob: batchSlashv1beta1SlashCronJob = "batch/v1beta1/CronJob".asInstanceOf[batchSlashv1beta1SlashCronJob]
   @scala.inline
-  def `batch/v1beta1/CronJobList`: `batch/v1beta1/CronJobList` = "batch/v1beta1/CronJobList".asInstanceOf[`batch/v1beta1/CronJobList`]
+  def batchSlashv1beta1SlashCronJobList: batchSlashv1beta1SlashCronJobList = "batch/v1beta1/CronJobList".asInstanceOf[batchSlashv1beta1SlashCronJobList]
   @scala.inline
-  def `batch/v2alpha1`: `batch/v2alpha1` = "batch/v2alpha1".asInstanceOf[`batch/v2alpha1`]
+  def batchSlashv2alpha1: batchSlashv2alpha1 = "batch/v2alpha1".asInstanceOf[batchSlashv2alpha1]
   @scala.inline
-  def `batch/v2alpha1/CronJob`: `batch/v2alpha1/CronJob` = "batch/v2alpha1/CronJob".asInstanceOf[`batch/v2alpha1/CronJob`]
+  def batchSlashv2alpha1SlashCronJob: batchSlashv2alpha1SlashCronJob = "batch/v2alpha1/CronJob".asInstanceOf[batchSlashv2alpha1SlashCronJob]
   @scala.inline
-  def `batch/v2alpha1/CronJobList`: `batch/v2alpha1/CronJobList` = "batch/v2alpha1/CronJobList".asInstanceOf[`batch/v2alpha1/CronJobList`]
+  def batchSlashv2alpha1SlashCronJobList: batchSlashv2alpha1SlashCronJobList = "batch/v2alpha1/CronJobList".asInstanceOf[batchSlashv2alpha1SlashCronJobList]
   @scala.inline
   def binaryData: binaryData = "binaryData".asInstanceOf[binaryData]
   @scala.inline
-  def `certificatesDOTk8sDOTio/v1beta1`: `certificatesDOTk8sDOTio/v1beta1` = "certificates.k8s.io/v1beta1".asInstanceOf[`certificatesDOTk8sDOTio/v1beta1`]
+  def certificatesDotk8sDotioSlashv1beta1: certificatesDotk8sDotioSlashv1beta1 = "certificates.k8s.io/v1beta1".asInstanceOf[certificatesDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`: `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest` = "certificates.k8s.io/v1beta1/CertificateSigningRequest".asInstanceOf[`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`]
+  def certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequest: certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequest = "certificates.k8s.io/v1beta1/CertificateSigningRequest".asInstanceOf[certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequest]
   @scala.inline
-  def `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`: `certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList` = "certificates.k8s.io/v1beta1/CertificateSigningRequestList".asInstanceOf[`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`]
+  def certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequestList: certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequestList = "certificates.k8s.io/v1beta1/CertificateSigningRequestList".asInstanceOf[certificatesDotk8sDotioSlashv1beta1SlashCertificateSigningRequestList]
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
   def conditions: conditions = "conditions".asInstanceOf[conditions]
   @scala.inline
-  def `coordinationDOTk8sDOTio/v1`: `coordinationDOTk8sDOTio/v1` = "coordination.k8s.io/v1".asInstanceOf[`coordinationDOTk8sDOTio/v1`]
+  def coordinationDotk8sDotioSlashv1: coordinationDotk8sDotioSlashv1 = "coordination.k8s.io/v1".asInstanceOf[coordinationDotk8sDotioSlashv1]
   @scala.inline
-  def `coordinationDOTk8sDOTio/v1/Lease`: `coordinationDOTk8sDOTio/v1/Lease` = "coordination.k8s.io/v1/Lease".asInstanceOf[`coordinationDOTk8sDOTio/v1/Lease`]
+  def coordinationDotk8sDotioSlashv1SlashLease: coordinationDotk8sDotioSlashv1SlashLease = "coordination.k8s.io/v1/Lease".asInstanceOf[coordinationDotk8sDotioSlashv1SlashLease]
   @scala.inline
-  def `coordinationDOTk8sDOTio/v1/LeaseList`: `coordinationDOTk8sDOTio/v1/LeaseList` = "coordination.k8s.io/v1/LeaseList".asInstanceOf[`coordinationDOTk8sDOTio/v1/LeaseList`]
+  def coordinationDotk8sDotioSlashv1SlashLeaseList: coordinationDotk8sDotioSlashv1SlashLeaseList = "coordination.k8s.io/v1/LeaseList".asInstanceOf[coordinationDotk8sDotioSlashv1SlashLeaseList]
   @scala.inline
-  def `coordinationDOTk8sDOTio/v1beta1`: `coordinationDOTk8sDOTio/v1beta1` = "coordination.k8s.io/v1beta1".asInstanceOf[`coordinationDOTk8sDOTio/v1beta1`]
+  def coordinationDotk8sDotioSlashv1beta1: coordinationDotk8sDotioSlashv1beta1 = "coordination.k8s.io/v1beta1".asInstanceOf[coordinationDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `coordinationDOTk8sDOTio/v1beta1/Lease`: `coordinationDOTk8sDOTio/v1beta1/Lease` = "coordination.k8s.io/v1beta1/Lease".asInstanceOf[`coordinationDOTk8sDOTio/v1beta1/Lease`]
+  def coordinationDotk8sDotioSlashv1beta1SlashLease: coordinationDotk8sDotioSlashv1beta1SlashLease = "coordination.k8s.io/v1beta1/Lease".asInstanceOf[coordinationDotk8sDotioSlashv1beta1SlashLease]
   @scala.inline
-  def `coordinationDOTk8sDOTio/v1beta1/LeaseList`: `coordinationDOTk8sDOTio/v1beta1/LeaseList` = "coordination.k8s.io/v1beta1/LeaseList".asInstanceOf[`coordinationDOTk8sDOTio/v1beta1/LeaseList`]
+  def coordinationDotk8sDotioSlashv1beta1SlashLeaseList: coordinationDotk8sDotioSlashv1beta1SlashLeaseList = "coordination.k8s.io/v1beta1/LeaseList".asInstanceOf[coordinationDotk8sDotioSlashv1beta1SlashLeaseList]
   @scala.inline
   def count: count = "count".asInstanceOf[count]
   @scala.inline
@@ -1660,59 +1660,59 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
-  def `discoveryDOTk8sDOTio/v1beta1`: `discoveryDOTk8sDOTio/v1beta1` = "discovery.k8s.io/v1beta1".asInstanceOf[`discoveryDOTk8sDOTio/v1beta1`]
+  def discoveryDotk8sDotioSlashv1beta1: discoveryDotk8sDotioSlashv1beta1 = "discovery.k8s.io/v1beta1".asInstanceOf[discoveryDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice` = "discovery.k8s.io/v1beta1/EndpointSlice".asInstanceOf[`discoveryDOTk8sDOTio/v1beta1/EndpointSlice`]
+  def discoveryDotk8sDotioSlashv1beta1SlashEndpointSlice: discoveryDotk8sDotioSlashv1beta1SlashEndpointSlice = "discovery.k8s.io/v1beta1/EndpointSlice".asInstanceOf[discoveryDotk8sDotioSlashv1beta1SlashEndpointSlice]
   @scala.inline
-  def `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList` = "discovery.k8s.io/v1beta1/EndpointSliceList".asInstanceOf[`discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`]
+  def discoveryDotk8sDotioSlashv1beta1SlashEndpointSliceList: discoveryDotk8sDotioSlashv1beta1SlashEndpointSliceList = "discovery.k8s.io/v1beta1/EndpointSliceList".asInstanceOf[discoveryDotk8sDotioSlashv1beta1SlashEndpointSliceList]
   @scala.inline
   def endpoints_ : endpoints_ = "endpoints".asInstanceOf[endpoints_]
   @scala.inline
   def eventTime: eventTime = "eventTime".asInstanceOf[eventTime]
   @scala.inline
-  def `eventsDOTk8sDOTio/v1beta1`: `eventsDOTk8sDOTio/v1beta1` = "events.k8s.io/v1beta1".asInstanceOf[`eventsDOTk8sDOTio/v1beta1`]
+  def eventsDotk8sDotioSlashv1beta1: eventsDotk8sDotioSlashv1beta1 = "events.k8s.io/v1beta1".asInstanceOf[eventsDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `eventsDOTk8sDOTio/v1beta1/Event`: `eventsDOTk8sDOTio/v1beta1/Event` = "events.k8s.io/v1beta1/Event".asInstanceOf[`eventsDOTk8sDOTio/v1beta1/Event`]
+  def eventsDotk8sDotioSlashv1beta1SlashEvent: eventsDotk8sDotioSlashv1beta1SlashEvent = "events.k8s.io/v1beta1/Event".asInstanceOf[eventsDotk8sDotioSlashv1beta1SlashEvent]
   @scala.inline
-  def `eventsDOTk8sDOTio/v1beta1/EventList`: `eventsDOTk8sDOTio/v1beta1/EventList` = "events.k8s.io/v1beta1/EventList".asInstanceOf[`eventsDOTk8sDOTio/v1beta1/EventList`]
+  def eventsDotk8sDotioSlashv1beta1SlashEventList: eventsDotk8sDotioSlashv1beta1SlashEventList = "events.k8s.io/v1beta1/EventList".asInstanceOf[eventsDotk8sDotioSlashv1beta1SlashEventList]
   @scala.inline
-  def `extensions/v1beta1`: `extensions/v1beta1` = "extensions/v1beta1".asInstanceOf[`extensions/v1beta1`]
+  def extensionsSlashv1beta1: extensionsSlashv1beta1 = "extensions/v1beta1".asInstanceOf[extensionsSlashv1beta1]
   @scala.inline
-  def `extensions/v1beta1/DaemonSet`: `extensions/v1beta1/DaemonSet` = "extensions/v1beta1/DaemonSet".asInstanceOf[`extensions/v1beta1/DaemonSet`]
+  def extensionsSlashv1beta1SlashDaemonSet: extensionsSlashv1beta1SlashDaemonSet = "extensions/v1beta1/DaemonSet".asInstanceOf[extensionsSlashv1beta1SlashDaemonSet]
   @scala.inline
-  def `extensions/v1beta1/DaemonSetList`: `extensions/v1beta1/DaemonSetList` = "extensions/v1beta1/DaemonSetList".asInstanceOf[`extensions/v1beta1/DaemonSetList`]
+  def extensionsSlashv1beta1SlashDaemonSetList: extensionsSlashv1beta1SlashDaemonSetList = "extensions/v1beta1/DaemonSetList".asInstanceOf[extensionsSlashv1beta1SlashDaemonSetList]
   @scala.inline
-  def `extensions/v1beta1/Deployment`: `extensions/v1beta1/Deployment` = "extensions/v1beta1/Deployment".asInstanceOf[`extensions/v1beta1/Deployment`]
+  def extensionsSlashv1beta1SlashDeployment: extensionsSlashv1beta1SlashDeployment = "extensions/v1beta1/Deployment".asInstanceOf[extensionsSlashv1beta1SlashDeployment]
   @scala.inline
-  def `extensions/v1beta1/DeploymentList`: `extensions/v1beta1/DeploymentList` = "extensions/v1beta1/DeploymentList".asInstanceOf[`extensions/v1beta1/DeploymentList`]
+  def extensionsSlashv1beta1SlashDeploymentList: extensionsSlashv1beta1SlashDeploymentList = "extensions/v1beta1/DeploymentList".asInstanceOf[extensionsSlashv1beta1SlashDeploymentList]
   @scala.inline
-  def `extensions/v1beta1/Ingress`: `extensions/v1beta1/Ingress` = "extensions/v1beta1/Ingress".asInstanceOf[`extensions/v1beta1/Ingress`]
+  def extensionsSlashv1beta1SlashIngress: extensionsSlashv1beta1SlashIngress = "extensions/v1beta1/Ingress".asInstanceOf[extensionsSlashv1beta1SlashIngress]
   @scala.inline
-  def `extensions/v1beta1/IngressList`: `extensions/v1beta1/IngressList` = "extensions/v1beta1/IngressList".asInstanceOf[`extensions/v1beta1/IngressList`]
+  def extensionsSlashv1beta1SlashIngressList: extensionsSlashv1beta1SlashIngressList = "extensions/v1beta1/IngressList".asInstanceOf[extensionsSlashv1beta1SlashIngressList]
   @scala.inline
-  def `extensions/v1beta1/NetworkPolicy`: `extensions/v1beta1/NetworkPolicy` = "extensions/v1beta1/NetworkPolicy".asInstanceOf[`extensions/v1beta1/NetworkPolicy`]
+  def extensionsSlashv1beta1SlashNetworkPolicy: extensionsSlashv1beta1SlashNetworkPolicy = "extensions/v1beta1/NetworkPolicy".asInstanceOf[extensionsSlashv1beta1SlashNetworkPolicy]
   @scala.inline
-  def `extensions/v1beta1/NetworkPolicyList`: `extensions/v1beta1/NetworkPolicyList` = "extensions/v1beta1/NetworkPolicyList".asInstanceOf[`extensions/v1beta1/NetworkPolicyList`]
+  def extensionsSlashv1beta1SlashNetworkPolicyList: extensionsSlashv1beta1SlashNetworkPolicyList = "extensions/v1beta1/NetworkPolicyList".asInstanceOf[extensionsSlashv1beta1SlashNetworkPolicyList]
   @scala.inline
-  def `extensions/v1beta1/PodSecurityPolicy`: `extensions/v1beta1/PodSecurityPolicy` = "extensions/v1beta1/PodSecurityPolicy".asInstanceOf[`extensions/v1beta1/PodSecurityPolicy`]
+  def extensionsSlashv1beta1SlashPodSecurityPolicy: extensionsSlashv1beta1SlashPodSecurityPolicy = "extensions/v1beta1/PodSecurityPolicy".asInstanceOf[extensionsSlashv1beta1SlashPodSecurityPolicy]
   @scala.inline
-  def `extensions/v1beta1/PodSecurityPolicyList`: `extensions/v1beta1/PodSecurityPolicyList` = "extensions/v1beta1/PodSecurityPolicyList".asInstanceOf[`extensions/v1beta1/PodSecurityPolicyList`]
+  def extensionsSlashv1beta1SlashPodSecurityPolicyList: extensionsSlashv1beta1SlashPodSecurityPolicyList = "extensions/v1beta1/PodSecurityPolicyList".asInstanceOf[extensionsSlashv1beta1SlashPodSecurityPolicyList]
   @scala.inline
-  def `extensions/v1beta1/ReplicaSet`: `extensions/v1beta1/ReplicaSet` = "extensions/v1beta1/ReplicaSet".asInstanceOf[`extensions/v1beta1/ReplicaSet`]
+  def extensionsSlashv1beta1SlashReplicaSet: extensionsSlashv1beta1SlashReplicaSet = "extensions/v1beta1/ReplicaSet".asInstanceOf[extensionsSlashv1beta1SlashReplicaSet]
   @scala.inline
-  def `extensions/v1beta1/ReplicaSetList`: `extensions/v1beta1/ReplicaSetList` = "extensions/v1beta1/ReplicaSetList".asInstanceOf[`extensions/v1beta1/ReplicaSetList`]
+  def extensionsSlashv1beta1SlashReplicaSetList: extensionsSlashv1beta1SlashReplicaSetList = "extensions/v1beta1/ReplicaSetList".asInstanceOf[extensionsSlashv1beta1SlashReplicaSetList]
   @scala.inline
   def firstTimestamp: firstTimestamp = "firstTimestamp".asInstanceOf[firstTimestamp]
   @scala.inline
-  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1` = "flowcontrol.apiserver.k8s.io/v1alpha1".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`]
+  def flowcontrolDotapiserverDotk8sDotioSlashv1alpha1: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1 = "flowcontrol.apiserver.k8s.io/v1alpha1".asInstanceOf[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1]
   @scala.inline
-  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema` = "flowcontrol.apiserver.k8s.io/v1alpha1/FlowSchema".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`]
+  def flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchema: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchema = "flowcontrol.apiserver.k8s.io/v1alpha1/FlowSchema".asInstanceOf[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchema]
   @scala.inline
-  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList` = "flowcontrol.apiserver.k8s.io/v1alpha1/FlowSchemaList".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`]
+  def flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchemaList: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchemaList = "flowcontrol.apiserver.k8s.io/v1alpha1/FlowSchemaList".asInstanceOf[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashFlowSchemaList]
   @scala.inline
-  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration` = "flowcontrol.apiserver.k8s.io/v1alpha1/PriorityLevelConfiguration".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`]
+  def flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfiguration: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfiguration = "flowcontrol.apiserver.k8s.io/v1alpha1/PriorityLevelConfiguration".asInstanceOf[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfiguration]
   @scala.inline
-  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList` = "flowcontrol.apiserver.k8s.io/v1alpha1/PriorityLevelConfigurationList".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`]
+  def flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfigurationList: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfigurationList = "flowcontrol.apiserver.k8s.io/v1alpha1/PriorityLevelConfigurationList".asInstanceOf[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1SlashPriorityLevelConfigurationList]
   @scala.inline
   def globalDefault: globalDefault = "globalDefault".asInstanceOf[globalDefault]
   @scala.inline
@@ -1734,29 +1734,29 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def mountOptions: mountOptions = "mountOptions".asInstanceOf[mountOptions]
   @scala.inline
-  def `networkingDOTk8sDOTio/v1`: `networkingDOTk8sDOTio/v1` = "networking.k8s.io/v1".asInstanceOf[`networkingDOTk8sDOTio/v1`]
+  def networkingDotk8sDotioSlashv1: networkingDotk8sDotioSlashv1 = "networking.k8s.io/v1".asInstanceOf[networkingDotk8sDotioSlashv1]
   @scala.inline
-  def `networkingDOTk8sDOTio/v1/NetworkPolicy`: `networkingDOTk8sDOTio/v1/NetworkPolicy` = "networking.k8s.io/v1/NetworkPolicy".asInstanceOf[`networkingDOTk8sDOTio/v1/NetworkPolicy`]
+  def networkingDotk8sDotioSlashv1SlashNetworkPolicy: networkingDotk8sDotioSlashv1SlashNetworkPolicy = "networking.k8s.io/v1/NetworkPolicy".asInstanceOf[networkingDotk8sDotioSlashv1SlashNetworkPolicy]
   @scala.inline
-  def `networkingDOTk8sDOTio/v1/NetworkPolicyList`: `networkingDOTk8sDOTio/v1/NetworkPolicyList` = "networking.k8s.io/v1/NetworkPolicyList".asInstanceOf[`networkingDOTk8sDOTio/v1/NetworkPolicyList`]
+  def networkingDotk8sDotioSlashv1SlashNetworkPolicyList: networkingDotk8sDotioSlashv1SlashNetworkPolicyList = "networking.k8s.io/v1/NetworkPolicyList".asInstanceOf[networkingDotk8sDotioSlashv1SlashNetworkPolicyList]
   @scala.inline
-  def `networkingDOTk8sDOTio/v1beta1`: `networkingDOTk8sDOTio/v1beta1` = "networking.k8s.io/v1beta1".asInstanceOf[`networkingDOTk8sDOTio/v1beta1`]
+  def networkingDotk8sDotioSlashv1beta1: networkingDotk8sDotioSlashv1beta1 = "networking.k8s.io/v1beta1".asInstanceOf[networkingDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `networkingDOTk8sDOTio/v1beta1/Ingress`: `networkingDOTk8sDOTio/v1beta1/Ingress` = "networking.k8s.io/v1beta1/Ingress".asInstanceOf[`networkingDOTk8sDOTio/v1beta1/Ingress`]
+  def networkingDotk8sDotioSlashv1beta1SlashIngress: networkingDotk8sDotioSlashv1beta1SlashIngress = "networking.k8s.io/v1beta1/Ingress".asInstanceOf[networkingDotk8sDotioSlashv1beta1SlashIngress]
   @scala.inline
-  def `networkingDOTk8sDOTio/v1beta1/IngressList`: `networkingDOTk8sDOTio/v1beta1/IngressList` = "networking.k8s.io/v1beta1/IngressList".asInstanceOf[`networkingDOTk8sDOTio/v1beta1/IngressList`]
+  def networkingDotk8sDotioSlashv1beta1SlashIngressList: networkingDotk8sDotioSlashv1beta1SlashIngressList = "networking.k8s.io/v1beta1/IngressList".asInstanceOf[networkingDotk8sDotioSlashv1beta1SlashIngressList]
   @scala.inline
-  def `nodeDOTk8sDOTio/v1alpha1`: `nodeDOTk8sDOTio/v1alpha1` = "node.k8s.io/v1alpha1".asInstanceOf[`nodeDOTk8sDOTio/v1alpha1`]
+  def nodeDotk8sDotioSlashv1alpha1: nodeDotk8sDotioSlashv1alpha1 = "node.k8s.io/v1alpha1".asInstanceOf[nodeDotk8sDotioSlashv1alpha1]
   @scala.inline
-  def `nodeDOTk8sDOTio/v1alpha1/RuntimeClass`: `nodeDOTk8sDOTio/v1alpha1/RuntimeClass` = "node.k8s.io/v1alpha1/RuntimeClass".asInstanceOf[`nodeDOTk8sDOTio/v1alpha1/RuntimeClass`]
+  def nodeDotk8sDotioSlashv1alpha1SlashRuntimeClass: nodeDotk8sDotioSlashv1alpha1SlashRuntimeClass = "node.k8s.io/v1alpha1/RuntimeClass".asInstanceOf[nodeDotk8sDotioSlashv1alpha1SlashRuntimeClass]
   @scala.inline
-  def `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList` = "node.k8s.io/v1alpha1/RuntimeClassList".asInstanceOf[`nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`]
+  def nodeDotk8sDotioSlashv1alpha1SlashRuntimeClassList: nodeDotk8sDotioSlashv1alpha1SlashRuntimeClassList = "node.k8s.io/v1alpha1/RuntimeClassList".asInstanceOf[nodeDotk8sDotioSlashv1alpha1SlashRuntimeClassList]
   @scala.inline
-  def `nodeDOTk8sDOTio/v1beta1`: `nodeDOTk8sDOTio/v1beta1` = "node.k8s.io/v1beta1".asInstanceOf[`nodeDOTk8sDOTio/v1beta1`]
+  def nodeDotk8sDotioSlashv1beta1: nodeDotk8sDotioSlashv1beta1 = "node.k8s.io/v1beta1".asInstanceOf[nodeDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `nodeDOTk8sDOTio/v1beta1/RuntimeClass`: `nodeDOTk8sDOTio/v1beta1/RuntimeClass` = "node.k8s.io/v1beta1/RuntimeClass".asInstanceOf[`nodeDOTk8sDOTio/v1beta1/RuntimeClass`]
+  def nodeDotk8sDotioSlashv1beta1SlashRuntimeClass: nodeDotk8sDotioSlashv1beta1SlashRuntimeClass = "node.k8s.io/v1beta1/RuntimeClass".asInstanceOf[nodeDotk8sDotioSlashv1beta1SlashRuntimeClass]
   @scala.inline
-  def `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList` = "node.k8s.io/v1beta1/RuntimeClassList".asInstanceOf[`nodeDOTk8sDOTio/v1beta1/RuntimeClassList`]
+  def nodeDotk8sDotioSlashv1beta1SlashRuntimeClassList: nodeDotk8sDotioSlashv1beta1SlashRuntimeClassList = "node.k8s.io/v1beta1/RuntimeClassList".asInstanceOf[nodeDotk8sDotioSlashv1beta1SlashRuntimeClassList]
   @scala.inline
   def note: note = "note".asInstanceOf[note]
   @scala.inline
@@ -1764,15 +1764,15 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def parameters: parameters = "parameters".asInstanceOf[parameters]
   @scala.inline
-  def `policy/v1beta1`: `policy/v1beta1` = "policy/v1beta1".asInstanceOf[`policy/v1beta1`]
+  def policySlashv1beta1: policySlashv1beta1 = "policy/v1beta1".asInstanceOf[policySlashv1beta1]
   @scala.inline
-  def `policy/v1beta1/PodDisruptionBudget`: `policy/v1beta1/PodDisruptionBudget` = "policy/v1beta1/PodDisruptionBudget".asInstanceOf[`policy/v1beta1/PodDisruptionBudget`]
+  def policySlashv1beta1SlashPodDisruptionBudget: policySlashv1beta1SlashPodDisruptionBudget = "policy/v1beta1/PodDisruptionBudget".asInstanceOf[policySlashv1beta1SlashPodDisruptionBudget]
   @scala.inline
-  def `policy/v1beta1/PodDisruptionBudgetList`: `policy/v1beta1/PodDisruptionBudgetList` = "policy/v1beta1/PodDisruptionBudgetList".asInstanceOf[`policy/v1beta1/PodDisruptionBudgetList`]
+  def policySlashv1beta1SlashPodDisruptionBudgetList: policySlashv1beta1SlashPodDisruptionBudgetList = "policy/v1beta1/PodDisruptionBudgetList".asInstanceOf[policySlashv1beta1SlashPodDisruptionBudgetList]
   @scala.inline
-  def `policy/v1beta1/PodSecurityPolicy`: `policy/v1beta1/PodSecurityPolicy` = "policy/v1beta1/PodSecurityPolicy".asInstanceOf[`policy/v1beta1/PodSecurityPolicy`]
+  def policySlashv1beta1SlashPodSecurityPolicy: policySlashv1beta1SlashPodSecurityPolicy = "policy/v1beta1/PodSecurityPolicy".asInstanceOf[policySlashv1beta1SlashPodSecurityPolicy]
   @scala.inline
-  def `policy/v1beta1/PodSecurityPolicyList`: `policy/v1beta1/PodSecurityPolicyList` = "policy/v1beta1/PodSecurityPolicyList".asInstanceOf[`policy/v1beta1/PodSecurityPolicyList`]
+  def policySlashv1beta1SlashPodSecurityPolicyList: policySlashv1beta1SlashPodSecurityPolicyList = "policy/v1beta1/PodSecurityPolicyList".asInstanceOf[policySlashv1beta1SlashPodSecurityPolicyList]
   @scala.inline
   def ports: ports = "ports".asInstanceOf[ports]
   @scala.inline
@@ -1780,59 +1780,59 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def provisioner: provisioner = "provisioner".asInstanceOf[provisioner]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1`: `rbacDOTauthorizationDOTk8sDOTio/v1` = "rbac.authorization.k8s.io/v1".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1`]
+  def rbacDotauthorizationDotk8sDotioSlashv1: rbacDotauthorizationDotk8sDotioSlashv1 = "rbac.authorization.k8s.io/v1".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole` = "rbac.authorization.k8s.io/v1/ClusterRole".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRole: rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRole = "rbac.authorization.k8s.io/v1/ClusterRole".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRole]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding` = "rbac.authorization.k8s.io/v1/ClusterRoleBinding".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBinding: rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBinding = "rbac.authorization.k8s.io/v1/ClusterRoleBinding".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBinding]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList` = "rbac.authorization.k8s.io/v1/ClusterRoleBindingList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBindingList: rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBindingList = "rbac.authorization.k8s.io/v1/ClusterRoleBindingList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleBindingList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`: `rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList` = "rbac.authorization.k8s.io/v1/ClusterRoleList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleList: rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleList = "rbac.authorization.k8s.io/v1/ClusterRoleList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashClusterRoleList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/Role`: `rbacDOTauthorizationDOTk8sDOTio/v1/Role` = "rbac.authorization.k8s.io/v1/Role".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/Role`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashRole: rbacDotauthorizationDotk8sDotioSlashv1SlashRole = "rbac.authorization.k8s.io/v1/Role".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashRole]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding` = "rbac.authorization.k8s.io/v1/RoleBinding".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBinding: rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBinding = "rbac.authorization.k8s.io/v1/RoleBinding".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBinding]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList` = "rbac.authorization.k8s.io/v1/RoleBindingList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBindingList: rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBindingList = "rbac.authorization.k8s.io/v1/RoleBindingList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashRoleBindingList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`: `rbacDOTauthorizationDOTk8sDOTio/v1/RoleList` = "rbac.authorization.k8s.io/v1/RoleList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1SlashRoleList: rbacDotauthorizationDotk8sDotioSlashv1SlashRoleList = "rbac.authorization.k8s.io/v1/RoleList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1SlashRoleList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1` = "rbac.authorization.k8s.io/v1alpha1".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1: rbacDotauthorizationDotk8sDotioSlashv1alpha1 = "rbac.authorization.k8s.io/v1alpha1".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole` = "rbac.authorization.k8s.io/v1alpha1/ClusterRole".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRole: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRole = "rbac.authorization.k8s.io/v1alpha1/ClusterRole".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRole]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding` = "rbac.authorization.k8s.io/v1alpha1/ClusterRoleBinding".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBinding: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBinding = "rbac.authorization.k8s.io/v1alpha1/ClusterRoleBinding".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBinding]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList` = "rbac.authorization.k8s.io/v1alpha1/ClusterRoleBindingList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBindingList: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBindingList = "rbac.authorization.k8s.io/v1alpha1/ClusterRoleBindingList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleBindingList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList` = "rbac.authorization.k8s.io/v1alpha1/ClusterRoleList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleList: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleList = "rbac.authorization.k8s.io/v1alpha1/ClusterRoleList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashClusterRoleList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role` = "rbac.authorization.k8s.io/v1alpha1/Role".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRole: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRole = "rbac.authorization.k8s.io/v1alpha1/Role".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRole]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding` = "rbac.authorization.k8s.io/v1alpha1/RoleBinding".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBinding: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBinding = "rbac.authorization.k8s.io/v1alpha1/RoleBinding".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBinding]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList` = "rbac.authorization.k8s.io/v1alpha1/RoleBindingList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBindingList: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBindingList = "rbac.authorization.k8s.io/v1alpha1/RoleBindingList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleBindingList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`: `rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList` = "rbac.authorization.k8s.io/v1alpha1/RoleList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleList: rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleList = "rbac.authorization.k8s.io/v1alpha1/RoleList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1alpha1SlashRoleList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1` = "rbac.authorization.k8s.io/v1beta1".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1: rbacDotauthorizationDotk8sDotioSlashv1beta1 = "rbac.authorization.k8s.io/v1beta1".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole` = "rbac.authorization.k8s.io/v1beta1/ClusterRole".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRole: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRole = "rbac.authorization.k8s.io/v1beta1/ClusterRole".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRole]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding` = "rbac.authorization.k8s.io/v1beta1/ClusterRoleBinding".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBinding: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBinding = "rbac.authorization.k8s.io/v1beta1/ClusterRoleBinding".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBinding]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList` = "rbac.authorization.k8s.io/v1beta1/ClusterRoleBindingList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBindingList: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBindingList = "rbac.authorization.k8s.io/v1beta1/ClusterRoleBindingList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleBindingList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList` = "rbac.authorization.k8s.io/v1beta1/ClusterRoleList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleList: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleList = "rbac.authorization.k8s.io/v1beta1/ClusterRoleList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashClusterRoleList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role` = "rbac.authorization.k8s.io/v1beta1/Role".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRole: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRole = "rbac.authorization.k8s.io/v1beta1/Role".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRole]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding` = "rbac.authorization.k8s.io/v1beta1/RoleBinding".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBinding: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBinding = "rbac.authorization.k8s.io/v1beta1/RoleBinding".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBinding]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList` = "rbac.authorization.k8s.io/v1beta1/RoleBindingList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBindingList: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBindingList = "rbac.authorization.k8s.io/v1beta1/RoleBindingList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleBindingList]
   @scala.inline
-  def `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`: `rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList` = "rbac.authorization.k8s.io/v1beta1/RoleList".asInstanceOf[`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`]
+  def rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleList: rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleList = "rbac.authorization.k8s.io/v1beta1/RoleList".asInstanceOf[rbacDotauthorizationDotk8sDotioSlashv1beta1SlashRoleList]
   @scala.inline
   def reason: reason = "reason".asInstanceOf[reason]
   @scala.inline
@@ -1856,33 +1856,33 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1`: `schedulingDOTk8sDOTio/v1` = "scheduling.k8s.io/v1".asInstanceOf[`schedulingDOTk8sDOTio/v1`]
+  def schedulingDotk8sDotioSlashv1: schedulingDotk8sDotioSlashv1 = "scheduling.k8s.io/v1".asInstanceOf[schedulingDotk8sDotioSlashv1]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1/PriorityClass`: `schedulingDOTk8sDOTio/v1/PriorityClass` = "scheduling.k8s.io/v1/PriorityClass".asInstanceOf[`schedulingDOTk8sDOTio/v1/PriorityClass`]
+  def schedulingDotk8sDotioSlashv1SlashPriorityClass: schedulingDotk8sDotioSlashv1SlashPriorityClass = "scheduling.k8s.io/v1/PriorityClass".asInstanceOf[schedulingDotk8sDotioSlashv1SlashPriorityClass]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1/PriorityClassList`: `schedulingDOTk8sDOTio/v1/PriorityClassList` = "scheduling.k8s.io/v1/PriorityClassList".asInstanceOf[`schedulingDOTk8sDOTio/v1/PriorityClassList`]
+  def schedulingDotk8sDotioSlashv1SlashPriorityClassList: schedulingDotk8sDotioSlashv1SlashPriorityClassList = "scheduling.k8s.io/v1/PriorityClassList".asInstanceOf[schedulingDotk8sDotioSlashv1SlashPriorityClassList]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1alpha1`: `schedulingDOTk8sDOTio/v1alpha1` = "scheduling.k8s.io/v1alpha1".asInstanceOf[`schedulingDOTk8sDOTio/v1alpha1`]
+  def schedulingDotk8sDotioSlashv1alpha1: schedulingDotk8sDotioSlashv1alpha1 = "scheduling.k8s.io/v1alpha1".asInstanceOf[schedulingDotk8sDotioSlashv1alpha1]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1alpha1/PriorityClass`: `schedulingDOTk8sDOTio/v1alpha1/PriorityClass` = "scheduling.k8s.io/v1alpha1/PriorityClass".asInstanceOf[`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`]
+  def schedulingDotk8sDotioSlashv1alpha1SlashPriorityClass: schedulingDotk8sDotioSlashv1alpha1SlashPriorityClass = "scheduling.k8s.io/v1alpha1/PriorityClass".asInstanceOf[schedulingDotk8sDotioSlashv1alpha1SlashPriorityClass]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`: `schedulingDOTk8sDOTio/v1alpha1/PriorityClassList` = "scheduling.k8s.io/v1alpha1/PriorityClassList".asInstanceOf[`schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`]
+  def schedulingDotk8sDotioSlashv1alpha1SlashPriorityClassList: schedulingDotk8sDotioSlashv1alpha1SlashPriorityClassList = "scheduling.k8s.io/v1alpha1/PriorityClassList".asInstanceOf[schedulingDotk8sDotioSlashv1alpha1SlashPriorityClassList]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1beta1`: `schedulingDOTk8sDOTio/v1beta1` = "scheduling.k8s.io/v1beta1".asInstanceOf[`schedulingDOTk8sDOTio/v1beta1`]
+  def schedulingDotk8sDotioSlashv1beta1: schedulingDotk8sDotioSlashv1beta1 = "scheduling.k8s.io/v1beta1".asInstanceOf[schedulingDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1beta1/PriorityClass`: `schedulingDOTk8sDOTio/v1beta1/PriorityClass` = "scheduling.k8s.io/v1beta1/PriorityClass".asInstanceOf[`schedulingDOTk8sDOTio/v1beta1/PriorityClass`]
+  def schedulingDotk8sDotioSlashv1beta1SlashPriorityClass: schedulingDotk8sDotioSlashv1beta1SlashPriorityClass = "scheduling.k8s.io/v1beta1/PriorityClass".asInstanceOf[schedulingDotk8sDotioSlashv1beta1SlashPriorityClass]
   @scala.inline
-  def `schedulingDOTk8sDOTio/v1beta1/PriorityClassList`: `schedulingDOTk8sDOTio/v1beta1/PriorityClassList` = "scheduling.k8s.io/v1beta1/PriorityClassList".asInstanceOf[`schedulingDOTk8sDOTio/v1beta1/PriorityClassList`]
+  def schedulingDotk8sDotioSlashv1beta1SlashPriorityClassList: schedulingDotk8sDotioSlashv1beta1SlashPriorityClassList = "scheduling.k8s.io/v1beta1/PriorityClassList".asInstanceOf[schedulingDotk8sDotioSlashv1beta1SlashPriorityClassList]
   @scala.inline
   def secrets: secrets = "secrets".asInstanceOf[secrets]
   @scala.inline
   def series: series = "series".asInstanceOf[series]
   @scala.inline
-  def `settingsDOTk8sDOTio/v1alpha1`: `settingsDOTk8sDOTio/v1alpha1` = "settings.k8s.io/v1alpha1".asInstanceOf[`settingsDOTk8sDOTio/v1alpha1`]
+  def settingsDotk8sDotioSlashv1alpha1: settingsDotk8sDotioSlashv1alpha1 = "settings.k8s.io/v1alpha1".asInstanceOf[settingsDotk8sDotioSlashv1alpha1]
   @scala.inline
-  def `settingsDOTk8sDOTio/v1alpha1/PodPreset`: `settingsDOTk8sDOTio/v1alpha1/PodPreset` = "settings.k8s.io/v1alpha1/PodPreset".asInstanceOf[`settingsDOTk8sDOTio/v1alpha1/PodPreset`]
+  def settingsDotk8sDotioSlashv1alpha1SlashPodPreset: settingsDotk8sDotioSlashv1alpha1SlashPodPreset = "settings.k8s.io/v1alpha1/PodPreset".asInstanceOf[settingsDotk8sDotioSlashv1alpha1SlashPodPreset]
   @scala.inline
-  def `settingsDOTk8sDOTio/v1alpha1/PodPresetList`: `settingsDOTk8sDOTio/v1alpha1/PodPresetList` = "settings.k8s.io/v1alpha1/PodPresetList".asInstanceOf[`settingsDOTk8sDOTio/v1alpha1/PodPresetList`]
+  def settingsDotk8sDotioSlashv1alpha1SlashPodPresetList: settingsDotk8sDotioSlashv1alpha1SlashPodPresetList = "settings.k8s.io/v1alpha1/PodPresetList".asInstanceOf[settingsDotk8sDotioSlashv1alpha1SlashPodPresetList]
   @scala.inline
   def source: source = "source".asInstanceOf[source]
   @scala.inline
@@ -1890,43 +1890,43 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def status_ : status_ = "status".asInstanceOf[status_]
   @scala.inline
-  def `storageDOTk8sDOTio/v1`: `storageDOTk8sDOTio/v1` = "storage.k8s.io/v1".asInstanceOf[`storageDOTk8sDOTio/v1`]
+  def storageDotk8sDotioSlashv1: storageDotk8sDotioSlashv1 = "storage.k8s.io/v1".asInstanceOf[storageDotk8sDotioSlashv1]
   @scala.inline
-  def `storageDOTk8sDOTio/v1/CSINode`: `storageDOTk8sDOTio/v1/CSINode` = "storage.k8s.io/v1/CSINode".asInstanceOf[`storageDOTk8sDOTio/v1/CSINode`]
+  def storageDotk8sDotioSlashv1SlashCSINode: storageDotk8sDotioSlashv1SlashCSINode = "storage.k8s.io/v1/CSINode".asInstanceOf[storageDotk8sDotioSlashv1SlashCSINode]
   @scala.inline
-  def `storageDOTk8sDOTio/v1/CSINodeList`: `storageDOTk8sDOTio/v1/CSINodeList` = "storage.k8s.io/v1/CSINodeList".asInstanceOf[`storageDOTk8sDOTio/v1/CSINodeList`]
+  def storageDotk8sDotioSlashv1SlashCSINodeList: storageDotk8sDotioSlashv1SlashCSINodeList = "storage.k8s.io/v1/CSINodeList".asInstanceOf[storageDotk8sDotioSlashv1SlashCSINodeList]
   @scala.inline
-  def `storageDOTk8sDOTio/v1/StorageClass`: `storageDOTk8sDOTio/v1/StorageClass` = "storage.k8s.io/v1/StorageClass".asInstanceOf[`storageDOTk8sDOTio/v1/StorageClass`]
+  def storageDotk8sDotioSlashv1SlashStorageClass: storageDotk8sDotioSlashv1SlashStorageClass = "storage.k8s.io/v1/StorageClass".asInstanceOf[storageDotk8sDotioSlashv1SlashStorageClass]
   @scala.inline
-  def `storageDOTk8sDOTio/v1/StorageClassList`: `storageDOTk8sDOTio/v1/StorageClassList` = "storage.k8s.io/v1/StorageClassList".asInstanceOf[`storageDOTk8sDOTio/v1/StorageClassList`]
+  def storageDotk8sDotioSlashv1SlashStorageClassList: storageDotk8sDotioSlashv1SlashStorageClassList = "storage.k8s.io/v1/StorageClassList".asInstanceOf[storageDotk8sDotioSlashv1SlashStorageClassList]
   @scala.inline
-  def `storageDOTk8sDOTio/v1/VolumeAttachment`: `storageDOTk8sDOTio/v1/VolumeAttachment` = "storage.k8s.io/v1/VolumeAttachment".asInstanceOf[`storageDOTk8sDOTio/v1/VolumeAttachment`]
+  def storageDotk8sDotioSlashv1SlashVolumeAttachment: storageDotk8sDotioSlashv1SlashVolumeAttachment = "storage.k8s.io/v1/VolumeAttachment".asInstanceOf[storageDotk8sDotioSlashv1SlashVolumeAttachment]
   @scala.inline
-  def `storageDOTk8sDOTio/v1/VolumeAttachmentList`: `storageDOTk8sDOTio/v1/VolumeAttachmentList` = "storage.k8s.io/v1/VolumeAttachmentList".asInstanceOf[`storageDOTk8sDOTio/v1/VolumeAttachmentList`]
+  def storageDotk8sDotioSlashv1SlashVolumeAttachmentList: storageDotk8sDotioSlashv1SlashVolumeAttachmentList = "storage.k8s.io/v1/VolumeAttachmentList".asInstanceOf[storageDotk8sDotioSlashv1SlashVolumeAttachmentList]
   @scala.inline
-  def `storageDOTk8sDOTio/v1alpha1`: `storageDOTk8sDOTio/v1alpha1` = "storage.k8s.io/v1alpha1".asInstanceOf[`storageDOTk8sDOTio/v1alpha1`]
+  def storageDotk8sDotioSlashv1alpha1: storageDotk8sDotioSlashv1alpha1 = "storage.k8s.io/v1alpha1".asInstanceOf[storageDotk8sDotioSlashv1alpha1]
   @scala.inline
-  def `storageDOTk8sDOTio/v1alpha1/VolumeAttachment`: `storageDOTk8sDOTio/v1alpha1/VolumeAttachment` = "storage.k8s.io/v1alpha1/VolumeAttachment".asInstanceOf[`storageDOTk8sDOTio/v1alpha1/VolumeAttachment`]
+  def storageDotk8sDotioSlashv1alpha1SlashVolumeAttachment: storageDotk8sDotioSlashv1alpha1SlashVolumeAttachment = "storage.k8s.io/v1alpha1/VolumeAttachment".asInstanceOf[storageDotk8sDotioSlashv1alpha1SlashVolumeAttachment]
   @scala.inline
-  def `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`: `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList` = "storage.k8s.io/v1alpha1/VolumeAttachmentList".asInstanceOf[`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`]
+  def storageDotk8sDotioSlashv1alpha1SlashVolumeAttachmentList: storageDotk8sDotioSlashv1alpha1SlashVolumeAttachmentList = "storage.k8s.io/v1alpha1/VolumeAttachmentList".asInstanceOf[storageDotk8sDotioSlashv1alpha1SlashVolumeAttachmentList]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1`: `storageDOTk8sDOTio/v1beta1` = "storage.k8s.io/v1beta1".asInstanceOf[`storageDOTk8sDOTio/v1beta1`]
+  def storageDotk8sDotioSlashv1beta1: storageDotk8sDotioSlashv1beta1 = "storage.k8s.io/v1beta1".asInstanceOf[storageDotk8sDotioSlashv1beta1]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/CSIDriver`: `storageDOTk8sDOTio/v1beta1/CSIDriver` = "storage.k8s.io/v1beta1/CSIDriver".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSIDriver`]
+  def storageDotk8sDotioSlashv1beta1SlashCSIDriver: storageDotk8sDotioSlashv1beta1SlashCSIDriver = "storage.k8s.io/v1beta1/CSIDriver".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashCSIDriver]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/CSIDriverList`: `storageDOTk8sDOTio/v1beta1/CSIDriverList` = "storage.k8s.io/v1beta1/CSIDriverList".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSIDriverList`]
+  def storageDotk8sDotioSlashv1beta1SlashCSIDriverList: storageDotk8sDotioSlashv1beta1SlashCSIDriverList = "storage.k8s.io/v1beta1/CSIDriverList".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashCSIDriverList]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/CSINode`: `storageDOTk8sDOTio/v1beta1/CSINode` = "storage.k8s.io/v1beta1/CSINode".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSINode`]
+  def storageDotk8sDotioSlashv1beta1SlashCSINode: storageDotk8sDotioSlashv1beta1SlashCSINode = "storage.k8s.io/v1beta1/CSINode".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashCSINode]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/CSINodeList`: `storageDOTk8sDOTio/v1beta1/CSINodeList` = "storage.k8s.io/v1beta1/CSINodeList".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSINodeList`]
+  def storageDotk8sDotioSlashv1beta1SlashCSINodeList: storageDotk8sDotioSlashv1beta1SlashCSINodeList = "storage.k8s.io/v1beta1/CSINodeList".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashCSINodeList]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/StorageClass`: `storageDOTk8sDOTio/v1beta1/StorageClass` = "storage.k8s.io/v1beta1/StorageClass".asInstanceOf[`storageDOTk8sDOTio/v1beta1/StorageClass`]
+  def storageDotk8sDotioSlashv1beta1SlashStorageClass: storageDotk8sDotioSlashv1beta1SlashStorageClass = "storage.k8s.io/v1beta1/StorageClass".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashStorageClass]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/StorageClassList`: `storageDOTk8sDOTio/v1beta1/StorageClassList` = "storage.k8s.io/v1beta1/StorageClassList".asInstanceOf[`storageDOTk8sDOTio/v1beta1/StorageClassList`]
+  def storageDotk8sDotioSlashv1beta1SlashStorageClassList: storageDotk8sDotioSlashv1beta1SlashStorageClassList = "storage.k8s.io/v1beta1/StorageClassList".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashStorageClassList]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/VolumeAttachment`: `storageDOTk8sDOTio/v1beta1/VolumeAttachment` = "storage.k8s.io/v1beta1/VolumeAttachment".asInstanceOf[`storageDOTk8sDOTio/v1beta1/VolumeAttachment`]
+  def storageDotk8sDotioSlashv1beta1SlashVolumeAttachment: storageDotk8sDotioSlashv1beta1SlashVolumeAttachment = "storage.k8s.io/v1beta1/VolumeAttachment".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashVolumeAttachment]
   @scala.inline
-  def `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`: `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList` = "storage.k8s.io/v1beta1/VolumeAttachmentList".asInstanceOf[`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`]
+  def storageDotk8sDotioSlashv1beta1SlashVolumeAttachmentList: storageDotk8sDotioSlashv1beta1SlashVolumeAttachmentList = "storage.k8s.io/v1beta1/VolumeAttachmentList".asInstanceOf[storageDotk8sDotioSlashv1beta1SlashVolumeAttachmentList]
   @scala.inline
   def stringData: stringData = "stringData".asInstanceOf[stringData]
   @scala.inline
@@ -1942,73 +1942,73 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
   @scala.inline
-  def `v1/Binding`: `v1/Binding` = "v1/Binding".asInstanceOf[`v1/Binding`]
+  def v1SlashBinding: v1SlashBinding = "v1/Binding".asInstanceOf[v1SlashBinding]
   @scala.inline
-  def `v1/ComponentStatus`: `v1/ComponentStatus` = "v1/ComponentStatus".asInstanceOf[`v1/ComponentStatus`]
+  def v1SlashComponentStatus: v1SlashComponentStatus = "v1/ComponentStatus".asInstanceOf[v1SlashComponentStatus]
   @scala.inline
-  def `v1/ComponentStatusList`: `v1/ComponentStatusList` = "v1/ComponentStatusList".asInstanceOf[`v1/ComponentStatusList`]
+  def v1SlashComponentStatusList: v1SlashComponentStatusList = "v1/ComponentStatusList".asInstanceOf[v1SlashComponentStatusList]
   @scala.inline
-  def `v1/ConfigMap`: `v1/ConfigMap` = "v1/ConfigMap".asInstanceOf[`v1/ConfigMap`]
+  def v1SlashConfigMap: v1SlashConfigMap = "v1/ConfigMap".asInstanceOf[v1SlashConfigMap]
   @scala.inline
-  def `v1/ConfigMapList`: `v1/ConfigMapList` = "v1/ConfigMapList".asInstanceOf[`v1/ConfigMapList`]
+  def v1SlashConfigMapList: v1SlashConfigMapList = "v1/ConfigMapList".asInstanceOf[v1SlashConfigMapList]
   @scala.inline
-  def `v1/Endpoints`: `v1/Endpoints` = "v1/Endpoints".asInstanceOf[`v1/Endpoints`]
+  def v1SlashEndpoints: v1SlashEndpoints = "v1/Endpoints".asInstanceOf[v1SlashEndpoints]
   @scala.inline
-  def `v1/EndpointsList`: `v1/EndpointsList` = "v1/EndpointsList".asInstanceOf[`v1/EndpointsList`]
+  def v1SlashEndpointsList: v1SlashEndpointsList = "v1/EndpointsList".asInstanceOf[v1SlashEndpointsList]
   @scala.inline
-  def `v1/Event`: `v1/Event` = "v1/Event".asInstanceOf[`v1/Event`]
+  def v1SlashEvent: v1SlashEvent = "v1/Event".asInstanceOf[v1SlashEvent]
   @scala.inline
-  def `v1/EventList`: `v1/EventList` = "v1/EventList".asInstanceOf[`v1/EventList`]
+  def v1SlashEventList: v1SlashEventList = "v1/EventList".asInstanceOf[v1SlashEventList]
   @scala.inline
-  def `v1/LimitRange`: `v1/LimitRange` = "v1/LimitRange".asInstanceOf[`v1/LimitRange`]
+  def v1SlashLimitRange: v1SlashLimitRange = "v1/LimitRange".asInstanceOf[v1SlashLimitRange]
   @scala.inline
-  def `v1/LimitRangeList`: `v1/LimitRangeList` = "v1/LimitRangeList".asInstanceOf[`v1/LimitRangeList`]
+  def v1SlashLimitRangeList: v1SlashLimitRangeList = "v1/LimitRangeList".asInstanceOf[v1SlashLimitRangeList]
   @scala.inline
-  def `v1/Namespace`: `v1/Namespace` = "v1/Namespace".asInstanceOf[`v1/Namespace`]
+  def v1SlashNamespace: v1SlashNamespace = "v1/Namespace".asInstanceOf[v1SlashNamespace]
   @scala.inline
-  def `v1/NamespaceList`: `v1/NamespaceList` = "v1/NamespaceList".asInstanceOf[`v1/NamespaceList`]
+  def v1SlashNamespaceList: v1SlashNamespaceList = "v1/NamespaceList".asInstanceOf[v1SlashNamespaceList]
   @scala.inline
-  def `v1/Node`: `v1/Node` = "v1/Node".asInstanceOf[`v1/Node`]
+  def v1SlashNode: v1SlashNode = "v1/Node".asInstanceOf[v1SlashNode]
   @scala.inline
-  def `v1/NodeList`: `v1/NodeList` = "v1/NodeList".asInstanceOf[`v1/NodeList`]
+  def v1SlashNodeList: v1SlashNodeList = "v1/NodeList".asInstanceOf[v1SlashNodeList]
   @scala.inline
-  def `v1/PersistentVolume`: `v1/PersistentVolume` = "v1/PersistentVolume".asInstanceOf[`v1/PersistentVolume`]
+  def v1SlashPersistentVolume: v1SlashPersistentVolume = "v1/PersistentVolume".asInstanceOf[v1SlashPersistentVolume]
   @scala.inline
-  def `v1/PersistentVolumeClaim`: `v1/PersistentVolumeClaim` = "v1/PersistentVolumeClaim".asInstanceOf[`v1/PersistentVolumeClaim`]
+  def v1SlashPersistentVolumeClaim: v1SlashPersistentVolumeClaim = "v1/PersistentVolumeClaim".asInstanceOf[v1SlashPersistentVolumeClaim]
   @scala.inline
-  def `v1/PersistentVolumeClaimList`: `v1/PersistentVolumeClaimList` = "v1/PersistentVolumeClaimList".asInstanceOf[`v1/PersistentVolumeClaimList`]
+  def v1SlashPersistentVolumeClaimList: v1SlashPersistentVolumeClaimList = "v1/PersistentVolumeClaimList".asInstanceOf[v1SlashPersistentVolumeClaimList]
   @scala.inline
-  def `v1/PersistentVolumeList`: `v1/PersistentVolumeList` = "v1/PersistentVolumeList".asInstanceOf[`v1/PersistentVolumeList`]
+  def v1SlashPersistentVolumeList: v1SlashPersistentVolumeList = "v1/PersistentVolumeList".asInstanceOf[v1SlashPersistentVolumeList]
   @scala.inline
-  def `v1/Pod`: `v1/Pod` = "v1/Pod".asInstanceOf[`v1/Pod`]
+  def v1SlashPod: v1SlashPod = "v1/Pod".asInstanceOf[v1SlashPod]
   @scala.inline
-  def `v1/PodList`: `v1/PodList` = "v1/PodList".asInstanceOf[`v1/PodList`]
+  def v1SlashPodList: v1SlashPodList = "v1/PodList".asInstanceOf[v1SlashPodList]
   @scala.inline
-  def `v1/PodTemplate`: `v1/PodTemplate` = "v1/PodTemplate".asInstanceOf[`v1/PodTemplate`]
+  def v1SlashPodTemplate: v1SlashPodTemplate = "v1/PodTemplate".asInstanceOf[v1SlashPodTemplate]
   @scala.inline
-  def `v1/PodTemplateList`: `v1/PodTemplateList` = "v1/PodTemplateList".asInstanceOf[`v1/PodTemplateList`]
+  def v1SlashPodTemplateList: v1SlashPodTemplateList = "v1/PodTemplateList".asInstanceOf[v1SlashPodTemplateList]
   @scala.inline
-  def `v1/ReplicationController`: `v1/ReplicationController` = "v1/ReplicationController".asInstanceOf[`v1/ReplicationController`]
+  def v1SlashReplicationController: v1SlashReplicationController = "v1/ReplicationController".asInstanceOf[v1SlashReplicationController]
   @scala.inline
-  def `v1/ReplicationControllerList`: `v1/ReplicationControllerList` = "v1/ReplicationControllerList".asInstanceOf[`v1/ReplicationControllerList`]
+  def v1SlashReplicationControllerList: v1SlashReplicationControllerList = "v1/ReplicationControllerList".asInstanceOf[v1SlashReplicationControllerList]
   @scala.inline
-  def `v1/ResourceQuota`: `v1/ResourceQuota` = "v1/ResourceQuota".asInstanceOf[`v1/ResourceQuota`]
+  def v1SlashResourceQuota: v1SlashResourceQuota = "v1/ResourceQuota".asInstanceOf[v1SlashResourceQuota]
   @scala.inline
-  def `v1/ResourceQuotaList`: `v1/ResourceQuotaList` = "v1/ResourceQuotaList".asInstanceOf[`v1/ResourceQuotaList`]
+  def v1SlashResourceQuotaList: v1SlashResourceQuotaList = "v1/ResourceQuotaList".asInstanceOf[v1SlashResourceQuotaList]
   @scala.inline
-  def `v1/Secret`: `v1/Secret` = "v1/Secret".asInstanceOf[`v1/Secret`]
+  def v1SlashSecret: v1SlashSecret = "v1/Secret".asInstanceOf[v1SlashSecret]
   @scala.inline
-  def `v1/SecretList`: `v1/SecretList` = "v1/SecretList".asInstanceOf[`v1/SecretList`]
+  def v1SlashSecretList: v1SlashSecretList = "v1/SecretList".asInstanceOf[v1SlashSecretList]
   @scala.inline
-  def `v1/Service`: `v1/Service` = "v1/Service".asInstanceOf[`v1/Service`]
+  def v1SlashService: v1SlashService = "v1/Service".asInstanceOf[v1SlashService]
   @scala.inline
-  def `v1/ServiceAccount`: `v1/ServiceAccount` = "v1/ServiceAccount".asInstanceOf[`v1/ServiceAccount`]
+  def v1SlashServiceAccount: v1SlashServiceAccount = "v1/ServiceAccount".asInstanceOf[v1SlashServiceAccount]
   @scala.inline
-  def `v1/ServiceAccountList`: `v1/ServiceAccountList` = "v1/ServiceAccountList".asInstanceOf[`v1/ServiceAccountList`]
+  def v1SlashServiceAccountList: v1SlashServiceAccountList = "v1/ServiceAccountList".asInstanceOf[v1SlashServiceAccountList]
   @scala.inline
-  def `v1/ServiceList`: `v1/ServiceList` = "v1/ServiceList".asInstanceOf[`v1/ServiceList`]
+  def v1SlashServiceList: v1SlashServiceList = "v1/ServiceList".asInstanceOf[v1SlashServiceList]
   @scala.inline
-  def `v1/Status`: `v1/Status` = "v1/Status".asInstanceOf[`v1/Status`]
+  def v1SlashStatus: v1SlashStatus = "v1/Status".asInstanceOf[v1SlashStatus]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline

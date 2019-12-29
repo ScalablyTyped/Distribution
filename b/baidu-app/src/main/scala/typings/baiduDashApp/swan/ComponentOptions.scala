@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 	 * Component组件参数
 	 */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof baidu-app.swan.Lifetimes ]:? baidu-app.swan.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: typings.baiduDashApp.swan.Component[Data, Props] */, Data, Methods, Props] extends js.Object {
+- Dropped {[ P in keyof baidu-app.swan.Lifetimes ]:? baidu-app.swan.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends js.Object {
   /**
   		 * 类似于mixins和traits的组件间代码复用机制
   		 * 参见 [behaviors](https://smartprogram.baidu.com/docs/develop/framework/custom-component_behaviors/)
@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation._
   var behaviors: js.UndefOr[
     js.Array[
       (ComponentOptions[
-        typings.baiduDashApp.swan.Component[js.Object, js.Object], 
-        DefaultData[typings.baiduDashApp.swan.Component[js.Object, js.Object]], 
-        DefaultMethods[typings.baiduDashApp.swan.Component[js.Object, js.Object]], 
+        Component[js.Object, js.Object], 
+        DefaultData[Component[js.Object, js.Object]], 
+        DefaultMethods[Component[js.Object, js.Object]], 
         PropsDefinition[DefaultProps]
       ]) | String
     ]
@@ -67,12 +67,12 @@ import scala.scalajs.js.annotation._
 
 object ComponentOptions {
   @scala.inline
-  def apply[Instance /* <: typings.baiduDashApp.swan.Component[Data, Props] */, Data, Methods, Props](
+  def apply[Instance /* <: Component[Data, Props] */, Data, Methods, Props](
     behaviors: js.Array[
       (ComponentOptions[
-        typings.baiduDashApp.swan.Component[js.Object, js.Object], 
-        DefaultData[typings.baiduDashApp.swan.Component[js.Object, js.Object]], 
-        DefaultMethods[typings.baiduDashApp.swan.Component[js.Object, js.Object]], 
+        Component[js.Object, js.Object], 
+        DefaultData[Component[js.Object, js.Object]], 
+        DefaultMethods[Component[js.Object, js.Object]], 
         PropsDefinition[DefaultProps]
       ]) | String
     ] = null,

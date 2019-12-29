@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,7 @@ trait scaleRange extends js.Object {
     * @param params.sampleSize The number of features in the `layer` to sample for spatial statistics. A higher sample size will yield more precise results. However, higher sample sizes also require more time for the function to process the result.
     *
     */
-  def scaleRange(params: scaleRangeScaleRangeParams): IPromise[ScaleRangeResult]
+  def scaleRange(params: scaleRangeScaleRangeParams): js.Promise[ScaleRangeResult]
 }
 
 @JSGlobal("__esri.scaleRange")

@@ -1,11 +1,11 @@
 package typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod
 
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:confirmed`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:created`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:delayed`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:failed`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:pending`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:resolved`
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonconfirmed
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColoncreated
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColondelayed
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonfailed
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonpending
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonresolved
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,7 +41,7 @@ trait EventResource[T] extends js.Object {
   /**
     * Event type.
     */
-  var `type`: `charge:created` | `charge:confirmed` | `charge:failed` | `charge:delayed` | `charge:pending` | `charge:resolved`
+  var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved
 }
 
 object EventResource {
@@ -52,7 +52,7 @@ object EventResource {
     data: T,
     id: String,
     resource: event,
-    `type`: `charge:created` | `charge:confirmed` | `charge:failed` | `charge:delayed` | `charge:pending` | `charge:resolved`
+    `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved
   ): EventResource[T] = {
     val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

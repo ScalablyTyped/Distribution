@@ -3,7 +3,7 @@ package typings.zfont.zfontMod.zdogMod
 import typings.zdog.zdogMod.Anchor
 import typings.zdog.zdogMod.GroupOptions
 import typings.zdog.zdogMod.VectorOptions
-import typings.zfont.zfontNumbers.`false`
+import typings.zfont.zfontBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

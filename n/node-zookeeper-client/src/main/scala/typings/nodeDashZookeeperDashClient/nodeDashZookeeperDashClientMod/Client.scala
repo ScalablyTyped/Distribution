@@ -1,7 +1,7 @@
 package typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientMod
 
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientStrings.authenticationFailed
 import typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientStrings.connected
 import typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientStrings.connectedReadOnly

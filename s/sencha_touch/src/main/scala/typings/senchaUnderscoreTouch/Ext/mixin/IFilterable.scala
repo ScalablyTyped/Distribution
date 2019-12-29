@@ -27,7 +27,7 @@ trait IFilterable extends IBase {
   		*/
   var filter: js.UndefOr[js.Function1[/* data */ js.UndefOr[Array], Array]] = js.undefined
   /** [Config Option] (String) */
-  var filterRoot: js.UndefOr[java.lang.String] = js.undefined
+  var filterRoot: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var filtered: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Array) */
@@ -39,7 +39,7 @@ trait IFilterable extends IBase {
   /** [Method] Returns the value of filterRoot
   		* @returns String
   		*/
-  var getFilterRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFilterRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of filters
   		* @returns Array
   		*/
@@ -65,7 +65,7 @@ trait IFilterable extends IBase {
   /** [Method] Sets the value of filterRoot
   		* @param filterRoot String The new value.
   		*/
-  var setFilterRoot: js.UndefOr[js.Function1[/* filterRoot */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFilterRoot: js.UndefOr[js.Function1[/* filterRoot */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of filters
   		* @param filters Array The new value.
   		*/
@@ -86,15 +86,15 @@ object IFilterable {
     currentSortFn: js.Any = null,
     destroy: () => Unit = null,
     dirtyFilterFn: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     filter: /* data */ js.UndefOr[Array] => Array = null,
-    filterRoot: java.lang.String = null,
+    filterRoot: String = null,
     filtered: js.UndefOr[Boolean] = js.undefined,
     filters: Array = null,
     getFilterFn: () => _ = null,
-    getFilterRoot: () => java.lang.String = null,
+    getFilterRoot: () => String = null,
     getFilters: () => Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     insertFilter: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any]) => _ = null,
@@ -103,7 +103,7 @@ object IFilterable {
     platformConfig: js.Any = null,
     removeFilters: /* filters */ js.UndefOr[Array] => Unit = null,
     self: IClass = null,
-    setFilterRoot: /* filterRoot */ js.UndefOr[java.lang.String] => Unit = null,
+    setFilterRoot: /* filterRoot */ js.UndefOr[String] => Unit = null,
     setFilters: /* filters */ js.UndefOr[Array] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,

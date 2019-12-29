@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.Services
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.hardLeft
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.hardRight
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.left
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.lightLeft
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.lightRight
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.none
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.right
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.straight
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.unknown
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.uturnLeft
-import typings.winrtDashUwp.Windows.Services.Maps.Guidance.GuidanceLaneMarkers.uturnRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

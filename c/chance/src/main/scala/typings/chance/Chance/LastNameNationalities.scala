@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.chance.chanceStrings.jp
   - typings.chance.chanceStrings.es
   - typings.chance.chanceStrings.fr
-  - typings.chance.chanceStrings.`*`
+  - typings.chance.chanceStrings.Asterisk
   - typings.chance.chanceStrings.en
   - typings.chance.chanceStrings.it
 */
@@ -19,7 +19,7 @@ trait LastNameNationalities extends js.Object
 
 object LastNameNationalities {
   @scala.inline
-  def `*`: typings.chance.chanceStrings.`*` = this.cast("*")
+  def Asterisk: typings.chance.chanceStrings.Asterisk = this.cast("*")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-floater
 
-Typings are for version 0.6.5
+Typings are for version 0.7.2
 
 ## Library description:
 Floaters everywhere!

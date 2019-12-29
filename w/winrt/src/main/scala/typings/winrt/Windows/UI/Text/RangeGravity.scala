@@ -1,11 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.RangeGravity.backward
-import typings.winrt.Windows.UI.Text.RangeGravity.forward
-import typings.winrt.Windows.UI.Text.RangeGravity.inward
-import typings.winrt.Windows.UI.Text.RangeGravity.outward
-import typings.winrt.Windows.UI.Text.RangeGravity.uIBehavior
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

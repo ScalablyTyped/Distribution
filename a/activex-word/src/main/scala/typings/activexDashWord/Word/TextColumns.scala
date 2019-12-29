@@ -16,7 +16,8 @@ class TextColumns protected () extends js.Object {
   val Parent: js.Any = js.native
   var Spacing: Double = js.native
   var Width: Double = js.native
-  var `Word.TextColumns_typekey`: TextColumns = js.native
+  @JSName("Word.TextColumns_typekey")
+  var WordDotTextColumns_typekey: TextColumns = js.native
   def Add(): TextColumn = js.native
   def Add(Width: js.Any): TextColumn = js.native
   def Add(Width: js.Any, Spacing: js.Any): TextColumn = js.native

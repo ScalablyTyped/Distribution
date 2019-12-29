@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivitySensorReadingConfidence.high
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivitySensorReadingConfidence.low
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

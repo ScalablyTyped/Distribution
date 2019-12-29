@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType
-import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS
-import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS_XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

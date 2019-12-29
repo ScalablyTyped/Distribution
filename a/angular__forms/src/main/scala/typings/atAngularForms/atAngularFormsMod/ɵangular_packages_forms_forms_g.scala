@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/forms", "ɵangular_packages_forms_forms_g")
+@JSImport("@angular/forms", "\u0275angular_packages_forms_forms_g")
 @js.native
 class ɵangular_packages_forms_forms_g protected () extends js.Object {
   def this(cd: AbstractControlDirective) = this()

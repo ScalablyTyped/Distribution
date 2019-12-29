@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.down
-import typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.locked
-import typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

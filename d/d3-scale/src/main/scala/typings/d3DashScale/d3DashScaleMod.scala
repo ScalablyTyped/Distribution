@@ -1,20 +1,5 @@
 package typings.d3DashScale
 
-import typings.d3DashScale.d3DashScaleMod.InterpolatorFactory
-import typings.d3DashScale.d3DashScaleMod.ScaleBand
-import typings.d3DashScale.d3DashScaleMod.ScaleContinuousNumeric
-import typings.d3DashScale.d3DashScaleMod.ScaleDiverging
-import typings.d3DashScale.d3DashScaleMod.ScaleIdentity
-import typings.d3DashScale.d3DashScaleMod.ScaleLinear
-import typings.d3DashScale.d3DashScaleMod.ScaleLogarithmic
-import typings.d3DashScale.d3DashScaleMod.ScaleOrdinal
-import typings.d3DashScale.d3DashScaleMod.ScalePoint
-import typings.d3DashScale.d3DashScaleMod.ScalePower
-import typings.d3DashScale.d3DashScaleMod.ScaleQuantile
-import typings.d3DashScale.d3DashScaleMod.ScaleQuantize
-import typings.d3DashScale.d3DashScaleMod.ScaleSequential
-import typings.d3DashScale.d3DashScaleMod.ScaleThreshold
-import typings.d3DashScale.d3DashScaleMod.ScaleTime
 import typings.d3DashScale.d3DashScaleStrings.`implicit`
 import typings.d3DashTime.d3DashTimeMod.CountableTimeInterval
 import typings.d3DashTime.d3DashTimeMod.TimeInterval
@@ -317,17 +302,17 @@ object d3DashScaleMod extends js.Object {
       */
     def domain(domain: js.Tuple3[Double | Anon_ValueOf, Double | Anon_ValueOf, Double | Anon_ValueOf]): this.type = js.native
     /**
+      * Returns the scale’s current interpolator.
+      */
+    def interpolator(): js.Function1[/* t */ Double, Output] = js.native
+    def interpolator(interpolator: js.Function1[/* t */ Double, Output]): this.type = js.native
+    /**
       * Sets the scale’s interpolator to the specified function.
       *
       * @param interpolator The scale’s interpolator.
       */
-    def interpolator(): this.type = js.native
-    def interpolator(interpolator: js.Function1[/* t */ Double, Output]): this.type = js.native
-    /**
-      * Returns the scale’s current interpolator.
-      */
     @JSName("interpolator")
-    def interpolator_Function1(): js.Function1[/* t */ Double, Output] = js.native
+    def interpolator_This(): this.type = js.native
   }
   
   @js.native

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FAXCOMEXLib.FaxEventLogging")
 @js.native
 class FaxEventLogging protected () extends js.Object {
-  var `FAXCOMEXLib.FaxEventLogging_typekey`: FaxEventLogging = js.native
+  @JSName("FAXCOMEXLib.FaxEventLogging_typekey")
+  var FAXCOMEXLibDotFaxEventLogging_typekey: FaxEventLogging = js.native
   /** Detail level of event logs for general (other) events */
   var GeneralEventsLevel: FAX_LOG_LEVEL_ENUM = js.native
   /** Detail level of event logs for inbound fax events */

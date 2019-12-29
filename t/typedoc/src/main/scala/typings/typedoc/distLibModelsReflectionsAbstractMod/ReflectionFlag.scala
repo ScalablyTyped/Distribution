@@ -1,21 +1,6 @@
 package typings.typedoc.distLibModelsReflectionsAbstractMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Abstract
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Const
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.ConstructorProperty
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.DefaultValue
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.ExportAssignment
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Exported
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.External
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Let
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.None
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Optional
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Private
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Protected
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Public
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Rest
-import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

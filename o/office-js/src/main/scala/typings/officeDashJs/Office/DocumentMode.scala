@@ -1,8 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.DocumentMode.ReadOnly
-import typings.officeDashJs.Office.DocumentMode.ReadWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

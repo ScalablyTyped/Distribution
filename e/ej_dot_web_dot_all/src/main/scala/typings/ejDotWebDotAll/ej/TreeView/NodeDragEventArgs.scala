@@ -22,7 +22,7 @@ trait NodeDragEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the current target TreeView node
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -42,7 +42,7 @@ object NodeDragEventArgs {
     draggedElement: js.Any = null,
     draggedElementData: js.Any = null,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     target: js.Any = null,
     targetElementData: js.Any = null,
     `type`: String = null

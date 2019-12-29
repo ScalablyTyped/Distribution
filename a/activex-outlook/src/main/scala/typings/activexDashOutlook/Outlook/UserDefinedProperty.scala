@@ -12,7 +12,8 @@ class UserDefinedProperty protected () extends js.Object {
   val DisplayFormat: Double = js.native
   val Formula: String = js.native
   val Name: String = js.native
-  var `Outlook.UserDefinedProperty_typekey`: UserDefinedProperty = js.native
+  @JSName("Outlook.UserDefinedProperty_typekey")
+  var OutlookDotUserDefinedProperty_typekey: UserDefinedProperty = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val Type: OlUserPropertyType = js.native

@@ -1,8 +1,8 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
-import typings.yandexDashMaps.yandexDashMapsStrings.`yandex#hybrid`
-import typings.yandexDashMaps.yandexDashMapsStrings.`yandex#map`
-import typings.yandexDashMaps.yandexDashMapsStrings.`yandex#satellite`
+import typings.yandexDashMaps.yandexDashMapsStrings.yandexNumbersignhybrid
+import typings.yandexDashMaps.yandexDashMapsStrings.yandexNumbersignmap
+import typings.yandexDashMaps.yandexDashMapsStrings.yandexNumbersignsatellite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait IMapState extends js.Object {
   var center: js.UndefOr[js.Array[Double]] = js.undefined
   var controls: js.UndefOr[js.Array[String]] = js.undefined
   var margin: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.undefined
-  var `type`: js.UndefOr[`yandex#map` | `yandex#satellite` | `yandex#hybrid`] = js.undefined
+  var `type`: js.UndefOr[yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid] = js.undefined
   var zoom: js.UndefOr[Double] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object IMapState {
     center: js.Array[Double] = null,
     controls: js.Array[String] = null,
     margin: js.Array[js.Array[Double] | Double] = null,
-    `type`: `yandex#map` | `yandex#satellite` | `yandex#hybrid` = null,
+    `type`: yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid = null,
     zoom: Int | Double = null
   ): IMapState = {
     val __obj = js.Dynamic.literal()

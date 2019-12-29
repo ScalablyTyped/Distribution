@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialThreadAttributes.canLock
-import typings.sharepoint.SP.Social.SocialThreadAttributes.canReply
-import typings.sharepoint.SP.Social.SocialThreadAttributes.isDigest
-import typings.sharepoint.SP.Social.SocialThreadAttributes.isLocked
-import typings.sharepoint.SP.Social.SocialThreadAttributes.none
-import typings.sharepoint.SP.Social.SocialThreadAttributes.replyLimitReached
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,22 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.ChineseLunar
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Gregorian
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianArabic
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianMEFrench
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITEnglish
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITFrench
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hebrew
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hijri
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Japan
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Korea
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.KoreaJapanLunar
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.None
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.SakaEra
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Taiwan
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Thai
-import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.UmAlQura
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

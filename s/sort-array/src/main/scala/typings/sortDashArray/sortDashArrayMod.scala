@@ -1,8 +1,5 @@
 package typings.sortDashArray
 
-import typings.sortDashArray.sortDashArrayMod.ColumnNames
-import typings.sortDashArray.sortDashArrayMod.CustomOrder
-import typings.sortDashArray.sortDashArrayMod.CustomOrderTypes
 import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js

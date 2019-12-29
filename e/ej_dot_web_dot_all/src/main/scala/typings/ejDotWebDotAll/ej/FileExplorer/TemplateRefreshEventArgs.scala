@@ -10,7 +10,7 @@ trait TemplateRefreshEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns the cell object.
     */
-  var cell: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var cell: js.UndefOr[Model] = js.undefined
   /** Returns the column object.
     */
   var column: js.UndefOr[js.Any] = js.undefined
@@ -32,7 +32,7 @@ object TemplateRefreshEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    cell: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    cell: Model = null,
     column: js.Any = null,
     data: js.Any = null,
     model: js.Any = null,

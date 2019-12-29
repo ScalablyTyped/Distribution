@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkRegionDashProvider
 
-import typings.atAwsDashSdkRegionDashProvider.buildDefaultProviderMod.RegionProviderConfiguration
 import typings.atAwsDashSdkRegionDashProvider.buildFromEnvMod.EnvConfiguration
 import typings.atAwsDashSdkRegionDashProvider.buildFromSharedConfigFilesMod.SharedConfigInit
 import typings.atAwsDashSdkTypes.buildUtilMod.Provider

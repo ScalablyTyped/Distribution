@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeBorderLineStyle.continuous
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeBorderLineStyle.dash
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeBorderLineStyle.dashDot
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeBorderLineStyle.dashDotDot
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeBorderLineStyle.dot
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeBorderLineStyle.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

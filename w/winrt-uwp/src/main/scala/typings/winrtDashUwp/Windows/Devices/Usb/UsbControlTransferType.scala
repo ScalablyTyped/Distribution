@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.`class`
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.standard
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.vendor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

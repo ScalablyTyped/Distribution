@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/router", "ɵangular_packages_router_router_k")
+@JSImport("@angular/router", "\u0275angular_packages_router_router_k")
 @js.native
 object ɵangular_packages_router_router_k extends js.Object {
   def apply(): js.Array[

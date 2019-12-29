@@ -1,6 +1,6 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.hapiNumbers.`true`
+import typings.hapi.hapiBooleans.`true`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

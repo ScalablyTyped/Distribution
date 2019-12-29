@@ -16,7 +16,8 @@ class ChartFormat protected () extends js.Object {
   val Line: LineFormat = js.native
   val Parent: js.Any = js.native
   val PictureFormat: typings.activexDashPowerpoint.PowerPoint.PictureFormat = js.native
-  var `PowerPoint.ChartFormat_typekey`: ChartFormat = js.native
+  @JSName("PowerPoint.ChartFormat_typekey")
+  var PowerPointDotChartFormat_typekey: ChartFormat = js.native
   val Shadow: ShadowFormat = js.native
   val SoftEdge: SoftEdgeFormat = js.native
   val TextFrame2: typings.activexDashPowerpoint.PowerPoint.TextFrame2 = js.native

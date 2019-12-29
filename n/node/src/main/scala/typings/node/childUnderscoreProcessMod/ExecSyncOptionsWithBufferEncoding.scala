@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait ExecSyncOptionsWithBufferEncoding extends ExecSyncOptions {
   @JSName("encoding")
-  var encoding_ExecSyncOptionsWithBufferEncoding: java.lang.String
+  var encoding_ExecSyncOptionsWithBufferEncoding: String
 }
 
 object ExecSyncOptionsWithBufferEncoding {
   @scala.inline
   def apply(
-    encoding: java.lang.String,
-    cwd: java.lang.String = null,
+    encoding: String,
+    cwd: String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
-    input: java.lang.String | Uint8Array = null,
+    input: String | Uint8Array = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
-    shell: java.lang.String = null,
+    shell: String = null,
     stdio: StdioOptions = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,

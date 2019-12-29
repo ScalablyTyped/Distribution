@@ -1,7 +1,6 @@
 package typings.reactDashFromDashDom
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashFromDashDom.libHelpersMod.IObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

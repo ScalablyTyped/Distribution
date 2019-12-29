@@ -13,7 +13,7 @@ trait ConsoleAPICalledEventDataType extends js.Object {
     * Console context descriptor for calls on non-default console context (not console.*): 'anonymous#unique-logger-id' for call on unnamed context, 'name#unique-logger-id' for call on named context.
     * @experimental
     */
-  var context: js.UndefOr[java.lang.String] = js.undefined
+  var context: js.UndefOr[String] = js.undefined
   /**
     * Identifier of the context where the call was made.
     */
@@ -29,7 +29,7 @@ trait ConsoleAPICalledEventDataType extends js.Object {
   /**
     * Type of the call.
     */
-  var `type`: java.lang.String
+  var `type`: String
 }
 
 object ConsoleAPICalledEventDataType {
@@ -38,8 +38,8 @@ object ConsoleAPICalledEventDataType {
     args: js.Array[RemoteObject],
     executionContextId: ExecutionContextId,
     timestamp: Timestamp,
-    `type`: java.lang.String,
-    context: java.lang.String = null,
+    `type`: String,
+    context: String = null,
     stackTrace: StackTrace = null
   ): ConsoleAPICalledEventDataType = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], executionContextId = executionContextId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.json2csv
 
 import typings.json2csv.jSON2CSVBaseMod.json2csv.FieldInfo
 import typings.json2csv.jSON2CSVBaseMod.json2csv.Options
-import typings.json2csv.jSON2CSVTransformMod.JSON2CSVTransform
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js

@@ -1,26 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportDesigner
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.AlignGrid
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Alignment
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.All
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Center
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Copy
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Cut
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Delete
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Distribute
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.EditDesign
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.New
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Open
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Order
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Paste
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Preview
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Redo
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Save
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Sizing
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Undo
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.View
-import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

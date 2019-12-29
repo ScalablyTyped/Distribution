@@ -1,6 +1,6 @@
 package typings.jsonpathDashPlus.jsonpathDashPlusMod
 
-import typings.jsonpathDashPlus.jsonpathDashPlusNumbers.`false`
+import typings.jsonpathDashPlus.jsonpathDashPlusBooleans.`false`
 import typings.jsonpathDashPlus.jsonpathDashPlusStrings.all
 import typings.jsonpathDashPlus.jsonpathDashPlusStrings.parent
 import typings.jsonpathDashPlus.jsonpathDashPlusStrings.parentProperty

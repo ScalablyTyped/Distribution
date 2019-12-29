@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   - typings.arangodb.arangodbStrings.`see other`
   - typings.arangodb.arangodbStrings.`not modified`
   - typings.arangodb.arangodbStrings.`use proxy`
-  - typings.arangodb.arangodbStrings.`(unused)`
+  - typings.arangodb.arangodbStrings.LeftparenthesisunusedRightparenthesis
   - typings.arangodb.arangodbStrings.`temporary redirect`
   - typings.arangodb.arangodbStrings.`permanent redirect`
   - typings.arangodb.arangodbStrings.`bad request`
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation._
   - typings.arangodb.arangodbStrings.`unsupported media type`
   - typings.arangodb.arangodbStrings.`range not satisfiable`
   - typings.arangodb.arangodbStrings.`expectation failed`
-  - typings.arangodb.arangodbStrings.`i_quotem a teapot`
+  - typings.arangodb.arangodbStrings.`iApostrophem a teapot`
   - typings.arangodb.arangodbStrings.`misdirected request`
   - typings.arangodb.arangodbStrings.`unprocessable entity`
   - typings.arangodb.arangodbStrings.locked
@@ -73,7 +73,7 @@ trait HttpStatus extends js.Object
 
 object HttpStatus {
   @scala.inline
-  def `(unused)`: typings.arangodb.arangodbStrings.`(unused)` = this.cast("(unused)")
+  def LeftparenthesisunusedRightparenthesis: typings.arangodb.arangodbStrings.LeftparenthesisunusedRightparenthesis = this.cast("(unused)")
   @scala.inline
   def accepted: typings.arangodb.arangodbStrings.accepted = this.cast("accepted")
   @scala.inline
@@ -107,7 +107,7 @@ object HttpStatus {
   @scala.inline
   def `http version not supported`: typings.arangodb.arangodbStrings.`http version not supported` = this.cast("http version not supported")
   @scala.inline
-  def `i_quotem a teapot`: typings.arangodb.arangodbStrings.`i_quotem a teapot` = this.cast("i'm a teapot")
+  def `iApostrophem a teapot`: typings.arangodb.arangodbStrings.`iApostrophem a teapot` = this.cast("i'm a teapot")
   @scala.inline
   def `im used`: typings.arangodb.arangodbStrings.`im used` = this.cast("im used")
   @scala.inline

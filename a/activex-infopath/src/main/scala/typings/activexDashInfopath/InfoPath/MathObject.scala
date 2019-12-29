@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InfoPath.MathObject")
 @js.native
 class MathObject protected () extends js.Object {
-  var `InfoPath.MathObject_typekey`: MathObject = js.native
+  @JSName("InfoPath.MathObject_typekey")
+  var InfoPathDotMathObject_typekey: MathObject = js.native
   def Avg(pxmllistInput: IXMLDOMNodeList): js.Any = js.native
   def Eval(pxmllistContext: IXMLDOMNodeList, bstrExpression: String): js.Any = js.native
   def Max(pxmllistInput: IXMLDOMNodeList): js.Any = js.native

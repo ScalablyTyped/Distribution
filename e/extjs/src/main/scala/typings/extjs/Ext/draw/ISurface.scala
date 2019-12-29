@@ -30,7 +30,7 @@ trait ISurface extends IObservable {
   		* @param id String The unique identifier of the group.
   		* @returns Object The Ext.draw.CompositeSprite.
   		*/
-  var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Retrieves the id of this component  */
   var getId: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Number) */
@@ -72,7 +72,7 @@ trait ISurface extends IObservable {
   		* @param text String The new text to be set.
   		*/
   var setText: js.UndefOr[
-    js.Function2[/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Config Option] (Number) */
   var width: js.UndefOr[Double] = js.undefined
@@ -97,13 +97,13 @@ object ISurface {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getGroup: /* id */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getGroup: /* id */ js.UndefOr[String] => _ = null,
     getId: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     height: Int | Double = null,
     inheritableStatics: js.Any = null,
@@ -115,11 +115,11 @@ object ISurface {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     remove: (/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean]) => Unit = null,
     removeAll: /* destroySprites */ js.UndefOr[Boolean] => Unit = null,
     removeCls: (/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -127,12 +127,12 @@ object ISurface {
     self: IClass = null,
     setSize: (/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double]) => Unit = null,
     setStyle: (/* sprite */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any]) => Unit = null,
-    setText: (/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[java.lang.String]) => Unit = null,
+    setText: (/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[String]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     width: Int | Double = null
   ): ISurface = {

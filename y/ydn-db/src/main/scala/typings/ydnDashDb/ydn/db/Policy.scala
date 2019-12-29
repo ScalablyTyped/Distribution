@@ -1,11 +1,6 @@
 package typings.ydnDashDb.ydn.db
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ydnDashDb.ydn.db.Policy.all
-import typings.ydnDashDb.ydn.db.Policy.atomic
-import typings.ydnDashDb.ydn.db.Policy.multi
-import typings.ydnDashDb.ydn.db.Policy.repeat
-import typings.ydnDashDb.ydn.db.Policy.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.side1
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.side2
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

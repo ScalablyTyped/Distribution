@@ -1,6 +1,5 @@
 package typings.mobservable
 
-import typings.mobservable.libTransformMod.ITransformer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

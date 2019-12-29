@@ -5,7 +5,6 @@ import typings.express.expressMod.Router
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Container
 import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.ConfigFunction
 import typings.inversifyDashExpressDashUtils.dtsInterfacesMod.interfaces.RoutingConfig
-import typings.inversifyDashExpressDashUtils.dtsServerMod.InversifyExpressServer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,8 @@ class MailMessage protected () extends js.Object {
   val Application: typings.activexDashWord.Word.Application = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.MailMessage_typekey`: MailMessage = js.native
+  @JSName("Word.MailMessage_typekey")
+  var WordDotMailMessage_typekey: MailMessage = js.native
   def CheckName(): Unit = js.native
   def Delete(): Unit = js.native
   def DisplayMoveDialog(): Unit = js.native

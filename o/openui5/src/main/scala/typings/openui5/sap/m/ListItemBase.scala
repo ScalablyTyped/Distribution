@@ -1,5 +1,6 @@
 package typings.openui5.sap.m
 
+import typings.jquery.JQueryStatic
 import typings.openui5.sap.ui.core.Control
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -177,7 +178,7 @@ class ListItemBase protected () extends Control {
     * @since 1.26
     * @returns jQuery object
     */
-  def getTabbables(): typings.jquery.JQueryStatic = js.native
+  def getTabbables(): JQueryStatic = js.native
   /**
     * Gets current value of property <code>type</code>.Defines the visual indication and behavior of the
     * list items, e.g. <code>Active</code>, <code>Navigation</code>, <code>Detail</code>.Default value is

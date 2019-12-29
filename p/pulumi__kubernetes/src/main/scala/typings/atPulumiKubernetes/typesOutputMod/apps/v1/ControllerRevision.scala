@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.apps.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait ControllerRevision extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `apps/v1`
+  val apiVersion: appsSlashv1
   /**
     * Data is the serialized representation of the state.
     */
@@ -49,7 +49,7 @@ trait ControllerRevision extends js.Object {
 object ControllerRevision {
   @scala.inline
   def apply(
-    apiVersion: `apps/v1`,
+    apiVersion: appsSlashv1,
     data: js.Object,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.ControllerRevision,
     metadata: ObjectMeta,

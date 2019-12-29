@@ -12,7 +12,8 @@ class FirstLetterException protected () extends js.Object {
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.FirstLetterException_typekey`: FirstLetterException = js.native
+  @JSName("Word.FirstLetterException_typekey")
+  var WordDotFirstLetterException_typekey: FirstLetterException = js.native
   def Delete(): Unit = js.native
 }
 

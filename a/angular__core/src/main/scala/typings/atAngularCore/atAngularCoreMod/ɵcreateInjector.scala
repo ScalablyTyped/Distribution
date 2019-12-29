@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵcreateInjector")
+@JSImport("@angular/core", "\u0275createInjector")
 @js.native
 object ɵcreateInjector extends js.Object {
   def apply(defType: js.Any): Injector = js.native

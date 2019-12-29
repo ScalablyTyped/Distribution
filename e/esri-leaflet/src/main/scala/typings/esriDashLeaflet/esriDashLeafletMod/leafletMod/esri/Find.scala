@@ -11,10 +11,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("leaflet", "esri.Find")
 @js.native
-class Find protected ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Task {
+class Find protected () extends Task {
   def this(options: FindOptions) = this()
-  def this(options: typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.MapService) = this()
+  def this(options: MapService) = this()
   /**
     * When true find task will search for a value that contains the searchText. When false it will do an exact
     * match on the searchText string. Default is true.
@@ -90,7 +89,7 @@ object find extends js.Object {
     * L.esri.Find is an abstraction for the find API included in Map Services. It provides a chainable API for
     * building request parameters and executing find tasks.
     */
-  def apply(options: FindOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Find = js.native
-  def apply(options: typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.MapService): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Find = js.native
+  def apply(options: FindOptions): Find = js.native
+  def apply(options: MapService): Find = js.native
 }
 

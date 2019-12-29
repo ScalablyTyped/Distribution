@@ -9,9 +9,8 @@ import typings.typedDashGithubDashApi.distInterfacesIssueMod.IssueRef
 import typings.typedDashGithubDashApi.distInterfacesOwnerDashRefMod.OwnerRef
 import typings.typedDashGithubDashApi.distInterfacesPullDashRequestMod.PullRequest
 import typings.typedDashGithubDashApi.distInterfacesPullDashRequestMod.PullRequestRef
-import typings.typedDashGithubDashApi.distInterfacesRepositoryMod.Repository
-import typings.typedDashGithubDashApi.distInterfacesRepositoryMod.RepositoryRef
 import typings.typedDashGithubDashApi.distInterfacesUserMod.UserSummary
+import typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.Asterisk
 import typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.`long-running`
 import typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.all
 import typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.closed
@@ -110,9 +109,9 @@ object distInterfacesRepositoryMod extends js.Object {
       * @returns             The resulting array of issues
       */
     def loadIssuesAsync(
-      milestone: js.UndefOr[Double | typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.`*` | none],
+      milestone: js.UndefOr[Double | Asterisk | none],
       state: js.UndefOr[open | closed | all],
-      assignee: js.UndefOr[String | typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.`*` | none],
+      assignee: js.UndefOr[String | Asterisk | none],
       creator: js.UndefOr[String],
       mentioned: js.UndefOr[String],
       labels: js.UndefOr[js.Array[String]],

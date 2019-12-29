@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.DocumentHighlightKind.Read
-import typings.vscode.vscodeMod.DocumentHighlightKind.Text
-import typings.vscode.vscodeMod.DocumentHighlightKind.Write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

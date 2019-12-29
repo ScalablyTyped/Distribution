@@ -9,12 +9,12 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-meters`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-yards`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.acres
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geodesic
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hectares
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.planar
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
@@ -49,7 +49,7 @@ trait AreasAndLengthsParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#lengthUnit)
     */
-  var lengthUnit: feet | kilometers | meters | miles | `nautical-miles` | yards = js.native
+  var lengthUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = js.native
   /**
     * Polygon geometries for which to compute areas and lengths.
     *

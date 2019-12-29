@@ -1,6 +1,7 @@
 package typings.activexDashExcel.Excel
 
 import typings.activexDashAdodb.ADODB.Recordset
+import typings.activexDashExcel.activexDashExcelBooleans.`false`
 import typings.activexDashExcel.activexDashExcelNumbers.`-4123`
 import typings.activexDashExcel.activexDashExcelNumbers.`0`
 import typings.activexDashExcel.activexDashExcelNumbers.`10`
@@ -18,12 +19,11 @@ import typings.activexDashExcel.activexDashExcelNumbers.`6`
 import typings.activexDashExcel.activexDashExcelNumbers.`7`
 import typings.activexDashExcel.activexDashExcelNumbers.`8`
 import typings.activexDashExcel.activexDashExcelNumbers.`9`
-import typings.activexDashExcel.activexDashExcelNumbers.`false`
-import typings.activexDashExcel.activexDashExcelStrings.BACKSLASH
-import typings.activexDashExcel.activexDashExcelStrings.BACKSLASHBACKSLASH
-import typings.activexDashExcel.activexDashExcelStrings.Empty
-import typings.activexDashExcel.activexDashExcelStrings._quote
-import typings.activexDashExcel.activexDashExcelStrings.`_backtick^_backtick`
+import typings.activexDashExcel.activexDashExcelStrings.Apostrophe
+import typings.activexDashExcel.activexDashExcelStrings.Backslash
+import typings.activexDashExcel.activexDashExcelStrings.Quotationmark
+import typings.activexDashExcel.activexDashExcelStrings.^
+import typings.activexDashExcel.activexDashExcelStrings._empty
 import typings.activexDashOffice.Office.MsoLanguageID
 import typings.std.Exclude
 import typings.std.SafeArray
@@ -114,7 +114,7 @@ trait Range extends js.Object {
   val PivotTable: typings.activexDashExcel.Excel.PivotTable = js.native
   @JSName("Precedents")
   val Precedents_Original: Range = js.native
-  val PrefixCharacter: _quote | BACKSLASH | `_backtick^_backtick` | BACKSLASHBACKSLASH | Empty = js.native
+  val PrefixCharacter: Apostrophe | Quotationmark | ^  | Backslash | _empty = js.native
   @JSName("Previous")
   val Previous_Original: Range = js.native
   val QueryTable: typings.activexDashExcel.Excel.QueryTable = js.native

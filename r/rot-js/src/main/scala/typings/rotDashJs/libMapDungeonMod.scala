@@ -1,6 +1,5 @@
 package typings.rotDashJs
 
-import typings.rotDashJs.libMapDungeonMod.Dungeon
 import typings.rotDashJs.libMapFeaturesMod.Corridor
 import typings.rotDashJs.libMapFeaturesMod.Room
 import scala.scalajs.js

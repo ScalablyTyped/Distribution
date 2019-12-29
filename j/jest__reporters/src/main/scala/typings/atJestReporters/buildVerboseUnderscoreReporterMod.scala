@@ -1,6 +1,5 @@
 package typings.atJestReporters
 
-import typings.atJestReporters.buildVerboseUnderscoreReporterMod.VerboseReporter
 import typings.atJestTestDashResult.buildTypesMod.AssertionResult
 import typings.atJestTestDashResult.buildTypesMod.Suite
 import typings.atJestTypes.buildConfigMod.GlobalConfig

@@ -17,7 +17,8 @@ class LinkFormat protected () extends js.Object {
   val SourceName: String = js.native
   val SourcePath: String = js.native
   val Type: WdLinkType = js.native
-  var `Word.LinkFormat_typekey`: LinkFormat = js.native
+  @JSName("Word.LinkFormat_typekey")
+  var WordDotLinkFormat_typekey: LinkFormat = js.native
   def BreakLink(): Unit = js.native
   def Update(): Unit = js.native
 }

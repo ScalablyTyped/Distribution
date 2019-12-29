@@ -1,6 +1,5 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.openpgpMod.`type`.keyid.Keyid
 import typings.openpgp.openpgpMod.enums.hash
 import typings.openpgp.openpgpMod.enums.symmetric
 import typings.std.Uint8Array

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object parse5Strings {
   @js.native
-  sealed trait `#comment` extends js.Object
+  sealed trait Numbersigncomment extends js.Object
   
   @js.native
-  sealed trait `#document` extends js.Object
+  sealed trait Numbersigndocument extends js.Object
   
   @js.native
-  sealed trait `#document-fragment` extends js.Object
+  sealed trait `Numbersigndocument-fragment` extends js.Object
   
   @js.native
-  sealed trait `#documentType` extends js.Object
+  sealed trait NumbersigndocumentType extends js.Object
   
   @js.native
-  sealed trait `#text` extends js.Object
+  sealed trait Numbersigntext extends js.Object
   
   @js.native
   sealed trait `limited-quirks` extends DocumentMode
@@ -31,15 +31,15 @@ object parse5Strings {
   sealed trait quirks extends DocumentMode
   
   @scala.inline
-  def `#comment`: `#comment` = "#comment".asInstanceOf[`#comment`]
+  def Numbersigncomment: Numbersigncomment = "#comment".asInstanceOf[Numbersigncomment]
   @scala.inline
-  def `#document`: `#document` = "#document".asInstanceOf[`#document`]
+  def Numbersigndocument: Numbersigndocument = "#document".asInstanceOf[Numbersigndocument]
   @scala.inline
-  def `#document-fragment`: `#document-fragment` = "#document-fragment".asInstanceOf[`#document-fragment`]
+  def `Numbersigndocument-fragment`: `Numbersigndocument-fragment` = "#document-fragment".asInstanceOf[`Numbersigndocument-fragment`]
   @scala.inline
-  def `#documentType`: `#documentType` = "#documentType".asInstanceOf[`#documentType`]
+  def NumbersigndocumentType: NumbersigndocumentType = "#documentType".asInstanceOf[NumbersigndocumentType]
   @scala.inline
-  def `#text`: `#text` = "#text".asInstanceOf[`#text`]
+  def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
   @scala.inline
   def `limited-quirks`: `limited-quirks` = "limited-quirks".asInstanceOf[`limited-quirks`]
   @scala.inline

@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.AppLicenseType.perpetualAllUsers
-import typings.sharepoint.SP.AppLicenseType.perpetualMultiUser
-import typings.sharepoint.SP.AppLicenseType.trialAllUsers
-import typings.sharepoint.SP.AppLicenseType.trialMultiUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

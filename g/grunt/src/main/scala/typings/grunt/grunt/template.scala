@@ -16,20 +16,20 @@ object template extends js.Object {
       * You probably won't need to use this method, because the built-in delimiters should be sufficient,
       * but you could always add {% %} or [% %] style delimiters.
       */
-    def addDelimiters(name: java.lang.String, opener: java.lang.String, closer: java.lang.String): Unit = js.native
+    def addDelimiters(name: String, opener: String, closer: String): Unit = js.native
     /**
       * Format a date using the dateformat library.
       * {@link https://github.com/felixge/node-dateformat}
       *
       * @note if you don't include the mask argument, dateFormat.masks.default is used
       */
-    def date(): java.lang.String = js.native
-    def date(date: java.lang.String): java.lang.String = js.native
-    def date(date: java.lang.String, format: java.lang.String): java.lang.String = js.native
-    def date(date: Double): java.lang.String = js.native
-    def date(date: Double, format: java.lang.String): java.lang.String = js.native
-    def date(date: Date): java.lang.String = js.native
-    def date(date: Date, format: java.lang.String): java.lang.String = js.native
+    def date(): String = js.native
+    def date(date: String): String = js.native
+    def date(date: String, format: String): String = js.native
+    def date(date: Double): String = js.native
+    def date(date: Double, format: String): String = js.native
+    def date(date: Date): String = js.native
+    def date(date: Date, format: String): String = js.native
     /**
       * Process a Lo-Dash template string.
       *
@@ -44,23 +44,23 @@ object template extends js.Object {
       *
       * @note if the data object already has a grunt property, the grunt API will not be accessible in templates.
       */
-    def process(template: java.lang.String): js.Function1[/* options */ js.Any, java.lang.String] = js.native
-    def process(template: java.lang.String, options: js.Any): java.lang.String = js.native
+    def process(template: String): js.Function1[/* options */ js.Any, String] = js.native
+    def process(template: String, options: js.Any): String = js.native
     /**
       * Set the Lo-Dash template delimiters to a predefined set in case you grunt.util._.template
       * needs to be called manually.
       *
       * The config delimiters <% %> are included by default.
       */
-    def setDelimiters(name: java.lang.String): Unit = js.native
+    def setDelimiters(name: String): Unit = js.native
     /**
       * Format today's date using the dateformat library using the current date and time.
       * {@link https://github.com/felixge/node-dateformat}
       *
       * @note if you don't include the mask argument, dateFormat.masks.default is used
       */
-    def today(): java.lang.String = js.native
-    def today(format: java.lang.String): java.lang.String = js.native
+    def today(): String = js.native
+    def today(format: String): String = js.native
   }
   
 }

@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
 class ConditionValue protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ConditionValue_typekey`: ConditionValue = js.native
+  @JSName("Excel.ConditionValue_typekey")
+  var ExcelDotConditionValue_typekey: ConditionValue = js.native
   val Parent: js.Any = js.native
   val Type: XlConditionValueTypes = js.native
   var Value: Double | String = js.native

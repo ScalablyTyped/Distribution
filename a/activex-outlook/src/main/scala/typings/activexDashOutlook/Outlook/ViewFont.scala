@@ -14,7 +14,8 @@ class ViewFont protected () extends js.Object {
   var ExtendedColor: OlCategoryColor = js.native
   var Italic: Boolean = js.native
   var Name: String = js.native
-  var `Outlook.ViewFont_typekey`: ViewFont = js.native
+  @JSName("Outlook.ViewFont_typekey")
+  var OutlookDotViewFont_typekey: ViewFont = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   var Size: Double = js.native

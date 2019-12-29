@@ -1,6 +1,6 @@
 package typings.modernizr
 
-import typings.modernizr.modernizrNumbers.`false`
+import typings.modernizr.modernizrBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

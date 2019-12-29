@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "javascript-obfuscator" : "0.18.7"
+      "javascript-obfuscator" : "0.18.8"
     }
   ],
   "test-dependencies" : [
     {
-      "javascript-obfuscator" : "0.18.7"
+      "javascript-obfuscator" : "0.18.8"
     }
   ],
   "compile-devDependencies" : [

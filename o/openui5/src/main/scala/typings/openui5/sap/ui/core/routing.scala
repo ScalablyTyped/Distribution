@@ -4,16 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.core.mvc.View
-import typings.openui5.sap.ui.core.routing.HashChanger
-import typings.openui5.sap.ui.core.routing.Route
-import typings.openui5.sap.ui.core.routing.Target
-import typings.openui5.sap.ui.core.routing.Targets
-import typings.openui5.sap.ui.core.routing.Views
-import typings.openui5.sap.ui.core.routing.routing.HistoryDirection
-import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Backwards
-import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Forwards
-import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.NewEntry
-import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

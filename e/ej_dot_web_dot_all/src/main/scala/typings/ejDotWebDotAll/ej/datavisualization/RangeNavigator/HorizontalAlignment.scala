@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.HorizontalAlignment.Left
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.HorizontalAlignment.Middle
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.HorizontalAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

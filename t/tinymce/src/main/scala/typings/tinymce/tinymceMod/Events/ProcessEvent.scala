@@ -1,7 +1,7 @@
 package typings.tinymce.tinymceMod.Events
 
 import typings.std.Node
-import typings.tinymce.tinymceNumbers.`true`
+import typings.tinymce.tinymceBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,10 +5,10 @@ import typings.std.Date
 import typings.std.Error
 import typings.std.Partial
 import typings.std.PropertyKey
+import typings.vega.vegaBooleans.`false`
+import typings.vega.vegaBooleans.`true`
 import typings.vega.vegaNumbers.`0`
 import typings.vega.vegaNumbers.`1`
-import typings.vega.vegaNumbers.`false`
-import typings.vega.vegaNumbers.`true`
 import typings.vega.vegaStrings.center
 import typings.vega.vegaStrings.left
 import typings.vega.vegaStrings.right
@@ -117,13 +117,13 @@ object vegaMod extends js.Object {
   def extentIndex(array: js.Array[Double], accessor: AccessorFn[_]): js.Array[Double] = js.native
   def falsy(): `false` = js.native
   def fastmap(): FastMap = js.native
-  def fastmap(`_`: js.Object): FastMap = js.native
+  def fastmap(_underscore: js.Object): FastMap = js.native
   def field(field: String): AccessorFn[_] = js.native
   def field(field: String, name: String): AccessorFn[_] = js.native
   def flush[T /* <: js.Any */](range: js.Array[Double], value: Double, threshold: Double, left: T, right: T, center: T): T = js.native
   def formatLocale(definition: js.Object): Unit = js.native
   def hasOwnProperty(`object`: js.Object, property: PropertyKey): Boolean = js.native
-  def id(`_`: js.Object): js.Symbol = js.native
+  def id(_underscore: js.Object): js.Symbol = js.native
   def identity[V](v: V): V = js.native
   def inferType(values: js.Array[_]): TypeInference = js.native
   def inferType(values: js.Array[_], field: String): TypeInference = js.native
@@ -148,8 +148,8 @@ object vegaMod extends js.Object {
   def loader(opt: LoaderOptions): Loader = js.native
   def log(args: js.Any*): Unit = js.native
   def logger(): LoggerInterface = js.native
-  def logger(`_`: Double): LoggerInterface = js.native
-  def logger(`_`: Double, method: String): LoggerInterface = js.native
+  def logger(_underscore: Double): LoggerInterface = js.native
+  def logger(_underscore: Double, method: String): LoggerInterface = js.native
   def merge(
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double],
     array1: js.Array[_],

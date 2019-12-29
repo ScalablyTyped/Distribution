@@ -2,11 +2,6 @@ package typings.atUirouterCore
 
 import org.scalablytyped.runtime.TopLevel
 import typings.atUirouterCore.libParamsInterfaceMod.RawParams
-import typings.atUirouterCore.libParamsParamMod.DefType
-import typings.atUirouterCore.libParamsParamMod.DefType.CONFIG
-import typings.atUirouterCore.libParamsParamMod.DefType.PATH
-import typings.atUirouterCore.libParamsParamMod.DefType.SEARCH
-import typings.atUirouterCore.libParamsParamMod.Param
 import typings.atUirouterCore.libParamsParamTypeMod.ParamType
 import typings.atUirouterCore.libStateInterfaceMod.StateDeclaration
 import typings.atUirouterCore.libUrlMod.UrlConfig

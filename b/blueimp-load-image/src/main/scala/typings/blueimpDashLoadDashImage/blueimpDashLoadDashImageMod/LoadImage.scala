@@ -1,6 +1,6 @@
 package typings.blueimpDashLoadDashImage.blueimpDashLoadDashImageMod
 
-import typings.blueimpDashLoadDashImage.blueimpDashLoadDashImageNumbers.`false`
+import typings.blueimpDashLoadDashImage.blueimpDashLoadDashImageBooleans.`false`
 import typings.std.Blob
 import typings.std.File
 import typings.std.FileReader
@@ -15,9 +15,9 @@ trait LoadImage extends js.Object {
   def apply(file: String, callback: LoadImageCallback, options: LoadImageOptions): HTMLImageElement | FileReader | `false` = js.native
   def apply(file: Blob, callback: LoadImageCallback, options: LoadImageOptions): HTMLImageElement | FileReader | `false` = js.native
   def apply(file: File, callback: LoadImageCallback, options: LoadImageOptions): HTMLImageElement | FileReader | `false` = js.native
-  def blobSlice(`this`: Blob): Blob = js.native
-  def blobSlice(`this`: Blob, start: Double): Blob = js.native
-  def blobSlice(`this`: Blob, start: Double, end: Double): Blob = js.native
+  def blobSlice(): Blob = js.native
+  def blobSlice(start: Double): Blob = js.native
+  def blobSlice(start: Double, end: Double): Blob = js.native
   def parseMetaData(file: String, callback: ParseMetaDataCallback): Unit = js.native
   def parseMetaData(file: String, callback: ParseMetaDataCallback, options: ParseOptions): Unit = js.native
   def parseMetaData(file: String, callback: ParseMetaDataCallback, options: ParseOptions, data: ImageHead): Unit = js.native

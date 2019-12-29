@@ -1,13 +1,6 @@
 package typings.heremaps.H.geo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.geo.AltitudeContext.GL
-import typings.heremaps.H.geo.AltitudeContext.OL
-import typings.heremaps.H.geo.AltitudeContext.SB
-import typings.heremaps.H.geo.AltitudeContext.SL
-import typings.heremaps.H.geo.AltitudeContext.WE
-import typings.heremaps.H.geo.AltitudeContext.WG
-import typings.heremaps.H.geo.AltitudeContext.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

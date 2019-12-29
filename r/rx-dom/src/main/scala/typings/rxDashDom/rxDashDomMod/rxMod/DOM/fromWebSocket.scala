@@ -1,5 +1,7 @@
 package typings.rxDashDom.rxDashDomMod.rxMod.DOM
 
+import typings.rxDashCore.Rx.Observer
+import typings.rxDashCoreDashBinding.Rx.Subject
 import typings.std.CloseEvent
 import typings.std.Event
 import typings.std.MessageEvent
@@ -11,13 +13,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object fromWebSocket extends js.Object {
   // Web Sockets
-  def apply(url: String, protocol: String): typings.rxDashCoreDashBinding.Rx.Subject[MessageEvent] = js.native
-  def apply(url: String, protocol: String, openObserver: typings.rxDashCore.Rx.Observer[Event]): typings.rxDashCoreDashBinding.Rx.Subject[MessageEvent] = js.native
+  def apply(url: String, protocol: String): Subject[MessageEvent] = js.native
+  def apply(url: String, protocol: String, openObserver: Observer[Event]): Subject[MessageEvent] = js.native
   def apply(
     url: String,
     protocol: String,
-    openObserver: typings.rxDashCore.Rx.Observer[Event],
-    closingObserver: typings.rxDashCore.Rx.Observer[CloseEvent]
-  ): typings.rxDashCoreDashBinding.Rx.Subject[MessageEvent] = js.native
+    openObserver: Observer[Event],
+    closingObserver: Observer[CloseEvent]
+  ): Subject[MessageEvent] = js.native
 }
 

@@ -11,11 +11,11 @@ trait ISimple extends IBase {
   /** [Method] Returns the value of prefix
   		* @returns String
   		*/
-  var getPrefix: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPrefix: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of prefix
   		* @param prefix String The new value.
   		*/
-  var setPrefix: js.UndefOr[js.Function1[/* prefix */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPrefix: js.UndefOr[js.Function1[/* prefix */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object ISimple {
@@ -28,15 +28,15 @@ object ISimple {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getPrefix: () => java.lang.String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getPrefix: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
-    setPrefix: /* prefix */ js.UndefOr[java.lang.String] => Unit = null,
+    setPrefix: /* prefix */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     uses: Array = null

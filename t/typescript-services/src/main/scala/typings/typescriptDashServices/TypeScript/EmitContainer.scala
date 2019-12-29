@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.TypeScript
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +35,31 @@ object EmitContainer extends js.Object {
   @js.native
   sealed trait Prog extends EmitContainer
   
-  /* 6 */ val Args: typings.typescriptDashServices.TypeScript.EmitContainer.Args with Double = js.native
-  /* 3 */ val Class: typings.typescriptDashServices.TypeScript.EmitContainer.Class with Double = js.native
-  /* 4 */ val Constructor: typings.typescriptDashServices.TypeScript.EmitContainer.Constructor with Double = js.native
-  /* 2 */ val DynamicModule: typings.typescriptDashServices.TypeScript.EmitContainer.DynamicModule with Double = js.native
-  /* 5 */ val Function: typings.typescriptDashServices.TypeScript.EmitContainer.Function with Double = js.native
-  /* 7 */ val Interface: typings.typescriptDashServices.TypeScript.EmitContainer.Interface with Double = js.native
-  /* 1 */ val Module: typings.typescriptDashServices.TypeScript.EmitContainer.Module with Double = js.native
-  /* 0 */ val Prog: typings.typescriptDashServices.TypeScript.EmitContainer.Prog with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmitContainer with Double] = js.native
+  /* 6 */ @js.native
+  object Args extends TopLevel[Args with Double]
+  
+  /* 3 */ @js.native
+  object Class extends TopLevel[Class with Double]
+  
+  /* 4 */ @js.native
+  object Constructor extends TopLevel[Constructor with Double]
+  
+  /* 2 */ @js.native
+  object DynamicModule extends TopLevel[DynamicModule with Double]
+  
+  /* 5 */ @js.native
+  object Function extends TopLevel[Function with Double]
+  
+  /* 7 */ @js.native
+  object Interface extends TopLevel[Interface with Double]
+  
+  /* 1 */ @js.native
+  object Module extends TopLevel[Module with Double]
+  
+  /* 0 */ @js.native
+  object Prog extends TopLevel[Prog with Double]
+  
 }
 

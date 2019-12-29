@@ -12,7 +12,8 @@ class ListEntry protected () extends js.Object {
   val Index: Double = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.ListEntry_typekey`: ListEntry = js.native
+  @JSName("Word.ListEntry_typekey")
+  var WordDotListEntry_typekey: ListEntry = js.native
   def Delete(): Unit = js.native
 }
 

@@ -35,13 +35,13 @@ object twitStrings {
   sealed trait site extends StreamEndpoint
   
   @js.native
-  sealed trait `statuses/filter` extends StreamEndpoint
+  sealed trait statusesSlashfilter extends StreamEndpoint
   
   @js.native
-  sealed trait `statuses/firehose` extends StreamEndpoint
+  sealed trait statusesSlashfirehose extends StreamEndpoint
   
   @js.native
-  sealed trait `statuses/sample` extends StreamEndpoint
+  sealed trait statusesSlashsample extends StreamEndpoint
   
   @js.native
   sealed trait user extends StreamEndpoint
@@ -65,11 +65,11 @@ object twitStrings {
   @scala.inline
   def site: site = "site".asInstanceOf[site]
   @scala.inline
-  def `statuses/filter`: `statuses/filter` = "statuses/filter".asInstanceOf[`statuses/filter`]
+  def statusesSlashfilter: statusesSlashfilter = "statuses/filter".asInstanceOf[statusesSlashfilter]
   @scala.inline
-  def `statuses/firehose`: `statuses/firehose` = "statuses/firehose".asInstanceOf[`statuses/firehose`]
+  def statusesSlashfirehose: statusesSlashfirehose = "statuses/firehose".asInstanceOf[statusesSlashfirehose]
   @scala.inline
-  def `statuses/sample`: `statuses/sample` = "statuses/sample".asInstanceOf[`statuses/sample`]
+  def statusesSlashsample: statusesSlashsample = "statuses/sample".asInstanceOf[statusesSlashsample]
   @scala.inline
   def user: user = "user".asInstanceOf[user]
 }

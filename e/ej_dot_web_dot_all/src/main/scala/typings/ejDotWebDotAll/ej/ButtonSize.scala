@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ButtonSize.Large
-import typings.ejDotWebDotAll.ej.ButtonSize.Medium
-import typings.ejDotWebDotAll.ej.ButtonSize.Mini
-import typings.ejDotWebDotAll.ej.ButtonSize.Normal
-import typings.ejDotWebDotAll.ej.ButtonSize.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

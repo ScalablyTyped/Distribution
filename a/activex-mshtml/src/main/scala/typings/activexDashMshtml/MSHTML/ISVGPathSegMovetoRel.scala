@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.ISVGPathSegMovetoRel")
 @js.native
 class ISVGPathSegMovetoRel protected () extends js.Object {
-  var `MSHTML.ISVGPathSegMovetoRel_typekey`: ISVGPathSegMovetoRel = js.native
+  @JSName("MSHTML.ISVGPathSegMovetoRel_typekey")
+  var MSHTMLDotISVGPathSegMovetoRel_typekey: ISVGPathSegMovetoRel = js.native
   var x: Double = js.native
   var y: Double = js.native
 }

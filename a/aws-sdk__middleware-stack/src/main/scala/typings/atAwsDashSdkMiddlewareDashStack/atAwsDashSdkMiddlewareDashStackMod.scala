@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkMiddlewareDashStack
 
-import typings.atAwsDashSdkMiddlewareDashStack.atAwsDashSdkMiddlewareDashStackMod.MiddlewareStack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

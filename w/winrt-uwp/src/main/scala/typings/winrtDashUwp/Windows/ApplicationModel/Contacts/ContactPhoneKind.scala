@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.assistant
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.businessFax
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.company
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.home
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.homeFax
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.mobile
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.other
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.pager
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.radio
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.work
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

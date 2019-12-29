@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-datepicker
 
-Typings are for version 2.9
+Typings are for version 2.10
 
 ## Library description:
 A simple and reusable datepicker component for React

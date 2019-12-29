@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.TriggerSource.CALENDAR
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.TriggerSource.CLOCK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.TriggerSource.DOCUMENTS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.TriggerSource.FORMS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.TriggerSource.SPREADSHEETS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

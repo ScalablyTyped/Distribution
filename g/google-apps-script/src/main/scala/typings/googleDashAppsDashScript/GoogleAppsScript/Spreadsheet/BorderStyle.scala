@@ -1,12 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DASHED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DOTTED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DOUBLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID_MEDIUM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID_THICK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

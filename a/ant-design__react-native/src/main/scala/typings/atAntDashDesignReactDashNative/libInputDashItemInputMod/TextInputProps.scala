@@ -2,6 +2,7 @@ package typings.atAntDashDesignReactDashNative.libInputDashItemInputMod
 
 import typings.reactDashNative.Anon_EndStart
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
@@ -101,7 +102,7 @@ trait TextInputProps
 object TextInputProps {
   @scala.inline
   def apply(
-    accessibilityActions: js.Array[typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo] = null,
+    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,

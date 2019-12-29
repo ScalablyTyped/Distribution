@@ -1,6 +1,7 @@
 package typings.heremaps.H.map.render
 
 import typings.heremaps.H.geo.PixelProjection
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.math.Point
 import typings.heremaps.H.math.Size
 import scala.scalajs.js
@@ -16,7 +17,7 @@ trait RenderingParams extends js.Object {
     * optionally an additional margin in case of DOM node rendering for a better rendering experience.
     * @type {H.geo.Rect}
     */
-  var bounds: typings.heremaps.H.geo.Rect
+  var bounds: Rect
   /**
     * Indicates whether only cached data should be considered.
     * @type {boolean}
@@ -59,7 +60,7 @@ trait RenderingParams extends js.Object {
 object RenderingParams {
   @scala.inline
   def apply(
-    bounds: typings.heremaps.H.geo.Rect,
+    bounds: Rect,
     cacheOnly: Boolean,
     pixelRatio: Double,
     priorityCenter: Point,

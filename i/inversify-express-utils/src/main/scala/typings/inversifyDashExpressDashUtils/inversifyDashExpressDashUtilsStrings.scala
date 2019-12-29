@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object inversifyDashExpressDashUtilsStrings {
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait Slash extends js.Object
   
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def Slash: Slash = "/".asInstanceOf[Slash]
 }
 

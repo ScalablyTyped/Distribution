@@ -1,9 +1,6 @@
 package typings.recursiveDashReaddir.recursiveDashReaddirMod
 
 import typings.node.fsMod.Stats
-import typings.recursiveDashReaddir.recursiveDashReaddirMod.RecursiveReaddir.Callback
-import typings.recursiveDashReaddir.recursiveDashReaddirMod.RecursiveReaddir.IgnoreFunction
-import typings.recursiveDashReaddir.recursiveDashReaddirMod.RecursiveReaddir.Ignores
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

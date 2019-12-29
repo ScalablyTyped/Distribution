@@ -2,7 +2,6 @@ package typings.atMaterialTextfield
 
 import typings.atMaterialTextfield.adapterMod.FoundationMapType
 import typings.atMaterialTextfield.adapterMod.MDCTextFieldAdapter
-import typings.atMaterialTextfield.foundationMod.MDCTextFieldFoundation
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

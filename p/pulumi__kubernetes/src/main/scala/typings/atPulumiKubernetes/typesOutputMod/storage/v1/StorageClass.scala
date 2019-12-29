@@ -1,7 +1,7 @@
 package typings.atPulumiKubernetes.typesOutputMod.storage.v1
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.storageDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.TopologySelectorTerm
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
@@ -33,7 +33,7 @@ trait StorageClass extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `storageDOTk8sDOTio/v1`
+  val apiVersion: storageDotk8sDotioSlashv1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -79,7 +79,7 @@ object StorageClass {
   def apply(
     allowVolumeExpansion: Boolean,
     allowedTopologies: js.Array[TopologySelectorTerm],
-    apiVersion: `storageDOTk8sDOTio/v1`,
+    apiVersion: storageDotk8sDotioSlashv1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.StorageClass,
     metadata: ObjectMeta,
     mountOptions: js.Array[String],

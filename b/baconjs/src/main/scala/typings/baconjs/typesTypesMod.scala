@@ -3,10 +3,6 @@ package typings.baconjs
 import typings.baconjs.typesEventMod.Event
 import typings.baconjs.typesObservableMod.EventStream
 import typings.baconjs.typesReplyMod.Reply
-import typings.baconjs.typesTypesMod.EventSink
-import typings.baconjs.typesTypesMod.Sink
-import typings.baconjs.typesTypesMod.Unsub
-import typings.baconjs.typesTypesMod.VoidSink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

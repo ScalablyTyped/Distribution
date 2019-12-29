@@ -1,14 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.AUTO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.AVG
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.COUNT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.COUNT_DISTINCT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.MAX
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.MIN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.NO_AGGREGATION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AggregationType.SUM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

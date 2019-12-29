@@ -1,15 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.AddTimestamp
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.AllMask
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.Compressed
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.Error
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.File
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.HighPriority
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.IsJob
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.LowPriority
-import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadType.Parts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

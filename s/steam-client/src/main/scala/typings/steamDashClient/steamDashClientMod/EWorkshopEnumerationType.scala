@@ -1,13 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.ContentByFriends
-import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.FavoriteOfFriends
-import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.RankedByVote
-import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.Recent
-import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.RecentFromFollowedUsers
-import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.Trending
-import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.VotedByFriends
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

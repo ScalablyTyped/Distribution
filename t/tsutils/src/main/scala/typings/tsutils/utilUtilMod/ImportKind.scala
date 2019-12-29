@@ -1,17 +1,6 @@
 package typings.tsutils.utilUtilMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tsutils.utilUtilMod.ImportKind.All
-import typings.tsutils.utilUtilMod.ImportKind.AllImportExpressions
-import typings.tsutils.utilUtilMod.ImportKind.AllImports
-import typings.tsutils.utilUtilMod.ImportKind.AllRequireLike
-import typings.tsutils.utilUtilMod.ImportKind.AllStaticImports
-import typings.tsutils.utilUtilMod.ImportKind.DynamicImport
-import typings.tsutils.utilUtilMod.ImportKind.ExportFrom
-import typings.tsutils.utilUtilMod.ImportKind.ImportDeclaration
-import typings.tsutils.utilUtilMod.ImportKind.ImportEquals
-import typings.tsutils.utilUtilMod.ImportKind.ImportType
-import typings.tsutils.utilUtilMod.ImportKind.Require
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

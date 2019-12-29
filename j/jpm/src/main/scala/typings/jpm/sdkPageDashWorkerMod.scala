@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.FFAddonSDK.Port
 import typings.jpm.jpmStrings.error
 import typings.jpm.jpmStrings.message
-import typings.jpm.sdkPageDashWorkerMod.PageWorker
 import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js

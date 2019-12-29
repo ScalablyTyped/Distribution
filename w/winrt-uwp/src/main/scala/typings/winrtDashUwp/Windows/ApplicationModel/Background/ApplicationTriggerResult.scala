@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.allowed
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.currentlyRunning
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.disabledByPolicy
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.unknownError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

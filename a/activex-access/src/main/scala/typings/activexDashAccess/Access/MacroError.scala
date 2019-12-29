@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.MacroError")
 @js.native
 class MacroError protected () extends js.Object {
-  var `Access.MacroError_typekey`: MacroError = js.native
+  @JSName("Access.MacroError_typekey")
+  var AccessDotMacroError_typekey: MacroError = js.native
   val ActionName: String = js.native
   val Arguments: String = js.native
   val Condition: String = js.native

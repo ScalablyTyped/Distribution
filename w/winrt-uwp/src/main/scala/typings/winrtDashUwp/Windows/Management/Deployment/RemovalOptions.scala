@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Management.Deployment.RemovalOptions.none
-import typings.winrtDashUwp.Windows.Management.Deployment.RemovalOptions.preserveApplicationData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

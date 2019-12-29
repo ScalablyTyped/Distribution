@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.even
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.mark
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.none
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.odd
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.space
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

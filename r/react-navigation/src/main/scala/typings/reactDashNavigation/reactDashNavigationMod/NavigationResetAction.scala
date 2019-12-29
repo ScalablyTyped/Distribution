@@ -1,6 +1,6 @@
 package typings.reactDashNavigation.reactDashNavigationMod
 
-import typings.reactDashNavigation.reactDashNavigationStrings.`Navigation/RESET`
+import typings.reactDashNavigation.reactDashNavigationStrings.NavigationSlashRESET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait NavigationResetAction
   extends NavigationStackAction
      with NavigationResetActionPayload {
-  var `type`: `Navigation/RESET`
+  var `type`: NavigationSlashRESET
 }
 
 object NavigationResetAction {
@@ -16,7 +16,7 @@ object NavigationResetAction {
   def apply(
     actions: js.Array[NavigationNavigateAction],
     index: Double,
-    `type`: `Navigation/RESET`,
+    `type`: NavigationSlashRESET,
     key: String = null
   ): NavigationResetAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])

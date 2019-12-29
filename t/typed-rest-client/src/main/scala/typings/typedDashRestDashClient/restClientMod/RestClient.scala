@@ -28,11 +28,10 @@ class RestClient protected () extends js.Object {
     requestOptions: typings.typedDashRestDashClient.interfacesMod.IRequestOptions
   ) = this()
   var _baseUrl: js.Any = js.native
+  var _headersFromOptions: js.Any = js.native
+  var _processResponse: js.Any = js.native
   var client: HttpClient = js.native
   var versionParam: String = js.native
-  /* private */ def _headersFromOptions(options: js.Any): js.Any = js.native
-  /* private */ def _headersFromOptions(options: js.Any, contentType: js.Any): js.Any = js.native
-  /* private */ def _processResponse[T](res: js.Any, options: js.Any): js.Any = js.native
   /**
     * Creates resource(s) from an endpoint
     * T type of object returned.
@@ -92,6 +91,6 @@ class RestClient protected () extends js.Object {
 @JSImport("typed-rest-client/RestClient", "RestClient")
 @js.native
 object RestClient extends js.Object {
-  /* private */ def dateTimeDeserializer(key: js.Any, value: js.Any): js.Any = js.native
+  var dateTimeDeserializer: js.Any = js.native
 }
 

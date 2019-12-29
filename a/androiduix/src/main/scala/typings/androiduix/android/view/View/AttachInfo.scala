@@ -5,7 +5,6 @@ import typings.androiduix.android.graphics.Point
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.os.Handler
 import typings.androiduix.android.view.KeyEvent.DispatcherState
-import typings.androiduix.android.view.View.AttachInfo.InvalidateInfo
 import typings.androiduix.android.view.ViewRootImpl
 import typings.androiduix.android.view.animation.Transformation
 import typings.std.Set

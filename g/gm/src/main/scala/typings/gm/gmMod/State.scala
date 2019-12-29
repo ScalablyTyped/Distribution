@@ -1,10 +1,10 @@
 package typings.gm.gmMod
 
-import typings.gm.gmStrings.`!`
-import typings.gm.gmStrings.`%`
-import typings.gm.gmStrings.`+`
-import typings.gm.gmStrings.`<`
-import typings.gm.gmStrings.`>`
+import typings.gm.gmStrings.Exclamationmark
+import typings.gm.gmStrings.Greaterthansign
+import typings.gm.gmStrings.Lessthansign
+import typings.gm.gmStrings.Percentsign
+import typings.gm.gmStrings.Plussign
 import typings.gm.gmStrings.`private`
 import typings.gm.gmStrings.center_
 import typings.gm.gmStrings.shared
@@ -192,6 +192,8 @@ trait State extends js.Object {
   def minify(factor: Double): State = js.native
   def mode(mode: String): State = js.native
   def mode(mode: OperationMode): State = js.native
+  def modulate(b: Double): State = js.native
+  def modulate(b: Double, s: Double): State = js.native
   def modulate(b: Double, s: Double, h: Double): State = js.native
   def monitor(): State = js.native
   def monochrome(): State = js.native
@@ -225,10 +227,10 @@ trait State extends js.Object {
   def outputDirectory(directory: String): State = js.native
   def page(width: Double, height: Double): State = js.native
   def page(width: Double, height: Double, arg: String): State = js.native
-  def page(width: Double, height: Double, arg: `!`): State = js.native
-  def page(width: Double, height: Double, arg: `%`): State = js.native
-  def page(width: Double, height: Double, arg: `<`): State = js.native
-  def page(width: Double, height: Double, arg: `>`): State = js.native
+  def page(width: Double, height: Double, arg: Exclamationmark): State = js.native
+  def page(width: Double, height: Double, arg: Greaterthansign): State = js.native
+  def page(width: Double, height: Double, arg: Lessthansign): State = js.native
+  def page(width: Double, height: Double, arg: Percentsign): State = js.native
   def paint(radius: Double): State = js.native
   def pause(seconds: Double): State = js.native
   def pen(color: String): State = js.native
@@ -252,7 +254,7 @@ trait State extends js.Object {
   def remote(): State = js.native
   def render(): State = js.native
   def repage(reset: String): State = js.native
-  def repage(reset: `+`): State = js.native
+  def repage(reset: Plussign): State = js.native
   def repage(width: Double, height: Double, xoff: Double, yoff: Double): State = js.native
   def repage(width: Double, height: Double, xoff: Double, yoff: Double, arg: String): State = js.native
   def res(callback: GetterCallback[String]): State = js.native

@@ -1,8 +1,6 @@
 package typings.popmotion
 
 import typings.popmotion.libActionMod.Action
-import typings.popmotion.libCompositorsStaggerMod.Interval
-import typings.popmotion.libCompositorsStaggerMod.IntervalCalc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

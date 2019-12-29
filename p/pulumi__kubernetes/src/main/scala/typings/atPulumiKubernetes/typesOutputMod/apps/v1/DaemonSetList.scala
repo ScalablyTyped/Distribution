@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.apps.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait DaemonSetList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `apps/v1`
+  val apiVersion: appsSlashv1
   /**
     * A list of daemon sets.
     */
@@ -38,7 +38,7 @@ trait DaemonSetList extends js.Object {
 object DaemonSetList {
   @scala.inline
   def apply(
-    apiVersion: `apps/v1`,
+    apiVersion: appsSlashv1,
     items: js.Array[DaemonSet],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.DaemonSetList,
     metadata: ListMeta

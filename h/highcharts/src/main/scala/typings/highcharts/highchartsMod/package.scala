@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object highchartsMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.highcharts.globalsMod.GlobalSVGElement
-  import typings.highcharts.highchartsNumbers.`false`
+  import typings.highcharts.highchartsBooleans.`false`
   import typings.std.Error
   import typings.std.Event
   import typings.std.HTMLElement

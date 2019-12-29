@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.chap
-import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.mschapv2
-import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.none
-import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.pap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

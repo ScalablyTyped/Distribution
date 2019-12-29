@@ -1,20 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.cancelled
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.declined
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.deleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.draft
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.recalled
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloadFailed
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloadNeeded
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloading
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveRetryNeeded
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.received
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sendFailed
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sendRetryNeeded
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sending
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

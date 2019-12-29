@@ -115,18 +115,18 @@ import typings.activexDashAccess.activexDashAccessNumbers.`97`
 import typings.activexDashAccess.activexDashAccessNumbers.`98`
 import typings.activexDashAccess.activexDashAccessNumbers.`99`
 import typings.activexDashAccess.activexDashAccessNumbers.`9`
-import typings.activexDashAccess.activexDashAccessStrings.`HTML (*DOThtml)`
-import typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text (*DOTtxt)`
-import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Access Data Access Page (*DOThtm; *DOThtml)`
-import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Active Server Pages (*DOTasp)`
-import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel (*DOTxls)`
-import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Binary Workbook (*DOTxlsb)`
-import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Workbook (*DOTxlsx)`
-import typings.activexDashAccess.activexDashAccessStrings.`Microsoft IIS (*DOThtx; *DOTidc)`
-import typings.activexDashAccess.activexDashAccessStrings.`PDF Format (*DOTpdf)`
-import typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format (*DOTrtf)`
-import typings.activexDashAccess.activexDashAccessStrings.`Snapshot Format (*DOTsnp)`
-import typings.activexDashAccess.activexDashAccessStrings.`XPS Format (*DOTxps)`
+import typings.activexDashAccess.activexDashAccessStrings.`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -140,18 +140,18 @@ import scala.scalajs.js.annotation._
   - typings.activexDashAccess.activexDashAccessNumbers.`0`
   - typings.activexDashAccess.activexDashAccessNumbers.`6`
   - typings.activexDashAccess.activexDashAccessNumbers.`5`
-  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Active Server Pages (*DOTasp)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Access Data Access Page (*DOThtm; *DOThtml)`
-  - typings.activexDashAccess.activexDashAccessStrings.`HTML (*DOThtml)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft IIS (*DOThtx; *DOTidc)`
-  - typings.activexDashAccess.activexDashAccessStrings.`PDF Format (*DOTpdf)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format (*DOTrtf)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Snapshot Format (*DOTsnp)`
-  - typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text (*DOTtxt)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel (*DOTxls)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Binary Workbook (*DOTxlsb)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Workbook (*DOTxlsx)`
-  - typings.activexDashAccess.activexDashAccessStrings.`XPS Format (*DOTxps)`
+  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`
   - typings.activexDashAccess.activexDashAccessNumbers.`-1`
   - typings.activexDashAccess.activexDashAccessNumbers.`8`
   - typings.activexDashAccess.activexDashAccessNumbers.`9`
@@ -319,29 +319,29 @@ object Constants {
   @scala.inline
   def acFormBar: `0` = this.cast(0)
   @scala.inline
-  def acFormatASP: `Microsoft Active Server Pages (*DOTasp)` = this.cast("Microsoft Active Server Pages (*.asp)")
+  def acFormatASP: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = this.cast("Microsoft Active Server Pages (*.asp)")
   @scala.inline
-  def acFormatDAP: `Microsoft Access Data Access Page (*DOThtm; *DOThtml)` = this.cast("Microsoft Access Data Access Page (*.htm; *.html)")
+  def acFormatDAP: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = this.cast("Microsoft Access Data Access Page (*.htm; *.html)")
   @scala.inline
-  def acFormatHTML: `HTML (*DOThtml)` = this.cast("HTML (*.html)")
+  def acFormatHTML: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = this.cast("HTML (*.html)")
   @scala.inline
-  def acFormatIIS: `Microsoft IIS (*DOThtx; *DOTidc)` = this.cast("Microsoft IIS (*.htx; *.idc)")
+  def acFormatIIS: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = this.cast("Microsoft IIS (*.htx; *.idc)")
   @scala.inline
-  def acFormatPDF: `PDF Format (*DOTpdf)` = this.cast("PDF Format (*.pdf)")
+  def acFormatPDF: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = this.cast("PDF Format (*.pdf)")
   @scala.inline
-  def acFormatRTF: `Rich Text Format (*DOTrtf)` = this.cast("Rich Text Format (*.rtf)")
+  def acFormatRTF: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = this.cast("Rich Text Format (*.rtf)")
   @scala.inline
-  def acFormatSNP: `Snapshot Format (*DOTsnp)` = this.cast("Snapshot Format (*.snp)")
+  def acFormatSNP: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = this.cast("Snapshot Format (*.snp)")
   @scala.inline
-  def acFormatTXT: `MS-DOS Text (*DOTtxt)` = this.cast("MS-DOS Text (*.txt)")
+  def acFormatTXT: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = this.cast("MS-DOS Text (*.txt)")
   @scala.inline
-  def acFormatXLS: `Microsoft Excel (*DOTxls)` = this.cast("Microsoft Excel (*.xls)")
+  def acFormatXLS: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = this.cast("Microsoft Excel (*.xls)")
   @scala.inline
-  def acFormatXLSB: `Microsoft Excel Binary Workbook (*DOTxlsb)` = this.cast("Microsoft Excel Binary Workbook (*.xlsb)")
+  def acFormatXLSB: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = this.cast("Microsoft Excel Binary Workbook (*.xlsb)")
   @scala.inline
-  def acFormatXLSX: `Microsoft Excel Workbook (*DOTxlsx)` = this.cast("Microsoft Excel Workbook (*.xlsx)")
+  def acFormatXLSX: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = this.cast("Microsoft Excel Workbook (*.xlsx)")
   @scala.inline
-  def acFormatXPS: `XPS Format (*DOTxps)` = this.cast("XPS Format (*.xps)")
+  def acFormatXPS: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = this.cast("XPS Format (*.xps)")
   @scala.inline
   def acGridlinesBoth: `3` = this.cast(3)
   @scala.inline

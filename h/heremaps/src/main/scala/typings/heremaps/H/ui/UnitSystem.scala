@@ -1,8 +1,6 @@
 package typings.heremaps.H.ui
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.ui.UnitSystem.IMPERIAL
-import typings.heremaps.H.ui.UnitSystem.METRIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

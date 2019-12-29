@@ -1,9 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.AnchorEventType.Add
-import typings.expo.buildARMod.AnchorEventType.Remove
-import typings.expo.buildARMod.AnchorEventType.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

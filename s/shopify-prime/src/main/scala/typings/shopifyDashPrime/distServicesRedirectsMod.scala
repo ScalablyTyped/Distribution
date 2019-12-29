@@ -5,7 +5,6 @@ import typings.shopifyDashPrime.distModelsRedirectMod.Redirect
 import typings.shopifyDashPrime.distOptionsBaseMod.FieldOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.ListOptions
 import typings.shopifyDashPrime.distOptionsRedirectsMod.RedirectOptions
-import typings.shopifyDashPrime.distServicesRedirectsMod.Redirects
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

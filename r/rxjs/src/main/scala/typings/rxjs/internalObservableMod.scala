@@ -1,6 +1,5 @@
 package typings.rxjs
 
-import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.internalOperatorMod.Operator
 import typings.rxjs.internalSubscriberMod.Subscriber
 import typings.rxjs.internalTypesMod.OperatorFunction
@@ -121,9 +120,9 @@ object internalObservableMod extends js.Object {
       op9: OperatorFunction[H, I],
       operations: (OperatorFunction[_, _])*
     ): Observable[js.Object] = js.native
-    def toPromise[T](`this`: Observable[T]): js.Promise[T] = js.native
-    def toPromise[T](`this`: Observable[T], PromiseCtor: PromiseConstructor): js.Promise[T] = js.native
-    def toPromise[T](`this`: Observable[T], PromiseCtor: PromiseConstructorLike): js.Promise[T] = js.native
+    def toPromise[T](): js.Promise[T] = js.native
+    def toPromise[T](PromiseCtor: PromiseConstructor): js.Promise[T] = js.native
+    def toPromise[T](PromiseCtor: PromiseConstructorLike): js.Promise[T] = js.native
   }
   
   /* static members */

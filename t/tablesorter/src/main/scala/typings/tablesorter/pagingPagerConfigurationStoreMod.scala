@@ -131,7 +131,7 @@ object pagingPagerConfigurationStoreMod extends js.Object {
     /**
       * The old success-callback of the ajax-settings.
       */
-    def oldAjaxSuccess(`this`: js.Any, data: js.Any, textStatus: SuccessTextStatus, jqXHR: jqXHR[_]): Unit = js.native
+    def oldAjaxSuccess(data: js.Any, textStatus: SuccessTextStatus, jqXHR: jqXHR[_]): Unit = js.native
   }
   
 }

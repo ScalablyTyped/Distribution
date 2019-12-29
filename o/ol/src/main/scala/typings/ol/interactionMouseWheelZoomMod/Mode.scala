@@ -1,8 +1,6 @@
 package typings.ol.interactionMouseWheelZoomMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.interactionMouseWheelZoomMod.Mode.TRACKPAD
-import typings.ol.interactionMouseWheelZoomMod.Mode.WHEEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

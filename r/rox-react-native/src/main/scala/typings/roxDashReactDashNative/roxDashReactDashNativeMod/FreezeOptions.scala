@@ -1,9 +1,6 @@
 package typings.roxDashReactDashNative.roxDashReactDashNativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.roxDashReactDashNative.roxDashReactDashNativeMod.FreezeOptions.freezeOptionNone
-import typings.roxDashReactDashNative.roxDashReactDashNativeMod.FreezeOptions.freezeOptionUntilForeground
-import typings.roxDashReactDashNative.roxDashReactDashNativeMod.FreezeOptions.freezeOptionUntilLaunch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

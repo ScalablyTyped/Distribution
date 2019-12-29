@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcCoreInterleavedBufferAttributeMod.InterleavedBufferAttribute
 import typings.three.srcCoreInterleavedBufferMod.InterleavedBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

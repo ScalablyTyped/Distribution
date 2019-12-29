@@ -18,11 +18,11 @@ trait IConnection extends IObservable {
   /** [Config Option] (Object) */
   var defaultHeaders: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var defaultXhrHeader: js.UndefOr[java.lang.String] = js.undefined
+  var defaultXhrHeader: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var disableCaching: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var disableCachingParam: js.UndefOr[java.lang.String] = js.undefined
+  var disableCachingParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var extraParams: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of async
@@ -40,11 +40,11 @@ trait IConnection extends IObservable {
   /** [Method] Returns the value of defaultPostHeader
   		* @returns String
   		*/
-  var getDefaultPostHeader: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDefaultPostHeader: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of defaultXhrHeader
   		* @returns String
   		*/
-  var getDefaultXhrHeader: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDefaultXhrHeader: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of disableCaching
   		* @returns Boolean
   		*/
@@ -52,7 +52,7 @@ trait IConnection extends IObservable {
   /** [Method] Returns the value of disableCachingParam
   		* @returns String
   		*/
-  var getDisableCachingParam: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDisableCachingParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of extraParams
   		* @returns Object
   		*/
@@ -60,11 +60,11 @@ trait IConnection extends IObservable {
   /** [Method] Returns the value of method
   		* @returns String
   		*/
-  var getMethod: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of password
   		* @returns String
   		*/
-  var getPassword: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of timeout
   		* @returns Number
   		*/
@@ -72,7 +72,7 @@ trait IConnection extends IObservable {
   /** [Method] Returns the value of url
   		* @returns String
   		*/
-  var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of useDefaultHeader
   		* @returns Boolean
   		*/
@@ -84,14 +84,14 @@ trait IConnection extends IObservable {
   /** [Method] Returns the value of username
   		* @returns String
   		*/
-  var getUsername: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Determines whether this object has a request outstanding
   		* @param request Object The request to check.
   		* @returns Boolean True if there is an outstanding request.
   		*/
   var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   /** [Method] Checks if the response status was successful
   		* @param status Number The status code.
   		* @param xhr XMLHttpRequest
@@ -129,11 +129,11 @@ trait IConnection extends IObservable {
   /** [Method] Sets the value of defaultPostHeader
   		* @param defaultPostHeader String The new value.
   		*/
-  var setDefaultPostHeader: js.UndefOr[js.Function1[/* defaultPostHeader */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDefaultPostHeader: js.UndefOr[js.Function1[/* defaultPostHeader */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of defaultXhrHeader
   		* @param defaultXhrHeader String The new value.
   		*/
-  var setDefaultXhrHeader: js.UndefOr[js.Function1[/* defaultXhrHeader */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDefaultXhrHeader: js.UndefOr[js.Function1[/* defaultXhrHeader */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of disableCaching
   		* @param disableCaching Boolean The new value.
   		*/
@@ -141,7 +141,7 @@ trait IConnection extends IObservable {
   /** [Method] Sets the value of disableCachingParam
   		* @param disableCachingParam String The new value.
   		*/
-  var setDisableCachingParam: js.UndefOr[js.Function1[/* disableCachingParam */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDisableCachingParam: js.UndefOr[js.Function1[/* disableCachingParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of extraParams
   		* @param extraParams Object The new value.
   		*/
@@ -149,7 +149,7 @@ trait IConnection extends IObservable {
   /** [Method] Sets the value of method
   		* @param method String The new value.
   		*/
-  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets various options such as the url params for the request
   		* @param options Object The initial options.
   		* @param scope Object The scope to execute in.
@@ -161,7 +161,7 @@ trait IConnection extends IObservable {
   /** [Method] Sets the value of password
   		* @param password String The new value.
   		*/
-  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of timeout
   		* @param timeout Number The new value.
   		*/
@@ -169,7 +169,7 @@ trait IConnection extends IObservable {
   /** [Method] Sets the value of url
   		* @param url String The new value.
   		*/
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of useDefaultHeader
   		* @param useDefaultHeader Boolean The new value.
   		*/
@@ -181,7 +181,7 @@ trait IConnection extends IObservable {
   /** [Method] Sets the value of username
   		* @param username String The new value.
   		*/
-  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
   /** [Method] Uploads a form using a hidden iframe
@@ -193,14 +193,14 @@ trait IConnection extends IObservable {
   var upload: js.UndefOr[
     js.Function4[
       /* form */ js.UndefOr[js.Any], 
-      /* url */ js.UndefOr[java.lang.String], 
-      /* params */ js.UndefOr[java.lang.String], 
+      /* url */ js.UndefOr[String], 
+      /* params */ js.UndefOr[String], 
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined
 }
@@ -213,7 +213,7 @@ object IConnection {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -224,44 +224,44 @@ object IConnection {
     clearListeners: () => Unit = null,
     config: js.Any = null,
     defaultHeaders: js.Any = null,
-    defaultXhrHeader: java.lang.String = null,
+    defaultXhrHeader: String = null,
     destroy: () => Unit = null,
     disableCaching: js.UndefOr[Boolean] = js.undefined,
-    disableCachingParam: java.lang.String = null,
+    disableCachingParam: String = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     extraParams: js.Any = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getAsync: () => Boolean = null,
     getAutoAbort: () => Boolean = null,
     getBubbleEvents: () => _ = null,
     getDefaultHeaders: () => _ = null,
-    getDefaultPostHeader: () => java.lang.String = null,
-    getDefaultXhrHeader: () => java.lang.String = null,
+    getDefaultPostHeader: () => String = null,
+    getDefaultXhrHeader: () => String = null,
     getDisableCaching: () => Boolean = null,
-    getDisableCachingParam: () => java.lang.String = null,
+    getDisableCachingParam: () => String = null,
     getExtraParams: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
-    getMethod: () => java.lang.String = null,
-    getPassword: () => java.lang.String = null,
+    getMethod: () => String = null,
+    getPassword: () => String = null,
     getTimeout: () => Double = null,
-    getUrl: () => java.lang.String = null,
+    getUrl: () => String = null,
     getUseDefaultHeader: () => Boolean = null,
     getUseDefaultXhrHeader: () => Boolean = null,
-    getUsername: () => java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getUsername: () => String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     isLoading: /* request */ js.UndefOr[js.Any] => Boolean = null,
     listeners: js.Any = null,
-    method: java.lang.String = null,
+    method: String = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     parseStatus: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => _ = null,
@@ -269,7 +269,7 @@ object IConnection {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     request: /* options */ js.UndefOr[js.Any] => _ = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
@@ -278,29 +278,29 @@ object IConnection {
     setAutoAbort: /* autoAbort */ js.UndefOr[Boolean] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setDefaultHeaders: /* defaultHeaders */ js.UndefOr[js.Any] => Unit = null,
-    setDefaultPostHeader: /* defaultPostHeader */ js.UndefOr[java.lang.String] => Unit = null,
-    setDefaultXhrHeader: /* defaultXhrHeader */ js.UndefOr[java.lang.String] => Unit = null,
+    setDefaultPostHeader: /* defaultPostHeader */ js.UndefOr[String] => Unit = null,
+    setDefaultXhrHeader: /* defaultXhrHeader */ js.UndefOr[String] => Unit = null,
     setDisableCaching: /* disableCaching */ js.UndefOr[Boolean] => Unit = null,
-    setDisableCachingParam: /* disableCachingParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setDisableCachingParam: /* disableCachingParam */ js.UndefOr[String] => Unit = null,
     setExtraParams: /* extraParams */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMethod: /* method */ js.UndefOr[java.lang.String] => Unit = null,
+    setMethod: /* method */ js.UndefOr[String] => Unit = null,
     setOptions: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    setPassword: /* password */ js.UndefOr[java.lang.String] => Unit = null,
+    setPassword: /* password */ js.UndefOr[String] => Unit = null,
     setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
     setUseDefaultHeader: /* useDefaultHeader */ js.UndefOr[Boolean] => Unit = null,
     setUseDefaultXhrHeader: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit = null,
-    setUsername: /* username */ js.UndefOr[java.lang.String] => Unit = null,
+    setUsername: /* username */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
     timeout: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    upload: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[java.lang.String], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    url: java.lang.String = null,
+    upload: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit = null,
+    url: String = null,
     useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined,
     uses: Array = null
   ): IConnection = {

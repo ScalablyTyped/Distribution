@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapPrinterMode.TWPM_COMPOUNDSTRING
-import typings.dwt.EnumDWT_CapPrinterMode.TWPM_MULTISTRING
-import typings.dwt.EnumDWT_CapPrinterMode.TWPM_SINGLESTRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

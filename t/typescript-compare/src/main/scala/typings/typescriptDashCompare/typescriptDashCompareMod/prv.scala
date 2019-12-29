@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object prv extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.typescriptDashCompare.typescriptDashCompareNumbers.`false`
-    - typings.typescriptDashCompare.typescriptDashCompareNumbers.`true`
+    - typings.typescriptDashCompare.typescriptDashCompareBooleans.`false`
+    - typings.typescriptDashCompare.typescriptDashCompareBooleans.`true`
   */
   trait Extends[A, B] extends js.Object
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAltBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -21,12 +21,14 @@ trait Anon_AccesstokenAltBearertoken extends js.Object {
     * When set to `true`, the target document must exist.
     * When set to `false`, the target document must not exist.
     */
-  var `currentDocument.exists`: js.UndefOr[Boolean] = js.native
+  @JSName("currentDocument.exists")
+  var currentDocumentDotexists: js.UndefOr[Boolean] = js.native
   /**
     * When set, the target document must exist and have been last updated at
     * that time.
     */
-  var `currentDocument.updateTime`: js.UndefOr[String] = js.native
+  @JSName("currentDocument.updateTime")
+  var currentDocumentDotupdateTime: js.UndefOr[String] = js.native
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */

@@ -1,6 +1,5 @@
 package typings.jqueryDashCountto.jqueryDashCounttoMod
 
-import typings.jqueryDashCountto.jqueryDashCounttoMod._Global_.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

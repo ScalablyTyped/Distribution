@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartAxisPosition.automatic
-import typings.officeDashJsDashPreview.Excel.ChartAxisPosition.custom
-import typings.officeDashJsDashPreview.Excel.ChartAxisPosition.maximum
-import typings.officeDashJsDashPreview.Excel.ChartAxisPosition.minimum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

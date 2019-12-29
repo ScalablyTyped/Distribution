@@ -1,12 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.EventType.AnchorsDidUpdate
-import typings.expo.buildARMod.EventType.CameraDidChangeTrackingState
-import typings.expo.buildARMod.EventType.DidFailWithError
-import typings.expo.buildARMod.EventType.FrameDidUpdate
-import typings.expo.buildARMod.EventType.SessionInterruptionEnded
-import typings.expo.buildARMod.EventType.SessionWasInterrupted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

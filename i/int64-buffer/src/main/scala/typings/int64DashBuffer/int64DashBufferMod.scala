@@ -1,6 +1,5 @@
 package typings.int64DashBuffer
 
-import typings.int64DashBuffer.int64DashBufferMod.Int64
 import typings.node.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array

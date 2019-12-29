@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.aes128Ctr
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.cocktail
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.uninitialized
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

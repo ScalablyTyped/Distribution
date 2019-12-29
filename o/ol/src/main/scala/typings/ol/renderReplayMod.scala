@@ -1,18 +1,6 @@
 package typings.ol
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.renderReplayMod.TEXT_ALIGN
-import typings.ol.renderReplayMod.TEXT_ALIGN.alphabetic
-import typings.ol.renderReplayMod.TEXT_ALIGN.bottom
-import typings.ol.renderReplayMod.TEXT_ALIGN.center
-import typings.ol.renderReplayMod.TEXT_ALIGN.end
-import typings.ol.renderReplayMod.TEXT_ALIGN.hanging
-import typings.ol.renderReplayMod.TEXT_ALIGN.ideographic
-import typings.ol.renderReplayMod.TEXT_ALIGN.left
-import typings.ol.renderReplayMod.TEXT_ALIGN.middle
-import typings.ol.renderReplayMod.TEXT_ALIGN.right
-import typings.ol.renderReplayMod.TEXT_ALIGN.start
-import typings.ol.renderReplayMod.TEXT_ALIGN.top
 import typings.ol.renderReplayTypeMod.ReplayType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

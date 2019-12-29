@@ -14,6 +14,7 @@ class EndnoteOptions protected () extends js.Object {
   var NumberingRule: WdNumberingRule = js.native
   val Parent: js.Any = js.native
   var StartingNumber: Double = js.native
-  var `Word.EndnoteOptions_typekey`: EndnoteOptions = js.native
+  @JSName("Word.EndnoteOptions_typekey")
+  var WordDotEndnoteOptions_typekey: EndnoteOptions = js.native
 }
 

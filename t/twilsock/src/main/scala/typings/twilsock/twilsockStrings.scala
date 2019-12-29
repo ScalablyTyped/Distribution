@@ -21,7 +21,7 @@ object twilsockStrings {
   sealed trait PUT extends Method
   
   @js.native
-  sealed trait `application/json` extends js.Object
+  sealed trait applicationSlashjson extends js.Object
   
   @js.native
   sealed trait close extends MessageType
@@ -77,7 +77,7 @@ object twilsockStrings {
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
-  def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
+  def applicationSlashjson: applicationSlashjson = "application/json".asInstanceOf[applicationSlashjson]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline

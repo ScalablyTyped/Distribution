@@ -2,12 +2,10 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.ckeditor.CKEDITOR.filter.allowedContentRule
 import typings.ckeditor.CKEDITOR.filter.allowedContentRules
 import typings.ckeditor.CKEDITOR.filter.contentRule
 import typings.ckeditor.CKEDITOR.filter.disallowedContentRules
 import typings.ckeditor.CKEDITOR.filter.transformation
-import typings.ckeditor.CKEDITOR.filter.transformationTools
 import typings.ckeditor.CKEDITOR.htmlParser.element
 import typings.ckeditor.CKEDITOR.htmlParser.fragment
 import scala.scalajs.js

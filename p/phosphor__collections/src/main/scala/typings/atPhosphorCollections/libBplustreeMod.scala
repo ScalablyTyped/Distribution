@@ -4,7 +4,6 @@ import typings.atPhosphorAlgorithm.libIterMod.IIterable
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorAlgorithm.libIterMod.IterableOrArrayLike
 import typings.atPhosphorAlgorithm.libRetroMod.IRetroable
-import typings.atPhosphorCollections.libBplustreeMod.BPlusTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

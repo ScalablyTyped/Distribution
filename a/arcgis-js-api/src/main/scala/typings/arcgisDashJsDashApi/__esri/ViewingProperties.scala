@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ViewingProperties extends js.Object {
   /**
-    * An object specifying the search parameters set within the web scene.
+    * An object specifying the search parameters set within the web scene or web map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Viewing.html#search)
     */

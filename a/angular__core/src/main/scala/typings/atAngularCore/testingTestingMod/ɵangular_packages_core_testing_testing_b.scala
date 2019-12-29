@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core/testing/testing", "ɵangular_packages_core_testing_testing_b")
+@JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b")
 @js.native
 class ɵangular_packages_core_testing_testing_b ()
   extends Injector
@@ -70,7 +70,7 @@ class ɵangular_packages_core_testing_testing_b ()
 }
 
 /* static members */
-@JSImport("@angular/core/testing/testing", "ɵangular_packages_core_testing_testing_b")
+@JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b")
 @js.native
 object ɵangular_packages_core_testing_testing_b extends js.Object {
   /**

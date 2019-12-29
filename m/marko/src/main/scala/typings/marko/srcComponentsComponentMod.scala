@@ -1,6 +1,5 @@
 package typings.marko
 
-import typings.marko.srcComponentsComponentMod.Component
 import typings.marko.srcRuntimeDomElementMod.DomElement
 import typings.node.eventsMod.EventEmitter
 import typings.std.HTMLElement

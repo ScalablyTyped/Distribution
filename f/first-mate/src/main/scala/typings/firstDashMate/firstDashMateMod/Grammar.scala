@@ -1,7 +1,7 @@
 package typings.firstDashMate.firstDashMateMod
 
 import typings.eventDashKit.eventDashKitMod.Disposable
-import typings.firstDashMate.firstDashMateNumbers.`false`
+import typings.firstDashMate.firstDashMateBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

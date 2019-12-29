@@ -13,7 +13,8 @@ class Dictionaries protected () extends js.Object {
   val Creator: Double = js.native
   val Maximum: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Dictionaries_typekey`: Dictionaries = js.native
+  @JSName("Word.Dictionaries_typekey")
+  var WordDotDictionaries_typekey: Dictionaries = js.native
   def Add(FileName: String): Dictionary = js.native
   def ClearAll(): Unit = js.native
   def Item(Index: js.Any): Dictionary = js.native

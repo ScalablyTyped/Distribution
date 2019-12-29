@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.ScenePluginFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
@@ -26,33 +27,16 @@ class ScenePluginFile protected ()
     * @param sceneKey If this plugin is to be added to the Scene, this is the property key for it.
     * @param xhrSettings Extra XHR Settings specifically for this file.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: ScenePluginFileConfig) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: ScenePluginFileConfig, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, systemKey: String) = this()
+  def this(loader: LoaderPlugin, key: String) = this()
+  def this(loader: LoaderPlugin, key: ScenePluginFileConfig) = this()
+  def this(loader: LoaderPlugin, key: String, url: String) = this()
+  def this(loader: LoaderPlugin, key: ScenePluginFileConfig, url: String) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, systemKey: String) = this()
+  def this(loader: LoaderPlugin, key: ScenePluginFileConfig, url: String, systemKey: String) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, systemKey: String, sceneKey: String) = this()
+  def this(loader: LoaderPlugin, key: ScenePluginFileConfig, url: String, systemKey: String, sceneKey: String) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: ScenePluginFileConfig,
-    url: String,
-    systemKey: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    url: String,
-    systemKey: String,
-    sceneKey: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: ScenePluginFileConfig,
-    url: String,
-    systemKey: String,
-    sceneKey: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     url: String,
     systemKey: String,
@@ -60,7 +44,7 @@ class ScenePluginFile protected ()
     xhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: ScenePluginFileConfig,
     url: String,
     systemKey: String,

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("punycode", "version")
 @js.native
-object version
-  extends TopLevel[java.lang.String]
+object version extends TopLevel[String]
 

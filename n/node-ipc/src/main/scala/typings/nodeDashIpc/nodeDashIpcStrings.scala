@@ -30,7 +30,7 @@ object nodeDashIpcStrings {
   sealed trait hex extends js.Object
   
   @js.native
-  sealed trait socketDOTdisconnected extends js.Object
+  sealed trait socketDotdisconnected extends js.Object
   
   @js.native
   sealed trait ucs2 extends js.Object
@@ -64,7 +64,7 @@ object nodeDashIpcStrings {
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
-  def socketDOTdisconnected: socketDOTdisconnected = "socket.disconnected".asInstanceOf[socketDOTdisconnected]
+  def socketDotdisconnected: socketDotdisconnected = "socket.disconnected".asInstanceOf[socketDotdisconnected]
   @scala.inline
   def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   @scala.inline

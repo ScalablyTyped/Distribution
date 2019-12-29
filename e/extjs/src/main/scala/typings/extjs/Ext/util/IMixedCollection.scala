@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.util.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultSortDirection, sortRoot, sorters, isSortable, generateComparator, getFirstSorter, initSortable, sort */ trait IMixedCollection extends IAbstractMixedCollection {
   /** [Config Option] (String) */
-  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   /** [Method] Calculates the insertion index of the new item based upon the comparison function passed or the current sort order
   		* @param newItem Object The new object to find the insertion position of.
   		* @param sorterFn Function The function to sort by. This is the same as the sorting function passed to sortBy. It accepts 2 items from this MixedCollection, and returns -1 0, or 1 depending on the relative sort positions of the 2 compared items. If omitted, a function generated from the currently defined set of sorters will be used.
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
   		* @param direction String The overall direction to sort the data by.
   		* @returns Ext.util.Sorter[]
   		*/
-  var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[java.lang.String], Array]] = js.undefined
+  var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[String], Array]] = js.undefined
   /** [Method] Sorts the collection by a single sorter function
   		* @param sorterFn Function The function to sort by
   		*/
@@ -49,10 +49,10 @@ import scala.scalajs.js.annotation._
   		* @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
   		*/
   var sortByKey: js.UndefOr[
-    js.Function2[/* direction */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* direction */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Config Option] (String) */
-  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  var sortRoot: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.util.Sorter[]/Object[]) */
   var sorters: js.UndefOr[js.Any] = js.undefined
 }
@@ -75,24 +75,24 @@ object IMixedCollection {
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
     clone: () => IMixedCollection = null,
-    collect: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* allowBlank */ js.UndefOr[Boolean]) => Array = null,
+    collect: (/* property */ js.UndefOr[String], /* root */ js.UndefOr[String], /* allowBlank */ js.UndefOr[Boolean]) => Array = null,
     config: js.Any = null,
     contains: /* o */ js.UndefOr[js.Any] => Boolean = null,
-    containsKey: /* key */ js.UndefOr[java.lang.String] => Boolean = null,
-    defaultSortDirection: java.lang.String = null,
+    containsKey: /* key */ js.UndefOr[String] => Boolean = null,
+    defaultSortDirection: String = null,
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     eachKey: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     filter: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => IMixedCollection = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
     find: () => Unit = null,
     findBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    findIndex: (/* property */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double = null,
+    findIndex: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double = null,
     findIndexBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double = null,
     findInsertionIndex: (/* newItem */ js.UndefOr[js.Any], /* sorterFn */ js.UndefOr[js.Any]) => Double = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     first: () => _ = null,
     generateComparator: () => Unit = null,
     get: /* key */ js.UndefOr[js.Any] => _ = null,
@@ -100,13 +100,13 @@ object IMixedCollection {
     getByKey: /* key */ js.UndefOr[js.Any] => _ = null,
     getCount: () => Double = null,
     getFirstSorter: () => ISorter = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getKey: /* item */ js.UndefOr[js.Any] => _ = null,
     getRange: (/* startIndex */ js.UndefOr[Double], /* endIndex */ js.UndefOr[Double]) => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     indexOf: /* o */ js.UndefOr[js.Any] => Double = null,
-    indexOfKey: /* key */ js.UndefOr[java.lang.String] => Double = null,
+    indexOfKey: /* key */ js.UndefOr[String] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IMixedCollection = null,
     initSortable: () => Unit = null,
@@ -120,31 +120,31 @@ object IMixedCollection {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     remove: /* o */ js.UndefOr[js.Any] => _ = null,
     removeAll: /* items */ js.UndefOr[Array] => IMixedCollection = null,
     removeAt: /* index */ js.UndefOr[Double] => _ = null,
-    removeAtKey: /* key */ js.UndefOr[java.lang.String] => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeAtKey: /* key */ js.UndefOr[String] => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeRange: (/* index */ js.UndefOr[Double], /* removeCount */ js.UndefOr[Double]) => _ = null,
     reorder: /* mapping */ js.UndefOr[js.Any] => Unit = null,
-    replace: (/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any]) => _ = null,
+    replace: (/* key */ js.UndefOr[String], /* o */ js.UndefOr[js.Any]) => _ = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (js.UndefOr[js.Any], js.UndefOr[java.lang.String]) => Array = null,
+    sort: (js.UndefOr[js.Any], js.UndefOr[String]) => Array = null,
     sortBy: /* sorterFn */ js.UndefOr[js.Any] => Unit = null,
-    sortByKey: (/* direction */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any]) => Unit = null,
-    sortRoot: java.lang.String = null,
+    sortByKey: (/* direction */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any]) => Unit = null,
+    sortRoot: String = null,
     sorters: js.Any = null,
     statics: js.Any = null,
-    sum: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Double = null,
+    sum: (/* property */ js.UndefOr[String], /* root */ js.UndefOr[String], /* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Double = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     updateKey: (/* oldKey */ js.UndefOr[js.Any], /* newKey */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IMixedCollection = {

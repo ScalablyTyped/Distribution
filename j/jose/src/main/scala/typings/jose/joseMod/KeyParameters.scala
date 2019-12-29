@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 trait KeyParameters extends BasicParameters {
   var x5c: js.UndefOr[js.Array[String]] = js.undefined
   var x5t: js.UndefOr[String] = js.undefined
-  var `x5t#S256`: js.UndefOr[String] = js.undefined
+  @JSName("x5t#S256")
+  var x5tNumbersignS256: js.UndefOr[String] = js.undefined
 }
 
 object KeyParameters {
@@ -19,7 +20,7 @@ object KeyParameters {
     use: use = null,
     x5c: js.Array[String] = null,
     x5t: String = null,
-    `x5t#S256`: String = null
+    x5tNumbersignS256: String = null
   ): KeyParameters = {
     val __obj = js.Dynamic.literal()
     if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
@@ -28,7 +29,7 @@ object KeyParameters {
     if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
     if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
+    if (x5tNumbersignS256 != null) __obj.updateDynamic("x5t#S256")(x5tNumbersignS256.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyParameters]
   }
 }

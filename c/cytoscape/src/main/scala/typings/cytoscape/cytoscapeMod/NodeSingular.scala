@@ -24,17 +24,17 @@ trait NodeSingular
      with NodeSingularMetadata
      with NodeSingularPosition
      with NodeSingularCompound
-     with CollectionStyle
+     with CollectionData
+     with CollectionAlgorithms
+     with CollectionBuildingFiltering[NodeSingular, NodeSingular]
      with CollectionComparision
      with CollectionAnimation
-     with CollectionBuildingFiltering[NodeSingular, NodeSingular]
-     with CollectionTraversing
      with CollectionEvents
-     with CollectionGraphManipulation
-     with CollectionAlgorithms
-     with CollectionData
+     with CollectionStyle
+     with CollectionPosition
+     with CollectionTraversing
      with CollectionLayout
      with CollectionSelection
-     with CollectionPosition
+     with CollectionGraphManipulation
      with SingularElementArgument
 

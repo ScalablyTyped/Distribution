@@ -1,19 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.application
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.crlSigner
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.device
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.domain
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.issuer
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.keyFileSigner
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.licenseSigner
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.metering
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.pc
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.server
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.service
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.silverlight
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

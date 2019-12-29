@@ -10,7 +10,8 @@ class ObjectVerbs protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ObjectVerbs_typekey`: ObjectVerbs = js.native
+  @JSName("PowerPoint.ObjectVerbs_typekey")
+  var PowerPointDotObjectVerbs_typekey: ObjectVerbs = js.native
   def Item(Index: Double): String = js.native
 }
 

@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RecalculationInterval.HOUR
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RecalculationInterval.MINUTE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RecalculationInterval.ON_CHANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

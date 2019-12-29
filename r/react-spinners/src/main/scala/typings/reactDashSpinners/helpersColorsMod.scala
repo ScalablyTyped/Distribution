@@ -1,6 +1,5 @@
 package typings.reactDashSpinners
 
-import typings.reactDashSpinners.helpersColorsMod.RgbaFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

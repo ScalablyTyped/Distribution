@@ -12,7 +12,7 @@ import typings.rimraf.Typeofreaddir
 import typings.rimraf.Typeofrmdir
 import typings.rimraf.Typeofstat
 import typings.rimraf.Typeofunlink
-import typings.rimraf.rimrafNumbers.`false`
+import typings.rimraf.rimrafBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

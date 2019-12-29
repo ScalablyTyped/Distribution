@@ -1,13 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_UnitType.TWUN_CENTIMETERS
-import typings.dwt.EnumDWT_UnitType.TWUN_INCHES
-import typings.dwt.EnumDWT_UnitType.TWUN_MILLIMETERS
-import typings.dwt.EnumDWT_UnitType.TWUN_PICAS
-import typings.dwt.EnumDWT_UnitType.TWUN_PIXELS
-import typings.dwt.EnumDWT_UnitType.TWUN_POINTS
-import typings.dwt.EnumDWT_UnitType.TWUN_TWIPS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

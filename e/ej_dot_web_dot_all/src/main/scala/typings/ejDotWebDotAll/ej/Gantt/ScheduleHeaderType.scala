@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.ScheduleHeaderType.Day
-import typings.ejDotWebDotAll.ej.Gantt.ScheduleHeaderType.Hour
-import typings.ejDotWebDotAll.ej.Gantt.ScheduleHeaderType.Month
-import typings.ejDotWebDotAll.ej.Gantt.ScheduleHeaderType.Week
-import typings.ejDotWebDotAll.ej.Gantt.ScheduleHeaderType.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

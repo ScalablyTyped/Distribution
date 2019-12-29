@@ -18,7 +18,8 @@ class Walls protected () extends js.Object {
   var PictureType: js.Any = js.native
   var PictureUnit: js.Any = js.native
   var Thickness: Double = js.native
-  var `Word.Walls_typekey`: Walls = js.native
+  @JSName("Word.Walls_typekey")
+  var WordDotWalls_typekey: Walls = js.native
   def ClearFormats(): js.Any = js.native
   def Paste(): Unit = js.native
   def Select(): js.Any = js.native

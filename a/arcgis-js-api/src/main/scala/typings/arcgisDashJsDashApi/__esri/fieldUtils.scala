@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ trait fieldUtils extends js.Object {
     * @param layer The featureLayer to extract fields required for calculating feature Z values.
     *
     */
-  def getElevationFields(layer: FeatureLayer): IPromise[js.Array[String]]
+  def getElevationFields(layer: FeatureLayer): js.Promise[js.Array[String]]
   /**
     * Returns an array of editor tracking field names for a given feature layer. It includes the fields from the [FeatureLayer.editFieldsInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#editFieldsInfo).
     *
@@ -33,7 +32,7 @@ trait fieldUtils extends js.Object {
     * @param layer The Feature Layer from which to extract label fields.
     *
     */
-  def getLabelingFields(layer: FeatureLayer): IPromise[js.Array[String]]
+  def getLabelingFields(layer: FeatureLayer): js.Promise[js.Array[String]]
   /**
     * Returns an array of field names related to time. It includes the fields from the [FeatureLayer.timeInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#timeInfo), and the `trackIdField`.
     *
@@ -42,7 +41,7 @@ trait fieldUtils extends js.Object {
     * @param layer The Feature Layer from which to extract time fields.
     *
     */
-  def getTimeFields(layer: FeatureLayer): IPromise[js.Array[String]]
+  def getTimeFields(layer: FeatureLayer): js.Promise[js.Array[String]]
 }
 
 @JSGlobal("__esri.fieldUtils")

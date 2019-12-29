@@ -1,7 +1,6 @@
 package typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.storage.TaskEvent.STATE_CHANGED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

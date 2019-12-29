@@ -559,15 +559,15 @@ trait p5InstanceExtensions extends js.Object {
     *   @param color the ambient light color
     *   @chainable
     */
-  def ambientLight(color: Color): typings.p5.p5Mod.p5 = js.native
+  def ambientLight(color: Color): p5 = js.native
   /**
     *   Creates an ambient light with a color
     *   @param gray a gray value
     *   @param [alpha] the alpha value
     *   @chainable
     */
-  def ambientLight(gray: Double): typings.p5.p5Mod.p5 = js.native
-  def ambientLight(gray: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
+  def ambientLight(gray: Double): p5 = js.native
+  def ambientLight(gray: Double, alpha: Double): p5 = js.native
   /**
     *   Creates an ambient light with a color
     *   @param v1 red or hue value relative to the current
@@ -579,22 +579,22 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [alpha] the alpha value
     *   @chainable
     */
-  def ambientLight(v1: Double, v2: Double, v3: Double): typings.p5.p5Mod.p5 = js.native
-  def ambientLight(v1: Double, v2: Double, v3: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
+  def ambientLight(v1: Double, v2: Double, v3: Double): p5 = js.native
+  def ambientLight(v1: Double, v2: Double, v3: Double, alpha: Double): p5 = js.native
   /**
     *   Creates an ambient light with a color
     *   @param value a color string
     *   @chainable
     */
-  def ambientLight(value: String): typings.p5.p5Mod.p5 = js.native
+  def ambientLight(value: String): p5 = js.native
   /**
     *   Creates an ambient light with a color
     *   @param values an array containing the
     *   red,green,blue & and alpha components of the color
     *   @chainable
     */
-  def ambientLight(values: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
-  def ambientMaterial(color: String): typings.p5.p5Mod.p5 = js.native
+  def ambientLight(values: js.Array[Double]): p5 = js.native
+  def ambientMaterial(color: String): p5 = js.native
   /**
     *   Ambient material for geometry with a given color.
     *   You can view all possible materials in this
@@ -603,8 +603,8 @@ trait p5InstanceExtensions extends js.Object {
     *   string
     *   @chainable
     */
-  def ambientMaterial(color: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
-  def ambientMaterial(color: Color): typings.p5.p5Mod.p5 = js.native
+  def ambientMaterial(color: js.Array[Double]): p5 = js.native
+  def ambientMaterial(color: Color): p5 = js.native
   /**
     *   Ambient material for geometry with a given color.
     *   You can view all possible materials in this
@@ -616,10 +616,10 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [a] opacity
     *   @chainable
     */
-  def ambientMaterial(v1: Double): typings.p5.p5Mod.p5 = js.native
-  def ambientMaterial(v1: Double, v2: Double): typings.p5.p5Mod.p5 = js.native
-  def ambientMaterial(v1: Double, v2: Double, v3: Double): typings.p5.p5Mod.p5 = js.native
-  def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): typings.p5.p5Mod.p5 = js.native
+  def ambientMaterial(v1: Double): p5 = js.native
+  def ambientMaterial(v1: Double, v2: Double): p5 = js.native
+  def ambientMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
+  def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
   /**
     *   Sets the current mode of p5 to given mode. Default
     *   mode is RADIANS.
@@ -658,7 +658,7 @@ trait p5InstanceExtensions extends js.Object {
     *   multiplied
     *   @chainable
     */
-  def applyMatrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): typings.p5.p5Mod.p5 = js.native
+  def applyMatrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): p5 = js.native
   /**
     *   Draw an arc to the screen. If called with only x,
     *   y, w, h, start, and stop, the arc will be drawn
@@ -691,8 +691,8 @@ trait p5InstanceExtensions extends js.Object {
     *   value is 25.
     *   @chainable
     */
-  def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double): typings.p5.p5Mod.p5 = js.native
-  def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): typings.p5.p5Mod.p5 = js.native
+  def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double): p5 = js.native
+  def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): p5 = js.native
   def arc(
     x: Double,
     y: Double,
@@ -702,7 +702,7 @@ trait p5InstanceExtensions extends js.Object {
     stop: Double,
     mode: ARC_MODE,
     detail: Double
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   Copies an array (or part of an array) to another
     *   array. The src array is copied to the dst array,
@@ -829,8 +829,8 @@ trait p5InstanceExtensions extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(colorstring: String): typings.p5.p5Mod.p5 = js.native
-  def background(colorstring: String, a: Double): typings.p5.p5Mod.p5 = js.native
+  def background(colorstring: String): p5 = js.native
+  def background(colorstring: String, a: Double): p5 = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -864,7 +864,7 @@ trait p5InstanceExtensions extends js.Object {
     *   function
     *   @chainable
     */
-  def background(color: Color): typings.p5.p5Mod.p5 = js.native
+  def background(color: Color): p5 = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -900,8 +900,8 @@ trait p5InstanceExtensions extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(gray: Double): typings.p5.p5Mod.p5 = js.native
-  def background(gray: Double, a: Double): typings.p5.p5Mod.p5 = js.native
+  def background(gray: Double): p5 = js.native
+  def background(gray: Double, a: Double): p5 = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -938,8 +938,8 @@ trait p5InstanceExtensions extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(image: Image): typings.p5.p5Mod.p5 = js.native
-  def background(image: Image, a: Double): typings.p5.p5Mod.p5 = js.native
+  def background(image: Image): p5 = js.native
+  def background(image: Image, a: Double): p5 = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -979,8 +979,8 @@ trait p5InstanceExtensions extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(v1: Double, v2: Double, v3: Double): typings.p5.p5Mod.p5 = js.native
-  def background(v1: Double, v2: Double, v3: Double, a: Double): typings.p5.p5Mod.p5 = js.native
+  def background(v1: Double, v2: Double, v3: Double): p5 = js.native
+  def background(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -1014,7 +1014,7 @@ trait p5InstanceExtensions extends js.Object {
     *   blue and alpha components of the color
     *   @chainable
     */
-  def background(values: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
+  def background(values: js.Array[Double]): p5 = js.native
   /**
     *   Use the beginContour() and endContour() functions
     *   to create negative shapes within shapes such as
@@ -1034,7 +1034,7 @@ trait p5InstanceExtensions extends js.Object {
     *   rect() within.
     *   @chainable
     */
-  def beginContour(): typings.p5.p5Mod.p5 = js.native
+  def beginContour(): p5 = js.native
   /**
     *   Using the beginShape() and endShape() functions
     *   allow creating more complex forms. beginShape()
@@ -1061,8 +1061,8 @@ trait p5InstanceExtensions extends js.Object {
     *   TRIANGLE_FAN TRIANGLE_STRIP, QUADS, or QUAD_STRIP
     *   @chainable
     */
-  def beginShape(): typings.p5.p5Mod.p5 = js.native
-  def beginShape(kind: BEGIN_KIND): typings.p5.p5Mod.p5 = js.native
+  def beginShape(): p5 = js.native
+  def beginShape(kind: BEGIN_KIND): p5 = js.native
   /**
     *   Draws a cubic Bezier curve on the screen. These
     *   curves are defined by a series of anchor and
@@ -1089,7 +1089,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y4 y-coordinate for the second anchor point
     *   @chainable
     */
-  def bezier(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): typings.p5.p5Mod.p5 = js.native
+  def bezier(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): p5 = js.native
   /**
     *   Draws a cubic Bezier curve on the screen. These
     *   curves are defined by a series of anchor and
@@ -1134,7 +1134,7 @@ trait p5InstanceExtensions extends js.Object {
     x4: Double,
     y4: Double,
     z4: Double
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   Sets the resolution at which Beziers display. The
     *   default value is 20.
@@ -1145,7 +1145,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param detail resolution of the curves
     *   @chainable
     */
-  def bezierDetail(detail: Double): typings.p5.p5Mod.p5 = js.native
+  def bezierDetail(detail: Double): p5 = js.native
   /**
     *   Evaluates the Bezier at position t for points a,
     *   b, c, d. The parameters a and d are the first and
@@ -1202,7 +1202,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y4 y-coordinate for the anchor point
     *   @chainable
     */
-  def bezierVertex(x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): typings.p5.p5Mod.p5 = js.native
+  def bezierVertex(x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): p5 = js.native
   /**
     *   Specifies vertex coordinates for Bezier curves.
     *   Each call to bezierVertex() defines the position
@@ -1244,7 +1244,7 @@ trait p5InstanceExtensions extends js.Object {
     x4: Double,
     y4: Double,
     z4: Double
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   Copies a region of pixels from one image to
     *   another, using a specified blend mode to do the
@@ -1396,12 +1396,12 @@ trait p5InstanceExtensions extends js.Object {
     *   subdivisions in y-dimension
     *   @chainable
     */
-  def box(): typings.p5.p5Mod.p5 = js.native
-  def box(width: Double): typings.p5.p5Mod.p5 = js.native
-  def box(width: Double, Height: Double): typings.p5.p5Mod.p5 = js.native
-  def box(width: Double, Height: Double, depth: Double): typings.p5.p5Mod.p5 = js.native
-  def box(width: Double, Height: Double, depth: Double, detailX: Double): typings.p5.p5Mod.p5 = js.native
-  def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): typings.p5.p5Mod.p5 = js.native
+  def box(): p5 = js.native
+  def box(width: Double): p5 = js.native
+  def box(width: Double, Height: Double): p5 = js.native
+  def box(width: Double, Height: Double, depth: Double): p5 = js.native
+  def box(width: Double, Height: Double, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
   def brightness(color: String): Double = js.native
   def brightness(color: js.Array[Double]): Double = js.native
   /**
@@ -1476,7 +1476,7 @@ trait p5InstanceExtensions extends js.Object {
     upX: js.UndefOr[Double],
     upY: js.UndefOr[Double],
     upZ: js.UndefOr[Double]
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   Calculates the closest int value that is greater
     *   than or equal to the value of the parameter. Maps
@@ -1496,8 +1496,8 @@ trait p5InstanceExtensions extends js.Object {
     *   fire.
     *   @chainable
     */
-  def changed(fxn: js.Function1[/* repeated */ js.Any, _]): typings.p5.p5Mod.p5 = js.native
-  def changed(fxn: Boolean): typings.p5.p5Mod.p5 = js.native
+  def changed(fxn: js.Function1[/* repeated */ js.Any, _]): p5 = js.native
+  def changed(fxn: Boolean): p5 = js.native
   /**
     *   Converts a number or string to its corresponding
     *   single-character string representation. If a
@@ -1541,7 +1541,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param d diameter of the circle.
     *   @chainable
     */
-  def circle(x: Double, y: Double, d: Double): typings.p5.p5Mod.p5 = js.native
+  def circle(x: Double, y: Double, d: Double): p5 = js.native
   /**
     *   Clears the pixels within a buffer. This function
     *   only clears the canvas. It will not clear objects
@@ -1553,7 +1553,7 @@ trait p5InstanceExtensions extends js.Object {
     *   make all of the pixels 100% transparent.
     *   @chainable
     */
-  def clear(): typings.p5.p5Mod.p5 = js.native
+  def clear(): p5 = js.native
   /**
     *   Clears all local storage items set with
     *   storeItem() for the current domain.
@@ -1711,8 +1711,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [max] range for all values
     *   @chainable
     */
-  def colorMode(mode: COLOR_MODE): typings.p5.p5Mod.p5 = js.native
-  def colorMode(mode: COLOR_MODE, max: Double): typings.p5.p5Mod.p5 = js.native
+  def colorMode(mode: COLOR_MODE): p5 = js.native
+  def colorMode(mode: COLOR_MODE, max: Double): p5 = js.native
   /**
     *   colorMode() changes the way p5.js interprets color
     *   data. By default, the parameters for fill(),
@@ -1739,8 +1739,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [maxA] range for the alpha
     *   @chainable
     */
-  def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double): typings.p5.p5Mod.p5 = js.native
-  def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double, maxA: Double): typings.p5.p5Mod.p5 = js.native
+  def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double): p5 = js.native
+  def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double, maxA: Double): p5 = js.native
   /**
     *   Concatenates two arrays, maps to Array.concat().
     *   Does not modify the input arrays.
@@ -1760,12 +1760,12 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [cap] whether to draw the base of the cone
     *   @chainable
     */
-  def cone(): typings.p5.p5Mod.p5 = js.native
-  def cone(radius: Double): typings.p5.p5Mod.p5 = js.native
-  def cone(radius: Double, height: Double): typings.p5.p5Mod.p5 = js.native
-  def cone(radius: Double, height: Double, detailX: Double): typings.p5.p5Mod.p5 = js.native
-  def cone(radius: Double, height: Double, detailX: Double, detailY: Double): typings.p5.p5Mod.p5 = js.native
-  def cone(radius: Double, height: Double, detailX: Double, detailY: Double, cap: Boolean): typings.p5.p5Mod.p5 = js.native
+  def cone(): p5 = js.native
+  def cone(radius: Double): p5 = js.native
+  def cone(radius: Double, height: Double): p5 = js.native
+  def cone(radius: Double, height: Double, detailX: Double): p5 = js.native
+  def cone(radius: Double, height: Double, detailX: Double, detailY: Double): p5 = js.native
+  def cone(radius: Double, height: Double, detailX: Double, detailY: Double, cap: Boolean): p5 = js.native
   /**
     *   Constrains a value between a minimum and maximum
     *   value.
@@ -2277,7 +2277,7 @@ trait p5InstanceExtensions extends js.Object {
     *   point
     *   @chainable
     */
-  def curve(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): typings.p5.p5Mod.p5 = js.native
+  def curve(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): p5 = js.native
   /**
     *   Draws a curved line on the screen between two
     *   points, given as the middle four parameters. The
@@ -2324,7 +2324,7 @@ trait p5InstanceExtensions extends js.Object {
     x4: Double,
     y4: Double,
     z4: Double
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   Sets the resolution at which curves display. The
     *   default value is 20 while the minimum value is 3.
@@ -2335,7 +2335,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param resolution resolution of the curves
     *   @chainable
     */
-  def curveDetail(resolution: Double): typings.p5.p5Mod.p5 = js.native
+  def curveDetail(resolution: Double): p5 = js.native
   /**
     *   Evaluates the curve at position t for points a, b,
     *   c, d. The parameter t varies between 0 and 1, a
@@ -2382,7 +2382,7 @@ trait p5InstanceExtensions extends js.Object {
     *   original vertices
     *   @chainable
     */
-  def curveTightness(amount: Double): typings.p5.p5Mod.p5 = js.native
+  def curveTightness(amount: Double): p5 = js.native
   /**
     *   Specifies vertex coordinates for curves. This
     *   function may only be used between beginShape() and
@@ -2403,8 +2403,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y y-coordinate of the vertex
     *   @chainable
     */
-  def curveVertex(x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def curveVertex(x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def curveVertex(x: Double, y: Double): p5 = js.native
+  def curveVertex(x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Draw a cylinder with given radius and height
     *   @param [radius] radius of the surface
@@ -2427,7 +2427,7 @@ trait p5InstanceExtensions extends js.Object {
     detailY: js.UndefOr[Double],
     bottomCap: js.UndefOr[Boolean],
     topCap: js.UndefOr[Boolean]
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   p5.js communicates with the clock on your
     *   computer. The day() function returns the current
@@ -2600,8 +2600,8 @@ trait p5InstanceExtensions extends js.Object {
     *   turnAxis variable to 'X', 'Y' or 'Z'.
     */
   def deviceTurned(): Unit = js.native
-  def directionalLight(color: String, position: Vector): typings.p5.p5Mod.p5 = js.native
-  def directionalLight(color: String, x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def directionalLight(color: String, position: Vector): p5 = js.native
+  def directionalLight(color: String, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2610,7 +2610,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param position the direction of the light
     *   @chainable
     */
-  def directionalLight(color: js.Array[Double], position: Vector): typings.p5.p5Mod.p5 = js.native
+  def directionalLight(color: js.Array[Double], position: Vector): p5 = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2621,9 +2621,9 @@ trait p5InstanceExtensions extends js.Object {
     *   @param z z axis direction
     *   @chainable
     */
-  def directionalLight(color: js.Array[Double], x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
-  def directionalLight(color: Color, position: Vector): typings.p5.p5Mod.p5 = js.native
-  def directionalLight(color: Color, x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def directionalLight(color: js.Array[Double], x: Double, y: Double, z: Double): p5 = js.native
+  def directionalLight(color: Color, position: Vector): p5 = js.native
+  def directionalLight(color: Color, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2634,7 +2634,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param position the direction of the light
     *   @chainable
     */
-  def directionalLight(v1: Double, v2: Double, v3: Double, position: Vector): typings.p5.p5Mod.p5 = js.native
+  def directionalLight(v1: Double, v2: Double, v3: Double, position: Vector): p5 = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2647,7 +2647,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param z z axis direction
     *   @chainable
     */
-  def directionalLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def directionalLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Returns the pixel density of the current display
     *   the sketch is running on.
@@ -2707,8 +2707,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [h] height of the ellipse.
     *   @chainable
     */
-  def ellipse(x: Double, y: Double, w: Double): typings.p5.p5Mod.p5 = js.native
-  def ellipse(x: Double, y: Double, w: Double, h: Double): typings.p5.p5Mod.p5 = js.native
+  def ellipse(x: Double, y: Double, w: Double): p5 = js.native
+  def ellipse(x: Double, y: Double, w: Double, h: Double): p5 = js.native
   /**
     *   Draws an ellipse (oval) to the screen. An ellipse
     *   with equal width and height is a circle. By
@@ -2762,7 +2762,7 @@ trait p5InstanceExtensions extends js.Object {
     *   CORNERS
     *   @chainable
     */
-  def ellipseMode(mode: ELLIPSE_MODE): typings.p5.p5Mod.p5 = js.native
+  def ellipseMode(mode: ELLIPSE_MODE): p5 = js.native
   /**
     *   Draw an ellipsoid with given radius
     *   @param [radiusx] x-radius of ellipsoid
@@ -2778,12 +2778,12 @@ trait p5InstanceExtensions extends js.Object {
     *   browser.
     *   @chainable
     */
-  def ellipsoid(): typings.p5.p5Mod.p5 = js.native
-  def ellipsoid(radiusx: Double): typings.p5.p5Mod.p5 = js.native
-  def ellipsoid(radiusx: Double, radiusy: Double): typings.p5.p5Mod.p5 = js.native
-  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double): typings.p5.p5Mod.p5 = js.native
-  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double): typings.p5.p5Mod.p5 = js.native
-  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): typings.p5.p5Mod.p5 = js.native
+  def ellipsoid(): p5 = js.native
+  def ellipsoid(radiusx: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): p5 = js.native
   /**
     *   Use the beginContour() and endContour() functions
     *   to create negative shapes within shapes such as
@@ -2803,7 +2803,7 @@ trait p5InstanceExtensions extends js.Object {
     *   rect() within.
     *   @chainable
     */
-  def endContour(): typings.p5.p5Mod.p5 = js.native
+  def endContour(): p5 = js.native
   /**
     *   The endShape() function is the companion to
     *   beginShape() and may only be called after
@@ -2816,8 +2816,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [mode] use CLOSE to close the shape
     *   @chainable
     */
-  def endShape(): typings.p5.p5Mod.p5 = js.native
-  def endShape(mode: END_MODE): typings.p5.p5Mod.p5 = js.native
+  def endShape(): p5 = js.native
+  def endShape(mode: END_MODE): p5 = js.native
   /**
     *   Returns Euler's number e (2.71828...) raised to
     *   the power of the n parameter. Maps to Math.exp().
@@ -2846,7 +2846,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param color the fill color
     *   @chainable
     */
-  def fill(color: Color): typings.p5.p5Mod.p5 = js.native
+  def fill(color: Color): p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all shapes drawn
@@ -2868,8 +2868,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param gray a gray value
     *   @chainable
     */
-  def fill(gray: Double): typings.p5.p5Mod.p5 = js.native
-  def fill(gray: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
+  def fill(gray: Double): p5 = js.native
+  def fill(gray: Double, alpha: Double): p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all shapes drawn
@@ -2896,8 +2896,8 @@ trait p5InstanceExtensions extends js.Object {
     *   current color range
     *   @chainable
     */
-  def fill(v1: Double, v2: Double, v3: Double): typings.p5.p5Mod.p5 = js.native
-  def fill(v1: Double, v2: Double, v3: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
+  def fill(v1: Double, v2: Double, v3: Double): p5 = js.native
+  def fill(v1: Double, v2: Double, v3: Double, alpha: Double): p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all shapes drawn
@@ -2919,7 +2919,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param value a color string
     *   @chainable
     */
-  def fill(value: String): typings.p5.p5Mod.p5 = js.native
+  def fill(value: String): p5 = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all shapes drawn
@@ -2942,7 +2942,7 @@ trait p5InstanceExtensions extends js.Object {
     *   red,green,blue & and alpha components of the color
     *   @chainable
     */
-  def fill(values: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
+  def fill(values: js.Array[Double]): p5 = js.native
   /**
     *   Applies a filter to the canvas.
     *
@@ -3077,7 +3077,7 @@ trait p5InstanceExtensions extends js.Object {
     *   second
     *   @chainable
     */
-  def frameRate(fps: Double): typings.p5.p5Mod.p5 = js.native
+  def frameRate(fps: Double): p5 = js.native
   /**
     *   Returns the closest MIDI note value for a given
     *   frequency.
@@ -3717,8 +3717,8 @@ trait p5InstanceExtensions extends js.Object {
     *   will no longer fire.
     *   @chainable
     */
-  def input(fxn: js.Function1[/* repeated */ js.Any, _]): typings.p5.p5Mod.p5 = js.native
-  def input(fxn: Boolean): typings.p5.p5Mod.p5 = js.native
+  def input(fxn: js.Function1[/* repeated */ js.Any, _]): p5 = js.native
+  def input(fxn: Boolean): p5 = js.native
   /**
     *   Converts a boolean, string, or float to its
     *   integer representation. When an array of values is
@@ -3886,7 +3886,7 @@ trait p5InstanceExtensions extends js.Object {
     *   falloff
     *   @chainable
     */
-  def lightFalloff(constant: Double, linear: Double, quadratic: Double): typings.p5.p5Mod.p5 = js.native
+  def lightFalloff(constant: Double, linear: Double, quadratic: Double): p5 = js.native
   def lightness(color: String): Double = js.native
   def lightness(color: js.Array[Double]): Double = js.native
   /**
@@ -3908,7 +3908,7 @@ trait p5InstanceExtensions extends js.Object {
     *   loop.
     *   @chainable
     */
-  def lights(): typings.p5.p5Mod.p5 = js.native
+  def lights(): p5 = js.native
   /**
     *   Draws a line (a direct path between two points) to
     *   the screen. The version of line() with four
@@ -3924,7 +3924,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y2 the y-coordinate of the second point
     *   @chainable
     */
-  def line(x1: Double, y1: Double, x2: Double, y2: Double): typings.p5.p5Mod.p5 = js.native
+  def line(x1: Double, y1: Double, x2: Double, y2: Double): p5 = js.native
   /**
     *   Draws a line (a direct path between two points) to
     *   the screen. The version of line() with four
@@ -3942,7 +3942,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param z2 the z-coordinate of the second point
     *   @chainable
     */
-  def line(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): typings.p5.p5Mod.p5 = js.native
+  def line(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): p5 = js.native
   /**
     *   This method is suitable for fetching files up to
     *   size of 64MB.
@@ -4900,7 +4900,7 @@ trait p5InstanceExtensions extends js.Object {
     *   screen.
     *   @chainable
     */
-  def noFill(): typings.p5.p5Mod.p5 = js.native
+  def noFill(): p5 = js.native
   /**
     *   Stops p5.js from continuously executing the code
     *   within draw(). If loop() is called, the code in
@@ -4933,14 +4933,14 @@ trait p5InstanceExtensions extends js.Object {
     *   smooth (antialiased) edges on your geometry.
     *   @chainable
     */
-  def noSmooth(): typings.p5.p5Mod.p5 = js.native
+  def noSmooth(): p5 = js.native
   /**
     *   Disables drawing the stroke (outline). If both
     *   noStroke() and noFill() are called, nothing will
     *   be drawn to the screen.
     *   @chainable
     */
-  def noStroke(): typings.p5.p5Mod.p5 = js.native
+  def noStroke(): p5 = js.native
   /**
     *   Removes the current fill value for displaying
     *   images and reverts to displaying images with their
@@ -5055,7 +5055,7 @@ trait p5InstanceExtensions extends js.Object {
     *   possible materials in this example.
     *   @chainable
     */
-  def normalMaterial(): typings.p5.p5Mod.p5 = js.native
+  def normalMaterial(): p5 = js.native
   /**
     *   Allows movement around a 3D sketch using a mouse
     *   or trackpad. Left-clicking and dragging will
@@ -5077,9 +5077,9 @@ trait p5InstanceExtensions extends js.Object {
     *   movement along Y axis
     *   @chainable
     */
-  def orbitControl(): typings.p5.p5Mod.p5 = js.native
-  def orbitControl(sensitivityX: Double): typings.p5.p5Mod.p5 = js.native
-  def orbitControl(sensitivityX: Double, sensitivityY: Double): typings.p5.p5Mod.p5 = js.native
+  def orbitControl(): p5 = js.native
+  def orbitControl(sensitivityX: Double): p5 = js.native
+  def orbitControl(sensitivityX: Double, sensitivityY: Double): p5 = js.native
   /**
     *   Sets an orthographic projection for the camera in
     *   a 3D sketch and defines a box-shaped viewing
@@ -5109,7 +5109,7 @@ trait p5InstanceExtensions extends js.Object {
     top: js.UndefOr[Double],
     near: js.UndefOr[Double],
     far: js.UndefOr[Double]
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   Sets a perspective projection for the camera in a
     *   3D sketch. This projection represents depth
@@ -5133,11 +5133,11 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [far] frustum far plane length
     *   @chainable
     */
-  def perspective(): typings.p5.p5Mod.p5 = js.native
-  def perspective(fovy: Double): typings.p5.p5Mod.p5 = js.native
-  def perspective(fovy: Double, aspect: Double): typings.p5.p5Mod.p5 = js.native
-  def perspective(fovy: Double, aspect: Double, near: Double): typings.p5.p5Mod.p5 = js.native
-  def perspective(fovy: Double, aspect: Double, near: Double, far: Double): typings.p5.p5Mod.p5 = js.native
+  def perspective(): p5 = js.native
+  def perspective(fovy: Double): p5 = js.native
+  def perspective(fovy: Double, aspect: Double): p5 = js.native
+  def perspective(fovy: Double, aspect: Double, near: Double): p5 = js.native
+  def perspective(fovy: Double, aspect: Double, near: Double, far: Double): p5 = js.native
   /**
     *   Sets the pixel scaling for high pixel density
     *   displays. By default pixel density is set to match
@@ -5157,7 +5157,7 @@ trait p5InstanceExtensions extends js.Object {
     *   scale
     *   @chainable
     */
-  def pixelDensity(`val`: Double): typings.p5.p5Mod.p5 = js.native
+  def pixelDensity(`val`: Double): p5 = js.native
   /**
     *   Draw a plane with given a width and height
     *   @param [width] width of the plane
@@ -5168,11 +5168,11 @@ trait p5InstanceExtensions extends js.Object {
     *   subdivisions in y-dimension
     *   @chainable
     */
-  def plane(): typings.p5.p5Mod.p5 = js.native
-  def plane(width: Double): typings.p5.p5Mod.p5 = js.native
-  def plane(width: Double, height: Double): typings.p5.p5Mod.p5 = js.native
-  def plane(width: Double, height: Double, detailX: Double): typings.p5.p5Mod.p5 = js.native
-  def plane(width: Double, height: Double, detailX: Double, detailY: Double): typings.p5.p5Mod.p5 = js.native
+  def plane(): p5 = js.native
+  def plane(width: Double): p5 = js.native
+  def plane(width: Double, height: Double): p5 = js.native
+  def plane(width: Double, height: Double, detailX: Double): p5 = js.native
+  def plane(width: Double, height: Double, detailX: Double, detailY: Double): p5 = js.native
   /**
     *   Draws a point, a coordinate in space at the
     *   dimension of one pixel. The first parameter is the
@@ -5184,10 +5184,10 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [z] the z-coordinate (for WebGL mode)
     *   @chainable
     */
-  def point(x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def point(x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
-  def pointLight(color: String, position: Vector): typings.p5.p5Mod.p5 = js.native
-  def pointLight(color: String, x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def point(x: Double, y: Double): p5 = js.native
+  def point(x: Double, y: Double, z: Double): p5 = js.native
+  def pointLight(color: String, position: Vector): p5 = js.native
+  def pointLight(color: String, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5196,7 +5196,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param position the position of the light
     *   @chainable
     */
-  def pointLight(color: js.Array[Double], position: Vector): typings.p5.p5Mod.p5 = js.native
+  def pointLight(color: js.Array[Double], position: Vector): p5 = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5207,9 +5207,9 @@ trait p5InstanceExtensions extends js.Object {
     *   @param z z axis position
     *   @chainable
     */
-  def pointLight(color: js.Array[Double], x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
-  def pointLight(color: Color, position: Vector): typings.p5.p5Mod.p5 = js.native
-  def pointLight(color: Color, x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def pointLight(color: js.Array[Double], x: Double, y: Double, z: Double): p5 = js.native
+  def pointLight(color: Color, position: Vector): p5 = js.native
+  def pointLight(color: Color, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5220,7 +5220,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param position the position of the light
     *   @chainable
     */
-  def pointLight(v1: Double, v2: Double, v3: Double, position: Vector): typings.p5.p5Mod.p5 = js.native
+  def pointLight(v1: Double, v2: Double, v3: Double, position: Vector): p5 = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5233,7 +5233,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param z z axis position
     *   @chainable
     */
-  def pointLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def pointLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   The push() function saves the current drawing
     *   style settings and transformations, while pop()
@@ -5340,7 +5340,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y4 the y-coordinate of the fourth point
     *   @chainable
     */
-  def quad(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): typings.p5.p5Mod.p5 = js.native
+  def quad(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): p5 = js.native
   /**
     *   Draw a quad. A quad is a quadrilateral, a four
     *   sided polygon. It is similar to a rectangle, but
@@ -5378,7 +5378,7 @@ trait p5InstanceExtensions extends js.Object {
     x4: Double,
     y4: Double,
     z4: Double
-  ): typings.p5.p5Mod.p5 = js.native
+  ): p5 = js.native
   /**
     *   Specifies vertex coordinates for quadratic Bezier
     *   curves. Each call to quadraticVertex() defines the
@@ -5404,7 +5404,7 @@ trait p5InstanceExtensions extends js.Object {
     *   WebGL mode)
     *   @chainable
     */
-  def quadraticVertex(cx: Double, cy: Double, cz: Double, x3: Double, y3: Double, z3: Double): typings.p5.p5Mod.p5 = js.native
+  def quadraticVertex(cx: Double, cy: Double, cz: Double, x3: Double, y3: Double, z3: Double): p5 = js.native
   /**
     *   Specifies vertex coordinates for quadratic Bezier
     *   curves. Each call to quadraticVertex() defines the
@@ -5426,7 +5426,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y3 y-coordinate for the anchor point
     *   @chainable
     */
-  def quadraticVertex(cx: Double, cy: Double, x3: Double, y3: Double): typings.p5.p5Mod.p5 = js.native
+  def quadraticVertex(cx: Double, cy: Double, x3: Double, y3: Double): p5 = js.native
   /**
     *   Converts a degree measurement to its corresponding
     *   value in radians. Radians and degrees are two ways
@@ -5541,11 +5541,11 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [bl] optional radius of bottom-left corner.
     *   @chainable
     */
-  def rect(x: Double, y: Double, w: Double, h: Double): typings.p5.p5Mod.p5 = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double): typings.p5.p5Mod.p5 = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double): typings.p5.p5Mod.p5 = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double): typings.p5.p5Mod.p5 = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double, bl: Double): typings.p5.p5Mod.p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double, bl: Double): p5 = js.native
   /**
     *   Modifies the location from which rectangles are
     *   drawn by changing the way in which parameters
@@ -5580,7 +5580,7 @@ trait p5InstanceExtensions extends js.Object {
     *   RADIUS
     *   @chainable
     */
-  def rectMode(mode: RECT_MODE): typings.p5.p5Mod.p5 = js.native
+  def rectMode(mode: RECT_MODE): p5 = js.native
   def red(color: String): Double = js.native
   def red(color: js.Array[Double]): Double = js.native
   /**
@@ -5632,7 +5632,7 @@ trait p5InstanceExtensions extends js.Object {
     *   matrix.
     *   @chainable
     */
-  def resetMatrix(): typings.p5.p5Mod.p5 = js.native
+  def resetMatrix(): p5 = js.native
   /**
     *   This function restores the default shaders in
     *   WEBGL mode. Code that runs after resetShader()
@@ -5640,7 +5640,7 @@ trait p5InstanceExtensions extends js.Object {
     *   shaders. Should be run after shader().
     *   @chainable
     */
-  def resetShader(): typings.p5.p5Mod.p5 = js.native
+  def resetShader(): p5 = js.native
   /**
     *   Resizes the canvas to given width and height. The
     *   canvas will be cleared and draw will be called
@@ -5684,30 +5684,30 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [axis] (in 3d) the axis to rotate around
     *   @chainable
     */
-  def rotate(angle: Double): typings.p5.p5Mod.p5 = js.native
-  def rotate(angle: Double, axis: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
-  def rotate(angle: Double, axis: Vector): typings.p5.p5Mod.p5 = js.native
+  def rotate(angle: Double): p5 = js.native
+  def rotate(angle: Double, axis: js.Array[Double]): p5 = js.native
+  def rotate(angle: Double, axis: Vector): p5 = js.native
   /**
     *   Rotates around X axis.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
     */
-  def rotateX(angle: Double): typings.p5.p5Mod.p5 = js.native
+  def rotateX(angle: Double): p5 = js.native
   /**
     *   Rotates around Y axis.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
     */
-  def rotateY(angle: Double): typings.p5.p5Mod.p5 = js.native
+  def rotateY(angle: Double): p5 = js.native
   /**
     *   Rotates around Z axis. Webgl mode only.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
     */
-  def rotateZ(angle: Double): typings.p5.p5Mod.p5 = js.native
+  def rotateZ(angle: Double): p5 = js.native
   /**
     *   Calculates the integer closest to the n parameter.
     *   For example, round(133.8) returns the value 134.
@@ -5913,9 +5913,9 @@ trait p5InstanceExtensions extends js.Object {
     */
   def saveTable(Table: Table, filename: String): Unit = js.native
   def saveTable(Table: Table, filename: String, options: String): Unit = js.native
-  def scale(s: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
-  def scale(s: js.Array[Double], y: Double): typings.p5.p5Mod.p5 = js.native
-  def scale(s: js.Array[Double], y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def scale(s: js.Array[Double]): p5 = js.native
+  def scale(s: js.Array[Double], y: Double): p5 = js.native
+  def scale(s: js.Array[Double], y: Double, z: Double): p5 = js.native
   /**
     *   Increases or decreases the size of a shape by
     *   expanding and contracting vertices. Objects always
@@ -5944,9 +5944,9 @@ trait p5InstanceExtensions extends js.Object {
     *   z-axis (webgl only)
     *   @chainable
     */
-  def scale(s: Double): typings.p5.p5Mod.p5 = js.native
-  def scale(s: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def scale(s: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def scale(s: Double): p5 = js.native
+  def scale(s: Double, y: Double): p5 = js.native
+  def scale(s: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Increases or decreases the size of a shape by
     *   expanding and contracting vertices. Objects always
@@ -5970,9 +5970,9 @@ trait p5InstanceExtensions extends js.Object {
     *   object
     *   @chainable
     */
-  def scale(s: Vector): typings.p5.p5Mod.p5 = js.native
-  def scale(s: Vector, y: Double): typings.p5.p5Mod.p5 = js.native
-  def scale(s: Vector, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def scale(s: Vector): p5 = js.native
+  def scale(s: Vector, y: Double): p5 = js.native
+  def scale(s: Vector, y: Double, z: Double): p5 = js.native
   /**
     *   p5.js communicates with the clock on your
     *   computer. The second() function returns the
@@ -6180,8 +6180,8 @@ trait p5InstanceExtensions extends js.Object {
     *   rendering shapes.
     *   @chainable
     */
-  def shader(): typings.p5.p5Mod.p5 = js.native
-  def shader(s: Shader): typings.p5.p5Mod.p5 = js.native
+  def shader(): p5 = js.native
+  def shader(s: Shader): p5 = js.native
   /**
     *   Shears a shape around the x-axis the amount
     *   specified by the angle parameter. Angles should be
@@ -6206,7 +6206,7 @@ trait p5InstanceExtensions extends js.Object {
     *   or degrees, depending on current angleMode
     *   @chainable
     */
-  def shearX(angle: Double): typings.p5.p5Mod.p5 = js.native
+  def shearX(angle: Double): p5 = js.native
   /**
     *   Shears a shape around the y-axis the amount
     *   specified by the angle parameter. Angles should be
@@ -6231,7 +6231,7 @@ trait p5InstanceExtensions extends js.Object {
     *   or degrees, depending on current angleMode
     *   @chainable
     */
-  def shearY(angle: Double): typings.p5.p5Mod.p5 = js.native
+  def shearY(angle: Double): p5 = js.native
   /**
     *   Sets the amount of gloss in the surface of shapes.
     *   Used in combination with specularMaterial() in
@@ -6240,7 +6240,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param shine Degree of Shininess. Defaults to 1.
     *   @chainable
     */
-  def shininess(shine: Double): typings.p5.p5Mod.p5 = js.native
+  def shininess(shine: Double): p5 = js.native
   /**
     *   Decreases an array by one element and returns the
     *   shortened array, maps to Array.pop().
@@ -6276,7 +6276,7 @@ trait p5InstanceExtensions extends js.Object {
     *   smooth (antialiased) edges on your geometry.
     *   @chainable
     */
-  def smooth(): typings.p5.p5Mod.p5 = js.native
+  def smooth(): p5 = js.native
   /**
     *   Sorts an array of numbers from smallest to
     *   largest, or puts an array of words in alphabetical
@@ -6303,7 +6303,7 @@ trait p5InstanceExtensions extends js.Object {
     */
   def soundFormats(): Unit = js.native
   def soundFormats(formats: String): Unit = js.native
-  def specularMaterial(color: String): typings.p5.p5Mod.p5 = js.native
+  def specularMaterial(color: String): p5 = js.native
   /**
     *   Specular material for geometry with a given color.
     *   You can view all possible materials in this
@@ -6311,8 +6311,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param color color Array, or CSS color string
     *   @chainable
     */
-  def specularMaterial(color: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
-  def specularMaterial(color: Color): typings.p5.p5Mod.p5 = js.native
+  def specularMaterial(color: js.Array[Double]): p5 = js.native
+  def specularMaterial(color: Color): p5 = js.native
   /**
     *   Specular material for geometry with a given color.
     *   You can view all possible materials in this
@@ -6324,10 +6324,10 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [a] opacity
     *   @chainable
     */
-  def specularMaterial(v1: Double): typings.p5.p5Mod.p5 = js.native
-  def specularMaterial(v1: Double, v2: Double): typings.p5.p5Mod.p5 = js.native
-  def specularMaterial(v1: Double, v2: Double, v3: Double): typings.p5.p5Mod.p5 = js.native
-  def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): typings.p5.p5Mod.p5 = js.native
+  def specularMaterial(v1: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
   /**
     *   Draw a sphere with given radius
     *   @param [radius] radius of circle
@@ -6337,10 +6337,10 @@ trait p5InstanceExtensions extends js.Object {
     *   segments the smoother geometry default is 16
     *   @chainable
     */
-  def sphere(): typings.p5.p5Mod.p5 = js.native
-  def sphere(radius: Double): typings.p5.p5Mod.p5 = js.native
-  def sphere(radius: Double, detailX: Double): typings.p5.p5Mod.p5 = js.native
-  def sphere(radius: Double, detailX: Double, detailY: Double): typings.p5.p5Mod.p5 = js.native
+  def sphere(): p5 = js.native
+  def sphere(radius: Double): p5 = js.native
+  def sphere(radius: Double, detailX: Double): p5 = js.native
+  def sphere(radius: Double, detailX: Double, detailY: Double): p5 = js.native
   /**
     *   Inserts a value or an array of values into an
     *   existing array. The first parameter specifies the
@@ -6437,11 +6437,11 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [bl] optional radius of bottom-left corner.
     *   @chainable
     */
-  def square(x: Double, y: Double, s: Double): typings.p5.p5Mod.p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: Double): typings.p5.p5Mod.p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double): typings.p5.p5Mod.p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): typings.p5.p5Mod.p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): typings.p5.p5Mod.p5 = js.native
+  def square(x: Double, y: Double, s: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): p5 = js.native
   /**
     *   Stores a value in local storage under the key
     *   name. Local storage is saved in the browser and
@@ -6488,7 +6488,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param color the stroke color
     *   @chainable
     */
-  def stroke(color: Color): typings.p5.p5Mod.p5 = js.native
+  def stroke(color: Color): p5 = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6508,8 +6508,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param gray a gray value
     *   @chainable
     */
-  def stroke(gray: Double): typings.p5.p5Mod.p5 = js.native
-  def stroke(gray: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
+  def stroke(gray: Double): p5 = js.native
+  def stroke(gray: Double, alpha: Double): p5 = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6534,8 +6534,8 @@ trait p5InstanceExtensions extends js.Object {
     *   current color range
     *   @chainable
     */
-  def stroke(v1: Double, v2: Double, v3: Double): typings.p5.p5Mod.p5 = js.native
-  def stroke(v1: Double, v2: Double, v3: Double, alpha: Double): typings.p5.p5Mod.p5 = js.native
+  def stroke(v1: Double, v2: Double, v3: Double): p5 = js.native
+  def stroke(v1: Double, v2: Double, v3: Double, alpha: Double): p5 = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6555,7 +6555,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param value a color string
     *   @chainable
     */
-  def stroke(value: String): typings.p5.p5Mod.p5 = js.native
+  def stroke(value: String): p5 = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6576,7 +6576,7 @@ trait p5InstanceExtensions extends js.Object {
     *   red,green,blue & and alpha components of the color
     *   @chainable
     */
-  def stroke(values: js.Array[Double]): typings.p5.p5Mod.p5 = js.native
+  def stroke(values: js.Array[Double]): p5 = js.native
   /**
     *   Sets the style for rendering line endings. These
     *   ends are either squared, extended, or rounded,
@@ -6586,7 +6586,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param cap either SQUARE, PROJECT, or ROUND
     *   @chainable
     */
-  def strokeCap(cap: STROKE_CAP): typings.p5.p5Mod.p5 = js.native
+  def strokeCap(cap: STROKE_CAP): p5 = js.native
   /**
     *   Sets the style of the joints which connect line
     *   segments. These joints are either mitered,
@@ -6596,7 +6596,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param join either MITER, BEVEL, ROUND
     *   @chainable
     */
-  def strokeJoin(join: STROKE_JOIN): typings.p5.p5Mod.p5 = js.native
+  def strokeJoin(join: STROKE_JOIN): p5 = js.native
   /**
     *   Sets the width of the stroke used for lines,
     *   points, and the border around shapes. All widths
@@ -6604,7 +6604,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param weight the weight (in pixels) of the stroke
     *   @chainable
     */
-  def strokeWeight(weight: Double): typings.p5.p5Mod.p5 = js.native
+  def strokeWeight(weight: Double): p5 = js.native
   /**
     *   Extracts an array of elements from an existing
     *   array. The list parameter defines the array from
@@ -6671,21 +6671,21 @@ trait p5InstanceExtensions extends js.Object {
     *   box, see rectMode() for more info
     *   @chainable
     */
-  def text(str: String, x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: String, x: Double, y: Double, x2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: String, x: Double, y: Double, x2: Double, y2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: js.Array[_], x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: js.Array[_], x: Double, y: Double, x2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: js.Array[_], x: Double, y: Double, x2: Double, y2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: js.Object, x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: js.Object, x: Double, y: Double, x2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: js.Object, x: Double, y: Double, x2: Double, y2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: Boolean, x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: Boolean, x: Double, y: Double, x2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: Boolean, x: Double, y: Double, x2: Double, y2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: Double, x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: Double, x: Double, y: Double, x2: Double): typings.p5.p5Mod.p5 = js.native
-  def text(str: Double, x: Double, y: Double, x2: Double, y2: Double): typings.p5.p5Mod.p5 = js.native
+  def text(str: String, x: Double, y: Double): p5 = js.native
+  def text(str: String, x: Double, y: Double, x2: Double): p5 = js.native
+  def text(str: String, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: js.Array[_], x: Double, y: Double): p5 = js.native
+  def text(str: js.Array[_], x: Double, y: Double, x2: Double): p5 = js.native
+  def text(str: js.Array[_], x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: js.Object, x: Double, y: Double): p5 = js.native
+  def text(str: js.Object, x: Double, y: Double, x2: Double): p5 = js.native
+  def text(str: js.Object, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: Boolean, x: Double, y: Double): p5 = js.native
+  def text(str: Boolean, x: Double, y: Double, x2: Double): p5 = js.native
+  def text(str: Boolean, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: Double, x: Double, y: Double): p5 = js.native
+  def text(str: Double, x: Double, y: Double, x2: Double): p5 = js.native
+  def text(str: Double, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
   /**
     *   Sets the current alignment for drawing text.
     *   Accepts two arguments: horizAlign (LEFT, CENTER,
@@ -6724,8 +6724,8 @@ trait p5InstanceExtensions extends js.Object {
     *   BOTTOM, CENTER, or BASELINE
     *   @chainable
     */
-  def textAlign(horizAlign: HORIZ_ALIGN): typings.p5.p5Mod.p5 = js.native
-  def textAlign(horizAlign: HORIZ_ALIGN, vertAlign: VERT_ALIGN): typings.p5.p5Mod.p5 = js.native
+  def textAlign(horizAlign: HORIZ_ALIGN): p5 = js.native
+  def textAlign(horizAlign: HORIZ_ALIGN, vertAlign: VERT_ALIGN): p5 = js.native
   /**
     *   Returns the ascent of the current font at its
     *   current size. The ascent represents the distance,
@@ -6747,8 +6747,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @return the current font
     */
   def textFont(): js.Object = js.native
-  def textFont(font: String): typings.p5.p5Mod.p5 = js.native
-  def textFont(font: String, size: Double): typings.p5.p5Mod.p5 = js.native
+  def textFont(font: String): p5 = js.native
+  def textFont(font: String, size: Double): p5 = js.native
   /**
     *   Sets the current font that will be drawn with the
     *   text() function.  WEBGL: Only fonts loaded via
@@ -6759,8 +6759,8 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [size] the font size to use
     *   @chainable
     */
-  def textFont(font: js.Object): typings.p5.p5Mod.p5 = js.native
-  def textFont(font: js.Object, size: Double): typings.p5.p5Mod.p5 = js.native
+  def textFont(font: js.Object): p5 = js.native
+  def textFont(font: js.Object, size: Double): p5 = js.native
   /**
     *   Sets/gets the spacing, in pixels, between lines of
     *   text. This setting will be used in all subsequent
@@ -6775,7 +6775,7 @@ trait p5InstanceExtensions extends js.Object {
     *   between lines
     *   @chainable
     */
-  def textLeading(leading: Double): typings.p5.p5Mod.p5 = js.native
+  def textLeading(leading: Double): p5 = js.native
   /**
     *   Sets/gets the current font size. This size will be
     *   used in all subsequent calls to the text()
@@ -6790,7 +6790,7 @@ trait p5InstanceExtensions extends js.Object {
     *   pixels
     *   @chainable
     */
-  def textSize(theSize: Double): typings.p5.p5Mod.p5 = js.native
+  def textSize(theSize: Double): p5 = js.native
   /**
     *   Sets/gets the style of the text for system fonts
     *   to NORMAL, ITALIC, BOLD or BOLDITALIC. Note: this
@@ -6809,14 +6809,14 @@ trait p5InstanceExtensions extends js.Object {
     *   ITALIC, BOLD or BOLDITALIC
     *   @chainable
     */
-  def textStyle(theStyle: THE_STYLE): typings.p5.p5Mod.p5 = js.native
+  def textStyle(theStyle: THE_STYLE): p5 = js.native
   /**
     *   Calculates and returns the width of any character
     *   or text string.
     *   @param theText the String of characters to measure
     */
   def textWidth(theText: String): Double = js.native
-  def texture(tex: Graphics): typings.p5.p5Mod.p5 = js.native
+  def texture(tex: Graphics): p5 = js.native
   /**
     *   Texture for geometry. You can view other possible
     *   materials in this example.
@@ -6824,8 +6824,8 @@ trait p5InstanceExtensions extends js.Object {
     *   texture
     *   @chainable
     */
-  def texture(tex: Image): typings.p5.p5Mod.p5 = js.native
-  def texture(tex: MediaElement): typings.p5.p5Mod.p5 = js.native
+  def texture(tex: Image): p5 = js.native
+  def texture(tex: MediaElement): p5 = js.native
   /**
     *   Sets the coordinate space for texture mapping. The
     *   default mode is IMAGE which refers to the actual
@@ -6976,11 +6976,11 @@ trait p5InstanceExtensions extends js.Object {
     *   geometry default is 16
     *   @chainable
     */
-  def torus(): typings.p5.p5Mod.p5 = js.native
-  def torus(radius: Double): typings.p5.p5Mod.p5 = js.native
-  def torus(radius: Double, tubeRadius: Double): typings.p5.p5Mod.p5 = js.native
-  def torus(radius: Double, tubeRadius: Double, detailX: Double): typings.p5.p5Mod.p5 = js.native
-  def torus(radius: Double, tubeRadius: Double, detailX: Double, detailY: Double): typings.p5.p5Mod.p5 = js.native
+  def torus(): p5 = js.native
+  def torus(radius: Double): p5 = js.native
+  def torus(radius: Double, tubeRadius: Double): p5 = js.native
+  def torus(radius: Double, tubeRadius: Double, detailX: Double): p5 = js.native
+  def torus(radius: Double, tubeRadius: Double, detailX: Double, detailY: Double): p5 = js.native
   /**
     *   The touchEnded() function is called every time a
     *   touch ends. If no touchEnded() function is
@@ -7039,7 +7039,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param vector the vector to translate by
     *   @chainable
     */
-  def translate(vector: Vector): typings.p5.p5Mod.p5 = js.native
+  def translate(vector: Vector): p5 = js.native
   /**
     *   Specifies an amount to displace objects within the
     *   display window. The x parameter specifies
@@ -7059,8 +7059,8 @@ trait p5InstanceExtensions extends js.Object {
     *   only)
     *   @chainable
     */
-  def translate(x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
-  def translate(x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
+  def translate(x: Double, y: Double): p5 = js.native
+  def translate(x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   A triangle is a plane created by connecting three
     *   points. The first two arguments specify the first
@@ -7075,7 +7075,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y3 y-coordinate of the third point
     *   @chainable
     */
-  def triangle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): typings.p5.p5Mod.p5 = js.native
+  def triangle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): p5 = js.native
   /**
     *   Removes whitespace characters from the beginning
     *   and end of a String. In addition to standard
@@ -7170,7 +7170,7 @@ trait p5InstanceExtensions extends js.Object {
     *   @param y y-coordinate of the vertex
     *   @chainable
     */
-  def vertex(x: Double, y: Double): typings.p5.p5Mod.p5 = js.native
+  def vertex(x: Double, y: Double): p5 = js.native
   /**
     *   All shapes are constructed by connecting a series
     *   of vertices. vertex() is used to specify the
@@ -7184,9 +7184,9 @@ trait p5InstanceExtensions extends js.Object {
     *   @param [v] the vertex's texture v-coordinate
     *   @chainable
     */
-  def vertex(x: Double, y: Double, z: Double): typings.p5.p5Mod.p5 = js.native
-  def vertex(x: Double, y: Double, z: Double, u: Double): typings.p5.p5Mod.p5 = js.native
-  def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): typings.p5.p5Mod.p5 = js.native
+  def vertex(x: Double, y: Double, z: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Double, u: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): p5 = js.native
   /**
     *   The windowResized() function is called once every
     *   time the browser window is resized. This is a good

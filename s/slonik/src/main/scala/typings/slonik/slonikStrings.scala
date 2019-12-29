@@ -10,27 +10,6 @@ import scala.scalajs.js.annotation._
 
 object slonikStrings {
   @js.native
-  sealed trait `!=` extends ComparisonOperatorType
-  
-  @js.native
-  sealed trait `<` extends ComparisonOperatorType
-  
-  @js.native
-  sealed trait `<=` extends ComparisonOperatorType
-  
-  @js.native
-  sealed trait `<>` extends ComparisonOperatorType
-  
-  @js.native
-  sealed trait `=` extends ComparisonOperatorType
-  
-  @js.native
-  sealed trait `>` extends ComparisonOperatorType
-  
-  @js.native
-  sealed trait `>=` extends ComparisonOperatorType
-  
-  @js.native
   sealed trait AND extends LogicalBooleanOperatorType
   
   @js.native
@@ -40,6 +19,18 @@ object slonikStrings {
   sealed trait EXPLICIT extends ConnectionTypeType
   
   @js.native
+  sealed trait Equalssign extends ComparisonOperatorType
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssign extends ComparisonOperatorType
+  
+  @js.native
+  sealed trait Greaterthansign extends ComparisonOperatorType
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends ComparisonOperatorType
+  
+  @js.native
   sealed trait IMPLICIT_QUERY extends ConnectionTypeType
   
   @js.native
@@ -47,6 +38,15 @@ object slonikStrings {
   
   @js.native
   sealed trait INSERT extends js.Object
+  
+  @js.native
+  sealed trait Lessthansign extends ComparisonOperatorType
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends ComparisonOperatorType
+  
+  @js.native
+  sealed trait LessthansignGreaterthansign extends ComparisonOperatorType
   
   @js.native
   sealed trait OR extends LogicalBooleanOperatorType
@@ -88,31 +88,31 @@ object slonikStrings {
   sealed trait timestamptz extends TypeNameIdentifierType
   
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
-  @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `<>`: `<>` = "<>".asInstanceOf[`<>`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
-  @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
   def EXPLICIT: EXPLICIT = "EXPLICIT".asInstanceOf[EXPLICIT]
   @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
   def IMPLICIT_QUERY: IMPLICIT_QUERY = "IMPLICIT_QUERY".asInstanceOf[IMPLICIT_QUERY]
   @scala.inline
   def IMPLICIT_TRANSACTION: IMPLICIT_TRANSACTION = "IMPLICIT_TRANSACTION".asInstanceOf[IMPLICIT_TRANSACTION]
   @scala.inline
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  @scala.inline
+  def LessthansignGreaterthansign: LessthansignGreaterthansign = "<>".asInstanceOf[LessthansignGreaterthansign]
   @scala.inline
   def OR: OR = "OR".asInstanceOf[OR]
   @scala.inline

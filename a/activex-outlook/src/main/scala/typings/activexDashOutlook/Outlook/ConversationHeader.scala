@@ -11,7 +11,8 @@ class ConversationHeader protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val ConversationID: String = js.native
   val ConversationTopic: String = js.native
-  var `Outlook.ConversationHeader_typekey`: ConversationHeader = js.native
+  @JSName("Outlook.ConversationHeader_typekey")
+  var OutlookDotConversationHeader_typekey: ConversationHeader = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def GetConversation(): Conversation = js.native

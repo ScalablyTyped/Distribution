@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceClass.all
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceClass.audioCapture
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceClass.audioRender
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceClass.imageScanner
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceClass.location
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceClass.portableStorageDevice
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceClass.videoCapture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

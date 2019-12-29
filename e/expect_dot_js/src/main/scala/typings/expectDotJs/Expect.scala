@@ -1,15 +1,6 @@
 package typings.expectDotJs
 
-import typings.expectDotJs.Expect.An
-import typings.expectDotJs.Expect.Assertion
-import typings.expectDotJs.Expect.Be
-import typings.expectDotJs.Expect.Have
-import typings.expectDotJs.Expect.Not
-import typings.expectDotJs.Expect.NotBase
-import typings.expectDotJs.Expect.Only
 import typings.expectDotJs.Expect.Root
-import typings.expectDotJs.Expect.To
-import typings.expectDotJs.Expect.ToBase
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

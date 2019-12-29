@@ -2,7 +2,6 @@ package typings.pythonDashStruct
 
 import typings.long.longMod.^
 import typings.node.Buffer
-import typings.pythonDashStruct.pythonDashStructMod.DataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

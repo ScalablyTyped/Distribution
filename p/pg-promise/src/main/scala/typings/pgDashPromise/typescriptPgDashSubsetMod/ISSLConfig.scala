@@ -1,8 +1,8 @@
 package typings.pgDashPromise.typescriptPgDashSubsetMod
 
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.tlsMod.PeerCertificate
+import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

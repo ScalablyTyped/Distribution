@@ -1,6 +1,6 @@
 package typings.reactDashDraggable.reactDashDraggableMod
 
-import typings.reactDashDraggable.reactDashDraggableNumbers.`false`
+import typings.reactDashDraggable.reactDashDraggableBooleans.`false`
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js

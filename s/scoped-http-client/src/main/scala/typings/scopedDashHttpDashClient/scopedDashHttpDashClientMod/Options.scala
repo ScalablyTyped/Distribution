@@ -1,10 +1,10 @@
 package typings.scopedDashHttpDashClient.scopedDashHttpDashClientMod
 
-import typings.node.Error
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.netMod.Socket
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Field extends Atom {
+//
+// Atoms
+//
+trait Field
+  extends Atom
+     with Selector {
   var name: String
   @JSName("type")
   var type_Field: field

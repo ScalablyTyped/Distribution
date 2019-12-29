@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.PrintMarginUnit.centimeters
-import typings.officeDashJsDashPreview.Excel.PrintMarginUnit.inches
-import typings.officeDashJsDashPreview.Excel.PrintMarginUnit.points
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

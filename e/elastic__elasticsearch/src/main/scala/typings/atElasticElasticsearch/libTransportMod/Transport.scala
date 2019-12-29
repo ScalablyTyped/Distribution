@@ -1,6 +1,6 @@
 package typings.atElasticElasticsearch.libTransportMod
 
-import typings.atElasticElasticsearch.atElasticElasticsearchNumbers.`false`
+import typings.atElasticElasticsearch.atElasticElasticsearchBooleans.`false`
 import typings.atElasticElasticsearch.atElasticElasticsearchStrings.gzip
 import typings.atElasticElasticsearch.libPoolMod.CloudConnectionPool
 import typings.atElasticElasticsearch.libPoolMod.ConnectionPool

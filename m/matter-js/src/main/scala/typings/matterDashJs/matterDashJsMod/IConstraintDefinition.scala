@@ -22,7 +22,7 @@ trait IConstraintDefinition extends js.Object {
     */
   var bodyB: js.UndefOr[Body] = js.undefined
   /**
-    * A `Number` that specifies the damping of the constraint, 
+    * A `Number` that specifies the damping of the constraint,
     * i.e. the amount of resistance applied to each body based on their velocities to limit the amount of oscillation.
     * Damping will only be apparent when the constraint also has a very low `stiffness`.
     * A value of `0.1` means the constraint will apply heavy damping, resulting in little to no oscillation.

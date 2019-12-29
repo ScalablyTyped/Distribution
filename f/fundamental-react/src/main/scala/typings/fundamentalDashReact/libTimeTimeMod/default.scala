@@ -10,3 +10,10 @@ import scala.scalajs.js.annotation._
 class default ()
   extends Component[TimeProps, js.Object, js.Any]
 
+/* static members */
+@JSImport("fundamental-react/lib/Time/Time", JSImport.Default)
+@js.native
+object default extends js.Object {
+  var displayName: typings.fundamentalDashReact.fundamentalDashReactStrings.Time = js.native
+}
+

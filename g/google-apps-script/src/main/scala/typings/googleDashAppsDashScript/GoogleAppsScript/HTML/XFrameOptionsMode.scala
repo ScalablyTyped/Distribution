@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.HTML
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.HTML.XFrameOptionsMode.ALLOWALL
-import typings.googleDashAppsDashScript.GoogleAppsScript.HTML.XFrameOptionsMode.DEFAULT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

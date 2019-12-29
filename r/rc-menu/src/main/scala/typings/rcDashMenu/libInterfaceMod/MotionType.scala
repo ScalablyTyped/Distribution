@@ -1,6 +1,6 @@
 package typings.rcDashMenu.libInterfaceMod
 
-import typings.rcDashMenu.rcDashMenuNumbers.`false`
+import typings.rcDashMenu.rcDashMenuBooleans.`false`
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.TransitionEvent

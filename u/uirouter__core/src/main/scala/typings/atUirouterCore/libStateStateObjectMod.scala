@@ -8,7 +8,6 @@ import typings.atUirouterCore.libStateInterfaceMod.StateDeclaration
 import typings.atUirouterCore.libStateInterfaceMod._StateDeclaration
 import typings.atUirouterCore.libStateInterfaceMod._StateOrName
 import typings.atUirouterCore.libStateInterfaceMod._ViewDeclaration
-import typings.atUirouterCore.libStateStateObjectMod.StateObject
 import typings.atUirouterCore.libStateTargetStateMod.TargetState
 import typings.atUirouterCore.libTransitionInterfaceMod.HookResult
 import typings.atUirouterCore.libTransitionInterfaceMod.TransitionStateHookFn

@@ -9,10 +9,10 @@ object atElasticElasticsearchStrings {
   sealed trait AND extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait OR extends js.Object
   
   @js.native
-  sealed trait OR extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait abort extends js.Object
@@ -42,7 +42,7 @@ object atElasticElasticsearchStrings {
   sealed trait create extends js.Object
   
   @js.native
-  sealed trait `d (Days)` extends js.Object
+  sealed trait `d LeftparenthesisDaysRightparenthesis` extends js.Object
   
   @js.native
   sealed trait delimited extends js.Object
@@ -78,7 +78,7 @@ object atElasticElasticsearchStrings {
   sealed trait gzip extends js.Object
   
   @js.native
-  sealed trait `h (Hours)` extends js.Object
+  sealed trait `h LeftparenthesisHoursRightparenthesis` extends js.Object
   
   @js.native
   sealed trait high extends js.Object
@@ -111,22 +111,22 @@ object atElasticElasticsearchStrings {
   sealed trait m extends js.Object
   
   @js.native
-  sealed trait `m (Minutes)` extends js.Object
+  sealed trait `m LeftparenthesisMinutesRightparenthesis` extends js.Object
   
   @js.native
   sealed trait mb extends js.Object
   
   @js.native
-  sealed trait `micros (Microseconds)` extends js.Object
+  sealed trait `micros LeftparenthesisMicrosecondsRightparenthesis` extends js.Object
   
   @js.native
   sealed trait missing extends js.Object
   
   @js.native
-  sealed trait `ms (Milliseconds)` extends js.Object
+  sealed trait `ms LeftparenthesisMillisecondsRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `nanos (Nanoseconds)` extends js.Object
+  sealed trait `nanos LeftparenthesisNanosecondsRightparenthesis` extends js.Object
   
   @js.native
   sealed trait ndjson extends js.Object
@@ -177,7 +177,7 @@ object atElasticElasticsearchStrings {
   sealed trait red extends js.Object
   
   @js.native
-  sealed trait `s (Seconds)` extends js.Object
+  sealed trait `s LeftparenthesisSecondsRightparenthesis` extends js.Object
   
   @js.native
   sealed trait semi_structured_text extends js.Object
@@ -212,9 +212,9 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def OR: OR = "OR".asInstanceOf[OR]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
@@ -234,7 +234,7 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   @scala.inline
-  def `d (Days)`: `d (Days)` = "d (Days)".asInstanceOf[`d (Days)`]
+  def `d LeftparenthesisDaysRightparenthesis`: `d LeftparenthesisDaysRightparenthesis` = "d (Days)".asInstanceOf[`d LeftparenthesisDaysRightparenthesis`]
   @scala.inline
   def delimited: delimited = "delimited".asInstanceOf[delimited]
   @scala.inline
@@ -258,7 +258,7 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def gzip: gzip = "gzip".asInstanceOf[gzip]
   @scala.inline
-  def `h (Hours)`: `h (Hours)` = "h (Hours)".asInstanceOf[`h (Hours)`]
+  def `h LeftparenthesisHoursRightparenthesis`: `h LeftparenthesisHoursRightparenthesis` = "h (Hours)".asInstanceOf[`h LeftparenthesisHoursRightparenthesis`]
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   @scala.inline
@@ -280,17 +280,17 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   @scala.inline
-  def `m (Minutes)`: `m (Minutes)` = "m (Minutes)".asInstanceOf[`m (Minutes)`]
+  def `m LeftparenthesisMinutesRightparenthesis`: `m LeftparenthesisMinutesRightparenthesis` = "m (Minutes)".asInstanceOf[`m LeftparenthesisMinutesRightparenthesis`]
   @scala.inline
   def mb: mb = "mb".asInstanceOf[mb]
   @scala.inline
-  def `micros (Microseconds)`: `micros (Microseconds)` = "micros (Microseconds)".asInstanceOf[`micros (Microseconds)`]
+  def `micros LeftparenthesisMicrosecondsRightparenthesis`: `micros LeftparenthesisMicrosecondsRightparenthesis` = "micros (Microseconds)".asInstanceOf[`micros LeftparenthesisMicrosecondsRightparenthesis`]
   @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
   @scala.inline
-  def `ms (Milliseconds)`: `ms (Milliseconds)` = "ms (Milliseconds)".asInstanceOf[`ms (Milliseconds)`]
+  def `ms LeftparenthesisMillisecondsRightparenthesis`: `ms LeftparenthesisMillisecondsRightparenthesis` = "ms (Milliseconds)".asInstanceOf[`ms LeftparenthesisMillisecondsRightparenthesis`]
   @scala.inline
-  def `nanos (Nanoseconds)`: `nanos (Nanoseconds)` = "nanos (Nanoseconds)".asInstanceOf[`nanos (Nanoseconds)`]
+  def `nanos LeftparenthesisNanosecondsRightparenthesis`: `nanos LeftparenthesisNanosecondsRightparenthesis` = "nanos (Nanoseconds)".asInstanceOf[`nanos LeftparenthesisNanosecondsRightparenthesis`]
   @scala.inline
   def ndjson: ndjson = "ndjson".asInstanceOf[ndjson]
   @scala.inline
@@ -324,7 +324,7 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   @scala.inline
-  def `s (Seconds)`: `s (Seconds)` = "s (Seconds)".asInstanceOf[`s (Seconds)`]
+  def `s LeftparenthesisSecondsRightparenthesis`: `s LeftparenthesisSecondsRightparenthesis` = "s (Seconds)".asInstanceOf[`s LeftparenthesisSecondsRightparenthesis`]
   @scala.inline
   def semi_structured_text: semi_structured_text = "semi_structured_text".asInstanceOf[semi_structured_text]
   @scala.inline

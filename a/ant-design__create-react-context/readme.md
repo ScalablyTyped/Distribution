@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__create-react-context
 
-Typings are for version 0.2.4
+Typings are for version 0.2.5
 
 ## Library description:
 A fork of create-react-context in MIT license

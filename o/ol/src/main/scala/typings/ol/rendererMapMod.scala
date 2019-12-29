@@ -7,7 +7,6 @@ import typings.ol.layerLayerMod.State
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderEventTypeMod.EventType
-import typings.ol.rendererMapMod.MapRenderer
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import scala.scalajs.js

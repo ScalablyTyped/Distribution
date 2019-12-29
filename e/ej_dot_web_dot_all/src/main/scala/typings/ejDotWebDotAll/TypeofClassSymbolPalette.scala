@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSymbolPalette
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, SymbolPalette]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), SymbolPalette] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), SymbolPalette]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, SymbolPalette] {
   var Locale: js.Any = js.native
   var fn: SymbolPalette = js.native
 }

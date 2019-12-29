@@ -11,7 +11,8 @@ class XMLNamespaces protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.XMLNamespaces_typekey`: XMLNamespaces = js.native
+  @JSName("Word.XMLNamespaces_typekey")
+  var WordDotXMLNamespaces_typekey: XMLNamespaces = js.native
   /** @param boolean [InstallForAllUsers=false] */
   def Add(Path: String, NamespaceURI: js.Any, Alias: js.Any): XMLNamespace = js.native
   def Add(Path: String, NamespaceURI: js.Any, Alias: js.Any, InstallForAllUsers: Boolean): XMLNamespace = js.native

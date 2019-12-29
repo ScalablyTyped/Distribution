@@ -1,9 +1,6 @@
 package typings.officeDashJs.OneNote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.OneNote.ListType.bullet
-import typings.officeDashJs.OneNote.ListType.none
-import typings.officeDashJs.OneNote.ListType.number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

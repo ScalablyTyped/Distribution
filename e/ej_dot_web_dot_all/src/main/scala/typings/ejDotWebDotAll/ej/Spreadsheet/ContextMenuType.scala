@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.Cell
-import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.ColumnHeader
-import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.Footer
-import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.RowHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

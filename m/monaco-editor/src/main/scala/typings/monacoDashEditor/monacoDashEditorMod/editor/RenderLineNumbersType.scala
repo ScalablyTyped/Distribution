@@ -1,11 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Custom
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Interval
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Off
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.On
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Relative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

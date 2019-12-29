@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class Options protected () extends js.Object {
   var DisplayPasteOptions: MsoTriState = js.native
   var DoNotPromptForConvert: MsoTriState = js.native
-  var `PowerPoint.Options_typekey`: Options = js.native
+  @JSName("PowerPoint.Options_typekey")
+  var PowerPointDotOptions_typekey: Options = js.native
   var ShowCoauthoringMergeChanges: Boolean = js.native
 }
 

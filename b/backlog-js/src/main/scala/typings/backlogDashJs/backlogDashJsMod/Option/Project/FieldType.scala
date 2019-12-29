@@ -1,14 +1,6 @@
 package typings.backlogDashJs.backlogDashJsMod.Option.Project
 
 import org.scalablytyped.runtime.TopLevel
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.CheckBox
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Date
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.MultipleList
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Numeric
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Radio
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.SingleList
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Text
-import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.TextArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

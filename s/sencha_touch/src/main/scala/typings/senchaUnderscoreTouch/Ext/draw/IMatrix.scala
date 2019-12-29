@@ -228,7 +228,7 @@ trait IMatrix extends IBase {
   /** [Method] Return a string that can be used as transform attribute in SVG
   		* @returns String
   		*/
-  var toSvg: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toSvg: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Create an array of elements by vertical order xx xy yx yy dx dy
   		* @returns Array|String
   		*/
@@ -300,12 +300,12 @@ object IMatrix {
     config: js.Any = null,
     destroy: () => Unit = null,
     equals: /* matrix */ js.UndefOr[IMatrix] => Boolean = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     flipX: () => IMatrix = null,
     flipY: () => IMatrix = null,
     getDX: () => Double = null,
     getDY: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getScaleX: () => Double = null,
     getScaleY: () => Double = null,
     getXX: () => Double = null,
@@ -335,7 +335,7 @@ object IMatrix {
     toArray: () => Array = null,
     toContext: /* ctx */ js.UndefOr[js.Any] => IMatrix = null,
     toString: () => Array = null,
-    toSvg: () => java.lang.String = null,
+    toSvg: () => String = null,
     toVerticalArray: () => _ = null,
     transformBBox: (/* bbox */ js.UndefOr[js.Any], /* radius */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => _ = null,
     transformList: /* list */ js.UndefOr[Array] => Array = null,

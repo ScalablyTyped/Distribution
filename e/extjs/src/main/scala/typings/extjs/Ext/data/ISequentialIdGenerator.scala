@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ISequentialIdGenerator extends IIdGenerator {
   /** [Config Option] (String) */
-  var prefix: js.UndefOr[java.lang.String] = js.undefined
+  var prefix: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var seed: js.UndefOr[Double] = js.undefined
 }
@@ -22,15 +22,15 @@ object ISequentialIdGenerator {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    generate: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    id: java.lang.String = null,
+    extend: String = null,
+    generate: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ISequentialIdGenerator = null,
     isGenerator: js.UndefOr[Boolean] = js.undefined,
     mixins: js.Any = null,
-    prefix: java.lang.String = null,
+    prefix: String = null,
     requires: Array = null,
     seed: Int | Double = null,
     self: IClass = null,

@@ -1,7 +1,5 @@
 package typings.atAwsDashSdkSsecDashMiddleware
 
-import typings.atAwsDashSdkSsecDashMiddleware.atAwsDashSdkSsecDashMiddlewareMod.SsecMiddlewareConfiguration
-import typings.atAwsDashSdkSsecDashMiddleware.atAwsDashSdkSsecDashMiddlewareMod.SsecPropertiesConfiguration
 import typings.atAwsDashSdkTypes.buildMiddlewareMod.Middleware
 import typings.atAwsDashSdkTypes.buildUtilMod.Decoder
 import typings.atAwsDashSdkTypes.buildUtilMod.Encoder

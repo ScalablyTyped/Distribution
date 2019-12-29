@@ -1,20 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.LocationRelation.adjacentAfter
-import typings.officeDashJs.Word.LocationRelation.adjacentBefore
-import typings.officeDashJs.Word.LocationRelation.after
-import typings.officeDashJs.Word.LocationRelation.before
-import typings.officeDashJs.Word.LocationRelation.contains
-import typings.officeDashJs.Word.LocationRelation.containsEnd
-import typings.officeDashJs.Word.LocationRelation.containsStart
-import typings.officeDashJs.Word.LocationRelation.equal
-import typings.officeDashJs.Word.LocationRelation.inside
-import typings.officeDashJs.Word.LocationRelation.insideEnd
-import typings.officeDashJs.Word.LocationRelation.insideStart
-import typings.officeDashJs.Word.LocationRelation.overlapsAfter
-import typings.officeDashJs.Word.LocationRelation.overlapsBefore
-import typings.officeDashJs.Word.LocationRelation.unrelated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

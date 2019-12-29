@@ -2,6 +2,7 @@ package typings.chrome.chrome.tabs
 
 import typings.chrome.chromeStrings.app
 import typings.chrome.chromeStrings.complete
+import typings.chrome.chromeStrings.devtools
 import typings.chrome.chromeStrings.loading
 import typings.chrome.chromeStrings.normal
 import typings.chrome.chromeStrings.panel
@@ -69,7 +70,7 @@ trait QueryInfo extends js.Object {
     * Optional. The type of window the tabs are in.
     * One of: "normal", "popup", "panel", "app", or "devtools"
     */
-  var windowType: js.UndefOr[normal | popup | panel | app | typings.chrome.chromeStrings.devtools] = js.undefined
+  var windowType: js.UndefOr[normal | popup | panel | app | devtools] = js.undefined
 }
 
 object QueryInfo {
@@ -89,7 +90,7 @@ object QueryInfo {
     title: String = null,
     url: String | js.Array[String] = null,
     windowId: Int | Double = null,
-    windowType: normal | popup | panel | app | typings.chrome.chromeStrings.devtools = null
+    windowType: normal | popup | panel | app | devtools = null
   ): QueryInfo = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])

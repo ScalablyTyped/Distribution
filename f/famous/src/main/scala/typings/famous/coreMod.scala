@@ -1,9 +1,5 @@
 package typings.famous
 
-import typings.famous.coreMod.Clock
-import typings.famous.coreMod.FamousEngine
-import typings.famous.coreMod.Node
-import typings.famous.coreMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

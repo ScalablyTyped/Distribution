@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.afterWrite
-import typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.notNeeded
-import typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.readOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

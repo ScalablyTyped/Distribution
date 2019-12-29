@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-pug
 
-Typings are for version 4.0.2
+Typings are for version 4.0.3
 
 ## Library description:
 A Pug middleware for Koa

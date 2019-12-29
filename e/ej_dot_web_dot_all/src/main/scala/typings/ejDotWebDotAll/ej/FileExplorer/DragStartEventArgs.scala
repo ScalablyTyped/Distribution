@@ -10,7 +10,7 @@ trait DragStartEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the dragging file details.
     */
   var selectedItems: js.UndefOr[js.Any] = js.undefined
@@ -29,7 +29,7 @@ object DragStartEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     selectedItems: js.Any = null,
     target: js.Any = null,
     targetPath: String = null,

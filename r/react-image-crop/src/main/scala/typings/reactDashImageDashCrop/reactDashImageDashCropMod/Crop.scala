@@ -1,6 +1,6 @@
 package typings.reactDashImageDashCrop.reactDashImageDashCropMod
 
-import typings.reactDashImageDashCrop.reactDashImageDashCropStrings.`%`
+import typings.reactDashImageDashCrop.reactDashImageDashCropStrings.Percentsign
 import typings.reactDashImageDashCrop.reactDashImageDashCropStrings.px
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Crop extends js.Object {
   var aspect: js.UndefOr[Double] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var unit: js.UndefOr[px | `%`] = js.undefined
+  var unit: js.UndefOr[px | Percentsign] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
   var x: js.UndefOr[Double] = js.undefined
   var y: js.UndefOr[Double] = js.undefined
@@ -20,7 +20,7 @@ object Crop {
   def apply(
     aspect: Int | Double = null,
     height: Int | Double = null,
-    unit: px | `%` = null,
+    unit: px | Percentsign = null,
     width: Int | Double = null,
     x: Int | Double = null,
     y: Int | Double = null

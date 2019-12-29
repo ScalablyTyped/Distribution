@@ -3,8 +3,6 @@ package typings.tstl
 import typings.tstl.baseContainerArrayContainerMod.ArrayContainer
 import typings.tstl.baseIteratorArrayIteratorBaseMod.ArrayIteratorBase
 import typings.tstl.baseIteratorArrayIteratorBaseMod.ArrayReverseIteratorBase
-import typings.tstl.baseIteratorArrayIteratorMod.ArrayIterator
-import typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

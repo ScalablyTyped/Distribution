@@ -19,7 +19,7 @@ object ScrollManager extends js.Object {
   /** [Property] (Boolean) */
   var animate: Boolean = js.native
   /** [Property] (String) */
-  var ddGroup: java.lang.String = js.native
+  var ddGroup: String = js.native
   /** [Property] (Number) */
   var frequency: Double = js.native
   /** [Property] (Number) */
@@ -53,7 +53,7 @@ object ScrollManager extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this

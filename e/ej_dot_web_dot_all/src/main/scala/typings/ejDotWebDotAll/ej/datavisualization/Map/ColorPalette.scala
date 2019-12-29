@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Custompalette
-import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette1
-import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette2
-import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

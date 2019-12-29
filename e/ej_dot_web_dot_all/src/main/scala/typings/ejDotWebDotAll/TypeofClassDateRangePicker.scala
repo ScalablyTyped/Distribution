@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassDateRangePicker
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), DateRangePicker]
+     with Instantiable2[
       (/* element */ Element) | (/* element */ JQuery), 
       /* options */ Model, 
       DateRangePicker
-    ]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), DateRangePicker] {
+    ] {
   var Locale: js.Any = js.native
   var fn: DateRangePicker = js.native
 }

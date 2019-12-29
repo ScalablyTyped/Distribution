@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.CommitmentTypeQualifier")
 @js.native
-class CommitmentTypeQualifier () extends Any
+class CommitmentTypeQualifier ()
+  extends typings.xadesjs.buildTypesXmlMod.CommitmentTypeQualifier
 

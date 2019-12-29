@@ -2,7 +2,6 @@ package typings.atMaterialTabDashIndicator
 
 import typings.atMaterialBase.componentMod.MDCComponent
 import typings.atMaterialBase.foundationMod.default
-import typings.atMaterialTabDashIndicator.componentMod.MDCTabIndicator
 import typings.atMaterialTabDashIndicator.foundationMod.MDCTabIndicatorFoundation
 import typings.std.ClientRect
 import typings.std.Element

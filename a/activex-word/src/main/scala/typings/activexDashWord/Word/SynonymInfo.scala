@@ -18,7 +18,8 @@ class SynonymInfo protected () extends js.Object {
   val RelatedExpressionList: js.Any = js.native
   val RelatedWordList: js.Any = js.native
   val Word: String = js.native
-  var `Word.SynonymInfo_typekey`: SynonymInfo = js.native
+  @JSName("Word.SynonymInfo_typekey")
+  var WordDotSynonymInfo_typekey: SynonymInfo = js.native
   def SynonymList(Meaning: js.Any): js.Any = js.native
 }
 

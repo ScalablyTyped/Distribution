@@ -1,24 +1,6 @@
 package typings.cassandraDashDriver.libTypesMod.types
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.alreadyExists
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.badCredentials
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.configError
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.functionFailure
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.invalid
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.isBootstrapping
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.overloaded
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.protocolError
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.readFailure
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.readTimeout
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.serverError
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.syntaxError
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.truncateError
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.unauthorized
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.unavailableException
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.unprepared
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.writeFailure
-import typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.writeTimeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

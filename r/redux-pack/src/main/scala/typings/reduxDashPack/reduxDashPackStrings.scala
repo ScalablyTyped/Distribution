@@ -10,10 +10,10 @@ object reduxDashPackStrings {
   sealed trait failure extends LIFECYCLEValues
   
   @js.native
-  sealed trait `redux-pack/LIFECYCLE` extends js.Object
+  sealed trait `redux-packSlashLIFECYCLE` extends js.Object
   
   @js.native
-  sealed trait `redux-pack/TRANSACTION` extends js.Object
+  sealed trait `redux-packSlashTRANSACTION` extends js.Object
   
   @js.native
   sealed trait start extends LIFECYCLEValues
@@ -27,9 +27,9 @@ object reduxDashPackStrings {
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
   @scala.inline
-  def `redux-pack/LIFECYCLE`: `redux-pack/LIFECYCLE` = "redux-pack/LIFECYCLE".asInstanceOf[`redux-pack/LIFECYCLE`]
+  def `redux-packSlashLIFECYCLE`: `redux-packSlashLIFECYCLE` = "redux-pack/LIFECYCLE".asInstanceOf[`redux-packSlashLIFECYCLE`]
   @scala.inline
-  def `redux-pack/TRANSACTION`: `redux-pack/TRANSACTION` = "redux-pack/TRANSACTION".asInstanceOf[`redux-pack/TRANSACTION`]
+  def `redux-packSlashTRANSACTION`: `redux-packSlashTRANSACTION` = "redux-pack/TRANSACTION".asInstanceOf[`redux-packSlashTRANSACTION`]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline

@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Media.Playlists
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Playlists.PlaylistFormat.m3u
-import typings.winrt.Windows.Media.Playlists.PlaylistFormat.windowsMedia
-import typings.winrt.Windows.Media.Playlists.PlaylistFormat.zune
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

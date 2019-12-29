@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object removeAllListeners extends js.Object {
   def apply(): Cluster = js.native
-  def apply(event: java.lang.String): Cluster = js.native
+  def apply(event: String): Cluster = js.native
 }
 

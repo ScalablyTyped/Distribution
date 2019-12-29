@@ -19,7 +19,7 @@ trait IBoxDock extends IBase {
   /** [Method] Returns the value of direction
   		* @returns String
   		*/
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of element
   		* @returns Object
   		*/
@@ -43,7 +43,7 @@ trait IBoxDock extends IBase {
   /** [Method] Sets the value of direction
   		* @param direction String The new value.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of element
   		* @param element Object The new value.
   		*/
@@ -68,12 +68,12 @@ object IBoxDock {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getBodyElement: () => _ = null,
     getContainer: () => _ = null,
-    getDirection: () => java.lang.String = null,
+    getDirection: () => String = null,
     getElement: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getInnerWrapper: () => _ = null,
     getSizeState: () => Boolean = null,
     inheritableStatics: js.Any = null,
@@ -83,7 +83,7 @@ object IBoxDock {
     self: IClass = null,
     setBodyElement: /* bodyElement */ js.UndefOr[js.Any] => Unit = null,
     setContainer: /* container */ js.UndefOr[js.Any] => Unit = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setElement: /* element */ js.UndefOr[js.Any] => Unit = null,
     setInnerWrapper: /* innerWrapper */ js.UndefOr[js.Any] => Unit = null,
     setSizeState: /* sizeState */ js.UndefOr[Boolean] => Unit = null,

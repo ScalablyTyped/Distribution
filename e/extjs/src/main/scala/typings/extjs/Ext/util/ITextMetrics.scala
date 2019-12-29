@@ -18,17 +18,17 @@ trait ITextMetrics extends IBase {
   		* @param text String The text to measure
   		* @returns Number height The height in pixels
   		*/
-  var getHeight: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var getHeight: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Returns the size of the specified text based on the internal element s style and width properties
   		* @param text String The text to measure
   		* @returns Object An object containing the text's size {width: (width), height: (height)}
   		*/
-  var getSize: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getSize: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the measured width of the specified text
   		* @param text String The text to measure
   		* @returns Number width The width in pixels
   		*/
-  var getWidth: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var getWidth: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Sets a fixed width on the internal measurement element
   		* @param width Number The width to set on the element
   		*/
@@ -46,11 +46,11 @@ object ITextMetrics {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getHeight: /* text */ js.UndefOr[java.lang.String] => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getSize: /* text */ js.UndefOr[java.lang.String] => _ = null,
-    getWidth: /* text */ js.UndefOr[java.lang.String] => Double = null,
+    extend: String = null,
+    getHeight: /* text */ js.UndefOr[String] => Double = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getSize: /* text */ js.UndefOr[String] => _ = null,
+    getWidth: /* text */ js.UndefOr[String] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ITextMetrics = null,
     mixins: js.Any = null,

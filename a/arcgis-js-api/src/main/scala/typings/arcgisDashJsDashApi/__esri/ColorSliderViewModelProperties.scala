@@ -1,10 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ColorSliderViewModelProperties extends SliderViewModelProperties {
+trait ColorSliderViewModelProperties extends SmartMappingSliderViewModelProperties {
   /**
     * Only applicable when three thumbs (i.e. handles) are set on the slider [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html#values). This property indicates whether the position of the outside handles are synced with the middle, or primary, handle. When enabled, if the primary handle is moved then the outside handle positions are updated while maintaining a fixed distance from the primary handle.  Only applicable when [primaryHandleEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html#primaryHandleEnabled) is `true`.
     *
@@ -33,16 +38,18 @@ object ColorSliderViewModelProperties {
   @scala.inline
   def apply(
     handlesSyncedToPrimary: js.UndefOr[Boolean] = js.undefined,
-    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
-    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Double = null,
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
+    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double = null,
+    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
     max: Int | Double = null,
     min: Int | Double = null,
     precision: Int | Double = null,
     primaryHandleEnabled: js.UndefOr[Boolean] = js.undefined,
     stops: js.Array[ColorStopProperties] = null,
     thumbsConstrained: js.UndefOr[Boolean] = js.undefined,
-    values: js.Array[Double] = null
+    values: js.Array[Double] = null,
+    zoomOptions: SmartMappingSliderViewModelZoomOptions = null,
+    zoomingEnabled: js.UndefOr[Boolean] = js.undefined
   ): ColorSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(handlesSyncedToPrimary)) __obj.updateDynamic("handlesSyncedToPrimary")(handlesSyncedToPrimary.asInstanceOf[js.Any])
@@ -56,6 +63,8 @@ object ColorSliderViewModelProperties {
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomingEnabled)) __obj.updateDynamic("zoomingEnabled")(zoomingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorSliderViewModelProperties]
   }
 }

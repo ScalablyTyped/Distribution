@@ -1,6 +1,5 @@
 package typings.atIonicReact
 
-import typings.atIonicReact.distTypesComponentsNavigationIonTabBarMod.Props
 import typings.react.reactMod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`

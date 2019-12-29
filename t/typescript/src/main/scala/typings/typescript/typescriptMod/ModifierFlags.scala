@@ -1,25 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.ModifierFlags.Abstract
-import typings.typescript.typescriptMod.ModifierFlags.AccessibilityModifier
-import typings.typescript.typescriptMod.ModifierFlags.All
-import typings.typescript.typescriptMod.ModifierFlags.Ambient
-import typings.typescript.typescriptMod.ModifierFlags.Async
-import typings.typescript.typescriptMod.ModifierFlags.Const
-import typings.typescript.typescriptMod.ModifierFlags.Default
-import typings.typescript.typescriptMod.ModifierFlags.Export
-import typings.typescript.typescriptMod.ModifierFlags.ExportDefault
-import typings.typescript.typescriptMod.ModifierFlags.HasComputedFlags
-import typings.typescript.typescriptMod.ModifierFlags.NonPublicAccessibilityModifier
-import typings.typescript.typescriptMod.ModifierFlags.None
-import typings.typescript.typescriptMod.ModifierFlags.ParameterPropertyModifier
-import typings.typescript.typescriptMod.ModifierFlags.Private
-import typings.typescript.typescriptMod.ModifierFlags.Protected
-import typings.typescript.typescriptMod.ModifierFlags.Public
-import typings.typescript.typescriptMod.ModifierFlags.Readonly
-import typings.typescript.typescriptMod.ModifierFlags.Static
-import typings.typescript.typescriptMod.ModifierFlags.TypeScriptModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

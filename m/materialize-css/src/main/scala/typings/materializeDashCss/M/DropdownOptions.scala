@@ -57,22 +57,22 @@ trait DropdownOptions extends js.Object {
     * Function called when dropdown finishes exiting
     * @default null
     */
-  def onCloseEnd(`this`: Dropdown, el: Element): Unit
+  def onCloseEnd(el: Element): Unit
   /**
     * Function called when dropdown starts exiting
     * @default null
     */
-  def onCloseStart(`this`: Dropdown, el: Element): Unit
+  def onCloseStart(el: Element): Unit
   /**
     * Function called when dropdown finishes entering
     * @default null
     */
-  def onOpenEnd(`this`: Dropdown, el: Element): Unit
+  def onOpenEnd(el: Element): Unit
   /**
     * Function called when dropdown starts entering
     * @default null
     */
-  def onOpenStart(`this`: Dropdown, el: Element): Unit
+  def onOpenStart(el: Element): Unit
 }
 
 object DropdownOptions {
@@ -86,13 +86,13 @@ object DropdownOptions {
     coverTrigger: Boolean,
     hover: Boolean,
     inDuration: Double,
-    onCloseEnd: (Dropdown, Element) => Unit,
-    onCloseStart: (Dropdown, Element) => Unit,
-    onOpenEnd: (Dropdown, Element) => Unit,
-    onOpenStart: (Dropdown, Element) => Unit,
+    onCloseEnd: Element => Unit,
+    onCloseStart: Element => Unit,
+    onOpenEnd: Element => Unit,
+    onOpenStart: Element => Unit,
     outDuration: Double
   ): DropdownOptions = {
-    val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], autoTrigger = autoTrigger.asInstanceOf[js.Any], closeOnClick = closeOnClick.asInstanceOf[js.Any], constrainWidth = constrainWidth.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], coverTrigger = coverTrigger.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), outDuration = outDuration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], autoTrigger = autoTrigger.asInstanceOf[js.Any], closeOnClick = closeOnClick.asInstanceOf[js.Any], constrainWidth = constrainWidth.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], coverTrigger = coverTrigger.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1(onCloseEnd), onCloseStart = js.Any.fromFunction1(onCloseStart), onOpenEnd = js.Any.fromFunction1(onOpenEnd), onOpenStart = js.Any.fromFunction1(onOpenStart), outDuration = outDuration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropdownOptions]
   }

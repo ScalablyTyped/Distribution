@@ -12,7 +12,8 @@ class Windows protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   var SyncScrollingSideBySide: Boolean = js.native
-  var `Word.Windows_typekey`: Windows = js.native
+  @JSName("Word.Windows_typekey")
+  var WordDotWindows_typekey: Windows = js.native
   def Add(): Window = js.native
   def Add(Window: js.Any): Window = js.native
   def Arrange(): Unit = js.native

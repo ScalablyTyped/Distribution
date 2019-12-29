@@ -1,7 +1,6 @@
 package typings.atMaterialIconDashToggle
 
 import typings.atMaterialIconDashToggle.adapterMod.MDCIconToggleAdapter
-import typings.atMaterialIconDashToggle.atMaterialIconDashToggleMod.MDCIconToggle
 import typings.atMaterialIconDashToggle.foundationMod.default
 import typings.atMaterialRipple.atMaterialRippleMod.MDCRipple
 import typings.std.Element

@@ -1,8 +1,8 @@
 package typings.cometd.cometdMod
 
 import typings.cometd.Anon_Hosts
-import typings.cometd.cometdNumbers.`false`
-import typings.cometd.cometdNumbers.`true`
+import typings.cometd.cometdBooleans.`false`
+import typings.cometd.cometdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

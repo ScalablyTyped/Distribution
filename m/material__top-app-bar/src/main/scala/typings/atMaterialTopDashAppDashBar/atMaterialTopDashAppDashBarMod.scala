@@ -2,7 +2,6 @@ package typings.atMaterialTopDashAppDashBar
 
 import typings.atMaterialRipple.atMaterialRippleMod.MDCRipple
 import typings.atMaterialTopDashAppDashBar.adapterMod.MDCTopAppBarAdapter
-import typings.atMaterialTopDashAppDashBar.atMaterialTopDashAppDashBarMod.MDCTopAppBar
 import typings.atMaterialTopDashAppDashBar.foundationMod.default
 import typings.std.Element
 import scala.scalajs.js

@@ -22,7 +22,6 @@ import typings.atStorybookAddonDashKnobs.distComponentsTypesRadioMod.RadiosTypeK
 import typings.atStorybookAddonDashKnobs.distComponentsTypesSelectMod.SelectTypeKnob
 import typings.atStorybookAddonDashKnobs.distComponentsTypesSelectMod.SelectTypeKnobValue
 import typings.atStorybookAddonDashKnobs.distComponentsTypesTextMod.TextTypeKnob
-import typings.atStorybookAddonDashKnobs.distTypeDashDefsMod.KnobPlus
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`

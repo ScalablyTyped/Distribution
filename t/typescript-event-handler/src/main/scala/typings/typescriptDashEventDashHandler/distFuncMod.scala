@@ -1,7 +1,5 @@
 package typings.typescriptDashEventDashHandler
 
-import typings.typescriptDashEventDashHandler.distFuncMod.AsyncFunc
-import typings.typescriptDashEventDashHandler.distFuncMod.Func
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

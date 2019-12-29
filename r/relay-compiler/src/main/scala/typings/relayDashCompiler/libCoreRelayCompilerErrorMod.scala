@@ -3,7 +3,6 @@ package typings.relayDashCompiler
 import typings.graphql.graphqlMod.GraphQLError
 import typings.graphql.languageAstMod.ASTNode
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Location
-import typings.relayDashCompiler.libCoreRelayCompilerErrorMod.UserError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

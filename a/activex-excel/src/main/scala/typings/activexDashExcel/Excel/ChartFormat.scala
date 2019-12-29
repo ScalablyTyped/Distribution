@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 class ChartFormat protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ChartFormat_typekey`: ChartFormat = js.native
+  @JSName("Excel.ChartFormat_typekey")
+  var ExcelDotChartFormat_typekey: ChartFormat = js.native
   val Fill: FillFormat = js.native
   val Glow: GlowFormat = js.native
   val Line: LineFormat = js.native

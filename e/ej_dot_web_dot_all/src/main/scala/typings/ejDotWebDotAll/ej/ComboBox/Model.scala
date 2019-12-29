@@ -134,7 +134,7 @@ trait Model extends js.Object {
   /** Specifies the sortOrder to sort the data source. The available type of sort orders are
     * @Default {ej.SortOrder.None}
     */
-  var sortOrder: js.UndefOr[typings.ejDotWebDotAll.ej.ComboBox.SortOrder | String] = js.undefined
+  var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   /** Gets or sets the display text of the selected item in the component.
     * @Default {null}
     */
@@ -186,7 +186,7 @@ object Model {
     readonly: js.UndefOr[Boolean] = js.undefined,
     select: /* e */ SelectEventArgs => Unit = null,
     showClearButton: js.UndefOr[Boolean] = js.undefined,
-    sortOrder: typings.ejDotWebDotAll.ej.ComboBox.SortOrder | String = null,
+    sortOrder: SortOrder | String = null,
     text: String = null,
     value: Double | String = null,
     width: Double | String = null

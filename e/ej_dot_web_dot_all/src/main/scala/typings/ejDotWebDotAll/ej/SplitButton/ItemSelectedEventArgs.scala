@@ -19,7 +19,7 @@ trait ItemSelectedEventArgs extends js.Object {
   var menuText: js.UndefOr[String] = js.undefined
   /** returns the split button model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.SplitButton.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the selected item
     */
   var selectedItem: js.UndefOr[js.Any] = js.undefined
@@ -35,7 +35,7 @@ object ItemSelectedEventArgs {
     element: js.Any = null,
     menuId: String = null,
     menuText: String = null,
-    model: typings.ejDotWebDotAll.ej.SplitButton.Model = null,
+    model: Model = null,
     selectedItem: js.Any = null,
     `type`: String = null
   ): ItemSelectedEventArgs = {

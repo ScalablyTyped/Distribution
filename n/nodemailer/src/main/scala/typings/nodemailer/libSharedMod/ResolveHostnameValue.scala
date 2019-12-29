@@ -1,7 +1,7 @@
 package typings.nodemailer.libSharedMod
 
-import typings.nodemailer.nodemailerNumbers.`false`
-import typings.nodemailer.nodemailerNumbers.`true`
+import typings.nodemailer.nodemailerBooleans.`false`
+import typings.nodemailer.nodemailerBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

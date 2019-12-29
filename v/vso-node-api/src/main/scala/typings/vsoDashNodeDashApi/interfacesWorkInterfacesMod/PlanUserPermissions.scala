@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanUserPermissions.AllPermissions
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanUserPermissions.Delete
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanUserPermissions.Edit
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanUserPermissions.Manage
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanUserPermissions.None
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanUserPermissions.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

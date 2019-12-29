@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassDateTimePicker
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), DateTimePicker]
+     with Instantiable2[
       (/* element */ Element) | (/* element */ JQuery), 
       /* options */ Model, 
       DateTimePicker
-    ]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), DateTimePicker] {
+    ] {
   var Locale: js.Any = js.native
   var fn: DateTimePicker = js.native
 }

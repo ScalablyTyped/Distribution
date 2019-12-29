@@ -1,6 +1,5 @@
 package typings.atSemanticDashUiDashReactEventDashStack
 
-import typings.atSemanticDashUiDashReactEventDashStack.libTypesLibEventPoolMod.EventPool
 import typings.atSemanticDashUiDashReactEventDashStack.libTypesTypesMod.CallableEventListener
 import typings.atSemanticDashUiDashReactEventDashStack.libTypesTypesMod.EventListeners
 import typings.std.Event

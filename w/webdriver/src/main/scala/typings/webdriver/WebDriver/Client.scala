@@ -784,18 +784,18 @@ trait Client extends js.Object {
     */
   def manageSeleniumHubLifecycle(action: String): Unit = js.native
   /**
-    * [jsonwp]
-    * Maximize the current focused window if not already maximized.
-    * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlemaximize
-    */
-  def maximizeWindow(): Unit = js.native
-  /**
     * [webdriver]
     * The Maximize Window command invokes the window manager-specific "maximize" operation, if any, on the window containing the current top-level browsing context. This typically increases the window to the maximum available size without going full-screen.
     * https://w3c.github.io/webdriver/#dfn-maximize-window
     */
+  def maximizeWindow(): RectReturn = js.native
+  /**
+    * [jsonwp]
+    * Maximize the current focused window if not already maximized.
+    * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlemaximize
+    */
   @JSName("maximizeWindow")
-  def maximizeWindow_RectReturn(): RectReturn = js.native
+  def maximizeWindow_Unit(): Unit = js.native
   /**
     * [webdriver]
     * The Minimize Window command invokes the window manager-specific "minimize" operation, if any, on the window containing the current top-level browsing context. This typically hides the window in the system tray.

@@ -1,9 +1,6 @@
 package typings.adhan.adhanMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.adhan.adhanMod.HighLatitudeRule.MiddleOfTheNight
-import typings.adhan.adhanMod.HighLatitudeRule.SeventhOfTheNight
-import typings.adhan.adhanMod.HighLatitudeRule.TwilightAngle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,7 +4,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import typings.vanillaDashSwipe.libTypesMod.ConstructorProps
 import typings.vanillaDashSwipe.libTypesMod.State
-import typings.vanillaDashSwipe.vanillaDashSwipeMod.VanillaSwipe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

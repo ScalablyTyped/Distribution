@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Gpio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioOpenStatus.pinOpened
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioOpenStatus.pinUnavailable
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioOpenStatus.sharingViolation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

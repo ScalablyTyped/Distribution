@@ -3,8 +3,6 @@ package typings.websocketDashStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.streamMod.Duplex
 import typings.std.Error
-import typings.websocketDashStream.websocketDashStreamMod.Server
-import typings.websocketDashStream.websocketDashStreamMod.WebSocketDuplex
 import typings.websocketDashStream.websocketDashStreamStrings.connection
 import typings.websocketDashStream.websocketDashStreamStrings.error
 import typings.websocketDashStream.websocketDashStreamStrings.headers

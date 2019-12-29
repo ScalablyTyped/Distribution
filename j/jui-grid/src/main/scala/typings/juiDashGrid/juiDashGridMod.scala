@@ -1,8 +1,6 @@
 package typings.juiDashGrid
 
 import typings.juiDashCore.juiDashCoreMod.UIEvent
-import typings.juiDashGrid.juiDashGridMod.GridColumn
-import typings.juiDashGrid.juiDashGridMod.GridRow
 import typings.juiDashGrid.juiDashGridStrings.asc
 import typings.juiDashGrid.juiDashGridStrings.avg
 import typings.juiDashGrid.juiDashGridStrings.desc

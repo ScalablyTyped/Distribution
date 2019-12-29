@@ -1,6 +1,5 @@
 package typings.tempy
 
-import typings.tempy.tempyMod.Options
 import typings.typeDashFest.typeDashFestMod.MergeExclusive
 import scala.scalajs.js
 import scala.scalajs.js.`|`

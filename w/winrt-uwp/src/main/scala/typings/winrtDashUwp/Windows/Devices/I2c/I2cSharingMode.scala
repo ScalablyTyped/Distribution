@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.I2c
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.I2c.I2cSharingMode.exclusive
-import typings.winrtDashUwp.Windows.Devices.I2c.I2cSharingMode.shared
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

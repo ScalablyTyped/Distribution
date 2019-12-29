@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.printing3DDouble
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.printing3DUInt
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32A32Float
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32A32UInt
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32Float
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32UInt
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

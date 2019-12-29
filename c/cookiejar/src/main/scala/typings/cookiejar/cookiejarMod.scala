@@ -1,8 +1,6 @@
 package typings.cookiejar
 
-import typings.cookiejar.cookiejarMod.Cookie
-import typings.cookiejar.cookiejarMod.CookieAccessInfo
-import typings.cookiejar.cookiejarNumbers.`false`
+import typings.cookiejar.cookiejarBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

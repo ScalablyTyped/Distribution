@@ -1,6 +1,6 @@
 package typings.gapiDotPlus.gapi.client.plus.people
 
-import typings.gapiDotPlus.gapiDotPlusStrings.`plus#peopleFeed`
+import typings.gapiDotPlus.gapiDotPlusStrings.plusNumbersignpeopleFeed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait PeopleFeed extends js.Object {
   var etag: String
   var items: js.Array[Person]
-  var kind: `plus#peopleFeed`
+  var kind: plusNumbersignpeopleFeed
   var nextPageToken: String
   var selfLink: String
   var title: String
@@ -21,7 +21,7 @@ object PeopleFeed {
   def apply(
     etag: String,
     items: js.Array[Person],
-    kind: `plus#peopleFeed`,
+    kind: plusNumbersignpeopleFeed,
     nextPageToken: String,
     selfLink: String,
     title: String,

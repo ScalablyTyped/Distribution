@@ -2,6 +2,7 @@ package typings.chromeDashApps.chrome.app.runtime
 
 import org.scalablytyped.runtime.TopLevel
 import typings.chromeDashApps.AppView.EmbedRequest
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.app.runtime.onEmbedRequested")
 @js.native
 object onEmbedRequested
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* request */ EmbedRequest, Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* request */ EmbedRequest, Unit]]]
 

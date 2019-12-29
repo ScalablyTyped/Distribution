@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.amcharts.amChartMod.AmChart
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

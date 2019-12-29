@@ -1,6 +1,6 @@
 package typings.supercluster.superclusterMod
 
-import typings.supercluster.superclusterNumbers.`true`
+import typings.supercluster.superclusterBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.AppInstanceErrorType.app
-import typings.sharepoint.SP.AppInstanceErrorType.configuration
-import typings.sharepoint.SP.AppInstanceErrorType.transient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

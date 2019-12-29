@@ -1,6 +1,5 @@
 package typings.intlDashLocalesDashSupported
 
-import typings.intlDashLocalesDashSupported.intlDashLocalesDashSupportedMod.IntlConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -83,7 +83,8 @@ object distSrcCoreSyncPointMod extends js.Object {
   /* static members */
   @js.native
   object SyncPoint extends js.Object {
-    var __referenceConstructor: ReferenceConstructor = js.native
+    def __referenceConstructor(): ReferenceConstructor = js.native
+    def __referenceConstructor(`val`: ReferenceConstructor): js.Any = js.native
   }
   
 }

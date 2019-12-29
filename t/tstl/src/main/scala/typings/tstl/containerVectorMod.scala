@@ -5,7 +5,6 @@ import typings.tstl.baseContainerArrayContainerMod.ArrayContainer
 import typings.tstl.baseContainerVectorContainerMod.VectorContainer
 import typings.tstl.baseIteratorArrayIteratorMod.ArrayIterator
 import typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator
-import typings.tstl.containerVectorMod.Vector
 import typings.tstl.containerVectorMod.Vector.Iterator
 import typings.tstl.containerVectorMod.Vector.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator

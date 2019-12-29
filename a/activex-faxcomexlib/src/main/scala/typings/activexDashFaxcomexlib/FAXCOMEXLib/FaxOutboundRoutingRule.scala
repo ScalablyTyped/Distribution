@@ -14,7 +14,8 @@ class FaxOutboundRoutingRule protected () extends js.Object {
   val CountryCode: Double = js.native
   /** Destination device */
   var DeviceId: Double = js.native
-  var `FAXCOMEXLib.FaxOutboundRoutingRule_typekey`: FaxOutboundRoutingRule = js.native
+  @JSName("FAXCOMEXLib.FaxOutboundRoutingRule_typekey")
+  var FAXCOMEXLibDotFaxOutboundRoutingRule_typekey: FaxOutboundRoutingRule = js.native
   /** Group name */
   var GroupName: String = js.native
   /** Status */

@@ -13,7 +13,8 @@ class SmartArtNode protected () extends js.Object {
   val Level: Double = js.native
   @JSName("Nodes")
   val Nodes_Original: SmartArtNodes = js.native
-  var `Office.SmartArtNode_typekey`: SmartArtNode = js.native
+  @JSName("Office.SmartArtNode_typekey")
+  var OfficeDotSmartArtNode_typekey: SmartArtNode = js.native
   var OrgChartLayout: MsoOrgChartLayoutType = js.native
   val Parent: js.Any = js.native
   val ParentNode: SmartArtNode = js.native

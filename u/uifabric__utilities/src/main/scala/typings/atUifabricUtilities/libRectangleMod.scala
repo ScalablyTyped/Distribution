@@ -1,6 +1,5 @@
 package typings.atUifabricUtilities
 
-import typings.atUifabricUtilities.libRectangleMod.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,7 @@ trait summaryStatisticsForAge extends js.Object {
     * @param params.view The view in which features will be rendered.
     *
     */
-  def summaryStatisticsForAge(params: summaryStatisticsForAgeSummaryStatisticsForAgeParams): IPromise[SummaryStatisticsResult]
+  def summaryStatisticsForAge(params: summaryStatisticsForAgeSummaryStatisticsForAgeParams): js.Promise[SummaryStatisticsResult]
 }
 
 @JSGlobal("__esri.summaryStatisticsForAge")

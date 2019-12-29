@@ -1,10 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.BarDesign.Auto
-import typings.openui5.sap.m.BarDesign.Footer
-import typings.openui5.sap.m.BarDesign.Header
-import typings.openui5.sap.m.BarDesign.SubHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

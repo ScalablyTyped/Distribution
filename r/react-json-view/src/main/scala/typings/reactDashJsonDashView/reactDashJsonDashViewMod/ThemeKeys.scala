@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.apathy
-  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`apathy:inverted`
+  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.apathyColoninverted
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.ashes
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.bespin
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.brewer
-  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`bright:inverted`
+  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.brightColoninverted
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.bright
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.chalk
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.codeschool
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.flat
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.google
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.grayscale
-  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`grayscale:inverted`
+  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.grayscaleColoninverted
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.greenscreen
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.harmonic
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.hopscotch
@@ -34,10 +34,10 @@ import scala.scalajs.js.annotation._
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.railscasts
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`rjv-default`
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.shapeshifter
-  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`shapeshifter:inverted`
+  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.shapeshifterColoninverted
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.solarized
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.summerfruit
-  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`summerfruit:inverted`
+  - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.summerfruitColoninverted
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.threezerotwofour
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.tomorrow
   - typings.reactDashJsonDashView.reactDashJsonDashViewStrings.tube
@@ -49,7 +49,7 @@ object ThemeKeys {
   @scala.inline
   def apathy: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.apathy = this.cast("apathy")
   @scala.inline
-  def `apathy:inverted`: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`apathy:inverted` = this.cast("apathy:inverted")
+  def apathyColoninverted: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.apathyColoninverted = this.cast("apathy:inverted")
   @scala.inline
   def ashes: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.ashes = this.cast("ashes")
   @scala.inline
@@ -59,7 +59,7 @@ object ThemeKeys {
   @scala.inline
   def bright: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.bright = this.cast("bright")
   @scala.inline
-  def `bright:inverted`: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`bright:inverted` = this.cast("bright:inverted")
+  def brightColoninverted: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.brightColoninverted = this.cast("bright:inverted")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
@@ -79,7 +79,7 @@ object ThemeKeys {
   @scala.inline
   def grayscale: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.grayscale = this.cast("grayscale")
   @scala.inline
-  def `grayscale:inverted`: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`grayscale:inverted` = this.cast("grayscale:inverted")
+  def grayscaleColoninverted: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.grayscaleColoninverted = this.cast("grayscale:inverted")
   @scala.inline
   def greenscreen: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.greenscreen = this.cast("greenscreen")
   @scala.inline
@@ -107,13 +107,13 @@ object ThemeKeys {
   @scala.inline
   def shapeshifter: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.shapeshifter = this.cast("shapeshifter")
   @scala.inline
-  def `shapeshifter:inverted`: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`shapeshifter:inverted` = this.cast("shapeshifter:inverted")
+  def shapeshifterColoninverted: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.shapeshifterColoninverted = this.cast("shapeshifter:inverted")
   @scala.inline
   def solarized: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.solarized = this.cast("solarized")
   @scala.inline
   def summerfruit: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.summerfruit = this.cast("summerfruit")
   @scala.inline
-  def `summerfruit:inverted`: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.`summerfruit:inverted` = this.cast("summerfruit:inverted")
+  def summerfruitColoninverted: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.summerfruitColoninverted = this.cast("summerfruit:inverted")
   @scala.inline
   def threezerotwofour: typings.reactDashJsonDashView.reactDashJsonDashViewStrings.threezerotwofour = this.cast("threezerotwofour")
   @scala.inline

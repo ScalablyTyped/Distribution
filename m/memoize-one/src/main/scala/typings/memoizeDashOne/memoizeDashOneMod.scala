@@ -1,6 +1,5 @@
 package typings.memoizeDashOne
 
-import typings.memoizeDashOne.memoizeDashOneMod.EqualityFn
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

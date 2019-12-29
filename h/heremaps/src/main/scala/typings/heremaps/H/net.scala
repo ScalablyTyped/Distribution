@@ -1,10 +1,6 @@
 package typings.heremaps.H
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.net.Request.State
-import typings.heremaps.H.net.Request.State.DONE
-import typings.heremaps.H.net.Request.State.OPENED
-import typings.heremaps.H.net.Request.State.UNSENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

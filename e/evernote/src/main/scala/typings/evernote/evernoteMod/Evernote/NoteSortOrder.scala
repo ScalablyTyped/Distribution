@@ -1,11 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.NoteSortOrder.CREATED
-import typings.evernote.evernoteMod.Evernote.NoteSortOrder.RELEVANCE
-import typings.evernote.evernoteMod.Evernote.NoteSortOrder.TITLE
-import typings.evernote.evernoteMod.Evernote.NoteSortOrder.UPDATED
-import typings.evernote.evernoteMod.Evernote.NoteSortOrder.UPDATE_SEQUENCE_NUMBER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

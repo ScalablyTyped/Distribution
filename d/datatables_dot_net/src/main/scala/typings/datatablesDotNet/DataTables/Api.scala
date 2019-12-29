@@ -133,18 +133,6 @@ trait Api
     */
   def data(): Api = js.native
   /**
-    * Get the ordering applied to the table.
-    */
-  /**
-    * Order Methods / object
-    */
-  def order(): js.Array[js.Array[String | Double]] = js.native
-  def order(order: js.Array[(js.Array[String | Double]) | Double | String]): Api = js.native
-  /**
-    * Order Methods / object
-    */
-  def order(order: js.Array[String | Double], args: js.Any*): Api = js.native
-  /**
     * Set the ordering applied to the table.
     *
     * @param order Order Model
@@ -152,8 +140,20 @@ trait Api
   /**
     * Order Methods / object
     */
+  def order(): Api = js.native
+  def order(order: js.Array[(js.Array[String | Double]) | Double | String]): Api = js.native
+  /**
+    * Order Methods / object
+    */
+  def order(order: js.Array[String | Double], args: js.Any*): Api = js.native
+  /**
+    * Get the ordering applied to the table.
+    */
+  /**
+    * Order Methods / object
+    */
   @JSName("order")
-  def order_Api(): Api = js.native
+  def order_Array(): js.Array[js.Array[String | Double]] = js.native
   /**
     * Select a row found by a row selector
     *

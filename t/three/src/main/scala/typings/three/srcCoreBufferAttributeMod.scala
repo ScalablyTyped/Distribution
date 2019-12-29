@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.ArrayLike
 import typings.std.Iterable
-import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

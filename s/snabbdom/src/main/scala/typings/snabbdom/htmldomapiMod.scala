@@ -1,6 +1,5 @@
 package typings.snabbdom
 
-import typings.snabbdom.htmldomapiMod.DOMAPI
 import typings.snabbdom.modulesAttributesMod._Global_.Element
 import typings.std.Comment
 import typings.std.HTMLElement

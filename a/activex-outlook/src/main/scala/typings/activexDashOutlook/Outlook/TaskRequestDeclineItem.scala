@@ -36,7 +36,8 @@ class TaskRequestDeclineItem protected () extends js.Object {
   var MessageClass: String = js.native
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
-  var `Outlook.TaskRequestDeclineItem_typekey`: TaskRequestDeclineItem = js.native
+  @JSName("Outlook.TaskRequestDeclineItem_typekey")
+  var OutlookDotTaskRequestDeclineItem_typekey: TaskRequestDeclineItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

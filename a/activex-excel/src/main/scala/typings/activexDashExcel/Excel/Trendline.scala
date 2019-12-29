@@ -15,7 +15,8 @@ class Trendline protected () extends js.Object {
   val DataLabel: typings.activexDashExcel.Excel.DataLabel = js.native
   var DisplayEquation: Boolean = js.native
   var DisplayRSquared: Boolean = js.native
-  var `Excel.Trendline_typekey`: Trendline = js.native
+  @JSName("Excel.Trendline_typekey")
+  var ExcelDotTrendline_typekey: Trendline = js.native
   val Format: ChartFormat = js.native
   var Forward: Double = js.native
   var Forward2: Double = js.native

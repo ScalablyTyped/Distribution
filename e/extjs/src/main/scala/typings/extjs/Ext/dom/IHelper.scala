@@ -18,7 +18,7 @@ trait IHelper extends IAbstractHelper {
   		* @param spec Object The DOM object spec (and children)
   		* @returns String
   		*/
-  var createHtml: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var createHtml: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Creates a new Ext Template from the DOM object spec
   		* @param o Object The DOM object spec (and children)
   		* @returns Ext.Template The new template
@@ -40,18 +40,18 @@ object IHelper {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     createDom: /* o */ js.UndefOr[js.Any] => HTMLElement = null,
-    createHtml: /* spec */ js.UndefOr[js.Any] => java.lang.String = null,
+    createHtml: /* spec */ js.UndefOr[js.Any] => String = null,
     createTemplate: /* o */ js.UndefOr[js.Any] => ITemplate = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     generateStyles: (/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array]) => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IHelper = null,
     insertAfter: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
     insertBefore: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
     insertFirst: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* el */ js.UndefOr[js.Any], /* html */ js.UndefOr[java.lang.String]) => HTMLElement = null,
-    markup: /* spec */ js.UndefOr[js.Any] => java.lang.String = null,
+    insertHtml: (/* where */ js.UndefOr[String], /* el */ js.UndefOr[js.Any], /* html */ js.UndefOr[String]) => HTMLElement = null,
+    markup: /* spec */ js.UndefOr[js.Any] => String = null,
     mixins: js.Any = null,
     overwrite: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
     requires: Array = null,

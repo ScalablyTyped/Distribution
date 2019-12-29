@@ -1,10 +1,6 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Center
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Justify
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Left
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.jsforce
 
-import typings.jsforce.cacheMod.CacheEntry
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js

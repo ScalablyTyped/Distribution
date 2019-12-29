@@ -37,7 +37,8 @@ class ChartGroup protected () extends js.Object {
   var Type: Double = js.native
   val UpBars: typings.activexDashWord.Word.UpBars = js.native
   var VaryByCategories: Boolean = js.native
-  var `Word.ChartGroup_typekey`: ChartGroup = js.native
+  @JSName("Word.ChartGroup_typekey")
+  var WordDotChartGroup_typekey: ChartGroup = js.native
   def SeriesCollection(): js.Any = js.native
   def SeriesCollection(Index: js.Any): js.Any = js.native
 }

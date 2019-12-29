@@ -1,6 +1,5 @@
 package typings.atAngularHttp
 
-import typings.atAngularHttp.srcBaseUnderscoreRequestUnderscoreOptionsMod.RequestOptions
 import typings.atAngularHttp.srcEnumsMod.RequestMethod
 import typings.atAngularHttp.srcEnumsMod.ResponseContentType
 import typings.atAngularHttp.srcHeadersMod.Headers

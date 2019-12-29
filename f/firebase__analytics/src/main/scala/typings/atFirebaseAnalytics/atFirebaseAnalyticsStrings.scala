@@ -22,7 +22,7 @@ object atFirebaseAnalyticsStrings {
   sealed trait firebase_id extends js.Object
   
   @js.native
-  sealed trait `https://wwwDOTgoogletagmanagerDOTcom/gtag/js` extends js.Object
+  sealed trait httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs extends js.Object
   
   @js.native
   sealed trait `interop-component-reg-failed` extends AnalyticsError
@@ -50,7 +50,7 @@ object atFirebaseAnalyticsStrings {
   @scala.inline
   def firebase_id: firebase_id = "firebase_id".asInstanceOf[firebase_id]
   @scala.inline
-  def `https://wwwDOTgoogletagmanagerDOTcom/gtag/js`: `https://wwwDOTgoogletagmanagerDOTcom/gtag/js` = "https://www.googletagmanager.com/gtag/js".asInstanceOf[`https://wwwDOTgoogletagmanagerDOTcom/gtag/js`]
+  def httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs: httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs = "https://www.googletagmanager.com/gtag/js".asInstanceOf[httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs]
   @scala.inline
   def `interop-component-reg-failed`: `interop-component-reg-failed` = "interop-component-reg-failed".asInstanceOf[`interop-component-reg-failed`]
   @scala.inline

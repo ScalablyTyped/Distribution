@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.biking
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.fidgeting
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.idle
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.inVehicle
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.running
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.stationary
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.unknown
-import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.walking
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.mobx
 
-import typings.mobx.libApiInterceptDashReadMod.ReadInterceptor
 import typings.mobx.libInternalMod.ObservableMap
 import typings.mobx.libInternalMod.ObservableSet
 import typings.mobx.libTypesObservablearrayMod.IObservableArray

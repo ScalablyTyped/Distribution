@@ -7,8 +7,8 @@ import typings.atPulumiPulumi.atPulumiPulumiStrings.`04da6b54-80e4-46f7-96ec-b56
 import typings.atPulumiPulumi.atPulumiPulumiStrings.`0def7320c3a5731c473e5ecbe6d01bc7`
 import typings.atPulumiPulumi.atPulumiPulumiStrings.`1b47061264138c4ac30d75fd1eb44270`
 import typings.atPulumiPulumi.atPulumiPulumiStrings.`4dabf18193072939515e22adb298388d`
-import typings.atPulumiPulumi.atPulumiPulumiStrings.`pulumi:pulumi:Stack`
 import typings.atPulumiPulumi.atPulumiPulumiStrings.c44067f5952c0a294b673a41bacd8c17
+import typings.atPulumiPulumi.atPulumiPulumiStrings.pulumiColonpulumiColonStack
 import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Inputs
@@ -43,7 +43,7 @@ object runtimeMod extends js.Object {
   }
   
   var excessiveDebugOutput: Boolean = js.native
-  val rootPulumiStackTypeName: `pulumi:pulumi:Stack` = js.native
+  val rootPulumiStackTypeName: pulumiColonpulumiColonStack = js.native
   val specialArchiveSig: `0def7320c3a5731c473e5ecbe6d01bc7` = js.native
   val specialAssetSig: c44067f5952c0a294b673a41bacd8c17 = js.native
   val specialSecretSig: `1b47061264138c4ac30d75fd1eb44270` = js.native
@@ -109,7 +109,7 @@ object runtimeMod extends js.Object {
   def serializeProperty(ctx: String, prop: Input[_], dependentResources: Set[Resource]): js.Promise[_] = js.native
   def serializeResourceProperties(label: String, props: Inputs): js.Promise[js.Tuple2[Record[String, _], Map[String, Set[Resource]]]] = js.native
   def setConfig(k: String, v: String): Unit = js.native
-  def setRootResource(res: ComponentResource): js.Promise[Unit] = js.native
+  def setRootResource(res: ComponentResource[_]): js.Promise[Unit] = js.native
   def streamInvoke(tok: String, props: Inputs): js.Promise[typings.atPulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native
   def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[typings.atPulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native
   def transferProperties(onto: Resource, label: String, props: Inputs): OutputResolvers = js.native

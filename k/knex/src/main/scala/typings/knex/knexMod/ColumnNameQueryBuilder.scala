@@ -1,6 +1,7 @@
 package typings.knex.knexMod
 
-import typings.knex.knexNumbers.`false`
+import typings.knex.knexBooleans.`false`
+import typings.knex.knexStrings.Asterisk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait ColumnNameQueryBuilder[TRecord, TResult] extends js.Object {
   // When all columns are known to be keys of original record,
   // we can extend our selection by these columns
-  def apply(columnName: typings.knex.knexStrings.`*`): QueryBuilder[
+  def apply(columnName: Asterisk): QueryBuilder[
     TRecord, 
     js.Array[
       DeferredKeySelection[TRecord, String, `false`, js.Object, `false`, js.Object, scala.Nothing]

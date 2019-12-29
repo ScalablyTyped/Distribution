@@ -17,6 +17,8 @@ trait SMTPError extends ErrnoException {
 object SMTPError {
   @scala.inline
   def apply(
+    message: String,
+    name: String,
     code: String = null,
     command: String = null,
     errno: Int | Double = null,
@@ -26,7 +28,7 @@ object SMTPError {
     stack: String = null,
     syscall: String = null
   ): SMTPError = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (errno != null) __obj.updateDynamic("errno")(errno.asInstanceOf[js.Any])

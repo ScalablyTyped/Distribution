@@ -12,7 +12,7 @@ trait ManualRowResize extends Base {
   var currentTH: HTMLElement | Unit
   var currentWidth: Double | Unit
   var dblclick: Double
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var guide: HTMLElement
   var handle: HTMLElement
   var manualRowHeights: js.Array[_]
@@ -52,7 +52,7 @@ object ManualRowResize {
     disablePlugin: () => Unit,
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     getTHFromTargetElement: HTMLElement => HTMLElement,
     guide: HTMLElement,
     handle: HTMLElement,

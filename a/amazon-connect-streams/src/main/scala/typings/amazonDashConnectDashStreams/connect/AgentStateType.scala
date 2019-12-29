@@ -1,10 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.AgentStateType.INIT
-import typings.amazonDashConnectDashStreams.connect.AgentStateType.NOT_ROUTABLE
-import typings.amazonDashConnectDashStreams.connect.AgentStateType.OFFLINE
-import typings.amazonDashConnectDashStreams.connect.AgentStateType.ROUTABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

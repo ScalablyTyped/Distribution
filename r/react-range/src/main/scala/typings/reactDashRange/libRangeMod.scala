@@ -3,7 +3,6 @@ package typings.reactDashRange
 import typings.react.reactMod.Component
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.RefObject
-import typings.reactDashRange.libRangeMod.Range
 import typings.reactDashRange.libTypesMod.IProps
 import typings.std.Element
 import typings.std.Event

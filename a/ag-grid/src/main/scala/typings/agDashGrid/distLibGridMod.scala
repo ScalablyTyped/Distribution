@@ -2,7 +2,6 @@ package typings.agDashGrid
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.agDashGrid.distLibEntitiesGridOptionsMod.GridOptions
-import typings.agDashGrid.distLibGridMod.GridParams
 import typings.agDashGrid.distLibInterfacesIFrameworkFactoryMod.IFrameworkFactory
 import typings.std.HTMLElement
 import scala.scalajs.js

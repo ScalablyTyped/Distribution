@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.DataAccessPage")
 @js.native
 class DataAccessPage protected () extends js.Object {
-  var `Access.DataAccessPage_typekey`: DataAccessPage = js.native
+  @JSName("Access.DataAccessPage_typekey")
+  var AccessDotDataAccessPage_typekey: DataAccessPage = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var ConnectionString: String = js.native
   val CurrentSelection: js.Any = js.native

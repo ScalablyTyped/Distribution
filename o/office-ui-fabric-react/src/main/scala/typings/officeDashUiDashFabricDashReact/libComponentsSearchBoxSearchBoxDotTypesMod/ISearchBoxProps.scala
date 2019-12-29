@@ -83,7 +83,6 @@ import scala.scalajs.js.annotation._
 trait ISearchBoxProps extends InputHTMLAttributes[HTMLInputElement] {
   /**
     * The aria label of the SearchBox for the benefit of screen readers.
-    * @defaultvalue placeholder
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**

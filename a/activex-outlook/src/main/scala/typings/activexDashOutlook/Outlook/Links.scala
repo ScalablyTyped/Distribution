@@ -10,7 +10,8 @@ class Links protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.Links_typekey`: Links = js.native
+  @JSName("Outlook.Links_typekey")
+  var OutlookDotLinks_typekey: Links = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Item: js.Any): Link = js.native

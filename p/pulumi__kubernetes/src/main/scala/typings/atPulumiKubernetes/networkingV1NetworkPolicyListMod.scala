@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`networkingDOTk8sDOTio/v1`
-import typings.atPulumiKubernetes.networkingV1NetworkPolicyListMod.NetworkPolicyList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.networkingDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiKubernetes.typesOutputMod.networking.v1.NetworkPolicy
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object networkingV1NetworkPolicyListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`networkingDOTk8sDOTio/v1`] = js.native
+    val apiVersion: Output[networkingDotk8sDotioSlashv1] = js.native
     /**
       * Items is a list of schema objects.
       */

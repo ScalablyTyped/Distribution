@@ -2,7 +2,6 @@ package typings.three
 
 import typings.std.RegExp
 import typings.three.srcLoadersLoaderMod.Loader
-import typings.three.srcLoadersLoadingManagerMod.LoadingManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsAnalyticsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsAnalyticsMod.SessionState.End
-import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsAnalyticsMod.SessionState.Start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportItemSelectionMode.selectAll
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportItemSelectionMode.selectNew
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportItemSelectionMode.selectNone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,5 @@
 package typings.atFirebaseStorage
 
-import typings.atFirebaseStorage.distSrcImplementationStringMod.StringData
-import typings.atFirebaseStorage.distSrcImplementationStringMod.StringFormat
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

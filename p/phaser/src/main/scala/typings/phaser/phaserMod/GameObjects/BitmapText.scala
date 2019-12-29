@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,29 +41,14 @@ class BitmapText protected ()
     * @param size The font size of this Bitmap Text.
     * @param align The alignment of the text in a multi-line BitmapText object. Default 0.
     */
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, font: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, font: String, text: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, font: String, text: js.Array[String]) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String]) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String], size: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: integer) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.Array[String],
-    size: Double
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: String,
-    size: Double,
-    align: integer
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: Double,
     y: Double,
     font: String,

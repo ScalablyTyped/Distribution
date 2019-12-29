@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object dvaStrings {
   @js.native
-  sealed trait `@@router/CALL_HISTORY_METHOD` extends js.Object
+  sealed trait `@@routerSlashCALL_HISTORY_METHOD` extends js.Object
   
   @js.native
-  sealed trait `@@router/LOCATION_CHANGE` extends js.Object
+  sealed trait `@@routerSlashLOCATION_CHANGE` extends js.Object
   
   @js.native
   sealed trait matchPath extends js.Object
@@ -34,9 +34,9 @@ object dvaStrings {
   sealed trait watcher extends EffectType
   
   @scala.inline
-  def `@@router/CALL_HISTORY_METHOD`: `@@router/CALL_HISTORY_METHOD` = "@@router/CALL_HISTORY_METHOD".asInstanceOf[`@@router/CALL_HISTORY_METHOD`]
+  def `@@routerSlashCALL_HISTORY_METHOD`: `@@routerSlashCALL_HISTORY_METHOD` = "@@router/CALL_HISTORY_METHOD".asInstanceOf[`@@routerSlashCALL_HISTORY_METHOD`]
   @scala.inline
-  def `@@router/LOCATION_CHANGE`: `@@router/LOCATION_CHANGE` = "@@router/LOCATION_CHANGE".asInstanceOf[`@@router/LOCATION_CHANGE`]
+  def `@@routerSlashLOCATION_CHANGE`: `@@routerSlashLOCATION_CHANGE` = "@@router/LOCATION_CHANGE".asInstanceOf[`@@routerSlashLOCATION_CHANGE`]
   @scala.inline
   def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
   @scala.inline

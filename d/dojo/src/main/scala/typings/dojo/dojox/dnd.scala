@@ -1,6 +1,5 @@
 package typings.dojo.dojox
 
-import typings.dojo.dojox.dnd.Selector
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

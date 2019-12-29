@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TargetChange extends js.Object {
-  var cause: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Status
-  ] = js.undefined
+  var cause: js.UndefOr[Status] = js.undefined
   var readTime: js.UndefOr[String] = js.undefined
   var resumeToken: js.UndefOr[String] = js.undefined
   var targetChangeType: js.UndefOr[TargetChangeTargetChangeType] = js.undefined
@@ -18,7 +16,7 @@ trait TargetChange extends js.Object {
 object TargetChange {
   @scala.inline
   def apply(
-    cause: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Status = null,
+    cause: Status = null,
     readTime: String = null,
     resumeToken: String = null,
     targetChangeType: TargetChangeTargetChangeType = null,

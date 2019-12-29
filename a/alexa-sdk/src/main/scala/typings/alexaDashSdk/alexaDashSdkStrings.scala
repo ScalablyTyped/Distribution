@@ -19,61 +19,61 @@ import scala.scalajs.js.annotation._
 
 object alexaDashSdkStrings {
   @js.native
-  sealed trait AlexaHouseholdListEventDOTItemsCreated extends js.Object
+  sealed trait AlexaHouseholdListEventDotItemsCreated extends js.Object
   
   @js.native
-  sealed trait AlexaHouseholdListEventDOTItemsDeleted extends js.Object
+  sealed trait AlexaHouseholdListEventDotItemsDeleted extends js.Object
   
   @js.native
-  sealed trait AlexaHouseholdListEventDOTItemsUpdated extends js.Object
+  sealed trait AlexaHouseholdListEventDotItemsUpdated extends js.Object
   
   @js.native
-  sealed trait AlexaHouseholdListEventDOTListCreated extends js.Object
+  sealed trait AlexaHouseholdListEventDotListCreated extends js.Object
   
   @js.native
-  sealed trait AlexaHouseholdListEventDOTListDeleted extends js.Object
+  sealed trait AlexaHouseholdListEventDotListDeleted extends js.Object
   
   @js.native
-  sealed trait AlexaHouseholdListEventDOTListUpdated extends js.Object
+  sealed trait AlexaHouseholdListEventDotListUpdated extends js.Object
   
   @js.native
-  sealed trait AlexaSkillEventDOTSkillAccountLinked extends js.Object
+  sealed trait AlexaSkillEventDotSkillAccountLinked extends js.Object
   
   @js.native
-  sealed trait AlexaSkillEventDOTSkillDisabled extends js.Object
+  sealed trait AlexaSkillEventDotSkillDisabled extends js.Object
   
   @js.native
-  sealed trait AlexaSkillEventDOTSkillEnabled extends js.Object
+  sealed trait AlexaSkillEventDotSkillEnabled extends js.Object
   
   @js.native
-  sealed trait AlexaSkillEventDOTSkillPermissionAccepted extends js.Object
+  sealed trait AlexaSkillEventDotSkillPermissionAccepted extends js.Object
   
   @js.native
-  sealed trait AlexaSkillEventDOTSkillPermissionChanged extends js.Object
+  sealed trait AlexaSkillEventDotSkillPermissionChanged extends js.Object
   
   @js.native
   sealed trait AskForPermissionsConsent extends CardType
   
   @js.native
-  sealed trait AudioPlayerDOTClearQueue extends DirectiveTypes
+  sealed trait AudioPlayerDotClearQueue extends DirectiveTypes
   
   @js.native
-  sealed trait AudioPlayerDOTPlay extends DirectiveTypes
+  sealed trait AudioPlayerDotPlay extends DirectiveTypes
   
   @js.native
-  sealed trait AudioPlayerDOTPlaybackFinished extends js.Object
+  sealed trait AudioPlayerDotPlaybackFinished extends js.Object
   
   @js.native
-  sealed trait AudioPlayerDOTPlaybackNearlyFinished extends js.Object
+  sealed trait AudioPlayerDotPlaybackNearlyFinished extends js.Object
   
   @js.native
-  sealed trait AudioPlayerDOTPlaybackStarted extends js.Object
+  sealed trait AudioPlayerDotPlaybackStarted extends js.Object
   
   @js.native
-  sealed trait AudioPlayerDOTPlaybackStopped extends js.Object
+  sealed trait AudioPlayerDotPlaybackStopped extends js.Object
   
   @js.native
-  sealed trait AudioPlayerDOTStop extends DirectiveTypes
+  sealed trait AudioPlayerDotStop extends DirectiveTypes
   
   @js.native
   sealed trait BUFFER_UNDERRUN extends AudioPlayerActivity
@@ -103,7 +103,7 @@ object alexaDashSdkStrings {
   sealed trait DEVICE_COMMUNICATION_ERROR extends SystemErrorType
   
   @js.native
-  sealed trait DisplayDOTRenderTemplate extends DirectiveTypes
+  sealed trait DisplayDotRenderTemplate extends DirectiveTypes
   
   @js.native
   sealed trait FINISHED extends AudioPlayerActivity
@@ -175,16 +175,16 @@ object alexaDashSdkStrings {
   sealed trait PlainText extends TextContentType
   
   @js.native
-  sealed trait PlaybackControllerDOTNextCommandIssued extends js.Object
+  sealed trait PlaybackControllerDotNextCommandIssued extends js.Object
   
   @js.native
-  sealed trait PlaybackControllerDOTPauseCommandIssued extends js.Object
+  sealed trait PlaybackControllerDotPauseCommandIssued extends js.Object
   
   @js.native
-  sealed trait PlaybackControllerDOTPlayCommandIssued extends js.Object
+  sealed trait PlaybackControllerDotPlayCommandIssued extends js.Object
   
   @js.native
-  sealed trait PlaybackControllerDOTPreviousCommandIssued extends js.Object
+  sealed trait PlaybackControllerDotPreviousCommandIssued extends js.Object
   
   @js.native
   sealed trait RichText extends TextContentType
@@ -211,13 +211,13 @@ object alexaDashSdkStrings {
   sealed trait Standard extends CardType
   
   @js.native
-  sealed trait SystemDOTExceptionEncountered extends js.Object
+  sealed trait SystemDotExceptionEncountered extends js.Object
   
   @js.native
   sealed trait VISIBLE extends TemplateBackButtonVisibility
   
   @js.native
-  sealed trait VideoAppDOTLaunch extends DirectiveTypes
+  sealed trait VideoAppDotLaunch extends DirectiveTypes
   
   @js.native
   sealed trait X_LARGE extends ImageSourceSize
@@ -237,43 +237,43 @@ object alexaDashSdkStrings {
   sealed trait completed_ extends ListItemObjectStatus
   
   @scala.inline
-  def AlexaHouseholdListEventDOTItemsCreated: AlexaHouseholdListEventDOTItemsCreated = "AlexaHouseholdListEvent.ItemsCreated".asInstanceOf[AlexaHouseholdListEventDOTItemsCreated]
+  def AlexaHouseholdListEventDotItemsCreated: AlexaHouseholdListEventDotItemsCreated = "AlexaHouseholdListEvent.ItemsCreated".asInstanceOf[AlexaHouseholdListEventDotItemsCreated]
   @scala.inline
-  def AlexaHouseholdListEventDOTItemsDeleted: AlexaHouseholdListEventDOTItemsDeleted = "AlexaHouseholdListEvent.ItemsDeleted".asInstanceOf[AlexaHouseholdListEventDOTItemsDeleted]
+  def AlexaHouseholdListEventDotItemsDeleted: AlexaHouseholdListEventDotItemsDeleted = "AlexaHouseholdListEvent.ItemsDeleted".asInstanceOf[AlexaHouseholdListEventDotItemsDeleted]
   @scala.inline
-  def AlexaHouseholdListEventDOTItemsUpdated: AlexaHouseholdListEventDOTItemsUpdated = "AlexaHouseholdListEvent.ItemsUpdated".asInstanceOf[AlexaHouseholdListEventDOTItemsUpdated]
+  def AlexaHouseholdListEventDotItemsUpdated: AlexaHouseholdListEventDotItemsUpdated = "AlexaHouseholdListEvent.ItemsUpdated".asInstanceOf[AlexaHouseholdListEventDotItemsUpdated]
   @scala.inline
-  def AlexaHouseholdListEventDOTListCreated: AlexaHouseholdListEventDOTListCreated = "AlexaHouseholdListEvent.ListCreated".asInstanceOf[AlexaHouseholdListEventDOTListCreated]
+  def AlexaHouseholdListEventDotListCreated: AlexaHouseholdListEventDotListCreated = "AlexaHouseholdListEvent.ListCreated".asInstanceOf[AlexaHouseholdListEventDotListCreated]
   @scala.inline
-  def AlexaHouseholdListEventDOTListDeleted: AlexaHouseholdListEventDOTListDeleted = "AlexaHouseholdListEvent.ListDeleted".asInstanceOf[AlexaHouseholdListEventDOTListDeleted]
+  def AlexaHouseholdListEventDotListDeleted: AlexaHouseholdListEventDotListDeleted = "AlexaHouseholdListEvent.ListDeleted".asInstanceOf[AlexaHouseholdListEventDotListDeleted]
   @scala.inline
-  def AlexaHouseholdListEventDOTListUpdated: AlexaHouseholdListEventDOTListUpdated = "AlexaHouseholdListEvent.ListUpdated".asInstanceOf[AlexaHouseholdListEventDOTListUpdated]
+  def AlexaHouseholdListEventDotListUpdated: AlexaHouseholdListEventDotListUpdated = "AlexaHouseholdListEvent.ListUpdated".asInstanceOf[AlexaHouseholdListEventDotListUpdated]
   @scala.inline
-  def AlexaSkillEventDOTSkillAccountLinked: AlexaSkillEventDOTSkillAccountLinked = "AlexaSkillEvent.SkillAccountLinked".asInstanceOf[AlexaSkillEventDOTSkillAccountLinked]
+  def AlexaSkillEventDotSkillAccountLinked: AlexaSkillEventDotSkillAccountLinked = "AlexaSkillEvent.SkillAccountLinked".asInstanceOf[AlexaSkillEventDotSkillAccountLinked]
   @scala.inline
-  def AlexaSkillEventDOTSkillDisabled: AlexaSkillEventDOTSkillDisabled = "AlexaSkillEvent.SkillDisabled".asInstanceOf[AlexaSkillEventDOTSkillDisabled]
+  def AlexaSkillEventDotSkillDisabled: AlexaSkillEventDotSkillDisabled = "AlexaSkillEvent.SkillDisabled".asInstanceOf[AlexaSkillEventDotSkillDisabled]
   @scala.inline
-  def AlexaSkillEventDOTSkillEnabled: AlexaSkillEventDOTSkillEnabled = "AlexaSkillEvent.SkillEnabled".asInstanceOf[AlexaSkillEventDOTSkillEnabled]
+  def AlexaSkillEventDotSkillEnabled: AlexaSkillEventDotSkillEnabled = "AlexaSkillEvent.SkillEnabled".asInstanceOf[AlexaSkillEventDotSkillEnabled]
   @scala.inline
-  def AlexaSkillEventDOTSkillPermissionAccepted: AlexaSkillEventDOTSkillPermissionAccepted = "AlexaSkillEvent.SkillPermissionAccepted".asInstanceOf[AlexaSkillEventDOTSkillPermissionAccepted]
+  def AlexaSkillEventDotSkillPermissionAccepted: AlexaSkillEventDotSkillPermissionAccepted = "AlexaSkillEvent.SkillPermissionAccepted".asInstanceOf[AlexaSkillEventDotSkillPermissionAccepted]
   @scala.inline
-  def AlexaSkillEventDOTSkillPermissionChanged: AlexaSkillEventDOTSkillPermissionChanged = "AlexaSkillEvent.SkillPermissionChanged".asInstanceOf[AlexaSkillEventDOTSkillPermissionChanged]
+  def AlexaSkillEventDotSkillPermissionChanged: AlexaSkillEventDotSkillPermissionChanged = "AlexaSkillEvent.SkillPermissionChanged".asInstanceOf[AlexaSkillEventDotSkillPermissionChanged]
   @scala.inline
   def AskForPermissionsConsent: AskForPermissionsConsent = "AskForPermissionsConsent".asInstanceOf[AskForPermissionsConsent]
   @scala.inline
-  def AudioPlayerDOTClearQueue: AudioPlayerDOTClearQueue = "AudioPlayer.ClearQueue".asInstanceOf[AudioPlayerDOTClearQueue]
+  def AudioPlayerDotClearQueue: AudioPlayerDotClearQueue = "AudioPlayer.ClearQueue".asInstanceOf[AudioPlayerDotClearQueue]
   @scala.inline
-  def AudioPlayerDOTPlay: AudioPlayerDOTPlay = "AudioPlayer.Play".asInstanceOf[AudioPlayerDOTPlay]
+  def AudioPlayerDotPlay: AudioPlayerDotPlay = "AudioPlayer.Play".asInstanceOf[AudioPlayerDotPlay]
   @scala.inline
-  def AudioPlayerDOTPlaybackFinished: AudioPlayerDOTPlaybackFinished = "AudioPlayer.PlaybackFinished".asInstanceOf[AudioPlayerDOTPlaybackFinished]
+  def AudioPlayerDotPlaybackFinished: AudioPlayerDotPlaybackFinished = "AudioPlayer.PlaybackFinished".asInstanceOf[AudioPlayerDotPlaybackFinished]
   @scala.inline
-  def AudioPlayerDOTPlaybackNearlyFinished: AudioPlayerDOTPlaybackNearlyFinished = "AudioPlayer.PlaybackNearlyFinished".asInstanceOf[AudioPlayerDOTPlaybackNearlyFinished]
+  def AudioPlayerDotPlaybackNearlyFinished: AudioPlayerDotPlaybackNearlyFinished = "AudioPlayer.PlaybackNearlyFinished".asInstanceOf[AudioPlayerDotPlaybackNearlyFinished]
   @scala.inline
-  def AudioPlayerDOTPlaybackStarted: AudioPlayerDOTPlaybackStarted = "AudioPlayer.PlaybackStarted".asInstanceOf[AudioPlayerDOTPlaybackStarted]
+  def AudioPlayerDotPlaybackStarted: AudioPlayerDotPlaybackStarted = "AudioPlayer.PlaybackStarted".asInstanceOf[AudioPlayerDotPlaybackStarted]
   @scala.inline
-  def AudioPlayerDOTPlaybackStopped: AudioPlayerDOTPlaybackStopped = "AudioPlayer.PlaybackStopped".asInstanceOf[AudioPlayerDOTPlaybackStopped]
+  def AudioPlayerDotPlaybackStopped: AudioPlayerDotPlaybackStopped = "AudioPlayer.PlaybackStopped".asInstanceOf[AudioPlayerDotPlaybackStopped]
   @scala.inline
-  def AudioPlayerDOTStop: AudioPlayerDOTStop = "AudioPlayer.Stop".asInstanceOf[AudioPlayerDOTStop]
+  def AudioPlayerDotStop: AudioPlayerDotStop = "AudioPlayer.Stop".asInstanceOf[AudioPlayerDotStop]
   @scala.inline
   def BUFFER_UNDERRUN: BUFFER_UNDERRUN = "BUFFER_UNDERRUN".asInstanceOf[BUFFER_UNDERRUN]
   @scala.inline
@@ -293,7 +293,7 @@ object alexaDashSdkStrings {
   @scala.inline
   def DEVICE_COMMUNICATION_ERROR: DEVICE_COMMUNICATION_ERROR = "DEVICE_COMMUNICATION_ERROR".asInstanceOf[DEVICE_COMMUNICATION_ERROR]
   @scala.inline
-  def DisplayDOTRenderTemplate: DisplayDOTRenderTemplate = "Display.RenderTemplate".asInstanceOf[DisplayDOTRenderTemplate]
+  def DisplayDotRenderTemplate: DisplayDotRenderTemplate = "Display.RenderTemplate".asInstanceOf[DisplayDotRenderTemplate]
   @scala.inline
   def FINISHED: FINISHED = "FINISHED".asInstanceOf[FINISHED]
   @scala.inline
@@ -341,13 +341,13 @@ object alexaDashSdkStrings {
   @scala.inline
   def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
   @scala.inline
-  def PlaybackControllerDOTNextCommandIssued: PlaybackControllerDOTNextCommandIssued = "PlaybackController.NextCommandIssued".asInstanceOf[PlaybackControllerDOTNextCommandIssued]
+  def PlaybackControllerDotNextCommandIssued: PlaybackControllerDotNextCommandIssued = "PlaybackController.NextCommandIssued".asInstanceOf[PlaybackControllerDotNextCommandIssued]
   @scala.inline
-  def PlaybackControllerDOTPauseCommandIssued: PlaybackControllerDOTPauseCommandIssued = "PlaybackController.PauseCommandIssued".asInstanceOf[PlaybackControllerDOTPauseCommandIssued]
+  def PlaybackControllerDotPauseCommandIssued: PlaybackControllerDotPauseCommandIssued = "PlaybackController.PauseCommandIssued".asInstanceOf[PlaybackControllerDotPauseCommandIssued]
   @scala.inline
-  def PlaybackControllerDOTPlayCommandIssued: PlaybackControllerDOTPlayCommandIssued = "PlaybackController.PlayCommandIssued".asInstanceOf[PlaybackControllerDOTPlayCommandIssued]
+  def PlaybackControllerDotPlayCommandIssued: PlaybackControllerDotPlayCommandIssued = "PlaybackController.PlayCommandIssued".asInstanceOf[PlaybackControllerDotPlayCommandIssued]
   @scala.inline
-  def PlaybackControllerDOTPreviousCommandIssued: PlaybackControllerDOTPreviousCommandIssued = "PlaybackController.PreviousCommandIssued".asInstanceOf[PlaybackControllerDOTPreviousCommandIssued]
+  def PlaybackControllerDotPreviousCommandIssued: PlaybackControllerDotPreviousCommandIssued = "PlaybackController.PreviousCommandIssued".asInstanceOf[PlaybackControllerDotPreviousCommandIssued]
   @scala.inline
   def RichText: RichText = "RichText".asInstanceOf[RichText]
   @scala.inline
@@ -365,11 +365,11 @@ object alexaDashSdkStrings {
   @scala.inline
   def Standard: Standard = "Standard".asInstanceOf[Standard]
   @scala.inline
-  def SystemDOTExceptionEncountered: SystemDOTExceptionEncountered = "System.ExceptionEncountered".asInstanceOf[SystemDOTExceptionEncountered]
+  def SystemDotExceptionEncountered: SystemDotExceptionEncountered = "System.ExceptionEncountered".asInstanceOf[SystemDotExceptionEncountered]
   @scala.inline
   def VISIBLE: VISIBLE = "VISIBLE".asInstanceOf[VISIBLE]
   @scala.inline
-  def VideoAppDOTLaunch: VideoAppDOTLaunch = "VideoApp.Launch".asInstanceOf[VideoAppDOTLaunch]
+  def VideoAppDotLaunch: VideoAppDotLaunch = "VideoApp.Launch".asInstanceOf[VideoAppDotLaunch]
   @scala.inline
   def X_LARGE: X_LARGE = "X_LARGE".asInstanceOf[X_LARGE]
   @scala.inline

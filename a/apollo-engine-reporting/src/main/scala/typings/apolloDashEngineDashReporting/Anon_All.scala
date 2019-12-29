@@ -1,6 +1,6 @@
 package typings.apolloDashEngineDashReporting
 
-import typings.apolloDashEngineDashReporting.apolloDashEngineDashReportingNumbers.`true`
+import typings.apolloDashEngineDashReporting.apolloDashEngineDashReportingBooleans.`true`
 import typings.apolloDashEngineDashReporting.distAgentMod.SendValuesBaseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FAXCOMEXLib.FaxActivity")
 @js.native
 class FaxActivity protected () extends js.Object {
-  var `FAXCOMEXLib.FaxActivity_typekey`: FaxActivity = js.native
+  @JSName("FAXCOMEXLib.FaxActivity_typekey")
+  var FAXCOMEXLibDotFaxActivity_typekey: FaxActivity = js.native
   /** Number of incoming messages */
   val IncomingMessages: Double = js.native
   /** Number of outgoing messages */

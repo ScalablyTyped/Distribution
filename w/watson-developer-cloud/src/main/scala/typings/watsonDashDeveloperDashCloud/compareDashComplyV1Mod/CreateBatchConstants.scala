@@ -1,12 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.ELEMENT_CLASSIFICATION
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.HTML_CONVERSION
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.TABLES
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model.CONTRACTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,10 +55,7 @@ object CreateBatchConstants extends js.Object {
     object CONTRACTS extends TopLevel[CONTRACTS with String]
     
     /* "tables" */ @js.native
-    object TABLES
-      extends TopLevel[
-              typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model.TABLES with String
-            ]
+    object TABLES extends TopLevel[TABLES with String]
     
   }
   

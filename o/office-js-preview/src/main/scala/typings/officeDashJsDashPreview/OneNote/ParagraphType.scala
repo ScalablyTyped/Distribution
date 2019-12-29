@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.OneNote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.OneNote.ParagraphType.image
-import typings.officeDashJsDashPreview.OneNote.ParagraphType.ink
-import typings.officeDashJsDashPreview.OneNote.ParagraphType.other
-import typings.officeDashJsDashPreview.OneNote.ParagraphType.richText
-import typings.officeDashJsDashPreview.OneNote.ParagraphType.table
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

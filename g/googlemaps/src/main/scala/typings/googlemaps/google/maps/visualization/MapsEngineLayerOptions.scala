@@ -1,6 +1,7 @@
 package typings.googlemaps.google.maps.visualization
 
 import typings.googlemaps.google.maps.Map
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait MapsEngineLayerOptions extends js.Object {
   var fitBounds: js.UndefOr[Boolean] = js.undefined
   var layerId: js.UndefOr[String] = js.undefined
   var layerKey: js.UndefOr[String] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var mapId: js.UndefOr[String] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var suppressInfoWindows: js.UndefOr[Boolean] = js.undefined
@@ -26,7 +27,7 @@ object MapsEngineLayerOptions {
     fitBounds: js.UndefOr[Boolean] = js.undefined,
     layerId: String = null,
     layerKey: String = null,
-    map: Map = null,
+    map: Map[Element] = null,
     mapId: String = null,
     opacity: Int | Double = null,
     suppressInfoWindows: js.UndefOr[Boolean] = js.undefined,

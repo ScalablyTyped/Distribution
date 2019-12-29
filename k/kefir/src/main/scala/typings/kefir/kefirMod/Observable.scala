@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
 @JSImport("kefir", "Observable")
 @js.native
 class Observable[T, S] () extends js.Object {
-  var Empty: T = js.native
+  @JSName("")
+  var _empty: T = js.native
   def awaiting[U, V](otherObs: Observable[U, V]): Observable[Boolean, S] = js.native
   def beforeEnd[U](fn: js.Function0[U]): Observable[T | U, S] = js.native
   def bufferBy[U, V](otherObs: Observable[U, V]): Observable[js.Array[T], S] = js.native

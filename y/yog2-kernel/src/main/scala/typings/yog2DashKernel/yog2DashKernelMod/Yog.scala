@@ -17,10 +17,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Yog extends js.Object {
+  var DEBUG: Boolean = js.native
+  var PLUGINS_PATH: String = js.native
+  var PLUGIN_TIMEOUT: String | Double = js.native
   var RAL: TypeofRAL = js.native
   var ROOT_PATH: String = js.native
   @JSName("_")
-  var __Original: LoDashStatic = js.native
+  var _underscore_Original: LoDashStatic = js.native
   @JSName("app")
   var app_Original: Express = js.native
   @JSName("express")
@@ -106,7 +109,8 @@ trait Yog extends js.Object {
     * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
     * upperFirst, value, and words.
     **/
-  def `_`[T](value: T): LoDashImplicitWrapper[T] = js.native
+  @JSName("_")
+  def _underscore[T](value: T): LoDashImplicitWrapper[T] = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
@@ -127,5 +131,6 @@ trait Yog extends js.Object {
   def bootstrap(option: YogBootstrapOption): Unit = js.native
   def bootstrap(option: YogBootstrapOption, callback: js.Function0[Unit]): Unit = js.native
   def express(): typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Express = js.native
+  def require(moduleName: String): js.Any = js.native
 }
 

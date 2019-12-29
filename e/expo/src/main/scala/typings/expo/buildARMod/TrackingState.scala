@@ -1,9 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.TrackingState.Limited
-import typings.expo.buildARMod.TrackingState.Normal
-import typings.expo.buildARMod.TrackingState.NotAvailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

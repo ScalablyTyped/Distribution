@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait IComponent
   extends typings.extjs.Ext.IComponent {
   /** [Property] (String) */
-  var EXPRESS_INSTALL_URL: js.UndefOr[java.lang.String] = js.undefined
+  var EXPRESS_INSTALL_URL: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var expressInstall: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Object) */
@@ -20,7 +20,7 @@ trait IComponent
   /** [Config Option] (Object) */
   var flashVars: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var flashVersion: js.UndefOr[java.lang.String] = js.undefined
+  var flashVersion: js.UndefOr[String] = js.undefined
   /** [Method] Retrieves the id of the SWF object embed element  */
   var getSwfId: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Ext.Element) */
@@ -30,28 +30,28 @@ trait IComponent
   /** [Config Option] (String/Number) */
   var swfWidth: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var wmode: js.UndefOr[java.lang.String] = js.undefined
+  var wmode: js.UndefOr[String] = js.undefined
 }
 
 object IComponent {
   @scala.inline
   def apply(
-    EXPRESS_INSTALL_URL: java.lang.String = null,
+    EXPRESS_INSTALL_URL: String = null,
     IComponent: typings.extjs.Ext.IComponent = null,
-    backgroundColor: java.lang.String = null,
+    backgroundColor: String = null,
     expressInstall: js.UndefOr[Boolean] = js.undefined,
     flashAttributes: js.Any = null,
     flashParams: js.Any = null,
     flashVars: js.Any = null,
-    flashVersion: java.lang.String = null,
+    flashVersion: String = null,
     getSwfId: () => Unit = null,
     swf: IElement = null,
     swfHeight: js.Any = null,
     swfWidth: js.Any = null,
-    url: java.lang.String = null,
-    wmode: java.lang.String = null
+    url: String = null,
+    wmode: String = null
   ): IComponent = {
     val __obj = js.Dynamic.literal()
     if (EXPRESS_INSTALL_URL != null) __obj.updateDynamic("EXPRESS_INSTALL_URL")(EXPRESS_INSTALL_URL.asInstanceOf[js.Any])

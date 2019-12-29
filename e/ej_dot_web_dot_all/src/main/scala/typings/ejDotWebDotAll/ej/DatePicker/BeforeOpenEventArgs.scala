@@ -17,7 +17,7 @@ trait BeforeOpenEventArgs extends js.Object {
   var events: js.UndefOr[js.Any] = js.undefined
   /** returns the DatePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DatePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ object BeforeOpenEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     element: HTMLElement = null,
     events: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.DatePicker.Model = null,
+    model: Model = null,
     `type`: String = null
   ): BeforeOpenEventArgs = {
     val __obj = js.Dynamic.literal()

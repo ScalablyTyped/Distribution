@@ -57,7 +57,8 @@ class Chart protected () extends js.Object {
   val SurfaceGroup: ChartGroup = js.native
   var Type: Double = js.native
   val Walls: typings.activexDashWord.Word.Walls = js.native
-  var `Word.Chart_typekey`: Chart = js.native
+  @JSName("Word.Chart_typekey")
+  var WordDotChart_typekey: Chart = js.native
   def ApplyChartTemplate(FileName: String): Unit = js.native
   def ApplyCustomType(ChartType: XlChartType): Unit = js.native
   def ApplyCustomType(ChartType: XlChartType, TypeName: js.Any): Unit = js.native

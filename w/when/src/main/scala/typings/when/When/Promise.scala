@@ -1,11 +1,11 @@
 package typings.when.When
 
-import typings.when.When.`_`.Fn0
-import typings.when.When.`_`.Fn1
-import typings.when.When.`_`.Fn2
-import typings.when.When.`_`.Fn3
-import typings.when.When.`_`.Fn4
-import typings.when.When.`_`.Fn5
+import typings.when.When._underscore.Fn0
+import typings.when.When._underscore.Fn1
+import typings.when.When._underscore.Fn2
+import typings.when.When._underscore.Fn3
+import typings.when.When._underscore.Fn4
+import typings.when.When._underscore.Fn5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,13 +6,7 @@ import typings.androiduix.android.graphics.Paint
 import typings.androiduix.android.graphics.Path
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.text.Layout.Alignment
-import typings.androiduix.android.text.Layout.Alignment.ALIGN_CENTER
-import typings.androiduix.android.text.Layout.Alignment.ALIGN_LEFT
-import typings.androiduix.android.text.Layout.Alignment.ALIGN_NORMAL
-import typings.androiduix.android.text.Layout.Alignment.ALIGN_OPPOSITE
-import typings.androiduix.android.text.Layout.Alignment.ALIGN_RIGHT
 import typings.androiduix.android.text.Layout.Directions
-import typings.androiduix.android.text.Layout.Ellipsizer
 import typings.androiduix.android.text.TextUtils.TruncateAt
 import scala.scalajs.js
 import scala.scalajs.js.`|`

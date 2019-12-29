@@ -1,8 +1,5 @@
 package typings.decay
 
-import typings.decay.decayMod.HackerNewsHotFunction
-import typings.decay.decayMod.RedditHotFunction
-import typings.decay.decayMod.WilsonScoreFunction
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

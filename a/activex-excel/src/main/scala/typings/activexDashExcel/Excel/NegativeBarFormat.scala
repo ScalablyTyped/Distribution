@@ -13,7 +13,8 @@ class NegativeBarFormat protected () extends js.Object {
   val Color: FormatColor = js.native
   var ColorType: XlDataBarNegativeColorType = js.native
   val Creator: XlCreator = js.native
-  var `Excel.NegativeBarFormat_typekey`: NegativeBarFormat = js.native
+  @JSName("Excel.NegativeBarFormat_typekey")
+  var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat = js.native
   val Parent: js.Any = js.native
 }
 

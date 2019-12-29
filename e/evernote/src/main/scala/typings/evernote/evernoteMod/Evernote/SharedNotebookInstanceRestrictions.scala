@@ -1,8 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.SharedNotebookInstanceRestrictions.NO_SHARED_NOTEBOOKS
-import typings.evernote.evernoteMod.Evernote.SharedNotebookInstanceRestrictions.ONLY_JOINED_OR_PREVIEW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

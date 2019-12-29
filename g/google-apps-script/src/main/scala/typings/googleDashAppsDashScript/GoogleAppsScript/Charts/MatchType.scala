@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.MatchType.ANY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.MatchType.EXACT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.MatchType.PREFIX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

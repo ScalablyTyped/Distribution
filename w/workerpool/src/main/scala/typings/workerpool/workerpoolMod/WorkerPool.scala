@@ -1,6 +1,9 @@
 package typings.workerpool.workerpoolMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
+import typings.std.Parameters
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +18,7 @@ trait WorkerPool extends js.Object {
     */
   def clear(): Promise[js.Array[_], Error] = js.native
   def clear(force: Boolean): Promise[js.Array[_], Error] = js.native
-  def exec(method: String): Promise[_, Error] = js.native
-  def exec(method: String, params: js.Array[_]): Promise[_, Error] = js.native
-  def exec(method: js.Function1[/* repeated */ js.Any, _]): Promise[_, Error] = js.native
+  def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: T): Promise[ReturnType[T], Error] = js.native
   /**
     * Execute a function on a worker with given arguments.
     * @param method When method is a string, a method with this name must exist at the worker
@@ -27,13 +28,16 @@ trait WorkerPool extends js.Object {
     * and executed there with the provided parameters. The provided function must be static,
     * it must not depend on variables in a surrounding scope.
     */
-  def exec(method: js.Function1[/* repeated */ js.Any, _], params: js.Array[_]): Promise[_, Error] = js.native
+  def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: T, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
+  def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: String): Promise[ReturnType[T], Error] = js.native
+  def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: String, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
   /**
     * Create a proxy for the worker pool.
     * The proxy contains a proxy for all methods available on the worker.
     * All methods return promises resolving the methods result.
     */
-  def proxy(): Promise[_, Error] = js.native
+  // tslint:disable-next-line: no-unnecessary-generics
+  def proxy[T /* <: StringDictionary[js.Function1[/* repeated */ js.Any, _]] */](): Promise[Proxy[T], Error] = js.native
   /** Retrieve statistics on workers, and active and pending tasks. */
   def stats(): WorkerPoolStats = js.native
   /**

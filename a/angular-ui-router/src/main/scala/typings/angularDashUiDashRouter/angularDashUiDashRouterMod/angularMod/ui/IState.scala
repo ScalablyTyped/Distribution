@@ -47,16 +47,12 @@ trait IState extends js.Object {
   /**
     * Specifies the parent state of this state
     */
-  var parent: js.UndefOr[
-    String | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState
-  ] = js.undefined
+  var parent: js.UndefOr[String | IState] = js.undefined
   /**
     * string | function | object
     * Synchronously or asynchronously redirects Transitions to a different state/params
     */
-  var redirectTo: js.UndefOr[
-    String | Function | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState
-  ] = js.undefined
+  var redirectTo: js.UndefOr[String | Function | IState] = js.undefined
   /**
     * Boolean (default true). If false will not re-trigger the same state just because a search/query parameter has changed. Useful for when you'd like to modify $location.search() without triggering a reload.
     */
@@ -65,12 +61,7 @@ trait IState extends js.Object {
   /**
     * String HTML content, or function that returns an HTML string
     */
-  var template: js.UndefOr[
-    String | (js.Function1[
-      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
-      String
-    ])
-  ] = js.undefined
+  var template: js.UndefOr[String | (js.Function1[/* params */ IStateParamsService, String])] = js.undefined
   /**
     * Function, returns HTML content string
     */
@@ -78,24 +69,15 @@ trait IState extends js.Object {
   /**
     * String URL path to template file OR Function, returns URL path string
     */
-  var templateUrl: js.UndefOr[
-    String | (js.Function1[
-      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
-      String
-    ])
-  ] = js.undefined
+  var templateUrl: js.UndefOr[String | (js.Function1[/* params */ IStateParamsService, String])] = js.undefined
   /**
     * A url with optional parameters. When a state is navigated or transitioned to, the $stateParams service will be populated with any parameters that were passed.
     */
-  var url: js.UndefOr[
-    String | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher
-  ] = js.undefined
+  var url: js.UndefOr[String | IUrlMatcher] = js.undefined
   /**
     * Use the views property to set up multiple views. If you don't need multiple views within a single state this property is not needed. Tip: remember that often nested views are more useful and powerful than multiple sibling views.
     */
-  var views: js.UndefOr[
-    StringDictionary[typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState]
-  ] = js.undefined
+  var views: js.UndefOr[StringDictionary[IState]] = js.undefined
 }
 
 object IState {
@@ -112,21 +94,15 @@ object IState {
     onEnter: Function | (js.Array[String | Function]) = null,
     onExit: Function | (js.Array[String | Function]) = null,
     params: js.Any = null,
-    parent: String | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState = null,
-    redirectTo: String | Function | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState = null,
+    parent: String | IState = null,
+    redirectTo: String | Function | IState = null,
     reloadOnSearch: js.UndefOr[Boolean] = js.undefined,
     resolve: StringDictionary[js.Any] = null,
-    template: String | (js.Function1[
-      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
-      String
-    ]) = null,
+    template: String | (js.Function1[/* params */ IStateParamsService, String]) = null,
     templateProvider: Function | (js.Array[String | Function]) = null,
-    templateUrl: String | (js.Function1[
-      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
-      String
-    ]) = null,
-    url: String | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher = null,
-    views: StringDictionary[typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState] = null
+    templateUrl: String | (js.Function1[/* params */ IStateParamsService, String]) = null,
+    url: String | IUrlMatcher = null,
+    views: StringDictionary[IState] = null
   ): IState = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])

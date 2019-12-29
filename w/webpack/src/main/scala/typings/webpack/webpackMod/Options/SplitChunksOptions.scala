@@ -2,8 +2,8 @@ package typings.webpack.webpackMod.Options
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
+import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackMod.compilation.Chunk
-import typings.webpack.webpackNumbers.`false`
 import typings.webpack.webpackStrings.all
 import typings.webpack.webpackStrings.async
 import typings.webpack.webpackStrings.initial

@@ -5,7 +5,7 @@ import typings.ionic.definitionsMod.IPCMessage
 import typings.ionic.definitionsMod.IntegrationName
 import typings.ionic.definitionsMod.IonicContext
 import typings.ionic.definitionsMod.ProjectType
-import typings.ionic.ionicStrings.ionicDOTconfigDOTjson
+import typings.ionic.ionicStrings.ionicDotconfigDotjson
 import typings.ionic.libExecutorMod.Executor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object ionicMod extends js.Object {
   val ASSETS_DIRECTORY: String = js.native
   val INTEGRATION_NAMES: js.Array[IntegrationName] = js.native
-  val PROJECT_FILE: ionicDOTconfigDOTjson = js.native
+  val PROJECT_FILE: ionicDotconfigDotjson = js.native
   val PROJECT_TYPES: js.Array[ProjectType] = js.native
   def generateContext(): js.Promise[IonicContext] = js.native
   def isAPIResponseError(res: js.Any): /* is ionic.ionic/definitions.APIResponseError */ Boolean = js.native

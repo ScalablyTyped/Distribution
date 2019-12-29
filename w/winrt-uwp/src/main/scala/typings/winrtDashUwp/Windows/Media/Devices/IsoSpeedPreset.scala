@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.auto
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso100
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso12800
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso1600
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso200
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso25600
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso3200
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso400
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso50
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso6400
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso80
-import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso800
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

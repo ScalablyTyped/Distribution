@@ -1,7 +1,5 @@
 package typings.rotDashJs
 
-import typings.rotDashJs.libMapMapMod.CreateCallback
-import typings.rotDashJs.libMapMapMod.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

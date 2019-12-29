@@ -5,7 +5,7 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.internal
 import typings.nodemailer.libSharedMod.Logger
-import typings.nodemailer.nodemailerNumbers.`false`
+import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerStrings.end
 import typings.nodemailer.nodemailerStrings.error
 import typings.nodemailer.nodemailerStrings.token

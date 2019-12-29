@@ -1,12 +1,6 @@
 package typings.googleDashAuthDashLibrary
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv
-import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.APP_ENGINE
-import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.CLOUD_FUNCTIONS
-import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.COMPUTE_ENGINE
-import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.KUBERNETES_ENGINE
-import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

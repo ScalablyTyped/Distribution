@@ -1,10 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.descriptive
-import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.downArrow
-import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.more
-import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

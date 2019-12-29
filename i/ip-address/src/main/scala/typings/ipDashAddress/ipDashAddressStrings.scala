@@ -29,52 +29,52 @@ object ipDashAddressStrings {
   sealed trait Multicast extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers and relay agents in this site)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers and relay agents on this link)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers in this site)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers on this link)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All nodes on this interface)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All nodes on this link)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll nodes on this linkRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All routers in this site)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll routers in this siteRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All routers on this interface)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll routers on this interfaceRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (All routers on this link)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisAll routers on this linkRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (EIGRP routers)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisEIGRP routersRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (MLDv2 reports)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisMLDv2 reportsRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (OSPFv3 AllDR routers)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (OSPFv3 AllSPF routers)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (PIM routers)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisPIM routersRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (RIP routers)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesisRIP routersRightparenthesis` extends IPv6Type
   
   @js.native
-  sealed trait `Multicast (mDNSv6)` extends IPv6Type
+  sealed trait `Multicast LeftparenthesismDNSv6Rightparenthesis` extends IPv6Type
   
   @js.native
   sealed trait `Organization local` extends IPv6Scope
@@ -103,37 +103,37 @@ object ipDashAddressStrings {
   @scala.inline
   def Multicast: Multicast = "Multicast".asInstanceOf[Multicast]
   @scala.inline
-  def `Multicast (All DHCP servers and relay agents in this site)`: `Multicast (All DHCP servers and relay agents in this site)` = "Multicast (All DHCP servers and relay agents in this site)".asInstanceOf[`Multicast (All DHCP servers and relay agents in this site)`]
+  def `Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis`: `Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis` = "Multicast (All DHCP servers and relay agents in this site)".asInstanceOf[`Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis`]
   @scala.inline
-  def `Multicast (All DHCP servers and relay agents on this link)`: `Multicast (All DHCP servers and relay agents on this link)` = "Multicast (All DHCP servers and relay agents on this link)".asInstanceOf[`Multicast (All DHCP servers and relay agents on this link)`]
+  def `Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis`: `Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis` = "Multicast (All DHCP servers and relay agents on this link)".asInstanceOf[`Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast (All DHCP servers in this site)`: `Multicast (All DHCP servers in this site)` = "Multicast (All DHCP servers in this site)".asInstanceOf[`Multicast (All DHCP servers in this site)`]
+  def `Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis`: `Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis` = "Multicast (All DHCP servers in this site)".asInstanceOf[`Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis`]
   @scala.inline
-  def `Multicast (All DHCP servers on this link)`: `Multicast (All DHCP servers on this link)` = "Multicast (All DHCP servers on this link)".asInstanceOf[`Multicast (All DHCP servers on this link)`]
+  def `Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis`: `Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis` = "Multicast (All DHCP servers on this link)".asInstanceOf[`Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast (All nodes on this interface)`: `Multicast (All nodes on this interface)` = "Multicast (All nodes on this interface)".asInstanceOf[`Multicast (All nodes on this interface)`]
+  def `Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis`: `Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis` = "Multicast (All nodes on this interface)".asInstanceOf[`Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis`]
   @scala.inline
-  def `Multicast (All nodes on this link)`: `Multicast (All nodes on this link)` = "Multicast (All nodes on this link)".asInstanceOf[`Multicast (All nodes on this link)`]
+  def `Multicast LeftparenthesisAll nodes on this linkRightparenthesis`: `Multicast LeftparenthesisAll nodes on this linkRightparenthesis` = "Multicast (All nodes on this link)".asInstanceOf[`Multicast LeftparenthesisAll nodes on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast (All routers in this site)`: `Multicast (All routers in this site)` = "Multicast (All routers in this site)".asInstanceOf[`Multicast (All routers in this site)`]
+  def `Multicast LeftparenthesisAll routers in this siteRightparenthesis`: `Multicast LeftparenthesisAll routers in this siteRightparenthesis` = "Multicast (All routers in this site)".asInstanceOf[`Multicast LeftparenthesisAll routers in this siteRightparenthesis`]
   @scala.inline
-  def `Multicast (All routers on this interface)`: `Multicast (All routers on this interface)` = "Multicast (All routers on this interface)".asInstanceOf[`Multicast (All routers on this interface)`]
+  def `Multicast LeftparenthesisAll routers on this interfaceRightparenthesis`: `Multicast LeftparenthesisAll routers on this interfaceRightparenthesis` = "Multicast (All routers on this interface)".asInstanceOf[`Multicast LeftparenthesisAll routers on this interfaceRightparenthesis`]
   @scala.inline
-  def `Multicast (All routers on this link)`: `Multicast (All routers on this link)` = "Multicast (All routers on this link)".asInstanceOf[`Multicast (All routers on this link)`]
+  def `Multicast LeftparenthesisAll routers on this linkRightparenthesis`: `Multicast LeftparenthesisAll routers on this linkRightparenthesis` = "Multicast (All routers on this link)".asInstanceOf[`Multicast LeftparenthesisAll routers on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast (EIGRP routers)`: `Multicast (EIGRP routers)` = "Multicast (EIGRP routers)".asInstanceOf[`Multicast (EIGRP routers)`]
+  def `Multicast LeftparenthesisEIGRP routersRightparenthesis`: `Multicast LeftparenthesisEIGRP routersRightparenthesis` = "Multicast (EIGRP routers)".asInstanceOf[`Multicast LeftparenthesisEIGRP routersRightparenthesis`]
   @scala.inline
-  def `Multicast (MLDv2 reports)`: `Multicast (MLDv2 reports)` = "Multicast (MLDv2 reports)".asInstanceOf[`Multicast (MLDv2 reports)`]
+  def `Multicast LeftparenthesisMLDv2 reportsRightparenthesis`: `Multicast LeftparenthesisMLDv2 reportsRightparenthesis` = "Multicast (MLDv2 reports)".asInstanceOf[`Multicast LeftparenthesisMLDv2 reportsRightparenthesis`]
   @scala.inline
-  def `Multicast (OSPFv3 AllDR routers)`: `Multicast (OSPFv3 AllDR routers)` = "Multicast (OSPFv3 AllDR routers)".asInstanceOf[`Multicast (OSPFv3 AllDR routers)`]
+  def `Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis`: `Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis` = "Multicast (OSPFv3 AllDR routers)".asInstanceOf[`Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis`]
   @scala.inline
-  def `Multicast (OSPFv3 AllSPF routers)`: `Multicast (OSPFv3 AllSPF routers)` = "Multicast (OSPFv3 AllSPF routers)".asInstanceOf[`Multicast (OSPFv3 AllSPF routers)`]
+  def `Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis`: `Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis` = "Multicast (OSPFv3 AllSPF routers)".asInstanceOf[`Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis`]
   @scala.inline
-  def `Multicast (PIM routers)`: `Multicast (PIM routers)` = "Multicast (PIM routers)".asInstanceOf[`Multicast (PIM routers)`]
+  def `Multicast LeftparenthesisPIM routersRightparenthesis`: `Multicast LeftparenthesisPIM routersRightparenthesis` = "Multicast (PIM routers)".asInstanceOf[`Multicast LeftparenthesisPIM routersRightparenthesis`]
   @scala.inline
-  def `Multicast (RIP routers)`: `Multicast (RIP routers)` = "Multicast (RIP routers)".asInstanceOf[`Multicast (RIP routers)`]
+  def `Multicast LeftparenthesisRIP routersRightparenthesis`: `Multicast LeftparenthesisRIP routersRightparenthesis` = "Multicast (RIP routers)".asInstanceOf[`Multicast LeftparenthesisRIP routersRightparenthesis`]
   @scala.inline
-  def `Multicast (mDNSv6)`: `Multicast (mDNSv6)` = "Multicast (mDNSv6)".asInstanceOf[`Multicast (mDNSv6)`]
+  def `Multicast LeftparenthesismDNSv6Rightparenthesis`: `Multicast LeftparenthesismDNSv6Rightparenthesis` = "Multicast (mDNSv6)".asInstanceOf[`Multicast LeftparenthesismDNSv6Rightparenthesis`]
   @scala.inline
   def `Organization local`: `Organization local` = "Organization local".asInstanceOf[`Organization local`]
   @scala.inline

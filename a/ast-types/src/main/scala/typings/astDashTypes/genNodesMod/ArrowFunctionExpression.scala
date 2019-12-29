@@ -1,6 +1,6 @@
 package typings.astDashTypes.genNodesMod
 
-import typings.astDashTypes.astDashTypesNumbers.`false`
+import typings.astDashTypes.astDashTypesBooleans.`false`
 import typings.astDashTypes.genKindsMod.BlockStatementKind
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import scala.scalajs.js

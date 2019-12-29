@@ -1,7 +1,7 @@
 package typings.atAngularCommon.httpHttpMod
 
 import typings.atAngularCommon.Anon_Error
-import typings.atAngularCommon.atAngularCommonNumbers.`false`
+import typings.atAngularCommon.atAngularCommonBooleans.`false`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

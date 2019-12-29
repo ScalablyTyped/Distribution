@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassMap
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Map]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Map] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Map]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Map] {
   var Locale: js.Any = js.native
   var fn: Map = js.native
 }

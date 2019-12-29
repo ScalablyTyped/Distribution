@@ -21,12 +21,12 @@ trait ScriptTypeProfile extends js.Object {
   /**
     * JavaScript script name or url.
     */
-  var url: java.lang.String
+  var url: String
 }
 
 object ScriptTypeProfile {
   @scala.inline
-  def apply(entries: js.Array[TypeProfileEntry], scriptId: ScriptId, url: java.lang.String): ScriptTypeProfile = {
+  def apply(entries: js.Array[TypeProfileEntry], scriptId: ScriptId, url: String): ScriptTypeProfile = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScriptTypeProfile]

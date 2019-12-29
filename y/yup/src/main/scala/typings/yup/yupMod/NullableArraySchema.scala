@@ -1,7 +1,7 @@
 package typings.yup.yupMod
 
-import typings.yup.yupNumbers.`false`
-import typings.yup.yupNumbers.`true`
+import typings.yup.yupBooleans.`false`
+import typings.yup.yupBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 trait NullableArraySchema[T]
   extends BasicArraySchema[js.Array[T] | Null] {
   def notRequired(): NotRequiredNullableArraySchema[T] = js.native
-  def nullable(): ArraySchema[T] = js.native
+  def nullable(): NullableArraySchema[T] = js.native
   def nullable(isNullable: Boolean): ArraySchema[T] = js.native
   @JSName("nullable")
-  def nullable_NullableArraySchema(): NullableArraySchema[T] = js.native
+  def nullable_ArraySchema(): ArraySchema[T] = js.native
   @JSName("nullable")
   def nullable_false(isNullable: `false`): ArraySchema[T] = js.native
   @JSName("nullable")

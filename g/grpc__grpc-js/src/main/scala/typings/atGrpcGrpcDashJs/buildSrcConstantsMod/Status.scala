@@ -1,23 +1,6 @@
 package typings.atGrpcGrpcDashJs.buildSrcConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.ABORTED
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.ALREADY_EXISTS
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.CANCELLED
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.DATA_LOSS
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.DEADLINE_EXCEEDED
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.FAILED_PRECONDITION
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.INTERNAL
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.INVALID_ARGUMENT
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.NOT_FOUND
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.OK
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.OUT_OF_RANGE
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.PERMISSION_DENIED
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.RESOURCE_EXHAUSTED
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.UNAUTHENTICATED
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.UNAVAILABLE
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.UNIMPLEMENTED
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.Status.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

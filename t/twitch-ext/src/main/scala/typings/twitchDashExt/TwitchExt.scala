@@ -1,8 +1,8 @@
 package typings.twitchDashExt
 
 import typings.std.Partial
-import typings.twitchDashExt.twitchDashExtNumbers.`false`
-import typings.twitchDashExt.twitchDashExtNumbers.`true`
+import typings.twitchDashExt.twitchDashExtBooleans.`false`
+import typings.twitchDashExt.twitchDashExtBooleans.`true`
 import typings.twitchDashExt.twitchDashExtStrings.production
 import scala.scalajs.js
 import scala.scalajs.js.`|`

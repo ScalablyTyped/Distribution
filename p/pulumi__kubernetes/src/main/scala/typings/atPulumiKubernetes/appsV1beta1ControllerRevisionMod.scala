@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.appsV1beta1ControllerRevisionMod.ControllerRevision
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -37,7 +36,7 @@ object appsV1beta1ControllerRevisionMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`apps/v1beta1`] = js.native
+    val apiVersion: Output[appsSlashv1beta1] = js.native
     /**
       * Data is the serialized representation of the state.
       */

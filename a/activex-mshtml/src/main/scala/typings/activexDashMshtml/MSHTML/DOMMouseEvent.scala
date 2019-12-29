@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMMouseEvent")
 @js.native
 class DOMMouseEvent protected () extends js.Object {
-  var `MSHTML.DOMMouseEvent_typekey`: DOMMouseEvent = js.native
+  @JSName("MSHTML.DOMMouseEvent_typekey")
+  var MSHTMLDotDOMMouseEvent_typekey: DOMMouseEvent = js.native
   val altKey: Boolean = js.native
   val bubbles: Boolean = js.native
   val button: Double = js.native

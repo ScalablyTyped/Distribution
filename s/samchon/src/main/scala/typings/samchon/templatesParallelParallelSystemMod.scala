@@ -4,7 +4,6 @@ import typings.samchon.protocolCommunicatorIClientDriverMod.IClientDriver
 import typings.samchon.protocolInvokeInvokeMod.Invoke
 import typings.samchon.templatesExternalExternalSystemMod.ExternalSystem
 import typings.samchon.templatesParallelParallelSystemArrayMod.ParallelSystemArray
-import typings.samchon.templatesParallelParallelSystemMod.ParallelSystem
 import typings.samchon.templatesSlaveInvokeHistoryMod.InvokeHistory
 import typings.sxml.sxmlMod.XML
 import scala.scalajs.js

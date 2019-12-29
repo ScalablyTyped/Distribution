@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.Brace
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.CurlyBrace
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.None
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.WithoutTopAndBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

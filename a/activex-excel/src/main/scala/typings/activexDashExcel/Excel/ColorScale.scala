@@ -13,7 +13,8 @@ class ColorScale protected () extends js.Object {
   @JSName("ColorScaleCriteria")
   val ColorScaleCriteria_Original: ColorScaleCriteria = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ColorScale_typekey`: ColorScale = js.native
+  @JSName("Excel.ColorScale_typekey")
+  var ExcelDotColorScale_typekey: ColorScale = js.native
   var Formula: String = js.native
   val PTCondition: Boolean = js.native
   val Parent: js.Any = js.native

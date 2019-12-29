@@ -7,39 +7,39 @@ import scala.scalajs.js.annotation._
 
 object papaparseStrings {
   @js.native
-  sealed trait `,` extends _GuessableDelimiters
+  sealed trait Charactertabulation extends _GuessableDelimiters
   
   @js.native
-  sealed trait `;` extends _GuessableDelimiters
+  sealed trait Comma extends _GuessableDelimiters
   
   @js.native
-  sealed trait BACKSLASHt extends _GuessableDelimiters
+  sealed trait Informationseparatorone extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu001E extends js.Object
+  sealed trait Informationseparatortwo extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu001F extends js.Object
+  sealed trait Semicolon extends _GuessableDelimiters
+  
+  @js.native
+  sealed trait Verticalline extends _GuessableDelimiters
   
   @js.native
   sealed trait greedy extends js.Object
   
-  @js.native
-  sealed trait `|` extends _GuessableDelimiters
-  
   @scala.inline
-  def `,`: `,` = ",".asInstanceOf[`,`]
+  def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
   @scala.inline
-  def `;`: `;` = ";".asInstanceOf[`;`]
+  def Comma: Comma = ",".asInstanceOf[Comma]
   @scala.inline
-  def BACKSLASHt: BACKSLASHt = "\t".asInstanceOf[BACKSLASHt]
+  def Informationseparatorone: Informationseparatorone = "\u001F".asInstanceOf[Informationseparatorone]
   @scala.inline
-  def BACKSLASHu001E: BACKSLASHu001E = "\u001E".asInstanceOf[BACKSLASHu001E]
+  def Informationseparatortwo: Informationseparatortwo = "\u001E".asInstanceOf[Informationseparatortwo]
   @scala.inline
-  def BACKSLASHu001F: BACKSLASHu001F = "\u001F".asInstanceOf[BACKSLASHu001F]
+  def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
+  @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   @scala.inline
   def greedy: greedy = "greedy".asInstanceOf[greedy]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
 }
 

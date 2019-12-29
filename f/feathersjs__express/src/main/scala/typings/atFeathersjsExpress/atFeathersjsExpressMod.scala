@@ -1,9 +1,5 @@
 package typings.atFeathersjsExpress
 
-import typings.atFeathersjsExpress.atFeathersjsExpressMod.Application
-import typings.atFeathersjsExpress.atFeathersjsExpressMod.FeathersApplicationRequestHandler
-import typings.atFeathersjsExpress.atFeathersjsExpressMod.FeathersRouterMatcher
-import typings.atFeathersjsExpress.atFeathersjsExpressMod.Omit
 import typings.atFeathersjsExpress.atFeathersjsExpressStrings.use
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.ServiceMethods
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.SetupMethod

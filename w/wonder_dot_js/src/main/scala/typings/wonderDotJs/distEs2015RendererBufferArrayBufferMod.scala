@@ -1,7 +1,6 @@
 package typings.wonderDotJs
 
 import typings.std.Float32Array
-import typings.wonderDotJs.distEs2015RendererBufferArrayBufferMod.ArrayBuffer
 import typings.wonderDotJs.distEs2015RendererBufferCommonBufferMod.CommonBuffer
 import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType
 import typings.wonderDotJs.distEs2015RendererBufferEBufferUsageMod.EBufferUsage

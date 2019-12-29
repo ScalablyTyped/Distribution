@@ -1,6 +1,5 @@
 package typings.jestDashWatcher
 
-import typings.jestDashWatcher.buildPatternPromptMod.PatternPrompt
 import typings.jestDashWatcher.buildTypesMod.ScrollOptions
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js

@@ -1,10 +1,6 @@
 package typings.roxDashBrowser.roxDashBrowserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.roxDashBrowser.roxDashBrowserMod.RoxOverridesPosition.BottomLeft
-import typings.roxDashBrowser.roxDashBrowserMod.RoxOverridesPosition.BottomRight
-import typings.roxDashBrowser.roxDashBrowserMod.RoxOverridesPosition.TopLeft
-import typings.roxDashBrowser.roxDashBrowserMod.RoxOverridesPosition.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.nodegit
 
-import typings.nodegit.strDashArrayMod.Strarray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

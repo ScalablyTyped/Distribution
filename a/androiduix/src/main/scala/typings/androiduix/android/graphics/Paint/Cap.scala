@@ -1,9 +1,6 @@
 package typings.androiduix.android.graphics.Paint
 
 import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.android.graphics.Paint.Cap.BUTT
-import typings.androiduix.android.graphics.Paint.Cap.ROUND
-import typings.androiduix.android.graphics.Paint.Cap.SQUARE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

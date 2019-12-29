@@ -1,11 +1,11 @@
 package typings.parcelDashBundler.parcelDashBundlerMod
 
+import typings.parcelDashBundler.parcelDashBundlerBooleans.`false`
+import typings.parcelDashBundler.parcelDashBundlerBooleans.`true`
 import typings.parcelDashBundler.parcelDashBundlerNumbers.`0`
 import typings.parcelDashBundler.parcelDashBundlerNumbers.`1`
 import typings.parcelDashBundler.parcelDashBundlerNumbers.`2`
 import typings.parcelDashBundler.parcelDashBundlerNumbers.`3`
-import typings.parcelDashBundler.parcelDashBundlerNumbers.`false`
-import typings.parcelDashBundler.parcelDashBundlerNumbers.`true`
 import typings.parcelDashBundler.parcelDashBundlerStrings.browser
 import typings.parcelDashBundler.parcelDashBundlerStrings.electron
 import typings.parcelDashBundler.parcelDashBundlerStrings.node

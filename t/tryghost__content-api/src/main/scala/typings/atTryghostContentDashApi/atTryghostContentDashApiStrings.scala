@@ -15,7 +15,7 @@ object atTryghostContentDashApiStrings {
   sealed trait canary extends js.Object
   
   @js.native
-  sealed trait countDOTposts extends IncludeParam
+  sealed trait countDotposts extends IncludeParam
   
   @js.native
   sealed trait draft extends TagVisibility
@@ -46,7 +46,7 @@ object atTryghostContentDashApiStrings {
   @scala.inline
   def canary: canary = "canary".asInstanceOf[canary]
   @scala.inline
-  def countDOTposts: countDOTposts = "count.posts".asInstanceOf[countDOTposts]
+  def countDotposts: countDotposts = "count.posts".asInstanceOf[countDotposts]
   @scala.inline
   def draft: draft = "draft".asInstanceOf[draft]
   @scala.inline

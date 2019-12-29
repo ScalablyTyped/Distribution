@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HeatmapSliderViewModel extends SliderViewModel {
+trait HeatmapSliderViewModel extends SmartMappingSliderViewModel {
   /**
     * The colorStops of the [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html) to associate with the slider.
     *

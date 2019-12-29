@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.accessDenied
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.alreadyUnpaired
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.failed
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.operationAlreadyInProgress
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.unpaired
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

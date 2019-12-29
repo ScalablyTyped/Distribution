@@ -12,6 +12,7 @@ class ReadabilityStatistic protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   val Value: Double = js.native
-  var `Word.ReadabilityStatistic_typekey`: ReadabilityStatistic = js.native
+  @JSName("Word.ReadabilityStatistic_typekey")
+  var WordDotReadabilityStatistic_typekey: ReadabilityStatistic = js.native
 }
 

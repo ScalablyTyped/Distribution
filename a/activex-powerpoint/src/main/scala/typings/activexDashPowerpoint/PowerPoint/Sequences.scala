@@ -10,7 +10,8 @@ class Sequences protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Sequences_typekey`: Sequences = js.native
+  @JSName("PowerPoint.Sequences_typekey")
+  var PowerPointDotSequences_typekey: Sequences = js.native
   /** @param number [Index=-1] */
   def Add(): Sequence = js.native
   def Add(Index: Double): Sequence = js.native

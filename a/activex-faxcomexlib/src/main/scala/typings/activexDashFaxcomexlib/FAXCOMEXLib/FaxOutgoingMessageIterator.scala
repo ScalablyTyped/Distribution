@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class FaxOutgoingMessageIterator protected () extends js.Object {
   /** End of archive marker */
   val AtEOF: Boolean = js.native
-  var `FAXCOMEXLib.FaxOutgoingMessageIterator_typekey`: FaxOutgoingMessageIterator = js.native
+  @JSName("FAXCOMEXLib.FaxOutgoingMessageIterator_typekey")
+  var FAXCOMEXLibDotFaxOutgoingMessageIterator_typekey: FaxOutgoingMessageIterator = js.native
   /** Current message */
   val Message: IFaxOutgoingMessage = js.native
   /** Size of prefetch buffer */

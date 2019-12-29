@@ -15,7 +15,8 @@ class IMsoChartFormat protected () extends js.Object {
   val Fill: FillFormat = js.native
   val Glow: GlowFormat = js.native
   val Line: LineFormat = js.native
-  var `Office.IMsoChartFormat_typekey`: IMsoChartFormat = js.native
+  @JSName("Office.IMsoChartFormat_typekey")
+  var OfficeDotIMsoChartFormat_typekey: IMsoChartFormat = js.native
   val Parent: js.Any = js.native
   val PictureFormat: typings.activexDashOffice.Office.PictureFormat = js.native
   val Shadow: ShadowFormat = js.native

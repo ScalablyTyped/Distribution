@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @ngModule FormsModule
   * @publicApi
   */
-@JSImport("@angular/forms", "ɵNgSelectMultipleOption")
+@JSImport("@angular/forms", "\u0275NgSelectMultipleOption")
 @js.native
 class ɵNgSelectMultipleOption protected () extends OnDestroy {
   def this(_element: ElementRef[_], _renderer: Renderer2, _select: SelectMultipleControlValueAccessor) = this()

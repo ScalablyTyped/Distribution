@@ -1,6 +1,6 @@
 package typings.atOctokitRest.atOctokitRestMod
 
-import typings.atOctokitRest.atOctokitRestStrings.`+1`
+import typings.atOctokitRest.atOctokitRestStrings.Plussign1
 import typings.atOctokitRest.atOctokitRestStrings.`-1`
 import typings.atOctokitRest.atOctokitRestStrings.confused
 import typings.atOctokitRest.atOctokitRestStrings.eyes
@@ -17,7 +17,7 @@ trait ReactionsCreateForTeamDiscussionCommentParams extends js.Object {
   /**
     * The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion comment.
     */
-  var content: `+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes
+  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes
   var discussion_number: Double
   var team_id: Double
 }
@@ -26,7 +26,7 @@ object ReactionsCreateForTeamDiscussionCommentParams {
   @scala.inline
   def apply(
     comment_number: Double,
-    content: `+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes,
+    content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     discussion_number: Double,
     team_id: Double
   ): ReactionsCreateForTeamDiscussionCommentParams = {

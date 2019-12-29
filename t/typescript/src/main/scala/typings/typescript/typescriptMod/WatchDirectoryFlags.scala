@@ -1,8 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.WatchDirectoryFlags.None
-import typings.typescript.typescriptMod.WatchDirectoryFlags.Recursive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

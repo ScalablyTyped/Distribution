@@ -43,18 +43,18 @@ class Splitter protected () extends Widget {
   def remove(pane: String): Unit = js.native
   def remove(pane: JQuery): Unit = js.native
   def remove(pane: Element): Unit = js.native
-  def size(pane: String): Unit = js.native
+  def size(pane: String): js.Any = js.native
   def size(pane: String, value: String): Unit = js.native
-  def size(pane: JQuery): Unit = js.native
+  def size(pane: JQuery): js.Any = js.native
   def size(pane: JQuery, value: String): Unit = js.native
-  def size(pane: Element): Unit = js.native
+  def size(pane: Element): js.Any = js.native
   def size(pane: Element, value: String): Unit = js.native
   @JSName("size")
-  def size_Any(pane: String): js.Any = js.native
+  def size_Unit(pane: String): Unit = js.native
   @JSName("size")
-  def size_Any(pane: JQuery): js.Any = js.native
+  def size_Unit(pane: JQuery): Unit = js.native
   @JSName("size")
-  def size_Any(pane: Element): js.Any = js.native
+  def size_Unit(pane: Element): Unit = js.native
   def toggle(pane: String): Unit = js.native
   def toggle(pane: String, expand: Boolean): Unit = js.native
   def toggle(pane: JQuery): Unit = js.native

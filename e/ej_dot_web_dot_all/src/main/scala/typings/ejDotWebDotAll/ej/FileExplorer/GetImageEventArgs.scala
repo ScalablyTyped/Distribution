@@ -16,7 +16,7 @@ trait GetImageEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** original arguments of image load or error event
     */
   var originalArgs: js.UndefOr[js.Any] = js.undefined
@@ -34,7 +34,7 @@ object GetImageEventArgs {
     action: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     element: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     originalArgs: js.Any = null,
     path: String = null,
     `type`: String = null

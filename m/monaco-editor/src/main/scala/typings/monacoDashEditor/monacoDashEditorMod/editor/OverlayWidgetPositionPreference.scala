@@ -1,9 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.OverlayWidgetPositionPreference.BOTTOM_RIGHT_CORNER
-import typings.monacoDashEditor.monacoDashEditorMod.editor.OverlayWidgetPositionPreference.TOP_CENTER
-import typings.monacoDashEditor.monacoDashEditorMod.editor.OverlayWidgetPositionPreference.TOP_RIGHT_CORNER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

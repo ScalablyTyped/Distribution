@@ -4,7 +4,6 @@ import typings.nodeDashForge.Anon_AuthenticatedAttributes
 import typings.nodeDashForge.Anon_Detached
 import typings.nodeDashForge.Anon_Value
 import typings.nodeDashForge.nodeDashForgeMod.asn1.Asn1
-import typings.nodeDashForge.nodeDashForgeMod.pkcs7.PkcsSignedData
 import typings.nodeDashForge.nodeDashForgeMod.pki.Certificate
 import typings.nodeDashForge.nodeDashForgeMod.util.ByteBuffer
 import scala.scalajs.js

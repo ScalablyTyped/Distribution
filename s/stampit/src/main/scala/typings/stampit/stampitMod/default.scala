@@ -131,7 +131,7 @@ object default extends js.Object {
     * @template This The type to use for `this` within methods.
     * @param methods Object(s) containing map of method names and bodies for delegation.
     */
-  def methods[Obj](`this`: StampObjectType[Obj], methods: MethodMap[Obj]*): StampType[Obj] = js.native
+  def methods[Obj](methods: MethodMap[Obj]*): StampType[Obj] = js.native
   /**
     * A shortcut method for stampit().properties()
     *

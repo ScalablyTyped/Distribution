@@ -1,10 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.TextTrackReadyState.error
-import typings.playerframework.PlayerFramework.TextTrackReadyState.loaded
-import typings.playerframework.PlayerFramework.TextTrackReadyState.loading
-import typings.playerframework.PlayerFramework.TextTrackReadyState.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

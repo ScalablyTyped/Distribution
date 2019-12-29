@@ -2,7 +2,6 @@ package typings.tstl
 
 import typings.std.Iterable
 import typings.std.IterableIterator
-import typings.tstl.baseContainerIContainerMod.IContainer
 import typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer
 import typings.tstl.baseDisposableIPartialContainersMod._IEmpty
 import typings.tstl.baseDisposableIPartialContainersMod._IPush

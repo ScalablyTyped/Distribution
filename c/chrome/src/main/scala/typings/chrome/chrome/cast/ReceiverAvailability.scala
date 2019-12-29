@@ -1,8 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.ReceiverAvailability.AVAILABLE
-import typings.chrome.chrome.cast.ReceiverAvailability.UNAVAILABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

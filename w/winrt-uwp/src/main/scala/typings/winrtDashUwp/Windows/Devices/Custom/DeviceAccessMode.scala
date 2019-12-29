@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Custom
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Custom.DeviceAccessMode.read
-import typings.winrtDashUwp.Windows.Devices.Custom.DeviceAccessMode.readWrite
-import typings.winrtDashUwp.Windows.Devices.Custom.DeviceAccessMode.write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

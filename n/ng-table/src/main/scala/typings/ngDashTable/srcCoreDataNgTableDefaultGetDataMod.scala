@@ -3,7 +3,6 @@ package typings.ngDashTable
 import typings.angular.angularMod.IFilterOrderBy
 import typings.angular.angularMod.IFilterService
 import typings.angular.angularMod.IServiceProvider
-import typings.ngDashTable.srcCoreDataNgTableDefaultGetDataMod.IDefaultGetData
 import typings.ngDashTable.srcCoreFilteringFilterFuncMod.IFilterFunc
 import typings.ngDashTable.srcCoreNgTableEventsChannelMod.NgTableEventsChannel
 import typings.ngDashTable.srcCoreNgTableParamsMod.NgTableParams

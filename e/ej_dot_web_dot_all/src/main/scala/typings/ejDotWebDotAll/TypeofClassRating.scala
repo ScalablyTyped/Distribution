@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassRating
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Rating]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Rating] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Rating]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Rating] {
   var Locale: js.Any = js.native
   var fn: Rating = js.native
 }

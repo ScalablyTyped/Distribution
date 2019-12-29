@@ -11,7 +11,8 @@ class HTMLProject protected () extends js.Object {
   val Creator: Double = js.native
   @JSName("HTMLProjectItems")
   val HTMLProjectItems_Original: HTMLProjectItems = js.native
-  var `Office.HTMLProject_typekey`: HTMLProject = js.native
+  @JSName("Office.HTMLProject_typekey")
+  var OfficeDotHTMLProject_typekey: HTMLProject = js.native
   val Parent: js.Any = js.native
   val State: MsoHTMLProjectState = js.native
   def HTMLProjectItems(Index: js.Any): HTMLProjectItem = js.native

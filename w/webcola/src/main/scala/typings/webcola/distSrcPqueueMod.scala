@@ -1,6 +1,5 @@
 package typings.webcola
 
-import typings.webcola.distSrcPqueueMod.PairingHeap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

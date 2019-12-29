@@ -1,6 +1,6 @@
 package typings.corejsDashUpgradeDashWebpackDashPlugin.distMod
 
-import typings.corejsDashUpgradeDashWebpackDashPlugin.corejsDashUpgradeDashWebpackDashPluginNumbers.`false`
+import typings.corejsDashUpgradeDashWebpackDashPlugin.corejsDashUpgradeDashWebpackDashPluginBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

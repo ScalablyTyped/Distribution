@@ -16,7 +16,7 @@ trait OverflowButtonHoverEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object OverflowButtonHoverEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     datas: js.Any = null,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     `type`: String = null
   ): OverflowButtonHoverEventArgs = {
     val __obj = js.Dynamic.literal()

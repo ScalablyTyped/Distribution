@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IRequestOptions extends js.Object {
+  var allowRedirectDowngrade: js.UndefOr[Boolean] = js.undefined
   var allowRedirects: js.UndefOr[Boolean] = js.undefined
   var allowRetries: js.UndefOr[Boolean] = js.undefined
   var cert: js.UndefOr[ICertConfiguration] = js.undefined
@@ -23,6 +24,7 @@ trait IRequestOptions extends js.Object {
 object IRequestOptions {
   @scala.inline
   def apply(
+    allowRedirectDowngrade: js.UndefOr[Boolean] = js.undefined,
     allowRedirects: js.UndefOr[Boolean] = js.undefined,
     allowRetries: js.UndefOr[Boolean] = js.undefined,
     cert: ICertConfiguration = null,
@@ -37,6 +39,7 @@ object IRequestOptions {
     socketTimeout: Int | Double = null
   ): IRequestOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowRedirectDowngrade)) __obj.updateDynamic("allowRedirectDowngrade")(allowRedirectDowngrade.asInstanceOf[js.Any])
     if (!js.isUndefined(allowRedirects)) __obj.updateDynamic("allowRedirects")(allowRedirects.asInstanceOf[js.Any])
     if (!js.isUndefined(allowRetries)) __obj.updateDynamic("allowRetries")(allowRetries.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])

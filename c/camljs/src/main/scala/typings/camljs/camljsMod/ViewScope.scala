@@ -1,9 +1,6 @@
 package typings.camljs.camljsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.camljs.camljsMod.ViewScope.FilesOnly
-import typings.camljs.camljsMod.ViewScope.Recursive
-import typings.camljs.camljsMod.ViewScope.RecursiveAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

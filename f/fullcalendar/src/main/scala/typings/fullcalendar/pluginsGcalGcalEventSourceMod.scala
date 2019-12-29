@@ -1,7 +1,6 @@
 package typings.fullcalendar
 
 import typings.fullcalendar.fullcalendarMod.EventSource
-import typings.fullcalendar.pluginsGcalGcalEventSourceMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

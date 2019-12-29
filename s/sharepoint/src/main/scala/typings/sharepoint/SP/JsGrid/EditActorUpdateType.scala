@@ -1,8 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.EditActorUpdateType.Committed
-import typings.sharepoint.SP.JsGrid.EditActorUpdateType.Uncommitted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

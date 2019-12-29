@@ -1,8 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.SelectionDirection.LTR
-import typings.monacoDashEditor.monacoDashEditorMod.SelectionDirection.RTL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

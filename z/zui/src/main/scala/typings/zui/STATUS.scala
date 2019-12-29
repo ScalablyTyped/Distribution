@@ -1,12 +1,6 @@
 package typings.zui
 
 import org.scalablytyped.runtime.TopLevel
-import typings.zui.STATUS.DONE
-import typings.zui.STATUS.FAILED
-import typings.zui.STATUS.QUEUED
-import typings.zui.STATUS.STARTED
-import typings.zui.STATUS.STOPPED
-import typings.zui.STATUS.UPLOADING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

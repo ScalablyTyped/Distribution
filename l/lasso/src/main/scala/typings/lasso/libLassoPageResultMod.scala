@@ -1,7 +1,6 @@
 package typings.lasso
 
 import typings.lasso.libLassoContextMod.default
-import typings.lasso.libLassoPageResultMod.LassoPageResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

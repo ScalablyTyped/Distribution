@@ -1,9 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.TrackType.AUDIO
-import typings.chrome.chrome.cast.media.TrackType.TEXT
-import typings.chrome.chrome.cast.media.TrackType.VIDEO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

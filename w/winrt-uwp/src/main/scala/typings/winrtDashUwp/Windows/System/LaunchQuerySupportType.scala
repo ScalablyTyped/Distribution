@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.LaunchQuerySupportType.uri
-import typings.winrtDashUwp.Windows.System.LaunchQuerySupportType.uriForResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

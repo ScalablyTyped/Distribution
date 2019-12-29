@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BatchGetDocumentsResponse extends js.Object {
-  var found: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Document
-  ] = js.undefined
+  var found: js.UndefOr[Document] = js.undefined
   var missing: js.UndefOr[String] = js.undefined
   var readTime: js.UndefOr[String] = js.undefined
   var transaction: js.UndefOr[String] = js.undefined
@@ -16,7 +14,7 @@ trait BatchGetDocumentsResponse extends js.Object {
 object BatchGetDocumentsResponse {
   @scala.inline
   def apply(
-    found: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Document = null,
+    found: Document = null,
     missing: String = null,
     readTime: String = null,
     transaction: String = null

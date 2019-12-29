@@ -2,7 +2,6 @@ package typings.reactDashConfirm
 
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactElement
-import typings.reactDashConfirm.reactDashConfirmMod.ReactConfirmProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

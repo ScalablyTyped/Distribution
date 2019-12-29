@@ -1,10 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_OPTIONAL
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_REPEATED
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_REQUIRED
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

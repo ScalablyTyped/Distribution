@@ -1,6 +1,5 @@
 package typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod
 
-import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.java
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -216,13 +215,13 @@ import scala.scalajs.js.annotation._
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.`itch-io`
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.itunes
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.`itunes-note`
-  - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.java
+  - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.java_
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.`jedi-order`
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.jenkins
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.jira
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.joget
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.joomla
-  - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.JS
+  - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.js_
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.`js-square`
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.jsfiddle
   - typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.kaggle
@@ -2267,8 +2266,6 @@ trait IconName extends js.Object
 object IconName {
   @scala.inline
   def `500px`: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.`500px` = this.cast("500px")
-  @scala.inline
-  def JS: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.JS = this.cast("js")
   @scala.inline
   def abacus: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.abacus = this.cast("abacus")
   @scala.inline
@@ -4509,7 +4506,7 @@ object IconName {
   def `jack-o-lantern`: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.`jack-o-lantern` = this.cast("jack-o-lantern")
   @JSName("java")
   @scala.inline
-  def java_ : java = this.cast("java")
+  def java_ : typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.java_ = this.cast("java")
   @scala.inline
   def jedi: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.jedi = this.cast("jedi")
   @scala.inline
@@ -4530,6 +4527,9 @@ object IconName {
   def joystick: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.joystick = this.cast("joystick")
   @scala.inline
   def `js-square`: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.`js-square` = this.cast("js-square")
+  @JSName("js")
+  @scala.inline
+  def js_ : typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.js_ = this.cast("js")
   @scala.inline
   def jsfiddle: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.jsfiddle = this.cast("jsfiddle")
   @scala.inline

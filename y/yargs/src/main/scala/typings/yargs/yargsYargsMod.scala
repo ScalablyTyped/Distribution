@@ -14,7 +14,7 @@ object yargsYargsMod extends js.Object {
   def apply(
     processArgs: js.Array[String],
     cwd: String,
-    parentRequire: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ js.Any
+    parentRequire: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ js.Any
   ): Argv[js.Object] = js.native
 }
 

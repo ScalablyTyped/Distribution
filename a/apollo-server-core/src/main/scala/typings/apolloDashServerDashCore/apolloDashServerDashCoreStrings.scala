@@ -9,7 +9,7 @@ object apolloDashServerDashCoreStrings {
   sealed trait RecursivePartial extends js.Object
   
   @js.native
-  sealed trait `apq:` extends js.Object
+  sealed trait apqColon extends js.Object
   
   @js.native
   sealed trait cache extends js.Object
@@ -68,7 +68,7 @@ object apolloDashServerDashCoreStrings {
   @scala.inline
   def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   @scala.inline
-  def `apq:`: `apq:` = "apq:".asInstanceOf[`apq:`]
+  def apqColon: apqColon = "apq:".asInstanceOf[apqColon]
   @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline

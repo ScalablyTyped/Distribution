@@ -15,7 +15,8 @@ class ColorFormat protected () extends js.Object {
   val Creator: Double = js.native
   var ObjectThemeColor: MsoThemeColorIndex = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ColorFormat_typekey`: ColorFormat = js.native
+  @JSName("PowerPoint.ColorFormat_typekey")
+  var PowerPointDotColorFormat_typekey: ColorFormat = js.native
   var RGB: MsoRGBType = js.native
   var SchemeColor: PpColorSchemeIndex = js.native
   var TintAndShade: Double = js.native

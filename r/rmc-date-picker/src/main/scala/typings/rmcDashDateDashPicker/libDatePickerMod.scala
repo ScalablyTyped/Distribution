@@ -1,7 +1,6 @@
 package typings.rmcDashDateDashPicker
 
 import typings.react.reactMod.Component
-import typings.rmcDashDateDashPicker.libDatePickerMod.DatePicker
 import typings.rmcDashDateDashPicker.libIDatePickerPropsMod.IDatePickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

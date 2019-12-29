@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassRotator
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Rotator]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Rotator] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Rotator]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Rotator] {
   var Locale: js.Any = js.native
   var fn: Rotator = js.native
 }

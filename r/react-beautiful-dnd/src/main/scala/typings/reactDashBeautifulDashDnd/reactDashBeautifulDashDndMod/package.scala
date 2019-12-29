@@ -11,6 +11,7 @@ package object reactDashBeautifulDashDndMod {
   type DraggableId = Id
   type DroppableId = Id
   type Id = String
+  type OnBeforeCaptureResponder = js.Function1[/* before */ BeforeCapture, Unit]
   type OnBeforeDragStartResponder = js.Function1[/* start */ DragStart, Unit]
   type OnDragEndResponder = js.Function2[/* result */ DropResult, /* provided */ ResponderProvided, Unit]
   type OnDragStartResponder = js.Function2[/* start */ DragStart, /* provided */ ResponderProvided, Unit]

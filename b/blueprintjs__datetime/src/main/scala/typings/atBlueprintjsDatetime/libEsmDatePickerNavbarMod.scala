@@ -1,6 +1,5 @@
 package typings.atBlueprintjsDatetime
 
-import typings.atBlueprintjsDatetime.libEsmDatePickerNavbarMod.IDatePickerNavbarProps
 import typings.react.reactMod.Component
 import typings.reactDashDayDashPicker.typesPropsMod.NavbarElementProps
 import typings.std.Date

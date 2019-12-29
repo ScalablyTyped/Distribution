@@ -7,61 +7,61 @@ import scala.scalajs.js.annotation._
 
 object atUifabricStylingStrings {
   @js.native
-  sealed trait `_quoteLeelawadee UI Web_quote, _quoteKmer UI_quote` extends js.Object
+  sealed trait `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `_quoteMalgun Gothic_quote, Gulim` extends js.Object
+  sealed trait `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `_quoteMicrosoft Jhenghei UI_quote, Pmingliu` extends js.Object
+  sealed trait `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `_quoteMicrosoft Yahei UI_quote, Verdana, Simsun` extends js.Object
+  sealed trait `ApostropheLeelawadee UI WebApostropheComma ApostropheKmer UIApostrophe` extends js.Object
   
   @js.native
-  sealed trait `_quoteNirmala UI_quote` extends js.Object
+  sealed trait `ApostropheMalgun GothicApostropheComma Gulim` extends js.Object
   
   @js.native
-  sealed trait `_quoteYu Gothic UI_quote, _quoteMeiryo UI_quote, Meiryo, _quoteMS Pgothic_quote, Osaka` extends js.Object
+  sealed trait `ApostropheMicrosoft Jhenghei UIApostropheComma Pmingliu` extends js.Object
   
   @js.native
-  sealed trait `@media screen and (-ms-high-contrast: active)` extends js.Object
+  sealed trait `ApostropheMicrosoft Yahei UIApostropheComma VerdanaComma Simsun` extends js.Object
   
   @js.native
-  sealed trait `@media screen and (-ms-high-contrast: black-on-white)` extends js.Object
+  sealed trait `ApostropheNirmala UIApostrophe` extends js.Object
   
   @js.native
-  sealed trait `@media screen and (-ms-high-contrast: white-on-black)` extends js.Object
+  sealed trait `ApostropheYu Gothic UIApostropheComma ApostropheMeiryo UIApostropheComma MeiryoComma ApostropheMS PgothicApostropheComma Osaka` extends js.Object
   
   @js.native
   sealed trait `Leelawadee UI Web` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (Arabic)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisArabicRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (Armenian)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisArmenianRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (Cyrillic)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisCyrillicRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (East European)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisEast EuropeanRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (Georgian)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisGeorgianRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (Greek)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisGreekRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (Hebrew)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisHebrewRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (Vietnamese)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisVietnameseRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Segoe UI Web (West European)` extends js.Object
+  sealed trait `Segoe UI Web LeftparenthesisWest EuropeanRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Selawik Web` extends js.Object
@@ -97,43 +97,43 @@ object atUifabricStylingStrings {
   sealed trait vertical extends js.Object
   
   @scala.inline
-  def `_quoteLeelawadee UI Web_quote, _quoteKmer UI_quote`: `_quoteLeelawadee UI Web_quote, _quoteKmer UI_quote` = "'Leelawadee UI Web', 'Kmer UI'".asInstanceOf[`_quoteLeelawadee UI Web_quote, _quoteKmer UI_quote`]
+  def `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis` = "@media screen and (-ms-high-contrast: active)".asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`]
   @scala.inline
-  def `_quoteMalgun Gothic_quote, Gulim`: `_quoteMalgun Gothic_quote, Gulim` = "'Malgun Gothic', Gulim".asInstanceOf[`_quoteMalgun Gothic_quote, Gulim`]
+  def `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis` = "@media screen and (-ms-high-contrast: black-on-white)".asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`]
   @scala.inline
-  def `_quoteMicrosoft Jhenghei UI_quote, Pmingliu`: `_quoteMicrosoft Jhenghei UI_quote, Pmingliu` = "'Microsoft Jhenghei UI', Pmingliu".asInstanceOf[`_quoteMicrosoft Jhenghei UI_quote, Pmingliu`]
+  def `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis` = "@media screen and (-ms-high-contrast: white-on-black)".asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`]
   @scala.inline
-  def `_quoteMicrosoft Yahei UI_quote, Verdana, Simsun`: `_quoteMicrosoft Yahei UI_quote, Verdana, Simsun` = "'Microsoft Yahei UI', Verdana, Simsun".asInstanceOf[`_quoteMicrosoft Yahei UI_quote, Verdana, Simsun`]
+  def `ApostropheLeelawadee UI WebApostropheComma ApostropheKmer UIApostrophe`: `ApostropheLeelawadee UI WebApostropheComma ApostropheKmer UIApostrophe` = "'Leelawadee UI Web', 'Kmer UI'".asInstanceOf[`ApostropheLeelawadee UI WebApostropheComma ApostropheKmer UIApostrophe`]
   @scala.inline
-  def `_quoteNirmala UI_quote`: `_quoteNirmala UI_quote` = "'Nirmala UI'".asInstanceOf[`_quoteNirmala UI_quote`]
+  def `ApostropheMalgun GothicApostropheComma Gulim`: `ApostropheMalgun GothicApostropheComma Gulim` = "'Malgun Gothic', Gulim".asInstanceOf[`ApostropheMalgun GothicApostropheComma Gulim`]
   @scala.inline
-  def `_quoteYu Gothic UI_quote, _quoteMeiryo UI_quote, Meiryo, _quoteMS Pgothic_quote, Osaka`: `_quoteYu Gothic UI_quote, _quoteMeiryo UI_quote, Meiryo, _quoteMS Pgothic_quote, Osaka` = "'Yu Gothic UI', 'Meiryo UI', Meiryo, 'MS Pgothic', Osaka".asInstanceOf[`_quoteYu Gothic UI_quote, _quoteMeiryo UI_quote, Meiryo, _quoteMS Pgothic_quote, Osaka`]
+  def `ApostropheMicrosoft Jhenghei UIApostropheComma Pmingliu`: `ApostropheMicrosoft Jhenghei UIApostropheComma Pmingliu` = "'Microsoft Jhenghei UI', Pmingliu".asInstanceOf[`ApostropheMicrosoft Jhenghei UIApostropheComma Pmingliu`]
   @scala.inline
-  def `@media screen and (-ms-high-contrast: active)`: `@media screen and (-ms-high-contrast: active)` = "@media screen and (-ms-high-contrast: active)".asInstanceOf[`@media screen and (-ms-high-contrast: active)`]
+  def `ApostropheMicrosoft Yahei UIApostropheComma VerdanaComma Simsun`: `ApostropheMicrosoft Yahei UIApostropheComma VerdanaComma Simsun` = "'Microsoft Yahei UI', Verdana, Simsun".asInstanceOf[`ApostropheMicrosoft Yahei UIApostropheComma VerdanaComma Simsun`]
   @scala.inline
-  def `@media screen and (-ms-high-contrast: black-on-white)`: `@media screen and (-ms-high-contrast: black-on-white)` = "@media screen and (-ms-high-contrast: black-on-white)".asInstanceOf[`@media screen and (-ms-high-contrast: black-on-white)`]
+  def `ApostropheNirmala UIApostrophe`: `ApostropheNirmala UIApostrophe` = "'Nirmala UI'".asInstanceOf[`ApostropheNirmala UIApostrophe`]
   @scala.inline
-  def `@media screen and (-ms-high-contrast: white-on-black)`: `@media screen and (-ms-high-contrast: white-on-black)` = "@media screen and (-ms-high-contrast: white-on-black)".asInstanceOf[`@media screen and (-ms-high-contrast: white-on-black)`]
+  def `ApostropheYu Gothic UIApostropheComma ApostropheMeiryo UIApostropheComma MeiryoComma ApostropheMS PgothicApostropheComma Osaka`: `ApostropheYu Gothic UIApostropheComma ApostropheMeiryo UIApostropheComma MeiryoComma ApostropheMS PgothicApostropheComma Osaka` = "'Yu Gothic UI', 'Meiryo UI', Meiryo, 'MS Pgothic', Osaka".asInstanceOf[`ApostropheYu Gothic UIApostropheComma ApostropheMeiryo UIApostropheComma MeiryoComma ApostropheMS PgothicApostropheComma Osaka`]
   @scala.inline
   def `Leelawadee UI Web`: `Leelawadee UI Web` = "Leelawadee UI Web".asInstanceOf[`Leelawadee UI Web`]
   @scala.inline
-  def `Segoe UI Web (Arabic)`: `Segoe UI Web (Arabic)` = "Segoe UI Web (Arabic)".asInstanceOf[`Segoe UI Web (Arabic)`]
+  def `Segoe UI Web LeftparenthesisArabicRightparenthesis`: `Segoe UI Web LeftparenthesisArabicRightparenthesis` = "Segoe UI Web (Arabic)".asInstanceOf[`Segoe UI Web LeftparenthesisArabicRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (Armenian)`: `Segoe UI Web (Armenian)` = "Segoe UI Web (Armenian)".asInstanceOf[`Segoe UI Web (Armenian)`]
+  def `Segoe UI Web LeftparenthesisArmenianRightparenthesis`: `Segoe UI Web LeftparenthesisArmenianRightparenthesis` = "Segoe UI Web (Armenian)".asInstanceOf[`Segoe UI Web LeftparenthesisArmenianRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (Cyrillic)`: `Segoe UI Web (Cyrillic)` = "Segoe UI Web (Cyrillic)".asInstanceOf[`Segoe UI Web (Cyrillic)`]
+  def `Segoe UI Web LeftparenthesisCyrillicRightparenthesis`: `Segoe UI Web LeftparenthesisCyrillicRightparenthesis` = "Segoe UI Web (Cyrillic)".asInstanceOf[`Segoe UI Web LeftparenthesisCyrillicRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (East European)`: `Segoe UI Web (East European)` = "Segoe UI Web (East European)".asInstanceOf[`Segoe UI Web (East European)`]
+  def `Segoe UI Web LeftparenthesisEast EuropeanRightparenthesis`: `Segoe UI Web LeftparenthesisEast EuropeanRightparenthesis` = "Segoe UI Web (East European)".asInstanceOf[`Segoe UI Web LeftparenthesisEast EuropeanRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (Georgian)`: `Segoe UI Web (Georgian)` = "Segoe UI Web (Georgian)".asInstanceOf[`Segoe UI Web (Georgian)`]
+  def `Segoe UI Web LeftparenthesisGeorgianRightparenthesis`: `Segoe UI Web LeftparenthesisGeorgianRightparenthesis` = "Segoe UI Web (Georgian)".asInstanceOf[`Segoe UI Web LeftparenthesisGeorgianRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (Greek)`: `Segoe UI Web (Greek)` = "Segoe UI Web (Greek)".asInstanceOf[`Segoe UI Web (Greek)`]
+  def `Segoe UI Web LeftparenthesisGreekRightparenthesis`: `Segoe UI Web LeftparenthesisGreekRightparenthesis` = "Segoe UI Web (Greek)".asInstanceOf[`Segoe UI Web LeftparenthesisGreekRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (Hebrew)`: `Segoe UI Web (Hebrew)` = "Segoe UI Web (Hebrew)".asInstanceOf[`Segoe UI Web (Hebrew)`]
+  def `Segoe UI Web LeftparenthesisHebrewRightparenthesis`: `Segoe UI Web LeftparenthesisHebrewRightparenthesis` = "Segoe UI Web (Hebrew)".asInstanceOf[`Segoe UI Web LeftparenthesisHebrewRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (Vietnamese)`: `Segoe UI Web (Vietnamese)` = "Segoe UI Web (Vietnamese)".asInstanceOf[`Segoe UI Web (Vietnamese)`]
+  def `Segoe UI Web LeftparenthesisVietnameseRightparenthesis`: `Segoe UI Web LeftparenthesisVietnameseRightparenthesis` = "Segoe UI Web (Vietnamese)".asInstanceOf[`Segoe UI Web LeftparenthesisVietnameseRightparenthesis`]
   @scala.inline
-  def `Segoe UI Web (West European)`: `Segoe UI Web (West European)` = "Segoe UI Web (West European)".asInstanceOf[`Segoe UI Web (West European)`]
+  def `Segoe UI Web LeftparenthesisWest EuropeanRightparenthesis`: `Segoe UI Web LeftparenthesisWest EuropeanRightparenthesis` = "Segoe UI Web (West European)".asInstanceOf[`Segoe UI Web LeftparenthesisWest EuropeanRightparenthesis`]
   @scala.inline
   def `Selawik Web`: `Selawik Web` = "Selawik Web".asInstanceOf[`Selawik Web`]
   @scala.inline

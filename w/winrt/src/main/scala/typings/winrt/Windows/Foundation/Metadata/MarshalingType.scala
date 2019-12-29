@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Foundation.Metadata.MarshalingType.agile
-import typings.winrt.Windows.Foundation.Metadata.MarshalingType.invalidMarshaling
-import typings.winrt.Windows.Foundation.Metadata.MarshalingType.none
-import typings.winrt.Windows.Foundation.Metadata.MarshalingType.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

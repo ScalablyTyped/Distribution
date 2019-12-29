@@ -14,15 +14,14 @@ import typings.react.reactMod.DOMElement
 import typings.react.reactMod.DetailedReactHTMLElement
 import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.FunctionComponentElement
+import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.InputHTMLAttributes
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
-import typings.react.reactMod.ReactSVGElement
-import typings.react.reactMod.SVGAttributes
 import typings.rehypeDashReact.rehypeDashReactStrings.input
 import typings.std.Element
+import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,16 +55,16 @@ trait Fn_A extends js.Object {
   def apply[P /* <: js.Object */](`type`: FunctionComponent[P], children: ReactNode*): FunctionComponentElement[P] = js.native
   def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
   def apply[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): ReactSVGElement = js.native
-  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
+  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any,
     children: ReactNode*
-  ): ReactSVGElement = js.native
-  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+  ): DetailedReactHTMLElement[P, T] = js.native
+  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any,
     props: ClassAttributes[T] with P,
     children: ReactNode*
-  ): ReactSVGElement = js.native
+  ): DetailedReactHTMLElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], children: ReactNode*): CElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native

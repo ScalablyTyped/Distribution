@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothAddressType.public
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothAddressType.random
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

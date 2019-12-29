@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.Empty
+  - typings.std.stdStrings._empty
   - typings.std.stdStrings.audio
   - typings.std.stdStrings.audioworklet
   - typings.std.stdStrings.document
@@ -28,7 +28,7 @@ trait RequestDestination extends js.Object
 
 object RequestDestination {
   @scala.inline
-  def Empty: typings.std.stdStrings.Empty = this.cast("")
+  def _empty: typings.std.stdStrings._empty = this.cast("")
   @scala.inline
   def audio: typings.std.stdStrings.audio = this.cast("audio")
   @scala.inline

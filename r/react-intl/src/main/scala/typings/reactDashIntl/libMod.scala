@@ -6,10 +6,8 @@ import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Context
 import typings.react.reactMod.FC
 import typings.react.reactMod.ForwardRefExoticComponent
-import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.PropsWithoutRef
-import typings.react.reactMod.ProviderExoticComponent
-import typings.react.reactMod.ProviderProps
+import typings.react.reactMod.Provider
 import typings.react.reactMod.RefAttributes
 import typings.reactDashIntl.libComponentsHtmlDashMessageMod.default
 import typings.reactDashIntl.libComponentsInjectIntlMod.Opts
@@ -23,8 +21,8 @@ import typings.reactDashIntl.libTypesMod.FormatNumberOptions
 import typings.reactDashIntl.libTypesMod.IntlCache
 import typings.reactDashIntl.libTypesMod.IntlConfig
 import typings.reactDashIntl.libTypesMod.IntlShape
-import typings.reactDashIntl.reactDashIntlNumbers.`false`
-import typings.reactDashIntl.reactDashIntlNumbers.`true`
+import typings.reactDashIntl.reactDashIntlBooleans.`false`
+import typings.reactDashIntl.reactDashIntlBooleans.`true`
 import typings.reactDashIntl.reactDashIntlStrings.`type`
 import typings.reactDashIntl.reactDashIntlStrings.children
 import typings.reactDashIntl.reactDashIntlStrings.defaultFormats
@@ -73,20 +71,20 @@ object libMod extends js.Object {
     extends typings.reactDashIntl.libComponentsProviderMod.default
   
   val FormattedDate: FC[DateTimeFormatOptions with CustomFormatConfig with Anon_Value] = js.native
-  val FormattedDateParts: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
+  val FormattedDateParts: FC[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
   val FormattedList: FC[IntlListFormatOptions with Anon_ValueArray] = js.native
   val FormattedNumber: FC[UnifiedNumberFormatOptions with CustomFormatConfig with Anon_ValueNumber] = js.native
   val FormattedNumberParts: FC[FormatNumberOptions with Anon_0] = js.native
   val FormattedPlural: (ForwardRefExoticComponent[
     (Pick[
       typings.reactDashIntl.libComponentsPluralMod.Props, 
-      children | other | zero | one | two | few | many | localeMatcher | `type` | format | value
+      children | other | zero | one | two | few | many | format | localeMatcher | `type` | value
     ]) with Anon_ForwardedRefInstance with RefAttributes[_]
   ]) with Anon_WrappedComponentComponentType = js.native
   val FormattedTime: FC[DateTimeFormatOptions with CustomFormatConfig with Anon_Value] = js.native
-  val FormattedTimeParts: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
+  val FormattedTimeParts: FC[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
   val IntlContext: Context[IntlShape] = js.native
-  val RawIntlProvider: ProviderExoticComponent[ProviderProps[IntlShape]] = js.native
+  val RawIntlProvider: Provider[IntlShape] = js.native
   def createIntl(config: OptionalIntlConfig): IntlShape = js.native
   def createIntl(config: OptionalIntlConfig, cache: IntlCache): IntlShape = js.native
   def createIntlCache(): IntlCache = js.native

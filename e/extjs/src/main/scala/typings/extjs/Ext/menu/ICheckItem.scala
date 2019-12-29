@@ -12,15 +12,15 @@ trait ICheckItem extends IItem {
   /** [Config Option] (Boolean) */
   var checked: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var checkedCls: js.UndefOr[java.lang.String] = js.undefined
+  var checkedCls: js.UndefOr[String] = js.undefined
   /** [Method] Disables just the checkbox functionality of this menu Item  */
   var disableCheckChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Reenables the checkbox functionality of this menu item after having been disabled by disableCheckChange */
   var enableCheckChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var group: js.UndefOr[java.lang.String] = js.undefined
+  var group: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var groupCls: js.UndefOr[java.lang.String] = js.undefined
+  var groupCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the checked state of the item
@@ -31,7 +31,7 @@ trait ICheckItem extends IItem {
     js.Function2[/* checked */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Config Option] (String) */
-  var uncheckedCls: js.UndefOr[java.lang.String] = js.undefined
+  var uncheckedCls: js.UndefOr[String] = js.undefined
 }
 
 object ICheckItem {
@@ -41,14 +41,14 @@ object ICheckItem {
     checkChangeDisabled: js.UndefOr[Boolean] = js.undefined,
     checkHandler: js.Any = null,
     checked: js.UndefOr[Boolean] = js.undefined,
-    checkedCls: java.lang.String = null,
+    checkedCls: String = null,
     disableCheckChange: () => Unit = null,
     enableCheckChange: () => Unit = null,
-    group: java.lang.String = null,
-    groupCls: java.lang.String = null,
+    group: String = null,
+    groupCls: String = null,
     scope: js.Any = null,
     setChecked: (/* checked */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean]) => Unit = null,
-    uncheckedCls: java.lang.String = null
+    uncheckedCls: String = null
   ): ICheckItem = {
     val __obj = js.Dynamic.literal()
     if (IItem != null) js.Dynamic.global.Object.assign(__obj, IItem)

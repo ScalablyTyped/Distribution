@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.dsss
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.erp
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.fhss
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.hrdsss
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.ht
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.irBaseband
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.ofdm
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.unknown
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiPhyKind.vht
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

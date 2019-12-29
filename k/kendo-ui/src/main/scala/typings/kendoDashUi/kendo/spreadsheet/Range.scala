@@ -18,22 +18,22 @@ class Range () extends Observable {
   def bold(value: Boolean): Unit = js.native
   @JSName("bold")
   def bold_Unit(): Unit = js.native
-  def borderBottom(): Unit = js.native
+  def borderBottom(): js.Any = js.native
   def borderBottom(value: js.Any): Unit = js.native
   @JSName("borderBottom")
-  def borderBottom_Any(): js.Any = js.native
-  def borderLeft(): Unit = js.native
+  def borderBottom_Unit(): Unit = js.native
+  def borderLeft(): js.Any = js.native
   def borderLeft(value: js.Any): Unit = js.native
   @JSName("borderLeft")
-  def borderLeft_Any(): js.Any = js.native
-  def borderRight(): Unit = js.native
+  def borderLeft_Unit(): Unit = js.native
+  def borderRight(): js.Any = js.native
   def borderRight(value: js.Any): Unit = js.native
   @JSName("borderRight")
-  def borderRight_Any(): js.Any = js.native
-  def borderTop(): Unit = js.native
+  def borderRight_Unit(): Unit = js.native
+  def borderTop(): js.Any = js.native
   def borderTop(value: js.Any): Unit = js.native
   @JSName("borderTop")
-  def borderTop_Any(): js.Any = js.native
+  def borderTop_Unit(): Unit = js.native
   def clear(): Unit = js.native
   def clear(options: js.Any): Unit = js.native
   def clearFilter(indices: js.Any): Unit = js.native
@@ -78,12 +78,12 @@ class Range () extends Observable {
   @JSName("formula")
   def formula_Unit(): Unit = js.native
   def hasFilter(): Boolean = js.native
-  def input(): Unit = js.native
+  def input(): js.Any = js.native
   def input(value: String): Unit = js.native
   def input(value: Double): Unit = js.native
   def input(value: Date): Unit = js.native
   @JSName("input")
-  def input_Any(): js.Any = js.native
+  def input_Unit(): Unit = js.native
   def isFilterable(): Boolean = js.native
   def isSortable(): Boolean = js.native
   def italic(): Boolean = js.native
@@ -103,16 +103,16 @@ class Range () extends Observable {
   @JSName("textAlign")
   def textAlign_Unit(): Unit = js.native
   def unmerge(): Unit = js.native
-  def validation(): Unit = js.native
+  def validation(): js.Any = js.native
   def validation(value: js.Any): Unit = js.native
   @JSName("validation")
-  def validation_Any(): js.Any = js.native
-  def value(): Unit = js.native
+  def validation_Unit(): Unit = js.native
+  def value(): js.Any = js.native
   def value(value: String): Unit = js.native
   def value(value: Double): Unit = js.native
   def value(value: Date): Unit = js.native
   @JSName("value")
-  def value_Any(): js.Any = js.native
+  def value_Unit(): Unit = js.native
   def values(): js.Any = js.native
   def values(values: js.Any): Unit = js.native
   def verticalAlign(): String = js.native

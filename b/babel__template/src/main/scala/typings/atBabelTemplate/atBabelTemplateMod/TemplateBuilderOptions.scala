@@ -5,7 +5,7 @@ import typings.atBabelParser.atBabelParserMod.ParserPlugin
 import typings.atBabelParser.atBabelParserStrings.module
 import typings.atBabelParser.atBabelParserStrings.script
 import typings.atBabelParser.atBabelParserStrings.unambiguous
-import typings.atBabelTemplate.atBabelTemplateNumbers.`false`
+import typings.atBabelTemplate.atBabelTemplateBooleans.`false`
 import typings.std.RegExp
 import typings.std.Set
 import scala.scalajs.js

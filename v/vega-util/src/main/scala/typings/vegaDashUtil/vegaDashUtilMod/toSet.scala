@@ -1,7 +1,7 @@
 package typings.vegaDashUtil.vegaDashUtilMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vegaDashUtil.vegaDashUtilNumbers.`true`
+import typings.vegaDashUtil.vegaDashUtilBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

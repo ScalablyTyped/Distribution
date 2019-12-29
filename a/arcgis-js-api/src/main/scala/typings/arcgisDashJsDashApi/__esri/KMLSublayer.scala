@@ -34,6 +34,12 @@ trait KMLSublayer
     */
   var networkLink: js.Any = js.native
   /**
+    * The raw KML data for this sublayer, in JSON format, as returned by the [KML utility service](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#kmlServiceUrl).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html#sourceJSON)
+    */
+  var sourceJSON: js.Any = js.native
+  /**
     * A collection of [KMLSublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html#sublayers)

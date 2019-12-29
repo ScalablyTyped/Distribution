@@ -11,7 +11,8 @@ class XSLTransform protected () extends js.Object {
   val Creator: Double = js.native
   val ID: String = js.native
   val Parent: js.Any = js.native
-  var `Word.XSLTransform_typekey`: XSLTransform = js.native
+  @JSName("Word.XSLTransform_typekey")
+  var WordDotXSLTransform_typekey: XSLTransform = js.native
   /** @param boolean [AllUsers=false] */
   def Alias(): String = js.native
   def Alias(AllUsers: Boolean): String = js.native

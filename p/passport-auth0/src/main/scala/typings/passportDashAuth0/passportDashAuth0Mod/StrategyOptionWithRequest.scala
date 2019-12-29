@@ -1,6 +1,6 @@
 package typings.passportDashAuth0.passportDashAuth0Mod
 
-import typings.passportDashAuth0.passportDashAuth0Numbers.`true`
+import typings.passportDashAuth0.passportDashAuth0Booleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

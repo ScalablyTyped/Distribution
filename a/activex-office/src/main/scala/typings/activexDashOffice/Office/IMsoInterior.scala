@@ -12,7 +12,8 @@ class IMsoInterior protected () extends js.Object {
   var ColorIndex: js.Any = js.native
   val Creator: Double = js.native
   var InvertIfNegative: js.Any = js.native
-  var `Office.IMsoInterior_typekey`: IMsoInterior = js.native
+  @JSName("Office.IMsoInterior_typekey")
+  var OfficeDotIMsoInterior_typekey: IMsoInterior = js.native
   val Parent: js.Any = js.native
   var Pattern: js.Any = js.native
   var PatternColor: js.Any = js.native

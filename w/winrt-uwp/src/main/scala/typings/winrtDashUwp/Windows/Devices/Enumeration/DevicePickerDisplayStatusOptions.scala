@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.none
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showDisconnectButton
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showProgress
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showRetryButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

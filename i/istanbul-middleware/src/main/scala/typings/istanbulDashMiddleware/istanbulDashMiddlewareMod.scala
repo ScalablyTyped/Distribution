@@ -2,8 +2,6 @@ package typings.istanbulDashMiddleware
 
 import typings.express.expressMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
-import typings.istanbulDashMiddleware.istanbulDashMiddlewareMod.Matcher
-import typings.istanbulDashMiddleware.istanbulDashMiddlewareMod.PostLoadHookFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

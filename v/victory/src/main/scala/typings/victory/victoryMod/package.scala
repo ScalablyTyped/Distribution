@@ -45,22 +45,23 @@ package object victoryMod {
   type DomainPaddingPropType = Double | Anon_XYNumber
   /* Rewritten from type alias, can be one of: 
     - typings.victory.victoryMod.DomainTuple
-    - typings.victory.Anon_XY
     - typings.victory.Anon_XYDomainTuple
+    - typings.victory.Anon_XYDomainTupleOptional
   */
   type DomainPropType = _DomainPropType | DomainTuple
   /**
     * Data domain type
     */
   type DomainTuple = js.Tuple2[Date | Double, Date | Double]
-  type NumberOrCallback = (js.Function2[/* datum */ js.Any, /* active */ Boolean, Double]) | Double
+  type NumberOrCallback = Double | VictoryNumberCallback
   /**
     * @see https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html
     */
   type Omit[T, K] = Pick[T, Exclude[String, K]]
   type PaddingProps = Double | BlockProps
-  // Many victory components accept string or number or callback which returns string or number
-  type StringOrNumberOrCallback = String | Double | (js.Function2[/* datum */ js.Any, /* active */ Boolean, String | Double])
+  type StringOrNumberOrCallback = String | Double | VictoryStringOrNumberCallback
+  type VictoryNumberCallback = js.Function1[/* args */ CallbackArgs, Double]
+  type VictoryStringOrNumberCallback = js.Function1[/* args */ CallbackArgs, String | Double]
   type VictoryStyleObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof react.react.CSSProperties ]: victory.victory.StringOrNumberOrCallback}
     */ typings.victory.victoryStrings.VictoryStyleObject with js.Any

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Formulas extends Base {
   var dataProvider: DataProvider
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var sheet: Sheet
   var undoRedoSnapshot: UndoRedoSnapshot
   def getCellValue(row: Double, column: Double): js.Any
@@ -30,7 +30,7 @@ object Formulas {
     disablePlugin: () => Unit,
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     getCellValue: (Double, Double) => js.Any,
     getVariable: String => js.Any,
     hasComputedCellValue: (Double, Double) => Boolean,

@@ -1,7 +1,5 @@
 package typings.sinonDashStubDashPromise.sinonDashStubDashPromiseMod
 
-import typings.sinonDashStubDashPromise.sinonDashStubDashPromiseMod.sinonMod.SinonStub
-import typings.sinonDashStubDashPromise.sinonDashStubDashPromiseMod.sinonMod.SinonThenable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

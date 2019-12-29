@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class text protected () extends node {
   def this(text: String) = this()
   def this(text: Text) = this()
-  def this(text: String, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
-  def this(text: Text, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
+  def this(text: String, ownerDocument: document) = this()
+  def this(text: Text, ownerDocument: document) = this()
   @JSName("$")
   val $_text: Text = js.native
   def getLength(): Double = js.native

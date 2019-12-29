@@ -172,7 +172,7 @@ object SeriesPolygonOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     stacking: OptionsStackingValue = null,
     states: PlotPolygonStatesOptions = null,
     step: OptionsStepValue = null,

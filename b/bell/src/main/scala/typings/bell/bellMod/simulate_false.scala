@@ -1,6 +1,6 @@
 package typings.bell.bellMod
 
-import typings.bell.bellNumbers.`false`
+import typings.bell.bellBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

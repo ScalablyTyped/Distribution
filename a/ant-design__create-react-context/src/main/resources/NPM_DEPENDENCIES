@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/create-react-context" : "0.2.4"
+      "@ant-design/create-react-context" : "0.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/create-react-context" : "0.2.4"
+      "@ant-design/create-react-context" : "0.2.5"
     }
   ],
   "compile-devDependencies" : [

@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HammerStatic
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ HTMLElement) | (/* element */ SVGElement), HammerManager]
+     with Instantiable2[
       (/* element */ HTMLElement) | (/* element */ SVGElement), 
       /* options */ HammerOptions, 
       HammerManager
-    ]
-     with Instantiable1[(/* element */ HTMLElement) | (/* element */ SVGElement), HammerManager] {
+    ] {
   var AttrRecognizer: AttrRecognizerStatic = js.native
   var DIRECTION_ALL: Double = js.native
   var DIRECTION_DOWN: Double = js.native

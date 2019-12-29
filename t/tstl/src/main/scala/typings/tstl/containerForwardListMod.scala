@@ -9,7 +9,6 @@ import typings.tstl.baseDisposableIListAlgorithmMod._IListAlgorithm
 import typings.tstl.baseDisposableIPartialContainersMod._IClear
 import typings.tstl.baseDisposableIPartialContainersMod._IEmpty
 import typings.tstl.baseDisposableIPartialContainersMod._ISize
-import typings.tstl.containerForwardListMod.ForwardList
 import typings.tstl.containerForwardListMod.ForwardList.Iterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js

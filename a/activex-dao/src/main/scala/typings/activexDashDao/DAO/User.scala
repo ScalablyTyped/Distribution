@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DAO.User")
 @js.native
 class User protected () extends js.Object {
-  var `DAO.User_typekey`: User = js.native
+  @JSName("DAO.User_typekey")
+  var DAODotUser_typekey: User = js.native
   @JSName("Groups")
   val Groups_Original: Groups = js.native
   var Name: String = js.native

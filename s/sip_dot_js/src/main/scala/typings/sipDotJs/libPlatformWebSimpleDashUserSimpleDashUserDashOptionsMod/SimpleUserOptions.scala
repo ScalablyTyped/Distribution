@@ -23,6 +23,22 @@ trait SimpleUserOptions extends js.Object {
     */
   var media: js.UndefOr[SimpleUserMedia] = js.undefined
   /**
+    * Maximum number of times to attempt to reconnection.
+    * @remarks
+    * When the transport connection is lost (WebSocket disconnects),
+    * reconnection will be attempted immediately. If that fails,
+    * reconnection will be attempted again when the browser indicates
+    * the application has come online. See:
+    * https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine
+    * @defaultValue 3
+    */
+  var reconnectionAttempts: js.UndefOr[Double] = js.undefined
+  /**
+    * Seconds to wait between reconnection attempts.
+    * @defaultValue 4
+    */
+  var reconnectionDelay: js.UndefOr[Double] = js.undefined
+  /**
     * Options for UserAgent.
     */
   var userAgentOptions: js.UndefOr[UserAgentOptions] = js.undefined
@@ -34,12 +50,16 @@ object SimpleUserOptions {
     aor: String = null,
     delegate: SimpleUserDelegate = null,
     media: SimpleUserMedia = null,
+    reconnectionAttempts: Int | Double = null,
+    reconnectionDelay: Int | Double = null,
     userAgentOptions: UserAgentOptions = null
   ): SimpleUserOptions = {
     val __obj = js.Dynamic.literal()
     if (aor != null) __obj.updateDynamic("aor")(aor.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (reconnectionAttempts != null) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.asInstanceOf[js.Any])
+    if (reconnectionDelay != null) __obj.updateDynamic("reconnectionDelay")(reconnectionDelay.asInstanceOf[js.Any])
     if (userAgentOptions != null) __obj.updateDynamic("userAgentOptions")(userAgentOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleUserOptions]
   }

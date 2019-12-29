@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOut.ALLOW_ALL
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOut.ALLOW_ALL_NEVER_RETURN
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOut.ALLOW_RETURNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.None
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.PublisherCreated
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.UserEditable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

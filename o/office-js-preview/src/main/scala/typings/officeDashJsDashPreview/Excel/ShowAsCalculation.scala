@@ -1,22 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.differenceFrom
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.index
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.none
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentDifferenceFrom
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentOf
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentOfColumnTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentOfGrandTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentOfParentColumnTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentOfParentRowTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentOfParentTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentOfRowTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.percentRunningTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.rankAscending
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.rankDecending
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.runningTotal
-import typings.officeDashJsDashPreview.Excel.ShowAsCalculation.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

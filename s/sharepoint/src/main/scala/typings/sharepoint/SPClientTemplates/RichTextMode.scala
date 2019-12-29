@@ -1,10 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientTemplates.RichTextMode.Compatible
-import typings.sharepoint.SPClientTemplates.RichTextMode.FullHtml
-import typings.sharepoint.SPClientTemplates.RichTextMode.HtmlAsXml
-import typings.sharepoint.SPClientTemplates.RichTextMode.ThemeHtml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

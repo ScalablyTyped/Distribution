@@ -2,7 +2,6 @@ package typings.atAntDashDesignReactDashNative
 
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.List
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.`List Example`
-import typings.atAntDashDesignReactDashNative.libListDemoBasicMod.BasicListExample
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

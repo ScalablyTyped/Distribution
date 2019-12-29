@@ -13,7 +13,8 @@ class SmartArtLayout protected () extends js.Object {
   val Description: String = js.native
   val Id: String = js.native
   val Name: String = js.native
-  var `Office.SmartArtLayout_typekey`: SmartArtLayout = js.native
+  @JSName("Office.SmartArtLayout_typekey")
+  var OfficeDotSmartArtLayout_typekey: SmartArtLayout = js.native
   val Parent: js.Any = js.native
 }
 

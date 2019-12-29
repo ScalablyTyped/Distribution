@@ -30,6 +30,8 @@ trait TokenColors extends js.Object {
   var gray500: String
   var gray600: String
   var gray700: String
+  var gray800: String
+  var gray900: String
   var green100: String
   var green200: String
   var green300: String
@@ -46,6 +48,14 @@ trait TokenColors extends js.Object {
   var orange500: String
   var orange600: String
   var orange700: String
+  var platinum100: String
+  var platinum200: String
+  var platinum300: String
+  var platinum400: String
+  var platinum50: String
+  var platinum500: String
+  var platinum600: String
+  var platinum700: String
   var purple100: String
   var purple200: String
   var purple300: String
@@ -101,6 +111,8 @@ object TokenColors {
     gray500: String,
     gray600: String,
     gray700: String,
+    gray800: String,
+    gray900: String,
     green100: String,
     green200: String,
     green300: String,
@@ -117,6 +129,14 @@ object TokenColors {
     orange500: String,
     orange600: String,
     orange700: String,
+    platinum100: String,
+    platinum200: String,
+    platinum300: String,
+    platinum400: String,
+    platinum50: String,
+    platinum500: String,
+    platinum600: String,
+    platinum700: String,
     purple100: String,
     purple200: String,
     purple300: String,
@@ -143,7 +163,7 @@ object TokenColors {
     yellow600: String,
     yellow700: String
   ): TokenColors = {
-    val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], blue100 = blue100.asInstanceOf[js.Any], blue200 = blue200.asInstanceOf[js.Any], blue300 = blue300.asInstanceOf[js.Any], blue400 = blue400.asInstanceOf[js.Any], blue50 = blue50.asInstanceOf[js.Any], blue500 = blue500.asInstanceOf[js.Any], blue600 = blue600.asInstanceOf[js.Any], blue700 = blue700.asInstanceOf[js.Any], brown100 = brown100.asInstanceOf[js.Any], brown200 = brown200.asInstanceOf[js.Any], brown300 = brown300.asInstanceOf[js.Any], brown400 = brown400.asInstanceOf[js.Any], brown50 = brown50.asInstanceOf[js.Any], brown500 = brown500.asInstanceOf[js.Any], brown600 = brown600.asInstanceOf[js.Any], brown700 = brown700.asInstanceOf[js.Any], gray100 = gray100.asInstanceOf[js.Any], gray200 = gray200.asInstanceOf[js.Any], gray300 = gray300.asInstanceOf[js.Any], gray400 = gray400.asInstanceOf[js.Any], gray50 = gray50.asInstanceOf[js.Any], gray500 = gray500.asInstanceOf[js.Any], gray600 = gray600.asInstanceOf[js.Any], gray700 = gray700.asInstanceOf[js.Any], green100 = green100.asInstanceOf[js.Any], green200 = green200.asInstanceOf[js.Any], green300 = green300.asInstanceOf[js.Any], green400 = green400.asInstanceOf[js.Any], green50 = green50.asInstanceOf[js.Any], green500 = green500.asInstanceOf[js.Any], green600 = green600.asInstanceOf[js.Any], green700 = green700.asInstanceOf[js.Any], orange100 = orange100.asInstanceOf[js.Any], orange200 = orange200.asInstanceOf[js.Any], orange300 = orange300.asInstanceOf[js.Any], orange400 = orange400.asInstanceOf[js.Any], orange50 = orange50.asInstanceOf[js.Any], orange500 = orange500.asInstanceOf[js.Any], orange600 = orange600.asInstanceOf[js.Any], orange700 = orange700.asInstanceOf[js.Any], purple100 = purple100.asInstanceOf[js.Any], purple200 = purple200.asInstanceOf[js.Any], purple300 = purple300.asInstanceOf[js.Any], purple400 = purple400.asInstanceOf[js.Any], purple50 = purple50.asInstanceOf[js.Any], purple500 = purple500.asInstanceOf[js.Any], purple600 = purple600.asInstanceOf[js.Any], purple700 = purple700.asInstanceOf[js.Any], red100 = red100.asInstanceOf[js.Any], red200 = red200.asInstanceOf[js.Any], red300 = red300.asInstanceOf[js.Any], red400 = red400.asInstanceOf[js.Any], red50 = red50.asInstanceOf[js.Any], red500 = red500.asInstanceOf[js.Any], red600 = red600.asInstanceOf[js.Any], red700 = red700.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any], yellow100 = yellow100.asInstanceOf[js.Any], yellow200 = yellow200.asInstanceOf[js.Any], yellow300 = yellow300.asInstanceOf[js.Any], yellow400 = yellow400.asInstanceOf[js.Any], yellow50 = yellow50.asInstanceOf[js.Any], yellow500 = yellow500.asInstanceOf[js.Any], yellow600 = yellow600.asInstanceOf[js.Any], yellow700 = yellow700.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], blue100 = blue100.asInstanceOf[js.Any], blue200 = blue200.asInstanceOf[js.Any], blue300 = blue300.asInstanceOf[js.Any], blue400 = blue400.asInstanceOf[js.Any], blue50 = blue50.asInstanceOf[js.Any], blue500 = blue500.asInstanceOf[js.Any], blue600 = blue600.asInstanceOf[js.Any], blue700 = blue700.asInstanceOf[js.Any], brown100 = brown100.asInstanceOf[js.Any], brown200 = brown200.asInstanceOf[js.Any], brown300 = brown300.asInstanceOf[js.Any], brown400 = brown400.asInstanceOf[js.Any], brown50 = brown50.asInstanceOf[js.Any], brown500 = brown500.asInstanceOf[js.Any], brown600 = brown600.asInstanceOf[js.Any], brown700 = brown700.asInstanceOf[js.Any], gray100 = gray100.asInstanceOf[js.Any], gray200 = gray200.asInstanceOf[js.Any], gray300 = gray300.asInstanceOf[js.Any], gray400 = gray400.asInstanceOf[js.Any], gray50 = gray50.asInstanceOf[js.Any], gray500 = gray500.asInstanceOf[js.Any], gray600 = gray600.asInstanceOf[js.Any], gray700 = gray700.asInstanceOf[js.Any], gray800 = gray800.asInstanceOf[js.Any], gray900 = gray900.asInstanceOf[js.Any], green100 = green100.asInstanceOf[js.Any], green200 = green200.asInstanceOf[js.Any], green300 = green300.asInstanceOf[js.Any], green400 = green400.asInstanceOf[js.Any], green50 = green50.asInstanceOf[js.Any], green500 = green500.asInstanceOf[js.Any], green600 = green600.asInstanceOf[js.Any], green700 = green700.asInstanceOf[js.Any], orange100 = orange100.asInstanceOf[js.Any], orange200 = orange200.asInstanceOf[js.Any], orange300 = orange300.asInstanceOf[js.Any], orange400 = orange400.asInstanceOf[js.Any], orange50 = orange50.asInstanceOf[js.Any], orange500 = orange500.asInstanceOf[js.Any], orange600 = orange600.asInstanceOf[js.Any], orange700 = orange700.asInstanceOf[js.Any], platinum100 = platinum100.asInstanceOf[js.Any], platinum200 = platinum200.asInstanceOf[js.Any], platinum300 = platinum300.asInstanceOf[js.Any], platinum400 = platinum400.asInstanceOf[js.Any], platinum50 = platinum50.asInstanceOf[js.Any], platinum500 = platinum500.asInstanceOf[js.Any], platinum600 = platinum600.asInstanceOf[js.Any], platinum700 = platinum700.asInstanceOf[js.Any], purple100 = purple100.asInstanceOf[js.Any], purple200 = purple200.asInstanceOf[js.Any], purple300 = purple300.asInstanceOf[js.Any], purple400 = purple400.asInstanceOf[js.Any], purple50 = purple50.asInstanceOf[js.Any], purple500 = purple500.asInstanceOf[js.Any], purple600 = purple600.asInstanceOf[js.Any], purple700 = purple700.asInstanceOf[js.Any], red100 = red100.asInstanceOf[js.Any], red200 = red200.asInstanceOf[js.Any], red300 = red300.asInstanceOf[js.Any], red400 = red400.asInstanceOf[js.Any], red50 = red50.asInstanceOf[js.Any], red500 = red500.asInstanceOf[js.Any], red600 = red600.asInstanceOf[js.Any], red700 = red700.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any], yellow100 = yellow100.asInstanceOf[js.Any], yellow200 = yellow200.asInstanceOf[js.Any], yellow300 = yellow300.asInstanceOf[js.Any], yellow400 = yellow400.asInstanceOf[js.Any], yellow50 = yellow50.asInstanceOf[js.Any], yellow500 = yellow500.asInstanceOf[js.Any], yellow600 = yellow600.asInstanceOf[js.Any], yellow700 = yellow700.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TokenColors]
   }

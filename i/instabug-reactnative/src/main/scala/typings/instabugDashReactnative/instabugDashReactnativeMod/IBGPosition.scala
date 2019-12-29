@@ -1,10 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.bottomLeft
-import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.bottomRight
-import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.topLeft
-import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.topRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

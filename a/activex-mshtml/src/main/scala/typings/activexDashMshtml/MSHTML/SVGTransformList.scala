@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGTransformList")
 @js.native
 class SVGTransformList protected () extends js.Object {
-  var `MSHTML.SVGTransformList_typekey`: SVGTransformList = js.native
+  @JSName("MSHTML.SVGTransformList_typekey")
+  var MSHTMLDotSVGTransformList_typekey: SVGTransformList = js.native
   var numberOfItems: Double = js.native
   def appendItem(newItem: SVGTransform): SVGTransform = js.native
   def clear(): Unit = js.native

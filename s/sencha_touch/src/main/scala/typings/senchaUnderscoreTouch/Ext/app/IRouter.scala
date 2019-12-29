@@ -13,7 +13,7 @@ trait IRouter extends IBase {
   		* @param params Object Additional parameters.
   		*/
   var connect: js.UndefOr[
-    js.Function2[/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* url */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Config Option] (Object) */
   var defaults: js.UndefOr[js.Any] = js.undefined
@@ -33,7 +33,7 @@ trait IRouter extends IBase {
   		* @param url String The url to recognize.
   		* @returns Object/undefined If the url was recognized, the controller and action to call, else undefined.
   		*/
-  var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], _]] = js.undefined
   /** [Config Option] (Array) */
   var routes: js.UndefOr[Array] = js.undefined
   /** [Method] Sets the value of defaults
@@ -55,19 +55,19 @@ object IRouter {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    connect: (/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[js.Any]) => Unit = null,
+    connect: (/* url */ js.UndefOr[String], /* params */ js.UndefOr[js.Any]) => Unit = null,
     defaults: js.Any = null,
     destroy: () => Unit = null,
     draw: /* fn */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getDefaults: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getRoutes: () => Array = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    recognize: /* url */ js.UndefOr[java.lang.String] => _ = null,
+    recognize: /* url */ js.UndefOr[String] => _ = null,
     routes: Array = null,
     self: IClass = null,
     setDefaults: /* defaults */ js.UndefOr[js.Any] => Unit = null,

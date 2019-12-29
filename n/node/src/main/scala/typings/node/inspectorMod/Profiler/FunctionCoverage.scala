@@ -11,7 +11,7 @@ trait FunctionCoverage extends js.Object {
   /**
     * JavaScript function name.
     */
-  var functionName: java.lang.String
+  var functionName: String
   /**
     * Whether coverage data for this function has block granularity.
     */
@@ -24,7 +24,7 @@ trait FunctionCoverage extends js.Object {
 
 object FunctionCoverage {
   @scala.inline
-  def apply(functionName: java.lang.String, isBlockCoverage: Boolean, ranges: js.Array[CoverageRange]): FunctionCoverage = {
+  def apply(functionName: String, isBlockCoverage: Boolean, ranges: js.Array[CoverageRange]): FunctionCoverage = {
     val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any], isBlockCoverage = isBlockCoverage.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FunctionCoverage]

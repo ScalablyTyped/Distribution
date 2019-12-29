@@ -1,6 +1,5 @@
 package typings.atBlueprintjsDatetime
 
-import typings.atBlueprintjsDatetime.libEsmCommonMonthAndYearMod.MonthAndYear
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

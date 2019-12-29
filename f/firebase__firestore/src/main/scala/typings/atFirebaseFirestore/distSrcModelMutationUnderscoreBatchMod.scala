@@ -12,8 +12,6 @@ import typings.atFirebaseFirestore.distSrcModelDocumentMod.MaybeDocument
 import typings.atFirebaseFirestore.distSrcModelDocumentUnderscoreKeyMod.DocumentKey
 import typings.atFirebaseFirestore.distSrcModelMutationMod.Mutation
 import typings.atFirebaseFirestore.distSrcModelMutationMod.MutationResult
-import typings.atFirebaseFirestore.distSrcModelMutationUnderscoreBatchMod.MutationBatch
-import typings.atFirebaseFirestore.distSrcModelMutationUnderscoreBatchMod.MutationBatchResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

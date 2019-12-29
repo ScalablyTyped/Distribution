@@ -1,7 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionItemTag.Deprecated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

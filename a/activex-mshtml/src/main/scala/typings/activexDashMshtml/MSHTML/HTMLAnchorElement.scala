@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLAnchorElement")
 @js.native
 class HTMLAnchorElement protected () extends js.Object {
-  var `MSHTML.HTMLAnchorElement_typekey`: HTMLAnchorElement = js.native
+  @JSName("MSHTML.HTMLAnchorElement_typekey")
+  var MSHTMLDotHTMLAnchorElement_typekey: HTMLAnchorElement = js.native
   var Methods: String = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native

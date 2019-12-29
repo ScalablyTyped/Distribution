@@ -1,6 +1,6 @@
 package typings.passportDashAzureDashAd.bearerDashStrategyMod
 
-import typings.passportDashAzureDashAd.passportDashAzureDashAdNumbers.`true`
+import typings.passportDashAzureDashAd.passportDashAzureDashAdBooleans.`true`
 import typings.passportDashAzureDashAd.passportDashAzureDashAdStrings.error
 import typings.passportDashAzureDashAd.passportDashAzureDashAdStrings.info
 import typings.passportDashAzureDashAd.passportDashAzureDashAdStrings.warn

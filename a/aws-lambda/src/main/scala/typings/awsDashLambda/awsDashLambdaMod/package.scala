@@ -33,7 +33,6 @@ package object awsDashLambdaMod {
   type CloudFrontRequestHandler = Handler[CloudFrontRequestEvent, CloudFrontRequestResult]
   /* Rewritten from type alias, can be one of: 
     - `js.undefined`
-    - scala.Nothing
     - scala.Null
     - typings.awsDashLambda.awsDashLambdaMod.CloudFrontResultResponse
     - typings.awsDashLambda.awsDashLambdaMod.CloudFrontRequest

@@ -10,7 +10,8 @@ class SlideShowWindows protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.SlideShowWindows_typekey`: SlideShowWindows = js.native
+  @JSName("PowerPoint.SlideShowWindows_typekey")
+  var PowerPointDotSlideShowWindows_typekey: SlideShowWindows = js.native
   def Item(Index: Double): SlideShowWindow = js.native
 }
 

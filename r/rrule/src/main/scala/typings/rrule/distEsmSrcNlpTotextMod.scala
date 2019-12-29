@@ -1,9 +1,6 @@
 package typings.rrule
 
 import typings.rrule.distEsmSrcNlpI18nMod.Language
-import typings.rrule.distEsmSrcNlpTotextMod.DateFormatter
-import typings.rrule.distEsmSrcNlpTotextMod.GetText
-import typings.rrule.distEsmSrcNlpTotextMod.ToText
 import typings.rrule.distEsmSrcTypesMod.ByWeekday
 import typings.rrule.distEsmSrcWeekdayMod.Weekday
 import scala.scalajs.js

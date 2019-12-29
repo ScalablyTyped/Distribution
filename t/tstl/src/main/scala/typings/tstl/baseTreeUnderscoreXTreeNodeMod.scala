@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseTreeUnderscoreColorMod._Color
-import typings.tstl.baseTreeUnderscoreXTreeNodeMod._XTreeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

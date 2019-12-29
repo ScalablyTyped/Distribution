@@ -1,25 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Cross
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Diamond
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.DownArrow
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Ellipse
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Hexagon
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.HorizLine
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Image
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.LeftArrow
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.None
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Pentagon
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.RightArrow
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.SeriesType
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Star
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Trapezoid
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.Triangle
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.UpArrow
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Shape.VertLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

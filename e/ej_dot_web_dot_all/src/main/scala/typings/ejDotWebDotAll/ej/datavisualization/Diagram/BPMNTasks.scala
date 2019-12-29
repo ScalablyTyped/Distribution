@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.BusinessRule
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.InstantiatingReceive
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Manual
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Parallel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Receive
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Script
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Send
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Service
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

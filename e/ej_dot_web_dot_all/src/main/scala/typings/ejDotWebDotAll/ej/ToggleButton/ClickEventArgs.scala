@@ -13,7 +13,7 @@ trait ClickEventArgs extends js.Object {
   var isChecked: js.UndefOr[Boolean] = js.undefined
   /** returns the toggle button model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ToggleButton.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** return the toggle button state
     */
   var status: js.UndefOr[Boolean] = js.undefined
@@ -27,7 +27,7 @@ object ClickEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     isChecked: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.ToggleButton.Model = null,
+    model: Model = null,
     status: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): ClickEventArgs = {

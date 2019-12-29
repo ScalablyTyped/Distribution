@@ -13,7 +13,7 @@ trait NodeAddEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the newly added elements
     */
   var nodes: js.UndefOr[js.Any] = js.undefined
@@ -33,7 +33,7 @@ object NodeAddEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     data: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     nodes: js.Any = null,
     parentDetails: js.Any = null,
     parentElement: js.Any = null,

@@ -14,7 +14,6 @@ package object atWordpressUrlMod {
     - typings.atWordpressUrl.atWordpressUrlMod.InputArgsArray
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
   */
   type InputArgsValue = js.UndefOr[_InputArgsValue | String | Double | Boolean | Null]
   /* Rewritten from type alias, can be one of: 

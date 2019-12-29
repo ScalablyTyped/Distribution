@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Add
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Copy
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Move
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Remove
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Replace
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

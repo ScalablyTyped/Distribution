@@ -1,9 +1,6 @@
 package typings.atGrpcGrpcDashJs.buildSrcConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.LogVerbosity.DEBUG
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.LogVerbosity.ERROR
-import typings.atGrpcGrpcDashJs.buildSrcConstantsMod.LogVerbosity.INFO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

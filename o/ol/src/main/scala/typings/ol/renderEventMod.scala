@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.pluggableMapMod.FrameState
-import typings.ol.renderEventMod.RenderEvent
 import typings.ol.renderEventTypeMod.EventType
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js

@@ -1,9 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EConnectionProtocol.TCP
-import typings.steamDashClient.steamDashClientMod.EConnectionProtocol.UDP
-import typings.steamDashClient.steamDashClientMod.EConnectionProtocol.WebSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

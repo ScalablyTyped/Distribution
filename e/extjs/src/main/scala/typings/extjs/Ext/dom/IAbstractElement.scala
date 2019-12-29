@@ -21,7 +21,7 @@ trait IAbstractElement extends IBase {
   		* @param className String/String[] The CSS classes to add separated by space, or an array of classes
   		* @returns Ext.dom.Element this
   		*/
-  var addCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var addCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Appends the passed element s to this element Defined in override Ext dom AbstractElement_insertion
   		* @param el String/HTMLElement/Ext.dom.AbstractElement/Object The id or element to insert or a DomHelper config The id of the node, a DOM Node or an existing Element.
   		* @param returnDom Boolean True to return the raw DOM element instead of Ext.dom.AbstractElement
@@ -39,14 +39,14 @@ trait IAbstractElement extends IBase {
   		* @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
   		* @returns Ext.dom.Element this
   		*/
-  var applyStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var applyStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Selects a single direct child based on the passed CSS selector the selector should not contain an id
   		* @param selector String The CSS selector
   		* @param returnDom Boolean True to return the DOM node instead of Ext.dom.Element.
   		* @returns HTMLElement/Ext.dom.Element The child Ext.dom.Element (or DOM node if returnDom = true)
   		*/
   var child: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Returns true if this element is an ancestor of the passed element
   		* @param el HTMLElement/String The element to check
@@ -68,7 +68,7 @@ trait IAbstractElement extends IBase {
     ]
   ] = js.undefined
   /** [Property] (String) */
-  var defaultUnit: js.UndefOr[java.lang.String] = js.undefined
+  var defaultUnit: js.UndefOr[String] = js.undefined
   /** [Method] Alias to remove  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (HTMLElement) */
@@ -79,7 +79,7 @@ trait IAbstractElement extends IBase {
   		* @returns HTMLElement/Ext.dom.Element The child Ext.dom.Element (or DOM node if returnDom = true)
   		*/
   var down: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Looks at this node and then at parent nodes for a match of the passed simple selector e g
   		* @param selector String The simple selector to test
@@ -89,7 +89,7 @@ trait IAbstractElement extends IBase {
   		*/
   var findParent: js.UndefOr[
     js.Function3[
-      /* selector */ js.UndefOr[java.lang.String], 
+      /* selector */ js.UndefOr[String], 
       /* limit */ js.UndefOr[js.Any], 
       /* returnEl */ js.UndefOr[Boolean], 
       HTMLElement
@@ -103,7 +103,7 @@ trait IAbstractElement extends IBase {
   		*/
   var findParentNode: js.UndefOr[
     js.Function3[
-      /* selector */ js.UndefOr[java.lang.String], 
+      /* selector */ js.UndefOr[String], 
       /* limit */ js.UndefOr[js.Any], 
       /* returnEl */ js.UndefOr[Boolean], 
       HTMLElement
@@ -115,7 +115,7 @@ trait IAbstractElement extends IBase {
   		* @returns Ext.dom.Element/HTMLElement The first child or null
   		*/
   var first: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Returns the active element in the DOM
   		* @returns HTMLElement The active (focused) element in the document.
@@ -127,24 +127,18 @@ trait IAbstractElement extends IBase {
   		* @returns String The attribute value
   		*/
   var getAttribute: js.UndefOr[
-    js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* namespace */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ]
+    js.Function2[/* name */ js.UndefOr[String], /* namespace */ js.UndefOr[String], String]
   ] = js.undefined
   /** [Method] Gets the width of the border s for the specified side s  Defined in override Ext dom AbstractElement_style
   		* @param side String Can be t, l, r, b or any combination of those to add multiple values. For example, passing 'lr' would get the border left width + the border right width.
   		* @returns Number The width of the sides passed added together
   		*/
-  var getBorderWidth: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var getBorderWidth: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Returns a child element of this element given its id
   		* @param id String The id of the desired child element.
   		* @param asDom Boolean True to return the DOM element, false to return a wrapped Element object.
   		*/
-  var getById: js.UndefOr[
-    js.Function2[/* id */ js.UndefOr[java.lang.String], /* asDom */ js.UndefOr[Boolean], Unit]
-  ] = js.undefined
+  var getById: js.UndefOr[js.Function2[/* id */ js.UndefOr[String], /* asDom */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Returns the innerHTML of an Element or an empty string if the element s dom no longer exists  */
   var getHTML: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the offset height of the element Defined in override Ext dom AbstractElement_style
@@ -156,12 +150,12 @@ trait IAbstractElement extends IBase {
   		* @param sides String Any combination of l, r, t, b to get the sum of those sides
   		* @returns Object/Number
   		*/
-  var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Gets the width of the padding s for the specified side s  Defined in override Ext dom AbstractElement_style
   		* @param side String Can be t, l, r, b or any combination of those to add multiple values. For example, passing 'lr' would get the padding left + the padding right.
   		* @returns Number The padding of the sides passed added together
   		*/
-  var getPadding: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var getPadding: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Returns the size of the element
   		* @param contentSize Boolean true to get the width/size minus borders and padding
   		* @returns Object An object containing the element's size:
@@ -193,14 +187,14 @@ trait IAbstractElement extends IBase {
   		* @param className String The CSS class to check for
   		* @returns Boolean True if the class exists, else false
   		*/
-  var hasCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Hide this element  Uses display mode to determine whether to use display or visibility
   		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
   		* @returns Ext.dom.Element this
   		*/
-  var hide: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var hide: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Property] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Method] Inserts this element after the passed element in the DOM Defined in override Ext dom AbstractElement_insertion
   		* @param el String/HTMLElement/Ext.dom.AbstractElement The element to insert after. The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.AbstractElement This element
@@ -224,8 +218,8 @@ trait IAbstractElement extends IBase {
   		*/
   var insertHtml: js.UndefOr[
     js.Function3[
-      /* where */ js.UndefOr[java.lang.String], 
-      /* html */ js.UndefOr[java.lang.String], 
+      /* where */ js.UndefOr[String], 
+      /* html */ js.UndefOr[String], 
       /* returnEl */ js.UndefOr[Boolean], 
       _
     ]
@@ -239,7 +233,7 @@ trait IAbstractElement extends IBase {
   var insertSibling: js.UndefOr[
     js.Function3[
       /* el */ js.UndefOr[js.Any], 
-      /* where */ js.UndefOr[java.lang.String], 
+      /* where */ js.UndefOr[String], 
       /* returnDom */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -248,42 +242,34 @@ trait IAbstractElement extends IBase {
   		* @param selector String The simple selector to test
   		* @returns Boolean True if this element matches the selector, else false
   		*/
-  var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Checks if the current value of a style is equal to a given value
   		* @param style String property whose value is returned.
   		* @param value String to check against.
   		* @returns Boolean true for when the current value equals the given value.
   		*/
   var isStyle: js.UndefOr[
-    js.Function2[
-      /* style */ js.UndefOr[java.lang.String], 
-      /* value */ js.UndefOr[java.lang.String], 
-      Boolean
-    ]
+    js.Function2[/* style */ js.UndefOr[String], /* value */ js.UndefOr[String], Boolean]
   ] = js.undefined
   /** [Method] Returns true if the value of the given property is visually transparent
   		* @param prop String The style property whose value is to be tested.
   		* @returns Boolean True if the style property is visually transparent.
   		*/
-  var isTransparent: js.UndefOr[js.Function1[/* prop */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var isTransparent: js.UndefOr[js.Function1[/* prop */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Gets the last child skipping text nodes Defined in override Ext dom AbstractElement_traversal
   		* @param selector String Find the previous sibling that matches the passed simple selector
   		* @param returnDom Boolean True to return a raw dom node instead of an Ext.dom.Element
   		* @returns Ext.dom.Element/HTMLElement The last child or null
   		*/
   var last: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Puts a mask over this element to disable user interaction
   		* @param msg String A message to display in the mask
   		* @param msgCls String A css class to apply to the msg element
   		*/
   var mask: js.UndefOr[
-    js.Function2[
-      /* msg */ js.UndefOr[java.lang.String], 
-      /* msgCls */ js.UndefOr[java.lang.String], 
-      Unit
-    ]
+    js.Function2[/* msg */ js.UndefOr[String], /* msgCls */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Gets the next sibling skipping text nodes Defined in override Ext dom AbstractElement_traversal
   		* @param selector String Find the next sibling that matches the passed simple selector
@@ -291,7 +277,7 @@ trait IAbstractElement extends IBase {
   		* @returns Ext.dom.Element/HTMLElement The next sibling or null
   		*/
   var next: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Gets the parent node for this element optionally chaining up trying to match a selector Defined in override Ext dom
   		* @param selector String Find a parent node that matches the passed simple selector
@@ -299,7 +285,7 @@ trait IAbstractElement extends IBase {
   		* @returns Ext.dom.Element/HTMLElement The parent node or null
   		*/
   var parent: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Gets the previous sibling skipping text nodes Defined in override Ext dom AbstractElement_traversal
   		* @param selector String Find the previous sibling that matches the passed simple selector
@@ -307,29 +293,29 @@ trait IAbstractElement extends IBase {
   		* @returns Ext.dom.Element/HTMLElement The previous sibling or null
   		*/
   var prev: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
+    js.Function2[/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Selects child nodes based on the passed CSS selector the selector should not contain an id
   		* @param selector String The CSS selector
   		* @returns HTMLElement[] An array of the matched nodes
   		*/
-  var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Array]] = js.undefined
+  var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[String], Array]] = js.undefined
   /** [Method] Adds one or more CSS classes to this element and removes the same class es from all siblings
   		* @param className String/String[] The CSS class to add, or an array of classes
   		* @returns Ext.dom.Element this
   		*/
-  var radioCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var radioCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Removes this element s dom reference  */
   var remove: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Removes one or more CSS classes from the element
   		* @param className String/String[] The CSS classes to remove separated by space, or an array of classes
   		* @returns Ext.dom.Element this
   		*/
-  var removeCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var removeCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Forces the browser to repaint this element Defined in override Ext dom AbstractElement_style
   		* @returns Ext.dom.Element this
   		*/
-  var repaint: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.undefined
+  var repaint: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Replaces the passed element with this element Defined in override Ext dom AbstractElement_insertion
   		* @param el String/HTMLElement/Ext.dom.AbstractElement The element to replace. The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.AbstractElement This element
@@ -342,9 +328,9 @@ trait IAbstractElement extends IBase {
   		*/
   var replaceCls: js.UndefOr[
     js.Function2[
-      /* oldClassName */ js.UndefOr[java.lang.String], 
-      /* newClassName */ js.UndefOr[java.lang.String], 
-      typings.extjs.Ext.dom.IElement
+      /* oldClassName */ js.UndefOr[String], 
+      /* newClassName */ js.UndefOr[String], 
+      IElement
     ]
   ] = js.undefined
   /** [Method] Replaces this element with the passed element Defined in override Ext dom AbstractElement_insertion
@@ -359,7 +345,7 @@ trait IAbstractElement extends IBase {
   		*/
   var select: js.UndefOr[
     js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
+      /* selector */ js.UndefOr[String], 
       /* unique */ js.UndefOr[Boolean], 
       typings.extjs.Ext.ICompositeElement
     ]
@@ -368,42 +354,32 @@ trait IAbstractElement extends IBase {
   		* @param form Object The form
   		* @returns String The url encoded form
   		*/
-  var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Sets the passed attributes as attributes of this element a style attribute can be a string object or function
   		* @param o Object The object with the attributes
   		* @param useSet Boolean false to override the default setAttribute to use expandos.
   		* @returns Ext.dom.Element this
   		*/
   var set: js.UndefOr[
-    js.Function2[
-      /* o */ js.UndefOr[js.Any], 
-      /* useSet */ js.UndefOr[Boolean], 
-      typings.extjs.Ext.dom.IElement
-    ]
+    js.Function2[/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean], IElement]
   ] = js.undefined
   /** [Method] Set the innerHTML of this element
   		* @param html String The new HTML
   		* @returns Ext.Element this
   		*/
-  var setHTML: js.UndefOr[
-    js.Function1[/* html */ js.UndefOr[java.lang.String], typings.extjs.Ext.IElement]
-  ] = js.undefined
+  var setHTML: js.UndefOr[js.Function1[/* html */ js.UndefOr[String], typings.extjs.Ext.IElement]] = js.undefined
   /** [Method] Set the height of this Element
   		* @param height Number/String The new height. This may be one of:  A Number specifying the new height in this Element's defaultUnits (by default, pixels.) A String used to set the CSS height style. Animation may not be used.
   		* @returns Ext.dom.Element this
   		*/
-  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Set the size of this Element
   		* @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used. A size object in the format {width: widthValue, height: heightValue}.
   		* @param height Number/String The new height. This may be one of:  A Number specifying the new height in this Element's defaultUnits (by default, pixels). A String used to set the CSS height style. Animation may not be used.
   		* @returns Ext.dom.Element this
   		*/
   var setSize: js.UndefOr[
-    js.Function2[
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
-    ]
+    js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], IElement]
   ] = js.undefined
   /** [Method] Wrapper for setting style properties also takes single object parameter of multiple styles
   		* @param property String/Object The style property to be set, or an object of multiple styles.
@@ -411,11 +387,7 @@ trait IAbstractElement extends IBase {
   		* @returns Ext.dom.Element this
   		*/
   var setStyle: js.UndefOr[
-    js.Function2[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
-      typings.extjs.Ext.dom.IElement
-    ]
+    js.Function2[/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], IElement]
   ] = js.undefined
   /** [Method] Use this to change the visibility mode between VISIBILITY DISPLAY OFFSETS or ASCLASS
   		* @param mode Object
@@ -428,29 +400,23 @@ trait IAbstractElement extends IBase {
   		* @returns Ext.dom.Element this
   		*/
   var setVisible: js.UndefOr[
-    js.Function2[
-      /* visible */ js.UndefOr[Boolean], 
-      /* animate */ js.UndefOr[js.Any], 
-      typings.extjs.Ext.dom.IElement
-    ]
+    js.Function2[/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], IElement]
   ] = js.undefined
   /** [Method] Set the width of this Element
   		* @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used.
   		* @returns Ext.dom.Element this
   		*/
-  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Show this element  Uses display mode to determine whether to use display or visibility
   		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
   		* @returns Ext.dom.Element this
   		*/
-  var show: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
+  var show: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Toggles the specified CSS class on this element removes it if it already exists otherwise adds it
   		* @param className String The CSS class to toggle
   		* @returns Ext.dom.Element this
   		*/
-  var toggleCls: js.UndefOr[
-    js.Function1[/* className */ js.UndefOr[java.lang.String], typings.extjs.Ext.dom.IElement]
-  ] = js.undefined
+  var toggleCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[String], IElement]] = js.undefined
   /** [Method] Removes a previously applied mask  */
   var unmask: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Walks up the DOM looking for a parent node that matches the passed simple selector e g
@@ -461,7 +427,7 @@ trait IAbstractElement extends IBase {
   		*/
   var up: js.UndefOr[
     js.Function3[
-      /* selector */ js.UndefOr[java.lang.String], 
+      /* selector */ js.UndefOr[String], 
       /* limit */ js.UndefOr[js.Any], 
       /* returnDom */ js.UndefOr[Boolean], 
       typings.extjs.Ext.IElement
@@ -471,9 +437,7 @@ trait IAbstractElement extends IBase {
   		* @param html String The new HTML
   		* @returns Ext.dom.Element this
   		*/
-  var update: js.UndefOr[
-    js.Function1[/* html */ js.UndefOr[java.lang.String], typings.extjs.Ext.dom.IElement]
-  ] = js.undefined
+  var update: js.UndefOr[js.Function1[/* html */ js.UndefOr[String], IElement]] = js.undefined
   /** [Method] Creates and wraps this element with another element Defined in override Ext dom AbstractElement_insertion
   		* @param config Object DomHelper element config object for the wrapper element or null for an empty div
   		* @param returnDom Boolean True to return the raw DOM element instead of Ext.dom.AbstractElement
@@ -484,7 +448,7 @@ trait IAbstractElement extends IBase {
     js.Function3[
       /* config */ js.UndefOr[js.Any], 
       /* returnDom */ js.UndefOr[Boolean], 
-      /* selector */ js.UndefOr[java.lang.String], 
+      /* selector */ js.UndefOr[String], 
       _
     ]
   ] = js.undefined
@@ -497,89 +461,89 @@ object IAbstractElement {
     DISPLAY: Int | Double = null,
     OFFSETS: Int | Double = null,
     VISIBILITY: Int | Double = null,
-    addCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
+    addCls: /* className */ js.UndefOr[js.Any] => IElement = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     appendChild: (/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => IAbstractElement = null,
     appendTo: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
-    applyStyles: /* styles */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
+    applyStyles: /* styles */ js.UndefOr[js.Any] => IElement = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    child: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     config: js.Any = null,
     contains: /* el */ js.UndefOr[js.Any] => Boolean = null,
     createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => IAbstractElement = null,
-    defaultUnit: java.lang.String = null,
+    defaultUnit: String = null,
     destroy: () => Unit = null,
     dom: HTMLElement = null,
-    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    extend: java.lang.String = null,
-    findParent: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
-    findParentNode: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
-    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    down: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    extend: String = null,
+    findParent: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
+    findParentNode: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
+    first: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     getActiveElement: () => HTMLElement = null,
-    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => Double = null,
-    getById: (/* id */ js.UndefOr[java.lang.String], /* asDom */ js.UndefOr[Boolean]) => Unit = null,
+    getAttribute: (/* name */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => String = null,
+    getBorderWidth: /* side */ js.UndefOr[String] => Double = null,
+    getById: (/* id */ js.UndefOr[String], /* asDom */ js.UndefOr[Boolean]) => Unit = null,
     getHTML: () => Unit = null,
     getHeight: /* contentHeight */ js.UndefOr[Boolean] => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
-    getPadding: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getMargin: /* sides */ js.UndefOr[String] => _ = null,
+    getPadding: /* side */ js.UndefOr[String] => Double = null,
     getSize: /* contentSize */ js.UndefOr[Boolean] => _ = null,
     getStyle: (/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[Boolean]) => _ = null,
     getValue: /* asNumber */ js.UndefOr[Boolean] => _ = null,
     getViewSize: () => _ = null,
     getWidth: /* contentWidth */ js.UndefOr[Boolean] => Double = null,
-    hasCls: /* className */ js.UndefOr[java.lang.String] => Boolean = null,
-    hide: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    id: java.lang.String = null,
+    hasCls: /* className */ js.UndefOr[String] => Boolean = null,
+    hide: /* animate */ js.UndefOr[js.Any] => IElement = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IAbstractElement = null,
     insertAfter: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
     insertBefore: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
     insertFirst: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => IAbstractElement = null,
-    is: /* selector */ js.UndefOr[java.lang.String] => Boolean = null,
-    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean = null,
-    isTransparent: /* prop */ js.UndefOr[java.lang.String] => Boolean = null,
-    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    mask: (/* msg */ js.UndefOr[java.lang.String], /* msgCls */ js.UndefOr[java.lang.String]) => Unit = null,
+    insertHtml: (/* where */ js.UndefOr[String], /* html */ js.UndefOr[String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => IAbstractElement = null,
+    is: /* selector */ js.UndefOr[String] => Boolean = null,
+    isStyle: (/* style */ js.UndefOr[String], /* value */ js.UndefOr[String]) => Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[String] => Boolean = null,
+    last: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    mask: (/* msg */ js.UndefOr[String], /* msgCls */ js.UndefOr[String]) => Unit = null,
     mixins: js.Any = null,
-    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    radioCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
+    next: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    parent: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    prev: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    query: /* selector */ js.UndefOr[String] => Array = null,
+    radioCls: /* className */ js.UndefOr[js.Any] => IElement = null,
     remove: () => Unit = null,
-    removeCls: /* className */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    repaint: () => typings.extjs.Ext.dom.IElement = null,
+    removeCls: /* className */ js.UndefOr[js.Any] => IElement = null,
+    repaint: () => IElement = null,
     replace: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
-    replaceCls: (/* oldClassName */ js.UndefOr[java.lang.String], /* newClassName */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.dom.IElement = null,
+    replaceCls: (/* oldClassName */ js.UndefOr[String], /* newClassName */ js.UndefOr[String]) => IElement = null,
     replaceWith: /* el */ js.UndefOr[js.Any] => IAbstractElement = null,
     requires: Array = null,
-    select: (/* selector */ js.UndefOr[java.lang.String], /* unique */ js.UndefOr[Boolean]) => typings.extjs.Ext.ICompositeElement = null,
+    select: (/* selector */ js.UndefOr[String], /* unique */ js.UndefOr[Boolean]) => typings.extjs.Ext.ICompositeElement = null,
     self: IClass = null,
-    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
-    set: (/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.IElement = null,
-    setHTML: /* html */ js.UndefOr[java.lang.String] => typings.extjs.Ext.IElement = null,
-    setHeight: /* height */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.dom.IElement = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => String = null,
+    set: (/* o */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => IElement = null,
+    setHTML: /* html */ js.UndefOr[String] => typings.extjs.Ext.IElement = null,
+    setHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IElement = null,
     setVisibilityMode: /* mode */ js.UndefOr[js.Any] => IAbstractElement = null,
-    setVisible: (/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.IElement = null,
-    setWidth: /* width */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
-    show: /* animate */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.IElement = null,
+    setVisible: (/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any]) => IElement = null,
+    setWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    show: /* animate */ js.UndefOr[js.Any] => IElement = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toggleCls: /* className */ js.UndefOr[java.lang.String] => typings.extjs.Ext.dom.IElement = null,
+    toggleCls: /* className */ js.UndefOr[String] => IElement = null,
     unmask: () => Unit = null,
-    up: (/* selector */ js.UndefOr[java.lang.String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.IElement = null,
-    update: /* html */ js.UndefOr[java.lang.String] => typings.extjs.Ext.dom.IElement = null,
+    up: (/* selector */ js.UndefOr[String], /* limit */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.IElement = null,
+    update: /* html */ js.UndefOr[String] => IElement = null,
     uses: Array = null,
-    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[java.lang.String]) => _ = null
+    wrap: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[String]) => _ = null
   ): IAbstractElement = {
     val __obj = js.Dynamic.literal()
     if (ASCLASS != null) __obj.updateDynamic("ASCLASS")(ASCLASS.asInstanceOf[js.Any])

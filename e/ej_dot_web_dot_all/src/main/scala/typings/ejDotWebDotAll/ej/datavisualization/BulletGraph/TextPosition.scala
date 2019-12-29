@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextPosition.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextPosition.Float
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextPosition.Left
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextPosition.Right
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,8 +6,6 @@ import typings.std.GainNode
 import typings.std.HTMLMediaElement
 import typings.std.MediaStream
 import typings.three.srcAudioAudioListenerMod.AudioListener
-import typings.three.srcAudioAudioMod.Audio
-import typings.three.srcAudioAudioMod.AudioBuffer
 import typings.three.srcCoreObject3DMod.Object3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`

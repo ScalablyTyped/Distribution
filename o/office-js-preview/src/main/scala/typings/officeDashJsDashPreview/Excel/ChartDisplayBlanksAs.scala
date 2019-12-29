@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.interplotted
-import typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.notPlotted
-import typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

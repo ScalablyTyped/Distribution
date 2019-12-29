@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.Buffer
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object pbkdf2 extends js.Object {
     salt: BinaryLike,
     iterations: Double,
     keylen: Double,
-    digest: java.lang.String,
+    digest: String,
     callback: js.Function2[/* err */ Error | Null, /* derivedKey */ Buffer, _]
   ): Unit = js.native
 }

@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.mapBrowserEventMod.MapBrowserEvent
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
 import typings.std.Event

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Watch protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Watch_typekey`: Watch = js.native
+  @JSName("Excel.Watch_typekey")
+  var ExcelDotWatch_typekey: Watch = js.native
   val Parent: js.Any = js.native
   val Source: js.Any = js.native
   def Delete(): Unit = js.native

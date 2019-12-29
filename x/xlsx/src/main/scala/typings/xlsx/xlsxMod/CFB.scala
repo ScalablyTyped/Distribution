@@ -35,7 +35,6 @@ object CFB extends js.Object {
     /* 2 */ val stream: typings.cfb.cfbMod.CFB$EntryType.stream with Double = js.native
     /* 0 */ val unknown: typings.cfb.cfbMod.CFB$EntryType.unknown with Double = js.native
     @JSBracketAccess
-    @JSName("CFB$EntryType")
     def apply(value: Double): js.UndefOr[typings.cfb.cfbMod.CFB$EntryType with Double] = js.native
   }
   
@@ -44,7 +43,6 @@ object CFB extends js.Object {
     /* 0 */ val fat: typings.cfb.cfbMod.CFB$StorageType.fat with Double = js.native
     /* 1 */ val minifat: typings.cfb.cfbMod.CFB$StorageType.minifat with Double = js.native
     @JSBracketAccess
-    @JSName("CFB$StorageType")
     def apply(value: Double): js.UndefOr[typings.cfb.cfbMod.CFB$StorageType with Double] = js.native
   }
   

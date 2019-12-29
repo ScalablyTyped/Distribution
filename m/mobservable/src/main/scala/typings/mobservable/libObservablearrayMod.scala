@@ -7,9 +7,6 @@ import typings.mobservable.libInterfacesMod.IArraySplice
 import typings.mobservable.libInterfacesMod.IContextInfoStruct
 import typings.mobservable.libInterfacesMod.IObservableArray
 import typings.mobservable.libInterfacesMod.Lambda
-import typings.mobservable.libObservablearrayMod.ObservableArray
-import typings.mobservable.libObservablearrayMod.ObservableArrayAdministration
-import typings.mobservable.libObservablearrayMod.StubArray
 import typings.mobservable.libSimpleeventemitterMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

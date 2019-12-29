@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core/testing/testing", "ɵTestingCompiler")
+@JSImport("@angular/core/testing/testing", "\u0275TestingCompiler")
 @js.native
 class ɵTestingCompiler () extends Compiler {
   val injector: Injector = js.native

@@ -1,11 +1,6 @@
 package typings.fastDashCsv
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fastDashCsv.buildSrcFormatterTypesMod.Row
-import typings.fastDashCsv.buildSrcFormatterTypesMod.RowArray
-import typings.fastDashCsv.buildSrcFormatterTypesMod.RowHashArray
-import typings.fastDashCsv.buildSrcFormatterTypesMod.RowMap
-import typings.fastDashCsv.buildSrcFormatterTypesMod.RowTransformCallback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

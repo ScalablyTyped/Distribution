@@ -1,8 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.DefaultActionPolicy.CAST_THIS_TAB
-import typings.chrome.chrome.cast.DefaultActionPolicy.CREATE_SESSION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

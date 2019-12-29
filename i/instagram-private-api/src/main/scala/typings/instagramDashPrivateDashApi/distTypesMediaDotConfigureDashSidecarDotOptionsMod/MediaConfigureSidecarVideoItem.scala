@@ -27,7 +27,7 @@ object MediaConfigureSidecarVideoItem {
     upload_id: String,
     width: Double,
     audio_muted: String = null,
-    caption: Null = null,
+    caption: js.UndefOr[scala.Nothing] = js.undefined,
     clips: js.Array[Anon_Length] | String = null,
     date_time_original: String = null,
     device: Anon_AndroidreleaseAndroidversion | String = null,
@@ -42,7 +42,7 @@ object MediaConfigureSidecarVideoItem {
   ): MediaConfigureSidecarVideoItem = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (audio_muted != null) __obj.updateDynamic("audio_muted")(audio_muted.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (!js.isUndefined(caption)) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (clips != null) __obj.updateDynamic("clips")(clips.asInstanceOf[js.Any])
     if (date_time_original != null) __obj.updateDynamic("date_time_original")(date_time_original.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])

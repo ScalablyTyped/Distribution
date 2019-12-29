@@ -30,7 +30,7 @@ trait MatchImageSnapshotOptions extends js.Object {
     * it is called with an object containing testPath, currentTestName, counter and defaultIdentifier as its first
     * argument. The function must return an identifier to use for the snapshot.
     */
-  var customSnapshotIdentifier: js.UndefOr[js.Function1[/* parameters */ Anon_Counter, String]] = js.undefined
+  var customSnapshotIdentifier: js.UndefOr[(js.Function1[/* parameters */ Anon_Counter, String]) | String] = js.undefined
   /**
     * Custom snapshots directory.
     * Absolute path of a directory to keep the snapshot in.
@@ -75,7 +75,7 @@ object MatchImageSnapshotOptions {
     blur: Int | Double = null,
     customDiffConfig: PixelmatchOptions = null,
     customDiffDir: String = null,
-    customSnapshotIdentifier: /* parameters */ Anon_Counter => String = null,
+    customSnapshotIdentifier: (js.Function1[/* parameters */ Anon_Counter, String]) | String = null,
     customSnapshotsDir: String = null,
     diffDirection: horizontal | vertical = null,
     failureThreshold: Int | Double = null,
@@ -88,7 +88,7 @@ object MatchImageSnapshotOptions {
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
     if (customDiffConfig != null) __obj.updateDynamic("customDiffConfig")(customDiffConfig.asInstanceOf[js.Any])
     if (customDiffDir != null) __obj.updateDynamic("customDiffDir")(customDiffDir.asInstanceOf[js.Any])
-    if (customSnapshotIdentifier != null) __obj.updateDynamic("customSnapshotIdentifier")(js.Any.fromFunction1(customSnapshotIdentifier))
+    if (customSnapshotIdentifier != null) __obj.updateDynamic("customSnapshotIdentifier")(customSnapshotIdentifier.asInstanceOf[js.Any])
     if (customSnapshotsDir != null) __obj.updateDynamic("customSnapshotsDir")(customSnapshotsDir.asInstanceOf[js.Any])
     if (diffDirection != null) __obj.updateDynamic("diffDirection")(diffDirection.asInstanceOf[js.Any])
     if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])

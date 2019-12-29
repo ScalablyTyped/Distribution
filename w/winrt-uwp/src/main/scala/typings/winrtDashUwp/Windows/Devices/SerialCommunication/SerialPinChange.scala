@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.breakSignal
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.carrierDetect
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.clearToSend
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.dataSetReady
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.ringIndicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

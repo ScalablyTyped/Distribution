@@ -4,8 +4,8 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import typings.std.Record
 import typings.tabulatorDashTables.Anon_ColumnCalcs
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`true`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`false`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`true`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.active
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.add
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.arrow

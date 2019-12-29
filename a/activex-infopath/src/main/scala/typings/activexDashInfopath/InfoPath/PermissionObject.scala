@@ -10,7 +10,8 @@ class PermissionObject protected () extends js.Object {
   val Count: Double = js.native
   var DocumentAuthor: String = js.native
   var Enabled: Boolean = js.native
-  var `InfoPath.PermissionObject_typekey`: PermissionObject = js.native
+  @JSName("InfoPath.PermissionObject_typekey")
+  var InfoPathDotPermissionObject_typekey: PermissionObject = js.native
   val PermissionFromPolicy: Boolean = js.native
   val PolicyDescription: String = js.native
   val PolicyName: String = js.native

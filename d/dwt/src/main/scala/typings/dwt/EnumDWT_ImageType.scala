@@ -1,12 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_ImageType.IT_ALL
-import typings.dwt.EnumDWT_ImageType.IT_BMP
-import typings.dwt.EnumDWT_ImageType.IT_JPG
-import typings.dwt.EnumDWT_ImageType.IT_PDF
-import typings.dwt.EnumDWT_ImageType.IT_PNG
-import typings.dwt.EnumDWT_ImageType.IT_TIF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

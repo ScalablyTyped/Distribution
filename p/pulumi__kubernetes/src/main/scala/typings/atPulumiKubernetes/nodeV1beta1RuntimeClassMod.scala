@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`nodeDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.nodeV1beta1RuntimeClassMod.RuntimeClass
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.nodeDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiKubernetes.typesOutputMod.node.v1beta1.Overhead
 import typings.atPulumiKubernetes.typesOutputMod.node.v1beta1.Scheduling
@@ -39,7 +38,7 @@ object nodeV1beta1RuntimeClassMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`nodeDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[nodeDotk8sDotioSlashv1beta1] = js.native
     /**
       * Handler specifies the underlying runtime and configuration that the CRI implementation will
       * use to handle pods of this class. The possible values are specific to the node & CRI

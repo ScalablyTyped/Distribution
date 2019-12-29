@@ -1,13 +1,6 @@
 package typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Array
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Boolean
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Integer
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Null
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Number
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Object
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

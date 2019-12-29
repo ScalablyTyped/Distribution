@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.default
-import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb2Cr0
-import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb2Cr2
-import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb4Cr4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -38,9 +38,9 @@ class Sensor () extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: Boolean
   ): Unit = js.native
-  def onactivate(`this`: this.type, ev: Event): js.Any = js.native
-  def onerror(`this`: this.type, ev: SensorErrorEvent): js.Any = js.native
-  def onreading(`this`: this.type, ev: Event): js.Any = js.native
+  def onactivate(ev: Event): js.Any = js.native
+  def onerror(ev: SensorErrorEvent): js.Any = js.native
+  def onreading(ev: Event): js.Any = js.native
    // Should be DOMHighResTimeStamp.
   def start(): Unit = js.native
   def stop(): Unit = js.native

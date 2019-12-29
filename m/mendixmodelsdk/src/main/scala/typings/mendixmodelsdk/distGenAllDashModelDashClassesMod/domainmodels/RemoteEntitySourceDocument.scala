@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.domainmodels
 
+import typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -29,6 +30,6 @@ abstract class RemoteEntitySourceDocument protected ()
 @js.native
 object RemoteEntitySourceDocument extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

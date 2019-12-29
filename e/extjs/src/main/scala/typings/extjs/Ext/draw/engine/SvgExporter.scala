@@ -40,15 +40,15 @@ object SvgExporter extends js.Object {
   		* @param config Object Any configuration for the export. Currently this is unused but may provide more options in the future
   		* @returns String The SVG as a string
   		*/
-  def generate(): java.lang.String = js.native
-  def generate(surface: ISurface): java.lang.String = js.native
-  def generate(surface: ISurface, config: js.Any): java.lang.String = js.native
+  def generate(): String = js.native
+  def generate(surface: ISurface): String = js.native
+  def generate(surface: ISurface, config: js.Any): String = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
   		* @param name String Name of the config option to return.
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this

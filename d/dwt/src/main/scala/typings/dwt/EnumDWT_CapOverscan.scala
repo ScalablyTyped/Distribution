@@ -1,11 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapOverscan.TWOV_ALL
-import typings.dwt.EnumDWT_CapOverscan.TWOV_AUTO
-import typings.dwt.EnumDWT_CapOverscan.TWOV_LEFTRIGHT
-import typings.dwt.EnumDWT_CapOverscan.TWOV_NONE
-import typings.dwt.EnumDWT_CapOverscan.TWOV_TOPBOTTOM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

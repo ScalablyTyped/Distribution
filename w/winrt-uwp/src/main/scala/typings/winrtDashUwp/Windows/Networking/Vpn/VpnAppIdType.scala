@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnAppIdType.filePath
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnAppIdType.fullyQualifiedBinaryName
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnAppIdType.packageFamilyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

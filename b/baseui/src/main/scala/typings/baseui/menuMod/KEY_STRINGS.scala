@@ -1,7 +1,6 @@
 package typings.baseui.menuMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.baseui.baseuiStrings.` `
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ trait KEY_STRINGS extends js.Object {
   var Backspace: typings.baseui.baseuiStrings.Backspace
   var Enter: typings.baseui.baseuiStrings.Enter
   var Escape: typings.baseui.baseuiStrings.Escape
-  var Space: ` `
+  var Space: typings.baseui.baseuiStrings.Space
 }
 
 @JSImport("baseui/menu", "KEY_STRINGS")

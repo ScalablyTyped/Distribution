@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.HeaderFooterType.evenPages
-import typings.officeDashJsDashPreview.Word.HeaderFooterType.firstPage
-import typings.officeDashJsDashPreview.Word.HeaderFooterType.primary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

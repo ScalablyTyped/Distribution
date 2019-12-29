@@ -13,7 +13,7 @@ trait ExpandEventArgs extends js.Object {
   var isInteraction: js.UndefOr[Boolean] = js.undefined
   /** Instance of the dialog model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Dialog.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object ExpandEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Dialog.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ExpandEventArgs = {
     val __obj = js.Dynamic.literal()

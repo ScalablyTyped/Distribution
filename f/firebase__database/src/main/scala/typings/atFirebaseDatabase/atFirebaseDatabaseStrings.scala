@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseDatabaseStrings {
   @js.native
-  sealed trait ` child_added` extends js.Object
-  
-  @js.native
-  sealed trait ` child_changed` extends js.Object
-  
-  @js.native
-  sealed trait ` child_moved` extends js.Object
-  
-  @js.native
-  sealed trait ` child_removed` extends js.Object
-  
-  @js.native
   sealed trait `5` extends js.Object
   
   @js.native
-  sealed trait `[MAX_NAME]` extends js.Object
+  sealed trait LeftsquarebracketMAX_NAMERightsquarebracket extends js.Object
   
   @js.native
-  sealed trait `[MIN_NAME]` extends js.Object
+  sealed trait LeftsquarebracketMIN_NAMERightsquarebracket extends js.Object
+  
+  @js.native
+  sealed trait Spacechild_added extends js.Object
+  
+  @js.native
+  sealed trait Spacechild_changed extends js.Object
+  
+  @js.native
+  sealed trait Spacechild_moved extends js.Object
+  
+  @js.native
+  sealed trait Spacechild_removed extends js.Object
   
   @js.native
   sealed trait cb extends js.Object
@@ -45,7 +45,7 @@ object atFirebaseDatabaseStrings {
   sealed trait f extends js.Object
   
   @js.native
-  sealed trait firebaseioDOTcom extends js.Object
+  sealed trait firebaseioDotcom extends js.Object
   
   @js.native
   sealed trait id extends js.Object
@@ -93,19 +93,19 @@ object atFirebaseDatabaseStrings {
   sealed trait websocket extends js.Object
   
   @scala.inline
-  def ` child_added`: ` child_added` = " child_added".asInstanceOf[` child_added`]
-  @scala.inline
-  def ` child_changed`: ` child_changed` = " child_changed".asInstanceOf[` child_changed`]
-  @scala.inline
-  def ` child_moved`: ` child_moved` = " child_moved".asInstanceOf[` child_moved`]
-  @scala.inline
-  def ` child_removed`: ` child_removed` = " child_removed".asInstanceOf[` child_removed`]
-  @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
   @scala.inline
-  def `[MAX_NAME]`: `[MAX_NAME]` = "[MAX_NAME]".asInstanceOf[`[MAX_NAME]`]
+  def LeftsquarebracketMAX_NAMERightsquarebracket: LeftsquarebracketMAX_NAMERightsquarebracket = "[MAX_NAME]".asInstanceOf[LeftsquarebracketMAX_NAMERightsquarebracket]
   @scala.inline
-  def `[MIN_NAME]`: `[MIN_NAME]` = "[MIN_NAME]".asInstanceOf[`[MIN_NAME]`]
+  def LeftsquarebracketMIN_NAMERightsquarebracket: LeftsquarebracketMIN_NAMERightsquarebracket = "[MIN_NAME]".asInstanceOf[LeftsquarebracketMIN_NAMERightsquarebracket]
+  @scala.inline
+  def Spacechild_added: Spacechild_added = " child_added".asInstanceOf[Spacechild_added]
+  @scala.inline
+  def Spacechild_changed: Spacechild_changed = " child_changed".asInstanceOf[Spacechild_changed]
+  @scala.inline
+  def Spacechild_moved: Spacechild_moved = " child_moved".asInstanceOf[Spacechild_moved]
+  @scala.inline
+  def Spacechild_removed: Spacechild_removed = " child_removed".asInstanceOf[Spacechild_removed]
   @scala.inline
   def cb: cb = "cb".asInstanceOf[cb]
   @scala.inline
@@ -119,7 +119,7 @@ object atFirebaseDatabaseStrings {
   @scala.inline
   def f: f = "f".asInstanceOf[f]
   @scala.inline
-  def firebaseioDOTcom: firebaseioDOTcom = "firebaseio.com".asInstanceOf[firebaseioDOTcom]
+  def firebaseioDotcom: firebaseioDotcom = "firebaseio.com".asInstanceOf[firebaseioDotcom]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline

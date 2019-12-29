@@ -1,7 +1,7 @@
 package typings.yup.yupMod
 
 import typings.yup.Anon_ContextPrefix
-import typings.yup.yupNumbers.`true`
+import typings.yup.yupBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

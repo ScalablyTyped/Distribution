@@ -1,11 +1,11 @@
 package typings.scanf
 
-import typings.scanf.scanfStrings.`%S`
-import typings.scanf.scanfStrings.`%d`
-import typings.scanf.scanfStrings.`%f`
-import typings.scanf.scanfStrings.`%o`
-import typings.scanf.scanfStrings.`%s_`
-import typings.scanf.scanfStrings.`%x`
+import typings.scanf.scanfStrings.PercentsignS
+import typings.scanf.scanfStrings.Percentsignd
+import typings.scanf.scanfStrings.Percentsignf
+import typings.scanf.scanfStrings.Percentsigno
+import typings.scanf.scanfStrings.Percentsigns
+import typings.scanf.scanfStrings.Percentsignx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ object scanfMod extends js.Object {
   	 * @param format The format represents a word.
   	 * @return A word.
   	 */
-  def apply(format: `%S`): String = js.native
+  def apply(format: PercentsignS): String = js.native
   /**
   	 * <p> Read formatted integer from stdin. </p>
   	 * 
@@ -50,7 +50,7 @@ object scanfMod extends js.Object {
   	 * @param format The format represents an integer value.
   	 * @return An integer.
   	 */
-  def apply(format: `%d`): Double = js.native
+  def apply(format: Percentsignd): Double = js.native
   /**
   	 * <p> Read formatted float from stdin. </p>
   	 * 
@@ -59,7 +59,7 @@ object scanfMod extends js.Object {
   	 * @param format The format represents an float value.
   	 * @return A float.
   	 */
-  def apply(format: `%f`): Double = js.native
+  def apply(format: Percentsignf): Double = js.native
   /**
   	 * <p> Read formatted octal from stdin. </p>
   	 * 
@@ -68,7 +68,7 @@ object scanfMod extends js.Object {
   	 * @param format The format represents an octal value.
   	 * @return An octal.
   	 */
-  def apply(format: `%o`): Double = js.native
+  def apply(format: Percentsigno): Double = js.native
   /* ------------------------------------------------------------
   		SCANF - FROM STDIN
   	------------------------------------------------------------ */
@@ -80,7 +80,7 @@ object scanfMod extends js.Object {
   	 * @param format The format represents a word.
   	 * @return A word.
   	 */
-  def apply(format: `%s_`): String = js.native
+  def apply(format: Percentsigns): String = js.native
   /**
   	 * <p> Read formatted hex from stdin. </p>
   	 * 
@@ -89,7 +89,7 @@ object scanfMod extends js.Object {
   	 * @param format The format represents a hex value.
   	 * @return A hex.
   	 */
-  def apply(format: `%x`): Double = js.native
+  def apply(format: Percentsignx): Double = js.native
   /**
   		 * <p> Reads formatted data from string. </p>
   		 * 
@@ -124,7 +124,7 @@ object scanfMod extends js.Object {
   		 * @return A word.
   		 */
   @JSName("sscanf")
-  def sscanf_S(source: String, format: `%S`): String = js.native
+  def sscanf_S(source: String, format: PercentsignS): String = js.native
   /**
   		 * <p> Read formatted integer from string. </p>
   		 * 
@@ -136,7 +136,7 @@ object scanfMod extends js.Object {
   		 * @return An integer.
   		 */
   @JSName("sscanf")
-  def sscanf_d(source: String, format: `%d`): Double = js.native
+  def sscanf_d(source: String, format: Percentsignd): Double = js.native
   /**
   		 * <p> Read formatted float from string. </p>
   		 * 
@@ -148,7 +148,7 @@ object scanfMod extends js.Object {
   		 * @return A float.
   		 */
   @JSName("sscanf")
-  def sscanf_f(source: String, format: `%f`): Double = js.native
+  def sscanf_f(source: String, format: Percentsignf): Double = js.native
   /**
   		 * <p> Read formatted octal from string. </p>
   		 * 
@@ -160,7 +160,7 @@ object scanfMod extends js.Object {
   		 * @return An octal.
   		 */
   @JSName("sscanf")
-  def sscanf_o(source: String, format: `%o`): Double = js.native
+  def sscanf_o(source: String, format: Percentsigno): Double = js.native
   /**
   		 * <p> Read formatted word from string. </p>
   		 * 
@@ -172,7 +172,7 @@ object scanfMod extends js.Object {
   		 * @return A word.
   		 */
   @JSName("sscanf")
-  def sscanf_s(source: String, format: `%s_`): String = js.native
+  def sscanf_s(source: String, format: Percentsigns): String = js.native
   /**
   		 * <p> Read formatted hex from string. </p>
   		 * 
@@ -184,6 +184,6 @@ object scanfMod extends js.Object {
   		 * @return A hex.
   		 */
   @JSName("sscanf")
-  def sscanf_x(source: String, format: `%x`): Double = js.native
+  def sscanf_x(source: String, format: Percentsignx): Double = js.native
 }
 

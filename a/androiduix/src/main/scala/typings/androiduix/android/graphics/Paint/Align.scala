@@ -1,9 +1,6 @@
 package typings.androiduix.android.graphics.Paint
 
 import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.android.graphics.Paint.Align.CENTER
-import typings.androiduix.android.graphics.Paint.Align.LEFT
-import typings.androiduix.android.graphics.Paint.Align.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

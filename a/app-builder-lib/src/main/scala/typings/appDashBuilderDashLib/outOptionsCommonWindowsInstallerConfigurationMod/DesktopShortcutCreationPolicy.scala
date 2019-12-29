@@ -1,9 +1,6 @@
 package typings.appDashBuilderDashLib.outOptionsCommonWindowsInstallerConfigurationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.appDashBuilderDashLib.outOptionsCommonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.ALWAYS
-import typings.appDashBuilderDashLib.outOptionsCommonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.FRESH_INSTALL
-import typings.appDashBuilderDashLib.outOptionsCommonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.NEVER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod.QueryType.ContentChild
-import typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod.QueryType.ViewChild
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

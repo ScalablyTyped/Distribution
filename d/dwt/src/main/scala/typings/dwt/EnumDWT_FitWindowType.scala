@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_FitWindowType.enumFitWindow
-import typings.dwt.EnumDWT_FitWindowType.enumFitWindowHeight
-import typings.dwt.EnumDWT_FitWindowType.enumFitWindowWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

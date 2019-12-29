@@ -3,10 +3,9 @@ package typings.mobx
 import org.scalablytyped.runtime.Instantiable1
 import typings.mobx.libInternalMod.ObservableMap
 import typings.mobx.libTypesObservablemapMod.IKeyValueMap
-import typings.mobx.libUtilsUtilsMod.Lambda
-import typings.mobx.mobxNumbers.`false`
-import typings.mobx.mobxNumbers.`true`
-import typings.mobx.mobxStrings.`An invariant failed, however the error is obfuscated because this is a production buildDOT`
+import typings.mobx.mobxBooleans.`false`
+import typings.mobx.mobxBooleans.`true`
+import typings.mobx.mobxStrings.`An invariant failedComma however the error is obfuscated because this is a production buildDot`
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +21,7 @@ object libUtilsUtilsMod extends js.Object {
   }
   
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
-  val OBFUSCATED_ERROR: `An invariant failed, however the error is obfuscated because this is a production buildDOT` = js.native
+  val OBFUSCATED_ERROR: `An invariant failedComma however the error is obfuscated because this is a production buildDot` = js.native
   def addHiddenFinalProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = js.native
   def addHiddenProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = js.native
   def assertPropertyConfigurable(`object`: js.Any, prop: PropertyKey): Unit = js.native

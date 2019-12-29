@@ -13,17 +13,17 @@ trait UrlWithParsedQuery extends Url {
 object UrlWithParsedQuery {
   @scala.inline
   def apply(
-    href: java.lang.String,
+    href: String,
     query: ParsedUrlQuery,
-    auth: java.lang.String = null,
-    hash: java.lang.String = null,
-    host: java.lang.String = null,
-    hostname: java.lang.String = null,
-    path: java.lang.String = null,
-    pathname: java.lang.String = null,
-    port: java.lang.String = null,
-    protocol: java.lang.String = null,
-    search: java.lang.String = null,
+    auth: String = null,
+    hash: String = null,
+    host: String = null,
+    hostname: String = null,
+    path: String = null,
+    pathname: String = null,
+    port: String = null,
+    protocol: String = null,
+    search: String = null,
     slashes: js.UndefOr[Boolean] = js.undefined
   ): UrlWithParsedQuery = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])

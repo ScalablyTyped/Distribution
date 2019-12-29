@@ -1,14 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.DepthFunction.ALWAYS
-import typings.cesium.cesiumMod.DepthFunction.EQUAL
-import typings.cesium.cesiumMod.DepthFunction.GREATER
-import typings.cesium.cesiumMod.DepthFunction.GREATER_OR_EQUAL
-import typings.cesium.cesiumMod.DepthFunction.LESS
-import typings.cesium.cesiumMod.DepthFunction.LESS_OR_EQUAL
-import typings.cesium.cesiumMod.DepthFunction.NEVER
-import typings.cesium.cesiumMod.DepthFunction.NOT_EQUAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

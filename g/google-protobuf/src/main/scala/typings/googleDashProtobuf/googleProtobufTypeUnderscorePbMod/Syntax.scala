@@ -1,8 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Syntax.SYNTAX_PROTO2
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Syntax.SYNTAX_PROTO3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

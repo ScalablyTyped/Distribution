@@ -10,7 +10,7 @@ object createAttribute extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.Attribute>.
   			 */
-  def apply(): typings.titanium.Titanium.UI.iOS.Attribute = js.native
-  def apply(parameters: js.Any): typings.titanium.Titanium.UI.iOS.Attribute = js.native
+  def apply(): Attribute = js.native
+  def apply(parameters: js.Any): Attribute = js.native
 }
 

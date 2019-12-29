@@ -1,10 +1,10 @@
 package typings.typescript.typescriptMod
 
-import typings.typescript.typescriptStrings.JS
 import typings.typescript.typescriptStrings.`non-relative`
 import typings.typescript.typescriptStrings.auto
 import typings.typescript.typescriptStrings.double
 import typings.typescript.typescriptStrings.index
+import typings.typescript.typescriptStrings.js_
 import typings.typescript.typescriptStrings.minimal
 import typings.typescript.typescriptStrings.relative
 import typings.typescript.typescriptStrings.single
@@ -29,7 +29,7 @@ object GetCompletionsAtPositionOptions {
   def apply(
     allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.undefined,
     disableSuggestions: js.UndefOr[Boolean] = js.undefined,
-    importModuleSpecifierEnding: minimal | index | JS = null,
+    importModuleSpecifierEnding: minimal | index | js_ = null,
     importModuleSpecifierPreference: relative | `non-relative` = null,
     includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined,

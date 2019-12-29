@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassDiagram
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Diagram]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Diagram] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Diagram]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Diagram] {
   var Locale: js.Any = js.native
   var fn: Diagram = js.native
 }

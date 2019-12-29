@@ -21,6 +21,7 @@ package object inkDashSpinnerMod {
   import typings.inkDashSpinner.inkDashSpinnerStrings.keyword
   import typings.inkDashSpinner.inkDashSpinnerStrings.level
   import typings.inkDashSpinner.inkDashSpinnerStrings.rgb
+  import typings.react.reactMod.Component
   import typings.std.Exclude
   import typings.std.Pick
 
@@ -33,7 +34,7 @@ package object inkDashSpinnerMod {
   type ChalkProps = BooleansPartial[ChalkCommons] with StringifyPartial[ChalkKeywordsAndHexes] with TupleOfNumbersPartial[ChalkColorModels]
   // Omit taken from https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html
   type Omit[T, K] = Pick[T, Exclude[String, K]]
-  type Spinner = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<SpinnerProps & ChalkProps> */ js.Any
+  type Spinner = Component[SpinnerProps with ChalkProps, js.Object, js.Any]
   type StringifyPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
     */ typings.inkDashSpinner.inkDashSpinnerStrings.StringifyPartial with js.Any

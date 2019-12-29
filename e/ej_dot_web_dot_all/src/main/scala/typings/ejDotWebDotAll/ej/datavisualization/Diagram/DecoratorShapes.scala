@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DecoratorShapes.Arrow
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DecoratorShapes.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DecoratorShapes.Diamond
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DecoratorShapes.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DecoratorShapes.OpenArrow
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DecoratorShapes.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

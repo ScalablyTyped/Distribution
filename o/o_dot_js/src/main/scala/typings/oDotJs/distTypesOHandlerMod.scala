@@ -1,6 +1,5 @@
 package typings.oDotJs
 
-import typings.oDotJs.distTypesOHandlerMod.BodyType
 import typings.oDotJs.distTypesORequestMod.ORequest
 import typings.oDotJs.distTypesOdataConfigMod.OdataConfig
 import typings.oDotJs.distTypesOdataQueryMod.OdataQuery

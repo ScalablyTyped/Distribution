@@ -9,6 +9,11 @@ trait BintrayOptions
   extends PublishConfiguration
      with _AllPublishOptions {
   /**
+    * The Bintray package name.
+    */
+  @JSName("package")
+  val _package: js.UndefOr[String | Null] = js.undefined
+  /**
     * The Bintray component (Debian only).
     */
   val component: js.UndefOr[String | Null] = js.undefined
@@ -21,10 +26,6 @@ trait BintrayOptions
     * The owner.
     */
   val owner: js.UndefOr[String | Null] = js.undefined
-  /**
-    * The Bintray package name.
-    */
-  val `package`: js.UndefOr[String | Null] = js.undefined
   /**
     * The provider. Must be `bintray`.
     */
@@ -46,10 +47,10 @@ object BintrayOptions {
   @scala.inline
   def apply(
     provider: bintray,
+    _package: String = null,
     component: String = null,
     distribution: String = null,
     owner: String = null,
-    `package`: String = null,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null,
     repo: String = null,
@@ -58,10 +59,10 @@ object BintrayOptions {
     user: String = null
   ): BintrayOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])

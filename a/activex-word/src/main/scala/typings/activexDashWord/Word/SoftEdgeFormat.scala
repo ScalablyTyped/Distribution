@@ -13,6 +13,7 @@ class SoftEdgeFormat protected () extends js.Object {
   val Parent: js.Any = js.native
   var Radius: Double = js.native
   var Type: MsoSoftEdgeType = js.native
-  var `Word.SoftEdgeFormat_typekey`: SoftEdgeFormat = js.native
+  @JSName("Word.SoftEdgeFormat_typekey")
+  var WordDotSoftEdgeFormat_typekey: SoftEdgeFormat = js.native
 }
 

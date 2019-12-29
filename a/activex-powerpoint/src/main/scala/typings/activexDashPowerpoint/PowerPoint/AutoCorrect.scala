@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class AutoCorrect protected () extends js.Object {
   var DisplayAutoCorrectOptions: Boolean = js.native
   var DisplayAutoLayoutOptions: Boolean = js.native
-  var `PowerPoint.AutoCorrect_typekey`: AutoCorrect = js.native
+  @JSName("PowerPoint.AutoCorrect_typekey")
+  var PowerPointDotAutoCorrect_typekey: AutoCorrect = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.node.replMod
 
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +12,12 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("repl", "Recoverable")
 @js.native
-class Recoverable protected ()
-  extends typings.std.Error {
+class Recoverable protected () extends Error {
   def this(err: Error) = this()
   var err: Error = js.native
   /* CompleteClass */
-  override var message: java.lang.String = js.native
+  override var message: String = js.native
   /* CompleteClass */
-  override var name: java.lang.String = js.native
+  override var name: String = js.native
 }
 

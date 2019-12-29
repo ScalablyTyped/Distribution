@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "HmacSha256")
 @js.native
-class HmacSha256 () extends SignatureAlgorithm
+class HmacSha256 ()
+  extends typings.xmldsigjs.buildTypesAlgorithmsHmacUnderscoreSignMod.HmacSha256
 

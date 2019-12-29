@@ -13,7 +13,7 @@ trait MenuItemClickEventArgs extends js.Object {
   var events: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the right clicked cell details.
     */
   var targetInfo: js.UndefOr[js.Any] = js.undefined
@@ -27,7 +27,7 @@ object MenuItemClickEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     events: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     targetInfo: js.Any = null,
     `type`: String = null
   ): MenuItemClickEventArgs = {

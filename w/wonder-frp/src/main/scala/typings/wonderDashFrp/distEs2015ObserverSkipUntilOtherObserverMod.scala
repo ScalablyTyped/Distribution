@@ -3,7 +3,6 @@ package typings.wonderDashFrp
 import typings.wonderDashFrp.distEs2015CoreObserverMod.Observer
 import typings.wonderDashFrp.distEs2015DisposableIDisposableMod.IDisposable
 import typings.wonderDashFrp.distEs2015ObserverIObserverMod.IObserver
-import typings.wonderDashFrp.distEs2015ObserverSkipUntilOtherObserverMod.SkipUntilOtherObserver
 import typings.wonderDashFrp.distEs2015StreamSkipUntilStreamMod.SkipUntilStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

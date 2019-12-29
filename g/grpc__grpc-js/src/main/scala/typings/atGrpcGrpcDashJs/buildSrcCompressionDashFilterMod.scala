@@ -4,7 +4,6 @@ import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Call
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.WriteObject
 import typings.atGrpcGrpcDashJs.buildSrcChannelMod.Channel
-import typings.atGrpcGrpcDashJs.buildSrcCompressionDashFilterMod.CompressionFilter
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.BaseFilter
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.Filter
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.FilterFactory

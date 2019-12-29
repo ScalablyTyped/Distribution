@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait CreateEventArgs extends js.Object {
   /** returns the DatePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DatePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -15,7 +15,7 @@ trait CreateEventArgs extends js.Object {
 
 object CreateEventArgs {
   @scala.inline
-  def apply(model: typings.ejDotWebDotAll.ej.DatePicker.Model = null, `type`: String = null): CreateEventArgs = {
+  def apply(model: Model = null, `type`: String = null): CreateEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -30,7 +30,8 @@ class XMLNode protected () extends js.Object {
   val SmartTag: typings.activexDashWord.Word.SmartTag = js.native
   var Text: String = js.native
   val ValidationStatus: WdXMLValidationStatus = js.native
-  var `Word.XMLNode_typekey`: XMLNode = js.native
+  @JSName("Word.XMLNode_typekey")
+  var WordDotXMLNode_typekey: XMLNode = js.native
   val WordOpenXML: String = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native

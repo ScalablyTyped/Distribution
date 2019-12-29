@@ -1,15 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.character
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.deadCharacter
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.keyDown
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.keyUp
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.systemCharacter
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.systemDeadCharacter
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.systemKeyDown
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.systemKeyUp
-import typings.winrt.Windows.UI.Core.CoreAcceleratorKeyEventType.unicodeCharacter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

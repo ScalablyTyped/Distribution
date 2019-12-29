@@ -20,10 +20,9 @@ package object distInterfacesMod {
     - java.lang.String
     - typings.maquette.distInterfacesMod.VNode
     - typings.maquette.distInterfacesMod.VNodeChildren
-    - typings.maquette.maquetteNumbers.`false`
+    - typings.maquette.maquetteBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
   */
   type VNodeChild = js.UndefOr[_VNodeChild | String | Null]
 }

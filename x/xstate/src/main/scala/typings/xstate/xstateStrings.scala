@@ -7,13 +7,10 @@ import scala.scalajs.js.annotation._
 
 object xstateStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait DOT extends js.Object
-  
-  @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Dot extends js.Object
   
   @js.native
   sealed trait ExtractStateValue extends js.Object
@@ -35,6 +32,9 @@ object xstateStrings {
   
   @js.native
   sealed trait TransitionsConfigMap extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait atomic extends _StateTypes
@@ -76,14 +76,12 @@ object xstateStrings {
   sealed trait transitions extends js.Object
   
   @js.native
-  sealed trait xstateDOTguard extends js.Object
+  sealed trait xstateDotguard extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def DOT: DOT = ".".asInstanceOf[DOT]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
   def ExtractStateValue: ExtractStateValue = "ExtractStateValue".asInstanceOf[ExtractStateValue]
   @scala.inline
@@ -98,6 +96,8 @@ object xstateStrings {
   def TransitionDefinitionMap: TransitionDefinitionMap = "TransitionDefinitionMap".asInstanceOf[TransitionDefinitionMap]
   @scala.inline
   def TransitionsConfigMap: TransitionsConfigMap = "TransitionsConfigMap".asInstanceOf[TransitionsConfigMap]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def atomic: atomic = "atomic".asInstanceOf[atomic]
   @scala.inline
@@ -125,6 +125,6 @@ object xstateStrings {
   @scala.inline
   def transitions: transitions = "transitions".asInstanceOf[transitions]
   @scala.inline
-  def xstateDOTguard: xstateDOTguard = "xstate.guard".asInstanceOf[xstateDOTguard]
+  def xstateDotguard: xstateDotguard = "xstate.guard".asInstanceOf[xstateDotguard]
 }
 

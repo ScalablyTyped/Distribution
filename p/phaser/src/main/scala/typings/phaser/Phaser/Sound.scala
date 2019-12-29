@@ -3,13 +3,6 @@ package typings.phaser.Phaser
 import org.scalablytyped.runtime.StringDictionary
 import typings.phaser.Phaser.Cache.BaseCache
 import typings.phaser.Phaser.Events.EventEmitter
-import typings.phaser.Phaser.Sound.BaseSound
-import typings.phaser.Phaser.Sound.BaseSoundManager
-import typings.phaser.Phaser.Sound.HTML5AudioSound
-import typings.phaser.Phaser.Sound.HTML5AudioSoundManager
-import typings.phaser.Phaser.Sound.NoAudioSoundManager
-import typings.phaser.Phaser.Sound.WebAudioSound
-import typings.phaser.Phaser.Sound.WebAudioSoundManager
 import typings.phaser.Phaser.Types.Sound.DecodeAudioConfig
 import typings.phaser.Phaser.Types.Sound.SoundConfig
 import typings.phaser.Phaser.Types.Sound.SoundMarker

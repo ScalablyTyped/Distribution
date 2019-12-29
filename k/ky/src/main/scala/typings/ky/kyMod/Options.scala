@@ -1,7 +1,7 @@
 package typings.ky.kyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ky.kyNumbers.`false`
+import typings.ky.kyBooleans.`false`
 import typings.ky.kyStrings.delete
 import typings.ky.kyStrings.get
 import typings.ky.kyStrings.head

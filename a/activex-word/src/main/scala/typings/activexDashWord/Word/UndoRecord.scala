@@ -13,7 +13,8 @@ class UndoRecord protected () extends js.Object {
   val CustomRecordName: String = js.native
   val IsRecordingCustomRecord: Boolean = js.native
   val Parent: js.Any = js.native
-  var `Word.UndoRecord_typekey`: UndoRecord = js.native
+  @JSName("Word.UndoRecord_typekey")
+  var WordDotUndoRecord_typekey: UndoRecord = js.native
   def EndCustomRecord(): Unit = js.native
   /** @param string [Name=''] */
   def StartCustomRecord(): Unit = js.native

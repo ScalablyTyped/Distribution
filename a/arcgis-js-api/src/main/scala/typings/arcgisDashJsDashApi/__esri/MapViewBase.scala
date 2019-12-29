@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +24,8 @@ trait MapViewBase extends js.Object {
     * @param options Animation options for controlling the duration and easing of the animation. See the properties defined in [GoToOptions2D](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GoToOptions2D) for object specifications.
     *
     */
-  def goTo(target: GoToTarget2D): IPromise[_] = js.native
-  def goTo(target: GoToTarget2D, options: GoToOptions2D): IPromise[_] = js.native
+  def goTo(target: GoToTarget2D): js.Promise[_] = js.native
+  def goTo(target: GoToTarget2D, options: GoToOptions2D): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.MapViewBase")

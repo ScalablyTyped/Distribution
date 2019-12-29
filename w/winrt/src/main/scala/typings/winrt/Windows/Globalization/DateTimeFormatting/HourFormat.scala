@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat.default
-import typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

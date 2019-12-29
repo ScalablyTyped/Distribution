@@ -1,7 +1,6 @@
 package typings.atJimpPluginDashNormalize
 
 import typings.atJimpCore.typesEtcMod.ImageCallback
-import typings.atJimpPluginDashNormalize.atJimpPluginDashNormalizeMod.Normalize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

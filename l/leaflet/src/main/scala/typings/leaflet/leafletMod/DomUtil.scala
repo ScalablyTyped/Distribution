@@ -1,6 +1,6 @@
 package typings.leaflet.leafletMod
 
-import typings.leaflet.leafletNumbers.`false`
+import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

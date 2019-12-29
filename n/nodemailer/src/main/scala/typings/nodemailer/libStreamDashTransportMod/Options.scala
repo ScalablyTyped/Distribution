@@ -11,8 +11,8 @@ import typings.nodemailer.libMailerMod.Headers
 import typings.nodemailer.libMailerMod.IcalAttachment
 import typings.nodemailer.libMailerMod.ListHeaders
 import typings.nodemailer.libMailerMod.TextEncoding
+import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerMod.TransportOptions
-import typings.nodemailer.nodemailerNumbers.`true`
 import typings.nodemailer.nodemailerStrings.high
 import typings.nodemailer.nodemailerStrings.low
 import typings.nodemailer.nodemailerStrings.normal

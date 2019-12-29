@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Management.Deployment.PackageInstallState.installed
-import typings.winrt.Windows.Management.Deployment.PackageInstallState.notInstalled
-import typings.winrt.Windows.Management.Deployment.PackageInstallState.staged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,8 +2,8 @@ package typings.ol.collectionMod
 
 import typings.ol.eventsMod.EventsKey
 import typings.ol.objectMod.ObjectEvent
-import typings.ol.olStrings.`change:length`
 import typings.ol.olStrings.add
+import typings.ol.olStrings.changeColonlength
 import typings.ol.olStrings.remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,13 +22,13 @@ trait Collection[T]
   @JSName("on")
   def on_add(`type`: add, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changelength(`type`: `change:length`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changelength(`type`: changeColonlength, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
   def on_remove(`type`: remove, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): EventsKey = js.native
   @JSName("once")
   def once_add(`type`: add, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changelength(`type`: `change:length`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changelength(`type`: changeColonlength, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
   def once_remove(`type`: remove, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): EventsKey = js.native
   def pop(): js.UndefOr[T] = js.native
@@ -39,7 +39,7 @@ trait Collection[T]
   @JSName("un")
   def un_add(`type`: add, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): Unit = js.native
   @JSName("un")
-  def un_changelength(`type`: `change:length`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changelength(`type`: changeColonlength, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
   def un_remove(`type`: remove, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): Unit = js.native
 }

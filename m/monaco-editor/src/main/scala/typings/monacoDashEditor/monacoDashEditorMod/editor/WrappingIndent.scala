@@ -1,10 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.WrappingIndent.DeepIndent
-import typings.monacoDashEditor.monacoDashEditorMod.editor.WrappingIndent.Indent
-import typings.monacoDashEditor.monacoDashEditorMod.editor.WrappingIndent.None
-import typings.monacoDashEditor.monacoDashEditorMod.editor.WrappingIndent.Same
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

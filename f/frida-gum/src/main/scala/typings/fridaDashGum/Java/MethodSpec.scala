@@ -22,6 +22,6 @@ trait MethodSpec extends js.Object {
   /**
     * Implementation.
     */
-  def implementation(`this`: Wrapper, params: js.Any*): js.Any = js.native
+  def implementation(params: js.Any*): js.Any = js.native
 }
 

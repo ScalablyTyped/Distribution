@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Gpio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.input
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullDown
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullUp
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.output
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrain
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrainPullUp
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSource
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSourcePullDown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

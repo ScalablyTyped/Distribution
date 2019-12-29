@@ -1,7 +1,7 @@
 package typings.atMaterialDashUiCore.hiddenHiddenMod
 
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.JS
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.css
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.js_
 import typings.atMaterialDashUiCore.stylesCreateBreakpointsMod.Breakpoint
 import typings.atMaterialDashUiCore.stylesWithStylesMod.ClassNameMap
 import typings.react.reactMod.CSSProperties
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait HiddenProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var classes: js.UndefOr[Partial[ClassNameMap[scala.Nothing]]] = js.undefined
-  var implementation: js.UndefOr[JS | css] = js.undefined
+  var implementation: js.UndefOr[js_ | css] = js.undefined
   var initialWidth: js.UndefOr[Breakpoint] = js.undefined
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
   var lgDown: js.UndefOr[Boolean] = js.undefined
@@ -38,7 +38,7 @@ object HiddenProps {
   def apply(
     className: String = null,
     classes: Partial[ClassNameMap[scala.Nothing]] = null,
-    implementation: JS | css = null,
+    implementation: js_ | css = null,
     initialWidth: Breakpoint = null,
     innerRef: Ref[_] | RefObject[_] = null,
     lgDown: js.UndefOr[Boolean] = js.undefined,

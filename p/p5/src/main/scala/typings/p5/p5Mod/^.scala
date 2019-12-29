@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:no-empty-interface
 @JSImport("p5", JSImport.Namespace)
 @js.native
-class ^ protected ()
-  extends typings.p5.p5Mod.p5 {
+class ^ protected () extends p5 {
   /**
     *   This is the p5 instance constructor. A p5 instance
     *   holds all the properties and methods related to a

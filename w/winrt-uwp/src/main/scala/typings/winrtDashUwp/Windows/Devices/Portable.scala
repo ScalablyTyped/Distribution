@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.calendarService
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.contactsService
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.deviceStatusService
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.notesService
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.ringtonesService
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.smsService
-import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.tasksService
 import typings.winrtDashUwp.Windows.Storage.StorageFolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`

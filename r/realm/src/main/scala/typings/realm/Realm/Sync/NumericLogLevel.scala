@@ -1,15 +1,6 @@
 package typings.realm.Realm.Sync
 
 import org.scalablytyped.runtime.TopLevel
-import typings.realm.Realm.Sync.NumericLogLevel.All
-import typings.realm.Realm.Sync.NumericLogLevel.Debug
-import typings.realm.Realm.Sync.NumericLogLevel.Detail
-import typings.realm.Realm.Sync.NumericLogLevel.Error
-import typings.realm.Realm.Sync.NumericLogLevel.Fatal
-import typings.realm.Realm.Sync.NumericLogLevel.Info
-import typings.realm.Realm.Sync.NumericLogLevel.Off
-import typings.realm.Realm.Sync.NumericLogLevel.Trace
-import typings.realm.Realm.Sync.NumericLogLevel.Warn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TickAlignment.LeftOrTop
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TickAlignment.RightOrBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

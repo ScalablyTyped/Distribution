@@ -19,24 +19,6 @@ trait Pureish extends js.Object
 
 object Pureish {
   @scala.inline
-  def StringLiteral(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.StringLiteral,
-    value: String,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Pureish = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Pureish]
-  }
-  @scala.inline
   def ArrowFunctionExpression(
     async: Boolean,
     body: BlockStatement | Expression,
@@ -64,14 +46,14 @@ object Pureish {
     __obj.asInstanceOf[Pureish]
   }
   @scala.inline
-  def ClassDeclaration(
+  def ClassExpression(
     body: ClassBody,
     end: Double,
     id: Identifier,
     loc: SourceLocation,
     start: Double,
     superClass: Expression,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.ClassDeclaration,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.ClassExpression,
     decorators: js.Array[Decorator] = null,
     implements: js.Array[ClassImplements] = null,
     innerComments: js.Array[Comment] = null,
@@ -111,40 +93,32 @@ object Pureish {
     __obj.asInstanceOf[Pureish]
   }
   @scala.inline
-  def FunctionExpression(
-    async: Boolean,
-    body: BlockStatement,
+  def StringLiteral(
     end: Double,
-    generator: Boolean,
-    id: Identifier,
     loc: SourceLocation,
-    params: js.Array[LVal],
     start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.FunctionExpression,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.StringLiteral,
+    value: String,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
-    returnType: TypeAnnotation = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration = null
+    trailingComments: js.Array[Comment] = null
   ): Pureish = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pureish]
   }
   @scala.inline
-  def ClassExpression(
+  def ClassDeclaration(
     body: ClassBody,
     end: Double,
     id: Identifier,
     loc: SourceLocation,
     start: Double,
     superClass: Expression,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.ClassExpression,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.ClassDeclaration,
     decorators: js.Array[Decorator] = null,
     implements: js.Array[ClassImplements] = null,
     innerComments: js.Array[Comment] = null,
@@ -185,6 +159,50 @@ object Pureish {
     __obj.asInstanceOf[Pureish]
   }
   @scala.inline
+  def BooleanLiteral(
+    end: Double,
+    loc: SourceLocation,
+    start: Double,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.BooleanLiteral,
+    value: Boolean,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Pureish = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pureish]
+  }
+  @scala.inline
+  def FunctionExpression(
+    async: Boolean,
+    body: BlockStatement,
+    end: Double,
+    generator: Boolean,
+    id: Identifier,
+    loc: SourceLocation,
+    params: js.Array[LVal],
+    start: Double,
+    `type`: typings.babelDashTypes.babelDashTypesStrings.FunctionExpression,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    returnType: TypeAnnotation = null,
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration = null
+  ): Pureish = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pureish]
+  }
+  @scala.inline
   def FunctionDeclaration(
     async: Boolean,
     body: BlockStatement,
@@ -208,24 +226,6 @@ object Pureish {
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Pureish]
-  }
-  @scala.inline
-  def BooleanLiteral(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelDashTypes.babelDashTypesStrings.BooleanLiteral,
-    value: Boolean,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Pureish = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pureish]
   }
 }

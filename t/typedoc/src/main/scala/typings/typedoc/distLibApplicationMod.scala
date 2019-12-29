@@ -1,6 +1,5 @@
 package typings.typedoc
 
-import typings.typedoc.distLibApplicationMod.Application
 import typings.typedoc.distLibConverterMod.Converter
 import typings.typedoc.distLibModelsMod.ProjectReflection
 import typings.typedoc.distLibOutputRendererMod.Renderer

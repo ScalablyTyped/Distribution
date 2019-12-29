@@ -92,6 +92,18 @@ object activexDashShdocvwStrings {
   sealed trait Left extends js.Object
   
   @js.native
+  sealed trait `Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket` extends BrowserBarConstants
+  
+  @js.native
+  sealed trait `LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` extends BrowserBarConstants
+  
+  @js.native
+  sealed trait `LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` extends BrowserBarConstants
+  
+  @js.native
+  sealed trait `LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` extends BrowserBarConstants
+  
+  @js.native
   sealed trait MenuBar extends js.Object
   
   @js.native
@@ -367,18 +379,6 @@ object activexDashShdocvwStrings {
   @js.native
   sealed trait szProperty extends js.Object
   
-  @js.native
-  sealed trait `{30D02401-6A81-11D0-8274-00C04FD5AE38}` extends BrowserBarConstants
-  
-  @js.native
-  sealed trait `{EFA24E61-B078-11D0-89E4-00C04FC9E26E}` extends BrowserBarConstants
-  
-  @js.native
-  sealed trait `{EFA24E62-B078-11D0-89E4-00C04FC9E26E}` extends BrowserBarConstants
-  
-  @js.native
-  sealed trait `{EFA24E63-B078-11D0-89E4-00C04FC9E26E}` extends BrowserBarConstants
-  
   @scala.inline
   def ActiveDocument: ActiveDocument = "ActiveDocument".asInstanceOf[ActiveDocument]
   @scala.inline
@@ -435,6 +435,14 @@ object activexDashShdocvwStrings {
   def IsChildWindow: IsChildWindow = "IsChildWindow".asInstanceOf[IsChildWindow]
   @scala.inline
   def Left: Left = "Left".asInstanceOf[Left]
+  @scala.inline
+  def `Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket`: `Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket` = "{30D02401-6A81-11D0-8274-00C04FD5AE38}".asInstanceOf[`Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket`]
+  @scala.inline
+  def `LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E61-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`]
+  @scala.inline
+  def `LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E62-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`]
+  @scala.inline
+  def `LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E63-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`]
   @scala.inline
   def MenuBar: MenuBar = "MenuBar".asInstanceOf[MenuBar]
   @scala.inline
@@ -619,13 +627,5 @@ object activexDashShdocvwStrings {
   def strUrl: strUrl = "strUrl".asInstanceOf[strUrl]
   @scala.inline
   def szProperty: szProperty = "szProperty".asInstanceOf[szProperty]
-  @scala.inline
-  def `{30D02401-6A81-11D0-8274-00C04FD5AE38}`: `{30D02401-6A81-11D0-8274-00C04FD5AE38}` = "{30D02401-6A81-11D0-8274-00C04FD5AE38}".asInstanceOf[`{30D02401-6A81-11D0-8274-00C04FD5AE38}`]
-  @scala.inline
-  def `{EFA24E61-B078-11D0-89E4-00C04FC9E26E}`: `{EFA24E61-B078-11D0-89E4-00C04FC9E26E}` = "{EFA24E61-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E61-B078-11D0-89E4-00C04FC9E26E}`]
-  @scala.inline
-  def `{EFA24E62-B078-11D0-89E4-00C04FC9E26E}`: `{EFA24E62-B078-11D0-89E4-00C04FC9E26E}` = "{EFA24E62-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E62-B078-11D0-89E4-00C04FC9E26E}`]
-  @scala.inline
-  def `{EFA24E63-B078-11D0-89E4-00C04FC9E26E}`: `{EFA24E63-B078-11D0-89E4-00C04FC9E26E}` = "{EFA24E63-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E63-B078-11D0-89E4-00C04FC9E26E}`]
 }
 

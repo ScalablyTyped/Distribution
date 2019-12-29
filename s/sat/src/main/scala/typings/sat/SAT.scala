@@ -1,9 +1,5 @@
 package typings.sat
 
-import typings.sat.SAT.Circle
-import typings.sat.SAT.Polygon
-import typings.sat.SAT.Response
-import typings.sat.SAT.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

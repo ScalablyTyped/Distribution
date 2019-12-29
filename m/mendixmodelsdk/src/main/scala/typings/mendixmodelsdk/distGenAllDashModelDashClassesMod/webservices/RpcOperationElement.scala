@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.webservices
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenWebservicesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -27,7 +28,7 @@ class RpcOperationElement protected ()
 @js.native
 object RpcOperationElement extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenWebservicesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new RpcOperationElement instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

@@ -12,7 +12,7 @@ trait IScroller extends IEvented {
   /** [Config Option] (Number) */
   var acceleration: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var directionLock: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -22,7 +22,7 @@ trait IScroller extends IEvented {
   /** [Method] Returns the value of direction
   		* @returns String
   		*/
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of directionLock
   		* @returns Boolean
   		*/
@@ -57,7 +57,7 @@ trait IScroller extends IEvented {
   		* @param axis String The axis to check (x or y).
   		* @returns Boolean true if the axis is enabled.
   		*/
-  var isAxisEnabled: js.UndefOr[js.Function1[/* axis */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var isAxisEnabled: js.UndefOr[js.Function1[/* axis */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Config Option] (Object) */
   var momentumEasing: js.UndefOr[js.Any] = js.undefined
   /** [Method] Change the scroll offset by the given amount
@@ -96,7 +96,7 @@ trait IScroller extends IEvented {
   /** [Method] Sets the value of direction
   		* @param direction String The new value.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of directionLock
   		* @param directionLock Boolean The new value.
   		*/
@@ -145,7 +145,7 @@ object IScroller {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -156,44 +156,44 @@ object IScroller {
     clearListeners: () => Unit = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    direction: java.lang.String = null,
+    direction: String = null,
     directionLock: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     friction: Int | Double = null,
     getBubbleEvents: () => _ = null,
-    getDirection: () => java.lang.String = null,
+    getDirection: () => String = null,
     getDirectionLock: () => Boolean = null,
     getDisabled: () => Boolean = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getInitialOffset: () => _ = null,
     getListeners: () => _ = null,
     getMomentumEasing: () => _ = null,
     getSlotSnapEasing: () => _ = null,
     getSlotSnapSize: () => _ = null,
     getTranslatable: () => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initialOffset: js.Any = null,
-    isAxisEnabled: /* axis */ js.UndefOr[java.lang.String] => Boolean = null,
+    isAxisEnabled: /* axis */ js.UndefOr[String] => Boolean = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     momentumEasing: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     scrollBy: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animation */ js.UndefOr[js.Any]) => IScroller = null,
@@ -201,7 +201,7 @@ object IScroller {
     scrollToEnd: /* animation */ js.UndefOr[js.Any] => IScroller = null,
     self: IClass = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setDirectionLock: /* directionLock */ js.UndefOr[Boolean] => Unit = null,
     setDisabled: /* disabled */ js.UndefOr[Boolean] => Unit = null,
     setInitialOffset: /* initialOffset */ js.UndefOr[js.Any] => Unit = null,
@@ -215,7 +215,7 @@ object IScroller {
     slotSnapSize: js.Any = null,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     updateBoundary: () => IScroller = null,

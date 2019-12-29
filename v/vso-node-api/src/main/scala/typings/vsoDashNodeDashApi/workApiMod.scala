@@ -32,7 +32,6 @@ import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TeamSettingsDaysOf
 import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TeamSettingsIteration
 import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TeamSettingsPatch
 import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.UpdatePlan
-import typings.vsoDashNodeDashApi.workApiMod.IWorkApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

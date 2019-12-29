@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Kanban
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Kanban.Target.All
-import typings.ejDotWebDotAll.ej.Kanban.Target.Card
-import typings.ejDotWebDotAll.ej.Kanban.Target.Content
-import typings.ejDotWebDotAll.ej.Kanban.Target.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

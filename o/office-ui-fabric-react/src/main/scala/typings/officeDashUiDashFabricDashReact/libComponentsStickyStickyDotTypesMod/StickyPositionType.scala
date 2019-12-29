@@ -1,9 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsStickyStickyDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsStickyStickyDotTypesMod.StickyPositionType.Both
-import typings.officeDashUiDashFabricDashReact.libComponentsStickyStickyDotTypesMod.StickyPositionType.Footer
-import typings.officeDashUiDashFabricDashReact.libComponentsStickyStickyDotTypesMod.StickyPositionType.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

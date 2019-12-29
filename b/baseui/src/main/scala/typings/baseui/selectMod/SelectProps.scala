@@ -62,7 +62,7 @@ trait SelectProps extends js.Object {
   var onOpen: js.UndefOr[js.Function0[_]] = js.undefined
   var onSelectResetsInput: js.UndefOr[Boolean] = js.undefined
   var openOnClick: js.UndefOr[Boolean] = js.undefined
-  var options: js.UndefOr[Value] = js.undefined
+  var options: js.UndefOr[OptionsT] = js.undefined
   var overrides: js.UndefOr[SelectOverrides] = js.undefined
   var placeholder: js.UndefOr[ReactNode] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
@@ -111,7 +111,7 @@ object SelectProps {
     onOpen: () => _ = null,
     onSelectResetsInput: js.UndefOr[Boolean] = js.undefined,
     openOnClick: js.UndefOr[Boolean] = js.undefined,
-    options: Value = null,
+    options: OptionsT = null,
     overrides: SelectOverrides = null,
     placeholder: ReactNode = null,
     positive: js.UndefOr[Boolean] = js.undefined,

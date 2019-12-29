@@ -1,6 +1,5 @@
 package typings.baconjs
 
-import typings.baconjs.typesSkipduplicatesMod.Equals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

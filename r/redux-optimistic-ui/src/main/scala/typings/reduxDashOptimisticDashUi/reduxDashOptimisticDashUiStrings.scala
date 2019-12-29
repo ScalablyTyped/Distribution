@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object reduxDashOptimisticDashUiStrings {
   @js.native
-  sealed trait `@@optimist/BEGIN` extends js.Object
+  sealed trait `@@optimistSlashBEGIN` extends js.Object
   
   @js.native
-  sealed trait `@@optimist/COMMIT` extends js.Object
+  sealed trait `@@optimistSlashCOMMIT` extends js.Object
   
   @js.native
-  sealed trait `@@optimist/REVERT` extends js.Object
+  sealed trait `@@optimistSlashREVERT` extends js.Object
   
   @scala.inline
-  def `@@optimist/BEGIN`: `@@optimist/BEGIN` = "@@optimist/BEGIN".asInstanceOf[`@@optimist/BEGIN`]
+  def `@@optimistSlashBEGIN`: `@@optimistSlashBEGIN` = "@@optimist/BEGIN".asInstanceOf[`@@optimistSlashBEGIN`]
   @scala.inline
-  def `@@optimist/COMMIT`: `@@optimist/COMMIT` = "@@optimist/COMMIT".asInstanceOf[`@@optimist/COMMIT`]
+  def `@@optimistSlashCOMMIT`: `@@optimistSlashCOMMIT` = "@@optimist/COMMIT".asInstanceOf[`@@optimistSlashCOMMIT`]
   @scala.inline
-  def `@@optimist/REVERT`: `@@optimist/REVERT` = "@@optimist/REVERT".asInstanceOf[`@@optimist/REVERT`]
+  def `@@optimistSlashREVERT`: `@@optimistSlashREVERT` = "@@optimist/REVERT".asInstanceOf[`@@optimistSlashREVERT`]
 }
 

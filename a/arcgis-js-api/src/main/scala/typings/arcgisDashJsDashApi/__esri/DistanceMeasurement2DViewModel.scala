@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imperial
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measured
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measuring
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
@@ -61,14 +61,14 @@ trait DistanceMeasurement2DViewModel extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unit)
     */
-  var unit: metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+  var unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
   /**
     * List of available units and unit systems (imperial, metric) for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unitOptions)
     */
   var unitOptions: js.Array[
-    metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+    metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
   ]
   /**
     * The view from which the widget will operate.

@@ -1,11 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.TravelMode.BICYCLING
-import typings.googlemaps.google.maps.TravelMode.DRIVING
-import typings.googlemaps.google.maps.TravelMode.TRANSIT
-import typings.googlemaps.google.maps.TravelMode.TWO_WHEELER
-import typings.googlemaps.google.maps.TravelMode.WALKING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

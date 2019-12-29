@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.codeactions
 
+import typings.mendixmodelsdk.distGenCodeactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -24,6 +25,6 @@ abstract class CodeAction protected ()
 @js.native
 object CodeAction extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenCodeactionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

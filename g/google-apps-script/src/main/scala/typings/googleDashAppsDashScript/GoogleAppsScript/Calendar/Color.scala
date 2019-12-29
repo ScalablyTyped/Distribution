@@ -1,27 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.BLUE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.BROWN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.CHARCOAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.CHESTNUT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.GRAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.GREEN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.INDIGO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.LIME
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.MUSTARD
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.OLIVE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.ORANGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PINK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PLUM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PURPLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.RED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.RED_ORANGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.SEA_BLUE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.SLATE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.TEAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.TURQOISE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

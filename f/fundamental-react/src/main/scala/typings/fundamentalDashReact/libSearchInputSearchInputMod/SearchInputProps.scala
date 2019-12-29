@@ -12,6 +12,8 @@ trait SearchInputProps
   extends /* x */ StringDictionary[js.Any] {
   var className: js.UndefOr[String] = js.undefined
   var compact: js.UndefOr[Boolean] = js.undefined
+  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   var inShellbar: js.UndefOr[Boolean] = js.undefined
   var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var listProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
@@ -33,6 +35,8 @@ object SearchInputProps {
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
+    customStyles: StringDictionary[js.Any] = null,
+    disableStyles: js.UndefOr[Boolean] = js.undefined,
     inShellbar: js.UndefOr[Boolean] = js.undefined,
     inputProps: StringDictionary[js.Any] = null,
     listProps: StringDictionary[js.Any] = null,
@@ -47,6 +51,8 @@ object SearchInputProps {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(inShellbar)) __obj.updateDynamic("inShellbar")(inShellbar.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])

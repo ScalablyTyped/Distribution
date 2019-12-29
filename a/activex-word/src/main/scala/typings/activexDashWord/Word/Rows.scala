@@ -33,7 +33,8 @@ class Rows protected () extends js.Object {
   var SpaceBetweenColumns: Double = js.native
   var TableDirection: WdTableDirection = js.native
   var VerticalPosition: Double = js.native
-  var `Word.Rows_typekey`: Rows = js.native
+  @JSName("Word.Rows_typekey")
+  var WordDotRows_typekey: Rows = js.native
   var WrapAroundText: Double = js.native
   def Add(): Row = js.native
   def Add(BeforeRow: js.Any): Row = js.native

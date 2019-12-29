@@ -1,14 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunch
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunchFreeWeekend
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunchTrial
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.InGameAdViewed
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.MarketingMessageView
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.Media
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.PreloadFinish
-import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.PreloadStart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

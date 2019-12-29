@@ -121,7 +121,7 @@ class Calendar () extends CalendarLite {
   @JSName("get")
   def get_slideFrom(property: slideFrom): String = js.native
   @JSName("get")
-  def get_style_String(property: style): String = js.native
+  def get_style_Object(property: style): js.Object = js.native
   /**
     * Provides keyboard navigation of calendar.
     * Called from _onKeyDown() to handle keydown on a stand alone Calendar,

@@ -1,8 +1,6 @@
 package typings.heredatalens.H.datalens.HeatmapLayer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.AVERAGE
-import typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.SUM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

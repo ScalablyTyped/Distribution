@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.Both
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.None
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.Team
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

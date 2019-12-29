@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("telebot", JSImport.Namespace)
 @js.native
-class ^ protected ()
-  extends typings.telebot.telebotMod.telebot {
+class ^ protected () extends telebot {
   def this(config: String) = this()
   def this(config: config) = this()
 }

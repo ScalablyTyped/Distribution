@@ -2,12 +2,6 @@ package typings.ethers
 
 import org.scalablytyped.runtime.TopLevel
 import typings.ethers.distTypesUtilsTypesMod.Arrayish
-import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm
-import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm.NFC
-import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm.NFD
-import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm.NFKC
-import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm.NFKD
-import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm.current
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

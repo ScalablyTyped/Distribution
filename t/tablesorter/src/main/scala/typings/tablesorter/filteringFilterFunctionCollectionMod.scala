@@ -2,7 +2,7 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tablesorter.filteringFilterFunctionMod.FilterFunction
-import typings.tablesorter.tablesorterNumbers.`true`
+import typings.tablesorter.tablesorterBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

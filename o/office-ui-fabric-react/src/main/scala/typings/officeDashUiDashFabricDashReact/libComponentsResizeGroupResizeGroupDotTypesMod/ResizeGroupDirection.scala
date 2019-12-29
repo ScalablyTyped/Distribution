@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsResizeGroupResizeGroupDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsResizeGroupResizeGroupDotTypesMod.ResizeGroupDirection.horizontal
-import typings.officeDashUiDashFabricDashReact.libComponentsResizeGroupResizeGroupDotTypesMod.ResizeGroupDirection.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

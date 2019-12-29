@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tile
 import typings.std.HTMLImageElement
 import scala.scalajs.js
@@ -124,8 +123,8 @@ trait TileLayer
     * @param options.signal [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def fetchTile(level: Double, row: Double, col: Double): IPromise[HTMLImageElement] = js.native
-  def fetchTile(level: Double, row: Double, col: Double, options: TileLayerFetchTileOptions): IPromise[HTMLImageElement] = js.native
+  def fetchTile(level: Double, row: Double, col: Double): js.Promise[HTMLImageElement] = js.native
+  def fetchTile(level: Double, row: Double, col: Double, options: TileLayerFetchTileOptions): js.Promise[HTMLImageElement] = js.native
   /**
     * This method returns a URL to a tile for a given level, row and column.
     *

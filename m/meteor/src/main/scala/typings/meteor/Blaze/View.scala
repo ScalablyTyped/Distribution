@@ -14,7 +14,7 @@ trait View extends js.Object {
   var name: String
   var parentView: View
   var renderCount: Double
-  var template: typings.meteor.Blaze.Template
+  var template: Template
   def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation
   def firstNode(): Node
   def lastNode(): Node

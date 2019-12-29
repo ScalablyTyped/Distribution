@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.TimedMetadataKind.caption
-import typings.winrtDashUwp.Windows.Media.Core.TimedMetadataKind.chapter
-import typings.winrtDashUwp.Windows.Media.Core.TimedMetadataKind.custom
-import typings.winrtDashUwp.Windows.Media.Core.TimedMetadataKind.data
-import typings.winrtDashUwp.Windows.Media.Core.TimedMetadataKind.description
-import typings.winrtDashUwp.Windows.Media.Core.TimedMetadataKind.subtitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

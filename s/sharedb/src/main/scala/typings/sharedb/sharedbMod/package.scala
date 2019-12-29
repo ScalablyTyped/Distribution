@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object sharedbMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.sharedb.libSharedbMod.Snapshot
-  import typings.sharedb.sharedbNumbers.`true`
+  import typings.sharedb.sharedbBooleans.`true`
 
   type AddNumOp = typings.sharedb.libSharedbMod.AddNumOp
   type BasicCallback = js.Function1[/* err */ js.UndefOr[typings.std.Error], Unit]

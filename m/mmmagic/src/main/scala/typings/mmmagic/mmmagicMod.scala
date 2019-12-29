@@ -1,6 +1,5 @@
 package typings.mmmagic
 
-import typings.mmmagic.mmmagicMod.bitmask
 import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js

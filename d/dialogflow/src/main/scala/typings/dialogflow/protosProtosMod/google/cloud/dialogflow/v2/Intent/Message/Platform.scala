@@ -1,16 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.ACTIONS_ON_GOOGLE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.FACEBOOK
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.GOOGLE_HANGOUTS
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.KIK
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.LINE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.PLATFORM_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.SKYPE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.SLACK
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.TELEGRAM
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.VIBER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

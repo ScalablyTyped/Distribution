@@ -11,7 +11,8 @@ class CalculatedMember protected () extends js.Object {
   val Creator: XlCreator = js.native
   val DisplayFolder: String = js.native
   val Dynamic: Boolean = js.native
-  var `Excel.CalculatedMember_typekey`: CalculatedMember = js.native
+  @JSName("Excel.CalculatedMember_typekey")
+  var ExcelDotCalculatedMember_typekey: CalculatedMember = js.native
   var FlattenHierarchies: Boolean = js.native
   val Formula: String = js.native
   var HierarchizeDistinct: Boolean = js.native

@@ -2,22 +2,22 @@ package typings.senchaUnderscoreTouch.Ext.data.association
 
 import typings.senchaUnderscoreTouch.Ext.Array
 import typings.senchaUnderscoreTouch.Ext.IClass
+import typings.senchaUnderscoreTouch.Ext.data.reader.IReader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IHasOne
-  extends typings.senchaUnderscoreTouch.Ext.data.association.IAssociation {
+trait IHasOne extends IAssociation {
   /** [Config Option] (String) */
-  var foreignKey: js.UndefOr[java.lang.String] = js.undefined
+  var foreignKey: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of foreignKey
   		* @returns String
   		*/
-  var getForeignKey: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of getterName
   		* @returns String
   		*/
-  var getGetterName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getGetterName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of instanceName
   		* @returns Object
   		*/
@@ -25,17 +25,17 @@ trait IHasOne
   /** [Method] Returns the value of setterName
   		* @returns String
   		*/
-  var getSetterName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSetterName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var getterName: js.UndefOr[java.lang.String] = js.undefined
+  var getterName: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of foreignKey
   		* @param foreignKey String The new value.
   		*/
-  var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of getterName
   		* @param getterName String The new value.
   		*/
-  var setGetterName: js.UndefOr[js.Function1[/* getterName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setGetterName: js.UndefOr[js.Function1[/* getterName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of instanceName
   		* @param instanceName Object The new value.
   		*/
@@ -43,9 +43,9 @@ trait IHasOne
   /** [Method] Sets the value of setterName
   		* @param setterName String The new value.
   		*/
-  var setSetterName: js.UndefOr[js.Function1[/* setterName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSetterName: js.UndefOr[js.Function1[/* setterName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var setterName: js.UndefOr[java.lang.String] = js.undefined
+  var setterName: js.UndefOr[String] = js.undefined
 }
 
 object IHasOne {
@@ -53,56 +53,56 @@ object IHasOne {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    associatedModel: java.lang.String = null,
-    associatedName: java.lang.String = null,
-    associationKey: java.lang.String = null,
+    associatedModel: String = null,
+    associatedName: String = null,
+    associationKey: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    foreignKey: java.lang.String = null,
-    getAssociatedModel: () => java.lang.String = null,
-    getAssociatedName: () => java.lang.String = null,
-    getAssociationKey: () => java.lang.String = null,
-    getForeignKey: () => java.lang.String = null,
-    getGetterName: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    foreignKey: String = null,
+    getAssociatedModel: () => String = null,
+    getAssociatedName: () => String = null,
+    getAssociationKey: () => String = null,
+    getForeignKey: () => String = null,
+    getGetterName: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getInstanceName: () => _ = null,
     getName: () => _ = null,
     getOwnerModel: () => _ = null,
-    getOwnerName: () => java.lang.String = null,
-    getPrimaryKey: () => java.lang.String = null,
-    getReader: () => typings.senchaUnderscoreTouch.Ext.data.reader.IReader = null,
-    getSetterName: () => java.lang.String = null,
-    getType: () => java.lang.String = null,
-    getterName: java.lang.String = null,
+    getOwnerName: () => String = null,
+    getPrimaryKey: () => String = null,
+    getReader: () => IReader = null,
+    getSetterName: () => String = null,
+    getType: () => String = null,
+    getterName: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     ownerModel: js.Any = null,
     platformConfig: js.Any = null,
-    primaryKey: java.lang.String = null,
-    reader: typings.senchaUnderscoreTouch.Ext.data.reader.IReader = null,
+    primaryKey: String = null,
+    reader: IReader = null,
     self: IClass = null,
-    setAssociatedModel: /* associatedModel */ js.UndefOr[java.lang.String] => Unit = null,
-    setAssociatedName: /* associatedName */ js.UndefOr[java.lang.String] => Unit = null,
-    setAssociationKey: /* associationKey */ js.UndefOr[java.lang.String] => Unit = null,
-    setForeignKey: /* foreignKey */ js.UndefOr[java.lang.String] => Unit = null,
-    setGetterName: /* getterName */ js.UndefOr[java.lang.String] => Unit = null,
+    setAssociatedModel: /* associatedModel */ js.UndefOr[String] => Unit = null,
+    setAssociatedName: /* associatedName */ js.UndefOr[String] => Unit = null,
+    setAssociationKey: /* associationKey */ js.UndefOr[String] => Unit = null,
+    setForeignKey: /* foreignKey */ js.UndefOr[String] => Unit = null,
+    setGetterName: /* getterName */ js.UndefOr[String] => Unit = null,
     setInstanceName: /* instanceName */ js.UndefOr[js.Any] => Unit = null,
     setName: /* name */ js.UndefOr[js.Any] => Unit = null,
     setOwnerModel: /* ownerModel */ js.UndefOr[js.Any] => Unit = null,
-    setOwnerName: /* ownerName */ js.UndefOr[java.lang.String] => Unit = null,
-    setPrimaryKey: /* primaryKey */ js.UndefOr[java.lang.String] => Unit = null,
-    setReader: /* reader */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.data.reader.IReader] => Unit = null,
-    setSetterName: /* setterName */ js.UndefOr[java.lang.String] => Unit = null,
-    setType: /* type */ js.UndefOr[java.lang.String] => Unit = null,
-    setterName: java.lang.String = null,
+    setOwnerName: /* ownerName */ js.UndefOr[String] => Unit = null,
+    setPrimaryKey: /* primaryKey */ js.UndefOr[String] => Unit = null,
+    setReader: /* reader */ js.UndefOr[IReader] => Unit = null,
+    setSetterName: /* setterName */ js.UndefOr[String] => Unit = null,
+    setType: /* type */ js.UndefOr[String] => Unit = null,
+    setterName: String = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    `type`: java.lang.String = null,
+    `type`: String = null,
     uses: Array = null
   ): IHasOne = {
     val __obj = js.Dynamic.literal()

@@ -1,7 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcComponentsComponentMod.Component
-import typings.plottable.buildSrcComponentsLegendMod.Legend
 import typings.plottable.buildSrcCoreFormattersMod.Formatter
 import typings.plottable.buildSrcCoreInterfacesMod.IEntity
 import typings.plottable.buildSrcCoreInterfacesMod.Point

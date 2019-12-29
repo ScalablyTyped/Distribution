@@ -1,9 +1,6 @@
 package typings.firebaseDashAdmin.admin.projectManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firebaseDashAdmin.admin.projectManagement.AppPlatform.ANDROID
-import typings.firebaseDashAdmin.admin.projectManagement.AppPlatform.IOS
-import typings.firebaseDashAdmin.admin.projectManagement.AppPlatform.PLATFORM_UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

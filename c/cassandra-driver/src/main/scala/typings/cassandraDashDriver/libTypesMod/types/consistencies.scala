@@ -1,17 +1,6 @@
 package typings.cassandraDashDriver.libTypesMod.types
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.all
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.any
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.eachQuorum
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.localOne
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.localQuorum
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.localSerial
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.one
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.quorum
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.serial
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.three
-import typings.cassandraDashDriver.libTypesMod.types.consistencies.two
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

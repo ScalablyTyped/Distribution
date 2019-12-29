@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.DefaultWebOptions")
 @js.native
 class DefaultWebOptions protected () extends js.Object {
-  var `Access.DefaultWebOptions_typekey`: DefaultWebOptions = js.native
+  @JSName("Access.DefaultWebOptions_typekey")
+  var AccessDotDefaultWebOptions_typekey: DefaultWebOptions = js.native
   var AlwaysSaveInDefaultEncoding: Boolean = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var CheckIfOfficeIsHTMLEditor: Boolean = js.native

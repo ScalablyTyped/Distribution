@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Collator extends js.Object {
-  def compare(x: java.lang.String, y: java.lang.String): Double
+  def compare(x: String, y: String): Double
   def resolvedOptions(): ResolvedCollatorOptions
 }
 
@@ -16,23 +16,20 @@ trait Collator extends js.Object {
 @js.native
 object Collator
   extends Instantiable0[Collator]
+     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), Collator]
      with Instantiable2[
-      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      (/* locales */ js.Array[String]) | (/* locales */ String), 
       /* options */ CollatorOptions, 
-      Collator
-    ]
-     with Instantiable1[
-      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       Collator
     ] {
   def apply(): Collator = js.native
-  def apply(locales: java.lang.String): Collator = js.native
-  def apply(locales: java.lang.String, options: CollatorOptions): Collator = js.native
-  def apply(locales: js.Array[java.lang.String]): Collator = js.native
-  def apply(locales: js.Array[java.lang.String], options: CollatorOptions): Collator = js.native
-  def supportedLocalesOf(locales: java.lang.String): js.Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: java.lang.String, options: CollatorOptions): js.Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: js.Array[java.lang.String], options: CollatorOptions): js.Array[java.lang.String] = js.native
+  def apply(locales: String): Collator = js.native
+  def apply(locales: String, options: CollatorOptions): Collator = js.native
+  def apply(locales: js.Array[String]): Collator = js.native
+  def apply(locales: js.Array[String], options: CollatorOptions): Collator = js.native
+  def supportedLocalesOf(locales: String): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String, options: CollatorOptions): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.Array[String], options: CollatorOptions): js.Array[String] = js.native
 }
 

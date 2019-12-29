@@ -1,7 +1,7 @@
 package typings.styletronDashReact.styletronDashReactMod
 
-import typings.styletronDashReact.styletronDashReactNumbers.`false`
-import typings.styletronDashReact.styletronDashReactNumbers.`true`
+import typings.styletronDashReact.styletronDashReactBooleans.`false`
+import typings.styletronDashReact.styletronDashReactBooleans.`true`
 import typings.styletronDashStandard.styletronDashStandardMod.StyleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

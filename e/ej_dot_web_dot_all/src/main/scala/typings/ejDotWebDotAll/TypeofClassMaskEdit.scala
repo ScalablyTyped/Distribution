@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassMaskEdit
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, MaskEdit]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), MaskEdit] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), MaskEdit]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, MaskEdit] {
   var Locale: js.Any = js.native
   var fn: MaskEdit = js.native
 }

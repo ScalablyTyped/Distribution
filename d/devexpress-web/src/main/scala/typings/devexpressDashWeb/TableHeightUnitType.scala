@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.TableHeightUnitType.Auto
-import typings.devexpressDashWeb.TableHeightUnitType.Exact
-import typings.devexpressDashWeb.TableHeightUnitType.Minimum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

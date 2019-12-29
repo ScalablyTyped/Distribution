@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMProcessingInstruction")
 @js.native
 class DOMProcessingInstruction protected () extends js.Object {
-  var `MSHTML.DOMProcessingInstruction_typekey`: DOMProcessingInstruction = js.native
+  @JSName("MSHTML.DOMProcessingInstruction_typekey")
+  var MSHTMLDotDOMProcessingInstruction_typekey: DOMProcessingInstruction = js.native
   val attributes: js.Any = js.native
   val childNodes: js.Any = js.native
   var data: String = js.native

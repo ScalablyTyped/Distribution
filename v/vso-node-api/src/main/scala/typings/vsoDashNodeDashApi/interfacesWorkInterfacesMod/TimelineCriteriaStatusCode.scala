@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.InvalidFilterClause
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.OK
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

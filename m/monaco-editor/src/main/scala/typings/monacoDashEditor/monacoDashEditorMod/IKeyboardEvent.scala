@@ -1,6 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod
 
-import typings.monacoDashEditor.monacoDashEditorNumbers.`true`
+import typings.monacoDashEditor.monacoDashEditorBooleans.`true`
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import scala.scalajs.js

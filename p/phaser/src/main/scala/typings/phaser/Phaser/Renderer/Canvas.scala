@@ -5,7 +5,6 @@ import typings.phaser.Phaser.Game
 import typings.phaser.Phaser.GameObjects.Components.TransformMatrix
 import typings.phaser.Phaser.GameObjects.DisplayList
 import typings.phaser.Phaser.GameObjects.GameObject
-import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Structs.Size
 import typings.phaser.Phaser.Textures.Frame

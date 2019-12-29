@@ -11,7 +11,8 @@ class TablesOfAuthoritiesCategories protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.TablesOfAuthoritiesCategories_typekey`: TablesOfAuthoritiesCategories = js.native
+  @JSName("Word.TablesOfAuthoritiesCategories_typekey")
+  var WordDotTablesOfAuthoritiesCategories_typekey: TablesOfAuthoritiesCategories = js.native
   def Item(Index: js.Any): TableOfAuthoritiesCategory = js.native
 }
 

@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.SortOrder.Ascending
-import typings.ejDotWebDotAll.ej.SortOrder.Descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,12 +44,10 @@ object sortOrder extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[sortOrder with Double] = js.native
   /* 0 */ @js.native
-  object Ascending
-    extends TopLevel[typings.ejDotWebDotAll.ej.sortOrder.Ascending with Double]
+  object Ascending extends TopLevel[Ascending with Double]
   
   /* 1 */ @js.native
-  object Descending
-    extends TopLevel[typings.ejDotWebDotAll.ej.sortOrder.Descending with Double]
+  object Descending extends TopLevel[Descending with Double]
   
 }
 

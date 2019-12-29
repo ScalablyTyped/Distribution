@@ -1,11 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.TransformMode.NoRotationOrReflection
-import typings.phaser.spine.TransformMode.NoScale
-import typings.phaser.spine.TransformMode.NoScaleOrReflection
-import typings.phaser.spine.TransformMode.Normal
-import typings.phaser.spine.TransformMode.OnlyTranslation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

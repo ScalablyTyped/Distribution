@@ -11,7 +11,8 @@ class Legend protected () extends js.Object {
   var AutoScaleFont: js.Any = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Legend_typekey`: Legend = js.native
+  @JSName("Excel.Legend_typekey")
+  var ExcelDotLegend_typekey: Legend = js.native
   val Fill: ChartFillFormat = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Format: ChartFormat = js.native

@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +17,9 @@ trait normalizeUtils extends js.Object {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request.
     *
     */
-  def normalizeCentralMeridian(geometries: js.Array[Geometry]): IPromise[js.Array[Geometry]] = js.native
-  def normalizeCentralMeridian(geometries: js.Array[Geometry], geometryService: GeometryService): IPromise[js.Array[Geometry]] = js.native
-  def normalizeCentralMeridian(geometries: js.Array[Geometry], geometryService: GeometryService, requestOptions: js.Any): IPromise[js.Array[Geometry]] = js.native
+  def normalizeCentralMeridian(geometries: js.Array[Geometry]): js.Promise[js.Array[Geometry]] = js.native
+  def normalizeCentralMeridian(geometries: js.Array[Geometry], geometryService: GeometryService): js.Promise[js.Array[Geometry]] = js.native
+  def normalizeCentralMeridian(geometries: js.Array[Geometry], geometryService: GeometryService, requestOptions: js.Any): js.Promise[js.Array[Geometry]] = js.native
 }
 
 @JSGlobal("__esri.normalizeUtils")

@@ -1,6 +1,5 @@
 package typings.antdDashMobileDashRn
 
-import typings.antdDashMobileDashRn.libDateDashPickerDemoBasicDotNativeMod.PopupExample
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

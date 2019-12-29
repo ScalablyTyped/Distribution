@@ -2,7 +2,7 @@ package typings.reactDashToastify.reactDashToastifyMod
 
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactNode
-import typings.reactDashToastify.reactDashToastifyNumbers.`false`
+import typings.reactDashToastify.reactDashToastifyBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

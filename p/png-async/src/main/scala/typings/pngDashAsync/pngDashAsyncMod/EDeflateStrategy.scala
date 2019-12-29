@@ -1,11 +1,6 @@
 package typings.pngDashAsync.pngDashAsyncMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.DEFAULT_STRATEGY
-import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.FILTERED
-import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.FIXED
-import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.HUFFMAN_ONLY
-import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.RLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,6 @@
 package typings.winrt.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastImageAndText01
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastImageAndText02
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastImageAndText03
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastImageAndText04
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastText01
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastText02
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastText03
-import typings.winrt.Windows.UI.Notifications.ToastTemplateType.toastText04
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

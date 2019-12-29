@@ -1,11 +1,6 @@
 package typings.atBlueprintjsTable
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction
-import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.DOWN
-import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.LEFT
-import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.RIGHT
-import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.UP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

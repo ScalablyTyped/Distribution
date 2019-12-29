@@ -4,7 +4,6 @@ import typings.atHyperlorisTyson.atHyperlorisTysonMod.Tyson
 import typings.atHyperlorisTyson.distTypesReflectTypeTokenMod.ClassType
 import typings.atHyperlorisTyson.distTypesTypeAdapterFactoryMod.TypeAdapterFactory
 import typings.atHyperlorisTyson.distTypesTypeAdapterMod.TypeAdapter
-import typings.atHyperlorisTyson.distTypesTysonBuilderMod.TysonBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,8 @@ class TablesOfFigures protected () extends js.Object {
   val Creator: Double = js.native
   var Format: WdTofFormat = js.native
   val Parent: js.Any = js.native
-  var `Word.TablesOfFigures_typekey`: TablesOfFigures = js.native
+  @JSName("Word.TablesOfFigures_typekey")
+  var WordDotTablesOfFigures_typekey: TablesOfFigures = js.native
   def Add(
     Range: Range,
     Caption: js.UndefOr[js.Any],

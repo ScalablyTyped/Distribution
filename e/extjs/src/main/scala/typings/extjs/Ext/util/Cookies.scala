@@ -39,20 +39,20 @@ object Cookies extends js.Object {
   		* @param path String The path for the cookie. This must be included if you included a path while setting the cookie.
   		*/
   def clear(): Unit = js.native
-  def clear(name: java.lang.String): Unit = js.native
-  def clear(name: java.lang.String, path: java.lang.String): Unit = js.native
+  def clear(name: String): Unit = js.native
+  def clear(name: String, path: String): Unit = js.native
   /** [Method] Retrieves cookies that are accessible by the current page
   		* @param name String The name of the cookie to get
   		* @returns Object Returns the cookie value for the specified name; null if the cookie name does not exist.
   		*/
   def get(): js.Any = js.native
-  def get(name: java.lang.String): js.Any = js.native
+  def get(name: String): js.Any = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
   		* @param name String Name of the config option to return.
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this
@@ -68,11 +68,11 @@ object Cookies extends js.Object {
   		* @param secure Boolean Specify true to indicate that the cookie should only be accessible via SSL on a page using the HTTPS protocol. Defaults to false. Note that this will only work if the page calling this code uses the HTTPS protocol, otherwise the cookie will be created with default options.
   		*/
   def set(
-    name: js.UndefOr[java.lang.String],
+    name: js.UndefOr[String],
     value: js.UndefOr[js.Any],
     expires: js.UndefOr[js.Any],
-    path: js.UndefOr[java.lang.String],
-    domain: js.UndefOr[java.lang.String],
+    path: js.UndefOr[String],
+    domain: js.UndefOr[String],
     secure: js.UndefOr[Boolean]
   ): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

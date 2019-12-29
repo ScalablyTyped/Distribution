@@ -1,13 +1,12 @@
 organization := "org.scalablytyped"
 name := "pollyjs__core"
-version := "2.6-dt-20190924Z-072cbe"
+version := "3.0-dt-20191226Z-2e4c7c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "pollyjs__adapter" % "2.0-dt-20190131Z-728f39",
-  "org.scalablytyped" %%% "pollyjs__persister" % "2.0-dt-20190731Z-718e5f",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "pollyjs__persister" % "2.0-dt-20190731Z-6c83df",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

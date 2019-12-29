@@ -1,7 +1,7 @@
 package typings.cote.coteMod
 
-import typings.cote.coteStrings.`cote:added`
-import typings.cote.coteStrings.`cote:removed`
+import typings.cote.coteStrings.coteColonadded
+import typings.cote.coteStrings.coteColonremoved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,8 +51,8 @@ class Responder protected () extends Component {
     * @param listener Callback.
     */
   @JSName("on")
-  def on_coteadded(`type`: `cote:added`, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
+  def on_coteadded(`type`: coteColonadded, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
   @JSName("on")
-  def on_coteremoved(`type`: `cote:removed`, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
+  def on_coteremoved(`type`: coteColonremoved, listener: js.Function1[/* event */ Status, Unit]): this.type = js.native
 }
 

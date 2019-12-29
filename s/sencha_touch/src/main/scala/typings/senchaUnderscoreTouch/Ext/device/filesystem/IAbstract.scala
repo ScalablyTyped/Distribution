@@ -19,11 +19,11 @@ trait IAbstract extends IBase {
   /** [Method] Returns the value of readerType
   		* @returns String
   		*/
-  var getReaderType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getReaderType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of stringEncoding
   		* @returns String
   		*/
-  var getStringEncoding: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getStringEncoding: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of fileSystemSize
   		* @param fileSystemSize Number The new value.
   		*/
@@ -35,11 +35,11 @@ trait IAbstract extends IBase {
   /** [Method] Sets the value of readerType
   		* @param readerType String The new value.
   		*/
-  var setReaderType: js.UndefOr[js.Function1[/* readerType */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setReaderType: js.UndefOr[js.Function1[/* readerType */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of stringEncoding
   		* @param stringEncoding String The new value.
   		*/
-  var setStringEncoding: js.UndefOr[js.Function1[/* stringEncoding */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setStringEncoding: js.UndefOr[js.Function1[/* stringEncoding */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IAbstract {
@@ -52,12 +52,12 @@ object IAbstract {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getFileSystemSize: () => Double = null,
     getFileSystemType: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getReaderType: () => java.lang.String = null,
-    getStringEncoding: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getReaderType: () => String = null,
+    getStringEncoding: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
@@ -65,8 +65,8 @@ object IAbstract {
     self: IClass = null,
     setFileSystemSize: /* fileSystemSize */ js.UndefOr[Double] => Unit = null,
     setFileSystemType: /* fileSystemType */ js.UndefOr[Double] => Unit = null,
-    setReaderType: /* readerType */ js.UndefOr[java.lang.String] => Unit = null,
-    setStringEncoding: /* stringEncoding */ js.UndefOr[java.lang.String] => Unit = null,
+    setReaderType: /* readerType */ js.UndefOr[String] => Unit = null,
+    setStringEncoding: /* stringEncoding */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     uses: Array = null

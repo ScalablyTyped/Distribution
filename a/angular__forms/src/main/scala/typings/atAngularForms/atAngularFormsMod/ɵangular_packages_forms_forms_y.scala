@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * @ngModule FormsModule
   * @publicApi
   */
-@JSImport("@angular/forms", "ɵangular_packages_forms_forms_y")
+@JSImport("@angular/forms", "\u0275angular_packages_forms_forms_y")
 @js.native
 class ɵangular_packages_forms_forms_y protected () extends ɵNgSelectMultipleOption {
   def this(_element: ElementRef[_], _renderer: Renderer2, _select: SelectMultipleControlValueAccessor) = this()

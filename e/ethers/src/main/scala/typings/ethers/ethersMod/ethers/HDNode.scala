@@ -2,7 +2,7 @@ package typings.ethers.ethersMod.ethers
 
 import typings.ethers.distTypesUtilsTypesMod.Arrayish
 import typings.ethers.distTypesUtilsTypesMod.Wordlist
-import typings.ethers.ethersStrings.`m/44_quote/60_quote/0_quote/0/0`
+import typings.ethers.ethersStrings.mSlash44ApostropheSlash60ApostropheSlash0ApostropheSlash0Slash0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ethers", "ethers.HDNode")
 @js.native
 object HDNode extends js.Object {
-  val defaultPath: `m/44_quote/60_quote/0_quote/0/0` = js.native
+  val defaultPath: mSlash44ApostropheSlash60ApostropheSlash0ApostropheSlash0Slash0 = js.native
   def entropyToMnemonic(entropy: Arrayish): String = js.native
   def entropyToMnemonic(entropy: Arrayish, wordlist: Wordlist): String = js.native
   def fromMnemonic(mnemonic: String): typings.ethers.distTypesUtilsTypesMod.HDNode = js.native

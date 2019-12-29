@@ -1,7 +1,5 @@
 package typings.titanium.Titanium
 
-import typings.titanium.Titanium.Database.DB
-import typings.titanium.Titanium.Database.ResultSet
 import typings.titanium.Titanium.Filesystem.File
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window

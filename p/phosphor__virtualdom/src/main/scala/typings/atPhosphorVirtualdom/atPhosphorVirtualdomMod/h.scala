@@ -1,7 +1,5 @@
 package typings.atPhosphorVirtualdom.atPhosphorVirtualdomMod
 
-import typings.atPhosphorVirtualdom.atPhosphorVirtualdomMod.h.Child
-import typings.atPhosphorVirtualdom.atPhosphorVirtualdomMod.h.IFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

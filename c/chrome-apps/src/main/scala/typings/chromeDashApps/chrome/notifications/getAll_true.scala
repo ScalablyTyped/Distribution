@@ -1,7 +1,7 @@
 package typings.chromeDashApps.chrome.notifications
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chromeDashApps.chromeDashAppsNumbers.`true`
+import typings.chromeDashApps.chromeDashAppsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

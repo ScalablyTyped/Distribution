@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.Full
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.None
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.OneLevel
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.OneLevelPlusNestedEmptyFolders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

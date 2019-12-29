@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Type.HYBRID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Type.ROADMAP
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Type.SATELLITE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Type.TERRAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

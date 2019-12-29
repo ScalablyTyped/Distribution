@@ -175,7 +175,7 @@ object SeriesBubbleOptions {
     sizeByAbsoluteValue: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     stacking: OptionsStackingValue = null,
     states: PlotBubbleStatesOptions = null,
     step: OptionsStepValue = null,

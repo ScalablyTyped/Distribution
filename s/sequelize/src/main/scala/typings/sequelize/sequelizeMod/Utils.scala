@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Utils extends js.Object {
   var Promise: Anon_A1 = js.native
   @JSName("_")
-  var __Original: SequelizeLoDash = js.native
+  var _underscore_Original: SequelizeLoDash = js.native
   var and: andStatic = js.native
   var cast: castStatic = js.native
   var col: colStatic = js.native
@@ -94,7 +94,8 @@ trait Utils extends js.Object {
     * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
     * upperFirst, value, and words.
     **/
-  def `_`[T](value: T): LoDashImplicitWrapper[T] = js.native
+  @JSName("_")
+  def _underscore[T](value: T): LoDashImplicitWrapper[T] = js.native
   def addTicks(s: String): String = js.native
   def addTicks(s: String, tickChar: String): String = js.native
   def argsArePrimaryKeys(args: js.Array[_], primaryKeys: js.Object): Boolean = js.native

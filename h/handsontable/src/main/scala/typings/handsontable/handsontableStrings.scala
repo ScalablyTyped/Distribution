@@ -21,49 +21,46 @@ object handsontableStrings {
   sealed trait `---------` extends PredefinedMenuItemKey
   
   @js.native
-  sealed trait AutofillDOTfill extends ChangeSource
+  sealed trait AutofillDotfill extends ChangeSource
   
   @js.native
   sealed trait Bucket extends js.Object
   
   @js.native
-  sealed trait ColumnSummaryDOTreset extends ChangeSource
+  sealed trait ColumnSummaryDotreset extends ChangeSource
   
   @js.native
-  sealed trait ColumnSummaryDOTset extends ChangeSource
+  sealed trait ColumnSummaryDotset extends ChangeSource
   
   @js.native
-  sealed trait ContextMenuDOTclearColumns extends ChangeSource
+  sealed trait ContextMenuDotclearColumns extends ChangeSource
   
   @js.native
-  sealed trait ContextMenuDOTcolumnLeft extends ChangeSource
+  sealed trait ContextMenuDotcolumnLeft extends ChangeSource
   
   @js.native
-  sealed trait ContextMenuDOTcolumnRight extends ChangeSource
+  sealed trait ContextMenuDotcolumnRight extends ChangeSource
   
   @js.native
-  sealed trait ContextMenuDOTremoveColumn extends ChangeSource
+  sealed trait ContextMenuDotremoveColumn extends ChangeSource
   
   @js.native
-  sealed trait ContextMenuDOTremoveRow extends ChangeSource
+  sealed trait ContextMenuDotremoveRow extends ChangeSource
   
   @js.native
-  sealed trait ContextMenuDOTrowAbove extends ChangeSource
+  sealed trait ContextMenuDotrowAbove extends ChangeSource
   
   @js.native
-  sealed trait ContextMenuDOTrowBelow extends ChangeSource
+  sealed trait ContextMenuDotrowBelow extends ChangeSource
   
   @js.native
-  sealed trait CopyPasteDOTpaste extends ChangeSource
+  sealed trait CopyPasteDotpaste extends ChangeSource
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait GantChartDotloadData extends ChangeSource
   
   @js.native
-  sealed trait GantChartDOTloadData extends ChangeSource
-  
-  @js.native
-  sealed trait ObserveChangesDOTchange extends ChangeSource
+  sealed trait ObserveChangesDotchange extends ChangeSource
   
   @js.native
   sealed trait STATE_EDITING extends EditorState
@@ -78,10 +75,13 @@ object handsontableStrings {
   sealed trait STATE_WAITING extends EditorState
   
   @js.native
-  sealed trait UndoRedoDOTredo extends ChangeSource
+  sealed trait UndoRedoDotredo extends ChangeSource
   
   @js.native
-  sealed trait UndoRedoDOTundo extends ChangeSource
+  sealed trait UndoRedoDotundo extends ChangeSource
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait add_child extends PredefinedMenuItemKey
@@ -606,35 +606,33 @@ object handsontableStrings {
   @scala.inline
   def `---------`: `---------` = "---------".asInstanceOf[`---------`]
   @scala.inline
-  def AutofillDOTfill: AutofillDOTfill = "Autofill.fill".asInstanceOf[AutofillDOTfill]
+  def AutofillDotfill: AutofillDotfill = "Autofill.fill".asInstanceOf[AutofillDotfill]
   @scala.inline
   def Bucket: Bucket = "Bucket".asInstanceOf[Bucket]
   @scala.inline
-  def ColumnSummaryDOTreset: ColumnSummaryDOTreset = "ColumnSummary.reset".asInstanceOf[ColumnSummaryDOTreset]
+  def ColumnSummaryDotreset: ColumnSummaryDotreset = "ColumnSummary.reset".asInstanceOf[ColumnSummaryDotreset]
   @scala.inline
-  def ColumnSummaryDOTset: ColumnSummaryDOTset = "ColumnSummary.set".asInstanceOf[ColumnSummaryDOTset]
+  def ColumnSummaryDotset: ColumnSummaryDotset = "ColumnSummary.set".asInstanceOf[ColumnSummaryDotset]
   @scala.inline
-  def ContextMenuDOTclearColumns: ContextMenuDOTclearColumns = "ContextMenu.clearColumns".asInstanceOf[ContextMenuDOTclearColumns]
+  def ContextMenuDotclearColumns: ContextMenuDotclearColumns = "ContextMenu.clearColumns".asInstanceOf[ContextMenuDotclearColumns]
   @scala.inline
-  def ContextMenuDOTcolumnLeft: ContextMenuDOTcolumnLeft = "ContextMenu.columnLeft".asInstanceOf[ContextMenuDOTcolumnLeft]
+  def ContextMenuDotcolumnLeft: ContextMenuDotcolumnLeft = "ContextMenu.columnLeft".asInstanceOf[ContextMenuDotcolumnLeft]
   @scala.inline
-  def ContextMenuDOTcolumnRight: ContextMenuDOTcolumnRight = "ContextMenu.columnRight".asInstanceOf[ContextMenuDOTcolumnRight]
+  def ContextMenuDotcolumnRight: ContextMenuDotcolumnRight = "ContextMenu.columnRight".asInstanceOf[ContextMenuDotcolumnRight]
   @scala.inline
-  def ContextMenuDOTremoveColumn: ContextMenuDOTremoveColumn = "ContextMenu.removeColumn".asInstanceOf[ContextMenuDOTremoveColumn]
+  def ContextMenuDotremoveColumn: ContextMenuDotremoveColumn = "ContextMenu.removeColumn".asInstanceOf[ContextMenuDotremoveColumn]
   @scala.inline
-  def ContextMenuDOTremoveRow: ContextMenuDOTremoveRow = "ContextMenu.removeRow".asInstanceOf[ContextMenuDOTremoveRow]
+  def ContextMenuDotremoveRow: ContextMenuDotremoveRow = "ContextMenu.removeRow".asInstanceOf[ContextMenuDotremoveRow]
   @scala.inline
-  def ContextMenuDOTrowAbove: ContextMenuDOTrowAbove = "ContextMenu.rowAbove".asInstanceOf[ContextMenuDOTrowAbove]
+  def ContextMenuDotrowAbove: ContextMenuDotrowAbove = "ContextMenu.rowAbove".asInstanceOf[ContextMenuDotrowAbove]
   @scala.inline
-  def ContextMenuDOTrowBelow: ContextMenuDOTrowBelow = "ContextMenu.rowBelow".asInstanceOf[ContextMenuDOTrowBelow]
+  def ContextMenuDotrowBelow: ContextMenuDotrowBelow = "ContextMenu.rowBelow".asInstanceOf[ContextMenuDotrowBelow]
   @scala.inline
-  def CopyPasteDOTpaste: CopyPasteDOTpaste = "CopyPaste.paste".asInstanceOf[CopyPasteDOTpaste]
+  def CopyPasteDotpaste: CopyPasteDotpaste = "CopyPaste.paste".asInstanceOf[CopyPasteDotpaste]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def GantChartDotloadData: GantChartDotloadData = "GantChart.loadData".asInstanceOf[GantChartDotloadData]
   @scala.inline
-  def GantChartDOTloadData: GantChartDOTloadData = "GantChart.loadData".asInstanceOf[GantChartDOTloadData]
-  @scala.inline
-  def ObserveChangesDOTchange: ObserveChangesDOTchange = "ObserveChanges.change".asInstanceOf[ObserveChangesDOTchange]
+  def ObserveChangesDotchange: ObserveChangesDotchange = "ObserveChanges.change".asInstanceOf[ObserveChangesDotchange]
   @scala.inline
   def STATE_EDITING: STATE_EDITING = "STATE_EDITING".asInstanceOf[STATE_EDITING]
   @scala.inline
@@ -644,9 +642,11 @@ object handsontableStrings {
   @scala.inline
   def STATE_WAITING: STATE_WAITING = "STATE_WAITING".asInstanceOf[STATE_WAITING]
   @scala.inline
-  def UndoRedoDOTredo: UndoRedoDOTredo = "UndoRedo.redo".asInstanceOf[UndoRedoDOTredo]
+  def UndoRedoDotredo: UndoRedoDotredo = "UndoRedo.redo".asInstanceOf[UndoRedoDotredo]
   @scala.inline
-  def UndoRedoDOTundo: UndoRedoDOTundo = "UndoRedo.undo".asInstanceOf[UndoRedoDOTundo]
+  def UndoRedoDotundo: UndoRedoDotundo = "UndoRedo.undo".asInstanceOf[UndoRedoDotundo]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def add_child: add_child = "add_child".asInstanceOf[add_child]
   @scala.inline

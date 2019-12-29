@@ -16,7 +16,8 @@ class AddressList protected () extends js.Object {
   val IsInitialAddressList: Boolean = js.native
   val IsReadOnly: Boolean = js.native
   val Name: String = js.native
-  var `Outlook.AddressList_typekey`: AddressList = js.native
+  @JSName("Outlook.AddressList_typekey")
+  var OutlookDotAddressList_typekey: AddressList = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val ResolutionOrder: Double = js.native

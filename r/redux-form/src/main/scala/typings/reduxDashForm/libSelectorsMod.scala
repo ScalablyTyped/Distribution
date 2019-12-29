@@ -1,11 +1,6 @@
 package typings.reduxDashForm
 
 import typings.reduxDashForm.libReduxFormMod.GetFormState
-import typings.reduxDashForm.libSelectorsMod.BooleanSelector
-import typings.reduxDashForm.libSelectorsMod.DataSelector
-import typings.reduxDashForm.libSelectorsMod.ErrorSelector
-import typings.reduxDashForm.libSelectorsMod.FormOrFieldsBooleanSelector
-import typings.reduxDashForm.libSelectorsMod.NamesSelector
 import typings.reduxDashForm.reduxDashFormMod.FormErrors
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.events.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.eventsDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.core.v1.EventSource
 import typings.atPulumiKubernetes.typesInputMod.core.v1.ObjectReference
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
@@ -24,7 +24,7 @@ trait Event extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`eventsDOTk8sDOTio/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[eventsDotk8sDotioSlashv1beta1]] = js.undefined
   /**
     * Deprecated field assuring backward compatibility with core.v1 Event type
     */
@@ -96,7 +96,7 @@ object Event {
   def apply(
     eventTime: Input[String],
     action: Input[String] = null,
-    apiVersion: Input[`eventsDOTk8sDOTio/v1beta1`] = null,
+    apiVersion: Input[eventsDotk8sDotioSlashv1beta1] = null,
     deprecatedCount: Input[Double] = null,
     deprecatedFirstTimestamp: Input[String] = null,
     deprecatedLastTimestamp: Input[String] = null,

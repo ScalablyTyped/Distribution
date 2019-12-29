@@ -1,6 +1,6 @@
 package typings.marko
 
-import typings.marko.markoNumbers.`false`
+import typings.marko.markoBooleans.`false`
 import typings.marko.srcComponentsComponentMod.Component
 import typings.marko.srcRuntimeDomElementMod.DomElement
 import typings.std.Document

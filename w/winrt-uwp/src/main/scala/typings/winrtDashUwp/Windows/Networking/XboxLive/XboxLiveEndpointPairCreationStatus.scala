@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.XboxLive
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.canceled
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.localSystemNotAuthorized
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.noCompatibleNetworkPaths
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.noLocalNetworks
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.refusedDueToConfiguration
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.remoteSystemNotAuthorized
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.succeeded
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.timedOut
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.unexpectedInternalError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

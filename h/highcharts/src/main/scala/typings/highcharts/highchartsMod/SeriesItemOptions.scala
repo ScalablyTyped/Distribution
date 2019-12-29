@@ -147,7 +147,7 @@ object SeriesItemOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     size: Double | String = null,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     startAngle: Int | Double = null,
     states: PlotItemStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
@@ -155,8 +155,8 @@ object SeriesItemOptions {
     treemap: SeriesTreemapOptions = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    xAxis: Double | String = null,
-    yAxis: Double | String = null,
+    xAxis: Double | scala.Nothing | String = null,
+    yAxis: Double | scala.Nothing | String = null,
     zIndex: Int | Double = null
   ): SeriesItemOptions = {
     val __obj = js.Dynamic.literal()

@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.TypeScript
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +35,31 @@ object TypeRelationshipFlags extends js.Object {
   @js.native
   sealed trait SuccessfulComparison extends TypeRelationshipFlags
   
-  /* 64 */ val IncompatibleParameterTypes: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.IncompatibleParameterTypes with Double = js.native
-  /* 32 */ val IncompatiblePropertyTypes: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.IncompatiblePropertyTypes with Double = js.native
-  /* 16 */ val IncompatibleReturnTypes: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.IncompatibleReturnTypes with Double = js.native
-  /* 4 */ val IncompatibleSignatures: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.IncompatibleSignatures with Double = js.native
-  /* 128 */ val InconsistantPropertyAccesibility: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.InconsistantPropertyAccesibility with Double = js.native
-  /* 2 */ val RequiredPropertyIsMissing: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.RequiredPropertyIsMissing with Double = js.native
-  /* 3 */ val SourceSignatureHasTooManyParameters: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.SourceSignatureHasTooManyParameters with Double = js.native
-  /* 0 */ val SuccessfulComparison: typings.typescriptDashServices.TypeScript.TypeRelationshipFlags.SuccessfulComparison with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TypeRelationshipFlags with Double] = js.native
+  /* 64 */ @js.native
+  object IncompatibleParameterTypes extends TopLevel[IncompatibleParameterTypes with Double]
+  
+  /* 32 */ @js.native
+  object IncompatiblePropertyTypes extends TopLevel[IncompatiblePropertyTypes with Double]
+  
+  /* 16 */ @js.native
+  object IncompatibleReturnTypes extends TopLevel[IncompatibleReturnTypes with Double]
+  
+  /* 4 */ @js.native
+  object IncompatibleSignatures extends TopLevel[IncompatibleSignatures with Double]
+  
+  /* 128 */ @js.native
+  object InconsistantPropertyAccesibility extends TopLevel[InconsistantPropertyAccesibility with Double]
+  
+  /* 2 */ @js.native
+  object RequiredPropertyIsMissing extends TopLevel[RequiredPropertyIsMissing with Double]
+  
+  /* 3 */ @js.native
+  object SourceSignatureHasTooManyParameters extends TopLevel[SourceSignatureHasTooManyParameters with Double]
+  
+  /* 0 */ @js.native
+  object SuccessfulComparison extends TopLevel[SuccessfulComparison with Double]
+  
 }
 

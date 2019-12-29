@@ -69,7 +69,7 @@ object Plugin extends js.Object {
     */
   def register(plugin: Plugin): Plugin = js.native
   /**
-    * Resolves a dependency to a plugin object from the registry if it exists. 
+    * Resolves a dependency to a plugin object from the registry if it exists.
     * The `dependency` may contain a version, but only the name matters when resolving.
     * @method resolve
     * @param dependency {string} The dependency.

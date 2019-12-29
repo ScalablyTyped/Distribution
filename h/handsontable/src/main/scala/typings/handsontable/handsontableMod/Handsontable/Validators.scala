@@ -21,11 +21,11 @@ trait Validators extends js.Object {
   var NumericValidator_Original: Numeric = js.native
   @JSName("TimeValidator")
   var TimeValidator_Original: Time = js.native
-  def AutocompleteValidator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
-  def DateValidator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
-  def DropdownValidator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
-  def NumericValidator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
-  def TimeValidator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+  def AutocompleteValidator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+  def DateValidator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+  def DropdownValidator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+  def NumericValidator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+  def TimeValidator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   def getValidator(name: String): Base = js.native
   def registerValidator(name: String, validatotr: Base): Unit = js.native
 }

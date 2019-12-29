@@ -14,7 +14,8 @@ class Slicer protected () extends js.Object {
   val Creator: XlCreator = js.native
   var DisableMoveResizeUI: Boolean = js.native
   var DisplayHeader: Boolean = js.native
-  var `Excel.Slicer_typekey`: Slicer = js.native
+  @JSName("Excel.Slicer_typekey")
+  var ExcelDotSlicer_typekey: Slicer = js.native
   var Height: Double = js.native
   var Left: Double = js.native
   var Locked: Boolean = js.native

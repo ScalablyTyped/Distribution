@@ -1,14 +1,14 @@
 package typings.soap.soapMod.security
 
 import typings.node.Buffer
+import typings.soap.libSecurityMod.ClientSSLSecurity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("soap", "security.ClientSSLSecurity")
 @js.native
-class ClientSSLSecurityCls protected ()
-  extends typings.soap.libSecurityMod.ClientSSLSecurity {
+class ClientSSLSecurityCls protected () extends ClientSSLSecurity {
   def this(key: String, cert: String) = this()
   def this(key: String, cert: Buffer) = this()
   def this(key: Buffer, cert: String) = this()

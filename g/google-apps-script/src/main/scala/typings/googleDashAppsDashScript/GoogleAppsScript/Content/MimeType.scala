@@ -1,15 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Content
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.ATOM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.CSV
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.ICAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.JAVASCRIPT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.JSON
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.RSS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.VCARD
-import typings.googleDashAppsDashScript.GoogleAppsScript.Content.MimeType.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

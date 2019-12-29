@@ -1,22 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.FlowFlags.AfterFinally
-import typings.typescript.typescriptMod.FlowFlags.ArrayMutation
-import typings.typescript.typescriptMod.FlowFlags.Assignment
-import typings.typescript.typescriptMod.FlowFlags.BranchLabel
-import typings.typescript.typescriptMod.FlowFlags.Call
-import typings.typescript.typescriptMod.FlowFlags.Condition
-import typings.typescript.typescriptMod.FlowFlags.FalseCondition
-import typings.typescript.typescriptMod.FlowFlags.Label
-import typings.typescript.typescriptMod.FlowFlags.LoopLabel
-import typings.typescript.typescriptMod.FlowFlags.PreFinally
-import typings.typescript.typescriptMod.FlowFlags.Referenced
-import typings.typescript.typescriptMod.FlowFlags.Shared
-import typings.typescript.typescriptMod.FlowFlags.Start
-import typings.typescript.typescriptMod.FlowFlags.SwitchClause
-import typings.typescript.typescriptMod.FlowFlags.TrueCondition
-import typings.typescript.typescriptMod.FlowFlags.Unreachable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

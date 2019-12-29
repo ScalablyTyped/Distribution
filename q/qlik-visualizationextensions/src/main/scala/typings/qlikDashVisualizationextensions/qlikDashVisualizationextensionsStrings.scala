@@ -45,9 +45,6 @@ object qlikDashVisualizationextensionsStrings {
   sealed trait EDIT extends NavigationModeType
   
   @js.native
-  sealed trait Empty extends ExpressionType
-  
-  @js.native
   sealed trait F extends FieldAttributesType
   
   @js.native
@@ -117,6 +114,9 @@ object qlikDashVisualizationextensionsStrings {
   
   @js.native
   sealed trait XS extends StateType
+  
+  @js.native
+  sealed trait _empty extends ExpressionType
   
   @js.native
   sealed trait accordion extends js.Object
@@ -241,8 +241,6 @@ object qlikDashVisualizationextensionsStrings {
   @scala.inline
   def EDIT: EDIT = "EDIT".asInstanceOf[EDIT]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def F: F = "F".asInstanceOf[F]
   @scala.inline
   def H: H = "H".asInstanceOf[H]
@@ -286,6 +284,8 @@ object qlikDashVisualizationextensionsStrings {
   def XL: XL = "XL".asInstanceOf[XL]
   @scala.inline
   def XS: XS = "XS".asInstanceOf[XS]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def accordion: accordion = "accordion".asInstanceOf[accordion]
   @scala.inline

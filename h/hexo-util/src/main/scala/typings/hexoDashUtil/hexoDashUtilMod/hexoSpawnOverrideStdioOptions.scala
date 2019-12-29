@@ -2,6 +2,7 @@ package typings.hexoDashUtil.hexoDashUtilMod
 
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ProcessEnv
+import typings.node.childUnderscoreProcessMod.SerializationType
 import typings.node.childUnderscoreProcessMod.StdioOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,6 +23,7 @@ object hexoSpawnOverrideStdioOptions {
     encoding: BufferEncoding = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
+    serialization: SerializationType = null,
     shell: Boolean | String = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,
@@ -36,6 +38,7 @@ object hexoSpawnOverrideStdioOptions {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])

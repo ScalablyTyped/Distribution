@@ -1,6 +1,5 @@
 package typings.waitDashPromise
 
-import typings.waitDashPromise.waitDashPromiseMod.Wait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

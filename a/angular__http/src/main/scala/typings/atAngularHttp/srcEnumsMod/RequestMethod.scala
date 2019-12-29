@@ -1,13 +1,6 @@
 package typings.atAngularHttp.srcEnumsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularHttp.srcEnumsMod.RequestMethod.Delete
-import typings.atAngularHttp.srcEnumsMod.RequestMethod.Get
-import typings.atAngularHttp.srcEnumsMod.RequestMethod.Head
-import typings.atAngularHttp.srcEnumsMod.RequestMethod.Options
-import typings.atAngularHttp.srcEnumsMod.RequestMethod.Patch
-import typings.atAngularHttp.srcEnumsMod.RequestMethod.Post
-import typings.atAngularHttp.srcEnumsMod.RequestMethod.Put
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

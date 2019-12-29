@@ -1,7 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreObject3DMod.Object3D
-import typings.three.threeNumbers.`true`
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

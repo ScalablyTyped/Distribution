@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "d3-selection-multi"
-version := "1.0-dt-20180917Z-e6c87d"
+version := "1.0-dt-20180917Z-246ea5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-db38c1",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-f5a2c1",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

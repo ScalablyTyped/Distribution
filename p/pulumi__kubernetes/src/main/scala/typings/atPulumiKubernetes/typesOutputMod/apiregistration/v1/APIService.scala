@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiregistrationDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.apiregistrationDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait APIService extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `apiregistrationDOTk8sDOTio/v1`
+  val apiVersion: apiregistrationDotk8sDotioSlashv1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -38,7 +38,7 @@ trait APIService extends js.Object {
 object APIService {
   @scala.inline
   def apply(
-    apiVersion: `apiregistrationDOTk8sDOTio/v1`,
+    apiVersion: apiregistrationDotk8sDotioSlashv1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.APIService,
     metadata: ObjectMeta,
     spec: APIServiceSpec,

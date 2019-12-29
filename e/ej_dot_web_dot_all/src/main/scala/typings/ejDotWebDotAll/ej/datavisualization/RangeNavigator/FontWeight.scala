@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.FontWeight.Lighter
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.FontWeight.Regular
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

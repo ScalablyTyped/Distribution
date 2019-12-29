@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGLinearGradientElement")
 @js.native
 class SVGLinearGradientElement protected () extends js.Object {
-  var `MSHTML.SVGLinearGradientElement_typekey`: SVGLinearGradientElement = js.native
+  @JSName("MSHTML.SVGLinearGradientElement_typekey")
+  var MSHTMLDotSVGLinearGradientElement_typekey: SVGLinearGradientElement = js.native
   val className: SVGAnimatedString = js.native
   val externalResourcesRequired: SVGAnimatedBoolean = js.native
   var focusable: SVGAnimatedEnumeration = js.native

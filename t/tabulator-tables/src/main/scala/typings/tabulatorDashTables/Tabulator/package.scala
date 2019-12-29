@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object Tabulator {
   import typings.std.HTMLElement
   import typings.std.Record
-  import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
+  import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`false`
   import typings.tabulatorDashTables.tabulatorDashTablesStrings.clipboard
   import typings.tabulatorDashTables.tabulatorDashTablesStrings.data
   import typings.tabulatorDashTables.tabulatorDashTablesStrings.download
@@ -76,7 +76,7 @@ package object Tabulator {
     js.Any
   ])
   /* Rewritten from type alias, can be one of: 
-    - typings.tabulatorDashTables.tabulatorDashTablesNumbers.`true`
+    - typings.tabulatorDashTables.tabulatorDashTablesBooleans.`true`
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.input
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.textarea
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.number
@@ -91,7 +91,7 @@ package object Tabulator {
   / * success * / typings.tabulatorDashTables.Tabulator.ValueBooleanCallback, 
   / * cancel * / typings.tabulatorDashTables.Tabulator.ValueVoidCallback, 
   / * editorParams * / js.Object, 
-  typings.std.HTMLElement | typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`]
+  typings.std.HTMLElement | typings.tabulatorDashTables.tabulatorDashTablesBooleans.`false`]
   */
   type Editor = _Editor | (js.Function5[
     /* cell */ CellComponent, 
@@ -133,6 +133,7 @@ package object Tabulator {
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.rownum
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.handle
     - typings.tabulatorDashTables.tabulatorDashTablesStrings.rowSelection
+    - typings.tabulatorDashTables.tabulatorDashTablesStrings.responsiveCollapse
     - js.Function3[
   / * cell * / typings.tabulatorDashTables.Tabulator.CellComponent, 
   / * formatterParams * / js.Object, 

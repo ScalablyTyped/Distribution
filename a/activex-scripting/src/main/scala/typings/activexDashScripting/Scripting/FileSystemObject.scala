@@ -11,7 +11,8 @@ class FileSystemObject protected () extends js.Object {
   /** Get drives collection */
   @JSName("Drives")
   val Drives_Original: Drives = js.native
-  var `Scripting.FileSystemObject_typekey`: FileSystemObject = js.native
+  @JSName("Scripting.FileSystemObject_typekey")
+  var ScriptingDotFileSystemObject_typekey: FileSystemObject = js.native
   /** Generate a path from an existing path and a name */
   def BuildPath(Path: String, Name: String): String = js.native
   /**

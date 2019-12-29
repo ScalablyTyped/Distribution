@@ -1,18 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.BLUE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.BROWN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.CYAN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.GREEN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.GREY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.INDIGO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.LIGHT_GREEN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.LIGHT_GREY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.ORANGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.PINK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.TEAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

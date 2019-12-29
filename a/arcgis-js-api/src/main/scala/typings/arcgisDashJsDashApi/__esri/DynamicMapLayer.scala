@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-layer`
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -24,7 +25,7 @@ trait DynamicMapLayer extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicMapLayer)
     */
-  var `type`: String
+  var `type`: `map-layer`
 }
 
 object DynamicMapLayer {
@@ -35,7 +36,7 @@ object DynamicMapLayer {
     hasOwnProperty: PropertyKey => Boolean,
     mapLayerId: Double,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String
+    `type`: `map-layer`
   ): DynamicMapLayer = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], gdbVersion = gdbVersion.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapLayerId = mapLayerId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

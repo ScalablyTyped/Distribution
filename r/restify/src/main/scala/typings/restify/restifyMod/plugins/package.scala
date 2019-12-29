@@ -23,7 +23,6 @@ package object plugins {
     - typings.restify.restifyStrings.close
     - typings.restify.restifyStrings.aborted
     - `js.undefined`
-    - scala.Nothing
   */
   type TMetricsCallback = js.UndefOr[_TMetricsCallback]
 }

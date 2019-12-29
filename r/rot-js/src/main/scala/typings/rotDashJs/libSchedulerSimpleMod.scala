@@ -1,6 +1,5 @@
 package typings.rotDashJs
 
-import typings.rotDashJs.libSchedulerSimpleMod.Simple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,7 @@ package typings.atMaterialCheckbox.constantsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atMaterialBase.foundationMod.MDCStrings
-import typings.atMaterialCheckbox.atMaterialCheckboxStrings.`DOTmdc-checkbox__native-control`
+import typings.atMaterialCheckbox.atMaterialCheckboxStrings.`Dotmdc-checkbox__native-control`
 import typings.atMaterialCheckbox.atMaterialCheckboxStrings.`aria-checked`
 import typings.atMaterialCheckbox.atMaterialCheckboxStrings.checked
 import typings.atMaterialCheckbox.atMaterialCheckboxStrings.indeterminate
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait strings extends MDCStrings {
   var ARIA_CHECKED_ATTR: `aria-checked`
   var ARIA_CHECKED_INDETERMINATE_VALUE: mixed
-  var NATIVE_CONTROL_SELECTOR: `DOTmdc-checkbox__native-control`
+  var NATIVE_CONTROL_SELECTOR: `Dotmdc-checkbox__native-control`
   var TRANSITION_STATE_CHECKED: checked
   var TRANSITION_STATE_INDETERMINATE: indeterminate
   var TRANSITION_STATE_INIT: init
@@ -28,7 +28,7 @@ object strings {
   def apply(
     ARIA_CHECKED_ATTR: `aria-checked`,
     ARIA_CHECKED_INDETERMINATE_VALUE: mixed,
-    NATIVE_CONTROL_SELECTOR: `DOTmdc-checkbox__native-control`,
+    NATIVE_CONTROL_SELECTOR: `Dotmdc-checkbox__native-control`,
     TRANSITION_STATE_CHECKED: checked,
     TRANSITION_STATE_INDETERMINATE: indeterminate,
     TRANSITION_STATE_INIT: init,

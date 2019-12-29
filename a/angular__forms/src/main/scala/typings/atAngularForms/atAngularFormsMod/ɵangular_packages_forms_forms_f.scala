@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/forms", "ɵangular_packages_forms_forms_f")
+@JSImport("@angular/forms", "\u0275angular_packages_forms_forms_f")
 @js.native
 object ɵangular_packages_forms_forms_f
   extends TopLevel[js.Any]

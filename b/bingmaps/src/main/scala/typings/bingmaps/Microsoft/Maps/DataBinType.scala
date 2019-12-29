@@ -1,11 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.DataBinType.circle
-import typings.bingmaps.Microsoft.Maps.DataBinType.hexCircle
-import typings.bingmaps.Microsoft.Maps.DataBinType.hexagon
-import typings.bingmaps.Microsoft.Maps.DataBinType.pointyHexagon
-import typings.bingmaps.Microsoft.Maps.DataBinType.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

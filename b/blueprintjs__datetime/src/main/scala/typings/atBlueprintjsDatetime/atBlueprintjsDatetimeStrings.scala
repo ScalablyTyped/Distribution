@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsDatetimeStrings {
   @js.native
-  sealed trait `<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if definedDOT` extends js.Object
+  sealed trait `DayPicker-Day` extends js.Object
   
   @js.native
-  sealed trait `DayPicker-Day` extends js.Object
+  sealed trait `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot` extends js.Object
   
   @js.native
   sealed trait disabled extends js.Object
@@ -37,9 +37,9 @@ object atBlueprintjsDatetimeStrings {
   sealed trait `selected-range` extends js.Object
   
   @scala.inline
-  def `<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if definedDOT`: `<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if definedDOT` = "<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if defined.".asInstanceOf[`<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if definedDOT`]
-  @scala.inline
   def `DayPicker-Day`: `DayPicker-Day` = "DayPicker-Day".asInstanceOf[`DayPicker-Day`]
+  @scala.inline
+  def `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`: `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot` = "<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if defined.".asInstanceOf[`LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline

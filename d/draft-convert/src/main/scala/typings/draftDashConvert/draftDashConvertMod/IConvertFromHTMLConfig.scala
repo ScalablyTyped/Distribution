@@ -2,7 +2,7 @@ package typings.draftDashConvert.draftDashConvertMod
 
 import typings.draftDashConvert.Anon_Data
 import typings.draftDashConvert.Anon_Entity
-import typings.draftDashConvert.draftDashConvertNumbers.`false`
+import typings.draftDashConvert.draftDashConvertBooleans.`false`
 import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftBlockType
 import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftInlineStyleType
 import typings.std.HTMLElement

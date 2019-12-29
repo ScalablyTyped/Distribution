@@ -1,7 +1,6 @@
 package typings.atEmberTestDashHelpers
 
 import typings.atEmberApplication.atEmberApplicationMod.default
-import typings.atEmberTestDashHelpers.atEmberTestDashHelpersMod.Target
 import typings.atEmberTestDashHelpers.domTriggerDashKeyDashEventMod.KeyEvent
 import typings.atEmberTestDashHelpers.domTriggerDashKeyDashEventMod.KeyModifiers
 import typings.atEmberTestDashHelpers.domWaitDashForMod.Options

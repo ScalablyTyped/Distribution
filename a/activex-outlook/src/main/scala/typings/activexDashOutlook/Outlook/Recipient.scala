@@ -18,7 +18,8 @@ class Recipient protected () extends js.Object {
   val Index: Double = js.native
   val MeetingResponseStatus: OlResponseStatus = js.native
   val Name: String = js.native
-  var `Outlook.Recipient_typekey`: Recipient = js.native
+  @JSName("Outlook.Recipient_typekey")
+  var OutlookDotRecipient_typekey: Recipient = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val Resolved: Boolean = js.native

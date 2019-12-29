@@ -2,7 +2,6 @@ package typings.vue2DashHammer
 
 import org.scalablytyped.runtime.TopLevel
 import typings.vue.typesPluginMod.PluginObject
-import typings.vue2DashHammer.vue2DashHammerMod.VueHammer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

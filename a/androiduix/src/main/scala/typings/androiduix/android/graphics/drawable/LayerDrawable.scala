@@ -5,7 +5,6 @@ import typings.androiduix.android.graphics.Canvas
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.graphics.drawable.Drawable.Callback
 import typings.androiduix.android.graphics.drawable.Drawable.ConstantState
-import typings.androiduix.android.graphics.drawable.LayerDrawable.ChildDrawable
 import typings.androiduix.android.graphics.drawable.LayerDrawable.LayerState
 import typings.androiduix.java.lang.Runnable
 import typings.std.HTMLElement

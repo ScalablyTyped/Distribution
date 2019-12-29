@@ -1,7 +1,5 @@
 package typings.atMaterialAutoDashInit
 
-import typings.atMaterialAutoDashInit.atMaterialAutoDashInitMod.MDCAutoInit
-import typings.atMaterialAutoDashInit.atMaterialAutoDashInitMod.MDCLogger
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`

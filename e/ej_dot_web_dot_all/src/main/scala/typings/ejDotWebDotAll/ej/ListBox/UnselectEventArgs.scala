@@ -28,7 +28,7 @@ trait UnselectEventArgs extends js.Object {
   var item: js.UndefOr[js.Any] = js.undefined
   /** Instance of the listbox model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ListBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** List itemâ€™s text (label).
     */
   var text: js.UndefOr[String] = js.undefined
@@ -50,7 +50,7 @@ object UnselectEventArgs {
     isEnabled: js.UndefOr[Boolean] = js.undefined,
     isSelected: js.UndefOr[Boolean] = js.undefined,
     item: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.ListBox.Model = null,
+    model: Model = null,
     text: String = null,
     `type`: String = null,
     value: String = null

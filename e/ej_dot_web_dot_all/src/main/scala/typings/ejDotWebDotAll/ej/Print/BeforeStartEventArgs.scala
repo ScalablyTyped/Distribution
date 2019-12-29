@@ -13,7 +13,7 @@ trait BeforeStartEventArgs extends js.Object {
   var content: js.UndefOr[js.Any] = js.undefined
   /** Returns the Print model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Print.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the name of an event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object BeforeStartEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     content: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Print.Model = null,
+    model: Model = null,
     `type`: String = null
   ): BeforeStartEventArgs = {
     val __obj = js.Dynamic.literal()

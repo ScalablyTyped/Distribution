@@ -1,16 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.symmetric.`3des`
-import typings.openpgp.openpgpMod.enums.symmetric.aes128
-import typings.openpgp.openpgpMod.enums.symmetric.aes192
-import typings.openpgp.openpgpMod.enums.symmetric.aes256
-import typings.openpgp.openpgpMod.enums.symmetric.blowfish
-import typings.openpgp.openpgpMod.enums.symmetric.cast5
-import typings.openpgp.openpgpMod.enums.symmetric.idea
-import typings.openpgp.openpgpMod.enums.symmetric.plaintext
-import typings.openpgp.openpgpMod.enums.symmetric.tripledes
-import typings.openpgp.openpgpMod.enums.symmetric.twofish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

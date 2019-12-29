@@ -1,5 +1,6 @@
 package typings.heremaps.H.map.provider.ImageTileProvider
 
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.ICopyright
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,9 +20,7 @@ import scala.scalajs.js.annotation._
   */
 trait Options extends js.Object {
   var crossOrigin: js.UndefOr[String | Boolean] = js.undefined
-  var getCopyrights: js.UndefOr[
-    js.Function2[/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double, js.Array[ICopyright]]
-  ] = js.undefined
+  var getCopyrights: js.UndefOr[js.Function2[/* rect */ Rect, /* n */ Double, js.Array[ICopyright]]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
   var tileSize: js.UndefOr[Double] = js.undefined
@@ -34,7 +33,7 @@ object Options {
   def apply(
     getURL: (Double, Double, Double) => String,
     crossOrigin: String | Boolean = null,
-    getCopyrights: (/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double) => js.Array[ICopyright] = null,
+    getCopyrights: (/* rect */ Rect, /* n */ Double) => js.Array[ICopyright] = null,
     max: Int | Double = null,
     min: Int | Double = null,
     tileSize: Int | Double = null,

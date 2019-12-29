@@ -1,6 +1,6 @@
 package typings.inquirer.inquirerMod.prompts
 
-import typings.inquirer.inquirerNumbers.`false`
+import typings.inquirer.inquirerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

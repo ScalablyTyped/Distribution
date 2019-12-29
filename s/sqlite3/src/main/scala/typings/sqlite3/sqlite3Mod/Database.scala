@@ -72,6 +72,7 @@ class Database protected () extends EventEmitter {
     params: js.Any,
     callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
   ): this.type = js.native
+  def interrupt(): Unit = js.native
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")

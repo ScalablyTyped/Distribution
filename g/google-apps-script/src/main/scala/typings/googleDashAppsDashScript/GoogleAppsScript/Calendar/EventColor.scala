@@ -1,17 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.BLUE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.CYAN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.GRAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.GREEN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.MAUVE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.ORANGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.PALE_BLUE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.PALE_GREEN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.PALE_RED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.RED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.EventColor.YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

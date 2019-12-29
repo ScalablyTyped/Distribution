@@ -1,6 +1,6 @@
 package typings.next.distNextDashServerServerRouterMod
 
-import typings.next.nextNumbers.`false`
+import typings.next.nextBooleans.`false`
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.urlMod.UrlWithParsedQuery

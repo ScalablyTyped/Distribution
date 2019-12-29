@@ -3,6 +3,7 @@ package typings.chromeDashApps.chrome.vpnProvider
 import org.scalablytyped.runtime.TopLevel
 import typings.chromeDashApps.Anon_CONNECTEDConnectedDISCONNECTED
 import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
 import typings.chromeDashApps.chromeDashAppsStrings.connected_
 import typings.chromeDashApps.chromeDashAppsStrings.disconnected_
 import typings.chromeDashApps.chromeDashAppsStrings.error
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object onPlatformMessage
   extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[
+      Event[
         js.Function3[
           /* id */ String, 
           /* message */ ToStringLiteral[

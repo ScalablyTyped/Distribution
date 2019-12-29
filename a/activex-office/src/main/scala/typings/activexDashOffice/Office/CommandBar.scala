@@ -23,7 +23,8 @@ class CommandBar protected () extends js.Object {
   var Left: Double = js.native
   var Name: String = js.native
   var NameLocal: String = js.native
-  var `Office.CommandBar_typekey`: CommandBar = js.native
+  @JSName("Office.CommandBar_typekey")
+  var OfficeDotCommandBar_typekey: CommandBar = js.native
   val Parent: js.Any = js.native
   var Position: MsoBarPosition = js.native
   var Protection: MsoBarProtection = js.native

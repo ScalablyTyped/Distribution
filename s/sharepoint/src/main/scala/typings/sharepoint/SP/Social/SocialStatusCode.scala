@@ -1,23 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialStatusCode.OK
-import typings.sharepoint.SP.Social.SocialStatusCode.accessDenied
-import typings.sharepoint.SP.Social.SocialStatusCode.attachmentError
-import typings.sharepoint.SP.Social.SocialStatusCode.cacheReadError
-import typings.sharepoint.SP.Social.SocialStatusCode.cacheUpdateError
-import typings.sharepoint.SP.Social.SocialStatusCode.cannotCreatePersonalSite
-import typings.sharepoint.SP.Social.SocialStatusCode.failedToCreatePersonalSite
-import typings.sharepoint.SP.Social.SocialStatusCode.featureDisabled
-import typings.sharepoint.SP.Social.SocialStatusCode.internalError
-import typings.sharepoint.SP.Social.SocialStatusCode.invalidOperation
-import typings.sharepoint.SP.Social.SocialStatusCode.invalidRequest
-import typings.sharepoint.SP.Social.SocialStatusCode.itemNotFound
-import typings.sharepoint.SP.Social.SocialStatusCode.itemNotModified
-import typings.sharepoint.SP.Social.SocialStatusCode.limitReached
-import typings.sharepoint.SP.Social.SocialStatusCode.notAuthorizedToCreatePersonalSite
-import typings.sharepoint.SP.Social.SocialStatusCode.partialData
-import typings.sharepoint.SP.Social.SocialStatusCode.personalSiteNotFound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

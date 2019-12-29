@@ -1,15 +1,13 @@
 package typings.esriDashLeafletDashGeocoder.leafletMod.esri.Geocoding
 
-import typings.esriDashLeaflet.esriDashLeafletMod.FeatureLayerService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("leaflet", "esri.Geocoding.FeatureLayerProvider")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FeatureLayerService * / any */ @JSImport("leaflet", "esri.Geocoding.FeatureLayerProvider")
 @js.native
-class FeatureLayerProvider ()
-  extends FeatureLayerService
-     with GeosearchProvider {
+class FeatureLayerProvider () extends GeosearchProvider {
   def this(options: FeatureLayerProviderOptions) = this()
 }
 

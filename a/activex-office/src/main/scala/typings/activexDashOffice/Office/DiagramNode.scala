@@ -13,7 +13,8 @@ class DiagramNode protected () extends js.Object {
   val Creator: Double = js.native
   val Diagram: IMsoDiagram = js.native
   var Layout: MsoOrgChartLayoutType = js.native
-  var `Office.DiagramNode_typekey`: DiagramNode = js.native
+  @JSName("Office.DiagramNode_typekey")
+  var OfficeDotDiagramNode_typekey: DiagramNode = js.native
   val Parent: js.Any = js.native
   val Root: DiagramNode = js.native
   val Shape: typings.activexDashOffice.Office.Shape = js.native

@@ -1,6 +1,6 @@
 package typings.atom.atomMod
 
-import typings.atom.atomNumbers.`false`
+import typings.atom.atomBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

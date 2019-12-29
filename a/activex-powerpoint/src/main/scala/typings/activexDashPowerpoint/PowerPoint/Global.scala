@@ -21,7 +21,8 @@ class Global protected () extends js.Object {
   val Dialogs: js.Any = js.native
   val FileConverters: typings.activexDashPowerpoint.PowerPoint.FileConverters = js.native
   val IsSandboxed: Boolean = js.native
-  var `PowerPoint.Global_typekey`: Global = js.native
+  @JSName("PowerPoint.Global_typekey")
+  var PowerPointDotGlobal_typekey: Global = js.native
   val Presentations: typings.activexDashPowerpoint.PowerPoint.Presentations = js.native
   val ProtectedViewWindows: typings.activexDashPowerpoint.PowerPoint.ProtectedViewWindows = js.native
   val SlideShowWindows: typings.activexDashPowerpoint.PowerPoint.SlideShowWindows = js.native

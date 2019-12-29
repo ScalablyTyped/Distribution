@@ -6,74 +6,74 @@ import scala.scalajs.js.annotation._
 
 object minecraftDashScriptingDashTypesDashClientStrings {
   @js.native
-  sealed trait `minecraft:client_entered_world` extends ReceiveFromMinecraftClient
+  sealed trait minecraftColonclient_entered_world extends ReceiveFromMinecraftClient
   
   @js.native
-  sealed trait `minecraft:display_chat_event` extends SendToMinecraftClient
+  sealed trait minecraftColondisplay_chat_event extends SendToMinecraftClient
   
   @js.native
-  sealed trait `minecraft:hit_result_changed` extends ReceiveFromMinecraftClient
+  sealed trait minecraftColonhit_result_changed extends ReceiveFromMinecraftClient
   
   @js.native
-  sealed trait `minecraft:hit_result_continuous` extends ReceiveFromMinecraftClient
+  sealed trait minecraftColonhit_result_continuous extends ReceiveFromMinecraftClient
   
   @js.native
-  sealed trait `minecraft:load_ui` extends SendToMinecraftClient
+  sealed trait minecraftColonload_ui extends SendToMinecraftClient
   
   @js.native
-  sealed trait `minecraft:molang` extends js.Object
+  sealed trait minecraftColonmolang extends js.Object
   
   @js.native
-  sealed trait `minecraft:pick_hit_result_changed` extends ReceiveFromMinecraftClient
+  sealed trait minecraftColonpick_hit_result_changed extends ReceiveFromMinecraftClient
   
   @js.native
-  sealed trait `minecraft:pick_hit_result_continuous` extends ReceiveFromMinecraftClient
+  sealed trait minecraftColonpick_hit_result_continuous extends ReceiveFromMinecraftClient
   
   @js.native
-  sealed trait `minecraft:script_logger_config` extends SendToMinecraftClient
+  sealed trait minecraftColonscript_logger_config extends SendToMinecraftClient
   
   @js.native
-  sealed trait `minecraft:send_ui_event` extends SendToMinecraftClient
+  sealed trait minecraftColonsend_ui_event extends SendToMinecraftClient
   
   @js.native
-  sealed trait `minecraft:spawn_particle_attached_entity` extends SendToMinecraftClient
+  sealed trait minecraftColonspawn_particle_attached_entity extends SendToMinecraftClient
   
   @js.native
-  sealed trait `minecraft:spawn_particle_in_world` extends SendToMinecraftClient
+  sealed trait minecraftColonspawn_particle_in_world extends SendToMinecraftClient
   
   @js.native
-  sealed trait `minecraft:ui_event` extends ReceiveFromMinecraftClient
+  sealed trait minecraftColonui_event extends ReceiveFromMinecraftClient
   
   @js.native
-  sealed trait `minecraft:unload_ui` extends SendToMinecraftClient
+  sealed trait minecraftColonunload_ui extends SendToMinecraftClient
   
   @scala.inline
-  def `minecraft:client_entered_world`: `minecraft:client_entered_world` = "minecraft:client_entered_world".asInstanceOf[`minecraft:client_entered_world`]
+  def minecraftColonclient_entered_world: minecraftColonclient_entered_world = "minecraft:client_entered_world".asInstanceOf[minecraftColonclient_entered_world]
   @scala.inline
-  def `minecraft:display_chat_event`: `minecraft:display_chat_event` = "minecraft:display_chat_event".asInstanceOf[`minecraft:display_chat_event`]
+  def minecraftColondisplay_chat_event: minecraftColondisplay_chat_event = "minecraft:display_chat_event".asInstanceOf[minecraftColondisplay_chat_event]
   @scala.inline
-  def `minecraft:hit_result_changed`: `minecraft:hit_result_changed` = "minecraft:hit_result_changed".asInstanceOf[`minecraft:hit_result_changed`]
+  def minecraftColonhit_result_changed: minecraftColonhit_result_changed = "minecraft:hit_result_changed".asInstanceOf[minecraftColonhit_result_changed]
   @scala.inline
-  def `minecraft:hit_result_continuous`: `minecraft:hit_result_continuous` = "minecraft:hit_result_continuous".asInstanceOf[`minecraft:hit_result_continuous`]
+  def minecraftColonhit_result_continuous: minecraftColonhit_result_continuous = "minecraft:hit_result_continuous".asInstanceOf[minecraftColonhit_result_continuous]
   @scala.inline
-  def `minecraft:load_ui`: `minecraft:load_ui` = "minecraft:load_ui".asInstanceOf[`minecraft:load_ui`]
+  def minecraftColonload_ui: minecraftColonload_ui = "minecraft:load_ui".asInstanceOf[minecraftColonload_ui]
   @scala.inline
-  def `minecraft:molang`: `minecraft:molang` = "minecraft:molang".asInstanceOf[`minecraft:molang`]
+  def minecraftColonmolang: minecraftColonmolang = "minecraft:molang".asInstanceOf[minecraftColonmolang]
   @scala.inline
-  def `minecraft:pick_hit_result_changed`: `minecraft:pick_hit_result_changed` = "minecraft:pick_hit_result_changed".asInstanceOf[`minecraft:pick_hit_result_changed`]
+  def minecraftColonpick_hit_result_changed: minecraftColonpick_hit_result_changed = "minecraft:pick_hit_result_changed".asInstanceOf[minecraftColonpick_hit_result_changed]
   @scala.inline
-  def `minecraft:pick_hit_result_continuous`: `minecraft:pick_hit_result_continuous` = "minecraft:pick_hit_result_continuous".asInstanceOf[`minecraft:pick_hit_result_continuous`]
+  def minecraftColonpick_hit_result_continuous: minecraftColonpick_hit_result_continuous = "minecraft:pick_hit_result_continuous".asInstanceOf[minecraftColonpick_hit_result_continuous]
   @scala.inline
-  def `minecraft:script_logger_config`: `minecraft:script_logger_config` = "minecraft:script_logger_config".asInstanceOf[`minecraft:script_logger_config`]
+  def minecraftColonscript_logger_config: minecraftColonscript_logger_config = "minecraft:script_logger_config".asInstanceOf[minecraftColonscript_logger_config]
   @scala.inline
-  def `minecraft:send_ui_event`: `minecraft:send_ui_event` = "minecraft:send_ui_event".asInstanceOf[`minecraft:send_ui_event`]
+  def minecraftColonsend_ui_event: minecraftColonsend_ui_event = "minecraft:send_ui_event".asInstanceOf[minecraftColonsend_ui_event]
   @scala.inline
-  def `minecraft:spawn_particle_attached_entity`: `minecraft:spawn_particle_attached_entity` = "minecraft:spawn_particle_attached_entity".asInstanceOf[`minecraft:spawn_particle_attached_entity`]
+  def minecraftColonspawn_particle_attached_entity: minecraftColonspawn_particle_attached_entity = "minecraft:spawn_particle_attached_entity".asInstanceOf[minecraftColonspawn_particle_attached_entity]
   @scala.inline
-  def `minecraft:spawn_particle_in_world`: `minecraft:spawn_particle_in_world` = "minecraft:spawn_particle_in_world".asInstanceOf[`minecraft:spawn_particle_in_world`]
+  def minecraftColonspawn_particle_in_world: minecraftColonspawn_particle_in_world = "minecraft:spawn_particle_in_world".asInstanceOf[minecraftColonspawn_particle_in_world]
   @scala.inline
-  def `minecraft:ui_event`: `minecraft:ui_event` = "minecraft:ui_event".asInstanceOf[`minecraft:ui_event`]
+  def minecraftColonui_event: minecraftColonui_event = "minecraft:ui_event".asInstanceOf[minecraftColonui_event]
   @scala.inline
-  def `minecraft:unload_ui`: `minecraft:unload_ui` = "minecraft:unload_ui".asInstanceOf[`minecraft:unload_ui`]
+  def minecraftColonunload_ui: minecraftColonunload_ui = "minecraft:unload_ui".asInstanceOf[minecraftColonunload_ui]
 }
 

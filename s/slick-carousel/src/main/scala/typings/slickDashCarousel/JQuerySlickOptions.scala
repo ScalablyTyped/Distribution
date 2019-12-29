@@ -98,6 +98,11 @@ trait JQuerySlickOptions extends js.Object {
     */
   var fade: js.UndefOr[Boolean] = js.undefined
   /**
+    * Puts focus on slide after change
+    * Default: false
+    */
+  var focusOnChange: js.UndefOr[Boolean] = js.undefined
+  /**
     * Enable focus on selected element (click)
     * Default: false
     */
@@ -272,6 +277,7 @@ object JQuerySlickOptions {
     easing: String = null,
     edgeFriction: Int | Double = null,
     fade: js.UndefOr[Boolean] = js.undefined,
+    focusOnChange: js.UndefOr[Boolean] = js.undefined,
     focusOnSelect: js.UndefOr[Boolean] = js.undefined,
     infinite: js.UndefOr[Boolean] = js.undefined,
     initialSlide: Int | Double = null,
@@ -322,6 +328,7 @@ object JQuerySlickOptions {
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (edgeFriction != null) __obj.updateDynamic("edgeFriction")(edgeFriction.asInstanceOf[js.Any])
     if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnChange)) __obj.updateDynamic("focusOnChange")(focusOnChange.asInstanceOf[js.Any])
     if (!js.isUndefined(focusOnSelect)) __obj.updateDynamic("focusOnSelect")(focusOnSelect.asInstanceOf[js.Any])
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
     if (initialSlide != null) __obj.updateDynamic("initialSlide")(initialSlide.asInstanceOf[js.Any])

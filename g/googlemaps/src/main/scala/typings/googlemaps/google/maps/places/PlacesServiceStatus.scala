@@ -1,13 +1,6 @@
 package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.places.PlacesServiceStatus.INVALID_REQUEST
-import typings.googlemaps.google.maps.places.PlacesServiceStatus.NOT_FOUND
-import typings.googlemaps.google.maps.places.PlacesServiceStatus.OK
-import typings.googlemaps.google.maps.places.PlacesServiceStatus.OVER_QUERY_LIMIT
-import typings.googlemaps.google.maps.places.PlacesServiceStatus.REQUEST_DENIED
-import typings.googlemaps.google.maps.places.PlacesServiceStatus.UNKNOWN_ERROR
-import typings.googlemaps.google.maps.places.PlacesServiceStatus.ZERO_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

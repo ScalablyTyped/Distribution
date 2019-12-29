@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "koa-pug" : "4.0.2"
+      "koa-pug" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "koa-pug" : "4.0.2"
+      "koa-pug" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

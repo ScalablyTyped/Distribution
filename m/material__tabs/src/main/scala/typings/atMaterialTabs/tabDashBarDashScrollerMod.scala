@@ -2,7 +2,6 @@ package typings.atMaterialTabs
 
 import typings.atMaterialTabs.tabDashBarDashScrollerAdapterMod.MDCTabBarScrollerAdapter
 import typings.atMaterialTabs.tabDashBarDashScrollerFoundationMod.default
-import typings.atMaterialTabs.tabDashBarDashScrollerMod.MDCTabBarScroller
 import typings.atMaterialTabs.tabDashBarMod.MDCTabBar
 import typings.std.Element
 import scala.scalajs.js

@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.leftButtonPressed
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.leftButtonReleased
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.middleButtonPressed
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.middleButtonReleased
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.other
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.rightButtonPressed
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.rightButtonReleased
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton1Pressed
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton1Released
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton2Pressed
-import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton2Released
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

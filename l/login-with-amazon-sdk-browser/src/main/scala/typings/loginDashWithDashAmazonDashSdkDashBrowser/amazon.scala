@@ -1,10 +1,6 @@
 package typings.loginDashWithDashAmazonDashSdkDashBrowser
 
 import org.scalablytyped.runtime.TopLevel
-import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region
-import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.AsiaPacific
-import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.Europe
-import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.NorthAmerica
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

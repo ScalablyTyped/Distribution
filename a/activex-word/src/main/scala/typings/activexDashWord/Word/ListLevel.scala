@@ -24,7 +24,8 @@ class ListLevel protected () extends js.Object {
   var TabPosition: Double = js.native
   var TextPosition: Double = js.native
   var TrailingCharacter: WdTrailingCharacter = js.native
-  var `Word.ListLevel_typekey`: ListLevel = js.native
+  @JSName("Word.ListLevel_typekey")
+  var WordDotListLevel_typekey: ListLevel = js.native
   def ApplyPictureBullet(FileName: String): InlineShape = js.native
 }
 

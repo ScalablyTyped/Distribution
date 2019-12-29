@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.jqueryDashCountdown.jqueryDashCountdownStrings.updateDOTcountdown
-  - typings.jqueryDashCountdown.jqueryDashCountdownStrings.finishDOTcountdown
-  - typings.jqueryDashCountdown.jqueryDashCountdownStrings.stopDOTcountdown
+  - typings.jqueryDashCountdown.jqueryDashCountdownStrings.updateDotcountdown
+  - typings.jqueryDashCountdown.jqueryDashCountdownStrings.finishDotcountdown
+  - typings.jqueryDashCountdown.jqueryDashCountdownStrings.stopDotcountdown
 */
 trait Methods extends js.Object
 
@@ -15,10 +15,10 @@ object Methods {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def finishDOTcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.finishDOTcountdown = this.cast("finish.countdown")
+  def finishDotcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.finishDotcountdown = this.cast("finish.countdown")
   @scala.inline
-  def stopDOTcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.stopDOTcountdown = this.cast("stop.countdown")
+  def stopDotcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.stopDotcountdown = this.cast("stop.countdown")
   @scala.inline
-  def updateDOTcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.updateDOTcountdown = this.cast("update.countdown")
+  def updateDotcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.updateDotcountdown = this.cast("update.countdown")
 }
 

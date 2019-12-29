@@ -18,7 +18,6 @@ package object execaMod {
     - typings.node.streamMod.Stream
     - scala.Double
     - `js.undefined`
-    - scala.Nothing
   */
   type StdioOption = js.UndefOr[_StdioOption | Stream | Double]
 }

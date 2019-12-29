@@ -8,6 +8,7 @@ import typings.blessed.blessedStrings.block
 import typings.blessed.blessedStrings.bottom
 import typings.blessed.blessedStrings.center
 import typings.blessed.blessedStrings.left
+import typings.blessed.blessedStrings.line
 import typings.blessed.blessedStrings.middle
 import typings.blessed.blessedStrings.right
 import typings.blessed.blessedStrings.top
@@ -25,7 +26,7 @@ trait TerminalOptions extends BoxOptions {
   /**
     * can be line, underline, and block.
     */
-  var cursor: js.UndefOr[typings.blessed.blessedStrings.line | underline | block] = js.undefined
+  var cursor: js.UndefOr[line | underline | block] = js.undefined
   /**
     * Object for process env.
     */
@@ -51,13 +52,13 @@ object TerminalOptions {
     bg: String = null,
     bindings: js.Any = null,
     bold: String = null,
-    border: Border | typings.blessed.blessedStrings.line | bg = null,
+    border: Border | line | bg = null,
     bottom: TPosition = null,
     ch: String = null,
     children: js.Array[Node] = null,
     clickable: js.UndefOr[Boolean] = js.undefined,
     content: String = null,
-    cursor: typings.blessed.blessedStrings.line | underline | block = null,
+    cursor: line | underline | block = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     env: js.Any = null,
     fg: String = null,

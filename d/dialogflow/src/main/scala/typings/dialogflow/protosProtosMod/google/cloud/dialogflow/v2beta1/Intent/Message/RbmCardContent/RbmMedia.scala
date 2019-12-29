@@ -3,10 +3,6 @@ package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Inten
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.HEIGHT_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.MEDIUM
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.SHORT
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.TALL
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

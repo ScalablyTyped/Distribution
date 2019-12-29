@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
+import typings.reactDashDraggable.reactDashDraggableBooleans.`false`
 import typings.reactDashDraggable.reactDashDraggableMod.DraggableEvent
-import typings.reactDashDraggable.reactDashDraggableNumbers.`false`
 import typings.reactDashRnd.Anon_X
 import typings.reactDashRnd.reactDashRndStrings.both
 import typings.reactDashRnd.reactDashRndStrings.none

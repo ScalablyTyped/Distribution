@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.OtherValue")
 @js.native
-class OtherValue () extends EncapsulatedPKIData
+class OtherValue ()
+  extends typings.xadesjs.buildTypesXmlMod.OtherValue
 

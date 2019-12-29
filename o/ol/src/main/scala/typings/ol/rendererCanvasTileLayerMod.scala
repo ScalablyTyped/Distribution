@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.extentMod.Extent
 import typings.ol.layerLayerMod.State
 import typings.ol.pluggableMapMod.FrameState
-import typings.ol.rendererCanvasTileLayerMod.CanvasTileLayerRenderer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement

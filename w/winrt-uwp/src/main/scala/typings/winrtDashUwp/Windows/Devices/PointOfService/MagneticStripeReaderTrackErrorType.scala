@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType.endSentinelError
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType.lrcError
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType.none
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType.parityError
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType.startSentinelError
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

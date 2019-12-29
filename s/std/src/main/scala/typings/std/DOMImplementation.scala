@@ -1,7 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.std.stdNumbers.`true`
+import typings.std.stdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

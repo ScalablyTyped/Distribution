@@ -1,6 +1,5 @@
 package typings.atNodelibFsDotScandir
 
-import typings.atNodelibFsDotScandir.outProvidersAsyncMod.AsyncCallback
 import typings.atNodelibFsDotScandir.outSettingsMod.default
 import typings.atNodelibFsDotScandir.outTypesMod.Entry
 import typings.node.NodeJS.ErrnoException

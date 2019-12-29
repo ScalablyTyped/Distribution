@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.install
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.repair
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,7 @@ trait KeyPressEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the mask edit model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.MaskEdit.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -26,7 +26,7 @@ object KeyPressEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.MaskEdit.Model = null,
+    model: Model = null,
     `type`: String = null,
     unmaskedValue: String = null,
     value: Int | Double = null

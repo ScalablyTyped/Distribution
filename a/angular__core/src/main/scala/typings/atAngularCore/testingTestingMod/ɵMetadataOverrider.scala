@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core/testing/testing", "ɵMetadataOverrider")
+@JSImport("@angular/core/testing/testing", "\u0275MetadataOverrider")
 @js.native
 class ɵMetadataOverrider () extends js.Object {
   var _references: js.Any = js.native

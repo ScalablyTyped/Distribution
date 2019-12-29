@@ -1,16 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.AppInstanceStatus.canceling
-import typings.sharepoint.SP.AppInstanceStatus.disabled
-import typings.sharepoint.SP.AppInstanceStatus.disabling
-import typings.sharepoint.SP.AppInstanceStatus.initialized
-import typings.sharepoint.SP.AppInstanceStatus.installed
-import typings.sharepoint.SP.AppInstanceStatus.installing
-import typings.sharepoint.SP.AppInstanceStatus.invalidStatus
-import typings.sharepoint.SP.AppInstanceStatus.uninstalling
-import typings.sharepoint.SP.AppInstanceStatus.upgradeCanceling
-import typings.sharepoint.SP.AppInstanceStatus.upgrading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

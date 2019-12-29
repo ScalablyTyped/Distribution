@@ -1,7 +1,6 @@
 package typings.atMaterialTextfield
 
 import typings.atMaterialTextfield.iconAdapterMod.MDCTextFieldIconAdapter
-import typings.atMaterialTextfield.iconFoundationMod.MDCTextFieldIconFoundation
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

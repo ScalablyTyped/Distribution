@@ -10,7 +10,8 @@ class HiLoLines protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.HiLoLines_typekey`: HiLoLines = js.native
+  @JSName("Excel.HiLoLines_typekey")
+  var ExcelDotHiLoLines_typekey: HiLoLines = js.native
   val Format: ChartFormat = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native

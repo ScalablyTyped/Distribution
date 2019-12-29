@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.`override`
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.block
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.noProtection
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.silent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

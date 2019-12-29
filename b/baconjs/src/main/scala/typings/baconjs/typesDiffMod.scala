@@ -1,6 +1,5 @@
 package typings.baconjs
 
-import typings.baconjs.typesDiffMod.Differ
 import typings.baconjs.typesObservableMod.Property
 import typings.baconjs.typesObservableMod.default
 import typings.baconjs.typesTypesMod.Function2

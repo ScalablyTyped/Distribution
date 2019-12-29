@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelRotationMode.Angle
-import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelRotationMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

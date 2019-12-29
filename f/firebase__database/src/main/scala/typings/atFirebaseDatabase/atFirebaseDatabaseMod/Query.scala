@@ -1,5 +1,6 @@
 package typings.atFirebaseDatabase.atFirebaseDatabaseMod
 
+import org.scalablytyped.runtime.Instantiable2
 import typings.atFirebaseDatabase.distSrcCoreRepoMod.Repo
 import typings.atFirebaseDatabase.distSrcCoreUtilPathMod.Path
 import typings.atFirebaseDatabase.distSrcCoreViewQueryParamsMod.QueryParams
@@ -18,7 +19,6 @@ class Query protected ()
 @JSImport("@firebase/database", "Query")
 @js.native
 object Query extends js.Object {
-  var __referenceConstructor: js.Any = js.native
   /**
     * Helper used by .on and .once to extract the context and or cancel arguments.
     * @param {!string} fnName The function name (on or once)
@@ -40,5 +40,17 @@ object Query extends js.Object {
     * @private
     */
   var validateQueryEndpoints_ : js.Any = js.native
+  def __referenceConstructor(): Instantiable2[
+    /* repo */ Repo, 
+    /* path */ Path, 
+    typings.atFirebaseDatabase.distSrcApiQueryMod.Query
+  ] = js.native
+  def __referenceConstructor(
+    `val`: Instantiable2[
+      /* repo */ Repo, 
+      /* path */ Path, 
+      typings.atFirebaseDatabase.distSrcApiQueryMod.Query
+    ]
+  ): js.Any = js.native
 }
 

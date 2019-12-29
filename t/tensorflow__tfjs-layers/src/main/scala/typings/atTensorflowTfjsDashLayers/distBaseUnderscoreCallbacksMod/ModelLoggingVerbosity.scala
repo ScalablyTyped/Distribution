@@ -1,8 +1,6 @@
 package typings.atTensorflowTfjsDashLayers.distBaseUnderscoreCallbacksMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashLayers.distBaseUnderscoreCallbacksMod.ModelLoggingVerbosity.SILENT
-import typings.atTensorflowTfjsDashLayers.distBaseUnderscoreCallbacksMod.ModelLoggingVerbosity.VERBOSE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

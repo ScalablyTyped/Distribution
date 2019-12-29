@@ -32,7 +32,7 @@ object writeSync extends js.Object {
     */
   def apply(fd: Double, string: js.Any): Double = js.native
   def apply(fd: Double, string: js.Any, position: Double): Double = js.native
-  def apply(fd: Double, string: js.Any, position: Double, encoding: java.lang.String): Double = js.native
-  def apply(fd: Double, string: js.Any, position: Null, encoding: java.lang.String): Double = js.native
+  def apply(fd: Double, string: js.Any, position: Double, encoding: String): Double = js.native
+  def apply(fd: Double, string: js.Any, position: Null, encoding: String): Double = js.native
 }
 

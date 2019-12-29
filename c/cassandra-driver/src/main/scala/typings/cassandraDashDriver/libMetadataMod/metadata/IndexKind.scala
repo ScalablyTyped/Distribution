@@ -1,9 +1,6 @@
 package typings.cassandraDashDriver.libMetadataMod.metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cassandraDashDriver.libMetadataMod.metadata.IndexKind.composites
-import typings.cassandraDashDriver.libMetadataMod.metadata.IndexKind.custom
-import typings.cassandraDashDriver.libMetadataMod.metadata.IndexKind.keys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

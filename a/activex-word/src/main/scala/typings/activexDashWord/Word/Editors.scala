@@ -11,7 +11,8 @@ class Editors protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Editors_typekey`: Editors = js.native
+  @JSName("Word.Editors_typekey")
+  var WordDotEditors_typekey: Editors = js.native
   def Add(EditorID: js.Any): Editor = js.native
   def Item(Index: js.Any): Editor = js.native
 }

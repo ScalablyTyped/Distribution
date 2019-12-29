@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartErrorBarsType.custom
-import typings.officeDashJsDashPreview.Excel.ChartErrorBarsType.fixedValue
-import typings.officeDashJsDashPreview.Excel.ChartErrorBarsType.percent
-import typings.officeDashJsDashPreview.Excel.ChartErrorBarsType.stDev
-import typings.officeDashJsDashPreview.Excel.ChartErrorBarsType.stError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

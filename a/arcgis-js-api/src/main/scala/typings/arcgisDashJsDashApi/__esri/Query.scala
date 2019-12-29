@@ -1,15 +1,25 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`envelope-intersects`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`index-intersects`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-nautical-miles`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.contains
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.crosses
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disjoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.intersects
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.native
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.overlaps
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relation
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.standard
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.touches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.within
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -218,6 +228,7 @@ trait Query
   var returnQueryGeometry: Boolean = js.native
   /**
     * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry) is `true`, then z-values are included in the geometry.
+    * > **Known Limitations**  [FeatureLayerView.queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) and [GeoJSONLayerView.queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#queryFeatures) results do not include the z-values when called in [2D MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) even if `returnZ` is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnZ)
     */
@@ -235,7 +246,7 @@ trait Query
     *
     * @default intersects
     */
-  var spatialRelationship: String = js.native
+  var spatialRelationship: intersects | contains | crosses | disjoint | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation = js.native
   /**
     * This parameter can be either standard SQL92 `standard` or it can use the native SQL of the underlying datastore `native`. See the [ArcGIS REST API documentation](https://developers.arcgis.com/rest/services-reference/query-feature-service-.htm) for more information.
     * > **Known Limitations**  This property does not apply to layer view or [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) queries.
@@ -273,7 +284,7 @@ trait Query
     *
     * @default null
     */
-  var units: feet | miles | `nautical-miles` | `us-nautical-miles` | meters | kilometers = js.native
+  var units: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_ = js.native
   /**
     * A where clause for the query. Any legal SQL where clause operating on the fields in the layer is allowed. Be sure to have the correct sequence of single and double quotes when writing the where clause in JavaScript.
     *

@@ -46,6 +46,22 @@ trait WMSSublayer extends Accessor {
     */
   var legendUrl: String = js.native
   /**
+    * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of zero means the layer does not have a maximum scale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#maxScale)
+    *
+    * @default 0
+    */
+  var maxScale: Double = js.native
+  /**
+    * The minimum scale (most zoomed out) at which the layer is visible in the view. If the map is zoomed out beyond this scale, the layer will not be visible. A value of zero means the layer does not have a minimum scale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#minScale)
+    *
+    * @default 0
+    */
+  var minScale: Double = js.native
+  /**
     * Name of the WMS sublayer. This defaults to the value of the Name property from the WMS GetCapabilities request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#name)

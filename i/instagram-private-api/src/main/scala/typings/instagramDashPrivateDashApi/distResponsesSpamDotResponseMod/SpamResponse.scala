@@ -1,6 +1,6 @@
 package typings.instagramDashPrivateDashApi.distResponsesSpamDotResponseMod
 
-import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiNumbers.`true`
+import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiBooleans.`true`
 import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.fail
 import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.feedback_required
 import scala.scalajs.js

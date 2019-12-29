@@ -1,5 +1,6 @@
 package typings.atFirebaseDatabase
 
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable4
 import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
 import typings.atFirebaseDatabase.distSrcCoreRepoMod.Repo
@@ -17,7 +18,6 @@ trait TypeofClassQuery extends Instantiable4[
       /* orderByCalled_ */ Boolean, 
       Query
     ] {
-  var __referenceConstructor: js.Any = js.native
   /**
     * Helper used by .on and .once to extract the context and or cancel arguments.
     * @param {!string} fnName The function name (on or once)
@@ -39,5 +39,7 @@ trait TypeofClassQuery extends Instantiable4[
     * @private
     */
   var validateQueryEndpoints_ : js.Any = js.native
+  def __referenceConstructor(): Instantiable2[/* repo */ Repo, /* path */ Path, Query] = js.native
+  def __referenceConstructor(`val`: Instantiable2[/* repo */ Repo, /* path */ Path, Query]): js.Any = js.native
 }
 

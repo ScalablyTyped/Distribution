@@ -3,7 +3,7 @@ package typings.polished
 import typings.polished.polishedNumbers.`0`
 import typings.polished.polishedNumbers.`1`
 import typings.polished.polishedNumbers.`6`
-import typings.polished.polishedStrings.`!`
+import typings.polished.polishedStrings.Exclamationmark
 import typings.polished.polishedStrings.postfix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait Anon_ extends js.Object {
   var notation: postfix
   var precedence: `6`
   var rightToLeft: `0`
-  var symbol: `!`
+  var symbol: Exclamationmark
 }
 
 object Anon_ {
@@ -26,7 +26,7 @@ object Anon_ {
     notation: postfix,
     precedence: `6`,
     rightToLeft: `0`,
-    symbol: `!`
+    symbol: Exclamationmark
   ): Anon_ = {
     val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
   

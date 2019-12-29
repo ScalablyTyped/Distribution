@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.SheetVisibility.hidden
-import typings.officeDashJsDashPreview.Excel.SheetVisibility.veryHidden
-import typings.officeDashJsDashPreview.Excel.SheetVisibility.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

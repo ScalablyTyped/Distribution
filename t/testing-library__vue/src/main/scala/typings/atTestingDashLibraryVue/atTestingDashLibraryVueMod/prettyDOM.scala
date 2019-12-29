@@ -1,6 +1,6 @@
 package typings.atTestingDashLibraryVue.atTestingDashLibraryVueMod
 
-import typings.atTestingDashLibraryVue.atTestingDashLibraryVueNumbers.`false`
+import typings.atTestingDashLibraryVue.atTestingDashLibraryVueBooleans.`false`
 import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
 import typings.std.Element
 import typings.std.HTMLDocument

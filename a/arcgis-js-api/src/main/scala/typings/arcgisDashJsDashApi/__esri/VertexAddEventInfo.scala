@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertex-add`
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -21,7 +22,7 @@ trait VertexAddEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
-  var `type`: String
+  var `type`: `vertex-add`
 }
 
 object VertexAddEventInfo {
@@ -31,7 +32,7 @@ object VertexAddEventInfo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String
+    `type`: `vertex-add`
   ): VertexAddEventInfo = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

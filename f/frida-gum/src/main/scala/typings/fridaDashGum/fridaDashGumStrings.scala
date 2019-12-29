@@ -133,9 +133,6 @@ object fridaDashGumStrings {
   sealed trait DUK extends ScriptRuntime
   
   @js.native
-  sealed trait JS extends X86InstructionId
-  
-  @js.native
   sealed trait V8 extends ScriptRuntime
   
   @js.native
@@ -525,6 +522,9 @@ object fridaDashGumStrings {
   
   @js.native
   sealed trait jrcxz extends X86InstructionId
+  
+  @js.native
+  sealed trait js_ extends X86InstructionId
   
   @js.native
   sealed trait k0 extends MipsRegister
@@ -1169,10 +1169,10 @@ object fridaDashGumStrings {
   sealed trait unix64 extends NativeABI
   
   @js.native
-  sealed trait `unix:dgram` extends SocketType
+  sealed trait unixColondgram extends SocketType
   
   @js.native
-  sealed trait `unix:stream` extends SocketType
+  sealed trait unixColonstream extends SocketType
   
   @js.native
   sealed trait unknown extends ModuleSymbolType
@@ -1541,8 +1541,6 @@ object fridaDashGumStrings {
   @scala.inline
   def DUK: DUK = "DUK".asInstanceOf[DUK]
   @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
-  @scala.inline
   def V8: V8 = "V8".asInstanceOf[V8]
   @scala.inline
   def a0: a0 = "a0".asInstanceOf[a0]
@@ -1782,6 +1780,8 @@ object fridaDashGumStrings {
   def jp: jp = "jp".asInstanceOf[jp]
   @scala.inline
   def jrcxz: jrcxz = "jrcxz".asInstanceOf[jrcxz]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def k0: k0 = "k0".asInstanceOf[k0]
   @scala.inline
@@ -2165,9 +2165,9 @@ object fridaDashGumStrings {
   @scala.inline
   def unix64: unix64 = "unix64".asInstanceOf[unix64]
   @scala.inline
-  def `unix:dgram`: `unix:dgram` = "unix:dgram".asInstanceOf[`unix:dgram`]
+  def unixColondgram: unixColondgram = "unix:dgram".asInstanceOf[unixColondgram]
   @scala.inline
-  def `unix:stream`: `unix:stream` = "unix:stream".asInstanceOf[`unix:stream`]
+  def unixColonstream: unixColonstream = "unix:stream".asInstanceOf[unixColonstream]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline

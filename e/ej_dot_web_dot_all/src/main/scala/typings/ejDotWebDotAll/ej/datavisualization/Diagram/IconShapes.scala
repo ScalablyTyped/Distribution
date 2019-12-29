@@ -1,13 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.IconShapes.Arrow
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.IconShapes.Image
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.IconShapes.Minus
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.IconShapes.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.IconShapes.Path
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.IconShapes.Plus
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.IconShapes.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

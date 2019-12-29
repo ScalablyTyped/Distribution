@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class spreadsheet ()
   extends typings.webix.webix.ui.baseview {
-  @JSName("$$")
-  var $$: js.Any = js.native
   @JSName("$skin")
   var $skin_Original_spreadsheet: WebixCallback = js.native
+  @JSName("$$")
+  var DollarDollar: js.Any = js.native
   var comments: js.Any = js.native
   @JSName("config")
   var config_spreadsheet: spreadsheetConfig = js.native

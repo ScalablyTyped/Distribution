@@ -3,7 +3,6 @@ package typings.atGrpcGrpcDashJs
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Call
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.StatusObject
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.WriteObject
-import typings.atGrpcGrpcDashJs.buildSrcFilterDashStackMod.FilterStack
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.Filter
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.FilterFactory
 import typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata

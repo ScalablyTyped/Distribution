@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightDotMatrix
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightSquareMatrix
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.FourteenSegment
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.SevenSegment
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.SixteenSegment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

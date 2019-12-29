@@ -14,6 +14,7 @@ class ChartBorder protected () extends js.Object {
   var LineStyle: js.Any = js.native
   val Parent: js.Any = js.native
   var Weight: js.Any = js.native
-  var `Word.ChartBorder_typekey`: ChartBorder = js.native
+  @JSName("Word.ChartBorder_typekey")
+  var WordDotChartBorder_typekey: ChartBorder = js.native
 }
 

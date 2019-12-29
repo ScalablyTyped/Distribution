@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Operation")
 @js.native
 class Operation protected () extends js.Object {
-  var `Access.Operation_typekey`: Operation = js.native
+  @JSName("Access.Operation_typekey")
+  var AccessDotOperation_typekey: Operation = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
   @JSName("WSParameters")

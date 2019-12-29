@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object oauth2DashServerStrings {
   @js.native
-  sealed trait Empty extends _Falsey
+  sealed trait _empty extends _Falsey
   
   @js.native
   sealed trait authorizationCode extends js.Object
@@ -22,7 +22,7 @@ object oauth2DashServerStrings {
   sealed trait scope extends js.Object
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def authorizationCode: authorizationCode = "authorizationCode".asInstanceOf[authorizationCode]
   @scala.inline

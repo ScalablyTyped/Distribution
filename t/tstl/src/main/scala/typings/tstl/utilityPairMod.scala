@@ -3,7 +3,6 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable2
 import typings.tstl.functionalIComparableMod.IComparable
 import typings.tstl.utilityIPairMod.IPair
-import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.available
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.discoveringAvailability
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.unavailable
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

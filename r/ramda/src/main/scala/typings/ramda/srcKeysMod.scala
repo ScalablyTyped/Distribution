@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("ramda/src/keys", JSImport.Namespace)
 @js.native
 object srcKeysMod extends js.Object {
-  def default[T](x: T): js.Array[String] = js.native
+  def default[T /* <: js.Object */](x: T): js.Array[String] = js.native
   @JSName("default")
-  def default_T_Object[T /* <: js.Object */](x: T): js.Array[String] = js.native
+  def default_T[T](x: T): js.Array[String] = js.native
 }
 

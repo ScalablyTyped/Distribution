@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Exclusive
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Inclusive
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

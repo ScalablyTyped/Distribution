@@ -1,7 +1,5 @@
 package typings.domDashHelpers
 
-import typings.domDashHelpers.cjsAddEventListenerMod.EventHandler
-import typings.domDashHelpers.cjsAddEventListenerMod.TaggedEventHandler
 import typings.domDashHelpers.domDashHelpersStrings.abort
 import typings.domDashHelpers.domDashHelpersStrings.animationcancel
 import typings.domDashHelpers.domDashHelpersStrings.animationend

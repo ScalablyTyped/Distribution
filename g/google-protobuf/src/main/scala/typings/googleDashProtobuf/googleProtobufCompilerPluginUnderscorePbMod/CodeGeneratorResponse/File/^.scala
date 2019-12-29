@@ -28,6 +28,6 @@ object ^ extends js.Object {
   def toObject(
     includeInstance: Boolean,
     msg: typings.googleDashProtobuf.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponse.File
-  ): typings.googleDashProtobuf.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorResponse.File.AsObject = js.native
+  ): AsObject = js.native
 }
 

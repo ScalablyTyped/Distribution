@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.OpenAs.FULL_SIZE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.OpenAs.OVERLAY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

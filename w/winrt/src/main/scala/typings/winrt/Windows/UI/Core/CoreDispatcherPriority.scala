@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreDispatcherPriority.high
-import typings.winrt.Windows.UI.Core.CoreDispatcherPriority.low
-import typings.winrt.Windows.UI.Core.CoreDispatcherPriority.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort
-import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort.FREQUENCY
-import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort.SCORE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

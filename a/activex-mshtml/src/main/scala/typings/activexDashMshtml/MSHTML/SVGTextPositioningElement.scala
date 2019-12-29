@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGTextPositioningElement")
 @js.native
 class SVGTextPositioningElement protected () extends js.Object {
-  var `MSHTML.SVGTextPositioningElement_typekey`: SVGTextPositioningElement = js.native
+  @JSName("MSHTML.SVGTextPositioningElement_typekey")
+  var MSHTMLDotSVGTextPositioningElement_typekey: SVGTextPositioningElement = js.native
   val className: SVGAnimatedString = js.native
   var dx: SVGAnimatedLengthList = js.native
   var dy: SVGAnimatedLengthList = js.native

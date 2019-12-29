@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionFlags.BuiltIn
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionFlags.Trusted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

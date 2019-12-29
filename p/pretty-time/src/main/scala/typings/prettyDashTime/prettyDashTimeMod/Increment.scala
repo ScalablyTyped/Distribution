@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.prettyDashTime.prettyDashTimeStrings.nano
   - typings.prettyDashTime.prettyDashTimeStrings.nanosecond
   - typings.prettyDashTime.prettyDashTimeStrings.nanoseconds
-  - typings.prettyDashTime.prettyDashTimeStrings.BACKSLASHu03BCs
+  - typings.prettyDashTime.prettyDashTimeStrings.μs
   - typings.prettyDashTime.prettyDashTimeStrings.micro
   - typings.prettyDashTime.prettyDashTimeStrings.microsecond
   - typings.prettyDashTime.prettyDashTimeStrings.microseconds
@@ -40,8 +40,6 @@ import scala.scalajs.js.annotation._
 trait Increment extends js.Object
 
 object Increment {
-  @scala.inline
-  def BACKSLASHu03BCs: typings.prettyDashTime.prettyDashTimeStrings.BACKSLASHu03BCs = this.cast("\u03BCs")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
@@ -104,5 +102,7 @@ object Increment {
   def weeks: typings.prettyDashTime.prettyDashTimeStrings.weeks = this.cast("weeks")
   @scala.inline
   def wk: typings.prettyDashTime.prettyDashTimeStrings.wk = this.cast("wk")
+  @scala.inline
+  def μs: typings.prettyDashTime.prettyDashTimeStrings.μs = this.cast("\u03BCs")
 }
 

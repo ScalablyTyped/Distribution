@@ -1,10 +1,7 @@
 package typings.zipkin.zipkinMod
 
-import typings.zipkin.zipkinMod.option.INone
-import typings.zipkin.zipkinMod.option.IOption
-import typings.zipkin.zipkinMod.option.Option
-import typings.zipkin.zipkinNumbers.`false`
-import typings.zipkin.zipkinNumbers.`true`
+import typings.zipkin.zipkinBooleans.`false`
+import typings.zipkin.zipkinBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

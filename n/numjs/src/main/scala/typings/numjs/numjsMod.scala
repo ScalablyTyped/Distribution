@@ -3,11 +3,6 @@ package typings.numjs
 import typings.ndarray.ndarrayMod.Data
 import typings.ndarray.ndarrayMod.DataType
 import typings.ndarray.ndarrayMod.ndarray
-import typings.numjs.numjsMod.NdArray
-import typings.numjs.numjsMod.NdArrayData
-import typings.numjs.numjsMod.NdType
-import typings.numjs.numjsMod.NjArray
-import typings.numjs.numjsMod.NjParam
 import typings.std.Error
 import typings.std.Float32Array
 import typings.std.Float64Array

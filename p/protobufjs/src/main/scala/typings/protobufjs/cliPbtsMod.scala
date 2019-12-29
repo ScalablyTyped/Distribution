@@ -1,6 +1,5 @@
 package typings.protobufjs
 
-import typings.protobufjs.cliPbtsMod.pbtsCallback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

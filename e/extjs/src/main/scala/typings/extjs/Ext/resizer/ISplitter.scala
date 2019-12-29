@@ -11,7 +11,7 @@ trait ISplitter extends IComponent {
   /** [Config Option] (String/Ext.panel.Panel) */
   var collapseTarget: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var collapsedCls: js.UndefOr[java.lang.String] = js.undefined
+  var collapsedCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var collapsible: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Number) */
@@ -24,7 +24,7 @@ trait ISplitter extends IComponent {
   @JSName("onRender")
   var onRender_ISplitter: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (String) */
-  var orientation: js.UndefOr[java.lang.String] = js.undefined
+  var orientation: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var performCollapse: js.UndefOr[Boolean] = js.undefined
   /** [Method] Work around IE bug
@@ -42,13 +42,13 @@ object ISplitter {
     IComponent: IComponent = null,
     collapseOnDblClick: js.UndefOr[Boolean] = js.undefined,
     collapseTarget: js.Any = null,
-    collapsedCls: java.lang.String = null,
+    collapsedCls: String = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
     defaultSplitMax: Int | Double = null,
     defaultSplitMin: Int | Double = null,
     getTrackerConfig: () => Unit = null,
     onRender: () => Unit = null,
-    orientation: java.lang.String = null,
+    orientation: String = null,
     performCollapse: js.UndefOr[Boolean] = js.undefined,
     setSize: () => IComponent = null,
     size: Int | Double = null

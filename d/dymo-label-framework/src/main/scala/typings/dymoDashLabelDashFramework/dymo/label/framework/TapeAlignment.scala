@@ -1,9 +1,6 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Center
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Left
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

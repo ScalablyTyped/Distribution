@@ -1,6 +1,6 @@
 package typings.backboneDotMarionette.backboneDotMarionetteMod
 
-import typings.backboneDotMarionette.backboneDotMarionetteNumbers.`false`
+import typings.backboneDotMarionette.backboneDotMarionetteBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.cassandraDashDriver
 import org.scalablytyped.runtime.StringDictionary
 import typings.cassandraDashDriver.cassandraDashDriverMod.ExecutionOptions
 import typings.cassandraDashDriver.cassandraDashDriverMod.Host
-import typings.cassandraDashDriver.libTrackerMod.tracker.RequestTracker
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

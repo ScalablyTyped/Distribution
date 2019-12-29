@@ -10,7 +10,8 @@ class InfoPathEditorObject protected () extends js.Object {
   var DataConnectionBaseUrl: String = js.native
   var Host: js.Any = js.native
   var HostName: String = js.native
-  var `InfoPath.InfoPathEditorObject_typekey`: InfoPathEditorObject = js.native
+  @JSName("InfoPath.InfoPathEditorObject_typekey")
+  var InfoPathDotInfoPathEditorObject_typekey: InfoPathEditorObject = js.native
   val XDocument: _XDocument = js.native
   def CloseDocument(): Unit = js.native
   def FlushDocument(): Unit = js.native

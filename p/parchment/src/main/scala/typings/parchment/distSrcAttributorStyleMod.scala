@@ -1,6 +1,5 @@
 package typings.parchment
 
-import typings.parchment.distSrcAttributorStyleMod.StyleAttributor
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

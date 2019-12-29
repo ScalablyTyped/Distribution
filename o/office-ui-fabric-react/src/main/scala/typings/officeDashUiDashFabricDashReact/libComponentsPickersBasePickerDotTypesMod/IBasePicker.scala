@@ -12,7 +12,7 @@ trait IBasePicker[T] extends js.Object {
     * When called, will take the currently selected suggestion and complete it.
     * If called with forceComplete true, it will attempt to force the current suggestion
     * to complete, must provide both createGenericSuggestion, so the text can be turned into
-    * an object in the right shape,.and onValidateInput, so the object knows if it's correct or not.
+    * an object in the right shape, and onValidateInput, so the object knows if it's correct or not.
     */
   def completeSuggestion(): Unit = js.native
   def completeSuggestion(forceComplete: Boolean): Unit = js.native

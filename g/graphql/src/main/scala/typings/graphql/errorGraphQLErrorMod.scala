@@ -1,7 +1,6 @@
 package typings.graphql
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.errorGraphQLErrorMod.GraphQLError
 import typings.graphql.languageAstMod.ASTNode
 import typings.graphql.languageLocationMod.SourceLocation
 import typings.graphql.languageSourceMod.Source

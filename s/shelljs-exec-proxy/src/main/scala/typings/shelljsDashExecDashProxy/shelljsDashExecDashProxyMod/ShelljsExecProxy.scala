@@ -16,7 +16,7 @@ import typings.shelljs.shelljsMod.TailOptions
 import typings.shelljs.shelljsMod.TestOptions
 import typings.shelljs.shelljsMod.TouchOptionsArray
 import typings.shelljs.shelljsMod.TouchOptionsLiteral
-import typings.shelljsDashExecDashProxy.shelljsDashExecDashProxyStrings.`+N`
+import typings.shelljsDashExecDashProxy.shelljsDashExecDashProxyStrings.PlussignN
 import typings.shelljsDashExecDashProxy.shelljsDashExecDashProxyStrings.`-N`
 import typings.shelljsDashExecDashProxy.shelljsDashExecDashProxyStrings.`-c`
 import typings.std.RegExp
@@ -141,7 +141,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
   	 */
   @JSName("dirs")
-  def dirs_N(options: `+N`): ShellString = js.native
+  def dirs_N(options: PlussignN): ShellString = js.native
   /**
   	 * Displays the list of currently remembered directories.
   	 *
@@ -192,14 +192,14 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 */
   def exec(command: String, callback: ExecCallback): ChildProcess = js.native
   /**
-  	 * Executes the given command synchronously.
+  	 * Executes the given command.
   	 *
   	 * @param command The command to execute.
   	 * @param options Silence and synchronous options.
   	 * @return        Returns an object containing the return code and output as string,
   	 *                or if `{async: true}` was passed, a `ChildProcess`.
   	 */
-  def exec(command: String, options: ExecOptions with Anon_Async): ShellString = js.native
+  def exec(command: String, options: ExecOptions): ShellString | ChildProcess = js.native
   /**
   	 * Executes the given command synchronously.
   	 *
@@ -219,7 +219,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   @JSName("exec")
   def exec_ChildProcess(command: String, options: ExecOptions with Anon_AsyncTrue): ChildProcess = js.native
   /**
-  	 * Executes the given command.
+  	 * Executes the given command synchronously.
   	 *
   	 * @param command The command to execute.
   	 * @param options Silence and synchronous options.
@@ -227,7 +227,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 *                or if `{async: true}` was passed, a `ChildProcess`.
   	 */
   @JSName("exec")
-  def exec_Union(command: String, options: ExecOptions): ShellString | ChildProcess = js.native
+  def exec_ShellString(command: String, options: ExecOptions with Anon_Async): ShellString = js.native
   def exit(): scala.Nothing = js.native
   def exit(code: Double): scala.Nothing = js.native
   def find(path: String*): ShellArray = js.native
@@ -398,7 +398,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 * @return    Returns an array of paths in the stack.
   	 */
   @JSName("popd")
-  def popd_N(dir: `+N`): ShellArray = js.native
+  def popd_N(dir: PlussignN): ShellArray = js.native
   /**
   	 * When no arguments are given, popd removes the top directory from the stack
   	 * and performs a `cd` to the new top directory.
@@ -426,7 +426,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 * @return        Returns an array of paths in the stack.
   	 */
   @JSName("popd")
-  def popd_N(options: String, dir: `+N`): ShellArray = js.native
+  def popd_N(options: String, dir: PlussignN): ShellArray = js.native
   /**
   	 * When no arguments are given, popd removes the top directory from the stack
   	 * and performs a `cd` to the new top directory.
@@ -481,7 +481,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 * @return    Returns an array of paths in the stack.
   	 */
   @JSName("pushd")
-  def pushd_N(dir: `+N`): ShellArray = js.native
+  def pushd_N(dir: PlussignN): ShellArray = js.native
   /**
   	 * Saves the current directory on the top of the directory stack and then cd to dir.
   	 * With no arguments, `pushd` exchanges the top two directories.
@@ -505,7 +505,7 @@ trait ShelljsExecProxy extends /* k */ StringDictionary[Exec] {
   	 * @return        Returns an array of paths in the stack.
   	 */
   @JSName("pushd")
-  def pushd_N(options: String, dir: `+N`): ShellArray = js.native
+  def pushd_N(options: String, dir: PlussignN): ShellArray = js.native
   /**
   	 * Saves the current directory on the top of the directory stack and then cd to dir.
   	 * With no arguments, `pushd` exchanges the top two directories.

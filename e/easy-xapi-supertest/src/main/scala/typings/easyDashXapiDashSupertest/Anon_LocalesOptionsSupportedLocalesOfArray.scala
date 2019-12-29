@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_LocalesOptionsSupportedLocalesOfArray
   extends Instantiable0[Collator]
+     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), Collator]
      with Instantiable2[
       (/* locales */ js.Array[String]) | (/* locales */ String), 
       /* options */ CollatorOptions, 
       Collator
-    ]
-     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), Collator] {
+    ] {
   def apply(): Collator = js.native
   def apply(locales: String): Collator = js.native
   def apply(locales: String, options: CollatorOptions): Collator = js.native

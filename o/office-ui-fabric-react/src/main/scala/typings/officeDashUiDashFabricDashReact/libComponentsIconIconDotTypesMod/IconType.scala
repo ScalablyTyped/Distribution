@@ -1,10 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.Default
-import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.Image
-import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.default
-import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

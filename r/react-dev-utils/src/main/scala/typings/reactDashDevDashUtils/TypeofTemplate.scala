@@ -1,6 +1,6 @@
 package typings.reactDashDevDashUtils
 
-import typings.reactDashDevDashUtils.reactDashDevDashUtilsNumbers.`false`
+import typings.reactDashDevDashUtils.reactDashDevDashUtilsBooleans.`false`
 import typings.webpack.Anon_IdNumber
 import typings.webpack.webpackMod.compilation.Chunk
 import typings.webpack.webpackMod.compilation.Module

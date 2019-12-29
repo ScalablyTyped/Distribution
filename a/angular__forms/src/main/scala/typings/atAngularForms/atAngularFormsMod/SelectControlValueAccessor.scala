@@ -24,7 +24,7 @@ class SelectControlValueAccessor protected () extends ControlValueAccessor {
     * @description
     * The registered callback function called when a change event occurs on the input element.
     */
-  def onChange(`_`: js.Any): Unit = js.native
+  def onChange(_underscore: js.Any): Unit = js.native
   /**
     * @description
     * The registered callback function called when a blur event occurs on the input element.

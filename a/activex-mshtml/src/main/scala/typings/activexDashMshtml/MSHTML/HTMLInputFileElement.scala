@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLInputFileElement")
 @js.native
 class HTMLInputFileElement protected () extends js.Object {
-  var `MSHTML.HTMLInputFileElement_typekey`: HTMLInputFileElement = js.native
+  @JSName("MSHTML.HTMLInputFileElement_typekey")
+  var MSHTMLDotHTMLInputFileElement_typekey: HTMLInputFileElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   val children: js.Any = js.native

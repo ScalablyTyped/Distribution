@@ -1,12 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Bottom
-import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Center
-import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Inside
-import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.None
-import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Outside
-import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

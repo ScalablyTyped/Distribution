@@ -1,8 +1,6 @@
 package typings.ol.interactionDrawMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.interactionDrawMod.DrawEventType.DRAWEND
-import typings.ol.interactionDrawMod.DrawEventType.DRAWSTART
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

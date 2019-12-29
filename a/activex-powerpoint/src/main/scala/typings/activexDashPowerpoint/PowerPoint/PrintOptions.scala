@@ -18,7 +18,8 @@ class PrintOptions protected () extends js.Object {
   var NumberOfCopies: Double = js.native
   var OutputType: PpPrintOutputType = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.PrintOptions_typekey`: PrintOptions = js.native
+  @JSName("PowerPoint.PrintOptions_typekey")
+  var PowerPointDotPrintOptions_typekey: PrintOptions = js.native
   var PrintColorType: PpPrintColorType = js.native
   var PrintComments: MsoTriState = js.native
   var PrintFontsAsGraphics: MsoTriState = js.native

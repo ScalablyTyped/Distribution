@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.CommandButton")
 @js.native
 class CommandButton protected () extends js.Object {
-  var `Access.CommandButton_typekey`: CommandButton = js.native
+  @JSName("Access.CommandButton_typekey")
+  var AccessDotCommandButton_typekey: CommandButton = js.native
   var AddColon: Boolean = js.native
   var AfterUpdateMacro: String = js.native
   var Alignment: Double = js.native

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Proxy extends js.Object {
-  var connection: typings.signalr.SignalR.Hub.Connection
+  var connection: Connection
   var hubName: String
   var state: js.Any
   def hasSubscriptions(): Boolean
-  def init(connection: typings.signalr.SignalR.Hub.Connection, hubName: String): Unit
+  def init(connection: Connection, hubName: String): Unit
   /**
     * Invokes a server hub method with the given arguments.
     *
@@ -36,10 +36,10 @@ trait Proxy extends js.Object {
 object Proxy {
   @scala.inline
   def apply(
-    connection: typings.signalr.SignalR.Hub.Connection,
+    connection: Connection,
     hasSubscriptions: () => Boolean,
     hubName: String,
-    init: (typings.signalr.SignalR.Hub.Connection, String) => Unit,
+    init: (Connection, String) => Unit,
     invoke: (String, /* repeated */ js.Any) => JQueryPromise[_],
     off: (String, js.Function1[/* repeated */ js.Any, Unit]) => Proxy,
     on: (String, js.Function1[/* repeated */ js.Any, Unit]) => Proxy,

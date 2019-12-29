@@ -1,7 +1,5 @@
 package typings.ethers
 
-import typings.ethers.distTypesProvidersJsonDashRpcDashProviderMod.JsonRpcProvider
-import typings.ethers.distTypesProvidersJsonDashRpcDashProviderMod.JsonRpcSigner
 import typings.ethers.distTypesProvidersProviderMod.Provider
 import typings.ethers.distTypesUtilsTypesMod.BigNumber
 import typings.ethers.distTypesUtilsTypesMod.BlockTag

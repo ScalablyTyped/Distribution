@@ -2,7 +2,6 @@ package typings.atMaterialMenuDashSurface
 
 import typings.atMaterialBase.componentMod.MDCComponent
 import typings.atMaterialBase.foundationMod.default
-import typings.atMaterialMenuDashSurface.componentMod.MDCMenuSurface
 import typings.atMaterialMenuDashSurface.constantsMod.Corner
 import typings.atMaterialMenuDashSurface.foundationMod.MDCMenuSurfaceFoundation
 import typings.atMaterialMenuDashSurface.typesMod.MDCMenuDistance

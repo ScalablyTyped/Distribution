@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapBufferAccessMode.read
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapBufferAccessMode.readWrite
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapBufferAccessMode.write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

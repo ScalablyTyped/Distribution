@@ -1,10 +1,10 @@
 package typings.greasemonkey.GM
 
+import typings.greasemonkey.greasemonkeyBooleans.`false`
 import typings.greasemonkey.greasemonkeyNumbers.`1`
 import typings.greasemonkey.greasemonkeyNumbers.`2`
 import typings.greasemonkey.greasemonkeyNumbers.`3`
 import typings.greasemonkey.greasemonkeyNumbers.`4`
-import typings.greasemonkey.greasemonkeyNumbers.`false`
 import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,5 @@
 package typings.parchment
 
-import typings.parchment.distSrcBlotTextMod.TextBlot
 import typings.parchment.distSrcRegistryMod.Scope
 import typings.std.Node
 import typings.std.Text

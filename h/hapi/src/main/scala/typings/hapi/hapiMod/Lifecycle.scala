@@ -1,10 +1,6 @@
 package typings.hapi.hapiMod
 
 import typings.boom.boomMod.^
-import typings.hapi.hapiMod.Lifecycle.Method
-import typings.hapi.hapiMod.Lifecycle.ReturnValue
-import typings.hapi.hapiMod.Lifecycle.ReturnValueTypes
-import typings.hapi.hapiMod.Lifecycle._FailAction
 import typings.node.Buffer
 import typings.node.streamMod.Stream
 import typings.std.Error

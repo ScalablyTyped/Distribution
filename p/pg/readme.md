@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg
 
-Typings are for version 7.11
+Typings are for version 7.14
 
 ## Library description:
 PostgreSQL client - pure javascript & libpq with the same API

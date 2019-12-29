@@ -98,7 +98,7 @@ class DomEvent protected () extends js.Object {
     * Gets the name of the event that was raised.
     * @return A string that represents the name of the event that was raised.
     */
-  var `type`: java.lang.String = js.native
+  var `type`: String = js.native
   /**
     * Prevents the default DOM event action from happening.
     * Use the preventDefault method to prevent the default event action for the browser from occurring.
@@ -134,10 +134,10 @@ object DomEvent extends js.Object {
     * @param autoRemove
     *          (Optional) A boolean value that determines whether the handler should be removed automatically when the element is disposed.
     */
-  def addHandler(element: HTMLElement, eventName: java.lang.String, handler: js.Function1[/* e */ this.type, Unit]): Unit = js.native
+  def addHandler(element: HTMLElement, eventName: String, handler: js.Function1[/* e */ this.type, Unit]): Unit = js.native
   def addHandler(
     element: HTMLElement,
-    eventName: java.lang.String,
+    eventName: String,
     handler: js.Function1[/* e */ this.type, Unit],
     autoRemove: Boolean
   ): Unit = js.native
@@ -193,6 +193,6 @@ object DomEvent extends js.Object {
     * @param handler
     *          The event handler to remove.
     */
-  def removeHandler(element: HTMLElement, eventName: java.lang.String, handler: js.Function1[/* e */ this.type, Unit]): Unit = js.native
+  def removeHandler(element: HTMLElement, eventName: String, handler: js.Function1[/* e */ this.type, Unit]): Unit = js.native
 }
 

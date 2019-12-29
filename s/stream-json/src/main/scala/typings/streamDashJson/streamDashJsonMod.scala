@@ -2,8 +2,6 @@ package typings.streamDashJson
 
 import typings.streamDashJson.parserMod.ParserOptions
 import typings.streamDashJson.parserMod.^
-import typings.streamDashJson.streamDashJsonMod.ParserClass
-import typings.streamDashJson.streamDashJsonMod.ParserType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

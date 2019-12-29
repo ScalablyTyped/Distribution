@@ -1,9 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.SelectionMode.multi
-import typings.winjs.WinJS.UI.SelectionMode.none
-import typings.winjs.WinJS.UI.SelectionMode.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassListView
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ListView]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), ListView] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), ListView]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ListView] {
   var Locale: js.Any = js.native
   var fn: ListView = js.native
 }

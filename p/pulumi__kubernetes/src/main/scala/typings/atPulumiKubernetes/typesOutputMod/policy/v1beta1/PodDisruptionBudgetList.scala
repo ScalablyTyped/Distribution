@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.policy.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`policy/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.policySlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait PodDisruptionBudgetList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `policy/v1beta1`
+  val apiVersion: policySlashv1beta1
   val items: js.Array[PodDisruptionBudget]
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
@@ -31,7 +31,7 @@ trait PodDisruptionBudgetList extends js.Object {
 object PodDisruptionBudgetList {
   @scala.inline
   def apply(
-    apiVersion: `policy/v1beta1`,
+    apiVersion: policySlashv1beta1,
     items: js.Array[PodDisruptionBudget],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodDisruptionBudgetList,
     metadata: ListMeta

@@ -1,5 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.SunburstChart
 
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.Animation
 import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ trait Model extends js.Object {
   /** Animation type of sunburst
     * @Default {rotation. See Alignment}
     */
-  var animationType: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Sunburst.Animation | String] = js.undefined
+  var animationType: js.UndefOr[Animation | String] = js.undefined
   /** Background color of the plot area.
     * @Default {null}
     */
@@ -136,7 +137,7 @@ trait Model extends js.Object {
   var titleRendering: js.UndefOr[js.Function1[/* e */ TitleRenderingEventArgs, Unit]] = js.undefined
   /** Options to customize the Sunburst tooltip.
     */
-  var tooltip: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.SunburstChart.Tooltip] = js.undefined
+  var tooltip: js.UndefOr[Tooltip] = js.undefined
   /** Fires during initialization of tooltip.
     */
   var tooltipInitialize: js.UndefOr[js.Function1[/* e */ TooltipInitializeEventArgs, Unit]] = js.undefined
@@ -165,7 +166,7 @@ object Model {
   @scala.inline
   def apply(
     Click: /* e */ ClickEventArgs => Unit = null,
-    animationType: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.Animation | String = null,
+    animationType: Animation | String = null,
     background: String = null,
     border: Border = null,
     dataLabelRendering: /* e */ DataLabelRenderingEventArgs => Unit = null,
@@ -202,7 +203,7 @@ object Model {
     theme: SunburstTheme | String = null,
     title: Title = null,
     titleRendering: /* e */ TitleRenderingEventArgs => Unit = null,
-    tooltip: typings.ejDotWebDotAll.ej.datavisualization.SunburstChart.Tooltip = null,
+    tooltip: Tooltip = null,
     tooltipInitialize: /* e */ TooltipInitializeEventArgs => Unit = null,
     valueMemberPath: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,

@@ -1,9 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.StreetViewStatus.OK
-import typings.googlemaps.google.maps.StreetViewStatus.UNKNOWN_ERROR
-import typings.googlemaps.google.maps.StreetViewStatus.ZERO_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

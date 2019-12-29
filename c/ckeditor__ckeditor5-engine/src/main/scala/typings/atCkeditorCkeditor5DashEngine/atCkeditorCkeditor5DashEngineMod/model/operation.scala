@@ -1,8 +1,6 @@
 package typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.model
 
 import typings.atCkeditorCkeditor5DashEngine.Anon_Document
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.model.operation.Operation
-import typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineMod.model.operation.TransformationContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

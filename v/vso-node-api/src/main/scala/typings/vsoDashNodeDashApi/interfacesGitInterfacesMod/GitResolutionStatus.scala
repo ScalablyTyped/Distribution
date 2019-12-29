@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.PartiallyResolved
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.Resolved
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.Unresolved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,13 +12,13 @@ trait IDragDrop extends IAbstractPlugin {
   /** [Config Option] (Object/Boolean) */
   var containerScroll: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var ddGroup: js.UndefOr[java.lang.String] = js.undefined
+  var ddGroup: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dragGroup: js.UndefOr[java.lang.String] = js.undefined
+  var dragGroup: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dragText: js.UndefOr[java.lang.String] = js.undefined
+  var dragText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dropGroup: js.UndefOr[java.lang.String] = js.undefined
+  var dropGroup: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var enableDrag: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -41,24 +41,24 @@ object IDragDrop {
     clonePlugin: /* overrideCfg */ js.UndefOr[js.Any] => Unit = null,
     config: js.Any = null,
     containerScroll: js.Any = null,
-    ddGroup: java.lang.String = null,
+    ddGroup: String = null,
     destroy: () => Unit = null,
     disable: () => Unit = null,
-    dragGroup: java.lang.String = null,
-    dragText: java.lang.String = null,
-    dropGroup: java.lang.String = null,
+    dragGroup: String = null,
+    dragText: String = null,
+    dropGroup: String = null,
     enable: () => Unit = null,
     enableDrag: js.UndefOr[Boolean] = js.undefined,
     enableDrop: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     getCmp: () => IComponent = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     init: /* view */ js.UndefOr[js.Any] => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IDragDrop = null,
     isPlugin: js.UndefOr[Boolean] = js.undefined,
     mixins: js.Any = null,
-    pluginId: java.lang.String = null,
+    pluginId: String = null,
     requires: Array = null,
     self: IClass = null,
     setCmp: /* cmp */ js.UndefOr[IComponent] => Unit = null,

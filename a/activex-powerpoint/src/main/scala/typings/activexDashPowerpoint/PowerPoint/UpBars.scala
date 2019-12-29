@@ -15,7 +15,8 @@ class UpBars protected () extends js.Object {
   val Interior: typings.activexDashPowerpoint.PowerPoint.Interior = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.UpBars_typekey`: UpBars = js.native
+  @JSName("PowerPoint.UpBars_typekey")
+  var PowerPointDotUpBars_typekey: UpBars = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native
 }

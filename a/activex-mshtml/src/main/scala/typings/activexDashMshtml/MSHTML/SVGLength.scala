@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGLength")
 @js.native
 class SVGLength protected () extends js.Object {
-  var `MSHTML.SVGLength_typekey`: SVGLength = js.native
+  @JSName("MSHTML.SVGLength_typekey")
+  var MSHTMLDotSVGLength_typekey: SVGLength = js.native
   var unitType: Double = js.native
   var value: Double = js.native
   var valueAsString: String = js.native

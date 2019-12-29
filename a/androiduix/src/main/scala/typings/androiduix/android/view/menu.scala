@@ -3,7 +3,6 @@ package typings.androiduix.android.view
 import typings.androiduix.android.content.Context
 import typings.androiduix.android.view.View.OnKeyListener
 import typings.androiduix.android.view.ViewTreeObserver.OnGlobalLayoutListener
-import typings.androiduix.android.view.menu.MenuPopupHelper
 import typings.androiduix.android.widget.AdapterView
 import typings.androiduix.android.widget.AdapterView.OnItemClickListener
 import typings.androiduix.android.widget.BaseAdapter

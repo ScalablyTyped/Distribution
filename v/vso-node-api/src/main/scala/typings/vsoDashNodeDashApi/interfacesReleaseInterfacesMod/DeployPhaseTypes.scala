@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseTypes.AgentBasedDeployment
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseTypes.MachineGroupBasedDeployment
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseTypes.RunOnServer
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeployPhaseTypes.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

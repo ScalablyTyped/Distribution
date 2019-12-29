@@ -11,7 +11,8 @@ class ListParagraphs protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ListParagraphs_typekey`: ListParagraphs = js.native
+  @JSName("Word.ListParagraphs_typekey")
+  var WordDotListParagraphs_typekey: ListParagraphs = js.native
   def Item(Index: Double): Paragraph = js.native
 }
 

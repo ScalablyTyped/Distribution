@@ -91,17 +91,6 @@ object stdStrings {
   sealed trait Embedded extends MSTransportType
   
   @js.native
-  sealed trait Empty
-    extends CanPlayTypeResult
-       with DirectionSetting
-       with GamepadHand
-       with GamepadMappingType
-       with ReferrerPolicy
-       with RequestDestination
-       with ScrollSetting
-       with XMLHttpRequestResponseType
-  
-  @js.native
   sealed trait ErrorEvent extends js.Object
   
   @js.native
@@ -486,6 +475,17 @@ object stdStrings {
   sealed trait WheelEvent extends js.Object
   
   @js.native
+  sealed trait _empty
+    extends CanPlayTypeResult
+       with DirectionSetting
+       with GamepadHand
+       with GamepadMappingType
+       with ReferrerPolicy
+       with RequestDestination
+       with ScrollSetting
+       with XMLHttpRequestResponseType
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -596,10 +596,10 @@ object stdStrings {
   sealed trait application extends DisplayCaptureSurfaceType
   
   @js.native
-  sealed trait `application/xhtml+xml` extends SupportedType
+  sealed trait applicationSlashxhtmlPlussignxml extends SupportedType
   
   @js.native
-  sealed trait `application/xml` extends SupportedType
+  sealed trait applicationSlashxml extends SupportedType
   
   @js.native
   sealed trait area extends js.Object
@@ -1505,10 +1505,10 @@ object stdStrings {
   sealed trait html extends js.Object
   
   @js.native
-  sealed trait `http://wwwDOTw3DOTorg/1999/xhtml` extends js.Object
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends js.Object
   
   @js.native
-  sealed trait `http://wwwDOTw3DOTorg/2000/svg` extends js.Object
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg extends js.Object
   
   @js.native
   sealed trait i extends js.Object
@@ -1568,7 +1568,7 @@ object stdStrings {
   sealed trait image extends RequestDestination
   
   @js.native
-  sealed trait `image/svg+xml` extends SupportedType
+  sealed trait imageSlashsvgPlussignxml extends SupportedType
   
   @js.native
   sealed trait img extends js.Object
@@ -2744,13 +2744,13 @@ object stdStrings {
   sealed trait `text-too-long` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait `text/html` extends SupportedType
-  
-  @js.native
-  sealed trait `text/xml` extends SupportedType
-  
-  @js.native
   sealed trait textPath extends js.Object
+  
+  @js.native
+  sealed trait textSlashhtml extends SupportedType
+  
+  @js.native
+  sealed trait textSlashxml extends SupportedType
   
   @js.native
   sealed trait textarea extends js.Object
@@ -3074,8 +3074,6 @@ object stdStrings {
   @scala.inline
   def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def ErrorEvent: ErrorEvent = "ErrorEvent".asInstanceOf[ErrorEvent]
   @scala.inline
   def Event: Event = "Event".asInstanceOf[Event]
@@ -3332,6 +3330,8 @@ object stdStrings {
   @scala.inline
   def WheelEvent: WheelEvent = "WheelEvent".asInstanceOf[WheelEvent]
   @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def `a-rate`: `a-rate` = "a-rate".asInstanceOf[`a-rate`]
@@ -3398,9 +3398,9 @@ object stdStrings {
   @scala.inline
   def application: application = "application".asInstanceOf[application]
   @scala.inline
-  def `application/xhtml+xml`: `application/xhtml+xml` = "application/xhtml+xml".asInstanceOf[`application/xhtml+xml`]
+  def applicationSlashxhtmlPlussignxml: applicationSlashxhtmlPlussignxml = "application/xhtml+xml".asInstanceOf[applicationSlashxhtmlPlussignxml]
   @scala.inline
-  def `application/xml`: `application/xml` = "application/xml".asInstanceOf[`application/xml`]
+  def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   @scala.inline
@@ -3942,9 +3942,9 @@ object stdStrings {
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
-  def `http://wwwDOTw3DOTorg/1999/xhtml`: `http://wwwDOTw3DOTorg/1999/xhtml` = "http://www.w3.org/1999/xhtml".asInstanceOf[`http://wwwDOTw3DOTorg/1999/xhtml`]
+  def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
   @scala.inline
-  def `http://wwwDOTw3DOTorg/2000/svg`: `http://wwwDOTw3DOTorg/2000/svg` = "http://www.w3.org/2000/svg".asInstanceOf[`http://wwwDOTw3DOTorg/2000/svg`]
+  def httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg = "http://www.w3.org/2000/svg".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg]
   @scala.inline
   def i: i = "i".asInstanceOf[i]
   @scala.inline
@@ -3984,7 +3984,7 @@ object stdStrings {
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
-  def `image/svg+xml`: `image/svg+xml` = "image/svg+xml".asInstanceOf[`image/svg+xml`]
+  def imageSlashsvgPlussignxml: imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[imageSlashsvgPlussignxml]
   @scala.inline
   def img: img = "img".asInstanceOf[img]
   @scala.inline
@@ -4710,11 +4710,11 @@ object stdStrings {
   @scala.inline
   def `text-too-long`: `text-too-long` = "text-too-long".asInstanceOf[`text-too-long`]
   @scala.inline
-  def `text/html`: `text/html` = "text/html".asInstanceOf[`text/html`]
-  @scala.inline
-  def `text/xml`: `text/xml` = "text/xml".asInstanceOf[`text/xml`]
-  @scala.inline
   def textPath: textPath = "textPath".asInstanceOf[textPath]
+  @scala.inline
+  def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
+  @scala.inline
+  def textSlashxml: textSlashxml = "text/xml".asInstanceOf[textSlashxml]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline

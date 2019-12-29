@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class SearchScope protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
-  var `Office.SearchScope_typekey`: SearchScope = js.native
+  @JSName("Office.SearchScope_typekey")
+  var OfficeDotSearchScope_typekey: SearchScope = js.native
   val ScopeFolder: typings.activexDashOffice.Office.ScopeFolder = js.native
   val Type: MsoSearchIn = js.native
 }

@@ -2,7 +2,6 @@ package typings.rxjs.internalObservableSubscribeOnObservableMod
 
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.internalSubscriptionMod.Subscription
-import typings.rxjs.internalTypesMod.SchedulerAction
 import typings.rxjs.internalTypesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,6 +28,6 @@ object SubscribeOnObservable extends js.Object {
   def create[T](source: Observable[T], delay: Double): Observable[T] = js.native
   def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = js.native
   /** @nocollapse */
-  def dispatch[T](`this`: SchedulerAction[T], arg: DispatchArg[T]): Subscription = js.native
+  def dispatch[T](arg: DispatchArg[T]): Subscription = js.native
 }
 

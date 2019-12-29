@@ -13,7 +13,8 @@ class SharedWorkspaceMember protected () extends js.Object {
   val Email: String = js.native
   val Id: String = js.native
   val Name: String = js.native
-  var `Office.SharedWorkspaceMember_typekey`: SharedWorkspaceMember = js.native
+  @JSName("Office.SharedWorkspaceMember_typekey")
+  var OfficeDotSharedWorkspaceMember_typekey: SharedWorkspaceMember = js.native
   val Parent: js.Any = js.native
   def Delete(): Unit = js.native
 }

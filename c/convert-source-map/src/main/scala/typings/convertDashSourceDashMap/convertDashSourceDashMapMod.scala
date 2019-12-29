@@ -1,6 +1,5 @@
 package typings.convertDashSourceDashMap
 
-import typings.convertDashSourceDashMap.convertDashSourceDashMapMod.SourceMapConverter
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("jasmine", JSImport.Namespace)
 @js.native
-class ^ protected ()
-  extends typings.jasmine.jasmineMod.jasmine {
+class ^ protected () extends jasmine {
   def this(options: js.Any) = this()
 }
 

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Protocols
-  extends Instantiable2[
+  extends Instantiable1[/* url */ String, WebSocket]
+     with Instantiable2[
       /* url */ String, 
       (/* protocols */ js.Array[String]) | (/* protocols */ String), 
       WebSocket
     ]
-     with Instantiable1[/* url */ String, WebSocket]
 

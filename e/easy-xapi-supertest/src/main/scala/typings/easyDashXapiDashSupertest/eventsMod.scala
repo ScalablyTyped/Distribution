@@ -1,6 +1,5 @@
 package typings.easyDashXapiDashSupertest
 
-import typings.easyDashXapiDashSupertest.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

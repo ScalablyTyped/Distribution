@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sparkline
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sparkline.FontWeight.Bold
-import typings.ejDotWebDotAll.ej.Sparkline.FontWeight.Lighter
-import typings.ejDotWebDotAll.ej.Sparkline.FontWeight.Regular
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

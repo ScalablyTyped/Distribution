@@ -1,5 +1,6 @@
 package typings.chromeDashApps.chrome.app
 
+import typings.chromeDashApps.chromeDashAppsStrings.chrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,17 +29,12 @@ trait FrameOptionsChrome extends js.Object {
     * For none, the -webkit-app-region CSS property can be used to apply draggability to the app's window.
     * -webkit-app-region: drag can be used to mark regions draggable. no-drag can be used to disable this style on nested elements.
     */
-  var `type`: typings.chromeDashApps.chromeDashAppsStrings.chrome
+  var `type`: chrome
 }
 
 object FrameOptionsChrome {
   @scala.inline
-  def apply(
-    `type`: typings.chromeDashApps.chromeDashAppsStrings.chrome,
-    activeColor: String = null,
-    color: String = null,
-    inactiveColor: String = null
-  ): FrameOptionsChrome = {
+  def apply(`type`: chrome, activeColor: String = null, color: String = null, inactiveColor: String = null): FrameOptionsChrome = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor.asInstanceOf[js.Any])

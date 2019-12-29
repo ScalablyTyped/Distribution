@@ -1,11 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType.custom
-import typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType.email
-import typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType.instantMessage
-import typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType.location
-import typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType.phoneNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

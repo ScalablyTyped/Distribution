@@ -1,25 +1,24 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait geometryEngineAsync extends js.Object {
-  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: js.Array[Geometry], distance: Double, unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: js.Array[Geometry], distance: Double, unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: js.Array[Geometry], distance: Double, unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: js.Array[Geometry], distance: Double, unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: Geometry, distance: js.Array[Double], unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: Geometry, distance: js.Array[Double], unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: Geometry, distance: js.Array[Double], unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: Geometry, distance: js.Array[Double], unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: Double, unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: Double, unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: Double, unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: js.Array[Geometry], distance: Double, unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: js.Array[Double], unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: js.Array[Double], unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: js.Array[Double], unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: js.Array[Double], unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
   /**
     * Creates planar (or Euclidean) buffer polygons at a specified distance around the input geometries.  The GeometryEngine has two methods for buffering geometries client-side: buffer and [geodesicBuffer](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicBuffer). Use caution when deciding which method to use. As a general rule, use [geodesicBuffer](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicBuffer) if the input geometries have a spatial reference of either WGS84 (wkid: 4326) or [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator). Only use buffer (this method) when attempting to buffer geometries with a [projected coordinate system](https://developers.arcgis.com/rest/services-reference/projected-coordinate-systems.htm) other than Web Mercator. If you need to buffer geometries with a [geographic coordinate system](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm) other than WGS84 (wkid: 4326), use [GeometryService.buffer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#buffer).
     *
@@ -31,10 +30,10 @@ trait geometryEngineAsync extends js.Object {
     * @param unionResults Determines whether the output geometries should be unioned into a single polygon.
     *
     */
-  def buffer(geometry: Geometry, distance: Double, unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: Geometry, distance: Double, unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: Geometry, distance: Double, unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def buffer(geometry: Geometry, distance: Double, unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: Double, unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: Double, unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: Double, unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def buffer(geometry: Geometry, distance: Double, unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
   /**
     * Calculates the clipped geometry from a target geometry by an envelope.
     *
@@ -44,7 +43,7 @@ trait geometryEngineAsync extends js.Object {
     * @param envelope The envelope used to clip.
     *
     */
-  def clip(geometry: Geometry, envelope: Extent): IPromise[Geometry] = js.native
+  def clip(geometry: Geometry, envelope: Extent): js.Promise[Geometry] = js.native
   /**
     * Indicates if one geometry contains another geometry.
     *
@@ -54,7 +53,7 @@ trait geometryEngineAsync extends js.Object {
     * @param insideGeometry The geometry that is tested for the "within" relationship to the `containerGeometry`.
     *
     */
-  def contains(containerGeometry: Geometry, insideGeometry: Geometry): IPromise[Boolean] = js.native
+  def contains(containerGeometry: Geometry, insideGeometry: Geometry): js.Promise[Boolean] = js.native
   /**
     * Calculates the convex hull of the input geometry. A convex hull is the smallest convex polygon that encloses a group of Objects, such as points. The input geometry can be a point, multipoint, polyline or polygon. The hull is typically a polygon but can also be a polyline or point in degenerate cases.
     *
@@ -64,8 +63,8 @@ trait geometryEngineAsync extends js.Object {
     * @param merge Dictates whether to merge output geometries.
     *
     */
-  def convexHull(geometry: Geometry): IPromise[Geometry] = js.native
-  def convexHull(geometry: Geometry, merge: Boolean): IPromise[Geometry] = js.native
+  def convexHull(geometry: Geometry): js.Promise[Geometry] = js.native
+  def convexHull(geometry: Geometry, merge: Boolean): js.Promise[Geometry] = js.native
   /**
     * Indicates if one geometry crosses another geometry.
     *
@@ -75,7 +74,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry2 The geometry being crossed.
     *
     */
-  def crosses(geometry1: Geometry, geometry2: Geometry): IPromise[Boolean] = js.native
+  def crosses(geometry1: Geometry, geometry2: Geometry): js.Promise[Boolean] = js.native
   /**
     * Split the input Polyline or Polygon where it crosses a cutting Polyline. For Polylines, all left cuts are grouped together in the first Geometry. Right cuts and coincident cuts are grouped in the second Geometry and each undefined cut, along with any uncut parts, are output as separate Polylines. For Polygons, all left cuts are grouped in the first Polygon, all right cuts are grouped in the second Polygon, and each undefined cut, along with any left-over parts after cutting, are output as a separate Polygon. If no cuts are returned then the array will be empty. An undefined cut will only be produced if a left cut or right cut was produced and there was a part left over after cutting, or a cut is bounded to the left and right of the cutter.
     *
@@ -85,7 +84,7 @@ trait geometryEngineAsync extends js.Object {
     * @param cutter The polyline to cut the geometry.
     *
     */
-  def cut(geometry: Geometry, cutter: Polyline): IPromise[js.Array[Geometry]] = js.native
+  def cut(geometry: Geometry, cutter: Polyline): js.Promise[js.Array[Geometry]] = js.native
   /**
     * Densify geometries by plotting points between existing vertices.
     *
@@ -96,9 +95,9 @@ trait geometryEngineAsync extends js.Object {
     * @param maxSegmentLengthUnit Measurement unit for maxSegmentLength. Defaults to the units of the input geometry. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
-  def densify(geometry: Geometry, maxSegmentLength: Double, maxSegmentLengthUnit: String): IPromise[Geometry] = js.native
-  def densify(geometry: Geometry, maxSegmentLength: Double, maxSegmentLengthUnit: Double): IPromise[Geometry] = js.native
-  def difference(inputGeometry: js.Array[Geometry], subtractor: Geometry): IPromise[Geometry] = js.native
+  def densify(geometry: Geometry, maxSegmentLength: Double, maxSegmentLengthUnit: String): js.Promise[Geometry] = js.native
+  def densify(geometry: Geometry, maxSegmentLength: Double, maxSegmentLengthUnit: Double): js.Promise[Geometry] = js.native
+  def difference(inputGeometry: js.Array[Geometry], subtractor: Geometry): js.Promise[Geometry] = js.native
   /**
     * Creates the difference of two geometries. The resultant geometry is the portion of inputGeometry not in the subtractor. The dimension of the subtractor has to be equal to or greater than that of the inputGeometry.
     *
@@ -108,7 +107,7 @@ trait geometryEngineAsync extends js.Object {
     * @param subtractor The geometry being subtracted from inputGeometry.
     *
     */
-  def difference(inputGeometry: Geometry, subtractor: Geometry): IPromise[Geometry] = js.native
+  def difference(inputGeometry: Geometry, subtractor: Geometry): js.Promise[Geometry] = js.native
   /**
     * Indicates if one geometry is disjoint (doesn't intersect in any way) with another geometry.
     *
@@ -118,7 +117,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry2 The comparison geometry that is tested for the "disjoint" relationship to the other geometry.
     *
     */
-  def disjoint(geometry1: Geometry, geometry2: Geometry): IPromise[Boolean] = js.native
+  def disjoint(geometry1: Geometry, geometry2: Geometry): js.Promise[Boolean] = js.native
   /**
     * Calculates the shortest planar distance between two geometries. Distance is reported in the linear units specified by `distanceUnit` or, if `distanceUnit` is null, the units of the spatialReference of input geometry.
     * > To calculate the geodesic distance between two points, first construct a [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) using the two points of interest as the beginning and ending points of a single path. Then use the polyline as input for the [geodesicLength()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicLength) method.
@@ -130,8 +129,8 @@ trait geometryEngineAsync extends js.Object {
     * @param distanceUnit Measurement unit of the return value. Defaults to the units of the input geometries. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
-  def distance(geometry1: Geometry, geometry2: Geometry, distanceUnit: String): IPromise[Double] = js.native
-  def distance(geometry1: Geometry, geometry2: Geometry, distanceUnit: Double): IPromise[Double] = js.native
+  def distance(geometry1: Geometry, geometry2: Geometry, distanceUnit: String): js.Promise[Double] = js.native
+  def distance(geometry1: Geometry, geometry2: Geometry, distanceUnit: Double): js.Promise[Double] = js.native
   /**
     * Indicates if two geometries are equal.
     *
@@ -141,7 +140,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry2 Second input geometry.
     *
     */
-  def equals(geometry1: Geometry, geometry2: Geometry): IPromise[Boolean] = js.native
+  def equals(geometry1: Geometry, geometry2: Geometry): js.Promise[Boolean] = js.native
   /**
     * Returns an Object containing additional information about the input spatial reference.
     *
@@ -150,7 +149,7 @@ trait geometryEngineAsync extends js.Object {
     * @param spatialReference The input spatial reference.
     *
     */
-  def extendedSpatialReferenceInfo(spatialReference: SpatialReference): IPromise[_] = js.native
+  def extendedSpatialReferenceInfo(spatialReference: SpatialReference): js.Promise[_] = js.native
   /**
     * Flips a geometry on the horizontal axis. Can optionally be flipped around a point.
     *
@@ -160,8 +159,8 @@ trait geometryEngineAsync extends js.Object {
     * @param flipOrigin Point to flip the geometry around. Defaults to the centroid of the geometry.
     *
     */
-  def flipHorizontal(geometry: Geometry): IPromise[Geometry] = js.native
-  def flipHorizontal(geometry: Geometry, flipOrigin: Point): IPromise[Geometry] = js.native
+  def flipHorizontal(geometry: Geometry): js.Promise[Geometry] = js.native
+  def flipHorizontal(geometry: Geometry, flipOrigin: Point): js.Promise[Geometry] = js.native
   /**
     * Flips a geometry on the vertical axis. Can optionally be flipped around a point.
     *
@@ -171,8 +170,8 @@ trait geometryEngineAsync extends js.Object {
     * @param flipOrigin Point to flip the geometry around. Defaults to the centroid of the geometry.
     *
     */
-  def flipVertical(geometry: Geometry): IPromise[Geometry] = js.native
-  def flipVertical(geometry: Geometry, flipOrigin: Point): IPromise[Geometry] = js.native
+  def flipVertical(geometry: Geometry): js.Promise[Geometry] = js.native
+  def flipVertical(geometry: Geometry, flipOrigin: Point): js.Promise[Geometry] = js.native
   /**
     * Performs the generalize operation on the geometries in the cursor. Point and Multipoint geometries are left unchanged. Envelope is converted to a Polygon and then generalized.
     *
@@ -184,10 +183,10 @@ trait geometryEngineAsync extends js.Object {
     * @param maxDeviationUnit Measurement unit for maxDeviation. Defaults to the units of the input geometry. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
-  def generalize(geometry: Geometry, maxDeviation: Double): IPromise[Geometry] = js.native
-  def generalize(geometry: Geometry, maxDeviation: Double, removeDegenerateParts: Boolean): IPromise[Geometry] = js.native
-  def generalize(geometry: Geometry, maxDeviation: Double, removeDegenerateParts: Boolean, maxDeviationUnit: String): IPromise[Geometry] = js.native
-  def generalize(geometry: Geometry, maxDeviation: Double, removeDegenerateParts: Boolean, maxDeviationUnit: Double): IPromise[Geometry] = js.native
+  def generalize(geometry: Geometry, maxDeviation: Double): js.Promise[Geometry] = js.native
+  def generalize(geometry: Geometry, maxDeviation: Double, removeDegenerateParts: Boolean): js.Promise[Geometry] = js.native
+  def generalize(geometry: Geometry, maxDeviation: Double, removeDegenerateParts: Boolean, maxDeviationUnit: String): js.Promise[Geometry] = js.native
+  def generalize(geometry: Geometry, maxDeviation: Double, removeDegenerateParts: Boolean, maxDeviationUnit: Double): js.Promise[Geometry] = js.native
   /**
     * Calculates the area of the input geometry. As opposed to [planarArea()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#planarArea), geodesicArea takes into account the curvature of the earth when performing this calculation. Therefore, when using input geometries with a spatial reference of either WGS84 (wkid: 4326) or [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator), it is best practice to calculate areas using geodesicArea(). If the input geometries have a projected coordinate system other than Web Mercator, use [planarArea()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#planarArea) instead.  This method only works with WGS84 (wkid: 4326) and [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator) spatial references.
     *
@@ -197,20 +196,20 @@ trait geometryEngineAsync extends js.Object {
     * @param unit Measurement unit of the return value. Defaults to the units of the input geometries. Use one of the possible values listed below or any of the [numeric codes for area units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.AreaUnit.Code.ACRE). **Possible Values:** acres | ares | hectares | square-feet | square-meters | square-yards | square-kilometers | square-miles
     *
     */
-  def geodesicArea(geometry: Polygon, unit: String): IPromise[Double] = js.native
-  def geodesicArea(geometry: Polygon, unit: Double): IPromise[Double] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicArea(geometry: Polygon, unit: String): js.Promise[Double] = js.native
+  def geodesicArea(geometry: Polygon, unit: Double): js.Promise[Double] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: js.Array[Double], unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: js.Array[Geometry], distance: Double, unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: js.Array[Double], unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
   /**
     * Creates geodesic buffer polygons at a specified distance around the input geometries. When calculating distances, this method takes the curvature of the earth into account, which provides highly accurate results when dealing with very large geometries and/or geometries that spatially vary on a global scale where one projected coordinate system could not accurately plot coordinates and measure distances for all the geometries.  This method only works with WGS84 (wkid: 4326) and [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator) spatial references. In general, if your input geometries are assigned one of those two spatial references, you should always use geodesicBuffer() to obtain the most accurate results for those geometries. If needing to buffer points assigned a [projected coordinate system other than Web Mercator](https://developers.arcgis.com/rest/services-reference/projected-coordinate-systems.htm), use [buffer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#buffer) instead. If the input geometries have a [geographic coordinate system](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm) other than WGS84 (wkid: 4326), use [GeometryService.buffer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#buffer).
     *
@@ -222,12 +221,12 @@ trait geometryEngineAsync extends js.Object {
     * @param unionResults Determines whether the output geometries should be unioned into a single polygon.
     *
     */
-  def geodesicBuffer(geometry: Geometry, distance: Double, unit: String): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: Geometry, distance: Double, unit: String, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: Geometry, distance: Double, unit: Double): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicBuffer(geometry: Geometry, distance: Double, unit: Double, unionResults: Boolean): IPromise[Polygon | js.Array[Polygon]] = js.native
-  def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: String): IPromise[Geometry] = js.native
-  def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: Double): IPromise[Geometry] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: Double, unit: String): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: Double, unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: Double, unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicBuffer(geometry: Geometry, distance: Double, unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: String): js.Promise[Geometry] = js.native
+  def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: Double): js.Promise[Geometry] = js.native
   /**
     * Returns a geodesically densified version of the input geometry. Use this function to draw the line(s) of the geometry along great circles.
     *
@@ -238,8 +237,8 @@ trait geometryEngineAsync extends js.Object {
     * @param maxSegmentLengthUnit Measurement unit for `maxSegmentLength`. If a unit is not specified, the units are considered to be the same as the units of the `geometry`. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
-  def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: String): IPromise[Geometry] = js.native
-  def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: Double): IPromise[Geometry] = js.native
+  def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: String): js.Promise[Geometry] = js.native
+  def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: Double): js.Promise[Geometry] = js.native
   /**
     * Calculates the length of the input geometry. As opposed to [planarLength()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#planarLength), geodesicLength() takes into account the curvature of the earth when performing this calculation. Therefore, when using input geometries with a spatial reference of either WGS84 (wkid: 4326) or [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator), it is best practice to calculate lengths using geodesicLength(). If the input geometries have a projected coordinate system other than Web Mercator, use [planarLength()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#planarLength) instead.  This method only works with WGS84 (wkid: 4326) and [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator) spatial references.
     *
@@ -249,9 +248,9 @@ trait geometryEngineAsync extends js.Object {
     * @param unit Measurement unit of the return value. Defaults to the units of the input geometry. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
-  def geodesicLength(geometry: Geometry, unit: String): IPromise[Double] = js.native
-  def geodesicLength(geometry: Geometry, unit: Double): IPromise[Double] = js.native
-  def intersect(geometry: js.Array[Geometry], intersector: Geometry): IPromise[Geometry] = js.native
+  def geodesicLength(geometry: Geometry, unit: String): js.Promise[Double] = js.native
+  def geodesicLength(geometry: Geometry, unit: Double): js.Promise[Double] = js.native
+  def intersect(geometry: js.Array[Geometry], intersector: Geometry): js.Promise[Geometry] = js.native
   /**
     * Creates a new geometry through intersection between two geometries.
     *
@@ -261,7 +260,7 @@ trait geometryEngineAsync extends js.Object {
     * @param intersector The geometry being intersected.
     *
     */
-  def intersect(geometry: Geometry, intersector: Geometry): IPromise[Geometry] = js.native
+  def intersect(geometry: Geometry, intersector: Geometry): js.Promise[Geometry] = js.native
   /**
     * Indicates if one geometry intersects another geometry.
     *
@@ -271,7 +270,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry2 The geometry being intersected.
     *
     */
-  def intersects(geometry1: Geometry, geometry2: Geometry): IPromise[Boolean] = js.native
+  def intersects(geometry1: Geometry, geometry2: Geometry): js.Promise[Boolean] = js.native
   /**
     * Indicates if the given geometry is topologically simple.
     *
@@ -280,7 +279,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry The input geometry.
     *
     */
-  def isSimple(geometry: Geometry): IPromise[Boolean] = js.native
+  def isSimple(geometry: Geometry): js.Promise[Boolean] = js.native
   /**
     * Finds the coordinate of the geometry that is closest to the specified point.
     *
@@ -290,7 +289,7 @@ trait geometryEngineAsync extends js.Object {
     * @param inputPoint The point used to search the nearest coordinate in the geometry.
     *
     */
-  def nearestCoordinate(geometry: Geometry, inputPoint: Point): IPromise[NearestPointResult] = js.native
+  def nearestCoordinate(geometry: Geometry, inputPoint: Point): js.Promise[NearestPointResult] = js.native
   /**
     * Finds vertex on the geometry nearest to the specified point.
     *
@@ -300,7 +299,7 @@ trait geometryEngineAsync extends js.Object {
     * @param inputPoint The point used to search the nearest vertex in the geometry.
     *
     */
-  def nearestVertex(geometry: Geometry, inputPoint: Point): IPromise[NearestPointResult] = js.native
+  def nearestVertex(geometry: Geometry, inputPoint: Point): js.Promise[NearestPointResult] = js.native
   /**
     * Finds all vertices in the given distance from the specified point, sorted from the closest to the furthest and returns them as an array of Objects.
     *
@@ -312,15 +311,15 @@ trait geometryEngineAsync extends js.Object {
     * @param maxVertexCountToReturn The maximum number of vertices to return.
     *
     */
-  def nearestVertices(geometry: Geometry, inputPoint: Point, searchRadius: Double, maxVertexCountToReturn: Double): IPromise[NearestPointResult] = js.native
-  def offset(geometry: js.Array[Geometry], offsetDistance: Double, offsetUnit: String, joinType: String): IPromise[js.Array[Geometry]] = js.native
+  def nearestVertices(geometry: Geometry, inputPoint: Point, searchRadius: Double, maxVertexCountToReturn: Double): js.Promise[NearestPointResult] = js.native
+  def offset(geometry: js.Array[Geometry], offsetDistance: Double, offsetUnit: String, joinType: String): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: js.Array[Geometry],
     offsetDistance: Double,
     offsetUnit: String,
     joinType: String,
     bevelRatio: Double
-  ): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: js.Array[Geometry],
     offsetDistance: Double,
@@ -328,15 +327,15 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): IPromise[js.Array[Geometry]] = js.native
-  def offset(geometry: js.Array[Geometry], offsetDistance: Double, offsetUnit: Double, joinType: String): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
+  def offset(geometry: js.Array[Geometry], offsetDistance: Double, offsetUnit: Double, joinType: String): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: js.Array[Geometry],
     offsetDistance: Double,
     offsetUnit: Double,
     joinType: String,
     bevelRatio: Double
-  ): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: js.Array[Geometry],
     offsetDistance: Double,
@@ -344,7 +343,7 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
   /**
     * The offset operation creates a geometry that is a constant planar distance from an input polyline or polygon. It is similar to buffering, but produces a one-sided result.
     *
@@ -358,14 +357,14 @@ trait geometryEngineAsync extends js.Object {
     * @param flattenError Applicable when `joinType = 'round'`; flattenError determines the maximum distance of the resulting segments compared to the true circular arc. The algorithm never produces more than around 180 vertices for each round join.
     *
     */
-  def offset(geometry: Geometry, offsetDistance: Double, offsetUnit: String, joinType: String): IPromise[js.Array[Geometry]] = js.native
+  def offset(geometry: Geometry, offsetDistance: Double, offsetUnit: String, joinType: String): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: Geometry,
     offsetDistance: Double,
     offsetUnit: String,
     joinType: String,
     bevelRatio: Double
-  ): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: Geometry,
     offsetDistance: Double,
@@ -373,15 +372,15 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): IPromise[js.Array[Geometry]] = js.native
-  def offset(geometry: Geometry, offsetDistance: Double, offsetUnit: Double, joinType: String): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
+  def offset(geometry: Geometry, offsetDistance: Double, offsetUnit: Double, joinType: String): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: Geometry,
     offsetDistance: Double,
     offsetUnit: Double,
     joinType: String,
     bevelRatio: Double
-  ): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
   def offset(
     geometry: Geometry,
     offsetDistance: Double,
@@ -389,7 +388,7 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): IPromise[js.Array[Geometry]] = js.native
+  ): js.Promise[js.Array[Geometry]] = js.native
   /**
     * Indicates if one geometry overlaps another geometry.
     *
@@ -399,7 +398,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry2 The comparison geometry that is tested for the "overlaps" relationship with the other geometry.
     *
     */
-  def overlaps(geometry1: Geometry, geometry2: Geometry): IPromise[Boolean] = js.native
+  def overlaps(geometry1: Geometry, geometry2: Geometry): js.Promise[Boolean] = js.native
   /**
     * Calculates the area of the input geometry. As opposed to [geodesicArea()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicArea), planarArea() performs this calculation using projected coordinates and does not take into account the earth's curvature. When using input geometries with a spatial reference of either WGS84 (wkid: 4326) or [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator), it is best practice to calculate areas using [geodesicArea()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicArea). If the input geometries have a projected coordinate system other than Web Mercator, use planarArea() instead.
     *
@@ -409,8 +408,8 @@ trait geometryEngineAsync extends js.Object {
     * @param unit Measurement unit of the return value. Defaults to the units of the input geometries. Use one of the possible values listed below or any of the [numeric codes for area units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.AreaUnit.Code.ACRE). **Possible Values:** acres | ares | hectares | square-feet | square-meters | square-yards | square-kilometers | square-miles
     *
     */
-  def planarArea(geometry: Polygon, unit: String): IPromise[Double] = js.native
-  def planarArea(geometry: Polygon, unit: Double): IPromise[Double] = js.native
+  def planarArea(geometry: Polygon, unit: String): js.Promise[Double] = js.native
+  def planarArea(geometry: Polygon, unit: Double): js.Promise[Double] = js.native
   /**
     * Calculates the length of the input geometry. As opposed to [geodesicLength()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicLength), planarLength() uses projected coordinates and does not take into account the curvature of the earth when performing this calculation. When using input geometries with a spatial reference of either WGS84 (wkid: 4326) or [Web Mercator](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#isWebMercator), it is best practice to calculate lengths using [geodesicLength()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicLength). If the input geometries have a projected coordinate system other than Web Mercator, use planarLength() instead.
     *
@@ -420,8 +419,8 @@ trait geometryEngineAsync extends js.Object {
     * @param unit Measurement unit of the return value. Defaults to the units of the input geometries. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
-  def planarLength(geometry: Geometry, unit: String): IPromise[Double] = js.native
-  def planarLength(geometry: Geometry, unit: Double): IPromise[Double] = js.native
+  def planarLength(geometry: Geometry, unit: String): js.Promise[Double] = js.native
+  def planarLength(geometry: Geometry, unit: Double): js.Promise[Double] = js.native
   /**
     * Indicates if the given DE-9IM relation holds for the two geometries.
     *
@@ -432,7 +431,7 @@ trait geometryEngineAsync extends js.Object {
     * @param relation The Dimensionally Extended 9 Intersection Model (DE-9IM) matrix relation (encoded as a string) to test against the relationship of the two geometries. This string contains the test result of each intersection represented in the DE-9IM matrix. Each result is one character of the string and may be represented as either a number (maximum dimension returned: `0`,`1`,`2`), a Boolean value (`T` or `F`), or a mask character (for ignoring results: '\*').    Example: Each of the following DE-9IM string codes are valid for testing whether a polygon geometry completely contains a line geometry: `TTTFFTFFT` (Boolean), 'T\*\*\*\*\*FF\*' (ignore irrelevant intersections), or '102FF\*FF\*' (dimension form). Each returns the same result.    See [this article](https://en.wikipedia.org/wiki/DE-9IM) and [this ArcGIS help page](https://desktop.arcgis.com/en/arcmap/latest/manage-data/using-sql-with-gdbs/relational-functions-for-st-geometry.htm) for more information about the DE-9IM model and how string codes are constructed.
     *
     */
-  def relate(geometry1: Geometry, geometry2: Geometry, relation: String): IPromise[Boolean] = js.native
+  def relate(geometry1: Geometry, geometry2: Geometry, relation: String): js.Promise[Boolean] = js.native
   /**
     * Rotates a geometry counterclockwise by the specified number of degrees. Rotation is around the centroid, or a given rotation point.
     *
@@ -443,8 +442,8 @@ trait geometryEngineAsync extends js.Object {
     * @param rotationOrigin Point to rotate the geometry around. Defaults to the centroid of the geometry.
     *
     */
-  def rotate(geometry: Geometry, angle: Double): IPromise[Geometry] = js.native
-  def rotate(geometry: Geometry, angle: Double, rotationOrigin: Point): IPromise[Geometry] = js.native
+  def rotate(geometry: Geometry, angle: Double): js.Promise[Geometry] = js.native
+  def rotate(geometry: Geometry, angle: Double, rotationOrigin: Point): js.Promise[Geometry] = js.native
   /**
     * Performs the simplify operation on the geometry which alters the given geometries to make their definitions topologically legal with respect to their geometry type.
     *
@@ -453,8 +452,8 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry The geometry to be simplified.
     *
     */
-  def simplify(geometry: Geometry): IPromise[Geometry] = js.native
-  def symmetricDifference(leftGeometry: js.Array[Geometry], rightGeometry: Geometry): IPromise[Geometry | js.Array[Geometry]] = js.native
+  def simplify(geometry: Geometry): js.Promise[Geometry] = js.native
+  def symmetricDifference(leftGeometry: js.Array[Geometry], rightGeometry: Geometry): js.Promise[Geometry | js.Array[Geometry]] = js.native
   /**
     * Creates the symmetric difference of two geometries. The symmetric difference includes the parts that are in either of the sets, but not in both.
     *
@@ -464,7 +463,7 @@ trait geometryEngineAsync extends js.Object {
     * @param rightGeometry One of the Geometry instances in the XOR operation.
     *
     */
-  def symmetricDifference(leftGeometry: Geometry, rightGeometry: Geometry): IPromise[Geometry | js.Array[Geometry]] = js.native
+  def symmetricDifference(leftGeometry: Geometry, rightGeometry: Geometry): js.Promise[Geometry | js.Array[Geometry]] = js.native
   /**
     * Indicates if one geometry touches another geometry.
     *
@@ -474,7 +473,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometry2 The geometry to be touched.
     *
     */
-  def touches(geometry1: Geometry, geometry2: Geometry): IPromise[Boolean] = js.native
+  def touches(geometry1: Geometry, geometry2: Geometry): js.Promise[Boolean] = js.native
   /**
     * All inputs must be of the same type of geometries and share one spatial reference.
     *
@@ -483,7 +482,7 @@ trait geometryEngineAsync extends js.Object {
     * @param geometries An array of Geometries to union.
     *
     */
-  def union(geometries: js.Array[Geometry]): IPromise[Geometry] = js.native
+  def union(geometries: js.Array[Geometry]): js.Promise[Geometry] = js.native
   /**
     * Indicates if one geometry is within another geometry.
     *
@@ -493,7 +492,7 @@ trait geometryEngineAsync extends js.Object {
     * @param outerGeometry The comparison geometry that is tested for the "contains" relationship to the other geometry.
     *
     */
-  def within(innerGeometry: Geometry, outerGeometry: Geometry): IPromise[Boolean] = js.native
+  def within(innerGeometry: Geometry, outerGeometry: Geometry): js.Promise[Boolean] = js.native
 }
 
 @JSGlobal("__esri.geometryEngineAsync")

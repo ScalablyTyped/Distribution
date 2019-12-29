@@ -5,7 +5,6 @@ import typings.atStorybookAddons.distTypesMod.OptionsParameter
 import typings.atStorybookAddons.distTypesMod.Parameters
 import typings.atStorybookAddons.distTypesMod.StoryApi
 import typings.atStorybookAddons.distTypesMod.StoryFn
-import typings.atStorybookClientDashApi.distClientUnderscoreApiMod.ClientApi
 import typings.atStorybookClientDashApi.distTypesMod.ClientApiParams
 import typings.atStorybookClientDashApi.distTypesMod.StoreItem
 import typings.node.NodeModule

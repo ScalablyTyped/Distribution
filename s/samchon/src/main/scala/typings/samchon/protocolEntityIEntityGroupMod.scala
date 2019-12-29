@@ -1,6 +1,5 @@
 package typings.samchon
 
-import typings.samchon.protocolEntityIEntityGroupMod.IEntityGroup
 import typings.samchon.protocolEntityIEntityMod.IEntity
 import typings.sxml.sxmlMod.XML
 import typings.tstl.baseIteratorIteratorMod.Iterator
@@ -51,7 +50,6 @@ object protocolEntityIEntityGroupMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -124,6 +122,7 @@ object protocolEntityIEntityGroupMod extends js.Object {
     /**
       * Number of elements in the container.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

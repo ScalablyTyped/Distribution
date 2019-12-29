@@ -44,7 +44,6 @@ import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskHubLicens
 import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskResult
 import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroup
 import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter
-import typings.vsoDashNodeDashApi.taskAgentApiBaseMod.ITaskAgentApiBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

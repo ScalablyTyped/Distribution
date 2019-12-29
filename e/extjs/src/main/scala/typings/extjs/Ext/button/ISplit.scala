@@ -4,12 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISplit
-  extends typings.extjs.Ext.button.IButton {
+trait ISplit extends IButton {
   /** [Config Option] (Function) */
   var arrowHandler: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var arrowTooltip: js.UndefOr[java.lang.String] = js.undefined
+  var arrowTooltip: js.UndefOr[String] = js.undefined
   /** [Method] Sets this button s arrow click handler
   		* @param handler Function The function to call when the arrow is clicked.
   		* @param scope Object Scope for the function passed above.
@@ -22,9 +21,9 @@ trait ISplit
 object ISplit {
   @scala.inline
   def apply(
-    IButton: typings.extjs.Ext.button.IButton = null,
+    IButton: IButton = null,
     arrowHandler: js.Any = null,
-    arrowTooltip: java.lang.String = null,
+    arrowTooltip: String = null,
     setArrowHandler: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null
   ): ISplit = {
     val __obj = js.Dynamic.literal()

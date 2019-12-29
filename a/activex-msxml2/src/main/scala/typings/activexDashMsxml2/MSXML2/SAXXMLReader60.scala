@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.SAXXMLReader60")
 @js.native
 class SAXXMLReader60 protected () extends js.Object {
-  var `MSXML2.SAXXMLReader60_typekey`: SAXXMLReader60 = js.native
+  @JSName("MSXML2.SAXXMLReader60_typekey")
+  var MSXML2DotSAXXMLReader60_typekey: SAXXMLReader60 = js.native
   /** Set or get the base URL for the document. */
   var baseURL: String = js.native
   /** Allow an application to register a content event handler or look up the current content event handler. */

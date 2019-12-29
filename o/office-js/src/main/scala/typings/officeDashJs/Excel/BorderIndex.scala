@@ -1,14 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.BorderIndex.diagonalDown
-import typings.officeDashJs.Excel.BorderIndex.diagonalUp
-import typings.officeDashJs.Excel.BorderIndex.edgeBottom
-import typings.officeDashJs.Excel.BorderIndex.edgeLeft
-import typings.officeDashJs.Excel.BorderIndex.edgeRight
-import typings.officeDashJs.Excel.BorderIndex.edgeTop
-import typings.officeDashJs.Excel.BorderIndex.insideHorizontal
-import typings.officeDashJs.Excel.BorderIndex.insideVertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

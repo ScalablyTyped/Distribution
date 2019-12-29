@@ -1,7 +1,7 @@
 package typings.atHapiWreck.atHapiWreckMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atHapiWreck.atHapiWreckNumbers.`false`
+import typings.atHapiWreck.atHapiWreckBooleans.`false`
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
 import scala.scalajs.js

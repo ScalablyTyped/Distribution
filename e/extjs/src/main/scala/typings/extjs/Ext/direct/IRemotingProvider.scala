@@ -14,7 +14,7 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Config Option] (Number/Boolean) */
   var enableBuffer: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var enableUrlEncode: js.UndefOr[java.lang.String] = js.undefined
+  var enableUrlEncode: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var maxRetries: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String/Object) */
@@ -22,7 +22,7 @@ trait IRemotingProvider extends IJsonProvider {
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object IRemotingProvider {
@@ -47,14 +47,14 @@ object IRemotingProvider {
     disconnect: () => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     enableBuffer: js.Any = null,
-    enableUrlEncode: java.lang.String = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    enableUrlEncode: String = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IRemotingProvider = null,
     isConnected: () => Unit = null,
@@ -66,9 +66,9 @@ object IRemotingProvider {
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     namespace: js.Any = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     relayedEvents: Array = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -79,8 +79,8 @@ object IRemotingProvider {
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     timeout: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    url: java.lang.String = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    url: String = null,
     uses: Array = null
   ): IRemotingProvider = {
     val __obj = js.Dynamic.literal()

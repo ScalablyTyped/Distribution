@@ -1,6 +1,6 @@
 package typings.rnDashFetchDashBlob.rnDashFetchDashBlobMod
 
-import typings.rnDashFetchDashBlob.rnDashFetchDashBlobNumbers.`true`
+import typings.rnDashFetchDashBlob.rnDashFetchDashBlobBooleans.`true`
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

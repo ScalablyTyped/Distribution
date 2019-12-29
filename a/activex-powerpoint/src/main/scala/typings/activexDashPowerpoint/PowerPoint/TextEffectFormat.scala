@@ -21,7 +21,8 @@ class TextEffectFormat protected () extends js.Object {
   var KernedPairs: MsoTriState = js.native
   var NormalizedHeight: MsoTriState = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TextEffectFormat_typekey`: TextEffectFormat = js.native
+  @JSName("PowerPoint.TextEffectFormat_typekey")
+  var PowerPointDotTextEffectFormat_typekey: TextEffectFormat = js.native
   var PresetShape: MsoPresetTextEffectShape = js.native
   var PresetTextEffect: MsoPresetTextEffect = js.native
   var RotatedChars: MsoTriState = js.native

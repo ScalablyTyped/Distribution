@@ -1,22 +1,22 @@
 package typings.extjs.Ext.tab
 
 import typings.extjs.Ext.IComponent
+import typings.extjs.Ext.button.IButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITab
-  extends typings.extjs.Ext.button.IButton {
+trait ITab extends IButton {
   /** [Property] (Boolean) */
   var active: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[java.lang.String] = js.undefined
+  var activeCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var closable: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var closableCls: js.UndefOr[java.lang.String] = js.undefined
+  var closableCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var closeText: js.UndefOr[java.lang.String] = js.undefined
+  var closeText: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var isTab: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets this tab s attached card
@@ -32,12 +32,12 @@ trait ITab
 object ITab {
   @scala.inline
   def apply(
-    IButton: typings.extjs.Ext.button.IButton = null,
+    IButton: IButton = null,
     active: js.UndefOr[Boolean] = js.undefined,
-    activeCls: java.lang.String = null,
+    activeCls: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
-    closableCls: java.lang.String = null,
-    closeText: java.lang.String = null,
+    closableCls: String = null,
+    closeText: String = null,
     isTab: js.UndefOr[Boolean] = js.undefined,
     setCard: /* card */ js.UndefOr[IComponent] => Unit = null,
     setClosable: /* closable */ js.UndefOr[Boolean] => Unit = null

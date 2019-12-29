@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SaveEventObject protected () extends js.Object {
   val FileName: String = js.native
-  var `InfoPath.SaveEventObject_typekey`: SaveEventObject = js.native
+  @JSName("InfoPath.SaveEventObject_typekey")
+  var InfoPathDotSaveEventObject_typekey: SaveEventObject = js.native
   var IsCancelled: Boolean = js.native
   val IsSaveAs: Boolean = js.native
   var ReturnStatus: Boolean = js.native

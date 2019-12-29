@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLStyleElement")
 @js.native
 class HTMLStyleElement protected () extends js.Object {
-  var `MSHTML.HTMLStyleElement_typekey`: HTMLStyleElement = js.native
+  @JSName("MSHTML.HTMLStyleElement_typekey")
+  var MSHTMLDotHTMLStyleElement_typekey: HTMLStyleElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

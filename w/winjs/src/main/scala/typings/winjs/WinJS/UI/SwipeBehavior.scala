@@ -1,8 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.SwipeBehavior.none
-import typings.winjs.WinJS.UI.SwipeBehavior.select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

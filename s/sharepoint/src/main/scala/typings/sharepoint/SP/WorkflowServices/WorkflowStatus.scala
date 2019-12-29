@@ -1,15 +1,6 @@
 package typings.sharepoint.SP.WorkflowServices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.canceled
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.canceling
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.completed
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.invalid
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.notSpecified
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.notStarted
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.started
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.suspended
-import typings.sharepoint.SP.WorkflowServices.WorkflowStatus.terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

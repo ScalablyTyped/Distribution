@@ -1,15 +1,6 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.contentTypeIs
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.fileExtensionMatches
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.manualCondition
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultContainsKeyword
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultHasTag
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleContainsKeyword
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleMatchesKeyword
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlExactlyMatches
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlStartsWith
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

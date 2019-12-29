@@ -40,20 +40,20 @@ object SortTypes extends js.Object {
   		* @param value Object The value being converted.
   		* @returns String The comparison value.
   		*/
-  def asText(): java.lang.String = js.native
-  def asText(value: js.Any): java.lang.String = js.native
+  def asText(): String = js.native
+  def asText(value: js.Any): String = js.native
   /** [Method] Case insensitive string
   		* @param value Object The value being converted.
   		* @returns String The comparison value.
   		*/
-  def asUCString(): java.lang.String = js.native
-  def asUCString(value: js.Any): java.lang.String = js.native
+  def asUCString(): String = js.native
+  def asUCString(value: js.Any): String = js.native
   /** [Method] Strips all HTML tags to sort on text only  case insensitive
   		* @param value Object The value being converted.
   		* @returns String The comparison value.
   		*/
-  def asUCText(): java.lang.String = js.native
-  def asUCText(value: js.Any): java.lang.String = js.native
+  def asUCText(): String = js.native
+  def asUCText(value: js.Any): String = js.native
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
   		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
   		* @returns Object Returns the result of calling the overridden method
@@ -79,7 +79,7 @@ object SortTypes extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs

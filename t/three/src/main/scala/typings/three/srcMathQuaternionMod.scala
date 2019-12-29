@@ -3,7 +3,6 @@ package typings.three
 import typings.std.ArrayLike
 import typings.three.srcMathEulerMod.Euler
 import typings.three.srcMathMatrix4Mod.Matrix4
-import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathVector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`

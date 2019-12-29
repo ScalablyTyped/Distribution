@@ -17,7 +17,8 @@ class XDocument protected () extends js.Object {
   @JSName("Errors")
   val Errors_Original: Errors = js.native
   val Extension: js.Any = js.native
-  var `InfoPath.XDocument_typekey`: XDocument = js.native
+  @JSName("InfoPath.XDocument_typekey")
+  var InfoPathDotXDocument_typekey: XDocument = js.native
   val IsDOMReadOnly: Boolean = js.native
   val IsDirty: Boolean = js.native
   val IsNew: Boolean = js.native

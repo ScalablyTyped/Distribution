@@ -2,7 +2,6 @@ package typings.appDashBuilderDashLib
 
 import typings.appDashBuilderDashLib.outCoreMod.Target
 import typings.appDashBuilderDashLib.outOptionsAppXOptionsMod.AppXOptions
-import typings.appDashBuilderDashLib.outTargetsAppxTargetMod.AppXTarget
 import typings.appDashBuilderDashLib.outWinPackagerMod.WinPackager
 import scala.scalajs.js
 import scala.scalajs.js.`|`

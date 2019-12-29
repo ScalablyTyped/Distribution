@@ -6,8 +6,8 @@ import typings.cypress.JQuery.Ajax.ErrorCallback
 import typings.cypress.JQuery.Ajax.StatusCodeCallbacks
 import typings.cypress.JQuery.Ajax.SuccessCallback
 import typings.cypress.JQuery.Ajax.XHRFields
-import typings.cypress.cypressNumbers.`false`
-import typings.cypress.cypressNumbers.`true`
+import typings.cypress.cypressBooleans.`false`
+import typings.cypress.cypressBooleans.`true`
 import typings.cypress.cypressStrings.html_
 import typings.cypress.cypressStrings.json_
 import typings.cypress.cypressStrings.jsonp

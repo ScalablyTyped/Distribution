@@ -1,7 +1,6 @@
 package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015RendererRendererRendererMod.Renderer
-import typings.wonderDotJs.distEs2015RendererRendererWebGLRendererMod.WebGLRenderer
 import typings.wonderDotJs.distEs2015StructureColorMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`

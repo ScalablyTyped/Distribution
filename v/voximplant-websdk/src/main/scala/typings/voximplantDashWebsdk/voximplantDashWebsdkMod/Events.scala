@@ -1,16 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.AuthResult
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.ConnectionClosed
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.ConnectionEstablished
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.ConnectionFailed
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.IncomingCall
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.MicAccessResult
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.NetStatsReceived
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.PlaybackFinished
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.SDKReady
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.Events.SourcesInfoUpdated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

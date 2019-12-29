@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeZOrder.bringForward
-import typings.officeDashJsDashPreview.Excel.ShapeZOrder.bringToFront
-import typings.officeDashJsDashPreview.Excel.ShapeZOrder.sendBackward
-import typings.officeDashJsDashPreview.Excel.ShapeZOrder.sendToBack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

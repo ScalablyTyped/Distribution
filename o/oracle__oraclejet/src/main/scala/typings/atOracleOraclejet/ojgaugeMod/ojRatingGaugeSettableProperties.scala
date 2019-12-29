@@ -3,7 +3,7 @@ package typings.atOracleOraclejet.ojgaugeMod
 import typings.atOracleOraclejet.Anon_BorderColorCircle
 import typings.atOracleOraclejet.Anon_ComponentNameLabelAndValue
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965
-import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0DOT5`
+import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0.5`
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`1`
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
 import typings.atOracleOraclejet.atOracleOraclejetStrings.horizontal
@@ -27,7 +27,7 @@ trait ojRatingGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var preserveAspectRatio: none | meet
   var readonly: Boolean
   var selectedState: Anon_BorderColorCircle
-  var step: `0DOT5` | `1`
+  var step: `0.5` | `1`
   var thresholds: js.Array[Threshold]
   var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965
   val transientValue: Double | Null
@@ -48,7 +48,7 @@ object ojRatingGaugeSettableProperties {
     preserveAspectRatio: none | meet,
     readonly: Boolean,
     selectedState: Anon_BorderColorCircle,
-    step: `0DOT5` | `1`,
+    step: `0.5` | `1`,
     thresholds: js.Array[Threshold],
     tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965,
     trackResize: on | off,

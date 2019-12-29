@@ -1,7 +1,6 @@
 package typings.atAngularCompiler
 
 import typings.atAngularCompiler.srcI18nI18nUnderscoreAstMod.Message
-import typings.atAngularCompiler.srcI18nI18nUnderscoreParserMod.VisitNodeFn
 import typings.atAngularCompiler.srcMlUnderscoreParserAstMod.Node
 import typings.atAngularCompiler.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
 import scala.scalajs.js

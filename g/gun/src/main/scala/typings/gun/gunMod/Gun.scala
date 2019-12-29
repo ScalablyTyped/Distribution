@@ -16,23 +16,14 @@ import typings.gun.Anon_False
 import typings.gun.Anon_File
 import typings.gun.Anon_SessionStorage
 import typings.gun.Anon_Wait
-import typings.gun.gunMod.Gun.AccessObject
-import typings.gun.gunMod.Gun.AckCallback
-import typings.gun.gunMod.Gun.AlwaysDisallowedType
-import typings.gun.gunMod.Gun.ArrayAsRecord
-import typings.gun.gunMod.Gun.ArrayOf
-import typings.gun.gunMod.Gun.ChainReference
-import typings.gun.gunMod.Gun.ConstructorOptions
-import typings.gun.gunMod.Gun.CryptoKeyPair
-import typings.gun.gunMod.Gun.DisallowArray
-import typings.gun.gunMod.Gun.DisallowPrimitives
-import typings.gun.gunNumbers.`false`
-import typings.gun.gunStrings.DOLLAR
+import typings.gun.gunBooleans.`false`
+import typings.gun.gunStrings.$
 import typings.gun.gunStrings.ack
 import typings.gun.gunStrings.as
 import typings.gun.gunStrings.back
 import typings.gun.gunStrings.epriv
 import typings.gun.gunStrings.epub
+import typings.gun.gunStrings.gun
 import typings.gun.gunStrings.id
 import typings.gun.gunStrings.next
 import typings.gun.gunStrings.off
@@ -265,7 +256,7 @@ object Gun extends js.Object {
       key: K,
       callback: js.Function2[
           /* paramA */ Record[
-            typings.gun.gunStrings.gun | DOLLAR | root | id | back | on | tag | typings.gun.gunStrings.get | soul | ack | put, 
+            gun | $ | root | id | back | on | tag | typings.gun.gunStrings.get | soul | ack | put, 
             _
           ], 
           /* paramB */ Record[off | to | next | the | on | as | back | rid | id, _], 

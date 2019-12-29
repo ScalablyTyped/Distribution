@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object serialize extends js.Object {
   /**
     * Uses a `DefaultSerializer` to serialize value into a buffer.
-    * @experimental
     */
   def apply(value: js.Any): Buffer = js.native
 }

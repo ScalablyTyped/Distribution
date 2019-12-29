@@ -1,9 +1,7 @@
 package typings.atFrctlFractal.atFrctlFractalMod.fractal.core
 
+import typings.atFrctlFractal.atFrctlFractalBooleans.`true`
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.EntitySource
-import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Collection
-import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Entity
-import typings.atFrctlFractal.atFrctlFractalNumbers.`true`
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.std.IterableIterator

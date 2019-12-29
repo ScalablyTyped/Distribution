@@ -2,7 +2,6 @@ package typings.tstl
 
 import typings.std.Date
 import typings.tstl.threadILockableMod.ILockable
-import typings.tstl.threadSemaphoreMod.Semaphore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.atFirebaseInstallations
 
-import typings.atFirebaseInstallations.distSrcTestingCompareDashHeadersMod.HeadersWithEntries
 import typings.std.Headers
 import typings.std.Iterable
 import scala.scalajs.js

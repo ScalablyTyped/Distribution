@@ -23,25 +23,26 @@ trait Layout extends js.Object
 
 object Layout {
   @scala.inline
-  def ColoredLayout(`type`: colored | coloured): Layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Layout]
-  }
-  @scala.inline
-  def MessagePassThroughLayout(`type`: messagePassThrough): Layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Layout]
-  }
-  @scala.inline
   def DummyLayout(`type`: dummy): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
   @scala.inline
+  def CustomLayout(`type`: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Layout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Layout]
+  }
+  @scala.inline
   def BaseLayout(`type`: basic): Layout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Layout]
+  }
+  @scala.inline
+  def ColoredLayout(`type`: colored | coloured): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
@@ -54,10 +55,9 @@ object Layout {
     __obj.asInstanceOf[Layout]
   }
   @scala.inline
-  def CustomLayout(`type`: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Layout = {
+  def MessagePassThroughLayout(`type`: messagePassThrough): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Layout]
   }
 }

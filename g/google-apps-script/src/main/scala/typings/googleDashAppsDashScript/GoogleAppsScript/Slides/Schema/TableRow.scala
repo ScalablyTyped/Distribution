@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait TableRow extends js.Object {
   var rowHeight: js.UndefOr[Dimension] = js.undefined
-  var tableCells: js.UndefOr[
-    js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.TableCell]
-  ] = js.undefined
+  var tableCells: js.UndefOr[js.Array[TableCell]] = js.undefined
   var tableRowProperties: js.UndefOr[TableRowProperties] = js.undefined
 }
 
@@ -16,7 +14,7 @@ object TableRow {
   @scala.inline
   def apply(
     rowHeight: Dimension = null,
-    tableCells: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.TableCell] = null,
+    tableCells: js.Array[TableCell] = null,
     tableRowProperties: TableRowProperties = null
   ): TableRow = {
     val __obj = js.Dynamic.literal()

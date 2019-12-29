@@ -1,21 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.all
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.anniversary
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.colleague
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.custom
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.dlMembership
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.multiValueProperty
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.none
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.organizationMembership
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.organizationProfile
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.personalizationSite
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.quickLink
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.singleValueProperty
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.siteMembership
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.userProfile
-import typings.sharepoint.SP.UserProfiles.ObjectTypes.webLog
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

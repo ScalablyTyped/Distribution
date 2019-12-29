@@ -50,9 +50,9 @@ trait DOMPurifyI extends js.Object {
   def removeHook(entryPoint: HookName): Unit = js.native
   def removeHooks(entryPoint: HookName): Unit = js.native
   def sanitize(source: String): String = js.native
-  def sanitize(source: String, config: Config with Anon_RETURNTRUSTEDTYPE): TrustedHTML = js.native
+  def sanitize(source: String, config: Config with Anon_False): String = js.native
   def sanitize(source: Node): String = js.native
-  def sanitize(source: Node, config: Config with Anon_RETURNTRUSTEDTYPE): TrustedHTML = js.native
+  def sanitize(source: Node, config: Config with Anon_False): String = js.native
   @JSName("sanitize")
   def sanitize_DocumentFragment(source: String, config: Config with Anon_RETURNDOMFRAGMENT): DocumentFragment = js.native
   @JSName("sanitize")
@@ -62,9 +62,9 @@ trait DOMPurifyI extends js.Object {
   @JSName("sanitize")
   def sanitize_HTMLElement(source: Node, config: Config with Anon_RETURNDOM): HTMLElement = js.native
   @JSName("sanitize")
-  def sanitize_String(source: String, config: Config with Anon_False): String = js.native
+  def sanitize_TrustedHTML(source: String, config: Config with Anon_RETURNTRUSTEDTYPE): TrustedHTML = js.native
   @JSName("sanitize")
-  def sanitize_String(source: Node, config: Config with Anon_False): String = js.native
+  def sanitize_TrustedHTML(source: Node, config: Config with Anon_RETURNTRUSTEDTYPE): TrustedHTML = js.native
   @JSName("sanitize")
   def sanitize_Union(source: String, config: Config): String | HTMLElement | DocumentFragment = js.native
   @JSName("sanitize")

@@ -76,6 +76,11 @@ import scala.scalajs.js.annotation._
 
 trait IOverlayProps extends HTMLAttributes[HTMLElement] {
   /**
+    * Allow body scroll on touch devices. Changing after mounting has no effect.
+    * @defaultvalue false
+    */
+  var allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined
+  /**
     * Gets the component ref.
     */
   var componentRef: js.UndefOr[IRefObject[IOverlay]] = js.undefined
@@ -101,6 +106,7 @@ object IOverlayProps {
   def apply(
     about: String = null,
     accessKey: String = null,
+    allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
     `aria-autocomplete`: none | `inline` | list | both = null,
@@ -280,6 +286,7 @@ object IOverlayProps {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTouchBodyScroll)) __obj.updateDynamic("allowTouchBodyScroll")(allowTouchBodyScroll.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])

@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.TextAlignment.NORMAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.TextAlignment.SUBSCRIPT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.TextAlignment.SUPERSCRIPT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.FileLevel.checkout
-import typings.sharepoint.SP.FileLevel.draft
-import typings.sharepoint.SP.FileLevel.published
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

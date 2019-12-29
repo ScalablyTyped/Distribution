@@ -1,11 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Discovery.ExportStatus
-import typings.sharepoint.SP.Discovery.ExportStatus.complete
-import typings.sharepoint.SP.Discovery.ExportStatus.failed
-import typings.sharepoint.SP.Discovery.ExportStatus.notStarted
-import typings.sharepoint.SP.Discovery.ExportStatus.started
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +16,7 @@ object Discovery extends js.Object {
   
   @js.native
   class Export protected () extends ClientObject {
-    def this(context: ClientRuntimeContext, item: typings.sharepoint.SP.ListItem[_]) = this()
+    def this(context: ClientRuntimeContext, item: ListItem[_]) = this()
     def getExportContent(): StringResult = js.native
     def get_status(): ExportStatus = js.native
     def set_status(value: ExportStatus): ExportStatus = js.native

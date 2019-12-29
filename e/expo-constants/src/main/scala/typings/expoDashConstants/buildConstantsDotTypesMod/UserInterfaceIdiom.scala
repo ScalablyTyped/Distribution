@@ -1,9 +1,6 @@
 package typings.expoDashConstants.buildConstantsDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Handset
-import typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Tablet
-import typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

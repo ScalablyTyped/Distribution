@@ -25,7 +25,8 @@ class DefaultWebOptions protected () extends js.Object {
   var HTMLVersion: PpHTMLVersion = js.native
   var IncludeNavigation: MsoTriState = js.native
   var OrganizeInFolder: MsoTriState = js.native
-  var `PowerPoint.DefaultWebOptions_typekey`: DefaultWebOptions = js.native
+  @JSName("PowerPoint.DefaultWebOptions_typekey")
+  var PowerPointDotDefaultWebOptions_typekey: DefaultWebOptions = js.native
   var RelyOnVML: MsoTriState = js.native
   var ResizeGraphics: MsoTriState = js.native
   var SaveNewWebPagesAsWebArchives: MsoTriState = js.native

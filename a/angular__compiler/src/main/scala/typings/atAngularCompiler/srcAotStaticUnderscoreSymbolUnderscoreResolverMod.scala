@@ -3,8 +3,6 @@ package typings.atAngularCompiler
 import org.scalablytyped.runtime.StringDictionary
 import typings.atAngularCompiler.srcAotStaticUnderscoreSymbolMod.StaticSymbol
 import typings.atAngularCompiler.srcAotStaticUnderscoreSymbolMod.StaticSymbolCache
-import typings.atAngularCompiler.srcAotStaticUnderscoreSymbolUnderscoreResolverMod.ResolvedStaticSymbol
-import typings.atAngularCompiler.srcAotStaticUnderscoreSymbolUnderscoreResolverMod.StaticSymbolResolverHost
 import typings.atAngularCompiler.srcSummaryUnderscoreResolverMod.SummaryResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`

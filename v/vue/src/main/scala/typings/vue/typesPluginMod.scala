@@ -1,7 +1,6 @@
 package typings.vue
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vue.typesPluginMod.PluginFunction
 import typings.vue.typesVueMod.Vue
 import typings.vue.typesVueMod.VueConstructor
 import scala.scalajs.js

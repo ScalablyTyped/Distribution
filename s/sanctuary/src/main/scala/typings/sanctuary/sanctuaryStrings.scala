@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object sanctuaryStrings {
   @js.native
-  sealed trait `sanctuary/Either` extends js.Object
+  sealed trait sanctuarySlashEither extends js.Object
   
   @js.native
-  sealed trait `sanctuary/Maybe` extends js.Object
+  sealed trait sanctuarySlashMaybe extends js.Object
   
   @scala.inline
-  def `sanctuary/Either`: `sanctuary/Either` = "sanctuary/Either".asInstanceOf[`sanctuary/Either`]
+  def sanctuarySlashEither: sanctuarySlashEither = "sanctuary/Either".asInstanceOf[sanctuarySlashEither]
   @scala.inline
-  def `sanctuary/Maybe`: `sanctuary/Maybe` = "sanctuary/Maybe".asInstanceOf[`sanctuary/Maybe`]
+  def sanctuarySlashMaybe: sanctuarySlashMaybe = "sanctuary/Maybe".asInstanceOf[sanctuarySlashMaybe]
 }
 

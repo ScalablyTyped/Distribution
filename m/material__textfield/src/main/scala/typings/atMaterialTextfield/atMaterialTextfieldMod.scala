@@ -7,7 +7,6 @@ import typings.atMaterialRipple.atMaterialRippleMod.MDCRipple
 import typings.atMaterialRipple.atMaterialRippleMod.MDCRippleFoundation
 import typings.atMaterialTextfield.adapterMod.FoundationMapType
 import typings.atMaterialTextfield.adapterMod.MDCTextFieldAdapter
-import typings.atMaterialTextfield.atMaterialTextfieldMod.MDCTextField
 import typings.atMaterialTextfield.foundationMod.default
 import typings.atMaterialTextfield.helperDashTextAdapterMod.MDCTextFieldHelperTextAdapter
 import typings.atMaterialTextfield.iconAdapterMod.MDCTextFieldIconAdapter

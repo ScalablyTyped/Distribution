@@ -7,8 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.arcgisDashJsDashApi.__esri.symbols.Symbol2D3D because Already inherited
-- typings.arcgisDashJsDashApi.__esri.Symbol2D3D because Already inherited */ @js.native
+- typings.arcgisDashJsDashApi.__esri.Symbol2D3D because Already inherited
+- typings.arcgisDashJsDashApi.__esri.symbols.Symbol2D3D because Already inherited */ @js.native
 trait PictureFillSymbol
   extends FillSymbol
      with typings.arcgisDashJsDashApi.__esri.symbols.FillSymbol

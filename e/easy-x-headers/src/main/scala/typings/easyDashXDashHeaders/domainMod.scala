@@ -1,6 +1,5 @@
 package typings.easyDashXDashHeaders
 
-import typings.easyDashXDashHeaders.domainMod.Domain
 import typings.easyDashXDashHeaders.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js

@@ -1,6 +1,7 @@
 package typings.googlemaps.google.maps.visualization
 
 import typings.googlemaps.google.maps.Map
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait HeatmapLayerOptions extends js.Object {
   var data: js.Any
   var dissipating: js.UndefOr[Boolean] = js.undefined
   var gradient: js.UndefOr[js.Array[String]] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var maxIntensity: js.UndefOr[Double] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var radius: js.UndefOr[Double] = js.undefined
@@ -21,7 +22,7 @@ object HeatmapLayerOptions {
     data: js.Any,
     dissipating: js.UndefOr[Boolean] = js.undefined,
     gradient: js.Array[String] = null,
-    map: Map = null,
+    map: Map[Element] = null,
     maxIntensity: Int | Double = null,
     opacity: Int | Double = null,
     radius: Int | Double = null

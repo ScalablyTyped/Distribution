@@ -11,7 +11,8 @@ class Research protected () extends js.Object {
   val Creator: Double = js.native
   var FavoriteService: String = js.native
   val Parent: js.Any = js.native
-  var `Word.Research_typekey`: Research = js.native
+  @JSName("Word.Research_typekey")
+  var WordDotResearch_typekey: Research = js.native
   def IsResearchService(ServiceID: String): Boolean = js.native
   /**
     * @param string [QueryString='']

@@ -1,15 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.GROUP
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.IMAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.LINE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.SHAPE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.SHEETS_CHART
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.TABLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.UNSUPPORTED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.VIDEO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.WORD_ART
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

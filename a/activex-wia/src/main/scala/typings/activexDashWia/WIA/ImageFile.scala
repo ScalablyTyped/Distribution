@@ -44,7 +44,8 @@ class ImageFile protected () extends js.Object {
   val Properties_Original: Properties = js.native
   /** Returns the Vertical pixels per inch of the image */
   val VerticalResolution: Double = js.native
-  var `WIA.ImageFile_typekey`: ImageFile = js.native
+  @JSName("WIA.ImageFile_typekey")
+  var WIADotImageFile_typekey: ImageFile = js.native
   /** Returns the Width of the image in pixels */
   val Width: Double = js.native
   /** Returns the specified item in the vector by position */

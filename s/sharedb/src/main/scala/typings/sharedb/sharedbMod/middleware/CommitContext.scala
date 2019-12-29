@@ -1,9 +1,11 @@
 package typings.sharedb.sharedbMod.middleware
 
+import typings.sharedb.libAgentMod.^
 import typings.sharedb.libSharedbMod.Snapshot
 import typings.sharedb.sharedbMod.Op
 import typings.sharedb.sharedbMod.Projection
 import typings.sharedb.sharedbMod.SubmitRequest
+import typings.sharedb.sharedbMod.sharedb
 import typings.sharedb.sharedbStrings.afterSubmit
 import typings.sharedb.sharedbStrings.apply
 import typings.sharedb.sharedbStrings.commit
@@ -27,8 +29,8 @@ object CommitContext {
   @scala.inline
   def apply(
     action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
-    agent: typings.sharedb.libAgentMod.^,
-    backend: typings.sharedb.sharedbMod.sharedb,
+    agent: ^,
+    backend: sharedb,
     collection: String,
     id: String,
     index: String,

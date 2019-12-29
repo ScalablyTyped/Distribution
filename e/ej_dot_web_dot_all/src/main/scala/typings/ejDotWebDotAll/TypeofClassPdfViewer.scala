@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPdfViewer
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PdfViewer]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), PdfViewer] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PdfViewer]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PdfViewer] {
   var Locale: js.Any = js.native
   var fn: PdfViewer = js.native
 }

@@ -1,19 +1,6 @@
 package typings.winrt.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.activeCaption
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.background
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.buttonFace
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.buttonText
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.captionText
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.grayText
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.highlight
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.highlightText
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.hotlight
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.inactiveCaption
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.inactiveCaptionText
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.window
-import typings.winrt.Windows.UI.ViewManagement.UIElementType.windowText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

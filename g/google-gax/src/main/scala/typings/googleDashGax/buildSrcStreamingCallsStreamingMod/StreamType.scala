@@ -1,9 +1,6 @@
 package typings.googleDashGax.buildSrcStreamingCallsStreamingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashGax.buildSrcStreamingCallsStreamingMod.StreamType.BIDI_STREAMING
-import typings.googleDashGax.buildSrcStreamingCallsStreamingMod.StreamType.CLIENT_STREAMING
-import typings.googleDashGax.buildSrcStreamingCallsStreamingMod.StreamType.SERVER_STREAMING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

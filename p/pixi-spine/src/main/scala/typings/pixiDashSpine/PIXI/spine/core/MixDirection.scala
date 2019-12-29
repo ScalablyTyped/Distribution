@@ -1,8 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.MixDirection.mixIn
-import typings.pixiDashSpine.PIXI.spine.core.MixDirection.mixOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLNextIdElement")
 @js.native
 class HTMLNextIdElement protected () extends js.Object {
-  var `MSHTML.HTMLNextIdElement_typekey`: HTMLNextIdElement = js.native
+  @JSName("MSHTML.HTMLNextIdElement_typekey")
+  var MSHTMLDotHTMLNextIdElement_typekey: HTMLNextIdElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait SelectEventArgs extends js.Object {
   /** returns the TimePicker model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TimePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previously selected time value
     */
   var prevTime: js.UndefOr[String] = js.undefined
@@ -21,12 +21,7 @@ trait SelectEventArgs extends js.Object {
 
 object SelectEventArgs {
   @scala.inline
-  def apply(
-    model: typings.ejDotWebDotAll.ej.TimePicker.Model = null,
-    prevTime: String = null,
-    `type`: String = null,
-    value: String = null
-  ): SelectEventArgs = {
+  def apply(model: Model = null, prevTime: String = null, `type`: String = null, value: String = null): SelectEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (prevTime != null) __obj.updateDynamic("prevTime")(prevTime.asInstanceOf[js.Any])

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.high
-import typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.low
-import typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.medium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

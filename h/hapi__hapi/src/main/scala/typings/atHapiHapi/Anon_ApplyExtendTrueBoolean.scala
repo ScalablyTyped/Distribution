@@ -1,6 +1,6 @@
 package typings.atHapiHapi
 
-import typings.atHapiHapi.atHapiHapiNumbers.`true`
+import typings.atHapiHapi.atHapiHapiBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

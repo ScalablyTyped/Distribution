@@ -14,6 +14,7 @@ class HorizontalLineFormat protected () extends js.Object {
   val Parent: js.Any = js.native
   var PercentWidth: Double = js.native
   var WidthType: WdHorizontalLineWidthType = js.native
-  var `Word.HorizontalLineFormat_typekey`: HorizontalLineFormat = js.native
+  @JSName("Word.HorizontalLineFormat_typekey")
+  var WordDotHorizontalLineFormat_typekey: HorizontalLineFormat = js.native
 }
 

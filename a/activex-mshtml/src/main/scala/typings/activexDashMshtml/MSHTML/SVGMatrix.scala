@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGMatrix")
 @js.native
 class SVGMatrix protected () extends js.Object {
-  var `MSHTML.SVGMatrix_typekey`: SVGMatrix = js.native
+  @JSName("MSHTML.SVGMatrix_typekey")
+  var MSHTMLDotSVGMatrix_typekey: SVGMatrix = js.native
   var a: Double = js.native
   var b: Double = js.native
   var c: Double = js.native

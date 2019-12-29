@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureHistoricalBufferLengthUnit.megabytes
-import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureHistoricalBufferLengthUnit.seconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

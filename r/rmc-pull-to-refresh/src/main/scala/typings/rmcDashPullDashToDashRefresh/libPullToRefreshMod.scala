@@ -2,7 +2,6 @@ package typings.rmcDashPullDashToDashRefresh
 
 import typings.react.reactMod.Component
 import typings.rmcDashPullDashToDashRefresh.libPropsTypeMod.PropsType
-import typings.rmcDashPullDashToDashRefresh.libPullToRefreshMod.PullToRefresh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

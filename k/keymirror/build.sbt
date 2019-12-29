@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keymirror"
-version := "0.1.1-dt-20190322Z-d42fad"
+version := "0.1.1-dt-20190322Z-9ac21a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

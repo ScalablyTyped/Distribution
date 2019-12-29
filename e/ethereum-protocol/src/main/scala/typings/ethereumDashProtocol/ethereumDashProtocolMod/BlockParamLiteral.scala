@@ -1,9 +1,6 @@
 package typings.ethereumDashProtocol.ethereumDashProtocolMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Earliest
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Latest
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

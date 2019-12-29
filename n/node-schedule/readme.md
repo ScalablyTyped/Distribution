@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-schedule
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 A cron-like and not-cron-like job scheduler for Node.

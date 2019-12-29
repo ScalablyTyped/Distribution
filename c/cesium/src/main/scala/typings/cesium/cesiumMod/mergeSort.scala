@@ -1,6 +1,5 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.mergeSort.Comparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

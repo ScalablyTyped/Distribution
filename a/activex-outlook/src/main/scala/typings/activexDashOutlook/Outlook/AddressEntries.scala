@@ -10,7 +10,8 @@ class AddressEntries protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.AddressEntries_typekey`: AddressEntries = js.native
+  @JSName("Outlook.AddressEntries_typekey")
+  var OutlookDotAddressEntries_typekey: AddressEntries = js.native
   val Parent: js.Any = js.native
   val RawTable: js.Any = js.native
   val Session: NameSpace = js.native

@@ -1,6 +1,6 @@
 package typings.rollup.rollupMod
 
-import typings.rollup.rollupStrings.Empty
+import typings.rollup.rollupStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object _SourceMapInput {
     __obj.asInstanceOf[_SourceMapInput]
   }
   @scala.inline
-  def Anon_(mappings: Empty): _SourceMapInput = {
+  def Anon_(mappings: _empty): _SourceMapInput = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_SourceMapInput]

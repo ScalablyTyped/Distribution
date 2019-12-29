@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.RangeLocation.after
-import typings.officeDashJsDashPreview.Word.RangeLocation.before
-import typings.officeDashJsDashPreview.Word.RangeLocation.content
-import typings.officeDashJsDashPreview.Word.RangeLocation.end
-import typings.officeDashJsDashPreview.Word.RangeLocation.start
-import typings.officeDashJsDashPreview.Word.RangeLocation.whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

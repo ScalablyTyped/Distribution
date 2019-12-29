@@ -91,7 +91,7 @@ trait TabsGroupsContentGroup extends js.Object {
     * custom controls.
     * @Default {ej.Ribbon.Type.Button}
     */
-  var `type`: js.UndefOr[typings.ejDotWebDotAll.ej.Ribbon.Type | String] = js.undefined
+  var `type`: js.UndefOr[Type | String] = js.undefined
 }
 
 object TabsGroupsContentGroup {
@@ -117,7 +117,7 @@ object TabsGroupsContentGroup {
     text: String = null,
     toggleButtonSettings: js.Any = null,
     toolTip: String = null,
-    `type`: typings.ejDotWebDotAll.ej.Ribbon.Type | String = null
+    `type`: Type | String = null
   ): TabsGroupsContentGroup = {
     val __obj = js.Dynamic.literal()
     if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings.asInstanceOf[js.Any])

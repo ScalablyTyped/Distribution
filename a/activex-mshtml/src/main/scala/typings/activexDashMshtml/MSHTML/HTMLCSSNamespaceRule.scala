@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLCSSNamespaceRule")
 @js.native
 class HTMLCSSNamespaceRule protected () extends js.Object {
-  var `MSHTML.HTMLCSSNamespaceRule_typekey`: HTMLCSSNamespaceRule = js.native
+  @JSName("MSHTML.HTMLCSSNamespaceRule_typekey")
+  var MSHTMLDotHTMLCSSNamespaceRule_typekey: HTMLCSSNamespaceRule = js.native
   var cssText: String = js.native
   val namespaceURI: String = js.native
   val parentRule: IHTMLCSSRule = js.native

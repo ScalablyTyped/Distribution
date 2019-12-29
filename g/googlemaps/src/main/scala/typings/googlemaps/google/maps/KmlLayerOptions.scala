@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KmlLayerOptions extends js.Object {
   var clickable: js.UndefOr[Boolean] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var preserveViewport: js.UndefOr[Boolean] = js.undefined
   var screenOverlays: js.UndefOr[Boolean] = js.undefined
   var suppressInfoWindows: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +19,7 @@ object KmlLayerOptions {
   @scala.inline
   def apply(
     clickable: js.UndefOr[Boolean] = js.undefined,
-    map: Map = null,
+    map: Map[Element] = null,
     preserveViewport: js.UndefOr[Boolean] = js.undefined,
     screenOverlays: js.UndefOr[Boolean] = js.undefined,
     suppressInfoWindows: js.UndefOr[Boolean] = js.undefined,

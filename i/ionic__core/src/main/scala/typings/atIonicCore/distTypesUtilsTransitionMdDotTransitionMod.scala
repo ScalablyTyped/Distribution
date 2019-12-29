@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core/dist/types/utils/transition/md.transition", JSImport.Namespace)
 @js.native
 object distTypesUtilsTransitionMdDotTransitionMod extends js.Object {
-  def mdTransitionAnimation(`_`: HTMLElement, opts: TransitionOptions): Animation = js.native
+  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = js.native
 }
 

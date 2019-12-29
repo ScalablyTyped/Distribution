@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
-import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType
-import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JS
-import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JSON
-import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.Template
-import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.XML
 import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -424,8 +419,7 @@ object View extends js.Object {
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[ViewType with Double] = js.native
       /* 0 */ @js.native
-      object HTML
-        extends TopLevel[typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.HTML with Double]
+      object HTML extends TopLevel[HTML with Double]
       
       /* 1 */ @js.native
       object JS extends TopLevel[JS with Double]

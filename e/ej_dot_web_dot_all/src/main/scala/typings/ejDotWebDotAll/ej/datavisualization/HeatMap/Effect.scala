@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Effect.Fade
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Effect.None
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Effect.Slide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

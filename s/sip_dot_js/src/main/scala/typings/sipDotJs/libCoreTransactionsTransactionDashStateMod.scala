@@ -1,14 +1,6 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Accepted
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Calling
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Completed
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Confirmed
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Proceeding
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Terminated
-import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Trying
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

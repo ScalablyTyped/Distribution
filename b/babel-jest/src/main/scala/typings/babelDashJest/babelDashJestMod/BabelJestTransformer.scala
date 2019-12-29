@@ -1,6 +1,6 @@
 package typings.babelDashJest.babelDashJestMod
 
-import typings.babelDashJest.babelDashJestNumbers.`true`
+import typings.babelDashJest.babelDashJestBooleans.`true`
 import typings.std.TransformStreamDefaultController
 import typings.std.Transformer
 import scala.scalajs.js

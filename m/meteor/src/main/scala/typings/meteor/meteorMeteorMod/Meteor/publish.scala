@@ -1,5 +1,6 @@
 package typings.meteor.meteorMeteorMod.Meteor
 
+import typings.meteor.meteorMeteorMod.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object publish extends js.Object {
   /** Connection **/
-  def apply(
-    name: String,
-    func: js.ThisFunction1[/* this */ typings.meteor.meteorMeteorMod.Subscription, /* repeated */ js.Any, Unit]
-  ): Unit = js.native
+  def apply(name: String, func: js.ThisFunction1[/* this */ Subscription, /* repeated */ js.Any, Unit]): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.trianglify.trianglifyMod.trianglify
 
-import typings.trianglify.trianglifyNumbers.`false`
+import typings.trianglify.trianglifyBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

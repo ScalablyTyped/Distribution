@@ -1,6 +1,6 @@
 package typings.atUifabricMergeDashStyles
 
-import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`false`
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesBooleans.`false`
 import typings.atUifabricMergeDashStyles.libIStyleOptionsMod.IStyleOptions
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IProcessedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet

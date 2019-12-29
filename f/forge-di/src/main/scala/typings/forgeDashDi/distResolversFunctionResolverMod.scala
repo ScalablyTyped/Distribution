@@ -1,6 +1,5 @@
 package typings.forgeDashDi
 
-import typings.forgeDashDi.distResolversFunctionResolverMod.FunctionResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

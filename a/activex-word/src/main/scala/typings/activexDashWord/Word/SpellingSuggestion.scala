@@ -11,6 +11,7 @@ class SpellingSuggestion protected () extends js.Object {
   val Creator: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.SpellingSuggestion_typekey`: SpellingSuggestion = js.native
+  @JSName("Word.SpellingSuggestion_typekey")
+  var WordDotSpellingSuggestion_typekey: SpellingSuggestion = js.native
 }
 

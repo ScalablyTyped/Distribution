@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Cancelled
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Error
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Published
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Unpublished
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

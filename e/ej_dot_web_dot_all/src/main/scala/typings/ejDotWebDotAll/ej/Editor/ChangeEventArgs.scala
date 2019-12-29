@@ -13,7 +13,7 @@ trait ChangeEventArgs extends js.Object {
   var isInteraction: js.UndefOr[Boolean] = js.undefined
   /** returns the corresponding editor model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Editor.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object ChangeEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Editor.Model = null,
+    model: Model = null,
     `type`: String = null,
     value: Int | Double = null
   ): ChangeEventArgs = {

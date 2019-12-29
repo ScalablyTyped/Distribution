@@ -1,7 +1,5 @@
 package typings.expirymanager
 
-import typings.expirymanager.expirymanagerMod.Key
-import typings.expirymanager.expirymanagerMod.Keys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

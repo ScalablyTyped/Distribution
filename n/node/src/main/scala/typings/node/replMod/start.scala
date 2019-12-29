@@ -14,7 +14,7 @@ object start extends js.Object {
     * the input prompt.
     */
   def apply(): REPLServer = js.native
-  def apply(options: java.lang.String): REPLServer = js.native
+  def apply(options: String): REPLServer = js.native
   def apply(options: ReplOptions): REPLServer = js.native
 }
 

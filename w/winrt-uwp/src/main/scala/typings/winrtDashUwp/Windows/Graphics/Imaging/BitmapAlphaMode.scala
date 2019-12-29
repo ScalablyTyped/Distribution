@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapAlphaMode.ignore
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapAlphaMode.premultiplied
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapAlphaMode.straight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

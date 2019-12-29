@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.amcharts.amCoordinateChartMod.AmCoordinateChart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

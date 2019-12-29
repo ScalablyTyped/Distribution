@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class SoftEdgeFormat protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
-  var `Office.SoftEdgeFormat_typekey`: SoftEdgeFormat = js.native
+  @JSName("Office.SoftEdgeFormat_typekey")
+  var OfficeDotSoftEdgeFormat_typekey: SoftEdgeFormat = js.native
   var Radius: Double = js.native
   var Type: MsoSoftEdgeType = js.native
 }

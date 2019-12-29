@@ -45,27 +45,16 @@ trait GlideSystem extends js.Object {
   def error(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any): Unit = js.native
   def error(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
   def error(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any, parm5: js.Any): Unit = js.native
+  def eventQueue(eventName: String, gr: GlideRecord, optionalParam1: String, optionalParam2: String): Unit = js.native
   def eventQueue(
     eventName: String,
-    gr: typings.servicenow.servicenow.GlideRecord,
-    optionalParam1: String,
-    optionalParam2: String
-  ): Unit = js.native
-  def eventQueue(
-    eventName: String,
-    gr: typings.servicenow.servicenow.GlideRecord,
+    gr: GlideRecord,
     optionalParam1: String,
     optionalParam2: String,
     eventQueue: String
   ): Unit = js.native
-  def eventQueueScheduled(
-    name: String,
-    instance: typings.servicenow.servicenow.GlideRecord,
-    parm1: String,
-    parm2: String,
-    expiration: js.Object
-  ): Unit = js.native
-  def executeNow(job: typings.servicenow.servicenow.GlideRecord): String = js.native
+  def eventQueueScheduled(name: String, instance: GlideRecord, parm1: String, parm2: String, expiration: js.Object): Unit = js.native
+  def executeNow(job: GlideRecord): String = js.native
   def generateGUID(): String = js.native
   def getCallerScopeName(): String = js.native
   def getCssCacheVersionString(): String = js.native

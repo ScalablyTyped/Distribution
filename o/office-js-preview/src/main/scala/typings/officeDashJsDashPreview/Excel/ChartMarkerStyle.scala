@@ -1,19 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.automatic
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.circle
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.dash
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.diamond
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.dot
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.invalid
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.none
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.picture
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.plus
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.square
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.star
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.triangle
-import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.x
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

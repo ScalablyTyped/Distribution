@@ -1,7 +1,6 @@
 package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsDisposableIDisposableMod.IDisposable
-import typings.wonderDashFrp.distCommonjsDisposableInnerSubscriptionGroupMod.InnerSubscriptionGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

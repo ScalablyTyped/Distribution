@@ -1,9 +1,6 @@
 package typings.webcola
 
 import typings.webcola.distSrcDescentMod.Descent
-import typings.webcola.distSrcLayout3dMod.Layout3D
-import typings.webcola.distSrcLayout3dMod.Link3D
-import typings.webcola.distSrcLayout3dMod.Node3D
 import typings.webcola.distSrcRectangleMod.GraphNode
 import typings.webcola.distSrcRectangleMod.Rectangle
 import typings.webcola.distSrcVpscMod.Variable

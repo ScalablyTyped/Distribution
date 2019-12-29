@@ -1,6 +1,5 @@
 package typings.fibers.futureMod
 
-import typings.fibers.futureMod._Global_.FutureFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

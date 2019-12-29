@@ -7,9 +7,9 @@ import typings.atUifabricStyling.atUifabricStylingNumbers.`320`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`480`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`640`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`768`
-import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and (-ms-high-contrast: active)`
-import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and (-ms-high-contrast: black-on-white)`
-import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and (-ms-high-contrast: white-on-black)`
+import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`
+import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`
+import typings.atUifabricStyling.atUifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/styling/lib/styles/CommonStyles", JSImport.Namespace)
 @js.native
 object libStylesCommonStylesMod extends js.Object {
-  val HighContrastSelector: `@media screen and (-ms-high-contrast: active)` = js.native
-  val HighContrastSelectorBlack: `@media screen and (-ms-high-contrast: white-on-black)` = js.native
-  val HighContrastSelectorWhite: `@media screen and (-ms-high-contrast: black-on-white)` = js.native
+  val HighContrastSelector: `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis` = js.native
+  val HighContrastSelectorBlack: `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis` = js.native
+  val HighContrastSelectorWhite: `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis` = js.native
   val ScreenWidthMaxLarge: Double = js.native
   val ScreenWidthMaxMedium: Double = js.native
   val ScreenWidthMaxSmall: Double = js.native

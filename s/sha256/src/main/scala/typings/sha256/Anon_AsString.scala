@@ -1,6 +1,6 @@
 package typings.sha256
 
-import typings.sha256.sha256Numbers.`true`
+import typings.sha256.sha256Booleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/animations/browser/browser", "ɵAnimation")
+@JSImport("@angular/animations/browser/browser", "\u0275Animation")
 @js.native
 class ɵAnimation protected () extends js.Object {
   def this(_driver: AnimationDriver, input: js.Array[AnimationMetadata]) = this()

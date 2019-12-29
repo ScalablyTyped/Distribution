@@ -1,8 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateEventConstants.Type
-import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateEventConstants.Type.CLICK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

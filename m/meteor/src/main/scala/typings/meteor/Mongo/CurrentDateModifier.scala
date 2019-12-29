@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.meteor.Anon_Date
-  - typings.meteor.meteorNumbers.`true`
+  - typings.meteor.meteorBooleans.`true`
 */
 trait CurrentDateModifier extends js.Object
 

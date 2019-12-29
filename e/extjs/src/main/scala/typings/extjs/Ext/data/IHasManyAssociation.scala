@@ -11,15 +11,15 @@ trait IHasManyAssociation
   /** [Config Option] (Boolean) */
   var autoLoad: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var filterProperty: js.UndefOr[java.lang.String] = js.undefined
+  var filterProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var foreignKey: js.UndefOr[java.lang.String] = js.undefined
+  var foreignKey: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var storeConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 
 object IHasManyAssociation {
@@ -27,34 +27,34 @@ object IHasManyAssociation {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    associatedModel: java.lang.String = null,
-    associatedName: java.lang.String = null,
-    associationKey: java.lang.String = null,
+    associatedModel: String = null,
+    associatedName: String = null,
+    associationKey: String = null,
     autoLoad: js.UndefOr[Boolean] = js.undefined,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    filterProperty: java.lang.String = null,
-    foreignKey: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    filterProperty: String = null,
+    foreignKey: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getReader: () => typings.extjs.Ext.data.reader.IReader = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IHasManyAssociation = null,
     mixins: js.Any = null,
-    model: java.lang.String = null,
-    name: java.lang.String = null,
-    ownerModel: java.lang.String = null,
-    ownerName: java.lang.String = null,
-    primaryKey: java.lang.String = null,
+    model: String = null,
+    name: String = null,
+    ownerModel: String = null,
+    ownerName: String = null,
+    primaryKey: String = null,
     reader: typings.extjs.Ext.data.reader.IReader = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     storeConfig: js.Any = null,
-    `type`: java.lang.String = null,
+    `type`: String = null,
     uses: Array = null
   ): IHasManyAssociation = {
     val __obj = js.Dynamic.literal()

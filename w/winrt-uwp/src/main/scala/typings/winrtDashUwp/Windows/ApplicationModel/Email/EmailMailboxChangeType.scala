@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.changeTrackingLost
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderCreated
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderModified
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageCreated
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

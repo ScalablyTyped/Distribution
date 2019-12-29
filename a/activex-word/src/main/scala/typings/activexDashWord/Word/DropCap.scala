@@ -14,7 +14,8 @@ class DropCap protected () extends js.Object {
   var LinesToDrop: Double = js.native
   val Parent: js.Any = js.native
   var Position: WdDropPosition = js.native
-  var `Word.DropCap_typekey`: DropCap = js.native
+  @JSName("Word.DropCap_typekey")
+  var WordDotDropCap_typekey: DropCap = js.native
   def Clear(): Unit = js.native
   def Enable(): Unit = js.native
 }

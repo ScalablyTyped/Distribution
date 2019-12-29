@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Form")
 @js.native
 class Form protected () extends js.Object {
-  var `Access.Form_typekey`: typings.activexDashAccess.Access.Form = js.native
+  @JSName("Access.Form_typekey")
+  var AccessDotForm_typekey: typings.activexDashAccess.Access.Form = js.native
   val ActiveControl: Control = js.native
   var AfterBeginTransaction: String = js.native
   var AfterBeginTransactionMacro: String = js.native

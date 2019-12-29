@@ -1,11 +1,11 @@
 package typings.webpack.webpackMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpack.webpackStrings.`text/javascript`
 import typings.webpack.webpackStrings.base64
 import typings.webpack.webpackStrings.hex
 import typings.webpack.webpackStrings.latin1
 import typings.webpack.webpackStrings.module
+import typings.webpack.webpackStrings.textSlashjavascript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ trait Output extends js.Object {
   /** The JSONP function used by webpack for asnyc loading of chunks. */
   var jsonpFunction: js.UndefOr[String] = js.undefined
   /** Allows customization of the script type webpack injects script tags into the DOM to download async chunks. */
-  var jsonpScriptType: js.UndefOr[`text/javascript` | module] = js.undefined
+  var jsonpScriptType: js.UndefOr[textSlashjavascript | module] = js.undefined
   /** If set, export the bundle as library. output.library is the name. */
   var library: js.UndefOr[String | js.Array[String] | StringDictionary[String]] = js.undefined
   /** Configure which module or modules will be exposed via the `libraryTarget` */
@@ -115,7 +115,7 @@ object Output {
     hotUpdateFunction: String = null,
     hotUpdateMainFilename: String = null,
     jsonpFunction: String = null,
-    jsonpScriptType: `text/javascript` | module = null,
+    jsonpScriptType: textSlashjavascript | module = null,
     library: String | js.Array[String] | StringDictionary[String] = null,
     libraryExport: String | js.Array[String] = null,
     libraryTarget: LibraryTarget = null,

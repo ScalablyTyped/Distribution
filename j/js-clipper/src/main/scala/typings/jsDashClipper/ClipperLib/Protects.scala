@@ -1,10 +1,6 @@
 package typings.jsDashClipper.ClipperLib
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsDashClipper.ClipperLib.Protects.ipBoth
-import typings.jsDashClipper.ClipperLib.Protects.ipLeft
-import typings.jsDashClipper.ClipperLib.Protects.ipNone
-import typings.jsDashClipper.ClipperLib.Protects.ipRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,7 +14,8 @@ class HeadersFooters protected () extends js.Object {
   val Footer: HeaderFooter = js.native
   val Header: HeaderFooter = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.HeadersFooters_typekey`: HeadersFooters = js.native
+  @JSName("PowerPoint.HeadersFooters_typekey")
+  var PowerPointDotHeadersFooters_typekey: HeadersFooters = js.native
   val SlideNumber: HeaderFooter = js.native
   def Clear(): Unit = js.native
 }

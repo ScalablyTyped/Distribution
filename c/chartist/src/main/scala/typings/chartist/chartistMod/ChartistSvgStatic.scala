@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ChartistSvgStatic
-  extends Instantiable1[(/* name */ HTMLElement) | (/* name */ String), IChartistSvg]
-     with Instantiable4[
+  extends Instantiable2[
       (/* name */ HTMLElement) | (/* name */ String), 
       /* attributes */ js.Object, 
-      /* className */ String, 
-      /* parent */ js.Object, 
       IChartistSvg
     ]
      with Instantiable3[
@@ -27,9 +24,12 @@ trait ChartistSvgStatic
       /* className */ String, 
       IChartistSvg
     ]
-     with Instantiable2[
+     with Instantiable1[(/* name */ HTMLElement) | (/* name */ String), IChartistSvg]
+     with Instantiable4[
       (/* name */ HTMLElement) | (/* name */ String), 
       /* attributes */ js.Object, 
+      /* className */ String, 
+      /* parent */ js.Object, 
       IChartistSvg
     ]
      with Instantiable5[

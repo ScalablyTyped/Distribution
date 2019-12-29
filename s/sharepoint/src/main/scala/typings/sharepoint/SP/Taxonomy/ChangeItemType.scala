@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.Taxonomy
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Taxonomy.ChangeItemType.group
-import typings.sharepoint.SP.Taxonomy.ChangeItemType.site
-import typings.sharepoint.SP.Taxonomy.ChangeItemType.term
-import typings.sharepoint.SP.Taxonomy.ChangeItemType.termSet
-import typings.sharepoint.SP.Taxonomy.ChangeItemType.termStore
-import typings.sharepoint.SP.Taxonomy.ChangeItemType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

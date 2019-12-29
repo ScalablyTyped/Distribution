@@ -2,7 +2,6 @@ package typings.classDashTransformer
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.classDashTransformer.classTransformOptionsMod.ClassTransformOptions
-import typings.classDashTransformer.classTransformerMod.ClassType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

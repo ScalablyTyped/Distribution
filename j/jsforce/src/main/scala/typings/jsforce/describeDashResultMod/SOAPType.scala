@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.jsforce.jsforceStrings.`tns:ID`
-  - typings.jsforce.jsforceStrings.`xsd:anyType`
-  - typings.jsforce.jsforceStrings.`xsd:base64Binary`
-  - typings.jsforce.jsforceStrings.`xsd:boolean`
-  - typings.jsforce.jsforceStrings.`xsd:date`
-  - typings.jsforce.jsforceStrings.`xsd:dateTime`
-  - typings.jsforce.jsforceStrings.`xsd:double`
-  - typings.jsforce.jsforceStrings.`xsd:int`
-  - typings.jsforce.jsforceStrings.`xsd:string`
-  - typings.jsforce.jsforceStrings.`xsd:time`
-  - typings.jsforce.jsforceStrings.`urn:address`
-  - typings.jsforce.jsforceStrings.`urn:JunctionIdListNames`
-  - typings.jsforce.jsforceStrings.`urn:location`
-  - typings.jsforce.jsforceStrings.`urn:RecordTypesSupported`
-  - typings.jsforce.jsforceStrings.`urn:RelationshipReferenceTo`
-  - typings.jsforce.jsforceStrings.`urn:SearchLayoutButtonsDisplayed`
-  - typings.jsforce.jsforceStrings.`urn:SearchLayoutFieldsDisplayed`
+  - typings.jsforce.jsforceStrings.tnsColonID
+  - typings.jsforce.jsforceStrings.xsdColonanyType
+  - typings.jsforce.jsforceStrings.xsdColonbase64Binary
+  - typings.jsforce.jsforceStrings.xsdColonboolean
+  - typings.jsforce.jsforceStrings.xsdColondate
+  - typings.jsforce.jsforceStrings.xsdColondateTime
+  - typings.jsforce.jsforceStrings.xsdColondouble
+  - typings.jsforce.jsforceStrings.xsdColonint
+  - typings.jsforce.jsforceStrings.xsdColonstring
+  - typings.jsforce.jsforceStrings.xsdColontime
+  - typings.jsforce.jsforceStrings.urnColonaddress
+  - typings.jsforce.jsforceStrings.urnColonJunctionIdListNames
+  - typings.jsforce.jsforceStrings.urnColonlocation
+  - typings.jsforce.jsforceStrings.urnColonRecordTypesSupported
+  - typings.jsforce.jsforceStrings.urnColonRelationshipReferenceTo
+  - typings.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed
+  - typings.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed
 */
 trait SOAPType extends js.Object
 
@@ -29,38 +29,38 @@ object SOAPType {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def `tns:ID`: typings.jsforce.jsforceStrings.`tns:ID` = this.cast("tns:ID")
+  def tnsColonID: typings.jsforce.jsforceStrings.tnsColonID = this.cast("tns:ID")
   @scala.inline
-  def `urn:JunctionIdListNames`: typings.jsforce.jsforceStrings.`urn:JunctionIdListNames` = this.cast("urn:JunctionIdListNames")
+  def urnColonJunctionIdListNames: typings.jsforce.jsforceStrings.urnColonJunctionIdListNames = this.cast("urn:JunctionIdListNames")
   @scala.inline
-  def `urn:RecordTypesSupported`: typings.jsforce.jsforceStrings.`urn:RecordTypesSupported` = this.cast("urn:RecordTypesSupported")
+  def urnColonRecordTypesSupported: typings.jsforce.jsforceStrings.urnColonRecordTypesSupported = this.cast("urn:RecordTypesSupported")
   @scala.inline
-  def `urn:RelationshipReferenceTo`: typings.jsforce.jsforceStrings.`urn:RelationshipReferenceTo` = this.cast("urn:RelationshipReferenceTo")
+  def urnColonRelationshipReferenceTo: typings.jsforce.jsforceStrings.urnColonRelationshipReferenceTo = this.cast("urn:RelationshipReferenceTo")
   @scala.inline
-  def `urn:SearchLayoutButtonsDisplayed`: typings.jsforce.jsforceStrings.`urn:SearchLayoutButtonsDisplayed` = this.cast("urn:SearchLayoutButtonsDisplayed")
+  def urnColonSearchLayoutButtonsDisplayed: typings.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed = this.cast("urn:SearchLayoutButtonsDisplayed")
   @scala.inline
-  def `urn:SearchLayoutFieldsDisplayed`: typings.jsforce.jsforceStrings.`urn:SearchLayoutFieldsDisplayed` = this.cast("urn:SearchLayoutFieldsDisplayed")
+  def urnColonSearchLayoutFieldsDisplayed: typings.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed = this.cast("urn:SearchLayoutFieldsDisplayed")
   @scala.inline
-  def `urn:address`: typings.jsforce.jsforceStrings.`urn:address` = this.cast("urn:address")
+  def urnColonaddress: typings.jsforce.jsforceStrings.urnColonaddress = this.cast("urn:address")
   @scala.inline
-  def `urn:location`: typings.jsforce.jsforceStrings.`urn:location` = this.cast("urn:location")
+  def urnColonlocation: typings.jsforce.jsforceStrings.urnColonlocation = this.cast("urn:location")
   @scala.inline
-  def `xsd:anyType`: typings.jsforce.jsforceStrings.`xsd:anyType` = this.cast("xsd:anyType")
+  def xsdColonanyType: typings.jsforce.jsforceStrings.xsdColonanyType = this.cast("xsd:anyType")
   @scala.inline
-  def `xsd:base64Binary`: typings.jsforce.jsforceStrings.`xsd:base64Binary` = this.cast("xsd:base64Binary")
+  def xsdColonbase64Binary: typings.jsforce.jsforceStrings.xsdColonbase64Binary = this.cast("xsd:base64Binary")
   @scala.inline
-  def `xsd:boolean`: typings.jsforce.jsforceStrings.`xsd:boolean` = this.cast("xsd:boolean")
+  def xsdColonboolean: typings.jsforce.jsforceStrings.xsdColonboolean = this.cast("xsd:boolean")
   @scala.inline
-  def `xsd:date`: typings.jsforce.jsforceStrings.`xsd:date` = this.cast("xsd:date")
+  def xsdColondate: typings.jsforce.jsforceStrings.xsdColondate = this.cast("xsd:date")
   @scala.inline
-  def `xsd:dateTime`: typings.jsforce.jsforceStrings.`xsd:dateTime` = this.cast("xsd:dateTime")
+  def xsdColondateTime: typings.jsforce.jsforceStrings.xsdColondateTime = this.cast("xsd:dateTime")
   @scala.inline
-  def `xsd:double`: typings.jsforce.jsforceStrings.`xsd:double` = this.cast("xsd:double")
+  def xsdColondouble: typings.jsforce.jsforceStrings.xsdColondouble = this.cast("xsd:double")
   @scala.inline
-  def `xsd:int`: typings.jsforce.jsforceStrings.`xsd:int` = this.cast("xsd:int")
+  def xsdColonint: typings.jsforce.jsforceStrings.xsdColonint = this.cast("xsd:int")
   @scala.inline
-  def `xsd:string`: typings.jsforce.jsforceStrings.`xsd:string` = this.cast("xsd:string")
+  def xsdColonstring: typings.jsforce.jsforceStrings.xsdColonstring = this.cast("xsd:string")
   @scala.inline
-  def `xsd:time`: typings.jsforce.jsforceStrings.`xsd:time` = this.cast("xsd:time")
+  def xsdColontime: typings.jsforce.jsforceStrings.xsdColontime = this.cast("xsd:time")
 }
 

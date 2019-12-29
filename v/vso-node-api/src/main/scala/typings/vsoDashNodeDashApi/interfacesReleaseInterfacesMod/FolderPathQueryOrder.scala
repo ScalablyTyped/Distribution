@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.Ascending
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.Descending
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

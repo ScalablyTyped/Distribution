@@ -1,12 +1,6 @@
 package typings.winrt.Windows.System.UserProfile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.System.UserProfile.SetAccountPictureResult.changeDisabled
-import typings.winrt.Windows.System.UserProfile.SetAccountPictureResult.failure
-import typings.winrt.Windows.System.UserProfile.SetAccountPictureResult.fileSizeError
-import typings.winrt.Windows.System.UserProfile.SetAccountPictureResult.largeOrDynamicError
-import typings.winrt.Windows.System.UserProfile.SetAccountPictureResult.success
-import typings.winrt.Windows.System.UserProfile.SetAccountPictureResult.videoFrameSizeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.AboveAddress
-import typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.BelowAddress
-import typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.Suppress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 
 trait PrivateKeyInput extends js.Object {
   var format: js.UndefOr[KeyFormat] = js.undefined
-  var key: java.lang.String | Buffer
-  var passphrase: js.UndefOr[java.lang.String | Buffer] = js.undefined
+  var key: String | Buffer
+  var passphrase: js.UndefOr[String | Buffer] = js.undefined
   var `type`: js.UndefOr[pkcs1 | pkcs8 | sec1] = js.undefined
 }
 
 object PrivateKeyInput {
   @scala.inline
   def apply(
-    key: java.lang.String | Buffer,
+    key: String | Buffer,
     format: KeyFormat = null,
-    passphrase: java.lang.String | Buffer = null,
+    passphrase: String | Buffer = null,
     `type`: pkcs1 | pkcs8 | sec1 = null
   ): PrivateKeyInput = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])

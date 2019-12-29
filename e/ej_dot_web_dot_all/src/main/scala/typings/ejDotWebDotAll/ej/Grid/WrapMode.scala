@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.WrapMode.Both
-import typings.ejDotWebDotAll.ej.Grid.WrapMode.Content
-import typings.ejDotWebDotAll.ej.Grid.WrapMode.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

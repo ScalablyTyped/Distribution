@@ -2,7 +2,6 @@ package typings.atMaterialSwitch
 
 import typings.atMaterialBase.foundationMod.MDCFoundation
 import typings.atMaterialSwitch.adapterMod.MDCSwitchAdapter
-import typings.atMaterialSwitch.foundationMod.MDCSwitchFoundation
 import typings.std.Event
 import typings.std.Partial
 import scala.scalajs.js

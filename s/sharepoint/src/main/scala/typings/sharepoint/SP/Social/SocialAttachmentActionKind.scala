@@ -1,8 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialAttachmentActionKind.adHocAction
-import typings.sharepoint.SP.Social.SocialAttachmentActionKind.navigate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

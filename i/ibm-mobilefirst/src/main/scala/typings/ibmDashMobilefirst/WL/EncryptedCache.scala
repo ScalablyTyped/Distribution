@@ -1,6 +1,5 @@
 package typings.ibmDashMobilefirst.WL
 
-import typings.ibmDashMobilefirst.WL.EncryptedCache.StatusHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

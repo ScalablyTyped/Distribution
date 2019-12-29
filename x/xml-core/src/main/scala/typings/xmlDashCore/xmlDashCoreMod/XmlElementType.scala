@@ -9,7 +9,7 @@ trait XmlElementType
      with XmlSchemaItemParser {
   /**
     * Local name for Xml element
-    * 
+    *
     * @type {string}
     * @memberOf XmlElementType
     */

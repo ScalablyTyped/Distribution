@@ -1,10 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreProcessEventsOption.processAllIfPresent
-import typings.winrt.Windows.UI.Core.CoreProcessEventsOption.processOneAndAllPending
-import typings.winrt.Windows.UI.Core.CoreProcessEventsOption.processOneIfPresent
-import typings.winrt.Windows.UI.Core.CoreProcessEventsOption.processUntilQuit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

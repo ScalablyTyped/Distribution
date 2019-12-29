@@ -10,7 +10,8 @@ class SmartTag protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   val DownloadURL: String = js.native
-  var `Excel.SmartTag_typekey`: SmartTag = js.native
+  @JSName("Excel.SmartTag_typekey")
+  var ExcelDotSmartTag_typekey: SmartTag = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
   @JSName("Properties")

@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Bottom extends js.Object {
-  var bottom: js.UndefOr[Double | NumberOrCallback] = js.undefined
-  var bottomLeft: js.UndefOr[Double | NumberOrCallback] = js.undefined
-  var bottomRight: js.UndefOr[Double | NumberOrCallback] = js.undefined
-  var top: js.UndefOr[Double | NumberOrCallback] = js.undefined
-  var topLeft: js.UndefOr[Double | NumberOrCallback] = js.undefined
-  var topRight: js.UndefOr[Double | NumberOrCallback] = js.undefined
+  var bottom: js.UndefOr[NumberOrCallback] = js.undefined
+  var bottomLeft: js.UndefOr[NumberOrCallback] = js.undefined
+  var bottomRight: js.UndefOr[NumberOrCallback] = js.undefined
+  var top: js.UndefOr[NumberOrCallback] = js.undefined
+  var topLeft: js.UndefOr[NumberOrCallback] = js.undefined
+  var topRight: js.UndefOr[NumberOrCallback] = js.undefined
 }
 
 object Anon_Bottom {
   @scala.inline
   def apply(
-    bottom: Double | NumberOrCallback = null,
-    bottomLeft: Double | NumberOrCallback = null,
-    bottomRight: Double | NumberOrCallback = null,
-    top: Double | NumberOrCallback = null,
-    topLeft: Double | NumberOrCallback = null,
-    topRight: Double | NumberOrCallback = null
+    bottom: NumberOrCallback = null,
+    bottomLeft: NumberOrCallback = null,
+    bottomRight: NumberOrCallback = null,
+    top: NumberOrCallback = null,
+    topLeft: NumberOrCallback = null,
+    topRight: NumberOrCallback = null
   ): Anon_Bottom = {
     val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])

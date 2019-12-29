@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JSONEditor extends js.Object {
+  var compact: js.UndefOr[js.Function0[Unit]] = js.native
+  var format: js.UndefOr[js.Function0[Unit]] = js.native
+  var repair: js.UndefOr[js.Function0[Unit]] = js.native
   def collapseAll(): Unit = js.native
   def destroy(): Unit = js.native
   def expandAll(): Unit = js.native

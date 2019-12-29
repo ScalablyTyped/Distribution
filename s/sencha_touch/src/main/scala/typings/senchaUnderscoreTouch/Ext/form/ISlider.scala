@@ -10,7 +10,7 @@ trait ISlider
   		* @returns String
   		*/
   @JSName("getCls")
-  var getCls_ISlider: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCls_ISlider: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of increment
   		* @returns Number
   		*/
@@ -48,7 +48,7 @@ trait ISlider
   		* @param cls String The new value.
   		*/
   @JSName("setCls")
-  var setCls_ISlider: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCls_ISlider: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of increment
   		* @param increment Number The new value.
   		*/
@@ -82,7 +82,7 @@ object ISlider {
   @scala.inline
   def apply(
     IField: typings.senchaUnderscoreTouch.Ext.field.IField = null,
-    getCls: () => java.lang.String = null,
+    getCls: () => String = null,
     getIncrement: () => Double = null,
     getMaxValue: () => Double = null,
     getMinValue: () => Double = null,
@@ -93,7 +93,7 @@ object ISlider {
     minValue: Int | Double = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     reset: () => typings.senchaUnderscoreTouch.Ext.field.IField = null,
-    setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
+    setCls: /* cls */ js.UndefOr[String] => Unit = null,
     setIncrement: /* increment */ js.UndefOr[Double] => Unit = null,
     setMaxValue: /* maxValue */ js.UndefOr[Double] => Unit = null,
     setMinValue: /* minValue */ js.UndefOr[Double] => Unit = null,

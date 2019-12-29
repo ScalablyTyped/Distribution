@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.audio
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.audio.onDeviceListChanged")
 @js.native
 object onDeviceListChanged
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]]]
 

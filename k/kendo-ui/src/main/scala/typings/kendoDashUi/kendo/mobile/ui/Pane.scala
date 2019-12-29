@@ -19,7 +19,7 @@ class Pane protected ()
   def navigate(url: String, transition: String): Unit = js.native
   def replace(url: String, transition: String): Unit = js.native
   def showLoading(): Unit = js.native
-  def view(): typings.kendoDashUi.kendo.mobile.ui.View = js.native
+  def view(): View = js.native
 }
 
 /* static members */

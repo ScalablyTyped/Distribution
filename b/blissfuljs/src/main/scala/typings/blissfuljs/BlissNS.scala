@@ -1,14 +1,6 @@
 package typings.blissfuljs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.blissfuljs.BlissNS.AriaRequestEvent
-import typings.blissfuljs.BlissNS.BlissCollectionArray
-import typings.blissfuljs.BlissNS.BlissDecoratedArrayElement
-import typings.blissfuljs.BlissNS.BlissDecoratedElement
-import typings.blissfuljs.BlissNS.BlissNativeExtentions
-import typings.blissfuljs.BlissNS.BlissStatic
-import typings.blissfuljs.BlissNS.BlissStaticCollection
-import typings.blissfuljs.BlissNS.CommandEvent
 import typings.blissfuljs.blissfuljsStrings.MSContentZoom
 import typings.blissfuljs.blissfuljsStrings.MSGestureChange
 import typings.blissfuljs.blissfuljsStrings.MSGestureDoubleTap

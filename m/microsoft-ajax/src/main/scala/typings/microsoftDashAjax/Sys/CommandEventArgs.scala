@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CommandEventArgs protected () extends EventArgs {
   //#region Constructors
-  def this(commandName: java.lang.String, commandArgument: js.Any, commandSource: js.Any) = this()
+  def this(commandName: String, commandArgument: js.Any, commandSource: js.Any) = this()
   /**
     * Gets a value that represents the command argument.
     */
@@ -23,7 +23,7 @@ class CommandEventArgs protected () extends EventArgs {
   /**
     * Gets a string that specifies the command name.
     */
-  def get_commandName(): java.lang.String = js.native
+  def get_commandName(): String = js.native
   /**
     * Gets a value that represents the command source.
     */

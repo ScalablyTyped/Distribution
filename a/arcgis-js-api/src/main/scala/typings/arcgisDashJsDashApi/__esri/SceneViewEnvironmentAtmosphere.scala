@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.HashMap
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.high
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.low
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +22,7 @@ trait SceneViewEnvironmentAtmosphere extends AnonymousAccessor {
     *
     * @default low
     */
-  var quality: js.UndefOr[String] = js.undefined
+  var quality: js.UndefOr[low | high] = js.undefined
 }
 
 object SceneViewEnvironmentAtmosphere {
@@ -30,7 +32,7 @@ object SceneViewEnvironmentAtmosphere {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     get: /* propertyName */ String => _ = null,
-    quality: String = null,
+    quality: low | high = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironmentAtmosphere]) with (js.Function1[/* props */ HashMap[_], SceneViewEnvironmentAtmosphere]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): SceneViewEnvironmentAtmosphere = {

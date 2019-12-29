@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.TooltipOverflowMode.Parent
-import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.TooltipOverflowMode.Self
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

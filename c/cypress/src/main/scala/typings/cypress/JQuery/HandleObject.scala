@@ -32,20 +32,20 @@ trait HandleObject[TTarget, TData] extends js.Object {
   /**
     * Event handler function passed to jQuery during event binding. If `false` was passed during event binding, the handler refers to a single shared function that simply returns `false`.
     */
-  def handler(`this`: TTarget, t: TriggeredEvent[TTarget, TData, _, _], args: js.Any*): js.Any
+  def handler(t: TriggeredEvent[TTarget, TData, _, _], args: js.Any*): js.Any
 }
 
 object HandleObject {
   @scala.inline
   def apply[TTarget, TData](
     data: TData,
-    handler: (TTarget, TriggeredEvent[TTarget, TData, _, _], /* repeated */ js.Any) => js.Any,
+    handler: (TriggeredEvent[TTarget, TData, _, _], /* repeated */ js.Any) => js.Any,
     namespace: String,
     origType: String,
     `type`: String,
     selector: String = null
   ): HandleObject[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), namespace = namespace.asInstanceOf[js.Any], origType = origType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], handler = js.Any.fromFunction2(handler), namespace = namespace.asInstanceOf[js.Any], origType = origType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleObject[TTarget, TData]]

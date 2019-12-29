@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.appsV1beta2StatefulSetListMod.StatefulSetList
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta2`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1beta2
 import typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2.StatefulSet
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object appsV1beta2StatefulSetListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`apps/v1beta2`] = js.native
+    val apiVersion: Output[appsSlashv1beta2] = js.native
     val items: Output[js.Array[StatefulSet]] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may

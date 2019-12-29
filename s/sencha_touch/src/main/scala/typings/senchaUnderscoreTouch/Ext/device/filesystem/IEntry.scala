@@ -15,15 +15,15 @@ trait IEntry extends IBase {
   /** [Method] Returns the file system on which the entry resides
   		* @returns Ext.device.filesystem.FileSystem The entry file system.
   		*/
-  var getFileSystem: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.device.filesystem.IFileSystem]] = js.undefined
+  var getFileSystem: js.UndefOr[js.Function0[IFileSystem]] = js.undefined
   /** [Method] Returns the full absolute path from the root to the entry
   		* @returns String The entry full path.
   		*/
-  var getFullPath: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFullPath: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the name of the entry excluding the path leading to it
   		* @returns String The entry name.
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Looks up the parent directory containing the entry
   		* @param config Object The object which contains the following config options:
   		*/
@@ -57,11 +57,11 @@ object IEntry {
     config: js.Any = null,
     copyTo: /* config */ js.UndefOr[js.Any] => Unit = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getFileSystem: () => typings.senchaUnderscoreTouch.Ext.device.filesystem.IFileSystem = null,
-    getFullPath: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getName: () => java.lang.String = null,
+    extend: String = null,
+    getFileSystem: () => IFileSystem = null,
+    getFullPath: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getName: () => String = null,
     getParent: /* config */ js.UndefOr[js.Any] => Unit = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,

@@ -1,6 +1,5 @@
 package typings.atIonicCliDashFramework
 
-import typings.atIonicCliDashFramework.utilsPromiseMod.Promisify
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

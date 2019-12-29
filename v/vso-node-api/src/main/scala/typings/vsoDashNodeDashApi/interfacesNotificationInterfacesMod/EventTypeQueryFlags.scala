@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EventTypeQueryFlags.IncludeFields
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EventTypeQueryFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

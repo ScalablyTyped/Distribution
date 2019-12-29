@@ -18,17 +18,12 @@ trait BreakLocation extends js.Object {
     * Script identifier as reported in the <code>Debugger.scriptParsed</code>.
     */
   var scriptId: ScriptId
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 
 object BreakLocation {
   @scala.inline
-  def apply(
-    lineNumber: Double,
-    scriptId: ScriptId,
-    columnNumber: Int | Double = null,
-    `type`: java.lang.String = null
-  ): BreakLocation = {
+  def apply(lineNumber: Double, scriptId: ScriptId, columnNumber: Int | Double = null, `type`: String = null): BreakLocation = {
     val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

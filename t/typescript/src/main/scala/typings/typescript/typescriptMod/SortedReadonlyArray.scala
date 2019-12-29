@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SortedReadonlyArray[T] extends ReadonlyArray[T] {
-  var ` __sortedArrayBrand`: js.Any = js.native
+  @JSName(" __sortedArrayBrand")
+  var Space__sortedArrayBrand: js.Any = js.native
 }
 

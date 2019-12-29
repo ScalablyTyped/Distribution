@@ -52,7 +52,6 @@ object libLinearDequeCollectionMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -60,7 +59,6 @@ object libLinearDequeCollectionMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -68,7 +66,6 @@ object libLinearDequeCollectionMod extends js.Object {
       *
       * @return Iterator to the end.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */

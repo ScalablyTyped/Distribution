@@ -1,6 +1,6 @@
 package typings.parse5.parse5Mod
 
-import typings.parse5.parse5Strings.`#text`
+import typings.parse5.parse5Strings.Numbersigntext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait DefaultTreeTextNode extends DefaultTreeChildNode {
     * The name of the node.
     */
   @JSName("nodeName")
-  var nodeName_DefaultTreeTextNode: `#text`
+  var nodeName_DefaultTreeTextNode: Numbersigntext
   /**
     * Text node source code location info. Available if location info is enabled via {@link ParserOptions}.
     */
@@ -24,7 +24,7 @@ trait DefaultTreeTextNode extends DefaultTreeChildNode {
 object DefaultTreeTextNode {
   @scala.inline
   def apply(
-    nodeName: `#text`,
+    nodeName: Numbersigntext,
     parentNode: DefaultTreeParentNode,
     value: String,
     sourceCodeLocation: Location = null

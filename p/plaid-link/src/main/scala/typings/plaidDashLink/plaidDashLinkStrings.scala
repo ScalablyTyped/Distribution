@@ -7,6 +7,7 @@ import typings.plaidDashLink.plaidDashLinkMod.Plaid.ExitStatus
 import typings.plaidDashLink.plaidDashLinkMod.Plaid.Language
 import typings.plaidDashLink.plaidDashLinkMod.Plaid.Product
 import typings.plaidDashLink.plaidDashLinkMod.Plaid.VerificationStatus
+import typings.plaidDashLink.plaidDashLinkMod.Plaid.ViewName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +17,20 @@ object plaidDashLinkStrings {
   sealed trait CA extends Country
   
   @js.native
-  sealed trait ERROR extends EventName
+  sealed trait CONNECTED extends ViewName
   
   @js.native
-  sealed trait EXIT extends EventName
+  sealed trait CREDENTIAL extends ViewName
+  
+  @js.native
+  sealed trait ERROR
+    extends EventName
+       with ViewName
+  
+  @js.native
+  sealed trait EXIT
+    extends EventName
+       with ViewName
   
   @js.native
   sealed trait GB extends Country
@@ -28,16 +39,30 @@ object plaidDashLinkStrings {
   sealed trait HANDOFF extends EventName
   
   @js.native
+  sealed trait LOADING extends ViewName
+  
+  @js.native
+  sealed trait MFA extends ViewName
+  
+  @js.native
   sealed trait OPEN extends EventName
   
   @js.native
   sealed trait OPEN_MY_PLAID extends EventName
   
   @js.native
+  sealed trait RECAPTCHA extends ViewName
+  
+  @js.native
   sealed trait SEARCH_INSTITUTION extends EventName
   
   @js.native
-  sealed trait SELECT_INSTITUTION extends EventName
+  sealed trait SELECT_ACCOUNT extends ViewName
+  
+  @js.native
+  sealed trait SELECT_INSTITUTION
+    extends EventName
+       with ViewName
   
   @js.native
   sealed trait SUBMIT_CREDENTIALS extends EventName
@@ -120,6 +145,10 @@ object plaidDashLinkStrings {
   @scala.inline
   def CA: CA = "CA".asInstanceOf[CA]
   @scala.inline
+  def CONNECTED: CONNECTED = "CONNECTED".asInstanceOf[CONNECTED]
+  @scala.inline
+  def CREDENTIAL: CREDENTIAL = "CREDENTIAL".asInstanceOf[CREDENTIAL]
+  @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
   def EXIT: EXIT = "EXIT".asInstanceOf[EXIT]
@@ -128,11 +157,19 @@ object plaidDashLinkStrings {
   @scala.inline
   def HANDOFF: HANDOFF = "HANDOFF".asInstanceOf[HANDOFF]
   @scala.inline
+  def LOADING: LOADING = "LOADING".asInstanceOf[LOADING]
+  @scala.inline
+  def MFA: MFA = "MFA".asInstanceOf[MFA]
+  @scala.inline
   def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
   @scala.inline
   def OPEN_MY_PLAID: OPEN_MY_PLAID = "OPEN_MY_PLAID".asInstanceOf[OPEN_MY_PLAID]
   @scala.inline
+  def RECAPTCHA: RECAPTCHA = "RECAPTCHA".asInstanceOf[RECAPTCHA]
+  @scala.inline
   def SEARCH_INSTITUTION: SEARCH_INSTITUTION = "SEARCH_INSTITUTION".asInstanceOf[SEARCH_INSTITUTION]
+  @scala.inline
+  def SELECT_ACCOUNT: SELECT_ACCOUNT = "SELECT_ACCOUNT".asInstanceOf[SELECT_ACCOUNT]
   @scala.inline
   def SELECT_INSTITUTION: SELECT_INSTITUTION = "SELECT_INSTITUTION".asInstanceOf[SELECT_INSTITUTION]
   @scala.inline

@@ -1,11 +1,6 @@
 package typings.hubspotDashPace.HubSpotPaceInterfaces
 
 import org.scalablytyped.runtime.TopLevel
-import typings.hubspotDashPace.HubSpotPaceInterfaces.PaceEvent.done
-import typings.hubspotDashPace.HubSpotPaceInterfaces.PaceEvent.hide
-import typings.hubspotDashPace.HubSpotPaceInterfaces.PaceEvent.restart
-import typings.hubspotDashPace.HubSpotPaceInterfaces.PaceEvent.start
-import typings.hubspotDashPace.HubSpotPaceInterfaces.PaceEvent.stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

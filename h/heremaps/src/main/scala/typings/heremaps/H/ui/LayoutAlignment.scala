@@ -1,18 +1,6 @@
 package typings.heremaps.H.ui
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.ui.LayoutAlignment.BOTTOM_CENTER
-import typings.heremaps.H.ui.LayoutAlignment.BOTTOM_LEFT
-import typings.heremaps.H.ui.LayoutAlignment.BOTTOM_RIGHT
-import typings.heremaps.H.ui.LayoutAlignment.LEFT_BOTTOM
-import typings.heremaps.H.ui.LayoutAlignment.LEFT_MIDDLE
-import typings.heremaps.H.ui.LayoutAlignment.LEFT_TOP
-import typings.heremaps.H.ui.LayoutAlignment.RIGHT_BOTTOM
-import typings.heremaps.H.ui.LayoutAlignment.RIGHT_MIDDLE
-import typings.heremaps.H.ui.LayoutAlignment.RIGHT_TOP
-import typings.heremaps.H.ui.LayoutAlignment.TOP_CENTER
-import typings.heremaps.H.ui.LayoutAlignment.TOP_LEFT
-import typings.heremaps.H.ui.LayoutAlignment.TOP_RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

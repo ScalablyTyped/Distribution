@@ -3,12 +3,12 @@ package typings.grommet.componentsGridMod
 import typings.grommet.Anon_12
 import typings.grommet.Anon_Column
 import typings.grommet.Anon_End
-import typings.grommet.grommetStrings.`1/2`
-import typings.grommet.grommetStrings.`1/3`
-import typings.grommet.grommetStrings.`1/4`
-import typings.grommet.grommetStrings.`2/3`
-import typings.grommet.grommetStrings.`2/4`
-import typings.grommet.grommetStrings.`3/4`
+import typings.grommet.grommetStrings.`1Slash2`
+import typings.grommet.grommetStrings.`1Slash3`
+import typings.grommet.grommetStrings.`1Slash4`
+import typings.grommet.grommetStrings.`2Slash3`
+import typings.grommet.grommetStrings.`2Slash4`
+import typings.grommet.grommetStrings.`3Slash4`
 import typings.grommet.grommetStrings.auto
 import typings.grommet.grommetStrings.center
 import typings.grommet.grommetStrings.end
@@ -43,7 +43,7 @@ trait GridProps extends js.Object {
   var as: js.UndefOr[PolymorphicType] = js.undefined
   var columns: js.UndefOr[
     (js.Array[
-      xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
+      xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | Anon_12 | String
   ] = js.undefined
   var fill: js.UndefOr[FillType] = js.undefined
@@ -54,7 +54,7 @@ trait GridProps extends js.Object {
   var margin: js.UndefOr[MarginType] = js.undefined
   var rows: js.UndefOr[
     (js.Array[
-      xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
+      xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | String
   ] = js.undefined
   var tag: js.UndefOr[PolymorphicType] = js.undefined
@@ -70,7 +70,7 @@ object GridProps {
     areas: js.Array[Anon_End | js.Array[String]] = null,
     as: PolymorphicType = null,
     columns: (js.Array[
-      xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
+      xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | Anon_12 | String = null,
     fill: FillType = null,
     gap: GapType | Anon_Column = null,
@@ -79,7 +79,7 @@ object GridProps {
     justifyContent: JustifyContentType = null,
     margin: MarginType = null,
     rows: (js.Array[
-      xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
+      xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | String = null,
     tag: PolymorphicType = null
   ): GridProps = {

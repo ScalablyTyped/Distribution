@@ -12,7 +12,8 @@ class Subdocuments protected () extends js.Object {
   val Creator: Double = js.native
   var Expanded: Boolean = js.native
   val Parent: js.Any = js.native
-  var `Word.Subdocuments_typekey`: Subdocuments = js.native
+  @JSName("Word.Subdocuments_typekey")
+  var WordDotSubdocuments_typekey: Subdocuments = js.native
   def AddFromFile(
     Name: js.Any,
     ConfirmConversions: js.UndefOr[js.Any],

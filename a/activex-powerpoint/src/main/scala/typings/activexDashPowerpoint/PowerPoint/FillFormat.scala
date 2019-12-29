@@ -35,7 +35,8 @@ class FillFormat protected () extends js.Object {
   val Pattern: MsoPatternType = js.native
   @JSName("PictureEffects")
   val PictureEffects_Original: PictureEffects = js.native
-  var `PowerPoint.FillFormat_typekey`: FillFormat = js.native
+  @JSName("PowerPoint.FillFormat_typekey")
+  var PowerPointDotFillFormat_typekey: FillFormat = js.native
   val PresetGradientType: MsoPresetGradientType = js.native
   val PresetTexture: MsoPresetTexture = js.native
   var RotateWithObject: MsoTriState = js.native

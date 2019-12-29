@@ -1,7 +1,6 @@
 package typings.closureDashCompiler
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.closureDashCompiler.closureDashCompilerMod.Callback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

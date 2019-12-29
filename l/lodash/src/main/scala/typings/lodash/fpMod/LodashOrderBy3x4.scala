@@ -14,12 +14,11 @@ import scala.scalajs.js.annotation._
 trait LodashOrderBy3x4[T] extends js.Object {
   def apply(
     iteratees: Many[
-      js.Function1[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-        NotVoid
+      ValueIteratee[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
       ]
     ]
-  ): LodashOrderBy3x5[T] = js.native
+  ): LodashOrderBy4x5[T] = js.native
   def apply(
     iteratees: Many[
       (js.Function1[

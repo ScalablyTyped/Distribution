@@ -1,6 +1,5 @@
 package typings.browserfs
 
-import typings.browserfs.distNodeBackendInMemoryMod.InMemoryFileSystem
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
 import typings.browserfs.distNodeGenericKeyUnderscoreValueUnderscoreFilesystemMod.SimpleSyncStore

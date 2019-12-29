@@ -17,7 +17,8 @@ class ODBCConnection protected () extends js.Object {
   var Connection: String = js.native
   val Creator: XlCreator = js.native
   var EnableRefresh: Boolean = js.native
-  var `Excel.ODBCConnection_typekey`: ODBCConnection = js.native
+  @JSName("Excel.ODBCConnection_typekey")
+  var ExcelDotODBCConnection_typekey: ODBCConnection = js.native
   val Parent: js.Any = js.native
   val RefreshDate: VarDate = js.native
   var RefreshOnFileOpen: Boolean = js.native

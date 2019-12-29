@@ -51,8 +51,8 @@ trait XmlService extends js.Object {
   def createDocType(elementName: String): DocType = js.native
   def createDocType(elementName: String, publicId: String, systemId: String): DocType = js.native
   def createDocType(elementName: String, systemId: String): DocType = js.native
-  def createDocument(): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Document = js.native
-  def createDocument(rootElement: Element): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Document = js.native
+  def createDocument(): Document = js.native
+  def createDocument(rootElement: Element): Document = js.native
   def createElement(name: String): Element = js.native
   def createElement(name: String, namespace: Namespace): Element = js.native
   def createText(text: String): Text = js.native
@@ -63,6 +63,6 @@ trait XmlService extends js.Object {
   def getPrettyFormat(): Format = js.native
   def getRawFormat(): Format = js.native
   def getXmlNamespace(): Namespace = js.native
-  def parse(xml: String): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Document = js.native
+  def parse(xml: String): Document = js.native
 }
 

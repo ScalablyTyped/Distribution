@@ -17,7 +17,7 @@ trait IRecord extends IObservable {
   /** [Method] Cancels all changes made in the current edit operation  */
   var cancelEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var clientIdProperty: js.UndefOr[java.lang.String] = js.undefined
+  var clientIdProperty: js.UndefOr[String] = js.undefined
   /** [Method] Usually called by the Ext data Store which owns the model instance
   		* @param silent Boolean true to skip notification of the owning store of the change.
   		*/
@@ -26,7 +26,7 @@ trait IRecord extends IObservable {
   		* @param id String A new id. If you don't specify this a new id will be generated for you. To generate a phantom instance with a new id use: var rec = record.copy(); // clone the record with a new id
   		* @returns Ext.data.Model
   		*/
-  var copy: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], IModel]] = js.undefined
+  var copy: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], IModel]] = js.undefined
   /** [Property] (Boolean) */
   var dirty: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Boolean) */
@@ -52,7 +52,7 @@ trait IRecord extends IObservable {
   		* @param fieldName String The field to fetch the value for.
   		* @returns Object The value.
   		*/
-  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Gets all of the data from this Models loaded associations
   		* @returns Object The nested data set for the Model's loaded associations.
   		*/
@@ -72,7 +72,7 @@ trait IRecord extends IObservable {
   /** [Method] Returns the value of clientIdProperty
   		* @returns String
   		*/
-  var getClientIdProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getClientIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns an object containing the data set on this record
   		* @param includeAssociated Boolean true to include the associated data.
   		* @returns Object The data.
@@ -93,7 +93,7 @@ trait IRecord extends IObservable {
   /** [Method] Returns the value of idProperty
   		* @returns String
   		*/
-  var getIdProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of identifier
   		* @returns Object/String
   		*/
@@ -117,14 +117,14 @@ trait IRecord extends IObservable {
   /** [Config Option] (String/Object/String[]/Object[]) */
   var hasOne: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var idProperty: js.UndefOr[java.lang.String] = js.undefined
+  var idProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object/String) */
   var identifier: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns true if the passed field name has been modified since the load or last commit
   		* @param fieldName String Ext.data.Field.name
   		* @returns Boolean
   		*/
-  var isModified: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var isModified: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Checks if the model is valid
   		* @returns Boolean true if the model is valid.
   		*/
@@ -180,7 +180,7 @@ trait IRecord extends IObservable {
   /** [Method] Sets the value of clientIdProperty
   		* @param clientIdProperty String The new value.
   		*/
-  var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] This sets the data directly without converting and applying default values
   		* @param data Object
   		* @returns Ext.data.Model This Record.
@@ -213,7 +213,7 @@ trait IRecord extends IObservable {
   /** [Method] Sets the value of idProperty
   		* @param idProperty String The new value.
   		*/
-  var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of identifier
   		* @param identifier Object/String The new value.
   		*/
@@ -235,7 +235,7 @@ trait IRecord extends IObservable {
   /** [Method] Returns a url suitable string for this model instance
   		* @returns String The url string for this model instance.
   		*/
-  var toUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] This un joins this record from an instance of a class
   		* @param store Ext.data.Store The store from which this model has been removed.
   		*/
@@ -256,7 +256,7 @@ object IRecord {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -269,48 +269,48 @@ object IRecord {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     cancelEdit: () => Unit = null,
     clearListeners: () => Unit = null,
-    clientIdProperty: java.lang.String = null,
+    clientIdProperty: String = null,
     commit: /* silent */ js.UndefOr[Boolean] => Unit = null,
     config: js.Any = null,
-    copy: /* id */ js.UndefOr[java.lang.String] => IModel = null,
+    copy: /* id */ js.UndefOr[String] => IModel = null,
     destroy: () => Unit = null,
     dirty: js.UndefOr[Boolean] = js.undefined,
     editing: js.UndefOr[Boolean] = js.undefined,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     endEdit: (/* silent */ js.UndefOr[Boolean], /* modifiedFieldNames */ js.UndefOr[Array]) => Unit = null,
     erase: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: js.Any = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    get: /* fieldName */ js.UndefOr[java.lang.String] => _ = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    get: /* fieldName */ js.UndefOr[String] => _ = null,
     getAssociatedData: () => _ = null,
     getAssociations: () => Array = null,
     getBelongsTo: () => _ = null,
     getBubbleEvents: () => _ = null,
     getChanges: () => _ = null,
-    getClientIdProperty: () => java.lang.String = null,
+    getClientIdProperty: () => String = null,
     getData: /* includeAssociated */ js.UndefOr[Boolean] => _ = null,
     getFields: () => _ = null,
     getHasMany: () => _ = null,
     getHasOne: () => _ = null,
     getId: () => _ = null,
-    getIdProperty: () => java.lang.String = null,
+    getIdProperty: () => String = null,
     getIdentifier: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getIsErased: () => Unit = null,
     getListeners: () => _ = null,
     getProxy: () => _ = null,
     getUseCache: () => Boolean = null,
     getValidations: () => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasMany: js.Any = null,
     hasOne: js.Any = null,
-    idProperty: java.lang.String = null,
+    idProperty: String = null,
     identifier: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    isModified: /* fieldName */ js.UndefOr[java.lang.String] => Boolean = null,
+    isModified: /* fieldName */ js.UndefOr[String] => Boolean = null,
     isValid: () => Boolean = null,
     join: /* store */ js.UndefOr[IStore] => Unit = null,
     listeners: js.Any = null,
@@ -318,7 +318,7 @@ object IRecord {
     modified: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     phantom: js.UndefOr[Boolean] = js.undefined,
@@ -329,7 +329,7 @@ object IRecord {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     save: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel = null,
@@ -338,7 +338,7 @@ object IRecord {
     setAssociations: /* associations */ js.UndefOr[Array] => Unit = null,
     setBelongsTo: /* belongsTo */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setClientIdProperty: /* clientIdProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setClientIdProperty: /* clientIdProperty */ js.UndefOr[String] => Unit = null,
     setConvertedData: /* data */ js.UndefOr[js.Any] => IModel = null,
     setData: /* rawData */ js.UndefOr[js.Any] => IModel = null,
     setDirty: () => Unit = null,
@@ -346,7 +346,7 @@ object IRecord {
     setHasMany: /* hasMany */ js.UndefOr[js.Any] => Unit = null,
     setHasOne: /* hasOne */ js.UndefOr[js.Any] => Unit = null,
     setId: /* id */ js.UndefOr[js.Any] => Unit = null,
-    setIdProperty: /* idProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setIdProperty: /* idProperty */ js.UndefOr[String] => Unit = null,
     setIdentifier: /* identifier */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setProxy: /* proxy */ js.UndefOr[js.Any] => Unit = null,
@@ -356,8 +356,8 @@ object IRecord {
     statics: js.Any = null,
     stores: Array = null,
     suspendEvents: () => Unit = null,
-    toUrl: () => java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    toUrl: () => String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unjoin: /* store */ js.UndefOr[IStore] => Unit = null,

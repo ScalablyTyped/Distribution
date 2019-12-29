@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.badSim
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.deviceBlocked
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.deviceFailure
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.deviceLocked
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.off
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.ready
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.simNotInserted
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsDeviceStatus.subscriptionNotActivated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

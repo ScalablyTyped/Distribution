@@ -13,7 +13,7 @@ trait BeforeAjaxRequestEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /** returns the FileExplorer model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object BeforeAjaxRequestEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     data: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     `type`: String = null
   ): BeforeAjaxRequestEventArgs = {
     val __obj = js.Dynamic.literal()

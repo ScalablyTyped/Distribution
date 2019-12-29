@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSpreadsheet
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Spreadsheet]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Spreadsheet] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Spreadsheet]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Spreadsheet] {
   var Locale: js.Any = js.native
   var fn: Spreadsheet = js.native
 }

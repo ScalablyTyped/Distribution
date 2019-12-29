@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`scale-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`scale-stop`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.scale
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -21,7 +24,7 @@ trait ScaleEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
     */
-  var `type`: String
+  var `type`: `scale-start` | scale | `scale-stop`
   /**
     * The x scale factor used to enlarge or shrink the geometry.
     *
@@ -42,7 +45,7 @@ object ScaleEventInfo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String,
+    `type`: `scale-start` | scale | `scale-stop`,
     xScale: Double,
     yScale: Double
   ): ScaleEventInfo = {

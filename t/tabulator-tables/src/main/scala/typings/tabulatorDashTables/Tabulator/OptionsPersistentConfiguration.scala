@@ -1,6 +1,6 @@
 package typings.tabulatorDashTables.Tabulator
 
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`true`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`true`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.columns
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.cookie
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.filter

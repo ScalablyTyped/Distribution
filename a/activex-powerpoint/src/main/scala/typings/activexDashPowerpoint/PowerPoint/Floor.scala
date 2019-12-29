@@ -16,7 +16,8 @@ class Floor protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   var PictureType: js.Any = js.native
-  var `PowerPoint.Floor_typekey`: Floor = js.native
+  @JSName("PowerPoint.Floor_typekey")
+  var PowerPointDotFloor_typekey: Floor = js.native
   var Thickness: Double = js.native
   def ClearFormats(): js.Any = js.native
   def Paste(): Unit = js.native

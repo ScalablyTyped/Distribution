@@ -12,7 +12,8 @@ class HTMLDivisions protected () extends js.Object {
   val Creator: Double = js.native
   val NestingLevel: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.HTMLDivisions_typekey`: HTMLDivisions = js.native
+  @JSName("Word.HTMLDivisions_typekey")
+  var WordDotHTMLDivisions_typekey: HTMLDivisions = js.native
   def Add(): HTMLDivision = js.native
   def Add(Range: js.Any): HTMLDivision = js.native
   def Item(Index: Double): HTMLDivision = js.native

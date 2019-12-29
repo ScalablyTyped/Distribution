@@ -14,16 +14,16 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassXmlHttpRequest
-  extends Instantiable2[
-      (/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), 
-      /* prefixUrl */ String, 
-      default
-    ]
-     with Instantiable1[(/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), default]
-     with Instantiable3[
+  extends Instantiable3[
       (/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), 
       /* prefixUrl */ String, 
       /* deprecateMsg */ Boolean, 
+      default
+    ]
+     with Instantiable1[(/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), default]
+     with Instantiable2[
+      (/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), 
+      /* prefixUrl */ String, 
       default
     ] {
   val Name: String = js.native

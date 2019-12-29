@@ -96,7 +96,7 @@ trait NodesLabel extends js.Object {
   /** Defines how to align the text inside the label.
     * @Default {ej.datavisualization.Diagram.TextAlign.Center}
     */
-  var textAlign: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextAlign | String] = js.undefined
+  var textAlign: js.UndefOr[TextAlign | String] = js.undefined
   /** Sets how to decorate the label text.
     * @Default {ej.datavisualization.Diagram.TextDecorations.None}
     */
@@ -149,7 +149,7 @@ object NodesLabel {
     rotateAngle: Int | Double = null,
     templateId: String = null,
     text: String = null,
-    textAlign: typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextAlign | String = null,
+    textAlign: TextAlign | String = null,
     textDecoration: TextDecorations | String = null,
     textOverflow: js.UndefOr[Boolean] = js.undefined,
     verticalAlignment: VerticalAlignment | String = null,

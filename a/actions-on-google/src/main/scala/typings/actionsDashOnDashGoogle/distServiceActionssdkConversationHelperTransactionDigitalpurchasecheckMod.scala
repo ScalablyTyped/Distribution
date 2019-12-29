@@ -1,6 +1,6 @@
 package typings.actionsDashOnDashGoogle
 
-import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDOTintentDOTDIGITAL_PURCHASE_CHECK
+import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDotintentDotDIGITAL_PURCHASE_CHECK
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsTransactionsV3DigitalPurchaseCheckResult
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsTransactionsV3DigitalPurchaseCheckSpec
 import typings.actionsDashOnDashGoogle.distServiceActionssdkConversationHelperHelperMod.Helper
@@ -17,7 +17,7 @@ object distServiceActionssdkConversationHelperTransactionDigitalpurchasecheckMod
     * @public
     */
   class DigitalPurchaseCheck () extends Helper[
-          actionsDOTintentDOTDIGITAL_PURCHASE_CHECK, 
+          actionsDotintentDotDIGITAL_PURCHASE_CHECK, 
           GoogleActionsTransactionsV3DigitalPurchaseCheckSpec
         ] {
     def this(options: GoogleActionsTransactionsV3DigitalPurchaseCheckSpec) = this()

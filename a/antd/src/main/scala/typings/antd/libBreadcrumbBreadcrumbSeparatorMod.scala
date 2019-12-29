@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.libBreadcrumbBreadcrumbSeparatorMod.BreadcrumbSeparator
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element

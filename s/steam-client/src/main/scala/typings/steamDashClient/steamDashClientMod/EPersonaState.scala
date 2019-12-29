@@ -1,14 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EPersonaState.Away
-import typings.steamDashClient.steamDashClientMod.EPersonaState.Busy
-import typings.steamDashClient.steamDashClientMod.EPersonaState.LookingToPlay
-import typings.steamDashClient.steamDashClientMod.EPersonaState.LookingToTrade
-import typings.steamDashClient.steamDashClientMod.EPersonaState.Max
-import typings.steamDashClient.steamDashClientMod.EPersonaState.Offline
-import typings.steamDashClient.steamDashClientMod.EPersonaState.Online
-import typings.steamDashClient.steamDashClientMod.EPersonaState.Snooze
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

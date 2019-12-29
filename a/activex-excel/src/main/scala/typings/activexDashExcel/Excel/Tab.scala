@@ -11,7 +11,8 @@ class Tab protected () extends js.Object {
   var Color: XlRgbColor | Double = js.native
   var ColorIndex: XlColorIndex = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Tab_typekey`: Tab = js.native
+  @JSName("Excel.Tab_typekey")
+  var ExcelDotTab_typekey: Tab = js.native
   val Parent: js.Any = js.native
   var ThemeColor: XlThemeColor = js.native
   var TintAndShade: Double = js.native

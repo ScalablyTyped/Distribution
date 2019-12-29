@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneTriggerType.airplaneModeDisabledForEmergencyCall
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneTriggerType.callBlocked
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneTriggerType.callHistoryChanged
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneTriggerType.callOriginDataRequest
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneTriggerType.lineChanged
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneTriggerType.newVoicemailMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

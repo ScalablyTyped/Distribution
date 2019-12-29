@@ -11,7 +11,7 @@ trait Model extends js.Object {
   var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   /** Specifies the animation behavior in  Tooltip. It contains the following sub properties.
     */
-  var animation: js.UndefOr[typings.ejDotWebDotAll.ej.Tooltip.Animation] = js.undefined
+  var animation: js.UndefOr[Animation] = js.undefined
   /** Sets the position related to target element, window, mouse or (x,y) co-ordinates.
     * @Default {ej.Tooltip.Associate.Target}
     */
@@ -119,7 +119,7 @@ object Model {
   @scala.inline
   def apply(
     allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    animation: typings.ejDotWebDotAll.ej.Tooltip.Animation = null,
+    animation: Animation = null,
     associate: Associate | String = null,
     autoCloseTimeout: Int | Double = null,
     beforeClose: /* e */ BeforeCloseEventArgs => Unit = null,

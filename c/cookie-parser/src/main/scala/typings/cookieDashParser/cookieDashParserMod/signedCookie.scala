@@ -1,6 +1,6 @@
 package typings.cookieDashParser.cookieDashParserMod
 
-import typings.cookieDashParser.cookieDashParserNumbers.`false`
+import typings.cookieDashParser.cookieDashParserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

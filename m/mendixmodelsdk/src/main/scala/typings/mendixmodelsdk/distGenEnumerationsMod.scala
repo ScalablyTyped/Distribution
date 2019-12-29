@@ -2,12 +2,6 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.ConditionSettings
-import typings.mendixmodelsdk.distGenEnumerationsMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.Condition
-import typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.Enumeration
-import typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.EnumerationValue
-import typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.IEnumeration
-import typings.mendixmodelsdk.distGenEnumerationsMod.enumerations.IEnumerationValue
 import typings.mendixmodelsdk.distGenImagesMod.images.IImage
 import typings.mendixmodelsdk.distGenPagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document

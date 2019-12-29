@@ -13,7 +13,7 @@ trait ActionFailureEventArgs extends js.Object {
   var errorMessage: js.UndefOr[String] = js.undefined
   /** Returns the SpellCheck model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.SpellCheck.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the request type value.
     */
   var requestType: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object ActionFailureEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,
-    model: typings.ejDotWebDotAll.ej.SpellCheck.Model = null,
+    model: Model = null,
     requestType: String = null,
     `type`: String = null
   ): ActionFailureEventArgs = {

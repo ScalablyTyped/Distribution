@@ -2,7 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Error
-import typings.tstl.exceptionExceptionMod.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

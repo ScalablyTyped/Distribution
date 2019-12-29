@@ -1,6 +1,6 @@
 package typings.saslDashAnonymous.saslDashAnonymousMod
 
-import typings.saslDashAnonymous.saslDashAnonymousNumbers.`true`
+import typings.saslDashAnonymous.saslDashAnonymousBooleans.`true`
 import typings.saslDashAnonymous.saslDashAnonymousStrings.ANONYMOUS
 import typings.saslmechanisms.saslmechanismsMod.Mechanism
 import scala.scalajs.js

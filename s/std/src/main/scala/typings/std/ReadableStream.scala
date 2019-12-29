@@ -26,13 +26,13 @@ trait ReadableStream[R] extends js.Object {
 @js.native
 object ReadableStream
   extends Instantiable0[ReadableStream[js.Object]]
+     with Instantiable1[
+      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
+      ReadableStream[js.Object | Uint8Array]
+    ]
      with Instantiable2[
       (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
       (/* strategy */ Anon_HighWaterMarkSize) | (/* strategy */ QueuingStrategy[js.Object]), 
-      ReadableStream[js.Object | Uint8Array]
-    ]
-     with Instantiable1[
-      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
       ReadableStream[js.Object | Uint8Array]
     ]
 

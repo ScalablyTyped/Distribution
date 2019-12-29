@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.SplitMode.Indexes
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.SplitMode.Percentage
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.SplitMode.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

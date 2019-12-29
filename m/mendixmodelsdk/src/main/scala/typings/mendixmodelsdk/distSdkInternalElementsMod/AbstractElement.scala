@@ -25,6 +25,7 @@ abstract class AbstractElement protected ()
   ) = this()
   @JSName("container")
   val container_FAbstractElement: Container = js.native
+  def asLoaded(): IAbstractElement = js.native
   /**
     * Transforms a IElement interface into a Element class, loading the containing unit if necessary.
     * (Those are technically already the same, but this function makes sure its properties are available.)
@@ -32,9 +33,8 @@ abstract class AbstractElement protected ()
     * - If invoked without callback, it checks whether the properties are available or it will throw;
     * - If invoked with callback, it will load the data from the server if needed, and then invoke the callback.
     */
-  def asLoaded(): this.type = js.native
   @JSName("asLoaded")
-  def asLoaded_IAbstractElement(): IAbstractElement = js.native
+  def asLoaded_This(): this.type = js.native
   /**
     * Given an element id, returns the element in this abstract element with that id, otherwise null.
     */

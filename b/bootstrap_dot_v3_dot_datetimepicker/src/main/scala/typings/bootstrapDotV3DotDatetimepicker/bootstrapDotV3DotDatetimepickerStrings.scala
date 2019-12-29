@@ -25,19 +25,19 @@ object bootstrapDotV3DotDatetimepickerStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait dpDOTchange extends js.Object
+  sealed trait dpDotchange extends js.Object
   
   @js.native
-  sealed trait dpDOTerror extends EventName
+  sealed trait dpDoterror extends EventName
   
   @js.native
-  sealed trait dpDOThide extends EventName
+  sealed trait dpDothide extends EventName
   
   @js.native
-  sealed trait dpDOTshow extends EventName
+  sealed trait dpDotshow extends EventName
   
   @js.native
-  sealed trait dpDOTupdate extends js.Object
+  sealed trait dpDotupdate extends js.Object
   
   @js.native
   sealed trait left extends js.Object
@@ -67,15 +67,15 @@ object bootstrapDotV3DotDatetimepickerStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def dpDOTchange: dpDOTchange = "dp.change".asInstanceOf[dpDOTchange]
+  def dpDotchange: dpDotchange = "dp.change".asInstanceOf[dpDotchange]
   @scala.inline
-  def dpDOTerror: dpDOTerror = "dp.error".asInstanceOf[dpDOTerror]
+  def dpDoterror: dpDoterror = "dp.error".asInstanceOf[dpDoterror]
   @scala.inline
-  def dpDOThide: dpDOThide = "dp.hide".asInstanceOf[dpDOThide]
+  def dpDothide: dpDothide = "dp.hide".asInstanceOf[dpDothide]
   @scala.inline
-  def dpDOTshow: dpDOTshow = "dp.show".asInstanceOf[dpDOTshow]
+  def dpDotshow: dpDotshow = "dp.show".asInstanceOf[dpDotshow]
   @scala.inline
-  def dpDOTupdate: dpDOTupdate = "dp.update".asInstanceOf[dpDOTupdate]
+  def dpDotupdate: dpDotupdate = "dp.update".asInstanceOf[dpDotupdate]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline

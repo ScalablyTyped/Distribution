@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.coordination.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.coordinationDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait LeaseList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`coordinationDOTk8sDOTio/v1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[coordinationDotk8sDotioSlashv1]] = js.undefined
   /**
     * Items is a list of schema objects.
     */
@@ -40,7 +40,7 @@ object LeaseList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[Lease]]],
-    apiVersion: Input[`coordinationDOTk8sDOTio/v1`] = null,
+    apiVersion: Input[coordinationDotk8sDotioSlashv1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.LeaseList] = null,
     metadata: Input[ListMeta] = null
   ): LeaseList = {

@@ -1,7 +1,6 @@
 package typings.phaser.Phaser
 
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
-import typings.phaser.Phaser.Display.Color
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Graphics
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer

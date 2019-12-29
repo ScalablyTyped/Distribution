@@ -10,6 +10,7 @@ class HTMLReset protected () extends js.Object {
   var Caption: String = js.native
   var HTMLName: String = js.native
   var HTMLType: String = js.native
-  var `MSForms.HTMLReset_typekey`: HTMLReset = js.native
+  @JSName("MSForms.HTMLReset_typekey")
+  var MSFormsDotHTMLReset_typekey: HTMLReset = js.native
 }
 

@@ -1,8 +1,6 @@
 package typings.swiz.swizMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.swiz.swizMod.SERIALIZATION.SERIALIZATION_JSON
-import typings.swiz.swizMod.SERIALIZATION.SERIALIZATION_XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

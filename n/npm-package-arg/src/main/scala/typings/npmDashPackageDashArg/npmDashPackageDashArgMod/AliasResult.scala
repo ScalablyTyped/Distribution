@@ -1,6 +1,6 @@
 package typings.npmDashPackageDashArg.npmDashPackageDashArgMod
 
-import typings.npmDashPackageDashArg.npmDashPackageDashArgNumbers.`true`
+import typings.npmDashPackageDashArg.npmDashPackageDashArgBooleans.`true`
 import typings.npmDashPackageDashArg.npmDashPackageDashArgStrings.alias
 import scala.scalajs.js
 import scala.scalajs.js.`|`

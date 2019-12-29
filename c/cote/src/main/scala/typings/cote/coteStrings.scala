@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object coteStrings {
   @js.native
-  sealed trait `cote:added` extends js.Object
+  sealed trait coteColonadded extends js.Object
   
   @js.native
-  sealed trait `cote:removed` extends js.Object
+  sealed trait coteColonremoved extends js.Object
   
   @scala.inline
-  def `cote:added`: `cote:added` = "cote:added".asInstanceOf[`cote:added`]
+  def coteColonadded: coteColonadded = "cote:added".asInstanceOf[coteColonadded]
   @scala.inline
-  def `cote:removed`: `cote:removed` = "cote:removed".asInstanceOf[`cote:removed`]
+  def coteColonremoved: coteColonremoved = "cote:removed".asInstanceOf[coteColonremoved]
 }
 

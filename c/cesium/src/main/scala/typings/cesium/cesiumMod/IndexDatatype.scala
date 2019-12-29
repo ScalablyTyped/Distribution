@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.IndexDatatype.UNSIGNED_BYTE
-import typings.cesium.cesiumMod.IndexDatatype.UNSIGNED_INT
-import typings.cesium.cesiumMod.IndexDatatype.UNSIGNED_SHORT
 import typings.std.ArrayBuffer
 import typings.std.Uint16Array
 import typings.std.Uint32Array

@@ -1,12 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Away
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Chat
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.DND
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Offline
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Online
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.XA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

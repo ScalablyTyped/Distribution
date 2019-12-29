@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.__esri
 
-import typings.arcgisDashJsDashApi.IPromise
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -19,7 +18,7 @@ trait EachAlwaysResult extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#EachAlwaysResult)
     */
-  var promise: IPromise[_]
+  var promise: js.Promise[_]
   /**
     * The value with which the promise resolved. Defined only if the promise resolved.
     *
@@ -33,7 +32,7 @@ object EachAlwaysResult {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    promise: IPromise[_],
+    promise: js.Promise[_],
     propertyIsEnumerable: PropertyKey => Boolean,
     error: js.Any = null,
     value: js.Any = null

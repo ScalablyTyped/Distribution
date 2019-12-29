@@ -1,5 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.image
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpeg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -8,11 +12,11 @@ import scala.scalajs.js.annotation._
 
 trait FeatureTemplateThumbnail extends Object {
   /**
-    * The MIME type of the image.  **Possible Values:** image | png | jpg | jpeg
+    * The MIME type of the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#thumbnail)
     */
-  var contentType: js.Any
+  var contentType: image | png | jpg | jpeg
   /**
     * The height of the thumbnail.
     *
@@ -37,7 +41,7 @@ object FeatureTemplateThumbnail {
   @scala.inline
   def apply(
     constructor: js.Function,
-    contentType: js.Any,
+    contentType: image | png | jpg | jpeg,
     hasOwnProperty: PropertyKey => Boolean,
     height: Double,
     imageData: String,

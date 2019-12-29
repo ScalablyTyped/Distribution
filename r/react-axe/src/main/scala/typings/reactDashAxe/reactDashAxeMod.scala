@@ -1,7 +1,6 @@
 package typings.reactDashAxe
 
 import typings.axeDashCore.axeDashCoreMod.Spec
-import typings.reactDashAxe.reactDashAxeMod.ReactAxeConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

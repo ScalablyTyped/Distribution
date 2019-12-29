@@ -2,13 +2,13 @@ package typings.senchaUnderscoreTouch.Ext.chart
 
 import typings.senchaUnderscoreTouch.Ext.Array
 import typings.senchaUnderscoreTouch.Ext.data.IStore
+import typings.senchaUnderscoreTouch.Ext.draw.IComponent
 import typings.senchaUnderscoreTouch.Ext.draw.ISurface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IAbstractChart
-  extends typings.senchaUnderscoreTouch.Ext.draw.IComponent {
+trait IAbstractChart extends IComponent {
   /** [Config Option] (Boolean/Object) */
   var animate: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Ext.chart.axis.Axis/Array/Object) */
@@ -29,7 +29,7 @@ trait IAbstractChart
   		* @returns String|Image An Image DOM element containing the flattened image or its dataURL.
   		*/
   var flatten: js.UndefOr[
-    js.Function2[/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[java.lang.String], _]
+    js.Function2[/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String], _]
   ] = js.undefined
   /** [Method] Returns the value of axes
   		* @returns Ext.chart.axis.Axis/Array/Object
@@ -165,20 +165,20 @@ trait IAbstractChart
   /** [Method] Suspend the layout initialized by thickness change */
   var suspendThicknessChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (String) */
-  var version: js.UndefOr[java.lang.String] = js.undefined
+  var version: js.UndefOr[String] = js.undefined
 }
 
 object IAbstractChart {
   @scala.inline
   def apply(
-    IComponent: typings.senchaUnderscoreTouch.Ext.draw.IComponent = null,
+    IComponent: IComponent = null,
     animate: js.Any = null,
     axes: js.Any = null,
     background: js.Any = null,
     bindStore: /* store */ js.UndefOr[IStore] => Unit = null,
     cancelLayout: () => Unit = null,
     colors: js.Any = null,
-    flatten: (/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[java.lang.String]) => _ = null,
+    flatten: (/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String]) => _ = null,
     getAxes: () => _ = null,
     getColors: () => _ = null,
     getHighlightItem: () => _ = null,
@@ -216,7 +216,7 @@ object IAbstractChart {
     shadow: js.Any = null,
     store: IStore = null,
     suspendThicknessChanged: () => Unit = null,
-    version: java.lang.String = null
+    version: String = null
   ): IAbstractChart = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

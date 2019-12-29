@@ -11,13 +11,21 @@ class XmlCollection[I /* <: XmlObject */] ()
      with ICollection[I] {
   /* CompleteClass */
   override val Count: Double = js.native
+  /**
+    * The maximum number of elements
+    */
   var MaxOccurs: Double = js.native
+  /**
+    * The minimum number of elements
+    */
   var MinOccurs: Double = js.native
   var items: js.Array[I] = js.native
   /* CompleteClass */
   override def Add(item: I): Unit = js.native
   /* CompleteClass */
   override def Clear(): Unit = js.native
+  @JSName("Count")
+  def Count_MXmlCollection(): Double = js.native
   /* CompleteClass */
   override def Every(cb: js.Function3[I, /* index */ Double, /* array */ js.Array[I], Boolean]): Boolean = js.native
   /* CompleteClass */

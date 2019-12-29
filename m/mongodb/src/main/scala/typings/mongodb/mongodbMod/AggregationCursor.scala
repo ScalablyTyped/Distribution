@@ -30,6 +30,8 @@ class AggregationCursor[T] () extends Readable {
   def isClosed(): Boolean = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#limit */
   def limit(value: scala.Double): AggregationCursor[T] = js.native
+  /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#lookup */
+  def lookup(document: js.Object): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#match */
   def `match`(document: js.Object): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#maxTimeMS */

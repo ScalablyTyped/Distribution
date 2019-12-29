@@ -1,8 +1,8 @@
 package typings.expressDashValidator.srcOptionsMod
 
+import typings.expressDashValidator.expressDashValidatorNumbers.`4`
 import typings.expressDashValidator.expressDashValidatorNumbers.`5`
 import typings.expressDashValidator.expressDashValidatorStrings.`3`
-import typings.expressDashValidator.expressDashValidatorStrings.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +25,10 @@ object UUIDVersion {
   @scala.inline
   def `3_3`: `3` = this.cast("3")
   @scala.inline
-  def `4`: typings.expressDashValidator.expressDashValidatorNumbers.`4` = this.cast(4)
+  def `4`: typings.expressDashValidator.expressDashValidatorStrings.`4` = this.cast("4")
   @JSName("4")
   @scala.inline
-  def `4_4`: `4` = this.cast("4")
+  def `4_4`: `4` = this.cast(4)
   @scala.inline
   def `5`: typings.expressDashValidator.expressDashValidatorStrings.`5` = this.cast("5")
   @JSName("5")

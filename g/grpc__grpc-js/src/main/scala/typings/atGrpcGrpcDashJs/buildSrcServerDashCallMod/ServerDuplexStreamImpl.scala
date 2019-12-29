@@ -67,9 +67,7 @@ class ServerDuplexStreamImpl[RequestType, ResponseType] protected ()
   /* CompleteClass */
   override def once(event: data, listener: js.Function1[RequestType, Unit]): this.type = js.native
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
   /* CompleteClass */

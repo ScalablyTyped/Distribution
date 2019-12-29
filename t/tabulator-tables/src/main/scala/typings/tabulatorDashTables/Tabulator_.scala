@@ -20,7 +20,7 @@ import typings.tabulatorDashTables.Tabulator.ScrollToRowPostition
 import typings.tabulatorDashTables.Tabulator.SortDirection
 import typings.tabulatorDashTables.Tabulator.Sorter
 import typings.tabulatorDashTables.Tabulator.VisibleRowRangeLookup
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`false`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.active
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.all
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.first

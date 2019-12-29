@@ -1,14 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERBOTTOMAFTER
-import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERBOTTOMBEFORE
-import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERTOPAFTER
-import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERTOPBEFORE
-import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERBOTTOMAFTER
-import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERBOTTOMBEFORE
-import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERTOPAFTER
-import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERTOPBEFORE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Physics
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.Physics.Impact.WorldConfig
 import typings.phaser.integer
 import scala.scalajs.js
@@ -140,7 +141,7 @@ object Impact extends js.Object {
       * 
       * @param scene [description]
       */
-    def this(scene: typings.phaser.Phaser.Scene) = this()
+    def this(scene: Scene) = this()
   }
   
   /**
@@ -193,7 +194,7 @@ object Impact extends js.Object {
       * @param scene The Scene to which this Impact World instance belongs.
       * @param config [description]
       */
-    def this(scene: typings.phaser.Phaser.Scene, config: WorldConfig) = this()
+    def this(scene: Scene, config: WorldConfig) = this()
   }
   
   /**

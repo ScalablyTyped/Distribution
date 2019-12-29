@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.CPlugins")
 @js.native
 class CPlugins protected () extends js.Object {
-  var `MSHTML.CPlugins_typekey`: CPlugins = js.native
+  @JSName("MSHTML.CPlugins_typekey")
+  var MSHTMLDotCPlugins_typekey: CPlugins = js.native
   val constructor: js.Any = js.native
   val length: Double = js.native
   /** @param reload [reload=false] */

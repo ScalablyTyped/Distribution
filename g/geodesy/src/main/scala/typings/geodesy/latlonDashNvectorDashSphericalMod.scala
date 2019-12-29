@@ -5,9 +5,6 @@ import typings.geodesy.geodesyMod.Dp
 import typings.geodesy.geodesyMod.Format
 import typings.geodesy.geodesyMod.GeoJSON
 import typings.geodesy.geodesyMod.Polygon
-import typings.geodesy.latlonDashNvectorDashSphericalMod.LatLonNvectorSpherical
-import typings.geodesy.latlonDashNvectorDashSphericalMod.NvectorSpherical
-import typings.geodesy.latlonDashNvectorDashSphericalMod.PathBrngEnd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 object popperDotJsStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait auto extends Placement
@@ -84,7 +84,7 @@ object popperDotJsStrings {
   sealed trait window extends Boundary
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline

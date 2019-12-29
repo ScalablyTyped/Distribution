@@ -1,8 +1,5 @@
 package typings.isbnDashUtils
 
-import typings.isbnDashUtils.isbnDashUtilsMod.IGroups
-import typings.isbnDashUtils.isbnDashUtilsMod.ISBN
-import typings.isbnDashUtils.isbnDashUtilsMod.ISBNcodes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

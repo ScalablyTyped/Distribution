@@ -14,7 +14,6 @@ class BearerStrategy protected () extends Strategy {
   def this(options: IBearerStrategyOption, verify: VerifyBearerFunction) = this()
   @JSName("name")
   var name_BearerStrategy: String = js.native
-  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
   def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

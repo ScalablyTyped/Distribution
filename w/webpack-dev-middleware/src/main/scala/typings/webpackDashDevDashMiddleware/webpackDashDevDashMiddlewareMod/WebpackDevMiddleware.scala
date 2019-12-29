@@ -1,7 +1,7 @@
 package typings.webpackDashDevDashMiddleware.webpackDashDevDashMiddlewareMod
 
 import typings.webpack.webpackMod.Stats
-import typings.webpackDashDevDashMiddleware.webpackDashDevDashMiddlewareNumbers.`false`
+import typings.webpackDashDevDashMiddleware.webpackDashDevDashMiddlewareBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

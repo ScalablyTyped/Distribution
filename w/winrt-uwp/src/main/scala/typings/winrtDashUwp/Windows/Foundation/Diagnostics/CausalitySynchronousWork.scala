@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySynchronousWork.completionNotification
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySynchronousWork.execution
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySynchronousWork.progressNotification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.atIonicUtilsDashProcess
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicUtilsDashProcess.atIonicUtilsDashProcessMod.ExitFn
 import typings.node.NodeJS.ProcessEnv
 import typings.std.Error
 import scala.scalajs.js

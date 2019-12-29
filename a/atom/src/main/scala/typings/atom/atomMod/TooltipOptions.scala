@@ -1,7 +1,7 @@
 package typings.atom.atomMod
 
 import typings.atom.Anon_Hide
-import typings.atom.atomNumbers.`false`
+import typings.atom.atomBooleans.`false`
 import typings.atom.atomStrings.auto
 import typings.atom.atomStrings.bottom
 import typings.atom.atomStrings.left

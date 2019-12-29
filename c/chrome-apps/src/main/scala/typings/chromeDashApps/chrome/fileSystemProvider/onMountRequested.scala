@@ -3,6 +3,7 @@ package typings.chromeDashApps.chrome.fileSystemProvider
 import org.scalablytyped.runtime.TopLevel
 import typings.chromeDashApps.Anon_ABORT
 import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chrome.events.Event
 import typings.chromeDashApps.chromeDashAppsStrings.ABORT
 import typings.chromeDashApps.chromeDashAppsStrings.ACCESS_DENIED
 import typings.chromeDashApps.chromeDashAppsStrings.EXISTS
@@ -37,7 +38,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object onMountRequested
   extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[
+      Event[
         js.Function2[
           /* successCallback */ js.Function0[Unit], 
           /* errorCallback */ js.Function1[

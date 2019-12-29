@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.CellError
-import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Conflict
-import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Dirty
-import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.NewRow
-import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.RowError
-import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Transfer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

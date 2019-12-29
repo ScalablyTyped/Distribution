@@ -10,7 +10,7 @@ trait CSSPropertiesLossy
       js.UndefOr[
         String | Double | CSSPropertiesComplete | (js.Array[
           js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 259 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 258 */ js.Any
           ]
         ]) | CSSPropertiesLossy
       ]
@@ -23,7 +23,7 @@ object CSSPropertiesLossy {
       js.UndefOr[
         String | Double | CSSPropertiesComplete | (js.Array[
           js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 259 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 258 */ js.Any
           ]
         ]) | CSSPropertiesLossy
       ]

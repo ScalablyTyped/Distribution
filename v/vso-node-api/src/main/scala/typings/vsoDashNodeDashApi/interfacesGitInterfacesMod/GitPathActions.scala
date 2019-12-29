@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPathActions.Add
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPathActions.Delete
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPathActions.Edit
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPathActions.None
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPathActions.Rename
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.wonderDashFrp
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState
-import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.ENTER
-import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.LEAVE
-import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.TRIGGER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

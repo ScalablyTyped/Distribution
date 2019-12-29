@@ -7,7 +7,6 @@ import typings.divaDotJs.interfacesMod.Options
 import typings.divaDotJs.interfacesMod.Region
 import typings.divaDotJs.interfacesMod.Settings
 import typings.divaDotJs.interfacesMod.ViewerState
-import typings.divaDotJs.viewerDashCoreMod.ViewerCore
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.Response

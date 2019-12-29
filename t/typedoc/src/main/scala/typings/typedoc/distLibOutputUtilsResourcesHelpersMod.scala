@@ -1,6 +1,5 @@
 package typings.typedoc
 
-import typings.typedoc.distLibOutputUtilsResourcesHelpersMod.Helper
 import typings.typedoc.distLibOutputUtilsResourcesStackMod.Resource
 import typings.typedoc.distLibOutputUtilsResourcesStackMod.ResourceStack
 import scala.scalajs.js

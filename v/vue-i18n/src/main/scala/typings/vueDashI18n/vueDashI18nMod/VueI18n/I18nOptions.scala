@@ -8,45 +8,45 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:interface-name
 trait I18nOptions extends js.Object {
-  var dateTimeFormats: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.DateTimeFormats] = js.undefined
-  var fallbackLocale: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale] = js.undefined
+  var dateTimeFormats: js.UndefOr[DateTimeFormats] = js.undefined
+  var fallbackLocale: js.UndefOr[Locale] = js.undefined
   var fallbackRoot: js.UndefOr[Boolean] = js.undefined
   var formatFallbackMessages: js.UndefOr[Boolean] = js.undefined
-  var formatter: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.Formatter] = js.undefined
-  var locale: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale] = js.undefined
-  var messages: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages] = js.undefined
-  var missing: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.MissingHandler] = js.undefined
+  var formatter: js.UndefOr[Formatter] = js.undefined
+  var locale: js.UndefOr[Locale] = js.undefined
+  var messages: js.UndefOr[LocaleMessages] = js.undefined
+  var missing: js.UndefOr[MissingHandler] = js.undefined
   var modifiers: js.UndefOr[Modifiers] = js.undefined
-  var numberFormats: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormats] = js.undefined
+  var numberFormats: js.UndefOr[NumberFormats] = js.undefined
   var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
   var preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined
-  var sharedMessages: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages] = js.undefined
+  var sharedMessages: js.UndefOr[LocaleMessages] = js.undefined
   var silentFallbackWarn: js.UndefOr[Boolean | RegExp] = js.undefined
   var silentTranslationWarn: js.UndefOr[Boolean | RegExp] = js.undefined
   var sync: js.UndefOr[Boolean] = js.undefined
-  var warnHtmlInMessage: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.WarnHtmlInMessageLevel] = js.undefined
+  var warnHtmlInMessage: js.UndefOr[WarnHtmlInMessageLevel] = js.undefined
 }
 
 object I18nOptions {
   @scala.inline
   def apply(
-    dateTimeFormats: typings.vueDashI18n.vueDashI18nMod.VueI18n.DateTimeFormats = null,
-    fallbackLocale: typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale = null,
+    dateTimeFormats: DateTimeFormats = null,
+    fallbackLocale: Locale = null,
     fallbackRoot: js.UndefOr[Boolean] = js.undefined,
     formatFallbackMessages: js.UndefOr[Boolean] = js.undefined,
-    formatter: typings.vueDashI18n.vueDashI18nMod.VueI18n.Formatter = null,
-    locale: typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale = null,
-    messages: typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages = null,
-    missing: (/* locale */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale, /* key */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Path, /* vm */ Vue | Null, /* values */ js.Any) => String | Unit = null,
+    formatter: Formatter = null,
+    locale: Locale = null,
+    messages: LocaleMessages = null,
+    missing: (/* locale */ Locale, /* key */ Path, /* vm */ Vue | Null, /* values */ js.Any) => String | Unit = null,
     modifiers: Modifiers = null,
-    numberFormats: typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormats = null,
+    numberFormats: NumberFormats = null,
     pluralizationRules: PluralizationRulesMap = null,
     preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined,
-    sharedMessages: typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages = null,
+    sharedMessages: LocaleMessages = null,
     silentFallbackWarn: Boolean | RegExp = null,
     silentTranslationWarn: Boolean | RegExp = null,
     sync: js.UndefOr[Boolean] = js.undefined,
-    warnHtmlInMessage: typings.vueDashI18n.vueDashI18nMod.VueI18n.WarnHtmlInMessageLevel = null
+    warnHtmlInMessage: WarnHtmlInMessageLevel = null
   ): I18nOptions = {
     val __obj = js.Dynamic.literal()
     if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats.asInstanceOf[js.Any])

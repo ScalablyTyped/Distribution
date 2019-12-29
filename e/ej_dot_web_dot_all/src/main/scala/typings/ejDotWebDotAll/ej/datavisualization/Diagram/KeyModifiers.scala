@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.KeyModifiers.Alt
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.KeyModifiers.Control
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.KeyModifiers.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.KeyModifiers.Shift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

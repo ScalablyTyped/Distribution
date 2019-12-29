@@ -1,6 +1,6 @@
 package typings.twitterDashStreamDashChannels.twitterDashStreamDashChannelsMod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.twitterDashStreamDashChannels.Anon_RemoveAllListeners
 import typings.twitterDashStreamDashChannels.twitterDashStreamDashChannelsMod.StreamChannels.Channels
 import typings.twitterDashStreamDashChannels.twitterDashStreamDashChannelsMod.StreamChannels.StreamChannelsOptions

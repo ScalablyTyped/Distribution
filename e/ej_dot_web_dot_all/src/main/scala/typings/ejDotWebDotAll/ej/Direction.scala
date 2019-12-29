@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Direction.Left
-import typings.ejDotWebDotAll.ej.Direction.None
-import typings.ejDotWebDotAll.ej.Direction.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.shallowequal
 
-import typings.shallowequal.shallowequalMod.Customizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

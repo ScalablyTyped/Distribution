@@ -17,11 +17,11 @@ trait IGauge extends IAbstract {
   /** [Method] Updates the title of this axis
   		* @param title String
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var steps: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
 }
 
 object IGauge {
@@ -33,9 +33,9 @@ object IGauge {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IGauge = null,
     label: ILabel = null,
@@ -45,11 +45,11 @@ object IGauge {
     mixins: js.Any = null,
     requires: Array = null,
     self: IClass = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     steps: Int | Double = null,
-    title: java.lang.String = null,
+    title: String = null,
     uses: Array = null
   ): IGauge = {
     val __obj = js.Dynamic.literal()

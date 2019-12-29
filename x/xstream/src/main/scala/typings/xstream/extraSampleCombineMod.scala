@@ -1,8 +1,5 @@
 package typings.xstream
 
-import typings.xstream.extraSampleCombineMod.SampleCombineListener
-import typings.xstream.extraSampleCombineMod.SampleCombineOperator
-import typings.xstream.extraSampleCombineMod.SampleCombineSignature
 import typings.xstream.xstreamMod.InternalListener
 import typings.xstream.xstreamMod.Operator
 import typings.xstream.xstreamMod.Stream

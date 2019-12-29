@@ -12,7 +12,8 @@ class TablesOfContents protected () extends js.Object {
   val Creator: Double = js.native
   var Format: WdTocFormat = js.native
   val Parent: js.Any = js.native
-  var `Word.TablesOfContents_typekey`: TablesOfContents = js.native
+  @JSName("Word.TablesOfContents_typekey")
+  var WordDotTablesOfContents_typekey: TablesOfContents = js.native
   def Add(
     Range: Range,
     UseHeadingStyles: js.UndefOr[js.Any],

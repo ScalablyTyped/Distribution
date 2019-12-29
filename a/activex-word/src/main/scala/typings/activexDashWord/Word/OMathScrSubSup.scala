@@ -14,7 +14,8 @@ class OMathScrSubSup protected () extends js.Object {
   val Parent: js.Any = js.native
   val Sub: OMath = js.native
   val Sup: OMath = js.native
-  var `Word.OMathScrSubSup_typekey`: OMathScrSubSup = js.native
+  @JSName("Word.OMathScrSubSup_typekey")
+  var WordDotOMathScrSubSup_typekey: OMathScrSubSup = js.native
   def RemoveSub(): OMathFunction = js.native
   def RemoveSup(): OMathFunction = js.native
   def ToScrPre(): OMathFunction = js.native

@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextDecorations.LineThrough
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextDecorations.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextDecorations.Overline
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextDecorations.Underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

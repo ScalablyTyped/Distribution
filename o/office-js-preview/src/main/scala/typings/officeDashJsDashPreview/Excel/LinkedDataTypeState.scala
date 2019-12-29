@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.LinkedDataTypeState.brokenLinkedData
-import typings.officeDashJsDashPreview.Excel.LinkedDataTypeState.disambiguationNeeded
-import typings.officeDashJsDashPreview.Excel.LinkedDataTypeState.fetchingData
-import typings.officeDashJsDashPreview.Excel.LinkedDataTypeState.none
-import typings.officeDashJsDashPreview.Excel.LinkedDataTypeState.validLinkedData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

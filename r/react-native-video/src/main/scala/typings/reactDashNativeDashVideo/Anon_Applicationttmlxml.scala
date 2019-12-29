@@ -1,8 +1,8 @@
 package typings.reactDashNativeDashVideo
 
-import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.`application/ttml+xml`
-import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.`application/x-subrip`
-import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.`text/vtt`
+import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.`applicationSlashx-subrip`
+import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.applicationSlashttmlPlussignxml
+import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.textSlashvtt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 trait Anon_Applicationttmlxml extends js.Object {
   var language: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
-  var `type`: `application/x-subrip` | `application/ttml+xml` | `text/vtt`
+  var `type`: `applicationSlashx-subrip` | applicationSlashttmlPlussignxml | textSlashvtt
   var uri: String
 }
 
 object Anon_Applicationttmlxml {
   @scala.inline
   def apply(
-    `type`: `application/x-subrip` | `application/ttml+xml` | `text/vtt`,
+    `type`: `applicationSlashx-subrip` | applicationSlashttmlPlussignxml | textSlashvtt,
     uri: String,
     language: String = null,
     title: String = null

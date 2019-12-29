@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.ValueState.Error
-import typings.openui5.sap.ui.core.ValueState.None
-import typings.openui5.sap.ui.core.ValueState.Success
-import typings.openui5.sap.ui.core.ValueState.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

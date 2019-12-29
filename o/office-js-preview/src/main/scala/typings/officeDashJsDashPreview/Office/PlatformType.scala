@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.PlatformType.Android
-import typings.officeDashJsDashPreview.Office.PlatformType.Mac
-import typings.officeDashJsDashPreview.Office.PlatformType.OfficeOnline
-import typings.officeDashJsDashPreview.Office.PlatformType.PC
-import typings.officeDashJsDashPreview.Office.PlatformType.Universal
-import typings.officeDashJsDashPreview.Office.PlatformType.iOS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

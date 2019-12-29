@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.microflows
 
+import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -30,7 +31,7 @@ class Nanoflow protected ()
 @js.native
 object Nanoflow extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates a new Nanoflow unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.

@@ -16,6 +16,7 @@ class Interior protected () extends js.Object {
   var Pattern: js.Any = js.native
   var PatternColor: js.Any = js.native
   var PatternColorIndex: js.Any = js.native
-  var `Word.Interior_typekey`: Interior = js.native
+  @JSName("Word.Interior_typekey")
+  var WordDotInterior_typekey: Interior = js.native
 }
 

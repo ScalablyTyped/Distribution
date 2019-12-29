@@ -12,7 +12,7 @@ package object elasticsearchMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - typings.elasticsearch.elasticsearchStrings.wait_for
-    - typings.elasticsearch.elasticsearchStrings.Empty
+    - typings.elasticsearch.elasticsearchStrings._empty
   */
   type Refresh = _Refresh | Boolean
   type TimeSpan = String

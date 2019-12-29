@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionAccuracy.default
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionAccuracy.high
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

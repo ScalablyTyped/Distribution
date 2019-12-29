@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 
 object atStorybookApiStrings {
   @js.native
-  sealed trait `5DOT2DOT8` extends js.Object
+  sealed trait `5Dot2Dot8` extends js.Object
   
   @js.native
-  sealed trait `@storybook/ui/store` extends js.Object
+  sealed trait `@storybookSlashuiSlashstore` extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2318 extends js.Object
+  sealed trait Optionkey extends js.Object
   
   @js.native
-  sealed trait BACKSLASHu2325 extends js.Object
+  sealed trait Placeofinterestsign extends js.Object
   
   @js.native
   sealed trait aboutPage extends Action
@@ -108,13 +108,13 @@ object atStorybookApiStrings {
   sealed trait toolbar extends Action
   
   @scala.inline
-  def `5DOT2DOT8`: `5DOT2DOT8` = "5.2.8".asInstanceOf[`5DOT2DOT8`]
+  def `5Dot2Dot8`: `5Dot2Dot8` = "5.2.8".asInstanceOf[`5Dot2Dot8`]
   @scala.inline
-  def `@storybook/ui/store`: `@storybook/ui/store` = "@storybook/ui/store".asInstanceOf[`@storybook/ui/store`]
+  def `@storybookSlashuiSlashstore`: `@storybookSlashuiSlashstore` = "@storybook/ui/store".asInstanceOf[`@storybookSlashuiSlashstore`]
   @scala.inline
-  def BACKSLASHu2318: BACKSLASHu2318 = "\u2318".asInstanceOf[BACKSLASHu2318]
+  def Optionkey: Optionkey = "\u2325".asInstanceOf[Optionkey]
   @scala.inline
-  def BACKSLASHu2325: BACKSLASHu2325 = "\u2325".asInstanceOf[BACKSLASHu2325]
+  def Placeofinterestsign: Placeofinterestsign = "\u2318".asInstanceOf[Placeofinterestsign]
   @scala.inline
   def aboutPage: aboutPage = "aboutPage".asInstanceOf[aboutPage]
   @scala.inline

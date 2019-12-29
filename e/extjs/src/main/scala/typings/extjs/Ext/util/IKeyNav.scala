@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait IKeyNav extends IBase {
   /** [Config Option] (String) */
-  var defaultEventAction: js.UndefOr[java.lang.String] = js.undefined
+  var defaultEventAction: js.UndefOr[String] = js.undefined
   /** [Method] Destroy this KeyNav
   		* @param removeEl Boolean Pass true to remove the element associated with this KeyNav.
   		*/
@@ -21,13 +21,13 @@ trait IKeyNav extends IBase {
   /** [Method] Enables this KeyNav  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var eventName: js.UndefOr[java.lang.String] = js.undefined
+  var eventName: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var forceKeyDown: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var ignoreInputFields: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Ext.util.KeyMap) */
-  var keyMap: js.UndefOr[typings.extjs.Ext.util.IKeyMap] = js.undefined
+  var keyMap: js.UndefOr[IKeyMap] = js.undefined
   /** [Config Option] (Function) */
   var processEvent: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object) */
@@ -49,19 +49,19 @@ object IKeyNav {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    defaultEventAction: java.lang.String = null,
+    defaultEventAction: String = null,
     destroy: /* removeEl */ js.UndefOr[Boolean] => Unit = null,
     disable: () => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     enable: () => Unit = null,
-    eventName: java.lang.String = null,
-    extend: java.lang.String = null,
+    eventName: String = null,
+    extend: String = null,
     forceKeyDown: js.UndefOr[Boolean] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     ignoreInputFields: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.util.IKeyNav = null,
-    keyMap: typings.extjs.Ext.util.IKeyMap = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IKeyNav = null,
+    keyMap: IKeyMap = null,
     mixins: js.Any = null,
     processEvent: js.Any = null,
     processEventScope: js.Any = null,

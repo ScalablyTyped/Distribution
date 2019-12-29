@@ -1,6 +1,5 @@
 package typings.emberDashModalDashDialog
 
-import typings.emberDashModalDashDialog.componentsModalDashDialogMod.ModalDialog
 import typings.emberDashModalDashDialog.emberDashModalDashDialogStrings.parent
 import typings.emberDashModalDashDialog.emberDashModalDashDialogStrings.sibling
 import scala.scalajs.js

@@ -1,5 +1,9 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.messagedefinitions
 
+import typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +16,12 @@ import scala.scalajs.js.annotation._
 abstract class ExposedEntityBase protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.messagedefinitions.ExposedEntityBase {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -26,6 +30,6 @@ abstract class ExposedEntityBase protected ()
 @js.native
 object ExposedEntityBase extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

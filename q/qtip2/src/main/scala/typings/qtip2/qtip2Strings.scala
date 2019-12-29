@@ -15,16 +15,16 @@ object qtip2Strings {
   sealed trait content extends js.Object
   
   @js.native
-  sealed trait contentDOTattr extends js.Object
+  sealed trait contentDotattr extends js.Object
   
   @js.native
-  sealed trait contentDOTbutton extends js.Object
+  sealed trait contentDotbutton extends js.Object
   
   @js.native
-  sealed trait contentDOTtext extends js.Object
+  sealed trait contentDottext extends js.Object
   
   @js.native
-  sealed trait contentDOTtitle extends js.Object
+  sealed trait contentDottitle extends js.Object
   
   @js.native
   sealed trait destroy extends js.Object
@@ -39,31 +39,31 @@ object qtip2Strings {
   sealed trait events extends js.Object
   
   @js.native
-  sealed trait eventsDOTblur extends js.Object
+  sealed trait eventsDotblur extends js.Object
   
   @js.native
-  sealed trait eventsDOTfocus extends js.Object
+  sealed trait eventsDotfocus extends js.Object
   
   @js.native
-  sealed trait eventsDOThidden extends js.Object
+  sealed trait eventsDothidden extends js.Object
   
   @js.native
-  sealed trait eventsDOThide extends js.Object
+  sealed trait eventsDothide extends js.Object
   
   @js.native
-  sealed trait eventsDOTmove extends js.Object
+  sealed trait eventsDotmove extends js.Object
   
   @js.native
-  sealed trait eventsDOTrender extends js.Object
+  sealed trait eventsDotrender extends js.Object
   
   @js.native
-  sealed trait eventsDOTshow extends js.Object
+  sealed trait eventsDotshow extends js.Object
   
   @js.native
-  sealed trait eventsDOTtoggle extends js.Object
+  sealed trait eventsDottoggle extends js.Object
   
   @js.native
-  sealed trait eventsDOTvisible extends js.Object
+  sealed trait eventsDotvisible extends js.Object
   
   @js.native
   sealed trait focus extends js.Object
@@ -72,28 +72,28 @@ object qtip2Strings {
   sealed trait hide extends js.Object
   
   @js.native
-  sealed trait hideDOTdelay extends js.Object
+  sealed trait hideDotdelay extends js.Object
   
   @js.native
-  sealed trait hideDOTdistance extends js.Object
+  sealed trait hideDotdistance extends js.Object
   
   @js.native
-  sealed trait hideDOTeffect extends js.Object
+  sealed trait hideDoteffect extends js.Object
   
   @js.native
-  sealed trait hideDOTevent extends js.Object
+  sealed trait hideDotevent extends js.Object
   
   @js.native
-  sealed trait hideDOTfixed extends js.Object
+  sealed trait hideDotfixed extends js.Object
   
   @js.native
-  sealed trait hideDOTinactive extends js.Object
+  sealed trait hideDotinactive extends js.Object
   
   @js.native
-  sealed trait hideDOTleave extends js.Object
+  sealed trait hideDotleave extends js.Object
   
   @js.native
-  sealed trait hideDOTtarget extends js.Object
+  sealed trait hideDottarget extends js.Object
   
   @js.native
   sealed trait id extends js.Object
@@ -111,25 +111,25 @@ object qtip2Strings {
   sealed trait position extends js.Object
   
   @js.native
-  sealed trait positionDOTadjust extends js.Object
+  sealed trait positionDotadjust extends js.Object
   
   @js.native
-  sealed trait positionDOTat extends js.Object
+  sealed trait positionDotat extends js.Object
   
   @js.native
-  sealed trait positionDOTcontainer extends js.Object
+  sealed trait positionDotcontainer extends js.Object
   
   @js.native
-  sealed trait positionDOTeffect extends js.Object
+  sealed trait positionDoteffect extends js.Object
   
   @js.native
-  sealed trait positionDOTmy extends js.Object
+  sealed trait positionDotmy extends js.Object
   
   @js.native
-  sealed trait positionDOTtarget extends js.Object
+  sealed trait positionDottarget extends js.Object
   
   @js.native
-  sealed trait positionDOTviewport extends js.Object
+  sealed trait positionDotviewport extends js.Object
   
   @js.native
   sealed trait prerender extends js.Object
@@ -141,46 +141,46 @@ object qtip2Strings {
   sealed trait show extends js.Object
   
   @js.native
-  sealed trait showDOTdelay extends js.Object
+  sealed trait showDotdelay extends js.Object
   
   @js.native
-  sealed trait showDOTeffect extends js.Object
+  sealed trait showDoteffect extends js.Object
   
   @js.native
-  sealed trait showDOTevent extends js.Object
+  sealed trait showDotevent extends js.Object
   
   @js.native
-  sealed trait showDOTmodal extends js.Object
+  sealed trait showDotmodal extends js.Object
   
   @js.native
-  sealed trait showDOTready extends js.Object
+  sealed trait showDotready extends js.Object
   
   @js.native
-  sealed trait showDOTsolo extends js.Object
+  sealed trait showDotsolo extends js.Object
   
   @js.native
-  sealed trait showDOTtarget extends js.Object
+  sealed trait showDottarget extends js.Object
   
   @js.native
   sealed trait style extends js.Object
   
   @js.native
-  sealed trait styleDOTclasses extends js.Object
+  sealed trait styleDotclasses extends js.Object
   
   @js.native
-  sealed trait styleDOTdef extends js.Object
+  sealed trait styleDotdef extends js.Object
   
   @js.native
-  sealed trait styleDOTheight extends js.Object
+  sealed trait styleDotheight extends js.Object
   
   @js.native
-  sealed trait styleDOTtip extends js.Object
+  sealed trait styleDottip extends js.Object
   
   @js.native
-  sealed trait styleDOTwidget extends js.Object
+  sealed trait styleDotwidget extends js.Object
   
   @js.native
-  sealed trait styleDOTwidth extends js.Object
+  sealed trait styleDotwidth extends js.Object
   
   @js.native
   sealed trait suppress extends js.Object
@@ -195,13 +195,13 @@ object qtip2Strings {
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
-  def contentDOTattr: contentDOTattr = "content.attr".asInstanceOf[contentDOTattr]
+  def contentDotattr: contentDotattr = "content.attr".asInstanceOf[contentDotattr]
   @scala.inline
-  def contentDOTbutton: contentDOTbutton = "content.button".asInstanceOf[contentDOTbutton]
+  def contentDotbutton: contentDotbutton = "content.button".asInstanceOf[contentDotbutton]
   @scala.inline
-  def contentDOTtext: contentDOTtext = "content.text".asInstanceOf[contentDOTtext]
+  def contentDottext: contentDottext = "content.text".asInstanceOf[contentDottext]
   @scala.inline
-  def contentDOTtitle: contentDOTtitle = "content.title".asInstanceOf[contentDOTtitle]
+  def contentDottitle: contentDottitle = "content.title".asInstanceOf[contentDottitle]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
@@ -211,43 +211,43 @@ object qtip2Strings {
   @scala.inline
   def events: events = "events".asInstanceOf[events]
   @scala.inline
-  def eventsDOTblur: eventsDOTblur = "events.blur".asInstanceOf[eventsDOTblur]
+  def eventsDotblur: eventsDotblur = "events.blur".asInstanceOf[eventsDotblur]
   @scala.inline
-  def eventsDOTfocus: eventsDOTfocus = "events.focus".asInstanceOf[eventsDOTfocus]
+  def eventsDotfocus: eventsDotfocus = "events.focus".asInstanceOf[eventsDotfocus]
   @scala.inline
-  def eventsDOThidden: eventsDOThidden = "events.hidden".asInstanceOf[eventsDOThidden]
+  def eventsDothidden: eventsDothidden = "events.hidden".asInstanceOf[eventsDothidden]
   @scala.inline
-  def eventsDOThide: eventsDOThide = "events.hide".asInstanceOf[eventsDOThide]
+  def eventsDothide: eventsDothide = "events.hide".asInstanceOf[eventsDothide]
   @scala.inline
-  def eventsDOTmove: eventsDOTmove = "events.move".asInstanceOf[eventsDOTmove]
+  def eventsDotmove: eventsDotmove = "events.move".asInstanceOf[eventsDotmove]
   @scala.inline
-  def eventsDOTrender: eventsDOTrender = "events.render".asInstanceOf[eventsDOTrender]
+  def eventsDotrender: eventsDotrender = "events.render".asInstanceOf[eventsDotrender]
   @scala.inline
-  def eventsDOTshow: eventsDOTshow = "events.show".asInstanceOf[eventsDOTshow]
+  def eventsDotshow: eventsDotshow = "events.show".asInstanceOf[eventsDotshow]
   @scala.inline
-  def eventsDOTtoggle: eventsDOTtoggle = "events.toggle".asInstanceOf[eventsDOTtoggle]
+  def eventsDottoggle: eventsDottoggle = "events.toggle".asInstanceOf[eventsDottoggle]
   @scala.inline
-  def eventsDOTvisible: eventsDOTvisible = "events.visible".asInstanceOf[eventsDOTvisible]
+  def eventsDotvisible: eventsDotvisible = "events.visible".asInstanceOf[eventsDotvisible]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
-  def hideDOTdelay: hideDOTdelay = "hide.delay".asInstanceOf[hideDOTdelay]
+  def hideDotdelay: hideDotdelay = "hide.delay".asInstanceOf[hideDotdelay]
   @scala.inline
-  def hideDOTdistance: hideDOTdistance = "hide.distance".asInstanceOf[hideDOTdistance]
+  def hideDotdistance: hideDotdistance = "hide.distance".asInstanceOf[hideDotdistance]
   @scala.inline
-  def hideDOTeffect: hideDOTeffect = "hide.effect".asInstanceOf[hideDOTeffect]
+  def hideDoteffect: hideDoteffect = "hide.effect".asInstanceOf[hideDoteffect]
   @scala.inline
-  def hideDOTevent: hideDOTevent = "hide.event".asInstanceOf[hideDOTevent]
+  def hideDotevent: hideDotevent = "hide.event".asInstanceOf[hideDotevent]
   @scala.inline
-  def hideDOTfixed: hideDOTfixed = "hide.fixed".asInstanceOf[hideDOTfixed]
+  def hideDotfixed: hideDotfixed = "hide.fixed".asInstanceOf[hideDotfixed]
   @scala.inline
-  def hideDOTinactive: hideDOTinactive = "hide.inactive".asInstanceOf[hideDOTinactive]
+  def hideDotinactive: hideDotinactive = "hide.inactive".asInstanceOf[hideDotinactive]
   @scala.inline
-  def hideDOTleave: hideDOTleave = "hide.leave".asInstanceOf[hideDOTleave]
+  def hideDotleave: hideDotleave = "hide.leave".asInstanceOf[hideDotleave]
   @scala.inline
-  def hideDOTtarget: hideDOTtarget = "hide.target".asInstanceOf[hideDOTtarget]
+  def hideDottarget: hideDottarget = "hide.target".asInstanceOf[hideDottarget]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline
@@ -259,19 +259,19 @@ object qtip2Strings {
   @scala.inline
   def position: position = "position".asInstanceOf[position]
   @scala.inline
-  def positionDOTadjust: positionDOTadjust = "position.adjust".asInstanceOf[positionDOTadjust]
+  def positionDotadjust: positionDotadjust = "position.adjust".asInstanceOf[positionDotadjust]
   @scala.inline
-  def positionDOTat: positionDOTat = "position.at".asInstanceOf[positionDOTat]
+  def positionDotat: positionDotat = "position.at".asInstanceOf[positionDotat]
   @scala.inline
-  def positionDOTcontainer: positionDOTcontainer = "position.container".asInstanceOf[positionDOTcontainer]
+  def positionDotcontainer: positionDotcontainer = "position.container".asInstanceOf[positionDotcontainer]
   @scala.inline
-  def positionDOTeffect: positionDOTeffect = "position.effect".asInstanceOf[positionDOTeffect]
+  def positionDoteffect: positionDoteffect = "position.effect".asInstanceOf[positionDoteffect]
   @scala.inline
-  def positionDOTmy: positionDOTmy = "position.my".asInstanceOf[positionDOTmy]
+  def positionDotmy: positionDotmy = "position.my".asInstanceOf[positionDotmy]
   @scala.inline
-  def positionDOTtarget: positionDOTtarget = "position.target".asInstanceOf[positionDOTtarget]
+  def positionDottarget: positionDottarget = "position.target".asInstanceOf[positionDottarget]
   @scala.inline
-  def positionDOTviewport: positionDOTviewport = "position.viewport".asInstanceOf[positionDOTviewport]
+  def positionDotviewport: positionDotviewport = "position.viewport".asInstanceOf[positionDotviewport]
   @scala.inline
   def prerender: prerender = "prerender".asInstanceOf[prerender]
   @scala.inline
@@ -279,33 +279,33 @@ object qtip2Strings {
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   @scala.inline
-  def showDOTdelay: showDOTdelay = "show.delay".asInstanceOf[showDOTdelay]
+  def showDotdelay: showDotdelay = "show.delay".asInstanceOf[showDotdelay]
   @scala.inline
-  def showDOTeffect: showDOTeffect = "show.effect".asInstanceOf[showDOTeffect]
+  def showDoteffect: showDoteffect = "show.effect".asInstanceOf[showDoteffect]
   @scala.inline
-  def showDOTevent: showDOTevent = "show.event".asInstanceOf[showDOTevent]
+  def showDotevent: showDotevent = "show.event".asInstanceOf[showDotevent]
   @scala.inline
-  def showDOTmodal: showDOTmodal = "show.modal".asInstanceOf[showDOTmodal]
+  def showDotmodal: showDotmodal = "show.modal".asInstanceOf[showDotmodal]
   @scala.inline
-  def showDOTready: showDOTready = "show.ready".asInstanceOf[showDOTready]
+  def showDotready: showDotready = "show.ready".asInstanceOf[showDotready]
   @scala.inline
-  def showDOTsolo: showDOTsolo = "show.solo".asInstanceOf[showDOTsolo]
+  def showDotsolo: showDotsolo = "show.solo".asInstanceOf[showDotsolo]
   @scala.inline
-  def showDOTtarget: showDOTtarget = "show.target".asInstanceOf[showDOTtarget]
+  def showDottarget: showDottarget = "show.target".asInstanceOf[showDottarget]
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   @scala.inline
-  def styleDOTclasses: styleDOTclasses = "style.classes".asInstanceOf[styleDOTclasses]
+  def styleDotclasses: styleDotclasses = "style.classes".asInstanceOf[styleDotclasses]
   @scala.inline
-  def styleDOTdef: styleDOTdef = "style.def".asInstanceOf[styleDOTdef]
+  def styleDotdef: styleDotdef = "style.def".asInstanceOf[styleDotdef]
   @scala.inline
-  def styleDOTheight: styleDOTheight = "style.height".asInstanceOf[styleDOTheight]
+  def styleDotheight: styleDotheight = "style.height".asInstanceOf[styleDotheight]
   @scala.inline
-  def styleDOTtip: styleDOTtip = "style.tip".asInstanceOf[styleDOTtip]
+  def styleDottip: styleDottip = "style.tip".asInstanceOf[styleDottip]
   @scala.inline
-  def styleDOTwidget: styleDOTwidget = "style.widget".asInstanceOf[styleDOTwidget]
+  def styleDotwidget: styleDotwidget = "style.widget".asInstanceOf[styleDotwidget]
   @scala.inline
-  def styleDOTwidth: styleDOTwidth = "style.width".asInstanceOf[styleDOTwidth]
+  def styleDotwidth: styleDotwidth = "style.width".asInstanceOf[styleDotwidth]
   @scala.inline
   def suppress: suppress = "suppress".asInstanceOf[suppress]
   @scala.inline

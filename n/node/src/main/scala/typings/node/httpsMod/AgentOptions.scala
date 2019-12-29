@@ -1,14 +1,16 @@
 package typings.node.httpsMod
 
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions
+import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PeerCertificate
+import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
+import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,46 +41,44 @@ import scala.scalajs.js.annotation._
 object AgentOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[java.lang.String | Uint8Array]) | Uint8Array = null,
-    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
-    ca: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    cert: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    checkServerIdentity: (/* host */ java.lang.String, /* cert */ PeerCertificate) => js.UndefOr[Error] = null,
-    ciphers: java.lang.String = null,
-    clientCertEngine: java.lang.String = null,
-    crl: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    dhparam: java.lang.String | Buffer = null,
-    ecdhCurve: java.lang.String = null,
+    ALPNProtocols: (js.Array[String | Uint8Array]) | Uint8Array = null,
+    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
+    ca: String | Buffer | (js.Array[String | Buffer]) = null,
+    cert: String | Buffer | (js.Array[String | Buffer]) = null,
+    checkServerIdentity: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error] = null,
+    ciphers: String = null,
+    clientCertEngine: String = null,
+    crl: String | Buffer | (js.Array[String | Buffer]) = null,
+    dhparam: String | Buffer = null,
+    ecdhCurve: String = null,
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    host: java.lang.String = null,
+    host: String = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveMsecs: Int | Double = null,
-    key: java.lang.String | Buffer | (js.Array[Buffer | js.Object]) = null,
-    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* address */ java.lang.String, 
-      /* family */ Double, 
-      Unit
-    ]) => Unit = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     maxCachedSessions: Int | Double = null,
     maxFreeSockets: Int | Double = null,
     maxSockets: Int | Double = null,
     maxVersion: SecureVersion = null,
     minDHSize: Int | Double = null,
     minVersion: SecureVersion = null,
-    passphrase: java.lang.String = null,
-    path: java.lang.String = null,
-    pfx: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer | js.Object]) = null,
+    passphrase: String = null,
+    path: String = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     port: Int | Double = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
     secureOptions: Int | Double = null,
-    secureProtocol: java.lang.String = null,
-    servername: java.lang.String = null,
+    secureProtocol: String = null,
+    servername: String = null,
     session: Buffer = null,
-    sessionIdContext: java.lang.String = null,
+    sessionIdContext: String = null,
+    sigalgs: String = null,
     socket: Socket = null,
     timeout: Int | Double = null
   ): AgentOptions = {
@@ -110,6 +110,8 @@ object AgentOptions {
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
@@ -118,6 +120,7 @@ object AgentOptions {
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentOptions]

@@ -1,8 +1,6 @@
 package typings.reactDashNativeDashTabDashView
 
 import typings.react.reactMod.Component
-import typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarIndicatorMod.Props
-import typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarIndicatorMod.TabBarIndicator
 import typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route
 import typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.SceneRendererProps
 import scala.scalajs.js

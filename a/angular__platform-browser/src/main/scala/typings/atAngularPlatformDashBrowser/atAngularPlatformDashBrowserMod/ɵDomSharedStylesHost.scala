@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵDomSharedStylesHost")
+@JSImport("@angular/platform-browser", "\u0275DomSharedStylesHost")
 @js.native
 class ɵDomSharedStylesHost protected ()
   extends ɵSharedStylesHost

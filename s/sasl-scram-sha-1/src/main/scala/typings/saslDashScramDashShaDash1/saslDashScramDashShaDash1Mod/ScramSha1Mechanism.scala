@@ -1,6 +1,6 @@
 package typings.saslDashScramDashShaDash1.saslDashScramDashShaDash1Mod
 
-import typings.saslDashScramDashShaDash1.saslDashScramDashShaDash1Numbers.`true`
+import typings.saslDashScramDashShaDash1.saslDashScramDashShaDash1Booleans.`true`
 import typings.saslDashScramDashShaDash1.saslDashScramDashShaDash1Strings.`SCRAM-SHA-1`
 import typings.saslmechanisms.saslmechanismsMod.Mechanism
 import scala.scalajs.js

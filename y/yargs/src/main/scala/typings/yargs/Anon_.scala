@@ -13,6 +13,7 @@ trait Anon_
   @JSName("$0")
   var $0: String = js.native
   /** Non-option arguments */
-  var `_`: js.Array[String] = js.native
+  @JSName("_")
+  var _underscore: js.Array[String] = js.native
 }
 

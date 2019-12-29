@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsWindowScrollerMod
 
-import typings.react.reactMod.ReactElement
+import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.Anon_ScrollTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ trait WindowScrollerChildProps extends js.Object {
   var width: Double = js.native
   def onChildScroll(params: Anon_ScrollTop): Unit = js.native
   def registerChild(): Unit = js.native
-  def registerChild(element: ReactElement): Unit = js.native
+  def registerChild(element: ReactNode): Unit = js.native
 }
 

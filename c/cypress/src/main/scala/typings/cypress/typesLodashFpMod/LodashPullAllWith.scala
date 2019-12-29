@@ -15,7 +15,7 @@ trait LodashPullAllWith extends js.Object {
   def apply[T](comparator: Comparator[T], values: List[T], array: List[T]): List[T] = js.native
   def apply[T](comparator: Comparator[T], values: __, array: js.Array[T]): LodashPullAllWith1x5[T] = js.native
   def apply[T](comparator: Comparator[T], values: __, array: List[T]): LodashPullAllWith2x5[T] = js.native
-  def apply[T2](comparator: __, values: List[T2]): LodashPullAllWith3x2[T2] = js.native
+  def apply[T](comparator: __, values: List[T]): LodashPullAllWith1x2[T] = js.native
   def apply[T](comparator: __, values: List[T], array: js.Array[T]): LodashPullAllWith1x6[T] = js.native
   def apply[T](comparator: __, values: List[T], array: List[T]): LodashPullAllWith2x6[T] = js.native
   def apply[T](comparator: __, values: __, array: js.Array[T]): LodashPullAllWith1x4[T] = js.native

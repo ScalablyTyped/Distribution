@@ -1,6 +1,6 @@
 package typings.atSolidReact.atSolidReactMod
 
-import typings.atSolidReact.atSolidReactNumbers.`false`
+import typings.atSolidReact.atSolidReactBooleans.`false`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -15,6 +15,7 @@ object distInMemoryLRUCacheMod extends js.Object {
     @JSName("flush")
     def flush_MInMemoryLRUCache(): js.Promise[Unit] = js.native
     def getTotalSize(): js.Promise[Double] = js.native
+    def set(key: String, value: V, options: Anon_Ttl): js.Promise[Unit] = js.native
   }
   
 }

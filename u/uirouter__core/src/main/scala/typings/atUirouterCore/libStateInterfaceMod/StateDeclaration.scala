@@ -23,7 +23,7 @@ trait StateDeclaration
     * Note: the internal [[StateObject]] API is subject to change without notice
     */
   @JSName("$$state")
-  var $$state: js.UndefOr[js.Function0[StateObject]] = js.native
+  var DollarDollarstate: js.UndefOr[js.Function0[StateObject]] = js.native
   /**
     * Abstract state indicator
     *

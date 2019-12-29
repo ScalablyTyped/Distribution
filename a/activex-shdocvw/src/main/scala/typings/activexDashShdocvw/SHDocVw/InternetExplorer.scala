@@ -49,7 +49,8 @@ class InternetExplorer protected () extends js.Object {
   var RegisterAsDropTarget: Boolean = js.native
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
-  var `SHDocVw.InternetExplorer_typekey`: InternetExplorer = js.native
+  @JSName("SHDocVw.InternetExplorer_typekey")
+  var SHDocVwDotInternetExplorer_typekey: InternetExplorer = js.native
   /** Controls if any dialog boxes can be shown */
   var Silent: Boolean = js.native
   /** Turn on or off the statusbar. */

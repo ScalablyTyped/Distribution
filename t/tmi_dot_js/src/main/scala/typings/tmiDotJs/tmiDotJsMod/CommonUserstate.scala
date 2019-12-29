@@ -1,7 +1,7 @@
 package typings.tmiDotJs.tmiDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tmiDotJs.tmiDotJsStrings.Empty
+import typings.tmiDotJs.tmiDotJsStrings._empty
 import typings.tmiDotJs.tmiDotJsStrings.admin
 import typings.tmiDotJs.tmiDotJsStrings.global_mod
 import typings.tmiDotJs.tmiDotJsStrings.mod
@@ -26,7 +26,7 @@ trait CommonUserstate
   var `tmi-sent-ts`: js.UndefOr[String] = js.undefined
   var turbo: js.UndefOr[Boolean] = js.undefined
   var `user-id`: js.UndefOr[String] = js.undefined
-  var `user-type`: js.UndefOr[Empty | mod | global_mod | admin | staff] = js.undefined
+  var `user-type`: js.UndefOr[_empty | mod | global_mod | admin | staff] = js.undefined
 }
 
 object CommonUserstate {
@@ -47,7 +47,7 @@ object CommonUserstate {
     `tmi-sent-ts`: String = null,
     turbo: js.UndefOr[Boolean] = js.undefined,
     `user-id`: String = null,
-    `user-type`: Empty | mod | global_mod | admin | staff = null
+    `user-type`: _empty | mod | global_mod | admin | staff = null
   ): CommonUserstate = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

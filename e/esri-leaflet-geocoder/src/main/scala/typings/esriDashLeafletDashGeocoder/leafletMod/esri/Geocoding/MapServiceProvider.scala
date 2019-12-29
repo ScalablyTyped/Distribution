@@ -1,15 +1,13 @@
 package typings.esriDashLeafletDashGeocoder.leafletMod.esri.Geocoding
 
-import typings.esriDashLeaflet.esriDashLeafletMod.MapService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("leaflet", "esri.Geocoding.MapServiceProvider")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapService * / any */ @JSImport("leaflet", "esri.Geocoding.MapServiceProvider")
 @js.native
-class MapServiceProvider ()
-  extends MapService
-     with GeosearchProvider {
+class MapServiceProvider () extends GeosearchProvider {
   def this(options: MapServiceProviderOptions) = this()
 }
 

@@ -13,7 +13,8 @@ class Bookmarks protected () extends js.Object {
   var DefaultSorting: WdBookmarkSortBy = js.native
   val Parent: js.Any = js.native
   var ShowHidden: Boolean = js.native
-  var `Word.Bookmarks_typekey`: Bookmarks = js.native
+  @JSName("Word.Bookmarks_typekey")
+  var WordDotBookmarks_typekey: Bookmarks = js.native
   def Add(Name: String): Bookmark = js.native
   def Add(Name: String, Range: js.Any): Bookmark = js.native
   def Exists(Name: String): Boolean = js.native

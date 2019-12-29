@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sparkline
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.Azure
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.Azuredark
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.FlatDark
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.FlatLight
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.GradientDark
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.GradientLight
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.Lime
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.LimeDark
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.Saffron
-import typings.ejDotWebDotAll.ej.Sparkline.Theme.SaffronDark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,7 +9,7 @@ object jestDashSnapshotStrings {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `https://gooDOTgl/fbAQLP` extends js.Object
+  sealed trait httpsColonSlashSlashgooDotglSlashfbAQLP extends js.Object
   
   @js.native
   sealed trait snap extends js.Object
@@ -17,7 +17,7 @@ object jestDashSnapshotStrings {
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
   @scala.inline
-  def `https://gooDOTgl/fbAQLP`: `https://gooDOTgl/fbAQLP` = "https://goo.gl/fbAQLP".asInstanceOf[`https://gooDOTgl/fbAQLP`]
+  def httpsColonSlashSlashgooDotglSlashfbAQLP: httpsColonSlashSlashgooDotglSlashfbAQLP = "https://goo.gl/fbAQLP".asInstanceOf[httpsColonSlashSlashgooDotglSlashfbAQLP]
   @scala.inline
   def snap: snap = "snap".asInstanceOf[snap]
 }

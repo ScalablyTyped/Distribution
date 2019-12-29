@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InfoPath.UI")
 @js.native
 class UI protected () extends js.Object {
-  var `InfoPath.UI_typekey`: UI = js.native
+  @JSName("InfoPath.UI_typekey")
+  var InfoPathDotUI_typekey: UI = js.native
   def Alert(bstrAlertString: String): Unit = js.native
   def ShowMailItem(bstrTo: String, bstrCC: String, bstrBCC: String, bstrSubject: String, bstrBody: String): Unit = js.native
   def ShowModalDialog(bstrName: String): js.Any = js.native

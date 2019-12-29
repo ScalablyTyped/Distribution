@@ -1,6 +1,5 @@
 package typings.webicon
 
-import typings.webicon.systemInjectorMod.Injector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.projUnitsMod.Units
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

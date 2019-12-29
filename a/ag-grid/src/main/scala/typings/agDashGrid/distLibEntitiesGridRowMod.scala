@@ -2,7 +2,6 @@ package typings.agDashGrid
 
 import typings.agDashGrid.distLibEntitiesColumnMod.Column
 import typings.agDashGrid.distLibEntitiesGridCellMod.GridCell
-import typings.agDashGrid.distLibEntitiesGridRowMod.GridRow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

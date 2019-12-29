@@ -13,14 +13,14 @@ trait IGradient extends IBase {
   		* @param color String
   		*/
   var addColorStop: js.UndefOr[
-    js.Function2[/* offset */ js.UndefOr[Double], /* color */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* offset */ js.UndefOr[Double], /* color */ js.UndefOr[String], Unit]
   ] = js.undefined
 }
 
 object IGradient {
   @scala.inline
   def apply(
-    addColorStop: (/* offset */ js.UndefOr[Double], /* color */ js.UndefOr[java.lang.String]) => Unit = null,
+    addColorStop: (/* offset */ js.UndefOr[Double], /* color */ js.UndefOr[String]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -28,8 +28,8 @@ object IGradient {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,

@@ -20,7 +20,8 @@ class ParagraphFormat2 protected () extends js.Object {
   var LineRuleAfter: MsoTriState = js.native
   var LineRuleBefore: MsoTriState = js.native
   var LineRuleWithin: MsoTriState = js.native
-  var `Office.ParagraphFormat2_typekey`: ParagraphFormat2 = js.native
+  @JSName("Office.ParagraphFormat2_typekey")
+  var OfficeDotParagraphFormat2_typekey: ParagraphFormat2 = js.native
   val Parent: js.Any = js.native
   var RightIndent: Double = js.native
   var SpaceAfter: Double = js.native

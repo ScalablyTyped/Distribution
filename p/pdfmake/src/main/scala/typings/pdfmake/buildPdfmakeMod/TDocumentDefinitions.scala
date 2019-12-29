@@ -13,8 +13,8 @@ trait TDocumentDefinitions extends js.Object {
   var compress: js.UndefOr[Boolean] = js.undefined
   var content: String | Content | (js.Array[String | Content])
   var defaultStyle: js.UndefOr[Style] = js.undefined
-  var footer: js.UndefOr[TDocumentHeaderFooterFunction] = js.undefined
-  var header: js.UndefOr[TDocumentHeaderFooterFunction] = js.undefined
+  var footer: js.UndefOr[TDocumentHeaderFooterFunction | Content | String] = js.undefined
+  var header: js.UndefOr[TDocumentHeaderFooterFunction | Content | String] = js.undefined
   var images: js.UndefOr[StringDictionary[String]] = js.undefined
   var info: js.UndefOr[TDocumentInformation] = js.undefined
   var pageBreakBefore: js.UndefOr[
@@ -39,8 +39,8 @@ object TDocumentDefinitions {
     background: String | (js.Function2[/* currentPage */ Double, /* pageSize */ PageSize, String | Content | Null]) = null,
     compress: js.UndefOr[Boolean] = js.undefined,
     defaultStyle: Style = null,
-    footer: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ js.UndefOr[Anon_Height]) => js.Any = null,
-    header: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ js.UndefOr[Anon_Height]) => js.Any = null,
+    footer: TDocumentHeaderFooterFunction | Content | String = null,
+    header: TDocumentHeaderFooterFunction | Content | String = null,
     images: StringDictionary[String] = null,
     info: TDocumentInformation = null,
     pageBreakBefore: (/* currentNode */ js.UndefOr[CurrentNode], /* followingNodesOnPage */ js.UndefOr[js.Any], /* nodesOnNextPage */ js.UndefOr[js.Any], /* previousNodesOnPage */ js.UndefOr[js.Any]) => Boolean = null,
@@ -53,8 +53,8 @@ object TDocumentDefinitions {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction3(footer))
-    if (header != null) __obj.updateDynamic("header")(js.Any.fromFunction3(header))
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (pageBreakBefore != null) __obj.updateDynamic("pageBreakBefore")(js.Any.fromFunction4(pageBreakBefore))

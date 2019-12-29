@@ -12,6 +12,5 @@ trait ReactiveVar[T] extends js.Object {
 
 @JSImport("meteor/reactive-var", "ReactiveVar")
 @js.native
-object ReactiveVar
-  extends TopLevel[typings.meteor.reactiveDashVarMod.ReactiveVarStatic]
+object ReactiveVar extends TopLevel[ReactiveVarStatic]
 

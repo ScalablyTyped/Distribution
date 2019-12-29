@@ -20,6 +20,7 @@ package object distTypesMod {
   import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.ValueOrPromise
   import typings.graphql.graphqlMod.GraphQLSchema
   import typings.std.Pick
+  import typings.std.Record
 
   type BaseConfig = Pick[
     GraphQLServerOptions[Context[js.Object], js.Any], 
@@ -27,7 +28,7 @@ package object distTypesMod {
   ]
   type Context[T] = T
   type ContextFunction[FunctionParams, ProducedContext] = js.Function1[/* context */ FunctionParams, ValueOrPromise[Context[ProducedContext]]]
-  type PluginDefinition = ApolloServerPlugin | js.Function0[ApolloServerPlugin]
+  type PluginDefinition = (ApolloServerPlugin[Record[String, js.Any]]) | (js.Function0[ApolloServerPlugin[Record[String, js.Any]]])
   type SchemaChangeCallback = js.Function1[/* schema */ GraphQLSchema, Unit]
   type Unsubscriber = js.Function0[Unit]
 }

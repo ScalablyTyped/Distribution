@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.grammar
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.list
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.topic
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.voiceCommandDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.GroupMemberPermission.Edit
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.GroupMemberPermission.Manage
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.GroupMemberPermission.ManagePermissions
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.GroupMemberPermission.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

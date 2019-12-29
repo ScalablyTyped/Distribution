@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemStatus.Created
-import typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemStatus.PendingUpload
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

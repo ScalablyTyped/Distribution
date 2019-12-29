@@ -67,7 +67,8 @@ class View protected () extends js.Object {
   var SplitSpecial: WdSpecialPane = js.native
   var TableGridlines: Boolean = js.native
   var Type: WdViewType = js.native
-  var `Word.View_typekey`: View = js.native
+  @JSName("Word.View_typekey")
+  var WordDotView_typekey: View = js.native
   var WrapToWindow: Boolean = js.native
   val Zoom: typings.activexDashWord.Word.Zoom = js.native
   def CollapseOutline(): Unit = js.native

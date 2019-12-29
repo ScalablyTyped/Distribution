@@ -1,7 +1,6 @@
 package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015ComponentGeometryGeometryMod.Geometry
-import typings.wonderDotJs.distEs2015ComponentRendererMeshRendererMod.MeshRenderer
 import typings.wonderDotJs.distEs2015ComponentRendererRendererComponentMod.RendererComponent
 import typings.wonderDotJs.distEs2015CoreEntityObjectGameObjectGameObjectMod.GameObject
 import typings.wonderDotJs.distEs2015RendererCommandQuadCommandMod.QuadCommand

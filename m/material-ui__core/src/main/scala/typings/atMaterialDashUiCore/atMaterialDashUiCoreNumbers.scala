@@ -2,7 +2,6 @@ package typings.atMaterialDashUiCore
 
 import typings.atMaterialDashUiCore.gridGridMod.GridSize
 import typings.atMaterialDashUiCore.gridGridMod.GridSpacing
-import typings.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,9 +60,6 @@ object atMaterialDashUiCoreNumbers {
   @js.native
   sealed trait `9` extends GridSize
   
-  @js.native
-  sealed trait `false` extends SortDirection
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -98,7 +94,5 @@ object atMaterialDashUiCoreNumbers {
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

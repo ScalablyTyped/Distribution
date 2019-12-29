@@ -1,10 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceGPUDetectorMod.EGPUPrecision
-import typings.wonderDotJs.distEs2015DeviceGPUDetectorMod.EGPUPrecision.HIGHP
-import typings.wonderDotJs.distEs2015DeviceGPUDetectorMod.EGPUPrecision.LOWP
-import typings.wonderDotJs.distEs2015DeviceGPUDetectorMod.EGPUPrecision.MEDIUMP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,8 +2,8 @@ package typings.nodemailer.libSmtpDashTransportMod
 
 import typings.node.eventsMod.EventEmitter
 import typings.nodemailer.libSharedMod.Logger
+import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerMod.Transport
-import typings.nodemailer.nodemailerNumbers.`true`
 import typings.nodemailer.nodemailerStrings.close
 import typings.nodemailer.nodemailerStrings.error
 import typings.std.Error

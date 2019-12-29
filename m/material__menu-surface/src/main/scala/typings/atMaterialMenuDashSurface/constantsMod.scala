@@ -1,20 +1,6 @@
 package typings.atMaterialMenuDashSurface
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atMaterialMenuDashSurface.constantsMod.Corner
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_END
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_LEFT
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_RIGHT
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_START
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_END
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_LEFT
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_RIGHT
-import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_START
-import typings.atMaterialMenuDashSurface.constantsMod.CornerBit
-import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.BOTTOM
-import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.CENTER
-import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.FLIP_RTL
-import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

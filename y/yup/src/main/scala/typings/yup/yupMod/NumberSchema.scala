@@ -5,8 +5,8 @@ import typings.yup.Anon_Less
 import typings.yup.Anon_Max
 import typings.yup.Anon_Min
 import typings.yup.Anon_More
-import typings.yup.yupNumbers.`false`
-import typings.yup.yupNumbers.`true`
+import typings.yup.yupBooleans.`false`
+import typings.yup.yupBooleans.`true`
 import typings.yup.yupStrings.ceil
 import typings.yup.yupStrings.floor
 import typings.yup.yupStrings.round

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashMapDashGlStrings {
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait bottom extends js.Object
   
   @js.native
@@ -29,6 +32,8 @@ object reactDashMapDashGlStrings {
   @js.native
   sealed trait `top-right` extends js.Object
   
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline

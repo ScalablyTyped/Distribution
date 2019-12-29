@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionPolicyFlags.All
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionPolicyFlags.FirstParty
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionPolicyFlags.None
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionPolicyFlags.Preview
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionPolicyFlags.Private
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionPolicyFlags.Public
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionPolicyFlags.Released
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

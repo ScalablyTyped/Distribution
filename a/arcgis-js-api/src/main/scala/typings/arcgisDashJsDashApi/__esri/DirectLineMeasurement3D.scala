@@ -3,13 +3,13 @@ package typings.arcgisDashJsDashApi.__esri
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imperial
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,14 +28,14 @@ trait DirectLineMeasurement3D extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#unit)
     */
-  var unit: metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers = js.native
+  var unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_ = js.native
   /**
     * List of unit systems (imperial, metric) and specific units for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#unitOptions)
     */
   var unitOptions: js.Array[
-    metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+    metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
   ] = js.native
   /**
     * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.

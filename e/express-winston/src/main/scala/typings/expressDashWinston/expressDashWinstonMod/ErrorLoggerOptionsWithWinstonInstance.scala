@@ -21,8 +21,10 @@ object ErrorLoggerOptionsWithWinstonInstance {
   def apply(
     winstonInstance: Logger,
     baseMeta: js.Object = null,
+    blacklistedMetaFields: js.Array[String] = null,
     dynamicMeta: (/* req */ Request[ParamsDictionary], /* res */ Response, /* err */ Error) => js.Object = null,
     format: Format = null,
+    headerBlacklist: js.Array[String] = null,
     level: String | DynamicLevelFunction = null,
     meta: js.UndefOr[Boolean] = js.undefined,
     metaField: String = null,
@@ -33,8 +35,10 @@ object ErrorLoggerOptionsWithWinstonInstance {
   ): ErrorLoggerOptionsWithWinstonInstance = {
     val __obj = js.Dynamic.literal(winstonInstance = winstonInstance.asInstanceOf[js.Any])
     if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta.asInstanceOf[js.Any])
+    if (blacklistedMetaFields != null) __obj.updateDynamic("blacklistedMetaFields")(blacklistedMetaFields.asInstanceOf[js.Any])
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(js.Any.fromFunction3(dynamicMeta))
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (metaField != null) __obj.updateDynamic("metaField")(metaField.asInstanceOf[js.Any])

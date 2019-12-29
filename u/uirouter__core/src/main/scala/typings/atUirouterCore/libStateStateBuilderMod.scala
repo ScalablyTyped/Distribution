@@ -1,7 +1,6 @@
 package typings.atUirouterCore
 
 import typings.atUirouterCore.libResolveResolvableMod.Resolvable
-import typings.atUirouterCore.libStateStateBuilderMod.BuilderFunction
 import typings.atUirouterCore.libStateStateMatcherMod.StateMatcher
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
 import typings.atUirouterCore.libUrlUrlMatcherFactoryMod.UrlMatcherFactory

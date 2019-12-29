@@ -1,10 +1,6 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.WSStatus.BlackListed
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.WSStatus.Closed
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.WSStatus.Open
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.WSStatus.WaitingForUserResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

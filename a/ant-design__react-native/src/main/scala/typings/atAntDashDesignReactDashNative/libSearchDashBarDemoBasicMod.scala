@@ -1,6 +1,5 @@
 package typings.atAntDashDesignReactDashNative
 
-import typings.atAntDashDesignReactDashNative.libSearchDashBarDemoBasicMod.SearchBarDemo
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

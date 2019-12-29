@@ -3,7 +3,6 @@ package typings.ionic
 import typings.ionic.definitionsMod.Ionic1BuildOptions
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libBuildMod.BuildRunnerDeps
-import typings.ionic.libProjectIonic1BuildMod.Ionic1BuildRunnerDeps
 import typings.ionic.libProjectIonic1Mod.Ionic1Project
 import scala.scalajs.js
 import scala.scalajs.js.`|`

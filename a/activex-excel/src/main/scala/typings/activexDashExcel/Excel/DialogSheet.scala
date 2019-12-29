@@ -30,7 +30,8 @@ class DialogSheet protected () extends Sheet {
   var EnableOutlining: Boolean = js.native
   var EnablePivotTable: Boolean = js.native
   var EnableSelection: XlEnableSelection = js.native
-  var `Excel.DialogSheet_typekey`: DialogSheet = js.native
+  @JSName("Excel.DialogSheet_typekey")
+  var ExcelDotDialogSheet_typekey: DialogSheet = js.native
   var Focus: js.Any = js.native
   @JSName("HPageBreaks")
   val HPageBreaks_Original: HPageBreaks = js.native

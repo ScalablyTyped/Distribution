@@ -13,7 +13,8 @@ class Diagram protected () extends js.Object {
   var AutoFormat: MsoTriState = js.native
   var AutoLayout: MsoTriState = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Diagram_typekey`: Diagram = js.native
+  @JSName("Excel.Diagram_typekey")
+  var ExcelDotDiagram_typekey: Diagram = js.native
   @JSName("Nodes")
   val Nodes_Original: DiagramNodes = js.native
   val Parent: js.Any = js.native

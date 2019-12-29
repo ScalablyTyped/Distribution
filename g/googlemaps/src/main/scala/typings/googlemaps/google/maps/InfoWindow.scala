@@ -38,8 +38,8 @@ class InfoWindow () extends MVCObject {
     * the offset from the anchor's position to the tip of the InfoWindow.
     */
   def open(): Unit = js.native
-  def open(map: Map): Unit = js.native
-  def open(map: Map, anchor: MVCObject): Unit = js.native
+  def open(map: Map[Element]): Unit = js.native
+  def open(map: Map[Element], anchor: MVCObject): Unit = js.native
   def open(map: StreetViewPanorama): Unit = js.native
   def open(map: StreetViewPanorama, anchor: MVCObject): Unit = js.native
   def setContent(content: String): Unit = js.native

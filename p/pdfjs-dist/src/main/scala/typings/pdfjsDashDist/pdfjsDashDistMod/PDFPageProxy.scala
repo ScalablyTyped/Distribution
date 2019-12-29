@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait PDFPageProxy extends js.Object {
   /**
+    * Page index of the page.  First page is 0.
+    */
+  var pageIndex: Double
+  /**
     * Page number of the page.  First page is 1.
     **/
   var pageNumber: Double
@@ -57,13 +61,14 @@ object PDFPageProxy {
     getAnnotations: () => PDFPromise[PDFAnnotations],
     getTextContent: () => PDFPromise[TextContent],
     getViewport: ViewportParameters => PDFPageViewport,
+    pageIndex: Double,
     pageNumber: Double,
     ref: PDFRef,
     render: PDFRenderParams => PDFRenderTask,
     rotate: Double,
     view: js.Array[Double]
   ): PDFPageProxy = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getAnnotations = js.Any.fromFunction0(getAnnotations), getTextContent = js.Any.fromFunction0(getTextContent), getViewport = js.Any.fromFunction1(getViewport), pageNumber = pageNumber.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], render = js.Any.fromFunction1(render), rotate = rotate.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getAnnotations = js.Any.fromFunction0(getAnnotations), getTextContent = js.Any.fromFunction0(getTextContent), getViewport = js.Any.fromFunction1(getViewport), pageIndex = pageIndex.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], render = js.Any.fromFunction1(render), rotate = rotate.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PDFPageProxy]
   }

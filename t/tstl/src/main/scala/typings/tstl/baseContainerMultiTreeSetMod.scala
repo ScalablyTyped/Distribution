@@ -1,10 +1,9 @@
 package typings.tstl
 
 import typings.tstl.baseContainerMultiSetMod.MultiSet
-import typings.tstl.baseContainerMultiTreeSetMod.MultiTreeSet
 import typings.tstl.baseIteratorISetIteratorMod.ISetIterator
 import typings.tstl.baseIteratorISetIteratorMod.ISetReverseIterator
-import typings.tstl.tstlNumbers.`false`
+import typings.tstl.tstlBooleans.`false`
 import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js
 import scala.scalajs.js.`|`

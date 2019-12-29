@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontStyle.Italic
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontStyle.Normal
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontStyle.Oblique
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

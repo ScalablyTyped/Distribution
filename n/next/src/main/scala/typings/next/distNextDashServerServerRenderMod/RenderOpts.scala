@@ -2,8 +2,8 @@ package typings.next.distNextDashServerServerRenderMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.Anon_Error
-import typings.next.Anon_FalseProps
 import typings.next.Anon_Params
+import typings.next.Anon_Props
 import typings.next.distNextDashServerLibUtilsMod.AppType
 import typings.next.distNextDashServerLibUtilsMod.DocumentType
 import typings.next.distNextDashServerLibUtilsMod.NextPageContext
@@ -42,7 +42,7 @@ trait RenderOpts extends js.Object {
   var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var staticMarkup: Boolean
   var unstable_getStaticPaths: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var unstable_getStaticProps: js.UndefOr[js.Function1[/* params */ Anon_Params, Anon_FalseProps]] = js.undefined
+  var unstable_getStaticProps: js.UndefOr[js.Function1[/* params */ Anon_Params, Anon_Props]] = js.undefined
   def DocumentMiddleware(ctx: NextPageContext): Unit
 }
 
@@ -77,7 +77,7 @@ object RenderOpts {
     nextExport: js.UndefOr[Boolean] = js.undefined,
     runtimeConfig: StringDictionary[js.Any] = null,
     unstable_getStaticPaths: () => Unit = null,
-    unstable_getStaticProps: /* params */ Anon_Params => Anon_FalseProps = null
+    unstable_getStaticProps: /* params */ Anon_Params => Anon_Props = null
   ): RenderOpts = {
     val __obj = js.Dynamic.literal(App = App.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], Document = Document.asInstanceOf[js.Any], DocumentMiddleware = js.Any.fromFunction1(DocumentMiddleware), ampBindInitData = ampBindInitData.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], buildManifest = buildManifest.asInstanceOf[js.Any], canonicalBase = canonicalBase.asInstanceOf[js.Any], dangerousAsPath = dangerousAsPath.asInstanceOf[js.Any], documentMiddlewareEnabled = documentMiddlewareEnabled.asInstanceOf[js.Any], hasCssMode = hasCssMode.asInstanceOf[js.Any], pageConfig = pageConfig.asInstanceOf[js.Any], reactLoadableManifest = reactLoadableManifest.asInstanceOf[js.Any], staticMarkup = staticMarkup.asInstanceOf[js.Any])
     if (ErrorDebug != null) __obj.updateDynamic("ErrorDebug")(ErrorDebug.asInstanceOf[js.Any])

@@ -1,10 +1,6 @@
 package typings.applicationinsightsDashJs.Microsoft.ApplicationInsights
 
 import org.scalablytyped.runtime.TopLevel
-import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Array
-import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Default
-import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Hidden
-import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

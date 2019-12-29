@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object atAngularRouterStrings {
   @js.native
-  sealed trait Empty extends QueryParamsHandling
+  sealed trait _empty extends QueryParamsHandling
   
   @js.native
   sealed trait always extends _RunGuardsAndResolvers
@@ -87,7 +87,7 @@ object atAngularRouterStrings {
   sealed trait top extends js.Object
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline

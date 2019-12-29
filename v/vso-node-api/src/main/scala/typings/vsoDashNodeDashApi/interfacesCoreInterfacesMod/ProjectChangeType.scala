@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectChangeType.Added
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectChangeType.Deleted
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectChangeType.Modified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

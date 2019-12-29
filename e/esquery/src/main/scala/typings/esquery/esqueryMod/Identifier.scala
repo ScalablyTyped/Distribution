@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Identifier extends Selector {
+trait Identifier
+  extends SubjectSelectorAtom
+     with Selector
+     with SubjectSelector {
   @JSName("type")
   var type_Identifier: identifier
   var value: String

@@ -1,9 +1,6 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.None
-import typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.Offset
-import typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.RuleName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

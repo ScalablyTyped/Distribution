@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object commonmarkStrings {
   @js.native
-  sealed trait `)` extends js.Object
+  sealed trait Dot extends js.Object
   
   @js.native
-  sealed trait DOT extends js.Object
+  sealed trait Rightparenthesis extends js.Object
   
   @js.native
   sealed trait block_quote extends NodeType
@@ -79,9 +79,9 @@ object commonmarkStrings {
   sealed trait thematic_break extends NodeType
   
   @scala.inline
-  def `)`: `)` = ")".asInstanceOf[`)`]
+  def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
-  def DOT: DOT = ".".asInstanceOf[DOT]
+  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   @scala.inline
   def block_quote: block_quote = "block_quote".asInstanceOf[block_quote]
   @scala.inline

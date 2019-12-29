@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.javaactions
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenJavaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -30,7 +31,7 @@ class ImportMappingJavaActionParameterType protected ()
 @js.native
 object ImportMappingJavaActionParameterType extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenJavaactionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new ImportMappingJavaActionParameterType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

@@ -1,9 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.ContentWidgetPositionPreference.ABOVE
-import typings.monacoDashEditor.monacoDashEditorMod.editor.ContentWidgetPositionPreference.BELOW
-import typings.monacoDashEditor.monacoDashEditorMod.editor.ContentWidgetPositionPreference.EXACT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

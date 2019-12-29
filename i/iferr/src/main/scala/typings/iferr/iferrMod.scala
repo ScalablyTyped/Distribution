@@ -1,6 +1,5 @@
 package typings.iferr
 
-import typings.iferr.iferrMod.nodeCallback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

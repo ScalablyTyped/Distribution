@@ -12,7 +12,8 @@ class RecentFiles protected () extends js.Object {
   val Creator: Double = js.native
   var Maximum: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.RecentFiles_typekey`: RecentFiles = js.native
+  @JSName("Word.RecentFiles_typekey")
+  var WordDotRecentFiles_typekey: RecentFiles = js.native
   def Add(Document: js.Any): RecentFile = js.native
   def Add(Document: js.Any, ReadOnly: js.Any): RecentFile = js.native
   def Item(Index: Double): RecentFile = js.native

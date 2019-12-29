@@ -19,6 +19,7 @@ class FileConverter protected () extends js.Object {
   val Parent: js.Any = js.native
   val Path: String = js.native
   val SaveFormat: Double = js.native
-  var `Word.FileConverter_typekey`: FileConverter = js.native
+  @JSName("Word.FileConverter_typekey")
+  var WordDotFileConverter_typekey: FileConverter = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.apps.v1beta2
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apps/v1beta2`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.appsSlashv1beta2
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait DeploymentList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `apps/v1beta2`
+  val apiVersion: appsSlashv1beta2
   /**
     * Items is the list of Deployments.
     */
@@ -37,7 +37,7 @@ trait DeploymentList extends js.Object {
 object DeploymentList {
   @scala.inline
   def apply(
-    apiVersion: `apps/v1beta2`,
+    apiVersion: appsSlashv1beta2,
     items: js.Array[Deployment],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.DeploymentList,
     metadata: ListMeta

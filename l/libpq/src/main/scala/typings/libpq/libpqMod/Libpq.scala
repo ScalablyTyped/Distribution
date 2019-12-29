@@ -1,6 +1,6 @@
 package typings.libpq.libpqMod
 
-import typings.libpq.libpqNumbers.`true`
+import typings.libpq.libpqBooleans.`true`
 import typings.node.bufferMod.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error

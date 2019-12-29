@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.HUGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.LARGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.MEDIUM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.TINY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

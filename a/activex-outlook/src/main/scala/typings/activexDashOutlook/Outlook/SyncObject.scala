@@ -10,7 +10,8 @@ class SyncObject protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Name: String = js.native
-  var `Outlook.SyncObject_typekey`: SyncObject = js.native
+  @JSName("Outlook.SyncObject_typekey")
+  var OutlookDotSyncObject_typekey: SyncObject = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Start(): Unit = js.native

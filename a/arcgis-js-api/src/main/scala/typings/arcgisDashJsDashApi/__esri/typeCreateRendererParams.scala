@@ -71,6 +71,20 @@ trait typeCreateRendererParams extends Object {
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * Indicates that all domain codes should be returned if the given field has domain values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#createRenderer)
+    */
+  var returnAllCodedValues: js.UndefOr[Boolean] = js.undefined
+  /**
+    * For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#createRenderer)
+    *
+    * @default false
+    */
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * Indicates how values should be sorted in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html). See the table below for information about values that may be passed to this parameter.
     *
     * Possible Value | Description
@@ -148,6 +162,8 @@ object typeCreateRendererParams {
     legendOptions: typeCreateRendererParamsLegendOptions = null,
     numTypes: Int | Double = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    returnAllCodedValues: js.UndefOr[Boolean] = js.undefined,
+    sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     sortBy: String = null,
     statistics: UniqueValuesResult = null,
     symbolType: String = null,
@@ -164,6 +180,8 @@ object typeCreateRendererParams {
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (numTypes != null) __obj.updateDynamic("numTypes")(numTypes.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])

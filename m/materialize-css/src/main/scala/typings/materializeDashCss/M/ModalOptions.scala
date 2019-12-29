@@ -48,22 +48,22 @@ trait ModalOptions extends js.Object {
     * Callback function called after modal is closed
     * @default null
     */
-  def onCloseEnd(`this`: Modal, el: Element): Unit
+  def onCloseEnd(el: Element): Unit
   /**
     * Callback function called before modal is closed
     * @default null
     */
-  def onCloseStart(`this`: Modal, el: Element): Unit
+  def onCloseStart(el: Element): Unit
   /**
     * Callback function called after modal is opened
     * @default null
     */
-  def onOpenEnd(`this`: Modal, el: Element): Unit
+  def onOpenEnd(el: Element): Unit
   /**
     * Callback function called before modal is opened
     * @default null
     */
-  def onOpenStart(`this`: Modal, el: Element): Unit
+  def onOpenStart(el: Element): Unit
 }
 
 object ModalOptions {
@@ -72,16 +72,16 @@ object ModalOptions {
     dismissible: Boolean,
     endingTop: String,
     inDuration: Double,
-    onCloseEnd: (Modal, Element) => Unit,
-    onCloseStart: (Modal, Element) => Unit,
-    onOpenEnd: (Modal, Element) => Unit,
-    onOpenStart: (Modal, Element) => Unit,
+    onCloseEnd: Element => Unit,
+    onCloseStart: Element => Unit,
+    onOpenEnd: Element => Unit,
+    onOpenStart: Element => Unit,
     opacity: Double,
     outDuration: Double,
     preventScrolling: Boolean,
     startingTop: String
   ): ModalOptions = {
-    val __obj = js.Dynamic.literal(dismissible = dismissible.asInstanceOf[js.Any], endingTop = endingTop.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), opacity = opacity.asInstanceOf[js.Any], outDuration = outDuration.asInstanceOf[js.Any], preventScrolling = preventScrolling.asInstanceOf[js.Any], startingTop = startingTop.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dismissible = dismissible.asInstanceOf[js.Any], endingTop = endingTop.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1(onCloseEnd), onCloseStart = js.Any.fromFunction1(onCloseStart), onOpenEnd = js.Any.fromFunction1(onOpenEnd), onOpenStart = js.Any.fromFunction1(onOpenStart), opacity = opacity.asInstanceOf[js.Any], outDuration = outDuration.asInstanceOf[js.Any], preventScrolling = preventScrolling.asInstanceOf[js.Any], startingTop = startingTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModalOptions]
   }

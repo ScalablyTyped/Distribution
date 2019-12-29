@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.jestDashHasteDashMap.jestDashHasteDashMapNumbers.`0`
-  - typings.jestDashHasteDashMap.jestDashHasteDashMapStrings.BACKSLASHu0000
+  - typings.jestDashHasteDashMap.jestDashHasteDashMapStrings.Null
   - typings.jestDashHasteDashMap.jestDashHasteDashMapNumbers.`1`
   - typings.jestDashHasteDashMap.jestDashHasteDashMapNumbers.`4`
   - typings.jestDashHasteDashMap.jestDashHasteDashMapNumbers.`2`

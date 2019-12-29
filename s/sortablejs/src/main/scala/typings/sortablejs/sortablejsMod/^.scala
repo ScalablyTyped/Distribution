@@ -32,9 +32,9 @@ object ^ extends js.Object {
   /**
     * Mounts a plugin to Sortable
     * @param sortablePlugin a sortable plugin.
-    * 
+    *
     * @example
-    * 
+    *
     * Sortable.mount(new MultiDrag(), new AutoScroll())
     */
   def mount(sortablePlugins: SortablePlugin*): Unit = js.native

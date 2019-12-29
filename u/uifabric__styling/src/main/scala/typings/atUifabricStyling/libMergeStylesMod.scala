@@ -9,10 +9,10 @@ import typings.atUifabricMergeDashStyles.libIStyleSetMod.IConcatenatedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IProcessedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
 import typings.atUifabricMergeDashStyles.libStylesheetMod.IStyleSheetConfig
+import typings.atUifabricStyling.atUifabricStylingBooleans.`false`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`0`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`1`
 import typings.atUifabricStyling.atUifabricStylingNumbers.`2`
-import typings.atUifabricStyling.atUifabricStylingNumbers.`false`
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

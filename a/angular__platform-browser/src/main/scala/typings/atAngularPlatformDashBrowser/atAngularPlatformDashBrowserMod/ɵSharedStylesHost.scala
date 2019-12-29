@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵSharedStylesHost")
+@JSImport("@angular/platform-browser", "\u0275SharedStylesHost")
 @js.native
 class ɵSharedStylesHost () extends js.Object {
   def addStyles(styles: js.Array[String]): Unit = js.native

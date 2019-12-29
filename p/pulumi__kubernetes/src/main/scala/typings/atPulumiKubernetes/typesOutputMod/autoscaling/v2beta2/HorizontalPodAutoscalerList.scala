@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.autoscaling.v2beta2
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`autoscaling/v2beta2`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.autoscalingSlashv2beta2
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait HorizontalPodAutoscalerList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `autoscaling/v2beta2`
+  val apiVersion: autoscalingSlashv2beta2
   /**
     * items is the list of horizontal pod autoscaler objects.
     */
@@ -37,7 +37,7 @@ trait HorizontalPodAutoscalerList extends js.Object {
 object HorizontalPodAutoscalerList {
   @scala.inline
   def apply(
-    apiVersion: `autoscaling/v2beta2`,
+    apiVersion: autoscalingSlashv2beta2,
     items: js.Array[HorizontalPodAutoscaler],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscalerList,
     metadata: ListMeta

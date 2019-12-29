@@ -17,7 +17,7 @@ trait LodashSampleSize extends js.Object {
   def apply[T](n: Double, collection: Dictionary[T]): js.Array[T] = js.native
   def apply[T](n: Double, collection: List[T]): js.Array[T] = js.native
   def apply[T](n: Double, collection: NumericDictionary[T]): js.Array[T] = js.native
-  def apply[T /* <: js.Object */](n: __): LodashSampleSize2x2[T] = js.native
+  def apply[T](n: __): LodashSampleSize1x2[T] = js.native
   def apply[T /* <: js.Object */](n: __, collection: T): LodashSampleSize2x2[T] = js.native
   def apply[T](n: __, collection: Dictionary[T]): LodashSampleSize1x2[T] = js.native
   def apply[T](n: __, collection: List[T]): LodashSampleSize1x2[T] = js.native

@@ -1,7 +1,7 @@
 package typings.rollup
 
+import typings.rollup.rollupBooleans.`true`
 import typings.rollup.rollupMod.DecodedSourceMapOrMissing
-import typings.rollup.rollupNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

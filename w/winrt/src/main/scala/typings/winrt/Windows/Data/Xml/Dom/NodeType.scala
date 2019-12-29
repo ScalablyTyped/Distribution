@@ -1,19 +1,6 @@
 package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.attributeNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.commentNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.dataSectionNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.documentFragmentNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.documentNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.documentTypeNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.elementNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.entityNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.entityReferenceNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.invalid
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.notationNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.processingInstructionNode
-import typings.winrt.Windows.Data.Xml.Dom.NodeType.textNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

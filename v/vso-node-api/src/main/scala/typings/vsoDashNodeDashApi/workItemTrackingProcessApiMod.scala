@@ -14,7 +14,6 @@ import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod
 import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemBehavior
 import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemStateResultModel
 import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemTypeModel
-import typings.vsoDashNodeDashApi.workItemTrackingProcessApiMod.IWorkItemTrackingProcessApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

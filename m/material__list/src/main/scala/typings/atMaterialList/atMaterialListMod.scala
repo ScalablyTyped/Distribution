@@ -1,7 +1,6 @@
 package typings.atMaterialList
 
 import typings.atMaterialList.adapterMod.MDCListAdapter
-import typings.atMaterialList.atMaterialListMod.MDCList
 import typings.atMaterialList.constantsMod.Index
 import typings.std.Element
 import scala.scalajs.js

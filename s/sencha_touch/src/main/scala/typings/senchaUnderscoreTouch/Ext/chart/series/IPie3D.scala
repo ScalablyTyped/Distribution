@@ -11,7 +11,7 @@ trait IPie3D extends IPolar {
   /** [Config Option] (Boolean/Number) */
   var donut: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var field: js.UndefOr[java.lang.String] = js.undefined
+  var field: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of distortion
   		* @returns Number
   		*/
@@ -23,7 +23,7 @@ trait IPie3D extends IPolar {
   /** [Method] Returns the value of field
   		* @returns String
   		*/
-  var getField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of region
   		* @returns Array
   		*/
@@ -43,7 +43,7 @@ trait IPie3D extends IPolar {
   /** [Method] Sets the value of field
   		* @param field String The new value.
   		*/
-  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of region
   		* @param region Array The new value.
   		*/
@@ -60,7 +60,7 @@ object IPie3D {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -77,10 +77,10 @@ object IPie3D {
     destroy: () => Unit = null,
     donut: js.Any = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    field: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    field: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getAnimate: () => _ = null,
     getBackground: () => _ = null,
     getBubbleEvents: () => _ = null,
@@ -88,12 +88,12 @@ object IPie3D {
     getColors: () => Array = null,
     getDistortion: () => Double = null,
     getDonut: () => _ = null,
-    getField: () => java.lang.String = null,
+    getField: () => String = null,
     getHidden: () => _ = null,
     getHighlightCfg: () => _ = null,
     getHighlightItem: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemForPoint: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => _ = null,
     getItemInstancing: () => _ = null,
     getLabel: () => _ = null,
@@ -115,12 +115,12 @@ object IPie3D {
     getSubStyle: () => _ = null,
     getSurface: () => _ = null,
     getThickness: () => Double = null,
-    getTitle: () => java.lang.String = null,
+    getTitle: () => String = null,
     getXAxis: () => _ = null,
-    getXField: () => java.lang.String = null,
+    getXField: () => String = null,
     getYAxis: () => _ = null,
-    getYField: () => java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getYField: () => String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.Any = null,
     highlightCfg: js.Any = null,
     highlightItem: js.Any = null,
@@ -138,7 +138,7 @@ object IPie3D {
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     overlaySurface: js.Any = null,
@@ -148,13 +148,13 @@ object IPie3D {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: js.Any = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     rotation: Int | Double = null,
     self: IClass = null,
-    seriesType: java.lang.String = null,
+    seriesType: String = null,
     setAnimate: /* animate */ js.UndefOr[js.Any] => Unit = null,
     setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
@@ -162,7 +162,7 @@ object IPie3D {
     setColors: /* colors */ js.UndefOr[Array] => Unit = null,
     setDistortion: /* distortion */ js.UndefOr[Double] => Unit = null,
     setDonut: /* donut */ js.UndefOr[js.Any] => Unit = null,
-    setField: /* field */ js.UndefOr[java.lang.String] => Unit = null,
+    setField: /* field */ js.UndefOr[String] => Unit = null,
     setHidden: /* hidden */ js.UndefOr[js.Any] => Unit = null,
     setHiddenByIndex: (/* index */ js.UndefOr[Double], /* value */ js.UndefOr[Boolean]) => Unit = null,
     setHighlightCfg: /* highlightCfg */ js.UndefOr[js.Any] => Unit = null,
@@ -187,11 +187,11 @@ object IPie3D {
     setSubStyle: /* subStyle */ js.UndefOr[js.Any] => Unit = null,
     setSurface: /* surface */ js.UndefOr[js.Any] => Unit = null,
     setThickness: /* thickness */ js.UndefOr[Double] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     setXAxis: /* xAxis */ js.UndefOr[js.Any] => Unit = null,
-    setXField: /* xField */ js.UndefOr[java.lang.String] => Unit = null,
+    setXField: /* xField */ js.UndefOr[String] => Unit = null,
     setYAxis: /* yAxis */ js.UndefOr[js.Any] => Unit = null,
-    setYField: /* yField */ js.UndefOr[java.lang.String] => Unit = null,
+    setYField: /* yField */ js.UndefOr[String] => Unit = null,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
@@ -200,14 +200,14 @@ object IPie3D {
     subStyle: js.Any = null,
     surface: js.Any = null,
     suspendEvents: () => Unit = null,
-    title: java.lang.String = null,
-    `type`: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    title: String = null,
+    `type`: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
-    xField: java.lang.String = null,
-    yField: java.lang.String = null
+    xField: String = null,
+    yField: String = null
   ): IPie3D = {
     val __obj = js.Dynamic.literal()
     if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))

@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.renderWebglImageReplayMod.WebGLImageReplay
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement

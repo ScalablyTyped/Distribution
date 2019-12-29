@@ -1,7 +1,7 @@
 package typings.bootstrap.bootstrapMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bootstrap.bootstrapNumbers.`false`
+import typings.bootstrap.bootstrapBooleans.`false`
 import typings.popperDotJs.popperDotJsMod.Behavior
 import typings.popperDotJs.popperDotJsMod.Boundary
 import typings.std.Element

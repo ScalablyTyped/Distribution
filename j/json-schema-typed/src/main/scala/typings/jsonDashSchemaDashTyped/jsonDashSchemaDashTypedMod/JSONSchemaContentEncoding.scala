@@ -1,13 +1,6 @@
 package typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaContentEncoding.Base64
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaContentEncoding.Binary
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaContentEncoding.IETFToken
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaContentEncoding.QuotedPrintable
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaContentEncoding.XToken
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaContentEncoding.`7bit`
-import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaContentEncoding.`8bit`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

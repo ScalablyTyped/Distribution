@@ -4,6 +4,7 @@ import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.FieldCollection
 import typings.sharepoint.SP.FieldLookup
 import typings.sharepoint.SP.Guid
+import typings.sharepoint.SP.ListItem
 import typings.sharepoint.SP.StringResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,11 +31,11 @@ class TaxonomyField protected () extends FieldLookup {
   def get_termSetId(): Guid = js.native
   def get_textField(): Guid = js.native
   def get_userCreated(): Guid = js.native
-  def setFieldValueByCollection[T](listItem: typings.sharepoint.SP.ListItem[T], terms: js.Array[Term], lcid: Double): Unit = js.native
-  def setFieldValueByTerm[T](listItem: typings.sharepoint.SP.ListItem[T], term: Term, lcid: Double): Unit = js.native
-  def setFieldValueByTermCollection[T](listItem: typings.sharepoint.SP.ListItem[T], terms: TermCollection, lcid: Double): Unit = js.native
-  def setFieldValueByValue[T](listItem: typings.sharepoint.SP.ListItem[T], taxValue: TaxonomyFieldValue): Unit = js.native
-  def setFieldValueByValueCollection[T](listItem: typings.sharepoint.SP.ListItem[T], taxValueCollection: TaxonomyFieldValueCollection): Unit = js.native
+  def setFieldValueByCollection[T](listItem: ListItem[T], terms: js.Array[Term], lcid: Double): Unit = js.native
+  def setFieldValueByTerm[T](listItem: ListItem[T], term: Term, lcid: Double): Unit = js.native
+  def setFieldValueByTermCollection[T](listItem: ListItem[T], terms: TermCollection, lcid: Double): Unit = js.native
+  def setFieldValueByValue[T](listItem: ListItem[T], taxValue: TaxonomyFieldValue): Unit = js.native
+  def setFieldValueByValueCollection[T](listItem: ListItem[T], taxValueCollection: TaxonomyFieldValueCollection): Unit = js.native
   def set_anchorId(value: Guid): Unit = js.native
   def set_createValuesInEditForm(value: Boolean): Unit = js.native
   def set_isKeyword(value: Boolean): Unit = js.native

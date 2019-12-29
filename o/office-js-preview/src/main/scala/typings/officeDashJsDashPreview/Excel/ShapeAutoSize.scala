@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeMixed
-import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeNone
-import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeShapeToFitText
-import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeTextToFitShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

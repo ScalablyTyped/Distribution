@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 
 trait IRecord extends IObservable {
   /** [Property] (String) */
-  var COMMIT: js.UndefOr[java.lang.String] = js.undefined
+  var COMMIT: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var EDIT: js.UndefOr[java.lang.String] = js.undefined
+  var EDIT: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var REJECT: js.UndefOr[java.lang.String] = js.undefined
+  var REJECT: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object[]) */
   var associations: js.UndefOr[Array] = js.undefined
   /** [Method] Begins an edit  */
@@ -23,7 +23,7 @@ trait IRecord extends IObservable {
   /** [Method] Cancels all changes made in the current edit operation  */
   var cancelEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var clientIdProperty: js.UndefOr[java.lang.String] = js.undefined
+  var clientIdProperty: js.UndefOr[String] = js.undefined
   /** [Method] Usually called by the Ext data Store which owns the model instance
   		* @param silent Boolean Pass true to skip notification of the owning store of the change.
   		* @param modifiedFieldNames String[] Array of field names changed during sync with server if known. Omit or pass null if unknown. An empty array means that it is known that no fields were modified by the server's response. Defaults to false.
@@ -35,9 +35,9 @@ trait IRecord extends IObservable {
   		* @param id String A new id, defaults to the id of the instance being copied. See id. To generate a phantom instance with a new id use: var rec = record.copy(); // clone the record Ext.data.Model.id(rec); // automatically generate a unique sequential id
   		* @returns Ext.data.Model
   		*/
-  var copy: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], IModel]] = js.undefined
+  var copy: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], IModel]] = js.undefined
   /** [Config Option] (String) */
-  var defaultProxyType: js.UndefOr[java.lang.String] = js.undefined
+  var defaultProxyType: js.UndefOr[String] = js.undefined
   /** [Method] Destroys the model using the configured proxy
   		* @param options Object Options to pass to the proxy. Config object for Ext.data.Operation.
   		* @returns Ext.data.Model The Model instance
@@ -60,7 +60,7 @@ trait IRecord extends IObservable {
   		* @param fieldName String The field to fetch the value for
   		* @returns Object The value
   		*/
-  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Gets all of the data from this Models loaded associations
   		* @returns Object The nested data set for the Model's loaded associations
   		*/
@@ -94,7 +94,7 @@ trait IRecord extends IObservable {
   		* @param fieldName String Ext.data.Field.name
   		* @returns Boolean
   		*/
-  var isModified: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var isModified: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Checks if the model is valid
   		* @returns Boolean True if the model is valid.
   		*/
@@ -106,7 +106,7 @@ trait IRecord extends IObservable {
   /** [Property] (Object) */
   var modified: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var persistenceProperty: js.UndefOr[java.lang.String] = js.undefined
+  var persistenceProperty: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var phantom: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String/Object/Ext.data.proxy.Proxy) */
@@ -162,9 +162,9 @@ trait IRecord extends IObservable {
 object IRecord {
   @scala.inline
   def apply(
-    COMMIT: java.lang.String = null,
-    EDIT: java.lang.String = null,
-    REJECT: java.lang.String = null,
+    COMMIT: String = null,
+    EDIT: String = null,
+    REJECT: String = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
@@ -179,28 +179,28 @@ object IRecord {
     cancelEdit: () => Unit = null,
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
-    clientIdProperty: java.lang.String = null,
+    clientIdProperty: String = null,
     commit: (/* silent */ js.UndefOr[Boolean], /* modifiedFieldNames */ js.UndefOr[Array]) => Unit = null,
     config: js.Any = null,
-    copy: /* id */ js.UndefOr[java.lang.String] => IModel = null,
-    defaultProxyType: java.lang.String = null,
+    copy: /* id */ js.UndefOr[String] => IModel = null,
+    defaultProxyType: String = null,
     destroy: /* options */ js.UndefOr[js.Any] => IModel = null,
     dirty: js.UndefOr[Boolean] = js.undefined,
     editing: js.UndefOr[Boolean] = js.undefined,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     endEdit: (/* silent */ js.UndefOr[Boolean], /* modifiedFieldNames */ js.UndefOr[Array]) => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: js.Any = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    get: /* fieldName */ js.UndefOr[java.lang.String] => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    get: /* fieldName */ js.UndefOr[String] => _ = null,
     getAssociatedData: () => _ = null,
     getChanges: () => _ = null,
     getData: /* includeAssociated */ js.UndefOr[Boolean] => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getProxy: () => typings.extjs.Ext.data.proxy.IProxy = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hasMany: js.Any = null,
     idProperty: js.Any = null,
@@ -208,7 +208,7 @@ object IRecord {
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IRecord = null,
     isModel: js.UndefOr[Boolean] = js.undefined,
-    isModified: /* fieldName */ js.UndefOr[java.lang.String] => Boolean = null,
+    isModified: /* fieldName */ js.UndefOr[String] => Boolean = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     isValid: () => Boolean = null,
     join: /* store */ js.UndefOr[IStore] => Unit = null,
@@ -218,13 +218,13 @@ object IRecord {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    persistenceProperty: java.lang.String = null,
+    persistenceProperty: String = null,
     phantom: js.UndefOr[Boolean] = js.undefined,
     proxy: js.Any = null,
     raw: js.Any = null,
     reject: /* silent */ js.UndefOr[Boolean] => Unit = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -241,7 +241,7 @@ object IRecord {
     stores: Array = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     unjoin: /* store */ js.UndefOr[IStore] => Unit = null,
     uses: Array = null,
     validate: () => IErrors = null,

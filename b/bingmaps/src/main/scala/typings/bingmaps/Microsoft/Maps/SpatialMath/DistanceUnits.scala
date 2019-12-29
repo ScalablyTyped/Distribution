@@ -1,12 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.SpatialMath
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Feet
-import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Kilometers
-import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Meters
-import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Miles
-import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.NauticalMiles
-import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

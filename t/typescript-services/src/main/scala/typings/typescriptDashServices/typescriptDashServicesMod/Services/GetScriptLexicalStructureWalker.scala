@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services
 
+import typings.typescriptDashServices.TypeScript.SourceUnitSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object GetScriptLexicalStructureWalker extends js.Object {
   def getListsOfAllScriptLexicalStructure(
     items: js.Array[typings.typescriptDashServices.TypeScript.Services.NavigateToItem],
     fileName: String,
-    unit: typings.typescriptDashServices.TypeScript.SourceUnitSyntax
+    unit: SourceUnitSyntax
   ): Unit = js.native
 }
 

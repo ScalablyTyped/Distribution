@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class Document protected () extends js.Object {
   val AllPermissions: Double = js.native
   val Container: String = js.native
-  var `DAO.Document_typekey`: Document = js.native
+  @JSName("DAO.Document_typekey")
+  var DAODotDocument_typekey: Document = js.native
   val DateCreated: VarDate = js.native
   val LastUpdated: VarDate = js.native
   val Name: String = js.native

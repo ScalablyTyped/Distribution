@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1ServiceAccountListMod.ServiceAccountList
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ServiceAccount
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource

@@ -14,7 +14,8 @@ class ChartGroup protected () extends js.Object {
   var DoughnutHoleSize: Double = js.native
   val DownBars: typings.activexDashExcel.Excel.DownBars = js.native
   val DropLines: typings.activexDashExcel.Excel.DropLines = js.native
-  var `Excel.ChartGroup_typekey`: ChartGroup = js.native
+  @JSName("Excel.ChartGroup_typekey")
+  var ExcelDotChartGroup_typekey: ChartGroup = js.native
   var FirstSliceAngle: Double = js.native
   var GapWidth: Double = js.native
   var Has3DShading: Boolean = js.native

@@ -16,7 +16,7 @@ trait BeforeCellFormatEventArgs extends js.Object {
   var format: js.UndefOr[js.Any] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the sheet index.
     */
   var sheetIdx: js.UndefOr[Double] = js.undefined
@@ -31,7 +31,7 @@ object BeforeCellFormatEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     cells: js.Array[_] | js.Any = null,
     format: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     sheetIdx: Int | Double = null,
     `type`: String = null
   ): BeforeCellFormatEventArgs = {

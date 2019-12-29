@@ -1,13 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.Extension.Dts
-import typings.typescript.typescriptMod.Extension.Js
-import typings.typescript.typescriptMod.Extension.Json
-import typings.typescript.typescriptMod.Extension.Jsx
-import typings.typescript.typescriptMod.Extension.Ts
-import typings.typescript.typescriptMod.Extension.TsBuildInfo
-import typings.typescript.typescriptMod.Extension.Tsx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

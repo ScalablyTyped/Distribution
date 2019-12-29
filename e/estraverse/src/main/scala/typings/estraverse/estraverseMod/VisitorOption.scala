@@ -1,9 +1,6 @@
 package typings.estraverse.estraverseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.estraverse.estraverseMod.VisitorOption.Break
-import typings.estraverse.estraverseMod.VisitorOption.Remove
-import typings.estraverse.estraverseMod.VisitorOption.Skip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

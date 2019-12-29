@@ -192,12 +192,11 @@ package object JQuery {
   StringDictionary[ValHook[HTMLElement]]
   // #endregion
   /* Rewritten from type alias, can be one of: 
-    - typings.cypress.cypressNumbers.`false`
+    - typings.cypress.cypressBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
     - typings.cypress.cypressNumbers.`0`
-    - typings.cypress.cypressStrings.Empty
+    - typings.cypress.cypressStrings._empty
     - typings.std.HTMLAllCollection
   */
   type _Falsy = js.UndefOr[__Falsy | Null | HTMLAllCollection]

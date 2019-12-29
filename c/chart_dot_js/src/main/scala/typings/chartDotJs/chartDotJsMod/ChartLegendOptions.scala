@@ -19,6 +19,9 @@ trait ChartLegendOptions extends js.Object {
   var onHover: js.UndefOr[
     js.Function2[/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem, Unit]
   ] = js.undefined
+  var onLeave: js.UndefOr[
+    js.Function2[/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem, Unit]
+  ] = js.undefined
   var position: js.UndefOr[PositionType] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
 }
@@ -32,6 +35,7 @@ object ChartLegendOptions {
     labels: ChartLegendLabelOptions = null,
     onClick: (/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem) => Unit = null,
     onHover: (/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem) => Unit = null,
+    onLeave: (/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem) => Unit = null,
     position: PositionType = null,
     reverse: js.UndefOr[Boolean] = js.undefined
   ): ChartLegendOptions = {
@@ -42,6 +46,7 @@ object ChartLegendOptions {
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction2(onHover))
+    if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction2(onLeave))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendOptions]

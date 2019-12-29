@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EventPublisherQueryFlags.IncludeRemoteServices
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EventPublisherQueryFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

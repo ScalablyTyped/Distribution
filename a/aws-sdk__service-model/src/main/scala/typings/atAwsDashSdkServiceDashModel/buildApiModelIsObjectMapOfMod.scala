@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkServiceDashModel
 
-import typings.atAwsDashSdkServiceDashModel.buildApiModelIsObjectMapOfMod.Determiner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

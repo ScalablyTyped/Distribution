@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.bottomEdge
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.default
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.leftEdge
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.none
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.notAvailable
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.printerCustom
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.rightEdge
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintHolePunch.topEdge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Automated
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Manual
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.None
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Scheduled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

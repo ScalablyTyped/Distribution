@@ -13,7 +13,8 @@ class ThemeFontScheme protected () extends js.Object {
   val MajorFont_Original: ThemeFonts = js.native
   @JSName("MinorFont")
   val MinorFont_Original: ThemeFonts = js.native
-  var `Office.ThemeFontScheme_typekey`: ThemeFontScheme = js.native
+  @JSName("Office.ThemeFontScheme_typekey")
+  var OfficeDotThemeFontScheme_typekey: ThemeFontScheme = js.native
   val Parent: js.Any = js.native
   def Load(FileName: String): Unit = js.native
   def MajorFont(Index: MsoFontLanguageIndex): ThemeFont = js.native

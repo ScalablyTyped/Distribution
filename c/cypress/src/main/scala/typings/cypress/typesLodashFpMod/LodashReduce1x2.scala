@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashReduce1x2[TResult] extends js.Object {
-  def apply[T](callback: MemoIteratorCapped[T, TResult]): TResult = js.native
+  def apply[T /* <: js.Object */](
+    callback: MemoIteratorCapped[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      TResult
+    ]
+  ): TResult = js.native
   def apply[T /* <: js.Object */](
     callback: MemoIteratorCapped[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

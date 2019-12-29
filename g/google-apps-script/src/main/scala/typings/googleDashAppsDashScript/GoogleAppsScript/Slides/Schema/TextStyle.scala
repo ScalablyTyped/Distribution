@@ -12,7 +12,7 @@ trait TextStyle extends js.Object {
   var fontSize: js.UndefOr[Dimension] = js.undefined
   var foregroundColor: js.UndefOr[OptionalColor] = js.undefined
   var italic: js.UndefOr[Boolean] = js.undefined
-  var link: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Link] = js.undefined
+  var link: js.UndefOr[Link] = js.undefined
   var smallCaps: js.UndefOr[Boolean] = js.undefined
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   var underline: js.UndefOr[Boolean] = js.undefined
@@ -29,7 +29,7 @@ object TextStyle {
     fontSize: Dimension = null,
     foregroundColor: OptionalColor = null,
     italic: js.UndefOr[Boolean] = js.undefined,
-    link: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Link = null,
+    link: Link = null,
     smallCaps: js.UndefOr[Boolean] = js.undefined,
     strikethrough: js.UndefOr[Boolean] = js.undefined,
     underline: js.UndefOr[Boolean] = js.undefined,

@@ -1,10 +1,6 @@
 package typings.tsutils.utilUtilMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tsutils.utilUtilMod.ScopeBoundarySelector.Block
-import typings.tsutils.utilUtilMod.ScopeBoundarySelector.Function
-import typings.tsutils.utilUtilMod.ScopeBoundarySelector.InferType
-import typings.tsutils.utilUtilMod.ScopeBoundarySelector.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

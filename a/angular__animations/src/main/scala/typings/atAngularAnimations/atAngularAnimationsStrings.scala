@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object atAngularAnimationsStrings {
   @js.native
-  sealed trait `!` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait Exclamationmark extends js.Object
   
   @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
 }
 

@@ -7,9 +7,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @experimental
-  */
 @JSImport("v8", "Serializer")
 @js.native
 class Serializer () extends js.Object {

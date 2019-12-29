@@ -1,8 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.OpenWebOptions.initNavigationCache
-import typings.sharepoint.SP.OpenWebOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

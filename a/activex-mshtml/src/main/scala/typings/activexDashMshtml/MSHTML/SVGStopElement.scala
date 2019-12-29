@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGStopElement")
 @js.native
 class SVGStopElement protected () extends js.Object {
-  var `MSHTML.SVGStopElement_typekey`: SVGStopElement = js.native
+  @JSName("MSHTML.SVGStopElement_typekey")
+  var MSHTMLDotSVGStopElement_typekey: SVGStopElement = js.native
   val className: SVGAnimatedString = js.native
   var focusable: SVGAnimatedEnumeration = js.native
   var offset: SVGAnimatedNumber = js.native

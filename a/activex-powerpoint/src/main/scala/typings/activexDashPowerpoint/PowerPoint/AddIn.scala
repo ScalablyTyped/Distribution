@@ -16,7 +16,8 @@ class AddIn protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   val Path: String = js.native
-  var `PowerPoint.AddIn_typekey`: AddIn = js.native
+  @JSName("PowerPoint.AddIn_typekey")
+  var PowerPointDotAddIn_typekey: AddIn = js.native
   var Registered: MsoTriState = js.native
   val RegisteredInHKLM: MsoTriState = js.native
 }

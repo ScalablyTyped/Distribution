@@ -1,6 +1,5 @@
 package typings.safeDashBuffer
 
-import typings.safeDashBuffer.safeDashBufferMod.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js

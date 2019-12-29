@@ -1,6 +1,6 @@
 package typings.envDashCi.envDashCiMod
 
-import typings.envDashCi.envDashCiNumbers.`true`
+import typings.envDashCi.envDashCiBooleans.`true`
 import typings.envDashCi.envDashCiStrings.`AWS CodeBuild`
 import typings.envDashCi.envDashCiStrings.codebuild
 import scala.scalajs.js

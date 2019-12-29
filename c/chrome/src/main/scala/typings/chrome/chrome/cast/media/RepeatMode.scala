@@ -1,10 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.RepeatMode.ALL
-import typings.chrome.chrome.cast.media.RepeatMode.ALL_AND_SHUFFLE
-import typings.chrome.chrome.cast.media.RepeatMode.OFF
-import typings.chrome.chrome.cast.media.RepeatMode.SINGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

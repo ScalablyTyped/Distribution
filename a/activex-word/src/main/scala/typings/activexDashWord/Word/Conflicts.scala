@@ -11,7 +11,8 @@ class Conflicts protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Conflicts_typekey`: Conflicts = js.native
+  @JSName("Word.Conflicts_typekey")
+  var WordDotConflicts_typekey: Conflicts = js.native
   def AcceptAll(): Unit = js.native
   def Item(Index: Double): Conflict = js.native
   def RejectAll(): Unit = js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵRenderDebugInfo")
+@JSImport("@angular/core", "\u0275RenderDebugInfo")
 @js.native
 abstract class ɵRenderDebugInfo () extends js.Object {
   val component: js.Any = js.native

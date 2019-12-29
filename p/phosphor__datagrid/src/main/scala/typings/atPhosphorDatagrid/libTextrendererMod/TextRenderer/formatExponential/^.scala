@@ -22,6 +22,6 @@ object ^ extends js.Object {
     * The `formatIntlNumber()` formatter is more flexible, but slower.
     */
   def apply(): FormatFunc = js.native
-  def apply(options: typings.atPhosphorDatagrid.libTextrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = js.native
+  def apply(options: IOptions): FormatFunc = js.native
 }
 

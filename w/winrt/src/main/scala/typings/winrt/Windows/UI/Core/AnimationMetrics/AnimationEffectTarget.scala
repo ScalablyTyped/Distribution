@@ -1,26 +1,6 @@
 package typings.winrt.Windows.UI.Core.AnimationMetrics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.added
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.affected
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.background
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.content
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deleted
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deselected
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.dragSource
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.hidden
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.incoming
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outgoing
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outline
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.primary
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.remaining
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.revealed
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowIn
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowOut
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selected
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selection
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.shown
-import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.tapped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

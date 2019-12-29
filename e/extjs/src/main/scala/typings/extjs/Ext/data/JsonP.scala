@@ -15,11 +15,11 @@ class JsonP () extends js.Object
 @js.native
 object JsonP extends js.Object {
   /** [Property] (String) */
-  var callbackKey: java.lang.String = js.native
+  var callbackKey: String = js.native
   /** [Property] (Boolean) */
   var disableCaching: Boolean = js.native
   /** [Property] (String) */
-  var disableCachingParam: java.lang.String = js.native
+  var disableCachingParam: String = js.native
   /** [Property] (Ext.Class) */
   var self: IClass = js.native
   /** [Property] (Number) */
@@ -52,7 +52,7 @@ object JsonP extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this

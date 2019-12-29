@@ -15,7 +15,7 @@ object reactDashVirtualizedStrings {
   sealed trait DESC extends SortDirectionType
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait auto extends Alignment
@@ -55,7 +55,7 @@ object reactDashVirtualizedStrings {
   @scala.inline
   def DESC: DESC = "DESC".asInstanceOf[DESC]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline

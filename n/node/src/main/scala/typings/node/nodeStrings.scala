@@ -4,6 +4,7 @@ import typings.node.NodeJS.MultipleResolveType
 import typings.node.NodeJS.Platform
 import typings.node.NodeJS.Signals
 import typings.node.bufferMod.TranscodeEncoding
+import typings.node.childUnderscoreProcessMod.SerializationType
 import typings.node.childUnderscoreProcessMod.StdioNull
 import typings.node.childUnderscoreProcessMod._StdioOptions
 import typings.node.cryptoMod.CipherCCMTypes
@@ -25,15 +26,6 @@ import scala.scalajs.js.annotation._
 
 object nodeStrings {
   @js.native
-  sealed trait `/` extends js.Object
-  
-  @js.native
-  sealed trait `:` extends js.Object
-  
-  @js.native
-  sealed trait `;` extends js.Object
-  
-  @js.native
   sealed trait A extends js.Object
   
   @js.native
@@ -41,9 +33,6 @@ object nodeStrings {
   
   @js.native
   sealed trait ANY extends js.Object
-  
-  @js.native
-  sealed trait BACKSLASHBACKSLASH extends js.Object
   
   @js.native
   sealed trait BE extends js.Object
@@ -55,172 +44,169 @@ object nodeStrings {
   sealed trait CNAME extends js.Object
   
   @js.native
-  sealed trait ConsoleDOTclearMessages extends js.Object
+  sealed trait ConsoleDotclearMessages extends js.Object
   
   @js.native
-  sealed trait ConsoleDOTdisable extends js.Object
+  sealed trait ConsoleDotdisable extends js.Object
   
   @js.native
-  sealed trait ConsoleDOTenable extends js.Object
+  sealed trait ConsoleDotenable extends js.Object
   
   @js.native
-  sealed trait ConsoleDOTmessageAdded extends js.Object
+  sealed trait ConsoleDotmessageAdded extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTbreakpointResolved extends js.Object
+  sealed trait DebuggerDotbreakpointResolved extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTcontinueToLocation extends js.Object
+  sealed trait DebuggerDotcontinueToLocation extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTdisable extends js.Object
+  sealed trait DebuggerDotdisable extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTenable extends js.Object
+  sealed trait DebuggerDotenable extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTevaluateOnCallFrame extends js.Object
+  sealed trait DebuggerDotevaluateOnCallFrame extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTgetPossibleBreakpoints extends js.Object
+  sealed trait DebuggerDotgetPossibleBreakpoints extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTgetScriptSource extends js.Object
+  sealed trait DebuggerDotgetScriptSource extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTgetStackTrace extends js.Object
+  sealed trait DebuggerDotgetStackTrace extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTpause extends js.Object
+  sealed trait DebuggerDotpause extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTpauseOnAsyncCall extends js.Object
+  sealed trait DebuggerDotpauseOnAsyncCall extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTpaused extends js.Object
+  sealed trait DebuggerDotpaused extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTremoveBreakpoint extends js.Object
+  sealed trait DebuggerDotremoveBreakpoint extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTrestartFrame extends js.Object
+  sealed trait DebuggerDotrestartFrame extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTresume extends js.Object
+  sealed trait DebuggerDotresume extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTresumed extends js.Object
+  sealed trait DebuggerDotresumed extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTscheduleStepIntoAsync extends js.Object
+  sealed trait DebuggerDotscheduleStepIntoAsync extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTscriptFailedToParse extends js.Object
+  sealed trait DebuggerDotscriptFailedToParse extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTscriptParsed extends js.Object
+  sealed trait DebuggerDotscriptParsed extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsearchInContent extends js.Object
+  sealed trait DebuggerDotsearchInContent extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetAsyncCallStackDepth extends js.Object
+  sealed trait DebuggerDotsetAsyncCallStackDepth extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetBlackboxPatterns extends js.Object
+  sealed trait DebuggerDotsetBlackboxPatterns extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetBlackboxedRanges extends js.Object
+  sealed trait DebuggerDotsetBlackboxedRanges extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetBreakpoint extends js.Object
+  sealed trait DebuggerDotsetBreakpoint extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetBreakpointByUrl extends js.Object
+  sealed trait DebuggerDotsetBreakpointByUrl extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetBreakpointsActive extends js.Object
+  sealed trait DebuggerDotsetBreakpointsActive extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetPauseOnExceptions extends js.Object
+  sealed trait DebuggerDotsetPauseOnExceptions extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetReturnValue extends js.Object
+  sealed trait DebuggerDotsetReturnValue extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetScriptSource extends js.Object
+  sealed trait DebuggerDotsetScriptSource extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetSkipAllPauses extends js.Object
+  sealed trait DebuggerDotsetSkipAllPauses extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTsetVariableValue extends js.Object
+  sealed trait DebuggerDotsetVariableValue extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTstepInto extends js.Object
+  sealed trait DebuggerDotstepInto extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTstepOut extends js.Object
+  sealed trait DebuggerDotstepOut extends js.Object
   
   @js.native
-  sealed trait DebuggerDOTstepOver extends js.Object
+  sealed trait DebuggerDotstepOver extends js.Object
   
   @js.native
   sealed trait ERR_ASSERTION extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait HeapProfilerDotaddHeapSnapshotChunk extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTaddHeapSnapshotChunk extends js.Object
+  sealed trait HeapProfilerDotaddInspectedHeapObject extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTaddInspectedHeapObject extends js.Object
+  sealed trait HeapProfilerDotcollectGarbage extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTcollectGarbage extends js.Object
+  sealed trait HeapProfilerDotdisable extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTdisable extends js.Object
+  sealed trait HeapProfilerDotenable extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTenable extends js.Object
+  sealed trait HeapProfilerDotgetHeapObjectId extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTgetHeapObjectId extends js.Object
+  sealed trait HeapProfilerDotgetObjectByHeapObjectId extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTgetObjectByHeapObjectId extends js.Object
+  sealed trait HeapProfilerDotgetSamplingProfile extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTgetSamplingProfile extends js.Object
+  sealed trait HeapProfilerDotheapStatsUpdate extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTheapStatsUpdate extends js.Object
+  sealed trait HeapProfilerDotlastSeenObjectId extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTlastSeenObjectId extends js.Object
+  sealed trait HeapProfilerDotreportHeapSnapshotProgress extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTreportHeapSnapshotProgress extends js.Object
+  sealed trait HeapProfilerDotresetProfiles extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTresetProfiles extends js.Object
+  sealed trait HeapProfilerDotstartSampling extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTstartSampling extends js.Object
+  sealed trait HeapProfilerDotstartTrackingHeapObjects extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTstartTrackingHeapObjects extends js.Object
+  sealed trait HeapProfilerDotstopSampling extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTstopSampling extends js.Object
+  sealed trait HeapProfilerDotstopTrackingHeapObjects extends js.Object
   
   @js.native
-  sealed trait HeapProfilerDOTstopTrackingHeapObjects extends js.Object
-  
-  @js.native
-  sealed trait HeapProfilerDOTtakeHeapSnapshot extends js.Object
+  sealed trait HeapProfilerDottakeHeapSnapshot extends js.Object
   
   @js.native
   sealed trait IPv4 extends js.Object
@@ -241,46 +227,46 @@ object nodeStrings {
   sealed trait NS extends js.Object
   
   @js.native
-  sealed trait NodeRuntimeDOTnotifyWhenWaitingForDisconnect extends js.Object
+  sealed trait NodeRuntimeDotnotifyWhenWaitingForDisconnect extends js.Object
   
   @js.native
-  sealed trait NodeRuntimeDOTwaitingForDisconnect extends js.Object
+  sealed trait NodeRuntimeDotwaitingForDisconnect extends js.Object
   
   @js.native
-  sealed trait NodeTracingDOTdataCollected extends js.Object
+  sealed trait NodeTracingDotdataCollected extends js.Object
   
   @js.native
-  sealed trait NodeTracingDOTgetCategories extends js.Object
+  sealed trait NodeTracingDotgetCategories extends js.Object
   
   @js.native
-  sealed trait NodeTracingDOTstart extends js.Object
+  sealed trait NodeTracingDotstart extends js.Object
   
   @js.native
-  sealed trait NodeTracingDOTstop extends js.Object
+  sealed trait NodeTracingDotstop extends js.Object
   
   @js.native
-  sealed trait NodeTracingDOTtracingComplete extends js.Object
+  sealed trait NodeTracingDottracingComplete extends js.Object
   
   @js.native
-  sealed trait NodeWorkerDOTattachedToWorker extends js.Object
+  sealed trait NodeWorkerDotattachedToWorker extends js.Object
   
   @js.native
-  sealed trait NodeWorkerDOTdetach extends js.Object
+  sealed trait NodeWorkerDotdetach extends js.Object
   
   @js.native
-  sealed trait NodeWorkerDOTdetachedFromWorker extends js.Object
+  sealed trait NodeWorkerDotdetachedFromWorker extends js.Object
   
   @js.native
-  sealed trait NodeWorkerDOTdisable extends js.Object
+  sealed trait NodeWorkerDotdisable extends js.Object
   
   @js.native
-  sealed trait NodeWorkerDOTenable extends js.Object
+  sealed trait NodeWorkerDotenable extends js.Object
   
   @js.native
-  sealed trait NodeWorkerDOTreceivedMessageFromWorker extends js.Object
+  sealed trait NodeWorkerDotreceivedMessageFromWorker extends js.Object
   
   @js.native
-  sealed trait NodeWorkerDOTsendMessageToWorker extends js.Object
+  sealed trait NodeWorkerDotsendMessageToWorker extends js.Object
   
   @js.native
   sealed trait OCSPRequest extends js.Object
@@ -292,112 +278,112 @@ object nodeStrings {
   sealed trait PTR extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTconsoleProfileFinished extends js.Object
+  sealed trait ProfilerDotconsoleProfileFinished extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTconsoleProfileStarted extends js.Object
+  sealed trait ProfilerDotconsoleProfileStarted extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTdisable extends js.Object
+  sealed trait ProfilerDotdisable extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTenable extends js.Object
+  sealed trait ProfilerDotenable extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTgetBestEffortCoverage extends js.Object
+  sealed trait ProfilerDotgetBestEffortCoverage extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTsetSamplingInterval extends js.Object
+  sealed trait ProfilerDotsetSamplingInterval extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTstart extends js.Object
+  sealed trait ProfilerDotstart extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTstartPreciseCoverage extends js.Object
+  sealed trait ProfilerDotstartPreciseCoverage extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTstartTypeProfile extends js.Object
+  sealed trait ProfilerDotstartTypeProfile extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTstop extends js.Object
+  sealed trait ProfilerDotstop extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTstopPreciseCoverage extends js.Object
+  sealed trait ProfilerDotstopPreciseCoverage extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTstopTypeProfile extends js.Object
+  sealed trait ProfilerDotstopTypeProfile extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTtakePreciseCoverage extends js.Object
+  sealed trait ProfilerDottakePreciseCoverage extends js.Object
   
   @js.native
-  sealed trait ProfilerDOTtakeTypeProfile extends js.Object
+  sealed trait ProfilerDottakeTypeProfile extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTawaitPromise extends js.Object
+  sealed trait RuntimeDotawaitPromise extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTcallFunctionOn extends js.Object
+  sealed trait RuntimeDotcallFunctionOn extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTcompileScript extends js.Object
+  sealed trait RuntimeDotcompileScript extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTconsoleAPICalled extends js.Object
+  sealed trait RuntimeDotconsoleAPICalled extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTdisable extends js.Object
+  sealed trait RuntimeDotdisable extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTdiscardConsoleEntries extends js.Object
+  sealed trait RuntimeDotdiscardConsoleEntries extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTenable extends js.Object
+  sealed trait RuntimeDotenable extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTevaluate extends js.Object
+  sealed trait RuntimeDotevaluate extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTexceptionRevoked extends js.Object
+  sealed trait RuntimeDotexceptionRevoked extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTexceptionThrown extends js.Object
+  sealed trait RuntimeDotexceptionThrown extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTexecutionContextCreated extends js.Object
+  sealed trait RuntimeDotexecutionContextCreated extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTexecutionContextDestroyed extends js.Object
+  sealed trait RuntimeDotexecutionContextDestroyed extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTexecutionContextsCleared extends js.Object
+  sealed trait RuntimeDotexecutionContextsCleared extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTgetProperties extends js.Object
+  sealed trait RuntimeDotgetProperties extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTglobalLexicalScopeNames extends js.Object
+  sealed trait RuntimeDotglobalLexicalScopeNames extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTinspectRequested extends js.Object
+  sealed trait RuntimeDotinspectRequested extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTqueryObjects extends js.Object
+  sealed trait RuntimeDotqueryObjects extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTreleaseObject extends js.Object
+  sealed trait RuntimeDotreleaseObject extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTreleaseObjectGroup extends js.Object
+  sealed trait RuntimeDotreleaseObjectGroup extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTrunIfWaitingForDebugger extends js.Object
+  sealed trait RuntimeDotrunIfWaitingForDebugger extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTrunScript extends js.Object
+  sealed trait RuntimeDotrunScript extends js.Object
   
   @js.native
-  sealed trait RuntimeDOTsetCustomObjectFormatterEnabled extends js.Object
+  sealed trait RuntimeDotsetCustomObjectFormatterEnabled extends js.Object
   
   @js.native
   sealed trait SIGABRT extends Signals
@@ -517,28 +503,37 @@ object nodeStrings {
   sealed trait SRV extends js.Object
   
   @js.native
-  sealed trait SchemaDOTgetDomains extends js.Object
+  sealed trait SchemaDotgetDomains extends js.Object
+  
+  @js.native
+  sealed trait SignalConstants extends js.Object
   
   @js.native
   sealed trait TLSv1 extends SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT1 extends SecureVersion
+  sealed trait TLSv1Dot1 extends SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT2 extends SecureVersion
+  sealed trait TLSv1Dot2 extends SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT3 extends SecureVersion
+  sealed trait TLSv1Dot3 extends SecureVersion
   
   @js.native
   sealed trait TXT extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait abort extends js.Object
   
   @js.native
   sealed trait aborted extends js.Object
+  
+  @js.native
+  sealed trait advanced extends SerializationType
   
   @js.native
   sealed trait `aes-128-ccm` extends CipherCCMTypes
@@ -704,6 +699,9 @@ object nodeStrings {
   
   @js.native
   sealed trait ipc extends js.Object
+  
+  @js.native
+  sealed trait json extends SerializationType
   
   @js.native
   sealed trait junction extends Type
@@ -931,19 +929,11 @@ object nodeStrings {
   sealed trait win32 extends Platform
   
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
-  @scala.inline
-  def `:`: `:` = ":".asInstanceOf[`:`]
-  @scala.inline
-  def `;`: `;` = ";".asInstanceOf[`;`]
-  @scala.inline
   def A: A = "A".asInstanceOf[A]
   @scala.inline
   def AAAA: AAAA = "AAAA".asInstanceOf[AAAA]
   @scala.inline
   def ANY: ANY = "ANY".asInstanceOf[ANY]
-  @scala.inline
-  def BACKSLASHBACKSLASH: BACKSLASHBACKSLASH = "\\".asInstanceOf[BACKSLASHBACKSLASH]
   @scala.inline
   def BE: BE = "BE".asInstanceOf[BE]
   @scala.inline
@@ -951,117 +941,115 @@ object nodeStrings {
   @scala.inline
   def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
   @scala.inline
-  def ConsoleDOTclearMessages: ConsoleDOTclearMessages = "Console.clearMessages".asInstanceOf[ConsoleDOTclearMessages]
+  def ConsoleDotclearMessages: ConsoleDotclearMessages = "Console.clearMessages".asInstanceOf[ConsoleDotclearMessages]
   @scala.inline
-  def ConsoleDOTdisable: ConsoleDOTdisable = "Console.disable".asInstanceOf[ConsoleDOTdisable]
+  def ConsoleDotdisable: ConsoleDotdisable = "Console.disable".asInstanceOf[ConsoleDotdisable]
   @scala.inline
-  def ConsoleDOTenable: ConsoleDOTenable = "Console.enable".asInstanceOf[ConsoleDOTenable]
+  def ConsoleDotenable: ConsoleDotenable = "Console.enable".asInstanceOf[ConsoleDotenable]
   @scala.inline
-  def ConsoleDOTmessageAdded: ConsoleDOTmessageAdded = "Console.messageAdded".asInstanceOf[ConsoleDOTmessageAdded]
+  def ConsoleDotmessageAdded: ConsoleDotmessageAdded = "Console.messageAdded".asInstanceOf[ConsoleDotmessageAdded]
   @scala.inline
-  def DebuggerDOTbreakpointResolved: DebuggerDOTbreakpointResolved = "Debugger.breakpointResolved".asInstanceOf[DebuggerDOTbreakpointResolved]
+  def DebuggerDotbreakpointResolved: DebuggerDotbreakpointResolved = "Debugger.breakpointResolved".asInstanceOf[DebuggerDotbreakpointResolved]
   @scala.inline
-  def DebuggerDOTcontinueToLocation: DebuggerDOTcontinueToLocation = "Debugger.continueToLocation".asInstanceOf[DebuggerDOTcontinueToLocation]
+  def DebuggerDotcontinueToLocation: DebuggerDotcontinueToLocation = "Debugger.continueToLocation".asInstanceOf[DebuggerDotcontinueToLocation]
   @scala.inline
-  def DebuggerDOTdisable: DebuggerDOTdisable = "Debugger.disable".asInstanceOf[DebuggerDOTdisable]
+  def DebuggerDotdisable: DebuggerDotdisable = "Debugger.disable".asInstanceOf[DebuggerDotdisable]
   @scala.inline
-  def DebuggerDOTenable: DebuggerDOTenable = "Debugger.enable".asInstanceOf[DebuggerDOTenable]
+  def DebuggerDotenable: DebuggerDotenable = "Debugger.enable".asInstanceOf[DebuggerDotenable]
   @scala.inline
-  def DebuggerDOTevaluateOnCallFrame: DebuggerDOTevaluateOnCallFrame = "Debugger.evaluateOnCallFrame".asInstanceOf[DebuggerDOTevaluateOnCallFrame]
+  def DebuggerDotevaluateOnCallFrame: DebuggerDotevaluateOnCallFrame = "Debugger.evaluateOnCallFrame".asInstanceOf[DebuggerDotevaluateOnCallFrame]
   @scala.inline
-  def DebuggerDOTgetPossibleBreakpoints: DebuggerDOTgetPossibleBreakpoints = "Debugger.getPossibleBreakpoints".asInstanceOf[DebuggerDOTgetPossibleBreakpoints]
+  def DebuggerDotgetPossibleBreakpoints: DebuggerDotgetPossibleBreakpoints = "Debugger.getPossibleBreakpoints".asInstanceOf[DebuggerDotgetPossibleBreakpoints]
   @scala.inline
-  def DebuggerDOTgetScriptSource: DebuggerDOTgetScriptSource = "Debugger.getScriptSource".asInstanceOf[DebuggerDOTgetScriptSource]
+  def DebuggerDotgetScriptSource: DebuggerDotgetScriptSource = "Debugger.getScriptSource".asInstanceOf[DebuggerDotgetScriptSource]
   @scala.inline
-  def DebuggerDOTgetStackTrace: DebuggerDOTgetStackTrace = "Debugger.getStackTrace".asInstanceOf[DebuggerDOTgetStackTrace]
+  def DebuggerDotgetStackTrace: DebuggerDotgetStackTrace = "Debugger.getStackTrace".asInstanceOf[DebuggerDotgetStackTrace]
   @scala.inline
-  def DebuggerDOTpause: DebuggerDOTpause = "Debugger.pause".asInstanceOf[DebuggerDOTpause]
+  def DebuggerDotpause: DebuggerDotpause = "Debugger.pause".asInstanceOf[DebuggerDotpause]
   @scala.inline
-  def DebuggerDOTpauseOnAsyncCall: DebuggerDOTpauseOnAsyncCall = "Debugger.pauseOnAsyncCall".asInstanceOf[DebuggerDOTpauseOnAsyncCall]
+  def DebuggerDotpauseOnAsyncCall: DebuggerDotpauseOnAsyncCall = "Debugger.pauseOnAsyncCall".asInstanceOf[DebuggerDotpauseOnAsyncCall]
   @scala.inline
-  def DebuggerDOTpaused: DebuggerDOTpaused = "Debugger.paused".asInstanceOf[DebuggerDOTpaused]
+  def DebuggerDotpaused: DebuggerDotpaused = "Debugger.paused".asInstanceOf[DebuggerDotpaused]
   @scala.inline
-  def DebuggerDOTremoveBreakpoint: DebuggerDOTremoveBreakpoint = "Debugger.removeBreakpoint".asInstanceOf[DebuggerDOTremoveBreakpoint]
+  def DebuggerDotremoveBreakpoint: DebuggerDotremoveBreakpoint = "Debugger.removeBreakpoint".asInstanceOf[DebuggerDotremoveBreakpoint]
   @scala.inline
-  def DebuggerDOTrestartFrame: DebuggerDOTrestartFrame = "Debugger.restartFrame".asInstanceOf[DebuggerDOTrestartFrame]
+  def DebuggerDotrestartFrame: DebuggerDotrestartFrame = "Debugger.restartFrame".asInstanceOf[DebuggerDotrestartFrame]
   @scala.inline
-  def DebuggerDOTresume: DebuggerDOTresume = "Debugger.resume".asInstanceOf[DebuggerDOTresume]
+  def DebuggerDotresume: DebuggerDotresume = "Debugger.resume".asInstanceOf[DebuggerDotresume]
   @scala.inline
-  def DebuggerDOTresumed: DebuggerDOTresumed = "Debugger.resumed".asInstanceOf[DebuggerDOTresumed]
+  def DebuggerDotresumed: DebuggerDotresumed = "Debugger.resumed".asInstanceOf[DebuggerDotresumed]
   @scala.inline
-  def DebuggerDOTscheduleStepIntoAsync: DebuggerDOTscheduleStepIntoAsync = "Debugger.scheduleStepIntoAsync".asInstanceOf[DebuggerDOTscheduleStepIntoAsync]
+  def DebuggerDotscheduleStepIntoAsync: DebuggerDotscheduleStepIntoAsync = "Debugger.scheduleStepIntoAsync".asInstanceOf[DebuggerDotscheduleStepIntoAsync]
   @scala.inline
-  def DebuggerDOTscriptFailedToParse: DebuggerDOTscriptFailedToParse = "Debugger.scriptFailedToParse".asInstanceOf[DebuggerDOTscriptFailedToParse]
+  def DebuggerDotscriptFailedToParse: DebuggerDotscriptFailedToParse = "Debugger.scriptFailedToParse".asInstanceOf[DebuggerDotscriptFailedToParse]
   @scala.inline
-  def DebuggerDOTscriptParsed: DebuggerDOTscriptParsed = "Debugger.scriptParsed".asInstanceOf[DebuggerDOTscriptParsed]
+  def DebuggerDotscriptParsed: DebuggerDotscriptParsed = "Debugger.scriptParsed".asInstanceOf[DebuggerDotscriptParsed]
   @scala.inline
-  def DebuggerDOTsearchInContent: DebuggerDOTsearchInContent = "Debugger.searchInContent".asInstanceOf[DebuggerDOTsearchInContent]
+  def DebuggerDotsearchInContent: DebuggerDotsearchInContent = "Debugger.searchInContent".asInstanceOf[DebuggerDotsearchInContent]
   @scala.inline
-  def DebuggerDOTsetAsyncCallStackDepth: DebuggerDOTsetAsyncCallStackDepth = "Debugger.setAsyncCallStackDepth".asInstanceOf[DebuggerDOTsetAsyncCallStackDepth]
+  def DebuggerDotsetAsyncCallStackDepth: DebuggerDotsetAsyncCallStackDepth = "Debugger.setAsyncCallStackDepth".asInstanceOf[DebuggerDotsetAsyncCallStackDepth]
   @scala.inline
-  def DebuggerDOTsetBlackboxPatterns: DebuggerDOTsetBlackboxPatterns = "Debugger.setBlackboxPatterns".asInstanceOf[DebuggerDOTsetBlackboxPatterns]
+  def DebuggerDotsetBlackboxPatterns: DebuggerDotsetBlackboxPatterns = "Debugger.setBlackboxPatterns".asInstanceOf[DebuggerDotsetBlackboxPatterns]
   @scala.inline
-  def DebuggerDOTsetBlackboxedRanges: DebuggerDOTsetBlackboxedRanges = "Debugger.setBlackboxedRanges".asInstanceOf[DebuggerDOTsetBlackboxedRanges]
+  def DebuggerDotsetBlackboxedRanges: DebuggerDotsetBlackboxedRanges = "Debugger.setBlackboxedRanges".asInstanceOf[DebuggerDotsetBlackboxedRanges]
   @scala.inline
-  def DebuggerDOTsetBreakpoint: DebuggerDOTsetBreakpoint = "Debugger.setBreakpoint".asInstanceOf[DebuggerDOTsetBreakpoint]
+  def DebuggerDotsetBreakpoint: DebuggerDotsetBreakpoint = "Debugger.setBreakpoint".asInstanceOf[DebuggerDotsetBreakpoint]
   @scala.inline
-  def DebuggerDOTsetBreakpointByUrl: DebuggerDOTsetBreakpointByUrl = "Debugger.setBreakpointByUrl".asInstanceOf[DebuggerDOTsetBreakpointByUrl]
+  def DebuggerDotsetBreakpointByUrl: DebuggerDotsetBreakpointByUrl = "Debugger.setBreakpointByUrl".asInstanceOf[DebuggerDotsetBreakpointByUrl]
   @scala.inline
-  def DebuggerDOTsetBreakpointsActive: DebuggerDOTsetBreakpointsActive = "Debugger.setBreakpointsActive".asInstanceOf[DebuggerDOTsetBreakpointsActive]
+  def DebuggerDotsetBreakpointsActive: DebuggerDotsetBreakpointsActive = "Debugger.setBreakpointsActive".asInstanceOf[DebuggerDotsetBreakpointsActive]
   @scala.inline
-  def DebuggerDOTsetPauseOnExceptions: DebuggerDOTsetPauseOnExceptions = "Debugger.setPauseOnExceptions".asInstanceOf[DebuggerDOTsetPauseOnExceptions]
+  def DebuggerDotsetPauseOnExceptions: DebuggerDotsetPauseOnExceptions = "Debugger.setPauseOnExceptions".asInstanceOf[DebuggerDotsetPauseOnExceptions]
   @scala.inline
-  def DebuggerDOTsetReturnValue: DebuggerDOTsetReturnValue = "Debugger.setReturnValue".asInstanceOf[DebuggerDOTsetReturnValue]
+  def DebuggerDotsetReturnValue: DebuggerDotsetReturnValue = "Debugger.setReturnValue".asInstanceOf[DebuggerDotsetReturnValue]
   @scala.inline
-  def DebuggerDOTsetScriptSource: DebuggerDOTsetScriptSource = "Debugger.setScriptSource".asInstanceOf[DebuggerDOTsetScriptSource]
+  def DebuggerDotsetScriptSource: DebuggerDotsetScriptSource = "Debugger.setScriptSource".asInstanceOf[DebuggerDotsetScriptSource]
   @scala.inline
-  def DebuggerDOTsetSkipAllPauses: DebuggerDOTsetSkipAllPauses = "Debugger.setSkipAllPauses".asInstanceOf[DebuggerDOTsetSkipAllPauses]
+  def DebuggerDotsetSkipAllPauses: DebuggerDotsetSkipAllPauses = "Debugger.setSkipAllPauses".asInstanceOf[DebuggerDotsetSkipAllPauses]
   @scala.inline
-  def DebuggerDOTsetVariableValue: DebuggerDOTsetVariableValue = "Debugger.setVariableValue".asInstanceOf[DebuggerDOTsetVariableValue]
+  def DebuggerDotsetVariableValue: DebuggerDotsetVariableValue = "Debugger.setVariableValue".asInstanceOf[DebuggerDotsetVariableValue]
   @scala.inline
-  def DebuggerDOTstepInto: DebuggerDOTstepInto = "Debugger.stepInto".asInstanceOf[DebuggerDOTstepInto]
+  def DebuggerDotstepInto: DebuggerDotstepInto = "Debugger.stepInto".asInstanceOf[DebuggerDotstepInto]
   @scala.inline
-  def DebuggerDOTstepOut: DebuggerDOTstepOut = "Debugger.stepOut".asInstanceOf[DebuggerDOTstepOut]
+  def DebuggerDotstepOut: DebuggerDotstepOut = "Debugger.stepOut".asInstanceOf[DebuggerDotstepOut]
   @scala.inline
-  def DebuggerDOTstepOver: DebuggerDOTstepOver = "Debugger.stepOver".asInstanceOf[DebuggerDOTstepOver]
+  def DebuggerDotstepOver: DebuggerDotstepOver = "Debugger.stepOver".asInstanceOf[DebuggerDotstepOver]
   @scala.inline
   def ERR_ASSERTION: ERR_ASSERTION = "ERR_ASSERTION".asInstanceOf[ERR_ASSERTION]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def HeapProfilerDotaddHeapSnapshotChunk: HeapProfilerDotaddHeapSnapshotChunk = "HeapProfiler.addHeapSnapshotChunk".asInstanceOf[HeapProfilerDotaddHeapSnapshotChunk]
   @scala.inline
-  def HeapProfilerDOTaddHeapSnapshotChunk: HeapProfilerDOTaddHeapSnapshotChunk = "HeapProfiler.addHeapSnapshotChunk".asInstanceOf[HeapProfilerDOTaddHeapSnapshotChunk]
+  def HeapProfilerDotaddInspectedHeapObject: HeapProfilerDotaddInspectedHeapObject = "HeapProfiler.addInspectedHeapObject".asInstanceOf[HeapProfilerDotaddInspectedHeapObject]
   @scala.inline
-  def HeapProfilerDOTaddInspectedHeapObject: HeapProfilerDOTaddInspectedHeapObject = "HeapProfiler.addInspectedHeapObject".asInstanceOf[HeapProfilerDOTaddInspectedHeapObject]
+  def HeapProfilerDotcollectGarbage: HeapProfilerDotcollectGarbage = "HeapProfiler.collectGarbage".asInstanceOf[HeapProfilerDotcollectGarbage]
   @scala.inline
-  def HeapProfilerDOTcollectGarbage: HeapProfilerDOTcollectGarbage = "HeapProfiler.collectGarbage".asInstanceOf[HeapProfilerDOTcollectGarbage]
+  def HeapProfilerDotdisable: HeapProfilerDotdisable = "HeapProfiler.disable".asInstanceOf[HeapProfilerDotdisable]
   @scala.inline
-  def HeapProfilerDOTdisable: HeapProfilerDOTdisable = "HeapProfiler.disable".asInstanceOf[HeapProfilerDOTdisable]
+  def HeapProfilerDotenable: HeapProfilerDotenable = "HeapProfiler.enable".asInstanceOf[HeapProfilerDotenable]
   @scala.inline
-  def HeapProfilerDOTenable: HeapProfilerDOTenable = "HeapProfiler.enable".asInstanceOf[HeapProfilerDOTenable]
+  def HeapProfilerDotgetHeapObjectId: HeapProfilerDotgetHeapObjectId = "HeapProfiler.getHeapObjectId".asInstanceOf[HeapProfilerDotgetHeapObjectId]
   @scala.inline
-  def HeapProfilerDOTgetHeapObjectId: HeapProfilerDOTgetHeapObjectId = "HeapProfiler.getHeapObjectId".asInstanceOf[HeapProfilerDOTgetHeapObjectId]
+  def HeapProfilerDotgetObjectByHeapObjectId: HeapProfilerDotgetObjectByHeapObjectId = "HeapProfiler.getObjectByHeapObjectId".asInstanceOf[HeapProfilerDotgetObjectByHeapObjectId]
   @scala.inline
-  def HeapProfilerDOTgetObjectByHeapObjectId: HeapProfilerDOTgetObjectByHeapObjectId = "HeapProfiler.getObjectByHeapObjectId".asInstanceOf[HeapProfilerDOTgetObjectByHeapObjectId]
+  def HeapProfilerDotgetSamplingProfile: HeapProfilerDotgetSamplingProfile = "HeapProfiler.getSamplingProfile".asInstanceOf[HeapProfilerDotgetSamplingProfile]
   @scala.inline
-  def HeapProfilerDOTgetSamplingProfile: HeapProfilerDOTgetSamplingProfile = "HeapProfiler.getSamplingProfile".asInstanceOf[HeapProfilerDOTgetSamplingProfile]
+  def HeapProfilerDotheapStatsUpdate: HeapProfilerDotheapStatsUpdate = "HeapProfiler.heapStatsUpdate".asInstanceOf[HeapProfilerDotheapStatsUpdate]
   @scala.inline
-  def HeapProfilerDOTheapStatsUpdate: HeapProfilerDOTheapStatsUpdate = "HeapProfiler.heapStatsUpdate".asInstanceOf[HeapProfilerDOTheapStatsUpdate]
+  def HeapProfilerDotlastSeenObjectId: HeapProfilerDotlastSeenObjectId = "HeapProfiler.lastSeenObjectId".asInstanceOf[HeapProfilerDotlastSeenObjectId]
   @scala.inline
-  def HeapProfilerDOTlastSeenObjectId: HeapProfilerDOTlastSeenObjectId = "HeapProfiler.lastSeenObjectId".asInstanceOf[HeapProfilerDOTlastSeenObjectId]
+  def HeapProfilerDotreportHeapSnapshotProgress: HeapProfilerDotreportHeapSnapshotProgress = "HeapProfiler.reportHeapSnapshotProgress".asInstanceOf[HeapProfilerDotreportHeapSnapshotProgress]
   @scala.inline
-  def HeapProfilerDOTreportHeapSnapshotProgress: HeapProfilerDOTreportHeapSnapshotProgress = "HeapProfiler.reportHeapSnapshotProgress".asInstanceOf[HeapProfilerDOTreportHeapSnapshotProgress]
+  def HeapProfilerDotresetProfiles: HeapProfilerDotresetProfiles = "HeapProfiler.resetProfiles".asInstanceOf[HeapProfilerDotresetProfiles]
   @scala.inline
-  def HeapProfilerDOTresetProfiles: HeapProfilerDOTresetProfiles = "HeapProfiler.resetProfiles".asInstanceOf[HeapProfilerDOTresetProfiles]
+  def HeapProfilerDotstartSampling: HeapProfilerDotstartSampling = "HeapProfiler.startSampling".asInstanceOf[HeapProfilerDotstartSampling]
   @scala.inline
-  def HeapProfilerDOTstartSampling: HeapProfilerDOTstartSampling = "HeapProfiler.startSampling".asInstanceOf[HeapProfilerDOTstartSampling]
+  def HeapProfilerDotstartTrackingHeapObjects: HeapProfilerDotstartTrackingHeapObjects = "HeapProfiler.startTrackingHeapObjects".asInstanceOf[HeapProfilerDotstartTrackingHeapObjects]
   @scala.inline
-  def HeapProfilerDOTstartTrackingHeapObjects: HeapProfilerDOTstartTrackingHeapObjects = "HeapProfiler.startTrackingHeapObjects".asInstanceOf[HeapProfilerDOTstartTrackingHeapObjects]
+  def HeapProfilerDotstopSampling: HeapProfilerDotstopSampling = "HeapProfiler.stopSampling".asInstanceOf[HeapProfilerDotstopSampling]
   @scala.inline
-  def HeapProfilerDOTstopSampling: HeapProfilerDOTstopSampling = "HeapProfiler.stopSampling".asInstanceOf[HeapProfilerDOTstopSampling]
+  def HeapProfilerDotstopTrackingHeapObjects: HeapProfilerDotstopTrackingHeapObjects = "HeapProfiler.stopTrackingHeapObjects".asInstanceOf[HeapProfilerDotstopTrackingHeapObjects]
   @scala.inline
-  def HeapProfilerDOTstopTrackingHeapObjects: HeapProfilerDOTstopTrackingHeapObjects = "HeapProfiler.stopTrackingHeapObjects".asInstanceOf[HeapProfilerDOTstopTrackingHeapObjects]
-  @scala.inline
-  def HeapProfilerDOTtakeHeapSnapshot: HeapProfilerDOTtakeHeapSnapshot = "HeapProfiler.takeHeapSnapshot".asInstanceOf[HeapProfilerDOTtakeHeapSnapshot]
+  def HeapProfilerDottakeHeapSnapshot: HeapProfilerDottakeHeapSnapshot = "HeapProfiler.takeHeapSnapshot".asInstanceOf[HeapProfilerDottakeHeapSnapshot]
   @scala.inline
   def IPv4: IPv4 = "IPv4".asInstanceOf[IPv4]
   @scala.inline
@@ -1075,33 +1063,33 @@ object nodeStrings {
   @scala.inline
   def NS: NS = "NS".asInstanceOf[NS]
   @scala.inline
-  def NodeRuntimeDOTnotifyWhenWaitingForDisconnect: NodeRuntimeDOTnotifyWhenWaitingForDisconnect = "NodeRuntime.notifyWhenWaitingForDisconnect".asInstanceOf[NodeRuntimeDOTnotifyWhenWaitingForDisconnect]
+  def NodeRuntimeDotnotifyWhenWaitingForDisconnect: NodeRuntimeDotnotifyWhenWaitingForDisconnect = "NodeRuntime.notifyWhenWaitingForDisconnect".asInstanceOf[NodeRuntimeDotnotifyWhenWaitingForDisconnect]
   @scala.inline
-  def NodeRuntimeDOTwaitingForDisconnect: NodeRuntimeDOTwaitingForDisconnect = "NodeRuntime.waitingForDisconnect".asInstanceOf[NodeRuntimeDOTwaitingForDisconnect]
+  def NodeRuntimeDotwaitingForDisconnect: NodeRuntimeDotwaitingForDisconnect = "NodeRuntime.waitingForDisconnect".asInstanceOf[NodeRuntimeDotwaitingForDisconnect]
   @scala.inline
-  def NodeTracingDOTdataCollected: NodeTracingDOTdataCollected = "NodeTracing.dataCollected".asInstanceOf[NodeTracingDOTdataCollected]
+  def NodeTracingDotdataCollected: NodeTracingDotdataCollected = "NodeTracing.dataCollected".asInstanceOf[NodeTracingDotdataCollected]
   @scala.inline
-  def NodeTracingDOTgetCategories: NodeTracingDOTgetCategories = "NodeTracing.getCategories".asInstanceOf[NodeTracingDOTgetCategories]
+  def NodeTracingDotgetCategories: NodeTracingDotgetCategories = "NodeTracing.getCategories".asInstanceOf[NodeTracingDotgetCategories]
   @scala.inline
-  def NodeTracingDOTstart: NodeTracingDOTstart = "NodeTracing.start".asInstanceOf[NodeTracingDOTstart]
+  def NodeTracingDotstart: NodeTracingDotstart = "NodeTracing.start".asInstanceOf[NodeTracingDotstart]
   @scala.inline
-  def NodeTracingDOTstop: NodeTracingDOTstop = "NodeTracing.stop".asInstanceOf[NodeTracingDOTstop]
+  def NodeTracingDotstop: NodeTracingDotstop = "NodeTracing.stop".asInstanceOf[NodeTracingDotstop]
   @scala.inline
-  def NodeTracingDOTtracingComplete: NodeTracingDOTtracingComplete = "NodeTracing.tracingComplete".asInstanceOf[NodeTracingDOTtracingComplete]
+  def NodeTracingDottracingComplete: NodeTracingDottracingComplete = "NodeTracing.tracingComplete".asInstanceOf[NodeTracingDottracingComplete]
   @scala.inline
-  def NodeWorkerDOTattachedToWorker: NodeWorkerDOTattachedToWorker = "NodeWorker.attachedToWorker".asInstanceOf[NodeWorkerDOTattachedToWorker]
+  def NodeWorkerDotattachedToWorker: NodeWorkerDotattachedToWorker = "NodeWorker.attachedToWorker".asInstanceOf[NodeWorkerDotattachedToWorker]
   @scala.inline
-  def NodeWorkerDOTdetach: NodeWorkerDOTdetach = "NodeWorker.detach".asInstanceOf[NodeWorkerDOTdetach]
+  def NodeWorkerDotdetach: NodeWorkerDotdetach = "NodeWorker.detach".asInstanceOf[NodeWorkerDotdetach]
   @scala.inline
-  def NodeWorkerDOTdetachedFromWorker: NodeWorkerDOTdetachedFromWorker = "NodeWorker.detachedFromWorker".asInstanceOf[NodeWorkerDOTdetachedFromWorker]
+  def NodeWorkerDotdetachedFromWorker: NodeWorkerDotdetachedFromWorker = "NodeWorker.detachedFromWorker".asInstanceOf[NodeWorkerDotdetachedFromWorker]
   @scala.inline
-  def NodeWorkerDOTdisable: NodeWorkerDOTdisable = "NodeWorker.disable".asInstanceOf[NodeWorkerDOTdisable]
+  def NodeWorkerDotdisable: NodeWorkerDotdisable = "NodeWorker.disable".asInstanceOf[NodeWorkerDotdisable]
   @scala.inline
-  def NodeWorkerDOTenable: NodeWorkerDOTenable = "NodeWorker.enable".asInstanceOf[NodeWorkerDOTenable]
+  def NodeWorkerDotenable: NodeWorkerDotenable = "NodeWorker.enable".asInstanceOf[NodeWorkerDotenable]
   @scala.inline
-  def NodeWorkerDOTreceivedMessageFromWorker: NodeWorkerDOTreceivedMessageFromWorker = "NodeWorker.receivedMessageFromWorker".asInstanceOf[NodeWorkerDOTreceivedMessageFromWorker]
+  def NodeWorkerDotreceivedMessageFromWorker: NodeWorkerDotreceivedMessageFromWorker = "NodeWorker.receivedMessageFromWorker".asInstanceOf[NodeWorkerDotreceivedMessageFromWorker]
   @scala.inline
-  def NodeWorkerDOTsendMessageToWorker: NodeWorkerDOTsendMessageToWorker = "NodeWorker.sendMessageToWorker".asInstanceOf[NodeWorkerDOTsendMessageToWorker]
+  def NodeWorkerDotsendMessageToWorker: NodeWorkerDotsendMessageToWorker = "NodeWorker.sendMessageToWorker".asInstanceOf[NodeWorkerDotsendMessageToWorker]
   @scala.inline
   def OCSPRequest: OCSPRequest = "OCSPRequest".asInstanceOf[OCSPRequest]
   @scala.inline
@@ -1109,77 +1097,77 @@ object nodeStrings {
   @scala.inline
   def PTR: PTR = "PTR".asInstanceOf[PTR]
   @scala.inline
-  def ProfilerDOTconsoleProfileFinished: ProfilerDOTconsoleProfileFinished = "Profiler.consoleProfileFinished".asInstanceOf[ProfilerDOTconsoleProfileFinished]
+  def ProfilerDotconsoleProfileFinished: ProfilerDotconsoleProfileFinished = "Profiler.consoleProfileFinished".asInstanceOf[ProfilerDotconsoleProfileFinished]
   @scala.inline
-  def ProfilerDOTconsoleProfileStarted: ProfilerDOTconsoleProfileStarted = "Profiler.consoleProfileStarted".asInstanceOf[ProfilerDOTconsoleProfileStarted]
+  def ProfilerDotconsoleProfileStarted: ProfilerDotconsoleProfileStarted = "Profiler.consoleProfileStarted".asInstanceOf[ProfilerDotconsoleProfileStarted]
   @scala.inline
-  def ProfilerDOTdisable: ProfilerDOTdisable = "Profiler.disable".asInstanceOf[ProfilerDOTdisable]
+  def ProfilerDotdisable: ProfilerDotdisable = "Profiler.disable".asInstanceOf[ProfilerDotdisable]
   @scala.inline
-  def ProfilerDOTenable: ProfilerDOTenable = "Profiler.enable".asInstanceOf[ProfilerDOTenable]
+  def ProfilerDotenable: ProfilerDotenable = "Profiler.enable".asInstanceOf[ProfilerDotenable]
   @scala.inline
-  def ProfilerDOTgetBestEffortCoverage: ProfilerDOTgetBestEffortCoverage = "Profiler.getBestEffortCoverage".asInstanceOf[ProfilerDOTgetBestEffortCoverage]
+  def ProfilerDotgetBestEffortCoverage: ProfilerDotgetBestEffortCoverage = "Profiler.getBestEffortCoverage".asInstanceOf[ProfilerDotgetBestEffortCoverage]
   @scala.inline
-  def ProfilerDOTsetSamplingInterval: ProfilerDOTsetSamplingInterval = "Profiler.setSamplingInterval".asInstanceOf[ProfilerDOTsetSamplingInterval]
+  def ProfilerDotsetSamplingInterval: ProfilerDotsetSamplingInterval = "Profiler.setSamplingInterval".asInstanceOf[ProfilerDotsetSamplingInterval]
   @scala.inline
-  def ProfilerDOTstart: ProfilerDOTstart = "Profiler.start".asInstanceOf[ProfilerDOTstart]
+  def ProfilerDotstart: ProfilerDotstart = "Profiler.start".asInstanceOf[ProfilerDotstart]
   @scala.inline
-  def ProfilerDOTstartPreciseCoverage: ProfilerDOTstartPreciseCoverage = "Profiler.startPreciseCoverage".asInstanceOf[ProfilerDOTstartPreciseCoverage]
+  def ProfilerDotstartPreciseCoverage: ProfilerDotstartPreciseCoverage = "Profiler.startPreciseCoverage".asInstanceOf[ProfilerDotstartPreciseCoverage]
   @scala.inline
-  def ProfilerDOTstartTypeProfile: ProfilerDOTstartTypeProfile = "Profiler.startTypeProfile".asInstanceOf[ProfilerDOTstartTypeProfile]
+  def ProfilerDotstartTypeProfile: ProfilerDotstartTypeProfile = "Profiler.startTypeProfile".asInstanceOf[ProfilerDotstartTypeProfile]
   @scala.inline
-  def ProfilerDOTstop: ProfilerDOTstop = "Profiler.stop".asInstanceOf[ProfilerDOTstop]
+  def ProfilerDotstop: ProfilerDotstop = "Profiler.stop".asInstanceOf[ProfilerDotstop]
   @scala.inline
-  def ProfilerDOTstopPreciseCoverage: ProfilerDOTstopPreciseCoverage = "Profiler.stopPreciseCoverage".asInstanceOf[ProfilerDOTstopPreciseCoverage]
+  def ProfilerDotstopPreciseCoverage: ProfilerDotstopPreciseCoverage = "Profiler.stopPreciseCoverage".asInstanceOf[ProfilerDotstopPreciseCoverage]
   @scala.inline
-  def ProfilerDOTstopTypeProfile: ProfilerDOTstopTypeProfile = "Profiler.stopTypeProfile".asInstanceOf[ProfilerDOTstopTypeProfile]
+  def ProfilerDotstopTypeProfile: ProfilerDotstopTypeProfile = "Profiler.stopTypeProfile".asInstanceOf[ProfilerDotstopTypeProfile]
   @scala.inline
-  def ProfilerDOTtakePreciseCoverage: ProfilerDOTtakePreciseCoverage = "Profiler.takePreciseCoverage".asInstanceOf[ProfilerDOTtakePreciseCoverage]
+  def ProfilerDottakePreciseCoverage: ProfilerDottakePreciseCoverage = "Profiler.takePreciseCoverage".asInstanceOf[ProfilerDottakePreciseCoverage]
   @scala.inline
-  def ProfilerDOTtakeTypeProfile: ProfilerDOTtakeTypeProfile = "Profiler.takeTypeProfile".asInstanceOf[ProfilerDOTtakeTypeProfile]
+  def ProfilerDottakeTypeProfile: ProfilerDottakeTypeProfile = "Profiler.takeTypeProfile".asInstanceOf[ProfilerDottakeTypeProfile]
   @scala.inline
-  def RuntimeDOTawaitPromise: RuntimeDOTawaitPromise = "Runtime.awaitPromise".asInstanceOf[RuntimeDOTawaitPromise]
+  def RuntimeDotawaitPromise: RuntimeDotawaitPromise = "Runtime.awaitPromise".asInstanceOf[RuntimeDotawaitPromise]
   @scala.inline
-  def RuntimeDOTcallFunctionOn: RuntimeDOTcallFunctionOn = "Runtime.callFunctionOn".asInstanceOf[RuntimeDOTcallFunctionOn]
+  def RuntimeDotcallFunctionOn: RuntimeDotcallFunctionOn = "Runtime.callFunctionOn".asInstanceOf[RuntimeDotcallFunctionOn]
   @scala.inline
-  def RuntimeDOTcompileScript: RuntimeDOTcompileScript = "Runtime.compileScript".asInstanceOf[RuntimeDOTcompileScript]
+  def RuntimeDotcompileScript: RuntimeDotcompileScript = "Runtime.compileScript".asInstanceOf[RuntimeDotcompileScript]
   @scala.inline
-  def RuntimeDOTconsoleAPICalled: RuntimeDOTconsoleAPICalled = "Runtime.consoleAPICalled".asInstanceOf[RuntimeDOTconsoleAPICalled]
+  def RuntimeDotconsoleAPICalled: RuntimeDotconsoleAPICalled = "Runtime.consoleAPICalled".asInstanceOf[RuntimeDotconsoleAPICalled]
   @scala.inline
-  def RuntimeDOTdisable: RuntimeDOTdisable = "Runtime.disable".asInstanceOf[RuntimeDOTdisable]
+  def RuntimeDotdisable: RuntimeDotdisable = "Runtime.disable".asInstanceOf[RuntimeDotdisable]
   @scala.inline
-  def RuntimeDOTdiscardConsoleEntries: RuntimeDOTdiscardConsoleEntries = "Runtime.discardConsoleEntries".asInstanceOf[RuntimeDOTdiscardConsoleEntries]
+  def RuntimeDotdiscardConsoleEntries: RuntimeDotdiscardConsoleEntries = "Runtime.discardConsoleEntries".asInstanceOf[RuntimeDotdiscardConsoleEntries]
   @scala.inline
-  def RuntimeDOTenable: RuntimeDOTenable = "Runtime.enable".asInstanceOf[RuntimeDOTenable]
+  def RuntimeDotenable: RuntimeDotenable = "Runtime.enable".asInstanceOf[RuntimeDotenable]
   @scala.inline
-  def RuntimeDOTevaluate: RuntimeDOTevaluate = "Runtime.evaluate".asInstanceOf[RuntimeDOTevaluate]
+  def RuntimeDotevaluate: RuntimeDotevaluate = "Runtime.evaluate".asInstanceOf[RuntimeDotevaluate]
   @scala.inline
-  def RuntimeDOTexceptionRevoked: RuntimeDOTexceptionRevoked = "Runtime.exceptionRevoked".asInstanceOf[RuntimeDOTexceptionRevoked]
+  def RuntimeDotexceptionRevoked: RuntimeDotexceptionRevoked = "Runtime.exceptionRevoked".asInstanceOf[RuntimeDotexceptionRevoked]
   @scala.inline
-  def RuntimeDOTexceptionThrown: RuntimeDOTexceptionThrown = "Runtime.exceptionThrown".asInstanceOf[RuntimeDOTexceptionThrown]
+  def RuntimeDotexceptionThrown: RuntimeDotexceptionThrown = "Runtime.exceptionThrown".asInstanceOf[RuntimeDotexceptionThrown]
   @scala.inline
-  def RuntimeDOTexecutionContextCreated: RuntimeDOTexecutionContextCreated = "Runtime.executionContextCreated".asInstanceOf[RuntimeDOTexecutionContextCreated]
+  def RuntimeDotexecutionContextCreated: RuntimeDotexecutionContextCreated = "Runtime.executionContextCreated".asInstanceOf[RuntimeDotexecutionContextCreated]
   @scala.inline
-  def RuntimeDOTexecutionContextDestroyed: RuntimeDOTexecutionContextDestroyed = "Runtime.executionContextDestroyed".asInstanceOf[RuntimeDOTexecutionContextDestroyed]
+  def RuntimeDotexecutionContextDestroyed: RuntimeDotexecutionContextDestroyed = "Runtime.executionContextDestroyed".asInstanceOf[RuntimeDotexecutionContextDestroyed]
   @scala.inline
-  def RuntimeDOTexecutionContextsCleared: RuntimeDOTexecutionContextsCleared = "Runtime.executionContextsCleared".asInstanceOf[RuntimeDOTexecutionContextsCleared]
+  def RuntimeDotexecutionContextsCleared: RuntimeDotexecutionContextsCleared = "Runtime.executionContextsCleared".asInstanceOf[RuntimeDotexecutionContextsCleared]
   @scala.inline
-  def RuntimeDOTgetProperties: RuntimeDOTgetProperties = "Runtime.getProperties".asInstanceOf[RuntimeDOTgetProperties]
+  def RuntimeDotgetProperties: RuntimeDotgetProperties = "Runtime.getProperties".asInstanceOf[RuntimeDotgetProperties]
   @scala.inline
-  def RuntimeDOTglobalLexicalScopeNames: RuntimeDOTglobalLexicalScopeNames = "Runtime.globalLexicalScopeNames".asInstanceOf[RuntimeDOTglobalLexicalScopeNames]
+  def RuntimeDotglobalLexicalScopeNames: RuntimeDotglobalLexicalScopeNames = "Runtime.globalLexicalScopeNames".asInstanceOf[RuntimeDotglobalLexicalScopeNames]
   @scala.inline
-  def RuntimeDOTinspectRequested: RuntimeDOTinspectRequested = "Runtime.inspectRequested".asInstanceOf[RuntimeDOTinspectRequested]
+  def RuntimeDotinspectRequested: RuntimeDotinspectRequested = "Runtime.inspectRequested".asInstanceOf[RuntimeDotinspectRequested]
   @scala.inline
-  def RuntimeDOTqueryObjects: RuntimeDOTqueryObjects = "Runtime.queryObjects".asInstanceOf[RuntimeDOTqueryObjects]
+  def RuntimeDotqueryObjects: RuntimeDotqueryObjects = "Runtime.queryObjects".asInstanceOf[RuntimeDotqueryObjects]
   @scala.inline
-  def RuntimeDOTreleaseObject: RuntimeDOTreleaseObject = "Runtime.releaseObject".asInstanceOf[RuntimeDOTreleaseObject]
+  def RuntimeDotreleaseObject: RuntimeDotreleaseObject = "Runtime.releaseObject".asInstanceOf[RuntimeDotreleaseObject]
   @scala.inline
-  def RuntimeDOTreleaseObjectGroup: RuntimeDOTreleaseObjectGroup = "Runtime.releaseObjectGroup".asInstanceOf[RuntimeDOTreleaseObjectGroup]
+  def RuntimeDotreleaseObjectGroup: RuntimeDotreleaseObjectGroup = "Runtime.releaseObjectGroup".asInstanceOf[RuntimeDotreleaseObjectGroup]
   @scala.inline
-  def RuntimeDOTrunIfWaitingForDebugger: RuntimeDOTrunIfWaitingForDebugger = "Runtime.runIfWaitingForDebugger".asInstanceOf[RuntimeDOTrunIfWaitingForDebugger]
+  def RuntimeDotrunIfWaitingForDebugger: RuntimeDotrunIfWaitingForDebugger = "Runtime.runIfWaitingForDebugger".asInstanceOf[RuntimeDotrunIfWaitingForDebugger]
   @scala.inline
-  def RuntimeDOTrunScript: RuntimeDOTrunScript = "Runtime.runScript".asInstanceOf[RuntimeDOTrunScript]
+  def RuntimeDotrunScript: RuntimeDotrunScript = "Runtime.runScript".asInstanceOf[RuntimeDotrunScript]
   @scala.inline
-  def RuntimeDOTsetCustomObjectFormatterEnabled: RuntimeDOTsetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled".asInstanceOf[RuntimeDOTsetCustomObjectFormatterEnabled]
+  def RuntimeDotsetCustomObjectFormatterEnabled: RuntimeDotsetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled".asInstanceOf[RuntimeDotsetCustomObjectFormatterEnabled]
   @scala.inline
   def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
   @scala.inline
@@ -1259,21 +1247,27 @@ object nodeStrings {
   @scala.inline
   def SRV: SRV = "SRV".asInstanceOf[SRV]
   @scala.inline
-  def SchemaDOTgetDomains: SchemaDOTgetDomains = "Schema.getDomains".asInstanceOf[SchemaDOTgetDomains]
+  def SchemaDotgetDomains: SchemaDotgetDomains = "Schema.getDomains".asInstanceOf[SchemaDotgetDomains]
+  @scala.inline
+  def SignalConstants: SignalConstants = "SignalConstants".asInstanceOf[SignalConstants]
   @scala.inline
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   @scala.inline
-  def TLSv1DOT1: TLSv1DOT1 = "TLSv1.1".asInstanceOf[TLSv1DOT1]
+  def TLSv1Dot1: TLSv1Dot1 = "TLSv1.1".asInstanceOf[TLSv1Dot1]
   @scala.inline
-  def TLSv1DOT2: TLSv1DOT2 = "TLSv1.2".asInstanceOf[TLSv1DOT2]
+  def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
   @scala.inline
-  def TLSv1DOT3: TLSv1DOT3 = "TLSv1.3".asInstanceOf[TLSv1DOT3]
+  def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
   @scala.inline
   def TXT: TXT = "TXT".asInstanceOf[TXT]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
+  @scala.inline
+  def advanced: advanced = "advanced".asInstanceOf[advanced]
   @scala.inline
   def `aes-128-ccm`: `aes-128-ccm` = "aes-128-ccm".asInstanceOf[`aes-128-ccm`]
   @scala.inline
@@ -1372,6 +1366,8 @@ object nodeStrings {
   def inspectorNotification: inspectorNotification = "inspectorNotification".asInstanceOf[inspectorNotification]
   @scala.inline
   def ipc: ipc = "ipc".asInstanceOf[ipc]
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
   @scala.inline
   def junction: junction = "junction".asInstanceOf[junction]
   @scala.inline

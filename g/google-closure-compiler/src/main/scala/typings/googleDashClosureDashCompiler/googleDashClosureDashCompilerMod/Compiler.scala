@@ -30,12 +30,12 @@ class compiler protected () extends Compiler {
 @JSImport("google-closure-compiler", "compiler")
 @js.native
 object compiler
-  extends Instantiable2[
+  extends Instantiable1[(/* opts */ js.Array[String]) | (/* opts */ CompileOptions), Compiler]
+     with Instantiable2[
       (/* opts */ js.Array[String]) | (/* opts */ CompileOptions), 
       /* extraCommandArgs */ js.Array[String], 
       Compiler
-    ]
-     with Instantiable1[(/* opts */ js.Array[String]) | (/* opts */ CompileOptions), Compiler] {
+    ] {
   var COMPILER_PATH: String = js.native
   var CONTRIB_PATH: String = js.native
   var JAR_PATH: String = js.native

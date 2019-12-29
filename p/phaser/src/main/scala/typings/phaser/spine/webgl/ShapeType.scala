@@ -1,9 +1,6 @@
 package typings.phaser.spine.webgl
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.webgl.ShapeType.Filled
-import typings.phaser.spine.webgl.ShapeType.Line
-import typings.phaser.spine.webgl.ShapeType.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

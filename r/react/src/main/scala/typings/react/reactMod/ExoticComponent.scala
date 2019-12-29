@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExoticComponent[P] extends js.Object {
   @JSName("$$typeof")
-  val $$typeof: js.Symbol = js.native
+  val DollarDollartypeof: js.Symbol = js.native
   /**
     * **NOTE**: Exotic components are not callable.
     */

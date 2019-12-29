@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 object convictStrings {
   @js.native
-  sealed trait `*` extends _PredefinedFormat
+  sealed trait Asterisk extends _PredefinedFormat
   
   @js.native
   sealed trait InternalSchema extends js.Object
@@ -56,7 +56,7 @@ object convictStrings {
   sealed trait windows_named_pipe extends _PredefinedFormat
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def InternalSchema: InternalSchema = "InternalSchema".asInstanceOf[InternalSchema]
   @scala.inline

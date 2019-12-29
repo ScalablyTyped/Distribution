@@ -1,24 +1,6 @@
 package typings.xstate.libTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xstate.libTypesMod.ActionTypes.After
-import typings.xstate.libTypesMod.ActionTypes.Assign
-import typings.xstate.libTypesMod.ActionTypes.Cancel
-import typings.xstate.libTypesMod.ActionTypes.DoneInvoke
-import typings.xstate.libTypesMod.ActionTypes.DoneState
-import typings.xstate.libTypesMod.ActionTypes.ErrorCommunication
-import typings.xstate.libTypesMod.ActionTypes.ErrorCustom
-import typings.xstate.libTypesMod.ActionTypes.ErrorExecution
-import typings.xstate.libTypesMod.ActionTypes.ErrorPlatform
-import typings.xstate.libTypesMod.ActionTypes.Init
-import typings.xstate.libTypesMod.ActionTypes.Invoke
-import typings.xstate.libTypesMod.ActionTypes.Log
-import typings.xstate.libTypesMod.ActionTypes.Pure
-import typings.xstate.libTypesMod.ActionTypes.Raise
-import typings.xstate.libTypesMod.ActionTypes.Send
-import typings.xstate.libTypesMod.ActionTypes.Start
-import typings.xstate.libTypesMod.ActionTypes.Stop
-import typings.xstate.libTypesMod.ActionTypes.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

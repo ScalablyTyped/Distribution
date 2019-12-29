@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.auto
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.hd1080p
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.hd720p
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.ntsc
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.pal
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.qvga
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.vga
-import typings.winrtDashUwp.Windows.Media.MediaProperties.VideoEncodingQuality.wvga
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

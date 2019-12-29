@@ -1,11 +1,6 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState
-import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Initial
-import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Registered
-import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Terminated
-import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Unregistered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

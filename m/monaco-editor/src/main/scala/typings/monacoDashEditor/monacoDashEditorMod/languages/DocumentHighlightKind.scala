@@ -1,9 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Read
-import typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Text
-import typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

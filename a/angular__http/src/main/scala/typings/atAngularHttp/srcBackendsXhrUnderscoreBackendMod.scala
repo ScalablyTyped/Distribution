@@ -1,7 +1,6 @@
 package typings.atAngularHttp
 
 import typings.atAngularHttp.srcBackendsBrowserUnderscoreXhrMod.BrowserXhr
-import typings.atAngularHttp.srcBackendsXhrUnderscoreBackendMod.XHRConnection
 import typings.atAngularHttp.srcBaseUnderscoreResponseUnderscoreOptionsMod.ResponseOptions
 import typings.atAngularHttp.srcInterfacesMod.Connection
 import typings.atAngularHttp.srcInterfacesMod.ConnectionBackend

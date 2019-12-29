@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait IFile extends IField {
   /** [Config Option] (String) */
-  var accept: js.UndefOr[java.lang.String] = js.undefined
+  var accept: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var capture: js.UndefOr[java.lang.String] = js.undefined
+  var capture: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of accept
   		* @returns String
   		*/
-  var getAccept: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAccept: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of capture
   		* @returns String
   		*/
-  var getCapture: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCapture: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of multiple
   		* @returns Boolean
   		*/
@@ -26,11 +26,11 @@ trait IFile extends IField {
   /** [Method] Sets the value of accept
   		* @param accept String The new value.
   		*/
-  var setAccept: js.UndefOr[js.Function1[/* accept */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAccept: js.UndefOr[js.Function1[/* accept */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of capture
   		* @param capture String The new value.
   		*/
-  var setCapture: js.UndefOr[js.Function1[/* capture */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCapture: js.UndefOr[js.Function1[/* capture */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of multiple
   		* @param multiple Boolean The new value.
   		*/
@@ -41,14 +41,14 @@ object IFile {
   @scala.inline
   def apply(
     IField: IField = null,
-    accept: java.lang.String = null,
-    capture: java.lang.String = null,
-    getAccept: () => java.lang.String = null,
-    getCapture: () => java.lang.String = null,
+    accept: String = null,
+    capture: String = null,
+    getAccept: () => String = null,
+    getCapture: () => String = null,
     getMultiple: () => Boolean = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    setAccept: /* accept */ js.UndefOr[java.lang.String] => Unit = null,
-    setCapture: /* capture */ js.UndefOr[java.lang.String] => Unit = null,
+    setAccept: /* accept */ js.UndefOr[String] => Unit = null,
+    setCapture: /* capture */ js.UndefOr[String] => Unit = null,
     setMultiple: /* multiple */ js.UndefOr[Boolean] => Unit = null
   ): IFile = {
     val __obj = js.Dynamic.literal()

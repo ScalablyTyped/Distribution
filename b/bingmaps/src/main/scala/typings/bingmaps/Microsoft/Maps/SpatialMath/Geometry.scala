@@ -8,10 +8,6 @@ import typings.bingmaps.Microsoft.Maps.Location
 import typings.bingmaps.Microsoft.Maps.LocationRect
 import typings.bingmaps.Microsoft.Maps.Polygon
 import typings.bingmaps.Microsoft.Maps.Polyline
-import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap
-import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Flat
-import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Round
-import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

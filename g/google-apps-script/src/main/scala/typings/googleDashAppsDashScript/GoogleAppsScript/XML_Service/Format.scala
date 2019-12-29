@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Format extends js.Object {
-  def format(document: typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Document): String = js.native
+  def format(document: Document): String = js.native
   def format(element: Element): String = js.native
   def setEncoding(encoding: String): Format = js.native
   def setIndent(indent: String): Format = js.native

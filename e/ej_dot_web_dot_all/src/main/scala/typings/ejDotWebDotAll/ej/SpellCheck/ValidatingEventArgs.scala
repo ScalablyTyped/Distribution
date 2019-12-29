@@ -25,7 +25,7 @@ trait ValidatingEventArgs extends js.Object {
   var index: js.UndefOr[Double] = js.undefined
   /** Returns the SpellCheck model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.SpellCheck.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the validating request type.
     */
   var requestType: js.UndefOr[String] = js.undefined
@@ -46,7 +46,7 @@ object ValidatingEventArgs {
     customWord: String = null,
     ignoreWord: String = null,
     index: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.SpellCheck.Model = null,
+    model: Model = null,
     requestType: String = null,
     targetContent: String = null,
     `type`: String = null

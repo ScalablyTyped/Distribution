@@ -1,12 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.ListNumbering.arabic
-import typings.officeDashJs.Word.ListNumbering.lowerLetter
-import typings.officeDashJs.Word.ListNumbering.lowerRoman
-import typings.officeDashJs.Word.ListNumbering.none
-import typings.officeDashJs.Word.ListNumbering.upperLetter
-import typings.officeDashJs.Word.ListNumbering.upperRoman
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

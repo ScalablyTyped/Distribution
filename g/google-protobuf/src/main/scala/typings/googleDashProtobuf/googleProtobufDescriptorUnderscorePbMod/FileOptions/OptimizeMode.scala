@@ -1,9 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FileOptions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FileOptions.OptimizeMode.CODE_SIZE
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FileOptions.OptimizeMode.LITE_RUNTIME
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FileOptions.OptimizeMode.SPEED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

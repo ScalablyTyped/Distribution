@@ -1,7 +1,6 @@
 package typings.firebase.firebaseMod
 
 import typings.firebase.firebaseMod.analytics.Analytics
-import typings.firebase.firebaseMod.app.App
 import typings.firebase.firebaseMod.auth.Auth
 import typings.firebase.firebaseMod.database.Database
 import typings.firebase.firebaseMod.firestore.Firestore

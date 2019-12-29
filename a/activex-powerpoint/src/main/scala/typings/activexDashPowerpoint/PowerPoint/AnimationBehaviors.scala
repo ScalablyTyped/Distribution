@@ -10,7 +10,8 @@ class AnimationBehaviors protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.AnimationBehaviors_typekey`: AnimationBehaviors = js.native
+  @JSName("PowerPoint.AnimationBehaviors_typekey")
+  var PowerPointDotAnimationBehaviors_typekey: AnimationBehaviors = js.native
   /** @param number [Index=-1] */
   def Add(Type: MsoAnimType): AnimationBehavior = js.native
   def Add(Type: MsoAnimType, Index: Double): AnimationBehavior = js.native

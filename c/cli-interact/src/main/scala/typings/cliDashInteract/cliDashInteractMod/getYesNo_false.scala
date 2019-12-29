@@ -1,6 +1,6 @@
 package typings.cliDashInteract.cliDashInteractMod
 
-import typings.cliDashInteract.cliDashInteractNumbers.`false`
+import typings.cliDashInteract.cliDashInteractBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

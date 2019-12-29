@@ -1,10 +1,6 @@
 package typings.atBlueprintjsTable.libEsmRegionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality.CELLS
-import typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality.FULL_COLUMNS
-import typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality.FULL_ROWS
-import typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality.FULL_TABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,8 +2,8 @@ package typings.atMaterialMenu.constantsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atMaterialBase.foundationMod.MDCNumbers
-import typings.atMaterialMenu.atMaterialMenuNumbers.`0DOT1`
-import typings.atMaterialMenu.atMaterialMenuNumbers.`0DOT67`
+import typings.atMaterialMenu.atMaterialMenuNumbers.`0.1`
+import typings.atMaterialMenu.atMaterialMenuNumbers.`0.67`
 import typings.atMaterialMenu.atMaterialMenuNumbers.`120`
 import typings.atMaterialMenu.atMaterialMenuNumbers.`32`
 import typings.atMaterialMenu.atMaterialMenuNumbers.`50`
@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 
 trait numbers extends MDCNumbers {
   // Ratio of anchor width to menu width for switching from corner positioning to center positioning.
-  var ANCHOR_TO_MENU_WIDTH_RATIO: `0DOT67`
+  var ANCHOR_TO_MENU_WIDTH_RATIO: `0.67`
   // Margin left to the edge of the viewport when menu is at maximum possible height.
   var MARGIN_TO_EDGE: `32`
   // Ratio of vertical offset to menu height for switching from corner to mid-way origin positioning.
-  var OFFSET_TO_MENU_HEIGHT_RATIO: `0DOT1`
+  var OFFSET_TO_MENU_HEIGHT_RATIO: `0.1`
   // Amount of time to wait before triggering a selected event on the menu. Note that this time
   // will most likely be bumped up once interactive lists are supported to allow for the ripple to
   // animate before closing the menu
@@ -32,9 +32,9 @@ trait numbers extends MDCNumbers {
 object numbers {
   @scala.inline
   def apply(
-    ANCHOR_TO_MENU_WIDTH_RATIO: `0DOT67`,
+    ANCHOR_TO_MENU_WIDTH_RATIO: `0.67`,
     MARGIN_TO_EDGE: `32`,
-    OFFSET_TO_MENU_HEIGHT_RATIO: `0DOT1`,
+    OFFSET_TO_MENU_HEIGHT_RATIO: `0.1`,
     SELECTED_TRIGGER_DELAY: `50`,
     TRANSITION_CLOSE_DURATION: `75`,
     TRANSITION_OPEN_DURATION: `120`,

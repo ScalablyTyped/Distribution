@@ -20,7 +20,8 @@ class Signature protected () extends js.Object {
   val IsSigned: Boolean = js.native
   val IsValid: Boolean = js.native
   val Issuer: String = js.native
-  var `Office.Signature_typekey`: Signature = js.native
+  @JSName("Office.Signature_typekey")
+  var OfficeDotSignature_typekey: Signature = js.native
   val Parent: js.Any = js.native
   val Setup: SignatureSetup = js.native
   val SignDate: VarDate = js.native

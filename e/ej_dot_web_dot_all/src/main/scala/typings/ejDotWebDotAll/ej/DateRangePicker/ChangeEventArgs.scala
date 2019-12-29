@@ -10,7 +10,7 @@ trait ChangeEventArgs extends js.Object {
   var endDate: js.UndefOr[js.Any] = js.undefined
   /** returns the DateRangePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DateRangePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the startDate of DateRangePicker.
     */
   var startDate: js.UndefOr[js.Any] = js.undefined
@@ -26,7 +26,7 @@ object ChangeEventArgs {
   @scala.inline
   def apply(
     endDate: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.DateRangePicker.Model = null,
+    model: Model = null,
     startDate: js.Any = null,
     `type`: String = null,
     value: String = null

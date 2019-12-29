@@ -3,9 +3,7 @@ package typings.three
 import typings.std.ArrayLike
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcMathMatrix3Mod.Matrix3
-import typings.three.srcMathVector2Mod.Vector
-import typings.three.srcMathVector2Mod.Vector2
-import typings.three.threeNumbers.`true`
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

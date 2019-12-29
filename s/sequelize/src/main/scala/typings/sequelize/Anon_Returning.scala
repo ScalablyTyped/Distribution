@@ -1,6 +1,6 @@
 package typings.sequelize
 
-import typings.sequelize.sequelizeNumbers.`true`
+import typings.sequelize.sequelizeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

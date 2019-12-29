@@ -12,7 +12,7 @@ object fchmodSync extends js.Object {
     * @param fd A file descriptor.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
-  def apply(fd: Double, mode: java.lang.String): Unit = js.native
+  def apply(fd: Double, mode: String): Unit = js.native
   def apply(fd: Double, mode: Double): Unit = js.native
 }
 

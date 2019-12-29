@@ -3,6 +3,7 @@ package typings.sparqljs.sparqljsMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.Anon_Default
 import typings.sparqljs.sparqljsStrings.ASK
+import typings.sparqljs.sparqljsStrings.Asterisk
 import typings.sparqljs.sparqljsStrings.CONSTRUCT
 import typings.sparqljs.sparqljsStrings.DESCRIBE
 import typings.sparqljs.sparqljsStrings.SELECT
@@ -20,9 +21,36 @@ trait SparqlQuery extends js.Object
 
 object SparqlQuery {
   @scala.inline
-  def Update(prefixes: StringDictionary[String], `type`: update, updates: js.Array[UpdateOperation]): SparqlQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], updates = updates.asInstanceOf[js.Any])
+  def DescribeQuery(
+    prefixes: StringDictionary[String],
+    queryType: DESCRIBE,
+    `type`: query,
+    variables: js.Array[Asterisk | Variable],
+    base: String = null,
+    values: js.Array[ValuePatternRow] = null,
+    where: js.Array[Pattern] = null
+  ): SparqlQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SparqlQuery]
+  }
+  @scala.inline
+  def AskQuery(
+    prefixes: StringDictionary[String],
+    queryType: ASK,
+    `type`: query,
+    base: String = null,
+    values: js.Array[ValuePatternRow] = null,
+    where: js.Array[Pattern] = null
+  ): SparqlQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparqlQuery]
   }
   @scala.inline
@@ -48,7 +76,7 @@ object SparqlQuery {
     prefixes: StringDictionary[String],
     queryType: SELECT,
     `type`: query,
-    variables: js.Array[typings.sparqljs.sparqljsStrings.`*` | Variable],
+    variables: js.Array[Asterisk | Variable],
     base: String = null,
     distinct: js.UndefOr[Boolean] = js.undefined,
     from: Anon_Default = null,
@@ -77,36 +105,9 @@ object SparqlQuery {
     __obj.asInstanceOf[SparqlQuery]
   }
   @scala.inline
-  def DescribeQuery(
-    prefixes: StringDictionary[String],
-    queryType: DESCRIBE,
-    `type`: query,
-    variables: js.Array[typings.sparqljs.sparqljsStrings.`*` | Variable],
-    base: String = null,
-    values: js.Array[ValuePatternRow] = null,
-    where: js.Array[Pattern] = null
-  ): SparqlQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+  def Update(prefixes: StringDictionary[String], `type`: update, updates: js.Array[UpdateOperation]): SparqlQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], updates = updates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SparqlQuery]
-  }
-  @scala.inline
-  def AskQuery(
-    prefixes: StringDictionary[String],
-    queryType: ASK,
-    `type`: query,
-    base: String = null,
-    values: js.Array[ValuePatternRow] = null,
-    where: js.Array[Pattern] = null
-  ): SparqlQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparqlQuery]
   }
 }

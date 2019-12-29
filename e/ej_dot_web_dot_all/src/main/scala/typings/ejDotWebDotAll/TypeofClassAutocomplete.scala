@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassAutocomplete
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Autocomplete]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Autocomplete] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Autocomplete]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Autocomplete] {
   var Locale: js.Any = js.native
   var fn: Autocomplete = js.native
 }

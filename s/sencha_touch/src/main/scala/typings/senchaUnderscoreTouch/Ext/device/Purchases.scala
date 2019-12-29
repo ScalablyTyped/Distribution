@@ -50,7 +50,7 @@ object Purchases extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Returns a Ext data Store instance of all products available to purchase
   		* @param config Object
   		*/

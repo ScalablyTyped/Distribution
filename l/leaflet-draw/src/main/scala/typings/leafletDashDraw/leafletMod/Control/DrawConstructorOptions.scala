@@ -11,13 +11,13 @@ trait DrawConstructorOptions extends js.Object {
     *
     * @default {}
     */
-  var draw: js.UndefOr[typings.leafletDashDraw.leafletMod.Control.DrawOptions] = js.undefined
+  var draw: js.UndefOr[DrawOptions] = js.undefined
   /**
     * The options used to configure the edit toolbar.
     *
     * @default false
     */
-  var edit: js.UndefOr[typings.leafletDashDraw.leafletMod.Control.EditOptions] = js.undefined
+  var edit: js.UndefOr[EditOptions] = js.undefined
   /**
     * The initial position of the control (one of the map corners).
     *
@@ -28,11 +28,7 @@ trait DrawConstructorOptions extends js.Object {
 
 object DrawConstructorOptions {
   @scala.inline
-  def apply(
-    draw: typings.leafletDashDraw.leafletMod.Control.DrawOptions = null,
-    edit: typings.leafletDashDraw.leafletMod.Control.EditOptions = null,
-    position: ControlPosition = null
-  ): DrawConstructorOptions = {
+  def apply(draw: DrawOptions = null, edit: EditOptions = null, position: ControlPosition = null): DrawConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (draw != null) __obj.updateDynamic("draw")(draw.asInstanceOf[js.Any])
     if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])

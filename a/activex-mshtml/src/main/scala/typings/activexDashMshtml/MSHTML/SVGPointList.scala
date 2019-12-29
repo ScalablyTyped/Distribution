@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGPointList")
 @js.native
 class SVGPointList protected () extends js.Object {
-  var `MSHTML.SVGPointList_typekey`: SVGPointList = js.native
+  @JSName("MSHTML.SVGPointList_typekey")
+  var MSHTMLDotSVGPointList_typekey: SVGPointList = js.native
   var numberOfItems: Double = js.native
   def appendItem(pNewItem: SVGPoint): SVGPoint = js.native
   def clear(): Unit = js.native

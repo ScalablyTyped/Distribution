@@ -22,6 +22,6 @@ class KeyObject protected () extends _KeyLike {
   @JSName("export")
   def export_der(options: KeyExportOptions[der]): Buffer = js.native
   @JSName("export")
-  def export_pem(options: KeyExportOptions[pem]): java.lang.String | Buffer = js.native
+  def export_pem(options: KeyExportOptions[pem]): String | Buffer = js.native
 }
 

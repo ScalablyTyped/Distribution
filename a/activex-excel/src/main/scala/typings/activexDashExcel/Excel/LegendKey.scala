@@ -10,7 +10,8 @@ class LegendKey protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.LegendKey_typekey`: LegendKey = js.native
+  @JSName("Excel.LegendKey_typekey")
+  var ExcelDotLegendKey_typekey: LegendKey = js.native
   val Fill: ChartFillFormat = js.native
   val Format: ChartFormat = js.native
   val Height: Double = js.native

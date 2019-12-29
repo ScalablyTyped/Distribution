@@ -13,7 +13,6 @@ import typings.knex.knexMod.Value
 import typings.knex.knexMod.ValueDict
 import typings.objection.TypeofClassQueryBuilder
 import typings.objection.objectionMod.ColumnNameMappers
-import typings.objection.objectionMod.Constructor
 import typings.objection.objectionMod.CreateValidationErrorArgs
 import typings.objection.objectionMod.EagerAlgorithm
 import typings.objection.objectionMod.EagerOptions
@@ -74,55 +73,37 @@ trait TypeofClassModelArgs
   var uidProp: String = js.native
   var uidRefProp: String = js.native
   var virtualAttributes: js.Array[String] = js.native
-  def bindKnex[M](`this`: M, knex: Knex[_, js.Array[_]]): M = js.native
-  def bindTransaction[M](`this`: M, transaction: Transaction): M = js.native
+  def bindKnex[M](knex: Knex[_, js.Array[_]]): M = js.native
+  def bindTransaction[M](transaction: Transaction): M = js.native
   def createNotFoundError(): Error = js.native
   def createValidationError(args: CreateValidationErrorArgs): Error = js.native
   def createValidator(): Validator = js.native
   def fetchTableMetadata(): js.Promise[TableMetadata] = js.native
   def fetchTableMetadata(opt: FetchTableMetadataOptions): js.Promise[TableMetadata] = js.native
-  def fromDatabaseJson[M](`this`: Constructor[M], row: Pojo): M = js.native
+  def fromDatabaseJson[M](row: Pojo): M = js.native
   // fromJson and fromDatabaseJson both return an instance of Model, not a Model class:
-  def fromJson[M](`this`: Constructor[M], json: Pojo): M = js.native
-  def fromJson[M](`this`: Constructor[M], json: Pojo, opt: ModelOptions): M = js.native
+  def fromJson[M](json: Pojo): M = js.native
+  def fromJson[M](json: Pojo, opt: ModelOptions): M = js.native
   def getRelations(): StringDictionary[Relation] = js.native
   def knex(): Knex[_, js.Array[_]] = js.native
   def knex(knex: Knex[_, js.Array[_]]): Knex[_, js.Array[_]] = js.native
   def knexQuery(): QueryBuilder[_, js.Array[SafePartial[_]]] = js.native
-  def loadRelated[QM /* <: Model */](`this`: Constructor[QM], model: QM, expression: RelationExpression): QueryBuilderYieldingOne[QM] = js.native
-  def loadRelated[QM /* <: Model */](`this`: Constructor[QM], model: QM, expression: RelationExpression, filters: Filters[QM]): QueryBuilderYieldingOne[QM] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    model: QM,
-    expression: RelationExpression,
-    filters: Filters[QM],
-    trxOrKnex: Knex[_, js.Array[_]]
-  ): QueryBuilderYieldingOne[QM] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    model: QM,
-    expression: RelationExpression,
-    filters: Filters[QM],
-    trxOrKnex: Transaction
-  ): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression, filters: Filters[QM]): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Knex[_, js.Array[_]]): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilderYieldingOne[QM] = js.native
   // loadRelated is overloaded to support both Model and Model[] variants:
-  def loadRelated[QM /* <: Model */](`this`: Constructor[QM], models: js.Array[QM], expression: RelationExpression): typings.objection.objectionMod.QueryBuilder[
+  def loadRelated[QM /* <: Model */](models: js.Array[QM], expression: RelationExpression): typings.objection.objectionMod.QueryBuilder[
+    QM, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def loadRelated[QM /* <: Model */](models: js.Array[QM], expression: RelationExpression, filters: Filters[QM]): typings.objection.objectionMod.QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    models: js.Array[QM],
-    expression: RelationExpression,
-    filters: Filters[QM]
-  ): typings.objection.objectionMod.QueryBuilder[
-    QM, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-  ] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
     models: js.Array[QM],
     expression: RelationExpression,
     filters: Filters[QM],
@@ -132,29 +113,23 @@ trait TypeofClassModelArgs
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    models: js.Array[QM],
-    expression: RelationExpression,
-    filters: Filters[QM],
-    trxOrKnex: Transaction
-  ): typings.objection.objectionMod.QueryBuilder[
+  def loadRelated[QM /* <: Model */](models: js.Array[QM], expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): typings.objection.objectionMod.QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def omitImpl(f: js.Function2[/* obj */ js.Object, /* prop */ String, Unit]): Unit = js.native
-  def query[QM /* <: Model */](`this`: Constructor[QM]): typings.objection.objectionMod.QueryBuilder[
+  def query[QM /* <: Model */](): typings.objection.objectionMod.QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def query[QM /* <: Model */](`this`: Constructor[QM], trxOrKnex: Knex[_, js.Array[_]]): typings.objection.objectionMod.QueryBuilder[
+  def query[QM /* <: Model */](trxOrKnex: Knex[_, js.Array[_]]): typings.objection.objectionMod.QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def query[QM /* <: Model */](`this`: Constructor[QM], trxOrKnex: Transaction): typings.objection.objectionMod.QueryBuilder[
+  def query[QM /* <: Model */](trxOrKnex: Transaction): typings.objection.objectionMod.QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _

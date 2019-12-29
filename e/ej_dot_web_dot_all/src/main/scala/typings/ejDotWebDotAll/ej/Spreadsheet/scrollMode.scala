@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.scrollMode.Infinite
-import typings.ejDotWebDotAll.ej.Spreadsheet.scrollMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

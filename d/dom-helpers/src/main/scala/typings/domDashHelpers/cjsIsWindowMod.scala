@@ -1,6 +1,6 @@
 package typings.domDashHelpers
 
-import typings.domDashHelpers.domDashHelpersNumbers.`false`
+import typings.domDashHelpers.domDashHelpersBooleans.`false`
 import typings.std.Document
 import typings.std.Element
 import typings.std.Window

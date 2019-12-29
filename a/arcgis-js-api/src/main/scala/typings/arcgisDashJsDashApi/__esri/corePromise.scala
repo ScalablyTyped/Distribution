@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,9 +40,9 @@ trait corePromise extends js.Object {
     * @param errback The function to execute when the promise fails.
     *
     */
-  def when(): IPromise[_] = js.native
-  def when(callback: js.Function): IPromise[_] = js.native
-  def when(callback: js.Function, errback: js.Function): IPromise[_] = js.native
+  def when(): js.Promise[_] = js.native
+  def when(callback: js.Function): js.Promise[_] = js.native
+  def when(callback: js.Function, errback: js.Function): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.corePromise")

@@ -1,15 +1,6 @@
 package typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models
 
 import org.scalablytyped.runtime.TopLevel
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Active
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Creating
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Deleting
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Disabled
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.ReceiveDisabled
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Renaming
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Restoring
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.SendDisabled
-import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

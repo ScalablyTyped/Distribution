@@ -2,13 +2,15 @@ package typings.got.gotMod
 
 import typings.node.Anon_RejectUnauthorized
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.netMod.Socket
+import typings.node.tlsMod.KeyObject
+import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContextOptions
 import typings.node.tlsMod.SecureVersion
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,15 +46,17 @@ object InternalRequestOptions {
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
     hostname: String = null,
-    key: String | Buffer | (js.Array[Buffer | js.Object]) = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     localAddress: String = null,
     maxVersion: SecureVersion = null,
     method: String = null,
     minVersion: SecureVersion = null,
     passphrase: String = null,
     path: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     port: Double | String = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     protocol: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     secureOptions: Int | Double = null,
@@ -60,6 +64,7 @@ object InternalRequestOptions {
     servername: String = null,
     sessionIdContext: String = null,
     setHost: js.UndefOr[Boolean] = js.undefined,
+    sigalgs: String = null,
     socketPath: String = null,
     timeout: js.Any = null
   ): InternalRequestOptions = {
@@ -90,6 +95,8 @@ object InternalRequestOptions {
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
@@ -97,6 +104,7 @@ object InternalRequestOptions {
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
     if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalRequestOptions]

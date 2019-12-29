@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendPosition.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendPosition.Left
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendPosition.Right
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

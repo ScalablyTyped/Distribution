@@ -1,6 +1,6 @@
 package typings.atBabelTypes.atBabelTypesMod
 
-import typings.atBabelTypes.atBabelTypesStrings.`++`
+import typings.atBabelTypes.atBabelTypesStrings.PlussignPlussign
 import typings.atBabelTypes.atBabelTypesStrings.`--`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   extends Expression
      with BaseNode {
   var argument: Expression
-  var operator: `++` | `--`
+  var operator: PlussignPlussign | `--`
   var prefix: Boolean
   @JSName("type")
   var type_UpdateExpression: typings.atBabelTypes.atBabelTypesStrings.UpdateExpression
@@ -21,7 +21,7 @@ object UpdateExpression {
   @scala.inline
   def apply(
     argument: Expression,
-    operator: `++` | `--`,
+    operator: PlussignPlussign | `--`,
     prefix: Boolean,
     `type`: typings.atBabelTypes.atBabelTypesStrings.UpdateExpression,
     end: Int | Double = null,
@@ -46,8 +46,8 @@ object UpdateExpression {
 @JSImport("@babel/types", "updateExpression")
 @js.native
 object updateExpression extends js.Object {
-  def apply(operator: `++`, argument: Expression): UpdateExpression = js.native
-  def apply(operator: `++`, argument: Expression, prefix: Boolean): UpdateExpression = js.native
+  def apply(operator: PlussignPlussign, argument: Expression): UpdateExpression = js.native
+  def apply(operator: PlussignPlussign, argument: Expression, prefix: Boolean): UpdateExpression = js.native
   def apply(operator: `--`, argument: Expression): UpdateExpression = js.native
   def apply(operator: `--`, argument: Expression, prefix: Boolean): UpdateExpression = js.native
 }

@@ -13,7 +13,16 @@ trait GlobalHeaderProps extends js.Object {
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var logo: js.UndefOr[ReactNode] = js.undefined
-  var menuHeaderRender: js.UndefOr[WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]]] = js.undefined
+  var menuHeaderRender: js.UndefOr[
+    WithFalse[
+      js.Function3[
+        /* logo */ ReactNode, 
+        /* title */ ReactNode, 
+        /* props */ js.UndefOr[this.type], 
+        ReactNode
+      ]
+    ]
+  ] = js.undefined
   var menuRender: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/lib/BasicLayout.BasicLayoutProps['menuRender'] */ js.Any
   ] = js.undefined
@@ -30,7 +39,14 @@ object GlobalHeaderProps {
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
     isMobile: js.UndefOr[Boolean] = js.undefined,
     logo: ReactNode = null,
-    menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,
+    menuHeaderRender: WithFalse[
+      js.Function3[
+        /* logo */ ReactNode, 
+        /* title */ ReactNode, 
+        /* props */ js.UndefOr[GlobalHeaderProps], 
+        ReactNode
+      ]
+    ] = null,
     menuRender: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/lib/BasicLayout.BasicLayoutProps['menuRender'] */ js.Any = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     rightContentRender: WithFalse[js.Function1[GlobalHeaderProps, ReactNode]] = null,

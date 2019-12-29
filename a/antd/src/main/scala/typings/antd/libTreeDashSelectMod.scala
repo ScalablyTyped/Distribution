@@ -3,7 +3,6 @@ package typings.antd
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.libTreeDashSelectInterfaceMod.TreeNodeValue
 import typings.antd.libTreeDashSelectInterfaceMod.TreeSelectProps
-import typings.antd.libTreeDashSelectMod.TreeSelect
 import typings.antd.libTreeTreeMod.AntTreeNodeProps
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element

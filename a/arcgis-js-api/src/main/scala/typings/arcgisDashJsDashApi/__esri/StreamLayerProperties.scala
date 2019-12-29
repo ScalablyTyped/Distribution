@@ -15,6 +15,13 @@ import scala.scalajs.js.annotation._
 
 trait StreamLayerProperties extends FeatureLayerProperties {
   /**
+    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  StreamLayer supports one type feature reduction: `selection`. [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#featureReduction)
+    */
+  @JSName("featureReduction")
+  var featureReduction_StreamLayerProperties: js.UndefOr[FeatureReductionSelectionProperties] = js.undefined
+  /**
     * An extent object used to filter features. Only features intersecting the extent are displayed in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)
@@ -42,9 +49,10 @@ object StreamLayerProperties {
     displayField: String = null,
     dynamicDataSource: DynamicMapLayer | DynamicDataLayer = null,
     elevationInfo: FeatureLayerElevationInfo = null,
-    featureReduction: FeatureLayerFeatureReduction = null,
+    featureReduction: FeatureReductionSelectionProperties = null,
     fields: js.Array[FieldProperties] = null,
     fullExtent: ExtentProperties = null,
+    gdbVersion: String = null,
     geometryDefinition: ExtentProperties = null,
     geometryType: point | multipoint | polyline | polygon | multipatch | mesh = null,
     historicMoment: DateProperties = null,
@@ -74,11 +82,14 @@ object StreamLayerProperties {
     sourceJSON: js.Any = null,
     spatialReference: SpatialReferenceProperties = null,
     templates: js.Array[FeatureTemplateProperties] = null,
+    timeExtent: TimeExtentProperties = null,
     timeInfo: TimeInfoProperties = null,
+    timeOffset: TimeIntervalProperties = null,
     title: String = null,
     typeIdField: String = null,
     types: js.Array[FeatureTypeProperties] = null,
     url: String = null,
+    useViewTime: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): StreamLayerProperties = {
     val __obj = js.Dynamic.literal()
@@ -90,6 +101,7 @@ object StreamLayerProperties {
     if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
+    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion.asInstanceOf[js.Any])
     if (geometryDefinition != null) __obj.updateDynamic("geometryDefinition")(geometryDefinition.asInstanceOf[js.Any])
     if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
@@ -119,11 +131,14 @@ object StreamLayerProperties {
     if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo.asInstanceOf[js.Any])
+    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (typeIdField != null) __obj.updateDynamic("typeIdField")(typeIdField.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useViewTime)) __obj.updateDynamic("useViewTime")(useViewTime.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamLayerProperties]
   }

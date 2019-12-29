@@ -22,7 +22,8 @@ class ChartArea protected () extends js.Object {
   var Shadow: Boolean = js.native
   var Top: Double = js.native
   var Width: Double = js.native
-  var `Word.ChartArea_typekey`: ChartArea = js.native
+  @JSName("Word.ChartArea_typekey")
+  var WordDotChartArea_typekey: ChartArea = js.native
   def Clear(): js.Any = js.native
   def ClearContents(): js.Any = js.native
   def ClearFormats(): js.Any = js.native

@@ -2,9 +2,9 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.active
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.circle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.continuous
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.create
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.delete
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
@@ -17,6 +17,7 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.rectangle
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.redo
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.reshape
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.single
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.transform
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.undo
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.update
@@ -47,6 +48,27 @@ trait Sketch extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#createGraphic)
     */
   val createGraphic: Graphic = js.native
+  /**
+    * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed. By default, the user will be able to continuously create graphics with same geometry types.  **Possible Values:**
+    *
+    * Value | Description |
+    * ----- | ----------- |
+    * continuous | This is the default. Users can continue creating graphics with same geometry types.
+    * single | User can create a single graphic with the specified geometry type. User must choose an operation once the graphic is created.
+    * update | The graphic will be selected for an [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) operation once the `create` operation is completed.
+    *
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
+    *
+    * @default continuous
+    */
+  var creationMode: single | continuous | update = js.native
+  /**
+    * Default create options set for the Sketch widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultCreateOptions)
+    */
+  var defaultCreateOptions: SketchDefaultCreateOptions = js.native
   /**
     * Default update options set for the Sketch widget. Update options set on this property will be overwritten if the update options are changed when [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) method is called.
     *
@@ -113,12 +135,16 @@ trait Sketch extends Widget {
     *
     */
   def complete(): Unit = js.native
+  @JSName("create")
+  def create_circle(tool: circle): Unit = js.native
+  @JSName("create")
+  def create_circle(tool: circle, createOptions: SketchCreateCreateOptions): Unit = js.native
   /**
     * Create a graphic with the geometry specified in the `tool` parameter. When the first vertex of the graphic is added, the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-create) event will start firing. The provided `tool` will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
     *
-    * @param tool Name of the create tool. Specifies the geometry for the graphic to be created.  **Possible Values:** point | polyline | polygon | rectangle | circle
+    * @param tool Name of the create tool. Specifies the geometry for the graphic to be created.
     * @param createOptions Options for the graphic to be created.
     * @param createOptions.mode
     * Specifies how the graphic can be created. The create mode applies only when creating `polygon`, `polyline`, `rectangle` and `circle` geometries.  **Possible Values:**
@@ -130,8 +156,30 @@ trait Sketch extends Widget {
     * click | Vertices are added when the pointer is clicked.
     *
     */
-  def create(tool: String): Unit = js.native
-  def create(tool: String, createOptions: SketchCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_point(tool: point): Unit = js.native
+  @JSName("create")
+  def create_point(tool: point, createOptions: SketchCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_polygon(tool: polygon): Unit = js.native
+  @JSName("create")
+  def create_polygon(tool: polygon, createOptions: SketchCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_polyline(tool: polyline): Unit = js.native
+  @JSName("create")
+  def create_polyline(tool: polyline, createOptions: SketchCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_rectangle(tool: rectangle): Unit = js.native
+  @JSName("create")
+  def create_rectangle(tool: rectangle, createOptions: SketchCreateCreateOptions): Unit = js.native
+  /**
+    * Deletes the selected graphics used in the update workflow. Calling this method will fire the [delete](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-delete) event.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#delete)
+    *
+    *
+    */
+  def delete(): Unit = js.native
   @JSName("on")
   def on_create(name: create, eventHandler: SketchCreateEventHandler): IHandle = js.native
   @JSName("on")
@@ -158,8 +206,8 @@ trait Sketch extends Widget {
     *
     */
   def undo(): Unit = js.native
-  def update(graphics: js.Array[Graphic]): IPromise[Unit] = js.native
-  def update(graphics: js.Array[Graphic], updateOptions: SketchUpdateUpdateOptions): IPromise[Unit] = js.native
+  def update(graphics: js.Array[Graphic]): js.Promise[Unit] = js.native
+  def update(graphics: js.Array[Graphic], updateOptions: SketchUpdateUpdateOptions): js.Promise[Unit] = js.native
   /**
     * Initializes an update operation for the specified graphic(s) and fires [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-update) event.
     *
@@ -181,8 +229,8 @@ trait Sketch extends Widget {
     * @param updateOptions.toggleToolOnClick Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
     *
     */
-  def update(graphics: Graphic): IPromise[Unit] = js.native
-  def update(graphics: Graphic, updateOptions: SketchUpdateUpdateOptions): IPromise[Unit] = js.native
+  def update(graphics: Graphic): js.Promise[Unit] = js.native
+  def update(graphics: Graphic, updateOptions: SketchUpdateUpdateOptions): js.Promise[Unit] = js.native
 }
 
 @JSGlobal("__esri.Sketch")

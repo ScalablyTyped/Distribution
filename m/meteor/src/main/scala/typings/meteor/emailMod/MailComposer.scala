@@ -14,6 +14,5 @@ trait MailComposer extends js.Object {
 
 @JSImport("meteor/email", "MailComposer")
 @js.native
-object MailComposer
-  extends TopLevel[typings.meteor.emailMod.MailComposerStatic]
+object MailComposer extends TopLevel[MailComposerStatic]
 

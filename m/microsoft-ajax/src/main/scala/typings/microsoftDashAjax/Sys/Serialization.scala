@@ -34,7 +34,7 @@ object Serialization extends js.Object {
       * @param value
       *           The JSON string to deserialize.
       */
-    def deserialize(value: java.lang.String): js.Any = js.native
+    def deserialize(value: String): js.Any = js.native
     //#endregion
     //#region Methods
     /**
@@ -45,7 +45,7 @@ object Serialization extends js.Object {
       * @exception Sys.ArgumentException
       *           value contains a value that cannot be serialized.
       */
-    def serialize(value: js.Any): java.lang.String = js.native
+    def serialize(value: js.Any): String = js.native
   }
   
 }

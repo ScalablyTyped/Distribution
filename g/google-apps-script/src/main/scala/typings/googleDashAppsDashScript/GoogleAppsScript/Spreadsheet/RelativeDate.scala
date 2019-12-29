@@ -1,12 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RelativeDate.PAST_MONTH
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RelativeDate.PAST_WEEK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RelativeDate.PAST_YEAR
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RelativeDate.TODAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RelativeDate.TOMORROW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.RelativeDate.YESTERDAY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

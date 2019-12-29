@@ -2,7 +2,6 @@ package typings.dojo.dojox.grid.enhanced.plugins
 
 import typings.dojo.dojox.grid.EnhancedGrid
 import typings.dojo.dojox.grid.enhanced._Plugin
-import typings.dojo.dojox.grid.enhanced.plugins.exporter._ExportWriter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

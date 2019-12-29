@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object internalSymbolRxSubscriberMod extends js.Object {
   @JSName("$$rxSubscriber")
-  val $$rxSubscriber: String | js.Symbol = js.native
+  val DollarDollarrxSubscriber: String | js.Symbol = js.native
   val rxSubscriber: String | js.Symbol = js.native
 }
 

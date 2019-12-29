@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashLayers.distLayersAdvancedUnderscoreActivationsMod
 
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersNumbers.`0DOT3`
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersNumbers.`0.3`
 import typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LeakyReLU () extends Layer {
   def this(args: LeakyReLULayerArgs) = this()
-  val DEFAULT_ALPHA: `0DOT3` = js.native
+  val DEFAULT_ALPHA: `0.3` = js.native
   val alpha: Double = js.native
 }
 

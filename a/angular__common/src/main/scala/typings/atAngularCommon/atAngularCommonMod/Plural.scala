@@ -1,12 +1,6 @@
 package typings.atAngularCommon.atAngularCommonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCommon.atAngularCommonMod.Plural.Few
-import typings.atAngularCommon.atAngularCommonMod.Plural.Many
-import typings.atAngularCommon.atAngularCommonMod.Plural.One
-import typings.atAngularCommon.atAngularCommonMod.Plural.Other
-import typings.atAngularCommon.atAngularCommonMod.Plural.Two
-import typings.atAngularCommon.atAngularCommonMod.Plural.Zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

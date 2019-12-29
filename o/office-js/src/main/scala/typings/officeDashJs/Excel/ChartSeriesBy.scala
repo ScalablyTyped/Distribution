@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartSeriesBy.auto
-import typings.officeDashJs.Excel.ChartSeriesBy.columns
-import typings.officeDashJs.Excel.ChartSeriesBy.rows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

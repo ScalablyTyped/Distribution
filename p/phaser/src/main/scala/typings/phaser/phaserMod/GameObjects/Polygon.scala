@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,18 +38,11 @@ class Polygon protected ()
     * @param fillColor The color the polygon will be filled with, i.e. 0xff0000 for red.
     * @param fillAlpha The alpha the polygon will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, points: js.Any) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, points: js.Any, fillColor: Double) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    points: js.Any,
-    fillColor: Double,
-    fillAlpha: Double
-  ) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, x: Double) = this()
+  def this(scene: Scene, x: Double, y: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, points: js.Any) = this()
+  def this(scene: Scene, x: Double, y: Double, points: js.Any, fillColor: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, points: js.Any, fillColor: Double, fillAlpha: Double) = this()
 }
 

@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.eventsKeyCodeMod.KeyCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

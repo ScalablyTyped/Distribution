@@ -13,7 +13,7 @@ trait AjaxErrorEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Instance of the navigation drawer model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.NavigationDrawer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Error page content.
     */
   var responseText: js.UndefOr[String] = js.undefined
@@ -33,7 +33,7 @@ object AjaxErrorEventArgs {
   def apply(
     URL: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.NavigationDrawer.Model = null,
+    model: Model = null,
     responseText: String = null,
     status: Int | Double = null,
     statusText: String = null,

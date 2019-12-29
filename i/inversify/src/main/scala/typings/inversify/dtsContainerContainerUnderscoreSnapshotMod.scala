@@ -1,6 +1,5 @@
 package typings.inversify
 
-import typings.inversify.dtsContainerContainerUnderscoreSnapshotMod.ContainerSnapshot
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Binding
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Lookup
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Next

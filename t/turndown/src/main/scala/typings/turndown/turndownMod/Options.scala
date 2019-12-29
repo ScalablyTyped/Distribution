@@ -1,12 +1,13 @@
 package typings.turndown.turndownMod
 
-import typings.turndown.turndownStrings.BACKTICKBACKTICKBACKTICK
-import typings.turndown.turndownStrings.Underscore
+import typings.turndown.turndownStrings.Asterisk
+import typings.turndown.turndownStrings.AsteriskAsterisk
+import typings.turndown.turndownStrings.GraveaccentGraveaccentGraveaccent
+import typings.turndown.turndownStrings.Plussign
+import typings.turndown.turndownStrings.TildeTildeTilde
 import typings.turndown.turndownStrings.__
-import typings.turndown.turndownStrings.`**`
-import typings.turndown.turndownStrings.`+`
-import typings.turndown.turndownStrings.`-`
-import typings.turndown.turndownStrings.`~~~`
+import typings.turndown.turndownStrings._underscore
+import typings.turndown.turndownStrings.`-_`
 import typings.turndown.turndownStrings.atx
 import typings.turndown.turndownStrings.collapsed
 import typings.turndown.turndownStrings.fenced
@@ -23,17 +24,17 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var blankReplacement: js.UndefOr[ReplacementFunction] = js.undefined
   var br: js.UndefOr[String] = js.undefined
-  var bulletListMarker: js.UndefOr[`-` | `+` | typings.turndown.turndownStrings.`*`] = js.undefined
+  var bulletListMarker: js.UndefOr[`-_` | Plussign | Asterisk] = js.undefined
   var codeBlockStyle: js.UndefOr[indented | fenced] = js.undefined
   var defaultReplacement: js.UndefOr[ReplacementFunction] = js.undefined
-  var emDelimiter: js.UndefOr[Underscore | typings.turndown.turndownStrings.`*`] = js.undefined
-  var fence: js.UndefOr[BACKTICKBACKTICKBACKTICK | `~~~`] = js.undefined
+  var emDelimiter: js.UndefOr[_underscore | Asterisk] = js.undefined
+  var fence: js.UndefOr[GraveaccentGraveaccentGraveaccent | TildeTildeTilde] = js.undefined
   var headingStyle: js.UndefOr[setext | atx] = js.undefined
   var hr: js.UndefOr[String] = js.undefined
   var keepReplacement: js.UndefOr[ReplacementFunction] = js.undefined
   var linkReferenceStyle: js.UndefOr[full | collapsed | shortcut] = js.undefined
   var linkStyle: js.UndefOr[inlined | referenced] = js.undefined
-  var strongDelimiter: js.UndefOr[__ | `**`] = js.undefined
+  var strongDelimiter: js.UndefOr[__ | AsteriskAsterisk] = js.undefined
 }
 
 object Options {
@@ -41,17 +42,17 @@ object Options {
   def apply(
     blankReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String = null,
     br: String = null,
-    bulletListMarker: `-` | `+` | typings.turndown.turndownStrings.`*` = null,
+    bulletListMarker: `-_` | Plussign | Asterisk = null,
     codeBlockStyle: indented | fenced = null,
     defaultReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String = null,
-    emDelimiter: Underscore | typings.turndown.turndownStrings.`*` = null,
-    fence: BACKTICKBACKTICKBACKTICK | `~~~` = null,
+    emDelimiter: _underscore | Asterisk = null,
+    fence: GraveaccentGraveaccentGraveaccent | TildeTildeTilde = null,
     headingStyle: setext | atx = null,
     hr: String = null,
     keepReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String = null,
     linkReferenceStyle: full | collapsed | shortcut = null,
     linkStyle: inlined | referenced = null,
-    strongDelimiter: __ | `**` = null
+    strongDelimiter: __ | AsteriskAsterisk = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (blankReplacement != null) __obj.updateDynamic("blankReplacement")(js.Any.fromFunction3(blankReplacement))

@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Diamond
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Ellipse
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Line
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Pentagon
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Trapezoid
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,10 +68,7 @@ object LegendShape extends js.Object {
   object Rectangle extends TopLevel[Rectangle with Double]
   
   /* 6 */ @js.native
-  object Slider
-    extends TopLevel[
-          typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Slider with Double
-        ]
+  object Slider extends TopLevel[Slider with Double]
   
   /* 7 */ @js.native
   object Trapezoid extends TopLevel[Trapezoid with Double]

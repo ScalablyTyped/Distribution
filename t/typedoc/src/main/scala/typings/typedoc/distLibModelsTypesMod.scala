@@ -2,7 +2,6 @@ package typings.typedoc
 
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
 import typings.typedoc.distLibModelsReflectionsDeclarationMod.DeclarationReflection
-import typings.typedoc.distLibModelsTypesMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,29 @@ object distLibModelsTypesMod extends js.Object {
   class ArrayType protected ()
     extends typings.typedoc.distLibModelsTypesArrayMod.ArrayType {
     def this(elementType: Type) = this()
+  }
+  
+  @js.native
+  class ConditionalType protected ()
+    extends typings.typedoc.distLibModelsTypesConditionalMod.ConditionalType {
+    def this(
+      checkType: typings.typedoc.distLibModelsTypesAbstractMod.Type,
+      extendsType: typings.typedoc.distLibModelsTypesAbstractMod.Type,
+      trueType: typings.typedoc.distLibModelsTypesAbstractMod.Type,
+      falseType: typings.typedoc.distLibModelsTypesAbstractMod.Type
+    ) = this()
+  }
+  
+  @js.native
+  class IndexedAccessType protected ()
+    extends typings.typedoc.distLibModelsTypesIndexedDashAccessMod.IndexedAccessType {
+    def this(objectType: Type, indexType: Type) = this()
+  }
+  
+  @js.native
+  class InferredType protected ()
+    extends typings.typedoc.distLibModelsTypesInferredMod.InferredType {
+    def this(name: String) = this()
   }
   
   @js.native

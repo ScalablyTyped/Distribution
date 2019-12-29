@@ -22,8 +22,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api
   */
-class Circle ()
-  extends typings.openlayers.openlayersMod.style.Image {
+class Circle () extends Image {
   def this(opt_options: CircleOptions) = this()
   /**
     * Get the fill style for the circle.

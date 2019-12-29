@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`=`
-  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`<`
-  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`<=`
-  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`>`
-  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`>=`
-  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`!=`
+  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.Equalssign
+  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.Lessthansign
+  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.LessthansignEqualssign
+  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.Greaterthansign
+  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.GreaterthansignEqualssign
+  - typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.ExclamationmarkEqualssign
 */
 trait FilterComparator extends js.Object
 
 object FilterComparator {
   @scala.inline
-  def `!=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`!=` = this.cast("!=")
+  def Equalssign: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.Equalssign = this.cast("=")
   @scala.inline
-  def `<`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`<` = this.cast("<")
+  def ExclamationmarkEqualssign: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.ExclamationmarkEqualssign = this.cast("!=")
   @scala.inline
-  def `<=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`<=` = this.cast("<=")
+  def Greaterthansign: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.Greaterthansign = this.cast(">")
   @scala.inline
-  def `=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`=` = this.cast("=")
+  def GreaterthansignEqualssign: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.GreaterthansignEqualssign = this.cast(">=")
   @scala.inline
-  def `>`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`>` = this.cast(">")
+  def Lessthansign: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.Lessthansign = this.cast("<")
   @scala.inline
-  def `>=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`>=` = this.cast(">=")
+  def LessthansignEqualssign: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.LessthansignEqualssign = this.cast("<=")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

@@ -32,7 +32,8 @@ class Slide protected () extends js.Object {
   var Name: String = js.native
   val NotesPage: SlideRange = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Slide_typekey`: Slide = js.native
+  @JSName("PowerPoint.Slide_typekey")
+  var PowerPointDotSlide_typekey: Slide = js.native
   val PrintSteps: Double = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native

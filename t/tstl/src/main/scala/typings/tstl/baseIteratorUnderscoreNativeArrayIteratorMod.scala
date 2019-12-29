@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseIteratorUnderscoreNativeArrayIteratorMod._NativeArrayIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

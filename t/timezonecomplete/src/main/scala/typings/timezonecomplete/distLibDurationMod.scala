@@ -1,7 +1,6 @@
 package typings.timezonecomplete
 
 import typings.timezonecomplete.distLibBasicsMod.TimeUnit
-import typings.timezonecomplete.distLibDurationMod.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

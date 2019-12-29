@@ -1,13 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.keyFlags.authentication
-import typings.openpgp.openpgpMod.enums.keyFlags.certify_keys
-import typings.openpgp.openpgpMod.enums.keyFlags.encrypt_communication
-import typings.openpgp.openpgpMod.enums.keyFlags.encrypt_storage
-import typings.openpgp.openpgpMod.enums.keyFlags.shared_private_key
-import typings.openpgp.openpgpMod.enums.keyFlags.sign_data
-import typings.openpgp.openpgpMod.enums.keyFlags.split_private_key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

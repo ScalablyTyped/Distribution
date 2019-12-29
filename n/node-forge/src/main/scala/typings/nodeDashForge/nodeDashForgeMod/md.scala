@@ -1,6 +1,5 @@
 package typings.nodeDashForge.nodeDashForgeMod
 
-import typings.nodeDashForge.nodeDashForgeMod.md.MessageDigest
 import typings.nodeDashForge.nodeDashForgeMod.util.ByteStringBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

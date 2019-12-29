@@ -20,19 +20,13 @@ object _ColorInputWithoutInstance {
     __obj.asInstanceOf[_ColorInputWithoutInstance]
   }
   @scala.inline
-  def PRGBA(a: Double, b: String, g: String, r: String): _ColorInputWithoutInstance = {
-    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
+  def HSVA(a: Double, h: Double, s: Double, v: Double): _ColorInputWithoutInstance = {
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ColorInputWithoutInstance]
   }
   @scala.inline
   def PRGB(b: String, g: String, r: String): _ColorInputWithoutInstance = {
-    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_ColorInputWithoutInstance]
-  }
-  @scala.inline
-  def RGB(b: Double, g: Double, r: Double): _ColorInputWithoutInstance = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ColorInputWithoutInstance]
@@ -44,8 +38,14 @@ object _ColorInputWithoutInstance {
     __obj.asInstanceOf[_ColorInputWithoutInstance]
   }
   @scala.inline
-  def HSVA(a: Double, h: Double, s: Double, v: Double): _ColorInputWithoutInstance = {
-    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+  def RGB(b: Double, g: Double, r: Double): _ColorInputWithoutInstance = {
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_ColorInputWithoutInstance]
+  }
+  @scala.inline
+  def PRGBA(a: Double, b: String, g: String, r: String): _ColorInputWithoutInstance = {
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ColorInputWithoutInstance]
   }

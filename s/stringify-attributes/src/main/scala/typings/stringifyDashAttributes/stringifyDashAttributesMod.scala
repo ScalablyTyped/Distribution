@@ -1,7 +1,6 @@
 package typings.stringifyDashAttributes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.stringifyDashAttributes.stringifyDashAttributesMod.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

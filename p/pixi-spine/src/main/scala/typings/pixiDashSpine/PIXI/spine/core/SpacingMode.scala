@@ -1,9 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.SpacingMode.Fixed
-import typings.pixiDashSpine.PIXI.spine.core.SpacingMode.Length
-import typings.pixiDashSpine.PIXI.spine.core.SpacingMode.Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

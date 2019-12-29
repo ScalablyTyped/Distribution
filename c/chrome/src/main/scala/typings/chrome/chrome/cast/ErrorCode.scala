@@ -1,16 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.ErrorCode.API_NOT_INITIALIZED
-import typings.chrome.chrome.cast.ErrorCode.CANCEL
-import typings.chrome.chrome.cast.ErrorCode.CHANNEL_ERROR
-import typings.chrome.chrome.cast.ErrorCode.EXTENSION_MISSING
-import typings.chrome.chrome.cast.ErrorCode.EXTENSION_NOT_COMPATIBLE
-import typings.chrome.chrome.cast.ErrorCode.INVALID_PARAMETER
-import typings.chrome.chrome.cast.ErrorCode.LOAD_MEDIA_FAILED
-import typings.chrome.chrome.cast.ErrorCode.RECEIVER_UNAVAILABLE
-import typings.chrome.chrome.cast.ErrorCode.SESSION_ERROR
-import typings.chrome.chrome.cast.ErrorCode.TIMEOUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

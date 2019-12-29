@@ -1,6 +1,5 @@
 package typings.jsDashSchema
 
-import typings.jsDashSchema.jsDashSchemaMod.Schema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -63,12 +63,6 @@ object atBlueprintjsCoreNumbers {
   @js.native
   sealed trait `9` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -107,9 +101,5 @@ object atBlueprintjsCoreNumbers {
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

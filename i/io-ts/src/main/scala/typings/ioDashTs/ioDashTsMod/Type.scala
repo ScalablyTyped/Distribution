@@ -41,8 +41,8 @@ class Type[A, O, I] protected ()
   /**
     * @since 1.0.0
     */
-  def pipe[B, IB, A /* <: IB */, OB /* <: A */](`this`: Type[A, O, I], ab: Type[B, OB, IB]): Type[B, O, I] = js.native
-  def pipe[B, IB, A /* <: IB */, OB /* <: A */](`this`: Type[A, O, I], ab: Type[B, OB, IB], name: String): Type[B, O, I] = js.native
+  def pipe[B, IB, A /* <: IB */, OB /* <: A */](ab: Type[B, OB, IB]): Type[B, O, I] = js.native
+  def pipe[B, IB, A /* <: IB */, OB /* <: A */](ab: Type[B, OB, IB], name: String): Type[B, O, I] = js.native
   /* CompleteClass */
   override def validate(i: I, context: Context): Validation[A] = js.native
 }

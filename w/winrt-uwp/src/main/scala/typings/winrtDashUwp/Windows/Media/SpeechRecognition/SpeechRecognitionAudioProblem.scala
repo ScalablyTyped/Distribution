@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.noSignal
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.none
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooFast
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooLoud
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooNoisy
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooQuiet
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooSlow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

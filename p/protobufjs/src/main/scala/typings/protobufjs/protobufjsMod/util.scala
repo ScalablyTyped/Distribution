@@ -2,7 +2,6 @@ package typings.protobufjs.protobufjsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.protobufjs.protobufjsMod.util.LongBits
 import typings.std.Error
 import typings.std.RegExp
 import typings.std.Uint8Array

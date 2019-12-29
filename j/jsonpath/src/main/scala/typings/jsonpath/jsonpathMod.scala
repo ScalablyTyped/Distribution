@@ -1,6 +1,5 @@
 package typings.jsonpath
 
-import typings.jsonpath.jsonpathMod.PathComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

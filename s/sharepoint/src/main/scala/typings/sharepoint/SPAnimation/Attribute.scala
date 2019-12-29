@@ -1,11 +1,6 @@
 package typings.sharepoint.SPAnimation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPAnimation.Attribute.Height
-import typings.sharepoint.SPAnimation.Attribute.Opacity
-import typings.sharepoint.SPAnimation.Attribute.PositionX
-import typings.sharepoint.SPAnimation.Attribute.PositionY
-import typings.sharepoint.SPAnimation.Attribute.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

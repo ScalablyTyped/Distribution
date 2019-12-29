@@ -1,11 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.keyStatus.expired
-import typings.openpgp.openpgpMod.enums.keyStatus.invalid
-import typings.openpgp.openpgpMod.enums.keyStatus.no_self_cert
-import typings.openpgp.openpgpMod.enums.keyStatus.revoked
-import typings.openpgp.openpgpMod.enums.keyStatus.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

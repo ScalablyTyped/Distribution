@@ -1,6 +1,5 @@
 package typings.atTensorflowTfjsDashCore
 
-import typings.atTensorflowTfjsDashCore.distOpsLstmMod.LSTMCellFunc
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor1D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D

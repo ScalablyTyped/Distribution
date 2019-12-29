@@ -1,12 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSED
-import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSING
-import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSING_START
-import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPEN
-import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPENING
-import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPEN_START
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

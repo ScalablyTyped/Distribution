@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.bufferOverrun
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.frame
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.receiveFull
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.receiveParity
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.transmitFull
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

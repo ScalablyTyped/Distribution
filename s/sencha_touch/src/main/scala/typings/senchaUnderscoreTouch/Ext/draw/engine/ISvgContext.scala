@@ -211,7 +211,7 @@ trait ISvgContext extends IBase {
   		*/
   var fillText: js.UndefOr[
     js.Function3[
-      /* text */ js.UndefOr[java.lang.String], 
+      /* text */ js.UndefOr[String], 
       /* x */ js.UndefOr[Double], 
       /* y */ js.UndefOr[Double], 
       Unit
@@ -289,7 +289,7 @@ trait ISvgContext extends IBase {
   		*/
   var strokeText: js.UndefOr[
     js.Function3[
-      /* text */ js.UndefOr[java.lang.String], 
+      /* text */ js.UndefOr[String], 
       /* x */ js.UndefOr[Double], 
       /* y */ js.UndefOr[Double], 
       Unit
@@ -337,12 +337,12 @@ object ISvgContext {
     destroy: () => Unit = null,
     drawImage: (/* image */ js.UndefOr[HTMLElement], /* sx */ js.UndefOr[Double], /* sy */ js.UndefOr[Double], /* sw */ js.UndefOr[Double], /* sh */ js.UndefOr[Double], /* dx */ js.UndefOr[Double], /* dy */ js.UndefOr[Double], /* dw */ js.UndefOr[Double], /* dh */ js.UndefOr[Double]) => Unit = null,
     ellipse: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* radiusX */ js.UndefOr[Double], /* radiusY */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fill: () => Unit = null,
     fillRect: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit = null,
     fillStroke: (/* attr */ js.UndefOr[js.Any], /* transformFillStroke */ js.UndefOr[Boolean]) => Unit = null,
-    fillText: (/* text */ js.UndefOr[java.lang.String], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    fillText: (/* text */ js.UndefOr[String], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     lineTo: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
@@ -358,7 +358,7 @@ object ISvgContext {
     statics: js.Any = null,
     stroke: () => Unit = null,
     strokeRect: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit = null,
-    strokeText: (/* text */ js.UndefOr[java.lang.String], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
+    strokeText: (/* text */ js.UndefOr[String], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
     transform: (/* xx */ js.UndefOr[Double], /* yx */ js.UndefOr[Double], /* xy */ js.UndefOr[Double], /* yy */ js.UndefOr[Double], /* dx */ js.UndefOr[Double], /* dy */ js.UndefOr[Double]) => Unit = null,
     uses: Array = null
   ): ISvgContext = {

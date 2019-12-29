@@ -4,6 +4,7 @@ import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.LatLngLiteral
 import typings.googlemaps.google.maps.Map
 import typings.googlemaps.google.maps.Marker
+import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -84,7 +85,7 @@ trait InfoWindowOptions extends js.Object {
     * The Google Map associated to this info window.
     * Only required if you are not using a marker.
     */
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   /**
     * The Google Maps marker associated to this info window.
     */
@@ -187,7 +188,7 @@ object InfoWindowOptions {
     edgeOffset: EdgeOffset = null,
     fontColor: String = null,
     fontSize: String = null,
-    map: Map = null,
+    map: Map[Element] = null,
     marker: Marker = null,
     maxHeight: Int | Double = null,
     maxWidth: Int | Double = null,

@@ -1,8 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.CompressionMethod.deflate
-import typings.nodeDashForge.nodeDashForgeMod.tls.CompressionMethod.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

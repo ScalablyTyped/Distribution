@@ -1,7 +1,5 @@
 package typings.atProtobufjsPool
 
-import typings.atProtobufjsPool.atProtobufjsPoolMod.PoolAllocator
-import typings.atProtobufjsPool.atProtobufjsPoolMod.PoolSlicer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcAnimationAnimationClipMod.AnimationClip
 import typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack
 import typings.three.srcCoreGeometryMod.MorphTarget
 import typings.three.srcObjectsBoneMod.Bone

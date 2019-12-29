@@ -17,6 +17,7 @@ class HeaderFooter protected () extends js.Object {
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
   val Shapes: typings.activexDashWord.Word.Shapes = js.native
-  var `Word.HeaderFooter_typekey`: HeaderFooter = js.native
+  @JSName("Word.HeaderFooter_typekey")
+  var WordDotHeaderFooter_typekey: HeaderFooter = js.native
 }
 

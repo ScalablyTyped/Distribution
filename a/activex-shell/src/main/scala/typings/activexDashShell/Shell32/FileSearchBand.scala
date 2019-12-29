@@ -14,7 +14,8 @@ class FileSearchBand protected () extends js.Object {
   val Scope: js.Any = js.native
   /** Retrieve the guid of the currently active search. */
   val SearchID: String = js.native
-  var `Shell32.FileSearchBand_typekey`: FileSearchBand = js.native
+  @JSName("Shell32.FileSearchBand_typekey")
+  var Shell32DotFileSearchBand_typekey: FileSearchBand = js.native
   /** method SetFocus */
   def SetFocus(): Unit = js.native
   /** method SetSearchParameters */

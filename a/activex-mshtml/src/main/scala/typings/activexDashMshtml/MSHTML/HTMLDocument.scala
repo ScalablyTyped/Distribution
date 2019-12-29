@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLDocument")
 @js.native
 class HTMLDocument protected () extends js.Object {
-  var `MSHTML.HTMLDocument_typekey`: HTMLDocument = js.native
+  @JSName("MSHTML.HTMLDocument_typekey")
+  var MSHTMLDotHTMLDocument_typekey: HTMLDocument = js.native
   val Script: js.Any = js.native
   val URLUnencoded: String = js.native
   val activeElement: IHTMLElement = js.native

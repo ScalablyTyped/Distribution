@@ -1,6 +1,5 @@
 package typings.promiseDashMapDashLimit
 
-import typings.promiseDashMapDashLimit.promiseDashMapDashLimitMod.IIteratee
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

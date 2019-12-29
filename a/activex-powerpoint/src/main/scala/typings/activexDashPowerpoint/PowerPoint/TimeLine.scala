@@ -11,6 +11,7 @@ class TimeLine protected () extends js.Object {
   val InteractiveSequences: Sequences = js.native
   val MainSequence: Sequence = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TimeLine_typekey`: TimeLine = js.native
+  @JSName("PowerPoint.TimeLine_typekey")
+  var PowerPointDotTimeLine_typekey: TimeLine = js.native
 }
 

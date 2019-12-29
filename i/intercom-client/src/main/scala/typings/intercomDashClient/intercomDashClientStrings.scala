@@ -15,16 +15,16 @@ object intercomDashClientStrings {
   sealed trait company extends js.Object
   
   @js.native
-  sealed trait companyDOTlist extends js.Object
+  sealed trait companyDotlist extends js.Object
   
   @js.native
   sealed trait contact extends js.Object
   
   @js.native
-  sealed trait errorDOTlist extends js.Object
+  sealed trait errorDotlist extends js.Object
   
   @js.native
-  sealed trait eventDOTlist extends js.Object
+  sealed trait eventDotlist extends js.Object
   
   @js.native
   sealed trait lead extends js.Object
@@ -33,22 +33,22 @@ object intercomDashClientStrings {
   sealed trait location_data extends js.Object
   
   @js.native
-  sealed trait segmentDOTlist extends js.Object
+  sealed trait segmentDotlist extends js.Object
   
   @js.native
-  sealed trait social_profileDOTlist extends js.Object
+  sealed trait social_profileDotlist extends js.Object
   
   @js.native
   sealed trait tag extends js.Object
   
   @js.native
-  sealed trait tagDOTlist extends js.Object
+  sealed trait tagDotlist extends js.Object
   
   @js.native
   sealed trait user extends js.Object
   
   @js.native
-  sealed trait userDOTlist extends js.Object
+  sealed trait userDotlist extends js.Object
   
   @js.native
   sealed trait visitor extends js.Object
@@ -60,29 +60,29 @@ object intercomDashClientStrings {
   @scala.inline
   def company: company = "company".asInstanceOf[company]
   @scala.inline
-  def companyDOTlist: companyDOTlist = "company.list".asInstanceOf[companyDOTlist]
+  def companyDotlist: companyDotlist = "company.list".asInstanceOf[companyDotlist]
   @scala.inline
   def contact: contact = "contact".asInstanceOf[contact]
   @scala.inline
-  def errorDOTlist: errorDOTlist = "error.list".asInstanceOf[errorDOTlist]
+  def errorDotlist: errorDotlist = "error.list".asInstanceOf[errorDotlist]
   @scala.inline
-  def eventDOTlist: eventDOTlist = "event.list".asInstanceOf[eventDOTlist]
+  def eventDotlist: eventDotlist = "event.list".asInstanceOf[eventDotlist]
   @scala.inline
   def lead: lead = "lead".asInstanceOf[lead]
   @scala.inline
   def location_data: location_data = "location_data".asInstanceOf[location_data]
   @scala.inline
-  def segmentDOTlist: segmentDOTlist = "segment.list".asInstanceOf[segmentDOTlist]
+  def segmentDotlist: segmentDotlist = "segment.list".asInstanceOf[segmentDotlist]
   @scala.inline
-  def social_profileDOTlist: social_profileDOTlist = "social_profile.list".asInstanceOf[social_profileDOTlist]
+  def social_profileDotlist: social_profileDotlist = "social_profile.list".asInstanceOf[social_profileDotlist]
   @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
   @scala.inline
-  def tagDOTlist: tagDOTlist = "tag.list".asInstanceOf[tagDOTlist]
+  def tagDotlist: tagDotlist = "tag.list".asInstanceOf[tagDotlist]
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   @scala.inline
-  def userDOTlist: userDOTlist = "user.list".asInstanceOf[userDOTlist]
+  def userDotlist: userDotlist = "user.list".asInstanceOf[userDotlist]
   @scala.inline
   def visitor: visitor = "visitor".asInstanceOf[visitor]
 }

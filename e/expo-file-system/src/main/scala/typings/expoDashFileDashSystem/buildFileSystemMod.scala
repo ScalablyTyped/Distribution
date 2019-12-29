@@ -9,7 +9,6 @@ import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.DownloadResult
 import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.FileInfo
 import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.ReadingOptions
 import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.WritingOptions
-import typings.expoDashFileDashSystem.buildFileSystemMod.DownloadResumable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

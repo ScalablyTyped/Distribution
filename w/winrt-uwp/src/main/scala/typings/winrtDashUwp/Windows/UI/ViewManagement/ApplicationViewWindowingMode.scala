@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewWindowingMode.auto
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewWindowingMode.fullScreen
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewWindowingMode.preferredLaunchViewSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

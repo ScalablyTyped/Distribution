@@ -1,5 +1,6 @@
 package typings.leafletDotMarkercluster.leafletMod
 
+import typings.leaflet.leafletMod.FitBoundsOptions
 import typings.leaflet.leafletMod.LatLngBounds
 import typings.leaflet.leafletMod.Marker
 import scala.scalajs.js
@@ -26,5 +27,6 @@ class MarkerCluster ()
     * Zoom to the minimum of showing all of the child markers, or the extents of this cluster.
     */
   def zoomToBounds(): Unit = js.native
+  def zoomToBounds(options: FitBoundsOptions): Unit = js.native
 }
 

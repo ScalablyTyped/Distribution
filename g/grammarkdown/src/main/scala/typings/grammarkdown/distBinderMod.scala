@@ -1,6 +1,5 @@
 package typings.grammarkdown
 
-import typings.grammarkdown.distBinderMod.BindingTable
 import typings.grammarkdown.distNodesMod.Node
 import typings.grammarkdown.distNodesMod.Parameter
 import typings.grammarkdown.distNodesMod.Production

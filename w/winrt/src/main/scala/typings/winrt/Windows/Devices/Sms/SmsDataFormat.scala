@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Sms.SmsDataFormat.cdmaDeliver
-import typings.winrt.Windows.Devices.Sms.SmsDataFormat.cdmaSubmit
-import typings.winrt.Windows.Devices.Sms.SmsDataFormat.gsmDeliver
-import typings.winrt.Windows.Devices.Sms.SmsDataFormat.gsmSubmit
-import typings.winrt.Windows.Devices.Sms.SmsDataFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.PaneLayout.GridAndGantt
-import typings.sharepoint.SP.JsGrid.PaneLayout.GridAndPivotedGrid
-import typings.sharepoint.SP.JsGrid.PaneLayout.GridOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

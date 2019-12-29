@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object nodemonStrings {
   @js.native
-  sealed trait `config:update` extends js.Object
+  sealed trait configColonupdate extends js.Object
   
   @js.native
   sealed trait crash extends js.Object
@@ -39,7 +39,7 @@ object nodemonStrings {
   sealed trait watching extends js.Object
   
   @scala.inline
-  def `config:update`: `config:update` = "config:update".asInstanceOf[`config:update`]
+  def configColonupdate: configColonupdate = "config:update".asInstanceOf[configColonupdate]
   @scala.inline
   def crash: crash = "crash".asInstanceOf[crash]
   @scala.inline

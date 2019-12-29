@@ -40,7 +40,7 @@ object distSrcRealtimeTransportManagerMod extends js.Object {
       * @const
       * @type {!Array.<function(new:Transport, string, RepoInfo, string=)>}
       */
-    val ALL_TRANSPORTS: js.Array[TypeofClassBrowserPollConnection | TypeofClassWebSocketConnection] = js.native
+    def ALL_TRANSPORTS(): js.Array[TypeofClassBrowserPollConnection | TypeofClassWebSocketConnection] = js.native
   }
   
 }

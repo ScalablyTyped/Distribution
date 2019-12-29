@@ -1,9 +1,6 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.ProtectionLevel.HSM
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.ProtectionLevel.PROTECTION_LEVEL_UNSPECIFIED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.ProtectionLevel.SOFTWARE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

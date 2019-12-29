@@ -1,8 +1,8 @@
 package typings.atBabelTypes.atBabelTypesMod
 
-import typings.atBabelTypes.atBabelTypesStrings.`&&`
-import typings.atBabelTypes.atBabelTypesStrings.`??`
-import typings.atBabelTypes.atBabelTypesStrings.`||`
+import typings.atBabelTypes.atBabelTypesStrings.AmpersandAmpersand
+import typings.atBabelTypes.atBabelTypesStrings.QuestionmarkQuestionmark
+import typings.atBabelTypes.atBabelTypesStrings.VerticallineVerticalline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
      with BaseNode
      with Expression {
   var left: Expression
-  var operator: `||` | `&&` | `??`
+  var operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark
   var right: Expression
   @JSName("type")
   var type_LogicalExpression: typings.atBabelTypes.atBabelTypesStrings.LogicalExpression
@@ -23,7 +23,7 @@ object LogicalExpression {
   @scala.inline
   def apply(
     left: Expression,
-    operator: `||` | `&&` | `??`,
+    operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
     right: Expression,
     `type`: typings.atBabelTypes.atBabelTypesStrings.LogicalExpression,
     end: Int | Double = null,
@@ -48,8 +48,8 @@ object LogicalExpression {
 @JSImport("@babel/types", "logicalExpression")
 @js.native
 object logicalExpression extends js.Object {
-  def apply(operator: `&&`, left: Expression, right: Expression): LogicalExpression = js.native
-  def apply(operator: `??`, left: Expression, right: Expression): LogicalExpression = js.native
-  def apply(operator: `||`, left: Expression, right: Expression): LogicalExpression = js.native
+  def apply(operator: AmpersandAmpersand, left: Expression, right: Expression): LogicalExpression = js.native
+  def apply(operator: QuestionmarkQuestionmark, left: Expression, right: Expression): LogicalExpression = js.native
+  def apply(operator: VerticallineVerticalline, left: Expression, right: Expression): LogicalExpression = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.antlr4
 
-import typings.antlr4.errorErrorStrategyMod.ErrorStrategy
 import typings.antlr4.recognizerMod.Recognizer
 import typings.std.Error
 import scala.scalajs.js

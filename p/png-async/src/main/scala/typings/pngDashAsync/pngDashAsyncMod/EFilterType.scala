@@ -1,12 +1,6 @@
 package typings.pngDashAsync.pngDashAsyncMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Auto
-import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Average
-import typings.pngDashAsync.pngDashAsyncMod.EFilterType.None
-import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Paeth
-import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Sub
-import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

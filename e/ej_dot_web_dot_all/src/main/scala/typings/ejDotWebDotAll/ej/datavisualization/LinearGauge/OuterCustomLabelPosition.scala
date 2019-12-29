@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.OuterCustomLabelPosition.Bottom
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.OuterCustomLabelPosition.Left
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.OuterCustomLabelPosition.Right
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.OuterCustomLabelPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,16 @@
 package typings.agentkeepalive.agentkeepaliveMod
 
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.httpsMod.AgentOptions
 import typings.node.netMod.Socket
+import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PeerCertificate
+import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
+import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +42,7 @@ object HttpsOptions {
     host: String = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveMsecs: Int | Double = null,
-    key: String | Buffer | (js.Array[Buffer | js.Object]) = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     maxCachedSessions: Int | Double = null,
     maxFreeSockets: Int | Double = null,
@@ -50,8 +52,10 @@ object HttpsOptions {
     minVersion: SecureVersion = null,
     passphrase: String = null,
     path: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     port: Int | Double = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
@@ -60,6 +64,7 @@ object HttpsOptions {
     servername: String = null,
     session: Buffer = null,
     sessionIdContext: String = null,
+    sigalgs: String = null,
     socket: Socket = null,
     socketActiveTTL: Int | Double = null,
     timeout: Int | Double = null
@@ -94,6 +99,8 @@ object HttpsOptions {
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
@@ -102,6 +109,7 @@ object HttpsOptions {
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     if (socketActiveTTL != null) __obj.updateDynamic("socketActiveTTL")(socketActiveTTL.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

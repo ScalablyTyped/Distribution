@@ -11,7 +11,7 @@ trait ItemRemoveEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the tab model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Tab.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns removed tab header.
     */
   var removedTab: js.UndefOr[HTMLElement] = js.undefined
@@ -24,7 +24,7 @@ object ItemRemoveEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Tab.Model = null,
+    model: Model = null,
     removedTab: HTMLElement = null,
     `type`: String = null
   ): ItemRemoveEventArgs = {

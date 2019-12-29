@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object internalSymbolIteratorMod extends js.Object {
   @JSName("$$iterator")
-  val $$iterator: js.Symbol = js.native
+  val DollarDollariterator: js.Symbol = js.native
   val iterator: js.Symbol = js.native
   def getSymbolIterator(): js.Symbol = js.native
 }

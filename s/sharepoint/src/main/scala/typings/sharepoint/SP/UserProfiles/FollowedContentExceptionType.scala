@@ -1,15 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.followLimitReached
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.internalError
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.invalidQueryString
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.invalidSubtypeValue
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.itemAlreadyExists
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.itemDoesNotExist
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.unsupportedItemType
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.unsupportedSite
-import typings.sharepoint.SP.UserProfiles.FollowedContentExceptionType.untrustedSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.atEmotionWeakDashMemoize
 
-import typings.atEmotionWeakDashMemoize.atEmotionWeakDashMemoizeMod.UnaryFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

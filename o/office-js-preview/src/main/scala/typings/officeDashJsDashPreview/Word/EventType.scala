@@ -1,13 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.EventType.annotationAdded
-import typings.officeDashJsDashPreview.Word.EventType.annotationChanged
-import typings.officeDashJsDashPreview.Word.EventType.annotationDeleted
-import typings.officeDashJsDashPreview.Word.EventType.contentControlAdded
-import typings.officeDashJsDashPreview.Word.EventType.contentControlDataChanged
-import typings.officeDashJsDashPreview.Word.EventType.contentControlDeleted
-import typings.officeDashJsDashPreview.Word.EventType.contentControlSelectionChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

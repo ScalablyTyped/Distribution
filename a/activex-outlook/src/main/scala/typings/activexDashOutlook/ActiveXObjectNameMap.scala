@@ -25,73 +25,93 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var `DOCSITE.DocSiteControl`: _DocSiteControl
-  var `Outlook.Application`: Application
-  var `Outlook.OlkBusinessCardControl`: OlkBusinessCardControl
-  var `Outlook.OlkCategoryStrip`: OlkCategory
-  var `Outlook.OlkCheckBox`: OlkCheckBox
-  var `Outlook.OlkComboBox`: OlkComboBox
-  var `Outlook.OlkCommandButton`: OlkCommandButton
-  var `Outlook.OlkContactPhoto`: OlkContactPhoto
-  var `Outlook.OlkDateControl`: OlkDateControl
-  var `Outlook.OlkFrameHeader`: OlkFrameHeader
-  var `Outlook.OlkInfoBar`: OlkInfoBar
-  var `Outlook.OlkLabel`: OlkLabel
-  var `Outlook.OlkListBox`: OlkListBox
-  var `Outlook.OlkOptionButton`: OlkOptionButton
-  var `Outlook.OlkPageControl`: OlkPageControl
-  var `Outlook.OlkSenderPhoto`: OlkSenderPhoto
-  var `Outlook.OlkTextBox`: OlkTextBox
-  var `Outlook.OlkTimeControl`: OlkTimeControl
-  var `Outlook.OlkTimeZone`: OlkTimeZoneControl
-  var `RECIP.RecipCtl`: _RecipientControl
+  @JSName("DOCSITE.DocSiteControl")
+  var DOCSITEDotDocSiteControl: _DocSiteControl
+  @JSName("Outlook.Application")
+  var OutlookDotApplication: Application
+  @JSName("Outlook.OlkBusinessCardControl")
+  var OutlookDotOlkBusinessCardControl: OlkBusinessCardControl
+  @JSName("Outlook.OlkCategoryStrip")
+  var OutlookDotOlkCategoryStrip: OlkCategory
+  @JSName("Outlook.OlkCheckBox")
+  var OutlookDotOlkCheckBox: OlkCheckBox
+  @JSName("Outlook.OlkComboBox")
+  var OutlookDotOlkComboBox: OlkComboBox
+  @JSName("Outlook.OlkCommandButton")
+  var OutlookDotOlkCommandButton: OlkCommandButton
+  @JSName("Outlook.OlkContactPhoto")
+  var OutlookDotOlkContactPhoto: OlkContactPhoto
+  @JSName("Outlook.OlkDateControl")
+  var OutlookDotOlkDateControl: OlkDateControl
+  @JSName("Outlook.OlkFrameHeader")
+  var OutlookDotOlkFrameHeader: OlkFrameHeader
+  @JSName("Outlook.OlkInfoBar")
+  var OutlookDotOlkInfoBar: OlkInfoBar
+  @JSName("Outlook.OlkLabel")
+  var OutlookDotOlkLabel: OlkLabel
+  @JSName("Outlook.OlkListBox")
+  var OutlookDotOlkListBox: OlkListBox
+  @JSName("Outlook.OlkOptionButton")
+  var OutlookDotOlkOptionButton: OlkOptionButton
+  @JSName("Outlook.OlkPageControl")
+  var OutlookDotOlkPageControl: OlkPageControl
+  @JSName("Outlook.OlkSenderPhoto")
+  var OutlookDotOlkSenderPhoto: OlkSenderPhoto
+  @JSName("Outlook.OlkTextBox")
+  var OutlookDotOlkTextBox: OlkTextBox
+  @JSName("Outlook.OlkTimeControl")
+  var OutlookDotOlkTimeControl: OlkTimeControl
+  @JSName("Outlook.OlkTimeZone")
+  var OutlookDotOlkTimeZone: OlkTimeZoneControl
+  @JSName("RECIP.RecipCtl")
+  var RECIPDotRecipCtl: _RecipientControl
 }
 
 object ActiveXObjectNameMap {
   @scala.inline
   def apply(
-    `DOCSITE.DocSiteControl`: _DocSiteControl,
-    `Outlook.Application`: Application,
-    `Outlook.OlkBusinessCardControl`: OlkBusinessCardControl,
-    `Outlook.OlkCategoryStrip`: OlkCategory,
-    `Outlook.OlkCheckBox`: OlkCheckBox,
-    `Outlook.OlkComboBox`: OlkComboBox,
-    `Outlook.OlkCommandButton`: OlkCommandButton,
-    `Outlook.OlkContactPhoto`: OlkContactPhoto,
-    `Outlook.OlkDateControl`: OlkDateControl,
-    `Outlook.OlkFrameHeader`: OlkFrameHeader,
-    `Outlook.OlkInfoBar`: OlkInfoBar,
-    `Outlook.OlkLabel`: OlkLabel,
-    `Outlook.OlkListBox`: OlkListBox,
-    `Outlook.OlkOptionButton`: OlkOptionButton,
-    `Outlook.OlkPageControl`: OlkPageControl,
-    `Outlook.OlkSenderPhoto`: OlkSenderPhoto,
-    `Outlook.OlkTextBox`: OlkTextBox,
-    `Outlook.OlkTimeControl`: OlkTimeControl,
-    `Outlook.OlkTimeZone`: OlkTimeZoneControl,
-    `RECIP.RecipCtl`: _RecipientControl
+    DOCSITEDotDocSiteControl: _DocSiteControl,
+    OutlookDotApplication: Application,
+    OutlookDotOlkBusinessCardControl: OlkBusinessCardControl,
+    OutlookDotOlkCategoryStrip: OlkCategory,
+    OutlookDotOlkCheckBox: OlkCheckBox,
+    OutlookDotOlkComboBox: OlkComboBox,
+    OutlookDotOlkCommandButton: OlkCommandButton,
+    OutlookDotOlkContactPhoto: OlkContactPhoto,
+    OutlookDotOlkDateControl: OlkDateControl,
+    OutlookDotOlkFrameHeader: OlkFrameHeader,
+    OutlookDotOlkInfoBar: OlkInfoBar,
+    OutlookDotOlkLabel: OlkLabel,
+    OutlookDotOlkListBox: OlkListBox,
+    OutlookDotOlkOptionButton: OlkOptionButton,
+    OutlookDotOlkPageControl: OlkPageControl,
+    OutlookDotOlkSenderPhoto: OlkSenderPhoto,
+    OutlookDotOlkTextBox: OlkTextBox,
+    OutlookDotOlkTimeControl: OlkTimeControl,
+    OutlookDotOlkTimeZone: OlkTimeZoneControl,
+    RECIPDotRecipCtl: _RecipientControl
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DOCSITE.DocSiteControl")(`DOCSITE.DocSiteControl`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.Application")(`Outlook.Application`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkBusinessCardControl")(`Outlook.OlkBusinessCardControl`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkCategoryStrip")(`Outlook.OlkCategoryStrip`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkCheckBox")(`Outlook.OlkCheckBox`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkComboBox")(`Outlook.OlkComboBox`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkCommandButton")(`Outlook.OlkCommandButton`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkContactPhoto")(`Outlook.OlkContactPhoto`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkDateControl")(`Outlook.OlkDateControl`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkFrameHeader")(`Outlook.OlkFrameHeader`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkInfoBar")(`Outlook.OlkInfoBar`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkLabel")(`Outlook.OlkLabel`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkListBox")(`Outlook.OlkListBox`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkOptionButton")(`Outlook.OlkOptionButton`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkPageControl")(`Outlook.OlkPageControl`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkSenderPhoto")(`Outlook.OlkSenderPhoto`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkTextBox")(`Outlook.OlkTextBox`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkTimeControl")(`Outlook.OlkTimeControl`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Outlook.OlkTimeZone")(`Outlook.OlkTimeZone`.asInstanceOf[js.Any])
-    __obj.updateDynamic("RECIP.RecipCtl")(`RECIP.RecipCtl`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DOCSITE.DocSiteControl")(DOCSITEDotDocSiteControl.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.Application")(OutlookDotApplication.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkBusinessCardControl")(OutlookDotOlkBusinessCardControl.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkCategoryStrip")(OutlookDotOlkCategoryStrip.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkCheckBox")(OutlookDotOlkCheckBox.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkComboBox")(OutlookDotOlkComboBox.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkCommandButton")(OutlookDotOlkCommandButton.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkContactPhoto")(OutlookDotOlkContactPhoto.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkDateControl")(OutlookDotOlkDateControl.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkFrameHeader")(OutlookDotOlkFrameHeader.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkInfoBar")(OutlookDotOlkInfoBar.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkLabel")(OutlookDotOlkLabel.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkListBox")(OutlookDotOlkListBox.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkOptionButton")(OutlookDotOlkOptionButton.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkPageControl")(OutlookDotOlkPageControl.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkSenderPhoto")(OutlookDotOlkSenderPhoto.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkTextBox")(OutlookDotOlkTextBox.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkTimeControl")(OutlookDotOlkTimeControl.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkTimeZone")(OutlookDotOlkTimeZone.asInstanceOf[js.Any])
+    __obj.updateDynamic("RECIP.RecipCtl")(RECIPDotRecipCtl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

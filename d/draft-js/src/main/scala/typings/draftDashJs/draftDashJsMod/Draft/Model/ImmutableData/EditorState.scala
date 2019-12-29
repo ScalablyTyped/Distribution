@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof any ]: / * import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T * / any} */ trait EditorState extends js.Object {
   def getAllowUndo(): Boolean
   def getBlockTree(blockKey: String): List[_]
-  def getCurrentContent(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState
+  def getCurrentContent(): ContentState
   /**
     * Get the appropriate inline style for the editor state. If an
     * override is in place, use it. Otherwise, the current style is
@@ -31,10 +31,10 @@ import scala.scalajs.js.annotation._
     */
   def getInlineStyleOverride(): DraftInlineStyle
   def getLastChangeType(): EditorChangeType
-  def getNativelyRenderedContent(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState
-  def getRedoStack(): Stack[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState]
-  def getSelection(): typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState
-  def getUndoStack(): Stack[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState]
+  def getNativelyRenderedContent(): ContentState
+  def getRedoStack(): Stack[ContentState]
+  def getSelection(): SelectionState
+  def getUndoStack(): Stack[ContentState]
   def isInCompositionMode(): Boolean
   def isSelectionAtEndOfContent(): Boolean
   def isSelectionAtStartOfContent(): Boolean
@@ -47,16 +47,16 @@ object EditorState {
   def apply(
     getAllowUndo: () => Boolean,
     getBlockTree: String => List[_],
-    getCurrentContent: () => typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState,
+    getCurrentContent: () => ContentState,
     getCurrentInlineStyle: () => DraftInlineStyle,
     getDecorator: () => DraftDecoratorType,
     getDirectionMap: () => OrderedMap[_, _],
     getInlineStyleOverride: () => DraftInlineStyle,
     getLastChangeType: () => EditorChangeType,
-    getNativelyRenderedContent: () => typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState,
-    getRedoStack: () => Stack[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState],
-    getSelection: () => typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState,
-    getUndoStack: () => Stack[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState],
+    getNativelyRenderedContent: () => ContentState,
+    getRedoStack: () => Stack[ContentState],
+    getSelection: () => SelectionState,
+    getUndoStack: () => Stack[ContentState],
     isInCompositionMode: () => Boolean,
     isSelectionAtEndOfContent: () => Boolean,
     isSelectionAtStartOfContent: () => Boolean,

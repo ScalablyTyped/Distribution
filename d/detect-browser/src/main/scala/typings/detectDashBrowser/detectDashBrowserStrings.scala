@@ -29,7 +29,7 @@ object detectDashBrowserStrings {
   sealed trait `Mac OS` extends OperatingSystem
   
   @js.native
-  sealed trait `OS/2` extends OperatingSystem
+  sealed trait OSSlash2 extends OperatingSystem
   
   @js.native
   sealed trait `Open BSD` extends OperatingSystem
@@ -50,7 +50,7 @@ object detectDashBrowserStrings {
   sealed trait `Windows 2000` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 3DOT11` extends OperatingSystem
+  sealed trait `Windows 3Dot11` extends OperatingSystem
   
   @js.native
   sealed trait `Windows 7` extends OperatingSystem
@@ -59,7 +59,7 @@ object detectDashBrowserStrings {
   sealed trait `Windows 8` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 8DOT1` extends OperatingSystem
+  sealed trait `Windows 8Dot1` extends OperatingSystem
   
   @js.native
   sealed trait `Windows 95` extends OperatingSystem
@@ -190,7 +190,7 @@ object detectDashBrowserStrings {
   @scala.inline
   def `Mac OS`: `Mac OS` = "Mac OS".asInstanceOf[`Mac OS`]
   @scala.inline
-  def `OS/2`: `OS/2` = "OS/2".asInstanceOf[`OS/2`]
+  def OSSlash2: OSSlash2 = "OS/2".asInstanceOf[OSSlash2]
   @scala.inline
   def `Open BSD`: `Open BSD` = "Open BSD".asInstanceOf[`Open BSD`]
   @scala.inline
@@ -204,13 +204,13 @@ object detectDashBrowserStrings {
   @scala.inline
   def `Windows 2000`: `Windows 2000` = "Windows 2000".asInstanceOf[`Windows 2000`]
   @scala.inline
-  def `Windows 3DOT11`: `Windows 3DOT11` = "Windows 3.11".asInstanceOf[`Windows 3DOT11`]
+  def `Windows 3Dot11`: `Windows 3Dot11` = "Windows 3.11".asInstanceOf[`Windows 3Dot11`]
   @scala.inline
   def `Windows 7`: `Windows 7` = "Windows 7".asInstanceOf[`Windows 7`]
   @scala.inline
   def `Windows 8`: `Windows 8` = "Windows 8".asInstanceOf[`Windows 8`]
   @scala.inline
-  def `Windows 8DOT1`: `Windows 8DOT1` = "Windows 8.1".asInstanceOf[`Windows 8DOT1`]
+  def `Windows 8Dot1`: `Windows 8Dot1` = "Windows 8.1".asInstanceOf[`Windows 8Dot1`]
   @scala.inline
   def `Windows 95`: `Windows 95` = "Windows 95".asInstanceOf[`Windows 95`]
   @scala.inline

@@ -33,7 +33,7 @@ trait IProgressable extends IBase {
   /** [Method] Returns the value of state
   		* @returns String
   		*/
-  var getState: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getState: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Number) */
   var maxProgressInput: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -65,9 +65,9 @@ trait IProgressable extends IBase {
   /** [Method] Sets the value of state
   		* @param state String The new value.
   		*/
-  var setState: js.UndefOr[js.Function1[/* state */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setState: js.UndefOr[js.Function1[/* state */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var state: js.UndefOr[java.lang.String] = js.undefined
+  var state: js.UndefOr[String] = js.undefined
 }
 
 object IProgressable {
@@ -81,14 +81,14 @@ object IProgressable {
     config: js.Any = null,
     destroy: () => Unit = null,
     dynamic: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     getDynamic: () => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getMaxProgressInput: () => Double = null,
     getMaxProgressOutput: () => Double = null,
     getMinProgressInput: () => Double = null,
     getMinProgressOutput: () => Double = null,
-    getState: () => java.lang.String = null,
+    getState: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     maxProgressInput: Int | Double = null,
@@ -103,9 +103,9 @@ object IProgressable {
     setMaxProgressOutput: /* maxProgressOutput */ js.UndefOr[Double] => Unit = null,
     setMinProgressInput: /* minProgressInput */ js.UndefOr[Double] => Unit = null,
     setMinProgressOutput: /* minProgressOutput */ js.UndefOr[Double] => Unit = null,
-    setState: /* state */ js.UndefOr[java.lang.String] => Unit = null,
+    setState: /* state */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    state: java.lang.String = null,
+    state: String = null,
     statics: js.Any = null,
     uses: Array = null
   ): IProgressable = {

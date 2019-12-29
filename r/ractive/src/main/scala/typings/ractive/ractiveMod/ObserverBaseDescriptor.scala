@@ -20,6 +20,6 @@ trait ObserverBaseDescriptor[T /* <: Ractive[T] */]
   /**
   	 * The observer callback.
   	 */
-  def handler(`this`: T, value: js.Any, old: js.Any, keypath: String, parts: String*): Unit | js.Promise[_] = js.native
+  def handler(value: js.Any, old: js.Any, keypath: String, parts: String*): Unit | js.Promise[_] = js.native
 }
 

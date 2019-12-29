@@ -1,12 +1,12 @@
 package typings.atElasticElasticsearch.apiRequestParamsMod
 
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`d (Days)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`h (Hours)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`m (Minutes)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`micros (Microseconds)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`ms (Milliseconds)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`nanos (Nanoseconds)`
-import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`s (Seconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`d LeftparenthesisDaysRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`h LeftparenthesisHoursRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`m LeftparenthesisMinutesRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`micros LeftparenthesisMicrosecondsRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`ms LeftparenthesisMillisecondsRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`nanos LeftparenthesisNanosecondsRightparenthesis`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`s LeftparenthesisSecondsRightparenthesis`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait CatHealth extends Generic {
   var help: js.UndefOr[Boolean] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
   var time: js.UndefOr[
-    (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`)
+    (`d LeftparenthesisDaysRightparenthesis`) | (`h LeftparenthesisHoursRightparenthesis`) | (`m LeftparenthesisMinutesRightparenthesis`) | (`s LeftparenthesisSecondsRightparenthesis`) | (`ms LeftparenthesisMillisecondsRightparenthesis`) | (`micros LeftparenthesisMicrosecondsRightparenthesis`) | (`nanos LeftparenthesisNanosecondsRightparenthesis`)
   ] = js.undefined
   var ts: js.UndefOr[Boolean] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
@@ -37,7 +37,7 @@ object CatHealth {
     pretty: js.UndefOr[Boolean] = js.undefined,
     s: String | js.Array[String] = null,
     source: String = null,
-    time: (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`) = null,
+    time: (`d LeftparenthesisDaysRightparenthesis`) | (`h LeftparenthesisHoursRightparenthesis`) | (`m LeftparenthesisMinutesRightparenthesis`) | (`s LeftparenthesisSecondsRightparenthesis`) | (`ms LeftparenthesisMillisecondsRightparenthesis`) | (`micros LeftparenthesisMicrosecondsRightparenthesis`) | (`nanos LeftparenthesisNanosecondsRightparenthesis`) = null,
     ts: js.UndefOr[Boolean] = js.undefined,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatHealth = {

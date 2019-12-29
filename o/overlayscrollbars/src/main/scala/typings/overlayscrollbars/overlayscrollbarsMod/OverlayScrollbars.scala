@@ -16,11 +16,11 @@ trait OverlayScrollbars extends js.Object {
   def getState(): State = js.native
   def getState(stateProperty: String): js.Any = js.native
   def options(): Options = js.native
-  def options(optionName: String): Unit = js.native
+  def options(optionName: String): js.Any = js.native
   def options(optionName: String, optionValue: js.Object): Unit = js.native
   def options(options: Options): Unit = js.native
   @JSName("options")
-  def options_Any(optionName: String): js.Any = js.native
+  def options_Unit(optionName: String): Unit = js.native
   def removeExt(extensionName: String): Boolean = js.native
   def scroll(): ScrollInfo = js.native
   def scroll(coordinates: Coordinates): Unit = js.native

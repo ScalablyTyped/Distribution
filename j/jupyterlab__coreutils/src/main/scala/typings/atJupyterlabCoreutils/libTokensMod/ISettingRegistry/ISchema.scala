@@ -19,19 +19,23 @@ trait ISchema extends IProperty {
     * from the registry. For example, the setting editor does not display a
     * plugin's settings if it is set to `true`.
     */
-  var `jupyter.lab.setting-deprecated`: js.UndefOr[Boolean] = js.undefined
+  @JSName("jupyter.lab.setting-deprecated")
+  var `jupyterDotlabDotsetting-deprecated`: js.UndefOr[Boolean] = js.undefined
   /**
     * The JupyterLab icon class hint.
     */
-  var `jupyter.lab.setting-icon-class`: js.UndefOr[String] = js.undefined
+  @JSName("jupyter.lab.setting-icon-class")
+  var `jupyterDotlabDotsetting-icon-class`: js.UndefOr[String] = js.undefined
   /**
     * The JupyterLab icon label hint.
     */
-  var `jupyter.lab.setting-icon-label`: js.UndefOr[String] = js.undefined
+  @JSName("jupyter.lab.setting-icon-label")
+  var `jupyterDotlabDotsetting-icon-label`: js.UndefOr[String] = js.undefined
   /**
     * The JupyterLab shortcuts that are creaed by a plugin's schema.
     */
-  var `jupyter.lab.shortcuts`: js.UndefOr[js.Array[IShortcut]] = js.undefined
+  @JSName("jupyter.lab.shortcuts")
+  var jupyterDotlabDotshortcuts: js.UndefOr[js.Array[IShortcut]] = js.undefined
   /**
     * A flag that indicates plugin should be transformed before being used by
     * the setting registry.
@@ -44,7 +48,8 @@ trait ISchema extends IProperty {
     * is registered in time, calls to `load()` a plugin will eventually time
     * out and reject.
     */
-  var `jupyter.lab.transform`: js.UndefOr[Boolean] = js.undefined
+  @JSName("jupyter.lab.transform")
+  var jupyterDotlabDottransform: js.UndefOr[Boolean] = js.undefined
   /**
     * The root schema is always an object.
     */
@@ -58,11 +63,11 @@ object ISchema {
     `type`: `object`,
     default: js.Any = null,
     description: String = null,
-    `jupyter.lab.setting-deprecated`: js.UndefOr[Boolean] = js.undefined,
-    `jupyter.lab.setting-icon-class`: String = null,
-    `jupyter.lab.setting-icon-label`: String = null,
-    `jupyter.lab.shortcuts`: js.Array[IShortcut] = null,
-    `jupyter.lab.transform`: js.UndefOr[Boolean] = js.undefined,
+    `jupyterDotlabDotsetting-deprecated`: js.UndefOr[Boolean] = js.undefined,
+    `jupyterDotlabDotsetting-icon-class`: String = null,
+    `jupyterDotlabDotsetting-icon-label`: String = null,
+    jupyterDotlabDotshortcuts: js.Array[IShortcut] = null,
+    jupyterDotlabDottransform: js.UndefOr[Boolean] = js.undefined,
     properties: StringDictionary[IProperty] = null,
     title: String = null
   ): ISchema = {
@@ -70,11 +75,11 @@ object ISchema {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(`jupyter.lab.setting-deprecated`)) __obj.updateDynamic("jupyter.lab.setting-deprecated")(`jupyter.lab.setting-deprecated`.asInstanceOf[js.Any])
-    if (`jupyter.lab.setting-icon-class` != null) __obj.updateDynamic("jupyter.lab.setting-icon-class")(`jupyter.lab.setting-icon-class`.asInstanceOf[js.Any])
-    if (`jupyter.lab.setting-icon-label` != null) __obj.updateDynamic("jupyter.lab.setting-icon-label")(`jupyter.lab.setting-icon-label`.asInstanceOf[js.Any])
-    if (`jupyter.lab.shortcuts` != null) __obj.updateDynamic("jupyter.lab.shortcuts")(`jupyter.lab.shortcuts`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`jupyter.lab.transform`)) __obj.updateDynamic("jupyter.lab.transform")(`jupyter.lab.transform`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`jupyterDotlabDotsetting-deprecated`)) __obj.updateDynamic("jupyter.lab.setting-deprecated")(`jupyterDotlabDotsetting-deprecated`.asInstanceOf[js.Any])
+    if (`jupyterDotlabDotsetting-icon-class` != null) __obj.updateDynamic("jupyter.lab.setting-icon-class")(`jupyterDotlabDotsetting-icon-class`.asInstanceOf[js.Any])
+    if (`jupyterDotlabDotsetting-icon-label` != null) __obj.updateDynamic("jupyter.lab.setting-icon-label")(`jupyterDotlabDotsetting-icon-label`.asInstanceOf[js.Any])
+    if (jupyterDotlabDotshortcuts != null) __obj.updateDynamic("jupyter.lab.shortcuts")(jupyterDotlabDotshortcuts.asInstanceOf[js.Any])
+    if (!js.isUndefined(jupyterDotlabDottransform)) __obj.updateDynamic("jupyter.lab.transform")(jupyterDotlabDottransform.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchema]

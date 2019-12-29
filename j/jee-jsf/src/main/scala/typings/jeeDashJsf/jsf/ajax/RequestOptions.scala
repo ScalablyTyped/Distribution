@@ -12,7 +12,8 @@ trait RequestOptions extends js.Object {
   /**
     * client behavior event name from the request parameter
     */
-  var `javax.faces.behavior.event`: js.UndefOr[js.Any] = js.undefined
+  @JSName("javax.faces.behavior.event")
+  var javaxDotfacesDotbehaviorDotevent: js.UndefOr[js.Any] = js.undefined
   /**
     * function to callback for error
     * @param callback the callback function
@@ -37,7 +38,7 @@ object RequestOptions {
   @scala.inline
   def apply(
     execute: String = null,
-    `javax.faces.behavior.event`: js.Any = null,
+    javaxDotfacesDotbehaviorDotevent: js.Any = null,
     onerror: /* callback */ js.Function1[/* data */ RequestData, Unit] => Unit = null,
     onevent: /* callback */ js.Function1[/* data */ RequestData, Unit] => Unit = null,
     params: js.Any = null,
@@ -45,7 +46,7 @@ object RequestOptions {
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
     if (execute != null) __obj.updateDynamic("execute")(execute.asInstanceOf[js.Any])
-    if (`javax.faces.behavior.event` != null) __obj.updateDynamic("javax.faces.behavior.event")(`javax.faces.behavior.event`.asInstanceOf[js.Any])
+    if (javaxDotfacesDotbehaviorDotevent != null) __obj.updateDynamic("javax.faces.behavior.event")(javaxDotfacesDotbehaviorDotevent.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (onevent != null) __obj.updateDynamic("onevent")(js.Any.fromFunction1(onevent))
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])

@@ -19,14 +19,13 @@ object _Global_ extends js.Object {
     @JSName("generate")
     var generate_Original: Fn_Node = js.native
     def generate(node: Node): String = js.native
-    def generate(node: Node, options: Options with Anon_Output): Stream = js.native
+    def generate(node: Node, options: Options): String = js.native
     @JSName("generate")
-    def generate_String(node: Node, options: Options): String = js.native
+    def generate_Stream(node: Node, options: Options with Anon_Output): Stream = js.native
   }
   
   @js.native
-  object astring
-    extends TopLevel[typings.astring.astringMod._Global_.astring]
+  object astring extends TopLevel[astring]
   
 }
 

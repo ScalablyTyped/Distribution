@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait IStatusProxy extends IComponent {
   /** [Config Option] (String) */
-  var dropAllowed: js.UndefOr[java.lang.String] = js.undefined
+  var dropAllowed: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dropNotAllowed: js.UndefOr[java.lang.String] = js.undefined
+  var dropNotAllowed: js.UndefOr[String] = js.undefined
   /** [Method] Returns the ghost element
   		* @returns Ext.Element el
   		*/
@@ -36,7 +36,7 @@ trait IStatusProxy extends IComponent {
   /** [Method] Updates the proxy s visual element to indicate the status of whether or not drop is allowed over the current target e
   		* @param cssClass String The css class for the new drop status indicator image
   		*/
-  var setStatus: js.UndefOr[js.Function1[/* cssClass */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setStatus: js.UndefOr[js.Function1[/* cssClass */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Stops the repair animation if it s currently running */
   var stop: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Force the Layer to sync its shadow and shim positions to the element */
@@ -52,12 +52,12 @@ object IStatusProxy {
   @scala.inline
   def apply(
     IComponent: IComponent = null,
-    dropAllowed: java.lang.String = null,
-    dropNotAllowed: java.lang.String = null,
+    dropAllowed: String = null,
+    dropNotAllowed: String = null,
     getGhost: () => IElement = null,
     repair: (/* xy */ js.UndefOr[Array], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     reset: /* clearGhost */ js.UndefOr[Boolean] => Unit = null,
-    setStatus: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
+    setStatus: /* cssClass */ js.UndefOr[String] => Unit = null,
     stop: () => Unit = null,
     sync: () => Unit = null,
     update: /* html */ js.UndefOr[js.Any] => Unit = null

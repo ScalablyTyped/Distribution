@@ -1,11 +1,6 @@
 package typings.atStorybookApi.distModulesAddonsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookApi.distModulesAddonsMod.types.NOTES_ELEMENT
-import typings.atStorybookApi.distModulesAddonsMod.types.PANEL
-import typings.atStorybookApi.distModulesAddonsMod.types.PREVIEW
-import typings.atStorybookApi.distModulesAddonsMod.types.TAB
-import typings.atStorybookApi.distModulesAddonsMod.types.TOOL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

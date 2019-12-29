@@ -56,8 +56,8 @@ class User () extends js.Object {
     * @param primaryKey primary key used for validation
     * @returns
     */
-  def update(user: typings.openpgp.openpgpMod.key.User, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def update(user: typings.openpgp.openpgpMod.key.User, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(user: User, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(user: User, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
   /**
     * Verify User. Checks for existence of self signatures, revocation signatures

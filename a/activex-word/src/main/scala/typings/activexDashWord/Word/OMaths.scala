@@ -11,7 +11,8 @@ class OMaths protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.OMaths_typekey`: OMaths = js.native
+  @JSName("Word.OMaths_typekey")
+  var WordDotOMaths_typekey: OMaths = js.native
   def Add(Range: Range): Range = js.native
   def BuildUp(): Unit = js.native
   def Item(Index: Double): OMath = js.native

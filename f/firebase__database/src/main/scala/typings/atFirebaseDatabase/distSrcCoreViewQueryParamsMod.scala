@@ -3,7 +3,6 @@ package typings.atFirebaseDatabase
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseDatabase.distSrcCoreSnapIndexesIndexMod.Index
 import typings.atFirebaseDatabase.distSrcCoreViewFilterNodeFilterMod.NodeFilter
-import typings.atFirebaseDatabase.distSrcCoreViewQueryParamsMod.QueryParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

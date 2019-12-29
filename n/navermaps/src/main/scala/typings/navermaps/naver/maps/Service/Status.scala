@@ -1,8 +1,6 @@
 package typings.navermaps.naver.maps.Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.Service.Status.ERROR
-import typings.navermaps.naver.maps.Service.Status.OK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

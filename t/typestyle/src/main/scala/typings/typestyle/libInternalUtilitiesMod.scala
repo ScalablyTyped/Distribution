@@ -3,7 +3,7 @@ package typings.typestyle
 import org.scalablytyped.runtime.StringDictionary
 import typings.typestyle.libTypesMod.MediaQuery
 import typings.typestyle.libTypesMod.NestedCSSProperties
-import typings.typestyle.typestyleNumbers.`false`
+import typings.typestyle.typestyleBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

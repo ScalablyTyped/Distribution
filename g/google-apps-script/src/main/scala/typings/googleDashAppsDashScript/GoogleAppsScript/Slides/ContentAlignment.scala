@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ContentAlignment.BOTTOM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ContentAlignment.MIDDLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ContentAlignment.TOP
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ContentAlignment.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

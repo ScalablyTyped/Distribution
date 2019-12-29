@@ -1694,9 +1694,9 @@ object d3 extends js.Object {
   def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[js.Array[Datum] | Null]]): HierarchyNode[Datum] = js.native
   def histogram(): HistogramGeneratorNumber[Double, Double] = js.native
   @JSName("histogram")
-  def `histogram_DatumValue_UnionDatejs.undefinedNothing_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
+  def `histogram_DatumValue_UnionDatejs.undefined_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
   @JSName("histogram")
-  def `histogram_DatumValue_UnionDoublejs.undefinedNothing`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
+  def `histogram_DatumValue_UnionDoublejs.undefined`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
   def hsl(color: ColorCommonInstance): HSLColor = js.native
   /**
     * Converts the provided color instance and returns an HSL color.

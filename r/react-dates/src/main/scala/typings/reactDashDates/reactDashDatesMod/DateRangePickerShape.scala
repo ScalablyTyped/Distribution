@@ -41,6 +41,8 @@ trait DateRangePickerShape extends js.Object {
   var isRTL: js.UndefOr[Boolean] = js.native
   var keepFocusOnInput: js.UndefOr[Boolean] = js.native
   var keepOpenOnDateSelect: js.UndefOr[Boolean] = js.native
+  var maxDate: js.UndefOr[momentObj] = js.native
+  var minDate: js.UndefOr[momentObj] = js.native
   var minimumNights: js.UndefOr[Double] = js.native
   var monthFormat: js.UndefOr[String] = js.native
   var navNext: js.UndefOr[String | Element] = js.native

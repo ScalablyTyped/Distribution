@@ -1,6 +1,5 @@
 package typings.dndDashCore
 
-import typings.dndDashCore.libHandlerRegistryImplMod.HandlerRegistryImpl
 import typings.dndDashCore.libInterfacesMod.DragSource
 import typings.dndDashCore.libInterfacesMod.DropTarget
 import typings.dndDashCore.libInterfacesMod.HandlerRegistry

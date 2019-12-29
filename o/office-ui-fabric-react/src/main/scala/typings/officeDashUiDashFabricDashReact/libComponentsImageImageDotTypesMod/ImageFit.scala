@@ -1,12 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.center
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.centerContain
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.centerCover
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.contain
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.cover
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -23,7 +23,16 @@ object reactDashFloaterStrings {
   sealed trait center extends Placement
   
   @js.native
+  sealed trait click extends js.Object
+  
+  @js.native
   sealed trait close extends Action
+  
+  @js.native
+  sealed trait floater extends js.Object
+  
+  @js.native
+  sealed trait hover extends js.Object
   
   @js.native
   sealed trait left extends Placement
@@ -55,6 +64,9 @@ object reactDashFloaterStrings {
   @js.native
   sealed trait `top-start` extends Placement
   
+  @js.native
+  sealed trait wrapper extends js.Object
+  
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -66,7 +78,13 @@ object reactDashFloaterStrings {
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
+  def click: click = "click".asInstanceOf[click]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
+  def floater: floater = "floater".asInstanceOf[floater]
+  @scala.inline
+  def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -87,5 +105,7 @@ object reactDashFloaterStrings {
   def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
   @scala.inline
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
+  @scala.inline
+  def wrapper: wrapper = "wrapper".asInstanceOf[wrapper]
 }
 

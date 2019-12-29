@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Graphics.Display
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Display.DisplayOrientations.landscape
-import typings.winrt.Windows.Graphics.Display.DisplayOrientations.landscapeFlipped
-import typings.winrt.Windows.Graphics.Display.DisplayOrientations.none
-import typings.winrt.Windows.Graphics.Display.DisplayOrientations.portrait
-import typings.winrt.Windows.Graphics.Display.DisplayOrientations.portraitFlipped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

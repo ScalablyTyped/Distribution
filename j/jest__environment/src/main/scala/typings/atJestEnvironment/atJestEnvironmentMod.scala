@@ -1,19 +1,13 @@
 package typings.atJestEnvironment
 
-import typings.atJestEnvironment.atJestEnvironmentMod.EnvironmentContext
-import typings.atJestEnvironment.atJestEnvironmentMod.Jest
-import typings.atJestEnvironment.atJestEnvironmentMod.JestMockFn
-import typings.atJestEnvironment.atJestEnvironmentMod.JestMockSpyOn
-import typings.atJestEnvironment.atJestEnvironmentMod.Module
 import typings.atJestFakeDashTimers.atJestFakeDashTimersMod.JestFakeTimers
 import typings.atJestTypes.buildCircusMod.Event
 import typings.atJestTypes.buildCircusMod.State
 import typings.atJestTypes.buildConfigMod.ProjectConfig
 import typings.atJestTypes.buildGlobalMod.Global
 import typings.jestDashMock.jestDashMockMod.ModuleMocker
+import typings.node.NodeJS.Require
 import typings.node.NodeModule
-import typings.node.NodeRequire
-import typings.node.NodeRequireFunction
 import typings.node.vmMod.Script
 import typings.std.Partial
 import typings.std.Record
@@ -266,7 +260,7 @@ object atJestEnvironmentMod extends js.Object {
   }
   
   @js.native
-  trait LocalModuleRequire extends NodeRequire {
+  trait LocalModuleRequire extends Require {
     def requireActual(moduleName: String): js.Any = js.native
     def requireMock(moduleName: String): js.Any = js.native
   }
@@ -278,13 +272,13 @@ object atJestEnvironmentMod extends js.Object {
   type ModuleWrapper = js.Function8[
     /* module */ Module, 
     /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ /* exports */ js.Any, 
-    /* require */ NodeRequireFunction with (js.Function1[/* id */ String, _]), 
+    /* require */ Require with (js.Function1[/* id */ String, _]), 
     /* __dirname */ String, 
     /* __filename */ String, 
     /* global */ Global, 
     /* jest */ Jest, 
     js.UndefOr[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 54 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any
     ], 
     js.Any
   ]

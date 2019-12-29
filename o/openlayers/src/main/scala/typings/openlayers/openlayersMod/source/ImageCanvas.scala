@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.ImageCanvas")
 @js.native
-class ImageCanvas protected ()
-  extends typings.openlayers.openlayersMod.source.Image {
+class ImageCanvas protected () extends Image {
   /**
     * @classdesc
     * Base class for image sources where a canvas element is the image.

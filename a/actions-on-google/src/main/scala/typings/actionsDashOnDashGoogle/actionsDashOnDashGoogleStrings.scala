@@ -938,91 +938,91 @@ object actionsDashOnDashGoogleStrings {
   sealed trait ackNeeded extends challengeType
   
   @js.native
-  sealed trait actionDOTdevicesDOTDISCONNECT extends SmartHomeV1Intents
+  sealed trait actionDotdevicesDotDISCONNECT extends SmartHomeV1Intents
   
   @js.native
-  sealed trait actionDOTdevicesDOTEXECUTE extends SmartHomeV1Intents
+  sealed trait actionDotdevicesDotEXECUTE extends SmartHomeV1Intents
   
   @js.native
-  sealed trait actionDOTdevicesDOTQUERY extends SmartHomeV1Intents
+  sealed trait actionDotdevicesDotQUERY extends SmartHomeV1Intents
   
   @js.native
-  sealed trait actionDOTdevicesDOTSYNC extends SmartHomeV1Intents
+  sealed trait actionDotdevicesDotSYNC extends SmartHomeV1Intents
   
   @js.native
-  sealed trait actionsDOTcapabilityDOTAUDIO_OUTPUT extends SurfaceCapability
+  sealed trait actionsDotcapabilityDotAUDIO_OUTPUT extends SurfaceCapability
   
   @js.native
-  sealed trait actionsDOTcapabilityDOTINTERACTIVE_CANVAS extends SurfaceCapability
+  sealed trait actionsDotcapabilityDotINTERACTIVE_CANVAS extends SurfaceCapability
   
   @js.native
-  sealed trait actionsDOTcapabilityDOTMEDIA_RESPONSE_AUDIO extends SurfaceCapability
+  sealed trait actionsDotcapabilityDotMEDIA_RESPONSE_AUDIO extends SurfaceCapability
   
   @js.native
-  sealed trait actionsDOTcapabilityDOTSCREEN_OUTPUT extends SurfaceCapability
+  sealed trait actionsDotcapabilityDotSCREEN_OUTPUT extends SurfaceCapability
   
   @js.native
-  sealed trait actionsDOTcapabilityDOTWEB_BROWSER extends SurfaceCapability
+  sealed trait actionsDotcapabilityDotWEB_BROWSER extends SurfaceCapability
   
   @js.native
-  sealed trait actionsDOTintentDOTCANCEL extends Intent
+  sealed trait actionsDotintentDotCANCEL extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTCOMPLETE_PURCHASE extends Intent
+  sealed trait actionsDotintentDotCOMPLETE_PURCHASE extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTCONFIGURE_UPDATES extends Intent
+  sealed trait actionsDotintentDotCONFIGURE_UPDATES extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTCONFIRMATION extends Intent
+  sealed trait actionsDotintentDotCONFIRMATION extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTDATETIME extends Intent
+  sealed trait actionsDotintentDotDATETIME extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTDELIVERY_ADDRESS extends Intent
+  sealed trait actionsDotintentDotDELIVERY_ADDRESS extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTDIGITAL_PURCHASE_CHECK extends Intent
+  sealed trait actionsDotintentDotDIGITAL_PURCHASE_CHECK extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTLINK extends Intent
+  sealed trait actionsDotintentDotLINK extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTMAIN extends Intent
+  sealed trait actionsDotintentDotMAIN extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTMEDIA_STATUS extends Intent
+  sealed trait actionsDotintentDotMEDIA_STATUS extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTNEW_SURFACE extends Intent
+  sealed trait actionsDotintentDotNEW_SURFACE extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTNO_INPUT extends Intent
+  sealed trait actionsDotintentDotNO_INPUT extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTOPTION extends Intent
+  sealed trait actionsDotintentDotOPTION extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTPERMISSION extends Intent
+  sealed trait actionsDotintentDotPERMISSION extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTPLACE extends Intent
+  sealed trait actionsDotintentDotPLACE extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTREGISTER_UPDATE extends Intent
+  sealed trait actionsDotintentDotREGISTER_UPDATE extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTSIGN_IN extends Intent
+  sealed trait actionsDotintentDotSIGN_IN extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTTEXT extends Intent
+  sealed trait actionsDotintentDotTEXT extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTTRANSACTION_DECISION extends Intent
+  sealed trait actionsDotintentDotTRANSACTION_DECISION extends Intent
   
   @js.native
-  sealed trait actionsDOTintentDOTTRANSACTION_REQUIREMENTS_CHECK extends Intent
+  sealed trait actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK extends Intent
   
   @js.native
   sealed trait basic_card extends js.Object
@@ -1079,58 +1079,58 @@ object actionsDashOnDashGoogleStrings {
   sealed trait telegram_ extends js.Object
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTDigitalPurchaseCheckSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionDecisionValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionRequirementsCheckSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTConfirmationValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDateTimeValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDeliveryAddressValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpecDOTLinkDialogSpec` extends DialogSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec extends DialogSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTNewSurfaceValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTOptionValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPermissionValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpecDOTPlaceDialogSpec` extends DialogSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec extends DialogSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTRegisterUpdateValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTSignInValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionDecisionValueSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec extends InputValueSpec
   
   @js.native
-  sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec` extends InputValueSpec
+  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec extends InputValueSpec
   
   @js.native
   sealed trait viber_ extends js.Object
@@ -1584,63 +1584,63 @@ object actionsDashOnDashGoogleStrings {
   @scala.inline
   def ackNeeded: ackNeeded = "ackNeeded".asInstanceOf[ackNeeded]
   @scala.inline
-  def actionDOTdevicesDOTDISCONNECT: actionDOTdevicesDOTDISCONNECT = "action.devices.DISCONNECT".asInstanceOf[actionDOTdevicesDOTDISCONNECT]
+  def actionDotdevicesDotDISCONNECT: actionDotdevicesDotDISCONNECT = "action.devices.DISCONNECT".asInstanceOf[actionDotdevicesDotDISCONNECT]
   @scala.inline
-  def actionDOTdevicesDOTEXECUTE: actionDOTdevicesDOTEXECUTE = "action.devices.EXECUTE".asInstanceOf[actionDOTdevicesDOTEXECUTE]
+  def actionDotdevicesDotEXECUTE: actionDotdevicesDotEXECUTE = "action.devices.EXECUTE".asInstanceOf[actionDotdevicesDotEXECUTE]
   @scala.inline
-  def actionDOTdevicesDOTQUERY: actionDOTdevicesDOTQUERY = "action.devices.QUERY".asInstanceOf[actionDOTdevicesDOTQUERY]
+  def actionDotdevicesDotQUERY: actionDotdevicesDotQUERY = "action.devices.QUERY".asInstanceOf[actionDotdevicesDotQUERY]
   @scala.inline
-  def actionDOTdevicesDOTSYNC: actionDOTdevicesDOTSYNC = "action.devices.SYNC".asInstanceOf[actionDOTdevicesDOTSYNC]
+  def actionDotdevicesDotSYNC: actionDotdevicesDotSYNC = "action.devices.SYNC".asInstanceOf[actionDotdevicesDotSYNC]
   @scala.inline
-  def actionsDOTcapabilityDOTAUDIO_OUTPUT: actionsDOTcapabilityDOTAUDIO_OUTPUT = "actions.capability.AUDIO_OUTPUT".asInstanceOf[actionsDOTcapabilityDOTAUDIO_OUTPUT]
+  def actionsDotcapabilityDotAUDIO_OUTPUT: actionsDotcapabilityDotAUDIO_OUTPUT = "actions.capability.AUDIO_OUTPUT".asInstanceOf[actionsDotcapabilityDotAUDIO_OUTPUT]
   @scala.inline
-  def actionsDOTcapabilityDOTINTERACTIVE_CANVAS: actionsDOTcapabilityDOTINTERACTIVE_CANVAS = "actions.capability.INTERACTIVE_CANVAS".asInstanceOf[actionsDOTcapabilityDOTINTERACTIVE_CANVAS]
+  def actionsDotcapabilityDotINTERACTIVE_CANVAS: actionsDotcapabilityDotINTERACTIVE_CANVAS = "actions.capability.INTERACTIVE_CANVAS".asInstanceOf[actionsDotcapabilityDotINTERACTIVE_CANVAS]
   @scala.inline
-  def actionsDOTcapabilityDOTMEDIA_RESPONSE_AUDIO: actionsDOTcapabilityDOTMEDIA_RESPONSE_AUDIO = "actions.capability.MEDIA_RESPONSE_AUDIO".asInstanceOf[actionsDOTcapabilityDOTMEDIA_RESPONSE_AUDIO]
+  def actionsDotcapabilityDotMEDIA_RESPONSE_AUDIO: actionsDotcapabilityDotMEDIA_RESPONSE_AUDIO = "actions.capability.MEDIA_RESPONSE_AUDIO".asInstanceOf[actionsDotcapabilityDotMEDIA_RESPONSE_AUDIO]
   @scala.inline
-  def actionsDOTcapabilityDOTSCREEN_OUTPUT: actionsDOTcapabilityDOTSCREEN_OUTPUT = "actions.capability.SCREEN_OUTPUT".asInstanceOf[actionsDOTcapabilityDOTSCREEN_OUTPUT]
+  def actionsDotcapabilityDotSCREEN_OUTPUT: actionsDotcapabilityDotSCREEN_OUTPUT = "actions.capability.SCREEN_OUTPUT".asInstanceOf[actionsDotcapabilityDotSCREEN_OUTPUT]
   @scala.inline
-  def actionsDOTcapabilityDOTWEB_BROWSER: actionsDOTcapabilityDOTWEB_BROWSER = "actions.capability.WEB_BROWSER".asInstanceOf[actionsDOTcapabilityDOTWEB_BROWSER]
+  def actionsDotcapabilityDotWEB_BROWSER: actionsDotcapabilityDotWEB_BROWSER = "actions.capability.WEB_BROWSER".asInstanceOf[actionsDotcapabilityDotWEB_BROWSER]
   @scala.inline
-  def actionsDOTintentDOTCANCEL: actionsDOTintentDOTCANCEL = "actions.intent.CANCEL".asInstanceOf[actionsDOTintentDOTCANCEL]
+  def actionsDotintentDotCANCEL: actionsDotintentDotCANCEL = "actions.intent.CANCEL".asInstanceOf[actionsDotintentDotCANCEL]
   @scala.inline
-  def actionsDOTintentDOTCOMPLETE_PURCHASE: actionsDOTintentDOTCOMPLETE_PURCHASE = "actions.intent.COMPLETE_PURCHASE".asInstanceOf[actionsDOTintentDOTCOMPLETE_PURCHASE]
+  def actionsDotintentDotCOMPLETE_PURCHASE: actionsDotintentDotCOMPLETE_PURCHASE = "actions.intent.COMPLETE_PURCHASE".asInstanceOf[actionsDotintentDotCOMPLETE_PURCHASE]
   @scala.inline
-  def actionsDOTintentDOTCONFIGURE_UPDATES: actionsDOTintentDOTCONFIGURE_UPDATES = "actions.intent.CONFIGURE_UPDATES".asInstanceOf[actionsDOTintentDOTCONFIGURE_UPDATES]
+  def actionsDotintentDotCONFIGURE_UPDATES: actionsDotintentDotCONFIGURE_UPDATES = "actions.intent.CONFIGURE_UPDATES".asInstanceOf[actionsDotintentDotCONFIGURE_UPDATES]
   @scala.inline
-  def actionsDOTintentDOTCONFIRMATION: actionsDOTintentDOTCONFIRMATION = "actions.intent.CONFIRMATION".asInstanceOf[actionsDOTintentDOTCONFIRMATION]
+  def actionsDotintentDotCONFIRMATION: actionsDotintentDotCONFIRMATION = "actions.intent.CONFIRMATION".asInstanceOf[actionsDotintentDotCONFIRMATION]
   @scala.inline
-  def actionsDOTintentDOTDATETIME: actionsDOTintentDOTDATETIME = "actions.intent.DATETIME".asInstanceOf[actionsDOTintentDOTDATETIME]
+  def actionsDotintentDotDATETIME: actionsDotintentDotDATETIME = "actions.intent.DATETIME".asInstanceOf[actionsDotintentDotDATETIME]
   @scala.inline
-  def actionsDOTintentDOTDELIVERY_ADDRESS: actionsDOTintentDOTDELIVERY_ADDRESS = "actions.intent.DELIVERY_ADDRESS".asInstanceOf[actionsDOTintentDOTDELIVERY_ADDRESS]
+  def actionsDotintentDotDELIVERY_ADDRESS: actionsDotintentDotDELIVERY_ADDRESS = "actions.intent.DELIVERY_ADDRESS".asInstanceOf[actionsDotintentDotDELIVERY_ADDRESS]
   @scala.inline
-  def actionsDOTintentDOTDIGITAL_PURCHASE_CHECK: actionsDOTintentDOTDIGITAL_PURCHASE_CHECK = "actions.intent.DIGITAL_PURCHASE_CHECK".asInstanceOf[actionsDOTintentDOTDIGITAL_PURCHASE_CHECK]
+  def actionsDotintentDotDIGITAL_PURCHASE_CHECK: actionsDotintentDotDIGITAL_PURCHASE_CHECK = "actions.intent.DIGITAL_PURCHASE_CHECK".asInstanceOf[actionsDotintentDotDIGITAL_PURCHASE_CHECK]
   @scala.inline
-  def actionsDOTintentDOTLINK: actionsDOTintentDOTLINK = "actions.intent.LINK".asInstanceOf[actionsDOTintentDOTLINK]
+  def actionsDotintentDotLINK: actionsDotintentDotLINK = "actions.intent.LINK".asInstanceOf[actionsDotintentDotLINK]
   @scala.inline
-  def actionsDOTintentDOTMAIN: actionsDOTintentDOTMAIN = "actions.intent.MAIN".asInstanceOf[actionsDOTintentDOTMAIN]
+  def actionsDotintentDotMAIN: actionsDotintentDotMAIN = "actions.intent.MAIN".asInstanceOf[actionsDotintentDotMAIN]
   @scala.inline
-  def actionsDOTintentDOTMEDIA_STATUS: actionsDOTintentDOTMEDIA_STATUS = "actions.intent.MEDIA_STATUS".asInstanceOf[actionsDOTintentDOTMEDIA_STATUS]
+  def actionsDotintentDotMEDIA_STATUS: actionsDotintentDotMEDIA_STATUS = "actions.intent.MEDIA_STATUS".asInstanceOf[actionsDotintentDotMEDIA_STATUS]
   @scala.inline
-  def actionsDOTintentDOTNEW_SURFACE: actionsDOTintentDOTNEW_SURFACE = "actions.intent.NEW_SURFACE".asInstanceOf[actionsDOTintentDOTNEW_SURFACE]
+  def actionsDotintentDotNEW_SURFACE: actionsDotintentDotNEW_SURFACE = "actions.intent.NEW_SURFACE".asInstanceOf[actionsDotintentDotNEW_SURFACE]
   @scala.inline
-  def actionsDOTintentDOTNO_INPUT: actionsDOTintentDOTNO_INPUT = "actions.intent.NO_INPUT".asInstanceOf[actionsDOTintentDOTNO_INPUT]
+  def actionsDotintentDotNO_INPUT: actionsDotintentDotNO_INPUT = "actions.intent.NO_INPUT".asInstanceOf[actionsDotintentDotNO_INPUT]
   @scala.inline
-  def actionsDOTintentDOTOPTION: actionsDOTintentDOTOPTION = "actions.intent.OPTION".asInstanceOf[actionsDOTintentDOTOPTION]
+  def actionsDotintentDotOPTION: actionsDotintentDotOPTION = "actions.intent.OPTION".asInstanceOf[actionsDotintentDotOPTION]
   @scala.inline
-  def actionsDOTintentDOTPERMISSION: actionsDOTintentDOTPERMISSION = "actions.intent.PERMISSION".asInstanceOf[actionsDOTintentDOTPERMISSION]
+  def actionsDotintentDotPERMISSION: actionsDotintentDotPERMISSION = "actions.intent.PERMISSION".asInstanceOf[actionsDotintentDotPERMISSION]
   @scala.inline
-  def actionsDOTintentDOTPLACE: actionsDOTintentDOTPLACE = "actions.intent.PLACE".asInstanceOf[actionsDOTintentDOTPLACE]
+  def actionsDotintentDotPLACE: actionsDotintentDotPLACE = "actions.intent.PLACE".asInstanceOf[actionsDotintentDotPLACE]
   @scala.inline
-  def actionsDOTintentDOTREGISTER_UPDATE: actionsDOTintentDOTREGISTER_UPDATE = "actions.intent.REGISTER_UPDATE".asInstanceOf[actionsDOTintentDOTREGISTER_UPDATE]
+  def actionsDotintentDotREGISTER_UPDATE: actionsDotintentDotREGISTER_UPDATE = "actions.intent.REGISTER_UPDATE".asInstanceOf[actionsDotintentDotREGISTER_UPDATE]
   @scala.inline
-  def actionsDOTintentDOTSIGN_IN: actionsDOTintentDOTSIGN_IN = "actions.intent.SIGN_IN".asInstanceOf[actionsDOTintentDOTSIGN_IN]
+  def actionsDotintentDotSIGN_IN: actionsDotintentDotSIGN_IN = "actions.intent.SIGN_IN".asInstanceOf[actionsDotintentDotSIGN_IN]
   @scala.inline
-  def actionsDOTintentDOTTEXT: actionsDOTintentDOTTEXT = "actions.intent.TEXT".asInstanceOf[actionsDOTintentDOTTEXT]
+  def actionsDotintentDotTEXT: actionsDotintentDotTEXT = "actions.intent.TEXT".asInstanceOf[actionsDotintentDotTEXT]
   @scala.inline
-  def actionsDOTintentDOTTRANSACTION_DECISION: actionsDOTintentDOTTRANSACTION_DECISION = "actions.intent.TRANSACTION_DECISION".asInstanceOf[actionsDOTintentDOTTRANSACTION_DECISION]
+  def actionsDotintentDotTRANSACTION_DECISION: actionsDotintentDotTRANSACTION_DECISION = "actions.intent.TRANSACTION_DECISION".asInstanceOf[actionsDotintentDotTRANSACTION_DECISION]
   @scala.inline
-  def actionsDOTintentDOTTRANSACTION_REQUIREMENTS_CHECK: actionsDOTintentDOTTRANSACTION_REQUIREMENTS_CHECK = "actions.intent.TRANSACTION_REQUIREMENTS_CHECK".asInstanceOf[actionsDOTintentDOTTRANSACTION_REQUIREMENTS_CHECK]
+  def actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK: actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK = "actions.intent.TRANSACTION_REQUIREMENTS_CHECK".asInstanceOf[actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK]
   @scala.inline
   def basic_card: basic_card = "basic_card".asInstanceOf[basic_card]
   @scala.inline
@@ -1678,41 +1678,41 @@ object actionsDashOnDashGoogleStrings {
   @scala.inline
   def telegram_ : telegram_ = "telegram".asInstanceOf[telegram_]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec` = "type.googleapis.com/google.actions.transactions.v3.CompletePurchaseValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec = "type.googleapis.com/google.actions.transactions.v3.CompletePurchaseValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTDigitalPurchaseCheckSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTDigitalPurchaseCheckSpec` = "type.googleapis.com/google.actions.transactions.v3.DigitalPurchaseCheckSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTDigitalPurchaseCheckSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec = "type.googleapis.com/google.actions.transactions.v3.DigitalPurchaseCheckSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionDecisionValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionDecisionValueSpec` = "type.googleapis.com/google.actions.transactions.v3.TransactionDecisionValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionDecisionValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec = "type.googleapis.com/google.actions.transactions.v3.TransactionDecisionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionRequirementsCheckSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionRequirementsCheckSpec` = "type.googleapis.com/google.actions.transactions.v3.TransactionRequirementsCheckSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTTransactionRequirementsCheckSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec = "type.googleapis.com/google.actions.transactions.v3.TransactionRequirementsCheckSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTConfirmationValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTConfirmationValueSpec` = "type.googleapis.com/google.actions.v2.ConfirmationValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTConfirmationValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec = "type.googleapis.com/google.actions.v2.ConfirmationValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDateTimeValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDateTimeValueSpec` = "type.googleapis.com/google.actions.v2.DateTimeValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDateTimeValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec = "type.googleapis.com/google.actions.v2.DateTimeValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDeliveryAddressValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDeliveryAddressValueSpec` = "type.googleapis.com/google.actions.v2.DeliveryAddressValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTDeliveryAddressValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec = "type.googleapis.com/google.actions.v2.DeliveryAddressValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpec` = "type.googleapis.com/google.actions.v2.LinkValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec = "type.googleapis.com/google.actions.v2.LinkValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpecDOTLinkDialogSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpecDOTLinkDialogSpec` = "type.googleapis.com/google.actions.v2.LinkValueSpec.LinkDialogSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTLinkValueSpecDOTLinkDialogSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec = "type.googleapis.com/google.actions.v2.LinkValueSpec.LinkDialogSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTNewSurfaceValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTNewSurfaceValueSpec` = "type.googleapis.com/google.actions.v2.NewSurfaceValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTNewSurfaceValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec = "type.googleapis.com/google.actions.v2.NewSurfaceValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTOptionValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTOptionValueSpec` = "type.googleapis.com/google.actions.v2.OptionValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTOptionValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec = "type.googleapis.com/google.actions.v2.OptionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPermissionValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPermissionValueSpec` = "type.googleapis.com/google.actions.v2.PermissionValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPermissionValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec = "type.googleapis.com/google.actions.v2.PermissionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpec` = "type.googleapis.com/google.actions.v2.PlaceValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec = "type.googleapis.com/google.actions.v2.PlaceValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpecDOTPlaceDialogSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpecDOTPlaceDialogSpec` = "type.googleapis.com/google.actions.v2.PlaceValueSpec.PlaceDialogSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTPlaceValueSpecDOTPlaceDialogSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec = "type.googleapis.com/google.actions.v2.PlaceValueSpec.PlaceDialogSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTRegisterUpdateValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTRegisterUpdateValueSpec` = "type.googleapis.com/google.actions.v2.RegisterUpdateValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTRegisterUpdateValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec = "type.googleapis.com/google.actions.v2.RegisterUpdateValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTSignInValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTSignInValueSpec` = "type.googleapis.com/google.actions.v2.SignInValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTSignInValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec = "type.googleapis.com/google.actions.v2.SignInValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionDecisionValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionDecisionValueSpec` = "type.googleapis.com/google.actions.v2.TransactionDecisionValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionDecisionValueSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec = "type.googleapis.com/google.actions.v2.TransactionDecisionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec]
   @scala.inline
-  def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec` = "type.googleapis.com/google.actions.v2.TransactionRequirementsCheckSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec`]
+  def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec = "type.googleapis.com/google.actions.v2.TransactionRequirementsCheckSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec]
   @scala.inline
   def viber_ : viber_ = "viber".asInstanceOf[viber_]
 }

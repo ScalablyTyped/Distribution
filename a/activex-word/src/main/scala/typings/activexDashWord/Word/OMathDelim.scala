@@ -18,6 +18,7 @@ class OMathDelim protected () extends js.Object {
   val Parent: js.Any = js.native
   var SepChar: Double = js.native
   var Shape: WdOMathShapeType = js.native
-  var `Word.OMathDelim_typekey`: OMathDelim = js.native
+  @JSName("Word.OMathDelim_typekey")
+  var WordDotOMathDelim_typekey: OMathDelim = js.native
 }
 

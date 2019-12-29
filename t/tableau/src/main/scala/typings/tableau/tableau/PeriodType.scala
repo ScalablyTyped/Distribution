@@ -1,14 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.PeriodType.DAYS
-import typings.tableau.tableau.PeriodType.HOURS
-import typings.tableau.tableau.PeriodType.MINUTES
-import typings.tableau.tableau.PeriodType.MONTHS
-import typings.tableau.tableau.PeriodType.QUARTERS
-import typings.tableau.tableau.PeriodType.SECONDS
-import typings.tableau.tableau.PeriodType.WEEKS
-import typings.tableau.tableau.PeriodType.YEARS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

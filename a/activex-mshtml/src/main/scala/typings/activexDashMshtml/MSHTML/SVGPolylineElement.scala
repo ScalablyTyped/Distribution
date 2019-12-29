@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGPolylineElement")
 @js.native
 class SVGPolylineElement protected () extends js.Object {
-  var `MSHTML.SVGPolylineElement_typekey`: SVGPolylineElement = js.native
+  @JSName("MSHTML.SVGPolylineElement_typekey")
+  var MSHTMLDotSVGPolylineElement_typekey: SVGPolylineElement = js.native
   var animatedPoints: SVGPointList = js.native
   val farthestViewportElement: ISVGElement = js.native
   var focusable: SVGAnimatedEnumeration = js.native

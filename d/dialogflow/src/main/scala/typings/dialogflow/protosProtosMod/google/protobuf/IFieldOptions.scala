@@ -11,9 +11,11 @@ import scala.scalajs.js.annotation._
 /** Properties of a FieldOptions. */
 trait IFieldOptions extends js.Object {
   /** FieldOptions .google.api.fieldBehavior */
-  var `.google.api.fieldBehavior`: js.UndefOr[js.Array[FieldBehavior] | Null] = js.undefined
+  @JSName(".google.api.fieldBehavior")
+  var DotgoogleDotapiDotfieldBehavior: js.UndefOr[js.Array[FieldBehavior] | Null] = js.undefined
   /** FieldOptions .google.api.resourceReference */
-  var `.google.api.resourceReference`: js.UndefOr[IResourceReference | Null] = js.undefined
+  @JSName(".google.api.resourceReference")
+  var DotgoogleDotapiDotresourceReference: js.UndefOr[IResourceReference | Null] = js.undefined
   /** FieldOptions ctype */
   var ctype: js.UndefOr[CType | Null] = js.undefined
   /** FieldOptions deprecated */
@@ -33,8 +35,8 @@ trait IFieldOptions extends js.Object {
 object IFieldOptions {
   @scala.inline
   def apply(
-    `.google.api.fieldBehavior`: js.Array[FieldBehavior] = null,
-    `.google.api.resourceReference`: IResourceReference = null,
+    DotgoogleDotapiDotfieldBehavior: js.Array[FieldBehavior] = null,
+    DotgoogleDotapiDotresourceReference: IResourceReference = null,
     ctype: CType = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
     jstype: JSType = null,
@@ -44,8 +46,8 @@ object IFieldOptions {
     weak: js.UndefOr[Boolean] = js.undefined
   ): IFieldOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.fieldBehavior` != null) __obj.updateDynamic(".google.api.fieldBehavior")(`.google.api.fieldBehavior`.asInstanceOf[js.Any])
-    if (`.google.api.resourceReference` != null) __obj.updateDynamic(".google.api.resourceReference")(`.google.api.resourceReference`.asInstanceOf[js.Any])
+    if (DotgoogleDotapiDotfieldBehavior != null) __obj.updateDynamic(".google.api.fieldBehavior")(DotgoogleDotapiDotfieldBehavior.asInstanceOf[js.Any])
+    if (DotgoogleDotapiDotresourceReference != null) __obj.updateDynamic(".google.api.resourceReference")(DotgoogleDotapiDotresourceReference.asInstanceOf[js.Any])
     if (ctype != null) __obj.updateDynamic("ctype")(ctype.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
     if (jstype != null) __obj.updateDynamic("jstype")(jstype.asInstanceOf[js.Any])

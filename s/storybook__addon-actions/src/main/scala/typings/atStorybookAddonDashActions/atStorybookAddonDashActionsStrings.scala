@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atStorybookAddonDashActionsStrings {
   @js.native
-  sealed trait DOLLAR___storybookDOTisCyclic extends js.Object
+  sealed trait $___storybookDotisCyclic extends js.Object
   
   @js.native
   sealed trait about extends js.Object
@@ -750,7 +750,7 @@ object atStorybookAddonDashActionsStrings {
   sealed trait spellCheck extends js.Object
   
   @js.native
-  sealed trait `storybook/actions` extends js.Object
+  sealed trait storybookSlashactions extends js.Object
   
   @js.native
   sealed trait style extends js.Object
@@ -777,7 +777,7 @@ object atStorybookAddonDashActionsStrings {
   sealed trait vocab extends js.Object
   
   @scala.inline
-  def DOLLAR___storybookDOTisCyclic: DOLLAR___storybookDOTisCyclic = "$___storybook.isCyclic".asInstanceOf[DOLLAR___storybookDOTisCyclic]
+  def $___storybookDotisCyclic: $___storybookDotisCyclic = "$___storybook.isCyclic".asInstanceOf[$___storybookDotisCyclic]
   @scala.inline
   def about: about = "about".asInstanceOf[about]
   @scala.inline
@@ -1273,7 +1273,7 @@ object atStorybookAddonDashActionsStrings {
   @scala.inline
   def spellCheck: spellCheck = "spellCheck".asInstanceOf[spellCheck]
   @scala.inline
-  def `storybook/actions`: `storybook/actions` = "storybook/actions".asInstanceOf[`storybook/actions`]
+  def storybookSlashactions: storybookSlashactions = "storybook/actions".asInstanceOf[storybookSlashactions]
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   @scala.inline

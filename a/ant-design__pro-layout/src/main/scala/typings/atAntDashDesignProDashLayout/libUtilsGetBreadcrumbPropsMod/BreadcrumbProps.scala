@@ -1,7 +1,7 @@
 package typings.atAntDashDesignProDashLayout.libUtilsGetBreadcrumbPropsMod
 
+import typings.atAntDashDesignProDashLayout.Anon_DefaultOpenAll
 import typings.atAntDashDesignProDashLayout.Anon_Href
-import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.Anon_Pathname
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MessageDescriptor
@@ -27,7 +27,7 @@ trait BreadcrumbProps extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any
   ] = js.undefined
   var location: js.UndefOr[Location[LocationState] | Anon_Pathname] = js.undefined
-  var menu: js.UndefOr[Anon_Locale] = js.undefined
+  var menu: js.UndefOr[Anon_DefaultOpenAll] = js.undefined
 }
 
 object BreadcrumbProps {
@@ -40,7 +40,7 @@ object BreadcrumbProps {
     home: String = null,
     itemRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any = null,
     location: Location[LocationState] | Anon_Pathname = null,
-    menu: Anon_Locale = null
+    menu: Anon_DefaultOpenAll = null
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal()
     if (breadcrumbList != null) __obj.updateDynamic("breadcrumbList")(breadcrumbList.asInstanceOf[js.Any])

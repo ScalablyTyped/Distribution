@@ -1,26 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.UnderlineType.dash
-import typings.winrt.Windows.UI.Text.UnderlineType.dashDot
-import typings.winrt.Windows.UI.Text.UnderlineType.dashDotDot
-import typings.winrt.Windows.UI.Text.UnderlineType.dotted
-import typings.winrt.Windows.UI.Text.UnderlineType.double
-import typings.winrt.Windows.UI.Text.UnderlineType.doubleWave
-import typings.winrt.Windows.UI.Text.UnderlineType.heavyWave
-import typings.winrt.Windows.UI.Text.UnderlineType.longDash
-import typings.winrt.Windows.UI.Text.UnderlineType.none
-import typings.winrt.Windows.UI.Text.UnderlineType.single
-import typings.winrt.Windows.UI.Text.UnderlineType.thick
-import typings.winrt.Windows.UI.Text.UnderlineType.thickDash
-import typings.winrt.Windows.UI.Text.UnderlineType.thickDashDot
-import typings.winrt.Windows.UI.Text.UnderlineType.thickDashDotDot
-import typings.winrt.Windows.UI.Text.UnderlineType.thickDotted
-import typings.winrt.Windows.UI.Text.UnderlineType.thickLongDash
-import typings.winrt.Windows.UI.Text.UnderlineType.thin
-import typings.winrt.Windows.UI.Text.UnderlineType.undefined
-import typings.winrt.Windows.UI.Text.UnderlineType.wave
-import typings.winrt.Windows.UI.Text.UnderlineType.words
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

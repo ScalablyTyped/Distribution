@@ -1,7 +1,5 @@
 package typings.`3dDashBinDashPacking`
 
-import typings.`3dDashBinDashPacking`.boxologic.Box
-import typings.`3dDashBinDashPacking`.boxologic.Instance
 import typings.`3dDashBinDashPacking`.bws.packer.InstanceArray
 import typings.`3dDashBinDashPacking`.bws.packer.Wrapper
 import scala.scalajs.js

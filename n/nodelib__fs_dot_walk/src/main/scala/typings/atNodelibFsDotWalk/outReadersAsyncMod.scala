@@ -1,9 +1,5 @@
 package typings.atNodelibFsDotWalk
 
-import typings.atNodelibFsDotWalk.outReadersAsyncMod.AsyncReader
-import typings.atNodelibFsDotWalk.outReadersAsyncMod.EndEventCallback
-import typings.atNodelibFsDotWalk.outReadersAsyncMod.EntryEventCallback
-import typings.atNodelibFsDotWalk.outReadersAsyncMod.ErrorEventCallback
 import typings.atNodelibFsDotWalk.outTypesMod.Entry
 import typings.atNodelibFsDotWalk.outTypesMod.Errno
 import typings.node.eventsMod.EventEmitter

@@ -1,6 +1,5 @@
 package typings.atMaterialBase
 
-import typings.atMaterialBase.componentMod.MDCComponent
 import typings.std.Element
 import typings.std.EventListener
 import scala.scalajs.js

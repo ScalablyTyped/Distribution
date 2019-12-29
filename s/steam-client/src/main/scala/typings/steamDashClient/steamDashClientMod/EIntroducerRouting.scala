@@ -1,9 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EIntroducerRouting.FileShare
-import typings.steamDashClient.steamDashClientMod.EIntroducerRouting.P2PNetworking
-import typings.steamDashClient.steamDashClientMod.EIntroducerRouting.P2PVoiceChat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

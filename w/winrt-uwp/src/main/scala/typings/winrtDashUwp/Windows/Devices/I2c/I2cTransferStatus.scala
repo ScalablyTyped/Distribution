@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.I2c
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.I2c.I2cTransferStatus.fullTransfer
-import typings.winrtDashUwp.Windows.Devices.I2c.I2cTransferStatus.partialTransfer
-import typings.winrtDashUwp.Windows.Devices.I2c.I2cTransferStatus.slaveAddressNotAcknowledged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

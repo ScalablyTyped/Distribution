@@ -26,7 +26,8 @@ class Key () extends _ProduceKeyInput {
   var use: js.UndefOr[typings.jose.joseMod.use] = js.native
   var x5c: js.UndefOr[js.Array[String]] = js.native
   var x5t: js.UndefOr[String] = js.native
-  var `x5t#S256`: js.UndefOr[String] = js.native
+  @JSName("x5t#S256")
+  var x5tNumbersignS256: js.UndefOr[String] = js.native
   def algorithms(): Set[String] = js.native
   def algorithms(operation: keyOperation): Set[String] = js.native
   def toPEM(): String = js.native

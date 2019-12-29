@@ -1,17 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.DrawingTools
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.all
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.createShapes
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.edit
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.editShapes
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.erase
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.fillStyle
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.point
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.polygon
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.polyline
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.strokeStyle
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.styleShapes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

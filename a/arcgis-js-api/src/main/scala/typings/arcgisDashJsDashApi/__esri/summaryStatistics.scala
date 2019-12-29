@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,7 @@ trait summaryStatistics extends js.Object {
     * @param params.features A subset of features for which to calculate the statistics.
     *
     */
-  def summaryStatistics(params: summaryStatisticsSummaryStatisticsParams): IPromise[SummaryStatisticsResult]
+  def summaryStatistics(params: summaryStatisticsSummaryStatisticsParams): js.Promise[SummaryStatisticsResult]
 }
 
 @JSGlobal("__esri.summaryStatistics")
@@ -39,7 +38,7 @@ object summaryStatistics
   extends TopLevel[
       js.Function1[
         /* params */ summaryStatisticsSummaryStatisticsParams, 
-        IPromise[SummaryStatisticsResult]
+        js.Promise[SummaryStatisticsResult]
       ]
     ]
 

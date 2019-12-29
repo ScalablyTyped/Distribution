@@ -1,24 +1,6 @@
 package typings.mongorito.mongoritoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mongorito.mongoritoMod.ActionTypes.CALL
-import typings.mongorito.mongoritoMod.ActionTypes.CREATE
-import typings.mongorito.mongoritoMod.ActionTypes.CREATED
-import typings.mongorito.mongoritoMod.ActionTypes.CREATE_INDEX
-import typings.mongorito.mongoritoMod.ActionTypes.DROP_INDEX
-import typings.mongorito.mongoritoMod.ActionTypes.GET
-import typings.mongorito.mongoritoMod.ActionTypes.INCREMENT
-import typings.mongorito.mongoritoMod.ActionTypes.LIST_INDEXES
-import typings.mongorito.mongoritoMod.ActionTypes.QUERY
-import typings.mongorito.mongoritoMod.ActionTypes.REFRESH
-import typings.mongorito.mongoritoMod.ActionTypes.REFRESHED
-import typings.mongorito.mongoritoMod.ActionTypes.REMOVE
-import typings.mongorito.mongoritoMod.ActionTypes.REMOVED
-import typings.mongorito.mongoritoMod.ActionTypes.SAVE
-import typings.mongorito.mongoritoMod.ActionTypes.SET
-import typings.mongorito.mongoritoMod.ActionTypes.UNSET
-import typings.mongorito.mongoritoMod.ActionTypes.UPDATE
-import typings.mongorito.mongoritoMod.ActionTypes.UPDATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.chaiDashJquery
 
-import typings.chaiDashJquery.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

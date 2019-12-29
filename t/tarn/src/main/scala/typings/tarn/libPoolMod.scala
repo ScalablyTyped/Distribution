@@ -4,9 +4,6 @@ import typings.node.NodeJS.Timer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.tarn.libPendingOperationMod.PendingOperation
-import typings.tarn.libPoolMod.Callback
-import typings.tarn.libPoolMod.CallbackOrPromise
-import typings.tarn.libPoolMod.PoolOptions
 import typings.tarn.libPromiseInspectionMod.PromiseInspection
 import typings.tarn.libResourceMod.Resource
 import typings.tarn.tarnStrings.acquireFail

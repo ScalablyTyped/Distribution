@@ -14,6 +14,7 @@ class AutoCaption protected () extends js.Object {
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.AutoCaption_typekey`: AutoCaption = js.native
+  @JSName("Word.AutoCaption_typekey")
+  var WordDotAutoCaption_typekey: AutoCaption = js.native
 }
 

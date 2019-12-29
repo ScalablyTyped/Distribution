@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode.documentsView
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode.listView
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode.musicView
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode.picturesView
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode.singleItem
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode.videosView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SortingRule extends js.Object {
-  var desc: Boolean
-  var id: String
+trait SortingRule[D] extends js.Object {
+  var desc: js.UndefOr[Boolean] = js.undefined
+  var id: IdType[D]
 }
 
 object SortingRule {
   @scala.inline
-  def apply(desc: Boolean, id: String): SortingRule = {
-    val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[SortingRule]
+  def apply[D](id: IdType[D], desc: js.UndefOr[Boolean] = js.undefined): SortingRule[D] = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SortingRule[D]]
   }
 }
 

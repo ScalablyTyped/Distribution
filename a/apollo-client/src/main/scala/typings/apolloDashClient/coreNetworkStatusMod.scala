@@ -1,14 +1,6 @@
 package typings.apolloDashClient
 
 import org.scalablytyped.runtime.TopLevel
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.error
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.fetchMore
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.loading
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.poll
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.ready
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.refetch
-import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.setVariables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

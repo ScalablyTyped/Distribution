@@ -1,19 +1,6 @@
 package typings.timezonecomplete.distLibTokenMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibTokenMod.TokenType.DAY
-import typings.timezonecomplete.distLibTokenMod.TokenType.DAYPERIOD
-import typings.timezonecomplete.distLibTokenMod.TokenType.ERA
-import typings.timezonecomplete.distLibTokenMod.TokenType.HOUR
-import typings.timezonecomplete.distLibTokenMod.TokenType.IDENTITY
-import typings.timezonecomplete.distLibTokenMod.TokenType.MINUTE
-import typings.timezonecomplete.distLibTokenMod.TokenType.MONTH
-import typings.timezonecomplete.distLibTokenMod.TokenType.QUARTER
-import typings.timezonecomplete.distLibTokenMod.TokenType.SECOND
-import typings.timezonecomplete.distLibTokenMod.TokenType.WEEK
-import typings.timezonecomplete.distLibTokenMod.TokenType.WEEKDAY
-import typings.timezonecomplete.distLibTokenMod.TokenType.YEAR
-import typings.timezonecomplete.distLibTokenMod.TokenType.ZONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

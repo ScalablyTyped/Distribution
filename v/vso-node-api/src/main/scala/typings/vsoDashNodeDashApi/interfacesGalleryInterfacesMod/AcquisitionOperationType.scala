@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Buy
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Get
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Install
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.None
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.PurchaseRequest
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Request
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Try
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

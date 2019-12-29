@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.DocumentPropertyType.boolean
-import typings.officeDashJs.Excel.DocumentPropertyType.date
-import typings.officeDashJs.Excel.DocumentPropertyType.float
-import typings.officeDashJs.Excel.DocumentPropertyType.number
-import typings.officeDashJs.Excel.DocumentPropertyType.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

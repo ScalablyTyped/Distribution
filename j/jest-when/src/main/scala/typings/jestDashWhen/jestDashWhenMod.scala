@@ -1,7 +1,5 @@
 package typings.jestDashWhen
 
-import typings.jestDashWhen.jestDashWhenMod.When
-import typings.jestDashWhen.jestDashWhenMod.WhenMock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

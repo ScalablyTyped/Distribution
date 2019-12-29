@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.SUBSCRIPT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.SUPERSCRIPT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,24 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.crossSlide
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.doubleTap
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.drag
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.hold
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.holdWithMouse
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationMultipleFingerPanning
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationRotate
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationRotateInertia
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationScale
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationScaleInertia
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationTranslateInertia
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationTranslateRailsX
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationTranslateRailsY
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationTranslateX
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.manipulationTranslateY
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.none
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.rightTap
-import typings.winrtDashUwp.Windows.UI.Input.GestureSettings.tap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

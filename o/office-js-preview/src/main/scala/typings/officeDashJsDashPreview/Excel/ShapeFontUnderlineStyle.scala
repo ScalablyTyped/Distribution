@@ -1,23 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dash
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dashHeavy
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dashLong
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dashLongHeavy
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dotDash
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dotDashHeavy
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dotDotDash
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dotDotDashHeavy
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dotted
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.dottedHeavy
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.double
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.heavy
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.none
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.single
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.wavy
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.wavyDouble
-import typings.officeDashJsDashPreview.Excel.ShapeFontUnderlineStyle.wavyHeavy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

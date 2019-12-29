@@ -1,9 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.CalendarType.Gregorian
-import typings.openui5.sap.ui.core.CalendarType.Islamic
-import typings.openui5.sap.ui.core.CalendarType.Japanese
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

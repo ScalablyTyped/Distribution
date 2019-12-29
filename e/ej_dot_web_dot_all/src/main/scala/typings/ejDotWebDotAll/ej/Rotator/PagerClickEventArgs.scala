@@ -16,7 +16,7 @@ trait PagerClickEventArgs extends js.Object {
   var itemId: js.UndefOr[String] = js.undefined
   /** returns the rotator model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Rotator.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object PagerClickEventArgs {
     activeItemIndex: Int | Double = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     itemId: String = null,
-    model: typings.ejDotWebDotAll.ej.Rotator.Model = null,
+    model: Model = null,
     `type`: String = null
   ): PagerClickEventArgs = {
     val __obj = js.Dynamic.literal()

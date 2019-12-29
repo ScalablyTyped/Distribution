@@ -22,7 +22,8 @@ class TickLabels protected () extends js.Object {
   var Offset: Double = js.native
   var Orientation: XlTickLabelOrientation = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TickLabels_typekey`: TickLabels = js.native
+  @JSName("PowerPoint.TickLabels_typekey")
+  var PowerPointDotTickLabels_typekey: TickLabels = js.native
   var ReadingOrder: Double = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native

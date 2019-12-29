@@ -1,6 +1,6 @@
 package typings.node.tlsMod
 
-import typings.node.Error
+import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait CommonConnectionOptions extends js.Object {
     * An array of strings or a Buffer naming possible ALPN protocols.
     * (Protocols should be ordered by their priority.)
     */
-  var ALPNProtocols: js.UndefOr[(js.Array[java.lang.String | Uint8Array]) | Uint8Array] = js.undefined
+  var ALPNProtocols: js.UndefOr[(js.Array[String | Uint8Array]) | Uint8Array] = js.undefined
   /**
     * SNICallback(servername, cb) <Function> A function that will be
     * called if the client supports SNI TLS extension. Two arguments
@@ -23,7 +23,7 @@ trait CommonConnectionOptions extends js.Object {
     */
   var SNICallback: js.UndefOr[
     js.Function2[
-      /* servername */ java.lang.String, 
+      /* servername */ String, 
       /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit], 
       Unit
     ]
@@ -56,8 +56,8 @@ trait CommonConnectionOptions extends js.Object {
 object CommonConnectionOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[java.lang.String | Uint8Array]) | Uint8Array = null,
-    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
+    ALPNProtocols: (js.Array[String | Uint8Array]) | Uint8Array = null,
+    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RegExpConstructor
-  extends Instantiable2[
+  extends Instantiable1[(/* pattern */ RegExp) | (/* pattern */ java.lang.String), RegExp]
+     with Instantiable2[
       (/* pattern */ RegExp) | (/* pattern */ java.lang.String), 
       /* flags */ java.lang.String, 
       RegExp
-    ]
-     with Instantiable1[(/* pattern */ RegExp) | (/* pattern */ java.lang.String), RegExp] {
+    ] {
   // Non-standard extensions
   @JSName("$1")
   var $1: java.lang.String = js.native

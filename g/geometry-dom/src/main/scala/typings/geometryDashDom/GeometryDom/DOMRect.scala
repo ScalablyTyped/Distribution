@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DOMRect
-  extends typings.geometryDashDom.GeometryDom.DOMRectReadOnly
+trait DOMRect extends DOMRectReadOnly
 
 object DOMRect {
   @scala.inline

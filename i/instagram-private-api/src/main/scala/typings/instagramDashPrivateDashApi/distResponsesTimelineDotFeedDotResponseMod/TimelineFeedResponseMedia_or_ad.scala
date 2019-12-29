@@ -136,7 +136,7 @@ object TimelineFeedResponseMedia_or_ad {
     force_overlay: js.UndefOr[Boolean] = js.undefined,
     has_audio: js.UndefOr[Boolean] = js.undefined,
     hide_nux_text: js.UndefOr[Boolean] = js.undefined,
-    iTunesItem: Null = null,
+    iTunesItem: js.UndefOr[scala.Nothing] = js.undefined,
     image_versions2: TimelineFeedResponseImage_versions2 = null,
     injected: TimelineFeedResponseInjected = null,
     inline_composer_display_condition: String = null,
@@ -187,7 +187,7 @@ object TimelineFeedResponseMedia_or_ad {
     if (!js.isUndefined(force_overlay)) __obj.updateDynamic("force_overlay")(force_overlay.asInstanceOf[js.Any])
     if (!js.isUndefined(has_audio)) __obj.updateDynamic("has_audio")(has_audio.asInstanceOf[js.Any])
     if (!js.isUndefined(hide_nux_text)) __obj.updateDynamic("hide_nux_text")(hide_nux_text.asInstanceOf[js.Any])
-    if (iTunesItem != null) __obj.updateDynamic("iTunesItem")(iTunesItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(iTunesItem)) __obj.updateDynamic("iTunesItem")(iTunesItem.asInstanceOf[js.Any])
     if (image_versions2 != null) __obj.updateDynamic("image_versions2")(image_versions2.asInstanceOf[js.Any])
     if (injected != null) __obj.updateDynamic("injected")(injected.asInstanceOf[js.Any])
     if (inline_composer_display_condition != null) __obj.updateDynamic("inline_composer_display_condition")(inline_composer_display_condition.asInstanceOf[js.Any])

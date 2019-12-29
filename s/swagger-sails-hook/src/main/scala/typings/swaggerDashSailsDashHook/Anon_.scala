@@ -9,14 +9,15 @@ trait Anon_ extends js.Object {
   				 * This route will match any routes that aren't bound in the app via a custom route configuration
   				 * or a blueprint.
   				 */
-  def `/*`(req: js.Any, res: js.Any, next: js.Function0[_]): js.Any
+  @JSName("/*")
+  def SlashAsterisk(req: js.Any, res: js.Any, next: js.Function0[_]): js.Any
 }
 
 object Anon_ {
   @scala.inline
-  def apply(`/*`: (js.Any, js.Any, js.Function0[_]) => js.Any): Anon_ = {
+  def apply(SlashAsterisk: (js.Any, js.Any, js.Function0[_]) => js.Any): Anon_ = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("/*")(js.Any.fromFunction3(`/*`))
+    __obj.updateDynamic("/*")(js.Any.fromFunction3(SlashAsterisk))
     __obj.asInstanceOf[Anon_]
   }
 }

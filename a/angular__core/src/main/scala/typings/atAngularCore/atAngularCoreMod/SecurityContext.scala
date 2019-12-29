@@ -1,12 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.atAngularCoreMod.SecurityContext.HTML
-import typings.atAngularCore.atAngularCoreMod.SecurityContext.NONE
-import typings.atAngularCore.atAngularCoreMod.SecurityContext.RESOURCE_URL
-import typings.atAngularCore.atAngularCoreMod.SecurityContext.SCRIPT
-import typings.atAngularCore.atAngularCoreMod.SecurityContext.STYLE
-import typings.atAngularCore.atAngularCoreMod.SecurityContext.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

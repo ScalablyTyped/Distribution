@@ -18,6 +18,9 @@ object typedocStrings {
   sealed trait function extends js.Object
   
   @js.native
+  sealed trait indexedAccess extends js.Object
+  
+  @js.native
   sealed trait intersection extends js.Object
   
   @js.native
@@ -76,6 +79,8 @@ object typedocStrings {
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def function: function = "function".asInstanceOf[function]
+  @scala.inline
+  def indexedAccess: indexedAccess = "indexedAccess".asInstanceOf[indexedAccess]
   @scala.inline
   def intersection: intersection = "intersection".asInstanceOf[intersection]
   @scala.inline

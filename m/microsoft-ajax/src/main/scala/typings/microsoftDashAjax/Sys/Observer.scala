@@ -39,7 +39,7 @@ object Observer extends js.Object {
     * @param eventName A string that contains the event name.
     * @param handler The added function.
     */
-  def addEventHandler(target: js.Any, eventName: java.lang.String, handler: js.Function): Unit = js.native
+  def addEventHandler(target: js.Any, eventName: String, handler: js.Function): Unit = js.native
   /**
     * Adds a propertyChanged event handler to the target.
     * @param target The object to observe.
@@ -101,13 +101,13 @@ object Observer extends js.Object {
     * @param eventName A string that contains the event name.
     * @param eventArgs A Sys.EventArgs object used to pass event argument information.
     */
-  def raiseEvent(target: js.Any, eventName: java.lang.String, eventArgs: EventArgs): Unit = js.native
+  def raiseEvent(target: js.Any, eventName: String, eventArgs: EventArgs): Unit = js.native
   /**
     * Raises a propertyChanged notification event.
     * @param target The object to which an event is raised.
     * @param propertyName The name of the property that changed.
     */
-  def raisePropertyChanged(target: js.Any, propertyName: java.lang.String): Unit = js.native
+  def raisePropertyChanged(target: js.Any, propertyName: String): Unit = js.native
   /**
     * Removes the first occurrence of an item from the array in an observable manner.
     * @param target The array to which the item will be removed.
@@ -140,6 +140,6 @@ object Observer extends js.Object {
     * @param propertyName A string that contains the name of the property or field to set.
     * @param value The value to set.
     */
-  def setValue(target: js.Any, propertyName: java.lang.String, value: js.Any): Unit = js.native
+  def setValue(target: js.Any, propertyName: String, value: js.Any): Unit = js.native
 }
 

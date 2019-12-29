@@ -15,7 +15,7 @@ trait IAbstract extends IBase {
   /** [Method] Registers yur Google Analytics account
   		* @param accountID String Your Google Analytics account ID
   		*/
-  var registerAccount: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var registerAccount: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of accountID
   		* @param accountID Object The new value.
   		*/
@@ -27,7 +27,7 @@ trait IAbstract extends IBase {
   /** [Method] Track an pageview in your application
   		* @param config String The page you want to track (must start with a slash).
   		*/
-  var trackPageview: js.UndefOr[js.Function1[/* config */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var trackPageview: js.UndefOr[js.Function1[/* config */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IAbstract {
@@ -40,20 +40,20 @@ object IAbstract {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getAccountID: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    registerAccount: /* accountID */ js.UndefOr[java.lang.String] => Unit = null,
+    registerAccount: /* accountID */ js.UndefOr[String] => Unit = null,
     self: IClass = null,
     setAccountID: /* accountID */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     trackEvent: /* config */ js.UndefOr[js.Any] => Unit = null,
-    trackPageview: /* config */ js.UndefOr[java.lang.String] => Unit = null,
+    trackPageview: /* config */ js.UndefOr[String] => Unit = null,
     uses: Array = null
   ): IAbstract = {
     val __obj = js.Dynamic.literal()

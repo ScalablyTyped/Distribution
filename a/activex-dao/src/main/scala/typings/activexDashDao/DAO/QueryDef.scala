@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class QueryDef protected () extends js.Object {
   var CacheSize: Double = js.native
   var Connect: String = js.native
-  var `DAO.QueryDef_typekey`: QueryDef = js.native
+  @JSName("DAO.QueryDef_typekey")
+  var DAODotQueryDef_typekey: QueryDef = js.native
   val DateCreated: VarDate = js.native
   @JSName("Fields")
   val Fields_Original: Fields = js.native

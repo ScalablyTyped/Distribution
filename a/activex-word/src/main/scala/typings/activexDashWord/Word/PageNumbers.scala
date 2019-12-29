@@ -19,7 +19,8 @@ class PageNumbers protected () extends js.Object {
   var RestartNumberingAtSection: Boolean = js.native
   var ShowFirstPageNumber: Boolean = js.native
   var StartingNumber: Double = js.native
-  var `Word.PageNumbers_typekey`: PageNumbers = js.native
+  @JSName("Word.PageNumbers_typekey")
+  var WordDotPageNumbers_typekey: PageNumbers = js.native
   def Add(): PageNumber = js.native
   def Add(PageNumberAlignment: js.Any): PageNumber = js.native
   def Add(PageNumberAlignment: js.Any, FirstPage: js.Any): PageNumber = js.native

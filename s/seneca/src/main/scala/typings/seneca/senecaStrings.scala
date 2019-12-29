@@ -14,10 +14,10 @@ object senecaStrings {
   sealed trait any extends LogSpec
   
   @js.native
-  sealed trait `debug+` extends LogLevel
+  sealed trait debugPlussign extends LogLevel
   
   @js.native
-  sealed trait `info+` extends LogLevel
+  sealed trait infoPlussign extends LogLevel
   
   @js.native
   sealed trait none extends LogLevel
@@ -38,16 +38,16 @@ object senecaStrings {
   sealed trait test extends LogSpec
   
   @js.native
-  sealed trait `warn+` extends LogLevel
+  sealed trait warnPlussign extends LogLevel
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
-  def `debug+`: `debug+` = "debug+".asInstanceOf[`debug+`]
+  def debugPlussign: debugPlussign = "debug+".asInstanceOf[debugPlussign]
   @scala.inline
-  def `info+`: `info+` = "info+".asInstanceOf[`info+`]
+  def infoPlussign: infoPlussign = "info+".asInstanceOf[infoPlussign]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
@@ -61,6 +61,6 @@ object senecaStrings {
   @scala.inline
   def test: test = "test".asInstanceOf[test]
   @scala.inline
-  def `warn+`: `warn+` = "warn+".asInstanceOf[`warn+`]
+  def warnPlussign: warnPlussign = "warn+".asInstanceOf[warnPlussign]
 }
 

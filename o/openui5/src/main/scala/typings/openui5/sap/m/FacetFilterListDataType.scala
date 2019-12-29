@@ -1,13 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.FacetFilterListDataType.Boolean
-import typings.openui5.sap.m.FacetFilterListDataType.Date
-import typings.openui5.sap.m.FacetFilterListDataType.DateTime
-import typings.openui5.sap.m.FacetFilterListDataType.Float
-import typings.openui5.sap.m.FacetFilterListDataType.Integer
-import typings.openui5.sap.m.FacetFilterListDataType.String
-import typings.openui5.sap.m.FacetFilterListDataType.Time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

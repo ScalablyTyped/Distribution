@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SourceMapConsumerConstructor
-  extends Instantiable2[
+  extends Instantiable1[
       (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ String), 
-      /* sourceMapUrl */ SourceMapUrl, 
       js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer]
     ]
-     with Instantiable1[
+     with Instantiable2[
       (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ String), 
+      /* sourceMapUrl */ SourceMapUrl, 
       js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer]
     ] {
   var GENERATED_ORDER: Double = js.native

@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Priority.HIGH
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Priority.LOW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Priority.NORMAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

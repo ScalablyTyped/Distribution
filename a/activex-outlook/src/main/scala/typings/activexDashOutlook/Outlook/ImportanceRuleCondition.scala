@@ -12,7 +12,8 @@ class ImportanceRuleCondition protected () extends js.Object {
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: Boolean = js.native
   var Importance: OlImportance = js.native
-  var `Outlook.ImportanceRuleCondition_typekey`: ImportanceRuleCondition = js.native
+  @JSName("Outlook.ImportanceRuleCondition_typekey")
+  var OutlookDotImportanceRuleCondition_typekey: ImportanceRuleCondition = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

@@ -11,7 +11,8 @@ class Tasks protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Tasks_typekey`: Tasks = js.native
+  @JSName("Word.Tasks_typekey")
+  var WordDotTasks_typekey: Tasks = js.native
   def Exists(Name: String): Boolean = js.native
   def ExitWindows(): Unit = js.native
   def Item(Index: js.Any): Task = js.native

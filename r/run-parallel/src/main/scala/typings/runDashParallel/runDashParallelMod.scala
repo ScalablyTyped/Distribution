@@ -1,9 +1,5 @@
 package typings.runDashParallel
 
-import typings.runDashParallel.runDashParallelMod.Callback
-import typings.runDashParallel.runDashParallelMod.Task
-import typings.runDashParallel.runDashParallelMod.TaskCallback
-import typings.runDashParallel.runDashParallelMod.TaskObj
 import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js

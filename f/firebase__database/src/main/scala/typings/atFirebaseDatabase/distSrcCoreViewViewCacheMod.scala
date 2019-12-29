@@ -2,7 +2,6 @@ package typings.atFirebaseDatabase
 
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.Node
 import typings.atFirebaseDatabase.distSrcCoreViewCacheNodeMod.CacheNode
-import typings.atFirebaseDatabase.distSrcCoreViewViewCacheMod.ViewCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

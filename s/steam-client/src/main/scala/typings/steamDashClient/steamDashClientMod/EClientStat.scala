@@ -1,12 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EClientStat.BytesDownloaded
-import typings.steamDashClient.steamDashClientMod.EClientStat.Max
-import typings.steamDashClient.steamDashClientMod.EClientStat.P2PConnectionsRelay
-import typings.steamDashClient.steamDashClientMod.EClientStat.P2PConnectionsUDP
-import typings.steamDashClient.steamDashClientMod.EClientStat.P2PGameConnections
-import typings.steamDashClient.steamDashClientMod.EClientStat.P2PVoiceConnections
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

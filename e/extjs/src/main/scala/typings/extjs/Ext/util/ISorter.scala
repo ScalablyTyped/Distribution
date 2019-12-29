@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait ISorter extends IBase {
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var property: js.UndefOr[java.lang.String] = js.undefined
+  var property: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
   /** [Method] Set the sorting direction for this sorter
   		* @param direction String The direction to sort in. Should be either 'ASC' or 'DESC'.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Function) */
   var sorterFn: js.UndefOr[js.Any] = js.undefined
   /** [Method] Toggles the sorting direction for this sorter  */
@@ -39,17 +39,17 @@ object ISorter {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    direction: java.lang.String = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    direction: String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ISorter = null,
     mixins: js.Any = null,
-    property: java.lang.String = null,
+    property: String = null,
     requires: Array = null,
-    root: java.lang.String = null,
+    root: String = null,
     self: IClass = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     sorterFn: js.Any = null,
     statics: js.Any = null,

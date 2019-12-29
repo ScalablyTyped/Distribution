@@ -13,7 +13,7 @@ trait AjaxLoadEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the accordion model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Accordion.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object AjaxLoadEventArgs {
   def apply(
     URL: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Accordion.Model = null,
+    model: Model = null,
     `type`: String = null
   ): AjaxLoadEventArgs = {
     val __obj = js.Dynamic.literal()

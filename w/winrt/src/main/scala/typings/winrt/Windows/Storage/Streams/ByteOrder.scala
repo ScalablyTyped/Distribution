@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Streams.ByteOrder.bigEndian
-import typings.winrt.Windows.Storage.Streams.ByteOrder.littleEndian
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

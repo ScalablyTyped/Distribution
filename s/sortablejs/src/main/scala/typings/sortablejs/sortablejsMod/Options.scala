@@ -60,7 +60,7 @@ object Options {
     invertSwap: js.UndefOr[Boolean] = js.undefined,
     invertedSwapThreshold: Int | Double = null,
     multiDrag: js.UndefOr[Boolean] = js.undefined,
-    multiDragKey: Null = null,
+    multiDragKey: js.UndefOr[scala.Nothing] = js.undefined,
     onAdd: /* event */ SortableEvent => Unit = null,
     onChange: /* evt */ SortableEvent => Unit = null,
     onChoose: /* event */ SortableEvent => Unit = null,
@@ -129,7 +129,7 @@ object Options {
     if (!js.isUndefined(invertSwap)) __obj.updateDynamic("invertSwap")(invertSwap.asInstanceOf[js.Any])
     if (invertedSwapThreshold != null) __obj.updateDynamic("invertedSwapThreshold")(invertedSwapThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(multiDrag)) __obj.updateDynamic("multiDrag")(multiDrag.asInstanceOf[js.Any])
-    if (multiDragKey != null) __obj.updateDynamic("multiDragKey")(multiDragKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiDragKey)) __obj.updateDynamic("multiDragKey")(multiDragKey.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onChoose != null) __obj.updateDynamic("onChoose")(js.Any.fromFunction1(onChoose))

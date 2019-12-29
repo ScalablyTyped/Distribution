@@ -9,11 +9,11 @@ object gapiDotClientDotPredictionStrings {
   sealed trait prediction extends js.Object
   
   @js.native
-  sealed trait v1DOT6 extends js.Object
+  sealed trait v1Dot6 extends js.Object
   
   @scala.inline
   def prediction: prediction = "prediction".asInstanceOf[prediction]
   @scala.inline
-  def v1DOT6: v1DOT6 = "v1.6".asInstanceOf[v1DOT6]
+  def v1Dot6: v1Dot6 = "v1.6".asInstanceOf[v1Dot6]
 }
 

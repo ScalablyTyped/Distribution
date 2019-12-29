@@ -1,11 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.MapTypeControlStyle.DEFAULT
-import typings.googlemaps.google.maps.MapTypeControlStyle.DROPDOWN_MENU
-import typings.googlemaps.google.maps.MapTypeControlStyle.HORIZONTAL_BAR
-import typings.googlemaps.google.maps.MapTypeControlStyle.INSET
-import typings.googlemaps.google.maps.MapTypeControlStyle.INSET_LARGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

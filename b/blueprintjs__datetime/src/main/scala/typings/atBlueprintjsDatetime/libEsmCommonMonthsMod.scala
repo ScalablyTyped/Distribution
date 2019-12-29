@@ -1,19 +1,6 @@
 package typings.atBlueprintjsDatetime
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.APRIL
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.AUGUST
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.DECEMBER
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.FEBRUARY
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.JANUARY
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.JULY
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.JUNE
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.MARCH
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.MAY
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.NOVEMBER
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.OCTOBER
-import typings.atBlueprintjsDatetime.libEsmCommonMonthsMod.Months.SEPTEMBER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

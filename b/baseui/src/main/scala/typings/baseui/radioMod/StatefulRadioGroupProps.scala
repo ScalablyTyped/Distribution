@@ -2,8 +2,8 @@ package typings.baseui.radioMod
 
 import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.ChangeEvent
+import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait StatefulRadioGroupProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var initialState: js.UndefOr[State] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object StatefulRadioGroupProps {
     children: ReactNode = null,
     initialState: State = null,
     name: String = null,
-    onChange: FormEvent[HTMLInputElement] => Unit = null,
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
     overrides: RadioOverrides with RadioGroupOverrides = null
   ): StatefulRadioGroupProps = {
     val __obj = js.Dynamic.literal()

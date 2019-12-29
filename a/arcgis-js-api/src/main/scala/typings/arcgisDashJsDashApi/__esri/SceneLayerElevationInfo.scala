@@ -1,5 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`absolute-height`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`on-the-ground`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`relative-to-ground`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`relative-to-scene`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -20,7 +30,7 @@ trait SceneLayerElevationInfo extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
     */
-  var mode: String
+  var mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`
   /**
     * An elevation offset which is added to the vertical position of the graphic. When `mode = "on-the-ground"`, this property has no effect.
     *
@@ -30,13 +40,13 @@ trait SceneLayerElevationInfo extends Object {
     */
   var offset: js.UndefOr[Double] = js.undefined
   /**
-    * The unit for `offset` values.  **Possible Values:** feet | meters | kilometers | miles | us-feet | yards
+    * The unit for `offset` values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
     *
     * @default meters
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards] = js.undefined
 }
 
 object SceneLayerElevationInfo {
@@ -44,10 +54,10 @@ object SceneLayerElevationInfo {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    mode: String,
+    mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`,
     propertyIsEnumerable: PropertyKey => Boolean,
     offset: Int | Double = null,
-    unit: String = null
+    unit: feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards = null
   ): SceneLayerElevationInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

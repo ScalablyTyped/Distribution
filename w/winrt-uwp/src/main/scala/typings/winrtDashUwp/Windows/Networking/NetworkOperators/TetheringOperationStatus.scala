@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.entitlementCheckFailure
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.entitlementCheckTimeout
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.mobileBroadbandDeviceOff
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.operationInProgress
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.success
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.unknown
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.wiFiDeviceOff
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

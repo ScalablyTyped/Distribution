@@ -1,6 +1,5 @@
 package typings.atEmberObject
 
-import typings.atEmberObject.eventedMod.Evented
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

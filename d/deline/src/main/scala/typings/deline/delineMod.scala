@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("deline", JSImport.Namespace)
 @js.native
 object delineMod extends js.Object {
-  def deline(strings: String, values: js.Any*): String = js.native
-  def deline(strings: TemplateStringsArray, values: js.Any*): String = js.native
+  def apply(strings: String, values: js.Any*): String = js.native
+  def apply(strings: TemplateStringsArray, values: js.Any*): String = js.native
 }
 

@@ -12,6 +12,6 @@ class comment protected () extends node {
   var value: String = js.native
   def filter(filter: typings.ckeditor.CKEDITOR.htmlParser.filter): Boolean = js.native
   def writeHtml(writer: basicWriter): Unit = js.native
-  def writeHtml(writer: basicWriter, filter: typings.ckeditor.CKEDITOR.htmlParser.filter): Unit = js.native
+  def writeHtml(writer: basicWriter, filter: filter): Unit = js.native
 }
 

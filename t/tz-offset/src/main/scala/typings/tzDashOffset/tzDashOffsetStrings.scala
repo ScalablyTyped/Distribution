@@ -7,679 +7,679 @@ import scala.scalajs.js.annotation._
 
 object tzDashOffsetStrings {
   @js.native
-  sealed trait `Africa/Algiers` extends Timezone
+  sealed trait AfricaSlashAlgiers extends Timezone
   
   @js.native
-  sealed trait `Africa/Cairo` extends Timezone
+  sealed trait AfricaSlashCairo extends Timezone
   
   @js.native
-  sealed trait `Africa/Casablanca` extends Timezone
+  sealed trait AfricaSlashCasablanca extends Timezone
   
   @js.native
-  sealed trait `Africa/Harare` extends Timezone
+  sealed trait AfricaSlashHarare extends Timezone
   
   @js.native
-  sealed trait `Africa/Johannesburg` extends Timezone
+  sealed trait AfricaSlashJohannesburg extends Timezone
   
   @js.native
-  sealed trait `Africa/Monrovia` extends Timezone
+  sealed trait AfricaSlashMonrovia extends Timezone
   
   @js.native
-  sealed trait `Africa/Nairobi` extends Timezone
+  sealed trait AfricaSlashNairobi extends Timezone
   
   @js.native
-  sealed trait `America/Argentina/Buenos_Aires` extends Timezone
+  sealed trait AmericaSlashArgentinaSlashBuenos_Aires extends Timezone
   
   @js.native
-  sealed trait `America/Bogota` extends Timezone
+  sealed trait AmericaSlashBogota extends Timezone
   
   @js.native
-  sealed trait `America/Caracas` extends Timezone
+  sealed trait AmericaSlashCaracas extends Timezone
   
   @js.native
-  sealed trait `America/Chicago` extends Timezone
+  sealed trait AmericaSlashChicago extends Timezone
   
   @js.native
-  sealed trait `America/Chihuahua` extends Timezone
+  sealed trait AmericaSlashChihuahua extends Timezone
   
   @js.native
-  sealed trait `America/Denver` extends Timezone
+  sealed trait AmericaSlashDenver extends Timezone
   
   @js.native
-  sealed trait `America/Godthab` extends Timezone
+  sealed trait AmericaSlashGodthab extends Timezone
   
   @js.native
-  sealed trait `America/Guatemala` extends Timezone
+  sealed trait AmericaSlashGuatemala extends Timezone
   
   @js.native
-  sealed trait `America/Guyana` extends Timezone
+  sealed trait AmericaSlashGuyana extends Timezone
   
   @js.native
-  sealed trait `America/Halifax` extends Timezone
+  sealed trait AmericaSlashHalifax extends Timezone
   
   @js.native
-  sealed trait `America/Indiana/Indianapolis` extends Timezone
+  sealed trait AmericaSlashIndianaSlashIndianapolis extends Timezone
   
   @js.native
-  sealed trait `America/Juneau` extends Timezone
+  sealed trait AmericaSlashJuneau extends Timezone
   
   @js.native
-  sealed trait `America/La_Paz` extends Timezone
+  sealed trait AmericaSlashLa_Paz extends Timezone
   
   @js.native
-  sealed trait `America/Lima` extends Timezone
+  sealed trait AmericaSlashLima extends Timezone
   
   @js.native
-  sealed trait `America/Los_Angeles` extends Timezone
+  sealed trait AmericaSlashLos_Angeles extends Timezone
   
   @js.native
-  sealed trait `America/Mazatlan` extends Timezone
+  sealed trait AmericaSlashMazatlan extends Timezone
   
   @js.native
-  sealed trait `America/Mexico_City` extends Timezone
+  sealed trait AmericaSlashMexico_City extends Timezone
   
   @js.native
-  sealed trait `America/Monterrey` extends Timezone
+  sealed trait AmericaSlashMonterrey extends Timezone
   
   @js.native
-  sealed trait `America/Montevideo` extends Timezone
+  sealed trait AmericaSlashMontevideo extends Timezone
   
   @js.native
-  sealed trait `America/New_York` extends Timezone
+  sealed trait AmericaSlashNew_York extends Timezone
   
   @js.native
-  sealed trait `America/Phoenix` extends Timezone
+  sealed trait AmericaSlashPhoenix extends Timezone
   
   @js.native
-  sealed trait `America/Puerto_Rico` extends Timezone
+  sealed trait AmericaSlashPuerto_Rico extends Timezone
   
   @js.native
-  sealed trait `America/Regina` extends Timezone
+  sealed trait AmericaSlashRegina extends Timezone
   
   @js.native
-  sealed trait `America/Santiago` extends Timezone
+  sealed trait AmericaSlashSantiago extends Timezone
   
   @js.native
-  sealed trait `America/Sao_Paulo` extends Timezone
+  sealed trait AmericaSlashSao_Paulo extends Timezone
   
   @js.native
-  sealed trait `America/St_Johns` extends Timezone
+  sealed trait AmericaSlashSt_Johns extends Timezone
   
   @js.native
-  sealed trait `America/Tijuana` extends Timezone
+  sealed trait AmericaSlashTijuana extends Timezone
   
   @js.native
-  sealed trait `Asia/Almaty` extends Timezone
+  sealed trait AsiaSlashAlmaty extends Timezone
   
   @js.native
-  sealed trait `Asia/Baghdad` extends Timezone
+  sealed trait AsiaSlashBaghdad extends Timezone
   
   @js.native
-  sealed trait `Asia/Baku` extends Timezone
+  sealed trait AsiaSlashBaku extends Timezone
   
   @js.native
-  sealed trait `Asia/Bangkok` extends Timezone
+  sealed trait AsiaSlashBangkok extends Timezone
   
   @js.native
-  sealed trait `Asia/Chongqing` extends Timezone
+  sealed trait AsiaSlashChongqing extends Timezone
   
   @js.native
-  sealed trait `Asia/Colombo` extends Timezone
+  sealed trait AsiaSlashColombo extends Timezone
   
   @js.native
-  sealed trait `Asia/Dhaka` extends Timezone
+  sealed trait AsiaSlashDhaka extends Timezone
   
   @js.native
-  sealed trait `Asia/Hong_Kong` extends Timezone
+  sealed trait AsiaSlashHong_Kong extends Timezone
   
   @js.native
-  sealed trait `Asia/Irkutsk` extends Timezone
+  sealed trait AsiaSlashIrkutsk extends Timezone
   
   @js.native
-  sealed trait `Asia/Jakarta` extends Timezone
+  sealed trait AsiaSlashJakarta extends Timezone
   
   @js.native
-  sealed trait `Asia/Jerusalem` extends Timezone
+  sealed trait AsiaSlashJerusalem extends Timezone
   
   @js.native
-  sealed trait `Asia/Kabul` extends Timezone
+  sealed trait AsiaSlashKabul extends Timezone
   
   @js.native
-  sealed trait `Asia/Kamchatka` extends Timezone
+  sealed trait AsiaSlashKamchatka extends Timezone
   
   @js.native
-  sealed trait `Asia/Karachi` extends Timezone
+  sealed trait AsiaSlashKarachi extends Timezone
   
   @js.native
-  sealed trait `Asia/Kathmandu` extends Timezone
+  sealed trait AsiaSlashKathmandu extends Timezone
   
   @js.native
-  sealed trait `Asia/Kolkata` extends Timezone
+  sealed trait AsiaSlashKolkata extends Timezone
   
   @js.native
-  sealed trait `Asia/Krasnoyarsk` extends Timezone
+  sealed trait AsiaSlashKrasnoyarsk extends Timezone
   
   @js.native
-  sealed trait `Asia/Kuala_Lumpur` extends Timezone
+  sealed trait AsiaSlashKuala_Lumpur extends Timezone
   
   @js.native
-  sealed trait `Asia/Kuwait` extends Timezone
+  sealed trait AsiaSlashKuwait extends Timezone
   
   @js.native
-  sealed trait `Asia/Magadan` extends Timezone
+  sealed trait AsiaSlashMagadan extends Timezone
   
   @js.native
-  sealed trait `Asia/Muscat` extends Timezone
+  sealed trait AsiaSlashMuscat extends Timezone
   
   @js.native
-  sealed trait `Asia/Novosibirsk` extends Timezone
+  sealed trait AsiaSlashNovosibirsk extends Timezone
   
   @js.native
-  sealed trait `Asia/Rangoon` extends Timezone
+  sealed trait AsiaSlashRangoon extends Timezone
   
   @js.native
-  sealed trait `Asia/Riyadh` extends Timezone
+  sealed trait AsiaSlashRiyadh extends Timezone
   
   @js.native
-  sealed trait `Asia/Seoul` extends Timezone
+  sealed trait AsiaSlashSeoul extends Timezone
   
   @js.native
-  sealed trait `Asia/Shanghai` extends Timezone
+  sealed trait AsiaSlashShanghai extends Timezone
   
   @js.native
-  sealed trait `Asia/Singapore` extends Timezone
+  sealed trait AsiaSlashSingapore extends Timezone
   
   @js.native
-  sealed trait `Asia/Srednekolymsk` extends Timezone
+  sealed trait AsiaSlashSrednekolymsk extends Timezone
   
   @js.native
-  sealed trait `Asia/Taipei` extends Timezone
+  sealed trait AsiaSlashTaipei extends Timezone
   
   @js.native
-  sealed trait `Asia/Tashkent` extends Timezone
+  sealed trait AsiaSlashTashkent extends Timezone
   
   @js.native
-  sealed trait `Asia/Tbilisi` extends Timezone
+  sealed trait AsiaSlashTbilisi extends Timezone
   
   @js.native
-  sealed trait `Asia/Tehran` extends Timezone
+  sealed trait AsiaSlashTehran extends Timezone
   
   @js.native
-  sealed trait `Asia/Tokyo` extends Timezone
+  sealed trait AsiaSlashTokyo extends Timezone
   
   @js.native
-  sealed trait `Asia/Ulaanbaatar` extends Timezone
+  sealed trait AsiaSlashUlaanbaatar extends Timezone
   
   @js.native
-  sealed trait `Asia/Urumqi` extends Timezone
+  sealed trait AsiaSlashUrumqi extends Timezone
   
   @js.native
-  sealed trait `Asia/Vladivostok` extends Timezone
+  sealed trait AsiaSlashVladivostok extends Timezone
   
   @js.native
-  sealed trait `Asia/Yakutsk` extends Timezone
+  sealed trait AsiaSlashYakutsk extends Timezone
   
   @js.native
-  sealed trait `Asia/Yekaterinburg` extends Timezone
+  sealed trait AsiaSlashYekaterinburg extends Timezone
   
   @js.native
-  sealed trait `Asia/Yerevan` extends Timezone
+  sealed trait AsiaSlashYerevan extends Timezone
   
   @js.native
-  sealed trait `Atlantic/Azores` extends Timezone
+  sealed trait AtlanticSlashAzores extends Timezone
   
   @js.native
-  sealed trait `Atlantic/Cape_Verde` extends Timezone
+  sealed trait AtlanticSlashCape_Verde extends Timezone
   
   @js.native
-  sealed trait `Atlantic/South_Georgia` extends Timezone
+  sealed trait AtlanticSlashSouth_Georgia extends Timezone
   
   @js.native
-  sealed trait `Australia/Adelaide` extends Timezone
+  sealed trait AustraliaSlashAdelaide extends Timezone
   
   @js.native
-  sealed trait `Australia/Brisbane` extends Timezone
+  sealed trait AustraliaSlashBrisbane extends Timezone
   
   @js.native
-  sealed trait `Australia/Darwin` extends Timezone
+  sealed trait AustraliaSlashDarwin extends Timezone
   
   @js.native
-  sealed trait `Australia/Hobart` extends Timezone
+  sealed trait AustraliaSlashHobart extends Timezone
   
   @js.native
-  sealed trait `Australia/Melbourne` extends Timezone
+  sealed trait AustraliaSlashMelbourne extends Timezone
   
   @js.native
-  sealed trait `Australia/Perth` extends Timezone
+  sealed trait AustraliaSlashPerth extends Timezone
   
   @js.native
-  sealed trait `Australia/Sydney` extends Timezone
+  sealed trait AustraliaSlashSydney extends Timezone
   
   @js.native
-  sealed trait `Etc/GMT+12` extends Timezone
+  sealed trait EtcSlashGMTPlussign12 extends Timezone
   
   @js.native
-  sealed trait `Etc/UTC` extends Timezone
+  sealed trait EtcSlashUTC extends Timezone
   
   @js.native
-  sealed trait `Europe/Amsterdam` extends Timezone
+  sealed trait EuropeSlashAmsterdam extends Timezone
   
   @js.native
-  sealed trait `Europe/Athens` extends Timezone
+  sealed trait EuropeSlashAthens extends Timezone
   
   @js.native
-  sealed trait `Europe/Belgrade` extends Timezone
+  sealed trait EuropeSlashBelgrade extends Timezone
   
   @js.native
-  sealed trait `Europe/Berlin` extends Timezone
+  sealed trait EuropeSlashBerlin extends Timezone
   
   @js.native
-  sealed trait `Europe/Bratislava` extends Timezone
+  sealed trait EuropeSlashBratislava extends Timezone
   
   @js.native
-  sealed trait `Europe/Brussels` extends Timezone
+  sealed trait EuropeSlashBrussels extends Timezone
   
   @js.native
-  sealed trait `Europe/Bucharest` extends Timezone
+  sealed trait EuropeSlashBucharest extends Timezone
   
   @js.native
-  sealed trait `Europe/Budapest` extends Timezone
+  sealed trait EuropeSlashBudapest extends Timezone
   
   @js.native
-  sealed trait `Europe/Copenhagen` extends Timezone
+  sealed trait EuropeSlashCopenhagen extends Timezone
   
   @js.native
-  sealed trait `Europe/Dublin` extends Timezone
+  sealed trait EuropeSlashDublin extends Timezone
   
   @js.native
-  sealed trait `Europe/Helsinki` extends Timezone
+  sealed trait EuropeSlashHelsinki extends Timezone
   
   @js.native
-  sealed trait `Europe/Istanbul` extends Timezone
+  sealed trait EuropeSlashIstanbul extends Timezone
   
   @js.native
-  sealed trait `Europe/Kaliningrad` extends Timezone
+  sealed trait EuropeSlashKaliningrad extends Timezone
   
   @js.native
-  sealed trait `Europe/Kiev` extends Timezone
+  sealed trait EuropeSlashKiev extends Timezone
   
   @js.native
-  sealed trait `Europe/Lisbon` extends Timezone
+  sealed trait EuropeSlashLisbon extends Timezone
   
   @js.native
-  sealed trait `Europe/Ljubljana` extends Timezone
+  sealed trait EuropeSlashLjubljana extends Timezone
   
   @js.native
-  sealed trait `Europe/London` extends Timezone
+  sealed trait EuropeSlashLondon extends Timezone
   
   @js.native
-  sealed trait `Europe/Madrid` extends Timezone
+  sealed trait EuropeSlashMadrid extends Timezone
   
   @js.native
-  sealed trait `Europe/Minsk` extends Timezone
+  sealed trait EuropeSlashMinsk extends Timezone
   
   @js.native
-  sealed trait `Europe/Moscow` extends Timezone
+  sealed trait EuropeSlashMoscow extends Timezone
   
   @js.native
-  sealed trait `Europe/Paris` extends Timezone
+  sealed trait EuropeSlashParis extends Timezone
   
   @js.native
-  sealed trait `Europe/Prague` extends Timezone
+  sealed trait EuropeSlashPrague extends Timezone
   
   @js.native
-  sealed trait `Europe/Riga` extends Timezone
+  sealed trait EuropeSlashRiga extends Timezone
   
   @js.native
-  sealed trait `Europe/Rome` extends Timezone
+  sealed trait EuropeSlashRome extends Timezone
   
   @js.native
-  sealed trait `Europe/Samara` extends Timezone
+  sealed trait EuropeSlashSamara extends Timezone
   
   @js.native
-  sealed trait `Europe/Sarajevo` extends Timezone
+  sealed trait EuropeSlashSarajevo extends Timezone
   
   @js.native
-  sealed trait `Europe/Skopje` extends Timezone
+  sealed trait EuropeSlashSkopje extends Timezone
   
   @js.native
-  sealed trait `Europe/Sofia` extends Timezone
+  sealed trait EuropeSlashSofia extends Timezone
   
   @js.native
-  sealed trait `Europe/Stockholm` extends Timezone
+  sealed trait EuropeSlashStockholm extends Timezone
   
   @js.native
-  sealed trait `Europe/Tallinn` extends Timezone
+  sealed trait EuropeSlashTallinn extends Timezone
   
   @js.native
-  sealed trait `Europe/Vienna` extends Timezone
+  sealed trait EuropeSlashVienna extends Timezone
   
   @js.native
-  sealed trait `Europe/Vilnius` extends Timezone
+  sealed trait EuropeSlashVilnius extends Timezone
   
   @js.native
-  sealed trait `Europe/Volgograd` extends Timezone
+  sealed trait EuropeSlashVolgograd extends Timezone
   
   @js.native
-  sealed trait `Europe/Warsaw` extends Timezone
+  sealed trait EuropeSlashWarsaw extends Timezone
   
   @js.native
-  sealed trait `Europe/Zagreb` extends Timezone
+  sealed trait EuropeSlashZagreb extends Timezone
   
   @js.native
-  sealed trait `Europe/Zurich` extends Timezone
+  sealed trait EuropeSlashZurich extends Timezone
   
   @js.native
-  sealed trait `Pacific/Apia` extends Timezone
+  sealed trait PacificSlashApia extends Timezone
   
   @js.native
-  sealed trait `Pacific/Auckland` extends Timezone
+  sealed trait PacificSlashAuckland extends Timezone
   
   @js.native
-  sealed trait `Pacific/Chatham` extends Timezone
+  sealed trait PacificSlashChatham extends Timezone
   
   @js.native
-  sealed trait `Pacific/Fakaofo` extends Timezone
+  sealed trait PacificSlashFakaofo extends Timezone
   
   @js.native
-  sealed trait `Pacific/Fiji` extends Timezone
+  sealed trait PacificSlashFiji extends Timezone
   
   @js.native
-  sealed trait `Pacific/Guadalcanal` extends Timezone
+  sealed trait PacificSlashGuadalcanal extends Timezone
   
   @js.native
-  sealed trait `Pacific/Guam` extends Timezone
+  sealed trait PacificSlashGuam extends Timezone
   
   @js.native
-  sealed trait `Pacific/Honolulu` extends Timezone
+  sealed trait PacificSlashHonolulu extends Timezone
   
   @js.native
-  sealed trait `Pacific/Majuro` extends Timezone
+  sealed trait PacificSlashMajuro extends Timezone
   
   @js.native
-  sealed trait `Pacific/Midway` extends Timezone
+  sealed trait PacificSlashMidway extends Timezone
   
   @js.native
-  sealed trait `Pacific/Noumea` extends Timezone
+  sealed trait PacificSlashNoumea extends Timezone
   
   @js.native
-  sealed trait `Pacific/Pago_Pago` extends Timezone
+  sealed trait PacificSlashPago_Pago extends Timezone
   
   @js.native
-  sealed trait `Pacific/Port_Moresby` extends Timezone
+  sealed trait PacificSlashPort_Moresby extends Timezone
   
   @js.native
-  sealed trait `Pacific/Tongatapu` extends Timezone
+  sealed trait PacificSlashTongatapu extends Timezone
   
   @scala.inline
-  def `Africa/Algiers`: `Africa/Algiers` = "Africa/Algiers".asInstanceOf[`Africa/Algiers`]
+  def AfricaSlashAlgiers: AfricaSlashAlgiers = "Africa/Algiers".asInstanceOf[AfricaSlashAlgiers]
   @scala.inline
-  def `Africa/Cairo`: `Africa/Cairo` = "Africa/Cairo".asInstanceOf[`Africa/Cairo`]
+  def AfricaSlashCairo: AfricaSlashCairo = "Africa/Cairo".asInstanceOf[AfricaSlashCairo]
   @scala.inline
-  def `Africa/Casablanca`: `Africa/Casablanca` = "Africa/Casablanca".asInstanceOf[`Africa/Casablanca`]
+  def AfricaSlashCasablanca: AfricaSlashCasablanca = "Africa/Casablanca".asInstanceOf[AfricaSlashCasablanca]
   @scala.inline
-  def `Africa/Harare`: `Africa/Harare` = "Africa/Harare".asInstanceOf[`Africa/Harare`]
+  def AfricaSlashHarare: AfricaSlashHarare = "Africa/Harare".asInstanceOf[AfricaSlashHarare]
   @scala.inline
-  def `Africa/Johannesburg`: `Africa/Johannesburg` = "Africa/Johannesburg".asInstanceOf[`Africa/Johannesburg`]
+  def AfricaSlashJohannesburg: AfricaSlashJohannesburg = "Africa/Johannesburg".asInstanceOf[AfricaSlashJohannesburg]
   @scala.inline
-  def `Africa/Monrovia`: `Africa/Monrovia` = "Africa/Monrovia".asInstanceOf[`Africa/Monrovia`]
+  def AfricaSlashMonrovia: AfricaSlashMonrovia = "Africa/Monrovia".asInstanceOf[AfricaSlashMonrovia]
   @scala.inline
-  def `Africa/Nairobi`: `Africa/Nairobi` = "Africa/Nairobi".asInstanceOf[`Africa/Nairobi`]
+  def AfricaSlashNairobi: AfricaSlashNairobi = "Africa/Nairobi".asInstanceOf[AfricaSlashNairobi]
   @scala.inline
-  def `America/Argentina/Buenos_Aires`: `America/Argentina/Buenos_Aires` = "America/Argentina/Buenos_Aires".asInstanceOf[`America/Argentina/Buenos_Aires`]
+  def AmericaSlashArgentinaSlashBuenos_Aires: AmericaSlashArgentinaSlashBuenos_Aires = "America/Argentina/Buenos_Aires".asInstanceOf[AmericaSlashArgentinaSlashBuenos_Aires]
   @scala.inline
-  def `America/Bogota`: `America/Bogota` = "America/Bogota".asInstanceOf[`America/Bogota`]
+  def AmericaSlashBogota: AmericaSlashBogota = "America/Bogota".asInstanceOf[AmericaSlashBogota]
   @scala.inline
-  def `America/Caracas`: `America/Caracas` = "America/Caracas".asInstanceOf[`America/Caracas`]
+  def AmericaSlashCaracas: AmericaSlashCaracas = "America/Caracas".asInstanceOf[AmericaSlashCaracas]
   @scala.inline
-  def `America/Chicago`: `America/Chicago` = "America/Chicago".asInstanceOf[`America/Chicago`]
+  def AmericaSlashChicago: AmericaSlashChicago = "America/Chicago".asInstanceOf[AmericaSlashChicago]
   @scala.inline
-  def `America/Chihuahua`: `America/Chihuahua` = "America/Chihuahua".asInstanceOf[`America/Chihuahua`]
+  def AmericaSlashChihuahua: AmericaSlashChihuahua = "America/Chihuahua".asInstanceOf[AmericaSlashChihuahua]
   @scala.inline
-  def `America/Denver`: `America/Denver` = "America/Denver".asInstanceOf[`America/Denver`]
+  def AmericaSlashDenver: AmericaSlashDenver = "America/Denver".asInstanceOf[AmericaSlashDenver]
   @scala.inline
-  def `America/Godthab`: `America/Godthab` = "America/Godthab".asInstanceOf[`America/Godthab`]
+  def AmericaSlashGodthab: AmericaSlashGodthab = "America/Godthab".asInstanceOf[AmericaSlashGodthab]
   @scala.inline
-  def `America/Guatemala`: `America/Guatemala` = "America/Guatemala".asInstanceOf[`America/Guatemala`]
+  def AmericaSlashGuatemala: AmericaSlashGuatemala = "America/Guatemala".asInstanceOf[AmericaSlashGuatemala]
   @scala.inline
-  def `America/Guyana`: `America/Guyana` = "America/Guyana".asInstanceOf[`America/Guyana`]
+  def AmericaSlashGuyana: AmericaSlashGuyana = "America/Guyana".asInstanceOf[AmericaSlashGuyana]
   @scala.inline
-  def `America/Halifax`: `America/Halifax` = "America/Halifax".asInstanceOf[`America/Halifax`]
+  def AmericaSlashHalifax: AmericaSlashHalifax = "America/Halifax".asInstanceOf[AmericaSlashHalifax]
   @scala.inline
-  def `America/Indiana/Indianapolis`: `America/Indiana/Indianapolis` = "America/Indiana/Indianapolis".asInstanceOf[`America/Indiana/Indianapolis`]
+  def AmericaSlashIndianaSlashIndianapolis: AmericaSlashIndianaSlashIndianapolis = "America/Indiana/Indianapolis".asInstanceOf[AmericaSlashIndianaSlashIndianapolis]
   @scala.inline
-  def `America/Juneau`: `America/Juneau` = "America/Juneau".asInstanceOf[`America/Juneau`]
+  def AmericaSlashJuneau: AmericaSlashJuneau = "America/Juneau".asInstanceOf[AmericaSlashJuneau]
   @scala.inline
-  def `America/La_Paz`: `America/La_Paz` = "America/La_Paz".asInstanceOf[`America/La_Paz`]
+  def AmericaSlashLa_Paz: AmericaSlashLa_Paz = "America/La_Paz".asInstanceOf[AmericaSlashLa_Paz]
   @scala.inline
-  def `America/Lima`: `America/Lima` = "America/Lima".asInstanceOf[`America/Lima`]
+  def AmericaSlashLima: AmericaSlashLima = "America/Lima".asInstanceOf[AmericaSlashLima]
   @scala.inline
-  def `America/Los_Angeles`: `America/Los_Angeles` = "America/Los_Angeles".asInstanceOf[`America/Los_Angeles`]
+  def AmericaSlashLos_Angeles: AmericaSlashLos_Angeles = "America/Los_Angeles".asInstanceOf[AmericaSlashLos_Angeles]
   @scala.inline
-  def `America/Mazatlan`: `America/Mazatlan` = "America/Mazatlan".asInstanceOf[`America/Mazatlan`]
+  def AmericaSlashMazatlan: AmericaSlashMazatlan = "America/Mazatlan".asInstanceOf[AmericaSlashMazatlan]
   @scala.inline
-  def `America/Mexico_City`: `America/Mexico_City` = "America/Mexico_City".asInstanceOf[`America/Mexico_City`]
+  def AmericaSlashMexico_City: AmericaSlashMexico_City = "America/Mexico_City".asInstanceOf[AmericaSlashMexico_City]
   @scala.inline
-  def `America/Monterrey`: `America/Monterrey` = "America/Monterrey".asInstanceOf[`America/Monterrey`]
+  def AmericaSlashMonterrey: AmericaSlashMonterrey = "America/Monterrey".asInstanceOf[AmericaSlashMonterrey]
   @scala.inline
-  def `America/Montevideo`: `America/Montevideo` = "America/Montevideo".asInstanceOf[`America/Montevideo`]
+  def AmericaSlashMontevideo: AmericaSlashMontevideo = "America/Montevideo".asInstanceOf[AmericaSlashMontevideo]
   @scala.inline
-  def `America/New_York`: `America/New_York` = "America/New_York".asInstanceOf[`America/New_York`]
+  def AmericaSlashNew_York: AmericaSlashNew_York = "America/New_York".asInstanceOf[AmericaSlashNew_York]
   @scala.inline
-  def `America/Phoenix`: `America/Phoenix` = "America/Phoenix".asInstanceOf[`America/Phoenix`]
+  def AmericaSlashPhoenix: AmericaSlashPhoenix = "America/Phoenix".asInstanceOf[AmericaSlashPhoenix]
   @scala.inline
-  def `America/Puerto_Rico`: `America/Puerto_Rico` = "America/Puerto_Rico".asInstanceOf[`America/Puerto_Rico`]
+  def AmericaSlashPuerto_Rico: AmericaSlashPuerto_Rico = "America/Puerto_Rico".asInstanceOf[AmericaSlashPuerto_Rico]
   @scala.inline
-  def `America/Regina`: `America/Regina` = "America/Regina".asInstanceOf[`America/Regina`]
+  def AmericaSlashRegina: AmericaSlashRegina = "America/Regina".asInstanceOf[AmericaSlashRegina]
   @scala.inline
-  def `America/Santiago`: `America/Santiago` = "America/Santiago".asInstanceOf[`America/Santiago`]
+  def AmericaSlashSantiago: AmericaSlashSantiago = "America/Santiago".asInstanceOf[AmericaSlashSantiago]
   @scala.inline
-  def `America/Sao_Paulo`: `America/Sao_Paulo` = "America/Sao_Paulo".asInstanceOf[`America/Sao_Paulo`]
+  def AmericaSlashSao_Paulo: AmericaSlashSao_Paulo = "America/Sao_Paulo".asInstanceOf[AmericaSlashSao_Paulo]
   @scala.inline
-  def `America/St_Johns`: `America/St_Johns` = "America/St_Johns".asInstanceOf[`America/St_Johns`]
+  def AmericaSlashSt_Johns: AmericaSlashSt_Johns = "America/St_Johns".asInstanceOf[AmericaSlashSt_Johns]
   @scala.inline
-  def `America/Tijuana`: `America/Tijuana` = "America/Tijuana".asInstanceOf[`America/Tijuana`]
+  def AmericaSlashTijuana: AmericaSlashTijuana = "America/Tijuana".asInstanceOf[AmericaSlashTijuana]
   @scala.inline
-  def `Asia/Almaty`: `Asia/Almaty` = "Asia/Almaty".asInstanceOf[`Asia/Almaty`]
+  def AsiaSlashAlmaty: AsiaSlashAlmaty = "Asia/Almaty".asInstanceOf[AsiaSlashAlmaty]
   @scala.inline
-  def `Asia/Baghdad`: `Asia/Baghdad` = "Asia/Baghdad".asInstanceOf[`Asia/Baghdad`]
+  def AsiaSlashBaghdad: AsiaSlashBaghdad = "Asia/Baghdad".asInstanceOf[AsiaSlashBaghdad]
   @scala.inline
-  def `Asia/Baku`: `Asia/Baku` = "Asia/Baku".asInstanceOf[`Asia/Baku`]
+  def AsiaSlashBaku: AsiaSlashBaku = "Asia/Baku".asInstanceOf[AsiaSlashBaku]
   @scala.inline
-  def `Asia/Bangkok`: `Asia/Bangkok` = "Asia/Bangkok".asInstanceOf[`Asia/Bangkok`]
+  def AsiaSlashBangkok: AsiaSlashBangkok = "Asia/Bangkok".asInstanceOf[AsiaSlashBangkok]
   @scala.inline
-  def `Asia/Chongqing`: `Asia/Chongqing` = "Asia/Chongqing".asInstanceOf[`Asia/Chongqing`]
+  def AsiaSlashChongqing: AsiaSlashChongqing = "Asia/Chongqing".asInstanceOf[AsiaSlashChongqing]
   @scala.inline
-  def `Asia/Colombo`: `Asia/Colombo` = "Asia/Colombo".asInstanceOf[`Asia/Colombo`]
+  def AsiaSlashColombo: AsiaSlashColombo = "Asia/Colombo".asInstanceOf[AsiaSlashColombo]
   @scala.inline
-  def `Asia/Dhaka`: `Asia/Dhaka` = "Asia/Dhaka".asInstanceOf[`Asia/Dhaka`]
+  def AsiaSlashDhaka: AsiaSlashDhaka = "Asia/Dhaka".asInstanceOf[AsiaSlashDhaka]
   @scala.inline
-  def `Asia/Hong_Kong`: `Asia/Hong_Kong` = "Asia/Hong_Kong".asInstanceOf[`Asia/Hong_Kong`]
+  def AsiaSlashHong_Kong: AsiaSlashHong_Kong = "Asia/Hong_Kong".asInstanceOf[AsiaSlashHong_Kong]
   @scala.inline
-  def `Asia/Irkutsk`: `Asia/Irkutsk` = "Asia/Irkutsk".asInstanceOf[`Asia/Irkutsk`]
+  def AsiaSlashIrkutsk: AsiaSlashIrkutsk = "Asia/Irkutsk".asInstanceOf[AsiaSlashIrkutsk]
   @scala.inline
-  def `Asia/Jakarta`: `Asia/Jakarta` = "Asia/Jakarta".asInstanceOf[`Asia/Jakarta`]
+  def AsiaSlashJakarta: AsiaSlashJakarta = "Asia/Jakarta".asInstanceOf[AsiaSlashJakarta]
   @scala.inline
-  def `Asia/Jerusalem`: `Asia/Jerusalem` = "Asia/Jerusalem".asInstanceOf[`Asia/Jerusalem`]
+  def AsiaSlashJerusalem: AsiaSlashJerusalem = "Asia/Jerusalem".asInstanceOf[AsiaSlashJerusalem]
   @scala.inline
-  def `Asia/Kabul`: `Asia/Kabul` = "Asia/Kabul".asInstanceOf[`Asia/Kabul`]
+  def AsiaSlashKabul: AsiaSlashKabul = "Asia/Kabul".asInstanceOf[AsiaSlashKabul]
   @scala.inline
-  def `Asia/Kamchatka`: `Asia/Kamchatka` = "Asia/Kamchatka".asInstanceOf[`Asia/Kamchatka`]
+  def AsiaSlashKamchatka: AsiaSlashKamchatka = "Asia/Kamchatka".asInstanceOf[AsiaSlashKamchatka]
   @scala.inline
-  def `Asia/Karachi`: `Asia/Karachi` = "Asia/Karachi".asInstanceOf[`Asia/Karachi`]
+  def AsiaSlashKarachi: AsiaSlashKarachi = "Asia/Karachi".asInstanceOf[AsiaSlashKarachi]
   @scala.inline
-  def `Asia/Kathmandu`: `Asia/Kathmandu` = "Asia/Kathmandu".asInstanceOf[`Asia/Kathmandu`]
+  def AsiaSlashKathmandu: AsiaSlashKathmandu = "Asia/Kathmandu".asInstanceOf[AsiaSlashKathmandu]
   @scala.inline
-  def `Asia/Kolkata`: `Asia/Kolkata` = "Asia/Kolkata".asInstanceOf[`Asia/Kolkata`]
+  def AsiaSlashKolkata: AsiaSlashKolkata = "Asia/Kolkata".asInstanceOf[AsiaSlashKolkata]
   @scala.inline
-  def `Asia/Krasnoyarsk`: `Asia/Krasnoyarsk` = "Asia/Krasnoyarsk".asInstanceOf[`Asia/Krasnoyarsk`]
+  def AsiaSlashKrasnoyarsk: AsiaSlashKrasnoyarsk = "Asia/Krasnoyarsk".asInstanceOf[AsiaSlashKrasnoyarsk]
   @scala.inline
-  def `Asia/Kuala_Lumpur`: `Asia/Kuala_Lumpur` = "Asia/Kuala_Lumpur".asInstanceOf[`Asia/Kuala_Lumpur`]
+  def AsiaSlashKuala_Lumpur: AsiaSlashKuala_Lumpur = "Asia/Kuala_Lumpur".asInstanceOf[AsiaSlashKuala_Lumpur]
   @scala.inline
-  def `Asia/Kuwait`: `Asia/Kuwait` = "Asia/Kuwait".asInstanceOf[`Asia/Kuwait`]
+  def AsiaSlashKuwait: AsiaSlashKuwait = "Asia/Kuwait".asInstanceOf[AsiaSlashKuwait]
   @scala.inline
-  def `Asia/Magadan`: `Asia/Magadan` = "Asia/Magadan".asInstanceOf[`Asia/Magadan`]
+  def AsiaSlashMagadan: AsiaSlashMagadan = "Asia/Magadan".asInstanceOf[AsiaSlashMagadan]
   @scala.inline
-  def `Asia/Muscat`: `Asia/Muscat` = "Asia/Muscat".asInstanceOf[`Asia/Muscat`]
+  def AsiaSlashMuscat: AsiaSlashMuscat = "Asia/Muscat".asInstanceOf[AsiaSlashMuscat]
   @scala.inline
-  def `Asia/Novosibirsk`: `Asia/Novosibirsk` = "Asia/Novosibirsk".asInstanceOf[`Asia/Novosibirsk`]
+  def AsiaSlashNovosibirsk: AsiaSlashNovosibirsk = "Asia/Novosibirsk".asInstanceOf[AsiaSlashNovosibirsk]
   @scala.inline
-  def `Asia/Rangoon`: `Asia/Rangoon` = "Asia/Rangoon".asInstanceOf[`Asia/Rangoon`]
+  def AsiaSlashRangoon: AsiaSlashRangoon = "Asia/Rangoon".asInstanceOf[AsiaSlashRangoon]
   @scala.inline
-  def `Asia/Riyadh`: `Asia/Riyadh` = "Asia/Riyadh".asInstanceOf[`Asia/Riyadh`]
+  def AsiaSlashRiyadh: AsiaSlashRiyadh = "Asia/Riyadh".asInstanceOf[AsiaSlashRiyadh]
   @scala.inline
-  def `Asia/Seoul`: `Asia/Seoul` = "Asia/Seoul".asInstanceOf[`Asia/Seoul`]
+  def AsiaSlashSeoul: AsiaSlashSeoul = "Asia/Seoul".asInstanceOf[AsiaSlashSeoul]
   @scala.inline
-  def `Asia/Shanghai`: `Asia/Shanghai` = "Asia/Shanghai".asInstanceOf[`Asia/Shanghai`]
+  def AsiaSlashShanghai: AsiaSlashShanghai = "Asia/Shanghai".asInstanceOf[AsiaSlashShanghai]
   @scala.inline
-  def `Asia/Singapore`: `Asia/Singapore` = "Asia/Singapore".asInstanceOf[`Asia/Singapore`]
+  def AsiaSlashSingapore: AsiaSlashSingapore = "Asia/Singapore".asInstanceOf[AsiaSlashSingapore]
   @scala.inline
-  def `Asia/Srednekolymsk`: `Asia/Srednekolymsk` = "Asia/Srednekolymsk".asInstanceOf[`Asia/Srednekolymsk`]
+  def AsiaSlashSrednekolymsk: AsiaSlashSrednekolymsk = "Asia/Srednekolymsk".asInstanceOf[AsiaSlashSrednekolymsk]
   @scala.inline
-  def `Asia/Taipei`: `Asia/Taipei` = "Asia/Taipei".asInstanceOf[`Asia/Taipei`]
+  def AsiaSlashTaipei: AsiaSlashTaipei = "Asia/Taipei".asInstanceOf[AsiaSlashTaipei]
   @scala.inline
-  def `Asia/Tashkent`: `Asia/Tashkent` = "Asia/Tashkent".asInstanceOf[`Asia/Tashkent`]
+  def AsiaSlashTashkent: AsiaSlashTashkent = "Asia/Tashkent".asInstanceOf[AsiaSlashTashkent]
   @scala.inline
-  def `Asia/Tbilisi`: `Asia/Tbilisi` = "Asia/Tbilisi".asInstanceOf[`Asia/Tbilisi`]
+  def AsiaSlashTbilisi: AsiaSlashTbilisi = "Asia/Tbilisi".asInstanceOf[AsiaSlashTbilisi]
   @scala.inline
-  def `Asia/Tehran`: `Asia/Tehran` = "Asia/Tehran".asInstanceOf[`Asia/Tehran`]
+  def AsiaSlashTehran: AsiaSlashTehran = "Asia/Tehran".asInstanceOf[AsiaSlashTehran]
   @scala.inline
-  def `Asia/Tokyo`: `Asia/Tokyo` = "Asia/Tokyo".asInstanceOf[`Asia/Tokyo`]
+  def AsiaSlashTokyo: AsiaSlashTokyo = "Asia/Tokyo".asInstanceOf[AsiaSlashTokyo]
   @scala.inline
-  def `Asia/Ulaanbaatar`: `Asia/Ulaanbaatar` = "Asia/Ulaanbaatar".asInstanceOf[`Asia/Ulaanbaatar`]
+  def AsiaSlashUlaanbaatar: AsiaSlashUlaanbaatar = "Asia/Ulaanbaatar".asInstanceOf[AsiaSlashUlaanbaatar]
   @scala.inline
-  def `Asia/Urumqi`: `Asia/Urumqi` = "Asia/Urumqi".asInstanceOf[`Asia/Urumqi`]
+  def AsiaSlashUrumqi: AsiaSlashUrumqi = "Asia/Urumqi".asInstanceOf[AsiaSlashUrumqi]
   @scala.inline
-  def `Asia/Vladivostok`: `Asia/Vladivostok` = "Asia/Vladivostok".asInstanceOf[`Asia/Vladivostok`]
+  def AsiaSlashVladivostok: AsiaSlashVladivostok = "Asia/Vladivostok".asInstanceOf[AsiaSlashVladivostok]
   @scala.inline
-  def `Asia/Yakutsk`: `Asia/Yakutsk` = "Asia/Yakutsk".asInstanceOf[`Asia/Yakutsk`]
+  def AsiaSlashYakutsk: AsiaSlashYakutsk = "Asia/Yakutsk".asInstanceOf[AsiaSlashYakutsk]
   @scala.inline
-  def `Asia/Yekaterinburg`: `Asia/Yekaterinburg` = "Asia/Yekaterinburg".asInstanceOf[`Asia/Yekaterinburg`]
+  def AsiaSlashYekaterinburg: AsiaSlashYekaterinburg = "Asia/Yekaterinburg".asInstanceOf[AsiaSlashYekaterinburg]
   @scala.inline
-  def `Asia/Yerevan`: `Asia/Yerevan` = "Asia/Yerevan".asInstanceOf[`Asia/Yerevan`]
+  def AsiaSlashYerevan: AsiaSlashYerevan = "Asia/Yerevan".asInstanceOf[AsiaSlashYerevan]
   @scala.inline
-  def `Atlantic/Azores`: `Atlantic/Azores` = "Atlantic/Azores".asInstanceOf[`Atlantic/Azores`]
+  def AtlanticSlashAzores: AtlanticSlashAzores = "Atlantic/Azores".asInstanceOf[AtlanticSlashAzores]
   @scala.inline
-  def `Atlantic/Cape_Verde`: `Atlantic/Cape_Verde` = "Atlantic/Cape_Verde".asInstanceOf[`Atlantic/Cape_Verde`]
+  def AtlanticSlashCape_Verde: AtlanticSlashCape_Verde = "Atlantic/Cape_Verde".asInstanceOf[AtlanticSlashCape_Verde]
   @scala.inline
-  def `Atlantic/South_Georgia`: `Atlantic/South_Georgia` = "Atlantic/South_Georgia".asInstanceOf[`Atlantic/South_Georgia`]
+  def AtlanticSlashSouth_Georgia: AtlanticSlashSouth_Georgia = "Atlantic/South_Georgia".asInstanceOf[AtlanticSlashSouth_Georgia]
   @scala.inline
-  def `Australia/Adelaide`: `Australia/Adelaide` = "Australia/Adelaide".asInstanceOf[`Australia/Adelaide`]
+  def AustraliaSlashAdelaide: AustraliaSlashAdelaide = "Australia/Adelaide".asInstanceOf[AustraliaSlashAdelaide]
   @scala.inline
-  def `Australia/Brisbane`: `Australia/Brisbane` = "Australia/Brisbane".asInstanceOf[`Australia/Brisbane`]
+  def AustraliaSlashBrisbane: AustraliaSlashBrisbane = "Australia/Brisbane".asInstanceOf[AustraliaSlashBrisbane]
   @scala.inline
-  def `Australia/Darwin`: `Australia/Darwin` = "Australia/Darwin".asInstanceOf[`Australia/Darwin`]
+  def AustraliaSlashDarwin: AustraliaSlashDarwin = "Australia/Darwin".asInstanceOf[AustraliaSlashDarwin]
   @scala.inline
-  def `Australia/Hobart`: `Australia/Hobart` = "Australia/Hobart".asInstanceOf[`Australia/Hobart`]
+  def AustraliaSlashHobart: AustraliaSlashHobart = "Australia/Hobart".asInstanceOf[AustraliaSlashHobart]
   @scala.inline
-  def `Australia/Melbourne`: `Australia/Melbourne` = "Australia/Melbourne".asInstanceOf[`Australia/Melbourne`]
+  def AustraliaSlashMelbourne: AustraliaSlashMelbourne = "Australia/Melbourne".asInstanceOf[AustraliaSlashMelbourne]
   @scala.inline
-  def `Australia/Perth`: `Australia/Perth` = "Australia/Perth".asInstanceOf[`Australia/Perth`]
+  def AustraliaSlashPerth: AustraliaSlashPerth = "Australia/Perth".asInstanceOf[AustraliaSlashPerth]
   @scala.inline
-  def `Australia/Sydney`: `Australia/Sydney` = "Australia/Sydney".asInstanceOf[`Australia/Sydney`]
+  def AustraliaSlashSydney: AustraliaSlashSydney = "Australia/Sydney".asInstanceOf[AustraliaSlashSydney]
   @scala.inline
-  def `Etc/GMT+12`: `Etc/GMT+12` = "Etc/GMT+12".asInstanceOf[`Etc/GMT+12`]
+  def EtcSlashGMTPlussign12: EtcSlashGMTPlussign12 = "Etc/GMT+12".asInstanceOf[EtcSlashGMTPlussign12]
   @scala.inline
-  def `Etc/UTC`: `Etc/UTC` = "Etc/UTC".asInstanceOf[`Etc/UTC`]
+  def EtcSlashUTC: EtcSlashUTC = "Etc/UTC".asInstanceOf[EtcSlashUTC]
   @scala.inline
-  def `Europe/Amsterdam`: `Europe/Amsterdam` = "Europe/Amsterdam".asInstanceOf[`Europe/Amsterdam`]
+  def EuropeSlashAmsterdam: EuropeSlashAmsterdam = "Europe/Amsterdam".asInstanceOf[EuropeSlashAmsterdam]
   @scala.inline
-  def `Europe/Athens`: `Europe/Athens` = "Europe/Athens".asInstanceOf[`Europe/Athens`]
+  def EuropeSlashAthens: EuropeSlashAthens = "Europe/Athens".asInstanceOf[EuropeSlashAthens]
   @scala.inline
-  def `Europe/Belgrade`: `Europe/Belgrade` = "Europe/Belgrade".asInstanceOf[`Europe/Belgrade`]
+  def EuropeSlashBelgrade: EuropeSlashBelgrade = "Europe/Belgrade".asInstanceOf[EuropeSlashBelgrade]
   @scala.inline
-  def `Europe/Berlin`: `Europe/Berlin` = "Europe/Berlin".asInstanceOf[`Europe/Berlin`]
+  def EuropeSlashBerlin: EuropeSlashBerlin = "Europe/Berlin".asInstanceOf[EuropeSlashBerlin]
   @scala.inline
-  def `Europe/Bratislava`: `Europe/Bratislava` = "Europe/Bratislava".asInstanceOf[`Europe/Bratislava`]
+  def EuropeSlashBratislava: EuropeSlashBratislava = "Europe/Bratislava".asInstanceOf[EuropeSlashBratislava]
   @scala.inline
-  def `Europe/Brussels`: `Europe/Brussels` = "Europe/Brussels".asInstanceOf[`Europe/Brussels`]
+  def EuropeSlashBrussels: EuropeSlashBrussels = "Europe/Brussels".asInstanceOf[EuropeSlashBrussels]
   @scala.inline
-  def `Europe/Bucharest`: `Europe/Bucharest` = "Europe/Bucharest".asInstanceOf[`Europe/Bucharest`]
+  def EuropeSlashBucharest: EuropeSlashBucharest = "Europe/Bucharest".asInstanceOf[EuropeSlashBucharest]
   @scala.inline
-  def `Europe/Budapest`: `Europe/Budapest` = "Europe/Budapest".asInstanceOf[`Europe/Budapest`]
+  def EuropeSlashBudapest: EuropeSlashBudapest = "Europe/Budapest".asInstanceOf[EuropeSlashBudapest]
   @scala.inline
-  def `Europe/Copenhagen`: `Europe/Copenhagen` = "Europe/Copenhagen".asInstanceOf[`Europe/Copenhagen`]
+  def EuropeSlashCopenhagen: EuropeSlashCopenhagen = "Europe/Copenhagen".asInstanceOf[EuropeSlashCopenhagen]
   @scala.inline
-  def `Europe/Dublin`: `Europe/Dublin` = "Europe/Dublin".asInstanceOf[`Europe/Dublin`]
+  def EuropeSlashDublin: EuropeSlashDublin = "Europe/Dublin".asInstanceOf[EuropeSlashDublin]
   @scala.inline
-  def `Europe/Helsinki`: `Europe/Helsinki` = "Europe/Helsinki".asInstanceOf[`Europe/Helsinki`]
+  def EuropeSlashHelsinki: EuropeSlashHelsinki = "Europe/Helsinki".asInstanceOf[EuropeSlashHelsinki]
   @scala.inline
-  def `Europe/Istanbul`: `Europe/Istanbul` = "Europe/Istanbul".asInstanceOf[`Europe/Istanbul`]
+  def EuropeSlashIstanbul: EuropeSlashIstanbul = "Europe/Istanbul".asInstanceOf[EuropeSlashIstanbul]
   @scala.inline
-  def `Europe/Kaliningrad`: `Europe/Kaliningrad` = "Europe/Kaliningrad".asInstanceOf[`Europe/Kaliningrad`]
+  def EuropeSlashKaliningrad: EuropeSlashKaliningrad = "Europe/Kaliningrad".asInstanceOf[EuropeSlashKaliningrad]
   @scala.inline
-  def `Europe/Kiev`: `Europe/Kiev` = "Europe/Kiev".asInstanceOf[`Europe/Kiev`]
+  def EuropeSlashKiev: EuropeSlashKiev = "Europe/Kiev".asInstanceOf[EuropeSlashKiev]
   @scala.inline
-  def `Europe/Lisbon`: `Europe/Lisbon` = "Europe/Lisbon".asInstanceOf[`Europe/Lisbon`]
+  def EuropeSlashLisbon: EuropeSlashLisbon = "Europe/Lisbon".asInstanceOf[EuropeSlashLisbon]
   @scala.inline
-  def `Europe/Ljubljana`: `Europe/Ljubljana` = "Europe/Ljubljana".asInstanceOf[`Europe/Ljubljana`]
+  def EuropeSlashLjubljana: EuropeSlashLjubljana = "Europe/Ljubljana".asInstanceOf[EuropeSlashLjubljana]
   @scala.inline
-  def `Europe/London`: `Europe/London` = "Europe/London".asInstanceOf[`Europe/London`]
+  def EuropeSlashLondon: EuropeSlashLondon = "Europe/London".asInstanceOf[EuropeSlashLondon]
   @scala.inline
-  def `Europe/Madrid`: `Europe/Madrid` = "Europe/Madrid".asInstanceOf[`Europe/Madrid`]
+  def EuropeSlashMadrid: EuropeSlashMadrid = "Europe/Madrid".asInstanceOf[EuropeSlashMadrid]
   @scala.inline
-  def `Europe/Minsk`: `Europe/Minsk` = "Europe/Minsk".asInstanceOf[`Europe/Minsk`]
+  def EuropeSlashMinsk: EuropeSlashMinsk = "Europe/Minsk".asInstanceOf[EuropeSlashMinsk]
   @scala.inline
-  def `Europe/Moscow`: `Europe/Moscow` = "Europe/Moscow".asInstanceOf[`Europe/Moscow`]
+  def EuropeSlashMoscow: EuropeSlashMoscow = "Europe/Moscow".asInstanceOf[EuropeSlashMoscow]
   @scala.inline
-  def `Europe/Paris`: `Europe/Paris` = "Europe/Paris".asInstanceOf[`Europe/Paris`]
+  def EuropeSlashParis: EuropeSlashParis = "Europe/Paris".asInstanceOf[EuropeSlashParis]
   @scala.inline
-  def `Europe/Prague`: `Europe/Prague` = "Europe/Prague".asInstanceOf[`Europe/Prague`]
+  def EuropeSlashPrague: EuropeSlashPrague = "Europe/Prague".asInstanceOf[EuropeSlashPrague]
   @scala.inline
-  def `Europe/Riga`: `Europe/Riga` = "Europe/Riga".asInstanceOf[`Europe/Riga`]
+  def EuropeSlashRiga: EuropeSlashRiga = "Europe/Riga".asInstanceOf[EuropeSlashRiga]
   @scala.inline
-  def `Europe/Rome`: `Europe/Rome` = "Europe/Rome".asInstanceOf[`Europe/Rome`]
+  def EuropeSlashRome: EuropeSlashRome = "Europe/Rome".asInstanceOf[EuropeSlashRome]
   @scala.inline
-  def `Europe/Samara`: `Europe/Samara` = "Europe/Samara".asInstanceOf[`Europe/Samara`]
+  def EuropeSlashSamara: EuropeSlashSamara = "Europe/Samara".asInstanceOf[EuropeSlashSamara]
   @scala.inline
-  def `Europe/Sarajevo`: `Europe/Sarajevo` = "Europe/Sarajevo".asInstanceOf[`Europe/Sarajevo`]
+  def EuropeSlashSarajevo: EuropeSlashSarajevo = "Europe/Sarajevo".asInstanceOf[EuropeSlashSarajevo]
   @scala.inline
-  def `Europe/Skopje`: `Europe/Skopje` = "Europe/Skopje".asInstanceOf[`Europe/Skopje`]
+  def EuropeSlashSkopje: EuropeSlashSkopje = "Europe/Skopje".asInstanceOf[EuropeSlashSkopje]
   @scala.inline
-  def `Europe/Sofia`: `Europe/Sofia` = "Europe/Sofia".asInstanceOf[`Europe/Sofia`]
+  def EuropeSlashSofia: EuropeSlashSofia = "Europe/Sofia".asInstanceOf[EuropeSlashSofia]
   @scala.inline
-  def `Europe/Stockholm`: `Europe/Stockholm` = "Europe/Stockholm".asInstanceOf[`Europe/Stockholm`]
+  def EuropeSlashStockholm: EuropeSlashStockholm = "Europe/Stockholm".asInstanceOf[EuropeSlashStockholm]
   @scala.inline
-  def `Europe/Tallinn`: `Europe/Tallinn` = "Europe/Tallinn".asInstanceOf[`Europe/Tallinn`]
+  def EuropeSlashTallinn: EuropeSlashTallinn = "Europe/Tallinn".asInstanceOf[EuropeSlashTallinn]
   @scala.inline
-  def `Europe/Vienna`: `Europe/Vienna` = "Europe/Vienna".asInstanceOf[`Europe/Vienna`]
+  def EuropeSlashVienna: EuropeSlashVienna = "Europe/Vienna".asInstanceOf[EuropeSlashVienna]
   @scala.inline
-  def `Europe/Vilnius`: `Europe/Vilnius` = "Europe/Vilnius".asInstanceOf[`Europe/Vilnius`]
+  def EuropeSlashVilnius: EuropeSlashVilnius = "Europe/Vilnius".asInstanceOf[EuropeSlashVilnius]
   @scala.inline
-  def `Europe/Volgograd`: `Europe/Volgograd` = "Europe/Volgograd".asInstanceOf[`Europe/Volgograd`]
+  def EuropeSlashVolgograd: EuropeSlashVolgograd = "Europe/Volgograd".asInstanceOf[EuropeSlashVolgograd]
   @scala.inline
-  def `Europe/Warsaw`: `Europe/Warsaw` = "Europe/Warsaw".asInstanceOf[`Europe/Warsaw`]
+  def EuropeSlashWarsaw: EuropeSlashWarsaw = "Europe/Warsaw".asInstanceOf[EuropeSlashWarsaw]
   @scala.inline
-  def `Europe/Zagreb`: `Europe/Zagreb` = "Europe/Zagreb".asInstanceOf[`Europe/Zagreb`]
+  def EuropeSlashZagreb: EuropeSlashZagreb = "Europe/Zagreb".asInstanceOf[EuropeSlashZagreb]
   @scala.inline
-  def `Europe/Zurich`: `Europe/Zurich` = "Europe/Zurich".asInstanceOf[`Europe/Zurich`]
+  def EuropeSlashZurich: EuropeSlashZurich = "Europe/Zurich".asInstanceOf[EuropeSlashZurich]
   @scala.inline
-  def `Pacific/Apia`: `Pacific/Apia` = "Pacific/Apia".asInstanceOf[`Pacific/Apia`]
+  def PacificSlashApia: PacificSlashApia = "Pacific/Apia".asInstanceOf[PacificSlashApia]
   @scala.inline
-  def `Pacific/Auckland`: `Pacific/Auckland` = "Pacific/Auckland".asInstanceOf[`Pacific/Auckland`]
+  def PacificSlashAuckland: PacificSlashAuckland = "Pacific/Auckland".asInstanceOf[PacificSlashAuckland]
   @scala.inline
-  def `Pacific/Chatham`: `Pacific/Chatham` = "Pacific/Chatham".asInstanceOf[`Pacific/Chatham`]
+  def PacificSlashChatham: PacificSlashChatham = "Pacific/Chatham".asInstanceOf[PacificSlashChatham]
   @scala.inline
-  def `Pacific/Fakaofo`: `Pacific/Fakaofo` = "Pacific/Fakaofo".asInstanceOf[`Pacific/Fakaofo`]
+  def PacificSlashFakaofo: PacificSlashFakaofo = "Pacific/Fakaofo".asInstanceOf[PacificSlashFakaofo]
   @scala.inline
-  def `Pacific/Fiji`: `Pacific/Fiji` = "Pacific/Fiji".asInstanceOf[`Pacific/Fiji`]
+  def PacificSlashFiji: PacificSlashFiji = "Pacific/Fiji".asInstanceOf[PacificSlashFiji]
   @scala.inline
-  def `Pacific/Guadalcanal`: `Pacific/Guadalcanal` = "Pacific/Guadalcanal".asInstanceOf[`Pacific/Guadalcanal`]
+  def PacificSlashGuadalcanal: PacificSlashGuadalcanal = "Pacific/Guadalcanal".asInstanceOf[PacificSlashGuadalcanal]
   @scala.inline
-  def `Pacific/Guam`: `Pacific/Guam` = "Pacific/Guam".asInstanceOf[`Pacific/Guam`]
+  def PacificSlashGuam: PacificSlashGuam = "Pacific/Guam".asInstanceOf[PacificSlashGuam]
   @scala.inline
-  def `Pacific/Honolulu`: `Pacific/Honolulu` = "Pacific/Honolulu".asInstanceOf[`Pacific/Honolulu`]
+  def PacificSlashHonolulu: PacificSlashHonolulu = "Pacific/Honolulu".asInstanceOf[PacificSlashHonolulu]
   @scala.inline
-  def `Pacific/Majuro`: `Pacific/Majuro` = "Pacific/Majuro".asInstanceOf[`Pacific/Majuro`]
+  def PacificSlashMajuro: PacificSlashMajuro = "Pacific/Majuro".asInstanceOf[PacificSlashMajuro]
   @scala.inline
-  def `Pacific/Midway`: `Pacific/Midway` = "Pacific/Midway".asInstanceOf[`Pacific/Midway`]
+  def PacificSlashMidway: PacificSlashMidway = "Pacific/Midway".asInstanceOf[PacificSlashMidway]
   @scala.inline
-  def `Pacific/Noumea`: `Pacific/Noumea` = "Pacific/Noumea".asInstanceOf[`Pacific/Noumea`]
+  def PacificSlashNoumea: PacificSlashNoumea = "Pacific/Noumea".asInstanceOf[PacificSlashNoumea]
   @scala.inline
-  def `Pacific/Pago_Pago`: `Pacific/Pago_Pago` = "Pacific/Pago_Pago".asInstanceOf[`Pacific/Pago_Pago`]
+  def PacificSlashPago_Pago: PacificSlashPago_Pago = "Pacific/Pago_Pago".asInstanceOf[PacificSlashPago_Pago]
   @scala.inline
-  def `Pacific/Port_Moresby`: `Pacific/Port_Moresby` = "Pacific/Port_Moresby".asInstanceOf[`Pacific/Port_Moresby`]
+  def PacificSlashPort_Moresby: PacificSlashPort_Moresby = "Pacific/Port_Moresby".asInstanceOf[PacificSlashPort_Moresby]
   @scala.inline
-  def `Pacific/Tongatapu`: `Pacific/Tongatapu` = "Pacific/Tongatapu".asInstanceOf[`Pacific/Tongatapu`]
+  def PacificSlashTongatapu: PacificSlashTongatapu = "Pacific/Tongatapu".asInstanceOf[PacificSlashTongatapu]
 }
 

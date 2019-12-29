@@ -1,12 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Format.GIF
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Format.JPG
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Format.JPG_BASELINE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Format.PNG
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Format.PNG32
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Format.PNG8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

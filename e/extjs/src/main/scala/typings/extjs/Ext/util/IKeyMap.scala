@@ -23,7 +23,7 @@ trait IKeyMap extends IBase {
   /** [Method] Enables this KeyMap */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var eventName: js.UndefOr[java.lang.String] = js.undefined
+  var eventName: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var ignoreInputFields: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns true if this KeyMap is enabled
@@ -86,12 +86,12 @@ object IKeyMap {
     destroy: /* removeTarget */ js.UndefOr[Boolean] => Unit = null,
     disable: () => Unit = null,
     enable: () => Unit = null,
-    eventName: java.lang.String = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    eventName: String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     ignoreInputFields: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.util.IKeyMap = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IKeyMap = null,
     isEnabled: () => Boolean = null,
     mixins: js.Any = null,
     on: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,

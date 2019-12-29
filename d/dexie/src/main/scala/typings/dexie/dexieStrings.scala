@@ -118,10 +118,10 @@ object dexieStrings {
   sealed trait r extends TransactionMode
   
   @js.native
-  sealed trait `r!` extends TransactionMode
+  sealed trait rExclamationmark extends TransactionMode
   
   @js.native
-  sealed trait `r?` extends TransactionMode
+  sealed trait rQuestionmark extends TransactionMode
   
   @js.native
   sealed trait reading extends js.Object
@@ -133,10 +133,10 @@ object dexieStrings {
   sealed trait rw extends TransactionMode
   
   @js.native
-  sealed trait `rw!` extends TransactionMode
+  sealed trait rwExclamationmark extends TransactionMode
   
   @js.native
-  sealed trait `rw?` extends TransactionMode
+  sealed trait rwQuestionmark extends TransactionMode
   
   @js.native
   sealed trait updating extends js.Object
@@ -219,9 +219,9 @@ object dexieStrings {
   @scala.inline
   def r: r = "r".asInstanceOf[r]
   @scala.inline
-  def `r!`: `r!` = "r!".asInstanceOf[`r!`]
+  def rExclamationmark: rExclamationmark = "r!".asInstanceOf[rExclamationmark]
   @scala.inline
-  def `r?`: `r?` = "r?".asInstanceOf[`r?`]
+  def rQuestionmark: rQuestionmark = "r?".asInstanceOf[rQuestionmark]
   @scala.inline
   def reading: reading = "reading".asInstanceOf[reading]
   @scala.inline
@@ -229,9 +229,9 @@ object dexieStrings {
   @scala.inline
   def rw: rw = "rw".asInstanceOf[rw]
   @scala.inline
-  def `rw!`: `rw!` = "rw!".asInstanceOf[`rw!`]
+  def rwExclamationmark: rwExclamationmark = "rw!".asInstanceOf[rwExclamationmark]
   @scala.inline
-  def `rw?`: `rw?` = "rw?".asInstanceOf[`rw?`]
+  def rwQuestionmark: rwQuestionmark = "rw?".asInstanceOf[rwQuestionmark]
   @scala.inline
   def updating: updating = "updating".asInstanceOf[updating]
   @scala.inline

@@ -1,20 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.accelerometer
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.activitySensor
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.barometer
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.compass
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.customSensor
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.gyroscope
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.inclinometer
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.lightSensor
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.orientationSensor
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.pedometer
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.proximitySensor
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.relativeInclinometer
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.relativeOrientationSensor
-import typings.winrtDashUwp.Windows.Devices.Sensors.SensorType.simpleOrientationSensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

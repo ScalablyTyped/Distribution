@@ -1,7 +1,6 @@
 package typings.lasso
 
 import typings.lasso.libDependenciesMod.DependencyRegistry
-import typings.lasso.libLassoContextMod.LassoContext
 import typings.lasso.libWritersMod.Writer
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js

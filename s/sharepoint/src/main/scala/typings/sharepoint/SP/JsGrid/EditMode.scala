@@ -1,11 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.EditMode.Defer
-import typings.sharepoint.SP.JsGrid.EditMode.ReadOnly
-import typings.sharepoint.SP.JsGrid.EditMode.ReadOnlyDefer
-import typings.sharepoint.SP.JsGrid.EditMode.ReadWrite
-import typings.sharepoint.SP.JsGrid.EditMode.ReadWriteDefer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

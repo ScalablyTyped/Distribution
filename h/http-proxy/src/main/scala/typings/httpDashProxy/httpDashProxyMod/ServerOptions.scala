@@ -1,7 +1,7 @@
 package typings.httpDashProxy.httpDashProxyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.httpDashProxy.httpDashProxyNumbers.`false`
+import typings.httpDashProxy.httpDashProxyBooleans.`false`
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

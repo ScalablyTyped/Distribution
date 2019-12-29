@@ -1,9 +1,6 @@
 package typings.javaDashApplet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.javaDashApplet.JavaAppletStatus.Error
-import typings.javaDashApplet.JavaAppletStatus.Loading
-import typings.javaDashApplet.JavaAppletStatus.Ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

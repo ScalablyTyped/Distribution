@@ -2,11 +2,11 @@ package typings.luaparse.luaparseMod
 
 import typings.luaparse.libAstMod.Identifier
 import typings.luaparse.libAstMod.Node
-import typings.luaparse.luaparseNumbers.`false`
+import typings.luaparse.luaparseBooleans.`false`
 import typings.luaparse.luaparseStrings.LuaJIT
-import typings.luaparse.luaparseStrings.`5DOT1`
-import typings.luaparse.luaparseStrings.`5DOT2`
-import typings.luaparse.luaparseStrings.`5DOT3`
+import typings.luaparse.luaparseStrings.`5Dot1`
+import typings.luaparse.luaparseStrings.`5Dot2`
+import typings.luaparse.luaparseStrings.`5Dot3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait Options extends js.Object {
   /** Store location information on each syntax node. */
   var locations: Boolean
   /** The version of Lua the parser will target; supported values are '5.1', '5.2', '5.3' and 'LuaJIT'. */
-  var luaVersion: `5DOT1` | `5DOT2` | `5DOT3` | LuaJIT
+  var luaVersion: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT
   /** Store the start and end character locations on each syntax node. */
   var ranges: Boolean
   /** Track identifier scopes. */
@@ -53,7 +53,7 @@ object Options {
     comments: Boolean,
     extendedIdentifiers: `false`,
     locations: Boolean,
-    luaVersion: `5DOT1` | `5DOT2` | `5DOT3` | LuaJIT,
+    luaVersion: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT,
     onCreateNode: Node => Unit,
     onCreateScope: () => Unit,
     onDestroyScope: () => Unit,

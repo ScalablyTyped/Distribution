@@ -15,12 +15,11 @@ package object oauth2DashServerMod {
     * For returning falsey parameters in cases of failure
     */
   /* Rewritten from type alias, can be one of: 
-    - typings.oauth2DashServer.oauth2DashServerStrings.Empty
+    - typings.oauth2DashServer.oauth2DashServerStrings._empty
     - typings.oauth2DashServer.oauth2DashServerNumbers.`0`
-    - typings.oauth2DashServer.oauth2DashServerNumbers.`false`
+    - typings.oauth2DashServer.oauth2DashServerBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
   */
   type Falsey = js.UndefOr[_Falsey | Null]
   /**

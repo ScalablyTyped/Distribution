@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.__esri
 
-import typings.arcgisDashJsDashApi.IPromise
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -68,7 +67,7 @@ trait PopupViewModelProperties extends GoToProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#promises)
     */
-  var promises: js.UndefOr[js.Array[IPromise[_]]] = js.undefined
+  var promises: js.UndefOr[js.Array[js.Promise[_]]] = js.undefined
   /**
     * Index of the feature that is [selected](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature). When [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#features) are set, the first index is automatically selected.
     *
@@ -107,7 +106,7 @@ object PopupViewModelProperties {
     goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     highlightEnabled: js.UndefOr[Boolean] = js.undefined,
     location: PointProperties = null,
-    promises: js.Array[IPromise[_]] = null,
+    promises: js.Array[js.Promise[_]] = null,
     selectedFeatureIndex: Int | Double = null,
     title: String = null,
     view: MapViewProperties | SceneViewProperties = null,

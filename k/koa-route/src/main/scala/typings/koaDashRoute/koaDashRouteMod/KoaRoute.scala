@@ -4,10 +4,6 @@ import typings.koa.koaMod.Context
 import typings.koa.koaMod.DefaultContext
 import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
-import typings.koaDashRoute.koaDashRouteMod.KoaRoute.CreateRoute
-import typings.koaDashRoute.koaDashRouteMod.KoaRoute.Handler
-import typings.koaDashRoute.koaDashRouteMod.KoaRoute.Method
-import typings.koaDashRoute.koaDashRouteMod.KoaRoute.Path
 import typings.pathDashToDashRegexp.pathDashToDashRegexpMod.ParseOptions
 import typings.pathDashToDashRegexp.pathDashToDashRegexpMod.RegExpOptions
 import typings.std.RegExp

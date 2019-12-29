@@ -24,49 +24,49 @@ object msDashRestDashAzureStrings {
   sealed trait AzureUSGovernment extends js.Object
   
   @js.native
-  sealed trait DOTcoreDOTchinacloudapiDOTcn extends js.Object
+  sealed trait DotcoreDotchinacloudapiDotcn extends js.Object
   
   @js.native
-  sealed trait DOTcoreDOTcloudapiDOTde extends js.Object
+  sealed trait DotcoreDotcloudapiDotde extends js.Object
   
   @js.native
-  sealed trait DOTcoreDOTusgovcloudapiDOTnet extends js.Object
+  sealed trait DotcoreDotusgovcloudapiDotnet extends js.Object
   
   @js.native
-  sealed trait DOTcoreDOTwindowsDOTnet extends js.Object
+  sealed trait DotcoreDotwindowsDotnet extends js.Object
   
   @js.native
-  sealed trait DOTdatabaseDOTchinacloudapiDOTcn extends js.Object
+  sealed trait DotdatabaseDotchinacloudapiDotcn extends js.Object
   
   @js.native
-  sealed trait DOTdatabaseDOTcloudapiDOTde extends js.Object
+  sealed trait DotdatabaseDotcloudapiDotde extends js.Object
   
   @js.native
-  sealed trait DOTdatabaseDOTusgovcloudapiDOTnet extends js.Object
+  sealed trait DotdatabaseDotusgovcloudapiDotnet extends js.Object
   
   @js.native
-  sealed trait DOTdatabaseDOTwindowsDOTnet extends js.Object
+  sealed trait DotdatabaseDotwindowsDotnet extends js.Object
   
   @js.native
-  sealed trait DOTvaultDOTazureDOTcn extends js.Object
+  sealed trait DotvaultDotazureDotcn extends js.Object
   
   @js.native
-  sealed trait DOTvaultDOTazureDOTnet extends js.Object
+  sealed trait DotvaultDotazureDotnet extends js.Object
   
   @js.native
-  sealed trait DOTvaultDOTmicrosoftazureDOTde extends js.Object
+  sealed trait DotvaultDotmicrosoftazureDotde extends js.Object
   
   @js.native
-  sealed trait DOTvaultDOTusgovcloudapiDOTnet extends js.Object
+  sealed trait DotvaultDotusgovcloudapiDotnet extends js.Object
   
   @js.native
-  sealed trait `N/A` extends js.Object
+  sealed trait NSlashA extends js.Object
   
   @js.native
-  sealed trait azuredatalakeanalyticsDOTnet extends js.Object
+  sealed trait azuredatalakeanalyticsDotnet extends js.Object
   
   @js.native
-  sealed trait azuredatalakestoreDOTnet extends js.Object
+  sealed trait azuredatalakestoreDotnet extends js.Object
   
   @js.native
   sealed trait batch extends js.Object
@@ -75,121 +75,121 @@ object msDashRestDashAzureStrings {
   sealed trait graph extends js.Object
   
   @js.native
-  sealed trait `https://batchDOTchinacloudapiDOTcn/` extends js.Object
+  sealed trait httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash extends js.Object
   
   @js.native
-  sealed trait `https://batchDOTcoreDOTusgovcloudapiDOTnet/` extends js.Object
+  sealed trait httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash extends js.Object
   
   @js.native
-  sealed trait `https://batchDOTcoreDOTwindowsDOTnet/` extends js.Object
+  sealed trait httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash extends js.Object
   
   @js.native
-  sealed trait `https://batchDOTmicrosoftazureDOTde/` extends js.Object
+  sealed trait httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash extends js.Object
   
   @js.native
-  sealed trait `https://galleryDOTazureDOTcom/` extends js.Object
+  sealed trait httpsColonSlashSlashgalleryDotazureDotcomSlash extends js.Object
   
   @js.native
-  sealed trait `https://galleryDOTchinacloudapiDOTcn/` extends js.Object
+  sealed trait httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash extends js.Object
   
   @js.native
-  sealed trait `https://galleryDOTcloudapiDOTde/` extends js.Object
+  sealed trait httpsColonSlashSlashgalleryDotcloudapiDotdeSlash extends js.Object
   
   @js.native
-  sealed trait `https://galleryDOTusgovcloudapiDOTnet/` extends js.Object
+  sealed trait httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash extends js.Object
   
   @js.native
-  sealed trait `https://goDOTmicrosoftDOTcom/fwlink/?LinkID=301774` extends js.Object
+  sealed trait httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774 extends js.Object
   
   @js.native
-  sealed trait `https://goDOTmicrosoftDOTcom/fwlink/?LinkId=254432` extends js.Object
+  sealed trait httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432 extends js.Object
   
   @js.native
-  sealed trait `https://graphDOTchinacloudapiDOTcn/` extends js.Object
+  sealed trait httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash extends js.Object
   
   @js.native
-  sealed trait `https://graphDOTcloudapiDOTde/` extends js.Object
+  sealed trait httpsColonSlashSlashgraphDotcloudapiDotdeSlash extends js.Object
   
   @js.native
-  sealed trait `https://graphDOTwindowsDOTnet/` extends js.Object
+  sealed trait httpsColonSlashSlashgraphDotwindowsDotnetSlash extends js.Object
   
   @js.native
-  sealed trait `https://loginDOTchinacloudapiDOTcn/` extends js.Object
+  sealed trait httpsColonSlashSlashloginDotchinacloudapiDotcnSlash extends js.Object
   
   @js.native
-  sealed trait `https://loginDOTmicrosoftonlineDOTcom/` extends js.Object
+  sealed trait httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash extends js.Object
   
   @js.native
-  sealed trait `https://loginDOTmicrosoftonlineDOTde/` extends js.Object
+  sealed trait httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash extends js.Object
   
   @js.native
-  sealed trait `https://loginDOTmicrosoftonlineDOTus/` extends js.Object
+  sealed trait httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash extends js.Object
   
   @js.native
-  sealed trait `https://manageDOTmicrosoftazureDOTde/publishsettings/index` extends js.Object
+  sealed trait httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex extends js.Object
   
   @js.native
-  sealed trait `https://manageDOTwindowsazureDOTus/publishsettings/index` extends js.Object
+  sealed trait httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTazureDOTcom/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotazureDotcomSlash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTchinacloudapiDOTcn` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotchinacloudapiDotcn extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTchinacloudapiDOTcn` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTchinacloudapiDOTcn/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTchinacloudapiDOTcn:8443/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTcloudapiDOTde` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTcloudapiDOTde/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTcloudapiDOTde:8443/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTusgovcloudapiDOTnet` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTusgovcloudapiDOTnet/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTusgovcloudapiDOTnet:8443/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTwindowsDOTnet` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTwindowsDOTnet/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTcoreDOTwindowsDOTnet:8443/` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTmicrosoftazureDOTde` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotmicrosoftazureDotde extends js.Object
   
   @js.native
-  sealed trait `https://managementDOTusgovcloudapiDOTnet` extends js.Object
+  sealed trait httpsColonSlashSlashmanagementDotusgovcloudapiDotnet extends js.Object
   
   @js.native
-  sealed trait `https://portalDOTazureDOTcn` extends js.Object
+  sealed trait httpsColonSlashSlashportalDotazureDotcn extends js.Object
   
   @js.native
-  sealed trait `https://portalDOTazureDOTcom` extends js.Object
+  sealed trait httpsColonSlashSlashportalDotazureDotcom extends js.Object
   
   @js.native
-  sealed trait `https://portalDOTazureDOTus` extends js.Object
+  sealed trait httpsColonSlashSlashportalDotazureDotus extends js.Object
   
   @js.native
-  sealed trait `https://portalDOTmicrosoftazureDOTde/` extends js.Object
+  sealed trait httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash extends js.Object
   
   @scala.inline
   def `2013-04-05`: `2013-04-05` = "2013-04-05".asInstanceOf[`2013-04-05`]
@@ -204,116 +204,116 @@ object msDashRestDashAzureStrings {
   @scala.inline
   def AzureUSGovernment: AzureUSGovernment = "AzureUSGovernment".asInstanceOf[AzureUSGovernment]
   @scala.inline
-  def DOTcoreDOTchinacloudapiDOTcn: DOTcoreDOTchinacloudapiDOTcn = ".core.chinacloudapi.cn".asInstanceOf[DOTcoreDOTchinacloudapiDOTcn]
+  def DotcoreDotchinacloudapiDotcn: DotcoreDotchinacloudapiDotcn = ".core.chinacloudapi.cn".asInstanceOf[DotcoreDotchinacloudapiDotcn]
   @scala.inline
-  def DOTcoreDOTcloudapiDOTde: DOTcoreDOTcloudapiDOTde = ".core.cloudapi.de".asInstanceOf[DOTcoreDOTcloudapiDOTde]
+  def DotcoreDotcloudapiDotde: DotcoreDotcloudapiDotde = ".core.cloudapi.de".asInstanceOf[DotcoreDotcloudapiDotde]
   @scala.inline
-  def DOTcoreDOTusgovcloudapiDOTnet: DOTcoreDOTusgovcloudapiDOTnet = ".core.usgovcloudapi.net".asInstanceOf[DOTcoreDOTusgovcloudapiDOTnet]
+  def DotcoreDotusgovcloudapiDotnet: DotcoreDotusgovcloudapiDotnet = ".core.usgovcloudapi.net".asInstanceOf[DotcoreDotusgovcloudapiDotnet]
   @scala.inline
-  def DOTcoreDOTwindowsDOTnet: DOTcoreDOTwindowsDOTnet = ".core.windows.net".asInstanceOf[DOTcoreDOTwindowsDOTnet]
+  def DotcoreDotwindowsDotnet: DotcoreDotwindowsDotnet = ".core.windows.net".asInstanceOf[DotcoreDotwindowsDotnet]
   @scala.inline
-  def DOTdatabaseDOTchinacloudapiDOTcn: DOTdatabaseDOTchinacloudapiDOTcn = ".database.chinacloudapi.cn".asInstanceOf[DOTdatabaseDOTchinacloudapiDOTcn]
+  def DotdatabaseDotchinacloudapiDotcn: DotdatabaseDotchinacloudapiDotcn = ".database.chinacloudapi.cn".asInstanceOf[DotdatabaseDotchinacloudapiDotcn]
   @scala.inline
-  def DOTdatabaseDOTcloudapiDOTde: DOTdatabaseDOTcloudapiDOTde = ".database.cloudapi.de".asInstanceOf[DOTdatabaseDOTcloudapiDOTde]
+  def DotdatabaseDotcloudapiDotde: DotdatabaseDotcloudapiDotde = ".database.cloudapi.de".asInstanceOf[DotdatabaseDotcloudapiDotde]
   @scala.inline
-  def DOTdatabaseDOTusgovcloudapiDOTnet: DOTdatabaseDOTusgovcloudapiDOTnet = ".database.usgovcloudapi.net".asInstanceOf[DOTdatabaseDOTusgovcloudapiDOTnet]
+  def DotdatabaseDotusgovcloudapiDotnet: DotdatabaseDotusgovcloudapiDotnet = ".database.usgovcloudapi.net".asInstanceOf[DotdatabaseDotusgovcloudapiDotnet]
   @scala.inline
-  def DOTdatabaseDOTwindowsDOTnet: DOTdatabaseDOTwindowsDOTnet = ".database.windows.net".asInstanceOf[DOTdatabaseDOTwindowsDOTnet]
+  def DotdatabaseDotwindowsDotnet: DotdatabaseDotwindowsDotnet = ".database.windows.net".asInstanceOf[DotdatabaseDotwindowsDotnet]
   @scala.inline
-  def DOTvaultDOTazureDOTcn: DOTvaultDOTazureDOTcn = ".vault.azure.cn".asInstanceOf[DOTvaultDOTazureDOTcn]
+  def DotvaultDotazureDotcn: DotvaultDotazureDotcn = ".vault.azure.cn".asInstanceOf[DotvaultDotazureDotcn]
   @scala.inline
-  def DOTvaultDOTazureDOTnet: DOTvaultDOTazureDOTnet = ".vault.azure.net".asInstanceOf[DOTvaultDOTazureDOTnet]
+  def DotvaultDotazureDotnet: DotvaultDotazureDotnet = ".vault.azure.net".asInstanceOf[DotvaultDotazureDotnet]
   @scala.inline
-  def DOTvaultDOTmicrosoftazureDOTde: DOTvaultDOTmicrosoftazureDOTde = ".vault.microsoftazure.de".asInstanceOf[DOTvaultDOTmicrosoftazureDOTde]
+  def DotvaultDotmicrosoftazureDotde: DotvaultDotmicrosoftazureDotde = ".vault.microsoftazure.de".asInstanceOf[DotvaultDotmicrosoftazureDotde]
   @scala.inline
-  def DOTvaultDOTusgovcloudapiDOTnet: DOTvaultDOTusgovcloudapiDOTnet = ".vault.usgovcloudapi.net".asInstanceOf[DOTvaultDOTusgovcloudapiDOTnet]
+  def DotvaultDotusgovcloudapiDotnet: DotvaultDotusgovcloudapiDotnet = ".vault.usgovcloudapi.net".asInstanceOf[DotvaultDotusgovcloudapiDotnet]
   @scala.inline
-  def `N/A`: `N/A` = "N/A".asInstanceOf[`N/A`]
+  def NSlashA: NSlashA = "N/A".asInstanceOf[NSlashA]
   @scala.inline
-  def azuredatalakeanalyticsDOTnet: azuredatalakeanalyticsDOTnet = "azuredatalakeanalytics.net".asInstanceOf[azuredatalakeanalyticsDOTnet]
+  def azuredatalakeanalyticsDotnet: azuredatalakeanalyticsDotnet = "azuredatalakeanalytics.net".asInstanceOf[azuredatalakeanalyticsDotnet]
   @scala.inline
-  def azuredatalakestoreDOTnet: azuredatalakestoreDOTnet = "azuredatalakestore.net".asInstanceOf[azuredatalakestoreDOTnet]
+  def azuredatalakestoreDotnet: azuredatalakestoreDotnet = "azuredatalakestore.net".asInstanceOf[azuredatalakestoreDotnet]
   @scala.inline
   def batch: batch = "batch".asInstanceOf[batch]
   @scala.inline
   def graph: graph = "graph".asInstanceOf[graph]
   @scala.inline
-  def `https://batchDOTchinacloudapiDOTcn/`: `https://batchDOTchinacloudapiDOTcn/` = "https://batch.chinacloudapi.cn/".asInstanceOf[`https://batchDOTchinacloudapiDOTcn/`]
+  def httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash: httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash = "https://batch.chinacloudapi.cn/".asInstanceOf[httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash]
   @scala.inline
-  def `https://batchDOTcoreDOTusgovcloudapiDOTnet/`: `https://batchDOTcoreDOTusgovcloudapiDOTnet/` = "https://batch.core.usgovcloudapi.net/".asInstanceOf[`https://batchDOTcoreDOTusgovcloudapiDOTnet/`]
+  def httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash: httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash = "https://batch.core.usgovcloudapi.net/".asInstanceOf[httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash]
   @scala.inline
-  def `https://batchDOTcoreDOTwindowsDOTnet/`: `https://batchDOTcoreDOTwindowsDOTnet/` = "https://batch.core.windows.net/".asInstanceOf[`https://batchDOTcoreDOTwindowsDOTnet/`]
+  def httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash: httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash = "https://batch.core.windows.net/".asInstanceOf[httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash]
   @scala.inline
-  def `https://batchDOTmicrosoftazureDOTde/`: `https://batchDOTmicrosoftazureDOTde/` = "https://batch.microsoftazure.de/".asInstanceOf[`https://batchDOTmicrosoftazureDOTde/`]
+  def httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash: httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash = "https://batch.microsoftazure.de/".asInstanceOf[httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash]
   @scala.inline
-  def `https://galleryDOTazureDOTcom/`: `https://galleryDOTazureDOTcom/` = "https://gallery.azure.com/".asInstanceOf[`https://galleryDOTazureDOTcom/`]
+  def httpsColonSlashSlashgalleryDotazureDotcomSlash: httpsColonSlashSlashgalleryDotazureDotcomSlash = "https://gallery.azure.com/".asInstanceOf[httpsColonSlashSlashgalleryDotazureDotcomSlash]
   @scala.inline
-  def `https://galleryDOTchinacloudapiDOTcn/`: `https://galleryDOTchinacloudapiDOTcn/` = "https://gallery.chinacloudapi.cn/".asInstanceOf[`https://galleryDOTchinacloudapiDOTcn/`]
+  def httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash: httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash = "https://gallery.chinacloudapi.cn/".asInstanceOf[httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash]
   @scala.inline
-  def `https://galleryDOTcloudapiDOTde/`: `https://galleryDOTcloudapiDOTde/` = "https://gallery.cloudapi.de/".asInstanceOf[`https://galleryDOTcloudapiDOTde/`]
+  def httpsColonSlashSlashgalleryDotcloudapiDotdeSlash: httpsColonSlashSlashgalleryDotcloudapiDotdeSlash = "https://gallery.cloudapi.de/".asInstanceOf[httpsColonSlashSlashgalleryDotcloudapiDotdeSlash]
   @scala.inline
-  def `https://galleryDOTusgovcloudapiDOTnet/`: `https://galleryDOTusgovcloudapiDOTnet/` = "https://gallery.usgovcloudapi.net/".asInstanceOf[`https://galleryDOTusgovcloudapiDOTnet/`]
+  def httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash: httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash = "https://gallery.usgovcloudapi.net/".asInstanceOf[httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash]
   @scala.inline
-  def `https://goDOTmicrosoftDOTcom/fwlink/?LinkID=301774`: `https://goDOTmicrosoftDOTcom/fwlink/?LinkID=301774` = "https://go.microsoft.com/fwlink/?LinkID=301774".asInstanceOf[`https://goDOTmicrosoftDOTcom/fwlink/?LinkID=301774`]
+  def httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774 = "https://go.microsoft.com/fwlink/?LinkID=301774".asInstanceOf[httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774]
   @scala.inline
-  def `https://goDOTmicrosoftDOTcom/fwlink/?LinkId=254432`: `https://goDOTmicrosoftDOTcom/fwlink/?LinkId=254432` = "https://go.microsoft.com/fwlink/?LinkId=254432".asInstanceOf[`https://goDOTmicrosoftDOTcom/fwlink/?LinkId=254432`]
+  def httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432 = "https://go.microsoft.com/fwlink/?LinkId=254432".asInstanceOf[httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432]
   @scala.inline
-  def `https://graphDOTchinacloudapiDOTcn/`: `https://graphDOTchinacloudapiDOTcn/` = "https://graph.chinacloudapi.cn/".asInstanceOf[`https://graphDOTchinacloudapiDOTcn/`]
+  def httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash: httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash = "https://graph.chinacloudapi.cn/".asInstanceOf[httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash]
   @scala.inline
-  def `https://graphDOTcloudapiDOTde/`: `https://graphDOTcloudapiDOTde/` = "https://graph.cloudapi.de/".asInstanceOf[`https://graphDOTcloudapiDOTde/`]
+  def httpsColonSlashSlashgraphDotcloudapiDotdeSlash: httpsColonSlashSlashgraphDotcloudapiDotdeSlash = "https://graph.cloudapi.de/".asInstanceOf[httpsColonSlashSlashgraphDotcloudapiDotdeSlash]
   @scala.inline
-  def `https://graphDOTwindowsDOTnet/`: `https://graphDOTwindowsDOTnet/` = "https://graph.windows.net/".asInstanceOf[`https://graphDOTwindowsDOTnet/`]
+  def httpsColonSlashSlashgraphDotwindowsDotnetSlash: httpsColonSlashSlashgraphDotwindowsDotnetSlash = "https://graph.windows.net/".asInstanceOf[httpsColonSlashSlashgraphDotwindowsDotnetSlash]
   @scala.inline
-  def `https://loginDOTchinacloudapiDOTcn/`: `https://loginDOTchinacloudapiDOTcn/` = "https://login.chinacloudapi.cn/".asInstanceOf[`https://loginDOTchinacloudapiDOTcn/`]
+  def httpsColonSlashSlashloginDotchinacloudapiDotcnSlash: httpsColonSlashSlashloginDotchinacloudapiDotcnSlash = "https://login.chinacloudapi.cn/".asInstanceOf[httpsColonSlashSlashloginDotchinacloudapiDotcnSlash]
   @scala.inline
-  def `https://loginDOTmicrosoftonlineDOTcom/`: `https://loginDOTmicrosoftonlineDOTcom/` = "https://login.microsoftonline.com/".asInstanceOf[`https://loginDOTmicrosoftonlineDOTcom/`]
+  def httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash: httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash = "https://login.microsoftonline.com/".asInstanceOf[httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash]
   @scala.inline
-  def `https://loginDOTmicrosoftonlineDOTde/`: `https://loginDOTmicrosoftonlineDOTde/` = "https://login.microsoftonline.de/".asInstanceOf[`https://loginDOTmicrosoftonlineDOTde/`]
+  def httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash: httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash = "https://login.microsoftonline.de/".asInstanceOf[httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash]
   @scala.inline
-  def `https://loginDOTmicrosoftonlineDOTus/`: `https://loginDOTmicrosoftonlineDOTus/` = "https://login.microsoftonline.us/".asInstanceOf[`https://loginDOTmicrosoftonlineDOTus/`]
+  def httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash: httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash = "https://login.microsoftonline.us/".asInstanceOf[httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash]
   @scala.inline
-  def `https://manageDOTmicrosoftazureDOTde/publishsettings/index`: `https://manageDOTmicrosoftazureDOTde/publishsettings/index` = "https://manage.microsoftazure.de/publishsettings/index".asInstanceOf[`https://manageDOTmicrosoftazureDOTde/publishsettings/index`]
+  def httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex: httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex = "https://manage.microsoftazure.de/publishsettings/index".asInstanceOf[httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex]
   @scala.inline
-  def `https://manageDOTwindowsazureDOTus/publishsettings/index`: `https://manageDOTwindowsazureDOTus/publishsettings/index` = "https://manage.windowsazure.us/publishsettings/index".asInstanceOf[`https://manageDOTwindowsazureDOTus/publishsettings/index`]
+  def httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex: httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex = "https://manage.windowsazure.us/publishsettings/index".asInstanceOf[httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex]
   @scala.inline
-  def `https://managementDOTazureDOTcom/`: `https://managementDOTazureDOTcom/` = "https://management.azure.com/".asInstanceOf[`https://managementDOTazureDOTcom/`]
+  def httpsColonSlashSlashmanagementDotazureDotcomSlash: httpsColonSlashSlashmanagementDotazureDotcomSlash = "https://management.azure.com/".asInstanceOf[httpsColonSlashSlashmanagementDotazureDotcomSlash]
   @scala.inline
-  def `https://managementDOTchinacloudapiDOTcn`: `https://managementDOTchinacloudapiDOTcn` = "https://management.chinacloudapi.cn".asInstanceOf[`https://managementDOTchinacloudapiDOTcn`]
+  def httpsColonSlashSlashmanagementDotchinacloudapiDotcn: httpsColonSlashSlashmanagementDotchinacloudapiDotcn = "https://management.chinacloudapi.cn".asInstanceOf[httpsColonSlashSlashmanagementDotchinacloudapiDotcn]
   @scala.inline
-  def `https://managementDOTcoreDOTchinacloudapiDOTcn`: `https://managementDOTcoreDOTchinacloudapiDOTcn` = "https://management.core.chinacloudapi.cn".asInstanceOf[`https://managementDOTcoreDOTchinacloudapiDOTcn`]
+  def httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn = "https://management.core.chinacloudapi.cn".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn]
   @scala.inline
-  def `https://managementDOTcoreDOTchinacloudapiDOTcn/`: `https://managementDOTcoreDOTchinacloudapiDOTcn/` = "https://management.core.chinacloudapi.cn/".asInstanceOf[`https://managementDOTcoreDOTchinacloudapiDOTcn/`]
+  def httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash = "https://management.core.chinacloudapi.cn:8443/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash]
   @scala.inline
-  def `https://managementDOTcoreDOTchinacloudapiDOTcn:8443/`: `https://managementDOTcoreDOTchinacloudapiDOTcn:8443/` = "https://management.core.chinacloudapi.cn:8443/".asInstanceOf[`https://managementDOTcoreDOTchinacloudapiDOTcn:8443/`]
+  def httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash = "https://management.core.chinacloudapi.cn/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash]
   @scala.inline
-  def `https://managementDOTcoreDOTcloudapiDOTde`: `https://managementDOTcoreDOTcloudapiDOTde` = "https://management.core.cloudapi.de".asInstanceOf[`https://managementDOTcoreDOTcloudapiDOTde`]
+  def httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde = "https://management.core.cloudapi.de".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde]
   @scala.inline
-  def `https://managementDOTcoreDOTcloudapiDOTde/`: `https://managementDOTcoreDOTcloudapiDOTde/` = "https://management.core.cloudapi.de/".asInstanceOf[`https://managementDOTcoreDOTcloudapiDOTde/`]
+  def httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash = "https://management.core.cloudapi.de:8443/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash]
   @scala.inline
-  def `https://managementDOTcoreDOTcloudapiDOTde:8443/`: `https://managementDOTcoreDOTcloudapiDOTde:8443/` = "https://management.core.cloudapi.de:8443/".asInstanceOf[`https://managementDOTcoreDOTcloudapiDOTde:8443/`]
+  def httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash = "https://management.core.cloudapi.de/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash]
   @scala.inline
-  def `https://managementDOTcoreDOTusgovcloudapiDOTnet`: `https://managementDOTcoreDOTusgovcloudapiDOTnet` = "https://management.core.usgovcloudapi.net".asInstanceOf[`https://managementDOTcoreDOTusgovcloudapiDOTnet`]
+  def httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet = "https://management.core.usgovcloudapi.net".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet]
   @scala.inline
-  def `https://managementDOTcoreDOTusgovcloudapiDOTnet/`: `https://managementDOTcoreDOTusgovcloudapiDOTnet/` = "https://management.core.usgovcloudapi.net/".asInstanceOf[`https://managementDOTcoreDOTusgovcloudapiDOTnet/`]
+  def httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash = "https://management.core.usgovcloudapi.net:8443/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash]
   @scala.inline
-  def `https://managementDOTcoreDOTusgovcloudapiDOTnet:8443/`: `https://managementDOTcoreDOTusgovcloudapiDOTnet:8443/` = "https://management.core.usgovcloudapi.net:8443/".asInstanceOf[`https://managementDOTcoreDOTusgovcloudapiDOTnet:8443/`]
+  def httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash = "https://management.core.usgovcloudapi.net/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash]
   @scala.inline
-  def `https://managementDOTcoreDOTwindowsDOTnet`: `https://managementDOTcoreDOTwindowsDOTnet` = "https://management.core.windows.net".asInstanceOf[`https://managementDOTcoreDOTwindowsDOTnet`]
+  def httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet = "https://management.core.windows.net".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet]
   @scala.inline
-  def `https://managementDOTcoreDOTwindowsDOTnet/`: `https://managementDOTcoreDOTwindowsDOTnet/` = "https://management.core.windows.net/".asInstanceOf[`https://managementDOTcoreDOTwindowsDOTnet/`]
+  def httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash = "https://management.core.windows.net:8443/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash]
   @scala.inline
-  def `https://managementDOTcoreDOTwindowsDOTnet:8443/`: `https://managementDOTcoreDOTwindowsDOTnet:8443/` = "https://management.core.windows.net:8443/".asInstanceOf[`https://managementDOTcoreDOTwindowsDOTnet:8443/`]
+  def httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash = "https://management.core.windows.net/".asInstanceOf[httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash]
   @scala.inline
-  def `https://managementDOTmicrosoftazureDOTde`: `https://managementDOTmicrosoftazureDOTde` = "https://management.microsoftazure.de".asInstanceOf[`https://managementDOTmicrosoftazureDOTde`]
+  def httpsColonSlashSlashmanagementDotmicrosoftazureDotde: httpsColonSlashSlashmanagementDotmicrosoftazureDotde = "https://management.microsoftazure.de".asInstanceOf[httpsColonSlashSlashmanagementDotmicrosoftazureDotde]
   @scala.inline
-  def `https://managementDOTusgovcloudapiDOTnet`: `https://managementDOTusgovcloudapiDOTnet` = "https://management.usgovcloudapi.net".asInstanceOf[`https://managementDOTusgovcloudapiDOTnet`]
+  def httpsColonSlashSlashmanagementDotusgovcloudapiDotnet: httpsColonSlashSlashmanagementDotusgovcloudapiDotnet = "https://management.usgovcloudapi.net".asInstanceOf[httpsColonSlashSlashmanagementDotusgovcloudapiDotnet]
   @scala.inline
-  def `https://portalDOTazureDOTcn`: `https://portalDOTazureDOTcn` = "https://portal.azure.cn".asInstanceOf[`https://portalDOTazureDOTcn`]
+  def httpsColonSlashSlashportalDotazureDotcn: httpsColonSlashSlashportalDotazureDotcn = "https://portal.azure.cn".asInstanceOf[httpsColonSlashSlashportalDotazureDotcn]
   @scala.inline
-  def `https://portalDOTazureDOTcom`: `https://portalDOTazureDOTcom` = "https://portal.azure.com".asInstanceOf[`https://portalDOTazureDOTcom`]
+  def httpsColonSlashSlashportalDotazureDotcom: httpsColonSlashSlashportalDotazureDotcom = "https://portal.azure.com".asInstanceOf[httpsColonSlashSlashportalDotazureDotcom]
   @scala.inline
-  def `https://portalDOTazureDOTus`: `https://portalDOTazureDOTus` = "https://portal.azure.us".asInstanceOf[`https://portalDOTazureDOTus`]
+  def httpsColonSlashSlashportalDotazureDotus: httpsColonSlashSlashportalDotazureDotus = "https://portal.azure.us".asInstanceOf[httpsColonSlashSlashportalDotazureDotus]
   @scala.inline
-  def `https://portalDOTmicrosoftazureDOTde/`: `https://portalDOTmicrosoftazureDOTde/` = "https://portal.microsoftazure.de/".asInstanceOf[`https://portalDOTmicrosoftazureDOTde/`]
+  def httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash: httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash = "https://portal.microsoftazure.de/".asInstanceOf[httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash]
 }
 

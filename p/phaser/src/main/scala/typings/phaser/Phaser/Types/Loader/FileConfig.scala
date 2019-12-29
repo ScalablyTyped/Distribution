@@ -1,6 +1,6 @@
 package typings.phaser.Phaser.Types.Loader
 
-import typings.phaser.phaserNumbers.`false`
+import typings.phaser.phaserBooleans.`false`
 import typings.std.XMLHttpRequestResponseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

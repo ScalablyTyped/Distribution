@@ -1,10 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.ReceiverType.CAST
-import typings.chrome.chrome.cast.ReceiverType.CUSTOM
-import typings.chrome.chrome.cast.ReceiverType.DIAL
-import typings.chrome.chrome.cast.ReceiverType.HANGOUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

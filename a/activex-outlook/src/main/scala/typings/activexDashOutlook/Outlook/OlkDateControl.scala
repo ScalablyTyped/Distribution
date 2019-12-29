@@ -24,7 +24,8 @@ class OlkDateControl protected () extends js.Object {
   var Locked: Boolean = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkDateControl_typekey`: OlkDateControl = js.native
+  @JSName("Outlook.OlkDateControl_typekey")
+  var OutlookDotOlkDateControl_typekey: OlkDateControl = js.native
   var ShowNoneButton: Boolean = js.native
   var Text: String = js.native
   var TextAlign: OlTextAlign = js.native

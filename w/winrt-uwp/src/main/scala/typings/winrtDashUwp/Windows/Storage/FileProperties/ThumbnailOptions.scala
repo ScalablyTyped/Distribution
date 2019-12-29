@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.none
-import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.resizeThumbnail
-import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.returnOnlyIfCached
-import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.useCurrentScale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

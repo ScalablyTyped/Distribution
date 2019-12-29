@@ -1,13 +1,6 @@
 package typings.three.srcExtrasCorePathMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcExtrasCorePathMod.PathActions.ARC
-import typings.three.srcExtrasCorePathMod.PathActions.BEZIER_CURVE_TO
-import typings.three.srcExtrasCorePathMod.PathActions.CSPLINE_THRU
-import typings.three.srcExtrasCorePathMod.PathActions.ELLIPSE
-import typings.three.srcExtrasCorePathMod.PathActions.LINE_TO
-import typings.three.srcExtrasCorePathMod.PathActions.MOVE_TO
-import typings.three.srcExtrasCorePathMod.PathActions.QUADRATIC_CURVE_TO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.IDEMPOTENT
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

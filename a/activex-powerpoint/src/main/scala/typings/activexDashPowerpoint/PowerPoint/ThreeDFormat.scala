@@ -34,7 +34,8 @@ class ThreeDFormat protected () extends js.Object {
   var LightAngle: Double = js.native
   val Parent: js.Any = js.native
   var Perspective: MsoTriState = js.native
-  var `PowerPoint.ThreeDFormat_typekey`: ThreeDFormat = js.native
+  @JSName("PowerPoint.ThreeDFormat_typekey")
+  var PowerPointDotThreeDFormat_typekey: ThreeDFormat = js.native
   val PresetCamera: MsoPresetCamera = js.native
   val PresetExtrusionDirection: MsoPresetExtrusionDirection = js.native
   var PresetLighting: MsoLightRigType = js.native

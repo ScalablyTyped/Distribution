@@ -7,7 +7,7 @@ import typings.atNivoCore.atNivoCoreMod.CartesianMarkerProps
 import typings.atNivoCore.atNivoCoreMod.MotionProps
 import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
-import typings.atNivoLine.atNivoLineNumbers.`false`
+import typings.atNivoLine.atNivoLineBooleans.`false`
 import typings.atNivoLine.atNivoLineStrings.linear
 import typings.atNivoLine.atNivoLineStrings.monotoneX
 import typings.atNivoLine.atNivoLineStrings.monotoneY

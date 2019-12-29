@@ -1,7 +1,6 @@
 package typings.parchment
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.parchment.distSrcBlotEmbedMod.EmbedBlot
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

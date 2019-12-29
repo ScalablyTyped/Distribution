@@ -1,9 +1,6 @@
 package typings.atAngularCompiler.srcCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcCoreMod.MissingTranslationStrategy.Error
-import typings.atAngularCompiler.srcCoreMod.MissingTranslationStrategy.Ignore
-import typings.atAngularCompiler.srcCoreMod.MissingTranslationStrategy.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

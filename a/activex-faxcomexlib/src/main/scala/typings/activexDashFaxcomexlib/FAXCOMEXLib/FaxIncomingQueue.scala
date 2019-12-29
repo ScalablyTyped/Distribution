@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class FaxIncomingQueue protected () extends js.Object {
   /** Is queue blocked */
   var Blocked: Boolean = js.native
-  var `FAXCOMEXLib.FaxIncomingQueue_typekey`: FaxIncomingQueue = js.native
+  @JSName("FAXCOMEXLib.FaxIncomingQueue_typekey")
+  var FAXCOMEXLibDotFaxIncomingQueue_typekey: FaxIncomingQueue = js.native
   /** Get incoming job by ID */
   def GetJob(bstrJobId: String): FaxIncomingJob = js.native
   /** Collection of incoming jobs */

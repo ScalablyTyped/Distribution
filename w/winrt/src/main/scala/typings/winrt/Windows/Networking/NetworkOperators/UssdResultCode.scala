@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.NetworkOperators.UssdResultCode.actionRequired
-import typings.winrt.Windows.Networking.NetworkOperators.UssdResultCode.networkTimeout
-import typings.winrt.Windows.Networking.NetworkOperators.UssdResultCode.noActionRequired
-import typings.winrt.Windows.Networking.NetworkOperators.UssdResultCode.operationNotSupported
-import typings.winrt.Windows.Networking.NetworkOperators.UssdResultCode.otherLocalClient
-import typings.winrt.Windows.Networking.NetworkOperators.UssdResultCode.terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

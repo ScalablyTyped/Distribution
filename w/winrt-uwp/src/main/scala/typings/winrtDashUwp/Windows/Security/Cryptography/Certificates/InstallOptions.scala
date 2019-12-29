@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.InstallOptions.deleteExpired
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.InstallOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -25,7 +25,7 @@ trait IDom extends js.Object {
   		*/
   var getTarget: js.UndefOr[
     js.Function3[
-      /* selector */ js.UndefOr[java.lang.String], 
+      /* selector */ js.UndefOr[String], 
       /* maxDepth */ js.UndefOr[js.Any], 
       /* returnEl */ js.UndefOr[Boolean], 
       HTMLElement
@@ -55,7 +55,7 @@ object IDom {
     distance: Int | Double = null,
     getPageX: () => Double = null,
     getPageY: () => Double = null,
-    getTarget: (/* selector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
+    getTarget: (/* selector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => HTMLElement = null,
     getTime: () => _ = null,
     getXY: () => Array = null,
     pageX: Int | Double = null,

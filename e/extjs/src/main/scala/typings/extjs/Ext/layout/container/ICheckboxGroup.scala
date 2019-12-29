@@ -10,8 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICheckboxGroup
-  extends typings.extjs.Ext.layout.container.IContainer {
+trait ICheckboxGroup extends IContainer {
   /** [Config Option] (Boolean) */
   var autoFlex: js.UndefOr[Boolean] = js.undefined
   /** [Method] Just wait for the child items to all lay themselves out in the width we are configured to make available to them
@@ -54,12 +53,12 @@ object ICheckboxGroup {
     configureItem: /* item */ js.UndefOr[js.Any] => Unit = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     getContainerSize: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => _ = null,
     getElementTarget: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: /* item */ js.UndefOr[js.Any] => ISizePolicy = null,
     getLayoutItems: () => Array = null,
     getRenderTarget: () => IElement = null,
@@ -71,7 +70,7 @@ object ICheckboxGroup {
     initLayout: () => Unit = null,
     isLayout: js.UndefOr[Boolean] = js.undefined,
     isValidParent: () => Unit = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     mixins: js.Any = null,
     notifyOwner: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     onContentChange: /* child */ js.UndefOr[IComponent] => Boolean = null,

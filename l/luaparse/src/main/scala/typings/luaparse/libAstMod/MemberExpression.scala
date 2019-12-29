@@ -1,8 +1,8 @@
 package typings.luaparse.libAstMod
 
 import typings.luaparse.Anon_End
-import typings.luaparse.luaparseStrings.DOT
-import typings.luaparse.luaparseStrings.`:`
+import typings.luaparse.luaparseStrings.Colon
+import typings.luaparse.luaparseStrings.Dot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait MemberExpression
      with Base[typings.luaparse.luaparseStrings.MemberExpression] {
   var base: Expression
   var identifier: Identifier
-  var indexer: DOT | `:`
+  var indexer: Dot | Colon
 }
 
 object MemberExpression {
@@ -20,7 +20,7 @@ object MemberExpression {
   def apply(
     base: Expression,
     identifier: Identifier,
-    indexer: DOT | `:`,
+    indexer: Dot | Colon,
     `type`: typings.luaparse.luaparseStrings.MemberExpression,
     loc: Anon_End = null
   ): MemberExpression = {

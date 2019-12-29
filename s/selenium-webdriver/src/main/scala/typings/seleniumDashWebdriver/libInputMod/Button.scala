@@ -1,9 +1,6 @@
 package typings.seleniumDashWebdriver.libInputMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.seleniumDashWebdriver.libInputMod.Button.LEFT
-import typings.seleniumDashWebdriver.libInputMod.Button.MIDDLE
-import typings.seleniumDashWebdriver.libInputMod.Button.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

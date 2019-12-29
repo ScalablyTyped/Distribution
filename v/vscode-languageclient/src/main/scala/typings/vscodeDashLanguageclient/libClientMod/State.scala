@@ -1,9 +1,6 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashLanguageclient.libClientMod.State.Running
-import typings.vscodeDashLanguageclient.libClientMod.State.Starting
-import typings.vscodeDashLanguageclient.libClientMod.State.Stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

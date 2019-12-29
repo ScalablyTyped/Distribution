@@ -14,7 +14,7 @@ object esriRequestMod
       js.Function2[
         /* url */ String, 
         /* options */ js.UndefOr[RequestOptions], 
-        IPromise[RequestResponse]
+        js.Promise[RequestResponse]
       ]
     ]
 

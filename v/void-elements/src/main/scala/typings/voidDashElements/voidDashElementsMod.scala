@@ -3,7 +3,7 @@ package typings.voidDashElements
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import typings.std.Record
-import typings.voidDashElements.voidDashElementsNumbers.`true`
+import typings.voidDashElements.voidDashElementsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

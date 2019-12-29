@@ -2,7 +2,6 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.internalSchedulerActionMod.Action
-import typings.rxjs.internalSchedulerMod.Scheduler
 import typings.rxjs.internalTypesMod.SchedulerAction
 import typings.rxjs.internalTypesMod.SchedulerLike
 import scala.scalajs.js

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 trait XmlNamespace extends js.Object {
   /**
     * Namespace URI
-    * 
+    *
     * @type {(string |)}
     * @memberOf XmlNamespace
     */
   var namespace: String | Null
   /**
     * Prefix
-    * 
+    *
     * @type {(string |)}
     * @memberOf XmlNamespace
     */

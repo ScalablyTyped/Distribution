@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.DeleteFeedbackConstants.Model
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.DeleteFeedbackConstants.Model.CONTRACTS
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.DeleteFeedbackConstants.Model.TABLES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

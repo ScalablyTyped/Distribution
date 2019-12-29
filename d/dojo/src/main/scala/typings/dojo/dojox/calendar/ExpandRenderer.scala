@@ -4,6 +4,7 @@ import typings.dojo.Anon_Unwatch
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.columnIndex
+import typings.dojo.dojoStrings.date
 import typings.dojo.dojoStrings.down
 import typings.dojo.dojoStrings.items
 import typings.dojo.dojoStrings.owner
@@ -116,7 +117,7 @@ class ExpandRenderer () extends _WidgetBase {
   @JSName("get")
   def get_columnIndex(property: columnIndex): Double = js.native
   @JSName("get")
-  def get_date(property: typings.dojo.dojoStrings.date): Date = js.native
+  def get_date(property: date): Date = js.native
   @JSName("get")
   def get_down(property: down): Boolean = js.native
   @JSName("get")
@@ -144,7 +145,7 @@ class ExpandRenderer () extends _WidgetBase {
   @JSName("set")
   def set_columnIndex(property: columnIndex, value: Double): Unit = js.native
   @JSName("set")
-  def set_date(property: typings.dojo.dojoStrings.date, value: Date): Unit = js.native
+  def set_date(property: date, value: Date): Unit = js.native
   @JSName("set")
   def set_down(property: down, value: Boolean): Unit = js.native
   @JSName("set")
@@ -185,7 +186,7 @@ class ExpandRenderer () extends _WidgetBase {
   ): Anon_Unwatch = js.native
   @JSName("watch")
   def watch_date(
-    property: typings.dojo.dojoStrings.date,
+    property: date,
     callback: js.Function3[
       /* property */ js.UndefOr[String], 
       /* oldValue */ js.UndefOr[Date], 

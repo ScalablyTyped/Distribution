@@ -1,8 +1,6 @@
 package typings.chromeDashApps.chrome.system.powerSource
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.mains
-import typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,8 +38,7 @@ object PowerSourceType extends js.Object {
   object unknown extends TopLevel[unknown with String]
   
   /* "usb" */ @js.native
-  object usb
-    extends TopLevel[typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.usb with String]
+  object usb extends TopLevel[usb with String]
   
 }
 

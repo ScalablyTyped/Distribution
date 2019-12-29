@@ -1,13 +1,6 @@
 package typings.authmosphere
 
 import org.scalablytyped.runtime.TopLevel
-import typings.authmosphere.libSrcTypesLoggerMod.LogLevel
-import typings.authmosphere.libSrcTypesLoggerMod.LogLevel.debug
-import typings.authmosphere.libSrcTypesLoggerMod.LogLevel.error
-import typings.authmosphere.libSrcTypesLoggerMod.LogLevel.fatal
-import typings.authmosphere.libSrcTypesLoggerMod.LogLevel.info
-import typings.authmosphere.libSrcTypesLoggerMod.LogLevel.trace
-import typings.authmosphere.libSrcTypesLoggerMod.LogLevel.warn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

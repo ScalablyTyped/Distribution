@@ -13,7 +13,8 @@ class IMsoDiagram protected () extends js.Object {
   val Creator: Double = js.native
   @JSName("Nodes")
   val Nodes_Original: DiagramNodes = js.native
-  var `Office.IMsoDiagram_typekey`: IMsoDiagram = js.native
+  @JSName("Office.IMsoDiagram_typekey")
+  var OfficeDotIMsoDiagram_typekey: IMsoDiagram = js.native
   val Parent: js.Any = js.native
   var Reverse: MsoTriState = js.native
   val Type: MsoDiagramType = js.native

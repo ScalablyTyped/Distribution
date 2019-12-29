@@ -1,7 +1,7 @@
 package typings.aureliaDashBinding.aureliaDashBindingMod
 
 import typings.aureliaDashBinding.Anon_Properties
-import typings.aureliaDashBinding.aureliaDashBindingNumbers.`true`
+import typings.aureliaDashBinding.aureliaDashBindingBooleans.`true`
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
 import scala.scalajs.js

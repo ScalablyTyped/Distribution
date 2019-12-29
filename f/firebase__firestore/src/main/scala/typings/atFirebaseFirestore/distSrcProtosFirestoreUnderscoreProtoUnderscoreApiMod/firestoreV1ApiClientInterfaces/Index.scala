@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Index extends js.Object {
   var collectionId: js.UndefOr[String] = js.undefined
-  var fields: js.UndefOr[
-    js.Array[
-      typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.IndexField
-    ]
-  ] = js.undefined
+  var fields: js.UndefOr[js.Array[IndexField]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var state: js.UndefOr[IndexState] = js.undefined
 }
@@ -20,9 +16,7 @@ object Index {
   @scala.inline
   def apply(
     collectionId: String = null,
-    fields: js.Array[
-      typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.IndexField
-    ] = null,
+    fields: js.Array[IndexField] = null,
     name: String = null,
     state: IndexState = null
   ): Index = {

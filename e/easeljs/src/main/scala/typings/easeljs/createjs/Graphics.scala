@@ -1,8 +1,5 @@
 package typings.easeljs.createjs
 
-import typings.easeljs.createjs.Graphics.BeginPath
-import typings.easeljs.createjs.Graphics.Fill
-import typings.easeljs.createjs.Graphics.Stroke
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLImageElement
 import scala.scalajs.js

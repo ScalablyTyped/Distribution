@@ -9,59 +9,56 @@ import scala.scalajs.js.annotation._
 
 object typescriptStrings {
   @js.native
-  sealed trait _quote extends CompletionsTriggerCharacter
+  sealed trait `0Dot8` extends js.Object
   
   @js.native
-  sealed trait `(`
-    extends SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
-  
-  @js.native
-  sealed trait `)` extends SignatureHelpRetriggerCharacter
-  
-  @js.native
-  sealed trait `,`
-    extends SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
-  
-  @js.native
-  sealed trait `/` extends CompletionsTriggerCharacter
-  
-  @js.native
-  sealed trait `0DOT8` extends js.Object
-  
-  @js.native
-  sealed trait `3DOT7` extends js.Object
-  
-  @js.native
-  sealed trait `<`
-    extends CompletionsTriggerCharacter
-       with SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
+  sealed trait `3Dot7` extends js.Object
   
   @js.native
   sealed trait `@` extends CompletionsTriggerCharacter
   
   @js.native
-  sealed trait BACKSLASH extends CompletionsTriggerCharacter
+  sealed trait Apostrophe extends CompletionsTriggerCharacter
   
   @js.native
-  sealed trait BACKTICK extends CompletionsTriggerCharacter
+  sealed trait Comma
+    extends SignatureHelpRetriggerCharacter
+       with SignatureHelpTriggerCharacter
   
   @js.native
-  sealed trait DOT extends CompletionsTriggerCharacter
+  sealed trait Dot extends CompletionsTriggerCharacter
   
   @js.native
-  sealed trait JS extends js.Object
+  sealed trait Graveaccent extends CompletionsTriggerCharacter
   
   @js.native
-  sealed trait `action::invalidate` extends js.Object
+  sealed trait Leftparenthesis
+    extends SignatureHelpRetriggerCharacter
+       with SignatureHelpTriggerCharacter
   
   @js.native
-  sealed trait `action::packageInstalled` extends js.Object
+  sealed trait Lessthansign
+    extends CompletionsTriggerCharacter
+       with SignatureHelpRetriggerCharacter
+       with SignatureHelpTriggerCharacter
   
   @js.native
-  sealed trait `action::set` extends js.Object
+  sealed trait Quotationmark extends CompletionsTriggerCharacter
+  
+  @js.native
+  sealed trait Rightparenthesis extends SignatureHelpRetriggerCharacter
+  
+  @js.native
+  sealed trait Slash extends CompletionsTriggerCharacter
+  
+  @js.native
+  sealed trait actionColonColoninvalidate extends js.Object
+  
+  @js.native
+  sealed trait actionColonColonpackageInstalled extends js.Object
+  
+  @js.native
+  sealed trait actionColonColonset extends js.Object
   
   @js.native
   sealed trait auto extends js.Object
@@ -85,16 +82,16 @@ object typescriptStrings {
   sealed trait dts extends js.Object
   
   @js.native
-  sealed trait `event::beginInstallTypes` extends js.Object
+  sealed trait eventColonColonbeginInstallTypes extends js.Object
   
   @js.native
-  sealed trait `event::endInstallTypes` extends js.Object
+  sealed trait eventColonColonendInstallTypes extends js.Object
   
   @js.native
-  sealed trait `event::initializationFailed` extends js.Object
+  sealed trait eventColonColoninitializationFailed extends js.Object
   
   @js.native
-  sealed trait `event::typesRegistry` extends js.Object
+  sealed trait eventColonColontypesRegistry extends js.Object
   
   @js.native
   sealed trait exact extends js.Object
@@ -110,6 +107,9 @@ object typescriptStrings {
   
   @js.native
   sealed trait invoked extends js.Object
+  
+  @js.native
+  sealed trait js_ extends js.Object
   
   @js.native
   sealed trait minimal extends js.Object
@@ -136,37 +136,35 @@ object typescriptStrings {
   sealed trait typesRegistry extends js.Object
   
   @scala.inline
-  def _quote: _quote = "'".asInstanceOf[_quote]
+  def `0Dot8`: `0Dot8` = "0.8".asInstanceOf[`0Dot8`]
   @scala.inline
-  def `(`: `(` = "(".asInstanceOf[`(`]
-  @scala.inline
-  def `)`: `)` = ")".asInstanceOf[`)`]
-  @scala.inline
-  def `,`: `,` = ",".asInstanceOf[`,`]
-  @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
-  @scala.inline
-  def `0DOT8`: `0DOT8` = "0.8".asInstanceOf[`0DOT8`]
-  @scala.inline
-  def `3DOT7`: `3DOT7` = "3.7".asInstanceOf[`3DOT7`]
-  @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def `3Dot7`: `3Dot7` = "3.7".asInstanceOf[`3Dot7`]
   @scala.inline
   def `@`: `@` = "@".asInstanceOf[`@`]
   @scala.inline
-  def BACKSLASH: BACKSLASH = "\"".asInstanceOf[BACKSLASH]
+  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   @scala.inline
-  def BACKTICK: BACKTICK = "`".asInstanceOf[BACKTICK]
+  def Comma: Comma = ",".asInstanceOf[Comma]
   @scala.inline
-  def DOT: DOT = ".".asInstanceOf[DOT]
+  def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
+  def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
   @scala.inline
-  def `action::invalidate`: `action::invalidate` = "action::invalidate".asInstanceOf[`action::invalidate`]
+  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   @scala.inline
-  def `action::packageInstalled`: `action::packageInstalled` = "action::packageInstalled".asInstanceOf[`action::packageInstalled`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `action::set`: `action::set` = "action::set".asInstanceOf[`action::set`]
+  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
+  @scala.inline
+  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
+  @scala.inline
+  def Slash: Slash = "/".asInstanceOf[Slash]
+  @scala.inline
+  def actionColonColoninvalidate: actionColonColoninvalidate = "action::invalidate".asInstanceOf[actionColonColoninvalidate]
+  @scala.inline
+  def actionColonColonpackageInstalled: actionColonColonpackageInstalled = "action::packageInstalled".asInstanceOf[actionColonColonpackageInstalled]
+  @scala.inline
+  def actionColonColonset: actionColonColonset = "action::set".asInstanceOf[actionColonColonset]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -182,13 +180,13 @@ object typescriptStrings {
   @scala.inline
   def dts: dts = "dts".asInstanceOf[dts]
   @scala.inline
-  def `event::beginInstallTypes`: `event::beginInstallTypes` = "event::beginInstallTypes".asInstanceOf[`event::beginInstallTypes`]
+  def eventColonColonbeginInstallTypes: eventColonColonbeginInstallTypes = "event::beginInstallTypes".asInstanceOf[eventColonColonbeginInstallTypes]
   @scala.inline
-  def `event::endInstallTypes`: `event::endInstallTypes` = "event::endInstallTypes".asInstanceOf[`event::endInstallTypes`]
+  def eventColonColonendInstallTypes: eventColonColonendInstallTypes = "event::endInstallTypes".asInstanceOf[eventColonColonendInstallTypes]
   @scala.inline
-  def `event::initializationFailed`: `event::initializationFailed` = "event::initializationFailed".asInstanceOf[`event::initializationFailed`]
+  def eventColonColoninitializationFailed: eventColonColoninitializationFailed = "event::initializationFailed".asInstanceOf[eventColonColoninitializationFailed]
   @scala.inline
-  def `event::typesRegistry`: `event::typesRegistry` = "event::typesRegistry".asInstanceOf[`event::typesRegistry`]
+  def eventColonColontypesRegistry: eventColonColontypesRegistry = "event::typesRegistry".asInstanceOf[eventColonColontypesRegistry]
   @scala.inline
   def exact: exact = "exact".asInstanceOf[exact]
   @scala.inline
@@ -199,6 +197,8 @@ object typescriptStrings {
   def installPackage: installPackage = "installPackage".asInstanceOf[installPackage]
   @scala.inline
   def invoked: invoked = "invoked".asInstanceOf[invoked]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def minimal: minimal = "minimal".asInstanceOf[minimal]
   @scala.inline

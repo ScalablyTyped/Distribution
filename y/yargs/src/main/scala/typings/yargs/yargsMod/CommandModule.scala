@@ -1,6 +1,6 @@
 package typings.yargs.yargsMod
 
-import typings.yargs.yargsNumbers.`false`
+import typings.yargs.yargsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

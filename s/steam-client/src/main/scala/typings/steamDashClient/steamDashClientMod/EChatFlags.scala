@@ -1,10 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatFlags.InvisibleToFriends
-import typings.steamDashClient.steamDashClientMod.EChatFlags.Locked
-import typings.steamDashClient.steamDashClientMod.EChatFlags.Moderated
-import typings.steamDashClient.steamDashClientMod.EChatFlags.Unjoinable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

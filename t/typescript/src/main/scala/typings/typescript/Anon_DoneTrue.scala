@@ -1,6 +1,6 @@
 package typings.typescript
 
-import typings.typescript.typescriptNumbers.`true`
+import typings.typescript.typescriptBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

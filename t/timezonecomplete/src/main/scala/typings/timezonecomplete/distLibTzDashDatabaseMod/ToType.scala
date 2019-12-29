@@ -1,8 +1,6 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibTzDashDatabaseMod.ToType.Max
-import typings.timezonecomplete.distLibTzDashDatabaseMod.ToType.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

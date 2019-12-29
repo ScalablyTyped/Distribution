@@ -1,9 +1,6 @@
 package typings.googlemaps.google.maps.visualization
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.visualization.MapsEngineStatus.INVALID_LAYER
-import typings.googlemaps.google.maps.visualization.MapsEngineStatus.OK
-import typings.googlemaps.google.maps.visualization.MapsEngineStatus.UNKNOWN_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

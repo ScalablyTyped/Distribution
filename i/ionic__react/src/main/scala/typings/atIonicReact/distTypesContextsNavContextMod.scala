@@ -5,7 +5,6 @@ import typings.atIonicReact.atIonicReactStrings.none
 import typings.atIonicReact.atIonicReactStrings.pop
 import typings.atIonicReact.atIonicReactStrings.push
 import typings.atIonicReact.atIonicReactStrings.replace
-import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
 import typings.react.reactMod.Context
 import typings.std.HTMLElement
 import scala.scalajs.js

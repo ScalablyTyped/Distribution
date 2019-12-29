@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentOnly
-import typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithPassword
-import typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.noConsent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

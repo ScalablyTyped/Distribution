@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Input.Inking
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Input.Inking.InkRecognitionTarget.all
-import typings.winrt.Windows.UI.Input.Inking.InkRecognitionTarget.recent
-import typings.winrt.Windows.UI.Input.Inking.InkRecognitionTarget.selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
-import typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
-import typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

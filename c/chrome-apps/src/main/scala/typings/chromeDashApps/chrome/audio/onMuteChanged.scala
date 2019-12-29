@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.audio
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onMuteChanged
   extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function2[/* streamType */ js.Array[StreamType], /* isMuted */ Boolean, Unit]]
+      Event[js.Function2[/* streamType */ js.Array[StreamType], /* isMuted */ Boolean, Unit]]
     ]
 

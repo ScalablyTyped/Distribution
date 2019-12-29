@@ -1,6 +1,5 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.cesiumMod.TileProviderError.RetryFunction
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

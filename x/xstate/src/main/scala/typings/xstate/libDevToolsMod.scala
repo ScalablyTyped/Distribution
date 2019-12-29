@@ -1,6 +1,5 @@
 package typings.xstate
 
-import typings.xstate.libDevToolsMod.AnyInterpreter
 import typings.xstate.xstateMod.Interpreter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

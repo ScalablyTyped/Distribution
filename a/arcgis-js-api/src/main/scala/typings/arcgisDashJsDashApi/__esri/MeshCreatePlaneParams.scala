@@ -1,5 +1,22 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.down
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.east
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.north
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.south
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.up
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.west
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -8,11 +25,13 @@ import scala.scalajs.js.annotation._
 
 trait MeshCreatePlaneParams extends Object {
   /**
-    * Direction the plane is facing. Possible values are `east`, `west`, `north`, `south`, `up` and `down`. Defaults to `up`,
+    * Direction the plane is facing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
+    *
+    * @default "up"
     */
-  var facing: js.UndefOr[String] = js.undefined
+  var facing: js.UndefOr[east | west | north | south | up | down] = js.undefined
   /**
     * Whether to georeference relative to the globe or the projected coordinate system (PCS). This parameter is only relevant for spatial references that can be used in both local and global viewing modes (currently only WebMercator). This parameter defaults to `true` for WebMercator and WGS84, and `false` for any other PCS. When true, the mesh is created in a Cartesian system with respect to the local coordinate system on the globe and sizes are specified in meters.
     *
@@ -32,11 +51,13 @@ trait MeshCreatePlaneParams extends Object {
     */
   var size: js.UndefOr[Double | MeshCreatePlaneParamsSize] = js.undefined
   /**
-    * The unit of the size (defaults to the unit of the location's spatial reference).  **Possible Values:** millimeters | centimeters | decimeters | meters | kilometers | inches | feet | yards | miles | nautical-miles | us-feet
+    * The unit of the size (defaults to the unit of the location's spatial reference).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[
+    millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
+  ] = js.undefined
 }
 
 object MeshCreatePlaneParams {
@@ -45,11 +66,11 @@ object MeshCreatePlaneParams {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    facing: String = null,
+    facing: east | west | north | south | up | down = null,
     geographic: js.UndefOr[Boolean] = js.undefined,
     material: MeshMaterial = null,
     size: Double | MeshCreatePlaneParamsSize = null,
-    unit: String = null
+    unit: millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet` = null
   ): MeshCreatePlaneParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (facing != null) __obj.updateDynamic("facing")(facing.asInstanceOf[js.Any])

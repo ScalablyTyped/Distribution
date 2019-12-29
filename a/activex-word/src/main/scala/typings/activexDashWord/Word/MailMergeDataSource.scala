@@ -27,7 +27,8 @@ class MailMergeDataSource protected () extends js.Object {
   val RecordCount: Double = js.native
   val TableName: String = js.native
   val Type: WdMailMergeDataSource = js.native
-  var `Word.MailMergeDataSource_typekey`: MailMergeDataSource = js.native
+  @JSName("Word.MailMergeDataSource_typekey")
+  var WordDotMailMergeDataSource_typekey: MailMergeDataSource = js.native
   def Close(): Unit = js.native
   def FindRecord(FindText: String): Boolean = js.native
   def FindRecord(FindText: String, Field: js.Any): Boolean = js.native

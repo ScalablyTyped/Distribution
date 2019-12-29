@@ -1,6 +1,5 @@
 package typings.atAngularCore
 
-import typings.atAngularCore.schematicsUtilsSchematicsUnderscorePromptMod.Inquirer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

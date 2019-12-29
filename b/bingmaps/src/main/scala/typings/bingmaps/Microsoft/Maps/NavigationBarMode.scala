@@ -1,9 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.NavigationBarMode.compact
-import typings.bingmaps.Microsoft.Maps.NavigationBarMode.default
-import typings.bingmaps.Microsoft.Maps.NavigationBarMode.minified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

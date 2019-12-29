@@ -1,6 +1,7 @@
 package typings.sparqljs.sparqljsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sparqljs.sparqljsStrings.Asterisk
 import typings.sparqljs.sparqljsStrings.DESCRIBE
 import typings.sparqljs.sparqljsStrings.query
 import scala.scalajs.js
@@ -11,7 +12,7 @@ trait DescribeQuery
   extends Query
      with BaseQuery {
   var queryType: DESCRIBE
-  var variables: js.Array[typings.sparqljs.sparqljsStrings.`*` | Variable]
+  var variables: js.Array[Asterisk | Variable]
 }
 
 object DescribeQuery {
@@ -20,7 +21,7 @@ object DescribeQuery {
     prefixes: StringDictionary[String],
     queryType: DESCRIBE,
     `type`: query,
-    variables: js.Array[typings.sparqljs.sparqljsStrings.`*` | Variable],
+    variables: js.Array[Asterisk | Variable],
     base: String = null,
     values: js.Array[ValuePatternRow] = null,
     where: js.Array[Pattern] = null

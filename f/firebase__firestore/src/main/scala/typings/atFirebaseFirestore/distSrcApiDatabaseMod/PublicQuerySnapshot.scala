@@ -1,8 +1,9 @@
 package typings.atFirebaseFirestore.distSrcApiDatabaseMod
 
-import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ViewSnapshot
+import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.FirestoreDataConverter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object PublicQuerySnapshot
   extends TopLevel[
-      Instantiable3[
+      Instantiable4[
         /* _firestore */ Firestore, 
         /* _originalQuery */ typings.atFirebaseFirestore.distSrcCoreQueryMod.Query, 
         /* _snapshot */ ViewSnapshot, 
-        QuerySnapshot
+        js.UndefOr[
+          FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+        ], 
+        QuerySnapshot[js.Object]
       ]
     ]
 

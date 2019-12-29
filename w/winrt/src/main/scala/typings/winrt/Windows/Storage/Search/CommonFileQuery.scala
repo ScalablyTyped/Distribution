@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Search.CommonFileQuery.defaultQuery
-import typings.winrt.Windows.Storage.Search.CommonFileQuery.orderByDate
-import typings.winrt.Windows.Storage.Search.CommonFileQuery.orderByMusicProperties
-import typings.winrt.Windows.Storage.Search.CommonFileQuery.orderByName
-import typings.winrt.Windows.Storage.Search.CommonFileQuery.orderBySearchRank
-import typings.winrt.Windows.Storage.Search.CommonFileQuery.orderByTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

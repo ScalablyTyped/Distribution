@@ -30,7 +30,7 @@ class Control protected () extends Component {
     * @param className
     *          A string that contains the name of the CSS class to add.
     */
-  def addCssClass(className: java.lang.String): Unit = js.native
+  def addCssClass(className: String): Unit = js.native
   //#endregion
   //#region Properties
   /**
@@ -74,12 +74,12 @@ class Control protected () extends Component {
     * @param className
     *          A string that contains the name of the CSS class to remove.
     */
-  def removeCssClass(className: java.lang.String): Unit = js.native
+  def removeCssClass(className: String): Unit = js.native
   /**
     * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
     * @param className
     *          A string that contains the name of the CSS class to toggle.
     */
-  def toggleCssClass(className: java.lang.String): Unit = js.native
+  def toggleCssClass(className: String): Unit = js.native
 }
 

@@ -1,10 +1,6 @@
 package typings.reactDashRange.libTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashRange.libTypesMod.Direction.Down
-import typings.reactDashRange.libTypesMod.Direction.Left
-import typings.reactDashRange.libTypesMod.Direction.Right
-import typings.reactDashRange.libTypesMod.Direction.Up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

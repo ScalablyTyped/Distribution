@@ -35,7 +35,8 @@ class DocumentItem protected () extends js.Object {
   var MessageClass: String = js.native
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
-  var `Outlook.DocumentItem_typekey`: DocumentItem = js.native
+  @JSName("Outlook.DocumentItem_typekey")
+  var OutlookDotDocumentItem_typekey: DocumentItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

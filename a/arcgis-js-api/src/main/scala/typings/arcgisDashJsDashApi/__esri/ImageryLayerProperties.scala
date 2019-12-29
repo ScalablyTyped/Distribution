@@ -96,9 +96,12 @@ object ImageryLayerProperties {
     renderer: RendererProperties = null,
     renderingRule: RasterFunctionProperties = null,
     sourceJSON: js.Any = null,
+    timeExtent: TimeExtentProperties = null,
     timeInfo: TimeInfoProperties = null,
+    timeOffset: TimeIntervalProperties = null,
     title: String = null,
     url: String = null,
+    useViewTime: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ImageryLayerProperties = {
     val __obj = js.Dynamic.literal()
@@ -134,9 +137,12 @@ object ImageryLayerProperties {
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule.asInstanceOf[js.Any])
     if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON.asInstanceOf[js.Any])
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo.asInstanceOf[js.Any])
+    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useViewTime)) __obj.updateDynamic("useViewTime")(useViewTime.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageryLayerProperties]
   }

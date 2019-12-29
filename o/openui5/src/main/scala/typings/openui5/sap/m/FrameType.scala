@@ -1,10 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.FrameType.Auto
-import typings.openui5.sap.m.FrameType.OneByOne
-import typings.openui5.sap.m.FrameType.TwoByOne
-import typings.openui5.sap.m.FrameType.TwoThirds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

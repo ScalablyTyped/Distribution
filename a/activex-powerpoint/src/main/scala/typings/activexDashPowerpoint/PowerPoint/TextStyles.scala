@@ -10,7 +10,8 @@ class TextStyles protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TextStyles_typekey`: TextStyles = js.native
+  @JSName("PowerPoint.TextStyles_typekey")
+  var PowerPointDotTextStyles_typekey: TextStyles = js.native
   def Item(Type: PpTextStyleType): TextStyle = js.native
 }
 

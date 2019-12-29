@@ -2,7 +2,6 @@ package typings.nodegit
 
 import typings.node.Buffer
 import typings.node.fsMod.WriteStream
-import typings.nodegit.blobMod.Blob
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import scala.scalajs.js

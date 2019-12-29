@@ -1,8 +1,6 @@
 package typings.vectorious
 
 import typings.std.Int32Array
-import typings.vectorious.vectoriousMod.Matrix
-import typings.vectorious.vectoriousMod.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

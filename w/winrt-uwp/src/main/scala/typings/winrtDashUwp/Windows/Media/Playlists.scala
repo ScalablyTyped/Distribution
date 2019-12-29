@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVector
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtDashUwp.Windows.Media.Playlists.Playlist
-import typings.winrtDashUwp.Windows.Media.Playlists.PlaylistFormat
-import typings.winrtDashUwp.Windows.Media.Playlists.PlaylistFormat.m3u
-import typings.winrtDashUwp.Windows.Media.Playlists.PlaylistFormat.windowsMedia
-import typings.winrtDashUwp.Windows.Media.Playlists.PlaylistFormat.zune
 import typings.winrtDashUwp.Windows.Storage.IStorageFile
 import typings.winrtDashUwp.Windows.Storage.IStorageFolder
 import typings.winrtDashUwp.Windows.Storage.NameCollisionOption

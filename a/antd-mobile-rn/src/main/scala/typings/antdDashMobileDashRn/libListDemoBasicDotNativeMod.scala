@@ -2,7 +2,6 @@ package typings.antdDashMobileDashRn
 
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.List
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.`List Example`
-import typings.antdDashMobileDashRn.libListDemoBasicDotNativeMod.BasicListExample
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -7,7 +7,7 @@ import typings.googleDashAuthDashLibrary.Anon_CodeChallenge
 import typings.googleDashAuthDashLibrary.buildSrcAuthAuthclientMod.AuthClient
 import typings.googleDashAuthDashLibrary.buildSrcAuthLoginticketMod.LoginTicket
 import typings.googleDashAuthDashLibrary.buildSrcTransportersMod.BodyResponseCallback
-import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryStrings.`https://oauth2DOTgoogleapisDOTcom/tokeninfo`
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryStrings.httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo
 import typings.std.Error
 import typings.std.Map
 import scala.scalajs.js
@@ -225,7 +225,7 @@ object OAuth2Client extends js.Object {
     * The base endpoint for token retrieval.
     */
   val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
-  val GOOGLE_TOKEN_INFO_URL: `https://oauth2DOTgoogleapisDOTcom/tokeninfo` = js.native
+  val GOOGLE_TOKEN_INFO_URL: httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo = js.native
   /**
     * The allowed oauth token issuers.
     */

@@ -2,7 +2,6 @@ package typings.atMaterialTextfield
 
 import typings.atMaterialTextfield.helperDashTextAdapterMod.MDCTextFieldHelperTextAdapter
 import typings.atMaterialTextfield.helperDashTextFoundationMod.default
-import typings.atMaterialTextfield.helperDashTextMod.MDCTextFieldHelperText
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResetReason.fastUserSwitched
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResetReason.lowPowerExit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

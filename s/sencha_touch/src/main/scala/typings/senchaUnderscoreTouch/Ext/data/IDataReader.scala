@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait IDataReader extends IObservable {
   /** [Config Option] (String) */
-  var clientIdProperty: js.UndefOr[java.lang.String] = js.undefined
+  var clientIdProperty: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of clientIdProperty
   		* @returns String
   		*/
-  var getClientIdProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getClientIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of idProperty
   		* @returns String
   		*/
-  var getIdProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of implicitIncludes
   		* @returns Boolean
   		*/
@@ -25,7 +25,7 @@ trait IDataReader extends IObservable {
   /** [Method] Returns the value of messageProperty
   		* @returns String
   		*/
-  var getMessageProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMessageProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of model
   		* @returns Object
   		*/
@@ -38,7 +38,7 @@ trait IDataReader extends IObservable {
   /** [Method] Returns the value of rootProperty
   		* @returns String
   		*/
-  var getRootProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of successProperty
   		* @returns any
   		*/
@@ -48,11 +48,11 @@ trait IDataReader extends IObservable {
   		*/
   var getTotalProperty: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var idProperty: js.UndefOr[java.lang.String] = js.undefined
+  var idProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var implicitIncludes: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var messageProperty: js.UndefOr[java.lang.String] = js.undefined
+  var messageProperty: js.UndefOr[String] = js.undefined
   /** [Property] (Object) */
   var metaData: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Object) */
@@ -77,17 +77,17 @@ trait IDataReader extends IObservable {
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var rootProperty: js.UndefOr[java.lang.String] = js.undefined
+  var rootProperty: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of clientIdProperty
   		* @param clientIdProperty String The new value.
   		*/
-  var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of idProperty
   		* @param idProperty String The new value.
   		*/
-  var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of implicitIncludes
   		* @param implicitIncludes Boolean The new value.
   		*/
@@ -95,7 +95,7 @@ trait IDataReader extends IObservable {
   /** [Method] Sets the value of messageProperty
   		* @param messageProperty String The new value.
   		*/
-  var setMessageProperty: js.UndefOr[js.Function1[/* messageProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMessageProperty: js.UndefOr[js.Function1[/* messageProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of model
   		* @param model Object The new value.
   		*/
@@ -103,19 +103,19 @@ trait IDataReader extends IObservable {
   /** [Method] Sets the value of rootProperty
   		* @param rootProperty String The new value.
   		*/
-  var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of successProperty
   		* @param successProperty String The new value.
   		*/
-  var setSuccessProperty: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSuccessProperty: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of totalProperty
   		* @param totalProperty String The new value.
   		*/
-  var setTotalProperty: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTotalProperty: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var successProperty: js.UndefOr[java.lang.String] = js.undefined
+  var successProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var totalProperty: js.UndefOr[java.lang.String] = js.undefined
+  var totalProperty: js.UndefOr[String] = js.undefined
 }
 
 object IDataReader {
@@ -124,7 +124,7 @@ object IDataReader {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -133,38 +133,38 @@ object IDataReader {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clearListeners: () => Unit = null,
-    clientIdProperty: java.lang.String = null,
+    clientIdProperty: String = null,
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBubbleEvents: () => _ = null,
-    getClientIdProperty: () => java.lang.String = null,
+    getClientIdProperty: () => String = null,
     getId: () => _ = null,
-    getIdProperty: () => java.lang.String = null,
+    getIdProperty: () => String = null,
     getImplicitIncludes: () => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
-    getMessageProperty: () => java.lang.String = null,
+    getMessageProperty: () => String = null,
     getModel: () => _ = null,
     getResponseData: /* response */ js.UndefOr[js.Any] => _ = null,
-    getRootProperty: () => java.lang.String = null,
+    getRootProperty: () => String = null,
     getSuccessProperty: () => _ = null,
     getTotalProperty: () => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
-    idProperty: java.lang.String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
+    idProperty: String = null,
     implicitIncludes: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     listeners: js.Any = null,
-    messageProperty: java.lang.String = null,
+    messageProperty: String = null,
     metaData: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -174,28 +174,28 @@ object IDataReader {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    root: java.lang.String = null,
-    rootProperty: java.lang.String = null,
+    root: String = null,
+    rootProperty: String = null,
     self: IClass = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setClientIdProperty: /* clientIdProperty */ js.UndefOr[java.lang.String] => Unit = null,
-    setIdProperty: /* idProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setClientIdProperty: /* clientIdProperty */ js.UndefOr[String] => Unit = null,
+    setIdProperty: /* idProperty */ js.UndefOr[String] => Unit = null,
     setImplicitIncludes: /* implicitIncludes */ js.UndefOr[Boolean] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMessageProperty: /* messageProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setMessageProperty: /* messageProperty */ js.UndefOr[String] => Unit = null,
     setModel: /* model */ js.UndefOr[js.Any] => Unit = null,
-    setRootProperty: /* rootProperty */ js.UndefOr[java.lang.String] => Unit = null,
-    setSuccessProperty: /* successProperty */ js.UndefOr[java.lang.String] => Unit = null,
-    setTotalProperty: /* totalProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setRootProperty: /* rootProperty */ js.UndefOr[String] => Unit = null,
+    setSuccessProperty: /* successProperty */ js.UndefOr[String] => Unit = null,
+    setTotalProperty: /* totalProperty */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    successProperty: java.lang.String = null,
+    successProperty: String = null,
     suspendEvents: () => Unit = null,
-    totalProperty: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    totalProperty: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

@@ -1,7 +1,6 @@
 package typings.cypress.JQuery
 
 import typings.cypress.JQuery.Deferred.Callback
-import typings.cypress.JQuery.Deferred.CallbackBase
 import typings.cypress.cypressStrings.pending
 import typings.cypress.cypressStrings.rejected
 import typings.cypress.cypressStrings.resolved

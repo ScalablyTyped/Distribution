@@ -12,7 +12,8 @@ class Bibliography protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val Sources: typings.activexDashWord.Word.Sources = js.native
-  var `Word.Bibliography_typekey`: Bibliography = js.native
+  @JSName("Word.Bibliography_typekey")
+  var WordDotBibliography_typekey: Bibliography = js.native
   def GenerateUniqueTag(): String = js.native
 }
 

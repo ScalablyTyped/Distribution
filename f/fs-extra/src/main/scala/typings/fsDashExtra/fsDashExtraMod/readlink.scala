@@ -31,7 +31,7 @@ object readlink extends js.Object {
   def apply(
     path: PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -41,7 +41,7 @@ object readlink extends js.Object {
   def apply(
     path: PathLike,
     options: Null,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,

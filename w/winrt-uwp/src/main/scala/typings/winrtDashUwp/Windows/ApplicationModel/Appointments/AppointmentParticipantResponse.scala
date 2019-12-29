@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.accepted
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.declined
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.tentative
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

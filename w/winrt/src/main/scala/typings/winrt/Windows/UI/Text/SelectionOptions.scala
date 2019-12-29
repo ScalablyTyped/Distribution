@@ -1,11 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.SelectionOptions.active
-import typings.winrt.Windows.UI.Text.SelectionOptions.atEndOfLine
-import typings.winrt.Windows.UI.Text.SelectionOptions.overtype
-import typings.winrt.Windows.UI.Text.SelectionOptions.replace
-import typings.winrt.Windows.UI.Text.SelectionOptions.startActive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

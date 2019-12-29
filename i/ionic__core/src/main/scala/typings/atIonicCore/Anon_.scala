@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ extends js.Object {
   var circles: Double
   var dur: Double
-  def fn(`_`: Double, index: Double): Anon_RStyleAnonAnimationdelayLeft
+  def fn(_underscore: Double, index: Double): Anon_RStyleAnonAnimationdelayLeft
 }
 
 object Anon_ {

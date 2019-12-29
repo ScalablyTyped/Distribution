@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   /** [Property] (Boolean) */
   var activated: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[java.lang.String] = js.undefined
+  var activeCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var canActivate: js.UndefOr[Boolean] = js.undefined
   /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
@@ -37,17 +37,17 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var hideOnClick: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var href: js.UndefOr[java.lang.String] = js.undefined
+  var href: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var hrefTarget: js.UndefOr[java.lang.String] = js.undefined
+  var hrefTarget: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.undefined
+  var iconCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.menu.Menu/Object) */
   var menu: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var menuAlign: js.UndefOr[java.lang.String] = js.undefined
+  var menuAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var menuExpandDelay: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -66,7 +66,7 @@ import scala.scalajs.js.annotation._
   		* @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
   		* @returns Ext.Component[] Components which matched the selector
   		*/
-  var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.undefined
+  var query: js.UndefOr[js.Function1[js.UndefOr[String], Array]] = js.undefined
   /** [Method] Retrieves all descendant components which match the passed function
   		* @param fn Function The matcher function. It will be called with a single argument, the component being tested.
   		* @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
@@ -77,7 +77,7 @@ import scala.scalajs.js.annotation._
   		* @param id String The id to find
   		* @returns Ext.Component The matching id, null if not found
   		*/
-  var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
+  var queryById: js.UndefOr[js.Function1[js.UndefOr[String], IComponent]] = js.undefined
   /** [Method] Sets the click handler of this item
   		* @param fn Function The handler function
   		* @param scope Object The scope of the handler function
@@ -86,11 +86,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the icon on this item
   		* @param icon String The new icon
   		*/
-  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the iconCls of this item
   		* @param iconCls String The CSS class to set to iconCls
   		*/
-  var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIconCls: js.UndefOr[js.Function1[/* iconCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set a child menu for this item
   		* @param menu Ext.menu.Menu/Object A menu, or menu configuration. null may be passed to remove the menu.
   		* @param destroyMenu Boolean True to destroy any existing menu. False to prevent destruction. If not specified, the destroyMenu configuration will be used.
@@ -101,18 +101,18 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the text of this item
   		* @param text String The text
   		*/
-  var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the tooltip for this menu item
   		* @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
   		* @returns Ext.menu.Item this
   		*/
   var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Object) */
   var tooltip: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var tooltipType: js.UndefOr[java.lang.String] = js.undefined
+  var tooltipType: js.UndefOr[String] = js.undefined
 }
 
 object IItem {
@@ -120,7 +120,7 @@ object IItem {
   def apply(
     IComponent: IComponent = null,
     activated: js.UndefOr[Boolean] = js.undefined,
-    activeCls: java.lang.String = null,
+    activeCls: String = null,
     canActivate: js.UndefOr[Boolean] = js.undefined,
     child: js.UndefOr[js.Any] => _ = null,
     clickHideDelay: Int | Double = null,
@@ -129,30 +129,30 @@ object IItem {
     glyph: js.Any = null,
     handler: js.Any = null,
     hideOnClick: js.UndefOr[Boolean] = js.undefined,
-    href: java.lang.String = null,
-    hrefTarget: java.lang.String = null,
-    icon: java.lang.String = null,
-    iconCls: java.lang.String = null,
+    href: String = null,
+    hrefTarget: String = null,
+    icon: String = null,
+    iconCls: String = null,
     menu: js.Any = null,
-    menuAlign: java.lang.String = null,
+    menuAlign: String = null,
     menuExpandDelay: Int | Double = null,
     menuHideDelay: Int | Double = null,
     onRemoved: () => Unit = null,
     onRender: () => Unit = null,
     parentMenu: IMenu = null,
     plain: js.UndefOr[Boolean] = js.undefined,
-    query: js.UndefOr[java.lang.String] => Array = null,
+    query: js.UndefOr[String] => Array = null,
     queryBy: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array = null,
-    queryById: js.UndefOr[java.lang.String] => IComponent = null,
+    queryById: js.UndefOr[String] => IComponent = null,
     setHandler: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    setIcon: /* icon */ js.UndefOr[java.lang.String] => Unit = null,
-    setIconCls: /* iconCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setIcon: /* icon */ js.UndefOr[String] => Unit = null,
+    setIconCls: /* iconCls */ js.UndefOr[String] => Unit = null,
     setMenu: (/* menu */ js.UndefOr[js.Any], /* destroyMenu */ js.UndefOr[Boolean]) => Unit = null,
-    setText: /* text */ js.UndefOr[java.lang.String] => Unit = null,
+    setText: /* text */ js.UndefOr[String] => Unit = null,
     setTooltip: /* tooltip */ js.UndefOr[js.Any] => IItem = null,
-    text: java.lang.String = null,
+    text: String = null,
     tooltip: js.Any = null,
-    tooltipType: java.lang.String = null
+    tooltipType: String = null
   ): IItem = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

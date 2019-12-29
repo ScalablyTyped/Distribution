@@ -1,24 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ErrorCodes.accessDenied
-import typings.officeDashJs.Excel.ErrorCodes.apiNotFound
-import typings.officeDashJs.Excel.ErrorCodes.conflict
-import typings.officeDashJs.Excel.ErrorCodes.generalException
-import typings.officeDashJs.Excel.ErrorCodes.insertDeleteConflict
-import typings.officeDashJs.Excel.ErrorCodes.invalidArgument
-import typings.officeDashJs.Excel.ErrorCodes.invalidBinding
-import typings.officeDashJs.Excel.ErrorCodes.invalidOperation
-import typings.officeDashJs.Excel.ErrorCodes.invalidOperationInCellEditMode
-import typings.officeDashJs.Excel.ErrorCodes.invalidReference
-import typings.officeDashJs.Excel.ErrorCodes.invalidSelection
-import typings.officeDashJs.Excel.ErrorCodes.itemAlreadyExists
-import typings.officeDashJs.Excel.ErrorCodes.itemNotFound
-import typings.officeDashJs.Excel.ErrorCodes.nonBlankCellOffSheet
-import typings.officeDashJs.Excel.ErrorCodes.notImplemented
-import typings.officeDashJs.Excel.ErrorCodes.rangeExceedsLimit
-import typings.officeDashJs.Excel.ErrorCodes.requestAborted
-import typings.officeDashJs.Excel.ErrorCodes.unsupportedOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

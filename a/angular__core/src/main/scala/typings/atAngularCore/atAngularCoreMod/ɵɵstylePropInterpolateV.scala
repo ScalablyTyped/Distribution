@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵɵstylePropInterpolateV")
+@JSImport("@angular/core", "\u0275\u0275stylePropInterpolateV")
 @js.native
 object ɵɵstylePropInterpolateV extends js.Object {
   def apply(prop: String, values: js.Array[_]): TsickleIssue1009 = js.native

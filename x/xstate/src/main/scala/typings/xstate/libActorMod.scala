@@ -1,6 +1,5 @@
 package typings.xstate
 
-import typings.xstate.libActorMod.Actor
 import typings.xstate.libTypesMod.AnyEventObject
 import typings.xstate.libTypesMod.EventObject
 import typings.xstate.libTypesMod.InvokeDefinition

@@ -1,23 +1,6 @@
 package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Input.GestureSettings.crossSlide
-import typings.winrt.Windows.UI.Input.GestureSettings.doubleTap
-import typings.winrt.Windows.UI.Input.GestureSettings.drag
-import typings.winrt.Windows.UI.Input.GestureSettings.hold
-import typings.winrt.Windows.UI.Input.GestureSettings.holdWithMouse
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationRotate
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationRotateInertia
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationScale
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationScaleInertia
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationTranslateInertia
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationTranslateRailsX
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationTranslateRailsY
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationTranslateX
-import typings.winrt.Windows.UI.Input.GestureSettings.manipulationTranslateY
-import typings.winrt.Windows.UI.Input.GestureSettings.none
-import typings.winrt.Windows.UI.Input.GestureSettings.rightTap
-import typings.winrt.Windows.UI.Input.GestureSettings.tap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

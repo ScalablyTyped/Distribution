@@ -1,7 +1,7 @@
 package typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreEncryptionMod
 
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.AES256
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.`aws:kms`
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.awsColonkms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait _Encryption extends js.Object {
   /**
     * <p>The server-side encryption algorithm used when storing job results in Amazon S3 (e.g., AES256, aws:kms).</p>
     */
-  var EncryptionType: AES256 | `aws:kms` | String
+  var EncryptionType: AES256 | awsColonkms | String
   /**
     * <p>If the encryption type is aws:kms, this optional value can be used to specify the encryption context for the restore results.</p>
     */
@@ -23,7 +23,7 @@ trait _Encryption extends js.Object {
 
 object _Encryption {
   @scala.inline
-  def apply(EncryptionType: AES256 | `aws:kms` | String, KMSContext: String = null, KMSKeyId: String = null): _Encryption = {
+  def apply(EncryptionType: AES256 | awsColonkms | String, KMSContext: String = null, KMSKeyId: String = null): _Encryption = {
     val __obj = js.Dynamic.literal(EncryptionType = EncryptionType.asInstanceOf[js.Any])
     if (KMSContext != null) __obj.updateDynamic("KMSContext")(KMSContext.asInstanceOf[js.Any])
     if (KMSKeyId != null) __obj.updateDynamic("KMSKeyId")(KMSKeyId.asInstanceOf[js.Any])

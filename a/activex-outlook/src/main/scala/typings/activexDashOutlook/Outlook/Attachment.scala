@@ -14,7 +14,8 @@ class Attachment protected () extends js.Object {
   val FileName: String = js.native
   val Index: Double = js.native
   val MAPIOBJECT: js.Any = js.native
-  var `Outlook.Attachment_typekey`: Attachment = js.native
+  @JSName("Outlook.Attachment_typekey")
+  var OutlookDotAttachment_typekey: Attachment = js.native
   val Parent: js.Any = js.native
   val PathName: String = js.native
   var Position: Double = js.native

@@ -51,12 +51,6 @@ object tslintNumbers {
     extends TypeFailure
        with TypeKind
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -73,9 +67,5 @@ object tslintNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

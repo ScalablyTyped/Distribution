@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait CloseEventArgs extends js.Object {
   /** returns the menu model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Menu.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the target element
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -18,7 +18,7 @@ trait CloseEventArgs extends js.Object {
 
 object CloseEventArgs {
   @scala.inline
-  def apply(model: typings.ejDotWebDotAll.ej.Menu.Model = null, target: js.Any = null, `type`: String = null): CloseEventArgs = {
+  def apply(model: Model = null, target: js.Any = null, `type`: String = null): CloseEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageCoverStyle.landscape
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageCoverStyle.portrait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

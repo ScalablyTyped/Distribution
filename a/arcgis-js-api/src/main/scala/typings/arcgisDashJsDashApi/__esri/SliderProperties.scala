@@ -2,7 +2,12 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`horizontal-reversed`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertical-reversed`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -192,10 +197,10 @@ object SliderProperties {
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggableSegmentsEnabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
-    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Double = null,
+    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
+    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double = null,
     label: String = null,
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
     labelInputsEnabled: js.UndefOr[Boolean] = js.undefined,
     labelsVisible: js.UndefOr[Boolean] = js.undefined,
     layout: horizontal | `horizontal-reversed` | vertical | `vertical-reversed` = null,

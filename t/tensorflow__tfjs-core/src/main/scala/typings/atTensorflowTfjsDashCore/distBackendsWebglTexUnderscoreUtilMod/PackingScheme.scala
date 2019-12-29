@@ -1,8 +1,6 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PackingScheme.DENSE
-import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PackingScheme.SHARED_BATCH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

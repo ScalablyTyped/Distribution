@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.audio
-import typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.timedMetadata
-import typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.parchment
 
-import typings.parchment.distSrcBlotAbstractLeafMod.LeafBlot
 import typings.parchment.distSrcRegistryMod.Scope
 import typings.std.Node
 import scala.scalajs.js

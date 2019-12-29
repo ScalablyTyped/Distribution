@@ -1,16 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.PlayerState.ended
-import typings.playerframework.PlayerFramework.PlayerState.ending
-import typings.playerframework.PlayerFramework.PlayerState.failed
-import typings.playerframework.PlayerFramework.PlayerState.loaded
-import typings.playerframework.PlayerFramework.PlayerState.loading
-import typings.playerframework.PlayerFramework.PlayerState.opened
-import typings.playerframework.PlayerFramework.PlayerState.pending
-import typings.playerframework.PlayerFramework.PlayerState.started
-import typings.playerframework.PlayerFramework.PlayerState.starting
-import typings.playerframework.PlayerFramework.PlayerState.unloaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

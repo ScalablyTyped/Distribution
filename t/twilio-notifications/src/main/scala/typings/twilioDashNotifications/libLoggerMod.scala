@@ -1,6 +1,5 @@
 package typings.twilioDashNotifications
 
-import typings.twilioDashNotifications.libLoggerMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

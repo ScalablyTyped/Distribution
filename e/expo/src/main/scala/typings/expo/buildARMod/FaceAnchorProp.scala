@@ -1,8 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.FaceAnchorProp.BlendShapes
-import typings.expo.buildARMod.FaceAnchorProp.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

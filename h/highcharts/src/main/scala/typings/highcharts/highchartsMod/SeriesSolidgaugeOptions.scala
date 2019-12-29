@@ -166,7 +166,7 @@ object SeriesSolidgaugeOptions {
     showInLegend: js.UndefOr[Boolean] = js.undefined,
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
     tooltip: PlotSolidgaugeTooltipOptions = null,

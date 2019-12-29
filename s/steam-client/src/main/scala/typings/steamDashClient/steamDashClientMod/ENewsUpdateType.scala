@@ -1,11 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ENewsUpdateType.AppNews
-import typings.steamDashClient.steamDashClientMod.ENewsUpdateType.CDDBUpdate
-import typings.steamDashClient.steamDashClientMod.ENewsUpdateType.ClientUpdate
-import typings.steamDashClient.steamDashClientMod.ENewsUpdateType.SteamAds
-import typings.steamDashClient.steamDashClientMod.ENewsUpdateType.SteamNews
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

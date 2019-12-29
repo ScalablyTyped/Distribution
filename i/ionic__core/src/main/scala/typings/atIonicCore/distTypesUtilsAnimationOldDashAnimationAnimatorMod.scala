@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atIonicCore.atIonicCoreNumbers.`32`
 import typings.atIonicCore.atIonicCoreNumbers.`400`
 import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.PlayOptions
-import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimatorMod.Animator
 import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.NodeList

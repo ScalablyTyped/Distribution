@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.deletingImportedItemsFromSource
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.findingItems
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.importingItems
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.notStarted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵsetClassMetadata")
+@JSImport("@angular/core", "\u0275setClassMetadata")
 @js.native
 object ɵsetClassMetadata extends js.Object {
   def apply(`type`: Type[_]): Unit = js.native

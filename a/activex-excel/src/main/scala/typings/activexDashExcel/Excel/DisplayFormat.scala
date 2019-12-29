@@ -12,7 +12,8 @@ class DisplayFormat protected () extends js.Object {
   @JSName("Borders")
   val Borders_Original: Borders = js.native
   val Creator: XlCreator = js.native
-  var `Excel.DisplayFormat_typekey`: DisplayFormat = js.native
+  @JSName("Excel.DisplayFormat_typekey")
+  var ExcelDotDisplayFormat_typekey: DisplayFormat = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val FormulaHidden: Boolean | Null = js.native
   val HorizontalAlignment: js.Any = js.native

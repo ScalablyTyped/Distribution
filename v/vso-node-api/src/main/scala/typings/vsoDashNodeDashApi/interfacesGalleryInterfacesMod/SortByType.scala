@@ -1,18 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Author
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.AverageRating
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.InstallCount
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.LastUpdatedDate
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.PublishedDate
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.ReleaseDate
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Relevance
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Title
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingDaily
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingMonthly
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingWeekly
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.WeightedRating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

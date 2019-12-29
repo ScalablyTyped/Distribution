@@ -1,12 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Area.S7AreaCT
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Area.S7AreaDB
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Area.S7AreaMK
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Area.S7AreaPA
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Area.S7AreaPE
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Area.S7AreaTM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

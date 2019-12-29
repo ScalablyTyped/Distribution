@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.sharepoint.SP.Video.EmbedCodeConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +38,7 @@ object Video extends js.Object {
   object VideoSet extends js.Object {
     def createVideo(context: ClientContext, parentFolder: Folder, name: String, ctid: ContentTypeId): StringResult = js.native
     def getEmbedCode(context: ClientContext, videoPath: String, properties: EmbedCodeConfiguration): StringResult = js.native
-    def migrateVideo[T](context: ClientContext, videoFile: File): typings.sharepoint.SP.ListItem[T] = js.native
+    def migrateVideo[T](context: ClientContext, videoFile: File): ListItem[T] = js.native
     def uploadVideo(
       context: ClientContext,
       list: List[_],

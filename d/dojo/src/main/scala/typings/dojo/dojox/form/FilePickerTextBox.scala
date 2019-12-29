@@ -172,16 +172,16 @@ class FilePickerTextBox () extends ValidationTextBox {
     */
   def loadDropDown(loadCallback: js.Function): Unit = js.native
   /**
-    *
-    */
-  def openDropDown(): Unit = js.native
-  /**
     * Opens the dropdown for this widget.   To be called only when this.dropDown
     * has been created and is ready to display (ie, it's data is loaded).
     * 
     */
+  def openDropDown(): js.Any = js.native
+  /**
+    *
+    */
   @JSName("openDropDown")
-  def openDropDown_Any(): js.Any = js.native
+  def openDropDown_Unit(): Unit = js.native
   @JSName("set")
   def set_autoWidth(property: autoWidth, value: Boolean): Unit = js.native
   @JSName("set")

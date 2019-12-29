@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.invalidRecipientAddress
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.networkConnectivity
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.serviceDenied
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.timeout
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

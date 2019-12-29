@@ -12,19 +12,22 @@ trait Sheet
   */
 /* cell */ StringDictionary[CellObject | SheetKeys | js.Any] {
   /** Page Margins */
-  var `!margins`: js.UndefOr[MarginInfo] = js.undefined
+  @JSName("!margins")
+  var Exclamationmarkmargins: js.UndefOr[MarginInfo] = js.undefined
   /** Sheet Range */
-  var `!ref`: js.UndefOr[String] = js.undefined
+  @JSName("!ref")
+  var Exclamationmarkref: js.UndefOr[String] = js.undefined
   /** Sheet type */
-  var `!type`: js.UndefOr[SheetType] = js.undefined
+  @JSName("!type")
+  var Exclamationmarktype: js.UndefOr[SheetType] = js.undefined
 }
 
 object Sheet {
   @scala.inline
   def apply(
-    `!margins`: MarginInfo = null,
-    `!ref`: String = null,
-    `!type`: SheetType = null,
+    Exclamationmarkmargins: MarginInfo = null,
+    Exclamationmarkref: String = null,
+    Exclamationmarktype: SheetType = null,
     StringDictionary: /**
     * Indexing with a cell address string maps to a cell object
     * Special keys start with '!'
@@ -32,9 +35,9 @@ object Sheet {
   /* cell */ StringDictionary[CellObject | SheetKeys | js.Any] = null
   ): Sheet = {
     val __obj = js.Dynamic.literal()
-    if (`!margins` != null) __obj.updateDynamic("!margins")(`!margins`.asInstanceOf[js.Any])
-    if (`!ref` != null) __obj.updateDynamic("!ref")(`!ref`.asInstanceOf[js.Any])
-    if (`!type` != null) __obj.updateDynamic("!type")(`!type`.asInstanceOf[js.Any])
+    if (Exclamationmarkmargins != null) __obj.updateDynamic("!margins")(Exclamationmarkmargins.asInstanceOf[js.Any])
+    if (Exclamationmarkref != null) __obj.updateDynamic("!ref")(Exclamationmarkref.asInstanceOf[js.Any])
+    if (Exclamationmarktype != null) __obj.updateDynamic("!type")(Exclamationmarktype.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Sheet]
   }

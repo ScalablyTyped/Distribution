@@ -138,7 +138,7 @@ package object p5Mod {
   type GRAY = gray
   type GRID = grid
   // Work-around for p5.Graphics inheriting from both p5 and p5.Element
-  type Graphics = __Graphics__ with typings.p5.p5Mod.p5
+  type Graphics = __Graphics__ with p5
   type HAND = hand
   type HARD_LIGHT = `hard-light`
   type HORIZ_ALIGN = LEFT | CENTER | RIGHT

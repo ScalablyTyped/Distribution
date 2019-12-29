@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.ISVGPathSegLinetoHorizontalRel")
 @js.native
 class ISVGPathSegLinetoHorizontalRel protected () extends js.Object {
-  var `MSHTML.ISVGPathSegLinetoHorizontalRel_typekey`: ISVGPathSegLinetoHorizontalRel = js.native
+  @JSName("MSHTML.ISVGPathSegLinetoHorizontalRel_typekey")
+  var MSHTMLDotISVGPathSegLinetoHorizontalRel_typekey: ISVGPathSegLinetoHorizontalRel = js.native
   var x: Double = js.native
 }
 

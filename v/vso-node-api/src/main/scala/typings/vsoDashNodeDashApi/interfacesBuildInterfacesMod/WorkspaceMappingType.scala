@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.WorkspaceMappingType.Cloak
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.WorkspaceMappingType.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

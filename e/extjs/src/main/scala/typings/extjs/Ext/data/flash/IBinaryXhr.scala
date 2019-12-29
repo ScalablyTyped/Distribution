@@ -57,7 +57,7 @@ trait IBinaryXhr extends IBase {
   /** [Property] (number) */
   var status: js.UndefOr[Double] = js.undefined
   /** [Property] (String) */
-  var statusText: js.UndefOr[java.lang.String] = js.undefined
+  var statusText: js.UndefOr[String] = js.undefined
 }
 
 object IBinaryXhr {
@@ -70,9 +70,9 @@ object IBinaryXhr {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getAllResponseHeaders: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getResponseHeader: /* header */ js.UndefOr[js.Any] => Unit = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IBinaryXhr = null,
@@ -89,7 +89,7 @@ object IBinaryXhr {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     status: Int | Double = null,
-    statusText: java.lang.String = null,
+    statusText: String = null,
     uses: Array = null
   ): IBinaryXhr = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.antd.libModalModalMod
 
-import typings.antd.antdNumbers.`false`
+import typings.antd.antdBooleans.`false`
 import typings.antd.libButtonButtonMod.ButtonType
 import typings.antd.libButtonButtonMod.NativeButtonProps
 import typings.react.reactMod.CSSProperties

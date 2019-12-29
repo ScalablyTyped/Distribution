@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`batch/v2alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.batchSlashv2alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait CronJob extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `batch/v2alpha1`
+  val apiVersion: batchSlashv2alpha1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -44,7 +44,7 @@ trait CronJob extends js.Object {
 object CronJob {
   @scala.inline
   def apply(
-    apiVersion: `batch/v2alpha1`,
+    apiVersion: batchSlashv2alpha1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.CronJob,
     metadata: ObjectMeta,
     spec: CronJobSpec,

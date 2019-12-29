@@ -1,7 +1,7 @@
 package typings.tinyDashSliderDashReact.tinyDashSliderDashReactMod
 
 import typings.std.HTMLElement
-import typings.tinyDashSliderDashReact.tinyDashSliderDashReactNumbers.`false`
+import typings.tinyDashSliderDashReact.tinyDashSliderDashReactBooleans.`false`
 import typings.tinyDashSliderDashReact.tinyDashSliderDashReactStrings.backward
 import typings.tinyDashSliderDashReact.tinyDashSliderDashReactStrings.carousel
 import typings.tinyDashSliderDashReact.tinyDashSliderDashReactStrings.forward

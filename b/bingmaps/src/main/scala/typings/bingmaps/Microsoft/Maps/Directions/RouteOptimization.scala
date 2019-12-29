@@ -1,13 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeMoney
-import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeTransfers
-import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeWalking
-import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.shortestDistance
-import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.shortestTime
-import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.timeAvoidClosure
-import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.timeWithTraffic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.fastDashCsv
 
-import typings.fastDashCsv.buildSrcParserCsvParserStreamMod.CsvParserStream
 import typings.fastDashCsv.buildSrcParserParserOptionsMod.ParserOptions
 import typings.fastDashCsv.buildSrcParserTypesMod.RowTransformFunction
 import typings.fastDashCsv.buildSrcParserTypesMod.RowValidate

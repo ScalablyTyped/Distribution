@@ -1,98 +1,98 @@
 package typings.minecraftDashScriptingDashTypesDashShared
 
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:blockbreak`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:blockdust`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:bubble`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:crit`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:dragonbreath`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:driplava`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:dripwater`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:enchantingtable`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:endrod`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:evaporation`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:explode`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:fallingdust`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:fireworksspark`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:flame`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:heart`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:hugeexplosion`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:iconcrack`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:ink`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:largeexplode`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:largesmoke`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:lava`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobappearance`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobflame`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobspell`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobspellambient`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobspellinstantaneous`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:nautilus`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:note`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:portal`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:rainsplash`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:reddust`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:slime`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:smoke`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:snowballpoof`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:spell`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:terrain`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:totem`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:townaura`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:trackingemitter`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:villagerangry`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:villagerhappy`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:watersplash`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:waterwake`
-import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:witchspell`
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonblockbreak
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonblockdust
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonbubble
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColoncrit
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColondragonbreath
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColondriplava
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColondripwater
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonenchantingtable
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonendrod
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonevaporation
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonexplode
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonfallingdust
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonfireworksspark
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonflame
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonheart
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonhugeexplosion
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColoniconcrack
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonink
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonlargeexplode
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonlargesmoke
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonlava
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobappearance
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobflame
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobspell
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobspellambient
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobspellinstantaneous
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonnautilus
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonnote
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonportal
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonrainsplash
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonreddust
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonslime
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonsmoke
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonsnowballpoof
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonspell
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonterrain
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColontotem
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColontownaura
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColontrackingemitter
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonvillagerangry
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonvillagerhappy
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonwatersplash
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonwaterwake
+import typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonwitchspell
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobspellambient`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:villagerangry`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:blockbreak`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:blockdust`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:bubble`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:evaporation`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:crit`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:dragonbreath`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:driplava`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:dripwater`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:reddust`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:spell`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobappearance`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:enchantingtable`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:endrod`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobspell`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:largeexplode`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:fallingdust`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:fireworksspark`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:waterwake`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:flame`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:villagerhappy`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:heart`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:hugeexplosion`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobspellinstantaneous`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:iconcrack`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:slime`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:snowballpoof`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:largesmoke`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:lava`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:mobflame`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:townaura`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:nautilus`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:note`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:explode`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:portal`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:rainsplash`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:smoke`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:watersplash`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:ink`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:terrain`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:totem`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:trackingemitter`
-  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.`minecraft:witchspell`
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobspellambient
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonvillagerangry
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonblockbreak
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonblockdust
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonbubble
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonevaporation
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColoncrit
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColondragonbreath
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColondriplava
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColondripwater
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonreddust
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonspell
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobappearance
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonenchantingtable
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonendrod
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobspell
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonlargeexplode
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonfallingdust
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonfireworksspark
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonwaterwake
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonflame
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonvillagerhappy
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonheart
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonhugeexplosion
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobspellinstantaneous
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColoniconcrack
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonslime
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonsnowballpoof
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonlargesmoke
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonlava
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonmobflame
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColontownaura
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonnautilus
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonnote
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonexplode
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonportal
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonrainsplash
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonsmoke
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonwatersplash
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonink
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonterrain
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColontotem
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColontrackingemitter
+  - typings.minecraftDashScriptingDashTypesDashShared.minecraftDashScriptingDashTypesDashSharedStrings.minecraftColonwitchspell
 */
 trait MinecraftParticleEffect extends js.Object
 
@@ -101,223 +101,223 @@ object MinecraftParticleEffect {
     * Breaking blocks, sprinting, iron golems walking
     */
   @scala.inline
-  def BlockBreak: `minecraft:blockbreak` = this.cast("minecraft:blockbreak")
+  def BlockBreak: minecraftColonblockbreak = this.cast("minecraft:blockbreak")
   /**
     * Breaking armor stands, falling
     */
   @scala.inline
-  def BlockDust: `minecraft:blockdust` = this.cast("minecraft:blockdust")
+  def BlockDust: minecraftColonblockdust = this.cast("minecraft:blockdust")
   /**
     * Entities in water, guardian laser beams, fishing
     */
   @scala.inline
-  def Bubble: `minecraft:bubble` = this.cast("minecraft:bubble")
+  def Bubble: minecraftColonbubble = this.cast("minecraft:bubble")
   /**
     * Critical hits, bows, evoker fangs
     */
   @scala.inline
-  def CriticalHit: `minecraft:crit` = this.cast("minecraft:crit")
+  def CriticalHit: minecraftColoncrit = this.cast("minecraft:crit")
   /**
     * 	An ender dragon's breath and dragon fireballs
     */
   @scala.inline
-  def DragonBreath: `minecraft:dragonbreath` = this.cast("minecraft:dragonbreath")
+  def DragonBreath: minecraftColondragonbreath = this.cast("minecraft:dragonbreath")
   /**
     * Dripping lava through blocks
     */
   @scala.inline
-  def DripLava: `minecraft:driplava` = this.cast("minecraft:driplava")
+  def DripLava: minecraftColondriplava = this.cast("minecraft:driplava")
   /**
     * 	Dripping water through blocks, wet sponges, leaves when raining
     */
   @scala.inline
-  def DripWater: `minecraft:dripwater` = this.cast("minecraft:dripwater")
+  def DripWater: minecraftColondripwater = this.cast("minecraft:dripwater")
   /**
     * From bookshelves near an enchanting table.
     */
   @scala.inline
-  def EnchantingTable: `minecraft:enchantingtable` = this.cast("minecraft:enchantingtable")
+  def EnchantingTable: minecraftColonenchantingtable = this.cast("minecraft:enchantingtable")
   /**
     * End rods, shulker bullets.
     */
   @scala.inline
-  def EndRod: `minecraft:endrod` = this.cast("minecraft:endrod")
+  def EndRod: minecraftColonendrod = this.cast("minecraft:endrod")
   /**
     * After jumping into water while on fire
     */
   @scala.inline
-  def Evaporation: `minecraft:evaporation` = this.cast("minecraft:evaporation")
+  def Evaporation: minecraftColonevaporation = this.cast("minecraft:evaporation")
   /**
     * Explosions, death of mobs, mobs spawned from a spawner, silverfish infesting blocks.
     */
   @scala.inline
-  def Explode: `minecraft:explode` = this.cast("minecraft:explode")
+  def Explode: minecraftColonexplode = this.cast("minecraft:explode")
   /**
     * Floating sand, gravel, concrete powder, and anvils.
     */
   @scala.inline
-  def FallingDust: `minecraft:fallingdust` = this.cast("minecraft:fallingdust")
+  def FallingDust: minecraftColonfallingdust = this.cast("minecraft:fallingdust")
   /**
     * Firework rocket trail and explosion (trail is not shown when the "minimal" particle setting is used), when dolphins track shipwrecks and underwater ruins.
     */
   @scala.inline
-  def FireworksSpark: `minecraft:fireworksspark` = this.cast("minecraft:fireworksspark")
+  def FireworksSpark: minecraftColonfireworksspark = this.cast("minecraft:fireworksspark")
   /**
     * 	Torches, furnaces, magma cubes, spawners.
     */
   @scala.inline
-  def Flame: `minecraft:flame` = this.cast("minecraft:flame")
+  def Flame: minecraftColonflame = this.cast("minecraft:flame")
   /**
     * Breeding and taming animals.
     */
   @scala.inline
-  def Heart: `minecraft:heart` = this.cast("minecraft:heart")
+  def Heart: minecraftColonheart = this.cast("minecraft:heart")
   /**
     * Explosions, ender dragon death.
     */
   @scala.inline
-  def HugeExplosion: `minecraft:hugeexplosion` = this.cast("minecraft:hugeexplosion")
+  def HugeExplosion: minecraftColonhugeexplosion = this.cast("minecraft:hugeexplosion")
   /**
     * 	Eating, thrown eggs, splash potions, eyes of ender, breaking tools.
     */
   @scala.inline
-  def IconCrack: `minecraft:iconcrack` = this.cast("minecraft:iconcrack")
+  def IconCrack: minecraftColoniconcrack = this.cast("minecraft:iconcrack")
   /**
     * Produced by squids when attacked
     */
   @scala.inline
-  def Ink: `minecraft:ink` = this.cast("minecraft:ink")
+  def Ink: minecraftColonink = this.cast("minecraft:ink")
   /**
     * Explosions, ghast fireballs, wither skulls, ender dragon death, shearing mooshrooms.
     */
   @scala.inline
-  def LargeExplosion: `minecraft:largeexplode` = this.cast("minecraft:largeexplode")
+  def LargeExplosion: minecraftColonlargeexplode = this.cast("minecraft:largeexplode")
   /**
     * Fire, minecart with furnace, blazes, water flowing into lava, lava flowing into water.
     */
   @scala.inline
-  def LargeSmoke: `minecraft:largesmoke` = this.cast("minecraft:largesmoke")
+  def LargeSmoke: minecraftColonlargesmoke = this.cast("minecraft:largesmoke")
   /**
     * Lava
     */
   @scala.inline
-  def Lava: `minecraft:lava` = this.cast("minecraft:lava")
+  def Lava: minecraftColonlava = this.cast("minecraft:lava")
   /**
     * Elder Gardians
     * note: wiki has a question mark
     */
   @scala.inline
-  def MobAppearance: `minecraft:mobappearance` = this.cast("minecraft:mobappearance")
+  def MobAppearance: minecraftColonmobappearance = this.cast("minecraft:mobappearance")
   /**
     * Burning entities, blazes for example.
     */
   @scala.inline
-  def MobFlame: `minecraft:mobflame` = this.cast("minecraft:mobflame")
+  def MobFlame: minecraftColonmobflame = this.cast("minecraft:mobflame")
   /**
     * 	Status effects, lingering potions, tipped arrows, trading, withered armor (linger potion particles decrease when the "minimal" particle setting is used).
     */
   @scala.inline
-  def MobSpell: `minecraft:mobspell` = this.cast("minecraft:mobspell")
+  def MobSpell: minecraftColonmobspell = this.cast("minecraft:mobspell")
   /**
     * Beacon effects
     */
   @scala.inline
-  def MobSpellAmbient: `minecraft:mobspellambient` = this.cast("minecraft:mobspellambient")
+  def MobSpellAmbient: minecraftColonmobspellambient = this.cast("minecraft:mobspellambient")
   /**
     * Instant health/damage splash and lingering potions, spectral arrows.
     */
   @scala.inline
-  def MobSpellInstantaneous: `minecraft:mobspellinstantaneous` = this.cast("minecraft:mobspellinstantaneous")
+  def MobSpellInstantaneous: minecraftColonmobspellinstantaneous = this.cast("minecraft:mobspellinstantaneous")
   /**
     * Activated Conduits.
     */
   @scala.inline
-  def Nautilus: `minecraft:nautilus` = this.cast("minecraft:nautilus")
+  def Nautilus: minecraftColonnautilus = this.cast("minecraft:nautilus")
   /**
     * Emitted from note blocks and jukeboxes
     */
   @scala.inline
-  def Note: `minecraft:note` = this.cast("minecraft:note")
+  def Note: minecraftColonnote = this.cast("minecraft:note")
   /**
     * 	Nether portals, endermen, endermites, ender pearls, eyes of ender, ender chests, dragon eggs, teleporting from eating chorus fruits, end gateway portals.
     */
   @scala.inline
-  def Portal: `minecraft:portal` = this.cast("minecraft:portal")
+  def Portal: minecraftColonportal = this.cast("minecraft:portal")
   /**
     * Rain
     */
   @scala.inline
-  def RainSplash: `minecraft:rainsplash` = this.cast("minecraft:rainsplash")
+  def RainSplash: minecraftColonrainsplash = this.cast("minecraft:rainsplash")
   /**
     * Redstone ore, powered redstone dust, redstone torches, powered redstone repeaters
     */
   @scala.inline
-  def RedstoneDust: `minecraft:reddust` = this.cast("minecraft:reddust")
+  def RedstoneDust: minecraftColonreddust = this.cast("minecraft:reddust")
   /**
     * Jumping slimes.
     */
   @scala.inline
-  def Slime: `minecraft:slime` = this.cast("minecraft:slime")
+  def Slime: minecraftColonslime = this.cast("minecraft:slime")
   /**
     * 	Torches, primed TNT, droppers, dispensers, end portals, brewing stands, spawners, furnaces, ghast fireballs, wither skulls, taming, withers, lava (when raining), placing an eye of ender in an end portal frame, redstone torches burning out.
     */
   @scala.inline
-  def Smoke: `minecraft:smoke` = this.cast("minecraft:smoke")
+  def Smoke: minecraftColonsmoke = this.cast("minecraft:smoke")
   /**
     * Thrown snowballs, creating withers, creating iron golems.
     */
   @scala.inline
-  def SnowballPoof: `minecraft:snowballpoof` = this.cast("minecraft:snowballpoof")
+  def SnowballPoof: minecraftColonsnowballpoof = this.cast("minecraft:snowballpoof")
   /**
     * Splash potions, lingering potions, bottles o' enchanting, evokers.
     */
   @scala.inline
-  def Spell: `minecraft:spell` = this.cast("minecraft:spell")
+  def Spell: minecraftColonspell = this.cast("minecraft:spell")
   /**
     * ?
     */
   @scala.inline
-  def Terrain: `minecraft:terrain` = this.cast("minecraft:terrain")
+  def Terrain: minecraftColonterrain = this.cast("minecraft:terrain")
   /**
     * Activated totem of undying.
     */
   @scala.inline
-  def Totem: `minecraft:totem` = this.cast("minecraft:totem")
+  def Totem: minecraftColontotem = this.cast("minecraft:totem")
   /**
     * Mycelium blocks.
     */
   @scala.inline
-  def TownAura: `minecraft:townaura` = this.cast("minecraft:townaura")
+  def TownAura: minecraftColontownaura = this.cast("minecraft:townaura")
   /**
     * ?
     */
   @scala.inline
-  def TrackingEmitter: `minecraft:trackingemitter` = this.cast("minecraft:trackingemitter")
+  def TrackingEmitter: minecraftColontrackingemitter = this.cast("minecraft:trackingemitter")
   /**
     * Attacking a villager in a village
     */
   @scala.inline
-  def VillagerAngry: `minecraft:villagerangry` = this.cast("minecraft:villagerangry")
+  def VillagerAngry: minecraftColonvillagerangry = this.cast("minecraft:villagerangry")
   /**
     * 	Bone mealing a crop, trading with villagers, feeding baby animals, walking or jumping on turtle eggs.
     */
   @scala.inline
-  def VillagerHappy: `minecraft:villagerhappy` = this.cast("minecraft:villagerhappy")
+  def VillagerHappy: minecraftColonvillagerhappy = this.cast("minecraft:villagerhappy")
   /**
     * Entities in water, wolves shaking off after swimming, boats.
     */
   @scala.inline
-  def WaterSplash: `minecraft:watersplash` = this.cast("minecraft:watersplash")
+  def WaterSplash: minecraftColonwatersplash = this.cast("minecraft:watersplash")
   /**
     * Fishing
     */
   @scala.inline
-  def WaterWake: `minecraft:waterwake` = this.cast("minecraft:waterwake")
+  def WaterWake: minecraftColonwaterwake = this.cast("minecraft:waterwake")
   /**
     * Witches.
     */
   @scala.inline
-  def WitchSpell: `minecraft:witchspell` = this.cast("minecraft:witchspell")
+  def WitchSpell: minecraftColonwitchspell = this.cast("minecraft:witchspell")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

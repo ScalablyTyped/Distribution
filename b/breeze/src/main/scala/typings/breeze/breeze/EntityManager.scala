@@ -59,14 +59,14 @@ class EntityManager () extends js.Object {
     errorCallback: ExecuteQueryErrorCallback
   ): js.Promise[QueryResult] = js.native
   def executeQueryLocally(query: EntityQuery): js.Array[Entity] = js.native
-  def exportEntities(): String = js.native
-  def exportEntities(entities: js.Array[Entity]): String = js.native
+  def exportEntities(): js.Any = js.native
+  def exportEntities(entities: js.Array[Entity]): js.Any = js.native
   def exportEntities(entities: js.Array[Entity], includeMetadata: Boolean): String = js.native
   def exportEntities(entities: js.Array[Entity], options: ExportEntitiesOptions): js.Any = js.native
   @JSName("exportEntities")
-  def exportEntities_Any(): js.Any = js.native
+  def exportEntities_String(): String = js.native
   @JSName("exportEntities")
-  def exportEntities_Any(entities: js.Array[Entity]): js.Any = js.native
+  def exportEntities_String(entities: js.Array[Entity]): String = js.native
   def fetchEntityByKey(entityKey: EntityKey): js.Promise[EntityByKeyResult] = js.native
    // string | Object
   def fetchEntityByKey(typeName: String, keyValue: js.Any): js.Promise[EntityByKeyResult] = js.native

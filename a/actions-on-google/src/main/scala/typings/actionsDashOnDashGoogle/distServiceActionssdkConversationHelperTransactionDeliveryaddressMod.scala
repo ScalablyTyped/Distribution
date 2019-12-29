@@ -1,6 +1,6 @@
 package typings.actionsDashOnDashGoogle
 
-import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDOTintentDOTDELIVERY_ADDRESS
+import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDotintentDotDELIVERY_ADDRESS
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2DeliveryAddressValue
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2DeliveryAddressValueSpec
 import typings.actionsDashOnDashGoogle.distServiceActionssdkConversationHelperHelperMod.Helper
@@ -16,7 +16,7 @@ object distServiceActionssdkConversationHelperTransactionDeliveryaddressMod exte
     * @param options The raw {@link GoogleActionsV2DeliveryAddressValueSpec}
     * @public
     */
-  class DeliveryAddress () extends Helper[actionsDOTintentDOTDELIVERY_ADDRESS, GoogleActionsV2DeliveryAddressValueSpec] {
+  class DeliveryAddress () extends Helper[actionsDotintentDotDELIVERY_ADDRESS, GoogleActionsV2DeliveryAddressValueSpec] {
     def this(options: GoogleActionsV2DeliveryAddressValueSpec) = this()
   }
   

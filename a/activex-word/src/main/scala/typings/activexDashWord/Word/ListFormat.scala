@@ -19,7 +19,8 @@ class ListFormat protected () extends js.Object {
   val Parent: js.Any = js.native
   val SingleList: Boolean = js.native
   val SingleListTemplate: Boolean = js.native
-  var `Word.ListFormat_typekey`: ListFormat = js.native
+  @JSName("Word.ListFormat_typekey")
+  var WordDotListFormat_typekey: ListFormat = js.native
   def ApplyBulletDefault(): Unit = js.native
   def ApplyBulletDefault(DefaultListBehavior: js.Any): Unit = js.native
   def ApplyBulletDefaultOld(): Unit = js.native

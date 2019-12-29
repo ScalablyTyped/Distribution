@@ -17,7 +17,7 @@ object _Global_ extends js.Object {
         this.type
       ]) with Anon_DefaultOptions = js.native
     @JSName("data")
-    def data_daterangepicker(key: typings.daterangepicker.daterangepickerStrings.daterangepicker): js.UndefOr[typings.daterangepicker.daterangepickerMod.daterangepicker] = js.native
+    def data_daterangepicker(key: typings.daterangepicker.daterangepickerStrings.daterangepicker): js.UndefOr[daterangepicker] = js.native
     def daterangepicker(): this.type = js.native
     def daterangepicker(options: Options): this.type = js.native
     def daterangepicker(options: Options, callback: DataRangePickerCallback): this.type = js.native

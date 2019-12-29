@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object gtagDotJsStrings {
   @js.native
-  sealed trait JS extends js.Object
-  
-  @js.native
   sealed trait add_payment_info extends EventNames
   
   @js.native
@@ -35,6 +32,9 @@ object gtagDotJsStrings {
   
   @js.native
   sealed trait generate_lead extends EventNames
+  
+  @js.native
+  sealed trait js_ extends js.Object
   
   @js.native
   sealed trait login extends EventNames
@@ -88,8 +88,6 @@ object gtagDotJsStrings {
   sealed trait view_search_results extends EventNames
   
   @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
-  @scala.inline
   def add_payment_info: add_payment_info = "add_payment_info".asInstanceOf[add_payment_info]
   @scala.inline
   def add_to_cart: add_to_cart = "add_to_cart".asInstanceOf[add_to_cart]
@@ -107,6 +105,8 @@ object gtagDotJsStrings {
   def exception: exception = "exception".asInstanceOf[exception]
   @scala.inline
   def generate_lead: generate_lead = "generate_lead".asInstanceOf[generate_lead]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def login: login = "login".asInstanceOf[login]
   @scala.inline

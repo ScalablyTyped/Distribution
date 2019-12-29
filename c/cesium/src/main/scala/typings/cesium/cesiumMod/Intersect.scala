@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.Intersect.INSIDE
-import typings.cesium.cesiumMod.Intersect.INTERSECTING
-import typings.cesium.cesiumMod.Intersect.OUTSIDE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.TableRowAlignment.Both
-import typings.devexpressDashWeb.TableRowAlignment.Center
-import typings.devexpressDashWeb.TableRowAlignment.Distribute
-import typings.devexpressDashWeb.TableRowAlignment.Left
-import typings.devexpressDashWeb.TableRowAlignment.NumTab
-import typings.devexpressDashWeb.TableRowAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ trait ChangeEventArgs extends js.Object {
   var isValidState: js.UndefOr[Boolean] = js.undefined
   /** returns the TimePicker model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DateTimePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previously selected date time value
     */
   var prevDateTime: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ object ChangeEventArgs {
   def apply(
     isInteraction: js.UndefOr[Boolean] = js.undefined,
     isValidState: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.DateTimePicker.Model = null,
+    model: Model = null,
     prevDateTime: String = null,
     `type`: String = null,
     value: String = null

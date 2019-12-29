@@ -2,7 +2,6 @@ package typings.atGoogleDashCloudPubsub.buildSrcMessageDashStreamMod
 
 import typings.atGoogleDashCloudPubsub.buildSrcSubscriberMod.Subscriber
 import typings.node.streamMod.Transform
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -118,6 +117,5 @@ class MessageStream protected () extends Transform {
     * @returns {Promise}
     */
   var _waitForClientReady: js.Any = js.native
-  def destroy(err: Error): Unit = js.native
 }
 

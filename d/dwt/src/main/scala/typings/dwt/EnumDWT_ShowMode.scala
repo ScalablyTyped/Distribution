@@ -1,11 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_ShowMode.SW_ACTIVE
-import typings.dwt.EnumDWT_ShowMode.SW_CLOSE
-import typings.dwt.EnumDWT_ShowMode.SW_IFLIVE
-import typings.dwt.EnumDWT_ShowMode.SW_MAX
-import typings.dwt.EnumDWT_ShowMode.SW_MIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

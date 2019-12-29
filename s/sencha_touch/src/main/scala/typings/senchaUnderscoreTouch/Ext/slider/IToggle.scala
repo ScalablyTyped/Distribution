@@ -13,23 +13,23 @@ trait IToggle extends ISlider {
   /** [Method] Returns the value of maxValueCls
   		* @returns String
   		*/
-  var getMaxValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMaxValueCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of minValueCls
   		* @returns String
   		*/
-  var getMinValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMinValueCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var maxValueCls: js.UndefOr[java.lang.String] = js.undefined
+  var maxValueCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var minValueCls: js.UndefOr[java.lang.String] = js.undefined
+  var minValueCls: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of maxValueCls
   		* @param maxValueCls String The new value.
   		*/
-  var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of minValueCls
   		* @param minValueCls String The new value.
   		*/
-  var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of value
   		* @param newValue Object
   		* @param oldValue Object
@@ -45,12 +45,12 @@ object IToggle {
   def apply(
     ISlider: ISlider = null,
     applyIncrement: () => Double = null,
-    getMaxValueCls: () => java.lang.String = null,
-    getMinValueCls: () => java.lang.String = null,
-    maxValueCls: java.lang.String = null,
-    minValueCls: java.lang.String = null,
-    setMaxValueCls: /* maxValueCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setMinValueCls: /* minValueCls */ js.UndefOr[java.lang.String] => Unit = null,
+    getMaxValueCls: () => String = null,
+    getMinValueCls: () => String = null,
+    maxValueCls: String = null,
+    minValueCls: String = null,
+    setMaxValueCls: /* maxValueCls */ js.UndefOr[String] => Unit = null,
+    setMinValueCls: /* minValueCls */ js.UndefOr[String] => Unit = null,
     setValue: (/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any]) => Unit = null
   ): IToggle = {
     val __obj = js.Dynamic.literal()

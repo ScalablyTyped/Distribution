@@ -12,35 +12,35 @@ trait IProtoElement extends IBase {
   		* @param cls String One or more classnames separated with spaces.
   		* @returns Ext.util.ProtoElement this
   		*/
-  var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.undefined
   /** [Property] (String) */
-  var clsProp: js.UndefOr[java.lang.String] = js.undefined
+  var clsProp: js.UndefOr[String] = js.undefined
   /** [Method] Indicates that the current state of the object has been flushed to the DOM so we need to track any subsequent changes */
   var flush: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] True if the element has given class
   		* @param cls String
   		* @returns Boolean
   		*/
-  var hasCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Removes class from the element
   		* @param cls String One or more classnames separated with spaces.
   		* @returns Ext.util.ProtoElement this
   		*/
-  var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.undefined
   /** [Property] (String) */
-  var removedProp: js.UndefOr[java.lang.String] = js.undefined
+  var removedProp: js.UndefOr[String] = js.undefined
   /** [Method] Adds styles to the element
   		* @param prop String/Object The style property to be set, or an object of multiple styles.
   		* @param value String The value to apply to the given property.
   		* @returns Ext.util.ProtoElement this
   		*/
   var setStyle: js.UndefOr[
-    js.Function2[/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], this.type]
+    js.Function2[/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], this.type]
   ] = js.undefined
   /** [Property] (Boolean) */
   var styleIsText: js.UndefOr[Boolean] = js.undefined
   /** [Property] (String) */
-  var styleProp: js.UndefOr[java.lang.String] = js.undefined
+  var styleProp: js.UndefOr[String] = js.undefined
   /** [Method] Writes style and class properties to given object
   		* @param to Object
   		* @returns Object to
@@ -51,30 +51,30 @@ trait IProtoElement extends IBase {
 object IProtoElement {
   @scala.inline
   def apply(
-    addCls: /* cls */ js.UndefOr[java.lang.String] => IProtoElement = null,
+    addCls: /* cls */ js.UndefOr[String] => IProtoElement = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clsProp: java.lang.String = null,
+    clsProp: String = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     flush: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasCls: /* cls */ js.UndefOr[java.lang.String] => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasCls: /* cls */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IProtoElement = null,
     mixins: js.Any = null,
-    removeCls: /* cls */ js.UndefOr[java.lang.String] => IProtoElement = null,
-    removedProp: java.lang.String = null,
+    removeCls: /* cls */ js.UndefOr[String] => IProtoElement = null,
+    removedProp: String = null,
     requires: Array = null,
     self: IClass = null,
-    setStyle: (/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => IProtoElement = null,
+    setStyle: (/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IProtoElement = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     styleIsText: js.UndefOr[Boolean] = js.undefined,
-    styleProp: java.lang.String = null,
+    styleProp: String = null,
     uses: Array = null,
     writeTo: /* to */ js.UndefOr[js.Any] => _ = null
   ): IProtoElement = {

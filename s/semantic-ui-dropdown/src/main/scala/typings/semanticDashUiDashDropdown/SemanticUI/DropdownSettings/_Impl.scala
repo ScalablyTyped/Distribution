@@ -12,7 +12,7 @@ import typings.semanticDashUiDashDropdown.SemanticUI.Dropdown.MessageSettings
 import typings.semanticDashUiDashDropdown.SemanticUI.Dropdown.MetadataSettings
 import typings.semanticDashUiDashDropdown.SemanticUI.Dropdown.RegExpSettings
 import typings.semanticDashUiDashDropdown.SemanticUI.Dropdown.SelectorSettings
-import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownNumbers.`false`
+import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownBooleans.`false`
 import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.activate
 import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.auto
 import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.both
@@ -276,41 +276,41 @@ trait _Impl extends js.Object {
   /**
     * Is called after a dropdown selection is added using a multiple select dropdown, only receives the added value
     */
-  def onAdd(`this`: JQuery, addedValue: js.Any, addedText: String, $addedChoice: JQuery): Unit
+  def onAdd(addedValue: js.Any, addedText: String, $addedChoice: JQuery): Unit
   // endregion
   // region Callbacks
   /**
     * Is called after a dropdown value changes. Receives the name and value of selection and the active menu element
     */
-  def onChange(`this`: JQuery, value: js.Any, text: String, $choice: JQuery): Unit
+  def onChange(value: js.Any, text: String, $choice: JQuery): Unit
   /**
     * Is called before a dropdown is hidden. If false is returned, dropdown will not be hidden.
     */
-  def onHide(`this`: JQuery): `false` | Unit
+  def onHide(): `false` | Unit
   /**
     * Allows you to modify a label before it is added. Expects the jQ DOM element for a label to be returned.
     */
-  def onLabelCreate(`this`: JQuery, value: js.Any, text: String): JQuery
+  def onLabelCreate(value: js.Any, text: String): JQuery
   /**
     * Called when a label is remove, return false; will prevent the label from being removed.
     */
-  def onLabelRemove(`this`: JQuery, value: js.Any): `false` | Unit
+  def onLabelRemove(value: js.Any): `false` | Unit
   /**
     * Is called after a label is selected by a user
     */
-  def onLabelSelect(`this`: JQuery, $selectedLabels: JQuery): Unit
+  def onLabelSelect($selectedLabels: JQuery): Unit
   /**
     * Is called after a dropdown is searched with no matching values
     */
-  def onNoResults(`this`: JQuery, searchValue: js.Any): Unit
+  def onNoResults(searchValue: js.Any): Unit
   /**
     * Is called after a dropdown selection is removed using a multiple select dropdown, only receives the removed value
     */
-  def onRemove(`this`: JQuery, removedValue: js.Any, removedText: String, $removedChoice: JQuery): Unit
+  def onRemove(removedValue: js.Any, removedText: String, $removedChoice: JQuery): Unit
   /**
     * Is called before a dropdown is shown. If false is returned, dropdown will not be shown.
     */
-  def onShow(`this`: JQuery): `false` | Unit
+  def onShow(): `false` | Unit
 }
 
 object _Impl {
@@ -352,15 +352,15 @@ object _Impl {
     name: String,
     namespace: String,
     on: String,
-    onAdd: (JQuery, js.Any, String, JQuery) => Unit,
-    onChange: (JQuery, js.Any, String, JQuery) => Unit,
-    onHide: JQuery => `false` | Unit,
-    onLabelCreate: (JQuery, js.Any, String) => JQuery,
-    onLabelRemove: (JQuery, js.Any) => `false` | Unit,
-    onLabelSelect: (JQuery, JQuery) => Unit,
-    onNoResults: (JQuery, js.Any) => Unit,
-    onRemove: (JQuery, js.Any, String, JQuery) => Unit,
-    onShow: JQuery => `false` | Unit,
+    onAdd: (js.Any, String, JQuery) => Unit,
+    onChange: (js.Any, String, JQuery) => Unit,
+    onHide: () => `false` | Unit,
+    onLabelCreate: (js.Any, String) => JQuery,
+    onLabelRemove: js.Any => `false` | Unit,
+    onLabelSelect: JQuery => Unit,
+    onNoResults: js.Any => Unit,
+    onRemove: (js.Any, String, JQuery) => Unit,
+    onShow: () => `false` | Unit,
     performance: Boolean,
     placeholder: auto | value | `false`,
     preserveHTML: Boolean,
@@ -376,7 +376,7 @@ object _Impl {
     values: js.Any,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], allowAdditions = allowAdditions.asInstanceOf[js.Any], allowCategorySelection = allowCategorySelection.asInstanceOf[js.Any], allowReselection = allowReselection.asInstanceOf[js.Any], allowTab = allowTab.asInstanceOf[js.Any], apiSettings = apiSettings.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], filterRemoteData = filterRemoteData.asInstanceOf[js.Any], forceSelection = forceSelection.asInstanceOf[js.Any], fullTextSearch = fullTextSearch.asInstanceOf[js.Any], glyphWidth = glyphWidth.asInstanceOf[js.Any], hideAdditions = hideAdditions.asInstanceOf[js.Any], keepOnScreen = keepOnScreen.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxSelections = maxSelections.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onAdd = js.Any.fromFunction4(onAdd), onChange = js.Any.fromFunction4(onChange), onHide = js.Any.fromFunction1(onHide), onLabelCreate = js.Any.fromFunction3(onLabelCreate), onLabelRemove = js.Any.fromFunction2(onLabelRemove), onLabelSelect = js.Any.fromFunction2(onLabelSelect), onNoResults = js.Any.fromFunction2(onNoResults), onRemove = js.Any.fromFunction4(onRemove), onShow = js.Any.fromFunction1(onShow), performance = performance.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], preserveHTML = preserveHTML.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], saveRemoteData = saveRemoteData.asInstanceOf[js.Any], selectOnKeydown = selectOnKeydown.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], showOnFocus = showOnFocus.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], sortSelect = sortSelect.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], useLabels = useLabels.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], allowAdditions = allowAdditions.asInstanceOf[js.Any], allowCategorySelection = allowCategorySelection.asInstanceOf[js.Any], allowReselection = allowReselection.asInstanceOf[js.Any], allowTab = allowTab.asInstanceOf[js.Any], apiSettings = apiSettings.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], filterRemoteData = filterRemoteData.asInstanceOf[js.Any], forceSelection = forceSelection.asInstanceOf[js.Any], fullTextSearch = fullTextSearch.asInstanceOf[js.Any], glyphWidth = glyphWidth.asInstanceOf[js.Any], hideAdditions = hideAdditions.asInstanceOf[js.Any], keepOnScreen = keepOnScreen.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxSelections = maxSelections.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onAdd = js.Any.fromFunction3(onAdd), onChange = js.Any.fromFunction3(onChange), onHide = js.Any.fromFunction0(onHide), onLabelCreate = js.Any.fromFunction2(onLabelCreate), onLabelRemove = js.Any.fromFunction1(onLabelRemove), onLabelSelect = js.Any.fromFunction1(onLabelSelect), onNoResults = js.Any.fromFunction1(onNoResults), onRemove = js.Any.fromFunction3(onRemove), onShow = js.Any.fromFunction0(onShow), performance = performance.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], preserveHTML = preserveHTML.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], saveRemoteData = saveRemoteData.asInstanceOf[js.Any], selectOnKeydown = selectOnKeydown.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], showOnFocus = showOnFocus.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], sortSelect = sortSelect.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], useLabels = useLabels.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }

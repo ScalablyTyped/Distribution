@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.InstallationSource.APPS_MARKETPLACE_DOMAIN_ADD_ON
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.InstallationSource.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.InstallationSource.WEB_STORE_ADD_ON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

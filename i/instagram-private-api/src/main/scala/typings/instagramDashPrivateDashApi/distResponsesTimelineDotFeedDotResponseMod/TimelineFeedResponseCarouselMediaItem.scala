@@ -55,7 +55,7 @@ object TimelineFeedResponseCarouselMediaItem {
     overlay_text: String = null,
     overlay_title: String = null,
     usertags: TimelineFeedResponseUsertags = null,
-    video_subtitles_uri: Null = null
+    video_subtitles_uri: js.UndefOr[scala.Nothing] = js.undefined
   ): TimelineFeedResponseCarouselMediaItem = {
     val __obj = js.Dynamic.literal(carousel_parent_id = carousel_parent_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any])
     if (ad_action != null) __obj.updateDynamic("ad_action")(ad_action.asInstanceOf[js.Any])
@@ -73,7 +73,7 @@ object TimelineFeedResponseCarouselMediaItem {
     if (overlay_text != null) __obj.updateDynamic("overlay_text")(overlay_text.asInstanceOf[js.Any])
     if (overlay_title != null) __obj.updateDynamic("overlay_title")(overlay_title.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
-    if (video_subtitles_uri != null) __obj.updateDynamic("video_subtitles_uri")(video_subtitles_uri.asInstanceOf[js.Any])
+    if (!js.isUndefined(video_subtitles_uri)) __obj.updateDynamic("video_subtitles_uri")(video_subtitles_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseCarouselMediaItem]
   }
 }

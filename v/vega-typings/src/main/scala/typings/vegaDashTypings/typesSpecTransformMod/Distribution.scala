@@ -21,22 +21,10 @@ trait Distribution extends js.Object
 
 object Distribution {
   @scala.inline
-  def DistributionMixture(
-    field: String | TransformField,
-    function: mixture,
-    distributions: (js.Array[Distribution | SignalRef]) | SignalRef = null,
-    weights: (js.Array[Double | SignalRef]) | SignalRef = null
-  ): Distribution = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
-    if (distributions != null) __obj.updateDynamic("distributions")(distributions.asInstanceOf[js.Any])
-    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Distribution]
-  }
-  @scala.inline
-  def DistributionUniform(function: uniform, max: Double | SignalRef = null, min: Double | SignalRef = null): Distribution = {
+  def DistributionLogNormal(function: lognormal, mean: Double | SignalRef = null, stdev: Double | SignalRef = null): Distribution = {
     val __obj = js.Dynamic.literal(function = function.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
+    if (stdev != null) __obj.updateDynamic("stdev")(stdev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Distribution]
   }
   @scala.inline
@@ -52,6 +40,18 @@ object Distribution {
     __obj.asInstanceOf[Distribution]
   }
   @scala.inline
+  def DistributionMixture(
+    field: String | TransformField,
+    function: mixture,
+    distributions: (js.Array[Distribution | SignalRef]) | SignalRef = null,
+    weights: (js.Array[Double | SignalRef]) | SignalRef = null
+  ): Distribution = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
+    if (distributions != null) __obj.updateDynamic("distributions")(distributions.asInstanceOf[js.Any])
+    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Distribution]
+  }
+  @scala.inline
   def DistributionNormal(function: normal, mean: Double | SignalRef = null, stdev: Double | SignalRef = null): Distribution = {
     val __obj = js.Dynamic.literal(function = function.asInstanceOf[js.Any])
     if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
@@ -59,10 +59,10 @@ object Distribution {
     __obj.asInstanceOf[Distribution]
   }
   @scala.inline
-  def DistributionLogNormal(function: lognormal, mean: Double | SignalRef = null, stdev: Double | SignalRef = null): Distribution = {
+  def DistributionUniform(function: uniform, max: Double | SignalRef = null, min: Double | SignalRef = null): Distribution = {
     val __obj = js.Dynamic.literal(function = function.asInstanceOf[js.Any])
-    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
-    if (stdev != null) __obj.updateDynamic("stdev")(stdev.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[Distribution]
   }
 }

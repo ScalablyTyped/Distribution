@@ -1,12 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EClanRelationship.Blocked
-import typings.steamDashClient.steamDashClientMod.EClanRelationship.Invited
-import typings.steamDashClient.steamDashClientMod.EClanRelationship.KickAcknowledged
-import typings.steamDashClient.steamDashClientMod.EClanRelationship.Kicked
-import typings.steamDashClient.steamDashClientMod.EClanRelationship.Member
-import typings.steamDashClient.steamDashClientMod.EClanRelationship.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,9 +10,6 @@ import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
-import typings.reactDashDatepicker.reactDashDatepickerMod.HighlightDates
-import typings.reactDashDatepicker.reactDashDatepickerMod.ReactDatePicker
-import typings.reactDashDatepicker.reactDashDatepickerMod.ReactDatePickerProps
 import typings.reactDashDatepicker.reactDashDatepickerStrings.scroll
 import typings.reactDashDatepicker.reactDashDatepickerStrings.select
 import typings.std.Date
@@ -40,6 +37,7 @@ object reactDashDatepickerMod extends js.Object {
   trait ReactDatePickerProps extends js.Object {
     var adjustDateOnChange: js.UndefOr[Boolean] = js.native
     var allowSameDay: js.UndefOr[Boolean] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.native
     var autoComplete: js.UndefOr[String] = js.native
     var autoFocus: js.UndefOr[Boolean] = js.native
     var calendarClassName: js.UndefOr[String] = js.native
@@ -81,6 +79,8 @@ object reactDashDatepickerMod extends js.Object {
     var nextMonthButtonLabel: js.UndefOr[String] = js.native
     var nextYearButtonLabel: js.UndefOr[String] = js.native
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], Unit]] = js.native
+    var onCalendarClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCalendarOpen: js.UndefOr[js.Function0[Unit]] = js.native
     var onChangeRaw: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], Unit]] = js.native
     var onClickOutside: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
     var onDayMouseEnter: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
@@ -129,6 +129,7 @@ object reactDashDatepickerMod extends js.Object {
     var showMonthYearDropdown: js.UndefOr[Boolean] = js.native
     var showMonthYearPicker: js.UndefOr[Boolean] = js.native
     var showPopperArrow: js.UndefOr[Boolean] = js.native
+    var showPreviousMonths: js.UndefOr[Boolean] = js.native
     var showQuarterYearPicker: js.UndefOr[Boolean] = js.native
     var showTimeInput: js.UndefOr[Boolean] = js.native
     var showTimeSelect: js.UndefOr[Boolean] = js.native

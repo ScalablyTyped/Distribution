@@ -13,6 +13,7 @@ trait ReelsMediaFeedResponseSliderSticker extends js.Object {
   var slider_vote_count: Double
   var text_color: String
   var viewer_can_vote: Boolean
+  var viewer_vote: js.UndefOr[Double] = js.undefined
 }
 
 object ReelsMediaFeedResponseSliderSticker {
@@ -25,10 +26,11 @@ object ReelsMediaFeedResponseSliderSticker {
     slider_vote_average: Null,
     slider_vote_count: Double,
     text_color: String,
-    viewer_can_vote: Boolean
+    viewer_can_vote: Boolean,
+    viewer_vote: Int | Double = null
   ): ReelsMediaFeedResponseSliderSticker = {
     val __obj = js.Dynamic.literal(background_color = background_color.asInstanceOf[js.Any], emoji = emoji.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], slider_id = slider_id.asInstanceOf[js.Any], slider_vote_average = slider_vote_average.asInstanceOf[js.Any], slider_vote_count = slider_vote_count.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], viewer_can_vote = viewer_can_vote.asInstanceOf[js.Any])
-  
+    if (viewer_vote != null) __obj.updateDynamic("viewer_vote")(viewer_vote.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseSliderSticker]
   }
 }

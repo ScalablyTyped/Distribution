@@ -7,7 +7,6 @@ import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSOneArgCallback
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSThreeArgCallback
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystem
-import typings.browserfs.distNodeGenericPreloadUnderscoreFileMod.PreloadFile
 import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js

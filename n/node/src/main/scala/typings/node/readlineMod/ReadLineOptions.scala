@@ -12,7 +12,7 @@ trait ReadLineOptions extends js.Object {
   var historySize: js.UndefOr[Double] = js.undefined
   var input: ReadableStream
   var output: js.UndefOr[WritableStream] = js.undefined
-  var prompt: js.UndefOr[java.lang.String] = js.undefined
+  var prompt: js.UndefOr[String] = js.undefined
   var removeHistoryDuplicates: js.UndefOr[Boolean] = js.undefined
   var terminal: js.UndefOr[Boolean] = js.undefined
 }
@@ -25,7 +25,7 @@ object ReadLineOptions {
     crlfDelay: Int | Double = null,
     historySize: Int | Double = null,
     output: WritableStream = null,
-    prompt: java.lang.String = null,
+    prompt: String = null,
     removeHistoryDuplicates: js.UndefOr[Boolean] = js.undefined,
     terminal: js.UndefOr[Boolean] = js.undefined
   ): ReadLineOptions = {

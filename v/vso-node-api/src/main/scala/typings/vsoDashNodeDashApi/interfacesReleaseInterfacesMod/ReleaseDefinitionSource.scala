@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.Ibiza
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.PortalExtensionApi
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.RestApi
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.Undefined
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.UserInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

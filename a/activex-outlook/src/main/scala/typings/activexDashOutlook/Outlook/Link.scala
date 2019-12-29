@@ -11,7 +11,8 @@ class Link protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Item: js.Any = js.native
   val Name: String = js.native
-  var `Outlook.Link_typekey`: Link = js.native
+  @JSName("Outlook.Link_typekey")
+  var OutlookDotLink_typekey: Link = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val Type: OlObjectClass = js.native

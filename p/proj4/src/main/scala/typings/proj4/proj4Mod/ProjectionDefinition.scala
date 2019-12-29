@@ -1,6 +1,6 @@
 package typings.proj4.proj4Mod
 
-import typings.proj4.proj4Numbers.`true`
+import typings.proj4.proj4Booleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -24,7 +24,8 @@ class OMath protected () extends js.Object {
   val ParentRow: OMathMatRow = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
   var Type: WdOMathType = js.native
-  var `Word.OMath_typekey`: OMath = js.native
+  @JSName("Word.OMath_typekey")
+  var WordDotOMath_typekey: OMath = js.native
   def BuildUp(): Unit = js.native
   def ConvertToLiteralText(): Unit = js.native
   def ConvertToMathText(): Unit = js.native

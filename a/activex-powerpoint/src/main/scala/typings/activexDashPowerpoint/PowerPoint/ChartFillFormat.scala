@@ -25,7 +25,8 @@ class ChartFillFormat protected () extends js.Object {
   val GradientVariant: Double = js.native
   val Parent: js.Any = js.native
   val Pattern: MsoPatternType = js.native
-  var `PowerPoint.ChartFillFormat_typekey`: ChartFillFormat = js.native
+  @JSName("PowerPoint.ChartFillFormat_typekey")
+  var PowerPointDotChartFillFormat_typekey: ChartFillFormat = js.native
   val PresetGradientType: MsoPresetGradientType = js.native
   val PresetTexture: MsoPresetTexture = js.native
   val TextureName: String = js.native

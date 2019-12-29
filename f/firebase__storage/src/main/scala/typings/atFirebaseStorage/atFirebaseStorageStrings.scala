@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseStorageStrings {
   @js.native
-  sealed trait firebasestorageDOTgoogleapisDOTcom extends js.Object
+  sealed trait firebasestorageDotgoogleapisDotcom extends js.Object
   
   @js.native
   sealed trait mybucket extends js.Object
@@ -18,7 +18,7 @@ object atFirebaseStorageStrings {
   sealed trait `totally-legit-auth-token` extends js.Object
   
   @scala.inline
-  def firebasestorageDOTgoogleapisDOTcom: firebasestorageDOTgoogleapisDOTcom = "firebasestorage.googleapis.com".asInstanceOf[firebasestorageDOTgoogleapisDOTcom]
+  def firebasestorageDotgoogleapisDotcom: firebasestorageDotgoogleapisDotcom = "firebasestorage.googleapis.com".asInstanceOf[firebasestorageDotgoogleapisDotcom]
   @scala.inline
   def mybucket: mybucket = "mybucket".asInstanceOf[mybucket]
   @scala.inline

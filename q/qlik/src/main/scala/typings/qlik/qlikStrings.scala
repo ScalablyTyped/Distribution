@@ -62,9 +62,6 @@ object qlikStrings {
   sealed trait E extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait F extends js.Object
   
   @js.native
@@ -219,6 +216,9 @@ object qlikStrings {
   
   @js.native
   sealed trait XS extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait accordion extends js.Object
@@ -432,8 +432,6 @@ object qlikStrings {
   @scala.inline
   def E: E = "E".asInstanceOf[E]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def F: F = "F".asInstanceOf[F]
   @scala.inline
   def FieldList: FieldList = "FieldList".asInstanceOf[FieldList]
@@ -537,6 +535,8 @@ object qlikStrings {
   def XL: XL = "XL".asInstanceOf[XL]
   @scala.inline
   def XS: XS = "XS".asInstanceOf[XS]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def accordion: accordion = "accordion".asInstanceOf[accordion]
   @scala.inline

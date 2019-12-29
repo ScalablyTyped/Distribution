@@ -12,7 +12,8 @@ class FileConverters protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.FileConverters_typekey`: FileConverters = js.native
+  @JSName("Word.FileConverters_typekey")
+  var WordDotFileConverters_typekey: FileConverters = js.native
   def Item(Index: js.Any): FileConverter = js.native
 }
 

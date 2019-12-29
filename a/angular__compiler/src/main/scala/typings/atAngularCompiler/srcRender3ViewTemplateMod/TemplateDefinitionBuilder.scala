@@ -215,14 +215,14 @@ class TemplateDefinitionBuilder protected ()
   def registerContextVariables(variable: Variable): Unit = js.native
   /* CompleteClass */
   override def visitBoundAttribute(attribute: BoundAttribute): Unit = js.native
-  def visitBoundAttribute[T](`this`: Visitor[_], arg: Expression): scala.Nothing = js.native
-  def visitBoundAttribute[T](`this`: Visitor[_], arg: Statement): scala.Nothing = js.native
-  def visitBoundAttribute[T](`this`: Visitor[_], arg: Node): scala.Nothing = js.native
+  def visitBoundAttribute[T](arg: Expression): scala.Nothing = js.native
+  def visitBoundAttribute[T](arg: Statement): scala.Nothing = js.native
+  def visitBoundAttribute[T](arg: Node): scala.Nothing = js.native
   /* CompleteClass */
   override def visitBoundEvent(attribute: BoundEvent): Unit = js.native
-  def visitBoundEvent[T](`this`: Visitor[_], arg: Expression): scala.Nothing = js.native
-  def visitBoundEvent[T](`this`: Visitor[_], arg: Statement): scala.Nothing = js.native
-  def visitBoundEvent[T](`this`: Visitor[_], arg: Node): scala.Nothing = js.native
+  def visitBoundEvent[T](arg: Expression): scala.Nothing = js.native
+  def visitBoundEvent[T](arg: Statement): scala.Nothing = js.native
+  def visitBoundEvent[T](arg: Node): scala.Nothing = js.native
   /* CompleteClass */
   override def visitBoundText(text: BoundText): Unit = js.native
   /* CompleteClass */
@@ -233,22 +233,22 @@ class TemplateDefinitionBuilder protected ()
   override def visitIcu(icu: Icu): Unit = js.native
   /* CompleteClass */
   override def visitReference(reference: Reference): Unit = js.native
-  def visitReference[T](`this`: Visitor[_], arg: Expression): scala.Nothing = js.native
-  def visitReference[T](`this`: Visitor[_], arg: Statement): scala.Nothing = js.native
-  def visitReference[T](`this`: Visitor[_], arg: Node): scala.Nothing = js.native
+  def visitReference[T](arg: Expression): scala.Nothing = js.native
+  def visitReference[T](arg: Statement): scala.Nothing = js.native
+  def visitReference[T](arg: Node): scala.Nothing = js.native
   /* CompleteClass */
   override def visitTemplate(template: Template): Unit = js.native
   /* CompleteClass */
   override def visitText(text: Text): Unit = js.native
   /* CompleteClass */
   override def visitTextAttribute(attribute: TextAttribute): Unit = js.native
-  def visitTextAttribute[T](`this`: Visitor[_], arg: Expression): scala.Nothing = js.native
-  def visitTextAttribute[T](`this`: Visitor[_], arg: Statement): scala.Nothing = js.native
-  def visitTextAttribute[T](`this`: Visitor[_], arg: Node): scala.Nothing = js.native
+  def visitTextAttribute[T](arg: Expression): scala.Nothing = js.native
+  def visitTextAttribute[T](arg: Statement): scala.Nothing = js.native
+  def visitTextAttribute[T](arg: Node): scala.Nothing = js.native
   /* CompleteClass */
   override def visitVariable(variable: Variable): Unit = js.native
-  def visitVariable[T](`this`: Visitor[_], arg: Expression): scala.Nothing = js.native
-  def visitVariable[T](`this`: Visitor[_], arg: Statement): scala.Nothing = js.native
-  def visitVariable[T](`this`: Visitor[_], arg: Node): scala.Nothing = js.native
+  def visitVariable[T](arg: Expression): scala.Nothing = js.native
+  def visitVariable[T](arg: Statement): scala.Nothing = js.native
+  def visitVariable[T](arg: Node): scala.Nothing = js.native
 }
 

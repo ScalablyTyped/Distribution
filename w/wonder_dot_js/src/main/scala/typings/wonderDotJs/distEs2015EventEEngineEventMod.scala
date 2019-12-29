@@ -1,20 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.ENDLOOP
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_DOWN
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_DRAG
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_MOVE
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_OUT
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_OVER
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_SCALE
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_TAP
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.POINT_UP
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.STARTLOOP
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.TRANSFORM_ROTATE
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.TRANSFORM_SCALE
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent.TRANSFORM_TRANSLATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

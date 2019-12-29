@@ -1,10 +1,6 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.DayNum
-import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.GreqX
-import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.LastX
-import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.LeqX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.discoveryDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.discovery.v1beta1.EndpointSlice
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object discoveryV1beta1EndpointSliceListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`discoveryDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[discoveryDotk8sDotioSlashv1beta1] = js.native
     /**
       * List of endpoint slices
       */

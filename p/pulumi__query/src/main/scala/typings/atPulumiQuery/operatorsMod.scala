@@ -22,10 +22,10 @@ object operatorsMod extends js.Object {
   def all[TSource](predicate: js.Function1[/* t */ TSource, Boolean | js.Promise[Boolean]]): Evaluator[TSource, Boolean] = js.native
   def any[TSource](): Evaluator[TSource, Boolean] = js.native
   def any[TSource](predicate: js.Function1[/* t */ TSource, Boolean | js.Promise[Boolean]]): Evaluator[TSource, Boolean] = js.native
-  def average[TSource](): Evaluator[TSource, Double] = js.native
+  def average[TSource](): js.Promise[Double] = js.native
   def average[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = js.native
   @JSName("average")
-  def average_TSource_Promise[TSource](): js.Promise[Double] = js.native
+  def average_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = js.native
   def concat[TSource](iter: AsyncIterable[TSource]): Operator[TSource, TSource] = js.native
   def contains[TSource](value: TSource): Evaluator[TSource, Boolean] = js.native
   def count[TSource](): Evaluator[TSource, Double] = js.native
@@ -74,14 +74,14 @@ object operatorsMod extends js.Object {
   def lastOrDefault[TSource](defaultValue: TSource): Evaluator[TSource, TSource] = js.native
   def lastOrDefault[TSource](defaultValue: TSource, predicate: js.Function1[/* t */ TSource, Boolean | js.Promise[Boolean]]): Evaluator[TSource, TSource] = js.native
   def map[TSource, TResult](f: js.Function2[/* t */ TSource, /* i */ Double, TResult | js.Promise[TResult]]): Operator[TSource, TResult] = js.native
-  def max[TSource](): Evaluator[TSource, Double] = js.native
+  def max[TSource](): js.Promise[Double] = js.native
   def max[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = js.native
   @JSName("max")
-  def max_TSource_Promise[TSource](): js.Promise[Double] = js.native
-  def min[TSource](): Evaluator[TSource, Double] = js.native
+  def max_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = js.native
+  def min[TSource](): js.Promise[Double] = js.native
   def min[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = js.native
   @JSName("min")
-  def min_TSource_Promise[TSource](): js.Promise[Double] = js.native
+  def min_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = js.native
   def ofType[TSource, TResult /* <: TSource */](typeGuard: js.Function1[/* o */ TSource, /* is TResult */ Boolean]): Operator[TSource, TResult] = js.native
   def orderBy[TSource](keySelector: js.Function1[/* t */ TSource, OrderKey | js.Promise[OrderKey]]): Operator[TSource, TSource] = js.native
   def orderByDescending[TSource](keySelector: js.Function1[/* t */ TSource, OrderKey | js.Promise[OrderKey]]): Operator[TSource, TSource] = js.native
@@ -92,10 +92,10 @@ object operatorsMod extends js.Object {
   def singleOrDefault[TSource](defaultValue: TSource, predicate: js.Function1[/* t */ TSource, Boolean | js.Promise[Boolean]]): Evaluator[TSource, TSource] = js.native
   def skip[TSource](n: Double): Operator[TSource, TSource] = js.native
   def skipWhile[TSource](predicate: js.Function2[/* t */ TSource, /* i */ Double, Boolean | js.Promise[Boolean]]): Operator[TSource, TSource] = js.native
-  def sum[TSource](): Evaluator[TSource, Double] = js.native
+  def sum[TSource](): js.Promise[Double] = js.native
   def sum[TSource](selector: js.Function1[/* t */ TSource, Double | js.Promise[Double]]): Evaluator[TSource, Double] = js.native
   @JSName("sum")
-  def sum_TSource_Promise[TSource](): js.Promise[Double] = js.native
+  def sum_TSource_Evaluator[TSource](): Evaluator[TSource, Double] = js.native
   def take[TSource](n: Double): Operator[TSource, TSource] = js.native
   def takeWhile[TSource](predicate: js.Function2[/* t */ TSource, /* i */ Double, Boolean | js.Promise[Boolean]]): Operator[TSource, TSource] = js.native
   def toArray[TSource](): Evaluator[TSource, js.Array[TSource]] = js.native

@@ -13,7 +13,8 @@ class Script protected () extends js.Object {
   var Id: String = js.native
   var Language: MsoScriptLanguage = js.native
   val Location: MsoScriptLocation = js.native
-  var `Office.Script_typekey`: Script = js.native
+  @JSName("Office.Script_typekey")
+  var OfficeDotScript_typekey: Script = js.native
   val Parent: js.Any = js.native
   var ScriptText: String = js.native
   val Shape: js.Any = js.native

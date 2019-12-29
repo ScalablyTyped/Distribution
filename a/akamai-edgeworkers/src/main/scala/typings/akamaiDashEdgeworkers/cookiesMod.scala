@@ -1,6 +1,6 @@
 package typings.akamaiDashEdgeworkers
 
-import typings.akamaiDashEdgeworkers.akamaiDashEdgeworkersNumbers.`true`
+import typings.akamaiDashEdgeworkers.akamaiDashEdgeworkersBooleans.`true`
 import typings.akamaiDashEdgeworkers.akamaiDashEdgeworkersStrings.Lax
 import typings.akamaiDashEdgeworkers.akamaiDashEdgeworkersStrings.None
 import typings.akamaiDashEdgeworkers.akamaiDashEdgeworkersStrings.Strict

@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Bottomcenter
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Bottomleft
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Bottomright
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Center
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Centerleft
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Centerright
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.None
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Topcenter
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Topleft
-import typings.ejDotWebDotAll.ej.datavisualization.Map.Position.Topright
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

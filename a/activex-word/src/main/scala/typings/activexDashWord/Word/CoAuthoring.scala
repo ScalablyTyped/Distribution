@@ -18,6 +18,7 @@ class CoAuthoring protected () extends js.Object {
   val Parent: js.Any = js.native
   val PendingUpdates: Boolean = js.native
   val Updates: CoAuthUpdates = js.native
-  var `Word.CoAuthoring_typekey`: CoAuthoring = js.native
+  @JSName("Word.CoAuthoring_typekey")
+  var WordDotCoAuthoring_typekey: CoAuthoring = js.native
 }
 

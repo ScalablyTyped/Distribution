@@ -51,43 +51,64 @@ object screepsNumbers {
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `0DOT005` extends js.Object
+  sealed trait `0.005` extends js.Object
   
   @js.native
-  sealed trait `0DOT01` extends js.Object
+  sealed trait `0.01` extends js.Object
   
   @js.native
-  sealed trait `0DOT03` extends js.Object
+  sealed trait `0.03` extends js.Object
   
   @js.native
-  sealed trait `0DOT2` extends js.Object
+  sealed trait `0.2` extends js.Object
   
   @js.native
-  sealed trait `0DOT3` extends js.Object
+  sealed trait `0.3` extends js.Object
   
   @js.native
-  sealed trait `0DOT35` extends js.Object
+  sealed trait `0.35` extends js.Object
   
   @js.native
-  sealed trait `0DOT4` extends js.Object
+  sealed trait `0.4` extends js.Object
   
   @js.native
-  sealed trait `0DOT5` extends js.Object
+  sealed trait `0.5` extends js.Object
   
   @js.native
-  sealed trait `0DOT6` extends js.Object
+  sealed trait `0.6` extends js.Object
   
   @js.native
-  sealed trait `0DOT7` extends js.Object
+  sealed trait `0.7` extends js.Object
   
   @js.native
-  sealed trait `0DOT8` extends js.Object
+  sealed trait `0.8` extends js.Object
   
   @js.native
-  sealed trait `0DOT9` extends js.Object
+  sealed trait `0.9` extends js.Object
   
   @js.native
   sealed trait `1` extends js.Object
+  
+  @js.native
+  sealed trait `1.0` extends js.Object
+  
+  @js.native
+  sealed trait `1.1` extends js.Object
+  
+  @js.native
+  sealed trait `1.2` extends js.Object
+  
+  @js.native
+  sealed trait `1.3` extends js.Object
+  
+  @js.native
+  sealed trait `1.4` extends js.Object
+  
+  @js.native
+  sealed trait `1.5` extends js.Object
+  
+  @js.native
+  sealed trait `1.8` extends js.Object
   
   @js.native
   sealed trait `10` extends js.Object
@@ -228,27 +249,6 @@ object screepsNumbers {
   sealed trait `19` extends js.Object
   
   @js.native
-  sealed trait `1DOT0` extends js.Object
-  
-  @js.native
-  sealed trait `1DOT1` extends js.Object
-  
-  @js.native
-  sealed trait `1DOT2` extends js.Object
-  
-  @js.native
-  sealed trait `1DOT3` extends js.Object
-  
-  @js.native
-  sealed trait `1DOT4` extends js.Object
-  
-  @js.native
-  sealed trait `1DOT5` extends js.Object
-  
-  @js.native
-  sealed trait `1DOT8` extends js.Object
-  
-  @js.native
   sealed trait `2` extends js.Object
   
   @js.native
@@ -383,12 +383,6 @@ object screepsNumbers {
   @js.native
   sealed trait _2592000000 extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
@@ -420,31 +414,45 @@ object screepsNumbers {
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def `0DOT005`: `0DOT005` = 0.005.asInstanceOf[`0DOT005`]
+  def `0.005`: `0.005` = 0.005.asInstanceOf[`0.005`]
   @scala.inline
-  def `0DOT01`: `0DOT01` = 0.01.asInstanceOf[`0DOT01`]
+  def `0.01`: `0.01` = 0.01.asInstanceOf[`0.01`]
   @scala.inline
-  def `0DOT03`: `0DOT03` = 0.03.asInstanceOf[`0DOT03`]
+  def `0.03`: `0.03` = 0.03.asInstanceOf[`0.03`]
   @scala.inline
-  def `0DOT2`: `0DOT2` = 0.2.asInstanceOf[`0DOT2`]
+  def `0.2`: `0.2` = 0.2.asInstanceOf[`0.2`]
   @scala.inline
-  def `0DOT3`: `0DOT3` = 0.3.asInstanceOf[`0DOT3`]
+  def `0.3`: `0.3` = 0.3.asInstanceOf[`0.3`]
   @scala.inline
-  def `0DOT35`: `0DOT35` = 0.35.asInstanceOf[`0DOT35`]
+  def `0.35`: `0.35` = 0.35.asInstanceOf[`0.35`]
   @scala.inline
-  def `0DOT4`: `0DOT4` = 0.4.asInstanceOf[`0DOT4`]
+  def `0.4`: `0.4` = 0.4.asInstanceOf[`0.4`]
   @scala.inline
-  def `0DOT5`: `0DOT5` = 0.5.asInstanceOf[`0DOT5`]
+  def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
   @scala.inline
-  def `0DOT6`: `0DOT6` = 0.6.asInstanceOf[`0DOT6`]
+  def `0.6`: `0.6` = 0.6.asInstanceOf[`0.6`]
   @scala.inline
-  def `0DOT7`: `0DOT7` = 0.7.asInstanceOf[`0DOT7`]
+  def `0.7`: `0.7` = 0.7.asInstanceOf[`0.7`]
   @scala.inline
-  def `0DOT8`: `0DOT8` = 0.8.asInstanceOf[`0DOT8`]
+  def `0.8`: `0.8` = 0.8.asInstanceOf[`0.8`]
   @scala.inline
-  def `0DOT9`: `0DOT9` = 0.9.asInstanceOf[`0DOT9`]
+  def `0.9`: `0.9` = 0.9.asInstanceOf[`0.9`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
+  def `1.0`: `1.0` = 1.0.asInstanceOf[`1.0`]
+  @scala.inline
+  def `1.1`: `1.1` = 1.1.asInstanceOf[`1.1`]
+  @scala.inline
+  def `1.2`: `1.2` = 1.2.asInstanceOf[`1.2`]
+  @scala.inline
+  def `1.3`: `1.3` = 1.3.asInstanceOf[`1.3`]
+  @scala.inline
+  def `1.4`: `1.4` = 1.4.asInstanceOf[`1.4`]
+  @scala.inline
+  def `1.5`: `1.5` = 1.5.asInstanceOf[`1.5`]
+  @scala.inline
+  def `1.8`: `1.8` = 1.8.asInstanceOf[`1.8`]
   @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
   @scala.inline
@@ -538,20 +546,6 @@ object screepsNumbers {
   @scala.inline
   def `19`: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def `1DOT0`: `1DOT0` = 1.0.asInstanceOf[`1DOT0`]
-  @scala.inline
-  def `1DOT1`: `1DOT1` = 1.1.asInstanceOf[`1DOT1`]
-  @scala.inline
-  def `1DOT2`: `1DOT2` = 1.2.asInstanceOf[`1DOT2`]
-  @scala.inline
-  def `1DOT3`: `1DOT3` = 1.3.asInstanceOf[`1DOT3`]
-  @scala.inline
-  def `1DOT4`: `1DOT4` = 1.4.asInstanceOf[`1DOT4`]
-  @scala.inline
-  def `1DOT5`: `1DOT5` = 1.5.asInstanceOf[`1DOT5`]
-  @scala.inline
-  def `1DOT8`: `1DOT8` = 1.8.asInstanceOf[`1DOT8`]
-  @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   @scala.inline
   def `20`: `20` = 20.asInstanceOf[`20`]
@@ -641,9 +635,5 @@ object screepsNumbers {
   def `9`: `9` = 9.asInstanceOf[`9`]
   @scala.inline
   def _2592000000: _2592000000 = 2592000000.0.asInstanceOf[_2592000000]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

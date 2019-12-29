@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateValueConstants.ValueType
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateValueConstants.ValueType.PATTERNS
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateValueConstants.ValueType.SYNONYMS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

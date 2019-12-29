@@ -3604,12 +3604,6 @@ object activexDashExcelNumbers {
     extends XlChartType
        with XlRemoveDocInfoType
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
@@ -4712,9 +4706,5 @@ object activexDashExcelNumbers {
   def `98`: `98` = 98.asInstanceOf[`98`]
   @scala.inline
   def `99`: `99` = 99.asInstanceOf[`99`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

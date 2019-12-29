@@ -3,7 +3,7 @@ package typings.cqrsDashDomain.cqrsDashDomainMod
 import typings.cqrsDashDomain.Anon_AuthSource
 import typings.cqrsDashDomain.Anon_Db
 import typings.cqrsDashDomain.Anon_DbHost
-import typings.cqrsDashDomain.cqrsDashDomainNumbers.`true`
+import typings.cqrsDashDomain.cqrsDashDomainBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

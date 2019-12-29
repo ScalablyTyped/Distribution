@@ -2,7 +2,6 @@ package typings.appDashBuilderDashLib
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.appDashBuilderDashLib.outConfigurationMod.Configuration
-import typings.appDashBuilderDashLib.outElectronElectronVersionMod.MetadataValue
 import typings.lazyDashVal.lazyDashValMod.Lazy
 import scala.scalajs.js
 import scala.scalajs.js.`|`

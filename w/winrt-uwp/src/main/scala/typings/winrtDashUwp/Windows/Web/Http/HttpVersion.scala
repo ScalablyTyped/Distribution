@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http10
-import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http11
-import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http20
-import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

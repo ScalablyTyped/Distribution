@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Audio.AudioGraphUnrecoverableError.audioDeviceLost
-import typings.winrtDashUwp.Windows.Media.Audio.AudioGraphUnrecoverableError.audioSessionDisconnected
-import typings.winrtDashUwp.Windows.Media.Audio.AudioGraphUnrecoverableError.none
-import typings.winrtDashUwp.Windows.Media.Audio.AudioGraphUnrecoverableError.unknownFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

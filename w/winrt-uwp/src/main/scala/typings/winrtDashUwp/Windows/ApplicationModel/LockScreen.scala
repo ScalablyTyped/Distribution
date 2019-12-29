@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel
 
 import typings.std.Date
-import typings.winrtDashUwp.Windows.ApplicationModel.LockScreen.LockApplicationHost
-import typings.winrtDashUwp.Windows.ApplicationModel.LockScreen.LockScreenBadge
-import typings.winrtDashUwp.Windows.ApplicationModel.LockScreen.LockScreenInfo
-import typings.winrtDashUwp.Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral
-import typings.winrtDashUwp.Windows.ApplicationModel.LockScreen.LockScreenUnlockingEventArgs
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.TypedEventHandler

@@ -2,7 +2,6 @@ package typings.vscodeDashLanguageclient
 
 import typings.vscode.vscodeMod.CodeLens
 import typings.vscode.vscodeMod.Range
-import typings.vscodeDashLanguageclient.libProtocolCodeLensMod.ProtocolCodeLens
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

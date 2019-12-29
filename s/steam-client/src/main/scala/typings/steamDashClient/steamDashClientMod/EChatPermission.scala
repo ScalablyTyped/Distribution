@@ -1,21 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatPermission.Ban
-import typings.steamDashClient.steamDashClientMod.EChatPermission.ChangeAccess
-import typings.steamDashClient.steamDashClientMod.EChatPermission.ChangePermissions
-import typings.steamDashClient.steamDashClientMod.EChatPermission.Close
-import typings.steamDashClient.steamDashClientMod.EChatPermission.EveryoneDefault
-import typings.steamDashClient.steamDashClientMod.EChatPermission.EveryoneNotInClanDefault
-import typings.steamDashClient.steamDashClientMod.EChatPermission.Invite
-import typings.steamDashClient.steamDashClientMod.EChatPermission.Kick
-import typings.steamDashClient.steamDashClientMod.EChatPermission.Mask
-import typings.steamDashClient.steamDashClientMod.EChatPermission.MemberDefault
-import typings.steamDashClient.steamDashClientMod.EChatPermission.Mute
-import typings.steamDashClient.steamDashClientMod.EChatPermission.OfficerDefault
-import typings.steamDashClient.steamDashClientMod.EChatPermission.OwnerDefault
-import typings.steamDashClient.steamDashClientMod.EChatPermission.SetMetadata
-import typings.steamDashClient.steamDashClientMod.EChatPermission.Talk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

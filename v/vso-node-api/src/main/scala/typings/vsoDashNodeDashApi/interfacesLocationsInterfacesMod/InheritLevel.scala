@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Account
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.All
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Collection
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Deployment
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

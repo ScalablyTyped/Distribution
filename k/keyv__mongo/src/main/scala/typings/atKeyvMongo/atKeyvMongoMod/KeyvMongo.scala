@@ -1,6 +1,6 @@
 package typings.atKeyvMongo.atKeyvMongoMod
 
-import typings.atKeyvMongo.atKeyvMongoNumbers.`false`
+import typings.atKeyvMongo.atKeyvMongoBooleans.`false`
 import typings.keyv.keyvMod.Store
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js

@@ -1,8 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreWindowFlowDirection.leftToRight
-import typings.winrt.Windows.UI.Core.CoreWindowFlowDirection.rightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

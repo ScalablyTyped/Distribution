@@ -20,7 +20,8 @@ class IMsoPlotArea protected () extends js.Object {
   val Interior: IMsoInterior = js.native
   var Left: Double = js.native
   val Name: String = js.native
-  var `Office.IMsoPlotArea_typekey`: IMsoPlotArea = js.native
+  @JSName("Office.IMsoPlotArea_typekey")
+  var OfficeDotIMsoPlotArea_typekey: IMsoPlotArea = js.native
   val Parent: js.Any = js.native
   var Position: XlChartElementPosition = js.native
   var Top: Double = js.native

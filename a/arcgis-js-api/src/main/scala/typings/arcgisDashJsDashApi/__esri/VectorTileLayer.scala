@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-tile`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -98,10 +97,10 @@ trait VectorTileLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def loadStyle(style: String): IPromise[_] = js.native
-  def loadStyle(style: String, options: VectorTileLayerLoadStyleOptions): IPromise[_] = js.native
-  def loadStyle(style: js.Any): IPromise[_] = js.native
-  def loadStyle(style: js.Any, options: VectorTileLayerLoadStyleOptions): IPromise[_] = js.native
+  def loadStyle(style: String): js.Promise[_] = js.native
+  def loadStyle(style: String, options: VectorTileLayerLoadStyleOptions): js.Promise[_] = js.native
+  def loadStyle(style: js.Any): js.Promise[_] = js.native
+  def loadStyle(style: js.Any, options: VectorTileLayerLoadStyleOptions): js.Promise[_] = js.native
   /**
     * Assigns new [layout](https://www.mapbox.com/mapbox-gl-js/style-spec/#layer-layout) properties to the specified [style-layer](https://www.mapbox.com/mapbox-gl-js/style-spec/#layers).
     * > **Known Limitations**  This method is only supported in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).

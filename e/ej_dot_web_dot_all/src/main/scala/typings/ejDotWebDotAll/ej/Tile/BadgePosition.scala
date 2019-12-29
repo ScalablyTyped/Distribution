@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tile.BadgePosition.Bottomright
-import typings.ejDotWebDotAll.ej.Tile.BadgePosition.Topright
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

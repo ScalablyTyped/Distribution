@@ -37,14 +37,14 @@ object atJupyterlabObservablesStrings {
   
   @js.native
   sealed trait remove
-    extends typings.atJupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
-       with ChangeType
+    extends ChangeType
        with typings.atJupyterlabObservables.libObservablemapMod.IObservableMap.ChangeType
+       with typings.atJupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
   
   @js.native
   sealed trait set
-    extends typings.atJupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
-       with ChangeType
+    extends ChangeType
+       with typings.atJupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
   
   @scala.inline
   def List: List = "List".asInstanceOf[List]

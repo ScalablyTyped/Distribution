@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.application
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.logical
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.namedArray
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.other
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.physical
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.report
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.usageModifier
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidCollectionType.usageSwitch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

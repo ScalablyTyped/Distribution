@@ -11,7 +11,8 @@ class HTMLOption protected () extends js.Object {
   val DisplayStyle: fmDisplayStyle = js.native
   var HTMLName: String = js.native
   var HTMLType: String = js.native
-  var `MSForms.HTMLOption_typekey`: HTMLOption = js.native
+  @JSName("MSForms.HTMLOption_typekey")
+  var MSFormsDotHTMLOption_typekey: HTMLOption = js.native
   var Value: String = js.native
 }
 

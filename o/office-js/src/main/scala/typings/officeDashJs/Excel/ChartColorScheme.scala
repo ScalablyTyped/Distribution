@@ -1,23 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartColorScheme.colorfulPalette1
-import typings.officeDashJs.Excel.ChartColorScheme.colorfulPalette2
-import typings.officeDashJs.Excel.ChartColorScheme.colorfulPalette3
-import typings.officeDashJs.Excel.ChartColorScheme.colorfulPalette4
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette1
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette10
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette11
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette12
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette13
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette2
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette3
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette4
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette5
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette6
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette7
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette8
-import typings.officeDashJs.Excel.ChartColorScheme.monochromaticPalette9
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

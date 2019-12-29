@@ -1,13 +1,6 @@
 package typings.winjs.WinJS.Utilities.Scheduler
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.Utilities.Scheduler.Priority.aboveNormal
-import typings.winjs.WinJS.Utilities.Scheduler.Priority.belowNormal
-import typings.winjs.WinJS.Utilities.Scheduler.Priority.high
-import typings.winjs.WinJS.Utilities.Scheduler.Priority.idle
-import typings.winjs.WinJS.Utilities.Scheduler.Priority.max
-import typings.winjs.WinJS.Utilities.Scheduler.Priority.min
-import typings.winjs.WinJS.Utilities.Scheduler.Priority.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

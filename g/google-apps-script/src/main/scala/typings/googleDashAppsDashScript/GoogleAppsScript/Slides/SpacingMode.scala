@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SpacingMode.COLLAPSE_LISTS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SpacingMode.NEVER_COLLAPSE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SpacingMode.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

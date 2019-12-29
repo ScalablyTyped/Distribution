@@ -20,7 +20,8 @@ class DefaultWebOptions protected () extends js.Object {
   val Creator: XlCreator = js.native
   var DownloadComponents: Boolean = js.native
   var Encoding: MsoEncoding = js.native
-  var `Excel.DefaultWebOptions_typekey`: DefaultWebOptions = js.native
+  @JSName("Excel.DefaultWebOptions_typekey")
+  var ExcelDotDefaultWebOptions_typekey: DefaultWebOptions = js.native
   val FolderSuffix: String = js.native
   @JSName("Fonts")
   val Fonts_Original: WebPageFonts = js.native

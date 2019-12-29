@@ -2,7 +2,6 @@ package typings.atMaterialTabDashBar
 
 import typings.atMaterialBase.foundationMod.MDCFoundation
 import typings.atMaterialTabDashBar.adapterMod.MDCTabBarAdapter
-import typings.atMaterialTabDashBar.foundationMod.MDCTabBarFoundation
 import typings.std.KeyboardEvent
 import typings.std.Partial
 import scala.scalajs.js

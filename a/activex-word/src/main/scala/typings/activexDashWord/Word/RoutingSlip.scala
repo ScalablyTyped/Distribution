@@ -17,7 +17,8 @@ class RoutingSlip protected () extends js.Object {
   val Status: WdRoutingSlipStatus = js.native
   var Subject: String = js.native
   var TrackStatus: Boolean = js.native
-  var `Word.RoutingSlip_typekey`: RoutingSlip = js.native
+  @JSName("Word.RoutingSlip_typekey")
+  var WordDotRoutingSlip_typekey: RoutingSlip = js.native
   def AddRecipient(Recipient: String): Unit = js.native
   def Recipients(): js.Any = js.native
   def Recipients(Index: js.Any): js.Any = js.native

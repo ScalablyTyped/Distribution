@@ -1,8 +1,6 @@
 package typings.microsoftDashAjax.Sys.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashAjax.Sys.UI.VisibilityMode.collapse
-import typings.microsoftDashAjax.Sys.UI.VisibilityMode.hide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

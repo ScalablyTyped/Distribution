@@ -1,25 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.EventType.ActiveViewChanged
-import typings.officeDashJs.Office.EventType.AppointmentTimeChanged
-import typings.officeDashJs.Office.EventType.AttachmentsChanged
-import typings.officeDashJs.Office.EventType.BindingDataChanged
-import typings.officeDashJs.Office.EventType.BindingSelectionChanged
-import typings.officeDashJs.Office.EventType.DialogEventReceived
-import typings.officeDashJs.Office.EventType.DialogMessageReceived
-import typings.officeDashJs.Office.EventType.DocumentSelectionChanged
-import typings.officeDashJs.Office.EventType.EnhancedLocationsChanged
-import typings.officeDashJs.Office.EventType.ItemChanged
-import typings.officeDashJs.Office.EventType.NodeDeleted
-import typings.officeDashJs.Office.EventType.NodeInserted
-import typings.officeDashJs.Office.EventType.NodeReplaced
-import typings.officeDashJs.Office.EventType.RecipientsChanged
-import typings.officeDashJs.Office.EventType.RecurrenceChanged
-import typings.officeDashJs.Office.EventType.ResourceSelectionChanged
-import typings.officeDashJs.Office.EventType.SettingsChanged
-import typings.officeDashJs.Office.EventType.TaskSelectionChanged
-import typings.officeDashJs.Office.EventType.ViewSelectionChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

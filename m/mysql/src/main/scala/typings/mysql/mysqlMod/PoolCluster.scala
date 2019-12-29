@@ -1,6 +1,6 @@
 package typings.mysql.mysqlMod
 
-import typings.mysql.mysqlNumbers.`false`
+import typings.mysql.mysqlBooleans.`false`
 import typings.mysql.mysqlStrings.offline
 import typings.mysql.mysqlStrings.remove
 import scala.scalajs.js

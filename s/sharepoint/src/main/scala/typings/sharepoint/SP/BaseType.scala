@@ -1,13 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.BaseType.discussionBoard
-import typings.sharepoint.SP.BaseType.documentLibrary
-import typings.sharepoint.SP.BaseType.genericList
-import typings.sharepoint.SP.BaseType.issue
-import typings.sharepoint.SP.BaseType.none
-import typings.sharepoint.SP.BaseType.survey
-import typings.sharepoint.SP.BaseType.unused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

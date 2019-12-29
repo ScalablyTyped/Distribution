@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Image")
 @js.native
 class Image protected () extends js.Object {
-  var `Access.Image_typekey`: Image = js.native
+  @JSName("Access.Image_typekey")
+  var AccessDotImage_typekey: Image = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BackColor: Double = js.native
   var BackShade: Double = js.native

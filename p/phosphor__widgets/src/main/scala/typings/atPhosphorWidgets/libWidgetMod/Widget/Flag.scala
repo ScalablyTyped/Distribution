@@ -1,11 +1,6 @@
 package typings.atPhosphorWidgets.libWidgetMod.Widget
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.DisallowLayout
-import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsAttached
-import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsDisposed
-import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsHidden
-import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

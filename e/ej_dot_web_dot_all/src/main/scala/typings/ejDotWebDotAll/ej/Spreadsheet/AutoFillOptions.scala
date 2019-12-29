@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.CopyCells
-import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillFormattingOnly
-import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillSeries
-import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillWithoutFormatting
-import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FlashFill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.EmitHint.EmbeddedStatement
-import typings.typescript.typescriptMod.EmitHint.IdentifierName
-import typings.typescript.typescriptMod.EmitHint.MappedTypeParameter
-import typings.typescript.typescriptMod.EmitHint.Unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

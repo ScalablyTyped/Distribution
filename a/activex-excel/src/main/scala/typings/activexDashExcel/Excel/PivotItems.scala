@@ -10,7 +10,8 @@ class PivotItems protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Count: Double = js.native
   val Creator: XlCreator = js.native
-  var `Excel.PivotItems_typekey`: PivotItems = js.native
+  @JSName("Excel.PivotItems_typekey")
+  var ExcelDotPivotItems_typekey: PivotItems = js.native
   val Parent: PivotField = js.native
   def Add(Name: String): Unit = js.native
   def Item(Index: String): js.Any = js.native

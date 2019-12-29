@@ -18,25 +18,25 @@ object offlineDashJsStrings {
   sealed trait down extends js.Object
   
   @js.native
-  sealed trait `reconnect:connecting` extends js.Object
+  sealed trait reconnectColonconnecting extends js.Object
   
   @js.native
-  sealed trait `reconnect:failure` extends js.Object
+  sealed trait reconnectColonfailure extends js.Object
   
   @js.native
-  sealed trait `reconnect:started` extends js.Object
+  sealed trait reconnectColonstarted extends js.Object
   
   @js.native
-  sealed trait `reconnect:stopped` extends js.Object
+  sealed trait reconnectColonstopped extends js.Object
   
   @js.native
-  sealed trait `reconnect:tick` extends js.Object
+  sealed trait reconnectColontick extends js.Object
   
   @js.native
-  sealed trait `requests:flush` extends js.Object
+  sealed trait requestsColonflush extends js.Object
   
   @js.native
-  sealed trait `requests:hold` extends js.Object
+  sealed trait requestsColonhold extends js.Object
   
   @js.native
   sealed trait up extends js.Object
@@ -50,19 +50,19 @@ object offlineDashJsStrings {
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
-  def `reconnect:connecting`: `reconnect:connecting` = "reconnect:connecting".asInstanceOf[`reconnect:connecting`]
+  def reconnectColonconnecting: reconnectColonconnecting = "reconnect:connecting".asInstanceOf[reconnectColonconnecting]
   @scala.inline
-  def `reconnect:failure`: `reconnect:failure` = "reconnect:failure".asInstanceOf[`reconnect:failure`]
+  def reconnectColonfailure: reconnectColonfailure = "reconnect:failure".asInstanceOf[reconnectColonfailure]
   @scala.inline
-  def `reconnect:started`: `reconnect:started` = "reconnect:started".asInstanceOf[`reconnect:started`]
+  def reconnectColonstarted: reconnectColonstarted = "reconnect:started".asInstanceOf[reconnectColonstarted]
   @scala.inline
-  def `reconnect:stopped`: `reconnect:stopped` = "reconnect:stopped".asInstanceOf[`reconnect:stopped`]
+  def reconnectColonstopped: reconnectColonstopped = "reconnect:stopped".asInstanceOf[reconnectColonstopped]
   @scala.inline
-  def `reconnect:tick`: `reconnect:tick` = "reconnect:tick".asInstanceOf[`reconnect:tick`]
+  def reconnectColontick: reconnectColontick = "reconnect:tick".asInstanceOf[reconnectColontick]
   @scala.inline
-  def `requests:flush`: `requests:flush` = "requests:flush".asInstanceOf[`requests:flush`]
+  def requestsColonflush: requestsColonflush = "requests:flush".asInstanceOf[requestsColonflush]
   @scala.inline
-  def `requests:hold`: `requests:hold` = "requests:hold".asInstanceOf[`requests:hold`]
+  def requestsColonhold: requestsColonhold = "requests:hold".asInstanceOf[requestsColonhold]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
 }

@@ -2,17 +2,13 @@ package typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod
 
 import typings.coinbaseDashCommerceDashNode.Anon_Block
 import typings.coinbaseDashCommerceDashNode.Anon_Context
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod.resources.Charge
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod.resources.Checkout
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod.resources.Event
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod.resources.Resource
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:confirmed`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:created`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:delayed`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:failed`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:pending`
-import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:resolved`
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.charge
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonconfirmed
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColoncreated
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColondelayed
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonfailed
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonpending
+import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.chargeColonresolved
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.checkout
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.event
 import typings.std.Partial
@@ -194,7 +190,7 @@ object resources extends js.Object {
       * Event type.
       */
     /* CompleteClass */
-    override var `type`: `charge:created` | `charge:confirmed` | `charge:failed` | `charge:delayed` | `charge:pending` | `charge:resolved` = js.native
+    override var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved = js.native
   }
   
   /**

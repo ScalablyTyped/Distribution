@@ -2,10 +2,6 @@ package typings.androiduix.android.graphics
 
 import org.scalablytyped.runtime.TopLevel
 import typings.androiduix.android.graphics.Matrix.ScaleToFit
-import typings.androiduix.android.graphics.Matrix.ScaleToFit.CENTER
-import typings.androiduix.android.graphics.Matrix.ScaleToFit.END
-import typings.androiduix.android.graphics.Matrix.ScaleToFit.FILL
-import typings.androiduix.android.graphics.Matrix.ScaleToFit.START
 import typings.androiduix.java.lang.StringBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`

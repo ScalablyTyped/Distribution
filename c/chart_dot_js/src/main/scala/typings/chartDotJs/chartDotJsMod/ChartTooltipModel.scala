@@ -15,6 +15,7 @@ trait ChartTooltipModel extends js.Object {
   var _titleFontFamily: String
   var _titleFontStyle: String
   var backgroundColor: String
+  var body: js.Array[ChartTooltipModelBody]
   var bodyFontColor: String
   var bodyFontSize: Double
   var bodySpacing: Double
@@ -24,6 +25,7 @@ trait ChartTooltipModel extends js.Object {
   var caretX: Double
   var caretY: Double
   var cornerRadius: Double
+  var dataPoints: js.Array[ChartTooltipItem]
   var displayColors: Boolean
   var footerFontColor: String
   var footerFontSize: Double
@@ -58,6 +60,7 @@ object ChartTooltipModel {
     _titleFontFamily: String,
     _titleFontStyle: String,
     backgroundColor: String,
+    body: js.Array[ChartTooltipModelBody],
     bodyFontColor: String,
     bodyFontSize: Double,
     bodySpacing: Double,
@@ -67,6 +70,7 @@ object ChartTooltipModel {
     caretX: Double,
     caretY: Double,
     cornerRadius: Double,
+    dataPoints: js.Array[ChartTooltipItem],
     displayColors: Boolean,
     footerFontColor: String,
     footerFontSize: Double,
@@ -87,7 +91,7 @@ object ChartTooltipModel {
     yAlign: String,
     yPadding: Double
   ): ChartTooltipModel = {
-    val __obj = js.Dynamic.literal(_bodyAlign = _bodyAlign.asInstanceOf[js.Any], _bodyFontFamily = _bodyFontFamily.asInstanceOf[js.Any], _bodyFontStyle = _bodyFontStyle.asInstanceOf[js.Any], _footerAlign = _footerAlign.asInstanceOf[js.Any], _footerFontFamily = _footerFontFamily.asInstanceOf[js.Any], _footerFontStyle = _footerFontStyle.asInstanceOf[js.Any], _titleAlign = _titleAlign.asInstanceOf[js.Any], _titleFontFamily = _titleFontFamily.asInstanceOf[js.Any], _titleFontStyle = _titleFontStyle.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], bodyFontColor = bodyFontColor.asInstanceOf[js.Any], bodyFontSize = bodyFontSize.asInstanceOf[js.Any], bodySpacing = bodySpacing.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], caretSize = caretSize.asInstanceOf[js.Any], caretX = caretX.asInstanceOf[js.Any], caretY = caretY.asInstanceOf[js.Any], cornerRadius = cornerRadius.asInstanceOf[js.Any], displayColors = displayColors.asInstanceOf[js.Any], footerFontColor = footerFontColor.asInstanceOf[js.Any], footerFontSize = footerFontSize.asInstanceOf[js.Any], footerMarginTop = footerMarginTop.asInstanceOf[js.Any], footerSpacing = footerSpacing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], legendColorBackground = legendColorBackground.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], titleFontColor = titleFontColor.asInstanceOf[js.Any], titleFontSize = titleFontSize.asInstanceOf[js.Any], titleMarginBottom = titleMarginBottom.asInstanceOf[js.Any], titleSpacing = titleSpacing.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xAlign = xAlign.asInstanceOf[js.Any], xPadding = xPadding.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yAlign = yAlign.asInstanceOf[js.Any], yPadding = yPadding.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_bodyAlign = _bodyAlign.asInstanceOf[js.Any], _bodyFontFamily = _bodyFontFamily.asInstanceOf[js.Any], _bodyFontStyle = _bodyFontStyle.asInstanceOf[js.Any], _footerAlign = _footerAlign.asInstanceOf[js.Any], _footerFontFamily = _footerFontFamily.asInstanceOf[js.Any], _footerFontStyle = _footerFontStyle.asInstanceOf[js.Any], _titleAlign = _titleAlign.asInstanceOf[js.Any], _titleFontFamily = _titleFontFamily.asInstanceOf[js.Any], _titleFontStyle = _titleFontStyle.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], bodyFontColor = bodyFontColor.asInstanceOf[js.Any], bodyFontSize = bodyFontSize.asInstanceOf[js.Any], bodySpacing = bodySpacing.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], caretSize = caretSize.asInstanceOf[js.Any], caretX = caretX.asInstanceOf[js.Any], caretY = caretY.asInstanceOf[js.Any], cornerRadius = cornerRadius.asInstanceOf[js.Any], dataPoints = dataPoints.asInstanceOf[js.Any], displayColors = displayColors.asInstanceOf[js.Any], footerFontColor = footerFontColor.asInstanceOf[js.Any], footerFontSize = footerFontSize.asInstanceOf[js.Any], footerMarginTop = footerMarginTop.asInstanceOf[js.Any], footerSpacing = footerSpacing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], legendColorBackground = legendColorBackground.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], titleFontColor = titleFontColor.asInstanceOf[js.Any], titleFontSize = titleFontSize.asInstanceOf[js.Any], titleMarginBottom = titleMarginBottom.asInstanceOf[js.Any], titleSpacing = titleSpacing.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xAlign = xAlign.asInstanceOf[js.Any], xPadding = xPadding.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yAlign = yAlign.asInstanceOf[js.Any], yPadding = yPadding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChartTooltipModel]
   }

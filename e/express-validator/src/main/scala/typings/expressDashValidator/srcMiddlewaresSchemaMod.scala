@@ -2,11 +2,6 @@ package typings.expressDashValidator
 
 import typings.expressDashValidator.srcBaseMod.Location
 import typings.expressDashValidator.srcChainValidationDashChainMod.ValidationChain
-import typings.expressDashValidator.srcMiddlewaresSchemaMod.InternalParamSchema
-import typings.expressDashValidator.srcMiddlewaresSchemaMod.ParamSchema
-import typings.expressDashValidator.srcMiddlewaresSchemaMod.SanitizersSchema
-import typings.expressDashValidator.srcMiddlewaresSchemaMod.Schema
-import typings.expressDashValidator.srcMiddlewaresSchemaMod.ValidatorsSchema
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,13 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcMiddlewaresSchemaMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.expressDashValidator.expressDashValidatorNumbers.`true`
+    - typings.expressDashValidator.expressDashValidatorBooleans.`true`
     - typings.expressDashValidator.Anon_0Options[K]
   */
   trait SanitizerSchemaOptions[K /* <: String */] extends js.Object
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expressDashValidator.expressDashValidatorNumbers.`true`
+    - typings.expressDashValidator.expressDashValidatorBooleans.`true`
     - typings.expressDashValidator.Anon_0[K]
   */
   trait ValidatorSchemaOptions[K /* <: String */] extends js.Object

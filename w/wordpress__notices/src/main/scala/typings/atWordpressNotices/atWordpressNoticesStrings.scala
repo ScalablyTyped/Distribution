@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object atWordpressNoticesStrings {
   @js.native
-  sealed trait `core/notices` extends js.Object
+  sealed trait coreSlashnotices extends js.Object
   
   @js.native
   sealed trait default extends js.Object
@@ -28,7 +28,7 @@ object atWordpressNoticesStrings {
   sealed trait warning extends Status
   
   @scala.inline
-  def `core/notices`: `core/notices` = "core/notices".asInstanceOf[`core/notices`]
+  def coreSlashnotices: coreSlashnotices = "core/notices".asInstanceOf[coreSlashnotices]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline

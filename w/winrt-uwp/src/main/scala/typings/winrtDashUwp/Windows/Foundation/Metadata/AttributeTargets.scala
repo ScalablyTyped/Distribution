@@ -1,19 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.all
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.apiContract
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.delegate
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.enum
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.event
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.field
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.interface
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.interfaceImpl
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.method
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.parameter
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.property
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.runtimeClass
-import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.struct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

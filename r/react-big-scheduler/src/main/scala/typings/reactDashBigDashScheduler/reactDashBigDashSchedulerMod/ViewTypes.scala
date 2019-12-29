@@ -1,14 +1,6 @@
 package typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Custom
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Custom1
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Custom2
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Day
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Month
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Quarter
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Week
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.ViewTypes.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

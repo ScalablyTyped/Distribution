@@ -2,11 +2,6 @@ package typings.heremaps.H.util
 
 import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.util.Request.State
-import typings.heremaps.H.util.Request.State.CANCELLED
-import typings.heremaps.H.util.Request.State.COMPLETE
-import typings.heremaps.H.util.Request.State.ERROR
-import typings.heremaps.H.util.Request.State.PENDING
-import typings.heremaps.H.util.Request.State.PROCESSING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

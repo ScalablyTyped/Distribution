@@ -1,6 +1,5 @@
 package typings.atEmberArray
 
-import typings.atEmberArray.atEmberArrayMod.Array
 import typings.atEmberArray.dashPrivateEnumerableMod.Enumerable
 import typings.atEmberArray.dashPrivateNativeDashArrayMod.NativeArray
 import typings.atEmberObject.computedMod.ComputedProperty

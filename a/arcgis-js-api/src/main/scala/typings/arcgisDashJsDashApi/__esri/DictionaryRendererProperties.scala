@@ -22,6 +22,12 @@ trait DictionaryRendererProperties
     */
   var fieldMap: js.UndefOr[HashMap[String]] = js.undefined
   /**
+    * A scaling expression can be set to increase or decrease the size of the dictionary symbols. The scaling expression can be a constant value for all symbols or an Arcade expression.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression)
+    */
+  var scaleExpression: js.UndefOr[String] = js.undefined
+  /**
     * The type of renderer. For this renderer the type is always `dictionary`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#type)
@@ -41,6 +47,7 @@ object DictionaryRendererProperties {
     authoringInfo: AuthoringInfoProperties = null,
     config: js.Any = null,
     fieldMap: HashMap[String] = null,
+    scaleExpression: String = null,
     `type`: dictionary = null,
     url: String = null,
     visualVariables: js.Array[VisualVariableProperties] = null
@@ -49,6 +56,7 @@ object DictionaryRendererProperties {
     if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (fieldMap != null) __obj.updateDynamic("fieldMap")(fieldMap.asInstanceOf[js.Any])
+    if (scaleExpression != null) __obj.updateDynamic("scaleExpression")(scaleExpression.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])

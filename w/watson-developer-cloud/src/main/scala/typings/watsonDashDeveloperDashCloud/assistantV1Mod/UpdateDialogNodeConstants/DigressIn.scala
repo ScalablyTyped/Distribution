@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.DOES_NOT_RETURN
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.NOT_AVAILABLE
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.RETURNS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

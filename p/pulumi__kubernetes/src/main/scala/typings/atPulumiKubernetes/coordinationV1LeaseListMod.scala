@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1`
-import typings.atPulumiKubernetes.coordinationV1LeaseListMod.LeaseList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.coordinationDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.coordination.v1.Lease
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object coordinationV1LeaseListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`coordinationDOTk8sDOTio/v1`] = js.native
+    val apiVersion: Output[coordinationDotk8sDotioSlashv1] = js.native
     /**
       * Items is a list of schema objects.
       */

@@ -1,7 +1,7 @@
 package typings.reactDashQrDashReader.reactDashQrDashReaderMod
 
 import typings.react.reactMod.SyntheticEvent
-import typings.reactDashQrDashReader.reactDashQrDashReaderNumbers.`false`
+import typings.reactDashQrDashReader.reactDashQrDashReaderBooleans.`false`
 import typings.reactDashQrDashReader.reactDashQrDashReaderStrings.environment
 import typings.reactDashQrDashReader.reactDashQrDashReaderStrings.user
 import typings.std.Event

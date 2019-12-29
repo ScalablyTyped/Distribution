@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,16 +42,9 @@ class TileSprite protected ()
     * @param textureKey The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frameKey An optional frame from the Texture this Game Object is rendering with.
     */
+  def this(scene: Scene, x: Double, y: Double, width: integer, height: integer, textureKey: String) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    width: integer,
-    height: integer,
-    textureKey: String
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: Double,
     y: Double,
     width: integer,
@@ -59,7 +53,7 @@ class TileSprite protected ()
     frameKey: String
   ) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: Double,
     y: Double,
     width: integer,

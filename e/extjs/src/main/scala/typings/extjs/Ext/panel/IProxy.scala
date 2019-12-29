@@ -17,7 +17,7 @@ trait IProxy extends IBase {
   /** [Method] Gets the proxy s ghost Panel
   		* @returns Ext.panel.Panel The proxy's ghost Panel
   		*/
-  var getGhost: js.UndefOr[js.Function0[typings.extjs.Ext.panel.IPanel]] = js.undefined
+  var getGhost: js.UndefOr[js.Function0[IPanel]] = js.undefined
   /** [Method] Gets the proxy element
   		* @returns Ext.Element The proxy's element
   		*/
@@ -36,7 +36,7 @@ trait IProxy extends IBase {
     js.Function2[/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement], Unit]
   ] = js.undefined
   /** [Property] (Ext.panel.Panel) */
-  var panel: js.UndefOr[typings.extjs.Ext.panel.IPanel] = js.undefined
+  var panel: js.UndefOr[IPanel] = js.undefined
   /** [Method] Shows the proxy */
   var show: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -50,10 +50,10 @@ object IProxy {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getEl: () => IElement = null,
-    getGhost: () => typings.extjs.Ext.panel.IPanel = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getGhost: () => IPanel = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getProxy: () => IElement = null,
     hide: () => Unit = null,
     inheritableStatics: js.Any = null,
@@ -62,7 +62,7 @@ object IProxy {
     mixins: js.Any = null,
     moveOnDrag: js.UndefOr[Boolean] = js.undefined,
     moveProxy: (/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement]) => Unit = null,
-    panel: typings.extjs.Ext.panel.IPanel = null,
+    panel: IPanel = null,
     requires: Array = null,
     self: IClass = null,
     show: () => Unit = null,

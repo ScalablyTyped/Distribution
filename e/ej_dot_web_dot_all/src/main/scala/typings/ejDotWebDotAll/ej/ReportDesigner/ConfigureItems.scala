@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportDesigner
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.All
-import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Data
-import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.ImageManager
-import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Parameter
-import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

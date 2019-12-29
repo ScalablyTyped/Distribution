@@ -2,10 +2,6 @@ package typings.agDashGrid
 
 import org.scalablytyped.runtime.TopLevel
 import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.DropTarget
-import typings.agDashGrid.distLibHeaderRenderingHeaderRowCompMod.HeaderRowType
-import typings.agDashGrid.distLibHeaderRenderingHeaderRowCompMod.HeaderRowType.COLUMN
-import typings.agDashGrid.distLibHeaderRenderingHeaderRowCompMod.HeaderRowType.COLUMN_GROUP
-import typings.agDashGrid.distLibHeaderRenderingHeaderRowCompMod.HeaderRowType.FLOATING_FILTER
 import typings.agDashGrid.distLibInterfacesIComponentMod.IComponent
 import typings.agDashGrid.distLibWidgetsComponentMod.Component
 import scala.scalajs.js

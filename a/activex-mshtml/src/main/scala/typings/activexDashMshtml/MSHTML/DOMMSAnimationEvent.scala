@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMMSAnimationEvent")
 @js.native
 class DOMMSAnimationEvent protected () extends js.Object {
-  var `MSHTML.DOMMSAnimationEvent_typekey`: DOMMSAnimationEvent = js.native
+  @JSName("MSHTML.DOMMSAnimationEvent_typekey")
+  var MSHTMLDotDOMMSAnimationEvent_typekey: DOMMSAnimationEvent = js.native
   val animationName: String = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native

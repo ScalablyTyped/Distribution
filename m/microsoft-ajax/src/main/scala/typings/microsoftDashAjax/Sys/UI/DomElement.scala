@@ -25,7 +25,7 @@ trait DomElement extends js.Object {
     * @param className
     *             The name of the CSS class to add.
     */
-  def addCssClass(element: HTMLElement, className: java.lang.String): Unit = js.native
+  def addCssClass(element: HTMLElement, className: String): Unit = js.native
   /**
     * Gets a value that indicates whether the DOM element contains the specified CSS class. This member is static and can be invoked without creating an instance of the class.
     * @param element
@@ -35,7 +35,7 @@ trait DomElement extends js.Object {
     * @return
     *          true if the element contains the specified CSS class; otherwise, false.
     */
-  def containsCssClass(element: HTMLElement, className: java.lang.String): Boolean = js.native
+  def containsCssClass(element: HTMLElement, className: String): Boolean = js.native
   /**
     * Gets a set of integer coordinates that represent the position, width, and height of a DOM element. This member is static and can be invoked without creating an instance of the class.
     *
@@ -51,9 +51,9 @@ trait DomElement extends js.Object {
     * @param element
     *      (optional) The parent element to search in. The default is the document element.
     */
-  def getElementById(id: java.lang.String): HTMLElement = js.native
-  def getElementById(id: java.lang.String, element: js.Any): js.Any = js.native
-  def getElementById(id: java.lang.String, element: HTMLElement): HTMLElement = js.native
+  def getElementById(id: String): HTMLElement = js.native
+  def getElementById(id: String, element: js.Any): js.Any = js.native
+  def getElementById(id: String, element: HTMLElement): HTMLElement = js.native
   /**
     * Gets the absolute position of a DOM element relative to the upper-left corner of the owner frame or window. This member is static and can be invoked without creating an instance of the class.             *
     * @param element
@@ -94,7 +94,7 @@ trait DomElement extends js.Object {
     *      The event arguments
     */
   def raiseBubbleEvent(source: HTMLElement, args: EventArgs): Unit = js.native
-  def removeCssClass(element: js.Any, className: java.lang.String): Unit = js.native
+  def removeCssClass(element: js.Any, className: String): Unit = js.native
   /**
     * Removes a CSS class from a DOM element. This member is static and can be invoked without creating an instance of the class. If the element does not include a CSS class, no change is made to the element.
     * @param element
@@ -102,7 +102,7 @@ trait DomElement extends js.Object {
     * @param className
     *          The name of the CSS class to remove.
     */
-  def removeCssClass(element: HTMLElement, className: java.lang.String): Unit = js.native
+  def removeCssClass(element: HTMLElement, className: String): Unit = js.native
   /**
     * Returns the element that has either the specified ID in the specified container, or is the specified element itself.
     * The resolveElement method is used to verify that an ID or an object can be resolved as an element.             *
@@ -113,8 +113,8 @@ trait DomElement extends js.Object {
     * @return
     *      A DOM element.
     */
-  def resolveElement(elementOrElementId: java.lang.String): HTMLElement = js.native
-  def resolveElement(elementOrElementId: java.lang.String, containerElement: HTMLElement): HTMLElement = js.native
+  def resolveElement(elementOrElementId: String): HTMLElement = js.native
+  def resolveElement(elementOrElementId: String, containerElement: HTMLElement): HTMLElement = js.native
   def resolveElement(elementOrElementId: HTMLElement): HTMLElement = js.native
   def resolveElement(elementOrElementId: HTMLElement, containerElement: HTMLElement): HTMLElement = js.native
   /**
@@ -162,7 +162,7 @@ trait DomElement extends js.Object {
     * @param className
     *          The name of the CSS class to toggle.
     */
-  def toggleCssClass(element: HTMLElement, className: java.lang.String): Unit = js.native
+  def toggleCssClass(element: HTMLElement, className: String): Unit = js.native
 }
 
 @JSGlobal("Sys.UI.DomElement")

@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.authenticatedSignedWrites
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.broadcast
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.extendedProperties
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.indicate
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.none
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.notify
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.read
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.reliableWrites
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writableAuxiliaries
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.write
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writeWithoutResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

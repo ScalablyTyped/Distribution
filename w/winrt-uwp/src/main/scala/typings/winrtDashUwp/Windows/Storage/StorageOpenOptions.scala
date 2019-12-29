@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.StorageOpenOptions.allowOnlyReaders
-import typings.winrtDashUwp.Windows.Storage.StorageOpenOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

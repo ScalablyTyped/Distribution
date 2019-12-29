@@ -1,6 +1,5 @@
 package typings.opentracing
 
-import typings.opentracing.libSpanUnderscoreContextMod.SpanContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

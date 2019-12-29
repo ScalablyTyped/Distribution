@@ -13,7 +13,7 @@ trait InlineEditValidationEventArgs extends js.Object {
   var id: js.UndefOr[js.Any] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the new entered text for the node
     */
   var newText: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ object InlineEditValidationEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     id: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     newText: String = null,
     oldText: String = null,
     `type`: String = null

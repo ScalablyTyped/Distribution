@@ -1,7 +1,5 @@
 package typings.typescriptDashTuple
 
-import typings.typescriptDashTuple.libMod.Prepend
-import typings.typescriptDashTuple.libMod.Reverse
 import typings.typescriptDashTuple.libUtilsMod._AllIndexesEqual
 import typings.typescriptDashTuple.libUtilsMod._AllIndexesSubset
 import typings.typescriptDashTuple.libUtilsMod._AllIndexesSuperset

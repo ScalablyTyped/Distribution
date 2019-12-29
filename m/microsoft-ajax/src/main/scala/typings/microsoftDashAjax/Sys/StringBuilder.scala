@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   *           (Optional) The string that is used to initialize the value of the instance. If the value is null, the new StringBuilder instance will contain an empty string ("").
   */
 class StringBuilder () extends js.Object {
-  def this(initialText: java.lang.String) = this()
+  def this(initialText: String) = this()
   //#endregion
   //#region Methods
   /**
@@ -27,14 +27,14 @@ class StringBuilder () extends js.Object {
     * @param text
     *             The string to append to the end of the StringBuilder instance.
     */
-  def append(text: java.lang.String): Unit = js.native
+  def append(text: String): Unit = js.native
   /**
     * Appends a string with a line terminator to the end of the Sys.StringBuilder instance.
     * Use the appendLine method to append a specified string and a line terminator to the end of a Stringbuilder instance. The line terminator is a combination of a carriage return and a newline character. If no string is specified in text, only the line terminator is appended.
     * @param text
     *           (Optional) The string to append with a line terminator to the end of the StringBuilder instance.
     */
-  def appendLine(text: java.lang.String): Unit = js.native
+  def appendLine(text: String): Unit = js.native
   /**
     * Clears the contents of the Sys.StringBuilder instance.
     * Use the clear method to clear the StringBuilder instance of its current contents.
@@ -46,6 +46,6 @@ class StringBuilder () extends js.Object {
     * @return true if the StringBuilder instance contains no elements; otherwise, false.
     */
   def isEmpty(): Boolean = js.native
-  def toString(separator: java.lang.String): java.lang.String = js.native
+  def toString(separator: String): String = js.native
 }
 

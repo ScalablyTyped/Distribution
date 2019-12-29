@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.eventsMod.EventsKey
-import typings.ol.observableMod.Observable
 import typings.ol.olStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`

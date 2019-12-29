@@ -1,6 +1,6 @@
 package typings.trezorDashConnect.trezorDashConnectMod
 
-import typings.trezorDashConnect.trezorDashConnectNumbers.`true`
+import typings.trezorDashConnect.trezorDashConnectBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

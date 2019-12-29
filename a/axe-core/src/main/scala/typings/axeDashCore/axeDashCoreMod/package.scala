@@ -12,7 +12,7 @@ package object axeDashCoreMod {
   import typings.std.Node
 
   type CheckLocale = StringDictionary[Anon_Fail]
-  type ElementContext = Node | String | RunOnlyObject
+  type ElementContext = Node | String | ContextObject
   type RuleLocale = StringDictionary[Anon_Description]
   type RunCallback = js.Function2[/* error */ Error, /* results */ AxeResults, Unit]
 }

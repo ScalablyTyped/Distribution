@@ -1,26 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.DE_DE_BIRGITV2VOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.DE_DE_BIRGITVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.DE_DE_DIETERV2VOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.DE_DE_DIETERVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.EN_GB_KATEVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.EN_US_ALLISONV2VOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.EN_US_ALLISONVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.EN_US_LISAV2VOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.EN_US_LISAVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.EN_US_MICHAELV2VOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.EN_US_MICHAELVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.ES_ES_ENRIQUEVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.ES_ES_LAURAVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.ES_LA_SOFIAVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.ES_US_SOFIAVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.FR_FR_RENEEVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.IT_IT_FRANCESCAV2VOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.IT_IT_FRANCESCAVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.JA_JP_EMIVOICE
-import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice.PT_BR_ISABELAVOICE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,89 +13,67 @@ sealed trait Voice extends js.Object
 @js.native
 object Voice extends js.Object {
   @js.native
-  sealed trait DE_DE_BIRGITV2VOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait DE_DE_BIRGITV2VOICE extends Voice
   
   @js.native
-  sealed trait DE_DE_BIRGITVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait DE_DE_BIRGITVOICE extends Voice
   
   @js.native
-  sealed trait DE_DE_DIETERV2VOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait DE_DE_DIETERV2VOICE extends Voice
   
   @js.native
-  sealed trait DE_DE_DIETERVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait DE_DE_DIETERVOICE extends Voice
   
   @js.native
-  sealed trait EN_GB_KATEVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait EN_GB_KATEVOICE extends Voice
   
   @js.native
-  sealed trait EN_US_ALLISONV2VOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait EN_US_ALLISONV2VOICE extends Voice
   
   @js.native
-  sealed trait EN_US_ALLISONVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait EN_US_ALLISONVOICE extends Voice
   
   @js.native
-  sealed trait EN_US_LISAV2VOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait EN_US_LISAV2VOICE extends Voice
   
   @js.native
-  sealed trait EN_US_LISAVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait EN_US_LISAVOICE extends Voice
   
   @js.native
-  sealed trait EN_US_MICHAELV2VOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait EN_US_MICHAELV2VOICE extends Voice
   
   @js.native
-  sealed trait EN_US_MICHAELVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait EN_US_MICHAELVOICE extends Voice
   
   @js.native
-  sealed trait ES_ES_ENRIQUEVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait ES_ES_ENRIQUEVOICE extends Voice
   
   @js.native
-  sealed trait ES_ES_LAURAVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait ES_ES_LAURAVOICE extends Voice
   
   @js.native
-  sealed trait ES_LA_SOFIAVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait ES_LA_SOFIAVOICE extends Voice
   
   @js.native
-  sealed trait ES_US_SOFIAVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait ES_US_SOFIAVOICE extends Voice
   
   @js.native
-  sealed trait FR_FR_RENEEVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait FR_FR_RENEEVOICE extends Voice
   
   @js.native
-  sealed trait IT_IT_FRANCESCAV2VOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait IT_IT_FRANCESCAV2VOICE extends Voice
   
   @js.native
-  sealed trait IT_IT_FRANCESCAVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait IT_IT_FRANCESCAVOICE extends Voice
   
   @js.native
-  sealed trait JA_JP_EMIVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait JA_JP_EMIVOICE extends Voice
   
   @js.native
-  sealed trait PT_BR_ISABELAVOICE
-    extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice
+  sealed trait PT_BR_ISABELAVOICE extends Voice
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[
-    typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Voice with String
-  ] = js.native
+  def apply(value: String): js.UndefOr[Voice with String] = js.native
   /* "de-DE_BirgitV2Voice" */ @js.native
   object DE_DE_BIRGITV2VOICE extends TopLevel[DE_DE_BIRGITV2VOICE with String]
   

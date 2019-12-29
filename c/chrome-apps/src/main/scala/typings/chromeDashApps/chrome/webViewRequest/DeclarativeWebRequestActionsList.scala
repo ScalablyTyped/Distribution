@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTAddRequestCookie
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTAddResponseCookie
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTAddResponseHeader
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTCancelRequest
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTEditRequestCookie
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTEditResponseCookie
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectRequest
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectToTransparentImage
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectToEmptyDocument
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectByRegEx
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveRequestCookie
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveResponseCookie
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveRequestHeader
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveResponseHeader
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTSetRequestHeader
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTSendMessageToExtension
-  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTIgnoreRules
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotAddRequestCookie
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotAddResponseCookie
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotAddResponseHeader
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotCancelRequest
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotEditRequestCookie
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotEditResponseCookie
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectRequest
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectToTransparentImage
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectToEmptyDocument
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectByRegEx
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveRequestCookie
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveResponseCookie
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveRequestHeader
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveResponseHeader
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotSetRequestHeader
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotSendMessageToExtension
+  - typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotIgnoreRules
 */
 trait DeclarativeWebRequestActionsList extends js.Object
 
@@ -29,38 +29,38 @@ object DeclarativeWebRequestActionsList {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def declarativeWebRequestDOTAddRequestCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTAddRequestCookie = this.cast("declarativeWebRequest.AddRequestCookie")
+  def declarativeWebRequestDotAddRequestCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotAddRequestCookie = this.cast("declarativeWebRequest.AddRequestCookie")
   @scala.inline
-  def declarativeWebRequestDOTAddResponseCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTAddResponseCookie = this.cast("declarativeWebRequest.AddResponseCookie")
+  def declarativeWebRequestDotAddResponseCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotAddResponseCookie = this.cast("declarativeWebRequest.AddResponseCookie")
   @scala.inline
-  def declarativeWebRequestDOTAddResponseHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTAddResponseHeader = this.cast("declarativeWebRequest.AddResponseHeader")
+  def declarativeWebRequestDotAddResponseHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotAddResponseHeader = this.cast("declarativeWebRequest.AddResponseHeader")
   @scala.inline
-  def declarativeWebRequestDOTCancelRequest: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTCancelRequest = this.cast("declarativeWebRequest.CancelRequest")
+  def declarativeWebRequestDotCancelRequest: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotCancelRequest = this.cast("declarativeWebRequest.CancelRequest")
   @scala.inline
-  def declarativeWebRequestDOTEditRequestCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTEditRequestCookie = this.cast("declarativeWebRequest.EditRequestCookie")
+  def declarativeWebRequestDotEditRequestCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotEditRequestCookie = this.cast("declarativeWebRequest.EditRequestCookie")
   @scala.inline
-  def declarativeWebRequestDOTEditResponseCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTEditResponseCookie = this.cast("declarativeWebRequest.EditResponseCookie")
+  def declarativeWebRequestDotEditResponseCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotEditResponseCookie = this.cast("declarativeWebRequest.EditResponseCookie")
   @scala.inline
-  def declarativeWebRequestDOTIgnoreRules: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTIgnoreRules = this.cast("declarativeWebRequest.IgnoreRules")
+  def declarativeWebRequestDotIgnoreRules: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotIgnoreRules = this.cast("declarativeWebRequest.IgnoreRules")
   @scala.inline
-  def declarativeWebRequestDOTRedirectByRegEx: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectByRegEx = this.cast("declarativeWebRequest.RedirectByRegEx")
+  def declarativeWebRequestDotRedirectByRegEx: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectByRegEx = this.cast("declarativeWebRequest.RedirectByRegEx")
   @scala.inline
-  def declarativeWebRequestDOTRedirectRequest: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectRequest = this.cast("declarativeWebRequest.RedirectRequest")
+  def declarativeWebRequestDotRedirectRequest: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectRequest = this.cast("declarativeWebRequest.RedirectRequest")
   @scala.inline
-  def declarativeWebRequestDOTRedirectToEmptyDocument: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectToEmptyDocument = this.cast("declarativeWebRequest.RedirectToEmptyDocument")
+  def declarativeWebRequestDotRedirectToEmptyDocument: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectToEmptyDocument = this.cast("declarativeWebRequest.RedirectToEmptyDocument")
   @scala.inline
-  def declarativeWebRequestDOTRedirectToTransparentImage: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRedirectToTransparentImage = this.cast("declarativeWebRequest.RedirectToTransparentImage")
+  def declarativeWebRequestDotRedirectToTransparentImage: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRedirectToTransparentImage = this.cast("declarativeWebRequest.RedirectToTransparentImage")
   @scala.inline
-  def declarativeWebRequestDOTRemoveRequestCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveRequestCookie = this.cast("declarativeWebRequest.RemoveRequestCookie")
+  def declarativeWebRequestDotRemoveRequestCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveRequestCookie = this.cast("declarativeWebRequest.RemoveRequestCookie")
   @scala.inline
-  def declarativeWebRequestDOTRemoveRequestHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveRequestHeader = this.cast("declarativeWebRequest.RemoveRequestHeader")
+  def declarativeWebRequestDotRemoveRequestHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveRequestHeader = this.cast("declarativeWebRequest.RemoveRequestHeader")
   @scala.inline
-  def declarativeWebRequestDOTRemoveResponseCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveResponseCookie = this.cast("declarativeWebRequest.RemoveResponseCookie")
+  def declarativeWebRequestDotRemoveResponseCookie: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveResponseCookie = this.cast("declarativeWebRequest.RemoveResponseCookie")
   @scala.inline
-  def declarativeWebRequestDOTRemoveResponseHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTRemoveResponseHeader = this.cast("declarativeWebRequest.RemoveResponseHeader")
+  def declarativeWebRequestDotRemoveResponseHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotRemoveResponseHeader = this.cast("declarativeWebRequest.RemoveResponseHeader")
   @scala.inline
-  def declarativeWebRequestDOTSendMessageToExtension: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTSendMessageToExtension = this.cast("declarativeWebRequest.SendMessageToExtension")
+  def declarativeWebRequestDotSendMessageToExtension: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotSendMessageToExtension = this.cast("declarativeWebRequest.SendMessageToExtension")
   @scala.inline
-  def declarativeWebRequestDOTSetRequestHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDOTSetRequestHeader = this.cast("declarativeWebRequest.SetRequestHeader")
+  def declarativeWebRequestDotSetRequestHeader: typings.chromeDashApps.chromeDashAppsStrings.declarativeWebRequestDotSetRequestHeader = this.cast("declarativeWebRequest.SetRequestHeader")
 }
 

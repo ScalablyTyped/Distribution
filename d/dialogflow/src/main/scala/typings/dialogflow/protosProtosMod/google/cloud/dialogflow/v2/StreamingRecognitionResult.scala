@@ -3,9 +3,6 @@ package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.END_OF_SINGLE_UTTERANCE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.MESSAGE_TYPE_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.TRANSCRIPT
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

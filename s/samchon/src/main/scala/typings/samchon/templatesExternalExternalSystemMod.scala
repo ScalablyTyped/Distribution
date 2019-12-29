@@ -9,7 +9,6 @@ import typings.samchon.protocolEntityEntityCollectionMod.EntityDequeCollection
 import typings.samchon.protocolInvokeIProtocolMod.IProtocol
 import typings.samchon.protocolInvokeInvokeMod.Invoke
 import typings.samchon.templatesExternalExternalSystemArrayMod.ExternalSystemArray
-import typings.samchon.templatesExternalExternalSystemMod.ExternalSystem
 import typings.samchon.templatesExternalExternalSystemRoleMod.ExternalSystemRole
 import typings.tstl.containerDequeMod.Deque
 import typings.tstl.containerDequeMod.Deque.Iterator
@@ -61,6 +60,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       * @hidden
       */
     var system_array_ : js.Any = js.native
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def addEventListener(
       `type`: Type,
@@ -76,7 +76,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[
         ExternalSystemRole, 
@@ -117,6 +117,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       * ```
       */
     /* protected */ def destructor(): Unit = js.native
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def dispatchEvent(
       event: CollectionEvent[
@@ -129,7 +130,7 @@ object templatesExternalExternalSystemMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -137,7 +138,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       *
       * @return Iterator to the end.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[
         ExternalSystemRole, 
@@ -159,6 +160,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       */
     @JSName("getSystemArray")
     def getSystemArray_SystemArray_ExternalSystemArrayExternalSystem_SystemArray[SystemArray /* <: ExternalSystemArray[ExternalSystem] */](): SystemArray = js.native
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def hasEventListener(`type`: Type): Boolean = js.native
     /**
@@ -167,7 +169,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def push(items: ExternalSystemRole*): Double = js.native
     /**
@@ -177,6 +179,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def push_back(`val`: ExternalSystemRole): Unit = js.native
     /**
       * Reverse iterator to the first element in reverse.
@@ -185,7 +188,9 @@ object templatesExternalExternalSystemMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[ExternalSystemRole] = js.native
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def removeEventListener(
       `type`: Type,
@@ -202,6 +207,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       * @return Reverse iterator to the end.
       */
     /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rend(): ReverseIterator[ExternalSystemRole] = js.native
     /**
@@ -226,6 +232,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       * Number of elements in the container.
       */
     /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

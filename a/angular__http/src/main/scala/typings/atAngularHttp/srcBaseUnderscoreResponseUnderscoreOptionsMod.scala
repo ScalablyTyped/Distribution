@@ -1,6 +1,5 @@
 package typings.atAngularHttp
 
-import typings.atAngularHttp.srcBaseUnderscoreResponseUnderscoreOptionsMod.ResponseOptions
 import typings.atAngularHttp.srcHeadersMod.Headers
 import typings.atAngularHttp.srcInterfacesMod.ResponseOptionsArgs
 import typings.std.ArrayBuffer

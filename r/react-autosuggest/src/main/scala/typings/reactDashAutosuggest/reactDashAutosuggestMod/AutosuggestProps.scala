@@ -2,8 +2,8 @@ package typings.reactDashAutosuggest.reactDashAutosuggestMod
 
 import typings.react.reactMod.FormEvent
 import typings.react.reactMod.ReactNode
-import typings.reactDashAutosuggest.reactDashAutosuggestNumbers.`false`
-import typings.reactDashAutosuggest.reactDashAutosuggestNumbers.`true`
+import typings.reactDashAutosuggest.reactDashAutosuggestBooleans.`false`
+import typings.reactDashAutosuggest.reactDashAutosuggestBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

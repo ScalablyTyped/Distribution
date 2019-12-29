@@ -1,6 +1,6 @@
 package typings.parse.parseMod
 
-import typings.parse.Parse.ScopeOptions
+import typings.parse.parseMod._Global_.Parse.ScopeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parse", "Schema")
 @js.native
 class Schema protected ()
-  extends typings.parse.nodeMod.Schema {
+  extends typings.parse.parseMod._Global_.Parse.Schema {
   def this(className: String) = this()
 }
 
@@ -37,7 +37,7 @@ object Schema extends js.Object {
     * - useMasterKey: In Cloud Code and Node only, causes the Master Key to be used for this request.
     * - sessionToken: A valid session token, used for making a request on behalf of a specific user.
     */
-  def all(): js.Promise[js.Array[typings.parse.Parse.Schema]] = js.native
-  def all(options: ScopeOptions): js.Promise[js.Array[typings.parse.Parse.Schema]] = js.native
+  def all(): js.Promise[js.Array[typings.parse.parseMod._Global_.Parse.Schema]] = js.native
+  def all(options: ScopeOptions): js.Promise[js.Array[typings.parse.parseMod._Global_.Parse.Schema]] = js.native
 }
 

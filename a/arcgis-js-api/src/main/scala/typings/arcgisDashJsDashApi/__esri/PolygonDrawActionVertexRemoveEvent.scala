@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertex-remove`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait PolygonDrawActionVertexRemoveEvent extends js.Object {
   var defaultPrevented: Boolean
   var preventDefault: js.Function
-  var `type`: String
+  var `type`: `vertex-remove`
   var vertexIndex: Double
   var vertices: js.Array[js.Array[Double]]
 }
@@ -17,7 +18,7 @@ object PolygonDrawActionVertexRemoveEvent {
   def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
-    `type`: String,
+    `type`: `vertex-remove`,
     vertexIndex: Double,
     vertices: js.Array[js.Array[Double]]
   ): PolygonDrawActionVertexRemoveEvent = {

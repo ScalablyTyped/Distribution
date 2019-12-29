@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ChangeEventArgs extends js.Object {
   /** returns the DatePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DatePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previously selected value.
     */
   var prevDate: js.UndefOr[String] = js.undefined
@@ -21,12 +21,7 @@ trait ChangeEventArgs extends js.Object {
 
 object ChangeEventArgs {
   @scala.inline
-  def apply(
-    model: typings.ejDotWebDotAll.ej.DatePicker.Model = null,
-    prevDate: String = null,
-    `type`: String = null,
-    value: String = null
-  ): ChangeEventArgs = {
+  def apply(model: Model = null, prevDate: String = null, `type`: String = null, value: String = null): ChangeEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (prevDate != null) __obj.updateDynamic("prevDate")(prevDate.asInstanceOf[js.Any])

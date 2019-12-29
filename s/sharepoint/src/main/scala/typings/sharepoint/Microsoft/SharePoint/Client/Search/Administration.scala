@@ -2,11 +2,6 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search
 
 import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.Anon_High
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spSite
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spSiteSubscription
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spWeb
-import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.ssa
 import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.JsonObjectResult

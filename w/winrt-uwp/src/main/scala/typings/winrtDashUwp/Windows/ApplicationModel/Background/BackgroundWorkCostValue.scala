@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue.high
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue.low
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue.medium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

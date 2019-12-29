@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSummaryCardView.app
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSummaryCardView.system
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPivotClient
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotClient]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotClient] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotClient]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotClient] {
   var Locale: js.Any = js.native
   var fn: PivotClient = js.native
 }

@@ -1,13 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Analytics.EventTypeId
-import typings.sharepoint.SP.Analytics.EventTypeId.first
-import typings.sharepoint.SP.Analytics.EventTypeId.last
-import typings.sharepoint.SP.Analytics.EventTypeId.none
-import typings.sharepoint.SP.Analytics.EventTypeId.recommendationClick
-import typings.sharepoint.SP.Analytics.EventTypeId.recommendationView
-import typings.sharepoint.SP.Analytics.EventTypeId.view
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

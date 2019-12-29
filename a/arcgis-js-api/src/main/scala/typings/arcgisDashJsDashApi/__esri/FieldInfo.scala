@@ -27,6 +27,7 @@ trait FieldInfo
   var fieldName: String = js.native
   /**
     * Class which provides formatting options for numerical or date fields and how they should display within a popup.
+    * > Set the [popupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property for any fields that need to have number formatting for chart/text elements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#format)
     */

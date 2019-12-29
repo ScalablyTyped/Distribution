@@ -49,7 +49,8 @@ class FillFormat protected () extends js.Object {
   var Transparency: Double = js.native
   val Type: MsoFillType = js.native
   var Visible: MsoTriState = js.native
-  var `Word.FillFormat_typekey`: FillFormat = js.native
+  @JSName("Word.FillFormat_typekey")
+  var WordDotFillFormat_typekey: FillFormat = js.native
   def Background(): Unit = js.native
   def GradientStops(Index: Double): GradientStop = js.native
   def OneColorGradient(Style: MsoGradientStyle, Variant: Double, Degree: Double): Unit = js.native

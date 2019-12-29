@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common/upgrade/upgrade", "ɵangular_packages_common_upgrade_upgrade_d")
+@JSImport("@angular/common/upgrade/upgrade", "\u0275angular_packages_common_upgrade_upgrade_d")
 @js.native
 object ɵangular_packages_common_upgrade_upgrade_d extends js.Object {
   def apply(

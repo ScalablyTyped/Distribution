@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNEvents.End
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNEvents.Intermediate
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNEvents.NonInterruptingIntermediate
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNEvents.NonInterruptingStart
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNEvents.Start
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNEvents.ThrowingIntermediate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.datatablesDotNetDashSelect.DataTables
 
-import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.`multi+shift`
 import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.api
 import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.multi
+import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.multiPlussignshift
 import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.os
 import typings.datatablesDotNetDashSelect.datatablesDotNetDashSelectStrings.single
 import scala.scalajs.js
@@ -33,7 +33,7 @@ trait SelectSettings extends js.Object {
   /*
     * Set the selection style for end user interaction with the table
     */
-  var style: js.UndefOr[api | single | multi | os | `multi+shift`] = js.undefined
+  var style: js.UndefOr[api | single | multi | os | multiPlussignshift] = js.undefined
 }
 
 object SelectSettings {
@@ -44,7 +44,7 @@ object SelectSettings {
     info: js.UndefOr[Boolean] = js.undefined,
     items: String = null,
     selector: String = null,
-    style: api | single | multi | os | `multi+shift` = null
+    style: api | single | multi | os | multiPlussignshift = null
   ): SelectSettings = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(blurable)) __obj.updateDynamic("blurable")(blurable.asInstanceOf[js.Any])

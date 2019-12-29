@@ -1,8 +1,6 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeCutMode.AutoCut
-import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeCutMode.ChainMarks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

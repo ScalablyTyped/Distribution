@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SinonFakeTimers extends js.Object {
+  var loopLimit: Double = js.native
   var now: Double = js.native
   def Date(): typings.std.Date = js.native
   def Date(year: Double): typings.std.Date = js.native
@@ -16,16 +17,21 @@ trait SinonFakeTimers extends js.Object {
   def Date(year: Double, month: Double, day: Double, hour: Double, minute: Double): typings.std.Date = js.native
   def Date(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): typings.std.Date = js.native
   def Date(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double, ms: Double): typings.std.Date = js.native
-  def cancelAnimationFrame(id: Double): Unit = js.native
+  def cancelAnimationFrame(id: SinonTimerId): Unit = js.native
+  def cancelIdleCallback(timerId: SinonTimerId): Unit = js.native
   def clearImmediate(id: SinonTimerId): Unit = js.native
   def clearInterval(id: SinonTimerId): Unit = js.native
   def clearTimeout(id: SinonTimerId): Unit = js.native
+  def countTimers(): Double = js.native
   /**
     * Advances the clock to the the moment of the first scheduled timer, firing it.
     */
-  def next(): Unit = js.native
-  def nextTick(callback: js.Function0[Unit]): Unit = js.native
-  def requestAnimationFrame(callback: js.Function1[/* repeated */ js.Any, Unit]): Double = js.native
+  def next(): Double = js.native
+  def nextTick(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit = js.native
+  def queueMicrotask(callback: js.Function0[Unit]): Unit = js.native
+  def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): SinonTimerId = js.native
+  def requestIdleCallback(func: js.Function1[/* repeated */ js.Any, Unit]): SinonTimerId = js.native
+  def requestIdleCallback(func: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): SinonTimerId = js.native
   def reset(): Unit = js.native
   /**
     * Restore the faked methods.
@@ -36,10 +42,10 @@ trait SinonFakeTimers extends js.Object {
     * This runs all pending timers until there are none remaining. If new timers are added while it is executing they will be run as well.
     * This makes it easier to run asynchronous tests to completion without worrying about the number of timers they use, or the delays in those timers.
     */
-  def runAll(): Unit = js.native
+  def runAll(): Double = js.native
   def runMicrotasks(): Unit = js.native
-  def runToFrame(): Unit = js.native
-  def runToLast(): Unit = js.native
+  def runToFrame(): Double = js.native
+  def runToLast(): Double = js.native
   def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): SinonTimerId = js.native
   def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): SinonTimerId = js.native
   /**
@@ -55,7 +61,7 @@ trait SinonFakeTimers extends js.Object {
     */
   def setSystemTime(now: Double): Unit = js.native
   def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): SinonTimerId = js.native
-  def tick(ms: String): Unit = js.native
+  def tick(ms: String): Double = js.native
   /**
     * Tick the clock ahead time milliseconds.
     * Causes all timers scheduled within the affected time range to be called.
@@ -64,7 +70,7 @@ trait SinonFakeTimers extends js.Object {
     * time may be negative, which causes the clock to change but won’t fire any callbacks.
     * @param ms
     */
-  def tick(ms: Double): Unit = js.native
+  def tick(ms: Double): Double = js.native
   def uninstall(): Unit = js.native
 }
 

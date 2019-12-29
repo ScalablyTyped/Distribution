@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TypedChainedMap[Parent, Value]
-  extends typings.webpackDashChain.webpackDashChainMod.__Config.Chained[Parent] {
+trait TypedChainedMap[Parent, Value] extends Chained[Parent] {
   def clear(): this.type = js.native
   def delete(key: String): this.type = js.native
   def entries(): StringDictionary[Value] = js.native
   def get(key: String): Value = js.native
+  def getOrCompute(key: String, compute: js.Function0[Value]): Value = js.native
   def has(key: String): Boolean = js.native
   def merge(obj: StringDictionary[Value]): this.type = js.native
   def set(key: String, value: Value): this.type = js.native

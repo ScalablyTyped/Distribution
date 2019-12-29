@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.accessDenied
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.invalidXmlSyntax
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.ok
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.other
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.profileInvalidAppId
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.profileNameTooLong
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

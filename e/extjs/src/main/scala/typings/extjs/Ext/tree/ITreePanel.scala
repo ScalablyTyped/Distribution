@@ -36,7 +36,7 @@ trait ITreePanel extends ITable {
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var displayField: js.UndefOr[java.lang.String] = js.undefined
+  var displayField: js.UndefOr[String] = js.undefined
   /** [Method] Expand all nodes
   		* @param callback Function A function to execute when the expand finishes.
   		* @param scope Object The scope of the callback function
@@ -68,9 +68,9 @@ trait ITreePanel extends ITable {
   		*/
   var expandPath: js.UndefOr[
     js.Function5[
-      /* path */ js.UndefOr[java.lang.String], 
-      /* field */ js.UndefOr[java.lang.String], 
-      /* separator */ js.UndefOr[java.lang.String], 
+      /* path */ js.UndefOr[String], 
+      /* field */ js.UndefOr[String], 
+      /* separator */ js.UndefOr[String], 
       /* callback */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       Unit
@@ -101,9 +101,9 @@ trait ITreePanel extends ITable {
   		*/
   var selectPath: js.UndefOr[
     js.Function5[
-      /* path */ js.UndefOr[java.lang.String], 
-      /* field */ js.UndefOr[java.lang.String], 
-      /* separator */ js.UndefOr[java.lang.String], 
+      /* path */ js.UndefOr[String], 
+      /* field */ js.UndefOr[String], 
+      /* separator */ js.UndefOr[String], 
       /* callback */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       Unit
@@ -130,17 +130,17 @@ object ITreePanel {
     animate: js.UndefOr[Boolean] = js.undefined,
     collapseAll: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     collapseNode: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    displayField: java.lang.String = null,
+    displayField: String = null,
     expandAll: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     expandNode: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    expandPath: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    expandPath: (/* path */ js.UndefOr[String], /* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     folderSort: js.UndefOr[Boolean] = js.undefined,
     getChecked: () => Array = null,
     getRootNode: () => INodeInterface = null,
     lines: js.UndefOr[Boolean] = js.undefined,
     root: js.Any = null,
     rootVisible: js.UndefOr[Boolean] = js.undefined,
-    selectPath: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    selectPath: (/* path */ js.UndefOr[String], /* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     setRootNode: /* root */ js.UndefOr[js.Any] => INodeInterface = null,
     singleExpand: js.UndefOr[Boolean] = js.undefined,
     store: ITreeStore = null,

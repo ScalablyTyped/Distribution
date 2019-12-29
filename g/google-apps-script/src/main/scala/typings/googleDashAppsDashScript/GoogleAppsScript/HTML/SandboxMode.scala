@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.HTML
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.HTML.SandboxMode.EMULATED
-import typings.googleDashAppsDashScript.GoogleAppsScript.HTML.SandboxMode.IFRAME
-import typings.googleDashAppsDashScript.GoogleAppsScript.HTML.SandboxMode.NATIVE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

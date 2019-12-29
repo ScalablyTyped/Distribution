@@ -1,7 +1,6 @@
 package typings.amcharts
 
 import typings.amcharts.axisBaseMod.AxisBase
-import typings.amcharts.valueAxisMod.ValueAxis
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

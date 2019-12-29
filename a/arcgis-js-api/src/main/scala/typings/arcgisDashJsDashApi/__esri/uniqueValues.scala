@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +27,13 @@ trait uniqueValues extends js.Object {
     * @param params.features A subset of features for which to generate the unique values.
     *
     */
-  def uniqueValues(params: uniqueValuesUniqueValuesParams): IPromise[UniqueValuesResult]
+  def uniqueValues(params: uniqueValuesUniqueValuesParams): js.Promise[UniqueValuesResult]
 }
 
 @JSGlobal("__esri.uniqueValues")
 @js.native
 object uniqueValues
   extends TopLevel[
-      js.Function1[/* params */ uniqueValuesUniqueValuesParams, IPromise[UniqueValuesResult]]
+      js.Function1[/* params */ uniqueValuesUniqueValuesParams, js.Promise[UniqueValuesResult]]
     ]
 

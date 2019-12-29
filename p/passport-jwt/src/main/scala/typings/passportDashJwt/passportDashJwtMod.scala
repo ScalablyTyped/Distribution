@@ -4,11 +4,6 @@ import typings.express.expressMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.jsonwebtoken.jsonwebtokenMod.VerifyOptions
 import typings.node.Buffer
-import typings.passportDashJwt.passportDashJwtMod.JwtFromRequestFunction
-import typings.passportDashJwt.passportDashJwtMod.StrategyOptions
-import typings.passportDashJwt.passportDashJwtMod.VerifiedCallback
-import typings.passportDashJwt.passportDashJwtMod.VerifyCallback
-import typings.passportDashJwt.passportDashJwtMod.VerifyCallbackWithRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

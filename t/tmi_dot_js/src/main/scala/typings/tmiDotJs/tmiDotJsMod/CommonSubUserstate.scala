@@ -1,7 +1,7 @@
 package typings.tmiDotJs.tmiDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tmiDotJs.tmiDotJsStrings.Empty
+import typings.tmiDotJs.tmiDotJsStrings._empty
 import typings.tmiDotJs.tmiDotJsStrings.admin
 import typings.tmiDotJs.tmiDotJsStrings.global_mod
 import typings.tmiDotJs.tmiDotJsStrings.mod
@@ -37,7 +37,7 @@ object CommonSubUserstate {
     `tmi-sent-ts`: String = null,
     turbo: js.UndefOr[Boolean] = js.undefined,
     `user-id`: String = null,
-    `user-type`: Empty | mod | global_mod | admin | staff = null
+    `user-type`: _empty | mod | global_mod | admin | staff = null
   ): CommonSubUserstate = {
     val __obj = js.Dynamic.literal()
     if (badges != null) __obj.updateDynamic("badges")(badges.asInstanceOf[js.Any])

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait whereStatic
-  extends Instantiable2[/* attr */ js.Object, (/* logic */ js.Object) | (/* logic */ String), where]
-     with /**
+  extends /**
   * A way of specifying attr = condition.
   *
   * The attr can either be an object taken from `Model.rawAttributes` (for example `Model.rawAttributes.id`
@@ -33,4 +32,5 @@ Instantiable3[
       (/* logic */ js.Object) | (/* logic */ String), 
       where
     ]
+     with Instantiable2[/* attr */ js.Object, (/* logic */ js.Object) | (/* logic */ String), where]
 

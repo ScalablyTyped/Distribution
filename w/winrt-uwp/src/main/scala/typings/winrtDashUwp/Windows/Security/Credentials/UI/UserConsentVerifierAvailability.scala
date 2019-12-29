@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Credentials.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.available
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.deviceBusy
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.deviceNotPresent
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.disabledByPolicy
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.notConfiguredForUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

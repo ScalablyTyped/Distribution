@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/router", "ɵangular_packages_router_router_o")
+@JSImport("@angular/router", "\u0275angular_packages_router_router_o")
 @js.native
 class ɵangular_packages_router_router_o protected () extends OnDestroy {
   def this(router: Router, /** @docsNotRequired */ viewportScroller: ViewportScroller) = this()

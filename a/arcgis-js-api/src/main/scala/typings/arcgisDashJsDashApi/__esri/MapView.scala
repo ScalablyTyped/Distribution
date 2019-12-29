@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`2d`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bottom-left`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bottom-right`
@@ -98,8 +97,8 @@ trait MapView
     * @param screenPoint The screen coordinates (or native mouse event) of the click on the view.
     *
     */
-  def hitTest(screenPoint: ScreenPoint): IPromise[HitTestResult] = js.native
-  def hitTest(screenPoint: MouseEvent): IPromise[HitTestResult] = js.native
+  def hitTest(screenPoint: ScreenPoint): js.Promise[HitTestResult] = js.native
+  def hitTest(screenPoint: MouseEvent): js.Promise[HitTestResult] = js.native
   def on(`type`: String, modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
   def on(`type`: String, modifiersOrHandler: EventHandler, handler: EventHandler): IHandle = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
@@ -120,8 +119,8 @@ trait MapView
     * @param options.ignorePadding Indicates whether view padding should be ignored. Set this property to `true` to allow padded areas to be included in the screenshot.
     *
     */
-  def takeScreenshot(): IPromise[Screenshot] = js.native
-  def takeScreenshot(options: MapViewTakeScreenshotOptions): IPromise[Screenshot] = js.native
+  def takeScreenshot(): js.Promise[Screenshot] = js.native
+  def takeScreenshot(options: MapViewTakeScreenshotOptions): js.Promise[Screenshot] = js.native
   /**
     * Converts the given screen point to a [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html). The screen point represents a point in terms of pixels relative to the top-left corner of the view.
     *

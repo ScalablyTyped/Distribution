@@ -18,7 +18,8 @@ class FileDialog protected () extends js.Object {
   var InitialFileName: String = js.native
   var InitialView: MsoFileDialogView = js.native
   val Item: String = js.native
-  var `Office.FileDialog_typekey`: FileDialog = js.native
+  @JSName("Office.FileDialog_typekey")
+  var OfficeDotFileDialog_typekey: FileDialog = js.native
   val Parent: js.Any = js.native
   @JSName("SelectedItems")
   val SelectedItems_Original: FileDialogSelectedItems = js.native

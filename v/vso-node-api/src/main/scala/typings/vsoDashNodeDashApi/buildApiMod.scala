@@ -2,7 +2,6 @@ package typings.vsoDashNodeDashApi
 
 import typings.node.NodeJS.ReadableStream
 import typings.std.Date
-import typings.vsoDashNodeDashApi.buildApiMod.IBuildApi
 import typings.vsoDashNodeDashApi.clientApiBasesMod.ClientApiBase
 import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.Build
 import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildArtifact

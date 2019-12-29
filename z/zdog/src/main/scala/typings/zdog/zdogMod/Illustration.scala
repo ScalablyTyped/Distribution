@@ -35,16 +35,16 @@ class Illustration protected () extends Anchor {
   /** @see {@link IllustrationOptions#zoom} */
   var zoom: Double = js.native
   /** @see {@link DraggerOptions#onDragEnd} */
-  def onDragEnd(`this`: Dragger): Unit = js.native
+  def onDragEnd(): Unit = js.native
   /** @see {@link DraggerOptions#onDragMove} */
-  def onDragMove(`this`: Dragger, pointer: PointerPosition, moveX: Double, moveY: Double): Unit = js.native
+  def onDragMove(pointer: PointerPosition, moveX: Double, moveY: Double): Unit = js.native
   /** @see {@link DraggerOptions#onDragStart} */
-  def onDragStart(`this`: Dragger, pointer: PointerPosition): Unit = js.native
+  def onDragStart(pointer: PointerPosition): Unit = js.native
   /** @see {@link IllustrationOptions#onPrerender} */
-  def onPrerender(`this`: Illustration, context: CanvasRenderingContext2D): Unit = js.native
-  def onPrerender(`this`: Illustration, context: SVGSVGElement): Unit = js.native
+  def onPrerender(context: CanvasRenderingContext2D): Unit = js.native
+  def onPrerender(context: SVGSVGElement): Unit = js.native
   /** @see {@link IllustrationOptions#onResize} */
-  def onResize(`this`: Illustration, width: Double, height: Double): Unit = js.native
+  def onResize(width: Double, height: Double): Unit = js.native
   /**
     * Renders an item and its graph to the Illustration’s element.
     * @see {@link https://zzz.dog/api#illustration-rendergraph Zdog API}

@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
-import typings.atPulumiKubernetes.rbacV1RoleListMod.RoleList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.rbacDotauthorizationDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.Role
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object rbacV1RoleListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`rbacDOTauthorizationDOTk8sDOTio/v1`] = js.native
+    val apiVersion: Output[rbacDotauthorizationDotk8sDotioSlashv1] = js.native
     /**
       * Items is a list of Roles
       */

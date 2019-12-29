@@ -45,7 +45,7 @@ class SurveyModel ()
   var checkErrorsMode: String = js.native
   /**
     * Set it to 'none' to include the invisible values into the survey data.
-    * </br> Set it to 'onHidden' to clear the question value when it becomes invisible.
+    * </br> Set it to 'onHidden' to clear the question value when it becomes invisible. If a question has value and it was invisible initially then survey clears the value on completing.
     * </br> Leave it equals to 'onComplete', to remove from data property values of invisible questions on survey complete. In this case, the invisible questions will not be stored on the server.
     * </br> The default value is 'onComplete'.
     * @see Question.visible
@@ -1021,15 +1021,15 @@ class SurveyModel ()
     * @see addNewPage
     */
   def addPage(page: PageModel): Unit = js.native
-  def afterRenderPage(htmlElement: js.Any): Unit = js.native
+  def afterRenderPage(htmlElement: js.Any): js.Any = js.native
   @JSName("afterRenderPage")
-  def afterRenderPage_Any(htmlElement: js.Any): js.Any = js.native
-  def afterRenderPanel(panel: IElement, htmlElement: js.Any): Unit = js.native
+  def afterRenderPage_Unit(htmlElement: js.Any): Unit = js.native
+  def afterRenderPanel(panel: IElement, htmlElement: js.Any): js.Any = js.native
   @JSName("afterRenderPanel")
-  def afterRenderPanel_Any(panel: IElement, htmlElement: js.Any): js.Any = js.native
-  def afterRenderQuestion(question: IQuestion, htmlElement: js.Any): Unit = js.native
+  def afterRenderPanel_Unit(panel: IElement, htmlElement: js.Any): Unit = js.native
+  def afterRenderQuestion(question: IQuestion, htmlElement: js.Any): js.Any = js.native
   @JSName("afterRenderQuestion")
-  def afterRenderQuestion_Any(question: IQuestion, htmlElement: js.Any): js.Any = js.native
+  def afterRenderQuestion_Unit(question: IQuestion, htmlElement: js.Any): Unit = js.native
   /* protected */ def afterRenderSurvey(htmlElement: js.Any): Unit = js.native
   def beforeSettingQuestionErrors(question: IQuestion, errors: js.Array[SurveyError]): Unit = js.native
   /**
@@ -1043,25 +1043,25 @@ class SurveyModel ()
   def clear(): Unit = js.native
   def clear(clearData: Boolean): Unit = js.native
   def clear(clearData: Boolean, gotoFirstPage: Boolean): Unit = js.native
+  def clearFiles(
+    name: String,
+    value: js.Any,
+    fileName: String,
+    clearCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
+  ): js.Any = js.native
   /**
     * Clear files from server
     * @param name question name
     * @param value file question value
     * @param callback a call back function to get the status of the clearing operation
     */
-  def clearFiles(
+  @JSName("clearFiles")
+  def clearFiles_Unit(
     name: String,
     value: js.Any,
     fileName: String,
     callback: js.Function2[/* status */ String, /* data */ js.Any, _]
   ): Unit = js.native
-  @JSName("clearFiles")
-  def clearFiles_Any(
-    name: String,
-    value: js.Any,
-    fileName: String,
-    clearCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
-  ): js.Any = js.native
   /**
     * Call this function to remove all question values from the survey, that end-user will not be able to enter.
     * For example the value that doesn't exists in a radigroup/dropdown/checkbox choices or matrix rows/columns.
@@ -1125,15 +1125,15 @@ class SurveyModel ()
     callback: js.Function2[/* status */ String, /* data */ js.Any, _]
   ): Unit = js.native
   def dragAndDropAllow(options: js.Any): Boolean = js.native
-  def dynamicPanelAdded(question: IQuestion): Unit = js.native
+  def dynamicPanelAdded(question: IQuestion): js.Any = js.native
   @JSName("dynamicPanelAdded")
-  def dynamicPanelAdded_Any(question: IQuestion): js.Any = js.native
-  def dynamicPanelItemValueChanged(question: IQuestion, options: js.Any): Unit = js.native
+  def dynamicPanelAdded_Unit(question: IQuestion): Unit = js.native
+  def dynamicPanelItemValueChanged(question: IQuestion, options: js.Any): js.Any = js.native
   @JSName("dynamicPanelItemValueChanged")
-  def dynamicPanelItemValueChanged_Any(question: IQuestion, options: js.Any): js.Any = js.native
-  def dynamicPanelRemoved(question: IQuestion, panelIndex: Double): Unit = js.native
+  def dynamicPanelItemValueChanged_Unit(question: IQuestion, options: js.Any): Unit = js.native
+  def dynamicPanelRemoved(question: IQuestion, panelIndex: Double): js.Any = js.native
   @JSName("dynamicPanelRemoved")
-  def dynamicPanelRemoved_Any(question: IQuestion, panelIndex: Double): js.Any = js.native
+  def dynamicPanelRemoved_Unit(question: IQuestion, panelIndex: Double): Unit = js.native
   /**
     * Set the input focus to the first question with the input.
     */
@@ -1307,28 +1307,28 @@ class SurveyModel ()
   def loadSurveyFromService(): Unit = js.native
   def loadSurveyFromService(surveyId: String): Unit = js.native
   def loadSurveyFromService(surveyId: String, cliendId: String): Unit = js.native
-  def matrixAfterCellRender(question: IQuestion, options: js.Any): Unit = js.native
+  def matrixAfterCellRender(question: IQuestion, options: js.Any): js.Any = js.native
   @JSName("matrixAfterCellRender")
-  def matrixAfterCellRender_Any(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixAfterCellRender_Unit(question: IQuestion, options: js.Any): Unit = js.native
   def matrixAllowRemoveRow(question: IQuestion, rowIndex: Double, row: js.Any): Boolean = js.native
   def matrixBeforeRowAdded(options: js.Any): Unit = js.native
   def matrixBeforeRowAdded(options: Anon_CanAddRow): js.Any = js.native
-  def matrixCellCreated(question: IQuestion, options: js.Any): Unit = js.native
+  def matrixCellCreated(question: IQuestion, options: js.Any): js.Any = js.native
   @JSName("matrixCellCreated")
-  def matrixCellCreated_Any(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixCellCreated_Unit(question: IQuestion, options: js.Any): Unit = js.native
   def matrixCellValidate(question: IQuestion, options: js.Any): SurveyError = js.native
-  def matrixCellValueChanged(question: IQuestion, options: js.Any): Unit = js.native
+  def matrixCellValueChanged(question: IQuestion, options: js.Any): js.Any = js.native
   @JSName("matrixCellValueChanged")
-  def matrixCellValueChanged_Any(question: IQuestion, options: js.Any): js.Any = js.native
-  def matrixCellValueChanging(question: IQuestion, options: js.Any): Unit = js.native
+  def matrixCellValueChanged_Unit(question: IQuestion, options: js.Any): Unit = js.native
+  def matrixCellValueChanging(question: IQuestion, options: js.Any): js.Any = js.native
   @JSName("matrixCellValueChanging")
-  def matrixCellValueChanging_Any(question: IQuestion, options: js.Any): js.Any = js.native
-  def matrixRowAdded(question: IQuestion): Unit = js.native
+  def matrixCellValueChanging_Unit(question: IQuestion, options: js.Any): Unit = js.native
+  def matrixRowAdded(question: IQuestion): js.Any = js.native
   @JSName("matrixRowAdded")
-  def matrixRowAdded_Any(question: IQuestion): js.Any = js.native
-  def matrixRowRemoved(question: IQuestion, rowIndex: Double, row: js.Any): Unit = js.native
+  def matrixRowAdded_Unit(question: IQuestion): Unit = js.native
+  def matrixRowRemoved(question: IQuestion, rowIndex: Double, row: js.Any): js.Any = js.native
   @JSName("matrixRowRemoved")
-  def matrixRowRemoved_Any(question: IQuestion, rowIndex: Double, row: js.Any): js.Any = js.native
+  def matrixRowRemoved_Unit(question: IQuestion, rowIndex: Double, row: js.Any): Unit = js.native
   def mergeValues(src: js.Any, dest: js.Any): Unit = js.native
   /**
     * Call it to go to the next page. It returns false, if it is the last page. If there is an error, for example required question is empty, the function returns false as well.
@@ -1346,18 +1346,18 @@ class SurveyModel ()
   /* protected */ def onLoadSurveyFromService(): Unit = js.native
   /* protected */ def onLoadingSurveyFromService(): Unit = js.native
   /* protected */ def onLocaleChanged(): Unit = js.native
-  def pageVisibilityChanged(page: IPage, newValue: Boolean): Unit = js.native
+  def pageVisibilityChanged(page: IPage, newValue: Boolean): js.Any = js.native
   @JSName("pageVisibilityChanged")
-  def pageVisibilityChanged_Any(page: IPage, newValue: Boolean): js.Any = js.native
-  def panelAdded(panel: IElement, index: Double, parentPanel: js.Any, rootPanel: js.Any): Unit = js.native
+  def pageVisibilityChanged_Unit(page: IPage, newValue: Boolean): Unit = js.native
+  def panelAdded(panel: IElement, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
   @JSName("panelAdded")
-  def panelAdded_Any(panel: IElement, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
-  def panelRemoved(panel: IElement): Unit = js.native
+  def panelAdded_Unit(panel: IElement, index: Double, parentPanel: js.Any, rootPanel: js.Any): Unit = js.native
+  def panelRemoved(panel: IElement): js.Any = js.native
   @JSName("panelRemoved")
-  def panelRemoved_Any(panel: IElement): js.Any = js.native
-  def panelVisibilityChanged(panel: IPanel, newValue: Boolean): Unit = js.native
+  def panelRemoved_Unit(panel: IElement): Unit = js.native
+  def panelVisibilityChanged(panel: IPanel, newValue: Boolean): js.Any = js.native
   @JSName("panelVisibilityChanged")
-  def panelVisibilityChanged_Any(panel: IPanel, newValue: Boolean): js.Any = js.native
+  def panelVisibilityChanged_Unit(panel: IPanel, newValue: Boolean): Unit = js.native
   /**
     * Call it to go to the previous page. It returns false if the current page is the first page already. It doesn't perform any checks, required questions can be empty.
     * @see isFirstPage
@@ -1368,18 +1368,18 @@ class SurveyModel ()
   override def processText(text: String, returnDisplayValue: Boolean): String = js.native
   /* CompleteClass */
   override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
-  def questionAdded(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): Unit = js.native
+  def questionAdded(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
   @JSName("questionAdded")
-  def questionAdded_Any(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
+  def questionAdded_Unit(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): Unit = js.native
   def questionCountByValueName(valueName: String): Double = js.native
   /* protected */ def questionOnValueChanging(valueName: String, newValue: js.Any): js.Any = js.native
-  def questionRemoved(question: IQuestion): Unit = js.native
+  def questionRemoved(question: IQuestion): js.Any = js.native
   @JSName("questionRemoved")
-  def questionRemoved_Any(question: IQuestion): js.Any = js.native
+  def questionRemoved_Unit(question: IQuestion): Unit = js.native
   def questionRenamed(question: IQuestion, oldName: String, oldValueName: String): js.Any = js.native
-  def questionVisibilityChanged(question: IQuestion, newValue: Boolean): Unit = js.native
+  def questionVisibilityChanged(question: IQuestion, newValue: Boolean): js.Any = js.native
   @JSName("questionVisibilityChanged")
-  def questionVisibilityChanged_Any(question: IQuestion, newValue: Boolean): js.Any = js.native
+  def questionVisibilityChanged_Unit(question: IQuestion, newValue: Boolean): Unit = js.native
   /**
     * Remove the page from the survey
     * @param page
@@ -1472,13 +1472,23 @@ class SurveyModel ()
   /* protected */ def tryGoNextPageAutomatic(name: String): Unit = js.native
   def updateChoicesFromServer(question: IQuestion, choices: js.Array[_ | ItemValue], serverResult: js.Any): js.Array[ItemValue] = js.native
   /* protected */ def updateCustomWidgets(page: PageModel): Unit = js.native
-  def updatePanelCssClasses(panel: IPanel, cssClasses: js.Any): Unit = js.native
+  def updatePanelCssClasses(panel: IPanel, cssClasses: js.Any): js.Any = js.native
   @JSName("updatePanelCssClasses")
-  def updatePanelCssClasses_Any(panel: IPanel, cssClasses: js.Any): js.Any = js.native
-  def updateQuestionCssClasses(question: IQuestion, cssClasses: js.Any): Unit = js.native
+  def updatePanelCssClasses_Unit(panel: IPanel, cssClasses: js.Any): Unit = js.native
+  def updateQuestionCssClasses(question: IQuestion, cssClasses: js.Any): js.Any = js.native
   @JSName("updateQuestionCssClasses")
-  def updateQuestionCssClasses_Any(question: IQuestion, cssClasses: js.Any): js.Any = js.native
+  def updateQuestionCssClasses_Unit(question: IQuestion, cssClasses: js.Any): Unit = js.native
   /* protected */ def updateQuestionValue(valueName: String, newValue: js.Any): Unit = js.native
+  def uploadFiles(
+    name: String,
+    files: js.Array[File],
+    uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
+  ): js.Any = js.native
+  /* protected */ def uploadFilesCore(
+    name: String,
+    files: js.Array[File],
+    uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
+  ): Unit = js.native
   /**
     * Upload the file into server
     * @param name question name
@@ -1486,22 +1496,12 @@ class SurveyModel ()
     * @param storeDataAsText set it to true to encode file content into the survey results
     * @param uploadingCallback a call back function to get the status on uploading the file
     */
-  def uploadFiles(
-    name: String,
-    files: js.Array[File],
-    uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
-  ): Unit = js.native
-  /* protected */ def uploadFilesCore(
-    name: String,
-    files: js.Array[File],
-    uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
-  ): Unit = js.native
   @JSName("uploadFiles")
-  def uploadFiles_Any(
+  def uploadFiles_Unit(
     name: String,
     files: js.Array[File],
     uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
-  ): js.Any = js.native
+  ): Unit = js.native
   def validatePanel(panel: IPanel): SurveyError = js.native
   def validateQuestion(question: IQuestion): SurveyError = js.native
 }

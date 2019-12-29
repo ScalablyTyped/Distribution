@@ -1,7 +1,6 @@
 package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsTestingActionTypeMod.ActionType
-import typings.wonderDashFrp.distCommonjsTestingRecordMod.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

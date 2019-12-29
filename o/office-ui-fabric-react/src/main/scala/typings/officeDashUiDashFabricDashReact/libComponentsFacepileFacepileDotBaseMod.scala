@@ -2,7 +2,7 @@ package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.IFacepileProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.Empty
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings._empty
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ object libComponentsFacepileFacepileDotBaseMod extends js.Object {
     var _onRenderVisiblePersonas: js.Any = js.native
     var _renderInitials: js.Any = js.native
     var _renderInitialsNotPictured: js.Any = js.native
-    /* protected */ def onRenderAriaDescription(): js.UndefOr[Empty | Element] = js.native
+    /* protected */ def onRenderAriaDescription(): js.UndefOr[_empty | Element] = js.native
   }
   
   /* static members */

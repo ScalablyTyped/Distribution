@@ -1,7 +1,7 @@
 package typings.jju.jjuMod
 
-import typings.jju.jjuStrings.BACKSLASH
-import typings.jju.jjuStrings._quote
+import typings.jju.jjuStrings.Apostrophe
+import typings.jju.jjuStrings.Quotationmark
 import typings.jju.jjuStrings.cjson
 import typings.jju.jjuStrings.json
 import typings.jju.jjuStrings.json5
@@ -41,7 +41,7 @@ trait StringifyOptions extends js.Object {
     * - If `mode` is 'json', default is "
     * - Otherwise, default is '
     */
-  var quote: js.UndefOr[BACKSLASH | _quote] = js.undefined
+  var quote: js.UndefOr[Quotationmark | Apostrophe] = js.undefined
   /**
     * Whether keys quoting in objects is required or not.
     * If you want `{"q": 1}` instead of `{q: 1}`, set it to true.
@@ -74,7 +74,7 @@ object StringifyOptions {
     indent: String | Double | Boolean = null,
     mode: json | json5 | cjson = null,
     no_trailing_comma: js.UndefOr[Boolean] = js.undefined,
-    quote: BACKSLASH | _quote = null,
+    quote: Quotationmark | Apostrophe = null,
     quote_keys: js.UndefOr[Boolean] = js.undefined,
     replacer: (js.Function2[/* key */ String, /* value */ js.Any, _]) | (js.Array[Double | String]) = null,
     sort_keys: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double]) = null

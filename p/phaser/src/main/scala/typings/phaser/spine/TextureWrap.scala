@@ -1,9 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.TextureWrap.ClampToEdge
-import typings.phaser.spine.TextureWrap.MirroredRepeat
-import typings.phaser.spine.TextureWrap.Repeat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

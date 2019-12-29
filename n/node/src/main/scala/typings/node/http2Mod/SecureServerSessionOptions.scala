@@ -3,16 +3,18 @@ package typings.node.http2Mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable4
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.ReadableOptions
+import typings.node.tlsMod.KeyObject
+import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
 import typings.node.tlsMod.TlsOptions
 import typings.node.urlMod.URL
+import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,30 +27,30 @@ trait SecureServerSessionOptions
 object SecureServerSessionOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[java.lang.String | Uint8Array]) | Uint8Array = null,
+    ALPNProtocols: (js.Array[String | Uint8Array]) | Uint8Array = null,
     Http1IncomingMessage: Instantiable1[/* socket */ Socket, IncomingMessage] = null,
     Http1ServerResponse: Instantiable1[/* req */ IncomingMessage, ServerResponse] = null,
     Http2ServerRequest: Instantiable4[
       /* stream */ ServerHttp2Stream, 
       /* headers */ IncomingHttpHeaders, 
       /* options */ ReadableOptions, 
-      /* rawHeaders */ js.Array[java.lang.String], 
+      /* rawHeaders */ js.Array[String], 
       Http2ServerRequest
     ] = null,
     Http2ServerResponse: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse] = null,
-    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
-    ca: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    cert: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    ciphers: java.lang.String = null,
-    clientCertEngine: java.lang.String = null,
+    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
+    ca: String | Buffer | (js.Array[String | Buffer]) = null,
+    cert: String | Buffer | (js.Array[String | Buffer]) = null,
+    ciphers: String = null,
+    clientCertEngine: String = null,
     createConnection: (/* authority */ URL, SecureServerSessionOptions) => Duplex = null,
-    crl: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    dhparam: java.lang.String | Buffer = null,
-    ecdhCurve: java.lang.String = null,
+    crl: String | Buffer | (js.Array[String | Buffer]) = null,
+    dhparam: String | Buffer = null,
+    ecdhCurve: String = null,
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     handshakeTimeout: Int | Double = null,
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    key: java.lang.String | Buffer | (js.Array[Buffer | js.Object]) = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     maxDeflateDynamicTableSize: Int | Double = null,
     maxHeaderListPairs: Int | Double = null,
     maxOutstandingPings: Int | Double = null,
@@ -57,18 +59,21 @@ object SecureServerSessionOptions {
     maxVersion: SecureVersion = null,
     minVersion: SecureVersion = null,
     paddingStrategy: Int | Double = null,
-    passphrase: java.lang.String = null,
+    passphrase: String = null,
     peerMaxConcurrentStreams: Int | Double = null,
-    pfx: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer | js.Object]) = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
     secureOptions: Int | Double = null,
-    secureProtocol: java.lang.String = null,
+    secureProtocol: String = null,
     selectPadding: (/* frameLen */ Double, /* maxFrameLen */ Double) => Double = null,
-    sessionIdContext: java.lang.String = null,
+    sessionIdContext: String = null,
     sessionTimeout: Int | Double = null,
     settings: Settings = null,
+    sigalgs: String = null,
     ticketKeys: Buffer = null
   ): SecureServerSessionOptions = {
     val __obj = js.Dynamic.literal()
@@ -101,6 +106,8 @@ object SecureServerSessionOptions {
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (peerMaxConcurrentStreams != null) __obj.updateDynamic("peerMaxConcurrentStreams")(peerMaxConcurrentStreams.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
@@ -110,6 +117,7 @@ object SecureServerSessionOptions {
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
     if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (ticketKeys != null) __obj.updateDynamic("ticketKeys")(ticketKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureServerSessionOptions]
   }

@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+//
+// Base Atoms
+//
 trait Atom extends js.Object {
   var `type`: String
 }

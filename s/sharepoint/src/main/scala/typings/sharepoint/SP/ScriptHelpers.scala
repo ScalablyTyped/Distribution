@@ -26,7 +26,7 @@ object ScriptHelpers extends js.Object {
   def getListLevelPermissionMask(jsonItem: String): Double = js.native
   def getTextAreaElementValue(textAreaElement: HTMLTextAreaElement): String = js.native
   def getUrlQueryPairs(docUrl: String): StringDictionary[String] = js.native
-  def getUserFieldProperty(item: typings.sharepoint.SP.ListItem[_], fieldName: String, propertyName: String): js.Any = js.native
+  def getUserFieldProperty(item: ListItem[_], fieldName: String, propertyName: String): js.Any = js.native
   def hasPermission(listPermissionMask: Double, listPermission: ListLevelPermissionMask): Boolean = js.native
   def isNullOrEmptyString(str: String): Boolean = js.native
   def isNullOrUndefined(obj: js.Any): Boolean = js.native

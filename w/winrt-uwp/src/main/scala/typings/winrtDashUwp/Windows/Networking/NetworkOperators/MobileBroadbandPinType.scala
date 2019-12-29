@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.corporatePin
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.custom
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.firstSimPin
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.networkPin
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.networkSubsetPin
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.none
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.pin1
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.pin2
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.serviceProviderPin
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.simPin
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinType.subsidyLock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

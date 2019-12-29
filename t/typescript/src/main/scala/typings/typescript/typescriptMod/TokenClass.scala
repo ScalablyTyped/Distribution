@@ -1,13 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.TokenClass.Comment
-import typings.typescript.typescriptMod.TokenClass.Keyword
-import typings.typescript.typescriptMod.TokenClass.NumberLiteral
-import typings.typescript.typescriptMod.TokenClass.Operator
-import typings.typescript.typescriptMod.TokenClass.Punctuation
-import typings.typescript.typescriptMod.TokenClass.RegExpLiteral
-import typings.typescript.typescriptMod.TokenClass.Whitespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

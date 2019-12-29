@@ -10,7 +10,8 @@ class SparkColor protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Color: FormatColor = js.native
   val Creator: XlCreator = js.native
-  var `Excel.SparkColor_typekey`: SparkColor = js.native
+  @JSName("Excel.SparkColor_typekey")
+  var ExcelDotSparkColor_typekey: SparkColor = js.native
   val Parent: js.Any = js.native
   var Visible: Boolean = js.native
 }

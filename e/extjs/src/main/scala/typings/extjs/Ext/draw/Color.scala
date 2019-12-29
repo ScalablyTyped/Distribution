@@ -50,11 +50,11 @@ object Color extends js.Object {
   		* @returns Object Ext.draw.Color
   		*/
   def fromString(): js.Any = js.native
-  def fromString(str: java.lang.String): js.Any = js.native
+  def fromString(str: String): js.Any = js.native
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Adds members to class  */
   def implement(): Unit = js.native
   /** [Method] Override members of this class
@@ -67,7 +67,7 @@ object Color extends js.Object {
   		* @param color String/String[] The color value (i.e 'rgb(255, 255, 255)', 'color: #ffffff'). Can also be an Array, in this case the function handles the first member.
   		* @returns String The color in hexadecimal format.
   		*/
-  def toHex(): java.lang.String = js.native
-  def toHex(color: js.Any): java.lang.String = js.native
+  def toHex(): String = js.native
+  def toHex(color: js.Any): String = js.native
 }
 

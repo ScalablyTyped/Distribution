@@ -18,7 +18,6 @@ import typings.atAngularCompiler.srcSchemaElementUnderscoreSchemaUnderscoreRegis
 import typings.atAngularCompiler.srcSelectorMod.CssSelector
 import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst
 import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAstVisitor
-import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreParserMod.TemplateParseResult
 import typings.atAngularCompiler.srcUtilMod.Console
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -7,7 +7,6 @@ import typings.atGrpcGrpcDashJs.buildSrcChannelMod.Channel
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.BaseFilter
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.Filter
 import typings.atGrpcGrpcDashJs.buildSrcFilterMod.FilterFactory
-import typings.atGrpcGrpcDashJs.buildSrcMetadataDashStatusDashFilterMod.MetadataStatusFilter
 import typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata
 import typings.node.Buffer
 import scala.scalajs.js

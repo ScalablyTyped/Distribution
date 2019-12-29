@@ -1,6 +1,6 @@
 package typings.grammarkdown.distHostMod
 
-import typings.grammarkdown.grammarkdownNumbers.`false`
+import typings.grammarkdown.grammarkdownBooleans.`false`
 import typings.prex.prexMod.CancellationToken
 import typings.std.Record
 import scala.scalajs.js

@@ -21,19 +21,19 @@ class CultureInfo protected () extends js.Object {
     * @param dateTimeFormat
     *           A culture-sensitive date formatting string.
     */
-  def this(name: java.lang.String, numberFormat: java.lang.String, dateTimeFormat: java.lang.String) = this()
+  def this(name: String, numberFormat: String, dateTimeFormat: String) = this()
   /**
     * Gets an object that contains an array of culture-sensitive formatting and parsing string values that can be applied to Date type extensions.
     * Use the dateTimeFormat field to retrieve an object that contains an array of formatting strings that are based on the current culture or on the invariant culture.
     * Each formatting string can be used to specify how to format Date type extensions.
     * @return An object that contains an array of culture-sensitive formatting strings.
     */
-  var dateTimeFormat: js.Array[java.lang.String] = js.native
+  var dateTimeFormat: js.Array[String] = js.native
   /**
     * Gets the culture value (locale) that represents a language and region.
     * @return The culture value (locale) that represents a language and region.
     */
-  var name: java.lang.String = js.native
+  var name: String = js.native
   //#endregion
   //#region Properties
   /**
@@ -42,7 +42,7 @@ class CultureInfo protected () extends js.Object {
     * Each formatting string can be used to specify how to format Number type extensions.
     * @return An object that contains an array of culture-sensitive formatting strings.
     */
-  var numberFormat: js.Array[java.lang.String] = js.native
+  var numberFormat: js.Array[String] = js.native
 }
 
 /* static members */

@@ -88,9 +88,9 @@ trait IHelper extends js.Object {
   		*/
   var insertHtml: js.UndefOr[
     js.Function3[
-      /* where */ js.UndefOr[java.lang.String], 
+      /* where */ js.UndefOr[String], 
       /* el */ js.UndefOr[js.Any], 
-      /* html */ js.UndefOr[java.lang.String], 
+      /* html */ js.UndefOr[String], 
       HTMLElement
     ]
   ] = js.undefined
@@ -98,7 +98,7 @@ trait IHelper extends js.Object {
   		* @param spec Object The DOM object spec (and children).
   		* @returns String
   		*/
-  var markup: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var markup: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Creates new DOM element s and overwrites the contents of el with them
   		* @param el String/HTMLElement/Ext.Element The context element
   		* @param o Object/String The DOM object spec (and children) or raw HTML blob
@@ -125,8 +125,8 @@ object IHelper {
     insertAfter: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
     insertBefore: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
     insertFirst: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* el */ js.UndefOr[js.Any], /* html */ js.UndefOr[java.lang.String]) => HTMLElement = null,
-    markup: /* spec */ js.UndefOr[js.Any] => java.lang.String = null,
+    insertHtml: (/* where */ js.UndefOr[String], /* el */ js.UndefOr[js.Any], /* html */ js.UndefOr[String]) => HTMLElement = null,
+    markup: /* spec */ js.UndefOr[js.Any] => String = null,
     overwrite: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null
   ): IHelper = {
     val __obj = js.Dynamic.literal()

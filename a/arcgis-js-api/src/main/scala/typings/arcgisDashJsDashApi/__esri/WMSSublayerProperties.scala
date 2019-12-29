@@ -44,6 +44,22 @@ trait WMSSublayerProperties extends js.Object {
     */
   var legendUrl: js.UndefOr[String] = js.undefined
   /**
+    * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of zero means the layer does not have a maximum scale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#maxScale)
+    *
+    * @default 0
+    */
+  var maxScale: js.UndefOr[Double] = js.undefined
+  /**
+    * The minimum scale (most zoomed out) at which the layer is visible in the view. If the map is zoomed out beyond this scale, the layer will not be visible. A value of zero means the layer does not have a minimum scale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#minScale)
+    *
+    * @default 0
+    */
+  var minScale: js.UndefOr[Double] = js.undefined
+  /**
     * Name of the WMS sublayer. This defaults to the value of the Name property from the WMS GetCapabilities request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#name)
@@ -100,6 +116,8 @@ object WMSSublayerProperties {
     layer: WMSLayerProperties = null,
     legendEnabled: js.UndefOr[Boolean] = js.undefined,
     legendUrl: String = null,
+    maxScale: Int | Double = null,
+    minScale: Int | Double = null,
     name: String = null,
     popupEnabled: js.UndefOr[Boolean] = js.undefined,
     queryable: js.UndefOr[Boolean] = js.undefined,
@@ -115,6 +133,8 @@ object WMSSublayerProperties {
     if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
     if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl.asInstanceOf[js.Any])
+    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable.asInstanceOf[js.Any])

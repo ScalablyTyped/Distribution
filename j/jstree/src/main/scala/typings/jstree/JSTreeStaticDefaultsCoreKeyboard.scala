@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JSTreeStaticDefaultsCoreKeyboard extends js.Object {
-  def `*`(e: Event): Unit
+  @JSName("*")
+  def Asterisk(e: Event): Unit
   def `ctrl-space`(e: Event): Unit
   def down(e: Event): Unit
   def end(e: Event): Unit
@@ -21,7 +22,7 @@ trait JSTreeStaticDefaultsCoreKeyboard extends js.Object {
 object JSTreeStaticDefaultsCoreKeyboard {
   @scala.inline
   def apply(
-    `*`: Event => Unit,
+    Asterisk: Event => Unit,
     `ctrl-space`: Event => Unit,
     down: Event => Unit,
     end: Event => Unit,
@@ -33,7 +34,7 @@ object JSTreeStaticDefaultsCoreKeyboard {
     up: Event => Unit
   ): JSTreeStaticDefaultsCoreKeyboard = {
     val __obj = js.Dynamic.literal(down = js.Any.fromFunction1(down), end = js.Any.fromFunction1(end), enter = js.Any.fromFunction1(enter), f2 = js.Any.fromFunction1(f2), home = js.Any.fromFunction1(home), left = js.Any.fromFunction1(left), right = js.Any.fromFunction1(right), up = js.Any.fromFunction1(up))
-    __obj.updateDynamic("*")(js.Any.fromFunction1(`*`))
+    __obj.updateDynamic("*")(js.Any.fromFunction1(Asterisk))
     __obj.updateDynamic("ctrl-space")(js.Any.fromFunction1(`ctrl-space`))
     __obj.asInstanceOf[JSTreeStaticDefaultsCoreKeyboard]
   }

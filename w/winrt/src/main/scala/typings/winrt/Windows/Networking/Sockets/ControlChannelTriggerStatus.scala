@@ -1,13 +1,6 @@
 package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerStatus.hardwareSlotAllocated
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerStatus.hardwareSlotRequested
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerStatus.policyError
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerStatus.serviceUnavailable
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerStatus.softwareSlotAllocated
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerStatus.systemError
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerStatus.transportDisconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

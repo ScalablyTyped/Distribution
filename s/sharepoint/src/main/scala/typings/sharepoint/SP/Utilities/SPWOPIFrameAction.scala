@@ -1,10 +1,6 @@
 package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Utilities.SPWOPIFrameAction.edit
-import typings.sharepoint.SP.Utilities.SPWOPIFrameAction.interactivePreview
-import typings.sharepoint.SP.Utilities.SPWOPIFrameAction.mobileView
-import typings.sharepoint.SP.Utilities.SPWOPIFrameAction.view
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,6 +21,8 @@ trait Request extends js.Object {
   var addProtectedRange: js.UndefOr[AddProtectedRangeRequest] = js.undefined
   /** Adds a sheet. */
   var addSheet: js.UndefOr[AddSheetRequest] = js.undefined
+  /** Adds a slicer. */
+  var addSlicer: js.UndefOr[AddSlicerRequest] = js.undefined
   /** Appends cells after the last row with data in a sheet. */
   var appendCells: js.UndefOr[AppendCellsRequest] = js.undefined
   /** Appends dimensions to the end of a sheet. */
@@ -125,6 +127,8 @@ trait Request extends js.Object {
   var updateProtectedRange: js.UndefOr[UpdateProtectedRangeRequest] = js.undefined
   /** Updates a sheet's properties. */
   var updateSheetProperties: js.UndefOr[UpdateSheetPropertiesRequest] = js.undefined
+  /** Updates a slicer's specifications. */
+  var updateSlicerSpec: js.UndefOr[UpdateSlicerSpecRequest] = js.undefined
   /** Updates the spreadsheet's properties. */
   var updateSpreadsheetProperties: js.UndefOr[UpdateSpreadsheetPropertiesRequest] = js.undefined
 }
@@ -140,6 +144,7 @@ object Request {
     addNamedRange: AddNamedRangeRequest = null,
     addProtectedRange: AddProtectedRangeRequest = null,
     addSheet: AddSheetRequest = null,
+    addSlicer: AddSlicerRequest = null,
     appendCells: AppendCellsRequest = null,
     appendDimension: AppendDimensionRequest = null,
     autoFill: AutoFillRequest = null,
@@ -189,6 +194,7 @@ object Request {
     updateNamedRange: UpdateNamedRangeRequest = null,
     updateProtectedRange: UpdateProtectedRangeRequest = null,
     updateSheetProperties: UpdateSheetPropertiesRequest = null,
+    updateSlicerSpec: UpdateSlicerSpecRequest = null,
     updateSpreadsheetProperties: UpdateSpreadsheetPropertiesRequest = null
   ): Request = {
     val __obj = js.Dynamic.literal()
@@ -200,6 +206,7 @@ object Request {
     if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange.asInstanceOf[js.Any])
     if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange.asInstanceOf[js.Any])
     if (addSheet != null) __obj.updateDynamic("addSheet")(addSheet.asInstanceOf[js.Any])
+    if (addSlicer != null) __obj.updateDynamic("addSlicer")(addSlicer.asInstanceOf[js.Any])
     if (appendCells != null) __obj.updateDynamic("appendCells")(appendCells.asInstanceOf[js.Any])
     if (appendDimension != null) __obj.updateDynamic("appendDimension")(appendDimension.asInstanceOf[js.Any])
     if (autoFill != null) __obj.updateDynamic("autoFill")(autoFill.asInstanceOf[js.Any])
@@ -249,6 +256,7 @@ object Request {
     if (updateNamedRange != null) __obj.updateDynamic("updateNamedRange")(updateNamedRange.asInstanceOf[js.Any])
     if (updateProtectedRange != null) __obj.updateDynamic("updateProtectedRange")(updateProtectedRange.asInstanceOf[js.Any])
     if (updateSheetProperties != null) __obj.updateDynamic("updateSheetProperties")(updateSheetProperties.asInstanceOf[js.Any])
+    if (updateSlicerSpec != null) __obj.updateDynamic("updateSlicerSpec")(updateSlicerSpec.asInstanceOf[js.Any])
     if (updateSpreadsheetProperties != null) __obj.updateDynamic("updateSpreadsheetProperties")(updateSpreadsheetProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }

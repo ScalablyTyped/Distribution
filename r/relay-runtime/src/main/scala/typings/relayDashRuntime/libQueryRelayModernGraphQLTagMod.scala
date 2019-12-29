@@ -1,7 +1,5 @@
 package typings.relayDashRuntime
 
-import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
-import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod._GraphQLTaggedNode
 import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderFragment
 import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment
 import typings.relayDashRuntime.libUtilReaderNodeMod.ReaderPaginationFragment

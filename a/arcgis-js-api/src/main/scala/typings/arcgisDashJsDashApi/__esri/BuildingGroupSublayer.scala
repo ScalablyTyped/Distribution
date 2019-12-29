@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`building-group`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
@@ -41,7 +40,7 @@ trait BuildingGroupSublayer extends BuildingSublayer {
     *
     *
     */
-  def loadAll(): IPromise[BuildingSceneLayer] = js.native
+  def loadAll(): js.Promise[BuildingSceneLayer] = js.native
 }
 
 @JSGlobal("__esri.BuildingGroupSublayer")

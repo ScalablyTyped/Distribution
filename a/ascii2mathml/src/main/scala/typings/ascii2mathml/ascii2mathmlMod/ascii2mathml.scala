@@ -18,6 +18,6 @@ trait ascii2mathml extends js.Object {
     * ASCIIMath expression to MathML markup.
     * @param options Options
     */
-  def apply(options: Options): typings.ascii2mathml.ascii2mathmlMod.ascii2mathml = js.native
+  def apply(options: Options): ascii2mathml = js.native
 }
 

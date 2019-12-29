@@ -11,6 +11,7 @@ class Reviewer protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   var Visible: Boolean = js.native
-  var `Word.Reviewer_typekey`: Reviewer = js.native
+  @JSName("Word.Reviewer_typekey")
+  var WordDotReviewer_typekey: Reviewer = js.native
 }
 

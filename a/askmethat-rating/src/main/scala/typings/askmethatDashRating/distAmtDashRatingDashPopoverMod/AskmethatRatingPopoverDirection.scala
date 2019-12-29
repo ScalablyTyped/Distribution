@@ -1,8 +1,6 @@
 package typings.askmethatDashRating.distAmtDashRatingDashPopoverMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.askmethatDashRating.distAmtDashRatingDashPopoverMod.AskmethatRatingPopoverDirection.bottom
-import typings.askmethatDashRating.distAmtDashRatingDashPopoverMod.AskmethatRatingPopoverDirection.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

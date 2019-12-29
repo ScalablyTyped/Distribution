@@ -1,21 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.BlendFunction.CONSTANT_ALPHA
-import typings.cesium.cesiumMod.BlendFunction.CONSTANT_COLOR
-import typings.cesium.cesiumMod.BlendFunction.DESTINATION_ALPHA
-import typings.cesium.cesiumMod.BlendFunction.DESTINATION_COLOR
-import typings.cesium.cesiumMod.BlendFunction.ONE
-import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_CONSTANT_ALPHA
-import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_CONSTANT_COLOR
-import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_DESTINATION_ALPHA
-import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_DESTINATION_COLOR
-import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_SOURCE_ALPHA
-import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_SOURCE_COLOR
-import typings.cesium.cesiumMod.BlendFunction.SOURCE_ALPHA
-import typings.cesium.cesiumMod.BlendFunction.SOURCE_ALPHA_SATURATE
-import typings.cesium.cesiumMod.BlendFunction.SOURCE_COLOR
-import typings.cesium.cesiumMod.BlendFunction.ZERO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

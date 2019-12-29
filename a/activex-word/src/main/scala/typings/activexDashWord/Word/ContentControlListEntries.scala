@@ -11,7 +11,8 @@ class ContentControlListEntries protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ContentControlListEntries_typekey`: ContentControlListEntries = js.native
+  @JSName("Word.ContentControlListEntries_typekey")
+  var WordDotContentControlListEntries_typekey: ContentControlListEntries = js.native
   /**
     * @param string [Value='']
     * @param number [Index=0]

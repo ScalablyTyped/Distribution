@@ -1,6 +1,5 @@
 package typings.sipDotJs
 
-import typings.sipDotJs.libSessionDTMFValidatorMod.ToneType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

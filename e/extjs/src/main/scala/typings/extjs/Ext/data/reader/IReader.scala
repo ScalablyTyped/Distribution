@@ -15,11 +15,11 @@ trait IReader extends IObservable {
   		*/
   var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
   /** [Config Option] (String) */
-  var idProperty: js.UndefOr[java.lang.String] = js.undefined
+  var idProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var implicitIncludes: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var messageProperty: js.UndefOr[java.lang.String] = js.undefined
+  var messageProperty: js.UndefOr[String] = js.undefined
   /** [Property] (Object) */
   var metaData: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Object) */
@@ -37,11 +37,11 @@ trait IReader extends IObservable {
   /** [Config Option] (Boolean) */
   var readRecordsOnFailure: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var successProperty: js.UndefOr[java.lang.String] = js.undefined
+  var successProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var totalProperty: js.UndefOr[java.lang.String] = js.undefined
+  var totalProperty: js.UndefOr[String] = js.undefined
 }
 
 object IReader {
@@ -59,20 +59,20 @@ object IReader {
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getResponseData: /* response */ js.UndefOr[js.Any] => IResultSet = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
-    idProperty: java.lang.String = null,
+    idProperty: String = null,
     implicitIncludes: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.data.reader.IReader = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IReader = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     listeners: js.Any = null,
-    messageProperty: java.lang.String = null,
+    messageProperty: String = null,
     metaData: js.Any = null,
     mixins: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
@@ -82,21 +82,21 @@ object IReader {
     read: /* response */ js.UndefOr[js.Any] => IResultSet = null,
     readRecords: /* data */ js.UndefOr[js.Any] => IResultSet = null,
     readRecordsOnFailure: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
-    root: java.lang.String = null,
+    root: String = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    successProperty: java.lang.String = null,
+    successProperty: String = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    totalProperty: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    totalProperty: String = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IReader = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.gitDashUsername.gitDashUsernameMod
 
-import typings.gitDashUsername.gitDashUsernameNumbers.`true`
+import typings.gitDashUsername.gitDashUsernameBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

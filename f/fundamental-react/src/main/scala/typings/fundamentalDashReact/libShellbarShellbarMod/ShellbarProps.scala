@@ -18,6 +18,8 @@ trait ShellbarProps
   var className: js.UndefOr[String] = js.undefined
   /* For use with applications that utilize CoPilot. */
   var copilot: js.UndefOr[Boolean] = js.undefined
+  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   var localizedText: js.UndefOr[Anon_CounterLabelNotificationsButton] = js.undefined
   /* Provide an img tag for a logo other than the SAP logo. One of the two props (`logo` or `logoSAP`) should be set. */
   var logo: js.UndefOr[ReactNode] = js.undefined
@@ -50,6 +52,8 @@ object ShellbarProps {
     actions: js.Array[Anon_CallbackEvent] = null,
     className: String = null,
     copilot: js.UndefOr[Boolean] = js.undefined,
+    customStyles: StringDictionary[js.Any] = null,
+    disableStyles: js.UndefOr[Boolean] = js.undefined,
     localizedText: Anon_CounterLabelNotificationsButton = null,
     logo: ReactNode = null,
     logoSAP: js.UndefOr[Boolean] = js.undefined,
@@ -68,6 +72,8 @@ object ShellbarProps {
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(copilot)) __obj.updateDynamic("copilot")(copilot.asInstanceOf[js.Any])
+    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (!js.isUndefined(logoSAP)) __obj.updateDynamic("logoSAP")(logoSAP.asInstanceOf[js.Any])

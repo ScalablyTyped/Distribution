@@ -26,26 +26,26 @@ trait OutputPluginHooks extends js.Object {
   /** @deprecated Use `renderChunk` instead */
   @JSName("transformChunk")
   var transformChunk_Original: TransformChunkHook = js.native
-  def augmentChunkHash(`this`: PluginContext, chunk: PreRenderedChunk): String | Unit = js.native
-  def generateBundle(`this`: PluginContext, options: OutputOptions, bundle: OutputBundle, isWrite: Boolean): Unit | js.Promise[Unit] = js.native
+  def augmentChunkHash(chunk: PreRenderedChunk): String | Unit = js.native
+  def generateBundle(options: OutputOptions, bundle: OutputBundle, isWrite: Boolean): Unit | js.Promise[Unit] = js.native
   /** @deprecated Use `generateBundle` instead */
-  def ongenerate(`this`: PluginContext, options: OnGenerateOptions, chunk: OutputChunk): Unit | js.Promise[Unit] = js.native
+  def ongenerate(options: OnGenerateOptions, chunk: OutputChunk): Unit | js.Promise[Unit] = js.native
   /** @deprecated Use `writeBundle` instead */
-  def onwrite(`this`: PluginContext, options: OnWriteOptions, chunk: OutputChunk): Unit | js.Promise[Unit] = js.native
-  def outputOptions(`this`: PluginContext, options: OutputOptions): js.UndefOr[OutputOptions | Null] = js.native
-  def renderChunk(`this`: PluginContext, code: String, chunk: RenderedChunk, options: OutputOptions): (js.Promise[Anon_Code | Null]) | Anon_Code | String | Null = js.native
-  def renderError(`this`: PluginContext): js.Promise[Unit] | Unit = js.native
-  def renderError(`this`: PluginContext, err: Error): js.Promise[Unit] | Unit = js.native
-  def renderStart(`this`: PluginContext, outputOptions: OutputOptions, inputOptions: InputOptions): js.Promise[Unit] | Unit = js.native
+  def onwrite(options: OnWriteOptions, chunk: OutputChunk): Unit | js.Promise[Unit] = js.native
+  def outputOptions(options: OutputOptions): js.UndefOr[OutputOptions | Null] = js.native
+  def renderChunk(code: String, chunk: RenderedChunk, options: OutputOptions): (js.Promise[Anon_Code | Null]) | Anon_Code | String | Null = js.native
+  def renderError(): js.Promise[Unit] | Unit = js.native
+  def renderError(err: Error): js.Promise[Unit] | Unit = js.native
+  def renderStart(outputOptions: OutputOptions, inputOptions: InputOptions): js.Promise[Unit] | Unit = js.native
   /** @deprecated Use `resolveFileUrl` instead */
-  def resolveAssetUrl(`this`: PluginContext, options: Anon_AssetFileName): js.UndefOr[String | Null] = js.native
-  def resolveDynamicImport(`this`: PluginContext, specifier: String, importer: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
-  def resolveDynamicImport(`this`: PluginContext, specifier: Node, importer: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
-  def resolveFileUrl(`this`: PluginContext, options: Anon_AssetReferenceId): js.UndefOr[String | Null] = js.native
+  def resolveAssetUrl(options: Anon_AssetFileName): js.UndefOr[String | Null] = js.native
+  def resolveDynamicImport(specifier: String, importer: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
+  def resolveDynamicImport(specifier: Node, importer: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
+  def resolveFileUrl(options: Anon_AssetReferenceId): js.UndefOr[String | Null] = js.native
   /** @deprecated Use `renderChunk` instead */
-  def transformBundle(`this`: PluginContext, code: String, options: OutputOptions): js.UndefOr[(js.Promise[js.UndefOr[Anon_Code | Null]]) | Anon_Code | Null] = js.native
+  def transformBundle(code: String, options: OutputOptions): js.UndefOr[(js.Promise[js.UndefOr[Anon_Code | Null]]) | Anon_Code | Null] = js.native
   /** @deprecated Use `renderChunk` instead */
-  def transformChunk(`this`: PluginContext, code: String, options: OutputOptions): js.UndefOr[(js.Promise[js.UndefOr[Anon_Code | Null]]) | Anon_Code | Null] = js.native
-  def writeBundle(`this`: PluginContext, bundle: OutputBundle): Unit | js.Promise[Unit] = js.native
+  def transformChunk(code: String, options: OutputOptions): js.UndefOr[(js.Promise[js.UndefOr[Anon_Code | Null]]) | Anon_Code | Null] = js.native
+  def writeBundle(bundle: OutputBundle): Unit | js.Promise[Unit] = js.native
 }
 

@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.alerts
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.communications
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameChat
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameEffects
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameMedia
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.media
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.movie
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.other
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.soundEffects
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.speech
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

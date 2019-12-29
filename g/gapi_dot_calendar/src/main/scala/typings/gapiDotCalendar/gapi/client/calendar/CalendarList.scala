@@ -1,7 +1,7 @@
 package typings.gapiDotCalendar.gapi.client.calendar
 
 import typings.gapi.gapi.client.HttpRequest
-import typings.gapiDotCalendar.gapiDotCalendarStrings.`calendar#calendarList`
+import typings.gapiDotCalendar.gapiDotCalendarStrings.calendarNumbersigncalendarList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CalendarList extends js.Object {
   var etag: typings.gapiDotCalendar.gapi.client.calendar.etag
   var items: js.Array[CalendarListEntry]
-  var kind: `calendar#calendarList`
+  var kind: calendarNumbersigncalendarList
   /**
     * Token used to access the next page of this result.
     * Omitted if no further results are available, in which case nextSyncToken is provided.
@@ -27,7 +27,7 @@ object CalendarList {
   def apply(
     etag: etag,
     items: js.Array[CalendarListEntry],
-    kind: `calendar#calendarList`,
+    kind: calendarNumbersigncalendarList,
     nextPageToken: String = null,
     nextSyncToken: String = null
   ): CalendarList = {

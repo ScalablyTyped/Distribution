@@ -11,7 +11,8 @@ class Documents protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Documents_typekey`: Documents = js.native
+  @JSName("Word.Documents_typekey")
+  var WordDotDocuments_typekey: Documents = js.native
   def Add(): Document = js.native
   def Add(Template: String): Document = js.native
   def Add(Template: String, NewTemplate: Boolean): Document = js.native

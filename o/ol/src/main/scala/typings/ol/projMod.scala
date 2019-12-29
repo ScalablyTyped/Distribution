@@ -2,8 +2,6 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
-import typings.ol.projMod.ProjectionLike
-import typings.ol.projMod.TransformFunction
 import typings.ol.projProjectionMod.default
 import typings.ol.projUnitsMod.Units
 import scala.scalajs.js

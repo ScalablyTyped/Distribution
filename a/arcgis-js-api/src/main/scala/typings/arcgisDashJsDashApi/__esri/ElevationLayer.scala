@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.elevation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,8 +36,8 @@ trait ElevationLayer
     * @param options.noDataValue The value to use when there is no data available.
     *
     */
-  def createElevationSampler(extent: Extent): IPromise[ElevationSampler] = js.native
-  def createElevationSampler(extent: Extent, options: ElevationLayerCreateElevationSamplerOptions): IPromise[ElevationSampler] = js.native
+  def createElevationSampler(extent: Extent): js.Promise[ElevationSampler] = js.native
+  def createElevationSampler(extent: Extent, options: ElevationLayerCreateElevationSamplerOptions): js.Promise[ElevationSampler] = js.native
   /**
     * Requests a tile from the service and decodes the data into a linear array of elevation values.  The returned promise resolves with a plain object describing the obtained elevation data for the tile. The object has the following properties:
     *
@@ -60,8 +59,8 @@ trait ElevationLayer
     * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def fetchTile(level: Double, row: Double, column: Double): IPromise[ElevationTileData] = js.native
-  def fetchTile(level: Double, row: Double, column: Double, options: ElevationLayerFetchTileOptions): IPromise[ElevationTileData] = js.native
+  def fetchTile(level: Double, row: Double, column: Double): js.Promise[ElevationTileData] = js.native
+  def fetchTile(level: Double, row: Double, column: Double, options: ElevationLayerFetchTileOptions): js.Promise[ElevationTileData] = js.native
   /**
     * This method returns a URL to a tile for a given level, row and column.
     *
@@ -73,8 +72,8 @@ trait ElevationLayer
     *
     */
   def getTileUrl(level: Double, row: Double, col: Double): String = js.native
-  def queryElevation(geometry: Multipoint): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Multipoint, options: ElevationLayerQueryElevationOptions): IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Multipoint): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Multipoint, options: ElevationLayerQueryElevationOptions): js.Promise[ElevationLayerElevationQueryResult] = js.native
   /**
     * Queries the service layer for elevation values for the given geometry. The returned result contains a copy of the geometry with z-values sampled from elevation data from the service. The resolution from which the elevation is queried can be set using the `demResolution` option. In many cases, `auto` demResolution can be used to get high quality elevation samples without the need to know exactly where the data in the service is located. This is particularly useful for services which combine elevation data from many sources (such as the world elevation service). If more control, or higher quality samples are required, use either `finest-contiguous` or a fixed `{number}` resolution.
     *
@@ -95,10 +94,10 @@ trait ElevationLayer
     * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def queryElevation(geometry: Point): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Point, options: ElevationLayerQueryElevationOptions): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Polyline): IPromise[ElevationLayerElevationQueryResult] = js.native
-  def queryElevation(geometry: Polyline, options: ElevationLayerQueryElevationOptions): IPromise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Point): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Point, options: ElevationLayerQueryElevationOptions): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline): js.Promise[ElevationLayerElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline, options: ElevationLayerQueryElevationOptions): js.Promise[ElevationLayerElevationQueryResult] = js.native
 }
 
 @JSGlobal("__esri.ElevationLayer")

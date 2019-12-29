@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageType.LAYOUT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageType.MASTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageType.SLIDE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

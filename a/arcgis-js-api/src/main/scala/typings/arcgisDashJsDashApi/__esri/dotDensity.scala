@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +38,7 @@ trait dotDensity extends js.Object {
     * @param params.dotDensityScheme In authoring apps, the user may select a pre-defined dot density scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     *
     */
-  def createRenderer(params: dotDensityCreateRendererParams): IPromise[RendererResult]
+  def createRenderer(params: dotDensityCreateRendererParams): js.Promise[RendererResult]
 }
 
 @JSGlobal("__esri.dotDensity")

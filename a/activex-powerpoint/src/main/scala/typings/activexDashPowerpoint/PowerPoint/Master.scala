@@ -23,7 +23,8 @@ class Master protected () extends js.Object {
   val Hyperlinks: typings.activexDashPowerpoint.PowerPoint.Hyperlinks = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Master_typekey`: Master = js.native
+  @JSName("PowerPoint.Master_typekey")
+  var PowerPointDotMaster_typekey: Master = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native
   val Shapes: typings.activexDashPowerpoint.PowerPoint.Shapes = js.native

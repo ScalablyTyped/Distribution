@@ -12,7 +12,6 @@ import typings.dojo.dojoStrings.swatchSize
 import typings.dojo.dojoStrings.theme
 import typings.dojo.dojoStrings.transitionFill
 import typings.dojo.dojoStrings.transitionStroke
-import typings.dojo.dojox.charting.widget.Legend
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,9 +1,6 @@
 package typings.couchbase.couchbaseMod.SearchQuery
 
 import org.scalablytyped.runtime.TopLevel
-import typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.ANSI
-import typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.DEFAULT
-import typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.HTML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

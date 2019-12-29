@@ -31,13 +31,11 @@ class ContentFactory ()
   /**
     * Create a new cell header for the parent widget.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def createCellFooter(): ICellFooter = js.native
   /**
     * Create a new cell header for the parent widget.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def createCellHeader(): ICellHeader = js.native
   /**
@@ -54,6 +52,7 @@ class ContentFactory ()
   /**
     * Create an output prompt.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def createOutputPrompt(): IOutputPrompt = js.native
   /**
@@ -64,6 +63,7 @@ class ContentFactory ()
   /**
     * Create an stdin widget.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def createStdin(options: typings.atJupyterlabOutputarea.libWidgetMod.Stdin.IOptions): IStdin = js.native
 }

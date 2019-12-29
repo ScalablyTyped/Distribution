@@ -1,7 +1,7 @@
 package typings.rollupDashPluginDashTypescript2.distTscacheMod
 
 import typings.rollupDashPluginDashTypescript2.distContextMod.IContext
-import typings.rollupDashPluginDashTypescript2.rollupDashPluginDashTypescript2Numbers.`false`
+import typings.rollupDashPluginDashTypescript2.rollupDashPluginDashTypescript2Booleans.`false`
 import typings.typescript.typescriptMod.CompilerOptions
 import typings.typescript.typescriptMod.Diagnostic
 import typings.typescript.typescriptMod.IScriptSnapshot

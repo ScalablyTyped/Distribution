@@ -1,9 +1,6 @@
 package typings.vueDashLs.vueDashLsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vueDashLs.vueDashLsMod.Types.Local
-import typings.vueDashLs.vueDashLsMod.Types.Memory
-import typings.vueDashLs.vueDashLsMod.Types.Session
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

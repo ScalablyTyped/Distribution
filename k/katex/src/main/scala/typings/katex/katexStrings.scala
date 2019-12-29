@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation._
 
 object katexStrings {
   @js.native
-  sealed trait `(` extends js.Object
+  sealed trait $ extends js.Object
   
   @js.native
-  sealed trait `)` extends js.Object
+  sealed trait DollarDollar extends js.Object
   
   @js.native
-  sealed trait DOLLAR extends js.Object
+  sealed trait Leftparenthesis extends js.Object
   
   @js.native
-  sealed trait DOLLARDOLLAR extends js.Object
+  sealed trait Leftsquarebracket extends js.Object
   
   @js.native
-  sealed trait `[` extends js.Object
+  sealed trait Rightparenthesis extends js.Object
   
   @js.native
-  sealed trait `]` extends js.Object
+  sealed trait Rightsquarebracket extends js.Object
   
   @js.native
   sealed trait a extends js.Object
@@ -387,17 +387,17 @@ object katexStrings {
   sealed trait wbr extends js.Object
   
   @scala.inline
-  def `(`: `(` = "(".asInstanceOf[`(`]
+  def $: $ = "$".asInstanceOf[$]
   @scala.inline
-  def `)`: `)` = ")".asInstanceOf[`)`]
+  def DollarDollar: DollarDollar = "$$".asInstanceOf[DollarDollar]
   @scala.inline
-  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
+  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   @scala.inline
-  def DOLLARDOLLAR: DOLLARDOLLAR = "$$".asInstanceOf[DOLLARDOLLAR]
+  def Leftsquarebracket: Leftsquarebracket = "[".asInstanceOf[Leftsquarebracket]
   @scala.inline
-  def `[`: `[` = "[".asInstanceOf[`[`]
+  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   @scala.inline
-  def `]`: `]` = "]".asInstanceOf[`]`]
+  def Rightsquarebracket: Rightsquarebracket = "]".asInstanceOf[Rightsquarebracket]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ShapeZOrder.bringForward
-import typings.officeDashJs.Excel.ShapeZOrder.bringToFront
-import typings.officeDashJs.Excel.ShapeZOrder.sendBackward
-import typings.officeDashJs.Excel.ShapeZOrder.sendToBack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

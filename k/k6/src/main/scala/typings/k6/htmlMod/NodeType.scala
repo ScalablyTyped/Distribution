@@ -1,11 +1,6 @@
 package typings.k6.htmlMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.k6.htmlMod.NodeType.CommentNode
-import typings.k6.htmlMod.NodeType.DoctypeNode
-import typings.k6.htmlMod.NodeType.DocumentNode
-import typings.k6.htmlMod.NodeType.ElementNode
-import typings.k6.htmlMod.NodeType.TextNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.atAngularCompilerNumbers.`true`
+import typings.atAngularCompiler.atAngularCompilerBooleans.`true`
 import typings.atAngularCompiler.srcCompileUnderscoreReflectorMod.CompileReflector
 import typings.atAngularCompiler.srcCoreMod.Directive
 import typings.atAngularCompiler.srcCoreMod.Type

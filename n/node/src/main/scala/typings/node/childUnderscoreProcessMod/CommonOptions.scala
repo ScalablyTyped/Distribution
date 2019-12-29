@@ -19,7 +19,7 @@ trait CommonOptions extends ProcessEnvOptions {
 object CommonOptions {
   @scala.inline
   def apply(
-    cwd: java.lang.String = null,
+    cwd: String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
     timeout: Int | Double = null,

@@ -1,10 +1,10 @@
 package typings.screeps
 
-import typings.screeps.screepsNumbers.`0DOT2`
-import typings.screeps.screepsNumbers.`0DOT35`
-import typings.screeps.screepsNumbers.`0DOT5`
-import typings.screeps.screepsNumbers.`0DOT7`
-import typings.screeps.screepsNumbers.`0DOT9`
+import typings.screeps.screepsNumbers.`0.2`
+import typings.screeps.screepsNumbers.`0.35`
+import typings.screeps.screepsNumbers.`0.5`
+import typings.screeps.screepsNumbers.`0.7`
+import typings.screeps.screepsNumbers.`0.9`
 import typings.screeps.screepsNumbers.`0`
 import typings.screeps.screepsNumbers.`1000`
 import typings.screeps.screepsNumbers.`100`
@@ -23,7 +23,7 @@ trait Anon_002 extends js.Object {
   var className: operator
   var cooldown: `300`
   var duration: `1000`
-  var effect: js.Tuple5[`0DOT9`, `0DOT7`, `0DOT5`, `0DOT35`, `0DOT2`]
+  var effect: js.Tuple5[`0.9`, `0.7`, `0.5`, `0.35`, `0.2`]
   var level: js.Tuple5[`0`, `2`, `7`, `14`, `22`]
   var ops: `100`
   var range: `3`
@@ -35,7 +35,7 @@ object Anon_002 {
     className: operator,
     cooldown: `300`,
     duration: `1000`,
-    effect: js.Tuple5[`0DOT9`, `0DOT7`, `0DOT5`, `0DOT35`, `0DOT2`],
+    effect: js.Tuple5[`0.9`, `0.7`, `0.5`, `0.35`, `0.2`],
     level: js.Tuple5[`0`, `2`, `7`, `14`, `22`],
     ops: `100`,
     range: `3`

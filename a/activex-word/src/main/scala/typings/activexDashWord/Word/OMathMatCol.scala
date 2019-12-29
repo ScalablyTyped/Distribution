@@ -13,7 +13,8 @@ class OMathMatCol protected () extends js.Object {
   val ColIndex: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathMatCol_typekey`: OMathMatCol = js.native
+  @JSName("Word.OMathMatCol_typekey")
+  var WordDotOMathMatCol_typekey: OMathMatCol = js.native
   def Delete(): Unit = js.native
 }
 

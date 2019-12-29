@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.WizHook")
 @js.native
 class WizHook protected () extends js.Object {
-  var `Access.WizHook_typekey`: WizHook = js.native
+  @JSName("Access.WizHook_typekey")
+  var AccessDotWizHook_typekey: WizHook = js.native
   val DbcVbProject: VBProject = js.native
   val Key: Double = js.native
   def AccessUserDataDir(): String = js.native

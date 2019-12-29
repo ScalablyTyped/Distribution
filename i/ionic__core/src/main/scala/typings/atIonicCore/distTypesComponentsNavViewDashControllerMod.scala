@@ -5,7 +5,6 @@ import typings.atIonicCore.atIonicCoreMod.FrameworkDelegate
 import typings.atIonicCore.atIonicCoreNumbers.`1`
 import typings.atIonicCore.atIonicCoreNumbers.`2`
 import typings.atIonicCore.atIonicCoreNumbers.`3`
-import typings.atIonicCore.distTypesComponentsNavViewDashControllerMod.ViewController
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

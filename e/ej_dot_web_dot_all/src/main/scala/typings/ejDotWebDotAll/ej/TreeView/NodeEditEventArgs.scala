@@ -16,7 +16,7 @@ trait NodeEditEventArgs extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the newText of the element
     */
   var newText: js.UndefOr[String] = js.undefined
@@ -40,7 +40,7 @@ object NodeEditEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     event: js.Any = null,
     id: String = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     newText: String = null,
     nodeDetails: js.Any = null,
     oldText: String = null,

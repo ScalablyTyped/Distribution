@@ -8,9 +8,11 @@ trait Anon_Alt extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
   /** Identifies the Drive folder containing the items for which to return activities. */
-  var `drive.ancestorId`: js.UndefOr[String] = js.undefined
+  @JSName("drive.ancestorId")
+  var driveDotancestorId: js.UndefOr[String] = js.undefined
   /** Identifies the Drive item to return activities for. */
-  var `drive.fileId`: js.UndefOr[String] = js.undefined
+  @JSName("drive.fileId")
+  var driveDotfileId: js.UndefOr[String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   /** Indicates the strategy to use when grouping singleEvents items in the associated combinedEvent object. */
@@ -45,8 +47,8 @@ object Anon_Alt {
   @scala.inline
   def apply(
     alt: String = null,
-    `drive.ancestorId`: String = null,
-    `drive.fileId`: String = null,
+    driveDotancestorId: String = null,
+    driveDotfileId: String = null,
     fields: String = null,
     groupingStrategy: String = null,
     key: String = null,
@@ -61,8 +63,8 @@ object Anon_Alt {
   ): Anon_Alt = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (`drive.ancestorId` != null) __obj.updateDynamic("drive.ancestorId")(`drive.ancestorId`.asInstanceOf[js.Any])
-    if (`drive.fileId` != null) __obj.updateDynamic("drive.fileId")(`drive.fileId`.asInstanceOf[js.Any])
+    if (driveDotancestorId != null) __obj.updateDynamic("drive.ancestorId")(driveDotancestorId.asInstanceOf[js.Any])
+    if (driveDotfileId != null) __obj.updateDynamic("drive.fileId")(driveDotfileId.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (groupingStrategy != null) __obj.updateDynamic("groupingStrategy")(groupingStrategy.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

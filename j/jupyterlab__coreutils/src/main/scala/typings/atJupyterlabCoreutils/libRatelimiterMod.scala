@@ -3,7 +3,6 @@ package typings.atJupyterlabCoreutils
 import typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.invoked
 import typings.atJupyterlabCoreutils.libInterfacesMod.IRateLimiter
 import typings.atJupyterlabCoreutils.libPollMod.Poll
-import typings.atJupyterlabCoreutils.libRatelimiterMod.RateLimiter
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.PromiseDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`

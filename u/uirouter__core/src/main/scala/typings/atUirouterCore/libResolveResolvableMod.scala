@@ -2,7 +2,6 @@ package typings.atUirouterCore
 
 import typings.atUirouterCore.libResolveInterfaceMod.ResolvableLiteral
 import typings.atUirouterCore.libResolveInterfaceMod.ResolvePolicy
-import typings.atUirouterCore.libResolveResolvableMod.Resolvable
 import typings.atUirouterCore.libResolveResolveContextMod.ResolveContext
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
 import typings.atUirouterCore.libTransitionTransitionMod.Transition

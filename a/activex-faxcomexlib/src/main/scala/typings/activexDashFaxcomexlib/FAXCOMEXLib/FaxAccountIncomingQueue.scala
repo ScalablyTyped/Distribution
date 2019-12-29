@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FAXCOMEXLib.FaxAccountIncomingQueue")
 @js.native
 class FaxAccountIncomingQueue protected () extends js.Object {
-  var `FAXCOMEXLib.FaxAccountIncomingQueue_typekey`: FaxAccountIncomingQueue = js.native
+  @JSName("FAXCOMEXLib.FaxAccountIncomingQueue_typekey")
+  var FAXCOMEXLibDotFaxAccountIncomingQueue_typekey: FaxAccountIncomingQueue = js.native
   /** Get incoming job by ID */
   def GetJob(bstrJobId: String): FaxIncomingJob = js.native
   /** Collection of incoming jobs */

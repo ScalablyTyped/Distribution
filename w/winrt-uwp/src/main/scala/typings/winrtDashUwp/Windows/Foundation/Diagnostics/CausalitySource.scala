@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.application
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.library
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.system
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

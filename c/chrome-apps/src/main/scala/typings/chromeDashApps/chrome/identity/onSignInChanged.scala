@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.identity
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.identity.onSignInChanged")
 @js.native
 object onSignInChanged
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function2[/* account */ AccountInfo, /* signedIn */ Boolean, Unit]]
-    ]
+  extends TopLevel[Event[js.Function2[/* account */ AccountInfo, /* signedIn */ Boolean, Unit]]]
 

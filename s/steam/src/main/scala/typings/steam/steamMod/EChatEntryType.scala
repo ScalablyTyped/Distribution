@@ -1,7 +1,6 @@
 package typings.steam.steamMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steam.steamMod.EChatEntryType.ChatMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

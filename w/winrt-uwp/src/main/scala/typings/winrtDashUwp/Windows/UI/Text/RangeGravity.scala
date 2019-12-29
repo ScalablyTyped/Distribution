@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.backward
-import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.forward
-import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.inward
-import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.outward
-import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.uiBehavior
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

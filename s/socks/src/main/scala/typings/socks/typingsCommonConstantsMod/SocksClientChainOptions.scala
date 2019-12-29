@@ -1,6 +1,6 @@
 package typings.socks.typingsCommonConstantsMod
 
-import typings.socks.socksNumbers.`false`
+import typings.socks.socksBooleans.`false`
 import typings.socks.socksStrings.connect
 import scala.scalajs.js
 import scala.scalajs.js.`|`

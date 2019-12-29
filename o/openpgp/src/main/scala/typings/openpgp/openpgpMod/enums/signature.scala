@@ -1,20 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.signature.binary
-import typings.openpgp.openpgpMod.enums.signature.cert_casual
-import typings.openpgp.openpgpMod.enums.signature.cert_generic
-import typings.openpgp.openpgpMod.enums.signature.cert_persona
-import typings.openpgp.openpgpMod.enums.signature.cert_positive
-import typings.openpgp.openpgpMod.enums.signature.cert_revocation
-import typings.openpgp.openpgpMod.enums.signature.key_binding
-import typings.openpgp.openpgpMod.enums.signature.key_revocation
-import typings.openpgp.openpgpMod.enums.signature.standalone
-import typings.openpgp.openpgpMod.enums.signature.subkey_binding
-import typings.openpgp.openpgpMod.enums.signature.subkey_revocation
-import typings.openpgp.openpgpMod.enums.signature.text
-import typings.openpgp.openpgpMod.enums.signature.third_party
-import typings.openpgp.openpgpMod.enums.signature.timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +18,7 @@ object signature extends js.Object {
     * 0x00: Signature of a binary document.
     */
   @js.native
-  sealed trait binary
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait binary extends signature
   
   /**
     * 0x12: Casual certification of a User ID and Public-Key packet.
@@ -41,8 +26,7 @@ object signature extends js.Object {
     * verification of the claim of identity.
     */
   @js.native
-  sealed trait cert_casual
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait cert_casual extends signature
   
   /**
     * 0x10: Generic certification of a User ID and Public-Key packet.
@@ -51,8 +35,7 @@ object signature extends js.Object {
     * of the key is in fact the person described by the User ID.
     */
   @js.native
-  sealed trait cert_generic
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait cert_generic extends signature
   
   /**
     * 0x11: Persona certification of a User ID and Public-Key packet.
@@ -60,8 +43,7 @@ object signature extends js.Object {
     * the claim that the owner of this key is the User ID specified.
     */
   @js.native
-  sealed trait cert_persona
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait cert_persona extends signature
   
   /**
     * 0x13: Positive certification of a User ID and Public-Key packet.
@@ -72,8 +54,7 @@ object signature extends js.Object {
     * certifications, but few differentiate between the types.
     */
   @js.native
-  sealed trait cert_positive
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait cert_positive extends signature
   
   /**
     * 0x30: Certification revocation signature
@@ -86,8 +67,7 @@ object signature extends js.Object {
     * certificate.
     */
   @js.native
-  sealed trait cert_revocation
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait cert_revocation extends signature
   
   /**
     * 0x1F: Signature directly on a key
@@ -100,8 +80,7 @@ object signature extends js.Object {
     * name.
     */
   @js.native
-  sealed trait key
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait key extends signature
   
   /**
     * 0x19: Primary Key Binding Signature
@@ -118,8 +97,7 @@ object signature extends js.Object {
     * the first octet).
     */
   @js.native
-  sealed trait key_binding
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait key_binding extends signature
   
   /**
     * 0x20: Key revocation signature
@@ -129,8 +107,7 @@ object signature extends js.Object {
     * considered valid revocation signatures.a
     */
   @js.native
-  sealed trait key_revocation
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait key_revocation extends signature
   
   /**
     * 0x02: Standalone signature.
@@ -140,8 +117,7 @@ object signature extends js.Object {
     * standalone signature.
     */
   @js.native
-  sealed trait standalone
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait standalone extends signature
   
   /**
     * 0x18: Subkey Binding Signature
@@ -154,8 +130,7 @@ object signature extends js.Object {
     * primary key and subkey.
     */
   @js.native
-  sealed trait subkey_binding
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait subkey_binding extends signature
   
   /**
     * 0x28: Subkey revocation signature
@@ -168,16 +143,14 @@ object signature extends js.Object {
     * hash only the key being revoked.
     */
   @js.native
-  sealed trait subkey_revocation
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait subkey_revocation extends signature
   
   /**
     * 0x01: Signature of a canonical text document.
     * Canonicalyzing the document by converting line endings.
     */
   @js.native
-  sealed trait text
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait text extends signature
   
   /**
     * 0x50: Third-Party Confirmation signature.
@@ -190,8 +163,7 @@ object signature extends js.Object {
     * document) that cannot include a target subpacket.
     */
   @js.native
-  sealed trait third_party
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait third_party extends signature
   
   /**
     * 0x40: Timestamp signature.
@@ -199,11 +171,10 @@ object signature extends js.Object {
     * it.
     */
   @js.native
-  sealed trait timestamp
-    extends typings.openpgp.openpgpMod.enums.signature
+  sealed trait timestamp extends signature
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openpgp.openpgpMod.enums.signature with Double] = js.native
+  def apply(value: Double): js.UndefOr[signature with Double] = js.native
   /* 0 */ @js.native
   object binary extends TopLevel[binary with Double]
   
@@ -223,8 +194,7 @@ object signature extends js.Object {
   object cert_revocation extends TopLevel[cert_revocation with Double]
   
   /* 31 */ @js.native
-  object key
-    extends TopLevel[typings.openpgp.openpgpMod.enums.signature.key with Double]
+  object key extends TopLevel[key with Double]
   
   /* 25 */ @js.native
   object key_binding extends TopLevel[key_binding with Double]

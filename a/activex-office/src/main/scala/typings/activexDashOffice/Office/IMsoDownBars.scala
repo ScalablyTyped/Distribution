@@ -14,7 +14,8 @@ class IMsoDownBars protected () extends js.Object {
   val Format: IMsoChartFormat = js.native
   val Interior: IMsoInterior = js.native
   val Name: String = js.native
-  var `Office.IMsoDownBars_typekey`: IMsoDownBars = js.native
+  @JSName("Office.IMsoDownBars_typekey")
+  var OfficeDotIMsoDownBars_typekey: IMsoDownBars = js.native
   val Parent: js.Any = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native

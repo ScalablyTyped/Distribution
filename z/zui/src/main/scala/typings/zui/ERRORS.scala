@@ -1,17 +1,6 @@
 package typings.zui
 
 import org.scalablytyped.runtime.TopLevel
-import typings.zui.ERRORS.FILE_DUPLICATE_ERROR
-import typings.zui.ERRORS.FILE_EXTENSION_ERROR
-import typings.zui.ERRORS.FILE_SIZE_ERROR
-import typings.zui.ERRORS.GENERIC_ERROR
-import typings.zui.ERRORS.HTTP_ERROR
-import typings.zui.ERRORS.IMAGE_DIMENSIONS_ERROR
-import typings.zui.ERRORS.IMAGE_FORMAT_ERROR
-import typings.zui.ERRORS.IMAGE_MEMORY_ERROR
-import typings.zui.ERRORS.INIT_ERROR
-import typings.zui.ERRORS.IO_ERROR
-import typings.zui.ERRORS.SECURITY_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.none
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaOaep
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaPkcs1V15
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaPss
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

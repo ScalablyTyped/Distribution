@@ -8,7 +8,7 @@ import typings.stripe.stripeMod.issuing.authorizations.MerchantData
 import typings.stripe.stripeMod.issuing.cardholders.ICardholder
 import typings.stripe.stripeMod.issuing.cards.IIssuingCard
 import typings.stripe.stripeMod.issuing.disputes.IIssuingDispute
-import typings.stripe.stripeStrings.issuingDOTtransaction
+import typings.stripe.stripeStrings.issuingDottransaction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,7 +58,7 @@ trait ITransaction extends IResourceObject {
     * String representing the object’s type. Objects of the same type share the same value.
     */
   @JSName("object")
-  var object_ITransaction: issuingDOTtransaction
+  var object_ITransaction: issuingDottransaction
   /**
     * One of capture, refund, cash_withdrawal, refund_reversal, dispute, or dispute_loss.
     */
@@ -82,7 +82,7 @@ object ITransaction {
     merchant_currency: String,
     merchant_data: MerchantData,
     metadata: IMetadata,
-    `object`: issuingDOTtransaction,
+    `object`: issuingDottransaction,
     `type`: TransactionType
   ): ITransaction = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], authorization = authorization.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], card = card.asInstanceOf[js.Any], cardholder = cardholder.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], dispute = dispute.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], merchant_amount = merchant_amount.asInstanceOf[js.Any], merchant_currency = merchant_currency.asInstanceOf[js.Any], merchant_data = merchant_data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])

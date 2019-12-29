@@ -1,8 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.FrameAttribute.Anchors
-import typings.expo.buildARMod.FrameAttribute.RawFeaturePoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

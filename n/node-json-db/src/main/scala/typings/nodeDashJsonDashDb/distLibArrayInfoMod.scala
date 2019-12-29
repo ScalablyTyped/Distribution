@@ -1,6 +1,5 @@
 package typings.nodeDashJsonDashDb
 
-import typings.nodeDashJsonDashDb.distLibArrayInfoMod.ArrayInfo
 import typings.nodeDashJsonDashDb.distLibUtilsMod.KeyValue
 import typings.std.RegExp
 import scala.scalajs.js

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object mobxDashReactDashLiteStrings {
   @js.native
-  sealed trait `<unknown>` extends js.Object
+  sealed trait LessthansignunknownGreaterthansign extends js.Object
   
   @scala.inline
-  def `<unknown>`: `<unknown>` = "<unknown>".asInstanceOf[`<unknown>`]
+  def LessthansignunknownGreaterthansign: LessthansignunknownGreaterthansign = "<unknown>".asInstanceOf[LessthansignunknownGreaterthansign]
 }
 

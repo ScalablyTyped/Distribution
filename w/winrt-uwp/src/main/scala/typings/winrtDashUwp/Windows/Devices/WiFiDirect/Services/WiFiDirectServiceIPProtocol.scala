@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceIPProtocol.tcp
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceIPProtocol.udp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

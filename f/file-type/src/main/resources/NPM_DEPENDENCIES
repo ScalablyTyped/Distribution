@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "file-type" : "12.4.0"
+      "file-type" : "12.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "file-type" : "12.4.0"
+      "file-type" : "12.4.2"
     }
   ],
   "compile-devDependencies" : [

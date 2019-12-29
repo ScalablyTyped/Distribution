@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 trait IBooleanColumn
   extends typings.extjs.Ext.grid.column.IColumn {
   /** [Config Option] (String) */
-  var falseText: js.UndefOr[java.lang.String] = js.undefined
+  var falseText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var trueText: js.UndefOr[java.lang.String] = js.undefined
+  var trueText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var undefinedText: js.UndefOr[java.lang.String] = js.undefined
+  var undefinedText: js.UndefOr[String] = js.undefined
 }
 
 object IBooleanColumn {
   @scala.inline
   def apply(
     IColumn: typings.extjs.Ext.grid.column.IColumn = null,
-    falseText: java.lang.String = null,
-    trueText: java.lang.String = null,
-    undefinedText: java.lang.String = null
+    falseText: String = null,
+    trueText: String = null,
+    undefinedText: String = null
   ): IBooleanColumn = {
     val __obj = js.Dynamic.literal()
     if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)

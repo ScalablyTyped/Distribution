@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object codemirrorStrings {
   @js.native
-  sealed trait CodeMirrorDOTPASS extends js.Object
+  sealed trait CodeMirrorDotPASS extends js.Object
   
   @js.native
   sealed trait abort extends js.Object
@@ -528,7 +528,7 @@ object codemirrorStrings {
   sealed trait workTime extends js.Object
   
   @scala.inline
-  def CodeMirrorDOTPASS: CodeMirrorDOTPASS = "CodeMirror.PASS".asInstanceOf[CodeMirrorDOTPASS]
+  def CodeMirrorDotPASS: CodeMirrorDotPASS = "CodeMirror.PASS".asInstanceOf[CodeMirrorDotPASS]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline

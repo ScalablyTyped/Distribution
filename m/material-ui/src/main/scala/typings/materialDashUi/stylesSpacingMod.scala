@@ -1,6 +1,5 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.stylesSpacingMod.Spacing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

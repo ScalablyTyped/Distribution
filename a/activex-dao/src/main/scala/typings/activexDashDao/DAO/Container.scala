@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Container protected () extends js.Object {
   val AllPermissions: Double = js.native
-  var `DAO.Container_typekey`: Container = js.native
+  @JSName("DAO.Container_typekey")
+  var DAODotContainer_typekey: Container = js.native
   @JSName("Documents")
   val Documents_Original: Documents = js.native
   var Inherit: Boolean = js.native

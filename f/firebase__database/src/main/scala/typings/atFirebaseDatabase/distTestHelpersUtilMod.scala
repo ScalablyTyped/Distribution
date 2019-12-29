@@ -1,8 +1,8 @@
 package typings.atFirebaseDatabase
 
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
-import typings.atFirebaseDatabase.atFirebaseDatabaseMod.Query
-import typings.atFirebaseDatabase.atFirebaseDatabaseMod.Reference
+import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
+import typings.atFirebaseDatabase.distSrcApiReferenceMod.Reference
 import typings.atFirebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,12 +28,10 @@ object distTestHelpersUtilMod extends js.Object {
   def getRootNode(i: Double, ref: String): js.Any = js.native
   def getSnap(path: js.Any): js.Any = js.native
   def getVal(path: js.Any): js.Any = js.native
-  def patchFakeAuthFunctions(app: js.Any): js.Any = js.native
   def pause(milliseconds: Double): js.Promise[_] = js.native
   def repoInfoForConnectionTest(): RepoInfo = js.native
   def shuffle(arr: js.Any): Unit = js.native
   def shuffle(arr: js.Any, randFn: js.Function0[Double]): Unit = js.native
-  def testAuthTokenProvider(app: js.Any): Anon_SetNextToken = js.native
   def testRepoInfo(url: js.Any): RepoInfo = js.native
 }
 

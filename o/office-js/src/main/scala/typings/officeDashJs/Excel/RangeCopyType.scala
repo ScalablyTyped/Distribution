@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.RangeCopyType.all
-import typings.officeDashJs.Excel.RangeCopyType.formats
-import typings.officeDashJs.Excel.RangeCopyType.formulas
-import typings.officeDashJs.Excel.RangeCopyType.values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

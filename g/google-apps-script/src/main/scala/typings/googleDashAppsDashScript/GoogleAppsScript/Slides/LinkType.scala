@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LinkType.SLIDE_ID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LinkType.SLIDE_INDEX
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LinkType.SLIDE_POSITION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LinkType.UNSUPPORTED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LinkType.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

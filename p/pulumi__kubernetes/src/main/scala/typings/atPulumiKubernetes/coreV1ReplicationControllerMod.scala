@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1ReplicationControllerMod.ReplicationController
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ReplicationControllerSpec
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ReplicationControllerStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta

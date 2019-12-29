@@ -9,8 +9,8 @@ import typings.semanticDashUiDashApi.SemanticUI.Api.ErrorSettings
 import typings.semanticDashUiDashApi.SemanticUI.Api.MetadataSettings
 import typings.semanticDashUiDashApi.SemanticUI.Api.RegExpSettings
 import typings.semanticDashUiDashApi.SemanticUI.Api.SelectorSettings
-import typings.semanticDashUiDashApi.semanticDashUiDashApiNumbers.`false`
-import typings.semanticDashUiDashApi.semanticDashUiDashApiNumbers.`true`
+import typings.semanticDashUiDashApi.semanticDashUiDashApiBooleans.`false`
+import typings.semanticDashUiDashApi.semanticDashUiDashApiBooleans.`true`
 import typings.semanticDashUiDashApi.semanticDashUiDashApiStrings.auto
 import typings.semanticDashUiDashApi.semanticDashUiDashApiStrings.delete
 import typings.semanticDashUiDashApi.semanticDashUiDashApiStrings.get

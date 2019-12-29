@@ -1,6 +1,5 @@
 package typings.wonderDotJs
 
-import typings.wonderDotJs.distEs2015ComponentTransformThreeDTransformMod.ThreeDTransform
 import typings.wonderDotJs.distEs2015ComponentTransformTransformMod.Transform
 import typings.wonderDotJs.distEs2015MathMatrix3Mod.Matrix3
 import typings.wonderDotJs.distEs2015MathMatrix4Mod.Matrix4

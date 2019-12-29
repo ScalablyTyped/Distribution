@@ -16,13 +16,168 @@ import typings.fundamentalDashReact.libImageImageMod.imageSize
 import typings.fundamentalDashReact.libInlineHelpInlineHelpMod.InlineHelpPlacement
 import typings.fundamentalDashReact.libInputGroupInputGroupMod.InputGroupAddonPosition
 import typings.fundamentalDashReact.libInputGroupInputGroupMod.InputGroupTypes
+import typings.fundamentalDashReact.libPopoverPopoverMod.PopoverTypes
 import typings.fundamentalDashReact.libPopoverPopoverMod.PopperPlacement
+import typings.fundamentalDashReact.libPopoverPopoverMod.PopperSizingTypes
 import typings.fundamentalDashReact.libToggleToggleMod.ToggleSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object fundamentalDashReactStrings {
+  @js.native
+  sealed trait ActionBar extends js.Object
+  
+  @js.native
+  sealed trait ActionBarDotActions extends js.Object
+  
+  @js.native
+  sealed trait ActionBarDotBack extends js.Object
+  
+  @js.native
+  sealed trait ActionBarDotHeader extends js.Object
+  
+  @js.native
+  sealed trait Alert extends js.Object
+  
+  @js.native
+  sealed trait Breadcrumb extends js.Object
+  
+  @js.native
+  sealed trait BreadcrumbDotItem extends js.Object
+  
+  @js.native
+  sealed trait Button extends js.Object
+  
+  @js.native
+  sealed trait ButtonGroup extends js.Object
+  
+  @js.native
+  sealed trait InputGroup extends js.Object
+  
+  @js.native
+  sealed trait InputGroupDotAddon extends js.Object
+  
+  @js.native
+  sealed trait LayoutGridProps extends js.Object
+  
+  @js.native
+  sealed trait Link extends js.Object
+  
+  @js.native
+  sealed trait ListGroup extends js.Object
+  
+  @js.native
+  sealed trait ListGroupDotItem extends js.Object
+  
+  @js.native
+  sealed trait ListGroupDotItemActions extends js.Object
+  
+  @js.native
+  sealed trait ListGroupDotItemCheckbox extends js.Object
+  
+  @js.native
+  sealed trait LocalizationEditor extends js.Object
+  
+  @js.native
+  sealed trait Menu extends js.Object
+  
+  @js.native
+  sealed trait MenuDotGroup extends js.Object
+  
+  @js.native
+  sealed trait MenuDotItem extends js.Object
+  
+  @js.native
+  sealed trait MenuDotList extends js.Object
+  
+  @js.native
+  sealed trait Panel extends js.Object
+  
+  @js.native
+  sealed trait PanelDotActions extends js.Object
+  
+  @js.native
+  sealed trait PanelDotBody extends js.Object
+  
+  @js.native
+  sealed trait PanelDotFilters extends js.Object
+  
+  @js.native
+  sealed trait PanelDotFooter extends js.Object
+  
+  @js.native
+  sealed trait PanelDotHead extends js.Object
+  
+  @js.native
+  sealed trait PanelDotHeader extends js.Object
+  
+  @js.native
+  sealed trait SearchInput extends js.Object
+  
+  @js.native
+  sealed trait Shellbar extends js.Object
+  
+  @js.native
+  sealed trait SideNav extends js.Object
+  
+  @js.native
+  sealed trait SideNavDotList extends js.Object
+  
+  @js.native
+  sealed trait SideNavDotListItem extends js.Object
+  
+  @js.native
+  sealed trait Tab extends js.Object
+  
+  @js.native
+  sealed trait TabGroup extends js.Object
+  
+  @js.native
+  sealed trait Table extends js.Object
+  
+  @js.native
+  sealed trait Tile extends js.Object
+  
+  @js.native
+  sealed trait TileDotActions extends js.Object
+  
+  @js.native
+  sealed trait TileDotContent extends js.Object
+  
+  @js.native
+  sealed trait TileDotMedia extends js.Object
+  
+  @js.native
+  sealed trait Time extends js.Object
+  
+  @js.native
+  sealed trait TimePicker extends js.Object
+  
+  @js.native
+  sealed trait Toggl extends js.Object
+  
+  @js.native
+  sealed trait TreeView extends js.Object
+  
+  @js.native
+  sealed trait TreeViewDotBranch extends js.Object
+  
+  @js.native
+  sealed trait TreeViewDotCol extends js.Object
+  
+  @js.native
+  sealed trait TreeViewDotHead extends js.Object
+  
+  @js.native
+  sealed trait TreeViewDotItem extends js.Object
+  
+  @js.native
+  sealed trait TreeViewDotRow extends js.Object
+  
+  @js.native
+  sealed trait TreeViewDotTree extends js.Object
+  
   @js.native
   sealed trait after extends InputGroupAddonPosition
   
@@ -57,10 +212,16 @@ object fundamentalDashReactStrings {
   sealed trait busy extends StatusType
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button_ extends js.Object
   
   @js.native
   sealed trait circle extends IdentifierModifiers
+  
+  @js.native
+  sealed trait className extends js.Object
+  
+  @js.native
+  sealed trait dialog extends PopoverTypes
   
   @js.native
   sealed trait emphasized extends ButtonOptions
@@ -75,6 +236,9 @@ object fundamentalDashReactStrings {
   
   @js.native
   sealed trait filled extends BadgeModifiers
+  
+  @js.native
+  sealed trait grid extends PopoverTypes
   
   @js.native
   sealed trait help extends FormMessageType
@@ -107,6 +271,9 @@ object fundamentalDashReactStrings {
   sealed trait light extends ButtonOptions
   
   @js.native
+  sealed trait listbox extends PopoverTypes
+  
+  @js.native
   sealed trait m
     extends IconSize
        with IdentifierSizes
@@ -114,10 +281,25 @@ object fundamentalDashReactStrings {
        with imageSize
   
   @js.native
+  sealed trait matchTarget extends PopperSizingTypes
+  
+  @js.native
+  sealed trait maxTarget extends PopperSizingTypes
+  
+  @js.native
   sealed trait medium extends ButtonTypes
   
   @js.native
+  sealed trait menu_ extends PopoverTypes
+  
+  @js.native
+  sealed trait minTarget extends PopperSizingTypes
+  
+  @js.native
   sealed trait negative extends ButtonTypes
+  
+  @js.native
+  sealed trait none extends PopperSizingTypes
   
   @js.native
   sealed trait normal extends InputType
@@ -187,6 +369,9 @@ object fundamentalDashReactStrings {
   sealed trait transparent extends IdentifierModifiers
   
   @js.native
+  sealed trait tree extends PopoverTypes
+  
+  @js.native
   sealed trait valid extends InputType
   
   @js.native
@@ -215,6 +400,108 @@ object fundamentalDashReactStrings {
   sealed trait xxs extends IdentifierSizes
   
   @scala.inline
+  def ActionBar: ActionBar = "ActionBar".asInstanceOf[ActionBar]
+  @scala.inline
+  def ActionBarDotActions: ActionBarDotActions = "ActionBar.Actions".asInstanceOf[ActionBarDotActions]
+  @scala.inline
+  def ActionBarDotBack: ActionBarDotBack = "ActionBar.Back".asInstanceOf[ActionBarDotBack]
+  @scala.inline
+  def ActionBarDotHeader: ActionBarDotHeader = "ActionBar.Header".asInstanceOf[ActionBarDotHeader]
+  @scala.inline
+  def Alert: Alert = "Alert".asInstanceOf[Alert]
+  @scala.inline
+  def Breadcrumb: Breadcrumb = "Breadcrumb".asInstanceOf[Breadcrumb]
+  @scala.inline
+  def BreadcrumbDotItem: BreadcrumbDotItem = "Breadcrumb.Item".asInstanceOf[BreadcrumbDotItem]
+  @scala.inline
+  def Button: Button = "Button".asInstanceOf[Button]
+  @scala.inline
+  def ButtonGroup: ButtonGroup = "ButtonGroup".asInstanceOf[ButtonGroup]
+  @scala.inline
+  def InputGroup: InputGroup = "InputGroup".asInstanceOf[InputGroup]
+  @scala.inline
+  def InputGroupDotAddon: InputGroupDotAddon = "InputGroup.Addon".asInstanceOf[InputGroupDotAddon]
+  @scala.inline
+  def LayoutGridProps: LayoutGridProps = "LayoutGridProps".asInstanceOf[LayoutGridProps]
+  @scala.inline
+  def Link: Link = "Link".asInstanceOf[Link]
+  @scala.inline
+  def ListGroup: ListGroup = "ListGroup".asInstanceOf[ListGroup]
+  @scala.inline
+  def ListGroupDotItem: ListGroupDotItem = "ListGroup.Item".asInstanceOf[ListGroupDotItem]
+  @scala.inline
+  def ListGroupDotItemActions: ListGroupDotItemActions = "ListGroup.ItemActions".asInstanceOf[ListGroupDotItemActions]
+  @scala.inline
+  def ListGroupDotItemCheckbox: ListGroupDotItemCheckbox = "ListGroup.ItemCheckbox".asInstanceOf[ListGroupDotItemCheckbox]
+  @scala.inline
+  def LocalizationEditor: LocalizationEditor = "LocalizationEditor".asInstanceOf[LocalizationEditor]
+  @scala.inline
+  def Menu: Menu = "Menu".asInstanceOf[Menu]
+  @scala.inline
+  def MenuDotGroup: MenuDotGroup = "Menu.Group".asInstanceOf[MenuDotGroup]
+  @scala.inline
+  def MenuDotItem: MenuDotItem = "Menu.Item".asInstanceOf[MenuDotItem]
+  @scala.inline
+  def MenuDotList: MenuDotList = "Menu.List".asInstanceOf[MenuDotList]
+  @scala.inline
+  def Panel: Panel = "Panel".asInstanceOf[Panel]
+  @scala.inline
+  def PanelDotActions: PanelDotActions = "Panel.Actions".asInstanceOf[PanelDotActions]
+  @scala.inline
+  def PanelDotBody: PanelDotBody = "Panel.Body".asInstanceOf[PanelDotBody]
+  @scala.inline
+  def PanelDotFilters: PanelDotFilters = "Panel.Filters".asInstanceOf[PanelDotFilters]
+  @scala.inline
+  def PanelDotFooter: PanelDotFooter = "Panel.Footer".asInstanceOf[PanelDotFooter]
+  @scala.inline
+  def PanelDotHead: PanelDotHead = "Panel.Head".asInstanceOf[PanelDotHead]
+  @scala.inline
+  def PanelDotHeader: PanelDotHeader = "Panel.Header".asInstanceOf[PanelDotHeader]
+  @scala.inline
+  def SearchInput: SearchInput = "SearchInput".asInstanceOf[SearchInput]
+  @scala.inline
+  def Shellbar: Shellbar = "Shellbar".asInstanceOf[Shellbar]
+  @scala.inline
+  def SideNav: SideNav = "SideNav".asInstanceOf[SideNav]
+  @scala.inline
+  def SideNavDotList: SideNavDotList = "SideNav.List".asInstanceOf[SideNavDotList]
+  @scala.inline
+  def SideNavDotListItem: SideNavDotListItem = "SideNav.ListItem".asInstanceOf[SideNavDotListItem]
+  @scala.inline
+  def Tab: Tab = "Tab".asInstanceOf[Tab]
+  @scala.inline
+  def TabGroup: TabGroup = "TabGroup".asInstanceOf[TabGroup]
+  @scala.inline
+  def Table: Table = "Table".asInstanceOf[Table]
+  @scala.inline
+  def Tile: Tile = "Tile".asInstanceOf[Tile]
+  @scala.inline
+  def TileDotActions: TileDotActions = "Tile.Actions".asInstanceOf[TileDotActions]
+  @scala.inline
+  def TileDotContent: TileDotContent = "Tile.Content".asInstanceOf[TileDotContent]
+  @scala.inline
+  def TileDotMedia: TileDotMedia = "Tile.Media".asInstanceOf[TileDotMedia]
+  @scala.inline
+  def Time: Time = "Time".asInstanceOf[Time]
+  @scala.inline
+  def TimePicker: TimePicker = "TimePicker".asInstanceOf[TimePicker]
+  @scala.inline
+  def Toggl: Toggl = "Toggl".asInstanceOf[Toggl]
+  @scala.inline
+  def TreeView: TreeView = "TreeView".asInstanceOf[TreeView]
+  @scala.inline
+  def TreeViewDotBranch: TreeViewDotBranch = "TreeView.Branch".asInstanceOf[TreeViewDotBranch]
+  @scala.inline
+  def TreeViewDotCol: TreeViewDotCol = "TreeView.Col".asInstanceOf[TreeViewDotCol]
+  @scala.inline
+  def TreeViewDotHead: TreeViewDotHead = "TreeView.Head".asInstanceOf[TreeViewDotHead]
+  @scala.inline
+  def TreeViewDotItem: TreeViewDotItem = "TreeView.Item".asInstanceOf[TreeViewDotItem]
+  @scala.inline
+  def TreeViewDotRow: TreeViewDotRow = "TreeView.Row".asInstanceOf[TreeViewDotRow]
+  @scala.inline
+  def TreeViewDotTree: TreeViewDotTree = "TreeView.Tree".asInstanceOf[TreeViewDotTree]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
   def available: available = "available".asInstanceOf[available]
@@ -237,15 +524,21 @@ object fundamentalDashReactStrings {
   @scala.inline
   def busy: busy = "busy".asInstanceOf[busy]
   @scala.inline
-  def button: button = "button".asInstanceOf[button]
+  def button_ : button_ = "button".asInstanceOf[button_]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
+  @scala.inline
+  def className: className = "className".asInstanceOf[className]
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
   def emphasized: emphasized = "emphasized".asInstanceOf[emphasized]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def filled: filled = "filled".asInstanceOf[filled]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def help: help = "help".asInstanceOf[help]
   @scala.inline
@@ -263,11 +556,23 @@ object fundamentalDashReactStrings {
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   @scala.inline
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
   def m: m = "m".asInstanceOf[m]
+  @scala.inline
+  def matchTarget: matchTarget = "matchTarget".asInstanceOf[matchTarget]
+  @scala.inline
+  def maxTarget: maxTarget = "maxTarget".asInstanceOf[maxTarget]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
+  def menu_ : menu_ = "menu".asInstanceOf[menu_]
+  @scala.inline
+  def minTarget: minTarget = "minTarget".asInstanceOf[minTarget]
+  @scala.inline
   def negative: negative = "negative".asInstanceOf[negative]
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
@@ -306,6 +611,8 @@ object fundamentalDashReactStrings {
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
   @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
+  @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
   @scala.inline

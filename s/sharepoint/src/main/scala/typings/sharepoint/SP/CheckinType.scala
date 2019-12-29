@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.CheckinType.majorCheckIn
-import typings.sharepoint.SP.CheckinType.minorCheckIn
-import typings.sharepoint.SP.CheckinType.overwriteCheckIn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

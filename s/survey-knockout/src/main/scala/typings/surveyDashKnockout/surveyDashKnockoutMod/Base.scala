@@ -55,6 +55,7 @@ class Base () extends js.Object {
   def isValueEmpty(value: js.Any): Boolean = js.native
   def iteratePropertiesHash(func: js.Function2[/* hash */ js.Any, /* key */ js.Any, Unit]): Unit = js.native
   def locStrsChanged(): Unit = js.native
+  def onPropertyValueChangedCallback(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
   /**
     * Register a function that will be called on a property value changed from the names list.

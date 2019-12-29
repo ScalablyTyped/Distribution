@@ -20,7 +20,8 @@ class TimelineView protected () extends js.Object {
   val LowerScaleFont: ViewFont = js.native
   var MaxLabelWidth: Double = js.native
   var Name: String = js.native
-  var `Outlook.TimelineView_typekey`: TimelineView = js.native
+  @JSName("Outlook.TimelineView_typekey")
+  var OutlookDotTimelineView_typekey: TimelineView = js.native
   val Parent: js.Any = js.native
   val SaveOption: OlViewSaveOption = js.native
   val Session: NameSpace = js.native

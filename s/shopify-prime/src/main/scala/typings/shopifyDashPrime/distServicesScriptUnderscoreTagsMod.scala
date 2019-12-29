@@ -6,7 +6,6 @@ import typings.shopifyDashPrime.distOptionsBaseMod.DateOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.FieldOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.ListOptions
 import typings.shopifyDashPrime.distOptionsScriptUnderscoreTagsMod.ScriptTagOptions
-import typings.shopifyDashPrime.distServicesScriptUnderscoreTagsMod.ScriptTags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

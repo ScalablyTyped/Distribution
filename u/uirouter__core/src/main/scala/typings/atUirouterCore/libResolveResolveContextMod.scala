@@ -5,7 +5,6 @@ import typings.atUirouterCore.libPathPathNodeMod.PathNode
 import typings.atUirouterCore.libResolveInterfaceMod.PolicyWhen
 import typings.atUirouterCore.libResolveInterfaceMod.ResolvePolicy
 import typings.atUirouterCore.libResolveResolvableMod.Resolvable
-import typings.atUirouterCore.libResolveResolveContextMod.ResolveContext
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
 import typings.atUirouterCore.libTransitionTransitionMod.Transition
 import scala.scalajs.js

@@ -1,8 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ReferenceFrame.FIXED
-import typings.cesium.cesiumMod.ReferenceFrame.INERTIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

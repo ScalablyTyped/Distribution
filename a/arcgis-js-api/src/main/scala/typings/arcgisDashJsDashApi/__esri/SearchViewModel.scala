@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-clear`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-complete`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-start`
@@ -281,11 +280,11 @@ trait SearchViewModel
     * @param searchTerm This searchTerm can be a string, geometry, suggest candidate object, or an array of [latitude,longitude]. If a geometry is supplied, then it will reverse geocode (locator) or findAddressCandidates with geometry instead of text (featurelayer).
     *
     */
-  def search(): IPromise[SearchViewModelSearchResponse] = js.native
-  def search(searchTerm: String): IPromise[SearchViewModelSearchResponse] = js.native
-  def search(searchTerm: js.Array[js.Array[Double]]): IPromise[SearchViewModelSearchResponse] = js.native
-  def search(searchTerm: Geometry): IPromise[SearchViewModelSearchResponse] = js.native
-  def search(searchTerm: SearchViewModelSuggestResult): IPromise[SearchViewModelSearchResponse] = js.native
+  def search(): js.Promise[SearchViewModelSearchResponse] = js.native
+  def search(searchTerm: String): js.Promise[SearchViewModelSearchResponse] = js.native
+  def search(searchTerm: js.Array[js.Array[Double]]): js.Promise[SearchViewModelSearchResponse] = js.native
+  def search(searchTerm: Geometry): js.Promise[SearchViewModelSearchResponse] = js.native
+  def search(searchTerm: SearchViewModelSuggestResult): js.Promise[SearchViewModelSearchResponse] = js.native
   /**
     * Returns search results near your current location. It checks whether [locationEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#locationEnabled) is `true`. If so, and your browser supports [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation), it will return search results nearby your current location.
     *
@@ -293,7 +292,7 @@ trait SearchViewModel
     *
     *
     */
-  def searchNearby(): IPromise[SearchViewModelSearchResponse] = js.native
+  def searchNearby(): js.Promise[SearchViewModelSearchResponse] = js.native
   /**
     * Performs a suggest() request on the active Locator. It also uses the current value of the widget or one that is passed in.  Suggestions are available if working with a 10.3 or greater geocoding service that has [suggest capability loaded](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-suggest.htm) or a 10.3 or greater feature layer that supports pagination, i.e.`supportsPagination = true`.
     *
@@ -302,8 +301,8 @@ trait SearchViewModel
     * @param value The string value used to suggest() on an active Locator or feature layer. If nothing is passed in, takes the current value of the widget.
     *
     */
-  def suggest(): IPromise[SearchViewModelSuggestResponse] = js.native
-  def suggest(value: String): IPromise[SearchViewModelSuggestResponse] = js.native
+  def suggest(): js.Promise[SearchViewModelSuggestResponse] = js.native
+  def suggest(value: String): js.Promise[SearchViewModelSuggestResponse] = js.native
 }
 
 @JSGlobal("__esri.SearchViewModel")

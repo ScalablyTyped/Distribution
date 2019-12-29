@@ -1,6 +1,5 @@
 package typings.bitcoreDashLib.bitcoreDashLibMod
 
-import typings.bitcoreDashLib.bitcoreDashLibMod.crypto.Signature
 import typings.bitcoreDashLib.bitcoreDashLibStrings.little
 import typings.node.Buffer
 import scala.scalajs.js

@@ -1,6 +1,5 @@
 package typings.bootstrapDashFileinput.bootstrapDashFileinputMod
 
-import typings.bootstrapDashFileinput.bootstrapDashFileinputMod._Global_.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

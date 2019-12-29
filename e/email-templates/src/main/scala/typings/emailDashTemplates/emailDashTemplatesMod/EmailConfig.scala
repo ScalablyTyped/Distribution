@@ -1,6 +1,6 @@
 package typings.emailDashTemplates.emailDashTemplatesMod
 
-import typings.emailDashTemplates.emailDashTemplatesNumbers.`false`
+import typings.emailDashTemplates.emailDashTemplatesBooleans.`false`
 import typings.htmlDashToDashText.HtmlToTextOptions
 import typings.nodemailer.libMailerMod.Options
 import scala.scalajs.js

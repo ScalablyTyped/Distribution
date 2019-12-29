@@ -12,7 +12,8 @@ class OutlookBarPane protected () extends js.Object {
   val Contents: OutlookBarStorage = js.native
   var CurrentGroup: OutlookBarGroup = js.native
   val Name: String = js.native
-  var `Outlook.OutlookBarPane_typekey`: OutlookBarPane = js.native
+  @JSName("Outlook.OutlookBarPane_typekey")
+  var OutlookDotOutlookBarPane_typekey: OutlookBarPane = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   var Visible: Boolean = js.native

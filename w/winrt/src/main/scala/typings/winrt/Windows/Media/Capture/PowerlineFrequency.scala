@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Capture.PowerlineFrequency.disabled
-import typings.winrt.Windows.Media.Capture.PowerlineFrequency.fiftyHertz
-import typings.winrt.Windows.Media.Capture.PowerlineFrequency.sixtyHertz
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

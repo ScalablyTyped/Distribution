@@ -55,13 +55,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.draw.Sprite The created sprite that will draw the label.
   		*/
   var onCreateLabel: js.UndefOr[
-    js.Function4[
-      js.UndefOr[IModel], 
-      js.UndefOr[js.Any], 
-      js.UndefOr[Double], 
-      js.UndefOr[java.lang.String], 
-      ISprite
-    ]
+    js.Function4[js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String], ISprite]
   ] = js.undefined
   /** [Method] Called for updating the position of the label
   		* @param label Ext.draw.Sprite The sprite that draws the label.
@@ -78,7 +72,7 @@ import scala.scalajs.js.annotation._
       js.UndefOr[IModel], 
       js.UndefOr[js.Any], 
       js.UndefOr[Double], 
-      js.UndefOr[java.lang.String], 
+      js.UndefOr[String], 
       js.UndefOr[Boolean], 
       js.UndefOr[Double], 
       Unit
@@ -91,7 +85,7 @@ import scala.scalajs.js.annotation._
   		* @param title String
   		*/
   var setTitle: js.UndefOr[
-    js.Function2[/* index */ js.UndefOr[Double], /* title */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* index */ js.UndefOr[Double], /* title */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Config Option] (Array) */
   var shadowAttributes: js.UndefOr[Array] = js.undefined
@@ -102,9 +96,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Object) */
   var tips: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   /** [Method] Un highlight any existing highlights */
   var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -125,14 +119,14 @@ object ISeries {
     config: js.Any = null,
     eachRecord: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemForPoint: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => _ = null,
     getLegendColor: /* index */ js.UndefOr[js.Any] => Unit = null,
     getRecordCount: () => Unit = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hideAll: () => Unit = null,
     highlight: js.Any = null,
@@ -148,17 +142,17 @@ object ISeries {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    onCreateLabel: (js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[java.lang.String]) => ISprite = null,
-    onPlaceLabel: (js.UndefOr[ISprite], js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[java.lang.String], js.UndefOr[Boolean], js.UndefOr[Double]) => Unit = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    onCreateLabel: (js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String]) => ISprite = null,
+    onPlaceLabel: (js.UndefOr[ISprite], js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Double]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: js.Any = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     self: IClass = null,
-    setTitle: (/* index */ js.UndefOr[Double], /* title */ js.UndefOr[java.lang.String]) => Unit = null,
+    setTitle: (/* index */ js.UndefOr[Double], /* title */ js.UndefOr[String]) => Unit = null,
     shadowAttributes: Array = null,
     showAll: () => Unit = null,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
@@ -167,9 +161,9 @@ object ISeries {
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     tips: js.Any = null,
-    title: java.lang.String = null,
-    `type`: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    title: String = null,
+    `type`: String = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     unHighlightItem: () => Unit = null,
     uses: Array = null
   ): ISeries = {

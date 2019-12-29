@@ -1,6 +1,6 @@
 package typings.tar
 
-import typings.tar.tarNumbers.`true`
+import typings.tar.tarBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemDiscoveryType.any
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemDiscoveryType.cloud
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemDiscoveryType.proximal
-import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemDiscoveryType.spatiallyProximal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

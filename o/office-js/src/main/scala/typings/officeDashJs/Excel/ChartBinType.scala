@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartBinType.auto
-import typings.officeDashJs.Excel.ChartBinType.binCount
-import typings.officeDashJs.Excel.ChartBinType.binWidth
-import typings.officeDashJs.Excel.ChartBinType.category
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

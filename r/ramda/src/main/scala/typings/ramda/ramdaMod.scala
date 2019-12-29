@@ -2,6 +2,7 @@ package typings.ramda
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.ramda.ramdaBooleans.`false`
 import typings.ramda.ramdaNumbers.`10`
 import typings.ramda.ramdaNumbers.`1`
 import typings.ramda.ramdaNumbers.`2`
@@ -12,7 +13,6 @@ import typings.ramda.ramdaNumbers.`6`
 import typings.ramda.ramdaNumbers.`7`
 import typings.ramda.ramdaNumbers.`8`
 import typings.ramda.ramdaNumbers.`9`
-import typings.ramda.ramdaNumbers.`false`
 import typings.ramda.ramdaStrings.Array
 import typings.ramda.ramdaStrings.Function
 import typings.ramda.ramdaStrings.Number
@@ -439,9 +439,9 @@ object ramdaMod extends js.Object {
     ],
     obj: T
   ): T = js.native
-  def fromPairs[V](pairs: js.Array[KeyValuePair[String, V]]): StringDictionary[V] = js.native
+  def fromPairs[V](pairs: js.Array[KeyValuePair[Double, V]]): NumberDictionary[V] = js.native
   @JSName("fromPairs")
-  def fromPairs_V_NumberDictionary[V](pairs: js.Array[KeyValuePair[Double, V]]): NumberDictionary[V] = js.native
+  def fromPairs_V_StringDictionary[V](pairs: js.Array[KeyValuePair[String, V]]): StringDictionary[V] = js.native
   def groupBy[T](fn: js.Function1[/* a */ T, String]): js.Function1[/* list */ js.Array[T], StringDictionary[js.Array[T]]] = js.native
   def groupBy[T](fn: js.Function1[/* a */ T, String], list: js.Array[T]): StringDictionary[js.Array[T]] = js.native
   def groupWith[T](fn: js.Function2[/* x */ T, /* y */ T, Boolean]): js.Function1[/* list */ js.Array[T], js.Array[js.Array[T]]] = js.native
@@ -537,10 +537,10 @@ object ramdaMod extends js.Object {
       js.Function1[/* a */ A, R5]
     ]
   ): js.Function1[/* a */ A, js.Tuple5[R1, R2, R3, R4, R5]] = js.native
-  def keys[T](x: T): js.Array[String] = js.native
+  def keys[T /* <: js.Object */](x: T): js.Array[String] = js.native
   def keysIn[T](obj: T): js.Array[String] = js.native
   @JSName("keys")
-  def keys_T_Object[T /* <: js.Object */](x: T): js.Array[String] = js.native
+  def keys_T[T](x: T): js.Array[String] = js.native
   def last(list: js.Array[js.Any]): js.UndefOr[scala.Nothing] = js.native
   def last(str: String): String = js.native
   def lastIndexOf[T](target: T, list: js.Array[T]): Double = js.native
@@ -1412,14 +1412,14 @@ object ramdaMod extends js.Object {
   def view[T, U](lens: Lens, obj: T): U = js.native
   def when[T, U](pred: js.Function1[/* a */ T, Boolean], whenTrueFn: js.Function1[/* a */ T, U]): js.Function1[/* obj */ T, U] = js.native
   def when[T, U](pred: js.Function1[/* a */ T, Boolean], whenTrueFn: js.Function1[/* a */ T, U], obj: T): U = js.native
-  def where[T](spec: T): js.Function1[/* testObj */ js.Any, Boolean] = js.native
-  def where[T, U](spec: T, testObj: U): Boolean = js.native
+  def where[ObjFunc2](spec: ObjFunc2): js.Function1[/* testObj */ js.Any, Boolean] = js.native
+  def where[ObjFunc2, U](spec: ObjFunc2, testObj: U): Boolean = js.native
   def whereEq[T](spec: T): js.Function1[/* obj */ js.Any, Boolean] = js.native
   def whereEq[T, U](spec: T, obj: U): Boolean = js.native
   @JSName("where")
-  def where_ObjFunc2[ObjFunc2](spec: ObjFunc2): js.Function1[/* testObj */ js.Any, Boolean] = js.native
+  def where_T[T](spec: T): js.Function1[/* testObj */ js.Any, Boolean] = js.native
   @JSName("where")
-  def where_ObjFunc2U[ObjFunc2, U](spec: ObjFunc2, testObj: U): Boolean = js.native
+  def where_TU[T, U](spec: T, testObj: U): Boolean = js.native
   def without[T](list1: js.Array[T]): js.Function1[/* list2 */ js.Array[T], js.Array[T]] = js.native
   def without[T](list1: js.Array[T], list2: js.Array[T]): js.Array[T] = js.native
   def xprod[K](as: js.Array[K]): js.Function1[/* bs */ js.Array[_], js.Array[KeyValuePair[K, _]]] = js.native

@@ -1,6 +1,5 @@
 package typings.serializeDashError
 
-import typings.serializeDashError.serializeDashErrorMod.ErrorObject
 import typings.std.Error
 import typings.typeDashFest.typeDashFestMod.JsonObject
 import scala.scalajs.js

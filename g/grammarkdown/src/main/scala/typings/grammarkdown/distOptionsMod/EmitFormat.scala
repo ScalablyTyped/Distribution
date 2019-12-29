@@ -1,9 +1,6 @@
 package typings.grammarkdown.distOptionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grammarkdown.distOptionsMod.EmitFormat.ecmarkup
-import typings.grammarkdown.distOptionsMod.EmitFormat.html
-import typings.grammarkdown.distOptionsMod.EmitFormat.markdown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

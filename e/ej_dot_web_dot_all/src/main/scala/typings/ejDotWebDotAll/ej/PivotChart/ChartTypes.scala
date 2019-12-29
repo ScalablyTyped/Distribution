@@ -1,23 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotChart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Area
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Bar
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Bubble
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Column
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Doughnut
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Funnel
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Line
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Pie
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Pyramid
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Scatter
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.Spline
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.SplineArea
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.StackingArea
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.StackingBar
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.StackingColumn
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.StepArea
-import typings.ejDotWebDotAll.ej.PivotChart.ChartTypes.StepLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -49,6 +49,7 @@ object libLinearListCollectionMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, List[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -56,7 +57,6 @@ object libLinearListCollectionMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -64,6 +64,7 @@ object libLinearListCollectionMod extends js.Object {
       *
       * @return Iterator to the end.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, List[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -82,9 +83,10 @@ object libLinearListCollectionMod extends js.Object {
     /* InferMemberOverrides */
     override def push(items: T*): Double = js.native
     /**
-      * @inheritDoc
+      * Insert an element at the end.
+      *
+      * @param val Value to insert.
       */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def push_back(`val`: T): Unit = js.native
     /**
@@ -127,6 +129,7 @@ object libLinearListCollectionMod extends js.Object {
     /**
       * Number of elements in the container.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
     /**
@@ -134,6 +137,7 @@ object libLinearListCollectionMod extends js.Object {
       *
       * @param obj Target container to swap.
       */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def swap(obj: List[T]): Unit = js.native
   }

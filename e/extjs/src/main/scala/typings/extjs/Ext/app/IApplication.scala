@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 
 trait IApplication extends IController {
   /** [Config Option] (String) */
-  var appFolder: js.UndefOr[java.lang.String] = js.undefined
+  var appFolder: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var appProperty: js.UndefOr[java.lang.String] = js.undefined
+  var appProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var autoCreateViewport: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String/String[]) */
@@ -35,9 +35,9 @@ trait IApplication extends IController {
   		* @param profile String The detected application profile
   		* @returns Boolean By default, the Application will dispatch to the configured startup controller and action immediately after running the launch function. Return false to prevent this behavior.
   		*/
-  var launch: js.UndefOr[js.Function1[/* profile */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var launch: js.UndefOr[js.Function1[/* profile */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/String[]) */
   var namespaces: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object) */
@@ -55,8 +55,8 @@ object IApplication {
     addRef: /* refs */ js.UndefOr[js.Any] => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    appFolder: java.lang.String = null,
-    appProperty: java.lang.String = null,
+    appFolder: String = null,
+    appProperty: String = null,
     application: IApplication = null,
     autoCreateViewport: js.UndefOr[Boolean] = js.undefined,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -69,38 +69,38 @@ object IApplication {
     controllers: js.Any = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     enableQuickTips: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getApplication: () => IApplication = null,
     getController: /* name */ js.UndefOr[js.Any] => IController = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getModel: /* name */ js.UndefOr[java.lang.String] => IModel = null,
-    getStore: /* name */ js.UndefOr[java.lang.String] => IStore = null,
-    getView: /* name */ js.UndefOr[java.lang.String] => IBase = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getModel: /* name */ js.UndefOr[String] => IModel = null,
+    getStore: /* name */ js.UndefOr[String] => IStore = null,
+    getView: /* name */ js.UndefOr[String] => IBase = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hasRef: /* ref */ js.UndefOr[js.Any] => Boolean = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     init: /* application */ js.UndefOr[IApplication] => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IApplication = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
-    launch: /* profile */ js.UndefOr[java.lang.String] => Boolean = null,
+    launch: /* profile */ js.UndefOr[String] => Boolean = null,
     listen: /* to */ js.UndefOr[js.Any] => Unit = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     models: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    name: java.lang.String = null,
+    name: String = null,
     namespaces: js.Any = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     onLaunch: /* application */ js.UndefOr[IApplication] => Unit = null,
     paths: js.Any = null,
     refs: Array = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -112,7 +112,7 @@ object IApplication {
     stores: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     views: js.Any = null
   ): IApplication = {

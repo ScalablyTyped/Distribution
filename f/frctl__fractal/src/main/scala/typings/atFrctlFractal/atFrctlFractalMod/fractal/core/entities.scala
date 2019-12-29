@@ -1,11 +1,10 @@
 package typings.atFrctlFractal.atFrctlFractalMod.fractal.core
 
 import typings.atFrctlFractal.Anon_App
+import typings.atFrctlFractal.atFrctlFractalBooleans.`true`
 import typings.atFrctlFractal.atFrctlFractalMod.Adapter
-import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.Entity
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Collection
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Source
-import typings.atFrctlFractal.atFrctlFractalNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

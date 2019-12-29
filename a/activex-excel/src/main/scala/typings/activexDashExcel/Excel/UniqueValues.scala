@@ -15,7 +15,8 @@ class UniqueValues protected () extends js.Object {
   val Borders_Original: Borders = js.native
   val Creator: XlCreator = js.native
   var DupeUnique: XlDupeUnique = js.native
-  var `Excel.UniqueValues_typekey`: UniqueValues = js.native
+  @JSName("Excel.UniqueValues_typekey")
+  var ExcelDotUniqueValues_typekey: UniqueValues = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Interior: typings.activexDashExcel.Excel.Interior = js.native
   var NumberFormat: String = js.native

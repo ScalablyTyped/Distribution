@@ -1,9 +1,9 @@
 package typings.yaml.yamlMod
 
+import typings.yaml.yamlBooleans.`true`
 import typings.yaml.yamlMod.ast.MapBase
 import typings.yaml.yamlMod.ast.Scalar
 import typings.yaml.yamlMod.ast.SeqBase
-import typings.yaml.yamlNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

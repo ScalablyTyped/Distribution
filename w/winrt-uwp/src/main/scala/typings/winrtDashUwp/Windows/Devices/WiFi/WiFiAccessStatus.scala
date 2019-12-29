@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiAccessStatus.allowed
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiAccessStatus.deniedBySystem
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiAccessStatus.deniedByUser
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,7 +8,7 @@ package object libInterfaceMod {
   import typings.rcDashMenu.Anon_DomEventKey
   import typings.rcDashMenu.Anon_Hover
   import typings.rcDashMenu.Anon_Item
-  import typings.rcDashMenu.rcDashMenuNumbers.`false`
+  import typings.rcDashMenu.rcDashMenuBooleans.`false`
   import typings.react.reactMod.AnimationEvent
   import typings.react.reactMod.CSSProperties
   import typings.react.reactMod.Key

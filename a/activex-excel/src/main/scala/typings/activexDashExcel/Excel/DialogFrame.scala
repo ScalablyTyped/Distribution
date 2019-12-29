@@ -10,7 +10,8 @@ class DialogFrame protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   var Caption: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.DialogFrame_typekey`: DialogFrame = js.native
+  @JSName("Excel.DialogFrame_typekey")
+  var ExcelDotDialogFrame_typekey: DialogFrame = js.native
   var Height: Double = js.native
   var Left: Double = js.native
   var Locked: Boolean = js.native

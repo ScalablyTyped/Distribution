@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSForms.DataObject")
 @js.native
 class DataObject protected () extends js.Object {
-  var `MSForms.DataObject_typekey`: DataObject = js.native
+  @JSName("MSForms.DataObject_typekey")
+  var MSFormsDotDataObject_typekey: DataObject = js.native
   def Clear(): Unit = js.native
   def GetFormat(Format: js.Any): Boolean = js.native
   def GetFromClipboard(): Unit = js.native

@@ -56,7 +56,9 @@ trait TimeSliderViewModelProperties extends js.Object {
     * To define regularly spaced stops, parse an object with interval and timeExtent properties
     * with types TimeInterval and TimeExtent respectively. The timeExtent property is optional
     * and used to confine stops to a certain date range. This property is useful to
-    * commence stops on a spcific day or the week or month.
+    * commence stops on a specific day or the week or month.
+    * If a stop definition by interval results in excess of 10,000 stops then the view model
+    * will default to ten evenly spaced stops.
     * ```js
     * { interval: TimeInterval, timeExtent: TimeExtent }
     * ```

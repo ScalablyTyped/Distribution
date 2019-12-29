@@ -13,7 +13,7 @@ trait ResizeStopEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** Instance of the dialog model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Dialog.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object ResizeStopEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Dialog.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ResizeStopEventArgs = {
     val __obj = js.Dynamic.literal()

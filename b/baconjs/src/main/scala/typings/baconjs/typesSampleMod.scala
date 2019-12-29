@@ -3,7 +3,6 @@ package typings.baconjs
 import typings.baconjs.typesObservableMod.EventStream
 import typings.baconjs.typesObservableMod.Property
 import typings.baconjs.typesObservableMod.default
-import typings.baconjs.typesSampleMod.Combinator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

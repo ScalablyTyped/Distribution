@@ -3,6 +3,7 @@ package typings.hapi.hapiMod
 import typings.hapi.Anon_Artifacts
 import typings.node.Buffer
 import typings.node.streamMod.Stream
+import typings.shot.Anon_Close
 import typings.shot.shotMod.Headers
 import typings.shot.shotMod.RequestOptions
 import scala.scalajs.js
@@ -41,7 +42,7 @@ object ServerInjectOptions {
     payload: String | Buffer | Stream | js.Object = null,
     plugins: PluginsStates = null,
     remoteAddress: String = null,
-    simulate: typings.shot.Anon_Close = null,
+    simulate: Anon_Close = null,
     validate: js.UndefOr[Boolean] = js.undefined
   ): ServerInjectOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])

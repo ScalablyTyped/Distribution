@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.eventType.click
-import typings.ejDotWebDotAll.ej.eventType.mouseDown
-import typings.ejDotWebDotAll.ej.eventType.mouseLeave
-import typings.ejDotWebDotAll.ej.eventType.mouseMove
-import typings.ejDotWebDotAll.ej.eventType.mouseUp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.ExportingMode.ClientSide
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.ExportingMode.ServerSide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

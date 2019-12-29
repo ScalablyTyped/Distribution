@@ -1,10 +1,6 @@
 package typings.microrouter
 
 import typings.micro.microMod.RequestHandler
-import typings.microrouter.microrouterMod.AugmentedRequestHandler
-import typings.microrouter.microrouterMod.RouteHandler
-import typings.microrouter.microrouterMod.ServerRequest
-import typings.microrouter.microrouterMod.ServerResponse
 import typings.node.httpMod.IncomingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`

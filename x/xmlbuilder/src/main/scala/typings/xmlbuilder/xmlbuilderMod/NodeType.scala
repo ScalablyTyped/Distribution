@@ -1,22 +1,6 @@
 package typings.xmlbuilder.xmlbuilderMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xmlbuilder.xmlbuilderMod.NodeType.Attribute
-import typings.xmlbuilder.xmlbuilderMod.NodeType.AttributeDeclaration
-import typings.xmlbuilder.xmlbuilderMod.NodeType.CData
-import typings.xmlbuilder.xmlbuilderMod.NodeType.Comment
-import typings.xmlbuilder.xmlbuilderMod.NodeType.Declaration
-import typings.xmlbuilder.xmlbuilderMod.NodeType.DocType
-import typings.xmlbuilder.xmlbuilderMod.NodeType.Document
-import typings.xmlbuilder.xmlbuilderMod.NodeType.DocumentFragment
-import typings.xmlbuilder.xmlbuilderMod.NodeType.Element
-import typings.xmlbuilder.xmlbuilderMod.NodeType.ElementDeclaration
-import typings.xmlbuilder.xmlbuilderMod.NodeType.EntityDeclaration
-import typings.xmlbuilder.xmlbuilderMod.NodeType.EntityReference
-import typings.xmlbuilder.xmlbuilderMod.NodeType.NotationDeclaration
-import typings.xmlbuilder.xmlbuilderMod.NodeType.ProcessingInstruction
-import typings.xmlbuilder.xmlbuilderMod.NodeType.Raw
-import typings.xmlbuilder.xmlbuilderMod.NodeType.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

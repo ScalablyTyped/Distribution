@@ -1,10 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.BlendMode.Additive
-import typings.phaser.spine.BlendMode.Multiply
-import typings.phaser.spine.BlendMode.Normal
-import typings.phaser.spine.BlendMode.Screen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

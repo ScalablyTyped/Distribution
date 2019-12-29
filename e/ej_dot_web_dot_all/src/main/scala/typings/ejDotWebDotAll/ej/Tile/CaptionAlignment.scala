@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tile.CaptionAlignment.Center
-import typings.ejDotWebDotAll.ej.Tile.CaptionAlignment.Left
-import typings.ejDotWebDotAll.ej.Tile.CaptionAlignment.Normal
-import typings.ejDotWebDotAll.ej.Tile.CaptionAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

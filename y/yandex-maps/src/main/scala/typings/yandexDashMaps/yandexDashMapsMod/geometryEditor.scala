@@ -1,14 +1,9 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
-import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.model.ChildLineString
-import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.model.ChildLinearRing
-import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.model.ChildVertex
-import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.model.Edge
 import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.model.RootLineString
 import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.model.RootPolygon
 import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.view.MultiPath
 import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.view.Path
-import typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.view.Vertex
 import typings.yandexDashMaps.yandexDashMapsMod.vow.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -230,7 +225,7 @@ object geometryEditor extends js.Object {
     @js.native
     class Path () extends js.Object {
       def getEdgePlacemarks(): GeoObjectCollection = js.native
-      def getEdgeViews(): js.Array[typings.yandexDashMaps.yandexDashMapsMod.geometryEditor.view.Edge] = js.native
+      def getEdgeViews(): js.Array[Edge] = js.native
       def getVertexPlacemarks(): GeoObjectCollection = js.native
       def getVertexViews(): js.Array[Vertex] = js.native
     }

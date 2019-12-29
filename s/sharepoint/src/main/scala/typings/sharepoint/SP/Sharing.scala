@@ -1,13 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Sharing.Role
-import typings.sharepoint.SP.Sharing.Role.edit
-import typings.sharepoint.SP.Sharing.Role.none
-import typings.sharepoint.SP.Sharing.Role.owner
-import typings.sharepoint.SP.Sharing.Role.view
-import typings.sharepoint.SP.Sharing.UserRoleAssignment
-import typings.sharepoint.SP.Sharing.UserSharingResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,18 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
 import typings.openui5.sap.ui.base.Object
-import typings.openui5.sap.ui.core.format.DateFormat
-import typings.openui5.sap.ui.core.format.FileSizeFormat
-import typings.openui5.sap.ui.core.format.NumberFormat
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.AWAY_FROM_ZERO
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.CEILING
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.FLOOR
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_AWAY_FROM_ZERO
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_CEILING
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_FLOOR
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.HALF_TOWARDS_ZERO
-import typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode.TOWARDS_ZERO
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

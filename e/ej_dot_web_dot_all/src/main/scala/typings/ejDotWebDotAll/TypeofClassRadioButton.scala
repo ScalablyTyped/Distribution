@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassRadioButton
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, RadioButton]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), RadioButton] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), RadioButton]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, RadioButton] {
   var Locale: js.Any = js.native
   var fn: RadioButton = js.native
 }

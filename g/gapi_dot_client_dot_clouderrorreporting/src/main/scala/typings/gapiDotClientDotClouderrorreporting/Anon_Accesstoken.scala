@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -47,19 +47,23 @@ trait Anon_Accesstoken extends js.Object {
     * [Optional] The exact value to match against
     * [`ServiceContext.resource_type`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.resource_type).
     */
-  var `serviceFilter.resourceType`: js.UndefOr[String] = js.native
+  @JSName("serviceFilter.resourceType")
+  var serviceFilterDotresourceType: js.UndefOr[String] = js.native
   /**
     * [Optional] The exact value to match against
     * [`ServiceContext.service`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service).
     */
-  var `serviceFilter.service`: js.UndefOr[String] = js.native
+  @JSName("serviceFilter.service")
+  var serviceFilterDotservice: js.UndefOr[String] = js.native
   /**
     * [Optional] The exact value to match against
     * [`ServiceContext.version`](/error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version).
     */
-  var `serviceFilter.version`: js.UndefOr[String] = js.native
+  @JSName("serviceFilter.version")
+  var serviceFilterDotversion: js.UndefOr[String] = js.native
   /** Restricts the query to the specified time range. */
-  var `timeRange.period`: js.UndefOr[String] = js.native
+  @JSName("timeRange.period")
+  var timeRangeDotperiod: js.UndefOr[String] = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */

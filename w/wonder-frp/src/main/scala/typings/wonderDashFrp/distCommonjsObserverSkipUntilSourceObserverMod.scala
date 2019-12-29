@@ -2,7 +2,6 @@ package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsCoreObserverMod.Observer
 import typings.wonderDashFrp.distCommonjsObserverIObserverMod.IObserver
-import typings.wonderDashFrp.distCommonjsObserverSkipUntilSourceObserverMod.SkipUntilSourceObserver
 import typings.wonderDashFrp.distCommonjsStreamSkipUntilStreamMod.SkipUntilStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

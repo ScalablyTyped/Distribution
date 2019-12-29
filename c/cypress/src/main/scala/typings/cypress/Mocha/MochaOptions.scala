@@ -36,7 +36,7 @@ trait MochaOptions extends js.Object {
     * Reporter constructor, built-in reporter name, or reporter module path. Defaults to
     * `"spec"`.
     */
-  var reporter: js.UndefOr[String | typings.cypress.Mocha.ReporterConstructor] = js.undefined
+  var reporter: js.UndefOr[String | ReporterConstructor] = js.undefined
   /** Options to pass to the reporter. */
   var reporterOptions: js.UndefOr[js.Any] = js.undefined
   /** number of times to retry failed tests. */
@@ -69,7 +69,7 @@ object MochaOptions {
     ignoreLeaks: js.UndefOr[Boolean] = js.undefined,
     inlineDiffs: js.UndefOr[Boolean] = js.undefined,
     noHighlighting: js.UndefOr[Boolean] = js.undefined,
-    reporter: String | typings.cypress.Mocha.ReporterConstructor = null,
+    reporter: String | ReporterConstructor = null,
     reporterOptions: js.Any = null,
     retries: Int | Double = null,
     slow: Int | Double = null,

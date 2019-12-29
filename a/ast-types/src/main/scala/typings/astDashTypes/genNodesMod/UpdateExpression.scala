@@ -1,6 +1,6 @@
 package typings.astDashTypes.genNodesMod
 
-import typings.astDashTypes.astDashTypesStrings.`++`
+import typings.astDashTypes.astDashTypesStrings.PlussignPlussign
 import typings.astDashTypes.astDashTypesStrings.`--`
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Expression, 'type'> ]: ast-types.ast-types/gen/nodes.Expression[P]} */ trait UpdateExpression extends ASTNode {
   var argument: ExpressionKind
-  var operator: `++` | `--`
+  var operator: PlussignPlussign | `--`
   var prefix: Boolean
   var `type`: typings.astDashTypes.astDashTypesStrings.UpdateExpression
 }
@@ -19,7 +19,7 @@ object UpdateExpression {
   @scala.inline
   def apply(
     argument: ExpressionKind,
-    operator: `++` | `--`,
+    operator: PlussignPlussign | `--`,
     prefix: Boolean,
     `type`: typings.astDashTypes.astDashTypesStrings.UpdateExpression
   ): UpdateExpression = {

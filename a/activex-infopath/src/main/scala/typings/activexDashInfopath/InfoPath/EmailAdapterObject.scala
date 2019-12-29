@@ -12,7 +12,8 @@ class EmailAdapterObject protected () extends js.Object {
   var AttachmentType: XdAttachmentType = js.native
   var BCC: String = js.native
   var CC: String = js.native
-  var `InfoPath.EmailAdapterObject_typekey`: EmailAdapterObject = js.native
+  @JSName("InfoPath.EmailAdapterObject_typekey")
+  var InfoPathDotEmailAdapterObject_typekey: EmailAdapterObject = js.native
   var Intro: String = js.native
   val Name: String = js.native
   val QueryAllowed: Boolean = js.native

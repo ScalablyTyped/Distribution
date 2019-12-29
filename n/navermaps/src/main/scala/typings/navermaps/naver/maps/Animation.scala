@@ -1,8 +1,6 @@
 package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.Animation.BOUNCE
-import typings.navermaps.naver.maps.Animation.DROP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

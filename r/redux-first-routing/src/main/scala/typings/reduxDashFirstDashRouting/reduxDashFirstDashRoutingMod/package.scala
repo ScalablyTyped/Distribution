@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object reduxDashFirstDashRoutingMod {
   import typings.redux.reduxMod.Action
-  import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.`ROUTER/GO_BACK`
-  import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.`ROUTER/GO_FORWARD`
+  import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.ROUTERSlashGO_BACK
+  import typings.reduxDashFirstDashRouting.reduxDashFirstDashRoutingStrings.ROUTERSlashGO_FORWARD
 
-  type goBackAction = Action[`ROUTER/GO_BACK`]
-  type goForwardAction = Action[`ROUTER/GO_FORWARD`]
+  type goBackAction = Action[ROUTERSlashGO_BACK]
+  type goForwardAction = Action[ROUTERSlashGO_FORWARD]
 }

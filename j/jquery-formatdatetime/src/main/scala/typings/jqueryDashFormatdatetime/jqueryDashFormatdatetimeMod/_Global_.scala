@@ -1,6 +1,5 @@
 package typings.jqueryDashFormatdatetime.jqueryDashFormatdatetimeMod
 
-import typings.jqueryDashFormatdatetime.jqueryDashFormatdatetimeMod._Global_.JQuery
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

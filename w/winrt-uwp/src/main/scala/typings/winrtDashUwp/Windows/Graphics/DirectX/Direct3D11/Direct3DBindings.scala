@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.constantBuffer
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.decoder
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.depthStencil
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.indexBuffer
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.renderTarget
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.shaderResource
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.streamOutput
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.unorderedAccess
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.vertexBuffer
-import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DBindings.videoEncoder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

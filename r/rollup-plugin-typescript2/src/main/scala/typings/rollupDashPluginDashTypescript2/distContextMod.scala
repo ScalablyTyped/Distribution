@@ -1,12 +1,6 @@
 package typings.rollupDashPluginDashTypescript2
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rollupDashPluginDashTypescript2.distContextMod.IContext
-import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel
-import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Debug
-import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Error
-import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Info
-import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

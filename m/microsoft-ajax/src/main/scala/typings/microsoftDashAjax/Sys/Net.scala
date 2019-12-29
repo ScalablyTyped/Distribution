@@ -1,11 +1,6 @@
 package typings.microsoftDashAjax.Sys
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.microsoftDashAjax.Sys.Net.IWebRequestManager
-import typings.microsoftDashAjax.Sys.Net.NetworkRequestEventArgs
-import typings.microsoftDashAjax.Sys.Net.WebRequest
-import typings.microsoftDashAjax.Sys.Net.WebRequestExecutor
-import typings.microsoftDashAjax.Sys.Net.WebServiceError
 import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -216,15 +211,15 @@ object Net extends js.Object {
       * Gets the resolved URL of the Sys.Net.WebRequest instance.
       * @returns The resolved URL that the Web request is directed to.
       */
-    def getResolvedUrl(): java.lang.String = js.native
-    def get_body(): java.lang.String = js.native
+    def getResolvedUrl(): String = js.native
+    def get_body(): String = js.native
     def get_executor(): WebRequestExecutor = js.native
-    def get_headers(): StringDictionary[java.lang.String] = js.native
-    def get_httpVerb(): java.lang.String = js.native
+    def get_headers(): StringDictionary[String] = js.native
+    def get_httpVerb(): String = js.native
     def get_timeout(): Double = js.native
     //#endregion
     //#region Members
-    def get_url(): java.lang.String = js.native
+    def get_url(): String = js.native
     def get_userContext(): js.Any = js.native
     /**
       * Executes a Web request.
@@ -235,11 +230,11 @@ object Net extends js.Object {
       * @see {@link http://msdn.microsoft.com/en-us/library/bb397454(v=vs.100).aspx}
       */
     def remove_completed(handler: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit]): Unit = js.native
-    def set_body(value: java.lang.String): Unit = js.native
+    def set_body(value: String): Unit = js.native
     def set_executor(value: WebRequestExecutor): Unit = js.native
-    def set_httpVerb(value: java.lang.String): Unit = js.native
+    def set_httpVerb(value: String): Unit = js.native
     def set_timeout(value: Double): Unit = js.native
-    def set_url(value: java.lang.String): Unit = js.native
+    def set_url(value: String): Unit = js.native
     def set_userContext(value: js.Any): Unit = js.native
   }
   
@@ -275,12 +270,12 @@ object Net extends js.Object {
       * @return All the response headers
       * @see {@link http://msdn.microsoft.com/en-us/library/bb310805(v=vs.100).aspx}
       */
-    def getAllResponseHeaders(): java.lang.String = js.native
+    def getAllResponseHeaders(): String = js.native
     /**
       * Gets the value of the specified response header.
       * @return The specified response header.
       */
-    def getResponseHeader(key: java.lang.String): java.lang.String = js.native
+    def getResponseHeader(key: String): String = js.native
     /**
       * Gets a value indicating whether the request associated with the executor was aborted.
       * When the current instance of the Sys.Net.WebRequestExecutor class is aborted, it must set its state to aborted and it must raise the completed event of the associated request object.
@@ -299,7 +294,7 @@ object Net extends js.Object {
       * Gets the text representation of the response body. When a request has completed successfully with valid response data, this property returns the text that is contained in the response body.
       * @return The text representation of the response body.
       */
-    def get_responseData(): java.lang.String = js.native
+    def get_responseData(): String = js.native
     /**
       * Returns a value indicating whether the executor has started processing the request.
       * The executor returns true if substantial processing of the request has started. For executors that make network calls, substantial processing means that a network call has been started.
@@ -317,7 +312,7 @@ object Net extends js.Object {
       * The statusText property returns status information if a request completed successfully and with valid response data.
       * @return the status text
       */
-    def get_statusText(): java.lang.String = js.native
+    def get_statusText(): String = js.native
     /**
       * Gets a value indicating whether the request timed out.
       * Executors use the time-out information associated with the request to raise the completed event on the associated WebRequest object.
@@ -347,8 +342,8 @@ object Net extends js.Object {
   class WebServiceError () extends js.Object {
     def get_errorObject(): js.Any = js.native
     def get_exceptionType(): js.Any = js.native
-    def get_message(): java.lang.String = js.native
-    def get_stackTrace(): java.lang.String = js.native
+    def get_message(): String = js.native
+    def get_stackTrace(): String = js.native
     def get_statusCode(): Double = js.native
     def get_timedOut(): Boolean = js.native
   }
@@ -366,16 +361,16 @@ object Net extends js.Object {
   @js.native
   object WebServiceProxy extends js.Object {
     def invoke(
-      servicePath: java.lang.String,
-      methodName: java.lang.String,
+      servicePath: String,
+      methodName: String,
       useGet: js.UndefOr[Boolean],
       params: js.UndefOr[js.Any],
-      onSuccess: js.UndefOr[js.Function2[/* result */ java.lang.String, /* eventArgs */ EventArgs, Unit]],
+      onSuccess: js.UndefOr[js.Function2[/* result */ String, /* eventArgs */ EventArgs, Unit]],
       onFailure: js.UndefOr[js.Function1[/* error */ WebServiceError, Unit]],
       userContext: js.UndefOr[js.Any],
       timeout: js.UndefOr[Double],
       enableJsonp: js.UndefOr[Boolean],
-      jsonpCallbackParameter: js.UndefOr[java.lang.String]
+      jsonpCallbackParameter: js.UndefOr[String]
     ): WebRequest = js.native
   }
   

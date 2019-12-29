@@ -10,8 +10,10 @@ import typings.stripe.stripeMod.IListPromise
 import typings.stripe.stripeMod.IResponseFn
 import typings.stripe.stripeMod.IStripeSource
 import typings.stripe.stripeMod.StripeResource
+import typings.stripe.stripeMod.bankAccounts.IBankAccount
 import typings.stripe.stripeMod.bankAccounts.IBankAccountUpdateOptions
 import typings.stripe.stripeMod.bankAccounts.IBankAccountVerifyOptions
+import typings.stripe.stripeMod.cards.ICard
 import typings.stripe.stripeMod.cards.ICardUpdateOptions
 import typings.stripe.stripeMod.customerBalanceTransactions.ICustomerBalanceTransaction
 import typings.stripe.stripeMod.customerBalanceTransactions.ICustomerBalanceTransactionCreationOptions
@@ -28,6 +30,7 @@ import typings.stripe.stripeMod.customers.ICustomerListOptions
 import typings.stripe.stripeMod.customers.ICustomerSourceCreationOptions
 import typings.stripe.stripeMod.customers.ICustomerUpdateOptions
 import typings.stripe.stripeMod.customers.ISourceListOptions
+import typings.stripe.stripeMod.sources.ISource
 import typings.stripe.stripeMod.subscriptions.ISubscription
 import typings.stripe.stripeMod.subscriptions.ISubscriptionCancellationOptions
 import typings.stripe.stripeMod.subscriptions.ISubscriptionCustCreationOptions
@@ -111,7 +114,7 @@ class Customers () extends StripeResource {
     data: ICustomerBalanceTransactionCreationOptions,
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
-  def createCard(customerId: String, data: Anon_Card): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def createCard(customerId: String, data: Anon_Card): js.Promise[ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
     * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -123,15 +126,10 @@ class Customers () extends StripeResource {
     *
     * @deprecated
     */
-  def createCard(customerId: String, data: Anon_Card, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def createCard(
-    customerId: String,
-    data: Anon_Card,
-    options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def createCard(customerId: String, data: Anon_Card, response: IResponseFn[typings.stripe.stripeMod.cards.ICard]): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def createCard(customerId: String, data: Anon_Card, options: HeaderOptions): js.Promise[ICard] = js.native
+  def createCard(customerId: String, data: Anon_Card, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def createCard(customerId: String, data: Anon_Card, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions): js.Promise[IBankAccount] = js.native
   /**
     * When adding a bank account to a customer, the parameter name is source. When
     * adding to an account, the parameter name is external_account. The
@@ -142,19 +140,19 @@ class Customers () extends StripeResource {
     *
     * @param customerId The customer ID to which to add the bank account.
     */
-  def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions, options: HeaderOptions): js.Promise[IBankAccount] = js.native
   def createSource(
     customerId: String,
     data: ICustomerBankAccountSourceCreationOptions,
     options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+    response: IResponseFn[IBankAccount]
+  ): js.Promise[IBankAccount] = js.native
   def createSource(
     customerId: String,
     data: ICustomerBankAccountSourceCreationOptions,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def createSource(customerId: String, data: ICustomerCardSourceCreationOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[IBankAccount]
+  ): js.Promise[IBankAccount] = js.native
+  def createSource(customerId: String, data: ICustomerCardSourceCreationOptions): js.Promise[ICard] = js.native
   /**
     * When adding a card to a customer, the parameter name is source. When
     * adding to an account, the parameter name is external_account. The
@@ -166,18 +164,14 @@ class Customers () extends StripeResource {
     *
     * @param customerId The customer ID to which to add the card.
     */
-  def createSource(customerId: String, data: ICustomerCardSourceCreationOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def createSource(customerId: String, data: ICustomerCardSourceCreationOptions, options: HeaderOptions): js.Promise[ICard] = js.native
   def createSource(
     customerId: String,
     data: ICustomerCardSourceCreationOptions,
     options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def createSource(
-    customerId: String,
-    data: ICustomerCardSourceCreationOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[ICard]
+  ): js.Promise[ICard] = js.native
+  def createSource(customerId: String, data: ICustomerCardSourceCreationOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def createSource(customerId: String, data: ICustomerSourceCreationOptions): js.Promise[IStripeSource] = js.native
   /**
     * When adding a card or bank account to a customer, the parameter name is source. When
@@ -365,8 +359,8 @@ class Customers () extends StripeResource {
     response: IResponseFn[IList[ICustomerBalanceTransaction]]
   ): IListPromise[ICustomerBalanceTransaction] = js.native
   def listBalanceTransactions(customerId: String, response: IResponseFn[IList[ICustomerBalanceTransaction]]): IListPromise[ICustomerBalanceTransaction] = js.native
-  def listCards(customerId: String): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listCards(customerId: String, data: IListOptions): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def listCards(customerId: String): IListPromise[ICard] = js.native
+  def listCards(customerId: String, data: IListOptions): IListPromise[ICard] = js.native
   /**
     * You can see a list of the cards belonging to a customer or recipient. Note that the 10 most recent
     * cards are always available by default on the customer or recipient object. If you need more than
@@ -380,26 +374,18 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose cards will be retrieved
     * @param data Filtering options
     */
-  def listCards(customerId: String, data: IListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def listCards(customerId: String, data: IListOptions, options: HeaderOptions): IListPromise[ICard] = js.native
   def listCards(
     customerId: String,
     data: IListOptions,
     options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
-  ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listCards(
-    customerId: String,
-    data: IListOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
-  ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listCards(customerId: String, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listCards(
-    customerId: String,
-    options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
-  ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listCards(customerId: String, response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listSources(customerId: String, data: IBankAccountSourceListOptions): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+    response: IResponseFn[IList[ICard]]
+  ): IListPromise[ICard] = js.native
+  def listCards(customerId: String, data: IListOptions, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
+  def listCards(customerId: String, options: HeaderOptions): IListPromise[ICard] = js.native
+  def listCards(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
+  def listCards(customerId: String, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
+  def listSources(customerId: String, data: IBankAccountSourceListOptions): IListPromise[IBankAccount] = js.native
   /**
     * You can see a list of the bank accounts belonging to a customer or recipient. Note that the 10 most recent
     * bank accounts are always available by default on the customer or recipient object. If you need more than
@@ -413,19 +399,19 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose cards will be retrieved
     * @param data Filtering options
     */
-  def listSources(customerId: String, data: IBankAccountSourceListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def listSources(customerId: String, data: IBankAccountSourceListOptions, options: HeaderOptions): IListPromise[IBankAccount] = js.native
   def listSources(
     customerId: String,
     data: IBankAccountSourceListOptions,
     options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.bankAccounts.IBankAccount]]
-  ): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+    response: IResponseFn[IList[IBankAccount]]
+  ): IListPromise[IBankAccount] = js.native
   def listSources(
     customerId: String,
     data: IBankAccountSourceListOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.bankAccounts.IBankAccount]]
-  ): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def listSources(customerId: String, data: ICardSourceListOptions): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[IList[IBankAccount]]
+  ): IListPromise[IBankAccount] = js.native
+  def listSources(customerId: String, data: ICardSourceListOptions): IListPromise[ICard] = js.native
   /**
     * You can see a list of the cards belonging to a customer or recipient. Note that the 10 most recent
     * cards are always available by default on the customer or recipient object. If you need more than
@@ -439,31 +425,23 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose cards will be retrieved
     * @param data Filtering options
     */
-  def listSources(customerId: String, data: ICardSourceListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def listSources(customerId: String, data: ICardSourceListOptions, options: HeaderOptions): IListPromise[ICard] = js.native
   def listSources(
     customerId: String,
     data: ICardSourceListOptions,
     options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
-  ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listSources(
-    customerId: String,
-    data: ICardSourceListOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
-  ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listSources(customerId: String, data: ISourceListOptions): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
-  def listSources(customerId: String, data: ISourceListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
+    response: IResponseFn[IList[ICard]]
+  ): IListPromise[ICard] = js.native
+  def listSources(customerId: String, data: ICardSourceListOptions, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
+  def listSources(customerId: String, data: ISourceListOptions): IListPromise[ISource] = js.native
+  def listSources(customerId: String, data: ISourceListOptions, options: HeaderOptions): IListPromise[ISource] = js.native
   def listSources(
     customerId: String,
     data: ISourceListOptions,
     options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.sources.ISource]]
-  ): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
-  def listSources(
-    customerId: String,
-    data: ISourceListOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.sources.ISource]]
-  ): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
+    response: IResponseFn[IList[ISource]]
+  ): IListPromise[ISource] = js.native
+  def listSources(customerId: String, data: ISourceListOptions, response: IResponseFn[IList[ISource]]): IListPromise[ISource] = js.native
   def listSubscriptions(customerId: String): IListPromise[ISubscription] = js.native
   def listSubscriptions(customerId: String, data: IListOptions): IListPromise[ISubscription] = js.native
   /**
@@ -489,19 +467,15 @@ class Customers () extends StripeResource {
   def listSubscriptions(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
   def listSubscriptions(customerId: String, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
   def listTaxIds(customerId: String): IListPromise[ISubscription] = js.native
-  def listTaxIds(customerId: String, data: IListOptions): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
-  def listTaxIds(customerId: String, data: IListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
+  def listTaxIds(customerId: String, data: IListOptions): IListPromise[ISource] = js.native
+  def listTaxIds(customerId: String, data: IListOptions, options: HeaderOptions): IListPromise[ISource] = js.native
   def listTaxIds(
     customerId: String,
     data: IListOptions,
     options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.sources.ISource]]
-  ): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
-  def listTaxIds(
-    customerId: String,
-    data: IListOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.sources.ISource]]
-  ): IListPromise[typings.stripe.stripeMod.sources.ISource] = js.native
+    response: IResponseFn[IList[ISource]]
+  ): IListPromise[ISource] = js.native
+  def listTaxIds(customerId: String, data: IListOptions, response: IResponseFn[IList[ISource]]): IListPromise[ISource] = js.native
   def listTaxIds(customerId: String, options: HeaderOptions): IListPromise[ISubscription] = js.native
   def listTaxIds(customerId: String, options: HeaderOptions, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
   def listTaxIds(customerId: String, response: IResponseFn[IList[ISubscription]]): IListPromise[ISubscription] = js.native
@@ -534,7 +508,7 @@ class Customers () extends StripeResource {
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
   def retrieveBalanceTransaction(customerId: String, transactionId: String, response: IResponseFn[ICustomerBalanceTransaction]): js.Promise[ICustomerBalanceTransaction] = js.native
-  def retrieveCard(customerId: String, cardId: String): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def retrieveCard(customerId: String, cardId: String): js.Promise[ICard] = js.native
   /**
     * By default, you can see the 10 most recent cards stored on a customer or recipient directly on the customer or recipient object, but
     * you can also retrieve details about a specific card stored on the customer or recipient.
@@ -544,14 +518,9 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose card needs to be retrieved.
     * @param cardId The ID of the card to be retrieved.
     */
-  def retrieveCard(customerId: String, cardId: String, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def retrieveCard(
-    customerId: String,
-    cardId: String,
-    options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def retrieveCard(customerId: String, cardId: String, response: IResponseFn[typings.stripe.stripeMod.cards.ICard]): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def retrieveCard(customerId: String, cardId: String, options: HeaderOptions): js.Promise[ICard] = js.native
+  def retrieveCard(customerId: String, cardId: String, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def retrieveCard(customerId: String, cardId: String, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def retrieveSource(customerId: String, sourceId: String): js.Promise[IStripeSource] = js.native
   /**
     * By default, you can see the 10 most recent cards/bank accounts stored on a customer or recipient directly on the customer or recipient object, but
@@ -628,7 +597,7 @@ class Customers () extends StripeResource {
     data: ICustomerBalanceTransactionUpdateOptions,
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
-  def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions): js.Promise[ICard] = js.native
   /**
     * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the
     * full card details. Stripe also works directly with card networks so that your customers can continue using your service without
@@ -639,21 +608,16 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose card needs to be retrieved.
     * @param cardId The ID of the card to be retrieved.
     */
-  def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions, options: HeaderOptions): js.Promise[ICard] = js.native
   def updateCard(
     customerId: String,
     cardId: String,
     data: ICardUpdateOptions,
     options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def updateCard(
-    customerId: String,
-    cardId: String,
-    data: ICardUpdateOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def updateSource(customerId: String, sourceId: String, data: IBankAccountUpdateOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+    response: IResponseFn[ICard]
+  ): js.Promise[ICard] = js.native
+  def updateCard(customerId: String, cardId: String, data: ICardUpdateOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def updateSource(customerId: String, sourceId: String, data: IBankAccountUpdateOptions): js.Promise[IBankAccount] = js.native
   /**
     * Updates the metadata, account_holder_name, and account_holder_type of a bank account belonging to a Customer. Other bank account details
     * are not editable by design.
@@ -663,21 +627,21 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose card needs to be retrieved.
     * @param sourceId The ID of the bank account to be updated.
     */
-  def updateSource(customerId: String, sourceId: String, data: IBankAccountUpdateOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def updateSource(customerId: String, sourceId: String, data: IBankAccountUpdateOptions, options: HeaderOptions): js.Promise[IBankAccount] = js.native
   def updateSource(
     customerId: String,
     sourceId: String,
     data: IBankAccountUpdateOptions,
     options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+    response: IResponseFn[IBankAccount]
+  ): js.Promise[IBankAccount] = js.native
   def updateSource(
     customerId: String,
     sourceId: String,
     data: IBankAccountUpdateOptions,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def updateSource(customerId: String, sourceId: String, data: ICardUpdateOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[IBankAccount]
+  ): js.Promise[IBankAccount] = js.native
+  def updateSource(customerId: String, sourceId: String, data: ICardUpdateOptions): js.Promise[ICard] = js.native
   /**
     * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the
     * full card details. Stripe also works directly with card networks so that your customers can continue using your service without
@@ -688,20 +652,15 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose card needs to be retrieved.
     * @param sourceId The ID of the card to be retrieved.
     */
-  def updateSource(customerId: String, sourceId: String, data: ICardUpdateOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def updateSource(customerId: String, sourceId: String, data: ICardUpdateOptions, options: HeaderOptions): js.Promise[ICard] = js.native
   def updateSource(
     customerId: String,
     sourceId: String,
     data: ICardUpdateOptions,
     options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def updateSource(
-    customerId: String,
-    sourceId: String,
-    data: ICardUpdateOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[ICard]
+  ): js.Promise[ICard] = js.native
+  def updateSource(customerId: String, sourceId: String, data: ICardUpdateOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   def updateSubscription(customerId: String, subscriptionId: String, data: ISubscriptionUpdateOptions): js.Promise[ISubscription] = js.native
   /**
     * Updates an existing subscription on a customer to match the specified parameters. When changing plans or quantities,
@@ -747,7 +706,7 @@ class Customers () extends StripeResource {
     data: ISubscriptionUpdateOptions,
     response: IResponseFn[ISubscription]
   ): js.Promise[ISubscription] = js.native
-  def verifySource(customerId: String, sourceId: String, data: IBankAccountVerifyOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def verifySource(customerId: String, sourceId: String, data: IBankAccountVerifyOptions): js.Promise[IBankAccount] = js.native
   /**
     * A customer's bank account must first be verified before it can be charged. Stripe supports instant verification using Plaid for many of
     * the most popular banks. If your customer's bank is not supported or you do not wish to integrate with Plaid, you must manually verify
@@ -758,6 +717,6 @@ class Customers () extends StripeResource {
     * @param customerId The ID of the customer whose source needs to be verified.
     * @param sourceId The ID of the source to be verified.
     */
-  def verifySource(customerId: String, sourceId: String, data: IBankAccountVerifyOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def verifySource(customerId: String, sourceId: String, data: IBankAccountVerifyOptions, options: HeaderOptions): js.Promise[IBankAccount] = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,11 +51,11 @@ class Container protected ()
     * @param y The vertical position of this Game Object in the world. Default 0.
     * @param children An optional array of Game Objects to add to this Container.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, x: Double) = this()
+  def this(scene: Scene, x: Double, y: Double) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: Double,
     y: Double,
     children: js.Array[typings.phaser.Phaser.GameObjects.GameObject]

@@ -3,7 +3,7 @@ package typings.ssri.ssriMod
 import typings.node.Buffer
 import typings.node.NodeJS.TypedArray
 import typings.ssri.Anon_Algo1Algo2Error
-import typings.ssri.ssriNumbers.`false`
+import typings.ssri.ssriBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

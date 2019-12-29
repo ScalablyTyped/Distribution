@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.DomainNameType.fullyQualified
-import typings.winrtDashUwp.Windows.Networking.DomainNameType.suffix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

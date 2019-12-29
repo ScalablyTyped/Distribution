@@ -12,7 +12,7 @@ class QueryExpression protected () extends QueryBase {
     * Initializes a new instance of the QueryExpression class setting the entity name.
     * @param entityName The name of the entity.
     */
-  def this(entityName: java.lang.String) = this()
+  def this(entityName: String) = this()
   /// prototype methods
   /**
     *  Contains a condition expression used to filter the results of the query.
@@ -33,12 +33,7 @@ class QueryExpression protected () extends QueryBase {
     *          Sdk.Query.OptionSets
     *          Sdk.Query.Strings
     */
-  def addCondition(
-    entityName: java.lang.String,
-    attributeName: java.lang.String,
-    conditionOperator: ConditionOperator,
-    values: ValueBase
-  ): Unit = js.native
+  def addCondition(entityName: String, attributeName: String, conditionOperator: ConditionOperator, values: ValueBase): Unit = js.native
   /**
     * Adds the specified link to the query expression setting the entity name to link to, the attribute name to link from and the attribute name to link to.
     * @param firstParam The name of entity to link from.
@@ -47,9 +42,9 @@ class QueryExpression protected () extends QueryBase {
     * @param joinOperator The join operator. The default value is Inner
     */
   def addLink(
-    firstParam: java.lang.String,
-    linkFromAttributeName: java.lang.String,
-    linkToAttributeName: java.lang.String,
+    firstParam: String,
+    linkFromAttributeName: String,
+    linkToAttributeName: String,
     joinOperator: JoinOperator
   ): Unit = js.native
   /**
@@ -62,7 +57,7 @@ class QueryExpression protected () extends QueryBase {
     * @param attributeName The name of the attribute.
     * @param orderType The order, ascending or descending. Ascending is the default if not specified.
     */
-  def addOrder(attributeName: java.lang.String, orderType: OrderType): Unit = js.native
+  def addOrder(attributeName: String, orderType: OrderType): Unit = js.native
   /**
     * Gets the complex condition and logical filter expressions that filter the results of the query.
     */
@@ -70,7 +65,7 @@ class QueryExpression protected () extends QueryBase {
   /**
     * Gets whether the results of the query contain duplicate entity instances.
     */
-  def getDistinct(): scala.Boolean = js.native
+  def getDistinct(): Boolean = js.native
   /**
     * Gets an Sdk.Collection of Sdk.Query.LinkEntity instances.
     */
@@ -78,7 +73,7 @@ class QueryExpression protected () extends QueryBase {
   /**
     * Gets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
     */
-  def getNoLock(): scala.Boolean = js.native
+  def getNoLock(): Boolean = js.native
   /**
     * Sets the complex condition and logical filter expressions that filter the results of the query.
     * @param criteria The query condition and filter criteria.
@@ -87,11 +82,11 @@ class QueryExpression protected () extends QueryBase {
   /**
     * Sets whether the results of the query contain duplicate entity instances.
     */
-  def setDistinct(isDistinct: scala.Boolean): Unit = js.native
+  def setDistinct(isDistinct: Boolean): Unit = js.native
   /**
     * Sets a value that indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query.
     * @param isNoLock True if there are no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query; otherwise, false.
     */
-  def setNoLock(isNoLock: scala.Boolean): Unit = js.native
+  def setNoLock(isNoLock: Boolean): Unit = js.native
 }
 

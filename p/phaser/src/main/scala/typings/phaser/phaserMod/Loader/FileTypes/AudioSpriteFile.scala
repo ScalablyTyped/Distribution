@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.AudioSpriteFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
@@ -27,36 +28,20 @@ class AudioSpriteFile protected ()
     * @param audioXhrSettings An XHR Settings configuration object for the audio file. Used in replacement of the Loaders default XHR Settings.
     * @param jsonXhrSettings An XHR Settings configuration object for the json file. Used in replacement of the Loaders default XHR Settings.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, jsonURL: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AudioSpriteFileConfig, jsonURL: String) = this()
+  def this(loader: LoaderPlugin, key: String, jsonURL: String) = this()
+  def this(loader: LoaderPlugin, key: AudioSpriteFileConfig, jsonURL: String) = this()
+  def this(loader: LoaderPlugin, key: String, jsonURL: String, audioURL: js.Object) = this()
+  def this(loader: LoaderPlugin, key: AudioSpriteFileConfig, jsonURL: String, audioURL: js.Object) = this()
+  def this(loader: LoaderPlugin, key: String, jsonURL: String, audioURL: js.Object, audioConfig: js.Any) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    jsonURL: String,
-    audioURL: js.Object
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: js.Object
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    jsonURL: String,
-    audioURL: js.Object,
-    audioConfig: js.Any
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AudioSpriteFileConfig,
     jsonURL: String,
     audioURL: js.Object,
     audioConfig: js.Any
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     jsonURL: String,
     audioURL: js.Object,
@@ -64,7 +49,7 @@ class AudioSpriteFile protected ()
     audioXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AudioSpriteFileConfig,
     jsonURL: String,
     audioURL: js.Object,
@@ -72,7 +57,7 @@ class AudioSpriteFile protected ()
     audioXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     jsonURL: String,
     audioURL: js.Object,
@@ -81,7 +66,7 @@ class AudioSpriteFile protected ()
     jsonXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AudioSpriteFileConfig,
     jsonURL: String,
     audioURL: js.Object,

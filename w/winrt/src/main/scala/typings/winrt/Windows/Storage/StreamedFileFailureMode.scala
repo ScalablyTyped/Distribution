@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.StreamedFileFailureMode.currentlyUnavailable
-import typings.winrt.Windows.Storage.StreamedFileFailureMode.failed
-import typings.winrt.Windows.Storage.StreamedFileFailureMode.incomplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashSome extends js.Object {
-  def apply[T](predicate: ValueIterateeCustom[T, Boolean]): Boolean = js.native
+  def apply[T /* <: js.Object */](
+    predicate: ValueIterateeCustom[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      Boolean
+    ]
+  ): Boolean = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueIterateeCustom[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

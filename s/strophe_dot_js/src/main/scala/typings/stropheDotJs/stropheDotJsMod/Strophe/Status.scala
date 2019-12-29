@@ -1,17 +1,6 @@
 package typings.stropheDotJs.stropheDotJsMod.Strophe
 
 import org.scalablytyped.runtime.TopLevel
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.ATTACHED
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.AUTHENTICATING
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.AUTHFAIL
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.CONNECTED
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.CONNECTING
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.CONNFAIL
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.CONNTIMEOUT
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.DISCONNECTED
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.DISCONNECTING
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.ERROR
-import typings.stropheDotJs.stropheDotJsMod.Strophe.Status.REDIRECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,10 @@ package typings.draftDashJs.draftDashJsMod.Draft.Component.Base
 
 import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftDragType
 import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftHandleValue
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock
 import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.DraftInlineStyle
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState
 import typings.draftDashJs.draftDashJsMod.SyntheticEvent
 import typings.draftDashJs.draftDashJsMod.SyntheticKeyboardEvent
 import typings.std.Blob
@@ -29,27 +32,13 @@ trait DraftEditorProps extends js.Object {
   // For a given `ContentBlock` object, return an object that specifies
   // a custom block component and/or props. If no object is returned,
   // the default `TextEditorBlock` is used.
-  var blockRendererFn: js.UndefOr[
-    js.Function1[
-      /* block */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock, 
-      _
-    ]
-  ] = js.undefined
+  var blockRendererFn: js.UndefOr[js.Function1[/* block */ ContentBlock, _]] = js.undefined
   // Function that allows to define class names to apply to the given block when it is rendered.
-  var blockStyleFn: js.UndefOr[
-    js.Function1[
-      /* block */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock, 
-      String
-    ]
-  ] = js.undefined
+  var blockStyleFn: js.UndefOr[js.Function1[/* block */ ContentBlock, String]] = js.undefined
   // Provide a function that will construct CSS style objects given inline
   // style names.
   var customStyleFn: js.UndefOr[
-    js.Function2[
-      /* style */ DraftInlineStyle, 
-      /* block */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock, 
-      DraftStyleMap
-    ]
+    js.Function2[/* style */ DraftInlineStyle, /* block */ ContentBlock, DraftStyleMap]
   ] = js.undefined
   // Provide a map of inline style names corresponding to CSS style objects
   // that will be rendered for matching ranges.
@@ -57,7 +46,7 @@ trait DraftEditorProps extends js.Object {
   // If using server-side rendering, this prop is required to be set to
   // avoid client/server mismatches.
   var editorKey: js.UndefOr[String] = js.undefined
-  var editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState
+  var editorState: EditorState
   // Handle intended text insertion before the insertion occurs. This may be
   // useful in cases where the user has entered characters that you would like
   // to trigger some special behavior. E.g. immediately converting `:)` to an
@@ -66,7 +55,7 @@ trait DraftEditorProps extends js.Object {
   var handleBeforeInput: js.UndefOr[
     js.Function3[
       /* chars */ String, 
-      /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState, 
+      /* editorState */ EditorState, 
       /* eventTimeStamp */ Double, 
       DraftHandleValue
     ]
@@ -74,7 +63,7 @@ trait DraftEditorProps extends js.Object {
   // Handle other drops to prevent default text movement/insertion behaviour
   var handleDrop: js.UndefOr[
     js.Function3[
-      /* selection */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState, 
+      /* selection */ SelectionState, 
       /* dataTransfer */ js.Object, 
       /* isInternal */ DraftDragType, 
       DraftHandleValue
@@ -82,18 +71,14 @@ trait DraftEditorProps extends js.Object {
   ] = js.undefined
   // Handle dropped files
   var handleDroppedFiles: js.UndefOr[
-    js.Function2[
-      /* selection */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState, 
-      /* files */ js.Array[Blob], 
-      DraftHandleValue
-    ]
+    js.Function2[/* selection */ SelectionState, /* files */ js.Array[Blob], DraftHandleValue]
   ] = js.undefined
   // Map a key command string provided by your key binding function to a
   // specified behavior.
   var handleKeyCommand: js.UndefOr[
     js.Function3[
       /* command */ EditorCommand, 
-      /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState, 
+      /* editorState */ EditorState, 
       /* eventTimeStamp */ Double, 
       DraftHandleValue
     ]
@@ -103,7 +88,7 @@ trait DraftEditorProps extends js.Object {
     js.Function3[
       /* text */ String, 
       /* html */ js.UndefOr[String], 
-      /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState, 
+      /* editorState */ EditorState, 
       DraftHandleValue
     ]
   ] = js.undefined
@@ -114,11 +99,7 @@ trait DraftEditorProps extends js.Object {
   // Useful for managing special behavior for pressing the `Return` key. E.g.
   // removing the style from an empty list item.
   var handleReturn: js.UndefOr[
-    js.Function2[
-      /* e */ SyntheticKeyboardEvent, 
-      /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState, 
-      DraftHandleValue
-    ]
+    js.Function2[/* e */ SyntheticKeyboardEvent, /* editorState */ EditorState, DraftHandleValue]
   ] = js.undefined
   // A function that accepts a synthetic key event and returns
   // the matching DraftEditorCommand constant, or null if no command should
@@ -156,14 +137,14 @@ trait DraftEditorProps extends js.Object {
   // regardless of input characters.
   var textDirectionality: js.UndefOr[DraftTextDirectionality] = js.undefined
   var webDriverTestID: js.UndefOr[String] = js.undefined
-  def onChange(editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState): Unit
+  def onChange(editorState: EditorState): Unit
 }
 
 object DraftEditorProps {
   @scala.inline
   def apply(
-    editorState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState,
-    onChange: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState => Unit,
+    editorState: EditorState,
+    onChange: EditorState => Unit,
     ariaActiveDescendantID: String = null,
     ariaAutoComplete: String = null,
     ariaControls: String = null,
@@ -175,18 +156,18 @@ object DraftEditorProps {
     autoComplete: String = null,
     autoCorrect: String = null,
     blockRenderMap: DraftBlockRenderMap = null,
-    blockRendererFn: /* block */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock => _ = null,
-    blockStyleFn: /* block */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock => String = null,
-    customStyleFn: (/* style */ DraftInlineStyle, /* block */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock) => DraftStyleMap = null,
+    blockRendererFn: /* block */ ContentBlock => _ = null,
+    blockStyleFn: /* block */ ContentBlock => String = null,
+    customStyleFn: (/* style */ DraftInlineStyle, /* block */ ContentBlock) => DraftStyleMap = null,
     customStyleMap: DraftStyleMap = null,
     editorKey: String = null,
-    handleBeforeInput: (/* chars */ String, /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState, /* eventTimeStamp */ Double) => DraftHandleValue = null,
-    handleDrop: (/* selection */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState, /* dataTransfer */ js.Object, /* isInternal */ DraftDragType) => DraftHandleValue = null,
-    handleDroppedFiles: (/* selection */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState, /* files */ js.Array[Blob]) => DraftHandleValue = null,
-    handleKeyCommand: (/* command */ EditorCommand, /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState, /* eventTimeStamp */ Double) => DraftHandleValue = null,
+    handleBeforeInput: (/* chars */ String, /* editorState */ EditorState, /* eventTimeStamp */ Double) => DraftHandleValue = null,
+    handleDrop: (/* selection */ SelectionState, /* dataTransfer */ js.Object, /* isInternal */ DraftDragType) => DraftHandleValue = null,
+    handleDroppedFiles: (/* selection */ SelectionState, /* files */ js.Array[Blob]) => DraftHandleValue = null,
+    handleKeyCommand: (/* command */ EditorCommand, /* editorState */ EditorState, /* eventTimeStamp */ Double) => DraftHandleValue = null,
     handlePastedFiles: /* files */ js.Array[Blob] => DraftHandleValue = null,
-    handlePastedText: (/* text */ String, /* html */ js.UndefOr[String], /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState) => DraftHandleValue = null,
-    handleReturn: (/* e */ SyntheticKeyboardEvent, /* editorState */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState) => DraftHandleValue = null,
+    handlePastedText: (/* text */ String, /* html */ js.UndefOr[String], /* editorState */ EditorState) => DraftHandleValue = null,
+    handleReturn: (/* e */ SyntheticKeyboardEvent, /* editorState */ EditorState) => DraftHandleValue = null,
     keyBindingFn: /* e */ SyntheticKeyboardEvent => EditorCommand | Null = null,
     onBlur: /* e */ SyntheticEvent => Unit = null,
     onDownArrow: /* e */ SyntheticKeyboardEvent => Unit = null,

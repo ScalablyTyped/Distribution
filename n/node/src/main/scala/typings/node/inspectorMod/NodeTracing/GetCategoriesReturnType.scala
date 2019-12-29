@@ -8,12 +8,12 @@ trait GetCategoriesReturnType extends js.Object {
   /**
     * A list of supported tracing categories.
     */
-  var categories: js.Array[java.lang.String]
+  var categories: js.Array[String]
 }
 
 object GetCategoriesReturnType {
   @scala.inline
-  def apply(categories: js.Array[java.lang.String]): GetCategoriesReturnType = {
+  def apply(categories: js.Array[String]): GetCategoriesReturnType = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetCategoriesReturnType]

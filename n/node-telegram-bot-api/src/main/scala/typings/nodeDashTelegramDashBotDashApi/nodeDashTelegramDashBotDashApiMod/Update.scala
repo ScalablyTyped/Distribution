@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/// TELEGRAM TYPES ///
 trait Update extends js.Object {
   var callback_query: js.UndefOr[CallbackQuery] = js.undefined
   var channel_post: js.UndefOr[Message] = js.undefined

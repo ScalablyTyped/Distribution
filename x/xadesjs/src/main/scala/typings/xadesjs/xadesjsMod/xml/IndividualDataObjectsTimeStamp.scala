@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.IndividualDataObjectsTimeStamp")
 @js.native
-class IndividualDataObjectsTimeStamp () extends XAdESTimeStamp
+class IndividualDataObjectsTimeStamp ()
+  extends typings.xadesjs.buildTypesXmlMod.IndividualDataObjectsTimeStamp
 

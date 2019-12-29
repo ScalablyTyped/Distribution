@@ -4,10 +4,10 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.eventsMod.EventsKey
 import typings.ol.featureMod.FeatureLike
 import typings.ol.objectMod.ObjectEvent
-import typings.ol.olStrings.`change:layerGroup`
-import typings.ol.olStrings.`change:size`
-import typings.ol.olStrings.`change:target`
-import typings.ol.olStrings.`change:view`
+import typings.ol.olStrings.changeColonlayerGroup
+import typings.ol.olStrings.changeColonsize
+import typings.ol.olStrings.changeColontarget
+import typings.ol.olStrings.changeColonview
 import typings.ol.olStrings.click
 import typings.ol.olStrings.dblclick
 import typings.ol.olStrings.moveend
@@ -103,13 +103,13 @@ trait PluggableMap
   def hasFeatureAtPixel[U](pixel: Pixel, opt_options: AtPixelOptions): Boolean = js.native
   def isRendered(): Boolean = js.native
   @JSName("on")
-  def on_changelayerGroup(`type`: `change:layerGroup`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changelayerGroup(`type`: changeColonlayerGroup, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changesize(`type`: `change:size`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changesize(`type`: changeColonsize, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changetarget(`type`: `change:target`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changetarget(`type`: changeColontarget, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
-  def on_changeview(`type`: `change:view`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def on_changeview(`type`: changeColonview, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")
   def on_click(`type`: click, listener: js.Function1[/* evt */ typings.ol.mapBrowserEventMod.default, Unit]): EventsKey = js.native
   @JSName("on")
@@ -133,13 +133,13 @@ trait PluggableMap
   @JSName("on")
   def on_singleclick(`type`: singleclick, listener: js.Function1[/* evt */ typings.ol.mapBrowserEventMod.default, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changelayerGroup(`type`: `change:layerGroup`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changelayerGroup(`type`: changeColonlayerGroup, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changesize(`type`: `change:size`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changesize(`type`: changeColonsize, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changetarget(`type`: `change:target`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changetarget(`type`: changeColontarget, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
-  def once_changeview(`type`: `change:view`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
+  def once_changeview(`type`: changeColonview, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
   def once_click(`type`: click, listener: js.Function1[/* evt */ typings.ol.mapBrowserEventMod.default, Unit]): EventsKey = js.native
   @JSName("once")
@@ -177,13 +177,13 @@ trait PluggableMap
   def setView(view: typings.ol.viewMod.default): Unit = js.native
   def skipFeature(feature: typings.ol.featureMod.default): Unit = js.native
   @JSName("un")
-  def un_changelayerGroup(`type`: `change:layerGroup`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changelayerGroup(`type`: changeColonlayerGroup, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changesize(`type`: `change:size`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changesize(`type`: changeColonsize, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changetarget(`type`: `change:target`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changetarget(`type`: changeColontarget, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
-  def un_changeview(`type`: `change:view`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
+  def un_changeview(`type`: changeColonview, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   @JSName("un")
   def un_click(`type`: click, listener: js.Function1[/* evt */ typings.ol.mapBrowserEventMod.default, Unit]): Unit = js.native
   @JSName("un")

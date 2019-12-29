@@ -1,9 +1,6 @@
 package typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Class
-import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Factory
-import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

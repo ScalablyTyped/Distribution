@@ -1,10 +1,6 @@
 package typings.clearbladejsDashServer.CbServer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.clearbladejsDashServer.CbServer.TriggerModule.DEVICE
-import typings.clearbladejsDashServer.CbServer.TriggerModule.Data
-import typings.clearbladejsDashServer.CbServer.TriggerModule.MESSAGING
-import typings.clearbladejsDashServer.CbServer.TriggerModule.USER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,34 +5,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkItem extends js.Object {
-  var _arguments: js.Object
-  var activityId: String
-  var availabilityZone: js.UndefOr[String] = js.undefined
-  var id: String
-  var status: js.UndefOr[String] = js.undefined
-  var statusDetail: js.UndefOr[js.Object] = js.undefined
-  var timestamp: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var ActivityId: String
+  var Arguments: js.Object
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
+  var Id: String
+  var Status: js.UndefOr[String] = js.undefined
+  var StatusDetail: js.UndefOr[js.Object] = js.undefined
+  var Timestamp: js.UndefOr[String] = js.undefined
+  var Version: js.UndefOr[Double] = js.undefined
 }
 
 object WorkItem {
   @scala.inline
   def apply(
-    _arguments: js.Object,
-    activityId: String,
-    id: String,
-    availabilityZone: String = null,
-    status: String = null,
-    statusDetail: js.Object = null,
-    timestamp: String = null,
-    version: Int | Double = null
+    ActivityId: String,
+    Arguments: js.Object,
+    Id: String,
+    AvailabilityZone: String = null,
+    Status: String = null,
+    StatusDetail: js.Object = null,
+    Timestamp: String = null,
+    Version: Int | Double = null
   ): WorkItem = {
-    val __obj = js.Dynamic.literal(_arguments = _arguments.asInstanceOf[js.Any], activityId = activityId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ActivityId = ActivityId.asInstanceOf[js.Any], Arguments = Arguments.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
+    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail.asInstanceOf[js.Any])
+    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItem]
   }
 }

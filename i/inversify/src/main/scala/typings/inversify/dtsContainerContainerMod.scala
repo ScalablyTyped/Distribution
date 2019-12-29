@@ -1,6 +1,5 @@
 package typings.inversify
 
-import typings.inversify.dtsContainerContainerMod.Container
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ContainerOptions
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ServiceIdentifier
 import scala.scalajs.js

@@ -2,7 +2,7 @@ package typings.officeDashUiDashFabricDashReact.libIndexDotBundleMod
 
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IConcatenatedStyleSet
 import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`false`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

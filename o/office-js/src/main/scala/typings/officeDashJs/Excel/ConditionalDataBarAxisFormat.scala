@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.automatic
-import typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.cellMidPoint
-import typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

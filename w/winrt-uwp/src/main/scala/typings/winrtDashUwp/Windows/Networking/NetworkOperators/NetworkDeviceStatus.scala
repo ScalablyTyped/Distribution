@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.accountNotActivated
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.badSim
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceBlocked
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceHardwareFailure
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceLocked
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceNotReady
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceReady
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.simNotInserted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object wxDashServerDashSdkStrings {
   @js.native
-  sealed trait BACKSLASHu5176BACKSLASHu4ED6 extends js.Object
-  
-  @js.native
   sealed trait LineString extends js.Object
   
   @js.native
@@ -53,8 +50,9 @@ object wxDashServerDashSdkStrings {
   @js.native
   sealed trait wx_unknown extends js.Object
   
-  @scala.inline
-  def BACKSLASHu5176BACKSLASHu4ED6: BACKSLASHu5176BACKSLASHu4ED6 = "\u5176\u4ED6".asInstanceOf[BACKSLASHu5176BACKSLASHu4ED6]
+  @js.native
+  sealed trait 其他 extends js.Object
+  
   @scala.inline
   def LineString: LineString = "LineString".asInstanceOf[LineString]
   @scala.inline
@@ -85,5 +83,7 @@ object wxDashServerDashSdkStrings {
   def wx_http: wx_http = "wx_http".asInstanceOf[wx_http]
   @scala.inline
   def wx_unknown: wx_unknown = "wx_unknown".asInstanceOf[wx_unknown]
+  @scala.inline
+  def 其他: 其他 = "\u5176\u4ED6".asInstanceOf[其他]
 }
 

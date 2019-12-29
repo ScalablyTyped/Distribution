@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.DOCX
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.JPG
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.PDF
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.PNG
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.SVG
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.XLSX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

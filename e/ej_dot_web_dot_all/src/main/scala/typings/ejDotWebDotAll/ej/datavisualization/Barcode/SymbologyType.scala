@@ -1,18 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Barcode
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Codabar
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code11
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128A
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128B
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128C
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code32
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code39
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code39Extended
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code93
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code93Extended
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.DataMatrix
-import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.QRBarcode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

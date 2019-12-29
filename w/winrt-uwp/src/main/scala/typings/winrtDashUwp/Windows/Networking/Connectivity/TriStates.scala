@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.doNotCare
-import typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.no
-import typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

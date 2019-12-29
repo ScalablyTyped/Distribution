@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object logger extends js.Object {
   def apply(): LoggerInterface = js.native
-  def apply(`_`: Double): LoggerInterface = js.native
-  def apply(`_`: Double, method: String): LoggerInterface = js.native
+  def apply(_underscore: Double): LoggerInterface = js.native
+  def apply(_underscore: Double, method: String): LoggerInterface = js.native
 }
 

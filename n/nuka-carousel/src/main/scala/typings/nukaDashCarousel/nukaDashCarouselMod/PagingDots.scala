@@ -11,7 +11,6 @@ class PagingDots ()
   extends Component[PagingDotsProps, js.Object, js.Any] {
   def getButtonStyles(active: Boolean): typings.react.reactMod.CSSProperties = js.native
   def getDotIndexes(slideCount: Double, slidesToScroll: Double, slidesToShow: Double, cellAlign: CarouselCellAlignProp): js.Array[Double] = js.native
-  def getListItemStyles(): typings.react.reactMod.CSSProperties = js.native
   def getListStyles(): typings.react.reactMod.CSSProperties = js.native
 }
 

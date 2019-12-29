@@ -11,7 +11,8 @@ class AutoCaptions protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.AutoCaptions_typekey`: AutoCaptions = js.native
+  @JSName("Word.AutoCaptions_typekey")
+  var WordDotAutoCaptions_typekey: AutoCaptions = js.native
   def CancelAutoInsert(): Unit = js.native
   def Item(Index: js.Any): AutoCaption = js.native
 }

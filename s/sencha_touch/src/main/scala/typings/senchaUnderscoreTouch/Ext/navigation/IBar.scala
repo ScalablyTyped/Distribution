@@ -10,7 +10,7 @@ trait IBar extends ITitleBar {
   var androidAnimation: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
   @JSName("cls")
-  var cls_IBar: js.UndefOr[java.lang.String] = js.undefined
+  var cls_IBar: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of androidAnimation
   		* @returns Boolean
   		*/
@@ -26,7 +26,7 @@ object IBar {
   def apply(
     ITitleBar: ITitleBar = null,
     androidAnimation: js.UndefOr[Boolean] = js.undefined,
-    cls: java.lang.String = null,
+    cls: String = null,
     getAndroidAnimation: () => Boolean = null,
     setAndroidAnimation: /* androidAnimation */ js.UndefOr[Boolean] => Unit = null
   ): IBar = {

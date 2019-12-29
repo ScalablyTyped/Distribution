@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAltBearertokenCallbackFieldsKey extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -30,27 +30,34 @@ trait Anon_AccesstokenAltBearertokenCallbackFieldsKey extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.native
   /** Experiment IDs the current request belongs to. */
-  var `requestMetadata.experimentIds`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.experimentIds")
+  var requestMetadataDotexperimentIds: js.UndefOr[String] = js.native
   /** Locale to use for the current request. */
-  var `requestMetadata.locale`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.locale")
+  var requestMetadataDotlocale: js.UndefOr[String] = js.native
   /** Google Partners session ID. */
-  var `requestMetadata.partnersSessionId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.partnersSessionId")
+  var requestMetadataDotpartnersSessionId: js.UndefOr[String] = js.native
   /**
     * Identifier to indicate where the traffic comes from.
     * An identifier has multiple letters created by a team which redirected the
     * traffic to us.
     */
-  var `requestMetadata.trafficSource.trafficSourceId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.trafficSource.trafficSourceId")
+  var requestMetadataDottrafficSourceDottrafficSourceId: js.UndefOr[String] = js.native
   /**
     * Second level identifier to indicate where the traffic comes from.
     * An identifier has multiple letters created by a team which redirected the
     * traffic to us.
     */
-  var `requestMetadata.trafficSource.trafficSubId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.trafficSource.trafficSubId")
+  var requestMetadataDottrafficSourceDottrafficSubId: js.UndefOr[String] = js.native
   /** IP address to use instead of the user's geo-located IP address. */
-  var `requestMetadata.userOverrides.ipAddress`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.userOverrides.ipAddress")
+  var requestMetadataDotuserOverridesDotipAddress: js.UndefOr[String] = js.native
   /** Logged-in user ID to impersonate instead of the user's ID. */
-  var `requestMetadata.userOverrides.userId`: js.UndefOr[String] = js.native
+  @JSName("requestMetadata.userOverrides.userId")
+  var requestMetadataDotuserOverridesDotuserId: js.UndefOr[String] = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */

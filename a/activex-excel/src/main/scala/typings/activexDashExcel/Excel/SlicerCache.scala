@@ -10,7 +10,8 @@ class SlicerCache protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var CrossFilterType: XlSlicerCrossFilterType = js.native
-  var `Excel.SlicerCache_typekey`: SlicerCache = js.native
+  @JSName("Excel.SlicerCache_typekey")
+  var ExcelDotSlicerCache_typekey: SlicerCache = js.native
   val Index: Double = js.native
   var Name: String = js.native
   val OLAP: Boolean = js.native

@@ -1,13 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.AttachmentType.BoundingBox
-import typings.phaser.spine.AttachmentType.Clipping
-import typings.phaser.spine.AttachmentType.LinkedMesh
-import typings.phaser.spine.AttachmentType.Mesh
-import typings.phaser.spine.AttachmentType.Path
-import typings.phaser.spine.AttachmentType.Point
-import typings.phaser.spine.AttachmentType.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

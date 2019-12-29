@@ -1,9 +1,5 @@
 package typings.labeledDashStreamDashSplicer
 
-import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.Index
-import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.LabeledStreamList
-import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.Stream
-import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.splicer
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream

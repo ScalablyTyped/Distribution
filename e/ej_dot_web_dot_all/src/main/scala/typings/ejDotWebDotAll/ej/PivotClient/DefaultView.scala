@@ -1,7 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotClient
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotClient.DefaultView.Chart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,8 +25,7 @@ object DefaultView extends js.Object {
   object Chart extends TopLevel[Chart with Double]
   
   /* 1 */ @js.native
-  object Grid
-    extends TopLevel[typings.ejDotWebDotAll.ej.PivotClient.DefaultView.Grid with Double]
+  object Grid extends TopLevel[Grid with Double]
   
 }
 

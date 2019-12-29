@@ -1,6 +1,6 @@
 package typings.expressDashUseragent.expressDashUseragentMod
 
-import typings.expressDashUseragent.expressDashUseragentNumbers.`false`
+import typings.expressDashUseragent.expressDashUseragentBooleans.`false`
 import typings.expressDashUseragent.expressDashUseragentStrings.CaptiveNetwork
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -49,7 +49,7 @@ object shopifyDashPrimeStrings {
        with _PublishedStatus
   
   @js.native
-  sealed trait `app/uninstalled` extends _WebhookTopic
+  sealed trait appSlashuninstalled extends _WebhookTopic
   
   @js.native
   sealed trait applies_to_resource extends js.Object
@@ -70,31 +70,31 @@ object shopifyDashPrimeStrings {
   sealed trait capture extends _TransactionKind
   
   @js.native
-  sealed trait `carts/create` extends _WebhookTopic
+  sealed trait cartsSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `carts/update` extends _WebhookTopic
+  sealed trait cartsSlashupdate extends _WebhookTopic
   
   @js.native
-  sealed trait `checkouts/create` extends _WebhookTopic
+  sealed trait checkoutsSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `checkouts/delete` extends _WebhookTopic
+  sealed trait checkoutsSlashdelete extends _WebhookTopic
   
   @js.native
-  sealed trait `checkouts/update` extends _WebhookTopic
+  sealed trait checkoutsSlashupdate extends _WebhookTopic
   
   @js.native
   sealed trait closed extends _OrderStatus
   
   @js.native
-  sealed trait `collections/create` extends _WebhookTopic
+  sealed trait collectionsSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `collections/delete` extends _WebhookTopic
+  sealed trait collectionsSlashdelete extends _WebhookTopic
   
   @js.native
-  sealed trait `collections/update` extends _WebhookTopic
+  sealed trait collectionsSlashupdate extends _WebhookTopic
   
   @js.native
   sealed trait custom_collection extends js.Object
@@ -103,28 +103,28 @@ object shopifyDashPrimeStrings {
   sealed trait customer extends _OrderCancelReason
   
   @js.native
-  sealed trait `customer_groups/create` extends _WebhookTopic
+  sealed trait customer_groupsSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `customer_groups/delete` extends _WebhookTopic
+  sealed trait customer_groupsSlashdelete extends _WebhookTopic
   
   @js.native
-  sealed trait `customer_groups/update` extends _WebhookTopic
+  sealed trait customer_groupsSlashupdate extends _WebhookTopic
   
   @js.native
-  sealed trait `customers/create` extends _WebhookTopic
+  sealed trait customersSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `customers/delete` extends _WebhookTopic
+  sealed trait customersSlashdelete extends _WebhookTopic
   
   @js.native
-  sealed trait `customers/disable` extends _WebhookTopic
+  sealed trait customersSlashdisable extends _WebhookTopic
   
   @js.native
-  sealed trait `customers/enable` extends _WebhookTopic
+  sealed trait customersSlashenable extends _WebhookTopic
   
   @js.native
-  sealed trait `customers/update` extends _WebhookTopic
+  sealed trait customersSlashupdate extends _WebhookTopic
   
   @js.native
   sealed trait declined extends js.Object
@@ -139,10 +139,10 @@ object shopifyDashPrimeStrings {
   sealed trait demo extends js.Object
   
   @js.native
-  sealed trait `disputes/create` extends _WebhookTopic
+  sealed trait disputesSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `disputes/update` extends _WebhookTopic
+  sealed trait disputesSlashupdate extends _WebhookTopic
   
   @js.native
   sealed trait each extends js.Object
@@ -169,10 +169,10 @@ object shopifyDashPrimeStrings {
   sealed trait fulfilled extends js.Object
   
   @js.native
-  sealed trait `fulfillments/create` extends _WebhookTopic
+  sealed trait fulfillmentsSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `fulfillments/update` extends _WebhookTopic
+  sealed trait fulfillmentsSlashupdate extends _WebhookTopic
   
   @js.native
   sealed trait integer extends js.Object
@@ -208,28 +208,28 @@ object shopifyDashPrimeStrings {
   sealed trait order_status extends _ScriptTagDisplayScope
   
   @js.native
-  sealed trait `order_transations/create` extends _WebhookTopic
+  sealed trait order_transationsSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `orders/cancelled` extends _WebhookTopic
+  sealed trait ordersSlashcancelled extends _WebhookTopic
   
   @js.native
-  sealed trait `orders/create` extends _WebhookTopic
+  sealed trait ordersSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `orders/delete` extends _WebhookTopic
+  sealed trait ordersSlashdelete extends _WebhookTopic
   
   @js.native
-  sealed trait `orders/fulfilled` extends _WebhookTopic
+  sealed trait ordersSlashfulfilled extends _WebhookTopic
   
   @js.native
-  sealed trait `orders/paid` extends _WebhookTopic
+  sealed trait ordersSlashpaid extends _WebhookTopic
   
   @js.native
-  sealed trait `orders/partially_fulfilled` extends _WebhookTopic
+  sealed trait ordersSlashpartially_fulfilled extends _WebhookTopic
   
   @js.native
-  sealed trait `orders/updated` extends _WebhookTopic
+  sealed trait ordersSlashupdated extends _WebhookTopic
   
   @js.native
   sealed trait other extends _OrderCancelReason
@@ -261,13 +261,13 @@ object shopifyDashPrimeStrings {
   sealed trait prerequisite extends js.Object
   
   @js.native
-  sealed trait `products/create` extends _WebhookTopic
+  sealed trait productsSlashcreate extends _WebhookTopic
   
   @js.native
-  sealed trait `products/delete` extends _WebhookTopic
+  sealed trait productsSlashdelete extends _WebhookTopic
   
   @js.native
-  sealed trait `products/update` extends _WebhookTopic
+  sealed trait productsSlashupdate extends _WebhookTopic
   
   @js.native
   sealed trait published extends _PublishedStatus
@@ -309,7 +309,7 @@ object shopifyDashPrimeStrings {
   sealed trait refunded extends _FinancialStatus
   
   @js.native
-  sealed trait `refunds/create` extends _WebhookTopic
+  sealed trait refundsSlashcreate extends _WebhookTopic
   
   @js.native
   sealed trait sale extends _TransactionKind
@@ -324,7 +324,7 @@ object shopifyDashPrimeStrings {
   sealed trait shipping_line extends js.Object
   
   @js.native
-  sealed trait `shop/update` extends _WebhookTopic
+  sealed trait shopSlashupdate extends _WebhookTopic
   
   @js.native
   sealed trait string extends js.Object
@@ -333,7 +333,7 @@ object shopifyDashPrimeStrings {
   sealed trait success extends _TransactionStatus
   
   @js.native
-  sealed trait `themes/publish` extends _WebhookTopic
+  sealed trait themesSlashpublish extends _WebhookTopic
   
   @js.native
   sealed trait unpaid extends _FinancialStatus
@@ -402,7 +402,7 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
-  def `app/uninstalled`: `app/uninstalled` = "app/uninstalled".asInstanceOf[`app/uninstalled`]
+  def appSlashuninstalled: appSlashuninstalled = "app/uninstalled".asInstanceOf[appSlashuninstalled]
   @scala.inline
   def applies_to_resource: applies_to_resource = "applies_to_resource".asInstanceOf[applies_to_resource]
   @scala.inline
@@ -416,43 +416,43 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def capture: capture = "capture".asInstanceOf[capture]
   @scala.inline
-  def `carts/create`: `carts/create` = "carts/create".asInstanceOf[`carts/create`]
+  def cartsSlashcreate: cartsSlashcreate = "carts/create".asInstanceOf[cartsSlashcreate]
   @scala.inline
-  def `carts/update`: `carts/update` = "carts/update".asInstanceOf[`carts/update`]
+  def cartsSlashupdate: cartsSlashupdate = "carts/update".asInstanceOf[cartsSlashupdate]
   @scala.inline
-  def `checkouts/create`: `checkouts/create` = "checkouts/create".asInstanceOf[`checkouts/create`]
+  def checkoutsSlashcreate: checkoutsSlashcreate = "checkouts/create".asInstanceOf[checkoutsSlashcreate]
   @scala.inline
-  def `checkouts/delete`: `checkouts/delete` = "checkouts/delete".asInstanceOf[`checkouts/delete`]
+  def checkoutsSlashdelete: checkoutsSlashdelete = "checkouts/delete".asInstanceOf[checkoutsSlashdelete]
   @scala.inline
-  def `checkouts/update`: `checkouts/update` = "checkouts/update".asInstanceOf[`checkouts/update`]
+  def checkoutsSlashupdate: checkoutsSlashupdate = "checkouts/update".asInstanceOf[checkoutsSlashupdate]
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline
-  def `collections/create`: `collections/create` = "collections/create".asInstanceOf[`collections/create`]
+  def collectionsSlashcreate: collectionsSlashcreate = "collections/create".asInstanceOf[collectionsSlashcreate]
   @scala.inline
-  def `collections/delete`: `collections/delete` = "collections/delete".asInstanceOf[`collections/delete`]
+  def collectionsSlashdelete: collectionsSlashdelete = "collections/delete".asInstanceOf[collectionsSlashdelete]
   @scala.inline
-  def `collections/update`: `collections/update` = "collections/update".asInstanceOf[`collections/update`]
+  def collectionsSlashupdate: collectionsSlashupdate = "collections/update".asInstanceOf[collectionsSlashupdate]
   @scala.inline
   def custom_collection: custom_collection = "custom_collection".asInstanceOf[custom_collection]
   @scala.inline
   def customer: customer = "customer".asInstanceOf[customer]
   @scala.inline
-  def `customer_groups/create`: `customer_groups/create` = "customer_groups/create".asInstanceOf[`customer_groups/create`]
+  def customer_groupsSlashcreate: customer_groupsSlashcreate = "customer_groups/create".asInstanceOf[customer_groupsSlashcreate]
   @scala.inline
-  def `customer_groups/delete`: `customer_groups/delete` = "customer_groups/delete".asInstanceOf[`customer_groups/delete`]
+  def customer_groupsSlashdelete: customer_groupsSlashdelete = "customer_groups/delete".asInstanceOf[customer_groupsSlashdelete]
   @scala.inline
-  def `customer_groups/update`: `customer_groups/update` = "customer_groups/update".asInstanceOf[`customer_groups/update`]
+  def customer_groupsSlashupdate: customer_groupsSlashupdate = "customer_groups/update".asInstanceOf[customer_groupsSlashupdate]
   @scala.inline
-  def `customers/create`: `customers/create` = "customers/create".asInstanceOf[`customers/create`]
+  def customersSlashcreate: customersSlashcreate = "customers/create".asInstanceOf[customersSlashcreate]
   @scala.inline
-  def `customers/delete`: `customers/delete` = "customers/delete".asInstanceOf[`customers/delete`]
+  def customersSlashdelete: customersSlashdelete = "customers/delete".asInstanceOf[customersSlashdelete]
   @scala.inline
-  def `customers/disable`: `customers/disable` = "customers/disable".asInstanceOf[`customers/disable`]
+  def customersSlashdisable: customersSlashdisable = "customers/disable".asInstanceOf[customersSlashdisable]
   @scala.inline
-  def `customers/enable`: `customers/enable` = "customers/enable".asInstanceOf[`customers/enable`]
+  def customersSlashenable: customersSlashenable = "customers/enable".asInstanceOf[customersSlashenable]
   @scala.inline
-  def `customers/update`: `customers/update` = "customers/update".asInstanceOf[`customers/update`]
+  def customersSlashupdate: customersSlashupdate = "customers/update".asInstanceOf[customersSlashupdate]
   @scala.inline
   def declined: declined = "declined".asInstanceOf[declined]
   @scala.inline
@@ -462,9 +462,9 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def demo: demo = "demo".asInstanceOf[demo]
   @scala.inline
-  def `disputes/create`: `disputes/create` = "disputes/create".asInstanceOf[`disputes/create`]
+  def disputesSlashcreate: disputesSlashcreate = "disputes/create".asInstanceOf[disputesSlashcreate]
   @scala.inline
-  def `disputes/update`: `disputes/update` = "disputes/update".asInstanceOf[`disputes/update`]
+  def disputesSlashupdate: disputesSlashupdate = "disputes/update".asInstanceOf[disputesSlashupdate]
   @scala.inline
   def each: each = "each".asInstanceOf[each]
   @scala.inline
@@ -482,9 +482,9 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
   @scala.inline
-  def `fulfillments/create`: `fulfillments/create` = "fulfillments/create".asInstanceOf[`fulfillments/create`]
+  def fulfillmentsSlashcreate: fulfillmentsSlashcreate = "fulfillments/create".asInstanceOf[fulfillmentsSlashcreate]
   @scala.inline
-  def `fulfillments/update`: `fulfillments/update` = "fulfillments/update".asInstanceOf[`fulfillments/update`]
+  def fulfillmentsSlashupdate: fulfillmentsSlashupdate = "fulfillments/update".asInstanceOf[fulfillmentsSlashupdate]
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
@@ -508,21 +508,21 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def order_status: order_status = "order_status".asInstanceOf[order_status]
   @scala.inline
-  def `order_transations/create`: `order_transations/create` = "order_transations/create".asInstanceOf[`order_transations/create`]
+  def order_transationsSlashcreate: order_transationsSlashcreate = "order_transations/create".asInstanceOf[order_transationsSlashcreate]
   @scala.inline
-  def `orders/cancelled`: `orders/cancelled` = "orders/cancelled".asInstanceOf[`orders/cancelled`]
+  def ordersSlashcancelled: ordersSlashcancelled = "orders/cancelled".asInstanceOf[ordersSlashcancelled]
   @scala.inline
-  def `orders/create`: `orders/create` = "orders/create".asInstanceOf[`orders/create`]
+  def ordersSlashcreate: ordersSlashcreate = "orders/create".asInstanceOf[ordersSlashcreate]
   @scala.inline
-  def `orders/delete`: `orders/delete` = "orders/delete".asInstanceOf[`orders/delete`]
+  def ordersSlashdelete: ordersSlashdelete = "orders/delete".asInstanceOf[ordersSlashdelete]
   @scala.inline
-  def `orders/fulfilled`: `orders/fulfilled` = "orders/fulfilled".asInstanceOf[`orders/fulfilled`]
+  def ordersSlashfulfilled: ordersSlashfulfilled = "orders/fulfilled".asInstanceOf[ordersSlashfulfilled]
   @scala.inline
-  def `orders/paid`: `orders/paid` = "orders/paid".asInstanceOf[`orders/paid`]
+  def ordersSlashpaid: ordersSlashpaid = "orders/paid".asInstanceOf[ordersSlashpaid]
   @scala.inline
-  def `orders/partially_fulfilled`: `orders/partially_fulfilled` = "orders/partially_fulfilled".asInstanceOf[`orders/partially_fulfilled`]
+  def ordersSlashpartially_fulfilled: ordersSlashpartially_fulfilled = "orders/partially_fulfilled".asInstanceOf[ordersSlashpartially_fulfilled]
   @scala.inline
-  def `orders/updated`: `orders/updated` = "orders/updated".asInstanceOf[`orders/updated`]
+  def ordersSlashupdated: ordersSlashupdated = "orders/updated".asInstanceOf[ordersSlashupdated]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
@@ -542,11 +542,11 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def prerequisite: prerequisite = "prerequisite".asInstanceOf[prerequisite]
   @scala.inline
-  def `products/create`: `products/create` = "products/create".asInstanceOf[`products/create`]
+  def productsSlashcreate: productsSlashcreate = "products/create".asInstanceOf[productsSlashcreate]
   @scala.inline
-  def `products/delete`: `products/delete` = "products/delete".asInstanceOf[`products/delete`]
+  def productsSlashdelete: productsSlashdelete = "products/delete".asInstanceOf[productsSlashdelete]
   @scala.inline
-  def `products/update`: `products/update` = "products/update".asInstanceOf[`products/update`]
+  def productsSlashupdate: productsSlashupdate = "products/update".asInstanceOf[productsSlashupdate]
   @scala.inline
   def published: published = "published".asInstanceOf[published]
   @scala.inline
@@ -574,7 +574,7 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def refunded: refunded = "refunded".asInstanceOf[refunded]
   @scala.inline
-  def `refunds/create`: `refunds/create` = "refunds/create".asInstanceOf[`refunds/create`]
+  def refundsSlashcreate: refundsSlashcreate = "refunds/create".asInstanceOf[refundsSlashcreate]
   @scala.inline
   def sale: sale = "sale".asInstanceOf[sale]
   @scala.inline
@@ -584,13 +584,13 @@ object shopifyDashPrimeStrings {
   @scala.inline
   def shipping_line: shipping_line = "shipping_line".asInstanceOf[shipping_line]
   @scala.inline
-  def `shop/update`: `shop/update` = "shop/update".asInstanceOf[`shop/update`]
+  def shopSlashupdate: shopSlashupdate = "shop/update".asInstanceOf[shopSlashupdate]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
-  def `themes/publish`: `themes/publish` = "themes/publish".asInstanceOf[`themes/publish`]
+  def themesSlashpublish: themesSlashpublish = "themes/publish".asInstanceOf[themesSlashpublish]
   @scala.inline
   def unpaid: unpaid = "unpaid".asInstanceOf[unpaid]
   @scala.inline

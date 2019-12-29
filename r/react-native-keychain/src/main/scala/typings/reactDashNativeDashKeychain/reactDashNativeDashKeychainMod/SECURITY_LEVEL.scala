@@ -1,9 +1,6 @@
 package typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod.SECURITY_LEVEL.ANY
-import typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod.SECURITY_LEVEL.SECURE_HARDWARE
-import typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod.SECURITY_LEVEL.SECURE_SOFTWARE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

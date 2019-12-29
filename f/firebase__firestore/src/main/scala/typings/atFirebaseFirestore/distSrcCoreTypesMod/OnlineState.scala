@@ -1,9 +1,6 @@
 package typings.atFirebaseFirestore.distSrcCoreTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Offline
-import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Online
-import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

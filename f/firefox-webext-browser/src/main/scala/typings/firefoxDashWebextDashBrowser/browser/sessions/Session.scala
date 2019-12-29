@@ -1,6 +1,7 @@
 package typings.firefoxDashWebextDashBrowser.browser.sessions
 
 import typings.firefoxDashWebextDashBrowser.browser.tabs.Tab
+import typings.firefoxDashWebextDashBrowser.browser.windows.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,16 +14,12 @@ trait Session extends js.Object {
   /**
     * The `windows.Window`, if this entry describes a window. Either this or `sessions.Session.tab` will be set.
     */
-  var window: js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.undefined
+  var window: js.UndefOr[Window] = js.undefined
 }
 
 object Session {
   @scala.inline
-  def apply(
-    lastModified: Double,
-    tab: Tab = null,
-    window: typings.firefoxDashWebextDashBrowser.browser.windows.Window = null
-  ): Session = {
+  def apply(lastModified: Double, tab: Tab = null, window: Window = null): Session = {
     val __obj = js.Dynamic.literal(lastModified = lastModified.asInstanceOf[js.Any])
     if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])

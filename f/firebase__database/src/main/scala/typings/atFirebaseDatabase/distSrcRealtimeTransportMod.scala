@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.atFirebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo
-import typings.atFirebaseDatabase.distSrcRealtimeTransportMod.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,12 +58,7 @@ object distSrcRealtimeTransportMod extends js.Object {
   
   @js.native
   trait TransportConstructor
-    extends Instantiable2[
-          /* connId */ String, 
-          (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
-          js.Any | Transport
-        ]
-       with Instantiable3[
+    extends Instantiable3[
           /* connId */ String, 
           (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
           /* transportSessionId */ String, 
@@ -75,6 +69,11 @@ object distSrcRealtimeTransportMod extends js.Object {
           (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
           /* transportSessionId */ String, 
           /* lastSessionId */ String, 
+          js.Any | Transport
+        ]
+       with Instantiable2[
+          /* connId */ String, 
+          (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
           js.Any | Transport
         ] {
     var healthyTimeout: js.UndefOr[Double] = js.native

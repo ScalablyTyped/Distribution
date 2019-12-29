@@ -1,10 +1,6 @@
 package typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Added
-import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Metadata
-import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Modified
-import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,13 +1,6 @@
 package typings.navermaps.naver.maps.drawing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.drawing.DrawingMode.ARROWLINE
-import typings.navermaps.naver.maps.drawing.DrawingMode.ELLIPSE
-import typings.navermaps.naver.maps.drawing.DrawingMode.HAND
-import typings.navermaps.naver.maps.drawing.DrawingMode.MARKER
-import typings.navermaps.naver.maps.drawing.DrawingMode.POLYGON
-import typings.navermaps.naver.maps.drawing.DrawingMode.POLYLINE
-import typings.navermaps.naver.maps.drawing.DrawingMode.RECTANGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

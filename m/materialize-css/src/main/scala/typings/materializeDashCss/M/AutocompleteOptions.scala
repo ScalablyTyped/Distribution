@@ -22,7 +22,7 @@ trait AutocompleteOptions extends js.Object {
   /**
     * Callback for when autocompleted.
     */
-  def onAutocomplete(`this`: Autocomplete, text: String): Unit
+  def onAutocomplete(text: String): Unit
   /**
     * Sort function that defines the order of the list of autocomplete options.
     */
@@ -35,10 +35,10 @@ object AutocompleteOptions {
     data: AutocompleteData,
     limit: Double,
     minLength: Double,
-    onAutocomplete: (Autocomplete, String) => Unit,
+    onAutocomplete: String => Unit,
     sortFunction: (String, String, String) => Double
   ): AutocompleteOptions = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], onAutocomplete = js.Any.fromFunction2(onAutocomplete), sortFunction = js.Any.fromFunction3(sortFunction))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], onAutocomplete = js.Any.fromFunction1(onAutocomplete), sortFunction = js.Any.fromFunction3(sortFunction))
   
     __obj.asInstanceOf[AutocompleteOptions]
   }

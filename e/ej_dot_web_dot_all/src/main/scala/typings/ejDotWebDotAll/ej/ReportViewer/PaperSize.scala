@@ -1,17 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.A3
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.B4_JIS
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.B5_JIS
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Custom
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Envelope_10
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Envelope_Monarch
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Executive
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Legal
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Letter
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Portrait
-import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Tabloid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

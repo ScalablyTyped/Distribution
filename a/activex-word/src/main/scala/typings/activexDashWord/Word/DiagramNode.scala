@@ -19,7 +19,8 @@ class DiagramNode protected () extends js.Object {
   val Root: DiagramNode = js.native
   val Shape: typings.activexDashWord.Word.Shape = js.native
   val TextShape: typings.activexDashWord.Word.Shape = js.native
-  var `Word.DiagramNode_typekey`: DiagramNode = js.native
+  @JSName("Word.DiagramNode_typekey")
+  var WordDotDiagramNode_typekey: DiagramNode = js.native
   /**
     * @param Office.MsoRelativeNodePosition [Pos=2]
     * @param Office.MsoDiagramNodeType [NodeType=1]

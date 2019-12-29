@@ -58,7 +58,7 @@ trait TressStatic extends js.Object {
   		 * A callback that is called when job failed (worker call done with error as first argument).
   		 * Note, that this callback is called after job has been moved from active to failed/finished and after job callback (from push/unshift) was called
   		 */
-  def error(`this`: TressJobData, err: Error, job: TressJobData, args: js.Any*): Unit = js.native
+  def error(err: Error, job: TressJobData, args: js.Any*): Unit = js.native
   // Methods
   /**
   		 * Returns false if there are items waiting or being processed,
@@ -100,7 +100,7 @@ trait TressStatic extends js.Object {
   /**
   		 * A  callback that is called when job returned to queue (worker call done with boolean as first argument)
   		 */
-  def retry(`this`: TressJobData, args: js.Any*): Unit = js.native
+  def retry(args: js.Any*): Unit = js.native
   /**
   		 * Returns the number of items currently being processed
   		 */
@@ -122,7 +122,7 @@ trait TressStatic extends js.Object {
   		 * A callback that is called when job correctly finished (worker call done with null or undefined as first argument).
   		 * Note, that this callback is called after job has been moved from active to failed/finished and after job callback (from push/unshift) was called
   		 */
-  def success(`this`: TressJobData, args: js.Any*): Unit = js.native
+  def success(args: js.Any*): Unit = js.native
   /**
   		 * A callback that is called when the number of running workers is less than the concurrency & buffer limits, and further jobs will not be queued
   		 */

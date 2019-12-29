@@ -17,7 +17,7 @@ trait RenderOptions extends js.Object {
 object RenderOptions {
   @scala.inline
   def apply(
-    Evaluator: Instantiable0[typings.stylus.stylusMod.Stylus.Evaluator] = null,
+    Evaluator: Instantiable0[Evaluator] = null,
     filename: String = null,
     functions: Dictionary[_] = null,
     globals: Dictionary[_] = null,

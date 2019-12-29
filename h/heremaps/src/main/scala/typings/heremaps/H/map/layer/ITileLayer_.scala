@@ -1,5 +1,6 @@
 package typings.heremaps.H.map.layer
 
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.layer.ITileLayer.Response
 import typings.heremaps.H.map.provider.Tile
 import typings.heremaps.H.math.Point
@@ -37,12 +38,7 @@ trait ITileLayer_ extends js.Object {
     * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
     * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
     */
-  def requestTiles(
-    boundingRect: typings.heremaps.H.geo.Rect,
-    zoomLevel: Double,
-    cacheOnly: Boolean,
-    prioCenter: Point
-  ): Response
+  def requestTiles(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response
 }
 
 object ITileLayer_ {
@@ -50,7 +46,7 @@ object ITileLayer_ {
   def apply(
     cancelTile: (Double, Double, Double) => Unit,
     requestTile: (Double, Double, Double, Boolean) => Tile | Unit,
-    requestTiles: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => Response
+    requestTiles: (Rect, Double, Boolean, Point) => Response
   ): ITileLayer_ = {
     val __obj = js.Dynamic.literal(cancelTile = js.Any.fromFunction3(cancelTile), requestTile = js.Any.fromFunction4(requestTile), requestTiles = js.Any.fromFunction4(requestTiles))
   

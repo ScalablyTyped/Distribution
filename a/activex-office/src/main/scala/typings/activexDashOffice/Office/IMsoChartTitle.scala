@@ -25,7 +25,8 @@ class IMsoChartTitle protected () extends js.Object {
   val Interior: IMsoInterior = js.native
   var Left: Double = js.native
   val Name: String = js.native
-  var `Office.IMsoChartTitle_typekey`: IMsoChartTitle = js.native
+  @JSName("Office.IMsoChartTitle_typekey")
+  var OfficeDotIMsoChartTitle_typekey: IMsoChartTitle = js.native
   var Orientation: js.Any = js.native
   val Parent: js.Any = js.native
   var Position: XlChartElementPosition = js.native

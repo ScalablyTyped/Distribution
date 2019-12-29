@@ -1,6 +1,5 @@
 package typings.vec3
 
-import typings.vec3.vec3Mod.Vec3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

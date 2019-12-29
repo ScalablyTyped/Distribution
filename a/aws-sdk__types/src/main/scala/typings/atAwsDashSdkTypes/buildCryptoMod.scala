@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.ascii
 import typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.latin1
 import typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.utf8
-import typings.atAwsDashSdkTypes.buildCryptoMod.Hash
-import typings.atAwsDashSdkTypes.buildCryptoMod.SourceData
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Uint8Array

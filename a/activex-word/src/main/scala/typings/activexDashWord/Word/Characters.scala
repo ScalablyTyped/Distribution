@@ -13,7 +13,8 @@ class Characters protected () extends js.Object {
   val First: Range = js.native
   val Last: Range = js.native
   val Parent: js.Any = js.native
-  var `Word.Characters_typekey`: Characters = js.native
+  @JSName("Word.Characters_typekey")
+  var WordDotCharacters_typekey: Characters = js.native
   def Item(Index: Double): Range = js.native
 }
 

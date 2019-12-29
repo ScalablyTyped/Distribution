@@ -6,7 +6,6 @@ import typings.wonderDashFrp.distCommonjsObserverIObserverMod.IObserver
 import typings.wonderDashFrp.distCommonjsTestingMockObserverMod.MockObserver
 import typings.wonderDashFrp.distCommonjsTestingMockPromiseMod.MockPromise
 import typings.wonderDashFrp.distCommonjsTestingRecordMod.Record
-import typings.wonderDashFrp.distCommonjsTestingTestSchedulerMod.TestScheduler
 import typings.wonderDashFrp.distCommonjsTestingTestStreamMod.TestStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

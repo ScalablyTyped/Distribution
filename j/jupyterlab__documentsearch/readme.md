@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__documentsearch
 
-Typings are for version 1.1.3
+Typings are for version 1.2.2
 
 ## Library description:
 Document Search

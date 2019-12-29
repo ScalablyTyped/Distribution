@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.always
   - typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.optional
-  - typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.Empty
+  - typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings._empty
 */
 trait ExpressionType extends js.Object
 
 object ExpressionType {
   @scala.inline
-  def Empty: typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.Empty = this.cast("")
+  def _empty: typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings._empty = this.cast("")
   @scala.inline
   def always: typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.always = this.cast("always")
   @scala.inline

@@ -35,15 +35,15 @@ trait IFilter extends IBase {
   /** [Method] Returns the value of id
   		* @returns String
   		*/
-  var getId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of property
   		* @returns String
   		*/
-  var getProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of root
   		* @returns String
   		*/
-  var getRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of scope
   		* @returns Object
   		*/
@@ -53,11 +53,11 @@ trait IFilter extends IBase {
   		*/
   var getValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var property: js.UndefOr[java.lang.String] = js.undefined
+  var property: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of anyMatch
@@ -79,15 +79,15 @@ trait IFilter extends IBase {
   /** [Method] Sets the value of id
   		* @param id String The new value.
   		*/
-  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of property
   		* @param property String The new value.
   		*/
-  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of root
   		* @param root String The new value.
   		*/
-  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of scope
   		* @param scope Object The new value.
   		*/
@@ -113,34 +113,34 @@ object IFilter {
     config: js.Any = null,
     destroy: () => Unit = null,
     exactMatch: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     filterFn: js.Any = null,
     getAnyMatch: () => Boolean = null,
     getCaseSensitive: () => Boolean = null,
     getExactMatch: () => Boolean = null,
     getFilterFn: () => _ = null,
-    getId: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getProperty: () => java.lang.String = null,
-    getRoot: () => java.lang.String = null,
+    getId: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getProperty: () => String = null,
+    getRoot: () => String = null,
     getScope: () => _ = null,
     getValue: () => _ = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    property: java.lang.String = null,
-    root: java.lang.String = null,
+    property: String = null,
+    root: String = null,
     scope: js.Any = null,
     self: IClass = null,
     setAnyMatch: /* anyMatch */ js.UndefOr[Boolean] => Unit = null,
     setCaseSensitive: /* caseSensitive */ js.UndefOr[Boolean] => Unit = null,
     setExactMatch: /* exactMatch */ js.UndefOr[Boolean] => Unit = null,
     setFilterFn: /* filterFn */ js.UndefOr[js.Any] => Unit = null,
-    setId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    setProperty: /* property */ js.UndefOr[java.lang.String] => Unit = null,
-    setRoot: /* root */ js.UndefOr[java.lang.String] => Unit = null,
+    setId: /* id */ js.UndefOr[String] => Unit = null,
+    setProperty: /* property */ js.UndefOr[String] => Unit = null,
+    setRoot: /* root */ js.UndefOr[String] => Unit = null,
     setScope: /* scope */ js.UndefOr[js.Any] => Unit = null,
     setValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

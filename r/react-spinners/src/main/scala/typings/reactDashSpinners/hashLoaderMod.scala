@@ -2,7 +2,6 @@ package typings.reactDashSpinners
 
 import typings.atEmotionSerialize.atEmotionSerializeMod.Keyframes
 import typings.react.reactMod.Component
-import typings.reactDashSpinners.hashLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.CalcFunction
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction

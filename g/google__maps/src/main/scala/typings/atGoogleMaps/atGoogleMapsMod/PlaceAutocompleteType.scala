@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
   - typings.atGoogleMaps.atGoogleMapsStrings.geocode
   - typings.atGoogleMaps.atGoogleMapsStrings.address
   - typings.atGoogleMaps.atGoogleMapsStrings.establishment
-  - typings.atGoogleMaps.atGoogleMapsStrings.`(regions)`
-  - typings.atGoogleMaps.atGoogleMapsStrings.`(cities)`
+  - typings.atGoogleMaps.atGoogleMapsStrings.LeftparenthesisregionsRightparenthesis
+  - typings.atGoogleMaps.atGoogleMapsStrings.LeftparenthesiscitiesRightparenthesis
 */
 trait PlaceAutocompleteType extends js.Object
 
 object PlaceAutocompleteType {
   @scala.inline
-  def `(cities)`: typings.atGoogleMaps.atGoogleMapsStrings.`(cities)` = this.cast("(cities)")
+  def LeftparenthesiscitiesRightparenthesis: typings.atGoogleMaps.atGoogleMapsStrings.LeftparenthesiscitiesRightparenthesis = this.cast("(cities)")
   @scala.inline
-  def `(regions)`: typings.atGoogleMaps.atGoogleMapsStrings.`(regions)` = this.cast("(regions)")
+  def LeftparenthesisregionsRightparenthesis: typings.atGoogleMaps.atGoogleMapsStrings.LeftparenthesisregionsRightparenthesis = this.cast("(regions)")
   @scala.inline
   def address: typings.atGoogleMaps.atGoogleMapsStrings.address = this.cast("address")
   @scala.inline

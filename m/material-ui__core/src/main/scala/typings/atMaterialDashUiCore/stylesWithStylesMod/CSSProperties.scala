@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation._
      with // Allow pseudo selectors and media queries
 /* k */ StringDictionary[
       js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 494 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 493 */ js.Any
       ]
     ] {
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.undefined
@@ -90,7 +90,7 @@ object CSSProperties {
     StringDictionary: // Allow pseudo selectors and media queries
   /* k */ StringDictionary[
       js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 494 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 493 */ js.Any
       ]
     ] = null,
     VendorLonghandProperties: VendorLonghandProperties[Double | String] = null,

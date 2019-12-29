@@ -1,6 +1,6 @@
 package typings.h2o2.h2o2Mod
 
-import typings.h2o2.h2o2Numbers.`false`
+import typings.h2o2.h2o2Booleans.`false`
 import typings.h2o2.h2o2Strings.http
 import typings.h2o2.h2o2Strings.https
 import typings.h2o2.h2o2Strings.upstream

@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.SwipeDirection.Both
-import typings.openui5.sap.m.SwipeDirection.LeftToRight
-import typings.openui5.sap.m.SwipeDirection.RightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

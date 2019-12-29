@@ -35,7 +35,8 @@ class DefaultWebOptions protected () extends js.Object {
   var TargetBrowser: MsoTargetBrowser = js.native
   var UpdateLinksOnSave: Boolean = js.native
   var UseLongFileNames: Boolean = js.native
-  var `Word.DefaultWebOptions_typekey`: DefaultWebOptions = js.native
+  @JSName("Word.DefaultWebOptions_typekey")
+  var WordDotDefaultWebOptions_typekey: DefaultWebOptions = js.native
   def Fonts(Index: MsoCharacterSet): WebPageFont = js.native
 }
 

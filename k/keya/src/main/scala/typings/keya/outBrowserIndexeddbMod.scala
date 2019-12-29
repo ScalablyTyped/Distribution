@@ -1,6 +1,5 @@
 package typings.keya
 
-import typings.keya.outBrowserIndexeddbMod.IndexedDBStore
 import typings.std.IDBObjectStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`

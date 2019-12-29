@@ -3,7 +3,7 @@ package typings.semanticDashUiDashSticky.SemanticUI.StickySettings
 import typings.semanticDashUiDashSticky.JQuery
 import typings.semanticDashUiDashSticky.SemanticUI.Sticky.ClassNameSettings
 import typings.semanticDashUiDashSticky.SemanticUI.Sticky.ErrorSettings
-import typings.semanticDashUiDashSticky.semanticDashUiDashStickyNumbers.`false`
+import typings.semanticDashUiDashSticky.semanticDashUiDashStickyBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,29 +101,29 @@ trait _Impl extends js.Object {
   /**
     * Callback when element is bound to bottom of parent container
     */
-  def onBottom(`this`: JQuery): Unit
+  def onBottom(): Unit
   // endregion
   // region Callbacks
   /**
     * Callback when element is repositioned from layout change
     */
-  def onReposition(`this`: JQuery): Unit
+  def onReposition(): Unit
   /**
     * Callback when requestAnimationFrame fires from scroll handler.
     */
-  def onScroll(`this`: JQuery): Unit
+  def onScroll(): Unit
   /**
     * Callback when element is fixed to page
     */
-  def onStick(`this`: JQuery): Unit
+  def onStick(): Unit
   /**
     * Callback when element is bound to top of parent container
     */
-  def onTop(`this`: JQuery): Unit
+  def onTop(): Unit
   /**
     * Callback when element is unfixed from page
     */
-  def onUnstick(`this`: JQuery): Unit
+  def onUnstick(): Unit
 }
 
 object _Impl {
@@ -139,12 +139,12 @@ object _Impl {
     namespace: String,
     observeChanges: Boolean,
     offset: Double,
-    onBottom: JQuery => Unit,
-    onReposition: JQuery => Unit,
-    onScroll: JQuery => Unit,
-    onStick: JQuery => Unit,
-    onTop: JQuery => Unit,
-    onUnstick: JQuery => Unit,
+    onBottom: () => Unit,
+    onReposition: () => Unit,
+    onScroll: () => Unit,
+    onStick: () => Unit,
+    onTop: () => Unit,
+    onUnstick: () => Unit,
     performance: Boolean,
     pushing: Boolean,
     scrollContext: String | JQuery,
@@ -152,7 +152,7 @@ object _Impl {
     silent: Boolean,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onBottom = js.Any.fromFunction1(onBottom), onReposition = js.Any.fromFunction1(onReposition), onScroll = js.Any.fromFunction1(onScroll), onStick = js.Any.fromFunction1(onStick), onTop = js.Any.fromFunction1(onTop), onUnstick = js.Any.fromFunction1(onUnstick), performance = performance.asInstanceOf[js.Any], pushing = pushing.asInstanceOf[js.Any], scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onBottom = js.Any.fromFunction0(onBottom), onReposition = js.Any.fromFunction0(onReposition), onScroll = js.Any.fromFunction0(onScroll), onStick = js.Any.fromFunction0(onStick), onTop = js.Any.fromFunction0(onTop), onUnstick = js.Any.fromFunction0(onUnstick), performance = performance.asInstanceOf[js.Any], pushing = pushing.asInstanceOf[js.Any], scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

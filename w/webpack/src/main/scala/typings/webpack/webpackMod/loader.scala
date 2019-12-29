@@ -3,8 +3,6 @@ package typings.webpack.webpackMod
 import typings.node.Buffer
 import typings.sourceDashMap.sourceDashMapMod.RawSourceMap
 import typings.std.Error
-import typings.webpack.webpackMod.loader.LoaderContext
-import typings.webpack.webpackMod.loader.loaderCallback
 import typings.webpack.webpackStrings.`async-node`
 import typings.webpack.webpackStrings.`electron-main`
 import typings.webpack.webpackStrings.`electron-renderer`
@@ -42,10 +40,10 @@ object loader extends js.Object {
       * The compiler converts them between loaders.
       */
     var raw: js.UndefOr[Boolean] = js.native
-    def apply(`this`: LoaderContext, source: String): js.UndefOr[String | Buffer | Unit] = js.native
-    def apply(`this`: LoaderContext, source: String, sourceMap: RawSourceMap): js.UndefOr[String | Buffer | Unit] = js.native
-    def apply(`this`: LoaderContext, source: Buffer): js.UndefOr[String | Buffer | Unit] = js.native
-    def apply(`this`: LoaderContext, source: Buffer, sourceMap: RawSourceMap): js.UndefOr[String | Buffer | Unit] = js.native
+    def apply(source: String): js.UndefOr[String | Buffer | Unit] = js.native
+    def apply(source: String, sourceMap: RawSourceMap): js.UndefOr[String | Buffer | Unit] = js.native
+    def apply(source: Buffer): js.UndefOr[String | Buffer | Unit] = js.native
+    def apply(source: Buffer, sourceMap: RawSourceMap): js.UndefOr[String | Buffer | Unit] = js.native
   }
   
   @js.native

@@ -1,9 +1,6 @@
 package typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.CommandLine
-import typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.Memory
-import typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

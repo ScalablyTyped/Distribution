@@ -30,11 +30,7 @@ trait IDragDropElement extends js.Object {
   		* @returns String The value of the style property
   		*/
   var getStyle: js.UndefOr[
-    js.Function2[
-      /* el */ js.UndefOr[HTMLElement], 
-      /* styleProp */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ]
+    js.Function2[/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[String], String]
   ] = js.undefined
   /** [Method] Recursively searches the immediate parent and all child nodes for the handle element in order to determine wheter or
   		* @param node HTMLElement the html element to inspect
@@ -69,7 +65,7 @@ object IDragDropElement {
     getPosY: /* el */ js.UndefOr[HTMLElement] => Double = null,
     getScrollLeft: () => Double = null,
     getScrollTop: () => Double = null,
-    getStyle: (/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    getStyle: (/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[String]) => String = null,
     handleWasClicked: /* node */ js.UndefOr[HTMLElement] => Unit = null,
     moveToEl: (/* moveEl */ js.UndefOr[HTMLElement], /* targetEl */ js.UndefOr[HTMLElement]) => Unit = null,
     numericSort: (/* a */ js.UndefOr[Double], /* b */ js.UndefOr[Double]) => Double = null,

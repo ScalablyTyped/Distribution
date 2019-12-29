@@ -10,8 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IAuto
-  extends typings.extjs.Ext.layout.container.IContainer {
+trait IAuto extends IContainer {
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
   		* @param ownerContext Object
   		*/
@@ -40,12 +39,12 @@ trait IAuto
   		* @param ownerContext Ext.layout.ContextItem
   		* @returns String
   		*/
-  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], java.lang.String]] = js.undefined
+  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   /** [Method] Returns the overflow y style of the render target
   		* @param ownerContext Ext.layout.ContextItem
   		* @returns String
   		*/
-  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], java.lang.String]] = js.undefined
+  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   /** [Property] (Boolean) */
   var manageOverflow: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Boolean) */
@@ -84,16 +83,16 @@ object IAuto {
     configureItem: /* item */ js.UndefOr[js.Any] => Unit = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
     getContainerSize: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => _ = null,
     getElementTarget: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: /* item */ js.UndefOr[IComponent] => ISizePolicy = null,
     getLayoutItems: () => Array = null,
-    getOverflowXStyle: /* ownerContext */ js.UndefOr[IContextItem] => java.lang.String = null,
-    getOverflowYStyle: /* ownerContext */ js.UndefOr[IContextItem] => java.lang.String = null,
+    getOverflowXStyle: /* ownerContext */ js.UndefOr[IContextItem] => String = null,
+    getOverflowYStyle: /* ownerContext */ js.UndefOr[IContextItem] => String = null,
     getRenderTarget: () => IElement = null,
     getRenderedItems: () => Array = null,
     getTarget: () => IElement = null,
@@ -103,7 +102,7 @@ object IAuto {
     initLayout: () => Unit = null,
     isLayout: js.UndefOr[Boolean] = js.undefined,
     isValidParent: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     manageOverflow: js.UndefOr[Boolean] = js.undefined,
     managePadding: js.UndefOr[Boolean] = js.undefined,
     mixins: js.Any = null,

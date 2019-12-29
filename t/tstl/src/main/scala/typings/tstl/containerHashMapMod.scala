@@ -3,11 +3,10 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseContainerUniqueMapMod.UniqueMap
-import typings.tstl.containerHashMapMod.HashMap
 import typings.tstl.containerHashMapMod.HashMap.Iterator
 import typings.tstl.containerHashMapMod.HashMap.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlNumbers.`true`
+import typings.tstl.tstlBooleans.`true`
 import typings.tstl.utilityIPairMod.IPair
 import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js
@@ -101,22 +100,22 @@ object containerHashMapMod extends js.Object {
       last: (Iterator[Key, T]) | (typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]])
     ): Unit = js.native
     /**
+      * @inheritDoc
+      */
+    def begin(index: Double): Iterator[Key, T] = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("begin")
+    def begin_Iterator(): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    /**
       * Iterator to the first element in a specific bucket.
       *
       * @param index Index number of the specific bucket.
       * @return Iterator from the specific bucket.
       */
-    def begin(index: Double): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
-    /**
-      * @inheritDoc
-      */
     @JSName("begin")
-    def begin_Iterator(): Iterator[Key, T] = js.native
-    /**
-      * @inheritDoc
-      */
-    @JSName("begin")
-    def begin_Iterator(index: Double): Iterator[Key, T] = js.native
+    def begin_Iterator(index: Double): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
     /**
       * @inheritDoc
       */
@@ -149,33 +148,38 @@ object containerHashMapMod extends js.Object {
       */
     @JSName("emplace")
     def emplace_Pair(key: Key, `val`: T): Pair[Iterator[Key, T], Boolean] = js.native
+    @JSName("emplace_hint")
+    def emplace_hint_Iterator(
+      hint: typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]],
+      key: Key,
+      `val`: T
+    ): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
     /**
       * @inheritDoc
       */
-    @JSName("emplace_hint")
-    def emplace_hint_Iterator(hint: Iterator[Key, T], key: Key, `val`: T): Iterator[Key, T] = js.native
+    def end(index: Double): Iterator[Key, T] = js.native
+    /**
+      * @inheritDoc
+      */
+    @JSName("end")
+    def end_Iterator(): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
     /**
       * Iterator to the end in a specific bucket.
       *
       * @param index Index number of the specific bucket.
       * @return Iterator from the specific bucket.
       */
-    def end(index: Double): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    @JSName("end")
+    def end_Iterator(index: Double): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
     /**
       * @inheritDoc
       */
-    @JSName("end")
-    def end_Iterator(): Iterator[Key, T] = js.native
-    /**
-      * @inheritDoc
-      */
-    @JSName("end")
-    def end_Iterator(index: Double): Iterator[Key, T] = js.native
+    def erase(key: Key): Double = js.native
     /**
       * @inheritDoc
       */
     @JSName("find")
-    def find_Iterator(key: Key): Iterator[Key, T] = js.native
+    def find_Iterator(key: Key): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
     /**
       * @inheritDoc
       */

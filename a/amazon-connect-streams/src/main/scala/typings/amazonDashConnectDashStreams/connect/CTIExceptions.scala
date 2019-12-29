@@ -1,16 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.ACCESS_DENIED_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.BAD_ENDPOINT_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.INVALID_AGENT_ARNEXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.INVALID_CONFIGURATION_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.INVALID_CONTACT_TYPE_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.INVALID_STATE_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.PAGINATION_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.REFRESH_TOKEN_EXPIRED_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.SEND_DATA_FAILED_EXCEPTION
-import typings.amazonDashConnectDashStreams.connect.CTIExceptions.UNAUTHORIZED_EXCEPTION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

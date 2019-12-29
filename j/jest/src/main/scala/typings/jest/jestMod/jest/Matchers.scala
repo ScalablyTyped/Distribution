@@ -44,7 +44,7 @@ trait Matchers[R, T] extends js.Object {
     */
   def nthReturnedWith[E](n: Double, value: E): R = js.native
   /**
-    * Checks that a value is what you expect. It uses `===` to check strict equality.
+    * Checks that a value is what you expect. It uses `Object.is` to check strict equality.
     * Don't use `toBe` with floating-point numbers.
     *
     * Optionally, you can provide a type for the expected value via a generic.

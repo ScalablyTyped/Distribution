@@ -1,9 +1,9 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiHapi.Anon_Annotated
+import typings.atHapiHapi.atHapiHapiBooleans.`false`
 import typings.atHapiHapi.atHapiHapiMod.Lifecycle.FailAction
 import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
-import typings.atHapiHapi.atHapiHapiNumbers.`false`
 import typings.atHapiHapi.atHapiHapiStrings.gunzip
 import scala.scalajs.js
 import scala.scalajs.js.`|`

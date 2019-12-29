@@ -1,7 +1,7 @@
 package typings.detectDashNewline
 
-import typings.detectDashNewline.detectDashNewlineStrings.BACKSLASHn
-import typings.detectDashNewline.detectDashNewlineStrings.BACKSLASHrBACKSLASHn
+import typings.detectDashNewline.detectDashNewlineStrings.CarriagereturnLinefeed
+import typings.detectDashNewline.detectDashNewlineStrings.Linefeed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +19,13 @@ object detectDashNewlineMod extends js.Object {
   	//=> '\n'
   	```
   	*/
-  def apply(string: String): js.UndefOr[BACKSLASHrBACKSLASHn | BACKSLASHn] = js.native
-  def graceful(): BACKSLASHn = js.native
+  def apply(string: String): js.UndefOr[CarriagereturnLinefeed | Linefeed] = js.native
+  def graceful(): Linefeed = js.native
   /**
   	Detect the dominant newline character of a string.
   	@returns The detected newline or `\n` when no newline character is found or the input is not a string.
   	*/
-  def graceful(string: String): BACKSLASHrBACKSLASHn | BACKSLASHn = js.native
-  def graceful(string: js.Any): BACKSLASHn = js.native
+  def graceful(string: String): CarriagereturnLinefeed | Linefeed = js.native
+  def graceful(string: js.Any): Linefeed = js.native
 }
 

@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.admissionregistrationV1beta1ValidatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.admissionregistrationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.admissionregistration.v1beta1.ValidatingWebhookConfiguration
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -41,7 +40,7 @@ object admissionregistrationV1beta1ValidatingWebhookConfigurationListMod extends
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`admissionregistrationDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[admissionregistrationDotk8sDotioSlashv1beta1] = js.native
     /**
       * List of ValidatingWebhookConfiguration.
       */

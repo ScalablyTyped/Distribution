@@ -1,10 +1,5 @@
 package typings.box2d.Box2D.Collision
 
-import typings.box2d.Box2D.Collision.Shapes.b2CircleShape
-import typings.box2d.Box2D.Collision.Shapes.b2EdgeShape
-import typings.box2d.Box2D.Collision.Shapes.b2MassData
-import typings.box2d.Box2D.Collision.Shapes.b2PolygonShape
-import typings.box2d.Box2D.Collision.Shapes.b2Shape
 import typings.box2d.Box2D.Common.Math.b2Transform
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import scala.scalajs.js

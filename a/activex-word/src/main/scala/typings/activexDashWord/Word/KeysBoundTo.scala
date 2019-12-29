@@ -15,7 +15,8 @@ class KeysBoundTo protected () extends js.Object {
   val Creator: Double = js.native
   val KeyCategory: WdKeyCategory = js.native
   val Parent: js.Any = js.native
-  var `Word.KeysBoundTo_typekey`: KeysBoundTo = js.native
+  @JSName("Word.KeysBoundTo_typekey")
+  var WordDotKeysBoundTo_typekey: KeysBoundTo = js.native
   def Item(Index: Double): KeyBinding = js.native
   def Key(KeyCode: Double): KeyBinding = js.native
   def Key(KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native

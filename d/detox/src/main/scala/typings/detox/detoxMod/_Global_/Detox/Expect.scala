@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Expect[R] extends js.Object {
-  def apply(element: Element): Expect[_] = js.native
+  def apply(element: Element): Expect[js.Promise[Unit]] = js.native
   /**
     * Expect the view to not be visible.
     * @example await expect(element(by.id('UniqueId205'))).toBeNotVisible();

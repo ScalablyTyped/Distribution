@@ -1,27 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.TypeFormatFlags.AddUndefined
-import typings.typescript.typescriptMod.TypeFormatFlags.AllowUniqueESSymbolType
-import typings.typescript.typescriptMod.TypeFormatFlags.InArrayType
-import typings.typescript.typescriptMod.TypeFormatFlags.InElementType
-import typings.typescript.typescriptMod.TypeFormatFlags.InFirstTypeArgument
-import typings.typescript.typescriptMod.TypeFormatFlags.InTypeAlias
-import typings.typescript.typescriptMod.TypeFormatFlags.MultilineObjectLiterals
-import typings.typescript.typescriptMod.TypeFormatFlags.NoTruncation
-import typings.typescript.typescriptMod.TypeFormatFlags.NodeBuilderFlagsMask
-import typings.typescript.typescriptMod.TypeFormatFlags.None
-import typings.typescript.typescriptMod.TypeFormatFlags.OmitParameterModifiers
-import typings.typescript.typescriptMod.TypeFormatFlags.SuppressAnyReturnType
-import typings.typescript.typescriptMod.TypeFormatFlags.UseAliasDefinedOutsideCurrentScope
-import typings.typescript.typescriptMod.TypeFormatFlags.UseFullyQualifiedType
-import typings.typescript.typescriptMod.TypeFormatFlags.UseStructuralFallback
-import typings.typescript.typescriptMod.TypeFormatFlags.UseTypeOfFunction
-import typings.typescript.typescriptMod.TypeFormatFlags.WriteArrayAsGenericType
-import typings.typescript.typescriptMod.TypeFormatFlags.WriteArrowStyleSignature
-import typings.typescript.typescriptMod.TypeFormatFlags.WriteClassExpressionAsTypeLiteral
-import typings.typescript.typescriptMod.TypeFormatFlags.WriteOwnNameForAnyLike
-import typings.typescript.typescriptMod.TypeFormatFlags.WriteTypeArgumentsOfSignature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialFeedType.everyone
-import typings.sharepoint.SP.Social.SocialFeedType.likes
-import typings.sharepoint.SP.Social.SocialFeedType.news
-import typings.sharepoint.SP.Social.SocialFeedType.personal
-import typings.sharepoint.SP.Social.SocialFeedType.timeline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

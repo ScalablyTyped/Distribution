@@ -1,8 +1,5 @@
 package typings.androiduix.android.content
 
-import typings.androiduix.android.content.res.ColorStateList
-import typings.androiduix.android.content.res.Resources
-import typings.androiduix.android.content.res.TypedArray
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.util.DisplayMetrics
 import typings.androiduix.android.util.Pools.SynchronizedPool

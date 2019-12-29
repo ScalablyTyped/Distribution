@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.IVBSAXAttributes")
 @js.native
 class IVBSAXAttributes protected () extends js.Object {
-  var `MSXML2.IVBSAXAttributes_typekey`: IVBSAXAttributes = js.native
+  @JSName("MSXML2.IVBSAXAttributes_typekey")
+  var MSXML2DotIVBSAXAttributes_typekey: IVBSAXAttributes = js.native
   /** Get the number of attributes in the list. */
   val length: Double = js.native
   /** Look up the index of an attribute by Namespace name. */

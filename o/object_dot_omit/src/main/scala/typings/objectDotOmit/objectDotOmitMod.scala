@@ -1,7 +1,6 @@
 package typings.objectDotOmit
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.objectDotOmit.objectDotOmitMod.Omit
 import typings.std.Exclude
 import typings.std.Pick
 import scala.scalajs.js

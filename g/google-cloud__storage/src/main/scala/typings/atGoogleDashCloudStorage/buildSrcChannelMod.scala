@@ -2,7 +2,6 @@ package typings.atGoogleDashCloudStorage
 
 import typings.atGoogleDashCloudCommon.atGoogleDashCloudCommonMod.ServiceObject
 import typings.atGoogleDashCloudCommon.buildSrcServiceDashObjectMod.Metadata
-import typings.atGoogleDashCloudStorage.buildSrcChannelMod.StopCallback
 import typings.atGoogleDashCloudStorage.buildSrcStorageMod.Storage
 import typings.std.Error
 import scala.scalajs.js

@@ -1,6 +1,7 @@
 package typings.sharepoint.SP.Publishing
 
 import typings.sharepoint.SP.ClientContext
+import typings.sharepoint.SP.ListItem
 import typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetItem
 import typings.sharepoint.SP.StringResult
 import scala.scalajs.js
@@ -17,6 +18,6 @@ class PublishingPage () extends ScheduledItem {
 @JSGlobal("SP.Publishing.PublishingPage")
 @js.native
 object PublishingPage extends js.Object {
-  def getPublishingPage(context: ClientContext, sourceListItem: typings.sharepoint.SP.ListItem[_]): PublishingPage = js.native
+  def getPublishingPage(context: ClientContext, sourceListItem: ListItem[_]): PublishingPage = js.native
 }
 

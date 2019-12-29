@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ExtrapolationType.EXTRAPOLATE
-import typings.cesium.cesiumMod.ExtrapolationType.HOLD
-import typings.cesium.cesiumMod.ExtrapolationType.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMBeforeUnloadEvent")
 @js.native
 class DOMBeforeUnloadEvent protected () extends js.Object {
-  var `MSHTML.DOMBeforeUnloadEvent_typekey`: DOMBeforeUnloadEvent = js.native
+  @JSName("MSHTML.DOMBeforeUnloadEvent_typekey")
+  var MSHTMLDotDOMBeforeUnloadEvent_typekey: DOMBeforeUnloadEvent = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   val cancelable: Boolean = js.native

@@ -37,9 +37,7 @@ class ResourceStream[T] protected ()
   @JSName("once")
   override def once_data(event: data, listener: js.Function1[T, Unit]): this.type = js.native
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
   /* CompleteClass */

@@ -56,7 +56,7 @@ object Contacts extends js.Object {
   def addListener(eventName: js.Any, fn: js.Any): Unit = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
-  def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = js.native
+  def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
   		* @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
   		* @param eventName Object/String The event name, or an object containing event name properties.
@@ -105,16 +105,16 @@ object Contacts extends js.Object {
   		* @returns Object
   		*/
   def fireAction(): js.Any = js.native
-  def fireAction(eventName: java.lang.String): js.Any = js.native
-  def fireAction(eventName: java.lang.String, args: Array): js.Any = js.native
-  def fireAction(eventName: java.lang.String, args: Array, fn: js.Any): js.Any = js.native
-  def fireAction(eventName: java.lang.String, args: Array, fn: js.Any, scope: js.Any): js.Any = js.native
+  def fireAction(eventName: String): js.Any = js.native
+  def fireAction(eventName: String, args: Array): js.Any = js.native
+  def fireAction(eventName: String, args: Array, fn: js.Any): js.Any = js.native
+  def fireAction(eventName: String, args: Array, fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
   		* @param eventName String The name of the event to fire.
   		* @param args Object... Variable number of parameters are passed to handlers.
   		* @returns Boolean Returns false if any of the handlers return false.
   		*/
-  def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = js.native
+  def fireEvent(eventName: String, args: js.Any*): Boolean = js.native
   /** [Method] Returns the value of bubbleEvents
   		* @returns String/String[]
   		*/
@@ -128,7 +128,7 @@ object Contacts extends js.Object {
   /** [Method] Retrieves the id of this component
   		* @returns String id
   		*/
-  def getId(): java.lang.String = js.native
+  def getId(): String = js.native
   /** [Method] Returns the value of includeImages
   		* @returns Boolean
   		*/
@@ -138,7 +138,7 @@ object Contacts extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Returns the value of listeners
   		* @returns Object
   		*/
@@ -147,20 +147,20 @@ object Contacts extends js.Object {
   		* @param config Object
   		* @returns String user readable string
   		*/
-  def getLocalizedLabel(): java.lang.String = js.native
-  def getLocalizedLabel(config: js.Any): java.lang.String = js.native
+  def getLocalizedLabel(): String = js.native
+  def getLocalizedLabel(config: js.Any): String = js.native
   /** [Method] Returns base64 encoded image thumbnail for a contact specified in config id This method is for Sencha Native Packager
   		* @param config Object
   		* @returns String base64 string
   		*/
-  def getThumbnail(): java.lang.String = js.native
-  def getThumbnail(config: js.Any): java.lang.String = js.native
+  def getThumbnail(): String = js.native
+  def getThumbnail(config: js.Any): String = js.native
   /** [Method] Checks to see if this object has any listeners for a specified event
   		* @param eventName String The name of the event to check for
   		* @returns Boolean True if the event is being listened for, else false
   		*/
   def hasListener(): Boolean = js.native
-  def hasListener(eventName: java.lang.String): Boolean = js.native
+  def hasListener(eventName: String): Boolean = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -203,7 +203,7 @@ object Contacts extends js.Object {
   def on(eventName: js.Any, fn: js.Any): Unit = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
-  def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = js.native
+  def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Alias for addAfterListener
   		* @param eventName String/String[]/Object The name of the event to listen for.
   		* @param fn Function/String The method the event invokes.
@@ -268,7 +268,7 @@ object Contacts extends js.Object {
   def removeListener(eventName: js.Any, fn: js.Any): Unit = js.native
   def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
-  def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = js.native
+  def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
   		* @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
   		* @param eventName Object/String The event name, or an object containing event name properties.
@@ -318,7 +318,7 @@ object Contacts extends js.Object {
   def un(eventName: js.Any, fn: js.Any): Unit = js.native
   def un(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
-  def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: java.lang.String): Unit = js.native
+  def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Alias for removeAfterListener
   		* @param eventName String/String[]/Object The name of the event the handler was associated with.
   		* @param fn Function/String The handler to remove.

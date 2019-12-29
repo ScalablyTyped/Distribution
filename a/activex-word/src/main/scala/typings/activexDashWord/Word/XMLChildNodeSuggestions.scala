@@ -11,7 +11,8 @@ class XMLChildNodeSuggestions protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.XMLChildNodeSuggestions_typekey`: XMLChildNodeSuggestions = js.native
+  @JSName("Word.XMLChildNodeSuggestions_typekey")
+  var WordDotXMLChildNodeSuggestions_typekey: XMLChildNodeSuggestions = js.native
   def Item(Index: js.Any): XMLChildNodeSuggestion = js.native
 }
 

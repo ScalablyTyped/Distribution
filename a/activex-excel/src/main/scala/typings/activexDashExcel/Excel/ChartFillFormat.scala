@@ -18,7 +18,8 @@ class ChartFillFormat protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val BackColor: ChartColorFormat = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ChartFillFormat_typekey`: ChartFillFormat = js.native
+  @JSName("Excel.ChartFillFormat_typekey")
+  var ExcelDotChartFillFormat_typekey: ChartFillFormat = js.native
   val ForeColor: ChartColorFormat = js.native
   val GradientColorType: MsoGradientColorType = js.native
   val GradientDegree: Double = js.native

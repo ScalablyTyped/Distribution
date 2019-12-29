@@ -14,7 +14,8 @@ class DiagramNodeChildren protected () extends js.Object {
   val FirstChild: DiagramNode = js.native
   val LastChild: DiagramNode = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.DiagramNodeChildren_typekey`: DiagramNodeChildren = js.native
+  @JSName("PowerPoint.DiagramNodeChildren_typekey")
+  var PowerPointDotDiagramNodeChildren_typekey: DiagramNodeChildren = js.native
   /**
     * @param any [Index=-1]
     * @param Office.MsoDiagramNodeType [NodeType=1]

@@ -1,6 +1,5 @@
 package typings.stable
 
-import typings.stable.stableMod.Comparator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

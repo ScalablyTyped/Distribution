@@ -1,9 +1,6 @@
 package typings.dwt.dynamsoft.BarcodeReader
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.dynamsoft.BarcodeReader.EnumTerminateStage.ETS_Localized
-import typings.dwt.dynamsoft.BarcodeReader.EnumTerminateStage.ETS_Prelocalized
-import typings.dwt.dynamsoft.BarcodeReader.EnumTerminateStage.ETS_Recognized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,7 +14,8 @@ class WorksheetView protected () extends SheetView {
   var DisplayHeadings: Boolean = js.native
   var DisplayOutline: Boolean = js.native
   var DisplayZeros: Boolean = js.native
-  var `Excel.WorksheetView_typekey`: WorksheetView = js.native
+  @JSName("Excel.WorksheetView_typekey")
+  var ExcelDotWorksheetView_typekey: WorksheetView = js.native
   val Parent: js.Any = js.native
   val Sheet: Worksheet = js.native
 }

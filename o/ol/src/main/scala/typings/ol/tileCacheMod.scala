@@ -1,7 +1,6 @@
 package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ol.tileCacheMod.TileCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

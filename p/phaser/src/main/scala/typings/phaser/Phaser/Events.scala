@@ -1,6 +1,5 @@
 package typings.phaser.Phaser
 
-import typings.phaser.Phaser.Events.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

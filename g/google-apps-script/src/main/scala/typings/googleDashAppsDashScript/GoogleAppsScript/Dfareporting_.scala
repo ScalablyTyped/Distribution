@@ -69,6 +69,7 @@ import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Adv
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.AdvertiserGroup
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.AudienceSegment
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.AudienceSegmentGroup
+import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Campaign
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.CampaignCreativeAssociation
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.City
@@ -279,7 +280,7 @@ trait Dfareporting_ extends js.Object {
   // Create a new instance of AudienceSegmentGroup
   def newAudienceSegmentGroup(): AudienceSegmentGroup
   // Create a new instance of Browser
-  def newBrowser(): typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser
+  def newBrowser(): Browser
   // Create a new instance of Campaign
   def newCampaign(): Campaign
   // Create a new instance of CampaignCreativeAssociation
@@ -546,7 +547,7 @@ object Dfareporting_ {
     newAdvertiserGroup: () => AdvertiserGroup,
     newAudienceSegment: () => AudienceSegment,
     newAudienceSegmentGroup: () => AudienceSegmentGroup,
-    newBrowser: () => typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser,
+    newBrowser: () => Browser,
     newCampaign: () => Campaign,
     newCampaignCreativeAssociation: () => CampaignCreativeAssociation,
     newCity: () => City,

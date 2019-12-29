@@ -2,13 +2,13 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imperial
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait DirectLineMeasurement3DViewModelProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#unit)
     */
   var unit: js.UndefOr[
-    metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+    metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
   ] = js.undefined
   /**
     * List of unit systems (imperial, metric) and specific units for displaying the distance values.
@@ -30,7 +30,7 @@ trait DirectLineMeasurement3DViewModelProperties extends js.Object {
     */
   var unitOptions: js.UndefOr[
     js.Array[
-      metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+      metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ]
   ] = js.undefined
   /**
@@ -44,9 +44,9 @@ trait DirectLineMeasurement3DViewModelProperties extends js.Object {
 object DirectLineMeasurement3DViewModelProperties {
   @scala.inline
   def apply(
-    unit: metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers = null,
+    unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_ = null,
     unitOptions: js.Array[
-      metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+      metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ] = null,
     view: SceneViewProperties = null
   ): DirectLineMeasurement3DViewModelProperties = {

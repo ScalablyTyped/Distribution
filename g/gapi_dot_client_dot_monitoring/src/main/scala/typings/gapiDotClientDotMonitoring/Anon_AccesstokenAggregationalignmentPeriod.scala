@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAggregationalignmentPeriod extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /**
@@ -16,14 +16,16 @@ trait Anon_AccesstokenAggregationalignmentPeriod extends js.Object {
     * series will contain data points only on the period boundaries. If perSeriesAligner is not specified or equals ALIGN_NONE, then this field is ignored.
     * If perSeriesAligner is specified and does not equal ALIGN_NONE, then this field must be defined; otherwise an error is returned.
     */
-  var `aggregation.alignmentPeriod`: js.UndefOr[String] = js.native
+  @JSName("aggregation.alignmentPeriod")
+  var aggregationDotalignmentPeriod: js.UndefOr[String] = js.native
   /**
     * The approach to be used to combine time series. Not all reducer functions may be applied to all time series, depending on the metric type and the value
     * type of the original time series. Reduction may change the metric type of value type of the time series.Time series data must be aligned in order to
     * perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE and
     * alignmentPeriod must be specified; otherwise, an error is returned.
     */
-  var `aggregation.crossSeriesReducer`: js.UndefOr[String] = js.native
+  @JSName("aggregation.crossSeriesReducer")
+  var aggregationDotcrossSeriesReducer: js.UndefOr[String] = js.native
   /**
     * The set of fields to preserve when crossSeriesReducer is specified. The groupByFields determine how the time series are partitioned into subsets prior
     * to applying the aggregation function. Each subset contains time series that have the same value for each of the grouping fields. Each individual time
@@ -32,14 +34,16 @@ trait Anon_AccesstokenAggregationalignmentPeriod extends js.Object {
     * is not specified and all the time series have the same resource type, then the time series are aggregated into a single output time series. If
     * crossSeriesReducer is not defined, this field is ignored.
     */
-  var `aggregation.groupByFields`: js.UndefOr[String] = js.native
+  @JSName("aggregation.groupByFields")
+  var aggregationDotgroupByFields: js.UndefOr[String] = js.native
   /**
     * The approach to be used to align individual time series. Not all alignment functions may be applied to all time series, depending on the metric type
     * and value type of the original time series. Alignment may change the metric type or the value type of the time series.Time series data must be aligned
     * in order to perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE
     * and alignmentPeriod must be specified; otherwise, an error is returned.
     */
-  var `aggregation.perSeriesAligner`: js.UndefOr[String] = js.native
+  @JSName("aggregation.perSeriesAligner")
+  var aggregationDotperSeriesAligner: js.UndefOr[String] = js.native
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.native
   /** OAuth bearer token. */
@@ -56,9 +60,11 @@ trait Anon_AccesstokenAggregationalignmentPeriod extends js.Object {
     */
   var filter: js.UndefOr[String] = js.native
   /** Required. The end of the time interval. */
-  var `interval.endTime`: js.UndefOr[String] = js.native
+  @JSName("interval.endTime")
+  var intervalDotendTime: js.UndefOr[String] = js.native
   /** Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time. */
-  var `interval.startTime`: js.UndefOr[String] = js.native
+  @JSName("interval.startTime")
+  var intervalDotstartTime: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.native
   /** The project on which to execute the request. The format is "projects/{project_id_or_number}". */

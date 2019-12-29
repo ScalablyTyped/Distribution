@@ -1,12 +1,6 @@
 package typings.htmlDashValidator.htmlDashValidatorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.gnu
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.html
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.json
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.text
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.xhtml
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

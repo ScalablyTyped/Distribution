@@ -1,9 +1,6 @@
 package typings.amqplib
 
-import typings.amqplib.amqplibNumbers.`false`
-import typings.amqplib.callbackUnderscoreApiMod.Channel
-import typings.amqplib.callbackUnderscoreApiMod.ConfirmChannel
-import typings.amqplib.callbackUnderscoreApiMod.Connection
+import typings.amqplib.amqplibBooleans.`false`
 import typings.amqplib.propertiesMod.Message
 import typings.amqplib.propertiesMod.Options.AssertExchange
 import typings.amqplib.propertiesMod.Options.AssertQueue

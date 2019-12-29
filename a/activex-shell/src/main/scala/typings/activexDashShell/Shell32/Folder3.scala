@@ -18,7 +18,8 @@ class Folder3 protected () extends js.Object {
   val ParentFolder: Folder3 = js.native
   /** Folder's FolderItem interface */
   val Self: ShellFolderItem = js.native
-  var `Shell32.Folder3_typekey`: Folder3 = js.native
+  @JSName("Shell32.Folder3_typekey")
+  var Shell32DotFolder3_typekey: Folder3 = js.native
   /** Ask if the WebView barricade should be shown or not */
   var ShowWebViewBarricade: Boolean = js.native
   /** Get the display name for the window */

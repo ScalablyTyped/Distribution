@@ -24,6 +24,6 @@ object ^ extends js.Object {
     * The `formatIntlDateTime()` formatter is more flexible, but slower.
     */
   def apply(): FormatFunc = js.native
-  def apply(options: typings.atPhosphorDatagrid.libTextrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = js.native
+  def apply(options: IOptions): FormatFunc = js.native
 }
 

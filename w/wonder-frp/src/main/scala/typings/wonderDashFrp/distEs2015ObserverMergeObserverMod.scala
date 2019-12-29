@@ -4,7 +4,6 @@ import typings.wonderDashFrp.distEs2015CoreObserverMod.Observer
 import typings.wonderDashFrp.distEs2015CoreStreamMod.Stream
 import typings.wonderDashFrp.distEs2015DisposableGroupDisposableMod.GroupDisposable
 import typings.wonderDashFrp.distEs2015ObserverIObserverMod.IObserver
-import typings.wonderDashFrp.distEs2015ObserverMergeObserverMod.MergeObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

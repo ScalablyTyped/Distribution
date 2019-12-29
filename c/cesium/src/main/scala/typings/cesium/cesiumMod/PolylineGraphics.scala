@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.Anon_FollowSurface
+import typings.cesium.Anon_ArcTypeClampToGround
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,14 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PolylineGraphics")
 @js.native
 class PolylineGraphics () extends js.Object {
-  def this(options: Anon_FollowSurface) = this()
-  var definitionChanged: Event[js.Array[_]] = js.native
+  def this(options: Anon_ArcTypeClampToGround) = this()
+  var arcType: Property = js.native
+  var clampToGround: Property = js.native
+  var classificationType: Property = js.native
+  val definitionChanged: Event[js.Array[_]] = js.native
+  var depthFailMaterial: MaterialProperty = js.native
+  var distanceDisplayCondition: Property = js.native
   var followSurface: Property = js.native
   var granularity: Property = js.native
   var material: MaterialProperty = js.native
   var positions: Property = js.native
+  var shadows: Property = js.native
   var show: Property = js.native
-  var width: Double = js.native
+  var width: Property = js.native
+  var zIndex: ConstantProperty = js.native
   def clone(result: PolylineGraphics): PolylineGraphics = js.native
   def merge(source: PolylineGraphics): PolylineGraphics = js.native
 }

@@ -1,8 +1,5 @@
 package typings.realm.Realm
 
-import typings.realm.Realm.Permissions.Permission
-import typings.realm.Realm.Permissions.Role
-import typings.realm.Realm.Permissions.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

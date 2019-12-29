@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation._
 
 object bubleNumbers {
   @js.native
-  sealed trait `0DOT10` extends js.Object
+  sealed trait `0.10` extends js.Object
   
   @js.native
-  sealed trait `0DOT12` extends js.Object
+  sealed trait `0.12` extends js.Object
   
   @js.native
   sealed trait `10` extends js.Object
   
   @js.native
-  sealed trait `10DOT1` extends js.Object
+  sealed trait `10.1` extends js.Object
   
   @js.native
   sealed trait `11` extends js.Object
   
   @js.native
-  sealed trait `11DOT1` extends js.Object
+  sealed trait `11.1` extends js.Object
   
   @js.native
   sealed trait `12` extends js.Object
@@ -147,29 +147,29 @@ object bubleNumbers {
   sealed trait `8` extends js.Object
   
   @js.native
-  sealed trait `8DOT10` extends js.Object
+  sealed trait `8.10` extends js.Object
   
   @js.native
-  sealed trait `8DOT3` extends js.Object
+  sealed trait `8.3` extends js.Object
   
   @js.native
-  sealed trait `8DOT7` extends js.Object
+  sealed trait `8.7` extends js.Object
   
   @js.native
   sealed trait `9` extends js.Object
   
   @scala.inline
-  def `0DOT10`: `0DOT10` = 0.10.asInstanceOf[`0DOT10`]
+  def `0.10`: `0.10` = 0.10.asInstanceOf[`0.10`]
   @scala.inline
-  def `0DOT12`: `0DOT12` = 0.12.asInstanceOf[`0DOT12`]
+  def `0.12`: `0.12` = 0.12.asInstanceOf[`0.12`]
   @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def `10DOT1`: `10DOT1` = 10.1.asInstanceOf[`10DOT1`]
+  def `10.1`: `10.1` = 10.1.asInstanceOf[`10.1`]
   @scala.inline
   def `11`: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def `11DOT1`: `11DOT1` = 11.1.asInstanceOf[`11DOT1`]
+  def `11.1`: `11.1` = 11.1.asInstanceOf[`11.1`]
   @scala.inline
   def `12`: `12` = 12.asInstanceOf[`12`]
   @scala.inline
@@ -253,11 +253,11 @@ object bubleNumbers {
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def `8DOT10`: `8DOT10` = 8.10.asInstanceOf[`8DOT10`]
+  def `8.10`: `8.10` = 8.10.asInstanceOf[`8.10`]
   @scala.inline
-  def `8DOT3`: `8DOT3` = 8.3.asInstanceOf[`8DOT3`]
+  def `8.3`: `8.3` = 8.3.asInstanceOf[`8.3`]
   @scala.inline
-  def `8DOT7`: `8DOT7` = 8.7.asInstanceOf[`8DOT7`]
+  def `8.7`: `8.7` = 8.7.asInstanceOf[`8.7`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
 }

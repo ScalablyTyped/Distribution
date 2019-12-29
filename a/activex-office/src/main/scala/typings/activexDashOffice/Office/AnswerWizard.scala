@@ -11,7 +11,8 @@ class AnswerWizard protected () extends js.Object {
   val Creator: Double = js.native
   @JSName("Files")
   val Files_Original: AnswerWizardFiles = js.native
-  var `Office.AnswerWizard_typekey`: AnswerWizard = js.native
+  @JSName("Office.AnswerWizard_typekey")
+  var OfficeDotAnswerWizard_typekey: AnswerWizard = js.native
   val Parent: js.Any = js.native
   def ClearFileList(): Unit = js.native
   def Files(Index: Double): String = js.native

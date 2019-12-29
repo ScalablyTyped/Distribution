@@ -15,7 +15,7 @@ object LayoutHideEvent {
   def apply(
     isDefaultPrevented: () => Boolean,
     preventDefault: js.Function,
-    sender: typings.kendoDashUi.kendo.mobile.ui.Layout,
+    sender: Layout,
     layout: JQuery = null,
     view: JQuery = null
   ): LayoutHideEvent = {

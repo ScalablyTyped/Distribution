@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage.Pickers.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.Pickers.Provider.AddFileResult.added
-import typings.winrtDashUwp.Windows.Storage.Pickers.Provider.AddFileResult.alreadyAdded
-import typings.winrtDashUwp.Windows.Storage.Pickers.Provider.AddFileResult.notAllowed
-import typings.winrtDashUwp.Windows.Storage.Pickers.Provider.AddFileResult.unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

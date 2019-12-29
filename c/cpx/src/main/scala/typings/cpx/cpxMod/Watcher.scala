@@ -1,6 +1,6 @@
 package typings.cpx.cpxMod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

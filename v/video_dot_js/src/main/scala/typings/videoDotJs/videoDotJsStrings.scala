@@ -20,9 +20,6 @@ object videoDotJsStrings {
   sealed trait DELETE extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait GET extends js.Object
   
   @js.native
@@ -62,6 +59,9 @@ object videoDotJsStrings {
   sealed trait TimeTooltip extends js.Object
   
   @js.native
+  sealed trait _empty extends js.Object
+  
+  @js.native
   sealed trait alternative extends Kind
   
   @js.native
@@ -98,8 +98,8 @@ object videoDotJsStrings {
   
   @js.native
   sealed trait descriptions
-    extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
-       with Kind
+    extends Kind
+       with typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
   
   @js.native
   sealed trait disabled extends Mode
@@ -205,8 +205,6 @@ object videoDotJsStrings {
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
@@ -232,6 +230,8 @@ object videoDotJsStrings {
   def Spacer: Spacer = "Spacer".asInstanceOf[Spacer]
   @scala.inline
   def TimeTooltip: TimeTooltip = "TimeTooltip".asInstanceOf[TimeTooltip]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def alternative: alternative = "alternative".asInstanceOf[alternative]
   @scala.inline

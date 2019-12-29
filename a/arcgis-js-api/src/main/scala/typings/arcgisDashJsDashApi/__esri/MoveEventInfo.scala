@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`move-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`move-stop`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.move
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -39,7 +42,7 @@ trait MoveEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
     */
-  var `type`: String
+  var `type`: `move-start` | move | `move-stop`
 }
 
 object MoveEventInfo {
@@ -51,7 +54,7 @@ object MoveEventInfo {
     hasOwnProperty: PropertyKey => Boolean,
     mover: Graphic,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String
+    `type`: `move-start` | move | `move-stop`
   ): MoveEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mover = mover.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

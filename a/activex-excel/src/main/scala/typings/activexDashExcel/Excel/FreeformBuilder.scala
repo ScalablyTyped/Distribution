@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 class FreeformBuilder protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.FreeformBuilder_typekey`: FreeformBuilder = js.native
+  @JSName("Excel.FreeformBuilder_typekey")
+  var ExcelDotFreeformBuilder_typekey: FreeformBuilder = js.native
   val Parent: js.Any = js.native
   @JSName("AddNodes")
   def AddNodes_0(SegmentType: MsoSegmentType, EditingType: `0`, X1: Double, Y1: Double): Unit = js.native

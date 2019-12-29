@@ -2,8 +2,6 @@ package typings.tstl
 
 import typings.tstl.baseContainerArrayContainerMod.ArrayContainer
 import typings.tstl.baseContainerIContainerMod.IContainer
-import typings.tstl.baseIteratorArrayIteratorBaseMod.ArrayIteratorBase
-import typings.tstl.baseIteratorArrayIteratorBaseMod.ArrayReverseIteratorBase
 import typings.tstl.baseIteratorIteratorMod.Iterator
 import typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator
 import typings.tstl.iteratorIRandomAccessIteratorMod.IRandomAccessIterator

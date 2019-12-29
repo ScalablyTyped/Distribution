@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DAO.DBEngine")
 @js.native
 class DBEngine protected () extends js.Object {
-  var `DAO.DBEngine_typekey`: DBEngine = js.native
+  @JSName("DAO.DBEngine_typekey")
+  var DAODotDBEngine_typekey: DBEngine = js.native
   val DefaultPassword: String = js.native
   var DefaultType: Double = js.native
   val DefaultUser: String = js.native

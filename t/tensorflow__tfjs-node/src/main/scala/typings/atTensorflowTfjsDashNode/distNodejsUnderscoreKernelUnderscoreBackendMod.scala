@@ -17,14 +17,13 @@ import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R4
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R5
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.Empty
+import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings._empty
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.bilinear
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.cm
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.grayscale
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.in
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.nearest
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.rgb
-import typings.atTensorflowTfjsDashNode.distNodejsUnderscoreKernelUnderscoreBackendMod.NodeJSKernelBackend
 import typings.atTensorflowTfjsDashNode.distTfjsUnderscoreBindingMod.TFEOpAttr
 import typings.atTensorflowTfjsDashNode.distTfjsUnderscoreBindingMod.TFJSBinding
 import typings.std.Uint8Array
@@ -160,7 +159,7 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def encodeJpeg_cm(
       imageData: Uint8Array,
       imageShape: js.Array[Double],
-      format: Empty,
+      format: _empty,
       quality: Double,
       progressive: Boolean,
       optimizeSize: Boolean,
@@ -174,7 +173,7 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def encodeJpeg_in(
       imageData: Uint8Array,
       imageShape: js.Array[Double],
-      format: Empty,
+      format: _empty,
       quality: Double,
       progressive: Boolean,
       optimizeSize: Boolean,

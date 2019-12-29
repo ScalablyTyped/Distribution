@@ -20,7 +20,7 @@ trait FilterSettings extends js.Object {
   /** This specifies the grid to show the filterBar or filterMenu to the grid records. See filterType
     * @Default {ej.Grid.FilterType.FilterBar}
     */
-  var filterType: js.UndefOr[typings.ejDotWebDotAll.ej.Grid.FilterType | String] = js.undefined
+  var filterType: js.UndefOr[FilterType | String] = js.undefined
   /** Gets or sets a value that indicates whether to define the filtered columns details programmatically at initial load
     * @Default {[]}
     */
@@ -49,7 +49,7 @@ object FilterSettings {
     enableCaseSensitivity: js.UndefOr[Boolean] = js.undefined,
     enableInterDeterminateState: js.UndefOr[Boolean] = js.undefined,
     filterBarMode: FilterBarMode | String = null,
-    filterType: typings.ejDotWebDotAll.ej.Grid.FilterType | String = null,
+    filterType: FilterType | String = null,
     filteredColumns: js.Array[FilterSettingsFilteredColumn] = null,
     immediateModeDelay: Int | Double = null,
     maxFilterChoices: Int | Double = null,

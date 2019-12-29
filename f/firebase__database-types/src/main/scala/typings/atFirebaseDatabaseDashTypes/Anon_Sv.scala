@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Sv extends js.Object {
-  var `.sv`: String
+  @JSName(".sv")
+  var Dotsv: String
 }
 
 object Anon_Sv {
   @scala.inline
-  def apply(`.sv`: String): Anon_Sv = {
+  def apply(Dotsv: String): Anon_Sv = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic(".sv")(`.sv`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".sv")(Dotsv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Sv]
   }
 }

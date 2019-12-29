@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Http.Filters
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCookieUsageBehavior.default
-import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCookieUsageBehavior.noCookies
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

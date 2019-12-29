@@ -20,7 +20,7 @@ trait ServerSessionOptions extends SessionOptions {
       /* stream */ ServerHttp2Stream, 
       /* headers */ IncomingHttpHeaders, 
       /* options */ ReadableOptions, 
-      /* rawHeaders */ js.Array[java.lang.String], 
+      /* rawHeaders */ js.Array[String], 
       typings.node.http2Mod.Http2ServerRequest
     ]
   ] = js.undefined
@@ -38,7 +38,7 @@ object ServerSessionOptions {
       /* stream */ ServerHttp2Stream, 
       /* headers */ IncomingHttpHeaders, 
       /* options */ ReadableOptions, 
-      /* rawHeaders */ js.Array[java.lang.String], 
+      /* rawHeaders */ js.Array[String], 
       Http2ServerRequest
     ] = null,
     Http2ServerResponse: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse] = null,

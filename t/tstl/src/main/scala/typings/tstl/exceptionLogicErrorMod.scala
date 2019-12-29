@@ -2,11 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.tstl.exceptionExceptionMod.Exception
-import typings.tstl.exceptionLogicErrorMod.DomainError
-import typings.tstl.exceptionLogicErrorMod.InvalidArgument
-import typings.tstl.exceptionLogicErrorMod.LengthError
-import typings.tstl.exceptionLogicErrorMod.LogicError
-import typings.tstl.exceptionLogicErrorMod.OutOfRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

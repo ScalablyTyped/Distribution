@@ -7,8 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait GlideRecord
-  extends Instantiable1[/* type */ String, typings.servicenow.servicenow.GlideRecord] {
+trait GlideRecord extends Instantiable1[/* type */ String, GlideRecord] {
   val sys_created_by: String with GlideElement = js.native
   val sys_created_on: GlideDateTime with GlideElement = js.native
   val sys_id: String = js.native

@@ -3,9 +3,6 @@ package typings.reactDashOwlDashCarousel
 import typings.jquery.JQuery
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.Component
-import typings.reactDashOwlDashCarousel.reactDashOwlDashCarouselMod.ComponentProps
-import typings.reactDashOwlDashCarousel.reactDashOwlDashCarouselMod.OwlCarouselProps
-import typings.reactDashOwlDashCarousel.reactDashOwlDashCarouselMod.ReactOwlCarousel
 import typings.reactDashOwlDashCarousel.umdOptionsMod.Options
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement

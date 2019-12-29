@@ -20,7 +20,7 @@ import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TransitionEvent
 import typings.react.reactMod.UIEvent
 import typings.react.reactMod.WheelEvent
-import typings.react.reactStrings.Empty
+import typings.react.reactStrings._empty
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.`use-credentials`
@@ -151,7 +151,7 @@ object ImageProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    crossOrigin: anonymous | `use-credentials` | Empty = null,
+    crossOrigin: anonymous | `use-credentials` | _empty = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
     decoding: async | auto | sync = null,

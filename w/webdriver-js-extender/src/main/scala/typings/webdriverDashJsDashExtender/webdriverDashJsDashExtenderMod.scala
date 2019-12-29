@@ -2,7 +2,6 @@ package typings.webdriverDashJsDashExtender
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebDriver
-import typings.webdriverDashJsDashExtender.webdriverDashJsDashExtenderMod.ExtendedWebDriver
 import typings.webdriverDashJsDashExtender.webdriverDashJsDashExtenderNumbers.`0`
 import typings.webdriverDashJsDashExtender.webdriverDashJsDashExtenderNumbers.`1`
 import typings.webdriverDashJsDashExtender.webdriverDashJsDashExtenderNumbers.`2`

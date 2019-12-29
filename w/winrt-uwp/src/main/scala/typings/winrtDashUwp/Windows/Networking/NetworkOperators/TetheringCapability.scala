@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.disabledByGroupPolicy
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.disabledByHardwareLimitation
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.disabledByOperator
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.disabledByRequiredAppNotInstalled
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.disabledBySku
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.disabledBySystemCapability
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.disabledDueToUnknownCause
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringCapability.enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

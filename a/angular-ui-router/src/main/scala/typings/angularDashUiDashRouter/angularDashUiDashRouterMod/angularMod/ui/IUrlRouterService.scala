@@ -7,27 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IUrlRouterService extends js.Object {
-  def href(urlMatcher: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher): String = js.native
-  def href(
-    urlMatcher: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher,
-    params: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService
-  ): String = js.native
-  def href(
-    urlMatcher: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher,
-    params: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService,
-    options: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IHrefOptions
-  ): String = js.native
+  def href(urlMatcher: IUrlMatcher): String = js.native
+  def href(urlMatcher: IUrlMatcher, params: IStateParamsService): String = js.native
+  def href(urlMatcher: IUrlMatcher, params: IStateParamsService, options: IHrefOptions): String = js.native
   def listen(): Function = js.native
-  def push(urlMatcher: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher): Unit = js.native
-  def push(
-    urlMatcher: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher,
-    params: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService
-  ): Unit = js.native
-  def push(
-    urlMatcher: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher,
-    params: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService,
-    options: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IHrefOptions
-  ): Unit = js.native
+  def push(urlMatcher: IUrlMatcher): Unit = js.native
+  def push(urlMatcher: IUrlMatcher, params: IStateParamsService): Unit = js.native
+  def push(urlMatcher: IUrlMatcher, params: IStateParamsService, options: IHrefOptions): Unit = js.native
   /*
     * Triggers an update; the same update that happens when the address bar
     * url changes, aka $locationChangeSuccess.

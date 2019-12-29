@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VBIDE.CommandBarEvents")
 @js.native
 class CommandBarEvents protected () extends js.Object {
-  var `VBIDE.CommandBarEvents_typekey`: CommandBarEvents = js.native
+  @JSName("VBIDE.CommandBarEvents_typekey")
+  var VBIDEDotCommandBarEvents_typekey: CommandBarEvents = js.native
 }
 

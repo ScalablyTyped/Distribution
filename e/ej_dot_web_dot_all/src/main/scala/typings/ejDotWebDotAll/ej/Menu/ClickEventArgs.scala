@@ -13,7 +13,7 @@ trait ClickEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the menu model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Menu.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the selected item
     */
   var selectedItem: js.UndefOr[Double] = js.undefined
@@ -30,7 +30,7 @@ object ClickEventArgs {
   def apply(
     element: js.Any = null,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Menu.Model = null,
+    model: Model = null,
     selectedItem: Int | Double = null,
     text: String = null,
     `type`: String = null

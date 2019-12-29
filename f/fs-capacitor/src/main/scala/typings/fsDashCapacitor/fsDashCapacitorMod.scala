@@ -1,6 +1,5 @@
 package typings.fsDashCapacitor
 
-import typings.fsDashCapacitor.fsDashCapacitorMod.ReadStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

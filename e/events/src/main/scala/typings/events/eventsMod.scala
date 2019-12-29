@@ -1,7 +1,5 @@
 package typings.events
 
-import typings.events.eventsMod.EventEmitter
-import typings.events.eventsMod.Listener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

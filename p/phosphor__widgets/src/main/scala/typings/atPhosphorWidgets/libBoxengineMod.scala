@@ -1,6 +1,5 @@
 package typings.atPhosphorWidgets
 
-import typings.atPhosphorWidgets.libBoxengineMod.BoxSizer
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`

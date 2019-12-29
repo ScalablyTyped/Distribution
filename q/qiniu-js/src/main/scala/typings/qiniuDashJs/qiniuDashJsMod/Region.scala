@@ -1,11 +1,6 @@
 package typings.qiniuDashJs.qiniuDashJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.qiniuDashJs.qiniuDashJsMod.Region.as0
-import typings.qiniuDashJs.qiniuDashJsMod.Region.na0
-import typings.qiniuDashJs.qiniuDashJsMod.Region.z0
-import typings.qiniuDashJs.qiniuDashJsMod.Region.z1
-import typings.qiniuDashJs.qiniuDashJsMod.Region.z2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.CType.CORD
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.CType.STRING
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.CType.STRING_PIECE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.atMaterialDialog
 
-import typings.atMaterialDialog.utilMod.MDCFocusTrapFactory
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

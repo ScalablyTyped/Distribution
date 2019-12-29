@@ -4,12 +4,6 @@ import typings.httpDashContext.httpDashContextMod.Context
 import typings.httpDashContext.httpDashContextMod.Request
 import typings.httpDashContext.httpDashContextMod.Response
 import typings.std.Error
-import typings.xDashRayDashCrawler.xDashRayDashCrawlerMod.Callback
-import typings.xDashRayDashCrawler.xDashRayDashCrawlerMod.Driver
-import typings.xDashRayDashCrawler.xDashRayDashCrawlerMod.Instance
-import typings.xDashRayDashCrawler.xDashRayDashCrawlerMod.RandomDelay
-import typings.xDashRayDashCrawler.xDashRayDashCrawlerMod.RequestHook
-import typings.xDashRayDashCrawler.xDashRayDashCrawlerMod.ResponseHook
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

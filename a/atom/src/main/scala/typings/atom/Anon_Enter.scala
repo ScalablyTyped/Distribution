@@ -1,6 +1,6 @@
 package typings.atom
 
-import typings.atom.atomStrings.`tab always, enter when suggestion explicitly selected`
+import typings.atom.atomStrings.`tab alwaysComma enter when suggestion explicitly selected`
 import typings.atom.atomStrings.`tab and enter`
 import typings.atom.atomStrings.enter
 import typings.atom.atomStrings.tab
@@ -9,17 +9,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Enter extends js.Object {
-  var newValue: tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`)
+  var newValue: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
   var oldValue: js.UndefOr[
-    tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`)
+    tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
   ] = js.undefined
 }
 
 object Anon_Enter {
   @scala.inline
   def apply(
-    newValue: tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`),
-    oldValue: tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`) = null
+    newValue: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`),
+    oldValue: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`) = null
   ): Anon_Enter = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])

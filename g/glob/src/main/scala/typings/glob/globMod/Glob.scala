@@ -3,7 +3,7 @@ package typings.glob.globMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.glob.Anon_IsDirectory
-import typings.glob.globNumbers.`false`
+import typings.glob.globBooleans.`false`
 import typings.glob.globStrings.DIR
 import typings.glob.globStrings.FILE
 import typings.minimatch.minimatchMod.IMinimatch

@@ -1,6 +1,6 @@
 package typings.reactDashRouterDashNavigation
 
-import typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationNumbers.`true`
+import typings.reactDashRouterDashNavigation.reactDashRouterDashNavigationBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

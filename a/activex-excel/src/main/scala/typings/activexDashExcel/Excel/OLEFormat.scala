@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class OLEFormat protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.OLEFormat_typekey`: OLEFormat = js.native
+  @JSName("Excel.OLEFormat_typekey")
+  var ExcelDotOLEFormat_typekey: OLEFormat = js.native
   val Object: js.Any = js.native
   val Parent: js.Any = js.native
   val progID: String = js.native

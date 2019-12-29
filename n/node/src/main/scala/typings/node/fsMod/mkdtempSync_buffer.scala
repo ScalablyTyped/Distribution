@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fs", "mkdtempSync")
 @js.native
 object mkdtempSync_buffer extends js.Object {
-  def apply(prefix: java.lang.String, options: buffer_): Buffer = js.native
+  def apply(prefix: String, options: buffer_): Buffer = js.native
 }
 

@@ -27,21 +27,16 @@ class ConditionExpression protected () extends js.Object {
     *  - Sdk.Query.OptionSets </para>
     *  - Sdk.Query.Strings </para>
     */
-  def this(entityName: java.lang.String, attributeName: java.lang.String, operator: ConditionOperator) = this()
-  def this(
-    entityName: java.lang.String,
-    attributeName: java.lang.String,
-    operator: ConditionOperator,
-    values: ValueBase
-  ) = this()
+  def this(entityName: String, attributeName: String, operator: ConditionOperator) = this()
+  def this(entityName: String, attributeName: String, operator: ConditionOperator, values: ValueBase) = this()
   /**
     * Returns the logical name of the attribute in the condition expression.
     */
-  def getAttributeName(): java.lang.String = js.native
+  def getAttributeName(): String = js.native
   /**
     * Returns the logical name of the entity in the condition expression.
     */
-  def getEntityName(): java.lang.String = js.native
+  def getEntityName(): String = js.native
   /**
     * Returns the condition operator.
     */
@@ -54,12 +49,12 @@ class ConditionExpression protected () extends js.Object {
     * Sets the logical name of the attribute in the condition expression.
     * @param name The logical name of the attribute in the condition expression.
     */
-  def setAttributeName(name: java.lang.String): Unit = js.native
+  def setAttributeName(name: String): Unit = js.native
   /**
     * Sets the logical name of the entity in the condition expression.
     * @param name The logical name of the entity in the condition expression.
     */
-  def setEntityName(name: java.lang.String): Unit = js.native
+  def setEntityName(name: String): Unit = js.native
   /**
     * Sets the condition operator.
     * @param operator The condition operator.

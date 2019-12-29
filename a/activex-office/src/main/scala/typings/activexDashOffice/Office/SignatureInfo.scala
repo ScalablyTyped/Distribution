@@ -16,7 +16,8 @@ class SignatureInfo protected () extends js.Object {
   val IsCertificateRevoked: Boolean = js.native
   val IsCertificateUntrusted: Boolean = js.native
   val IsValid: Boolean = js.native
-  var `Office.SignatureInfo_typekey`: SignatureInfo = js.native
+  @JSName("Office.SignatureInfo_typekey")
+  var OfficeDotSignatureInfo_typekey: SignatureInfo = js.native
   val ReadOnly: Boolean = js.native
   var SignatureComment: String = js.native
   var SignatureImage: IPictureDisp = js.native

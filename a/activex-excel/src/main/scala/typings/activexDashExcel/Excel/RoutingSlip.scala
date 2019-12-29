@@ -10,7 +10,8 @@ class RoutingSlip protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var Delivery: XlRoutingSlipDelivery = js.native
-  var `Excel.RoutingSlip_typekey`: RoutingSlip = js.native
+  @JSName("Excel.RoutingSlip_typekey")
+  var ExcelDotRoutingSlip_typekey: RoutingSlip = js.native
   var Message: js.Any = js.native
   val Parent: js.Any = js.native
   var ReturnWhenDone: Boolean = js.native

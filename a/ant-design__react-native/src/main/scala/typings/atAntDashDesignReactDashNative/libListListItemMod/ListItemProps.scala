@@ -1,6 +1,6 @@
 package typings.atAntDashDesignReactDashNative.libListListItemMod
 
-import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.Empty
+import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings._empty
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.android
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.bottom
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.down
@@ -38,7 +38,7 @@ object ListItemProps {
   def apply(
     activeStyle: StyleProp[ViewStyle] = null,
     align: top | middle | bottom = null,
-    arrow: horizontal | down | up | empty | Empty = null,
+    arrow: horizontal | down | up | empty | _empty = null,
     children: ReactNode = null,
     delayLongPress: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,

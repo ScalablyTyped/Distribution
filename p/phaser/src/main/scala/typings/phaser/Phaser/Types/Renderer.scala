@@ -1,7 +1,6 @@
 package typings.phaser.Phaser.Types
 
 import typings.phaser.Phaser.Display.Color
-import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotCallback
 import typings.phaser.integer
 import typings.std.HTMLImageElement
 import scala.scalajs.js

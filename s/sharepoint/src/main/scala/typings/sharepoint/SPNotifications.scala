@@ -1,15 +1,6 @@
 package typings.sharepoint
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPNotifications.ContainerID
-import typings.sharepoint.SPNotifications.ContainerID.Basic
-import typings.sharepoint.SPNotifications.ContainerID.Status
-import typings.sharepoint.SPNotifications.EventID
-import typings.sharepoint.SPNotifications.EventID.OnDisplayNotification
-import typings.sharepoint.SPNotifications.EventID.OnHide
-import typings.sharepoint.SPNotifications.EventID.OnNotificationCountChanged
-import typings.sharepoint.SPNotifications.EventID.OnRemoveNotification
-import typings.sharepoint.SPNotifications.EventID.OnShow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

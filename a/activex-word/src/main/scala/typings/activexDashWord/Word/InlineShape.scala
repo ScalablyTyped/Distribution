@@ -44,7 +44,8 @@ class InlineShape protected () extends js.Object {
   var Title: String = js.native
   val Type: WdInlineShapeType = js.native
   var Width: Double = js.native
-  var `Word.InlineShape_typekey`: InlineShape = js.native
+  @JSName("Word.InlineShape_typekey")
+  var WordDotInlineShape_typekey: InlineShape = js.native
   def Activate(): Unit = js.native
   def ConvertToShape(): Shape = js.native
   def Delete(): Unit = js.native

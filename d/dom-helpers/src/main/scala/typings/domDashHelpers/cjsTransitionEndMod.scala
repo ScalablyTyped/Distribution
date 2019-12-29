@@ -1,6 +1,5 @@
 package typings.domDashHelpers
 
-import typings.domDashHelpers.cjsTransitionEndMod.Listener
 import typings.std.HTMLElement
 import typings.std.TransitionEvent
 import scala.scalajs.js

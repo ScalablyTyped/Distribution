@@ -12,7 +12,8 @@ class FaxReceiptOptions protected () extends js.Object {
   var AllowedReceipts: FAX_RECEIPT_TYPE_ENUM = js.native
   /** Authentication type used by server */
   var AuthenticationType: FAX_SMTP_AUTHENTICATION_TYPE_ENUM = js.native
-  var `FAXCOMEXLib.FaxReceiptOptions_typekey`: FaxReceiptOptions = js.native
+  @JSName("FAXCOMEXLib.FaxReceiptOptions_typekey")
+  var FAXCOMEXLibDotFaxReceiptOptions_typekey: FaxReceiptOptions = js.native
   /** SMTP password */
   var SMTPPassword: String = js.native
   /** SMTP port number */

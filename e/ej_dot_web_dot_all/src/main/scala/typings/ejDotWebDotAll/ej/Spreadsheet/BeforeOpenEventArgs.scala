@@ -11,7 +11,7 @@ trait BeforeOpenEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the target element.
     */
   var target: js.UndefOr[HTMLElement] = js.undefined
@@ -24,7 +24,7 @@ object BeforeOpenEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     target: HTMLElement = null,
     `type`: String = null
   ): BeforeOpenEventArgs = {

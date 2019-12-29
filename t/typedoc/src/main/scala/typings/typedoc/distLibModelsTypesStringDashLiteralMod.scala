@@ -1,7 +1,6 @@
 package typings.typedoc
 
 import typings.typedoc.distLibModelsTypesAbstractMod.Type
-import typings.typedoc.distLibModelsTypesStringDashLiteralMod.StringLiteralType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

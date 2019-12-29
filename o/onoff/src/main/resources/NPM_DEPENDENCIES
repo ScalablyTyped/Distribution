@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "onoff" : "5.0.0"
+      "onoff" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "onoff" : "5.0.0"
+      "onoff" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

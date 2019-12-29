@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLButtonElement")
 @js.native
 class HTMLButtonElement protected () extends js.Object {
-  var `MSHTML.HTMLButtonElement_typekey`: HTMLButtonElement = js.native
+  @JSName("MSHTML.HTMLButtonElement_typekey")
+  var MSHTMLDotHTMLButtonElement_typekey: HTMLButtonElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

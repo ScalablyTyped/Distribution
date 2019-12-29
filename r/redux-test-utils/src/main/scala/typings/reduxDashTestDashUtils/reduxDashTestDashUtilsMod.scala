@@ -3,8 +3,6 @@ package typings.reduxDashTestDashUtils
 import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Dispatch
 import typings.redux.reduxMod.Store
-import typings.reduxDashTestDashUtils.reduxDashTestDashUtilsMod.mockDispatch
-import typings.reduxDashTestDashUtils.reduxDashTestDashUtilsMod.mockStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

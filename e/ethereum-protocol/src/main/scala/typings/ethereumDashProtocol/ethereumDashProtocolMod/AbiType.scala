@@ -1,10 +1,6 @@
 package typings.ethereumDashProtocol.ethereumDashProtocolMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Constructor
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Event
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Fallback
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

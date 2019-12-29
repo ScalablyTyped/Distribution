@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cluster", "prependListener")
 @js.native
 object prependListener extends js.Object {
-  def apply(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, Unit]): Cluster = js.native
+  def apply(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Cluster = js.native
 }
 

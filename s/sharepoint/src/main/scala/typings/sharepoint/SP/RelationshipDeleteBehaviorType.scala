@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.RelationshipDeleteBehaviorType.cascade
-import typings.sharepoint.SP.RelationshipDeleteBehaviorType.none
-import typings.sharepoint.SP.RelationshipDeleteBehaviorType.restrict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

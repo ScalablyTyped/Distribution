@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait IDatePicker extends ISelect {
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[java.lang.String] = js.undefined
+  var dateFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var destroyPickerOnHide: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the value of dateFormat
   		* @returns String
   		*/
-  var getDateFormat: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method]  */
   var getDatePicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the value of destroyPickerOnHide
@@ -23,7 +23,7 @@ trait IDatePicker extends ISelect {
   		* @param format String The format to be returned.
   		* @returns String The formatted date.
   		*/
-  var getFormattedValue: js.UndefOr[js.Function1[/* format */ js.UndefOr[java.lang.String], java.lang.String]] = js.undefined
+  var getFormattedValue: js.UndefOr[js.Function1[/* format */ js.UndefOr[String], String]] = js.undefined
   /** [Method] Override this or change event will be fired twice  */
   var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Object/Ext.picker.Date) */
@@ -36,7 +36,7 @@ trait IDatePicker extends ISelect {
   /** [Method] Sets the value of dateFormat
   		* @param dateFormat String The new value.
   		*/
-  var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of destroyPickerOnHide
   		* @param destroyPickerOnHide Boolean The new value.
   		*/
@@ -51,16 +51,16 @@ object IDatePicker {
   @scala.inline
   def apply(
     ISelect: ISelect = null,
-    dateFormat: java.lang.String = null,
+    dateFormat: String = null,
     destroyPickerOnHide: js.UndefOr[Boolean] = js.undefined,
-    getDateFormat: () => java.lang.String = null,
+    getDateFormat: () => String = null,
     getDatePicker: () => Unit = null,
     getDestroyPickerOnHide: () => Boolean = null,
-    getFormattedValue: /* format */ js.UndefOr[java.lang.String] => java.lang.String = null,
+    getFormattedValue: /* format */ js.UndefOr[String] => String = null,
     onChange: () => Unit = null,
     picker: js.Any = null,
     reset: () => ISelect = null,
-    setDateFormat: /* dateFormat */ js.UndefOr[java.lang.String] => Unit = null,
+    setDateFormat: /* dateFormat */ js.UndefOr[String] => Unit = null,
     setDestroyPickerOnHide: /* destroyPickerOnHide */ js.UndefOr[Boolean] => Unit = null,
     setPicker: /* picker */ js.UndefOr[js.Any] => Unit = null
   ): IDatePicker = {

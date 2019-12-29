@@ -1,6 +1,6 @@
 package typings.nextDashServer.distLibUtilsMod
 
-import typings.nextDashServer.nextDashServerNumbers.`true`
+import typings.nextDashServer.nextDashServerBooleans.`true`
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

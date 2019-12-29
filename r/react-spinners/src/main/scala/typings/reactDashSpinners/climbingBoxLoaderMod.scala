@@ -1,7 +1,6 @@
 package typings.reactDashSpinners
 
 import typings.react.reactMod.Component
-import typings.reactDashSpinners.climbingBoxLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
 import scala.scalajs.js

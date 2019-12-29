@@ -11,7 +11,8 @@ class AttachmentSelection protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
   val Location: OlSelectionLocation = js.native
-  var `Outlook.AttachmentSelection_typekey`: AttachmentSelection = js.native
+  @JSName("Outlook.AttachmentSelection_typekey")
+  var OutlookDotAttachmentSelection_typekey: AttachmentSelection = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def GetSelection(SelectionContents: OlSelectionContents): Selection = js.native

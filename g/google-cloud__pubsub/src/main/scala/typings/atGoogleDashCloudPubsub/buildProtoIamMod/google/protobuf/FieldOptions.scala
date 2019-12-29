@@ -3,13 +3,7 @@ package typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.CType
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.CType.CORD
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.CType.STRING
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.CType.STRING_PIECE
 import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.JSType
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.JSType.JS_NORMAL
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.JSType.JS_NUMBER
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FieldOptions.JSType.JS_STRING
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

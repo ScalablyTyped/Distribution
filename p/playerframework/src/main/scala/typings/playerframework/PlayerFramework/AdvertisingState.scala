@@ -1,10 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.AdvertisingState.linear
-import typings.playerframework.PlayerFramework.AdvertisingState.loading
-import typings.playerframework.PlayerFramework.AdvertisingState.nonLinear
-import typings.playerframework.PlayerFramework.AdvertisingState.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

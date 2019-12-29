@@ -1,9 +1,9 @@
 package typings.tweetnacl.tweetnaclMod
 
 import typings.std.Uint8Array
+import typings.tweetnacl.tweetnaclBooleans.`false`
 import typings.tweetnacl.tweetnaclMod.box.keyPair
 import typings.tweetnacl.tweetnaclMod.box.open
-import typings.tweetnacl.tweetnaclNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

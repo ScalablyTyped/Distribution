@@ -1,9 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.NullOption.ALL_VALUES
-import typings.tableau.tableau.NullOption.NON_NULL_VALUES
-import typings.tableau.tableau.NullOption.NULL_VALUES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

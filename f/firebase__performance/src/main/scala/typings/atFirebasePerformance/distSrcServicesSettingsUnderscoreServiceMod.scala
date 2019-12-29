@@ -2,7 +2,6 @@ package typings.atFirebasePerformance
 
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseInstallationsDashTypes.atFirebaseInstallationsDashTypesMod.FirebaseInstallations
-import typings.atFirebasePerformance.distSrcServicesSettingsUnderscoreServiceMod.SettingsService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

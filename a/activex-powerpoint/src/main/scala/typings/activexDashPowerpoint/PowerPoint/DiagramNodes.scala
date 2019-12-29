@@ -11,7 +11,8 @@ class DiagramNodes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.DiagramNodes_typekey`: DiagramNodes = js.native
+  @JSName("PowerPoint.DiagramNodes_typekey")
+  var PowerPointDotDiagramNodes_typekey: DiagramNodes = js.native
   def Item(Index: js.Any): DiagramNode = js.native
   def SelectAll(): Unit = js.native
 }

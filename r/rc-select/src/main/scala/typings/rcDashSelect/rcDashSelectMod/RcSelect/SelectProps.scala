@@ -34,24 +34,12 @@ trait SelectProps extends js.Object {
   var notFoundContent: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function2[/* value */ String, /* label */ String, Unit]] = js.undefined
-  var onDeselect: js.UndefOr[
-    js.Function2[
-      /* value */ String, 
-      /* option */ typings.rcDashSelect.rcDashSelectMod.RcSelect.Option, 
-      Unit
-    ]
-  ] = js.undefined
+  var onDeselect: js.UndefOr[js.Function2[/* value */ String, /* option */ Option, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onInputKeyDown: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   var onPopupScroll: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onSearch: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSelect: js.UndefOr[
-    js.Function2[
-      /* value */ String, 
-      /* ontion */ typings.rcDashSelect.rcDashSelectMod.RcSelect.Option, 
-      Unit
-    ]
-  ] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* value */ String, /* ontion */ Option, Unit]] = js.undefined
   var optionFilterProp: js.UndefOr[String] = js.undefined
   var optionLabelProp: js.UndefOr[String] = js.undefined
   var placeholder: js.UndefOr[ReactNode] = js.undefined
@@ -93,12 +81,12 @@ object SelectProps {
     notFoundContent: String = null,
     onBlur: () => Unit = null,
     onChange: (/* value */ String, /* label */ String) => Unit = null,
-    onDeselect: (/* value */ String, /* option */ typings.rcDashSelect.rcDashSelectMod.RcSelect.Option) => Unit = null,
+    onDeselect: (/* value */ String, /* option */ Option) => Unit = null,
     onFocus: () => Unit = null,
     onInputKeyDown: /* e */ Event => Unit = null,
     onPopupScroll: () => Unit = null,
     onSearch: () => Unit = null,
-    onSelect: (/* value */ String, /* ontion */ typings.rcDashSelect.rcDashSelectMod.RcSelect.Option) => Unit = null,
+    onSelect: (/* value */ String, /* ontion */ Option) => Unit = null,
     optionFilterProp: String = null,
     optionLabelProp: String = null,
     placeholder: ReactNode = null,

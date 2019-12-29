@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object deserialize extends js.Object {
   /**
     * Uses a `DefaultDeserializer` with default options to read a JS value from a buffer.
-    * @experimental
     */
   def apply(data: TypedArray): js.Any = js.native
 }

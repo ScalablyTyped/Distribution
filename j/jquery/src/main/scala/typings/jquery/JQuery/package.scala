@@ -192,12 +192,11 @@ package object JQuery {
   StringDictionary[ValHook[HTMLElement]]
   // #endregion
   /* Rewritten from type alias, can be one of: 
-    - typings.jquery.jqueryNumbers.`false`
+    - typings.jquery.jqueryBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
     - typings.jquery.jqueryNumbers.`0`
-    - typings.jquery.jqueryStrings.Empty
+    - typings.jquery.jqueryStrings._empty
     - typings.std.HTMLAllCollection
   */
   type _Falsy = js.UndefOr[__Falsy | Null | HTMLAllCollection]

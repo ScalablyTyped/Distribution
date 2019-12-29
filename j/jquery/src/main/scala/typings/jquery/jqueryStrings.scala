@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 
 object jqueryStrings {
   @js.native
-  sealed trait Empty extends __Falsy
-  
-  @js.native
   sealed trait Promise extends js.Object
   
   @js.native
   sealed trait _TypeEventHandlers extends js.Object
+  
+  @js.native
+  sealed trait _empty extends __Falsy
   
   @js.native
   sealed trait abort
@@ -235,11 +235,11 @@ object jqueryStrings {
   sealed trait xml extends js.Object
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
   def _TypeEventHandlers: _TypeEventHandlers = "_TypeEventHandlers".asInstanceOf[_TypeEventHandlers]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline

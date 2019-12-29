@@ -2,8 +2,6 @@ package typings.relayDashRuntime
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.relayDashRuntime.libNetworkRelayNetworkTypesMod.PayloadData
-import typings.relayDashRuntime.libStoreRelayResponseNormalizerMod.GetDataID
-import typings.relayDashRuntime.libStoreRelayResponseNormalizerMod.NormalizationOptions
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.MutableRecordSource
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.NormalizationSelector
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.RelayResponsePayload

@@ -1,10 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.DEBUG
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.ERROR
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.INFO
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.WARNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

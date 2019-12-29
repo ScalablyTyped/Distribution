@@ -1,9 +1,6 @@
 package typings.ol.sourceImageMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADEND
-import typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADERROR
-import typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADSTART
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

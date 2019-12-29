@@ -13,55 +13,55 @@ object reactDashNavigationStrings {
   sealed trait CHILD_ACTION extends js.Object
   
   @js.native
-  sealed trait `Navigation/BACK` extends js.Object
+  sealed trait NavigationSlashBACK extends js.Object
   
   @js.native
-  sealed trait `Navigation/CLOSE_DRAWER` extends js.Object
+  sealed trait NavigationSlashCLOSE_DRAWER extends js.Object
   
   @js.native
-  sealed trait `Navigation/COMPLETE_TRANSITION` extends js.Object
+  sealed trait NavigationSlashCOMPLETE_TRANSITION extends js.Object
   
   @js.native
-  sealed trait `Navigation/DRAWER_CLOSED` extends js.Object
+  sealed trait NavigationSlashDRAWER_CLOSED extends js.Object
   
   @js.native
-  sealed trait `Navigation/DRAWER_OPENED` extends js.Object
+  sealed trait NavigationSlashDRAWER_OPENED extends js.Object
   
   @js.native
-  sealed trait `Navigation/INIT` extends js.Object
+  sealed trait NavigationSlashINIT extends js.Object
   
   @js.native
-  sealed trait `Navigation/JUMP_TO` extends js.Object
+  sealed trait NavigationSlashJUMP_TO extends js.Object
   
   @js.native
-  sealed trait `Navigation/NAVIGATE` extends js.Object
+  sealed trait NavigationSlashNAVIGATE extends js.Object
   
   @js.native
-  sealed trait `Navigation/OPEN_DRAWER` extends js.Object
+  sealed trait NavigationSlashOPEN_DRAWER extends js.Object
   
   @js.native
-  sealed trait `Navigation/POP` extends js.Object
+  sealed trait NavigationSlashPOP extends js.Object
   
   @js.native
-  sealed trait `Navigation/POP_TO_TOP` extends js.Object
+  sealed trait NavigationSlashPOP_TO_TOP extends js.Object
   
   @js.native
-  sealed trait `Navigation/PUSH` extends js.Object
+  sealed trait NavigationSlashPUSH extends js.Object
   
   @js.native
-  sealed trait `Navigation/REPLACE` extends js.Object
+  sealed trait NavigationSlashREPLACE extends js.Object
   
   @js.native
-  sealed trait `Navigation/RESET` extends js.Object
+  sealed trait NavigationSlashRESET extends js.Object
   
   @js.native
-  sealed trait `Navigation/SET_PARAMS` extends js.Object
+  sealed trait NavigationSlashSET_PARAMS extends js.Object
   
   @js.native
-  sealed trait `Navigation/TOGGLE_DRAWER` extends js.Object
+  sealed trait NavigationSlashTOGGLE_DRAWER extends js.Object
   
   @js.native
-  sealed trait `Navigation/URI` extends js.Object
+  sealed trait NavigationSlashURI extends js.Object
   
   @js.native
   sealed trait action extends EventType
@@ -103,13 +103,13 @@ object reactDashNavigationStrings {
   sealed trait order extends js.Object
   
   @js.native
-  sealed trait `react-navigation/DRAWER` extends NavigatorType
+  sealed trait `react-navigationSlashDRAWER` extends NavigatorType
   
   @js.native
-  sealed trait `react-navigation/STACK` extends NavigatorType
+  sealed trait `react-navigationSlashSTACK` extends NavigatorType
   
   @js.native
-  sealed trait `react-navigation/TABS` extends NavigatorType
+  sealed trait `react-navigationSlashTABS` extends NavigatorType
   
   @js.native
   sealed trait refocus extends js.Object
@@ -123,39 +123,39 @@ object reactDashNavigationStrings {
   @scala.inline
   def CHILD_ACTION: CHILD_ACTION = "CHILD_ACTION".asInstanceOf[CHILD_ACTION]
   @scala.inline
-  def `Navigation/BACK`: `Navigation/BACK` = "Navigation/BACK".asInstanceOf[`Navigation/BACK`]
+  def NavigationSlashBACK: NavigationSlashBACK = "Navigation/BACK".asInstanceOf[NavigationSlashBACK]
   @scala.inline
-  def `Navigation/CLOSE_DRAWER`: `Navigation/CLOSE_DRAWER` = "Navigation/CLOSE_DRAWER".asInstanceOf[`Navigation/CLOSE_DRAWER`]
+  def NavigationSlashCLOSE_DRAWER: NavigationSlashCLOSE_DRAWER = "Navigation/CLOSE_DRAWER".asInstanceOf[NavigationSlashCLOSE_DRAWER]
   @scala.inline
-  def `Navigation/COMPLETE_TRANSITION`: `Navigation/COMPLETE_TRANSITION` = "Navigation/COMPLETE_TRANSITION".asInstanceOf[`Navigation/COMPLETE_TRANSITION`]
+  def NavigationSlashCOMPLETE_TRANSITION: NavigationSlashCOMPLETE_TRANSITION = "Navigation/COMPLETE_TRANSITION".asInstanceOf[NavigationSlashCOMPLETE_TRANSITION]
   @scala.inline
-  def `Navigation/DRAWER_CLOSED`: `Navigation/DRAWER_CLOSED` = "Navigation/DRAWER_CLOSED".asInstanceOf[`Navigation/DRAWER_CLOSED`]
+  def NavigationSlashDRAWER_CLOSED: NavigationSlashDRAWER_CLOSED = "Navigation/DRAWER_CLOSED".asInstanceOf[NavigationSlashDRAWER_CLOSED]
   @scala.inline
-  def `Navigation/DRAWER_OPENED`: `Navigation/DRAWER_OPENED` = "Navigation/DRAWER_OPENED".asInstanceOf[`Navigation/DRAWER_OPENED`]
+  def NavigationSlashDRAWER_OPENED: NavigationSlashDRAWER_OPENED = "Navigation/DRAWER_OPENED".asInstanceOf[NavigationSlashDRAWER_OPENED]
   @scala.inline
-  def `Navigation/INIT`: `Navigation/INIT` = "Navigation/INIT".asInstanceOf[`Navigation/INIT`]
+  def NavigationSlashINIT: NavigationSlashINIT = "Navigation/INIT".asInstanceOf[NavigationSlashINIT]
   @scala.inline
-  def `Navigation/JUMP_TO`: `Navigation/JUMP_TO` = "Navigation/JUMP_TO".asInstanceOf[`Navigation/JUMP_TO`]
+  def NavigationSlashJUMP_TO: NavigationSlashJUMP_TO = "Navigation/JUMP_TO".asInstanceOf[NavigationSlashJUMP_TO]
   @scala.inline
-  def `Navigation/NAVIGATE`: `Navigation/NAVIGATE` = "Navigation/NAVIGATE".asInstanceOf[`Navigation/NAVIGATE`]
+  def NavigationSlashNAVIGATE: NavigationSlashNAVIGATE = "Navigation/NAVIGATE".asInstanceOf[NavigationSlashNAVIGATE]
   @scala.inline
-  def `Navigation/OPEN_DRAWER`: `Navigation/OPEN_DRAWER` = "Navigation/OPEN_DRAWER".asInstanceOf[`Navigation/OPEN_DRAWER`]
+  def NavigationSlashOPEN_DRAWER: NavigationSlashOPEN_DRAWER = "Navigation/OPEN_DRAWER".asInstanceOf[NavigationSlashOPEN_DRAWER]
   @scala.inline
-  def `Navigation/POP`: `Navigation/POP` = "Navigation/POP".asInstanceOf[`Navigation/POP`]
+  def NavigationSlashPOP: NavigationSlashPOP = "Navigation/POP".asInstanceOf[NavigationSlashPOP]
   @scala.inline
-  def `Navigation/POP_TO_TOP`: `Navigation/POP_TO_TOP` = "Navigation/POP_TO_TOP".asInstanceOf[`Navigation/POP_TO_TOP`]
+  def NavigationSlashPOP_TO_TOP: NavigationSlashPOP_TO_TOP = "Navigation/POP_TO_TOP".asInstanceOf[NavigationSlashPOP_TO_TOP]
   @scala.inline
-  def `Navigation/PUSH`: `Navigation/PUSH` = "Navigation/PUSH".asInstanceOf[`Navigation/PUSH`]
+  def NavigationSlashPUSH: NavigationSlashPUSH = "Navigation/PUSH".asInstanceOf[NavigationSlashPUSH]
   @scala.inline
-  def `Navigation/REPLACE`: `Navigation/REPLACE` = "Navigation/REPLACE".asInstanceOf[`Navigation/REPLACE`]
+  def NavigationSlashREPLACE: NavigationSlashREPLACE = "Navigation/REPLACE".asInstanceOf[NavigationSlashREPLACE]
   @scala.inline
-  def `Navigation/RESET`: `Navigation/RESET` = "Navigation/RESET".asInstanceOf[`Navigation/RESET`]
+  def NavigationSlashRESET: NavigationSlashRESET = "Navigation/RESET".asInstanceOf[NavigationSlashRESET]
   @scala.inline
-  def `Navigation/SET_PARAMS`: `Navigation/SET_PARAMS` = "Navigation/SET_PARAMS".asInstanceOf[`Navigation/SET_PARAMS`]
+  def NavigationSlashSET_PARAMS: NavigationSlashSET_PARAMS = "Navigation/SET_PARAMS".asInstanceOf[NavigationSlashSET_PARAMS]
   @scala.inline
-  def `Navigation/TOGGLE_DRAWER`: `Navigation/TOGGLE_DRAWER` = "Navigation/TOGGLE_DRAWER".asInstanceOf[`Navigation/TOGGLE_DRAWER`]
+  def NavigationSlashTOGGLE_DRAWER: NavigationSlashTOGGLE_DRAWER = "Navigation/TOGGLE_DRAWER".asInstanceOf[NavigationSlashTOGGLE_DRAWER]
   @scala.inline
-  def `Navigation/URI`: `Navigation/URI` = "Navigation/URI".asInstanceOf[`Navigation/URI`]
+  def NavigationSlashURI: NavigationSlashURI = "Navigation/URI".asInstanceOf[NavigationSlashURI]
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   @scala.inline
@@ -183,11 +183,11 @@ object reactDashNavigationStrings {
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   @scala.inline
-  def `react-navigation/DRAWER`: `react-navigation/DRAWER` = "react-navigation/DRAWER".asInstanceOf[`react-navigation/DRAWER`]
+  def `react-navigationSlashDRAWER`: `react-navigationSlashDRAWER` = "react-navigation/DRAWER".asInstanceOf[`react-navigationSlashDRAWER`]
   @scala.inline
-  def `react-navigation/STACK`: `react-navigation/STACK` = "react-navigation/STACK".asInstanceOf[`react-navigation/STACK`]
+  def `react-navigationSlashSTACK`: `react-navigationSlashSTACK` = "react-navigation/STACK".asInstanceOf[`react-navigationSlashSTACK`]
   @scala.inline
-  def `react-navigation/TABS`: `react-navigation/TABS` = "react-navigation/TABS".asInstanceOf[`react-navigation/TABS`]
+  def `react-navigationSlashTABS`: `react-navigationSlashTABS` = "react-navigation/TABS".asInstanceOf[`react-navigationSlashTABS`]
   @scala.inline
   def refocus: refocus = "refocus".asInstanceOf[refocus]
   @scala.inline

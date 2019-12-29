@@ -1,13 +1,6 @@
 package typings.thrift.thriftMod.Thrift
 
 import org.scalablytyped.runtime.TopLevel
-import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.BAD_VERSION
-import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.DEPTH_LIMIT
-import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.INVALID_DATA
-import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.NEGATIVE_SIZE
-import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.NOT_IMPLEMENTED
-import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.SIZE_LIMIT
-import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,8 @@ class SenderInAddressListRuleCondition protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: Boolean = js.native
-  var `Outlook.SenderInAddressListRuleCondition_typekey`: SenderInAddressListRuleCondition = js.native
+  @JSName("Outlook.SenderInAddressListRuleCondition_typekey")
+  var OutlookDotSenderInAddressListRuleCondition_typekey: SenderInAddressListRuleCondition = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

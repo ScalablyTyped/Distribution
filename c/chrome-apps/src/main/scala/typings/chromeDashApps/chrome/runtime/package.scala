@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object runtime {
   import org.scalablytyped.runtime.NumberDictionary
+  import typings.chromeDashApps.chrome.events.Event
   import typings.std.Exclude
 
   /* Rewritten from type alias, can be one of: 
@@ -14,8 +15,8 @@ package object runtime {
     - typings.chromeDashApps.chrome.runtime.AutomationNonInteractive
   */
   type AutomationOptions = _AutomationOptions | Boolean
-  type ExtensionConnectEvent = typings.chromeDashApps.chrome.events.Event[js.Function1[/* port */ Port, Unit]]
-  type ExtensionMessageEvent = typings.chromeDashApps.chrome.events.Event[
+  type ExtensionConnectEvent = Event[js.Function1[/* port */ Port, Unit]]
+  type ExtensionMessageEvent = Event[
     js.Function3[
       /* message */ js.Any, 
       /* sender */ MessageSender, 
@@ -37,5 +38,5 @@ package object runtime {
     * @see NotAllowedAsOptionalPermissions for permissions that you're not allowed to set on demand.
     */
   type OptionalPermission = Exclude[Permission, NotAllowedAsOptionalPermissions]
-  type RuntimeEvent = typings.chromeDashApps.chrome.events.Event[js.Function0[Unit]]
+  type RuntimeEvent = Event[js.Function0[Unit]]
 }

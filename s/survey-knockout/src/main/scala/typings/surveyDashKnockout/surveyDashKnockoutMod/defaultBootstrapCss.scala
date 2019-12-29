@@ -33,6 +33,7 @@ object defaultBootstrapCss extends js.Object {
   var comment: String = js.native
   var completedPage: String = js.native
   var container: String = js.native
+  var description: String = js.native
   var dropdown: Anon_ControlOtherRoot = js.native
   var error: Anon_Icon = js.native
   var expression: String = js.native
@@ -62,6 +63,7 @@ object defaultBootstrapCss extends js.Object {
   var row: String = js.native
   var saveData: Anon_Error = js.native
   var text: String = js.native
+  var title: String = js.native
   var window: Anon_Body = js.native
 }
 

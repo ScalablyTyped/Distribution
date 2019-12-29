@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.appservices
 
+import typings.mendixmodelsdk.distGenAppservicesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenWebservicesMod.webservices.DataAttribute
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
@@ -28,7 +29,7 @@ class MsdAttribute protected ()
 @js.native
 object MsdAttribute extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenAppservicesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new MsdAttribute instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

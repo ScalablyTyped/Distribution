@@ -3,7 +3,7 @@ package typings.steamDashClient.steamDashClientMod
 import typings.node.Buffer
 import typings.std.Error
 import typings.steamDashClient.Anon_False
-import typings.steamDashClient.steamDashClientNumbers.`false`
+import typings.steamDashClient.steamDashClientBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

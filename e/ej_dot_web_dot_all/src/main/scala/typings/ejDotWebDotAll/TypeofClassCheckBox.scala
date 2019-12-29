@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassCheckBox
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, CheckBox]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), CheckBox] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), CheckBox]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, CheckBox] {
   var Locale: js.Any = js.native
   var fn: CheckBox = js.native
 }

@@ -8,12 +8,12 @@ trait App extends js.Object {
   /**
   		 * 获取当前页面
   		 */
-  def getCurrentPage(): typings.weixinDashApp.wx.Page[js.Object, js.Object]
+  def getCurrentPage(): Page[js.Object, js.Object]
 }
 
 object App {
   @scala.inline
-  def apply(getCurrentPage: () => typings.weixinDashApp.wx.Page[js.Object, js.Object]): App = {
+  def apply(getCurrentPage: () => Page[js.Object, js.Object]): App = {
     val __obj = js.Dynamic.literal(getCurrentPage = js.Any.fromFunction0(getCurrentPage))
   
     __obj.asInstanceOf[App]

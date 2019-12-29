@@ -1,8 +1,13 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.count
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.percent
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.position
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
 import typings.std.HTMLElement
 import typings.std.Object
 import typings.std.PropertyKey
@@ -58,7 +63,7 @@ object TickConfig {
     mode: count | percent | position,
     propertyIsEnumerable: PropertyKey => Boolean,
     values: Double | js.Array[Double],
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
     labelsVisible: js.UndefOr[Boolean] = js.undefined,
     tickCreatedFunction: (/* value */ Double, /* tickElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => Unit = null
   ): TickConfig = {

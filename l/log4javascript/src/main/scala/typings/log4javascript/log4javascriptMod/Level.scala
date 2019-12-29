@@ -1,14 +1,6 @@
 package typings.log4javascript.log4javascriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.log4javascript.log4javascriptMod.Level.ALL
-import typings.log4javascript.log4javascriptMod.Level.DEBUG
-import typings.log4javascript.log4javascriptMod.Level.ERROR
-import typings.log4javascript.log4javascriptMod.Level.FATAL
-import typings.log4javascript.log4javascriptMod.Level.INFO
-import typings.log4javascript.log4javascriptMod.Level.OFF
-import typings.log4javascript.log4javascriptMod.Level.TRACE
-import typings.log4javascript.log4javascriptMod.Level.WARN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

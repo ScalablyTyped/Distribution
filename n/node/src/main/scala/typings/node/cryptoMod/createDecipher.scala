@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object createDecipher extends js.Object {
   /** @deprecated since v10.0.0 use createDecipheriv() */
-  def apply(algorithm: java.lang.String, password: BinaryLike): Decipher = js.native
-  def apply(algorithm: java.lang.String, password: BinaryLike, options: TransformOptions): Decipher = js.native
+  def apply(algorithm: String, password: BinaryLike): Decipher = js.native
+  def apply(algorithm: String, password: BinaryLike, options: TransformOptions): Decipher = js.native
   /** @deprecated since v10.0.0 use createDecipheriv() */
   def apply(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): DecipherCCM = js.native
   /** @deprecated since v10.0.0 use createDecipheriv() */

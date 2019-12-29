@@ -1,6 +1,6 @@
 package typings.pDashEvent.pDashEventMod
 
-import typings.pDashEvent.pDashEventNumbers.`true`
+import typings.pDashEvent.pDashEventBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

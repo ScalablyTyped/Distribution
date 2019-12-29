@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait SelectEventArgs extends js.Object {
   /** Data object of the selected item.
     */
-  var Item: js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.Model] = js.undefined
+  var Item: js.UndefOr[Model] = js.undefined
   /** Set this option to true to cancel the event.
     */
   var cancel: js.UndefOr[Boolean] = js.undefined
@@ -16,7 +16,7 @@ trait SelectEventArgs extends js.Object {
   var key: js.UndefOr[String] = js.undefined
   /** Instance of the autocomplete model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Text of the selected item.
     */
   var text: js.UndefOr[String] = js.undefined
@@ -31,10 +31,10 @@ trait SelectEventArgs extends js.Object {
 object SelectEventArgs {
   @scala.inline
   def apply(
-    Item: typings.ejDotWebDotAll.ej.Autocomplete.Model = null,
+    Item: Model = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    model: typings.ejDotWebDotAll.ej.Autocomplete.Model = null,
+    model: Model = null,
     text: String = null,
     `type`: String = null,
     value: String = null

@@ -1,12 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.DrawingTools
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.edit
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.erase
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.none
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.polygon
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.polyline
-import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.pushpin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

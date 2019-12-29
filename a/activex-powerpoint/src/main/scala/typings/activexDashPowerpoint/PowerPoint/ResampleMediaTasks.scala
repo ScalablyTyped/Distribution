@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class ResampleMediaTasks protected () extends js.Object {
   val Count: Double = js.native
   val PercentComplete: Double = js.native
-  var `PowerPoint.ResampleMediaTasks_typekey`: ResampleMediaTasks = js.native
+  @JSName("PowerPoint.ResampleMediaTasks_typekey")
+  var PowerPointDotResampleMediaTasks_typekey: ResampleMediaTasks = js.native
   def Cancel(): Unit = js.native
   def Item(Index: Double): ResampleMediaTask = js.native
   def Pause(): Unit = js.native

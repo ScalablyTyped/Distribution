@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ClearApplyTo.all
-import typings.officeDashJsDashPreview.Excel.ClearApplyTo.contents
-import typings.officeDashJsDashPreview.Excel.ClearApplyTo.formats
-import typings.officeDashJsDashPreview.Excel.ClearApplyTo.hyperlinks
-import typings.officeDashJsDashPreview.Excel.ClearApplyTo.removeHyperlinks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

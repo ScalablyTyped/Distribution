@@ -10,7 +10,8 @@ class Toolbar protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val BuiltIn: Boolean = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Toolbar_typekey`: Toolbar = js.native
+  @JSName("Excel.Toolbar_typekey")
+  var ExcelDotToolbar_typekey: Toolbar = js.native
   var Height: Double = js.native
   var Left: Double = js.native
   val Name: String = js.native

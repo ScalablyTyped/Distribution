@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object atJimpBmpStrings {
   @js.native
-  sealed trait `image/bmp` extends js.Object
+  sealed trait imageSlashbmp extends js.Object
   
   @js.native
-  sealed trait `image/x-ms-bmp` extends js.Object
+  sealed trait `imageSlashx-ms-bmp` extends js.Object
   
   @scala.inline
-  def `image/bmp`: `image/bmp` = "image/bmp".asInstanceOf[`image/bmp`]
+  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   @scala.inline
-  def `image/x-ms-bmp`: `image/x-ms-bmp` = "image/x-ms-bmp".asInstanceOf[`image/x-ms-bmp`]
+  def `imageSlashx-ms-bmp`: `imageSlashx-ms-bmp` = "image/x-ms-bmp".asInstanceOf[`imageSlashx-ms-bmp`]
 }
 

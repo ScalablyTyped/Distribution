@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A representation of an XML ProcessingInstruction node.
   */
-trait ProcessingInstruction
-  extends typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content {
+trait ProcessingInstruction extends Content {
   def getData(): String
   def getTarget(): String
 }
@@ -23,7 +22,7 @@ object ProcessingInstruction {
     asEntityRef: () => EntityRef,
     asProcessingInstruction: () => ProcessingInstruction,
     asText: () => Text,
-    detach: () => typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content,
+    detach: () => Content,
     getData: () => String,
     getParentElement: () => Element,
     getTarget: () => String,

@@ -1,15 +1,15 @@
 package typings.extjs.Ext.form.field
 
 import typings.extjs.Ext.IElement
+import typings.extjs.Ext.button.IButton
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IFile
-  extends typings.extjs.Ext.form.field.ITrigger {
+trait IFile extends ITrigger {
   /** [Property] (Ext.button.Button) */
-  var button: js.UndefOr[typings.extjs.Ext.button.IButton] = js.undefined
+  var button: js.UndefOr[IButton] = js.undefined
   /** [Config Option] (Object) */
   var buttonConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number) */
@@ -17,7 +17,7 @@ trait IFile
   /** [Config Option] (Boolean) */
   var buttonOnly: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var buttonText: js.UndefOr[java.lang.String] = js.undefined
+  var buttonText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var clearOnSubmit: js.UndefOr[Boolean] = js.undefined
   /** [Method] Only relevant if the instance s isFileUpload method returns true
@@ -45,12 +45,12 @@ trait IFile
 object IFile {
   @scala.inline
   def apply(
-    ITrigger: typings.extjs.Ext.form.field.ITrigger = null,
-    button: typings.extjs.Ext.button.IButton = null,
+    ITrigger: ITrigger = null,
+    button: IButton = null,
     buttonConfig: js.Any = null,
     buttonMargin: Int | Double = null,
     buttonOnly: js.UndefOr[Boolean] = js.undefined,
-    buttonText: java.lang.String = null,
+    buttonText: String = null,
     clearOnSubmit: js.UndefOr[Boolean] = js.undefined,
     extractFileInput: () => HTMLElement = null,
     fileInputEl: IElement = null,

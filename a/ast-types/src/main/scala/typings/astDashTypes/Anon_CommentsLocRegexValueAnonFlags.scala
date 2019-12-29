@@ -19,13 +19,13 @@ object Anon_CommentsLocRegexValueAnonFlags {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null,
     regex: Anon_Flags = null,
-    value: Null = null
+    value: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_CommentsLocRegexValueAnonFlags = {
     val __obj = js.Dynamic.literal()
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocRegexValueAnonFlags]
   }
 }

@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.condensed
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.expanded
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.extraCondensed
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.extraExpanded
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.normal
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.semiCondensed
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.semiExpanded
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.ultraCondensed
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.ultraExpanded
-import typings.winrtDashUwp.Windows.UI.Text.FontStretch.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

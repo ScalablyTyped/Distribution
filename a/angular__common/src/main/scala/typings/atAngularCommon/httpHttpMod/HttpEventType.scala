@@ -1,12 +1,6 @@
 package typings.atAngularCommon.httpHttpMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCommon.httpHttpMod.HttpEventType.DownloadProgress
-import typings.atAngularCommon.httpHttpMod.HttpEventType.Response
-import typings.atAngularCommon.httpHttpMod.HttpEventType.ResponseHeader
-import typings.atAngularCommon.httpHttpMod.HttpEventType.Sent
-import typings.atAngularCommon.httpHttpMod.HttpEventType.UploadProgress
-import typings.atAngularCommon.httpHttpMod.HttpEventType.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

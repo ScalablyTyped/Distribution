@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object _manifest {
   import org.scalablytyped.runtime.NumberDictionary
-  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.`<all_urls>`
+  import typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.Lessthansignall_urlsGreaterthansign
 
   type ExtensionFileUrl = String
   type ExtensionID = String
@@ -35,5 +35,5 @@ package object _manifest {
   type ThemeColor = String | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
   /** @deprecated An unexpected property was found in the WebExtension manifest. */
   type UnrecognizedProperty = js.Any
-  type _MatchPattern = `<all_urls>`
+  type _MatchPattern = Lessthansignall_urlsGreaterthansign
 }

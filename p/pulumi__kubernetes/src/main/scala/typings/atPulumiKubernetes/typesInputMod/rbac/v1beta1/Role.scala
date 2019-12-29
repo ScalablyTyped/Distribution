@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.rbac.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.rbacDotauthorizationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait Role extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`rbacDOTauthorizationDOTk8sDOTio/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]] = js.undefined
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -40,7 +40,7 @@ trait Role extends js.Object {
 object Role {
   @scala.inline
   def apply(
-    apiVersion: Input[`rbacDOTauthorizationDOTk8sDOTio/v1beta1`] = null,
+    apiVersion: Input[rbacDotauthorizationDotk8sDotioSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Role] = null,
     metadata: Input[ObjectMeta] = null,
     rules: Input[js.Array[Input[PolicyRule]]] = null

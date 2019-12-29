@@ -1,12 +1,6 @@
 package typings.heremaps.H.map.Object
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.map.Object.Type.ANY
-import typings.heremaps.H.map.Object.Type.DOM_MARKER
-import typings.heremaps.H.map.Object.Type.GROUP
-import typings.heremaps.H.map.Object.Type.MARKER
-import typings.heremaps.H.map.Object.Type.OVERLAY
-import typings.heremaps.H.map.Object.Type.SPATIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

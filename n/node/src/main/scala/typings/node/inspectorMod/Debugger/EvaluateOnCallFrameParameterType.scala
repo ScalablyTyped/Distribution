@@ -12,7 +12,7 @@ trait EvaluateOnCallFrameParameterType extends js.Object {
   /**
     * Expression to evaluate.
     */
-  var expression: java.lang.String
+  var expression: String
   /**
     * Whether preview should be generated for the result.
     * @experimental
@@ -25,7 +25,7 @@ trait EvaluateOnCallFrameParameterType extends js.Object {
   /**
     * String object group name to put result into (allows rapid releasing resulting object handles using <code>releaseObjectGroup</code>).
     */
-  var objectGroup: js.UndefOr[java.lang.String] = js.undefined
+  var objectGroup: js.UndefOr[String] = js.undefined
   /**
     * Whether the result is expected to be a JSON object that should be sent by value.
     */
@@ -44,10 +44,10 @@ object EvaluateOnCallFrameParameterType {
   @scala.inline
   def apply(
     callFrameId: CallFrameId,
-    expression: java.lang.String,
+    expression: String,
     generatePreview: js.UndefOr[Boolean] = js.undefined,
     includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined,
-    objectGroup: java.lang.String = null,
+    objectGroup: String = null,
     returnByValue: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     throwOnSideEffect: js.UndefOr[Boolean] = js.undefined

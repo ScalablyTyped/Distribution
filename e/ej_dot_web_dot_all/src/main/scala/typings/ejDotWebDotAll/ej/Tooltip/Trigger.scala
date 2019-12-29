@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tooltip
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tooltip.Trigger.Click
-import typings.ejDotWebDotAll.ej.Tooltip.Trigger.Focus
-import typings.ejDotWebDotAll.ej.Tooltip.Trigger.Hover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

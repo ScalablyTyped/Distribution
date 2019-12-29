@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionTriggerType.All
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionTriggerType.BatchedContinuousIntegration
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionTriggerType.BatchedGatedCheckIn
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionTriggerType.ContinuousIntegration
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionTriggerType.GatedCheckIn
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionTriggerType.None
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionTriggerType.PullRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

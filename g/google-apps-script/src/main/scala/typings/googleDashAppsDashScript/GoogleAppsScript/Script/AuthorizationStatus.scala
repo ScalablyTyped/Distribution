@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthorizationStatus.NOT_REQUIRED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthorizationStatus.REQUIRED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

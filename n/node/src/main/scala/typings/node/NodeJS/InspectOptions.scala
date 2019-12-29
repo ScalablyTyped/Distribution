@@ -37,9 +37,7 @@ trait InspectOptions extends js.Object {
   var maxArrayLength: js.UndefOr[Double | Null] = js.undefined
   var showHidden: js.UndefOr[Boolean] = js.undefined
   var showProxy: js.UndefOr[Boolean] = js.undefined
-  var sorted: js.UndefOr[
-    Boolean | (js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, Double])
-  ] = js.undefined
+  var sorted: js.UndefOr[Boolean | (js.Function2[/* a */ String, /* b */ String, Double])] = js.undefined
 }
 
 object InspectOptions {
@@ -54,7 +52,7 @@ object InspectOptions {
     maxArrayLength: Int | Double = null,
     showHidden: js.UndefOr[Boolean] = js.undefined,
     showProxy: js.UndefOr[Boolean] = js.undefined,
-    sorted: Boolean | (js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, Double]) = null
+    sorted: Boolean | (js.Function2[/* a */ String, /* b */ String, Double]) = null
   ): InspectOptions = {
     val __obj = js.Dynamic.literal()
     if (breakLength != null) __obj.updateDynamic("breakLength")(breakLength.asInstanceOf[js.Any])

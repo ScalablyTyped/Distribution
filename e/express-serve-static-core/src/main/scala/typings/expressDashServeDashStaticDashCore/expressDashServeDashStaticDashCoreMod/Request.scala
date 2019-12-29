@@ -1,6 +1,6 @@
 package typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod
 
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreNumbers.`false`
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreBooleans.`false`
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.`set-cookie`
 import typings.node.Anon_End
 import typings.node.NodeJS.WritableStream
@@ -255,9 +255,7 @@ trait Request[P /* <: Params */, ResBody, ReqBody]
   def param(name: String): String = js.native
   def param(name: String, defaultValue: js.Any): String = js.native
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
   /**

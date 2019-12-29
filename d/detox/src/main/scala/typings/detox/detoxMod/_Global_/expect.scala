@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("expect")
 @js.native
 object expect
-  extends TopLevel[Expect[Expect[js.Any]]]
+  extends TopLevel[Expect[Expect[js.Promise[Unit]]]]
 

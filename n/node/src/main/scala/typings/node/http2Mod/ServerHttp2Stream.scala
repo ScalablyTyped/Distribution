@@ -1,8 +1,8 @@
 package typings.node.http2Mod
 
-import typings.node.Error
 import typings.node.fsMod.promises.FileHandle
 import typings.node.httpMod.OutgoingHttpHeaders
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,12 +42,8 @@ trait ServerHttp2Stream extends Http2Stream {
   def respondWithFD(fd: FileHandle): Unit = js.native
   def respondWithFD(fd: FileHandle, headers: OutgoingHttpHeaders): Unit = js.native
   def respondWithFD(fd: FileHandle, headers: OutgoingHttpHeaders, options: ServerStreamFileResponseOptions): Unit = js.native
-  def respondWithFile(path: java.lang.String): Unit = js.native
-  def respondWithFile(path: java.lang.String, headers: OutgoingHttpHeaders): Unit = js.native
-  def respondWithFile(
-    path: java.lang.String,
-    headers: OutgoingHttpHeaders,
-    options: ServerStreamFileResponseOptionsWithError
-  ): Unit = js.native
+  def respondWithFile(path: String): Unit = js.native
+  def respondWithFile(path: String, headers: OutgoingHttpHeaders): Unit = js.native
+  def respondWithFile(path: String, headers: OutgoingHttpHeaders, options: ServerStreamFileResponseOptionsWithError): Unit = js.native
 }
 

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportConnectionTransport.bluetooth
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportConnectionTransport.ip
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportConnectionTransport.unknown
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportConnectionTransport.usb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

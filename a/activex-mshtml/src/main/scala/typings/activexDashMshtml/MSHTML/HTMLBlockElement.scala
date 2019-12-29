@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLBlockElement")
 @js.native
 class HTMLBlockElement protected () extends js.Object {
-  var `MSHTML.HTMLBlockElement_typekey`: HTMLBlockElement = js.native
+  @JSName("MSHTML.HTMLBlockElement_typekey")
+  var MSHTMLDotHTMLBlockElement_typekey: HTMLBlockElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

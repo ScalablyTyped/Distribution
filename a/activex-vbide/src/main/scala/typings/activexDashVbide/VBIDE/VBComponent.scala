@@ -19,7 +19,8 @@ class VBComponent protected () extends js.Object {
   val Saved: Boolean = js.native
   val Type: vbext_ComponentType = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
-  var `VBIDE.VBComponent_typekey`: VBComponent = js.native
+  @JSName("VBIDE.VBComponent_typekey")
+  var VBIDEDotVBComponent_typekey: VBComponent = js.native
   def Activate(): Unit = js.native
   def Collection(index: js.Any): VBComponent = js.native
   def DesignerWindow(): Window = js.native

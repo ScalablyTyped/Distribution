@@ -1,7 +1,6 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.tstl.threadBarrierMod.Barrier
 import typings.tstl.threadFlexBarrierMod.FlexBarrier
 import scala.scalajs.js
 import scala.scalajs.js.`|`

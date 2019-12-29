@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Statement[BindParameters /* <: js.Array[_] */] extends js.Object {
-  var database: typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Database = js.native
+  var database: Database = js.native
   var reader: Boolean = js.native
   var source: String = js.native
   def all(
@@ -17,7 +17,7 @@ trait Statement[BindParameters /* <: js.Array[_] */] extends js.Object {
   def bind(
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
   ): this.type = js.native
-  def columns(): js.Array[typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.ColumnDefinition] = js.native
+  def columns(): js.Array[ColumnDefinition] = js.native
   def expand(): this.type = js.native
   def expand(toggleState: Boolean): this.type = js.native
   def get(

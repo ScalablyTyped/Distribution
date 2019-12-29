@@ -3,7 +3,6 @@ package typings.openpgp.openpgpMod
 import typings.openpgp.Anon_Algorithm
 import typings.openpgp.Anon_Keyid
 import typings.openpgp.openpgpMod.enums.compression
-import typings.openpgp.openpgpMod.message.Message
 import typings.openpgp.openpgpMod.packet.List
 import typings.openpgp.openpgpMod.packet.Literal
 import typings.openpgp.openpgpMod.signature.Signature

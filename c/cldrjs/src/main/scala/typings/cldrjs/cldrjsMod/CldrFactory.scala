@@ -1,8 +1,8 @@
 package typings.cldrjs.cldrjsMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.cldrjs.cldrjsStrings.Underscore
-import typings.cldrjs.cldrjsStrings.`-`
+import typings.cldrjs.cldrjsStrings._underscore
+import typings.cldrjs.cldrjsStrings.`-_`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ Instantiable1[/* locale */ String, CldrStatic] {
     * According to http://www.unicode.org/reports/tr35/#Unicode_language_identifier, both "-" and "_" are valid locale separators (eg. "en_GB", "en-GB").
     * According to http://unicode.org/cldr/trac/ticket/6786 its usage must be consistent throughout the data set.
     */
-  var localeSep: `-` | Underscore = js.native
+  var localeSep: `-_` | _underscore = js.native
   /**
     * @name load
     * @memberof cldr.CldrFactory

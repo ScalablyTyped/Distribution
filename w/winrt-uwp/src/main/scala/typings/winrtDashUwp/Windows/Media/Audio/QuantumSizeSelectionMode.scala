@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.closestToDesired
-import typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.lowestLatency
-import typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.systemDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

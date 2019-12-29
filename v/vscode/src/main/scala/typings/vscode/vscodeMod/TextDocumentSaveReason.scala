@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.TextDocumentSaveReason.AfterDelay
-import typings.vscode.vscodeMod.TextDocumentSaveReason.FocusOut
-import typings.vscode.vscodeMod.TextDocumentSaveReason.Manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

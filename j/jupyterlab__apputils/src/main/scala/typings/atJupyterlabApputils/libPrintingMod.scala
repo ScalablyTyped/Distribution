@@ -1,6 +1,5 @@
 package typings.atJupyterlabApputils
 
-import typings.atJupyterlabApputils.libPrintingMod.Printing.OptionalAsyncThunk
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

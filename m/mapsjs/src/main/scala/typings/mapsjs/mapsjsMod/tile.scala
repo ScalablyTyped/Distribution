@@ -10,10 +10,6 @@ import typings.mapsjs.Anon_Data
 import typings.mapsjs.Anon_DataFormat
 import typings.mapsjs.Anon_Descriptor
 import typings.mapsjs.Anon_EndpointCollection
-import typings.mapsjs.mapsjsMod.tile.layer
-import typings.mapsjs.mapsjsMod.tile.quad
-import typings.mapsjs.mapsjsMod.tile.renderer
-import typings.mapsjs.mapsjsMod.tile.requestor
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
 import scala.scalajs.js

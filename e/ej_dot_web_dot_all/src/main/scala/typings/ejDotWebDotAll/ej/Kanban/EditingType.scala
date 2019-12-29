@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Kanban
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Kanban.EditingType.Dropdown
-import typings.ejDotWebDotAll.ej.Kanban.EditingType.Numeric
-import typings.ejDotWebDotAll.ej.Kanban.EditingType.String
-import typings.ejDotWebDotAll.ej.Kanban.EditingType.TextArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,12 +42,10 @@ object EditingType extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EditingType with Double] = js.native
   /* 3 */ @js.native
-  object DatePicker
-    extends TopLevel[typings.ejDotWebDotAll.ej.Kanban.EditingType.DatePicker with Double]
+  object DatePicker extends TopLevel[DatePicker with Double]
   
   /* 4 */ @js.native
-  object DateTimePicker
-    extends TopLevel[typings.ejDotWebDotAll.ej.Kanban.EditingType.DateTimePicker with Double]
+  object DateTimePicker extends TopLevel[DateTimePicker with Double]
   
   /* 2 */ @js.native
   object Dropdown extends TopLevel[Dropdown with Double]
@@ -60,8 +54,7 @@ object EditingType extends js.Object {
   object Numeric extends TopLevel[Numeric with Double]
   
   /* 6 */ @js.native
-  object RTE
-    extends TopLevel[typings.ejDotWebDotAll.ej.Kanban.EditingType.RTE with Double]
+  object RTE extends TopLevel[RTE with Double]
   
   /* 0 */ @js.native
   object String extends TopLevel[String with Double]

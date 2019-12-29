@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.ListBox
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ListBox.SortOrder.Ascending
-import typings.ejDotWebDotAll.ej.ListBox.SortOrder.Descending
-import typings.ejDotWebDotAll.ej.ListBox.SortOrder.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,21 +13,18 @@ sealed trait SortOrder extends js.Object
 object SortOrder extends js.Object {
   ///To sort items in Ascending order.
   @js.native
-  sealed trait Ascending
-    extends typings.ejDotWebDotAll.ej.ListBox.SortOrder
+  sealed trait Ascending extends SortOrder
   
   ///To sort items in Descending order.
   @js.native
-  sealed trait Descending
-    extends typings.ejDotWebDotAll.ej.ListBox.SortOrder
+  sealed trait Descending extends SortOrder
   
   ///The items are not sorted.
   @js.native
-  sealed trait None
-    extends typings.ejDotWebDotAll.ej.ListBox.SortOrder
+  sealed trait None extends SortOrder
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.ListBox.SortOrder with Double] = js.native
+  def apply(value: Double): js.UndefOr[SortOrder with Double] = js.native
   /* 1 */ @js.native
   object Ascending extends TopLevel[Ascending with Double]
   

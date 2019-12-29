@@ -30,7 +30,7 @@ trait AppOptions extends js.Object {
     * [Authenticate with limited privileges](/docs/database/admin/start#authenticate-with-limited-privileges)
     * for detailed documentation and code samples.
     */
-  var databaseAuthVariableOverride: js.UndefOr[js.Object] = js.undefined
+  var databaseAuthVariableOverride: js.UndefOr[js.Object | Null] = js.undefined
   /**
     * The URL of the Realtime Database from which to read and write data.
     */

@@ -1,5 +1,6 @@
 package typings.atPhosphorWidgets
 
+import typings.atPhosphorWidgets.libBoxlayoutMod.BoxLayout.Alignment
 import typings.atPhosphorWidgets.libBoxlayoutMod.BoxLayout.Direction
 import typings.atPhosphorWidgets.libDocklayoutMod.DockLayout.InsertMode
 import typings.atPhosphorWidgets.libDockpanelMod.DockPanel.Mode
@@ -7,7 +8,6 @@ import typings.atPhosphorWidgets.libLayoutMod.Layout.FitPolicy
 import typings.atPhosphorWidgets.libLayoutMod.Layout.HorizontalAlignment
 import typings.atPhosphorWidgets.libLayoutMod.Layout.VerticalAlignment
 import typings.atPhosphorWidgets.libMenuMod.Menu.ItemType
-import typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Alignment
 import typings.atPhosphorWidgets.libTabbarMod.TabBar.InsertBehavior
 import typings.atPhosphorWidgets.libTabbarMod.TabBar.Orientation
 import typings.atPhosphorWidgets.libTabbarMod.TabBar.RemoveBehavior
@@ -28,7 +28,7 @@ object atPhosphorWidgetsStrings {
   @js.native
   sealed trait center
     extends Alignment
-       with typings.atPhosphorWidgets.libBoxlayoutMod.BoxLayout.Alignment
+       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Alignment
        with HorizontalAlignment
        with VerticalAlignment
   
@@ -41,13 +41,13 @@ object atPhosphorWidgetsStrings {
   @js.native
   sealed trait end
     extends Alignment
-       with typings.atPhosphorWidgets.libBoxlayoutMod.BoxLayout.Alignment
+       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Alignment
   
   @js.native
   sealed trait horizontal
     extends Orientation
-       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Orientation
        with typings.atPhosphorWidgets.libScrollbarMod.ScrollBar.Orientation
+       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Orientation
   
   @js.native
   sealed trait increment extends js.Object
@@ -55,7 +55,7 @@ object atPhosphorWidgetsStrings {
   @js.native
   sealed trait justify
     extends Alignment
-       with typings.atPhosphorWidgets.libBoxlayoutMod.BoxLayout.Alignment
+       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Alignment
   
   @js.native
   sealed trait left
@@ -132,7 +132,7 @@ object atPhosphorWidgetsStrings {
   @js.native
   sealed trait start
     extends Alignment
-       with typings.atPhosphorWidgets.libBoxlayoutMod.BoxLayout.Alignment
+       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Alignment
   
   @js.native
   sealed trait submenu extends ItemType
@@ -157,8 +157,8 @@ object atPhosphorWidgetsStrings {
   @js.native
   sealed trait vertical
     extends Orientation
-       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Orientation
        with typings.atPhosphorWidgets.libScrollbarMod.ScrollBar.Orientation
+       with typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.Orientation
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

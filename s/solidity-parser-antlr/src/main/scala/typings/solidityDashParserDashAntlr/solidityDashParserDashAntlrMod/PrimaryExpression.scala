@@ -40,32 +40,6 @@ object PrimaryExpression {
     __obj.asInstanceOf[PrimaryExpression]
   }
   @scala.inline
-  def ElementaryTypeNameExpression(
-    `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ElementaryTypeNameExpression,
-    typeName: ElementaryTypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): PrimaryExpression = {
-    val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PrimaryExpression]
-  }
-  @scala.inline
-  def Identifier(
-    name: String,
-    `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Identifier,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): PrimaryExpression = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PrimaryExpression]
-  }
-  @scala.inline
   def TupleExpression(
     components: js.Array[Expression],
     isArray: Boolean,
@@ -80,6 +54,19 @@ object PrimaryExpression {
     __obj.asInstanceOf[PrimaryExpression]
   }
   @scala.inline
+  def ElementaryTypeNameExpression(
+    `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ElementaryTypeNameExpression,
+    typeName: ElementaryTypeName,
+    loc: Location = null,
+    range: js.Tuple2[Double, Double] = null
+  ): PrimaryExpression = {
+    val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrimaryExpression]
+  }
+  @scala.inline
   def BooleanLiteral(
     `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.BooleanLiteral,
     value: Boolean,
@@ -87,6 +74,19 @@ object PrimaryExpression {
     range: js.Tuple2[Double, Double] = null
   ): PrimaryExpression = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrimaryExpression]
+  }
+  @scala.inline
+  def Identifier(
+    name: String,
+    `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Identifier,
+    loc: Location = null,
+    range: js.Tuple2[Double, Double] = null
+  ): PrimaryExpression = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])

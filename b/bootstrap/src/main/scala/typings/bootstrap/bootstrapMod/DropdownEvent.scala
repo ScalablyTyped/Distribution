@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.bootstrap.bootstrapStrings.showDOTbsDOTdropdown
-  - typings.bootstrap.bootstrapStrings.shownDOTbsDOTdropdown
-  - typings.bootstrap.bootstrapStrings.hideDOTbsDOTdropdown
-  - typings.bootstrap.bootstrapStrings.hiddenDOTbsDOTdropdown
+  - typings.bootstrap.bootstrapStrings.showDotbsDotdropdown
+  - typings.bootstrap.bootstrapStrings.shownDotbsDotdropdown
+  - typings.bootstrap.bootstrapStrings.hideDotbsDotdropdown
+  - typings.bootstrap.bootstrapStrings.hiddenDotbsDotdropdown
 */
 trait DropdownEvent extends js.Object
 
@@ -16,12 +16,12 @@ object DropdownEvent {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def hiddenDOTbsDOTdropdown: typings.bootstrap.bootstrapStrings.hiddenDOTbsDOTdropdown = this.cast("hidden.bs.dropdown")
+  def hiddenDotbsDotdropdown: typings.bootstrap.bootstrapStrings.hiddenDotbsDotdropdown = this.cast("hidden.bs.dropdown")
   @scala.inline
-  def hideDOTbsDOTdropdown: typings.bootstrap.bootstrapStrings.hideDOTbsDOTdropdown = this.cast("hide.bs.dropdown")
+  def hideDotbsDotdropdown: typings.bootstrap.bootstrapStrings.hideDotbsDotdropdown = this.cast("hide.bs.dropdown")
   @scala.inline
-  def showDOTbsDOTdropdown: typings.bootstrap.bootstrapStrings.showDOTbsDOTdropdown = this.cast("show.bs.dropdown")
+  def showDotbsDotdropdown: typings.bootstrap.bootstrapStrings.showDotbsDotdropdown = this.cast("show.bs.dropdown")
   @scala.inline
-  def shownDOTbsDOTdropdown: typings.bootstrap.bootstrapStrings.shownDOTbsDOTdropdown = this.cast("shown.bs.dropdown")
+  def shownDotbsDotdropdown: typings.bootstrap.bootstrapStrings.shownDotbsDotdropdown = this.cast("shown.bs.dropdown")
 }
 

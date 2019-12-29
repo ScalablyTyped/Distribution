@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseInstallationsStrings {
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait FIS_v2 extends js.Object
   
   @js.native
   sealed trait Installations extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait `app-offline` extends ErrorCode
@@ -22,7 +22,7 @@ object atFirebaseInstallationsStrings {
   sealed trait `delete-pending-registration` extends ErrorCode
   
   @js.native
-  sealed trait `https://firebaseinstallationsDOTgoogleapisDOTcom/v1` extends js.Object
+  sealed trait httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1 extends js.Object
   
   @js.native
   sealed trait `installation-not-found` extends ErrorCode
@@ -43,17 +43,17 @@ object atFirebaseInstallationsStrings {
   sealed trait `request-failed` extends ErrorCode
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def FIS_v2: FIS_v2 = "FIS_v2".asInstanceOf[FIS_v2]
   @scala.inline
   def Installations: Installations = "Installations".asInstanceOf[Installations]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def `app-offline`: `app-offline` = "app-offline".asInstanceOf[`app-offline`]
   @scala.inline
   def `delete-pending-registration`: `delete-pending-registration` = "delete-pending-registration".asInstanceOf[`delete-pending-registration`]
   @scala.inline
-  def `https://firebaseinstallationsDOTgoogleapisDOTcom/v1`: `https://firebaseinstallationsDOTgoogleapisDOTcom/v1` = "https://firebaseinstallations.googleapis.com/v1".asInstanceOf[`https://firebaseinstallationsDOTgoogleapisDOTcom/v1`]
+  def httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1: httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1 = "https://firebaseinstallations.googleapis.com/v1".asInstanceOf[httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1]
   @scala.inline
   def `installation-not-found`: `installation-not-found` = "installation-not-found".asInstanceOf[`installation-not-found`]
   @scala.inline

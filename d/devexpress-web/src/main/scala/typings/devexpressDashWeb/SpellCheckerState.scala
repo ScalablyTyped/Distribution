@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.SpellCheckerState.Disabled
-import typings.devexpressDashWeb.SpellCheckerState.Done
-import typings.devexpressDashWeb.SpellCheckerState.InProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

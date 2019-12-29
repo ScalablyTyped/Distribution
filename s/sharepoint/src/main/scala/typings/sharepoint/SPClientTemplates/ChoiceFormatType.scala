@@ -1,8 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientTemplates.ChoiceFormatType.Dropdown
-import typings.sharepoint.SPClientTemplates.ChoiceFormatType.Radio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

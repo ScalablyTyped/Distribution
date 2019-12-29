@@ -15,7 +15,7 @@ object nextDashServerStrings {
   sealed trait beforePopState extends js.Object
   
   @js.native
-  sealed trait `build-manifestDOTjson` extends js.Object
+  sealed trait `build-manifestDotjson` extends js.Object
   
   @js.native
   sealed trait events extends js.Object
@@ -24,10 +24,10 @@ object nextDashServerStrings {
   sealed trait hybrid extends js.Object
   
   @js.native
-  sealed trait nextDOTconfigDOTjs extends js.Object
+  sealed trait nextDotconfigDotjs extends js.Object
   
   @js.native
-  sealed trait `pages-manifestDOTjson` extends js.Object
+  sealed trait `pages-manifestDotjson` extends js.Object
   
   @js.native
   sealed trait `phase-development-server` extends js.Object
@@ -45,7 +45,7 @@ object nextDashServerStrings {
   sealed trait prefetch extends js.Object
   
   @js.native
-  sealed trait `prerender-manifestDOTjson` extends js.Object
+  sealed trait `prerender-manifestDotjson` extends js.Object
   
   @js.native
   sealed trait public extends js.Object
@@ -54,7 +54,7 @@ object nextDashServerStrings {
   sealed trait push extends js.Object
   
   @js.native
-  sealed trait `react-loadable-manifestDOTjson` extends js.Object
+  sealed trait `react-loadable-manifestDotjson` extends js.Object
   
   @js.native
   sealed trait reload extends js.Object
@@ -81,15 +81,15 @@ object nextDashServerStrings {
   @scala.inline
   def beforePopState: beforePopState = "beforePopState".asInstanceOf[beforePopState]
   @scala.inline
-  def `build-manifestDOTjson`: `build-manifestDOTjson` = "build-manifest.json".asInstanceOf[`build-manifestDOTjson`]
+  def `build-manifestDotjson`: `build-manifestDotjson` = "build-manifest.json".asInstanceOf[`build-manifestDotjson`]
   @scala.inline
   def events: events = "events".asInstanceOf[events]
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
-  def nextDOTconfigDOTjs: nextDOTconfigDOTjs = "next.config.js".asInstanceOf[nextDOTconfigDOTjs]
+  def nextDotconfigDotjs: nextDotconfigDotjs = "next.config.js".asInstanceOf[nextDotconfigDotjs]
   @scala.inline
-  def `pages-manifestDOTjson`: `pages-manifestDOTjson` = "pages-manifest.json".asInstanceOf[`pages-manifestDOTjson`]
+  def `pages-manifestDotjson`: `pages-manifestDotjson` = "pages-manifest.json".asInstanceOf[`pages-manifestDotjson`]
   @scala.inline
   def `phase-development-server`: `phase-development-server` = "phase-development-server".asInstanceOf[`phase-development-server`]
   @scala.inline
@@ -101,13 +101,13 @@ object nextDashServerStrings {
   @scala.inline
   def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
   @scala.inline
-  def `prerender-manifestDOTjson`: `prerender-manifestDOTjson` = "prerender-manifest.json".asInstanceOf[`prerender-manifestDOTjson`]
+  def `prerender-manifestDotjson`: `prerender-manifestDotjson` = "prerender-manifest.json".asInstanceOf[`prerender-manifestDotjson`]
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
-  def `react-loadable-manifestDOTjson`: `react-loadable-manifestDOTjson` = "react-loadable-manifest.json".asInstanceOf[`react-loadable-manifestDOTjson`]
+  def `react-loadable-manifestDotjson`: `react-loadable-manifestDotjson` = "react-loadable-manifest.json".asInstanceOf[`react-loadable-manifestDotjson`]
   @scala.inline
   def reload: reload = "reload".asInstanceOf[reload]
   @scala.inline

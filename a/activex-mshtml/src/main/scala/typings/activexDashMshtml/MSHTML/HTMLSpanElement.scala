@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLSpanElement")
 @js.native
 class HTMLSpanElement protected () extends js.Object {
-  var `MSHTML.HTMLSpanElement_typekey`: HTMLSpanElement = js.native
+  @JSName("MSHTML.HTMLSpanElement_typekey")
+  var MSHTMLDotHTMLSpanElement_typekey: HTMLSpanElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

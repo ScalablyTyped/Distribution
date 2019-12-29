@@ -28,7 +28,7 @@ object types extends js.Object {
   def isMap(`object`: js.Any): Boolean = js.native
   def isMapIterator(`object`: js.Any): Boolean = js.native
   def isModuleNamespaceObject(value: js.Any): Boolean = js.native
-  def isNativeError(`object`: js.Any): /* is node.Error */ Boolean = js.native
+  def isNativeError(`object`: js.Any): /* is std.Error */ Boolean = js.native
   def isNumberObject(`object`: js.Any): /* is std.Number */ Boolean = js.native
   def isPromise(`object`: js.Any): Boolean = js.native
   def isProxy(`object`: js.Any): Boolean = js.native

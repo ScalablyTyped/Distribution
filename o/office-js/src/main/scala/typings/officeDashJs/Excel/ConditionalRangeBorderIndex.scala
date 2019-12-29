@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeBottom
-import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeLeft
-import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeRight
-import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

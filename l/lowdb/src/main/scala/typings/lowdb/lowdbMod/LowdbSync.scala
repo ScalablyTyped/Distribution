@@ -12,7 +12,7 @@ trait LowdbSync[SchemaT]
   extends LowdbBase[SchemaT]
      with ObjectChain[SchemaT] {
   @JSName("_")
-  var __Original: LoDashStatic = js.native
+  var _underscore_Original: LoDashStatic = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -81,7 +81,8 @@ trait LowdbSync[SchemaT]
     * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
     * upperFirst, value, and words.
     **/
-  def `_`[T](value: T): LoDashImplicitWrapper[T] = js.native
+  @JSName("_")
+  def _underscore[T](value: T): LoDashImplicitWrapper[T] = js.native
   def read(): this.type = js.native
   def write[T](returnValue: T): T with js.Promise[T] = js.native
 }

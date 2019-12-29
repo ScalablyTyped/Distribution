@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbEndpointType.bulk
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbEndpointType.control
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbEndpointType.interrupt
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbEndpointType.isochronous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

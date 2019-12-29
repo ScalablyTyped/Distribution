@@ -1,6 +1,6 @@
 package typings.tabulatorDashTables.Tabulator
 
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`false`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.arrow
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.header
 import scala.scalajs.js

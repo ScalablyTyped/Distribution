@@ -1,16 +1,6 @@
 package typings.atPollyjsUtils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS
-import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.INTERCEPT
-import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.PASSTHROUGH
-import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.RECORD
-import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.REPLAY
-import typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES
-import typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.ERROR
-import typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.WARN
-import typings.atPollyjsUtils.atPollyjsUtilsMod.MODES
-import typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.STOPPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,8 +64,7 @@ object atPollyjsUtilsMod extends js.Object {
     object ERROR extends TopLevel[ERROR with String]
     
     /* "record" */ @js.native
-    object RECORD
-      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.RECORD with String]
+    object RECORD extends TopLevel[RECORD with String]
     
     /* "warn" */ @js.native
     object WARN extends TopLevel[WARN with String]
@@ -99,16 +88,13 @@ object atPollyjsUtilsMod extends js.Object {
     @JSBracketAccess
     def apply(value: String): js.UndefOr[MODES with String] = js.native
     /* "passthrough" */ @js.native
-    object PASSTHROUGH
-      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.PASSTHROUGH with String]
+    object PASSTHROUGH extends TopLevel[PASSTHROUGH with String]
     
     /* "record" */ @js.native
-    object RECORD
-      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.RECORD with String]
+    object RECORD extends TopLevel[RECORD with String]
     
     /* "replay" */ @js.native
-    object REPLAY
-      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.REPLAY with String]
+    object REPLAY extends TopLevel[REPLAY with String]
     
     /* "stopped" */ @js.native
     object STOPPED extends TopLevel[STOPPED with String]

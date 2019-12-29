@@ -24,9 +24,9 @@ trait NavigationDrawerProp[State, Params] extends js.Object {
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
   var state: State with Anon_ParamsP[Params] = js.native
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
-  def closeDrawer(): Unit = js.native
+  def closeDrawer(): js.Any = js.native
   @JSName("closeDrawer")
-  def closeDrawer_Any(): js.Any = js.native
+  def closeDrawer_Unit(): Unit = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
   def dismiss(): Boolean = js.native
   @JSName("emit")
@@ -50,12 +50,12 @@ trait NavigationDrawerProp[State, Params] extends js.Object {
   def navigate(routeNameOrOptions: String): Boolean = js.native
   def navigate(routeNameOrOptions: String, params: NavigationParams): Boolean = js.native
   def navigate(routeNameOrOptions: String, params: NavigationParams, action: NavigationAction): Boolean = js.native
-  def openDrawer(): Unit = js.native
+  def openDrawer(): js.Any = js.native
   @JSName("openDrawer")
-  def openDrawer_Any(): js.Any = js.native
+  def openDrawer_Unit(): Unit = js.native
   def setParams(newParams: Partial[Params]): Boolean = js.native
-  def toggleDrawer(): Unit = js.native
+  def toggleDrawer(): js.Any = js.native
   @JSName("toggleDrawer")
-  def toggleDrawer_Any(): js.Any = js.native
+  def toggleDrawer_Unit(): Unit = js.native
 }
 

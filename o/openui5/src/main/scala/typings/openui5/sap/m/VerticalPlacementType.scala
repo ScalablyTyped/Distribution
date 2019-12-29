@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.VerticalPlacementType.Bottom
-import typings.openui5.sap.m.VerticalPlacementType.Top
-import typings.openui5.sap.m.VerticalPlacementType.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

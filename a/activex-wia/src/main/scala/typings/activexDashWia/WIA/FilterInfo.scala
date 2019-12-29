@@ -17,6 +17,7 @@ class FilterInfo protected () extends js.Object {
   val FilterID: String = js.native
   /** Returns the FilterInfo Name */
   val Name: String = js.native
-  var `WIA.FilterInfo_typekey`: FilterInfo = js.native
+  @JSName("WIA.FilterInfo_typekey")
+  var WIADotFilterInfo_typekey: FilterInfo = js.native
 }
 

@@ -1,13 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashSnap7.nodeDashSnap7Mod.WordLen.S7WLBit
-import typings.nodeDashSnap7.nodeDashSnap7Mod.WordLen.S7WLByte
-import typings.nodeDashSnap7.nodeDashSnap7Mod.WordLen.S7WLCounter
-import typings.nodeDashSnap7.nodeDashSnap7Mod.WordLen.S7WLDWord
-import typings.nodeDashSnap7.nodeDashSnap7Mod.WordLen.S7WLReal
-import typings.nodeDashSnap7.nodeDashSnap7Mod.WordLen.S7WLTimer
-import typings.nodeDashSnap7.nodeDashSnap7Mod.WordLen.S7WLWord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

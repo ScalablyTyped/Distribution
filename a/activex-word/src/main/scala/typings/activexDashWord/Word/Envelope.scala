@@ -36,7 +36,8 @@ class Envelope protected () extends js.Object {
   var SenderPostalfromLeft: Double = js.native
   var SenderPostalfromTop: Double = js.native
   var Vertical: Boolean = js.native
-  var `Word.Envelope_typekey`: Envelope = js.native
+  @JSName("Word.Envelope_typekey")
+  var WordDotEnvelope_typekey: Envelope = js.native
   def Insert(
     ExtractAddress: js.UndefOr[js.Any],
     Address: js.UndefOr[js.Any],

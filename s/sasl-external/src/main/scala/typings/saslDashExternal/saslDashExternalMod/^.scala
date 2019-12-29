@@ -2,7 +2,7 @@ package typings.saslDashExternal.saslDashExternalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.saslDashExternal.TypeofClassExternalMechanism
-import typings.saslDashExternal.saslDashExternalNumbers.`true`
+import typings.saslDashExternal.saslDashExternalBooleans.`true`
 import typings.saslDashExternal.saslDashExternalStrings.EXTERNAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`

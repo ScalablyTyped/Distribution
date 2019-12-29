@@ -1,6 +1,5 @@
 package typings.xmlcreate
 
-import typings.xmlcreate.libNodesXmlNodeMod.XmlNode
 import typings.xmlcreate.libOptionsMod.IStringOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,7 +92,7 @@ trait DirectionsViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
     */
-  var timeAttribute: DirectionsViewModelTimeAttribute = js.native
+  val timeAttribute: DirectionsViewModelTimeAttribute = js.native
   /**
     * Array of objects containing properties specific to either an ArcGIS service or organization's travel modes. More information can be found in the [ArcGIS Online documentation](https://doc.arcgis.com/en/arcgis-online/reference/travel-modes.htm#GUID-96DF7F50-E0B2-4BF3-8271-EB515D3F0107).
     *
@@ -147,7 +146,7 @@ trait DirectionsViewModel
     *
     *
     */
-  def getDirections(): IPromise[RouteResult] = js.native
+  def getDirections(): js.Promise[RouteResult] = js.native
   /**
     * Highlights the specified route segment on the map.
     *
@@ -165,9 +164,9 @@ trait DirectionsViewModel
     *
     *
     */
-  def load(): IPromise[_] = js.native
+  def load(): js.Promise[_] = js.native
   /**
-    * Resets the state of the ViewModel, clearing off all the input stops, and results in the widget. The results persist in the map.
+    * Resets the state of the ViewModel, clearing all the input stops and results in the widget and in the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#reset)
     *

@@ -20,7 +20,8 @@ class ExchangeDistributionList protected () extends js.Object {
   val Manager: AddressEntry = js.native
   val Members: AddressEntries = js.native
   var Name: String = js.native
-  var `Outlook.ExchangeDistributionList_typekey`: ExchangeDistributionList = js.native
+  @JSName("Outlook.ExchangeDistributionList_typekey")
+  var OutlookDotExchangeDistributionList_typekey: ExchangeDistributionList = js.native
   val Parent: js.Any = js.native
   val PrimarySmtpAddress: String = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native

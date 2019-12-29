@@ -1,7 +1,6 @@
 package typings.vsoDashNodeDashApi
 
 import typings.vsoDashNodeDashApi.clientApiBasesMod.ClientApiBase
-import typings.vsoDashNodeDashApi.coreApiMod.ICoreApi
 import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationReference
 import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.IdentityRef
 import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.JsonPatchDocument

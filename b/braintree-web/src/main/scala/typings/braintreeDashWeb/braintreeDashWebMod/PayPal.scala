@@ -34,6 +34,7 @@ trait PayPal extends js.Object {
     * });
     * @returns {void}
     */
+  def create(options: Anon_Client): js.Promise[PayPal] = js.native
   def create(options: Anon_Client, callback: callback): Unit = js.native
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/paypal.create|create}.
@@ -138,6 +139,7 @@ trait PayPal extends js.Object {
     * });
     * @returns {PayPal~tokenizeReturn} A handle to close the PayPal checkout frame.
     */
+  def tokenize(options: Anon_Amount): js.Promise[PayPalTokenizeReturn] = js.native
   def tokenize(options: Anon_Amount, callback: callback): PayPalTokenizeReturn = js.native
 }
 

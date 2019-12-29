@@ -1,5 +1,7 @@
 package typings.sharedb.sharedbMod.middleware
 
+import typings.sharedb.libAgentMod.^
+import typings.sharedb.sharedbMod.sharedb
 import typings.sharedb.sharedbStrings.afterSubmit
 import typings.sharedb.sharedbStrings.apply
 import typings.sharedb.sharedbStrings.commit
@@ -24,8 +26,8 @@ object ConnectContext {
   @scala.inline
   def apply(
     action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
-    agent: typings.sharedb.libAgentMod.^,
-    backend: typings.sharedb.sharedbMod.sharedb,
+    agent: ^,
+    backend: sharedb,
     req: js.Any,
     stream: js.Any
   ): ConnectContext = {

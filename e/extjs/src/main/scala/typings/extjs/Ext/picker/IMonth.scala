@@ -12,7 +12,7 @@ trait IMonth extends IComponent {
   		*/
   var adjustYear: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var cancelText: js.UndefOr[java.lang.String] = js.undefined
+  var cancelText: js.UndefOr[String] = js.undefined
   /** [Method] Gets the selected value
   		* @returns Number[] The selected value
   		*/
@@ -22,9 +22,9 @@ trait IMonth extends IComponent {
   		*/
   var hasSelection: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var okText: js.UndefOr[java.lang.String] = js.undefined
+  var okText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var selectedCls: js.UndefOr[java.lang.String] = js.undefined
+  var selectedCls: js.UndefOr[String] = js.undefined
   /** [Method] Set the value for the picker
   		* @param value Date/Number[] The value to set. It can be a Date object, where the month/year will be extracted, or it can be an array, with the month as the first index and the year as the second.
   		* @returns Ext.picker.Month this
@@ -41,11 +41,11 @@ object IMonth {
   def apply(
     IComponent: IComponent = null,
     adjustYear: /* offset */ js.UndefOr[Double] => Unit = null,
-    cancelText: java.lang.String = null,
+    cancelText: String = null,
     getValue: () => Array = null,
     hasSelection: () => Boolean = null,
-    okText: java.lang.String = null,
-    selectedCls: java.lang.String = null,
+    okText: String = null,
+    selectedCls: String = null,
     setValue: /* value */ js.UndefOr[js.Any] => IMonth = null,
     showButtons: js.UndefOr[Boolean] = js.undefined,
     value: js.Any = null

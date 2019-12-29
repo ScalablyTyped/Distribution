@@ -1,8 +1,5 @@
 package typings.atPhosphorSignaling
 
-import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
-import typings.atPhosphorSignaling.atPhosphorSignalingMod.Signal.ExceptionHandler
-import typings.atPhosphorSignaling.atPhosphorSignalingMod.Slot
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

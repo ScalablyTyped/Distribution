@@ -2,6 +2,7 @@ package typings.forgeDashApis.forgeDashApisMod
 
 import typings.forgeDashApis.Anon_AcceptEncodingIfModifiedSince
 import typings.forgeDashApis.Anon_AcceptEncodingIfModifiedSinceIfNoneMatch
+import typings.forgeDashApis.Anon_Access
 import typings.forgeDashApis.Anon_BeginsWith
 import typings.forgeDashApis.Anon_ContentDisposition
 import typings.forgeDashApis.Anon_ContentDispositionIfMatch
@@ -33,7 +34,7 @@ class ObjectsApi () extends js.Object {
     bucketKey: String,
     objectName: String,
     postBucketsSigned: PostBucketsSigned,
-    access: String,
+    opts: Anon_Access,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -42,19 +43,19 @@ class ObjectsApi () extends js.Object {
     */
   def deleteObject(bucketKey: String, objectName: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
+    * Delete a signed URL. A successful call to this endpoint requires bucket owner access.
+    */
+  def deleteSignedResource(id: String, region: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  /**
     * Download an object.
     */
-  def deleteSignedResource(
+  def getObject(
     bucketKey: String,
     objectName: String,
     opts: Anon_AcceptEncodingIfModifiedSince,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
-  /**
-    * Delete a signed URL. A successful call to this endpoint requires bucket owner access.
-    */
-  def deleteSignedResource(id: String, region: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns object details in JSON format.
     */

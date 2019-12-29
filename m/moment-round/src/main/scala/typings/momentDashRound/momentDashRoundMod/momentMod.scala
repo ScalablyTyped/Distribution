@@ -1,6 +1,5 @@
 package typings.momentDashRound.momentDashRoundMod
 
-import typings.momentDashRound.momentDashRoundMod.momentMod.Moment
 import typings.momentDashRound.momentDashRoundStrings.ceil
 import typings.momentDashRound.momentDashRoundStrings.floor
 import typings.momentDashRound.momentDashRoundStrings.round

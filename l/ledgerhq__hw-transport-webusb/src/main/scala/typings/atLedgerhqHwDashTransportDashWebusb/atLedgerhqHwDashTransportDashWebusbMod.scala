@@ -3,7 +3,6 @@ package typings.atLedgerhqHwDashTransportDashWebusb
 import typings.atLedgerhqHwDashTransport.atLedgerhqHwDashTransportMod.DescriptorEvent
 import typings.atLedgerhqHwDashTransport.atLedgerhqHwDashTransportMod.Observer
 import typings.atLedgerhqHwDashTransport.atLedgerhqHwDashTransportMod.Subscription
-import typings.atLedgerhqHwDashTransportDashWebusb.atLedgerhqHwDashTransportDashWebusbMod.TransportWebUSB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

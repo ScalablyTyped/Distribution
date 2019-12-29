@@ -1,9 +1,6 @@
 package typings.heremaps.H.clustering.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.clustering.Provider.Strategy.DYNAMICGRID
-import typings.heremaps.H.clustering.Provider.Strategy.FASTGRID
-import typings.heremaps.H.clustering.Provider.Strategy.GRID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

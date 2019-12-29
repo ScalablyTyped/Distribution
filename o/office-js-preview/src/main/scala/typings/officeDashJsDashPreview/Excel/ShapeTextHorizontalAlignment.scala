@@ -1,13 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeTextHorizontalAlignment.center
-import typings.officeDashJsDashPreview.Excel.ShapeTextHorizontalAlignment.distributed
-import typings.officeDashJsDashPreview.Excel.ShapeTextHorizontalAlignment.justify
-import typings.officeDashJsDashPreview.Excel.ShapeTextHorizontalAlignment.justifyLow
-import typings.officeDashJsDashPreview.Excel.ShapeTextHorizontalAlignment.left
-import typings.officeDashJsDashPreview.Excel.ShapeTextHorizontalAlignment.right
-import typings.officeDashJsDashPreview.Excel.ShapeTextHorizontalAlignment.thaiDistributed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

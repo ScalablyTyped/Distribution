@@ -31,6 +31,18 @@ object activexDashShellStrings {
   sealed trait IsOS_Professional extends js.Object
   
   @js.native
+  sealed trait `Leftcurlybracket30D02401-6A81-11d0-8274-00C04FD5AE38Rightcurlybracket` extends ExplorerBarCLSID
+  
+  @js.native
+  sealed trait `LeftcurlybracketEFA24E61-B078-11d0-89E4-00C04FC9E26ERightcurlybracket` extends ExplorerBarCLSID
+  
+  @js.native
+  sealed trait `LeftcurlybracketEFA24E62-B078-11d0-89E4-00C04FC9E26ERightcurlybracket` extends ExplorerBarCLSID
+  
+  @js.native
+  sealed trait `LeftcurlybracketEFA24E64-B078-11d0-89E4-00C04FC9E26ERightcurlybracket` extends ExplorerBarCLSID
+  
+  @js.native
   sealed trait PhysicalMemoryInstalled extends js.Object
   
   @js.native
@@ -47,18 +59,6 @@ object activexDashShellStrings {
   
   @js.native
   sealed trait VerbInvoked extends js.Object
-  
-  @js.native
-  sealed trait `{30D02401-6A81-11d0-8274-00C04FD5AE38}` extends ExplorerBarCLSID
-  
-  @js.native
-  sealed trait `{EFA24E61-B078-11d0-89E4-00C04FC9E26E}` extends ExplorerBarCLSID
-  
-  @js.native
-  sealed trait `{EFA24E62-B078-11d0-89E4-00C04FC9E26E}` extends ExplorerBarCLSID
-  
-  @js.native
-  sealed trait `{EFA24E64-B078-11d0-89E4-00C04FC9E26E}` extends ExplorerBarCLSID
   
   @scala.inline
   def BeginDrag: BeginDrag = "BeginDrag".asInstanceOf[BeginDrag]
@@ -77,6 +77,14 @@ object activexDashShellStrings {
   @scala.inline
   def IsOS_Professional: IsOS_Professional = "IsOS_Professional".asInstanceOf[IsOS_Professional]
   @scala.inline
+  def `Leftcurlybracket30D02401-6A81-11d0-8274-00C04FD5AE38Rightcurlybracket`: `Leftcurlybracket30D02401-6A81-11d0-8274-00C04FD5AE38Rightcurlybracket` = "{30D02401-6A81-11d0-8274-00C04FD5AE38}".asInstanceOf[`Leftcurlybracket30D02401-6A81-11d0-8274-00C04FD5AE38Rightcurlybracket`]
+  @scala.inline
+  def `LeftcurlybracketEFA24E61-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E61-B078-11d0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E61-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E61-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`]
+  @scala.inline
+  def `LeftcurlybracketEFA24E62-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E62-B078-11d0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E62-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E62-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`]
+  @scala.inline
+  def `LeftcurlybracketEFA24E64-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E64-B078-11d0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E64-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E64-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`]
+  @scala.inline
   def PhysicalMemoryInstalled: PhysicalMemoryInstalled = "PhysicalMemoryInstalled".asInstanceOf[PhysicalMemoryInstalled]
   @scala.inline
   def ProcessorArchitecture: ProcessorArchitecture = "ProcessorArchitecture".asInstanceOf[ProcessorArchitecture]
@@ -88,13 +96,5 @@ object activexDashShellStrings {
   def SelectionChanged: SelectionChanged = "SelectionChanged".asInstanceOf[SelectionChanged]
   @scala.inline
   def VerbInvoked: VerbInvoked = "VerbInvoked".asInstanceOf[VerbInvoked]
-  @scala.inline
-  def `{30D02401-6A81-11d0-8274-00C04FD5AE38}`: `{30D02401-6A81-11d0-8274-00C04FD5AE38}` = "{30D02401-6A81-11d0-8274-00C04FD5AE38}".asInstanceOf[`{30D02401-6A81-11d0-8274-00C04FD5AE38}`]
-  @scala.inline
-  def `{EFA24E61-B078-11d0-89E4-00C04FC9E26E}`: `{EFA24E61-B078-11d0-89E4-00C04FC9E26E}` = "{EFA24E61-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E61-B078-11d0-89E4-00C04FC9E26E}`]
-  @scala.inline
-  def `{EFA24E62-B078-11d0-89E4-00C04FC9E26E}`: `{EFA24E62-B078-11d0-89E4-00C04FC9E26E}` = "{EFA24E62-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E62-B078-11d0-89E4-00C04FC9E26E}`]
-  @scala.inline
-  def `{EFA24E64-B078-11d0-89E4-00C04FC9E26E}`: `{EFA24E64-B078-11d0-89E4-00C04FC9E26E}` = "{EFA24E64-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E64-B078-11d0-89E4-00C04FC9E26E}`]
 }
 

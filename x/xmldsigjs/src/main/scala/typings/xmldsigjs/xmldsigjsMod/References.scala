@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "References")
 @js.native
-class References () extends XmlCollection[Reference]
+class References ()
+  extends XmlCollection[typings.xmldsigjs.buildTypesXmlReferenceMod.Reference]
 

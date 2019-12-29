@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GistsListResponseItemFiles extends js.Object {
-  var `hello_world.rb`: GistsListResponseItemFilesHelloWorldRb
+  @JSName("hello_world.rb")
+  var hello_worldDotrb: GistsListResponseItemFilesHelloWorldRb
 }
 
 object GistsListResponseItemFiles {
   @scala.inline
-  def apply(`hello_world.rb`: GistsListResponseItemFilesHelloWorldRb): GistsListResponseItemFiles = {
+  def apply(hello_worldDotrb: GistsListResponseItemFilesHelloWorldRb): GistsListResponseItemFiles = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hello_world.rb")(`hello_world.rb`.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.rb")(hello_worldDotrb.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsListResponseItemFiles]
   }
 }

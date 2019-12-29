@@ -1,6 +1,5 @@
 package typings.nodegit
 
-import typings.nodegit.noteMod.Note
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature

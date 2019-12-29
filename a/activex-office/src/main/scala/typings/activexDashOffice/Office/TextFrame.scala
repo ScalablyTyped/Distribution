@@ -13,7 +13,8 @@ class TextFrame protected () extends js.Object {
   var MarginLeft: Double = js.native
   var MarginRight: Double = js.native
   var MarginTop: Double = js.native
-  var `Office.TextFrame_typekey`: TextFrame = js.native
+  @JSName("Office.TextFrame_typekey")
+  var OfficeDotTextFrame_typekey: TextFrame = js.native
   var Orientation: MsoTextOrientation = js.native
   val Parent: js.Any = js.native
 }

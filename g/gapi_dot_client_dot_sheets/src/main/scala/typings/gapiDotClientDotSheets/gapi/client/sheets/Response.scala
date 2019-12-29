@@ -19,6 +19,8 @@ trait Response extends js.Object {
   var addProtectedRange: js.UndefOr[AddProtectedRangeResponse] = js.undefined
   /** A reply from adding a sheet. */
   var addSheet: js.UndefOr[AddSheetResponse] = js.undefined
+  /** A reply from adding a slicer. */
+  var addSlicer: js.UndefOr[AddSlicerResponse] = js.undefined
   /** A reply from creating a developer metadata entry. */
   var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataResponse] = js.undefined
   /** A reply from deleting a conditional format rule. */
@@ -55,6 +57,7 @@ object Response {
     addNamedRange: AddNamedRangeResponse = null,
     addProtectedRange: AddProtectedRangeResponse = null,
     addSheet: AddSheetResponse = null,
+    addSlicer: AddSlicerResponse = null,
     createDeveloperMetadata: CreateDeveloperMetadataResponse = null,
     deleteConditionalFormatRule: DeleteConditionalFormatRuleResponse = null,
     deleteDeveloperMetadata: DeleteDeveloperMetadataResponse = null,
@@ -76,6 +79,7 @@ object Response {
     if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange.asInstanceOf[js.Any])
     if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange.asInstanceOf[js.Any])
     if (addSheet != null) __obj.updateDynamic("addSheet")(addSheet.asInstanceOf[js.Any])
+    if (addSlicer != null) __obj.updateDynamic("addSlicer")(addSlicer.asInstanceOf[js.Any])
     if (createDeveloperMetadata != null) __obj.updateDynamic("createDeveloperMetadata")(createDeveloperMetadata.asInstanceOf[js.Any])
     if (deleteConditionalFormatRule != null) __obj.updateDynamic("deleteConditionalFormatRule")(deleteConditionalFormatRule.asInstanceOf[js.Any])
     if (deleteDeveloperMetadata != null) __obj.updateDynamic("deleteDeveloperMetadata")(deleteDeveloperMetadata.asInstanceOf[js.Any])

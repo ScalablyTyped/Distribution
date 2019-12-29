@@ -3,11 +3,10 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerMultiTreeSetMod.MultiTreeSet
 import typings.tstl.baseContainerSetContainerMod.SetContainer
-import typings.tstl.experimentalContainerFlatMultiSetMod.FlatMultiSet
 import typings.tstl.experimentalContainerFlatMultiSetMod.FlatMultiSet.Iterator
 import typings.tstl.experimentalContainerFlatMultiSetMod.FlatMultiSet.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlNumbers.`false`
+import typings.tstl.tstlBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

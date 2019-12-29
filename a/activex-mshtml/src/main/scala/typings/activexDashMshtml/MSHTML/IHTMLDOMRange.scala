@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLDOMRange")
 @js.native
 class IHTMLDOMRange protected () extends js.Object {
-  var `MSHTML.IHTMLDOMRange_typekey`: IHTMLDOMRange = js.native
+  @JSName("MSHTML.IHTMLDOMRange_typekey")
+  var MSHTMLDotIHTMLDOMRange_typekey: IHTMLDOMRange = js.native
   val collapsed: Boolean = js.native
   val commonAncestorContainer: IHTMLDOMNode = js.native
   val endContainer: IHTMLDOMNode = js.native

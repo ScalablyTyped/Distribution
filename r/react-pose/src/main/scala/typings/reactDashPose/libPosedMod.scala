@@ -5,9 +5,6 @@ import typings.popmotionDashPose.libTypesMod.DomPopmotionConfig
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.HTMLProps
 import typings.reactDashPose.libComponentsPoseElementTypesMod.PoseElementProps
-import typings.reactDashPose.libPosedMod.ComponentFactory
-import typings.reactDashPose.libPosedMod.DomPopmotionConfigFactory
-import typings.reactDashPose.libPosedMod.Posed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

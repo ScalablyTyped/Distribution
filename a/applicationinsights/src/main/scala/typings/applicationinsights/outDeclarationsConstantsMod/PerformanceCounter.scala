@@ -1,12 +1,6 @@
 package typings.applicationinsights.outDeclarationsConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.applicationinsights.outDeclarationsConstantsMod.PerformanceCounter.AVAILABLE_BYTES
-import typings.applicationinsights.outDeclarationsConstantsMod.PerformanceCounter.PRIVATE_BYTES
-import typings.applicationinsights.outDeclarationsConstantsMod.PerformanceCounter.PROCESSOR_TIME
-import typings.applicationinsights.outDeclarationsConstantsMod.PerformanceCounter.PROCESS_TIME
-import typings.applicationinsights.outDeclarationsConstantsMod.PerformanceCounter.REQUEST_DURATION
-import typings.applicationinsights.outDeclarationsConstantsMod.PerformanceCounter.REQUEST_RATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

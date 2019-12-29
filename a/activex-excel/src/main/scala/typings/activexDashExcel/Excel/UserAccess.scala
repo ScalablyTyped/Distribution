@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class UserAccess protected () extends js.Object {
   var AllowEdit: Boolean = js.native
-  var `Excel.UserAccess_typekey`: UserAccess = js.native
+  @JSName("Excel.UserAccess_typekey")
+  var ExcelDotUserAccess_typekey: UserAccess = js.native
   val Name: String = js.native
   def Delete(): Unit = js.native
 }

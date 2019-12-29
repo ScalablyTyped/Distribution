@@ -44,8 +44,8 @@ object Camera extends js.Object {
   def capture(
     options: js.UndefOr[js.Any],
     scope: js.UndefOr[js.Any],
-    destination: js.UndefOr[java.lang.String],
-    encoding: js.UndefOr[java.lang.String],
+    destination: js.UndefOr[String],
+    encoding: js.UndefOr[String],
     width: js.UndefOr[Double],
     height: js.UndefOr[Double]
   ): Unit = js.native
@@ -56,7 +56,7 @@ object Camera extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs

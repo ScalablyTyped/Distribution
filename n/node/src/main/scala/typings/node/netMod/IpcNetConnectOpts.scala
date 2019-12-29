@@ -14,7 +14,7 @@ trait IpcNetConnectOpts
 object IpcNetConnectOpts {
   @scala.inline
   def apply(
-    path: java.lang.String,
+    path: String,
     allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
     fd: Int | Double = null,
     onread: OnReadOpts = null,

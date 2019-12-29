@@ -1,9 +1,6 @@
 package typings.atTestingDashLibraryDom
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atTestingDashLibraryDom.getDashQueriesDashForDashElementMod.BoundFunctions
-import typings.atTestingDashLibraryDom.getDashQueriesDashForDashElementMod.Queries
-import typings.atTestingDashLibraryDom.getDashQueriesDashForDashElementMod.Query
 import typings.std.Error
 import typings.std.HTMLElement
 import scala.scalajs.js

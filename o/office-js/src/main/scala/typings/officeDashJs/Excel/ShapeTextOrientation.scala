@@ -1,13 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ShapeTextOrientation.eastAsianVertical
-import typings.officeDashJs.Excel.ShapeTextOrientation.horizontal
-import typings.officeDashJs.Excel.ShapeTextOrientation.mongolianVertical
-import typings.officeDashJs.Excel.ShapeTextOrientation.vertical
-import typings.officeDashJs.Excel.ShapeTextOrientation.vertical270
-import typings.officeDashJs.Excel.ShapeTextOrientation.wordArtVertical
-import typings.officeDashJs.Excel.ShapeTextOrientation.wordArtVerticalRTL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

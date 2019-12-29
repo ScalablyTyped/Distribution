@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseContainerMapContainerMod.MapContainer
-import typings.tstl.baseContainerMapElementVectorMod.MapElementVector
 import typings.tstl.baseContainerMapElementVectorMod.MapElementVector.Iterator
 import typings.tstl.baseContainerMapElementVectorMod.MapElementVector.ReverseIterator
 import typings.tstl.baseContainerVectorContainerMod.VectorContainer

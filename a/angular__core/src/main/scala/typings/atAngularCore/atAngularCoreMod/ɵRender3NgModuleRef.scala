@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵRender3NgModuleRef")
+@JSImport("@angular/core", "\u0275Render3NgModuleRef")
 @js.native
 class ɵRender3NgModuleRef[T] protected () extends InternalNgModuleRef[T] {
   def this(ngModuleType: Type[T]) = this()

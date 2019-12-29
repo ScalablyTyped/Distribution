@@ -16,7 +16,8 @@ class Property protected () extends js.Object {
   @JSName("Parent")
   val Parent_Original: Properties = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
-  var `VBIDE.Property_typekey`: Property = js.native
+  @JSName("VBIDE.Property_typekey")
+  var VBIDEDotProperty_typekey: Property = js.native
   var Value: js.Any = js.native
   def Collection(index: js.Any): Property = js.native
   def IndexedValue(Index1: js.Any): js.Any = js.native

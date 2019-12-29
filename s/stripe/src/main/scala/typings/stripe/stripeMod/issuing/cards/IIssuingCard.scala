@@ -3,7 +3,7 @@ package typings.stripe.stripeMod.issuing.cards
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
 import typings.stripe.stripeMod.issuing.cardholders.ICardholder
-import typings.stripe.stripeStrings.issuingDOTcard
+import typings.stripe.stripeStrings.issuingDotcard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,7 +60,7 @@ trait IIssuingCard extends IResourceObject {
     * Value is "issuing.card"
     */
   @JSName("object")
-  var object_IIssuingCard: issuingDOTcard
+  var object_IIssuingCard: issuingDotcard
   /**
     * Metadata about the PIN on the card.
     */
@@ -102,7 +102,7 @@ object IIssuingCard {
     livemode: Boolean,
     metadata: IMetadata,
     name: String,
-    `object`: issuingDOTcard,
+    `object`: issuingDotcard,
     pin: IIssuingCardPin,
     replacement_for: String | IIssuingCard,
     replacement_reason: IssuingCardReplacementReason,

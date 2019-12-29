@@ -1,5 +1,6 @@
 package typings.atHapiHapi.atHapiHapiMod
 
+import typings.atHapiHapi.atHapiHapiStrings.Asterisk
 import typings.atHapiHapi.atHapiHapiStrings.ignore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +37,7 @@ trait RouteOptionsCors extends js.Object {
     * character, or a single '*' origin string. If set to 'ignore', any incoming Origin header is ignored (present or not) and the 'Access-Control-Allow-Origin' header is set to '*'. Defaults to any
     * origin ['*'].
     */
-  var origin: js.UndefOr[js.Array[String] | typings.atHapiHapi.atHapiHapiStrings.`*` | ignore] = js.undefined
+  var origin: js.UndefOr[js.Array[String] | Asterisk | ignore] = js.undefined
 }
 
 object RouteOptionsCors {
@@ -48,7 +49,7 @@ object RouteOptionsCors {
     exposedHeaders: js.Array[String] = null,
     headers: js.Array[String] = null,
     maxAge: Int | Double = null,
-    origin: js.Array[String] | typings.atHapiHapi.atHapiHapiStrings.`*` | ignore = null
+    origin: js.Array[String] | Asterisk | ignore = null
   ): RouteOptionsCors = {
     val __obj = js.Dynamic.literal()
     if (additionalExposedHeaders != null) __obj.updateDynamic("additionalExposedHeaders")(additionalExposedHeaders.asInstanceOf[js.Any])

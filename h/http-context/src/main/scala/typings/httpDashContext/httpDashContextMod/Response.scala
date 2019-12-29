@@ -1,6 +1,6 @@
 package typings.httpDashContext.httpDashContextMod
 
-import typings.httpDashContext.httpDashContextNumbers.`false`
+import typings.httpDashContext.httpDashContextBooleans.`false`
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.OutgoingMessage
 import scala.scalajs.js

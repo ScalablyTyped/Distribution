@@ -1,6 +1,5 @@
 package typings.atJupyterlabServices
 
-import typings.atJupyterlabServices.libKernelFutureMod.KernelFutureHandler
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IFuture
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IKernel
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.ControlMessageType

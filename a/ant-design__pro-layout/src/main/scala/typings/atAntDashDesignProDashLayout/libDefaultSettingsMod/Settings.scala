@@ -1,6 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libDefaultSettingsMod
 
-import typings.atAntDashDesignProDashLayout.Anon_Locale
+import typings.atAntDashDesignProDashLayout.Anon_DefaultOpenAll
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Settings extends js.Object {
+  var colorWeak: js.UndefOr[Boolean] = js.undefined
   /**
     * layout of content: `Fluid` or `Fixed`, only works when layout is topmenu
     */
@@ -26,7 +27,7 @@ trait Settings extends js.Object {
     * nav menu position: `sidemenu` or `topmenu`
     */
   var layout: sidemenu | topmenu
-  var menu: Anon_Locale
+  var menu: Anon_DefaultOpenAll
   /**
     * theme for nav menu
     */
@@ -45,12 +46,14 @@ object Settings {
     fixedHeader: Boolean,
     iconfontUrl: String,
     layout: sidemenu | topmenu,
-    menu: Anon_Locale,
+    menu: Anon_DefaultOpenAll,
     primaryColor: String,
     title: String,
+    colorWeak: js.UndefOr[Boolean] = js.undefined,
     navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null
   ): Settings = {
     val __obj = js.Dynamic.literal(contentWidth = contentWidth.asInstanceOf[js.Any], fixSiderbar = fixSiderbar.asInstanceOf[js.Any], fixedHeader = fixedHeader.asInstanceOf[js.Any], iconfontUrl = iconfontUrl.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], primaryColor = primaryColor.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

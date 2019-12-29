@@ -1,9 +1,6 @@
 package typings.atFirebaseAnalytics.distSrcConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseAnalytics.distSrcConstantsMod.GtagCommand.CONFIG
-import typings.atFirebaseAnalytics.distSrcConstantsMod.GtagCommand.EVENT
-import typings.atFirebaseAnalytics.distSrcConstantsMod.GtagCommand.SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

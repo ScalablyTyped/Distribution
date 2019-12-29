@@ -1,21 +1,6 @@
 package typings.downshift.downshiftMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.downshift.downshiftMod.StateChangeTypes.blurButton
-import typings.downshift.downshiftMod.StateChangeTypes.blurInput
-import typings.downshift.downshiftMod.StateChangeTypes.changeInput
-import typings.downshift.downshiftMod.StateChangeTypes.clickButton
-import typings.downshift.downshiftMod.StateChangeTypes.clickItem
-import typings.downshift.downshiftMod.StateChangeTypes.controlledPropUpdatedSelectedItem
-import typings.downshift.downshiftMod.StateChangeTypes.itemMouseEnter
-import typings.downshift.downshiftMod.StateChangeTypes.keyDownArrowDown
-import typings.downshift.downshiftMod.StateChangeTypes.keyDownArrowUp
-import typings.downshift.downshiftMod.StateChangeTypes.keyDownEnter
-import typings.downshift.downshiftMod.StateChangeTypes.keyDownEscape
-import typings.downshift.downshiftMod.StateChangeTypes.keyDownSpaceButton
-import typings.downshift.downshiftMod.StateChangeTypes.mouseUp
-import typings.downshift.downshiftMod.StateChangeTypes.touchEnd
-import typings.downshift.downshiftMod.StateChangeTypes.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

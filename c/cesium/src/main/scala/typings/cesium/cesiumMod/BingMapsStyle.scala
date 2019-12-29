@@ -1,11 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.BingMapsStyle.AERIAL
-import typings.cesium.cesiumMod.BingMapsStyle.AERIAL_WITH_LABELS
-import typings.cesium.cesiumMod.BingMapsStyle.COLLINS_BART
-import typings.cesium.cesiumMod.BingMapsStyle.ORDNANCE_SURVEY
-import typings.cesium.cesiumMod.BingMapsStyle.ROAD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

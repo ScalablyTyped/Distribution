@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Text.TextMetrics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -57,14 +58,14 @@ class Text protected ()
     * @param style The text style configuration object.
     */
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: Double,
     y: Double,
     text: String,
     style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle
   ) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: Double,
     y: Double,
     text: js.Array[String],

@@ -1,11 +1,11 @@
 package typings.vcf.vcfMod
 
 import typings.node.Buffer
-import typings.vcf.vcfStrings.BACKSLASHrBACKSLASHn
-import typings.vcf.vcfStrings.DOTvcf
-import typings.vcf.vcfStrings.`2DOT1`
-import typings.vcf.vcfStrings.`3DOT0`
-import typings.vcf.vcfStrings.`4DOT0`
+import typings.vcf.vcfStrings.CarriagereturnLinefeed
+import typings.vcf.vcfStrings.Dotvcf
+import typings.vcf.vcfStrings.`2Dot1`
+import typings.vcf.vcfStrings.`3Dot0`
+import typings.vcf.vcfStrings.`4Dot0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +18,12 @@ class ^ () extends vCard
 @js.native
 object ^ extends js.Object {
   /** Is equal to `\r\n` */
-  var EOL: BACKSLASHrBACKSLASHn = js.native
+  var EOL: CarriagereturnLinefeed = js.native
   /** is equal to `.vcf` */
-  var extension: DOTvcf = js.native
+  var extension: Dotvcf = js.native
   /** Is equal to `text/vcard` */
   var mimeType: String = js.native
-  var versions: js.Tuple3[`2DOT1`, `3DOT0`, `4DOT0`] = js.native
+  var versions: js.Tuple3[`2Dot1`, `3Dot0`, `4Dot0`] = js.native
   /* private */ def foldLine(input: String): String = js.native
   /* private */ def foldLine(input: String, maxLength: Double): String = js.native
   /* private */ def foldLine(input: String, maxLength: Double, hardWrap: Boolean): String = js.native

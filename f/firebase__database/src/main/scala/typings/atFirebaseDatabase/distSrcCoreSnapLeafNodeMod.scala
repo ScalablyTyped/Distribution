@@ -66,7 +66,8 @@ object distSrcCoreSnapLeafNodeMod extends js.Object {
       * @const
       */
     var VALUE_TYPE_ORDER: js.Array[String] = js.native
-    var __childrenNodeConstructor: ChildrenNodeConstructor = js.native
+    def __childrenNodeConstructor(): ChildrenNodeConstructor = js.native
+    def __childrenNodeConstructor(`val`: ChildrenNodeConstructor): js.Any = js.native
   }
   
 }

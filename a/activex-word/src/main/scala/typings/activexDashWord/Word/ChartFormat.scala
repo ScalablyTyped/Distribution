@@ -18,6 +18,7 @@ class ChartFormat protected () extends js.Object {
   val SoftEdge: SoftEdgeFormat = js.native
   val TextFrame2: typings.activexDashOffice.Office.TextFrame2 = js.native
   val ThreeD: ThreeDFormat = js.native
-  var `Word.ChartFormat_typekey`: ChartFormat = js.native
+  @JSName("Word.ChartFormat_typekey")
+  var WordDotChartFormat_typekey: ChartFormat = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.esprimaDashWalk
 
-import typings.esprimaDashWalk.esprimaDashWalkMod.NodeWithParent
 import typings.estree.estreeMod.Node
 import typings.estree.estreeMod.Program
 import scala.scalajs.js

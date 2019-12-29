@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dns", "NOTINITIALIZED")
 @js.native
-object NOTINITIALIZED
-  extends TopLevel[java.lang.String]
+object NOTINITIALIZED extends TopLevel[String]
 

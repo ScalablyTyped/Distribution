@@ -1,5 +1,16 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -32,11 +43,13 @@ trait MeshCreateCylinderParams extends Object {
     */
   var size: js.UndefOr[Double | MeshCreateCylinderParamsSize] = js.undefined
   /**
-    * The unit of the size (defaults to the unit of the location's spatial reference).  **Possible Values:** millimeters | centimeters | decimeters | meters | kilometers | inches | feet | yards | miles | nautical-miles | us-feet
+    * The unit of the size (defaults to the unit of the location's spatial reference).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[
+    millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
+  ] = js.undefined
 }
 
 object MeshCreateCylinderParams {
@@ -49,7 +62,7 @@ object MeshCreateCylinderParams {
     geographic: js.UndefOr[Boolean] = js.undefined,
     material: MeshMaterial = null,
     size: Double | MeshCreateCylinderParamsSize = null,
-    unit: String = null
+    unit: millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet` = null
   ): MeshCreateCylinderParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (densificationFactor != null) __obj.updateDynamic("densificationFactor")(densificationFactor.asInstanceOf[js.Any])

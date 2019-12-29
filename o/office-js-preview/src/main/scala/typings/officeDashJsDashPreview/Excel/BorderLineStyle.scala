@@ -1,14 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.continuous
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.dash
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.dashDot
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.dashDotDot
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.dot
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.double
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.none
-import typings.officeDashJsDashPreview.Excel.BorderLineStyle.slantDashDot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

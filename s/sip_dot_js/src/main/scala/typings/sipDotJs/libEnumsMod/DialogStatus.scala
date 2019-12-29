@@ -1,8 +1,6 @@
 package typings.sipDotJs.libEnumsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libEnumsMod.DialogStatus.STATUS_CONFIRMED
-import typings.sipDotJs.libEnumsMod.DialogStatus.STATUS_EARLY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

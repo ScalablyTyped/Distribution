@@ -3,7 +3,7 @@ package typings.atOracleOraclejet.ojgaugeMod
 import typings.atOracleOraclejet.Anon_BorderColorCircle
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
-import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0DOT5`
+import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0.5`
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`1`
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
 import typings.atOracleOraclejet.atOracleOraclejetStrings.horizontal
@@ -44,7 +44,7 @@ trait ojRatingGaugeEventMap extends dvtBaseComponentEventMap[ojRatingGaugeSettab
   var preserveAspectRatioChanged: JetElementCustomEvent[none | meet]
   var readonlyChanged: JetElementCustomEvent[Boolean]
   var selectedStateChanged: JetElementCustomEvent[Anon_BorderColorCircle]
-  var stepChanged: JetElementCustomEvent[`0DOT5` | `1`]
+  var stepChanged: JetElementCustomEvent[`0.5` | `1`]
   var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
   var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965]
   var transientValueChanged: JetElementCustomEvent[Double | Null]
@@ -143,7 +143,7 @@ object ojRatingGaugeEventMap {
     selectionchange: Event,
     selectstart: Event,
     stalled: Event,
-    stepChanged: JetElementCustomEvent[`0DOT5` | `1`],
+    stepChanged: JetElementCustomEvent[`0.5` | `1`],
     submit: Event,
     suspend: Event,
     thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]],

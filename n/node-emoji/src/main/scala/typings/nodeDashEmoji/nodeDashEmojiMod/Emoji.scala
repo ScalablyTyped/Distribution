@@ -21,11 +21,14 @@ object Emoji {
 @JSImport("node-emoji", "emoji")
 @js.native
 object emoji extends js.Object {
-  var `+1`: String = js.native
   var `-1`: String = js.native
   var `100`: String = js.native
   var `1234`: String = js.native
   var `8ball`: String = js.native
+  @JSName("+1")
+  var Plussign1: String = js.native
+  @JSName("package")
+  var _package: String = js.native
   var a: String = js.native
   var ab: String = js.native
   var abc: String = js.native
@@ -953,7 +956,6 @@ object emoji extends js.Object {
   var orthodox_cross: String = js.native
   var outbox_tray: String = js.native
   var ox: String = js.native
-  var `package`: String = js.native
   var page_facing_up: String = js.native
   var page_with_curl: String = js.native
   var pager: String = js.native

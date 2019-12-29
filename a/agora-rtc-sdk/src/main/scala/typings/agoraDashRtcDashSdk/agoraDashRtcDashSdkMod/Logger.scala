@@ -1,10 +1,5 @@
 package typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkMod
 
-import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkMod.Logger.DEBUG
-import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkMod.Logger.ERROR
-import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkMod.Logger.INFO
-import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkMod.Logger.NONE
-import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkMod.Logger.WARNING
 import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkNumbers.`0`
 import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkNumbers.`1`
 import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkNumbers.`2`

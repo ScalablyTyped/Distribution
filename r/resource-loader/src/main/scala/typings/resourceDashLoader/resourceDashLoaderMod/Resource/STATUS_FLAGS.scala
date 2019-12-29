@@ -1,10 +1,6 @@
 package typings.resourceDashLoader.resourceDashLoaderMod.Resource
 
 import org.scalablytyped.runtime.TopLevel
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.COMPLETE
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.DATA_URL
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.LOADING
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

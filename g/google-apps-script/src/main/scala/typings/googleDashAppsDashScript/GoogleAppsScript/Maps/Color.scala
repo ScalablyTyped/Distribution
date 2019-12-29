@@ -1,16 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BLACK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BLUE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BROWN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.GRAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.GREEN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.ORANGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.PURPLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.RED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.WHITE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

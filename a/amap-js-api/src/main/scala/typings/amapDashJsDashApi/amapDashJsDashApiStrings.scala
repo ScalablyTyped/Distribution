@@ -161,20 +161,20 @@ object amapDashJsDashApiStrings {
   @js.native
   sealed trait `bottom-center`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait `bottom-left`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait `bottom-right`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait br extends js.Object
@@ -201,8 +201,8 @@ object amapDashJsDashApiStrings {
   @js.native
   sealed trait center
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with LabelDirection
        with TextAlign
        with TextDirection
@@ -459,14 +459,14 @@ object amapDashJsDashApiStrings {
   @js.native
   sealed trait `middle-left`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait `middle-right`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait miter extends StrokeLineJoin
@@ -712,20 +712,20 @@ object amapDashJsDashApiStrings {
   @js.native
   sealed trait `top-center`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait `top-left`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait `top-right`
     extends Anchor
-       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
        with typings.amapDashJsDashApi.AMap.Marker.Anchor
+       with typings.amapDashJsDashApi.AMap.InfoWindow.Anchor
   
   @js.native
   sealed trait touchend extends js.Object

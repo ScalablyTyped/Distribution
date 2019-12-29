@@ -24,7 +24,8 @@ class Hyperlink protected () extends js.Object {
   var Target: String = js.native
   var TextToDisplay: String = js.native
   val Type: MsoHyperlinkType = js.native
-  var `Word.Hyperlink_typekey`: Hyperlink = js.native
+  @JSName("Word.Hyperlink_typekey")
+  var WordDotHyperlink_typekey: Hyperlink = js.native
   def AddToFavorites(): Unit = js.native
   def CreateNewDocument(FileName: String, EditNow: Boolean, Overwrite: Boolean): Unit = js.native
   def Delete(): Unit = js.native

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLScreen")
 @js.native
 class HTMLScreen protected () extends js.Object {
-  var `MSHTML.HTMLScreen_typekey`: HTMLScreen = js.native
+  @JSName("MSHTML.HTMLScreen_typekey")
+  var MSHTMLDotHTMLScreen_typekey: HTMLScreen = js.native
   val availHeight: Double = js.native
   val availWidth: Double = js.native
   var bufferDepth: Double = js.native

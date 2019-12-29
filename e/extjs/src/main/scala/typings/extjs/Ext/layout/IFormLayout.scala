@@ -4,12 +4,12 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.IElement
+import typings.extjs.Ext.layout.container.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IFormLayout
-  extends typings.extjs.Ext.layout.container.IContainer {
+trait IFormLayout extends IContainer {
   /** [Method] Handles overflow processing for a container
   		* @param ownerContext Ext.layout.ContextItem
   		* @param containerSize Object
@@ -65,12 +65,12 @@ trait IFormLayout
   		* @param ownerContext Ext.layout.ContextItem
   		* @returns String
   		*/
-  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], java.lang.String]] = js.undefined
+  var getOverflowXStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   /** [Method] returns the overflow y style of the render target
   		* @param ownerContext Ext.layout.ContextItem
   		* @returns String
   		*/
-  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], java.lang.String]] = js.undefined
+  var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   /** [Property] (Object) */
   var getScrollRangeFlags: js.UndefOr[js.Any] = js.undefined
 }
@@ -95,16 +95,16 @@ object IFormLayout {
     destroy: () => Unit = null,
     doRenderPadder: (/* out */ js.UndefOr[js.Any], /* renderData */ js.UndefOr[js.Any]) => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     getContainerSize: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], /* ignoreOverflow */ js.UndefOr[Boolean]) => _ = null,
     getElementTarget: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: /* item */ js.UndefOr[js.Any] => ISizePolicy = null,
     getLayoutItems: () => Array = null,
-    getOverflowXStyle: /* ownerContext */ js.UndefOr[IContextItem] => java.lang.String = null,
-    getOverflowYStyle: /* ownerContext */ js.UndefOr[IContextItem] => java.lang.String = null,
+    getOverflowXStyle: /* ownerContext */ js.UndefOr[IContextItem] => String = null,
+    getOverflowYStyle: /* ownerContext */ js.UndefOr[IContextItem] => String = null,
     getRenderTarget: () => IElement = null,
     getRenderedItems: () => Array = null,
     getScrollRangeFlags: js.Any = null,
@@ -115,7 +115,7 @@ object IFormLayout {
     initLayout: () => Unit = null,
     isLayout: js.UndefOr[Boolean] = js.undefined,
     isValidParent: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     mixins: js.Any = null,
     notifyOwner: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     onContentChange: /* child */ js.UndefOr[IComponent] => Boolean = null,

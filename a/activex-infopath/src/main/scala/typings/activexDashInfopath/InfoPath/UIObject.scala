@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InfoPath.UIObject")
 @js.native
 class UIObject protected () extends js.Object {
-  var `InfoPath.UIObject_typekey`: UIObject = js.native
+  @JSName("InfoPath.UIObject_typekey")
+  var InfoPathDotUIObject_typekey: UIObject = js.native
   def Alert(bstrAlertString: String): Unit = js.native
   def Confirm(bstrPrompt: String, lButtons: XdConfirmButtons): XdConfirmChoice = js.native
   def SetSaveAsDialogFileName(bstrFileName: String): Unit = js.native

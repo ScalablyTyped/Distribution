@@ -1,5 +1,6 @@
 package typings.reactDashMapDashGl.reactDashMapDashGlMod
 
+import typings.reactDashMapDashGl.reactDashMapDashGlStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ trait ViewportProps extends js.Object {
   var minPitch: Double
   var minZoom: Double
   var pitch: Double
-  var transitionDuration: js.UndefOr[Double] = js.undefined
+  var transitionDuration: js.UndefOr[Double | auto] = js.undefined
   var transitionEasing: js.UndefOr[EasingFunction] = js.undefined
   var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.undefined
   var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
@@ -38,7 +39,7 @@ object ViewportProps {
     pitch: Double,
     width: Double,
     zoom: Double,
-    transitionDuration: Int | Double = null,
+    transitionDuration: Double | auto = null,
     transitionEasing: /* t */ Double => Double = null,
     transitionInterpolator: TransitionInterpolator = null,
     transitionInterruption: TRANSITION_EVENTS = null

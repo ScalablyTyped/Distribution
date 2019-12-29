@@ -1,10 +1,6 @@
 package typings.mobx.libCoreDerivationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mobx.libCoreDerivationMod.IDerivationState.NOT_TRACKING
-import typings.mobx.libCoreDerivationMod.IDerivationState.POSSIBLY_STALE
-import typings.mobx.libCoreDerivationMod.IDerivationState.STALE
-import typings.mobx.libCoreDerivationMod.IDerivationState.UP_TO_DATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

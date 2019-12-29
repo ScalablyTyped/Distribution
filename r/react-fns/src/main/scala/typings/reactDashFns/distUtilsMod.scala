@@ -11,6 +11,6 @@ object distUtilsMod extends js.Object {
   def debounce(func: js.Function, wait: Double): js.ThisFunction0[/* this */ js.Any, Unit] = js.native
   def debounce(func: js.Function, wait: Double, immediate: Boolean): js.ThisFunction0[/* this */ js.Any, Unit] = js.native
   def isEmptyChildren(children: js.Any): Boolean = js.native
-  def throttle(`this`: js.Any, func: js.Function, wait: Number): js.Function0[Unit] = js.native
+  def throttle(func: js.Function, wait: Number): js.Function0[Unit] = js.native
 }
 

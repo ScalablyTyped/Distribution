@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.FileAccessMode.read
-import typings.winrt.Windows.Storage.FileAccessMode.readWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

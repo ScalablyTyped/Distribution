@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.accessSuspended
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.licenseExpired
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.notRoamable
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.ok
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.protectedToOtherIdentity
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.revoked
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.undetermined
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

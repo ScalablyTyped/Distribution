@@ -3,13 +3,7 @@ package typings.dialogflow.protosProtosMod.google.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.CORD
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.STRING
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.STRING_PIECE
 import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_NORMAL
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_NUMBER
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_STRING
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

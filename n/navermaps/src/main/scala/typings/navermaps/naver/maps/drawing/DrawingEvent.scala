@@ -1,12 +1,6 @@
 package typings.navermaps.naver.maps.drawing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.drawing.DrawingEvent.ADD
-import typings.navermaps.naver.maps.drawing.DrawingEvent.Added
-import typings.navermaps.naver.maps.drawing.DrawingEvent.REMOVE
-import typings.navermaps.naver.maps.drawing.DrawingEvent.Removed
-import typings.navermaps.naver.maps.drawing.DrawingEvent.SELECT
-import typings.navermaps.naver.maps.drawing.DrawingEvent.Selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

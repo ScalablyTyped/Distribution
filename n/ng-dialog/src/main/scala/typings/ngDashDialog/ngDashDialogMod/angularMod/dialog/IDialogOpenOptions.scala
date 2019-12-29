@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 /**
 		 * Options which are provided to open a dialog.
 		 */
-trait IDialogOpenOptions
-  extends typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogOptions {
+trait IDialogOpenOptions extends IDialogOptions {
   var bindToController: js.UndefOr[Boolean] = js.undefined
   var controller: js.UndefOr[String | js.Array[_] | js.Any] = js.undefined
   var controllerAs: js.UndefOr[String] = js.undefined
@@ -28,7 +27,7 @@ trait IDialogOpenOptions
   /**
   			 * Scope object that will be passed to dialog. If you use controller with separate $scope service this object will be passed to $scope.$parent param.
   			 */
-  var scope: js.UndefOr[typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogScope] = js.undefined
+  var scope: js.UndefOr[IDialogScope] = js.undefined
   var template: String
 }
 
@@ -61,7 +60,7 @@ object IDialogOpenOptions {
     preCloseCallback: String | Function = null,
     preserveFocus: js.UndefOr[Boolean] = js.undefined,
     resolve: StringDictionary[String | Function] = null,
-    scope: typings.ngDashDialog.ngDashDialogMod.angularMod.dialog.IDialogScope = null,
+    scope: IDialogScope = null,
     showClose: js.UndefOr[Boolean] = js.undefined,
     trapFocus: js.UndefOr[Boolean] = js.undefined,
     width: String | Double = null

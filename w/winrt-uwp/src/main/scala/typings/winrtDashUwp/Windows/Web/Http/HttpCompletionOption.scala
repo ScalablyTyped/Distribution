@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Web.Http.HttpCompletionOption.responseContentRead
-import typings.winrtDashUwp.Windows.Web.Http.HttpCompletionOption.responseHeadersRead
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

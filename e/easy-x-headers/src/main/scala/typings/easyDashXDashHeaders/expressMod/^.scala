@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var static: (js.Function2[/* root */ String, /* options */ js.UndefOr[Anon_Dotfiles], Handler]) with TypeofserveStatic = js.native
-  def apply(): typings.easyDashXDashHeaders.expressMod.Express = js.native
+  def apply(): Express = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.atReachAlert
 
-import typings.atReachAlert.atReachAlertMod.AlertProps
 import typings.react.reactMod.FC
 import typings.react.reactMod.HTMLProps
 import typings.std.HTMLDivElement

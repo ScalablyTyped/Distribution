@@ -1,14 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.automatic
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.formula
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.highestValue
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.invalid
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.lowestValue
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.number
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.percent
-import typings.officeDashJs.Excel.ConditionalFormatRuleType.percentile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

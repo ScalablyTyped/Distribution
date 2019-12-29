@@ -1,6 +1,7 @@
 package typings.atFirebaseFunctions.distSrcApiServiceMod
 
 import typings.atFirebaseAppDashTypes.privateMod.FirebaseService
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternalName
 import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
 import typings.atFirebaseFunctions.Anon_Delete
 import typings.atFirebaseFunctions.atFirebaseAppDashTypesMod.FirebaseApp
@@ -22,16 +23,12 @@ class Service protected ()
     */
   def this(
     app_ : FirebaseApp,
-    authProvider: Provider[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
-      ],
+    authProvider: Provider[FirebaseAuthInternalName],
     messagingProvider: Provider[FirebaseMessagingName]
   ) = this()
   def this(
     app_ : FirebaseApp,
-    authProvider: Provider[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
-      ],
+    authProvider: Provider[FirebaseAuthInternalName],
     messagingProvider: Provider[FirebaseMessagingName],
     region_ : String
   ) = this()

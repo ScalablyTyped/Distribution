@@ -20,8 +20,8 @@ object _SpeedSettings {
     __obj.asInstanceOf[_SpeedSettings[TElement]]
   }
   @scala.inline
-  def Anon_Complete[TElement](complete: TElement => Unit): _SpeedSettings[TElement] = {
-    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
+  def Anon_Complete[TElement](complete: () => Unit): _SpeedSettings[TElement] = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
   
     __obj.asInstanceOf[_SpeedSettings[TElement]]
   }

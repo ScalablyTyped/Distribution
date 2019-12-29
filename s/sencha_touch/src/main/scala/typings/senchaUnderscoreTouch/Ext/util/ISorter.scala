@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 
 trait ISorter extends IBase {
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of direction
   		* @returns String
   		*/
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of id
   		* @returns Mixed
   		*/
@@ -21,11 +21,11 @@ trait ISorter extends IBase {
   /** [Method] Returns the value of property
   		* @returns String
   		*/
-  var getProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of root
   		* @returns String
   		*/
-  var getRoot: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of sorterFn
   		* @returns Function
   		*/
@@ -37,13 +37,13 @@ trait ISorter extends IBase {
   /** [Config Option] (Mixed) */
   var id: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var property: js.UndefOr[java.lang.String] = js.undefined
+  var property: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var root: js.UndefOr[java.lang.String] = js.undefined
+  var root: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of direction
   		* @param direction String The new value.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of id
   		* @param id Mixed The new value.
   		*/
@@ -51,11 +51,11 @@ trait ISorter extends IBase {
   /** [Method] Sets the value of property
   		* @param property String The new value.
   		*/
-  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of root
   		* @param root String The new value.
   		*/
-  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of sorterFn
   		* @param sorterFn Function The new value.
   		*/
@@ -82,13 +82,13 @@ object ISorter {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    direction: java.lang.String = null,
-    extend: java.lang.String = null,
-    getDirection: () => java.lang.String = null,
+    direction: String = null,
+    extend: String = null,
+    getDirection: () => String = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getProperty: () => java.lang.String = null,
-    getRoot: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getProperty: () => String = null,
+    getRoot: () => String = null,
     getSorterFn: () => _ = null,
     getTransform: () => _ = null,
     id: js.Any = null,
@@ -96,13 +96,13 @@ object ISorter {
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    property: java.lang.String = null,
-    root: java.lang.String = null,
+    property: String = null,
+    root: String = null,
     self: IClass = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setId: /* id */ js.UndefOr[js.Any] => Unit = null,
-    setProperty: /* property */ js.UndefOr[java.lang.String] => Unit = null,
-    setRoot: /* root */ js.UndefOr[java.lang.String] => Unit = null,
+    setProperty: /* property */ js.UndefOr[String] => Unit = null,
+    setRoot: /* root */ js.UndefOr[String] => Unit = null,
     setSorterFn: /* sorterFn */ js.UndefOr[js.Any] => Unit = null,
     setTransform: /* transform */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-tracing" : "0.8.8"
+      "apollo-tracing" : "0.8.10"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-tracing" : "0.8.8"
+      "apollo-tracing" : "0.8.10"
     }
   ],
   "compile-devDependencies" : [

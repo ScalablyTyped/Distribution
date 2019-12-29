@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGTSpanElement")
 @js.native
 class SVGTSpanElement protected () extends js.Object {
-  var `MSHTML.SVGTSpanElement_typekey`: SVGTSpanElement = js.native
+  @JSName("MSHTML.SVGTSpanElement_typekey")
+  var MSHTMLDotSVGTSpanElement_typekey: SVGTSpanElement = js.native
   val className: SVGAnimatedString = js.native
   var dx: SVGAnimatedLengthList = js.native
   var dy: SVGAnimatedLengthList = js.native

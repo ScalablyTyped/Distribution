@@ -19,9 +19,7 @@ trait IColumnModel extends IBase {
   		* @param id String The id
   		* @returns Ext.grid.column.Column The header. null if it doesn't exist.
   		*/
-  var getHeaderById: js.UndefOr[
-    js.Function1[/* id */ js.UndefOr[java.lang.String], typings.extjs.Ext.grid.column.IColumn]
-  ] = js.undefined
+  var getHeaderById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], typings.extjs.Ext.grid.column.IColumn]] = js.undefined
   /** [Method] Returns the index of a leaf level header regardless of what the nesting structure is
   		* @param header Ext.grid.column.Column The header to find the index of
   		* @returns Number The index of the specified column header
@@ -44,11 +42,11 @@ object IColumnModel {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getHeaderAtIndex: /* index */ js.UndefOr[Double] => typings.extjs.Ext.grid.column.IColumn = null,
-    getHeaderById: /* id */ js.UndefOr[java.lang.String] => typings.extjs.Ext.grid.column.IColumn = null,
+    getHeaderById: /* id */ js.UndefOr[String] => typings.extjs.Ext.grid.column.IColumn = null,
     getHeaderIndex: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getVisibleHeaderClosestToIndex: /* index */ js.UndefOr[Double] => Unit = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IColumnModel = null,

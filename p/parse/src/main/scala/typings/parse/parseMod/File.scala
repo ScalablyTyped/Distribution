@@ -1,8 +1,8 @@
 package typings.parse.parseMod
 
 import typings.parse.Anon_Base64
+import typings.parse.Anon_Size
 import typings.parse.Anon_Uri
-import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,14 +38,14 @@ import scala.scalajs.js.annotation._
 @JSImport("parse", "File")
 @js.native
 class File protected ()
-  extends typings.parse.nodeMod.File {
+  extends typings.parse.parseMod._Global_.Parse.File {
   def this(name: String, data: js.Array[Double]) = this()
   def this(name: String, data: Anon_Base64) = this()
+  def this(name: String, data: Anon_Size) = this()
   def this(name: String, data: Anon_Uri) = this()
-  def this(name: String, data: Blob) = this()
   def this(name: String, data: js.Array[Double], `type`: String) = this()
   def this(name: String, data: Anon_Base64, `type`: String) = this()
+  def this(name: String, data: Anon_Size, `type`: String) = this()
   def this(name: String, data: Anon_Uri, `type`: String) = this()
-  def this(name: String, data: Blob, `type`: String) = this()
 }
 

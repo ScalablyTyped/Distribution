@@ -1,6 +1,6 @@
 package typings.natural
 
-import typings.natural.naturalNumbers.`true`
+import typings.natural.naturalBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

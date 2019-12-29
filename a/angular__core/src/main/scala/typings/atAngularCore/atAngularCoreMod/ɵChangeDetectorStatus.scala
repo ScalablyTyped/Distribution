@@ -1,12 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.CheckAlways
-import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.CheckOnce
-import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Checked
-import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Destroyed
-import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Detached
-import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Errored
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ɵChangeDetectorStatus extends js.Object
 
-@JSImport("@angular/core", "ɵChangeDetectorStatus")
+@JSImport("@angular/core", "\u0275ChangeDetectorStatus")
 @js.native
 object ɵChangeDetectorStatus extends js.Object {
   /**

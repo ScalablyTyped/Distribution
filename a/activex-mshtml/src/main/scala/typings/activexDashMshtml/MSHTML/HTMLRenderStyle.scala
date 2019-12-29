@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLRenderStyle")
 @js.native
 class HTMLRenderStyle protected () extends js.Object {
-  var `MSHTML.HTMLRenderStyle_typekey`: HTMLRenderStyle = js.native
+  @JSName("MSHTML.HTMLRenderStyle_typekey")
+  var MSHTMLDotHTMLRenderStyle_typekey: HTMLRenderStyle = js.native
   var defaultTextSelection: String = js.native
   var renderingPriority: Double = js.native
   var textBackgroundColor: js.Any = js.native

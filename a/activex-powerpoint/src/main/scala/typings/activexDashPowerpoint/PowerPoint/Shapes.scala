@@ -23,7 +23,8 @@ class Shapes protected () extends js.Object {
   val HasTitle: MsoTriState = js.native
   val Parent: js.Any = js.native
   val Placeholders: typings.activexDashPowerpoint.PowerPoint.Placeholders = js.native
-  var `PowerPoint.Shapes_typekey`: Shapes = js.native
+  @JSName("PowerPoint.Shapes_typekey")
+  var PowerPointDotShapes_typekey: Shapes = js.native
   val Title: Shape = js.native
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddCanvas(Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Shell32.ShellDispatchInproc")
 @js.native
 class ShellDispatchInproc protected () extends js.Object {
-  var `Shell32.ShellDispatchInproc_typekey`: ShellDispatchInproc = js.native
+  @JSName("Shell32.ShellDispatchInproc_typekey")
+  var Shell32DotShellDispatchInproc_typekey: ShellDispatchInproc = js.native
 }
 

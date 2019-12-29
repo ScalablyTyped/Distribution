@@ -11,7 +11,8 @@ class Corners protected () extends js.Object {
   val Creator: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.Corners_typekey`: Corners = js.native
+  @JSName("Word.Corners_typekey")
+  var WordDotCorners_typekey: Corners = js.native
   def Select(): js.Any = js.native
 }
 

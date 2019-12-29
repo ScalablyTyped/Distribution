@@ -11,7 +11,8 @@ class SmartTagAction protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   var CheckboxState: Boolean = js.native
   val Creator: XlCreator = js.native
-  var `Excel.SmartTagAction_typekey`: SmartTagAction = js.native
+  @JSName("Excel.SmartTagAction_typekey")
+  var ExcelDotSmartTagAction_typekey: SmartTagAction = js.native
   var ExpandHelp: Boolean = js.native
   var ListSelection: Double = js.native
   val Name: String = js.native

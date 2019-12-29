@@ -1,7 +1,7 @@
 package typings.rcDashDialog.libIDialogPropTypesMod
 
 import typings.rcDashDialog.Anon_X
-import typings.rcDashDialog.rcDashDialogNumbers.`false`
+import typings.rcDashDialog.rcDashDialogBooleans.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent

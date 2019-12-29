@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object hoistDashNonDashReactDashStaticsMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsNumbers.`true`
+  import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsBooleans.`true`
   import typings.react.reactMod.ComponentType
 
   type NonReactStatics[S /* <: ComponentType[_] */, C /* <: StringDictionary[`true`] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

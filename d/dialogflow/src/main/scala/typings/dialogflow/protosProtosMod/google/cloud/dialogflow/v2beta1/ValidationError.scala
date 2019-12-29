@@ -3,11 +3,6 @@ package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.CRITICAL
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.ERROR
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.INFO
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.SEVERITY_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.WARNING
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

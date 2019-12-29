@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,6 +38,6 @@ class LoaderPlugin protected ()
     * 
     * @param scene The Scene which owns this Loader instance.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
+  def this(scene: Scene) = this()
 }
 

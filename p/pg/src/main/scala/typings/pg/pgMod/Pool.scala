@@ -12,9 +12,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pg", "Pool")
 @js.native
-// `new Pool('pg://user@localhost/mydb')` is not allowed.
-// But it passes type check because of issue:
-// https://github.com/Microsoft/TypeScript/issues/7485
+/**
+  * Every field of the config object is entirely optional.
+  * The config passed to the pool is also passed to every client
+  * instance within the pool when the pool creates that client.
+  */
 class Pool () extends EventEmitter {
   def this(config: PoolConfig) = this()
   val idleCount: Double = js.native

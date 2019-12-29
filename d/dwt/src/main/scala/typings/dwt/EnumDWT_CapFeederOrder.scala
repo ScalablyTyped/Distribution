@@ -1,8 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapFeederOrder.TWFO_FIRSTPAGEFIRST
-import typings.dwt.EnumDWT_CapFeederOrder.TWFO_LASTPAGEFIRST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

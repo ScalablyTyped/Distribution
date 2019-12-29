@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.boardingPass
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.deal
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.general
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.invalid
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.membershipCard
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.paymentInstrument
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.ticket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

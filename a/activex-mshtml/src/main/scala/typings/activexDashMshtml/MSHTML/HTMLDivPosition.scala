@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLDivPosition")
 @js.native
 class HTMLDivPosition protected () extends js.Object {
-  var `MSHTML.HTMLDivPosition_typekey`: HTMLDivPosition = js.native
+  @JSName("MSHTML.HTMLDivPosition_typekey")
+  var MSHTMLDotHTMLDivPosition_typekey: HTMLDivPosition = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

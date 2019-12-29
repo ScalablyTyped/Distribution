@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 object plotlyDotJsStrings {
   @js.native
-  sealed trait `-` extends AxisType
+  sealed trait `-_` extends AxisType
   
   @js.native
   sealed trait B extends js.Object
@@ -20,10 +20,10 @@ object plotlyDotJsStrings {
   sealed trait E extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait SI extends js.Object
   
   @js.native
-  sealed trait SI extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait a extends js.Object
@@ -431,13 +431,13 @@ object plotlyDotJsStrings {
   sealed trait gauge extends js.Object
   
   @js.native
-  sealed trait `gauge+delta` extends js.Object
+  sealed trait gaugePlussigndelta extends js.Object
   
   @js.native
-  sealed trait `gauge+number` extends js.Object
+  sealed trait gaugePlussignnumber extends js.Object
   
   @js.native
-  sealed trait `gauge+number+delta` extends js.Object
+  sealed trait gaugePlussignnumberPlussigndelta extends js.Object
   
   @js.native
   sealed trait gregorian extends Calendar
@@ -572,22 +572,22 @@ object plotlyDotJsStrings {
   sealed trait label extends js.Object
   
   @js.native
-  sealed trait `label+percent` extends js.Object
+  sealed trait labelPlussignpercent extends js.Object
   
   @js.native
-  sealed trait `label+text` extends js.Object
+  sealed trait labelPlussigntext extends js.Object
   
   @js.native
-  sealed trait `label+text+percent` extends js.Object
+  sealed trait labelPlussigntextPlussignpercent extends js.Object
   
   @js.native
-  sealed trait `label+text+value` extends js.Object
+  sealed trait labelPlussigntextPlussignvalue extends js.Object
   
   @js.native
-  sealed trait `label+value` extends js.Object
+  sealed trait labelPlussignvalue extends js.Object
   
   @js.native
-  sealed trait `label+value+percent` extends js.Object
+  sealed trait labelPlussignvaluePlussignpercent extends js.Object
   
   @js.native
   sealed trait lasso extends js.Object
@@ -629,7 +629,7 @@ object plotlyDotJsStrings {
   sealed trait lines extends js.Object
   
   @js.native
-  sealed trait `lines+markers` extends js.Object
+  sealed trait linesPlussignmarkers extends js.Object
   
   @js.native
   sealed trait link extends js.Object
@@ -734,7 +734,7 @@ object plotlyDotJsStrings {
   sealed trait number extends js.Object
   
   @js.native
-  sealed trait `number+delta` extends js.Object
+  sealed trait numberPlussigndelta extends js.Object
   
   @js.native
   sealed trait `object` extends js.Object
@@ -956,9 +956,6 @@ object plotlyDotJsStrings {
   sealed trait reset extends js.Object
   
   @js.native
-  sealed trait `reset+autosize` extends js.Object
-  
-  @js.native
   sealed trait resetCameraDefault3d extends ModeBarDefaultButtons
   
   @js.native
@@ -966,6 +963,9 @@ object plotlyDotJsStrings {
   
   @js.native
   sealed trait resetGeo extends ModeBarDefaultButtons
+  
+  @js.native
+  sealed trait resetPlussignautosize extends js.Object
   
   @js.native
   sealed trait resetScale2d extends ModeBarDefaultButtons
@@ -1136,22 +1136,22 @@ object plotlyDotJsStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait `text+lines` extends js.Object
+  sealed trait textPlussignlines extends js.Object
   
   @js.native
-  sealed trait `text+lines+markers` extends js.Object
+  sealed trait textPlussignlinesPlussignmarkers extends js.Object
   
   @js.native
-  sealed trait `text+markers` extends js.Object
+  sealed trait textPlussignmarkers extends js.Object
   
   @js.native
-  sealed trait `text+percent` extends js.Object
+  sealed trait textPlussignpercent extends js.Object
   
   @js.native
-  sealed trait `text+value` extends js.Object
+  sealed trait textPlussignvalue extends js.Object
   
   @js.native
-  sealed trait `text+value+percent` extends js.Object
+  sealed trait textPlussignvaluePlussignpercent extends js.Object
   
   @js.native
   sealed trait textarea extends js.Object
@@ -1259,7 +1259,7 @@ object plotlyDotJsStrings {
   sealed trait value extends js.Object
   
   @js.native
-  sealed trait `value+percent` extends js.Object
+  sealed trait valuePlussignpercent extends js.Object
   
   @js.native
   sealed trait `var` extends js.Object
@@ -1289,30 +1289,6 @@ object plotlyDotJsStrings {
   sealed trait x extends AxisName
   
   @js.native
-  sealed trait `x+name` extends js.Object
-  
-  @js.native
-  sealed trait `x+text` extends js.Object
-  
-  @js.native
-  sealed trait `x+y` extends js.Object
-  
-  @js.native
-  sealed trait `x+y+name` extends js.Object
-  
-  @js.native
-  sealed trait `x+y+text` extends js.Object
-  
-  @js.native
-  sealed trait `x+y+z` extends js.Object
-  
-  @js.native
-  sealed trait `x+y+z+name` extends js.Object
-  
-  @js.native
-  sealed trait `x+y+z+text` extends js.Object
-  
-  @js.native
   sealed trait x2 extends AxisName
   
   @js.native
@@ -1337,40 +1313,31 @@ object plotlyDotJsStrings {
   sealed trait x9 extends AxisName
   
   @js.native
+  sealed trait xPlussignname extends js.Object
+  
+  @js.native
+  sealed trait xPlussigntext extends js.Object
+  
+  @js.native
+  sealed trait xPlussigny extends js.Object
+  
+  @js.native
+  sealed trait xPlussignyPlussignname extends js.Object
+  
+  @js.native
+  sealed trait xPlussignyPlussigntext extends js.Object
+  
+  @js.native
+  sealed trait xPlussignyPlussignz extends js.Object
+  
+  @js.native
+  sealed trait xPlussignyPlussignzPlussignname extends js.Object
+  
+  @js.native
+  sealed trait xPlussignyPlussignzPlussigntext extends js.Object
+  
+  @js.native
   sealed trait y extends AxisName
-  
-  @js.native
-  sealed trait `y+name` extends js.Object
-  
-  @js.native
-  sealed trait `y+text` extends js.Object
-  
-  @js.native
-  sealed trait `y+x` extends js.Object
-  
-  @js.native
-  sealed trait `y+x+name` extends js.Object
-  
-  @js.native
-  sealed trait `y+x+text` extends js.Object
-  
-  @js.native
-  sealed trait `y+x+z` extends js.Object
-  
-  @js.native
-  sealed trait `y+x+z+name` extends js.Object
-  
-  @js.native
-  sealed trait `y+x+z+text` extends js.Object
-  
-  @js.native
-  sealed trait `y+z` extends js.Object
-  
-  @js.native
-  sealed trait `y+z+name` extends js.Object
-  
-  @js.native
-  sealed trait `y+z+text` extends js.Object
   
   @js.native
   sealed trait y2 extends AxisName
@@ -1397,34 +1364,67 @@ object plotlyDotJsStrings {
   sealed trait y9 extends AxisName
   
   @js.native
+  sealed trait yPlussignname extends js.Object
+  
+  @js.native
+  sealed trait yPlussigntext extends js.Object
+  
+  @js.native
+  sealed trait yPlussignx extends js.Object
+  
+  @js.native
+  sealed trait yPlussignxPlussignname extends js.Object
+  
+  @js.native
+  sealed trait yPlussignxPlussigntext extends js.Object
+  
+  @js.native
+  sealed trait yPlussignxPlussignz extends js.Object
+  
+  @js.native
+  sealed trait yPlussignxPlussignzPlussignname extends js.Object
+  
+  @js.native
+  sealed trait yPlussignxPlussignzPlussigntext extends js.Object
+  
+  @js.native
+  sealed trait yPlussignz extends js.Object
+  
+  @js.native
+  sealed trait yPlussignzPlussignname extends js.Object
+  
+  @js.native
+  sealed trait yPlussignzPlussigntext extends js.Object
+  
+  @js.native
   sealed trait year extends js.Object
   
   @js.native
-  sealed trait `z+x` extends js.Object
+  sealed trait zPlussignx extends js.Object
   
   @js.native
-  sealed trait `z+x+name` extends js.Object
+  sealed trait zPlussignxPlussignname extends js.Object
   
   @js.native
-  sealed trait `z+x+text` extends js.Object
+  sealed trait zPlussignxPlussigntext extends js.Object
   
   @js.native
-  sealed trait `z+x+y` extends js.Object
+  sealed trait zPlussignxPlussigny extends js.Object
   
   @js.native
-  sealed trait `z+x+y+name` extends js.Object
+  sealed trait zPlussignxPlussignyPlussignname extends js.Object
   
   @js.native
-  sealed trait `z+x+y+text` extends js.Object
+  sealed trait zPlussignxPlussignyPlussigntext extends js.Object
   
   @js.native
-  sealed trait `z+y+x` extends js.Object
+  sealed trait zPlussignyPlussignx extends js.Object
   
   @js.native
-  sealed trait `z+y+x+name` extends js.Object
+  sealed trait zPlussignyPlussignxPlussignname extends js.Object
   
   @js.native
-  sealed trait `z+y+x+text` extends js.Object
+  sealed trait zPlussignyPlussignxPlussigntext extends js.Object
   
   @js.native
   sealed trait zoom extends js.Object
@@ -1448,15 +1448,15 @@ object plotlyDotJsStrings {
   sealed trait zoomOutGeo extends ModeBarDefaultButtons
   
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
   def B: B = "B".asInstanceOf[B]
   @scala.inline
   def E: E = "E".asInstanceOf[E]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def SI: SI = "SI".asInstanceOf[SI]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -1728,11 +1728,11 @@ object plotlyDotJsStrings {
   @scala.inline
   def gauge: gauge = "gauge".asInstanceOf[gauge]
   @scala.inline
-  def `gauge+delta`: `gauge+delta` = "gauge+delta".asInstanceOf[`gauge+delta`]
+  def gaugePlussigndelta: gaugePlussigndelta = "gauge+delta".asInstanceOf[gaugePlussigndelta]
   @scala.inline
-  def `gauge+number`: `gauge+number` = "gauge+number".asInstanceOf[`gauge+number`]
+  def gaugePlussignnumber: gaugePlussignnumber = "gauge+number".asInstanceOf[gaugePlussignnumber]
   @scala.inline
-  def `gauge+number+delta`: `gauge+number+delta` = "gauge+number+delta".asInstanceOf[`gauge+number+delta`]
+  def gaugePlussignnumberPlussigndelta: gaugePlussignnumberPlussigndelta = "gauge+number+delta".asInstanceOf[gaugePlussignnumberPlussigndelta]
   @scala.inline
   def gregorian: gregorian = "gregorian".asInstanceOf[gregorian]
   @scala.inline
@@ -1822,17 +1822,17 @@ object plotlyDotJsStrings {
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
-  def `label+percent`: `label+percent` = "label+percent".asInstanceOf[`label+percent`]
+  def labelPlussignpercent: labelPlussignpercent = "label+percent".asInstanceOf[labelPlussignpercent]
   @scala.inline
-  def `label+text`: `label+text` = "label+text".asInstanceOf[`label+text`]
+  def labelPlussigntext: labelPlussigntext = "label+text".asInstanceOf[labelPlussigntext]
   @scala.inline
-  def `label+text+percent`: `label+text+percent` = "label+text+percent".asInstanceOf[`label+text+percent`]
+  def labelPlussigntextPlussignpercent: labelPlussigntextPlussignpercent = "label+text+percent".asInstanceOf[labelPlussigntextPlussignpercent]
   @scala.inline
-  def `label+text+value`: `label+text+value` = "label+text+value".asInstanceOf[`label+text+value`]
+  def labelPlussigntextPlussignvalue: labelPlussigntextPlussignvalue = "label+text+value".asInstanceOf[labelPlussigntextPlussignvalue]
   @scala.inline
-  def `label+value`: `label+value` = "label+value".asInstanceOf[`label+value`]
+  def labelPlussignvalue: labelPlussignvalue = "label+value".asInstanceOf[labelPlussignvalue]
   @scala.inline
-  def `label+value+percent`: `label+value+percent` = "label+value+percent".asInstanceOf[`label+value+percent`]
+  def labelPlussignvaluePlussignpercent: labelPlussignvaluePlussignpercent = "label+value+percent".asInstanceOf[labelPlussignvaluePlussignpercent]
   @scala.inline
   def lasso: lasso = "lasso".asInstanceOf[lasso]
   @scala.inline
@@ -1860,7 +1860,7 @@ object plotlyDotJsStrings {
   @scala.inline
   def lines: lines = "lines".asInstanceOf[lines]
   @scala.inline
-  def `lines+markers`: `lines+markers` = "lines+markers".asInstanceOf[`lines+markers`]
+  def linesPlussignmarkers: linesPlussignmarkers = "lines+markers".asInstanceOf[linesPlussignmarkers]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
@@ -1930,7 +1930,7 @@ object plotlyDotJsStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
-  def `number+delta`: `number+delta` = "number+delta".asInstanceOf[`number+delta`]
+  def numberPlussigndelta: numberPlussigndelta = "number+delta".asInstanceOf[numberPlussigndelta]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
@@ -2078,13 +2078,13 @@ object plotlyDotJsStrings {
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
-  def `reset+autosize`: `reset+autosize` = "reset+autosize".asInstanceOf[`reset+autosize`]
-  @scala.inline
   def resetCameraDefault3d: resetCameraDefault3d = "resetCameraDefault3d".asInstanceOf[resetCameraDefault3d]
   @scala.inline
   def resetCameraLastSave3d: resetCameraLastSave3d = "resetCameraLastSave3d".asInstanceOf[resetCameraLastSave3d]
   @scala.inline
   def resetGeo: resetGeo = "resetGeo".asInstanceOf[resetGeo]
+  @scala.inline
+  def resetPlussignautosize: resetPlussignautosize = "reset+autosize".asInstanceOf[resetPlussignautosize]
   @scala.inline
   def resetScale2d: resetScale2d = "resetScale2d".asInstanceOf[resetScale2d]
   @scala.inline
@@ -2198,17 +2198,17 @@ object plotlyDotJsStrings {
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
-  def `text+lines`: `text+lines` = "text+lines".asInstanceOf[`text+lines`]
+  def textPlussignlines: textPlussignlines = "text+lines".asInstanceOf[textPlussignlines]
   @scala.inline
-  def `text+lines+markers`: `text+lines+markers` = "text+lines+markers".asInstanceOf[`text+lines+markers`]
+  def textPlussignlinesPlussignmarkers: textPlussignlinesPlussignmarkers = "text+lines+markers".asInstanceOf[textPlussignlinesPlussignmarkers]
   @scala.inline
-  def `text+markers`: `text+markers` = "text+markers".asInstanceOf[`text+markers`]
+  def textPlussignmarkers: textPlussignmarkers = "text+markers".asInstanceOf[textPlussignmarkers]
   @scala.inline
-  def `text+percent`: `text+percent` = "text+percent".asInstanceOf[`text+percent`]
+  def textPlussignpercent: textPlussignpercent = "text+percent".asInstanceOf[textPlussignpercent]
   @scala.inline
-  def `text+value`: `text+value` = "text+value".asInstanceOf[`text+value`]
+  def textPlussignvalue: textPlussignvalue = "text+value".asInstanceOf[textPlussignvalue]
   @scala.inline
-  def `text+value+percent`: `text+value+percent` = "text+value+percent".asInstanceOf[`text+value+percent`]
+  def textPlussignvaluePlussignpercent: textPlussignvaluePlussignpercent = "text+value+percent".asInstanceOf[textPlussignvaluePlussignpercent]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
@@ -2280,7 +2280,7 @@ object plotlyDotJsStrings {
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
-  def `value+percent`: `value+percent` = "value+percent".asInstanceOf[`value+percent`]
+  def valuePlussignpercent: valuePlussignpercent = "value+percent".asInstanceOf[valuePlussignpercent]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
@@ -2300,22 +2300,6 @@ object plotlyDotJsStrings {
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   @scala.inline
-  def `x+name`: `x+name` = "x+name".asInstanceOf[`x+name`]
-  @scala.inline
-  def `x+text`: `x+text` = "x+text".asInstanceOf[`x+text`]
-  @scala.inline
-  def `x+y`: `x+y` = "x+y".asInstanceOf[`x+y`]
-  @scala.inline
-  def `x+y+name`: `x+y+name` = "x+y+name".asInstanceOf[`x+y+name`]
-  @scala.inline
-  def `x+y+text`: `x+y+text` = "x+y+text".asInstanceOf[`x+y+text`]
-  @scala.inline
-  def `x+y+z`: `x+y+z` = "x+y+z".asInstanceOf[`x+y+z`]
-  @scala.inline
-  def `x+y+z+name`: `x+y+z+name` = "x+y+z+name".asInstanceOf[`x+y+z+name`]
-  @scala.inline
-  def `x+y+z+text`: `x+y+z+text` = "x+y+z+text".asInstanceOf[`x+y+z+text`]
-  @scala.inline
   def x2: x2 = "x2".asInstanceOf[x2]
   @scala.inline
   def x3: x3 = "x3".asInstanceOf[x3]
@@ -2332,29 +2316,23 @@ object plotlyDotJsStrings {
   @scala.inline
   def x9: x9 = "x9".asInstanceOf[x9]
   @scala.inline
+  def xPlussignname: xPlussignname = "x+name".asInstanceOf[xPlussignname]
+  @scala.inline
+  def xPlussigntext: xPlussigntext = "x+text".asInstanceOf[xPlussigntext]
+  @scala.inline
+  def xPlussigny: xPlussigny = "x+y".asInstanceOf[xPlussigny]
+  @scala.inline
+  def xPlussignyPlussignname: xPlussignyPlussignname = "x+y+name".asInstanceOf[xPlussignyPlussignname]
+  @scala.inline
+  def xPlussignyPlussigntext: xPlussignyPlussigntext = "x+y+text".asInstanceOf[xPlussignyPlussigntext]
+  @scala.inline
+  def xPlussignyPlussignz: xPlussignyPlussignz = "x+y+z".asInstanceOf[xPlussignyPlussignz]
+  @scala.inline
+  def xPlussignyPlussignzPlussignname: xPlussignyPlussignzPlussignname = "x+y+z+name".asInstanceOf[xPlussignyPlussignzPlussignname]
+  @scala.inline
+  def xPlussignyPlussignzPlussigntext: xPlussignyPlussignzPlussigntext = "x+y+z+text".asInstanceOf[xPlussignyPlussignzPlussigntext]
+  @scala.inline
   def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def `y+name`: `y+name` = "y+name".asInstanceOf[`y+name`]
-  @scala.inline
-  def `y+text`: `y+text` = "y+text".asInstanceOf[`y+text`]
-  @scala.inline
-  def `y+x`: `y+x` = "y+x".asInstanceOf[`y+x`]
-  @scala.inline
-  def `y+x+name`: `y+x+name` = "y+x+name".asInstanceOf[`y+x+name`]
-  @scala.inline
-  def `y+x+text`: `y+x+text` = "y+x+text".asInstanceOf[`y+x+text`]
-  @scala.inline
-  def `y+x+z`: `y+x+z` = "y+x+z".asInstanceOf[`y+x+z`]
-  @scala.inline
-  def `y+x+z+name`: `y+x+z+name` = "y+x+z+name".asInstanceOf[`y+x+z+name`]
-  @scala.inline
-  def `y+x+z+text`: `y+x+z+text` = "y+x+z+text".asInstanceOf[`y+x+z+text`]
-  @scala.inline
-  def `y+z`: `y+z` = "y+z".asInstanceOf[`y+z`]
-  @scala.inline
-  def `y+z+name`: `y+z+name` = "y+z+name".asInstanceOf[`y+z+name`]
-  @scala.inline
-  def `y+z+text`: `y+z+text` = "y+z+text".asInstanceOf[`y+z+text`]
   @scala.inline
   def y2: y2 = "y2".asInstanceOf[y2]
   @scala.inline
@@ -2372,25 +2350,47 @@ object plotlyDotJsStrings {
   @scala.inline
   def y9: y9 = "y9".asInstanceOf[y9]
   @scala.inline
+  def yPlussignname: yPlussignname = "y+name".asInstanceOf[yPlussignname]
+  @scala.inline
+  def yPlussigntext: yPlussigntext = "y+text".asInstanceOf[yPlussigntext]
+  @scala.inline
+  def yPlussignx: yPlussignx = "y+x".asInstanceOf[yPlussignx]
+  @scala.inline
+  def yPlussignxPlussignname: yPlussignxPlussignname = "y+x+name".asInstanceOf[yPlussignxPlussignname]
+  @scala.inline
+  def yPlussignxPlussigntext: yPlussignxPlussigntext = "y+x+text".asInstanceOf[yPlussignxPlussigntext]
+  @scala.inline
+  def yPlussignxPlussignz: yPlussignxPlussignz = "y+x+z".asInstanceOf[yPlussignxPlussignz]
+  @scala.inline
+  def yPlussignxPlussignzPlussignname: yPlussignxPlussignzPlussignname = "y+x+z+name".asInstanceOf[yPlussignxPlussignzPlussignname]
+  @scala.inline
+  def yPlussignxPlussignzPlussigntext: yPlussignxPlussignzPlussigntext = "y+x+z+text".asInstanceOf[yPlussignxPlussignzPlussigntext]
+  @scala.inline
+  def yPlussignz: yPlussignz = "y+z".asInstanceOf[yPlussignz]
+  @scala.inline
+  def yPlussignzPlussignname: yPlussignzPlussignname = "y+z+name".asInstanceOf[yPlussignzPlussignname]
+  @scala.inline
+  def yPlussignzPlussigntext: yPlussignzPlussigntext = "y+z+text".asInstanceOf[yPlussignzPlussigntext]
+  @scala.inline
   def year: year = "year".asInstanceOf[year]
   @scala.inline
-  def `z+x`: `z+x` = "z+x".asInstanceOf[`z+x`]
+  def zPlussignx: zPlussignx = "z+x".asInstanceOf[zPlussignx]
   @scala.inline
-  def `z+x+name`: `z+x+name` = "z+x+name".asInstanceOf[`z+x+name`]
+  def zPlussignxPlussignname: zPlussignxPlussignname = "z+x+name".asInstanceOf[zPlussignxPlussignname]
   @scala.inline
-  def `z+x+text`: `z+x+text` = "z+x+text".asInstanceOf[`z+x+text`]
+  def zPlussignxPlussigntext: zPlussignxPlussigntext = "z+x+text".asInstanceOf[zPlussignxPlussigntext]
   @scala.inline
-  def `z+x+y`: `z+x+y` = "z+x+y".asInstanceOf[`z+x+y`]
+  def zPlussignxPlussigny: zPlussignxPlussigny = "z+x+y".asInstanceOf[zPlussignxPlussigny]
   @scala.inline
-  def `z+x+y+name`: `z+x+y+name` = "z+x+y+name".asInstanceOf[`z+x+y+name`]
+  def zPlussignxPlussignyPlussignname: zPlussignxPlussignyPlussignname = "z+x+y+name".asInstanceOf[zPlussignxPlussignyPlussignname]
   @scala.inline
-  def `z+x+y+text`: `z+x+y+text` = "z+x+y+text".asInstanceOf[`z+x+y+text`]
+  def zPlussignxPlussignyPlussigntext: zPlussignxPlussignyPlussigntext = "z+x+y+text".asInstanceOf[zPlussignxPlussignyPlussigntext]
   @scala.inline
-  def `z+y+x`: `z+y+x` = "z+y+x".asInstanceOf[`z+y+x`]
+  def zPlussignyPlussignx: zPlussignyPlussignx = "z+y+x".asInstanceOf[zPlussignyPlussignx]
   @scala.inline
-  def `z+y+x+name`: `z+y+x+name` = "z+y+x+name".asInstanceOf[`z+y+x+name`]
+  def zPlussignyPlussignxPlussignname: zPlussignyPlussignxPlussignname = "z+y+x+name".asInstanceOf[zPlussignyPlussignxPlussignname]
   @scala.inline
-  def `z+y+x+text`: `z+y+x+text` = "z+y+x+text".asInstanceOf[`z+y+x+text`]
+  def zPlussignyPlussignxPlussigntext: zPlussignyPlussignxPlussigntext = "z+y+x+text".asInstanceOf[zPlussignyPlussignxPlussigntext]
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
   @scala.inline

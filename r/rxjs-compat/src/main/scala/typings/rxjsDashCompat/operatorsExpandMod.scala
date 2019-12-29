@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorsExpandMod extends js.Object {
   def expand[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 
@@ -16,7 +15,6 @@ object operatorsExpandMod extends js.Object {
     ]
   ): js.Any = js.native
   def expand[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 
@@ -25,7 +23,6 @@ object operatorsExpandMod extends js.Object {
     concurrent: Double
   ): js.Any = js.native
   def expand[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 
@@ -36,7 +33,6 @@ object operatorsExpandMod extends js.Object {
   ): js.Any = js.native
   @JSName("expand")
   def expand_TR[T, R](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 
@@ -45,7 +41,6 @@ object operatorsExpandMod extends js.Object {
   ): js.Any = js.native
   @JSName("expand")
   def expand_TR[T, R](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 
@@ -55,7 +50,6 @@ object operatorsExpandMod extends js.Object {
   ): js.Any = js.native
   @JSName("expand")
   def expand_TR[T, R](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 

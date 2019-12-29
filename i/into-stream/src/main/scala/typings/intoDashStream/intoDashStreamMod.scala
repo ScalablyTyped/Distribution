@@ -1,8 +1,6 @@
 package typings.intoDashStream
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.intoDashStream.intoDashStreamMod.Input
-import typings.intoDashStream.intoDashStreamMod.InputObject
 import typings.node.Buffer
 import typings.node.NodeJS.TypedArray
 import typings.node.streamMod.Readable

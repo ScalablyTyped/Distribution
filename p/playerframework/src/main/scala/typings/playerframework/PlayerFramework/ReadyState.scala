@@ -1,11 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.ReadyState.currentData
-import typings.playerframework.PlayerFramework.ReadyState.enoughData
-import typings.playerframework.PlayerFramework.ReadyState.futureData
-import typings.playerframework.PlayerFramework.ReadyState.metadata
-import typings.playerframework.PlayerFramework.ReadyState.nothing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

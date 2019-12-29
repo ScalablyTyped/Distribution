@@ -1,6 +1,6 @@
 package typings.hoganDotJs
 
-import typings.hoganDotJs.hoganDotJsNumbers.`true`
+import typings.hoganDotJs.hoganDotJsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

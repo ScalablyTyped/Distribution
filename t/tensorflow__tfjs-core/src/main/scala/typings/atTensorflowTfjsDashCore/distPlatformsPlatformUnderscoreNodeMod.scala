@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashCore
 
 import typings.atTensorflowTfjsDashCore.distPlatformsPlatformMod.Platform
-import typings.atTensorflowTfjsDashCore.distPlatformsPlatformUnderscoreNodeMod.FetchFn
 import typings.std.RequestInit
 import typings.std.Response
 import scala.scalajs.js

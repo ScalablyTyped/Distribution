@@ -2,12 +2,6 @@ package typings.atAngularCompiler
 
 import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata
-import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel
-import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel.ERROR
-import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel.WARNING
-import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseLocation
-import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceFile
-import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

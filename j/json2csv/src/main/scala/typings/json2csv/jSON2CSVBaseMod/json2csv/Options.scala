@@ -12,6 +12,7 @@ trait Options[T] extends js.Object {
   var excelStrings: js.UndefOr[Boolean] = js.undefined
   var fields: js.UndefOr[js.Array[String | FieldInfo[T]]] = js.undefined
   var flatten: js.UndefOr[Boolean] = js.undefined
+  var flattenSeparator: js.UndefOr[String] = js.undefined
   var header: js.UndefOr[Boolean] = js.undefined
   var includeEmptyRows: js.UndefOr[Boolean] = js.undefined
   var ndjson: js.UndefOr[Boolean] = js.undefined
@@ -31,6 +32,7 @@ object Options {
     excelStrings: js.UndefOr[Boolean] = js.undefined,
     fields: js.Array[String | FieldInfo[T]] = null,
     flatten: js.UndefOr[Boolean] = js.undefined,
+    flattenSeparator: String = null,
     header: js.UndefOr[Boolean] = js.undefined,
     includeEmptyRows: js.UndefOr[Boolean] = js.undefined,
     ndjson: js.UndefOr[Boolean] = js.undefined,
@@ -47,6 +49,7 @@ object Options {
     if (!js.isUndefined(excelStrings)) __obj.updateDynamic("excelStrings")(excelStrings.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
+    if (flattenSeparator != null) __obj.updateDynamic("flattenSeparator")(flattenSeparator.asInstanceOf[js.Any])
     if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(includeEmptyRows)) __obj.updateDynamic("includeEmptyRows")(includeEmptyRows.asInstanceOf[js.Any])
     if (!js.isUndefined(ndjson)) __obj.updateDynamic("ndjson")(ndjson.asInstanceOf[js.Any])

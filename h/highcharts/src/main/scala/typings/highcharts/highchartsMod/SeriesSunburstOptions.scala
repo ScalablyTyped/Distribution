@@ -126,7 +126,7 @@ object SeriesSunburstOptions {
     size: Double | String = null,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     slicedOffset: Int | Double = null,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     startAngle: Int | Double = null,
     states: PlotSunburstStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,

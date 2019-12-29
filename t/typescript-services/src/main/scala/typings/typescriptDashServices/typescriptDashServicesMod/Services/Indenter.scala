@@ -1,6 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services
 
 import typings.typescriptDashServices.TypeScript.IScriptSnapshot
+import typings.typescriptDashServices.TypeScript.SourceUnitSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ object Indenter extends js.Object {
   /* private */ def belongsToBracket(sourceText: js.Any, token: js.Any, position: js.Any): js.Any = js.native
   /* private */ def getCustomListIndentation(list: js.Any, element: js.Any): js.Any = js.native
   def getIndentation(
-    node: typings.typescriptDashServices.TypeScript.SourceUnitSyntax,
+    node: SourceUnitSyntax,
     soruceText: IScriptSnapshot,
     position: Double,
     editorOptions: typings.typescriptDashServices.TypeScript.Services.EditorOptions

@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object arcgisDashJsDashApi {
-  import org.scalablytyped.runtime.StringDictionary
+  import typings.std.Record
 
-  type HashMap[T] = StringDictionary[T]
+  type HashMap[T] = Record[String, T]
+  type IPromise[T] = js.Promise[T]
 }

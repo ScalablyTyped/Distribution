@@ -1,10 +1,5 @@
 package typings.atFirebaseDatabase
 
-import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.Comparator
-import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.LLRBEmptyNode
-import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.LLRBNode
-import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.SortedMap
-import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.SortedMapIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.constrained
-import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.enabled
-import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.TextureWrap.ClampToEdge
-import typings.pixiDashSpine.PIXI.spine.core.TextureWrap.MirroredRepeat
-import typings.pixiDashSpine.PIXI.spine.core.TextureWrap.Repeat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

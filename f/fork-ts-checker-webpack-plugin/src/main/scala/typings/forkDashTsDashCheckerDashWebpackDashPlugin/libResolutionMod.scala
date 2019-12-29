@@ -1,7 +1,5 @@
 package typings.forkDashTsDashCheckerDashWebpackDashPlugin
 
-import typings.forkDashTsDashCheckerDashWebpackDashPlugin.libResolutionMod.ResolveModuleName
-import typings.forkDashTsDashCheckerDashWebpackDashPlugin.libResolutionMod.ResolveTypeReferenceDirective
 import typings.typescript.typescriptMod.CompilerOptions
 import typings.typescript.typescriptMod.ModuleResolutionHost
 import typings.typescript.typescriptMod.ResolvedModuleWithFailedLookupLocations

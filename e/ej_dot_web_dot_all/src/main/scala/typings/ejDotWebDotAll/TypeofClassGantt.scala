@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassGantt
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Gantt]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Gantt] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Gantt]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Gantt] {
   var Locale: js.Any = js.native
   var fn: Gantt = js.native
 }

@@ -32,19 +32,19 @@ object azureDashSbStrings {
   sealed trait busy extends badges
   
   @js.native
-  sealed trait `d2p1:ActiveMessageCount` extends js.Object
+  sealed trait d2p1ColonActiveMessageCount extends js.Object
   
   @js.native
-  sealed trait `d2p1:DeadLetterMessageCount` extends js.Object
+  sealed trait d2p1ColonDeadLetterMessageCount extends js.Object
   
   @js.native
-  sealed trait `d2p1:ScheduledMessageCount` extends js.Object
+  sealed trait d2p1ColonScheduledMessageCount extends js.Object
   
   @js.native
-  sealed trait `d2p1:TransferDeadLetterMessageCount` extends js.Object
+  sealed trait d2p1ColonTransferDeadLetterMessageCount extends js.Object
   
   @js.native
-  sealed trait `d2p1:TransferMessageCount` extends js.Object
+  sealed trait d2p1ColonTransferMessageCount extends js.Object
   
   @js.native
   sealed trait error extends badges
@@ -74,16 +74,16 @@ object azureDashSbStrings {
   sealed trait wns extends js.Object
   
   @js.native
-  sealed trait `wns/badge` extends types
+  sealed trait wnsSlashbadge extends types
   
   @js.native
-  sealed trait `wns/raw` extends types
+  sealed trait wnsSlashraw extends types
   
   @js.native
-  sealed trait `wns/tile` extends types
+  sealed trait wnsSlashtile extends types
   
   @js.native
-  sealed trait `wns/toast` extends types
+  sealed trait wnsSlashtoast extends types
   
   @scala.inline
   def activity: activity = "activity".asInstanceOf[activity]
@@ -102,15 +102,15 @@ object azureDashSbStrings {
   @scala.inline
   def busy: busy = "busy".asInstanceOf[busy]
   @scala.inline
-  def `d2p1:ActiveMessageCount`: `d2p1:ActiveMessageCount` = "d2p1:ActiveMessageCount".asInstanceOf[`d2p1:ActiveMessageCount`]
+  def d2p1ColonActiveMessageCount: d2p1ColonActiveMessageCount = "d2p1:ActiveMessageCount".asInstanceOf[d2p1ColonActiveMessageCount]
   @scala.inline
-  def `d2p1:DeadLetterMessageCount`: `d2p1:DeadLetterMessageCount` = "d2p1:DeadLetterMessageCount".asInstanceOf[`d2p1:DeadLetterMessageCount`]
+  def d2p1ColonDeadLetterMessageCount: d2p1ColonDeadLetterMessageCount = "d2p1:DeadLetterMessageCount".asInstanceOf[d2p1ColonDeadLetterMessageCount]
   @scala.inline
-  def `d2p1:ScheduledMessageCount`: `d2p1:ScheduledMessageCount` = "d2p1:ScheduledMessageCount".asInstanceOf[`d2p1:ScheduledMessageCount`]
+  def d2p1ColonScheduledMessageCount: d2p1ColonScheduledMessageCount = "d2p1:ScheduledMessageCount".asInstanceOf[d2p1ColonScheduledMessageCount]
   @scala.inline
-  def `d2p1:TransferDeadLetterMessageCount`: `d2p1:TransferDeadLetterMessageCount` = "d2p1:TransferDeadLetterMessageCount".asInstanceOf[`d2p1:TransferDeadLetterMessageCount`]
+  def d2p1ColonTransferDeadLetterMessageCount: d2p1ColonTransferDeadLetterMessageCount = "d2p1:TransferDeadLetterMessageCount".asInstanceOf[d2p1ColonTransferDeadLetterMessageCount]
   @scala.inline
-  def `d2p1:TransferMessageCount`: `d2p1:TransferMessageCount` = "d2p1:TransferMessageCount".asInstanceOf[`d2p1:TransferMessageCount`]
+  def d2p1ColonTransferMessageCount: d2p1ColonTransferMessageCount = "d2p1:TransferMessageCount".asInstanceOf[d2p1ColonTransferMessageCount]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -130,12 +130,12 @@ object azureDashSbStrings {
   @scala.inline
   def wns: wns = "wns".asInstanceOf[wns]
   @scala.inline
-  def `wns/badge`: `wns/badge` = "wns/badge".asInstanceOf[`wns/badge`]
+  def wnsSlashbadge: wnsSlashbadge = "wns/badge".asInstanceOf[wnsSlashbadge]
   @scala.inline
-  def `wns/raw`: `wns/raw` = "wns/raw".asInstanceOf[`wns/raw`]
+  def wnsSlashraw: wnsSlashraw = "wns/raw".asInstanceOf[wnsSlashraw]
   @scala.inline
-  def `wns/tile`: `wns/tile` = "wns/tile".asInstanceOf[`wns/tile`]
+  def wnsSlashtile: wnsSlashtile = "wns/tile".asInstanceOf[wnsSlashtile]
   @scala.inline
-  def `wns/toast`: `wns/toast` = "wns/toast".asInstanceOf[`wns/toast`]
+  def wnsSlashtoast: wnsSlashtoast = "wns/toast".asInstanceOf[wnsSlashtoast]
 }
 

@@ -12,6 +12,7 @@ class OMathAcc protected () extends js.Object {
   val Creator: Double = js.native
   val E: OMath = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathAcc_typekey`: OMathAcc = js.native
+  @JSName("Word.OMathAcc_typekey")
+  var WordDotOMathAcc_typekey: OMathAcc = js.native
 }
 

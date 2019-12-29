@@ -34,7 +34,7 @@ trait Model extends js.Object {
   /** Enables or disables selecting the animation style for the popup list. Animation types can be selected through either of the following options,
     * @Default {slide}
     */
-  var animateType: js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.Animation | String] = js.undefined
+  var animateType: js.UndefOr[Animation | String] = js.undefined
   /** To focus the items in the suggestion list when the popup is shown. By default first item will be focused.
     * @Default {false}
     */
@@ -142,7 +142,7 @@ trait Model extends js.Object {
   /** Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
     * @Default {ej.MultiSelectMode.None}
     */
-  var multiSelectMode: js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode | String] = js.undefined
+  var multiSelectMode: js.UndefOr[MultiSelectMode | String] = js.undefined
   /** Triggers after the suggestion list is opened.
     */
   var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
@@ -191,7 +191,7 @@ trait Model extends js.Object {
   /** Sort order specifies whether the suggestion list values has to be displayed in ascending or descending order.
     * @Default {ej.SortOrder.Ascending}
     */
-  var sortOrder: js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.SortOrder | String] = js.undefined
+  var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   /** The template to display the suggestion list items with customized appearance.
     * @Default {null}
     */
@@ -232,7 +232,7 @@ object Model {
     addNewText: String = null,
     allowAddNew: js.UndefOr[Boolean] = js.undefined,
     allowSorting: js.UndefOr[Boolean] = js.undefined,
-    animateType: typings.ejDotWebDotAll.ej.Autocomplete.Animation | String = null,
+    animateType: Animation | String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined,
     change: /* e */ ChangeEventArgs => Unit = null,
@@ -260,7 +260,7 @@ object Model {
     locale: String = null,
     minCharacter: Int | Double = null,
     multiColumnSettings: MultiColumnSettings = null,
-    multiSelectMode: typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode | String = null,
+    multiSelectMode: MultiSelectMode | String = null,
     open: /* e */ OpenEventArgs => Unit = null,
     popupHeight: String = null,
     popupWidth: String = null,
@@ -273,7 +273,7 @@ object Model {
     showPopupButton: js.UndefOr[Boolean] = js.undefined,
     showResetIcon: js.UndefOr[Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
-    sortOrder: typings.ejDotWebDotAll.ej.Autocomplete.SortOrder | String = null,
+    sortOrder: SortOrder | String = null,
     template: String = null,
     validationMessage: js.Any = null,
     validationRules: js.Any = null,

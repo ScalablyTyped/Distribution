@@ -18,7 +18,8 @@ class ConnectorFormat protected () extends js.Object {
   val EndConnectedShape: Shape = js.native
   val EndConnectionSite: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ConnectorFormat_typekey`: ConnectorFormat = js.native
+  @JSName("PowerPoint.ConnectorFormat_typekey")
+  var PowerPointDotConnectorFormat_typekey: ConnectorFormat = js.native
   var Type: MsoConnectorType = js.native
   def BeginConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit = js.native
   def BeginDisconnect(): Unit = js.native

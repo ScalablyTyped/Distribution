@@ -1,7 +1,6 @@
 package typings.atMaterialTab
 
 import typings.atMaterialTab.adapterMod.MDCTabAdapter
-import typings.atMaterialTab.foundationMod.MDCTabFoundation
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

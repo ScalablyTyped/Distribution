@@ -1,8 +1,6 @@
 package typings.officeDashJsDashPreview.OneNote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.OneNote.ErrorCodes.generalException
-import typings.officeDashJsDashPreview.OneNote.ErrorCodes.operationAborted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

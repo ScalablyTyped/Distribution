@@ -1,7 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.FilterType.Excel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,22 +13,19 @@ sealed trait FilterType extends js.Object
 object FilterType extends js.Object {
   ///Specifies the filter type as excel.
   @js.native
-  sealed trait Excel
-    extends typings.ejDotWebDotAll.ej.Grid.FilterType
+  sealed trait Excel extends FilterType
   
   ///Specifies the filter type as menu.
   @js.native
-  sealed trait Menu
-    extends typings.ejDotWebDotAll.ej.Grid.FilterType
+  sealed trait Menu extends FilterType
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.Grid.FilterType with Double] = js.native
+  def apply(value: Double): js.UndefOr[FilterType with Double] = js.native
   /* 1 */ @js.native
   object Excel extends TopLevel[Excel with Double]
   
   /* 0 */ @js.native
-  object Menu
-    extends TopLevel[typings.ejDotWebDotAll.ej.Grid.FilterType.Menu with Double]
+  object Menu extends TopLevel[Menu with Double]
   
 }
 

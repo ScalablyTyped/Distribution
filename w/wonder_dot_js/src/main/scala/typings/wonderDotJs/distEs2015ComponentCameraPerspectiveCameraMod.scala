@@ -1,7 +1,6 @@
 package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015ComponentCameraCameraMod.Camera
-import typings.wonderDotJs.distEs2015ComponentCameraPerspectiveCameraMod.PerspectiveCamera
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

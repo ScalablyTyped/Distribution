@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.apiregistrationV1APIServiceListMod.APIServiceList
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiregistrationDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.apiregistrationDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1.APIService
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object apiregistrationV1APIServiceListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`apiregistrationDOTk8sDOTio/v1`] = js.native
+    val apiVersion: Output[apiregistrationDotk8sDotioSlashv1] = js.native
     val items: Output[js.Array[APIService]] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may

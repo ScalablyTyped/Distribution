@@ -8,14 +8,15 @@ import scala.scalajs.js.annotation._
 
 trait Base extends js.Object {
   var CreatedAt: DateString
-  var `_`: Anon_Author
+  @JSName("_")
+  var _underscore: Anon_Author
 }
 
 object Base {
   @scala.inline
-  def apply(CreatedAt: DateString, `_`: Anon_Author): Base = {
+  def apply(CreatedAt: DateString, _underscore: Anon_Author): Base = {
     val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any])
-    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base]
   }
 }

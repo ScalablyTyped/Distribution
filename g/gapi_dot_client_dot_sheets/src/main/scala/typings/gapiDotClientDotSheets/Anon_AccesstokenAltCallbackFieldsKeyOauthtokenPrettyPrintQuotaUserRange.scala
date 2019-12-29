@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserRange extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -29,7 +29,7 @@ trait Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserRange ex
   /** The A1 notation of the values to clear. */
   var range: String = js.native
   /** Request body */
-  var resource: js.UndefOr[ClearValuesRequest] = js.native
+  var resource: ClearValuesRequest = js.native
   /** The ID of the spreadsheet to update. */
   var spreadsheetId: String = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

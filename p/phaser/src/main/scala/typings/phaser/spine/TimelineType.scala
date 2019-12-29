@@ -1,21 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.TimelineType.attachment
-import typings.phaser.spine.TimelineType.color
-import typings.phaser.spine.TimelineType.deform
-import typings.phaser.spine.TimelineType.drawOrder
-import typings.phaser.spine.TimelineType.event
-import typings.phaser.spine.TimelineType.ikConstraint
-import typings.phaser.spine.TimelineType.pathConstraintMix
-import typings.phaser.spine.TimelineType.pathConstraintPosition
-import typings.phaser.spine.TimelineType.pathConstraintSpacing
-import typings.phaser.spine.TimelineType.rotate
-import typings.phaser.spine.TimelineType.scale
-import typings.phaser.spine.TimelineType.shear
-import typings.phaser.spine.TimelineType.transformConstraint
-import typings.phaser.spine.TimelineType.translate
-import typings.phaser.spine.TimelineType.twoColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -16,7 +16,8 @@ class Ruler2 protected () extends js.Object {
   val Creator: Double = js.native
   @JSName("Levels")
   val Levels_Original: RulerLevels2 = js.native
-  var `Office.Ruler2_typekey`: Ruler2 = js.native
+  @JSName("Office.Ruler2_typekey")
+  var OfficeDotRuler2_typekey: Ruler2 = js.native
   val Parent: js.Any = js.native
   @JSName("TabStops")
   val TabStops_Original: TabStops2 = js.native

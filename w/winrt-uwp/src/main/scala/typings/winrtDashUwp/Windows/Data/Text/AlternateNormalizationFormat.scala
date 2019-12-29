@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Data.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.currency
-import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.date
-import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.notNormalized
-import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.number
-import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

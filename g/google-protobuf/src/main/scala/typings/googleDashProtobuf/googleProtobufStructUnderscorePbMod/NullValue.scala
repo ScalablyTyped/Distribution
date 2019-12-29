@@ -1,7 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.NullValue.NULL_VALUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

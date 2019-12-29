@@ -6,11 +6,6 @@ import typings.atFirebaseFirestore.distSrcCoreTargetMod.Target
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.ListenSequenceNumber
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.ProtoByteString
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.TargetId
-import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetData
-import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose
-import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.ExistenceFilterMismatch
-import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.LimboResolution
-import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.Listen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

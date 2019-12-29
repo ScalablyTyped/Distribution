@@ -12,7 +12,8 @@ class Indexes protected () extends js.Object {
   val Creator: Double = js.native
   var Format: WdIndexFormat = js.native
   val Parent: js.Any = js.native
-  var `Word.Indexes_typekey`: Indexes = js.native
+  @JSName("Word.Indexes_typekey")
+  var WordDotIndexes_typekey: Indexes = js.native
   def Add(
     Range: Range,
     HeadingSeparator: js.UndefOr[js.Any],

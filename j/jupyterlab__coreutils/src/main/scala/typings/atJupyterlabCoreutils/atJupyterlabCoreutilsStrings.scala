@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 object atJupyterlabCoreutilsStrings {
   @js.native
-  sealed trait BACKTICKBACKTICKBACKTICK extends js.Object
+  sealed trait GraveaccentGraveaccentGraveaccent extends js.Object
   
   @js.native
   sealed trait ISettingRegistry extends js.Object
@@ -142,7 +142,7 @@ object atJupyterlabCoreutilsStrings {
   sealed trait `when-hidden` extends Standby
   
   @scala.inline
-  def BACKTICKBACKTICKBACKTICK: BACKTICKBACKTICKBACKTICK = "```".asInstanceOf[BACKTICKBACKTICKBACKTICK]
+  def GraveaccentGraveaccentGraveaccent: GraveaccentGraveaccentGraveaccent = "```".asInstanceOf[GraveaccentGraveaccentGraveaccent]
   @scala.inline
   def ISettingRegistry: ISettingRegistry = "ISettingRegistry".asInstanceOf[ISettingRegistry]
   @scala.inline

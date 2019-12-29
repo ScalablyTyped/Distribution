@@ -1,6 +1,6 @@
 package typings.antdDashMobile.libListListItemMod
 
-import typings.antdDashMobile.antdDashMobileStrings.Empty
+import typings.antdDashMobile.antdDashMobileStrings._empty
 import typings.antdDashMobile.antdDashMobileStrings.android
 import typings.antdDashMobile.antdDashMobileStrings.bottom
 import typings.antdDashMobile.antdDashMobileStrings.down
@@ -34,7 +34,7 @@ object ListItemProps {
   def apply(
     activeStyle: CSSProperties = null,
     align: top | middle | bottom = null,
-    arrow: horizontal | down | up | empty | Empty = null,
+    arrow: horizontal | down | up | empty | _empty = null,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,

@@ -1,16 +1,6 @@
 package typings.sharepoint.SP.Taxonomy
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.add
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.copy
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.deleteObject
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.edit
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.importObject
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.merge
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.move
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.pathChange
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.restore
-import typings.sharepoint.SP.Taxonomy.ChangeOperationType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

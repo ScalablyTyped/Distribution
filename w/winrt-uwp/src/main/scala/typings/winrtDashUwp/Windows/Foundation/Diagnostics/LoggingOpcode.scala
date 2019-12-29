@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingOpcode.info
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingOpcode.reply
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingOpcode.resume
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingOpcode.send
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingOpcode.start
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingOpcode.stop
-import typings.winrtDashUwp.Windows.Foundation.Diagnostics.LoggingOpcode.suspend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

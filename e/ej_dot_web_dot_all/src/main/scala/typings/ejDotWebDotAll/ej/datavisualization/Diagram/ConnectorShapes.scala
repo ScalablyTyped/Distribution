@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorShapes.BPMN
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorShapes.UMLActivity
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

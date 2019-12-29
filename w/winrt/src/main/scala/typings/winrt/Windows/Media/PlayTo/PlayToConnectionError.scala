@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.PlayTo.PlayToConnectionError.deviceError
-import typings.winrt.Windows.Media.PlayTo.PlayToConnectionError.deviceLocked
-import typings.winrt.Windows.Media.PlayTo.PlayToConnectionError.deviceNotResponding
-import typings.winrt.Windows.Media.PlayTo.PlayToConnectionError.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

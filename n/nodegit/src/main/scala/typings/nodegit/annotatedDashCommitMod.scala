@@ -1,6 +1,5 @@
 package typings.nodegit
 
-import typings.nodegit.annotatedDashCommitMod.AnnotatedCommit
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository

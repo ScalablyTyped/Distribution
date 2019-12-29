@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BluetoothDeviceEventHandlers extends js.Object {
-  def ongattserverdisconnected(`this`: this.type, ev: Event): js.Any
+  def ongattserverdisconnected(ev: Event): js.Any
 }
 
 object BluetoothDeviceEventHandlers {
   @scala.inline
-  def apply(ongattserverdisconnected: (BluetoothDeviceEventHandlers, Event) => js.Any): BluetoothDeviceEventHandlers = {
-    val __obj = js.Dynamic.literal(ongattserverdisconnected = js.Any.fromFunction2(ongattserverdisconnected))
+  def apply(ongattserverdisconnected: Event => js.Any): BluetoothDeviceEventHandlers = {
+    val __obj = js.Dynamic.literal(ongattserverdisconnected = js.Any.fromFunction1(ongattserverdisconnected))
   
     __obj.asInstanceOf[BluetoothDeviceEventHandlers]
   }

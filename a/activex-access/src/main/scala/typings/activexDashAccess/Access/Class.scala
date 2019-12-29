@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Class")
 @js.native
 class Class protected () extends js.Object {
-  var `Access.Class_typekey`: Class = js.native
+  @JSName("Access.Class_typekey")
+  var AccessDotClass_typekey: Class = js.native
 }
 

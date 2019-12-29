@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.sharepoint.SP.InformationPolicy.ProjectPolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

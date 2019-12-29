@@ -13,7 +13,8 @@ class ShadowFormat protected () extends js.Object {
   val Application: js.Any = js.native
   var Blur: Double = js.native
   val Creator: Double = js.native
-  var `Excel.ShadowFormat_typekey`: ShadowFormat = js.native
+  @JSName("Excel.ShadowFormat_typekey")
+  var ExcelDotShadowFormat_typekey: ShadowFormat = js.native
   var ForeColor: ColorFormat = js.native
   var Obscured: MsoTriState = js.native
   var OffsetX: Double = js.native

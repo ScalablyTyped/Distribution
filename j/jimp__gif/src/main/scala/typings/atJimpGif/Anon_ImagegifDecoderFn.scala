@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ImagegifDecoderFn extends js.Object {
   @JSName("image/gif")
-  var `image/gif_Original`: DecoderFn = js.native
-  def `image/gif`(data: Buffer): Bitmap = js.native
+  var imageSlashgif_Original: DecoderFn = js.native
+  @JSName("image/gif")
+  def imageSlashgif(data: Buffer): Bitmap = js.native
 }
 

@@ -10,7 +10,6 @@ import typings.atUirouterCore.libStateInterfaceMod.StateDeclaration
 import typings.atUirouterCore.libStateInterfaceMod.StateOrName
 import typings.atUirouterCore.libStateInterfaceMod.TransitionPromise
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
-import typings.atUirouterCore.libStateStateServiceMod.OnInvalidCallback
 import typings.atUirouterCore.libStateTargetStateMod.TargetState
 import typings.atUirouterCore.libTransitionInterfaceMod.HookResult
 import typings.atUirouterCore.libTransitionInterfaceMod.TransitionOptions

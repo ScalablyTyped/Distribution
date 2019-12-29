@@ -89,6 +89,14 @@ trait colorCreateContinuousRendererParams extends Object {
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createContinuousRenderer)
+    *
+    * @default false
+    */
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createContinuousRenderer)
@@ -172,6 +180,7 @@ object colorCreateContinuousRendererParams {
     minValue: Int | Double = null,
     normalizationField: String = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     sqlExpression: String = null,
     sqlWhere: String = null,
     statistics: SummaryStatisticsResult = null,
@@ -192,6 +201,7 @@ object colorCreateContinuousRendererParams {
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])

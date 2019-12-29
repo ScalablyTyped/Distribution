@@ -1,9 +1,6 @@
 package typings.microsoftDashAjax.Sys
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashAjax.Sys.NotifyCollectionChangedAction.add
-import typings.microsoftDashAjax.Sys.NotifyCollectionChangedAction.remove
-import typings.microsoftDashAjax.Sys.NotifyCollectionChangedAction.reset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

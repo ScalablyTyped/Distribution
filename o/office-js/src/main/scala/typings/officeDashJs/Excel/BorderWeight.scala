@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.BorderWeight.hairline
-import typings.officeDashJs.Excel.BorderWeight.medium
-import typings.officeDashJs.Excel.BorderWeight.thick
-import typings.officeDashJs.Excel.BorderWeight.thin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

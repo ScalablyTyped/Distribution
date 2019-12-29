@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.Iso8601.MAXIMUM_INTERVAL
-import typings.cesium.cesiumMod.Iso8601.MAXIMUM_VALUE
-import typings.cesium.cesiumMod.Iso8601.MINIMUM_VALUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.ol
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
-import typings.ol.renderWebglReplayMod.WebGLReplay
 import typings.ol.sizeMod.Size
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js

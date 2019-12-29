@@ -1,9 +1,6 @@
 package typings.baseui.layoutDashGridMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.baseui.layoutDashGridMod.ALIGNMENT.center
-import typings.baseui.layoutDashGridMod.ALIGNMENT.end
-import typings.baseui.layoutDashGridMod.ALIGNMENT.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

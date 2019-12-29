@@ -1,10 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.ResponseType.Accepted
-import typings.officeDashJs.Office.MailboxEnums.ResponseType.Declined
-import typings.officeDashJs.Office.MailboxEnums.ResponseType.None
-import typings.officeDashJs.Office.MailboxEnums.ResponseType.Tentative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,8 +60,7 @@ object ResponseType extends js.Object {
   object None extends TopLevel[None with String]
   
   /* "organizer" */ @js.native
-  object Organizer
-    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.ResponseType.Organizer with String]
+  object Organizer extends TopLevel[Organizer with String]
   
   /* "tentative" */ @js.native
   object Tentative extends TopLevel[Tentative with String]

@@ -2,7 +2,6 @@ package typings.atAwsDashSdkUtilDashErrorDashConstructor
 
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
 import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
-import typings.atAwsDashSdkUtilDashErrorDashConstructor.atAwsDashSdkUtilDashErrorDashConstructorMod.ServiceExceptionOption
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

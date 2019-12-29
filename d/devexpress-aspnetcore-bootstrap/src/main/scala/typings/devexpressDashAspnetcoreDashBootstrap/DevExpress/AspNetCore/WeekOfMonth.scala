@@ -1,12 +1,6 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekOfMonth.First
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekOfMonth.Fourth
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekOfMonth.Last
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekOfMonth.None
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekOfMonth.Second
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekOfMonth.Third
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

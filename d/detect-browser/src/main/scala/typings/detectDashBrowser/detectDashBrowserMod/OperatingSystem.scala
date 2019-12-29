@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.detectDashBrowser.detectDashBrowserStrings.`BlackBerry OS`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows Mobile`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Amazon OS`
-  - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 3DOT11`
+  - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 3Dot11`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 95`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 98`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 2000`
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows Vista`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 7`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 8`
-  - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 8DOT1`
+  - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 8Dot1`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows 10`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Windows ME`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Open BSD`
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
   - typings.detectDashBrowser.detectDashBrowserStrings.`Mac OS`
   - typings.detectDashBrowser.detectDashBrowserStrings.QNX
   - typings.detectDashBrowser.detectDashBrowserStrings.BeOS
-  - typings.detectDashBrowser.detectDashBrowserStrings.`OS/2`
+  - typings.detectDashBrowser.detectDashBrowserStrings.OSSlash2
   - typings.detectDashBrowser.detectDashBrowserStrings.`Chrome OS`
   - typings.detectDashBrowser.detectDashBrowserStrings.`Search Bot`
 */
@@ -50,7 +50,7 @@ object OperatingSystem {
   @scala.inline
   def `Mac OS`: typings.detectDashBrowser.detectDashBrowserStrings.`Mac OS` = this.cast("Mac OS")
   @scala.inline
-  def `OS/2`: typings.detectDashBrowser.detectDashBrowserStrings.`OS/2` = this.cast("OS/2")
+  def OSSlash2: typings.detectDashBrowser.detectDashBrowserStrings.OSSlash2 = this.cast("OS/2")
   @scala.inline
   def `Open BSD`: typings.detectDashBrowser.detectDashBrowserStrings.`Open BSD` = this.cast("Open BSD")
   @scala.inline
@@ -64,13 +64,13 @@ object OperatingSystem {
   @scala.inline
   def `Windows 2000`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 2000` = this.cast("Windows 2000")
   @scala.inline
-  def `Windows 3DOT11`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 3DOT11` = this.cast("Windows 3.11")
+  def `Windows 3Dot11`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 3Dot11` = this.cast("Windows 3.11")
   @scala.inline
   def `Windows 7`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 7` = this.cast("Windows 7")
   @scala.inline
   def `Windows 8`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 8` = this.cast("Windows 8")
   @scala.inline
-  def `Windows 8DOT1`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 8DOT1` = this.cast("Windows 8.1")
+  def `Windows 8Dot1`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 8Dot1` = this.cast("Windows 8.1")
   @scala.inline
   def `Windows 95`: typings.detectDashBrowser.detectDashBrowserStrings.`Windows 95` = this.cast("Windows 95")
   @scala.inline

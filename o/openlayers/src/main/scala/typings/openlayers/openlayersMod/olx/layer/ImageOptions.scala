@@ -2,6 +2,7 @@ package typings.openlayers.openlayersMod.olx.layer
 
 import typings.openlayers.openlayersMod.Extent
 import typings.openlayers.openlayersMod.Map
+import typings.openlayers.openlayersMod.source.Image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ trait ImageOptions extends js.Object {
   var maxResolution: js.UndefOr[Double] = js.undefined
   var minResolution: js.UndefOr[Double] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
-  var source: typings.openlayers.openlayersMod.source.Image
+  var source: Image
   var visible: js.UndefOr[Boolean] = js.undefined
   var zIndex: js.UndefOr[Double] = js.undefined
 }
@@ -20,7 +21,7 @@ trait ImageOptions extends js.Object {
 object ImageOptions {
   @scala.inline
   def apply(
-    source: typings.openlayers.openlayersMod.source.Image,
+    source: Image,
     extent: Extent = null,
     map: Map = null,
     maxResolution: Int | Double = null,

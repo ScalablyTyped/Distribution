@@ -45,9 +45,6 @@ object bignumberDotJsNumbers {
   @js.native
   sealed trait `9` extends ModuloMode
   
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -68,7 +65,5 @@ object bignumberDotJsNumbers {
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

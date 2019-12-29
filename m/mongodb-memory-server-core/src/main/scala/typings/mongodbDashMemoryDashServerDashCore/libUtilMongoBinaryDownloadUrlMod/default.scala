@@ -1,7 +1,7 @@
 package typings.mongodbDashMemoryDashServerDashCore.libUtilMongoBinaryDownloadUrlMod
 
-import typings.getos.getosMod.LinuxOs
-import typings.getos.getosMod.Os
+import typings.mongodbDashMemoryDashServerDashCore.libUtilGetosMod.AnyOS
+import typings.mongodbDashMemoryDashServerDashCore.libUtilGetosMod.LinuxOS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,27 +25,25 @@ class default protected () extends MongoBinaryDownloadUrl {
   /* CompleteClass */
   override def getArchiveNameWin(): js.Promise[String] = js.native
   /* CompleteClass */
-  override def getDebianVersionString(os: Os): String = js.native
+  override def getDebianVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
   override def getDownloadUrl(): js.Promise[String] = js.native
   /* CompleteClass */
-  override def getElementaryOSVersionString(os: Os): String = js.native
+  override def getElementaryOSVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
-  override def getFedoraVersionString(os: Os): String = js.native
+  override def getFedoraVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
-  override def getLegacyVersionString(os: Os): String = js.native
+  override def getLegacyVersionString(os: AnyOS): String = js.native
   /* CompleteClass */
-  override def getLinuxOSVersionString(os: LinuxOs): String = js.native
+  override def getLinuxOSVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
-  override def getMintVersionString(os: Os): String = js.native
+  override def getMintVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
-  override def getRhelVersionString(os: Os): String = js.native
+  override def getRhelVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
-  override def getSuseVersionString(os: Os): String = js.native
+  override def getSuseVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
-  override def getUbuntuVersionString(os: LinuxOs): String = js.native
-  /* CompleteClass */
-  override def getos(): js.Promise[Os] = js.native
+  override def getUbuntuVersionString(os: LinuxOS): String = js.native
   /* CompleteClass */
   override def translateArch(arch: String, mongoPlatform: String): String = js.native
   /* CompleteClass */

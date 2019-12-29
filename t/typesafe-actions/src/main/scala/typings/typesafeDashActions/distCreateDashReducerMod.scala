@@ -2,7 +2,6 @@ package typings.typesafeDashActions
 
 import typings.std.Exclude
 import typings.std.ReturnType
-import typings.typesafeDashActions.distCreateDashReducerMod.InitialHandler
 import typings.typesafeDashActions.distTypeDashHelpersMod.Action
 import typings.typesafeDashActions.distTypeDashHelpersMod.Reducer
 import typings.typesafeDashActions.distTypeDashHelpersMod.TypeConstant

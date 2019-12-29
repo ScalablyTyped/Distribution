@@ -1,6 +1,5 @@
 package typings.stellarDashSdk
 
-import typings.stellarDashSdk.libAssetsUnderscoreCallUnderscoreBuilderMod.AssetsCallBuilder
 import typings.stellarDashSdk.libCallUnderscoreBuilderMod.CallBuilder
 import typings.stellarDashSdk.libServerUnderscoreApiMod.ServerApi.AssetRecord
 import typings.stellarDashSdk.libServerUnderscoreApiMod.ServerApi.CollectionPage

@@ -1,65 +1,6 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ActivityTypeMask
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Attributes
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.AutoCreateAccessTeams
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.AutoRouteToOwnerQueue
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBeInManyToMany
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBePrimaryEntityInRelationship
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBeRelatedEntityInRelationship
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateAttributes
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateCharts
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateForms
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateViews
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanModifyAdditionalSettings
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanTriggerWorkflow
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Description
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.DisplayCollectionName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.DisplayName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconLargeName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconMediumName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconSmallName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IntroducedVersion
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAIRUpdated
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsActivity
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsActivityParty
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAuditEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAvailableOffline
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsBusinessProcessEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsChildEntity
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsConnectionsEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsCustomEntity
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsCustomizable
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsDocumentManagementEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsDuplicateDetectionEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsEnabledForCharts
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsImportable
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsIntersect
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsMailMergeEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsManaged
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsMappable
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsQuickCreateEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsReadingPaneEnabled
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsRenameable
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsValidForAdvancedFind
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsValidForQueue
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsVisibleInMobile
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsVisibleInMobileClient
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.LogicalName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ManyToManyRelationships
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ManyToOneRelationships
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.MetadataId
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ObjectTypeCode
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.OneToManyRelationships
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.OwnershipType
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryIdAttribute
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryImageAttribute
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryNameAttribute
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Privileges
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.RecurrenceBaseEntityLogicalName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ReportViewName
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.SchemaName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -248,242 +189,183 @@ object EntityMetadataProperties extends js.Object {
   sealed trait SchemaName extends EntityMetadataProperties
   
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[EntityMetadataProperties with scala.Double] = js.native
+  def apply(value: Double): js.UndefOr[EntityMetadataProperties with Double] = js.native
   /* 0 */ @js.native
-  object ActivityTypeMask
-    extends TopLevel[ActivityTypeMask with scala.Double]
+  object ActivityTypeMask extends TopLevel[ActivityTypeMask with Double]
   
   /* 1 */ @js.native
-  object Attributes
-    extends TopLevel[Attributes with scala.Double]
+  object Attributes extends TopLevel[Attributes with Double]
   
   /* 2 */ @js.native
-  object AutoCreateAccessTeams
-    extends TopLevel[AutoCreateAccessTeams with scala.Double]
+  object AutoCreateAccessTeams extends TopLevel[AutoCreateAccessTeams with Double]
   
   /* 3 */ @js.native
-  object AutoRouteToOwnerQueue
-    extends TopLevel[AutoRouteToOwnerQueue with scala.Double]
+  object AutoRouteToOwnerQueue extends TopLevel[AutoRouteToOwnerQueue with Double]
   
   /* 4 */ @js.native
-  object CanBeInManyToMany
-    extends TopLevel[CanBeInManyToMany with scala.Double]
+  object CanBeInManyToMany extends TopLevel[CanBeInManyToMany with Double]
   
   /* 5 */ @js.native
-  object CanBePrimaryEntityInRelationship
-    extends TopLevel[CanBePrimaryEntityInRelationship with scala.Double]
+  object CanBePrimaryEntityInRelationship extends TopLevel[CanBePrimaryEntityInRelationship with Double]
   
   /* 6 */ @js.native
-  object CanBeRelatedEntityInRelationship
-    extends TopLevel[CanBeRelatedEntityInRelationship with scala.Double]
+  object CanBeRelatedEntityInRelationship extends TopLevel[CanBeRelatedEntityInRelationship with Double]
   
   /* 7 */ @js.native
-  object CanCreateAttributes
-    extends TopLevel[CanCreateAttributes with scala.Double]
+  object CanCreateAttributes extends TopLevel[CanCreateAttributes with Double]
   
   /* 8 */ @js.native
-  object CanCreateCharts
-    extends TopLevel[CanCreateCharts with scala.Double]
+  object CanCreateCharts extends TopLevel[CanCreateCharts with Double]
   
   /* 9 */ @js.native
-  object CanCreateForms
-    extends TopLevel[CanCreateForms with scala.Double]
+  object CanCreateForms extends TopLevel[CanCreateForms with Double]
   
   /* 10 */ @js.native
-  object CanCreateViews
-    extends TopLevel[CanCreateViews with scala.Double]
+  object CanCreateViews extends TopLevel[CanCreateViews with Double]
   
   /* 11 */ @js.native
-  object CanModifyAdditionalSettings
-    extends TopLevel[CanModifyAdditionalSettings with scala.Double]
+  object CanModifyAdditionalSettings extends TopLevel[CanModifyAdditionalSettings with Double]
   
   /* 12 */ @js.native
-  object CanTriggerWorkflow
-    extends TopLevel[CanTriggerWorkflow with scala.Double]
+  object CanTriggerWorkflow extends TopLevel[CanTriggerWorkflow with Double]
   
   /* 13 */ @js.native
-  object Description
-    extends TopLevel[Description with scala.Double]
+  object Description extends TopLevel[Description with Double]
   
   /* 14 */ @js.native
-  object DisplayCollectionName
-    extends TopLevel[DisplayCollectionName with scala.Double]
+  object DisplayCollectionName extends TopLevel[DisplayCollectionName with Double]
   
   /* 15 */ @js.native
-  object DisplayName
-    extends TopLevel[DisplayName with scala.Double]
+  object DisplayName extends TopLevel[DisplayName with Double]
   
   /* 16 */ @js.native
-  object IconLargeName
-    extends TopLevel[IconLargeName with scala.Double]
+  object IconLargeName extends TopLevel[IconLargeName with Double]
   
   /* 17 */ @js.native
-  object IconMediumName
-    extends TopLevel[IconMediumName with scala.Double]
+  object IconMediumName extends TopLevel[IconMediumName with Double]
   
   /* 18 */ @js.native
-  object IconSmallName
-    extends TopLevel[IconSmallName with scala.Double]
+  object IconSmallName extends TopLevel[IconSmallName with Double]
   
   /* 19 */ @js.native
-  object IntroducedVersion
-    extends TopLevel[IntroducedVersion with scala.Double]
+  object IntroducedVersion extends TopLevel[IntroducedVersion with Double]
   
   /* 22 */ @js.native
-  object IsAIRUpdated
-    extends TopLevel[IsAIRUpdated with scala.Double]
+  object IsAIRUpdated extends TopLevel[IsAIRUpdated with Double]
   
   /* 20 */ @js.native
-  object IsActivity
-    extends TopLevel[IsActivity with scala.Double]
+  object IsActivity extends TopLevel[IsActivity with Double]
   
   /* 21 */ @js.native
-  object IsActivityParty
-    extends TopLevel[IsActivityParty with scala.Double]
+  object IsActivityParty extends TopLevel[IsActivityParty with Double]
   
   /* 23 */ @js.native
-  object IsAuditEnabled
-    extends TopLevel[IsAuditEnabled with scala.Double]
+  object IsAuditEnabled extends TopLevel[IsAuditEnabled with Double]
   
   /* 24 */ @js.native
-  object IsAvailableOffline
-    extends TopLevel[IsAvailableOffline with scala.Double]
+  object IsAvailableOffline extends TopLevel[IsAvailableOffline with Double]
   
   /* 25 */ @js.native
-  object IsBusinessProcessEnabled
-    extends TopLevel[IsBusinessProcessEnabled with scala.Double]
+  object IsBusinessProcessEnabled extends TopLevel[IsBusinessProcessEnabled with Double]
   
   /* 26 */ @js.native
-  object IsChildEntity
-    extends TopLevel[IsChildEntity with scala.Double]
+  object IsChildEntity extends TopLevel[IsChildEntity with Double]
   
   /* 27 */ @js.native
-  object IsConnectionsEnabled
-    extends TopLevel[IsConnectionsEnabled with scala.Double]
+  object IsConnectionsEnabled extends TopLevel[IsConnectionsEnabled with Double]
   
   /* 28 */ @js.native
-  object IsCustomEntity
-    extends TopLevel[IsCustomEntity with scala.Double]
+  object IsCustomEntity extends TopLevel[IsCustomEntity with Double]
   
   /* 29 */ @js.native
-  object IsCustomizable
-    extends TopLevel[IsCustomizable with scala.Double]
+  object IsCustomizable extends TopLevel[IsCustomizable with Double]
   
   /* 30 */ @js.native
-  object IsDocumentManagementEnabled
-    extends TopLevel[IsDocumentManagementEnabled with scala.Double]
+  object IsDocumentManagementEnabled extends TopLevel[IsDocumentManagementEnabled with Double]
   
   /* 31 */ @js.native
-  object IsDuplicateDetectionEnabled
-    extends TopLevel[IsDuplicateDetectionEnabled with scala.Double]
+  object IsDuplicateDetectionEnabled extends TopLevel[IsDuplicateDetectionEnabled with Double]
   
   /* 32 */ @js.native
-  object IsEnabledForCharts
-    extends TopLevel[IsEnabledForCharts with scala.Double]
+  object IsEnabledForCharts extends TopLevel[IsEnabledForCharts with Double]
   
   /* 33 */ @js.native
-  object IsImportable
-    extends TopLevel[IsImportable with scala.Double]
+  object IsImportable extends TopLevel[IsImportable with Double]
   
   /* 34 */ @js.native
-  object IsIntersect
-    extends TopLevel[IsIntersect with scala.Double]
+  object IsIntersect extends TopLevel[IsIntersect with Double]
   
   /* 35 */ @js.native
-  object IsMailMergeEnabled
-    extends TopLevel[IsMailMergeEnabled with scala.Double]
+  object IsMailMergeEnabled extends TopLevel[IsMailMergeEnabled with Double]
   
   /* 36 */ @js.native
-  object IsManaged
-    extends TopLevel[IsManaged with scala.Double]
+  object IsManaged extends TopLevel[IsManaged with Double]
   
   /* 37 */ @js.native
-  object IsMappable
-    extends TopLevel[IsMappable with scala.Double]
+  object IsMappable extends TopLevel[IsMappable with Double]
   
   /* 38 */ @js.native
-  object IsQuickCreateEnabled
-    extends TopLevel[IsQuickCreateEnabled with scala.Double]
+  object IsQuickCreateEnabled extends TopLevel[IsQuickCreateEnabled with Double]
   
   /* 39 */ @js.native
-  object IsReadingPaneEnabled
-    extends TopLevel[IsReadingPaneEnabled with scala.Double]
+  object IsReadingPaneEnabled extends TopLevel[IsReadingPaneEnabled with Double]
   
   /* 40 */ @js.native
-  object IsRenameable
-    extends TopLevel[IsRenameable with scala.Double]
+  object IsRenameable extends TopLevel[IsRenameable with Double]
   
   /* 41 */ @js.native
-  object IsValidForAdvancedFind
-    extends TopLevel[IsValidForAdvancedFind with scala.Double]
+  object IsValidForAdvancedFind extends TopLevel[IsValidForAdvancedFind with Double]
   
   /* 42 */ @js.native
-  object IsValidForQueue
-    extends TopLevel[IsValidForQueue with scala.Double]
+  object IsValidForQueue extends TopLevel[IsValidForQueue with Double]
   
   /* 43 */ @js.native
-  object IsVisibleInMobile
-    extends TopLevel[IsVisibleInMobile with scala.Double]
+  object IsVisibleInMobile extends TopLevel[IsVisibleInMobile with Double]
   
   /* 44 */ @js.native
-  object IsVisibleInMobileClient
-    extends TopLevel[IsVisibleInMobileClient with scala.Double]
+  object IsVisibleInMobileClient extends TopLevel[IsVisibleInMobileClient with Double]
   
   /* 45 */ @js.native
-  object LogicalName
-    extends TopLevel[LogicalName with scala.Double]
+  object LogicalName extends TopLevel[LogicalName with Double]
   
   /* 46 */ @js.native
-  object ManyToManyRelationships
-    extends TopLevel[ManyToManyRelationships with scala.Double]
+  object ManyToManyRelationships extends TopLevel[ManyToManyRelationships with Double]
   
   /* 47 */ @js.native
-  object ManyToOneRelationships
-    extends TopLevel[ManyToOneRelationships with scala.Double]
+  object ManyToOneRelationships extends TopLevel[ManyToOneRelationships with Double]
   
   /* 48 */ @js.native
-  object MetadataId
-    extends TopLevel[MetadataId with scala.Double]
+  object MetadataId extends TopLevel[MetadataId with Double]
   
   /* 49 */ @js.native
-  object ObjectTypeCode
-    extends TopLevel[ObjectTypeCode with scala.Double]
+  object ObjectTypeCode extends TopLevel[ObjectTypeCode with Double]
   
   /* 50 */ @js.native
-  object OneToManyRelationships
-    extends TopLevel[OneToManyRelationships with scala.Double]
+  object OneToManyRelationships extends TopLevel[OneToManyRelationships with Double]
   
   /* 51 */ @js.native
-  object OwnershipType
-    extends TopLevel[OwnershipType with scala.Double]
+  object OwnershipType extends TopLevel[OwnershipType with Double]
   
   /* 52 */ @js.native
-  object PrimaryIdAttribute
-    extends TopLevel[PrimaryIdAttribute with scala.Double]
+  object PrimaryIdAttribute extends TopLevel[PrimaryIdAttribute with Double]
   
   /* 53 */ @js.native
-  object PrimaryImageAttribute
-    extends TopLevel[PrimaryImageAttribute with scala.Double]
+  object PrimaryImageAttribute extends TopLevel[PrimaryImageAttribute with Double]
   
   /* 54 */ @js.native
-  object PrimaryNameAttribute
-    extends TopLevel[PrimaryNameAttribute with scala.Double]
+  object PrimaryNameAttribute extends TopLevel[PrimaryNameAttribute with Double]
   
   /* 55 */ @js.native
-  object Privileges
-    extends TopLevel[Privileges with scala.Double]
+  object Privileges extends TopLevel[Privileges with Double]
   
   /* 56 */ @js.native
-  object RecurrenceBaseEntityLogicalName
-    extends TopLevel[RecurrenceBaseEntityLogicalName with scala.Double]
+  object RecurrenceBaseEntityLogicalName extends TopLevel[RecurrenceBaseEntityLogicalName with Double]
   
   /* 57 */ @js.native
-  object ReportViewName
-    extends TopLevel[ReportViewName with scala.Double]
+  object ReportViewName extends TopLevel[ReportViewName with Double]
   
   /* 58 */ @js.native
-  object SchemaName
-    extends TopLevel[SchemaName with scala.Double]
+  object SchemaName extends TopLevel[SchemaName with Double]
   
 }
 

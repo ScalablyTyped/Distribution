@@ -11,7 +11,8 @@ class AnimationPoints protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.AnimationPoints_typekey`: AnimationPoints = js.native
+  @JSName("PowerPoint.AnimationPoints_typekey")
+  var PowerPointDotAnimationPoints_typekey: AnimationPoints = js.native
   var Smooth: MsoTriState = js.native
   /** @param number [Index=-1] */
   def Add(): AnimationPoint = js.native

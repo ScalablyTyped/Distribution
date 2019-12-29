@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsRatingRatingDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsRatingRatingDotTypesMod.RatingSize.Large
-import typings.officeDashUiDashFabricDashReact.libComponentsRatingRatingDotTypesMod.RatingSize.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

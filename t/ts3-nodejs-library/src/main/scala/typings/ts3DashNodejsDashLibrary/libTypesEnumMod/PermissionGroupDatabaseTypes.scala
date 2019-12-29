@@ -1,9 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupDatabaseTypes.Query
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupDatabaseTypes.Regular
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupDatabaseTypes.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

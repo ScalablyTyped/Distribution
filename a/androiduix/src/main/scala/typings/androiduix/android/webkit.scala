@@ -1,8 +1,6 @@
 package typings.androiduix.android
 
 import typings.androiduix.android.content.Context
-import typings.androiduix.android.webkit.WebView
-import typings.androiduix.android.webkit.WebViewClient
 import typings.androiduix.androidui.widget.HtmlBaseView
 import typings.std.HTMLElement
 import typings.std.Map

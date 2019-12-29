@@ -1,7 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.listenerMixinMod.Default
-import typings.fullcalendar.listenerMixinMod.ListenerInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

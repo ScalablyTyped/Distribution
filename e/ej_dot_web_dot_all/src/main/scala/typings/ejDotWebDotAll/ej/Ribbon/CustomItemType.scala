@@ -22,12 +22,10 @@ object CustomItemType extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CustomItemType with Double] = js.native
   /* 0 */ @js.native
-  object Button
-    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.CustomItemType.Button with Double]
+  object Button extends TopLevel[Button with Double]
   
   /* 1 */ @js.native
-  object Menu
-    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.CustomItemType.Menu with Double]
+  object Menu extends TopLevel[Menu with Double]
   
 }
 

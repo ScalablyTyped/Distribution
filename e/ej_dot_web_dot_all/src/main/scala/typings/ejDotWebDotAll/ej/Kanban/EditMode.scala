@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Kanban
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Kanban.EditMode.DialogTemplate
-import typings.ejDotWebDotAll.ej.Kanban.EditMode.ExternalForm
-import typings.ejDotWebDotAll.ej.Kanban.EditMode.ExternalFormTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +30,7 @@ object EditMode extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EditMode with Double] = js.native
   /* 0 */ @js.native
-  object Dialog
-    extends TopLevel[typings.ejDotWebDotAll.ej.Kanban.EditMode.Dialog with Double]
+  object Dialog extends TopLevel[Dialog with Double]
   
   /* 1 */ @js.native
   object DialogTemplate extends TopLevel[DialogTemplate with Double]

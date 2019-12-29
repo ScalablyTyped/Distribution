@@ -1,12 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartTrendlineType.exponential
-import typings.officeDashJs.Excel.ChartTrendlineType.linear
-import typings.officeDashJs.Excel.ChartTrendlineType.logarithmic
-import typings.officeDashJs.Excel.ChartTrendlineType.movingAverage
-import typings.officeDashJs.Excel.ChartTrendlineType.polynomial
-import typings.officeDashJs.Excel.ChartTrendlineType.power
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

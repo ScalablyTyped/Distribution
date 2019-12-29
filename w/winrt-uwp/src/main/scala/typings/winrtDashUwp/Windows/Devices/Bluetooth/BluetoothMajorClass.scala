@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.audioVideo
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.computer
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.health
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.imaging
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.miscellaneous
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.networkAccessPoint
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.peripheral
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.phone
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.toy
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.wearable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

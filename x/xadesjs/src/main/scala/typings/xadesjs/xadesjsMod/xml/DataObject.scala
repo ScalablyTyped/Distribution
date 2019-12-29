@@ -7,7 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("xadesjs", "xml.DataObject")
 @js.native
 class DataObject ()
-  extends typings.xmldsigjs.xmldsigjsMod.DataObject {
-  var QualifyingProperties: typings.xadesjs.xadesjsMod.xml.QualifyingProperties = js.native
-}
+  extends typings.xadesjs.buildTypesXmlMod.DataObject
 

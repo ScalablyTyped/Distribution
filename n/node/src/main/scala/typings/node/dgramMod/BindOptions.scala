@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BindOptions extends js.Object {
-  var address: js.UndefOr[java.lang.String] = js.undefined
+  var address: js.UndefOr[String] = js.undefined
   var exclusive: js.UndefOr[Boolean] = js.undefined
   var fd: js.UndefOr[Double] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
@@ -14,7 +14,7 @@ trait BindOptions extends js.Object {
 object BindOptions {
   @scala.inline
   def apply(
-    address: java.lang.String = null,
+    address: String = null,
     exclusive: js.UndefOr[Boolean] = js.undefined,
     fd: Int | Double = null,
     port: Int | Double = null

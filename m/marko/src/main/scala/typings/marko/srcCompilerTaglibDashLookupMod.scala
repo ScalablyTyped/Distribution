@@ -1,6 +1,5 @@
 package typings.marko
 
-import typings.marko.srcCompilerTaglibDashLookupMod.TaglibLookup
 import typings.marko.srcCompilerTaglibDashLookupTaglibLookupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

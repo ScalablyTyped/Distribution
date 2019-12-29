@@ -13,7 +13,8 @@ class Endnote protected () extends js.Object {
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
   val Reference: typings.activexDashWord.Word.Range = js.native
-  var `Word.Endnote_typekey`: Endnote = js.native
+  @JSName("Word.Endnote_typekey")
+  var WordDotEndnote_typekey: Endnote = js.native
   def Delete(): Unit = js.native
 }
 

@@ -1,15 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.BPMN
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Basic
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Flow
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.HTML
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Image
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Native
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Text
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.UMLActivity
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.UMLClassifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

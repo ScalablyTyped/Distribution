@@ -1,11 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceType.Daily
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceType.Monthly
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceType.Weekday
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceType.Weekly
-import typings.officeDashJs.Office.MailboxEnums.RecurrenceType.Yearly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

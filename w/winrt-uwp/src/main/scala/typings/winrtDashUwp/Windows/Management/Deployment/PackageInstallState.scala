@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.installed
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.notInstalled
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.paused
-import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.staged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵELEMENT_PROBE_PROVIDERS")
+@JSImport("@angular/platform-browser", "\u0275ELEMENT_PROBE_PROVIDERS")
 @js.native
 object ɵELEMENT_PROBE_PROVIDERS
   extends TopLevel[js.Array[Provider]]

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("argv", JSImport.Namespace)
 @js.native
-object ^
-  extends TopLevel[typings.argv.argvMod.argv]
+object ^ extends TopLevel[argv]
 

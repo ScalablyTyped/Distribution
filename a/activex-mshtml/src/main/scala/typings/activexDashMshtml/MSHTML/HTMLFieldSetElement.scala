@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLFieldSetElement")
 @js.native
 class HTMLFieldSetElement protected () extends js.Object {
-  var `MSHTML.HTMLFieldSetElement_typekey`: HTMLFieldSetElement = js.native
+  @JSName("MSHTML.HTMLFieldSetElement_typekey")
+  var MSHTMLDotHTMLFieldSetElement_typekey: HTMLFieldSetElement = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

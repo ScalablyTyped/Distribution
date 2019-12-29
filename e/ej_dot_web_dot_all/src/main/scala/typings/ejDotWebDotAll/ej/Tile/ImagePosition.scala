@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.BottomCenter
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.BottomLeft
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.BottomRight
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.Center
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.Fill
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.LeftCenter
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.RightCenter
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.TopCenter
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.TopLeft
-import typings.ejDotWebDotAll.ej.Tile.ImagePosition.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,56 +13,46 @@ sealed trait ImagePosition extends js.Object
 object ImagePosition extends js.Object {
   ///To set the bottom center position of tile image
   @js.native
-  sealed trait BottomCenter
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait BottomCenter extends ImagePosition
   
   ///To set the bottomleft position of tile image
   @js.native
-  sealed trait BottomLeft
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait BottomLeft extends ImagePosition
   
   ///To set the bottomright position of tile image
   @js.native
-  sealed trait BottomRight
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait BottomRight extends ImagePosition
   
   ///To set the center position of tile image
   @js.native
-  sealed trait Center
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait Center extends ImagePosition
   
   ///To set the fill position of tile image
   @js.native
-  sealed trait Fill
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait Fill extends ImagePosition
   
   ///To set the left center position of tile image
   @js.native
-  sealed trait LeftCenter
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait LeftCenter extends ImagePosition
   
   ///To set the right center position of tile image
   @js.native
-  sealed trait RightCenter
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait RightCenter extends ImagePosition
   
   ///To set the top center position of tile image
   @js.native
-  sealed trait TopCenter
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait TopCenter extends ImagePosition
   
   ///To set the topleft position of tile image
   @js.native
-  sealed trait TopLeft
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait TopLeft extends ImagePosition
   
   ///To set the topright position of tile image
   @js.native
-  sealed trait TopRight
-    extends typings.ejDotWebDotAll.ej.Tile.ImagePosition
+  sealed trait TopRight extends ImagePosition
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.Tile.ImagePosition with Double] = js.native
+  def apply(value: Double): js.UndefOr[ImagePosition with Double] = js.native
   /* 2 */ @js.native
   object BottomCenter extends TopLevel[BottomCenter with Double]
   

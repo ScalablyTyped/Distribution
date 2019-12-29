@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Error protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Error_typekey`: Error = js.native
+  @JSName("Excel.Error_typekey")
+  var ExcelDotError_typekey: Error = js.native
   var Ignore: Boolean = js.native
   val Parent: js.Any = js.native
   val Value: Boolean = js.native

@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 class FaxInboundRoutingExtension protected () extends js.Object {
   /** Is extension built in debug environment */
   val Debug: Boolean = js.native
-  var `FAXCOMEXLib.FaxInboundRoutingExtension_typekey`: FaxInboundRoutingExtension = js.native
+  @JSName("FAXCOMEXLib.FaxInboundRoutingExtension_typekey")
+  var FAXCOMEXLibDotFaxInboundRoutingExtension_typekey: FaxInboundRoutingExtension = js.native
   /** Extension's friendly name */
   val FriendlyName: String = js.native
   /** Full path and file name of the extension DLL */

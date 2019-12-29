@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.wms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -139,8 +138,8 @@ trait WMSLayer
     * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def fetchImage(extent: Extent, width: Double, height: Double): IPromise[_] = js.native
-  def fetchImage(extent: Extent, width: Double, height: Double, options: WMSLayerFetchImageOptions): IPromise[_] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[_] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double, options: WMSLayerFetchImageOptions): js.Promise[_] = js.native
   /**
     * Returns a [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html) based on the given sublayer id.
     *

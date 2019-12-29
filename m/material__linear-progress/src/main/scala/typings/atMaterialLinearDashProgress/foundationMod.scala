@@ -1,7 +1,6 @@
 package typings.atMaterialLinearDashProgress
 
 import typings.atMaterialLinearDashProgress.adapterMod.MDCLinearProgressAdapter
-import typings.atMaterialLinearDashProgress.foundationMod.MDCLinearProgressFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.DATA_EXECUTION_STATE_UNSUPPORTED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.ERROR
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.NOT_STARTED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.RUNNING
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.SUCCESS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

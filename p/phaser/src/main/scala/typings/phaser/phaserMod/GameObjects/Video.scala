@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +66,7 @@ class Video protected ()
     * @param y The vertical position of this Game Object in the world.
     * @param key Optional key of the Video this Game Object will play, as stored in the Video Cache.
     */
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, key: String) = this()
+  def this(scene: Scene, x: Double, y: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, key: String) = this()
 }
 

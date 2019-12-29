@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("IWshRuntimeLibrary.TextStreamWriter")
 @js.native
 class TextStreamWriter protected () extends TextStreamBase {
-  var `IWshRuntimeLibrary.TextStreamWriter_typekey`: TextStreamWriter = js.native
+  @JSName("IWshRuntimeLibrary.TextStreamWriter_typekey")
+  var IWshRuntimeLibraryDotTextStreamWriter_typekey: TextStreamWriter = js.native
   /**
     * Sends a string to an output stream.
     */

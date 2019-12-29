@@ -1,8 +1,6 @@
 package typings.expoDashFileDashSystem.buildFileSystemDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.EncodingType.Base64
-import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.EncodingType.UTF8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

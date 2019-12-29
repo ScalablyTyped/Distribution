@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.Fill
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.Uniform
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.UniformToFill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

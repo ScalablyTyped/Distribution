@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionVersionFlags.None
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionVersionFlags.Validated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

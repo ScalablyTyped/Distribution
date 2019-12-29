@@ -4,7 +4,6 @@ import typings.shopifyDashPrime.distInfrastructureMod.BaseService
 import typings.shopifyDashPrime.distModelsInventoryUnderscoreItemMod.InventoryItem
 import typings.shopifyDashPrime.distOptionsBaseMod.FieldOptions
 import typings.shopifyDashPrime.distOptionsInventoryUnderscoreItemsMod.InventoryItemListOptions
-import typings.shopifyDashPrime.distServicesInventoryUnderscoreItemsMod.InventoryItems
 import typings.std.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`

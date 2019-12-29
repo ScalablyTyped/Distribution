@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Failed
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.InProgress
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Queued
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,7 @@
 package typings.atBlueprintjsCore.libEsmComponentsNavbarNavbarGroupMod
 
 import typings.atBlueprintjsCore.libEsmCommonAlignmentMod.Alignment
+import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
@@ -143,7 +144,7 @@ object INavbarGroupProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: typings.react.Anon_Html = null,
+    dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,

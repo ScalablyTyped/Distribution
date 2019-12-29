@@ -1,8 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.reprojImageMod.FunctionType
-import typings.ol.reprojImageMod.ReprojImage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

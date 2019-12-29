@@ -1,7 +1,6 @@
 package typings.twilioDashSync
 
 import typings.std.Error
-import typings.twilioDashSync.libUtilsSyncerrorMod.SyncError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

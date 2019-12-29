@@ -16,7 +16,7 @@ trait MergerSettingsTypeSettings extends js.Object {
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
   var iconfontUrl: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
-  var menu: js.UndefOr[Anon_Locale] = js.undefined
+  var menu: js.UndefOr[Anon_DefaultOpenAll] = js.undefined
   var navTheme: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
   ] = js.undefined
@@ -33,7 +33,7 @@ object MergerSettingsTypeSettings {
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
     iconfontUrl: String = null,
     layout: sidemenu | topmenu = null,
-    menu: Anon_Locale = null,
+    menu: Anon_DefaultOpenAll = null,
     navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
     primaryColor: String = null,
     title: String = null

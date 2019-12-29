@@ -11,7 +11,8 @@ class ListLevels protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ListLevels_typekey`: ListLevels = js.native
+  @JSName("Word.ListLevels_typekey")
+  var WordDotListLevels_typekey: ListLevels = js.native
   def Item(Index: Double): ListLevel = js.native
 }
 

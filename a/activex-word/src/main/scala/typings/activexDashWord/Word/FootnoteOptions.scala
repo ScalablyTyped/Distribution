@@ -14,6 +14,7 @@ class FootnoteOptions protected () extends js.Object {
   var NumberingRule: WdNumberingRule = js.native
   val Parent: js.Any = js.native
   var StartingNumber: Double = js.native
-  var `Word.FootnoteOptions_typekey`: FootnoteOptions = js.native
+  @JSName("Word.FootnoteOptions_typekey")
+  var WordDotFootnoteOptions_typekey: FootnoteOptions = js.native
 }
 

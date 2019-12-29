@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Streams.UnicodeEncoding.utf16BE
-import typings.winrt.Windows.Storage.Streams.UnicodeEncoding.utf16LE
-import typings.winrt.Windows.Storage.Streams.UnicodeEncoding.utf8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

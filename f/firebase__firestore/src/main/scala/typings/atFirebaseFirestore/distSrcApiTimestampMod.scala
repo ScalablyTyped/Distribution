@@ -1,6 +1,5 @@
 package typings.atFirebaseFirestore
 
-import typings.atFirebaseFirestore.distSrcApiTimestampMod.Timestamp
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

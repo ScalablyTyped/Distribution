@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "watchify"
-version := "v3.7.0-dt-20190322Z-909b44"
+version := "v3.7.0-dt-20190322Z-2c85d6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "browserify" % "12.0-dt-20190322Z-d8596e",
-  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20190212Z-787745",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "browserify" % "12.0-dt-20190322Z-b48653",
+  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20190212Z-4a391d",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

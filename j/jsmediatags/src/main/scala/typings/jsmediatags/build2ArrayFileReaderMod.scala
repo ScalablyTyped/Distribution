@@ -1,6 +1,5 @@
 package typings.jsmediatags
 
-import typings.jsmediatags.build2ArrayFileReaderMod.ArrayFileReader
 import typings.jsmediatags.typesMod.ByteArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -3,7 +3,6 @@ package typings.atAngularCompiler
 import org.scalablytyped.runtime.StringDictionary
 import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagContentType
 import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagDefinition
-import typings.atAngularCompiler.srcMlUnderscoreParserXmlUnderscoreTagsMod.XmlTagDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

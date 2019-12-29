@@ -12,7 +12,8 @@ class TwoInitialCapsException protected () extends js.Object {
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.TwoInitialCapsException_typekey`: TwoInitialCapsException = js.native
+  @JSName("Word.TwoInitialCapsException_typekey")
+  var WordDotTwoInitialCapsException_typekey: TwoInitialCapsException = js.native
   def Delete(): Unit = js.native
 }
 

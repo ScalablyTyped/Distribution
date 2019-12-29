@@ -26,7 +26,8 @@ class VBProject protected () extends js.Object {
   @JSName("VBComponents")
   val VBComponents_Original: VBComponents = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
-  var `VBIDE.VBProject_typekey`: VBProject = js.native
+  @JSName("VBIDE.VBProject_typekey")
+  var VBIDEDotVBProject_typekey: VBProject = js.native
   def Collection(index: js.Any): VBProject = js.native
   def MakeCompiledFile(): Unit = js.native
   def References(index: js.Any): Reference = js.native

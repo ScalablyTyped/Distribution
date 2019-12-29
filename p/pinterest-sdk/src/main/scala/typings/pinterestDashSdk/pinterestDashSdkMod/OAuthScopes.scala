@@ -1,10 +1,6 @@
 package typings.pinterestDashSdk.pinterestDashSdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.read_public
-import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.read_relationships
-import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.write_public
-import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.write_relationships
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

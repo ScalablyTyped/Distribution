@@ -12,7 +12,7 @@ object atStorybookAddonDashJestStrings {
   sealed trait storyName extends js.Object
   
   @js.native
-  sealed trait `storybookjs/test` extends js.Object
+  sealed trait storybookjsSlashtest extends js.Object
   
   @js.native
   sealed trait test extends js.Object
@@ -25,7 +25,7 @@ object atStorybookAddonDashJestStrings {
   @scala.inline
   def storyName: storyName = "storyName".asInstanceOf[storyName]
   @scala.inline
-  def `storybookjs/test`: `storybookjs/test` = "storybookjs/test".asInstanceOf[`storybookjs/test`]
+  def storybookjsSlashtest: storybookjsSlashtest = "storybookjs/test".asInstanceOf[storybookjsSlashtest]
   @scala.inline
   def test: test = "test".asInstanceOf[test]
   @scala.inline

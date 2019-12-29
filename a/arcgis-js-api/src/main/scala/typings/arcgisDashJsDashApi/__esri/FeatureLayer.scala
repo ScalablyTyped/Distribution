@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.edits
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feature
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
@@ -75,11 +74,13 @@ trait FeatureLayer
     */
   var elevationInfo: FeatureLayerElevationInfo = js.native
   /**
-    * Configures the method for decluttering overlapping features in the view. If this property is not set (or set to `null`), every feature is drawn individually.  Currently this property is only supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) for point features with non-draped [Icons](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html) or [Text](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html) symbol layers.  ![declutter](https://developers.arcgis.com/javascript/assets/img/samples/city-points-declutter.gif)
+    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  There are two types of feature reduction: `selection` and `cluster`.
+    *   * [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen. This has been available since version 4.4.
+    *   * [Cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) spatially groups points in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) into _clusters_. The size of each cluster is proportional to the number of features within the cluster. This has been available since version 4.14.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#featureReduction)
     */
-  var featureReduction: FeatureLayerFeatureReduction = js.native
+  var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   /**
     * An array of fields in the layer. Each field represents an attribute that may contain a value for each feature in the layer. For example, a field named `POP_2015`, stores information about total population as a numeric value for each feature; this value represents the total number of people living within the geographic bounds of the feature.  This property must be set in the constructor when creating a FeatureLayer from client-side [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html). To create FeatureLayers from client-side features you must also set the [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source), [objectIdField](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField), [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference), [geometryType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType), [renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer), and [type](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#type) properties.
     *
@@ -97,7 +98,7 @@ trait FeatureLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#gdbVersion)
     */
-  val gdbVersion: String = js.native
+  var gdbVersion: String = js.native
   /**
     * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.
     *
@@ -135,7 +136,7 @@ trait FeatureLayer
     */
   var isTable: Boolean = js.native
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).
+    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).  See the [Labeling guide page](https://developers.arcgis.com/javascript/latest/guide/labeling/index.html) for more information and known limitations.
     * > **Known Limitations**
     *   * Currently only one [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) is supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
@@ -291,7 +292,7 @@ trait FeatureLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#version)
     */
   val version: Double = js.native
-  def addAttachment(feature: Graphic, attachment: FormData): IPromise[FeatureEditResult] = js.native
+  def addAttachment(feature: Graphic, attachment: FormData): js.Promise[FeatureEditResult] = js.native
   /**
     * Adds an attachment to a feature. This operation is available only if the layer's [capabilities.data.supportsAttachment](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is set to `true`.
     *
@@ -301,19 +302,27 @@ trait FeatureLayer
     * @param attachment HTML form that contains a file upload field pointing to the file to be added as an attachment.
     *
     */
-  def addAttachment(feature: Graphic, attachment: HTMLFormElement): IPromise[FeatureEditResult] = js.native
+  def addAttachment(feature: Graphic, attachment: HTMLFormElement): js.Promise[FeatureEditResult] = js.native
   /**
     * Applies edits to features in a layer. New features can be created and existing features can be updated or deleted. Feature geometries and/or attributes may be modified. Only applicable to layers in a [feature service](https://developers.arcgis.com/rest/services-reference/feature-service.htm) and client-side features set through the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source).  If client-side features are added, removed or updated at runtime using [applyEdits()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits) then use [queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures) to return updated features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     *
-    * @param edits Object containing features to be added, updated or deleted.
-    * @param edits.addFeatures Array of features to be added. Values of non nullable fields must be provided when adding new features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
-    * @param edits.updateFeatures Array of features to be updated. Each feature must have valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField). Values of non nullable fields must be provided when updating features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
-    * @param edits.deleteFeatures An array of features or objects to be deleted. When an array of features is passed, each feature must have a valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField). When an array of objects is used, each object must have a valid `objectId` property.
+    * @param edits Object containing features and attachments to be added, updated or deleted.
+    * @param edits.addFeatures An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be added. Values of non nullable fields must be provided when adding new features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
+    * @param edits.updateFeatures An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be updated. Each feature must have valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField). Values of non nullable fields must be provided when updating features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
+    * @param edits.deleteFeatures An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features, or an array of objects with `objectId` or `globalId` of each feature to be deleted. When an array or collection of features is passed, each feature must have a valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField). When an array of objects is used, each object must have a valid value set for `objectId` or `globalId` property.
+    * @param edits.addAttachments An array of attachments to be added. Applies only when the `options.globalIdUsed` parameter is set to `true`. User must provide [globalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)s for all attachments to be added.
+    * @param edits.updateAttachments An array of attachments to be updated. Applies only when the `options.globalIdUsed` parameter is set to `true`. User must provide [globalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)s for all attachments to be updated.
+    * @param edits.deleteAttachments An array of [globalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)s for attachments to be deleted. Applies only when the `options.globalIdUsed` parameter is set to `true`.
+    * @param options Additional edit options to specify when editing features or attachments.
+    * @param options.gdbVersion The geodatabase version to apply the edits. This parameter applies only if the [capabilities.data.isVersioned](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property of the layer is `true`. If the gdbVersion parameter is not specified, edits are made to the published map’s version.
+    * @param options.rollbackOnFailureEnabled Indicates whether the edits should be applied only if all submitted edits succeed. If `false`, the server will apply the edits that succeed even if some of the submitted edits fail. If `true`, the server will apply the edits only if all edits succeed. The layer's [capabilities.editing.supportsRollbackOnFailure](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property must be `true` if using this parameter. If `supportsRollbackOnFailure` is `false` for a layer, then `rollbackOnFailureEnabled` will always be true, regardless of how the parameter is set.
+    * @param options.globalIdUsed Indicates whether the edits can be applied using globalIds of features or attachments. This parameter applies only if the layer's [capabilities.editing.supportsGlobalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property is `true`. When `false`, globalIds submitted with the features are ignored and the service assigns new globalIds to the new features. When `true`, the globalIds must be submitted with the new features. When updating or deleting existing features, if the `globalIdUsed` is `false`, the objectIds of the features to be updated or deleted must be provided. If the `globalIdUsed` is `true`, globalIds of features to be updated or deleted must be provided.  When adding, updating or deleting attachments, `globalIdUsed` parameter must be set to `true` and the attachment globalId must be set. For new attachments, the user must provide globalIds. In order for an attachment to be updated or deleted, clients must include its globalId.  Attachments are not supported in an edit payload when `globalIdUsed` is `false`.
     *
     */
-  def applyEdits(edits: FeatureLayerApplyEditsEdits): IPromise[_] = js.native
+  def applyEdits(edits: FeatureLayerApplyEditsEdits): js.Promise[_] = js.native
+  def applyEdits(edits: FeatureLayerApplyEditsEdits, options: FeatureLayerApplyEditsOptions): js.Promise[_] = js.native
   /**
     * Creates a popup template for the layer, populated with all the fields of the layer.
     *
@@ -343,7 +352,7 @@ trait FeatureLayer
     * @param attachmentIds Ids of the attachments to be deleted.
     *
     */
-  def deleteAttachments(feature: Graphic, attachmentIds: js.Array[Double]): IPromise[FeatureEditResult] = js.native
+  def deleteAttachments(feature: Graphic, attachmentIds: js.Array[Double]): js.Promise[FeatureEditResult] = js.native
   /**
     * Returns a [FeatureType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html) describing the feature's type. This is applicable if the layer containing the feature has a [typeIdField](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#typeIdField).
     *
@@ -387,10 +396,10 @@ trait FeatureLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryAttachments(attachmentQuery: AttachmentQuery): IPromise[_] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQueryProperties): IPromise[_] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: FeatureLayerQueryAttachmentsOptions): IPromise[_] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQuery, options: FeatureLayerQueryAttachmentsOptions): IPromise[_] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQuery): js.Promise[_] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties): js.Promise[_] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: FeatureLayerQueryAttachmentsOptions): js.Promise[_] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQuery, options: FeatureLayerQueryAttachmentsOptions): js.Promise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. If no parameters are specified, then the extent and count of all features satisfying the layer's configuration/filters are returned. This is valid only for [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm) on [arcgis.com](http://arcgis.com) and for ArcGIS Server 10.3.1 and later.
     * > To query for the extent of features/graphics available to or visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) on the client rather than making a server-side query, you must use the [FeatureLayerView.queryExtent()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryExtent) method.
@@ -402,11 +411,11 @@ trait FeatureLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryExtent(): IPromise[_] = js.native
-  def queryExtent(query: Query): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties, options: FeatureLayerQueryExtentOptions): IPromise[_] = js.native
-  def queryExtent(query: Query, options: FeatureLayerQueryExtentOptions): IPromise[_] = js.native
+  def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: Query): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties, options: FeatureLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(query: Query, options: FeatureLayerQueryExtentOptions): js.Promise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns the number of features that satisfy the query. If no parameters are specified, the total number of features satisfying the layer's configuration/filters is returned.
     * > To query for the count of features/graphics available to or visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) on the client rather than making a server-side query, you must use the [FeatureLayerView.queryFeatureCount()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatureCount) method.
@@ -418,11 +427,11 @@ trait FeatureLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatureCount(): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties, options: FeatureLayerQueryFeatureCountOptions): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query, options: FeatureLayerQueryFeatureCountOptions): IPromise[Double] = js.native
+  def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: FeatureLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query, options: FeatureLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves. A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) contains an array of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) features. See the [querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#querying) section for more information on how to query features from a layer.
     * > To query features/graphics available to or visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) on the client rather than making a server-side query, you must use the [FeatureLayerView.queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) method.
@@ -434,11 +443,11 @@ trait FeatureLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatures(): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties, options: FeatureLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: FeatureLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: FeatureLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: FeatureLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns an array of Object IDs for features that satisfy the input query. If no parameters are specified, then the Object IDs of all features satisfying the layer's configuration/filters are returned.
     * > To query for ObjectIDs of features/graphics available to or visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) on the client rather than making a server-side query, you must use the [FeatureLayerView.queryObjectIds()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryObjectIds) method.
@@ -450,11 +459,11 @@ trait FeatureLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryObjectIds(): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties, options: FeatureLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query, options: FeatureLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: FeatureLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query, options: FeatureLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   /**
     * Executes a [RelationshipQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html) against the feature service and returns [FeatureSets](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) grouped by source layer or table objectIds.
     *
@@ -465,11 +474,11 @@ trait FeatureLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryRelatedFeatures(relationshipQuery: RelationshipQuery): IPromise[_] = js.native
-  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties): IPromise[_] = js.native
-  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties, options: FeatureLayerQueryRelatedFeaturesOptions): IPromise[_] = js.native
-  def queryRelatedFeatures(relationshipQuery: RelationshipQuery, options: FeatureLayerQueryRelatedFeaturesOptions): IPromise[_] = js.native
-  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: FormData): IPromise[FeatureEditResult] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQuery): js.Promise[_] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties): js.Promise[_] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties, options: FeatureLayerQueryRelatedFeaturesOptions): js.Promise[_] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQuery, options: FeatureLayerQueryRelatedFeaturesOptions): js.Promise[_] = js.native
+  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: FormData): js.Promise[FeatureEditResult] = js.native
   /**
     * Updates an existing attachment for a feature. This operation is available only if the layer's [capabilities.data.supportsAttachment](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is set to `true`.
     *
@@ -480,7 +489,7 @@ trait FeatureLayer
     * @param attachment HTML form that contains a file upload field pointing to the file to be added as an attachment.
     *
     */
-  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: HTMLFormElement): IPromise[FeatureEditResult] = js.native
+  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: HTMLFormElement): js.Promise[FeatureEditResult] = js.native
 }
 
 @JSGlobal("__esri.FeatureLayer")

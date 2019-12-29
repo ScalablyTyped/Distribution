@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.UserType.localGuest
-import typings.winrtDashUwp.Windows.System.UserType.localUser
-import typings.winrtDashUwp.Windows.System.UserType.remoteGuest
-import typings.winrtDashUwp.Windows.System.UserType.remoteUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.local
-import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.localCache
-import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.roaming
-import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.temporary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

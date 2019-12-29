@@ -1,6 +1,5 @@
 package typings.chaiDashHttp.chaiDashHttpMod._Global_
 
-import typings.chaiDashHttp.chaiDashHttpMod._Global_.ChaiHttp.Agent
 import typings.superagent.superagentMod.SuperAgentStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`

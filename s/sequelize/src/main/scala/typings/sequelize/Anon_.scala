@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ extends js.Object {
-  var `!..`: js.Tuple2[Double | String, Double | String] = js.native
   @JSName("$between")
   var $between: js.Tuple2[Date | Double, Date | Double] = js.native
   @JSName("$contained")
@@ -47,9 +46,15 @@ trait Anon_ extends js.Object {
   var $notLike: String | WherePGStatement = js.native
   @JSName("$overlap")
   var $overlap: js.Tuple2[Double | String, Double | String] = js.native
-  var `&&`: js.Tuple2[Double, Double] = js.native
-  var `..`: js.Tuple2[Double | String, Double | String] = js.native
-  var `<@`: js.Any = js.native
-  var `@>`: js.Any = js.native
+  @JSName("@>")
+  var `@Greaterthansign`: js.Any = js.native
+  @JSName("&&")
+  var AmpersandAmpersand: js.Tuple2[Double, Double] = js.native
+  @JSName("..")
+  var DotDot: js.Tuple2[Double | String, Double | String] = js.native
+  @JSName("!..")
+  var ExclamationmarkDotDot: js.Tuple2[Double | String, Double | String] = js.native
+  @JSName("<@")
+  var `Lessthansign@`: js.Any = js.native
 }
 

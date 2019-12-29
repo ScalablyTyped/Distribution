@@ -1,12 +1,12 @@
 package typings.pdfkit.PDFKit
 
 import typings.pdfkit.Anon_Bottom
-import typings.pdfkit.pdfkitStrings.`1DOT3`
-import typings.pdfkit.pdfkitStrings.`1DOT4`
-import typings.pdfkit.pdfkitStrings.`1DOT5`
-import typings.pdfkit.pdfkitStrings.`1DOT6`
-import typings.pdfkit.pdfkitStrings.`1DOT7`
-import typings.pdfkit.pdfkitStrings.`1DOT7ext3`
+import typings.pdfkit.pdfkitStrings.`1Dot3`
+import typings.pdfkit.pdfkitStrings.`1Dot4`
+import typings.pdfkit.pdfkitStrings.`1Dot5`
+import typings.pdfkit.pdfkitStrings.`1Dot6`
+import typings.pdfkit.pdfkitStrings.`1Dot7`
+import typings.pdfkit.pdfkitStrings.`1Dot7ext3`
 import typings.pdfkit.pdfkitStrings.landscape
 import typings.pdfkit.pdfkitStrings.portrait
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait PDFDocumentOptions extends js.Object {
   var margin: js.UndefOr[Double] = js.undefined
   var margins: js.UndefOr[Anon_Bottom] = js.undefined
   var ownerPassword: js.UndefOr[String] = js.undefined
-  var pdfVersion: js.UndefOr[`1DOT3` | `1DOT4` | `1DOT5` | `1DOT6` | `1DOT7` | `1DOT7ext3`] = js.undefined
+  var pdfVersion: js.UndefOr[`1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3`] = js.undefined
   var permissions: js.UndefOr[DocumentPermissions] = js.undefined
   var size: js.UndefOr[js.Array[Double] | String] = js.undefined
   var userPassword: js.UndefOr[String] = js.undefined
@@ -39,7 +39,7 @@ object PDFDocumentOptions {
     margin: Int | Double = null,
     margins: Anon_Bottom = null,
     ownerPassword: String = null,
-    pdfVersion: `1DOT3` | `1DOT4` | `1DOT5` | `1DOT6` | `1DOT7` | `1DOT7ext3` = null,
+    pdfVersion: `1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3` = null,
     permissions: DocumentPermissions = null,
     size: js.Array[Double] | String = null,
     userPassword: String = null

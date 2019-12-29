@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object pickadateStrings {
   @js.native
-  sealed trait DOLLARnode extends js.Object
+  sealed trait $node extends js.Object
   
   @js.native
-  sealed trait DOLLARroot extends js.Object
+  sealed trait $root extends js.Object
   
   @js.native
   sealed trait _hidden extends js.Object
@@ -48,9 +48,9 @@ object pickadateStrings {
   sealed trait view extends js.Object
   
   @scala.inline
-  def DOLLARnode: DOLLARnode = "$node".asInstanceOf[DOLLARnode]
+  def $node: $node = "$node".asInstanceOf[$node]
   @scala.inline
-  def DOLLARroot: DOLLARroot = "$root".asInstanceOf[DOLLARroot]
+  def $root: $root = "$root".asInstanceOf[$root]
   @scala.inline
   def _hidden: _hidden = "_hidden".asInstanceOf[_hidden]
   @scala.inline

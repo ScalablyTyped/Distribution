@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Cancelled
-import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Failed
-import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.InProgress
-import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.NotSet
-import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Queued
-import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

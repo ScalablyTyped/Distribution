@@ -24,7 +24,8 @@ class FaxDocument protected () extends js.Object {
   var CoverPageType: FAX_COVERPAGE_TYPE_ENUM = js.native
   /** The document name */
   var DocumentName: String = js.native
-  var `FAXCOMEXLib.FaxDocument_typekey`: FaxDocument = js.native
+  @JSName("FAXCOMEXLib.FaxDocument_typekey")
+  var FAXCOMEXLibDotFaxDocument_typekey: FaxDocument = js.native
   /** Whether to group the broadcast receipts */
   var GroupBroadcastReceipts: Boolean = js.native
   /** Contents of cover page note field */

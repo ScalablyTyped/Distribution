@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object davStrings {
   @js.native
-  sealed trait `DAV:` extends js.Object
+  sealed trait DAVColon extends js.Object
   
   @js.native
   sealed trait Partial extends js.Object
@@ -21,22 +21,22 @@ object davStrings {
   sealed trait carddav extends js.Object
   
   @js.native
-  sealed trait `http://appleDOTcom/ns/ical/` extends js.Object
+  sealed trait httpColonSlashSlashappleDotcomSlashnsSlashicalSlash extends js.Object
   
   @js.native
-  sealed trait `http://calendarserverDOTorg/ns/` extends js.Object
+  sealed trait httpColonSlashSlashcalendarserverDotorgSlashnsSlash extends js.Object
   
   @js.native
-  sealed trait `urn:ietf:params:xml:ns:caldav` extends js.Object
+  sealed trait urnColonietfColonparamsColonxmlColonnsColoncaldav extends js.Object
   
   @js.native
-  sealed trait `urn:ietf:params:xml:ns:carddav` extends js.Object
+  sealed trait urnColonietfColonparamsColonxmlColonnsColoncarddav extends js.Object
   
   @js.native
   sealed trait webdav extends js.Object
   
   @scala.inline
-  def `DAV:`: `DAV:` = "DAV:".asInstanceOf[`DAV:`]
+  def DAVColon: DAVColon = "DAV:".asInstanceOf[DAVColon]
   @scala.inline
   def Partial: Partial = "Partial".asInstanceOf[Partial]
   @scala.inline
@@ -46,13 +46,13 @@ object davStrings {
   @scala.inline
   def carddav: carddav = "carddav".asInstanceOf[carddav]
   @scala.inline
-  def `http://appleDOTcom/ns/ical/`: `http://appleDOTcom/ns/ical/` = "http://apple.com/ns/ical/".asInstanceOf[`http://appleDOTcom/ns/ical/`]
+  def httpColonSlashSlashappleDotcomSlashnsSlashicalSlash: httpColonSlashSlashappleDotcomSlashnsSlashicalSlash = "http://apple.com/ns/ical/".asInstanceOf[httpColonSlashSlashappleDotcomSlashnsSlashicalSlash]
   @scala.inline
-  def `http://calendarserverDOTorg/ns/`: `http://calendarserverDOTorg/ns/` = "http://calendarserver.org/ns/".asInstanceOf[`http://calendarserverDOTorg/ns/`]
+  def httpColonSlashSlashcalendarserverDotorgSlashnsSlash: httpColonSlashSlashcalendarserverDotorgSlashnsSlash = "http://calendarserver.org/ns/".asInstanceOf[httpColonSlashSlashcalendarserverDotorgSlashnsSlash]
   @scala.inline
-  def `urn:ietf:params:xml:ns:caldav`: `urn:ietf:params:xml:ns:caldav` = "urn:ietf:params:xml:ns:caldav".asInstanceOf[`urn:ietf:params:xml:ns:caldav`]
+  def urnColonietfColonparamsColonxmlColonnsColoncaldav: urnColonietfColonparamsColonxmlColonnsColoncaldav = "urn:ietf:params:xml:ns:caldav".asInstanceOf[urnColonietfColonparamsColonxmlColonnsColoncaldav]
   @scala.inline
-  def `urn:ietf:params:xml:ns:carddav`: `urn:ietf:params:xml:ns:carddav` = "urn:ietf:params:xml:ns:carddav".asInstanceOf[`urn:ietf:params:xml:ns:carddav`]
+  def urnColonietfColonparamsColonxmlColonnsColoncarddav: urnColonietfColonparamsColonxmlColonnsColoncarddav = "urn:ietf:params:xml:ns:carddav".asInstanceOf[urnColonietfColonparamsColonxmlColonnsColoncarddav]
   @scala.inline
   def webdav: webdav = "webdav".asInstanceOf[webdav]
 }

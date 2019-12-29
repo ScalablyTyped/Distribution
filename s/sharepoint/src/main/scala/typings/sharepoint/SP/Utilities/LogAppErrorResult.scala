@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Utilities.LogAppErrorResult.accessDenied
-import typings.sharepoint.SP.Utilities.LogAppErrorResult.errorsThrottled
-import typings.sharepoint.SP.Utilities.LogAppErrorResult.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -45,7 +45,7 @@ object Twitter extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Gets Tweets from Twitter Mentions
   		* @param config Object An object which contains the following config options:
   		*/

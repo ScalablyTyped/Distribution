@@ -1,10 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.GeocoderLocationType.APPROXIMATE
-import typings.googlemaps.google.maps.GeocoderLocationType.GEOMETRIC_CENTER
-import typings.googlemaps.google.maps.GeocoderLocationType.RANGE_INTERPOLATED
-import typings.googlemaps.google.maps.GeocoderLocationType.ROOFTOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.Abusive
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.General
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.Spam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

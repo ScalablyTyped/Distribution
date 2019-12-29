@@ -33,7 +33,8 @@ class Cell protected () extends js.Object {
   var TopPadding: Double = js.native
   var VerticalAlignment: WdCellVerticalAlignment = js.native
   var Width: Double = js.native
-  var `Word.Cell_typekey`: Cell = js.native
+  @JSName("Word.Cell_typekey")
+  var WordDotCell_typekey: Cell = js.native
   var WordWrap: Boolean = js.native
   def AutoSum(): Unit = js.native
   def Delete(): Unit = js.native

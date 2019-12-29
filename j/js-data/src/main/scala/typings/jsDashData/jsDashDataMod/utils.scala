@@ -10,9 +10,10 @@ import scala.scalajs.js.annotation._
 object utils extends js.Object {
   var Promise: PromiseConstructor = js.native
   var isBrowser: Boolean = js.native
-  def `_`(dest: js.Any, src: js.Any): Unit = js.native
   def _forRelation(opts: js.Any, `def`: js.Any, fn: js.Function, ctx: js.Object): Unit = js.native
   def _getIndex(list: js.Array[_], relation: js.Any): Double = js.native
+  @JSName("_")
+  def _underscore(dest: js.Any, src: js.Any): Unit = js.native
   def addHiddenPropsToTarget(target: js.Object, props: js.Object): Unit = js.native
   def areDifferent(a: js.Object, b: js.Object, opts: js.Any): Boolean = js.native
   def classCallCheck(instance: js.Object, ctor: js.Function): Unit = js.native

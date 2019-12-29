@@ -1,5 +1,7 @@
 package typings.draftDashJs.draftDashJsMod.Draft.Model.Decorators
 
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState
 import typings.immutable.Immutable.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,10 +22,7 @@ trait DraftDecoratorType extends js.Object {
   /**
     * Given a `ContentBlock`, return an immutable List of decorator keys.
     */
-  def getDecorations(
-    block: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock,
-    contentState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState
-  ): List[String]
+  def getDecorations(block: ContentBlock, contentState: ContentState): List[String]
   /**
     * Given a decorator key, optionally return the props to use when rendering
     * this decorated range.
@@ -35,7 +34,7 @@ object DraftDecoratorType {
   @scala.inline
   def apply(
     getComponentForKey: String => js.Function,
-    getDecorations: (typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock, typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState) => List[String],
+    getDecorations: (ContentBlock, ContentState) => List[String],
     getPropsForKey: String => js.Any
   ): DraftDecoratorType = {
     val __obj = js.Dynamic.literal(getComponentForKey = js.Any.fromFunction1(getComponentForKey), getDecorations = js.Any.fromFunction2(getDecorations), getPropsForKey = js.Any.fromFunction1(getPropsForKey))

@@ -1,14 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.DataValidationOperator.between
-import typings.officeDashJs.Excel.DataValidationOperator.equalTo
-import typings.officeDashJs.Excel.DataValidationOperator.greaterThan
-import typings.officeDashJs.Excel.DataValidationOperator.greaterThanOrEqualTo
-import typings.officeDashJs.Excel.DataValidationOperator.lessThan
-import typings.officeDashJs.Excel.DataValidationOperator.lessThanOrEqualTo
-import typings.officeDashJs.Excel.DataValidationOperator.notBetween
-import typings.officeDashJs.Excel.DataValidationOperator.notEqualTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

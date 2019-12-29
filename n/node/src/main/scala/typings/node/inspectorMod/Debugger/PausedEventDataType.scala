@@ -32,23 +32,23 @@ trait PausedEventDataType extends js.Object {
   /**
     * Hit breakpoints IDs
     */
-  var hitBreakpoints: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var hitBreakpoints: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Pause reason.
     */
-  var reason: java.lang.String
+  var reason: String
 }
 
 object PausedEventDataType {
   @scala.inline
   def apply(
     callFrames: js.Array[CallFrame],
-    reason: java.lang.String,
+    reason: String,
     asyncCallStackTraceId: StackTraceId = null,
     asyncStackTrace: StackTrace = null,
     asyncStackTraceId: StackTraceId = null,
     data: js.Object = null,
-    hitBreakpoints: js.Array[java.lang.String] = null
+    hitBreakpoints: js.Array[String] = null
   ): PausedEventDataType = {
     val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     if (asyncCallStackTraceId != null) __obj.updateDynamic("asyncCallStackTraceId")(asyncCallStackTraceId.asInstanceOf[js.Any])

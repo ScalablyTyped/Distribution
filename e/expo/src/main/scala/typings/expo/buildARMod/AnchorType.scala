@@ -1,9 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.AnchorType.Face
-import typings.expo.buildARMod.AnchorType.Image
-import typings.expo.buildARMod.AnchorType.Plane
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

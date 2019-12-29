@@ -20,7 +20,7 @@ trait Scale extends js.Object {
   /** Specify scale direction of circular gauge. See
     * @Default {Clockwise}
     */
-  var direction: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction | String] = js.undefined
+  var direction: js.UndefOr[Direction | String] = js.undefined
   /** Specify representing state of circular gauge
     * @Default {Array}
     */
@@ -121,7 +121,7 @@ object Scale {
     backgroundColor: String = null,
     border: ScalesBorder = null,
     customLabels: js.Array[ScalesCustomLabel] = null,
-    direction: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction | String = null,
+    direction: Direction | String = null,
     indicators: js.Array[ScalesIndicator] = null,
     labels: js.Array[ScalesLabel] = null,
     majorIntervalValue: Int | Double = null,

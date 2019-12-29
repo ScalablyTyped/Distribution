@@ -1,11 +1,6 @@
 package typings.winrt.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.System.VirtualKeyModifiers.control
-import typings.winrt.Windows.System.VirtualKeyModifiers.menu
-import typings.winrt.Windows.System.VirtualKeyModifiers.none
-import typings.winrt.Windows.System.VirtualKeyModifiers.shift
-import typings.winrt.Windows.System.VirtualKeyModifiers.windows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.openui5.sap.m
 
+import typings.jquery.JQueryStatic
 import typings.openui5.Anon_TouchInitDict
 import typings.openui5.sap.ui.core.Element
 import typings.std.TouchList
@@ -17,7 +18,7 @@ object touch extends js.Object {
     * @param vElement A jQuery element or an element reference or an element id.
     * @returns The number of touches related with the given element.
     */
-  def countContained(oTouchList: TouchList, vElement: typings.jquery.JQueryStatic): Double = js.native
+  def countContained(oTouchList: TouchList, vElement: JQueryStatic): Double = js.native
   def countContained(oTouchList: TouchList, vElement: Element): Double = js.native
   def find(oTouchList: TouchList, oTouch: Double): js.Any = js.native
   /**

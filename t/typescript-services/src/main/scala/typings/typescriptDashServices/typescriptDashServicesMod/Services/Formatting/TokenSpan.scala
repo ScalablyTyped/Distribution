@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
+import typings.typescriptDashServices.TypeScript.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class TokenSpan protected ()
   extends typings.typescriptDashServices.TypeScript.Services.Formatting.TokenSpan {
-  def this(kind: typings.typescriptDashServices.TypeScript.SyntaxKind, start: Double, length: Double) = this()
+  def this(kind: SyntaxKind, start: Double, length: Double) = this()
 }
 

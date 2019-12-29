@@ -31,6 +31,7 @@ class ContextualMenuBase protected () extends BaseComponent[IContextualMenuProps
   var _getSubmenuProps: js.Any = js.native
   var _gotMouseMove: js.Any = js.native
   var _host: js.Any = js.native
+  var _id: js.Any = js.native
   /**
     * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
     */

@@ -11,10 +11,6 @@ import typings.atIonicCliDashFramework.definitionsMod.CommandPathItem
 import typings.atIonicCliDashFramework.definitionsMod.ICommand
 import typings.atIonicCliDashFramework.definitionsMod.INamespace
 import typings.atIonicCliDashFramework.definitionsMod.NamespaceMapGetter
-import typings.atIonicCliDashFramework.libCommandMod.BaseCommand
-import typings.atIonicCliDashFramework.libCommandMod.BaseNamespace
-import typings.atIonicCliDashFramework.libCommandMod.Command
-import typings.atIonicCliDashFramework.libCommandMod.Namespace
 import typings.atIonicUtilsDashObject.atIonicUtilsDashObjectMod.AliasedMap
 import typings.std.Partial
 import scala.scalajs.js

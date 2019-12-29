@@ -254,7 +254,7 @@ trait Series extends js.Object {
   /** Specifies the type of the series to render in chart.
     * @Default {column. see Type}
     */
-  var `type`: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Chart.Type | String] = js.undefined
+  var `type`: js.UndefOr[Type | String] = js.undefined
   /** Controls the visibility of the series.
     * @Default {visible}
     */
@@ -354,7 +354,7 @@ object Series {
     startAngle: Int | Double = null,
     tooltip: SeriesTooltip = null,
     trendlines: js.Array[SeriesTrendline] = null,
-    `type`: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type | String = null,
+    `type`: Type | String = null,
     visibility: String = null,
     visibleOnLegend: String = null,
     xAxisName: String = null,

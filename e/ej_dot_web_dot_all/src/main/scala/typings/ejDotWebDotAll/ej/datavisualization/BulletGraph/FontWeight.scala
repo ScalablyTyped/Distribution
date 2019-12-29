@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Bold
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Bolder
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Lighter
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

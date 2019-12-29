@@ -1,6 +1,6 @@
 package typings.puppeteer.puppeteerMod
 
-import typings.puppeteer.puppeteerNumbers.`true`
+import typings.puppeteer.puppeteerBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

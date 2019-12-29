@@ -3,13 +3,6 @@ package typings.winrtDashUwp.Windows.Storage
 import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
-import typings.winrtDashUwp.Windows.Storage.Compression.CompressAlgorithm
-import typings.winrtDashUwp.Windows.Storage.Compression.CompressAlgorithm.invalidAlgorithm
-import typings.winrtDashUwp.Windows.Storage.Compression.CompressAlgorithm.lzms
-import typings.winrtDashUwp.Windows.Storage.Compression.CompressAlgorithm.mszip
-import typings.winrtDashUwp.Windows.Storage.Compression.CompressAlgorithm.nullAlgorithm
-import typings.winrtDashUwp.Windows.Storage.Compression.CompressAlgorithm.xpress
-import typings.winrtDashUwp.Windows.Storage.Compression.CompressAlgorithm.xpressHuff
 import typings.winrtDashUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtDashUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtDashUwp.Windows.Storage.Streams.IOutputStream

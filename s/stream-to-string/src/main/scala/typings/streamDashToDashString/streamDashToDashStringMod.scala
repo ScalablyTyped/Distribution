@@ -2,7 +2,6 @@ package typings.streamDashToDashString
 
 import typings.node.NodeJS.ReadableStream
 import typings.std.Error
-import typings.streamDashToDashString.streamDashToDashStringMod.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

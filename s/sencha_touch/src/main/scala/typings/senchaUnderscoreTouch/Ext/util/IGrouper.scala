@@ -14,7 +14,7 @@ trait IGrouper extends ISorter {
   /** [Method] Returns the value of sortProperty
   		* @returns String
   		*/
-  var getSortProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSortProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function) */
   var groupFn: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of groupFn
@@ -24,9 +24,9 @@ trait IGrouper extends ISorter {
   /** [Method] Sets the value of sortProperty
   		* @param sortProperty String The new value.
   		*/
-  var setSortProperty: js.UndefOr[js.Function1[/* sortProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSortProperty: js.UndefOr[js.Function1[/* sortProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var sortProperty: js.UndefOr[java.lang.String] = js.undefined
+  var sortProperty: js.UndefOr[String] = js.undefined
 }
 
 object IGrouper {
@@ -39,15 +39,15 @@ object IGrouper {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    direction: java.lang.String = null,
-    extend: java.lang.String = null,
-    getDirection: () => java.lang.String = null,
+    direction: String = null,
+    extend: String = null,
+    getDirection: () => String = null,
     getGroupFn: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getProperty: () => java.lang.String = null,
-    getRoot: () => java.lang.String = null,
-    getSortProperty: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getProperty: () => String = null,
+    getRoot: () => String = null,
+    getSortProperty: () => String = null,
     getSorterFn: () => _ = null,
     getTransform: () => _ = null,
     groupFn: js.Any = null,
@@ -56,19 +56,19 @@ object IGrouper {
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    property: java.lang.String = null,
-    root: java.lang.String = null,
+    property: String = null,
+    root: String = null,
     self: IClass = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setGroupFn: /* groupFn */ js.UndefOr[js.Any] => Unit = null,
     setId: /* id */ js.UndefOr[js.Any] => Unit = null,
-    setProperty: /* property */ js.UndefOr[java.lang.String] => Unit = null,
-    setRoot: /* root */ js.UndefOr[java.lang.String] => Unit = null,
-    setSortProperty: /* sortProperty */ js.UndefOr[java.lang.String] => Unit = null,
+    setProperty: /* property */ js.UndefOr[String] => Unit = null,
+    setRoot: /* root */ js.UndefOr[String] => Unit = null,
+    setSortProperty: /* sortProperty */ js.UndefOr[String] => Unit = null,
     setSorterFn: /* sorterFn */ js.UndefOr[js.Any] => Unit = null,
     setTransform: /* transform */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sortProperty: java.lang.String = null,
+    sortProperty: String = null,
     sorterFn: js.Any = null,
     statics: js.Any = null,
     toggle: () => Unit = null,

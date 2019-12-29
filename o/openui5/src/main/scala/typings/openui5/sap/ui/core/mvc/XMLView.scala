@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core.mvc
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType
-import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.CONTROLS
-import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.VIEWXML
-import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

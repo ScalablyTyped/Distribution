@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGPreserveAspectRatio")
 @js.native
 class SVGPreserveAspectRatio protected () extends js.Object {
-  var `MSHTML.SVGPreserveAspectRatio_typekey`: SVGPreserveAspectRatio = js.native
+  @JSName("MSHTML.SVGPreserveAspectRatio_typekey")
+  var MSHTMLDotSVGPreserveAspectRatio_typekey: SVGPreserveAspectRatio = js.native
   var align: Double = js.native
   var meetOrSlice: Double = js.native
 }

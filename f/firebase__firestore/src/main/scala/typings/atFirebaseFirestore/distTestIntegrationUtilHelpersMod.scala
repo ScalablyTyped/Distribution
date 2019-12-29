@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseFirestore.atFirebaseFirestoreStrings.`test-db2`
 import typings.atFirebaseFirestore.distSrcApiCredentialsMod.EmptyCredentialsProvider
 import typings.atFirebaseFirestore.distSrcAuthUserMod.User
-import typings.atFirebaseFirestore.distTestIntegrationUtilHelpersMod.ApiDescribe
-import typings.atFirebaseFirestore.distTestIntegrationUtilHelpersMod.ApiSuiteFunction
-import typings.atFirebaseFirestore.distTestIntegrationUtilHelpersMod.MockCredentialsProvider
 import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.CollectionReference
 import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentData
 import typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentReference
@@ -45,11 +42,11 @@ object distTestIntegrationUtilHelpersMod extends js.Object {
   val apiDescribe: ApiDescribe = js.native
   def isPersistenceAvailable(): Boolean = js.native
   def isRunningAgainstEmulator(): Boolean = js.native
-  def toChangesArray(docSet: QuerySnapshot): js.Array[DocumentData] = js.native
-  def toChangesArray(docSet: QuerySnapshot, options: SnapshotListenOptions): js.Array[DocumentData] = js.native
-  def toDataArray(docSet: QuerySnapshot): js.Array[DocumentData] = js.native
-  def toDataMap(docSet: QuerySnapshot): StringDictionary[DocumentData] = js.native
-  def toIds(docSet: QuerySnapshot): js.Array[String] = js.native
+  def toChangesArray(docSet: QuerySnapshot[DocumentData]): js.Array[DocumentData] = js.native
+  def toChangesArray(docSet: QuerySnapshot[DocumentData], options: SnapshotListenOptions): js.Array[DocumentData] = js.native
+  def toDataArray(docSet: QuerySnapshot[DocumentData]): js.Array[DocumentData] = js.native
+  def toDataMap(docSet: QuerySnapshot[DocumentData]): StringDictionary[DocumentData] = js.native
+  def toIds(docSet: QuerySnapshot[DocumentData]): js.Array[String] = js.native
   def withAlternateTestDb(persistence: Boolean, fn: js.Function1[/* db */ FirebaseFirestore, js.Promise[Unit]]): js.Promise[Unit] = js.native
   def withMockCredentialProviderTestDb(
     persistence: Boolean,
@@ -62,13 +59,13 @@ object distTestIntegrationUtilHelpersMod extends js.Object {
   def withTestCollection(
     persistence: Boolean,
     docs: StringDictionary[DocumentData],
-    fn: js.Function1[/* collection */ CollectionReference, js.Promise[Unit]]
+    fn: js.Function1[/* collection */ CollectionReference[DocumentData], js.Promise[Unit]]
   ): js.Promise[Unit] = js.native
   def withTestCollectionSettings(
     persistence: Boolean,
     settings: Settings,
     docs: StringDictionary[DocumentData],
-    fn: js.Function1[/* collection */ CollectionReference, js.Promise[Unit]]
+    fn: js.Function1[/* collection */ CollectionReference[DocumentData], js.Promise[Unit]]
   ): js.Promise[Unit] = js.native
   def withTestDb(persistence: Boolean, fn: js.Function1[/* db */ FirebaseFirestore, js.Promise[Unit]]): js.Promise[Unit] = js.native
   def withTestDbs(
@@ -83,16 +80,19 @@ object distTestIntegrationUtilHelpersMod extends js.Object {
     numDbs: Double,
     fn: js.Function1[/* db */ js.Array[FirebaseFirestore], js.Promise[Unit]]
   ): js.Promise[Unit] = js.native
-  def withTestDoc(persistence: Boolean, fn: js.Function1[/* doc */ DocumentReference, js.Promise[Unit]]): js.Promise[Unit] = js.native
+  def withTestDoc(
+    persistence: Boolean,
+    fn: js.Function1[/* doc */ DocumentReference[DocumentData], js.Promise[Unit]]
+  ): js.Promise[Unit] = js.native
   def withTestDocAndInitialData(
     persistence: Boolean,
     initialData: Null,
-    fn: js.Function1[/* doc */ DocumentReference, js.Promise[Unit]]
+    fn: js.Function1[/* doc */ DocumentReference[DocumentData], js.Promise[Unit]]
   ): js.Promise[Unit] = js.native
   def withTestDocAndInitialData(
     persistence: Boolean,
     initialData: DocumentData,
-    fn: js.Function1[/* doc */ DocumentReference, js.Promise[Unit]]
+    fn: js.Function1[/* doc */ DocumentReference[DocumentData], js.Promise[Unit]]
   ): js.Promise[Unit] = js.native
   type ApiSuiteFunction = js.Function2[
     /* message */ String, 

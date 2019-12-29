@@ -9,8 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IAbstractDock
-  extends typings.extjs.Ext.layout.component.IComponent {
+trait IAbstractDock extends IComponent {
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
   		* @param ownerContext Object
   		*/
@@ -32,11 +31,7 @@ trait IAbstractDock
   		* @returns Ext.Component[] An array of components.
   		*/
   var getDockedItems: js.UndefOr[
-    js.Function2[
-      /* order */ js.UndefOr[java.lang.String], 
-      /* beforeBody */ js.UndefOr[Boolean], 
-      Array
-    ]
+    js.Function2[/* order */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean], Array]
   ] = js.undefined
   /** [Method] Returns an object describing how this layout manages the size of the given component
   		* @param item Object
@@ -84,11 +79,11 @@ object IAbstractDock {
     configureItem: /* item */ js.UndefOr[typings.extjs.Ext.IComponent] => Unit = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
-    getDockedItems: (/* order */ js.UndefOr[java.lang.String], /* beforeBody */ js.UndefOr[Boolean]) => Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getDockedItems: (/* order */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean]) => Array = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy = null,
     getLayoutItems: () => Array = null,
     getRenderTarget: () => IElement = null,

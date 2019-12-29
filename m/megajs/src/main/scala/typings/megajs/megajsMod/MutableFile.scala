@@ -1,6 +1,6 @@
 package typings.megajs.megajsMod
 
-import typings.megajs.megajsNumbers.`true`
+import typings.megajs.megajsBooleans.`true`
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream

@@ -1,8 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCRProType.OCRDT_File
-import typings.dwt.EnumDWT_OCRProType.OCRDT_Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotPager
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotPager.Mode.Both
-import typings.ejDotWebDotAll.ej.PivotPager.Mode.Categorical
-import typings.ejDotWebDotAll.ej.PivotPager.Mode.Series
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

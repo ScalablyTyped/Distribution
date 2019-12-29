@@ -1,7 +1,7 @@
 package typings.leafletDashDraw.leafletMod.Control
 
 import typings.leaflet.leafletMod.FeatureGroup
-import typings.leafletDashDraw.leafletDashDrawNumbers.`false`
+import typings.leafletDashDraw.leafletDashDrawBooleans.`false`
 import typings.leafletDashDraw.leafletMod.DrawOptions.EditHandlerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

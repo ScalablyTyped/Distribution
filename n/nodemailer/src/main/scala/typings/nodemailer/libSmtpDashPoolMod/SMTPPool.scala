@@ -2,8 +2,8 @@ package typings.nodemailer.libSmtpDashPoolMod
 
 import typings.node.eventsMod.EventEmitter
 import typings.nodemailer.libSharedMod.Logger
+import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerMod.Transport
-import typings.nodemailer.nodemailerNumbers.`true`
 import typings.nodemailer.nodemailerStrings.idle
 import typings.std.Error
 import scala.scalajs.js

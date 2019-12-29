@@ -14,7 +14,8 @@ class RecentFile protected () extends js.Object {
   val Parent: js.Any = js.native
   val Path: String = js.native
   var ReadOnly: Boolean = js.native
-  var `Word.RecentFile_typekey`: RecentFile = js.native
+  @JSName("Word.RecentFile_typekey")
+  var WordDotRecentFile_typekey: RecentFile = js.native
   def Delete(): Unit = js.native
   def Open(): Document = js.native
 }

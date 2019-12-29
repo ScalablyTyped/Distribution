@@ -1,15 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.FilterOperators.contains
-import typings.ejDotWebDotAll.ej.FilterOperators.endsWith
-import typings.ejDotWebDotAll.ej.FilterOperators.equal
-import typings.ejDotWebDotAll.ej.FilterOperators.greaterThan
-import typings.ejDotWebDotAll.ej.FilterOperators.greaterThanOrEqual
-import typings.ejDotWebDotAll.ej.FilterOperators.lessThan
-import typings.ejDotWebDotAll.ej.FilterOperators.lessThanOrEqual
-import typings.ejDotWebDotAll.ej.FilterOperators.notEqual
-import typings.ejDotWebDotAll.ej.FilterOperators.startsWith
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.GateStatus.Failed
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.GateStatus.InProgress
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.GateStatus.None
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.GateStatus.Pending
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.GateStatus.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

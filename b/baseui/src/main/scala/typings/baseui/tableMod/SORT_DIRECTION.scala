@@ -1,8 +1,6 @@
 package typings.baseui.tableMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.baseui.tableMod.SORT_DIRECTION.ASC
-import typings.baseui.tableMod.SORT_DIRECTION.DESC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

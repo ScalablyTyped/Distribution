@@ -1,12 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ComponentDatatype.BYTE
-import typings.cesium.cesiumMod.ComponentDatatype.DOUBLE
-import typings.cesium.cesiumMod.ComponentDatatype.FLOAT
-import typings.cesium.cesiumMod.ComponentDatatype.SHORT
-import typings.cesium.cesiumMod.ComponentDatatype.UNSIGNED_BYTE
-import typings.cesium.cesiumMod.ComponentDatatype.UNSIGNED_SHORT
 import typings.std.ArrayBuffer
 import typings.std.Float32Array
 import typings.std.Float64Array

@@ -1,6 +1,5 @@
 package typings.openui5.sap.ui.model
 
-import typings.openui5.sap.ui.model.`type`.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

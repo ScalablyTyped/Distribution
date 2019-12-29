@@ -17,7 +17,8 @@ class CanvasShapes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.CanvasShapes_typekey`: CanvasShapes = js.native
+  @JSName("Word.CanvasShapes_typekey")
+  var WordDotCanvasShapes_typekey: CanvasShapes = js.native
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
   def AddCurve(SafeArrayOfPoints: js.Any): Shape = js.native

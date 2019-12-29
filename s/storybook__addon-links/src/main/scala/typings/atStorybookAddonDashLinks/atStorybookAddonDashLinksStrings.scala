@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object atStorybookAddonDashLinksStrings {
   @js.native
-  sealed trait `storybook/links` extends js.Object
+  sealed trait storybookSlashlinks extends js.Object
   
   @scala.inline
-  def `storybook/links`: `storybook/links` = "storybook/links".asInstanceOf[`storybook/links`]
+  def storybookSlashlinks: storybookSlashlinks = "storybook/links".asInstanceOf[storybookSlashlinks]
 }
 

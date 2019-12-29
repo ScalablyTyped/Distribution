@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLMSCSSKeyframesRule")
 @js.native
 class HTMLMSCSSKeyframesRule protected () extends js.Object {
-  var `MSHTML.HTMLMSCSSKeyframesRule_typekey`: HTMLMSCSSKeyframesRule = js.native
+  @JSName("MSHTML.HTMLMSCSSKeyframesRule_typekey")
+  var MSHTMLDotHTMLMSCSSKeyframesRule_typekey: HTMLMSCSSKeyframesRule = js.native
   @JSName("cssRules")
   val cssRules_Original: IHTMLStyleSheetRulesCollection = js.native
   var cssText: String = js.native

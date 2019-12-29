@@ -6,7 +6,7 @@ import typings.atHapiHapi.Anon_Concurrent
 import typings.atHapiHapi.Anon_False
 import typings.atHapiHapi.Anon_IsCaseSensitive
 import typings.atHapiHapi.Anon_Parser
-import typings.atHapiHapi.atHapiHapiNumbers.`false`
+import typings.atHapiHapi.atHapiHapiBooleans.`false`
 import typings.atHapiMimos.atHapiMimosMod.MimosOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

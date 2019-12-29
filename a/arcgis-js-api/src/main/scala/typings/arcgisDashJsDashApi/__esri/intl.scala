@@ -1,6 +1,31 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-month-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.year
 import typings.std.Date
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.NumberFormatOptions
@@ -20,11 +45,13 @@ trait intl extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#convertDateFormatToIntlOptions)
     *
-    * @param format A web map date format string to convert.  **Possible Values**: short-date | short-date-short-time | short-date-short-time-24 | short-date-long-time | short-date-long-time-24 | short-date-le | short-date-le-short-time | short-date-le-short-time-24 | short-date-le-long-time | short-date-le-long-time-24 | long-month-day-year | long-month-day-year-short-time | long-month-day-year-short-time-24 | long-month-day-year-long-time | long-month-day-year-long-time-24 | day-short-month-year | day-short-month-year-short-time | day-short-month-year-short-time-24 | day-short-month-year-long-time | day-short-month-year-long-time-24 | long-date | long-date-short-time | long-date-short-time-24 | long-date-long-time | long-date-long-time-24 | long-month-year | short-month-year | year | short-time | long-time
+    * @param format A web map date format string to convert.
     *
     */
   def convertDateFormatToIntlOptions(): DateTimeFormatOptions = js.native
-  def convertDateFormatToIntlOptions(format: String): DateTimeFormatOptions = js.native
+  def convertDateFormatToIntlOptions(
+    format: `short-date` | `short-date-short-time` | `short-date-short-time-24` | `short-date-long-time` | `short-date-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year | `short-time` | `long-time`
+  ): DateTimeFormatOptions = js.native
   /**
     * Converts a [NumberFormat](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat) to an [Intl.NumberFormatOptions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat#Parameters) object.
     *

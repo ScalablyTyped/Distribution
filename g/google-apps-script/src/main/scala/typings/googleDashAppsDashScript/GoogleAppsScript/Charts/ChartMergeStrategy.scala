@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartMergeStrategy.MERGE_COLUMNS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartMergeStrategy.MERGE_ROWS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

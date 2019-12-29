@@ -1,5 +1,6 @@
 package typings.next.distNextDashServerServerNextDashServerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.next.Anon_AmpBindInitData
 import typings.next.Anon_Amphtml
 import typings.next.Anon_False
@@ -19,7 +20,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Server extends js.Object {
   var __sendPayload: js.Any = js.native
-  val _isLikeServerless: js.Any = js.native
   var buildId: String = js.native
   var compression: js.UndefOr[js.Any] = js.native
   var customRoutes: js.UndefOr[Anon_Redirects] = js.native
@@ -27,6 +27,7 @@ trait Server extends js.Object {
   var distDir: String = js.native
   var dynamicRoutes: js.UndefOr[js.Array[Anon_Match]] = js.native
   var findPageComponents: js.Any = js.native
+  var getPagePath: js.Any = js.native
   /**
     * Resolves `API` request, in development builds on demand
     * @param req http request
@@ -42,15 +43,18 @@ trait Server extends js.Object {
   var nextConfig: NextConfig = js.native
   var onErrorMiddleware: js.UndefOr[js.Any] = js.native
   var pagesDir: js.UndefOr[String] = js.native
-  var pagesManifest: String = js.native
+  var pagesManifest: js.UndefOr[StringDictionary[String]] = js.native
   var publicDir: String = js.native
   var quiet: Boolean = js.native
   var renderOpts: Anon_AmpBindInitData = js.native
   var renderToHTMLWithComponents: js.Any = js.native
   var router: typings.next.distNextDashServerServerRouterMod.default = js.native
+  var serverBuildDir: String = js.native
   /* protected */ def _beforeCatchAllRender(_req: IncomingMessage, _res: ServerResponse, _params: Params, _parsedUrl: UrlWithParsedQuery): js.Promise[Boolean] = js.native
+  /* private */ def _isLikeServerless(): js.Any = js.native
   /* protected */ def close(): js.Promise[Unit] = js.native
   /* protected */ def currentPhase(): String = js.native
+  /* protected */ def ensureApiPage(pathname: String): js.Promise[Unit] = js.native
   /* protected */ def generatePublicRoutes(): js.Array[Route] = js.native
   /* protected */ def generateRoutes(): js.Array[Route] = js.native
   /* protected */ def getCustomRoutes(): js.Any = js.native
@@ -61,6 +65,7 @@ trait Server extends js.Object {
     /* parsedUrl */ js.UndefOr[UrlWithParsedQuery], 
     js.Promise[Unit]
   ] = js.native
+  /* protected */ def hasPage(pathname: String): js.Promise[Boolean] = js.native
   def prepare(): js.Promise[Unit] = js.native
   /* protected */ def readBuildId(): String = js.native
   def render(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native
@@ -91,11 +96,6 @@ trait Server extends js.Object {
     query: ParsedUrlQuery,
     hasAmphtmlDataOnlyHasAmp: Anon_Amphtml
   ): js.Promise[String | Null] = js.native
-  /**
-    * Resolves path to resolver function
-    * @param pathname path of request
-    */
-  /* protected */ def resolveApiRequest(pathname: String): js.Promise[String | Null] = js.native
   /* protected */ def run(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.Promise[Unit] = js.native
   /* protected */ def sendHTML(req: IncomingMessage, res: ServerResponse, html: String): js.Promise[Unit] = js.native
   def serveStatic(req: IncomingMessage, res: ServerResponse, path: String): js.Promise[Unit] = js.native

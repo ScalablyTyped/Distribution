@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.disabled
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.disabledByPolicy
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.enabled
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.enabledByPolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

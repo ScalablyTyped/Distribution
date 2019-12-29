@@ -1,7 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`, `
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`-`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`-_`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`Comma `
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`data-ktp-execute-target`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`data-ktp-target`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`ktp-layer-id`
@@ -23,11 +23,11 @@ import scala.scalajs.js.annotation._
 object libUtilitiesKeytipsKeytipConstantsMod extends js.Object {
   val DATAKTP_EXECUTE_TARGET: `data-ktp-execute-target` = js.native
   val DATAKTP_TARGET: `data-ktp-target` = js.native
-  val KTP_ARIA_SEPARATOR: `, ` = js.native
+  val KTP_ARIA_SEPARATOR: `Comma ` = js.native
   val KTP_FULL_PREFIX: String = js.native
   val KTP_LAYER_ID: `ktp-layer-id` = js.native
   val KTP_PREFIX: ktp = js.native
-  val KTP_SEPARATOR: `-` = js.native
+  val KTP_SEPARATOR: `-_` = js.native
   @js.native
   object KeytipEvents extends js.Object {
     val ENTER_KEYTIP_MODE: enterKeytipMode = js.native

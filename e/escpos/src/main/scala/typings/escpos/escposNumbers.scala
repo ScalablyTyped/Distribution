@@ -41,9 +41,6 @@ object escposNumbers {
   @js.native
   sealed trait `51` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -68,7 +65,5 @@ object escposNumbers {
   def `50`: `50` = 50.asInstanceOf[`50`]
   @scala.inline
   def `51`: `51` = 51.asInstanceOf[`51`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

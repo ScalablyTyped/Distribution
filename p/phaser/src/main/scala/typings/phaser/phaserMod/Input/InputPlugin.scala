@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Input
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,6 +42,6 @@ class InputPlugin protected ()
     * 
     * @param scene A reference to the Scene that this Input Plugin is responsible for.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
+  def this(scene: Scene) = this()
 }
 

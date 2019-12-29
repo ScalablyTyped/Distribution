@@ -1,6 +1,6 @@
 package typings.activexDashExcel.Excel
 
-import typings.activexDashExcel.activexDashExcelNumbers.`true`
+import typings.activexDashExcel.activexDashExcelBooleans.`true`
 import typings.activexDashOffice.Office.MsoEnvelope
 import typings.activexDashOffice.Office.MsoLanguageID
 import typings.activexDashOffice.Office.Script
@@ -41,7 +41,8 @@ class Worksheet protected () extends Sheet {
   var EnableOutlining: Boolean = js.native
   var EnablePivotTable: Boolean = js.native
   var EnableSelection: XlEnableSelection = js.native
-  var `Excel.Worksheet_typekey`: Worksheet = js.native
+  @JSName("Excel.Worksheet_typekey")
+  var ExcelDotWorksheet_typekey: Worksheet = js.native
   val FilterMode: Boolean = js.native
   @JSName("HPageBreaks")
   val HPageBreaks_Original: HPageBreaks = js.native

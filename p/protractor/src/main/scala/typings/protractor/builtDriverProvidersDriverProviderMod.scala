@@ -1,7 +1,6 @@
 package typings.protractor
 
 import typings.protractor.builtConfigMod.Config
-import typings.protractor.builtDriverProvidersDriverProviderMod.DriverProvider
 import typings.q.qMod.Promise
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebDriver
 import scala.scalajs.js

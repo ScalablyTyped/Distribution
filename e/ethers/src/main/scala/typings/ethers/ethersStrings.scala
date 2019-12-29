@@ -13,10 +13,7 @@ object ethersStrings {
   sealed trait `0x0000000000000000000000000000000000000000000000000000000000000000` extends js.Object
   
   @js.native
-  sealed trait `4DOT0DOT0-betaDOT3` extends js.Object
-  
-  @js.native
-  sealed trait BACKSLASHu039E extends js.Object
+  sealed trait `4Dot0Dot0-betaDot3` extends js.Object
   
   @js.native
   sealed trait CALL_EXCEPTION extends js.Object
@@ -52,7 +49,7 @@ object ethersStrings {
   sealed trait call extends js.Object
   
   @js.native
-  sealed trait `m/44_quote/60_quote/0_quote/0/0` extends js.Object
+  sealed trait mSlash44ApostropheSlash60ApostropheSlash0ApostropheSlash0Slash0 extends js.Object
   
   @js.native
   sealed trait node extends js.Object
@@ -66,14 +63,15 @@ object ethersStrings {
   @js.native
   sealed trait transaction extends js.Object
   
+  @js.native
+  sealed trait Ξ extends js.Object
+  
   @scala.inline
   def `0x0000000000000000000000000000000000000000`: `0x0000000000000000000000000000000000000000` = "0x0000000000000000000000000000000000000000".asInstanceOf[`0x0000000000000000000000000000000000000000`]
   @scala.inline
   def `0x0000000000000000000000000000000000000000000000000000000000000000`: `0x0000000000000000000000000000000000000000000000000000000000000000` = "0x0000000000000000000000000000000000000000000000000000000000000000".asInstanceOf[`0x0000000000000000000000000000000000000000000000000000000000000000`]
   @scala.inline
-  def `4DOT0DOT0-betaDOT3`: `4DOT0DOT0-betaDOT3` = "4.0.0-beta.3".asInstanceOf[`4DOT0DOT0-betaDOT3`]
-  @scala.inline
-  def BACKSLASHu039E: BACKSLASHu039E = "\u039E".asInstanceOf[BACKSLASHu039E]
+  def `4Dot0Dot0-betaDot3`: `4Dot0Dot0-betaDot3` = "4.0.0-beta.3".asInstanceOf[`4Dot0Dot0-betaDot3`]
   @scala.inline
   def CALL_EXCEPTION: CALL_EXCEPTION = "CALL_EXCEPTION".asInstanceOf[CALL_EXCEPTION]
   @scala.inline
@@ -97,7 +95,7 @@ object ethersStrings {
   @scala.inline
   def call: call = "call".asInstanceOf[call]
   @scala.inline
-  def `m/44_quote/60_quote/0_quote/0/0`: `m/44_quote/60_quote/0_quote/0/0` = "m/44'/60'/0'/0/0".asInstanceOf[`m/44_quote/60_quote/0_quote/0/0`]
+  def mSlash44ApostropheSlash60ApostropheSlash0ApostropheSlash0Slash0: mSlash44ApostropheSlash60ApostropheSlash0ApostropheSlash0Slash0 = "m/44'/60'/0'/0/0".asInstanceOf[mSlash44ApostropheSlash60ApostropheSlash0ApostropheSlash0Slash0]
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline
@@ -106,5 +104,7 @@ object ethersStrings {
   def sha512: sha512 = "sha512".asInstanceOf[sha512]
   @scala.inline
   def transaction: transaction = "transaction".asInstanceOf[transaction]
+  @scala.inline
+  def Ξ: Ξ = "\u039E".asInstanceOf[Ξ]
 }
 

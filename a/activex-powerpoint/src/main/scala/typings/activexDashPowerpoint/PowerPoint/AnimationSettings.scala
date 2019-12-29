@@ -21,7 +21,8 @@ class AnimationSettings protected () extends js.Object {
   var EntryEffect: PpEntryEffect = js.native
   val Parent: js.Any = js.native
   val PlaySettings: typings.activexDashPowerpoint.PowerPoint.PlaySettings = js.native
-  var `PowerPoint.AnimationSettings_typekey`: AnimationSettings = js.native
+  @JSName("PowerPoint.AnimationSettings_typekey")
+  var PowerPointDotAnimationSettings_typekey: AnimationSettings = js.native
   val SoundEffect: typings.activexDashPowerpoint.PowerPoint.SoundEffect = js.native
   var TextLevelEffect: PpTextLevelEffect = js.native
   var TextUnitEffect: PpTextUnitEffect = js.native

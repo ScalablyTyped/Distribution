@@ -9,37 +9,37 @@ import scala.scalajs.js.annotation._
 
 trait IRequest extends IBase {
   /** [Config Option] (String) */
-  var action: js.UndefOr[java.lang.String] = js.undefined
+  var action: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var params: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object IRequest {
   @scala.inline
   def apply(
-    action: java.lang.String = null,
+    action: String = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IRequest = null,
-    method: java.lang.String = null,
+    method: String = null,
     mixins: js.Any = null,
     params: js.Any = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    url: java.lang.String = null,
+    url: String = null,
     uses: Array = null
   ): IRequest = {
     val __obj = js.Dynamic.literal()

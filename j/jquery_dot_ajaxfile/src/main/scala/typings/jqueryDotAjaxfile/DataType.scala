@@ -1,9 +1,6 @@
 package typings.jqueryDotAjaxfile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jqueryDotAjaxfile.DataType.Json
-import typings.jqueryDotAjaxfile.DataType.Text
-import typings.jqueryDotAjaxfile.DataType.Xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

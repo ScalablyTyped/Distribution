@@ -14,7 +14,6 @@ trait Extension extends js.Object {
   var paint_Original: Paint = js.native
   var support: js.UndefOr[Support] = js.native
   def paint(
-    `this`: ExtensionContext,
     $element: js.UndefOr[JQuery[HTMLElement]],
     layout: js.UndefOr[Layout],
     qDimensionInfo: js.UndefOr[NxDimensionInfo],

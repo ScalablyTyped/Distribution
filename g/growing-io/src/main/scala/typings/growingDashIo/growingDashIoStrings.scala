@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object growingDashIoStrings {
   @js.native
-  sealed trait appDOTset extends js.Object
+  sealed trait appDotset extends js.Object
   
   @js.native
   sealed trait clearUserId extends js.Object
@@ -15,16 +15,16 @@ object growingDashIoStrings {
   sealed trait config extends js.Object
   
   @js.native
-  sealed trait evarDOTset extends js.Object
+  sealed trait evarDotset extends js.Object
   
   @js.native
   sealed trait init extends js.Object
   
   @js.native
-  sealed trait pageDOTset extends js.Object
+  sealed trait pageDotset extends js.Object
   
   @js.native
-  sealed trait peopleDOTset extends js.Object
+  sealed trait peopleDotset extends js.Object
   
   @js.native
   sealed trait sendPage extends js.Object
@@ -36,22 +36,22 @@ object growingDashIoStrings {
   sealed trait track extends js.Object
   
   @js.native
-  sealed trait visitDOTset extends js.Object
+  sealed trait visitDotset extends js.Object
   
   @scala.inline
-  def appDOTset: appDOTset = "app.set".asInstanceOf[appDOTset]
+  def appDotset: appDotset = "app.set".asInstanceOf[appDotset]
   @scala.inline
   def clearUserId: clearUserId = "clearUserId".asInstanceOf[clearUserId]
   @scala.inline
   def config: config = "config".asInstanceOf[config]
   @scala.inline
-  def evarDOTset: evarDOTset = "evar.set".asInstanceOf[evarDOTset]
+  def evarDotset: evarDotset = "evar.set".asInstanceOf[evarDotset]
   @scala.inline
   def init: init = "init".asInstanceOf[init]
   @scala.inline
-  def pageDOTset: pageDOTset = "page.set".asInstanceOf[pageDOTset]
+  def pageDotset: pageDotset = "page.set".asInstanceOf[pageDotset]
   @scala.inline
-  def peopleDOTset: peopleDOTset = "people.set".asInstanceOf[peopleDOTset]
+  def peopleDotset: peopleDotset = "people.set".asInstanceOf[peopleDotset]
   @scala.inline
   def sendPage: sendPage = "sendPage".asInstanceOf[sendPage]
   @scala.inline
@@ -59,6 +59,6 @@ object growingDashIoStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
-  def visitDOTset: visitDOTset = "visit.set".asInstanceOf[visitDOTset]
+  def visitDotset: visitDotset = "visit.set".asInstanceOf[visitDotset]
 }
 

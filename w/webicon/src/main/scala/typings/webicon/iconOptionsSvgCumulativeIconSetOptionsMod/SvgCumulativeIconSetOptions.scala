@@ -2,7 +2,7 @@ package typings.webicon.iconOptionsSvgCumulativeIconSetOptionsMod
 
 import typings.webicon.iconOptionsIconSetOptionsMod.IconSetOptions
 import typings.webicon.webUrlConfigMod.UrlConfig
-import typings.webicon.webiconNumbers.`true`
+import typings.webicon.webiconBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

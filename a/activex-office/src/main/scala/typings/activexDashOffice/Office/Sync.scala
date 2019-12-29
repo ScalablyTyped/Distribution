@@ -12,7 +12,8 @@ class Sync protected () extends js.Object {
   val Creator: Double = js.native
   val ErrorType: MsoSyncErrorType = js.native
   val LastSyncTime: VarDate = js.native
-  var `Office.Sync_typekey`: Sync = js.native
+  @JSName("Office.Sync_typekey")
+  var OfficeDotSync_typekey: Sync = js.native
   val Parent: js.Any = js.native
   val Status: MsoSyncStatusType = js.native
   val WorkspaceLastChangedBy: String = js.native

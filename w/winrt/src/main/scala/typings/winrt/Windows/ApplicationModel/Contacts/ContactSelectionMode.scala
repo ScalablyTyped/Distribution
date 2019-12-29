@@ -1,8 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Contacts.ContactSelectionMode.contacts
-import typings.winrt.Windows.ApplicationModel.Contacts.ContactSelectionMode.fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

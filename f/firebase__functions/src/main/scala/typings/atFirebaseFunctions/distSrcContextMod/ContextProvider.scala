@@ -1,5 +1,6 @@
 package typings.atFirebaseFunctions.distSrcContextMod
 
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternalName
 import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
 import typings.atFirebaseMessagingDashTypes.atFirebaseMessagingDashTypesMod.FirebaseMessagingName
 import scala.scalajs.js
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ContextProvider protected () extends js.Object {
   def this(
-    authProvider: Provider[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
-      ],
+    authProvider: Provider[FirebaseAuthInternalName],
     messagingProvider: Provider[FirebaseMessagingName]
   ) = this()
   var auth: js.Any = js.native

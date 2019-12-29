@@ -1,7 +1,5 @@
 package typings.androiduix.android
 
-import typings.androiduix.android.database.DataSetObserver
-import typings.androiduix.android.database.Observable
 import typings.androiduix.java.util.ArrayList
 import scala.scalajs.js
 import scala.scalajs.js.`|`

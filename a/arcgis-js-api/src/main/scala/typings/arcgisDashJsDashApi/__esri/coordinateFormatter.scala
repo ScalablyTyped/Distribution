@@ -1,7 +1,16 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`latitude-band-indicators`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`new-180-in-zone-01`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`new-180-in-zone-60`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`north-south-indicators`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`old-180-in-zone-01`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`old-180-in-zone-60`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.automatic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dd
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ddm
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,10 +62,19 @@ trait coordinateFormatter extends js.Object {
     *
     * @param coordinates The MGRS notation string for the coordinates.
     * @param spatialReference A spatial reference object representing a [geographic coordinate system](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm) referenced by the MGRS coordinates. If `null`, WGS84 will be used.
-    * @param conversionMode The mode used by the given MGRS coordinates.  **Possible Values**: automatic | new-180-in-zone-01 | new-180-in-zone-60 | old-180-in-zone-01 | old-180-in-zone-60
+    * @param conversionMode The mode used by the given MGRS coordinates.
     *
     */
-  def fromMgrs(coordinates: String, spatialReference: SpatialReference, conversionMode: String): Point = js.native
+  @JSName("fromMgrs")
+  def fromMgrs_automatic(coordinates: String, spatialReference: SpatialReference, conversionMode: automatic): Point = js.native
+  @JSName("fromMgrs")
+  def fromMgrs_new180inzone01(coordinates: String, spatialReference: SpatialReference, conversionMode: `new-180-in-zone-01`): Point = js.native
+  @JSName("fromMgrs")
+  def fromMgrs_new180inzone60(coordinates: String, spatialReference: SpatialReference, conversionMode: `new-180-in-zone-60`): Point = js.native
+  @JSName("fromMgrs")
+  def fromMgrs_old180inzone01(coordinates: String, spatialReference: SpatialReference, conversionMode: `old-180-in-zone-01`): Point = js.native
+  @JSName("fromMgrs")
+  def fromMgrs_old180inzone60(coordinates: String, spatialReference: SpatialReference, conversionMode: `old-180-in-zone-60`): Point = js.native
   /**
     * Parses coordinates in United States National Grid (USNG) notation, and returns a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing that location.  The spatial reference provided must have an ellipsoid and datum matching those used by the source of the USNG string. If no spatial reference is provided and the USNG string is suffixed with "(NAD 27)", it is assumed the USNG string is referenced to NAD 27. If no spatial reference is provided and no such suffix exists, it is assumed the USNG string is referenced to WGS84.  USNG notation examples:
     *   * 13TFJ 23 59
@@ -80,10 +98,17 @@ trait coordinateFormatter extends js.Object {
     *
     * @param coordinates The UTM notation string for the coordinates.
     * @param spatialReference A spatial reference object representing a [geographic coordinate system](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm) that the UTM coordinates are in. If `null`, WGS84 will be used.
-    * @param conversionMode The latitude notation scheme used by the given UTM coordinates, either a latitudinal band, or a hemisphere designator.  **Possible Values**: latitude-band-indicators | north-south-indicators
+    * @param conversionMode The latitude notation scheme used by the given UTM coordinates, either a latitudinal band, or a hemisphere designator.
     *
     */
-  def fromUtm(coordinates: String, spatialReference: SpatialReference, conversionMode: String): Point = js.native
+  @JSName("fromUtm")
+  def fromUtm_latitudebandindicators(
+    coordinates: String,
+    spatialReference: SpatialReference,
+    conversionMode: `latitude-band-indicators`
+  ): Point = js.native
+  @JSName("fromUtm")
+  def fromUtm_northsouthindicators(coordinates: String, spatialReference: SpatialReference, conversionMode: `north-south-indicators`): Point = js.native
   /**
     * Indicates if all dependencies of this module have been loaded.
     *
@@ -107,7 +132,7 @@ trait coordinateFormatter extends js.Object {
     *
     *
     */
-  def load(): IPromise[_] = js.native
+  def load(): js.Promise[_] = js.native
   /**
     * Returns formatted coordinates in latitude/longitude notation representing the given point's location.  The latitude/longitude string will contain a space separating the latitude from the longitude value, and the characters 'N' or 'S', and 'E' and 'W', to indicate the hemisphere of each value. The string will also contain spaces separating the components (degrees, minutes, seconds) of each value. The precision of the output is controlled by both the `format` and `decimalPlaces` parameters.  For example:
     *
@@ -130,12 +155,22 @@ trait coordinateFormatter extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#toLatitudeLongitude)
     *
     * @param point The location to be represented as a formatted latitude/longitude string. The point's [spatial reference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#spatialReference) should either be WGS84 or another [geographic coordinate system](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm).
-    * @param format The mode to use when formatting the latitude/longitude string.  **Possible Values**: dd | ddm | dms
+    * @param format The mode to use when formatting the latitude/longitude string.
     * @param decimalPlaces The number of decimal places to use, it should be an integer from 0 to 16.
     *
     */
-  def toLatitudeLongitude(point: Point, format: String): String = js.native
-  def toLatitudeLongitude(point: Point, format: String, decimalPlaces: Double): String = js.native
+  @JSName("toLatitudeLongitude")
+  def toLatitudeLongitude_dd(point: Point, format: dd): String = js.native
+  @JSName("toLatitudeLongitude")
+  def toLatitudeLongitude_dd(point: Point, format: dd, decimalPlaces: Double): String = js.native
+  @JSName("toLatitudeLongitude")
+  def toLatitudeLongitude_ddm(point: Point, format: ddm): String = js.native
+  @JSName("toLatitudeLongitude")
+  def toLatitudeLongitude_ddm(point: Point, format: ddm, decimalPlaces: Double): String = js.native
+  @JSName("toLatitudeLongitude")
+  def toLatitudeLongitude_dms(point: Point, format: dms): String = js.native
+  @JSName("toLatitudeLongitude")
+  def toLatitudeLongitude_dms(point: Point, format: dms, decimalPlaces: Double): String = js.native
   /**
     * Returns formatted coordinates in Military Grid Reference System (MGRS) notation representing the given point's location.  Note that the choice between zone 01 and 60 has an impact only when generating the MGRS notation string for a point with longitude of exactly 180deg. The precision value controls the number of digits used to represent each numerical easting and northing value within the MGRS string.  For example:
     *
@@ -158,14 +193,41 @@ trait coordinateFormatter extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#toMgrs)
     *
     * @param point The location to be represented in MGRS notation. The point's [spatial reference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#spatialReference) should either be WGS84 or another [geographic coordinate system](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm)
-    * @param conversionMode The mode to use for the returned MGRS notation string.  **Possible Values**: automatic | new-180-in-zone-01 | new-180-in-zone-60 | old-180-in-zone-01 | old-180-in-zone-60
+    * @param conversionMode The mode to use for the returned MGRS notation string.
     * @param precision The precision with which to represent the coordinates, it should be an integer from 0 to 8.
     * @param addSpaces If `false`, the generated string will contain no spaces. If `true`, a space separates the grid zone designator, the 100km square identifier, and the numerical easting and northing values.
     *
     */
-  def toMgrs(point: Point, conversionMode: String): String = js.native
-  def toMgrs(point: Point, conversionMode: String, precision: Double): String = js.native
-  def toMgrs(point: Point, conversionMode: String, precision: Double, addSpaces: Boolean): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_automatic(point: Point, conversionMode: automatic): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double, addSpaces: Boolean): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Double): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Double, addSpaces: Boolean): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double, addSpaces: Boolean): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double, addSpaces: Boolean): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Double): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Double, addSpaces: Boolean): String = js.native
   /**
     * Returns formatted coordinates in United States National Grid (USNG) notation representing the given point's location. The precision value controls the number of digits used to represent each numerical easting and northing value within the USNG string.  For example:
     *
@@ -212,12 +274,18 @@ trait coordinateFormatter extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#toUtm)
     *
     * @param point The location to be represented in UTM notation. The point's [spatial reference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#spatialReference) should either be WGS84 or another [geographic coordinate system](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm)
-    * @param conversionMode The latitude notation scheme to use in the returned UTM notation string, either a latitudinal band, or a hemisphere designator.  **Possible Values**: latitude-band-indicators | north-south-indicators
+    * @param conversionMode The latitude notation scheme to use in the returned UTM notation string, either a latitudinal band, or a hemisphere designator.
     * @param addSpaces If `false`, the generated string will contain no spaces. If `true`, a space separates the UTM zone and latitude designator and each numerical easting and northing value.
     *
     */
-  def toUtm(point: Point, conversionMode: String): String = js.native
-  def toUtm(point: Point, conversionMode: String, addSpaces: Boolean): String = js.native
+  @JSName("toUtm")
+  def toUtm_latitudebandindicators(point: Point, conversionMode: `latitude-band-indicators`): String = js.native
+  @JSName("toUtm")
+  def toUtm_latitudebandindicators(point: Point, conversionMode: `latitude-band-indicators`, addSpaces: Boolean): String = js.native
+  @JSName("toUtm")
+  def toUtm_northsouthindicators(point: Point, conversionMode: `north-south-indicators`): String = js.native
+  @JSName("toUtm")
+  def toUtm_northsouthindicators(point: Point, conversionMode: `north-south-indicators`, addSpaces: Boolean): String = js.native
 }
 
 @JSGlobal("__esri.coordinateFormatter")

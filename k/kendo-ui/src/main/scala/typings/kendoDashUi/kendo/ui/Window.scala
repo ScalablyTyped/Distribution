@@ -16,11 +16,11 @@ class Window protected () extends Widget {
   var wrapper: JQuery = js.native
   def center(): Window = js.native
   def close(): Window = js.native
-  def content(): String = js.native
+  def content(): Window = js.native
   def content(content: String): Window = js.native
   def content(content: JQuery): Window = js.native
   @JSName("content")
-  def content_Window(): Window = js.native
+  def content_String(): String = js.native
   def isMaximized(): Boolean = js.native
   def isMinimized(): Boolean = js.native
   def maximize(): Window = js.native
@@ -30,10 +30,10 @@ class Window protected () extends Widget {
   def refresh(options: js.Any): Window = js.native
   def restore(): Window = js.native
   def setOptions(options: js.Any): Unit = js.native
-  def title(): String = js.native
+  def title(): Window = js.native
   def title(text: String): Window = js.native
   @JSName("title")
-  def title_Window(): Window = js.native
+  def title_String(): String = js.native
   def toFront(): Window = js.native
   def toggleMaximization(): Window = js.native
   def unpin(): Unit = js.native

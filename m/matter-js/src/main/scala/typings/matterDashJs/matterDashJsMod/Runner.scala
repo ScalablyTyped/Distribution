@@ -46,6 +46,7 @@ object Runner extends js.Object {
     * @method create
     * @param {} options
     */
+  def create(): Runner = js.native
   def create(options: IRunnerOptions): Runner = js.native
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.

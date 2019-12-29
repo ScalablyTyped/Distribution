@@ -1,9 +1,6 @@
 package typings.heremaps.H.map.Icon
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.map.Icon.State.ERROR
-import typings.heremaps.H.map.Icon.State.LOADING
-import typings.heremaps.H.map.Icon.State.READY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

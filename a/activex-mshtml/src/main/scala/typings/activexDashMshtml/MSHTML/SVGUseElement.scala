@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGUseElement")
 @js.native
 class SVGUseElement protected () extends js.Object {
-  var `MSHTML.SVGUseElement_typekey`: SVGUseElement = js.native
+  @JSName("MSHTML.SVGUseElement_typekey")
+  var MSHTMLDotSVGUseElement_typekey: SVGUseElement = js.native
   var animatedInstanceRoot: ISVGElementInstance = js.native
   val farthestViewportElement: ISVGElement = js.native
   var focusable: SVGAnimatedEnumeration = js.native

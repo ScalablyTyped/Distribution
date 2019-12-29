@@ -1,14 +1,6 @@
 package typings.dwt.dynamsoft.BarcodeReader
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_ARGB_8888
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_Binary
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_BinaryInverted
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_GrayScaled
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_NV21
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_RGB_555
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_RGB_565
-import typings.dwt.dynamsoft.BarcodeReader.EnumImagePixelFormat.IPF_RGB_888
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,6 @@ import typings.shopifyDashPrime.distModelsRecurringUnderscoreChargeMod.Recurring
 import typings.shopifyDashPrime.distOptionsBaseMod.DateOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.FieldOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.ListOptions
-import typings.shopifyDashPrime.distServicesRecurringUnderscoreChargesMod.RecurringCharges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

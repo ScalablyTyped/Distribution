@@ -1,18 +1,18 @@
 package typings.extjs.Ext.picker
 
+import typings.extjs.Ext.view.IBoundList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITime
-  extends typings.extjs.Ext.view.IBoundList {
+trait ITime extends IBoundList {
   /** [Method] Focuses a node in the view
   		* @param rec Object
   		*/
   @JSName("focusNode")
   var focusNode_ITime: js.UndefOr[js.Function1[/* rec */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var format: js.UndefOr[java.lang.String] = js.undefined
+  var format: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var increment: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Date) */
@@ -34,9 +34,9 @@ trait ITime
 object ITime {
   @scala.inline
   def apply(
-    IBoundList: typings.extjs.Ext.view.IBoundList = null,
+    IBoundList: IBoundList = null,
     focusNode: /* rec */ js.UndefOr[js.Any] => Unit = null,
-    format: java.lang.String = null,
+    format: String = null,
     increment: Int | Double = null,
     maxValue: js.Any = null,
     minValue: js.Any = null,

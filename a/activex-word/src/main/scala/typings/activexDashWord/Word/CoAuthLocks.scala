@@ -11,7 +11,8 @@ class CoAuthLocks protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.CoAuthLocks_typekey`: CoAuthLocks = js.native
+  @JSName("Word.CoAuthLocks_typekey")
+  var WordDotCoAuthLocks_typekey: CoAuthLocks = js.native
   /** @param Word.WdLockType [Type=1] */
   def Add(Range: js.Any): CoAuthLock = js.native
   def Add(Range: js.Any, Type: WdLockType): CoAuthLock = js.native

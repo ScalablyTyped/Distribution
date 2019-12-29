@@ -20,7 +20,8 @@ class Shapes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Shapes_typekey`: Shapes = js.native
+  @JSName("Word.Shapes_typekey")
+  var WordDotShapes_typekey: Shapes = js.native
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: js.Any): Shape = js.native
   def AddCanvas(Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native

@@ -10,7 +10,8 @@ class CustomXMLPrefixMapping protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val NamespaceURI: String = js.native
-  var `Office.CustomXMLPrefixMapping_typekey`: CustomXMLPrefixMapping = js.native
+  @JSName("Office.CustomXMLPrefixMapping_typekey")
+  var OfficeDotCustomXMLPrefixMapping_typekey: CustomXMLPrefixMapping = js.native
   val Parent: js.Any = js.native
   val Prefix: String = js.native
 }

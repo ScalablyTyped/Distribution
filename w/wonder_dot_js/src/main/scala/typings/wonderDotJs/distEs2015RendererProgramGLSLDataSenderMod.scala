@@ -4,7 +4,6 @@ import typings.std.Float32Array
 import typings.wonderDotJs.distEs2015MathMatrix3Mod.Matrix3
 import typings.wonderDotJs.distEs2015MathMatrix4Mod.Matrix4
 import typings.wonderDotJs.distEs2015RendererBufferArrayBufferMod.ArrayBuffer
-import typings.wonderDotJs.distEs2015RendererProgramGLSLDataSenderMod.GLSLDataSender
 import typings.wonderDotJs.distEs2015RendererProgramProgramMod.Program
 import typings.wonderDotJs.distEs2015StructureColorMod.Color
 import scala.scalajs.js

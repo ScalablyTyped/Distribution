@@ -2,11 +2,6 @@ package typings.popmotion
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.popmotion.libActionMod.Action
-import typings.popmotion.libActionVectorMod.ActionFactory
-import typings.popmotion.libActionVectorMod.Props
-import typings.popmotion.libActionVectorMod.TypeTest
-import typings.popmotion.libActionVectorMod.TypeTestMap
-import typings.popmotion.libActionVectorMod.VectorActionFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

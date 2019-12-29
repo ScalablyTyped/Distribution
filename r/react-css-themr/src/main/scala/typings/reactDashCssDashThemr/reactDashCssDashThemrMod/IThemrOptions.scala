@@ -1,7 +1,7 @@
 package typings.reactDashCssDashThemr.reactDashCssDashThemrMod
 
 import typings.reactDashCssDashThemr.Anon_Theme
-import typings.reactDashCssDashThemr.reactDashCssDashThemrNumbers.`false`
+import typings.reactDashCssDashThemr.reactDashCssDashThemrBooleans.`false`
 import typings.reactDashCssDashThemr.reactDashCssDashThemrStrings.deeply
 import typings.reactDashCssDashThemr.reactDashCssDashThemrStrings.softly
 import scala.scalajs.js

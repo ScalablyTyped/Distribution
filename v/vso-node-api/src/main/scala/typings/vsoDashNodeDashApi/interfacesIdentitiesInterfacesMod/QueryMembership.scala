@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.Direct
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.Expanded
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.ExpandedDown
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.ExpandedUp
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

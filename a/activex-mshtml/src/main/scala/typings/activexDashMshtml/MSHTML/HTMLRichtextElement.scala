@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLRichtextElement")
 @js.native
 class HTMLRichtextElement protected () extends js.Object {
-  var `MSHTML.HTMLRichtextElement_typekey`: HTMLRichtextElement = js.native
+  @JSName("MSHTML.HTMLRichtextElement_typekey")
+  var MSHTMLDotHTMLRichtextElement_typekey: HTMLRichtextElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.WidgetScope.Collection_User
-import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.WidgetScope.Project_Team
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.reactDashAsync
 
-import typings.reactDashAsync.reactDashAsyncNumbers.`false`
+import typings.reactDashAsync.reactDashAsyncBooleans.`false`
 import typings.reactDashAsync.reactDashAsyncStrings.initial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

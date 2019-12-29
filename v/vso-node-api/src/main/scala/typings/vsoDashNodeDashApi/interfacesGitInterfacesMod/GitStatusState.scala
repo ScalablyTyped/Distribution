@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Error
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Failed
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.NotApplicable
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.NotSet
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Pending
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,6 @@ import typings.wonderDotJs.distEs2015ComponentRendererRendererComponentMod.Rende
 import typings.wonderDotJs.distEs2015ComponentTransformTransformMod.Transform
 import typings.wonderDotJs.distEs2015CoreComponentMod.Component
 import typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject
-import typings.wonderDotJs.distEs2015CoreEntityObjectManagerComponentManagerMod.ComponentManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,7 +4,7 @@ import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreGeometryMod.Geometry
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMaterialsMaterialMod.Material
-import typings.three.threeNumbers.`true`
+import typings.three.threeBooleans.`true`
 import typings.three.threeStrings.LineLoop
 import typings.three.threeStrings.LineSegments
 import scala.scalajs.js

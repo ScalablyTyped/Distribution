@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object ebmlStrings {
   @js.native
-  sealed trait `1 - bzlib,` extends js.Object
+  sealed trait `1 - bzlibComma` extends js.Object
   
   @js.native
   sealed trait `2 - lzo1x` extends js.Object
@@ -52,7 +52,7 @@ object ebmlStrings {
   sealed trait u extends TagType
   
   @scala.inline
-  def `1 - bzlib,`: `1 - bzlib,` = "1 - bzlib,".asInstanceOf[`1 - bzlib,`]
+  def `1 - bzlibComma`: `1 - bzlibComma` = "1 - bzlib,".asInstanceOf[`1 - bzlibComma`]
   @scala.inline
   def `2 - lzo1x`: `2 - lzo1x` = "2 - lzo1x".asInstanceOf[`2 - lzo1x`]
   @scala.inline

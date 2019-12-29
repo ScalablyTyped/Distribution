@@ -5,7 +5,6 @@ import typings.react.reactMod.Context
 import typings.react.reactMod.ContextType
 import typings.reactDashNavigation.reactDashNavigationMod.SupportedThemes
 import typings.reactDashNavigationDashDrawer.libTypescriptSrcTypesMod.DrawerNavigatorItemsProps
-import typings.reactDashNavigationDashDrawer.libTypescriptSrcViewsDrawerNavigatorItemsMod.DrawerNavigatorItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

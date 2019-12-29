@@ -3,7 +3,6 @@ package typings.shopifyDashPrime
 import typings.shopifyDashPrime.distInfrastructureMod.BaseService
 import typings.shopifyDashPrime.distModelsUsageUnderscoreChargeMod.UsageCharge
 import typings.shopifyDashPrime.distOptionsBaseMod.FieldOptions
-import typings.shopifyDashPrime.distServicesUsageUnderscoreChargesMod.UsageCharges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Bold
-import typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Lighter
-import typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Regular
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

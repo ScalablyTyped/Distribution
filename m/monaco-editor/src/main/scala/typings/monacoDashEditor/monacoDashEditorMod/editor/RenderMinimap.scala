@@ -1,11 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderMinimap.Large
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderMinimap.LargeBlocks
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderMinimap.None
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderMinimap.Small
-import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderMinimap.SmallBlocks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.atTestingDashLibraryDom
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atTestingDashLibraryDom.atTestingDashLibraryDomNumbers.`false`
+import typings.atTestingDashLibraryDom.atTestingDashLibraryDomBooleans.`false`
 import typings.atTestingDashLibraryDom.configMod.Config
 import typings.atTestingDashLibraryDom.configMod.ConfigFn
 import typings.atTestingDashLibraryDom.eventsMod.CreateObject
@@ -30,6 +30,7 @@ import typings.atTestingDashLibraryDom.queryDashHelpersMod.AllByAttribute
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.BuiltQueryMethods
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.GetAllBy
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.QueryByAttribute
+import typings.atTestingDashLibraryDom.screenMod.Screen
 import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
 import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
 import typings.std.Element
@@ -96,6 +97,7 @@ object atTestingDashLibraryDomMod extends js.Object {
   val queryByTestId: QueryByBoundAttribute = js.native
   val queryByText: QueryByText = js.native
   val queryByTitle: QueryByBoundAttribute = js.native
+  val screen: Screen[Typeofqueries] = js.native
   def buildQueries[Arguments /* <: js.Array[_] */](
     queryByAll: GetAllBy[Arguments],
     getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],

@@ -8,79 +8,19 @@ import scala.scalajs.js.annotation._
 
 object solidityDashParserDashAntlrStrings {
   @js.native
-  sealed trait `!=` extends BinOp
+  sealed trait `-Equalssign` extends BinOp
   
   @js.native
-  sealed trait `%` extends BinOp
+  sealed trait `-_` extends BinOp
   
   @js.native
-  sealed trait `%=` extends BinOp
+  sealed trait Ampersand extends BinOp
   
   @js.native
-  sealed trait `&` extends BinOp
+  sealed trait AmpersandAmpersand extends BinOp
   
   @js.native
-  sealed trait `&&` extends BinOp
-  
-  @js.native
-  sealed trait `&=` extends BinOp
-  
-  @js.native
-  sealed trait `*` extends BinOp
-  
-  @js.native
-  sealed trait `**` extends BinOp
-  
-  @js.native
-  sealed trait `*=` extends BinOp
-  
-  @js.native
-  sealed trait `+` extends BinOp
-  
-  @js.native
-  sealed trait `+=` extends BinOp
-  
-  @js.native
-  sealed trait `-` extends BinOp
-  
-  @js.native
-  sealed trait `-=` extends BinOp
-  
-  @js.native
-  sealed trait `/` extends BinOp
-  
-  @js.native
-  sealed trait `/=` extends BinOp
-  
-  @js.native
-  sealed trait `<` extends BinOp
-  
-  @js.native
-  sealed trait `<<` extends BinOp
-  
-  @js.native
-  sealed trait `<<=` extends BinOp
-  
-  @js.native
-  sealed trait `<=` extends BinOp
-  
-  @js.native
-  sealed trait `=` extends BinOp
-  
-  @js.native
-  sealed trait `==` extends BinOp
-  
-  @js.native
-  sealed trait `>` extends BinOp
-  
-  @js.native
-  sealed trait `>=` extends BinOp
-  
-  @js.native
-  sealed trait `>>` extends BinOp
-  
-  @js.native
-  sealed trait `>>=` extends BinOp
+  sealed trait AmpersandEqualssign extends BinOp
   
   @js.native
   sealed trait ArrayTypeName extends ASTNodeTypeString
@@ -123,6 +63,15 @@ object solidityDashParserDashAntlrStrings {
   
   @js.native
   sealed trait AssemblySwitch extends ASTNodeTypeString
+  
+  @js.native
+  sealed trait Asterisk extends BinOp
+  
+  @js.native
+  sealed trait AsteriskAsterisk extends BinOp
+  
+  @js.native
+  sealed trait AsteriskEqualssign extends BinOp
   
   @js.native
   sealed trait BinaryOperation extends ASTNodeTypeString
@@ -173,7 +122,16 @@ object solidityDashParserDashAntlrStrings {
   sealed trait EnumValue extends ASTNodeTypeString
   
   @js.native
+  sealed trait Equalssign extends BinOp
+  
+  @js.native
+  sealed trait EqualssignEqualssign extends BinOp
+  
+  @js.native
   sealed trait EventDefinition extends ASTNodeTypeString
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssign extends BinOp
   
   @js.native
   sealed trait ExpressionStatement extends ASTNodeTypeString
@@ -189,6 +147,18 @@ object solidityDashParserDashAntlrStrings {
   
   @js.native
   sealed trait FunctionTypeName extends ASTNodeTypeString
+  
+  @js.native
+  sealed trait Greaterthansign extends BinOp
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends BinOp
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansign extends BinOp
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansignEqualssign extends BinOp
   
   @js.native
   sealed trait HexLiteral extends ASTNodeTypeString
@@ -221,6 +191,18 @@ object solidityDashParserDashAntlrStrings {
   sealed trait LabelDefinition extends ASTNodeTypeString
   
   @js.native
+  sealed trait Lessthansign extends BinOp
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends BinOp
+  
+  @js.native
+  sealed trait LessthansignLessthansign extends BinOp
+  
+  @js.native
+  sealed trait LessthansignLessthansignEqualssign extends BinOp
+  
+  @js.native
   sealed trait Mapping extends ASTNodeTypeString
   
   @js.native
@@ -236,6 +218,18 @@ object solidityDashParserDashAntlrStrings {
   sealed trait NumberLiteral extends ASTNodeTypeString
   
   @js.native
+  sealed trait Percentsign extends BinOp
+  
+  @js.native
+  sealed trait PercentsignEqualssign extends BinOp
+  
+  @js.native
+  sealed trait Plussign extends BinOp
+  
+  @js.native
+  sealed trait PlussignEqualssign extends BinOp
+  
+  @js.native
   sealed trait PragmaDirective extends ASTNodeTypeString
   
   @js.native
@@ -246,6 +240,12 @@ object solidityDashParserDashAntlrStrings {
   
   @js.native
   sealed trait ReturnStatement extends ASTNodeTypeString
+  
+  @js.native
+  sealed trait Slash extends BinOp
+  
+  @js.native
+  sealed trait SlashEqualssign extends BinOp
   
   @js.native
   sealed trait SourceUnit extends ASTNodeTypeString
@@ -287,13 +287,22 @@ object solidityDashParserDashAntlrStrings {
   sealed trait VariableDeclarationStatement extends ASTNodeTypeString
   
   @js.native
+  sealed trait Verticalline extends BinOp
+  
+  @js.native
+  sealed trait VerticallineEqualssign extends BinOp
+  
+  @js.native
+  sealed trait VerticallineVerticalline extends BinOp
+  
+  @js.native
   sealed trait WhileStatement extends ASTNodeTypeString
   
   @js.native
-  sealed trait `^=` extends BinOp
+  sealed trait ^ extends BinOp
   
   @js.native
-  sealed trait `_backtick^_backtick` extends BinOp
+  sealed trait `^Equalssign` extends BinOp
   
   @js.native
   sealed trait constant extends js.Object
@@ -352,65 +361,16 @@ object solidityDashParserDashAntlrStrings {
   @js.native
   sealed trait years extends js.Object
   
-  @js.native
-  sealed trait `|` extends BinOp
-  
-  @js.native
-  sealed trait `|=` extends BinOp
-  
-  @js.native
-  sealed trait `||` extends BinOp
-  
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  def `-Equalssign`: `-Equalssign` = "-=".asInstanceOf[`-Equalssign`]
   @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `%=`: `%=` = "%=".asInstanceOf[`%=`]
+  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   @scala.inline
-  def `&`: `&` = "&".asInstanceOf[`&`]
+  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
   @scala.inline
-  def `&&`: `&&` = "&&".asInstanceOf[`&&`]
-  @scala.inline
-  def `&=`: `&=` = "&=".asInstanceOf[`&=`]
-  @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
-  def `**`: `**` = "**".asInstanceOf[`**`]
-  @scala.inline
-  def `*=`: `*=` = "*=".asInstanceOf[`*=`]
-  @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
-  @scala.inline
-  def `+=`: `+=` = "+=".asInstanceOf[`+=`]
-  @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
-  @scala.inline
-  def `-=`: `-=` = "-=".asInstanceOf[`-=`]
-  @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
-  @scala.inline
-  def `/=`: `/=` = "/=".asInstanceOf[`/=`]
-  @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `<<`: `<<` = "<<".asInstanceOf[`<<`]
-  @scala.inline
-  def `<<=`: `<<=` = "<<=".asInstanceOf[`<<=`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
-  @scala.inline
-  def `>>`: `>>` = ">>".asInstanceOf[`>>`]
-  @scala.inline
-  def `>>=`: `>>=` = ">>=".asInstanceOf[`>>=`]
+  def AmpersandEqualssign: AmpersandEqualssign = "&=".asInstanceOf[AmpersandEqualssign]
   @scala.inline
   def ArrayTypeName: ArrayTypeName = "ArrayTypeName".asInstanceOf[ArrayTypeName]
   @scala.inline
@@ -439,6 +399,12 @@ object solidityDashParserDashAntlrStrings {
   def AssemblyStackAssignment: AssemblyStackAssignment = "AssemblyStackAssignment".asInstanceOf[AssemblyStackAssignment]
   @scala.inline
   def AssemblySwitch: AssemblySwitch = "AssemblySwitch".asInstanceOf[AssemblySwitch]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  @scala.inline
+  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
+  @scala.inline
+  def AsteriskEqualssign: AsteriskEqualssign = "*=".asInstanceOf[AsteriskEqualssign]
   @scala.inline
   def BinaryOperation: BinaryOperation = "BinaryOperation".asInstanceOf[BinaryOperation]
   @scala.inline
@@ -472,7 +438,13 @@ object solidityDashParserDashAntlrStrings {
   @scala.inline
   def EnumValue: EnumValue = "EnumValue".asInstanceOf[EnumValue]
   @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  @scala.inline
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  @scala.inline
   def EventDefinition: EventDefinition = "EventDefinition".asInstanceOf[EventDefinition]
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
   def ExpressionStatement: ExpressionStatement = "ExpressionStatement".asInstanceOf[ExpressionStatement]
   @scala.inline
@@ -483,6 +455,14 @@ object solidityDashParserDashAntlrStrings {
   def FunctionDefinition: FunctionDefinition = "FunctionDefinition".asInstanceOf[FunctionDefinition]
   @scala.inline
   def FunctionTypeName: FunctionTypeName = "FunctionTypeName".asInstanceOf[FunctionTypeName]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
+  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
+  @scala.inline
+  def GreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[GreaterthansignGreaterthansignEqualssign]
   @scala.inline
   def HexLiteral: HexLiteral = "HexLiteral".asInstanceOf[HexLiteral]
   @scala.inline
@@ -504,6 +484,14 @@ object solidityDashParserDashAntlrStrings {
   @scala.inline
   def LabelDefinition: LabelDefinition = "LabelDefinition".asInstanceOf[LabelDefinition]
   @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  @scala.inline
+  def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
+  @scala.inline
+  def LessthansignLessthansignEqualssign: LessthansignLessthansignEqualssign = "<<=".asInstanceOf[LessthansignLessthansignEqualssign]
+  @scala.inline
   def Mapping: Mapping = "Mapping".asInstanceOf[Mapping]
   @scala.inline
   def MemberAccess: MemberAccess = "MemberAccess".asInstanceOf[MemberAccess]
@@ -514,6 +502,14 @@ object solidityDashParserDashAntlrStrings {
   @scala.inline
   def NumberLiteral: NumberLiteral = "NumberLiteral".asInstanceOf[NumberLiteral]
   @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  @scala.inline
+  def PercentsignEqualssign: PercentsignEqualssign = "%=".asInstanceOf[PercentsignEqualssign]
+  @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  @scala.inline
+  def PlussignEqualssign: PlussignEqualssign = "+=".asInstanceOf[PlussignEqualssign]
+  @scala.inline
   def PragmaDirective: PragmaDirective = "PragmaDirective".asInstanceOf[PragmaDirective]
   @scala.inline
   def PragmaName: PragmaName = "PragmaName".asInstanceOf[PragmaName]
@@ -521,6 +517,10 @@ object solidityDashParserDashAntlrStrings {
   def PragmaValue: PragmaValue = "PragmaValue".asInstanceOf[PragmaValue]
   @scala.inline
   def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
+  @scala.inline
+  def Slash: Slash = "/".asInstanceOf[Slash]
+  @scala.inline
+  def SlashEqualssign: SlashEqualssign = "/=".asInstanceOf[SlashEqualssign]
   @scala.inline
   def SourceUnit: SourceUnit = "SourceUnit".asInstanceOf[SourceUnit]
   @scala.inline
@@ -548,11 +548,17 @@ object solidityDashParserDashAntlrStrings {
   @scala.inline
   def VariableDeclarationStatement: VariableDeclarationStatement = "VariableDeclarationStatement".asInstanceOf[VariableDeclarationStatement]
   @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
+  def VerticallineEqualssign: VerticallineEqualssign = "|=".asInstanceOf[VerticallineEqualssign]
+  @scala.inline
+  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
+  @scala.inline
   def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
   @scala.inline
-  def `^=`: `^=` = "^=".asInstanceOf[`^=`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def `^Equalssign`: `^Equalssign` = "^=".asInstanceOf[`^Equalssign`]
   @scala.inline
   def constant: constant = "constant".asInstanceOf[constant]
   @scala.inline
@@ -591,11 +597,5 @@ object solidityDashParserDashAntlrStrings {
   def wei: wei = "wei".asInstanceOf[wei]
   @scala.inline
   def years: years = "years".asInstanceOf[years]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
-  @scala.inline
-  def `|=`: `|=` = "|=".asInstanceOf[`|=`]
-  @scala.inline
-  def `||`: `||` = "||".asInstanceOf[`||`]
 }
 

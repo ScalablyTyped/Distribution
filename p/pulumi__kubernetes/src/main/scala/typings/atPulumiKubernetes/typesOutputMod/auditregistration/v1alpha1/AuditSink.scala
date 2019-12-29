@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.auditregistration.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.auditregistrationDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait AuditSink extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `auditregistrationDOTk8sDOTio/v1alpha1`
+  val apiVersion: auditregistrationDotk8sDotioSlashv1alpha1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -34,7 +34,7 @@ trait AuditSink extends js.Object {
 object AuditSink {
   @scala.inline
   def apply(
-    apiVersion: `auditregistrationDOTk8sDOTio/v1alpha1`,
+    apiVersion: auditregistrationDotk8sDotioSlashv1alpha1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.AuditSink,
     metadata: ObjectMeta,
     spec: AuditSinkSpec

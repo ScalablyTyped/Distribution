@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`
-import typings.atPulumiKubernetes.flowcontrolV1alpha1FlowSchemaListMod.FlowSchemaList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.flowcontrolDotapiserverDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.FlowSchema
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object flowcontrolV1alpha1FlowSchemaListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+    val apiVersion: Output[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1] = js.native
     /**
       * `items` is a list of FlowSchemas.
       */

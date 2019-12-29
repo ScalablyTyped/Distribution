@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.flowcontrolDotapiserverDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait PriorityLevelConfiguration extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`
+  val apiVersion: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -44,7 +44,7 @@ trait PriorityLevelConfiguration extends js.Object {
 object PriorityLevelConfiguration {
   @scala.inline
   def apply(
-    apiVersion: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`,
+    apiVersion: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.PriorityLevelConfiguration,
     metadata: ObjectMeta,
     spec: PriorityLevelConfigurationSpec,

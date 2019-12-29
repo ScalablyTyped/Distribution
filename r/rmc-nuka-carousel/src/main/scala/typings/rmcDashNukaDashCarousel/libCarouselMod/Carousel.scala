@@ -65,7 +65,7 @@ trait Carousel
   def handleClick(e: js.Any): Unit = js.native
   def handleMouseOut(): Unit = js.native
   def handleMouseOver(): Unit = js.native
-  def handleSwipe(`_`: js.Any): Unit = js.native
+  def handleSwipe(_underscore: js.Any): Unit = js.native
   def nextSlide(): Unit = js.native
   def onReadyStateChange(): Unit = js.native
   def onResize(): Unit = js.native

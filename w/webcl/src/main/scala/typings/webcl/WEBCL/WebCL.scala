@@ -16,7 +16,7 @@ trait WebCL extends js.Object {
   def getPlatforms(): js.Array[WebCLPlatform] = js.native
   def getSupportedExtensions(): js.Array[String] = js.native
   def releaseAll(): Unit = js.native
-  def waitForEvents(eventWaitList: js.Array[typings.webcl.WEBCL.WebCLEvent]): Unit = js.native
-  def waitForEvents(eventWaitList: js.Array[typings.webcl.WEBCL.WebCLEvent], whenFinished: WebCLCallback): Unit = js.native
+  def waitForEvents(eventWaitList: js.Array[WebCLEvent]): Unit = js.native
+  def waitForEvents(eventWaitList: js.Array[WebCLEvent], whenFinished: WebCLCallback): Unit = js.native
 }
 

@@ -44,6 +44,8 @@ trait Sheet extends js.Object {
     * by group depth.
     */
   var rowGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
+  /** The slicers on this sheet. */
+  var slicers: js.UndefOr[js.Array[Slicer]] = js.undefined
 }
 
 object Sheet {
@@ -60,7 +62,8 @@ object Sheet {
     merges: js.Array[GridRange] = null,
     properties: SheetProperties = null,
     protectedRanges: js.Array[ProtectedRange] = null,
-    rowGroups: js.Array[DimensionGroup] = null
+    rowGroups: js.Array[DimensionGroup] = null,
+    slicers: js.Array[Slicer] = null
   ): Sheet = {
     val __obj = js.Dynamic.literal()
     if (bandedRanges != null) __obj.updateDynamic("bandedRanges")(bandedRanges.asInstanceOf[js.Any])
@@ -75,6 +78,7 @@ object Sheet {
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (protectedRanges != null) __obj.updateDynamic("protectedRanges")(protectedRanges.asInstanceOf[js.Any])
     if (rowGroups != null) __obj.updateDynamic("rowGroups")(rowGroups.asInstanceOf[js.Any])
+    if (slicers != null) __obj.updateDynamic("slicers")(slicers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sheet]
   }
 }

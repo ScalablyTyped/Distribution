@@ -1,6 +1,6 @@
 package typings.gapiDotDrive.gapi.client.drive
 
-import typings.gapiDotDrive.gapiDotDriveStrings.`drive#fileList`
+import typings.gapiDotDrive.gapiDotDriveStrings.driveNumbersignfileList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait FileListResource extends js.Object {
   var etag: String
   var incompleteSearch: Boolean
   var items: js.Array[FileResource]
-  var kind: `drive#fileList`
+  var kind: driveNumbersignfileList
   var nextLink: String
   var nextPageToken: String
   var selfLink: String
@@ -21,7 +21,7 @@ object FileListResource {
     etag: String,
     incompleteSearch: Boolean,
     items: js.Array[FileResource],
-    kind: `drive#fileList`,
+    kind: driveNumbersignfileList,
     nextLink: String,
     nextPageToken: String,
     selfLink: String

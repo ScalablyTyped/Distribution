@@ -1,7 +1,7 @@
 package typings.eslint.eslintMod.Linter
 
+import typings.eslint.eslintBooleans.`true`
 import typings.eslint.eslintMod.Rule.Fix
-import typings.eslint.eslintNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,18 +10,18 @@ trait TapTargetOptions extends js.Object {
     * Callback function called when Tap Target is closed
     * @default null
     */
-  def onClose(`this`: TapTarget, origin: Element): Unit
+  def onClose(origin: Element): Unit
   /**
     * Callback function called when Tap Target is opened
     * @default null
     */
-  def onOpen(`this`: TapTarget, origin: Element): Unit
+  def onOpen(origin: Element): Unit
 }
 
 object TapTargetOptions {
   @scala.inline
-  def apply(onClose: (TapTarget, Element) => Unit, onOpen: (TapTarget, Element) => Unit): TapTargetOptions = {
-    val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction2(onClose), onOpen = js.Any.fromFunction2(onOpen))
+  def apply(onClose: Element => Unit, onOpen: Element => Unit): TapTargetOptions = {
+    val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction1(onClose), onOpen = js.Any.fromFunction1(onOpen))
   
     __obj.asInstanceOf[TapTargetOptions]
   }

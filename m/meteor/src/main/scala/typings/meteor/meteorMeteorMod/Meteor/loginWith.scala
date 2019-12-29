@@ -1,6 +1,7 @@
 package typings.meteor.meteorMeteorMod.Meteor
 
 import typings.meteor.Anon_LoginStyle
+import typings.meteor.meteorMeteorMod.global_Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +13,7 @@ object loginWith extends js.Object {
   def apply[ExternalService](options: Anon_LoginStyle): Unit = js.native
   def apply[ExternalService](
     options: Anon_LoginStyle,
-    callback: js.Function1[
-      /* error */ js.UndefOr[typings.meteor.meteorMeteorMod.global_Error | Error | TypedError], 
-      Unit
-    ]
+    callback: js.Function1[/* error */ js.UndefOr[global_Error | Error | TypedError], Unit]
   ): Unit = js.native
 }
 

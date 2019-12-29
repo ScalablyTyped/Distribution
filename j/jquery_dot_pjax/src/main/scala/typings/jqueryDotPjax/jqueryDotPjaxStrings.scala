@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object jqueryDotPjaxStrings {
   @js.native
-  sealed trait `pjax:popstate` extends js.Object
+  sealed trait pjaxColonpopstate extends js.Object
   
   @scala.inline
-  def `pjax:popstate`: `pjax:popstate` = "pjax:popstate".asInstanceOf[`pjax:popstate`]
+  def pjaxColonpopstate: pjaxColonpopstate = "pjax:popstate".asInstanceOf[pjaxColonpopstate]
 }
 

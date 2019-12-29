@@ -1,10 +1,6 @@
 package typings.uglifyDashJs.uglifyDashJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysDouble
-import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysOriginal
-import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysSingle
-import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.PreferDouble
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

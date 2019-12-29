@@ -2,7 +2,7 @@ package typings.semanticDashUiDashApi.SemanticUI
 
 import typings.jquery.JQueryDeferred
 import typings.semanticDashUiDashApi.JQuery
-import typings.semanticDashUiDashApi.semanticDashUiDashApiNumbers.`false`
+import typings.semanticDashUiDashApi.semanticDashUiDashApiBooleans.`false`
 import typings.semanticDashUiDashApi.semanticDashUiDashApiStrings.`add url data`
 import typings.semanticDashUiDashApi.semanticDashUiDashApiStrings.`create cache`
 import typings.semanticDashUiDashApi.semanticDashUiDashApiStrings.`get event`

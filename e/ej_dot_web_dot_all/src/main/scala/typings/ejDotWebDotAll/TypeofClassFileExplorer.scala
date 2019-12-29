@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassFileExplorer
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, FileExplorer]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), FileExplorer] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), FileExplorer]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, FileExplorer] {
   var Locale: js.Any = js.native
   var fn: FileExplorer = js.native
 }

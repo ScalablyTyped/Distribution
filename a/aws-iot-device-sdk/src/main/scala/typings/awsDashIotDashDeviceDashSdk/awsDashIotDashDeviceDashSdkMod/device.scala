@@ -11,7 +11,7 @@ import typings.mqtt.typesLibClientDashOptionsMod.IClientPublishOptions
 import typings.mqtt.typesLibClientDashOptionsMod.IClientSubscribeOptions
 import typings.mqtt.typesLibClientMod.ClientSubscribeCallback
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js

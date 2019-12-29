@@ -55,7 +55,7 @@ class DocumentModel ()
     * #### Notes
     * This property is always safe to access.
     */
-  /* InferMemberOverrides */
+  /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
     * The underlying `IModelDB` instance in which model

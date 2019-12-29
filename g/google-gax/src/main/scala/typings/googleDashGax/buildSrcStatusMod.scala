@@ -1,24 +1,6 @@
 package typings.googleDashGax
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashGax.buildSrcStatusMod.Status
-import typings.googleDashGax.buildSrcStatusMod.Status.ABORTED
-import typings.googleDashGax.buildSrcStatusMod.Status.ALREADY_EXISTS
-import typings.googleDashGax.buildSrcStatusMod.Status.CANCELLED
-import typings.googleDashGax.buildSrcStatusMod.Status.DATA_LOSS
-import typings.googleDashGax.buildSrcStatusMod.Status.DEADLINE_EXCEEDED
-import typings.googleDashGax.buildSrcStatusMod.Status.FAILED_PRECONDITION
-import typings.googleDashGax.buildSrcStatusMod.Status.INTERNAL
-import typings.googleDashGax.buildSrcStatusMod.Status.INVALID_ARGUMENT
-import typings.googleDashGax.buildSrcStatusMod.Status.NOT_FOUND
-import typings.googleDashGax.buildSrcStatusMod.Status.OK
-import typings.googleDashGax.buildSrcStatusMod.Status.OUT_OF_RANGE
-import typings.googleDashGax.buildSrcStatusMod.Status.PERMISSION_DENIED
-import typings.googleDashGax.buildSrcStatusMod.Status.RESOURCE_EXHAUSTED
-import typings.googleDashGax.buildSrcStatusMod.Status.UNAUTHENTICATED
-import typings.googleDashGax.buildSrcStatusMod.Status.UNAVAILABLE
-import typings.googleDashGax.buildSrcStatusMod.Status.UNIMPLEMENTED
-import typings.googleDashGax.buildSrcStatusMod.Status.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

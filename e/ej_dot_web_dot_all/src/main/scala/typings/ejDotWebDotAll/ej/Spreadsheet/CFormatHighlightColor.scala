@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatHighlightColor.GreenFillwithDarkGreenText
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatHighlightColor.RedFill
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatHighlightColor.RedFillwithDarkRedText
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatHighlightColor.RedText
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatHighlightColor.YellowFillwithDarkYellowText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.amcharts
 
 import typings.amcharts.amRectangularChartMod.AmRectangularChart
-import typings.amcharts.amSerialChartMod.AmSerialChart
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

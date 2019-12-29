@@ -13,7 +13,8 @@ class Style protected () extends js.Object {
   val Borders_Original: Borders = js.native
   val BuiltIn: Boolean = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Style_typekey`: Style = js.native
+  @JSName("Excel.Style_typekey")
+  var ExcelDotStyle_typekey: Style = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   var FormulaHidden: Boolean = js.native
   var HorizontalAlignment: XlHAlign = js.native

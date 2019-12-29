@@ -1,6 +1,5 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.srcAotStaticUnderscoreSymbolMod.StaticSymbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

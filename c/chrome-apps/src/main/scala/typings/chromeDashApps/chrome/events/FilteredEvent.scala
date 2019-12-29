@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
   * @template F Filter interface, leave this for default
   */
 @js.native
-trait FilteredEvent[T /* <: js.Function */, F]
-  extends typings.chromeDashApps.chrome.events.Event[T] {
+trait FilteredEvent[T /* <: js.Function */, F] extends Event[T] {
   def addListener(callback: T, filter: F): Unit = js.native
 }
 

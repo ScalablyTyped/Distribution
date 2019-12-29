@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.frequent
-import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.none
-import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.recent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

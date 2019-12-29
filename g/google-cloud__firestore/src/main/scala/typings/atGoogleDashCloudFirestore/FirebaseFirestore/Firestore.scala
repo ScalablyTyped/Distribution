@@ -103,5 +103,11 @@ class Firestore () extends js.Object {
     * operations.
     */
   def settings(settings: Settings): Unit = js.native
+  /**
+    * Terminates the Firestore client and closes all open streams.
+    *
+    * @return A Promise that resolves when the client is terminated.
+    */
+  def terminate(): js.Promise[Unit] = js.native
 }
 

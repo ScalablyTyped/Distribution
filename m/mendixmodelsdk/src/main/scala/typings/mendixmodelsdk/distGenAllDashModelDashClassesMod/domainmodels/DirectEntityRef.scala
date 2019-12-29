@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.domainmodels
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.EntityWidget
+import typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenPagesMod.pages.CreateObjectClientAction
 import typings.mendixmodelsdk.distGenPagesMod.pages.EntityPathSource
 import typings.mendixmodelsdk.distGenPagesMod.pages.NewButton
@@ -37,7 +38,7 @@ class DirectEntityRef protected ()
 @js.native
 object DirectEntityRef extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

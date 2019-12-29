@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TeamsListDiscussionsResponseItemReactions extends js.Object {
-  var `+1`: Double
   var `-1`: Double
+  @JSName("+1")
+  var Plussign1: Double
   var confused: Double
   var heart: Double
   var hooray: Double
@@ -18,8 +19,8 @@ trait TeamsListDiscussionsResponseItemReactions extends js.Object {
 object TeamsListDiscussionsResponseItemReactions {
   @scala.inline
   def apply(
-    `+1`: Double,
     `-1`: Double,
+    Plussign1: Double,
     confused: Double,
     heart: Double,
     hooray: Double,
@@ -28,8 +29,8 @@ object TeamsListDiscussionsResponseItemReactions {
     url: String
   ): TeamsListDiscussionsResponseItemReactions = {
     val __obj = js.Dynamic.literal(confused = confused.asInstanceOf[js.Any], heart = heart.asInstanceOf[js.Any], hooray = hooray.asInstanceOf[js.Any], laugh = laugh.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("+1")(`+1`.asInstanceOf[js.Any])
     __obj.updateDynamic("-1")(`-1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("+1")(Plussign1.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsListDiscussionsResponseItemReactions]
   }
 }

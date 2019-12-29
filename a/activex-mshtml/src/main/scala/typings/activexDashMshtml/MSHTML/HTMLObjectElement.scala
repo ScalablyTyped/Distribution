@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class HTMLObjectElement protected () extends js.Object {
   val BaseHref: String = js.native
-  var `MSHTML.HTMLObjectElement_typekey`: HTMLObjectElement = js.native
+  @JSName("MSHTML.HTMLObjectElement_typekey")
+  var MSHTMLDotHTMLObjectElement_typekey: HTMLObjectElement = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

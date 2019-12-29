@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnRoutingPolicyType.forceAllTrafficOverVpn
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnRoutingPolicyType.splitRouting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

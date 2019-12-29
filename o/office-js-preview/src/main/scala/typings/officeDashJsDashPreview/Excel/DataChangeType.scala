@@ -1,14 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.DataChangeType.cellDeleted
-import typings.officeDashJsDashPreview.Excel.DataChangeType.cellInserted
-import typings.officeDashJsDashPreview.Excel.DataChangeType.columnDeleted
-import typings.officeDashJsDashPreview.Excel.DataChangeType.columnInserted
-import typings.officeDashJsDashPreview.Excel.DataChangeType.rangeEdited
-import typings.officeDashJsDashPreview.Excel.DataChangeType.rowDeleted
-import typings.officeDashJsDashPreview.Excel.DataChangeType.rowInserted
-import typings.officeDashJsDashPreview.Excel.DataChangeType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

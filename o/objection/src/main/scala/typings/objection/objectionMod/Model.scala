@@ -30,17 +30,17 @@ class Model () extends js.Object {
   @JSName("$afterValidate")
   def $afterValidate(json: Pojo, opt: ModelOptions): Unit = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: String): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](relation: String): T = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: String, related: RelatedM): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](relation: String, related: RelatedM): T = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: String, related: js.Array[RelatedM]): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](relation: String, related: js.Array[RelatedM]): T = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](relation: Relation): T = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation, related: RelatedM): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](relation: Relation, related: RelatedM): T = js.native
   @JSName("$appendRelated")
-  def $appendRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation, related: js.Array[RelatedM]): T = js.native
+  def $appendRelated[T, RelatedM /* <: Model */](relation: Relation, related: js.Array[RelatedM]): T = js.native
   @JSName("$beforeDelete")
   def $beforeDelete(queryContext: QueryContext): js.Promise[_] | Unit = js.native
   @JSName("$beforeInsert")
@@ -50,9 +50,9 @@ class Model () extends js.Object {
   @JSName("$beforeValidate")
   def $beforeValidate(jsonSchema: JsonSchema, json: Pojo, opt: ModelOptions): JsonSchema = js.native
   @JSName("$clone")
-  def $clone[T](`this`: T): T = js.native
+  def $clone[T](): T = js.native
   @JSName("$clone")
-  def $clone[T](`this`: T, opt: CloneOptions): T = js.native
+  def $clone[T](opt: CloneOptions): T = js.native
   @JSName("$formatDatabaseJson")
   def $formatDatabaseJson(json: Pojo): Pojo = js.native
   @JSName("$formatJson")
@@ -69,59 +69,59 @@ class Model () extends js.Object {
   @JSName("$knex")
   def $knex(): Knex[_, js.Array[_]] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: String): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: String): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: String, filters: Filters[QM]): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: String, filters: Filters[QM]): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: String, filters: Filters[QM], trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: String, filters: Filters[QM], trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: String, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: String, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: RelationExpression): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM]): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: RelationExpression, filters: Filters[QM]): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: RelationExpression, filters: Filters[QM], trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
-  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
+  def $loadRelated[QM /* <: Model */](expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$omit")
-  def $omit[T](`this`: T, keys: String): T = js.native
+  def $omit[T](keys: String): T = js.native
   @JSName("$omit")
-  def $omit[T](`this`: T, keys: js.Array[String]): T = js.native
+  def $omit[T](keys: js.Array[String]): T = js.native
   @JSName("$omit")
-  def $omit[T](`this`: T, keys: Properties): T = js.native
+  def $omit[T](keys: Properties): T = js.native
   @JSName("$parseDatabaseJson")
   def $parseDatabaseJson(json: Pojo): Pojo = js.native
   @JSName("$parseJson")
@@ -129,25 +129,25 @@ class Model () extends js.Object {
   @JSName("$parseJson")
   def $parseJson(json: Pojo, opt: ModelOptions): Pojo = js.native
   @JSName("$pick")
-  def $pick[T](`this`: T, keys: String): T = js.native
+  def $pick[T](keys: String): T = js.native
   @JSName("$pick")
-  def $pick[T](`this`: T, keys: js.Array[String]): T = js.native
+  def $pick[T](keys: js.Array[String]): T = js.native
   @JSName("$pick")
-  def $pick[T](`this`: T, keys: Properties): T = js.native
+  def $pick[T](keys: Properties): T = js.native
   @JSName("$query")
-  def $query[QM /* <: Model */](`this`: QM): QueryBuilder[
+  def $query[QM /* <: Model */](): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$query")
-  def $query[QM /* <: Model */](`this`: QM, trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
+  def $query[QM /* <: Model */](trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$query")
-  def $query[QM /* <: Model */](`this`: QM, trxOrKnex: Transaction): QueryBuilder[
+  def $query[QM /* <: Model */](trxOrKnex: Transaction): QueryBuilder[
     QM, 
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
@@ -190,25 +190,25 @@ class Model () extends js.Object {
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$set")
-  def $set[T](`this`: T, obj: Pojo): T = js.native
+  def $set[T](obj: Pojo): T = js.native
   @JSName("$setDatabaseJson")
-  def $setDatabaseJson[M](`this`: M, json: Pojo): M = js.native
+  def $setDatabaseJson[M](json: Pojo): M = js.native
   @JSName("$setJson")
-  def $setJson[T](`this`: T, json: Pojo): T = js.native
+  def $setJson[T](json: Pojo): T = js.native
   @JSName("$setJson")
-  def $setJson[T](`this`: T, json: Pojo, opt: ModelOptions): T = js.native
+  def $setJson[T](json: Pojo, opt: ModelOptions): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: String): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](relation: String): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: String, related: RelatedM): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](relation: String, related: RelatedM): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: String, related: js.Array[RelatedM]): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](relation: String, related: js.Array[RelatedM]): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](relation: Relation): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation, related: RelatedM): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](relation: Relation, related: RelatedM): T = js.native
   @JSName("$setRelated")
-  def $setRelated[T, RelatedM /* <: Model */](`this`: T, relation: Relation, related: js.Array[RelatedM]): T = js.native
+  def $setRelated[T, RelatedM /* <: Model */](relation: Relation, related: js.Array[RelatedM]): T = js.native
    // may throw ValidationError if validation fails
   @JSName("$toDatabaseJson")
   def $toDatabaseJson(): js.Object = js.native
@@ -262,55 +262,37 @@ object Model extends js.Object {
   var uidProp: String = js.native
   var uidRefProp: String = js.native
   var virtualAttributes: js.Array[String] = js.native
-  def bindKnex[M](`this`: M, knex: Knex[_, js.Array[_]]): M = js.native
-  def bindTransaction[M](`this`: M, transaction: Transaction): M = js.native
+  def bindKnex[M](knex: Knex[_, js.Array[_]]): M = js.native
+  def bindTransaction[M](transaction: Transaction): M = js.native
   def createNotFoundError(): Error = js.native
   def createValidationError(args: CreateValidationErrorArgs): Error = js.native
   def createValidator(): Validator = js.native
   def fetchTableMetadata(): js.Promise[TableMetadata] = js.native
   def fetchTableMetadata(opt: FetchTableMetadataOptions): js.Promise[TableMetadata] = js.native
-  def fromDatabaseJson[M](`this`: Constructor[M], row: Pojo): M = js.native
+  def fromDatabaseJson[M](row: Pojo): M = js.native
   // fromJson and fromDatabaseJson both return an instance of Model, not a Model class:
-  def fromJson[M](`this`: Constructor[M], json: Pojo): M = js.native
-  def fromJson[M](`this`: Constructor[M], json: Pojo, opt: ModelOptions): M = js.native
+  def fromJson[M](json: Pojo): M = js.native
+  def fromJson[M](json: Pojo, opt: ModelOptions): M = js.native
   def getRelations(): StringDictionary[Relation] = js.native
   def knex(): Knex[_, js.Array[_]] = js.native
   def knex(knex: Knex[_, js.Array[_]]): Knex[_, js.Array[_]] = js.native
   def knexQuery(): typings.knex.knexMod.QueryBuilder[_, js.Array[SafePartial[_]]] = js.native
-  def loadRelated[QM /* <: Model */](`this`: Constructor[QM], model: QM, expression: RelationExpression): QueryBuilderYieldingOne[QM] = js.native
-  def loadRelated[QM /* <: Model */](`this`: Constructor[QM], model: QM, expression: RelationExpression, filters: Filters[QM]): QueryBuilderYieldingOne[QM] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    model: QM,
-    expression: RelationExpression,
-    filters: Filters[QM],
-    trxOrKnex: Knex[_, js.Array[_]]
-  ): QueryBuilderYieldingOne[QM] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    model: QM,
-    expression: RelationExpression,
-    filters: Filters[QM],
-    trxOrKnex: Transaction
-  ): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression, filters: Filters[QM]): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Knex[_, js.Array[_]]): QueryBuilderYieldingOne[QM] = js.native
+  def loadRelated[QM /* <: Model */](model: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilderYieldingOne[QM] = js.native
   // loadRelated is overloaded to support both Model and Model[] variants:
-  def loadRelated[QM /* <: Model */](`this`: Constructor[QM], models: js.Array[QM], expression: RelationExpression): QueryBuilder[
+  def loadRelated[QM /* <: Model */](models: js.Array[QM], expression: RelationExpression): QueryBuilder[
+    QM, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def loadRelated[QM /* <: Model */](models: js.Array[QM], expression: RelationExpression, filters: Filters[QM]): QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    models: js.Array[QM],
-    expression: RelationExpression,
-    filters: Filters[QM]
-  ): QueryBuilder[
-    QM, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
-  ] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
     models: js.Array[QM],
     expression: RelationExpression,
     filters: Filters[QM],
@@ -320,29 +302,23 @@ object Model extends js.Object {
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def loadRelated[QM /* <: Model */](
-    `this`: Constructor[QM],
-    models: js.Array[QM],
-    expression: RelationExpression,
-    filters: Filters[QM],
-    trxOrKnex: Transaction
-  ): QueryBuilder[
+  def loadRelated[QM /* <: Model */](models: js.Array[QM], expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def omitImpl(f: js.Function2[/* obj */ js.Object, /* prop */ String, Unit]): Unit = js.native
-  def query[QM /* <: Model */](`this`: Constructor[QM]): QueryBuilder[
+  def query[QM /* <: Model */](): QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def query[QM /* <: Model */](`this`: Constructor[QM], trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
+  def query[QM /* <: Model */](trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def query[QM /* <: Model */](`this`: Constructor[QM], trxOrKnex: Transaction): QueryBuilder[
+  def query[QM /* <: Model */](trxOrKnex: Transaction): QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Pane protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Pane_typekey`: Pane = js.native
+  @JSName("Excel.Pane_typekey")
+  var ExcelDotPane_typekey: Pane = js.native
   val Index: Double = js.native
   val Parent: js.Any = js.native
   var ScrollColumn: Double = js.native

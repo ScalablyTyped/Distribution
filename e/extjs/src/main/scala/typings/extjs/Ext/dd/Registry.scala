@@ -52,7 +52,7 @@ object Registry extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Returns a custom data object that is registered for a DOM node by id
   		* @param id String/HTMLElement The DOM node or id to look up
   		* @returns Object data The custom data

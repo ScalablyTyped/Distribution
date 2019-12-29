@@ -121,10 +121,10 @@ trait Editor extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtMultipleFeatureSelection)
     *
-    * @param candidates An array of features to be updated. This is only relevant when there are multiple candidates to update.
+    * @param _candidates An array of features to be updated. This is only relevant when there are multiple candidates to update.
     *
     */
-  def startUpdateWorkflowAtMultipleFeatureSelection(candidates: js.Array[Graphic]): Unit = js.native
+  def startUpdateWorkflowAtMultipleFeatureSelection(_candidates: js.Array[Graphic]): Unit = js.native
 }
 
 @JSGlobal("__esri.Editor")

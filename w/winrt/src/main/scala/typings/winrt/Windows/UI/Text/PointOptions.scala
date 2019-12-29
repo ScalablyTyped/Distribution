@@ -1,14 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.PointOptions.allowOffClient
-import typings.winrt.Windows.UI.Text.PointOptions.clientCoordinates
-import typings.winrt.Windows.UI.Text.PointOptions.includeInset
-import typings.winrt.Windows.UI.Text.PointOptions.noHorizontalScroll
-import typings.winrt.Windows.UI.Text.PointOptions.noVerticalScroll
-import typings.winrt.Windows.UI.Text.PointOptions.none
-import typings.winrt.Windows.UI.Text.PointOptions.start
-import typings.winrt.Windows.UI.Text.PointOptions.transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

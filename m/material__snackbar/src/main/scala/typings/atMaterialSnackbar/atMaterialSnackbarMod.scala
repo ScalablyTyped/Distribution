@@ -2,7 +2,6 @@ package typings.atMaterialSnackbar
 
 import typings.atMaterialBase.atMaterialBaseMod.MDCComponent
 import typings.atMaterialSnackbar.adapterMod.MDCSnackbarAdapter
-import typings.atMaterialSnackbar.atMaterialSnackbarMod.MDCSnackbar
 import typings.atMaterialSnackbar.foundationMod.MDCSnackbarData
 import typings.atMaterialSnackbar.foundationMod.default
 import typings.std.Element

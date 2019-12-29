@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_LocalesOptions
   extends Instantiable0[NumberFormat]
+     with Instantiable1[
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      NumberFormat
+    ]
      with Instantiable2[
       (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       /* options */ NumberFormatOptions, 
-      NumberFormat
-    ]
-     with Instantiable1[
-      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       NumberFormat
     ] {
   def apply(): NumberFormat = js.native

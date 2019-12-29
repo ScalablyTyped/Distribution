@@ -15,7 +15,7 @@ object bootstrapDashSwitchStrings {
   sealed trait disabled extends js.Object
   
   @js.native
-  sealed trait initDOTbootstrapSwitch extends js.Object
+  sealed trait initDotbootstrapSwitch extends js.Object
   
   @js.native
   sealed trait labelText extends js.Object
@@ -45,7 +45,7 @@ object bootstrapDashSwitchStrings {
   sealed trait state extends js.Object
   
   @js.native
-  sealed trait switchChangeDOTbootstrapSwitch extends js.Object
+  sealed trait switchChangeDotbootstrapSwitch extends js.Object
   
   @js.native
   sealed trait wrapperClass extends js.Object
@@ -57,7 +57,7 @@ object bootstrapDashSwitchStrings {
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
-  def initDOTbootstrapSwitch: initDOTbootstrapSwitch = "init.bootstrapSwitch".asInstanceOf[initDOTbootstrapSwitch]
+  def initDotbootstrapSwitch: initDotbootstrapSwitch = "init.bootstrapSwitch".asInstanceOf[initDotbootstrapSwitch]
   @scala.inline
   def labelText: labelText = "labelText".asInstanceOf[labelText]
   @scala.inline
@@ -77,7 +77,7 @@ object bootstrapDashSwitchStrings {
   @scala.inline
   def state: state = "state".asInstanceOf[state]
   @scala.inline
-  def switchChangeDOTbootstrapSwitch: switchChangeDOTbootstrapSwitch = "switchChange.bootstrapSwitch".asInstanceOf[switchChangeDOTbootstrapSwitch]
+  def switchChangeDotbootstrapSwitch: switchChangeDotbootstrapSwitch = "switchChange.bootstrapSwitch".asInstanceOf[switchChangeDotbootstrapSwitch]
   @scala.inline
   def wrapperClass: wrapperClass = "wrapperClass".asInstanceOf[wrapperClass]
 }

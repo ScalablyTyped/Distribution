@@ -17,6 +17,38 @@ trait Response extends js.Object
 
 object Response {
   @scala.inline
+  def IspResponse(
+    autonomous_system_number: Double,
+    autonomous_system_organization: String,
+    isp: String,
+    organization: String,
+    ip_address: String = null
+  ): Response = {
+    val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number.asInstanceOf[js.Any], autonomous_system_organization = autonomous_system_organization.asInstanceOf[js.Any], isp = isp.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any])
+    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response]
+  }
+  @scala.inline
+  def AnonymousIPResponse(
+    ip_address: String = null,
+    is_anonymous: js.UndefOr[Boolean] = js.undefined,
+    is_anonymous_proxy: js.UndefOr[Boolean] = js.undefined,
+    is_anonymous_vpn: js.UndefOr[Boolean] = js.undefined,
+    is_hosting_provider: js.UndefOr[Boolean] = js.undefined,
+    is_public_proxy: js.UndefOr[Boolean] = js.undefined,
+    is_tor_exit_node: js.UndefOr[Boolean] = js.undefined
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_anonymous)) __obj.updateDynamic("is_anonymous")(is_anonymous.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_anonymous_proxy)) __obj.updateDynamic("is_anonymous_proxy")(is_anonymous_proxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_anonymous_vpn)) __obj.updateDynamic("is_anonymous_vpn")(is_anonymous_vpn.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_hosting_provider)) __obj.updateDynamic("is_hosting_provider")(is_hosting_provider.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_public_proxy)) __obj.updateDynamic("is_public_proxy")(is_public_proxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_tor_exit_node)) __obj.updateDynamic("is_tor_exit_node")(is_tor_exit_node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response]
+  }
+  @scala.inline
   def CityResponse(
     city: CityRecord = null,
     continent: ContinentRecord = null,
@@ -41,34 +73,6 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   @scala.inline
-  def IspResponse(
-    autonomous_system_number: Double,
-    autonomous_system_organization: String,
-    isp: String,
-    organization: String,
-    ip_address: String = null
-  ): Response = {
-    val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number.asInstanceOf[js.Any], autonomous_system_organization = autonomous_system_organization.asInstanceOf[js.Any], isp = isp.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any])
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Response]
-  }
-  @scala.inline
-  def DomainResponse(domain: String, ip_address: String = null): Response = {
-    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Response]
-  }
-  @scala.inline
-  def AsnResponse(
-    autonomous_system_number: Double,
-    autonomous_system_organization: String,
-    ip_address: String = null
-  ): Response = {
-    val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number.asInstanceOf[js.Any], autonomous_system_organization = autonomous_system_organization.asInstanceOf[js.Any])
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Response]
-  }
-  @scala.inline
   def CountryResponse(
     continent: ContinentRecord = null,
     country: CountryRecord = null,
@@ -85,28 +89,24 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   @scala.inline
-  def AnonymousIPResponse(
-    ip_address: String = null,
-    is_anonymous: js.UndefOr[Boolean] = js.undefined,
-    is_anonymous_proxy: js.UndefOr[Boolean] = js.undefined,
-    is_anonymous_vpn: js.UndefOr[Boolean] = js.undefined,
-    is_hosting_provider: js.UndefOr[Boolean] = js.undefined,
-    is_public_proxy: js.UndefOr[Boolean] = js.undefined,
-    is_tor_exit_node: js.UndefOr[Boolean] = js.undefined
+  def AsnResponse(
+    autonomous_system_number: Double,
+    autonomous_system_organization: String,
+    ip_address: String = null
   ): Response = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number.asInstanceOf[js.Any], autonomous_system_organization = autonomous_system_organization.asInstanceOf[js.Any])
     if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous)) __obj.updateDynamic("is_anonymous")(is_anonymous.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous_proxy)) __obj.updateDynamic("is_anonymous_proxy")(is_anonymous_proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous_vpn)) __obj.updateDynamic("is_anonymous_vpn")(is_anonymous_vpn.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hosting_provider)) __obj.updateDynamic("is_hosting_provider")(is_hosting_provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_public_proxy)) __obj.updateDynamic("is_public_proxy")(is_public_proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_tor_exit_node)) __obj.updateDynamic("is_tor_exit_node")(is_tor_exit_node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
   @scala.inline
   def ConnectionTypeResponse(connection_type: String, ip_address: String = null): Response = {
     val __obj = js.Dynamic.literal(connection_type = connection_type.asInstanceOf[js.Any])
+    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response]
+  }
+  @scala.inline
+  def DomainResponse(domain: String, ip_address: String = null): Response = {
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }

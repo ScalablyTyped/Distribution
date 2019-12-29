@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestStatus.Abandoned
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestStatus.Active
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestStatus.All
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestStatus.Completed
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestStatus.NotSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

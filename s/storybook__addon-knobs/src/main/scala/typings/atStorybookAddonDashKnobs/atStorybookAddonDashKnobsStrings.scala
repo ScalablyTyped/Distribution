@@ -97,7 +97,7 @@ object atStorybookAddonDashKnobsStrings {
   sealed trait step extends js.Object
   
   @js.native
-  sealed trait `storybookjs/knobs` extends js.Object
+  sealed trait storybookjsSlashknobs extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -166,7 +166,7 @@ object atStorybookAddonDashKnobsStrings {
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   @scala.inline
-  def `storybookjs/knobs`: `storybookjs/knobs` = "storybookjs/knobs".asInstanceOf[`storybookjs/knobs`]
+  def storybookjsSlashknobs: storybookjsSlashknobs = "storybookjs/knobs".asInstanceOf[storybookjsSlashknobs]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

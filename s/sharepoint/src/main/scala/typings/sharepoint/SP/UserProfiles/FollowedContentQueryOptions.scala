@@ -1,13 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.FollowedContentQueryOptions.all
-import typings.sharepoint.SP.UserProfiles.FollowedContentQueryOptions.defaultOptions
-import typings.sharepoint.SP.UserProfiles.FollowedContentQueryOptions.documents
-import typings.sharepoint.SP.UserProfiles.FollowedContentQueryOptions.hidden
-import typings.sharepoint.SP.UserProfiles.FollowedContentQueryOptions.nonFeed
-import typings.sharepoint.SP.UserProfiles.FollowedContentQueryOptions.sites
-import typings.sharepoint.SP.UserProfiles.FollowedContentQueryOptions.unset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

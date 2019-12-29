@@ -4,7 +4,6 @@ import typings.std.Exclude
 import typings.std.Pick
 import typings.std.Record
 import typings.xstate.libActorMod.Actor
-import typings.xstate.libStateMod.State
 import typings.xstate.libStateNodeMod.StateNode
 import typings.xstate.libTypesMod.ActionObject
 import typings.xstate.libTypesMod.ActivityMap

@@ -12,7 +12,8 @@ class FolderItems3 protected () extends js.Object {
   val Application: js.Any = js.native
   /** Get count of items in the folder */
   val Count: Double = js.native
-  var `Shell32.FolderItems3_typekey`: FolderItems3 = js.native
+  @JSName("Shell32.FolderItems3_typekey")
+  var Shell32DotFolderItems3_typekey: FolderItems3 = js.native
   /** Get the list of verbs common to all the items */
   val Verbs: FolderItemVerbs = js.native
   /** Set a wildcard filter to apply to the items returned */

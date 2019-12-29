@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵangular_packages_platform_browser_platform_browser_b")
+@JSImport("@angular/platform-browser", "\u0275angular_packages_platform_browser_platform_browser_b")
 @js.native
 object ɵangular_packages_platform_browser_platform_browser_b extends js.Object {
   def apply(): js.Any = js.native

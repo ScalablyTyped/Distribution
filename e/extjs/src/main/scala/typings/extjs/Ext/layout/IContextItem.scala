@@ -17,7 +17,7 @@ trait IContextItem extends IBase {
   		* @param propName String The property name that blocked the layout (e.g., 'width').
   		*/
   var block: js.UndefOr[
-    js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] clears the margin cache so that marginInfo get re read from the dom on the next call to getMarginInfo  This is neede  */
   var clearMarginCache: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -26,7 +26,7 @@ trait IContextItem extends IBase {
   		* @param propName String The property name that blocked the layout (e.g., 'width').
   		*/
   var domBlock: js.UndefOr[
-    js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Flushes any updates in the dirty collection to the DOM  */
   var flush: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -40,7 +40,7 @@ trait IContextItem extends IBase {
   		* @param propName String The property name (e.g., 'width').
   		* @returns Object The property value or undefined if not yet set or is dirty.
   		*/
-  var getDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the context item for an owned element
   		* @param nameOrEl String/Ext.dom.Element The element or the name of an owned element
   		* @param owner Ext.layout.container.Container/Ext.Component The owner of the named element if the passed "nameOrEl" parameter is a String. Defaults to this ContextItem's "target" property. For more details on owned elements see childEls and renderSelectors
@@ -65,12 +65,12 @@ trait IContextItem extends IBase {
   		* @param propName String The property name that blocked the layout (e.g., 'width').
   		* @returns Object The property value or undefined if not yet set.
   		*/
-  var getProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns a style for this item
   		* @param styleName String The CSS style name.
   		* @returns Object The value of the DOM style (parsed as necessary).
   		*/
-  var getStyle: js.UndefOr[js.Function1[/* styleName */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getStyle: js.UndefOr[js.Function1[/* styleName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns styles for this item
   		* @param styleNames String[] The CSS style names.
   		* @param altNames String[] The alternate names for the returned styles. If given, these names must correspond one-for-one to the styleNames.
@@ -83,12 +83,12 @@ trait IContextItem extends IBase {
   		* @param propName String The property name (e.g., 'width').
   		* @returns Boolean
   		*/
-  var hasDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Returns true if the given property has been set
   		* @param propName String The property name (e.g., 'width').
   		* @returns Boolean
   		*/
-  var hasProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Invalidates the component associated with this item
   		* @param options Object An object describing how to handle the invalidation.
   		*/
@@ -100,7 +100,7 @@ trait IContextItem extends IBase {
   		*/
   var recoverProp: js.UndefOr[
     js.Function3[
-      /* propName */ js.UndefOr[java.lang.String], 
+      /* propName */ js.UndefOr[String], 
       /* oldProps */ js.UndefOr[js.Any], 
       /* oldDirty */ js.UndefOr[js.Any], 
       Unit
@@ -167,7 +167,7 @@ trait IContextItem extends IBase {
   		*/
   var setProp: js.UndefOr[
     js.Function3[
-      /* propName */ js.UndefOr[java.lang.String], 
+      /* propName */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* dirty */ js.UndefOr[Boolean], 
       Double
@@ -193,33 +193,33 @@ object IContextItem {
     addCls: /* newCls */ js.UndefOr[js.Any] => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    block: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[java.lang.String]) => Unit = null,
+    block: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String]) => Unit = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clearMarginCache: () => Unit = null,
     config: js.Any = null,
-    domBlock: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[java.lang.String]) => Unit = null,
-    extend: java.lang.String = null,
+    domBlock: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String]) => Unit = null,
+    extend: String = null,
     flush: () => Unit = null,
     getBorderInfo: () => _ = null,
     getClassList: () => Unit = null,
-    getDomProp: /* propName */ js.UndefOr[java.lang.String] => _ = null,
+    getDomProp: /* propName */ js.UndefOr[String] => _ = null,
     getEl: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => IContextItem = null,
     getFrameInfo: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getMarginInfo: () => _ = null,
     getPaddingInfo: () => _ = null,
-    getProp: /* propName */ js.UndefOr[java.lang.String] => _ = null,
-    getStyle: /* styleName */ js.UndefOr[java.lang.String] => _ = null,
+    getProp: /* propName */ js.UndefOr[String] => _ = null,
+    getStyle: /* styleName */ js.UndefOr[String] => _ = null,
     getStyles: (/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array]) => _ = null,
-    hasDomProp: /* propName */ js.UndefOr[java.lang.String] => Boolean = null,
-    hasProp: /* propName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasDomProp: /* propName */ js.UndefOr[String] => Boolean = null,
+    hasProp: /* propName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IContextItem = null,
     invalidate: /* options */ js.UndefOr[js.Any] => Unit = null,
     mixins: js.Any = null,
-    recoverProp: (/* propName */ js.UndefOr[java.lang.String], /* oldProps */ js.UndefOr[js.Any], /* oldDirty */ js.UndefOr[js.Any]) => Unit = null,
+    recoverProp: (/* propName */ js.UndefOr[String], /* oldProps */ js.UndefOr[js.Any], /* oldDirty */ js.UndefOr[js.Any]) => Unit = null,
     removeCls: /* removeCls */ js.UndefOr[js.Any] => Unit = null,
     removeEl: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
@@ -229,7 +229,7 @@ object IContextItem {
     setContentSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit = null,
     setContentWidth: (/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit = null,
     setHeight: (/* height */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean]) => Double = null,
-    setProp: (/* propName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* dirty */ js.UndefOr[Boolean]) => Double = null,
+    setProp: (/* propName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* dirty */ js.UndefOr[Boolean]) => Double = null,
     setWidth: (/* width */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean]) => Double = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     state: js.Any = null,

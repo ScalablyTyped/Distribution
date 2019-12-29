@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.backgroundWorkCostNotHigh
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.freeNetworkAvailable
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.internetAvailable
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.internetNotAvailable
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.invalid
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.sessionConnected
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.sessionDisconnected
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.userNotPresent
-import typings.winrtDashUwp.Windows.ApplicationModel.Background.SystemConditionType.userPresent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

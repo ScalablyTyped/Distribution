@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IViewport
-  extends typings.extjs.Ext.container.IContainer {
+trait IViewport extends IContainer {
   /** [Property] (Boolean) */
   var isViewport: js.UndefOr[Boolean] = js.undefined
   /** [Method] Template method called when this Component s DOM structure is created  */
@@ -16,7 +15,7 @@ trait IViewport
 object IViewport {
   @scala.inline
   def apply(
-    IContainer: typings.extjs.Ext.container.IContainer = null,
+    IContainer: IContainer = null,
     isViewport: js.UndefOr[Boolean] = js.undefined,
     onRender: () => Unit = null
   ): IViewport = {

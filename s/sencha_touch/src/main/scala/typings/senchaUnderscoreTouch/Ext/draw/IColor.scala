@@ -33,7 +33,7 @@ trait IColor extends IBase {
   		* @param str String Color in string.
   		* @returns Object this
   		*/
-  var setFromString: js.UndefOr[js.Function1[/* str */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var setFromString: js.UndefOr[js.Function1[/* str */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Set current color based on the specified HSL values
   		* @param h Number Hue component (0..359)
   		* @param s Number Saturation component (0..1)
@@ -47,12 +47,12 @@ trait IColor extends IBase {
   		* @param color String/Array The color value (i.e 'rgb(255, 255, 255)', 'color: #ffffff'). Can also be an Array, in this case the function handles the first member.
   		* @returns String The color in hexadecimal format.
   		*/
-  var toHex: js.UndefOr[js.Function1[/* color */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var toHex: js.UndefOr[js.Function1[/* color */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Return the color in the hex format i e
   		* @returns String
   		*/
   @JSName("toString")
-  var toString_FIColor: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIColor: js.UndefOr[js.Function0[String]] = js.undefined
 }
 
 object IColor {
@@ -67,22 +67,22 @@ object IColor {
     createDarker: /* factor */ js.UndefOr[Double] => IColor = null,
     createLighter: /* factor */ js.UndefOr[Double] => IColor = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getGrayscale: () => Double = null,
     getHSL: /* target */ js.UndefOr[Array] => Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     lightnessFactor: Int | Double = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
-    setFromString: /* str */ js.UndefOr[java.lang.String] => _ = null,
+    setFromString: /* str */ js.UndefOr[String] => _ = null,
     setHSL: (/* h */ js.UndefOr[Double], /* s */ js.UndefOr[Double], /* l */ js.UndefOr[Double]) => _ = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toHex: /* color */ js.UndefOr[js.Any] => java.lang.String = null,
-    toString: () => java.lang.String = null,
+    toHex: /* color */ js.UndefOr[js.Any] => String = null,
+    toString: () => String = null,
     uses: Array = null
   ): IColor = {
     val __obj = js.Dynamic.literal()

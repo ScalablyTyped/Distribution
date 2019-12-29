@@ -3,7 +3,6 @@ package typings.semanticDashUiDashReact
 import typings.react.reactMod.StatelessComponent
 import typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps
 import typings.semanticDashUiDashReact.distCommonjsElementsImageImageMod.StrictImageProps
-import typings.semanticDashUiDashReact.distCommonjsViewsItemItemImageMod.ItemImageProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

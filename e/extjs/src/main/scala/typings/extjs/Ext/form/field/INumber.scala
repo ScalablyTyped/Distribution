@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait INumber
-  extends typings.extjs.Ext.form.field.ISpinner {
+trait INumber extends ISpinner {
   /** [Config Option] (Boolean) */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -13,31 +12,31 @@ trait INumber
   /** [Config Option] (Boolean) */
   var autoStripChars: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var baseChars: js.UndefOr[java.lang.String] = js.undefined
+  var baseChars: js.UndefOr[String] = js.undefined
   /** [Method] Template method to do any pre blur processing  */
   @JSName("beforeBlur")
   var beforeBlur_INumber: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Number) */
   var decimalPrecision: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var decimalSeparator: js.UndefOr[java.lang.String] = js.undefined
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value that would be included in a standard form submit for this field
   		* @returns String The value to be submitted, or null.
   		*/
   @JSName("getSubmitValue")
-  var getSubmitValue_INumber: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSubmitValue_INumber: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var maxText: js.UndefOr[java.lang.String] = js.undefined
+  var maxText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var maxValue: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var minText: js.UndefOr[java.lang.String] = js.undefined
+  var minText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var minValue: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var nanText: js.UndefOr[java.lang.String] = js.undefined
+  var nanText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var negativeText: js.UndefOr[java.lang.String] = js.undefined
+  var negativeText: js.UndefOr[String] = js.undefined
   /** [Method] Replaces any existing maxValue with the new value
   		* @param value Number The maximum value
   		*/
@@ -71,21 +70,21 @@ trait INumber
 object INumber {
   @scala.inline
   def apply(
-    ISpinner: typings.extjs.Ext.form.field.ISpinner = null,
+    ISpinner: ISpinner = null,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     allowExponential: js.UndefOr[Boolean] = js.undefined,
     autoStripChars: js.UndefOr[Boolean] = js.undefined,
-    baseChars: java.lang.String = null,
+    baseChars: String = null,
     beforeBlur: () => Unit = null,
     decimalPrecision: Int | Double = null,
-    decimalSeparator: java.lang.String = null,
-    getSubmitValue: () => java.lang.String = null,
-    maxText: java.lang.String = null,
+    decimalSeparator: String = null,
+    getSubmitValue: () => String = null,
+    maxText: String = null,
     maxValue: Int | Double = null,
-    minText: java.lang.String = null,
+    minText: String = null,
     minValue: Int | Double = null,
-    nanText: java.lang.String = null,
-    negativeText: java.lang.String = null,
+    nanText: String = null,
+    negativeText: String = null,
     setMaxValue: /* value */ js.UndefOr[Double] => Unit = null,
     setMinValue: /* value */ js.UndefOr[Double] => Unit = null,
     setSpinDownEnabled: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit = null,

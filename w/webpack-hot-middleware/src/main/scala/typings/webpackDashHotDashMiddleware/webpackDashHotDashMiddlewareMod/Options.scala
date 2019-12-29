@@ -1,7 +1,7 @@
 package typings.webpackDashHotDashMiddleware.webpackDashHotDashMiddlewareMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpackDashHotDashMiddleware.webpackDashHotDashMiddlewareNumbers.`false`
+import typings.webpackDashHotDashMiddleware.webpackDashHotDashMiddlewareBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

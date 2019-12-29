@@ -20,7 +20,7 @@ import typings.swiper.jsSwiperDotEsmMod.Parallax
 import typings.swiper.jsSwiperDotEsmMod.Scrollbar
 import typings.swiper.jsSwiperDotEsmMod.Virtual
 import typings.swiper.jsSwiperDotEsmMod.Zoom
-import typings.swiper.swiperNumbers.`true`
+import typings.swiper.swiperBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

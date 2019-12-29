@@ -1,6 +1,5 @@
 package typings.atLedgerhqHwDashTransportDashU2f
 
-import typings.atLedgerhqHwDashTransportDashU2f.atLedgerhqHwDashTransportDashU2fMod.TransportU2F
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,8 @@ object atLedgerhqHwDashTransportDashU2fMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    def open(`_`: js.Any): js.Promise[TransportU2F] = js.native
-    def open(`_`: js.Any, _openTimeout: Double): js.Promise[TransportU2F] = js.native
+    def open(_underscore: js.Any): js.Promise[TransportU2F] = js.native
+    def open(_underscore: js.Any, _openTimeout: Double): js.Promise[TransportU2F] = js.native
   }
   
   type TransportU2F = typings.atLedgerhqHwDashTransport.atLedgerhqHwDashTransportMod.default[String]

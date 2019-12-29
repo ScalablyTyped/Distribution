@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LeafletKeyboardEvent extends LeafletEvent {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.leaflet.leafletMod.DomEvent._PropagableEvent because Already inherited */ trait LeafletKeyboardEvent extends LeafletEvent {
   var originalEvent: KeyboardEvent
 }
 

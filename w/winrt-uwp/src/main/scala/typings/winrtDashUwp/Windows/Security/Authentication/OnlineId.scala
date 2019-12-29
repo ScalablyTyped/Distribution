@@ -9,15 +9,6 @@ import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.IAsyncAction
 import typings.winrtDashUwp.Windows.Foundation.IAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithOperation
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.doNotPrompt
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.promptIfNeeded
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.retypeCredentials
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.SignOutUserOperation
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.UserAuthenticationOperation
-import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.UserIdentity
 import typings.winrtDashUwp.Windows.WinRTError
 import scala.scalajs.js
 import scala.scalajs.js.`|`

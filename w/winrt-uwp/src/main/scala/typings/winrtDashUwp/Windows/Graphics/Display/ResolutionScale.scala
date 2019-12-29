@@ -1,23 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Display
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.invalid
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale100Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale120Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale125Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale140Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale150Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale160Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale175Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale180Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale200Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale225Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale250Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale300Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale350Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale400Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale450Percent
-import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale500Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionItemInsertTextRule.InsertAsSnippet
-import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionItemInsertTextRule.KeepWhitespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

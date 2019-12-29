@@ -1,6 +1,5 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.srcShadowUnderscoreCssMod.CssRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

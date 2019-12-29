@@ -12,25 +12,7 @@ import scala.scalajs.js.annotation._
 
 object mapboxDashGlStrings {
   @js.native
-  sealed trait `!` extends ExpressionName
-  
-  @js.native
-  sealed trait `!=` extends ExpressionName
-  
-  @js.native
-  sealed trait `%` extends ExpressionName
-  
-  @js.native
-  sealed trait `*` extends ExpressionName
-  
-  @js.native
-  sealed trait `+` extends ExpressionName
-  
-  @js.native
-  sealed trait `-` extends ExpressionName
-  
-  @js.native
-  sealed trait `/` extends ExpressionName
+  sealed trait `-_` extends ExpressionName
   
   @js.native
   sealed trait `2d` extends js.Object
@@ -39,19 +21,16 @@ object mapboxDashGlStrings {
   sealed trait `3d` extends js.Object
   
   @js.native
-  sealed trait `<` extends ExpressionName
+  sealed trait Asterisk extends ExpressionName
   
   @js.native
-  sealed trait `<=` extends ExpressionName
+  sealed trait EqualssignEqualssign extends ExpressionName
   
   @js.native
-  sealed trait `==` extends ExpressionName
+  sealed trait Exclamationmark extends ExpressionName
   
   @js.native
-  sealed trait `>` extends ExpressionName
-  
-  @js.native
-  sealed trait `>=` extends ExpressionName
+  sealed trait ExclamationmarkEqualssign extends ExpressionName
   
   @js.native
   sealed trait GET extends js.Object
@@ -60,13 +39,34 @@ object mapboxDashGlStrings {
   sealed trait Glyphs extends ResourceType
   
   @js.native
+  sealed trait Greaterthansign extends ExpressionName
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends ExpressionName
+  
+  @js.native
   sealed trait Image extends ResourceType
+  
+  @js.native
+  sealed trait Lessthansign extends ExpressionName
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends ExpressionName
   
   @js.native
   sealed trait POST extends js.Object
   
   @js.native
   sealed trait PUT extends js.Object
+  
+  @js.native
+  sealed trait Percentsign extends ExpressionName
+  
+  @js.native
+  sealed trait Plussign extends ExpressionName
+  
+  @js.native
+  sealed trait Slash extends ExpressionName
   
   @js.native
   sealed trait Source extends ResourceType
@@ -87,7 +87,7 @@ object mapboxDashGlStrings {
   sealed trait Unknown extends ResourceType
   
   @js.native
-  sealed trait `_backtick^_backtick` extends ExpressionName
+  sealed trait ^ extends ExpressionName
   
   @js.native
   sealed trait abs extends ExpressionName
@@ -612,43 +612,43 @@ object mapboxDashGlStrings {
   sealed trait zoomstart extends js.Object
   
   @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
-  @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
-  @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
-  @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
-  @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
-  @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
   def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   @scala.inline
   def `3d`: `3d` = "3d".asInstanceOf[`3d`]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def Glyphs: Glyphs = "Glyphs".asInstanceOf[Glyphs]
   @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
   def Image: Image = "Image".asInstanceOf[Image]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  @scala.inline
+  def Slash: Slash = "/".asInstanceOf[Slash]
   @scala.inline
   def Source: Source = "Source".asInstanceOf[Source]
   @scala.inline
@@ -662,7 +662,7 @@ object mapboxDashGlStrings {
   @scala.inline
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def abs: abs = "abs".asInstanceOf[abs]
   @scala.inline

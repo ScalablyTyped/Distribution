@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵNgClassR2Impl")
+@JSImport("@angular/common", "\u0275NgClassR2Impl")
 @js.native
 class ɵNgClassR2Impl protected () extends ɵNgClassImpl {
   def this(

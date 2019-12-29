@@ -24,7 +24,8 @@ class CommandButton protected () extends js.Object {
   var FontWeight: Double = js.native
   var ForeColor: Double = js.native
   var Locked: Boolean = js.native
-  var `MSForms.CommandButton_typekey`: CommandButton = js.native
+  @JSName("MSForms.CommandButton_typekey")
+  var MSFormsDotCommandButton_typekey: CommandButton = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var Picture: StdPicture = js.native

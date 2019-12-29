@@ -1,8 +1,5 @@
 package typings.dnssd
 
-import typings.dnssd.dnssdMod.Advertisement
-import typings.dnssd.dnssdMod.Browser
-import typings.dnssd.dnssdMod.ServiceType
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

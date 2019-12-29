@@ -6,8 +6,6 @@ import typings.rrule.distEsmSrcIterresultMod.IterArgs
 import typings.rrule.distEsmSrcNlpI18nMod.Language
 import typings.rrule.distEsmSrcNlpTotextMod.DateFormatter
 import typings.rrule.distEsmSrcNlpTotextMod.GetText
-import typings.rrule.distEsmSrcRruleMod.RRule
-import typings.rrule.distEsmSrcTypesMod.Frequency
 import typings.rrule.distEsmSrcTypesMod.IterResultType
 import typings.rrule.distEsmSrcTypesMod.Options
 import typings.rrule.distEsmSrcTypesMod.ParsedOptions
@@ -129,7 +127,7 @@ object distEsmSrcRruleMod extends js.Object {
   
   val DEFAULT_OPTIONS: Options = js.native
   val defaultKeys: js.Array[
-    until | bymonthday | freq | dtstart | interval | wkst | count | tzid | bysetpos | bymonth | bynmonthday | byyearday | byweekno | byweekday | bynweekday | byhour | byminute | bysecond | byeaster
+    freq | dtstart | interval | wkst | count | until | tzid | bysetpos | bymonth | bymonthday | bynmonthday | byyearday | byweekno | byweekday | bynweekday | byhour | byminute | bysecond | byeaster
   ] = js.native
   @js.native
   object Days extends js.Object {
@@ -145,21 +143,21 @@ object distEsmSrcRruleMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    val DAILY: Frequency = js.native
+    val DAILY: String | Double = js.native
     val FR: Weekday = js.native
     val FREQUENCIES: js.Array[String] = js.native
-    val HOURLY: Frequency = js.native
-    val MINUTELY: Frequency = js.native
+    val HOURLY: String | Double = js.native
+    val MINUTELY: String | Double = js.native
     val MO: Weekday = js.native
-    val MONTHLY: Frequency = js.native
+    val MONTHLY: String | Double = js.native
     val SA: Weekday = js.native
-    val SECONDLY: Frequency = js.native
+    val SECONDLY: String | Double = js.native
     val SU: Weekday = js.native
     val TH: Weekday = js.native
     val TU: Weekday = js.native
     val WE: Weekday = js.native
-    val WEEKLY: Frequency = js.native
-    val YEARLY: Frequency = js.native
+    val WEEKLY: String | Double = js.native
+    val YEARLY: String | Double = js.native
     @JSName("optionsToString")
     var optionsToString_Original: js.Function1[/* options */ Partial[Options], String] = js.native
     @JSName("parseString")

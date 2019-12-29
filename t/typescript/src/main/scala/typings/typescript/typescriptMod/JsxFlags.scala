@@ -1,10 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.JsxFlags.IntrinsicElement
-import typings.typescript.typescriptMod.JsxFlags.IntrinsicIndexedElement
-import typings.typescript.typescriptMod.JsxFlags.IntrinsicNamedElement
-import typings.typescript.typescriptMod.JsxFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

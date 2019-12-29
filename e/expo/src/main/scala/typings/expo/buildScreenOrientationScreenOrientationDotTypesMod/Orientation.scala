@@ -1,13 +1,6 @@
 package typings.expo.buildScreenOrientationScreenOrientationDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_LEFT
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_RIGHT
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_DOWN
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_UP
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

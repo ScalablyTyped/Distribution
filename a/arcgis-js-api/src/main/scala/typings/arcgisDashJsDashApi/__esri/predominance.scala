@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +34,7 @@ trait predominance extends js.Object {
     * @param params.includeOpacityVariable Indicates whether to include data-driven opacity in the final renderer. If `true`, features where the predominant value beats all others by a large margin are given a high opacity. Features where the predominant value beats others by a small margin will be assigned a low opacity, indicating that while the feature has a winning value, it doesn't win by much.  ![predominance-opacity](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/smartmapping/predominance-opacity.png)
     * @param params.includeSizeVariable Indicates whether to include data-driven size in the final renderer. If `true`, features will be assigned a sized based on the sum of all competing values in the `fields` param. Features with small total counts will be sized with small icons or lines depending on the geometry type of the layer, and features with large total counts will be sized with large icons or lines. Enabling this option is good for visualizing how influential a particular feature is compared to the dataset as a whole. It removes bias introduced by features with large geographic areas, but relatively small data values.  ![predominance-size](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/smartmapping/predominance-size.png)
     * @param params.outlineOptimizationEnabled Only for polygon layers. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    * @param params.sizeOptimizationEnabled Only for polygon layers when `includeSizeVariable` is `true`. Indicates whether the icon sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * @param params.sizeOptimizationEnabled Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     * @param params.legendOptions Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     * @param params.statistics A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function. The `createAgeRenderer()` method generates an Arcade expression and executes a statistics query against the layer for the result of the expression. If statistics for the expression have already been generated, then pass the object here to avoid making a second statistics query.
     * @param params.sortBy
@@ -67,7 +66,7 @@ trait predominance extends js.Object {
     *   multiply | Multiplies geometry/texture color value with the symbol `color` value. The result is a darker color. Multiplying with white keeps the geometry color the same.
     *
     */
-  def createRenderer(params: predominanceCreateRendererParams): IPromise[predominanceRendererResult]
+  def createRenderer(params: predominanceCreateRendererParams): js.Promise[predominanceRendererResult]
 }
 
 @JSGlobal("__esri.predominance")

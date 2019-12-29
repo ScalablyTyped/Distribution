@@ -17,7 +17,7 @@ trait PagerClickEventArgs extends js.Object {
   var gotoSheet: js.UndefOr[Double] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns whether new sheet icon is clicked.
     */
   var newSheet: js.UndefOr[Boolean] = js.undefined
@@ -35,7 +35,7 @@ object PagerClickEventArgs {
     activeSheet: Int | Double = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     gotoSheet: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     newSheet: js.UndefOr[Boolean] = js.undefined,
     target: HTMLElement = null,
     `type`: String = null

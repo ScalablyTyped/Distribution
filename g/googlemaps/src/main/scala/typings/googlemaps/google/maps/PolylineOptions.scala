@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +31,7 @@ trait PolylineOptions extends js.Object {
   /** The icons to be rendered along the polyline. */
   var icons: js.UndefOr[js.Array[IconSequence]] = js.undefined
   /** Map on which to display Polyline. */
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   /**
     * The ordered sequence of coordinates of the Polyline.
     * This path may be specified using either a simple array of LatLngs, or an
@@ -62,7 +63,7 @@ object PolylineOptions {
     editable: js.UndefOr[Boolean] = js.undefined,
     geodesic: js.UndefOr[Boolean] = js.undefined,
     icons: js.Array[IconSequence] = null,
-    map: Map = null,
+    map: Map[Element] = null,
     path: MVCArray[LatLng] | (js.Array[LatLng | LatLngLiteral]) = null,
     strokeColor: String = null,
     strokeOpacity: Int | Double = null,

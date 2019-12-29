@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object fastmap extends js.Object {
   def apply(): FastMap = js.native
-  def apply(`_`: js.Object): FastMap = js.native
+  def apply(_underscore: js.Object): FastMap = js.native
 }
 

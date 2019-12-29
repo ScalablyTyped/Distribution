@@ -3,7 +3,7 @@ package typings.three.srcMaterialsSpriteMaterialMod
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMathColorMod.Color
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.threeNumbers.`true`
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

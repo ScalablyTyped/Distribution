@@ -1,8 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatRoomOperationType.Ban
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatRoomOperationType.Unban
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

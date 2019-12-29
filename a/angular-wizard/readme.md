@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-wizard
 
-Typings are for version 0.6.1
+Typings are for version 1.1.1
 
 ## Library description:
 Easy to use Wizard library for Angular JS

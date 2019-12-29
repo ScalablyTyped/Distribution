@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the current selectionMode
   		* @returns String The selectionMode: 'SINGLE', 'MULTI' or 'SIMPLE'.
   		*/
-  var getSelectionMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSelectionMode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets the current store instance
   		* @returns Ext.data.AbstractStore The store, null if one does not exist.
   		*/
@@ -151,7 +151,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the current selectionMode
   		* @param selMode String 'SINGLE', 'MULTI' or 'SIMPLE'.
   		*/
-  var setSelectionMode: js.UndefOr[js.Function1[/* selMode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSelectionMode: js.UndefOr[js.Function1[/* selMode */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var toggleOnClick: js.UndefOr[Boolean] = js.undefined
   /** [Method] Unbinds listeners from this component to the store
@@ -181,17 +181,17 @@ object IModel {
     deselectAll: /* suppressEvent */ js.UndefOr[Boolean] => Unit = null,
     deselectRange: (/* startRow */ js.UndefOr[js.Any], /* endRow */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getCount: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLastSelected: () => IModel = null,
     getSelection: () => Array = null,
-    getSelectionMode: () => java.lang.String = null,
+    getSelectionMode: () => String = null,
     getStore: () => IAbstractStore = null,
     getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hasSelection: () => Boolean = null,
     inheritableStatics: js.Any = null,
@@ -210,8 +210,8 @@ object IModel {
     onBindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     onUnbindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     pruneRemoved: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -223,13 +223,13 @@ object IModel {
     self: IClass = null,
     setLastFocused: /* record */ js.UndefOr[IModel] => Unit = null,
     setLocked: /* locked */ js.UndefOr[Boolean] => Unit = null,
-    setSelectionMode: /* selMode */ js.UndefOr[java.lang.String] => Unit = null,
+    setSelectionMode: /* selMode */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     toggleOnClick: js.UndefOr[Boolean] = js.undefined,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     uses: Array = null
   ): IModel = {

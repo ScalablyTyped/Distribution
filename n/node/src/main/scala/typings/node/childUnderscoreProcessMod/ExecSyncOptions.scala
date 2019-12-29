@@ -8,25 +8,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExecSyncOptions extends CommonOptions {
-  var encoding: js.UndefOr[java.lang.String] = js.undefined
-  var input: js.UndefOr[java.lang.String | Uint8Array] = js.undefined
+  var encoding: js.UndefOr[String] = js.undefined
+  var input: js.UndefOr[String | Uint8Array] = js.undefined
   var killSignal: js.UndefOr[Signals | Double] = js.undefined
   var maxBuffer: js.UndefOr[Double] = js.undefined
-  var shell: js.UndefOr[java.lang.String] = js.undefined
+  var shell: js.UndefOr[String] = js.undefined
   var stdio: js.UndefOr[StdioOptions] = js.undefined
 }
 
 object ExecSyncOptions {
   @scala.inline
   def apply(
-    cwd: java.lang.String = null,
-    encoding: java.lang.String = null,
+    cwd: String = null,
+    encoding: String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
-    input: java.lang.String | Uint8Array = null,
+    input: String | Uint8Array = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
-    shell: java.lang.String = null,
+    shell: String = null,
     stdio: StdioOptions = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,

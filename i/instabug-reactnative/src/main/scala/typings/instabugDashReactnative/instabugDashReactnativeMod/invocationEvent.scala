@@ -1,11 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.floatingButton
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.none
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.screenshot
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.shake
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.twoFingersSwipe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

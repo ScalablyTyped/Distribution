@@ -106,8 +106,11 @@ trait Typeofmaps extends js.Object {
   /***** MVC *****/
   /** Base class implementing KVO. */
   var MVCObject: Instantiable0[typings.googlemaps.google.maps.MVCObject]
-  /***** Map *****/
-  var Map: Instantiable1[/* mapDiv */ Element, typings.googlemaps.google.maps.Map]
+  /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map Maps JavaScript API} */
+  var Map: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls $anonfun was tparam E */ /* mapDiv */ js.Any, 
+    typings.googlemaps.google.maps.Map[Element]
+  ]
   var MapCanvasProjection: Instantiable0[typings.googlemaps.google.maps.MapCanvasProjection]
   var MapTypeRegistry: Instantiable0[typings.googlemaps.google.maps.MapTypeRegistry]
   /**
@@ -168,7 +171,10 @@ object Typeofmaps {
     LatLngBounds: Instantiable0[LatLngBounds],
     MVCArray: Instantiable0[MVCArray[js.Object]],
     MVCObject: Instantiable0[MVCObject],
-    Map: Instantiable1[/* mapDiv */ Element, Map],
+    Map: Instantiable1[
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam E */ /* mapDiv */ js.Any, 
+      Map[Element]
+    ],
     MapCanvasProjection: Instantiable0[MapCanvasProjection],
     MapTypeRegistry: Instantiable0[MapTypeRegistry],
     Marker: TypeofClassMarker,

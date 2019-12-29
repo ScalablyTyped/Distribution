@@ -1,13 +1,12 @@
 package typings.reactDashContentDashLoader.reactDashContentDashLoaderMod
 
-import typings.react.reactMod._Global_.JSX.Element
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-content-loader", "Facebook")
 @js.native
-object Facebook extends js.Object {
-  def apply(props: IContentLoaderProps): Element = js.native
-}
+object Facebook extends TopLevel[FC[IContentLoaderProps]]
 

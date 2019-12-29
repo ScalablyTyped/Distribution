@@ -129,7 +129,7 @@ class Client protected () extends js.Object {
     * Parameters passed to the onMessageArrived callback are:
     * <li> {@link Paho.MQTT.Message} that has arrived.
     */
-  def onMessageArrived(message: typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Message): Unit = js.native
+  def onMessageArrived(message: Message): Unit = js.native
   /**
     * called when a message has been delivered.
     * All processing that this Client will ever do has been completed. So, for example,
@@ -138,14 +138,14 @@ class Client protected () extends js.Object {
     * Parameters passed to the onMessageDelivered callback are:
     * <li>{@link Paho.MQTT.Message} that was delivered.
     */
-  def onMessageDelivered(message: typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Message): Unit = js.native
+  def onMessageDelivered(message: Message): Unit = js.native
   /**
     * Send a message to the consumers of the destination in the Message.
     *
     * @param message - <b>mandatory</b> The {@link Paho.MQTT.Message} object to be sent.
     * @throws {InvalidState} if the client is not connected.
     */
-  def send(message: typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Message): Unit = js.native
+  def send(message: Message): Unit = js.native
   /**
     * Send a message to the consumers of the destination in the Message.
     *

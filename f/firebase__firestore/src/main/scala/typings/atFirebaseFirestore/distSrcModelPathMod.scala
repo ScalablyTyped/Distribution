@@ -1,9 +1,6 @@
 package typings.atFirebaseFirestore
 
 import typings.atFirebaseFirestore.atFirebaseFirestoreStrings.__name__
-import typings.atFirebaseFirestore.distSrcModelPathMod.BasePath
-import typings.atFirebaseFirestore.distSrcModelPathMod.FieldPath
-import typings.atFirebaseFirestore.distSrcModelPathMod.ResourcePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

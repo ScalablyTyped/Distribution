@@ -6,8 +6,6 @@ import typings.googleDashProtobuf.googleDashProtobufMod.BinaryWriter
 import typings.googleDashProtobuf.googleDashProtobufMod.ExtensionFieldBinaryInfo
 import typings.googleDashProtobuf.googleDashProtobufMod.ExtensionFieldInfo
 import typings.googleDashProtobuf.googleDashProtobufMod.Message
-import typings.googleDashProtobuf.googleProtobufEmptyUnderscorePbMod.Empty
-import typings.googleDashProtobuf.googleProtobufEmptyUnderscorePbMod.Empty.AsObject
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -24,7 +24,8 @@ class CalloutFormat protected () extends js.Object {
   val Length: Double = js.native
   val Parent: js.Any = js.native
   var Type: MsoCalloutType = js.native
-  var `Word.CalloutFormat_typekey`: CalloutFormat = js.native
+  @JSName("Word.CalloutFormat_typekey")
+  var WordDotCalloutFormat_typekey: CalloutFormat = js.native
   def AutomaticLength(): Unit = js.native
   def CustomDrop(Drop: Double): Unit = js.native
   def CustomLength(Length: Double): Unit = js.native

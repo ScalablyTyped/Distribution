@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.deviceNotConnected
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.disabledByPolicy
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.disabledByUser
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.notSupported
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.otherError
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.radioNotAvailable
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.resourceInUse
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothError.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

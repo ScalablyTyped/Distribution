@@ -31,7 +31,7 @@ object CompileFunctionOptions {
     cachedData: Buffer = null,
     columnOffset: Int | Double = null,
     contextExtensions: js.Array[js.Object] = null,
-    filename: java.lang.String = null,
+    filename: String = null,
     lineOffset: Int | Double = null,
     parsingContext: Context = null,
     produceCachedData: js.UndefOr[Boolean] = js.undefined

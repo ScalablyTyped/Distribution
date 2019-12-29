@@ -1,14 +1,6 @@
 package typings.syslogDashClient.syslogDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.syslogDashClient.syslogDashClientMod.Severity.Alert
-import typings.syslogDashClient.syslogDashClientMod.Severity.Critical
-import typings.syslogDashClient.syslogDashClientMod.Severity.Debug
-import typings.syslogDashClient.syslogDashClientMod.Severity.Emergency
-import typings.syslogDashClient.syslogDashClientMod.Severity.Error
-import typings.syslogDashClient.syslogDashClientMod.Severity.Informational
-import typings.syslogDashClient.syslogDashClientMod.Severity.Notice
-import typings.syslogDashClient.syslogDashClientMod.Severity.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,18 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.APRIL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.AUGUST
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.DECEMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.FEBRUARY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.JANUARY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.JULY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.JUNE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.MARCH
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.MAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.NOVEMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.OCTOBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month.SEPTEMBER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

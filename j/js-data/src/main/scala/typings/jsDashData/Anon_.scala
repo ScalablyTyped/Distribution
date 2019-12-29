@@ -5,14 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ extends js.Object {
-  def `!=`(value: js.Any, predicate: js.Any): Boolean
-  def `!==`(value: js.Any, predicate: js.Any): Boolean
-  def `<`(value: js.Any, predicate: js.Any): Boolean
-  def `<=`(value: js.Any, predicate: js.Any): Boolean
-  def `==`(value: js.Any, predicate: js.Any): Boolean
-  def `===`(value: js.Any, predicate: js.Any): Boolean
-  def `>`(value: js.Any, predicate: js.Any): Boolean
-  def `>=`(value: js.Any, predicate: js.Any): Boolean
+  @JSName("==")
+  def EqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean
+  @JSName("===")
+  def EqualssignEqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean
+  @JSName("!=")
+  def ExclamationmarkEqualssign(value: js.Any, predicate: js.Any): Boolean
+  @JSName("!==")
+  def ExclamationmarkEqualssignEqualssign(value: js.Any, predicate: js.Any): Boolean
+  @JSName(">")
+  def Greaterthansign(value: js.Any, predicate: js.Any): Boolean
+  @JSName(">=")
+  def GreaterthansignEqualssign(value: js.Any, predicate: js.Any): Boolean
+  @JSName("<")
+  def Lessthansign(value: js.Any, predicate: js.Any): Boolean
+  @JSName("<=")
+  def LessthansignEqualssign(value: js.Any, predicate: js.Any): Boolean
   def contains(value: js.Any, predicate: js.Any): Boolean
   def in(value: js.Any, predicate: js.Any): Boolean
   def isectEmpty(value: js.Any, predicate: js.Any): Boolean
@@ -24,14 +32,14 @@ trait Anon_ extends js.Object {
 object Anon_ {
   @scala.inline
   def apply(
-    `!=`: (js.Any, js.Any) => Boolean,
-    `!==`: (js.Any, js.Any) => Boolean,
-    `<`: (js.Any, js.Any) => Boolean,
-    `<=`: (js.Any, js.Any) => Boolean,
-    `==`: (js.Any, js.Any) => Boolean,
-    `===`: (js.Any, js.Any) => Boolean,
-    `>`: (js.Any, js.Any) => Boolean,
-    `>=`: (js.Any, js.Any) => Boolean,
+    EqualssignEqualssign: (js.Any, js.Any) => Boolean,
+    EqualssignEqualssignEqualssign: (js.Any, js.Any) => Boolean,
+    ExclamationmarkEqualssign: (js.Any, js.Any) => Boolean,
+    ExclamationmarkEqualssignEqualssign: (js.Any, js.Any) => Boolean,
+    Greaterthansign: (js.Any, js.Any) => Boolean,
+    GreaterthansignEqualssign: (js.Any, js.Any) => Boolean,
+    Lessthansign: (js.Any, js.Any) => Boolean,
+    LessthansignEqualssign: (js.Any, js.Any) => Boolean,
     contains: (js.Any, js.Any) => Boolean,
     in: (js.Any, js.Any) => Boolean,
     isectEmpty: (js.Any, js.Any) => Boolean,
@@ -40,14 +48,14 @@ object Anon_ {
     notIn: (js.Any, js.Any) => Boolean
   ): Anon_ = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains), in = js.Any.fromFunction2(in), isectEmpty = js.Any.fromFunction2(isectEmpty), isectNotEmpty = js.Any.fromFunction2(isectNotEmpty), notContains = js.Any.fromFunction2(notContains), notIn = js.Any.fromFunction2(notIn))
-    __obj.updateDynamic("!=")(js.Any.fromFunction2(`!=`))
-    __obj.updateDynamic("!==")(js.Any.fromFunction2(`!==`))
-    __obj.updateDynamic("<")(js.Any.fromFunction2(`<`))
-    __obj.updateDynamic("<=")(js.Any.fromFunction2(`<=`))
-    __obj.updateDynamic("==")(js.Any.fromFunction2(`==`))
-    __obj.updateDynamic("===")(js.Any.fromFunction2(`===`))
-    __obj.updateDynamic(">")(js.Any.fromFunction2(`>`))
-    __obj.updateDynamic(">=")(js.Any.fromFunction2(`>=`))
+    __obj.updateDynamic("==")(js.Any.fromFunction2(EqualssignEqualssign))
+    __obj.updateDynamic("===")(js.Any.fromFunction2(EqualssignEqualssignEqualssign))
+    __obj.updateDynamic("!=")(js.Any.fromFunction2(ExclamationmarkEqualssign))
+    __obj.updateDynamic("!==")(js.Any.fromFunction2(ExclamationmarkEqualssignEqualssign))
+    __obj.updateDynamic(">")(js.Any.fromFunction2(Greaterthansign))
+    __obj.updateDynamic(">=")(js.Any.fromFunction2(GreaterthansignEqualssign))
+    __obj.updateDynamic("<")(js.Any.fromFunction2(Lessthansign))
+    __obj.updateDynamic("<=")(js.Any.fromFunction2(LessthansignEqualssign))
     __obj.asInstanceOf[Anon_]
   }
 }

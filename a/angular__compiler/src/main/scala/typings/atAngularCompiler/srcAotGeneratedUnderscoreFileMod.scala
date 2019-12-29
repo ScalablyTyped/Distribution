@@ -1,6 +1,5 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.srcAotGeneratedUnderscoreFileMod.GeneratedFile
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

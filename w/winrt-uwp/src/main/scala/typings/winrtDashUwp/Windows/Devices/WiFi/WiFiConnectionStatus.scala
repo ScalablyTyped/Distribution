@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiConnectionStatus.accessRevoked
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiConnectionStatus.invalidCredential
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiConnectionStatus.networkNotAvailable
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiConnectionStatus.success
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiConnectionStatus.timeout
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiConnectionStatus.unspecifiedFailure
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiConnectionStatus.unsupportedAuthenticationProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

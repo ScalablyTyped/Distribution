@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryRecursionOption.ChildFirst
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryRecursionOption.ParentFirst
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

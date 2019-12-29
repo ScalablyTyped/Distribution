@@ -9,6 +9,7 @@ import typings.atNivoBar.dataFromindexeskeysLegendProps
 import typings.atNivoColors.atNivoColorsMod.InheritedColorProp
 import typings.atNivoColors.atNivoColorsMod.OrdinalColorsInstruction
 import typings.atNivoCore.Anon_
+import typings.atNivoCore.Anon_Id
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.CartesianMarkerProps
 import typings.atNivoCore.atNivoCoreMod.Theme
@@ -32,7 +33,7 @@ trait BarSvgProps extends js.Object {
   var borderWidth: js.UndefOr[Double] = js.undefined
   var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
   var data: js.Array[js.Object]
-  var defs: js.UndefOr[js.Array[typings.atNivoCore.Anon_Id]] = js.undefined
+  var defs: js.UndefOr[js.Array[Anon_Id]] = js.undefined
   var enableGridX: js.UndefOr[Boolean] = js.undefined
   var enableGridY: js.UndefOr[Boolean] = js.undefined
   var enableLabel: js.UndefOr[Boolean] = js.undefined
@@ -84,7 +85,7 @@ object BarSvgProps {
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
     colors: OrdinalColorsInstruction[_] = null,
-    defs: js.Array[typings.atNivoCore.Anon_Id] = null,
+    defs: js.Array[Anon_Id] = null,
     enableGridX: js.UndefOr[Boolean] = js.undefined,
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enableLabel: js.UndefOr[Boolean] = js.undefined,

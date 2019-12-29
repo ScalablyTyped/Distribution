@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.apiregistration.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.apiregistrationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait APIServiceList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `apiregistrationDOTk8sDOTio/v1beta1`
+  val apiVersion: apiregistrationDotk8sDotioSlashv1beta1
   val items: js.Array[APIService]
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
@@ -31,7 +31,7 @@ trait APIServiceList extends js.Object {
 object APIServiceList {
   @scala.inline
   def apply(
-    apiVersion: `apiregistrationDOTk8sDOTio/v1beta1`,
+    apiVersion: apiregistrationDotk8sDotioSlashv1beta1,
     items: js.Array[APIService],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.APIServiceList,
     metadata: ListMeta

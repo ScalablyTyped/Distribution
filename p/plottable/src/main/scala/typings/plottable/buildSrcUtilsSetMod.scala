@@ -1,6 +1,5 @@
 package typings.plottable
 
-import typings.plottable.buildSrcUtilsSetMod.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

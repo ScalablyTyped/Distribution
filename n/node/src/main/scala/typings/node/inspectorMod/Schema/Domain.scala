@@ -11,16 +11,16 @@ trait Domain extends js.Object {
   /**
     * Domain name.
     */
-  var name: java.lang.String
+  var name: String
   /**
     * Domain version.
     */
-  var version: java.lang.String
+  var version: String
 }
 
 object Domain {
   @scala.inline
-  def apply(name: java.lang.String, version: java.lang.String): Domain = {
+  def apply(name: String, version: String): Domain = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Domain]

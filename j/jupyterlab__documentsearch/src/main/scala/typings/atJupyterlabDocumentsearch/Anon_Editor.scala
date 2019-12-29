@@ -12,7 +12,7 @@ trait Anon_Editor extends js.Object {
 object Anon_Editor {
   @scala.inline
   def apply(editor: CodeMirrorEditor): Anon_Editor = {
-    val __obj = js.Dynamic.literal(editor = editor)
+    val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Editor]
   }

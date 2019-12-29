@@ -12,7 +12,8 @@ class HTMLSubmit protected () extends js.Object {
   var Encoding: String = js.native
   var HTMLName: String = js.native
   var HTMLType: String = js.native
-  var `MSForms.HTMLSubmit_typekey`: HTMLSubmit = js.native
+  @JSName("MSForms.HTMLSubmit_typekey")
+  var MSFormsDotHTMLSubmit_typekey: HTMLSubmit = js.native
   var Method: String = js.native
 }
 

@@ -1,7 +1,6 @@
 package typings.semanticDashUiDashSearch.SemanticUI.SearchSettings
 
 import typings.semanticDashUiDashApi.SemanticUI.ApiSettings
-import typings.semanticDashUiDashSearch.JQuery
 import typings.semanticDashUiDashSearch.SemanticUI.Search.ClassNameSettings
 import typings.semanticDashUiDashSearch.SemanticUI.Search.ErrorSettings
 import typings.semanticDashUiDashSearch.SemanticUI.Search.FieldsSettings
@@ -9,7 +8,7 @@ import typings.semanticDashUiDashSearch.SemanticUI.Search.MetadataSettings
 import typings.semanticDashUiDashSearch.SemanticUI.Search.RegExpSettings
 import typings.semanticDashUiDashSearch.SemanticUI.Search.SelectorSettings
 import typings.semanticDashUiDashSearch.SemanticUI.Search.TemplatesSettings
-import typings.semanticDashUiDashSearch.semanticDashUiDashSearchNumbers.`false`
+import typings.semanticDashUiDashSearch.semanticDashUiDashSearchBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -160,23 +159,23 @@ trait _Impl extends js.Object {
   /**
     * Callback on server response
     */
-  def onResults(`this`: JQuery, response: js.Any): Unit
+  def onResults(response: js.Any): Unit
   /**
     * Callback after processing element template to add HTML to results. Function should return false to prevent default actions.
     */
-  def onResultsAdd(`this`: JQuery, html: String): `false` | Unit
+  def onResultsAdd(html: String): `false` | Unit
   /**
     * Callback when results are closed
     */
-  def onResultsClose(`this`: JQuery): Unit
+  def onResultsClose(): Unit
   /**
     * Callback when results are opened
     */
-  def onResultsOpen(`this`: JQuery): Unit
+  def onResultsOpen(): Unit
   /**
     * Callback on search query
     */
-  def onSearchQuery(`this`: JQuery, query: String): Unit
+  def onSearchQuery(query: String): Unit
   // endregion
   // region Callbacks
   /**
@@ -184,7 +183,7 @@ trait _Impl extends js.Object {
     * The first parameter includes the filtered response results for that element.
     * The function should return false to prevent default action (closing search results and selecting value).
     */
-  def onSelect(`this`: JQuery, result: js.Any, response: js.Any): `false` | Unit
+  def onSelect(result: js.Any, response: js.Any): `false` | Unit
 }
 
 object _Impl {
@@ -204,12 +203,12 @@ object _Impl {
     minCharacters: Double,
     name: String,
     namespace: String,
-    onResults: (JQuery, js.Any) => Unit,
-    onResultsAdd: (JQuery, String) => `false` | Unit,
-    onResultsClose: JQuery => Unit,
-    onResultsOpen: JQuery => Unit,
-    onSearchQuery: (JQuery, String) => Unit,
-    onSelect: (JQuery, js.Any, js.Any) => `false` | Unit,
+    onResults: js.Any => Unit,
+    onResultsAdd: String => `false` | Unit,
+    onResultsClose: () => Unit,
+    onResultsOpen: () => Unit,
+    onSearchQuery: String => Unit,
+    onSelect: (js.Any, js.Any) => `false` | Unit,
     performance: Boolean,
     regExp: RegExpSettings,
     searchDelay: Double,
@@ -225,7 +224,7 @@ object _Impl {
     `type`: String,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hideDelay = hideDelay.asInstanceOf[js.Any], maxResults = maxResults.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onResults = js.Any.fromFunction2(onResults), onResultsAdd = js.Any.fromFunction2(onResultsAdd), onResultsClose = js.Any.fromFunction1(onResultsClose), onResultsOpen = js.Any.fromFunction1(onResultsOpen), onSearchQuery = js.Any.fromFunction2(onSearchQuery), onSelect = js.Any.fromFunction3(onSelect), performance = performance.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], searchDelay = searchDelay.asInstanceOf[js.Any], searchFields = searchFields.asInstanceOf[js.Any], searchFullText = searchFullText.asInstanceOf[js.Any], selectFirstResult = selectFirstResult.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], showNoResults = showNoResults.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hideDelay = hideDelay.asInstanceOf[js.Any], maxResults = maxResults.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], minCharacters = minCharacters.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onResults = js.Any.fromFunction1(onResults), onResultsAdd = js.Any.fromFunction1(onResultsAdd), onResultsClose = js.Any.fromFunction0(onResultsClose), onResultsOpen = js.Any.fromFunction0(onResultsOpen), onSearchQuery = js.Any.fromFunction1(onSearchQuery), onSelect = js.Any.fromFunction2(onSelect), performance = performance.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], searchDelay = searchDelay.asInstanceOf[js.Any], searchFields = searchFields.asInstanceOf[js.Any], searchFullText = searchFullText.asInstanceOf[js.Any], selectFirstResult = selectFirstResult.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], showNoResults = showNoResults.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }

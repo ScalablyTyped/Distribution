@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Azure
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Azuredark
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.FlatDark
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.FlatLight
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.GradientDark
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.GradientLight
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Lime
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.LimeDark
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Saffron
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.SaffronDark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

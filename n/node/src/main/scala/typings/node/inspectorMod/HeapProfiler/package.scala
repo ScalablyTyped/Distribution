@@ -8,5 +8,5 @@ package object HeapProfiler {
   /**
     * Heap snapshot object id.
     */
-  type HeapSnapshotObjectId = java.lang.String
+  type HeapSnapshotObjectId = String
 }

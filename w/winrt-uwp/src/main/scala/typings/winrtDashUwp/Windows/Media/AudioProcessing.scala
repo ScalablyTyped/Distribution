@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.AudioProcessing.default
-import typings.winrtDashUwp.Windows.Media.AudioProcessing.raw
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

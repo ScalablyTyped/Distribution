@@ -16,6 +16,7 @@ class Interior protected () extends js.Object {
   var Pattern: js.Any = js.native
   var PatternColor: js.Any = js.native
   var PatternColorIndex: js.Any = js.native
-  var `PowerPoint.Interior_typekey`: Interior = js.native
+  @JSName("PowerPoint.Interior_typekey")
+  var PowerPointDotInterior_typekey: Interior = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsIconIconMod
 
-import typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`false`
+import typings.atBlueprintjsCore.atBlueprintjsCoreBooleans.`false`
 import typings.atBlueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps

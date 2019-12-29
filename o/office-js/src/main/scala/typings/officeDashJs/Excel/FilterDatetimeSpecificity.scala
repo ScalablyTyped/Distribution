@@ -1,12 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.FilterDatetimeSpecificity.day
-import typings.officeDashJs.Excel.FilterDatetimeSpecificity.hour
-import typings.officeDashJs.Excel.FilterDatetimeSpecificity.minute
-import typings.officeDashJs.Excel.FilterDatetimeSpecificity.month
-import typings.officeDashJs.Excel.FilterDatetimeSpecificity.second
-import typings.officeDashJs.Excel.FilterDatetimeSpecificity.year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

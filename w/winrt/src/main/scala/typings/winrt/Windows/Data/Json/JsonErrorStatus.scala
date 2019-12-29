@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Data.Json
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Data.Json.JsonErrorStatus.implementationLimit
-import typings.winrt.Windows.Data.Json.JsonErrorStatus.invalidJsonNumber
-import typings.winrt.Windows.Data.Json.JsonErrorStatus.invalidJsonString
-import typings.winrt.Windows.Data.Json.JsonErrorStatus.jsonValueNotFound
-import typings.winrt.Windows.Data.Json.JsonErrorStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

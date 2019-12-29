@@ -6,8 +6,6 @@ import typings.node.childUnderscoreProcessMod.ChildProcess
 import typings.node.netMod.Socket
 import typings.std.Error
 import typings.vscodeDashJsonrpc.libEventsMod.Disposable
-import typings.vscodeDashJsonrpc.libMessageWriterMod.AbstractMessageWriter
-import typings.vscodeDashJsonrpc.libMessageWriterMod.MessageWriter
 import typings.vscodeDashJsonrpc.libMessagesMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.node.NodeJS
 
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,14 +12,14 @@ trait ProcessReport extends js.Object {
     * working directory of the Node.js process.
     * @default '' indicating that reports are written to the current
     */
-  var directory: java.lang.String = js.native
+  var directory: String = js.native
   /**
     * Filename where the report is written.
     * The default value is the empty string.
     * @default '' the output filename will be comprised of a timestamp,
     * PID, and sequence number.
     */
-  var filename: java.lang.String = js.native
+  var filename: String = js.native
   /**
     * If true, a diagnostic report is generated on fatal errors,
     * such as out of memory errors or failed C++ assertions.
@@ -46,8 +46,8 @@ trait ProcessReport extends js.Object {
     * Returns a JSON-formatted diagnostic report for the running process.
     * The report's JavaScript stack trace is taken from err, if present.
     */
-  def getReport(): java.lang.String = js.native
-  def getReport(err: Error): java.lang.String = js.native
+  def getReport(): String = js.native
+  def getReport(err: Error): String = js.native
   /**
     * Writes a diagnostic report to a file. If filename is not provided, the default filename
     * includes the date, time, PID, and a sequence number.
@@ -60,9 +60,9 @@ trait ProcessReport extends js.Object {
     * @param error A custom error used for reporting the JavaScript stack.
     * @return Filename of the generated report.
     */
-  def writeReport(): java.lang.String = js.native
-  def writeReport(error: Error): java.lang.String = js.native
-  def writeReport(fileName: java.lang.String): java.lang.String = js.native
-  def writeReport(fileName: java.lang.String, err: Error): java.lang.String = js.native
+  def writeReport(): String = js.native
+  def writeReport(error: Error): String = js.native
+  def writeReport(fileName: String): String = js.native
+  def writeReport(fileName: String, err: Error): String = js.native
 }
 

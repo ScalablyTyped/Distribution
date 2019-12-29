@@ -1,11 +1,6 @@
 package typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Added
-import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Current
-import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.NoChange
-import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Removed
-import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Reset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

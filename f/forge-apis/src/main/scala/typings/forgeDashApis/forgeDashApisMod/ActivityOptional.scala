@@ -5,43 +5,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActivityOptional extends js.Object {
-  var allowedChildProcesses: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var appPackages: js.UndefOr[js.Array[String]] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var hostApplication: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var instruction: js.UndefOr[js.Object] = js.undefined
-  var isPublic: js.UndefOr[Boolean] = js.undefined
-  var parameters: js.UndefOr[js.Object] = js.undefined
-  var requiredEngineVersion: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var AllowedChildProcesses: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var AppPackages: js.UndefOr[js.Array[String]] = js.undefined
+  var Description: js.UndefOr[String] = js.undefined
+  var HostApplication: js.UndefOr[String] = js.undefined
+  var Id: js.UndefOr[String] = js.undefined
+  var Instruction: js.UndefOr[js.Object] = js.undefined
+  var IsPublic: js.UndefOr[Boolean] = js.undefined
+  var Parameters: js.UndefOr[js.Object] = js.undefined
+  var RequiredEngineVersion: js.UndefOr[String] = js.undefined
+  var Version: js.UndefOr[Double] = js.undefined
 }
 
 object ActivityOptional {
   @scala.inline
   def apply(
-    allowedChildProcesses: js.Array[js.Object] = null,
-    appPackages: js.Array[String] = null,
-    description: String = null,
-    hostApplication: String = null,
-    id: String = null,
-    instruction: js.Object = null,
-    isPublic: js.UndefOr[Boolean] = js.undefined,
-    parameters: js.Object = null,
-    requiredEngineVersion: String = null,
-    version: Int | Double = null
+    AllowedChildProcesses: js.Array[js.Object] = null,
+    AppPackages: js.Array[String] = null,
+    Description: String = null,
+    HostApplication: String = null,
+    Id: String = null,
+    Instruction: js.Object = null,
+    IsPublic: js.UndefOr[Boolean] = js.undefined,
+    Parameters: js.Object = null,
+    RequiredEngineVersion: String = null,
+    Version: Int | Double = null
   ): ActivityOptional = {
     val __obj = js.Dynamic.literal()
-    if (allowedChildProcesses != null) __obj.updateDynamic("allowedChildProcesses")(allowedChildProcesses.asInstanceOf[js.Any])
-    if (appPackages != null) __obj.updateDynamic("appPackages")(appPackages.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (hostApplication != null) __obj.updateDynamic("hostApplication")(hostApplication.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (requiredEngineVersion != null) __obj.updateDynamic("requiredEngineVersion")(requiredEngineVersion.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (AllowedChildProcesses != null) __obj.updateDynamic("AllowedChildProcesses")(AllowedChildProcesses.asInstanceOf[js.Any])
+    if (AppPackages != null) __obj.updateDynamic("AppPackages")(AppPackages.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (HostApplication != null) __obj.updateDynamic("HostApplication")(HostApplication.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Instruction != null) __obj.updateDynamic("Instruction")(Instruction.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPublic)) __obj.updateDynamic("IsPublic")(IsPublic.asInstanceOf[js.Any])
+    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
+    if (RequiredEngineVersion != null) __obj.updateDynamic("RequiredEngineVersion")(RequiredEngineVersion.asInstanceOf[js.Any])
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityOptional]
   }
 }

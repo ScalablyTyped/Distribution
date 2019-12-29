@@ -1,6 +1,5 @@
 package typings.atFirebaseStorage
 
-import typings.atFirebaseStorage.distSrcImplementationBlobMod.FbsBlob
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Uint8Array

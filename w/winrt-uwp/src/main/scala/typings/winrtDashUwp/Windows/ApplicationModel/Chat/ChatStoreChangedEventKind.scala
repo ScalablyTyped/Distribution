@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.conversationDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.conversationModified
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.conversationTransportDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.messageCreated
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.messageDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.messageModified
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.notificationsMissed
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatStoreChangedEventKind.storeModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

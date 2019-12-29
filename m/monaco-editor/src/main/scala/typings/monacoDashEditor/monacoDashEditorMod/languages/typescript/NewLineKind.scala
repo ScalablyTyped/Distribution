@@ -1,8 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages.typescript
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.NewLineKind.CarriageReturnLineFeed
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.NewLineKind.LineFeed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

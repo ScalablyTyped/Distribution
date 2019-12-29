@@ -27,7 +27,7 @@ trait PropertyDescriptor extends js.Object {
   /**
     * Property name or symbol description.
     */
-  var name: java.lang.String
+  var name: String
   /**
     * A function which serves as a setter for the property, or <code>undefined</code> if there is no setter (accessor descriptors only).
     */
@@ -55,7 +55,7 @@ object PropertyDescriptor {
   def apply(
     configurable: Boolean,
     enumerable: Boolean,
-    name: java.lang.String,
+    name: String,
     get: RemoteObject = null,
     isOwn: js.UndefOr[Boolean] = js.undefined,
     set: RemoteObject = null,

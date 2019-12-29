@@ -509,10 +509,10 @@ trait Underscore[T, V] extends js.Object {
     **/
   def matches(): ListIterator[T, Boolean] = js.native
   /**
-    * Wrapped type `any[]`.
+    * Wrapped type `number[]`.
     * @see _.max
     **/
-  def max(): T = js.native
+  def max(): Double = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.max
@@ -520,11 +520,11 @@ trait Underscore[T, V] extends js.Object {
   def max(iterator: ListIterator[T, _ | Double]): T = js.native
   def max(iterator: ListIterator[T, _ | Double], context: js.Any): T = js.native
   /**
-    * Wrapped type `number[]`.
+    * Wrapped type `any[]`.
     * @see _.max
     **/
   @JSName("max")
-  def max_Double(): Double = js.native
+  def max_T(): T = js.native
   /**
     * Wrapped type `Function`.
     * @see _.memoize
@@ -536,10 +536,10 @@ trait Underscore[T, V] extends js.Object {
     **/
   def methods(): js.Array[String] = js.native
   /**
-    * Wrapped type `any[]`.
+    * Wrapped type `number[]`.
     * @see _.min
     **/
-  def min(): T = js.native
+  def min(): Double = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.min
@@ -547,11 +547,11 @@ trait Underscore[T, V] extends js.Object {
   def min(iterator: ListIterator[T, _ | Double]): T = js.native
   def min(iterator: ListIterator[T, _ | Double], context: js.Any): T = js.native
   /**
-    * Wrapped type `number[]`.
+    * Wrapped type `any[]`.
     * @see _.min
     **/
   @JSName("min")
-  def min_Double(): Double = js.native
+  def min_T(): T = js.native
   /**
     * Wrapped type `object`.
     * @see _.mixin

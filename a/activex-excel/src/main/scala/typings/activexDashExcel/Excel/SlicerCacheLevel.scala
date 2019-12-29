@@ -11,7 +11,8 @@ class SlicerCacheLevel protected () extends js.Object {
   val Count: Double = js.native
   val Creator: XlCreator = js.native
   var CrossFilterType: XlSlicerCrossFilterType = js.native
-  var `Excel.SlicerCacheLevel_typekey`: SlicerCacheLevel = js.native
+  @JSName("Excel.SlicerCacheLevel_typekey")
+  var ExcelDotSlicerCacheLevel_typekey: SlicerCacheLevel = js.native
   val Name: String = js.native
   val Ordinal: Double = js.native
   val Parent: js.Any = js.native

@@ -1,6 +1,5 @@
 package typings.d3DashBox
 
-import typings.d3DashBox.d3Mod.Box
 import typings.d3DashSelection.d3DashSelectionMod.BaseType
 import typings.d3DashSelection.d3DashSelectionMod.Selection
 import scala.scalajs.js

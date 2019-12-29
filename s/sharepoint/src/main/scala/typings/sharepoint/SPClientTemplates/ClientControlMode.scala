@@ -1,11 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientTemplates.ClientControlMode.DisplayForm
-import typings.sharepoint.SPClientTemplates.ClientControlMode.EditForm
-import typings.sharepoint.SPClientTemplates.ClientControlMode.Invalid
-import typings.sharepoint.SPClientTemplates.ClientControlMode.NewForm
-import typings.sharepoint.SPClientTemplates.ClientControlMode.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

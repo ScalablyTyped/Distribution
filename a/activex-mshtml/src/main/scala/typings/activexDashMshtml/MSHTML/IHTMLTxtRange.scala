@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLTxtRange")
 @js.native
 class IHTMLTxtRange protected () extends js.Object {
-  var `MSHTML.IHTMLTxtRange_typekey`: IHTMLTxtRange = js.native
+  @JSName("MSHTML.IHTMLTxtRange_typekey")
+  var MSHTMLDotIHTMLTxtRange_typekey: IHTMLTxtRange = js.native
   val htmlText: String = js.native
   var text: String = js.native
   /** @param start [start=true] */

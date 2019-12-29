@@ -1,6 +1,6 @@
 package typings.atIonicDiscover.distPublisherMod
 
-import typings.atIonicDiscover.atIonicDiscoverStrings.`/`
+import typings.atIonicDiscover.atIonicDiscoverStrings.Slash
 import typings.atIonicDiscover.atIonicDiscoverStrings.error
 import typings.node.NodeJS.Timer
 import typings.node.dgramMod.Socket
@@ -24,7 +24,7 @@ class Publisher protected ()
   var interval: Double = js.native
   var name: String = js.native
   var namespace: String = js.native
-  val path: `/` = js.native
+  val path: Slash = js.native
   var port: Double = js.native
   var running: Boolean = js.native
   var timer: js.UndefOr[Timer] = js.native

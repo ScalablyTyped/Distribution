@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.HierarchyMode.Grouping
-import typings.sharepoint.SP.JsGrid.HierarchyMode.None
-import typings.sharepoint.SP.JsGrid.HierarchyMode.Standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

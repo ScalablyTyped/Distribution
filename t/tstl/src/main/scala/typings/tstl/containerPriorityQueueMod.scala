@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseContainerAdaptorContainerMod.AdaptorContainer
-import typings.tstl.containerPriorityQueueMod.PriorityQueue
 import typings.tstl.containerVectorMod.Vector
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js

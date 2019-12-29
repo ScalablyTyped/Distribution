@@ -3,7 +3,7 @@ package typings.menubar.libTypesMod
 import typings.electron.Electron.BrowserWindowConstructorOptions
 import typings.electron.Electron.NativeImage
 import typings.electron.electronMod.Tray
-import typings.menubar.menubarNumbers.`false`
+import typings.menubar.menubarBooleans.`false`
 import typings.menubar.menubarStrings.bottomCenter
 import typings.menubar.menubarStrings.bottomLeft
 import typings.menubar.menubarStrings.bottomRight

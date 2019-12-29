@@ -30,9 +30,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var draggable: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var fill: js.UndefOr[java.lang.String] = js.undefined
+  var fill: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var font: js.UndefOr[java.lang.String] = js.undefined
+  var font: js.UndefOr[String] = js.undefined
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
   		* @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
   		*/
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Number) */
   var opacity: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var path: js.UndefOr[java.lang.String] = js.undefined
+  var path: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var radius: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -97,11 +97,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.draw.Sprite this
   		*/
   var setStyle: js.UndefOr[
-    js.Function2[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
-      this.type
-    ]
+    js.Function2[/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], this.type]
   ] = js.undefined
   /** [Method] Shows the sprite
   		* @param redraw Boolean Flag to immediately draw the change.
@@ -109,7 +105,7 @@ import scala.scalajs.js.annotation._
   		*/
   var show: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.undefined
   /** [Config Option] (String) */
-  var src: js.UndefOr[java.lang.String] = js.undefined
+  var src: js.UndefOr[String] = js.undefined
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
   		* @returns Ext.Element The Element
   		*/
@@ -119,7 +115,7 @@ import scala.scalajs.js.annotation._
   		*/
   var stopFx: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Config Option] (String) */
-  var stroke: js.UndefOr[java.lang.String] = js.undefined
+  var stroke: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var strokewidth: js.UndefOr[Double] = js.undefined
   /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
@@ -127,9 +123,9 @@ import scala.scalajs.js.annotation._
   		*/
   var syncFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var width: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -158,17 +154,17 @@ object ISprite {
     destroy: () => Unit = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fill: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    font: java.lang.String = null,
+    extend: String = null,
+    fill: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    font: String = null,
     getActiveAnimation: () => _ = null,
     getBBox: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     group: js.Any = null,
     hasActiveFx: () => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     height: Int | Double = null,
     hide: /* redraw */ js.UndefOr[Boolean] => ISprite = null,
@@ -182,15 +178,15 @@ object ISprite {
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     opacity: Int | Double = null,
-    path: java.lang.String = null,
+    path: String = null,
     radius: Int | Double = null,
     radiusX: Int | Double = null,
     radiusY: Int | Double = null,
     redraw: () => ISprite = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     remove: () => Boolean = null,
     removeCls: /* className */ js.UndefOr[js.Any] => ISprite = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -198,21 +194,21 @@ object ISprite {
     self: IClass = null,
     sequenceFx: () => _ = null,
     setAttributes: (/* attrs */ js.UndefOr[js.Any], /* redraw */ js.UndefOr[Boolean]) => ISprite = null,
-    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => ISprite = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => ISprite = null,
     show: /* redraw */ js.UndefOr[Boolean] => ISprite = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    src: java.lang.String = null,
+    src: String = null,
     statics: js.Any = null,
     stopAnimation: () => IElement = null,
     stopFx: () => IElement = null,
-    stroke: java.lang.String = null,
+    stroke: String = null,
     strokewidth: Int | Double = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     syncFx: () => _ = null,
-    text: java.lang.String = null,
-    `type`: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    text: String = null,
+    `type`: String = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     width: Int | Double = null,
     x: Int | Double = null,

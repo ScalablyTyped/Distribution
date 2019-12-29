@@ -1,7 +1,7 @@
 package typings.nedb.nedbMod
 
 import typings.nedb.Anon_NewDoc
-import typings.nedb.nedbStrings.compactionDOTdone
+import typings.nedb.nedbStrings.compactionDotdone
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Nedb[G] extends EventEmitter {
   var persistence: Persistence = js.native
   @JSName("addListener")
-  def addListener_compactiondone(event: compactionDOTdone, listener: js.Function0[Unit]): this.type = js.native
+  def addListener_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Add one or several document(s) to all indexes
     */
@@ -85,26 +85,26 @@ trait Nedb[G] extends EventEmitter {
   def insert[T /* <: G */](newDocs: js.Array[T]): Unit = js.native
   def insert[T /* <: G */](newDocs: js.Array[T], cb: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]): Unit = js.native
   @JSName("listenerCount")
-  def listenerCount_compactiondone(`type`: compactionDOTdone): Double = js.native
+  def listenerCount_compactiondone(`type`: compactionDotdone): Double = js.native
   @JSName("listeners")
-  def listeners_compactiondone(event: compactionDOTdone): js.Array[js.Function0[Unit]] = js.native
+  def listeners_compactiondone(event: compactionDotdone): js.Array[js.Function0[Unit]] = js.native
   /**
     * Load the database from the datafile, and trigger the execution of buffered commands if any
     */
   def loadDatabase(): Unit = js.native
   def loadDatabase(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   @JSName("off")
-  def off_compactiondone(event: compactionDOTdone, listener: js.Function0[Unit]): this.type = js.native
+  def off_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_compactiondone(event: compactionDOTdone, listener: js.Function0[Unit]): this.type = js.native
+  def on_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_compactiondone(event: compactionDOTdone, listener: js.Function0[Unit]): this.type = js.native
+  def once_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_compactiondone(event: compactionDOTdone, listener: js.Function0[Unit]): this.type = js.native
+  def prependListener_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_compactiondone(event: compactionDOTdone, listener: js.Function0[Unit]): this.type = js.native
+  def prependOnceListener_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
   @JSName("rawListeners")
-  def rawListeners_compactiondone(event: compactionDOTdone): js.Array[js.Function0[Unit]] = js.native
+  def rawListeners_compactiondone(event: compactionDotdone): js.Array[js.Function0[Unit]] = js.native
   def remove(query: js.Any): Unit = js.native
   def remove(query: js.Any, cb: js.Function2[/* err */ Error, /* n */ Double, Unit]): Unit = js.native
   /**
@@ -130,7 +130,7 @@ trait Nedb[G] extends EventEmitter {
   def removeIndex(fieldName: String): Unit = js.native
   def removeIndex(fieldName: String, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   @JSName("removeListener")
-  def removeListener_compactiondone(event: compactionDOTdone, listener: js.Function0[Unit]): this.type = js.native
+  def removeListener_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Reset all currently defined indexes
     */

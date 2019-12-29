@@ -20,685 +20,7 @@ import scala.scalajs.js.annotation._
 
 object baseuiStrings {
   @js.native
-  sealed trait ` ` extends js.Object
-  
-  @js.native
-  sealed trait `+1` extends js.Object
-  
-  @js.native
-  sealed trait `+1242` extends js.Object
-  
-  @js.native
-  sealed trait `+1246` extends js.Object
-  
-  @js.native
-  sealed trait `+1264` extends js.Object
-  
-  @js.native
-  sealed trait `+1268` extends js.Object
-  
-  @js.native
-  sealed trait `+1284` extends js.Object
-  
-  @js.native
-  sealed trait `+1340` extends js.Object
-  
-  @js.native
-  sealed trait `+1345` extends js.Object
-  
-  @js.native
-  sealed trait `+1441` extends js.Object
-  
-  @js.native
-  sealed trait `+1473` extends js.Object
-  
-  @js.native
-  sealed trait `+1649` extends js.Object
-  
-  @js.native
-  sealed trait `+1664` extends js.Object
-  
-  @js.native
-  sealed trait `+1670` extends js.Object
-  
-  @js.native
-  sealed trait `+1671` extends js.Object
-  
-  @js.native
-  sealed trait `+1684` extends js.Object
-  
-  @js.native
-  sealed trait `+1721` extends js.Object
-  
-  @js.native
-  sealed trait `+1758` extends js.Object
-  
-  @js.native
-  sealed trait `+1767` extends js.Object
-  
-  @js.native
-  sealed trait `+1784` extends js.Object
-  
-  @js.native
-  sealed trait `+1868` extends js.Object
-  
-  @js.native
-  sealed trait `+1869` extends js.Object
-  
-  @js.native
-  sealed trait `+20` extends js.Object
-  
-  @js.native
-  sealed trait `+211` extends js.Object
-  
-  @js.native
-  sealed trait `+212` extends js.Object
-  
-  @js.native
-  sealed trait `+213` extends js.Object
-  
-  @js.native
-  sealed trait `+216` extends js.Object
-  
-  @js.native
-  sealed trait `+218` extends js.Object
-  
-  @js.native
-  sealed trait `+220` extends js.Object
-  
-  @js.native
-  sealed trait `+221` extends js.Object
-  
-  @js.native
-  sealed trait `+222` extends js.Object
-  
-  @js.native
-  sealed trait `+223` extends js.Object
-  
-  @js.native
-  sealed trait `+224` extends js.Object
-  
-  @js.native
-  sealed trait `+225` extends js.Object
-  
-  @js.native
-  sealed trait `+226` extends js.Object
-  
-  @js.native
-  sealed trait `+227` extends js.Object
-  
-  @js.native
-  sealed trait `+228` extends js.Object
-  
-  @js.native
-  sealed trait `+229` extends js.Object
-  
-  @js.native
-  sealed trait `+230` extends js.Object
-  
-  @js.native
-  sealed trait `+231` extends js.Object
-  
-  @js.native
-  sealed trait `+232` extends js.Object
-  
-  @js.native
-  sealed trait `+233` extends js.Object
-  
-  @js.native
-  sealed trait `+234` extends js.Object
-  
-  @js.native
-  sealed trait `+235` extends js.Object
-  
-  @js.native
-  sealed trait `+236` extends js.Object
-  
-  @js.native
-  sealed trait `+237` extends js.Object
-  
-  @js.native
-  sealed trait `+238` extends js.Object
-  
-  @js.native
-  sealed trait `+239` extends js.Object
-  
-  @js.native
-  sealed trait `+240` extends js.Object
-  
-  @js.native
-  sealed trait `+241` extends js.Object
-  
-  @js.native
-  sealed trait `+242` extends js.Object
-  
-  @js.native
-  sealed trait `+243` extends js.Object
-  
-  @js.native
-  sealed trait `+244` extends js.Object
-  
-  @js.native
-  sealed trait `+245` extends js.Object
-  
-  @js.native
-  sealed trait `+246` extends js.Object
-  
-  @js.native
-  sealed trait `+248` extends js.Object
-  
-  @js.native
-  sealed trait `+249` extends js.Object
-  
-  @js.native
-  sealed trait `+250` extends js.Object
-  
-  @js.native
-  sealed trait `+251` extends js.Object
-  
-  @js.native
-  sealed trait `+252` extends js.Object
-  
-  @js.native
-  sealed trait `+253` extends js.Object
-  
-  @js.native
-  sealed trait `+254` extends js.Object
-  
-  @js.native
-  sealed trait `+255` extends js.Object
-  
-  @js.native
-  sealed trait `+256` extends js.Object
-  
-  @js.native
-  sealed trait `+257` extends js.Object
-  
-  @js.native
-  sealed trait `+258` extends js.Object
-  
-  @js.native
-  sealed trait `+260` extends js.Object
-  
-  @js.native
-  sealed trait `+261` extends js.Object
-  
-  @js.native
-  sealed trait `+262` extends js.Object
-  
-  @js.native
-  sealed trait `+263` extends js.Object
-  
-  @js.native
-  sealed trait `+264` extends js.Object
-  
-  @js.native
-  sealed trait `+265` extends js.Object
-  
-  @js.native
-  sealed trait `+266` extends js.Object
-  
-  @js.native
-  sealed trait `+267` extends js.Object
-  
-  @js.native
-  sealed trait `+268` extends js.Object
-  
-  @js.native
-  sealed trait `+269` extends js.Object
-  
-  @js.native
-  sealed trait `+27` extends js.Object
-  
-  @js.native
-  sealed trait `+290` extends js.Object
-  
-  @js.native
-  sealed trait `+291` extends js.Object
-  
-  @js.native
-  sealed trait `+297` extends js.Object
-  
-  @js.native
-  sealed trait `+298` extends js.Object
-  
-  @js.native
-  sealed trait `+299` extends js.Object
-  
-  @js.native
-  sealed trait `+30` extends js.Object
-  
-  @js.native
-  sealed trait `+31` extends js.Object
-  
-  @js.native
-  sealed trait `+32` extends js.Object
-  
-  @js.native
-  sealed trait `+33` extends js.Object
-  
-  @js.native
-  sealed trait `+34` extends js.Object
-  
-  @js.native
-  sealed trait `+350` extends js.Object
-  
-  @js.native
-  sealed trait `+351` extends js.Object
-  
-  @js.native
-  sealed trait `+352` extends js.Object
-  
-  @js.native
-  sealed trait `+353` extends js.Object
-  
-  @js.native
-  sealed trait `+354` extends js.Object
-  
-  @js.native
-  sealed trait `+355` extends js.Object
-  
-  @js.native
-  sealed trait `+356` extends js.Object
-  
-  @js.native
-  sealed trait `+357` extends js.Object
-  
-  @js.native
-  sealed trait `+358` extends js.Object
-  
-  @js.native
-  sealed trait `+359` extends js.Object
-  
-  @js.native
-  sealed trait `+36` extends js.Object
-  
-  @js.native
-  sealed trait `+370` extends js.Object
-  
-  @js.native
-  sealed trait `+371` extends js.Object
-  
-  @js.native
-  sealed trait `+372` extends js.Object
-  
-  @js.native
-  sealed trait `+373` extends js.Object
-  
-  @js.native
-  sealed trait `+374` extends js.Object
-  
-  @js.native
-  sealed trait `+375` extends js.Object
-  
-  @js.native
-  sealed trait `+376` extends js.Object
-  
-  @js.native
-  sealed trait `+377` extends js.Object
-  
-  @js.native
-  sealed trait `+378` extends js.Object
-  
-  @js.native
-  sealed trait `+380` extends js.Object
-  
-  @js.native
-  sealed trait `+381` extends js.Object
-  
-  @js.native
-  sealed trait `+382` extends js.Object
-  
-  @js.native
-  sealed trait `+383` extends js.Object
-  
-  @js.native
-  sealed trait `+385` extends js.Object
-  
-  @js.native
-  sealed trait `+386` extends js.Object
-  
-  @js.native
-  sealed trait `+387` extends js.Object
-  
-  @js.native
-  sealed trait `+389` extends js.Object
-  
-  @js.native
-  sealed trait `+39` extends js.Object
-  
-  @js.native
-  sealed trait `+40` extends js.Object
-  
-  @js.native
-  sealed trait `+41` extends js.Object
-  
-  @js.native
-  sealed trait `+420` extends js.Object
-  
-  @js.native
-  sealed trait `+421` extends js.Object
-  
-  @js.native
-  sealed trait `+423` extends js.Object
-  
-  @js.native
-  sealed trait `+43` extends js.Object
-  
-  @js.native
-  sealed trait `+44` extends js.Object
-  
-  @js.native
-  sealed trait `+45` extends js.Object
-  
-  @js.native
-  sealed trait `+46` extends js.Object
-  
-  @js.native
-  sealed trait `+47` extends js.Object
-  
-  @js.native
-  sealed trait `+48` extends js.Object
-  
-  @js.native
-  sealed trait `+49` extends js.Object
-  
-  @js.native
-  sealed trait `+500` extends js.Object
-  
-  @js.native
-  sealed trait `+501` extends js.Object
-  
-  @js.native
-  sealed trait `+502` extends js.Object
-  
-  @js.native
-  sealed trait `+503` extends js.Object
-  
-  @js.native
-  sealed trait `+504` extends js.Object
-  
-  @js.native
-  sealed trait `+505` extends js.Object
-  
-  @js.native
-  sealed trait `+506` extends js.Object
-  
-  @js.native
-  sealed trait `+507` extends js.Object
-  
-  @js.native
-  sealed trait `+508` extends js.Object
-  
-  @js.native
-  sealed trait `+509` extends js.Object
-  
-  @js.native
-  sealed trait `+51` extends js.Object
-  
-  @js.native
-  sealed trait `+52` extends js.Object
-  
-  @js.native
-  sealed trait `+53` extends js.Object
-  
-  @js.native
-  sealed trait `+54` extends js.Object
-  
-  @js.native
-  sealed trait `+55` extends js.Object
-  
-  @js.native
-  sealed trait `+56` extends js.Object
-  
-  @js.native
-  sealed trait `+57` extends js.Object
-  
-  @js.native
-  sealed trait `+58` extends js.Object
-  
-  @js.native
-  sealed trait `+590` extends js.Object
-  
-  @js.native
-  sealed trait `+591` extends js.Object
-  
-  @js.native
-  sealed trait `+592` extends js.Object
-  
-  @js.native
-  sealed trait `+593` extends js.Object
-  
-  @js.native
-  sealed trait `+594` extends js.Object
-  
-  @js.native
-  sealed trait `+595` extends js.Object
-  
-  @js.native
-  sealed trait `+596` extends js.Object
-  
-  @js.native
-  sealed trait `+597` extends js.Object
-  
-  @js.native
-  sealed trait `+598` extends js.Object
-  
-  @js.native
-  sealed trait `+599` extends js.Object
-  
-  @js.native
-  sealed trait `+60` extends js.Object
-  
-  @js.native
-  sealed trait `+61` extends js.Object
-  
-  @js.native
-  sealed trait `+62` extends js.Object
-  
-  @js.native
-  sealed trait `+63` extends js.Object
-  
-  @js.native
-  sealed trait `+64` extends js.Object
-  
-  @js.native
-  sealed trait `+65` extends js.Object
-  
-  @js.native
-  sealed trait `+66` extends js.Object
-  
-  @js.native
-  sealed trait `+670` extends js.Object
-  
-  @js.native
-  sealed trait `+672` extends js.Object
-  
-  @js.native
-  sealed trait `+673` extends js.Object
-  
-  @js.native
-  sealed trait `+674` extends js.Object
-  
-  @js.native
-  sealed trait `+675` extends js.Object
-  
-  @js.native
-  sealed trait `+676` extends js.Object
-  
-  @js.native
-  sealed trait `+677` extends js.Object
-  
-  @js.native
-  sealed trait `+678` extends js.Object
-  
-  @js.native
-  sealed trait `+679` extends js.Object
-  
-  @js.native
-  sealed trait `+680` extends js.Object
-  
-  @js.native
-  sealed trait `+681` extends js.Object
-  
-  @js.native
-  sealed trait `+682` extends js.Object
-  
-  @js.native
-  sealed trait `+683` extends js.Object
-  
-  @js.native
-  sealed trait `+685` extends js.Object
-  
-  @js.native
-  sealed trait `+686` extends js.Object
-  
-  @js.native
-  sealed trait `+687` extends js.Object
-  
-  @js.native
-  sealed trait `+688` extends js.Object
-  
-  @js.native
-  sealed trait `+689` extends js.Object
-  
-  @js.native
-  sealed trait `+690` extends js.Object
-  
-  @js.native
-  sealed trait `+691` extends js.Object
-  
-  @js.native
-  sealed trait `+692` extends js.Object
-  
-  @js.native
-  sealed trait `+7` extends js.Object
-  
-  @js.native
-  sealed trait `+81` extends js.Object
-  
-  @js.native
-  sealed trait `+82` extends js.Object
-  
-  @js.native
-  sealed trait `+84` extends js.Object
-  
-  @js.native
-  sealed trait `+850` extends js.Object
-  
-  @js.native
-  sealed trait `+852` extends js.Object
-  
-  @js.native
-  sealed trait `+853` extends js.Object
-  
-  @js.native
-  sealed trait `+855` extends js.Object
-  
-  @js.native
-  sealed trait `+856` extends js.Object
-  
-  @js.native
-  sealed trait `+86` extends js.Object
-  
-  @js.native
-  sealed trait `+880` extends js.Object
-  
-  @js.native
-  sealed trait `+886` extends js.Object
-  
-  @js.native
-  sealed trait `+90` extends js.Object
-  
-  @js.native
-  sealed trait `+91` extends js.Object
-  
-  @js.native
-  sealed trait `+92` extends js.Object
-  
-  @js.native
-  sealed trait `+93` extends js.Object
-  
-  @js.native
-  sealed trait `+94` extends js.Object
-  
-  @js.native
-  sealed trait `+95` extends js.Object
-  
-  @js.native
-  sealed trait `+960` extends js.Object
-  
-  @js.native
-  sealed trait `+961` extends js.Object
-  
-  @js.native
-  sealed trait `+962` extends js.Object
-  
-  @js.native
-  sealed trait `+963` extends js.Object
-  
-  @js.native
-  sealed trait `+964` extends js.Object
-  
-  @js.native
-  sealed trait `+965` extends js.Object
-  
-  @js.native
-  sealed trait `+966` extends js.Object
-  
-  @js.native
-  sealed trait `+967` extends js.Object
-  
-  @js.native
-  sealed trait `+968` extends js.Object
-  
-  @js.native
-  sealed trait `+970` extends js.Object
-  
-  @js.native
-  sealed trait `+971` extends js.Object
-  
-  @js.native
-  sealed trait `+972` extends js.Object
-  
-  @js.native
-  sealed trait `+973` extends js.Object
-  
-  @js.native
-  sealed trait `+974` extends js.Object
-  
-  @js.native
-  sealed trait `+975` extends js.Object
-  
-  @js.native
-  sealed trait `+976` extends js.Object
-  
-  @js.native
-  sealed trait `+977` extends js.Object
-  
-  @js.native
-  sealed trait `+98` extends js.Object
-  
-  @js.native
-  sealed trait `+992` extends js.Object
-  
-  @js.native
-  sealed trait `+993` extends js.Object
-  
-  @js.native
-  sealed trait `+994` extends js.Object
-  
-  @js.native
-  sealed trait `+995` extends js.Object
-  
-  @js.native
-  sealed trait `+996` extends js.Object
-  
-  @js.native
-  sealed trait `+998` extends js.Object
-  
-  @js.native
-  sealed trait `100%` extends js.Object
+  sealed trait `100Percentsign` extends js.Object
   
   @js.native
   sealed trait `12` extends js.Object
@@ -764,13 +86,13 @@ object baseuiStrings {
   sealed trait AZ extends js.Object
   
   @js.native
-  sealed trait `Afghanistan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0641BACKSLASHu063ABACKSLASHu0627BACKSLASHu0646BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Albania (ShqipBACKSLASHu00EBri)` extends js.Object
+  sealed trait `Albania LeftparenthesisShqipëriRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Algeria (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu062CBACKSLASHu0632BACKSLASHu0627BACKSLASHu0626BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait `American Samoa` extends js.Object
@@ -791,7 +113,7 @@ object baseuiStrings {
   sealed trait Argentina extends js.Object
   
   @js.native
-  sealed trait `Armenia (BACKSLASHu0540BACKSLASHu0561BACKSLASHu0575BACKSLASHu0561BACKSLASHu057DBACKSLASHu057FBACKSLASHu0561BACKSLASHu0576)` extends js.Object
+  sealed trait `Armenia LeftparenthesisՀայաստանRightparenthesis` extends js.Object
   
   @js.native
   sealed trait ArrowDown extends js.Object
@@ -812,16 +134,13 @@ object baseuiStrings {
   sealed trait Australia extends js.Object
   
   @js.native
-  sealed trait `Austria (BACKSLASHu00D6sterreich)` extends js.Object
+  sealed trait `Austria LeftparenthesisÖsterreichRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Azerbaijan (AzBACKSLASHu0259rbaycan)` extends js.Object
+  sealed trait `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` extends js.Object
   
   @js.native
   sealed trait BA extends js.Object
-  
-  @js.native
-  sealed trait `BACKSLASHu00C5land Islands` extends js.Object
   
   @js.native
   sealed trait BB extends js.Object
@@ -887,43 +206,43 @@ object baseuiStrings {
   sealed trait Bahamas extends js.Object
   
   @js.native
-  sealed trait `Bahrain (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0628BACKSLASHu062DBACKSLASHu0631BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Bangladesh (BACKSLASHu09ACBACKSLASHu09BEBACKSLASHu0982BACKSLASHu09B2BACKSLASHu09BEBACKSLASHu09A6BACKSLASHu09C7BACKSLASHu09B6)` extends js.Object
+  sealed trait `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Barbados extends js.Object
   
   @js.native
-  sealed trait `Belarus (BACKSLASHu0411BACKSLASHu0435BACKSLASHu043BBACKSLASHu0430BACKSLASHu0440BACKSLASHu0443BACKSLASHu0441BACKSLASHu044C)` extends js.Object
+  sealed trait `Belarus LeftparenthesisБеларусьRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Belgium (BelgiBACKSLASHu00EB)` extends js.Object
+  sealed trait `Belgium LeftparenthesisBelgiëRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Belize extends js.Object
   
   @js.native
-  sealed trait `Benin (BBACKSLASHu00E9nin)` extends js.Object
+  sealed trait `Benin LeftparenthesisBéninRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Bermuda extends js.Object
   
   @js.native
-  sealed trait `Bhutan (BACKSLASHu0F60BACKSLASHu0F56BACKSLASHu0FB2BACKSLASHu0F74BACKSLASHu0F42)` extends js.Object
+  sealed trait `Bhutan LeftparenthesisའབྲུགRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Bolivia extends js.Object
   
   @js.native
-  sealed trait `Bosnia and Herzegovina (BACKSLASHu0411BACKSLASHu043EBACKSLASHu0441BACKSLASHu043DBACKSLASHu0430 BACKSLASHu0438 BACKSLASHu0425BACKSLASHu0435BACKSLASHu0440BACKSLASHu0446BACKSLASHu0435BACKSLASHu0433BACKSLASHu043EBACKSLASHu0432BACKSLASHu0438BACKSLASHu043DBACKSLASHu0430)` extends js.Object
+  sealed trait `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Botswana extends js.Object
   
   @js.native
-  sealed trait `Brazil (Brasil)` extends js.Object
+  sealed trait `Brazil LeftparenthesisBrasilRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `British Indian Ocean Territory` extends js.Object
@@ -935,22 +254,19 @@ object baseuiStrings {
   sealed trait Brunei extends js.Object
   
   @js.native
-  sealed trait `Bulgaria (BACKSLASHu0411BACKSLASHu044ABACKSLASHu043BBACKSLASHu0433BACKSLASHu0430BACKSLASHu0440BACKSLASHu0438BACKSLASHu044F)` extends js.Object
+  sealed trait `Bulgaria LeftparenthesisБългарияRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Burkina Faso` extends js.Object
   
   @js.native
-  sealed trait `Burundi (Uburundi)` extends js.Object
+  sealed trait `Burundi LeftparenthesisUburundiRightparenthesis` extends js.Object
   
   @js.native
   sealed trait CA extends js.Object
   
   @js.native
   sealed trait CATEGORICAL extends js.Object
-  
-  @js.native
-  sealed trait `CBACKSLASHu00F4te dBACKSLASHu2019Ivoire` extends js.Object
   
   @js.native
   sealed trait CC extends js.Object
@@ -1013,49 +329,49 @@ object baseuiStrings {
   sealed trait CZ extends js.Object
   
   @js.native
-  sealed trait `Cambodia (BACKSLASHu1780BACKSLASHu1798BACKSLASHu17D2BACKSLASHu1796BACKSLASHu17BBBACKSLASHu1787BACKSLASHu17B6)` extends js.Object
+  sealed trait `Cambodia Leftparenthesisកម្ពុជាRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Cameroon (Cameroun)` extends js.Object
+  sealed trait `Cameroon LeftparenthesisCamerounRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Canada extends js.Object
   
   @js.native
-  sealed trait `Cape Verde (Kabu Verdi)` extends js.Object
+  sealed trait `Cape Verde LeftparenthesisKabu VerdiRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Cayman Islands` extends js.Object
   
   @js.native
-  sealed trait `Central African Republic (RBACKSLASHu00E9publique centrafricaine)` extends js.Object
+  sealed trait `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Chad (Tchad)` extends js.Object
+  sealed trait `Chad LeftparenthesisTchadRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Chile extends js.Object
   
   @js.native
-  sealed trait `China (BACKSLASHu4E2DBACKSLASHu56FD)` extends js.Object
+  sealed trait `China Leftparenthesis中国Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Christmas Island` extends js.Object
   
   @js.native
-  sealed trait `Cocos (Keeling) Islands` extends js.Object
+  sealed trait `Cocos LeftparenthesisKeelingRightparenthesis Islands` extends js.Object
   
   @js.native
   sealed trait Colombia extends js.Object
   
   @js.native
-  sealed trait `Comoros (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0632BACKSLASHu0631 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0642BACKSLASHu0645BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)` extends js.Object
+  sealed trait `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Congo (Republic) (Congo-Brazzaville)` extends js.Object
+  sealed trait `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Cook Islands` extends js.Object
@@ -1064,19 +380,22 @@ object baseuiStrings {
   sealed trait `Costa Rica` extends js.Object
   
   @js.native
-  sealed trait `Croatia (Hrvatska)` extends js.Object
+  sealed trait `Croatia LeftparenthesisHrvatskaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Cuba extends js.Object
   
   @js.native
-  sealed trait CuraBACKSLASHu00E7ao extends js.Object
+  sealed trait Curaçao extends js.Object
   
   @js.native
-  sealed trait `Cyprus (BACKSLASHu039ABACKSLASHu03CDBACKSLASHu03C0BACKSLASHu03C1BACKSLASHu03BFBACKSLASHu03C2)` extends js.Object
+  sealed trait `Cyprus LeftparenthesisΚύπροςRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Czech Republic (BACKSLASHu010CeskBACKSLASHu00E1 republika)` extends js.Object
+  sealed trait `Czech Republic LeftparenthesisČeská republikaRightparenthesis` extends js.Object
+  
+  @js.native
+  sealed trait `Côte dRightsinglequotationmarkIvoire` extends js.Object
   
   @js.native
   sealed trait DE extends js.Object
@@ -1103,7 +422,7 @@ object baseuiStrings {
   sealed trait DZ extends js.Object
   
   @js.native
-  sealed trait `Denmark (Danmark)` extends js.Object
+  sealed trait `Denmark LeftparenthesisDanmarkRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Djibouti extends js.Object
@@ -1112,7 +431,7 @@ object baseuiStrings {
   sealed trait Dominica extends js.Object
   
   @js.native
-  sealed trait `Dominican Republic (RepBACKSLASHu00FAblica Dominicana)` extends js.Object
+  sealed trait `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait EC extends js.Object
@@ -1136,7 +455,7 @@ object baseuiStrings {
   sealed trait Ecuador extends js.Object
   
   @js.native
-  sealed trait `Egypt (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0635BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait `El Salvador` extends js.Object
@@ -1145,7 +464,7 @@ object baseuiStrings {
   sealed trait Enter extends js.Object
   
   @js.native
-  sealed trait `Equatorial Guinea (Guinea Ecuatorial)` extends js.Object
+  sealed trait `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Eritrea extends js.Object
@@ -1154,7 +473,7 @@ object baseuiStrings {
   sealed trait Escape extends js.Object
   
   @js.native
-  sealed trait `Estonia (Eesti)` extends js.Object
+  sealed trait `Estonia LeftparenthesisEestiRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Ethiopia extends js.Object
@@ -1178,25 +497,25 @@ object baseuiStrings {
   sealed trait FR extends js.Object
   
   @js.native
-  sealed trait `Falkland Islands (Islas Malvinas)` extends js.Object
+  sealed trait `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Faroe Islands (FBACKSLASHu00F8royar)` extends js.Object
+  sealed trait `Faroe Islands LeftparenthesisFøroyarRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Fiji extends js.Object
   
   @js.native
-  sealed trait `Finland (Suomi)` extends js.Object
+  sealed trait `Finland LeftparenthesisSuomiRightparenthesis` extends js.Object
   
   @js.native
   sealed trait France extends js.Object
   
   @js.native
-  sealed trait `French Guiana (Guyane franBACKSLASHu00E7aise)` extends js.Object
+  sealed trait `French Guiana LeftparenthesisGuyane françaiseRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `French Polynesia (PolynBACKSLASHu00E9sie franBACKSLASHu00E7aise)` extends js.Object
+  sealed trait `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis` extends js.Object
   
   @js.native
   sealed trait GA extends js.Object
@@ -1259,22 +578,22 @@ object baseuiStrings {
   sealed trait Gambia extends js.Object
   
   @js.native
-  sealed trait `Georgia (BACKSLASHu10E1BACKSLASHu10D0BACKSLASHu10E5BACKSLASHu10D0BACKSLASHu10E0BACKSLASHu10D7BACKSLASHu10D5BACKSLASHu10D4BACKSLASHu10DABACKSLASHu10DD)` extends js.Object
+  sealed trait `Georgia LeftparenthesisსაქართველოRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Germany (Deutschland)` extends js.Object
+  sealed trait `Germany LeftparenthesisDeutschlandRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Ghana (Gaana)` extends js.Object
+  sealed trait `Ghana LeftparenthesisGaanaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Gibraltar extends js.Object
   
   @js.native
-  sealed trait `Greece (BACKSLASHu0395BACKSLASHu03BBBACKSLASHu03BBBACKSLASHu03ACBACKSLASHu03B4BACKSLASHu03B1)` extends js.Object
+  sealed trait `Greece LeftparenthesisΕλλάδαRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Greenland (Kalaallit Nunaat)` extends js.Object
+  sealed trait `Greenland LeftparenthesisKalaallit NunaatRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Grenada extends js.Object
@@ -1292,10 +611,10 @@ object baseuiStrings {
   sealed trait Guernsey extends js.Object
   
   @js.native
-  sealed trait `Guinea (GuinBACKSLASHu00E9e)` extends js.Object
+  sealed trait `Guinea LeftparenthesisGuinéeRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Guinea-Bissau (GuinBACKSLASHu00E9 Bissau)` extends js.Object
+  sealed trait `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Guyana extends js.Object
@@ -1322,10 +641,10 @@ object baseuiStrings {
   sealed trait Honduras extends js.Object
   
   @js.native
-  sealed trait `Hong Kong (BACKSLASHu9999BACKSLASHu6E2F)` extends js.Object
+  sealed trait `Hong Kong Leftparenthesis香港Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Hungary (MagyarorszBACKSLASHu00E1g)` extends js.Object
+  sealed trait `Hungary LeftparenthesisMagyarországRightparenthesis` extends js.Object
   
   @js.native
   sealed trait ID extends js.Object
@@ -1358,19 +677,19 @@ object baseuiStrings {
   sealed trait IT extends js.Object
   
   @js.native
-  sealed trait `Iceland (BACKSLASHu00CDsland)` extends js.Object
+  sealed trait `Iceland LeftparenthesisÍslandRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `India (BACKSLASHu092DBACKSLASHu093EBACKSLASHu0930BACKSLASHu0924)` extends js.Object
+  sealed trait `India LeftparenthesisभारतRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Indonesia extends js.Object
   
   @js.native
-  sealed trait `Iran (BACKSLASHu202BBACKSLASHu0627BACKSLASHu06CCBACKSLASHu0631BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Iran Leftparenthesis‫ایران‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Iraq (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0627BACKSLASHu0642BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait Ireland extends js.Object
@@ -1379,10 +698,10 @@ object baseuiStrings {
   sealed trait `Isle of Man` extends js.Object
   
   @js.native
-  sealed trait `Israel (BACKSLASHu202BBACKSLASHu05D9BACKSLASHu05E9BACKSLASHu05E8BACKSLASHu05D0BACKSLASHu05DCBACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Italy (Italia)` extends js.Object
+  sealed trait `Italy LeftparenthesisItaliaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait JE extends js.Object
@@ -1400,13 +719,13 @@ object baseuiStrings {
   sealed trait Jamaica extends js.Object
   
   @js.native
-  sealed trait `Japan (BACKSLASHu65E5BACKSLASHu672C)` extends js.Object
+  sealed trait `Japan Leftparenthesis日本Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait Jersey extends js.Object
   
   @js.native
-  sealed trait `Jordan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0623BACKSLASHu0631BACKSLASHu062FBACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait KE extends js.Object
@@ -1442,7 +761,7 @@ object baseuiStrings {
   sealed trait KZ extends js.Object
   
   @js.native
-  sealed trait `Kazakhstan (BACKSLASHu041ABACKSLASHu0430BACKSLASHu0437BACKSLASHu0430BACKSLASHu0445BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)` extends js.Object
+  sealed trait `Kazakhstan LeftparenthesisКазахстанRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Kenya extends js.Object
@@ -1454,10 +773,10 @@ object baseuiStrings {
   sealed trait Kosovo extends js.Object
   
   @js.native
-  sealed trait `Kuwait (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0643BACKSLASHu0648BACKSLASHu064ABACKSLASHu062ABACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)` extends js.Object
+  sealed trait `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis` extends js.Object
   
   @js.native
   sealed trait L extends js.Object
@@ -1499,13 +818,13 @@ object baseuiStrings {
   sealed trait LY extends js.Object
   
   @js.native
-  sealed trait `Laos (BACKSLASHu0EA5BACKSLASHu0EB2BACKSLASHu0EA7)` extends js.Object
+  sealed trait `Laos LeftparenthesisລາວRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Latvia (Latvija)` extends js.Object
+  sealed trait `Latvia LeftparenthesisLatvijaRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Lebanon (BACKSLASHu202BBACKSLASHu0644BACKSLASHu0628BACKSLASHu0646BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait Lesotho extends js.Object
@@ -1514,13 +833,13 @@ object baseuiStrings {
   sealed trait Liberia extends js.Object
   
   @js.native
-  sealed trait `Libya (BACKSLASHu202BBACKSLASHu0644BACKSLASHu064ABACKSLASHu0628BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait Liechtenstein extends js.Object
   
   @js.native
-  sealed trait `Lithuania (Lietuva)` extends js.Object
+  sealed trait `Lithuania LeftparenthesisLietuvaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Luxembourg extends js.Object
@@ -1598,13 +917,13 @@ object baseuiStrings {
   sealed trait MZ extends js.Object
   
   @js.native
-  sealed trait `Macau (BACKSLASHu6FB3BACKSLASHu9580)` extends js.Object
+  sealed trait `Macau Leftparenthesis澳門Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Macedonia (FYROM) (BACKSLASHu041CBACKSLASHu0430BACKSLASHu043ABACKSLASHu0435BACKSLASHu0434BACKSLASHu043EBACKSLASHu043DBACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)` extends js.Object
+  sealed trait `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Madagascar (Madagasikara)` extends js.Object
+  sealed trait `Madagascar LeftparenthesisMadagasikaraRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Malawi extends js.Object
@@ -1628,43 +947,43 @@ object baseuiStrings {
   sealed trait Martinique extends js.Object
   
   @js.native
-  sealed trait `Mauritania (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Mauritius (Moris)` extends js.Object
+  sealed trait `Mauritius LeftparenthesisMorisRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Mayotte extends js.Object
   
   @js.native
-  sealed trait `Mexico (MBACKSLASHu00E9xico)` extends js.Object
+  sealed trait `Mexico LeftparenthesisMéxicoRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Micronesia extends js.Object
   
   @js.native
-  sealed trait `Moldova (Republica Moldova)` extends js.Object
+  sealed trait `Moldova LeftparenthesisRepublica MoldovaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Monaco extends js.Object
   
   @js.native
-  sealed trait `Mongolia (BACKSLASHu041CBACKSLASHu043EBACKSLASHu043DBACKSLASHu0433BACKSLASHu043EBACKSLASHu043B)` extends js.Object
+  sealed trait `Mongolia LeftparenthesisМонголRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Montenegro (Crna Gora)` extends js.Object
+  sealed trait `Montenegro LeftparenthesisCrna GoraRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Montserrat extends js.Object
   
   @js.native
-  sealed trait `Morocco (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu063ABACKSLASHu0631BACKSLASHu0628BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Mozambique (MoBACKSLASHu00E7ambique)` extends js.Object
+  sealed trait `Mozambique LeftparenthesisMoçambiqueRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Myanmar (Burma) (BACKSLASHu1019BACKSLASHu103CBACKSLASHu1014BACKSLASHu103ABACKSLASHu1019BACKSLASHu102C)` extends js.Object
+  sealed trait `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis` extends js.Object
   
   @js.native
   sealed trait NA extends js.Object
@@ -1706,19 +1025,19 @@ object baseuiStrings {
   sealed trait NZ extends js.Object
   
   @js.native
-  sealed trait `Namibia (NamibiBACKSLASHu00EB)` extends js.Object
+  sealed trait `Namibia LeftparenthesisNamibiëRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Nauru extends js.Object
   
   @js.native
-  sealed trait `Nepal (BACKSLASHu0928BACKSLASHu0947BACKSLASHu092ABACKSLASHu093EBACKSLASHu0932)` extends js.Object
+  sealed trait `Nepal LeftparenthesisनेपालRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Netherlands (Nederland)` extends js.Object
+  sealed trait `Netherlands LeftparenthesisNederlandRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `New Caledonia (Nouvelle-CalBACKSLASHu00E9donie)` extends js.Object
+  sealed trait `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `New Zealand` extends js.Object
@@ -1727,7 +1046,7 @@ object baseuiStrings {
   sealed trait Nicaragua extends js.Object
   
   @js.native
-  sealed trait `Niger (Nijar)` extends js.Object
+  sealed trait `Niger LeftparenthesisNijarRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Nigeria extends js.Object
@@ -1739,19 +1058,19 @@ object baseuiStrings {
   sealed trait `Norfolk Island` extends js.Object
   
   @js.native
-  sealed trait `North Korea (BACKSLASHuC870BACKSLASHuC120 BACKSLASHuBBFCBACKSLASHuC8FCBACKSLASHuC8FCBACKSLASHuC758 BACKSLASHuC778BACKSLASHuBBFC BACKSLASHuACF5BACKSLASHuD654BACKSLASHuAD6D)` extends js.Object
+  sealed trait `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Northern Mariana Islands` extends js.Object
   
   @js.native
-  sealed trait `Norway (Norge)` extends js.Object
+  sealed trait `Norway LeftparenthesisNorgeRightparenthesis` extends js.Object
   
   @js.native
   sealed trait OM extends js.Object
   
   @js.native
-  sealed trait `Oman (BACKSLASHu202BBACKSLASHu0639BACKSLASHu064FBACKSLASHu0645BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait PA extends js.Object
@@ -1796,16 +1115,16 @@ object baseuiStrings {
   sealed trait PY extends js.Object
   
   @js.native
-  sealed trait `Pakistan (BACKSLASHu202BBACKSLASHu067EBACKSLASHu0627BACKSLASHu06A9BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait Palau extends js.Object
   
   @js.native
-  sealed trait `Palestine (BACKSLASHu202BBACKSLASHu0641BACKSLASHu0644BACKSLASHu0633BACKSLASHu0637BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Panama (PanamBACKSLASHu00E1)` extends js.Object
+  sealed trait `Panama LeftparenthesisPanamáRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Papua New Guinea` extends js.Object
@@ -1814,13 +1133,688 @@ object baseuiStrings {
   sealed trait Paraguay extends js.Object
   
   @js.native
-  sealed trait `Peru (PerBACKSLASHu00FA)` extends js.Object
+  sealed trait `Peru LeftparenthesisPerúRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Philippines extends js.Object
   
   @js.native
-  sealed trait `Poland (Polska)` extends js.Object
+  sealed trait Plussign1 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1242 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1246 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1264 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1268 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1284 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1340 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1345 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1441 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1473 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1649 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1664 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1670 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1671 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1684 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1721 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1758 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1767 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1784 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1868 extends js.Object
+  
+  @js.native
+  sealed trait Plussign1869 extends js.Object
+  
+  @js.native
+  sealed trait Plussign20 extends js.Object
+  
+  @js.native
+  sealed trait Plussign211 extends js.Object
+  
+  @js.native
+  sealed trait Plussign212 extends js.Object
+  
+  @js.native
+  sealed trait Plussign213 extends js.Object
+  
+  @js.native
+  sealed trait Plussign216 extends js.Object
+  
+  @js.native
+  sealed trait Plussign218 extends js.Object
+  
+  @js.native
+  sealed trait Plussign220 extends js.Object
+  
+  @js.native
+  sealed trait Plussign221 extends js.Object
+  
+  @js.native
+  sealed trait Plussign222 extends js.Object
+  
+  @js.native
+  sealed trait Plussign223 extends js.Object
+  
+  @js.native
+  sealed trait Plussign224 extends js.Object
+  
+  @js.native
+  sealed trait Plussign225 extends js.Object
+  
+  @js.native
+  sealed trait Plussign226 extends js.Object
+  
+  @js.native
+  sealed trait Plussign227 extends js.Object
+  
+  @js.native
+  sealed trait Plussign228 extends js.Object
+  
+  @js.native
+  sealed trait Plussign229 extends js.Object
+  
+  @js.native
+  sealed trait Plussign230 extends js.Object
+  
+  @js.native
+  sealed trait Plussign231 extends js.Object
+  
+  @js.native
+  sealed trait Plussign232 extends js.Object
+  
+  @js.native
+  sealed trait Plussign233 extends js.Object
+  
+  @js.native
+  sealed trait Plussign234 extends js.Object
+  
+  @js.native
+  sealed trait Plussign235 extends js.Object
+  
+  @js.native
+  sealed trait Plussign236 extends js.Object
+  
+  @js.native
+  sealed trait Plussign237 extends js.Object
+  
+  @js.native
+  sealed trait Plussign238 extends js.Object
+  
+  @js.native
+  sealed trait Plussign239 extends js.Object
+  
+  @js.native
+  sealed trait Plussign240 extends js.Object
+  
+  @js.native
+  sealed trait Plussign241 extends js.Object
+  
+  @js.native
+  sealed trait Plussign242 extends js.Object
+  
+  @js.native
+  sealed trait Plussign243 extends js.Object
+  
+  @js.native
+  sealed trait Plussign244 extends js.Object
+  
+  @js.native
+  sealed trait Plussign245 extends js.Object
+  
+  @js.native
+  sealed trait Plussign246 extends js.Object
+  
+  @js.native
+  sealed trait Plussign248 extends js.Object
+  
+  @js.native
+  sealed trait Plussign249 extends js.Object
+  
+  @js.native
+  sealed trait Plussign250 extends js.Object
+  
+  @js.native
+  sealed trait Plussign251 extends js.Object
+  
+  @js.native
+  sealed trait Plussign252 extends js.Object
+  
+  @js.native
+  sealed trait Plussign253 extends js.Object
+  
+  @js.native
+  sealed trait Plussign254 extends js.Object
+  
+  @js.native
+  sealed trait Plussign255 extends js.Object
+  
+  @js.native
+  sealed trait Plussign256 extends js.Object
+  
+  @js.native
+  sealed trait Plussign257 extends js.Object
+  
+  @js.native
+  sealed trait Plussign258 extends js.Object
+  
+  @js.native
+  sealed trait Plussign260 extends js.Object
+  
+  @js.native
+  sealed trait Plussign261 extends js.Object
+  
+  @js.native
+  sealed trait Plussign262 extends js.Object
+  
+  @js.native
+  sealed trait Plussign263 extends js.Object
+  
+  @js.native
+  sealed trait Plussign264 extends js.Object
+  
+  @js.native
+  sealed trait Plussign265 extends js.Object
+  
+  @js.native
+  sealed trait Plussign266 extends js.Object
+  
+  @js.native
+  sealed trait Plussign267 extends js.Object
+  
+  @js.native
+  sealed trait Plussign268 extends js.Object
+  
+  @js.native
+  sealed trait Plussign269 extends js.Object
+  
+  @js.native
+  sealed trait Plussign27 extends js.Object
+  
+  @js.native
+  sealed trait Plussign290 extends js.Object
+  
+  @js.native
+  sealed trait Plussign291 extends js.Object
+  
+  @js.native
+  sealed trait Plussign297 extends js.Object
+  
+  @js.native
+  sealed trait Plussign298 extends js.Object
+  
+  @js.native
+  sealed trait Plussign299 extends js.Object
+  
+  @js.native
+  sealed trait Plussign30 extends js.Object
+  
+  @js.native
+  sealed trait Plussign31 extends js.Object
+  
+  @js.native
+  sealed trait Plussign32 extends js.Object
+  
+  @js.native
+  sealed trait Plussign33 extends js.Object
+  
+  @js.native
+  sealed trait Plussign34 extends js.Object
+  
+  @js.native
+  sealed trait Plussign350 extends js.Object
+  
+  @js.native
+  sealed trait Plussign351 extends js.Object
+  
+  @js.native
+  sealed trait Plussign352 extends js.Object
+  
+  @js.native
+  sealed trait Plussign353 extends js.Object
+  
+  @js.native
+  sealed trait Plussign354 extends js.Object
+  
+  @js.native
+  sealed trait Plussign355 extends js.Object
+  
+  @js.native
+  sealed trait Plussign356 extends js.Object
+  
+  @js.native
+  sealed trait Plussign357 extends js.Object
+  
+  @js.native
+  sealed trait Plussign358 extends js.Object
+  
+  @js.native
+  sealed trait Plussign359 extends js.Object
+  
+  @js.native
+  sealed trait Plussign36 extends js.Object
+  
+  @js.native
+  sealed trait Plussign370 extends js.Object
+  
+  @js.native
+  sealed trait Plussign371 extends js.Object
+  
+  @js.native
+  sealed trait Plussign372 extends js.Object
+  
+  @js.native
+  sealed trait Plussign373 extends js.Object
+  
+  @js.native
+  sealed trait Plussign374 extends js.Object
+  
+  @js.native
+  sealed trait Plussign375 extends js.Object
+  
+  @js.native
+  sealed trait Plussign376 extends js.Object
+  
+  @js.native
+  sealed trait Plussign377 extends js.Object
+  
+  @js.native
+  sealed trait Plussign378 extends js.Object
+  
+  @js.native
+  sealed trait Plussign380 extends js.Object
+  
+  @js.native
+  sealed trait Plussign381 extends js.Object
+  
+  @js.native
+  sealed trait Plussign382 extends js.Object
+  
+  @js.native
+  sealed trait Plussign383 extends js.Object
+  
+  @js.native
+  sealed trait Plussign385 extends js.Object
+  
+  @js.native
+  sealed trait Plussign386 extends js.Object
+  
+  @js.native
+  sealed trait Plussign387 extends js.Object
+  
+  @js.native
+  sealed trait Plussign389 extends js.Object
+  
+  @js.native
+  sealed trait Plussign39 extends js.Object
+  
+  @js.native
+  sealed trait Plussign40 extends js.Object
+  
+  @js.native
+  sealed trait Plussign41 extends js.Object
+  
+  @js.native
+  sealed trait Plussign420 extends js.Object
+  
+  @js.native
+  sealed trait Plussign421 extends js.Object
+  
+  @js.native
+  sealed trait Plussign423 extends js.Object
+  
+  @js.native
+  sealed trait Plussign43 extends js.Object
+  
+  @js.native
+  sealed trait Plussign44 extends js.Object
+  
+  @js.native
+  sealed trait Plussign45 extends js.Object
+  
+  @js.native
+  sealed trait Plussign46 extends js.Object
+  
+  @js.native
+  sealed trait Plussign47 extends js.Object
+  
+  @js.native
+  sealed trait Plussign48 extends js.Object
+  
+  @js.native
+  sealed trait Plussign49 extends js.Object
+  
+  @js.native
+  sealed trait Plussign500 extends js.Object
+  
+  @js.native
+  sealed trait Plussign501 extends js.Object
+  
+  @js.native
+  sealed trait Plussign502 extends js.Object
+  
+  @js.native
+  sealed trait Plussign503 extends js.Object
+  
+  @js.native
+  sealed trait Plussign504 extends js.Object
+  
+  @js.native
+  sealed trait Plussign505 extends js.Object
+  
+  @js.native
+  sealed trait Plussign506 extends js.Object
+  
+  @js.native
+  sealed trait Plussign507 extends js.Object
+  
+  @js.native
+  sealed trait Plussign508 extends js.Object
+  
+  @js.native
+  sealed trait Plussign509 extends js.Object
+  
+  @js.native
+  sealed trait Plussign51 extends js.Object
+  
+  @js.native
+  sealed trait Plussign52 extends js.Object
+  
+  @js.native
+  sealed trait Plussign53 extends js.Object
+  
+  @js.native
+  sealed trait Plussign54 extends js.Object
+  
+  @js.native
+  sealed trait Plussign55 extends js.Object
+  
+  @js.native
+  sealed trait Plussign56 extends js.Object
+  
+  @js.native
+  sealed trait Plussign57 extends js.Object
+  
+  @js.native
+  sealed trait Plussign58 extends js.Object
+  
+  @js.native
+  sealed trait Plussign590 extends js.Object
+  
+  @js.native
+  sealed trait Plussign591 extends js.Object
+  
+  @js.native
+  sealed trait Plussign592 extends js.Object
+  
+  @js.native
+  sealed trait Plussign593 extends js.Object
+  
+  @js.native
+  sealed trait Plussign594 extends js.Object
+  
+  @js.native
+  sealed trait Plussign595 extends js.Object
+  
+  @js.native
+  sealed trait Plussign596 extends js.Object
+  
+  @js.native
+  sealed trait Plussign597 extends js.Object
+  
+  @js.native
+  sealed trait Plussign598 extends js.Object
+  
+  @js.native
+  sealed trait Plussign599 extends js.Object
+  
+  @js.native
+  sealed trait Plussign60 extends js.Object
+  
+  @js.native
+  sealed trait Plussign61 extends js.Object
+  
+  @js.native
+  sealed trait Plussign62 extends js.Object
+  
+  @js.native
+  sealed trait Plussign63 extends js.Object
+  
+  @js.native
+  sealed trait Plussign64 extends js.Object
+  
+  @js.native
+  sealed trait Plussign65 extends js.Object
+  
+  @js.native
+  sealed trait Plussign66 extends js.Object
+  
+  @js.native
+  sealed trait Plussign670 extends js.Object
+  
+  @js.native
+  sealed trait Plussign672 extends js.Object
+  
+  @js.native
+  sealed trait Plussign673 extends js.Object
+  
+  @js.native
+  sealed trait Plussign674 extends js.Object
+  
+  @js.native
+  sealed trait Plussign675 extends js.Object
+  
+  @js.native
+  sealed trait Plussign676 extends js.Object
+  
+  @js.native
+  sealed trait Plussign677 extends js.Object
+  
+  @js.native
+  sealed trait Plussign678 extends js.Object
+  
+  @js.native
+  sealed trait Plussign679 extends js.Object
+  
+  @js.native
+  sealed trait Plussign680 extends js.Object
+  
+  @js.native
+  sealed trait Plussign681 extends js.Object
+  
+  @js.native
+  sealed trait Plussign682 extends js.Object
+  
+  @js.native
+  sealed trait Plussign683 extends js.Object
+  
+  @js.native
+  sealed trait Plussign685 extends js.Object
+  
+  @js.native
+  sealed trait Plussign686 extends js.Object
+  
+  @js.native
+  sealed trait Plussign687 extends js.Object
+  
+  @js.native
+  sealed trait Plussign688 extends js.Object
+  
+  @js.native
+  sealed trait Plussign689 extends js.Object
+  
+  @js.native
+  sealed trait Plussign690 extends js.Object
+  
+  @js.native
+  sealed trait Plussign691 extends js.Object
+  
+  @js.native
+  sealed trait Plussign692 extends js.Object
+  
+  @js.native
+  sealed trait Plussign7 extends js.Object
+  
+  @js.native
+  sealed trait Plussign81 extends js.Object
+  
+  @js.native
+  sealed trait Plussign82 extends js.Object
+  
+  @js.native
+  sealed trait Plussign84 extends js.Object
+  
+  @js.native
+  sealed trait Plussign850 extends js.Object
+  
+  @js.native
+  sealed trait Plussign852 extends js.Object
+  
+  @js.native
+  sealed trait Plussign853 extends js.Object
+  
+  @js.native
+  sealed trait Plussign855 extends js.Object
+  
+  @js.native
+  sealed trait Plussign856 extends js.Object
+  
+  @js.native
+  sealed trait Plussign86 extends js.Object
+  
+  @js.native
+  sealed trait Plussign880 extends js.Object
+  
+  @js.native
+  sealed trait Plussign886 extends js.Object
+  
+  @js.native
+  sealed trait Plussign90 extends js.Object
+  
+  @js.native
+  sealed trait Plussign91 extends js.Object
+  
+  @js.native
+  sealed trait Plussign92 extends js.Object
+  
+  @js.native
+  sealed trait Plussign93 extends js.Object
+  
+  @js.native
+  sealed trait Plussign94 extends js.Object
+  
+  @js.native
+  sealed trait Plussign95 extends js.Object
+  
+  @js.native
+  sealed trait Plussign960 extends js.Object
+  
+  @js.native
+  sealed trait Plussign961 extends js.Object
+  
+  @js.native
+  sealed trait Plussign962 extends js.Object
+  
+  @js.native
+  sealed trait Plussign963 extends js.Object
+  
+  @js.native
+  sealed trait Plussign964 extends js.Object
+  
+  @js.native
+  sealed trait Plussign965 extends js.Object
+  
+  @js.native
+  sealed trait Plussign966 extends js.Object
+  
+  @js.native
+  sealed trait Plussign967 extends js.Object
+  
+  @js.native
+  sealed trait Plussign968 extends js.Object
+  
+  @js.native
+  sealed trait Plussign970 extends js.Object
+  
+  @js.native
+  sealed trait Plussign971 extends js.Object
+  
+  @js.native
+  sealed trait Plussign972 extends js.Object
+  
+  @js.native
+  sealed trait Plussign973 extends js.Object
+  
+  @js.native
+  sealed trait Plussign974 extends js.Object
+  
+  @js.native
+  sealed trait Plussign975 extends js.Object
+  
+  @js.native
+  sealed trait Plussign976 extends js.Object
+  
+  @js.native
+  sealed trait Plussign977 extends js.Object
+  
+  @js.native
+  sealed trait Plussign98 extends js.Object
+  
+  @js.native
+  sealed trait Plussign992 extends js.Object
+  
+  @js.native
+  sealed trait Plussign993 extends js.Object
+  
+  @js.native
+  sealed trait Plussign994 extends js.Object
+  
+  @js.native
+  sealed trait Plussign995 extends js.Object
+  
+  @js.native
+  sealed trait Plussign996 extends js.Object
+  
+  @js.native
+  sealed trait Plussign998 extends js.Object
+  
+  @js.native
+  sealed trait `Poland LeftparenthesisPolskaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Portugal extends js.Object
@@ -1832,10 +1826,7 @@ object baseuiStrings {
   sealed trait QA extends js.Object
   
   @js.native
-  sealed trait `Qatar (BACKSLASHu202BBACKSLASHu0642BACKSLASHu0637BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` extends js.Object
-  
-  @js.native
-  sealed trait `RBACKSLASHu00E9union (La RBACKSLASHu00E9union)` extends js.Object
+  sealed trait `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait RE extends js.Object
@@ -1853,22 +1844,22 @@ object baseuiStrings {
   sealed trait RW extends js.Object
   
   @js.native
-  sealed trait `Romania (RomBACKSLASHu00E2nia)` extends js.Object
+  sealed trait `Romania LeftparenthesisRomâniaRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Russia (BACKSLASHu0420BACKSLASHu043EBACKSLASHu0441BACKSLASHu0441BACKSLASHu0438BACKSLASHu044F)` extends js.Object
+  sealed trait `Russia LeftparenthesisРоссияRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Rwanda extends js.Object
+  
+  @js.native
+  sealed trait `Réunion LeftparenthesisLa RéunionRightparenthesis` extends js.Object
   
   @js.native
   sealed trait SA extends js.Object
   
   @js.native
   sealed trait SB extends js.Object
-  
-  @js.native
-  sealed trait `SBACKSLASHu00E3o TomBACKSLASHu00E9 and PrBACKSLASHu00EDncipe (SBACKSLASHu00E3o TomBACKSLASHu00E9 e PrBACKSLASHu00EDncipe)` extends js.Object
   
   @js.native
   sealed trait SC extends js.Object
@@ -1934,7 +1925,7 @@ object baseuiStrings {
   sealed trait SZ extends js.Object
   
   @js.native
-  sealed trait `Saint BarthBACKSLASHu00E9lemy` extends js.Object
+  sealed trait `Saint Barthélemy` extends js.Object
   
   @js.native
   sealed trait `Saint Helena` extends js.Object
@@ -1946,10 +1937,10 @@ object baseuiStrings {
   sealed trait `Saint Lucia` extends js.Object
   
   @js.native
-  sealed trait `Saint Martin (Saint-Martin (partie franBACKSLASHu00E7aise))` extends js.Object
+  sealed trait `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)` extends js.Object
+  sealed trait `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Saint Vincent and the Grenadines` extends js.Object
@@ -1961,13 +1952,13 @@ object baseuiStrings {
   sealed trait `San Marino` extends js.Object
   
   @js.native
-  sealed trait `Saudi Arabia (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu0645BACKSLASHu0644BACKSLASHu0643BACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0639BACKSLASHu0648BACKSLASHu062FBACKSLASHu064ABACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Senegal (SBACKSLASHu00E9nBACKSLASHu00E9gal)` extends js.Object
+  sealed trait `Senegal LeftparenthesisSénégalRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Serbia (BACKSLASHu0421BACKSLASHu0440BACKSLASHu0431BACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)` extends js.Object
+  sealed trait `Serbia LeftparenthesisСрбијаRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Seychelles extends js.Object
@@ -1982,34 +1973,37 @@ object baseuiStrings {
   sealed trait `Sint Maarten` extends js.Object
   
   @js.native
-  sealed trait `Slovakia (Slovensko)` extends js.Object
+  sealed trait `Slovakia LeftparenthesisSlovenskoRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Slovenia (Slovenija)` extends js.Object
+  sealed trait `Slovenia LeftparenthesisSlovenijaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Solomon Islands` extends js.Object
   
   @js.native
-  sealed trait `Somalia (Soomaaliya)` extends js.Object
+  sealed trait `Somalia LeftparenthesisSoomaaliyaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `South Africa` extends js.Object
   
   @js.native
-  sealed trait `South Korea (BACKSLASHuB300BACKSLASHuD55CBACKSLASHuBBFCBACKSLASHuAD6D)` extends js.Object
+  sealed trait `South Korea Leftparenthesis대한민국Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `South Sudan (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0646BACKSLASHu0648BACKSLASHu0628 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Spain (EspaBACKSLASHu00F1a)` extends js.Object
+  sealed trait Space extends js.Object
   
   @js.native
-  sealed trait `Sri Lanka (BACKSLASHu0DC1BACKSLASHu0DCABACKSLASHu200DBACKSLASHu0DBBBACKSLASHu0DD3 BACKSLASHu0DBDBACKSLASHu0D82BACKSLASHu0D9ABACKSLASHu0DCFBACKSLASHu0DC0)` extends js.Object
+  sealed trait `Spain LeftparenthesisEspañaRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Sudan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis` extends js.Object
+  
+  @js.native
+  sealed trait `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait Suriname extends js.Object
@@ -2021,13 +2015,16 @@ object baseuiStrings {
   sealed trait Swaziland extends js.Object
   
   @js.native
-  sealed trait `Sweden (Sverige)` extends js.Object
+  sealed trait `Sweden LeftparenthesisSverigeRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Switzerland (Schweiz)` extends js.Object
+  sealed trait `Switzerland LeftparenthesisSchweizRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Syria (BACKSLASHu202BBACKSLASHu0633BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis` extends js.Object
+  
+  @js.native
+  sealed trait `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis` extends js.Object
   
   @js.native
   sealed trait TC extends js.Object
@@ -2075,7 +2072,7 @@ object baseuiStrings {
   sealed trait TZ extends js.Object
   
   @js.native
-  sealed trait `Taiwan (BACKSLASHu53F0BACKSLASHu7063)` extends js.Object
+  sealed trait `Taiwan Leftparenthesis台灣Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait Tajikistan extends js.Object
@@ -2084,7 +2081,7 @@ object baseuiStrings {
   sealed trait Tanzania extends js.Object
   
   @js.native
-  sealed trait `Thailand (BACKSLASHu0E44BACKSLASHu0E17BACKSLASHu0E22)` extends js.Object
+  sealed trait `Thailand LeftparenthesisไทยRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Timor-Leste` extends js.Object
@@ -2102,10 +2099,10 @@ object baseuiStrings {
   sealed trait `Trinisoad and Tobago` extends js.Object
   
   @js.native
-  sealed trait `Tunisia (BACKSLASHu202BBACKSLASHu062ABACKSLASHu0648BACKSLASHu0646BACKSLASHu0633BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `Turkey (TBACKSLASHu00FCrkiye)` extends js.Object
+  sealed trait `Turkey LeftparenthesisTürkiyeRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Turkmenistan extends js.Object
@@ -2120,7 +2117,7 @@ object baseuiStrings {
   sealed trait UA extends js.Object
   
   @js.native
-  sealed trait `UDOTSDOT Virgin Islands` extends js.Object
+  sealed trait `UDotSDot Virgin Islands` extends js.Object
   
   @js.native
   sealed trait UG extends js.Object
@@ -2138,10 +2135,10 @@ object baseuiStrings {
   sealed trait Uganda extends js.Object
   
   @js.native
-  sealed trait `Ukraine (BACKSLASHu0423BACKSLASHu043ABACKSLASHu0440BACKSLASHu0430BACKSLASHu0457BACKSLASHu043DBACKSLASHu0430)` extends js.Object
+  sealed trait `Ukraine LeftparenthesisУкраїнаRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `United Arab Emirates (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0625BACKSLASHu0645BACKSLASHu0627BACKSLASHu0631BACKSLASHu0627BACKSLASHu062A BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu062ABACKSLASHu062DBACKSLASHu062FBACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait `United Kingdom` extends js.Object
@@ -2153,7 +2150,7 @@ object baseuiStrings {
   sealed trait Uruguay extends js.Object
   
   @js.native
-  sealed trait `Uzbekistan (OBACKSLASHu02BBzbekiston)` extends js.Object
+  sealed trait `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis` extends js.Object
   
   @js.native
   sealed trait VA extends js.Object
@@ -2180,13 +2177,13 @@ object baseuiStrings {
   sealed trait Vanuatu extends js.Object
   
   @js.native
-  sealed trait `Vatican City (CittBACKSLASHu00E0 del Vaticano)` extends js.Object
+  sealed trait `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis` extends js.Object
   
   @js.native
   sealed trait Venezuela extends js.Object
   
   @js.native
-  sealed trait `Vietnam (ViBACKSLASHu1EC7t Nam)` extends js.Object
+  sealed trait `Vietnam LeftparenthesisViệt NamRightparenthesis` extends js.Object
   
   @js.native
   sealed trait WF extends js.Object
@@ -2195,7 +2192,7 @@ object baseuiStrings {
   sealed trait WS extends js.Object
   
   @js.native
-  sealed trait `Wallis and Futuna (Wallis-et-Futuna)` extends js.Object
+  sealed trait `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis` extends js.Object
   
   @js.native
   sealed trait XK extends js.Object
@@ -2213,7 +2210,7 @@ object baseuiStrings {
   sealed trait `YYYY-MM-DD` extends js.Object
   
   @js.native
-  sealed trait `Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` extends js.Object
+  sealed trait `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` extends js.Object
   
   @js.native
   sealed trait ZA extends js.Object
@@ -3319,460 +3316,11 @@ object baseuiStrings {
   @js.native
   sealed trait webview extends js.Object
   
-  @scala.inline
-  def ` `: ` ` = " ".asInstanceOf[` `]
-  @scala.inline
-  def `+1`: `+1` = "+1".asInstanceOf[`+1`]
-  @scala.inline
-  def `+1242`: `+1242` = "+1242".asInstanceOf[`+1242`]
-  @scala.inline
-  def `+1246`: `+1246` = "+1246".asInstanceOf[`+1246`]
-  @scala.inline
-  def `+1264`: `+1264` = "+1264".asInstanceOf[`+1264`]
-  @scala.inline
-  def `+1268`: `+1268` = "+1268".asInstanceOf[`+1268`]
-  @scala.inline
-  def `+1284`: `+1284` = "+1284".asInstanceOf[`+1284`]
-  @scala.inline
-  def `+1340`: `+1340` = "+1340".asInstanceOf[`+1340`]
-  @scala.inline
-  def `+1345`: `+1345` = "+1345".asInstanceOf[`+1345`]
-  @scala.inline
-  def `+1441`: `+1441` = "+1441".asInstanceOf[`+1441`]
-  @scala.inline
-  def `+1473`: `+1473` = "+1473".asInstanceOf[`+1473`]
-  @scala.inline
-  def `+1649`: `+1649` = "+1649".asInstanceOf[`+1649`]
-  @scala.inline
-  def `+1664`: `+1664` = "+1664".asInstanceOf[`+1664`]
-  @scala.inline
-  def `+1670`: `+1670` = "+1670".asInstanceOf[`+1670`]
-  @scala.inline
-  def `+1671`: `+1671` = "+1671".asInstanceOf[`+1671`]
-  @scala.inline
-  def `+1684`: `+1684` = "+1684".asInstanceOf[`+1684`]
-  @scala.inline
-  def `+1721`: `+1721` = "+1721".asInstanceOf[`+1721`]
-  @scala.inline
-  def `+1758`: `+1758` = "+1758".asInstanceOf[`+1758`]
-  @scala.inline
-  def `+1767`: `+1767` = "+1767".asInstanceOf[`+1767`]
-  @scala.inline
-  def `+1784`: `+1784` = "+1784".asInstanceOf[`+1784`]
-  @scala.inline
-  def `+1868`: `+1868` = "+1868".asInstanceOf[`+1868`]
-  @scala.inline
-  def `+1869`: `+1869` = "+1869".asInstanceOf[`+1869`]
-  @scala.inline
-  def `+20`: `+20` = "+20".asInstanceOf[`+20`]
-  @scala.inline
-  def `+211`: `+211` = "+211".asInstanceOf[`+211`]
-  @scala.inline
-  def `+212`: `+212` = "+212".asInstanceOf[`+212`]
-  @scala.inline
-  def `+213`: `+213` = "+213".asInstanceOf[`+213`]
-  @scala.inline
-  def `+216`: `+216` = "+216".asInstanceOf[`+216`]
-  @scala.inline
-  def `+218`: `+218` = "+218".asInstanceOf[`+218`]
-  @scala.inline
-  def `+220`: `+220` = "+220".asInstanceOf[`+220`]
-  @scala.inline
-  def `+221`: `+221` = "+221".asInstanceOf[`+221`]
-  @scala.inline
-  def `+222`: `+222` = "+222".asInstanceOf[`+222`]
-  @scala.inline
-  def `+223`: `+223` = "+223".asInstanceOf[`+223`]
-  @scala.inline
-  def `+224`: `+224` = "+224".asInstanceOf[`+224`]
-  @scala.inline
-  def `+225`: `+225` = "+225".asInstanceOf[`+225`]
-  @scala.inline
-  def `+226`: `+226` = "+226".asInstanceOf[`+226`]
-  @scala.inline
-  def `+227`: `+227` = "+227".asInstanceOf[`+227`]
-  @scala.inline
-  def `+228`: `+228` = "+228".asInstanceOf[`+228`]
-  @scala.inline
-  def `+229`: `+229` = "+229".asInstanceOf[`+229`]
-  @scala.inline
-  def `+230`: `+230` = "+230".asInstanceOf[`+230`]
-  @scala.inline
-  def `+231`: `+231` = "+231".asInstanceOf[`+231`]
-  @scala.inline
-  def `+232`: `+232` = "+232".asInstanceOf[`+232`]
-  @scala.inline
-  def `+233`: `+233` = "+233".asInstanceOf[`+233`]
-  @scala.inline
-  def `+234`: `+234` = "+234".asInstanceOf[`+234`]
-  @scala.inline
-  def `+235`: `+235` = "+235".asInstanceOf[`+235`]
-  @scala.inline
-  def `+236`: `+236` = "+236".asInstanceOf[`+236`]
-  @scala.inline
-  def `+237`: `+237` = "+237".asInstanceOf[`+237`]
-  @scala.inline
-  def `+238`: `+238` = "+238".asInstanceOf[`+238`]
-  @scala.inline
-  def `+239`: `+239` = "+239".asInstanceOf[`+239`]
-  @scala.inline
-  def `+240`: `+240` = "+240".asInstanceOf[`+240`]
-  @scala.inline
-  def `+241`: `+241` = "+241".asInstanceOf[`+241`]
-  @scala.inline
-  def `+242`: `+242` = "+242".asInstanceOf[`+242`]
-  @scala.inline
-  def `+243`: `+243` = "+243".asInstanceOf[`+243`]
-  @scala.inline
-  def `+244`: `+244` = "+244".asInstanceOf[`+244`]
-  @scala.inline
-  def `+245`: `+245` = "+245".asInstanceOf[`+245`]
-  @scala.inline
-  def `+246`: `+246` = "+246".asInstanceOf[`+246`]
-  @scala.inline
-  def `+248`: `+248` = "+248".asInstanceOf[`+248`]
-  @scala.inline
-  def `+249`: `+249` = "+249".asInstanceOf[`+249`]
-  @scala.inline
-  def `+250`: `+250` = "+250".asInstanceOf[`+250`]
-  @scala.inline
-  def `+251`: `+251` = "+251".asInstanceOf[`+251`]
-  @scala.inline
-  def `+252`: `+252` = "+252".asInstanceOf[`+252`]
-  @scala.inline
-  def `+253`: `+253` = "+253".asInstanceOf[`+253`]
-  @scala.inline
-  def `+254`: `+254` = "+254".asInstanceOf[`+254`]
-  @scala.inline
-  def `+255`: `+255` = "+255".asInstanceOf[`+255`]
-  @scala.inline
-  def `+256`: `+256` = "+256".asInstanceOf[`+256`]
-  @scala.inline
-  def `+257`: `+257` = "+257".asInstanceOf[`+257`]
-  @scala.inline
-  def `+258`: `+258` = "+258".asInstanceOf[`+258`]
-  @scala.inline
-  def `+260`: `+260` = "+260".asInstanceOf[`+260`]
-  @scala.inline
-  def `+261`: `+261` = "+261".asInstanceOf[`+261`]
-  @scala.inline
-  def `+262`: `+262` = "+262".asInstanceOf[`+262`]
-  @scala.inline
-  def `+263`: `+263` = "+263".asInstanceOf[`+263`]
-  @scala.inline
-  def `+264`: `+264` = "+264".asInstanceOf[`+264`]
-  @scala.inline
-  def `+265`: `+265` = "+265".asInstanceOf[`+265`]
-  @scala.inline
-  def `+266`: `+266` = "+266".asInstanceOf[`+266`]
-  @scala.inline
-  def `+267`: `+267` = "+267".asInstanceOf[`+267`]
-  @scala.inline
-  def `+268`: `+268` = "+268".asInstanceOf[`+268`]
-  @scala.inline
-  def `+269`: `+269` = "+269".asInstanceOf[`+269`]
-  @scala.inline
-  def `+27`: `+27` = "+27".asInstanceOf[`+27`]
-  @scala.inline
-  def `+290`: `+290` = "+290".asInstanceOf[`+290`]
-  @scala.inline
-  def `+291`: `+291` = "+291".asInstanceOf[`+291`]
-  @scala.inline
-  def `+297`: `+297` = "+297".asInstanceOf[`+297`]
-  @scala.inline
-  def `+298`: `+298` = "+298".asInstanceOf[`+298`]
-  @scala.inline
-  def `+299`: `+299` = "+299".asInstanceOf[`+299`]
-  @scala.inline
-  def `+30`: `+30` = "+30".asInstanceOf[`+30`]
-  @scala.inline
-  def `+31`: `+31` = "+31".asInstanceOf[`+31`]
-  @scala.inline
-  def `+32`: `+32` = "+32".asInstanceOf[`+32`]
-  @scala.inline
-  def `+33`: `+33` = "+33".asInstanceOf[`+33`]
-  @scala.inline
-  def `+34`: `+34` = "+34".asInstanceOf[`+34`]
-  @scala.inline
-  def `+350`: `+350` = "+350".asInstanceOf[`+350`]
-  @scala.inline
-  def `+351`: `+351` = "+351".asInstanceOf[`+351`]
-  @scala.inline
-  def `+352`: `+352` = "+352".asInstanceOf[`+352`]
-  @scala.inline
-  def `+353`: `+353` = "+353".asInstanceOf[`+353`]
-  @scala.inline
-  def `+354`: `+354` = "+354".asInstanceOf[`+354`]
-  @scala.inline
-  def `+355`: `+355` = "+355".asInstanceOf[`+355`]
-  @scala.inline
-  def `+356`: `+356` = "+356".asInstanceOf[`+356`]
-  @scala.inline
-  def `+357`: `+357` = "+357".asInstanceOf[`+357`]
-  @scala.inline
-  def `+358`: `+358` = "+358".asInstanceOf[`+358`]
-  @scala.inline
-  def `+359`: `+359` = "+359".asInstanceOf[`+359`]
-  @scala.inline
-  def `+36`: `+36` = "+36".asInstanceOf[`+36`]
-  @scala.inline
-  def `+370`: `+370` = "+370".asInstanceOf[`+370`]
-  @scala.inline
-  def `+371`: `+371` = "+371".asInstanceOf[`+371`]
-  @scala.inline
-  def `+372`: `+372` = "+372".asInstanceOf[`+372`]
-  @scala.inline
-  def `+373`: `+373` = "+373".asInstanceOf[`+373`]
-  @scala.inline
-  def `+374`: `+374` = "+374".asInstanceOf[`+374`]
-  @scala.inline
-  def `+375`: `+375` = "+375".asInstanceOf[`+375`]
-  @scala.inline
-  def `+376`: `+376` = "+376".asInstanceOf[`+376`]
-  @scala.inline
-  def `+377`: `+377` = "+377".asInstanceOf[`+377`]
-  @scala.inline
-  def `+378`: `+378` = "+378".asInstanceOf[`+378`]
-  @scala.inline
-  def `+380`: `+380` = "+380".asInstanceOf[`+380`]
-  @scala.inline
-  def `+381`: `+381` = "+381".asInstanceOf[`+381`]
-  @scala.inline
-  def `+382`: `+382` = "+382".asInstanceOf[`+382`]
-  @scala.inline
-  def `+383`: `+383` = "+383".asInstanceOf[`+383`]
-  @scala.inline
-  def `+385`: `+385` = "+385".asInstanceOf[`+385`]
-  @scala.inline
-  def `+386`: `+386` = "+386".asInstanceOf[`+386`]
-  @scala.inline
-  def `+387`: `+387` = "+387".asInstanceOf[`+387`]
-  @scala.inline
-  def `+389`: `+389` = "+389".asInstanceOf[`+389`]
-  @scala.inline
-  def `+39`: `+39` = "+39".asInstanceOf[`+39`]
-  @scala.inline
-  def `+40`: `+40` = "+40".asInstanceOf[`+40`]
-  @scala.inline
-  def `+41`: `+41` = "+41".asInstanceOf[`+41`]
-  @scala.inline
-  def `+420`: `+420` = "+420".asInstanceOf[`+420`]
-  @scala.inline
-  def `+421`: `+421` = "+421".asInstanceOf[`+421`]
-  @scala.inline
-  def `+423`: `+423` = "+423".asInstanceOf[`+423`]
-  @scala.inline
-  def `+43`: `+43` = "+43".asInstanceOf[`+43`]
-  @scala.inline
-  def `+44`: `+44` = "+44".asInstanceOf[`+44`]
-  @scala.inline
-  def `+45`: `+45` = "+45".asInstanceOf[`+45`]
-  @scala.inline
-  def `+46`: `+46` = "+46".asInstanceOf[`+46`]
-  @scala.inline
-  def `+47`: `+47` = "+47".asInstanceOf[`+47`]
-  @scala.inline
-  def `+48`: `+48` = "+48".asInstanceOf[`+48`]
-  @scala.inline
-  def `+49`: `+49` = "+49".asInstanceOf[`+49`]
-  @scala.inline
-  def `+500`: `+500` = "+500".asInstanceOf[`+500`]
-  @scala.inline
-  def `+501`: `+501` = "+501".asInstanceOf[`+501`]
-  @scala.inline
-  def `+502`: `+502` = "+502".asInstanceOf[`+502`]
-  @scala.inline
-  def `+503`: `+503` = "+503".asInstanceOf[`+503`]
-  @scala.inline
-  def `+504`: `+504` = "+504".asInstanceOf[`+504`]
-  @scala.inline
-  def `+505`: `+505` = "+505".asInstanceOf[`+505`]
-  @scala.inline
-  def `+506`: `+506` = "+506".asInstanceOf[`+506`]
-  @scala.inline
-  def `+507`: `+507` = "+507".asInstanceOf[`+507`]
-  @scala.inline
-  def `+508`: `+508` = "+508".asInstanceOf[`+508`]
-  @scala.inline
-  def `+509`: `+509` = "+509".asInstanceOf[`+509`]
-  @scala.inline
-  def `+51`: `+51` = "+51".asInstanceOf[`+51`]
-  @scala.inline
-  def `+52`: `+52` = "+52".asInstanceOf[`+52`]
-  @scala.inline
-  def `+53`: `+53` = "+53".asInstanceOf[`+53`]
-  @scala.inline
-  def `+54`: `+54` = "+54".asInstanceOf[`+54`]
-  @scala.inline
-  def `+55`: `+55` = "+55".asInstanceOf[`+55`]
-  @scala.inline
-  def `+56`: `+56` = "+56".asInstanceOf[`+56`]
-  @scala.inline
-  def `+57`: `+57` = "+57".asInstanceOf[`+57`]
-  @scala.inline
-  def `+58`: `+58` = "+58".asInstanceOf[`+58`]
-  @scala.inline
-  def `+590`: `+590` = "+590".asInstanceOf[`+590`]
-  @scala.inline
-  def `+591`: `+591` = "+591".asInstanceOf[`+591`]
-  @scala.inline
-  def `+592`: `+592` = "+592".asInstanceOf[`+592`]
-  @scala.inline
-  def `+593`: `+593` = "+593".asInstanceOf[`+593`]
-  @scala.inline
-  def `+594`: `+594` = "+594".asInstanceOf[`+594`]
-  @scala.inline
-  def `+595`: `+595` = "+595".asInstanceOf[`+595`]
-  @scala.inline
-  def `+596`: `+596` = "+596".asInstanceOf[`+596`]
-  @scala.inline
-  def `+597`: `+597` = "+597".asInstanceOf[`+597`]
-  @scala.inline
-  def `+598`: `+598` = "+598".asInstanceOf[`+598`]
-  @scala.inline
-  def `+599`: `+599` = "+599".asInstanceOf[`+599`]
-  @scala.inline
-  def `+60`: `+60` = "+60".asInstanceOf[`+60`]
-  @scala.inline
-  def `+61`: `+61` = "+61".asInstanceOf[`+61`]
-  @scala.inline
-  def `+62`: `+62` = "+62".asInstanceOf[`+62`]
-  @scala.inline
-  def `+63`: `+63` = "+63".asInstanceOf[`+63`]
-  @scala.inline
-  def `+64`: `+64` = "+64".asInstanceOf[`+64`]
-  @scala.inline
-  def `+65`: `+65` = "+65".asInstanceOf[`+65`]
-  @scala.inline
-  def `+66`: `+66` = "+66".asInstanceOf[`+66`]
-  @scala.inline
-  def `+670`: `+670` = "+670".asInstanceOf[`+670`]
-  @scala.inline
-  def `+672`: `+672` = "+672".asInstanceOf[`+672`]
-  @scala.inline
-  def `+673`: `+673` = "+673".asInstanceOf[`+673`]
-  @scala.inline
-  def `+674`: `+674` = "+674".asInstanceOf[`+674`]
-  @scala.inline
-  def `+675`: `+675` = "+675".asInstanceOf[`+675`]
-  @scala.inline
-  def `+676`: `+676` = "+676".asInstanceOf[`+676`]
-  @scala.inline
-  def `+677`: `+677` = "+677".asInstanceOf[`+677`]
-  @scala.inline
-  def `+678`: `+678` = "+678".asInstanceOf[`+678`]
-  @scala.inline
-  def `+679`: `+679` = "+679".asInstanceOf[`+679`]
-  @scala.inline
-  def `+680`: `+680` = "+680".asInstanceOf[`+680`]
-  @scala.inline
-  def `+681`: `+681` = "+681".asInstanceOf[`+681`]
-  @scala.inline
-  def `+682`: `+682` = "+682".asInstanceOf[`+682`]
-  @scala.inline
-  def `+683`: `+683` = "+683".asInstanceOf[`+683`]
-  @scala.inline
-  def `+685`: `+685` = "+685".asInstanceOf[`+685`]
-  @scala.inline
-  def `+686`: `+686` = "+686".asInstanceOf[`+686`]
-  @scala.inline
-  def `+687`: `+687` = "+687".asInstanceOf[`+687`]
-  @scala.inline
-  def `+688`: `+688` = "+688".asInstanceOf[`+688`]
-  @scala.inline
-  def `+689`: `+689` = "+689".asInstanceOf[`+689`]
-  @scala.inline
-  def `+690`: `+690` = "+690".asInstanceOf[`+690`]
-  @scala.inline
-  def `+691`: `+691` = "+691".asInstanceOf[`+691`]
-  @scala.inline
-  def `+692`: `+692` = "+692".asInstanceOf[`+692`]
-  @scala.inline
-  def `+7`: `+7` = "+7".asInstanceOf[`+7`]
-  @scala.inline
-  def `+81`: `+81` = "+81".asInstanceOf[`+81`]
-  @scala.inline
-  def `+82`: `+82` = "+82".asInstanceOf[`+82`]
-  @scala.inline
-  def `+84`: `+84` = "+84".asInstanceOf[`+84`]
-  @scala.inline
-  def `+850`: `+850` = "+850".asInstanceOf[`+850`]
-  @scala.inline
-  def `+852`: `+852` = "+852".asInstanceOf[`+852`]
-  @scala.inline
-  def `+853`: `+853` = "+853".asInstanceOf[`+853`]
-  @scala.inline
-  def `+855`: `+855` = "+855".asInstanceOf[`+855`]
-  @scala.inline
-  def `+856`: `+856` = "+856".asInstanceOf[`+856`]
-  @scala.inline
-  def `+86`: `+86` = "+86".asInstanceOf[`+86`]
-  @scala.inline
-  def `+880`: `+880` = "+880".asInstanceOf[`+880`]
-  @scala.inline
-  def `+886`: `+886` = "+886".asInstanceOf[`+886`]
-  @scala.inline
-  def `+90`: `+90` = "+90".asInstanceOf[`+90`]
-  @scala.inline
-  def `+91`: `+91` = "+91".asInstanceOf[`+91`]
-  @scala.inline
-  def `+92`: `+92` = "+92".asInstanceOf[`+92`]
-  @scala.inline
-  def `+93`: `+93` = "+93".asInstanceOf[`+93`]
-  @scala.inline
-  def `+94`: `+94` = "+94".asInstanceOf[`+94`]
-  @scala.inline
-  def `+95`: `+95` = "+95".asInstanceOf[`+95`]
-  @scala.inline
-  def `+960`: `+960` = "+960".asInstanceOf[`+960`]
-  @scala.inline
-  def `+961`: `+961` = "+961".asInstanceOf[`+961`]
-  @scala.inline
-  def `+962`: `+962` = "+962".asInstanceOf[`+962`]
-  @scala.inline
-  def `+963`: `+963` = "+963".asInstanceOf[`+963`]
-  @scala.inline
-  def `+964`: `+964` = "+964".asInstanceOf[`+964`]
-  @scala.inline
-  def `+965`: `+965` = "+965".asInstanceOf[`+965`]
-  @scala.inline
-  def `+966`: `+966` = "+966".asInstanceOf[`+966`]
-  @scala.inline
-  def `+967`: `+967` = "+967".asInstanceOf[`+967`]
-  @scala.inline
-  def `+968`: `+968` = "+968".asInstanceOf[`+968`]
-  @scala.inline
-  def `+970`: `+970` = "+970".asInstanceOf[`+970`]
-  @scala.inline
-  def `+971`: `+971` = "+971".asInstanceOf[`+971`]
-  @scala.inline
-  def `+972`: `+972` = "+972".asInstanceOf[`+972`]
-  @scala.inline
-  def `+973`: `+973` = "+973".asInstanceOf[`+973`]
-  @scala.inline
-  def `+974`: `+974` = "+974".asInstanceOf[`+974`]
-  @scala.inline
-  def `+975`: `+975` = "+975".asInstanceOf[`+975`]
-  @scala.inline
-  def `+976`: `+976` = "+976".asInstanceOf[`+976`]
-  @scala.inline
-  def `+977`: `+977` = "+977".asInstanceOf[`+977`]
-  @scala.inline
-  def `+98`: `+98` = "+98".asInstanceOf[`+98`]
-  @scala.inline
-  def `+992`: `+992` = "+992".asInstanceOf[`+992`]
-  @scala.inline
-  def `+993`: `+993` = "+993".asInstanceOf[`+993`]
-  @scala.inline
-  def `+994`: `+994` = "+994".asInstanceOf[`+994`]
-  @scala.inline
-  def `+995`: `+995` = "+995".asInstanceOf[`+995`]
-  @scala.inline
-  def `+996`: `+996` = "+996".asInstanceOf[`+996`]
-  @scala.inline
-  def `+998`: `+998` = "+998".asInstanceOf[`+998`]
-  @scala.inline
-  def `100%`: `100%` = "100%".asInstanceOf[`100%`]
+  @js.native
+  sealed trait `Åland Islands` extends js.Object
+  
+  @scala.inline
+  def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
   @scala.inline
   def `12`: `12` = "12".asInstanceOf[`12`]
   @scala.inline
@@ -3816,11 +3364,11 @@ object baseuiStrings {
   @scala.inline
   def AZ: AZ = "AZ".asInstanceOf[AZ]
   @scala.inline
-  def `Afghanistan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0641BACKSLASHu063ABACKSLASHu0627BACKSLASHu0646BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Afghanistan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0641BACKSLASHu063ABACKSLASHu0627BACKSLASHu0646BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Afghanistan (\u202B\u0627\u0641\u063A\u0627\u0646\u0633\u062A\u0627\u0646\u202C\u200E)".asInstanceOf[`Afghanistan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0641BACKSLASHu063ABACKSLASHu0627BACKSLASHu0646BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`: `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis` = "Afghanistan (\u202B\u0627\u0641\u063A\u0627\u0646\u0633\u062A\u0627\u0646\u202C\u200E)".asInstanceOf[`Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`]
   @scala.inline
-  def `Albania (ShqipBACKSLASHu00EBri)`: `Albania (ShqipBACKSLASHu00EBri)` = "Albania (Shqip\u00EBri)".asInstanceOf[`Albania (ShqipBACKSLASHu00EBri)`]
+  def `Albania LeftparenthesisShqipëriRightparenthesis`: `Albania LeftparenthesisShqipëriRightparenthesis` = "Albania (Shqip\u00EBri)".asInstanceOf[`Albania LeftparenthesisShqipëriRightparenthesis`]
   @scala.inline
-  def `Algeria (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu062CBACKSLASHu0632BACKSLASHu0627BACKSLASHu0626BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`: `Algeria (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu062CBACKSLASHu0632BACKSLASHu0627BACKSLASHu0626BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` = "Algeria (\u202B\u0627\u0644\u062C\u0632\u0627\u0626\u0631\u202C\u200E)".asInstanceOf[`Algeria (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu062CBACKSLASHu0632BACKSLASHu0627BACKSLASHu0626BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`]
+  def `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`: `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis` = "Algeria (\u202B\u0627\u0644\u062C\u0632\u0627\u0626\u0631\u202C\u200E)".asInstanceOf[`Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`]
   @scala.inline
   def `American Samoa`: `American Samoa` = "American Samoa".asInstanceOf[`American Samoa`]
   @scala.inline
@@ -3834,7 +3382,7 @@ object baseuiStrings {
   @scala.inline
   def Argentina: Argentina = "Argentina".asInstanceOf[Argentina]
   @scala.inline
-  def `Armenia (BACKSLASHu0540BACKSLASHu0561BACKSLASHu0575BACKSLASHu0561BACKSLASHu057DBACKSLASHu057FBACKSLASHu0561BACKSLASHu0576)`: `Armenia (BACKSLASHu0540BACKSLASHu0561BACKSLASHu0575BACKSLASHu0561BACKSLASHu057DBACKSLASHu057FBACKSLASHu0561BACKSLASHu0576)` = "Armenia (\u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576)".asInstanceOf[`Armenia (BACKSLASHu0540BACKSLASHu0561BACKSLASHu0575BACKSLASHu0561BACKSLASHu057DBACKSLASHu057FBACKSLASHu0561BACKSLASHu0576)`]
+  def `Armenia LeftparenthesisՀայաստանRightparenthesis`: `Armenia LeftparenthesisՀայաստանRightparenthesis` = "Armenia (\u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576)".asInstanceOf[`Armenia LeftparenthesisՀայաստանRightparenthesis`]
   @scala.inline
   def ArrowDown: ArrowDown = "ArrowDown".asInstanceOf[ArrowDown]
   @scala.inline
@@ -3848,13 +3396,11 @@ object baseuiStrings {
   @scala.inline
   def Australia: Australia = "Australia".asInstanceOf[Australia]
   @scala.inline
-  def `Austria (BACKSLASHu00D6sterreich)`: `Austria (BACKSLASHu00D6sterreich)` = "Austria (\u00D6sterreich)".asInstanceOf[`Austria (BACKSLASHu00D6sterreich)`]
+  def `Austria LeftparenthesisÖsterreichRightparenthesis`: `Austria LeftparenthesisÖsterreichRightparenthesis` = "Austria (\u00D6sterreich)".asInstanceOf[`Austria LeftparenthesisÖsterreichRightparenthesis`]
   @scala.inline
-  def `Azerbaijan (AzBACKSLASHu0259rbaycan)`: `Azerbaijan (AzBACKSLASHu0259rbaycan)` = "Azerbaijan (Az\u0259rbaycan)".asInstanceOf[`Azerbaijan (AzBACKSLASHu0259rbaycan)`]
+  def `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` = "Azerbaijan (Az\u0259rbaycan)".asInstanceOf[`Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`]
   @scala.inline
   def BA: BA = "BA".asInstanceOf[BA]
-  @scala.inline
-  def `BACKSLASHu00C5land Islands`: `BACKSLASHu00C5land Islands` = "\u00C5land Islands".asInstanceOf[`BACKSLASHu00C5land Islands`]
   @scala.inline
   def BB: BB = "BB".asInstanceOf[BB]
   @scala.inline
@@ -3898,31 +3444,31 @@ object baseuiStrings {
   @scala.inline
   def Bahamas: Bahamas = "Bahamas".asInstanceOf[Bahamas]
   @scala.inline
-  def `Bahrain (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0628BACKSLASHu062DBACKSLASHu0631BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Bahrain (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0628BACKSLASHu062DBACKSLASHu0631BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Bahrain (\u202B\u0627\u0644\u0628\u062D\u0631\u064A\u0646\u202C\u200E)".asInstanceOf[`Bahrain (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0628BACKSLASHu062DBACKSLASHu0631BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`: `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis` = "Bahrain (\u202B\u0627\u0644\u0628\u062D\u0631\u064A\u0646\u202C\u200E)".asInstanceOf[`Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`]
   @scala.inline
-  def `Bangladesh (BACKSLASHu09ACBACKSLASHu09BEBACKSLASHu0982BACKSLASHu09B2BACKSLASHu09BEBACKSLASHu09A6BACKSLASHu09C7BACKSLASHu09B6)`: `Bangladesh (BACKSLASHu09ACBACKSLASHu09BEBACKSLASHu0982BACKSLASHu09B2BACKSLASHu09BEBACKSLASHu09A6BACKSLASHu09C7BACKSLASHu09B6)` = "Bangladesh (\u09AC\u09BE\u0982\u09B2\u09BE\u09A6\u09C7\u09B6)".asInstanceOf[`Bangladesh (BACKSLASHu09ACBACKSLASHu09BEBACKSLASHu0982BACKSLASHu09B2BACKSLASHu09BEBACKSLASHu09A6BACKSLASHu09C7BACKSLASHu09B6)`]
+  def `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`: `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis` = "Bangladesh (\u09AC\u09BE\u0982\u09B2\u09BE\u09A6\u09C7\u09B6)".asInstanceOf[`Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`]
   @scala.inline
   def Barbados: Barbados = "Barbados".asInstanceOf[Barbados]
   @scala.inline
-  def `Belarus (BACKSLASHu0411BACKSLASHu0435BACKSLASHu043BBACKSLASHu0430BACKSLASHu0440BACKSLASHu0443BACKSLASHu0441BACKSLASHu044C)`: `Belarus (BACKSLASHu0411BACKSLASHu0435BACKSLASHu043BBACKSLASHu0430BACKSLASHu0440BACKSLASHu0443BACKSLASHu0441BACKSLASHu044C)` = "Belarus (\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u044C)".asInstanceOf[`Belarus (BACKSLASHu0411BACKSLASHu0435BACKSLASHu043BBACKSLASHu0430BACKSLASHu0440BACKSLASHu0443BACKSLASHu0441BACKSLASHu044C)`]
+  def `Belarus LeftparenthesisБеларусьRightparenthesis`: `Belarus LeftparenthesisБеларусьRightparenthesis` = "Belarus (\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u044C)".asInstanceOf[`Belarus LeftparenthesisБеларусьRightparenthesis`]
   @scala.inline
-  def `Belgium (BelgiBACKSLASHu00EB)`: `Belgium (BelgiBACKSLASHu00EB)` = "Belgium (Belgi\u00EB)".asInstanceOf[`Belgium (BelgiBACKSLASHu00EB)`]
+  def `Belgium LeftparenthesisBelgiëRightparenthesis`: `Belgium LeftparenthesisBelgiëRightparenthesis` = "Belgium (Belgi\u00EB)".asInstanceOf[`Belgium LeftparenthesisBelgiëRightparenthesis`]
   @scala.inline
   def Belize: Belize = "Belize".asInstanceOf[Belize]
   @scala.inline
-  def `Benin (BBACKSLASHu00E9nin)`: `Benin (BBACKSLASHu00E9nin)` = "Benin (B\u00E9nin)".asInstanceOf[`Benin (BBACKSLASHu00E9nin)`]
+  def `Benin LeftparenthesisBéninRightparenthesis`: `Benin LeftparenthesisBéninRightparenthesis` = "Benin (B\u00E9nin)".asInstanceOf[`Benin LeftparenthesisBéninRightparenthesis`]
   @scala.inline
   def Bermuda: Bermuda = "Bermuda".asInstanceOf[Bermuda]
   @scala.inline
-  def `Bhutan (BACKSLASHu0F60BACKSLASHu0F56BACKSLASHu0FB2BACKSLASHu0F74BACKSLASHu0F42)`: `Bhutan (BACKSLASHu0F60BACKSLASHu0F56BACKSLASHu0FB2BACKSLASHu0F74BACKSLASHu0F42)` = "Bhutan (\u0F60\u0F56\u0FB2\u0F74\u0F42)".asInstanceOf[`Bhutan (BACKSLASHu0F60BACKSLASHu0F56BACKSLASHu0FB2BACKSLASHu0F74BACKSLASHu0F42)`]
+  def `Bhutan LeftparenthesisའབྲུགRightparenthesis`: `Bhutan LeftparenthesisའབྲུགRightparenthesis` = "Bhutan (\u0F60\u0F56\u0FB2\u0F74\u0F42)".asInstanceOf[`Bhutan LeftparenthesisའབྲུགRightparenthesis`]
   @scala.inline
   def Bolivia: Bolivia = "Bolivia".asInstanceOf[Bolivia]
   @scala.inline
-  def `Bosnia and Herzegovina (BACKSLASHu0411BACKSLASHu043EBACKSLASHu0441BACKSLASHu043DBACKSLASHu0430 BACKSLASHu0438 BACKSLASHu0425BACKSLASHu0435BACKSLASHu0440BACKSLASHu0446BACKSLASHu0435BACKSLASHu0433BACKSLASHu043EBACKSLASHu0432BACKSLASHu0438BACKSLASHu043DBACKSLASHu0430)`: `Bosnia and Herzegovina (BACKSLASHu0411BACKSLASHu043EBACKSLASHu0441BACKSLASHu043DBACKSLASHu0430 BACKSLASHu0438 BACKSLASHu0425BACKSLASHu0435BACKSLASHu0440BACKSLASHu0446BACKSLASHu0435BACKSLASHu0433BACKSLASHu043EBACKSLASHu0432BACKSLASHu0438BACKSLASHu043DBACKSLASHu0430)` = "Bosnia and Herzegovina (\u0411\u043E\u0441\u043D\u0430 \u0438 \u0425\u0435\u0440\u0446\u0435\u0433\u043E\u0432\u0438\u043D\u0430)".asInstanceOf[`Bosnia and Herzegovina (BACKSLASHu0411BACKSLASHu043EBACKSLASHu0441BACKSLASHu043DBACKSLASHu0430 BACKSLASHu0438 BACKSLASHu0425BACKSLASHu0435BACKSLASHu0440BACKSLASHu0446BACKSLASHu0435BACKSLASHu0433BACKSLASHu043EBACKSLASHu0432BACKSLASHu0438BACKSLASHu043DBACKSLASHu0430)`]
+  def `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`: `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis` = "Bosnia and Herzegovina (\u0411\u043E\u0441\u043D\u0430 \u0438 \u0425\u0435\u0440\u0446\u0435\u0433\u043E\u0432\u0438\u043D\u0430)".asInstanceOf[`Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`]
   @scala.inline
   def Botswana: Botswana = "Botswana".asInstanceOf[Botswana]
   @scala.inline
-  def `Brazil (Brasil)`: `Brazil (Brasil)` = "Brazil (Brasil)".asInstanceOf[`Brazil (Brasil)`]
+  def `Brazil LeftparenthesisBrasilRightparenthesis`: `Brazil LeftparenthesisBrasilRightparenthesis` = "Brazil (Brasil)".asInstanceOf[`Brazil LeftparenthesisBrasilRightparenthesis`]
   @scala.inline
   def `British Indian Ocean Territory`: `British Indian Ocean Territory` = "British Indian Ocean Territory".asInstanceOf[`British Indian Ocean Territory`]
   @scala.inline
@@ -3930,17 +3476,15 @@ object baseuiStrings {
   @scala.inline
   def Brunei: Brunei = "Brunei".asInstanceOf[Brunei]
   @scala.inline
-  def `Bulgaria (BACKSLASHu0411BACKSLASHu044ABACKSLASHu043BBACKSLASHu0433BACKSLASHu0430BACKSLASHu0440BACKSLASHu0438BACKSLASHu044F)`: `Bulgaria (BACKSLASHu0411BACKSLASHu044ABACKSLASHu043BBACKSLASHu0433BACKSLASHu0430BACKSLASHu0440BACKSLASHu0438BACKSLASHu044F)` = "Bulgaria (\u0411\u044A\u043B\u0433\u0430\u0440\u0438\u044F)".asInstanceOf[`Bulgaria (BACKSLASHu0411BACKSLASHu044ABACKSLASHu043BBACKSLASHu0433BACKSLASHu0430BACKSLASHu0440BACKSLASHu0438BACKSLASHu044F)`]
+  def `Bulgaria LeftparenthesisБългарияRightparenthesis`: `Bulgaria LeftparenthesisБългарияRightparenthesis` = "Bulgaria (\u0411\u044A\u043B\u0433\u0430\u0440\u0438\u044F)".asInstanceOf[`Bulgaria LeftparenthesisБългарияRightparenthesis`]
   @scala.inline
   def `Burkina Faso`: `Burkina Faso` = "Burkina Faso".asInstanceOf[`Burkina Faso`]
   @scala.inline
-  def `Burundi (Uburundi)`: `Burundi (Uburundi)` = "Burundi (Uburundi)".asInstanceOf[`Burundi (Uburundi)`]
+  def `Burundi LeftparenthesisUburundiRightparenthesis`: `Burundi LeftparenthesisUburundiRightparenthesis` = "Burundi (Uburundi)".asInstanceOf[`Burundi LeftparenthesisUburundiRightparenthesis`]
   @scala.inline
   def CA: CA = "CA".asInstanceOf[CA]
   @scala.inline
   def CATEGORICAL: CATEGORICAL = "CATEGORICAL".asInstanceOf[CATEGORICAL]
-  @scala.inline
-  def `CBACKSLASHu00F4te dBACKSLASHu2019Ivoire`: `CBACKSLASHu00F4te dBACKSLASHu2019Ivoire` = "C\u00F4te d\u2019Ivoire".asInstanceOf[`CBACKSLASHu00F4te dBACKSLASHu2019Ivoire`]
   @scala.inline
   def CC: CC = "CC".asInstanceOf[CC]
   @scala.inline
@@ -3982,49 +3526,51 @@ object baseuiStrings {
   @scala.inline
   def CZ: CZ = "CZ".asInstanceOf[CZ]
   @scala.inline
-  def `Cambodia (BACKSLASHu1780BACKSLASHu1798BACKSLASHu17D2BACKSLASHu1796BACKSLASHu17BBBACKSLASHu1787BACKSLASHu17B6)`: `Cambodia (BACKSLASHu1780BACKSLASHu1798BACKSLASHu17D2BACKSLASHu1796BACKSLASHu17BBBACKSLASHu1787BACKSLASHu17B6)` = "Cambodia (\u1780\u1798\u17D2\u1796\u17BB\u1787\u17B6)".asInstanceOf[`Cambodia (BACKSLASHu1780BACKSLASHu1798BACKSLASHu17D2BACKSLASHu1796BACKSLASHu17BBBACKSLASHu1787BACKSLASHu17B6)`]
+  def `Cambodia Leftparenthesisកម្ពុជាRightparenthesis`: `Cambodia Leftparenthesisកម្ពុជាRightparenthesis` = "Cambodia (\u1780\u1798\u17D2\u1796\u17BB\u1787\u17B6)".asInstanceOf[`Cambodia Leftparenthesisកម្ពុជាRightparenthesis`]
   @scala.inline
-  def `Cameroon (Cameroun)`: `Cameroon (Cameroun)` = "Cameroon (Cameroun)".asInstanceOf[`Cameroon (Cameroun)`]
+  def `Cameroon LeftparenthesisCamerounRightparenthesis`: `Cameroon LeftparenthesisCamerounRightparenthesis` = "Cameroon (Cameroun)".asInstanceOf[`Cameroon LeftparenthesisCamerounRightparenthesis`]
   @scala.inline
   def Canada: Canada = "Canada".asInstanceOf[Canada]
   @scala.inline
-  def `Cape Verde (Kabu Verdi)`: `Cape Verde (Kabu Verdi)` = "Cape Verde (Kabu Verdi)".asInstanceOf[`Cape Verde (Kabu Verdi)`]
+  def `Cape Verde LeftparenthesisKabu VerdiRightparenthesis`: `Cape Verde LeftparenthesisKabu VerdiRightparenthesis` = "Cape Verde (Kabu Verdi)".asInstanceOf[`Cape Verde LeftparenthesisKabu VerdiRightparenthesis`]
   @scala.inline
   def `Cayman Islands`: `Cayman Islands` = "Cayman Islands".asInstanceOf[`Cayman Islands`]
   @scala.inline
-  def `Central African Republic (RBACKSLASHu00E9publique centrafricaine)`: `Central African Republic (RBACKSLASHu00E9publique centrafricaine)` = "Central African Republic (R\u00E9publique centrafricaine)".asInstanceOf[`Central African Republic (RBACKSLASHu00E9publique centrafricaine)`]
+  def `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`: `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis` = "Central African Republic (R\u00E9publique centrafricaine)".asInstanceOf[`Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`]
   @scala.inline
-  def `Chad (Tchad)`: `Chad (Tchad)` = "Chad (Tchad)".asInstanceOf[`Chad (Tchad)`]
+  def `Chad LeftparenthesisTchadRightparenthesis`: `Chad LeftparenthesisTchadRightparenthesis` = "Chad (Tchad)".asInstanceOf[`Chad LeftparenthesisTchadRightparenthesis`]
   @scala.inline
   def Chile: Chile = "Chile".asInstanceOf[Chile]
   @scala.inline
-  def `China (BACKSLASHu4E2DBACKSLASHu56FD)`: `China (BACKSLASHu4E2DBACKSLASHu56FD)` = "China (\u4E2D\u56FD)".asInstanceOf[`China (BACKSLASHu4E2DBACKSLASHu56FD)`]
+  def `China Leftparenthesis中国Rightparenthesis`: `China Leftparenthesis中国Rightparenthesis` = "China (\u4E2D\u56FD)".asInstanceOf[`China Leftparenthesis中国Rightparenthesis`]
   @scala.inline
   def `Christmas Island`: `Christmas Island` = "Christmas Island".asInstanceOf[`Christmas Island`]
   @scala.inline
-  def `Cocos (Keeling) Islands`: `Cocos (Keeling) Islands` = "Cocos (Keeling) Islands".asInstanceOf[`Cocos (Keeling) Islands`]
+  def `Cocos LeftparenthesisKeelingRightparenthesis Islands`: `Cocos LeftparenthesisKeelingRightparenthesis Islands` = "Cocos (Keeling) Islands".asInstanceOf[`Cocos LeftparenthesisKeelingRightparenthesis Islands`]
   @scala.inline
   def Colombia: Colombia = "Colombia".asInstanceOf[Colombia]
   @scala.inline
-  def `Comoros (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0632BACKSLASHu0631 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0642BACKSLASHu0645BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`: `Comoros (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0632BACKSLASHu0631 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0642BACKSLASHu0645BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` = "Comoros (\u202B\u062C\u0632\u0631 \u0627\u0644\u0642\u0645\u0631\u202C\u200E)".asInstanceOf[`Comoros (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0632BACKSLASHu0631 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0642BACKSLASHu0645BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`]
+  def `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`: `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis` = "Comoros (\u202B\u062C\u0632\u0631 \u0627\u0644\u0642\u0645\u0631\u202C\u200E)".asInstanceOf[`Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`]
   @scala.inline
-  def `Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)`: `Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)` = "Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)".asInstanceOf[`Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)`]
+  def `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`: `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis` = "Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)".asInstanceOf[`Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`]
   @scala.inline
-  def `Congo (Republic) (Congo-Brazzaville)`: `Congo (Republic) (Congo-Brazzaville)` = "Congo (Republic) (Congo-Brazzaville)".asInstanceOf[`Congo (Republic) (Congo-Brazzaville)`]
+  def `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`: `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis` = "Congo (Republic) (Congo-Brazzaville)".asInstanceOf[`Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`]
   @scala.inline
   def `Cook Islands`: `Cook Islands` = "Cook Islands".asInstanceOf[`Cook Islands`]
   @scala.inline
   def `Costa Rica`: `Costa Rica` = "Costa Rica".asInstanceOf[`Costa Rica`]
   @scala.inline
-  def `Croatia (Hrvatska)`: `Croatia (Hrvatska)` = "Croatia (Hrvatska)".asInstanceOf[`Croatia (Hrvatska)`]
+  def `Croatia LeftparenthesisHrvatskaRightparenthesis`: `Croatia LeftparenthesisHrvatskaRightparenthesis` = "Croatia (Hrvatska)".asInstanceOf[`Croatia LeftparenthesisHrvatskaRightparenthesis`]
   @scala.inline
   def Cuba: Cuba = "Cuba".asInstanceOf[Cuba]
   @scala.inline
-  def CuraBACKSLASHu00E7ao: CuraBACKSLASHu00E7ao = "Cura\u00E7ao".asInstanceOf[CuraBACKSLASHu00E7ao]
+  def Curaçao: Curaçao = "Cura\u00E7ao".asInstanceOf[Curaçao]
   @scala.inline
-  def `Cyprus (BACKSLASHu039ABACKSLASHu03CDBACKSLASHu03C0BACKSLASHu03C1BACKSLASHu03BFBACKSLASHu03C2)`: `Cyprus (BACKSLASHu039ABACKSLASHu03CDBACKSLASHu03C0BACKSLASHu03C1BACKSLASHu03BFBACKSLASHu03C2)` = "Cyprus (\u039A\u03CD\u03C0\u03C1\u03BF\u03C2)".asInstanceOf[`Cyprus (BACKSLASHu039ABACKSLASHu03CDBACKSLASHu03C0BACKSLASHu03C1BACKSLASHu03BFBACKSLASHu03C2)`]
+  def `Cyprus LeftparenthesisΚύπροςRightparenthesis`: `Cyprus LeftparenthesisΚύπροςRightparenthesis` = "Cyprus (\u039A\u03CD\u03C0\u03C1\u03BF\u03C2)".asInstanceOf[`Cyprus LeftparenthesisΚύπροςRightparenthesis`]
   @scala.inline
-  def `Czech Republic (BACKSLASHu010CeskBACKSLASHu00E1 republika)`: `Czech Republic (BACKSLASHu010CeskBACKSLASHu00E1 republika)` = "Czech Republic (\u010Cesk\u00E1 republika)".asInstanceOf[`Czech Republic (BACKSLASHu010CeskBACKSLASHu00E1 republika)`]
+  def `Czech Republic LeftparenthesisČeská republikaRightparenthesis`: `Czech Republic LeftparenthesisČeská republikaRightparenthesis` = "Czech Republic (\u010Cesk\u00E1 republika)".asInstanceOf[`Czech Republic LeftparenthesisČeská republikaRightparenthesis`]
+  @scala.inline
+  def `Côte dRightsinglequotationmarkIvoire`: `Côte dRightsinglequotationmarkIvoire` = "C\u00F4te d\u2019Ivoire".asInstanceOf[`Côte dRightsinglequotationmarkIvoire`]
   @scala.inline
   def DE: DE = "DE".asInstanceOf[DE]
   @scala.inline
@@ -4042,13 +3588,13 @@ object baseuiStrings {
   @scala.inline
   def DZ: DZ = "DZ".asInstanceOf[DZ]
   @scala.inline
-  def `Denmark (Danmark)`: `Denmark (Danmark)` = "Denmark (Danmark)".asInstanceOf[`Denmark (Danmark)`]
+  def `Denmark LeftparenthesisDanmarkRightparenthesis`: `Denmark LeftparenthesisDanmarkRightparenthesis` = "Denmark (Danmark)".asInstanceOf[`Denmark LeftparenthesisDanmarkRightparenthesis`]
   @scala.inline
   def Djibouti: Djibouti = "Djibouti".asInstanceOf[Djibouti]
   @scala.inline
   def Dominica: Dominica = "Dominica".asInstanceOf[Dominica]
   @scala.inline
-  def `Dominican Republic (RepBACKSLASHu00FAblica Dominicana)`: `Dominican Republic (RepBACKSLASHu00FAblica Dominicana)` = "Dominican Republic (Rep\u00FAblica Dominicana)".asInstanceOf[`Dominican Republic (RepBACKSLASHu00FAblica Dominicana)`]
+  def `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`: `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis` = "Dominican Republic (Rep\u00FAblica Dominicana)".asInstanceOf[`Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`]
   @scala.inline
   def EC: EC = "EC".asInstanceOf[EC]
   @scala.inline
@@ -4064,19 +3610,19 @@ object baseuiStrings {
   @scala.inline
   def Ecuador: Ecuador = "Ecuador".asInstanceOf[Ecuador]
   @scala.inline
-  def `Egypt (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0635BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`: `Egypt (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0635BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` = "Egypt (\u202B\u0645\u0635\u0631\u202C\u200E)".asInstanceOf[`Egypt (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0635BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`]
+  def `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`: `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis` = "Egypt (\u202B\u0645\u0635\u0631\u202C\u200E)".asInstanceOf[`Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`]
   @scala.inline
   def `El Salvador`: `El Salvador` = "El Salvador".asInstanceOf[`El Salvador`]
   @scala.inline
   def Enter: Enter = "Enter".asInstanceOf[Enter]
   @scala.inline
-  def `Equatorial Guinea (Guinea Ecuatorial)`: `Equatorial Guinea (Guinea Ecuatorial)` = "Equatorial Guinea (Guinea Ecuatorial)".asInstanceOf[`Equatorial Guinea (Guinea Ecuatorial)`]
+  def `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`: `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis` = "Equatorial Guinea (Guinea Ecuatorial)".asInstanceOf[`Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`]
   @scala.inline
   def Eritrea: Eritrea = "Eritrea".asInstanceOf[Eritrea]
   @scala.inline
   def Escape: Escape = "Escape".asInstanceOf[Escape]
   @scala.inline
-  def `Estonia (Eesti)`: `Estonia (Eesti)` = "Estonia (Eesti)".asInstanceOf[`Estonia (Eesti)`]
+  def `Estonia LeftparenthesisEestiRightparenthesis`: `Estonia LeftparenthesisEestiRightparenthesis` = "Estonia (Eesti)".asInstanceOf[`Estonia LeftparenthesisEestiRightparenthesis`]
   @scala.inline
   def Ethiopia: Ethiopia = "Ethiopia".asInstanceOf[Ethiopia]
   @scala.inline
@@ -4092,19 +3638,19 @@ object baseuiStrings {
   @scala.inline
   def FR: FR = "FR".asInstanceOf[FR]
   @scala.inline
-  def `Falkland Islands (Islas Malvinas)`: `Falkland Islands (Islas Malvinas)` = "Falkland Islands (Islas Malvinas)".asInstanceOf[`Falkland Islands (Islas Malvinas)`]
+  def `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`: `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis` = "Falkland Islands (Islas Malvinas)".asInstanceOf[`Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`]
   @scala.inline
-  def `Faroe Islands (FBACKSLASHu00F8royar)`: `Faroe Islands (FBACKSLASHu00F8royar)` = "Faroe Islands (F\u00F8royar)".asInstanceOf[`Faroe Islands (FBACKSLASHu00F8royar)`]
+  def `Faroe Islands LeftparenthesisFøroyarRightparenthesis`: `Faroe Islands LeftparenthesisFøroyarRightparenthesis` = "Faroe Islands (F\u00F8royar)".asInstanceOf[`Faroe Islands LeftparenthesisFøroyarRightparenthesis`]
   @scala.inline
   def Fiji: Fiji = "Fiji".asInstanceOf[Fiji]
   @scala.inline
-  def `Finland (Suomi)`: `Finland (Suomi)` = "Finland (Suomi)".asInstanceOf[`Finland (Suomi)`]
+  def `Finland LeftparenthesisSuomiRightparenthesis`: `Finland LeftparenthesisSuomiRightparenthesis` = "Finland (Suomi)".asInstanceOf[`Finland LeftparenthesisSuomiRightparenthesis`]
   @scala.inline
   def France: France = "France".asInstanceOf[France]
   @scala.inline
-  def `French Guiana (Guyane franBACKSLASHu00E7aise)`: `French Guiana (Guyane franBACKSLASHu00E7aise)` = "French Guiana (Guyane fran\u00E7aise)".asInstanceOf[`French Guiana (Guyane franBACKSLASHu00E7aise)`]
+  def `French Guiana LeftparenthesisGuyane françaiseRightparenthesis`: `French Guiana LeftparenthesisGuyane françaiseRightparenthesis` = "French Guiana (Guyane fran\u00E7aise)".asInstanceOf[`French Guiana LeftparenthesisGuyane françaiseRightparenthesis`]
   @scala.inline
-  def `French Polynesia (PolynBACKSLASHu00E9sie franBACKSLASHu00E7aise)`: `French Polynesia (PolynBACKSLASHu00E9sie franBACKSLASHu00E7aise)` = "French Polynesia (Polyn\u00E9sie fran\u00E7aise)".asInstanceOf[`French Polynesia (PolynBACKSLASHu00E9sie franBACKSLASHu00E7aise)`]
+  def `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`: `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis` = "French Polynesia (Polyn\u00E9sie fran\u00E7aise)".asInstanceOf[`French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`]
   @scala.inline
   def GA: GA = "GA".asInstanceOf[GA]
   @scala.inline
@@ -4146,17 +3692,17 @@ object baseuiStrings {
   @scala.inline
   def Gambia: Gambia = "Gambia".asInstanceOf[Gambia]
   @scala.inline
-  def `Georgia (BACKSLASHu10E1BACKSLASHu10D0BACKSLASHu10E5BACKSLASHu10D0BACKSLASHu10E0BACKSLASHu10D7BACKSLASHu10D5BACKSLASHu10D4BACKSLASHu10DABACKSLASHu10DD)`: `Georgia (BACKSLASHu10E1BACKSLASHu10D0BACKSLASHu10E5BACKSLASHu10D0BACKSLASHu10E0BACKSLASHu10D7BACKSLASHu10D5BACKSLASHu10D4BACKSLASHu10DABACKSLASHu10DD)` = "Georgia (\u10E1\u10D0\u10E5\u10D0\u10E0\u10D7\u10D5\u10D4\u10DA\u10DD)".asInstanceOf[`Georgia (BACKSLASHu10E1BACKSLASHu10D0BACKSLASHu10E5BACKSLASHu10D0BACKSLASHu10E0BACKSLASHu10D7BACKSLASHu10D5BACKSLASHu10D4BACKSLASHu10DABACKSLASHu10DD)`]
+  def `Georgia LeftparenthesisსაქართველოRightparenthesis`: `Georgia LeftparenthesisსაქართველოRightparenthesis` = "Georgia (\u10E1\u10D0\u10E5\u10D0\u10E0\u10D7\u10D5\u10D4\u10DA\u10DD)".asInstanceOf[`Georgia LeftparenthesisსაქართველოRightparenthesis`]
   @scala.inline
-  def `Germany (Deutschland)`: `Germany (Deutschland)` = "Germany (Deutschland)".asInstanceOf[`Germany (Deutschland)`]
+  def `Germany LeftparenthesisDeutschlandRightparenthesis`: `Germany LeftparenthesisDeutschlandRightparenthesis` = "Germany (Deutschland)".asInstanceOf[`Germany LeftparenthesisDeutschlandRightparenthesis`]
   @scala.inline
-  def `Ghana (Gaana)`: `Ghana (Gaana)` = "Ghana (Gaana)".asInstanceOf[`Ghana (Gaana)`]
+  def `Ghana LeftparenthesisGaanaRightparenthesis`: `Ghana LeftparenthesisGaanaRightparenthesis` = "Ghana (Gaana)".asInstanceOf[`Ghana LeftparenthesisGaanaRightparenthesis`]
   @scala.inline
   def Gibraltar: Gibraltar = "Gibraltar".asInstanceOf[Gibraltar]
   @scala.inline
-  def `Greece (BACKSLASHu0395BACKSLASHu03BBBACKSLASHu03BBBACKSLASHu03ACBACKSLASHu03B4BACKSLASHu03B1)`: `Greece (BACKSLASHu0395BACKSLASHu03BBBACKSLASHu03BBBACKSLASHu03ACBACKSLASHu03B4BACKSLASHu03B1)` = "Greece (\u0395\u03BB\u03BB\u03AC\u03B4\u03B1)".asInstanceOf[`Greece (BACKSLASHu0395BACKSLASHu03BBBACKSLASHu03BBBACKSLASHu03ACBACKSLASHu03B4BACKSLASHu03B1)`]
+  def `Greece LeftparenthesisΕλλάδαRightparenthesis`: `Greece LeftparenthesisΕλλάδαRightparenthesis` = "Greece (\u0395\u03BB\u03BB\u03AC\u03B4\u03B1)".asInstanceOf[`Greece LeftparenthesisΕλλάδαRightparenthesis`]
   @scala.inline
-  def `Greenland (Kalaallit Nunaat)`: `Greenland (Kalaallit Nunaat)` = "Greenland (Kalaallit Nunaat)".asInstanceOf[`Greenland (Kalaallit Nunaat)`]
+  def `Greenland LeftparenthesisKalaallit NunaatRightparenthesis`: `Greenland LeftparenthesisKalaallit NunaatRightparenthesis` = "Greenland (Kalaallit Nunaat)".asInstanceOf[`Greenland LeftparenthesisKalaallit NunaatRightparenthesis`]
   @scala.inline
   def Grenada: Grenada = "Grenada".asInstanceOf[Grenada]
   @scala.inline
@@ -4168,9 +3714,9 @@ object baseuiStrings {
   @scala.inline
   def Guernsey: Guernsey = "Guernsey".asInstanceOf[Guernsey]
   @scala.inline
-  def `Guinea (GuinBACKSLASHu00E9e)`: `Guinea (GuinBACKSLASHu00E9e)` = "Guinea (Guin\u00E9e)".asInstanceOf[`Guinea (GuinBACKSLASHu00E9e)`]
+  def `Guinea LeftparenthesisGuinéeRightparenthesis`: `Guinea LeftparenthesisGuinéeRightparenthesis` = "Guinea (Guin\u00E9e)".asInstanceOf[`Guinea LeftparenthesisGuinéeRightparenthesis`]
   @scala.inline
-  def `Guinea-Bissau (GuinBACKSLASHu00E9 Bissau)`: `Guinea-Bissau (GuinBACKSLASHu00E9 Bissau)` = "Guinea-Bissau (Guin\u00E9 Bissau)".asInstanceOf[`Guinea-Bissau (GuinBACKSLASHu00E9 Bissau)`]
+  def `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`: `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis` = "Guinea-Bissau (Guin\u00E9 Bissau)".asInstanceOf[`Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`]
   @scala.inline
   def Guyana: Guyana = "Guyana".asInstanceOf[Guyana]
   @scala.inline
@@ -4188,9 +3734,9 @@ object baseuiStrings {
   @scala.inline
   def Honduras: Honduras = "Honduras".asInstanceOf[Honduras]
   @scala.inline
-  def `Hong Kong (BACKSLASHu9999BACKSLASHu6E2F)`: `Hong Kong (BACKSLASHu9999BACKSLASHu6E2F)` = "Hong Kong (\u9999\u6E2F)".asInstanceOf[`Hong Kong (BACKSLASHu9999BACKSLASHu6E2F)`]
+  def `Hong Kong Leftparenthesis香港Rightparenthesis`: `Hong Kong Leftparenthesis香港Rightparenthesis` = "Hong Kong (\u9999\u6E2F)".asInstanceOf[`Hong Kong Leftparenthesis香港Rightparenthesis`]
   @scala.inline
-  def `Hungary (MagyarorszBACKSLASHu00E1g)`: `Hungary (MagyarorszBACKSLASHu00E1g)` = "Hungary (Magyarorsz\u00E1g)".asInstanceOf[`Hungary (MagyarorszBACKSLASHu00E1g)`]
+  def `Hungary LeftparenthesisMagyarországRightparenthesis`: `Hungary LeftparenthesisMagyarországRightparenthesis` = "Hungary (Magyarorsz\u00E1g)".asInstanceOf[`Hungary LeftparenthesisMagyarországRightparenthesis`]
   @scala.inline
   def ID: ID = "ID".asInstanceOf[ID]
   @scala.inline
@@ -4212,23 +3758,23 @@ object baseuiStrings {
   @scala.inline
   def IT: IT = "IT".asInstanceOf[IT]
   @scala.inline
-  def `Iceland (BACKSLASHu00CDsland)`: `Iceland (BACKSLASHu00CDsland)` = "Iceland (\u00CDsland)".asInstanceOf[`Iceland (BACKSLASHu00CDsland)`]
+  def `Iceland LeftparenthesisÍslandRightparenthesis`: `Iceland LeftparenthesisÍslandRightparenthesis` = "Iceland (\u00CDsland)".asInstanceOf[`Iceland LeftparenthesisÍslandRightparenthesis`]
   @scala.inline
-  def `India (BACKSLASHu092DBACKSLASHu093EBACKSLASHu0930BACKSLASHu0924)`: `India (BACKSLASHu092DBACKSLASHu093EBACKSLASHu0930BACKSLASHu0924)` = "India (\u092D\u093E\u0930\u0924)".asInstanceOf[`India (BACKSLASHu092DBACKSLASHu093EBACKSLASHu0930BACKSLASHu0924)`]
+  def `India LeftparenthesisभारतRightparenthesis`: `India LeftparenthesisभारतRightparenthesis` = "India (\u092D\u093E\u0930\u0924)".asInstanceOf[`India LeftparenthesisभारतRightparenthesis`]
   @scala.inline
   def Indonesia: Indonesia = "Indonesia".asInstanceOf[Indonesia]
   @scala.inline
-  def `Iran (BACKSLASHu202BBACKSLASHu0627BACKSLASHu06CCBACKSLASHu0631BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Iran (BACKSLASHu202BBACKSLASHu0627BACKSLASHu06CCBACKSLASHu0631BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Iran (\u202B\u0627\u06CC\u0631\u0627\u0646\u202C\u200E)".asInstanceOf[`Iran (BACKSLASHu202BBACKSLASHu0627BACKSLASHu06CCBACKSLASHu0631BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Iran Leftparenthesis‫ایران‬‎Rightparenthesis`: `Iran Leftparenthesis‫ایران‬‎Rightparenthesis` = "Iran (\u202B\u0627\u06CC\u0631\u0627\u0646\u202C\u200E)".asInstanceOf[`Iran Leftparenthesis‫ایران‬‎Rightparenthesis`]
   @scala.inline
-  def `Iraq (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0627BACKSLASHu0642BACKSLASHu202CBACKSLASHu200E)`: `Iraq (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0627BACKSLASHu0642BACKSLASHu202CBACKSLASHu200E)` = "Iraq (\u202B\u0627\u0644\u0639\u0631\u0627\u0642\u202C\u200E)".asInstanceOf[`Iraq (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0627BACKSLASHu0642BACKSLASHu202CBACKSLASHu200E)`]
+  def `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`: `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis` = "Iraq (\u202B\u0627\u0644\u0639\u0631\u0627\u0642\u202C\u200E)".asInstanceOf[`Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`]
   @scala.inline
   def Ireland: Ireland = "Ireland".asInstanceOf[Ireland]
   @scala.inline
   def `Isle of Man`: `Isle of Man` = "Isle of Man".asInstanceOf[`Isle of Man`]
   @scala.inline
-  def `Israel (BACKSLASHu202BBACKSLASHu05D9BACKSLASHu05E9BACKSLASHu05E8BACKSLASHu05D0BACKSLASHu05DCBACKSLASHu202CBACKSLASHu200E)`: `Israel (BACKSLASHu202BBACKSLASHu05D9BACKSLASHu05E9BACKSLASHu05E8BACKSLASHu05D0BACKSLASHu05DCBACKSLASHu202CBACKSLASHu200E)` = "Israel (\u202B\u05D9\u05E9\u05E8\u05D0\u05DC\u202C\u200E)".asInstanceOf[`Israel (BACKSLASHu202BBACKSLASHu05D9BACKSLASHu05E9BACKSLASHu05E8BACKSLASHu05D0BACKSLASHu05DCBACKSLASHu202CBACKSLASHu200E)`]
+  def `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`: `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis` = "Israel (\u202B\u05D9\u05E9\u05E8\u05D0\u05DC\u202C\u200E)".asInstanceOf[`Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`]
   @scala.inline
-  def `Italy (Italia)`: `Italy (Italia)` = "Italy (Italia)".asInstanceOf[`Italy (Italia)`]
+  def `Italy LeftparenthesisItaliaRightparenthesis`: `Italy LeftparenthesisItaliaRightparenthesis` = "Italy (Italia)".asInstanceOf[`Italy LeftparenthesisItaliaRightparenthesis`]
   @scala.inline
   def JE: JE = "JE".asInstanceOf[JE]
   @scala.inline
@@ -4240,11 +3786,11 @@ object baseuiStrings {
   @scala.inline
   def Jamaica: Jamaica = "Jamaica".asInstanceOf[Jamaica]
   @scala.inline
-  def `Japan (BACKSLASHu65E5BACKSLASHu672C)`: `Japan (BACKSLASHu65E5BACKSLASHu672C)` = "Japan (\u65E5\u672C)".asInstanceOf[`Japan (BACKSLASHu65E5BACKSLASHu672C)`]
+  def `Japan Leftparenthesis日本Rightparenthesis`: `Japan Leftparenthesis日本Rightparenthesis` = "Japan (\u65E5\u672C)".asInstanceOf[`Japan Leftparenthesis日本Rightparenthesis`]
   @scala.inline
   def Jersey: Jersey = "Jersey".asInstanceOf[Jersey]
   @scala.inline
-  def `Jordan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0623BACKSLASHu0631BACKSLASHu062FBACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Jordan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0623BACKSLASHu0631BACKSLASHu062FBACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Jordan (\u202B\u0627\u0644\u0623\u0631\u062F\u0646\u202C\u200E)".asInstanceOf[`Jordan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0623BACKSLASHu0631BACKSLASHu062FBACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`: `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis` = "Jordan (\u202B\u0627\u0644\u0623\u0631\u062F\u0646\u202C\u200E)".asInstanceOf[`Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`]
   @scala.inline
   def KE: KE = "KE".asInstanceOf[KE]
   @scala.inline
@@ -4268,7 +3814,7 @@ object baseuiStrings {
   @scala.inline
   def KZ: KZ = "KZ".asInstanceOf[KZ]
   @scala.inline
-  def `Kazakhstan (BACKSLASHu041ABACKSLASHu0430BACKSLASHu0437BACKSLASHu0430BACKSLASHu0445BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)`: `Kazakhstan (BACKSLASHu041ABACKSLASHu0430BACKSLASHu0437BACKSLASHu0430BACKSLASHu0445BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)` = "Kazakhstan (\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D)".asInstanceOf[`Kazakhstan (BACKSLASHu041ABACKSLASHu0430BACKSLASHu0437BACKSLASHu0430BACKSLASHu0445BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)`]
+  def `Kazakhstan LeftparenthesisКазахстанRightparenthesis`: `Kazakhstan LeftparenthesisКазахстанRightparenthesis` = "Kazakhstan (\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D)".asInstanceOf[`Kazakhstan LeftparenthesisКазахстанRightparenthesis`]
   @scala.inline
   def Kenya: Kenya = "Kenya".asInstanceOf[Kenya]
   @scala.inline
@@ -4276,9 +3822,9 @@ object baseuiStrings {
   @scala.inline
   def Kosovo: Kosovo = "Kosovo".asInstanceOf[Kosovo]
   @scala.inline
-  def `Kuwait (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0643BACKSLASHu0648BACKSLASHu064ABACKSLASHu062ABACKSLASHu202CBACKSLASHu200E)`: `Kuwait (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0643BACKSLASHu0648BACKSLASHu064ABACKSLASHu062ABACKSLASHu202CBACKSLASHu200E)` = "Kuwait (\u202B\u0627\u0644\u0643\u0648\u064A\u062A\u202C\u200E)".asInstanceOf[`Kuwait (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0643BACKSLASHu0648BACKSLASHu064ABACKSLASHu062ABACKSLASHu202CBACKSLASHu200E)`]
+  def `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`: `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis` = "Kuwait (\u202B\u0627\u0644\u0643\u0648\u064A\u062A\u202C\u200E)".asInstanceOf[`Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`]
   @scala.inline
-  def `Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)`: `Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)` = "Kyrgyzstan (\u041A\u044B\u0440\u0433\u044B\u0437\u0441\u0442\u0430\u043D)".asInstanceOf[`Kyrgyzstan (BACKSLASHu041ABACKSLASHu044BBACKSLASHu0440BACKSLASHu0433BACKSLASHu044BBACKSLASHu0437BACKSLASHu0441BACKSLASHu0442BACKSLASHu0430BACKSLASHu043D)`]
+  def `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`: `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis` = "Kyrgyzstan (\u041A\u044B\u0440\u0433\u044B\u0437\u0441\u0442\u0430\u043D)".asInstanceOf[`Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`]
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   @scala.inline
@@ -4306,21 +3852,21 @@ object baseuiStrings {
   @scala.inline
   def LY: LY = "LY".asInstanceOf[LY]
   @scala.inline
-  def `Laos (BACKSLASHu0EA5BACKSLASHu0EB2BACKSLASHu0EA7)`: `Laos (BACKSLASHu0EA5BACKSLASHu0EB2BACKSLASHu0EA7)` = "Laos (\u0EA5\u0EB2\u0EA7)".asInstanceOf[`Laos (BACKSLASHu0EA5BACKSLASHu0EB2BACKSLASHu0EA7)`]
+  def `Laos LeftparenthesisລາວRightparenthesis`: `Laos LeftparenthesisລາວRightparenthesis` = "Laos (\u0EA5\u0EB2\u0EA7)".asInstanceOf[`Laos LeftparenthesisລາວRightparenthesis`]
   @scala.inline
-  def `Latvia (Latvija)`: `Latvia (Latvija)` = "Latvia (Latvija)".asInstanceOf[`Latvia (Latvija)`]
+  def `Latvia LeftparenthesisLatvijaRightparenthesis`: `Latvia LeftparenthesisLatvijaRightparenthesis` = "Latvia (Latvija)".asInstanceOf[`Latvia LeftparenthesisLatvijaRightparenthesis`]
   @scala.inline
-  def `Lebanon (BACKSLASHu202BBACKSLASHu0644BACKSLASHu0628BACKSLASHu0646BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Lebanon (BACKSLASHu202BBACKSLASHu0644BACKSLASHu0628BACKSLASHu0646BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Lebanon (\u202B\u0644\u0628\u0646\u0627\u0646\u202C\u200E)".asInstanceOf[`Lebanon (BACKSLASHu202BBACKSLASHu0644BACKSLASHu0628BACKSLASHu0646BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`: `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis` = "Lebanon (\u202B\u0644\u0628\u0646\u0627\u0646\u202C\u200E)".asInstanceOf[`Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`]
   @scala.inline
   def Lesotho: Lesotho = "Lesotho".asInstanceOf[Lesotho]
   @scala.inline
   def Liberia: Liberia = "Liberia".asInstanceOf[Liberia]
   @scala.inline
-  def `Libya (BACKSLASHu202BBACKSLASHu0644BACKSLASHu064ABACKSLASHu0628BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)`: `Libya (BACKSLASHu202BBACKSLASHu0644BACKSLASHu064ABACKSLASHu0628BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)` = "Libya (\u202B\u0644\u064A\u0628\u064A\u0627\u202C\u200E)".asInstanceOf[`Libya (BACKSLASHu202BBACKSLASHu0644BACKSLASHu064ABACKSLASHu0628BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)`]
+  def `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`: `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis` = "Libya (\u202B\u0644\u064A\u0628\u064A\u0627\u202C\u200E)".asInstanceOf[`Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`]
   @scala.inline
   def Liechtenstein: Liechtenstein = "Liechtenstein".asInstanceOf[Liechtenstein]
   @scala.inline
-  def `Lithuania (Lietuva)`: `Lithuania (Lietuva)` = "Lithuania (Lietuva)".asInstanceOf[`Lithuania (Lietuva)`]
+  def `Lithuania LeftparenthesisLietuvaRightparenthesis`: `Lithuania LeftparenthesisLietuvaRightparenthesis` = "Lithuania (Lietuva)".asInstanceOf[`Lithuania LeftparenthesisLietuvaRightparenthesis`]
   @scala.inline
   def Luxembourg: Luxembourg = "Luxembourg".asInstanceOf[Luxembourg]
   @scala.inline
@@ -4372,11 +3918,11 @@ object baseuiStrings {
   @scala.inline
   def MZ: MZ = "MZ".asInstanceOf[MZ]
   @scala.inline
-  def `Macau (BACKSLASHu6FB3BACKSLASHu9580)`: `Macau (BACKSLASHu6FB3BACKSLASHu9580)` = "Macau (\u6FB3\u9580)".asInstanceOf[`Macau (BACKSLASHu6FB3BACKSLASHu9580)`]
+  def `Macau Leftparenthesis澳門Rightparenthesis`: `Macau Leftparenthesis澳門Rightparenthesis` = "Macau (\u6FB3\u9580)".asInstanceOf[`Macau Leftparenthesis澳門Rightparenthesis`]
   @scala.inline
-  def `Macedonia (FYROM) (BACKSLASHu041CBACKSLASHu0430BACKSLASHu043ABACKSLASHu0435BACKSLASHu0434BACKSLASHu043EBACKSLASHu043DBACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)`: `Macedonia (FYROM) (BACKSLASHu041CBACKSLASHu0430BACKSLASHu043ABACKSLASHu0435BACKSLASHu0434BACKSLASHu043EBACKSLASHu043DBACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)` = "Macedonia (FYROM) (\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0438\u0458\u0430)".asInstanceOf[`Macedonia (FYROM) (BACKSLASHu041CBACKSLASHu0430BACKSLASHu043ABACKSLASHu0435BACKSLASHu0434BACKSLASHu043EBACKSLASHu043DBACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)`]
+  def `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`: `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` = "Macedonia (FYROM) (\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0438\u0458\u0430)".asInstanceOf[`Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`]
   @scala.inline
-  def `Madagascar (Madagasikara)`: `Madagascar (Madagasikara)` = "Madagascar (Madagasikara)".asInstanceOf[`Madagascar (Madagasikara)`]
+  def `Madagascar LeftparenthesisMadagasikaraRightparenthesis`: `Madagascar LeftparenthesisMadagasikaraRightparenthesis` = "Madagascar (Madagasikara)".asInstanceOf[`Madagascar LeftparenthesisMadagasikaraRightparenthesis`]
   @scala.inline
   def Malawi: Malawi = "Malawi".asInstanceOf[Malawi]
   @scala.inline
@@ -4392,31 +3938,31 @@ object baseuiStrings {
   @scala.inline
   def Martinique: Martinique = "Martinique".asInstanceOf[Martinique]
   @scala.inline
-  def `Mauritania (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)`: `Mauritania (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)` = "Mauritania (\u202B\u0645\u0648\u0631\u064A\u062A\u0627\u0646\u064A\u0627\u202C\u200E)".asInstanceOf[`Mauritania (BACKSLASHu202BBACKSLASHu0645BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)`]
+  def `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`: `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis` = "Mauritania (\u202B\u0645\u0648\u0631\u064A\u062A\u0627\u0646\u064A\u0627\u202C\u200E)".asInstanceOf[`Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`]
   @scala.inline
-  def `Mauritius (Moris)`: `Mauritius (Moris)` = "Mauritius (Moris)".asInstanceOf[`Mauritius (Moris)`]
+  def `Mauritius LeftparenthesisMorisRightparenthesis`: `Mauritius LeftparenthesisMorisRightparenthesis` = "Mauritius (Moris)".asInstanceOf[`Mauritius LeftparenthesisMorisRightparenthesis`]
   @scala.inline
   def Mayotte: Mayotte = "Mayotte".asInstanceOf[Mayotte]
   @scala.inline
-  def `Mexico (MBACKSLASHu00E9xico)`: `Mexico (MBACKSLASHu00E9xico)` = "Mexico (M\u00E9xico)".asInstanceOf[`Mexico (MBACKSLASHu00E9xico)`]
+  def `Mexico LeftparenthesisMéxicoRightparenthesis`: `Mexico LeftparenthesisMéxicoRightparenthesis` = "Mexico (M\u00E9xico)".asInstanceOf[`Mexico LeftparenthesisMéxicoRightparenthesis`]
   @scala.inline
   def Micronesia: Micronesia = "Micronesia".asInstanceOf[Micronesia]
   @scala.inline
-  def `Moldova (Republica Moldova)`: `Moldova (Republica Moldova)` = "Moldova (Republica Moldova)".asInstanceOf[`Moldova (Republica Moldova)`]
+  def `Moldova LeftparenthesisRepublica MoldovaRightparenthesis`: `Moldova LeftparenthesisRepublica MoldovaRightparenthesis` = "Moldova (Republica Moldova)".asInstanceOf[`Moldova LeftparenthesisRepublica MoldovaRightparenthesis`]
   @scala.inline
   def Monaco: Monaco = "Monaco".asInstanceOf[Monaco]
   @scala.inline
-  def `Mongolia (BACKSLASHu041CBACKSLASHu043EBACKSLASHu043DBACKSLASHu0433BACKSLASHu043EBACKSLASHu043B)`: `Mongolia (BACKSLASHu041CBACKSLASHu043EBACKSLASHu043DBACKSLASHu0433BACKSLASHu043EBACKSLASHu043B)` = "Mongolia (\u041C\u043E\u043D\u0433\u043E\u043B)".asInstanceOf[`Mongolia (BACKSLASHu041CBACKSLASHu043EBACKSLASHu043DBACKSLASHu0433BACKSLASHu043EBACKSLASHu043B)`]
+  def `Mongolia LeftparenthesisМонголRightparenthesis`: `Mongolia LeftparenthesisМонголRightparenthesis` = "Mongolia (\u041C\u043E\u043D\u0433\u043E\u043B)".asInstanceOf[`Mongolia LeftparenthesisМонголRightparenthesis`]
   @scala.inline
-  def `Montenegro (Crna Gora)`: `Montenegro (Crna Gora)` = "Montenegro (Crna Gora)".asInstanceOf[`Montenegro (Crna Gora)`]
+  def `Montenegro LeftparenthesisCrna GoraRightparenthesis`: `Montenegro LeftparenthesisCrna GoraRightparenthesis` = "Montenegro (Crna Gora)".asInstanceOf[`Montenegro LeftparenthesisCrna GoraRightparenthesis`]
   @scala.inline
   def Montserrat: Montserrat = "Montserrat".asInstanceOf[Montserrat]
   @scala.inline
-  def `Morocco (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu063ABACKSLASHu0631BACKSLASHu0628BACKSLASHu202CBACKSLASHu200E)`: `Morocco (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu063ABACKSLASHu0631BACKSLASHu0628BACKSLASHu202CBACKSLASHu200E)` = "Morocco (\u202B\u0627\u0644\u0645\u063A\u0631\u0628\u202C\u200E)".asInstanceOf[`Morocco (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu063ABACKSLASHu0631BACKSLASHu0628BACKSLASHu202CBACKSLASHu200E)`]
+  def `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`: `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis` = "Morocco (\u202B\u0627\u0644\u0645\u063A\u0631\u0628\u202C\u200E)".asInstanceOf[`Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`]
   @scala.inline
-  def `Mozambique (MoBACKSLASHu00E7ambique)`: `Mozambique (MoBACKSLASHu00E7ambique)` = "Mozambique (Mo\u00E7ambique)".asInstanceOf[`Mozambique (MoBACKSLASHu00E7ambique)`]
+  def `Mozambique LeftparenthesisMoçambiqueRightparenthesis`: `Mozambique LeftparenthesisMoçambiqueRightparenthesis` = "Mozambique (Mo\u00E7ambique)".asInstanceOf[`Mozambique LeftparenthesisMoçambiqueRightparenthesis`]
   @scala.inline
-  def `Myanmar (Burma) (BACKSLASHu1019BACKSLASHu103CBACKSLASHu1014BACKSLASHu103ABACKSLASHu1019BACKSLASHu102C)`: `Myanmar (Burma) (BACKSLASHu1019BACKSLASHu103CBACKSLASHu1014BACKSLASHu103ABACKSLASHu1019BACKSLASHu102C)` = "Myanmar (Burma) (\u1019\u103C\u1014\u103A\u1019\u102C)".asInstanceOf[`Myanmar (Burma) (BACKSLASHu1019BACKSLASHu103CBACKSLASHu1014BACKSLASHu103ABACKSLASHu1019BACKSLASHu102C)`]
+  def `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`: `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis` = "Myanmar (Burma) (\u1019\u103C\u1014\u103A\u1019\u102C)".asInstanceOf[`Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`]
   @scala.inline
   def NA: NA = "NA".asInstanceOf[NA]
   @scala.inline
@@ -4444,21 +3990,21 @@ object baseuiStrings {
   @scala.inline
   def NZ: NZ = "NZ".asInstanceOf[NZ]
   @scala.inline
-  def `Namibia (NamibiBACKSLASHu00EB)`: `Namibia (NamibiBACKSLASHu00EB)` = "Namibia (Namibi\u00EB)".asInstanceOf[`Namibia (NamibiBACKSLASHu00EB)`]
+  def `Namibia LeftparenthesisNamibiëRightparenthesis`: `Namibia LeftparenthesisNamibiëRightparenthesis` = "Namibia (Namibi\u00EB)".asInstanceOf[`Namibia LeftparenthesisNamibiëRightparenthesis`]
   @scala.inline
   def Nauru: Nauru = "Nauru".asInstanceOf[Nauru]
   @scala.inline
-  def `Nepal (BACKSLASHu0928BACKSLASHu0947BACKSLASHu092ABACKSLASHu093EBACKSLASHu0932)`: `Nepal (BACKSLASHu0928BACKSLASHu0947BACKSLASHu092ABACKSLASHu093EBACKSLASHu0932)` = "Nepal (\u0928\u0947\u092A\u093E\u0932)".asInstanceOf[`Nepal (BACKSLASHu0928BACKSLASHu0947BACKSLASHu092ABACKSLASHu093EBACKSLASHu0932)`]
+  def `Nepal LeftparenthesisनेपालRightparenthesis`: `Nepal LeftparenthesisनेपालRightparenthesis` = "Nepal (\u0928\u0947\u092A\u093E\u0932)".asInstanceOf[`Nepal LeftparenthesisनेपालRightparenthesis`]
   @scala.inline
-  def `Netherlands (Nederland)`: `Netherlands (Nederland)` = "Netherlands (Nederland)".asInstanceOf[`Netherlands (Nederland)`]
+  def `Netherlands LeftparenthesisNederlandRightparenthesis`: `Netherlands LeftparenthesisNederlandRightparenthesis` = "Netherlands (Nederland)".asInstanceOf[`Netherlands LeftparenthesisNederlandRightparenthesis`]
   @scala.inline
-  def `New Caledonia (Nouvelle-CalBACKSLASHu00E9donie)`: `New Caledonia (Nouvelle-CalBACKSLASHu00E9donie)` = "New Caledonia (Nouvelle-Cal\u00E9donie)".asInstanceOf[`New Caledonia (Nouvelle-CalBACKSLASHu00E9donie)`]
+  def `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`: `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis` = "New Caledonia (Nouvelle-Cal\u00E9donie)".asInstanceOf[`New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`]
   @scala.inline
   def `New Zealand`: `New Zealand` = "New Zealand".asInstanceOf[`New Zealand`]
   @scala.inline
   def Nicaragua: Nicaragua = "Nicaragua".asInstanceOf[Nicaragua]
   @scala.inline
-  def `Niger (Nijar)`: `Niger (Nijar)` = "Niger (Nijar)".asInstanceOf[`Niger (Nijar)`]
+  def `Niger LeftparenthesisNijarRightparenthesis`: `Niger LeftparenthesisNijarRightparenthesis` = "Niger (Nijar)".asInstanceOf[`Niger LeftparenthesisNijarRightparenthesis`]
   @scala.inline
   def Nigeria: Nigeria = "Nigeria".asInstanceOf[Nigeria]
   @scala.inline
@@ -4466,15 +4012,15 @@ object baseuiStrings {
   @scala.inline
   def `Norfolk Island`: `Norfolk Island` = "Norfolk Island".asInstanceOf[`Norfolk Island`]
   @scala.inline
-  def `North Korea (BACKSLASHuC870BACKSLASHuC120 BACKSLASHuBBFCBACKSLASHuC8FCBACKSLASHuC8FCBACKSLASHuC758 BACKSLASHuC778BACKSLASHuBBFC BACKSLASHuACF5BACKSLASHuD654BACKSLASHuAD6D)`: `North Korea (BACKSLASHuC870BACKSLASHuC120 BACKSLASHuBBFCBACKSLASHuC8FCBACKSLASHuC8FCBACKSLASHuC758 BACKSLASHuC778BACKSLASHuBBFC BACKSLASHuACF5BACKSLASHuD654BACKSLASHuAD6D)` = "North Korea (\uC870\uC120 \uBBFC\uC8FC\uC8FC\uC758 \uC778\uBBFC \uACF5\uD654\uAD6D)".asInstanceOf[`North Korea (BACKSLASHuC870BACKSLASHuC120 BACKSLASHuBBFCBACKSLASHuC8FCBACKSLASHuC8FCBACKSLASHuC758 BACKSLASHuC778BACKSLASHuBBFC BACKSLASHuACF5BACKSLASHuD654BACKSLASHuAD6D)`]
+  def `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`: `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis` = "North Korea (\uC870\uC120 \uBBFC\uC8FC\uC8FC\uC758 \uC778\uBBFC \uACF5\uD654\uAD6D)".asInstanceOf[`North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`]
   @scala.inline
   def `Northern Mariana Islands`: `Northern Mariana Islands` = "Northern Mariana Islands".asInstanceOf[`Northern Mariana Islands`]
   @scala.inline
-  def `Norway (Norge)`: `Norway (Norge)` = "Norway (Norge)".asInstanceOf[`Norway (Norge)`]
+  def `Norway LeftparenthesisNorgeRightparenthesis`: `Norway LeftparenthesisNorgeRightparenthesis` = "Norway (Norge)".asInstanceOf[`Norway LeftparenthesisNorgeRightparenthesis`]
   @scala.inline
   def OM: OM = "OM".asInstanceOf[OM]
   @scala.inline
-  def `Oman (BACKSLASHu202BBACKSLASHu0639BACKSLASHu064FBACKSLASHu0645BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Oman (BACKSLASHu202BBACKSLASHu0639BACKSLASHu064FBACKSLASHu0645BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Oman (\u202B\u0639\u064F\u0645\u0627\u0646\u202C\u200E)".asInstanceOf[`Oman (BACKSLASHu202BBACKSLASHu0639BACKSLASHu064FBACKSLASHu0645BACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`: `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis` = "Oman (\u202B\u0639\u064F\u0645\u0627\u0646\u202C\u200E)".asInstanceOf[`Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`]
   @scala.inline
   def PA: PA = "PA".asInstanceOf[PA]
   @scala.inline
@@ -4504,23 +4050,473 @@ object baseuiStrings {
   @scala.inline
   def PY: PY = "PY".asInstanceOf[PY]
   @scala.inline
-  def `Pakistan (BACKSLASHu202BBACKSLASHu067EBACKSLASHu0627BACKSLASHu06A9BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Pakistan (BACKSLASHu202BBACKSLASHu067EBACKSLASHu0627BACKSLASHu06A9BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Pakistan (\u202B\u067E\u0627\u06A9\u0633\u062A\u0627\u0646\u202C\u200E)".asInstanceOf[`Pakistan (BACKSLASHu202BBACKSLASHu067EBACKSLASHu0627BACKSLASHu06A9BACKSLASHu0633BACKSLASHu062ABACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`: `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis` = "Pakistan (\u202B\u067E\u0627\u06A9\u0633\u062A\u0627\u0646\u202C\u200E)".asInstanceOf[`Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`]
   @scala.inline
   def Palau: Palau = "Palau".asInstanceOf[Palau]
   @scala.inline
-  def `Palestine (BACKSLASHu202BBACKSLASHu0641BACKSLASHu0644BACKSLASHu0633BACKSLASHu0637BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Palestine (BACKSLASHu202BBACKSLASHu0641BACKSLASHu0644BACKSLASHu0633BACKSLASHu0637BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Palestine (\u202B\u0641\u0644\u0633\u0637\u064A\u0646\u202C\u200E)".asInstanceOf[`Palestine (BACKSLASHu202BBACKSLASHu0641BACKSLASHu0644BACKSLASHu0633BACKSLASHu0637BACKSLASHu064ABACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`: `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis` = "Palestine (\u202B\u0641\u0644\u0633\u0637\u064A\u0646\u202C\u200E)".asInstanceOf[`Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`]
   @scala.inline
-  def `Panama (PanamBACKSLASHu00E1)`: `Panama (PanamBACKSLASHu00E1)` = "Panama (Panam\u00E1)".asInstanceOf[`Panama (PanamBACKSLASHu00E1)`]
+  def `Panama LeftparenthesisPanamáRightparenthesis`: `Panama LeftparenthesisPanamáRightparenthesis` = "Panama (Panam\u00E1)".asInstanceOf[`Panama LeftparenthesisPanamáRightparenthesis`]
   @scala.inline
   def `Papua New Guinea`: `Papua New Guinea` = "Papua New Guinea".asInstanceOf[`Papua New Guinea`]
   @scala.inline
   def Paraguay: Paraguay = "Paraguay".asInstanceOf[Paraguay]
   @scala.inline
-  def `Peru (PerBACKSLASHu00FA)`: `Peru (PerBACKSLASHu00FA)` = "Peru (Per\u00FA)".asInstanceOf[`Peru (PerBACKSLASHu00FA)`]
+  def `Peru LeftparenthesisPerúRightparenthesis`: `Peru LeftparenthesisPerúRightparenthesis` = "Peru (Per\u00FA)".asInstanceOf[`Peru LeftparenthesisPerúRightparenthesis`]
   @scala.inline
   def Philippines: Philippines = "Philippines".asInstanceOf[Philippines]
   @scala.inline
-  def `Poland (Polska)`: `Poland (Polska)` = "Poland (Polska)".asInstanceOf[`Poland (Polska)`]
+  def Plussign1: Plussign1 = "+1".asInstanceOf[Plussign1]
+  @scala.inline
+  def Plussign1242: Plussign1242 = "+1242".asInstanceOf[Plussign1242]
+  @scala.inline
+  def Plussign1246: Plussign1246 = "+1246".asInstanceOf[Plussign1246]
+  @scala.inline
+  def Plussign1264: Plussign1264 = "+1264".asInstanceOf[Plussign1264]
+  @scala.inline
+  def Plussign1268: Plussign1268 = "+1268".asInstanceOf[Plussign1268]
+  @scala.inline
+  def Plussign1284: Plussign1284 = "+1284".asInstanceOf[Plussign1284]
+  @scala.inline
+  def Plussign1340: Plussign1340 = "+1340".asInstanceOf[Plussign1340]
+  @scala.inline
+  def Plussign1345: Plussign1345 = "+1345".asInstanceOf[Plussign1345]
+  @scala.inline
+  def Plussign1441: Plussign1441 = "+1441".asInstanceOf[Plussign1441]
+  @scala.inline
+  def Plussign1473: Plussign1473 = "+1473".asInstanceOf[Plussign1473]
+  @scala.inline
+  def Plussign1649: Plussign1649 = "+1649".asInstanceOf[Plussign1649]
+  @scala.inline
+  def Plussign1664: Plussign1664 = "+1664".asInstanceOf[Plussign1664]
+  @scala.inline
+  def Plussign1670: Plussign1670 = "+1670".asInstanceOf[Plussign1670]
+  @scala.inline
+  def Plussign1671: Plussign1671 = "+1671".asInstanceOf[Plussign1671]
+  @scala.inline
+  def Plussign1684: Plussign1684 = "+1684".asInstanceOf[Plussign1684]
+  @scala.inline
+  def Plussign1721: Plussign1721 = "+1721".asInstanceOf[Plussign1721]
+  @scala.inline
+  def Plussign1758: Plussign1758 = "+1758".asInstanceOf[Plussign1758]
+  @scala.inline
+  def Plussign1767: Plussign1767 = "+1767".asInstanceOf[Plussign1767]
+  @scala.inline
+  def Plussign1784: Plussign1784 = "+1784".asInstanceOf[Plussign1784]
+  @scala.inline
+  def Plussign1868: Plussign1868 = "+1868".asInstanceOf[Plussign1868]
+  @scala.inline
+  def Plussign1869: Plussign1869 = "+1869".asInstanceOf[Plussign1869]
+  @scala.inline
+  def Plussign20: Plussign20 = "+20".asInstanceOf[Plussign20]
+  @scala.inline
+  def Plussign211: Plussign211 = "+211".asInstanceOf[Plussign211]
+  @scala.inline
+  def Plussign212: Plussign212 = "+212".asInstanceOf[Plussign212]
+  @scala.inline
+  def Plussign213: Plussign213 = "+213".asInstanceOf[Plussign213]
+  @scala.inline
+  def Plussign216: Plussign216 = "+216".asInstanceOf[Plussign216]
+  @scala.inline
+  def Plussign218: Plussign218 = "+218".asInstanceOf[Plussign218]
+  @scala.inline
+  def Plussign220: Plussign220 = "+220".asInstanceOf[Plussign220]
+  @scala.inline
+  def Plussign221: Plussign221 = "+221".asInstanceOf[Plussign221]
+  @scala.inline
+  def Plussign222: Plussign222 = "+222".asInstanceOf[Plussign222]
+  @scala.inline
+  def Plussign223: Plussign223 = "+223".asInstanceOf[Plussign223]
+  @scala.inline
+  def Plussign224: Plussign224 = "+224".asInstanceOf[Plussign224]
+  @scala.inline
+  def Plussign225: Plussign225 = "+225".asInstanceOf[Plussign225]
+  @scala.inline
+  def Plussign226: Plussign226 = "+226".asInstanceOf[Plussign226]
+  @scala.inline
+  def Plussign227: Plussign227 = "+227".asInstanceOf[Plussign227]
+  @scala.inline
+  def Plussign228: Plussign228 = "+228".asInstanceOf[Plussign228]
+  @scala.inline
+  def Plussign229: Plussign229 = "+229".asInstanceOf[Plussign229]
+  @scala.inline
+  def Plussign230: Plussign230 = "+230".asInstanceOf[Plussign230]
+  @scala.inline
+  def Plussign231: Plussign231 = "+231".asInstanceOf[Plussign231]
+  @scala.inline
+  def Plussign232: Plussign232 = "+232".asInstanceOf[Plussign232]
+  @scala.inline
+  def Plussign233: Plussign233 = "+233".asInstanceOf[Plussign233]
+  @scala.inline
+  def Plussign234: Plussign234 = "+234".asInstanceOf[Plussign234]
+  @scala.inline
+  def Plussign235: Plussign235 = "+235".asInstanceOf[Plussign235]
+  @scala.inline
+  def Plussign236: Plussign236 = "+236".asInstanceOf[Plussign236]
+  @scala.inline
+  def Plussign237: Plussign237 = "+237".asInstanceOf[Plussign237]
+  @scala.inline
+  def Plussign238: Plussign238 = "+238".asInstanceOf[Plussign238]
+  @scala.inline
+  def Plussign239: Plussign239 = "+239".asInstanceOf[Plussign239]
+  @scala.inline
+  def Plussign240: Plussign240 = "+240".asInstanceOf[Plussign240]
+  @scala.inline
+  def Plussign241: Plussign241 = "+241".asInstanceOf[Plussign241]
+  @scala.inline
+  def Plussign242: Plussign242 = "+242".asInstanceOf[Plussign242]
+  @scala.inline
+  def Plussign243: Plussign243 = "+243".asInstanceOf[Plussign243]
+  @scala.inline
+  def Plussign244: Plussign244 = "+244".asInstanceOf[Plussign244]
+  @scala.inline
+  def Plussign245: Plussign245 = "+245".asInstanceOf[Plussign245]
+  @scala.inline
+  def Plussign246: Plussign246 = "+246".asInstanceOf[Plussign246]
+  @scala.inline
+  def Plussign248: Plussign248 = "+248".asInstanceOf[Plussign248]
+  @scala.inline
+  def Plussign249: Plussign249 = "+249".asInstanceOf[Plussign249]
+  @scala.inline
+  def Plussign250: Plussign250 = "+250".asInstanceOf[Plussign250]
+  @scala.inline
+  def Plussign251: Plussign251 = "+251".asInstanceOf[Plussign251]
+  @scala.inline
+  def Plussign252: Plussign252 = "+252".asInstanceOf[Plussign252]
+  @scala.inline
+  def Plussign253: Plussign253 = "+253".asInstanceOf[Plussign253]
+  @scala.inline
+  def Plussign254: Plussign254 = "+254".asInstanceOf[Plussign254]
+  @scala.inline
+  def Plussign255: Plussign255 = "+255".asInstanceOf[Plussign255]
+  @scala.inline
+  def Plussign256: Plussign256 = "+256".asInstanceOf[Plussign256]
+  @scala.inline
+  def Plussign257: Plussign257 = "+257".asInstanceOf[Plussign257]
+  @scala.inline
+  def Plussign258: Plussign258 = "+258".asInstanceOf[Plussign258]
+  @scala.inline
+  def Plussign260: Plussign260 = "+260".asInstanceOf[Plussign260]
+  @scala.inline
+  def Plussign261: Plussign261 = "+261".asInstanceOf[Plussign261]
+  @scala.inline
+  def Plussign262: Plussign262 = "+262".asInstanceOf[Plussign262]
+  @scala.inline
+  def Plussign263: Plussign263 = "+263".asInstanceOf[Plussign263]
+  @scala.inline
+  def Plussign264: Plussign264 = "+264".asInstanceOf[Plussign264]
+  @scala.inline
+  def Plussign265: Plussign265 = "+265".asInstanceOf[Plussign265]
+  @scala.inline
+  def Plussign266: Plussign266 = "+266".asInstanceOf[Plussign266]
+  @scala.inline
+  def Plussign267: Plussign267 = "+267".asInstanceOf[Plussign267]
+  @scala.inline
+  def Plussign268: Plussign268 = "+268".asInstanceOf[Plussign268]
+  @scala.inline
+  def Plussign269: Plussign269 = "+269".asInstanceOf[Plussign269]
+  @scala.inline
+  def Plussign27: Plussign27 = "+27".asInstanceOf[Plussign27]
+  @scala.inline
+  def Plussign290: Plussign290 = "+290".asInstanceOf[Plussign290]
+  @scala.inline
+  def Plussign291: Plussign291 = "+291".asInstanceOf[Plussign291]
+  @scala.inline
+  def Plussign297: Plussign297 = "+297".asInstanceOf[Plussign297]
+  @scala.inline
+  def Plussign298: Plussign298 = "+298".asInstanceOf[Plussign298]
+  @scala.inline
+  def Plussign299: Plussign299 = "+299".asInstanceOf[Plussign299]
+  @scala.inline
+  def Plussign30: Plussign30 = "+30".asInstanceOf[Plussign30]
+  @scala.inline
+  def Plussign31: Plussign31 = "+31".asInstanceOf[Plussign31]
+  @scala.inline
+  def Plussign32: Plussign32 = "+32".asInstanceOf[Plussign32]
+  @scala.inline
+  def Plussign33: Plussign33 = "+33".asInstanceOf[Plussign33]
+  @scala.inline
+  def Plussign34: Plussign34 = "+34".asInstanceOf[Plussign34]
+  @scala.inline
+  def Plussign350: Plussign350 = "+350".asInstanceOf[Plussign350]
+  @scala.inline
+  def Plussign351: Plussign351 = "+351".asInstanceOf[Plussign351]
+  @scala.inline
+  def Plussign352: Plussign352 = "+352".asInstanceOf[Plussign352]
+  @scala.inline
+  def Plussign353: Plussign353 = "+353".asInstanceOf[Plussign353]
+  @scala.inline
+  def Plussign354: Plussign354 = "+354".asInstanceOf[Plussign354]
+  @scala.inline
+  def Plussign355: Plussign355 = "+355".asInstanceOf[Plussign355]
+  @scala.inline
+  def Plussign356: Plussign356 = "+356".asInstanceOf[Plussign356]
+  @scala.inline
+  def Plussign357: Plussign357 = "+357".asInstanceOf[Plussign357]
+  @scala.inline
+  def Plussign358: Plussign358 = "+358".asInstanceOf[Plussign358]
+  @scala.inline
+  def Plussign359: Plussign359 = "+359".asInstanceOf[Plussign359]
+  @scala.inline
+  def Plussign36: Plussign36 = "+36".asInstanceOf[Plussign36]
+  @scala.inline
+  def Plussign370: Plussign370 = "+370".asInstanceOf[Plussign370]
+  @scala.inline
+  def Plussign371: Plussign371 = "+371".asInstanceOf[Plussign371]
+  @scala.inline
+  def Plussign372: Plussign372 = "+372".asInstanceOf[Plussign372]
+  @scala.inline
+  def Plussign373: Plussign373 = "+373".asInstanceOf[Plussign373]
+  @scala.inline
+  def Plussign374: Plussign374 = "+374".asInstanceOf[Plussign374]
+  @scala.inline
+  def Plussign375: Plussign375 = "+375".asInstanceOf[Plussign375]
+  @scala.inline
+  def Plussign376: Plussign376 = "+376".asInstanceOf[Plussign376]
+  @scala.inline
+  def Plussign377: Plussign377 = "+377".asInstanceOf[Plussign377]
+  @scala.inline
+  def Plussign378: Plussign378 = "+378".asInstanceOf[Plussign378]
+  @scala.inline
+  def Plussign380: Plussign380 = "+380".asInstanceOf[Plussign380]
+  @scala.inline
+  def Plussign381: Plussign381 = "+381".asInstanceOf[Plussign381]
+  @scala.inline
+  def Plussign382: Plussign382 = "+382".asInstanceOf[Plussign382]
+  @scala.inline
+  def Plussign383: Plussign383 = "+383".asInstanceOf[Plussign383]
+  @scala.inline
+  def Plussign385: Plussign385 = "+385".asInstanceOf[Plussign385]
+  @scala.inline
+  def Plussign386: Plussign386 = "+386".asInstanceOf[Plussign386]
+  @scala.inline
+  def Plussign387: Plussign387 = "+387".asInstanceOf[Plussign387]
+  @scala.inline
+  def Plussign389: Plussign389 = "+389".asInstanceOf[Plussign389]
+  @scala.inline
+  def Plussign39: Plussign39 = "+39".asInstanceOf[Plussign39]
+  @scala.inline
+  def Plussign40: Plussign40 = "+40".asInstanceOf[Plussign40]
+  @scala.inline
+  def Plussign41: Plussign41 = "+41".asInstanceOf[Plussign41]
+  @scala.inline
+  def Plussign420: Plussign420 = "+420".asInstanceOf[Plussign420]
+  @scala.inline
+  def Plussign421: Plussign421 = "+421".asInstanceOf[Plussign421]
+  @scala.inline
+  def Plussign423: Plussign423 = "+423".asInstanceOf[Plussign423]
+  @scala.inline
+  def Plussign43: Plussign43 = "+43".asInstanceOf[Plussign43]
+  @scala.inline
+  def Plussign44: Plussign44 = "+44".asInstanceOf[Plussign44]
+  @scala.inline
+  def Plussign45: Plussign45 = "+45".asInstanceOf[Plussign45]
+  @scala.inline
+  def Plussign46: Plussign46 = "+46".asInstanceOf[Plussign46]
+  @scala.inline
+  def Plussign47: Plussign47 = "+47".asInstanceOf[Plussign47]
+  @scala.inline
+  def Plussign48: Plussign48 = "+48".asInstanceOf[Plussign48]
+  @scala.inline
+  def Plussign49: Plussign49 = "+49".asInstanceOf[Plussign49]
+  @scala.inline
+  def Plussign500: Plussign500 = "+500".asInstanceOf[Plussign500]
+  @scala.inline
+  def Plussign501: Plussign501 = "+501".asInstanceOf[Plussign501]
+  @scala.inline
+  def Plussign502: Plussign502 = "+502".asInstanceOf[Plussign502]
+  @scala.inline
+  def Plussign503: Plussign503 = "+503".asInstanceOf[Plussign503]
+  @scala.inline
+  def Plussign504: Plussign504 = "+504".asInstanceOf[Plussign504]
+  @scala.inline
+  def Plussign505: Plussign505 = "+505".asInstanceOf[Plussign505]
+  @scala.inline
+  def Plussign506: Plussign506 = "+506".asInstanceOf[Plussign506]
+  @scala.inline
+  def Plussign507: Plussign507 = "+507".asInstanceOf[Plussign507]
+  @scala.inline
+  def Plussign508: Plussign508 = "+508".asInstanceOf[Plussign508]
+  @scala.inline
+  def Plussign509: Plussign509 = "+509".asInstanceOf[Plussign509]
+  @scala.inline
+  def Plussign51: Plussign51 = "+51".asInstanceOf[Plussign51]
+  @scala.inline
+  def Plussign52: Plussign52 = "+52".asInstanceOf[Plussign52]
+  @scala.inline
+  def Plussign53: Plussign53 = "+53".asInstanceOf[Plussign53]
+  @scala.inline
+  def Plussign54: Plussign54 = "+54".asInstanceOf[Plussign54]
+  @scala.inline
+  def Plussign55: Plussign55 = "+55".asInstanceOf[Plussign55]
+  @scala.inline
+  def Plussign56: Plussign56 = "+56".asInstanceOf[Plussign56]
+  @scala.inline
+  def Plussign57: Plussign57 = "+57".asInstanceOf[Plussign57]
+  @scala.inline
+  def Plussign58: Plussign58 = "+58".asInstanceOf[Plussign58]
+  @scala.inline
+  def Plussign590: Plussign590 = "+590".asInstanceOf[Plussign590]
+  @scala.inline
+  def Plussign591: Plussign591 = "+591".asInstanceOf[Plussign591]
+  @scala.inline
+  def Plussign592: Plussign592 = "+592".asInstanceOf[Plussign592]
+  @scala.inline
+  def Plussign593: Plussign593 = "+593".asInstanceOf[Plussign593]
+  @scala.inline
+  def Plussign594: Plussign594 = "+594".asInstanceOf[Plussign594]
+  @scala.inline
+  def Plussign595: Plussign595 = "+595".asInstanceOf[Plussign595]
+  @scala.inline
+  def Plussign596: Plussign596 = "+596".asInstanceOf[Plussign596]
+  @scala.inline
+  def Plussign597: Plussign597 = "+597".asInstanceOf[Plussign597]
+  @scala.inline
+  def Plussign598: Plussign598 = "+598".asInstanceOf[Plussign598]
+  @scala.inline
+  def Plussign599: Plussign599 = "+599".asInstanceOf[Plussign599]
+  @scala.inline
+  def Plussign60: Plussign60 = "+60".asInstanceOf[Plussign60]
+  @scala.inline
+  def Plussign61: Plussign61 = "+61".asInstanceOf[Plussign61]
+  @scala.inline
+  def Plussign62: Plussign62 = "+62".asInstanceOf[Plussign62]
+  @scala.inline
+  def Plussign63: Plussign63 = "+63".asInstanceOf[Plussign63]
+  @scala.inline
+  def Plussign64: Plussign64 = "+64".asInstanceOf[Plussign64]
+  @scala.inline
+  def Plussign65: Plussign65 = "+65".asInstanceOf[Plussign65]
+  @scala.inline
+  def Plussign66: Plussign66 = "+66".asInstanceOf[Plussign66]
+  @scala.inline
+  def Plussign670: Plussign670 = "+670".asInstanceOf[Plussign670]
+  @scala.inline
+  def Plussign672: Plussign672 = "+672".asInstanceOf[Plussign672]
+  @scala.inline
+  def Plussign673: Plussign673 = "+673".asInstanceOf[Plussign673]
+  @scala.inline
+  def Plussign674: Plussign674 = "+674".asInstanceOf[Plussign674]
+  @scala.inline
+  def Plussign675: Plussign675 = "+675".asInstanceOf[Plussign675]
+  @scala.inline
+  def Plussign676: Plussign676 = "+676".asInstanceOf[Plussign676]
+  @scala.inline
+  def Plussign677: Plussign677 = "+677".asInstanceOf[Plussign677]
+  @scala.inline
+  def Plussign678: Plussign678 = "+678".asInstanceOf[Plussign678]
+  @scala.inline
+  def Plussign679: Plussign679 = "+679".asInstanceOf[Plussign679]
+  @scala.inline
+  def Plussign680: Plussign680 = "+680".asInstanceOf[Plussign680]
+  @scala.inline
+  def Plussign681: Plussign681 = "+681".asInstanceOf[Plussign681]
+  @scala.inline
+  def Plussign682: Plussign682 = "+682".asInstanceOf[Plussign682]
+  @scala.inline
+  def Plussign683: Plussign683 = "+683".asInstanceOf[Plussign683]
+  @scala.inline
+  def Plussign685: Plussign685 = "+685".asInstanceOf[Plussign685]
+  @scala.inline
+  def Plussign686: Plussign686 = "+686".asInstanceOf[Plussign686]
+  @scala.inline
+  def Plussign687: Plussign687 = "+687".asInstanceOf[Plussign687]
+  @scala.inline
+  def Plussign688: Plussign688 = "+688".asInstanceOf[Plussign688]
+  @scala.inline
+  def Plussign689: Plussign689 = "+689".asInstanceOf[Plussign689]
+  @scala.inline
+  def Plussign690: Plussign690 = "+690".asInstanceOf[Plussign690]
+  @scala.inline
+  def Plussign691: Plussign691 = "+691".asInstanceOf[Plussign691]
+  @scala.inline
+  def Plussign692: Plussign692 = "+692".asInstanceOf[Plussign692]
+  @scala.inline
+  def Plussign7: Plussign7 = "+7".asInstanceOf[Plussign7]
+  @scala.inline
+  def Plussign81: Plussign81 = "+81".asInstanceOf[Plussign81]
+  @scala.inline
+  def Plussign82: Plussign82 = "+82".asInstanceOf[Plussign82]
+  @scala.inline
+  def Plussign84: Plussign84 = "+84".asInstanceOf[Plussign84]
+  @scala.inline
+  def Plussign850: Plussign850 = "+850".asInstanceOf[Plussign850]
+  @scala.inline
+  def Plussign852: Plussign852 = "+852".asInstanceOf[Plussign852]
+  @scala.inline
+  def Plussign853: Plussign853 = "+853".asInstanceOf[Plussign853]
+  @scala.inline
+  def Plussign855: Plussign855 = "+855".asInstanceOf[Plussign855]
+  @scala.inline
+  def Plussign856: Plussign856 = "+856".asInstanceOf[Plussign856]
+  @scala.inline
+  def Plussign86: Plussign86 = "+86".asInstanceOf[Plussign86]
+  @scala.inline
+  def Plussign880: Plussign880 = "+880".asInstanceOf[Plussign880]
+  @scala.inline
+  def Plussign886: Plussign886 = "+886".asInstanceOf[Plussign886]
+  @scala.inline
+  def Plussign90: Plussign90 = "+90".asInstanceOf[Plussign90]
+  @scala.inline
+  def Plussign91: Plussign91 = "+91".asInstanceOf[Plussign91]
+  @scala.inline
+  def Plussign92: Plussign92 = "+92".asInstanceOf[Plussign92]
+  @scala.inline
+  def Plussign93: Plussign93 = "+93".asInstanceOf[Plussign93]
+  @scala.inline
+  def Plussign94: Plussign94 = "+94".asInstanceOf[Plussign94]
+  @scala.inline
+  def Plussign95: Plussign95 = "+95".asInstanceOf[Plussign95]
+  @scala.inline
+  def Plussign960: Plussign960 = "+960".asInstanceOf[Plussign960]
+  @scala.inline
+  def Plussign961: Plussign961 = "+961".asInstanceOf[Plussign961]
+  @scala.inline
+  def Plussign962: Plussign962 = "+962".asInstanceOf[Plussign962]
+  @scala.inline
+  def Plussign963: Plussign963 = "+963".asInstanceOf[Plussign963]
+  @scala.inline
+  def Plussign964: Plussign964 = "+964".asInstanceOf[Plussign964]
+  @scala.inline
+  def Plussign965: Plussign965 = "+965".asInstanceOf[Plussign965]
+  @scala.inline
+  def Plussign966: Plussign966 = "+966".asInstanceOf[Plussign966]
+  @scala.inline
+  def Plussign967: Plussign967 = "+967".asInstanceOf[Plussign967]
+  @scala.inline
+  def Plussign968: Plussign968 = "+968".asInstanceOf[Plussign968]
+  @scala.inline
+  def Plussign970: Plussign970 = "+970".asInstanceOf[Plussign970]
+  @scala.inline
+  def Plussign971: Plussign971 = "+971".asInstanceOf[Plussign971]
+  @scala.inline
+  def Plussign972: Plussign972 = "+972".asInstanceOf[Plussign972]
+  @scala.inline
+  def Plussign973: Plussign973 = "+973".asInstanceOf[Plussign973]
+  @scala.inline
+  def Plussign974: Plussign974 = "+974".asInstanceOf[Plussign974]
+  @scala.inline
+  def Plussign975: Plussign975 = "+975".asInstanceOf[Plussign975]
+  @scala.inline
+  def Plussign976: Plussign976 = "+976".asInstanceOf[Plussign976]
+  @scala.inline
+  def Plussign977: Plussign977 = "+977".asInstanceOf[Plussign977]
+  @scala.inline
+  def Plussign98: Plussign98 = "+98".asInstanceOf[Plussign98]
+  @scala.inline
+  def Plussign992: Plussign992 = "+992".asInstanceOf[Plussign992]
+  @scala.inline
+  def Plussign993: Plussign993 = "+993".asInstanceOf[Plussign993]
+  @scala.inline
+  def Plussign994: Plussign994 = "+994".asInstanceOf[Plussign994]
+  @scala.inline
+  def Plussign995: Plussign995 = "+995".asInstanceOf[Plussign995]
+  @scala.inline
+  def Plussign996: Plussign996 = "+996".asInstanceOf[Plussign996]
+  @scala.inline
+  def Plussign998: Plussign998 = "+998".asInstanceOf[Plussign998]
+  @scala.inline
+  def `Poland LeftparenthesisPolskaRightparenthesis`: `Poland LeftparenthesisPolskaRightparenthesis` = "Poland (Polska)".asInstanceOf[`Poland LeftparenthesisPolskaRightparenthesis`]
   @scala.inline
   def Portugal: Portugal = "Portugal".asInstanceOf[Portugal]
   @scala.inline
@@ -4528,9 +4524,7 @@ object baseuiStrings {
   @scala.inline
   def QA: QA = "QA".asInstanceOf[QA]
   @scala.inline
-  def `Qatar (BACKSLASHu202BBACKSLASHu0642BACKSLASHu0637BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`: `Qatar (BACKSLASHu202BBACKSLASHu0642BACKSLASHu0637BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)` = "Qatar (\u202B\u0642\u0637\u0631\u202C\u200E)".asInstanceOf[`Qatar (BACKSLASHu202BBACKSLASHu0642BACKSLASHu0637BACKSLASHu0631BACKSLASHu202CBACKSLASHu200E)`]
-  @scala.inline
-  def `RBACKSLASHu00E9union (La RBACKSLASHu00E9union)`: `RBACKSLASHu00E9union (La RBACKSLASHu00E9union)` = "R\u00E9union (La R\u00E9union)".asInstanceOf[`RBACKSLASHu00E9union (La RBACKSLASHu00E9union)`]
+  def `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`: `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` = "Qatar (\u202B\u0642\u0637\u0631\u202C\u200E)".asInstanceOf[`Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`]
   @scala.inline
   def RE: RE = "RE".asInstanceOf[RE]
   @scala.inline
@@ -4542,17 +4536,17 @@ object baseuiStrings {
   @scala.inline
   def RW: RW = "RW".asInstanceOf[RW]
   @scala.inline
-  def `Romania (RomBACKSLASHu00E2nia)`: `Romania (RomBACKSLASHu00E2nia)` = "Romania (Rom\u00E2nia)".asInstanceOf[`Romania (RomBACKSLASHu00E2nia)`]
+  def `Romania LeftparenthesisRomâniaRightparenthesis`: `Romania LeftparenthesisRomâniaRightparenthesis` = "Romania (Rom\u00E2nia)".asInstanceOf[`Romania LeftparenthesisRomâniaRightparenthesis`]
   @scala.inline
-  def `Russia (BACKSLASHu0420BACKSLASHu043EBACKSLASHu0441BACKSLASHu0441BACKSLASHu0438BACKSLASHu044F)`: `Russia (BACKSLASHu0420BACKSLASHu043EBACKSLASHu0441BACKSLASHu0441BACKSLASHu0438BACKSLASHu044F)` = "Russia (\u0420\u043E\u0441\u0441\u0438\u044F)".asInstanceOf[`Russia (BACKSLASHu0420BACKSLASHu043EBACKSLASHu0441BACKSLASHu0441BACKSLASHu0438BACKSLASHu044F)`]
+  def `Russia LeftparenthesisРоссияRightparenthesis`: `Russia LeftparenthesisРоссияRightparenthesis` = "Russia (\u0420\u043E\u0441\u0441\u0438\u044F)".asInstanceOf[`Russia LeftparenthesisРоссияRightparenthesis`]
   @scala.inline
   def Rwanda: Rwanda = "Rwanda".asInstanceOf[Rwanda]
+  @scala.inline
+  def `Réunion LeftparenthesisLa RéunionRightparenthesis`: `Réunion LeftparenthesisLa RéunionRightparenthesis` = "R\u00E9union (La R\u00E9union)".asInstanceOf[`Réunion LeftparenthesisLa RéunionRightparenthesis`]
   @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
   @scala.inline
   def SB: SB = "SB".asInstanceOf[SB]
-  @scala.inline
-  def `SBACKSLASHu00E3o TomBACKSLASHu00E9 and PrBACKSLASHu00EDncipe (SBACKSLASHu00E3o TomBACKSLASHu00E9 e PrBACKSLASHu00EDncipe)`: `SBACKSLASHu00E3o TomBACKSLASHu00E9 and PrBACKSLASHu00EDncipe (SBACKSLASHu00E3o TomBACKSLASHu00E9 e PrBACKSLASHu00EDncipe)` = "S\u00E3o Tom\u00E9 and Pr\u00EDncipe (S\u00E3o Tom\u00E9 e Pr\u00EDncipe)".asInstanceOf[`SBACKSLASHu00E3o TomBACKSLASHu00E9 and PrBACKSLASHu00EDncipe (SBACKSLASHu00E3o TomBACKSLASHu00E9 e PrBACKSLASHu00EDncipe)`]
   @scala.inline
   def SC: SC = "SC".asInstanceOf[SC]
   @scala.inline
@@ -4596,7 +4590,7 @@ object baseuiStrings {
   @scala.inline
   def SZ: SZ = "SZ".asInstanceOf[SZ]
   @scala.inline
-  def `Saint BarthBACKSLASHu00E9lemy`: `Saint BarthBACKSLASHu00E9lemy` = "Saint Barth\u00E9lemy".asInstanceOf[`Saint BarthBACKSLASHu00E9lemy`]
+  def `Saint Barthélemy`: `Saint Barthélemy` = "Saint Barth\u00E9lemy".asInstanceOf[`Saint Barthélemy`]
   @scala.inline
   def `Saint Helena`: `Saint Helena` = "Saint Helena".asInstanceOf[`Saint Helena`]
   @scala.inline
@@ -4604,9 +4598,9 @@ object baseuiStrings {
   @scala.inline
   def `Saint Lucia`: `Saint Lucia` = "Saint Lucia".asInstanceOf[`Saint Lucia`]
   @scala.inline
-  def `Saint Martin (Saint-Martin (partie franBACKSLASHu00E7aise))`: `Saint Martin (Saint-Martin (partie franBACKSLASHu00E7aise))` = "Saint Martin (Saint-Martin (partie fran\u00E7aise))".asInstanceOf[`Saint Martin (Saint-Martin (partie franBACKSLASHu00E7aise))`]
+  def `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`: `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis` = "Saint Martin (Saint-Martin (partie fran\u00E7aise))".asInstanceOf[`Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`]
   @scala.inline
-  def `Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)`: `Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)` = "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)".asInstanceOf[`Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)`]
+  def `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`: `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis` = "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)".asInstanceOf[`Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`]
   @scala.inline
   def `Saint Vincent and the Grenadines`: `Saint Vincent and the Grenadines` = "Saint Vincent and the Grenadines".asInstanceOf[`Saint Vincent and the Grenadines`]
   @scala.inline
@@ -4614,11 +4608,11 @@ object baseuiStrings {
   @scala.inline
   def `San Marino`: `San Marino` = "San Marino".asInstanceOf[`San Marino`]
   @scala.inline
-  def `Saudi Arabia (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu0645BACKSLASHu0644BACKSLASHu0643BACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0639BACKSLASHu0648BACKSLASHu062FBACKSLASHu064ABACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)`: `Saudi Arabia (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu0645BACKSLASHu0644BACKSLASHu0643BACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0639BACKSLASHu0648BACKSLASHu062FBACKSLASHu064ABACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)` = "Saudi Arabia (\u202B\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0633\u0639\u0648\u062F\u064A\u0629\u202C\u200E)".asInstanceOf[`Saudi Arabia (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu0645BACKSLASHu0644BACKSLASHu0643BACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0639BACKSLASHu0648BACKSLASHu062FBACKSLASHu064ABACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)`]
+  def `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`: `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis` = "Saudi Arabia (\u202B\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0633\u0639\u0648\u062F\u064A\u0629\u202C\u200E)".asInstanceOf[`Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`]
   @scala.inline
-  def `Senegal (SBACKSLASHu00E9nBACKSLASHu00E9gal)`: `Senegal (SBACKSLASHu00E9nBACKSLASHu00E9gal)` = "Senegal (S\u00E9n\u00E9gal)".asInstanceOf[`Senegal (SBACKSLASHu00E9nBACKSLASHu00E9gal)`]
+  def `Senegal LeftparenthesisSénégalRightparenthesis`: `Senegal LeftparenthesisSénégalRightparenthesis` = "Senegal (S\u00E9n\u00E9gal)".asInstanceOf[`Senegal LeftparenthesisSénégalRightparenthesis`]
   @scala.inline
-  def `Serbia (BACKSLASHu0421BACKSLASHu0440BACKSLASHu0431BACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)`: `Serbia (BACKSLASHu0421BACKSLASHu0440BACKSLASHu0431BACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)` = "Serbia (\u0421\u0440\u0431\u0438\u0458\u0430)".asInstanceOf[`Serbia (BACKSLASHu0421BACKSLASHu0440BACKSLASHu0431BACKSLASHu0438BACKSLASHu0458BACKSLASHu0430)`]
+  def `Serbia LeftparenthesisСрбијаRightparenthesis`: `Serbia LeftparenthesisСрбијаRightparenthesis` = "Serbia (\u0421\u0440\u0431\u0438\u0458\u0430)".asInstanceOf[`Serbia LeftparenthesisСрбијаRightparenthesis`]
   @scala.inline
   def Seychelles: Seychelles = "Seychelles".asInstanceOf[Seychelles]
   @scala.inline
@@ -4628,25 +4622,27 @@ object baseuiStrings {
   @scala.inline
   def `Sint Maarten`: `Sint Maarten` = "Sint Maarten".asInstanceOf[`Sint Maarten`]
   @scala.inline
-  def `Slovakia (Slovensko)`: `Slovakia (Slovensko)` = "Slovakia (Slovensko)".asInstanceOf[`Slovakia (Slovensko)`]
+  def `Slovakia LeftparenthesisSlovenskoRightparenthesis`: `Slovakia LeftparenthesisSlovenskoRightparenthesis` = "Slovakia (Slovensko)".asInstanceOf[`Slovakia LeftparenthesisSlovenskoRightparenthesis`]
   @scala.inline
-  def `Slovenia (Slovenija)`: `Slovenia (Slovenija)` = "Slovenia (Slovenija)".asInstanceOf[`Slovenia (Slovenija)`]
+  def `Slovenia LeftparenthesisSlovenijaRightparenthesis`: `Slovenia LeftparenthesisSlovenijaRightparenthesis` = "Slovenia (Slovenija)".asInstanceOf[`Slovenia LeftparenthesisSlovenijaRightparenthesis`]
   @scala.inline
   def `Solomon Islands`: `Solomon Islands` = "Solomon Islands".asInstanceOf[`Solomon Islands`]
   @scala.inline
-  def `Somalia (Soomaaliya)`: `Somalia (Soomaaliya)` = "Somalia (Soomaaliya)".asInstanceOf[`Somalia (Soomaaliya)`]
+  def `Somalia LeftparenthesisSoomaaliyaRightparenthesis`: `Somalia LeftparenthesisSoomaaliyaRightparenthesis` = "Somalia (Soomaaliya)".asInstanceOf[`Somalia LeftparenthesisSoomaaliyaRightparenthesis`]
   @scala.inline
   def `South Africa`: `South Africa` = "South Africa".asInstanceOf[`South Africa`]
   @scala.inline
-  def `South Korea (BACKSLASHuB300BACKSLASHuD55CBACKSLASHuBBFCBACKSLASHuAD6D)`: `South Korea (BACKSLASHuB300BACKSLASHuD55CBACKSLASHuBBFCBACKSLASHuAD6D)` = "South Korea (\uB300\uD55C\uBBFC\uAD6D)".asInstanceOf[`South Korea (BACKSLASHuB300BACKSLASHuD55CBACKSLASHuBBFCBACKSLASHuAD6D)`]
+  def `South Korea Leftparenthesis대한민국Rightparenthesis`: `South Korea Leftparenthesis대한민국Rightparenthesis` = "South Korea (\uB300\uD55C\uBBFC\uAD6D)".asInstanceOf[`South Korea Leftparenthesis대한민국Rightparenthesis`]
   @scala.inline
-  def `South Sudan (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0646BACKSLASHu0648BACKSLASHu0628 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `South Sudan (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0646BACKSLASHu0648BACKSLASHu0628 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "South Sudan (\u202B\u062C\u0646\u0648\u0628 \u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)".asInstanceOf[`South Sudan (BACKSLASHu202BBACKSLASHu062CBACKSLASHu0646BACKSLASHu0648BACKSLASHu0628 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`: `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis` = "South Sudan (\u202B\u062C\u0646\u0648\u0628 \u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)".asInstanceOf[`South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`]
   @scala.inline
-  def `Spain (EspaBACKSLASHu00F1a)`: `Spain (EspaBACKSLASHu00F1a)` = "Spain (Espa\u00F1a)".asInstanceOf[`Spain (EspaBACKSLASHu00F1a)`]
+  def Space: Space = " ".asInstanceOf[Space]
   @scala.inline
-  def `Sri Lanka (BACKSLASHu0DC1BACKSLASHu0DCABACKSLASHu200DBACKSLASHu0DBBBACKSLASHu0DD3 BACKSLASHu0DBDBACKSLASHu0D82BACKSLASHu0D9ABACKSLASHu0DCFBACKSLASHu0DC0)`: `Sri Lanka (BACKSLASHu0DC1BACKSLASHu0DCABACKSLASHu200DBACKSLASHu0DBBBACKSLASHu0DD3 BACKSLASHu0DBDBACKSLASHu0D82BACKSLASHu0D9ABACKSLASHu0DCFBACKSLASHu0DC0)` = "Sri Lanka (\u0DC1\u0DCA\u200D\u0DBB\u0DD3 \u0DBD\u0D82\u0D9A\u0DCF\u0DC0)".asInstanceOf[`Sri Lanka (BACKSLASHu0DC1BACKSLASHu0DCABACKSLASHu200DBACKSLASHu0DBBBACKSLASHu0DD3 BACKSLASHu0DBDBACKSLASHu0D82BACKSLASHu0D9ABACKSLASHu0DCFBACKSLASHu0DC0)`]
+  def `Spain LeftparenthesisEspañaRightparenthesis`: `Spain LeftparenthesisEspañaRightparenthesis` = "Spain (Espa\u00F1a)".asInstanceOf[`Spain LeftparenthesisEspañaRightparenthesis`]
   @scala.inline
-  def `Sudan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Sudan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Sudan (\u202B\u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)".asInstanceOf[`Sudan (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0633BACKSLASHu0648BACKSLASHu062FBACKSLASHu0627BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`: `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis` = "Sri Lanka (\u0DC1\u0DCA\u200D\u0DBB\u0DD3 \u0DBD\u0D82\u0D9A\u0DCF\u0DC0)".asInstanceOf[`Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`]
+  @scala.inline
+  def `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`: `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis` = "Sudan (\u202B\u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)".asInstanceOf[`Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`]
   @scala.inline
   def Suriname: Suriname = "Suriname".asInstanceOf[Suriname]
   @scala.inline
@@ -4654,11 +4650,13 @@ object baseuiStrings {
   @scala.inline
   def Swaziland: Swaziland = "Swaziland".asInstanceOf[Swaziland]
   @scala.inline
-  def `Sweden (Sverige)`: `Sweden (Sverige)` = "Sweden (Sverige)".asInstanceOf[`Sweden (Sverige)`]
+  def `Sweden LeftparenthesisSverigeRightparenthesis`: `Sweden LeftparenthesisSverigeRightparenthesis` = "Sweden (Sverige)".asInstanceOf[`Sweden LeftparenthesisSverigeRightparenthesis`]
   @scala.inline
-  def `Switzerland (Schweiz)`: `Switzerland (Schweiz)` = "Switzerland (Schweiz)".asInstanceOf[`Switzerland (Schweiz)`]
+  def `Switzerland LeftparenthesisSchweizRightparenthesis`: `Switzerland LeftparenthesisSchweizRightparenthesis` = "Switzerland (Schweiz)".asInstanceOf[`Switzerland LeftparenthesisSchweizRightparenthesis`]
   @scala.inline
-  def `Syria (BACKSLASHu202BBACKSLASHu0633BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)`: `Syria (BACKSLASHu202BBACKSLASHu0633BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)` = "Syria (\u202B\u0633\u0648\u0631\u064A\u0627\u202C\u200E)".asInstanceOf[`Syria (BACKSLASHu202BBACKSLASHu0633BACKSLASHu0648BACKSLASHu0631BACKSLASHu064ABACKSLASHu0627BACKSLASHu202CBACKSLASHu200E)`]
+  def `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`: `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis` = "Syria (\u202B\u0633\u0648\u0631\u064A\u0627\u202C\u200E)".asInstanceOf[`Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`]
+  @scala.inline
+  def `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`: `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis` = "S\u00E3o Tom\u00E9 and Pr\u00EDncipe (S\u00E3o Tom\u00E9 e Pr\u00EDncipe)".asInstanceOf[`São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`]
   @scala.inline
   def TC: TC = "TC".asInstanceOf[TC]
   @scala.inline
@@ -4690,13 +4688,13 @@ object baseuiStrings {
   @scala.inline
   def TZ: TZ = "TZ".asInstanceOf[TZ]
   @scala.inline
-  def `Taiwan (BACKSLASHu53F0BACKSLASHu7063)`: `Taiwan (BACKSLASHu53F0BACKSLASHu7063)` = "Taiwan (\u53F0\u7063)".asInstanceOf[`Taiwan (BACKSLASHu53F0BACKSLASHu7063)`]
+  def `Taiwan Leftparenthesis台灣Rightparenthesis`: `Taiwan Leftparenthesis台灣Rightparenthesis` = "Taiwan (\u53F0\u7063)".asInstanceOf[`Taiwan Leftparenthesis台灣Rightparenthesis`]
   @scala.inline
   def Tajikistan: Tajikistan = "Tajikistan".asInstanceOf[Tajikistan]
   @scala.inline
   def Tanzania: Tanzania = "Tanzania".asInstanceOf[Tanzania]
   @scala.inline
-  def `Thailand (BACKSLASHu0E44BACKSLASHu0E17BACKSLASHu0E22)`: `Thailand (BACKSLASHu0E44BACKSLASHu0E17BACKSLASHu0E22)` = "Thailand (\u0E44\u0E17\u0E22)".asInstanceOf[`Thailand (BACKSLASHu0E44BACKSLASHu0E17BACKSLASHu0E22)`]
+  def `Thailand LeftparenthesisไทยRightparenthesis`: `Thailand LeftparenthesisไทยRightparenthesis` = "Thailand (\u0E44\u0E17\u0E22)".asInstanceOf[`Thailand LeftparenthesisไทยRightparenthesis`]
   @scala.inline
   def `Timor-Leste`: `Timor-Leste` = "Timor-Leste".asInstanceOf[`Timor-Leste`]
   @scala.inline
@@ -4708,9 +4706,9 @@ object baseuiStrings {
   @scala.inline
   def `Trinisoad and Tobago`: `Trinisoad and Tobago` = "Trinisoad and Tobago".asInstanceOf[`Trinisoad and Tobago`]
   @scala.inline
-  def `Tunisia (BACKSLASHu202BBACKSLASHu062ABACKSLASHu0648BACKSLASHu0646BACKSLASHu0633BACKSLASHu202CBACKSLASHu200E)`: `Tunisia (BACKSLASHu202BBACKSLASHu062ABACKSLASHu0648BACKSLASHu0646BACKSLASHu0633BACKSLASHu202CBACKSLASHu200E)` = "Tunisia (\u202B\u062A\u0648\u0646\u0633\u202C\u200E)".asInstanceOf[`Tunisia (BACKSLASHu202BBACKSLASHu062ABACKSLASHu0648BACKSLASHu0646BACKSLASHu0633BACKSLASHu202CBACKSLASHu200E)`]
+  def `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`: `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis` = "Tunisia (\u202B\u062A\u0648\u0646\u0633\u202C\u200E)".asInstanceOf[`Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`]
   @scala.inline
-  def `Turkey (TBACKSLASHu00FCrkiye)`: `Turkey (TBACKSLASHu00FCrkiye)` = "Turkey (T\u00FCrkiye)".asInstanceOf[`Turkey (TBACKSLASHu00FCrkiye)`]
+  def `Turkey LeftparenthesisTürkiyeRightparenthesis`: `Turkey LeftparenthesisTürkiyeRightparenthesis` = "Turkey (T\u00FCrkiye)".asInstanceOf[`Turkey LeftparenthesisTürkiyeRightparenthesis`]
   @scala.inline
   def Turkmenistan: Turkmenistan = "Turkmenistan".asInstanceOf[Turkmenistan]
   @scala.inline
@@ -4720,7 +4718,7 @@ object baseuiStrings {
   @scala.inline
   def UA: UA = "UA".asInstanceOf[UA]
   @scala.inline
-  def `UDOTSDOT Virgin Islands`: `UDOTSDOT Virgin Islands` = "U.S. Virgin Islands".asInstanceOf[`UDOTSDOT Virgin Islands`]
+  def `UDotSDot Virgin Islands`: `UDotSDot Virgin Islands` = "U.S. Virgin Islands".asInstanceOf[`UDotSDot Virgin Islands`]
   @scala.inline
   def UG: UG = "UG".asInstanceOf[UG]
   @scala.inline
@@ -4732,9 +4730,9 @@ object baseuiStrings {
   @scala.inline
   def Uganda: Uganda = "Uganda".asInstanceOf[Uganda]
   @scala.inline
-  def `Ukraine (BACKSLASHu0423BACKSLASHu043ABACKSLASHu0440BACKSLASHu0430BACKSLASHu0457BACKSLASHu043DBACKSLASHu0430)`: `Ukraine (BACKSLASHu0423BACKSLASHu043ABACKSLASHu0440BACKSLASHu0430BACKSLASHu0457BACKSLASHu043DBACKSLASHu0430)` = "Ukraine (\u0423\u043A\u0440\u0430\u0457\u043D\u0430)".asInstanceOf[`Ukraine (BACKSLASHu0423BACKSLASHu043ABACKSLASHu0440BACKSLASHu0430BACKSLASHu0457BACKSLASHu043DBACKSLASHu0430)`]
+  def `Ukraine LeftparenthesisУкраїнаRightparenthesis`: `Ukraine LeftparenthesisУкраїнаRightparenthesis` = "Ukraine (\u0423\u043A\u0440\u0430\u0457\u043D\u0430)".asInstanceOf[`Ukraine LeftparenthesisУкраїнаRightparenthesis`]
   @scala.inline
-  def `United Arab Emirates (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0625BACKSLASHu0645BACKSLASHu0627BACKSLASHu0631BACKSLASHu0627BACKSLASHu062A BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu062ABACKSLASHu062DBACKSLASHu062FBACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)`: `United Arab Emirates (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0625BACKSLASHu0645BACKSLASHu0627BACKSLASHu0631BACKSLASHu0627BACKSLASHu062A BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu062ABACKSLASHu062DBACKSLASHu062FBACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)` = "United Arab Emirates (\u202B\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062A \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0645\u062A\u062D\u062F\u0629\u202C\u200E)".asInstanceOf[`United Arab Emirates (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu0625BACKSLASHu0645BACKSLASHu0627BACKSLASHu0631BACKSLASHu0627BACKSLASHu062A BACKSLASHu0627BACKSLASHu0644BACKSLASHu0639BACKSLASHu0631BACKSLASHu0628BACKSLASHu064ABACKSLASHu0629 BACKSLASHu0627BACKSLASHu0644BACKSLASHu0645BACKSLASHu062ABACKSLASHu062DBACKSLASHu062FBACKSLASHu0629BACKSLASHu202CBACKSLASHu200E)`]
+  def `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`: `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis` = "United Arab Emirates (\u202B\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062A \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0645\u062A\u062D\u062F\u0629\u202C\u200E)".asInstanceOf[`United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`]
   @scala.inline
   def `United Kingdom`: `United Kingdom` = "United Kingdom".asInstanceOf[`United Kingdom`]
   @scala.inline
@@ -4742,7 +4740,7 @@ object baseuiStrings {
   @scala.inline
   def Uruguay: Uruguay = "Uruguay".asInstanceOf[Uruguay]
   @scala.inline
-  def `Uzbekistan (OBACKSLASHu02BBzbekiston)`: `Uzbekistan (OBACKSLASHu02BBzbekiston)` = "Uzbekistan (O\u02BBzbekiston)".asInstanceOf[`Uzbekistan (OBACKSLASHu02BBzbekiston)`]
+  def `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`: `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis` = "Uzbekistan (O\u02BBzbekiston)".asInstanceOf[`Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`]
   @scala.inline
   def VA: VA = "VA".asInstanceOf[VA]
   @scala.inline
@@ -4760,17 +4758,17 @@ object baseuiStrings {
   @scala.inline
   def Vanuatu: Vanuatu = "Vanuatu".asInstanceOf[Vanuatu]
   @scala.inline
-  def `Vatican City (CittBACKSLASHu00E0 del Vaticano)`: `Vatican City (CittBACKSLASHu00E0 del Vaticano)` = "Vatican City (Citt\u00E0 del Vaticano)".asInstanceOf[`Vatican City (CittBACKSLASHu00E0 del Vaticano)`]
+  def `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`: `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis` = "Vatican City (Citt\u00E0 del Vaticano)".asInstanceOf[`Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`]
   @scala.inline
   def Venezuela: Venezuela = "Venezuela".asInstanceOf[Venezuela]
   @scala.inline
-  def `Vietnam (ViBACKSLASHu1EC7t Nam)`: `Vietnam (ViBACKSLASHu1EC7t Nam)` = "Vietnam (Vi\u1EC7t Nam)".asInstanceOf[`Vietnam (ViBACKSLASHu1EC7t Nam)`]
+  def `Vietnam LeftparenthesisViệt NamRightparenthesis`: `Vietnam LeftparenthesisViệt NamRightparenthesis` = "Vietnam (Vi\u1EC7t Nam)".asInstanceOf[`Vietnam LeftparenthesisViệt NamRightparenthesis`]
   @scala.inline
   def WF: WF = "WF".asInstanceOf[WF]
   @scala.inline
   def WS: WS = "WS".asInstanceOf[WS]
   @scala.inline
-  def `Wallis and Futuna (Wallis-et-Futuna)`: `Wallis and Futuna (Wallis-et-Futuna)` = "Wallis and Futuna (Wallis-et-Futuna)".asInstanceOf[`Wallis and Futuna (Wallis-et-Futuna)`]
+  def `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`: `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis` = "Wallis and Futuna (Wallis-et-Futuna)".asInstanceOf[`Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`]
   @scala.inline
   def XK: XK = "XK".asInstanceOf[XK]
   @scala.inline
@@ -4782,7 +4780,7 @@ object baseuiStrings {
   @scala.inline
   def `YYYY-MM-DD`: `YYYY-MM-DD` = "YYYY-MM-DD".asInstanceOf[`YYYY-MM-DD`]
   @scala.inline
-  def `Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`: `Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)` = "Yemen (\u202B\u0627\u0644\u064A\u0645\u0646\u202C\u200E)".asInstanceOf[`Yemen (BACKSLASHu202BBACKSLASHu0627BACKSLASHu0644BACKSLASHu064ABACKSLASHu0645BACKSLASHu0646BACKSLASHu202CBACKSLASHu200E)`]
+  def `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`: `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` = "Yemen (\u202B\u0627\u0644\u064A\u0645\u0646\u202C\u200E)".asInstanceOf[`Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`]
   @scala.inline
   def ZA: ZA = "ZA".asInstanceOf[ZA]
   @scala.inline
@@ -5435,5 +5433,7 @@ object baseuiStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
   def webview: webview = "webview".asInstanceOf[webview]
+  @scala.inline
+  def `Åland Islands`: `Åland Islands` = "\u00C5land Islands".asInstanceOf[`Åland Islands`]
 }
 

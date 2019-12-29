@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMax
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMid
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMin
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMax
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMid
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMin
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMax
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMid
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

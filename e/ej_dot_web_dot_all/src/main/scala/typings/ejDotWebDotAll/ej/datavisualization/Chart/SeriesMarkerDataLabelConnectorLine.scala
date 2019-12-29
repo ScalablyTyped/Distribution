@@ -16,7 +16,7 @@ trait SeriesMarkerDataLabelConnectorLine extends js.Object {
   /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
     * @Default {line. See ConnectorLineType}
     */
-  var `type`: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Chart.Type | String] = js.undefined
+  var `type`: js.UndefOr[Type | String] = js.undefined
   /** Width of the connector.
     * @Default {0.5}
     */
@@ -28,7 +28,7 @@ object SeriesMarkerDataLabelConnectorLine {
   def apply(
     color: String = null,
     height: Int | Double = null,
-    `type`: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type | String = null,
+    `type`: Type | String = null,
     width: Int | Double = null
   ): SeriesMarkerDataLabelConnectorLine = {
     val __obj = js.Dynamic.literal()

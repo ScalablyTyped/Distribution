@@ -1,6 +1,6 @@
 package typings.activexDashExcel.Excel
 
-import typings.activexDashExcel.activexDashExcelNumbers.`false`
+import typings.activexDashExcel.activexDashExcelBooleans.`false`
 import typings.activexDashOffice.Office.MsoAutoShapeType
 import typings.activexDashOffice.Office.MsoCalloutType
 import typings.activexDashOffice.Office.MsoConnectorType

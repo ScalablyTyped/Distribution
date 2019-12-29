@@ -17,6 +17,7 @@ class Line protected () extends js.Object {
   val Rectangles: typings.activexDashWord.Word.Rectangles = js.native
   val Top: Double = js.native
   val Width: Double = js.native
-  var `Word.Line_typekey`: Line = js.native
+  @JSName("Word.Line_typekey")
+  var WordDotLine_typekey: Line = js.native
 }
 

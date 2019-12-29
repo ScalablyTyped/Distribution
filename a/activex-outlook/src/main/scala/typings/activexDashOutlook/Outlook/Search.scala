@@ -11,7 +11,8 @@ class Search protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Filter: String = js.native
   val IsSynchronous: Boolean = js.native
-  var `Outlook.Search_typekey`: Search = js.native
+  @JSName("Outlook.Search_typekey")
+  var OutlookDotSearch_typekey: Search = js.native
   val Parent: js.Any = js.native
   val Results: typings.activexDashOutlook.Outlook.Results = js.native
   val Scope: String = js.native

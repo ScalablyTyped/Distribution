@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.WebGeocoordinates")
 @js.native
 class WebGeocoordinates protected () extends js.Object {
-  var `MSHTML.WebGeocoordinates_typekey`: WebGeocoordinates = js.native
+  @JSName("MSHTML.WebGeocoordinates_typekey")
+  var MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates = js.native
   val accuracy: Double = js.native
   val altitude: js.Any = js.native
   val altitudeAccuracy: js.Any = js.native

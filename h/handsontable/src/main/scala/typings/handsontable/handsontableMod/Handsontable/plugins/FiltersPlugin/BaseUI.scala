@@ -1,5 +1,6 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins.FiltersPlugin
 
+import typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
 import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.std.Element
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait BaseUI extends js.Object {
   var buildState: Boolean
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var hot: Core
   var options: js.Object
   def build(): Unit
@@ -31,7 +32,7 @@ object BaseUI {
     buildState: Boolean,
     destroy: () => Unit,
     element: () => Element,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     focus: () => Unit,
     getValue: () => js.Any,
     hide: () => Unit,

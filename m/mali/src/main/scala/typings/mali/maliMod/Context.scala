@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Context extends js.Object {
+  @JSName("package")
+  var _package: String = js.native
   var app: Mali = js.native
   var call: GrpcCall = js.native
   var fullName: String = js.native
   var metadata: js.Any = js.native
   var name: String = js.native
-  var `package`: String = js.native
   var req: GrpcRequest = js.native
   var request: Request = js.native
   var res: GrpcResponse = js.native

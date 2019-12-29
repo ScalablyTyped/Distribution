@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Menu extends js.Object {
   var container: HTMLElement = js.native
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager = js.native
+  var eventManager: EventManager = js.native
   var hot: Core = js.native
   var hotMenu: Core = js.native
   var hotSubMenus: js.Object = js.native

@@ -1,45 +1,19 @@
 package typings.xmldsigjs.xmldsigjsMod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.xmldsigjs.xmldsigjsMod.X509IncludeOption.EndCertOnly
-import typings.xmldsigjs.xmldsigjsMod.X509IncludeOption.ExcludeRoot
-import typings.xmldsigjs.xmldsigjsMod.X509IncludeOption.None
-import typings.xmldsigjs.xmldsigjsMod.X509IncludeOption.WholeChain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait X509IncludeOption extends js.Object
-
 @JSImport("xmldsigjs", "X509IncludeOption")
 @js.native
 object X509IncludeOption extends js.Object {
-  @js.native
-  sealed trait EndCertOnly extends X509IncludeOption
-  
-  @js.native
-  sealed trait ExcludeRoot extends X509IncludeOption
-  
-  @js.native
-  sealed trait None extends X509IncludeOption
-  
-  @js.native
-  sealed trait WholeChain extends X509IncludeOption
-  
+  /* 1 */ val EndCertOnly: typings.xmldsigjs.buildTypesXmlKeyUnderscoreInfosX509UnderscoreDataMod.X509IncludeOption.EndCertOnly with Double = js.native
+  /* 2 */ val ExcludeRoot: typings.xmldsigjs.buildTypesXmlKeyUnderscoreInfosX509UnderscoreDataMod.X509IncludeOption.ExcludeRoot with Double = js.native
+  /* 0 */ val None: typings.xmldsigjs.buildTypesXmlKeyUnderscoreInfosX509UnderscoreDataMod.X509IncludeOption.None with Double = js.native
+  /* 3 */ val WholeChain: typings.xmldsigjs.buildTypesXmlKeyUnderscoreInfosX509UnderscoreDataMod.X509IncludeOption.WholeChain with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[X509IncludeOption with Double] = js.native
-  /* 1 */ @js.native
-  object EndCertOnly extends TopLevel[EndCertOnly with Double]
-  
-  /* 2 */ @js.native
-  object ExcludeRoot extends TopLevel[ExcludeRoot with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 3 */ @js.native
-  object WholeChain extends TopLevel[WholeChain with Double]
-  
+  def apply(value: Double): js.UndefOr[
+    typings.xmldsigjs.buildTypesXmlKeyUnderscoreInfosX509UnderscoreDataMod.X509IncludeOption with Double
+  ] = js.native
 }
 

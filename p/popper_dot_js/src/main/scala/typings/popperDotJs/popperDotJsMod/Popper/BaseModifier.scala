@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait BaseModifier extends js.Object {
   var enabled: js.UndefOr[Boolean] = js.undefined
-  var fn: js.UndefOr[typings.popperDotJs.popperDotJsMod.Popper.ModifierFn] = js.undefined
+  var fn: js.UndefOr[ModifierFn] = js.undefined
   var order: js.UndefOr[Double] = js.undefined
 }
 
@@ -14,7 +14,7 @@ object BaseModifier {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
-    fn: (/* data */ typings.popperDotJs.popperDotJsMod.Popper.Data, /* options */ js.Object) => typings.popperDotJs.popperDotJsMod.Popper.Data = null,
+    fn: (/* data */ Data, /* options */ js.Object) => Data = null,
     order: Int | Double = null
   ): BaseModifier = {
     val __obj = js.Dynamic.literal()

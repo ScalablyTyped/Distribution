@@ -1,9 +1,9 @@
 package typings.streamDashBuffers.streamDashBuffersMod
 
 import typings.node.Anon_Chunk
-import typings.node.Error
 import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

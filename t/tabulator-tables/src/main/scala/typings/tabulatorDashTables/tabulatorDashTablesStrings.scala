@@ -20,25 +20,25 @@ import scala.scalajs.js.annotation._
 
 object tabulatorDashTablesStrings {
   @js.native
-  sealed trait `!=` extends FilterType
+  sealed trait Equalssign extends FilterType
   
   @js.native
-  sealed trait `<` extends FilterType
-  
-  @js.native
-  sealed trait `<=` extends FilterType
-  
-  @js.native
-  sealed trait `=` extends FilterType
-  
-  @js.native
-  sealed trait `>` extends FilterType
-  
-  @js.native
-  sealed trait `>=` extends FilterType
+  sealed trait ExclamationmarkEqualssign extends FilterType
   
   @js.native
   sealed trait GET extends HttpMethod
+  
+  @js.native
+  sealed trait Greaterthansign extends FilterType
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends FilterType
+  
+  @js.native
+  sealed trait Lessthansign extends FilterType
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends FilterType
   
   @js.native
   sealed trait POST extends HttpMethod
@@ -335,6 +335,9 @@ object tabulatorDashTablesStrings {
   sealed trait required extends StandardValidatorType
   
   @js.native
+  sealed trait responsiveCollapse extends _Formatter
+  
+  @js.native
   sealed trait right
     extends Align
        with ColumnDefinitionAlign
@@ -425,19 +428,19 @@ object tabulatorDashTablesStrings {
   sealed trait years extends js.Object
   
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
@@ -628,6 +631,8 @@ object tabulatorDashTablesStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def required: required = "required".asInstanceOf[required]
+  @scala.inline
+  def responsiveCollapse: responsiveCollapse = "responsiveCollapse".asInstanceOf[responsiveCollapse]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline

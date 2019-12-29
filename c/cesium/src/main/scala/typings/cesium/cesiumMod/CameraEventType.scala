@@ -1,11 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.CameraEventType.LEFT_DRAG
-import typings.cesium.cesiumMod.CameraEventType.MIDDLE_DRAG
-import typings.cesium.cesiumMod.CameraEventType.PINCH
-import typings.cesium.cesiumMod.CameraEventType.RIGHT_DRAG
-import typings.cesium.cesiumMod.CameraEventType.WHEEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

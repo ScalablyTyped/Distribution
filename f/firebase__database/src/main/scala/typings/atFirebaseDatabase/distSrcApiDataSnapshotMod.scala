@@ -1,6 +1,5 @@
 package typings.atFirebaseDatabase
 
-import typings.atFirebaseDatabase.distSrcApiDataSnapshotMod.DataSnapshot
 import typings.atFirebaseDatabase.distSrcApiReferenceMod.Reference
 import typings.atFirebaseDatabase.distSrcCoreSnapIndexesIndexMod.Index
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.Node
@@ -20,9 +19,7 @@ object distSrcApiDataSnapshotMod extends js.Object {
       */
     def this(node_ : Node, ref_ : Reference, index_ : Index) = this()
     val index_ : js.Any = js.native
-    val key: String = js.native
     val node_ : js.Any = js.native
-    val ref: Reference = js.native
     val ref_ : js.Any = js.native
     /**
       * Returns a DataSnapshot of the specified child node's contents.
@@ -74,11 +71,13 @@ object distSrcApiDataSnapshotMod extends js.Object {
       * @return {boolean} True if the DataSnapshot contains 1 or more child nodes.
       */
     def hasChildren(): Boolean = js.native
+    def key(): String = js.native
     /**
       * Returns the number of children for this DataSnapshot.
       * @return {number} The number of children that this DataSnapshot contains.
       */
     def numChildren(): Double = js.native
+    def ref(): Reference = js.native
     def toJSON(): js.Any = js.native
     /**
       * Retrieves the snapshot contents as JSON.  Returns null if the snapshot is

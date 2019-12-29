@@ -12,6 +12,7 @@ class OMathBar protected () extends js.Object {
   val Creator: Double = js.native
   val E: OMath = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathBar_typekey`: OMathBar = js.native
+  @JSName("Word.OMathBar_typekey")
+  var WordDotOMathBar_typekey: OMathBar = js.native
 }
 

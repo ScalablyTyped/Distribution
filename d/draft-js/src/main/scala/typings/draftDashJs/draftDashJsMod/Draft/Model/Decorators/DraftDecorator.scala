@@ -1,5 +1,7 @@
 package typings.draftDashJs.draftDashJsMod.Draft.Model.Decorators
 
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock
+import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +25,9 @@ trait DraftDecorator extends js.Object {
   var component: js.Function
   var props: js.UndefOr[js.Object] = js.undefined
   def strategy(
-    block: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock,
+    block: ContentBlock,
     callback: js.Function2[/* start */ Double, /* end */ Double, Unit],
-    contentState: typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState
+    contentState: ContentState
   ): Unit
 }
 
@@ -33,7 +35,7 @@ object DraftDecorator {
   @scala.inline
   def apply(
     component: js.Function,
-    strategy: (typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState) => Unit,
+    strategy: (ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], ContentState) => Unit,
     props: js.Object = null
   ): DraftDecorator = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], strategy = js.Any.fromFunction3(strategy))

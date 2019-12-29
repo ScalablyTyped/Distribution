@@ -18,6 +18,7 @@ class PanelBase protected ()
      with IPanel {
   def this(props: IPanelProps) = this()
   var _allowScrollOnPanel: js.Any = js.native
+  var _allowTouchBodyScroll: js.Any = js.native
   var _animateTo: js.Any = js.native
   var _animationCallback: js.Any = js.native
   var _classNames: js.Any = js.native

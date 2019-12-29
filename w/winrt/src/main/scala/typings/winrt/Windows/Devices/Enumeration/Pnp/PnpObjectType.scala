@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Devices.Enumeration.Pnp
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.device
-import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceContainer
-import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterface
-import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterfaceClass
-import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

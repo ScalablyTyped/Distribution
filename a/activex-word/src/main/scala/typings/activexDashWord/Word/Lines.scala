@@ -11,7 +11,8 @@ class Lines protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Lines_typekey`: Lines = js.native
+  @JSName("Word.Lines_typekey")
+  var WordDotLines_typekey: Lines = js.native
   def Item(Index: Double): Line = js.native
 }
 

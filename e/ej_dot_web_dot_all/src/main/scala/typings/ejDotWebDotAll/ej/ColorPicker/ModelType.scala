@@ -1,7 +1,6 @@
 package typings.ejDotWebDotAll.ej.ColorPicker
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ColorPicker.ModelType.Picker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

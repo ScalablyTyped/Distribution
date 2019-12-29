@@ -1,7 +1,6 @@
 package typings.reactDashPose
 
 import typings.react.reactMod.Component
-import typings.reactDashPose.libComponentsTransitionMod.Transition
 import typings.reactDashPose.libComponentsTransitionTypesMod.Props
 import typings.reactDashPose.libComponentsTransitionTypesMod.State
 import typings.std.Partial

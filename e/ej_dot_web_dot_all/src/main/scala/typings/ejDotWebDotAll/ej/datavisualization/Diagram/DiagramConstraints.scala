@@ -1,21 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.APIUpdate
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Bridging
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.CrispEdges
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Default
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.FloatElements
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PageEditable
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Pannable
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PannableX
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PannableY
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Routing
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Undoable
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.UserInteraction
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.ZoomTextEditor
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Zoomable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -123,10 +108,7 @@ object DiagramConstraints extends js.Object {
   object PannableY extends TopLevel[PannableY with Double]
   
   /* 11 */ @js.native
-  object Resizable
-    extends TopLevel[
-          typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Resizable with Double
-        ]
+  object Resizable extends TopLevel[Resizable with Double]
   
   /* 14 */ @js.native
   object Routing extends TopLevel[Routing with Double]

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.above
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.below
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

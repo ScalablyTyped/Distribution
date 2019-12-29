@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/animations/browser/browser", "ɵangular_packages_animations_browser_browser_a")
+@JSImport("@angular/animations/browser/browser", "\u0275angular_packages_animations_browser_browser_a")
 @js.native
 class ɵangular_packages_animations_browser_browser_a protected () extends js.Object {
   def this(_element: js.Any) = this()
@@ -24,7 +24,7 @@ class ɵangular_packages_animations_browser_browser_a protected () extends js.Ob
 }
 
 /* static members */
-@JSImport("@angular/animations/browser/browser", "ɵangular_packages_animations_browser_browser_a")
+@JSImport("@angular/animations/browser/browser", "\u0275angular_packages_animations_browser_browser_a")
 @js.native
 object ɵangular_packages_animations_browser_browser_a extends js.Object {
   var initialStylesByElement: WeakMap[_, StringDictionary[_]] = js.native

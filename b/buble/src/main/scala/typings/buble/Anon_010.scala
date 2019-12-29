@@ -1,10 +1,10 @@
 package typings.buble
 
-import typings.buble.bubleNumbers.`0DOT10`
-import typings.buble.bubleNumbers.`0DOT12`
-import typings.buble.bubleNumbers.`10DOT1`
+import typings.buble.bubleNumbers.`0.10`
+import typings.buble.bubleNumbers.`0.12`
+import typings.buble.bubleNumbers.`10.1`
 import typings.buble.bubleNumbers.`10`
-import typings.buble.bubleNumbers.`11DOT1`
+import typings.buble.bubleNumbers.`11.1`
 import typings.buble.bubleNumbers.`11`
 import typings.buble.bubleNumbers.`12`
 import typings.buble.bubleNumbers.`13`
@@ -46,9 +46,9 @@ import typings.buble.bubleNumbers.`69`
 import typings.buble.bubleNumbers.`6`
 import typings.buble.bubleNumbers.`70`
 import typings.buble.bubleNumbers.`71`
-import typings.buble.bubleNumbers.`8DOT10`
-import typings.buble.bubleNumbers.`8DOT3`
-import typings.buble.bubleNumbers.`8DOT7`
+import typings.buble.bubleNumbers.`8.10`
+import typings.buble.bubleNumbers.`8.3`
+import typings.buble.bubleNumbers.`8.7`
 import typings.buble.bubleNumbers.`8`
 import typings.buble.bubleNumbers.`9`
 import scala.scalajs.js
@@ -64,8 +64,8 @@ trait Anon_010 extends js.Object {
     `43` | `44` | `45` | `46` | `47` | `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64`
   ] = js.undefined
   var ie: js.UndefOr[`8` | `9` | `10` | `11`] = js.undefined
-  var node: js.UndefOr[`0DOT10` | `0DOT12` | `4` | `5` | `6` | `8` | `8DOT3` | `8DOT7` | `8DOT10`] = js.undefined
-  var safari: js.UndefOr[`8` | `9` | `10` | `10DOT1` | `11` | `11DOT1` | `12`] = js.undefined
+  var node: js.UndefOr[`0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10`] = js.undefined
+  var safari: js.UndefOr[`8` | `9` | `10` | `10.1` | `11` | `11.1` | `12`] = js.undefined
 }
 
 object Anon_010 {
@@ -75,8 +75,8 @@ object Anon_010 {
     edge: `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` = null,
     firefox: `43` | `44` | `45` | `46` | `47` | `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64` = null,
     ie: `8` | `9` | `10` | `11` = null,
-    node: `0DOT10` | `0DOT12` | `4` | `5` | `6` | `8` | `8DOT3` | `8DOT7` | `8DOT10` = null,
-    safari: `8` | `9` | `10` | `10DOT1` | `11` | `11DOT1` | `12` = null
+    node: `0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10` = null,
+    safari: `8` | `9` | `10` | `10.1` | `11` | `11.1` | `12` = null
   ): Anon_010 = {
     val __obj = js.Dynamic.literal()
     if (chrome != null) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])

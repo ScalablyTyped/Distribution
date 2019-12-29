@@ -1,6 +1,5 @@
 package typings.atFirebaseFirestore
 
-import typings.atFirebaseFirestore.distSrcAuthUserMod.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

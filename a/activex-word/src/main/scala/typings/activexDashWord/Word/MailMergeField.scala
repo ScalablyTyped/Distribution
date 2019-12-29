@@ -15,7 +15,8 @@ class MailMergeField protected () extends js.Object {
   val Parent: js.Any = js.native
   val Previous: MailMergeField = js.native
   val Type: WdFieldType = js.native
-  var `Word.MailMergeField_typekey`: MailMergeField = js.native
+  @JSName("Word.MailMergeField_typekey")
+  var WordDotMailMergeField_typekey: MailMergeField = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native
   def Delete(): Unit = js.native

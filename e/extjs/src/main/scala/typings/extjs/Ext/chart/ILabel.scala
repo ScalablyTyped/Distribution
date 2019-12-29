@@ -24,7 +24,7 @@ trait ILabel extends IBase {
       /* storeItem */ js.UndefOr[IModel], 
       /* item */ js.UndefOr[js.Any], 
       /* i */ js.UndefOr[Double], 
-      /* display */ js.UndefOr[java.lang.String], 
+      /* display */ js.UndefOr[String], 
       ISprite
     ]
   ] = js.undefined
@@ -43,7 +43,7 @@ trait ILabel extends IBase {
       /* storeItem */ js.UndefOr[IModel], 
       /* item */ js.UndefOr[js.Any], 
       /* i */ js.UndefOr[Double], 
-      /* display */ js.UndefOr[java.lang.String], 
+      /* display */ js.UndefOr[String], 
       /* animate */ js.UndefOr[Boolean], 
       /* index */ js.UndefOr[Double], 
       Unit
@@ -60,14 +60,14 @@ object ILabel {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ILabel = null,
     label: js.Any = null,
     mixins: js.Any = null,
-    onCreateLabel: (/* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[java.lang.String]) => ISprite = null,
-    onPlaceLabel: (/* label */ js.UndefOr[ISprite], /* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[java.lang.String], /* animate */ js.UndefOr[Boolean], /* index */ js.UndefOr[Double]) => Unit = null,
+    onCreateLabel: (/* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String]) => ISprite = null,
+    onPlaceLabel: (/* label */ js.UndefOr[ISprite], /* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String], /* animate */ js.UndefOr[Boolean], /* index */ js.UndefOr[Double]) => Unit = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintProbability.default
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintProbability.max
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintProbability.min
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

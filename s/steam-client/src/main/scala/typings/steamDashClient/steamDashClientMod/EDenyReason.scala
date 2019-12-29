@@ -1,21 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EDenyReason.Cheater
-import typings.steamDashClient.steamDashClientMod.EDenyReason.Generic
-import typings.steamDashClient.steamDashClientMod.EDenyReason.IncompatibleAnticheat
-import typings.steamDashClient.steamDashClientMod.EDenyReason.IncompatibleSoftware
-import typings.steamDashClient.steamDashClientMod.EDenyReason.InvalidVersion
-import typings.steamDashClient.steamDashClientMod.EDenyReason.LoggedInElseWhere
-import typings.steamDashClient.steamDashClientMod.EDenyReason.MemoryCorruption
-import typings.steamDashClient.steamDashClientMod.EDenyReason.NoLicense
-import typings.steamDashClient.steamDashClientMod.EDenyReason.NotLoggedOn
-import typings.steamDashClient.steamDashClientMod.EDenyReason.SteamConnectionError
-import typings.steamDashClient.steamDashClientMod.EDenyReason.SteamConnectionLost
-import typings.steamDashClient.steamDashClientMod.EDenyReason.SteamOwnerLeftGuestUser
-import typings.steamDashClient.steamDashClientMod.EDenyReason.SteamResponseTimedOut
-import typings.steamDashClient.steamDashClientMod.EDenyReason.SteamValidationStalled
-import typings.steamDashClient.steamDashClientMod.EDenyReason.UnknownText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.atFirebaseDatabase
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.Node
-import typings.atFirebaseDatabase.distSrcCoreSyncTreeMod.ListenProvider
 import typings.atFirebaseDatabase.distSrcCoreUtilPathMod.Path
 import typings.atFirebaseDatabase.distSrcCoreViewEventMod.Event
 import typings.atFirebaseDatabase.distSrcCoreViewEventRegistrationMod.EventRegistration
@@ -162,16 +161,18 @@ object distSrcCoreSyncTreeMod extends js.Object {
     def applyUserOverwrite(path: Path, newData: Node, writeId: Double): js.Array[Event] = js.native
     def applyUserOverwrite(path: Path, newData: Node, writeId: Double, visible: Boolean): js.Array[Event] = js.native
     /**
-      * Returns a complete cache, if we have one, of the data at a particular path. The location must have a listener above
-      * it, but as this is only used by transaction code, that should always be the case anyways.
+      * Returns a complete cache, if we have one, of the data at a particular path. If the location does not have a
+      * listener above it, we will get a false "null". This shouldn't be a problem because transactions will always
+      * have a listener above, and atomic operations would correctly show a jitter of <increment value> ->
+      *     <incremented total> as the write is applied locally and then acknowledged at the server.
       *
       * Note: this method will *include* hidden writes from transaction with applyLocally set to false.
       *
       * @param path The path to the data we want
       * @param writeIdsToExclude A specific set to be excluded
       */
-    def calcCompleteEventCache(path: Path): Node | Null = js.native
-    def calcCompleteEventCache(path: Path, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
+    def calcCompleteEventCache(path: Path): Node = js.native
+    def calcCompleteEventCache(path: Path, writeIdsToExclude: js.Array[Double]): Node = js.native
     def removeEventRegistration(query: Query): js.Array[Event] = js.native
     def removeEventRegistration(query: Query, eventRegistration: Null, cancelError: Error): js.Array[Event] = js.native
     /**

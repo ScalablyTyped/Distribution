@@ -5,11 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // compatibility with older typings
-trait Timer extends js.Object {
+trait Timer extends RefCounted {
   def hasRef(): Boolean
-  def ref(): this.type
   def refresh(): this.type
-  def unref(): this.type
 }
 
 object Timer {

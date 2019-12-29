@@ -1,10 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.TableCellVerticalAlignment.Both
-import typings.devexpressDashWeb.TableCellVerticalAlignment.Bottom
-import typings.devexpressDashWeb.TableCellVerticalAlignment.Center
-import typings.devexpressDashWeb.TableCellVerticalAlignment.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

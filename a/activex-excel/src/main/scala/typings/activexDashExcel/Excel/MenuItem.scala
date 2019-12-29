@@ -12,7 +12,8 @@ class MenuItem protected () extends js.Object {
   var Checked: Boolean = js.native
   val Creator: XlCreator = js.native
   var Enabled: Boolean = js.native
-  var `Excel.MenuItem_typekey`: MenuItem = js.native
+  @JSName("Excel.MenuItem_typekey")
+  var ExcelDotMenuItem_typekey: MenuItem = js.native
   var HelpContextID: Double = js.native
   var HelpFile: String = js.native
   val Index: Double = js.native

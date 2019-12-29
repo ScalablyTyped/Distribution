@@ -4,16 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Next extends js.Object {
-  def next(): Anon_Done
-}
-
-object Anon_Next {
-  @scala.inline
-  def apply(next: () => Anon_Done): Anon_Next = {
-    val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
-  
-    __obj.asInstanceOf[Anon_Next]
-  }
+  @JSName(scala.scalajs.js.Symbol.iterator)
+  var iterator: js.Function0[_] = js.native
+  def next(): Anon_Done = js.native
 }
 

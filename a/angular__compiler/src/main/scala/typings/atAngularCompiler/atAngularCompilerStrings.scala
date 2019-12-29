@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 object atAngularCompilerStrings {
   @js.native
+  sealed trait $implicit extends js.Object
+  
+  @js.native
   sealed trait `@__BUILD_OPTIMIZER_COLOCATE__` extends js.Object
   
   @js.native
   sealed trait `@__BUILD_OPTIMIZER_REMOVE__` extends js.Object
   
   @js.native
-  sealed trait BACKSLASHuE500 extends js.Object
-  
-  @js.native
-  sealed trait BACKSLASHuFFFD extends js.Object
-  
-  @js.native
-  sealed trait DOLLARimplicit extends js.Object
-  
-  @js.native
-  sealed trait DOLLARquotedDOLLAR extends js.Object
+  sealed trait DollarquotedDollar extends js.Object
   
   @js.native
   sealed trait I18N_ extends js.Object
   
   @js.native
   sealed trait I18N_EXP_ extends js.Object
+  
+  @js.native
+  sealed trait Privateuseareae500 extends js.Object
+  
+  @js.native
+  sealed trait Replacementcharacter extends js.Object
   
   @js.native
   sealed trait VAR_ extends js.Object
@@ -82,21 +82,21 @@ object atAngularCompilerStrings {
   sealed trait tsc extends js.Object
   
   @scala.inline
+  def $implicit: $implicit = "$implicit".asInstanceOf[$implicit]
+  @scala.inline
   def `@__BUILD_OPTIMIZER_COLOCATE__`: `@__BUILD_OPTIMIZER_COLOCATE__` = "@__BUILD_OPTIMIZER_COLOCATE__".asInstanceOf[`@__BUILD_OPTIMIZER_COLOCATE__`]
   @scala.inline
   def `@__BUILD_OPTIMIZER_REMOVE__`: `@__BUILD_OPTIMIZER_REMOVE__` = "@__BUILD_OPTIMIZER_REMOVE__".asInstanceOf[`@__BUILD_OPTIMIZER_REMOVE__`]
   @scala.inline
-  def BACKSLASHuE500: BACKSLASHuE500 = "\uE500".asInstanceOf[BACKSLASHuE500]
-  @scala.inline
-  def BACKSLASHuFFFD: BACKSLASHuFFFD = "\uFFFD".asInstanceOf[BACKSLASHuFFFD]
-  @scala.inline
-  def DOLLARimplicit: DOLLARimplicit = "$implicit".asInstanceOf[DOLLARimplicit]
-  @scala.inline
-  def DOLLARquotedDOLLAR: DOLLARquotedDOLLAR = "$quoted$".asInstanceOf[DOLLARquotedDOLLAR]
+  def DollarquotedDollar: DollarquotedDollar = "$quoted$".asInstanceOf[DollarquotedDollar]
   @scala.inline
   def I18N_ : I18N_ = "I18N_".asInstanceOf[I18N_]
   @scala.inline
   def I18N_EXP_ : I18N_EXP_ = "I18N_EXP_".asInstanceOf[I18N_EXP_]
+  @scala.inline
+  def Privateuseareae500: Privateuseareae500 = "\uE500".asInstanceOf[Privateuseareae500]
+  @scala.inline
+  def Replacementcharacter: Replacementcharacter = "\uFFFD".asInstanceOf[Replacementcharacter]
   @scala.inline
   def VAR_ : VAR_ = "VAR_".asInstanceOf[VAR_]
   @scala.inline

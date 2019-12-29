@@ -1,10 +1,10 @@
 package typings.astDashTypes.genNamedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
-import typings.astDashTypes.astDashTypesStrings.`!`
-import typings.astDashTypes.astDashTypesStrings.`+`
-import typings.astDashTypes.astDashTypesStrings.`-`
-import typings.astDashTypes.astDashTypesStrings.`~`
+import typings.astDashTypes.astDashTypesStrings.Exclamationmark
+import typings.astDashTypes.astDashTypesStrings.Plussign
+import typings.astDashTypes.astDashTypesStrings.Tilde
+import typings.astDashTypes.astDashTypesStrings.`-_`
 import typings.astDashTypes.astDashTypesStrings.delete
 import typings.astDashTypes.astDashTypesStrings.typeof
 import typings.astDashTypes.astDashTypesStrings.void
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
      with NodeKind
      with PrintableKind {
   var argument: ExpressionKind
-  var operator: `-` | `+` | `!` | `~` | typeof | void | delete
+  var operator: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete
   var prefix: js.UndefOr[Boolean] = js.undefined
   var `type`: typings.astDashTypes.astDashTypesStrings.UnaryExpression
 }

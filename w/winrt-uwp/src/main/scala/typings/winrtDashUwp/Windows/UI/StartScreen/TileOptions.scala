@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileOptions.copyOnDeployment
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileOptions.none
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileOptions.showNameOnLogo
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileOptions.showNameOnWideLogo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.unlDashCore.unlDashCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.unlDashCore.unlDashCoreMod.Direction.East
-import typings.unlDashCore.unlDashCoreMod.Direction.North
-import typings.unlDashCore.unlDashCoreMod.Direction.South
-import typings.unlDashCore.unlDashCoreMod.Direction.West
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.TfvcVersionType.Changeset
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.TfvcVersionType.Date
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.TfvcVersionType.Latest
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.TfvcVersionType.MergeSource
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.TfvcVersionType.None
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.TfvcVersionType.Shelveset
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.TfvcVersionType.Tip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

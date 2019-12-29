@@ -1,6 +1,6 @@
 package typings.antdDashMobileDashRn.libListPropsTypeMod
 
-import typings.antdDashMobileDashRn.antdDashMobileDashRnNumbers.`false`
+import typings.antdDashMobileDashRn.antdDashMobileDashRnBooleans.`false`
 import typings.react.reactMod.ReactType
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js

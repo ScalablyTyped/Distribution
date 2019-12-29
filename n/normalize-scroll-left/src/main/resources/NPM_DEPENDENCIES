@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "normalize-scroll-left" : "0.1.2"
+      "normalize-scroll-left" : "0.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "normalize-scroll-left" : "0.1.2"
+      "normalize-scroll-left" : "0.2.0"
     }
   ],
   "compile-devDependencies" : [

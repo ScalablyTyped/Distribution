@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "webcola"
-version := "3.4.0-8ab4c6"
+version := "3.4.0-d90bc3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20190212Z-cf8c57",
-  "org.scalablytyped" %%% "d3-drag" % "1.2-dt-20190212Z-ae34aa",
-  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-db38c1",
-  "org.scalablytyped" %%% "d3-timer" % "1.0-dt-20190212Z-dbab0e",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20190212Z-d41aa3",
+  "org.scalablytyped" %%% "d3-drag" % "1.2-dt-20190212Z-32e698",
+  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-f5a2c1",
+  "org.scalablytyped" %%% "d3-timer" % "1.0-dt-20190212Z-b4618c",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

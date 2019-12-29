@@ -1,6 +1,5 @@
 package typings.trashable
 
-import typings.trashable.trashableMod.TrashablePromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

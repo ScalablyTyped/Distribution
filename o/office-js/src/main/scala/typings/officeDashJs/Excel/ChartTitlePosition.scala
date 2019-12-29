@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartTitlePosition.automatic
-import typings.officeDashJs.Excel.ChartTitlePosition.bottom
-import typings.officeDashJs.Excel.ChartTitlePosition.left
-import typings.officeDashJs.Excel.ChartTitlePosition.right
-import typings.officeDashJs.Excel.ChartTitlePosition.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.SlicerSortType.ascending
-import typings.officeDashJs.Excel.SlicerSortType.dataSourceOrder
-import typings.officeDashJs.Excel.SlicerSortType.descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

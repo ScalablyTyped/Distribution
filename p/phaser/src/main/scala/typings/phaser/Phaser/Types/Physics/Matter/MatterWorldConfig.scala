@@ -105,47 +105,58 @@ trait MatterWorldConfig extends js.Object {
   /**
     * Should the bottom world bounds wall be created?
     */
-  var `setBounds.bottom`: js.UndefOr[Boolean] = js.undefined
+  @JSName("setBounds.bottom")
+  var setBoundsDotbottom: js.UndefOr[Boolean] = js.undefined
   /**
     * The height of the world bounds.
     */
-  var `setBounds.height`: js.UndefOr[Double] = js.undefined
+  @JSName("setBounds.height")
+  var setBoundsDotheight: js.UndefOr[Double] = js.undefined
   /**
     * Should the left-side world bounds wall be created?
     */
-  var `setBounds.left`: js.UndefOr[Boolean] = js.undefined
+  @JSName("setBounds.left")
+  var setBoundsDotleft: js.UndefOr[Boolean] = js.undefined
   /**
     * Should the right-side world bounds wall be created?
     */
-  var `setBounds.right`: js.UndefOr[Boolean] = js.undefined
+  @JSName("setBounds.right")
+  var setBoundsDotright: js.UndefOr[Boolean] = js.undefined
   /**
     * The thickness of the walls of the world bounds.
     */
-  var `setBounds.thickness`: js.UndefOr[Double] = js.undefined
+  @JSName("setBounds.thickness")
+  var setBoundsDotthickness: js.UndefOr[Double] = js.undefined
   /**
     * Should the top world bounds wall be created?
     */
-  var `setBounds.top`: js.UndefOr[Boolean] = js.undefined
+  @JSName("setBounds.top")
+  var setBoundsDottop: js.UndefOr[Boolean] = js.undefined
   /**
     * The width of the world bounds.
     */
-  var `setBounds.width`: js.UndefOr[Double] = js.undefined
+  @JSName("setBounds.width")
+  var setBoundsDotwidth: js.UndefOr[Double] = js.undefined
   /**
     * The x coordinate of the world bounds.
     */
-  var `setBounds.x`: js.UndefOr[Double] = js.undefined
+  @JSName("setBounds.x")
+  var setBoundsDotx: js.UndefOr[Double] = js.undefined
   /**
     * The y coordinate of the world bounds.
     */
-  var `setBounds.y`: js.UndefOr[Double] = js.undefined
+  @JSName("setBounds.y")
+  var setBoundsDoty: js.UndefOr[Double] = js.undefined
   /**
     * A `Number` that specifies the global scaling factor of time for all bodies. A value of `0` freezes the simulation. A value of `0.1` gives a slow-motion effect. A value of `1.2` gives a speed-up effect.
     */
-  var `timing.timeScale`: js.UndefOr[Double] = js.undefined
+  @JSName("timing.timeScale")
+  var timingDottimeScale: js.UndefOr[Double] = js.undefined
   /**
     * A `Number` that specifies the current simulation-time in milliseconds starting from `0`. It is incremented on every `Engine.update` by the given `delta` argument.
     */
-  var `timing.timestamp`: js.UndefOr[Double] = js.undefined
+  @JSName("timing.timestamp")
+  var timingDottimestamp: js.UndefOr[Double] = js.undefined
   /**
     * The number of velocity iterations to perform each update. The higher the value, the higher quality the simulation will be at the expense of performance.
     */
@@ -179,17 +190,17 @@ object MatterWorldConfig {
     gravity: Vector2Like = null,
     positionIterations: Int | Double = null,
     setBounds: js.Object | Boolean = null,
-    `setBounds.bottom`: js.UndefOr[Boolean] = js.undefined,
-    `setBounds.height`: Int | Double = null,
-    `setBounds.left`: js.UndefOr[Boolean] = js.undefined,
-    `setBounds.right`: js.UndefOr[Boolean] = js.undefined,
-    `setBounds.thickness`: Int | Double = null,
-    `setBounds.top`: js.UndefOr[Boolean] = js.undefined,
-    `setBounds.width`: Int | Double = null,
-    `setBounds.x`: Int | Double = null,
-    `setBounds.y`: Int | Double = null,
-    `timing.timeScale`: Int | Double = null,
-    `timing.timestamp`: Int | Double = null,
+    setBoundsDotbottom: js.UndefOr[Boolean] = js.undefined,
+    setBoundsDotheight: Int | Double = null,
+    setBoundsDotleft: js.UndefOr[Boolean] = js.undefined,
+    setBoundsDotright: js.UndefOr[Boolean] = js.undefined,
+    setBoundsDotthickness: Int | Double = null,
+    setBoundsDottop: js.UndefOr[Boolean] = js.undefined,
+    setBoundsDotwidth: Int | Double = null,
+    setBoundsDotx: Int | Double = null,
+    setBoundsDoty: Int | Double = null,
+    timingDottimeScale: Int | Double = null,
+    timingDottimestamp: Int | Double = null,
     velocityIterations: Int | Double = null
   ): MatterWorldConfig = {
     val __obj = js.Dynamic.literal()
@@ -217,17 +228,17 @@ object MatterWorldConfig {
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
     if (positionIterations != null) __obj.updateDynamic("positionIterations")(positionIterations.asInstanceOf[js.Any])
     if (setBounds != null) __obj.updateDynamic("setBounds")(setBounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(`setBounds.bottom`)) __obj.updateDynamic("setBounds.bottom")(`setBounds.bottom`.asInstanceOf[js.Any])
-    if (`setBounds.height` != null) __obj.updateDynamic("setBounds.height")(`setBounds.height`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`setBounds.left`)) __obj.updateDynamic("setBounds.left")(`setBounds.left`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`setBounds.right`)) __obj.updateDynamic("setBounds.right")(`setBounds.right`.asInstanceOf[js.Any])
-    if (`setBounds.thickness` != null) __obj.updateDynamic("setBounds.thickness")(`setBounds.thickness`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`setBounds.top`)) __obj.updateDynamic("setBounds.top")(`setBounds.top`.asInstanceOf[js.Any])
-    if (`setBounds.width` != null) __obj.updateDynamic("setBounds.width")(`setBounds.width`.asInstanceOf[js.Any])
-    if (`setBounds.x` != null) __obj.updateDynamic("setBounds.x")(`setBounds.x`.asInstanceOf[js.Any])
-    if (`setBounds.y` != null) __obj.updateDynamic("setBounds.y")(`setBounds.y`.asInstanceOf[js.Any])
-    if (`timing.timeScale` != null) __obj.updateDynamic("timing.timeScale")(`timing.timeScale`.asInstanceOf[js.Any])
-    if (`timing.timestamp` != null) __obj.updateDynamic("timing.timestamp")(`timing.timestamp`.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotbottom)) __obj.updateDynamic("setBounds.bottom")(setBoundsDotbottom.asInstanceOf[js.Any])
+    if (setBoundsDotheight != null) __obj.updateDynamic("setBounds.height")(setBoundsDotheight.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotleft)) __obj.updateDynamic("setBounds.left")(setBoundsDotleft.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDotright)) __obj.updateDynamic("setBounds.right")(setBoundsDotright.asInstanceOf[js.Any])
+    if (setBoundsDotthickness != null) __obj.updateDynamic("setBounds.thickness")(setBoundsDotthickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBoundsDottop)) __obj.updateDynamic("setBounds.top")(setBoundsDottop.asInstanceOf[js.Any])
+    if (setBoundsDotwidth != null) __obj.updateDynamic("setBounds.width")(setBoundsDotwidth.asInstanceOf[js.Any])
+    if (setBoundsDotx != null) __obj.updateDynamic("setBounds.x")(setBoundsDotx.asInstanceOf[js.Any])
+    if (setBoundsDoty != null) __obj.updateDynamic("setBounds.y")(setBoundsDoty.asInstanceOf[js.Any])
+    if (timingDottimeScale != null) __obj.updateDynamic("timing.timeScale")(timingDottimeScale.asInstanceOf[js.Any])
+    if (timingDottimestamp != null) __obj.updateDynamic("timing.timestamp")(timingDottimestamp.asInstanceOf[js.Any])
     if (velocityIterations != null) __obj.updateDynamic("velocityIterations")(velocityIterations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterWorldConfig]
   }

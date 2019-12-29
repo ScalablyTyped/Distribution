@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNDataObjects.Input
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNDataObjects.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNDataObjects.Output
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassToggleButton
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ToggleButton]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), ToggleButton] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), ToggleButton]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ToggleButton] {
   var Locale: js.Any = js.native
   var fn: ToggleButton = js.native
 }

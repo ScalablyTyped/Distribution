@@ -1,11 +1,6 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
-import typings.mendixmodelsdk.distGenMenusMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenMenusMod.menus.MenuDocument
-import typings.mendixmodelsdk.distGenMenusMod.menus.MenuItem
-import typings.mendixmodelsdk.distGenMenusMod.menus.MenuItemCollection
-import typings.mendixmodelsdk.distGenMenusMod.menus.MenuItemContainer
 import typings.mendixmodelsdk.distGenNavigationMod.navigation.NavigationProfile
 import typings.mendixmodelsdk.distGenPagesMod.pages.ClientAction
 import typings.mendixmodelsdk.distGenPagesMod.pages.Icon

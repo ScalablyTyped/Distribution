@@ -11,7 +11,8 @@ class HTMLImage protected () extends js.Object {
   var Encoding: String = js.native
   var HTMLName: String = js.native
   var HTMLType: String = js.native
-  var `MSForms.HTMLImage_typekey`: HTMLImage = js.native
+  @JSName("MSForms.HTMLImage_typekey")
+  var MSFormsDotHTMLImage_typekey: HTMLImage = js.native
   var Method: String = js.native
   var Source: String = js.native
 }

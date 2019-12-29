@@ -16,7 +16,7 @@ trait ChatRoomInfo extends VoxImplantIMEvent {
   /**
   			* Room info object
   			*/
-  var info: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomInfo
+  var info: ChatRoomInfo
   /**
   			* Room id
   			*/
@@ -29,12 +29,7 @@ trait ChatRoomInfo extends VoxImplantIMEvent {
 
 object ChatRoomInfo {
   @scala.inline
-  def apply(
-    features: Double,
-    info: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEventTypes.ChatRoomInfo,
-    room: String,
-    room_name: String
-  ): ChatRoomInfo = {
+  def apply(features: Double, info: ChatRoomInfo, room: String, room_name: String): ChatRoomInfo = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], room_name = room_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoomInfo]

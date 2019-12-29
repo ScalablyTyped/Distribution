@@ -1,6 +1,5 @@
 package typings.twilioDashMcsDashClient
 
-import typings.twilioDashMcsDashClient.libLoggerMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

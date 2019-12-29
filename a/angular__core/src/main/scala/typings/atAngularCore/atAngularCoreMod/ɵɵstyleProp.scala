@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵɵstyleProp")
+@JSImport("@angular/core", "\u0275\u0275styleProp")
 @js.native
 object ɵɵstyleProp extends js.Object {
   def apply(prop: String): Unit = js.native

@@ -1,22 +1,6 @@
 package typings.browserfs.distNodeBackendZipFSMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.BZIP2
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.DEFLATE
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.DEFLATE64
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.IMPLODE
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.LZ77
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.LZMA
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.PPMD
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.REDUCED_1
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.REDUCED_2
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.REDUCED_3
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.REDUCED_4
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.SHRUNK
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.STORED
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.TERSE_NEW
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.TERSE_OLD
-import typings.browserfs.distNodeBackendZipFSMod.CompressionMethod.WAVPACK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

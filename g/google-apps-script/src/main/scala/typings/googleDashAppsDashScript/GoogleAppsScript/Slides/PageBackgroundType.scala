@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.PICTURE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.SOLID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

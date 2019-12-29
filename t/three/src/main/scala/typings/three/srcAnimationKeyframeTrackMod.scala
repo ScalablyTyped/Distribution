@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.std.Float32Array
-import typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack
 import typings.three.srcConstantsMod.InterpolationModes
 import typings.three.srcMathInterpolantsCubicInterpolantMod.CubicInterpolant
 import typings.three.srcMathInterpolantsDiscreteInterpolantMod.DiscreteInterpolant

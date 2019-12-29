@@ -12,7 +12,8 @@ class Tables protected () extends js.Object {
   val Creator: Double = js.native
   val NestingLevel: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Tables_typekey`: Tables = js.native
+  @JSName("Word.Tables_typekey")
+  var WordDotTables_typekey: Tables = js.native
   def Add(Range: Range, NumRows: Double, NumColumns: Double): Table = js.native
   def Add(Range: Range, NumRows: Double, NumColumns: Double, DefaultTableBehavior: js.Any): Table = js.native
   def Add(

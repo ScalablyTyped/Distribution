@@ -1,21 +1,6 @@
 package typings.winrt.Windows.Media.Protection
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.appComponent
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.bootDriverVerificationFailed
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.componentCertificateRevoked
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.componentHighSecurityCertificateRevoked
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.componentLowSecurityCertificateRevoked
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.componentRevoked
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.componentSignedWithTestCertificate
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.encryptionFailure
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.globalRevocationListAbsent
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.globalRevocationListLoadFailed
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.invalidComponentCertificateExtendedKeyUse
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.invalidComponentCertificateRoot
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.invalidGlobalRevocationListSignature
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.kernelModeComponentLoad
-import typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.userModeComponentLoad
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

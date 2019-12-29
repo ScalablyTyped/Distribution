@@ -10,12 +10,12 @@ trait CreateTracingOptions extends js.Object {
     * coerced to a string when possible. An error will be thrown if the
     * value cannot be coerced.
     */
-  var categories: js.Array[java.lang.String]
+  var categories: js.Array[String]
 }
 
 object CreateTracingOptions {
   @scala.inline
-  def apply(categories: js.Array[java.lang.String]): CreateTracingOptions = {
+  def apply(categories: js.Array[String]): CreateTracingOptions = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateTracingOptions]

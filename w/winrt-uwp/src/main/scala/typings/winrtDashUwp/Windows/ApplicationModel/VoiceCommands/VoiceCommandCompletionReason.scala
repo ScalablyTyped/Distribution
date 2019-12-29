@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.appLaunched
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.canceled
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.communicationFailed
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.completed
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.resourceLimitsExceeded
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.timeoutExceeded
-import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

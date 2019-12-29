@@ -1,7 +1,5 @@
 package typings.gzipDashSize
 
-import typings.gzipDashSize.gzipDashSizeMod.GzipSizeStream
-import typings.gzipDashSize.gzipDashSizeMod.Options
 import typings.gzipDashSize.gzipDashSizeStrings.`gzip-size`
 import typings.node.Buffer
 import typings.node.streamMod.Transform

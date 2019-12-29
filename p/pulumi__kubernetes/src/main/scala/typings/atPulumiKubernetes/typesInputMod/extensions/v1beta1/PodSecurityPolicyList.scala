@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.extensions.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait PodSecurityPolicyList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`extensions/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[extensionsSlashv1beta1]] = js.undefined
   /**
     * items is a list of schema objects.
     */
@@ -43,7 +43,7 @@ object PodSecurityPolicyList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[PodSecurityPolicy]]],
-    apiVersion: Input[`extensions/v1beta1`] = null,
+    apiVersion: Input[extensionsSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodSecurityPolicyList] = null,
     metadata: Input[ListMeta] = null
   ): PodSecurityPolicyList = {

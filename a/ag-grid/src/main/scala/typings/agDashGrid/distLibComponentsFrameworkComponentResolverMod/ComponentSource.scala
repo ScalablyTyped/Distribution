@@ -1,9 +1,6 @@
 package typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentSource.DEFAULT
-import typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentSource.HARDCODED
-import typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentSource.REGISTERED_BY_NAME
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

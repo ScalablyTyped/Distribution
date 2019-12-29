@@ -60,12 +60,6 @@ trait DirectionsViewModelProperties extends GoToProperties {
     */
   var stops: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
   /**
-    * The name of the network attribute to use for the drive time when computing directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
-    */
-  var timeAttribute: js.UndefOr[DirectionsViewModelTimeAttribute] = js.undefined
-  /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#view)
@@ -85,7 +79,6 @@ object DirectionsViewModelProperties {
     selectedTravelMode: DirectionsViewModelSelectedTravelMode = null,
     stopSymbols: DirectionsViewModelStopSymbols = null,
     stops: CollectionProperties[GraphicProperties] = null,
-    timeAttribute: DirectionsViewModelTimeAttribute = null,
     view: MapViewProperties | SceneViewProperties = null
   ): DirectionsViewModelProperties = {
     val __obj = js.Dynamic.literal()
@@ -98,7 +91,6 @@ object DirectionsViewModelProperties {
     if (selectedTravelMode != null) __obj.updateDynamic("selectedTravelMode")(selectedTravelMode.asInstanceOf[js.Any])
     if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
-    if (timeAttribute != null) __obj.updateDynamic("timeAttribute")(timeAttribute.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsViewModelProperties]
   }

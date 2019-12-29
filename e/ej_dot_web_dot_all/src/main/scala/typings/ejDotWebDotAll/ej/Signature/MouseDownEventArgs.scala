@@ -10,7 +10,7 @@ trait MouseDownEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Instance of the signature model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Signature.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -23,7 +23,7 @@ object MouseDownEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Signature.Model = null,
+    model: Model = null,
     `type`: String = null,
     value: js.Any = null
   ): MouseDownEventArgs = {

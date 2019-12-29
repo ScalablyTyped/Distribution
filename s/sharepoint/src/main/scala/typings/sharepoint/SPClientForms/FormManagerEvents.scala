@@ -1,13 +1,6 @@
 package typings.sharepoint.SPClientForms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientForms.FormManagerEvents.Event_GetControlValueCallback
-import typings.sharepoint.SPClientForms.FormManagerEvents.Event_GetHasValueChangedCallback
-import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlFocusSetCallback
-import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlInitializedCallback
-import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlValidationError
-import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlValueChanged
-import typings.sharepoint.SPClientForms.FormManagerEvents.Event_RegisterControlValidator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

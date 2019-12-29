@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Sparkline protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Sparkline_typekey`: Sparkline = js.native
+  @JSName("Excel.Sparkline_typekey")
+  var ExcelDotSparkline_typekey: Sparkline = js.native
   @JSName("Location")
   var Location_Original: Range = js.native
   val Parent: js.Any = js.native

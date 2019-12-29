@@ -7,7 +7,6 @@ import typings.atJimpCore.typesPluginsMod.JimpPlugin
 import typings.atJimpCore.typesPluginsMod.JimpType
 import typings.atJimpCore.typesUtilsMod.FunctionRet
 import typings.atJimpCore.typesUtilsMod.GetIntersectionFromPlugins
-import typings.atJimpCustom.atJimpCustomMod.JimpInstance
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`

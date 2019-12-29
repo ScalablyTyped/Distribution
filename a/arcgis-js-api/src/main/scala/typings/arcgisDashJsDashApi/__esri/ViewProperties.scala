@@ -49,6 +49,12 @@ trait ViewProperties extends DOMContainerProperties {
     */
   var map: js.UndefOr[MapProperties] = js.undefined
   /**
+    * Options to configure the navigation behavior of the View.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#navigation)
+    */
+  var navigation: js.UndefOr[NavigationProperties] = js.undefined
+  /**
     * Use the padding property to make the [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center), and [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent), etc. work off a subsection of the full view. This is particularly useful when layering UI elements or semi-transparent content on top of portions of the view. See the [view padding sample](https://developers.arcgis.com/javascript/latest/sample-code/view-padding/index.html) for an example of how this works.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
@@ -93,6 +99,7 @@ object ViewProperties {
     graphics: CollectionProperties[GraphicProperties] = null,
     layerViews: CollectionProperties[LayerViewProperties] = null,
     map: MapProperties = null,
+    navigation: NavigationProperties = null,
     padding: ViewPadding = null,
     popup: PopupProperties = null,
     spatialReference: SpatialReferenceProperties = null,
@@ -108,6 +115,7 @@ object ViewProperties {
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
     if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])

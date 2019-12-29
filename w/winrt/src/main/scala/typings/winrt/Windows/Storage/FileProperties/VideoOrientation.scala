@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.FileProperties.VideoOrientation.normal
-import typings.winrt.Windows.Storage.FileProperties.VideoOrientation.rotate180
-import typings.winrt.Windows.Storage.FileProperties.VideoOrientation.rotate270
-import typings.winrt.Windows.Storage.FileProperties.VideoOrientation.rotate90
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

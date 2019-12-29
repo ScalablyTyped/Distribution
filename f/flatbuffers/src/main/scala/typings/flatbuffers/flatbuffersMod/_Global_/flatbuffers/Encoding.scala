@@ -1,8 +1,6 @@
 package typings.flatbuffers.flatbuffersMod._Global_.flatbuffers
 
 import org.scalablytyped.runtime.TopLevel
-import typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Encoding.UTF16_STRING
-import typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Encoding.UTF8_BYTES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

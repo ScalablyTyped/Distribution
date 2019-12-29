@@ -1,7 +1,6 @@
 package typings.atJimpPluginDashGaussian
 
 import typings.atJimpCore.typesEtcMod.ImageCallback
-import typings.atJimpPluginDashGaussian.atJimpPluginDashGaussianMod.Gaussian
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

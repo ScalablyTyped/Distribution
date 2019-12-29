@@ -17,7 +17,7 @@ trait ILineSegment extends IBase {
   		* @returns String For example Point[12,8] Point[0,0]
   		*/
   @JSName("toString")
-  var toString_FILineSegment: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FILineSegment: js.UndefOr[js.Function0[String]] = js.undefined
 }
 
 object ILineSegment {
@@ -30,8 +30,8 @@ object ILineSegment {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     intersects: /* lineSegment */ js.UndefOr[ILineSegment] => IPoint = null,
@@ -40,7 +40,7 @@ object ILineSegment {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     uses: Array = null
   ): ILineSegment = {
     val __obj = js.Dynamic.literal()

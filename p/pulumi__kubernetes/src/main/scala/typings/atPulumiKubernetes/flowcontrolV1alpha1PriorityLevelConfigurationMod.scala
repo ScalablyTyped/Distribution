@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`
-import typings.atPulumiKubernetes.flowcontrolV1alpha1PriorityLevelConfigurationMod.PriorityLevelConfiguration
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.flowcontrolDotapiserverDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.PriorityLevelConfigurationSpec
 import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.PriorityLevelConfigurationStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
@@ -42,7 +41,7 @@ object flowcontrolV1alpha1PriorityLevelConfigurationMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+    val apiVersion: Output[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In

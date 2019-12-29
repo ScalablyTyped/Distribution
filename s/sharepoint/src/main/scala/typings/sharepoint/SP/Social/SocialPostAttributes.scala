@@ -1,12 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialPostAttributes.canDelete
-import typings.sharepoint.SP.Social.SocialPostAttributes.canFollowUp
-import typings.sharepoint.SP.Social.SocialPostAttributes.canLike
-import typings.sharepoint.SP.Social.SocialPostAttributes.none
-import typings.sharepoint.SP.Social.SocialPostAttributes.useAuthorImage
-import typings.sharepoint.SP.Social.SocialPostAttributes.useSmallImage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

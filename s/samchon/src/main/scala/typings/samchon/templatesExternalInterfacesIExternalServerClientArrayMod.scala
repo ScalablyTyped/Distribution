@@ -28,7 +28,7 @@ object templatesExternalInterfacesIExternalServerClientArrayMod extends js.Objec
       *
       * @return Iterator to the first element.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[System, Deque[System], Iterator[System], ReverseIterator[System], System] = js.native
     /**
@@ -43,7 +43,7 @@ object templatesExternalInterfacesIExternalServerClientArrayMod extends js.Objec
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -51,7 +51,7 @@ object templatesExternalInterfacesIExternalServerClientArrayMod extends js.Objec
       *
       * @return Iterator to the end.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[System, Deque[System], Iterator[System], ReverseIterator[System], System] = js.native
     /* CompleteClass */
@@ -63,6 +63,7 @@ object templatesExternalInterfacesIExternalServerClientArrayMod extends js.Objec
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def push(items: System*): Double = js.native
     /**
@@ -79,6 +80,7 @@ object templatesExternalInterfacesIExternalServerClientArrayMod extends js.Objec
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[System] = js.native
     /* CompleteClass */
     /* InferMemberOverrides */
@@ -90,11 +92,13 @@ object templatesExternalInterfacesIExternalServerClientArrayMod extends js.Objec
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def rend(): ReverseIterator[System] = js.native
     /**
       * Number of elements in the container.
       */
     /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

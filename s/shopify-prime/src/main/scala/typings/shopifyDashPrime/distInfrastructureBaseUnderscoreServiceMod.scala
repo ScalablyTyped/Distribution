@@ -1,6 +1,5 @@
 package typings.shopifyDashPrime
 
-import typings.shopifyDashPrime.distInfrastructureBaseUnderscoreServiceMod.BaseService
 import typings.shopifyDashPrime.shopifyDashPrimeStrings.DELETE
 import typings.shopifyDashPrime.shopifyDashPrimeStrings.GET
 import typings.shopifyDashPrime.shopifyDashPrimeStrings.POST

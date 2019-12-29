@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMapMode.dots
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMapMode.english
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMapMode.metric
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMapMode.twips
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

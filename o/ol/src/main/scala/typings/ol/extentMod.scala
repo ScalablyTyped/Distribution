@@ -2,7 +2,6 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentCornerMod.Corner
-import typings.ol.extentMod.Extent
 import typings.ol.extentRelationshipMod.Relationship
 import typings.ol.projMod.TransformFunction
 import typings.ol.sizeMod.Size

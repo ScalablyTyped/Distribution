@@ -1,7 +1,7 @@
 package typings.ionic.commandsConfigBaseMod
 
 import typings.ionic.definitionsMod.IConfig
-import typings.ionic.ionicNumbers.`true`
+import typings.ionic.ionicBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

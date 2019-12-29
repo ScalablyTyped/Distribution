@@ -11,7 +11,8 @@ class Languages protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Languages_typekey`: Languages = js.native
+  @JSName("Word.Languages_typekey")
+  var WordDotLanguages_typekey: Languages = js.native
   def Item(Index: js.Any): Language = js.native
 }
 

@@ -1,13 +1,6 @@
 package typings.cassandraDashDriver.libTypesMod.types
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.maxSupported
-import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.minSupported
-import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v1
-import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v2
-import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v3
-import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v4
-import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

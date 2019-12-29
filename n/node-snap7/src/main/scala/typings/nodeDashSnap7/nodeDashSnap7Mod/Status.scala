@@ -1,9 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusRun
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusStop
-import typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusUnknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

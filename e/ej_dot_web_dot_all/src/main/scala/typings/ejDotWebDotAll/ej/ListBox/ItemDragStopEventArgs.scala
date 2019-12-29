@@ -25,7 +25,7 @@ trait ItemDragStopEventArgs extends js.Object {
   var isSelected: js.UndefOr[Boolean] = js.undefined
   /** Instance of the listbox model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ListBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** List itemâ€™s text (label).
     */
   var text: js.UndefOr[String] = js.undefined
@@ -46,7 +46,7 @@ object ItemDragStopEventArgs {
     isChecked: js.UndefOr[Boolean] = js.undefined,
     isEnabled: js.UndefOr[Boolean] = js.undefined,
     isSelected: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.ListBox.Model = null,
+    model: Model = null,
     text: String = null,
     `type`: String = null,
     value: String = null

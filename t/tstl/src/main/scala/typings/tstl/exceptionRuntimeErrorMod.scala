@@ -2,10 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.tstl.exceptionExceptionMod.Exception
-import typings.tstl.exceptionRuntimeErrorMod.OverflowError
-import typings.tstl.exceptionRuntimeErrorMod.RangeError
-import typings.tstl.exceptionRuntimeErrorMod.RuntimeError
-import typings.tstl.exceptionRuntimeErrorMod.UnderflowError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

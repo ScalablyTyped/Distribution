@@ -1,12 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_VideoRotateMode.VRM_180_DEGREES_CLOCKWISE
-import typings.dwt.EnumDWT_VideoRotateMode.VRM_270_DEGREES_CLOCKWISE
-import typings.dwt.EnumDWT_VideoRotateMode.VRM_90_DEGREES_CLOCKWISE
-import typings.dwt.EnumDWT_VideoRotateMode.VRM_FLIP_HORIZONTAL
-import typings.dwt.EnumDWT_VideoRotateMode.VRM_FLIP_VERTICAL
-import typings.dwt.EnumDWT_VideoRotateMode.VRM_NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

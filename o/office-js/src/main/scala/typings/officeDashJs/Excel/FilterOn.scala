@@ -1,16 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.FilterOn.bottomItems
-import typings.officeDashJs.Excel.FilterOn.bottomPercent
-import typings.officeDashJs.Excel.FilterOn.cellColor
-import typings.officeDashJs.Excel.FilterOn.custom
-import typings.officeDashJs.Excel.FilterOn.dynamic
-import typings.officeDashJs.Excel.FilterOn.fontColor
-import typings.officeDashJs.Excel.FilterOn.icon
-import typings.officeDashJs.Excel.FilterOn.topItems
-import typings.officeDashJs.Excel.FilterOn.topPercent
-import typings.officeDashJs.Excel.FilterOn.values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

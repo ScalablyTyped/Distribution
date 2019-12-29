@@ -5,10 +5,10 @@ import typings.node.urlMod.Url
 import typings.nodemailer.Anon_Connection
 import typings.nodemailer.libSharedMod.Logger
 import typings.nodemailer.libXoauth2Mod.Token
+import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerMod.SentMessageInfo
 import typings.nodemailer.nodemailerMod.Transport
 import typings.nodemailer.nodemailerMod.TransportOptions
-import typings.nodemailer.nodemailerNumbers.`true`
 import typings.nodemailer.nodemailerStrings.end
 import typings.nodemailer.nodemailerStrings.error
 import typings.nodemailer.nodemailerStrings.idle

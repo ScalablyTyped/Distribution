@@ -1,7 +1,7 @@
 package typings.gfc.gfcMod
 
 import typings.gfc.Anon_Contents
-import typings.gfc.gfcNumbers.`false`
+import typings.gfc.gfcBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

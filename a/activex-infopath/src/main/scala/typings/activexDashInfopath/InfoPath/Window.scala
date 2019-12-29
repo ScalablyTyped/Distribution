@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Window protected () extends js.Object {
   val Active: Boolean = js.native
   val CommandBars: js.Any = js.native
-  var `InfoPath.Window_typekey`: Window = js.native
+  @JSName("InfoPath.Window_typekey")
+  var InfoPathDotWindow_typekey: Window = js.native
   val MailEnvelope: MailEnvelopeObject = js.native
   val TaskPanes: TaskPanesCollection = js.native
   val Type: XdWindowType = js.native

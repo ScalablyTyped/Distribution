@@ -5,5 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object property {
-  type IHeaderContainer = typings.extjs.Ext.grid.header.IContainer
+  import typings.extjs.Ext.grid.header.IContainer
+
+  type IHeaderContainer = IContainer
 }

@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.browse
-import typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.none
-import typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.triggered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

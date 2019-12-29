@@ -1,9 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.FriendsOnly
-import typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.Private
-import typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.Public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

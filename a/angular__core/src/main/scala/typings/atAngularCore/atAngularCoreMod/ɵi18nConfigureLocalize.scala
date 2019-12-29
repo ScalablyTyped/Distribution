@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵi18nConfigureLocalize")
+@JSImport("@angular/core", "\u0275i18nConfigureLocalize")
 @js.native
 object ɵi18nConfigureLocalize extends js.Object {
   def apply(): Unit = js.native

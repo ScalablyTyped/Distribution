@@ -10,7 +10,19 @@ trait WebSceneProperties extends MapProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#applicationProperties)
     */
-  var applicationProperties: js.UndefOr[ApplicationPropertiesProperties] = js.undefined
+  var applicationProperties: js.UndefOr[websceneApplicationPropertiesProperties] = js.undefined
+  /**
+    * The name of the application that authored the WebScene.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringApp)
+    */
+  var authoringApp: js.UndefOr[String] = js.undefined
+  /**
+    * The version of the application that authored the WebScene.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringAppVersion)
+    */
+  var authoringAppVersion: js.UndefOr[String] = js.undefined
   /**
     * *This property only applies to local scenes.* Represents an optional clipping area used to define the bounds or [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of a local scene. If defined, only data (including the basemap) within the area will be displayed.  Set the [clippingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingEnabled) property to `true` to apply the specified clippingArea to the view.
     *
@@ -60,7 +72,9 @@ trait WebSceneProperties extends MapProperties {
 object WebSceneProperties {
   @scala.inline
   def apply(
-    applicationProperties: ApplicationPropertiesProperties = null,
+    applicationProperties: websceneApplicationPropertiesProperties = null,
+    authoringApp: String = null,
+    authoringAppVersion: String = null,
     basemap: BasemapProperties | String = null,
     clippingArea: ExtentProperties = null,
     clippingEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -74,6 +88,8 @@ object WebSceneProperties {
   ): WebSceneProperties = {
     val __obj = js.Dynamic.literal()
     if (applicationProperties != null) __obj.updateDynamic("applicationProperties")(applicationProperties.asInstanceOf[js.Any])
+    if (authoringApp != null) __obj.updateDynamic("authoringApp")(authoringApp.asInstanceOf[js.Any])
+    if (authoringAppVersion != null) __obj.updateDynamic("authoringAppVersion")(authoringAppVersion.asInstanceOf[js.Any])
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (clippingArea != null) __obj.updateDynamic("clippingArea")(clippingArea.asInstanceOf[js.Any])
     if (!js.isUndefined(clippingEnabled)) __obj.updateDynamic("clippingEnabled")(clippingEnabled.asInstanceOf[js.Any])

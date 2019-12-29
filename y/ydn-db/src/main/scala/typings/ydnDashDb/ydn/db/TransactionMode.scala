@@ -1,8 +1,6 @@
 package typings.ydnDashDb.ydn.db
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ydnDashDb.ydn.db.TransactionMode.readonly
-import typings.ydnDashDb.ydn.db.TransactionMode.readwrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

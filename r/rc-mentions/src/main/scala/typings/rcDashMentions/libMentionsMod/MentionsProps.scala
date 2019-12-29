@@ -1,7 +1,7 @@
 package typings.rcDashMentions.libMentionsMod
 
 import typings.rcDashMentions.libOptionMod.OptionProps
-import typings.rcDashMentions.rcDashMentionsNumbers.`false`
+import typings.rcDashMentions.rcDashMentionsBooleans.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler

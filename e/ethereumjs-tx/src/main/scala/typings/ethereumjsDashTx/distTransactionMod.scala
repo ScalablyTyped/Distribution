@@ -1,13 +1,12 @@
 package typings.ethereumjsDashTx
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ethereumjsDashTx.distTransactionMod.Transaction
 import typings.ethereumjsDashTx.distTypesMod.BufferLike
 import typings.ethereumjsDashTx.distTypesMod.PrefixedHexString
 import typings.ethereumjsDashTx.distTypesMod.TransactionOptions
 import typings.ethereumjsDashTx.distTypesMod.TxData
-import typings.ethereumjsDashTx.ethereumjsDashTxNumbers.`false`
-import typings.ethereumjsDashTx.ethereumjsDashTxNumbers.`true`
+import typings.ethereumjsDashTx.ethereumjsDashTxBooleans.`false`
+import typings.ethereumjsDashTx.ethereumjsDashTxBooleans.`true`
 import typings.ethereumjsDashUtil.ethereumjsDashUtilMod.BN
 import typings.node.Buffer
 import scala.scalajs.js

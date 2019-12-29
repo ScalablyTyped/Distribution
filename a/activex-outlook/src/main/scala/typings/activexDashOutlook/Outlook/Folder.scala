@@ -25,7 +25,8 @@ class Folder protected () extends js.Object {
   val Items: typings.activexDashOutlook.Outlook.Items = js.native
   val MAPIOBJECT: js.Any = js.native
   var Name: String = js.native
-  var `Outlook.Folder_typekey`: Folder = js.native
+  @JSName("Outlook.Folder_typekey")
+  var OutlookDotFolder_typekey: Folder = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val Session: NameSpace = js.native

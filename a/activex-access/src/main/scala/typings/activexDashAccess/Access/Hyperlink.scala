@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Hyperlink")
 @js.native
 class Hyperlink protected () extends js.Object {
-  var `Access.Hyperlink_typekey`: Hyperlink = js.native
+  @JSName("Access.Hyperlink_typekey")
+  var AccessDotHyperlink_typekey: Hyperlink = js.native
   var Address: String = js.native
   var EmailSubject: String = js.native
   var ScreenTip: String = js.native

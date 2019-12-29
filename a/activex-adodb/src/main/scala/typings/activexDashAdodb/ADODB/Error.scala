@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADODB.Error")
 @js.native
 class Error protected () extends js.Object {
-  var `ADODB.Error_typekey`: Error = js.native
+  @JSName("ADODB.Error_typekey")
+  var ADODBDotError_typekey: Error = js.native
   val Description: String = js.native
   val HelpContext: Double = js.native
   val HelpFile: String = js.native

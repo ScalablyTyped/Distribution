@@ -7,79 +7,79 @@ import scala.scalajs.js.annotation._
 
 object forgeDashApisStrings {
   @js.native
-  sealed trait `account:read` extends Scope
+  sealed trait accountColonread extends Scope
   
   @js.native
-  sealed trait `account:write` extends Scope
+  sealed trait accountColonwrite extends Scope
   
   @js.native
-  sealed trait `bucket:create` extends Scope
+  sealed trait bucketColoncreate extends Scope
   
   @js.native
-  sealed trait `bucket:delete` extends Scope
+  sealed trait bucketColondelete extends Scope
   
   @js.native
-  sealed trait `bucket:read` extends Scope
+  sealed trait bucketColonread extends Scope
   
   @js.native
-  sealed trait `bucket:update` extends Scope
+  sealed trait bucketColonupdate extends Scope
   
   @js.native
-  sealed trait `code:all` extends Scope
+  sealed trait codeColonall extends Scope
   
   @js.native
-  sealed trait `data:create` extends Scope
+  sealed trait dataColoncreate extends Scope
   
   @js.native
-  sealed trait `data:read` extends Scope
+  sealed trait dataColonread extends Scope
   
   @js.native
-  sealed trait `data:search` extends Scope
+  sealed trait dataColonsearch extends Scope
   
   @js.native
-  sealed trait `data:write` extends Scope
+  sealed trait dataColonwrite extends Scope
   
   @js.native
-  sealed trait `user-profile:read` extends Scope
+  sealed trait `user-profileColonread` extends Scope
   
   @js.native
-  sealed trait `user:read` extends Scope
+  sealed trait userColonread extends Scope
   
   @js.native
-  sealed trait `user:write` extends Scope
+  sealed trait userColonwrite extends Scope
   
   @js.native
-  sealed trait `viewables:read` extends Scope
+  sealed trait viewablesColonread extends Scope
   
   @scala.inline
-  def `account:read`: `account:read` = "account:read".asInstanceOf[`account:read`]
+  def accountColonread: accountColonread = "account:read".asInstanceOf[accountColonread]
   @scala.inline
-  def `account:write`: `account:write` = "account:write".asInstanceOf[`account:write`]
+  def accountColonwrite: accountColonwrite = "account:write".asInstanceOf[accountColonwrite]
   @scala.inline
-  def `bucket:create`: `bucket:create` = "bucket:create".asInstanceOf[`bucket:create`]
+  def bucketColoncreate: bucketColoncreate = "bucket:create".asInstanceOf[bucketColoncreate]
   @scala.inline
-  def `bucket:delete`: `bucket:delete` = "bucket:delete".asInstanceOf[`bucket:delete`]
+  def bucketColondelete: bucketColondelete = "bucket:delete".asInstanceOf[bucketColondelete]
   @scala.inline
-  def `bucket:read`: `bucket:read` = "bucket:read".asInstanceOf[`bucket:read`]
+  def bucketColonread: bucketColonread = "bucket:read".asInstanceOf[bucketColonread]
   @scala.inline
-  def `bucket:update`: `bucket:update` = "bucket:update".asInstanceOf[`bucket:update`]
+  def bucketColonupdate: bucketColonupdate = "bucket:update".asInstanceOf[bucketColonupdate]
   @scala.inline
-  def `code:all`: `code:all` = "code:all".asInstanceOf[`code:all`]
+  def codeColonall: codeColonall = "code:all".asInstanceOf[codeColonall]
   @scala.inline
-  def `data:create`: `data:create` = "data:create".asInstanceOf[`data:create`]
+  def dataColoncreate: dataColoncreate = "data:create".asInstanceOf[dataColoncreate]
   @scala.inline
-  def `data:read`: `data:read` = "data:read".asInstanceOf[`data:read`]
+  def dataColonread: dataColonread = "data:read".asInstanceOf[dataColonread]
   @scala.inline
-  def `data:search`: `data:search` = "data:search".asInstanceOf[`data:search`]
+  def dataColonsearch: dataColonsearch = "data:search".asInstanceOf[dataColonsearch]
   @scala.inline
-  def `data:write`: `data:write` = "data:write".asInstanceOf[`data:write`]
+  def dataColonwrite: dataColonwrite = "data:write".asInstanceOf[dataColonwrite]
   @scala.inline
-  def `user-profile:read`: `user-profile:read` = "user-profile:read".asInstanceOf[`user-profile:read`]
+  def `user-profileColonread`: `user-profileColonread` = "user-profile:read".asInstanceOf[`user-profileColonread`]
   @scala.inline
-  def `user:read`: `user:read` = "user:read".asInstanceOf[`user:read`]
+  def userColonread: userColonread = "user:read".asInstanceOf[userColonread]
   @scala.inline
-  def `user:write`: `user:write` = "user:write".asInstanceOf[`user:write`]
+  def userColonwrite: userColonwrite = "user:write".asInstanceOf[userColonwrite]
   @scala.inline
-  def `viewables:read`: `viewables:read` = "viewables:read".asInstanceOf[`viewables:read`]
+  def viewablesColonread: viewablesColonread = "viewables:read".asInstanceOf[viewablesColonread]
 }
 

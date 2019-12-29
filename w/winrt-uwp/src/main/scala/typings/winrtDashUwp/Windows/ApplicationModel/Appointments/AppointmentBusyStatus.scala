@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.busy
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.free
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.outOfOffice
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.tentative
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.workingElsewhere
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -33,25 +33,39 @@ trait AnySourceData extends js.Object
 
 object AnySourceData {
   @scala.inline
-  def VectorSource(
-    `type`: vector,
+  def ImageSourceRaw(`type`: image_, coordinates: js.Array[js.Array[Double]] = null, url: String = null): AnySourceData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnySourceData]
+  }
+  @scala.inline
+  def GeoJSONSourceRaw(
+    `type`: geojson,
     attribution: String = null,
-    bounds: js.Array[Double] = null,
+    buffer: Int | Double = null,
+    cluster: Double | Boolean = null,
+    clusterMaxZoom: Int | Double = null,
+    clusterRadius: Int | Double = null,
+    data: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String = null,
+    generateId: js.UndefOr[Boolean] = js.undefined,
+    lineMetrics: js.UndefOr[Boolean] = js.undefined,
     maxzoom: Int | Double = null,
-    minzoom: Int | Double = null,
-    scheme: xyz | tms = null,
-    tiles: js.Array[String] = null,
-    url: String = null
+    tolerance: Int | Double = null
   ): AnySourceData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
+    if (clusterMaxZoom != null) __obj.updateDynamic("clusterMaxZoom")(clusterMaxZoom.asInstanceOf[js.Any])
+    if (clusterRadius != null) __obj.updateDynamic("clusterRadius")(clusterRadius.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateId)) __obj.updateDynamic("generateId")(generateId.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineMetrics)) __obj.updateDynamic("lineMetrics")(lineMetrics.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnySourceData]
   }
   @scala.inline
@@ -72,6 +86,28 @@ object AnySourceData {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnySourceData]
+  }
+  @scala.inline
+  def VectorSource(
+    `type`: vector,
+    attribution: String = null,
+    bounds: js.Array[Double] = null,
+    maxzoom: Int | Double = null,
+    minzoom: Int | Double = null,
+    scheme: xyz | tms = null,
+    tiles: js.Array[String] = null,
+    url: String = null
+  ): AnySourceData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
+    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnySourceData]
   }
   @scala.inline
@@ -119,42 +155,6 @@ object AnySourceData {
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnySourceData]
-  }
-  @scala.inline
-  def GeoJSONSourceRaw(
-    `type`: geojson,
-    attribution: String = null,
-    buffer: Int | Double = null,
-    cluster: Double | Boolean = null,
-    clusterMaxZoom: Int | Double = null,
-    clusterRadius: Int | Double = null,
-    data: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String = null,
-    generateId: js.UndefOr[Boolean] = js.undefined,
-    lineMetrics: js.UndefOr[Boolean] = js.undefined,
-    maxzoom: Int | Double = null,
-    tolerance: Int | Double = null
-  ): AnySourceData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (clusterMaxZoom != null) __obj.updateDynamic("clusterMaxZoom")(clusterMaxZoom.asInstanceOf[js.Any])
-    if (clusterRadius != null) __obj.updateDynamic("clusterRadius")(clusterRadius.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateId)) __obj.updateDynamic("generateId")(generateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineMetrics)) __obj.updateDynamic("lineMetrics")(lineMetrics.asInstanceOf[js.Any])
-    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnySourceData]
-  }
-  @scala.inline
-  def ImageSourceRaw(`type`: image_, coordinates: js.Array[js.Array[Double]] = null, url: String = null): AnySourceData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnySourceData]
   }

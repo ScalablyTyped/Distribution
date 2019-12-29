@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object prettierStrings {
   @js.native
-  sealed trait _quote extends js.Object
+  sealed trait Apostrophe extends js.Object
   
   @js.native
-  sealed trait BACKSLASH extends js.Object
+  sealed trait Quotationmark extends js.Object
   
   @js.native
   sealed trait align extends js.Object
@@ -163,9 +163,9 @@ object prettierStrings {
   sealed trait yaml extends BuiltInParserName
   
   @scala.inline
-  def _quote: _quote = "'".asInstanceOf[_quote]
+  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   @scala.inline
-  def BACKSLASH: BACKSLASH = "\"".asInstanceOf[BACKSLASH]
+  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   @scala.inline
   def align: align = "align".asInstanceOf[align]
   @scala.inline

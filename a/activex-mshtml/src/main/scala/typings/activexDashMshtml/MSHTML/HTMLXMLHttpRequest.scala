@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLXMLHttpRequest")
 @js.native
 class HTMLXMLHttpRequest protected () extends js.Object {
-  var `MSHTML.HTMLXMLHttpRequest_typekey`: HTMLXMLHttpRequest = js.native
+  @JSName("MSHTML.HTMLXMLHttpRequest_typekey")
+  var MSHTMLDotHTMLXMLHttpRequest_typekey: HTMLXMLHttpRequest = js.native
   val constructor: js.Any = js.native
   var onreadystatechange: js.Any = js.native
   var ontimeout: js.Any = js.native

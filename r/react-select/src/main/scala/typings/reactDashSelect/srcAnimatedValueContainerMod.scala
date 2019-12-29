@@ -2,7 +2,6 @@ package typings.reactDashSelect
 
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactNode
-import typings.reactDashSelect.srcAnimatedValueContainerMod.AnimatedValueContainerProps
 import typings.reactDashSelect.srcComponentsContainersMod.ValueContainerProps
 import typings.reactDashSelect.srcSelectMod.Props
 import typings.reactDashSelect.srcTypesMod.ActionTypes

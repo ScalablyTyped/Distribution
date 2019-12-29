@@ -2,11 +2,6 @@ package typings.stellarDashBase.stellarDashBaseMod
 
 import typings.node.Buffer
 import typings.stellarDashBase.Anon_Hint
-import typings.stellarDashBase.stellarDashBaseMod.xdr.DecoratedSignature
-import typings.stellarDashBase.stellarDashBaseMod.xdr.SignatureHint
-import typings.stellarDashBase.stellarDashBaseMod.xdr.TransactionEnvelope
-import typings.stellarDashBase.stellarDashBaseMod.xdr.TransactionResult
-import typings.stellarDashBase.stellarDashBaseMod.xdr.XDRStruct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

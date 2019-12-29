@@ -1,6 +1,5 @@
 package typings.atIonicUtilsDashNetwork
 
-import typings.atIonicUtilsDashNetwork.atIonicUtilsDashNetworkMod.NetworkInterface
 import typings.node.osMod.NetworkInterfaceInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -2,7 +2,6 @@ package typings.nodegit
 
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
-import typings.nodegit.treeDashBuilderMod.Treebuilder
 import typings.nodegit.treeDashEntryMod.TreeEntry
 import typings.nodegit.treeMod.Tree
 import scala.scalajs.js

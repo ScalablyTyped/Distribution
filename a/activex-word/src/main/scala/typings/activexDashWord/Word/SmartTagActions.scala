@@ -11,7 +11,8 @@ class SmartTagActions protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.SmartTagActions_typekey`: SmartTagActions = js.native
+  @JSName("Word.SmartTagActions_typekey")
+  var WordDotSmartTagActions_typekey: SmartTagActions = js.native
   def Item(Index: js.Any): SmartTagAction = js.native
   def ReloadActions(): Unit = js.native
 }

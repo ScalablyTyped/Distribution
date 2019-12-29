@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RiotComponent[P, S]
-  extends RiotComponentExport[P, S]
-     with RiotCoreComponent[P, S]
+trait RiotComponent[Props, State]
+  extends RiotComponentExport[Props, State]
+     with RiotCoreComponent[Props, State]
 

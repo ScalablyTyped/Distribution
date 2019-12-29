@@ -30,7 +30,7 @@ object RunningScriptOptions {
     breakOnSigint: js.UndefOr[Boolean] = js.undefined,
     columnOffset: Int | Double = null,
     displayErrors: js.UndefOr[Boolean] = js.undefined,
-    filename: java.lang.String = null,
+    filename: String = null,
     lineOffset: Int | Double = null,
     timeout: Int | Double = null
   ): RunningScriptOptions = {

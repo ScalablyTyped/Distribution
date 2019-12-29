@@ -40,17 +40,6 @@ object IDLInterfaceMemberType {
     __obj.asInstanceOf[IDLInterfaceMemberType]
   }
   @scala.inline
-  def DeclarationMemberType(
-    extAttrs: js.Array[ExtendedAttribute],
-    idlType: js.Array[IDLTypeDescription],
-    readonly: Boolean,
-    `type`: iterable | setlike | maplike
-  ): IDLInterfaceMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLInterfaceMemberType]
-  }
-  @scala.inline
   def AttributeMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
@@ -77,6 +66,17 @@ object IDLInterfaceMemberType {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (idlType != null) __obj.updateDynamic("idlType")(idlType.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDLInterfaceMemberType]
+  }
+  @scala.inline
+  def DeclarationMemberType(
+    extAttrs: js.Array[ExtendedAttribute],
+    idlType: js.Array[IDLTypeDescription],
+    readonly: Boolean,
+    `type`: iterable | setlike | maplike
+  ): IDLInterfaceMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDLInterfaceMemberType]
   }
   @scala.inline

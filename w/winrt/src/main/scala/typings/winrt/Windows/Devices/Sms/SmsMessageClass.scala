@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Sms.SmsMessageClass.class0
-import typings.winrt.Windows.Devices.Sms.SmsMessageClass.class1
-import typings.winrt.Windows.Devices.Sms.SmsMessageClass.class2
-import typings.winrt.Windows.Devices.Sms.SmsMessageClass.class3
-import typings.winrt.Windows.Devices.Sms.SmsMessageClass.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

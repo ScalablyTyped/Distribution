@@ -1,7 +1,6 @@
 package typings.authmosphere
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.authmosphere.libSrcTokenDashCacheMod.TokenMap
 import typings.authmosphere.libSrcTypesOAuthConfigMod.TokenCacheOAuthConfig
 import typings.authmosphere.libSrcTypesTokenCacheConfigMod.CacheConfig
 import typings.authmosphere.libSrcTypesTokenCacheConfigMod.TokenCacheOptions

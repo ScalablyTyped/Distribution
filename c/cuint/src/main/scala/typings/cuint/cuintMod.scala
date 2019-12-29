@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.TopLevel
-import typings.cuint.cuintMod.Uint
-import typings.cuint.cuintMod.Uint64Constructor
-import typings.cuint.cuintMod.UintConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,10 +84,10 @@ object cuintMod extends js.Object {
   
   @js.native
   trait UintConstructor[T /* <: Uint */]
-    extends Instantiable2[(/* low */ Double) | (/* text */ String), /* high */ Double, T]
-       with // called as a constructor:
+    extends // called as a constructor:
   // tslint:disable-next-line:unified-signatures
-  Instantiable1[(/* low */ Double) | (/* text */ String), T] {
+  Instantiable1[(/* low */ Double) | (/* text */ String), T]
+       with Instantiable2[(/* low */ Double) | (/* text */ String), /* high */ Double, T] {
     // called as a function:
     def apply(low: Double): T = js.native
     def apply(low: Double, high: Double): T = js.native

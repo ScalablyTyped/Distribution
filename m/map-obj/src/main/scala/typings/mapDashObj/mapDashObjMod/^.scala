@@ -1,7 +1,6 @@
 package typings.mapDashObj.mapDashObjMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mapDashObj.mapDashObjStrings.`_backtick^_backtick`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ object ^ extends js.Object {
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType]
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in MappedObjectKeyType ]: MappedObjectValueType}
-    */ `_backtick^_backtick` with js.Any = js.native
+    */ typings.mapDashObj.mapDashObjStrings.^  with js.Any = js.native
   def apply[SourceObjectType /* <: js.Object */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
@@ -26,11 +25,11 @@ object ^ extends js.Object {
     options: Options
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in MappedObjectKeyType ]: MappedObjectValueType}
-    */ `_backtick^_backtick` with js.Any = js.native
+    */ typings.mapDashObj.mapDashObjStrings.^  with js.Any = js.native
   def apply[SourceObjectType /* <: StringDictionary[js.Any] */, TargetObjectType /* <: StringDictionary[js.Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
     options: TargetOptions[TargetObjectType]
-  ): TargetObjectType with `_backtick^_backtick` with js.Any = js.native
+  ): TargetObjectType with typings.mapDashObj.mapDashObjStrings.^  with js.Any = js.native
 }
 

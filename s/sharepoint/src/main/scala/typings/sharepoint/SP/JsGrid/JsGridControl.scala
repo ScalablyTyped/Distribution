@@ -4,11 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.microsoftDashAjax.Sys.UI.DomEvent
 import typings.sharepoint.Anon_Begin
 import typings.sharepoint.SP.JsGrid.Internal.DiffTracker
-import typings.sharepoint.SP.JsGrid.JsGridControl.GanttParameters
 import typings.sharepoint.SP.JsGrid.JsGridControl.Parameters
-import typings.sharepoint.SP.JsGrid.JsGridControl.PivotedGridParameters
-import typings.sharepoint.SP.JsGrid.JsGridControl.RowViewParameters
-import typings.sharepoint.SP.JsGrid.JsGridControl.TableViewParameters
 import typings.sharepoint.SP.Utilities.Set
 import typings.std.HTMLElement
 import scala.scalajs.js

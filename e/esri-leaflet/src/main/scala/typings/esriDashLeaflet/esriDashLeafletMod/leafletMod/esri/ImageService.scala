@@ -11,13 +11,12 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("leaflet", "esri.ImageService")
 @js.native
-class ImageService protected ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Service {
+class ImageService protected () extends Service {
   def this(options: ImageServiceOptions) = this()
   /**
     * Returns a new `L.esri.Query` object that can be used to query this service.
     */
-  def query(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Query = js.native
+  def query(): Query = js.native
 }
 
 @JSImport("leaflet", "esri.imageService")
@@ -28,6 +27,6 @@ object imageService extends js.Object {
     * ArcGIS Server that allows you to make requests to the API, as well as query and identify features on the
     * service.
     */
-  def apply(options: ImageServiceOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.ImageService = js.native
+  def apply(options: ImageServiceOptions): ImageService = js.native
 }
 

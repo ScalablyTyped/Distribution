@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
-import typings.node.Error
 import typings.std.DataView
+import typings.std.Error
 import typings.std.Float32Array
 import typings.std.Float64Array
 import typings.std.Int16Array

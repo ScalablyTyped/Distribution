@@ -2,6 +2,7 @@ package typings.dojo.dojox.widget
 
 import typings.dojo.Anon_Unwatch
 import typings.dojo.dijit._Widget
+import typings.dojo.dojo.date
 import typings.dojo.dojoStrings.active
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.contextRequire
@@ -237,7 +238,7 @@ class MultiSelectCalendar protected () extends _Widget {
     * @param dateToSelect
     * @param selectedDates
     */
-  def selectDate(dateToSelect: typings.dojo.dojo.date, selectedDates: js.Array[Date]): Unit = js.native
+  def selectDate(dateToSelect: date, selectedDates: js.Array[Date]): Unit = js.native
   @JSName("set")
   def set_active(property: active, value: Boolean): Unit = js.native
   @JSName("set")
@@ -276,17 +277,13 @@ class MultiSelectCalendar protected () extends _Widget {
     * @param selectedDates
     * @param unselectedDates
     */
-  def toggleDate(
-    dateToToggle: typings.dojo.dojo.date,
-    selectedDates: js.Array[Date],
-    unselectedDates: js.Array[Date]
-  ): Unit = js.native
+  def toggleDate(dateToToggle: date, selectedDates: js.Array[Date], unselectedDates: js.Array[Date]): Unit = js.native
   /**
     *
     * @param dateToUnselect
     * @param unselectedDates
     */
-  def unselectDate(dateToUnselect: typings.dojo.dojo.date, unselectedDates: js.Array[Date]): Unit = js.native
+  def unselectDate(dateToUnselect: date, unselectedDates: js.Array[Date]): Unit = js.native
   @JSName("watch")
   def watch_active(
     property: active,

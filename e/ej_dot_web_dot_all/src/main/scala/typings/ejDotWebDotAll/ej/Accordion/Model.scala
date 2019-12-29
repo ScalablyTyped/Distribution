@@ -20,7 +20,7 @@ trait Model extends js.Object {
   /** Specifies the ajaxSettings option to load the content to the accordion control.
     * @Default {null}
     */
-  var ajaxSettings: js.UndefOr[typings.ejDotWebDotAll.ej.Accordion.AjaxSettings] = js.undefined
+  var ajaxSettings: js.UndefOr[AjaxSettings] = js.undefined
   /** Triggered after AJAX success action. Arguments have URL, content, and current model values.
     */
   var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
@@ -139,7 +139,7 @@ object Model {
     ajaxBeforeLoad: /* e */ AjaxBeforeLoadEventArgs => Unit = null,
     ajaxError: /* e */ AjaxErrorEventArgs => Unit = null,
     ajaxLoad: /* e */ AjaxLoadEventArgs => Unit = null,
-    ajaxSettings: typings.ejDotWebDotAll.ej.Accordion.AjaxSettings = null,
+    ajaxSettings: AjaxSettings = null,
     ajaxSuccess: /* e */ AjaxSuccessEventArgs => Unit = null,
     allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     beforeActivate: /* e */ BeforeActivateEventArgs => Unit = null,

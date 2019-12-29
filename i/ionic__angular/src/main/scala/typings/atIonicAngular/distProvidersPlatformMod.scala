@@ -1,7 +1,6 @@
 package typings.atIonicAngular
 
 import typings.atAngularCore.atAngularCoreMod.NgZone
-import typings.atIonicAngular.distProvidersPlatformMod.BackButtonEmitter
 import typings.atIonicCore.atIonicCoreMod.BackButtonEventDetail
 import typings.atIonicCore.distTypesUtilsPlatformMod.Platforms
 import typings.rxjs.rxjsMod.Subject

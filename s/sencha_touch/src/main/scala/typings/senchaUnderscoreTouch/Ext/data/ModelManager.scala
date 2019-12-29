@@ -48,8 +48,8 @@ object ModelManager extends js.Object {
   		*/
   def create(): js.Any = js.native
   def create(data: js.Any): js.Any = js.native
-  def create(data: js.Any, name: java.lang.String): js.Any = js.native
-  def create(data: js.Any, name: java.lang.String, id: Double): js.Any = js.native
+  def create(data: js.Any, name: String): js.Any = js.native
+  def create(data: js.Any, name: String, id: Double): js.Any = js.native
   /** [Method]  */
   def destroy(): Unit = js.native
   /** [Method] Executes the specified function once for each item in the collection
@@ -64,7 +64,7 @@ object ModelManager extends js.Object {
   		* @returns Object The item, undefined if not found.
   		*/
   def get(): js.Any = js.native
-  def get(id: java.lang.String): js.Any = js.native
+  def get(id: String): js.Any = js.native
   /** [Method] Gets the number of items in the collection
   		* @returns Number The number of items in the collection.
   		*/
@@ -74,7 +74,7 @@ object ModelManager extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Returns the Ext data Model for a given model name
   		* @param id String/Object The id of the model or the model instance.
   		* @returns Ext.data.Model A model class.
@@ -92,16 +92,16 @@ object ModelManager extends js.Object {
   		* @returns Boolean Whether the type is registered.
   		*/
   def isRegistered(): Boolean = js.native
-  def isRegistered(`type`: java.lang.String): Boolean = js.native
+  def isRegistered(`type`: String): Boolean = js.native
   /** [Method] Registers a function that will be called when an item with the specified id is added to the manager
   		* @param id String The item id.
   		* @param fn Function The callback function. Called with a single parameter, the item.
   		* @param scope Object The scope (this reference) in which the callback is executed. Defaults to the item.
   		*/
   def onAvailable(): Unit = js.native
-  def onAvailable(id: java.lang.String): Unit = js.native
-  def onAvailable(id: java.lang.String, fn: js.Any): Unit = js.native
-  def onAvailable(id: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  def onAvailable(id: String): Unit = js.native
+  def onAvailable(id: String, fn: js.Any): Unit = js.native
+  def onAvailable(id: String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Registers an item to be managed
   		* @param item Object The item to register.
   		*/
@@ -113,8 +113,8 @@ object ModelManager extends js.Object {
   		* @returns Object
   		*/
   def registerType(): js.Any = js.native
-  def registerType(name: java.lang.String): js.Any = js.native
-  def registerType(name: java.lang.String, config: js.Any): js.Any = js.native
+  def registerType(name: String): js.Any = js.native
+  def registerType(name: String, config: js.Any): js.Any = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
   		*/

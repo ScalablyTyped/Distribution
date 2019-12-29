@@ -1,8 +1,5 @@
 package typings.sharedb
 
-import typings.sharedb.libClientMod.Doc
-import typings.sharedb.libClientMod.Error
-import typings.sharedb.libClientMod.Query
 import typings.std.WebSocket
 import typings.ws.wsMod.^
 import scala.scalajs.js

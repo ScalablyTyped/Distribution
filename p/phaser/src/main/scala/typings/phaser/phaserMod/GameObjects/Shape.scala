@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +19,8 @@ class Shape protected ()
     * @param type The internal type of the Shape.
     * @param data The data of the source shape geometry, if any.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
-  def this(scene: typings.phaser.Phaser.Scene, `type`: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, `type`: String, data: js.Any) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, `type`: String) = this()
+  def this(scene: Scene, `type`: String, data: js.Any) = this()
 }
 

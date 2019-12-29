@@ -22,7 +22,8 @@ class ProtectedViewWindow protected () extends js.Object {
   var Visible: Boolean = js.native
   var Width: Double = js.native
   var WindowState: WdWindowState = js.native
-  var `Word.ProtectedViewWindow_typekey`: ProtectedViewWindow = js.native
+  @JSName("Word.ProtectedViewWindow_typekey")
+  var WordDotProtectedViewWindow_typekey: ProtectedViewWindow = js.native
   def Activate(): Unit = js.native
   def Close(): Unit = js.native
   def Edit(): typings.activexDashWord.Word.Document = js.native

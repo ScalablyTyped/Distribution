@@ -3,8 +3,8 @@ package typings.ionic.commandsConfigBaseMod
 import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.BaseConfig
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.definitionsMod.IProjectConfig
-import typings.ionic.ionicNumbers.`false`
-import typings.ionic.ionicNumbers.`true`
+import typings.ionic.ionicBooleans.`false`
+import typings.ionic.ionicBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

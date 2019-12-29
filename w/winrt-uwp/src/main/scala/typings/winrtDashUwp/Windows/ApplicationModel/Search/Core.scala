@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.RequestingFocusOnKeyboardInputEventArgs
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.SearchSuggestion
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionKind
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionKind.query
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionKind.result
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionKind.separator
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionManager
-import typings.winrtDashUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionsRequestedEventArgs
 import typings.winrtDashUwp.Windows.Foundation.Collections.IObservableVector
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.TypedEventHandler

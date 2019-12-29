@@ -10,7 +10,7 @@ import typings.phantom.Anon_Height
 import typings.phantom.Anon_HeightWidth
 import typings.phantom.Anon_Left
 import typings.phantom.Anon_PageId
-import typings.phantom.phantomNumbers.`false`
+import typings.phantom.phantomBooleans.`false`
 import typings.phantom.phantomStrings.BackOrForward
 import typings.phantom.phantomStrings.FormResubmitted
 import typings.phantom.phantomStrings.FormSubmitted

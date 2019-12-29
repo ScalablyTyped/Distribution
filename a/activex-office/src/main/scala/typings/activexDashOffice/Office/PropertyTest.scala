@@ -12,7 +12,8 @@ class PropertyTest protected () extends js.Object {
   val Connector: MsoConnector = js.native
   val Creator: Double = js.native
   val Name: String = js.native
-  var `Office.PropertyTest_typekey`: PropertyTest = js.native
+  @JSName("Office.PropertyTest_typekey")
+  var OfficeDotPropertyTest_typekey: PropertyTest = js.native
   val SecondValue: js.Any = js.native
   val Value: js.Any = js.native
 }

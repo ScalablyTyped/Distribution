@@ -1,12 +1,12 @@
 package typings.atPhenomnomnominalTsquery.distSrcTsqueryDashTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.`!=`
-import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.`<=`
-import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.`<`
-import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.`=`
-import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.`>=`
-import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.`>`
+import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.Equalssign
+import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.ExclamationmarkEqualssign
+import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.Greaterthansign
+import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.GreaterthansignEqualssign
+import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.Lessthansign
+import typings.atPhenomnomnominalTsquery.atPhenomnomnominalTsqueryStrings.LessthansignEqualssign
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait TSQuerySelectorNode
   var index: TSQuerySelectorNode
   var left: TSQuerySelectorNode
   var name: String
-  var operator: `=` | `!=` | `<=` | `<` | `>=` | `>`
+  var operator: Equalssign | ExclamationmarkEqualssign | LessthansignEqualssign | Lessthansign | GreaterthansignEqualssign | Greaterthansign
   var right: TSQuerySelectorNode
   var selectors: js.Array[TSQuerySelectorNode]
   var subject: Boolean
@@ -33,7 +33,7 @@ object TSQuerySelectorNode {
     index: TSQuerySelectorNode,
     left: TSQuerySelectorNode,
     name: String,
-    operator: `=` | `!=` | `<=` | `<` | `>=` | `>`,
+    operator: Equalssign | ExclamationmarkEqualssign | LessthansignEqualssign | Lessthansign | GreaterthansignEqualssign | Greaterthansign,
     right: TSQuerySelectorNode,
     selectors: js.Array[TSQuerySelectorNode],
     subject: Boolean,

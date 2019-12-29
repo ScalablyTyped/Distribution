@@ -18,30 +18,30 @@ package object yandexDashMapsMod {
   type ISearchControlLayout = IExpandableControlLayout
   type ISelectableControlLayout = ILayout
   /* Rewritten from type alias, can be one of: 
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#opaque`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#geoObject`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#layer`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#transparent`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#silent`
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignopaque
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersigngeoObject
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignlayer
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersigntransparent
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignsilent
     - java.lang.String
   */
   type InteractivityModelKey = _InteractivityModelKey | String
   /* Rewritten from type alias, can be one of: 
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#placemark`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#pin`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#circle`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#rectangle`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#polyline`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`default#polygon`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`hotspot#placemark`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`hotspot#circle`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`hotspot#rectangle`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`hotspot#polyline`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`hotspot#polygon`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`html#balloon`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`html#hint`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`html#placemark`
-    - typings.yandexDashMaps.yandexDashMapsStrings.`html#rectangle`
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignplacemark
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignpin
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersigncircle
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignrectangle
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignpolyline
+    - typings.yandexDashMaps.yandexDashMapsStrings.defaultNumbersignpolygon
+    - typings.yandexDashMaps.yandexDashMapsStrings.hotspotNumbersignplacemark
+    - typings.yandexDashMaps.yandexDashMapsStrings.hotspotNumbersigncircle
+    - typings.yandexDashMaps.yandexDashMapsStrings.hotspotNumbersignrectangle
+    - typings.yandexDashMaps.yandexDashMapsStrings.hotspotNumbersignpolyline
+    - typings.yandexDashMaps.yandexDashMapsStrings.hotspotNumbersignpolygon
+    - typings.yandexDashMaps.yandexDashMapsStrings.htmlNumbersignballoon
+    - typings.yandexDashMaps.yandexDashMapsStrings.htmlNumbersignhint
+    - typings.yandexDashMaps.yandexDashMapsStrings.htmlNumbersignplacemark
+    - typings.yandexDashMaps.yandexDashMapsStrings.htmlNumbersignrectangle
     - java.lang.String
     - typings.yandexDashMaps.yandexDashMapsMod.IClassConstructor[typings.yandexDashMaps.yandexDashMapsMod.IOverlay]
     - js.Function3[

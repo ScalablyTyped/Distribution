@@ -1,8 +1,6 @@
 package typings.purl
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.purl.purlMod.ParameterMap
-import typings.purl.purlMod.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

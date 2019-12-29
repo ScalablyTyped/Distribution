@@ -41,11 +41,13 @@ trait JSONGameObject extends js.Object {
   /**
     * The horizontal origin of this Game Object.
     */
-  var `origin.x`: Double
+  @JSName("origin.x")
+  var originDotx: Double
   /**
     * The vertical origin of this Game Object.
     */
-  var `origin.y`: Double
+  @JSName("origin.y")
+  var originDoty: Double
   /**
     * The angle of this Game Object in radians.
     */
@@ -57,11 +59,13 @@ trait JSONGameObject extends js.Object {
   /**
     * The horizontal scale of this Game Object.
     */
-  var `scale.x`: Double
+  @JSName("scale.x")
+  var scaleDotx: Double
   /**
     * The vertical scale of this Game Object.
     */
-  var `scale.y`: Double
+  @JSName("scale.y")
+  var scaleDoty: Double
   /**
     * The Scale Mode being used by this Game Object.
     */
@@ -99,12 +103,12 @@ object JSONGameObject {
     frameKey: String,
     name: String,
     origin: js.Object,
-    `origin.x`: Double,
-    `origin.y`: Double,
+    originDotx: Double,
+    originDoty: Double,
     rotation: Double,
     scale: js.Object,
-    `scale.x`: Double,
-    `scale.y`: Double,
+    scaleDotx: Double,
+    scaleDoty: Double,
     scaleMode: integer,
     textureKey: String,
     `type`: String,
@@ -113,10 +117,10 @@ object JSONGameObject {
     y: Double
   ): JSONGameObject = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blendMode = blendMode.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], flipX = flipX.asInstanceOf[js.Any], flipY = flipY.asInstanceOf[js.Any], frameKey = frameKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleMode = scaleMode.asInstanceOf[js.Any], textureKey = textureKey.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("origin.x")(`origin.x`.asInstanceOf[js.Any])
-    __obj.updateDynamic("origin.y")(`origin.y`.asInstanceOf[js.Any])
-    __obj.updateDynamic("scale.x")(`scale.x`.asInstanceOf[js.Any])
-    __obj.updateDynamic("scale.y")(`scale.y`.asInstanceOf[js.Any])
+    __obj.updateDynamic("origin.x")(originDotx.asInstanceOf[js.Any])
+    __obj.updateDynamic("origin.y")(originDoty.asInstanceOf[js.Any])
+    __obj.updateDynamic("scale.x")(scaleDotx.asInstanceOf[js.Any])
+    __obj.updateDynamic("scale.y")(scaleDoty.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONGameObject]
   }

@@ -1,11 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.Search.MatchCode.ambiguous
-import typings.bingmaps.Microsoft.Maps.Search.MatchCode.good
-import typings.bingmaps.Microsoft.Maps.Search.MatchCode.modified
-import typings.bingmaps.Microsoft.Maps.Search.MatchCode.none
-import typings.bingmaps.Microsoft.Maps.Search.MatchCode.upHierarchy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

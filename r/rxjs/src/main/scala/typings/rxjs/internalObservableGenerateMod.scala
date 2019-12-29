@@ -1,10 +1,5 @@
 package typings.rxjs
 
-import typings.rxjs.internalObservableGenerateMod.ConditionFunc
-import typings.rxjs.internalObservableGenerateMod.GenerateBaseOptions
-import typings.rxjs.internalObservableGenerateMod.GenerateOptions
-import typings.rxjs.internalObservableGenerateMod.IterateFunc
-import typings.rxjs.internalObservableGenerateMod.ResultFunc
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.internalTypesMod.SchedulerLike
 import scala.scalajs.js

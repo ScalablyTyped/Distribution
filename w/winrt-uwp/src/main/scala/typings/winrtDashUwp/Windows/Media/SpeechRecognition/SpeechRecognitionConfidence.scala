@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.high
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.low
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.medium
-import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.rejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

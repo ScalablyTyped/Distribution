@@ -12,7 +12,8 @@ class AddIn protected () extends js.Object {
   val CLSID: String = js.native
   val Comments: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.AddIn_typekey`: AddIn = js.native
+  @JSName("Excel.AddIn_typekey")
+  var ExcelDotAddIn_typekey: AddIn = js.native
   val FullName: String = js.native
   var Installed: Boolean = js.native
   val IsOpen: Boolean = js.native

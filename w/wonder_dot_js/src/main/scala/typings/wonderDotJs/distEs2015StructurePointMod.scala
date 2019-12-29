@@ -1,6 +1,5 @@
 package typings.wonderDotJs
 
-import typings.wonderDotJs.distEs2015StructurePointMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

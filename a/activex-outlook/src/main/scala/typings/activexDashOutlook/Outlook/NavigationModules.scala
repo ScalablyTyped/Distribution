@@ -10,7 +10,8 @@ class NavigationModules protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.NavigationModules_typekey`: NavigationModules = js.native
+  @JSName("Outlook.NavigationModules_typekey")
+  var OutlookDotNavigationModules_typekey: NavigationModules = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def GetNavigationModule(ModuleType: OlNavigationModuleType): NavigationModule = js.native

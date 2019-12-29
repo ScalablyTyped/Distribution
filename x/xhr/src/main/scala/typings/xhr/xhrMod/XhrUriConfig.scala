@@ -2,12 +2,12 @@ package typings.xhr.xhrMod
 
 import typings.std.XMLHttpRequest
 import typings.xhr.xhrStrings.DELETE
-import typings.xhr.xhrStrings.Empty
 import typings.xhr.xhrStrings.GET
 import typings.xhr.xhrStrings.HEAD
 import typings.xhr.xhrStrings.OPTIONS
 import typings.xhr.xhrStrings.POST
 import typings.xhr.xhrStrings.PUT
+import typings.xhr.xhrStrings._empty
 import typings.xhr.xhrStrings.arraybuffer
 import typings.xhr.xhrStrings.blob
 import typings.xhr.xhrStrings.document
@@ -31,7 +31,7 @@ object XhrUriConfig {
     json: js.UndefOr[Boolean] = js.undefined,
     method: DELETE | GET | HEAD | OPTIONS | POST | PUT = null,
     password: String = null,
-    responseType: Empty | arraybuffer | blob | document | json | text = null,
+    responseType: _empty | arraybuffer | blob | document | json | text = null,
     sync: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
     useXDR: js.UndefOr[Boolean] = js.undefined,

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADODB.Stream")
 @js.native
 class Stream protected () extends js.Object {
-  var `ADODB.Stream_typekey`: Stream = js.native
+  @JSName("ADODB.Stream_typekey")
+  var ADODBDotStream_typekey: Stream = js.native
   var Charset: String = js.native
   val EOS: Boolean = js.native
   var LineSeparator: LineSeparatorEnum = js.native

@@ -103,10 +103,10 @@ trait Animation extends EventTarget {
 @js.native
 object Animation
   extends Instantiable0[Animation]
+     with Instantiable1[/* effect */ AnimationEffect, Animation]
      with Instantiable2[
       (/* effect */ AnimationEffect) | (/* effect */ Null), 
       /* timeline */ AnimationTimeline, 
       Animation
     ]
-     with Instantiable1[/* effect */ AnimationEffect, Animation]
 

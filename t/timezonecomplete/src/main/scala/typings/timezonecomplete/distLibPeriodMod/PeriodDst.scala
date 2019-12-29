@@ -1,9 +1,6 @@
 package typings.timezonecomplete.distLibPeriodMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibPeriodMod.PeriodDst.MAX
-import typings.timezonecomplete.distLibPeriodMod.PeriodDst.RegularIntervals
-import typings.timezonecomplete.distLibPeriodMod.PeriodDst.RegularLocalTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

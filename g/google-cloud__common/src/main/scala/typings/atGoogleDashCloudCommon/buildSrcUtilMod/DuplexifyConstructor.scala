@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.atGoogleDashCloudCommon.atGoogleDashCloudCommonNumbers.`false`
+import typings.atGoogleDashCloudCommon.atGoogleDashCloudCommonBooleans.`false`
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import scala.scalajs.js
@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DuplexifyConstructor
-  extends Instantiable0[Duplexify]
-     with Instantiable2[
-      `false` | (/* writable */ Null) | (/* writable */ Writable), 
-      `false` | (/* readable */ Readable), 
-      Duplexify
-    ]
-     with Instantiable1[`false` | (/* writable */ Writable), Duplexify]
-     with Instantiable3[
+  extends Instantiable3[
       `false` | (/* writable */ Null) | (/* writable */ Writable), 
       `false` | (/* readable */ Null) | (/* readable */ Readable), 
       /* options */ DuplexifyOptions, 
+      Duplexify
+    ]
+     with Instantiable0[Duplexify]
+     with Instantiable1[`false` | (/* writable */ Writable), Duplexify]
+     with Instantiable2[
+      `false` | (/* writable */ Null) | (/* writable */ Writable), 
+      `false` | (/* readable */ Readable), 
       Duplexify
     ] {
   def apply(): Duplexify = js.native

@@ -1,9 +1,9 @@
 package typings.underscore.underscoreMod
 
 import typings.std.Pick
+import typings.underscore.underscoreBooleans.`false`
 import typings.underscore.underscoreNumbers.`0`
-import typings.underscore.underscoreNumbers.`false`
-import typings.underscore.underscoreStrings.Empty
+import typings.underscore.underscoreStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -135,7 +135,7 @@ trait UnderscoreStatic extends js.Object {
     * @param array Array to compact.
     * @return Copy of `array` without false values.
     **/
-  def compact[T](array: List[js.UndefOr[T | Null | `false` | Empty | `0`]]): js.Array[T] = js.native
+  def compact[T](array: List[js.UndefOr[T | Null | `false` | _empty | `0`]]): js.Array[T] = js.native
   /**
     * Returns the composition of a list of functions, where each function consumes the return value of the
     * function that follows. In math terms, composing the functions f(), g(), and h() produces f(g(h())).

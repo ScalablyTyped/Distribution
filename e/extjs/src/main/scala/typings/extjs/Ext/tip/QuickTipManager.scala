@@ -45,11 +45,11 @@ object QuickTipManager extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Gets the single QuickTip instance used to show tips from all registered elements
   		* @returns Ext.tip.QuickTip
   		*/
-  def getQuickTip(): typings.extjs.Ext.tip.IQuickTip = js.native
+  def getQuickTip(): IQuickTip = js.native
   /** [Method] Initializes the global QuickTips instance and prepare any quick tips
   		* @param autoRender Boolean True to render the QuickTips container immediately to preload images.
   		* @param config Object config object for the created QuickTip. By default, the QuickTip class is instantiated, but this can be changed by supplying an xtype property or a className property in this object. All other properties on this object are configuration for the created component.

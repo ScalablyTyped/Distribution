@@ -22,7 +22,8 @@ class SlideShowView protected () extends js.Object {
   val Parent: js.Any = js.native
   val PointerColor: ColorFormat = js.native
   var PointerType: PpSlideShowPointerType = js.native
-  var `PowerPoint.SlideShowView_typekey`: SlideShowView = js.native
+  @JSName("PowerPoint.SlideShowView_typekey")
+  var PowerPointDotSlideShowView_typekey: SlideShowView = js.native
   val PresentationElapsedTime: Double = js.native
   val Slide: typings.activexDashPowerpoint.PowerPoint.Slide = js.native
   var SlideElapsedTime: Double = js.native

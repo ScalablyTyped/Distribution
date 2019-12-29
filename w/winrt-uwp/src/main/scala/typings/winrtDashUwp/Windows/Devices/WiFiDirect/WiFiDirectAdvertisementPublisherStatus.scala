@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.aborted
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.created
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.started
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

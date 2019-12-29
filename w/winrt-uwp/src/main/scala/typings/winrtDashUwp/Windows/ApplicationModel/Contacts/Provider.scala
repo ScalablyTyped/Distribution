@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.added
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.alreadyAdded
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.unavailable
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVector
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.EventHandler

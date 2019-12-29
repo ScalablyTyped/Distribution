@@ -62,7 +62,7 @@ object aliDashAppStrings {
   sealed trait GET extends js.Object
   
   @js.native
-  sealed trait `HH:mm` extends js.Object
+  sealed trait HHColonmm extends js.Object
   
   @js.native
   sealed trait LBS extends js.Object
@@ -361,7 +361,7 @@ object aliDashAppStrings {
   sealed trait `yyyy-MM-dd` extends js.Object
   
   @js.native
-  sealed trait `yyyy-MM-dd HH:mm` extends js.Object
+  sealed trait `yyyy-MM-dd HHColonmm` extends js.Object
   
   @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]
@@ -396,7 +396,7 @@ object aliDashAppStrings {
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
-  def `HH:mm`: `HH:mm` = "HH:mm".asInstanceOf[`HH:mm`]
+  def HHColonmm: HHColonmm = "HH:mm".asInstanceOf[HHColonmm]
   @scala.inline
   def LBS: LBS = "LBS".asInstanceOf[LBS]
   @scala.inline
@@ -582,6 +582,6 @@ object aliDashAppStrings {
   @scala.inline
   def `yyyy-MM-dd`: `yyyy-MM-dd` = "yyyy-MM-dd".asInstanceOf[`yyyy-MM-dd`]
   @scala.inline
-  def `yyyy-MM-dd HH:mm`: `yyyy-MM-dd HH:mm` = "yyyy-MM-dd HH:mm".asInstanceOf[`yyyy-MM-dd HH:mm`]
+  def `yyyy-MM-dd HHColonmm`: `yyyy-MM-dd HHColonmm` = "yyyy-MM-dd HH:mm".asInstanceOf[`yyyy-MM-dd HHColonmm`]
 }
 

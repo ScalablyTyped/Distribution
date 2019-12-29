@@ -2,9 +2,9 @@ package typings.senchaUnderscoreTouch.Ext.lib
 
 import typings.senchaUnderscoreTouch.Ext.Array
 import typings.senchaUnderscoreTouch.Ext.IClass
-import typings.senchaUnderscoreTouch.Ext.IElement
 import typings.senchaUnderscoreTouch.Ext.IEvented
 import typings.senchaUnderscoreTouch.Ext.data.IModel
+import typings.senchaUnderscoreTouch.Ext.dom.IElement
 import typings.senchaUnderscoreTouch.Ext.mixin.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,14 +18,14 @@ trait IComponent extends IEvented {
   		*/
   var addCls: js.UndefOr[
     js.Function3[
-      /* cls */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
+      /* cls */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var baseCls: js.UndefOr[java.lang.String] = js.undefined
+  var baseCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number/String) */
   var border: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number/String) */
@@ -35,7 +35,7 @@ trait IComponent extends IEvented {
   /** [Config Option] (String/String[]) */
   var cls: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var componentCls: js.UndefOr[java.lang.String] = js.undefined
+  var componentCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.Element/HTMLElement/String) */
   var contentEl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object) */
@@ -45,11 +45,11 @@ trait IComponent extends IEvented {
   /** [Config Option] (Boolean) */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var disabledCls: js.UndefOr[java.lang.String] = js.undefined
+  var disabledCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var dock: js.UndefOr[java.lang.String] = js.undefined
+  var dock: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var docked: js.UndefOr[java.lang.String] = js.undefined
+  var docked: js.UndefOr[String] = js.undefined
   /** [Method] Enables this Component */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String/Mixed) */
@@ -61,7 +61,7 @@ trait IComponent extends IEvented {
   /** [Config Option] (Boolean) */
   var floating: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var floatingCls: js.UndefOr[java.lang.String] = js.undefined
+  var floatingCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var fullscreen: js.UndefOr[Boolean] = js.undefined
   /** [Method] Prepares information on aligning this to component using alignment
@@ -74,7 +74,7 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of baseCls
   		* @returns String
   		*/
-  var getBaseCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getBaseCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of border
   		* @returns Number/String
   		*/
@@ -106,15 +106,15 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of disabledCls
   		* @returns String
   		*/
-  var getDisabledCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDisabledCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of docked
   		* @returns String
   		*/
-  var getDocked: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDocked: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Retrieves the top level element representing this component
   		* @returns Ext.dom.Element
   		*/
-  var getEl: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.dom.IElement]] = js.undefined
+  var getEl: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Returns the value of enterAnimation
   		* @returns String/Mixed
   		*/
@@ -130,7 +130,7 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of floatingCls
   		* @returns String
   		*/
-  var getFloatingCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFloatingCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of height
   		* @returns Number/String
   		*/
@@ -142,7 +142,7 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of hiddenCls
   		* @returns String
   		*/
-  var getHiddenCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getHiddenCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of hideAnimation
   		* @returns String/Mixed
   		*/
@@ -154,7 +154,7 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of itemId
   		* @returns String
   		*/
-  var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getItemId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of left
   		* @returns Number/String
   		*/
@@ -198,7 +198,7 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of renderTo
   		* @returns Ext.Element
   		*/
-  var getRenderTo: js.UndefOr[js.Function0[IElement]] = js.undefined
+  var getRenderTo: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.IElement]] = js.undefined
   /** [Method] Returns the value of right
   		* @returns Number/String
   		*/
@@ -218,7 +218,7 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of styleHtmlCls
   		* @returns String
   		*/
-  var getStyleHtmlCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getStyleHtmlCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of styleHtmlContent
   		* @returns Boolean
   		*/
@@ -234,11 +234,11 @@ trait IComponent extends IEvented {
   /** [Method] Returns the value of tplWriteMode
   		* @returns String
   		*/
-  var getTplWriteMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTplWriteMode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of ui
   		* @returns String
   		*/
-  var getUi: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUi: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of width
   		* @returns Number/String
   		*/
@@ -246,7 +246,7 @@ trait IComponent extends IEvented {
   /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
   		* @returns String The xtype hierarchy string.
   		*/
-  var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getXTypes: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of zIndex
   		* @returns Number
   		*/
@@ -260,7 +260,7 @@ trait IComponent extends IEvented {
   /** [Config Option] (Boolean) */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var hiddenCls: js.UndefOr[java.lang.String] = js.undefined
+  var hiddenCls: js.UndefOr[String] = js.undefined
   /** [Method] Hides this Component optionally using an animation
   		* @param animation Object/Boolean You can specify an animation here or a bool to use the hideAnimation config.
   		* @returns Ext.Component
@@ -273,7 +273,7 @@ trait IComponent extends IEvented {
   /** [Config Option] (String/Ext.Element/HTMLElement) */
   var html: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Method] Allows addition of behavior to the rendering phase  */
   var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns true if this Component is currently disabled
@@ -290,10 +290,10 @@ trait IComponent extends IEvented {
   		* @returns Boolean true if this component descends from the specified xtype, false otherwise.
   		*/
   var isXType: js.UndefOr[
-    js.Function2[/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean], Boolean]
+    js.Function2[/* xtype */ js.UndefOr[String], /* shallow */ js.UndefOr[Boolean], Boolean]
   ] = js.undefined
   /** [Config Option] (String) */
-  var itemId: js.UndefOr[java.lang.String] = js.undefined
+  var itemId: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Number/String) */
@@ -325,14 +325,14 @@ trait IComponent extends IEvented {
   		*/
   var removeCls: js.UndefOr[
     js.Function3[
-      /* cls */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
+      /* cls */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
   /** [Config Option] (Ext.Element) */
-  var renderTo: js.UndefOr[IElement] = js.undefined
+  var renderTo: js.UndefOr[typings.senchaUnderscoreTouch.Ext.IElement] = js.undefined
   /** [Method] Replaces specified classes with the newly specified classes
   		* @param oldCls String The class(es) to remove.
   		* @param newCls String The class(es) to add.
@@ -341,10 +341,10 @@ trait IComponent extends IEvented {
   		*/
   var replaceCls: js.UndefOr[
     js.Function4[
-      /* oldCls */ js.UndefOr[java.lang.String], 
-      /* newCls */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
+      /* oldCls */ js.UndefOr[String], 
+      /* newCls */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
@@ -357,7 +357,7 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of baseCls
   		* @param baseCls String The new value.
   		*/
-  var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of border
   		* @param border Number/String The new value.
   		*/
@@ -389,11 +389,11 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of disabledCls
   		* @param disabledCls String The new value.
   		*/
-  var setDisabledCls: js.UndefOr[js.Function1[/* disabledCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDisabledCls: js.UndefOr[js.Function1[/* disabledCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of docked
   		* @param docked String The new value.
   		*/
-  var setDocked: js.UndefOr[js.Function1[/* docked */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDocked: js.UndefOr[js.Function1[/* docked */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of draggable
   		* @param draggable Object The new value.
   		*/
@@ -417,7 +417,7 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of floatingCls
   		* @param floatingCls String The new value.
   		*/
-  var setFloatingCls: js.UndefOr[js.Function1[/* floatingCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFloatingCls: js.UndefOr[js.Function1[/* floatingCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of height
   		* @param height Number/String The new value.
   		*/
@@ -429,7 +429,7 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of hiddenCls
   		* @param hiddenCls String The new value.
   		*/
-  var setHiddenCls: js.UndefOr[js.Function1[/* hiddenCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHiddenCls: js.UndefOr[js.Function1[/* hiddenCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of hideAnimation
   		* @param hideAnimation String/Mixed The new value.
   		*/
@@ -441,7 +441,7 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of itemId
   		* @param itemId String The new value.
   		*/
-  var setItemId: js.UndefOr[js.Function1[/* itemId */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setItemId: js.UndefOr[js.Function1[/* itemId */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of left
   		* @param left Number/String The new value.
   		*/
@@ -481,7 +481,9 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of renderTo
   		* @param renderTo Ext.Element The new value.
   		*/
-  var setRenderTo: js.UndefOr[js.Function1[/* renderTo */ js.UndefOr[IElement], Unit]] = js.undefined
+  var setRenderTo: js.UndefOr[
+    js.Function1[/* renderTo */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.IElement], Unit]
+  ] = js.undefined
   /** [Method] Sets the value of right
   		* @param right Number/String The new value.
   		*/
@@ -506,7 +508,7 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of styleHtmlCls
   		* @param styleHtmlCls String The new value.
   		*/
-  var setStyleHtmlCls: js.UndefOr[js.Function1[/* styleHtmlCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setStyleHtmlCls: js.UndefOr[js.Function1[/* styleHtmlCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of styleHtmlContent
   		* @param styleHtmlContent Boolean The new value.
   		*/
@@ -522,11 +524,11 @@ trait IComponent extends IEvented {
   /** [Method] Sets the value of tplWriteMode
   		* @param tplWriteMode String The new value.
   		*/
-  var setTplWriteMode: js.UndefOr[js.Function1[/* tplWriteMode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTplWriteMode: js.UndefOr[js.Function1[/* tplWriteMode */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of ui
   		* @param ui String The new value.
   		*/
-  var setUi: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUi: js.UndefOr[js.Function1[/* ui */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of width
   		* @param width Number/String The new value.
   		*/
@@ -547,18 +549,14 @@ trait IComponent extends IEvented {
   		* @param alignment String The specific alignment.
   		*/
   var showBy: js.UndefOr[
-    js.Function2[
-      /* component */ js.UndefOr[this.type], 
-      /* alignment */ js.UndefOr[java.lang.String], 
-      Unit
-    ]
+    js.Function2[/* component */ js.UndefOr[this.type], /* alignment */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Config Option] (Boolean) */
   var stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String/Object) */
   var style: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var styleHtmlCls: js.UndefOr[java.lang.String] = js.undefined
+  var styleHtmlCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var styleHtmlContent: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Number/String) */
@@ -566,18 +564,15 @@ trait IComponent extends IEvented {
   /** [Config Option] (String/String[]/Ext.Template/Ext.XTemplate[]) */
   var tpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var tplWriteMode: js.UndefOr[java.lang.String] = js.undefined
+  var tplWriteMode: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var ui: js.UndefOr[java.lang.String] = js.undefined
+  var ui: js.UndefOr[String] = js.undefined
   /** [Method] Walks up the ownerCt axis looking for an ancestor Container which matches the passed simple selector
   		* @param selector String The simple selector to test.
   		* @returns Ext.Container The matching ancestor Container (or undefined if no match was found).
   		*/
   var up: js.UndefOr[
-    js.Function1[
-      /* selector */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.IContainer
-    ]
+    js.Function1[/* selector */ js.UndefOr[String], typings.senchaUnderscoreTouch.Ext.IContainer]
   ] = js.undefined
   /** [Method] Updates the HTML content of the Component  */
   var update: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -591,7 +586,7 @@ trait IComponent extends IEvented {
   /** [Config Option] (Number/String) */
   var width: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String[]) */
-  var xtype: js.UndefOr[java.lang.String] = js.undefined
+  var xtype: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
@@ -601,13 +596,13 @@ object IComponent {
   def apply(
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
+    addCls: (/* cls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    baseCls: java.lang.String = null,
+    baseCls: String = null,
     border: js.Any = null,
     bottom: js.Any = null,
     bubbleEvents: js.Any = null,
@@ -617,29 +612,29 @@ object IComponent {
     centered: js.UndefOr[Boolean] = js.undefined,
     clearListeners: () => Unit = null,
     cls: js.Any = null,
-    componentCls: java.lang.String = null,
+    componentCls: String = null,
     config: js.Any = null,
     contentEl: js.Any = null,
     data: js.Any = null,
     destroy: () => Unit = null,
     disable: () => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledCls: java.lang.String = null,
-    dock: java.lang.String = null,
-    docked: java.lang.String = null,
+    disabledCls: String = null,
+    dock: String = null,
+    docked: String = null,
     enable: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     enterAnimation: js.Any = null,
     exitAnimation: js.Any = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     flex: Int | Double = null,
     floating: js.UndefOr[Boolean] = js.undefined,
-    floatingCls: java.lang.String = null,
+    floatingCls: String = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     getAlignmentInfo: (/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any]) => Unit = null,
-    getBaseCls: () => java.lang.String = null,
+    getBaseCls: () => String = null,
     getBorder: () => _ = null,
     getBottom: () => _ = null,
     getBubbleEvents: () => _ = null,
@@ -648,21 +643,21 @@ object IComponent {
     getContentEl: () => _ = null,
     getData: () => _ = null,
     getDisabled: () => Boolean = null,
-    getDisabledCls: () => java.lang.String = null,
-    getDocked: () => java.lang.String = null,
-    getEl: () => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    getDisabledCls: () => String = null,
+    getDocked: () => String = null,
+    getEl: () => IElement = null,
     getEnterAnimation: () => _ = null,
     getExitAnimation: () => _ = null,
     getFlex: () => Double = null,
-    getFloatingCls: () => java.lang.String = null,
+    getFloatingCls: () => String = null,
     getHeight: () => _ = null,
     getHidden: () => Boolean = null,
-    getHiddenCls: () => java.lang.String = null,
+    getHiddenCls: () => String = null,
     getHideAnimation: () => _ = null,
     getHtml: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getItemId: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getItemId: () => String = null,
     getLeft: () => _ = null,
     getListeners: () => _ = null,
     getMargin: () => _ = null,
@@ -671,40 +666,40 @@ object IComponent {
     getMinHeight: () => _ = null,
     getMinWidth: () => _ = null,
     getPadding: () => _ = null,
-    getParent: () => typings.senchaUnderscoreTouch.Ext.lib.IComponent = null,
+    getParent: () => IComponent = null,
     getPlugins: () => _ = null,
     getRecord: () => IModel = null,
-    getRenderTo: () => IElement = null,
+    getRenderTo: () => typings.senchaUnderscoreTouch.Ext.IElement = null,
     getRight: () => _ = null,
     getShowAnimation: () => _ = null,
     getSize: () => _ = null,
     getStyle: () => _ = null,
-    getStyleHtmlCls: () => java.lang.String = null,
+    getStyleHtmlCls: () => String = null,
     getStyleHtmlContent: () => Boolean = null,
     getTop: () => _ = null,
     getTpl: () => _ = null,
-    getTplWriteMode: () => java.lang.String = null,
-    getUi: () => java.lang.String = null,
+    getTplWriteMode: () => String = null,
+    getUi: () => String = null,
     getWidth: () => _ = null,
-    getXTypes: () => java.lang.String = null,
+    getXTypes: () => String = null,
     getZIndex: () => Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasParent: () => Boolean = null,
     height: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    hiddenCls: java.lang.String = null,
-    hide: /* animation */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.lib.IComponent = null,
+    hiddenCls: String = null,
+    hide: /* animation */ js.UndefOr[js.Any] => IComponent = null,
     hideAnimation: js.Any = null,
     hideOnMaskTap: js.UndefOr[Boolean] = js.undefined,
     html: js.Any = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initialize: () => Unit = null,
     isDisabled: () => Boolean = null,
     isHidden: () => Boolean = null,
-    isXType: (/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean]) => Boolean = null,
-    itemId: java.lang.String = null,
+    isXType: (/* xtype */ js.UndefOr[String], /* shallow */ js.UndefOr[Boolean]) => Boolean = null,
+    itemId: String = null,
     layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined,
     left: js.Any = null,
     listeners: js.Any = null,
@@ -718,7 +713,7 @@ object IComponent {
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     monitorOrientation: js.UndefOr[Boolean] = js.undefined,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     padding: js.Any = null,
@@ -728,17 +723,17 @@ object IComponent {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeCls: (/* cls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    renderTo: IElement = null,
-    replaceCls: (/* oldCls */ js.UndefOr[java.lang.String], /* newCls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
+    renderTo: typings.senchaUnderscoreTouch.Ext.IElement = null,
+    replaceCls: (/* oldCls */ js.UndefOr[String], /* newCls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
     resetFloating: () => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     right: js.Any = null,
     scroll: js.Any = null,
     self: IClass = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[String] => Unit = null,
     setBorder: /* border */ js.UndefOr[js.Any] => Unit = null,
     setBottom: /* bottom */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
@@ -747,20 +742,20 @@ object IComponent {
     setContentEl: /* contentEl */ js.UndefOr[js.Any] => Unit = null,
     setData: /* data */ js.UndefOr[js.Any] => Unit = null,
     setDisabled: /* disabled */ js.UndefOr[Boolean] => Unit = null,
-    setDisabledCls: /* disabledCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setDocked: /* docked */ js.UndefOr[java.lang.String] => Unit = null,
+    setDisabledCls: /* disabledCls */ js.UndefOr[String] => Unit = null,
+    setDocked: /* docked */ js.UndefOr[String] => Unit = null,
     setDraggable: /* draggable */ js.UndefOr[js.Any] => Unit = null,
     setEnterAnimation: /* enterAnimation */ js.UndefOr[js.Any] => Unit = null,
     setExitAnimation: /* exitAnimation */ js.UndefOr[js.Any] => Unit = null,
     setFlex: /* flex */ js.UndefOr[Double] => Unit = null,
     setFloating: /* floating */ js.UndefOr[Boolean] => Unit = null,
-    setFloatingCls: /* floatingCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setFloatingCls: /* floatingCls */ js.UndefOr[String] => Unit = null,
     setHeight: /* height */ js.UndefOr[js.Any] => Unit = null,
     setHidden: /* hidden */ js.UndefOr[Boolean] => Unit = null,
-    setHiddenCls: /* hiddenCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setHiddenCls: /* hiddenCls */ js.UndefOr[String] => Unit = null,
     setHideAnimation: /* hideAnimation */ js.UndefOr[js.Any] => Unit = null,
     setHtml: /* html */ js.UndefOr[js.Any] => Unit = null,
-    setItemId: /* itemId */ js.UndefOr[java.lang.String] => Unit = null,
+    setItemId: /* itemId */ js.UndefOr[String] => Unit = null,
     setLeft: /* left */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setMargin: /* margin */ js.UndefOr[js.Any] => Unit = null,
@@ -771,43 +766,43 @@ object IComponent {
     setPadding: /* padding */ js.UndefOr[js.Any] => Unit = null,
     setPlugins: /* plugins */ js.UndefOr[js.Any] => Unit = null,
     setRecord: /* record */ js.UndefOr[IModel] => Unit = null,
-    setRenderTo: /* renderTo */ js.UndefOr[IElement] => Unit = null,
+    setRenderTo: /* renderTo */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.IElement] => Unit = null,
     setRight: /* right */ js.UndefOr[js.Any] => Unit = null,
     setScrollable: () => Unit = null,
     setShowAnimation: /* showAnimation */ js.UndefOr[js.Any] => Unit = null,
     setSize: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit = null,
     setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
-    setStyleHtmlCls: /* styleHtmlCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setStyleHtmlCls: /* styleHtmlCls */ js.UndefOr[String] => Unit = null,
     setStyleHtmlContent: /* styleHtmlContent */ js.UndefOr[Boolean] => Unit = null,
     setTop: /* top */ js.UndefOr[js.Any] => Unit = null,
     setTpl: /* tpl */ js.UndefOr[js.Any] => Unit = null,
-    setTplWriteMode: /* tplWriteMode */ js.UndefOr[java.lang.String] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
+    setTplWriteMode: /* tplWriteMode */ js.UndefOr[String] => Unit = null,
+    setUi: /* ui */ js.UndefOr[String] => Unit = null,
     setWidth: /* width */ js.UndefOr[js.Any] => Unit = null,
     setZIndex: /* zIndex */ js.UndefOr[Double] => Unit = null,
-    show: /* animation */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.lib.IComponent = null,
+    show: /* animation */ js.UndefOr[js.Any] => IComponent = null,
     showAnimation: js.Any = null,
-    showBy: (/* component */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.lib.IComponent], /* alignment */ js.UndefOr[java.lang.String]) => Unit = null,
+    showBy: (/* component */ js.UndefOr[IComponent], /* alignment */ js.UndefOr[String]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined,
     style: js.Any = null,
-    styleHtmlCls: java.lang.String = null,
+    styleHtmlCls: String = null,
     styleHtmlContent: js.UndefOr[Boolean] = js.undefined,
     suspendEvents: () => Unit = null,
     top: js.Any = null,
     tpl: js.Any = null,
-    tplWriteMode: java.lang.String = null,
-    ui: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    tplWriteMode: String = null,
+    ui: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    up: /* selector */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.IContainer = null,
+    up: /* selector */ js.UndefOr[String] => typings.senchaUnderscoreTouch.Ext.IContainer = null,
     update: () => Unit = null,
     updateStyleHtmlCls: (/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     width: js.Any = null,
-    xtype: java.lang.String = null,
+    xtype: String = null,
     zIndex: Int | Double = null
   ): IComponent = {
     val __obj = js.Dynamic.literal()

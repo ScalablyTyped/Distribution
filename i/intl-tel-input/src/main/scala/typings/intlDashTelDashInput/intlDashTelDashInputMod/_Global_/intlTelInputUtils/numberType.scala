@@ -1,18 +1,6 @@
 package typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.FIXED_LINE
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.FIXED_LINE_OR_MOBILE
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.MOBILE
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.PAGER
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.PERSONAL_NUMBER
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.PREMIUM_RATE
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.SHARED_COST
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.TOLL_FREE
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.UAN
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.UNKNOWN
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.VOICEMAIL
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberType.VOIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

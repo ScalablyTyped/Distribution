@@ -1,11 +1,6 @@
 package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tampermonkey.Tampermonkey.ReadyState.Done
-import typings.tampermonkey.Tampermonkey.ReadyState.HeadersReceived
-import typings.tampermonkey.Tampermonkey.ReadyState.Loading
-import typings.tampermonkey.Tampermonkey.ReadyState.Opened
-import typings.tampermonkey.Tampermonkey.ReadyState.Unsent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,9 +13,6 @@ import typings.phaser.Phaser.Plugins.PluginManager
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Scale.ScaleManager
-import typings.phaser.Phaser.Scenes.SceneManager
-import typings.phaser.Phaser.Scenes.ScenePlugin
-import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Sound.HTML5AudioSoundManager
 import typings.phaser.Phaser.Sound.NoAudioSoundManager
 import typings.phaser.Phaser.Sound.WebAudioSoundManager

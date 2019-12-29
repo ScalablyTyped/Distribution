@@ -3,9 +3,6 @@ package typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FileOptions.OptimizeMode
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FileOptions.OptimizeMode.CODE_SIZE
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FileOptions.OptimizeMode.LITE_RUNTIME
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.FileOptions.OptimizeMode.SPEED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

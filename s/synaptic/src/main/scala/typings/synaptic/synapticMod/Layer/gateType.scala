@@ -1,9 +1,6 @@
 package typings.synaptic.synapticMod.Layer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.synaptic.synapticMod.Layer.gateType.INPUT
-import typings.synaptic.synapticMod.Layer.gateType.ONE_TO_ONE
-import typings.synaptic.synapticMod.Layer.gateType.OUTPUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

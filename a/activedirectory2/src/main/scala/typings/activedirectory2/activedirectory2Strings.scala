@@ -51,13 +51,13 @@ object activedirectory2Strings {
   sealed trait initials extends UserAttributes
   
   @js.native
-  sealed trait `ldaps?://DOT*/CN=Configuration,DOT*` extends js.Object
+  sealed trait ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk extends js.Object
   
   @js.native
-  sealed trait `ldaps?://DomainDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*` extends js.Object
+  sealed trait ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk extends js.Object
   
   @js.native
-  sealed trait `ldaps?://ForestDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*` extends js.Object
+  sealed trait ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk extends js.Object
   
   @js.native
   sealed trait lockoutTime extends UserAttributes
@@ -120,11 +120,11 @@ object activedirectory2Strings {
   @scala.inline
   def initials: initials = "initials".asInstanceOf[initials]
   @scala.inline
-  def `ldaps?://DOT*/CN=Configuration,DOT*`: `ldaps?://DOT*/CN=Configuration,DOT*` = "ldaps?://.*/CN=Configuration,.*".asInstanceOf[`ldaps?://DOT*/CN=Configuration,DOT*`]
+  def ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk: ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk = "ldaps?://DomainDnsZones\\..*/.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk]
   @scala.inline
-  def `ldaps?://DomainDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*`: `ldaps?://DomainDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*` = "ldaps?://DomainDnsZones\\..*/.*".asInstanceOf[`ldaps?://DomainDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*`]
+  def ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk: ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk = "ldaps?://.*/CN=Configuration,.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk]
   @scala.inline
-  def `ldaps?://ForestDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*`: `ldaps?://ForestDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*` = "ldaps?://ForestDnsZones\\..*/.*".asInstanceOf[`ldaps?://ForestDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*`]
+  def ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk: ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk = "ldaps?://ForestDnsZones\\..*/.*".asInstanceOf[ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk]
   @scala.inline
   def lockoutTime: lockoutTime = "lockoutTime".asInstanceOf[lockoutTime]
   @scala.inline

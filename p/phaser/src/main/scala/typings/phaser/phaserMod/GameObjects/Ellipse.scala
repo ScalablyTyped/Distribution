@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +37,7 @@ class Ellipse protected ()
     * @param fillAlpha The alpha the ellipse will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
     */
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],
     width: js.UndefOr[Double],

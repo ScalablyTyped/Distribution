@@ -24,19 +24,19 @@ object googlemapsStrings {
   sealed trait administrative extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTcountry extends MapTypeStyleFeatureType
+  sealed trait administrativeDotcountry extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTland_parcel extends MapTypeStyleFeatureType
+  sealed trait administrativeDotland_parcel extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTlocality extends MapTypeStyleFeatureType
+  sealed trait administrativeDotlocality extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTneighborhood extends MapTypeStyleFeatureType
+  sealed trait administrativeDotneighborhood extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTprovince extends MapTypeStyleFeatureType
+  sealed trait administrativeDotprovince extends MapTypeStyleFeatureType
   
   @js.native
   sealed trait all
@@ -48,6 +48,12 @@ object googlemapsStrings {
   
   @js.native
   sealed trait auto extends GestureHandlingOptions
+  
+  @js.native
+  sealed trait bounds_changed extends js.Object
+  
+  @js.native
+  sealed trait center_changed extends js.Object
   
   @js.native
   sealed trait circle extends js.Object
@@ -86,13 +92,16 @@ object googlemapsStrings {
   sealed trait geometry extends MapTypeStyleElementType
   
   @js.native
-  sealed trait geometryDOTfill extends MapTypeStyleElementType
+  sealed trait geometryDotfill extends MapTypeStyleElementType
   
   @js.native
-  sealed trait geometryDOTstroke extends MapTypeStyleElementType
+  sealed trait geometryDotstroke extends MapTypeStyleElementType
   
   @js.native
   sealed trait greedy extends GestureHandlingOptions
+  
+  @js.native
+  sealed trait heading_changed extends js.Object
   
   @js.native
   sealed trait html4 extends js.Object
@@ -104,37 +113,46 @@ object googlemapsStrings {
   sealed trait icon_changed extends MarkerChangeOptionEventNames
   
   @js.native
+  sealed trait idle extends js.Object
+  
+  @js.native
   sealed trait labels extends MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTicon extends MapTypeStyleElementType
+  sealed trait labelsDoticon extends MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTtext extends MapTypeStyleElementType
+  sealed trait labelsDottext extends MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTtextDOTfill extends MapTypeStyleElementType
+  sealed trait labelsDottextDotfill extends MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTtextDOTstroke extends MapTypeStyleElementType
+  sealed trait labelsDottextDotstroke extends MapTypeStyleElementType
   
   @js.native
   sealed trait landscape extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTman_made extends MapTypeStyleFeatureType
+  sealed trait landscapeDotman_made extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTnatural extends MapTypeStyleFeatureType
+  sealed trait landscapeDotnatural extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTnaturalDOTlandcover extends MapTypeStyleFeatureType
+  sealed trait landscapeDotnaturalDotlandcover extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTnaturalDOTterrain extends MapTypeStyleFeatureType
+  sealed trait landscapeDotnaturalDotterrain extends MapTypeStyleFeatureType
+  
+  @js.native
+  sealed trait maptypeid_changed extends js.Object
   
   @js.native
   sealed trait mousedown extends MarkerMouseEventNames
+  
+  @js.native
+  sealed trait mousemove extends js.Object
   
   @js.native
   sealed trait mouseout extends MarkerMouseEventNames
@@ -152,34 +170,37 @@ object googlemapsStrings {
   sealed trait poi extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTattraction extends MapTypeStyleFeatureType
+  sealed trait poiDotattraction extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTbusiness extends MapTypeStyleFeatureType
+  sealed trait poiDotbusiness extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTgovernment extends MapTypeStyleFeatureType
+  sealed trait poiDotgovernment extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTmedical extends MapTypeStyleFeatureType
+  sealed trait poiDotmedical extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTpark extends MapTypeStyleFeatureType
+  sealed trait poiDotpark extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTplace_of_worship extends MapTypeStyleFeatureType
+  sealed trait poiDotplace_of_worship extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTschool extends MapTypeStyleFeatureType
+  sealed trait poiDotschool extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTsports_complex extends MapTypeStyleFeatureType
+  sealed trait poiDotsports_complex extends MapTypeStyleFeatureType
   
   @js.native
   sealed trait poly extends js.Object
   
   @js.native
   sealed trait position_changed extends MarkerChangeOptionEventNames
+  
+  @js.native
+  sealed trait projection_changed extends js.Object
   
   @js.native
   sealed trait rect extends js.Object
@@ -191,19 +212,25 @@ object googlemapsStrings {
   sealed trait road extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOTarterial extends MapTypeStyleFeatureType
+  sealed trait roadDotarterial extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOThighway extends MapTypeStyleFeatureType
+  sealed trait roadDothighway extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOThighwayDOTcontrolled_access extends MapTypeStyleFeatureType
+  sealed trait roadDothighwayDotcontrolled_access extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOTlocal extends MapTypeStyleFeatureType
+  sealed trait roadDotlocal extends MapTypeStyleFeatureType
   
   @js.native
   sealed trait shape_changed extends MarkerChangeOptionEventNames
+  
+  @js.native
+  sealed trait tilesloaded extends js.Object
+  
+  @js.native
+  sealed trait tilt_changed extends js.Object
   
   @js.native
   sealed trait title_changed extends MarkerChangeOptionEventNames
@@ -212,19 +239,19 @@ object googlemapsStrings {
   sealed trait transit extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTline extends MapTypeStyleFeatureType
+  sealed trait transitDotline extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstation extends MapTypeStyleFeatureType
+  sealed trait transitDotstation extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstationDOTairport extends MapTypeStyleFeatureType
+  sealed trait transitDotstationDotairport extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstationDOTbus extends MapTypeStyleFeatureType
+  sealed trait transitDotstationDotbus extends MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstationDOTrail extends MapTypeStyleFeatureType
+  sealed trait transitDotstationDotrail extends MapTypeStyleFeatureType
   
   @js.native
   sealed trait visible_changed extends MarkerChangeOptionEventNames
@@ -238,6 +265,9 @@ object googlemapsStrings {
   @js.native
   sealed trait zindex_changed extends MarkerChangeOptionEventNames
   
+  @js.native
+  sealed trait zoom_changed extends js.Object
+  
   @scala.inline
   def LineString: LineString = "LineString".asInstanceOf[LineString]
   @scala.inline
@@ -247,21 +277,25 @@ object googlemapsStrings {
   @scala.inline
   def administrative: administrative = "administrative".asInstanceOf[administrative]
   @scala.inline
-  def administrativeDOTcountry: administrativeDOTcountry = "administrative.country".asInstanceOf[administrativeDOTcountry]
+  def administrativeDotcountry: administrativeDotcountry = "administrative.country".asInstanceOf[administrativeDotcountry]
   @scala.inline
-  def administrativeDOTland_parcel: administrativeDOTland_parcel = "administrative.land_parcel".asInstanceOf[administrativeDOTland_parcel]
+  def administrativeDotland_parcel: administrativeDotland_parcel = "administrative.land_parcel".asInstanceOf[administrativeDotland_parcel]
   @scala.inline
-  def administrativeDOTlocality: administrativeDOTlocality = "administrative.locality".asInstanceOf[administrativeDOTlocality]
+  def administrativeDotlocality: administrativeDotlocality = "administrative.locality".asInstanceOf[administrativeDotlocality]
   @scala.inline
-  def administrativeDOTneighborhood: administrativeDOTneighborhood = "administrative.neighborhood".asInstanceOf[administrativeDOTneighborhood]
+  def administrativeDotneighborhood: administrativeDotneighborhood = "administrative.neighborhood".asInstanceOf[administrativeDotneighborhood]
   @scala.inline
-  def administrativeDOTprovince: administrativeDOTprovince = "administrative.province".asInstanceOf[administrativeDOTprovince]
+  def administrativeDotprovince: administrativeDotprovince = "administrative.province".asInstanceOf[administrativeDotprovince]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def animation_changed: animation_changed = "animation_changed".asInstanceOf[animation_changed]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def bounds_changed: bounds_changed = "bounds_changed".asInstanceOf[bounds_changed]
+  @scala.inline
+  def center_changed: center_changed = "center_changed".asInstanceOf[center_changed]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
@@ -287,11 +321,13 @@ object googlemapsStrings {
   @scala.inline
   def geometry: geometry = "geometry".asInstanceOf[geometry]
   @scala.inline
-  def geometryDOTfill: geometryDOTfill = "geometry.fill".asInstanceOf[geometryDOTfill]
+  def geometryDotfill: geometryDotfill = "geometry.fill".asInstanceOf[geometryDotfill]
   @scala.inline
-  def geometryDOTstroke: geometryDOTstroke = "geometry.stroke".asInstanceOf[geometryDOTstroke]
+  def geometryDotstroke: geometryDotstroke = "geometry.stroke".asInstanceOf[geometryDotstroke]
   @scala.inline
   def greedy: greedy = "greedy".asInstanceOf[greedy]
+  @scala.inline
+  def heading_changed: heading_changed = "heading_changed".asInstanceOf[heading_changed]
   @scala.inline
   def html4: html4 = "html4".asInstanceOf[html4]
   @scala.inline
@@ -299,27 +335,33 @@ object googlemapsStrings {
   @scala.inline
   def icon_changed: icon_changed = "icon_changed".asInstanceOf[icon_changed]
   @scala.inline
+  def idle: idle = "idle".asInstanceOf[idle]
+  @scala.inline
   def labels: labels = "labels".asInstanceOf[labels]
   @scala.inline
-  def labelsDOTicon: labelsDOTicon = "labels.icon".asInstanceOf[labelsDOTicon]
+  def labelsDoticon: labelsDoticon = "labels.icon".asInstanceOf[labelsDoticon]
   @scala.inline
-  def labelsDOTtext: labelsDOTtext = "labels.text".asInstanceOf[labelsDOTtext]
+  def labelsDottext: labelsDottext = "labels.text".asInstanceOf[labelsDottext]
   @scala.inline
-  def labelsDOTtextDOTfill: labelsDOTtextDOTfill = "labels.text.fill".asInstanceOf[labelsDOTtextDOTfill]
+  def labelsDottextDotfill: labelsDottextDotfill = "labels.text.fill".asInstanceOf[labelsDottextDotfill]
   @scala.inline
-  def labelsDOTtextDOTstroke: labelsDOTtextDOTstroke = "labels.text.stroke".asInstanceOf[labelsDOTtextDOTstroke]
+  def labelsDottextDotstroke: labelsDottextDotstroke = "labels.text.stroke".asInstanceOf[labelsDottextDotstroke]
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   @scala.inline
-  def landscapeDOTman_made: landscapeDOTman_made = "landscape.man_made".asInstanceOf[landscapeDOTman_made]
+  def landscapeDotman_made: landscapeDotman_made = "landscape.man_made".asInstanceOf[landscapeDotman_made]
   @scala.inline
-  def landscapeDOTnatural: landscapeDOTnatural = "landscape.natural".asInstanceOf[landscapeDOTnatural]
+  def landscapeDotnatural: landscapeDotnatural = "landscape.natural".asInstanceOf[landscapeDotnatural]
   @scala.inline
-  def landscapeDOTnaturalDOTlandcover: landscapeDOTnaturalDOTlandcover = "landscape.natural.landcover".asInstanceOf[landscapeDOTnaturalDOTlandcover]
+  def landscapeDotnaturalDotlandcover: landscapeDotnaturalDotlandcover = "landscape.natural.landcover".asInstanceOf[landscapeDotnaturalDotlandcover]
   @scala.inline
-  def landscapeDOTnaturalDOTterrain: landscapeDOTnaturalDOTterrain = "landscape.natural.terrain".asInstanceOf[landscapeDOTnaturalDOTterrain]
+  def landscapeDotnaturalDotterrain: landscapeDotnaturalDotterrain = "landscape.natural.terrain".asInstanceOf[landscapeDotnaturalDotterrain]
+  @scala.inline
+  def maptypeid_changed: maptypeid_changed = "maptypeid_changed".asInstanceOf[maptypeid_changed]
   @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  @scala.inline
+  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   @scala.inline
   def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
   @scala.inline
@@ -331,25 +373,27 @@ object googlemapsStrings {
   @scala.inline
   def poi: poi = "poi".asInstanceOf[poi]
   @scala.inline
-  def poiDOTattraction: poiDOTattraction = "poi.attraction".asInstanceOf[poiDOTattraction]
+  def poiDotattraction: poiDotattraction = "poi.attraction".asInstanceOf[poiDotattraction]
   @scala.inline
-  def poiDOTbusiness: poiDOTbusiness = "poi.business".asInstanceOf[poiDOTbusiness]
+  def poiDotbusiness: poiDotbusiness = "poi.business".asInstanceOf[poiDotbusiness]
   @scala.inline
-  def poiDOTgovernment: poiDOTgovernment = "poi.government".asInstanceOf[poiDOTgovernment]
+  def poiDotgovernment: poiDotgovernment = "poi.government".asInstanceOf[poiDotgovernment]
   @scala.inline
-  def poiDOTmedical: poiDOTmedical = "poi.medical".asInstanceOf[poiDOTmedical]
+  def poiDotmedical: poiDotmedical = "poi.medical".asInstanceOf[poiDotmedical]
   @scala.inline
-  def poiDOTpark: poiDOTpark = "poi.park".asInstanceOf[poiDOTpark]
+  def poiDotpark: poiDotpark = "poi.park".asInstanceOf[poiDotpark]
   @scala.inline
-  def poiDOTplace_of_worship: poiDOTplace_of_worship = "poi.place_of_worship".asInstanceOf[poiDOTplace_of_worship]
+  def poiDotplace_of_worship: poiDotplace_of_worship = "poi.place_of_worship".asInstanceOf[poiDotplace_of_worship]
   @scala.inline
-  def poiDOTschool: poiDOTschool = "poi.school".asInstanceOf[poiDOTschool]
+  def poiDotschool: poiDotschool = "poi.school".asInstanceOf[poiDotschool]
   @scala.inline
-  def poiDOTsports_complex: poiDOTsports_complex = "poi.sports_complex".asInstanceOf[poiDOTsports_complex]
+  def poiDotsports_complex: poiDotsports_complex = "poi.sports_complex".asInstanceOf[poiDotsports_complex]
   @scala.inline
   def poly: poly = "poly".asInstanceOf[poly]
   @scala.inline
   def position_changed: position_changed = "position_changed".asInstanceOf[position_changed]
+  @scala.inline
+  def projection_changed: projection_changed = "projection_changed".asInstanceOf[projection_changed]
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
@@ -357,29 +401,33 @@ object googlemapsStrings {
   @scala.inline
   def road: road = "road".asInstanceOf[road]
   @scala.inline
-  def roadDOTarterial: roadDOTarterial = "road.arterial".asInstanceOf[roadDOTarterial]
+  def roadDotarterial: roadDotarterial = "road.arterial".asInstanceOf[roadDotarterial]
   @scala.inline
-  def roadDOThighway: roadDOThighway = "road.highway".asInstanceOf[roadDOThighway]
+  def roadDothighway: roadDothighway = "road.highway".asInstanceOf[roadDothighway]
   @scala.inline
-  def roadDOThighwayDOTcontrolled_access: roadDOThighwayDOTcontrolled_access = "road.highway.controlled_access".asInstanceOf[roadDOThighwayDOTcontrolled_access]
+  def roadDothighwayDotcontrolled_access: roadDothighwayDotcontrolled_access = "road.highway.controlled_access".asInstanceOf[roadDothighwayDotcontrolled_access]
   @scala.inline
-  def roadDOTlocal: roadDOTlocal = "road.local".asInstanceOf[roadDOTlocal]
+  def roadDotlocal: roadDotlocal = "road.local".asInstanceOf[roadDotlocal]
   @scala.inline
   def shape_changed: shape_changed = "shape_changed".asInstanceOf[shape_changed]
+  @scala.inline
+  def tilesloaded: tilesloaded = "tilesloaded".asInstanceOf[tilesloaded]
+  @scala.inline
+  def tilt_changed: tilt_changed = "tilt_changed".asInstanceOf[tilt_changed]
   @scala.inline
   def title_changed: title_changed = "title_changed".asInstanceOf[title_changed]
   @scala.inline
   def transit: transit = "transit".asInstanceOf[transit]
   @scala.inline
-  def transitDOTline: transitDOTline = "transit.line".asInstanceOf[transitDOTline]
+  def transitDotline: transitDotline = "transit.line".asInstanceOf[transitDotline]
   @scala.inline
-  def transitDOTstation: transitDOTstation = "transit.station".asInstanceOf[transitDOTstation]
+  def transitDotstation: transitDotstation = "transit.station".asInstanceOf[transitDotstation]
   @scala.inline
-  def transitDOTstationDOTairport: transitDOTstationDOTairport = "transit.station.airport".asInstanceOf[transitDOTstationDOTairport]
+  def transitDotstationDotairport: transitDotstationDotairport = "transit.station.airport".asInstanceOf[transitDotstationDotairport]
   @scala.inline
-  def transitDOTstationDOTbus: transitDOTstationDOTbus = "transit.station.bus".asInstanceOf[transitDOTstationDOTbus]
+  def transitDotstationDotbus: transitDotstationDotbus = "transit.station.bus".asInstanceOf[transitDotstationDotbus]
   @scala.inline
-  def transitDOTstationDOTrail: transitDOTstationDOTrail = "transit.station.rail".asInstanceOf[transitDOTstationDOTrail]
+  def transitDotstationDotrail: transitDotstationDotrail = "transit.station.rail".asInstanceOf[transitDotstationDotrail]
   @scala.inline
   def visible_changed: visible_changed = "visible_changed".asInstanceOf[visible_changed]
   @scala.inline
@@ -388,5 +436,7 @@ object googlemapsStrings {
   def webgl: webgl = "webgl".asInstanceOf[webgl]
   @scala.inline
   def zindex_changed: zindex_changed = "zindex_changed".asInstanceOf[zindex_changed]
+  @scala.inline
+  def zoom_changed: zoom_changed = "zoom_changed".asInstanceOf[zoom_changed]
 }
 

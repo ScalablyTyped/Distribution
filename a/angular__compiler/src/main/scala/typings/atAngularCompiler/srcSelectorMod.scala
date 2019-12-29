@@ -1,8 +1,5 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.srcSelectorMod.CssSelector
-import typings.atAngularCompiler.srcSelectorMod.SelectorListContext
-import typings.atAngularCompiler.srcSelectorMod.SelectorMatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

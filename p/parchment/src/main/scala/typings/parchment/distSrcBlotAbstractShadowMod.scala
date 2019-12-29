@@ -2,7 +2,6 @@ package typings.parchment
 
 import typings.parchment.distSrcBlotAbstractBlotMod.Blot
 import typings.parchment.distSrcBlotAbstractBlotMod.Parent
-import typings.parchment.distSrcBlotAbstractShadowMod.ShadowBlot
 import typings.parchment.distSrcCollectionLinkedDashNodeMod.LinkedNode
 import typings.parchment.distSrcRegistryMod.Scope
 import typings.std.Node

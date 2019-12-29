@@ -12,7 +12,8 @@ class PlaceholderFormat protected () extends js.Object {
   val ContainedType: MsoShapeType = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.PlaceholderFormat_typekey`: PlaceholderFormat = js.native
+  @JSName("PowerPoint.PlaceholderFormat_typekey")
+  var PowerPointDotPlaceholderFormat_typekey: PlaceholderFormat = js.native
   val Type: PpPlaceholderType = js.native
 }
 

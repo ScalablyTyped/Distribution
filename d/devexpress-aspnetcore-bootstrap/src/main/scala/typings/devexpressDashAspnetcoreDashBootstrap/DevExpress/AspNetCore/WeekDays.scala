@@ -1,16 +1,6 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.EveryDay
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.Friday
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.Monday
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.Saturday
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.Sunday
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.Thursday
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.Tuesday
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.Wednesday
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.WeekendDays
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.WeekDays.WorkDays
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

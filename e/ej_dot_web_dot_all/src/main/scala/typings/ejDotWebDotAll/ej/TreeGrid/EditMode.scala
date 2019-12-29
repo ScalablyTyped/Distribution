@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.EditMode.BatchEditing
-import typings.ejDotWebDotAll.ej.TreeGrid.EditMode.CellEditing
-import typings.ejDotWebDotAll.ej.TreeGrid.EditMode.DialogEditing
-import typings.ejDotWebDotAll.ej.TreeGrid.EditMode.RowEditing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

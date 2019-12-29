@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSchedule
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Schedule]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Schedule] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Schedule]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Schedule] {
   var Locale: js.Any = js.native
   var fn: Schedule = js.native
 }

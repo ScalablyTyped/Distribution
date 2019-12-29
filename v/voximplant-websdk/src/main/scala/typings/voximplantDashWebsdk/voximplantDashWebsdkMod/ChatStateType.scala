@@ -1,12 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Active
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Composing
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Gone
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Inactive
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Invalid
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Paused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.mongorito.mongoritoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mongorito.mongoritoMod.DatabaseState.STATE_CONNECTED
-import typings.mongorito.mongoritoMod.DatabaseState.STATE_CONNECTING
-import typings.mongorito.mongoritoMod.DatabaseState.STATE_DISCONNECTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

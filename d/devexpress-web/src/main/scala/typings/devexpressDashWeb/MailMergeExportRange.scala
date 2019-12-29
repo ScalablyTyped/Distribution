@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.MailMergeExportRange.AllRecords
-import typings.devexpressDashWeb.MailMergeExportRange.CurrentRecord
-import typings.devexpressDashWeb.MailMergeExportRange.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,8 @@ class Variable protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   var Value: String = js.native
-  var `Word.Variable_typekey`: Variable = js.native
+  @JSName("Word.Variable_typekey")
+  var WordDotVariable_typekey: Variable = js.native
   def Delete(): Unit = js.native
 }
 

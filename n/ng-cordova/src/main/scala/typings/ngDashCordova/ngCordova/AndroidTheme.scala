@@ -1,11 +1,6 @@
 package typings.ngDashCordova.ngCordova
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ngDashCordova.ngCordova.AndroidTheme.DeviceDefaultDark
-import typings.ngDashCordova.ngCordova.AndroidTheme.DeviceDefaultLight
-import typings.ngDashCordova.ngCordova.AndroidTheme.HoloDark
-import typings.ngDashCordova.ngCordova.AndroidTheme.HoloLight
-import typings.ngDashCordova.ngCordova.AndroidTheme.Traditional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

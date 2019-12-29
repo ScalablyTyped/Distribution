@@ -16,7 +16,8 @@ class SelectNamesDialog protected () extends js.Object {
   var ForceResolution: Boolean = js.native
   var InitialAddressList: AddressList = js.native
   var NumberOfRecipientSelectors: OlRecipientSelectors = js.native
-  var `Outlook.SelectNamesDialog_typekey`: SelectNamesDialog = js.native
+  @JSName("Outlook.SelectNamesDialog_typekey")
+  var OutlookDotSelectNamesDialog_typekey: SelectNamesDialog = js.native
   val Parent: js.Any = js.native
   var Recipients: typings.activexDashOutlook.Outlook.Recipients = js.native
   val Session: NameSpace = js.native

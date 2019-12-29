@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeType.appointmentCreated
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeType.appointmentDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeType.appointmentModified
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeType.calendarCreated
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeType.calendarDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeType.calendarModified
-import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeType.changeTrackingLost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

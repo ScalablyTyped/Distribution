@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGTextPathElement")
 @js.native
 class SVGTextPathElement protected () extends js.Object {
-  var `MSHTML.SVGTextPathElement_typekey`: SVGTextPathElement = js.native
+  @JSName("MSHTML.SVGTextPathElement_typekey")
+  var MSHTMLDotSVGTextPathElement_typekey: SVGTextPathElement = js.native
   val className: SVGAnimatedString = js.native
   val externalResourcesRequired: SVGAnimatedBoolean = js.native
   var focusable: SVGAnimatedEnumeration = js.native

@@ -49,7 +49,8 @@ class WebBrowser protected () extends js.Object {
   var RegisterAsDropTarget: Boolean = js.native
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
-  var `SHDocVw.WebBrowser_typekey`: WebBrowser = js.native
+  @JSName("SHDocVw.WebBrowser_typekey")
+  var SHDocVwDotWebBrowser_typekey: WebBrowser = js.native
   /** Controls if any dialog boxes can be shown */
   var Silent: Boolean = js.native
   /** Turn on or off the statusbar. */

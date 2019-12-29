@@ -1,12 +1,11 @@
 package typings.atFirebaseStorage
 
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternalName
 import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
 import typings.atFirebaseStorage.distSrcImplementationAuthwrapperMod.AuthWrapper
 import typings.atFirebaseStorage.distSrcImplementationXhriopoolMod.XhrIoPool
 import typings.atFirebaseStorage.distSrcReferenceMod.Reference
-import typings.atFirebaseStorage.distSrcServiceMod.Service
-import typings.atFirebaseStorage.distSrcServiceMod.ServiceInternals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,21 +15,8 @@ import scala.scalajs.js.annotation._
 object distSrcServiceMod extends js.Object {
   @js.native
   class Service protected () extends js.Object {
-    def this(
-      app: FirebaseApp,
-      authProvider: Provider[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
-          ],
-      pool: XhrIoPool
-    ) = this()
-    def this(
-      app: FirebaseApp,
-      authProvider: Provider[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
-          ],
-      pool: XhrIoPool,
-      url: String
-    ) = this()
+    def this(app: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName], pool: XhrIoPool) = this()
+    def this(app: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName], pool: XhrIoPool, url: String) = this()
     var app_ : js.Any = js.native
     var authWrapper_ : AuthWrapper = js.native
     var bucket_ : js.Any = js.native

@@ -55,7 +55,8 @@ class MailItem protected () extends js.Object {
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
   var OriginatorDeliveryReportRequested: Boolean = js.native
-  var `Outlook.MailItem_typekey`: MailItem = js.native
+  @JSName("Outlook.MailItem_typekey")
+  var OutlookDotMailItem_typekey: MailItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

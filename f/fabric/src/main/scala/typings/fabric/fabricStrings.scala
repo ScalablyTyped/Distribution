@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object fabricStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait anonymous extends js.Object
@@ -84,7 +84,7 @@ object fabricStrings {
   sealed trait y extends js.Object
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   @scala.inline

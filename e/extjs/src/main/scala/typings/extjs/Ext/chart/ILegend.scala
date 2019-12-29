@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 
 trait ILegend extends IBase {
   /** [Config Option] (String) */
-  var boxFill: js.UndefOr[java.lang.String] = js.undefined
+  var boxFill: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var boxStroke: js.UndefOr[java.lang.String] = js.undefined
+  var boxStroke: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var boxStrokeWidth: js.UndefOr[java.lang.String] = js.undefined
+  var boxStrokeWidth: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var boxZIndex: js.UndefOr[Double] = js.undefined
   /** [Property] (Boolean) */
@@ -21,13 +21,13 @@ trait ILegend extends IBase {
   /** [Config Option] (Number) */
   var itemSpacing: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var labelColor: js.UndefOr[java.lang.String] = js.undefined
+  var labelColor: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelFont: js.UndefOr[java.lang.String] = js.undefined
+  var labelFont: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var padding: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var position: js.UndefOr[java.lang.String] = js.undefined
+  var position: js.UndefOr[String] = js.undefined
   /** [Method] toggle
   		* @param show Boolean Whether to show or hide the legend.
   		*/
@@ -47,25 +47,25 @@ object ILegend {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    boxFill: java.lang.String = null,
-    boxStroke: java.lang.String = null,
-    boxStrokeWidth: java.lang.String = null,
+    boxFill: String = null,
+    boxStroke: String = null,
+    boxStrokeWidth: String = null,
     boxZIndex: Int | Double = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ILegend = null,
     isVertical: js.UndefOr[Boolean] = js.undefined,
     itemSpacing: Int | Double = null,
-    labelColor: java.lang.String = null,
-    labelFont: java.lang.String = null,
+    labelColor: String = null,
+    labelFont: String = null,
     mixins: js.Any = null,
     padding: Int | Double = null,
-    position: java.lang.String = null,
+    position: String = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

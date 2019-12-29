@@ -16,7 +16,8 @@ class View protected () extends js.Object {
   val MediaControlsVisible: MsoTriState = js.native
   val MediaControlsWidth: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.View_typekey`: View = js.native
+  @JSName("PowerPoint.View_typekey")
+  var PowerPointDotView_typekey: View = js.native
   val PrintOptions: typings.activexDashPowerpoint.PowerPoint.PrintOptions = js.native
   var Slide: js.Any = js.native
   val Type: PpViewType = js.native

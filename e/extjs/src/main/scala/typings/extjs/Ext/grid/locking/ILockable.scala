@@ -19,7 +19,7 @@ trait ILockable extends IBase {
   /** [Config Option] (Number) */
   var scrollDelta: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var subGridXType: js.UndefOr[java.lang.String] = js.undefined
+  var subGridXType: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var syncRowHeight: js.UndefOr[Boolean] = js.undefined
   /** [Method] Synchronizes the row heights between the locked and non locked portion of the grid for each row  */
@@ -35,10 +35,10 @@ object ILockable {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.grid.locking.ILockable = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => ILockable = null,
     lockedGridConfig: js.Any = null,
     lockedViewConfig: js.Any = null,
     mixins: js.Any = null,
@@ -49,7 +49,7 @@ object ILockable {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    subGridXType: java.lang.String = null,
+    subGridXType: String = null,
     syncRowHeight: js.UndefOr[Boolean] = js.undefined,
     syncRowHeights: () => Unit = null,
     uses: Array = null

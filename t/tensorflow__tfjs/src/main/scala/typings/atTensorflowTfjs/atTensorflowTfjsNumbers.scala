@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsNumbers {
   @js.native
-  sealed trait `0DOT001` extends js.Object
+  sealed trait `0.001` extends js.Object
   
   @js.native
-  sealed trait `0DOT1` extends js.Object
+  sealed trait `0.1` extends js.Object
   
   @js.native
   sealed trait `1` extends js.Object
@@ -21,9 +21,9 @@ object atTensorflowTfjsNumbers {
   sealed trait `2` extends js.Object
   
   @scala.inline
-  def `0DOT001`: `0DOT001` = 0.001.asInstanceOf[`0DOT001`]
+  def `0.001`: `0.001` = 0.001.asInstanceOf[`0.001`]
   @scala.inline
-  def `0DOT1`: `0DOT1` = 0.1.asInstanceOf[`0DOT1`]
+  def `0.1`: `0.1` = 0.1.asInstanceOf[`0.1`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline

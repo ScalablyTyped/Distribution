@@ -1,9 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.TextDirection.Inherit
-import typings.openui5.sap.ui.core.TextDirection.LTR
-import typings.openui5.sap.ui.core.TextDirection.RTL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

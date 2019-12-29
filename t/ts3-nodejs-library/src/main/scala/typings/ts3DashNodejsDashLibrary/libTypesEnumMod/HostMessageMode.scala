@@ -1,10 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.LOG
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.MODAL
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.MODALQUIT
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

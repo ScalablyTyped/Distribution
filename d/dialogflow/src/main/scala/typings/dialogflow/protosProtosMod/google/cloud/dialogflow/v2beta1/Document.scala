@@ -6,9 +6,6 @@ import typings.dialogflow.dialogflowStrings.content
 import typings.dialogflow.dialogflowStrings.contentUri
 import typings.dialogflow.dialogflowStrings.rawContent
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.EXTRACTIVE_QA
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.FAQ
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.KNOWLEDGE_TYPE_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

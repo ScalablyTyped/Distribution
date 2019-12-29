@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.All
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.CSV
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.CustomItems
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Excel
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Html
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.PPT
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Pdf
-import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

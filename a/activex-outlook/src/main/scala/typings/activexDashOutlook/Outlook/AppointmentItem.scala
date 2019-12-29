@@ -61,7 +61,8 @@ class AppointmentItem protected () extends js.Object {
   var NoAging: Boolean = js.native
   var OptionalAttendees: String = js.native
   val Organizer: String = js.native
-  var `Outlook.AppointmentItem_typekey`: AppointmentItem = js.native
+  @JSName("Outlook.AppointmentItem_typekey")
+  var OutlookDotAppointmentItem_typekey: AppointmentItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation._
 
 trait IAssociation extends IBase {
   /** [Config Option] (String) */
-  var associatedModel: js.UndefOr[java.lang.String] = js.undefined
+  var associatedModel: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var associatedName: js.UndefOr[java.lang.String] = js.undefined
+  var associatedName: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var associationKey: js.UndefOr[java.lang.String] = js.undefined
+  var associationKey: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of associatedModel
   		* @returns String
   		*/
-  var getAssociatedModel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAssociatedModel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of associatedName
   		* @returns String
   		*/
-  var getAssociatedName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAssociatedName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of associationKey
   		* @returns String
   		*/
-  var getAssociationKey: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAssociationKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of name
   		* @returns Object
   		*/
@@ -37,11 +37,11 @@ trait IAssociation extends IBase {
   /** [Method] Returns the value of ownerName
   		* @returns String
   		*/
-  var getOwnerName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getOwnerName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of primaryKey
   		* @returns String
   		*/
-  var getPrimaryKey: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPrimaryKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of reader
   		* @returns Ext.data.reader.Reader
   		*/
@@ -49,25 +49,25 @@ trait IAssociation extends IBase {
   /** [Method] Returns the value of type
   		* @returns String
   		*/
-  var getType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Ext.data.Model/String) */
   var ownerModel: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var primaryKey: js.UndefOr[java.lang.String] = js.undefined
+  var primaryKey: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.data.reader.Reader) */
   var reader: js.UndefOr[typings.senchaUnderscoreTouch.Ext.data.reader.IReader] = js.undefined
   /** [Method] Sets the value of associatedModel
   		* @param associatedModel String The new value.
   		*/
-  var setAssociatedModel: js.UndefOr[js.Function1[/* associatedModel */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAssociatedModel: js.UndefOr[js.Function1[/* associatedModel */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of associatedName
   		* @param associatedName String The new value.
   		*/
-  var setAssociatedName: js.UndefOr[js.Function1[/* associatedName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAssociatedName: js.UndefOr[js.Function1[/* associatedName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of associationKey
   		* @param associationKey String The new value.
   		*/
-  var setAssociationKey: js.UndefOr[js.Function1[/* associationKey */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAssociationKey: js.UndefOr[js.Function1[/* associationKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of name
   		* @param name Object The new value.
   		*/
@@ -79,11 +79,11 @@ trait IAssociation extends IBase {
   /** [Method] Sets the value of ownerName
   		* @param ownerName String The new value.
   		*/
-  var setOwnerName: js.UndefOr[js.Function1[/* ownerName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setOwnerName: js.UndefOr[js.Function1[/* ownerName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of primaryKey
   		* @param primaryKey String The new value.
   		*/
-  var setPrimaryKey: js.UndefOr[js.Function1[/* primaryKey */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPrimaryKey: js.UndefOr[js.Function1[/* primaryKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of reader
   		* @param reader Ext.data.reader.Reader The new value.
   		*/
@@ -96,9 +96,9 @@ trait IAssociation extends IBase {
   /** [Method] Sets the value of type
   		* @param type String The new value.
   		*/
-  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 
 object IAssociation {
@@ -106,45 +106,45 @@ object IAssociation {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    associatedModel: java.lang.String = null,
-    associatedName: java.lang.String = null,
-    associationKey: java.lang.String = null,
+    associatedModel: String = null,
+    associatedName: String = null,
+    associationKey: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getAssociatedModel: () => java.lang.String = null,
-    getAssociatedName: () => java.lang.String = null,
-    getAssociationKey: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getAssociatedModel: () => String = null,
+    getAssociatedName: () => String = null,
+    getAssociationKey: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getName: () => _ = null,
     getOwnerModel: () => _ = null,
-    getOwnerName: () => java.lang.String = null,
-    getPrimaryKey: () => java.lang.String = null,
+    getOwnerName: () => String = null,
+    getPrimaryKey: () => String = null,
     getReader: () => typings.senchaUnderscoreTouch.Ext.data.reader.IReader = null,
-    getType: () => java.lang.String = null,
+    getType: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     ownerModel: js.Any = null,
     platformConfig: js.Any = null,
-    primaryKey: java.lang.String = null,
+    primaryKey: String = null,
     reader: typings.senchaUnderscoreTouch.Ext.data.reader.IReader = null,
     self: IClass = null,
-    setAssociatedModel: /* associatedModel */ js.UndefOr[java.lang.String] => Unit = null,
-    setAssociatedName: /* associatedName */ js.UndefOr[java.lang.String] => Unit = null,
-    setAssociationKey: /* associationKey */ js.UndefOr[java.lang.String] => Unit = null,
+    setAssociatedModel: /* associatedModel */ js.UndefOr[String] => Unit = null,
+    setAssociatedName: /* associatedName */ js.UndefOr[String] => Unit = null,
+    setAssociationKey: /* associationKey */ js.UndefOr[String] => Unit = null,
     setName: /* name */ js.UndefOr[js.Any] => Unit = null,
     setOwnerModel: /* ownerModel */ js.UndefOr[js.Any] => Unit = null,
-    setOwnerName: /* ownerName */ js.UndefOr[java.lang.String] => Unit = null,
-    setPrimaryKey: /* primaryKey */ js.UndefOr[java.lang.String] => Unit = null,
+    setOwnerName: /* ownerName */ js.UndefOr[String] => Unit = null,
+    setPrimaryKey: /* primaryKey */ js.UndefOr[String] => Unit = null,
     setReader: /* reader */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.data.reader.IReader] => Unit = null,
-    setType: /* type */ js.UndefOr[java.lang.String] => Unit = null,
+    setType: /* type */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    `type`: java.lang.String = null,
+    `type`: String = null,
     uses: Array = null
   ): IAssociation = {
     val __obj = js.Dynamic.literal()

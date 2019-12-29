@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object recognizer {
   type IHorizontalSwipe = ISwipe
-  type IMultiTouch = typings.senchaUnderscoreTouch.Ext.event.recognizer.ITouch
+  type IMultiTouch = ITouch
   type IPinch = IMultiTouch
   type IRotate = IMultiTouch
-  type ISingleTouch = typings.senchaUnderscoreTouch.Ext.event.recognizer.ITouch
+  type ISingleTouch = ITouch
   type ITouch = IRecognizer
   type IVerticalSwipe = ISwipe
 }

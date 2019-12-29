@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class CustomProperty protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.CustomProperty_typekey`: CustomProperty = js.native
+  @JSName("Excel.CustomProperty_typekey")
+  var ExcelDotCustomProperty_typekey: CustomProperty = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
   var Value: js.Any = js.native

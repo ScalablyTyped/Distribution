@@ -5,12 +5,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.map.DataModel
 import typings.heremaps.H.map.ViewModel
 import typings.heremaps.H.map.ViewPort
-import typings.heremaps.H.map.render.RenderEngine.InteractionModifiers
-import typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.COORD
-import typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.HEADING
-import typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.INCLINE
-import typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.TILT
-import typings.heremaps.H.map.render.RenderEngine.InteractionModifiers.ZOOM
 import typings.heremaps.H.map.render.RenderEngine.Options
 import typings.heremaps.H.util.EventTarget
 import typings.std.Event

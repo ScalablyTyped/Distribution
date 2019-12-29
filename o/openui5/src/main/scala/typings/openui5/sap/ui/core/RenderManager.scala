@@ -1,5 +1,6 @@
 package typings.openui5.sap.ui.core
 
+import typings.jquery.JQueryStatic
 import typings.openui5.sap.ui.base.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -61,7 +62,7 @@ class RenderManager () extends Object {
     * @param sId control id to search content for.
     * @returns a jQuery collection representing the found content
     */
-  def findPreservedContent(sId: String): typings.jquery.JQueryStatic = js.native
+  def findPreservedContent(sId: String): JQueryStatic = js.native
   /**
     * Renders the content of the rendering buffer into the provided DOMNode.This function must not be
     * called within control renderers.Usage:<pre>// Create a new instance of the RenderManagervar rm =
@@ -96,15 +97,15 @@ class RenderManager () extends Object {
   /**
     * Returns the renderer class for a given control instance
     * @param oControl the control that should be rendered
+    * @returns the renderer class for a given control instance
     */
-  def getRenderer(oControl: Control): Unit = js.native
+  def getRenderer(oControl: Control): js.Any = js.native
   /**
     * Returns the renderer class for a given control instance
     * @param oControl the control that should be rendered
-    * @returns the renderer class for a given control instance
     */
   @JSName("getRenderer")
-  def getRenderer_Any(oControl: Control): js.Any = js.native
+  def getRenderer_Unit(oControl: Control): Unit = js.native
   /**
     * Collects descendants of the given root node that need to be preserved before the root nodeis wiped
     * out. The "to-be-preserved" nodes are moved to a special, hidden 'preserve' area.A node is declared

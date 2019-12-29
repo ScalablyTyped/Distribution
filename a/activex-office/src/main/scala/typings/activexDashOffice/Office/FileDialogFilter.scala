@@ -11,7 +11,8 @@ class FileDialogFilter protected () extends js.Object {
   val Creator: Double = js.native
   val Description: String = js.native
   val Extensions: String = js.native
-  var `Office.FileDialogFilter_typekey`: FileDialogFilter = js.native
+  @JSName("Office.FileDialogFilter_typekey")
+  var OfficeDotFileDialogFilter_typekey: FileDialogFilter = js.native
   val Parent: js.Any = js.native
 }
 

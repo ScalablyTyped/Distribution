@@ -4,6 +4,8 @@ import typings.officeDashJs.Word.BodyType
 import typings.officeDashJs.officeDashJsStrings.Footer
 import typings.officeDashJs.officeDashJsStrings.Header
 import typings.officeDashJs.officeDashJsStrings.MainDoc
+import typings.officeDashJs.officeDashJsStrings.Section
+import typings.officeDashJs.officeDashJsStrings.TableCell
 import typings.officeDashJs.officeDashJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -82,9 +84,7 @@ trait BodyData extends js.Object {
     *
     * [Api set: WordApi 1.3]
     */
-  var `type`: js.UndefOr[
-    BodyType | Unknown_ | MainDoc | typings.officeDashJs.officeDashJsStrings.Section | Header | Footer | typings.officeDashJs.officeDashJsStrings.TableCell
-  ] = js.undefined
+  var `type`: js.UndefOr[BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell] = js.undefined
 }
 
 object BodyData {
@@ -99,7 +99,7 @@ object BodyData {
     styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any = null,
     tables: js.Array[TableData] = null,
     text: String = null,
-    `type`: BodyType | Unknown_ | MainDoc | typings.officeDashJs.officeDashJsStrings.Section | Header | Footer | typings.officeDashJs.officeDashJsStrings.TableCell = null
+    `type`: BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell = null
   ): BodyData = {
     val __obj = js.Dynamic.literal()
     if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls.asInstanceOf[js.Any])

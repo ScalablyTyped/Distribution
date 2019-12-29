@@ -1,9 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.TextTrackWindowType.NONE
-import typings.chrome.chrome.cast.media.TextTrackWindowType.NORMAL
-import typings.chrome.chrome.cast.media.TextTrackWindowType.ROUNDED_CORNERS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

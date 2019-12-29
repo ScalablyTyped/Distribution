@@ -1,6 +1,6 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.hapiNumbers.`false`
+import typings.hapi.hapiBooleans.`false`
 import typings.hapi.hapiStrings.`try`
 import typings.hapi.hapiStrings.optional
 import typings.hapi.hapiStrings.required

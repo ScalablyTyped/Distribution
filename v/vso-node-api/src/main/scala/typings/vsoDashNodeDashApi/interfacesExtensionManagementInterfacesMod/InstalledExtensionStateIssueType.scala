@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.InstalledExtensionStateIssueType.Error
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.InstalledExtensionStateIssueType.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

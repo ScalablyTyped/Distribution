@@ -4,9 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DocumentChange extends js.Object {
+trait DocumentChange[T] extends js.Object {
   /** The document affected by this change. */
-  val doc: QueryDocumentSnapshot
+  val doc: QueryDocumentSnapshot[T]
   /**
     * The index of the changed document in the result set immediately after
     * this `DocumentChange` (i.e. supposing that all prior `DocumentChange`
@@ -26,10 +26,10 @@ trait DocumentChange extends js.Object {
 
 object DocumentChange {
   @scala.inline
-  def apply(doc: QueryDocumentSnapshot, newIndex: Double, oldIndex: Double, `type`: DocumentChangeType): DocumentChange = {
+  def apply[T](doc: QueryDocumentSnapshot[T], newIndex: Double, oldIndex: Double, `type`: DocumentChangeType): DocumentChange[T] = {
     val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DocumentChange]
+    __obj.asInstanceOf[DocumentChange[T]]
   }
 }
 

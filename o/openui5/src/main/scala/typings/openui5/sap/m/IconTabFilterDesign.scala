@@ -1,8 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.IconTabFilterDesign.Horizontal
-import typings.openui5.sap.m.IconTabFilterDesign.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

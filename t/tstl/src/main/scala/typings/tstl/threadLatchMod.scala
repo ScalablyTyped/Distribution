@@ -2,7 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.std.Date
-import typings.tstl.threadLatchMod.Latch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

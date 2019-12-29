@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Autocomplete
-  extends typings.handsontable.handsontableMod.Handsontable._editors.Handsontable {
+trait Autocomplete extends Handsontable {
   def allowKeyEventPropagation(): Boolean = js.native
   def allowKeyEventPropagation(keyCode: Double): Boolean = js.native
   def flipDropdown(): Unit = js.native

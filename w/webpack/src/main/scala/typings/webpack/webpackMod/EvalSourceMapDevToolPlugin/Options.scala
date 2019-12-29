@@ -1,7 +1,7 @@
 package typings.webpack.webpackMod.EvalSourceMapDevToolPlugin
 
 import typings.webpack.Anon_Exclude
-import typings.webpack.webpackNumbers.`false`
+import typings.webpack.webpackBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

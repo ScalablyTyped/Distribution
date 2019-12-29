@@ -8,12 +8,6 @@ import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.RenderTexture
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
-import typings.phaser.Phaser.Textures.CanvasTexture
-import typings.phaser.Phaser.Textures.FilterMode
-import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.Phaser.Textures.TextureManager
-import typings.phaser.Phaser.Textures.TextureSource
 import typings.phaser.Phaser.Types.Textures.PixelConfig
 import typings.phaser.Phaser.Types.Textures.SpriteSheetConfig
 import typings.phaser.Phaser.Types.Textures.SpriteSheetFromAtlasConfig

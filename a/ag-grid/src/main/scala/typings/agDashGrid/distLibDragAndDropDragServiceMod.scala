@@ -1,6 +1,5 @@
 package typings.agDashGrid
 
-import typings.agDashGrid.distLibDragAndDropDragServiceMod.DragListenerParams
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.Touch

@@ -1,6 +1,5 @@
 package typings.semanticDashUiDashProgress.SemanticUI.ProgressSettings
 
-import typings.semanticDashUiDashProgress.JQuery
 import typings.semanticDashUiDashProgress.SemanticUI.Progress.ClassNameSettings
 import typings.semanticDashUiDashProgress.SemanticUI.Progress.ErrorSettings
 import typings.semanticDashUiDashProgress.SemanticUI.Progress.MetadataSettings
@@ -8,7 +7,7 @@ import typings.semanticDashUiDashProgress.SemanticUI.Progress.RandomSettings
 import typings.semanticDashUiDashProgress.SemanticUI.Progress.RegExpSettings
 import typings.semanticDashUiDashProgress.SemanticUI.Progress.SelectorSettings
 import typings.semanticDashUiDashProgress.SemanticUI.Progress.TextSettings
-import typings.semanticDashUiDashProgress.semanticDashUiDashProgressNumbers.`false`
+import typings.semanticDashUiDashProgress.semanticDashUiDashProgressBooleans.`false`
 import typings.semanticDashUiDashProgress.semanticDashUiDashProgressStrings.percent
 import typings.semanticDashUiDashProgress.semanticDashUiDashProgressStrings.ratio
 import scala.scalajs.js
@@ -121,25 +120,25 @@ trait _Impl extends js.Object {
   /**
     * Callback on active state
     */
-  def onActive(`this`: JQuery, value: Double, total: Double): Unit
+  def onActive(value: Double, total: Double): Unit
   // endregion
   // region Callbacks
   /**
     * Callback on percentage change
     */
-  def onChange(`this`: JQuery, percent: Double, value: Double, total: Double): Unit
+  def onChange(percent: Double, value: Double, total: Double): Unit
   /**
     * Callback on error state
     */
-  def onError(`this`: JQuery, value: Double, total: Double): Unit
+  def onError(value: Double, total: Double): Unit
   /**
     * Callback on success state
     */
-  def onSuccess(`this`: JQuery, total: Double): Unit
+  def onSuccess(total: Double): Unit
   /**
     * Callback on warning state
     */
-  def onWarning(`this`: JQuery, value: Double, total: Double): Unit
+  def onWarning(value: Double, total: Double): Unit
 }
 
 object _Impl {
@@ -154,11 +153,11 @@ object _Impl {
     metadata: MetadataSettings,
     name: String,
     namespace: String,
-    onActive: (JQuery, Double, Double) => Unit,
-    onChange: (JQuery, Double, Double, Double) => Unit,
-    onError: (JQuery, Double, Double) => Unit,
-    onSuccess: (JQuery, Double) => Unit,
-    onWarning: (JQuery, Double, Double) => Unit,
+    onActive: (Double, Double) => Unit,
+    onChange: (Double, Double, Double) => Unit,
+    onError: (Double, Double) => Unit,
+    onSuccess: Double => Unit,
+    onWarning: (Double, Double) => Unit,
     performance: Boolean,
     precision: Double,
     random: RandomSettings,
@@ -171,7 +170,7 @@ object _Impl {
     value: `false` | Double,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(autoSuccess = autoSuccess.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], limitValues = limitValues.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onActive = js.Any.fromFunction3(onActive), onChange = js.Any.fromFunction4(onChange), onError = js.Any.fromFunction3(onError), onSuccess = js.Any.fromFunction2(onSuccess), onWarning = js.Any.fromFunction3(onWarning), performance = performance.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], random = random.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], showActivity = showActivity.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoSuccess = autoSuccess.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], limitValues = limitValues.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onActive = js.Any.fromFunction2(onActive), onChange = js.Any.fromFunction3(onChange), onError = js.Any.fromFunction2(onError), onSuccess = js.Any.fromFunction1(onSuccess), onWarning = js.Any.fromFunction2(onWarning), performance = performance.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], random = random.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], showActivity = showActivity.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

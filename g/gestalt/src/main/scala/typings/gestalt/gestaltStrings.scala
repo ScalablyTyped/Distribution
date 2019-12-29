@@ -691,13 +691,13 @@ object gestaltStrings {
   sealed trait `video-camera` extends Icons
   
   @js.native
-  sealed trait `video/m3u8` extends js.Object
+  sealed trait videoSlashm3u8 extends js.Object
   
   @js.native
-  sealed trait `video/mp4` extends js.Object
+  sealed trait videoSlashmp4 extends js.Object
   
   @js.native
-  sealed trait `video/ogg` extends js.Object
+  sealed trait videoSlashogg extends js.Object
   
   @js.native
   sealed trait `view-type-default` extends Icons
@@ -1189,11 +1189,11 @@ object gestaltStrings {
   @scala.inline
   def `video-camera`: `video-camera` = "video-camera".asInstanceOf[`video-camera`]
   @scala.inline
-  def `video/m3u8`: `video/m3u8` = "video/m3u8".asInstanceOf[`video/m3u8`]
+  def videoSlashm3u8: videoSlashm3u8 = "video/m3u8".asInstanceOf[videoSlashm3u8]
   @scala.inline
-  def `video/mp4`: `video/mp4` = "video/mp4".asInstanceOf[`video/mp4`]
+  def videoSlashmp4: videoSlashmp4 = "video/mp4".asInstanceOf[videoSlashmp4]
   @scala.inline
-  def `video/ogg`: `video/ogg` = "video/ogg".asInstanceOf[`video/ogg`]
+  def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
   @scala.inline
   def `view-type-default`: `view-type-default` = "view-type-default".asInstanceOf[`view-type-default`]
   @scala.inline

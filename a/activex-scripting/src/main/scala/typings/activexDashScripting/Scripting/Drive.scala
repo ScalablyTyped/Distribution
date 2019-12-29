@@ -24,7 +24,8 @@ class Drive protected () extends js.Object {
   val Path: String = js.native
   /** Root folder */
   val RootFolder: Folder = js.native
-  var `Scripting.Drive_typekey`: Drive = js.native
+  @JSName("Scripting.Drive_typekey")
+  var ScriptingDotDrive_typekey: Drive = js.native
   /** Serial number */
   val SerialNumber: Double = js.native
   /** Share name */

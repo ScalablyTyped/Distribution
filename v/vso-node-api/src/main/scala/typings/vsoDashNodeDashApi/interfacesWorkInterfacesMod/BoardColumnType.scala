@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.InProgress
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.Incoming
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.Outgoing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

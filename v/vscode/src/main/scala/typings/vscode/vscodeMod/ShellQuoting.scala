@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.ShellQuoting.Escape
-import typings.vscode.vscodeMod.ShellQuoting.Strong
-import typings.vscode.vscodeMod.ShellQuoting.Weak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

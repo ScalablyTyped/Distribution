@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Custom
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Custom.IOControlBufferingMethod.buffered
-import typings.winrtDashUwp.Windows.Devices.Custom.IOControlBufferingMethod.directInput
-import typings.winrtDashUwp.Windows.Devices.Custom.IOControlBufferingMethod.directOutput
-import typings.winrtDashUwp.Windows.Devices.Custom.IOControlBufferingMethod.neither
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

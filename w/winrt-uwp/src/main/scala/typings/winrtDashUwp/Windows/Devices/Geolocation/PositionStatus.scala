@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionStatus.disabled
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionStatus.initializing
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionStatus.noData
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionStatus.notAvailable
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionStatus.notInitialized
-import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionStatus.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

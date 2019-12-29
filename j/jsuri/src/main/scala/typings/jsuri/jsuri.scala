@@ -1,6 +1,5 @@
 package typings.jsuri
 
-import typings.jsuri.jsuri.Primitive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

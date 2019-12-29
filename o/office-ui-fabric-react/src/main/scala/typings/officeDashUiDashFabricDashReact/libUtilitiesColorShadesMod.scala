@@ -2,16 +2,6 @@ package typings.officeDashUiDashFabricDashReact
 
 import org.scalablytyped.runtime.TopLevel
 import typings.officeDashUiDashFabricDashReact.libUtilitiesColorInterfacesMod.IColor
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade1
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade2
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade3
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade4
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade5
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade6
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade7
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade8
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Unshaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

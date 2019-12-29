@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldScope.All
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldScope.None
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldScope.System
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldScope.TestResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object fpMod {
   import typings.lodash.Typeoflodash
+  import typings.lodash.lodashBooleans.`false`
+  import typings.lodash.lodashBooleans.`true`
   import typings.lodash.lodashMod.AssignCustomizer
   import typings.lodash.lodashMod.Cancelable
   import typings.lodash.lodashMod.CloneDeepWithCustomizer
@@ -55,9 +57,7 @@ package object fpMod {
   import typings.lodash.lodashMod.ValueKeyIteratee
   import typings.lodash.lodashMod.isMatchWithCustomizer
   import typings.lodash.lodashNumbers.`0`
-  import typings.lodash.lodashNumbers.`false`
-  import typings.lodash.lodashNumbers.`true`
-  import typings.lodash.lodashStrings.Empty
+  import typings.lodash.lodashStrings._empty
   import typings.lodash.lodashStrings.asc
   import typings.lodash.lodashStrings.desc
   import typings.std.Error
@@ -144,7 +144,7 @@ package object fpMod {
   type LodashCloneWith1x1[T, TResult] = js.Function1[/* value */ T, TResult]
   type LodashCloneWith2x1[T, TResult] = js.Function1[/* value */ T, TResult | T]
   type LodashCompact = js.Function1[
-    /* array */ js.UndefOr[(List[js.UndefOr[js.Any | Null | `false` | Empty | `0`]]) | Null], 
+    /* array */ js.UndefOr[(List[js.UndefOr[js.Any | Null | `false` | _empty | `0`]]) | Null], 
     js.Array[js.Any]
   ]
   type LodashConcat1x1[T] = js.Function1[/* values */ Many[T], js.Array[T]]

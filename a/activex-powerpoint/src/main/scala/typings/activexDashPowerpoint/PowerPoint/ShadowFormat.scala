@@ -18,7 +18,8 @@ class ShadowFormat protected () extends js.Object {
   var OffsetX: Double = js.native
   var OffsetY: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ShadowFormat_typekey`: ShadowFormat = js.native
+  @JSName("PowerPoint.ShadowFormat_typekey")
+  var PowerPointDotShadowFormat_typekey: ShadowFormat = js.native
   var RotateWithShape: MsoTriState = js.native
   var Size: Double = js.native
   var Style: MsoShadowStyle = js.native

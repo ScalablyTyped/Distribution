@@ -45,6 +45,12 @@ trait RenderCamera extends Object {
     */
   var near: Double
   /**
+    * The render pixel ratio. This can be used to adjust screen sizes so that they correctly match up to CSS pixel sizes when rendered in HiDPI.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var pixelRatio: Double
+  /**
     * A 4x4 matrix that defines the perspective projection transformation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
@@ -68,6 +74,12 @@ trait RenderCamera extends Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
     */
   var viewMatrix: ArrayLike[Double]
+  /**
+    * The viewport (x, y, width, height).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var viewport: js.Any
 }
 
 object RenderCamera {
@@ -81,13 +93,15 @@ object RenderCamera {
     fovY: Double,
     hasOwnProperty: PropertyKey => Boolean,
     near: Double,
+    pixelRatio: Double,
     projectionMatrix: ArrayLike[Double],
     propertyIsEnumerable: PropertyKey => Boolean,
     up: ArrayLike[Double],
     viewInverseTransposeMatrix: ArrayLike[Double],
-    viewMatrix: ArrayLike[Double]
+    viewMatrix: ArrayLike[Double],
+    viewport: js.Any
   ): RenderCamera = {
-    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], fovX = fovX.asInstanceOf[js.Any], fovY = fovY.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), near = near.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), up = up.asInstanceOf[js.Any], viewInverseTransposeMatrix = viewInverseTransposeMatrix.asInstanceOf[js.Any], viewMatrix = viewMatrix.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], fovX = fovX.asInstanceOf[js.Any], fovY = fovY.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), near = near.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), up = up.asInstanceOf[js.Any], viewInverseTransposeMatrix = viewInverseTransposeMatrix.asInstanceOf[js.Any], viewMatrix = viewMatrix.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderCamera]
   }

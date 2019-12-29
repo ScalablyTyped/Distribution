@@ -1,9 +1,6 @@
 package typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.AlreadyListening
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.Closed
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.Disposed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

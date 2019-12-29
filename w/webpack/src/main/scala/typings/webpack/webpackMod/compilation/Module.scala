@@ -1,9 +1,9 @@
 package typings.webpack.webpackMod.compilation
 
 import typings.webpack.Anon_NewChunks
+import typings.webpack.webpackBooleans.`false`
+import typings.webpack.webpackBooleans.`true`
 import typings.webpack.webpackMod.SortableSet
-import typings.webpack.webpackNumbers.`false`
-import typings.webpack.webpackNumbers.`true`
 import typings.webpack.webpackStrings.exports
 import typings.webpack.webpackStrings.module
 import scala.scalajs.js
@@ -33,7 +33,7 @@ class Module protected () extends DependenciesBlock {
   var id: Double | String | Null = js.native
   var index: Double | Null = js.native
   var index2: Double | Null = js.native
-  var issuer: typings.webpack.webpackMod.compilation.Module | Null = js.native
+  var issuer: Module | Null = js.native
   var moduleArgument: String | module = js.native
   var optimizationBailout: String | js.Array[_] = js.native
   var optional: Boolean = js.native
@@ -49,10 +49,10 @@ class Module protected () extends DependenciesBlock {
   var warnings: js.Array[_] = js.native
   def _doRewriteChunkInReasons(oldChunk: Chunk, newChunks: js.Array[Chunk]): Unit = js.native
   def addChunk(chunk: Chunk): Boolean = js.native
-  def addReason(module: typings.webpack.webpackMod.compilation.Module, dependency: js.Any, explanation: js.Any): Unit = js.native
+  def addReason(module: Module, dependency: js.Any, explanation: js.Any): Unit = js.native
   def disconnect(): Unit = js.native
   def getChunks(): js.Array[Chunk] = js.native
-  def hasEqualsChunks(module: typings.webpack.webpackMod.compilation.Module): Boolean = js.native
+  def hasEqualsChunks(module: Module): Boolean = js.native
   def hasReasonForChunk(chunk: Chunk): Boolean = js.native
   def hasReasons(): Boolean = js.native
   def isEntryModule(): Boolean = js.native
@@ -62,7 +62,7 @@ class Module protected () extends DependenciesBlock {
   def isUsed(exportName: String): Boolean | String = js.native
   def needRebuild(fileTimestamps: js.Any, contextTimestamps: js.Any): Boolean = js.native
   def removeChunk(chunk: Chunk): Boolean = js.native
-  def removeReason(module: typings.webpack.webpackMod.compilation.Module, dependency: js.Any): Boolean = js.native
+  def removeReason(module: Module, dependency: js.Any): Boolean = js.native
   def rewriteChunkInReasons(oldChunk: Chunk, newChunks: js.Array[Chunk]): Unit = js.native
   def setChunks(chunks: js.Array[Chunk]): Unit = js.native
   def sortItems(): Unit = js.native

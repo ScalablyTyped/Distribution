@@ -1,8 +1,6 @@
 package typings.parchment
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.parchment.distSrcBlotAbstractBlotMod.Blot
-import typings.parchment.distSrcBlotAbstractBlotMod.Parent
 import typings.parchment.distSrcCollectionLinkedDashListMod.default
 import typings.parchment.distSrcCollectionLinkedDashNodeMod.LinkedNode
 import typings.std.HTMLElement

@@ -11,7 +11,8 @@ class OMathBreaks protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathBreaks_typekey`: OMathBreaks = js.native
+  @JSName("Word.OMathBreaks_typekey")
+  var WordDotOMathBreaks_typekey: OMathBreaks = js.native
   def Add(Range: Range): OMathBreak = js.native
   def Item(Index: Double): OMathBreak = js.native
 }

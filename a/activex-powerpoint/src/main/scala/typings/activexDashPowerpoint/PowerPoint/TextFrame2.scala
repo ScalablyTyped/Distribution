@@ -32,7 +32,8 @@ class TextFrame2 protected () extends js.Object {
   var Orientation: MsoTextOrientation = js.native
   val Parent: js.Any = js.native
   var PathFormat: MsoPathFormat = js.native
-  var `PowerPoint.TextFrame2_typekey`: TextFrame2 = js.native
+  @JSName("PowerPoint.TextFrame2_typekey")
+  var PowerPointDotTextFrame2_typekey: TextFrame2 = js.native
   val Ruler: Ruler2 = js.native
   val TextRange: TextRange2 = js.native
   val ThreeD: ThreeDFormat = js.native

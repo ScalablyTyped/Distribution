@@ -1,10 +1,6 @@
 package typings.sharepoint.SP.Publishing.Navigation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.inheritFromParentWeb
-import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.portalProvider
-import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.taxonomyProvider
-import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

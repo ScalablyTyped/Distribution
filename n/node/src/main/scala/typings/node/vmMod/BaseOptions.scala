@@ -14,7 +14,7 @@ trait BaseOptions extends js.Object {
     * Specifies the filename used in stack traces produced by this script.
     * Default: `''`.
     */
-  var filename: js.UndefOr[java.lang.String] = js.undefined
+  var filename: js.UndefOr[String] = js.undefined
   /**
     * Specifies the line number offset that is displayed in stack traces produced by this script.
     * Default: `0`.
@@ -24,11 +24,7 @@ trait BaseOptions extends js.Object {
 
 object BaseOptions {
   @scala.inline
-  def apply(
-    columnOffset: Int | Double = null,
-    filename: java.lang.String = null,
-    lineOffset: Int | Double = null
-  ): BaseOptions = {
+  def apply(columnOffset: Int | Double = null, filename: String = null, lineOffset: Int | Double = null): BaseOptions = {
     val __obj = js.Dynamic.literal()
     if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])

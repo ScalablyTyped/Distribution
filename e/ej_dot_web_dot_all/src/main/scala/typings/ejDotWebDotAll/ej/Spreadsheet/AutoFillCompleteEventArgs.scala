@@ -22,7 +22,7 @@ trait AutoFillCompleteEventArgs extends js.Object {
   var fillType: js.UndefOr[String] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the sheet index.
     */
   var sheetIdx: js.UndefOr[Double] = js.undefined
@@ -39,7 +39,7 @@ object AutoFillCompleteEventArgs {
     direction: String = null,
     fillRange: js.Array[_] = null,
     fillType: String = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     sheetIdx: Int | Double = null,
     `type`: String = null
   ): AutoFillCompleteEventArgs = {

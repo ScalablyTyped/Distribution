@@ -1,6 +1,6 @@
 package typings.atFirebaseFirestore
 
-import typings.atFirebaseFirestore.atFirebaseFirestoreNumbers.`true`
+import typings.atFirebaseFirestore.atFirebaseFirestoreBooleans.`true`
 import typings.atFirebaseFirestore.distSrcCoreDatabaseUnderscoreInfoMod.DatabaseId
 import typings.atFirebaseFirestore.distSrcCoreDatabaseUnderscoreInfoMod.DatabaseInfo
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.ProtoByteString

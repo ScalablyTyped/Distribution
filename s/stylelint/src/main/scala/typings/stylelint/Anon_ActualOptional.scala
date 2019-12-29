@@ -1,7 +1,7 @@
 package typings.stylelint
 
+import typings.stylelint.stylelintBooleans.`true`
 import typings.stylelint.stylelintMod.ValidateOptionsAssertion
-import typings.stylelint.stylelintNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

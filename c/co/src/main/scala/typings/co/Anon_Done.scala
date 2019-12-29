@@ -1,6 +1,6 @@
 package typings.co
 
-import typings.co.coNumbers.`true`
+import typings.co.coBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

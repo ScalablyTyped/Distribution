@@ -51,6 +51,14 @@ trait locationCreateRendererParams extends Object {
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#createRenderer)
+    *
+    * @default false
+    */
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * The type of symbol to generate. This depends on the view in which you are working and the desired visualization. This parameter does not need to be specified for layers with a `mesh` geometry type. Possible values are described below.
     *
     * | Value | Description |
@@ -84,6 +92,7 @@ object locationCreateRendererParams {
     colorMixMode: String = null,
     locationScheme: LocationScheme = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     symbolType: String = null,
     view: View = null
   ): locationCreateRendererParams = {
@@ -92,6 +101,7 @@ object locationCreateRendererParams {
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode.asInstanceOf[js.Any])
     if (locationScheme != null) __obj.updateDynamic("locationScheme")(locationScheme.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[locationCreateRendererParams]

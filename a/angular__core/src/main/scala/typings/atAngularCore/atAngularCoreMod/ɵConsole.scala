@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵConsole")
+@JSImport("@angular/core", "\u0275Console")
 @js.native
 class ɵConsole () extends js.Object {
   def log(message: String): Unit = js.native

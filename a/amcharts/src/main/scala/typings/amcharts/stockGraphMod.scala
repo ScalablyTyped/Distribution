@@ -1,7 +1,6 @@
 package typings.amcharts
 
 import typings.amcharts.amGraphMod.AmGraph
-import typings.amcharts.stockGraphMod.StockGraph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

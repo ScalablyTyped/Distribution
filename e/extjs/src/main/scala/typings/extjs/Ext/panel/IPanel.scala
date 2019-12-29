@@ -22,7 +22,7 @@ trait IPanel extends IAbstractPanel {
   /** [Config Option] (Object/Object[]) */
   var bbar: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var buttonAlign: js.UndefOr[java.lang.String] = js.undefined
+  var buttonAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object/Object[]) */
   var buttons: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -30,29 +30,25 @@ trait IPanel extends IAbstractPanel {
   /** [Method] Closes the Panel  */
   var close: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var closeAction: js.UndefOr[java.lang.String] = js.undefined
+  var closeAction: js.UndefOr[String] = js.undefined
   /** [Method] Collapses the panel body so that the body becomes hidden
   		* @param direction String The direction to collapse towards. Must be one of  Ext.Component.DIRECTION_TOP Ext.Component.DIRECTION_RIGHT Ext.Component.DIRECTION_BOTTOM Ext.Component.DIRECTION_LEFT Defaults to collapseDirection.
   		* @param animate Boolean True to animate the transition, else false (defaults to the value of the animCollapse panel config). May also be specified as the animation duration in milliseconds.
   		* @returns Ext.panel.Panel this
   		*/
   var collapse: js.UndefOr[
-    js.Function2[
-      /* direction */ js.UndefOr[java.lang.String], 
-      /* animate */ js.UndefOr[Boolean], 
-      this.type
-    ]
+    js.Function2[/* direction */ js.UndefOr[String], /* animate */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
   /** [Config Option] (String) */
-  var collapseDirection: js.UndefOr[java.lang.String] = js.undefined
+  var collapseDirection: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var collapseFirst: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var collapseMode: js.UndefOr[java.lang.String] = js.undefined
+  var collapseMode: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var collapsed: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var collapsedCls: js.UndefOr[java.lang.String] = js.undefined
+  var collapsedCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var collapsible: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -85,15 +81,15 @@ trait IPanel extends IAbstractPanel {
   /** [Config Option] (Boolean/Object) */
   var header: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var headerOverCls: js.UndefOr[java.lang.String] = js.undefined
+  var headerOverCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var headerPosition: js.UndefOr[java.lang.String] = js.undefined
+  var headerPosition: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var hideCollapseTool: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.undefined
+  var iconCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns true if this component is visible
   		* @param deep Object
   		* @returns Boolean true if this component is visible, false otherwise.
@@ -142,15 +138,15 @@ trait IPanel extends IAbstractPanel {
   /** [Method] Set the icon for the panel s header
   		* @param newIcon String The new icon path
   		*/
-  var setIcon: js.UndefOr[js.Function1[/* newIcon */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIcon: js.UndefOr[js.Function1[/* newIcon */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the iconCls for the panel s header
   		* @param newIconCls String The new CSS class name
   		*/
-  var setIconCls: js.UndefOr[js.Function1[/* newIconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setIconCls: js.UndefOr[js.Function1[/* newIconCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set a title for the panel s header
   		* @param newTitle String
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* newTitle */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* newTitle */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the UI for the component
   		* @param ui Object
   		*/
@@ -161,9 +157,9 @@ trait IPanel extends IAbstractPanel {
   /** [Config Option] (Object/Object[]) */
   var tbar: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var titleAlign: js.UndefOr[java.lang.String] = js.undefined
+  var titleAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var titleCollapse: js.UndefOr[Boolean] = js.undefined
   /** [Method] Shortcut for performing an expand or collapse based on the current state of the panel
@@ -183,22 +179,22 @@ object IPanel {
     afterExpand: /* animated */ js.UndefOr[Boolean] => Unit = null,
     animCollapse: js.UndefOr[Boolean] = js.undefined,
     bbar: js.Any = null,
-    buttonAlign: java.lang.String = null,
+    buttonAlign: String = null,
     buttons: js.Any = null,
     closable: js.UndefOr[Boolean] = js.undefined,
     close: () => Unit = null,
-    closeAction: java.lang.String = null,
-    collapse: (/* direction */ js.UndefOr[java.lang.String], /* animate */ js.UndefOr[Boolean]) => typings.extjs.Ext.panel.IPanel = null,
-    collapseDirection: java.lang.String = null,
+    closeAction: String = null,
+    collapse: (/* direction */ js.UndefOr[String], /* animate */ js.UndefOr[Boolean]) => IPanel = null,
+    collapseDirection: String = null,
     collapseFirst: js.UndefOr[Boolean] = js.undefined,
-    collapseMode: java.lang.String = null,
+    collapseMode: String = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsedCls: java.lang.String = null,
+    collapsedCls: String = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
     constrainHeader: js.UndefOr[Boolean] = js.undefined,
     convertCollapseDir: /* collapseDir */ js.UndefOr[js.Any] => Unit = null,
     dd: js.Any = null,
-    expand: /* animate */ js.UndefOr[Boolean] => typings.extjs.Ext.panel.IPanel = null,
+    expand: /* animate */ js.UndefOr[Boolean] => IPanel = null,
     fbar: js.Any = null,
     floatable: js.UndefOr[Boolean] = js.undefined,
     frameHeader: js.UndefOr[Boolean] = js.undefined,
@@ -206,11 +202,11 @@ object IPanel {
     getHeader: () => Unit = null,
     glyph: js.Any = null,
     header: js.Any = null,
-    headerOverCls: java.lang.String = null,
-    headerPosition: java.lang.String = null,
+    headerOverCls: String = null,
+    headerPosition: String = null,
     hideCollapseTool: js.UndefOr[Boolean] = js.undefined,
-    icon: java.lang.String = null,
-    iconCls: java.lang.String = null,
+    icon: String = null,
+    iconCls: String = null,
     isVisible: /* deep */ js.UndefOr[js.Any] => Boolean = null,
     lbar: js.Any = null,
     manageHeight: js.UndefOr[Boolean] = js.undefined,
@@ -225,16 +221,16 @@ object IPanel {
     rbar: js.Any = null,
     setBorder: (/* border */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[js.Any]) => Unit = null,
     setGlyph: /* newGlyph */ js.UndefOr[js.Any] => Unit = null,
-    setIcon: /* newIcon */ js.UndefOr[java.lang.String] => Unit = null,
-    setIconCls: /* newIconCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setTitle: /* newTitle */ js.UndefOr[java.lang.String] => Unit = null,
+    setIcon: /* newIcon */ js.UndefOr[String] => Unit = null,
+    setIconCls: /* newIconCls */ js.UndefOr[String] => Unit = null,
+    setTitle: /* newTitle */ js.UndefOr[String] => Unit = null,
     setUI: /* ui */ js.UndefOr[js.Any] => Unit = null,
     simpleDrag: js.UndefOr[Boolean] = js.undefined,
     tbar: js.Any = null,
-    title: java.lang.String = null,
-    titleAlign: java.lang.String = null,
+    title: String = null,
+    titleAlign: String = null,
     titleCollapse: js.UndefOr[Boolean] = js.undefined,
-    toggleCollapse: () => typings.extjs.Ext.panel.IPanel = null,
+    toggleCollapse: () => IPanel = null,
     tools: js.Any = null
   ): IPanel = {
     val __obj = js.Dynamic.literal()

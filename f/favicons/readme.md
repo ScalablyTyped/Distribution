@@ -1,7 +1,7 @@
 
 # Scala.js typings for favicons
 
-Typings are for version 5.3
+Typings are for version 5.5
 
 ## Library description:
 Favicon generator for Node.js

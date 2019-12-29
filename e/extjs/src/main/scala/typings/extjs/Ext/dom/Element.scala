@@ -41,15 +41,15 @@ object Element extends js.Object {
   		* @param y Number The y coordinate
   		* @returns String The found Element
   		*/
-  def fromPoint(): java.lang.String = js.native
-  def fromPoint(x: Double): java.lang.String = js.native
-  def fromPoint(x: Double, y: Double): java.lang.String = js.native
+  def fromPoint(): String = js.native
+  def fromPoint(x: Double): String = js.native
+  def fromPoint(x: Double, y: Double): String = js.native
   /** [Method] Retrieves Ext dom Element objects
   		* @param el String/HTMLElement/Ext.Element The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.Element The Element object (or null if no matching element was found)
   		*/
-  def get(): typings.extjs.Ext.dom.IElement = js.native
-  def get(el: js.Any): typings.extjs.Ext.dom.IElement = js.native
+  def get(): IElement = js.native
+  def get(el: js.Any): IElement = js.native
   /** [Method] Retrieves the document height Defined in override Ext dom AbstractElement_static
   		* @returns Number documentHeight
   		*/
@@ -61,11 +61,11 @@ object Element extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Retrieves the current orientation of the window
   		* @returns String Orientation of window: 'portrait' or 'landscape'
   		*/
-  def getOrientation(): java.lang.String = js.native
+  def getOrientation(): String = js.native
   /** [Method] Retrieves the viewport size of the window
   		* @returns Object object containing width and height properties
   		*/
@@ -92,8 +92,8 @@ object Element extends js.Object {
   		* @param prop String The property to normalize
   		* @returns String The normalized string
   		*/
-  def normalize(): java.lang.String = js.native
-  def normalize(prop: java.lang.String): java.lang.String = js.native
+  def normalize(): String = js.native
+  def normalize(prop: String): String = js.native
   /** [Method] Override members of this class
   		* @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
   		* @returns Ext.Base this class
@@ -111,7 +111,7 @@ object Element extends js.Object {
   		* @returns Object styles
   		*/
   def parseStyles(): js.Any = js.native
-  def parseStyles(styles: java.lang.String): js.Any = js.native
+  def parseStyles(styles: String): js.Any = js.native
   /** [Method] Returns an array of unique class names deom the first parameter with all class names from the second parameter removed
   		* @param existingClsList Mixed A string of class names, or an array of class names.
   		* @param removeClsList Mixed A string of class names, or an array of class names to remove from existingClsList.
@@ -135,8 +135,8 @@ object Element extends js.Object {
   		* @param units String The type of units to add
   		* @returns String An string with unitized (px if units is not specified) metrics for top, right, bottom and left
   		*/
-  def unitizeBox(): java.lang.String = js.native
-  def unitizeBox(box: js.Any): java.lang.String = js.native
-  def unitizeBox(box: js.Any, units: java.lang.String): java.lang.String = js.native
+  def unitizeBox(): String = js.native
+  def unitizeBox(box: js.Any): String = js.native
+  def unitizeBox(box: js.Any, units: String): String = js.native
 }
 

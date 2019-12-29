@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.clearSigned
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.encrypted
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.opaqueSigned
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

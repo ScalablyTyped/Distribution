@@ -1,12 +1,6 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libApiSessionDashStateMod.SessionState
-import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Established
-import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Establishing
-import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Initial
-import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Terminated
-import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Terminating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

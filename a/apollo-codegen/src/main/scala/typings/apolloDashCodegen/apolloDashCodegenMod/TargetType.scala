@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.apolloDashCodegen.apolloDashCodegenStrings.`ts-legacy`
   - typings.apolloDashCodegen.apolloDashCodegenStrings.`typescript-legacy`
   - typings.apolloDashCodegen.apolloDashCodegenStrings.`flow-legacy`
-  - typings.apolloDashCodegen.apolloDashCodegenStrings.SCALA
+  - typings.apolloDashCodegen.apolloDashCodegenStrings.scala_
   - typings.apolloDashCodegen.apolloDashCodegenStrings.flow
   - typings.apolloDashCodegen.apolloDashCodegenStrings.typescript
   - typings.apolloDashCodegen.apolloDashCodegenStrings.ts
@@ -19,8 +19,6 @@ trait TargetType extends js.Object
 
 object TargetType {
   @scala.inline
-  def SCALA: typings.apolloDashCodegen.apolloDashCodegenStrings.SCALA = this.cast("scala")
-  @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
   def flow: typings.apolloDashCodegen.apolloDashCodegenStrings.flow = this.cast("flow")
@@ -28,6 +26,9 @@ object TargetType {
   def `flow-legacy`: typings.apolloDashCodegen.apolloDashCodegenStrings.`flow-legacy` = this.cast("flow-legacy")
   @scala.inline
   def json: typings.apolloDashCodegen.apolloDashCodegenStrings.json = this.cast("json")
+  @JSName("scala")
+  @scala.inline
+  def scala_ : typings.apolloDashCodegen.apolloDashCodegenStrings.scala_ = this.cast("scala")
   @scala.inline
   def swift: typings.apolloDashCodegen.apolloDashCodegenStrings.swift = this.cast("swift")
   @scala.inline

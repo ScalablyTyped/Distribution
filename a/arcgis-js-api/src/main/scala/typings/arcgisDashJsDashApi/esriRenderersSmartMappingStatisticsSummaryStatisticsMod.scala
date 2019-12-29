@@ -13,7 +13,7 @@ object esriRenderersSmartMappingStatisticsSummaryStatisticsMod
   extends TopLevel[
       js.Function1[
         /* params */ summaryStatisticsSummaryStatisticsParams, 
-        IPromise[SummaryStatisticsResult]
+        js.Promise[SummaryStatisticsResult]
       ]
     ]
 

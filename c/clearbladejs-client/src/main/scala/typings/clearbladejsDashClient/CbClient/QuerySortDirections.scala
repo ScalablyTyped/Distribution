@@ -1,8 +1,6 @@
 package typings.clearbladejsDashClient.CbClient
 
 import org.scalablytyped.runtime.TopLevel
-import typings.clearbladejsDashClient.CbClient.QuerySortDirections.QUERY_SORT_ASCENDING
-import typings.clearbladejsDashClient.CbClient.QuerySortDirections.QUERY_SORT_DESCENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.roxDashBrowser.roxDashBrowserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromCache
-import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromEmbedded
-import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromNetwork
-import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.ErrorFetchFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

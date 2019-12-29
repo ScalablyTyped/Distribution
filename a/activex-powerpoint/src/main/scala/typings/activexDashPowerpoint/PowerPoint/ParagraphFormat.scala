@@ -18,7 +18,8 @@ class ParagraphFormat protected () extends js.Object {
   var LineRuleBefore: MsoTriState = js.native
   var LineRuleWithin: MsoTriState = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ParagraphFormat_typekey`: ParagraphFormat = js.native
+  @JSName("PowerPoint.ParagraphFormat_typekey")
+  var PowerPointDotParagraphFormat_typekey: ParagraphFormat = js.native
   var SpaceAfter: Double = js.native
   var SpaceBefore: Double = js.native
   var SpaceWithin: Double = js.native

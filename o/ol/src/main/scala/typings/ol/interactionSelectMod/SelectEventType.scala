@@ -1,7 +1,6 @@
 package typings.ol.interactionSelectMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.interactionSelectMod.SelectEventType.SELECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

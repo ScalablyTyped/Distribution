@@ -19,6 +19,9 @@ import scala.scalajs.js.annotation._
 
 object cypressStrings {
   @js.native
+  sealed trait $el extends js.Object
+  
+  @js.native
   sealed trait Base extends Reporter
   
   @js.native
@@ -34,9 +37,6 @@ object cypressStrings {
   sealed trait ConformsPredicateObject extends js.Object
   
   @js.native
-  sealed trait DOLLARel extends js.Object
-  
-  @js.native
   sealed trait Date extends js.Object
   
   @js.native
@@ -44,9 +44,6 @@ object cypressStrings {
   
   @js.native
   sealed trait Electron extends js.Object
-  
-  @js.native
-  sealed trait Empty extends __Falsy
   
   @js.native
   sealed trait FireFox extends js.Object
@@ -106,6 +103,9 @@ object cypressStrings {
   sealed trait Nyan extends Reporter
   
   @js.native
+  sealed trait Object extends js.Object
+  
+  @js.native
   sealed trait POST extends js.Object
   
   @js.native
@@ -121,6 +121,9 @@ object cypressStrings {
   sealed trait ResolvableProps extends js.Object
   
   @js.native
+  sealed trait SinonSandbox extends js.Object
+  
+  @js.native
   sealed trait SinonStubbedInstance extends js.Object
   
   @js.native
@@ -134,6 +137,9 @@ object cypressStrings {
   
   @js.native
   sealed trait _TypeEventHandlers extends js.Object
+  
+  @js.native
+  sealed trait _empty extends __Falsy
   
   @js.native
   sealed trait a extends js.Object
@@ -159,7 +165,10 @@ object cypressStrings {
   sealed trait afterEach extends js.Object
   
   @js.native
-  sealed trait alwaysDOTreturned extends js.Object
+  sealed trait alwaysDotreturned extends js.Object
+  
+  @js.native
+  sealed trait ancestorOrigins extends js.Object
   
   @js.native
   sealed trait animationDistanceThreshold extends js.Object
@@ -231,124 +240,124 @@ object cypressStrings {
   sealed trait bdo extends js.Object
   
   @js.native
-  sealed trait beDOTa extends js.Object
+  sealed trait beDota extends js.Object
   
   @js.native
-  sealed trait beDOTabove extends js.Object
+  sealed trait beDotabove extends js.Object
   
   @js.native
-  sealed trait beDOTalwaysDOTcalledWithMatch extends js.Object
+  sealed trait beDotalwaysDotcalledWithMatch extends js.Object
   
   @js.native
-  sealed trait beDOTalwaysDOTcalledWithNew extends js.Object
+  sealed trait beDotalwaysDotcalledWithNew extends js.Object
   
   @js.native
-  sealed trait beDOTan extends js.Object
+  sealed trait beDotan extends js.Object
   
   @js.native
-  sealed trait beDOTapproximately extends js.Object
+  sealed trait beDotapproximately extends js.Object
   
   @js.native
-  sealed trait beDOTarguments extends js.Object
+  sealed trait beDotarguments extends js.Object
   
   @js.native
-  sealed trait beDOTatDOTleast extends js.Object
+  sealed trait beDotatDotleast extends js.Object
   
   @js.native
-  sealed trait beDOTbelow extends js.Object
+  sealed trait beDotbelow extends js.Object
   
   @js.native
-  sealed trait beDOTcalled extends js.Object
+  sealed trait beDotcalled extends js.Object
   
   @js.native
-  sealed trait beDOTcalledAfter extends js.Object
+  sealed trait beDotcalledAfter extends js.Object
   
   @js.native
-  sealed trait beDOTcalledBefore extends js.Object
+  sealed trait beDotcalledBefore extends js.Object
   
   @js.native
-  sealed trait beDOTcalledOn extends js.Object
+  sealed trait beDotcalledOn extends js.Object
   
   @js.native
-  sealed trait beDOTcalledOnce extends js.Object
+  sealed trait beDotcalledOnce extends js.Object
   
   @js.native
-  sealed trait beDOTcalledThrice extends js.Object
+  sealed trait beDotcalledThrice extends js.Object
   
   @js.native
-  sealed trait beDOTcalledTwice extends js.Object
+  sealed trait beDotcalledTwice extends js.Object
   
   @js.native
-  sealed trait beDOTcalledWithExactly extends js.Object
+  sealed trait beDotcalledWithExactly extends js.Object
   
   @js.native
-  sealed trait beDOTcalledWithMatch extends js.Object
+  sealed trait beDotcalledWithMatch extends js.Object
   
   @js.native
-  sealed trait beDOTcalledWithNew extends js.Object
+  sealed trait beDotcalledWithNew extends js.Object
   
   @js.native
-  sealed trait beDOTchecked extends js.Object
+  sealed trait beDotchecked extends js.Object
   
   @js.native
-  sealed trait beDOTcloseTo extends js.Object
+  sealed trait beDotcloseTo extends js.Object
   
   @js.native
-  sealed trait beDOTdisabled extends js.Object
+  sealed trait beDotdisabled extends js.Object
   
   @js.native
-  sealed trait beDOTempty extends js.Object
+  sealed trait beDotempty extends js.Object
   
   @js.native
-  sealed trait beDOTenabled extends js.Object
+  sealed trait beDotenabled extends js.Object
   
   @js.native
-  sealed trait beDOTfalse extends js.Object
+  sealed trait beDotfalse extends js.Object
   
   @js.native
-  sealed trait beDOTfocused extends js.Object
+  sealed trait beDotfocused extends js.Object
   
   @js.native
-  sealed trait beDOTgreaterThan extends js.Object
+  sealed trait beDotgreaterThan extends js.Object
   
   @js.native
-  sealed trait beDOTgt extends js.Object
+  sealed trait beDotgt extends js.Object
   
   @js.native
-  sealed trait beDOTgte extends js.Object
+  sealed trait beDotgte extends js.Object
   
   @js.native
-  sealed trait beDOThidden extends js.Object
+  sealed trait beDothidden extends js.Object
   
   @js.native
-  sealed trait beDOTinstanceOf extends js.Object
+  sealed trait beDotinstanceOf extends js.Object
   
   @js.native
-  sealed trait beDOTlessThan extends js.Object
+  sealed trait beDotlessThan extends js.Object
   
   @js.native
-  sealed trait beDOTlt extends js.Object
+  sealed trait beDotlt extends js.Object
   
   @js.native
-  sealed trait beDOTlte extends js.Object
+  sealed trait beDotlte extends js.Object
   
   @js.native
-  sealed trait beDOTok extends js.Object
+  sealed trait beDotok extends js.Object
   
   @js.native
-  sealed trait beDOTselected extends js.Object
+  sealed trait beDotselected extends js.Object
   
   @js.native
-  sealed trait beDOTtrue extends js.Object
+  sealed trait beDottrue extends js.Object
   
   @js.native
-  sealed trait beDOTundefined extends js.Object
+  sealed trait beDotundefined extends js.Object
   
   @js.native
-  sealed trait beDOTvisible extends js.Object
+  sealed trait beDotvisible extends js.Object
   
   @js.native
-  sealed trait beDOTwithin extends js.Object
+  sealed trait beDotwithin extends js.Object
   
   @js.native
   sealed trait before extends js.Object
@@ -450,28 +459,28 @@ object cypressStrings {
   sealed trait colgroup extends js.Object
   
   @js.native
-  sealed trait `command:end` extends js.Object
+  sealed trait commandColonend extends js.Object
   
   @js.native
-  sealed trait `command:enqueued` extends js.Object
+  sealed trait commandColonenqueued extends js.Object
   
   @js.native
-  sealed trait `command:retry` extends js.Object
+  sealed trait commandColonretry extends js.Object
   
   @js.native
-  sealed trait `command:start` extends js.Object
+  sealed trait commandColonstart extends js.Object
   
   @js.native
   sealed trait contain extends js.Object
   
   @js.native
-  sealed trait containDOThtml extends js.Object
+  sealed trait containDothtml extends js.Object
   
   @js.native
-  sealed trait containDOTtext extends js.Object
+  sealed trait containDottext extends js.Object
   
   @js.native
-  sealed trait containDOTvalue extends js.Object
+  sealed trait containDotvalue extends js.Object
   
   @js.native
   sealed trait contextmenu extends js.Object
@@ -504,7 +513,7 @@ object cypressStrings {
   sealed trait decrease extends js.Object
   
   @js.native
-  sealed trait deepDOTequal extends js.Object
+  sealed trait deepDotequal extends js.Object
   
   @js.native
   sealed trait defaultCommandTimeout extends js.Object
@@ -710,91 +719,94 @@ object cypressStrings {
   sealed trait h6 extends js.Object
   
   @js.native
-  sealed trait haveDOTallDOTkeys extends js.Object
+  sealed trait hash extends js.Object
   
   @js.native
-  sealed trait haveDOTalwaysDOTthrown extends js.Object
+  sealed trait haveDotallDotkeys extends js.Object
   
   @js.native
-  sealed trait haveDOTanyDOTkeys extends js.Object
+  sealed trait haveDotalwaysDotthrown extends js.Object
   
   @js.native
-  sealed trait haveDOTattr extends js.Object
+  sealed trait haveDotanyDotkeys extends js.Object
   
   @js.native
-  sealed trait haveDOTcallCount extends js.Object
+  sealed trait haveDotattr extends js.Object
   
   @js.native
-  sealed trait haveDOTclass extends js.Object
+  sealed trait haveDotcallCount extends js.Object
   
   @js.native
-  sealed trait haveDOTcss extends js.Object
+  sealed trait haveDotclass extends js.Object
   
   @js.native
-  sealed trait haveDOTdata extends js.Object
+  sealed trait haveDotcss extends js.Object
   
   @js.native
-  sealed trait haveDOTdeepDOTproperty extends js.Object
+  sealed trait haveDotdata extends js.Object
   
   @js.native
-  sealed trait haveDOTdescendants extends js.Object
+  sealed trait haveDotdeepDotproperty extends js.Object
   
   @js.native
-  sealed trait haveDOTfocus extends js.Object
+  sealed trait haveDotdescendants extends js.Object
   
   @js.native
-  sealed trait haveDOThtml extends js.Object
+  sealed trait haveDotfocus extends js.Object
   
   @js.native
-  sealed trait haveDOTid extends js.Object
+  sealed trait haveDothtml extends js.Object
   
   @js.native
-  sealed trait haveDOTlength extends js.Object
+  sealed trait haveDotid extends js.Object
   
   @js.native
-  sealed trait haveDOTlengthDOTgreaterThan extends js.Object
+  sealed trait haveDotlength extends js.Object
   
   @js.native
-  sealed trait haveDOTlengthDOTgt extends js.Object
+  sealed trait haveDotlengthDotgreaterThan extends js.Object
   
   @js.native
-  sealed trait haveDOTlengthDOTgte extends js.Object
+  sealed trait haveDotlengthDotgt extends js.Object
   
   @js.native
-  sealed trait haveDOTlengthDOTlessThan extends js.Object
+  sealed trait haveDotlengthDotgte extends js.Object
   
   @js.native
-  sealed trait haveDOTlengthDOTlt extends js.Object
+  sealed trait haveDotlengthDotlessThan extends js.Object
   
   @js.native
-  sealed trait haveDOTlengthDOTlte extends js.Object
+  sealed trait haveDotlengthDotlt extends js.Object
   
   @js.native
-  sealed trait haveDOTmembers extends js.Object
+  sealed trait haveDotlengthDotlte extends js.Object
   
   @js.native
-  sealed trait haveDOTorderedDOTmembers extends js.Object
+  sealed trait haveDotmembers extends js.Object
   
   @js.native
-  sealed trait haveDOTownProperty extends js.Object
+  sealed trait haveDotorderedDotmembers extends js.Object
   
   @js.native
-  sealed trait haveDOTprop extends js.Object
+  sealed trait haveDotownProperty extends js.Object
   
   @js.native
-  sealed trait haveDOTproperty extends js.Object
+  sealed trait haveDotprop extends js.Object
   
   @js.native
-  sealed trait haveDOTstring extends js.Object
+  sealed trait haveDotproperty extends js.Object
   
   @js.native
-  sealed trait haveDOTtext extends js.Object
+  sealed trait haveDotstring extends js.Object
   
   @js.native
-  sealed trait haveDOTthrown extends js.Object
+  sealed trait haveDottext extends js.Object
   
   @js.native
-  sealed trait haveDOTvalue extends js.Object
+  sealed trait haveDotthrown extends js.Object
+  
+  @js.native
+  sealed trait haveDotvalue extends js.Object
   
   @js.native
   sealed trait head extends js.Object
@@ -815,7 +827,16 @@ object cypressStrings {
   sealed trait `hook end` extends js.Object
   
   @js.native
+  sealed trait host extends js.Object
+  
+  @js.native
+  sealed trait hostname extends js.Object
+  
+  @js.native
   sealed trait hr extends js.Object
+  
+  @js.native
+  sealed trait href extends js.Object
   
   @js.native
   sealed trait html_ extends Reporter
@@ -836,16 +857,16 @@ object cypressStrings {
   sealed trait include extends js.Object
   
   @js.native
-  sealed trait includeDOThtml extends js.Object
+  sealed trait includeDothtml extends js.Object
   
   @js.native
-  sealed trait includeDOTmembers extends js.Object
+  sealed trait includeDotmembers extends js.Object
   
   @js.native
-  sealed trait includeDOTtext extends js.Object
+  sealed trait includeDottext extends js.Object
   
   @js.native
-  sealed trait includeDOTvalue extends js.Object
+  sealed trait includeDotvalue extends js.Object
   
   @js.native
   sealed trait increase extends js.Object
@@ -881,7 +902,7 @@ object cypressStrings {
   sealed trait `iphone-6` extends ViewportPreset
   
   @js.native
-  sealed trait `iphone-6+` extends ViewportPreset
+  sealed trait `iphone-6Plussign` extends ViewportPreset
   
   @js.native
   sealed trait `iphone-x` extends ViewportPreset
@@ -956,10 +977,10 @@ object cypressStrings {
   sealed trait loadstart extends js.Object
   
   @js.native
-  sealed trait `log:added` extends js.Object
+  sealed trait logColonadded extends js.Object
   
   @js.native
-  sealed trait `log:changed` extends js.Object
+  sealed trait logColonchanged extends js.Object
   
   @js.native
   sealed trait lostpointercapture extends js.Object
@@ -1048,274 +1069,274 @@ object cypressStrings {
   sealed trait noscript extends js.Object
   
   @js.native
-  sealed trait notDOTalwaysDOTreturned extends js.Object
+  sealed trait notDotalwaysDotreturned extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTa extends js.Object
+  sealed trait notDotbeDota extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTabove extends js.Object
+  sealed trait notDotbeDotabove extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTalwaysDOTcalledWithMatch extends js.Object
+  sealed trait notDotbeDotalwaysDotcalledWithMatch extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTalwaysDOTcalledWithNew extends js.Object
+  sealed trait notDotbeDotalwaysDotcalledWithNew extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTan extends js.Object
+  sealed trait notDotbeDotan extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTapproximately extends js.Object
+  sealed trait notDotbeDotapproximately extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTarguments extends js.Object
+  sealed trait notDotbeDotarguments extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTatDOTleast extends js.Object
+  sealed trait notDotbeDotatDotleast extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTbelow extends js.Object
+  sealed trait notDotbeDotbelow extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalled extends js.Object
+  sealed trait notDotbeDotcalled extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledAfter extends js.Object
+  sealed trait notDotbeDotcalledAfter extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledBefore extends js.Object
+  sealed trait notDotbeDotcalledBefore extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledOn extends js.Object
+  sealed trait notDotbeDotcalledOn extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledOnce extends js.Object
+  sealed trait notDotbeDotcalledOnce extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledThrice extends js.Object
+  sealed trait notDotbeDotcalledThrice extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledTwice extends js.Object
+  sealed trait notDotbeDotcalledTwice extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledWithExactly extends js.Object
+  sealed trait notDotbeDotcalledWithExactly extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledWithMatch extends js.Object
+  sealed trait notDotbeDotcalledWithMatch extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcalledWithNew extends js.Object
+  sealed trait notDotbeDotcalledWithNew extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTchecked extends js.Object
+  sealed trait notDotbeDotchecked extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTcloseTo extends js.Object
+  sealed trait notDotbeDotcloseTo extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTdisabled extends js.Object
+  sealed trait notDotbeDotdisabled extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTempty extends js.Object
+  sealed trait notDotbeDotempty extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTenabled extends js.Object
+  sealed trait notDotbeDotenabled extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTfalse extends js.Object
+  sealed trait notDotbeDotfalse extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTfocused extends js.Object
+  sealed trait notDotbeDotfocused extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTgreaterThan extends js.Object
+  sealed trait notDotbeDotgreaterThan extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTgt extends js.Object
+  sealed trait notDotbeDotgt extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTgte extends js.Object
+  sealed trait notDotbeDotgte extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOThidden extends js.Object
+  sealed trait notDotbeDothidden extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTinstanceOf extends js.Object
+  sealed trait notDotbeDotinstanceOf extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTlessThan extends js.Object
+  sealed trait notDotbeDotlessThan extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTlt extends js.Object
+  sealed trait notDotbeDotlt extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTlte extends js.Object
+  sealed trait notDotbeDotlte extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTok extends js.Object
+  sealed trait notDotbeDotok extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTselected extends js.Object
+  sealed trait notDotbeDotselected extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTtrue extends js.Object
+  sealed trait notDotbeDottrue extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTundefined extends js.Object
+  sealed trait notDotbeDotundefined extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTvisible extends js.Object
+  sealed trait notDotbeDotvisible extends js.Object
   
   @js.native
-  sealed trait notDOTbeDOTwithin extends js.Object
+  sealed trait notDotbeDotwithin extends js.Object
   
   @js.native
-  sealed trait notDOTchange extends js.Object
+  sealed trait notDotchange extends js.Object
   
   @js.native
-  sealed trait notDOTcontain extends js.Object
+  sealed trait notDotcontain extends js.Object
   
   @js.native
-  sealed trait notDOTcontainDOThtml extends js.Object
+  sealed trait notDotcontainDothtml extends js.Object
   
   @js.native
-  sealed trait notDOTcontainDOTtext extends js.Object
+  sealed trait notDotcontainDottext extends js.Object
   
   @js.native
-  sealed trait notDOTcontainDOTvalue extends js.Object
+  sealed trait notDotcontainDotvalue extends js.Object
   
   @js.native
-  sealed trait notDOTdecrease extends js.Object
+  sealed trait notDotdecrease extends js.Object
   
   @js.native
-  sealed trait notDOTdeepDOTequal extends js.Object
+  sealed trait notDotdeepDotequal extends js.Object
   
   @js.native
-  sealed trait notDOTeq extends js.Object
+  sealed trait notDoteq extends js.Object
   
   @js.native
-  sealed trait notDOTeql extends js.Object
+  sealed trait notDoteql extends js.Object
   
   @js.native
-  sealed trait notDOTequal extends js.Object
+  sealed trait notDotequal extends js.Object
   
   @js.native
-  sealed trait notDOTexist extends js.Object
+  sealed trait notDotexist extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTallDOTkeys extends js.Object
+  sealed trait notDothaveDotallDotkeys extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTalwaysDOTthrown extends js.Object
+  sealed trait notDothaveDotalwaysDotthrown extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTanyDOTkeys extends js.Object
+  sealed trait notDothaveDotanyDotkeys extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTattr extends js.Object
+  sealed trait notDothaveDotattr extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTcallCount extends js.Object
+  sealed trait notDothaveDotcallCount extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTclass extends js.Object
+  sealed trait notDothaveDotclass extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTcss extends js.Object
+  sealed trait notDothaveDotcss extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTdata extends js.Object
+  sealed trait notDothaveDotdata extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTdeepDOTproperty extends js.Object
+  sealed trait notDothaveDotdeepDotproperty extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTdescendants extends js.Object
+  sealed trait notDothaveDotdescendants extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTfocus extends js.Object
+  sealed trait notDothaveDotfocus extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOThtml extends js.Object
+  sealed trait notDothaveDothtml extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTid extends js.Object
+  sealed trait notDothaveDotid extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTlength extends js.Object
+  sealed trait notDothaveDotlength extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTlengthDOTgreaterThan extends js.Object
+  sealed trait notDothaveDotlengthDotgreaterThan extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTlengthDOTgt extends js.Object
+  sealed trait notDothaveDotlengthDotgt extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTlengthDOTlessThan extends js.Object
+  sealed trait notDothaveDotlengthDotlessThan extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTlengthDOTlt extends js.Object
+  sealed trait notDothaveDotlengthDotlt extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTlengthDOTlte extends js.Object
+  sealed trait notDothaveDotlengthDotlte extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTmembers extends js.Object
+  sealed trait notDothaveDotmembers extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTorderedDOTmembers extends js.Object
+  sealed trait notDothaveDotorderedDotmembers extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTownProperty extends js.Object
+  sealed trait notDothaveDotownProperty extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTprop extends js.Object
+  sealed trait notDothaveDotprop extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTproperty extends js.Object
+  sealed trait notDothaveDotproperty extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTstring extends js.Object
+  sealed trait notDothaveDotstring extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTtext extends js.Object
+  sealed trait notDothaveDottext extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTthrown extends js.Object
+  sealed trait notDothaveDotthrown extends js.Object
   
   @js.native
-  sealed trait notDOThaveDOTvalue extends js.Object
+  sealed trait notDothaveDotvalue extends js.Object
   
   @js.native
-  sealed trait notDOTinclude extends js.Object
+  sealed trait notDotinclude extends js.Object
   
   @js.native
-  sealed trait notDOTincludeDOThtml extends js.Object
+  sealed trait notDotincludeDothtml extends js.Object
   
   @js.native
-  sealed trait notDOTincludeDOTmembers extends js.Object
+  sealed trait notDotincludeDotmembers extends js.Object
   
   @js.native
-  sealed trait notDOTincludeDOTtext extends js.Object
+  sealed trait notDotincludeDottext extends js.Object
   
   @js.native
-  sealed trait notDOTincludeDOTvalue extends js.Object
+  sealed trait notDotincludeDotvalue extends js.Object
   
   @js.native
-  sealed trait notDOTincrease extends js.Object
+  sealed trait notDotincrease extends js.Object
   
   @js.native
-  sealed trait notDOTmatch extends js.Object
+  sealed trait notDotmatch extends js.Object
   
   @js.native
-  sealed trait notDOTrespondTo extends js.Object
+  sealed trait notDotrespondTo extends js.Object
   
   @js.native
-  sealed trait notDOTreturned extends js.Object
+  sealed trait notDotreturned extends js.Object
   
   @js.native
-  sealed trait notDOTsatisfy extends js.Object
+  sealed trait notDotsatisfy extends js.Object
   
   @js.native
   sealed trait notmodified
@@ -1335,7 +1356,7 @@ object cypressStrings {
   sealed trait nyan_ extends Reporter
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait object_ extends js.Object
   
   @js.native
   sealed trait ol extends js.Object
@@ -1348,6 +1369,9 @@ object cypressStrings {
   
   @js.native
   sealed trait optional extends PrevSubject
+  
+  @js.native
+  sealed trait origin extends js.Object
   
   @js.native
   sealed trait output extends js.Object
@@ -1374,6 +1398,9 @@ object cypressStrings {
   
   @js.native
   sealed trait paste extends js.Object
+  
+  @js.native
+  sealed trait pathname extends js.Object
   
   @js.native
   sealed trait pause extends js.Object
@@ -1440,6 +1467,9 @@ object cypressStrings {
   
   @js.native
   sealed trait progress_ extends Reporter
+  
+  @js.native
+  sealed trait protocol extends js.Object
   
   @js.native
   sealed trait q extends js.Object
@@ -1536,6 +1566,9 @@ object cypressStrings {
   
   @js.native
   sealed trait scrolled extends js.Object
+  
+  @js.native
+  sealed trait search extends js.Object
   
   @js.native
   sealed trait section extends js.Object
@@ -1663,10 +1696,10 @@ object cypressStrings {
   sealed trait `test end` extends js.Object
   
   @js.native
-  sealed trait `test:after:run` extends js.Object
+  sealed trait testColonafterColonrun extends js.Object
   
   @js.native
-  sealed trait `test:before:run` extends js.Object
+  sealed trait testColonbeforeColonrun extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -1758,13 +1791,13 @@ object cypressStrings {
   sealed trait ul extends js.Object
   
   @js.native
-  sealed trait `uncaught:exception` extends js.Object
+  sealed trait uncaughtColonexception extends js.Object
   
   @js.native
   sealed trait undefined extends js.Object
   
   @js.native
-  sealed trait `url:changed` extends js.Object
+  sealed trait urlColonchanged extends js.Object
   
   @js.native
   sealed trait `utf-16le` extends Encodings
@@ -1797,7 +1830,7 @@ object cypressStrings {
   sealed trait viewport extends js.Object
   
   @js.native
-  sealed trait `viewport:changed` extends js.Object
+  sealed trait viewportColonchanged extends js.Object
   
   @js.native
   sealed trait viewportHeight extends js.Object
@@ -1830,22 +1863,22 @@ object cypressStrings {
   sealed trait window extends PrevSubject
   
   @js.native
-  sealed trait `window:alert` extends js.Object
+  sealed trait windowColonalert extends js.Object
   
   @js.native
-  sealed trait `window:before:load` extends js.Object
+  sealed trait windowColonbeforeColonload extends js.Object
   
   @js.native
-  sealed trait `window:before:unload` extends js.Object
+  sealed trait windowColonbeforeColonunload extends js.Object
   
   @js.native
-  sealed trait `window:confirm` extends js.Object
+  sealed trait windowColonconfirm extends js.Object
   
   @js.native
-  sealed trait `window:load` extends js.Object
+  sealed trait windowColonload extends js.Object
   
   @js.native
-  sealed trait `window:unload` extends js.Object
+  sealed trait windowColonunload extends js.Object
   
   @js.native
   sealed trait withArgs extends js.Object
@@ -1857,6 +1890,8 @@ object cypressStrings {
   sealed trait xunit_ extends Reporter
   
   @scala.inline
+  def $el: $el = "$el".asInstanceOf[$el]
+  @scala.inline
   def Base: Base = "Base".asInstanceOf[Base]
   @scala.inline
   def Canary: Canary = "Canary".asInstanceOf[Canary]
@@ -1867,15 +1902,11 @@ object cypressStrings {
   @scala.inline
   def ConformsPredicateObject: ConformsPredicateObject = "ConformsPredicateObject".asInstanceOf[ConformsPredicateObject]
   @scala.inline
-  def DOLLARel: DOLLARel = "$el".asInstanceOf[DOLLARel]
-  @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
   @scala.inline
   def Dot: Dot = "Dot".asInstanceOf[Dot]
   @scala.inline
   def Electron: Electron = "Electron".asInstanceOf[Electron]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def FireFox: FireFox = "FireFox".asInstanceOf[FireFox]
   @scala.inline
@@ -1915,6 +1946,8 @@ object cypressStrings {
   @scala.inline
   def Nyan: Nyan = "Nyan".asInstanceOf[Nyan]
   @scala.inline
+  def Object: Object = "Object".asInstanceOf[Object]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PartialDeep: PartialDeep = "PartialDeep".asInstanceOf[PartialDeep]
@@ -1925,6 +1958,8 @@ object cypressStrings {
   @scala.inline
   def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
   @scala.inline
+  def SinonSandbox: SinonSandbox = "SinonSandbox".asInstanceOf[SinonSandbox]
+  @scala.inline
   def SinonStubbedInstance: SinonStubbedInstance = "SinonStubbedInstance".asInstanceOf[SinonStubbedInstance]
   @scala.inline
   def Spec: Spec = "Spec".asInstanceOf[Spec]
@@ -1934,6 +1969,8 @@ object cypressStrings {
   def XUnit: XUnit = "XUnit".asInstanceOf[XUnit]
   @scala.inline
   def _TypeEventHandlers: _TypeEventHandlers = "_TypeEventHandlers".asInstanceOf[_TypeEventHandlers]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -1949,7 +1986,9 @@ object cypressStrings {
   @scala.inline
   def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   @scala.inline
-  def alwaysDOTreturned: alwaysDOTreturned = "always.returned".asInstanceOf[alwaysDOTreturned]
+  def alwaysDotreturned: alwaysDotreturned = "always.returned".asInstanceOf[alwaysDotreturned]
+  @scala.inline
+  def ancestorOrigins: ancestorOrigins = "ancestorOrigins".asInstanceOf[ancestorOrigins]
   @scala.inline
   def animationDistanceThreshold: animationDistanceThreshold = "animationDistanceThreshold".asInstanceOf[animationDistanceThreshold]
   @scala.inline
@@ -1997,85 +2036,85 @@ object cypressStrings {
   @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
-  def beDOTa: beDOTa = "be.a".asInstanceOf[beDOTa]
+  def beDota: beDota = "be.a".asInstanceOf[beDota]
   @scala.inline
-  def beDOTabove: beDOTabove = "be.above".asInstanceOf[beDOTabove]
+  def beDotabove: beDotabove = "be.above".asInstanceOf[beDotabove]
   @scala.inline
-  def beDOTalwaysDOTcalledWithMatch: beDOTalwaysDOTcalledWithMatch = "be.always.calledWithMatch".asInstanceOf[beDOTalwaysDOTcalledWithMatch]
+  def beDotalwaysDotcalledWithMatch: beDotalwaysDotcalledWithMatch = "be.always.calledWithMatch".asInstanceOf[beDotalwaysDotcalledWithMatch]
   @scala.inline
-  def beDOTalwaysDOTcalledWithNew: beDOTalwaysDOTcalledWithNew = "be.always.calledWithNew".asInstanceOf[beDOTalwaysDOTcalledWithNew]
+  def beDotalwaysDotcalledWithNew: beDotalwaysDotcalledWithNew = "be.always.calledWithNew".asInstanceOf[beDotalwaysDotcalledWithNew]
   @scala.inline
-  def beDOTan: beDOTan = "be.an".asInstanceOf[beDOTan]
+  def beDotan: beDotan = "be.an".asInstanceOf[beDotan]
   @scala.inline
-  def beDOTapproximately: beDOTapproximately = "be.approximately".asInstanceOf[beDOTapproximately]
+  def beDotapproximately: beDotapproximately = "be.approximately".asInstanceOf[beDotapproximately]
   @scala.inline
-  def beDOTarguments: beDOTarguments = "be.arguments".asInstanceOf[beDOTarguments]
+  def beDotarguments: beDotarguments = "be.arguments".asInstanceOf[beDotarguments]
   @scala.inline
-  def beDOTatDOTleast: beDOTatDOTleast = "be.at.least".asInstanceOf[beDOTatDOTleast]
+  def beDotatDotleast: beDotatDotleast = "be.at.least".asInstanceOf[beDotatDotleast]
   @scala.inline
-  def beDOTbelow: beDOTbelow = "be.below".asInstanceOf[beDOTbelow]
+  def beDotbelow: beDotbelow = "be.below".asInstanceOf[beDotbelow]
   @scala.inline
-  def beDOTcalled: beDOTcalled = "be.called".asInstanceOf[beDOTcalled]
+  def beDotcalled: beDotcalled = "be.called".asInstanceOf[beDotcalled]
   @scala.inline
-  def beDOTcalledAfter: beDOTcalledAfter = "be.calledAfter".asInstanceOf[beDOTcalledAfter]
+  def beDotcalledAfter: beDotcalledAfter = "be.calledAfter".asInstanceOf[beDotcalledAfter]
   @scala.inline
-  def beDOTcalledBefore: beDOTcalledBefore = "be.calledBefore".asInstanceOf[beDOTcalledBefore]
+  def beDotcalledBefore: beDotcalledBefore = "be.calledBefore".asInstanceOf[beDotcalledBefore]
   @scala.inline
-  def beDOTcalledOn: beDOTcalledOn = "be.calledOn".asInstanceOf[beDOTcalledOn]
+  def beDotcalledOn: beDotcalledOn = "be.calledOn".asInstanceOf[beDotcalledOn]
   @scala.inline
-  def beDOTcalledOnce: beDOTcalledOnce = "be.calledOnce".asInstanceOf[beDOTcalledOnce]
+  def beDotcalledOnce: beDotcalledOnce = "be.calledOnce".asInstanceOf[beDotcalledOnce]
   @scala.inline
-  def beDOTcalledThrice: beDOTcalledThrice = "be.calledThrice".asInstanceOf[beDOTcalledThrice]
+  def beDotcalledThrice: beDotcalledThrice = "be.calledThrice".asInstanceOf[beDotcalledThrice]
   @scala.inline
-  def beDOTcalledTwice: beDOTcalledTwice = "be.calledTwice".asInstanceOf[beDOTcalledTwice]
+  def beDotcalledTwice: beDotcalledTwice = "be.calledTwice".asInstanceOf[beDotcalledTwice]
   @scala.inline
-  def beDOTcalledWithExactly: beDOTcalledWithExactly = "be.calledWithExactly".asInstanceOf[beDOTcalledWithExactly]
+  def beDotcalledWithExactly: beDotcalledWithExactly = "be.calledWithExactly".asInstanceOf[beDotcalledWithExactly]
   @scala.inline
-  def beDOTcalledWithMatch: beDOTcalledWithMatch = "be.calledWithMatch".asInstanceOf[beDOTcalledWithMatch]
+  def beDotcalledWithMatch: beDotcalledWithMatch = "be.calledWithMatch".asInstanceOf[beDotcalledWithMatch]
   @scala.inline
-  def beDOTcalledWithNew: beDOTcalledWithNew = "be.calledWithNew".asInstanceOf[beDOTcalledWithNew]
+  def beDotcalledWithNew: beDotcalledWithNew = "be.calledWithNew".asInstanceOf[beDotcalledWithNew]
   @scala.inline
-  def beDOTchecked: beDOTchecked = "be.checked".asInstanceOf[beDOTchecked]
+  def beDotchecked: beDotchecked = "be.checked".asInstanceOf[beDotchecked]
   @scala.inline
-  def beDOTcloseTo: beDOTcloseTo = "be.closeTo".asInstanceOf[beDOTcloseTo]
+  def beDotcloseTo: beDotcloseTo = "be.closeTo".asInstanceOf[beDotcloseTo]
   @scala.inline
-  def beDOTdisabled: beDOTdisabled = "be.disabled".asInstanceOf[beDOTdisabled]
+  def beDotdisabled: beDotdisabled = "be.disabled".asInstanceOf[beDotdisabled]
   @scala.inline
-  def beDOTempty: beDOTempty = "be.empty".asInstanceOf[beDOTempty]
+  def beDotempty: beDotempty = "be.empty".asInstanceOf[beDotempty]
   @scala.inline
-  def beDOTenabled: beDOTenabled = "be.enabled".asInstanceOf[beDOTenabled]
+  def beDotenabled: beDotenabled = "be.enabled".asInstanceOf[beDotenabled]
   @scala.inline
-  def beDOTfalse: beDOTfalse = "be.false".asInstanceOf[beDOTfalse]
+  def beDotfalse: beDotfalse = "be.false".asInstanceOf[beDotfalse]
   @scala.inline
-  def beDOTfocused: beDOTfocused = "be.focused".asInstanceOf[beDOTfocused]
+  def beDotfocused: beDotfocused = "be.focused".asInstanceOf[beDotfocused]
   @scala.inline
-  def beDOTgreaterThan: beDOTgreaterThan = "be.greaterThan".asInstanceOf[beDOTgreaterThan]
+  def beDotgreaterThan: beDotgreaterThan = "be.greaterThan".asInstanceOf[beDotgreaterThan]
   @scala.inline
-  def beDOTgt: beDOTgt = "be.gt".asInstanceOf[beDOTgt]
+  def beDotgt: beDotgt = "be.gt".asInstanceOf[beDotgt]
   @scala.inline
-  def beDOTgte: beDOTgte = "be.gte".asInstanceOf[beDOTgte]
+  def beDotgte: beDotgte = "be.gte".asInstanceOf[beDotgte]
   @scala.inline
-  def beDOThidden: beDOThidden = "be.hidden".asInstanceOf[beDOThidden]
+  def beDothidden: beDothidden = "be.hidden".asInstanceOf[beDothidden]
   @scala.inline
-  def beDOTinstanceOf: beDOTinstanceOf = "be.instanceOf".asInstanceOf[beDOTinstanceOf]
+  def beDotinstanceOf: beDotinstanceOf = "be.instanceOf".asInstanceOf[beDotinstanceOf]
   @scala.inline
-  def beDOTlessThan: beDOTlessThan = "be.lessThan".asInstanceOf[beDOTlessThan]
+  def beDotlessThan: beDotlessThan = "be.lessThan".asInstanceOf[beDotlessThan]
   @scala.inline
-  def beDOTlt: beDOTlt = "be.lt".asInstanceOf[beDOTlt]
+  def beDotlt: beDotlt = "be.lt".asInstanceOf[beDotlt]
   @scala.inline
-  def beDOTlte: beDOTlte = "be.lte".asInstanceOf[beDOTlte]
+  def beDotlte: beDotlte = "be.lte".asInstanceOf[beDotlte]
   @scala.inline
-  def beDOTok: beDOTok = "be.ok".asInstanceOf[beDOTok]
+  def beDotok: beDotok = "be.ok".asInstanceOf[beDotok]
   @scala.inline
-  def beDOTselected: beDOTselected = "be.selected".asInstanceOf[beDOTselected]
+  def beDotselected: beDotselected = "be.selected".asInstanceOf[beDotselected]
   @scala.inline
-  def beDOTtrue: beDOTtrue = "be.true".asInstanceOf[beDOTtrue]
+  def beDottrue: beDottrue = "be.true".asInstanceOf[beDottrue]
   @scala.inline
-  def beDOTundefined: beDOTundefined = "be.undefined".asInstanceOf[beDOTundefined]
+  def beDotundefined: beDotundefined = "be.undefined".asInstanceOf[beDotundefined]
   @scala.inline
-  def beDOTvisible: beDOTvisible = "be.visible".asInstanceOf[beDOTvisible]
+  def beDotvisible: beDotvisible = "be.visible".asInstanceOf[beDotvisible]
   @scala.inline
-  def beDOTwithin: beDOTwithin = "be.within".asInstanceOf[beDOTwithin]
+  def beDotwithin: beDotwithin = "be.within".asInstanceOf[beDotwithin]
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   @scala.inline
@@ -2143,21 +2182,21 @@ object cypressStrings {
   @scala.inline
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   @scala.inline
-  def `command:end`: `command:end` = "command:end".asInstanceOf[`command:end`]
+  def commandColonend: commandColonend = "command:end".asInstanceOf[commandColonend]
   @scala.inline
-  def `command:enqueued`: `command:enqueued` = "command:enqueued".asInstanceOf[`command:enqueued`]
+  def commandColonenqueued: commandColonenqueued = "command:enqueued".asInstanceOf[commandColonenqueued]
   @scala.inline
-  def `command:retry`: `command:retry` = "command:retry".asInstanceOf[`command:retry`]
+  def commandColonretry: commandColonretry = "command:retry".asInstanceOf[commandColonretry]
   @scala.inline
-  def `command:start`: `command:start` = "command:start".asInstanceOf[`command:start`]
+  def commandColonstart: commandColonstart = "command:start".asInstanceOf[commandColonstart]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   @scala.inline
-  def containDOThtml: containDOThtml = "contain.html".asInstanceOf[containDOThtml]
+  def containDothtml: containDothtml = "contain.html".asInstanceOf[containDothtml]
   @scala.inline
-  def containDOTtext: containDOTtext = "contain.text".asInstanceOf[containDOTtext]
+  def containDottext: containDottext = "contain.text".asInstanceOf[containDottext]
   @scala.inline
-  def containDOTvalue: containDOTvalue = "contain.value".asInstanceOf[containDOTvalue]
+  def containDotvalue: containDotvalue = "contain.value".asInstanceOf[containDotvalue]
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   @scala.inline
@@ -2179,7 +2218,7 @@ object cypressStrings {
   @scala.inline
   def decrease: decrease = "decrease".asInstanceOf[decrease]
   @scala.inline
-  def deepDOTequal: deepDOTequal = "deep.equal".asInstanceOf[deepDOTequal]
+  def deepDotequal: deepDotequal = "deep.equal".asInstanceOf[deepDotequal]
   @scala.inline
   def defaultCommandTimeout: defaultCommandTimeout = "defaultCommandTimeout".asInstanceOf[defaultCommandTimeout]
   @scala.inline
@@ -2315,63 +2354,65 @@ object cypressStrings {
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
   @scala.inline
-  def haveDOTallDOTkeys: haveDOTallDOTkeys = "have.all.keys".asInstanceOf[haveDOTallDOTkeys]
+  def hash: hash = "hash".asInstanceOf[hash]
   @scala.inline
-  def haveDOTalwaysDOTthrown: haveDOTalwaysDOTthrown = "have.always.thrown".asInstanceOf[haveDOTalwaysDOTthrown]
+  def haveDotallDotkeys: haveDotallDotkeys = "have.all.keys".asInstanceOf[haveDotallDotkeys]
   @scala.inline
-  def haveDOTanyDOTkeys: haveDOTanyDOTkeys = "have.any.keys".asInstanceOf[haveDOTanyDOTkeys]
+  def haveDotalwaysDotthrown: haveDotalwaysDotthrown = "have.always.thrown".asInstanceOf[haveDotalwaysDotthrown]
   @scala.inline
-  def haveDOTattr: haveDOTattr = "have.attr".asInstanceOf[haveDOTattr]
+  def haveDotanyDotkeys: haveDotanyDotkeys = "have.any.keys".asInstanceOf[haveDotanyDotkeys]
   @scala.inline
-  def haveDOTcallCount: haveDOTcallCount = "have.callCount".asInstanceOf[haveDOTcallCount]
+  def haveDotattr: haveDotattr = "have.attr".asInstanceOf[haveDotattr]
   @scala.inline
-  def haveDOTclass: haveDOTclass = "have.class".asInstanceOf[haveDOTclass]
+  def haveDotcallCount: haveDotcallCount = "have.callCount".asInstanceOf[haveDotcallCount]
   @scala.inline
-  def haveDOTcss: haveDOTcss = "have.css".asInstanceOf[haveDOTcss]
+  def haveDotclass: haveDotclass = "have.class".asInstanceOf[haveDotclass]
   @scala.inline
-  def haveDOTdata: haveDOTdata = "have.data".asInstanceOf[haveDOTdata]
+  def haveDotcss: haveDotcss = "have.css".asInstanceOf[haveDotcss]
   @scala.inline
-  def haveDOTdeepDOTproperty: haveDOTdeepDOTproperty = "have.deep.property".asInstanceOf[haveDOTdeepDOTproperty]
+  def haveDotdata: haveDotdata = "have.data".asInstanceOf[haveDotdata]
   @scala.inline
-  def haveDOTdescendants: haveDOTdescendants = "have.descendants".asInstanceOf[haveDOTdescendants]
+  def haveDotdeepDotproperty: haveDotdeepDotproperty = "have.deep.property".asInstanceOf[haveDotdeepDotproperty]
   @scala.inline
-  def haveDOTfocus: haveDOTfocus = "have.focus".asInstanceOf[haveDOTfocus]
+  def haveDotdescendants: haveDotdescendants = "have.descendants".asInstanceOf[haveDotdescendants]
   @scala.inline
-  def haveDOThtml: haveDOThtml = "have.html".asInstanceOf[haveDOThtml]
+  def haveDotfocus: haveDotfocus = "have.focus".asInstanceOf[haveDotfocus]
   @scala.inline
-  def haveDOTid: haveDOTid = "have.id".asInstanceOf[haveDOTid]
+  def haveDothtml: haveDothtml = "have.html".asInstanceOf[haveDothtml]
   @scala.inline
-  def haveDOTlength: haveDOTlength = "have.length".asInstanceOf[haveDOTlength]
+  def haveDotid: haveDotid = "have.id".asInstanceOf[haveDotid]
   @scala.inline
-  def haveDOTlengthDOTgreaterThan: haveDOTlengthDOTgreaterThan = "have.length.greaterThan".asInstanceOf[haveDOTlengthDOTgreaterThan]
+  def haveDotlength: haveDotlength = "have.length".asInstanceOf[haveDotlength]
   @scala.inline
-  def haveDOTlengthDOTgt: haveDOTlengthDOTgt = "have.length.gt".asInstanceOf[haveDOTlengthDOTgt]
+  def haveDotlengthDotgreaterThan: haveDotlengthDotgreaterThan = "have.length.greaterThan".asInstanceOf[haveDotlengthDotgreaterThan]
   @scala.inline
-  def haveDOTlengthDOTgte: haveDOTlengthDOTgte = "have.length.gte".asInstanceOf[haveDOTlengthDOTgte]
+  def haveDotlengthDotgt: haveDotlengthDotgt = "have.length.gt".asInstanceOf[haveDotlengthDotgt]
   @scala.inline
-  def haveDOTlengthDOTlessThan: haveDOTlengthDOTlessThan = "have.length.lessThan".asInstanceOf[haveDOTlengthDOTlessThan]
+  def haveDotlengthDotgte: haveDotlengthDotgte = "have.length.gte".asInstanceOf[haveDotlengthDotgte]
   @scala.inline
-  def haveDOTlengthDOTlt: haveDOTlengthDOTlt = "have.length.lt".asInstanceOf[haveDOTlengthDOTlt]
+  def haveDotlengthDotlessThan: haveDotlengthDotlessThan = "have.length.lessThan".asInstanceOf[haveDotlengthDotlessThan]
   @scala.inline
-  def haveDOTlengthDOTlte: haveDOTlengthDOTlte = "have.length.lte".asInstanceOf[haveDOTlengthDOTlte]
+  def haveDotlengthDotlt: haveDotlengthDotlt = "have.length.lt".asInstanceOf[haveDotlengthDotlt]
   @scala.inline
-  def haveDOTmembers: haveDOTmembers = "have.members".asInstanceOf[haveDOTmembers]
+  def haveDotlengthDotlte: haveDotlengthDotlte = "have.length.lte".asInstanceOf[haveDotlengthDotlte]
   @scala.inline
-  def haveDOTorderedDOTmembers: haveDOTorderedDOTmembers = "have.ordered.members".asInstanceOf[haveDOTorderedDOTmembers]
+  def haveDotmembers: haveDotmembers = "have.members".asInstanceOf[haveDotmembers]
   @scala.inline
-  def haveDOTownProperty: haveDOTownProperty = "have.ownProperty".asInstanceOf[haveDOTownProperty]
+  def haveDotorderedDotmembers: haveDotorderedDotmembers = "have.ordered.members".asInstanceOf[haveDotorderedDotmembers]
   @scala.inline
-  def haveDOTprop: haveDOTprop = "have.prop".asInstanceOf[haveDOTprop]
+  def haveDotownProperty: haveDotownProperty = "have.ownProperty".asInstanceOf[haveDotownProperty]
   @scala.inline
-  def haveDOTproperty: haveDOTproperty = "have.property".asInstanceOf[haveDOTproperty]
+  def haveDotprop: haveDotprop = "have.prop".asInstanceOf[haveDotprop]
   @scala.inline
-  def haveDOTstring: haveDOTstring = "have.string".asInstanceOf[haveDOTstring]
+  def haveDotproperty: haveDotproperty = "have.property".asInstanceOf[haveDotproperty]
   @scala.inline
-  def haveDOTtext: haveDOTtext = "have.text".asInstanceOf[haveDOTtext]
+  def haveDotstring: haveDotstring = "have.string".asInstanceOf[haveDotstring]
   @scala.inline
-  def haveDOTthrown: haveDOTthrown = "have.thrown".asInstanceOf[haveDOTthrown]
+  def haveDottext: haveDottext = "have.text".asInstanceOf[haveDottext]
   @scala.inline
-  def haveDOTvalue: haveDOTvalue = "have.value".asInstanceOf[haveDOTvalue]
+  def haveDotthrown: haveDotthrown = "have.thrown".asInstanceOf[haveDotthrown]
+  @scala.inline
+  def haveDotvalue: haveDotvalue = "have.value".asInstanceOf[haveDotvalue]
   @scala.inline
   def head: head = "head".asInstanceOf[head]
   @scala.inline
@@ -2385,7 +2426,13 @@ object cypressStrings {
   @scala.inline
   def `hook end`: `hook end` = "hook end".asInstanceOf[`hook end`]
   @scala.inline
+  def host: host = "host".asInstanceOf[host]
+  @scala.inline
+  def hostname: hostname = "hostname".asInstanceOf[hostname]
+  @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
+  @scala.inline
+  def href: href = "href".asInstanceOf[href]
   @scala.inline
   def html_ : html_ = "html".asInstanceOf[html_]
   @scala.inline
@@ -2399,13 +2446,13 @@ object cypressStrings {
   @scala.inline
   def include: include = "include".asInstanceOf[include]
   @scala.inline
-  def includeDOThtml: includeDOThtml = "include.html".asInstanceOf[includeDOThtml]
+  def includeDothtml: includeDothtml = "include.html".asInstanceOf[includeDothtml]
   @scala.inline
-  def includeDOTmembers: includeDOTmembers = "include.members".asInstanceOf[includeDOTmembers]
+  def includeDotmembers: includeDotmembers = "include.members".asInstanceOf[includeDotmembers]
   @scala.inline
-  def includeDOTtext: includeDOTtext = "include.text".asInstanceOf[includeDOTtext]
+  def includeDottext: includeDottext = "include.text".asInstanceOf[includeDottext]
   @scala.inline
-  def includeDOTvalue: includeDOTvalue = "include.value".asInstanceOf[includeDOTvalue]
+  def includeDotvalue: includeDotvalue = "include.value".asInstanceOf[includeDotvalue]
   @scala.inline
   def increase: increase = "increase".asInstanceOf[increase]
   @scala.inline
@@ -2429,7 +2476,7 @@ object cypressStrings {
   @scala.inline
   def `iphone-6`: `iphone-6` = "iphone-6".asInstanceOf[`iphone-6`]
   @scala.inline
-  def `iphone-6+`: `iphone-6+` = "iphone-6+".asInstanceOf[`iphone-6+`]
+  def `iphone-6Plussign`: `iphone-6Plussign` = "iphone-6+".asInstanceOf[`iphone-6Plussign`]
   @scala.inline
   def `iphone-x`: `iphone-x` = "iphone-x".asInstanceOf[`iphone-x`]
   @scala.inline
@@ -2479,9 +2526,9 @@ object cypressStrings {
   @scala.inline
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   @scala.inline
-  def `log:added`: `log:added` = "log:added".asInstanceOf[`log:added`]
+  def logColonadded: logColonadded = "log:added".asInstanceOf[logColonadded]
   @scala.inline
-  def `log:changed`: `log:changed` = "log:changed".asInstanceOf[`log:changed`]
+  def logColonchanged: logColonchanged = "log:changed".asInstanceOf[logColonchanged]
   @scala.inline
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   @scala.inline
@@ -2539,185 +2586,185 @@ object cypressStrings {
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
-  def notDOTalwaysDOTreturned: notDOTalwaysDOTreturned = "not.always.returned".asInstanceOf[notDOTalwaysDOTreturned]
+  def notDotalwaysDotreturned: notDotalwaysDotreturned = "not.always.returned".asInstanceOf[notDotalwaysDotreturned]
   @scala.inline
-  def notDOTbeDOTa: notDOTbeDOTa = "not.be.a".asInstanceOf[notDOTbeDOTa]
+  def notDotbeDota: notDotbeDota = "not.be.a".asInstanceOf[notDotbeDota]
   @scala.inline
-  def notDOTbeDOTabove: notDOTbeDOTabove = "not.be.above".asInstanceOf[notDOTbeDOTabove]
+  def notDotbeDotabove: notDotbeDotabove = "not.be.above".asInstanceOf[notDotbeDotabove]
   @scala.inline
-  def notDOTbeDOTalwaysDOTcalledWithMatch: notDOTbeDOTalwaysDOTcalledWithMatch = "not.be.always.calledWithMatch".asInstanceOf[notDOTbeDOTalwaysDOTcalledWithMatch]
+  def notDotbeDotalwaysDotcalledWithMatch: notDotbeDotalwaysDotcalledWithMatch = "not.be.always.calledWithMatch".asInstanceOf[notDotbeDotalwaysDotcalledWithMatch]
   @scala.inline
-  def notDOTbeDOTalwaysDOTcalledWithNew: notDOTbeDOTalwaysDOTcalledWithNew = "not.be.always.calledWithNew".asInstanceOf[notDOTbeDOTalwaysDOTcalledWithNew]
+  def notDotbeDotalwaysDotcalledWithNew: notDotbeDotalwaysDotcalledWithNew = "not.be.always.calledWithNew".asInstanceOf[notDotbeDotalwaysDotcalledWithNew]
   @scala.inline
-  def notDOTbeDOTan: notDOTbeDOTan = "not.be.an".asInstanceOf[notDOTbeDOTan]
+  def notDotbeDotan: notDotbeDotan = "not.be.an".asInstanceOf[notDotbeDotan]
   @scala.inline
-  def notDOTbeDOTapproximately: notDOTbeDOTapproximately = "not.be.approximately".asInstanceOf[notDOTbeDOTapproximately]
+  def notDotbeDotapproximately: notDotbeDotapproximately = "not.be.approximately".asInstanceOf[notDotbeDotapproximately]
   @scala.inline
-  def notDOTbeDOTarguments: notDOTbeDOTarguments = "not.be.arguments".asInstanceOf[notDOTbeDOTarguments]
+  def notDotbeDotarguments: notDotbeDotarguments = "not.be.arguments".asInstanceOf[notDotbeDotarguments]
   @scala.inline
-  def notDOTbeDOTatDOTleast: notDOTbeDOTatDOTleast = "not.be.at.least".asInstanceOf[notDOTbeDOTatDOTleast]
+  def notDotbeDotatDotleast: notDotbeDotatDotleast = "not.be.at.least".asInstanceOf[notDotbeDotatDotleast]
   @scala.inline
-  def notDOTbeDOTbelow: notDOTbeDOTbelow = "not.be.below".asInstanceOf[notDOTbeDOTbelow]
+  def notDotbeDotbelow: notDotbeDotbelow = "not.be.below".asInstanceOf[notDotbeDotbelow]
   @scala.inline
-  def notDOTbeDOTcalled: notDOTbeDOTcalled = "not.be.called".asInstanceOf[notDOTbeDOTcalled]
+  def notDotbeDotcalled: notDotbeDotcalled = "not.be.called".asInstanceOf[notDotbeDotcalled]
   @scala.inline
-  def notDOTbeDOTcalledAfter: notDOTbeDOTcalledAfter = "not.be.calledAfter".asInstanceOf[notDOTbeDOTcalledAfter]
+  def notDotbeDotcalledAfter: notDotbeDotcalledAfter = "not.be.calledAfter".asInstanceOf[notDotbeDotcalledAfter]
   @scala.inline
-  def notDOTbeDOTcalledBefore: notDOTbeDOTcalledBefore = "not.be.calledBefore".asInstanceOf[notDOTbeDOTcalledBefore]
+  def notDotbeDotcalledBefore: notDotbeDotcalledBefore = "not.be.calledBefore".asInstanceOf[notDotbeDotcalledBefore]
   @scala.inline
-  def notDOTbeDOTcalledOn: notDOTbeDOTcalledOn = "not.be.calledOn".asInstanceOf[notDOTbeDOTcalledOn]
+  def notDotbeDotcalledOn: notDotbeDotcalledOn = "not.be.calledOn".asInstanceOf[notDotbeDotcalledOn]
   @scala.inline
-  def notDOTbeDOTcalledOnce: notDOTbeDOTcalledOnce = "not.be.calledOnce".asInstanceOf[notDOTbeDOTcalledOnce]
+  def notDotbeDotcalledOnce: notDotbeDotcalledOnce = "not.be.calledOnce".asInstanceOf[notDotbeDotcalledOnce]
   @scala.inline
-  def notDOTbeDOTcalledThrice: notDOTbeDOTcalledThrice = "not.be.calledThrice".asInstanceOf[notDOTbeDOTcalledThrice]
+  def notDotbeDotcalledThrice: notDotbeDotcalledThrice = "not.be.calledThrice".asInstanceOf[notDotbeDotcalledThrice]
   @scala.inline
-  def notDOTbeDOTcalledTwice: notDOTbeDOTcalledTwice = "not.be.calledTwice".asInstanceOf[notDOTbeDOTcalledTwice]
+  def notDotbeDotcalledTwice: notDotbeDotcalledTwice = "not.be.calledTwice".asInstanceOf[notDotbeDotcalledTwice]
   @scala.inline
-  def notDOTbeDOTcalledWithExactly: notDOTbeDOTcalledWithExactly = "not.be.calledWithExactly".asInstanceOf[notDOTbeDOTcalledWithExactly]
+  def notDotbeDotcalledWithExactly: notDotbeDotcalledWithExactly = "not.be.calledWithExactly".asInstanceOf[notDotbeDotcalledWithExactly]
   @scala.inline
-  def notDOTbeDOTcalledWithMatch: notDOTbeDOTcalledWithMatch = "not.be.calledWithMatch".asInstanceOf[notDOTbeDOTcalledWithMatch]
+  def notDotbeDotcalledWithMatch: notDotbeDotcalledWithMatch = "not.be.calledWithMatch".asInstanceOf[notDotbeDotcalledWithMatch]
   @scala.inline
-  def notDOTbeDOTcalledWithNew: notDOTbeDOTcalledWithNew = "not.be.calledWithNew".asInstanceOf[notDOTbeDOTcalledWithNew]
+  def notDotbeDotcalledWithNew: notDotbeDotcalledWithNew = "not.be.calledWithNew".asInstanceOf[notDotbeDotcalledWithNew]
   @scala.inline
-  def notDOTbeDOTchecked: notDOTbeDOTchecked = "not.be.checked".asInstanceOf[notDOTbeDOTchecked]
+  def notDotbeDotchecked: notDotbeDotchecked = "not.be.checked".asInstanceOf[notDotbeDotchecked]
   @scala.inline
-  def notDOTbeDOTcloseTo: notDOTbeDOTcloseTo = "not.be.closeTo".asInstanceOf[notDOTbeDOTcloseTo]
+  def notDotbeDotcloseTo: notDotbeDotcloseTo = "not.be.closeTo".asInstanceOf[notDotbeDotcloseTo]
   @scala.inline
-  def notDOTbeDOTdisabled: notDOTbeDOTdisabled = "not.be.disabled".asInstanceOf[notDOTbeDOTdisabled]
+  def notDotbeDotdisabled: notDotbeDotdisabled = "not.be.disabled".asInstanceOf[notDotbeDotdisabled]
   @scala.inline
-  def notDOTbeDOTempty: notDOTbeDOTempty = "not.be.empty".asInstanceOf[notDOTbeDOTempty]
+  def notDotbeDotempty: notDotbeDotempty = "not.be.empty".asInstanceOf[notDotbeDotempty]
   @scala.inline
-  def notDOTbeDOTenabled: notDOTbeDOTenabled = "not.be.enabled".asInstanceOf[notDOTbeDOTenabled]
+  def notDotbeDotenabled: notDotbeDotenabled = "not.be.enabled".asInstanceOf[notDotbeDotenabled]
   @scala.inline
-  def notDOTbeDOTfalse: notDOTbeDOTfalse = "not.be.false".asInstanceOf[notDOTbeDOTfalse]
+  def notDotbeDotfalse: notDotbeDotfalse = "not.be.false".asInstanceOf[notDotbeDotfalse]
   @scala.inline
-  def notDOTbeDOTfocused: notDOTbeDOTfocused = "not.be.focused".asInstanceOf[notDOTbeDOTfocused]
+  def notDotbeDotfocused: notDotbeDotfocused = "not.be.focused".asInstanceOf[notDotbeDotfocused]
   @scala.inline
-  def notDOTbeDOTgreaterThan: notDOTbeDOTgreaterThan = "not.be.greaterThan".asInstanceOf[notDOTbeDOTgreaterThan]
+  def notDotbeDotgreaterThan: notDotbeDotgreaterThan = "not.be.greaterThan".asInstanceOf[notDotbeDotgreaterThan]
   @scala.inline
-  def notDOTbeDOTgt: notDOTbeDOTgt = "not.be.gt".asInstanceOf[notDOTbeDOTgt]
+  def notDotbeDotgt: notDotbeDotgt = "not.be.gt".asInstanceOf[notDotbeDotgt]
   @scala.inline
-  def notDOTbeDOTgte: notDOTbeDOTgte = "not.be.gte".asInstanceOf[notDOTbeDOTgte]
+  def notDotbeDotgte: notDotbeDotgte = "not.be.gte".asInstanceOf[notDotbeDotgte]
   @scala.inline
-  def notDOTbeDOThidden: notDOTbeDOThidden = "not.be.hidden".asInstanceOf[notDOTbeDOThidden]
+  def notDotbeDothidden: notDotbeDothidden = "not.be.hidden".asInstanceOf[notDotbeDothidden]
   @scala.inline
-  def notDOTbeDOTinstanceOf: notDOTbeDOTinstanceOf = "not.be.instanceOf".asInstanceOf[notDOTbeDOTinstanceOf]
+  def notDotbeDotinstanceOf: notDotbeDotinstanceOf = "not.be.instanceOf".asInstanceOf[notDotbeDotinstanceOf]
   @scala.inline
-  def notDOTbeDOTlessThan: notDOTbeDOTlessThan = "not.be.lessThan".asInstanceOf[notDOTbeDOTlessThan]
+  def notDotbeDotlessThan: notDotbeDotlessThan = "not.be.lessThan".asInstanceOf[notDotbeDotlessThan]
   @scala.inline
-  def notDOTbeDOTlt: notDOTbeDOTlt = "not.be.lt".asInstanceOf[notDOTbeDOTlt]
+  def notDotbeDotlt: notDotbeDotlt = "not.be.lt".asInstanceOf[notDotbeDotlt]
   @scala.inline
-  def notDOTbeDOTlte: notDOTbeDOTlte = "not.be.lte".asInstanceOf[notDOTbeDOTlte]
+  def notDotbeDotlte: notDotbeDotlte = "not.be.lte".asInstanceOf[notDotbeDotlte]
   @scala.inline
-  def notDOTbeDOTok: notDOTbeDOTok = "not.be.ok".asInstanceOf[notDOTbeDOTok]
+  def notDotbeDotok: notDotbeDotok = "not.be.ok".asInstanceOf[notDotbeDotok]
   @scala.inline
-  def notDOTbeDOTselected: notDOTbeDOTselected = "not.be.selected".asInstanceOf[notDOTbeDOTselected]
+  def notDotbeDotselected: notDotbeDotselected = "not.be.selected".asInstanceOf[notDotbeDotselected]
   @scala.inline
-  def notDOTbeDOTtrue: notDOTbeDOTtrue = "not.be.true".asInstanceOf[notDOTbeDOTtrue]
+  def notDotbeDottrue: notDotbeDottrue = "not.be.true".asInstanceOf[notDotbeDottrue]
   @scala.inline
-  def notDOTbeDOTundefined: notDOTbeDOTundefined = "not.be.undefined".asInstanceOf[notDOTbeDOTundefined]
+  def notDotbeDotundefined: notDotbeDotundefined = "not.be.undefined".asInstanceOf[notDotbeDotundefined]
   @scala.inline
-  def notDOTbeDOTvisible: notDOTbeDOTvisible = "not.be.visible".asInstanceOf[notDOTbeDOTvisible]
+  def notDotbeDotvisible: notDotbeDotvisible = "not.be.visible".asInstanceOf[notDotbeDotvisible]
   @scala.inline
-  def notDOTbeDOTwithin: notDOTbeDOTwithin = "not.be.within".asInstanceOf[notDOTbeDOTwithin]
+  def notDotbeDotwithin: notDotbeDotwithin = "not.be.within".asInstanceOf[notDotbeDotwithin]
   @scala.inline
-  def notDOTchange: notDOTchange = "not.change".asInstanceOf[notDOTchange]
+  def notDotchange: notDotchange = "not.change".asInstanceOf[notDotchange]
   @scala.inline
-  def notDOTcontain: notDOTcontain = "not.contain".asInstanceOf[notDOTcontain]
+  def notDotcontain: notDotcontain = "not.contain".asInstanceOf[notDotcontain]
   @scala.inline
-  def notDOTcontainDOThtml: notDOTcontainDOThtml = "not.contain.html".asInstanceOf[notDOTcontainDOThtml]
+  def notDotcontainDothtml: notDotcontainDothtml = "not.contain.html".asInstanceOf[notDotcontainDothtml]
   @scala.inline
-  def notDOTcontainDOTtext: notDOTcontainDOTtext = "not.contain.text".asInstanceOf[notDOTcontainDOTtext]
+  def notDotcontainDottext: notDotcontainDottext = "not.contain.text".asInstanceOf[notDotcontainDottext]
   @scala.inline
-  def notDOTcontainDOTvalue: notDOTcontainDOTvalue = "not.contain.value".asInstanceOf[notDOTcontainDOTvalue]
+  def notDotcontainDotvalue: notDotcontainDotvalue = "not.contain.value".asInstanceOf[notDotcontainDotvalue]
   @scala.inline
-  def notDOTdecrease: notDOTdecrease = "not.decrease".asInstanceOf[notDOTdecrease]
+  def notDotdecrease: notDotdecrease = "not.decrease".asInstanceOf[notDotdecrease]
   @scala.inline
-  def notDOTdeepDOTequal: notDOTdeepDOTequal = "not.deep.equal".asInstanceOf[notDOTdeepDOTequal]
+  def notDotdeepDotequal: notDotdeepDotequal = "not.deep.equal".asInstanceOf[notDotdeepDotequal]
   @scala.inline
-  def notDOTeq: notDOTeq = "not.eq".asInstanceOf[notDOTeq]
+  def notDoteq: notDoteq = "not.eq".asInstanceOf[notDoteq]
   @scala.inline
-  def notDOTeql: notDOTeql = "not.eql".asInstanceOf[notDOTeql]
+  def notDoteql: notDoteql = "not.eql".asInstanceOf[notDoteql]
   @scala.inline
-  def notDOTequal: notDOTequal = "not.equal".asInstanceOf[notDOTequal]
+  def notDotequal: notDotequal = "not.equal".asInstanceOf[notDotequal]
   @scala.inline
-  def notDOTexist: notDOTexist = "not.exist".asInstanceOf[notDOTexist]
+  def notDotexist: notDotexist = "not.exist".asInstanceOf[notDotexist]
   @scala.inline
-  def notDOThaveDOTallDOTkeys: notDOThaveDOTallDOTkeys = "not.have.all.keys".asInstanceOf[notDOThaveDOTallDOTkeys]
+  def notDothaveDotallDotkeys: notDothaveDotallDotkeys = "not.have.all.keys".asInstanceOf[notDothaveDotallDotkeys]
   @scala.inline
-  def notDOThaveDOTalwaysDOTthrown: notDOThaveDOTalwaysDOTthrown = "not.have.always.thrown".asInstanceOf[notDOThaveDOTalwaysDOTthrown]
+  def notDothaveDotalwaysDotthrown: notDothaveDotalwaysDotthrown = "not.have.always.thrown".asInstanceOf[notDothaveDotalwaysDotthrown]
   @scala.inline
-  def notDOThaveDOTanyDOTkeys: notDOThaveDOTanyDOTkeys = "not.have.any.keys".asInstanceOf[notDOThaveDOTanyDOTkeys]
+  def notDothaveDotanyDotkeys: notDothaveDotanyDotkeys = "not.have.any.keys".asInstanceOf[notDothaveDotanyDotkeys]
   @scala.inline
-  def notDOThaveDOTattr: notDOThaveDOTattr = "not.have.attr".asInstanceOf[notDOThaveDOTattr]
+  def notDothaveDotattr: notDothaveDotattr = "not.have.attr".asInstanceOf[notDothaveDotattr]
   @scala.inline
-  def notDOThaveDOTcallCount: notDOThaveDOTcallCount = "not.have.callCount".asInstanceOf[notDOThaveDOTcallCount]
+  def notDothaveDotcallCount: notDothaveDotcallCount = "not.have.callCount".asInstanceOf[notDothaveDotcallCount]
   @scala.inline
-  def notDOThaveDOTclass: notDOThaveDOTclass = "not.have.class".asInstanceOf[notDOThaveDOTclass]
+  def notDothaveDotclass: notDothaveDotclass = "not.have.class".asInstanceOf[notDothaveDotclass]
   @scala.inline
-  def notDOThaveDOTcss: notDOThaveDOTcss = "not.have.css".asInstanceOf[notDOThaveDOTcss]
+  def notDothaveDotcss: notDothaveDotcss = "not.have.css".asInstanceOf[notDothaveDotcss]
   @scala.inline
-  def notDOThaveDOTdata: notDOThaveDOTdata = "not.have.data".asInstanceOf[notDOThaveDOTdata]
+  def notDothaveDotdata: notDothaveDotdata = "not.have.data".asInstanceOf[notDothaveDotdata]
   @scala.inline
-  def notDOThaveDOTdeepDOTproperty: notDOThaveDOTdeepDOTproperty = "not.have.deep.property".asInstanceOf[notDOThaveDOTdeepDOTproperty]
+  def notDothaveDotdeepDotproperty: notDothaveDotdeepDotproperty = "not.have.deep.property".asInstanceOf[notDothaveDotdeepDotproperty]
   @scala.inline
-  def notDOThaveDOTdescendants: notDOThaveDOTdescendants = "not.have.descendants".asInstanceOf[notDOThaveDOTdescendants]
+  def notDothaveDotdescendants: notDothaveDotdescendants = "not.have.descendants".asInstanceOf[notDothaveDotdescendants]
   @scala.inline
-  def notDOThaveDOTfocus: notDOThaveDOTfocus = "not.have.focus".asInstanceOf[notDOThaveDOTfocus]
+  def notDothaveDotfocus: notDothaveDotfocus = "not.have.focus".asInstanceOf[notDothaveDotfocus]
   @scala.inline
-  def notDOThaveDOThtml: notDOThaveDOThtml = "not.have.html".asInstanceOf[notDOThaveDOThtml]
+  def notDothaveDothtml: notDothaveDothtml = "not.have.html".asInstanceOf[notDothaveDothtml]
   @scala.inline
-  def notDOThaveDOTid: notDOThaveDOTid = "not.have.id".asInstanceOf[notDOThaveDOTid]
+  def notDothaveDotid: notDothaveDotid = "not.have.id".asInstanceOf[notDothaveDotid]
   @scala.inline
-  def notDOThaveDOTlength: notDOThaveDOTlength = "not.have.length".asInstanceOf[notDOThaveDOTlength]
+  def notDothaveDotlength: notDothaveDotlength = "not.have.length".asInstanceOf[notDothaveDotlength]
   @scala.inline
-  def notDOThaveDOTlengthDOTgreaterThan: notDOThaveDOTlengthDOTgreaterThan = "not.have.length.greaterThan".asInstanceOf[notDOThaveDOTlengthDOTgreaterThan]
+  def notDothaveDotlengthDotgreaterThan: notDothaveDotlengthDotgreaterThan = "not.have.length.greaterThan".asInstanceOf[notDothaveDotlengthDotgreaterThan]
   @scala.inline
-  def notDOThaveDOTlengthDOTgt: notDOThaveDOTlengthDOTgt = "not.have.length.gt".asInstanceOf[notDOThaveDOTlengthDOTgt]
+  def notDothaveDotlengthDotgt: notDothaveDotlengthDotgt = "not.have.length.gt".asInstanceOf[notDothaveDotlengthDotgt]
   @scala.inline
-  def notDOThaveDOTlengthDOTlessThan: notDOThaveDOTlengthDOTlessThan = "not.have.length.lessThan".asInstanceOf[notDOThaveDOTlengthDOTlessThan]
+  def notDothaveDotlengthDotlessThan: notDothaveDotlengthDotlessThan = "not.have.length.lessThan".asInstanceOf[notDothaveDotlengthDotlessThan]
   @scala.inline
-  def notDOThaveDOTlengthDOTlt: notDOThaveDOTlengthDOTlt = "not.have.length.lt".asInstanceOf[notDOThaveDOTlengthDOTlt]
+  def notDothaveDotlengthDotlt: notDothaveDotlengthDotlt = "not.have.length.lt".asInstanceOf[notDothaveDotlengthDotlt]
   @scala.inline
-  def notDOThaveDOTlengthDOTlte: notDOThaveDOTlengthDOTlte = "not.have.length.lte".asInstanceOf[notDOThaveDOTlengthDOTlte]
+  def notDothaveDotlengthDotlte: notDothaveDotlengthDotlte = "not.have.length.lte".asInstanceOf[notDothaveDotlengthDotlte]
   @scala.inline
-  def notDOThaveDOTmembers: notDOThaveDOTmembers = "not.have.members".asInstanceOf[notDOThaveDOTmembers]
+  def notDothaveDotmembers: notDothaveDotmembers = "not.have.members".asInstanceOf[notDothaveDotmembers]
   @scala.inline
-  def notDOThaveDOTorderedDOTmembers: notDOThaveDOTorderedDOTmembers = "not.have.ordered.members".asInstanceOf[notDOThaveDOTorderedDOTmembers]
+  def notDothaveDotorderedDotmembers: notDothaveDotorderedDotmembers = "not.have.ordered.members".asInstanceOf[notDothaveDotorderedDotmembers]
   @scala.inline
-  def notDOThaveDOTownProperty: notDOThaveDOTownProperty = "not.have.ownProperty".asInstanceOf[notDOThaveDOTownProperty]
+  def notDothaveDotownProperty: notDothaveDotownProperty = "not.have.ownProperty".asInstanceOf[notDothaveDotownProperty]
   @scala.inline
-  def notDOThaveDOTprop: notDOThaveDOTprop = "not.have.prop".asInstanceOf[notDOThaveDOTprop]
+  def notDothaveDotprop: notDothaveDotprop = "not.have.prop".asInstanceOf[notDothaveDotprop]
   @scala.inline
-  def notDOThaveDOTproperty: notDOThaveDOTproperty = "not.have.property".asInstanceOf[notDOThaveDOTproperty]
+  def notDothaveDotproperty: notDothaveDotproperty = "not.have.property".asInstanceOf[notDothaveDotproperty]
   @scala.inline
-  def notDOThaveDOTstring: notDOThaveDOTstring = "not.have.string".asInstanceOf[notDOThaveDOTstring]
+  def notDothaveDotstring: notDothaveDotstring = "not.have.string".asInstanceOf[notDothaveDotstring]
   @scala.inline
-  def notDOThaveDOTtext: notDOThaveDOTtext = "not.have.text".asInstanceOf[notDOThaveDOTtext]
+  def notDothaveDottext: notDothaveDottext = "not.have.text".asInstanceOf[notDothaveDottext]
   @scala.inline
-  def notDOThaveDOTthrown: notDOThaveDOTthrown = "not.have.thrown".asInstanceOf[notDOThaveDOTthrown]
+  def notDothaveDotthrown: notDothaveDotthrown = "not.have.thrown".asInstanceOf[notDothaveDotthrown]
   @scala.inline
-  def notDOThaveDOTvalue: notDOThaveDOTvalue = "not.have.value".asInstanceOf[notDOThaveDOTvalue]
+  def notDothaveDotvalue: notDothaveDotvalue = "not.have.value".asInstanceOf[notDothaveDotvalue]
   @scala.inline
-  def notDOTinclude: notDOTinclude = "not.include".asInstanceOf[notDOTinclude]
+  def notDotinclude: notDotinclude = "not.include".asInstanceOf[notDotinclude]
   @scala.inline
-  def notDOTincludeDOThtml: notDOTincludeDOThtml = "not.include.html".asInstanceOf[notDOTincludeDOThtml]
+  def notDotincludeDothtml: notDotincludeDothtml = "not.include.html".asInstanceOf[notDotincludeDothtml]
   @scala.inline
-  def notDOTincludeDOTmembers: notDOTincludeDOTmembers = "not.include.members".asInstanceOf[notDOTincludeDOTmembers]
+  def notDotincludeDotmembers: notDotincludeDotmembers = "not.include.members".asInstanceOf[notDotincludeDotmembers]
   @scala.inline
-  def notDOTincludeDOTtext: notDOTincludeDOTtext = "not.include.text".asInstanceOf[notDOTincludeDOTtext]
+  def notDotincludeDottext: notDotincludeDottext = "not.include.text".asInstanceOf[notDotincludeDottext]
   @scala.inline
-  def notDOTincludeDOTvalue: notDOTincludeDOTvalue = "not.include.value".asInstanceOf[notDOTincludeDOTvalue]
+  def notDotincludeDotvalue: notDotincludeDotvalue = "not.include.value".asInstanceOf[notDotincludeDotvalue]
   @scala.inline
-  def notDOTincrease: notDOTincrease = "not.increase".asInstanceOf[notDOTincrease]
+  def notDotincrease: notDotincrease = "not.increase".asInstanceOf[notDotincrease]
   @scala.inline
-  def notDOTmatch: notDOTmatch = "not.match".asInstanceOf[notDOTmatch]
+  def notDotmatch: notDotmatch = "not.match".asInstanceOf[notDotmatch]
   @scala.inline
-  def notDOTrespondTo: notDOTrespondTo = "not.respondTo".asInstanceOf[notDOTrespondTo]
+  def notDotrespondTo: notDotrespondTo = "not.respondTo".asInstanceOf[notDotrespondTo]
   @scala.inline
-  def notDOTreturned: notDOTreturned = "not.returned".asInstanceOf[notDOTreturned]
+  def notDotreturned: notDotreturned = "not.returned".asInstanceOf[notDotreturned]
   @scala.inline
-  def notDOTsatisfy: notDOTsatisfy = "not.satisfy".asInstanceOf[notDOTsatisfy]
+  def notDotsatisfy: notDotsatisfy = "not.satisfy".asInstanceOf[notDotsatisfy]
   @scala.inline
   def notmodified: notmodified = "notmodified".asInstanceOf[notmodified]
   @scala.inline
@@ -2729,7 +2776,7 @@ object cypressStrings {
   @scala.inline
   def nyan_ : nyan_ = "nyan".asInstanceOf[nyan_]
   @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  def object_ : object_ = "object".asInstanceOf[object_]
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
   @scala.inline
@@ -2738,6 +2785,8 @@ object cypressStrings {
   def option: option = "option".asInstanceOf[option]
   @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
+  def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
@@ -2754,6 +2803,8 @@ object cypressStrings {
   def passed: passed = "passed".asInstanceOf[passed]
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
+  @scala.inline
+  def pathname: pathname = "pathname".asInstanceOf[pathname]
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
@@ -2798,6 +2849,8 @@ object cypressStrings {
   def `pre-require`: `pre-require` = "pre-require".asInstanceOf[`pre-require`]
   @scala.inline
   def progress_ : progress_ = "progress".asInstanceOf[progress_]
+  @scala.inline
+  def protocol: protocol = "protocol".asInstanceOf[protocol]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline
@@ -2862,6 +2915,8 @@ object cypressStrings {
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
   def scrolled: scrolled = "scrolled".asInstanceOf[scrolled]
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
   @scala.inline
   def section: section = "section".asInstanceOf[section]
   @scala.inline
@@ -2945,9 +3000,9 @@ object cypressStrings {
   @scala.inline
   def `test end`: `test end` = "test end".asInstanceOf[`test end`]
   @scala.inline
-  def `test:after:run`: `test:after:run` = "test:after:run".asInstanceOf[`test:after:run`]
+  def testColonafterColonrun: testColonafterColonrun = "test:after:run".asInstanceOf[testColonafterColonrun]
   @scala.inline
-  def `test:before:run`: `test:before:run` = "test:before:run".asInstanceOf[`test:before:run`]
+  def testColonbeforeColonrun: testColonbeforeColonrun = "test:before:run".asInstanceOf[testColonbeforeColonrun]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
@@ -3007,11 +3062,11 @@ object cypressStrings {
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
-  def `uncaught:exception`: `uncaught:exception` = "uncaught:exception".asInstanceOf[`uncaught:exception`]
+  def uncaughtColonexception: uncaughtColonexception = "uncaught:exception".asInstanceOf[uncaughtColonexception]
   @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
   @scala.inline
-  def `url:changed`: `url:changed` = "url:changed".asInstanceOf[`url:changed`]
+  def urlColonchanged: urlColonchanged = "url:changed".asInstanceOf[urlColonchanged]
   @scala.inline
   def `utf-16le`: `utf-16le` = "utf-16le".asInstanceOf[`utf-16le`]
   @scala.inline
@@ -3033,7 +3088,7 @@ object cypressStrings {
   @scala.inline
   def viewport: viewport = "viewport".asInstanceOf[viewport]
   @scala.inline
-  def `viewport:changed`: `viewport:changed` = "viewport:changed".asInstanceOf[`viewport:changed`]
+  def viewportColonchanged: viewportColonchanged = "viewport:changed".asInstanceOf[viewportColonchanged]
   @scala.inline
   def viewportHeight: viewportHeight = "viewportHeight".asInstanceOf[viewportHeight]
   @scala.inline
@@ -3055,17 +3110,17 @@ object cypressStrings {
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   @scala.inline
-  def `window:alert`: `window:alert` = "window:alert".asInstanceOf[`window:alert`]
+  def windowColonalert: windowColonalert = "window:alert".asInstanceOf[windowColonalert]
   @scala.inline
-  def `window:before:load`: `window:before:load` = "window:before:load".asInstanceOf[`window:before:load`]
+  def windowColonbeforeColonload: windowColonbeforeColonload = "window:before:load".asInstanceOf[windowColonbeforeColonload]
   @scala.inline
-  def `window:before:unload`: `window:before:unload` = "window:before:unload".asInstanceOf[`window:before:unload`]
+  def windowColonbeforeColonunload: windowColonbeforeColonunload = "window:before:unload".asInstanceOf[windowColonbeforeColonunload]
   @scala.inline
-  def `window:confirm`: `window:confirm` = "window:confirm".asInstanceOf[`window:confirm`]
+  def windowColonconfirm: windowColonconfirm = "window:confirm".asInstanceOf[windowColonconfirm]
   @scala.inline
-  def `window:load`: `window:load` = "window:load".asInstanceOf[`window:load`]
+  def windowColonload: windowColonload = "window:load".asInstanceOf[windowColonload]
   @scala.inline
-  def `window:unload`: `window:unload` = "window:unload".asInstanceOf[`window:unload`]
+  def windowColonunload: windowColonunload = "window:unload".asInstanceOf[windowColonunload]
   @scala.inline
   def withArgs: withArgs = "withArgs".asInstanceOf[withArgs]
   @scala.inline

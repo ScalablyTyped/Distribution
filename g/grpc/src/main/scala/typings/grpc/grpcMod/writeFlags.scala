@@ -1,8 +1,6 @@
 package typings.grpc.grpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grpc.grpcMod.writeFlags.BUFFER_HINT
-import typings.grpc.grpcMod.writeFlags.NO_COMPRESS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

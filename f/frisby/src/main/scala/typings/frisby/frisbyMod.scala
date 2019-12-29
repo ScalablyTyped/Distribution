@@ -1,6 +1,5 @@
 package typings.frisby
 
-import typings.frisby.frisbyMod.FrisbySpec
 import typings.frisby.frisbyMod.nodeFetch.Response
 import typings.joi.joiMod.AlternativesSchema
 import typings.joi.joiMod.AnySchema

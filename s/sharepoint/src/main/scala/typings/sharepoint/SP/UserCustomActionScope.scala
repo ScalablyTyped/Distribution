@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserCustomActionScope.list
-import typings.sharepoint.SP.UserCustomActionScope.site
-import typings.sharepoint.SP.UserCustomActionScope.unknown
-import typings.sharepoint.SP.UserCustomActionScope.web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

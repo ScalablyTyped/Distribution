@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeFontUnderlineStyle.double
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeFontUnderlineStyle.none
-import typings.officeDashJsDashPreview.Excel.ConditionalRangeFontUnderlineStyle.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

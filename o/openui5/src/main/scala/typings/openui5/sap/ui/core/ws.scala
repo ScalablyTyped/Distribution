@@ -2,8 +2,6 @@ package typings.openui5.sap.ui.core
 
 import typings.openui5.TypeofReadyState
 import typings.openui5.sap.ui.base.EventProvider
-import typings.openui5.sap.ui.core.ws.SapPcpWebSocket
-import typings.openui5.sap.ui.core.ws.WebSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

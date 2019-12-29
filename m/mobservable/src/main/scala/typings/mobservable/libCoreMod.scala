@@ -1,17 +1,6 @@
 package typings.mobservable
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mobservable.libCoreMod.ValueMode
-import typings.mobservable.libCoreMod.ValueMode.Flat
-import typings.mobservable.libCoreMod.ValueMode.Recursive
-import typings.mobservable.libCoreMod.ValueMode.Reference
-import typings.mobservable.libCoreMod.ValueMode.Structure
-import typings.mobservable.libCoreMod.ValueType
-import typings.mobservable.libCoreMod.ValueType.Array
-import typings.mobservable.libCoreMod.ValueType.ComplexFunction
-import typings.mobservable.libCoreMod.ValueType.ComplexObject
-import typings.mobservable.libCoreMod.ValueType.PlainObject
-import typings.mobservable.libCoreMod.ValueType.ViewFunction
 import typings.mobservable.libInterfacesMod.IArrayChange
 import typings.mobservable.libInterfacesMod.IArraySplice
 import typings.mobservable.libInterfacesMod.IContextInfoStruct
@@ -195,8 +184,7 @@ object libCoreMod extends js.Object {
     object PlainObject extends TopLevel[PlainObject with Double]
     
     /* 0 */ @js.native
-    object Reference
-      extends TopLevel[typings.mobservable.libCoreMod.ValueType.Reference with Double]
+    object Reference extends TopLevel[Reference with Double]
     
     /* 4 */ @js.native
     object ViewFunction extends TopLevel[ViewFunction with Double]

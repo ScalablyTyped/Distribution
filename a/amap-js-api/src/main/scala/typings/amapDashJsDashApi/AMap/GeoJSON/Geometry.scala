@@ -6,6 +6,7 @@ import typings.amapDashJsDashApi.amapDashJsDashApiStrings.MultiLineString
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.MultiPoint
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.MultiPolygon
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.Point
+import typings.amapDashJsDashApi.amapDashJsDashApiStrings.Polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,10 +27,7 @@ object Geometry {
     __obj.asInstanceOf[Geometry]
   }
   @scala.inline
-  def Anon_CoordinatesLineString(
-    coordinates: js.Array[js.Tuple2[Double, Double]],
-    `type`: MultiPoint | LineString | typings.amapDashJsDashApi.amapDashJsDashApiStrings.Polygon
-  ): Geometry = {
+  def Anon_CoordinatesLineString(coordinates: js.Array[js.Tuple2[Double, Double]], `type`: MultiPoint | LineString | Polygon): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]

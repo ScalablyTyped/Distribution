@@ -4,8 +4,6 @@ import typings.express.expressMod.Request
 import typings.express.expressMod.Response
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.graphqlDashPlaygroundDashHtml.distRenderDashPlaygroundDashPageMod.MiddlewareOptions
-import typings.graphqlDashPlaygroundDashMiddlewareDashExpress.graphqlDashPlaygroundDashMiddlewareDashExpressMod.ExpressPlaygroundMiddleware
-import typings.graphqlDashPlaygroundDashMiddlewareDashExpress.graphqlDashPlaygroundDashMiddlewareDashExpressMod.Register
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

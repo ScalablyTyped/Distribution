@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus.aborted
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus.created
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus.enumerationCompleted
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus.started
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus.stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

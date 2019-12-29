@@ -10,7 +10,7 @@ object reactDashJsonDashViewStrings {
   sealed trait apathy extends ThemeKeys
   
   @js.native
-  sealed trait `apathy:inverted` extends ThemeKeys
+  sealed trait apathyColoninverted extends ThemeKeys
   
   @js.native
   sealed trait array extends js.Object
@@ -28,7 +28,7 @@ object reactDashJsonDashViewStrings {
   sealed trait bright extends ThemeKeys
   
   @js.native
-  sealed trait `bright:inverted` extends ThemeKeys
+  sealed trait brightColoninverted extends ThemeKeys
   
   @js.native
   sealed trait chalk extends ThemeKeys
@@ -58,7 +58,7 @@ object reactDashJsonDashViewStrings {
   sealed trait grayscale extends ThemeKeys
   
   @js.native
-  sealed trait `grayscale:inverted` extends ThemeKeys
+  sealed trait grayscaleColoninverted extends ThemeKeys
   
   @js.native
   sealed trait greenscreen extends ThemeKeys
@@ -103,7 +103,7 @@ object reactDashJsonDashViewStrings {
   sealed trait shapeshifter extends ThemeKeys
   
   @js.native
-  sealed trait `shapeshifter:inverted` extends ThemeKeys
+  sealed trait shapeshifterColoninverted extends ThemeKeys
   
   @js.native
   sealed trait solarized extends ThemeKeys
@@ -115,7 +115,7 @@ object reactDashJsonDashViewStrings {
   sealed trait summerfruit extends ThemeKeys
   
   @js.native
-  sealed trait `summerfruit:inverted` extends ThemeKeys
+  sealed trait summerfruitColoninverted extends ThemeKeys
   
   @js.native
   sealed trait threezerotwofour extends ThemeKeys
@@ -135,7 +135,7 @@ object reactDashJsonDashViewStrings {
   @scala.inline
   def apathy: apathy = "apathy".asInstanceOf[apathy]
   @scala.inline
-  def `apathy:inverted`: `apathy:inverted` = "apathy:inverted".asInstanceOf[`apathy:inverted`]
+  def apathyColoninverted: apathyColoninverted = "apathy:inverted".asInstanceOf[apathyColoninverted]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   @scala.inline
@@ -147,7 +147,7 @@ object reactDashJsonDashViewStrings {
   @scala.inline
   def bright: bright = "bright".asInstanceOf[bright]
   @scala.inline
-  def `bright:inverted`: `bright:inverted` = "bright:inverted".asInstanceOf[`bright:inverted`]
+  def brightColoninverted: brightColoninverted = "bright:inverted".asInstanceOf[brightColoninverted]
   @scala.inline
   def chalk: chalk = "chalk".asInstanceOf[chalk]
   @scala.inline
@@ -167,7 +167,7 @@ object reactDashJsonDashViewStrings {
   @scala.inline
   def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
   @scala.inline
-  def `grayscale:inverted`: `grayscale:inverted` = "grayscale:inverted".asInstanceOf[`grayscale:inverted`]
+  def grayscaleColoninverted: grayscaleColoninverted = "grayscale:inverted".asInstanceOf[grayscaleColoninverted]
   @scala.inline
   def greenscreen: greenscreen = "greenscreen".asInstanceOf[greenscreen]
   @scala.inline
@@ -197,7 +197,7 @@ object reactDashJsonDashViewStrings {
   @scala.inline
   def shapeshifter: shapeshifter = "shapeshifter".asInstanceOf[shapeshifter]
   @scala.inline
-  def `shapeshifter:inverted`: `shapeshifter:inverted` = "shapeshifter:inverted".asInstanceOf[`shapeshifter:inverted`]
+  def shapeshifterColoninverted: shapeshifterColoninverted = "shapeshifter:inverted".asInstanceOf[shapeshifterColoninverted]
   @scala.inline
   def solarized: solarized = "solarized".asInstanceOf[solarized]
   @scala.inline
@@ -205,7 +205,7 @@ object reactDashJsonDashViewStrings {
   @scala.inline
   def summerfruit: summerfruit = "summerfruit".asInstanceOf[summerfruit]
   @scala.inline
-  def `summerfruit:inverted`: `summerfruit:inverted` = "summerfruit:inverted".asInstanceOf[`summerfruit:inverted`]
+  def summerfruitColoninverted: summerfruitColoninverted = "summerfruit:inverted".asInstanceOf[summerfruitColoninverted]
   @scala.inline
   def threezerotwofour: threezerotwofour = "threezerotwofour".asInstanceOf[threezerotwofour]
   @scala.inline

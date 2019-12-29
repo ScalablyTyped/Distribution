@@ -1,11 +1,6 @@
 package typings.openui5.sap.ui.layout
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.layout.SideContentVisibility.AlwaysShow
-import typings.openui5.sap.ui.layout.SideContentVisibility.NeverShow
-import typings.openui5.sap.ui.layout.SideContentVisibility.ShowAboveL
-import typings.openui5.sap.ui.layout.SideContentVisibility.ShowAboveM
-import typings.openui5.sap.ui.layout.SideContentVisibility.ShowAboveS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

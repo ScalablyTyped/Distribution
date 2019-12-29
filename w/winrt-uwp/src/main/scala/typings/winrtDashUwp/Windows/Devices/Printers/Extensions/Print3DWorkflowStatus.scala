@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Printers.Extensions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowStatus.abandoned
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowStatus.canceled
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowStatus.failed
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowStatus.slicing
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowStatus.submitted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

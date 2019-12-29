@@ -15,12 +15,12 @@ object ExecFileOptionsWithStringEncoding {
   @scala.inline
   def apply(
     encoding: BufferEncoding,
-    cwd: java.lang.String = null,
+    cwd: String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
-    shell: Boolean | java.lang.String = null,
+    shell: Boolean | String = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,
     windowsHide: js.UndefOr[Boolean] = js.undefined,

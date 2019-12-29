@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services
 
+import typings.typescriptDashServices.TypeScript.PullDecl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class DeclReferenceCompletionEntry protected ()
   extends typings.typescriptDashServices.TypeScript.Services.DeclReferenceCompletionEntry {
-  def this(
-    name: String,
-    kind: String,
-    kindModifiers: String,
-    decl: typings.typescriptDashServices.TypeScript.PullDecl
-  ) = this()
+  def this(name: String, kind: String, kindModifiers: String, decl: PullDecl) = this()
 }
 

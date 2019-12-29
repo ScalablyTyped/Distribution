@@ -1,6 +1,5 @@
 package typings.json2csv
 
-import typings.json2csv.jSON2CSVAsyncParserMod.JSON2CSVAsyncParser
 import typings.json2csv.jSON2CSVBaseMod.json2csv.Options
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform

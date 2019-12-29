@@ -1,8 +1,6 @@
 package typings.qlikDashVisualizationextensions
 
 import typings.angular.angularMod.IPromise
-import typings.qlikDashVisualizationextensions.FieldAPI.IQField
-import typings.qlikDashVisualizationextensions.FieldAPI.IQFieldValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

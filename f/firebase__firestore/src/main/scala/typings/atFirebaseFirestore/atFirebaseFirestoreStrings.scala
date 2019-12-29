@@ -35,9 +35,6 @@ object atFirebaseFirestoreStrings {
        with ProjectsDatabasesIndexesApiClient$Xgafv
   
   @js.native
-  sealed trait `<DELETE>` extends js.Object
-  
-  @js.native
   sealed trait ADD extends TargetChangeTargetChangeType
   
   @js.native
@@ -75,9 +72,6 @@ object atFirebaseFirestoreStrings {
   sealed trait ERROR extends IndexState
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait FirstParty extends TokenType
   
   @js.native
@@ -100,6 +94,9 @@ object atFirebaseFirestoreStrings {
   
   @js.native
   sealed trait LESS_THAN_OR_EQUAL extends FieldFilterOp
+  
+  @js.native
+  sealed trait LessthansignDELETEGreaterthansign extends js.Object
   
   @js.native
   sealed trait LimitToFirst extends SpecLimitType
@@ -147,6 +144,9 @@ object atFirebaseFirestoreStrings {
   sealed trait __name__ extends js.Object
   
   @js.native
+  sealed trait _empty extends js.Object
+  
+  @js.native
   sealed trait acknowledged extends MutationBatchState
   
   @js.native
@@ -154,6 +154,21 @@ object atFirebaseFirestoreStrings {
   
   @js.native
   sealed trait current_ extends QueryTargetState
+  
+  @js.native
+  sealed trait firestore_clients extends js.Object
+  
+  @js.native
+  sealed trait firestore_mutations extends js.Object
+  
+  @js.native
+  sealed trait firestore_online_state extends js.Object
+  
+  @js.native
+  sealed trait firestore_sequence_number extends js.Object
+  
+  @js.native
+  sealed trait firestore_targets extends js.Object
   
   @js.native
   sealed trait function extends ValidationType
@@ -242,8 +257,6 @@ object atFirebaseFirestoreStrings {
   @scala.inline
   def `2`: `2` = "2".asInstanceOf[`2`]
   @scala.inline
-  def `<DELETE>`: `<DELETE>` = "<DELETE>".asInstanceOf[`<DELETE>`]
-  @scala.inline
   def ADD: ADD = "ADD".asInstanceOf[ADD]
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
@@ -266,8 +279,6 @@ object atFirebaseFirestoreStrings {
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def FirstParty: FirstParty = "FirstParty".asInstanceOf[FirstParty]
   @scala.inline
   def GREATER_THAN: GREATER_THAN = "GREATER_THAN".asInstanceOf[GREATER_THAN]
@@ -283,6 +294,8 @@ object atFirebaseFirestoreStrings {
   def LESS_THAN: LESS_THAN = "LESS_THAN".asInstanceOf[LESS_THAN]
   @scala.inline
   def LESS_THAN_OR_EQUAL: LESS_THAN_OR_EQUAL = "LESS_THAN_OR_EQUAL".asInstanceOf[LESS_THAN_OR_EQUAL]
+  @scala.inline
+  def LessthansignDELETEGreaterthansign: LessthansignDELETEGreaterthansign = "<DELETE>".asInstanceOf[LessthansignDELETEGreaterthansign]
   @scala.inline
   def LimitToFirst: LimitToFirst = "LimitToFirst".asInstanceOf[LimitToFirst]
   @scala.inline
@@ -312,11 +325,23 @@ object atFirebaseFirestoreStrings {
   @scala.inline
   def __name__ : __name__ = "__name__".asInstanceOf[__name__]
   @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
   def acknowledged: acknowledged = "acknowledged".asInstanceOf[acknowledged]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def current_ : current_ = "current".asInstanceOf[current_]
+  @scala.inline
+  def firestore_clients: firestore_clients = "firestore_clients".asInstanceOf[firestore_clients]
+  @scala.inline
+  def firestore_mutations: firestore_mutations = "firestore_mutations".asInstanceOf[firestore_mutations]
+  @scala.inline
+  def firestore_online_state: firestore_online_state = "firestore_online_state".asInstanceOf[firestore_online_state]
+  @scala.inline
+  def firestore_sequence_number: firestore_sequence_number = "firestore_sequence_number".asInstanceOf[firestore_sequence_number]
+  @scala.inline
+  def firestore_targets: firestore_targets = "firestore_targets".asInstanceOf[firestore_targets]
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   @scala.inline

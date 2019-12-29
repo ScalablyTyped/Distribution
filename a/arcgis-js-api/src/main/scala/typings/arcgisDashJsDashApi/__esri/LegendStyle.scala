@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`side-by-side`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.card
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.classic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.stack
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -21,7 +26,7 @@ trait LegendStyle extends Object {
     *
     * @default stack
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[auto | `side-by-side` | stack] = js.undefined
   /**
     * Specifies the style of the legend. There are two possible values listed in the table below:
     *
@@ -33,7 +38,7 @@ trait LegendStyle extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
     */
-  var `type`: String
+  var `type`: classic | card
 }
 
 object LegendStyle {
@@ -42,8 +47,8 @@ object LegendStyle {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String,
-    layout: String = null
+    `type`: classic | card,
+    layout: auto | `side-by-side` | stack = null
   ): LegendStyle = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

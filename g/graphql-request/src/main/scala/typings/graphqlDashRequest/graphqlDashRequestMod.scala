@@ -5,7 +5,6 @@ import typings.graphqlDashRequest.distSrcTypesMod.GraphQLResponse
 import typings.graphqlDashRequest.distSrcTypesMod.Headers
 import typings.graphqlDashRequest.distSrcTypesMod.Options
 import typings.graphqlDashRequest.distSrcTypesMod.Variables
-import typings.graphqlDashRequest.graphqlDashRequestMod.GraphQLClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

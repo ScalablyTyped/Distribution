@@ -1,10 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.PageNavigationAnimation.continuum
-import typings.winjs.WinJS.UI.PageNavigationAnimation.enterPage
-import typings.winjs.WinJS.UI.PageNavigationAnimation.slide
-import typings.winjs.WinJS.UI.PageNavigationAnimation.turnstile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.PlayTo.PlayToConnectionState.connected
-import typings.winrt.Windows.Media.PlayTo.PlayToConnectionState.disconnected
-import typings.winrt.Windows.Media.PlayTo.PlayToConnectionState.rendering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

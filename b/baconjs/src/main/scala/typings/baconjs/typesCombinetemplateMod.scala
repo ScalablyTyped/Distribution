@@ -1,8 +1,5 @@
 package typings.baconjs
 
-import typings.baconjs.typesCombinetemplateMod.ArrayTemplate
-import typings.baconjs.typesCombinetemplateMod.CombinedTemplate
-import typings.baconjs.typesCombinetemplateMod.ObjectTemplate
 import typings.baconjs.typesObservableMod.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDraggableZoneDraggableZoneMod.MouseTouchEvent
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`false`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactBooleans.`false`
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

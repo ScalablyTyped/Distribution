@@ -23,25 +23,34 @@ object libApiSubscriptionMod extends js.Object {
       */
     protected def this(userAgent: UserAgent) = this()
     protected def this(userAgent: UserAgent, options: SubscriptionOptions) = this()
+    /**
+      * If the subscription state is SubscriptionState.Subscribed, the associated subscription dialog. Otherwise undefined.
+      * @internal
+      */
+    var _dialog: js.UndefOr[typings.sipDotJs.libCoreSubscriptionSubscriptionMod.Subscription] = js.native
     var _disposed: js.Any = js.native
     var _logger: js.Any = js.native
     var _state: js.Any = js.native
     var _stateEventEmitter: js.Any = js.native
     /**
+      * Our user agent.
+      * @internal
+      */
+    var _userAgent: UserAgent = js.native
+    /**
       * Property reserved for use by instance owner.
       * @defaultValue `undefined`
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.Any = js.native
     /**
       * Subscription delegate. See {@link SubscriptionDelegate} for details.
       * @defaultValue `undefined`
       */
     var delegate: js.UndefOr[SubscriptionDelegate] = js.native
     /**
-      * If the subscription state is SubscriptionState.Subscribed, the associated subscription dialog. Otherwise undefined.
-      * @internal
+      * The subscribed subscription dialog.
       */
-    var dialog: js.UndefOr[typings.sipDotJs.libCoreSubscriptionSubscriptionMod.Subscription] = js.native
+    val dialog: js.UndefOr[typings.sipDotJs.libCoreSubscriptionSubscriptionMod.Subscription] = js.native
     /**
       * True if disposed.
       * @internal
@@ -55,13 +64,10 @@ object libApiSubscriptionMod extends js.Object {
       * Emits when the subscription `state` property changes.
       */
     val stateChange: Emitter[SubscriptionState] = js.native
-    /** @internal */
-    var userAgent: UserAgent = js.native
     /**
       * Destructor.
-      * @internal
       */
-    def _dispose(): Unit = js.native
+    def dispose(): js.Promise[Unit] = js.native
     /** @internal */
     /* protected */ def stateTransition(newState: SubscriptionState): Unit = js.native
     /**

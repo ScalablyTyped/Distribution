@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SmartCards
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardStatus.disconnected
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardStatus.exclusive
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardStatus.ready
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardStatus.shared
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardStatus.unresponsive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

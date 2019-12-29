@@ -32,7 +32,7 @@ abstract class StoreContext () extends js.Object {
     * @param package A Package that represents the package for which you want to get the corresponding Store product details.
     * @return An asynchronous operation that, on successful completion, returns a StoreProductResult object. Use the Product property of this object to access a StoreProduct that contains Store product details for the specified package.
     */
-  def findStoreProductForPackageAsync(productKinds: IIterable[String], `package`: Package): IPromiseWithIAsyncOperation[StoreProductResult] = js.native
+  def findStoreProductForPackageAsync(productKinds: IIterable[String], _package: Package): IPromiseWithIAsyncOperation[StoreProductResult] = js.native
   /**
     * Gets the collection of packages for the current app that have updates available for download from the Windows Store, including optional packages for the app (also called downloadable content or DLC).
     * @return An asynchronous operation that, on successful completion, returns a collection of StorePackageUpdate objects that represent the packages that have updates available.

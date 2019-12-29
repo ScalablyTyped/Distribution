@@ -8,8 +8,8 @@ trait LineProperties extends js.Object {
   var dashStyle: js.UndefOr[String] = js.undefined
   var endArrow: js.UndefOr[String] = js.undefined
   var endConnection: js.UndefOr[LineConnection] = js.undefined
-  var lineFill: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.LineFill] = js.undefined
-  var link: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Link] = js.undefined
+  var lineFill: js.UndefOr[LineFill] = js.undefined
+  var link: js.UndefOr[Link] = js.undefined
   var startArrow: js.UndefOr[String] = js.undefined
   var startConnection: js.UndefOr[LineConnection] = js.undefined
   var weight: js.UndefOr[Dimension] = js.undefined
@@ -21,8 +21,8 @@ object LineProperties {
     dashStyle: String = null,
     endArrow: String = null,
     endConnection: LineConnection = null,
-    lineFill: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.LineFill = null,
-    link: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Link = null,
+    lineFill: LineFill = null,
+    link: Link = null,
     startArrow: String = null,
     startConnection: LineConnection = null,
     weight: Dimension = null

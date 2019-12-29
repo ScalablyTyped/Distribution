@@ -1,7 +1,5 @@
 package typings.pDashWaterfall
 
-import typings.pDashWaterfall.pDashWaterfallMod.InitialTask
-import typings.pDashWaterfall.pDashWaterfallMod.Task
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

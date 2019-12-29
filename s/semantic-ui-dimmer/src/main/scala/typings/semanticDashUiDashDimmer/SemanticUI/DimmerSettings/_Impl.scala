@@ -1,12 +1,11 @@
 package typings.semanticDashUiDashDimmer.SemanticUI.DimmerSettings
 
-import typings.semanticDashUiDashDimmer.JQuery
 import typings.semanticDashUiDashDimmer.SemanticUI.Dimmer.ClassNameSettings
 import typings.semanticDashUiDashDimmer.SemanticUI.Dimmer.DurationSettings
 import typings.semanticDashUiDashDimmer.SemanticUI.Dimmer.ErrorSettings
 import typings.semanticDashUiDashDimmer.SemanticUI.Dimmer.SelectorSettings
 import typings.semanticDashUiDashDimmer.SemanticUI.Dimmer.TemplateSettings
-import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerNumbers.`false`
+import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerBooleans.`false`
 import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerStrings.auto
 import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerStrings.click
 import typings.semanticDashUiDashDimmer.semanticDashUiDashDimmerStrings.hover
@@ -115,17 +114,17 @@ trait _Impl extends js.Object {
   /**
     * Callback on element show or hide
     */
-  def onChange(`this`: JQuery): Unit
+  def onChange(): Unit
   /**
     * Callback on element hide
     */
-  def onHide(`this`: JQuery): Unit
+  def onHide(): Unit
   // endregion
   // region Callbacks
   /**
     * Callback on element show
     */
-  def onShow(`this`: JQuery): Unit
+  def onShow(): Unit
 }
 
 object _Impl {
@@ -140,9 +139,9 @@ object _Impl {
     name: String,
     namespace: String,
     on: `false` | hover | click,
-    onChange: JQuery => Unit,
-    onHide: JQuery => Unit,
-    onShow: JQuery => Unit,
+    onChange: () => Unit,
+    onHide: () => Unit,
+    onShow: () => Unit,
     opacity: auto | Double,
     performance: Boolean,
     selector: SelectorSettings,
@@ -153,7 +152,7 @@ object _Impl {
     variation: `false` | String,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], dimmerName = dimmerName.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onHide = js.Any.fromFunction1(onHide), onShow = js.Any.fromFunction1(onShow), opacity = opacity.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], useCSS = useCSS.asInstanceOf[js.Any], variation = variation.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], dimmerName = dimmerName.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onHide = js.Any.fromFunction0(onHide), onShow = js.Any.fromFunction0(onShow), opacity = opacity.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], useCSS = useCSS.asInstanceOf[js.Any], variation = variation.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

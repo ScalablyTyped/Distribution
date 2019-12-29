@@ -7,7 +7,7 @@ import typings.gapiDotDrive.Anon_DurationMillis
 import typings.gapiDotDrive.Anon_Hidden
 import typings.gapiDotDrive.Anon_Image
 import typings.gapiDotDrive.Anon_Text
-import typings.gapiDotDrive.gapiDotDriveStrings.`drive#file`
+import typings.gapiDotDrive.gapiDotDriveStrings.driveNumbersignfile
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,7 +42,7 @@ trait FileResource extends js.Object {
   // exportLinks
   var indexableText: Anon_Text
   var isAppAuthorized: Boolean
-  var kind: `drive#file`
+  var kind: driveNumbersignfile
   var labels: Anon_Hidden
   var lastModifyingUser: Anon_DisplayName
   var lastModifyingUserName: String
@@ -109,7 +109,7 @@ object FileResource {
     imageMediaMetadata: Anon_Aperture,
     indexableText: Anon_Text,
     isAppAuthorized: Boolean,
-    kind: `drive#file`,
+    kind: driveNumbersignfile,
     labels: Anon_Hidden,
     lastModifyingUser: Anon_DisplayName,
     lastModifyingUserName: String,

@@ -6,43 +6,43 @@ import scala.scalajs.js.annotation._
 
 object d3DashFormatStrings {
   @js.native
-  sealed trait ` ` extends js.Object
+  sealed trait $ extends js.Object
   
   @js.native
-  sealed trait `#` extends js.Object
+  sealed trait `-_` extends js.Object
   
   @js.native
-  sealed trait `%` extends js.Object
+  sealed trait Equalssign extends js.Object
   
   @js.native
-  sealed trait `(` extends js.Object
+  sealed trait Greaterthansign extends js.Object
   
   @js.native
-  sealed trait `+` extends js.Object
+  sealed trait Leftparenthesis extends js.Object
   
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait Lessthansign extends js.Object
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait Numbersign extends js.Object
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait Percentsign extends js.Object
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait Plussign extends js.Object
   
   @js.native
-  sealed trait DOLLAR extends js.Object
-  
-  @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Space extends js.Object
   
   @js.native
   sealed trait X extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait b extends js.Object
@@ -81,31 +81,31 @@ object d3DashFormatStrings {
   sealed trait x_ extends js.Object
   
   @scala.inline
-  def ` `: ` ` = " ".asInstanceOf[` `]
+  def $: $ = "$".asInstanceOf[$]
   @scala.inline
-  def `#`: `#` = "#".asInstanceOf[`#`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `(`: `(` = "(".asInstanceOf[`(`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
+  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
   @scala.inline
-  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def Space: Space = " ".asInstanceOf[Space]
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   @scala.inline

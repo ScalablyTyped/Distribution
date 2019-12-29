@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.codeactions
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCodeactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.Microflow
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -31,7 +32,7 @@ class MicroflowActionInfo protected ()
 @js.native
 object MicroflowActionInfo extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenCodeactionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

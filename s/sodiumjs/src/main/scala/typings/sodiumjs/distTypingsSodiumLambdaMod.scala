@@ -1,12 +1,6 @@
 package typings.sodiumjs
 
 import typings.sodiumjs.distTypingsSodiumCellMod.Cell
-import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda1
-import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda2
-import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda3
-import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda4
-import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda5
-import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda6
 import typings.sodiumjs.distTypingsSodiumStreamMod.Stream
 import typings.sodiumjs.distTypingsSodiumVertexMod.Source
 import scala.scalajs.js

@@ -88,12 +88,12 @@ import typings.atMaterialDashUiCore.stylesCreateTypographyMod.ThemeStyle
 import typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconClassKey
 import typings.atMaterialDashUiCore.switchSwitchMod.SwitchClassKey
 import typings.atMaterialDashUiCore.tabTabMod.TabClassKey
-import typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typings.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import typings.atMaterialDashUiCore.tableCellTableCellMod.TableCellClassKey
 import typings.atMaterialDashUiCore.tablePaginationTablePaginationMod.TablePaginationClassKey
 import typings.atMaterialDashUiCore.tableRowTableRowMod.TableRowClassKey
 import typings.atMaterialDashUiCore.tableSortLabelTableSortLabelMod.TableSortLabelClassKey
+import typings.atMaterialDashUiCore.tableTableMod.Padding
 import typings.atMaterialDashUiCore.tabsTabIndicatorMod.TabIndicatorClassKey
 import typings.atMaterialDashUiCore.tabsTabsMod.TabsClassKey
 import typings.atMaterialDashUiCore.toolbarToolbarMod.ToolbarClassKey
@@ -114,10 +114,7 @@ object atMaterialDashUiCoreStrings {
   sealed trait ConsistentWith extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
-  sealed trait JS extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait absolute extends DividerClassKey
@@ -393,7 +390,7 @@ object atMaterialDashUiCoreStrings {
   @js.native
   sealed trait checkbox
     extends Padding
-       with typings.atMaterialDashUiCore.tableTableMod.Padding
+       with typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
   
   @js.native
   sealed trait checked
@@ -570,7 +567,7 @@ object atMaterialDashUiCoreStrings {
     extends Color
        with ListItemClassKey
        with Padding
-       with typings.atMaterialDashUiCore.tableTableMod.Padding
+       with typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
   
   @js.native
   sealed trait deletable extends ChipClassKey
@@ -603,7 +600,7 @@ object atMaterialDashUiCoreStrings {
        with ListItemTextClassKey
        with Margin
        with Padding
-       with typings.atMaterialDashUiCore.tableTableMod.Padding
+       with typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
        with ToolbarClassKey
   
   @js.native
@@ -1180,6 +1177,9 @@ object atMaterialDashUiCoreStrings {
        with StrippedProps
   
   @js.native
+  sealed trait js_ extends js.Object
+  
+  @js.native
   sealed trait justify
     extends Alignment
        with StrippedProps
@@ -1354,7 +1354,7 @@ object atMaterialDashUiCoreStrings {
   sealed trait none
     extends Margin
        with Padding
-       with typings.atMaterialDashUiCore.tableTableMod.Padding
+       with typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
        with PopoverReference
   
   @js.native
@@ -2116,9 +2116,7 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
@@ -2639,6 +2637,8 @@ object atMaterialDashUiCoreStrings {
   def isolated: isolated = "isolated".asInstanceOf[isolated]
   @scala.inline
   def item: item = "item".asInstanceOf[item]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
   @scala.inline

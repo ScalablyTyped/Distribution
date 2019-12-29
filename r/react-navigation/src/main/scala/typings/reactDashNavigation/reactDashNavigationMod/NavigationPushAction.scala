@@ -1,6 +1,6 @@
 package typings.reactDashNavigation.reactDashNavigationMod
 
-import typings.reactDashNavigation.reactDashNavigationStrings.`Navigation/PUSH`
+import typings.reactDashNavigation.reactDashNavigationStrings.NavigationSlashPUSH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,14 @@ trait NavigationPushAction extends NavigationStackAction {
   var key: js.UndefOr[String] = js.undefined
   var params: js.UndefOr[NavigationParams] = js.undefined
   var routeName: String
-  var `type`: `Navigation/PUSH`
+  var `type`: NavigationSlashPUSH
 }
 
 object NavigationPushAction {
   @scala.inline
   def apply(
     routeName: String,
-    `type`: `Navigation/PUSH`,
+    `type`: NavigationSlashPUSH,
     action: NavigationNavigateAction = null,
     key: String = null,
     params: NavigationParams = null

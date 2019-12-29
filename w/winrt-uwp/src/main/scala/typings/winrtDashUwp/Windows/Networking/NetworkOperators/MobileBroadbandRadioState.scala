@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandRadioState.off
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandRadioState.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

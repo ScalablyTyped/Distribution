@@ -1,8 +1,8 @@
 package typings.atJupyterlabCsvviewer.libModelMod.DSVModel
 
-import typings.atJupyterlabCsvviewer.atJupyterlabCsvviewerStrings.BACKSLASHn
-import typings.atJupyterlabCsvviewer.atJupyterlabCsvviewerStrings.BACKSLASHr
-import typings.atJupyterlabCsvviewer.atJupyterlabCsvviewerStrings.BACKSLASHrBACKSLASHn
+import typings.atJupyterlabCsvviewer.atJupyterlabCsvviewerStrings.Carriagereturn
+import typings.atJupyterlabCsvviewer.atJupyterlabCsvviewerStrings.CarriagereturnLinefeed
+import typings.atJupyterlabCsvviewer.atJupyterlabCsvviewerStrings.Linefeed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ trait IOptions extends js.Object {
     * Any carriage return or newline character that is not a delimiter should
     * be in a quoted field, regardless of the row delimiter setting.
     */
-  var rowDelimiter: js.UndefOr[BACKSLASHrBACKSLASHn | BACKSLASHr | BACKSLASHn] = js.undefined
+  var rowDelimiter: js.UndefOr[CarriagereturnLinefeed | Carriagereturn | Linefeed] = js.undefined
 }
 
 object IOptions {
@@ -68,7 +68,7 @@ object IOptions {
     initialRows: Int | Double = null,
     quote: String = null,
     quoteParser: js.UndefOr[Boolean] = js.undefined,
-    rowDelimiter: BACKSLASHrBACKSLASHn | BACKSLASHr | BACKSLASHn = null
+    rowDelimiter: CarriagereturnLinefeed | Carriagereturn | Linefeed = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any])
     if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])

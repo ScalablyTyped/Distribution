@@ -6,8 +6,6 @@ import typings.openlayers.openlayersMod.geom.Geometry
 import typings.openlayers.openlayersMod.geom.GeometryType
 import typings.openlayers.openlayersMod.olx.FrameState
 import typings.openlayers.openlayersMod.olx.render.ToContextOptions
-import typings.openlayers.openlayersMod.render.EventType
-import typings.openlayers.openlayersMod.render.VectorContext
 import typings.openlayers.openlayersMod.render.canvas.Immediate
 import typings.openlayers.openlayersMod.style.Style
 import typings.std.CanvasRenderingContext2D

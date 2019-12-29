@@ -2,7 +2,6 @@ package typings.expressDashValidator
 
 import typings.expressDashValidator.srcBaseMod.Middleware
 import typings.expressDashValidator.srcChainValidationDashChainMod.ValidationChain
-import typings.expressDashValidator.srcMiddlewaresOneDashOfMod.OneOfCustomMessageBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

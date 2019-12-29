@@ -1,6 +1,5 @@
 package typings.wonderDotJs
 
-import typings.wonderDotJs.distEs2015MaterialBasicMaterialMod.BasicMaterial
 import typings.wonderDotJs.distEs2015MaterialStandardBasicMaterialMod.StandardBasicMaterial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

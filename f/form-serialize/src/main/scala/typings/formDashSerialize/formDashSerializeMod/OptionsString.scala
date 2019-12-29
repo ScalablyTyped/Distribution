@@ -1,6 +1,6 @@
 package typings.formDashSerialize.formDashSerializeMod
 
-import typings.formDashSerialize.formDashSerializeNumbers.`false`
+import typings.formDashSerialize.formDashSerializeBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

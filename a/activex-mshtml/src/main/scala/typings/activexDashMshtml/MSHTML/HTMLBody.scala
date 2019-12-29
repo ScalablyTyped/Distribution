@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLBody")
 @js.native
 class HTMLBody protected () extends js.Object {
-  var `MSHTML.HTMLBody_typekey`: HTMLBody = js.native
+  @JSName("MSHTML.HTMLBody_typekey")
+  var MSHTMLDotHTMLBody_typekey: HTMLBody = js.native
   var aLink: js.Any = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native

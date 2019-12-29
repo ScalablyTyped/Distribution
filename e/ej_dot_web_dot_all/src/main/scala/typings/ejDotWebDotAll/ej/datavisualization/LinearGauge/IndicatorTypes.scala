@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.RoundedRectangle
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

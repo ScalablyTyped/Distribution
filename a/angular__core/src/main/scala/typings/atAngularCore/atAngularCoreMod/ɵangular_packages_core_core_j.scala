@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵangular_packages_core_core_j")
+@JSImport("@angular/core", "\u0275angular_packages_core_core_j")
 @js.native
 class ɵangular_packages_core_core_j protected () extends js.Object {
   def this(nativeNode: js.Any, parent: Null, _debugContext: ɵangular_packages_core_core_z) = this()

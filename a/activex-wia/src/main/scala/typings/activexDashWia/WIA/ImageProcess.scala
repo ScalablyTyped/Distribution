@@ -14,7 +14,8 @@ class ImageProcess protected () extends js.Object {
   /** A collection of the filters to be applied in this process */
   @JSName("Filters")
   val Filters_Original: Filters = js.native
-  var `WIA.ImageProcess_typekey`: ImageProcess = js.native
+  @JSName("WIA.ImageProcess_typekey")
+  var WIADotImageProcess_typekey: ImageProcess = js.native
   /** Takes the specified ImageFile and returns the new ImageFile with all the filters applied on success */
   def Apply(Source: ImageFile): ImageFile = js.native
   def FilterInfos(Index: String): FilterInfo = js.native

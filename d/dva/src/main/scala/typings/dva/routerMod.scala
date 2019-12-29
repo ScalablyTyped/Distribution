@@ -1,8 +1,8 @@
 package typings.dva
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dva.dvaStrings.`@@router/CALL_HISTORY_METHOD`
-import typings.dva.dvaStrings.`@@router/LOCATION_CHANGE`
+import typings.dva.dvaStrings.`@@routerSlashCALL_HISTORY_METHOD`
+import typings.dva.dvaStrings.`@@routerSlashLOCATION_CHANGE`
 import typings.history.historyMod.History
 import typings.history.historyMod.Location
 import typings.history.historyMod.LocationDescriptor
@@ -133,8 +133,8 @@ object routerMod extends js.Object {
     class ConnectedRouter[State] ()
       extends Component[ConnectedRouterProps[State], js.Object, js.Any]
     
-    val CALL_HISTORY_METHOD: `@@router/CALL_HISTORY_METHOD` = js.native
-    val LOCATION_CHANGE: `@@router/LOCATION_CHANGE` = js.native
+    val CALL_HISTORY_METHOD: `@@routerSlashCALL_HISTORY_METHOD` = js.native
+    val LOCATION_CHANGE: `@@routerSlashLOCATION_CHANGE` = js.native
     val routerReducer: Reducer[RouterState, AnyAction] = js.native
     def createMatchSelector(path: String): js.Function1[/* state */ Anon_Router, `match`[js.Object] | Null] = js.native
     def go(n: Double): RouterAction = js.native

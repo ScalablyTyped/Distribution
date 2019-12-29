@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.settings.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`settingsDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.settingsDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait PodPresetList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `settingsDOTk8sDOTio/v1alpha1`
+  val apiVersion: settingsDotk8sDotioSlashv1alpha1
   /**
     * Items is a list of schema objects.
     */
@@ -38,7 +38,7 @@ trait PodPresetList extends js.Object {
 object PodPresetList {
   @scala.inline
   def apply(
-    apiVersion: `settingsDOTk8sDOTio/v1alpha1`,
+    apiVersion: settingsDotk8sDotioSlashv1alpha1,
     items: js.Array[PodPreset],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodPresetList,
     metadata: ListMeta

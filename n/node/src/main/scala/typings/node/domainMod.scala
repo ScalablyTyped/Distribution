@@ -1,7 +1,6 @@
 package typings.node
 
 import typings.node.NodeJS.Timer
-import typings.node.domainMod.Domain
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

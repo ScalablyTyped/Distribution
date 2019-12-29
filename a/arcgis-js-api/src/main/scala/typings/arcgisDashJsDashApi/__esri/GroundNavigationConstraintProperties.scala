@@ -1,5 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`stay-above`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -19,7 +21,7 @@ trait GroundNavigationConstraintProperties extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint)
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[`stay-above` | none] = js.undefined
 }
 
 object GroundNavigationConstraintProperties {
@@ -28,7 +30,7 @@ object GroundNavigationConstraintProperties {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String = null
+    `type`: `stay-above` | none = null
   ): GroundNavigationConstraintProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

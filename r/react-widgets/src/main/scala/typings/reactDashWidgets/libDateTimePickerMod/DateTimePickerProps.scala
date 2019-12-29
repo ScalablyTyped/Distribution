@@ -8,7 +8,7 @@ import typings.react.reactMod.ReactType
 import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashWidgets.libCommonPropsMod.AutoFocus
 import typings.reactDashWidgets.libCommonPropsMod.ReactWidgetsCommonDropdownProps
-import typings.reactDashWidgets.reactDashWidgetsNumbers.`false`
+import typings.reactDashWidgets.reactDashWidgetsBooleans.`false`
 import typings.reactDashWidgets.reactDashWidgetsStrings.calendar
 import typings.reactDashWidgets.reactDashWidgetsStrings.century
 import typings.reactDashWidgets.reactDashWidgetsStrings.date

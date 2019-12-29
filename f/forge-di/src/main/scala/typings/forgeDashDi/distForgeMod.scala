@@ -1,7 +1,6 @@
 package typings.forgeDashDi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.forgeDashDi.distForgeMod.Forge
 import typings.forgeDashDi.distFrameworkArgumentsMod.Arguments
 import typings.forgeDashDi.distFrameworkConfigMod.Config
 import typings.forgeDashDi.distFrameworkModeMod.Mode

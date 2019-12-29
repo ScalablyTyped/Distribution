@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Program
   extends BaseNode
      with Node {
-  var body: js.Array[Statement | ModuleDeclaration]
+  var body: js.Array[Directive | Statement | ModuleDeclaration]
   var comments: js.UndefOr[js.Array[Comment]] = js.undefined
   var sourceType: script | module
   @JSName("type")
@@ -19,7 +19,7 @@ trait Program
 object Program {
   @scala.inline
   def apply(
-    body: js.Array[Statement | ModuleDeclaration],
+    body: js.Array[Directive | Statement | ModuleDeclaration],
     sourceType: script | module,
     `type`: typings.estree.estreeStrings.Program,
     comments: js.Array[Comment] = null,

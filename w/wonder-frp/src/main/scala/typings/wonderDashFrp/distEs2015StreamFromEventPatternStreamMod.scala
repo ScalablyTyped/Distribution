@@ -1,7 +1,6 @@
 package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distEs2015StreamBaseStreamMod.BaseStream
-import typings.wonderDashFrp.distEs2015StreamFromEventPatternStreamMod.FromEventPatternStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

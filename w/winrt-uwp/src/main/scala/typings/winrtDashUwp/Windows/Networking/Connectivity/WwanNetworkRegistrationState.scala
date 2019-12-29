@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanNetworkRegistrationState.denied
-import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanNetworkRegistrationState.deregistered
-import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanNetworkRegistrationState.home
-import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanNetworkRegistrationState.none
-import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanNetworkRegistrationState.partner
-import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanNetworkRegistrationState.roaming
-import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanNetworkRegistrationState.searching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

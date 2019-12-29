@@ -34,19 +34,19 @@ trait SidenavOptions extends js.Object {
   /**
     * Function called when sidenav finishes exiting
     */
-  def onCloseEnd(`this`: Sidenav, elem: Element): Unit
+  def onCloseEnd(elem: Element): Unit
   /**
     * Function called when sidenav starts exiting
     */
-  def onCloseStart(`this`: Sidenav, elem: Element): Unit
+  def onCloseStart(elem: Element): Unit
   /**
     * Function called when sidenav finishes entering
     */
-  def onOpenEnd(`this`: Sidenav, elem: Element): Unit
+  def onOpenEnd(elem: Element): Unit
   /**
     * Function called when sidenav starts entering
     */
-  def onOpenStart(`this`: Sidenav, elem: Element): Unit
+  def onOpenStart(elem: Element): Unit
 }
 
 object SidenavOptions {
@@ -55,13 +55,13 @@ object SidenavOptions {
     draggable: Boolean,
     edge: left | right,
     inDuration: Double,
-    onCloseEnd: (Sidenav, Element) => Unit,
-    onCloseStart: (Sidenav, Element) => Unit,
-    onOpenEnd: (Sidenav, Element) => Unit,
-    onOpenStart: (Sidenav, Element) => Unit,
+    onCloseEnd: Element => Unit,
+    onCloseStart: Element => Unit,
+    onOpenEnd: Element => Unit,
+    onOpenStart: Element => Unit,
     outDuration: Double
   ): SidenavOptions = {
-    val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), outDuration = outDuration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1(onCloseEnd), onCloseStart = js.Any.fromFunction1(onCloseStart), onOpenEnd = js.Any.fromFunction1(onOpenEnd), onOpenStart = js.Any.fromFunction1(onOpenStart), outDuration = outDuration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SidenavOptions]
   }

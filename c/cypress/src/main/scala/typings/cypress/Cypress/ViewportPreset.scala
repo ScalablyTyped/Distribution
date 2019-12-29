@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.cypress.cypressStrings.`ipad-mini`
   - typings.cypress.cypressStrings.`iphone-xr`
   - typings.cypress.cypressStrings.`iphone-x`
-  - typings.cypress.cypressStrings.`iphone-6+`
+  - typings.cypress.cypressStrings.`iphone-6Plussign`
   - typings.cypress.cypressStrings.`iphone-6`
   - typings.cypress.cypressStrings.`iphone-5`
   - typings.cypress.cypressStrings.`iphone-4`
@@ -38,7 +38,7 @@ object ViewportPreset {
   @scala.inline
   def `iphone-6`: typings.cypress.cypressStrings.`iphone-6` = this.cast("iphone-6")
   @scala.inline
-  def `iphone-6+`: typings.cypress.cypressStrings.`iphone-6+` = this.cast("iphone-6+")
+  def `iphone-6Plussign`: typings.cypress.cypressStrings.`iphone-6Plussign` = this.cast("iphone-6+")
   @scala.inline
   def `iphone-x`: typings.cypress.cypressStrings.`iphone-x` = this.cast("iphone-x")
   @scala.inline

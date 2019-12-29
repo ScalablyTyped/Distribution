@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +24,7 @@ trait heatmapStatistics extends js.Object {
     * @param params.features A subset of features for which to calculate the statistics.
     *
     */
-  def heatmapStatistics(params: heatmapStatisticsHeatmapStatisticsParams): IPromise[HeatmapStatisticsResult]
+  def heatmapStatistics(params: heatmapStatisticsHeatmapStatisticsParams): js.Promise[HeatmapStatisticsResult]
 }
 
 @JSGlobal("__esri.heatmapStatistics")

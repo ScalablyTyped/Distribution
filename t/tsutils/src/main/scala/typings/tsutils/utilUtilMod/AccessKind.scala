@@ -1,12 +1,6 @@
 package typings.tsutils.utilUtilMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tsutils.utilUtilMod.AccessKind.Delete
-import typings.tsutils.utilUtilMod.AccessKind.Modification
-import typings.tsutils.utilUtilMod.AccessKind.None
-import typings.tsutils.utilUtilMod.AccessKind.Read
-import typings.tsutils.utilUtilMod.AccessKind.ReadWrite
-import typings.tsutils.utilUtilMod.AccessKind.Write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

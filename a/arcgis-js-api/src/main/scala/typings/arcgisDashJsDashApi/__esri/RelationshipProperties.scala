@@ -1,16 +1,19 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`many-to-many`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`one-to-many`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`one-to-one`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RelationshipProperties extends js.Object {
   /**
-    * The cardinality which specifies the number of objects in the origin [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) related to the number of objects in the destination [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). Please see the [Desktop help](http://desktop.arcgis.com/en/arcmap/10.3/manage-data/relationships/relationship-class-properties.htm#GUID-989CB1D1-AC51-4A4C-8D9D-0AB9E647FFFD) for additional information on cardinality.  **Possible values:** one-to-one | one-to-many | many-to-many
+    * The cardinality which specifies the number of objects in the origin [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) related to the number of objects in the destination [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). Please see the [Desktop help](http://desktop.arcgis.com/en/arcmap/10.3/manage-data/relationships/relationship-class-properties.htm#GUID-989CB1D1-AC51-4A4C-8D9D-0AB9E647FFFD) for additional information on cardinality.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#cardinality)
     */
-  var cardinality: js.UndefOr[String] = js.undefined
+  var cardinality: js.UndefOr[`one-to-one` | `one-to-many` | `many-to-many`] = js.undefined
   /**
     * The unique ID for the relationship. These ids for the relationships the [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) participates in are listed in the ArcGIS Services directory.
     *
@@ -40,7 +43,7 @@ trait RelationshipProperties extends js.Object {
 object RelationshipProperties {
   @scala.inline
   def apply(
-    cardinality: String = null,
+    cardinality: `one-to-one` | `one-to-many` | `many-to-many` = null,
     id: Int | Double = null,
     keyField: String = null,
     name: String = null,

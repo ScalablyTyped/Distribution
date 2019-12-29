@@ -1,6 +1,5 @@
 package typings.easyDashXDashHeaders
 
-import typings.easyDashXDashHeaders.childUnderscoreProcessMod.ChildProcess
 import typings.easyDashXDashHeaders.eventsMod.EventEmitter
 import typings.easyDashXDashHeaders.streamMod.Readable
 import typings.easyDashXDashHeaders.streamMod.Writable

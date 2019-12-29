@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 trait ITimeField
   extends typings.extjs.Ext.form.field.IComboBox {
   /** [Config Option] (String) */
-  var altFormats: js.UndefOr[java.lang.String] = js.undefined
+  var altFormats: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var format: js.UndefOr[java.lang.String] = js.undefined
+  var format: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var increment: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var maxText: js.UndefOr[java.lang.String] = js.undefined
+  var maxText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Date/String) */
   var maxValue: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var minText: js.UndefOr[java.lang.String] = js.undefined
+  var minText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Date/String) */
   var minValue: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number) */
@@ -38,26 +38,26 @@ trait ITimeField
   /** [Config Option] (Boolean) */
   var snapToIncrement: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var submitFormat: js.UndefOr[java.lang.String] = js.undefined
+  var submitFormat: js.UndefOr[String] = js.undefined
 }
 
 object ITimeField {
   @scala.inline
   def apply(
     IComboBox: typings.extjs.Ext.form.field.IComboBox = null,
-    altFormats: java.lang.String = null,
-    format: java.lang.String = null,
+    altFormats: String = null,
+    format: String = null,
     increment: Int | Double = null,
-    maxText: java.lang.String = null,
+    maxText: String = null,
     maxValue: js.Any = null,
-    minText: java.lang.String = null,
+    minText: String = null,
     minValue: js.Any = null,
     pickerMaxHeight: Int | Double = null,
     setMaxValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     setMinValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     setValue: () => _ = null,
     snapToIncrement: js.UndefOr[Boolean] = js.undefined,
-    submitFormat: java.lang.String = null
+    submitFormat: String = null
   ): ITimeField = {
     val __obj = js.Dynamic.literal()
     if (IComboBox != null) js.Dynamic.global.Object.assign(__obj, IComboBox)

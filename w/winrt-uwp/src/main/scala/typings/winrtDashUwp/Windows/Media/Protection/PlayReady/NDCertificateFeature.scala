@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateFeature.antiRollBackClock
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateFeature.crls
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateFeature.playReady3Features
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateFeature.receiver
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateFeature.secureClock
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateFeature.sharedCertificate
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificateFeature.transmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

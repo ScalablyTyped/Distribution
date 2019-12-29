@@ -3,7 +3,6 @@ package typings.atFirebaseFirestore
 import typings.atFirebaseFirestore.distSrcModelDocumentMod.Document
 import typings.atFirebaseFirestore.distSrcModelDocumentUnderscoreComparatorMod.DocumentComparator
 import typings.atFirebaseFirestore.distSrcModelDocumentUnderscoreKeyMod.DocumentKey
-import typings.atFirebaseFirestore.distSrcModelDocumentUnderscoreSetMod.DocumentSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

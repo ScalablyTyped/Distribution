@@ -14,7 +14,8 @@ class ChartCharacters protected () extends js.Object {
   val Font: ChartFont = js.native
   val Parent: js.Any = js.native
   var PhoneticCharacters: String = js.native
-  var `PowerPoint.ChartCharacters_typekey`: ChartCharacters = js.native
+  @JSName("PowerPoint.ChartCharacters_typekey")
+  var PowerPointDotChartCharacters_typekey: ChartCharacters = js.native
   var Text: String = js.native
   def Delete(): js.Any = js.native
   def Insert(String: String): js.Any = js.native

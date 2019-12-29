@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Printing.PrintCollation.collated
-import typings.winrt.Windows.Graphics.Printing.PrintCollation.default
-import typings.winrt.Windows.Graphics.Printing.PrintCollation.notAvailable
-import typings.winrt.Windows.Graphics.Printing.PrintCollation.printerCustom
-import typings.winrt.Windows.Graphics.Printing.PrintCollation.uncollated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,7 @@
 package typings.jsts
 
-import typings.jsts.jsts.geom.Coordinate
-import typings.jsts.jsts.geom.Envelope
 import typings.jsts.jsts.geom.Geometry
 import typings.jsts.jsts.geom.GeometryFactory
-import typings.jsts.jsts.geom.LineString
-import typings.jsts.jsts.geom.LinearRing
-import typings.jsts.jsts.geom.Point
-import typings.jsts.jsts.geom.Polygon
-import typings.jsts.jsts.geom.PrecisionModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

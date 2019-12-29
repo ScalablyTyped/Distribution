@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object reactDashCopyDashToDashClipboardStrings {
   @js.native
-  sealed trait `text/html` extends js.Object
+  sealed trait textSlashhtml extends js.Object
   
   @js.native
-  sealed trait `text/plain` extends js.Object
+  sealed trait textSlashplain extends js.Object
   
   @scala.inline
-  def `text/html`: `text/html` = "text/html".asInstanceOf[`text/html`]
+  def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
   @scala.inline
-  def `text/plain`: `text/plain` = "text/plain".asInstanceOf[`text/plain`]
+  def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
 }
 

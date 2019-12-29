@@ -3,23 +3,6 @@ package typings.browserfs
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ApiError
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EACCES
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EBADF
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EBUSY
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EEXIST
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EFBIG
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EINVAL
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EIO
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EISDIR
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.ENOENT
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.ENOSPC
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.ENOTDIR
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.ENOTEMPTY
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.ENOTSUP
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EPERM
-import typings.browserfs.distNodeCoreApiUnderscoreErrorMod.ErrorCode.EROFS
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
@@ -29,8 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("browserfs/dist/node/core/api_error", JSImport.Namespace)
 @js.native
 object distNodeCoreApiUnderscoreErrorMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Error because var conflicts: stack. Inlined message, name */ @js.native
+  @js.native
   class ApiError protected () extends ErrnoException {
     /**
       * Represents a BrowserFS error. Passed back to applications after a failed
@@ -49,8 +31,10 @@ object distNodeCoreApiUnderscoreErrorMod extends js.Object {
     var code_ApiError: String = js.native
     @JSName("errno")
     var errno_ApiError: ErrorCode = js.native
-    var message: String = js.native
-    var name: String = js.native
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
     @JSName("path")
     var path_ApiError: js.UndefOr[String] = js.native
     @JSName("stack")

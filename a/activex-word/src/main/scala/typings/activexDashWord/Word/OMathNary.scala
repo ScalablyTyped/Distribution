@@ -18,6 +18,7 @@ class OMathNary protected () extends js.Object {
   val Sub: OMath = js.native
   var SubSupLim: Boolean = js.native
   val Sup: OMath = js.native
-  var `Word.OMathNary_typekey`: OMathNary = js.native
+  @JSName("Word.OMathNary_typekey")
+  var WordDotOMathNary_typekey: OMathNary = js.native
 }
 

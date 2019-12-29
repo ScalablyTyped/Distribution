@@ -2,8 +2,6 @@ package typings.atFirebaseDatabase
 
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseAppDashTypes.privateMod.FirebaseService
-import typings.atFirebaseDatabase.distSrcApiDatabaseMod.Database
-import typings.atFirebaseDatabase.distSrcApiDatabaseMod.DatabaseInternals
 import typings.atFirebaseDatabase.distSrcApiReferenceMod.Reference
 import typings.atFirebaseDatabase.distSrcCoreRepoMod.Repo
 import scala.scalajs.js
@@ -30,6 +28,8 @@ object distSrcApiDatabaseMod extends js.Object {
     var checkDeleted_ : js.Any = js.native
     var repo_ : js.Any = js.native
     var root_ : js.Any = js.native
+    @JSName("app")
+    def app_MDatabase(): FirebaseApp = js.native
     def goOffline(): Unit = js.native
     def goOnline(): Unit = js.native
     /**
@@ -67,7 +67,7 @@ object distSrcApiDatabaseMod extends js.Object {
   /* static members */
   @js.native
   object Database extends js.Object {
-    val ServerValue: Anon_TIMESTAMP = js.native
+    val ServerValue: Anon_IncrementTIMESTAMP = js.native
   }
   
 }

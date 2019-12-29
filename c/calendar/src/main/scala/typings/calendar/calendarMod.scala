@@ -1,7 +1,5 @@
 package typings.calendar
 
-import typings.calendar.calendarMod.DayFormatter
-import typings.calendar.calendarMod.WeekFormatter
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

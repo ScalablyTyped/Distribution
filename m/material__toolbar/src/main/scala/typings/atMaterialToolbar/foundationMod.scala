@@ -1,7 +1,6 @@
 package typings.atMaterialToolbar
 
 import typings.atMaterialToolbar.adapterMod.MDCToolbarAdapter
-import typings.atMaterialToolbar.foundationMod.MDCToolbarFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

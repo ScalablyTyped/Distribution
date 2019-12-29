@@ -1,8 +1,8 @@
 package typings.quill.quillMod
 
 import typings.parchment.distSrcBlotAbstractBlotMod.Blot
-import typings.quill.quillNumbers.`false`
-import typings.quill.quillNumbers.`true`
+import typings.quill.quillBooleans.`false`
+import typings.quill.quillBooleans.`true`
 import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.Node

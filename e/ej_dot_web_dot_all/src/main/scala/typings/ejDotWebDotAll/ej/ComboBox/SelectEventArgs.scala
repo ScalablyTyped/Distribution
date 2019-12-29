@@ -19,10 +19,10 @@ trait SelectEventArgs extends js.Object {
   var isInteracted: js.UndefOr[Boolean] = js.undefined
   /** Data object of the selected item.
     */
-  var itemData: js.UndefOr[typings.ejDotWebDotAll.ej.ComboBox.Model] = js.undefined
+  var itemData: js.UndefOr[Model] = js.undefined
   /** Instance of the combobox model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ComboBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Text of the selected item.
     */
   var text: js.UndefOr[String] = js.undefined
@@ -41,8 +41,8 @@ object SelectEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     e: js.Any = null,
     isInteracted: js.UndefOr[Boolean] = js.undefined,
-    itemData: typings.ejDotWebDotAll.ej.ComboBox.Model = null,
-    model: typings.ejDotWebDotAll.ej.ComboBox.Model = null,
+    itemData: Model = null,
+    model: Model = null,
     text: String = null,
     `type`: String = null,
     value: String | Double = null

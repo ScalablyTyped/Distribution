@@ -1,12 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015EventObjectEEventTypeMod.EEventType
-import typings.wonderDotJs.distEs2015EventObjectEEventTypeMod.EEventType.CUSTOM
-import typings.wonderDotJs.distEs2015EventObjectEEventTypeMod.EEventType.KEYBOARD
-import typings.wonderDotJs.distEs2015EventObjectEEventTypeMod.EEventType.MOUSE
-import typings.wonderDotJs.distEs2015EventObjectEEventTypeMod.EEventType.POINT
-import typings.wonderDotJs.distEs2015EventObjectEEventTypeMod.EEventType.TOUCH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

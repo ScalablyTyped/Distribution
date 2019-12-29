@@ -2,7 +2,6 @@ package typings.ionic
 
 import typings.ionic.definitionsMod.CreateRequestOptions
 import typings.ionic.definitionsMod.HttpMethod
-import typings.ionic.libUtilsHttpMod.SuperAgentRequest
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

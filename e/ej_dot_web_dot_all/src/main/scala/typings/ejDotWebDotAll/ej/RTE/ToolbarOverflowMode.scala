@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.RTE
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.RTE.ToolbarOverflowMode.Inline
-import typings.ejDotWebDotAll.ej.RTE.ToolbarOverflowMode.Popup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.MediaProperties.AudioEncodingQuality.auto
-import typings.winrt.Windows.Media.MediaProperties.AudioEncodingQuality.high
-import typings.winrt.Windows.Media.MediaProperties.AudioEncodingQuality.low
-import typings.winrt.Windows.Media.MediaProperties.AudioEncodingQuality.medium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

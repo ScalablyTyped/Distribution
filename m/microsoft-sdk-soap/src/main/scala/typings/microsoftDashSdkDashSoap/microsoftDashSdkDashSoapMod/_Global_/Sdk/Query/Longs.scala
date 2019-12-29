@@ -12,19 +12,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Sdk.Query.Longs")
 @js.native
 class Longs protected () extends ValueBase {
-  def this(args: js.Array[scala.Double]) = this()
+  def this(args: js.Array[Double]) = this()
   /**
     * Returns the type of value with namespace prefix.
     */
-  def getType(): java.lang.String = js.native
+  def getType(): String = js.native
   /**
     * Returns an Sdk.Collection of number values.
     */
-  def getValues(): Collection[scala.Double] = js.native
+  def getValues(): Collection[Double] = js.native
   /**
     * Specifies the Long values to be compared in the query.
     * @param setValueArgs An array of number values.
     */
-  def setValues(setValueArgs: js.Array[scala.Double]): Unit = js.native
+  def setValues(setValueArgs: js.Array[Double]): Unit = js.native
 }
 

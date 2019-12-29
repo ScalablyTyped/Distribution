@@ -6,6 +6,7 @@ import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
 import typings.atUifabricUtilities.Anon_AsyncPlaceholder
 import typings.atUifabricUtilities.Anon_Configurable
 import typings.atUifabricUtilities.Anon_Focus
+import typings.atUifabricUtilities.Anon_Rtl
 import typings.atUifabricUtilities.libAsAsyncMod.IAsAsyncOptions
 import typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps
 import typings.atUifabricUtilities.libClassNamesFunctionMod.IClassNamesFunctionOptions
@@ -28,6 +29,7 @@ import typings.atUifabricUtilities.libStyledMod.ICustomizableProps
 import typings.atUifabricUtilities.libStyledMod.IPropsWithStyles
 import typings.atUifabricUtilities.libWarnWarnControlledUsageMod.IWarnControlledUsageParams
 import typings.atUifabricUtilities.libWarnWarnMod.ISettingsMap
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactBooleans.`false`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`100`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`101`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`102`
@@ -127,7 +129,6 @@ import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNu
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`98`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`99`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`9`
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`false`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`data-is-scrollable`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`data-no-horizontal-wrap`
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.`data-no-vertical-wrap`
@@ -257,6 +258,8 @@ object libUtilitiesMod extends js.Object {
   val videoProperties: js.Array[String] = js.native
   def addDirectionalKeyCode(which: Double): Unit = js.native
   def addElementAtIndex[T](array: js.Array[T], index: Double, itemToAdd: T): js.Array[T] = js.native
+  def allowOverscrollOnElement(element: Null, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
+  def allowOverscrollOnElement(element: HTMLElement, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
   def allowScrollOnElement(element: Null, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
   def allowScrollOnElement(element: HTMLElement, events: typings.atUifabricUtilities.libEventGroupMod.EventGroup): Unit = js.native
   def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[Unit] = js.native
@@ -393,7 +396,9 @@ object libUtilitiesMod extends js.Object {
     tabbable: js.UndefOr[Boolean]
   ): HTMLElement | Null = js.native
   def getRTL(): Boolean = js.native
+  def getRTL(theme: Anon_Rtl): Boolean = js.native
   def getRTLSafeKeyCode(key: Double): Double = js.native
+  def getRTLSafeKeyCode(key: Double, theme: Anon_Rtl): Double = js.native
   def getRect(): js.UndefOr[IRectangle] = js.native
   def getRect(element: HTMLElement): js.UndefOr[IRectangle] = js.native
   def getRect(element: Window): js.UndefOr[IRectangle] = js.native

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.insufficentQuantity
-import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.networkError
-import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.serverError
-import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.sockets.tcpServer
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import typings.chromeDashApps.chrome.sockets.AcceptErrorEventArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.sockets.tcpServer.onAcceptError")
 @js.native
 object onAcceptError
-  extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[js.Function1[/* args */ AcceptErrorEventArgs, Unit]]
-    ]
+  extends TopLevel[Event[js.Function1[/* args */ AcceptErrorEventArgs, Unit]]]
 

@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.INVITED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.MAYBE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.NO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.OWNER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.YES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

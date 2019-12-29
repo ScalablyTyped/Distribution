@@ -1,10 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.IdleReason.CANCELLED
-import typings.chrome.chrome.cast.media.IdleReason.ERROR
-import typings.chrome.chrome.cast.media.IdleReason.FINISHED
-import typings.chrome.chrome.cast.media.IdleReason.INTERRUPTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_BorderStyle.TWBS_NONE
-import typings.dwt.EnumDWT_BorderStyle.TWBS_SINGLE3D
-import typings.dwt.EnumDWT_BorderStyle.TWBS_SINGLEFLAT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

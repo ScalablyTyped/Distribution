@@ -13,31 +13,31 @@ trait INumeric extends IAxis {
   /** [Method] Returns the value of aggregator
   		* @returns String
   		*/
-  var getAggregator: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAggregator: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of layout
   		* @returns String
   		*/
   @JSName("getLayout")
-  var getLayout_INumeric: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLayout_INumeric: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of segmenter
   		* @returns String
   		*/
   @JSName("getSegmenter")
-  var getSegmenter_INumeric: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSegmenter_INumeric: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of aggregator
   		* @param aggregator String The new value.
   		*/
-  var setAggregator: js.UndefOr[js.Function1[/* aggregator */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAggregator: js.UndefOr[js.Function1[/* aggregator */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of layout
   		* @param layout String The new value.
   		*/
   @JSName("setLayout")
-  var setLayout_INumeric: js.UndefOr[js.Function1[/* layout */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLayout_INumeric: js.UndefOr[js.Function1[/* layout */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of segmenter
   		* @param segmenter String The new value.
   		*/
   @JSName("setSegmenter")
-  var setSegmenter_INumeric: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSegmenter_INumeric: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object INumeric {
@@ -46,7 +46,7 @@ object INumeric {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -60,24 +60,24 @@ object INumeric {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    getAggregator: () => java.lang.String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    getAggregator: () => String = null,
     getBackground: () => _ = null,
     getBubbleEvents: () => _ = null,
     getChart: () => IAbstractChart = null,
-    getCoordFor: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[java.lang.String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double = null,
+    getCoordFor: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double = null,
     getFields: () => Array = null,
     getGrid: () => _ = null,
     getHidden: () => Boolean = null,
     getId: () => _ = null,
     getIncrement: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLabel: () => _ = null,
     getLabelInSpan: () => Boolean = null,
-    getLayout: () => java.lang.String = null,
+    getLayout: () => String = null,
     getListeners: () => _ = null,
     getMajorTickSteps: () => Double = null,
     getMaxZoom: () => Double = null,
@@ -86,16 +86,16 @@ object INumeric {
     getMinimum: () => Double = null,
     getMinorTickSteps: () => Double = null,
     getNeedHighPrecision: () => Boolean = null,
-    getPosition: () => java.lang.String = null,
+    getPosition: () => String = null,
     getRange: () => Array = null,
     getRenderer: () => _ = null,
-    getSegmenter: () => java.lang.String = null,
+    getSegmenter: () => String = null,
     getStyle: () => _ = null,
     getTitle: () => _ = null,
     getTitleMargin: () => Double = null,
     getVisibleRange: () => Array = null,
     grid: js.Any = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     increment: Int | Double = null,
     inheritableStatics: js.Any = null,
@@ -114,23 +114,23 @@ object INumeric {
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     needHighPrecision: js.UndefOr[Boolean] = js.undefined,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
-    position: java.lang.String = null,
+    position: String = null,
     processData: () => Unit = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderFrame: () => Unit = null,
     renderer: js.Any = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     segmenter: js.Any = null,
     self: IClass = null,
-    setAggregator: /* aggregator */ js.UndefOr[java.lang.String] => Unit = null,
+    setAggregator: /* aggregator */ js.UndefOr[String] => Unit = null,
     setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setChart: /* chart */ js.UndefOr[IAbstractChart] => Unit = null,
@@ -140,7 +140,7 @@ object INumeric {
     setIncrement: /* increment */ js.UndefOr[Double] => Unit = null,
     setLabel: /* label */ js.UndefOr[js.Any] => Unit = null,
     setLabelInSpan: /* labelInSpan */ js.UndefOr[Boolean] => Unit = null,
-    setLayout: /* layout */ js.UndefOr[java.lang.String] => Unit = null,
+    setLayout: /* layout */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setMajorTickSteps: /* majorTickSteps */ js.UndefOr[Double] => Unit = null,
     setMaxZoom: /* maxZoom */ js.UndefOr[Double] => Unit = null,
@@ -149,9 +149,9 @@ object INumeric {
     setMinimum: /* minimum */ js.UndefOr[Double] => Unit = null,
     setMinorTickSteps: /* minorTickSteps */ js.UndefOr[Double] => Unit = null,
     setNeedHighPrecision: /* needHighPrecision */ js.UndefOr[Boolean] => Unit = null,
-    setPosition: /* position */ js.UndefOr[java.lang.String] => Unit = null,
-    setRenderer: /* renderer */ js.UndefOr[js.Any] => java.lang.String = null,
-    setSegmenter: /* segmenter */ js.UndefOr[java.lang.String] => Unit = null,
+    setPosition: /* position */ js.UndefOr[String] => Unit = null,
+    setRenderer: /* renderer */ js.UndefOr[js.Any] => String = null,
+    setSegmenter: /* segmenter */ js.UndefOr[String] => Unit = null,
     setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
     setTitle: /* title */ js.UndefOr[js.Any] => Unit = null,
     setTitleMargin: /* titleMargin */ js.UndefOr[Double] => Unit = null,
@@ -162,7 +162,7 @@ object INumeric {
     suspendEvents: () => Unit = null,
     title: js.Any = null,
     titleMargin: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,

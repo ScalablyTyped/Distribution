@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.`protected`
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.accessSuspended
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.licenseExpired
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.notProtectable
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedByOtherUser
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedToOtherEnterprise
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedToOtherIdentity
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.revoked
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.undetermined
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.unknown
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

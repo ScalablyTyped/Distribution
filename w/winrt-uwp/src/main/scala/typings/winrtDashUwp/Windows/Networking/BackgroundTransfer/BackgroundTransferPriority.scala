@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.BackgroundTransfer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferPriority.default
-import typings.winrtDashUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferPriority.high
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

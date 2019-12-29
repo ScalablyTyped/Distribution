@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.connectionToServerLost
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.decodeError
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.failedToConnectToServer
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.failedToOpenFile
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.other
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.outOfMemory
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.unspecifiedNetworkError
-import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.unsupportedMediaFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

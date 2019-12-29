@@ -5,31 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NumberFormatOptions extends js.Object {
-  var currency: js.UndefOr[java.lang.String] = js.undefined
-  var currencyDisplay: js.UndefOr[java.lang.String] = js.undefined
-  var localeMatcher: js.UndefOr[java.lang.String] = js.undefined
+  var currency: js.UndefOr[String] = js.undefined
+  var currencyDisplay: js.UndefOr[String] = js.undefined
+  var localeMatcher: js.UndefOr[String] = js.undefined
   var maximumFractionDigits: js.UndefOr[Double] = js.undefined
   var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   var minimumFractionDigits: js.UndefOr[Double] = js.undefined
   var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[java.lang.String] = js.undefined
-  var useGrouping: js.UndefOr[scala.Boolean] = js.undefined
+  var style: js.UndefOr[String] = js.undefined
+  var useGrouping: js.UndefOr[Boolean] = js.undefined
 }
 
 object NumberFormatOptions {
   @scala.inline
   def apply(
-    currency: java.lang.String = null,
-    currencyDisplay: java.lang.String = null,
-    localeMatcher: java.lang.String = null,
+    currency: String = null,
+    currencyDisplay: String = null,
+    localeMatcher: String = null,
     maximumFractionDigits: Int | Double = null,
     maximumSignificantDigits: Int | Double = null,
     minimumFractionDigits: Int | Double = null,
     minimumIntegerDigits: Int | Double = null,
     minimumSignificantDigits: Int | Double = null,
-    style: java.lang.String = null,
-    useGrouping: js.UndefOr[scala.Boolean] = js.undefined
+    style: String = null,
+    useGrouping: js.UndefOr[Boolean] = js.undefined
   ): NumberFormatOptions = {
     val __obj = js.Dynamic.literal()
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])

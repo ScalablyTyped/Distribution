@@ -1,7 +1,6 @@
 package typings.atAngularCompiler
 
 import typings.atAngularCompiler.srcMlUnderscoreParserAstMod.Node
-import typings.atAngularCompiler.srcMlUnderscoreParserIcuUnderscoreAstUnderscoreExpanderMod.ExpansionResult
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseError
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
 import scala.scalajs.js

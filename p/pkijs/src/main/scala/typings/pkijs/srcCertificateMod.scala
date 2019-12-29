@@ -3,7 +3,6 @@ package typings.pkijs
 import typings.asn1js.asn1jsMod.BitString
 import typings.asn1js.asn1jsMod.Integer
 import typings.asn1js.asn1jsMod.Sequence
-import typings.pkijs.srcCertificateMod.Certificate
 import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import scala.scalajs.js

@@ -1,6 +1,5 @@
 package typings.netmask
 
-import typings.netmask.netmaskMod.Netmask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

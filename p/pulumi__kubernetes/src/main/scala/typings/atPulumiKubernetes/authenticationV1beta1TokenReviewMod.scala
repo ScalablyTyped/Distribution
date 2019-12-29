@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.authenticationV1beta1TokenReviewMod.TokenReview
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.authenticationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.authentication.v1beta1.TokenReviewSpec
 import typings.atPulumiKubernetes.typesOutputMod.authentication.v1beta1.TokenReviewStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
@@ -39,7 +38,7 @@ object authenticationV1beta1TokenReviewMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`authenticationDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[authenticationDotk8sDotioSlashv1beta1] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In

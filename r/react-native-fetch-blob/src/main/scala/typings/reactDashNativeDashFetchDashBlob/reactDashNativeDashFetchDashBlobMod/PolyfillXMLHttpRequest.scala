@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashFetchDashBlob.reactDashNativeDashFetchDashBlobMod
 
-import typings.reactDashNativeDashFetchDashBlob.reactDashNativeDashFetchDashBlobNumbers.`true`
+import typings.reactDashNativeDashFetchDashBlob.reactDashNativeDashFetchDashBlobBooleans.`true`
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

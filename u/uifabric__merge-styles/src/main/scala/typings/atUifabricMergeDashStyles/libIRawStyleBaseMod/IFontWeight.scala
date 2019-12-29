@@ -1,14 +1,14 @@
 package typings.atUifabricMergeDashStyles.libIRawStyleBaseMod
 
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`200`
-import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`300`
-import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`400`
-import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`600`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`700`
-import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`800`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`900`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`100`
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`300`
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`400`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`500`
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`600`
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`800`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,35 +54,35 @@ object IFontWeight {
   @scala.inline
   def `200_200`: `200` = this.cast(200)
   @scala.inline
-  def `300`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`300` = this.cast("300")
+  def `300`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`300` = this.cast(300)
   @JSName("300")
   @scala.inline
-  def `300_300`: `300` = this.cast(300)
+  def `300_300`: `300` = this.cast("300")
   @scala.inline
-  def `400`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`400` = this.cast("400")
+  def `400`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`400` = this.cast(400)
   @JSName("400")
   @scala.inline
-  def `400_400`: `400` = this.cast(400)
+  def `400_400`: `400` = this.cast("400")
   @scala.inline
   def `500`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`500` = this.cast(500)
   @JSName("500")
   @scala.inline
   def `500_500`: `500` = this.cast("500")
   @scala.inline
-  def `600`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`600` = this.cast("600")
+  def `600`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`600` = this.cast(600)
   @JSName("600")
   @scala.inline
-  def `600_600`: `600` = this.cast(600)
+  def `600_600`: `600` = this.cast("600")
   @scala.inline
   def `700`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`700` = this.cast("700")
   @JSName("700")
   @scala.inline
   def `700_700`: `700` = this.cast(700)
   @scala.inline
-  def `800`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`800` = this.cast("800")
+  def `800`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`800` = this.cast(800)
   @JSName("800")
   @scala.inline
-  def `800_800`: `800` = this.cast(800)
+  def `800_800`: `800` = this.cast("800")
   @scala.inline
   def `900`: typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`900` = this.cast("900")
   @JSName("900")

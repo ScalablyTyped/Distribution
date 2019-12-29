@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.ISchema")
 @js.native
 class ISchema protected () extends js.Object {
-  var `MSXML2.ISchema_typekey`: ISchema = js.native
+  @JSName("MSXML2.ISchema_typekey")
+  var MSXML2DotISchema_typekey: ISchema = js.native
   @JSName("attributeGroups")
   val attributeGroups_Original: ISchemaItemCollection = js.native
   @JSName("attributes")

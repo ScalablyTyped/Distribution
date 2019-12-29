@@ -5,13 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Target extends js.Object {
-  var documents: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentsTarget
-  ] = js.undefined
+  var documents: js.UndefOr[DocumentsTarget] = js.undefined
   var once: js.UndefOr[Boolean] = js.undefined
-  var query: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.QueryTarget
-  ] = js.undefined
+  var query: js.UndefOr[QueryTarget] = js.undefined
   var readTime: js.UndefOr[String] = js.undefined
   var resumeToken: js.UndefOr[String] = js.undefined
   var targetId: js.UndefOr[Double] = js.undefined
@@ -20,9 +16,9 @@ trait Target extends js.Object {
 object Target {
   @scala.inline
   def apply(
-    documents: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentsTarget = null,
+    documents: DocumentsTarget = null,
     once: js.UndefOr[Boolean] = js.undefined,
-    query: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.QueryTarget = null,
+    query: QueryTarget = null,
     readTime: String = null,
     resumeToken: String = null,
     targetId: Int | Double = null

@@ -19,7 +19,7 @@ trait ChangeEventArgs extends js.Object {
   var isChecked: js.UndefOr[Boolean] = js.undefined
   /** returns the CheckBox model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.CheckBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -32,7 +32,7 @@ object ChangeEventArgs {
     checkState: String = null,
     event: js.Any = null,
     isChecked: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.CheckBox.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ChangeEventArgs = {
     val __obj = js.Dynamic.literal()

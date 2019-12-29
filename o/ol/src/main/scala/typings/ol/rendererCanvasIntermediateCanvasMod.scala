@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.rendererCanvasIntermediateCanvasMod.IntermediateCanvasRenderer
 import typings.ol.transformMod.Transform
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement

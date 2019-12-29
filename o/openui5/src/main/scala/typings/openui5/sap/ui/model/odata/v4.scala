@@ -128,15 +128,11 @@ object v4 extends js.Object {
       * options.
       */
     def this(oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel, sPath: String) = this()
+    def this(oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel, sPath: String, oContext: Context) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context
-    ) = this()
-    def this(
-      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
-      sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       mParameters: js.Any
     ) = this()
     /**
@@ -206,55 +202,51 @@ object v4 extends js.Object {
       * overwrite model query options.
       */
     def this(oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel, sPath: String) = this()
+    def this(oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel, sPath: String, oContext: Context) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context
-    ) = this()
-    def this(
-      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
-      sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter]
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: typings.openui5.sap.ui.model.Filter
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter,
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter,
       vFilters: typings.openui5.sap.ui.model.Filter
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
       mParameters: js.Any
@@ -262,7 +254,7 @@ object v4 extends js.Object {
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: typings.openui5.sap.ui.model.Filter,
       mParameters: js.Any
@@ -270,7 +262,7 @@ object v4 extends js.Object {
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter,
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
       mParameters: js.Any
@@ -278,7 +270,7 @@ object v4 extends js.Object {
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter,
       vFilters: typings.openui5.sap.ui.model.Filter,
       mParameters: js.Any
@@ -300,7 +292,7 @@ object v4 extends js.Object {
       */
     def filter(vFilters: typings.openui5.sap.ui.model.Filter): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def filter(vFilters: typings.openui5.sap.ui.model.Filter, sFilterType: TypeofFilterType): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
-    def getContexts(iStart: Double, iLength: Double, iMaximumPrefetchSize: Double): js.Array[typings.openui5.sap.ui.model.odata.v4.Context] = js.native
+    def getContexts(iStart: Double, iLength: Double, iMaximumPrefetchSize: Double): js.Array[Context] = js.native
     /**
       * Returns <code>true</code> if the binding has pending changes, meaning updates via two-waybinding
       * that have not yet been sent to the server.
@@ -514,65 +506,60 @@ object v4 extends js.Object {
       * @param mParameters The parameters
       */
     def this(mParameters: js.Any) = this()
-    def bindContext(sPath: String, oContext: typings.openui5.sap.ui.model.odata.v4.Context): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding = js.native
-    def bindContext(sPath: String, oContext: typings.openui5.sap.ui.model.odata.v4.Context, mParameters: js.Any): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding = js.native
-    def bindList(sPath: String, oContext: typings.openui5.sap.ui.model.odata.v4.Context): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
-    def bindList(sPath: String, oContext: typings.openui5.sap.ui.model.odata.v4.Context, vSorters: js.Array[Sorter]): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
+    def bindContext(sPath: String, oContext: Context): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding = js.native
+    def bindContext(sPath: String, oContext: Context, mParameters: js.Any): typings.openui5.sap.ui.model.odata.v4.ODataContextBinding = js.native
+    def bindList(sPath: String, oContext: Context): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
+    def bindList(sPath: String, oContext: Context, vSorters: js.Array[Sorter]): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def bindList(
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def bindList(
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
       mParameters: js.Any
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def bindList(
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: typings.openui5.sap.ui.model.Filter
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def bindList(
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: js.Array[Sorter],
       vFilters: typings.openui5.sap.ui.model.Filter,
       mParameters: js.Any
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
-    def bindList(sPath: String, oContext: typings.openui5.sap.ui.model.odata.v4.Context, vSorters: Sorter): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
+    def bindList(sPath: String, oContext: Context, vSorters: Sorter): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def bindList(
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter,
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def bindList(
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter,
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
       mParameters: js.Any
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
+    def bindList(sPath: String, oContext: Context, vSorters: Sorter, vFilters: typings.openui5.sap.ui.model.Filter): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
     def bindList(
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
-      vSorters: Sorter,
-      vFilters: typings.openui5.sap.ui.model.Filter
-    ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
-    def bindList(
-      sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       vSorters: Sorter,
       vFilters: typings.openui5.sap.ui.model.Filter,
       mParameters: js.Any
     ): typings.openui5.sap.ui.model.odata.v4.ODataListBinding = js.native
-    def bindProperty(sPath: String, oContext: typings.openui5.sap.ui.model.odata.v4.Context): typings.openui5.sap.ui.model.odata.v4.ODataPropertyBinding = js.native
-    def bindProperty(sPath: String, oContext: typings.openui5.sap.ui.model.odata.v4.Context, mParameters: js.Any): typings.openui5.sap.ui.model.odata.v4.ODataPropertyBinding = js.native
+    def bindProperty(sPath: String, oContext: Context): typings.openui5.sap.ui.model.odata.v4.ODataPropertyBinding = js.native
+    def bindProperty(sPath: String, oContext: Context, mParameters: js.Any): typings.openui5.sap.ui.model.odata.v4.ODataPropertyBinding = js.native
     /**
       * Method not supported
       * @since 1.37.0
@@ -616,7 +603,7 @@ object v4 extends js.Object {
       * success, or rejected with an instance of <code>Error</code> in case of failure, e.g. when  the given
       * context does not point to an entity
       */
-    def requestCanonicalPath(oEntityContext: typings.openui5.sap.ui.model.odata.v4.Context): JQueryPromise[_] = js.native
+    def requestCanonicalPath(oEntityContext: Context): JQueryPromise[_] = js.native
     /**
       * Resets all property changes associated with the given application group ID which have notyet been
       * submitted via {@link #submitBatch}.
@@ -659,15 +646,11 @@ object v4 extends js.Object {
       * specified for the binding overwrite model query options.
       */
     def this(oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel, sPath: String) = this()
+    def this(oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel, sPath: String, oContext: Context) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context
-    ) = this()
-    def this(
-      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
-      sPath: String,
-      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      oContext: Context,
       mParameters: js.Any
     ) = this()
     /**

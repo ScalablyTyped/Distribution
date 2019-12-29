@@ -17,13 +17,13 @@ object ExecFileSyncOptionsWithStringEncoding {
   @scala.inline
   def apply(
     encoding: BufferEncoding,
-    cwd: java.lang.String = null,
+    cwd: String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
-    input: java.lang.String | ArrayBufferView = null,
+    input: String | ArrayBufferView = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
-    shell: Boolean | java.lang.String = null,
+    shell: Boolean | String = null,
     stdio: StdioOptions = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,

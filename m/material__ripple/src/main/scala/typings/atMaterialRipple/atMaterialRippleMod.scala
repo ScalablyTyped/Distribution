@@ -1,8 +1,6 @@
 package typings.atMaterialRipple
 
 import typings.atMaterialRipple.adapterMod.MDCRippleAdapter
-import typings.atMaterialRipple.atMaterialRippleMod.MDCRipple
-import typings.atMaterialRipple.atMaterialRippleMod.RippleCapableSurface
 import typings.atMaterialRipple.foundationMod.default
 import typings.std.ClientRect
 import typings.std.Element

@@ -1,19 +1,6 @@
 package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.Position.BOTTOM_CENTER
-import typings.navermaps.naver.maps.Position.BOTTOM_LEFT
-import typings.navermaps.naver.maps.Position.BOTTOM_RIGHT
-import typings.navermaps.naver.maps.Position.CENTER
-import typings.navermaps.naver.maps.Position.LEFT_BOTTOM
-import typings.navermaps.naver.maps.Position.LEFT_CENTER
-import typings.navermaps.naver.maps.Position.LEFT_TOP
-import typings.navermaps.naver.maps.Position.RIGHT_BOTTOM
-import typings.navermaps.naver.maps.Position.RIGHT_CENTER
-import typings.navermaps.naver.maps.Position.RIGHT_TOP
-import typings.navermaps.naver.maps.Position.TOP_CENTER
-import typings.navermaps.naver.maps.Position.TOP_LEFT
-import typings.navermaps.naver.maps.Position.TOP_RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

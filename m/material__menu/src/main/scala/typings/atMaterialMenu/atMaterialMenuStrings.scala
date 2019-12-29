@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 object atMaterialMenuStrings {
   @js.native
-  sealed trait `DOTmdc-menu__items` extends js.Object
+  sealed trait `Dotmdc-menu__items` extends js.Object
   
   @js.native
-  sealed trait `MDCMenu:cancel` extends js.Object
+  sealed trait MDCMenuColoncancel extends js.Object
   
   @js.native
-  sealed trait `MDCMenu:selected` extends js.Object
+  sealed trait MDCMenuColonselected extends js.Object
   
   @js.native
   sealed trait `aria-disabled` extends js.Object
@@ -33,11 +33,11 @@ object atMaterialMenuStrings {
   sealed trait `mdc-menu--open` extends js.Object
   
   @scala.inline
-  def `DOTmdc-menu__items`: `DOTmdc-menu__items` = ".mdc-menu__items".asInstanceOf[`DOTmdc-menu__items`]
+  def `Dotmdc-menu__items`: `Dotmdc-menu__items` = ".mdc-menu__items".asInstanceOf[`Dotmdc-menu__items`]
   @scala.inline
-  def `MDCMenu:cancel`: `MDCMenu:cancel` = "MDCMenu:cancel".asInstanceOf[`MDCMenu:cancel`]
+  def MDCMenuColoncancel: MDCMenuColoncancel = "MDCMenu:cancel".asInstanceOf[MDCMenuColoncancel]
   @scala.inline
-  def `MDCMenu:selected`: `MDCMenu:selected` = "MDCMenu:selected".asInstanceOf[`MDCMenu:selected`]
+  def MDCMenuColonselected: MDCMenuColonselected = "MDCMenu:selected".asInstanceOf[MDCMenuColonselected]
   @scala.inline
   def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
   @scala.inline

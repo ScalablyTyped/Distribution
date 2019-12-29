@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.Buffer
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

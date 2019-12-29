@@ -1,9 +1,6 @@
 package typings.ol.interactionDragBoxMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.interactionDragBoxMod.DragBoxEventType.BOXDRAG
-import typings.ol.interactionDragBoxMod.DragBoxEventType.BOXEND
-import typings.ol.interactionDragBoxMod.DragBoxEventType.BOXSTART
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

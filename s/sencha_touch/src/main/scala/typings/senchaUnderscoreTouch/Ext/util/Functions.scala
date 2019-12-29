@@ -20,7 +20,7 @@ object Functions extends js.Object {
   		*/
   def alias(): js.Any = js.native
   def alias(`object`: js.Any): js.Any = js.native
-  def alias(`object`: js.Any, methodName: java.lang.String): js.Any = js.native
+  def alias(`object`: js.Any, methodName: String): js.Any = js.native
   /** [Method] Create a new function from the provided fn change this to the provided scope optionally overrides arguments for the
   		* @param fn Function The function to delegate.
   		* @param scope Object The scope (this reference) in which the function is executed. If omitted, defaults to the browser window.
@@ -133,9 +133,9 @@ object Functions extends js.Object {
   		*/
   def interceptAfter(): js.Any = js.native
   def interceptAfter(`object`: js.Any): js.Any = js.native
-  def interceptAfter(`object`: js.Any, methodName: java.lang.String): js.Any = js.native
-  def interceptAfter(`object`: js.Any, methodName: java.lang.String, fn: js.Any): js.Any = js.native
-  def interceptAfter(`object`: js.Any, methodName: java.lang.String, fn: js.Any, scope: js.Any): js.Any = js.native
+  def interceptAfter(`object`: js.Any, methodName: String): js.Any = js.native
+  def interceptAfter(`object`: js.Any, methodName: String, fn: js.Any): js.Any = js.native
+  def interceptAfter(`object`: js.Any, methodName: String, fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Adds behavior to an existing method that is executed before the original behavior of the function
   		* @param object Object The target object
   		* @param methodName String Name of the method to override
@@ -145,9 +145,9 @@ object Functions extends js.Object {
   		*/
   def interceptBefore(): js.Any = js.native
   def interceptBefore(`object`: js.Any): js.Any = js.native
-  def interceptBefore(`object`: js.Any, methodName: java.lang.String): js.Any = js.native
-  def interceptBefore(`object`: js.Any, methodName: java.lang.String, fn: js.Any): js.Any = js.native
-  def interceptBefore(`object`: js.Any, methodName: java.lang.String, fn: js.Any, scope: js.Any): js.Any = js.native
+  def interceptBefore(`object`: js.Any, methodName: String): js.Any = js.native
+  def interceptBefore(`object`: js.Any, methodName: String, fn: js.Any): js.Any = js.native
+  def interceptBefore(`object`: js.Any, methodName: String, fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Create a new function from the provided fn the arguments of which are pre set to args
   		* @param fn Function The original function.
   		* @param args Array The arguments to pass to new callback.

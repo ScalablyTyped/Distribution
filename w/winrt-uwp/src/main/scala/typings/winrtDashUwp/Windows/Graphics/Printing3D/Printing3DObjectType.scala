@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.model
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.others
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.support
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

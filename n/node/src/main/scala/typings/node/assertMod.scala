@@ -1,6 +1,8 @@
 package typings.node
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.node.nodeStrings.ERR_ASSERTION
+import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +18,10 @@ object assertMod extends js.Object {
     var code: ERR_ASSERTION = js.native
     var expected: js.Any = js.native
     var generatedMessage: Boolean = js.native
-    var message: java.lang.String = js.native
-    var name: java.lang.String = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     var operator: java.lang.String = js.native
   }
   
@@ -101,49 +105,26 @@ object assertMod extends js.Object {
   def ok(value: js.Any, message: java.lang.String): Unit = js.native
   def ok(value: js.Any, message: Error): Unit = js.native
   def rejects(block: js.Function0[js.Promise[_]]): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: js.Function): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: js.Function, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: js.Function, message: Error): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: js.Object): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: js.Object, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: js.Object, message: Error): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: Error, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: Error, message: Error): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: RegExp): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: RegExp, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Function0[js.Promise[_]], error: RegExp, message: Error): js.Promise[Unit] = js.native
+  def rejects(block: js.Function0[js.Promise[_]], error: AssertPredicate): js.Promise[Unit] = js.native
+  def rejects(block: js.Function0[js.Promise[_]], error: AssertPredicate, message: java.lang.String): js.Promise[Unit] = js.native
+  def rejects(block: js.Function0[js.Promise[_]], error: AssertPredicate, message: Error): js.Promise[Unit] = js.native
   def rejects(block: js.Function0[js.Promise[_]], message: java.lang.String): js.Promise[Unit] = js.native
   def rejects(block: js.Function0[js.Promise[_]], message: Error): js.Promise[Unit] = js.native
   def rejects(block: js.Promise[_]): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: js.Function): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: js.Function, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: js.Function, message: Error): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: js.Object): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: js.Object, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: js.Object, message: Error): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: Error, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: Error, message: Error): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: RegExp): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: RegExp, message: java.lang.String): js.Promise[Unit] = js.native
-  def rejects(block: js.Promise[_], error: RegExp, message: Error): js.Promise[Unit] = js.native
+  def rejects(block: js.Promise[_], error: AssertPredicate): js.Promise[Unit] = js.native
+  def rejects(block: js.Promise[_], error: AssertPredicate, message: java.lang.String): js.Promise[Unit] = js.native
+  def rejects(block: js.Promise[_], error: AssertPredicate, message: Error): js.Promise[Unit] = js.native
   def rejects(block: js.Promise[_], message: java.lang.String): js.Promise[Unit] = js.native
   def rejects(block: js.Promise[_], message: Error): js.Promise[Unit] = js.native
   def strictEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def strictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def strictEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
   def throws(block: js.Function0[_]): Unit = js.native
-  def throws(block: js.Function0[_], error: js.Function): Unit = js.native
-  def throws(block: js.Function0[_], error: js.Function, message: java.lang.String): Unit = js.native
-  def throws(block: js.Function0[_], error: js.Function, message: Error): Unit = js.native
-  def throws(block: js.Function0[_], error: js.Object): Unit = js.native
-  def throws(block: js.Function0[_], error: js.Object, message: java.lang.String): Unit = js.native
-  def throws(block: js.Function0[_], error: js.Object, message: Error): Unit = js.native
-  def throws(block: js.Function0[_], error: Error, message: java.lang.String): Unit = js.native
-  def throws(block: js.Function0[_], error: Error, message: Error): Unit = js.native
-  def throws(block: js.Function0[_], error: RegExp): Unit = js.native
-  def throws(block: js.Function0[_], error: RegExp, message: java.lang.String): Unit = js.native
-  def throws(block: js.Function0[_], error: RegExp, message: Error): Unit = js.native
+  def throws(block: js.Function0[_], error: AssertPredicate): Unit = js.native
+  def throws(block: js.Function0[_], error: AssertPredicate, message: java.lang.String): Unit = js.native
+  def throws(block: js.Function0[_], error: AssertPredicate, message: Error): Unit = js.native
   def throws(block: js.Function0[_], message: java.lang.String): Unit = js.native
   def throws(block: js.Function0[_], message: Error): Unit = js.native
+  type AssertPredicate = RegExp | Instantiable0[js.Object] | (js.Function1[/* thrown */ js.Any, Boolean]) | js.Object | Error
 }
 

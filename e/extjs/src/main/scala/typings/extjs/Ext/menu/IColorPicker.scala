@@ -11,7 +11,7 @@ trait IColorPicker extends IMenu {
   /** [Property] (Ext.picker.Color) */
   var picker: js.UndefOr[IColor] = js.undefined
   /** [Config Option] (String) */
-  var pickerId: js.UndefOr[java.lang.String] = js.undefined
+  var pickerId: js.UndefOr[String] = js.undefined
 }
 
 object IColorPicker {
@@ -20,7 +20,7 @@ object IColorPicker {
     IMenu: IMenu = null,
     hideOnClick: js.UndefOr[Boolean] = js.undefined,
     picker: IColor = null,
-    pickerId: java.lang.String = null
+    pickerId: String = null
   ): IColorPicker = {
     val __obj = js.Dynamic.literal()
     if (IMenu != null) js.Dynamic.global.Object.assign(__obj, IMenu)

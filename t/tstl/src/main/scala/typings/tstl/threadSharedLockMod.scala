@@ -5,9 +5,6 @@ import typings.std.Partial
 import typings.std.Pick
 import typings.tstl.baseThreadUnderscoreISharedLockableMod._ISharedLockable
 import typings.tstl.baseThreadUnderscoreISharedTimedLockableMod._ISharedTimedLockable
-import typings.tstl.threadSharedLockMod.Closure
-import typings.tstl.threadSharedLockMod.IMutex
-import typings.tstl.threadSharedLockMod.SharedLock
 import typings.tstl.tstlStrings.lock_shared
 import typings.tstl.tstlStrings.try_lock_shared
 import typings.tstl.tstlStrings.try_lock_shared_for

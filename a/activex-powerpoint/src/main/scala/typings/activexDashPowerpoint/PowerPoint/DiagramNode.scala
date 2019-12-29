@@ -16,7 +16,8 @@ class DiagramNode protected () extends js.Object {
   val Diagram: typings.activexDashPowerpoint.PowerPoint.Diagram = js.native
   var Layout: MsoOrgChartLayoutType = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.DiagramNode_typekey`: DiagramNode = js.native
+  @JSName("PowerPoint.DiagramNode_typekey")
+  var PowerPointDotDiagramNode_typekey: DiagramNode = js.native
   val Root: DiagramNode = js.native
   val Shape: typings.activexDashPowerpoint.PowerPoint.Shape = js.native
   val TextShape: typings.activexDashPowerpoint.PowerPoint.Shape = js.native

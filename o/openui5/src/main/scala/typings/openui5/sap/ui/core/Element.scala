@@ -1,5 +1,6 @@
 package typings.openui5.sap.ui.core
 
+import typings.jquery.JQueryStatic
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.model.Binding
 import scala.scalajs.js
@@ -84,7 +85,7 @@ class Element () extends ManagedObject {
     * @returns The jQuery wrapped element's DOM reference
     */
   @JSName("$")
-  def $(sSuffix: String): typings.jquery.JQueryStatic = js.native
+  def $(sSuffix: String): JQueryStatic = js.native
   /**
     * Adds some customData to the aggregation <code>customData</code>.
     * @param oCustomData the customData to add; if empty, nothing is inserted

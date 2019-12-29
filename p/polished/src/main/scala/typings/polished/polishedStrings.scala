@@ -10,46 +10,46 @@ import scala.scalajs.js.annotation._
 
 object polishedStrings {
   @js.native
-  sealed trait `!` extends js.Object
+  sealed trait `-_` extends js.Object
   
   @js.native
-  sealed trait `(` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait `)` extends js.Object
+  sealed trait BackslashAsterisk extends js.Object
   
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait BackslashLeftparenthesis extends js.Object
   
   @js.native
-  sealed trait `+` extends js.Object
+  sealed trait BackslashPlussign extends js.Object
   
   @js.native
-  sealed trait `,` extends js.Object
+  sealed trait BackslashRightparenthesis extends js.Object
   
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait `Backslash^` extends js.Object
   
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait Comma extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHBACKSLASH(` extends js.Object
+  sealed trait Exclamationmark extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHBACKSLASH)` extends js.Object
+  sealed trait Leftparenthesis extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHBACKSLASH*` extends js.Object
+  sealed trait Plussign extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHBACKSLASH+` extends js.Object
+  sealed trait Rightparenthesis extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHBACKSLASH^` extends js.Object
+  sealed trait Slash extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
   
   @js.native
   sealed trait active extends _InteractionState
@@ -184,13 +184,13 @@ object polishedStrings {
   sealed trait max extends js.Object
   
   @js.native
-  sealed trait maxBACKSLASHBACKSLASHb extends js.Object
+  sealed trait maxBackslashb extends js.Object
   
   @js.native
   sealed trait min extends js.Object
   
   @js.native
-  sealed trait minBACKSLASHBACKSLASHb extends js.Object
+  sealed trait minBackslashb extends js.Object
   
   @js.native
   sealed trait minorSecond extends _ModularScaleRatio
@@ -226,7 +226,7 @@ object polishedStrings {
   sealed trait sqrt extends js.Object
   
   @js.native
-  sealed trait sqrtBACKSLASHBACKSLASHb extends js.Object
+  sealed trait sqrtBackslashb extends js.Object
   
   @js.native
   sealed trait top extends SideKeyword
@@ -238,33 +238,33 @@ object polishedStrings {
   sealed trait topRight extends SideKeyword
   
   @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `(`: `(` = "(".asInstanceOf[`(`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `)`: `)` = ")".asInstanceOf[`)`]
+  def BackslashAsterisk: BackslashAsterisk = "\\*".asInstanceOf[BackslashAsterisk]
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def BackslashLeftparenthesis: BackslashLeftparenthesis = "\\(".asInstanceOf[BackslashLeftparenthesis]
   @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
+  def BackslashPlussign: BackslashPlussign = "\\+".asInstanceOf[BackslashPlussign]
   @scala.inline
-  def `,`: `,` = ",".asInstanceOf[`,`]
+  def BackslashRightparenthesis: BackslashRightparenthesis = "\\)".asInstanceOf[BackslashRightparenthesis]
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def `Backslash^`: `Backslash^` = "\\^".asInstanceOf[`Backslash^`]
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def Comma: Comma = ",".asInstanceOf[Comma]
   @scala.inline
-  def `BACKSLASHBACKSLASH(`: `BACKSLASHBACKSLASH(` = "\\(".asInstanceOf[`BACKSLASHBACKSLASH(`]
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   @scala.inline
-  def `BACKSLASHBACKSLASH)`: `BACKSLASHBACKSLASH)` = "\\)".asInstanceOf[`BACKSLASHBACKSLASH)`]
+  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   @scala.inline
-  def `BACKSLASHBACKSLASH*`: `BACKSLASHBACKSLASH*` = "\\*".asInstanceOf[`BACKSLASHBACKSLASH*`]
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
   @scala.inline
-  def `BACKSLASHBACKSLASH+`: `BACKSLASHBACKSLASH+` = "\\+".asInstanceOf[`BACKSLASHBACKSLASH+`]
+  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   @scala.inline
-  def `BACKSLASHBACKSLASH^`: `BACKSLASHBACKSLASH^` = "\\^".asInstanceOf[`BACKSLASHBACKSLASH^`]
+  def Slash: Slash = "/".asInstanceOf[Slash]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
@@ -354,11 +354,11 @@ object polishedStrings {
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
-  def maxBACKSLASHBACKSLASHb: maxBACKSLASHBACKSLASHb = "max\\b".asInstanceOf[maxBACKSLASHBACKSLASHb]
+  def maxBackslashb: maxBackslashb = "max\\b".asInstanceOf[maxBackslashb]
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
-  def minBACKSLASHBACKSLASHb: minBACKSLASHBACKSLASHb = "min\\b".asInstanceOf[minBACKSLASHBACKSLASHb]
+  def minBackslashb: minBackslashb = "min\\b".asInstanceOf[minBackslashb]
   @scala.inline
   def minorSecond: minorSecond = "minorSecond".asInstanceOf[minorSecond]
   @scala.inline
@@ -382,7 +382,7 @@ object polishedStrings {
   @scala.inline
   def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
   @scala.inline
-  def sqrtBACKSLASHBACKSLASHb: sqrtBACKSLASHBACKSLASHb = "sqrt\\b".asInstanceOf[sqrtBACKSLASHBACKSLASHb]
+  def sqrtBackslashb: sqrtBackslashb = "sqrt\\b".asInstanceOf[sqrtBackslashb]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

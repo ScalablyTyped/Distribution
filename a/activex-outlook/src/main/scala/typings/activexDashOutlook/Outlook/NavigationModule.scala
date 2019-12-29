@@ -11,7 +11,8 @@ class NavigationModule protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Name: String = js.native
   val NavigationModuleType: OlNavigationModuleType = js.native
-  var `Outlook.NavigationModule_typekey`: NavigationModule = js.native
+  @JSName("Outlook.NavigationModule_typekey")
+  var OutlookDotNavigationModule_typekey: NavigationModule = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

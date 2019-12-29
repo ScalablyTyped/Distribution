@@ -15,7 +15,8 @@ class DownBars protected () extends js.Object {
   val Interior: typings.activexDashPowerpoint.PowerPoint.Interior = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.DownBars_typekey`: DownBars = js.native
+  @JSName("PowerPoint.DownBars_typekey")
+  var PowerPointDotDownBars_typekey: DownBars = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native
 }

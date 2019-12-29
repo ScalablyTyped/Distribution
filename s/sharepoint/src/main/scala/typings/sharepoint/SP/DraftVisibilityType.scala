@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.DraftVisibilityType.approver
-import typings.sharepoint.SP.DraftVisibilityType.author
-import typings.sharepoint.SP.DraftVisibilityType.reader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

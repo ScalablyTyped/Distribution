@@ -1,17 +1,6 @@
 package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.unified.CalendarDayType.None
-import typings.openui5.sap.ui.unified.CalendarDayType.Type01
-import typings.openui5.sap.ui.unified.CalendarDayType.Type02
-import typings.openui5.sap.ui.unified.CalendarDayType.Type03
-import typings.openui5.sap.ui.unified.CalendarDayType.Type04
-import typings.openui5.sap.ui.unified.CalendarDayType.Type05
-import typings.openui5.sap.ui.unified.CalendarDayType.Type06
-import typings.openui5.sap.ui.unified.CalendarDayType.Type07
-import typings.openui5.sap.ui.unified.CalendarDayType.Type08
-import typings.openui5.sap.ui.unified.CalendarDayType.Type09
-import typings.openui5.sap.ui.unified.CalendarDayType.Type10
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

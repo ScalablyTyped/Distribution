@@ -12,9 +12,9 @@ trait Reference extends Query {
   var root: Reference = js.native
   def child(path: String): Reference = js.native
   def onDisconnect(): OnDisconnect = js.native
-  def push(): ThenableReference = js.native
-  def push(value: js.Any): ThenableReference = js.native
-  def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): ThenableReference = js.native
+  def push(): Reference = js.native
+  def push(value: js.Any): Reference = js.native
+  def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): Reference = js.native
   def remove(): js.Promise[_] = js.native
   def remove(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
   def set(value: js.Any): js.Promise[_] = js.native

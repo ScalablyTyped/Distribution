@@ -20,6 +20,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TwoDotDash
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Wave
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.WaveDouble
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.WaveHeavy
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -104,7 +105,7 @@ trait FontData extends js.Object {
     * [Api set: WordApi 1.1]
     */
   var underline: js.UndefOr[
-    UnderlineType | Mixed | None | Hidden | DotLine | Single | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Word | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Double | Thick | Dotted | DottedHeavy | DashLine | DashLineHeavy | DashLineLong | DashLineLongHeavy | DotDashLine | DotDashLineHeavy | TwoDotDashLine | TwoDotDashLineHeavy | Wave | WaveHeavy | WaveDouble
+    UnderlineType | Mixed | None | Hidden | DotLine | Single | Word | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Double | Thick | Dotted | DottedHeavy | DashLine | DashLineHeavy | DashLineLong | DashLineLongHeavy | DotDashLine | DotDashLineHeavy | TwoDotDashLine | TwoDotDashLineHeavy | Wave | WaveHeavy | WaveDouble
   ] = js.undefined
 }
 
@@ -121,7 +122,7 @@ object FontData {
     strikeThrough: js.UndefOr[Boolean] = js.undefined,
     subscript: js.UndefOr[Boolean] = js.undefined,
     superscript: js.UndefOr[Boolean] = js.undefined,
-    underline: UnderlineType | Mixed | None | Hidden | DotLine | Single | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Word | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Double | Thick | Dotted | DottedHeavy | DashLine | DashLineHeavy | DashLineLong | DashLineLongHeavy | DotDashLine | DotDashLineHeavy | TwoDotDashLine | TwoDotDashLineHeavy | Wave | WaveHeavy | WaveDouble = null
+    underline: UnderlineType | Mixed | None | Hidden | DotLine | Single | Word | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Double | Thick | Dotted | DottedHeavy | DashLine | DashLineHeavy | DashLineLong | DashLineLongHeavy | DotDashLine | DotDashLineHeavy | TwoDotDashLine | TwoDotDashLineHeavy | Wave | WaveHeavy | WaveDouble = null
   ): FontData = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])

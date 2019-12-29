@@ -3,6 +3,10 @@ package typings.mendixmodelsdk.mendixmodelsdkMod.pages
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.ShowPageAction
 import typings.mendixmodelsdk.distGenNavigationMod.navigation.NavigationProfile
+import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +19,12 @@ import scala.scalajs.js.annotation._
 class PageSettings protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.pages.PageSettings {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -29,7 +33,7 @@ class PageSettings protected ()
 @js.native
 object PageSettings extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

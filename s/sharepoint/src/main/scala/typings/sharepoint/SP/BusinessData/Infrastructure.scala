@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.BusinessData
 
-import typings.sharepoint.SP.BusinessData.Infrastructure.ExternalSubscriptionStore
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.ClientRuntimeContext
 import typings.sharepoint.SP.Web

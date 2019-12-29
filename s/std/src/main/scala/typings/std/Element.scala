@@ -1,8 +1,6 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.std.stdStrings.`http://wwwDOTw3DOTorg/1999/xhtml`
-import typings.std.stdStrings.`http://wwwDOTw3DOTorg/2000/svg`
 import typings.std.stdStrings.`object`
 import typings.std.stdStrings.`var`
 import typings.std.stdStrings.a
@@ -94,6 +92,8 @@ import typings.std.stdStrings.header
 import typings.std.stdStrings.hgroup
 import typings.std.stdStrings.hr
 import typings.std.stdStrings.html
+import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
+import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
 import typings.std.stdStrings.i
 import typings.std.stdStrings.iframe
 import typings.std.stdStrings.image
@@ -637,9 +637,9 @@ trait Element
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: `http://wwwDOTw3DOTorg/1999/xhtml`, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")

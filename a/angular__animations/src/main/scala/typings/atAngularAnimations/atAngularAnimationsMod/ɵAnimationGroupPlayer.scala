@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/animations", "ɵAnimationGroupPlayer")
+@JSImport("@angular/animations", "\u0275AnimationGroupPlayer")
 @js.native
 class ɵAnimationGroupPlayer protected () extends AnimationPlayer {
   def this(_players: js.Array[AnimationPlayer]) = this()

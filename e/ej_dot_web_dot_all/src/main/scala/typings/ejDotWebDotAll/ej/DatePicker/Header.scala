@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.DatePicker
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.DatePicker.Header.Min
-import typings.ejDotWebDotAll.ej.DatePicker.Header.None
-import typings.ejDotWebDotAll.ej.DatePicker.Header.Short
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

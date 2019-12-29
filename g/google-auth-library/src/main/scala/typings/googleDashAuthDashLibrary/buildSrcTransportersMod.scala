@@ -4,7 +4,6 @@ import typings.gaxios.buildSrcCommonMod.GaxiosOptions
 import typings.gaxios.buildSrcCommonMod.GaxiosPromise
 import typings.gaxios.buildSrcCommonMod.GaxiosResponse
 import typings.gaxios.gaxiosMod.GaxiosError
-import typings.googleDashAuthDashLibrary.buildSrcTransportersMod.BodyResponseCallback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

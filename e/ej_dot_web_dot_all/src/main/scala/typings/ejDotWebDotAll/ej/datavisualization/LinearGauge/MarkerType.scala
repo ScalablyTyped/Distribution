@@ -1,17 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Diamond
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Ellipse
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Pentagon
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Pointer
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.RoundedRectangle
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Star
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Trapezoid
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Triangle
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Wedge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,10 +83,7 @@ object MarkerType extends js.Object {
   object RoundedRectangle extends TopLevel[RoundedRectangle with Double]
   
   /* 7 */ @js.native
-  object Slider
-    extends TopLevel[
-          typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.MarkerType.Slider with Double
-        ]
+  object Slider extends TopLevel[Slider with Double]
   
   /* 6 */ @js.native
   object Star extends TopLevel[Star with Double]

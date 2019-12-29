@@ -1,6 +1,5 @@
 package typings.pDashReduce
 
-import typings.pDashReduce.pDashReduceMod.ReducerFunction
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

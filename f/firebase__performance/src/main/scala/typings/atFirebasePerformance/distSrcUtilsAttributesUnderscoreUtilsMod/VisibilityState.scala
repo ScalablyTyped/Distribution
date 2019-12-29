@@ -1,9 +1,6 @@
 package typings.atFirebasePerformance.distSrcUtilsAttributesUnderscoreUtilsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebasePerformance.distSrcUtilsAttributesUnderscoreUtilsMod.VisibilityState.HIDDEN
-import typings.atFirebasePerformance.distSrcUtilsAttributesUnderscoreUtilsMod.VisibilityState.UNKNOWN
-import typings.atFirebasePerformance.distSrcUtilsAttributesUnderscoreUtilsMod.VisibilityState.VISIBLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

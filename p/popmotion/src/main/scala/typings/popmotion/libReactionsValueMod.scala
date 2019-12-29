@@ -5,11 +5,6 @@ import typings.framesync.libTypesMod.FrameData
 import typings.framesync.libTypesMod.Process
 import typings.popmotion.libObserverTypesMod.ObserverProps
 import typings.popmotion.libReactionsMod.BaseMulticast
-import typings.popmotion.libReactionsValueMod.Value
-import typings.popmotion.libReactionsValueMod.ValueList
-import typings.popmotion.libReactionsValueMod.ValueMap
-import typings.popmotion.libReactionsValueMod.ValueProps
-import typings.popmotion.libReactionsValueMod.ValueReaction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

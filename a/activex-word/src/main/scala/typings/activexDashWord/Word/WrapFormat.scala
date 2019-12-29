@@ -17,6 +17,7 @@ class WrapFormat protected () extends js.Object {
   val Parent: js.Any = js.native
   var Side: WdWrapSideType = js.native
   var Type: WdWrapType = js.native
-  var `Word.WrapFormat_typekey`: WrapFormat = js.native
+  @JSName("Word.WrapFormat_typekey")
+  var WordDotWrapFormat_typekey: WrapFormat = js.native
 }
 

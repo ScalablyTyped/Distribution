@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵɵproperty")
+@JSImport("@angular/core", "\u0275\u0275property")
 @js.native
 object ɵɵproperty extends js.Object {
   def apply[T](propName: String, value: T): TsickleIssue1009 = js.native

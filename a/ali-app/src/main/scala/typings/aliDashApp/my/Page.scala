@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Page
-  extends typings.aliDashApp.my.Component
+  extends Component
      with /* key */ StringDictionary[js.Any] {
   /**
   		 * 强制更新

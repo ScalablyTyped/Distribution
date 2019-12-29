@@ -1,8 +1,8 @@
 package typings.hexo.hexoMod.extend
 
+import typings.hexo.hexoBooleans.`false`
+import typings.hexo.hexoBooleans.`true`
 import typings.hexo.hexoMod.HexoRendererData
-import typings.hexo.hexoNumbers.`false`
-import typings.hexo.hexoNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

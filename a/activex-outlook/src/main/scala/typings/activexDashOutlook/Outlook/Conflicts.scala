@@ -10,7 +10,8 @@ class Conflicts protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.Conflicts_typekey`: Conflicts = js.native
+  @JSName("Outlook.Conflicts_typekey")
+  var OutlookDotConflicts_typekey: Conflicts = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def GetFirst(): Conflict = js.native

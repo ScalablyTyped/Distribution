@@ -1,12 +1,6 @@
 package typings.ydnDashDb.ydn.db
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ydnDashDb.ydn.db.EventType.created
-import typings.ydnDashDb.ydn.db.EventType.deleted
-import typings.ydnDashDb.ydn.db.EventType.error
-import typings.ydnDashDb.ydn.db.EventType.fail
-import typings.ydnDashDb.ydn.db.EventType.ready
-import typings.ydnDashDb.ydn.db.EventType.updated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

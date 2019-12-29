@@ -12,7 +12,8 @@ class FormNameRuleCondition protected () extends js.Object {
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: Boolean = js.native
   var FormName: js.Any = js.native
-  var `Outlook.FormNameRuleCondition_typekey`: FormNameRuleCondition = js.native
+  @JSName("Outlook.FormNameRuleCondition_typekey")
+  var OutlookDotFormNameRuleCondition_typekey: FormNameRuleCondition = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

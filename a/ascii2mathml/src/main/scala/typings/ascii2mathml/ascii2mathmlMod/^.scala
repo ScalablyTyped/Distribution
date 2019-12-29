@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ascii2mathml", JSImport.Namespace)
 @js.native
-object ^
-  extends TopLevel[typings.ascii2mathml.ascii2mathmlMod.ascii2mathml]
+object ^ extends TopLevel[ascii2mathml]
 

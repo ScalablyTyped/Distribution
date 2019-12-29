@@ -15,12 +15,8 @@ trait Include extends js.Object {
   @JSName("members")
   var members_Original: Members = js.native
   var ordered: Ordered = js.native
-  def apply(value: String): Assertion = js.native
-  def apply(value: String, message: String): Assertion = js.native
-  def apply(value: Double): Assertion = js.native
-  def apply(value: Double, message: String): Assertion = js.native
-  def apply(value: Object): Assertion = js.native
-  def apply(value: Object, message: String): Assertion = js.native
+  def apply(value: js.Any): Assertion = js.native
+  def apply(value: js.Any, message: String): Assertion = js.native
   def html(html: String): Assertion = js.native
   def keys(keys: String*): Assertion = js.native
   def keys(keys: js.Array[_]): Assertion = js.native

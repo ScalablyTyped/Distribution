@@ -10,7 +10,8 @@ class SeriesLines protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.SeriesLines_typekey`: SeriesLines = js.native
+  @JSName("Excel.SeriesLines_typekey")
+  var ExcelDotSeriesLines_typekey: SeriesLines = js.native
   val Format: ChartFormat = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native

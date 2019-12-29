@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.TextDirection.Default
-import typings.sharepoint.SP.JsGrid.TextDirection.LeftToRight
-import typings.sharepoint.SP.JsGrid.TextDirection.RightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

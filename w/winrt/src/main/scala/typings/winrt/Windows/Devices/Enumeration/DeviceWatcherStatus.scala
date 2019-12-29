@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Enumeration.DeviceWatcherStatus.aborted
-import typings.winrt.Windows.Devices.Enumeration.DeviceWatcherStatus.created
-import typings.winrt.Windows.Devices.Enumeration.DeviceWatcherStatus.enumerationCompleted
-import typings.winrt.Windows.Devices.Enumeration.DeviceWatcherStatus.started
-import typings.winrt.Windows.Devices.Enumeration.DeviceWatcherStatus.stopped
-import typings.winrt.Windows.Devices.Enumeration.DeviceWatcherStatus.stopping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

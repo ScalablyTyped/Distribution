@@ -1,13 +1,6 @@
 package typings.atAngularCommon.atAngularCommonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCommon.atAngularCommonMod.WeekDay.Friday
-import typings.atAngularCommon.atAngularCommonMod.WeekDay.Monday
-import typings.atAngularCommon.atAngularCommonMod.WeekDay.Saturday
-import typings.atAngularCommon.atAngularCommonMod.WeekDay.Sunday
-import typings.atAngularCommon.atAngularCommonMod.WeekDay.Thursday
-import typings.atAngularCommon.atAngularCommonMod.WeekDay.Tuesday
-import typings.atAngularCommon.atAngularCommonMod.WeekDay.Wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

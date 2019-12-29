@@ -2,6 +2,7 @@ package typings.senchaUnderscoreTouch.Ext.form
 
 import typings.senchaUnderscoreTouch.Ext.data.IConnection
 import typings.senchaUnderscoreTouch.Ext.data.IModel
+import typings.senchaUnderscoreTouch.Ext.dom.IElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +17,7 @@ trait IFormPanel
   		* @param newDisabled Object
   		* @returns Ext.form.Panel This form.
   		*/
-  var doSetDisabled: js.UndefOr[
-    js.Function1[
-      /* newDisabled */ js.UndefOr[js.Any], 
-      typings.senchaUnderscoreTouch.Ext.form.IPanel
-    ]
-  ] = js.undefined
+  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], IPanel]] = js.undefined
   /** [Config Option] (Boolean) */
   var enableSubmissionForm: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Object) */
@@ -45,7 +41,7 @@ trait IFormPanel
   /** [Method] Returns the value of method
   		* @returns String
   		*/
-  var getMethod: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of multipartDetection
   		* @returns Boolean
   		*/
@@ -77,7 +73,7 @@ trait IFormPanel
   /** [Method] Returns the value of url
   		* @returns String
   		*/
-  var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns an object containing the value of each field in the form keyed to the field s name
   		* @param enabled Boolean true to return only enabled fields.
   		* @param all Boolean true to return all fields even if they don't have a name configured.
@@ -89,7 +85,7 @@ trait IFormPanel
   /** [Method] Hides a previously shown wait mask See showMask
   		* @returns Ext.form.Panel this
   		*/
-  var hideMask: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.form.IPanel]] = js.undefined
+  var hideMask: js.UndefOr[js.Function0[IPanel]] = js.undefined
   /** [Method] Performs an Ajax or Ext Direct call to load values for this form
   		* @param options Object The configuration when loading this form. The following are the configurations when loading via Ajax only:
   		* @returns Ext.data.Connection The request object.
@@ -99,18 +95,14 @@ trait IFormPanel
   		* @param record Ext.data.Model The model instance.
   		* @returns Ext.form.Panel This form.
   		*/
-  var loadModel: js.UndefOr[
-    js.Function1[/* record */ js.UndefOr[IModel], typings.senchaUnderscoreTouch.Ext.form.IPanel]
-  ] = js.undefined
+  var loadModel: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IPanel]] = js.undefined
   /** [Method] Loads matching fields from a model instance into this form
   		* @param record Ext.data.Model The model instance.
   		* @returns Ext.form.Panel This form.
   		*/
-  var loadRecord: js.UndefOr[
-    js.Function1[/* record */ js.UndefOr[IModel], typings.senchaUnderscoreTouch.Ext.form.IPanel]
-  ] = js.undefined
+  var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IPanel]] = js.undefined
   /** [Config Option] (String) */
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var multipartDetection: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String/String[]) */
@@ -120,7 +112,7 @@ trait IFormPanel
   /** [Method] Resets all fields in the form back to their original values
   		* @returns Ext.form.Panel This form.
   		*/
-  var reset: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.form.IPanel]] = js.undefined
+  var reset: js.UndefOr[js.Function0[IPanel]] = js.undefined
   /** [Method] Sets the value of api
   		* @param api Object The new value.
   		*/
@@ -140,7 +132,7 @@ trait IFormPanel
   /** [Method] Sets the value of method
   		* @param method String The new value.
   		*/
-  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of multipartDetection
   		* @param multipartDetection Boolean The new value.
   		*/
@@ -158,9 +150,7 @@ trait IFormPanel
   		* @returns Ext.form.Panel This form.
   		*/
   @JSName("setRecord")
-  var setRecord_IFormPanel: js.UndefOr[
-    js.Function1[/* record */ js.UndefOr[IModel], typings.senchaUnderscoreTouch.Ext.form.IPanel]
-  ] = js.undefined
+  var setRecord_IFormPanel: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IPanel]] = js.undefined
   /** [Method] Sets the value of standardSubmit
   		* @param standardSubmit Boolean The new value.
   		*/
@@ -180,25 +170,19 @@ trait IFormPanel
   /** [Method] Sets the value of url
   		* @param url String The new value.
   		*/
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the values of form fields in bulk
   		* @param values Object field name => value mapping object.
   		* @returns Ext.form.Panel This form.
   		*/
-  var setValues: js.UndefOr[
-    js.Function1[/* values */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.form.IPanel]
-  ] = js.undefined
+  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], IPanel]] = js.undefined
   /** [Method] Shows a generic custom mask over a designated Element
   		* @param cfg String/Object Either a string message or a configuration object supporting the following options: {  message : 'Please Wait',  cls : 'form-mask' }
   		* @param target Object
   		* @returns Ext.form.Panel This form
   		*/
   var showMask: js.UndefOr[
-    js.Function2[
-      /* cfg */ js.UndefOr[js.Any], 
-      /* target */ js.UndefOr[js.Any], 
-      typings.senchaUnderscoreTouch.Ext.form.IPanel
-    ]
+    js.Function2[/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], IPanel]
   ] = js.undefined
   /** [Config Option] (Boolean) */
   var standardSubmit: js.UndefOr[Boolean] = js.undefined
@@ -214,9 +198,9 @@ trait IFormPanel
   /** [Config Option] (Boolean) */
   var trackResetOnLoad: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.dom.Element) */
-  var waitMsgTarget: js.UndefOr[typings.senchaUnderscoreTouch.Ext.dom.IElement] = js.undefined
+  var waitMsgTarget: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (Ext.XTemplate/String/String[]) */
   var waitTpl: js.UndefOr[js.Any] = js.undefined
 }
@@ -227,14 +211,14 @@ object IFormPanel {
     IPanel: typings.senchaUnderscoreTouch.Ext.IPanel = null,
     api: js.Any = null,
     baseParams: js.Any = null,
-    doSetDisabled: /* newDisabled */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
+    doSetDisabled: /* newDisabled */ js.UndefOr[js.Any] => IPanel = null,
     enableSubmissionForm: js.UndefOr[Boolean] = js.undefined,
     enctype: js.Any = null,
     getApi: () => _ = null,
     getBaseParams: () => _ = null,
     getEnableSubmissionForm: () => Boolean = null,
     getEnctype: () => _ = null,
-    getMethod: () => java.lang.String = null,
+    getMethod: () => String = null,
     getMultipartDetection: () => Boolean = null,
     getParamOrder: () => _ = null,
     getParamsAsHash: () => Boolean = null,
@@ -242,40 +226,40 @@ object IFormPanel {
     getSubmitOnAction: () => _ = null,
     getTimeout: () => Double = null,
     getTrackResetOnLoad: () => Boolean = null,
-    getUrl: () => java.lang.String = null,
+    getUrl: () => String = null,
     getValues: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => _ = null,
-    hideMask: () => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
+    hideMask: () => IPanel = null,
     load: /* options */ js.UndefOr[js.Any] => IConnection = null,
-    loadModel: /* record */ js.UndefOr[IModel] => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
-    loadRecord: /* record */ js.UndefOr[IModel] => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
-    method: java.lang.String = null,
+    loadModel: /* record */ js.UndefOr[IModel] => IPanel = null,
+    loadRecord: /* record */ js.UndefOr[IModel] => IPanel = null,
+    method: String = null,
     multipartDetection: js.UndefOr[Boolean] = js.undefined,
     paramOrder: js.Any = null,
     paramsAsHash: js.UndefOr[Boolean] = js.undefined,
-    reset: () => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
+    reset: () => IPanel = null,
     setApi: /* api */ js.UndefOr[js.Any] => Unit = null,
     setBaseParams: /* baseParams */ js.UndefOr[js.Any] => Unit = null,
     setEnableSubmissionForm: /* enableSubmissionForm */ js.UndefOr[Boolean] => Unit = null,
     setEnctype: /* enctype */ js.UndefOr[js.Any] => Unit = null,
-    setMethod: /* method */ js.UndefOr[java.lang.String] => Unit = null,
+    setMethod: /* method */ js.UndefOr[String] => Unit = null,
     setMultipartDetection: /* multipartDetection */ js.UndefOr[Boolean] => Unit = null,
     setParamOrder: /* paramOrder */ js.UndefOr[js.Any] => Unit = null,
     setParamsAsHash: /* paramsAsHash */ js.UndefOr[Boolean] => Unit = null,
-    setRecord: /* record */ js.UndefOr[IModel] => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
+    setRecord: /* record */ js.UndefOr[IModel] => IPanel = null,
     setStandardSubmit: /* standardSubmit */ js.UndefOr[Boolean] => Unit = null,
     setSubmitOnAction: /* submitOnAction */ js.UndefOr[js.Any] => Unit = null,
     setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
     setTrackResetOnLoad: /* trackResetOnLoad */ js.UndefOr[Boolean] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
-    setValues: /* values */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
-    showMask: (/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
+    setValues: /* values */ js.UndefOr[js.Any] => IPanel = null,
+    showMask: (/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => IPanel = null,
     standardSubmit: js.UndefOr[Boolean] = js.undefined,
     submit: /* options */ js.UndefOr[js.Any] => IConnection = null,
     submitOnAction: js.Any = null,
     timeout: Int | Double = null,
     trackResetOnLoad: js.UndefOr[Boolean] = js.undefined,
-    url: java.lang.String = null,
-    waitMsgTarget: typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    url: String = null,
+    waitMsgTarget: IElement = null,
     waitTpl: js.Any = null
   ): IFormPanel = {
     val __obj = js.Dynamic.literal()

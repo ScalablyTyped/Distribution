@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Gpio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinValue.high
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinValue.low
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.expressDashValidator
 import typings.expressDashValidator.srcBaseMod.FieldInstance
 import typings.expressDashValidator.srcBaseMod.Location
 import typings.expressDashValidator.srcBaseMod.Request
-import typings.expressDashValidator.srcSelectDashFieldsMod.SelectFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

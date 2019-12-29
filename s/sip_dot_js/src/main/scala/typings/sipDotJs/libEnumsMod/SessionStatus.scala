@@ -1,19 +1,6 @@
 package typings.sipDotJs.libEnumsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_1XX_RECEIVED
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_ANSWERED
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_ANSWERED_WAITING_FOR_PRACK
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_CANCELED
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_CONFIRMED
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_EARLY_MEDIA
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_INVITE_RECEIVED
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_INVITE_SENT
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_NULL
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_TERMINATED
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_WAITING_FOR_ACK
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_WAITING_FOR_ANSWER
-import typings.sipDotJs.libEnumsMod.SessionStatus.STATUS_WAITING_FOR_PRACK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

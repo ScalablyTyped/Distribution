@@ -1,6 +1,5 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.srcMlUnderscoreParserHtmlUnderscoreTagsMod.HtmlTagDefinition
 import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagContentType
 import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagDefinition
 import scala.scalajs.js

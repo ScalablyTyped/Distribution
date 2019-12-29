@@ -10,7 +10,7 @@ trait ɵNO_CHANGE extends js.Object {
   var brand: NO_CHANGE
 }
 
-@JSImport("@angular/core", "ɵNO_CHANGE")
+@JSImport("@angular/core", "\u0275NO_CHANGE")
 @js.native
 object ɵNO_CHANGE extends TopLevel[ɵNO_CHANGE]
 

@@ -1,9 +1,6 @@
 package typings.realm.Realm.Sync
 
 import org.scalablytyped.runtime.TopLevel
-import typings.realm.Realm.Sync.ConnectionState.Connected
-import typings.realm.Realm.Sync.ConnectionState.Connecting
-import typings.realm.Realm.Sync.ConnectionState.Disconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

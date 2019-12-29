@@ -9,9 +9,8 @@ package object tracingMod {
 
   /* Rewritten from type alias, can be one of: 
     - `js.undefined`
-    - scala.Nothing
-    - typings.scheduler.schedulerNumbers.`true`
-    - typings.scheduler.schedulerNumbers.`false`
+    - typings.scheduler.schedulerBooleans.`true`
+    - typings.scheduler.schedulerBooleans.`false`
   */
   type EnableSchedulerTracing = js.UndefOr[_EnableSchedulerTracing]
   type IfSchedulerTracing[WhenTrue, WhenFalse] = TypeByBuildFlag[EnableSchedulerTracing, WhenTrue, WhenFalse]

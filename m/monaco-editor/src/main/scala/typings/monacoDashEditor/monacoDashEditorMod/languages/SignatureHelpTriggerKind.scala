@@ -1,9 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.SignatureHelpTriggerKind.ContentChange
-import typings.monacoDashEditor.monacoDashEditorMod.languages.SignatureHelpTriggerKind.Invoke
-import typings.monacoDashEditor.monacoDashEditorMod.languages.SignatureHelpTriggerKind.TriggerCharacter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

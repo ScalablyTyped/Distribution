@@ -1,7 +1,7 @@
 package typings.webpackDashAssetsDashManifest.webpackDashAssetsDashManifestMod
 
 import typings.std.RegExp
-import typings.webpackDashAssetsDashManifest.webpackDashAssetsDashManifestNumbers.`false`
+import typings.webpackDashAssetsDashManifest.webpackDashAssetsDashManifestBooleans.`false`
 import typings.webpackDashAssetsDashManifest.webpackDashAssetsDashManifestStrings.customize
 import scala.scalajs.js
 import scala.scalajs.js.`|`

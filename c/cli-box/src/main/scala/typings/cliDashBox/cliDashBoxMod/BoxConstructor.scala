@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BoxConstructor
-  extends Instantiable2[
+  extends Instantiable1[(/* options */ Options) | (/* options */ String), Box]
+     with Instantiable2[
       (/* options */ Options) | (/* options */ String), 
       (/* text */ String) | (/* text */ Text), 
       Box
-    ]
-     with Instantiable1[(/* options */ Options) | (/* options */ String), Box] {
+    ] {
   var defaults: Anon_Marks = js.native
   def apply(options: String): Box = js.native
   def apply(options: String, text: String): Box = js.native

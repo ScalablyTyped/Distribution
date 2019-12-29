@@ -1,14 +1,14 @@
 package typings.yandexDashMaps
 
-import typings.yandexDashMaps.yandexDashMapsStrings.`yandex#airPanorama`
-import typings.yandexDashMaps.yandexDashMapsStrings.`yandex#panorama`
+import typings.yandexDashMaps.yandexDashMapsStrings.yandexNumbersignairPanorama
+import typings.yandexDashMaps.yandexDashMapsStrings.yandexNumbersignpanorama
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Direction extends js.Object {
   var direction: js.UndefOr[js.Array[Double] | String] = js.undefined
-  var layer: js.UndefOr[`yandex#panorama` | `yandex#airPanorama`] = js.undefined
+  var layer: js.UndefOr[yandexNumbersignpanorama | yandexNumbersignairPanorama] = js.undefined
   var span: js.UndefOr[js.Array[Double] | String] = js.undefined
 }
 
@@ -16,7 +16,7 @@ object Anon_Direction {
   @scala.inline
   def apply(
     direction: js.Array[Double] | String = null,
-    layer: `yandex#panorama` | `yandex#airPanorama` = null,
+    layer: yandexNumbersignpanorama | yandexNumbersignairPanorama = null,
     span: js.Array[Double] | String = null
   ): Anon_Direction = {
     val __obj = js.Dynamic.literal()

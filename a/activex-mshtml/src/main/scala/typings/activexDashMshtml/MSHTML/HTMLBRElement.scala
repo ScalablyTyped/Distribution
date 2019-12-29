@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLBRElement")
 @js.native
 class HTMLBRElement protected () extends js.Object {
-  var `MSHTML.HTMLBRElement_typekey`: HTMLBRElement = js.native
+  @JSName("MSHTML.HTMLBRElement_typekey")
+  var MSHTMLDotHTMLBRElement_typekey: HTMLBRElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

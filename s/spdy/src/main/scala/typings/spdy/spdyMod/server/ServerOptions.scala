@@ -2,11 +2,14 @@ package typings.spdy.spdyMod.server
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.Buffer
-import typings.node.Error
+import typings.node.netMod.Socket
+import typings.node.tlsMod.KeyObject
+import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
 import typings.node.tlsMod.TlsOptions
 import typings.spdy.Anon_Connection
+import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +25,7 @@ object ServerOptions {
   @scala.inline
   def apply(
     ALPNProtocols: (js.Array[String | Uint8Array]) | Uint8Array = null,
-    IncomingMessage: Instantiable1[/* socket */ typings.node.netMod.Socket, typings.node.httpMod.IncomingMessage] = null,
+    IncomingMessage: Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage] = null,
     SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
     ServerResponse: Instantiable1[
       /* req */ typings.node.httpMod.IncomingMessage, 
@@ -38,11 +41,13 @@ object ServerOptions {
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     handshakeTimeout: Int | Double = null,
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    key: String | Buffer | (js.Array[Buffer | js.Object]) = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     maxVersion: SecureVersion = null,
     minVersion: SecureVersion = null,
     passphrase: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
@@ -50,6 +55,7 @@ object ServerOptions {
     secureProtocol: String = null,
     sessionIdContext: String = null,
     sessionTimeout: Int | Double = null,
+    sigalgs: String = null,
     spdy: Anon_Connection = null,
     ticketKeys: Buffer = null
   ): ServerOptions = {
@@ -73,6 +79,8 @@ object ServerOptions {
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
@@ -80,6 +88,7 @@ object ServerOptions {
     if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
     if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (spdy != null) __obj.updateDynamic("spdy")(spdy.asInstanceOf[js.Any])
     if (ticketKeys != null) __obj.updateDynamic("ticketKeys")(ticketKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]

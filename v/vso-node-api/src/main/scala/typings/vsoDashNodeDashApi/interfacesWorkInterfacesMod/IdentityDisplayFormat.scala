@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.IdentityDisplayFormat.AvatarAndFullName
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.IdentityDisplayFormat.AvatarOnly
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.IdentityDisplayFormat.FullName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

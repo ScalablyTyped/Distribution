@@ -1,10 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.FloatingObjectTextWrapSide.Both
-import typings.devexpressDashWeb.FloatingObjectTextWrapSide.Largest
-import typings.devexpressDashWeb.FloatingObjectTextWrapSide.Left
-import typings.devexpressDashWeb.FloatingObjectTextWrapSide.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

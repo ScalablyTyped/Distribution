@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCRFindTextAction.OCRFT_HIGHLIGHT
-import typings.dwt.EnumDWT_OCRFindTextAction.OCRFT_MARKFORREDACT
-import typings.dwt.EnumDWT_OCRFindTextAction.OCRFT_STRIKEOUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

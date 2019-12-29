@@ -4,7 +4,7 @@ import typings.stripe.Anon_AddressName
 import typings.stripe.Anon_DisabledreasonListed
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
-import typings.stripe.stripeStrings.issuingDOTcardholder
+import typings.stripe.stripeStrings.issuingDotcardholder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait ICardholder extends IResourceObject {
     * String representing the object’s type. Objects of the same type share the same value.
     */
   @JSName("object")
-  var object_ICardholder: issuingDOTcardholder
+  var object_ICardholder: issuingDotcardholder
   /**
     * The cardholder’s phone number.
     */
@@ -87,7 +87,7 @@ object ICardholder {
     livemode: Boolean,
     metadata: IMetadata,
     name: String,
-    `object`: issuingDOTcardholder,
+    `object`: issuingDotcardholder,
     phone_number: String,
     requirements: Anon_DisabledreasonListed,
     status: CardholderStatus,

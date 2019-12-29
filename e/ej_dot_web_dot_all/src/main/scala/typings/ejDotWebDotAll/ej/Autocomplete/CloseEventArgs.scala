@@ -10,7 +10,7 @@ trait CloseEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Instance of the autocomplete model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -18,11 +18,7 @@ trait CloseEventArgs extends js.Object {
 
 object CloseEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Autocomplete.Model = null,
-    `type`: String = null
-  ): CloseEventArgs = {
+  def apply(cancel: js.UndefOr[Boolean] = js.undefined, model: Model = null, `type`: String = null): CloseEventArgs = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])

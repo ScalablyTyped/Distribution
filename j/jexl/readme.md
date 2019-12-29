@@ -1,7 +1,7 @@
 
 # Scala.js typings for jexl
 
-Typings are for version 2.1
+Typings are for version 2.2
 
 ## Library description:
 Javascript Expression Language: Powerful context-based expression parser and evaluator

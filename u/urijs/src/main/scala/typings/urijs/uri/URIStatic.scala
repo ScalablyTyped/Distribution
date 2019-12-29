@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait URIStatic
-  extends Instantiable0[typings.urijs.uri.URI]
-     with Instantiable1[
-      (/* value */ HTMLElement) | (/* value */ String) | (/* value */ URIOptions), 
-      typings.urijs.uri.URI
-    ] {
+  extends Instantiable0[URI]
+     with Instantiable1[(/* value */ HTMLElement) | (/* value */ String) | (/* value */ URIOptions), URI] {
   /**
     * @description Wrapper for `URITemplate#expand`. Only present after
     *              importing `urijs/src/URITemplate` explicitly.
     */
-  var expand: js.UndefOr[js.Function2[/* template */ String, /* vals */ js.Object, typings.urijs.uri.URI]] = js.native
-  def apply(): typings.urijs.uri.URI = js.native
-  def apply(value: String): typings.urijs.uri.URI = js.native
-  def apply(value: HTMLElement): typings.urijs.uri.URI = js.native
-  def apply(value: URIOptions): typings.urijs.uri.URI = js.native
+  var expand: js.UndefOr[js.Function2[/* template */ String, /* vals */ js.Object, URI]] = js.native
+  def apply(): URI = js.native
+  def apply(value: String): URI = js.native
+  def apply(value: HTMLElement): URI = js.native
+  def apply(value: URIOptions): URI = js.native
   def addQuery(data: js.Object, prop: String, value: String): js.Object = js.native
   def addQuery(data: js.Object, qryObj: js.Object): js.Object = js.native
   def build(parts: URIOptions): String = js.native
@@ -41,7 +38,7 @@ trait URIStatic
   def encodeQuery(qry: String): String = js.native
   def encodeReserved(str: String): String = js.native
   def iso8859(): Unit = js.native
-  def joinPaths(paths: (String | typings.urijs.uri.URI)*): typings.urijs.uri.URI = js.native
+  def joinPaths(paths: (String | URI)*): URI = js.native
   def parse(url: String): Parts = js.native
   def parseAuthority(url: String, parts: Anon_Hostname): String = js.native
   def parseHost(url: String, parts: Anon_HostnamePort): String = js.native

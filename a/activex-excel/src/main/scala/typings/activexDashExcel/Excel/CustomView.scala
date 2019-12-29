@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class CustomView protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.CustomView_typekey`: CustomView = js.native
+  @JSName("Excel.CustomView_typekey")
+  var ExcelDotCustomView_typekey: CustomView = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
   val PrintSettings: Boolean = js.native

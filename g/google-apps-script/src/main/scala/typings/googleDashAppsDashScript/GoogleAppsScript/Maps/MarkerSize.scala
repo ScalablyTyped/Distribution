@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.MarkerSize.MID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.MarkerSize.SMALL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.MarkerSize.TINY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

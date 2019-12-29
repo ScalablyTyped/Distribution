@@ -12,7 +12,8 @@ class PageSetup protected () extends js.Object {
   var FirstSlideNumber: Double = js.native
   var NotesOrientation: MsoOrientation = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.PageSetup_typekey`: PageSetup = js.native
+  @JSName("PowerPoint.PageSetup_typekey")
+  var PowerPointDotPageSetup_typekey: PageSetup = js.native
   var SlideHeight: Double = js.native
   var SlideOrientation: MsoOrientation = js.native
   var SlideSize: PpSlideSizeType = js.native

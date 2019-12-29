@@ -1,10 +1,6 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.DOWNLOAD
-import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.PIXELS
-import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.RENDER
-import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.UPLOAD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

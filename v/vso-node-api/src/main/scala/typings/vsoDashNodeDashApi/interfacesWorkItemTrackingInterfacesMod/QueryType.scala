@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.Flat
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.OneHop
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.Tree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

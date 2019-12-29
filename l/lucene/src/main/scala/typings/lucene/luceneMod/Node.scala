@@ -1,13 +1,13 @@
 package typings.lucene.luceneMod
 
-import typings.lucene.luceneStrings.`<implicit>`
+import typings.lucene.luceneStrings.LessthansignimplicitGreaterthansign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Node extends js.Object {
   var boost: Null | Double
-  var field: String | `<implicit>`
+  var field: String | LessthansignimplicitGreaterthansign
   var fieldLocation: Null
   var prefix: Null | String
   var quoted: Boolean
@@ -20,7 +20,7 @@ trait Node extends js.Object {
 object Node {
   @scala.inline
   def apply(
-    field: String | `<implicit>`,
+    field: String | LessthansignimplicitGreaterthansign,
     fieldLocation: Null,
     quoted: Boolean,
     regex: Boolean,

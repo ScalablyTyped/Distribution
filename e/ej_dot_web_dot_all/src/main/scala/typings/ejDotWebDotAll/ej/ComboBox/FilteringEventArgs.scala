@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait FilteringEventArgs extends js.Object {
   /** Instance of the combobox model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ComboBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** text of the combobox.
     */
   var text: js.UndefOr[String] = js.undefined
@@ -21,12 +21,7 @@ trait FilteringEventArgs extends js.Object {
 
 object FilteringEventArgs {
   @scala.inline
-  def apply(
-    model: typings.ejDotWebDotAll.ej.ComboBox.Model = null,
-    text: String = null,
-    `type`: String = null,
-    updateData: js.Any = null
-  ): FilteringEventArgs = {
+  def apply(model: Model = null, text: String = null, `type`: String = null, updateData: js.Any = null): FilteringEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

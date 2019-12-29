@@ -13,14 +13,14 @@ class Transaction protected () extends js.Object {
     * @param documentRef A reference to the document to be deleted.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def delete(documentRef: DocumentReference): Transaction = js.native
+  def delete(documentRef: DocumentReference[_]): Transaction = js.native
   /**
     * Reads the document referenced by the provided `DocumentReference.`
     *
     * @param documentRef A reference to the document to be read.
     * @return A DocumentSnapshot for the read data.
     */
-  def get(documentRef: DocumentReference): js.Promise[DocumentSnapshot] = js.native
+  def get[T](documentRef: DocumentReference[T]): js.Promise[DocumentSnapshot[T]] = js.native
   /**
     * Writes to the document referred to by the provided `DocumentReference`.
     * If the document does not exist yet, it will be created. If you pass
@@ -31,8 +31,8 @@ class Transaction protected () extends js.Object {
     * @param options An object to configure the set behavior.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def set(documentRef: DocumentReference, data: DocumentData): Transaction = js.native
-  def set(documentRef: DocumentReference, data: DocumentData, options: SetOptions): Transaction = js.native
+  def set[T](documentRef: DocumentReference[T], data: T): Transaction = js.native
+  def set[T](documentRef: DocumentReference[T], data: T, options: SetOptions): Transaction = js.native
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that
@@ -44,7 +44,7 @@ class Transaction protected () extends js.Object {
     * within the document.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def update(documentRef: DocumentReference, data: UpdateData): Transaction = js.native
+  def update(documentRef: DocumentReference[_], data: UpdateData): Transaction = js.native
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that
@@ -60,7 +60,7 @@ class Transaction protected () extends js.Object {
     * @return A Promise resolved once the data has been successfully written
     * to the backend (Note that it won't resolve while you're offline).
     */
-  def update(documentRef: DocumentReference, field: String, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
-  def update(documentRef: DocumentReference, field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
+  def update(documentRef: DocumentReference[_], field: String, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
+  def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
 }
 

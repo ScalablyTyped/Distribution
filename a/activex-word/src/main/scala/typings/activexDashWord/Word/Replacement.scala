@@ -19,7 +19,8 @@ class Replacement protected () extends js.Object {
   val Parent: js.Any = js.native
   var Style: js.Any = js.native
   var Text: String = js.native
-  var `Word.Replacement_typekey`: Replacement = js.native
+  @JSName("Word.Replacement_typekey")
+  var WordDotReplacement_typekey: Replacement = js.native
   def ClearFormatting(): Unit = js.native
 }
 

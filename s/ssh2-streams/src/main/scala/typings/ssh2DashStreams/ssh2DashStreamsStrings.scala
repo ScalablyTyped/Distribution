@@ -6,37 +6,37 @@ import scala.scalajs.js.annotation._
 
 object ssh2DashStreamsStrings {
   @js.native
-  sealed trait `CHANNEL_CLOSE:0` extends js.Object
+  sealed trait CHANNEL_CLOSEColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_DATA:0` extends js.Object
+  sealed trait CHANNEL_DATAColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_EOF:0` extends js.Object
+  sealed trait CHANNEL_EOFColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_EXTENDED_DATA:0` extends js.Object
+  sealed trait CHANNEL_EXTENDED_DATAColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_FAILURE:0` extends js.Object
+  sealed trait CHANNEL_FAILUREColon0 extends js.Object
   
   @js.native
   sealed trait CHANNEL_OPEN extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_OPEN_CONFIRMATION:0` extends js.Object
+  sealed trait CHANNEL_OPEN_CONFIRMATIONColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_OPEN_FAILURE:0` extends js.Object
+  sealed trait CHANNEL_OPEN_FAILUREColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_REQUEST:0` extends js.Object
+  sealed trait CHANNEL_REQUESTColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_SUCCESS:0` extends js.Object
+  sealed trait CHANNEL_SUCCESSColon0 extends js.Object
   
   @js.native
-  sealed trait `CHANNEL_WINDOW_ADJUST:0` extends js.Object
+  sealed trait CHANNEL_WINDOW_ADJUSTColon0 extends js.Object
   
   @js.native
   sealed trait CLOSE extends js.Object
@@ -141,10 +141,10 @@ object ssh2DashStreamsStrings {
   sealed trait WRITE extends js.Object
   
   @js.native
-  sealed trait `auth-agent-req@opensshDOTcom` extends js.Object
+  sealed trait `auth-agent-req@opensshDotcom` extends js.Object
   
   @js.native
-  sealed trait `auth-agent@opensshDOTcom` extends js.Object
+  sealed trait `auth-agent@opensshDotcom` extends js.Object
   
   @js.native
   sealed trait close_ extends js.Object
@@ -153,7 +153,7 @@ object ssh2DashStreamsStrings {
   sealed trait continue extends js.Object
   
   @js.native
-  sealed trait `direct-streamlocal@opensshDOTcom` extends js.Object
+  sealed trait `direct-streamlocal@opensshDotcom` extends js.Object
   
   @js.native
   sealed trait `direct-tcpip` extends js.Object
@@ -180,7 +180,7 @@ object ssh2DashStreamsStrings {
   sealed trait fingerprint extends js.Object
   
   @js.native
-  sealed trait `forwarded-streamlocal@opensshDOTcom` extends js.Object
+  sealed trait `forwarded-streamlocal@opensshDotcom` extends js.Object
   
   @js.native
   sealed trait `forwarded-tcpip` extends js.Object
@@ -219,27 +219,27 @@ object ssh2DashStreamsStrings {
   sealed trait `xon-xoff` extends js.Object
   
   @scala.inline
-  def `CHANNEL_CLOSE:0`: `CHANNEL_CLOSE:0` = "CHANNEL_CLOSE:0".asInstanceOf[`CHANNEL_CLOSE:0`]
+  def CHANNEL_CLOSEColon0: CHANNEL_CLOSEColon0 = "CHANNEL_CLOSE:0".asInstanceOf[CHANNEL_CLOSEColon0]
   @scala.inline
-  def `CHANNEL_DATA:0`: `CHANNEL_DATA:0` = "CHANNEL_DATA:0".asInstanceOf[`CHANNEL_DATA:0`]
+  def CHANNEL_DATAColon0: CHANNEL_DATAColon0 = "CHANNEL_DATA:0".asInstanceOf[CHANNEL_DATAColon0]
   @scala.inline
-  def `CHANNEL_EOF:0`: `CHANNEL_EOF:0` = "CHANNEL_EOF:0".asInstanceOf[`CHANNEL_EOF:0`]
+  def CHANNEL_EOFColon0: CHANNEL_EOFColon0 = "CHANNEL_EOF:0".asInstanceOf[CHANNEL_EOFColon0]
   @scala.inline
-  def `CHANNEL_EXTENDED_DATA:0`: `CHANNEL_EXTENDED_DATA:0` = "CHANNEL_EXTENDED_DATA:0".asInstanceOf[`CHANNEL_EXTENDED_DATA:0`]
+  def CHANNEL_EXTENDED_DATAColon0: CHANNEL_EXTENDED_DATAColon0 = "CHANNEL_EXTENDED_DATA:0".asInstanceOf[CHANNEL_EXTENDED_DATAColon0]
   @scala.inline
-  def `CHANNEL_FAILURE:0`: `CHANNEL_FAILURE:0` = "CHANNEL_FAILURE:0".asInstanceOf[`CHANNEL_FAILURE:0`]
+  def CHANNEL_FAILUREColon0: CHANNEL_FAILUREColon0 = "CHANNEL_FAILURE:0".asInstanceOf[CHANNEL_FAILUREColon0]
   @scala.inline
   def CHANNEL_OPEN: CHANNEL_OPEN = "CHANNEL_OPEN".asInstanceOf[CHANNEL_OPEN]
   @scala.inline
-  def `CHANNEL_OPEN_CONFIRMATION:0`: `CHANNEL_OPEN_CONFIRMATION:0` = "CHANNEL_OPEN_CONFIRMATION:0".asInstanceOf[`CHANNEL_OPEN_CONFIRMATION:0`]
+  def CHANNEL_OPEN_CONFIRMATIONColon0: CHANNEL_OPEN_CONFIRMATIONColon0 = "CHANNEL_OPEN_CONFIRMATION:0".asInstanceOf[CHANNEL_OPEN_CONFIRMATIONColon0]
   @scala.inline
-  def `CHANNEL_OPEN_FAILURE:0`: `CHANNEL_OPEN_FAILURE:0` = "CHANNEL_OPEN_FAILURE:0".asInstanceOf[`CHANNEL_OPEN_FAILURE:0`]
+  def CHANNEL_OPEN_FAILUREColon0: CHANNEL_OPEN_FAILUREColon0 = "CHANNEL_OPEN_FAILURE:0".asInstanceOf[CHANNEL_OPEN_FAILUREColon0]
   @scala.inline
-  def `CHANNEL_REQUEST:0`: `CHANNEL_REQUEST:0` = "CHANNEL_REQUEST:0".asInstanceOf[`CHANNEL_REQUEST:0`]
+  def CHANNEL_REQUESTColon0: CHANNEL_REQUESTColon0 = "CHANNEL_REQUEST:0".asInstanceOf[CHANNEL_REQUESTColon0]
   @scala.inline
-  def `CHANNEL_SUCCESS:0`: `CHANNEL_SUCCESS:0` = "CHANNEL_SUCCESS:0".asInstanceOf[`CHANNEL_SUCCESS:0`]
+  def CHANNEL_SUCCESSColon0: CHANNEL_SUCCESSColon0 = "CHANNEL_SUCCESS:0".asInstanceOf[CHANNEL_SUCCESSColon0]
   @scala.inline
-  def `CHANNEL_WINDOW_ADJUST:0`: `CHANNEL_WINDOW_ADJUST:0` = "CHANNEL_WINDOW_ADJUST:0".asInstanceOf[`CHANNEL_WINDOW_ADJUST:0`]
+  def CHANNEL_WINDOW_ADJUSTColon0: CHANNEL_WINDOW_ADJUSTColon0 = "CHANNEL_WINDOW_ADJUST:0".asInstanceOf[CHANNEL_WINDOW_ADJUSTColon0]
   @scala.inline
   def CLOSE: CLOSE = "CLOSE".asInstanceOf[CLOSE]
   @scala.inline
@@ -309,15 +309,15 @@ object ssh2DashStreamsStrings {
   @scala.inline
   def WRITE: WRITE = "WRITE".asInstanceOf[WRITE]
   @scala.inline
-  def `auth-agent-req@opensshDOTcom`: `auth-agent-req@opensshDOTcom` = "auth-agent-req@openssh.com".asInstanceOf[`auth-agent-req@opensshDOTcom`]
+  def `auth-agent-req@opensshDotcom`: `auth-agent-req@opensshDotcom` = "auth-agent-req@openssh.com".asInstanceOf[`auth-agent-req@opensshDotcom`]
   @scala.inline
-  def `auth-agent@opensshDOTcom`: `auth-agent@opensshDOTcom` = "auth-agent@openssh.com".asInstanceOf[`auth-agent@opensshDOTcom`]
+  def `auth-agent@opensshDotcom`: `auth-agent@opensshDotcom` = "auth-agent@openssh.com".asInstanceOf[`auth-agent@opensshDotcom`]
   @scala.inline
   def close_ : close_ = "close".asInstanceOf[close_]
   @scala.inline
   def continue: continue = "continue".asInstanceOf[continue]
   @scala.inline
-  def `direct-streamlocal@opensshDOTcom`: `direct-streamlocal@opensshDOTcom` = "direct-streamlocal@openssh.com".asInstanceOf[`direct-streamlocal@opensshDOTcom`]
+  def `direct-streamlocal@opensshDotcom`: `direct-streamlocal@opensshDotcom` = "direct-streamlocal@openssh.com".asInstanceOf[`direct-streamlocal@opensshDotcom`]
   @scala.inline
   def `direct-tcpip`: `direct-tcpip` = "direct-tcpip".asInstanceOf[`direct-tcpip`]
   @scala.inline
@@ -335,7 +335,7 @@ object ssh2DashStreamsStrings {
   @scala.inline
   def fingerprint: fingerprint = "fingerprint".asInstanceOf[fingerprint]
   @scala.inline
-  def `forwarded-streamlocal@opensshDOTcom`: `forwarded-streamlocal@opensshDOTcom` = "forwarded-streamlocal@openssh.com".asInstanceOf[`forwarded-streamlocal@opensshDOTcom`]
+  def `forwarded-streamlocal@opensshDotcom`: `forwarded-streamlocal@opensshDotcom` = "forwarded-streamlocal@openssh.com".asInstanceOf[`forwarded-streamlocal@opensshDotcom`]
   @scala.inline
   def `forwarded-tcpip`: `forwarded-tcpip` = "forwarded-tcpip".asInstanceOf[`forwarded-tcpip`]
   @scala.inline

@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`pointer-move`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mouse
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +12,10 @@ trait SceneViewPointerMoveEvent extends js.Object {
   var buttons: Double
   var native: js.Any
   var pointerId: Double
-  var pointerType: String
+  var pointerType: mouse | touch
   var stopPropagation: js.Function
   var timestamp: Double
-  var `type`: String
+  var `type`: `pointer-move`
   var x: Double
   var y: Double
 }
@@ -24,10 +27,10 @@ object SceneViewPointerMoveEvent {
     buttons: Double,
     native: js.Any,
     pointerId: Double,
-    pointerType: String,
+    pointerType: mouse | touch,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: String,
+    `type`: `pointer-move`,
     x: Double,
     y: Double
   ): SceneViewPointerMoveEvent = {

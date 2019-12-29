@@ -10,7 +10,8 @@ class PickerProperty protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val Id: String = js.native
-  var `Office.PickerProperty_typekey`: PickerProperty = js.native
+  @JSName("Office.PickerProperty_typekey")
+  var OfficeDotPickerProperty_typekey: PickerProperty = js.native
   val Type: MsoPickerField = js.native
   val Value: js.Any = js.native
 }

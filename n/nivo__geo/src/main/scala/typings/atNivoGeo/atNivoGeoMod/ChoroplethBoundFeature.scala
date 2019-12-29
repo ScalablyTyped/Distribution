@@ -1,6 +1,6 @@
 package typings.atNivoGeo.atNivoGeoMod
 
-import typings.atNivoGeo.atNivoGeoStrings.`string |BACKSLASHu00A0number`
+import typings.atNivoGeo.atNivoGeoStrings.`string VerticallineNobreakspacenumber`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChoroplethBoundFeature extends js.Object {
   var color: String
   var data: js.Any
-  var formattedValue: `string |BACKSLASHu00A0number`
+  var formattedValue: `string VerticallineNobreakspacenumber`
   var label: String
   var value: Double
 }
@@ -18,7 +18,7 @@ object ChoroplethBoundFeature {
   def apply(
     color: String,
     data: js.Any,
-    formattedValue: `string |BACKSLASHu00A0number`,
+    formattedValue: `string VerticallineNobreakspacenumber`,
     label: String,
     value: Double
   ): ChoroplethBoundFeature = {

@@ -1,10 +1,6 @@
 package typings.atAngularCommon.atAngularCommonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Currency
-import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Decimal
-import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Percent
-import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Scientific
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

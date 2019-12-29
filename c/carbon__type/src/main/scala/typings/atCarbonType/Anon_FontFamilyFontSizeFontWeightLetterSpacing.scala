@@ -5,10 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FontFamilyFontSizeFontWeightLetterSpacing extends js.Object {
-  var `@media (min-width: 42rem)`: Anon_FontSize
-  var `@media (min-width: 66rem)`: Anon_FontSize
-  var `@media (min-width: 82rem)`: Anon_FontSizeLineHeight
-  var `@media (min-width: 99rem)`: Anon_FontSizeLineHeight
+  @JSName("@media (min-width: 42rem)")
+  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: Anon_FontSize
+  @JSName("@media (min-width: 66rem)")
+  var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: Anon_FontSize
+  @JSName("@media (min-width: 82rem)")
+  var `@media Leftparenthesismin-widthColon 82remRightparenthesis`: Anon_FontSizeLineHeight
+  @JSName("@media (min-width: 99rem)")
+  var `@media Leftparenthesismin-widthColon 99remRightparenthesis`: Anon_FontSizeLineHeight
   var fontFamily: String
   var fontSize: String
   var fontWeight: Double
@@ -19,10 +23,10 @@ trait Anon_FontFamilyFontSizeFontWeightLetterSpacing extends js.Object {
 object Anon_FontFamilyFontSizeFontWeightLetterSpacing {
   @scala.inline
   def apply(
-    `@media (min-width: 42rem)`: Anon_FontSize,
-    `@media (min-width: 66rem)`: Anon_FontSize,
-    `@media (min-width: 82rem)`: Anon_FontSizeLineHeight,
-    `@media (min-width: 99rem)`: Anon_FontSizeLineHeight,
+    `@media Leftparenthesismin-widthColon 42remRightparenthesis`: Anon_FontSize,
+    `@media Leftparenthesismin-widthColon 66remRightparenthesis`: Anon_FontSize,
+    `@media Leftparenthesismin-widthColon 82remRightparenthesis`: Anon_FontSizeLineHeight,
+    `@media Leftparenthesismin-widthColon 99remRightparenthesis`: Anon_FontSizeLineHeight,
     fontFamily: String,
     fontSize: String,
     fontWeight: Double,
@@ -30,10 +34,10 @@ object Anon_FontFamilyFontSizeFontWeightLetterSpacing {
     lineHeight: String
   ): Anon_FontFamilyFontSizeFontWeightLetterSpacing = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
-    __obj.updateDynamic("@media (min-width: 42rem)")(`@media (min-width: 42rem)`.asInstanceOf[js.Any])
-    __obj.updateDynamic("@media (min-width: 66rem)")(`@media (min-width: 66rem)`.asInstanceOf[js.Any])
-    __obj.updateDynamic("@media (min-width: 82rem)")(`@media (min-width: 82rem)`.asInstanceOf[js.Any])
-    __obj.updateDynamic("@media (min-width: 99rem)")(`@media (min-width: 99rem)`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 42rem)")(`@media Leftparenthesismin-widthColon 42remRightparenthesis`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 66rem)")(`@media Leftparenthesismin-widthColon 66remRightparenthesis`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 82rem)")(`@media Leftparenthesismin-widthColon 82remRightparenthesis`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 99rem)")(`@media Leftparenthesismin-widthColon 99remRightparenthesis`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacing]
   }
 }

@@ -1,6 +1,6 @@
 package typings.losslessDashJson
 
-import typings.losslessDashJson.losslessDashJsonNumbers.`true`
+import typings.losslessDashJson.losslessDashJsonBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

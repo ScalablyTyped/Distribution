@@ -1,27 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.UnderlineType.dashLine
-import typings.officeDashJs.Word.UnderlineType.dashLineHeavy
-import typings.officeDashJs.Word.UnderlineType.dashLineLong
-import typings.officeDashJs.Word.UnderlineType.dashLineLongHeavy
-import typings.officeDashJs.Word.UnderlineType.dotDashLine
-import typings.officeDashJs.Word.UnderlineType.dotDashLineHeavy
-import typings.officeDashJs.Word.UnderlineType.dotLine
-import typings.officeDashJs.Word.UnderlineType.dotted
-import typings.officeDashJs.Word.UnderlineType.dottedHeavy
-import typings.officeDashJs.Word.UnderlineType.double
-import typings.officeDashJs.Word.UnderlineType.hidden
-import typings.officeDashJs.Word.UnderlineType.mixed
-import typings.officeDashJs.Word.UnderlineType.none
-import typings.officeDashJs.Word.UnderlineType.single
-import typings.officeDashJs.Word.UnderlineType.thick
-import typings.officeDashJs.Word.UnderlineType.twoDotDashLine
-import typings.officeDashJs.Word.UnderlineType.twoDotDashLineHeavy
-import typings.officeDashJs.Word.UnderlineType.wave
-import typings.officeDashJs.Word.UnderlineType.waveDouble
-import typings.officeDashJs.Word.UnderlineType.waveHeavy
-import typings.officeDashJs.Word.UnderlineType.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

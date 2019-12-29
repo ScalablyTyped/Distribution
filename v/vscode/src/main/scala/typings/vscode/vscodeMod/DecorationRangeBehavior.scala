@@ -1,10 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.DecorationRangeBehavior.ClosedClosed
-import typings.vscode.vscodeMod.DecorationRangeBehavior.ClosedOpen
-import typings.vscode.vscodeMod.DecorationRangeBehavior.OpenClosed
-import typings.vscode.vscodeMod.DecorationRangeBehavior.OpenOpen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

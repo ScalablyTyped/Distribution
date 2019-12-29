@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object htmlDashWebpackDashTagsDashPluginStrings {
   @js.native
-  sealed trait JS extends TypeString
-  
-  @js.native
   sealed trait css extends TypeString
   
-  @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
+  @js.native
+  sealed trait js_ extends TypeString
+  
   @scala.inline
   def css: css = "css".asInstanceOf[css]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
 }
 

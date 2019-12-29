@@ -14,6 +14,7 @@ class OMathBox protected () extends js.Object {
   var NoBreak: Boolean = js.native
   var OpEmu: Boolean = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathBox_typekey`: OMathBox = js.native
+  @JSName("Word.OMathBox_typekey")
+  var WordDotOMathBox_typekey: OMathBox = js.native
 }
 

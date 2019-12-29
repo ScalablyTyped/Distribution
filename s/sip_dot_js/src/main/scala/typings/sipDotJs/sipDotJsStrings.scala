@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object sipDotJsStrings {
   @js.native
-  sealed trait `0DOT15DOT8` extends js.Object
+  sealed trait `0Dot15Dot10` extends js.Object
   
   @js.native
   sealed trait ACK extends js.Object
@@ -244,7 +244,7 @@ object sipDotJsStrings {
   sealed trait sip extends js.Object
   
   @js.native
-  sealed trait sipDOTjs extends js.Object
+  sealed trait sipDotjs extends js.Object
   
   @js.native
   sealed trait sips extends js.Object
@@ -280,7 +280,7 @@ object sipDotJsStrings {
   sealed trait warn extends LogLevel
   
   @scala.inline
-  def `0DOT15DOT8`: `0DOT15DOT8` = "0.15.8".asInstanceOf[`0DOT15DOT8`]
+  def `0Dot15Dot10`: `0Dot15Dot10` = "0.15.10".asInstanceOf[`0Dot15Dot10`]
   @scala.inline
   def ACK: ACK = "ACK".asInstanceOf[ACK]
   @scala.inline
@@ -438,7 +438,7 @@ object sipDotJsStrings {
   @scala.inline
   def sip: sip = "sip".asInstanceOf[sip]
   @scala.inline
-  def sipDOTjs: sipDOTjs = "sip.js".asInstanceOf[sipDOTjs]
+  def sipDotjs: sipDotjs = "sip.js".asInstanceOf[sipDotjs]
   @scala.inline
   def sips: sips = "sips".asInstanceOf[sips]
   @scala.inline

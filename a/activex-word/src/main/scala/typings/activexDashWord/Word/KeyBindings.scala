@@ -12,7 +12,8 @@ class KeyBindings protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.KeyBindings_typekey`: KeyBindings = js.native
+  @JSName("Word.KeyBindings_typekey")
+  var WordDotKeyBindings_typekey: KeyBindings = js.native
   def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double): KeyBinding = js.native
   def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
   def Add(

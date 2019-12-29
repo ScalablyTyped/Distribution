@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 object webpackDashConfigDashUtilsStrings {
   @js.native
-  sealed trait Empty extends _Falsy
+  sealed trait NonEmptyObject extends js.Object
   
   @js.native
-  sealed trait NonEmptyObject extends js.Object
+  sealed trait _empty extends _Falsy
   
   @js.native
   sealed trait dev extends EnvVars
@@ -38,9 +38,9 @@ object webpackDashConfigDashUtilsStrings {
   sealed trait test extends EnvVars
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def NonEmptyObject: NonEmptyObject = "NonEmptyObject".asInstanceOf[NonEmptyObject]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def dev: dev = "dev".asInstanceOf[dev]
   @scala.inline

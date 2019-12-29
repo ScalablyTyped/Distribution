@@ -1,13 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.EndOfLineState.InDoubleQuoteStringLiteral
-import typings.typescript.typescriptMod.EndOfLineState.InMultiLineCommentTrivia
-import typings.typescript.typescriptMod.EndOfLineState.InSingleQuoteStringLiteral
-import typings.typescript.typescriptMod.EndOfLineState.InTemplateHeadOrNoSubstitutionTemplate
-import typings.typescript.typescriptMod.EndOfLineState.InTemplateMiddleOrTail
-import typings.typescript.typescriptMod.EndOfLineState.InTemplateSubstitutionPosition
-import typings.typescript.typescriptMod.EndOfLineState.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

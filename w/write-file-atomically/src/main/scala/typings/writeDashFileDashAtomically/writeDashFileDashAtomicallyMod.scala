@@ -3,7 +3,6 @@ package typings.writeDashFileDashAtomically
 import typings.node.Buffer
 import typings.std.Uint8Array
 import typings.writeDashFileDashAtomic.writeDashFileDashAtomicMod.Options
-import typings.writeDashFileDashAtomically.writeDashFileDashAtomicallyMod.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

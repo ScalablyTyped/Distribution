@@ -2,7 +2,6 @@ package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distCommonjsCoreStreamMod.Stream
 import typings.wonderDashFrp.distCommonjsStreamBaseStreamMod.BaseStream
-import typings.wonderDashFrp.distCommonjsStreamMergeAllStreamMod.MergeAllStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

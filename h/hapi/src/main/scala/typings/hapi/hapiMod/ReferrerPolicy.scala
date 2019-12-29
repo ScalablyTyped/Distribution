@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.hapi.hapiStrings.Empty
+  - typings.hapi.hapiStrings._empty
   - typings.hapi.hapiStrings.`no-referrer`
   - typings.hapi.hapiStrings.`no-referrer-when-downgrade`
   - typings.hapi.hapiStrings.`unsafe-url`
@@ -19,7 +19,7 @@ trait ReferrerPolicy extends js.Object
 
 object ReferrerPolicy {
   @scala.inline
-  def Empty: typings.hapi.hapiStrings.Empty = this.cast("")
+  def _empty: typings.hapi.hapiStrings._empty = this.cast("")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

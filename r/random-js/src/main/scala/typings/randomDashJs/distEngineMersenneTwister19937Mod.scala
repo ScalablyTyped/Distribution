@@ -1,6 +1,5 @@
 package typings.randomDashJs
 
-import typings.randomDashJs.distEngineMersenneTwister19937Mod.MersenneTwister19937
 import typings.randomDashJs.distTypesMod.Engine
 import typings.std.ArrayLike
 import scala.scalajs.js

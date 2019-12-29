@@ -1,14 +1,6 @@
 package typings.sharepoint.SP.BusinessData
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.BusinessData.Runtime.EntityEventType
-import typings.sharepoint.SP.BusinessData.Runtime.EntityEventType.itemAdded
-import typings.sharepoint.SP.BusinessData.Runtime.EntityEventType.itemDeleted
-import typings.sharepoint.SP.BusinessData.Runtime.EntityEventType.itemUpdated
-import typings.sharepoint.SP.BusinessData.Runtime.EntityEventType.none
-import typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity
-import typings.sharepoint.SP.BusinessData.Runtime.NotificationCallback
-import typings.sharepoint.SP.BusinessData.Runtime.Subscription
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.ClientRuntimeContext
 import typings.sharepoint.SP.IntResult

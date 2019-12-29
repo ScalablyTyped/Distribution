@@ -1,10 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015RendererBufferEBufferUsageMod.EBufferUsage
-import typings.wonderDotJs.distEs2015RendererBufferEBufferUsageMod.EBufferUsage.DYNAMIC_DRAW
-import typings.wonderDotJs.distEs2015RendererBufferEBufferUsageMod.EBufferUsage.STATIC_DRAW
-import typings.wonderDotJs.distEs2015RendererBufferEBufferUsageMod.EBufferUsage.STREAM_DRAW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

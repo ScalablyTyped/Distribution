@@ -1,16 +1,6 @@
 package typings.soupbintcp.soupbintcpMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.soupbintcp.soupbintcpMod.PacketType.CLIENT_HEARTBEAT
-import typings.soupbintcp.soupbintcpMod.PacketType.DEBUG
-import typings.soupbintcp.soupbintcpMod.PacketType.END_OF_SESSION
-import typings.soupbintcp.soupbintcpMod.PacketType.LOGIN_ACCEPTED
-import typings.soupbintcp.soupbintcpMod.PacketType.LOGIN_REJECTED
-import typings.soupbintcp.soupbintcpMod.PacketType.LOGIN_REQUEST
-import typings.soupbintcp.soupbintcpMod.PacketType.LOGOUT_REQUEST
-import typings.soupbintcp.soupbintcpMod.PacketType.SEQUENCED_DATA
-import typings.soupbintcp.soupbintcpMod.PacketType.SERVER_HEARTBEAT
-import typings.soupbintcp.soupbintcpMod.PacketType.UNSEQUENCED_DATA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

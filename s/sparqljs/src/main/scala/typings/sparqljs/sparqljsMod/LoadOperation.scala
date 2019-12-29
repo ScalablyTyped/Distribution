@@ -1,6 +1,6 @@
 package typings.sparqljs.sparqljsMod
 
-import typings.sparqljs.sparqljsNumbers.`false`
+import typings.sparqljs.sparqljsBooleans.`false`
 import typings.sparqljs.sparqljsStrings.load
 import scala.scalajs.js
 import scala.scalajs.js.`|`

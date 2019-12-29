@@ -4,7 +4,6 @@ import typings.std.RegExp
 import typings.xhrDashMock.libTypesMod.ErrorCallbackEvent
 import typings.xhrDashMock.libTypesMod.Mock
 import typings.xhrDashMock.libTypesMod.MockFunction
-import typings.xhrDashMock.libXHRMockMod.XHRMock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

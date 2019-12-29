@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.`new`
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

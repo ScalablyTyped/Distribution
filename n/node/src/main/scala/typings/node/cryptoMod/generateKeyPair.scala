@@ -2,12 +2,12 @@ package typings.node.cryptoMod
 
 import typings.node.Anon_PrivateKey
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.nodeStrings.der
 import typings.node.nodeStrings.dsa
 import typings.node.nodeStrings.ec
 import typings.node.nodeStrings.pem
 import typings.node.nodeStrings.rsa
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +25,8 @@ object generateKeyPair extends js.Object {
     options: DSAKeyPairOptions[der | pem, der | pem],
     callback: js.Function3[
       Error | Null, 
-      (/* publicKey */ Buffer) | (/* publicKey */ java.lang.String), 
-      (/* privateKey */ Buffer) | (/* privateKey */ java.lang.String), 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
   ): Unit = js.native
@@ -40,8 +40,8 @@ object generateKeyPair extends js.Object {
     options: ECKeyPairOptions[der | pem, der | pem],
     callback: js.Function3[
       Error | Null, 
-      (/* publicKey */ Buffer) | (/* publicKey */ java.lang.String), 
-      (/* privateKey */ Buffer) | (/* privateKey */ java.lang.String), 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
   ): Unit = js.native
@@ -55,8 +55,8 @@ object generateKeyPair extends js.Object {
     options: RSAKeyPairOptions[der | pem, der | pem],
     callback: js.Function3[
       Error | Null, 
-      (/* publicKey */ Buffer) | (/* publicKey */ java.lang.String), 
-      (/* privateKey */ Buffer) | (/* privateKey */ java.lang.String), 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
   ): Unit = js.native

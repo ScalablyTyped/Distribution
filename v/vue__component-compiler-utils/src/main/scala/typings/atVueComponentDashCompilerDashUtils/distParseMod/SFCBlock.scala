@@ -1,7 +1,7 @@
 package typings.atVueComponentDashCompilerDashUtils.distParseMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atVueComponentDashCompilerDashUtils.atVueComponentDashCompilerDashUtilsNumbers.`true`
+import typings.atVueComponentDashCompilerDashUtils.atVueComponentDashCompilerDashUtilsBooleans.`true`
 import typings.atVueComponentDashCompilerDashUtils.distTypesMod.RawSourceMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`

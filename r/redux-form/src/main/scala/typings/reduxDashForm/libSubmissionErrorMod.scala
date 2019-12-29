@@ -1,6 +1,5 @@
 package typings.reduxDashForm
 
-import typings.reduxDashForm.libSubmissionErrorMod.SubmissionError
 import typings.reduxDashForm.reduxDashFormMod.FormErrors
 import typings.std.Error
 import scala.scalajs.js

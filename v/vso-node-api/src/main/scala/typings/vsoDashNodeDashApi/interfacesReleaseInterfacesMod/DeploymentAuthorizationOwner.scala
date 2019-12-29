@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.Automatic
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.DeploymentSubmitter
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.FirstPreDeploymentApprover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

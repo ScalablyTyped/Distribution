@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Services.Store.StoreDurationUnit.day
-import typings.winrtDashUwp.Windows.Services.Store.StoreDurationUnit.hour
-import typings.winrtDashUwp.Windows.Services.Store.StoreDurationUnit.minute
-import typings.winrtDashUwp.Windows.Services.Store.StoreDurationUnit.month
-import typings.winrtDashUwp.Windows.Services.Store.StoreDurationUnit.week
-import typings.winrtDashUwp.Windows.Services.Store.StoreDurationUnit.year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

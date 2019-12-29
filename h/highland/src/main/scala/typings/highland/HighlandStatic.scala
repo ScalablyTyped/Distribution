@@ -11,10 +11,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// TODO export the top-level functions
-// TODO figure out curry arguments
-// TODO create more overloads for nested data, like streams-of-streams or streams-of-array-of-streams etc
-// TODO use externalised Readable/Writable (not node's)
 /**
   * Highland: the high-level streams library
   *

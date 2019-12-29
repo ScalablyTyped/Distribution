@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 object jsonDashSchemaDashCompareStrings {
   @js.native
-  sealed trait DOLLARcomment extends _JSONSchemaKeys
+  sealed trait $comment extends _JSONSchemaKeys
   
   @js.native
-  sealed trait DOLLARid extends _JSONSchemaKeys
+  sealed trait $id extends _JSONSchemaKeys
   
   @js.native
-  sealed trait DOLLARref extends _JSONSchemaKeys
+  sealed trait $ref extends _JSONSchemaKeys
   
   @js.native
-  sealed trait DOLLARschema extends _JSONSchemaKeys
+  sealed trait $schema extends _JSONSchemaKeys
   
   @js.native
   sealed trait additionalItems extends _JSONSchemaKeys
@@ -145,13 +145,13 @@ object jsonDashSchemaDashCompareStrings {
   sealed trait writeOnly extends _JSONSchemaKeys
   
   @scala.inline
-  def DOLLARcomment: DOLLARcomment = "$comment".asInstanceOf[DOLLARcomment]
+  def $comment: $comment = "$comment".asInstanceOf[$comment]
   @scala.inline
-  def DOLLARid: DOLLARid = "$id".asInstanceOf[DOLLARid]
+  def $id: $id = "$id".asInstanceOf[$id]
   @scala.inline
-  def DOLLARref: DOLLARref = "$ref".asInstanceOf[DOLLARref]
+  def $ref: $ref = "$ref".asInstanceOf[$ref]
   @scala.inline
-  def DOLLARschema: DOLLARschema = "$schema".asInstanceOf[DOLLARschema]
+  def $schema: $schema = "$schema".asInstanceOf[$schema]
   @scala.inline
   def additionalItems: additionalItems = "additionalItems".asInstanceOf[additionalItems]
   @scala.inline

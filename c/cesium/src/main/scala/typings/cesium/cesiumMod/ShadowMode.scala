@@ -1,10 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ShadowMode.CAST_ONLY
-import typings.cesium.cesiumMod.ShadowMode.DISABLED
-import typings.cesium.cesiumMod.ShadowMode.ENABLED
-import typings.cesium.cesiumMod.ShadowMode.RECEIVE_ONLY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

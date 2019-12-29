@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-loaded`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.failed
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loaded
@@ -83,8 +82,8 @@ trait Loadable extends js.Object {
     * @param signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def load(): IPromise[_] = js.native
-  def load(signal: AbortSignal): IPromise[_] = js.native
+  def load(): js.Promise[_] = js.native
+  def load(signal: AbortSignal): js.Promise[_] = js.native
   /**
     * `when()` may be leveraged once an instance of the class is created. This method takes two input parameters: a `callback` function and an `errback` function. The `callback` executes when the instance of the class loads. The `errback` executes if the instance of the class fails to load.
     *
@@ -94,9 +93,9 @@ trait Loadable extends js.Object {
     * @param errback The function to execute when the promise fails.
     *
     */
-  def when(): IPromise[_] = js.native
-  def when(callback: js.Function): IPromise[_] = js.native
-  def when(callback: js.Function, errback: js.Function): IPromise[_] = js.native
+  def when(): js.Promise[_] = js.native
+  def when(callback: js.Function): js.Promise[_] = js.native
+  def when(callback: js.Function, errback: js.Function): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.Loadable")

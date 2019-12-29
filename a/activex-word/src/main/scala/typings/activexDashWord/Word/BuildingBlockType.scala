@@ -13,6 +13,7 @@ class BuildingBlockType protected () extends js.Object {
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.BuildingBlockType_typekey`: BuildingBlockType = js.native
+  @JSName("Word.BuildingBlockType_typekey")
+  var WordDotBuildingBlockType_typekey: BuildingBlockType = js.native
 }
 

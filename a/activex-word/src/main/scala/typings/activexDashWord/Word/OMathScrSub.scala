@@ -12,6 +12,7 @@ class OMathScrSub protected () extends js.Object {
   val E: OMath = js.native
   val Parent: js.Any = js.native
   val Sub: OMath = js.native
-  var `Word.OMathScrSub_typekey`: OMathScrSub = js.native
+  @JSName("Word.OMathScrSub_typekey")
+  var WordDotOMathScrSub_typekey: OMathScrSub = js.native
 }
 

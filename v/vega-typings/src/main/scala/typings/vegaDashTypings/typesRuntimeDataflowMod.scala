@@ -1,7 +1,5 @@
 package typings.vegaDashTypings
 
-import typings.vegaDashTypings.typesRuntimeDataflowMod.Changeset
-import typings.vegaDashTypings.typesRuntimeDataflowMod.Operator
 import typings.vegaDashTypings.vegaDashTypingsNumbers.`0`
 import typings.vegaDashTypings.vegaDashTypingsNumbers.`1`
 import scala.scalajs.js

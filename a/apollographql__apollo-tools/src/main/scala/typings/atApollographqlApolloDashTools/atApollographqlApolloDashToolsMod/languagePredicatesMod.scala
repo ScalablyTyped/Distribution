@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@apollographql/apollo-tools", "graphql/language/predicates")
+@JSImport("graphql/language/predicates", JSImport.Namespace)
 @js.native
 object languagePredicatesMod extends js.Object {
   def isTypeDefinitionNode(node: ASTNode): /* is graphql.graphql/language/ast.TypeDefinitionNode */ Boolean = js.native

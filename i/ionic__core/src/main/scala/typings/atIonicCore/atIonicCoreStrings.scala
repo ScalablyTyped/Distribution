@@ -7,7 +7,7 @@ import typings.atIonicCore.atIonicCoreMod.TextFieldTypes
 import typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod.NavDirection
 import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod._KnobName
 import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
+import typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
 import typings.atIonicCore.distTypesComponentsSelectSelectDashInterfaceMod.SelectInterface
 import typings.atIonicCore.distTypesComponentsTabDashBarTabDashBarDashInterfaceMod.TabButtonLayout
 import typings.atIonicCore.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.CellType
@@ -238,31 +238,31 @@ object atIonicCoreStrings {
   @js.native
   sealed trait `icon-bottom`
     extends SegmentButtonLayout
-       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-end`
     extends SegmentButtonLayout
-       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-hide`
     extends SegmentButtonLayout
-       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-start`
     extends SegmentButtonLayout
-       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-top`
     extends SegmentButtonLayout
-       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
@@ -325,7 +325,7 @@ object atIonicCoreStrings {
   @js.native
   sealed trait `label-hide`
     extends SegmentButtonLayout
-       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native

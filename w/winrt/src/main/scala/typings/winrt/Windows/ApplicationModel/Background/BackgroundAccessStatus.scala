@@ -1,10 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundAccessStatus.allowedMayUseActiveRealTimeConnectivity
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundAccessStatus.allowedWithAlwaysOnRealTimeConnectivity
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundAccessStatus.denied
-import typings.winrt.Windows.ApplicationModel.Background.BackgroundAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

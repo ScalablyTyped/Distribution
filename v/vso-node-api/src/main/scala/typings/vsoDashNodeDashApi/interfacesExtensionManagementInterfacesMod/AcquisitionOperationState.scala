@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.AcquisitionOperationState.Allow
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.AcquisitionOperationState.Completed
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.AcquisitionOperationState.Disallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

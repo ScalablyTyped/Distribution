@@ -1,7 +1,7 @@
 package typings.atGoogleDashCloudStorage.buildSrcFileMod
 
-import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageNumbers.`false`
-import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageNumbers.`true`
+import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageBooleans.`false`
+import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageBooleans.`true`
 import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageStrings.crc32c
 import typings.atGoogleDashCloudStorage.atGoogleDashCloudStorageStrings.md5
 import scala.scalajs.js

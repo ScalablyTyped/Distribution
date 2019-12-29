@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateMode.AllOrNone
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateMode.BestEffort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

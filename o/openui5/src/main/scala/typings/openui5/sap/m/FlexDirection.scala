@@ -1,10 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.FlexDirection.ColumnReverse
-import typings.openui5.sap.m.FlexDirection.Inherit
-import typings.openui5.sap.m.FlexDirection.Row
-import typings.openui5.sap.m.FlexDirection.RowReverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

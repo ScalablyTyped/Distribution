@@ -1,6 +1,5 @@
 package typings.relayDashRuntime
 
-import typings.relayDashRuntime.libUtilGetRequestIdentifierMod.RequestIdentifier
 import typings.relayDashRuntime.libUtilRelayConcreteNodeMod.RequestParameters
 import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Variables
 import scala.scalajs.js

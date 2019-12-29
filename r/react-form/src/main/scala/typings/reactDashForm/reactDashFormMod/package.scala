@@ -8,7 +8,7 @@ package object reactDashFormMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.react.reactMod._Global_.JSX.Element
   import typings.reactDashForm.Anon_Label
-  import typings.reactDashForm.reactDashFormNumbers.`false`
+  import typings.reactDashForm.reactDashFormBooleans.`false`
 
   type FormError = js.UndefOr[String]
   type FormErrors = StringDictionary[FormError]

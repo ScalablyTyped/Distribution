@@ -1,6 +1,6 @@
 package typings.smtpDashServer.smtpDashServerMod
 
-import typings.smtpDashServer.smtpDashServerNumbers.`false`
+import typings.smtpDashServer.smtpDashServerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

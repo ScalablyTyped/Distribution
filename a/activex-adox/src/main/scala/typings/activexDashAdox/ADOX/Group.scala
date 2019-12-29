@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADOX.Group")
 @js.native
 class Group protected () extends js.Object {
-  var `ADOX.Group_typekey`: Group = js.native
+  @JSName("ADOX.Group_typekey")
+  var ADOXDotGroup_typekey: Group = js.native
   var Name: String = js.native
   var ParentCatalog: Catalog = js.native
   @JSName("Properties")

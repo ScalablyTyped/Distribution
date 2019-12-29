@@ -1,11 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_MessageType.TWQC_GET
-import typings.dwt.EnumDWT_MessageType.TWQC_GETCURRENT
-import typings.dwt.EnumDWT_MessageType.TWQC_GETDEFAULT
-import typings.dwt.EnumDWT_MessageType.TWQC_RESET
-import typings.dwt.EnumDWT_MessageType.TWQC_SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

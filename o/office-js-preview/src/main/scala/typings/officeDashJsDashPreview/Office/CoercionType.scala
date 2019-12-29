@@ -1,13 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.CoercionType.Html
-import typings.officeDashJsDashPreview.Office.CoercionType.Image
-import typings.officeDashJsDashPreview.Office.CoercionType.Matrix
-import typings.officeDashJsDashPreview.Office.CoercionType.Ooxml
-import typings.officeDashJsDashPreview.Office.CoercionType.SlideRange
-import typings.officeDashJsDashPreview.Office.CoercionType.Text
-import typings.officeDashJsDashPreview.Office.CoercionType.XmlSvg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPivotGrid
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotGrid]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotGrid] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotGrid]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotGrid] {
   var Locale: js.Any = js.native
   var fn: PivotGrid = js.native
 }

@@ -16,14 +16,14 @@ trait Anon_CanvasId extends js.Object {
 object Anon_CanvasId {
   @scala.inline
   def apply(
-    canvasId: Null = null,
+    canvasId: js.UndefOr[scala.Nothing] = js.undefined,
     contextConfig: Anon_Options = null,
     isTest: js.UndefOr[Boolean] = js.undefined,
     screenSize: EScreenSize = null,
     useDevicePixelRatio: js.UndefOr[Boolean] = js.undefined
   ): Anon_CanvasId = {
     val __obj = js.Dynamic.literal()
-    if (canvasId != null) __obj.updateDynamic("canvasId")(canvasId.asInstanceOf[js.Any])
+    if (!js.isUndefined(canvasId)) __obj.updateDynamic("canvasId")(canvasId.asInstanceOf[js.Any])
     if (contextConfig != null) __obj.updateDynamic("contextConfig")(contextConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(isTest)) __obj.updateDynamic("isTest")(isTest.asInstanceOf[js.Any])
     if (screenSize != null) __obj.updateDynamic("screenSize")(screenSize.asInstanceOf[js.Any])

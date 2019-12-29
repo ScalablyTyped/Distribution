@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.ConnectOptions.IncludeInheritedDefinitionsOnly
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.ConnectOptions.IncludeLastUserAccess
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.ConnectOptions.IncludeNonInheritedDefinitionsOnly
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.ConnectOptions.IncludeServices
-import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.ConnectOptions.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

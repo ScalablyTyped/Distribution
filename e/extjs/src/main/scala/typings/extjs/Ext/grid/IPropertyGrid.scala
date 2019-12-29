@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IPropertyGrid
-  extends typings.extjs.Ext.grid.IPanel {
+trait IPropertyGrid extends IPanel {
   /** [Config Option] (Object) */
   var customEditors: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object) */
@@ -19,13 +18,13 @@ trait IPropertyGrid
   /** [Config Option] (Number/String) */
   var nameColumnWidth: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var nameField: js.UndefOr[java.lang.String] = js.undefined
+  var nameField: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var propertyNames: js.UndefOr[js.Any] = js.undefined
   /** [Method] Removes a property from the grid
   		* @param prop String The name of the property to remove.
   		*/
-  var removeProperty: js.UndefOr[js.Function1[/* prop */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var removeProperty: js.UndefOr[js.Function1[/* prop */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of a property
   		* @param prop String The name of the property to set.
   		* @param value Object The value to test.
@@ -33,7 +32,7 @@ trait IPropertyGrid
   		*/
   var setProperty: js.UndefOr[
     js.Function3[
-      /* prop */ js.UndefOr[java.lang.String], 
+      /* prop */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* create */ js.UndefOr[Boolean], 
       Unit
@@ -51,26 +50,26 @@ trait IPropertyGrid
   /** [Config Option] (Object) */
   var sourceConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var valueField: js.UndefOr[java.lang.String] = js.undefined
+  var valueField: js.UndefOr[String] = js.undefined
 }
 
 object IPropertyGrid {
   @scala.inline
   def apply(
-    IPanel: typings.extjs.Ext.grid.IPanel = null,
+    IPanel: IPanel = null,
     customEditors: js.Any = null,
     customRenderers: js.Any = null,
     getSource: () => _ = null,
     inferTypes: js.UndefOr[Boolean] = js.undefined,
     nameColumnWidth: js.Any = null,
-    nameField: java.lang.String = null,
+    nameField: String = null,
     propertyNames: js.Any = null,
-    removeProperty: /* prop */ js.UndefOr[java.lang.String] => Unit = null,
-    setProperty: (/* prop */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* create */ js.UndefOr[Boolean]) => Unit = null,
+    removeProperty: /* prop */ js.UndefOr[String] => Unit = null,
+    setProperty: (/* prop */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* create */ js.UndefOr[Boolean]) => Unit = null,
     setSource: (/* source */ js.UndefOr[js.Any], /* sourceConfig */ js.UndefOr[js.Any]) => Unit = null,
     source: js.Any = null,
     sourceConfig: js.Any = null,
-    valueField: java.lang.String = null
+    valueField: String = null
   ): IPropertyGrid = {
     val __obj = js.Dynamic.literal()
     if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IDOMDocumentType")
 @js.native
 class IDOMDocumentType protected () extends js.Object {
-  var `MSHTML.IDOMDocumentType_typekey`: IDOMDocumentType = js.native
+  @JSName("MSHTML.IDOMDocumentType_typekey")
+  var MSHTMLDotIDOMDocumentType_typekey: IDOMDocumentType = js.native
   val entities: js.Any = js.native
   val internalSubset: js.Any = js.native
   val name: String = js.native

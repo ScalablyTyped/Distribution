@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class TableBackground protected () extends js.Object {
   val Fill: FillFormat = js.native
   val Picture: PictureFormat = js.native
-  var `PowerPoint.TableBackground_typekey`: TableBackground = js.native
+  @JSName("PowerPoint.TableBackground_typekey")
+  var PowerPointDotTableBackground_typekey: TableBackground = js.native
   val Reflection: ReflectionFormat = js.native
   val Shadow: ShadowFormat = js.native
 }

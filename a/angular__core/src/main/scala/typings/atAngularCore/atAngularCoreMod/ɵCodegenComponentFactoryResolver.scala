@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵCodegenComponentFactoryResolver")
+@JSImport("@angular/core", "\u0275CodegenComponentFactoryResolver")
 @js.native
 class ɵCodegenComponentFactoryResolver protected () extends ComponentFactoryResolver {
   def this(

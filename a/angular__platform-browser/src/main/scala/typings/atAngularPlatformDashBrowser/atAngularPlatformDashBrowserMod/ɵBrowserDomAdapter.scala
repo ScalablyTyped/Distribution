@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵBrowserDomAdapter")
+@JSImport("@angular/platform-browser", "\u0275BrowserDomAdapter")
 @js.native
 class ɵBrowserDomAdapter () extends ɵangular_packages_platform_browser_platform_browser_l {
   def appendChild(el: Node, node: Node): Unit = js.native
@@ -84,7 +84,7 @@ class ɵBrowserDomAdapter () extends ɵangular_packages_platform_browser_platfor
 }
 
 /* static members */
-@JSImport("@angular/platform-browser", "ɵBrowserDomAdapter")
+@JSImport("@angular/platform-browser", "\u0275BrowserDomAdapter")
 @js.native
 object ɵBrowserDomAdapter extends js.Object {
   def makeCurrent(): Unit = js.native

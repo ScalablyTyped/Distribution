@@ -4,8 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IText
-  extends typings.extjs.Ext.draw.IComponent {
+trait IText extends IComponent {
   /** [Config Option] (Number) */
   var degrees: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the clockwise rotation angle relative to the horizontal axis
@@ -15,22 +14,22 @@ trait IText
   /** [Method] Updates this item s text
   		* @param t String The text to display (html not accepted).
   		*/
-  var setText: js.UndefOr[js.Function1[/* t */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setText: js.UndefOr[js.Function1[/* t */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var styleSelector: js.UndefOr[java.lang.String] = js.undefined
+  var styleSelector: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
 }
 
 object IText {
   @scala.inline
   def apply(
-    IComponent: typings.extjs.Ext.draw.IComponent = null,
+    IComponent: IComponent = null,
     degrees: Int | Double = null,
     setAngle: /* degrees */ js.UndefOr[Double] => Unit = null,
-    setText: /* t */ js.UndefOr[java.lang.String] => Unit = null,
-    styleSelector: java.lang.String = null,
-    text: java.lang.String = null
+    setText: /* t */ js.UndefOr[String] => Unit = null,
+    styleSelector: String = null,
+    text: String = null
   ): IText = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

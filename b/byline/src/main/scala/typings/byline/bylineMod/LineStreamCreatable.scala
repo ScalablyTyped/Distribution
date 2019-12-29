@@ -15,9 +15,7 @@ trait LineStreamCreatable
      with Instantiable0[LineStream]
      with Instantiable1[/* options */ LineStreamOptions, LineStream] {
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
 }

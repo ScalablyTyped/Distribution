@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseAppDashTypesStrings {
   @js.native
-  sealed trait Anon_AllowMultipleInstances extends js.Object
+  sealed trait Anon_AppComponent extends js.Object
   
   @scala.inline
-  def Anon_AllowMultipleInstances: Anon_AllowMultipleInstances = "Anon_AllowMultipleInstances".asInstanceOf[Anon_AllowMultipleInstances]
+  def Anon_AppComponent: Anon_AppComponent = "Anon_AppComponent".asInstanceOf[Anon_AppComponent]
 }
 

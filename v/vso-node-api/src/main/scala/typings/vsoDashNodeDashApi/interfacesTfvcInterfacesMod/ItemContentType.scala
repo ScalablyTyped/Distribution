@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.ItemContentType.Base64Encoded
-import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.ItemContentType.RawText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

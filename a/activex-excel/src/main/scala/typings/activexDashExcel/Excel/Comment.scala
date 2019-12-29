@@ -10,7 +10,8 @@ class Comment protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Author: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Comment_typekey`: Comment = js.native
+  @JSName("Excel.Comment_typekey")
+  var ExcelDotComment_typekey: Comment = js.native
   val Parent: js.Any = js.native
   val Shape: typings.activexDashExcel.Excel.Shape = js.native
   var Visible: Boolean = js.native

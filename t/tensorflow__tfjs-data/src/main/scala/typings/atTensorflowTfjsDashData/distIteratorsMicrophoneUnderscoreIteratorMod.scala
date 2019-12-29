@@ -2,7 +2,6 @@ package typings.atTensorflowTfjsDashData
 
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
 import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.LazyIterator
-import typings.atTensorflowTfjsDashData.distIteratorsMicrophoneUnderscoreIteratorMod.MicrophoneIterator
 import typings.atTensorflowTfjsDashData.distTypesMod.MicrophoneConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.node
 
-import typings.node.nodeNumbers.`false`
+import typings.node.nodeBooleans.`false`
 import typings.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

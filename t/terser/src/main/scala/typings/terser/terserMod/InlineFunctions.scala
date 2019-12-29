@@ -1,10 +1,6 @@
 package typings.terser.terserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.terser.terserMod.InlineFunctions.Disabled
-import typings.terser.terserMod.InlineFunctions.SimpleFunctions
-import typings.terser.terserMod.InlineFunctions.WithArguments
-import typings.terser.terserMod.InlineFunctions.WithArgumentsAndVariables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

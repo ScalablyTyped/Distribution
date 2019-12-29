@@ -2,7 +2,6 @@ package typings.ranjs.ranjsMod
 
 import typings.ranjs.Anon_Closed
 import typings.ranjs.Anon_PassedStatistics
-import typings.ranjs.ranjsMod._dist.State
 import typings.ranjs.ranjsStrings.continuous
 import typings.ranjs.ranjsStrings.discrete
 import scala.scalajs.js

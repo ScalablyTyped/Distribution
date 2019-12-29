@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ColumnType.DATE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ColumnType.NUMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ColumnType.STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

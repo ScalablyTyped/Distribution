@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.extentMod.Extent
-import typings.ol.renderWebglTextureReplayMod.WebGLTextureReplay
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement

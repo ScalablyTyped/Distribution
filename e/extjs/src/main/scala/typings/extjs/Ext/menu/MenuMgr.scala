@@ -45,7 +45,7 @@ object MenuMgr extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Hides all menus that are currently visible
   		* @returns Boolean success True if any active menus were hidden.
   		*/

@@ -2,9 +2,7 @@ package typings.instagramDashPrivateDashApi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.caseless.caselessMod.Caseless
-import typings.instagramDashPrivateDashApi.distTypesCommonDotTypesMod._IgAppModule
 import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.close
-import typings.node.Error
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingHttpHeaders
@@ -13,6 +11,7 @@ import typings.request.Anon_Connect
 import typings.request.Anon_Dns
 import typings.request.requestMod.Request
 import typings.request.requestMod.ResponseAsJSON
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

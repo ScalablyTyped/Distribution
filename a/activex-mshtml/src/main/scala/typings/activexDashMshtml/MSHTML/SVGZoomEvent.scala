@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGZoomEvent")
 @js.native
 class SVGZoomEvent protected () extends js.Object {
-  var `MSHTML.SVGZoomEvent_typekey`: SVGZoomEvent = js.native
+  @JSName("MSHTML.SVGZoomEvent_typekey")
+  var MSHTMLDotSVGZoomEvent_typekey: SVGZoomEvent = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   val cancelable: Boolean = js.native

@@ -11,7 +11,7 @@ trait Store[T] extends StoreLike[T] {
     * Deserializes plain JavaScript to store state.
     */
   @JSName("deserialize")
-  def deserialize_MStore(`this`: Store[T], state: js.Any): T = js.native
+  def deserialize_MStore(state: js.Any): T = js.native
   /**
     * Takes a current reactor state, action type and payload, does the
     * reaction, and returns the new state.
@@ -23,7 +23,7 @@ trait Store[T] extends StoreLike[T] {
     * state after a NuclearJS reactor has been reset
     */
   @JSName("handleReset")
-  def handleReset_MStore(`this`: Store[T], state: T): T = js.native
+  def handleReset_MStore(state: T): T = js.native
   /**
     * Binds an action type to a handler.
     */
@@ -32,7 +32,7 @@ trait Store[T] extends StoreLike[T] {
     * Serializes store state to plain JSON serializable JavaScript.
     */
   @JSName("serialize")
-  def serialize_MStore(`this`: Store[T], state: T): js.Any = js.native
+  def serialize_MStore(state: T): js.Any = js.native
 }
 
 @JSImport("nuclear-js", "Store")

@@ -1,17 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartLineStyle.automatic
-import typings.officeDashJs.Excel.ChartLineStyle.continuous
-import typings.officeDashJs.Excel.ChartLineStyle.dash
-import typings.officeDashJs.Excel.ChartLineStyle.dashDot
-import typings.officeDashJs.Excel.ChartLineStyle.dashDotDot
-import typings.officeDashJs.Excel.ChartLineStyle.dot
-import typings.officeDashJs.Excel.ChartLineStyle.grey25
-import typings.officeDashJs.Excel.ChartLineStyle.grey50
-import typings.officeDashJs.Excel.ChartLineStyle.grey75
-import typings.officeDashJs.Excel.ChartLineStyle.none
-import typings.officeDashJs.Excel.ChartLineStyle.roundDot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

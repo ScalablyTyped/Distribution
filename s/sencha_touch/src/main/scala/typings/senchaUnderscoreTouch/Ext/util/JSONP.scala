@@ -14,11 +14,11 @@ class JSONP () extends js.Object
 @js.native
 object JSONP extends js.Object {
   /** [Property] (String) */
-  var callbackKey: java.lang.String = js.native
+  var callbackKey: String = js.native
   /** [Property] (Boolean) */
   var disableCaching: Boolean = js.native
   /** [Property] (String) */
-  var disableCachingParam: java.lang.String = js.native
+  var disableCachingParam: String = js.native
   /** [Property] (Ext.Class) */
   var self: IClass = js.native
   /** [Property] (Number) */
@@ -53,7 +53,7 @@ object JSONP extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs

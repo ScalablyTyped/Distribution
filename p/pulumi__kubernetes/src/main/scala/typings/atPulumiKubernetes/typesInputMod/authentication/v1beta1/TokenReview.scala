@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.authentication.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`authenticationDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.authenticationDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait TokenReview extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`authenticationDOTk8sDOTio/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[authenticationDotk8sDotioSlashv1beta1]] = js.undefined
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -37,7 +37,7 @@ object TokenReview {
   @scala.inline
   def apply(
     spec: Input[TokenReviewSpec],
-    apiVersion: Input[`authenticationDOTk8sDOTio/v1beta1`] = null,
+    apiVersion: Input[authenticationDotk8sDotioSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.TokenReview] = null,
     metadata: Input[ObjectMeta] = null
   ): TokenReview = {

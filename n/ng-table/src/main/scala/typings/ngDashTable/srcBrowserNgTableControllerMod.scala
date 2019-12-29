@@ -8,7 +8,6 @@ import typings.angular.angularMod.IParseService
 import typings.angular.angularMod.IRootScopeService
 import typings.angular.angularMod.ITimeoutService
 import typings.ngDashTable.srcBrowserNgTableColumnMod.NgTableColumn
-import typings.ngDashTable.srcBrowserNgTableControllerMod.ITableScope
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.IColumnDef
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.IDynamicTableColDef
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.ITableInputAttributes

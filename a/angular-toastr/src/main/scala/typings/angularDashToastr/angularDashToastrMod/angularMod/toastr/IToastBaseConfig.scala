@@ -12,25 +12,9 @@ trait IToastBaseConfig extends js.Object {
   var extendedTimeOut: js.UndefOr[Double] = js.undefined
   var extraData: js.UndefOr[js.Any] = js.undefined
   var messageClass: js.UndefOr[String] = js.undefined
-  var onHidden: js.UndefOr[
-    js.Function2[
-      /* wasClicked */ Boolean, 
-      /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast, 
-      Unit
-    ]
-  ] = js.undefined
-  var onShown: js.UndefOr[
-    js.Function1[
-      /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast, 
-      Unit
-    ]
-  ] = js.undefined
-  var onTap: js.UndefOr[
-    js.Function1[
-      /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast, 
-      Unit
-    ]
-  ] = js.undefined
+  var onHidden: js.UndefOr[js.Function2[/* wasClicked */ Boolean, /* toast */ IToast, Unit]] = js.undefined
+  var onShown: js.UndefOr[js.Function1[/* toast */ IToast, Unit]] = js.undefined
+  var onTap: js.UndefOr[js.Function1[/* toast */ IToast, Unit]] = js.undefined
   var progressBar: js.UndefOr[Boolean] = js.undefined
   var tapToDismiss: js.UndefOr[Boolean] = js.undefined
   var templates: js.UndefOr[Anon_Progressbar] = js.undefined
@@ -48,9 +32,9 @@ object IToastBaseConfig {
     extendedTimeOut: Int | Double = null,
     extraData: js.Any = null,
     messageClass: String = null,
-    onHidden: (/* wasClicked */ Boolean, /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast) => Unit = null,
-    onShown: /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast => Unit = null,
-    onTap: /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast => Unit = null,
+    onHidden: (/* wasClicked */ Boolean, /* toast */ IToast) => Unit = null,
+    onShown: /* toast */ IToast => Unit = null,
+    onTap: /* toast */ IToast => Unit = null,
     progressBar: js.UndefOr[Boolean] = js.undefined,
     tapToDismiss: js.UndefOr[Boolean] = js.undefined,
     templates: Anon_Progressbar = null,

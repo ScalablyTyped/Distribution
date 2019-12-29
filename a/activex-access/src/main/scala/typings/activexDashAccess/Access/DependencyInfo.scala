@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.DependencyInfo")
 @js.native
 class DependencyInfo protected () extends js.Object {
-  var `Access.DependencyInfo_typekey`: DependencyInfo = js.native
+  @JSName("Access.DependencyInfo_typekey")
+  var AccessDotDependencyInfo_typekey: DependencyInfo = js.native
   @JSName("Dependants")
   val Dependants_Original: DependencyObjects = js.native
   @JSName("Dependencies")

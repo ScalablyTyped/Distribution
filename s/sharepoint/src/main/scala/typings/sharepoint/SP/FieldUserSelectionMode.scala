@@ -1,8 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.FieldUserSelectionMode.peopleAndGroups
-import typings.sharepoint.SP.FieldUserSelectionMode.peopleOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

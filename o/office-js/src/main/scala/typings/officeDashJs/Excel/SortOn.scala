@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.SortOn.cellColor
-import typings.officeDashJs.Excel.SortOn.fontColor
-import typings.officeDashJs.Excel.SortOn.icon
-import typings.officeDashJs.Excel.SortOn.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

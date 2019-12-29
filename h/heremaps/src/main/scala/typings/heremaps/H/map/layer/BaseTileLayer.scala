@@ -1,5 +1,6 @@
 package typings.heremaps.H.map.layer
 
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.layer.ITileLayer.Options
 import typings.heremaps.H.map.layer.ITileLayer.Response
 import typings.heremaps.H.map.provider.Tile
@@ -36,8 +37,8 @@ class BaseTileLayer protected () extends Layer {
     * @param opt_zoom {number=} - overrides current projection zoom level
     * @returns {H.math.Rect} - projected 2d space rect cooresponding to provided geo bounds
     */
-  def geoRectToRect(geoRect: typings.heremaps.H.geo.Rect): typings.heremaps.H.math.Rect = js.native
-  def geoRectToRect(geoRect: typings.heremaps.H.geo.Rect, opt_zoom: Double): typings.heremaps.H.math.Rect = js.native
+  def geoRectToRect(geoRect: Rect): typings.heremaps.H.math.Rect = js.native
+  def geoRectToRect(geoRect: Rect, opt_zoom: Double): typings.heremaps.H.math.Rect = js.native
   /**
     * This method returns the provider which feeds this layer with data.
     * @returns {H.map.provider.TileProvider} - this layer's provider

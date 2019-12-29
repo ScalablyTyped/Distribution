@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object jestDashUtilStrings {
   @js.native
-  sealed trait ` BACKSLASHu203A ` extends js.Object
+  sealed trait `SpaceSinglerightpointinganglequotationmark ` extends js.Object
   
   @scala.inline
-  def ` BACKSLASHu203A `: ` BACKSLASHu203A ` = " \u203A ".asInstanceOf[` BACKSLASHu203A `]
+  def `SpaceSinglerightpointinganglequotationmark `: `SpaceSinglerightpointinganglequotationmark ` = " \u203A ".asInstanceOf[`SpaceSinglerightpointinganglequotationmark `]
 }
 

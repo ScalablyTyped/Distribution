@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Excel.AllowEditRange")
 @js.native
 class AllowEditRange protected () extends js.Object {
-  var `Excel.AllowEditRange_typekey`: AllowEditRange = js.native
+  @JSName("Excel.AllowEditRange_typekey")
+  var ExcelDotAllowEditRange_typekey: AllowEditRange = js.native
   @JSName("Range")
   var Range_Original: Range = js.native
   var Title: String = js.native

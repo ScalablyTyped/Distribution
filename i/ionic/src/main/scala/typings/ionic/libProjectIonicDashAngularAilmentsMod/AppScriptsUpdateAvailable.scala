@@ -1,6 +1,6 @@
 package typings.ionic.libProjectIonicDashAngularAilmentsMod
 
-import typings.ionic.ionicNumbers.`true`
+import typings.ionic.ionicBooleans.`true`
 import typings.ionic.ionicStrings.`app-scripts-update-available`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

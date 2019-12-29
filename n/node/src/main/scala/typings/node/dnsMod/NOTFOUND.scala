@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dns", "NOTFOUND")
 @js.native
-object NOTFOUND
-  extends TopLevel[java.lang.String]
+object NOTFOUND extends TopLevel[String]
 

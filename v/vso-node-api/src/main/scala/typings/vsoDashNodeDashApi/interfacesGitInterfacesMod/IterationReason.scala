@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.IterationReason.Create
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.IterationReason.ForcePush
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.IterationReason.Push
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.IterationReason.Rebase
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.IterationReason.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

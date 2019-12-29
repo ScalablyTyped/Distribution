@@ -1,7 +1,6 @@
 package typings.baconjs
 
 import typings.baconjs.typesFrombinderMod.EventTransformer
-import typings.baconjs.typesFromeventMod.EventSourceFn
 import typings.baconjs.typesObservableMod.EventStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

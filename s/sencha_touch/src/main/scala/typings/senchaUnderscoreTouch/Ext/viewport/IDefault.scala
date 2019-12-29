@@ -20,7 +20,7 @@ trait IDefault extends IContainer {
   /** [Method] Returns the current orientation
   		* @returns String portrait or landscape
   		*/
-  var getOrientation: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getOrientation: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of preventPanning
   		* @returns Boolean
   		*/
@@ -48,17 +48,13 @@ trait IDefault extends IContainer {
   /** [Method] Hides a menu specified by the menu s side
   		* @param side String The side which the menu is placed.
   		*/
-  var hideMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var hideMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Hides all menus except for the side specified
   		* @param side String Side(s) not to hide
   		* @param animation String Animation to hide with
   		*/
   var hideOtherMenus: js.UndefOr[
-    js.Function2[
-      /* side */ js.UndefOr[java.lang.String], 
-      /* animation */ js.UndefOr[java.lang.String], 
-      Unit
-    ]
+    js.Function2[/* side */ js.UndefOr[String], /* animation */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Property] (Boolean) */
   var isReady: js.UndefOr[Boolean] = js.undefined
@@ -69,7 +65,7 @@ trait IDefault extends IContainer {
   /** [Method] Removes a menu from a specified side
   		* @param side String The side to remove the menu from
   		*/
-  var removeMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var removeMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of autoMaximize
   		* @param autoMaximize Boolean The new value.
   		*/
@@ -96,11 +92,11 @@ trait IDefault extends IContainer {
   /** [Method] Shows a menu specified by the menu s side
   		* @param side String The side which the menu is placed.
   		*/
-  var showMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var showMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Toggles the menu specified by side
   		* @param side String The side which the menu is placed.
   		*/
-  var toggleMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var toggleMenu: js.UndefOr[js.Function1[/* side */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IDefault {
@@ -110,26 +106,26 @@ object IDefault {
     autoMaximize: js.UndefOr[Boolean] = js.undefined,
     getAutoMaximize: () => Boolean = null,
     getLayout: () => _ = null,
-    getOrientation: () => java.lang.String = null,
+    getOrientation: () => String = null,
     getPreventPanning: () => Boolean = null,
     getPreventZooming: () => Boolean = null,
     getUseBodyElement: () => Boolean = null,
     getWindowHeight: () => Double = null,
     getWindowWidth: () => Double = null,
     hideAllMenus: /* animation */ js.UndefOr[js.Any] => Unit = null,
-    hideMenu: /* side */ js.UndefOr[java.lang.String] => Unit = null,
-    hideOtherMenus: (/* side */ js.UndefOr[java.lang.String], /* animation */ js.UndefOr[java.lang.String]) => Unit = null,
+    hideMenu: /* side */ js.UndefOr[String] => Unit = null,
+    hideOtherMenus: (/* side */ js.UndefOr[String], /* animation */ js.UndefOr[String]) => Unit = null,
     isReady: js.UndefOr[Boolean] = js.undefined,
     preventPanning: js.UndefOr[Boolean] = js.undefined,
     preventZooming: js.UndefOr[Boolean] = js.undefined,
-    removeMenu: /* side */ js.UndefOr[java.lang.String] => Unit = null,
+    removeMenu: /* side */ js.UndefOr[String] => Unit = null,
     setAutoMaximize: /* autoMaximize */ js.UndefOr[Boolean] => Unit = null,
     setMenu: (/* menu */ js.UndefOr[IMenu], /* config */ js.UndefOr[js.Any]) => Unit = null,
     setPreventPanning: /* preventPanning */ js.UndefOr[Boolean] => Unit = null,
     setPreventZooming: /* preventZooming */ js.UndefOr[Boolean] => Unit = null,
     setUseBodyElement: /* useBodyElement */ js.UndefOr[Boolean] => Unit = null,
-    showMenu: /* side */ js.UndefOr[java.lang.String] => Unit = null,
-    toggleMenu: /* side */ js.UndefOr[java.lang.String] => Unit = null
+    showMenu: /* side */ js.UndefOr[String] => Unit = null,
+    toggleMenu: /* side */ js.UndefOr[String] => Unit = null
   ): IDefault = {
     val __obj = js.Dynamic.literal()
     if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)

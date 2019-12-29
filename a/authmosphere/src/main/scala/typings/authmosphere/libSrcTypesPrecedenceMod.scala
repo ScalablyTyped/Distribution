@@ -1,6 +1,5 @@
 package typings.authmosphere
 
-import typings.authmosphere.libSrcTypesPrecedenceMod.PrecedenceFunction
 import typings.express.expressMod.NextFunction
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response

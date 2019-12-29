@@ -10,7 +10,7 @@ trait DirectionsRendererOptions extends js.Object {
   var draggable: js.UndefOr[Boolean] = js.undefined
   var hideRouteList: js.UndefOr[Boolean] = js.undefined
   var infoWindow: js.UndefOr[InfoWindow] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var markerOptions: js.UndefOr[MarkerOptions] = js.undefined
   var panel: js.UndefOr[Element] = js.undefined
   var polylineOptions: js.UndefOr[PolylineOptions] = js.undefined
@@ -29,7 +29,7 @@ object DirectionsRendererOptions {
     draggable: js.UndefOr[Boolean] = js.undefined,
     hideRouteList: js.UndefOr[Boolean] = js.undefined,
     infoWindow: InfoWindow = null,
-    map: Map = null,
+    map: Map[Element] = null,
     markerOptions: MarkerOptions = null,
     panel: Element = null,
     polylineOptions: PolylineOptions = null,

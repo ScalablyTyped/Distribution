@@ -30,15 +30,15 @@ import typings.cypress.JQuery.ValHooks
 import typings.cypress.JQuery.htmlString
 import typings.cypress.JQuery.jqXHR
 import typings.cypress.JQuery.jqXHR.DoneCallback
-import typings.cypress.cypressNumbers.`true`
+import typings.cypress.cypressBooleans.`true`
 import typings.cypress.cypressStrings.`null`
-import typings.cypress.cypressStrings.`object`
 import typings.cypress.cypressStrings.array
 import typings.cypress.cypressStrings.boolean
 import typings.cypress.cypressStrings.date_
 import typings.cypress.cypressStrings.error
 import typings.cypress.cypressStrings.function
 import typings.cypress.cypressStrings.number
+import typings.cypress.cypressStrings.object_
 import typings.cypress.cypressStrings.regexp
 import typings.cypress.cypressStrings.string
 import typings.cypress.cypressStrings.symbol
@@ -15240,7 +15240,7 @@ trait JQueryStatic extends js.Object {
   </html>
   ```
     */
-  def `type`(obj: js.Any): array | boolean | date_ | error | function | `null` | number | `object` | regexp | string | symbol | undefined = js.native
+  def `type`(obj: js.Any): array | boolean | date_ | error | function | `null` | number | object_ | regexp | string | symbol | undefined = js.native
   /**
     * Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.
     * @param array The Array of DOM elements.

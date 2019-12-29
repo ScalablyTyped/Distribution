@@ -2,7 +2,7 @@ package typings.ecol
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.ecol.ecolNumbers.`false`
+import typings.ecol.ecolBooleans.`false`
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
@@ -122,6 +122,7 @@ object libMapsTreeMultiMapCollectionMod extends js.Object {
     /**
       * Number of elements in the container.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

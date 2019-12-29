@@ -17,13 +17,13 @@ object yandexDashMapsStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait `cluster#balloonAccordion` extends js.Object
+  sealed trait clusterNumbersignballoonAccordion extends js.Object
   
   @js.native
-  sealed trait `cluster#balloonCarousel` extends js.Object
+  sealed trait clusterNumbersignballoonCarousel extends js.Object
   
   @js.native
-  sealed trait `cluster#balloonTwoColumns` extends js.Object
+  sealed trait clusterNumbersignballoonTwoColumns extends js.Object
   
   @js.native
   sealed trait default
@@ -31,37 +31,37 @@ object yandexDashMapsStrings {
        with ControlSetKey
   
   @js.native
-  sealed trait `default#circle` extends _OverlayKey
+  sealed trait defaultNumbersigncircle extends _OverlayKey
   
   @js.native
-  sealed trait `default#geoObject` extends _InteractivityModelKey
+  sealed trait defaultNumbersigngeoObject extends _InteractivityModelKey
   
   @js.native
-  sealed trait `default#layer` extends _InteractivityModelKey
+  sealed trait defaultNumbersignlayer extends _InteractivityModelKey
   
   @js.native
-  sealed trait `default#opaque` extends _InteractivityModelKey
+  sealed trait defaultNumbersignopaque extends _InteractivityModelKey
   
   @js.native
-  sealed trait `default#pin` extends _OverlayKey
+  sealed trait defaultNumbersignpin extends _OverlayKey
   
   @js.native
-  sealed trait `default#placemark` extends _OverlayKey
+  sealed trait defaultNumbersignplacemark extends _OverlayKey
   
   @js.native
-  sealed trait `default#polygon` extends _OverlayKey
+  sealed trait defaultNumbersignpolygon extends _OverlayKey
   
   @js.native
-  sealed trait `default#polyline` extends _OverlayKey
+  sealed trait defaultNumbersignpolyline extends _OverlayKey
   
   @js.native
-  sealed trait `default#rectangle` extends _OverlayKey
+  sealed trait defaultNumbersignrectangle extends _OverlayKey
   
   @js.native
-  sealed trait `default#silent` extends _InteractivityModelKey
+  sealed trait defaultNumbersignsilent extends _InteractivityModelKey
   
   @js.native
-  sealed trait `default#transparent` extends _InteractivityModelKey
+  sealed trait defaultNumbersigntransparent extends _InteractivityModelKey
   
   @js.native
   sealed trait district extends js.Object
@@ -83,34 +83,34 @@ object yandexDashMapsStrings {
   sealed trait hidden extends js.Object
   
   @js.native
-  sealed trait `hotspot#circle` extends _OverlayKey
+  sealed trait hotspotNumbersigncircle extends _OverlayKey
   
   @js.native
-  sealed trait `hotspot#placemark` extends _OverlayKey
+  sealed trait hotspotNumbersignplacemark extends _OverlayKey
   
   @js.native
-  sealed trait `hotspot#polygon` extends _OverlayKey
+  sealed trait hotspotNumbersignpolygon extends _OverlayKey
   
   @js.native
-  sealed trait `hotspot#polyline` extends _OverlayKey
+  sealed trait hotspotNumbersignpolyline extends _OverlayKey
   
   @js.native
-  sealed trait `hotspot#rectangle` extends _OverlayKey
+  sealed trait hotspotNumbersignrectangle extends _OverlayKey
   
   @js.native
   sealed trait house extends js.Object
   
   @js.native
-  sealed trait `html#balloon` extends _OverlayKey
+  sealed trait htmlNumbersignballoon extends _OverlayKey
   
   @js.native
-  sealed trait `html#hint` extends _OverlayKey
+  sealed trait htmlNumbersignhint extends _OverlayKey
   
   @js.native
-  sealed trait `html#placemark` extends _OverlayKey
+  sealed trait htmlNumbersignplacemark extends _OverlayKey
   
   @js.native
-  sealed trait `html#rectangle` extends _OverlayKey
+  sealed trait htmlNumbersignrectangle extends _OverlayKey
   
   @js.native
   sealed trait ifNull extends js.Object
@@ -225,22 +225,22 @@ object yandexDashMapsStrings {
   sealed trait visible extends js.Object
   
   @js.native
-  sealed trait `yandex#airPanorama` extends js.Object
+  sealed trait yandexNumbersignairPanorama extends js.Object
   
   @js.native
-  sealed trait `yandex#hybrid` extends js.Object
+  sealed trait yandexNumbersignhybrid extends js.Object
   
   @js.native
-  sealed trait `yandex#map` extends js.Object
+  sealed trait yandexNumbersignmap extends js.Object
   
   @js.native
-  sealed trait `yandex#panorama` extends js.Object
+  sealed trait yandexNumbersignpanorama extends js.Object
   
   @js.native
-  sealed trait `yandex#satellite` extends js.Object
+  sealed trait yandexNumbersignsatellite extends js.Object
   
   @js.native
-  sealed trait `yandex#search` extends js.Object
+  sealed trait yandexNumbersignsearch extends js.Object
   
   @js.native
   sealed trait zoomControl
@@ -252,35 +252,35 @@ object yandexDashMapsStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def `cluster#balloonAccordion`: `cluster#balloonAccordion` = "cluster#balloonAccordion".asInstanceOf[`cluster#balloonAccordion`]
+  def clusterNumbersignballoonAccordion: clusterNumbersignballoonAccordion = "cluster#balloonAccordion".asInstanceOf[clusterNumbersignballoonAccordion]
   @scala.inline
-  def `cluster#balloonCarousel`: `cluster#balloonCarousel` = "cluster#balloonCarousel".asInstanceOf[`cluster#balloonCarousel`]
+  def clusterNumbersignballoonCarousel: clusterNumbersignballoonCarousel = "cluster#balloonCarousel".asInstanceOf[clusterNumbersignballoonCarousel]
   @scala.inline
-  def `cluster#balloonTwoColumns`: `cluster#balloonTwoColumns` = "cluster#balloonTwoColumns".asInstanceOf[`cluster#balloonTwoColumns`]
+  def clusterNumbersignballoonTwoColumns: clusterNumbersignballoonTwoColumns = "cluster#balloonTwoColumns".asInstanceOf[clusterNumbersignballoonTwoColumns]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def `default#circle`: `default#circle` = "default#circle".asInstanceOf[`default#circle`]
+  def defaultNumbersigncircle: defaultNumbersigncircle = "default#circle".asInstanceOf[defaultNumbersigncircle]
   @scala.inline
-  def `default#geoObject`: `default#geoObject` = "default#geoObject".asInstanceOf[`default#geoObject`]
+  def defaultNumbersigngeoObject: defaultNumbersigngeoObject = "default#geoObject".asInstanceOf[defaultNumbersigngeoObject]
   @scala.inline
-  def `default#layer`: `default#layer` = "default#layer".asInstanceOf[`default#layer`]
+  def defaultNumbersignlayer: defaultNumbersignlayer = "default#layer".asInstanceOf[defaultNumbersignlayer]
   @scala.inline
-  def `default#opaque`: `default#opaque` = "default#opaque".asInstanceOf[`default#opaque`]
+  def defaultNumbersignopaque: defaultNumbersignopaque = "default#opaque".asInstanceOf[defaultNumbersignopaque]
   @scala.inline
-  def `default#pin`: `default#pin` = "default#pin".asInstanceOf[`default#pin`]
+  def defaultNumbersignpin: defaultNumbersignpin = "default#pin".asInstanceOf[defaultNumbersignpin]
   @scala.inline
-  def `default#placemark`: `default#placemark` = "default#placemark".asInstanceOf[`default#placemark`]
+  def defaultNumbersignplacemark: defaultNumbersignplacemark = "default#placemark".asInstanceOf[defaultNumbersignplacemark]
   @scala.inline
-  def `default#polygon`: `default#polygon` = "default#polygon".asInstanceOf[`default#polygon`]
+  def defaultNumbersignpolygon: defaultNumbersignpolygon = "default#polygon".asInstanceOf[defaultNumbersignpolygon]
   @scala.inline
-  def `default#polyline`: `default#polyline` = "default#polyline".asInstanceOf[`default#polyline`]
+  def defaultNumbersignpolyline: defaultNumbersignpolyline = "default#polyline".asInstanceOf[defaultNumbersignpolyline]
   @scala.inline
-  def `default#rectangle`: `default#rectangle` = "default#rectangle".asInstanceOf[`default#rectangle`]
+  def defaultNumbersignrectangle: defaultNumbersignrectangle = "default#rectangle".asInstanceOf[defaultNumbersignrectangle]
   @scala.inline
-  def `default#silent`: `default#silent` = "default#silent".asInstanceOf[`default#silent`]
+  def defaultNumbersignsilent: defaultNumbersignsilent = "default#silent".asInstanceOf[defaultNumbersignsilent]
   @scala.inline
-  def `default#transparent`: `default#transparent` = "default#transparent".asInstanceOf[`default#transparent`]
+  def defaultNumbersigntransparent: defaultNumbersigntransparent = "default#transparent".asInstanceOf[defaultNumbersigntransparent]
   @scala.inline
   def district: district = "district".asInstanceOf[district]
   @scala.inline
@@ -292,25 +292,25 @@ object yandexDashMapsStrings {
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
-  def `hotspot#circle`: `hotspot#circle` = "hotspot#circle".asInstanceOf[`hotspot#circle`]
+  def hotspotNumbersigncircle: hotspotNumbersigncircle = "hotspot#circle".asInstanceOf[hotspotNumbersigncircle]
   @scala.inline
-  def `hotspot#placemark`: `hotspot#placemark` = "hotspot#placemark".asInstanceOf[`hotspot#placemark`]
+  def hotspotNumbersignplacemark: hotspotNumbersignplacemark = "hotspot#placemark".asInstanceOf[hotspotNumbersignplacemark]
   @scala.inline
-  def `hotspot#polygon`: `hotspot#polygon` = "hotspot#polygon".asInstanceOf[`hotspot#polygon`]
+  def hotspotNumbersignpolygon: hotspotNumbersignpolygon = "hotspot#polygon".asInstanceOf[hotspotNumbersignpolygon]
   @scala.inline
-  def `hotspot#polyline`: `hotspot#polyline` = "hotspot#polyline".asInstanceOf[`hotspot#polyline`]
+  def hotspotNumbersignpolyline: hotspotNumbersignpolyline = "hotspot#polyline".asInstanceOf[hotspotNumbersignpolyline]
   @scala.inline
-  def `hotspot#rectangle`: `hotspot#rectangle` = "hotspot#rectangle".asInstanceOf[`hotspot#rectangle`]
+  def hotspotNumbersignrectangle: hotspotNumbersignrectangle = "hotspot#rectangle".asInstanceOf[hotspotNumbersignrectangle]
   @scala.inline
   def house: house = "house".asInstanceOf[house]
   @scala.inline
-  def `html#balloon`: `html#balloon` = "html#balloon".asInstanceOf[`html#balloon`]
+  def htmlNumbersignballoon: htmlNumbersignballoon = "html#balloon".asInstanceOf[htmlNumbersignballoon]
   @scala.inline
-  def `html#hint`: `html#hint` = "html#hint".asInstanceOf[`html#hint`]
+  def htmlNumbersignhint: htmlNumbersignhint = "html#hint".asInstanceOf[htmlNumbersignhint]
   @scala.inline
-  def `html#placemark`: `html#placemark` = "html#placemark".asInstanceOf[`html#placemark`]
+  def htmlNumbersignplacemark: htmlNumbersignplacemark = "html#placemark".asInstanceOf[htmlNumbersignplacemark]
   @scala.inline
-  def `html#rectangle`: `html#rectangle` = "html#rectangle".asInstanceOf[`html#rectangle`]
+  def htmlNumbersignrectangle: htmlNumbersignrectangle = "html#rectangle".asInstanceOf[htmlNumbersignrectangle]
   @scala.inline
   def ifNull: ifNull = "ifNull".asInstanceOf[ifNull]
   @scala.inline
@@ -376,17 +376,17 @@ object yandexDashMapsStrings {
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline
-  def `yandex#airPanorama`: `yandex#airPanorama` = "yandex#airPanorama".asInstanceOf[`yandex#airPanorama`]
+  def yandexNumbersignairPanorama: yandexNumbersignairPanorama = "yandex#airPanorama".asInstanceOf[yandexNumbersignairPanorama]
   @scala.inline
-  def `yandex#hybrid`: `yandex#hybrid` = "yandex#hybrid".asInstanceOf[`yandex#hybrid`]
+  def yandexNumbersignhybrid: yandexNumbersignhybrid = "yandex#hybrid".asInstanceOf[yandexNumbersignhybrid]
   @scala.inline
-  def `yandex#map`: `yandex#map` = "yandex#map".asInstanceOf[`yandex#map`]
+  def yandexNumbersignmap: yandexNumbersignmap = "yandex#map".asInstanceOf[yandexNumbersignmap]
   @scala.inline
-  def `yandex#panorama`: `yandex#panorama` = "yandex#panorama".asInstanceOf[`yandex#panorama`]
+  def yandexNumbersignpanorama: yandexNumbersignpanorama = "yandex#panorama".asInstanceOf[yandexNumbersignpanorama]
   @scala.inline
-  def `yandex#satellite`: `yandex#satellite` = "yandex#satellite".asInstanceOf[`yandex#satellite`]
+  def yandexNumbersignsatellite: yandexNumbersignsatellite = "yandex#satellite".asInstanceOf[yandexNumbersignsatellite]
   @scala.inline
-  def `yandex#search`: `yandex#search` = "yandex#search".asInstanceOf[`yandex#search`]
+  def yandexNumbersignsearch: yandexNumbersignsearch = "yandex#search".asInstanceOf[yandexNumbersignsearch]
   @scala.inline
   def zoomControl: zoomControl = "zoomControl".asInstanceOf[zoomControl]
 }

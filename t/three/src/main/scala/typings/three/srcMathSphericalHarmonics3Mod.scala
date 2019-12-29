@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.std.ArrayLike
-import typings.three.srcMathSphericalHarmonics3Mod.SphericalHarmonics3
 import typings.three.srcMathVector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`

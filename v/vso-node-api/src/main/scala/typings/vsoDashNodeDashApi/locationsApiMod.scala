@@ -8,7 +8,6 @@ import typings.vsoDashNodeDashApi.interfacesCommonVsoBaseInterfacesMod.IRequestO
 import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ConnectionData
 import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ResourceAreaInfo
 import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceDefinition
-import typings.vsoDashNodeDashApi.locationsApiMod.ILocationsApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class SortField protected () extends js.Object {
   val Creator: XlCreator = js.native
   var CustomOrder: js.Any = js.native
   var DataOption: XlSortDataOption = js.native
-  var `Excel.SortField_typekey`: SortField = js.native
+  @JSName("Excel.SortField_typekey")
+  var ExcelDotSortField_typekey: SortField = js.native
   @JSName("Key")
   val Key_Original: Range = js.native
   var Order: XlSortOrder = js.native

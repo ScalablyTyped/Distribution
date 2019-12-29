@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class XmlNamespace protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.XmlNamespace_typekey`: XmlNamespace = js.native
+  @JSName("Excel.XmlNamespace_typekey")
+  var ExcelDotXmlNamespace_typekey: XmlNamespace = js.native
   val Parent: js.Any = js.native
   val Prefix: String = js.native
   val Uri: String = js.native

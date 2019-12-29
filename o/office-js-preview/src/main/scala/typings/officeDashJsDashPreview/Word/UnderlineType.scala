@@ -1,27 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.UnderlineType.dashLine
-import typings.officeDashJsDashPreview.Word.UnderlineType.dashLineHeavy
-import typings.officeDashJsDashPreview.Word.UnderlineType.dashLineLong
-import typings.officeDashJsDashPreview.Word.UnderlineType.dashLineLongHeavy
-import typings.officeDashJsDashPreview.Word.UnderlineType.dotDashLine
-import typings.officeDashJsDashPreview.Word.UnderlineType.dotDashLineHeavy
-import typings.officeDashJsDashPreview.Word.UnderlineType.dotLine
-import typings.officeDashJsDashPreview.Word.UnderlineType.dotted
-import typings.officeDashJsDashPreview.Word.UnderlineType.dottedHeavy
-import typings.officeDashJsDashPreview.Word.UnderlineType.double
-import typings.officeDashJsDashPreview.Word.UnderlineType.hidden
-import typings.officeDashJsDashPreview.Word.UnderlineType.mixed
-import typings.officeDashJsDashPreview.Word.UnderlineType.none
-import typings.officeDashJsDashPreview.Word.UnderlineType.single
-import typings.officeDashJsDashPreview.Word.UnderlineType.thick
-import typings.officeDashJsDashPreview.Word.UnderlineType.twoDotDashLine
-import typings.officeDashJsDashPreview.Word.UnderlineType.twoDotDashLineHeavy
-import typings.officeDashJsDashPreview.Word.UnderlineType.wave
-import typings.officeDashJsDashPreview.Word.UnderlineType.waveDouble
-import typings.officeDashJsDashPreview.Word.UnderlineType.waveHeavy
-import typings.officeDashJsDashPreview.Word.UnderlineType.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

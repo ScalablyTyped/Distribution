@@ -3,9 +3,6 @@ package typings.dialogflow.protosProtosMod.google.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.protobuf.FileOptions.OptimizeMode
-import typings.dialogflow.protosProtosMod.google.protobuf.FileOptions.OptimizeMode.CODE_SIZE
-import typings.dialogflow.protosProtosMod.google.protobuf.FileOptions.OptimizeMode.LITE_RUNTIME
-import typings.dialogflow.protosProtosMod.google.protobuf.FileOptions.OptimizeMode.SPEED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

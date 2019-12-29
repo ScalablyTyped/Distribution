@@ -1,6 +1,5 @@
 package typings.shopifyDashPrime
 
-import typings.shopifyDashPrime.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,41 +10,41 @@ object distEnumsWebhookUnderscoreTopicMod extends js.Object {
   trait _WebhookTopic extends js.Object
   
   /* Rewritten from type alias, can be one of: 
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`orders/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`orders/delete`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`orders/updated`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`orders/paid`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`orders/cancelled`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`orders/fulfilled`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`orders/partially_fulfilled`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`order_transations/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`carts/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`carts/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`checkouts/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`checkouts/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`checkouts/delete`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`refunds/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`products/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`products/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`products/delete`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`collections/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`collections/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`collections/delete`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customer_groups/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customer_groups/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customer_groups/delete`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customers/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customers/enable`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customers/disable`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customers/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`customers/delete`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`fulfillments/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`fulfillments/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`shop/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`disputes/create`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`disputes/update`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`app/uninstalled`
-    - typings.shopifyDashPrime.shopifyDashPrimeStrings.`themes/publish`
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.ordersSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.ordersSlashdelete
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.ordersSlashupdated
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.ordersSlashpaid
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.ordersSlashcancelled
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.ordersSlashfulfilled
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.ordersSlashpartially_fulfilled
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.order_transationsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.cartsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.cartsSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.checkoutsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.checkoutsSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.checkoutsSlashdelete
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.refundsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.productsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.productsSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.productsSlashdelete
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.collectionsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.collectionsSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.collectionsSlashdelete
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customer_groupsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customer_groupsSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customer_groupsSlashdelete
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customersSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customersSlashenable
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customersSlashdisable
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customersSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.customersSlashdelete
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.fulfillmentsSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.fulfillmentsSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.shopSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.disputesSlashcreate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.disputesSlashupdate
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.appSlashuninstalled
+    - typings.shopifyDashPrime.shopifyDashPrimeStrings.themesSlashpublish
     - java.lang.String
   */
   type WebhookTopic = _WebhookTopic | String

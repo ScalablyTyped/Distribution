@@ -11,7 +11,8 @@ class BuildingBlockEntries protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.BuildingBlockEntries_typekey`: BuildingBlockEntries = js.native
+  @JSName("Word.BuildingBlockEntries_typekey")
+  var WordDotBuildingBlockEntries_typekey: BuildingBlockEntries = js.native
   /** @param Word.WdDocPartInsertOptions [InsertOptions=0] */
   def Add(Name: String, Type: WdBuildingBlockTypes, Category: String, Range: Range, Description: js.Any): BuildingBlock = js.native
   def Add(

@@ -17,6 +17,7 @@ class OlkFrameHeader protected () extends js.Object {
   var ForeColor: OLE_COLOR = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkFrameHeader_typekey`: OlkFrameHeader = js.native
+  @JSName("Outlook.OlkFrameHeader_typekey")
+  var OutlookDotOlkFrameHeader_typekey: OlkFrameHeader = js.native
 }
 

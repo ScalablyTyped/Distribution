@@ -1,8 +1,6 @@
 package typings.winrt.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.StartScreen.ForegroundText.dark
-import typings.winrt.Windows.UI.StartScreen.ForegroundText.light
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

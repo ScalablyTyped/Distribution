@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Proximity.TriggeredConnectState.canceled
-import typings.winrtDashUwp.Windows.Networking.Proximity.TriggeredConnectState.completed
-import typings.winrtDashUwp.Windows.Networking.Proximity.TriggeredConnectState.connecting
-import typings.winrtDashUwp.Windows.Networking.Proximity.TriggeredConnectState.failed
-import typings.winrtDashUwp.Windows.Networking.Proximity.TriggeredConnectState.listening
-import typings.winrtDashUwp.Windows.Networking.Proximity.TriggeredConnectState.peerFound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

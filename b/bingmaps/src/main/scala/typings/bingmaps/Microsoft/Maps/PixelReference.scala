@@ -1,9 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.PixelReference.control
-import typings.bingmaps.Microsoft.Maps.PixelReference.page
-import typings.bingmaps.Microsoft.Maps.PixelReference.viewport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,6 +3,7 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IClass
+import typings.extjs.Ext.core.IElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,11 +32,7 @@ trait IRenderable extends IBase {
   		* @param containerIdx Number The index within the parent Container's child collection of this Component.
   		*/
   var onRender: js.UndefOr[
-    js.Function2[
-      /* parentNode */ js.UndefOr[typings.extjs.Ext.core.IElement], 
-      /* containerIdx */ js.UndefOr[Double], 
-      Unit
-    ]
+    js.Function2[/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double], Unit]
   ] = js.undefined
   /** [Method] Renders the Component into the passed HTML element
   		* @param container Ext.Element/HTMLElement/String The element this Component should be rendered into. If it is being created from existing markup, this should be omitted.
@@ -58,14 +55,14 @@ object IRenderable {
     config: js.Any = null,
     doAutoRender: () => Unit = null,
     ensureAttachedToBody: /* runLayout */ js.UndefOr[Boolean] => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getInsertPosition: /* position */ js.UndefOr[js.Any] => HTMLElement = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IRenderable = null,
     initRenderData: () => _ = null,
     mixins: js.Any = null,
-    onRender: (/* parentNode */ js.UndefOr[typings.extjs.Ext.core.IElement], /* containerIdx */ js.UndefOr[Double]) => Unit = null,
+    onRender: (/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double]) => Unit = null,
     render: (/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     self: IClass = null,

@@ -1,8 +1,8 @@
 package typings.nativeDashUrl
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nativeDashUrl.nativeDashUrlNumbers.`false`
-import typings.nativeDashUrl.nativeDashUrlNumbers.`true`
+import typings.nativeDashUrl.nativeDashUrlBooleans.`false`
+import typings.nativeDashUrl.nativeDashUrlBooleans.`true`
 import typings.node.urlMod.URLFormatOptions
 import typings.node.urlMod.Url
 import typings.node.urlMod.UrlObject

@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tooltip
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tooltip.Collision.Fit
-import typings.ejDotWebDotAll.ej.Tooltip.Collision.Flip
-import typings.ejDotWebDotAll.ej.Tooltip.Collision.FlipFit
-import typings.ejDotWebDotAll.ej.Tooltip.Collision.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

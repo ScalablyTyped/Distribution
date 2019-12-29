@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait IDocumentCardPreviewStyles extends js.Object {
   var fileList: IStyle
   var fileListIcon: IStyle
+  var fileListLink: IStyle
   var fileListOverflowText: IStyle
   var icon: IStyle
   var previewIcon: IStyle
@@ -19,6 +20,7 @@ object IDocumentCardPreviewStyles {
   def apply(
     fileList: IStyle = null,
     fileListIcon: IStyle = null,
+    fileListLink: IStyle = null,
     fileListOverflowText: IStyle = null,
     icon: IStyle = null,
     previewIcon: IStyle = null,
@@ -27,6 +29,7 @@ object IDocumentCardPreviewStyles {
     val __obj = js.Dynamic.literal()
     if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
     if (fileListIcon != null) __obj.updateDynamic("fileListIcon")(fileListIcon.asInstanceOf[js.Any])
+    if (fileListLink != null) __obj.updateDynamic("fileListLink")(fileListLink.asInstanceOf[js.Any])
     if (fileListOverflowText != null) __obj.updateDynamic("fileListOverflowText")(fileListOverflowText.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (previewIcon != null) __obj.updateDynamic("previewIcon")(previewIcon.asInstanceOf[js.Any])

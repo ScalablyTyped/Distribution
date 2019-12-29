@@ -15,22 +15,6 @@ class Variable protected ()
      with Term {
   def this(name: String) = this()
   val id: String = js.native
-  /**
-    * Contains the constant "Variable".
-    */
-  /* CompleteClass */
-  override var termType: typings.rdfDashJs.rdfDashJsStrings.Variable = js.native
-  /**
-    * The name of the variable *without* leading ? (example: a).
-    */
-  /* CompleteClass */
-  override var value: String = js.native
-  /**
-    * @param other The term to compare with.
-    * @return True if and only if other has termType "Variable" and the same `value`.
-    */
-  /* CompleteClass */
-  override def equals(other: typings.rdfDashJs.rdfDashJsMod.Term): Boolean = js.native
   def toJSON(): js.Object = js.native
 }
 

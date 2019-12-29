@@ -10,9 +10,9 @@ trait IField extends IDecorator {
   /** [Config Option] (Boolean) */
   var clearIcon: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var fieldCls: js.UndefOr[java.lang.String] = js.undefined
+  var fieldCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fieldLabel: js.UndefOr[java.lang.String] = js.undefined
+  var fieldLabel: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of clearIcon
   		* @returns Boolean
   		*/
@@ -20,23 +20,23 @@ trait IField extends IDecorator {
   /** [Method] Returns the value of inputCls
   		* @returns String
   		*/
-  var getInputCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getInputCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of inputType
   		* @returns String
   		*/
-  var getInputType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getInputType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of label
   		* @returns String
   		*/
-  var getLabel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLabel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of labelAlign
   		* @returns String
   		*/
-  var getLabelAlign: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLabelAlign: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of labelCls
   		* @returns String
   		*/
-  var getLabelCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLabelCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of labelWidth
   		* @returns Number/String
   		*/
@@ -48,7 +48,7 @@ trait IField extends IDecorator {
   /** [Method] Returns the value of name
   		* @returns String
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of required
   		* @returns Boolean
   		*/
@@ -56,7 +56,7 @@ trait IField extends IDecorator {
   /** [Method] Returns the value of requiredCls
   		* @returns String
   		*/
-  var getRequiredCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRequiredCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of tabIndex
   		* @returns Number
   		*/
@@ -66,9 +66,9 @@ trait IField extends IDecorator {
   		*/
   var getValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var inputCls: js.UndefOr[java.lang.String] = js.undefined
+  var inputCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var inputType: js.UndefOr[java.lang.String] = js.undefined
+  var inputType: js.UndefOr[String] = js.undefined
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
   		* @returns Boolean true if this field has been changed from its original value (and is not disabled), false otherwise.
   		*/
@@ -76,11 +76,11 @@ trait IField extends IDecorator {
   /** [Property] (Boolean) */
   var isField: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var label: js.UndefOr[java.lang.String] = js.undefined
+  var label: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelAlign: js.UndefOr[java.lang.String] = js.undefined
+  var labelAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelCls: js.UndefOr[java.lang.String] = js.undefined
+  var labelCls: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var labelEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (Number/String) */
@@ -88,13 +88,13 @@ trait IField extends IDecorator {
   /** [Config Option] (Boolean) */
   var labelWrap: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Property] (Mixed) */
   var originalValue: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var required: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var requiredCls: js.UndefOr[java.lang.String] = js.undefined
+  var requiredCls: js.UndefOr[String] = js.undefined
   /** [Method] Resets the current field value back to the original value on this field when it was created
   		* @returns Ext.field.Field this
   		*/
@@ -108,23 +108,23 @@ trait IField extends IDecorator {
   /** [Method] Sets the value of inputCls
   		* @param inputCls String The new value.
   		*/
-  var setInputCls: js.UndefOr[js.Function1[/* inputCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setInputCls: js.UndefOr[js.Function1[/* inputCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of inputType
   		* @param inputType String The new value.
   		*/
-  var setInputType: js.UndefOr[js.Function1[/* inputType */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setInputType: js.UndefOr[js.Function1[/* inputType */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of label
   		* @param label String The new value.
   		*/
-  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of labelAlign
   		* @param labelAlign String The new value.
   		*/
-  var setLabelAlign: js.UndefOr[js.Function1[/* labelAlign */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLabelAlign: js.UndefOr[js.Function1[/* labelAlign */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of labelCls
   		* @param labelCls String The new value.
   		*/
-  var setLabelCls: js.UndefOr[js.Function1[/* labelCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLabelCls: js.UndefOr[js.Function1[/* labelCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of labelWidth
   		* @param labelWidth Number/String The new value.
   		*/
@@ -136,7 +136,7 @@ trait IField extends IDecorator {
   /** [Method] Sets the value of name
   		* @param name String The new value.
   		*/
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of required
   		* @param required Boolean The new value.
   		*/
@@ -144,7 +144,7 @@ trait IField extends IDecorator {
   /** [Method] Sets the value of requiredCls
   		* @param requiredCls String The new value.
   		*/
-  var setRequiredCls: js.UndefOr[js.Function1[/* requiredCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setRequiredCls: js.UndefOr[js.Function1[/* requiredCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of tabIndex
   		* @param tabIndex Number The new value.
   		*/
@@ -156,7 +156,7 @@ trait IField extends IDecorator {
   /** [Config Option] (Number) */
   var tabIndex: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var useClearIcon: js.UndefOr[java.lang.String] = js.undefined
+  var useClearIcon: js.UndefOr[String] = js.undefined
   /** [Config Option] (Mixed) */
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -166,52 +166,52 @@ object IField {
   def apply(
     IDecorator: IDecorator = null,
     clearIcon: js.UndefOr[Boolean] = js.undefined,
-    fieldCls: java.lang.String = null,
-    fieldLabel: java.lang.String = null,
+    fieldCls: String = null,
+    fieldLabel: String = null,
     getClearIcon: () => Boolean = null,
-    getInputCls: () => java.lang.String = null,
-    getInputType: () => java.lang.String = null,
-    getLabel: () => java.lang.String = null,
-    getLabelAlign: () => java.lang.String = null,
-    getLabelCls: () => java.lang.String = null,
+    getInputCls: () => String = null,
+    getInputType: () => String = null,
+    getLabel: () => String = null,
+    getLabelAlign: () => String = null,
+    getLabelCls: () => String = null,
     getLabelWidth: () => _ = null,
     getLabelWrap: () => Boolean = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getRequired: () => Boolean = null,
-    getRequiredCls: () => java.lang.String = null,
+    getRequiredCls: () => String = null,
     getTabIndex: () => Double = null,
     getValue: () => _ = null,
-    inputCls: java.lang.String = null,
-    inputType: java.lang.String = null,
+    inputCls: String = null,
+    inputType: String = null,
     isDirty: () => Boolean = null,
     isField: js.UndefOr[Boolean] = js.undefined,
-    label: java.lang.String = null,
-    labelAlign: java.lang.String = null,
-    labelCls: java.lang.String = null,
+    label: String = null,
+    labelAlign: String = null,
+    labelCls: String = null,
     labelEl: IElement = null,
     labelWidth: js.Any = null,
     labelWrap: js.UndefOr[Boolean] = js.undefined,
-    name: java.lang.String = null,
+    name: String = null,
     originalValue: js.Any = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    requiredCls: java.lang.String = null,
+    requiredCls: String = null,
     reset: () => IField = null,
     resetOriginalValue: () => Unit = null,
     setClearIcon: /* clearIcon */ js.UndefOr[Boolean] => Unit = null,
-    setInputCls: /* inputCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setInputType: /* inputType */ js.UndefOr[java.lang.String] => Unit = null,
-    setLabel: /* label */ js.UndefOr[java.lang.String] => Unit = null,
-    setLabelAlign: /* labelAlign */ js.UndefOr[java.lang.String] => Unit = null,
-    setLabelCls: /* labelCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setInputCls: /* inputCls */ js.UndefOr[String] => Unit = null,
+    setInputType: /* inputType */ js.UndefOr[String] => Unit = null,
+    setLabel: /* label */ js.UndefOr[String] => Unit = null,
+    setLabelAlign: /* labelAlign */ js.UndefOr[String] => Unit = null,
+    setLabelCls: /* labelCls */ js.UndefOr[String] => Unit = null,
     setLabelWidth: /* labelWidth */ js.UndefOr[js.Any] => Unit = null,
     setLabelWrap: /* labelWrap */ js.UndefOr[Boolean] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
     setRequired: /* required */ js.UndefOr[Boolean] => Unit = null,
-    setRequiredCls: /* requiredCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setRequiredCls: /* requiredCls */ js.UndefOr[String] => Unit = null,
     setTabIndex: /* tabIndex */ js.UndefOr[Double] => Unit = null,
     setValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     tabIndex: Int | Double = null,
-    useClearIcon: java.lang.String = null,
+    useClearIcon: String = null,
     value: js.Any = null
   ): IField = {
     val __obj = js.Dynamic.literal()

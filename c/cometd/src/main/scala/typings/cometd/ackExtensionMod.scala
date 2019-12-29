@@ -1,6 +1,5 @@
 package typings.cometd
 
-import typings.cometd.ackExtensionMod.AckExtension
 import typings.cometd.cometdMod.CometD
 import typings.cometd.cometdMod.Extension
 import typings.cometd.cometdMod.Listener

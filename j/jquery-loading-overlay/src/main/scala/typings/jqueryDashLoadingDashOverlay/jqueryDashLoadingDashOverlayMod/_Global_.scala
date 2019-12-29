@@ -1,6 +1,5 @@
 package typings.jqueryDashLoadingDashOverlay.jqueryDashLoadingDashOverlayMod
 
-import typings.jqueryDashLoadingDashOverlay.jqueryDashLoadingDashOverlayMod._Global_.JQuery
 import typings.jqueryDashLoadingDashOverlay.jqueryDashLoadingDashOverlayStrings.remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`

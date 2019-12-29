@@ -1,11 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UrlZone.custom
-import typings.sharepoint.SP.UrlZone.defaultZone
-import typings.sharepoint.SP.UrlZone.extranet
-import typings.sharepoint.SP.UrlZone.internet
-import typings.sharepoint.SP.UrlZone.intranet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

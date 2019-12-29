@@ -1,12 +1,12 @@
 package typings.atAngularCompiler.srcMlUnderscoreParserTagsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.atAngularCompilerStrings.BACKSLASHuE500
+import typings.atAngularCompiler.atAngularCompilerStrings.Privateuseareae500
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@angular/compiler/src/ml_parser/tags", "NGSP_UNICODE")
 @js.native
-object NGSP_UNICODE extends TopLevel[BACKSLASHuE500]
+object NGSP_UNICODE extends TopLevel[Privateuseareae500]
 

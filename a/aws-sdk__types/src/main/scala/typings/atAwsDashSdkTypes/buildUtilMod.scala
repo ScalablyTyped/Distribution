@@ -1,7 +1,6 @@
 package typings.atAwsDashSdkTypes
 
 import typings.atAwsDashSdkTypes.buildHttpMod.HttpEndpoint
-import typings.atAwsDashSdkTypes.buildUtilMod.SdkError
 import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js

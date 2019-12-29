@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.left90
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.normal
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.right90
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.rotate180
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

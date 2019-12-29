@@ -17,17 +17,17 @@ trait FrameBase
   @JSName("$")
   def $(selector: String): js.Promise[ElementHandle[Element] | Null] = js.native
   /**
-    * The method runs document.querySelectorAll within the frame.
-    * If no elements match the selector, the return value resolve to [].
-    */
-  @JSName("$$")
-  def $$(selector: String): js.Promise[js.Array[ElementHandle[Element]]] = js.native
-  /**
     * The method evaluates the XPath expression.
     * @param expression XPath expression to evaluate.
     */
   @JSName("$x")
   def $x(expression: String): js.Promise[js.Array[ElementHandle[Element]]] = js.native
+  /**
+    * The method runs document.querySelectorAll within the frame.
+    * If no elements match the selector, the return value resolve to [].
+    */
+  @JSName("$$")
+  def DollarDollar(selector: String): js.Promise[js.Array[ElementHandle[Element]]] = js.native
   /** Adds a `<script>` tag into the page with the desired url or content. */
   def addScriptTag(options: ScriptTagOptions): js.Promise[Unit] = js.native
   /** Adds a `<link rel="stylesheet">` tag into the page with the desired url or a `<style type="text/css">` tag with the content. */

@@ -12,7 +12,7 @@ trait CompileScriptParameterType extends js.Object {
   /**
     * Expression to compile.
     */
-  var expression: java.lang.String
+  var expression: String
   /**
     * Specifies whether the compiled script should be persisted.
     */
@@ -20,15 +20,15 @@ trait CompileScriptParameterType extends js.Object {
   /**
     * Source url to be set for the script.
     */
-  var sourceURL: java.lang.String
+  var sourceURL: String
 }
 
 object CompileScriptParameterType {
   @scala.inline
   def apply(
-    expression: java.lang.String,
+    expression: String,
     persistScript: Boolean,
-    sourceURL: java.lang.String,
+    sourceURL: String,
     executionContextId: Int | Double = null
   ): CompileScriptParameterType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], persistScript = persistScript.asInstanceOf[js.Any], sourceURL = sourceURL.asInstanceOf[js.Any])

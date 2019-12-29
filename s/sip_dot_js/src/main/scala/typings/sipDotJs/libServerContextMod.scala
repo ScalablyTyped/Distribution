@@ -8,7 +8,6 @@ import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libCoreMod.NameAddrHeader
 import typings.sipDotJs.libCoreMod.NonInviteServerTransaction
 import typings.sipDotJs.libEnumsMod.TypeStrings
-import typings.sipDotJs.libServerContextMod.ServerContext
 import typings.sipDotJs.libUAMod.UA
 import scala.scalajs.js
 import scala.scalajs.js.`|`

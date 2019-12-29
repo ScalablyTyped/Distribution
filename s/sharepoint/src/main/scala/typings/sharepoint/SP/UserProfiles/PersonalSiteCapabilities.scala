@@ -1,13 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.PersonalSiteCapabilities.education
-import typings.sharepoint.SP.UserProfiles.PersonalSiteCapabilities.guest
-import typings.sharepoint.SP.UserProfiles.PersonalSiteCapabilities.myTasksDashboard
-import typings.sharepoint.SP.UserProfiles.PersonalSiteCapabilities.none
-import typings.sharepoint.SP.UserProfiles.PersonalSiteCapabilities.profile
-import typings.sharepoint.SP.UserProfiles.PersonalSiteCapabilities.social
-import typings.sharepoint.SP.UserProfiles.PersonalSiteCapabilities.storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.FeedbackDesktop
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.FeedbackWeb
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.SessionInsightsForAll
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.Unknown
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTDesktop
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTDesktop2
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTWeb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

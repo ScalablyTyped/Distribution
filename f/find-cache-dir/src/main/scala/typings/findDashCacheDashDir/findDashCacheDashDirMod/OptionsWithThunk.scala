@@ -1,6 +1,6 @@
 package typings.findDashCacheDashDir.findDashCacheDashDirMod
 
-import typings.findDashCacheDashDir.findDashCacheDashDirNumbers.`true`
+import typings.findDashCacheDashDir.findDashCacheDashDirBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

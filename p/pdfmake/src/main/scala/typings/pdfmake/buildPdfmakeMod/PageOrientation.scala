@@ -1,8 +1,6 @@
 package typings.pdfmake.buildPdfmakeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pdfmake.buildPdfmakeMod.PageOrientation.LANDSCAPE
-import typings.pdfmake.buildPdfmakeMod.PageOrientation.PORTRAIT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

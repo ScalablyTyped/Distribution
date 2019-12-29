@@ -70,6 +70,7 @@ object templatesServiceUserMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[
         Entry[Double, Client], 
@@ -125,6 +126,7 @@ object templatesServiceUserMod extends js.Object {
     /**
       * Test whether container is empty.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -132,6 +134,7 @@ object templatesServiceUserMod extends js.Object {
       *
       * @return Iterator to the end.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[
         Entry[Double, Client], 
@@ -177,6 +180,7 @@ object templatesServiceUserMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def push(items: (IPair[Double, Client])*): Double = js.native
     /**
@@ -243,6 +247,7 @@ object templatesServiceUserMod extends js.Object {
     /**
       * Number of elements in the container.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

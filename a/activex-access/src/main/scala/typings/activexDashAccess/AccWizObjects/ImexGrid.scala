@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AccWizObjects.ImexGrid")
 @js.native
 class ImexGrid protected () extends js.Object {
-  var `AccWizObjects.ImexGrid_typekey`: ImexGrid = js.native
+  @JSName("AccWizObjects.ImexGrid_typekey")
+  var AccWizObjectsDotImexGrid_typekey: ImexGrid = js.native
   var AllowColumnSizing: Boolean = js.native
   var BackColor: OLE_COLOR = js.native
   var Caption: String = js.native

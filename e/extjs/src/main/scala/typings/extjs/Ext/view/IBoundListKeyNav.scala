@@ -2,14 +2,15 @@ package typings.extjs.Ext.view
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
+import typings.extjs.Ext.util.IKeyMap
+import typings.extjs.Ext.util.IKeyNav
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IBoundListKeyNav
-  extends typings.extjs.Ext.util.IKeyNav {
+trait IBoundListKeyNav extends IKeyNav {
   /** [Config Option] (Ext.view.BoundList) */
-  var boundList: js.UndefOr[typings.extjs.Ext.view.IBoundList] = js.undefined
+  var boundList: js.UndefOr[IBoundList] = js.undefined
   /** [Method] Highlights the item at the given index
   		* @param index Number
   		*/
@@ -25,25 +26,25 @@ object IBoundListKeyNav {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    boundList: typings.extjs.Ext.view.IBoundList = null,
+    boundList: IBoundList = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    defaultEventAction: java.lang.String = null,
+    defaultEventAction: String = null,
     destroy: /* removeEl */ js.UndefOr[Boolean] => Unit = null,
     disable: () => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     enable: () => Unit = null,
-    eventName: java.lang.String = null,
-    extend: java.lang.String = null,
+    eventName: String = null,
+    extend: String = null,
     forceKeyDown: js.UndefOr[Boolean] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     highlightAt: /* index */ js.UndefOr[Double] => Unit = null,
     ignoreInputFields: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IBoundListKeyNav = null,
-    keyMap: typings.extjs.Ext.util.IKeyMap = null,
+    keyMap: IKeyMap = null,
     mixins: js.Any = null,
     processEvent: js.Any = null,
     processEventScope: js.Any = null,

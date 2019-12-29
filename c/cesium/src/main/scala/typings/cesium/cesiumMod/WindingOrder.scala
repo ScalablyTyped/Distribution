@@ -1,8 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.WindingOrder.CLOCKWISE
-import typings.cesium.cesiumMod.WindingOrder.COUNTER_CLOCKWISE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.AppService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.canceled
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.completed
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.resourceLimitsExceeded
-import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

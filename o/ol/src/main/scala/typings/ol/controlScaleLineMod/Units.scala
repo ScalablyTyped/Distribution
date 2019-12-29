@@ -1,11 +1,6 @@
 package typings.ol.controlScaleLineMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ol.controlScaleLineMod.Units.DEGREES
-import typings.ol.controlScaleLineMod.Units.IMPERIAL
-import typings.ol.controlScaleLineMod.Units.METRIC
-import typings.ol.controlScaleLineMod.Units.NAUTICAL
-import typings.ol.controlScaleLineMod.Units.US
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

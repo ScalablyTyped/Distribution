@@ -1,7 +1,7 @@
 package typings.appDashBuilderDashLib
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.`/opt`
+import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.Slashopt
 import typings.appDashBuilderDashLib.outLinuxPackagerMod.LinuxPackager
 import typings.appDashBuilderDashLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions
 import typings.appDashBuilderDashLib.outPlatformPackagerMod.IconInfo
@@ -44,6 +44,6 @@ object outTargetsLinuxTargetHelperMod extends js.Object {
     ): js.Promise[String] = js.native
   }
   
-  val installPrefix: `/opt` = js.native
+  val installPrefix: Slashopt = js.native
 }
 

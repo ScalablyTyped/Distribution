@@ -21,11 +21,11 @@ import typings.atBabelTraverse.atBabelTraverseMod.NodePath
 import typings.atBabelTraverse.atBabelTraverseMod.Scope
 import typings.atBabelTraverse.atBabelTraverseMod.TraverseOptions
 import typings.atBabelTypes.atBabelTypesMod.Statement
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.DOTes
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.DOTes6
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.DOTjs
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.DOTjsx
-import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.DOTmjs
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Dotes
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Dotes6
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Dotjs
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Dotjsx
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosStrings.Dotmjs
 import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofBabel extends js.Object {
-  val DEFAULT_EXTENSIONS: js.Tuple5[DOTjs, DOTjsx, DOTes6, DOTes, DOTmjs] = js.native
+  val DEFAULT_EXTENSIONS: js.Tuple5[Dotjs, Dotjsx, Dotes6, Dotes, Dotmjs] = js.native
   var NodePath: Instantiable2[
     /* hub */ Hub, 
     /* parent */ Node, 

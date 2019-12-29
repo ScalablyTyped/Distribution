@@ -9,10 +9,10 @@ object reactDashNativeDashVideoStrings {
   sealed trait all extends js.Object
   
   @js.native
-  sealed trait `application/ttml+xml` extends js.Object
+  sealed trait applicationSlashttmlPlussignxml extends js.Object
   
   @js.native
-  sealed trait `application/x-subrip` extends js.Object
+  sealed trait `applicationSlashx-subrip` extends js.Object
   
   @js.native
   sealed trait contain extends js.Object
@@ -54,7 +54,7 @@ object reactDashNativeDashVideoStrings {
   sealed trait system extends js.Object
   
   @js.native
-  sealed trait `text/vtt` extends js.Object
+  sealed trait textSlashvtt extends js.Object
   
   @js.native
   sealed trait title extends js.Object
@@ -62,9 +62,9 @@ object reactDashNativeDashVideoStrings {
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
-  def `application/ttml+xml`: `application/ttml+xml` = "application/ttml+xml".asInstanceOf[`application/ttml+xml`]
+  def applicationSlashttmlPlussignxml: applicationSlashttmlPlussignxml = "application/ttml+xml".asInstanceOf[applicationSlashttmlPlussignxml]
   @scala.inline
-  def `application/x-subrip`: `application/x-subrip` = "application/x-subrip".asInstanceOf[`application/x-subrip`]
+  def `applicationSlashx-subrip`: `applicationSlashx-subrip` = "application/x-subrip".asInstanceOf[`applicationSlashx-subrip`]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   @scala.inline
@@ -92,7 +92,7 @@ object reactDashNativeDashVideoStrings {
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   @scala.inline
-  def `text/vtt`: `text/vtt` = "text/vtt".asInstanceOf[`text/vtt`]
+  def textSlashvtt: textSlashvtt = "text/vtt".asInstanceOf[textSlashvtt]
   @scala.inline
   def title: title = "title".asInstanceOf[title]
 }

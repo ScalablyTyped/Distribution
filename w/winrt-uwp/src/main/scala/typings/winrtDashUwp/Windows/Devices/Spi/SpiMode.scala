@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Spi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Spi.SpiMode.mode0
-import typings.winrtDashUwp.Windows.Devices.Spi.SpiMode.mode1
-import typings.winrtDashUwp.Windows.Devices.Spi.SpiMode.mode2
-import typings.winrtDashUwp.Windows.Devices.Spi.SpiMode.mode3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

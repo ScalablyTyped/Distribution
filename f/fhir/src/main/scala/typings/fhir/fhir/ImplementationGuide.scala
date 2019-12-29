@@ -38,6 +38,11 @@ import scala.scalajs.js.annotation._
     */
   var _name: js.UndefOr[Element] = js.undefined
   /**
+    * Group of resources as used in .page.package
+    */
+  @JSName("package")
+  var _package: js.UndefOr[js.Array[ImplementationGuidePackage]] = js.undefined
+  /**
     * Contains extended information for property 'publisher'.
     */
   var _publisher: js.UndefOr[Element] = js.undefined
@@ -98,10 +103,6 @@ import scala.scalajs.js.annotation._
     */
   var name: String
   /**
-    * Group of resources as used in .page.package
-    */
-  var `package`: js.UndefOr[js.Array[ImplementationGuidePackage]] = js.undefined
-  /**
     * Page/Section in the Guide
     */
   var page: js.UndefOr[ImplementationGuidePage] = js.undefined
@@ -143,6 +144,7 @@ object ImplementationGuide {
     _implicitRules: Element = null,
     _language: Element = null,
     _name: Element = null,
+    _package: js.Array[ImplementationGuidePackage] = null,
     _publisher: Element = null,
     _resourceType: Element = null,
     _status: Element = null,
@@ -165,7 +167,6 @@ object ImplementationGuide {
     language: code = null,
     meta: Meta = null,
     modifierExtension: js.Array[Extension] = null,
-    `package`: js.Array[ImplementationGuidePackage] = null,
     page: ImplementationGuidePage = null,
     publisher: String = null,
     resourceType: code = null,
@@ -184,6 +185,7 @@ object ImplementationGuide {
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
     if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
     if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
+    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher.asInstanceOf[js.Any])
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
     if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
@@ -206,7 +208,6 @@ object ImplementationGuide {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])

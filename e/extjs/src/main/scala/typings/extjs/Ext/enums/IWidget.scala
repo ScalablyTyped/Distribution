@@ -6,307 +6,307 @@ import scala.scalajs.js.annotation._
 
 trait IWidget extends js.Object {
   /** [Property] (String) */
-  var actioncolumn: js.UndefOr[java.lang.String] = js.undefined
+  var actioncolumn: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var booleancolumn: js.UndefOr[java.lang.String] = js.undefined
+  var booleancolumn: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var boundlist: js.UndefOr[java.lang.String] = js.undefined
+  var boundlist: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var box: js.UndefOr[java.lang.String] = js.undefined
+  var box: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var button: js.UndefOr[java.lang.String] = js.undefined
+  var button: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var buttongroup: js.UndefOr[java.lang.String] = js.undefined
+  var buttongroup: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var chart: js.UndefOr[java.lang.String] = js.undefined
+  var chart: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var checkbox: js.UndefOr[java.lang.String] = js.undefined
+  var checkbox: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var checkboxfield: js.UndefOr[java.lang.String] = js.undefined
+  var checkboxfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var checkboxgroup: js.UndefOr[java.lang.String] = js.undefined
+  var checkboxgroup: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var checkcolumn: js.UndefOr[java.lang.String] = js.undefined
+  var checkcolumn: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var colormenu: js.UndefOr[java.lang.String] = js.undefined
+  var colormenu: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var colorpicker: js.UndefOr[java.lang.String] = js.undefined
+  var colorpicker: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var combo: js.UndefOr[java.lang.String] = js.undefined
+  var combo: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var combobox: js.UndefOr[java.lang.String] = js.undefined
+  var combobox: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var component: js.UndefOr[java.lang.String] = js.undefined
+  var component: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var container: js.UndefOr[java.lang.String] = js.undefined
+  var container: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var cycle: js.UndefOr[java.lang.String] = js.undefined
+  var cycle: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var dataview: js.UndefOr[java.lang.String] = js.undefined
+  var dataview: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var datecolumn: js.UndefOr[java.lang.String] = js.undefined
+  var datecolumn: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var datefield: js.UndefOr[java.lang.String] = js.undefined
+  var datefield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var datemenu: js.UndefOr[java.lang.String] = js.undefined
+  var datemenu: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var datepicker: js.UndefOr[java.lang.String] = js.undefined
+  var datepicker: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var displayfield: js.UndefOr[java.lang.String] = js.undefined
+  var displayfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var draw: js.UndefOr[java.lang.String] = js.undefined
+  var draw: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var editor: js.UndefOr[java.lang.String] = js.undefined
+  var editor: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var field: js.UndefOr[java.lang.String] = js.undefined
+  var field: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var fieldcontainer: js.UndefOr[java.lang.String] = js.undefined
+  var fieldcontainer: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var fieldset: js.UndefOr[java.lang.String] = js.undefined
+  var fieldset: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var filebutton: js.UndefOr[java.lang.String] = js.undefined
+  var filebutton: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var filefield: js.UndefOr[java.lang.String] = js.undefined
+  var filefield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var fileuploadfield: js.UndefOr[java.lang.String] = js.undefined
+  var fileuploadfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var flash: js.UndefOr[java.lang.String] = js.undefined
+  var flash: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var form: js.UndefOr[java.lang.String] = js.undefined
+  var form: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var grid: js.UndefOr[java.lang.String] = js.undefined
+  var grid: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var gridcolumn: js.UndefOr[java.lang.String] = js.undefined
+  var gridcolumn: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var gridpanel: js.UndefOr[java.lang.String] = js.undefined
+  var gridpanel: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var gridview: js.UndefOr[java.lang.String] = js.undefined
+  var gridview: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var header: js.UndefOr[java.lang.String] = js.undefined
+  var header: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var headercontainer: js.UndefOr[java.lang.String] = js.undefined
+  var headercontainer: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var hidden: js.UndefOr[java.lang.String] = js.undefined
+  var hidden: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var hiddenfield: js.UndefOr[java.lang.String] = js.undefined
+  var hiddenfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var htmleditor: js.UndefOr[java.lang.String] = js.undefined
+  var htmleditor: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var image: js.UndefOr[java.lang.String] = js.undefined
+  var image: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var imagecomponent: js.UndefOr[java.lang.String] = js.undefined
+  var imagecomponent: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var jsonpstore: js.UndefOr[java.lang.String] = js.undefined
+  var jsonpstore: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var label: js.UndefOr[java.lang.String] = js.undefined
+  var label: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var loadmask: js.UndefOr[java.lang.String] = js.undefined
+  var loadmask: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var menu: js.UndefOr[java.lang.String] = js.undefined
+  var menu: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var menucheckitem: js.UndefOr[java.lang.String] = js.undefined
+  var menucheckitem: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var menuitem: js.UndefOr[java.lang.String] = js.undefined
+  var menuitem: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var menuseparator: js.UndefOr[java.lang.String] = js.undefined
+  var menuseparator: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var messagebox: js.UndefOr[java.lang.String] = js.undefined
+  var messagebox: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var multislider: js.UndefOr[java.lang.String] = js.undefined
+  var multislider: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var numbercolumn: js.UndefOr[java.lang.String] = js.undefined
+  var numbercolumn: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var numberfield: js.UndefOr[java.lang.String] = js.undefined
+  var numberfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var pagingtoolbar: js.UndefOr[java.lang.String] = js.undefined
+  var pagingtoolbar: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var panel: js.UndefOr[java.lang.String] = js.undefined
+  var panel: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var pickerfield: js.UndefOr[java.lang.String] = js.undefined
+  var pickerfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var progressbar: js.UndefOr[java.lang.String] = js.undefined
+  var progressbar: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var propertygrid: js.UndefOr[java.lang.String] = js.undefined
+  var propertygrid: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var quicktip: js.UndefOr[java.lang.String] = js.undefined
+  var quicktip: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var radio: js.UndefOr[java.lang.String] = js.undefined
+  var radio: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var radiofield: js.UndefOr[java.lang.String] = js.undefined
+  var radiofield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var radiogroup: js.UndefOr[java.lang.String] = js.undefined
+  var radiogroup: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var rownumberer: js.UndefOr[java.lang.String] = js.undefined
+  var rownumberer: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var slider: js.UndefOr[java.lang.String] = js.undefined
+  var slider: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var sliderfield: js.UndefOr[java.lang.String] = js.undefined
+  var sliderfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var slidertip: js.UndefOr[java.lang.String] = js.undefined
+  var slidertip: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var spinnerfield: js.UndefOr[java.lang.String] = js.undefined
+  var spinnerfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var splitbutton: js.UndefOr[java.lang.String] = js.undefined
+  var splitbutton: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var splitter: js.UndefOr[java.lang.String] = js.undefined
+  var splitter: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tab: js.UndefOr[java.lang.String] = js.undefined
+  var tab: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tabbar: js.UndefOr[java.lang.String] = js.undefined
+  var tabbar: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tablepanel: js.UndefOr[java.lang.String] = js.undefined
+  var tablepanel: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tableview: js.UndefOr[java.lang.String] = js.undefined
+  var tableview: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tabpanel: js.UndefOr[java.lang.String] = js.undefined
+  var tabpanel: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tbfill: js.UndefOr[java.lang.String] = js.undefined
+  var tbfill: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tbitem: js.UndefOr[java.lang.String] = js.undefined
+  var tbitem: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tbseparator: js.UndefOr[java.lang.String] = js.undefined
+  var tbseparator: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tbspacer: js.UndefOr[java.lang.String] = js.undefined
+  var tbspacer: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tbtext: js.UndefOr[java.lang.String] = js.undefined
+  var tbtext: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var templatecolumn: js.UndefOr[java.lang.String] = js.undefined
+  var templatecolumn: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var textarea: js.UndefOr[java.lang.String] = js.undefined
+  var textarea: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var textareafield: js.UndefOr[java.lang.String] = js.undefined
+  var textareafield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var textfield: js.UndefOr[java.lang.String] = js.undefined
+  var textfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var timefield: js.UndefOr[java.lang.String] = js.undefined
+  var timefield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var timepicker: js.UndefOr[java.lang.String] = js.undefined
+  var timepicker: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tip: js.UndefOr[java.lang.String] = js.undefined
+  var tip: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tool: js.UndefOr[java.lang.String] = js.undefined
+  var tool: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var toolbar: js.UndefOr[java.lang.String] = js.undefined
+  var toolbar: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var tooltip: js.UndefOr[java.lang.String] = js.undefined
+  var tooltip: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var treepanel: js.UndefOr[java.lang.String] = js.undefined
+  var treepanel: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var treeview: js.UndefOr[java.lang.String] = js.undefined
+  var treeview: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var trigger: js.UndefOr[java.lang.String] = js.undefined
+  var trigger: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var triggerfield: js.UndefOr[java.lang.String] = js.undefined
+  var triggerfield: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var viewport: js.UndefOr[java.lang.String] = js.undefined
+  var viewport: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var window: js.UndefOr[java.lang.String] = js.undefined
+  var window: js.UndefOr[String] = js.undefined
 }
 
 object IWidget {
   @scala.inline
   def apply(
-    actioncolumn: java.lang.String = null,
-    booleancolumn: java.lang.String = null,
-    boundlist: java.lang.String = null,
-    box: java.lang.String = null,
-    button: java.lang.String = null,
-    buttongroup: java.lang.String = null,
-    chart: java.lang.String = null,
-    checkbox: java.lang.String = null,
-    checkboxfield: java.lang.String = null,
-    checkboxgroup: java.lang.String = null,
-    checkcolumn: java.lang.String = null,
-    colormenu: java.lang.String = null,
-    colorpicker: java.lang.String = null,
-    combo: java.lang.String = null,
-    combobox: java.lang.String = null,
-    component: java.lang.String = null,
-    container: java.lang.String = null,
-    cycle: java.lang.String = null,
-    dataview: java.lang.String = null,
-    datecolumn: java.lang.String = null,
-    datefield: java.lang.String = null,
-    datemenu: java.lang.String = null,
-    datepicker: java.lang.String = null,
-    displayfield: java.lang.String = null,
-    draw: java.lang.String = null,
-    editor: java.lang.String = null,
-    field: java.lang.String = null,
-    fieldcontainer: java.lang.String = null,
-    fieldset: java.lang.String = null,
-    filebutton: java.lang.String = null,
-    filefield: java.lang.String = null,
-    fileuploadfield: java.lang.String = null,
-    flash: java.lang.String = null,
-    form: java.lang.String = null,
-    grid: java.lang.String = null,
-    gridcolumn: java.lang.String = null,
-    gridpanel: java.lang.String = null,
-    gridview: java.lang.String = null,
-    header: java.lang.String = null,
-    headercontainer: java.lang.String = null,
-    hidden: java.lang.String = null,
-    hiddenfield: java.lang.String = null,
-    htmleditor: java.lang.String = null,
-    image: java.lang.String = null,
-    imagecomponent: java.lang.String = null,
-    jsonpstore: java.lang.String = null,
-    label: java.lang.String = null,
-    loadmask: java.lang.String = null,
-    menu: java.lang.String = null,
-    menucheckitem: java.lang.String = null,
-    menuitem: java.lang.String = null,
-    menuseparator: java.lang.String = null,
-    messagebox: java.lang.String = null,
-    multislider: java.lang.String = null,
-    numbercolumn: java.lang.String = null,
-    numberfield: java.lang.String = null,
-    pagingtoolbar: java.lang.String = null,
-    panel: java.lang.String = null,
-    pickerfield: java.lang.String = null,
-    progressbar: java.lang.String = null,
-    propertygrid: java.lang.String = null,
-    quicktip: java.lang.String = null,
-    radio: java.lang.String = null,
-    radiofield: java.lang.String = null,
-    radiogroup: java.lang.String = null,
-    rownumberer: java.lang.String = null,
-    slider: java.lang.String = null,
-    sliderfield: java.lang.String = null,
-    slidertip: java.lang.String = null,
-    spinnerfield: java.lang.String = null,
-    splitbutton: java.lang.String = null,
-    splitter: java.lang.String = null,
-    tab: java.lang.String = null,
-    tabbar: java.lang.String = null,
-    tablepanel: java.lang.String = null,
-    tableview: java.lang.String = null,
-    tabpanel: java.lang.String = null,
-    tbfill: java.lang.String = null,
-    tbitem: java.lang.String = null,
-    tbseparator: java.lang.String = null,
-    tbspacer: java.lang.String = null,
-    tbtext: java.lang.String = null,
-    templatecolumn: java.lang.String = null,
-    text: java.lang.String = null,
-    textarea: java.lang.String = null,
-    textareafield: java.lang.String = null,
-    textfield: java.lang.String = null,
-    timefield: java.lang.String = null,
-    timepicker: java.lang.String = null,
-    tip: java.lang.String = null,
-    tool: java.lang.String = null,
-    toolbar: java.lang.String = null,
-    tooltip: java.lang.String = null,
-    treepanel: java.lang.String = null,
-    treeview: java.lang.String = null,
-    trigger: java.lang.String = null,
-    triggerfield: java.lang.String = null,
-    viewport: java.lang.String = null,
-    window: java.lang.String = null
+    actioncolumn: String = null,
+    booleancolumn: String = null,
+    boundlist: String = null,
+    box: String = null,
+    button: String = null,
+    buttongroup: String = null,
+    chart: String = null,
+    checkbox: String = null,
+    checkboxfield: String = null,
+    checkboxgroup: String = null,
+    checkcolumn: String = null,
+    colormenu: String = null,
+    colorpicker: String = null,
+    combo: String = null,
+    combobox: String = null,
+    component: String = null,
+    container: String = null,
+    cycle: String = null,
+    dataview: String = null,
+    datecolumn: String = null,
+    datefield: String = null,
+    datemenu: String = null,
+    datepicker: String = null,
+    displayfield: String = null,
+    draw: String = null,
+    editor: String = null,
+    field: String = null,
+    fieldcontainer: String = null,
+    fieldset: String = null,
+    filebutton: String = null,
+    filefield: String = null,
+    fileuploadfield: String = null,
+    flash: String = null,
+    form: String = null,
+    grid: String = null,
+    gridcolumn: String = null,
+    gridpanel: String = null,
+    gridview: String = null,
+    header: String = null,
+    headercontainer: String = null,
+    hidden: String = null,
+    hiddenfield: String = null,
+    htmleditor: String = null,
+    image: String = null,
+    imagecomponent: String = null,
+    jsonpstore: String = null,
+    label: String = null,
+    loadmask: String = null,
+    menu: String = null,
+    menucheckitem: String = null,
+    menuitem: String = null,
+    menuseparator: String = null,
+    messagebox: String = null,
+    multislider: String = null,
+    numbercolumn: String = null,
+    numberfield: String = null,
+    pagingtoolbar: String = null,
+    panel: String = null,
+    pickerfield: String = null,
+    progressbar: String = null,
+    propertygrid: String = null,
+    quicktip: String = null,
+    radio: String = null,
+    radiofield: String = null,
+    radiogroup: String = null,
+    rownumberer: String = null,
+    slider: String = null,
+    sliderfield: String = null,
+    slidertip: String = null,
+    spinnerfield: String = null,
+    splitbutton: String = null,
+    splitter: String = null,
+    tab: String = null,
+    tabbar: String = null,
+    tablepanel: String = null,
+    tableview: String = null,
+    tabpanel: String = null,
+    tbfill: String = null,
+    tbitem: String = null,
+    tbseparator: String = null,
+    tbspacer: String = null,
+    tbtext: String = null,
+    templatecolumn: String = null,
+    text: String = null,
+    textarea: String = null,
+    textareafield: String = null,
+    textfield: String = null,
+    timefield: String = null,
+    timepicker: String = null,
+    tip: String = null,
+    tool: String = null,
+    toolbar: String = null,
+    tooltip: String = null,
+    treepanel: String = null,
+    treeview: String = null,
+    trigger: String = null,
+    triggerfield: String = null,
+    viewport: String = null,
+    window: String = null
   ): IWidget = {
     val __obj = js.Dynamic.literal()
     if (actioncolumn != null) __obj.updateDynamic("actioncolumn")(actioncolumn.asInstanceOf[js.Any])

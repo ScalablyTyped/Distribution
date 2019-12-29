@@ -1,6 +1,6 @@
 package typings.chance
 
-import typings.chance.chanceNumbers.`true`
+import typings.chance.chanceBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

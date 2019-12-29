@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Segments.Bezier
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Segments.Orthogonal
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Segments.Straight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

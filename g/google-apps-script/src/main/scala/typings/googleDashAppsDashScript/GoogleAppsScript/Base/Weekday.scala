@@ -1,13 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.FRIDAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.MONDAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.SATURDAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.SUNDAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.THURSDAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.TUESDAY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.WEDNESDAY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

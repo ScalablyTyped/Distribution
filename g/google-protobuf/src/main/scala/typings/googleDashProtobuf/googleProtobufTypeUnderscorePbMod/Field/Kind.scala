@@ -1,25 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_BOOL
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_BYTES
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_DOUBLE
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_ENUM
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_FIXED32
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_FIXED64
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_FLOAT
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_GROUP
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_INT32
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_INT64
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_MESSAGE
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_SFIXED32
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_SFIXED64
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_SINT32
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_SINT64
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_STRING
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_UINT32
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_UINT64
-import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Kind.TYPE_UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

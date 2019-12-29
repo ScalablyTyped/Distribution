@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.FlexWrap.NoWrap
-import typings.openui5.sap.m.FlexWrap.Wrap
-import typings.openui5.sap.m.FlexWrap.WrapReverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

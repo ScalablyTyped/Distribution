@@ -1,8 +1,6 @@
 package typings.rmcDashCalendar
 
 import typings.react.reactMod.Component
-import typings.rmcDashCalendar.libCalendarShortcutPanelMod.PropsType
-import typings.rmcDashCalendar.libCalendarShortcutPanelMod.ShortcutPanel
 import typings.rmcDashCalendar.libDateDataTypesMod.Models.Locale
 import typings.std.Date
 import scala.scalajs.js

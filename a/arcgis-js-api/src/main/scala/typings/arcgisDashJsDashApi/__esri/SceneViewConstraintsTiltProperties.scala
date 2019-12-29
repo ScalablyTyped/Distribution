@@ -1,5 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.manual
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -20,7 +22,7 @@ trait SceneViewConstraintsTiltProperties extends Object {
     *
     * @default auto
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[auto | manual] = js.undefined
 }
 
 object SceneViewConstraintsTiltProperties {
@@ -30,7 +32,7 @@ object SceneViewConstraintsTiltProperties {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     max: Int | Double = null,
-    mode: String = null
+    mode: auto | manual = null
   ): SceneViewConstraintsTiltProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

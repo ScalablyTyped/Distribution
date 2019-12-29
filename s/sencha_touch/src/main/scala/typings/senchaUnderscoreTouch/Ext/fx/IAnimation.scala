@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait IAnimation extends IBase {
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 
 object IAnimation {
@@ -22,8 +22,8 @@ object IAnimation {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
@@ -31,7 +31,7 @@ object IAnimation {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    `type`: java.lang.String = null,
+    `type`: String = null,
     uses: Array = null
   ): IAnimation = {
     val __obj = js.Dynamic.literal()

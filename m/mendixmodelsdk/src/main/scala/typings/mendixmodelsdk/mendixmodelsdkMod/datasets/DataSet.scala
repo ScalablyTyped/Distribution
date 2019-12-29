@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.datasets
 
+import typings.mendixmodelsdk.distGenDatasetsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +15,7 @@ import scala.scalajs.js.annotation._
 class DataSet protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.datasets.DataSet {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
@@ -26,7 +28,7 @@ class DataSet protected ()
 @js.native
 object DataSet extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDatasetsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates a new DataSet unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.

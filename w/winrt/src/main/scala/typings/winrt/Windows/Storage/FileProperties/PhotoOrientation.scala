@@ -1,15 +1,6 @@
 package typings.winrt.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.flipHorizontal
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.flipVertical
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.normal
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.rotate180
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.rotate270
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.rotate90
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.transpose
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.transverse
-import typings.winrt.Windows.Storage.FileProperties.PhotoOrientation.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode.compact
-import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode.expanded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

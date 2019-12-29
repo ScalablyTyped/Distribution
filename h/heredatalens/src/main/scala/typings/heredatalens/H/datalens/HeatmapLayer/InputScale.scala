@@ -1,9 +1,6 @@
 package typings.heredatalens.H.datalens.HeatmapLayer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heredatalens.H.datalens.HeatmapLayer.InputScale.DB
-import typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LINEAR
-import typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LOG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

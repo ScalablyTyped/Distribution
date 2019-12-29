@@ -2,7 +2,6 @@ package typings.plottable
 
 import typings.plottable.buildSrcComponentsComponentMod.Component
 import typings.plottable.buildSrcCoreInterfacesMod.Point
-import typings.plottable.buildSrcUtilsTransformAwareTranslatorMod.Translator
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -1,10 +1,6 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiBoom.atHapiBoomMod.^
-import typings.atHapiHapi.atHapiHapiMod.Lifecycle.Method
-import typings.atHapiHapi.atHapiHapiMod.Lifecycle.ReturnValue
-import typings.atHapiHapi.atHapiHapiMod.Lifecycle.ReturnValueTypes
-import typings.atHapiHapi.atHapiHapiMod.Lifecycle._FailAction
 import typings.node.Buffer
 import typings.node.streamMod.Stream
 import typings.std.Error

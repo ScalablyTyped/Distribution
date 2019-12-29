@@ -1,7 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.PRFAlgorithm.tls_prf_sha256
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

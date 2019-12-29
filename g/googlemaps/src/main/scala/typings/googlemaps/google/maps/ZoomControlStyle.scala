@@ -1,9 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.ZoomControlStyle.DEFAULT
-import typings.googlemaps.google.maps.ZoomControlStyle.LARGE
-import typings.googlemaps.google.maps.ZoomControlStyle.SMALL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

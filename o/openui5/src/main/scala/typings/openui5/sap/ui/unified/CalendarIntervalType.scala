@@ -1,9 +1,6 @@
 package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.unified.CalendarIntervalType.Day
-import typings.openui5.sap.ui.unified.CalendarIntervalType.Hour
-import typings.openui5.sap.ui.unified.CalendarIntervalType.Month
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

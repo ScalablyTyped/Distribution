@@ -12,7 +12,8 @@ class BalloonCheckbox protected () extends js.Object {
   val Creator: Double = js.native
   val Item: String = js.native
   val Name: String = js.native
-  var `Office.BalloonCheckbox_typekey`: BalloonCheckbox = js.native
+  @JSName("Office.BalloonCheckbox_typekey")
+  var OfficeDotBalloonCheckbox_typekey: BalloonCheckbox = js.native
   val Parent: js.Any = js.native
   var Text: String = js.native
 }

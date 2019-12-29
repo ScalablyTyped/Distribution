@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atMaterialIconDashToggleStrings {
   @js.native
-  sealed trait `MDCIconToggle:change` extends js.Object
+  sealed trait MDCIconToggleColonchange extends js.Object
   
   @js.native
   sealed trait `aria-disabled` extends js.Object
@@ -30,7 +30,7 @@ object atMaterialIconDashToggleStrings {
   sealed trait `mdc-icon-toggle--disabled` extends js.Object
   
   @scala.inline
-  def `MDCIconToggle:change`: `MDCIconToggle:change` = "MDCIconToggle:change".asInstanceOf[`MDCIconToggle:change`]
+  def MDCIconToggleColonchange: MDCIconToggleColonchange = "MDCIconToggle:change".asInstanceOf[MDCIconToggleColonchange]
   @scala.inline
   def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
   @scala.inline

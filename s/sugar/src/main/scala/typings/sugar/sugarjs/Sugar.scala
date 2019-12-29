@@ -24,8 +24,8 @@ trait Sugar extends js.Object {
   var RegExp_Original: typings.sugar.sugarjs.RegExp.Constructor = js.native
   @JSName("String")
   var String_Original: typings.sugar.sugarjs.String.Constructor = js.native
-  def apply(): typings.sugar.sugarjs.Sugar = js.native
-  def apply(opts: ExtendOptions): typings.sugar.sugarjs.Sugar = js.native
+  def apply(): Sugar = js.native
+  def apply(opts: ExtendOptions): Sugar = js.native
   def Array[T](): Chainable[T, typings.sugar.Array[T]] = js.native
   def Array[T](obj: Double): Chainable[T, typings.sugar.Array[T]] = js.native
   def Array[T](obj: Double, clone: Boolean): Chainable[T, typings.sugar.Array[T]] = js.native
@@ -49,7 +49,7 @@ trait Sugar extends js.Object {
   def String(): typings.sugar.sugarjs.String.Chainable[java.lang.String] = js.native
   def String(raw: java.lang.String): typings.sugar.sugarjs.String.Chainable[java.lang.String] = js.native
   def createNamespace(name: java.lang.String): SugarNamespace = js.native
-  def extend(): typings.sugar.sugarjs.Sugar = js.native
-  def extend(opts: ExtendOptions): typings.sugar.sugarjs.Sugar = js.native
+  def extend(): Sugar = js.native
+  def extend(opts: ExtendOptions): Sugar = js.native
 }
 

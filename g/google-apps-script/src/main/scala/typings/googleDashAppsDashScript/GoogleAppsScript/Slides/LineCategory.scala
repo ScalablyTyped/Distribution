@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.BENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.CURVED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.STRAIGHT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

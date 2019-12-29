@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.Data
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfDocument
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPage
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPageDimensions
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPageRenderOptions
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPageRotation
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPageRotation.normal
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPageRotation.rotate180
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPageRotation.rotate270
-import typings.winrtDashUwp.Windows.Data.Pdf.PdfPageRotation.rotate90
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.Rect

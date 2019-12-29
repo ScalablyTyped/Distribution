@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Fn_Collection extends js.Object {
-  def apply(): js.UndefOr[scala.Nothing] = js.native
+  def apply(): Null = js.native
   def apply(collection: js.UndefOr[scala.Nothing], iteratee: StringIterator[_]): js.UndefOr[scala.Nothing] = js.native
   def apply(collection: String): String = js.native
   def apply(collection: String, iteratee: StringIterator[_]): String = js.native

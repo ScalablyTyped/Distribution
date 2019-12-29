@@ -4,7 +4,6 @@ import typings.androiduix.android.graphics.Point
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.os.Handler
 import typings.androiduix.android.view.View.AttachInfo.InvalidateInfo
-import typings.androiduix.android.view.ViewRootImpl.RunQueue
 import typings.androiduix.java.lang.Runnable
 import typings.std.Event
 import typings.std.HTMLCanvasElement

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.AccessObject")
 @js.native
 class AccessObject protected () extends js.Object {
-  var `Access.AccessObject_typekey`: AccessObject = js.native
+  @JSName("Access.AccessObject_typekey")
+  var AccessDotAccessObject_typekey: AccessObject = js.native
   val Attributes: Double = js.native
   val CurrentView: AcCurrentView = js.native
   val DateCreated: VarDate = js.native

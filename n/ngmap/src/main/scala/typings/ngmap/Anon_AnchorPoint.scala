@@ -7,6 +7,7 @@ import typings.googlemaps.google.maps.MarkerShape
 import typings.googlemaps.google.maps.Point
 import typings.googlemaps.google.maps.StreetViewPanorama
 import typings.googlemaps.google.maps.Symbol
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +49,7 @@ trait Anon_AnchorPoint extends js.Object {
     * @type {(Map|StreetViewPanorama)}
     *
     */
-  var map: js.UndefOr[Map | StreetViewPanorama] = js.undefined
+  var map: js.UndefOr[Map[Element] | StreetViewPanorama] = js.undefined
   /** The marker's opacity between 0.0 and 1.0. */
   var opacity: js.UndefOr[Double] = js.undefined
   /**
@@ -84,7 +85,7 @@ object Anon_AnchorPoint {
     draggable: js.UndefOr[Boolean] = js.undefined,
     icon: String | Icon | Symbol = null,
     label: String = null,
-    map: Map | StreetViewPanorama = null,
+    map: Map[Element] | StreetViewPanorama = null,
     opacity: Int | Double = null,
     optimized: js.UndefOr[Boolean] = js.undefined,
     shape: MarkerShape = null,

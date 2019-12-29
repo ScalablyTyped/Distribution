@@ -2,20 +2,20 @@ package typings.senchaUnderscoreTouch.Ext.data.association
 
 import typings.senchaUnderscoreTouch.Ext.Array
 import typings.senchaUnderscoreTouch.Ext.IClass
+import typings.senchaUnderscoreTouch.Ext.data.reader.IReader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IHasMany
-  extends typings.senchaUnderscoreTouch.Ext.data.association.IAssociation {
+trait IHasMany extends IAssociation {
   /** [Config Option] (Boolean) */
   var autoLoad: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var autoSync: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var filterProperty: js.UndefOr[java.lang.String] = js.undefined
+  var filterProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var foreignKey: js.UndefOr[java.lang.String] = js.undefined
+  var foreignKey: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of autoLoad
   		* @returns Boolean
   		*/
@@ -27,11 +27,11 @@ trait IHasMany
   /** [Method] Returns the value of filterProperty
   		* @returns String
   		*/
-  var getFilterProperty: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFilterProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of foreignKey
   		* @returns String
   		*/
-  var getForeignKey: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of store
   		* @returns Object
   		*/
@@ -39,9 +39,9 @@ trait IHasMany
   /** [Method] Returns the value of storeName
   		* @returns String
   		*/
-  var getStoreName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getStoreName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of autoLoad
   		* @param autoLoad Boolean The new value.
   		*/
@@ -53,11 +53,11 @@ trait IHasMany
   /** [Method] Sets the value of filterProperty
   		* @param filterProperty String The new value.
   		*/
-  var setFilterProperty: js.UndefOr[js.Function1[/* filterProperty */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFilterProperty: js.UndefOr[js.Function1[/* filterProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of foreignKey
   		* @param foreignKey String The new value.
   		*/
-  var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of store
   		* @param store Object The new value.
   		*/
@@ -65,13 +65,13 @@ trait IHasMany
   /** [Method] Sets the value of storeName
   		* @param storeName String The new value.
   		*/
-  var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var store: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object) */
   var storeConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var storeName: js.UndefOr[java.lang.String] = js.undefined
+  var storeName: js.UndefOr[String] = js.undefined
 }
 
 object IHasMany {
@@ -79,9 +79,9 @@ object IHasMany {
   def apply(
     alias: Array = null,
     alternateClassName: js.Any = null,
-    associatedModel: java.lang.String = null,
-    associatedName: java.lang.String = null,
-    associationKey: java.lang.String = null,
+    associatedModel: String = null,
+    associatedName: String = null,
+    associationKey: String = null,
     autoLoad: js.UndefOr[Boolean] = js.undefined,
     autoSync: js.UndefOr[Boolean] = js.undefined,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -89,55 +89,55 @@ object IHasMany {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    filterProperty: java.lang.String = null,
-    foreignKey: java.lang.String = null,
-    getAssociatedModel: () => java.lang.String = null,
-    getAssociatedName: () => java.lang.String = null,
-    getAssociationKey: () => java.lang.String = null,
+    extend: String = null,
+    filterProperty: String = null,
+    foreignKey: String = null,
+    getAssociatedModel: () => String = null,
+    getAssociatedName: () => String = null,
+    getAssociationKey: () => String = null,
     getAutoLoad: () => Boolean = null,
     getAutoSync: () => Boolean = null,
-    getFilterProperty: () => java.lang.String = null,
-    getForeignKey: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getFilterProperty: () => String = null,
+    getForeignKey: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getName: () => _ = null,
     getOwnerModel: () => _ = null,
-    getOwnerName: () => java.lang.String = null,
-    getPrimaryKey: () => java.lang.String = null,
-    getReader: () => typings.senchaUnderscoreTouch.Ext.data.reader.IReader = null,
+    getOwnerName: () => String = null,
+    getPrimaryKey: () => String = null,
+    getReader: () => IReader = null,
     getStore: () => _ = null,
-    getStoreName: () => java.lang.String = null,
-    getType: () => java.lang.String = null,
+    getStoreName: () => String = null,
+    getType: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
-    name: java.lang.String = null,
+    name: String = null,
     ownerModel: js.Any = null,
     platformConfig: js.Any = null,
-    primaryKey: java.lang.String = null,
-    reader: typings.senchaUnderscoreTouch.Ext.data.reader.IReader = null,
+    primaryKey: String = null,
+    reader: IReader = null,
     self: IClass = null,
-    setAssociatedModel: /* associatedModel */ js.UndefOr[java.lang.String] => Unit = null,
-    setAssociatedName: /* associatedName */ js.UndefOr[java.lang.String] => Unit = null,
-    setAssociationKey: /* associationKey */ js.UndefOr[java.lang.String] => Unit = null,
+    setAssociatedModel: /* associatedModel */ js.UndefOr[String] => Unit = null,
+    setAssociatedName: /* associatedName */ js.UndefOr[String] => Unit = null,
+    setAssociationKey: /* associationKey */ js.UndefOr[String] => Unit = null,
     setAutoLoad: /* autoLoad */ js.UndefOr[Boolean] => Unit = null,
     setAutoSync: /* autoSync */ js.UndefOr[Boolean] => Unit = null,
-    setFilterProperty: /* filterProperty */ js.UndefOr[java.lang.String] => Unit = null,
-    setForeignKey: /* foreignKey */ js.UndefOr[java.lang.String] => Unit = null,
+    setFilterProperty: /* filterProperty */ js.UndefOr[String] => Unit = null,
+    setForeignKey: /* foreignKey */ js.UndefOr[String] => Unit = null,
     setName: /* name */ js.UndefOr[js.Any] => Unit = null,
     setOwnerModel: /* ownerModel */ js.UndefOr[js.Any] => Unit = null,
-    setOwnerName: /* ownerName */ js.UndefOr[java.lang.String] => Unit = null,
-    setPrimaryKey: /* primaryKey */ js.UndefOr[java.lang.String] => Unit = null,
-    setReader: /* reader */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.data.reader.IReader] => Unit = null,
+    setOwnerName: /* ownerName */ js.UndefOr[String] => Unit = null,
+    setPrimaryKey: /* primaryKey */ js.UndefOr[String] => Unit = null,
+    setReader: /* reader */ js.UndefOr[IReader] => Unit = null,
     setStore: /* store */ js.UndefOr[js.Any] => Unit = null,
-    setStoreName: /* storeName */ js.UndefOr[java.lang.String] => Unit = null,
-    setType: /* type */ js.UndefOr[java.lang.String] => Unit = null,
+    setStoreName: /* storeName */ js.UndefOr[String] => Unit = null,
+    setType: /* type */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     store: js.Any = null,
     storeConfig: js.Any = null,
-    storeName: java.lang.String = null,
-    `type`: java.lang.String = null,
+    storeName: String = null,
+    `type`: String = null,
     uses: Array = null
   ): IHasMany = {
     val __obj = js.Dynamic.literal()

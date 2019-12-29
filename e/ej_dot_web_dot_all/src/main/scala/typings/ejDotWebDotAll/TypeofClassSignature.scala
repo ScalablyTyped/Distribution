@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSignature
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Signature]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Signature] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Signature]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Signature] {
   var Locale: js.Any = js.native
   var fn: Signature = js.native
 }

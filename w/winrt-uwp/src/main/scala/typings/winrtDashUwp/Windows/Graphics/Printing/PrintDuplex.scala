@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.default
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.notAvailable
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.oneSided
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.printerCustom
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.twoSidedLongEdge
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.twoSidedShortEdge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

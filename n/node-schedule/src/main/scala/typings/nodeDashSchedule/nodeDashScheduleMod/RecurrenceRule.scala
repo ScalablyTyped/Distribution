@@ -15,7 +15,8 @@ class RecurrenceRule protected () extends js.Object {
     dayOfWeek: js.UndefOr[RecurrenceSegment],
     hour: js.UndefOr[RecurrenceSegment],
     minute: js.UndefOr[RecurrenceSegment],
-    second: js.UndefOr[RecurrenceSegment]
+    second: js.UndefOr[RecurrenceSegment],
+    tz: js.UndefOr[Timezone]
   ) = this()
   /**
     * Day of the month.
@@ -26,6 +27,7 @@ class RecurrenceRule protected () extends js.Object {
   var minute: RecurrenceSegment = js.native
   var month: RecurrenceSegment = js.native
   var second: RecurrenceSegment = js.native
+  var tz: Timezone = js.native
   var year: RecurrenceSegment = js.native
   def nextInvocationDate(base: Date): Date = js.native
 }

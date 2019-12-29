@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.error
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.initializing
@@ -35,7 +34,7 @@ trait PrintViewModel extends Accessor {
     */
   val state: disabled | initializing | ready | error = js.native
   /**
-    * The service metadata that contains the layout/format information for the printout.
+    * The service metadata that contains the [format](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format) and [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) information for the printout.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#templatesInfo)
     */
@@ -61,7 +60,7 @@ trait PrintViewModel extends Accessor {
     *
     *
     */
-  def load(): IPromise[_] = js.native
+  def load(): js.Promise[_] = js.native
   /**
     * Prints (exports) the current MapView according to selected options.
     *
@@ -70,7 +69,7 @@ trait PrintViewModel extends Accessor {
     * @param printTemplate The [PrintTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html) is used to specify the layout template options which is then used by the PrintTask to generate the print page.
     *
     */
-  def print(printTemplate: PrintTemplate): IPromise[_] = js.native
+  def print(printTemplate: PrintTemplate): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.PrintViewModel")

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGMaskElement")
 @js.native
 class SVGMaskElement protected () extends js.Object {
-  var `MSHTML.SVGMaskElement_typekey`: SVGMaskElement = js.native
+  @JSName("MSHTML.SVGMaskElement_typekey")
+  var MSHTMLDotSVGMaskElement_typekey: SVGMaskElement = js.native
   val className: SVGAnimatedString = js.native
   val externalResourcesRequired: SVGAnimatedBoolean = js.native
   var focusable: SVGAnimatedEnumeration = js.native

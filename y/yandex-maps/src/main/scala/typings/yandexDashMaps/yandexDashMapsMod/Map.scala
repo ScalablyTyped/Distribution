@@ -9,7 +9,6 @@ import typings.yandexDashMaps.yandexDashMapsMod.map.GeoObjects
 import typings.yandexDashMaps.yandexDashMapsMod.map.Hint
 import typings.yandexDashMaps.yandexDashMapsMod.map.ZoomRange
 import typings.yandexDashMaps.yandexDashMapsMod.map.action.Manager
-import typings.yandexDashMaps.yandexDashMapsMod.map.margin.Accessor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,15 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object lookupService extends js.Object {
   def apply(
-    address: java.lang.String,
+    address: String,
     port: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* hostname */ java.lang.String, 
-      /* service */ java.lang.String, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* hostname */ String, /* service */ String, Unit]
   ): Unit = js.native
-  def __promisify__(address: java.lang.String, port: Double): js.Promise[Anon_Hostname] = js.native
+  def __promisify__(address: String, port: Double): js.Promise[Anon_Hostname] = js.native
 }
 

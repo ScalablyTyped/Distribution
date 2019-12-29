@@ -1,6 +1,5 @@
 package typings.atAntDashDesignReactDashNative
 
-import typings.atAntDashDesignReactDashNative.libDateDashPickerDashViewDateDashPickerDashViewMod.DatePickerView
 import typings.atAntDashDesignReactDashNative.libDateDashPickerDashViewPropsTypeMod.DatePickerProps
 import typings.react.reactMod.Component
 import scala.scalajs.js

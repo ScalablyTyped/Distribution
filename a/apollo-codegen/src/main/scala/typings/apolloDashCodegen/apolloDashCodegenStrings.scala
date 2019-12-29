@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object apolloDashCodegenStrings {
   @js.native
-  sealed trait SCALA extends TargetType
-  
-  @js.native
   sealed trait flow extends TargetType
   
   @js.native
@@ -17,6 +14,9 @@ object apolloDashCodegenStrings {
   
   @js.native
   sealed trait json extends TargetType
+  
+  @js.native
+  sealed trait scala_ extends TargetType
   
   @js.native
   sealed trait swift extends TargetType
@@ -34,13 +34,13 @@ object apolloDashCodegenStrings {
   sealed trait `typescript-legacy` extends TargetType
   
   @scala.inline
-  def SCALA: SCALA = "scala".asInstanceOf[SCALA]
-  @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   @scala.inline
   def `flow-legacy`: `flow-legacy` = "flow-legacy".asInstanceOf[`flow-legacy`]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
+  def scala_ : scala_ = "scala".asInstanceOf[scala_]
   @scala.inline
   def swift: swift = "swift".asInstanceOf[swift]
   @scala.inline

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.WebOptions")
 @js.native
 class WebOptions protected () extends js.Object {
-  var `Access.WebOptions_typekey`: WebOptions = js.native
+  @JSName("Access.WebOptions_typekey")
+  var AccessDotWebOptions_typekey: WebOptions = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var DownloadComponents: Boolean = js.native
   var Encoding: MsoEncoding = js.native

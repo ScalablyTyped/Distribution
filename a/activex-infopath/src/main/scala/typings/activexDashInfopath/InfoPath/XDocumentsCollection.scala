@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class XDocumentsCollection protected () extends js.Object {
   val Count: Double = js.native
-  var `InfoPath.XDocumentsCollection_typekey`: XDocumentsCollection = js.native
+  @JSName("InfoPath.XDocumentsCollection_typekey")
+  var InfoPathDotXDocumentsCollection_typekey: XDocumentsCollection = js.native
   def Close(varIndex: js.Any): Unit = js.native
   def Item(varIndex: js.Any): _XDocument = js.native
   /** @param number [dwBehavior=1] */

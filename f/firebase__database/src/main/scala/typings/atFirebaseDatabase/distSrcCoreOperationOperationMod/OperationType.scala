@@ -1,10 +1,6 @@
 package typings.atFirebaseDatabase.distSrcCoreOperationOperationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseDatabase.distSrcCoreOperationOperationMod.OperationType.ACK_USER_WRITE
-import typings.atFirebaseDatabase.distSrcCoreOperationOperationMod.OperationType.LISTEN_COMPLETE
-import typings.atFirebaseDatabase.distSrcCoreOperationOperationMod.OperationType.MERGE
-import typings.atFirebaseDatabase.distSrcCoreOperationOperationMod.OperationType.OVERWRITE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

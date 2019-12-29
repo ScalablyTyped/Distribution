@@ -19,6 +19,13 @@ trait ProxySpec[D /* <: ProxyData */, T, S] extends js.Object {
     ]
   ] = js.undefined
   /**
+    * Name of the proxy class.
+    *
+    * Omit this if you don’t care about the globally visible name and would like the runtime to auto-generate one
+    * for you.
+    */
+  var name: js.UndefOr[String] = js.undefined
+  /**
     * Protocols this proxy class conforms to.
     */
   var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
@@ -31,11 +38,13 @@ object ProxySpec {
     methods: StringDictionary[
       (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
     ] = null,
+    name: String = null,
     protocols: js.Array[Protocol] = null
   ): ProxySpec[D, T, S] = {
     val __obj = js.Dynamic.literal()
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxySpec[D, T, S]]
   }

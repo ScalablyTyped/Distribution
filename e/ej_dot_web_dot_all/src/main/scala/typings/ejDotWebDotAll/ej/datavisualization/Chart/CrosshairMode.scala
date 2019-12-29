@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.CrosshairMode.Float
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.CrosshairMode.Grouping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

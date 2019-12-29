@@ -10,8 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libComponentsOverlayOverlayDotBaseMod extends js.Object {
   @js.native
-  class OverlayBase ()
+  class OverlayBase protected ()
     extends BaseComponent[IOverlayProps, js.Object] {
+    def this(props: IOverlayProps) = this()
+    var _allowTouchBodyScroll: js.Any = js.native
     @JSName("componentDidMount")
     def componentDidMount_MOverlayBase(): Unit = js.native
     @JSName("componentWillUnmount")

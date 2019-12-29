@@ -14,7 +14,8 @@ class AutoTextEntry protected () extends js.Object {
   val Parent: js.Any = js.native
   val StyleName: String = js.native
   var Value: String = js.native
-  var `Word.AutoTextEntry_typekey`: AutoTextEntry = js.native
+  @JSName("Word.AutoTextEntry_typekey")
+  var WordDotAutoTextEntry_typekey: AutoTextEntry = js.native
   def Delete(): Unit = js.native
   def Insert(Where: Range): Range = js.native
   def Insert(Where: Range, RichText: js.Any): Range = js.native

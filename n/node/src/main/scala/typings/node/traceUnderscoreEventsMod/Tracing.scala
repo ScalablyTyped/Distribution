@@ -19,7 +19,7 @@ trait Tracing extends js.Object {
     * A comma-separated list of the trace event categories covered by this
     * `Tracing` object.
     */
-  val categories: java.lang.String
+  val categories: String
   /**
     * `true` only if the `Tracing` object has been enabled.
     */
@@ -41,7 +41,7 @@ trait Tracing extends js.Object {
 
 object Tracing {
   @scala.inline
-  def apply(categories: java.lang.String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
+  def apply(categories: String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tracing]

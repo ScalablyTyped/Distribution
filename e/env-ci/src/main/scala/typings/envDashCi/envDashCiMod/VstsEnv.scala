@@ -1,6 +1,6 @@
 package typings.envDashCi.envDashCiMod
 
-import typings.envDashCi.envDashCiNumbers.`true`
+import typings.envDashCi.envDashCiBooleans.`true`
 import typings.envDashCi.envDashCiStrings.`Visual Studio Team Services`
 import typings.envDashCi.envDashCiStrings.vsts
 import scala.scalajs.js

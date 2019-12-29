@@ -12,6 +12,7 @@ trait DraggableOptions extends DraggableEvents {
   var appendTo: js.UndefOr[js.Any] = js.undefined
   var axis: js.UndefOr[String] = js.undefined
   var cancel: js.UndefOr[String] = js.undefined
+  var classes: js.UndefOr[DraggableClasses] = js.undefined
   var connectToSortable: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
   var containment: js.UndefOr[js.Any] = js.undefined
   var cursor: js.UndefOr[String] = js.undefined
@@ -45,6 +46,7 @@ object DraggableOptions {
     appendTo: js.Any = null,
     axis: String = null,
     cancel: String = null,
+    classes: DraggableClasses = null,
     connectToSortable: Element | js.Array[Element] | JQuery | String = null,
     containment: js.Any = null,
     create: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
@@ -79,6 +81,7 @@ object DraggableOptions {
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (connectToSortable != null) __obj.updateDynamic("connectToSortable")(connectToSortable.asInstanceOf[js.Any])
     if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))

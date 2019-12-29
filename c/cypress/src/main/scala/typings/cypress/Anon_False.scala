@@ -1,7 +1,7 @@
 package typings.cypress
 
 import typings.cypress.JQuery._SpecialEventHook
-import typings.cypress.cypressNumbers.`false`
+import typings.cypress.cypressBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,13 +14,13 @@ trait Anon_False[TTarget]
     * If the setup hook attached event handlers or added data to an element through a mechanism such as `jQuery.data()`, the teardown hook should reverse the process and remove them. jQuery will generally remove the data and events when an element is totally removed from the document, but failing to remove data or events on teardown will cause a memory leak if the element stays in the document.
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#teardown-function }\`
     */
-  def teardown(`this`: TTarget): Unit | `false`
+  def teardown(): Unit | `false`
 }
 
 object Anon_False {
   @scala.inline
-  def apply[TTarget](teardown: TTarget => Unit | `false`): Anon_False[TTarget] = {
-    val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction1(teardown))
+  def apply[TTarget](teardown: () => Unit | `false`): Anon_False[TTarget] = {
+    val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction0(teardown))
   
     __obj.asInstanceOf[Anon_False[TTarget]]
   }

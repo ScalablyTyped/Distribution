@@ -10,7 +10,8 @@ class Slides protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Slides_typekey`: Slides = js.native
+  @JSName("PowerPoint.Slides_typekey")
+  var PowerPointDotSlides_typekey: Slides = js.native
   def Add(Index: Double, Layout: PpSlideLayout): Slide = js.native
   def AddSlide(Index: Double, pCustomLayout: CustomLayout): Slide = js.native
   def FindBySlideID(SlideID: Double): Slide = js.native

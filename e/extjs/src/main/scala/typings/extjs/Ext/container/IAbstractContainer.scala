@@ -55,7 +55,7 @@ import scala.scalajs.js.annotation._
     js.Function2[/* comp */ js.UndefOr[IComponent], /* deep */ js.UndefOr[Boolean], Boolean]
   ] = js.undefined
   /** [Config Option] (String) */
-  var defaultType: js.UndefOr[java.lang.String] = js.undefined
+  var defaultType: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object/Function) */
   var defaults: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Manually force this container s layout to be recalculated
   		* @returns Ext.container.Container this
   		*/
-  var doLayout: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.undefined
+  var doLayout: js.UndefOr[js.Function0[IContainer]] = js.undefined
   /** [Method] Retrieves the first descendant of this container which matches the passed selector
   		* @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
   		* @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
@@ -140,7 +140,7 @@ import scala.scalajs.js.annotation._
   		* @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
   		* @returns Ext.Component[] Components which matched the selector
   		*/
-  var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.undefined
+  var query: js.UndefOr[js.Function1[js.UndefOr[String], Array]] = js.undefined
   /** [Method] Retrieves all descendant components which match the passed function
   		* @param fn Function The matcher function. It will be called with a single argument, the component being tested.
   		* @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
@@ -151,7 +151,7 @@ import scala.scalajs.js.annotation._
   		* @param id String The id to find
   		* @returns Ext.Component The matching id, null if not found
   		*/
-  var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
+  var queryById: js.UndefOr[js.Function1[js.UndefOr[String], IComponent]] = js.undefined
   /** [Method] Removes a component from this container
   		* @param component Ext.Component/String The component reference or id to remove.
   		* @param autoDestroy Boolean True to automatically invoke the removed Component's Ext.Component.destroy function. Defaults to the value of this Container's autoDestroy config.
@@ -185,11 +185,11 @@ object IAbstractContainer {
     cascade: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => typings.extjs.Ext.IContainer = null,
     child: js.UndefOr[js.Any] => _ = null,
     contains: (/* comp */ js.UndefOr[IComponent], /* deep */ js.UndefOr[Boolean]) => Boolean = null,
-    defaultType: java.lang.String = null,
+    defaultType: String = null,
     defaults: js.Any = null,
     detachOnRemove: js.UndefOr[Boolean] = js.undefined,
     disable: () => IAbstractContainer = null,
-    doLayout: () => typings.extjs.Ext.container.IContainer = null,
+    doLayout: () => IContainer = null,
     down: js.UndefOr[js.Any] => _ = null,
     getComponent: /* comp */ js.UndefOr[js.Any] => IComponent = null,
     getLayout: () => typings.extjs.Ext.layout.container.IContainer = null,
@@ -204,9 +204,9 @@ object IAbstractContainer {
     onPosition: () => Unit = null,
     onRemove: (/* component */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean]) => Unit = null,
     onResize: () => Unit = null,
-    query: js.UndefOr[java.lang.String] => Array = null,
+    query: js.UndefOr[String] => Array = null,
     queryBy: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array = null,
-    queryById: js.UndefOr[java.lang.String] => IComponent = null,
+    queryById: js.UndefOr[String] => IComponent = null,
     remove: (/* component */ js.UndefOr[js.Any], /* autoDestroy */ js.UndefOr[Boolean]) => IComponent = null,
     removeAll: /* autoDestroy */ js.UndefOr[Boolean] => Array = null,
     suspendLayout: js.UndefOr[Boolean] = js.undefined

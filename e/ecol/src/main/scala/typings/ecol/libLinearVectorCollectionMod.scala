@@ -52,6 +52,7 @@ object libLinearVectorCollectionMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Vector[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -67,6 +68,7 @@ object libLinearVectorCollectionMod extends js.Object {
       *
       * @return Iterator to the end.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Vector[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -77,6 +79,7 @@ object libLinearVectorCollectionMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def push(items: T*): Double = js.native
     /**
@@ -120,6 +123,7 @@ object libLinearVectorCollectionMod extends js.Object {
     /**
       * Number of elements in the container.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

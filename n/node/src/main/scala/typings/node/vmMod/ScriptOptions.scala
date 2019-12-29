@@ -18,7 +18,7 @@ object ScriptOptions {
     cachedData: Buffer = null,
     columnOffset: Int | Double = null,
     displayErrors: js.UndefOr[Boolean] = js.undefined,
-    filename: java.lang.String = null,
+    filename: String = null,
     lineOffset: Int | Double = null,
     produceCachedData: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null

@@ -1,9 +1,6 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.EndByDate
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.NoEndDate
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.OccurrenceCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

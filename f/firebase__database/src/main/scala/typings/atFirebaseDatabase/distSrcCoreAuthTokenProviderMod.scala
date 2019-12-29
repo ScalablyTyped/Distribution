@@ -2,6 +2,8 @@ package typings.atFirebaseDatabase
 
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseAppDashTypes.privateMod.FirebaseAuthTokenData
+import typings.atFirebaseAuthDashInteropDashTypes.atFirebaseAuthDashInteropDashTypesMod.FirebaseAuthInternalName
+import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +13,10 @@ import scala.scalajs.js.annotation._
 object distSrcCoreAuthTokenProviderMod extends js.Object {
   @js.native
   class AuthTokenProvider protected () extends js.Object {
-    /**
-      * @param {!FirebaseApp} app_
-      */
-    def this(app_ : FirebaseApp) = this()
+    def this(app_ : FirebaseApp, authProvider_ : Provider[FirebaseAuthInternalName]) = this()
     var app_ : js.Any = js.native
+    var authProvider_ : js.Any = js.native
+    var auth_ : js.Any = js.native
     def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
     /**
       * @param {boolean} forceRefresh

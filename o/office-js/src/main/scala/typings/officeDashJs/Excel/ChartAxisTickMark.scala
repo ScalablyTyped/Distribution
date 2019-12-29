@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartAxisTickMark.cross
-import typings.officeDashJs.Excel.ChartAxisTickMark.inside
-import typings.officeDashJs.Excel.ChartAxisTickMark.none
-import typings.officeDashJs.Excel.ChartAxisTickMark.outside
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

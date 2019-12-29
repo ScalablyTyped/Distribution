@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.ABOVE_TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_BOTH
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_LEFT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_RIGHT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.WRAP_TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

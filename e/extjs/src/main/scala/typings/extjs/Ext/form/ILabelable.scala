@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait ILabelable extends IBase {
   /** [Config Option] (String) */
-  var activeError: js.UndefOr[java.lang.String] = js.undefined
+  var activeError: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/String[]/Ext.XTemplate) */
   var activeErrorsTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -24,7 +24,7 @@ trait ILabelable extends IBase {
   /** [Config Option] (Boolean) */
   var autoFitErrors: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var baseBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  var baseBodyCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var beforeBodyEl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -36,21 +36,21 @@ trait ILabelable extends IBase {
   /** [Property] (Ext.Element) */
   var bodyEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var clearCls: js.UndefOr[java.lang.String] = js.undefined
+  var clearCls: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var errorEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var errorMsgCls: js.UndefOr[java.lang.String] = js.undefined
+  var errorMsgCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fieldBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  var fieldBodyCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fieldLabel: js.UndefOr[java.lang.String] = js.undefined
+  var fieldLabel: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var formItemCls: js.UndefOr[java.lang.String] = js.undefined
+  var formItemCls: js.UndefOr[String] = js.undefined
   /** [Method] Gets the active error message for this component if any
   		* @returns String The active error message on the component; if there is no error, an empty string is returned.
   		*/
-  var getActiveError: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getActiveError: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets an Array of any active error messages currently applied to the field
   		* @returns String[] The active error messages on the component; if there are no errors, an empty Array is returned.
   		*/
@@ -58,11 +58,11 @@ trait ILabelable extends IBase {
   /** [Method] Returns the label for the field
   		* @returns String The configured field label, or empty string if not defined
   		*/
-  var getFieldLabel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFieldLabel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Get the input id if any for this component
   		* @returns String The input id
   		*/
-  var getInputId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getInputId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets the width of the label if visible
   		* @returns Number The label width
   		*/
@@ -74,7 +74,7 @@ trait ILabelable extends IBase {
   /** [Method] Gets the markup to be inserted into the outer template s bodyEl
   		* @returns String The markup to be inserted
   		*/
-  var getSubTplMarkup: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSubTplMarkup: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Tells whether the field currently has an active error message
   		* @returns Boolean
   		*/
@@ -90,37 +90,37 @@ trait ILabelable extends IBase {
   /** [Method] Performs initialization of this mixin  */
   var initLabelable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var invalidCls: js.UndefOr[java.lang.String] = js.undefined
+  var invalidCls: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var isFieldLabelable: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var labelAlign: js.UndefOr[java.lang.String] = js.undefined
+  var labelAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var labelAttrTpl: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Ext.Element) */
   var labelCell: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var labelCls: js.UndefOr[java.lang.String] = js.undefined
+  var labelCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelClsExtra: js.UndefOr[java.lang.String] = js.undefined
+  var labelClsExtra: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var labelEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (Number) */
   var labelPad: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var labelSeparator: js.UndefOr[java.lang.String] = js.undefined
+  var labelSeparator: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelStyle: js.UndefOr[java.lang.String] = js.undefined
+  var labelStyle: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var labelWidth: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var msgTarget: js.UndefOr[java.lang.String] = js.undefined
+  var msgTarget: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var preventMark: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the active error message to the given string
   		* @param msg String The error message
   		*/
-  var setActiveError: js.UndefOr[js.Function1[/* msg */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setActiveError: js.UndefOr[js.Function1[/* msg */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the active error message to an Array of error messages
   		* @param errors String[] The error messages
   		*/
@@ -132,11 +132,11 @@ trait ILabelable extends IBase {
   /** [Method] Set the label of this field
   		* @param label String The new label. The labelSeparator will be automatically appended to the label string.
   		*/
-  var setFieldLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFieldLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Returns the trimmed label by slicing off the label separator character
   		* @returns String The trimmed field label, or empty string if not defined
   		*/
-  var trimLabelSeparator: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var trimLabelSeparator: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Clears the active error message s */
   var unsetActiveError: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -144,7 +144,7 @@ trait ILabelable extends IBase {
 object ILabelable {
   @scala.inline
   def apply(
-    activeError: java.lang.String = null,
+    activeError: String = null,
     activeErrorsTpl: js.Any = null,
     afterBodyEl: js.Any = null,
     afterLabelTextTpl: js.Any = null,
@@ -153,7 +153,7 @@ object ILabelable {
     alias: Array = null,
     alternateClassName: js.Any = null,
     autoFitErrors: js.UndefOr[Boolean] = js.undefined,
-    baseBodyCls: java.lang.String = null,
+    baseBodyCls: String = null,
     beforeBodyEl: js.Any = null,
     beforeLabelTextTpl: js.Any = null,
     beforeLabelTpl: js.Any = null,
@@ -162,22 +162,22 @@ object ILabelable {
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearCls: java.lang.String = null,
+    clearCls: String = null,
     config: js.Any = null,
     errorEl: IElement = null,
-    errorMsgCls: java.lang.String = null,
-    extend: java.lang.String = null,
-    fieldBodyCls: java.lang.String = null,
-    fieldLabel: java.lang.String = null,
-    formItemCls: java.lang.String = null,
-    getActiveError: () => java.lang.String = null,
+    errorMsgCls: String = null,
+    extend: String = null,
+    fieldBodyCls: String = null,
+    fieldLabel: String = null,
+    formItemCls: String = null,
+    getActiveError: () => String = null,
     getActiveErrors: () => Array = null,
-    getFieldLabel: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getInputId: () => java.lang.String = null,
+    getFieldLabel: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getInputId: () => String = null,
     getLabelWidth: () => Double = null,
     getLabelableRenderData: () => _ = null,
-    getSubTplMarkup: () => java.lang.String = null,
+    getSubTplMarkup: () => String = null,
     hasActiveError: () => Boolean = null,
     hasVisibleLabel: () => Boolean = null,
     hideEmptyLabel: js.UndefOr[Boolean] = js.undefined,
@@ -185,30 +185,30 @@ object ILabelable {
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ILabelable = null,
     initLabelable: () => Unit = null,
-    invalidCls: java.lang.String = null,
+    invalidCls: String = null,
     isFieldLabelable: js.UndefOr[Boolean] = js.undefined,
-    labelAlign: java.lang.String = null,
+    labelAlign: String = null,
     labelAttrTpl: js.Any = null,
     labelCell: IElement = null,
-    labelCls: java.lang.String = null,
-    labelClsExtra: java.lang.String = null,
+    labelCls: String = null,
+    labelClsExtra: String = null,
     labelEl: IElement = null,
     labelPad: Int | Double = null,
-    labelSeparator: java.lang.String = null,
-    labelStyle: java.lang.String = null,
+    labelSeparator: String = null,
+    labelStyle: String = null,
     labelWidth: Int | Double = null,
     mixins: js.Any = null,
-    msgTarget: java.lang.String = null,
+    msgTarget: String = null,
     preventMark: js.UndefOr[Boolean] = js.undefined,
     requires: Array = null,
     self: IClass = null,
-    setActiveError: /* msg */ js.UndefOr[java.lang.String] => Unit = null,
+    setActiveError: /* msg */ js.UndefOr[String] => Unit = null,
     setActiveErrors: /* errors */ js.UndefOr[Array] => Unit = null,
     setFieldDefaults: /* defaults */ js.UndefOr[js.Any] => Unit = null,
-    setFieldLabel: /* label */ js.UndefOr[java.lang.String] => Unit = null,
+    setFieldLabel: /* label */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    trimLabelSeparator: () => java.lang.String = null,
+    trimLabelSeparator: () => String = null,
     unsetActiveError: () => Unit = null,
     uses: Array = null
   ): ILabelable = {

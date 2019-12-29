@@ -1,6 +1,5 @@
 package typings.azureDashArmDashResource
 
-import typings.azureDashArmDashResource.libFeatureFeatureClientMod.FeatureClient
 import typings.azureDashArmDashResource.libFeatureModelsMod.OperationListResult
 import typings.azureDashArmDashResource.libFeatureOperationsMod.Features
 import typings.msDashRest.msDashRestMod.HttpOperationResponse

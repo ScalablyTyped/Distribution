@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.ParagraphFirstLineIndent.Hanging
-import typings.devexpressDashWeb.ParagraphFirstLineIndent.Indented
-import typings.devexpressDashWeb.ParagraphFirstLineIndent.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

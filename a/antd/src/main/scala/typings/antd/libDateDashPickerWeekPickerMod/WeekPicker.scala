@@ -18,7 +18,7 @@ trait WeekPicker
   def blur(): Unit = js.native
   def clearSelection(e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MWeekPicker(`_`: js.Any, prevState: WeekPickerState): Unit = js.native
+  def componentDidUpdate_MWeekPicker(_underscore: js.Any, prevState: WeekPickerState): Unit = js.native
   def focus(): Unit = js.native
   def handleChange(): Unit = js.native
   def handleChange(value: Moment): Unit = js.native

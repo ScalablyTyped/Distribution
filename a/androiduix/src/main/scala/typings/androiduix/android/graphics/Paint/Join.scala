@@ -1,9 +1,6 @@
 package typings.androiduix.android.graphics.Paint
 
 import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.android.graphics.Paint.Join.BEVEL
-import typings.androiduix.android.graphics.Paint.Join.MITER
-import typings.androiduix.android.graphics.Paint.Join.ROUND
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

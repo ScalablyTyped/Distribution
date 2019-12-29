@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.FeatureDefinitionScope.farm
-import typings.sharepoint.SP.FeatureDefinitionScope.none
-import typings.sharepoint.SP.FeatureDefinitionScope.site
-import typings.sharepoint.SP.FeatureDefinitionScope.web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

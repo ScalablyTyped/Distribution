@@ -1,21 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.centerField1
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.footerField1
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.footerField2
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.footerField3
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.footerField4
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.headerField1
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.headerField2
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.hidden
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.primaryField1
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.primaryField2
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.secondaryField1
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.secondaryField2
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.secondaryField3
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.secondaryField4
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition.secondaryField5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

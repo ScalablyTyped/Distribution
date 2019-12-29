@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage.Pickers
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Pickers.PickerViewMode.list
-import typings.winrt.Windows.Storage.Pickers.PickerViewMode.thumbnail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.yandexDashMaps.yandexDashMapsMod
 import typings.std.HTMLElement
 import typings.yandexDashMaps.Anon_Always
 import typings.yandexDashMaps.Anon_Direction
-import typings.yandexDashMaps.yandexDashMapsMod.panorama.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

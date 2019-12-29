@@ -22,7 +22,7 @@ trait BeforeSelectEventArgs extends js.Object {
   var index: js.UndefOr[Double] = js.undefined
   /** returns the button model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.GroupButton.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Boolean value based on whether the button element is selected or not.
     */
   var selected: js.UndefOr[Boolean] = js.undefined
@@ -42,7 +42,7 @@ object BeforeSelectEventArgs {
     event: js.Any = null,
     id: String = null,
     index: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.GroupButton.Model = null,
+    model: Model = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     status: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null

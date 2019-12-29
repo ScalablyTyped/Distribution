@@ -1,9 +1,9 @@
 package typings.steamDashClient.steamDashClientMod
 
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.steamDashClient.Anon_False
-import typings.steamDashClient.steamDashClientNumbers.`false`
+import typings.steamDashClient.steamDashClientBooleans.`false`
 import typings.steamDashClient.steamDashClientStrings.message
 import scala.scalajs.js
 import scala.scalajs.js.`|`

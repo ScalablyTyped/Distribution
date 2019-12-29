@@ -1,7 +1,7 @@
 
 # Scala.js typings for csv-stringify
 
-Typings are for version 5.3.4
+Typings are for version 5.3.6
 
 ## Library description:
 CSV stringifier implementing the Node.js `stream.Transform` API

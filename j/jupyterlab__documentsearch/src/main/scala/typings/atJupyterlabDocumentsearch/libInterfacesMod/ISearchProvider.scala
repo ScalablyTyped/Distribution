@@ -102,7 +102,7 @@ object ISearchProvider {
     startQuery: (RegExp, T) => js.Promise[js.Array[ISearchMatch]],
     currentMatchIndex: Int | Double = null
   ): ISearchProvider[T] = {
-    val __obj = js.Dynamic.literal(changed = changed, endQuery = js.Any.fromFunction0(endQuery), endSearch = js.Any.fromFunction0(endSearch), getInitialQuery = js.Any.fromFunction1(getInitialQuery), highlightNext = js.Any.fromFunction0(highlightNext), highlightPrevious = js.Any.fromFunction0(highlightPrevious), isReadOnly = isReadOnly, matches = matches, replaceAllMatches = js.Any.fromFunction1(replaceAllMatches), replaceCurrentMatch = js.Any.fromFunction1(replaceCurrentMatch), startQuery = js.Any.fromFunction2(startQuery))
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], endQuery = js.Any.fromFunction0(endQuery), endSearch = js.Any.fromFunction0(endSearch), getInitialQuery = js.Any.fromFunction1(getInitialQuery), highlightNext = js.Any.fromFunction0(highlightNext), highlightPrevious = js.Any.fromFunction0(highlightPrevious), isReadOnly = isReadOnly.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], replaceAllMatches = js.Any.fromFunction1(replaceAllMatches), replaceCurrentMatch = js.Any.fromFunction1(replaceCurrentMatch), startQuery = js.Any.fromFunction2(startQuery))
     if (currentMatchIndex != null) __obj.updateDynamic("currentMatchIndex")(currentMatchIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchProvider[T]]
   }

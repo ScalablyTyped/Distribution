@@ -1,6 +1,8 @@
 package typings.passportDashLinkedinDashOauth2.passportDashLinkedinDashOauth2Mod
 
+import typings.passport.Anon_FamilyName
 import typings.passport.Anon_Type
+import typings.passport.Anon_Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +22,8 @@ object Profile {
     id: String,
     provider: String,
     emails: js.Array[Anon_Type] = null,
-    name: typings.passport.Anon_FamilyName = null,
-    photos: js.Array[typings.passport.Anon_Value] = null,
+    name: Anon_FamilyName = null,
+    photos: js.Array[Anon_Value] = null,
     username: String = null
   ): Profile = {
     val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])

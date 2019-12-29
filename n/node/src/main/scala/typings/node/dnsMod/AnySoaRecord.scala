@@ -15,9 +15,9 @@ object AnySoaRecord {
   @scala.inline
   def apply(
     expire: Double,
-    hostmaster: java.lang.String,
+    hostmaster: String,
     minttl: Double,
-    nsname: java.lang.String,
+    nsname: String,
     refresh: Double,
     retry: Double,
     serial: Double,

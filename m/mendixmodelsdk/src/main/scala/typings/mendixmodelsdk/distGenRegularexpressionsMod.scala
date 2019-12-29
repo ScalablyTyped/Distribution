@@ -5,8 +5,6 @@ import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
 import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.distGenRegularexpressionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenRegularexpressionsMod.regularexpressions.RegularExpression
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType

@@ -20,12 +20,6 @@ import scala.scalajs.js.annotation._
 
 object baiduDashAppStrings {
   @js.native
-  sealed trait `#000000` extends js.Object
-  
-  @js.native
-  sealed trait `#ffffff` extends js.Object
-  
-  @js.native
   sealed trait `2g` extends networkType
   
   @js.native
@@ -51,6 +45,12 @@ object baiduDashAppStrings {
   
   @js.native
   sealed trait MD5 extends PaymentSignType
+  
+  @js.native
+  sealed trait Numbersign000000 extends js.Object
+  
+  @js.native
+  sealed trait Numbersignffffff extends js.Object
   
   @js.native
   sealed trait OPTIONS extends js.Object
@@ -221,25 +221,25 @@ object baiduDashAppStrings {
        with LineJoinType
   
   @js.native
-  sealed trait scopeDOTaddress extends Scope
+  sealed trait scopeDotaddress extends Scope
   
   @js.native
-  sealed trait scopeDOTinvoiceTitle extends Scope
+  sealed trait scopeDotinvoiceTitle extends Scope
   
   @js.native
-  sealed trait scopeDOTrecord extends Scope
+  sealed trait scopeDotrecord extends Scope
   
   @js.native
-  sealed trait scopeDOTuserInfo extends Scope
+  sealed trait scopeDotuserInfo extends Scope
   
   @js.native
-  sealed trait scopeDOTuserLocation extends Scope
+  sealed trait scopeDotuserLocation extends Scope
   
   @js.native
-  sealed trait scopeDOTwerun extends Scope
+  sealed trait scopeDotwerun extends Scope
   
   @js.native
-  sealed trait scopeDOTwritePhotosAlbum extends Scope
+  sealed trait scopeDotwritePhotosAlbum extends Scope
   
   @js.native
   sealed trait scroll extends EventType
@@ -316,10 +316,6 @@ object baiduDashAppStrings {
   sealed trait xlsx extends js.Object
   
   @scala.inline
-  def `#000000`: `#000000` = "#000000".asInstanceOf[`#000000`]
-  @scala.inline
-  def `#ffffff`: `#ffffff` = "#ffffff".asInstanceOf[`#ffffff`]
-  @scala.inline
   def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   @scala.inline
   def `3g`: `3g` = "3g".asInstanceOf[`3g`]
@@ -337,6 +333,10 @@ object baiduDashAppStrings {
   def `HMAC-SHA256`: `HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[`HMAC-SHA256`]
   @scala.inline
   def MD5: MD5 = "MD5".asInstanceOf[MD5]
+  @scala.inline
+  def Numbersign000000: Numbersign000000 = "#000000".asInstanceOf[Numbersign000000]
+  @scala.inline
+  def Numbersignffffff: Numbersignffffff = "#ffffff".asInstanceOf[Numbersignffffff]
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   @scala.inline
@@ -442,19 +442,19 @@ object baiduDashAppStrings {
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
-  def scopeDOTaddress: scopeDOTaddress = "scope.address".asInstanceOf[scopeDOTaddress]
+  def scopeDotaddress: scopeDotaddress = "scope.address".asInstanceOf[scopeDotaddress]
   @scala.inline
-  def scopeDOTinvoiceTitle: scopeDOTinvoiceTitle = "scope.invoiceTitle".asInstanceOf[scopeDOTinvoiceTitle]
+  def scopeDotinvoiceTitle: scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[scopeDotinvoiceTitle]
   @scala.inline
-  def scopeDOTrecord: scopeDOTrecord = "scope.record".asInstanceOf[scopeDOTrecord]
+  def scopeDotrecord: scopeDotrecord = "scope.record".asInstanceOf[scopeDotrecord]
   @scala.inline
-  def scopeDOTuserInfo: scopeDOTuserInfo = "scope.userInfo".asInstanceOf[scopeDOTuserInfo]
+  def scopeDotuserInfo: scopeDotuserInfo = "scope.userInfo".asInstanceOf[scopeDotuserInfo]
   @scala.inline
-  def scopeDOTuserLocation: scopeDOTuserLocation = "scope.userLocation".asInstanceOf[scopeDOTuserLocation]
+  def scopeDotuserLocation: scopeDotuserLocation = "scope.userLocation".asInstanceOf[scopeDotuserLocation]
   @scala.inline
-  def scopeDOTwerun: scopeDOTwerun = "scope.werun".asInstanceOf[scopeDOTwerun]
+  def scopeDotwerun: scopeDotwerun = "scope.werun".asInstanceOf[scopeDotwerun]
   @scala.inline
-  def scopeDOTwritePhotosAlbum: scopeDOTwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[scopeDOTwritePhotosAlbum]
+  def scopeDotwritePhotosAlbum: scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[scopeDotwritePhotosAlbum]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline

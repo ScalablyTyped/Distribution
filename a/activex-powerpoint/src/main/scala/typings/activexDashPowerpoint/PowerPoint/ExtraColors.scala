@@ -11,7 +11,8 @@ class ExtraColors protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ExtraColors_typekey`: ExtraColors = js.native
+  @JSName("PowerPoint.ExtraColors_typekey")
+  var PowerPointDotExtraColors_typekey: ExtraColors = js.native
   def Add(Type: MsoRGBType): Unit = js.native
   def Clear(): Unit = js.native
   def Item(Index: Double): MsoRGBType = js.native

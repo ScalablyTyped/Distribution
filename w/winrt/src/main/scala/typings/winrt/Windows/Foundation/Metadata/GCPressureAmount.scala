@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.high
-import typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.low
-import typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.medium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

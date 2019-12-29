@@ -2,7 +2,7 @@ package typings.atMaterialIconDashToggle.constantsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atMaterialBase.foundationMod.MDCStrings
-import typings.atMaterialIconDashToggle.atMaterialIconDashToggleStrings.`MDCIconToggle:change`
+import typings.atMaterialIconDashToggle.atMaterialIconDashToggleStrings.MDCIconToggleColonchange
 import typings.atMaterialIconDashToggle.atMaterialIconDashToggleStrings.`aria-disabled`
 import typings.atMaterialIconDashToggle.atMaterialIconDashToggleStrings.`aria-label`
 import typings.atMaterialIconDashToggle.atMaterialIconDashToggleStrings.`aria-pressed`
@@ -16,7 +16,7 @@ trait strings extends MDCStrings {
   var ARIA_DISABLED: `aria-disabled`
   var ARIA_LABEL: `aria-label`
   var ARIA_PRESSED: `aria-pressed`
-  var CHANGE_EVENT: `MDCIconToggle:change`
+  var CHANGE_EVENT: MDCIconToggleColonchange
   var DATA_TOGGLE_OFF: `data-toggle-off`
   var DATA_TOGGLE_ON: `data-toggle-on`
 }
@@ -27,7 +27,7 @@ object strings {
     ARIA_DISABLED: `aria-disabled`,
     ARIA_LABEL: `aria-label`,
     ARIA_PRESSED: `aria-pressed`,
-    CHANGE_EVENT: `MDCIconToggle:change`,
+    CHANGE_EVENT: MDCIconToggleColonchange,
     DATA_TOGGLE_OFF: `data-toggle-off`,
     DATA_TOGGLE_ON: `data-toggle-on`,
     StringDictionary: StringDictionary[String] = null

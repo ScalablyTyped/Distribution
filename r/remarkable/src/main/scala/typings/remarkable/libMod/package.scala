@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object libMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.remarkable.remarkableStrings.BACKSLASHn
-  import typings.remarkable.remarkableStrings.Empty
+  import typings.remarkable.remarkableStrings.Linefeed
+  import typings.remarkable.remarkableStrings._empty
 
   // ---------------
   // Specific Core Tokens
@@ -40,7 +40,7 @@ package object libMod {
   type FootnoteBlockToken = TagToken
   type FootnoteReferenceToken = FootnoteGenericToken
   type FootnoteToken = FootnoteGenericToken
-  type GetBreak = Rule[ContentToken, Empty | BACKSLASHn]
+  type GetBreak = Rule[ContentToken, _empty | Linefeed]
   /**
     * Return `true` if the parsing function has recognized the current position
     * in the input as one if its tokens.

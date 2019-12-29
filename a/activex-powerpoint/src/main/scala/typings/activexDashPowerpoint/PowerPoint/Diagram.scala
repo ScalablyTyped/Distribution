@@ -15,7 +15,8 @@ class Diagram protected () extends js.Object {
   val Creator: Double = js.native
   val Nodes: DiagramNodes = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Diagram_typekey`: Diagram = js.native
+  @JSName("PowerPoint.Diagram_typekey")
+  var PowerPointDotDiagram_typekey: Diagram = js.native
   var Reverse: MsoTriState = js.native
   val Type: MsoDiagramType = js.native
   def Convert(Type: MsoDiagramType): Unit = js.native

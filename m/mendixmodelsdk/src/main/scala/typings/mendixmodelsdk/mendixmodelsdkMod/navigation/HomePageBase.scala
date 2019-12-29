@@ -1,5 +1,9 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.navigation
 
+import typings.mendixmodelsdk.distGenNavigationMod.StructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +16,12 @@ import scala.scalajs.js.annotation._
 abstract class HomePageBase protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.navigation.HomePageBase {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -26,6 +30,6 @@ abstract class HomePageBase protected ()
 @js.native
 object HomePageBase extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenNavigationMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

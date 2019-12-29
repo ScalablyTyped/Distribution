@@ -161,12 +161,12 @@ trait WebSocket extends EventTarget {
 @JSGlobal("WebSocket")
 @js.native
 object WebSocket
-  extends Instantiable2[
+  extends Instantiable1[/* url */ java.lang.String, WebSocket]
+     with Instantiable2[
       /* url */ java.lang.String, 
       (/* protocols */ js.Array[java.lang.String]) | (/* protocols */ java.lang.String), 
       WebSocket
-    ]
-     with Instantiable1[/* url */ java.lang.String, WebSocket] {
+    ] {
   val CLOSED: Double = js.native
   val CLOSING: Double = js.native
   val CONNECTING: Double = js.native

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access._SectionInReport")
 @js.native
 class _SectionInReport protected () extends js.Object {
-  var `Access._SectionInReport_typekey`: _SectionInReport = js.native
+  @JSName("Access._SectionInReport_typekey")
+  var AccessDot_SectionInReport_typekey: _SectionInReport = js.native
   var AlternateBackColor: Double = js.native
   var AlternateBackShade: Double = js.native
   var AlternateBackThemeColorIndex: Double = js.native

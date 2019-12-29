@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Streams.InputStreamOptions.none
-import typings.winrt.Windows.Storage.Streams.InputStreamOptions.partial
-import typings.winrt.Windows.Storage.Streams.InputStreamOptions.readAhead
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.CheckBox")
 @js.native
 class CheckBox protected () extends js.Object {
-  var `Access.CheckBox_typekey`: CheckBox = js.native
+  @JSName("Access.CheckBox_typekey")
+  var AccessDotCheckBox_typekey: CheckBox = js.native
   var AddColon: Boolean = js.native
   var AfterUpdate: String = js.native
   var AfterUpdateMacro: String = js.native

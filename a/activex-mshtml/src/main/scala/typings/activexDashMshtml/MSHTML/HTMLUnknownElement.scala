@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLUnknownElement")
 @js.native
 class HTMLUnknownElement protected () extends js.Object {
-  var `MSHTML.HTMLUnknownElement_typekey`: HTMLUnknownElement = js.native
+  @JSName("MSHTML.HTMLUnknownElement_typekey")
+  var MSHTMLDotHTMLUnknownElement_typekey: HTMLUnknownElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Casting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionState.connected
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionState.connecting
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionState.disconnected
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionState.disconnecting
-import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionState.rendering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

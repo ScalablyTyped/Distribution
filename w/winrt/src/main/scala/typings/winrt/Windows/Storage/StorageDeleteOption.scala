@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.StorageDeleteOption.default
-import typings.winrt.Windows.Storage.StorageDeleteOption.permanentDelete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

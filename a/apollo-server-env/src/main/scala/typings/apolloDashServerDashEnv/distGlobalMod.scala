@@ -1,8 +1,5 @@
 package typings.apolloDashServerDashEnv
 
-import typings.apolloDashServerDashEnv.distGlobalMod.RequestInfo
-import typings.apolloDashServerDashEnv.distGlobalMod.RequestInit
-import typings.apolloDashServerDashEnv.distGlobalMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

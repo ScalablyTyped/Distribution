@@ -1,8 +1,8 @@
 package typings.rmfr
 
 import typings.glob.globMod.IOptions
-import typings.rmfr.rmfrNumbers.`false`
-import typings.rmfr.rmfrNumbers.`true`
+import typings.rmfr.rmfrBooleans.`false`
+import typings.rmfr.rmfrBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

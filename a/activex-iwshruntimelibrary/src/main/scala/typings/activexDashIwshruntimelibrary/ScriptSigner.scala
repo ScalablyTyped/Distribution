@@ -1,6 +1,5 @@
 package typings.activexDashIwshruntimelibrary
 
-import typings.activexDashIwshruntimelibrary.ScriptSigner.Signer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 object ScriptSigner extends js.Object {
   @js.native
   class Signer protected () extends js.Object {
-    var `ScriptSigner.Signer_typekey`: Signer = js.native
+    @JSName("ScriptSigner.Signer_typekey")
+    var ScriptSignerDotSigner_typekey: Signer = js.native
     /** @param Store [Store='my'] */
     def Sign(FileExtension: String, Text: String, Certificate: String): String = js.native
     def Sign(FileExtension: String, Text: String, Certificate: String, Store: String): String = js.native

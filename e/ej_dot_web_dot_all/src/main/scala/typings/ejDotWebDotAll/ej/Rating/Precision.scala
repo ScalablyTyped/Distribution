@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Rating
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Rating.Precision.Exact
-import typings.ejDotWebDotAll.ej.Rating.Precision.Full
-import typings.ejDotWebDotAll.ej.Rating.Precision.Half
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

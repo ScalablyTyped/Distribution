@@ -13,14 +13,9 @@ trait SocketOptions extends js.Object {
   var ipv6Only: js.UndefOr[Boolean] = js.undefined
   var lookup: js.UndefOr[
     js.Function3[
-      /* hostname */ java.lang.String, 
+      /* hostname */ String, 
       /* options */ LookupOneOptions, 
-      /* callback */ js.Function3[
-        /* err */ ErrnoException | Null, 
-        /* address */ java.lang.String, 
-        /* family */ Double, 
-        Unit
-      ], 
+      /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit], 
       Unit
     ]
   ] = js.undefined
@@ -35,12 +30,7 @@ object SocketOptions {
   def apply(
     `type`: SocketType,
     ipv6Only: js.UndefOr[Boolean] = js.undefined,
-    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* address */ java.lang.String, 
-      /* family */ Double, 
-      Unit
-    ]) => Unit = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit = null,
     recvBufferSize: Int | Double = null,
     reuseAddr: js.UndefOr[Boolean] = js.undefined,
     sendBufferSize: Int | Double = null

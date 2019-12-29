@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.authenticated
-import typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.none
-import typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.unauthenticated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

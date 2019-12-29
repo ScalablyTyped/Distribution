@@ -6,12 +6,13 @@ import typings.extjs.Ext.data.IBatch
 import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.data.IOperation
 import typings.extjs.Ext.data.IRequest
+import typings.extjs.Ext.data.reader.IReader
+import typings.extjs.Ext.data.writer.IWriter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IServer
-  extends typings.extjs.Ext.data.proxy.IProxy {
+trait IServer extends IProxy {
   /** [Method] Optional callback function which can be used to clean up after a request has been completed
   		* @param request Ext.data.Request The Request object
   		* @param success Boolean True if the request was successful
@@ -30,9 +31,9 @@ trait IServer
   		* @param request Ext.data.Request The request object
   		* @returns String The url
   		*/
-  var buildUrl: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], java.lang.String]] = js.undefined
+  var buildUrl: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
   /** [Config Option] (String) */
-  var cacheString: js.UndefOr[java.lang.String] = js.undefined
+  var cacheString: js.UndefOr[String] = js.undefined
   /** [Method] in a ServerProxy all four CRUD operations are executed in the same manner so we delegate to doRequest in each case */
   @JSName("create")
   var create_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -40,7 +41,7 @@ trait IServer
   @JSName("destroy")
   var destroy_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var directionParam: js.UndefOr[java.lang.String] = js.undefined
+  var directionParam: js.UndefOr[String] = js.undefined
   /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
   		* @param operation Ext.data.Operation The Ext.data.Operation object
   		* @param callback Function The callback function to call when the Operation has completed
@@ -58,28 +59,28 @@ trait IServer
   		* @param filters Ext.util.Filter[] The array of Filter objects
   		* @returns String The encoded filters
   		*/
-  var encodeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], java.lang.String]] = js.undefined
+  var encodeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], String]] = js.undefined
   /** [Method] Encodes the array of Ext util Sorter objects into a string to be sent in the request url
   		* @param sorters Ext.util.Sorter[] The array of Sorter objects
   		* @returns String The encoded sorters
   		*/
-  var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], java.lang.String]] = js.undefined
+  var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.undefined
   /** [Config Option] (Object) */
   var extraParams: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var filterParam: js.UndefOr[java.lang.String] = js.undefined
+  var filterParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var groupDirectionParam: js.UndefOr[java.lang.String] = js.undefined
+  var groupDirectionParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var groupParam: js.UndefOr[java.lang.String] = js.undefined
+  var groupParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var idParam: js.UndefOr[java.lang.String] = js.undefined
+  var idParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var limitParam: js.UndefOr[java.lang.String] = js.undefined
+  var limitParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var noCache: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var pageParam: js.UndefOr[java.lang.String] = js.undefined
+  var pageParam: js.UndefOr[String] = js.undefined
   /** [Method] Performs the given read operation  */
   @JSName("read")
   var read_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -88,23 +89,23 @@ trait IServer
   		* @param value Object The value
   		*/
   var setExtraParam: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Config Option] (Boolean) */
   var simpleGroupMode: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var simpleSortMode: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var sortParam: js.UndefOr[java.lang.String] = js.undefined
+  var sortParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var startParam: js.UndefOr[java.lang.String] = js.undefined
+  var startParam: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
   /** [Method] Performs the given update operation  */
   @JSName("update")
   var update_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object IServer {
@@ -119,10 +120,10 @@ object IServer {
     api: js.Any = null,
     batch: /* options */ js.UndefOr[js.Any] => IBatch = null,
     batchActions: js.UndefOr[Boolean] = js.undefined,
-    batchOrder: java.lang.String = null,
+    batchOrder: String = null,
     buildRequest: /* operation */ js.UndefOr[IOperation] => IRequest = null,
-    buildUrl: /* request */ js.UndefOr[IRequest] => java.lang.String = null,
-    cacheString: java.lang.String = null,
+    buildUrl: /* request */ js.UndefOr[IRequest] => String = null,
+    cacheString: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -131,31 +132,31 @@ object IServer {
     config: js.Any = null,
     create: () => Unit = null,
     destroy: () => Unit = null,
-    directionParam: java.lang.String = null,
+    directionParam: String = null,
     doRequest: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    encodeFilters: /* filters */ js.UndefOr[Array] => java.lang.String = null,
-    encodeSorters: /* sorters */ js.UndefOr[Array] => java.lang.String = null,
-    extend: java.lang.String = null,
+    encodeFilters: /* filters */ js.UndefOr[Array] => String = null,
+    encodeSorters: /* sorters */ js.UndefOr[Array] => String = null,
+    extend: String = null,
     extraParams: js.Any = null,
-    filterParam: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    filterParam: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getModel: () => IModel = null,
-    getReader: () => typings.extjs.Ext.data.reader.IReader = null,
-    getWriter: () => typings.extjs.Ext.data.writer.IWriter = null,
-    groupDirectionParam: java.lang.String = null,
-    groupParam: java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getReader: () => IReader = null,
+    getWriter: () => IWriter = null,
+    groupDirectionParam: String = null,
+    groupParam: String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
-    idParam: java.lang.String = null,
+    idParam: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IServer = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     isProxy: js.UndefOr[Boolean] = js.undefined,
     isSynchronous: js.UndefOr[Boolean] = js.undefined,
-    limitParam: java.lang.String = null,
+    limitParam: String = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     model: js.Any = null,
@@ -163,32 +164,32 @@ object IServer {
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     noCache: js.UndefOr[Boolean] = js.undefined,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    pageParam: java.lang.String = null,
+    pageParam: String = null,
     read: () => Unit = null,
     reader: js.Any = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     self: IClass = null,
-    setExtraParam: (/* name */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => Unit = null,
+    setExtraParam: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit = null,
     setModel: (/* model */ js.UndefOr[js.Any], /* setOnStore */ js.UndefOr[Boolean]) => Unit = null,
-    setReader: /* reader */ js.UndefOr[js.Any] => typings.extjs.Ext.data.reader.IReader = null,
-    setWriter: /* writer */ js.UndefOr[js.Any] => typings.extjs.Ext.data.writer.IWriter = null,
+    setReader: /* reader */ js.UndefOr[js.Any] => IReader = null,
+    setWriter: /* writer */ js.UndefOr[js.Any] => IWriter = null,
     simpleGroupMode: js.UndefOr[Boolean] = js.undefined,
     simpleSortMode: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sortParam: java.lang.String = null,
-    startParam: java.lang.String = null,
+    sortParam: String = null,
+    startParam: String = null,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     timeout: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     update: () => Unit = null,
-    url: java.lang.String = null,
+    url: String = null,
     uses: Array = null,
     writer: js.Any = null
   ): IServer = {

@@ -1,7 +1,6 @@
 package typings.atNodelibFsDotStat
 
 import typings.atNodelibFsDotStat.outManagersOptionsMod.StrictOptions
-import typings.atNodelibFsDotStat.outProvidersStatMod.AsyncCallback
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats

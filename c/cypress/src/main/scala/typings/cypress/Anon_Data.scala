@@ -2,7 +2,7 @@ package typings.cypress
 
 import typings.cypress.JQuery.EventHandler
 import typings.cypress.JQuery._SpecialEventHook
-import typings.cypress.cypressNumbers.`false`
+import typings.cypress.cypressBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,13 +14,13 @@ trait Anon_Data[TTarget, TData] extends _SpecialEventHook[TTarget, TData] {
     * This hook can perform whatever processing it desires, including attaching its own event handlers to the element or to other elements and recording setup information on the element using the `jQuery.data()` method. If the setup hook wants jQuery to add a browser event (via `addEventListener` or `attachEvent`, depending on browser) it should return `false`. In all other cases, jQuery will not add the browser event, but will continue all its other bookkeeping for the event. This would be appropriate, for example, if the event was never fired by the browser but invoked by `.trigger()`. To attach the jQuery event handler in the setup hook, use the `eventHandle` argument.
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#setup-function-data-object-namespaces-eventhandle-function }\`
     */
-  def setup(`this`: TTarget, data: TData, namespaces: String, eventHandle: EventHandler[TTarget, TData]): Unit | `false`
+  def setup(data: TData, namespaces: String, eventHandle: EventHandler[TTarget, TData]): Unit | `false`
 }
 
 object Anon_Data {
   @scala.inline
-  def apply[TTarget, TData](setup: (TTarget, TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Anon_Data[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(setup = js.Any.fromFunction4(setup))
+  def apply[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Anon_Data[TTarget, TData] = {
+    val __obj = js.Dynamic.literal(setup = js.Any.fromFunction3(setup))
   
     __obj.asInstanceOf[Anon_Data[TTarget, TData]]
   }

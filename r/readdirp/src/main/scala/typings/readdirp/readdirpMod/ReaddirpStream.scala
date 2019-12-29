@@ -13,9 +13,7 @@ trait ReaddirpStream
   extends Readable
      with AsyncIterable[EntryInfo] {
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
 }

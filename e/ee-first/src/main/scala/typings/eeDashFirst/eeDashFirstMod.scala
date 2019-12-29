@@ -1,7 +1,5 @@
 package typings.eeDashFirst
 
-import typings.eeDashFirst.eeDashFirstMod.Listener
-import typings.eeDashFirst.eeDashFirstMod.Thunk
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Locales
   extends Instantiable0[DateTimeFormat]
+     with Instantiable1[
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      DateTimeFormat
+    ]
      with Instantiable2[
       (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       /* options */ DateTimeFormatOptions, 
-      DateTimeFormat
-    ]
-     with Instantiable1[
-      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       DateTimeFormat
     ] {
   def apply(): DateTimeFormat = js.native

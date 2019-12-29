@@ -23,8 +23,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api
   */
-class Icon ()
-  extends typings.openlayers.openlayersMod.style.Image {
+class Icon () extends Image {
   def this(opt_options: IconOptions) = this()
   /**
     * @inheritDoc
@@ -37,7 +36,7 @@ class Icon ()
     * @return Image or Canvas element.
     * @api
     */
-  def getImage(pixelRatio: Double): typings.openlayers.openlayersMod.style.Image | HTMLCanvasElement = js.native
+  def getImage(pixelRatio: Double): Image | HTMLCanvasElement = js.native
   /**
     * @inheritDoc
     * @api

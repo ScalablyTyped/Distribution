@@ -10,7 +10,7 @@ package object ast {
   import org.scalablytyped.runtime.Instantiable2
   import typings.yaml.yamlMod.ParseOptions
 
-  type DocumentConstructor = Instantiable1[js.UndefOr[/* options */ ParseOptions], typings.yaml.yamlMod.ast.Document]
+  type DocumentConstructor = Instantiable1[js.UndefOr[/* options */ ParseOptions], Document]
   type MapConstructor = Instantiable0[MapBase]
   type PairConstructor = Instantiable2[/* key */ AstNode | Null, js.UndefOr[AstNode | Null], Pair]
   type ScalarConstructor = Instantiable1[/* value */ Null | Boolean | Double | String, Scalar]

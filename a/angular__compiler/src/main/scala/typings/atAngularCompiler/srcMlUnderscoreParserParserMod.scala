@@ -2,8 +2,6 @@ package typings.atAngularCompiler
 
 import typings.atAngularCompiler.srcMlUnderscoreParserAstMod.Node
 import typings.atAngularCompiler.srcMlUnderscoreParserLexerMod.TokenizeOptions
-import typings.atAngularCompiler.srcMlUnderscoreParserParserMod.ParseTreeResult
-import typings.atAngularCompiler.srcMlUnderscoreParserParserMod.TreeError
 import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagDefinition
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseError
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan

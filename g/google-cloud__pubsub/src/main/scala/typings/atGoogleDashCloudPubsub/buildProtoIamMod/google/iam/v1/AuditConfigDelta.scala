@@ -3,9 +3,6 @@ package typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.AuditConfigDelta.Action
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.AuditConfigDelta.Action.ACTION_UNSPECIFIED
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.AuditConfigDelta.Action.ADD
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.AuditConfigDelta.Action.REMOVE
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

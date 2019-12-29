@@ -1,16 +1,6 @@
 package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.ccmp
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.ihv
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.none
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.rsnUseGroup
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.tkip
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.unknown
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep104
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep40
-import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wpaUseGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

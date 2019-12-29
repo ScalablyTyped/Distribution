@@ -1,21 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.all
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.errors
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.errorsLogical
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.errorsLogicalNumber
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.errorsLogicalText
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.errorsNumberText
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.errorsNumbers
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.errorsText
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.logical
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.logicalNumbers
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.logicalNumbersText
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.logicalText
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.numbers
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.numbersText
-import typings.officeDashJsDashPreview.Excel.SpecialCellValueType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

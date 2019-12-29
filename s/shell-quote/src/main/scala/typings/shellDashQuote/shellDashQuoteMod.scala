@@ -1,8 +1,6 @@
 package typings.shellDashQuote
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.shellDashQuote.shellDashQuoteMod.ParseEntry
-import typings.shellDashQuote.shellDashQuoteMod._ParseEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

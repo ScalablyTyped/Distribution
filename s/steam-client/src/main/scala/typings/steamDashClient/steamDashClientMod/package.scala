@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object steamDashClientMod {
   import typings.node.Buffer
   import typings.steamDashClient.Anon_False
-  import typings.steamDashClient.steamDashClientNumbers.`false`
+  import typings.steamDashClient.steamDashClientBooleans.`false`
 
   type SendMessage = js.Function3[
     /* header */ Anon_False, 

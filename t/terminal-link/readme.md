@@ -1,7 +1,7 @@
 
 # Scala.js typings for terminal-link
 
-Typings are for version 2.0.0
+Typings are for version 2.1.1
 
 ## Library description:
 Create clickable links in the terminal

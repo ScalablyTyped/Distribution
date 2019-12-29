@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class WorksheetFunction protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.WorksheetFunction_typekey`: WorksheetFunction = js.native
+  @JSName("Excel.WorksheetFunction_typekey")
+  var ExcelDotWorksheetFunction_typekey: WorksheetFunction = js.native
   val Parent: js.Any = js.native
   def AccrInt(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any, Arg5: js.Any, Arg6: js.Any): Double = js.native
   def AccrInt(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any, Arg5: js.Any, Arg6: js.Any, Arg7: js.Any): Double = js.native

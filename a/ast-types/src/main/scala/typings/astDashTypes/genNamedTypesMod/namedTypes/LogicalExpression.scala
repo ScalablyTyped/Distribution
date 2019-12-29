@@ -1,9 +1,9 @@
 package typings.astDashTypes.genNamedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
-import typings.astDashTypes.astDashTypesStrings.`&&`
-import typings.astDashTypes.astDashTypesStrings.`??`
-import typings.astDashTypes.astDashTypesStrings.`||`
+import typings.astDashTypes.astDashTypesStrings.AmpersandAmpersand
+import typings.astDashTypes.astDashTypesStrings.QuestionmarkQuestionmark
+import typings.astDashTypes.astDashTypesStrings.VerticallineVerticalline
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.NodeKind
 import typings.astDashTypes.genKindsMod.PrintableKind
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
      with NodeKind
      with PrintableKind {
   var left: ExpressionKind
-  var operator: `||` | `&&` | `??`
+  var operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark
   var right: ExpressionKind
   var `type`: typings.astDashTypes.astDashTypesStrings.LogicalExpression
 }

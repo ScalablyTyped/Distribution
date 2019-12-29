@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 object pdf2imageStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait DOTjpg extends js.Object
+  sealed trait Dotjpg extends js.Object
   
   @js.native
-  sealed trait DOTpng extends js.Object
+  sealed trait Dotpng extends js.Object
   
   @js.native
   sealed trait jpg extends js.Object
@@ -21,11 +21,11 @@ object pdf2imageStrings {
   sealed trait png extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def DOTjpg: DOTjpg = ".jpg".asInstanceOf[DOTjpg]
+  def Dotjpg: Dotjpg = ".jpg".asInstanceOf[Dotjpg]
   @scala.inline
-  def DOTpng: DOTpng = ".png".asInstanceOf[DOTpng]
+  def Dotpng: Dotpng = ".png".asInstanceOf[Dotpng]
   @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
   @scala.inline

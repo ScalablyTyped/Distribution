@@ -3,8 +3,6 @@ package typings.titanium.Titanium
 import typings.std.Date
 import typings.titanium.ReadCallbackArgs
 import typings.titanium.RequestStorageAccessResult
-import typings.titanium.Titanium.Filesystem.File
-import typings.titanium.Titanium.Filesystem.FileStream
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
 import typings.titanium.WriteCallbackArgs

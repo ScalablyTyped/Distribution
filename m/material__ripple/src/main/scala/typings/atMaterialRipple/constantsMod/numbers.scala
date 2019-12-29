@@ -2,7 +2,7 @@ package typings.atMaterialRipple.constantsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atMaterialBase.foundationMod.MDCNumbers
-import typings.atMaterialRipple.atMaterialRippleNumbers.`0DOT6`
+import typings.atMaterialRipple.atMaterialRippleNumbers.`0.6`
 import typings.atMaterialRipple.atMaterialRippleNumbers.`10`
 import typings.atMaterialRipple.atMaterialRippleNumbers.`150`
 import typings.atMaterialRipple.atMaterialRippleNumbers.`225`
@@ -15,7 +15,7 @@ trait numbers extends MDCNumbers {
   var DEACTIVATION_TIMEOUT_MS: `225`
    // Corresponds to $mdc-ripple-translate-duration (i.e. activation animation duration)
   var FG_DEACTIVATION_MS: `150`
-  var INITIAL_ORIGIN_SCALE: `0DOT6`
+  var INITIAL_ORIGIN_SCALE: `0.6`
   var PADDING: `10`
    // Corresponds to $mdc-ripple-fade-out-duration (i.e. deactivation animation duration)
   var TAP_DELAY_MS: `300`
@@ -26,7 +26,7 @@ object numbers {
   def apply(
     DEACTIVATION_TIMEOUT_MS: `225`,
     FG_DEACTIVATION_MS: `150`,
-    INITIAL_ORIGIN_SCALE: `0DOT6`,
+    INITIAL_ORIGIN_SCALE: `0.6`,
     PADDING: `10`,
     TAP_DELAY_MS: `300`,
     StringDictionary: StringDictionary[Double] = null

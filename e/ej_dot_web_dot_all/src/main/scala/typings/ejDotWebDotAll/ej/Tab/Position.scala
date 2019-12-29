@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tab
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tab.Position.Bottom
-import typings.ejDotWebDotAll.ej.Tab.Position.Left
-import typings.ejDotWebDotAll.ej.Tab.Position.Right
-import typings.ejDotWebDotAll.ej.Tab.Position.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

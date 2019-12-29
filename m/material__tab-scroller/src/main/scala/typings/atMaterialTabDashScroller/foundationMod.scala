@@ -2,7 +2,6 @@ package typings.atMaterialTabDashScroller
 
 import typings.atMaterialBase.foundationMod.MDCFoundation
 import typings.atMaterialTabDashScroller.adapterMod.MDCTabScrollerAdapter
-import typings.atMaterialTabDashScroller.foundationMod.MDCTabScrollerFoundation
 import typings.atMaterialTabDashScroller.rtlDashScrollerMod.MDCTabScrollerRTL
 import typings.std.Event
 import typings.std.Partial

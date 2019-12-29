@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.grid.locking.ILockable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined lockedGridConfig, lockedViewConfig, normalGridConfig, normalViewConfig, scrollDelta, subGridXType, syncRowHeight, syncRowHeights */ trait ITable
-  extends typings.extjs.Ext.panel.IPanel {
+- typings.extjs.Ext.grid.locking.ILockable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined lockedGridConfig, lockedViewConfig, normalGridConfig, normalViewConfig, scrollDelta, subGridXType, syncRowHeight, syncRowHeights */ trait ITable extends IPanel {
   /** [Method] Invoked after the Panel is Collapsed  */
   @JSName("afterCollapse")
   var afterCollapse_ITable: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -30,7 +29,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var disableSelection: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[java.lang.String] = js.undefined
+  var emptyText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var enableColumnHide: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -84,7 +83,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Ext.selection.Model/Object) */
   var selModel: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var selType: js.UndefOr[java.lang.String] = js.undefined
+  var selType: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var simpleSelect: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -92,7 +91,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Ext.data.Store) */
   var store: js.UndefOr[IStore] = js.undefined
   /** [Config Option] (String) */
-  var subGridXType: js.UndefOr[java.lang.String] = js.undefined
+  var subGridXType: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var syncRowHeight: js.UndefOr[Boolean] = js.undefined
   /** [Method] Synchronizes the row heights between the locked and non locked portion of the grid for each row  */
@@ -104,13 +103,13 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Object) */
   var viewConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var viewType: js.UndefOr[java.lang.String] = js.undefined
+  var viewType: js.UndefOr[String] = js.undefined
 }
 
 object ITable {
   @scala.inline
   def apply(
-    IPanel: typings.extjs.Ext.panel.IPanel = null,
+    IPanel: IPanel = null,
     afterCollapse: () => Unit = null,
     afterExpand: () => Unit = null,
     allowDeselect: js.UndefOr[Boolean] = js.undefined,
@@ -119,7 +118,7 @@ object ITable {
     deferRowRender: js.UndefOr[Boolean] = js.undefined,
     determineScrollbars: () => Unit = null,
     disableSelection: js.UndefOr[Boolean] = js.undefined,
-    emptyText: java.lang.String = null,
+    emptyText: String = null,
     enableColumnHide: js.UndefOr[Boolean] = js.undefined,
     enableColumnMove: js.UndefOr[Boolean] = js.undefined,
     enableColumnResize: js.UndefOr[Boolean] = js.undefined,
@@ -143,17 +142,17 @@ object ITable {
     scrollDelta: Int | Double = null,
     sealedColumns: js.UndefOr[Boolean] = js.undefined,
     selModel: js.Any = null,
-    selType: java.lang.String = null,
+    selType: String = null,
     simpleSelect: js.UndefOr[Boolean] = js.undefined,
     sortableColumns: js.UndefOr[Boolean] = js.undefined,
     store: IStore = null,
-    subGridXType: java.lang.String = null,
+    subGridXType: String = null,
     syncRowHeight: js.UndefOr[Boolean] = js.undefined,
     syncRowHeights: () => Unit = null,
     verticalScroller: js.Any = null,
     view: typings.extjs.Ext.view.ITable = null,
     viewConfig: js.Any = null,
-    viewType: java.lang.String = null
+    viewType: String = null
   ): ITable = {
     val __obj = js.Dynamic.literal()
     if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)

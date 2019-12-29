@@ -13,7 +13,8 @@ class BulletFormat protected () extends js.Object {
   val Font: typings.activexDashPowerpoint.PowerPoint.Font = js.native
   val Number: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.BulletFormat_typekey`: BulletFormat = js.native
+  @JSName("PowerPoint.BulletFormat_typekey")
+  var PowerPointDotBulletFormat_typekey: BulletFormat = js.native
   var RelativeSize: Double = js.native
   var StartValue: Double = js.native
   var Style: PpNumberedBulletStyle = js.native

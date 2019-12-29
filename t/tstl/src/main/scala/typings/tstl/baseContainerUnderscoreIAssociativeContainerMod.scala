@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseContainerIContainerMod.IContainer
-import typings.tstl.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer
 import typings.tstl.baseIteratorIteratorMod.Iterator
 import typings.tstl.baseIteratorReverseIteratorMod.IReverseIterator
 import scala.scalajs.js
@@ -21,10 +20,13 @@ object baseContainerUnderscoreIAssociativeContainerMod extends js.Object {
       */
     def count(key: Key): Double = js.native
     /**
-      * @inheritDoc
+      * Erase elements with a specified key.
+      *
+      * @param key Key to search for.
+      * @return Number of erased elements.
       */
     @JSName("erase")
-    def erase_IteratorT(pos: IteratorT): IteratorT = js.native
+    def erase_Double(key: Key): Double = js.native
     /**
       * Get iterator to element.
       *

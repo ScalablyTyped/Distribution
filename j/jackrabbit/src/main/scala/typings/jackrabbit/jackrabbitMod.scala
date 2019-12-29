@@ -6,13 +6,7 @@ import typings.amqplib.propertiesMod.Options.AssertExchange
 import typings.amqplib.propertiesMod.Options.AssertQueue
 import typings.amqplib.propertiesMod.Options.Consume
 import typings.amqplib.propertiesMod.Options.Publish
-import typings.jackrabbit.jackrabbitMod.jackrabbit.AckCallback
-import typings.jackrabbit.jackrabbitMod.jackrabbit.Exchange
 import typings.jackrabbit.jackrabbitMod.jackrabbit.JackRabbit
-import typings.jackrabbit.jackrabbitMod.jackrabbit.PublishOptions
-import typings.jackrabbit.jackrabbitMod.jackrabbit.Queue
-import typings.jackrabbit.jackrabbitMod.jackrabbit.QueueOptions
-import typings.jackrabbit.jackrabbitMod.jackrabbit.exchangeType
 import typings.node.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js

@@ -3,8 +3,6 @@ package typings.astDashTypes
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.astDashTypes.libPathMod.Path
-import typings.astDashTypes.libPathMod.PathConstructor
 import typings.astDashTypes.libTypesMod.ASTNode
 import typings.astDashTypes.typesMod.Fork
 import scala.scalajs.js

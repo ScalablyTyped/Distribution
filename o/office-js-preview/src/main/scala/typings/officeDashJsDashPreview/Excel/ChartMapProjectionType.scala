@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartMapProjectionType.albers
-import typings.officeDashJsDashPreview.Excel.ChartMapProjectionType.automatic
-import typings.officeDashJsDashPreview.Excel.ChartMapProjectionType.mercator
-import typings.officeDashJsDashPreview.Excel.ChartMapProjectionType.miller
-import typings.officeDashJsDashPreview.Excel.ChartMapProjectionType.robinson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

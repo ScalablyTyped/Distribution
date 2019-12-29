@@ -12,7 +12,8 @@ class NavigationGroup protected () extends js.Object {
   val GroupType: OlGroupType = js.native
   var Name: String = js.native
   val NavigationFolders: typings.activexDashOutlook.Outlook.NavigationFolders = js.native
-  var `Outlook.NavigationGroup_typekey`: NavigationGroup = js.native
+  @JSName("Outlook.NavigationGroup_typekey")
+  var OutlookDotNavigationGroup_typekey: NavigationGroup = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

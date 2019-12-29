@@ -1,10 +1,6 @@
 package typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier.Exported
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier.Final
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier.Private
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

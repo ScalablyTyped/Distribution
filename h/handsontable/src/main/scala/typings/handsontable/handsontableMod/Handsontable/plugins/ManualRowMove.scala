@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ManualRowMove extends Base {
   var backlight: BacklightUI
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var guideline: GuidelineUI
   var removedRows: js.Array[_]
   var rowsMapper: MoveRowsMapper
@@ -28,7 +28,7 @@ object ManualRowMove {
     disablePlugin: () => Unit,
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     guideline: GuidelineUI,
     hot: Core,
     init: () => Unit,

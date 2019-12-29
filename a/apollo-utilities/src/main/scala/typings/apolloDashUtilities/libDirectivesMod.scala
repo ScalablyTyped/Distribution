@@ -1,8 +1,6 @@
 package typings.apolloDashUtilities
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloDashUtilities.libDirectivesMod.DirectiveInfo
-import typings.apolloDashUtilities.libDirectivesMod.InclusionDirectives
 import typings.graphql.languageAstMod.DirectiveNode
 import typings.graphql.languageAstMod.DocumentNode
 import typings.graphql.languageAstMod.FieldNode

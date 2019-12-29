@@ -39,7 +39,8 @@ class Table protected () extends js.Object {
   var Title: String = js.native
   var TopPadding: Double = js.native
   val Uniform: Boolean = js.native
-  var `Word.Table_typekey`: Table = js.native
+  @JSName("Word.Table_typekey")
+  var WordDotTable_typekey: Table = js.native
   def ApplyStyleDirectFormatting(StyleName: String): Unit = js.native
   def AutoFitBehavior(Behavior: WdAutoFitBehavior): Unit = js.native
   def AutoFormat(

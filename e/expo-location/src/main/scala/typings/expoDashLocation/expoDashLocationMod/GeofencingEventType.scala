@@ -1,8 +1,6 @@
 package typings.expoDashLocation.expoDashLocationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expoDashLocation.expoDashLocationMod.GeofencingEventType.Enter
-import typings.expoDashLocation.expoDashLocationMod.GeofencingEventType.Exit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

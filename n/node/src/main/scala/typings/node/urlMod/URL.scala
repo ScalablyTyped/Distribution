@@ -9,54 +9,54 @@ import scala.scalajs.js.annotation._
 @JSImport("url", "URL")
 @js.native
 class URL protected () extends _PathLike {
-  def this(input: java.lang.String) = this()
-  def this(input: java.lang.String, base: java.lang.String) = this()
-  def this(input: java.lang.String, base: URL) = this()
-  var hash: java.lang.String = js.native
-  var host: java.lang.String = js.native
-  var hostname: java.lang.String = js.native
-  var href: java.lang.String = js.native
-  val origin: java.lang.String = js.native
-  var password: java.lang.String = js.native
-  var pathname: java.lang.String = js.native
-  var port: java.lang.String = js.native
-  var protocol: java.lang.String = js.native
-  var search: java.lang.String = js.native
+  def this(input: String) = this()
+  def this(input: String, base: String) = this()
+  def this(input: String, base: URL) = this()
+  var hash: String = js.native
+  var host: String = js.native
+  var hostname: String = js.native
+  var href: String = js.native
+  val origin: String = js.native
+  var password: String = js.native
+  var pathname: String = js.native
+  var port: String = js.native
+  var protocol: String = js.native
+  var search: String = js.native
   val searchParams: URLSearchParams = js.native
-  var username: java.lang.String = js.native
-  def toJSON(): java.lang.String = js.native
+  var username: String = js.native
+  def toJSON(): String = js.native
 }
 
 // Output of `url.parse`
 trait Url extends js.Object {
-  var auth: java.lang.String | Null
-  var hash: java.lang.String | Null
-  var host: java.lang.String | Null
-  var hostname: java.lang.String | Null
-  var href: java.lang.String
-  var path: java.lang.String | Null
-  var pathname: java.lang.String | Null
-  var port: java.lang.String | Null
-  var protocol: java.lang.String | Null
-  var query: java.lang.String | Null | ParsedUrlQuery
-  var search: java.lang.String | Null
+  var auth: String | Null
+  var hash: String | Null
+  var host: String | Null
+  var hostname: String | Null
+  var href: String
+  var path: String | Null
+  var pathname: String | Null
+  var port: String | Null
+  var protocol: String | Null
+  var query: String | Null | ParsedUrlQuery
+  var search: String | Null
   var slashes: Boolean | Null
 }
 
 object Url {
   @scala.inline
   def apply(
-    href: java.lang.String,
-    auth: java.lang.String = null,
-    hash: java.lang.String = null,
-    host: java.lang.String = null,
-    hostname: java.lang.String = null,
-    path: java.lang.String = null,
-    pathname: java.lang.String = null,
-    port: java.lang.String = null,
-    protocol: java.lang.String = null,
-    query: java.lang.String | ParsedUrlQuery = null,
-    search: java.lang.String = null,
+    href: String,
+    auth: String = null,
+    hash: String = null,
+    host: String = null,
+    hostname: String = null,
+    path: String = null,
+    pathname: String = null,
+    port: String = null,
+    protocol: String = null,
+    query: String | ParsedUrlQuery = null,
+    search: String = null,
     slashes: js.UndefOr[Boolean] = js.undefined
   ): Url = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])

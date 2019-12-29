@@ -1,6 +1,5 @@
 package typings.atUifabricUtilities
 
-import typings.atUifabricUtilities.libIComponentAsMod.IComponentAsProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

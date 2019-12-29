@@ -13,6 +13,7 @@ trait Anon_Ariadescribedby extends js.Object {
   var `aria-describedby`: js.UndefOr[String] = js.undefined
   var `aria-label`: js.UndefOr[String] = js.undefined
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
+  var clearable: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var formatDisplayValue: js.UndefOr[
@@ -34,6 +35,7 @@ object Anon_Ariadescribedby {
     `aria-describedby`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
+    clearable: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     formatDisplayValue: (/* date */ Date | js.Array[Date], /* formatString */ String) => String = null,
@@ -50,6 +52,7 @@ object Anon_Ariadescribedby {
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (formatDisplayValue != null) __obj.updateDynamic("formatDisplayValue")(js.Any.fromFunction2(formatDisplayValue))

@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartAxisTickLabelPosition.high
-import typings.officeDashJsDashPreview.Excel.ChartAxisTickLabelPosition.low
-import typings.officeDashJsDashPreview.Excel.ChartAxisTickLabelPosition.nextToAxis
-import typings.officeDashJsDashPreview.Excel.ChartAxisTickLabelPosition.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

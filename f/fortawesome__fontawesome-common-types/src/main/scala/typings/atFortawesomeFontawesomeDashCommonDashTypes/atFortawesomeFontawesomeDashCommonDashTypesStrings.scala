@@ -11,9 +11,6 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `500px` extends IconName
   
   @js.native
-  sealed trait JS extends IconName
-  
-  @js.native
   sealed trait abacus extends IconName
   
   @js.native
@@ -3386,7 +3383,7 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `jack-o-lantern` extends IconName
   
   @js.native
-  sealed trait java extends IconName
+  sealed trait java_ extends IconName
   
   @js.native
   sealed trait jedi extends IconName
@@ -3417,6 +3414,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `js-square` extends IconName
+  
+  @js.native
+  sealed trait js_ extends IconName
   
   @js.native
   sealed trait jsfiddle extends IconName
@@ -6790,8 +6790,6 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `500px`: `500px` = "500px".asInstanceOf[`500px`]
   @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
-  @scala.inline
   def abacus: abacus = "abacus".asInstanceOf[abacus]
   @scala.inline
   def `accessible-icon`: `accessible-icon` = "accessible-icon".asInstanceOf[`accessible-icon`]
@@ -9038,7 +9036,7 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `jack-o-lantern`: `jack-o-lantern` = "jack-o-lantern".asInstanceOf[`jack-o-lantern`]
   @scala.inline
-  def java: java = "java".asInstanceOf[java]
+  def java_ : java_ = "java".asInstanceOf[java_]
   @scala.inline
   def jedi: jedi = "jedi".asInstanceOf[jedi]
   @scala.inline
@@ -9059,6 +9057,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def joystick: joystick = "joystick".asInstanceOf[joystick]
   @scala.inline
   def `js-square`: `js-square` = "js-square".asInstanceOf[`js-square`]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def jsfiddle: jsfiddle = "jsfiddle".asInstanceOf[jsfiddle]
   @scala.inline

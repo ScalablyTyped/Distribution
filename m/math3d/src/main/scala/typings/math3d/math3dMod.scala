@@ -1,14 +1,7 @@
 package typings.math3d
 
 import org.scalablytyped.runtime.TopLevel
-import typings.math3d.math3dMod.Matrix4x4
-import typings.math3d.math3dMod.Quaternion
-import typings.math3d.math3dMod.Transform
 import typings.math3d.math3dMod.Transform.Space
-import typings.math3d.math3dMod.Transform.Space.Self
-import typings.math3d.math3dMod.Transform.Space.World
-import typings.math3d.math3dMod.Vector3
-import typings.math3d.math3dMod.Vector4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

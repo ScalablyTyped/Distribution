@@ -1,10 +1,9 @@
 package typings.tstl
 
 import typings.tstl.baseContainerSetContainerMod.SetContainer
-import typings.tstl.baseContainerUniqueSetMod.UniqueSet
 import typings.tstl.baseIteratorISetIteratorMod.ISetIterator
 import typings.tstl.baseIteratorISetIteratorMod.ISetReverseIterator
-import typings.tstl.tstlNumbers.`true`
+import typings.tstl.tstlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,20 +22,20 @@ object baseContainerUniqueSetMod extends js.Object {
       */
     var _Extract_by_val: js.Any = js.native
     /**
-      * Extract an element by key.
-      *
-      * @param key Key to search for.
-      * @return The extracted element.
-      */
-    def extract(key: Key): Key = js.native
-    /**
       * Extract an element by iterator.
       *
       * @param pos The iterator to the element for extraction.
       * @return Iterator following the *pos*, strained by the extraction.
       */
+    def extract(it: IteratorT): IteratorT = js.native
+    /**
+      * Extract an element by key.
+      *
+      * @param key Key to search for.
+      * @return The extracted element.
+      */
     @JSName("extract")
-    def extract_IteratorT(it: IteratorT): IteratorT = js.native
+    def extract_Key(key: Key): Key = js.native
   }
   
 }

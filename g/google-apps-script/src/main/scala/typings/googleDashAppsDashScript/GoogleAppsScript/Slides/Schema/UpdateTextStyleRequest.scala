@@ -8,7 +8,7 @@ trait UpdateTextStyleRequest extends js.Object {
   var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
   var fields: js.UndefOr[String] = js.undefined
   var objectId: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.undefined
+  var style: js.UndefOr[TextStyle] = js.undefined
   var textRange: js.UndefOr[Range] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object UpdateTextStyleRequest {
     cellLocation: TableCellLocation = null,
     fields: String = null,
     objectId: String = null,
-    style: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.TextStyle = null,
+    style: TextStyle = null,
     textRange: Range = null
   ): UpdateTextStyleRequest = {
     val __obj = js.Dynamic.literal()

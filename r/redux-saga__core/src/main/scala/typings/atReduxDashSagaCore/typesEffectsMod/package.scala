@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesEffectsMod {
-  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.`@@redux-saga/SELF_CANCELLATION`
+  import typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.`@@redux-sagaSlashSELF_CANCELLATION`
   import typings.atReduxDashSagaCore.typesMod.FlushableChannel
   import typings.redux.reduxMod.Action
   import typings.std.Parameters
@@ -39,7 +39,7 @@ package object typesEffectsMod {
   type PutEffect[A /* <: Action[_] */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'PUT', PutEffectDescriptor<A>> */ js.Any
   type RaceEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffect<'RACE', T> */ js.Any
   type RaceEffectDescriptor[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffectDescriptor<T> */ js.Any
-  type SELF_CANCELLATION = `@@redux-saga/SELF_CANCELLATION`
+  type SELF_CANCELLATION = `@@redux-sagaSlashSELF_CANCELLATION`
   type SelectEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'SELECT', SelectEffectDescriptor> */ js.Any
   type SetContextEffect[C /* <: js.Object */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'SET_CONTEXT', SetContextEffectDescriptor<C>> */ js.Any
   type SetContextEffectDescriptor[C /* <: js.Object */] = C

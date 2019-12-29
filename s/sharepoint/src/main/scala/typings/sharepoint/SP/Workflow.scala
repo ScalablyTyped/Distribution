@@ -1,8 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.sharepoint.SP.Workflow.WorkflowAssociation
-import typings.sharepoint.SP.Workflow.WorkflowAssociationCreationInformation
-import typings.sharepoint.SP.Workflow.WorkflowTemplate
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

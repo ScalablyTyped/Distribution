@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.AudioFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.std.AudioContext
@@ -26,31 +27,21 @@ class AudioFile protected ()
     * @param xhrSettings Extra XHR Settings specifically for this file.
     * @param audioContext The AudioContext this file will use to process itself.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AudioFileConfig) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, urlConfig: js.Any) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AudioFileConfig, urlConfig: js.Any) = this()
+  def this(loader: LoaderPlugin, key: String) = this()
+  def this(loader: LoaderPlugin, key: AudioFileConfig) = this()
+  def this(loader: LoaderPlugin, key: String, urlConfig: js.Any) = this()
+  def this(loader: LoaderPlugin, key: AudioFileConfig, urlConfig: js.Any) = this()
+  def this(loader: LoaderPlugin, key: String, urlConfig: js.Any, xhrSettings: XHRSettingsObject) = this()
+  def this(loader: LoaderPlugin, key: AudioFileConfig, urlConfig: js.Any, xhrSettings: XHRSettingsObject) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    urlConfig: js.Any,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: AudioFileConfig,
-    urlConfig: js.Any,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     urlConfig: js.Any,
     xhrSettings: XHRSettingsObject,
     audioContext: AudioContext
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AudioFileConfig,
     urlConfig: js.Any,
     xhrSettings: XHRSettingsObject,

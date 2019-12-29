@@ -7,61 +7,64 @@ import scala.scalajs.js.annotation._
 
 object constantinopleStrings {
   @js.native
-  sealed trait `!=` extends Operator
+  sealed trait `-_` extends Operator
   
   @js.native
-  sealed trait `!==` extends Operator
+  sealed trait Ampersand extends Operator
   
   @js.native
-  sealed trait `%` extends Operator
+  sealed trait Asterisk extends Operator
   
   @js.native
-  sealed trait `&` extends Operator
+  sealed trait AsteriskAsterisk extends Operator
   
   @js.native
-  sealed trait `*` extends Operator
+  sealed trait EqualssignEqualssign extends Operator
   
   @js.native
-  sealed trait `**` extends Operator
+  sealed trait EqualssignEqualssignEqualssign extends Operator
   
   @js.native
-  sealed trait `+` extends Operator
+  sealed trait ExclamationmarkEqualssign extends Operator
   
   @js.native
-  sealed trait `-` extends Operator
+  sealed trait ExclamationmarkEqualssignEqualssign extends Operator
   
   @js.native
-  sealed trait `/` extends Operator
+  sealed trait Greaterthansign extends Operator
   
   @js.native
-  sealed trait `<` extends Operator
+  sealed trait GreaterthansignEqualssign extends Operator
   
   @js.native
-  sealed trait `<<` extends Operator
+  sealed trait GreaterthansignGreaterthansign extends Operator
   
   @js.native
-  sealed trait `<=` extends Operator
+  sealed trait GreaterthansignGreaterthansignGreaterthansign extends Operator
   
   @js.native
-  sealed trait `==` extends Operator
+  sealed trait Lessthansign extends Operator
   
   @js.native
-  sealed trait `===` extends Operator
+  sealed trait LessthansignEqualssign extends Operator
   
   @js.native
-  sealed trait `>` extends Operator
+  sealed trait LessthansignLessthansign extends Operator
   
   @js.native
-  sealed trait `>=` extends Operator
+  sealed trait Percentsign extends Operator
   
   @js.native
-  sealed trait `>>` extends Operator
+  sealed trait Plussign extends Operator
   
   @js.native
-  sealed trait `>>>` extends Operator
+  sealed trait Slash extends Operator
   
   @js.native
-  sealed trait `_backtick^_backtick` extends Operator
+  sealed trait Verticalline extends Operator
+  
+  @js.native
+  sealed trait ^ extends Operator
   
   @js.native
   sealed trait in extends Operator
@@ -69,52 +72,49 @@ object constantinopleStrings {
   @js.native
   sealed trait instanceof extends Operator
   
-  @js.native
-  sealed trait `|` extends Operator
-  
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `!==`: `!==` = "!==".asInstanceOf[`!==`]
+  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `&`: `&` = "&".asInstanceOf[`&`]
+  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   @scala.inline
-  def `**`: `**` = "**".asInstanceOf[`**`]
+  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
   @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `<<`: `<<` = "<<".asInstanceOf[`<<`]
+  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
   @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `===`: `===` = "===".asInstanceOf[`===`]
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
   @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   @scala.inline
-  def `>>`: `>>` = ">>".asInstanceOf[`>>`]
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
   @scala.inline
-  def `>>>`: `>>>` = ">>>".asInstanceOf[`>>>`]
+  def Slash: Slash = "/".asInstanceOf[Slash]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   @scala.inline
   def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
 }
 

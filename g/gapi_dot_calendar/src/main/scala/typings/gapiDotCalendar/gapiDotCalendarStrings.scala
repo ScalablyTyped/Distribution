@@ -24,25 +24,25 @@ object gapiDotCalendarStrings {
   sealed trait agenda extends NotificationType
   
   @js.native
-  sealed trait `calendar#aclRule` extends js.Object
+  sealed trait calendarNumbersignaclRule extends js.Object
   
   @js.native
-  sealed trait `calendar#calendar` extends js.Object
+  sealed trait calendarNumbersigncalendar extends js.Object
   
   @js.native
-  sealed trait `calendar#calendarList` extends js.Object
+  sealed trait calendarNumbersigncalendarList extends js.Object
   
   @js.native
-  sealed trait `calendar#calendarListEntry` extends js.Object
+  sealed trait calendarNumbersigncalendarListEntry extends js.Object
   
   @js.native
-  sealed trait `calendar#event` extends js.Object
+  sealed trait calendarNumbersignevent extends js.Object
   
   @js.native
-  sealed trait `calendar#events` extends js.Object
+  sealed trait calendarNumbersignevents extends js.Object
   
   @js.native
-  sealed trait `calendar#freeBusy` extends js.Object
+  sealed trait calendarNumbersignfreeBusy extends js.Object
   
   @js.native
   sealed trait cancelled extends EventStatus
@@ -175,19 +175,19 @@ object gapiDotCalendarStrings {
   @scala.inline
   def agenda: agenda = "agenda".asInstanceOf[agenda]
   @scala.inline
-  def `calendar#aclRule`: `calendar#aclRule` = "calendar#aclRule".asInstanceOf[`calendar#aclRule`]
+  def calendarNumbersignaclRule: calendarNumbersignaclRule = "calendar#aclRule".asInstanceOf[calendarNumbersignaclRule]
   @scala.inline
-  def `calendar#calendar`: `calendar#calendar` = "calendar#calendar".asInstanceOf[`calendar#calendar`]
+  def calendarNumbersigncalendar: calendarNumbersigncalendar = "calendar#calendar".asInstanceOf[calendarNumbersigncalendar]
   @scala.inline
-  def `calendar#calendarList`: `calendar#calendarList` = "calendar#calendarList".asInstanceOf[`calendar#calendarList`]
+  def calendarNumbersigncalendarList: calendarNumbersigncalendarList = "calendar#calendarList".asInstanceOf[calendarNumbersigncalendarList]
   @scala.inline
-  def `calendar#calendarListEntry`: `calendar#calendarListEntry` = "calendar#calendarListEntry".asInstanceOf[`calendar#calendarListEntry`]
+  def calendarNumbersigncalendarListEntry: calendarNumbersigncalendarListEntry = "calendar#calendarListEntry".asInstanceOf[calendarNumbersigncalendarListEntry]
   @scala.inline
-  def `calendar#event`: `calendar#event` = "calendar#event".asInstanceOf[`calendar#event`]
+  def calendarNumbersignevent: calendarNumbersignevent = "calendar#event".asInstanceOf[calendarNumbersignevent]
   @scala.inline
-  def `calendar#events`: `calendar#events` = "calendar#events".asInstanceOf[`calendar#events`]
+  def calendarNumbersignevents: calendarNumbersignevents = "calendar#events".asInstanceOf[calendarNumbersignevents]
   @scala.inline
-  def `calendar#freeBusy`: `calendar#freeBusy` = "calendar#freeBusy".asInstanceOf[`calendar#freeBusy`]
+  def calendarNumbersignfreeBusy: calendarNumbersignfreeBusy = "calendar#freeBusy".asInstanceOf[calendarNumbersignfreeBusy]
   @scala.inline
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   @scala.inline

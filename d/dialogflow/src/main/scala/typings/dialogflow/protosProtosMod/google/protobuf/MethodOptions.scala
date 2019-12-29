@@ -3,9 +3,6 @@ package typings.dialogflow.protosProtosMod.google.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.protobuf.MethodOptions.IdempotencyLevel
-import typings.dialogflow.protosProtosMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN
-import typings.dialogflow.protosProtosMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENT
-import typings.dialogflow.protosProtosMod.google.protobuf.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

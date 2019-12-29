@@ -1,5 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.high
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.low
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -20,7 +22,7 @@ trait SceneViewEnvironmentAtmosphereProperties extends Object {
     *
     * @default low
     */
-  var quality: js.UndefOr[String] = js.undefined
+  var quality: js.UndefOr[low | high] = js.undefined
 }
 
 object SceneViewEnvironmentAtmosphereProperties {
@@ -29,7 +31,7 @@ object SceneViewEnvironmentAtmosphereProperties {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    quality: String = null
+    quality: low | high = null
   ): SceneViewEnvironmentAtmosphereProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])

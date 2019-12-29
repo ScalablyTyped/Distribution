@@ -15,7 +15,7 @@ class PolymerBase () extends HTMLElement {
   @JSName("$")
   var $: js.Any = js.native
   @JSName("$$")
-  var $$: js.Any = js.native
+  var DollarDollar: js.Any = js.native
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | Null = js.native
   /* CompleteClass */

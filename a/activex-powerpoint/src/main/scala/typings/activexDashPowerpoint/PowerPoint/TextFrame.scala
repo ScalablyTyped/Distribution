@@ -22,7 +22,8 @@ class TextFrame protected () extends js.Object {
   var MarginTop: Double = js.native
   var Orientation: MsoTextOrientation = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TextFrame_typekey`: TextFrame = js.native
+  @JSName("PowerPoint.TextFrame_typekey")
+  var PowerPointDotTextFrame_typekey: TextFrame = js.native
   val Ruler: typings.activexDashPowerpoint.PowerPoint.Ruler = js.native
   val TextRange: typings.activexDashPowerpoint.PowerPoint.TextRange = js.native
   var VerticalAnchor: MsoVerticalAnchor = js.native

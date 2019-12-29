@@ -1,6 +1,5 @@
 package typings.shopifyDashPrime
 
-import typings.shopifyDashPrime.distEnumsOrderUnderscoreStatusMod._OrderStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

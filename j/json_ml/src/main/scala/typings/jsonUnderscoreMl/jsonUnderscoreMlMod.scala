@@ -1,7 +1,6 @@
 package typings.jsonUnderscoreMl
 
 import typings.cheerio.Cheerio
-import typings.jsonUnderscoreMl.jsonUnderscoreMlMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

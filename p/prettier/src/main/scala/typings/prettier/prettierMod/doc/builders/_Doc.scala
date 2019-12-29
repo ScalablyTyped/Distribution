@@ -13,36 +13,31 @@ trait _Doc extends js.Object
 
 object _Doc {
   @scala.inline
-  def LineSuffix(contents: typings.prettier.prettierMod.doc.builders.Doc, `type`: `line-suffix`): _Doc = {
+  def BreakParent(`type`: `break-parent`): _Doc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Doc]
+  }
+  @scala.inline
+  def IfBreak(breakContents: Doc, flatContents: Doc, `type`: `if-break`): _Doc = {
+    val __obj = js.Dynamic.literal(breakContents = breakContents.asInstanceOf[js.Any], flatContents = flatContents.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Doc]
+  }
+  @scala.inline
+  def LineSuffix(contents: Doc, `type`: `line-suffix`): _Doc = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
-  def Align(
-    contents: typings.prettier.prettierMod.doc.builders.Doc,
-    n: Double | String | Anon_Root,
-    `type`: typings.prettier.prettierStrings.align
+  def Group(
+    break: Boolean,
+    contents: Doc,
+    expandedStates: js.Array[Doc],
+    `type`: typings.prettier.prettierStrings.group
   ): _Doc = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Doc]
-  }
-  @scala.inline
-  def Concat(
-    parts: js.Array[typings.prettier.prettierMod.doc.builders.Doc],
-    `type`: typings.prettier.prettierStrings.concat
-  ): _Doc = {
-    val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Doc]
-  }
-  @scala.inline
-  def Indent(
-    contents: typings.prettier.prettierMod.doc.builders.Doc,
-    `type`: typings.prettier.prettierStrings.indent
-  ): _Doc = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], expandedStates = expandedStates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
@@ -61,44 +56,32 @@ object _Doc {
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
-  def Fill(
-    parts: js.Array[typings.prettier.prettierMod.doc.builders.Doc],
-    `type`: typings.prettier.prettierStrings.fill
-  ): _Doc = {
-    val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Doc]
-  }
-  @scala.inline
   def LineSuffixBoundary(`type`: `line-suffix-boundary`): _Doc = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
-  def Group(
-    break: Boolean,
-    contents: typings.prettier.prettierMod.doc.builders.Doc,
-    expandedStates: js.Array[typings.prettier.prettierMod.doc.builders.Doc],
-    `type`: typings.prettier.prettierStrings.group
-  ): _Doc = {
-    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], expandedStates = expandedStates.asInstanceOf[js.Any])
+  def Fill(parts: js.Array[Doc], `type`: typings.prettier.prettierStrings.fill): _Doc = {
+    val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
-  def BreakParent(`type`: `break-parent`): _Doc = {
-    val __obj = js.Dynamic.literal()
+  def Concat(parts: js.Array[Doc], `type`: typings.prettier.prettierStrings.concat): _Doc = {
+    val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
-  def IfBreak(
-    breakContents: typings.prettier.prettierMod.doc.builders.Doc,
-    flatContents: typings.prettier.prettierMod.doc.builders.Doc,
-    `type`: `if-break`
-  ): _Doc = {
-    val __obj = js.Dynamic.literal(breakContents = breakContents.asInstanceOf[js.Any], flatContents = flatContents.asInstanceOf[js.Any])
+  def Indent(contents: Doc, `type`: typings.prettier.prettierStrings.indent): _Doc = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Doc]
+  }
+  @scala.inline
+  def Align(contents: Doc, n: Double | String | Anon_Root, `type`: typings.prettier.prettierStrings.align): _Doc = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }

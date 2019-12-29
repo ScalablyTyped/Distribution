@@ -34,15 +34,15 @@ object ^ extends js.Object {
   def $(expr: Element): String | Element = js.native
   @JSName("$")
   def $(expr: Element, con: ParentNode): String | Element = js.native
-  @JSName("$$")
-  def $$(expr: String): NodeList = js.native
-  @JSName("$$")
-  def $$(expr: String, con: js.Any): NodeList = js.native
-  @JSName("$$")
-  def $$(expr: ParentNode): NodeList = js.native
-  @JSName("$$")
-  def $$(expr: ParentNode, con: js.Any): NodeList = js.native
   def DATA(item: Suggestion): Suggestion = js.native
+  @JSName("$$")
+  def DollarDollar(expr: String): NodeList = js.native
+  @JSName("$$")
+  def DollarDollar(expr: String, con: js.Any): NodeList = js.native
+  @JSName("$$")
+  def DollarDollar(expr: ParentNode): NodeList = js.native
+  @JSName("$$")
+  def DollarDollar(expr: ParentNode, con: js.Any): NodeList = js.native
   def FILTER_CONTAINS(text: String, input: String): Boolean = js.native
   def FILTER_STARTSWITH(text: String, input: String): Boolean = js.native
   def ITEM(text: String, input: String): HTMLElement = js.native

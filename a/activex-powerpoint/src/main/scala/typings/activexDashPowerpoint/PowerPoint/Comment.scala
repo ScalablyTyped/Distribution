@@ -15,7 +15,8 @@ class Comment protected () extends js.Object {
   val DateTime: VarDate = js.native
   val Left: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Comment_typekey`: Comment = js.native
+  @JSName("PowerPoint.Comment_typekey")
+  var PowerPointDotComment_typekey: Comment = js.native
   val Text: String = js.native
   val Top: Double = js.native
   def Delete(): Unit = js.native

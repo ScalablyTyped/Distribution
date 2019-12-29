@@ -6,26 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FieldTransform extends js.Object {
-  var appendMissingElements: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ArrayValue
-  ] = js.undefined
+  var appendMissingElements: js.UndefOr[ArrayValue] = js.undefined
   var fieldPath: js.UndefOr[String] = js.undefined
-  var increment: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Value
-  ] = js.undefined
-  var removeAllFromArray: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ArrayValue
-  ] = js.undefined
+  var increment: js.UndefOr[Value] = js.undefined
+  var removeAllFromArray: js.UndefOr[ArrayValue] = js.undefined
   var setToServerValue: js.UndefOr[FieldTransformSetToServerValue] = js.undefined
 }
 
 object FieldTransform {
   @scala.inline
   def apply(
-    appendMissingElements: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ArrayValue = null,
+    appendMissingElements: ArrayValue = null,
     fieldPath: String = null,
-    increment: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Value = null,
-    removeAllFromArray: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.ArrayValue = null,
+    increment: Value = null,
+    removeAllFromArray: ArrayValue = null,
     setToServerValue: FieldTransformSetToServerValue = null
   ): FieldTransform = {
     val __obj = js.Dynamic.literal()

@@ -71,7 +71,7 @@ trait ISelectable extends IBase {
   /** [Method] Returns the value of mode
   		* @returns String
   		*/
-  var getMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns an array of the currently selected records
   		* @returns Array An array of selected records.
   		*/
@@ -83,7 +83,7 @@ trait ISelectable extends IBase {
   /** [Method] Returns the selection mode currently used by this Selectable
   		* @returns String The current mode.
   		*/
-  var getSelectionMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSelectionMode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns true if there is a selected record
   		* @returns Boolean
   		*/
@@ -100,7 +100,7 @@ trait ISelectable extends IBase {
   /** [Config Option] (Boolean) */
   var locked: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var mode: js.UndefOr[java.lang.String] = js.undefined
+  var mode: js.UndefOr[String] = js.undefined
   /** [Method] Adds the given records to the currently selected set
   		* @param records Ext.data.Model/Array/Number The records to select.
   		* @param keepExisting Boolean If true, the existing selection will be added to (if not, the old selection is replaced).
@@ -148,7 +148,7 @@ trait ISelectable extends IBase {
   /** [Method] Sets the value of mode
   		* @param mode String The new value.
   		*/
-  var setMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets a record as the last focused record
   		* @param newRecord Ext.data.Record
   		* @param oldRecord Ext.data.Record
@@ -176,17 +176,17 @@ object ISelectable {
     disableSelection: js.UndefOr[Boolean] = js.undefined,
     doDeselect: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
     doSelect: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getAllowDeselect: () => Boolean = null,
     getCount: () => Double = null,
     getDeselectOnContainerClick: () => Boolean = null,
     getDisableSelection: () => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLastSelected: () => Array = null,
-    getMode: () => java.lang.String = null,
+    getMode: () => String = null,
     getSelection: () => Array = null,
     getSelectionCount: () => Double = null,
-    getSelectionMode: () => java.lang.String = null,
+    getSelectionMode: () => String = null,
     hasSelection: () => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
@@ -194,7 +194,7 @@ object ISelectable {
     isSelected: /* record */ js.UndefOr[js.Any] => Boolean = null,
     locked: js.UndefOr[Boolean] = js.undefined,
     mixins: js.Any = null,
-    mode: java.lang.String = null,
+    mode: String = null,
     platformConfig: js.Any = null,
     select: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
     selectAll: /* silent */ js.UndefOr[Boolean] => Unit = null,
@@ -204,7 +204,7 @@ object ISelectable {
     setDeselectOnContainerClick: /* deselectOnContainerClick */ js.UndefOr[Boolean] => Unit = null,
     setDisableSelection: /* disableSelection */ js.UndefOr[Boolean] => Unit = null,
     setLastFocused: () => Unit = null,
-    setMode: /* mode */ js.UndefOr[java.lang.String] => Unit = null,
+    setMode: /* mode */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     updateLastFocused: (/* newRecord */ js.UndefOr[IRecord], /* oldRecord */ js.UndefOr[IRecord]) => Unit = null,

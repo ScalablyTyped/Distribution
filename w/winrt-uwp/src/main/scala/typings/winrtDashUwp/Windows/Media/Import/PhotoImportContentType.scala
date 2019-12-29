@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.image
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.unknown
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

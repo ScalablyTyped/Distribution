@@ -67,8 +67,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/chars", JSImport.Namespace)
 @js.native
 object srcCharsMod extends js.Object {
-  @JSName("$$")
-  val $$: `36` = js.native
   @JSName("$0")
   val $0: `48` = js.native
   @JSName("$7")
@@ -189,6 +187,8 @@ object srcCharsMod extends js.Object {
   val $x: `120` = js.native
   @JSName("$z")
   val $z: `122` = js.native
+  @JSName("$$")
+  val DollarDollar: `36` = js.native
   def isAsciiHexDigit(code: Double): Boolean = js.native
   def isAsciiLetter(code: Double): Boolean = js.native
   def isDigit(code: Double): Boolean = js.native

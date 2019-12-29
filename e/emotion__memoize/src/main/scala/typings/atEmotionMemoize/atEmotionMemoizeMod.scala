@@ -1,6 +1,5 @@
 package typings.atEmotionMemoize
 
-import typings.atEmotionMemoize.atEmotionMemoizeMod.Fn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

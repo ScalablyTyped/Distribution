@@ -21,7 +21,7 @@ trait Typeofmkdtemp extends js.Object {
   def apply(
     prefix: String,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     prefix: String,
@@ -31,7 +31,7 @@ trait Typeofmkdtemp extends js.Object {
   def apply(
     prefix: String,
     options: Null,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object bootstrapDashMaxlengthStrings {
   @js.native
-  sealed trait maxlengthDOThidden extends js.Object
+  sealed trait maxlengthDothidden extends js.Object
   
   @js.native
-  sealed trait maxlengthDOTreposition extends js.Object
+  sealed trait maxlengthDotreposition extends js.Object
   
   @js.native
-  sealed trait maxlengthDOTshown extends js.Object
+  sealed trait maxlengthDotshown extends js.Object
   
   @scala.inline
-  def maxlengthDOThidden: maxlengthDOThidden = "maxlength.hidden".asInstanceOf[maxlengthDOThidden]
+  def maxlengthDothidden: maxlengthDothidden = "maxlength.hidden".asInstanceOf[maxlengthDothidden]
   @scala.inline
-  def maxlengthDOTreposition: maxlengthDOTreposition = "maxlength.reposition".asInstanceOf[maxlengthDOTreposition]
+  def maxlengthDotreposition: maxlengthDotreposition = "maxlength.reposition".asInstanceOf[maxlengthDotreposition]
   @scala.inline
-  def maxlengthDOTshown: maxlengthDOTshown = "maxlength.shown".asInstanceOf[maxlengthDOTshown]
+  def maxlengthDotshown: maxlengthDotshown = "maxlength.shown".asInstanceOf[maxlengthDotshown]
 }
 

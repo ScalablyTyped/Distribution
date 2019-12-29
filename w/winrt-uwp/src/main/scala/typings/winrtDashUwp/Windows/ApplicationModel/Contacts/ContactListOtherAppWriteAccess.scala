@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListOtherAppWriteAccess.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListOtherAppWriteAccess.systemOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

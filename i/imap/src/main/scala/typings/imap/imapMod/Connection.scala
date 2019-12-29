@@ -1,7 +1,7 @@
 package typings.imap.imapMod
 
 import typings.imap.Anon_Other
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

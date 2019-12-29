@@ -2,7 +2,6 @@ package typings.typedoc
 
 import typings.handlebars.Handlebars.TemplateDelegate
 import typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection
-import typings.typedoc.distLibOutputEventsMod.PageEvent
 import typings.typedoc.distLibOutputModelsNavigationItemMod.NavigationItem
 import typings.typedoc.distLibOutputModelsUrlMappingMod.UrlMapping
 import typings.typedoc.distLibUtilsEventsMod.Event

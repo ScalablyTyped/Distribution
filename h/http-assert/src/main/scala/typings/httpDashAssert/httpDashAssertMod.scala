@@ -1,8 +1,5 @@
 package typings.httpDashAssert
 
-import typings.httpDashAssert.httpDashAssertMod.Assert
-import typings.httpDashAssert.httpDashAssertMod.AssertEqual
-import typings.httpDashAssert.httpDashAssertMod.AssertOK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

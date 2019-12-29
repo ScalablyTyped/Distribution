@@ -29,10 +29,5 @@ class ProjectDetailsError protected () extends BaseException {
     */
   @JSName("code")
   val code_ProjectDetailsError: ProjectDetailsErrorCode = js.native
-  /**
-    * The underlying error that caused this error.
-    */
-  @JSName("error")
-  val error_ProjectDetailsError: js.UndefOr[Error] = js.native
 }
 

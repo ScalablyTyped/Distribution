@@ -1,8 +1,6 @@
 package typings.lovefield.lovefieldMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.lovefield.lovefieldMod.TransactionType.READ_ONLY
-import typings.lovefield.lovefieldMod.TransactionType.READ_WRITE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

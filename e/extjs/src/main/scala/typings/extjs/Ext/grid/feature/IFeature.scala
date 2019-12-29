@@ -2,6 +2,7 @@ package typings.extjs.Ext.grid.feature
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
+import typings.extjs.Ext.grid.IPanel
 import typings.extjs.Ext.util.IObservable
 import typings.extjs.Ext.view.ITable
 import scala.scalajs.js
@@ -16,9 +17,9 @@ trait IFeature extends IObservable {
   /** [Method] Enables the feature  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (String) */
-  var eventPrefix: js.UndefOr[java.lang.String] = js.undefined
+  var eventPrefix: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var eventSelector: js.UndefOr[java.lang.String] = js.undefined
+  var eventSelector: js.UndefOr[String] = js.undefined
   /** [Method] Abstract method to be overriden when a feature should add additional arguments to its event signature
   		* @param eventName Object
   		* @param view Object
@@ -35,7 +36,7 @@ trait IFeature extends IObservable {
     ]
   ] = js.undefined
   /** [Property] (Ext.grid.Panel) */
-  var grid: js.UndefOr[typings.extjs.Ext.grid.IPanel] = js.undefined
+  var grid: js.UndefOr[IPanel] = js.undefined
   /** [Property] (Boolean) */
   var hasFeatureEvent: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Ext.view.Table) */
@@ -60,16 +61,16 @@ object IFeature {
     disabled: js.UndefOr[Boolean] = js.undefined,
     enable: () => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    eventPrefix: java.lang.String = null,
-    eventSelector: java.lang.String = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    eventPrefix: String = null,
+    eventSelector: String = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getFireEventArgs: (/* eventName */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any], /* featureTarget */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any]) => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    grid: typings.extjs.Ext.grid.IPanel = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    grid: IPanel = null,
     hasFeatureEvent: js.UndefOr[Boolean] = js.undefined,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IFeature = null,
@@ -79,8 +80,8 @@ object IFeature {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -90,7 +91,7 @@ object IFeature {
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     view: ITable = null
   ): IFeature = {

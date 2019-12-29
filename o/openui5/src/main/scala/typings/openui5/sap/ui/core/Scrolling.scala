@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.Scrolling.Auto
-import typings.openui5.sap.ui.core.Scrolling.Hidden
-import typings.openui5.sap.ui.core.Scrolling.None
-import typings.openui5.sap.ui.core.Scrolling.Scroll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

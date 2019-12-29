@@ -18,7 +18,8 @@ class AddressEntry protected () extends js.Object {
   val Manager: AddressEntry = js.native
   val Members: AddressEntries = js.native
   var Name: String = js.native
-  var `Outlook.AddressEntry_typekey`: AddressEntry = js.native
+  @JSName("Outlook.AddressEntry_typekey")
+  var OutlookDotAddressEntry_typekey: AddressEntry = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val Session: NameSpace = js.native

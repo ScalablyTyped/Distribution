@@ -13,6 +13,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StreamLayer extends FeatureLayer {
   /**
+    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  StreamLayer supports one type feature reduction: `selection`. [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#featureReduction)
+    */
+  @JSName("featureReduction")
+  var featureReduction_StreamLayer: FeatureReductionSelection = js.native
+  /**
     * An extent object used to filter features. Only features intersecting the extent are displayed in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)

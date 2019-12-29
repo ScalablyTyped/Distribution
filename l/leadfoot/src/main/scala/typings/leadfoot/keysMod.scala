@@ -105,6 +105,118 @@ object keysMod extends js.Object {
   var PAGE_UP: String = js.native
   /** The pause key. */
   var PAUSE: String = js.native
+  @JSName("\uE000")
+  var Privateuseareae000: String = js.native
+  @JSName("\uE001")
+  var Privateuseareae001: String = js.native
+  @JSName("\uE002")
+  var Privateuseareae002: String = js.native
+  @JSName("\uE003")
+  var Privateuseareae003: String = js.native
+  @JSName("\uE004")
+  var Privateuseareae004: String = js.native
+  @JSName("\uE005")
+  var Privateuseareae005: String = js.native
+  @JSName("\uE006")
+  var Privateuseareae006: String = js.native
+  @JSName("\uE007")
+  var Privateuseareae007: String = js.native
+  @JSName("\uE008")
+  var Privateuseareae008: String = js.native
+  @JSName("\uE009")
+  var Privateuseareae009: String = js.native
+  @JSName("\uE00A")
+  var Privateuseareae00a: String = js.native
+  @JSName("\uE00B")
+  var Privateuseareae00b: String = js.native
+  @JSName("\uE00C")
+  var Privateuseareae00c: String = js.native
+  @JSName("\uE00D")
+  var Privateuseareae00d: String = js.native
+  @JSName("\uE00E")
+  var Privateuseareae00e: String = js.native
+  @JSName("\uE00F")
+  var Privateuseareae00f: String = js.native
+  @JSName("\uE010")
+  var Privateuseareae010: String = js.native
+  @JSName("\uE011")
+  var Privateuseareae011: String = js.native
+  @JSName("\uE012")
+  var Privateuseareae012: String = js.native
+  @JSName("\uE013")
+  var Privateuseareae013: String = js.native
+  @JSName("\uE014")
+  var Privateuseareae014: String = js.native
+  @JSName("\uE015")
+  var Privateuseareae015: String = js.native
+  @JSName("\uE016")
+  var Privateuseareae016: String = js.native
+  @JSName("\uE017")
+  var Privateuseareae017: String = js.native
+  @JSName("\uE018")
+  var Privateuseareae018: String = js.native
+  @JSName("\uE019")
+  var Privateuseareae019: String = js.native
+  @JSName("\uE01A")
+  var Privateuseareae01a: String = js.native
+  @JSName("\uE01B")
+  var Privateuseareae01b: String = js.native
+  @JSName("\uE01C")
+  var Privateuseareae01c: String = js.native
+  @JSName("\uE01D")
+  var Privateuseareae01d: String = js.native
+  @JSName("\uE01E")
+  var Privateuseareae01e: String = js.native
+  @JSName("\uE01F")
+  var Privateuseareae01f: String = js.native
+  @JSName("\uE020")
+  var Privateuseareae020: String = js.native
+  @JSName("\uE021")
+  var Privateuseareae021: String = js.native
+  @JSName("\uE022")
+  var Privateuseareae022: String = js.native
+  @JSName("\uE023")
+  var Privateuseareae023: String = js.native
+  @JSName("\uE024")
+  var Privateuseareae024: String = js.native
+  @JSName("\uE025")
+  var Privateuseareae025: String = js.native
+  @JSName("\uE026")
+  var Privateuseareae026: String = js.native
+  @JSName("\uE027")
+  var Privateuseareae027: String = js.native
+  @JSName("\uE028")
+  var Privateuseareae028: String = js.native
+  @JSName("\uE029")
+  var Privateuseareae029: String = js.native
+  @JSName("\uE031")
+  var Privateuseareae031: String = js.native
+  @JSName("\uE032")
+  var Privateuseareae032: String = js.native
+  @JSName("\uE033")
+  var Privateuseareae033: String = js.native
+  @JSName("\uE034")
+  var Privateuseareae034: String = js.native
+  @JSName("\uE035")
+  var Privateuseareae035: String = js.native
+  @JSName("\uE036")
+  var Privateuseareae036: String = js.native
+  @JSName("\uE037")
+  var Privateuseareae037: String = js.native
+  @JSName("\uE038")
+  var Privateuseareae038: String = js.native
+  @JSName("\uE039")
+  var Privateuseareae039: String = js.native
+  @JSName("\uE03A")
+  var Privateuseareae03a: String = js.native
+  @JSName("\uE03B")
+  var Privateuseareae03b: String = js.native
+  @JSName("\uE03C")
+  var Privateuseareae03c: String = js.native
+  @JSName("\uE03D")
+  var Privateuseareae03d: String = js.native
+  @JSName("\uE040")
+  var Privateuseareae040: String = js.native
   /** The return key. */
   var RETURN: String = js.native
   /** The semicolon key. */

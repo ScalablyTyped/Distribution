@@ -9,7 +9,16 @@ object faviconsStrings {
   sealed trait any extends js.Object
   
   @js.native
+  sealed trait black extends js.Object
+  
+  @js.native
+  sealed trait `black-translucent` extends js.Object
+  
+  @js.native
   sealed trait browser extends js.Object
+  
+  @js.native
+  sealed trait default extends js.Object
   
   @js.native
   sealed trait fullscreen extends js.Object
@@ -32,7 +41,13 @@ object faviconsStrings {
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
+  def black: black = "black".asInstanceOf[black]
+  @scala.inline
+  def `black-translucent`: `black-translucent` = "black-translucent".asInstanceOf[`black-translucent`]
+  @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
   @scala.inline
   def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   @scala.inline

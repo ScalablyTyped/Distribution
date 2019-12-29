@@ -14,7 +14,8 @@ class NavigationFolder protected () extends js.Object {
   val IsRemovable: Boolean = js.native
   var IsSelected: Boolean = js.native
   var IsSideBySide: Boolean = js.native
-  var `Outlook.NavigationFolder_typekey`: NavigationFolder = js.native
+  @JSName("Outlook.NavigationFolder_typekey")
+  var OutlookDotNavigationFolder_typekey: NavigationFolder = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

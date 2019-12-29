@@ -1,6 +1,5 @@
 package typings.colorette
 
-import typings.colorette.coloretteMod.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

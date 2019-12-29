@@ -1,6 +1,5 @@
 package typings.nodeDashRedisDashPubsub
 
-import typings.nodeDashRedisDashPubsub.nodeDashRedisDashPubsubMod.NodeRedisPubSub
 import typings.redis.redisMod.RedisClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`

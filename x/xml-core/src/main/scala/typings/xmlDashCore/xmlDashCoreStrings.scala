@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation._
 
 object xmlDashCoreStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait XMLJS extends js.Object
   
   @js.native
-  sealed trait `application/xml` extends js.Object
+  sealed trait _empty extends js.Object
+  
+  @js.native
+  sealed trait applicationSlashxml extends js.Object
   
   @js.native
   sealed trait base64 extends _XmlBufferEncoding
@@ -28,9 +31,11 @@ object xmlDashCoreStrings {
   sealed trait utf8 extends _XmlBufferEncoding
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def XMLJS: XMLJS = "XMLJS".asInstanceOf[XMLJS]
   @scala.inline
-  def `application/xml`: `application/xml` = "application/xml".asInstanceOf[`application/xml`]
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
+  def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline

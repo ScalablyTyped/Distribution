@@ -1,6 +1,5 @@
 package typings.rxjs
 
-import typings.rxjs.internalSubscriberMod.Subscriber
 import typings.rxjs.internalSubscriptionMod.Subscription
 import typings.rxjs.internalTypesMod.PartialObserver
 import scala.scalajs.js

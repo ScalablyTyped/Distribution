@@ -1,16 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.Days.Day
-import typings.officeDashJs.Office.MailboxEnums.Days.Fri
-import typings.officeDashJs.Office.MailboxEnums.Days.Mon
-import typings.officeDashJs.Office.MailboxEnums.Days.Sat
-import typings.officeDashJs.Office.MailboxEnums.Days.Sun
-import typings.officeDashJs.Office.MailboxEnums.Days.Thu
-import typings.officeDashJs.Office.MailboxEnums.Days.Tue
-import typings.officeDashJs.Office.MailboxEnums.Days.Wed
-import typings.officeDashJs.Office.MailboxEnums.Days.Weekday
-import typings.officeDashJs.Office.MailboxEnums.Days.WeekendDay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

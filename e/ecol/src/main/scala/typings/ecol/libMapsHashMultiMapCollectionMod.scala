@@ -2,7 +2,7 @@ package typings.ecol
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.ecol.ecolNumbers.`false`
+import typings.ecol.ecolBooleans.`false`
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
@@ -64,7 +64,6 @@ object libMapsHashMultiMapCollectionMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -89,7 +88,6 @@ object libMapsHashMultiMapCollectionMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def push(items: (IPair[Key, T])*): Double = js.native
     /**

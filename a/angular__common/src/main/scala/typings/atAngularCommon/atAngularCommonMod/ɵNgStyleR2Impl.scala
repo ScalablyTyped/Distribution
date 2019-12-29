@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵNgStyleR2Impl")
+@JSImport("@angular/common", "\u0275NgStyleR2Impl")
 @js.native
 class ɵNgStyleR2Impl protected () extends ɵNgStyleImpl {
   def this(_ngEl: ElementRef[_], _differs: KeyValueDiffers, _renderer: Renderer2) = this()

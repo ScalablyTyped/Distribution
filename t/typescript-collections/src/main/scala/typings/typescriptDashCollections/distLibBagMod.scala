@@ -1,6 +1,5 @@
 package typings.typescriptDashCollections
 
-import typings.typescriptDashCollections.distLibBagMod.Bag
 import typings.typescriptDashCollections.distLibUtilMod.ILoopFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`

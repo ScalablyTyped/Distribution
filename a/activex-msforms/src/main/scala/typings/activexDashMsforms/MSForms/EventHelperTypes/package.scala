@@ -12,6 +12,7 @@ package object EventHelperTypes {
   import typings.activexDashMsforms.activexDashMsformsStrings.ActualDy
   import typings.activexDashMsforms.activexDashMsformsStrings.Cancel
   import typings.activexDashMsforms.activexDashMsformsStrings.CancelDisplay
+  import typings.activexDashMsforms.activexDashMsformsStrings.Control
   import typings.activexDashMsforms.activexDashMsformsStrings.Data
   import typings.activexDashMsforms.activexDashMsformsStrings.Description
   import typings.activexDashMsforms.activexDashMsformsStrings.DragState
@@ -29,52 +30,14 @@ package object EventHelperTypes {
   import typings.activexDashMsforms.activexDashMsformsStrings.X
   import typings.activexDashMsforms.activexDashMsformsStrings.Y
 
-  type Container_BeforeDragOver_ArgNames = js.Tuple8[
-    Cancel, 
-    typings.activexDashMsforms.activexDashMsformsStrings.Control, 
-    Data, 
-    X, 
-    Y, 
-    State, 
-    Effect, 
-    Shift
-  ]
-  type Container_BeforeDropOrPaste_ArgNames = js.Tuple8[
-    Cancel, 
-    typings.activexDashMsforms.activexDashMsformsStrings.Control, 
-    Action, 
-    Data, 
-    X, 
-    Y, 
-    Effect, 
-    Shift
-  ]
+  type Container_BeforeDragOver_ArgNames = js.Tuple8[Cancel, Control, Data, X, Y, State, Effect, Shift]
+  type Container_BeforeDropOrPaste_ArgNames = js.Tuple8[Cancel, Control, Action, Data, X, Y, Effect, Shift]
   type Container_Scroll_ArgNames = js.Tuple6[ActionX, ActionY, RequestDx, RequestDy, ActualDx, ActualDy]
   type Control_BeforeDragOver_ArgNames = js.Tuple7[Cancel, Data, X, Y, DragState, Effect, Shift]
   type Control_BeforeDropOrPaste_ArgNames = js.Tuple7[Cancel, Action, Data, X, Y, Effect, Shift]
   type Error_ArgNames = js.Tuple7[Number, Description, SCode, Source, HelpFile, HelpContext, CancelDisplay]
-  type MultiPage_BeforeDragOver_ArgNames = js.Tuple9[
-    Index, 
-    Cancel, 
-    typings.activexDashMsforms.activexDashMsformsStrings.Control, 
-    Data, 
-    X, 
-    Y, 
-    State, 
-    Effect, 
-    Shift
-  ]
-  type MultiPage_BeforeDropOrPaste_ArgNames = js.Tuple9[
-    Index, 
-    Cancel, 
-    typings.activexDashMsforms.activexDashMsformsStrings.Control, 
-    Action, 
-    Data, 
-    X, 
-    Y, 
-    Effect, 
-    Shift
-  ]
+  type MultiPage_BeforeDragOver_ArgNames = js.Tuple9[Index, Cancel, Control, Data, X, Y, State, Effect, Shift]
+  type MultiPage_BeforeDropOrPaste_ArgNames = js.Tuple9[Index, Cancel, Control, Action, Data, X, Y, Effect, Shift]
   type MultiPage_Error_ArgNames = js.Tuple8[Index, Number, Description, SCode, Source, HelpFile, HelpContext, CancelDisplay]
   type MultiPage_Scroll_ArgNames = js.Tuple7[Index, ActionX, ActionY, RequestDx, RequestDy, ActualDx, ActualDy]
   type TabStrip_BeforeDragOver_ArgNames = js.Tuple8[Index, Cancel, Data, X, Y, DragState, Effect, Shift]

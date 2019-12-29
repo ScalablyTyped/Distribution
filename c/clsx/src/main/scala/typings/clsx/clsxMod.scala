@@ -1,9 +1,6 @@
 package typings.clsx
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.clsx.clsxMod.ClassArray
-import typings.clsx.clsxMod.ClassDictionary
-import typings.clsx.clsxMod.ClassValue
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

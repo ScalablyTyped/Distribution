@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("firebase", "firestore.QuerySnapshot")
 @js.native
-class QuerySnapshot protected () extends js.Object {
+class QuerySnapshot[T] protected () extends js.Object {
   /** An array of all the documents in the `QuerySnapshot`. */
-  val docs: js.Array[QueryDocumentSnapshot] = js.native
+  val docs: js.Array[QueryDocumentSnapshot[T]] = js.native
   /** True if there are no documents in the `QuerySnapshot`. */
   val empty: Boolean = js.native
   /**
@@ -20,7 +20,7 @@ class QuerySnapshot protected () extends js.Object {
     * The query on which you called `get` or `onSnapshot` in order to get this
     * `QuerySnapshot`.
     */
-  val query: Query = js.native
+  val query: Query[T] = js.native
   /** The number of documents in the `QuerySnapshot`. */
   val size: Double = js.native
   /**
@@ -31,8 +31,8 @@ class QuerySnapshot protected () extends js.Object {
     * changes (i.e. only `DocumentSnapshot.metadata` changed) should trigger
     * snapshot events.
     */
-  def docChanges(): js.Array[DocumentChange] = js.native
-  def docChanges(options: SnapshotListenOptions): js.Array[DocumentChange] = js.native
+  def docChanges(): js.Array[DocumentChange[T]] = js.native
+  def docChanges(options: SnapshotListenOptions): js.Array[DocumentChange[T]] = js.native
   /**
     * Enumerates all of the documents in the `QuerySnapshot`.
     *
@@ -40,14 +40,14 @@ class QuerySnapshot protected () extends js.Object {
     * each document in the snapshot.
     * @param thisArg The `this` binding for the callback.
     */
-  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot, Unit]): Unit = js.native
-  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot, Unit], thisArg: js.Any): Unit = js.native
+  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit]): Unit = js.native
+  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit], thisArg: js.Any): Unit = js.native
   /**
     * Returns true if this `QuerySnapshot` is equal to the provided one.
     *
     * @param other The `QuerySnapshot` to compare against.
     * @return true if this `QuerySnapshot` is equal to the provided one.
     */
-  def isEqual(other: QuerySnapshot): Boolean = js.native
+  def isEqual(other: QuerySnapshot[T]): Boolean = js.native
 }
 

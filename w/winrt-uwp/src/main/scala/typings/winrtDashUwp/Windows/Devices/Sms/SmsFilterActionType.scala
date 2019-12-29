@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsFilterActionType.accept
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsFilterActionType.acceptImmediately
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsFilterActionType.drop
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsFilterActionType.peek
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

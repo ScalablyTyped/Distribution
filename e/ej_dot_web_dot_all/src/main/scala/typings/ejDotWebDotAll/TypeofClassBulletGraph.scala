@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassBulletGraph
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, BulletGraph]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), BulletGraph] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), BulletGraph]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, BulletGraph] {
   var Locale: js.Any = js.native
   var fn: BulletGraph = js.native
 }

@@ -1,10 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.CellPaddingLocation.bottom
-import typings.officeDashJs.Word.CellPaddingLocation.left
-import typings.officeDashJs.Word.CellPaddingLocation.right
-import typings.officeDashJs.Word.CellPaddingLocation.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

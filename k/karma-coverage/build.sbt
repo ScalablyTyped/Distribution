@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "karma-coverage"
-version := "1.1-dt-20190524Z-65d195"
+version := "1.1-dt-20190524Z-b01c96"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "istanbul" % "v0.4.0-dt-20190322Z-a3a595",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "istanbul" % "v0.4.0-dt-20190322Z-67ca7b",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

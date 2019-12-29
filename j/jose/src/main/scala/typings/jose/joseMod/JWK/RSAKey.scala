@@ -1,8 +1,8 @@
 package typings.jose.joseMod.JWK
 
+import typings.jose.joseBooleans.`false`
 import typings.jose.joseMod.JWKRSAKey
 import typings.jose.joseMod.asymmetricKeyObjectTypes
-import typings.jose.joseNumbers.`false`
 import typings.jose.joseStrings.RSA
 import scala.scalajs.js
 import scala.scalajs.js.`|`

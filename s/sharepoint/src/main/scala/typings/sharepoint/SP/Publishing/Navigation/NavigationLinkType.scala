@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.Publishing.Navigation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.friendlyUrl
-import typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.root
-import typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.simpleLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.TrainLanguageModelConstants.WordTypeToAdd
-import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.ALL
-import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.USER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.WebhookState.WEBHOOK_STATE_ENABLED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.WebhookState.WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.WebhookState.WEBHOOK_STATE_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

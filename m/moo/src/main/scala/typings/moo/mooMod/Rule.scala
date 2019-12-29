@@ -1,6 +1,6 @@
 package typings.moo.mooMod
 
-import typings.moo.mooNumbers.`true`
+import typings.moo.mooBooleans.`true`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

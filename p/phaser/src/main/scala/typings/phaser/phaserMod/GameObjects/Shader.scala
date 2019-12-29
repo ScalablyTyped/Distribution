@@ -1,6 +1,7 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Display.BaseShader
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +62,7 @@ class Shader protected ()
     * @param textureData Additional texture data if you want to create shader with none NPOT textures.
     */
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     key: String,
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],
@@ -71,7 +72,7 @@ class Shader protected ()
     textureData: js.UndefOr[js.Any]
   ) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     key: BaseShader,
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],

@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextDirection.LEFT_TO_RIGHT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextDirection.RIGHT_TO_LEFT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

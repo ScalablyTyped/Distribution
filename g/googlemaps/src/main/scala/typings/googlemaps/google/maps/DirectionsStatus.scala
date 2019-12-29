@@ -1,14 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.DirectionsStatus.INVALID_REQUEST
-import typings.googlemaps.google.maps.DirectionsStatus.MAX_WAYPOINTS_EXCEEDED
-import typings.googlemaps.google.maps.DirectionsStatus.NOT_FOUND
-import typings.googlemaps.google.maps.DirectionsStatus.OK
-import typings.googlemaps.google.maps.DirectionsStatus.OVER_QUERY_LIMIT
-import typings.googlemaps.google.maps.DirectionsStatus.REQUEST_DENIED
-import typings.googlemaps.google.maps.DirectionsStatus.UNKNOWN_ERROR
-import typings.googlemaps.google.maps.DirectionsStatus.ZERO_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

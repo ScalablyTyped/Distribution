@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.Average
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.Count
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.Custom
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.FalseCount
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.Maximum
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.Minimum
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.Sum
-import typings.ejDotWebDotAll.ej.Grid.SummaryType.TrueCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

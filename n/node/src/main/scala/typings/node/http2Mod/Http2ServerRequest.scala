@@ -17,20 +17,20 @@ class Http2ServerRequest protected () extends Readable {
     stream: ServerHttp2Stream,
     headers: IncomingHttpHeaders,
     options: ReadableOptions,
-    rawHeaders: js.Array[java.lang.String]
+    rawHeaders: js.Array[String]
   ) = this()
   val aborted: Boolean = js.native
-  val authority: java.lang.String = js.native
+  val authority: String = js.native
   val headers: IncomingHttpHeaders = js.native
-  val httpVersion: java.lang.String = js.native
-  val method: java.lang.String = js.native
-  val rawHeaders: js.Array[java.lang.String] = js.native
-  val rawTrailers: js.Array[java.lang.String] = js.native
-  val scheme: java.lang.String = js.native
+  val httpVersion: String = js.native
+  val method: String = js.native
+  val rawHeaders: js.Array[String] = js.native
+  val rawTrailers: js.Array[String] = js.native
+  val scheme: String = js.native
   val socket: Socket | TLSSocket = js.native
   val stream: ServerHttp2Stream = js.native
   val trailers: IncomingHttpHeaders = js.native
-  val url: java.lang.String = js.native
+  val url: String = js.native
   @JSName("addListener")
   def addListener_aborted(
     event: typings.node.nodeStrings.aborted,
@@ -39,7 +39,7 @@ class Http2ServerRequest protected () extends Readable {
   @JSName("emit")
   def emit_aborted(event: typings.node.nodeStrings.aborted, hadError: Boolean, code: Double): Boolean = js.native
   @JSName("emit")
-  def emit_data(event: data, chunk: java.lang.String): Boolean = js.native
+  def emit_data(event: data, chunk: String): Boolean = js.native
   @JSName("emit")
   def emit_data(event: data, chunk: Buffer): Boolean = js.native
   @JSName("on")

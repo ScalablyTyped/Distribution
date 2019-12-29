@@ -1,6 +1,5 @@
 package typings.parchment
 
-import typings.parchment.distSrcBlotScrollMod.ScrollBlot
 import typings.parchment.distSrcRegistryMod.Scope
 import typings.std.HTMLDivElement
 import typings.std.MutationObserver

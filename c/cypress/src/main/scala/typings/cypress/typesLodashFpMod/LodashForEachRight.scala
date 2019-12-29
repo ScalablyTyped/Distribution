@@ -19,7 +19,7 @@ trait LodashForEachRight extends js.Object {
   def apply[T](iteratee: js.Function1[/* value */ T, _], collection: js.Array[T]): js.Array[T] = js.native
   def apply[T](iteratee: js.Function1[/* value */ T, _], collection: List[T]): List[T] = js.native
   def apply[T /* <: js.Object */](iteratee: __): LodashForEachRight6x2[T] = js.native
-  def apply[T /* <: js.Object */](iteratee: __, collection: T): LodashForEachRight3x2[T] = js.native
+  def apply[T /* <: js.Object */](iteratee: __, collection: T): LodashForEachRight6x2[T] = js.native
   def apply[T](iteratee: __, collection: js.Array[T]): LodashForEachRight1x2[T] = js.native
   def apply[T](iteratee: __, collection: List[T]): LodashForEachRight2x2[T] = js.native
 }

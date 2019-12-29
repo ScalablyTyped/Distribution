@@ -1,12 +1,6 @@
 package typings.expo.buildARMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildARMod.HitTestResultTypes.ExistingPlane
-import typings.expo.buildARMod.HitTestResultTypes.ExistingPlaneUsingExtent
-import typings.expo.buildARMod.HitTestResultTypes.ExistingPlaneUsingGeometry
-import typings.expo.buildARMod.HitTestResultTypes.FeaturePoint
-import typings.expo.buildARMod.HitTestResultTypes.HorizontalPlane
-import typings.expo.buildARMod.HitTestResultTypes.VerticalPlane
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

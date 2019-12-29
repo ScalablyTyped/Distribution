@@ -43,10 +43,10 @@ import scala.scalajs.js.annotation._
 
 object stripeStrings {
   @js.native
-  sealed trait `*` extends EventType
+  sealed trait `American Express` extends js.Object
   
   @js.native
-  sealed trait `American Express` extends js.Object
+  sealed trait Asterisk extends EventType
   
   @js.native
   sealed trait `Diners Club` extends js.Object
@@ -105,22 +105,22 @@ object stripeStrings {
   sealed trait account extends js.Object
   
   @js.native
-  sealed trait accountDOTapplicationDOTauthorized extends EventType
+  sealed trait accountDotapplicationDotauthorized extends EventType
   
   @js.native
-  sealed trait accountDOTapplicationDOTdeauthorized extends EventType
+  sealed trait accountDotapplicationDotdeauthorized extends EventType
   
   @js.native
-  sealed trait accountDOTexternal_accountDOTcreated extends EventType
+  sealed trait accountDotexternal_accountDotcreated extends EventType
   
   @js.native
-  sealed trait accountDOTexternal_accountDOTdeleted extends EventType
+  sealed trait accountDotexternal_accountDotdeleted extends EventType
   
   @js.native
-  sealed trait accountDOTexternal_accountDOTupdated extends EventType
+  sealed trait accountDotexternal_accountDotupdated extends EventType
   
   @js.native
-  sealed trait accountDOTupdated extends EventType
+  sealed trait accountDotupdated extends EventType
   
   @js.native
   sealed trait account_compliance_disabled extends js.Object
@@ -180,19 +180,19 @@ object stripeStrings {
   sealed trait application extends js.Object
   
   @js.native
-  sealed trait `application/octet-stream` extends js.Object
+  sealed trait `applicationSlashoctet-stream` extends js.Object
   
   @js.native
   sealed trait application_fee extends js.Object
   
   @js.native
-  sealed trait application_feeDOTcreated extends EventType
+  sealed trait application_feeDotcreated extends EventType
   
   @js.native
-  sealed trait application_feeDOTrefundDOTupdated extends EventType
+  sealed trait application_feeDotrefundDotupdated extends EventType
   
   @js.native
-  sealed trait application_feeDOTrefunded extends EventType
+  sealed trait application_feeDotrefunded extends EventType
   
   @js.native
   sealed trait application_fee_refund extends js.Object
@@ -233,7 +233,7 @@ object stripeStrings {
   sealed trait available extends js.Object
   
   @js.native
-  sealed trait balanceDOTavailable extends EventType
+  sealed trait balanceDotavailable extends EventType
   
   @js.native
   sealed trait bancontact extends js.Object
@@ -281,7 +281,7 @@ object stripeStrings {
        with SubscriptionStatus
   
   @js.native
-  sealed trait capabilityDOTupdated extends EventType
+  sealed trait capabilityDotupdated extends EventType
   
   @js.native
   sealed trait capture extends TransactionType
@@ -317,43 +317,43 @@ object stripeStrings {
   sealed trait charge extends js.Object
   
   @js.native
-  sealed trait chargeDOTcaptured extends EventType
+  sealed trait chargeDotcaptured extends EventType
   
   @js.native
-  sealed trait chargeDOTdisputeDOTclosed extends EventType
+  sealed trait chargeDotdisputeDotclosed extends EventType
   
   @js.native
-  sealed trait chargeDOTdisputeDOTcreated extends EventType
+  sealed trait chargeDotdisputeDotcreated extends EventType
   
   @js.native
-  sealed trait chargeDOTdisputeDOTfunds_reinstated extends EventType
+  sealed trait chargeDotdisputeDotfunds_reinstated extends EventType
   
   @js.native
-  sealed trait chargeDOTdisputeDOTfunds_withdrawn extends EventType
+  sealed trait chargeDotdisputeDotfunds_withdrawn extends EventType
   
   @js.native
-  sealed trait chargeDOTdisputeDOTupdated extends EventType
+  sealed trait chargeDotdisputeDotupdated extends EventType
   
   @js.native
-  sealed trait chargeDOTexpired extends EventType
+  sealed trait chargeDotexpired extends EventType
   
   @js.native
-  sealed trait chargeDOTfailed extends EventType
+  sealed trait chargeDotfailed extends EventType
   
   @js.native
-  sealed trait chargeDOTpending extends EventType
+  sealed trait chargeDotpending extends EventType
   
   @js.native
-  sealed trait chargeDOTrefundDOTupdated extends EventType
+  sealed trait chargeDotrefundDotupdated extends EventType
   
   @js.native
-  sealed trait chargeDOTrefunded extends EventType
+  sealed trait chargeDotrefunded extends EventType
   
   @js.native
-  sealed trait chargeDOTsucceeded extends EventType
+  sealed trait chargeDotsucceeded extends EventType
   
   @js.native
-  sealed trait chargeDOTupdated extends EventType
+  sealed trait chargeDotupdated extends EventType
   
   @js.native
   sealed trait charge_automatically extends SubscriptionBilling
@@ -365,7 +365,7 @@ object stripeStrings {
   sealed trait chargeable extends js.Object
   
   @js.native
-  sealed trait checkoutDOTsessionDOTcompleted extends EventType
+  sealed trait checkoutDotsessionDotcompleted extends EventType
   
   @js.native
   sealed trait chip extends AuthorizationMethod
@@ -392,13 +392,13 @@ object stripeStrings {
   sealed trait coupon extends js.Object
   
   @js.native
-  sealed trait couponDOTcreated extends EventType
+  sealed trait couponDotcreated extends EventType
   
   @js.native
-  sealed trait couponDOTdeleted extends EventType
+  sealed trait couponDotdeleted extends EventType
   
   @js.native
-  sealed trait couponDOTupdated extends EventType
+  sealed trait couponDotupdated extends EventType
   
   @js.native
   sealed trait created extends OrderStatus
@@ -413,13 +413,13 @@ object stripeStrings {
   sealed trait credit_note extends CustomerBalanceTransactionType
   
   @js.native
-  sealed trait credit_noteDOTcreated extends EventType
+  sealed trait credit_noteDotcreated extends EventType
   
   @js.native
-  sealed trait credit_noteDOTupdated extends EventType
+  sealed trait credit_noteDotupdated extends EventType
   
   @js.native
-  sealed trait credit_noteDOTvoided extends EventType
+  sealed trait credit_noteDotvoided extends EventType
   
   @js.native
   sealed trait custom extends js.Object
@@ -428,55 +428,55 @@ object stripeStrings {
   sealed trait customer extends js.Object
   
   @js.native
-  sealed trait customerDOTcreated extends EventType
+  sealed trait customerDotcreated extends EventType
   
   @js.native
-  sealed trait customerDOTdeleted extends EventType
+  sealed trait customerDotdeleted extends EventType
   
   @js.native
-  sealed trait customerDOTdiscountDOTcreated extends EventType
+  sealed trait customerDotdiscountDotcreated extends EventType
   
   @js.native
-  sealed trait customerDOTdiscountDOTdeleted extends EventType
+  sealed trait customerDotdiscountDotdeleted extends EventType
   
   @js.native
-  sealed trait customerDOTdiscountDOTupdated extends EventType
+  sealed trait customerDotdiscountDotupdated extends EventType
   
   @js.native
-  sealed trait customerDOTsourceDOTcreated extends EventType
+  sealed trait customerDotsourceDotcreated extends EventType
   
   @js.native
-  sealed trait customerDOTsourceDOTdeleted extends EventType
+  sealed trait customerDotsourceDotdeleted extends EventType
   
   @js.native
-  sealed trait customerDOTsourceDOTexpiring extends EventType
+  sealed trait customerDotsourceDotexpiring extends EventType
   
   @js.native
-  sealed trait customerDOTsourceDOTupdated extends EventType
+  sealed trait customerDotsourceDotupdated extends EventType
   
   @js.native
-  sealed trait customerDOTsubscriptionDOTcreated extends EventType
+  sealed trait customerDotsubscriptionDotcreated extends EventType
   
   @js.native
-  sealed trait customerDOTsubscriptionDOTdeleted extends EventType
+  sealed trait customerDotsubscriptionDotdeleted extends EventType
   
   @js.native
-  sealed trait customerDOTsubscriptionDOTtrial_will_end extends EventType
+  sealed trait customerDotsubscriptionDottrial_will_end extends EventType
   
   @js.native
-  sealed trait customerDOTsubscriptionDOTupdated extends EventType
+  sealed trait customerDotsubscriptionDotupdated extends EventType
   
   @js.native
-  sealed trait customerDOTtax_idDOTcreated extends EventType
+  sealed trait customerDottax_idDotcreated extends EventType
   
   @js.native
-  sealed trait customerDOTtax_idDOTdeleted extends EventType
+  sealed trait customerDottax_idDotdeleted extends EventType
   
   @js.native
-  sealed trait customerDOTtax_idDOTupdated extends EventType
+  sealed trait customerDottax_idDotupdated extends EventType
   
   @js.native
-  sealed trait customerDOTupdated extends EventType
+  sealed trait customerDotupdated extends EventType
   
   @js.native
   sealed trait customer_balance_transaction extends js.Object
@@ -614,7 +614,7 @@ object stripeStrings {
   sealed trait file extends js.Object
   
   @js.native
-  sealed trait fileDOTcreated extends EventType
+  sealed trait fileDotcreated extends EventType
   
   @js.native
   sealed trait file_link extends js.Object
@@ -729,37 +729,37 @@ object stripeStrings {
   sealed trait invoice extends js.Object
   
   @js.native
-  sealed trait invoiceDOTcreated extends EventType
+  sealed trait invoiceDotcreated extends EventType
   
   @js.native
-  sealed trait invoiceDOTdeleted extends EventType
+  sealed trait invoiceDotdeleted extends EventType
   
   @js.native
-  sealed trait invoiceDOTfinalized extends EventType
+  sealed trait invoiceDotfinalized extends EventType
   
   @js.native
-  sealed trait invoiceDOTmarked_uncollectible extends EventType
+  sealed trait invoiceDotmarked_uncollectible extends EventType
   
   @js.native
-  sealed trait invoiceDOTpayment_action_required extends EventType
+  sealed trait invoiceDotpayment_action_required extends EventType
   
   @js.native
-  sealed trait invoiceDOTpayment_failed extends EventType
+  sealed trait invoiceDotpayment_failed extends EventType
   
   @js.native
-  sealed trait invoiceDOTpayment_succeeded extends EventType
+  sealed trait invoiceDotpayment_succeeded extends EventType
   
   @js.native
-  sealed trait invoiceDOTsent extends EventType
+  sealed trait invoiceDotsent extends EventType
   
   @js.native
-  sealed trait invoiceDOTupcoming extends EventType
+  sealed trait invoiceDotupcoming extends EventType
   
   @js.native
-  sealed trait invoiceDOTupdated extends EventType
+  sealed trait invoiceDotupdated extends EventType
   
   @js.native
-  sealed trait invoiceDOTvoided extends EventType
+  sealed trait invoiceDotvoided extends EventType
   
   @js.native
   sealed trait invoice_too_large extends CustomerBalanceTransactionType
@@ -771,13 +771,13 @@ object stripeStrings {
   sealed trait invoiceitem extends js.Object
   
   @js.native
-  sealed trait invoiceitemDOTcreated extends EventType
+  sealed trait invoiceitemDotcreated extends EventType
   
   @js.native
-  sealed trait invoiceitemDOTdeleted extends EventType
+  sealed trait invoiceitemDotdeleted extends EventType
   
   @js.native
-  sealed trait invoiceitemDOTupdated extends EventType
+  sealed trait invoiceitemDotupdated extends EventType
   
   @js.native
   sealed trait issued extends js.Object
@@ -786,61 +786,61 @@ object stripeStrings {
   sealed trait issuer_declined extends js.Object
   
   @js.native
-  sealed trait issuingDOTauthorization extends js.Object
+  sealed trait issuingDotauthorization extends js.Object
   
   @js.native
-  sealed trait issuingDOTcard extends js.Object
+  sealed trait issuingDotcard extends js.Object
   
   @js.native
-  sealed trait issuingDOTcard_details extends js.Object
+  sealed trait issuingDotcard_details extends js.Object
   
   @js.native
-  sealed trait issuingDOTcardholder extends js.Object
+  sealed trait issuingDotcardholder extends js.Object
   
   @js.native
-  sealed trait issuingDOTdispute extends js.Object
+  sealed trait issuingDotdispute extends js.Object
   
   @js.native
-  sealed trait issuingDOTtransaction extends js.Object
+  sealed trait issuingDottransaction extends js.Object
   
   @js.native
-  sealed trait issuing_authorizationDOTcreated extends EventType
+  sealed trait issuing_authorizationDotcreated extends EventType
   
   @js.native
-  sealed trait issuing_authorizationDOTrequest extends EventType
+  sealed trait issuing_authorizationDotrequest extends EventType
   
   @js.native
-  sealed trait issuing_authorizationDOTupdated extends EventType
+  sealed trait issuing_authorizationDotupdated extends EventType
   
   @js.native
-  sealed trait issuing_cardDOTcreated extends EventType
+  sealed trait issuing_cardDotcreated extends EventType
   
   @js.native
-  sealed trait issuing_cardDOTupdated extends EventType
+  sealed trait issuing_cardDotupdated extends EventType
   
   @js.native
-  sealed trait issuing_cardholderDOTcreated extends EventType
+  sealed trait issuing_cardholderDotcreated extends EventType
   
   @js.native
-  sealed trait issuing_cardholderDOTupdated extends EventType
+  sealed trait issuing_cardholderDotupdated extends EventType
   
   @js.native
-  sealed trait issuing_disputeDOTcreated extends EventType
+  sealed trait issuing_disputeDotcreated extends EventType
   
   @js.native
-  sealed trait issuing_disputeDOTupdated extends EventType
+  sealed trait issuing_disputeDotupdated extends EventType
   
   @js.native
-  sealed trait issuing_settlementDOTcreated extends EventType
+  sealed trait issuing_settlementDotcreated extends EventType
   
   @js.native
-  sealed trait issuing_settlementDOTupdated extends EventType
+  sealed trait issuing_settlementDotupdated extends EventType
   
   @js.native
-  sealed trait issuing_transactionDOTcreated extends EventType
+  sealed trait issuing_transactionDotcreated extends EventType
   
   @js.native
-  sealed trait issuing_transactionDOTupdated extends EventType
+  sealed trait issuing_transactionDotupdated extends EventType
   
   @js.native
   sealed trait it extends js.Object
@@ -899,7 +899,7 @@ object stripeStrings {
   sealed trait male extends js.Object
   
   @js.native
-  sealed trait mandateDOTupdated extends EventType
+  sealed trait mandateDotupdated extends EventType
   
   @js.native
   sealed trait manual extends PaymentIntentDataCaptureMethodOptions
@@ -1013,16 +1013,16 @@ object stripeStrings {
   sealed trait order extends js.Object
   
   @js.native
-  sealed trait orderDOTcreated extends EventType
+  sealed trait orderDotcreated extends EventType
   
   @js.native
-  sealed trait orderDOTpayment_failed extends EventType
+  sealed trait orderDotpayment_failed extends EventType
   
   @js.native
-  sealed trait orderDOTpayment_succeeded extends EventType
+  sealed trait orderDotpayment_succeeded extends EventType
   
   @js.native
-  sealed trait orderDOTupdated extends EventType
+  sealed trait orderDotupdated extends EventType
   
   @js.native
   sealed trait order_change extends CreditNoteReason
@@ -1031,7 +1031,7 @@ object stripeStrings {
   sealed trait order_item extends js.Object
   
   @js.native
-  sealed trait order_returnDOTcreated extends EventType
+  sealed trait order_returnDotcreated extends EventType
   
   @js.native
   sealed trait other extends IssuingDisputeReason
@@ -1063,52 +1063,52 @@ object stripeStrings {
   sealed trait payment_intent extends js.Object
   
   @js.native
-  sealed trait payment_intentDOTamount_capturable_updated extends EventType
+  sealed trait payment_intentDotamount_capturable_updated extends EventType
   
   @js.native
-  sealed trait payment_intentDOTcanceled extends EventType
+  sealed trait payment_intentDotcanceled extends EventType
   
   @js.native
-  sealed trait payment_intentDOTcreated extends EventType
+  sealed trait payment_intentDotcreated extends EventType
   
   @js.native
-  sealed trait payment_intentDOTpayment_failed extends EventType
+  sealed trait payment_intentDotpayment_failed extends EventType
   
   @js.native
-  sealed trait payment_intentDOTsucceeded extends EventType
+  sealed trait payment_intentDotsucceeded extends EventType
   
   @js.native
   sealed trait payment_method extends js.Object
   
   @js.native
-  sealed trait payment_methodDOTattached extends EventType
+  sealed trait payment_methodDotattached extends EventType
   
   @js.native
-  sealed trait payment_methodDOTcard_automatically_updated extends EventType
+  sealed trait payment_methodDotcard_automatically_updated extends EventType
   
   @js.native
-  sealed trait payment_methodDOTdetached extends EventType
+  sealed trait payment_methodDotdetached extends EventType
   
   @js.native
-  sealed trait payment_methodDOTupdated extends EventType
+  sealed trait payment_methodDotupdated extends EventType
   
   @js.native
   sealed trait payout extends js.Object
   
   @js.native
-  sealed trait payoutDOTcanceled extends EventType
+  sealed trait payoutDotcanceled extends EventType
   
   @js.native
-  sealed trait payoutDOTcreated extends EventType
+  sealed trait payoutDotcreated extends EventType
   
   @js.native
-  sealed trait payoutDOTfailed extends EventType
+  sealed trait payoutDotfailed extends EventType
   
   @js.native
-  sealed trait payoutDOTpaid extends EventType
+  sealed trait payoutDotpaid extends EventType
   
   @js.native
-  sealed trait payoutDOTupdated extends EventType
+  sealed trait payoutDotupdated extends EventType
   
   @js.native
   sealed trait payout_failure extends js.Object
@@ -1131,13 +1131,13 @@ object stripeStrings {
   sealed trait person extends js.Object
   
   @js.native
-  sealed trait personDOTcreated extends EventType
+  sealed trait personDotcreated extends EventType
   
   @js.native
-  sealed trait personDOTdeleted extends EventType
+  sealed trait personDotdeleted extends EventType
   
   @js.native
-  sealed trait personDOTupdated extends EventType
+  sealed trait personDotupdated extends EventType
   
   @js.native
   sealed trait physical extends IssuingCardType
@@ -1149,13 +1149,13 @@ object stripeStrings {
   sealed trait plan extends js.Object
   
   @js.native
-  sealed trait planDOTcreated extends EventType
+  sealed trait planDotcreated extends EventType
   
   @js.native
-  sealed trait planDOTdeleted extends EventType
+  sealed trait planDotdeleted extends EventType
   
   @js.native
-  sealed trait planDOTupdated extends EventType
+  sealed trait planDotupdated extends EventType
   
   @js.native
   sealed trait png extends js.Object
@@ -1179,13 +1179,13 @@ object stripeStrings {
   sealed trait product extends js.Object
   
   @js.native
-  sealed trait productDOTcreated extends EventType
+  sealed trait productDotcreated extends EventType
   
   @js.native
-  sealed trait productDOTdeleted extends EventType
+  sealed trait productDotdeleted extends EventType
   
   @js.native
-  sealed trait productDOTupdated extends EventType
+  sealed trait productDotupdated extends EventType
   
   @js.native
   sealed trait product_not_received extends js.Object
@@ -1203,10 +1203,10 @@ object stripeStrings {
   sealed trait publishable extends js.Object
   
   @js.native
-  sealed trait radarDOTearly_fraud_warningDOTcreated extends EventType
+  sealed trait radarDotearly_fraud_warningDotcreated extends EventType
   
   @js.native
-  sealed trait radarDOTearly_fraud_warningDOTupdated extends EventType
+  sealed trait radarDotearly_fraud_warningDotupdated extends EventType
   
   @js.native
   sealed trait range extends js.Object
@@ -1215,13 +1215,13 @@ object stripeStrings {
   sealed trait receiver extends js.Object
   
   @js.native
-  sealed trait recipientDOTcreated extends EventType
+  sealed trait recipientDotcreated extends EventType
   
   @js.native
-  sealed trait recipientDOTdeleted extends EventType
+  sealed trait recipientDotdeleted extends EventType
   
   @js.native
-  sealed trait recipientDOTupdated extends EventType
+  sealed trait recipientDotupdated extends EventType
   
   @js.native
   sealed trait redirect extends js.Object
@@ -1248,19 +1248,19 @@ object stripeStrings {
   sealed trait refused extends js.Object
   
   @js.native
-  sealed trait rejectedDOTlisted extends js.Object
+  sealed trait rejectedDotlisted extends js.Object
   
   @js.native
   sealed trait repeating extends js.Object
   
   @js.native
-  sealed trait reportingDOTreport_runDOTfailed extends EventType
+  sealed trait reportingDotreport_runDotfailed extends EventType
   
   @js.native
-  sealed trait reportingDOTreport_runDOTsucceeded extends EventType
+  sealed trait reportingDotreport_runDotsucceeded extends EventType
   
   @js.native
-  sealed trait reportingDOTreport_typeDOTupdated extends EventType
+  sealed trait reportingDotreport_typeDotupdated extends EventType
   
   @js.native
   sealed trait request extends js.Object
@@ -1313,10 +1313,10 @@ object stripeStrings {
   sealed trait review extends js.Object
   
   @js.native
-  sealed trait reviewDOTclosed extends EventType
+  sealed trait reviewDotclosed extends EventType
   
   @js.native
-  sealed trait reviewDOTopened extends EventType
+  sealed trait reviewDotopened extends EventType
   
   @js.native
   sealed trait rule extends js.Object
@@ -1355,16 +1355,16 @@ object stripeStrings {
   sealed trait setup_intent extends js.Object
   
   @js.native
-  sealed trait setup_intentDOTcanceled extends EventType
+  sealed trait setup_intentDotcanceled extends EventType
   
   @js.native
-  sealed trait setup_intentDOTcreated extends EventType
+  sealed trait setup_intentDotcreated extends EventType
   
   @js.native
-  sealed trait setup_intentDOTsetup_failed extends EventType
+  sealed trait setup_intentDotsetup_failed extends EventType
   
   @js.native
-  sealed trait setup_intentDOTsucceeded extends EventType
+  sealed trait setup_intentDotsucceeded extends EventType
   
   @js.native
   sealed trait shipped extends js.Object
@@ -1373,7 +1373,7 @@ object stripeStrings {
   sealed trait shipping extends js.Object
   
   @js.native
-  sealed trait sigmaDOTscheduled_query_runDOTcreated extends EventType
+  sealed trait sigmaDotscheduled_query_runDotcreated extends EventType
   
   @js.native
   sealed trait single_use extends js.Object
@@ -1382,13 +1382,13 @@ object stripeStrings {
   sealed trait sku extends js.Object
   
   @js.native
-  sealed trait skuDOTcreated extends EventType
+  sealed trait skuDotcreated extends EventType
   
   @js.native
-  sealed trait skuDOTdeleted extends EventType
+  sealed trait skuDotdeleted extends EventType
   
   @js.native
-  sealed trait skuDOTupdated extends EventType
+  sealed trait skuDotupdated extends EventType
   
   @js.native
   sealed trait sofort extends js.Object
@@ -1397,25 +1397,25 @@ object stripeStrings {
   sealed trait source extends js.Object
   
   @js.native
-  sealed trait sourceDOTcanceled extends EventType
+  sealed trait sourceDotcanceled extends EventType
   
   @js.native
-  sealed trait sourceDOTchargeable extends EventType
+  sealed trait sourceDotchargeable extends EventType
   
   @js.native
-  sealed trait sourceDOTfailed extends EventType
+  sealed trait sourceDotfailed extends EventType
   
   @js.native
-  sealed trait sourceDOTmandate_notification extends EventType
+  sealed trait sourceDotmandate_notification extends EventType
   
   @js.native
-  sealed trait sourceDOTrefund_attributes_required extends EventType
+  sealed trait sourceDotrefund_attributes_required extends EventType
   
   @js.native
-  sealed trait sourceDOTtransactionDOTcreated extends EventType
+  sealed trait sourceDottransactionDotcreated extends EventType
   
   @js.native
-  sealed trait sourceDOTtransactionDOTupdated extends EventType
+  sealed trait sourceDottransactionDotupdated extends EventType
   
   @js.native
   sealed trait spending_limits extends js.Object
@@ -1451,25 +1451,25 @@ object stripeStrings {
   sealed trait subscription_item extends js.Object
   
   @js.native
-  sealed trait subscription_scheduleDOTaborted extends EventType
+  sealed trait subscription_scheduleDotaborted extends EventType
   
   @js.native
-  sealed trait subscription_scheduleDOTcanceled extends EventType
+  sealed trait subscription_scheduleDotcanceled extends EventType
   
   @js.native
-  sealed trait subscription_scheduleDOTcompleted extends EventType
+  sealed trait subscription_scheduleDotcompleted extends EventType
   
   @js.native
-  sealed trait subscription_scheduleDOTcreated extends EventType
+  sealed trait subscription_scheduleDotcreated extends EventType
   
   @js.native
-  sealed trait subscription_scheduleDOTexpiring extends EventType
+  sealed trait subscription_scheduleDotexpiring extends EventType
   
   @js.native
-  sealed trait subscription_scheduleDOTreleased extends EventType
+  sealed trait subscription_scheduleDotreleased extends EventType
   
   @js.native
-  sealed trait subscription_scheduleDOTupdated extends EventType
+  sealed trait subscription_scheduleDotupdated extends EventType
   
   @js.native
   sealed trait subscription_threshold extends js.Object
@@ -1508,10 +1508,10 @@ object stripeStrings {
   sealed trait tax_rate extends js.Object
   
   @js.native
-  sealed trait tax_rateDOTcreated extends EventType
+  sealed trait tax_rateDotcreated extends EventType
   
   @js.native
-  sealed trait tax_rateDOTupdated extends EventType
+  sealed trait tax_rateDotupdated extends EventType
   
   @js.native
   sealed trait terms_of_service extends js.Object
@@ -1535,34 +1535,34 @@ object stripeStrings {
   sealed trait topup extends js.Object
   
   @js.native
-  sealed trait topupDOTcreated extends EventType
+  sealed trait topupDotcreated extends EventType
   
   @js.native
-  sealed trait topupDOTfailed extends EventType
+  sealed trait topupDotfailed extends EventType
   
   @js.native
-  sealed trait topupDOTreversed extends EventType
+  sealed trait topupDotreversed extends EventType
   
   @js.native
-  sealed trait topupDOTsucceeded extends EventType
+  sealed trait topupDotsucceeded extends EventType
   
   @js.native
   sealed trait transfer extends js.Object
   
   @js.native
-  sealed trait transferDOTcreated extends EventType
+  sealed trait transferDotcreated extends EventType
   
   @js.native
-  sealed trait transferDOTfailed extends EventType
+  sealed trait transferDotfailed extends EventType
   
   @js.native
-  sealed trait transferDOTpaid extends EventType
+  sealed trait transferDotpaid extends EventType
   
   @js.native
-  sealed trait transferDOTreversed extends EventType
+  sealed trait transferDotreversed extends EventType
   
   @js.native
-  sealed trait transferDOTupdated extends EventType
+  sealed trait transferDotupdated extends EventType
   
   @js.native
   sealed trait transfer_reversal extends js.Object
@@ -1702,9 +1702,9 @@ object stripeStrings {
   sealed trait zh extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
   def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def `Diners Club`: `Diners Club` = "Diners Club".asInstanceOf[`Diners Club`]
   @scala.inline
@@ -1742,17 +1742,17 @@ object stripeStrings {
   @scala.inline
   def account: account = "account".asInstanceOf[account]
   @scala.inline
-  def accountDOTapplicationDOTauthorized: accountDOTapplicationDOTauthorized = "account.application.authorized".asInstanceOf[accountDOTapplicationDOTauthorized]
+  def accountDotapplicationDotauthorized: accountDotapplicationDotauthorized = "account.application.authorized".asInstanceOf[accountDotapplicationDotauthorized]
   @scala.inline
-  def accountDOTapplicationDOTdeauthorized: accountDOTapplicationDOTdeauthorized = "account.application.deauthorized".asInstanceOf[accountDOTapplicationDOTdeauthorized]
+  def accountDotapplicationDotdeauthorized: accountDotapplicationDotdeauthorized = "account.application.deauthorized".asInstanceOf[accountDotapplicationDotdeauthorized]
   @scala.inline
-  def accountDOTexternal_accountDOTcreated: accountDOTexternal_accountDOTcreated = "account.external_account.created".asInstanceOf[accountDOTexternal_accountDOTcreated]
+  def accountDotexternal_accountDotcreated: accountDotexternal_accountDotcreated = "account.external_account.created".asInstanceOf[accountDotexternal_accountDotcreated]
   @scala.inline
-  def accountDOTexternal_accountDOTdeleted: accountDOTexternal_accountDOTdeleted = "account.external_account.deleted".asInstanceOf[accountDOTexternal_accountDOTdeleted]
+  def accountDotexternal_accountDotdeleted: accountDotexternal_accountDotdeleted = "account.external_account.deleted".asInstanceOf[accountDotexternal_accountDotdeleted]
   @scala.inline
-  def accountDOTexternal_accountDOTupdated: accountDOTexternal_accountDOTupdated = "account.external_account.updated".asInstanceOf[accountDOTexternal_accountDOTupdated]
+  def accountDotexternal_accountDotupdated: accountDotexternal_accountDotupdated = "account.external_account.updated".asInstanceOf[accountDotexternal_accountDotupdated]
   @scala.inline
-  def accountDOTupdated: accountDOTupdated = "account.updated".asInstanceOf[accountDOTupdated]
+  def accountDotupdated: accountDotupdated = "account.updated".asInstanceOf[accountDotupdated]
   @scala.inline
   def account_compliance_disabled: account_compliance_disabled = "account_compliance_disabled".asInstanceOf[account_compliance_disabled]
   @scala.inline
@@ -1790,15 +1790,15 @@ object stripeStrings {
   @scala.inline
   def application: application = "application".asInstanceOf[application]
   @scala.inline
-  def `application/octet-stream`: `application/octet-stream` = "application/octet-stream".asInstanceOf[`application/octet-stream`]
+  def `applicationSlashoctet-stream`: `applicationSlashoctet-stream` = "application/octet-stream".asInstanceOf[`applicationSlashoctet-stream`]
   @scala.inline
   def application_fee: application_fee = "application_fee".asInstanceOf[application_fee]
   @scala.inline
-  def application_feeDOTcreated: application_feeDOTcreated = "application_fee.created".asInstanceOf[application_feeDOTcreated]
+  def application_feeDotcreated: application_feeDotcreated = "application_fee.created".asInstanceOf[application_feeDotcreated]
   @scala.inline
-  def application_feeDOTrefundDOTupdated: application_feeDOTrefundDOTupdated = "application_fee.refund.updated".asInstanceOf[application_feeDOTrefundDOTupdated]
+  def application_feeDotrefundDotupdated: application_feeDotrefundDotupdated = "application_fee.refund.updated".asInstanceOf[application_feeDotrefundDotupdated]
   @scala.inline
-  def application_feeDOTrefunded: application_feeDOTrefunded = "application_fee.refunded".asInstanceOf[application_feeDOTrefunded]
+  def application_feeDotrefunded: application_feeDotrefunded = "application_fee.refunded".asInstanceOf[application_feeDotrefunded]
   @scala.inline
   def application_fee_refund: application_fee_refund = "application_fee_refund".asInstanceOf[application_fee_refund]
   @scala.inline
@@ -1824,7 +1824,7 @@ object stripeStrings {
   @scala.inline
   def available: available = "available".asInstanceOf[available]
   @scala.inline
-  def balanceDOTavailable: balanceDOTavailable = "balance.available".asInstanceOf[balanceDOTavailable]
+  def balanceDotavailable: balanceDotavailable = "balance.available".asInstanceOf[balanceDotavailable]
   @scala.inline
   def bancontact: bancontact = "bancontact".asInstanceOf[bancontact]
   @scala.inline
@@ -1852,7 +1852,7 @@ object stripeStrings {
   @scala.inline
   def canceled: canceled = "canceled".asInstanceOf[canceled]
   @scala.inline
-  def capabilityDOTupdated: capabilityDOTupdated = "capability.updated".asInstanceOf[capabilityDOTupdated]
+  def capabilityDotupdated: capabilityDotupdated = "capability.updated".asInstanceOf[capabilityDotupdated]
   @scala.inline
   def capture: capture = "capture".asInstanceOf[capture]
   @scala.inline
@@ -1874,31 +1874,31 @@ object stripeStrings {
   @scala.inline
   def charge: charge = "charge".asInstanceOf[charge]
   @scala.inline
-  def chargeDOTcaptured: chargeDOTcaptured = "charge.captured".asInstanceOf[chargeDOTcaptured]
+  def chargeDotcaptured: chargeDotcaptured = "charge.captured".asInstanceOf[chargeDotcaptured]
   @scala.inline
-  def chargeDOTdisputeDOTclosed: chargeDOTdisputeDOTclosed = "charge.dispute.closed".asInstanceOf[chargeDOTdisputeDOTclosed]
+  def chargeDotdisputeDotclosed: chargeDotdisputeDotclosed = "charge.dispute.closed".asInstanceOf[chargeDotdisputeDotclosed]
   @scala.inline
-  def chargeDOTdisputeDOTcreated: chargeDOTdisputeDOTcreated = "charge.dispute.created".asInstanceOf[chargeDOTdisputeDOTcreated]
+  def chargeDotdisputeDotcreated: chargeDotdisputeDotcreated = "charge.dispute.created".asInstanceOf[chargeDotdisputeDotcreated]
   @scala.inline
-  def chargeDOTdisputeDOTfunds_reinstated: chargeDOTdisputeDOTfunds_reinstated = "charge.dispute.funds_reinstated".asInstanceOf[chargeDOTdisputeDOTfunds_reinstated]
+  def chargeDotdisputeDotfunds_reinstated: chargeDotdisputeDotfunds_reinstated = "charge.dispute.funds_reinstated".asInstanceOf[chargeDotdisputeDotfunds_reinstated]
   @scala.inline
-  def chargeDOTdisputeDOTfunds_withdrawn: chargeDOTdisputeDOTfunds_withdrawn = "charge.dispute.funds_withdrawn".asInstanceOf[chargeDOTdisputeDOTfunds_withdrawn]
+  def chargeDotdisputeDotfunds_withdrawn: chargeDotdisputeDotfunds_withdrawn = "charge.dispute.funds_withdrawn".asInstanceOf[chargeDotdisputeDotfunds_withdrawn]
   @scala.inline
-  def chargeDOTdisputeDOTupdated: chargeDOTdisputeDOTupdated = "charge.dispute.updated".asInstanceOf[chargeDOTdisputeDOTupdated]
+  def chargeDotdisputeDotupdated: chargeDotdisputeDotupdated = "charge.dispute.updated".asInstanceOf[chargeDotdisputeDotupdated]
   @scala.inline
-  def chargeDOTexpired: chargeDOTexpired = "charge.expired".asInstanceOf[chargeDOTexpired]
+  def chargeDotexpired: chargeDotexpired = "charge.expired".asInstanceOf[chargeDotexpired]
   @scala.inline
-  def chargeDOTfailed: chargeDOTfailed = "charge.failed".asInstanceOf[chargeDOTfailed]
+  def chargeDotfailed: chargeDotfailed = "charge.failed".asInstanceOf[chargeDotfailed]
   @scala.inline
-  def chargeDOTpending: chargeDOTpending = "charge.pending".asInstanceOf[chargeDOTpending]
+  def chargeDotpending: chargeDotpending = "charge.pending".asInstanceOf[chargeDotpending]
   @scala.inline
-  def chargeDOTrefundDOTupdated: chargeDOTrefundDOTupdated = "charge.refund.updated".asInstanceOf[chargeDOTrefundDOTupdated]
+  def chargeDotrefundDotupdated: chargeDotrefundDotupdated = "charge.refund.updated".asInstanceOf[chargeDotrefundDotupdated]
   @scala.inline
-  def chargeDOTrefunded: chargeDOTrefunded = "charge.refunded".asInstanceOf[chargeDOTrefunded]
+  def chargeDotrefunded: chargeDotrefunded = "charge.refunded".asInstanceOf[chargeDotrefunded]
   @scala.inline
-  def chargeDOTsucceeded: chargeDOTsucceeded = "charge.succeeded".asInstanceOf[chargeDOTsucceeded]
+  def chargeDotsucceeded: chargeDotsucceeded = "charge.succeeded".asInstanceOf[chargeDotsucceeded]
   @scala.inline
-  def chargeDOTupdated: chargeDOTupdated = "charge.updated".asInstanceOf[chargeDOTupdated]
+  def chargeDotupdated: chargeDotupdated = "charge.updated".asInstanceOf[chargeDotupdated]
   @scala.inline
   def charge_automatically: charge_automatically = "charge_automatically".asInstanceOf[charge_automatically]
   @scala.inline
@@ -1906,7 +1906,7 @@ object stripeStrings {
   @scala.inline
   def chargeable: chargeable = "chargeable".asInstanceOf[chargeable]
   @scala.inline
-  def checkoutDOTsessionDOTcompleted: checkoutDOTsessionDOTcompleted = "checkout.session.completed".asInstanceOf[checkoutDOTsessionDOTcompleted]
+  def checkoutDotsessionDotcompleted: checkoutDotsessionDotcompleted = "checkout.session.completed".asInstanceOf[checkoutDotsessionDotcompleted]
   @scala.inline
   def chip: chip = "chip".asInstanceOf[chip]
   @scala.inline
@@ -1924,11 +1924,11 @@ object stripeStrings {
   @scala.inline
   def coupon: coupon = "coupon".asInstanceOf[coupon]
   @scala.inline
-  def couponDOTcreated: couponDOTcreated = "coupon.created".asInstanceOf[couponDOTcreated]
+  def couponDotcreated: couponDotcreated = "coupon.created".asInstanceOf[couponDotcreated]
   @scala.inline
-  def couponDOTdeleted: couponDOTdeleted = "coupon.deleted".asInstanceOf[couponDOTdeleted]
+  def couponDotdeleted: couponDotdeleted = "coupon.deleted".asInstanceOf[couponDotdeleted]
   @scala.inline
-  def couponDOTupdated: couponDOTupdated = "coupon.updated".asInstanceOf[couponDOTupdated]
+  def couponDotupdated: couponDotupdated = "coupon.updated".asInstanceOf[couponDotupdated]
   @scala.inline
   def created: created = "created".asInstanceOf[created]
   @scala.inline
@@ -1938,49 +1938,49 @@ object stripeStrings {
   @scala.inline
   def credit_note: credit_note = "credit_note".asInstanceOf[credit_note]
   @scala.inline
-  def credit_noteDOTcreated: credit_noteDOTcreated = "credit_note.created".asInstanceOf[credit_noteDOTcreated]
+  def credit_noteDotcreated: credit_noteDotcreated = "credit_note.created".asInstanceOf[credit_noteDotcreated]
   @scala.inline
-  def credit_noteDOTupdated: credit_noteDOTupdated = "credit_note.updated".asInstanceOf[credit_noteDOTupdated]
+  def credit_noteDotupdated: credit_noteDotupdated = "credit_note.updated".asInstanceOf[credit_noteDotupdated]
   @scala.inline
-  def credit_noteDOTvoided: credit_noteDOTvoided = "credit_note.voided".asInstanceOf[credit_noteDOTvoided]
+  def credit_noteDotvoided: credit_noteDotvoided = "credit_note.voided".asInstanceOf[credit_noteDotvoided]
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def customer: customer = "customer".asInstanceOf[customer]
   @scala.inline
-  def customerDOTcreated: customerDOTcreated = "customer.created".asInstanceOf[customerDOTcreated]
+  def customerDotcreated: customerDotcreated = "customer.created".asInstanceOf[customerDotcreated]
   @scala.inline
-  def customerDOTdeleted: customerDOTdeleted = "customer.deleted".asInstanceOf[customerDOTdeleted]
+  def customerDotdeleted: customerDotdeleted = "customer.deleted".asInstanceOf[customerDotdeleted]
   @scala.inline
-  def customerDOTdiscountDOTcreated: customerDOTdiscountDOTcreated = "customer.discount.created".asInstanceOf[customerDOTdiscountDOTcreated]
+  def customerDotdiscountDotcreated: customerDotdiscountDotcreated = "customer.discount.created".asInstanceOf[customerDotdiscountDotcreated]
   @scala.inline
-  def customerDOTdiscountDOTdeleted: customerDOTdiscountDOTdeleted = "customer.discount.deleted".asInstanceOf[customerDOTdiscountDOTdeleted]
+  def customerDotdiscountDotdeleted: customerDotdiscountDotdeleted = "customer.discount.deleted".asInstanceOf[customerDotdiscountDotdeleted]
   @scala.inline
-  def customerDOTdiscountDOTupdated: customerDOTdiscountDOTupdated = "customer.discount.updated".asInstanceOf[customerDOTdiscountDOTupdated]
+  def customerDotdiscountDotupdated: customerDotdiscountDotupdated = "customer.discount.updated".asInstanceOf[customerDotdiscountDotupdated]
   @scala.inline
-  def customerDOTsourceDOTcreated: customerDOTsourceDOTcreated = "customer.source.created".asInstanceOf[customerDOTsourceDOTcreated]
+  def customerDotsourceDotcreated: customerDotsourceDotcreated = "customer.source.created".asInstanceOf[customerDotsourceDotcreated]
   @scala.inline
-  def customerDOTsourceDOTdeleted: customerDOTsourceDOTdeleted = "customer.source.deleted".asInstanceOf[customerDOTsourceDOTdeleted]
+  def customerDotsourceDotdeleted: customerDotsourceDotdeleted = "customer.source.deleted".asInstanceOf[customerDotsourceDotdeleted]
   @scala.inline
-  def customerDOTsourceDOTexpiring: customerDOTsourceDOTexpiring = "customer.source.expiring".asInstanceOf[customerDOTsourceDOTexpiring]
+  def customerDotsourceDotexpiring: customerDotsourceDotexpiring = "customer.source.expiring".asInstanceOf[customerDotsourceDotexpiring]
   @scala.inline
-  def customerDOTsourceDOTupdated: customerDOTsourceDOTupdated = "customer.source.updated".asInstanceOf[customerDOTsourceDOTupdated]
+  def customerDotsourceDotupdated: customerDotsourceDotupdated = "customer.source.updated".asInstanceOf[customerDotsourceDotupdated]
   @scala.inline
-  def customerDOTsubscriptionDOTcreated: customerDOTsubscriptionDOTcreated = "customer.subscription.created".asInstanceOf[customerDOTsubscriptionDOTcreated]
+  def customerDotsubscriptionDotcreated: customerDotsubscriptionDotcreated = "customer.subscription.created".asInstanceOf[customerDotsubscriptionDotcreated]
   @scala.inline
-  def customerDOTsubscriptionDOTdeleted: customerDOTsubscriptionDOTdeleted = "customer.subscription.deleted".asInstanceOf[customerDOTsubscriptionDOTdeleted]
+  def customerDotsubscriptionDotdeleted: customerDotsubscriptionDotdeleted = "customer.subscription.deleted".asInstanceOf[customerDotsubscriptionDotdeleted]
   @scala.inline
-  def customerDOTsubscriptionDOTtrial_will_end: customerDOTsubscriptionDOTtrial_will_end = "customer.subscription.trial_will_end".asInstanceOf[customerDOTsubscriptionDOTtrial_will_end]
+  def customerDotsubscriptionDottrial_will_end: customerDotsubscriptionDottrial_will_end = "customer.subscription.trial_will_end".asInstanceOf[customerDotsubscriptionDottrial_will_end]
   @scala.inline
-  def customerDOTsubscriptionDOTupdated: customerDOTsubscriptionDOTupdated = "customer.subscription.updated".asInstanceOf[customerDOTsubscriptionDOTupdated]
+  def customerDotsubscriptionDotupdated: customerDotsubscriptionDotupdated = "customer.subscription.updated".asInstanceOf[customerDotsubscriptionDotupdated]
   @scala.inline
-  def customerDOTtax_idDOTcreated: customerDOTtax_idDOTcreated = "customer.tax_id.created".asInstanceOf[customerDOTtax_idDOTcreated]
+  def customerDottax_idDotcreated: customerDottax_idDotcreated = "customer.tax_id.created".asInstanceOf[customerDottax_idDotcreated]
   @scala.inline
-  def customerDOTtax_idDOTdeleted: customerDOTtax_idDOTdeleted = "customer.tax_id.deleted".asInstanceOf[customerDOTtax_idDOTdeleted]
+  def customerDottax_idDotdeleted: customerDottax_idDotdeleted = "customer.tax_id.deleted".asInstanceOf[customerDottax_idDotdeleted]
   @scala.inline
-  def customerDOTtax_idDOTupdated: customerDOTtax_idDOTupdated = "customer.tax_id.updated".asInstanceOf[customerDOTtax_idDOTupdated]
+  def customerDottax_idDotupdated: customerDottax_idDotupdated = "customer.tax_id.updated".asInstanceOf[customerDottax_idDotupdated]
   @scala.inline
-  def customerDOTupdated: customerDOTupdated = "customer.updated".asInstanceOf[customerDOTupdated]
+  def customerDotupdated: customerDotupdated = "customer.updated".asInstanceOf[customerDotupdated]
   @scala.inline
   def customer_balance_transaction: customer_balance_transaction = "customer_balance_transaction".asInstanceOf[customer_balance_transaction]
   @scala.inline
@@ -2070,7 +2070,7 @@ object stripeStrings {
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline
-  def fileDOTcreated: fileDOTcreated = "file.created".asInstanceOf[fileDOTcreated]
+  def fileDotcreated: fileDotcreated = "file.created".asInstanceOf[fileDotcreated]
   @scala.inline
   def file_link: file_link = "file_link".asInstanceOf[file_link]
   @scala.inline
@@ -2144,27 +2144,27 @@ object stripeStrings {
   @scala.inline
   def invoice: invoice = "invoice".asInstanceOf[invoice]
   @scala.inline
-  def invoiceDOTcreated: invoiceDOTcreated = "invoice.created".asInstanceOf[invoiceDOTcreated]
+  def invoiceDotcreated: invoiceDotcreated = "invoice.created".asInstanceOf[invoiceDotcreated]
   @scala.inline
-  def invoiceDOTdeleted: invoiceDOTdeleted = "invoice.deleted".asInstanceOf[invoiceDOTdeleted]
+  def invoiceDotdeleted: invoiceDotdeleted = "invoice.deleted".asInstanceOf[invoiceDotdeleted]
   @scala.inline
-  def invoiceDOTfinalized: invoiceDOTfinalized = "invoice.finalized".asInstanceOf[invoiceDOTfinalized]
+  def invoiceDotfinalized: invoiceDotfinalized = "invoice.finalized".asInstanceOf[invoiceDotfinalized]
   @scala.inline
-  def invoiceDOTmarked_uncollectible: invoiceDOTmarked_uncollectible = "invoice.marked_uncollectible".asInstanceOf[invoiceDOTmarked_uncollectible]
+  def invoiceDotmarked_uncollectible: invoiceDotmarked_uncollectible = "invoice.marked_uncollectible".asInstanceOf[invoiceDotmarked_uncollectible]
   @scala.inline
-  def invoiceDOTpayment_action_required: invoiceDOTpayment_action_required = "invoice.payment_action_required".asInstanceOf[invoiceDOTpayment_action_required]
+  def invoiceDotpayment_action_required: invoiceDotpayment_action_required = "invoice.payment_action_required".asInstanceOf[invoiceDotpayment_action_required]
   @scala.inline
-  def invoiceDOTpayment_failed: invoiceDOTpayment_failed = "invoice.payment_failed".asInstanceOf[invoiceDOTpayment_failed]
+  def invoiceDotpayment_failed: invoiceDotpayment_failed = "invoice.payment_failed".asInstanceOf[invoiceDotpayment_failed]
   @scala.inline
-  def invoiceDOTpayment_succeeded: invoiceDOTpayment_succeeded = "invoice.payment_succeeded".asInstanceOf[invoiceDOTpayment_succeeded]
+  def invoiceDotpayment_succeeded: invoiceDotpayment_succeeded = "invoice.payment_succeeded".asInstanceOf[invoiceDotpayment_succeeded]
   @scala.inline
-  def invoiceDOTsent: invoiceDOTsent = "invoice.sent".asInstanceOf[invoiceDOTsent]
+  def invoiceDotsent: invoiceDotsent = "invoice.sent".asInstanceOf[invoiceDotsent]
   @scala.inline
-  def invoiceDOTupcoming: invoiceDOTupcoming = "invoice.upcoming".asInstanceOf[invoiceDOTupcoming]
+  def invoiceDotupcoming: invoiceDotupcoming = "invoice.upcoming".asInstanceOf[invoiceDotupcoming]
   @scala.inline
-  def invoiceDOTupdated: invoiceDOTupdated = "invoice.updated".asInstanceOf[invoiceDOTupdated]
+  def invoiceDotupdated: invoiceDotupdated = "invoice.updated".asInstanceOf[invoiceDotupdated]
   @scala.inline
-  def invoiceDOTvoided: invoiceDOTvoided = "invoice.voided".asInstanceOf[invoiceDOTvoided]
+  def invoiceDotvoided: invoiceDotvoided = "invoice.voided".asInstanceOf[invoiceDotvoided]
   @scala.inline
   def invoice_too_large: invoice_too_large = "invoice_too_large".asInstanceOf[invoice_too_large]
   @scala.inline
@@ -2172,53 +2172,53 @@ object stripeStrings {
   @scala.inline
   def invoiceitem: invoiceitem = "invoiceitem".asInstanceOf[invoiceitem]
   @scala.inline
-  def invoiceitemDOTcreated: invoiceitemDOTcreated = "invoiceitem.created".asInstanceOf[invoiceitemDOTcreated]
+  def invoiceitemDotcreated: invoiceitemDotcreated = "invoiceitem.created".asInstanceOf[invoiceitemDotcreated]
   @scala.inline
-  def invoiceitemDOTdeleted: invoiceitemDOTdeleted = "invoiceitem.deleted".asInstanceOf[invoiceitemDOTdeleted]
+  def invoiceitemDotdeleted: invoiceitemDotdeleted = "invoiceitem.deleted".asInstanceOf[invoiceitemDotdeleted]
   @scala.inline
-  def invoiceitemDOTupdated: invoiceitemDOTupdated = "invoiceitem.updated".asInstanceOf[invoiceitemDOTupdated]
+  def invoiceitemDotupdated: invoiceitemDotupdated = "invoiceitem.updated".asInstanceOf[invoiceitemDotupdated]
   @scala.inline
   def issued: issued = "issued".asInstanceOf[issued]
   @scala.inline
   def issuer_declined: issuer_declined = "issuer_declined".asInstanceOf[issuer_declined]
   @scala.inline
-  def issuingDOTauthorization: issuingDOTauthorization = "issuing.authorization".asInstanceOf[issuingDOTauthorization]
+  def issuingDotauthorization: issuingDotauthorization = "issuing.authorization".asInstanceOf[issuingDotauthorization]
   @scala.inline
-  def issuingDOTcard: issuingDOTcard = "issuing.card".asInstanceOf[issuingDOTcard]
+  def issuingDotcard: issuingDotcard = "issuing.card".asInstanceOf[issuingDotcard]
   @scala.inline
-  def issuingDOTcard_details: issuingDOTcard_details = "issuing.card_details".asInstanceOf[issuingDOTcard_details]
+  def issuingDotcard_details: issuingDotcard_details = "issuing.card_details".asInstanceOf[issuingDotcard_details]
   @scala.inline
-  def issuingDOTcardholder: issuingDOTcardholder = "issuing.cardholder".asInstanceOf[issuingDOTcardholder]
+  def issuingDotcardholder: issuingDotcardholder = "issuing.cardholder".asInstanceOf[issuingDotcardholder]
   @scala.inline
-  def issuingDOTdispute: issuingDOTdispute = "issuing.dispute".asInstanceOf[issuingDOTdispute]
+  def issuingDotdispute: issuingDotdispute = "issuing.dispute".asInstanceOf[issuingDotdispute]
   @scala.inline
-  def issuingDOTtransaction: issuingDOTtransaction = "issuing.transaction".asInstanceOf[issuingDOTtransaction]
+  def issuingDottransaction: issuingDottransaction = "issuing.transaction".asInstanceOf[issuingDottransaction]
   @scala.inline
-  def issuing_authorizationDOTcreated: issuing_authorizationDOTcreated = "issuing_authorization.created".asInstanceOf[issuing_authorizationDOTcreated]
+  def issuing_authorizationDotcreated: issuing_authorizationDotcreated = "issuing_authorization.created".asInstanceOf[issuing_authorizationDotcreated]
   @scala.inline
-  def issuing_authorizationDOTrequest: issuing_authorizationDOTrequest = "issuing_authorization.request".asInstanceOf[issuing_authorizationDOTrequest]
+  def issuing_authorizationDotrequest: issuing_authorizationDotrequest = "issuing_authorization.request".asInstanceOf[issuing_authorizationDotrequest]
   @scala.inline
-  def issuing_authorizationDOTupdated: issuing_authorizationDOTupdated = "issuing_authorization.updated".asInstanceOf[issuing_authorizationDOTupdated]
+  def issuing_authorizationDotupdated: issuing_authorizationDotupdated = "issuing_authorization.updated".asInstanceOf[issuing_authorizationDotupdated]
   @scala.inline
-  def issuing_cardDOTcreated: issuing_cardDOTcreated = "issuing_card.created".asInstanceOf[issuing_cardDOTcreated]
+  def issuing_cardDotcreated: issuing_cardDotcreated = "issuing_card.created".asInstanceOf[issuing_cardDotcreated]
   @scala.inline
-  def issuing_cardDOTupdated: issuing_cardDOTupdated = "issuing_card.updated".asInstanceOf[issuing_cardDOTupdated]
+  def issuing_cardDotupdated: issuing_cardDotupdated = "issuing_card.updated".asInstanceOf[issuing_cardDotupdated]
   @scala.inline
-  def issuing_cardholderDOTcreated: issuing_cardholderDOTcreated = "issuing_cardholder.created".asInstanceOf[issuing_cardholderDOTcreated]
+  def issuing_cardholderDotcreated: issuing_cardholderDotcreated = "issuing_cardholder.created".asInstanceOf[issuing_cardholderDotcreated]
   @scala.inline
-  def issuing_cardholderDOTupdated: issuing_cardholderDOTupdated = "issuing_cardholder.updated".asInstanceOf[issuing_cardholderDOTupdated]
+  def issuing_cardholderDotupdated: issuing_cardholderDotupdated = "issuing_cardholder.updated".asInstanceOf[issuing_cardholderDotupdated]
   @scala.inline
-  def issuing_disputeDOTcreated: issuing_disputeDOTcreated = "issuing_dispute.created".asInstanceOf[issuing_disputeDOTcreated]
+  def issuing_disputeDotcreated: issuing_disputeDotcreated = "issuing_dispute.created".asInstanceOf[issuing_disputeDotcreated]
   @scala.inline
-  def issuing_disputeDOTupdated: issuing_disputeDOTupdated = "issuing_dispute.updated".asInstanceOf[issuing_disputeDOTupdated]
+  def issuing_disputeDotupdated: issuing_disputeDotupdated = "issuing_dispute.updated".asInstanceOf[issuing_disputeDotupdated]
   @scala.inline
-  def issuing_settlementDOTcreated: issuing_settlementDOTcreated = "issuing_settlement.created".asInstanceOf[issuing_settlementDOTcreated]
+  def issuing_settlementDotcreated: issuing_settlementDotcreated = "issuing_settlement.created".asInstanceOf[issuing_settlementDotcreated]
   @scala.inline
-  def issuing_settlementDOTupdated: issuing_settlementDOTupdated = "issuing_settlement.updated".asInstanceOf[issuing_settlementDOTupdated]
+  def issuing_settlementDotupdated: issuing_settlementDotupdated = "issuing_settlement.updated".asInstanceOf[issuing_settlementDotupdated]
   @scala.inline
-  def issuing_transactionDOTcreated: issuing_transactionDOTcreated = "issuing_transaction.created".asInstanceOf[issuing_transactionDOTcreated]
+  def issuing_transactionDotcreated: issuing_transactionDotcreated = "issuing_transaction.created".asInstanceOf[issuing_transactionDotcreated]
   @scala.inline
-  def issuing_transactionDOTupdated: issuing_transactionDOTupdated = "issuing_transaction.updated".asInstanceOf[issuing_transactionDOTupdated]
+  def issuing_transactionDotupdated: issuing_transactionDotupdated = "issuing_transaction.updated".asInstanceOf[issuing_transactionDotupdated]
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   @scala.inline
@@ -2256,7 +2256,7 @@ object stripeStrings {
   @scala.inline
   def male: male = "male".asInstanceOf[male]
   @scala.inline
-  def mandateDOTupdated: mandateDOTupdated = "mandate.updated".asInstanceOf[mandateDOTupdated]
+  def mandateDotupdated: mandateDotupdated = "mandate.updated".asInstanceOf[mandateDotupdated]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
@@ -2328,19 +2328,19 @@ object stripeStrings {
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   @scala.inline
-  def orderDOTcreated: orderDOTcreated = "order.created".asInstanceOf[orderDOTcreated]
+  def orderDotcreated: orderDotcreated = "order.created".asInstanceOf[orderDotcreated]
   @scala.inline
-  def orderDOTpayment_failed: orderDOTpayment_failed = "order.payment_failed".asInstanceOf[orderDOTpayment_failed]
+  def orderDotpayment_failed: orderDotpayment_failed = "order.payment_failed".asInstanceOf[orderDotpayment_failed]
   @scala.inline
-  def orderDOTpayment_succeeded: orderDOTpayment_succeeded = "order.payment_succeeded".asInstanceOf[orderDOTpayment_succeeded]
+  def orderDotpayment_succeeded: orderDotpayment_succeeded = "order.payment_succeeded".asInstanceOf[orderDotpayment_succeeded]
   @scala.inline
-  def orderDOTupdated: orderDOTupdated = "order.updated".asInstanceOf[orderDOTupdated]
+  def orderDotupdated: orderDotupdated = "order.updated".asInstanceOf[orderDotupdated]
   @scala.inline
   def order_change: order_change = "order_change".asInstanceOf[order_change]
   @scala.inline
   def order_item: order_item = "order_item".asInstanceOf[order_item]
   @scala.inline
-  def order_returnDOTcreated: order_returnDOTcreated = "order_return.created".asInstanceOf[order_returnDOTcreated]
+  def order_returnDotcreated: order_returnDotcreated = "order_return.created".asInstanceOf[order_returnDotcreated]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
@@ -2360,37 +2360,37 @@ object stripeStrings {
   @scala.inline
   def payment_intent: payment_intent = "payment_intent".asInstanceOf[payment_intent]
   @scala.inline
-  def payment_intentDOTamount_capturable_updated: payment_intentDOTamount_capturable_updated = "payment_intent.amount_capturable_updated".asInstanceOf[payment_intentDOTamount_capturable_updated]
+  def payment_intentDotamount_capturable_updated: payment_intentDotamount_capturable_updated = "payment_intent.amount_capturable_updated".asInstanceOf[payment_intentDotamount_capturable_updated]
   @scala.inline
-  def payment_intentDOTcanceled: payment_intentDOTcanceled = "payment_intent.canceled".asInstanceOf[payment_intentDOTcanceled]
+  def payment_intentDotcanceled: payment_intentDotcanceled = "payment_intent.canceled".asInstanceOf[payment_intentDotcanceled]
   @scala.inline
-  def payment_intentDOTcreated: payment_intentDOTcreated = "payment_intent.created".asInstanceOf[payment_intentDOTcreated]
+  def payment_intentDotcreated: payment_intentDotcreated = "payment_intent.created".asInstanceOf[payment_intentDotcreated]
   @scala.inline
-  def payment_intentDOTpayment_failed: payment_intentDOTpayment_failed = "payment_intent.payment_failed".asInstanceOf[payment_intentDOTpayment_failed]
+  def payment_intentDotpayment_failed: payment_intentDotpayment_failed = "payment_intent.payment_failed".asInstanceOf[payment_intentDotpayment_failed]
   @scala.inline
-  def payment_intentDOTsucceeded: payment_intentDOTsucceeded = "payment_intent.succeeded".asInstanceOf[payment_intentDOTsucceeded]
+  def payment_intentDotsucceeded: payment_intentDotsucceeded = "payment_intent.succeeded".asInstanceOf[payment_intentDotsucceeded]
   @scala.inline
   def payment_method: payment_method = "payment_method".asInstanceOf[payment_method]
   @scala.inline
-  def payment_methodDOTattached: payment_methodDOTattached = "payment_method.attached".asInstanceOf[payment_methodDOTattached]
+  def payment_methodDotattached: payment_methodDotattached = "payment_method.attached".asInstanceOf[payment_methodDotattached]
   @scala.inline
-  def payment_methodDOTcard_automatically_updated: payment_methodDOTcard_automatically_updated = "payment_method.card_automatically_updated".asInstanceOf[payment_methodDOTcard_automatically_updated]
+  def payment_methodDotcard_automatically_updated: payment_methodDotcard_automatically_updated = "payment_method.card_automatically_updated".asInstanceOf[payment_methodDotcard_automatically_updated]
   @scala.inline
-  def payment_methodDOTdetached: payment_methodDOTdetached = "payment_method.detached".asInstanceOf[payment_methodDOTdetached]
+  def payment_methodDotdetached: payment_methodDotdetached = "payment_method.detached".asInstanceOf[payment_methodDotdetached]
   @scala.inline
-  def payment_methodDOTupdated: payment_methodDOTupdated = "payment_method.updated".asInstanceOf[payment_methodDOTupdated]
+  def payment_methodDotupdated: payment_methodDotupdated = "payment_method.updated".asInstanceOf[payment_methodDotupdated]
   @scala.inline
   def payout: payout = "payout".asInstanceOf[payout]
   @scala.inline
-  def payoutDOTcanceled: payoutDOTcanceled = "payout.canceled".asInstanceOf[payoutDOTcanceled]
+  def payoutDotcanceled: payoutDotcanceled = "payout.canceled".asInstanceOf[payoutDotcanceled]
   @scala.inline
-  def payoutDOTcreated: payoutDOTcreated = "payout.created".asInstanceOf[payoutDOTcreated]
+  def payoutDotcreated: payoutDotcreated = "payout.created".asInstanceOf[payoutDotcreated]
   @scala.inline
-  def payoutDOTfailed: payoutDOTfailed = "payout.failed".asInstanceOf[payoutDOTfailed]
+  def payoutDotfailed: payoutDotfailed = "payout.failed".asInstanceOf[payoutDotfailed]
   @scala.inline
-  def payoutDOTpaid: payoutDOTpaid = "payout.paid".asInstanceOf[payoutDOTpaid]
+  def payoutDotpaid: payoutDotpaid = "payout.paid".asInstanceOf[payoutDotpaid]
   @scala.inline
-  def payoutDOTupdated: payoutDOTupdated = "payout.updated".asInstanceOf[payoutDOTupdated]
+  def payoutDotupdated: payoutDotupdated = "payout.updated".asInstanceOf[payoutDotupdated]
   @scala.inline
   def payout_failure: payout_failure = "payout_failure".asInstanceOf[payout_failure]
   @scala.inline
@@ -2404,11 +2404,11 @@ object stripeStrings {
   @scala.inline
   def person: person = "person".asInstanceOf[person]
   @scala.inline
-  def personDOTcreated: personDOTcreated = "person.created".asInstanceOf[personDOTcreated]
+  def personDotcreated: personDotcreated = "person.created".asInstanceOf[personDotcreated]
   @scala.inline
-  def personDOTdeleted: personDOTdeleted = "person.deleted".asInstanceOf[personDOTdeleted]
+  def personDotdeleted: personDotdeleted = "person.deleted".asInstanceOf[personDotdeleted]
   @scala.inline
-  def personDOTupdated: personDOTupdated = "person.updated".asInstanceOf[personDOTupdated]
+  def personDotupdated: personDotupdated = "person.updated".asInstanceOf[personDotupdated]
   @scala.inline
   def physical: physical = "physical".asInstanceOf[physical]
   @scala.inline
@@ -2416,11 +2416,11 @@ object stripeStrings {
   @scala.inline
   def plan: plan = "plan".asInstanceOf[plan]
   @scala.inline
-  def planDOTcreated: planDOTcreated = "plan.created".asInstanceOf[planDOTcreated]
+  def planDotcreated: planDotcreated = "plan.created".asInstanceOf[planDotcreated]
   @scala.inline
-  def planDOTdeleted: planDOTdeleted = "plan.deleted".asInstanceOf[planDOTdeleted]
+  def planDotdeleted: planDotdeleted = "plan.deleted".asInstanceOf[planDotdeleted]
   @scala.inline
-  def planDOTupdated: planDOTupdated = "plan.updated".asInstanceOf[planDOTupdated]
+  def planDotupdated: planDotupdated = "plan.updated".asInstanceOf[planDotupdated]
   @scala.inline
   def png: png = "png".asInstanceOf[png]
   @scala.inline
@@ -2436,11 +2436,11 @@ object stripeStrings {
   @scala.inline
   def product: product = "product".asInstanceOf[product]
   @scala.inline
-  def productDOTcreated: productDOTcreated = "product.created".asInstanceOf[productDOTcreated]
+  def productDotcreated: productDotcreated = "product.created".asInstanceOf[productDotcreated]
   @scala.inline
-  def productDOTdeleted: productDOTdeleted = "product.deleted".asInstanceOf[productDOTdeleted]
+  def productDotdeleted: productDotdeleted = "product.deleted".asInstanceOf[productDotdeleted]
   @scala.inline
-  def productDOTupdated: productDOTupdated = "product.updated".asInstanceOf[productDOTupdated]
+  def productDotupdated: productDotupdated = "product.updated".asInstanceOf[productDotupdated]
   @scala.inline
   def product_not_received: product_not_received = "product_not_received".asInstanceOf[product_not_received]
   @scala.inline
@@ -2452,19 +2452,19 @@ object stripeStrings {
   @scala.inline
   def publishable: publishable = "publishable".asInstanceOf[publishable]
   @scala.inline
-  def radarDOTearly_fraud_warningDOTcreated: radarDOTearly_fraud_warningDOTcreated = "radar.early_fraud_warning.created".asInstanceOf[radarDOTearly_fraud_warningDOTcreated]
+  def radarDotearly_fraud_warningDotcreated: radarDotearly_fraud_warningDotcreated = "radar.early_fraud_warning.created".asInstanceOf[radarDotearly_fraud_warningDotcreated]
   @scala.inline
-  def radarDOTearly_fraud_warningDOTupdated: radarDOTearly_fraud_warningDOTupdated = "radar.early_fraud_warning.updated".asInstanceOf[radarDOTearly_fraud_warningDOTupdated]
+  def radarDotearly_fraud_warningDotupdated: radarDotearly_fraud_warningDotupdated = "radar.early_fraud_warning.updated".asInstanceOf[radarDotearly_fraud_warningDotupdated]
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   @scala.inline
   def receiver: receiver = "receiver".asInstanceOf[receiver]
   @scala.inline
-  def recipientDOTcreated: recipientDOTcreated = "recipient.created".asInstanceOf[recipientDOTcreated]
+  def recipientDotcreated: recipientDotcreated = "recipient.created".asInstanceOf[recipientDotcreated]
   @scala.inline
-  def recipientDOTdeleted: recipientDOTdeleted = "recipient.deleted".asInstanceOf[recipientDOTdeleted]
+  def recipientDotdeleted: recipientDotdeleted = "recipient.deleted".asInstanceOf[recipientDotdeleted]
   @scala.inline
-  def recipientDOTupdated: recipientDOTupdated = "recipient.updated".asInstanceOf[recipientDOTupdated]
+  def recipientDotupdated: recipientDotupdated = "recipient.updated".asInstanceOf[recipientDotupdated]
   @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline
@@ -2482,15 +2482,15 @@ object stripeStrings {
   @scala.inline
   def refused: refused = "refused".asInstanceOf[refused]
   @scala.inline
-  def rejectedDOTlisted: rejectedDOTlisted = "rejected.listed".asInstanceOf[rejectedDOTlisted]
+  def rejectedDotlisted: rejectedDotlisted = "rejected.listed".asInstanceOf[rejectedDotlisted]
   @scala.inline
   def repeating: repeating = "repeating".asInstanceOf[repeating]
   @scala.inline
-  def reportingDOTreport_runDOTfailed: reportingDOTreport_runDOTfailed = "reporting.report_run.failed".asInstanceOf[reportingDOTreport_runDOTfailed]
+  def reportingDotreport_runDotfailed: reportingDotreport_runDotfailed = "reporting.report_run.failed".asInstanceOf[reportingDotreport_runDotfailed]
   @scala.inline
-  def reportingDOTreport_runDOTsucceeded: reportingDOTreport_runDOTsucceeded = "reporting.report_run.succeeded".asInstanceOf[reportingDOTreport_runDOTsucceeded]
+  def reportingDotreport_runDotsucceeded: reportingDotreport_runDotsucceeded = "reporting.report_run.succeeded".asInstanceOf[reportingDotreport_runDotsucceeded]
   @scala.inline
-  def reportingDOTreport_typeDOTupdated: reportingDOTreport_typeDOTupdated = "reporting.report_type.updated".asInstanceOf[reportingDOTreport_typeDOTupdated]
+  def reportingDotreport_typeDotupdated: reportingDotreport_typeDotupdated = "reporting.report_type.updated".asInstanceOf[reportingDotreport_typeDotupdated]
   @scala.inline
   def request: request = "request".asInstanceOf[request]
   @scala.inline
@@ -2524,9 +2524,9 @@ object stripeStrings {
   @scala.inline
   def review: review = "review".asInstanceOf[review]
   @scala.inline
-  def reviewDOTclosed: reviewDOTclosed = "review.closed".asInstanceOf[reviewDOTclosed]
+  def reviewDotclosed: reviewDotclosed = "review.closed".asInstanceOf[reviewDotclosed]
   @scala.inline
-  def reviewDOTopened: reviewDOTopened = "review.opened".asInstanceOf[reviewDOTopened]
+  def reviewDotopened: reviewDotopened = "review.opened".asInstanceOf[reviewDotopened]
   @scala.inline
   def rule: rule = "rule".asInstanceOf[rule]
   @scala.inline
@@ -2552,47 +2552,47 @@ object stripeStrings {
   @scala.inline
   def setup_intent: setup_intent = "setup_intent".asInstanceOf[setup_intent]
   @scala.inline
-  def setup_intentDOTcanceled: setup_intentDOTcanceled = "setup_intent.canceled".asInstanceOf[setup_intentDOTcanceled]
+  def setup_intentDotcanceled: setup_intentDotcanceled = "setup_intent.canceled".asInstanceOf[setup_intentDotcanceled]
   @scala.inline
-  def setup_intentDOTcreated: setup_intentDOTcreated = "setup_intent.created".asInstanceOf[setup_intentDOTcreated]
+  def setup_intentDotcreated: setup_intentDotcreated = "setup_intent.created".asInstanceOf[setup_intentDotcreated]
   @scala.inline
-  def setup_intentDOTsetup_failed: setup_intentDOTsetup_failed = "setup_intent.setup_failed".asInstanceOf[setup_intentDOTsetup_failed]
+  def setup_intentDotsetup_failed: setup_intentDotsetup_failed = "setup_intent.setup_failed".asInstanceOf[setup_intentDotsetup_failed]
   @scala.inline
-  def setup_intentDOTsucceeded: setup_intentDOTsucceeded = "setup_intent.succeeded".asInstanceOf[setup_intentDOTsucceeded]
+  def setup_intentDotsucceeded: setup_intentDotsucceeded = "setup_intent.succeeded".asInstanceOf[setup_intentDotsucceeded]
   @scala.inline
   def shipped: shipped = "shipped".asInstanceOf[shipped]
   @scala.inline
   def shipping: shipping = "shipping".asInstanceOf[shipping]
   @scala.inline
-  def sigmaDOTscheduled_query_runDOTcreated: sigmaDOTscheduled_query_runDOTcreated = "sigma.scheduled_query_run.created".asInstanceOf[sigmaDOTscheduled_query_runDOTcreated]
+  def sigmaDotscheduled_query_runDotcreated: sigmaDotscheduled_query_runDotcreated = "sigma.scheduled_query_run.created".asInstanceOf[sigmaDotscheduled_query_runDotcreated]
   @scala.inline
   def single_use: single_use = "single_use".asInstanceOf[single_use]
   @scala.inline
   def sku: sku = "sku".asInstanceOf[sku]
   @scala.inline
-  def skuDOTcreated: skuDOTcreated = "sku.created".asInstanceOf[skuDOTcreated]
+  def skuDotcreated: skuDotcreated = "sku.created".asInstanceOf[skuDotcreated]
   @scala.inline
-  def skuDOTdeleted: skuDOTdeleted = "sku.deleted".asInstanceOf[skuDOTdeleted]
+  def skuDotdeleted: skuDotdeleted = "sku.deleted".asInstanceOf[skuDotdeleted]
   @scala.inline
-  def skuDOTupdated: skuDOTupdated = "sku.updated".asInstanceOf[skuDOTupdated]
+  def skuDotupdated: skuDotupdated = "sku.updated".asInstanceOf[skuDotupdated]
   @scala.inline
   def sofort: sofort = "sofort".asInstanceOf[sofort]
   @scala.inline
   def source: source = "source".asInstanceOf[source]
   @scala.inline
-  def sourceDOTcanceled: sourceDOTcanceled = "source.canceled".asInstanceOf[sourceDOTcanceled]
+  def sourceDotcanceled: sourceDotcanceled = "source.canceled".asInstanceOf[sourceDotcanceled]
   @scala.inline
-  def sourceDOTchargeable: sourceDOTchargeable = "source.chargeable".asInstanceOf[sourceDOTchargeable]
+  def sourceDotchargeable: sourceDotchargeable = "source.chargeable".asInstanceOf[sourceDotchargeable]
   @scala.inline
-  def sourceDOTfailed: sourceDOTfailed = "source.failed".asInstanceOf[sourceDOTfailed]
+  def sourceDotfailed: sourceDotfailed = "source.failed".asInstanceOf[sourceDotfailed]
   @scala.inline
-  def sourceDOTmandate_notification: sourceDOTmandate_notification = "source.mandate_notification".asInstanceOf[sourceDOTmandate_notification]
+  def sourceDotmandate_notification: sourceDotmandate_notification = "source.mandate_notification".asInstanceOf[sourceDotmandate_notification]
   @scala.inline
-  def sourceDOTrefund_attributes_required: sourceDOTrefund_attributes_required = "source.refund_attributes_required".asInstanceOf[sourceDOTrefund_attributes_required]
+  def sourceDotrefund_attributes_required: sourceDotrefund_attributes_required = "source.refund_attributes_required".asInstanceOf[sourceDotrefund_attributes_required]
   @scala.inline
-  def sourceDOTtransactionDOTcreated: sourceDOTtransactionDOTcreated = "source.transaction.created".asInstanceOf[sourceDOTtransactionDOTcreated]
+  def sourceDottransactionDotcreated: sourceDottransactionDotcreated = "source.transaction.created".asInstanceOf[sourceDottransactionDotcreated]
   @scala.inline
-  def sourceDOTtransactionDOTupdated: sourceDOTtransactionDOTupdated = "source.transaction.updated".asInstanceOf[sourceDOTtransactionDOTupdated]
+  def sourceDottransactionDotupdated: sourceDottransactionDotupdated = "source.transaction.updated".asInstanceOf[sourceDottransactionDotupdated]
   @scala.inline
   def spending_limits: spending_limits = "spending_limits".asInstanceOf[spending_limits]
   @scala.inline
@@ -2616,19 +2616,19 @@ object stripeStrings {
   @scala.inline
   def subscription_item: subscription_item = "subscription_item".asInstanceOf[subscription_item]
   @scala.inline
-  def subscription_scheduleDOTaborted: subscription_scheduleDOTaborted = "subscription_schedule.aborted".asInstanceOf[subscription_scheduleDOTaborted]
+  def subscription_scheduleDotaborted: subscription_scheduleDotaborted = "subscription_schedule.aborted".asInstanceOf[subscription_scheduleDotaborted]
   @scala.inline
-  def subscription_scheduleDOTcanceled: subscription_scheduleDOTcanceled = "subscription_schedule.canceled".asInstanceOf[subscription_scheduleDOTcanceled]
+  def subscription_scheduleDotcanceled: subscription_scheduleDotcanceled = "subscription_schedule.canceled".asInstanceOf[subscription_scheduleDotcanceled]
   @scala.inline
-  def subscription_scheduleDOTcompleted: subscription_scheduleDOTcompleted = "subscription_schedule.completed".asInstanceOf[subscription_scheduleDOTcompleted]
+  def subscription_scheduleDotcompleted: subscription_scheduleDotcompleted = "subscription_schedule.completed".asInstanceOf[subscription_scheduleDotcompleted]
   @scala.inline
-  def subscription_scheduleDOTcreated: subscription_scheduleDOTcreated = "subscription_schedule.created".asInstanceOf[subscription_scheduleDOTcreated]
+  def subscription_scheduleDotcreated: subscription_scheduleDotcreated = "subscription_schedule.created".asInstanceOf[subscription_scheduleDotcreated]
   @scala.inline
-  def subscription_scheduleDOTexpiring: subscription_scheduleDOTexpiring = "subscription_schedule.expiring".asInstanceOf[subscription_scheduleDOTexpiring]
+  def subscription_scheduleDotexpiring: subscription_scheduleDotexpiring = "subscription_schedule.expiring".asInstanceOf[subscription_scheduleDotexpiring]
   @scala.inline
-  def subscription_scheduleDOTreleased: subscription_scheduleDOTreleased = "subscription_schedule.released".asInstanceOf[subscription_scheduleDOTreleased]
+  def subscription_scheduleDotreleased: subscription_scheduleDotreleased = "subscription_schedule.released".asInstanceOf[subscription_scheduleDotreleased]
   @scala.inline
-  def subscription_scheduleDOTupdated: subscription_scheduleDOTupdated = "subscription_schedule.updated".asInstanceOf[subscription_scheduleDOTupdated]
+  def subscription_scheduleDotupdated: subscription_scheduleDotupdated = "subscription_schedule.updated".asInstanceOf[subscription_scheduleDotupdated]
   @scala.inline
   def subscription_threshold: subscription_threshold = "subscription_threshold".asInstanceOf[subscription_threshold]
   @scala.inline
@@ -2654,9 +2654,9 @@ object stripeStrings {
   @scala.inline
   def tax_rate: tax_rate = "tax_rate".asInstanceOf[tax_rate]
   @scala.inline
-  def tax_rateDOTcreated: tax_rateDOTcreated = "tax_rate.created".asInstanceOf[tax_rateDOTcreated]
+  def tax_rateDotcreated: tax_rateDotcreated = "tax_rate.created".asInstanceOf[tax_rateDotcreated]
   @scala.inline
-  def tax_rateDOTupdated: tax_rateDOTupdated = "tax_rate.updated".asInstanceOf[tax_rateDOTupdated]
+  def tax_rateDotupdated: tax_rateDotupdated = "tax_rate.updated".asInstanceOf[tax_rateDotupdated]
   @scala.inline
   def terms_of_service: terms_of_service = "terms_of_service".asInstanceOf[terms_of_service]
   @scala.inline
@@ -2672,25 +2672,25 @@ object stripeStrings {
   @scala.inline
   def topup: topup = "topup".asInstanceOf[topup]
   @scala.inline
-  def topupDOTcreated: topupDOTcreated = "topup.created".asInstanceOf[topupDOTcreated]
+  def topupDotcreated: topupDotcreated = "topup.created".asInstanceOf[topupDotcreated]
   @scala.inline
-  def topupDOTfailed: topupDOTfailed = "topup.failed".asInstanceOf[topupDOTfailed]
+  def topupDotfailed: topupDotfailed = "topup.failed".asInstanceOf[topupDotfailed]
   @scala.inline
-  def topupDOTreversed: topupDOTreversed = "topup.reversed".asInstanceOf[topupDOTreversed]
+  def topupDotreversed: topupDotreversed = "topup.reversed".asInstanceOf[topupDotreversed]
   @scala.inline
-  def topupDOTsucceeded: topupDOTsucceeded = "topup.succeeded".asInstanceOf[topupDOTsucceeded]
+  def topupDotsucceeded: topupDotsucceeded = "topup.succeeded".asInstanceOf[topupDotsucceeded]
   @scala.inline
   def transfer: transfer = "transfer".asInstanceOf[transfer]
   @scala.inline
-  def transferDOTcreated: transferDOTcreated = "transfer.created".asInstanceOf[transferDOTcreated]
+  def transferDotcreated: transferDotcreated = "transfer.created".asInstanceOf[transferDotcreated]
   @scala.inline
-  def transferDOTfailed: transferDOTfailed = "transfer.failed".asInstanceOf[transferDOTfailed]
+  def transferDotfailed: transferDotfailed = "transfer.failed".asInstanceOf[transferDotfailed]
   @scala.inline
-  def transferDOTpaid: transferDOTpaid = "transfer.paid".asInstanceOf[transferDOTpaid]
+  def transferDotpaid: transferDotpaid = "transfer.paid".asInstanceOf[transferDotpaid]
   @scala.inline
-  def transferDOTreversed: transferDOTreversed = "transfer.reversed".asInstanceOf[transferDOTreversed]
+  def transferDotreversed: transferDotreversed = "transfer.reversed".asInstanceOf[transferDotreversed]
   @scala.inline
-  def transferDOTupdated: transferDOTupdated = "transfer.updated".asInstanceOf[transferDOTupdated]
+  def transferDotupdated: transferDotupdated = "transfer.updated".asInstanceOf[transferDotupdated]
   @scala.inline
   def transfer_reversal: transfer_reversal = "transfer_reversal".asInstanceOf[transfer_reversal]
   @scala.inline

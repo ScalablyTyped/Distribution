@@ -5,7 +5,7 @@ import typings.chromeDashApps.Anon_OPENASPINNEDTAB
 import typings.chromeDashApps.Anon_PERMISSIONSINCREASE
 import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chrome.runtime.Permission
-import typings.chromeDashApps.chromeDashAppsNumbers.`true`
+import typings.chromeDashApps.chromeDashAppsBooleans.`true`
 import typings.chromeDashApps.chromeDashAppsStrings.OPEN_AS_PINNED_TAB
 import typings.chromeDashApps.chromeDashAppsStrings.OPEN_AS_REGULAR_TAB
 import typings.chromeDashApps.chromeDashAppsStrings.OPEN_AS_WINDOW

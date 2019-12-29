@@ -1,20 +1,6 @@
 package typings.grpc.grpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grpc.grpcMod.callError.ALREADY_FINISHED
-import typings.grpc.grpcMod.callError.ALREADY_INVOKED
-import typings.grpc.grpcMod.callError.BATCH_TOO_BIG
-import typings.grpc.grpcMod.callError.ERROR
-import typings.grpc.grpcMod.callError.INVALID_FLAGS
-import typings.grpc.grpcMod.callError.INVALID_MESSAGE
-import typings.grpc.grpcMod.callError.INVALID_METADATA
-import typings.grpc.grpcMod.callError.NOT_INVOKED
-import typings.grpc.grpcMod.callError.NOT_ON_CLIENT
-import typings.grpc.grpcMod.callError.NOT_ON_SERVER
-import typings.grpc.grpcMod.callError.NOT_SERVER_COMPLETION_QUEUE
-import typings.grpc.grpcMod.callError.OK
-import typings.grpc.grpcMod.callError.PAYLOAD_TYPE_MISMATCH
-import typings.grpc.grpcMod.callError.TOO_MANY_OPERATIONS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

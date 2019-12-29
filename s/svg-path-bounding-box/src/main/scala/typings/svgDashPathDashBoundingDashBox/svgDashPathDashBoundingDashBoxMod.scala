@@ -1,7 +1,5 @@
 package typings.svgDashPathDashBoundingDashBox
 
-import typings.svgDashPathDashBoundingDashBox.svgDashPathDashBoundingDashBoxMod.BoundingBox
-import typings.svgDashPathDashBoundingDashBox.svgDashPathDashBoundingDashBoxMod.BoundingBoxView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

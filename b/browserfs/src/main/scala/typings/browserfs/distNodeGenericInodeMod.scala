@@ -1,6 +1,5 @@
 package typings.browserfs
 
-import typings.browserfs.distNodeGenericInodeMod.Inode
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

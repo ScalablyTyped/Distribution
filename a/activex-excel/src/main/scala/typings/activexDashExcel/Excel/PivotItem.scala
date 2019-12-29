@@ -16,7 +16,8 @@ class PivotItem protected () extends js.Object {
   @JSName("DataRange")
   val DataRange_Original: Range = js.native
   var DrilledDown: Boolean = js.native
-  var `Excel.PivotItem_typekey`: PivotItem = js.native
+  @JSName("Excel.PivotItem_typekey")
+  var ExcelDotPivotItem_typekey: PivotItem = js.native
   var Formula: String = js.native
   val IsCalculated: Boolean = js.native
   @JSName("LabelRange")

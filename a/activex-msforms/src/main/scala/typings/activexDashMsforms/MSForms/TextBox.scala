@@ -42,7 +42,8 @@ class TextBox protected () extends js.Object {
   var IntegralHeight: Boolean = js.native
   val LineCount: Double = js.native
   var Locked: Boolean = js.native
-  var `MSForms.TextBox_typekey`: TextBox = js.native
+  @JSName("MSForms.TextBox_typekey")
+  var MSFormsDotTextBox_typekey: TextBox = js.native
   var MaxLength: Double = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 package object ioBroker {
   import org.scalablytyped.runtime.StringDictionary
   import typings.iobroker.Anon_Acl
-  import typings.iobroker.Anon_Err
   import typings.iobroker.Anon_IdString
   import typings.iobroker.Anon_IdStringOptional
   import typings.iobroker.Anon_IdValue
@@ -69,22 +68,11 @@ package object ioBroker {
   type GetObjectListCallback = js.Function2[/* err */ String | Null, /* result */ js.UndefOr[Anon_RowsArray], Unit]
   type GetObjectViewCallback = js.Function2[/* err */ String | Null, /* result */ js.UndefOr[Anon_Rows], Unit]
   type GetObjectsCallback = js.Function2[/* err */ String | Null, /* objects */ Record[String, Object], Unit]
-  // this is a version of the callback used by Objects.getObjects
-  type GetObjectsCallback2 = js.Function2[/* err */ String | Null, /* objects */ js.UndefOr[js.Array[Object | Anon_Err]], Unit]
   // This is a version used by GetDevices/GetChannelsOf/GetStatesOf
   type GetObjectsCallback3[T /* <: BaseObject */] = js.Function2[/* err */ String | Null, /* result */ js.UndefOr[js.Array[T]], Unit]
   type GetSessionCallback = js.Function1[/* session */ Session, Unit]
   type GetStateCallback = js.Function2[/* err */ String | Null, /* state */ js.UndefOr[State | Null], Unit]
   type GetStatesCallback = js.Function2[/* err */ String | Null, /* states */ Record[String, State], Unit]
-  /** Version of the callback used by States.getStates */
-  type GetStatesCallback2 = js.Function2[/* err */ String | Null, /* states */ js.Array[State], Unit]
-  type GetUserGroupCallback = js.Function4[
-    /* objectsInstance */ Objects, 
-    /* user */ User, 
-    /* groups */ js.Array[UserGroup], 
-    /* acl */ ObjectPermissions, 
-    Unit
-  ]
   type Log = js.Any
   type MessageCallback = js.Function1[/* response */ js.UndefOr[Message], Unit]
   type MessageHandler = js.Function1[/* obj */ Message, Unit | js.Promise[Unit]]
@@ -103,7 +91,6 @@ package object ioBroker {
   type ReadyHandler = js.Function0[Unit | js.Promise[Unit]]
   type RmCallback = js.Function2[/* err */ String | Null, /* entries */ js.UndefOr[js.Array[RmResult]], Unit]
   type SecondParameterOf[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
-  // end interface States
   type Session = js.Any
   type SetObjectCallback = js.Function2[/* err */ String | Null, /* obj */ Anon_IdString, Unit]
   type SetStateCallback = js.Function2[/* err */ String | Null, /* id */ js.UndefOr[String], Unit]

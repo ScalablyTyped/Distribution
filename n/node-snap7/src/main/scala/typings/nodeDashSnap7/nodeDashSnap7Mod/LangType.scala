@@ -1,12 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashSnap7.nodeDashSnap7Mod.LangType.BlockLangAWL
-import typings.nodeDashSnap7.nodeDashSnap7Mod.LangType.BlockLangDB
-import typings.nodeDashSnap7.nodeDashSnap7Mod.LangType.BlockLangFUP
-import typings.nodeDashSnap7.nodeDashSnap7Mod.LangType.BlockLangGRAPH
-import typings.nodeDashSnap7.nodeDashSnap7Mod.LangType.BlockLangKOP
-import typings.nodeDashSnap7.nodeDashSnap7Mod.LangType.BlockLangSCL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,15 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.Add
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.Cancel
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.Delete
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.Edit
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.PdfExport
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.PrintGrid
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.Search
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.Update
-import typings.ejDotWebDotAll.ej.Grid.ToolBarItems.WordExport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

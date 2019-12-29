@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "office-ui-fabric-react" : "7.73.0"
+      "office-ui-fabric-react" : "7.76.2"
     }
   ],
   "test-dependencies" : [
     {
-      "office-ui-fabric-react" : "7.73.0"
+      "office-ui-fabric-react" : "7.76.2"
     }
   ],
   "compile-devDependencies" : [

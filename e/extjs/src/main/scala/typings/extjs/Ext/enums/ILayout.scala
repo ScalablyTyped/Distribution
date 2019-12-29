@@ -6,61 +6,61 @@ import scala.scalajs.js.annotation._
 
 trait ILayout extends js.Object {
   /** [Property] (String) */
-  var absolute: js.UndefOr[java.lang.String] = js.undefined
+  var absolute: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var accordion: js.UndefOr[java.lang.String] = js.undefined
+  var accordion: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var anchor: js.UndefOr[java.lang.String] = js.undefined
+  var anchor: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var auto: js.UndefOr[java.lang.String] = js.undefined
+  var auto: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var autocomponent: js.UndefOr[java.lang.String] = js.undefined
+  var autocomponent: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var autocontainer: js.UndefOr[java.lang.String] = js.undefined
+  var autocontainer: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var border: js.UndefOr[java.lang.String] = js.undefined
+  var border: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var box: js.UndefOr[java.lang.String] = js.undefined
+  var box: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var card: js.UndefOr[java.lang.String] = js.undefined
+  var card: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var checkboxgroup: js.UndefOr[java.lang.String] = js.undefined
+  var checkboxgroup: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var column: js.UndefOr[java.lang.String] = js.undefined
+  var column: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var container: js.UndefOr[java.lang.String] = js.undefined
+  var container: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var fit: js.UndefOr[java.lang.String] = js.undefined
+  var fit: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var form: js.UndefOr[java.lang.String] = js.undefined
+  var form: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var hbox: js.UndefOr[java.lang.String] = js.undefined
+  var hbox: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var table: js.UndefOr[java.lang.String] = js.undefined
+  var table: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var vbox: js.UndefOr[java.lang.String] = js.undefined
+  var vbox: js.UndefOr[String] = js.undefined
 }
 
 object ILayout {
   @scala.inline
   def apply(
-    absolute: java.lang.String = null,
-    accordion: java.lang.String = null,
-    anchor: java.lang.String = null,
-    auto: java.lang.String = null,
-    autocomponent: java.lang.String = null,
-    autocontainer: java.lang.String = null,
-    border: java.lang.String = null,
-    box: java.lang.String = null,
-    card: java.lang.String = null,
-    checkboxgroup: java.lang.String = null,
-    column: java.lang.String = null,
-    container: java.lang.String = null,
-    fit: java.lang.String = null,
-    form: java.lang.String = null,
-    hbox: java.lang.String = null,
-    table: java.lang.String = null,
-    vbox: java.lang.String = null
+    absolute: String = null,
+    accordion: String = null,
+    anchor: String = null,
+    auto: String = null,
+    autocomponent: String = null,
+    autocontainer: String = null,
+    border: String = null,
+    box: String = null,
+    card: String = null,
+    checkboxgroup: String = null,
+    column: String = null,
+    container: String = null,
+    fit: String = null,
+    form: String = null,
+    hbox: String = null,
+    table: String = null,
+    vbox: String = null
   ): ILayout = {
     val __obj = js.Dynamic.literal()
     if (absolute != null) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])

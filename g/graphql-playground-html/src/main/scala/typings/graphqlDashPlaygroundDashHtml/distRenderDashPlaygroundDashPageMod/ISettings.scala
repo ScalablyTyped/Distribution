@@ -5,37 +5,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ISettings extends js.Object {
-  var `editor.cursorShape`: CursorShape
-  var `editor.fontFamily`: String
-  var `editor.fontSize`: Double
-  var `editor.reuseHeaders`: Boolean
-  var `editor.theme`: Theme
-  var `general.betaUpdates`: Boolean
-  var `request.credentials`: String
-  var `tracing.hideTracingResponse`: Boolean
+  @JSName("editor.cursorShape")
+  var editorDotcursorShape: CursorShape
+  @JSName("editor.fontFamily")
+  var editorDotfontFamily: String
+  @JSName("editor.fontSize")
+  var editorDotfontSize: Double
+  @JSName("editor.reuseHeaders")
+  var editorDotreuseHeaders: Boolean
+  @JSName("editor.theme")
+  var editorDottheme: Theme
+  @JSName("general.betaUpdates")
+  var generalDotbetaUpdates: Boolean
+  @JSName("request.credentials")
+  var requestDotcredentials: String
+  @JSName("tracing.hideTracingResponse")
+  var tracingDothideTracingResponse: Boolean
 }
 
 object ISettings {
   @scala.inline
   def apply(
-    `editor.cursorShape`: CursorShape,
-    `editor.fontFamily`: String,
-    `editor.fontSize`: Double,
-    `editor.reuseHeaders`: Boolean,
-    `editor.theme`: Theme,
-    `general.betaUpdates`: Boolean,
-    `request.credentials`: String,
-    `tracing.hideTracingResponse`: Boolean
+    editorDotcursorShape: CursorShape,
+    editorDotfontFamily: String,
+    editorDotfontSize: Double,
+    editorDotreuseHeaders: Boolean,
+    editorDottheme: Theme,
+    generalDotbetaUpdates: Boolean,
+    requestDotcredentials: String,
+    tracingDothideTracingResponse: Boolean
   ): ISettings = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor.cursorShape")(`editor.cursorShape`.asInstanceOf[js.Any])
-    __obj.updateDynamic("editor.fontFamily")(`editor.fontFamily`.asInstanceOf[js.Any])
-    __obj.updateDynamic("editor.fontSize")(`editor.fontSize`.asInstanceOf[js.Any])
-    __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`.asInstanceOf[js.Any])
-    __obj.updateDynamic("editor.theme")(`editor.theme`.asInstanceOf[js.Any])
-    __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`.asInstanceOf[js.Any])
-    __obj.updateDynamic("request.credentials")(`request.credentials`.asInstanceOf[js.Any])
-    __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.cursorShape")(editorDotcursorShape.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.fontFamily")(editorDotfontFamily.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.fontSize")(editorDotfontSize.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.reuseHeaders")(editorDotreuseHeaders.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.theme")(editorDottheme.asInstanceOf[js.Any])
+    __obj.updateDynamic("general.betaUpdates")(generalDotbetaUpdates.asInstanceOf[js.Any])
+    __obj.updateDynamic("request.credentials")(requestDotcredentials.asInstanceOf[js.Any])
+    __obj.updateDynamic("tracing.hideTracingResponse")(tracingDothideTracingResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISettings]
   }
 }

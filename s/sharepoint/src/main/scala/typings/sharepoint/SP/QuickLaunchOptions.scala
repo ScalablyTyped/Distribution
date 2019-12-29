@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.QuickLaunchOptions.defaultValue
-import typings.sharepoint.SP.QuickLaunchOptions.off
-import typings.sharepoint.SP.QuickLaunchOptions.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

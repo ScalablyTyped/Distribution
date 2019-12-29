@@ -3,7 +3,7 @@ package typings.wreck.wreckMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.ClientRequest
 import typings.wreck.Anon_Http
-import typings.wreck.wreckNumbers.`false`
+import typings.wreck.wreckBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.atMaterialLineDashRipple
 
 import typings.atMaterialLineDashRipple.adapterMod.MDCLineRippleAdapter
-import typings.atMaterialLineDashRipple.atMaterialLineDashRippleMod.MDCLineRipple
 import typings.atMaterialLineDashRipple.foundationMod.default
 import typings.std.Element
 import scala.scalajs.js

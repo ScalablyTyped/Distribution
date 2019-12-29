@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@phenomnomnominal/tsquery/dist/src/matchers/has", JSImport.Namespace)
 @js.native
 object distSrcMatchersHasMod extends js.Object {
-  def has(node: Node, selector: TSQuerySelectorNode, `_`: js.Array[Node], options: TSQueryOptions): Boolean = js.native
+  def has(node: Node, selector: TSQuerySelectorNode, _underscore: js.Array[Node], options: TSQueryOptions): Boolean = js.native
 }
 

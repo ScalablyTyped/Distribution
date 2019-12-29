@@ -4,6 +4,7 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IClass
 import typings.extjs.Ext.IComponent
+import typings.extjs.Ext.dom.IElement
 import typings.extjs.Ext.util.IQueue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,11 +22,7 @@ trait IContext extends IBase {
   		* @param el Ext.dom.Element
   		*/
   var getEl: js.UndefOr[
-    js.Function2[
-      /* parent */ js.UndefOr[IContextItem], 
-      /* el */ js.UndefOr[typings.extjs.Ext.dom.IElement], 
-      Unit
-    ]
+    js.Function2[/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement], Unit]
   ] = js.undefined
   /** [Method] Invalidates one or more components layouts component and container
   		* @param components Ext.Component/Array An array of Components or a single Component.
@@ -41,11 +38,7 @@ trait IContext extends IBase {
   		* @param el Ext.dom.Element
   		*/
   var removeEl: js.UndefOr[
-    js.Function2[
-      /* parent */ js.UndefOr[IContextItem], 
-      /* el */ js.UndefOr[typings.extjs.Ext.dom.IElement], 
-      Unit
-    ]
+    js.Function2[/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement], Unit]
   ] = js.undefined
   /** [Method] Resets the given layout object
   		* @param layout Object
@@ -94,17 +87,17 @@ object IContext {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     flush: () => Unit = null,
     getCmp: /* cmp */ js.UndefOr[IComponent] => Unit = null,
-    getEl: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[typings.extjs.Ext.dom.IElement]) => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getEl: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IContext = null,
     invalidate: (/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[Boolean]) => Unit = null,
     layoutQueue: IQueue = null,
     mixins: js.Any = null,
-    removeEl: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[typings.extjs.Ext.dom.IElement]) => Unit = null,
+    removeEl: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit = null,
     requires: Array = null,
     resetLayout: (/* layout */ js.UndefOr[js.Any], /* ownerContext */ js.UndefOr[js.Any], /* firstTime */ js.UndefOr[js.Any]) => Unit = null,
     run: () => Boolean = null,

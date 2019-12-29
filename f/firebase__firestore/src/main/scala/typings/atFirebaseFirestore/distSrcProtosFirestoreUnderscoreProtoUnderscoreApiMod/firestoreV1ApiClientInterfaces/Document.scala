@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Document extends js.Object {
   var createTime: js.UndefOr[String] = js.undefined
-  var fields: js.UndefOr[
-    ApiClientObjectMap[
-      typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Value
-    ]
-  ] = js.undefined
+  var fields: js.UndefOr[ApiClientObjectMap[Value]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var updateTime: js.UndefOr[String] = js.undefined
 }
@@ -20,9 +16,7 @@ object Document {
   @scala.inline
   def apply(
     createTime: String = null,
-    fields: ApiClientObjectMap[
-      typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Value
-    ] = null,
+    fields: ApiClientObjectMap[Value] = null,
     name: String = null,
     updateTime: String = null
   ): Document = {

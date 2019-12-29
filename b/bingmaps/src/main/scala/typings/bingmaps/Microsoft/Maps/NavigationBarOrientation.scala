@@ -1,8 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.NavigationBarOrientation.horizontal
-import typings.bingmaps.Microsoft.Maps.NavigationBarOrientation.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

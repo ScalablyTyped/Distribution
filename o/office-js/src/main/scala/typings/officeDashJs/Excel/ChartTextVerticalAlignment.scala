@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartTextVerticalAlignment.bottom
-import typings.officeDashJs.Excel.ChartTextVerticalAlignment.center
-import typings.officeDashJs.Excel.ChartTextVerticalAlignment.distributed
-import typings.officeDashJs.Excel.ChartTextVerticalAlignment.justify
-import typings.officeDashJs.Excel.ChartTextVerticalAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

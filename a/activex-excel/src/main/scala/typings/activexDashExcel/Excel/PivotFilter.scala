@@ -13,7 +13,8 @@ class PivotFilter protected () extends js.Object {
   val DataCubeField: CubeField = js.native
   val DataField: typings.activexDashExcel.Excel.PivotField = js.native
   val Description: String = js.native
-  var `Excel.PivotFilter_typekey`: PivotFilter = js.native
+  @JSName("Excel.PivotFilter_typekey")
+  var ExcelDotPivotFilter_typekey: PivotFilter = js.native
   val FilterType: XlPivotFilterType = js.native
   val IsMemberPropertyFilter: Boolean = js.native
   val MemberPropertyField: typings.activexDashExcel.Excel.PivotField = js.native

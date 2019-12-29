@@ -11,7 +11,8 @@ class ProtectedViewWindows protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ProtectedViewWindows_typekey`: ProtectedViewWindows = js.native
+  @JSName("PowerPoint.ProtectedViewWindows_typekey")
+  var PowerPointDotProtectedViewWindows_typekey: ProtectedViewWindows = js.native
   def Item(Index: Double): ProtectedViewWindow = js.native
   /**
     * @param string [ReadPassword='']

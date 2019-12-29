@@ -13,7 +13,7 @@ trait MouseoverEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the TagCloud model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TagCloud.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** return current tag name
     */
   var text: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object MouseoverEventArgs {
   def apply(
     URL: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.TagCloud.Model = null,
+    model: Model = null,
     text: String = null,
     `type`: String = null
   ): MouseoverEventArgs = {

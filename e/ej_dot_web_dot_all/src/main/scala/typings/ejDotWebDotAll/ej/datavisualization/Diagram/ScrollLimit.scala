@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ScrollLimit.Infinite
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ScrollLimit.Limited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

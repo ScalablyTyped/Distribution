@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class SoundNote protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.SoundNote_typekey`: SoundNote = js.native
+  @JSName("Excel.SoundNote_typekey")
+  var ExcelDotSoundNote_typekey: SoundNote = js.native
   val Parent: js.Any = js.native
   def Delete(): js.Any = js.native
   def Import(Filename: String): js.Any = js.native

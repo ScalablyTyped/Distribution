@@ -54,7 +54,8 @@ class Paragraph protected () extends js.Object {
   val TextID: Double = js.native
   var TextboxTightWrap: WdTextboxTightWrap = js.native
   var WidowControl: Double = js.native
-  var `Word.Paragraph_typekey`: Paragraph = js.native
+  @JSName("Word.Paragraph_typekey")
+  var WordDotParagraph_typekey: Paragraph = js.native
   var WordWrap: Double = js.native
   def CloseUp(): Unit = js.native
   def Indent(): Unit = js.native

@@ -2,8 +2,8 @@ package typings.cytoscape.cytoscapeMod
 
 import typings.cytoscape.Anon_Degree
 import typings.cytoscape.Anon_MaxDegree
+import typings.cytoscape.cytoscapeBooleans.`false`
 import typings.cytoscape.cytoscapeNumbers.`10`
-import typings.cytoscape.cytoscapeNumbers.`false`
 import typings.cytoscape.cytoscapeStrings.concentric
 import scala.scalajs.js
 import scala.scalajs.js.`|`

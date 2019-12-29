@@ -30,7 +30,7 @@ class Header ()
   var renderNewCell: js.Any = js.native
   var wrapInDragReorderable: js.Any = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MHeader(`_`: IInternalHeaderProps, prevState: IHeaderState): Unit = js.native
+  def componentDidUpdate_MHeader(_underscore: IInternalHeaderProps, prevState: IHeaderState): Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MHeader(): Boolean = js.native
   @JSName("shouldComponentUpdate")

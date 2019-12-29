@@ -1,10 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.commentFieldRequired
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.disablePostSendingDialog
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.emailFieldHidden
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.emailFieldOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,25 +12,19 @@ sealed trait invocationOptions extends js.Object
 @js.native
 object invocationOptions extends js.Object {
   @js.native
-  sealed trait commentFieldRequired
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions
+  sealed trait commentFieldRequired extends invocationOptions
   
   @js.native
-  sealed trait disablePostSendingDialog
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions
+  sealed trait disablePostSendingDialog extends invocationOptions
   
   @js.native
-  sealed trait emailFieldHidden
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions
+  sealed trait emailFieldHidden extends invocationOptions
   
   @js.native
-  sealed trait emailFieldOptional
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions
+  sealed trait emailFieldOptional extends invocationOptions
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[
-    typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions with Double
-  ] = js.native
+  def apply(value: Double): js.UndefOr[invocationOptions with Double] = js.native
   /* 2 */ @js.native
   object commentFieldRequired extends TopLevel[commentFieldRequired with Double]
   

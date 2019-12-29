@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tls", "getCiphers")
 @js.native
 object getCiphers extends js.Object {
-  def apply(): js.Array[java.lang.String] = js.native
+  def apply(): js.Array[String] = js.native
 }
 

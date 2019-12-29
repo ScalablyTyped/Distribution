@@ -8,12 +8,6 @@ import scala.scalajs.js.annotation._
 
 object slocStrings {
   @js.native
-  sealed trait JS extends Extension
-  
-  @js.native
-  sealed trait SCALA extends Extension
-  
-  @js.native
   sealed trait asm extends Extension
   
   @js.native
@@ -149,10 +143,13 @@ object slocStrings {
   sealed trait jade extends Extension
   
   @js.native
-  sealed trait java extends Extension
+  sealed trait java_ extends Extension
   
   @js.native
   sealed trait jl extends Extension
+  
+  @js.native
+  sealed trait js_ extends Extension
   
   @js.native
   sealed trait jsx extends Extension
@@ -242,6 +239,9 @@ object slocStrings {
   sealed trait sass extends Extension
   
   @js.native
+  sealed trait scala_ extends Extension
+  
+  @js.native
   sealed trait scss extends Extension
   
   @js.native
@@ -292,10 +292,6 @@ object slocStrings {
   @js.native
   sealed trait yaml extends Extension
   
-  @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
-  @scala.inline
-  def SCALA: SCALA = "scala".asInstanceOf[SCALA]
   @scala.inline
   def asm: asm = "asm".asInstanceOf[asm]
   @scala.inline
@@ -387,9 +383,11 @@ object slocStrings {
   @scala.inline
   def jade: jade = "jade".asInstanceOf[jade]
   @scala.inline
-  def java: java = "java".asInstanceOf[java]
+  def java_ : java_ = "java".asInstanceOf[java_]
   @scala.inline
   def jl: jl = "jl".asInstanceOf[jl]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def jsx: jsx = "jsx".asInstanceOf[jsx]
   @scala.inline
@@ -448,6 +446,8 @@ object slocStrings {
   def rs: rs = "rs".asInstanceOf[rs]
   @scala.inline
   def sass: sass = "sass".asInstanceOf[sass]
+  @scala.inline
+  def scala_ : scala_ = "scala".asInstanceOf[scala_]
   @scala.inline
   def scss: scss = "scss".asInstanceOf[scss]
   @scala.inline

@@ -17,7 +17,7 @@ trait DropEventArgs extends js.Object {
   var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the sheet index.
     */
   var sheetIdx: js.UndefOr[Double] = js.undefined
@@ -35,7 +35,7 @@ object DropEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     currentCell: js.Any = null,
     dragAndDropRange: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     sheetIdx: Int | Double = null,
     target: HTMLElement = null,
     `type`: String = null

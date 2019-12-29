@@ -1,12 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ListDataValidationType.choiceField
-import typings.sharepoint.SP.ListDataValidationType.minMaxField
-import typings.sharepoint.SP.ListDataValidationType.requiredField
-import typings.sharepoint.SP.ListDataValidationType.textField
-import typings.sharepoint.SP.ListDataValidationType.userFormulaField
-import typings.sharepoint.SP.ListDataValidationType.userFormulaItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

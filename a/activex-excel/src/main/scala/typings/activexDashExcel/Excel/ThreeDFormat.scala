@@ -28,7 +28,8 @@ class ThreeDFormat protected () extends js.Object {
   var ContourWidth: Double = js.native
   val Creator: Double = js.native
   var Depth: Double = js.native
-  var `Excel.ThreeDFormat_typekey`: ThreeDFormat = js.native
+  @JSName("Excel.ThreeDFormat_typekey")
+  var ExcelDotThreeDFormat_typekey: ThreeDFormat = js.native
   val ExtrusionColor: ColorFormat = js.native
   var ExtrusionColorType: MsoExtrusionColorType = js.native
   var FieldOfView: Double = js.native

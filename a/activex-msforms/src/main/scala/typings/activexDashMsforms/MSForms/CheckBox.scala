@@ -28,7 +28,8 @@ class CheckBox protected () extends js.Object {
   var ForeColor: Double = js.native
   var GroupName: String = js.native
   var Locked: Boolean = js.native
-  var `MSForms.CheckBox_typekey`: CheckBox = js.native
+  @JSName("MSForms.CheckBox_typekey")
+  var MSFormsDotCheckBox_typekey: CheckBox = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var MultiSelect: fmMultiSelect = js.native

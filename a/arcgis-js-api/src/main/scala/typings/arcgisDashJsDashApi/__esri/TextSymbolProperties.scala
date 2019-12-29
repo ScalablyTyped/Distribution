@@ -41,7 +41,7 @@ trait TextSymbolProperties extends SymbolProperties {
     */
   var borderLineSize: js.UndefOr[Double] = js.undefined
   /**
-    * The [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html) used to style the text. This property allows the developer to set the font's family, decoration, size, style, and weight properties.
+    * The [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html) used to style the text. This property allows the developer to set the font's family, decoration, size, style, and weight properties.  See the [Labeling guide page](https://developers.arcgis.com/javascript/latest/guide/labeling/index.html) for more information and known limitations.
     * > **Known Limitations**  This property is not fully supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#font)
@@ -65,8 +65,10 @@ trait TextSymbolProperties extends SymbolProperties {
     */
   var haloSize: js.UndefOr[Double | String] = js.undefined
   /**
-    * Adjusts the horizontal alignment of the text in multi-line labels.
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * Adjusts the horizontal alignment of the text in multi-lines.
+    * > **Known Limitations**
+    *   * This property is not currently supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * This property only applies when TextSymbol is not used for labelling purposes. The `horizontalAlignment` for labels is inferred from the [labelPlacement](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelPlacement) value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#horizontalAlignment)
     *

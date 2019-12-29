@@ -12,7 +12,8 @@ class Action protected () extends js.Object {
   val Content: String = js.native
   val Coordinate: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Action_typekey`: Action = js.native
+  @JSName("Excel.Action_typekey")
+  var ExcelDotAction_typekey: Action = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
   val Type: XlActionType = js.native

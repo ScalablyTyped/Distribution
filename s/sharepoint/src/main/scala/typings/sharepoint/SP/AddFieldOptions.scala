@@ -1,13 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.AddFieldOptions.addFieldCheckDisplayName
-import typings.sharepoint.SP.AddFieldOptions.addFieldInternalNameHint
-import typings.sharepoint.SP.AddFieldOptions.addFieldToDefaultView
-import typings.sharepoint.SP.AddFieldOptions.addToAllContentTypes
-import typings.sharepoint.SP.AddFieldOptions.addToDefaultContentType
-import typings.sharepoint.SP.AddFieldOptions.addToNoContentType
-import typings.sharepoint.SP.AddFieldOptions.defaultValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

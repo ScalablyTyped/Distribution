@@ -7,8 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IToastrConfig
-  extends typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToastConfig
-     with typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToastContainerConfig
+  extends IToastConfig
+     with IToastContainerConfig
 
 object IToastrConfig {
   @scala.inline
@@ -24,9 +24,9 @@ object IToastrConfig {
     maxOpened: Int | Double = null,
     messageClass: String = null,
     newestOnTop: js.UndefOr[Boolean] = js.undefined,
-    onHidden: (/* wasClicked */ Boolean, /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast) => Unit = null,
-    onShown: /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast => Unit = null,
-    onTap: /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast => Unit = null,
+    onHidden: (/* wasClicked */ Boolean, /* toast */ IToast) => Unit = null,
+    onShown: /* toast */ IToast => Unit = null,
+    onTap: /* toast */ IToast => Unit = null,
     positionClass: String = null,
     preventDuplicates: js.UndefOr[Boolean] = js.undefined,
     preventOpenDuplicates: js.UndefOr[Boolean] = js.undefined,

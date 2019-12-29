@@ -10,7 +10,8 @@ class AutoFormatRules protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.AutoFormatRules_typekey`: AutoFormatRules = js.native
+  @JSName("Outlook.AutoFormatRules_typekey")
+  var OutlookDotAutoFormatRules_typekey: AutoFormatRules = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String): AutoFormatRule = js.native

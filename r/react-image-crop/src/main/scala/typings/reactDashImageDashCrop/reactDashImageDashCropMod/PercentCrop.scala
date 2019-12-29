@@ -1,13 +1,13 @@
 package typings.reactDashImageDashCrop.reactDashImageDashCropMod
 
-import typings.reactDashImageDashCrop.reactDashImageDashCropStrings.`%`
+import typings.reactDashImageDashCrop.reactDashImageDashCropStrings.Percentsign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PercentCrop extends Crop {
   @JSName("unit")
-  var unit_PercentCrop: js.UndefOr[`%`] = js.undefined
+  var unit_PercentCrop: js.UndefOr[Percentsign] = js.undefined
 }
 
 object PercentCrop {
@@ -15,7 +15,7 @@ object PercentCrop {
   def apply(
     aspect: Int | Double = null,
     height: Int | Double = null,
-    unit: `%` = null,
+    unit: Percentsign = null,
     width: Int | Double = null,
     x: Int | Double = null,
     y: Int | Double = null

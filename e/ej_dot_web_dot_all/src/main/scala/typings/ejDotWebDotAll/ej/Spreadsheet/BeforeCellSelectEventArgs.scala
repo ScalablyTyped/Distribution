@@ -13,7 +13,7 @@ trait BeforeCellSelectEventArgs extends js.Object {
   var currRange: js.UndefOr[js.Array[_]] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the previous cell range.
     */
   var prevRange: js.UndefOr[js.Array[_]] = js.undefined
@@ -27,7 +27,7 @@ object BeforeCellSelectEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     currRange: js.Array[_] = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     prevRange: js.Array[_] = null,
     `type`: String = null
   ): BeforeCellSelectEventArgs = {

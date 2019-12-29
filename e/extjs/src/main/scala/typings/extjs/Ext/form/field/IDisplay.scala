@@ -4,13 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IDisplay
-  extends typings.extjs.Ext.form.field.IBase {
+trait IDisplay extends IBase {
   /** [Method] Returns the raw value of the field without performing any normalization conversion or validation
   		* @returns String value The raw String value of the field
   		*/
   @JSName("getRawValue")
-  var getRawValue_IDisplay: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRawValue_IDisplay: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Boolean) */
   var htmlEncode: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
@@ -37,8 +36,8 @@ trait IDisplay
 object IDisplay {
   @scala.inline
   def apply(
-    IBase: typings.extjs.Ext.form.field.IBase = null,
-    getRawValue: () => java.lang.String = null,
+    IBase: IBase = null,
+    getRawValue: () => String = null,
     htmlEncode: js.UndefOr[Boolean] = js.undefined,
     isDirty: () => Boolean = null,
     isValid: () => Boolean = null,

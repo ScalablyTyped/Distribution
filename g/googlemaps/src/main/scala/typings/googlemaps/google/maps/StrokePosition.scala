@@ -1,9 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.StrokePosition.CENTER
-import typings.googlemaps.google.maps.StrokePosition.INSIDE
-import typings.googlemaps.google.maps.StrokePosition.OUTSIDE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.typedoc
 import org.scalablytyped.runtime.StringDictionary
 import typings.typedoc.distLibModelsReflectionGroupMod.ReflectionGroup
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
-import typings.typedoc.distLibModelsSourcesDirectoryMod.SourceDirectory
 import typings.typedoc.distLibModelsSourcesFileMod.SourceFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`

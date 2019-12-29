@@ -31,7 +31,8 @@ class ContentControl protected () extends js.Object {
   var Temporary: Boolean = js.native
   var Title: String = js.native
   var Type: WdContentControlType = js.native
-  var `Word.ContentControl_typekey`: ContentControl = js.native
+  @JSName("Word.ContentControl_typekey")
+  var WordDotContentControl_typekey: ContentControl = js.native
   val XMLMapping: typings.activexDashWord.Word.XMLMapping = js.native
   def Copy(): Unit = js.native
   def Cut(): Unit = js.native

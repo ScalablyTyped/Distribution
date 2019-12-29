@@ -1,13 +1,6 @@
 package typings.atUirouterCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atUirouterCore.libCommonTraceMod.Category
-import typings.atUirouterCore.libCommonTraceMod.Category.HOOK
-import typings.atUirouterCore.libCommonTraceMod.Category.RESOLVE
-import typings.atUirouterCore.libCommonTraceMod.Category.TRANSITION
-import typings.atUirouterCore.libCommonTraceMod.Category.UIVIEW
-import typings.atUirouterCore.libCommonTraceMod.Category.VIEWCONFIG
-import typings.atUirouterCore.libCommonTraceMod.Trace
 import typings.atUirouterCore.libPathPathNodeMod.PathNode
 import typings.atUirouterCore.libResolveInterfaceMod.PolicyWhen
 import typings.atUirouterCore.libResolveResolvableMod.Resolvable

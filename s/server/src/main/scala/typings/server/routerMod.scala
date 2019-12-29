@@ -1,12 +1,5 @@
 package typings.server
 
-import typings.server.routerMod.delType
-import typings.server.routerMod.errorType
-import typings.server.routerMod.getType
-import typings.server.routerMod.postType
-import typings.server.routerMod.putType
-import typings.server.routerMod.socketType
-import typings.server.routerMod.subType
 import typings.server.typingsCommonMod.Middleware
 import typings.server.typingsCommonMod.Middlewares
 import scala.scalajs.js

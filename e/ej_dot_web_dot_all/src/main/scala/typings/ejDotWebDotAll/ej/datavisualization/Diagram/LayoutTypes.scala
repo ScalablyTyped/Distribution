@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.RadialTree
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.SymmetricLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

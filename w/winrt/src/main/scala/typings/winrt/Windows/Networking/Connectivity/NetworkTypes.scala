@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Connectivity.NetworkTypes.internet
-import typings.winrt.Windows.Networking.Connectivity.NetworkTypes.none
-import typings.winrt.Windows.Networking.Connectivity.NetworkTypes.privateNetwork
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

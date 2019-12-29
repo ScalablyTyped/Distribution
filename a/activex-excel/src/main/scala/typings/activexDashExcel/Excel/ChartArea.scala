@@ -11,7 +11,8 @@ class ChartArea protected () extends js.Object {
   var AutoScaleFont: js.Any = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ChartArea_typekey`: ChartArea = js.native
+  @JSName("Excel.ChartArea_typekey")
+  var ExcelDotChartArea_typekey: ChartArea = js.native
   val Fill: ChartFillFormat = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Format: ChartFormat = js.native

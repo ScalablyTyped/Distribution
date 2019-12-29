@@ -24,7 +24,8 @@ class Legend protected () extends js.Object {
   var Shadow: Boolean = js.native
   var Top: Double = js.native
   var Width: Double = js.native
-  var `Word.Legend_typekey`: Legend = js.native
+  @JSName("Word.Legend_typekey")
+  var WordDotLegend_typekey: Legend = js.native
   def Clear(): js.Any = js.native
   def Delete(): js.Any = js.native
   def LegendEntries(): js.Any = js.native

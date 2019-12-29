@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class ChartColorFormat protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ChartColorFormat_typekey`: ChartColorFormat = js.native
+  @JSName("Excel.ChartColorFormat_typekey")
+  var ExcelDotChartColorFormat_typekey: ChartColorFormat = js.native
   val Parent: js.Any = js.native
   val RGB: Double = js.native
   var SchemeColor: Double = js.native

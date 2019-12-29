@@ -1,8 +1,8 @@
 package typings.reactDashAce.libTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashAce.reactDashAceNumbers.`false`
-import typings.reactDashAce.reactDashAceNumbers.`true`
+import typings.reactDashAce.reactDashAceBooleans.`false`
+import typings.reactDashAce.reactDashAceBooleans.`true`
 import typings.reactDashAce.reactDashAceStrings.ace
 import typings.reactDashAce.reactDashAceStrings.always
 import typings.reactDashAce.reactDashAceStrings.line

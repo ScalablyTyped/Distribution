@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵNgClassImpl")
+@JSImport("@angular/common", "\u0275NgClassImpl")
 @js.native
 abstract class ɵNgClassImpl () extends js.Object {
   def applyChanges(): Unit = js.native

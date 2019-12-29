@@ -10,6 +10,10 @@ trait Config extends js.Object {
     */
   var includeStack: Boolean
   /**
+    * Default: ['then', 'catch', 'inspect', 'toJSON']
+    */
+  var proxyExcludedKeys: js.Array[String]
+  /**
     * Default: true
     */
   var showDiff: Boolean
@@ -17,12 +21,22 @@ trait Config extends js.Object {
     * Default: 40
     */
   var truncateThreshold: Double
+  /**
+    * Default: true
+    */
+  var useProxy: Boolean
 }
 
 object Config {
   @scala.inline
-  def apply(includeStack: Boolean, showDiff: Boolean, truncateThreshold: Double): Config = {
-    val __obj = js.Dynamic.literal(includeStack = includeStack.asInstanceOf[js.Any], showDiff = showDiff.asInstanceOf[js.Any], truncateThreshold = truncateThreshold.asInstanceOf[js.Any])
+  def apply(
+    includeStack: Boolean,
+    proxyExcludedKeys: js.Array[String],
+    showDiff: Boolean,
+    truncateThreshold: Double,
+    useProxy: Boolean
+  ): Config = {
+    val __obj = js.Dynamic.literal(includeStack = includeStack.asInstanceOf[js.Any], proxyExcludedKeys = proxyExcludedKeys.asInstanceOf[js.Any], showDiff = showDiff.asInstanceOf[js.Any], truncateThreshold = truncateThreshold.asInstanceOf[js.Any], useProxy = useProxy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

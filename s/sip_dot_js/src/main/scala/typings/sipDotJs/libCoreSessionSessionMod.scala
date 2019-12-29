@@ -13,17 +13,6 @@ import typings.sipDotJs.libCoreMessagesMod.URI
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.RequestOptions
 import typings.sipDotJs.libCoreSessionSessionDashDelegateMod.SessionDelegate
-import typings.sipDotJs.libCoreSessionSessionMod.SessionState
-import typings.sipDotJs.libCoreSessionSessionMod.SessionState.AckWait
-import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Confirmed
-import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Early
-import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Initial
-import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Terminated
-import typings.sipDotJs.libCoreSessionSessionMod.SignalingState
-import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Closed
-import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.HaveLocalOffer
-import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.HaveRemoteOffer
-import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Stable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -186,8 +175,7 @@ object libCoreSessionSessionMod extends js.Object {
     object HaveRemoteOffer extends TopLevel[HaveRemoteOffer with String]
     
     /* "Initial" */ @js.native
-    object Initial
-      extends TopLevel[typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Initial with String]
+    object Initial extends TopLevel[Initial with String]
     
     /* "Stable" */ @js.native
     object Stable extends TopLevel[Stable with String]

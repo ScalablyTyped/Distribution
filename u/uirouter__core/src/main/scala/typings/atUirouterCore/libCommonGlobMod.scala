@@ -1,6 +1,5 @@
 package typings.atUirouterCore
 
-import typings.atUirouterCore.libCommonGlobMod.Glob
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

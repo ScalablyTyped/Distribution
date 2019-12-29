@@ -12,7 +12,7 @@ package object vscodeDashLanguageserverMod {
   type ClientFeature[P] = Feature[RemoteClient, P]
   type ConsoleFeature[P] = Feature[RemoteConsole, P]
   type Feature[B, P] = js.Function1[/* Base */ Instantiable0[B], Instantiable0[B with P]]
-  type IConnection = Connection[`_`, `_`, `_`, `_`, `_`, `_`]
+  type IConnection = Connection[_underscore, _underscore, _underscore, _underscore, _underscore, _underscore]
   type RemoteWorkspace = _RemoteWorkspace with Configuration with WorkspaceFolders
   type TelemetryFeature[P] = Feature[Telemetry, P]
   type TracerFeature[P] = Feature[typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Tracer, P]

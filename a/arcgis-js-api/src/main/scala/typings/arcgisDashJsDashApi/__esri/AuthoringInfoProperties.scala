@@ -12,12 +12,12 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`standard-deviatio
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`univariate-color-size`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.manual
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.quantile
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
@@ -68,7 +68,7 @@ trait AuthoringInfoProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#lengthUnit)
     */
   var lengthUnit: js.UndefOr[
-    inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees`
+    inches | feet_ | yards | miles_ | `nautical-miles` | millimeters | centimeters | decimeters | meters_ | kilometers_ | `decimal-degrees`
   ] = js.undefined
   /**
     * Indicates the value of the upper handle if a slider was used to generate the dot value for dot density renderer.
@@ -119,7 +119,7 @@ object AuthoringInfoProperties {
     field2: AuthoringInfoField2 = null,
     fields: js.Array[String] = null,
     focus: String = null,
-    lengthUnit: inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees` = null,
+    lengthUnit: inches | feet_ | yards | miles_ | `nautical-miles` | millimeters | centimeters | decimeters | meters_ | kilometers_ | `decimal-degrees` = null,
     maxSliderValue: Int | Double = null,
     minSliderValue: Int | Double = null,
     numClasses: Int | Double = null,

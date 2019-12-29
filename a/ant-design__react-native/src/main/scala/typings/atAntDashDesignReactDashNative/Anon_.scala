@@ -10,14 +10,14 @@ trait Anon_ extends js.Object {
   var loading: Boolean = js.native
   var pressIn: Boolean = js.native
   def onHideUnderlay(): Unit = js.native
-  def onHideUnderlay(`_`: js.Any): Unit = js.native
+  def onHideUnderlay(_underscore: js.Any): Unit = js.native
   def onPress(): Unit = js.native
-  def onPress(`_`: js.Any): Unit = js.native
+  def onPress(_underscore: js.Any): Unit = js.native
   def onPressIn(): Unit = js.native
-  def onPressIn(`_`: js.Any): Unit = js.native
+  def onPressIn(_underscore: js.Any): Unit = js.native
   def onPressOut(): Unit = js.native
-  def onPressOut(`_`: js.Any): Unit = js.native
+  def onPressOut(_underscore: js.Any): Unit = js.native
   def onShowUnderlay(): Unit = js.native
-  def onShowUnderlay(`_`: js.Any): Unit = js.native
+  def onShowUnderlay(_underscore: js.Any): Unit = js.native
 }
 

@@ -12,6 +12,9 @@ trait CreateConfig extends js.Object {
   var isWebView: js.UndefOr[Boolean] = js.native
   var key: String = js.native
   var language: js.UndefOr[Language] = js.native
+  var oauthNonce: js.UndefOr[String] = js.native
+  var oauthRedirectUri: js.UndefOr[String] = js.native
+  var oauthStateId: js.UndefOr[String] = js.native
   var onEvent: js.UndefOr[OnEvent] = js.native
   var onExit: js.UndefOr[OnExit] = js.native
   var onLoad: js.UndefOr[OnLoad] = js.native
@@ -21,6 +24,7 @@ trait CreateConfig extends js.Object {
   var token: js.UndefOr[String] = js.native
   var userEmailAddress: js.UndefOr[String] = js.native
   var userLegalName: js.UndefOr[String] = js.native
+  var webhook: js.UndefOr[String] = js.native
   def onSuccess(public_token: String, metadata: OnSuccessMetaData): Unit = js.native
 }
 

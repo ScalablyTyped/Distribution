@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "material-ui__icons"
-version := "4.5.1-1932a9"
+version := "4.5.1-ccc7c2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191203Z-6fdd70",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20191207Z-0c6220",
-  "org.scalablytyped" %%% "jss" % "10.0.0-c5a653",
-  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-723a6c",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-a9bf73",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
-  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20191126Z-873168",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191203Z-fcbde6",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-32adec",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20191207Z-9813a7",
+  "org.scalablytyped" %%% "jss" % "10.0.1-21a707",
+  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-15a6d2",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-54a437",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-bfe2c5",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-73a5bc",
+  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20191126Z-93a354",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

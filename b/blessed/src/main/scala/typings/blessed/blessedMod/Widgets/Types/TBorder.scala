@@ -1,6 +1,7 @@
 package typings.blessed.blessedMod.Widgets.Types
 
 import typings.blessed.blessedStrings.bg
+import typings.blessed.blessedStrings.line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,7 @@ trait TBorder extends js.Object {
   /**
     * Type of border (line or bg). bg by default.
     */
-  var `type`: js.UndefOr[typings.blessed.blessedStrings.line | bg] = js.undefined
+  var `type`: js.UndefOr[line | bg] = js.undefined
   var underline: js.UndefOr[String] = js.undefined
 }
 
@@ -33,7 +34,7 @@ object TBorder {
     bold: String = null,
     ch: String = null,
     fg: Int | Double = null,
-    `type`: typings.blessed.blessedStrings.line | bg = null,
+    `type`: line | bg = null,
     underline: String = null
   ): TBorder = {
     val __obj = js.Dynamic.literal()

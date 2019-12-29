@@ -1,7 +1,7 @@
 
 # Scala.js typings for googlemaps
 
-Typings are for version 3.38
+Typings are for version 3.39
 
 ## Library description:
 A simple way to query the Google Maps API from Node.js

@@ -5,8 +5,6 @@ import typings.dndDashCore.libInterfacesMod.BeginDragOptions
 import typings.dndDashCore.libInterfacesMod.DragDropManager
 import typings.dndDashCore.libInterfacesMod.HoverOptions
 import typings.dndDashCore.libInterfacesMod.Identifier
-import typings.reactDashDndDashTestDashBackend.libTestBackendMod.TestBackend
-import typings.reactDashDndDashTestDashBackend.libTestBackendMod.TestBackendImpl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

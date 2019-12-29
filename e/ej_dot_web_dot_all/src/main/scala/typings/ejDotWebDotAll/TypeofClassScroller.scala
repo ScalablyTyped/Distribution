@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassScroller
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Scroller]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Scroller] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Scroller]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Scroller] {
   var Locale: js.Any = js.native
   var fn: Scroller = js.native
 }

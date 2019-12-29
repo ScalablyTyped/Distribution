@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 object atFirebasePerformanceStrings {
   @js.native
-  sealed trait `@firebase/performance/config` extends js.Object
+  sealed trait `@firebaseSlashperformanceSlashconfig` extends js.Object
   
   @js.native
-  sealed trait `@firebase/performance/configexpire` extends js.Object
+  sealed trait `@firebaseSlashperformanceSlashconfigexpire` extends js.Object
   
   @js.native
   sealed trait `FB not default` extends ErrorCode
@@ -95,9 +95,9 @@ object atFirebasePerformanceStrings {
   sealed trait `trace stopped` extends ErrorCode
   
   @scala.inline
-  def `@firebase/performance/config`: `@firebase/performance/config` = "@firebase/performance/config".asInstanceOf[`@firebase/performance/config`]
+  def `@firebaseSlashperformanceSlashconfig`: `@firebaseSlashperformanceSlashconfig` = "@firebase/performance/config".asInstanceOf[`@firebaseSlashperformanceSlashconfig`]
   @scala.inline
-  def `@firebase/performance/configexpire`: `@firebase/performance/configexpire` = "@firebase/performance/configexpire".asInstanceOf[`@firebase/performance/configexpire`]
+  def `@firebaseSlashperformanceSlashconfigexpire`: `@firebaseSlashperformanceSlashconfigexpire` = "@firebase/performance/configexpire".asInstanceOf[`@firebaseSlashperformanceSlashconfigexpire`]
   @scala.inline
   def `FB not default`: `FB not default` = "FB not default".asInstanceOf[`FB not default`]
   @scala.inline

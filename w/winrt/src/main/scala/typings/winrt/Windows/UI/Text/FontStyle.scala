@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.FontStyle.italic
-import typings.winrt.Windows.UI.Text.FontStyle.normal
-import typings.winrt.Windows.UI.Text.FontStyle.oblique
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

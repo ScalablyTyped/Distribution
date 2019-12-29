@@ -1,5 +1,6 @@
 package typings.fridaDashGum.Java
 
+import typings.fridaDashGum.NativeFunctionOptions
 import typings.fridaDashGum.NativePointer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,5 +43,12 @@ trait Method extends js.Object {
     * Queries whether the method may be invoked with a given argument list.
     */
   def canInvokeWith(args: js.Any*): Boolean = js.native
+  /**
+    * Makes a new method wrapper with custom NativeFunction options.
+    *
+    * Useful for e.g. setting `traps: "all"` to perform execution tracing
+    * in conjunction with Stalker.
+    */
+  def clone(options: NativeFunctionOptions): Method = js.native
 }
 

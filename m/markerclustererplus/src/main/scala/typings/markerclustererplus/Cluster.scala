@@ -4,6 +4,7 @@ import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.Map
 import typings.googlemaps.google.maps.Marker
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +52,7 @@ class Cluster protected () extends js.Object {
     * @return The map.
     * @ignore
     */
-  def getMap(): Map = js.native
+  def getMap(): Map[Element] = js.native
   /**
     * Returns the <code>MarkerClusterer</code> object with which the cluster is associated.
     *

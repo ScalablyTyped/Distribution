@@ -1,10 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.ObjectType.footer
-import typings.winjs.WinJS.UI.ObjectType.groupHeader
-import typings.winjs.WinJS.UI.ObjectType.header
-import typings.winjs.WinJS.UI.ObjectType.item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

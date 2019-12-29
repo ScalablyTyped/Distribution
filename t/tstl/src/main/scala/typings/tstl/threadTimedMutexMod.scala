@@ -3,7 +3,6 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Date
 import typings.tstl.baseThreadUnderscoreITimedLockableMod._ITimedLockable
-import typings.tstl.threadTimedMutexMod.TimedMutex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

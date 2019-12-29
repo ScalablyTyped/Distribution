@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.SignatureHelpTriggerKind.ContentChange
-import typings.vscode.vscodeMod.SignatureHelpTriggerKind.Invoke
-import typings.vscode.vscodeMod.SignatureHelpTriggerKind.TriggerCharacter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGElementInstance")
 @js.native
 class SVGElementInstance protected () extends js.Object {
-  var `MSHTML.SVGElementInstance_typekey`: SVGElementInstance = js.native
+  @JSName("MSHTML.SVGElementInstance_typekey")
+  var MSHTMLDotSVGElementInstance_typekey: SVGElementInstance = js.native
   val childNodes: ISVGElementInstanceList = js.native
   val correspondingElement: ISVGElement = js.native
   val correspondingUseElement: ISVGUseElement = js.native

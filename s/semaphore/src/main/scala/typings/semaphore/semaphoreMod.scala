@@ -1,7 +1,5 @@
 package typings.semaphore
 
-import typings.semaphore.semaphoreMod.Semaphore
-import typings.semaphore.semaphoreMod.Task
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

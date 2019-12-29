@@ -2,7 +2,6 @@ package typings.rmcDashCalendar
 
 import typings.react.reactMod._Global_.JSX.Element
 import typings.rmcDashCalendar.libDateDataTypesMod.Models.MonthData
-import typings.rmcDashCalendar.libDatePickerMod.DatePicker
 import typings.std.CSSStyleDeclaration
 import typings.std.HTMLDivElement
 import scala.scalajs.js

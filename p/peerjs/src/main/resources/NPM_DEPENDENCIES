@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "peerjs" : "1.1.0"
+      "peerjs" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "peerjs" : "1.1.0"
+      "peerjs" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

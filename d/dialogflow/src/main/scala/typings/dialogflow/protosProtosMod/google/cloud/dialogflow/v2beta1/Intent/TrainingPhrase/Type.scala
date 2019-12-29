@@ -1,9 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.EXAMPLE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.TEMPLATE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type.TYPE_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

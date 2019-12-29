@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Available
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Offline
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class SolutionsModule protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Name: String = js.native
   val NavigationModuleType: OlNavigationModuleType = js.native
-  var `Outlook.SolutionsModule_typekey`: SolutionsModule = js.native
+  @JSName("Outlook.SolutionsModule_typekey")
+  var OutlookDotSolutionsModule_typekey: SolutionsModule = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

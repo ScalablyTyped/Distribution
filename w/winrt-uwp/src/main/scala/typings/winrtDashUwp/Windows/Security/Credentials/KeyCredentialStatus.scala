@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialStatus.credentialAlreadyExists
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialStatus.notFound
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialStatus.securityDeviceLocked
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialStatus.success
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialStatus.unknownError
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialStatus.userCanceled
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialStatus.userPrefersPassword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

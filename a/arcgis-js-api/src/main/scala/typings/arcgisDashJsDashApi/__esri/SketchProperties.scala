@@ -1,6 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.continuous
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.single
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.update
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -16,6 +19,27 @@ trait SketchProperties extends WidgetProperties {
     * @default ["point", "polyline", "polygon", "rectangle", "circle"]
     */
   var availableCreateTools: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed. By default, the user will be able to continuously create graphics with same geometry types.  **Possible Values:**
+    *
+    * Value | Description |
+    * ----- | ----------- |
+    * continuous | This is the default. Users can continue creating graphics with same geometry types.
+    * single | User can create a single graphic with the specified geometry type. User must choose an operation once the graphic is created.
+    * update | The graphic will be selected for an [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) operation once the `create` operation is completed.
+    *
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
+    *
+    * @default continuous
+    */
+  var creationMode: js.UndefOr[single | continuous | update] = js.undefined
+  /**
+    * Default create options set for the Sketch widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultCreateOptions)
+    */
+  var defaultCreateOptions: js.UndefOr[SketchDefaultCreateOptions] = js.undefined
   /**
     * Default update options set for the Sketch widget. Update options set on this property will be overwritten if the update options are changed when [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) method is called.
     *
@@ -61,6 +85,8 @@ object SketchProperties {
   def apply(
     availableCreateTools: js.Array[String] = null,
     container: String | HTMLElement = null,
+    creationMode: single | continuous | update = null,
+    defaultCreateOptions: SketchDefaultCreateOptions = null,
     defaultUpdateOptions: SketchDefaultUpdateOptions = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
     iconClass: String = null,
@@ -74,6 +100,8 @@ object SketchProperties {
     val __obj = js.Dynamic.literal()
     if (availableCreateTools != null) __obj.updateDynamic("availableCreateTools")(availableCreateTools.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (creationMode != null) __obj.updateDynamic("creationMode")(creationMode.asInstanceOf[js.Any])
+    if (defaultCreateOptions != null) __obj.updateDynamic("defaultCreateOptions")(defaultCreateOptions.asInstanceOf[js.Any])
     if (defaultUpdateOptions != null) __obj.updateDynamic("defaultUpdateOptions")(defaultUpdateOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])

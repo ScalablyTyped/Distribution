@@ -16,31 +16,6 @@ trait Marking extends js.Object
 
 object Marking {
   @scala.inline
-  def MultiDotMarking(
-    dots: js.Array[CalendarDot],
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    selectedColor: String = null
-  ): Marking = {
-    val __obj = js.Dynamic.literal(dots = dots.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Marking]
-  }
-  @scala.inline
-  def MultiPeriodMarking(periods: js.Array[Anon_Color]): Marking = {
-    val __obj = js.Dynamic.literal(periods = periods.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Marking]
-  }
-  @scala.inline
-  def CustomMarking(customStyles: MarkedDateCustomStyles): Marking = {
-    val __obj = js.Dynamic.literal(customStyles = customStyles.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Marking]
-  }
-  @scala.inline
   def DotMarking(
     activeOpacity: Int | Double = null,
     disableTouchEvent: js.UndefOr[Boolean] = js.undefined,
@@ -76,6 +51,31 @@ object Marking {
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (!js.isUndefined(startingDay)) __obj.updateDynamic("startingDay")(startingDay.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Marking]
+  }
+  @scala.inline
+  def MultiPeriodMarking(periods: js.Array[Anon_Color]): Marking = {
+    val __obj = js.Dynamic.literal(periods = periods.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Marking]
+  }
+  @scala.inline
+  def CustomMarking(customStyles: MarkedDateCustomStyles): Marking = {
+    val __obj = js.Dynamic.literal(customStyles = customStyles.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Marking]
+  }
+  @scala.inline
+  def MultiDotMarking(
+    dots: js.Array[CalendarDot],
+    disabled: js.UndefOr[Boolean] = js.undefined,
+    selected: js.UndefOr[Boolean] = js.undefined,
+    selectedColor: String = null
+  ): Marking = {
+    val __obj = js.Dynamic.literal(dots = dots.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Marking]
   }
 }

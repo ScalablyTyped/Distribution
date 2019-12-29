@@ -10,7 +10,8 @@ class PublishObjects protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.PublishObjects_typekey`: PublishObjects = js.native
+  @JSName("PowerPoint.PublishObjects_typekey")
+  var PowerPointDotPublishObjects_typekey: PublishObjects = js.native
   def Item(Index: Double): PublishObject = js.native
 }
 

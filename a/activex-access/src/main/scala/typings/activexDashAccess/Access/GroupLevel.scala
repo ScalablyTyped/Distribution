@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.GroupLevel")
 @js.native
 class GroupLevel protected () extends js.Object {
-  var `Access.GroupLevel_typekey`: GroupLevel = js.native
+  @JSName("Access.GroupLevel_typekey")
+  var AccessDotGroupLevel_typekey: GroupLevel = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var ControlSource: String = js.native
   var GroupFooter: Boolean = js.native

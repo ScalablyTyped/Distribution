@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.centimeter
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.foot
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.inch
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.meter
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.micron
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.millimeter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,7 +22,7 @@ package object styledDashComponentsMod {
   import typings.styledDashComponents.Anon_SuppressMultiMountWarning
   import typings.styledDashComponents.Anon_ThemeT
   import typings.styledDashComponents.WithOptionalThemeComponentPropsWithRefCT
-  import typings.styledDashComponents.styledDashComponentsNumbers.`false`
+  import typings.styledDashComponents.styledDashComponentsBooleans.`false`
 
   type AnyIfEmpty[T /* <: js.Object */] = T
   type AnyStyledComponent = StyledComponent[js.Any, js.Any, js.Any, js.Any | scala.Nothing]

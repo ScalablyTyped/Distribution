@@ -1,6 +1,5 @@
 package typings.atIonicAngular
 
-import typings.atIonicAngular.distProvidersEventsMod.EventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

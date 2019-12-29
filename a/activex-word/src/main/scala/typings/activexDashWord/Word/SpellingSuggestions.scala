@@ -12,7 +12,8 @@ class SpellingSuggestions protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val SpellingErrorType: WdSpellingErrorType = js.native
-  var `Word.SpellingSuggestions_typekey`: SpellingSuggestions = js.native
+  @JSName("Word.SpellingSuggestions_typekey")
+  var WordDotSpellingSuggestions_typekey: SpellingSuggestions = js.native
   def Item(Index: Double): SpellingSuggestion = js.native
 }
 

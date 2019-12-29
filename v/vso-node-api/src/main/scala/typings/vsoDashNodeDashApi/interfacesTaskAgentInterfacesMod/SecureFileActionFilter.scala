@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.SecureFileActionFilter.Manage
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.SecureFileActionFilter.None
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.SecureFileActionFilter.Use
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

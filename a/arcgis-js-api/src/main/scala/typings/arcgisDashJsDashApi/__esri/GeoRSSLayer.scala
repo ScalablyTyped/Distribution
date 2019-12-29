@@ -21,7 +21,7 @@ trait GeoRSSLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#pointSymbol)
     */
-  var pointSymbol: PictureMarkerSymbol = js.native
+  var pointSymbol: PictureMarkerSymbol | SimpleMarkerSymbol = js.native
   /**
     * Symbol used to represent polygon features from the GeoRSS feed.
     *

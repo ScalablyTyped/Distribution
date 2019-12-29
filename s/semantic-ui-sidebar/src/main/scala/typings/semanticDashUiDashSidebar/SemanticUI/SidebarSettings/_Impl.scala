@@ -131,25 +131,25 @@ trait _Impl extends js.Object {
   /**
     * Is called when a sidebar begins to hide or show
     */
-  def onChange(`this`: JQuery): Unit
+  def onChange(): Unit
   /**
     * Is called after a sidebar has finished animating out.
     */
-  def onHidden(`this`: JQuery): Unit
+  def onHidden(): Unit
   /**
     * Is called before a sidebar begins to animate out.
     */
-  def onHide(`this`: JQuery): Unit
+  def onHide(): Unit
   /**
     * Is called when a sidebar has finished animating in.
     */
-  def onShow(`this`: JQuery): Unit
+  def onShow(): Unit
   // endregion
   // region Callbacks
   /**
     * Is called when a sidebar begins animating in.
     */
-  def onVisible(`this`: JQuery): Unit
+  def onVisible(): Unit
 }
 
 object _Impl {
@@ -169,11 +169,11 @@ object _Impl {
     mobileTransition: String,
     name: String,
     namespace: String,
-    onChange: JQuery => Unit,
-    onHidden: JQuery => Unit,
-    onHide: JQuery => Unit,
-    onShow: JQuery => Unit,
-    onVisible: JQuery => Unit,
+    onChange: () => Unit,
+    onHidden: () => Unit,
+    onHide: () => Unit,
+    onShow: () => Unit,
+    onVisible: () => Unit,
     performance: Boolean,
     regExp: RegExpSettings,
     returnScroll: Boolean,
@@ -184,7 +184,7 @@ object _Impl {
     useLegacy: auto | Boolean,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], defaultTransition = defaultTransition.asInstanceOf[js.Any], delaySetup = delaySetup.asInstanceOf[js.Any], dimPage = dimPage.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], mobileTransition = mobileTransition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onHidden = js.Any.fromFunction1(onHidden), onHide = js.Any.fromFunction1(onHide), onShow = js.Any.fromFunction1(onShow), onVisible = js.Any.fromFunction1(onVisible), performance = performance.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], returnScroll = returnScroll.asInstanceOf[js.Any], scrollLock = scrollLock.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], useLegacy = useLegacy.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], defaultTransition = defaultTransition.asInstanceOf[js.Any], delaySetup = delaySetup.asInstanceOf[js.Any], dimPage = dimPage.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], mobileTransition = mobileTransition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onHidden = js.Any.fromFunction0(onHidden), onHide = js.Any.fromFunction0(onHide), onShow = js.Any.fromFunction0(onShow), onVisible = js.Any.fromFunction0(onVisible), performance = performance.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], returnScroll = returnScroll.asInstanceOf[js.Any], scrollLock = scrollLock.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], useLegacy = useLegacy.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

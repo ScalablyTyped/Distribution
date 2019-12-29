@@ -49,7 +49,7 @@ trait IStore extends IAbstractStore {
   		* @returns Object The average value, if no items exist, 0.
   		*/
   var average: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean], _]
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Config Option] (Boolean) */
   var buffered: js.UndefOr[Boolean] = js.undefined
@@ -71,7 +71,7 @@ trait IStore extends IAbstractStore {
   		*/
   var collect: js.UndefOr[
     js.Function3[
-      /* dataIndex */ js.UndefOr[java.lang.String], 
+      /* dataIndex */ js.UndefOr[String], 
       /* allowNull */ js.UndefOr[Boolean], 
       /* bypassFilter */ js.UndefOr[Boolean], 
       Array
@@ -98,7 +98,7 @@ trait IStore extends IAbstractStore {
   		* @param value String value to filter by (only if using a property string as the first argument)
   		*/
   var filter: js.UndefOr[
-    js.Function2[/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Filters by a function
   		* @param fn Function The function to be called. It will be passed the following parameters:
@@ -116,7 +116,7 @@ trait IStore extends IAbstractStore {
   		*/
   var find: js.UndefOr[
     js.Function6[
-      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* fieldName */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* startIndex */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
@@ -147,7 +147,7 @@ trait IStore extends IAbstractStore {
   		*/
   var findExact: js.UndefOr[
     js.Function3[
-      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* fieldName */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* startIndex */ js.UndefOr[Double], 
       Double
@@ -164,7 +164,7 @@ trait IStore extends IAbstractStore {
   		*/
   var findRecord: js.UndefOr[
     js.Function6[
-      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* fieldName */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* startIndex */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
@@ -196,12 +196,12 @@ trait IStore extends IAbstractStore {
   		* @param instance Ext.data.Model The model instance
   		* @returns String The string to compare when forming groups
   		*/
-  var getGroupString: js.UndefOr[js.Function1[/* instance */ js.UndefOr[IModel], java.lang.String]] = js.undefined
+  var getGroupString: js.UndefOr[js.Function1[/* instance */ js.UndefOr[IModel], String]] = js.undefined
   /** [Method] Returns an array containing the result of applying grouping to the records in this store
   		* @param groupName String Pass in an optional groupName argument to access a specific group as defined by getGroupString.
   		* @returns Object/Object[] The grouped data
   		*/
-  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Determines the page from a record index
   		* @param index Number The record index
   		* @returns Number The page the record belongs to
@@ -230,16 +230,12 @@ trait IStore extends IAbstractStore {
   		* @param direction String The overall direction to group the data by.
   		*/
   var group: js.UndefOr[
-    js.Function2[
-      /* groupers */ js.UndefOr[js.Any], 
-      /* direction */ js.UndefOr[java.lang.String], 
-      Unit
-    ]
+    js.Function2[/* groupers */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Config Option] (String) */
-  var groupDir: js.UndefOr[java.lang.String] = js.undefined
+  var groupDir: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var groupField: js.UndefOr[java.lang.String] = js.undefined
+  var groupField: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.util.MixedCollection) */
   var groupers: js.UndefOr[IMixedCollection] = js.undefined
   /** [Method] Guarantee a specific range this will load the store with a range that must be the pageSize or smaller and take car
@@ -268,7 +264,7 @@ trait IStore extends IAbstractStore {
   		* @param id String The id of the Record to find.
   		* @returns Number The index of the Record. Returns -1 if not found.
   		*/
-  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Get the index within the entire dataset
   		* @param record Ext.data.Model The Ext.data.Model object to find.
   		* @returns Number The index of the passed Record. Returns -1 if not found.
@@ -331,7 +327,7 @@ trait IStore extends IAbstractStore {
   		* @returns Object The maximum value, if no items exist, undefined.
   		*/
   var max: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean], _]
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Gets the minimum value in the store
   		* @param field String The field in each record
@@ -339,7 +335,7 @@ trait IStore extends IAbstractStore {
   		* @returns Object The minimum value, if no items exist, undefined.
   		*/
   var min: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean], _]
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Loads the next page in the current data set
   		* @param options Object See options for load
@@ -379,7 +375,7 @@ trait IStore extends IAbstractStore {
   		*/
   var query: js.UndefOr[
     js.Function5[
-      /* property */ js.UndefOr[java.lang.String], 
+      /* property */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* anyMatch */ js.UndefOr[Boolean], 
       /* caseSensitive */ js.UndefOr[Boolean], 
@@ -437,7 +433,7 @@ trait IStore extends IAbstractStore {
   		* @returns Number The sum
   		*/
   var sum: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean], Double]
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], Double]
   ] = js.undefined
   /** [Config Option] (Number) */
   var trailingBufferZone: js.UndefOr[Double] = js.undefined
@@ -458,8 +454,8 @@ object IStore {
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
     autoLoad: js.Any = null,
     autoSync: js.UndefOr[Boolean] = js.undefined,
-    average: (/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean]) => _ = null,
-    batchUpdateMode: java.lang.String = null,
+    average: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => _ = null,
+    batchUpdateMode: String = null,
     buffered: js.UndefOr[Boolean] = js.undefined,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -470,37 +466,37 @@ object IStore {
     clearManagedListeners: () => Unit = null,
     clearOnPageLoad: js.UndefOr[Boolean] = js.undefined,
     clearRemovedOnLoad: js.UndefOr[Boolean] = js.undefined,
-    collect: (/* dataIndex */ js.UndefOr[java.lang.String], /* allowNull */ js.UndefOr[Boolean], /* bypassFilter */ js.UndefOr[Boolean]) => Array = null,
+    collect: (/* dataIndex */ js.UndefOr[String], /* allowNull */ js.UndefOr[Boolean], /* bypassFilter */ js.UndefOr[Boolean]) => Array = null,
     commitChanges: () => Unit = null,
     config: js.Any = null,
     count: /* grouped */ js.UndefOr[Boolean] => Double = null,
     currentPage: Int | Double = null,
     data: js.Any = null,
-    defaultProxyType: java.lang.String = null,
-    defaultSortDirection: java.lang.String = null,
+    defaultProxyType: String = null,
+    defaultSortDirection: String = null,
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
-    filter: (/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => Unit = null,
+    filter: (/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => Unit = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     filterOnLoad: js.UndefOr[Boolean] = js.undefined,
     filters: js.Any = null,
-    find: (/* fieldName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => Double = null,
+    find: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => Double = null,
     findBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double = null,
-    findExact: (/* fieldName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double = null,
-    findRecord: (/* fieldName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IModel = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    findExact: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double = null,
+    findRecord: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IModel = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     first: /* grouped */ js.UndefOr[Boolean] => _ = null,
     generateComparator: () => Unit = null,
     getAt: /* index */ js.UndefOr[Double] => IModel = null,
     getById: /* id */ js.UndefOr[js.Any] => IModel = null,
     getCount: () => Double = null,
     getFirstSorter: () => ISorter = null,
-    getGroupString: /* instance */ js.UndefOr[IModel] => java.lang.String = null,
-    getGroups: /* groupName */ js.UndefOr[java.lang.String] => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getGroupString: /* instance */ js.UndefOr[IModel] => String = null,
+    getGroups: /* groupName */ js.UndefOr[String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getModifiedRecords: () => Array = null,
     getNewRecords: () => Array = null,
     getPageFromRecordIndex: /* index */ js.UndefOr[Double] => Double = null,
@@ -509,15 +505,15 @@ object IStore {
     getRemovedRecords: () => Array = null,
     getTotalCount: () => Double = null,
     getUpdatedRecords: () => Array = null,
-    group: (/* groupers */ js.UndefOr[js.Any], /* direction */ js.UndefOr[java.lang.String]) => Unit = null,
-    groupDir: java.lang.String = null,
-    groupField: java.lang.String = null,
+    group: (/* groupers */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String]) => Unit = null,
+    groupDir: String = null,
+    groupField: String = null,
     groupers: IMixedCollection = null,
     guaranteeRange: (/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     indexOf: /* record */ js.UndefOr[IModel] => Double = null,
-    indexOfId: /* id */ js.UndefOr[java.lang.String] => Double = null,
+    indexOfId: /* id */ js.UndefOr[String] => Double = null,
     indexOfTotal: /* record */ js.UndefOr[IModel] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IStore = null,
@@ -538,10 +534,10 @@ object IStore {
     loadPage: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit = null,
     loadRawData: (/* data */ js.UndefOr[Array], /* append */ js.UndefOr[Boolean]) => Unit = null,
     loadRecords: (/* records */ js.UndefOr[Array], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    max: (/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean]) => _ = null,
-    min: (/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean]) => _ = null,
+    max: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => _ = null,
+    min: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => _ = null,
     mixins: js.Any = null,
-    model: java.lang.String = null,
+    model: String = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     nextPage: /* options */ js.UndefOr[js.Any] => Unit = null,
@@ -553,10 +549,10 @@ object IStore {
     previousPage: /* options */ js.UndefOr[js.Any] => Unit = null,
     proxy: js.Any = null,
     purgePageCount: Int | Double = null,
-    query: (/* property */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IMixedCollection = null,
+    query: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IMixedCollection = null,
     queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
     rejectChanges: () => Unit = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     reload: /* options */ js.UndefOr[js.Any] => Unit = null,
     remoteFilter: js.UndefOr[Boolean] = js.undefined,
     remoteGroup: js.UndefOr[Boolean] = js.undefined,
@@ -565,7 +561,7 @@ object IStore {
     removeAll: /* silent */ js.UndefOr[Boolean] => Unit = null,
     removeAt: (/* index */ js.UndefOr[Double], /* count */ js.UndefOr[Double]) => Unit = null,
     removeFilter: (/* toRemove */ js.UndefOr[js.Any], /* applyFilters */ js.UndefOr[Boolean]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removed: Array = null,
     requires: Array = null,
@@ -580,18 +576,18 @@ object IStore {
     sort: () => Array = null,
     sortOnFilter: js.UndefOr[Boolean] = js.undefined,
     sortOnLoad: js.UndefOr[Boolean] = js.undefined,
-    sortRoot: java.lang.String = null,
+    sortRoot: String = null,
     sorters: js.Any = null,
     statefulFilters: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    storeId: java.lang.String = null,
-    sum: (/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[Boolean]) => Double = null,
+    storeId: String = null,
+    sum: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => Double = null,
     suspendAutoSync: () => Unit = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     sync: /* options */ js.UndefOr[js.Any] => IStore = null,
     trailingBufferZone: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IStore = {
     val __obj = js.Dynamic.literal()

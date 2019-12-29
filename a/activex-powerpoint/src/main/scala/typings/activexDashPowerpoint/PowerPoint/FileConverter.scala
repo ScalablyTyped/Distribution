@@ -18,7 +18,8 @@ class FileConverter protected () extends js.Object {
   val OpenFormat: Double = js.native
   val Parent: FileConverters = js.native
   val Path: String = js.native
-  var `PowerPoint.FileConverter_typekey`: FileConverter = js.native
+  @JSName("PowerPoint.FileConverter_typekey")
+  var PowerPointDotFileConverter_typekey: FileConverter = js.native
   val SaveFormat: Double = js.native
 }
 

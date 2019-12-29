@@ -1,9 +1,6 @@
 package typings.amqplib
 
-import typings.amqplib.amqplibMod.Channel
-import typings.amqplib.amqplibMod.ConfirmChannel
-import typings.amqplib.amqplibMod.Connection
-import typings.amqplib.amqplibNumbers.`false`
+import typings.amqplib.amqplibBooleans.`false`
 import typings.amqplib.propertiesMod.ConsumeMessage
 import typings.amqplib.propertiesMod.GetMessage
 import typings.amqplib.propertiesMod.Message

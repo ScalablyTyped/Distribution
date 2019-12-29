@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class comment protected () extends node {
   def this(comment: String) = this()
   def this(comment: Node) = this()
-  def this(comment: String, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
-  def this(comment: Node, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
+  def this(comment: String, ownerDocument: document) = this()
+  def this(comment: Node, ownerDocument: document) = this()
   def getOuterHtml(): String = js.native
 }
 

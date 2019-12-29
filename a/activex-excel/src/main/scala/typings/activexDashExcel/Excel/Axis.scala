@@ -23,7 +23,8 @@ class Axis protected () extends js.Object {
   var DisplayUnit: XlDisplayUnit = js.native
   var DisplayUnitCustom: Double = js.native
   val DisplayUnitLabel: typings.activexDashExcel.Excel.DisplayUnitLabel = js.native
-  var `Excel.Axis_typekey`: Axis = js.native
+  @JSName("Excel.Axis_typekey")
+  var ExcelDotAxis_typekey: Axis = js.native
   val Format: ChartFormat = js.native
   var HasDisplayUnitLabel: Boolean = js.native
   var HasMajorGridlines: Boolean = js.native

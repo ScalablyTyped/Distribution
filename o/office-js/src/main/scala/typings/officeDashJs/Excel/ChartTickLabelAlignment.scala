@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartTickLabelAlignment.center
-import typings.officeDashJs.Excel.ChartTickLabelAlignment.left
-import typings.officeDashJs.Excel.ChartTickLabelAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

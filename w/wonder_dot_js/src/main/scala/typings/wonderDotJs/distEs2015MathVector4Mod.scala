@@ -2,7 +2,6 @@ package typings.wonderDotJs
 
 import typings.std.Float32Array
 import typings.wonderDotJs.distEs2015MathVector3Mod.Vector3
-import typings.wonderDotJs.distEs2015MathVector4Mod.Vector4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

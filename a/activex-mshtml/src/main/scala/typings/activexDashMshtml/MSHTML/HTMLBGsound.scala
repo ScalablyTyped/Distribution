@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLBGsound")
 @js.native
 class HTMLBGsound protected () extends js.Object {
-  var `MSHTML.HTMLBGsound_typekey`: HTMLBGsound = js.native
+  @JSName("MSHTML.HTMLBGsound_typekey")
+  var MSHTMLDotHTMLBGsound_typekey: HTMLBGsound = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

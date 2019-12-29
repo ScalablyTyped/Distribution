@@ -16,7 +16,7 @@ trait KeydownEventArgs extends js.Object {
   var menuText: js.UndefOr[String] = js.undefined
   /** returns the menu model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Menu.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object KeydownEventArgs {
     element: js.Any = null,
     event: js.Any = null,
     menuText: String = null,
-    model: typings.ejDotWebDotAll.ej.Menu.Model = null,
+    model: Model = null,
     `type`: String = null
   ): KeydownEventArgs = {
     val __obj = js.Dynamic.literal()

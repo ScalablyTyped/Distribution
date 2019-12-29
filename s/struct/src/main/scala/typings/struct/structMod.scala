@@ -1,7 +1,6 @@
 package typings.struct
 
 import typings.node.Buffer
-import typings.struct.structMod.Struct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

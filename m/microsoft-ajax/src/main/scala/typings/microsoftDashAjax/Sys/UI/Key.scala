@@ -1,20 +1,6 @@
 package typings.microsoftDashAjax.Sys.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashAjax.Sys.UI.Key.backspace
-import typings.microsoftDashAjax.Sys.UI.Key.del
-import typings.microsoftDashAjax.Sys.UI.Key.down
-import typings.microsoftDashAjax.Sys.UI.Key.end
-import typings.microsoftDashAjax.Sys.UI.Key.enter
-import typings.microsoftDashAjax.Sys.UI.Key.esc
-import typings.microsoftDashAjax.Sys.UI.Key.home
-import typings.microsoftDashAjax.Sys.UI.Key.left
-import typings.microsoftDashAjax.Sys.UI.Key.pageDown
-import typings.microsoftDashAjax.Sys.UI.Key.pageUp
-import typings.microsoftDashAjax.Sys.UI.Key.right
-import typings.microsoftDashAjax.Sys.UI.Key.space
-import typings.microsoftDashAjax.Sys.UI.Key.tab
-import typings.microsoftDashAjax.Sys.UI.Key.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

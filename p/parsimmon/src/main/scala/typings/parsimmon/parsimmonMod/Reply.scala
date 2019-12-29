@@ -1,8 +1,8 @@
 package typings.parsimmon.parsimmonMod
 
+import typings.parsimmon.parsimmonBooleans.`false`
+import typings.parsimmon.parsimmonBooleans.`true`
 import typings.parsimmon.parsimmonNumbers.`-1`
-import typings.parsimmon.parsimmonNumbers.`false`
-import typings.parsimmon.parsimmonNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

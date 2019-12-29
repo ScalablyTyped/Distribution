@@ -14,6 +14,7 @@ class Category protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   val Type: BuildingBlockType = js.native
-  var `Word.Category_typekey`: Category = js.native
+  @JSName("Word.Category_typekey")
+  var WordDotCategory_typekey: Category = js.native
 }
 

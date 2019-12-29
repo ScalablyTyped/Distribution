@@ -1,10 +1,6 @@
 package typings.nodeDashWindows.nodeDashWindowsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashWindows.nodeDashWindowsMod.LogMode.append
-import typings.nodeDashWindows.nodeDashWindowsMod.LogMode.reset
-import typings.nodeDashWindows.nodeDashWindowsMod.LogMode.roll
-import typings.nodeDashWindows.nodeDashWindowsMod.LogMode.rotate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

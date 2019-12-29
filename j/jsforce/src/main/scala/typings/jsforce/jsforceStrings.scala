@@ -136,7 +136,7 @@ object jsforceStrings {
   sealed trait time extends FieldType
   
   @js.native
-  sealed trait `tns:ID` extends SOAPType
+  sealed trait tnsColonID extends SOAPType
   
   @js.native
   sealed trait update extends BulkLoadOperation
@@ -148,52 +148,52 @@ object jsforceStrings {
   sealed trait url extends FieldType
   
   @js.native
-  sealed trait `urn:JunctionIdListNames` extends SOAPType
+  sealed trait urnColonJunctionIdListNames extends SOAPType
   
   @js.native
-  sealed trait `urn:RecordTypesSupported` extends SOAPType
+  sealed trait urnColonRecordTypesSupported extends SOAPType
   
   @js.native
-  sealed trait `urn:RelationshipReferenceTo` extends SOAPType
+  sealed trait urnColonRelationshipReferenceTo extends SOAPType
   
   @js.native
-  sealed trait `urn:SearchLayoutButtonsDisplayed` extends SOAPType
+  sealed trait urnColonSearchLayoutButtonsDisplayed extends SOAPType
   
   @js.native
-  sealed trait `urn:SearchLayoutFieldsDisplayed` extends SOAPType
+  sealed trait urnColonSearchLayoutFieldsDisplayed extends SOAPType
   
   @js.native
-  sealed trait `urn:address` extends SOAPType
+  sealed trait urnColonaddress extends SOAPType
   
   @js.native
-  sealed trait `urn:location` extends SOAPType
+  sealed trait urnColonlocation extends SOAPType
   
   @js.native
-  sealed trait `xsd:anyType` extends SOAPType
+  sealed trait xsdColonanyType extends SOAPType
   
   @js.native
-  sealed trait `xsd:base64Binary` extends SOAPType
+  sealed trait xsdColonbase64Binary extends SOAPType
   
   @js.native
-  sealed trait `xsd:boolean` extends SOAPType
+  sealed trait xsdColonboolean extends SOAPType
   
   @js.native
-  sealed trait `xsd:date` extends SOAPType
+  sealed trait xsdColondate extends SOAPType
   
   @js.native
-  sealed trait `xsd:dateTime` extends SOAPType
+  sealed trait xsdColondateTime extends SOAPType
   
   @js.native
-  sealed trait `xsd:double` extends SOAPType
+  sealed trait xsdColondouble extends SOAPType
   
   @js.native
-  sealed trait `xsd:int` extends SOAPType
+  sealed trait xsdColonint extends SOAPType
   
   @js.native
-  sealed trait `xsd:string` extends SOAPType
+  sealed trait xsdColonstring extends SOAPType
   
   @js.native
-  sealed trait `xsd:time` extends SOAPType
+  sealed trait xsdColontime extends SOAPType
   
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
@@ -280,7 +280,7 @@ object jsforceStrings {
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
-  def `tns:ID`: `tns:ID` = "tns:ID".asInstanceOf[`tns:ID`]
+  def tnsColonID: tnsColonID = "tns:ID".asInstanceOf[tnsColonID]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline
@@ -288,36 +288,36 @@ object jsforceStrings {
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   @scala.inline
-  def `urn:JunctionIdListNames`: `urn:JunctionIdListNames` = "urn:JunctionIdListNames".asInstanceOf[`urn:JunctionIdListNames`]
+  def urnColonJunctionIdListNames: urnColonJunctionIdListNames = "urn:JunctionIdListNames".asInstanceOf[urnColonJunctionIdListNames]
   @scala.inline
-  def `urn:RecordTypesSupported`: `urn:RecordTypesSupported` = "urn:RecordTypesSupported".asInstanceOf[`urn:RecordTypesSupported`]
+  def urnColonRecordTypesSupported: urnColonRecordTypesSupported = "urn:RecordTypesSupported".asInstanceOf[urnColonRecordTypesSupported]
   @scala.inline
-  def `urn:RelationshipReferenceTo`: `urn:RelationshipReferenceTo` = "urn:RelationshipReferenceTo".asInstanceOf[`urn:RelationshipReferenceTo`]
+  def urnColonRelationshipReferenceTo: urnColonRelationshipReferenceTo = "urn:RelationshipReferenceTo".asInstanceOf[urnColonRelationshipReferenceTo]
   @scala.inline
-  def `urn:SearchLayoutButtonsDisplayed`: `urn:SearchLayoutButtonsDisplayed` = "urn:SearchLayoutButtonsDisplayed".asInstanceOf[`urn:SearchLayoutButtonsDisplayed`]
+  def urnColonSearchLayoutButtonsDisplayed: urnColonSearchLayoutButtonsDisplayed = "urn:SearchLayoutButtonsDisplayed".asInstanceOf[urnColonSearchLayoutButtonsDisplayed]
   @scala.inline
-  def `urn:SearchLayoutFieldsDisplayed`: `urn:SearchLayoutFieldsDisplayed` = "urn:SearchLayoutFieldsDisplayed".asInstanceOf[`urn:SearchLayoutFieldsDisplayed`]
+  def urnColonSearchLayoutFieldsDisplayed: urnColonSearchLayoutFieldsDisplayed = "urn:SearchLayoutFieldsDisplayed".asInstanceOf[urnColonSearchLayoutFieldsDisplayed]
   @scala.inline
-  def `urn:address`: `urn:address` = "urn:address".asInstanceOf[`urn:address`]
+  def urnColonaddress: urnColonaddress = "urn:address".asInstanceOf[urnColonaddress]
   @scala.inline
-  def `urn:location`: `urn:location` = "urn:location".asInstanceOf[`urn:location`]
+  def urnColonlocation: urnColonlocation = "urn:location".asInstanceOf[urnColonlocation]
   @scala.inline
-  def `xsd:anyType`: `xsd:anyType` = "xsd:anyType".asInstanceOf[`xsd:anyType`]
+  def xsdColonanyType: xsdColonanyType = "xsd:anyType".asInstanceOf[xsdColonanyType]
   @scala.inline
-  def `xsd:base64Binary`: `xsd:base64Binary` = "xsd:base64Binary".asInstanceOf[`xsd:base64Binary`]
+  def xsdColonbase64Binary: xsdColonbase64Binary = "xsd:base64Binary".asInstanceOf[xsdColonbase64Binary]
   @scala.inline
-  def `xsd:boolean`: `xsd:boolean` = "xsd:boolean".asInstanceOf[`xsd:boolean`]
+  def xsdColonboolean: xsdColonboolean = "xsd:boolean".asInstanceOf[xsdColonboolean]
   @scala.inline
-  def `xsd:date`: `xsd:date` = "xsd:date".asInstanceOf[`xsd:date`]
+  def xsdColondate: xsdColondate = "xsd:date".asInstanceOf[xsdColondate]
   @scala.inline
-  def `xsd:dateTime`: `xsd:dateTime` = "xsd:dateTime".asInstanceOf[`xsd:dateTime`]
+  def xsdColondateTime: xsdColondateTime = "xsd:dateTime".asInstanceOf[xsdColondateTime]
   @scala.inline
-  def `xsd:double`: `xsd:double` = "xsd:double".asInstanceOf[`xsd:double`]
+  def xsdColondouble: xsdColondouble = "xsd:double".asInstanceOf[xsdColondouble]
   @scala.inline
-  def `xsd:int`: `xsd:int` = "xsd:int".asInstanceOf[`xsd:int`]
+  def xsdColonint: xsdColonint = "xsd:int".asInstanceOf[xsdColonint]
   @scala.inline
-  def `xsd:string`: `xsd:string` = "xsd:string".asInstanceOf[`xsd:string`]
+  def xsdColonstring: xsdColonstring = "xsd:string".asInstanceOf[xsdColonstring]
   @scala.inline
-  def `xsd:time`: `xsd:time` = "xsd:time".asInstanceOf[`xsd:time`]
+  def xsdColontime: xsdColontime = "xsd:time".asInstanceOf[xsdColontime]
 }
 

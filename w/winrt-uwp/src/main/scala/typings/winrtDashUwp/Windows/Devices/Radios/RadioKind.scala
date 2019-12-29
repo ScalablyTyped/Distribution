@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Radios
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.bluetooth
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.fm
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.mobileBroadband
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.other
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.wiFi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

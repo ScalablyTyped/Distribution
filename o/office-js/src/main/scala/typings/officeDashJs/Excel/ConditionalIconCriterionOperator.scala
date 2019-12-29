@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalIconCriterionOperator.greaterThan
-import typings.officeDashJs.Excel.ConditionalIconCriterionOperator.greaterThanOrEqual
-import typings.officeDashJs.Excel.ConditionalIconCriterionOperator.invalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

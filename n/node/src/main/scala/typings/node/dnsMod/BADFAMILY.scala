@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dns", "BADFAMILY")
 @js.native
-object BADFAMILY
-  extends TopLevel[java.lang.String]
+object BADFAMILY extends TopLevel[String]
 

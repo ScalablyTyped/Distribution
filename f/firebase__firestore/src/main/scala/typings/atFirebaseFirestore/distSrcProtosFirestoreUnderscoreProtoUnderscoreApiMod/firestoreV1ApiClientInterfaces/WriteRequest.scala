@@ -9,11 +9,7 @@ trait WriteRequest extends js.Object {
   var labels: js.UndefOr[ApiClientObjectMap[String]] = js.undefined
   var streamId: js.UndefOr[String] = js.undefined
   var streamToken: js.UndefOr[String] = js.undefined
-  var writes: js.UndefOr[
-    js.Array[
-      typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Write
-    ]
-  ] = js.undefined
+  var writes: js.UndefOr[js.Array[Write]] = js.undefined
 }
 
 object WriteRequest {
@@ -22,9 +18,7 @@ object WriteRequest {
     labels: ApiClientObjectMap[String] = null,
     streamId: String = null,
     streamToken: String = null,
-    writes: js.Array[
-      typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Write
-    ] = null
+    writes: js.Array[Write] = null
   ): WriteRequest = {
     val __obj = js.Dynamic.literal()
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])

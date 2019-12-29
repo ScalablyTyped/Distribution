@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ class Polygon () extends MVCObject {
   def this(opts: PolygonOptions) = this()
   def getDraggable(): Boolean = js.native
   def getEditable(): Boolean = js.native
-  def getMap(): Map = js.native
+  def getMap(): Map[Element] = js.native
   /** Retrieves the first path. */
   def getPath(): MVCArray[LatLng] = js.native
   /** Retrieves the paths for this polygon. */
@@ -19,7 +20,7 @@ class Polygon () extends MVCObject {
   def setDraggable(draggable: Boolean): Unit = js.native
   def setEditable(editable: Boolean): Unit = js.native
   def setMap(): Unit = js.native
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map[Element]): Unit = js.native
   def setOptions(options: PolygonOptions): Unit = js.native
   def setPath(path: js.Array[LatLng | LatLngLiteral]): Unit = js.native
   def setPath(path: MVCArray[LatLng]): Unit = js.native

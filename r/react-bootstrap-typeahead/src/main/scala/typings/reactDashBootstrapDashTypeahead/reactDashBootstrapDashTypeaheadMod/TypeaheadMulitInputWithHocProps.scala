@@ -1,7 +1,7 @@
 package typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod
 
 import typings.react.reactMod.ReactNode
-import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.Empty
+import typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings._empty
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object TypeaheadMulitInputWithHocProps {
     labelKey: TypeaheadLabelKey[T],
     onRemove: Event => Unit,
     renderToken: (T, TypeaheadMenuProps[T], Double) => ReactNode,
-    role: Empty,
+    role: _empty,
     selected: js.Array[T]
   ): TypeaheadMulitInputWithHocProps[T] = {
     val __obj = js.Dynamic.literal(inputClassName = inputClassName.asInstanceOf[js.Any], labelKey = labelKey.asInstanceOf[js.Any], onRemove = js.Any.fromFunction1(onRemove), renderToken = js.Any.fromFunction3(renderToken), role = role.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ trait MouseoutEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the menu model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Menu.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns clicked menu item text
     */
   var text: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object MouseoutEventArgs {
   def apply(
     element: js.Any = null,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Menu.Model = null,
+    model: Model = null,
     text: String = null,
     `type`: String = null
   ): MouseoutEventArgs = {

@@ -3,7 +3,7 @@ package typings.autolinker.distCommonjsAutolinkerMod
 import org.scalablytyped.runtime.Instantiable1
 import typings.autolinker.Anon_Cfg
 import typings.autolinker.Anon_CfgEmail
-import typings.autolinker.autolinkerStrings.`3DOT11DOT1`
+import typings.autolinker.autolinkerStrings.`3Dot11Dot1`
 import typings.autolinker.distCommonjsAnchorDashTagDashBuilderMod.AnchorTagBuilderCfg
 import typings.autolinker.distCommonjsHtmlDashTagMod.HtmlTagCfg
 import typings.autolinker.distCommonjsMatchMatchMod.Match
@@ -410,7 +410,7 @@ class default () extends Autolinker {
     * Ex: 0.25.1
     */
   /* CompleteClass */
-  override val version: `3DOT11DOT1` = js.native
+  override val version: `3Dot11Dot1` = js.native
   /**
     * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
     * and Mentions (Twitter, Instagram, Soundcloud) found in the given chunk of HTML. Does not link
@@ -504,7 +504,7 @@ object default extends js.Object {
     *
     * Ex: 0.25.1
     */
-  val version: `3DOT11DOT1` = js.native
+  val version: `3Dot11Dot1` = js.native
   /**
     * Automatically links URLs, Email addresses, Phone Numbers, Twitter handles,
     * Hashtags, and Mentions found in the given chunk of HTML. Does not link URLs

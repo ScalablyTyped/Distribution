@@ -12,7 +12,8 @@ class Database protected () extends js.Object {
   val Connection: typings.activexDashDao.DAO.Connection = js.native
   @JSName("Containers")
   val Containers_Original: Containers = js.native
-  var `DAO.Database_typekey`: Database = js.native
+  @JSName("DAO.Database_typekey")
+  var DAODotDatabase_typekey: Database = js.native
   var DesignMasterID: String = js.native
   val Name: String = js.native
   @JSName("Properties")

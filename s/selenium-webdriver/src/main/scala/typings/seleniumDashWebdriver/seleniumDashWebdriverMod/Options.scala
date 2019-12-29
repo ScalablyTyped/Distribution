@@ -1,5 +1,6 @@
 package typings.seleniumDashWebdriver.seleniumDashWebdriverMod
 
+import typings.seleniumDashWebdriver.libCapabilitiesMod.ITimeouts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

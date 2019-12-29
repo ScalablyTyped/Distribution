@@ -11,7 +11,6 @@ package object distTypesComponentsRangeRangeDashInterfaceMod {
     - typings.atIonicCore.atIonicCoreStrings.A
     - typings.atIonicCore.atIonicCoreStrings.B
     - `js.undefined`
-    - scala.Nothing
   */
   type KnobName = js.UndefOr[_KnobName]
   type RangeValue = Double | Anon_Lower

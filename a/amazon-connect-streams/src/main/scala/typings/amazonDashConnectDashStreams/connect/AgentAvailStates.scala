@@ -1,14 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.AFTER_CALL_WORK
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.BUSY
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.CALLING_CUSTOMER
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.DIALING
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.INIT
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.JOINING
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.PENDING_AVAILABLE
-import typings.amazonDashConnectDashStreams.connect.AgentAvailStates.PENDING_BUSY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

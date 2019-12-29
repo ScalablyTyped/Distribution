@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object moveColumns {
   type columnPositionChangedHandler = js.Function3[
-    /* colDef */ typings.uiDashGrid.uiDashGridMod.moveColumns.IColumnDef, 
+    /* colDef */ IColumnDef, 
     /* originalPosition */ Double, 
     /* finalPosition */ Double, 
     Unit

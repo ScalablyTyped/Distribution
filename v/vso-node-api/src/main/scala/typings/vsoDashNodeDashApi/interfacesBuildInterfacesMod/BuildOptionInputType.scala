@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.Boolean
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.BranchFilter
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.MultiLine
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.PickList
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.Radio
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.String
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.StringList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

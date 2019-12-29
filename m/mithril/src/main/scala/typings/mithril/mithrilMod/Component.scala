@@ -13,13 +13,13 @@ trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
   extends Lifecycle[Attrs, State]
      with _ComponentTypes[Attrs, State] {
   /** Creates a view out of virtual elements. */
-  def view(`this`: State, vnode: Vnode[Attrs, State]): Children | Null | Unit
+  def view(vnode: Vnode[Attrs, State]): Children | Null | Unit
 }
 
 object Component {
   @scala.inline
   def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
-    view: (State, Vnode[Attrs, State]) => Children | Null | Unit,
+    view: Vnode[Attrs, State] => Children | Null | Unit,
     onbeforeremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | Unit] = null,
     onbeforeupdate: js.ThisFunction2[
       State, 
@@ -32,7 +32,7 @@ object Component {
     onremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null,
     onupdate: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null
   ): Component[Attrs, State] = {
-    val __obj = js.Dynamic.literal(view = js.Any.fromFunction2(view))
+    val __obj = js.Dynamic.literal(view = js.Any.fromFunction1(view))
     if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove.asInstanceOf[js.Any])
     if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate.asInstanceOf[js.Any])
     if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate.asInstanceOf[js.Any])

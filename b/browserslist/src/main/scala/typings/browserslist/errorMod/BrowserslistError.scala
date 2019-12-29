@@ -1,6 +1,6 @@
 package typings.browserslist.errorMod
 
-import typings.browserslist.browserslistNumbers.`true`
+import typings.browserslist.browserslistBooleans.`true`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

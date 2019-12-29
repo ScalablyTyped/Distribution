@@ -2,7 +2,6 @@ package typings.atMaterialDialog
 
 import typings.atMaterialBase.atMaterialBaseMod.MDCComponent
 import typings.atMaterialDialog.adapterMod.MDCDialogAdapter
-import typings.atMaterialDialog.atMaterialDialogMod.MDCDialog
 import typings.atMaterialDialog.foundationMod.default
 import typings.atMaterialDialog.utilMod.MDCFocusTrapFactory
 import typings.std.Element

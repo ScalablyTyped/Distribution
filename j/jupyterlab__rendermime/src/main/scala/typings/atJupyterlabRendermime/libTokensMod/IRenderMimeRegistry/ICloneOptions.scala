@@ -1,5 +1,6 @@
 package typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
 
+import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.ILatexTypesetter
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.ILinkHandler
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IResolver
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.ISanitizer
@@ -14,9 +15,7 @@ trait ICloneOptions extends js.Object {
   /**
     * The new LaTeX typesetter.
     */
-  var latexTypesetter: js.UndefOr[
-    typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.ILatexTypesetter
-  ] = js.undefined
+  var latexTypesetter: js.UndefOr[ILatexTypesetter] = js.undefined
   /**
     * The new path handler.
     */
@@ -34,7 +33,7 @@ trait ICloneOptions extends js.Object {
 object ICloneOptions {
   @scala.inline
   def apply(
-    latexTypesetter: typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.ILatexTypesetter = null,
+    latexTypesetter: ILatexTypesetter = null,
     linkHandler: ILinkHandler = null,
     resolver: IResolver = null,
     sanitizer: ISanitizer = null

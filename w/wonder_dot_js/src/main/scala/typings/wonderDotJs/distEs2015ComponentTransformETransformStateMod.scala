@@ -1,13 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015ComponentTransformETransformStateMod.ETransformState
-import typings.wonderDotJs.distEs2015ComponentTransformETransformStateMod.ETransformState.ISLOCALROTATE
-import typings.wonderDotJs.distEs2015ComponentTransformETransformStateMod.ETransformState.ISLOCALSCALE
-import typings.wonderDotJs.distEs2015ComponentTransformETransformStateMod.ETransformState.ISLOCALTRANSLATE
-import typings.wonderDotJs.distEs2015ComponentTransformETransformStateMod.ETransformState.ISROTATE
-import typings.wonderDotJs.distEs2015ComponentTransformETransformStateMod.ETransformState.ISSCALE
-import typings.wonderDotJs.distEs2015ComponentTransformETransformStateMod.ETransformState.ISTRANSLATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

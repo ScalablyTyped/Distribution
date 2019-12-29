@@ -1,20 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.ImageFormat.bmp
-import typings.officeDashJsDashPreview.Word.ImageFormat.emf
-import typings.officeDashJsDashPreview.Word.ImageFormat.exif
-import typings.officeDashJsDashPreview.Word.ImageFormat.gif
-import typings.officeDashJsDashPreview.Word.ImageFormat.icon
-import typings.officeDashJsDashPreview.Word.ImageFormat.jpeg
-import typings.officeDashJsDashPreview.Word.ImageFormat.pdf
-import typings.officeDashJsDashPreview.Word.ImageFormat.pict
-import typings.officeDashJsDashPreview.Word.ImageFormat.png
-import typings.officeDashJsDashPreview.Word.ImageFormat.svg
-import typings.officeDashJsDashPreview.Word.ImageFormat.tiff
-import typings.officeDashJsDashPreview.Word.ImageFormat.undefined
-import typings.officeDashJsDashPreview.Word.ImageFormat.unsupported
-import typings.officeDashJsDashPreview.Word.ImageFormat.wmf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ASYMMETRIC_DECRYPT
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ASYMMETRIC_SIGN
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.CRYPTO_KEY_PURPOSE_UNSPECIFIED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ENCRYPT_DECRYPT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,7 +22,7 @@ trait NodeDragStopEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the drop position such as before, after or over
     */
   var position: js.UndefOr[String] = js.undefined
@@ -48,7 +48,7 @@ object NodeDragStopEventArgs {
     draggedElementData: js.Any = null,
     dropTarget: js.Any = null,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     position: String = null,
     preventTargetExpand: js.UndefOr[Boolean] = js.undefined,
     target: js.Any = null,

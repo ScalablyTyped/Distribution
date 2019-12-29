@@ -11,7 +11,8 @@ class Dialogs protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Dialogs_typekey`: Dialogs = js.native
+  @JSName("Word.Dialogs_typekey")
+  var WordDotDialogs_typekey: Dialogs = js.native
   def Item(Index: WdWordDialog): Dialog = js.native
 }
 

@@ -46,7 +46,7 @@ object EventBus extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this
@@ -68,6 +68,6 @@ object EventBus extends js.Object {
   		* @param controllerId String The id of the controller.
   		*/
   def unlisten(): Unit = js.native
-  def unlisten(controllerId: java.lang.String): Unit = js.native
+  def unlisten(controllerId: String): Unit = js.native
 }
 

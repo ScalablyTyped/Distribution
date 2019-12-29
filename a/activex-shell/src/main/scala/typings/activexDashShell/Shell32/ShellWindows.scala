@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class ShellWindows protected () extends js.Object {
   /** Contains the number of items in the collection. */
   val Count: Double = js.native
-  var `Shell32.ShellWindows_typekey`: ShellWindows = js.native
+  @JSName("Shell32.ShellWindows_typekey")
+  var Shell32DotShellWindows_typekey: ShellWindows = js.native
   /**
     * Retrieves an InternetExplorer object that represents the Shell window.
     * @param index Default is 0

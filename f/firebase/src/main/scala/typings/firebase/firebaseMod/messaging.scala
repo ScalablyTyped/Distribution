@@ -1,7 +1,6 @@
 package typings.firebase.firebaseMod
 
 import typings.firebase.firebaseMod.app.App
-import typings.firebase.firebaseMod.messaging.Messaging
 import typings.std.Error
 import typings.std.ServiceWorkerRegistration
 import scala.scalajs.js
@@ -30,7 +29,7 @@ object messaging extends js.Object {
   @js.native
   trait Messaging extends js.Object {
     /**
-      * To forceably stop a registration token from being used, delete it
+      * To forcibly stop a registration token from being used, delete it
       * by calling this method.
       *
       * @param token The token to delete.
@@ -39,14 +38,16 @@ object messaging extends js.Object {
       */
     def deleteToken(token: String): js.Promise[Boolean] = js.native
     /**
-      * After calling `requestPermission()` you can call this method to get an FCM
-      * registration token that can be used to send push messages to this user.
+      * Subscribes the user to push notifications and returns an FCM registration
+      * token that can be used to send push messages to the user.
       *
-      * @return The promise resolves if an FCM token can
-      *   be retrieved. This method returns null if the current origin does not have
-      *   permission to show notifications.
+      * If notification permission isn't already granted, this method asks the
+      * user for permission. The returned promise rejects if the user does not
+      * allow the app to show notifications.
+      *
+      * @return The promise resolves with the FCM token string.
       */
-    def getToken(): js.Promise[String | Null] = js.native
+    def getToken(): js.Promise[String] = js.native
     /**
       * When a push message is received and the user is currently on a page
       * for your origin, the message is passed to the page and an `onMessage()`
@@ -87,7 +88,8 @@ object messaging extends js.Object {
     /**
       * Notification permissions are required to send a user push messages.
       * Calling this method displays the permission dialog to the user and
-      * resolves if the permission is granted.
+      * resolves if the permission is granted. It is not necessary to call this
+      * method, as `getToken()` will do this automatically if required.
       *
       * @return The promise resolves if permission is
       *   granted. Otherwise, the promise is rejected with an error.

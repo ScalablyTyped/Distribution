@@ -51,6 +51,12 @@ trait TemplateOptionsProperties extends js.Object {
     */
   var dpi: js.UndefOr[String] = js.undefined
   /**
+    * This property defines the printed map's file name. This only applies when the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is `map-only`. If the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is not `map-only`, see [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName)
+    */
+  var fileName: js.UndefOr[String] = js.undefined
+  /**
     * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering. By default they are removed to reduce the request size. Only applicable to custom print services which use the feature attributes, for example to display a table of features and their attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#forceFeatureAttributes)
@@ -73,7 +79,7 @@ trait TemplateOptionsProperties extends js.Object {
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
-    * The layout used for the print output. When the value is `map-only` or is empty, the output map does not contain any page layout surroundings (for example, title, legend, scale bar and so forth). The print service provides out-of-the-box templates listed in possible values. The server administrator can add additional templates to the print service.  Possible values are listed below:
+    * The layout used for the print output. When the value is `map-only` or is empty, the output map does not contain any page layout surroundings (for example: legend, scale bar, and so forth). The print service provides out-of-the-box templates listed in possible values. The server administrator can add additional templates to the print service.  Possible values are listed below:
     *
     * Value | Description
     * | --- | ---
@@ -112,7 +118,7 @@ trait TemplateOptionsProperties extends js.Object {
     */
   var scaleEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * The text used for the map title if the specified layout contains a title text element.
+    * The text used for the map title if the specified layout contains a title text element. This only applies if the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is not `map-only`. For `map-only`, see [fileName](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title)
     */
@@ -132,6 +138,7 @@ object TemplateOptionsProperties {
     author: String = null,
     copyright: String = null,
     dpi: String = null,
+    fileName: String = null,
     forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined,
     format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = null,
     height: Int | Double = null,
@@ -146,6 +153,7 @@ object TemplateOptionsProperties {
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

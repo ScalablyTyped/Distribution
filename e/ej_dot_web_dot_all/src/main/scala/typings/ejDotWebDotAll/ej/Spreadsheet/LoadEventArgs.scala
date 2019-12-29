@@ -10,7 +10,7 @@ trait LoadEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the active sheet index.
     */
   var sheetIndex: js.UndefOr[Double] = js.undefined
@@ -23,7 +23,7 @@ object LoadEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     sheetIndex: Int | Double = null,
     `type`: String = null
   ): LoadEventArgs = {

@@ -65,18 +65,18 @@ import scala.scalajs.js.annotation._
   		* @param args Object... Variable number of parameters are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
-  var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.undefined
+  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
   /** [Method] Fires the specified event with the passed parameter list
   		* @param eventName String The name of the event to fire.
   		* @param args Object[] An array of parameters which are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
-  var fireEventArgs: js.UndefOr[js.Function2[js.UndefOr[java.lang.String], js.UndefOr[Array], Boolean]] = js.undefined
+  var fireEventArgs: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[Array], Boolean]] = js.undefined
   /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
   		* @param eventName String The name of the event to check for
   		* @returns Boolean true if the event is being listened for or bubbles, else false
   		*/
-  var hasListener: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasListener: js.UndefOr[js.Function1[js.UndefOr[String], Boolean]] = js.undefined
   /** [Property] (Object) */
   var hasListeners: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Boolean) */
@@ -126,17 +126,13 @@ import scala.scalajs.js.annotation._
   		* @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
   		* @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
   		*/
-  var relayEvents: js.UndefOr[
-    js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[java.lang.String], _]
-  ] = js.undefined
+  var relayEvents: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String], _]] = js.undefined
   /** [Method] Removes an event handler
   		* @param eventName String The type of event the handler was associated with.
   		* @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
-  var removeListener: js.UndefOr[
-    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var removeListener: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Removes listeners that were added by the mon method
   		* @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
   		* @param ename Object/String The event name, or an object containing event name properties.
@@ -168,15 +164,13 @@ import scala.scalajs.js.annotation._
   		*/
   var suspendEvents: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var triggerEvent: js.UndefOr[java.lang.String] = js.undefined
+  var triggerEvent: js.UndefOr[String] = js.undefined
   /** [Method] Shorthand for removeListener
   		* @param eventName String The type of event the handler was associated with.
   		* @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
-  var un: js.UndefOr[
-    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var un: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
 object IEditing {
@@ -202,12 +196,12 @@ object IEditing {
     editing: js.UndefOr[Boolean] = js.undefined,
     enable: () => Unit = null,
     enableBubble: js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (js.UndefOr[java.lang.String], js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (js.UndefOr[String], js.UndefOr[Array]) => Boolean = null,
     getCmp: () => IComponent = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: js.UndefOr[java.lang.String] => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     init: /* client */ js.UndefOr[IComponent] => Unit = null,
@@ -219,9 +213,9 @@ object IEditing {
     mon: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ = null,
     mun: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit = null,
     on: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ = null,
-    pluginId: java.lang.String = null,
-    relayEvents: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit = null,
+    pluginId: String = null,
+    relayEvents: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String]) => _ = null,
+    removeListener: (js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -233,8 +227,8 @@ object IEditing {
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: js.UndefOr[Boolean] => Unit = null,
-    triggerEvent: java.lang.String = null,
-    un: (js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit = null,
+    triggerEvent: String = null,
+    un: (js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IEditing = {
     val __obj = js.Dynamic.literal()

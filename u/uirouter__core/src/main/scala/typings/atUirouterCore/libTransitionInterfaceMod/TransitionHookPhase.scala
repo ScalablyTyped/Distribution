@@ -1,11 +1,6 @@
 package typings.atUirouterCore.libTransitionInterfaceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase.BEFORE
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase.CREATE
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase.ERROR
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase.RUN
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase.SUCCESS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

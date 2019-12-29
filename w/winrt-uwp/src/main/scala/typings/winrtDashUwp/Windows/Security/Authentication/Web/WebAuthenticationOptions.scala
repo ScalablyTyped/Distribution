@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.none
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.silentMode
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useCorporateNetwork
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useHttpPost
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

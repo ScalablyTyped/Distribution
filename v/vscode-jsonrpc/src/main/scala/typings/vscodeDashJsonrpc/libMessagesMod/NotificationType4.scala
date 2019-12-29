@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NotificationType4[P1, P2, P3, P4, RO] protected () extends AbstractMessageType {
   def this(method: String) = this()
-  val `_`: js.UndefOr[js.Tuple6[P1, P2, P3, P4, RO, _EM]] = js.native
+  @JSName("_")
+  val _underscore: js.UndefOr[js.Tuple6[P1, P2, P3, P4, RO, _EM]] = js.native
 }
 

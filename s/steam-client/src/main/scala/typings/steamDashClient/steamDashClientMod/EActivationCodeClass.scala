@@ -1,14 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.DBLookup
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.Doom3CDKey
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.Invalid
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.Max
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.Steam2010Key
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.Test
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.ValveCDKey
-import typings.steamDashClient.steamDashClientMod.EActivationCodeClass.WonCDKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +29,7 @@ trait CircleOptions extends js.Object {
   /** The fill opacity between 0.0 and 1.0 */
   var fillOpacity: js.UndefOr[Double] = js.undefined
   /** Map on which to display Circle. */
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   /** The radius in meters on the Earth's surface */
   var radius: js.UndefOr[Double] = js.undefined
   /**
@@ -60,7 +61,7 @@ object CircleOptions {
     editable: js.UndefOr[Boolean] = js.undefined,
     fillColor: String = null,
     fillOpacity: Int | Double = null,
-    map: Map = null,
+    map: Map[Element] = null,
     radius: Int | Double = null,
     strokeColor: String = null,
     strokeOpacity: Int | Double = null,

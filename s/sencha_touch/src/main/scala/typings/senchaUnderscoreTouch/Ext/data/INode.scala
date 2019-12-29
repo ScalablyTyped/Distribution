@@ -65,11 +65,7 @@ trait INode extends IBase {
   		* @returns Ext.data.NodeInterface A copy of this Node.
   		*/
   var copy: js.UndefOr[
-    js.Function2[
-      /* newId */ js.UndefOr[java.lang.String], 
-      /* deep */ js.UndefOr[Boolean], 
-      INodeInterface
-    ]
+    js.Function2[/* newId */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean], INodeInterface]
   ] = js.undefined
   /** [Method] Destroys the node
   		* @param silent Object
@@ -110,7 +106,7 @@ trait INode extends IBase {
   		*/
   var findChild: js.UndefOr[
     js.Function3[
-      /* attribute */ js.UndefOr[java.lang.String], 
+      /* attribute */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* deep */ js.UndefOr[Boolean], 
       INodeInterface
@@ -147,11 +143,7 @@ trait INode extends IBase {
   		* @returns String The node path
   		*/
   var getPath: js.UndefOr[
-    js.Function2[
-      /* field */ js.UndefOr[java.lang.String], 
-      /* separator */ js.UndefOr[java.lang.String], 
-      java.lang.String
-    ]
+    js.Function2[/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], String]
   ] = js.undefined
   /** [Method] Returns true if this node has one or more child nodes else false
   		* @returns Boolean
@@ -300,18 +292,18 @@ object INode {
     collapse: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     config: js.Any = null,
     contains: /* node */ js.UndefOr[INodeInterface] => Boolean = null,
-    copy: (/* newId */ js.UndefOr[java.lang.String], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
+    copy: (/* newId */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
     destroy: /* silent */ js.UndefOr[js.Any] => Unit = null,
     eachChild: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit = null,
     expand: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    extend: java.lang.String = null,
-    findChild: (/* attribute */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
+    extend: String = null,
+    findChild: (/* attribute */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
     findChildBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
     firstChild: js.Any = null,
     getChildAt: /* index */ js.UndefOr[Double] => INodeInterface = null,
     getDepth: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getPath: (/* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String]) => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getPath: (/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String]) => String = null,
     hasChildNodes: () => Boolean = null,
     indexOf: /* child */ js.UndefOr[INodeInterface] => Double = null,
     inheritableStatics: js.Any = null,

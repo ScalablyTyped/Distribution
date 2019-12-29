@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.auto
-import typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.off
-import typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

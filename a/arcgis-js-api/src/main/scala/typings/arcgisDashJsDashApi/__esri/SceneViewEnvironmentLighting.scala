@@ -25,11 +25,11 @@ trait SceneViewEnvironmentLighting extends AnonymousAccessor {
     */
   var cameraTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * The current date and time of the simulated sun.
+    * The current date and time of the simulated sun. When setting the date, specifying the time zone is important, otherwise the time zone of the browser will be used. This might lead to different lighting for users in different time zones.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     *
-    * @default new Date("March 15, 2015 12:00:00")
+    * @default new Date("March 15, 2019 12:00:00 UTC")
     */
   var date: js.UndefOr[Date] = js.undefined
   /**

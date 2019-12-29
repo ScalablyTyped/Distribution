@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atMaterialRippleNumbers {
   @js.native
-  sealed trait `0DOT6` extends js.Object
+  sealed trait `0.6` extends js.Object
   
   @js.native
   sealed trait `10` extends js.Object
@@ -21,7 +21,7 @@ object atMaterialRippleNumbers {
   sealed trait `300` extends js.Object
   
   @scala.inline
-  def `0DOT6`: `0DOT6` = 0.6.asInstanceOf[`0DOT6`]
+  def `0.6`: `0.6` = 0.6.asInstanceOf[`0.6`]
   @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
   @scala.inline

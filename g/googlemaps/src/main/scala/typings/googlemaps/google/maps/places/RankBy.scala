@@ -1,8 +1,6 @@
 package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.places.RankBy.DISTANCE
-import typings.googlemaps.google.maps.places.RankBy.PROMINENCE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

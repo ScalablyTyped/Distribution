@@ -1,10 +1,6 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromecastDashCafDashSender.cast.framework.CastState.CONNECTED
-import typings.chromecastDashCafDashSender.cast.framework.CastState.CONNECTING
-import typings.chromecastDashCafDashSender.cast.framework.CastState.NOT_CONNECTED
-import typings.chromecastDashCafDashSender.cast.framework.CastState.NO_DEVICES_AVAILABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,9 +9,7 @@ trait Page extends js.Object {
   var masterProperties: js.UndefOr[MasterProperties] = js.undefined
   var notesProperties: js.UndefOr[NotesProperties] = js.undefined
   var objectId: js.UndefOr[String] = js.undefined
-  var pageElements: js.UndefOr[
-    js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.PageElement]
-  ] = js.undefined
+  var pageElements: js.UndefOr[js.Array[PageElement]] = js.undefined
   var pageProperties: js.UndefOr[PageProperties] = js.undefined
   var pageType: js.UndefOr[String] = js.undefined
   var revisionId: js.UndefOr[String] = js.undefined
@@ -25,7 +23,7 @@ object Page {
     masterProperties: MasterProperties = null,
     notesProperties: NotesProperties = null,
     objectId: String = null,
-    pageElements: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.PageElement] = null,
+    pageElements: js.Array[PageElement] = null,
     pageProperties: PageProperties = null,
     pageType: String = null,
     revisionId: String = null,

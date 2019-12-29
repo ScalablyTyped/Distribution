@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.center
-import typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.end
-import typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

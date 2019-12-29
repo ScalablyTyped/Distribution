@@ -18,6 +18,7 @@ class ConditionalStyle protected () extends js.Object {
   var RightPadding: Double = js.native
   val Shading: typings.activexDashWord.Word.Shading = js.native
   var TopPadding: Double = js.native
-  var `Word.ConditionalStyle_typekey`: ConditionalStyle = js.native
+  @JSName("Word.ConditionalStyle_typekey")
+  var WordDotConditionalStyle_typekey: ConditionalStyle = js.native
 }
 

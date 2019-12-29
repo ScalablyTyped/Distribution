@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.csv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,11 +58,13 @@ trait CSVLayer
     */
   var elevationInfo: CSVLayerElevationInfo = js.native
   /**
-    * Configures the method for decluttering overlapping features in the view. If this property is not set (or set to `null`), every feature is drawn individually.  Currently this property is only supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) for point features with non-draped [Icons](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html) or [Text](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html) symbol layers.  ![declutter](https://developers.arcgis.com/javascript/assets/img/samples/city-points-declutter.gif)
+    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  There are two types of feature reduction: `selection` and `cluster`.
+    *   * [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen. This has been available since version 4.4.
+    *   * [Cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) spatially groups points in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) into _clusters_. The size of each cluster is proportional to the number of features within the cluster. This has been available since version 4.14.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#featureReduction)
     */
-  var featureReduction: CSVLayerFeatureReduction = js.native
+  var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   /**
     * An array of fields in the layer.
     *
@@ -221,11 +222,11 @@ trait CSVLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryExtent(): IPromise[_] = js.native
-  def queryExtent(query: Query): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties, options: CSVLayerQueryExtentOptions): IPromise[_] = js.native
-  def queryExtent(query: Query, options: CSVLayerQueryExtentOptions): IPromise[_] = js.native
+  def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: Query): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties, options: CSVLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(query: Query, options: CSVLayerQueryExtentOptions): js.Promise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the CSV data and returns the number of features that satisfy the query. If no parameters are specified, then the total number of features satisfying the layer's configuration/filters is returned.
     * > **Known Limitations**
@@ -243,11 +244,11 @@ trait CSVLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatureCount(): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties, options: CSVLayerQueryFeatureCountOptions): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query, options: CSVLayerQueryFeatureCountOptions): IPromise[Double] = js.native
+  def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: CSVLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query, options: CSVLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the CSV data and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves. A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) contains an array of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) features, which can be added to the [view's graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics). This array will not be populated if zero results are found.
     * > **Known Limitations**
@@ -266,11 +267,11 @@ trait CSVLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatures(): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties, options: CSVLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: CSVLayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: CSVLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: CSVLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the CSV data and returns an array of Object IDs for features that satisfy the input query. If no parameters are specified, then the Object IDs of all features satisfying the layer's configuration/filters are returned.
     * > **Known Limitations**
@@ -288,11 +289,11 @@ trait CSVLayer
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryObjectIds(): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties, options: CSVLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query, options: CSVLayerQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: CSVLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query, options: CSVLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }
 
 @JSGlobal("__esri.CSVLayer")

@@ -18,7 +18,8 @@ class Validation protected () extends js.Object {
   val Creator: XlCreator = js.native
   var ErrorMessage: String = js.native
   var ErrorTitle: String = js.native
-  var `Excel.Validation_typekey`: Validation = js.native
+  @JSName("Excel.Validation_typekey")
+  var ExcelDotValidation_typekey: Validation = js.native
   val Formula1: String = js.native
   val Formula2: String = js.native
   var IMEMode: Double = js.native

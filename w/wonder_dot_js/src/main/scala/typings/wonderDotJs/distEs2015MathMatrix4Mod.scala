@@ -2,7 +2,6 @@ package typings.wonderDotJs
 
 import typings.std.Float32Array
 import typings.wonderDotJs.distEs2015MathMatrix3Mod.Matrix3
-import typings.wonderDotJs.distEs2015MathMatrix4Mod.Matrix4
 import typings.wonderDotJs.distEs2015MathQuaternionMod.Quaternion
 import typings.wonderDotJs.distEs2015MathVector3Mod.Vector3
 import typings.wonderDotJs.distEs2015MathVector4Mod.Vector4

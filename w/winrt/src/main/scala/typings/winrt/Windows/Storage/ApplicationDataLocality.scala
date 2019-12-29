@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.ApplicationDataLocality.local
-import typings.winrt.Windows.Storage.ApplicationDataLocality.roaming
-import typings.winrt.Windows.Storage.ApplicationDataLocality.temporary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

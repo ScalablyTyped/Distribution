@@ -1,8 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.imageCanvasMod.ImageCanvas
-import typings.ol.imageCanvasMod.Loader
 import typings.std.Error
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

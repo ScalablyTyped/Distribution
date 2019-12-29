@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Disabled
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Enabled
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Paused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.cavy.cavyMod
 
-import typings.cavy.cavyNumbers.`true`
+import typings.cavy.cavyBooleans.`true`
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

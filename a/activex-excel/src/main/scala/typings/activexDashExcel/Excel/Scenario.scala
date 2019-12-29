@@ -13,7 +13,8 @@ class Scenario protected () extends js.Object {
   val ChangingCells_Original: Range = js.native
   var Comment: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Scenario_typekey`: Scenario = js.native
+  @JSName("Excel.Scenario_typekey")
+  var ExcelDotScenario_typekey: Scenario = js.native
   var Hidden: Boolean = js.native
   val Index: Double = js.native
   var Locked: Boolean = js.native

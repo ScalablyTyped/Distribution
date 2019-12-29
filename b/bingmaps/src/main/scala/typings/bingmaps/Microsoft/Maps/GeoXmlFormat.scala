@@ -1,9 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.GeoXmlFormat.geoRss
-import typings.bingmaps.Microsoft.Maps.GeoXmlFormat.gpx
-import typings.bingmaps.Microsoft.Maps.GeoXmlFormat.kml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class OtherCorrectionsExceptions protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.OtherCorrectionsExceptions_typekey`: OtherCorrectionsExceptions = js.native
+  @JSName("Word.OtherCorrectionsExceptions_typekey")
+  var WordDotOtherCorrectionsExceptions_typekey: OtherCorrectionsExceptions = js.native
   def Add(Name: String): OtherCorrectionsException = js.native
   def Item(Index: js.Any): OtherCorrectionsException = js.native
 }

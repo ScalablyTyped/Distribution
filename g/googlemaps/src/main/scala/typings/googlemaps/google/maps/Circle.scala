@@ -1,6 +1,7 @@
 package typings.googlemaps.google.maps
 
 import typings.googlemaps.google.maps.places._LocationBias
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +26,7 @@ class Circle ()
   /** Returns whether this circle can be edited by the user. */
   def getEditable(): Boolean = js.native
   /** Returns the map on which this circle is displayed. */
-  def getMap(): Map = js.native
+  def getMap(): Map[Element] = js.native
   /** Returns the radius of this circle (in meters). */
   def getRadius(): Double = js.native
   /** Returns whether this circle is visible on the map. */
@@ -45,7 +46,7 @@ class Circle ()
     * Renders the circle on the specified map. If map is set to null, the
     * circle will be removed.
     */
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map[Element]): Unit = js.native
   def setOptions(options: CircleOptions): Unit = js.native
   /** Sets the radius of this circle (in meters). */
   def setRadius(radius: Double): Unit = js.native

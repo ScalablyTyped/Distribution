@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "redux-saga__core"
-version := "1.1.3-b67602"
+version := "1.1.3-0fc5a4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "redux" % "4.0.4-507b3f",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "typescript-compare" % "0.0.2-5179b0",
-  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-7b7a60",
-  "org.scalablytyped" %%% "typescript-tuple" % "2.2.1-166a32")
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "redux" % "4.0.5-174ff7",
+  "org.scalablytyped" %%% "std" % "3.7-953338",
+  "org.scalablytyped" %%% "typescript-compare" % "0.0.2-bf0d3b",
+  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-0a98a9",
+  "org.scalablytyped" %%% "typescript-tuple" % "2.2.1-235cd8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

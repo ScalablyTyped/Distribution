@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class DAVAdapterObject protected () extends js.Object {
   var FileName: String = js.native
   var FolderURL: String = js.native
-  var `InfoPath.DAVAdapterObject_typekey`: DAVAdapterObject = js.native
+  @JSName("InfoPath.DAVAdapterObject_typekey")
+  var InfoPathDotDAVAdapterObject_typekey: DAVAdapterObject = js.native
   val Name: String = js.native
   val QueryAllowed: Boolean = js.native
   val SubmitAllowed: Boolean = js.native

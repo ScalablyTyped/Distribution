@@ -43,7 +43,17 @@ object DefinitionType {
     __obj.asInstanceOf[DefinitionType]
   }
   @scala.inline
-  def Anon_NodeParent(node: js.Any, parent: Null, `type`: TDZ): DefinitionType = {
+  def Anon_NodeParentType(
+    node: VariableDeclarator,
+    parent: VariableDeclaration,
+    `type`: typings.eslint.eslintStrings.Variable
+  ): DefinitionType = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefinitionType]
+  }
+  @scala.inline
+  def Anon_ClassName(node: ClassDeclaration | ClassExpression, parent: Null, `type`: ClassName): DefinitionType = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinitionType]
@@ -55,23 +65,7 @@ object DefinitionType {
     __obj.asInstanceOf[DefinitionType]
   }
   @scala.inline
-  def Anon_CatchClause(node: CatchClause, parent: Null, `type`: typings.eslint.eslintStrings.CatchClause): DefinitionType = {
-    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DefinitionType]
-  }
-  @scala.inline
-  def Anon_ImportBinding(
-    node: ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier,
-    parent: ImportDeclaration,
-    `type`: ImportBinding
-  ): DefinitionType = {
-    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DefinitionType]
-  }
-  @scala.inline
-  def Anon_ClassName(node: ClassDeclaration | ClassExpression, parent: Null, `type`: ClassName): DefinitionType = {
+  def Anon_NodeParent(node: js.Any, parent: Null, `type`: TDZ): DefinitionType = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinitionType]
@@ -87,10 +81,16 @@ object DefinitionType {
     __obj.asInstanceOf[DefinitionType]
   }
   @scala.inline
-  def Anon_NodeParentType(
-    node: VariableDeclarator,
-    parent: VariableDeclaration,
-    `type`: typings.eslint.eslintStrings.Variable
+  def Anon_CatchClause(node: CatchClause, parent: Null, `type`: typings.eslint.eslintStrings.CatchClause): DefinitionType = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefinitionType]
+  }
+  @scala.inline
+  def Anon_ImportBinding(
+    node: ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier,
+    parent: ImportDeclaration,
+    `type`: ImportBinding
   ): DefinitionType = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

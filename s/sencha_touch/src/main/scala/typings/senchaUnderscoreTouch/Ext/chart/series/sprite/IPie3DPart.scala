@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   		* @param name String
   		* @param marker Ext.chart.Markers
   		*/
-  var bindMarker: js.UndefOr[js.Function2[js.UndefOr[java.lang.String], js.UndefOr[IMarkers], Unit]] = js.undefined
+  var bindMarker: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[IMarkers], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var centerX: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Number) */
   var margin: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var part: js.UndefOr[java.lang.String] = js.undefined
+  var part: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var startAngle: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -57,14 +57,14 @@ object IPie3DPart {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     attr: js.Any = null,
     baseColor: js.Any = null,
     baseRotation: Int | Double = null,
-    bindMarker: (js.UndefOr[java.lang.String], js.UndefOr[IMarkers]) => Unit = null,
+    bindMarker: (js.UndefOr[String], js.UndefOr[IMarkers]) => Unit = null,
     bubbleEvents: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -78,26 +78,26 @@ object IPie3DPart {
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     endAngle: Int | Double = null,
     endRho: Int | Double = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fillOpacity: Int | Double = null,
-    fillStyle: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fillStyle: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getBBox: /* isWithoutTransform */ js.UndefOr[Boolean] => Unit = null,
     getBBoxCenter: /* isWithoutTransform */ js.UndefOr[Boolean] => Array = null,
     getBubbleEvents: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getParent: () => _ = null,
     globalAlpha: Int | Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hide: () => IPie3DPart = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    lineCap: java.lang.String = null,
-    lineJoin: java.lang.String = null,
+    lineCap: String = null,
+    lineJoin: String = null,
     lineWidth: Int | Double = null,
     listeners: js.Any = null,
     margin: Int | Double = null,
@@ -105,17 +105,17 @@ object IPie3DPart {
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    part: java.lang.String = null,
-    path: java.lang.String = null,
+    part: String = null,
+    path: String = null,
     platformConfig: js.Any = null,
     preRender: () => Unit = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     render: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => _ = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
@@ -133,7 +133,7 @@ object IPie3DPart {
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setParent: /* parent */ js.UndefOr[js.Any] => Unit = null,
     shadowBlur: Int | Double = null,
-    shadowColor: java.lang.String = null,
+    shadowColor: String = null,
     shadowOffsetX: Int | Double = null,
     shadowOffsetY: Int | Double = null,
     show: () => IPie3DPart = null,
@@ -142,13 +142,13 @@ object IPie3DPart {
     startRho: Int | Double = null,
     statics: js.Any = null,
     strokeOpacity: Int | Double = null,
-    strokeStyle: java.lang.String = null,
+    strokeStyle: String = null,
     suspendEvents: () => Unit = null,
     thickness: Int | Double = null,
     transformFillStroke: js.UndefOr[Boolean] = js.undefined,
     translationX: Int | Double = null,
     translationY: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     updatePath: /* path */ js.UndefOr[js.Any] => Unit = null,

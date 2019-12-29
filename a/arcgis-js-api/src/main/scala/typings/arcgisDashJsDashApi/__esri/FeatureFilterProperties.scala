@@ -2,10 +2,10 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-nautical-miles`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait FeatureFilterProperties extends js.Object {
     */
   var spatialRelationship: js.UndefOr[String] = js.undefined
   /**
-    * A range of time with start and end date. Only the features that fall within this time extent will be displayed. The Date field to be used for `timeExtent` must be added to [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields) list when the layer is initialized.
+    * A range of time with start and end date. Only the features that fall within this time extent will be displayed. The Date field to be used for `timeExtent` should be added to [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields) list when the layer is initialized. This ensures the best user experience when switching or updating fields for time filters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent)
     *
@@ -60,7 +60,7 @@ trait FeatureFilterProperties extends js.Object {
     *
     * @default null
     */
-  var units: js.UndefOr[feet | miles | `nautical-miles` | `us-nautical-miles` | meters | kilometers] = js.undefined
+  var units: js.UndefOr[feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_] = js.undefined
   /**
     * A where clause for the feature filter. Any legal SQL92 where clause operating on the fields in the layer is allowed. Be sure to have the correct sequence of single and double quotes when writing the where clause in JavaScript.  For apps where users can interactively change fields used for attribute filter, we suggest you include all possible fields in the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields) of the layer. This ensures the best user experience when switching or updating fields for attribute filters.
     *
@@ -77,7 +77,7 @@ object FeatureFilterProperties {
     objectIds: js.Array[Double] = null,
     spatialRelationship: String = null,
     timeExtent: TimeExtentProperties = null,
-    units: feet | miles | `nautical-miles` | `us-nautical-miles` | meters | kilometers = null,
+    units: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_ = null,
     where: String = null
   ): FeatureFilterProperties = {
     val __obj = js.Dynamic.literal()

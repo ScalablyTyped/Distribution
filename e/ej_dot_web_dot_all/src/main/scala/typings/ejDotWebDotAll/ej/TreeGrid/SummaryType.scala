@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.Average
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.Count
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.Custom
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.FalseCount
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.Maximum
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.MaximumDate
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.Minimum
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.MinimumDate
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.Sum
-import typings.ejDotWebDotAll.ej.TreeGrid.SummaryType.TrueCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

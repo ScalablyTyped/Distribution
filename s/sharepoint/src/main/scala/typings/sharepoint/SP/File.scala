@@ -37,7 +37,7 @@ class File () extends ClientObject {
   def get_length(): Double = js.native
   def get_level(): FileLevel = js.native
   /** Specifies the SPListItem corresponding to this file if this file belongs to a doclib. Values for all fields are returned also. */
-  def get_listItemAllFields[T](): typings.sharepoint.SP.ListItem[T] = js.native
+  def get_listItemAllFields[T](): ListItem[T] = js.native
   /** Returns the user that owns the current lock on the file. MUST return null if there is no lock. */
   def get_lockedByUser(): User = js.native
   /** Specifies the major version of the file. */

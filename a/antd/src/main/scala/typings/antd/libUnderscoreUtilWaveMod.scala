@@ -3,7 +3,6 @@ package typings.antd
 import typings.antd.antdStrings.`ant-click-animating-without-extra-node`
 import typings.antd.antdStrings.`ant-click-animating`
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
-import typings.antd.libUnderscoreUtilWaveMod.Wave
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.std.AnimationEvent

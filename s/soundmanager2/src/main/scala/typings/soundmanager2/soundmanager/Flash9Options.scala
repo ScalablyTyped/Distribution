@@ -1,6 +1,6 @@
 package typings.soundmanager2.soundmanager
 
-import typings.soundmanager2.soundmanager2Numbers.`true`
+import typings.soundmanager2.soundmanager2Booleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

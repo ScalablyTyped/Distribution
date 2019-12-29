@@ -1,6 +1,5 @@
 package typings.androiduix.android.app
 
-import typings.androiduix.android.app.AlertDialog.Builder
 import typings.androiduix.android.content.Context
 import typings.androiduix.android.content.DialogInterface.OnCancelListener
 import typings.androiduix.android.content.DialogInterface.OnClickListener

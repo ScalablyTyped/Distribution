@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.communications
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.console
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.multimedia
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,7 +21,7 @@ import typings.jquery.JQuery.TypeEventHandlers
 import typings.jquery.JQuery.TypeOrArray
 import typings.jquery.JQuery.htmlString
 import typings.jquery.JQuery.jqXHR
-import typings.jquery.jqueryNumbers.`false`
+import typings.jquery.jqueryBooleans.`false`
 import typings.jquery.jqueryStrings.blur
 import typings.jquery.jqueryStrings.change
 import typings.jquery.jqueryStrings.click
@@ -2610,7 +2610,18 @@ trait JQuery_[TElement]
     * @since 1.4
     */
   def data(): PlainObject[_] = js.native
-  def data(key: String): this.type = js.native
+  /**
+    * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
+    * @param key Name of the data stored.
+    * @param value `undefined` is not recognized as a data value. Calls such as `.data( "name", undefined )`
+    *              will return the jQuery object that it was called on, allowing for chaining.
+    * @see \`{@link https://api.jquery.com/data/ }\`
+    * @since 1.2.3
+    */
+  // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
+  // results in potential confusion for users from an unexpected parameter.
+  // tslint:disable-next-line:unified-signatures
+  def data(key: String): js.Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     * @param key A string naming the piece of data to set.
@@ -2665,19 +2676,8 @@ trait JQuery_[TElement]
     * @since 1.4.3
     */
   def data(obj: PlainObject[_]): this.type = js.native
-  /**
-    * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
-    * @param key Name of the data stored.
-    * @param value `undefined` is not recognized as a data value. Calls such as `.data( "name", undefined )`
-    *              will return the jQuery object that it was called on, allowing for chaining.
-    * @see \`{@link https://api.jquery.com/data/ }\`
-    * @since 1.2.3
-    */
-  // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
-  // results in potential confusion for users from an unexpected parameter.
-  // tslint:disable-next-line:unified-signatures
   @JSName("data")
-  def data_Any(key: String): js.Any = js.native
+  def data_This(key: String): this.type = js.native
   /**
     * Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
     * @param handler A function to execute each time the event is triggered.
@@ -9455,27 +9455,6 @@ trait JQuery_[TElement]
   ```
     */
   def prop(properties: PlainObject[_]): this.type = js.native
-  def prop(propertyName: String): this.type = js.native
-  /**
-    * Set one or more properties for the set of matched elements.
-    * @param propertyName The name of the property to set.
-    * @param value_function _&#x40;param_ `value_function`
-    * <br>
-    * * `value` — A value to set for the property. <br>
-    * * `function` — A function returning the value to set. Receives the index position of the element in the set and the
-    *                old property value as arguments. Within the function, the keyword `this` refers to the current element.
-    * @see \`{@link https://api.jquery.com/prop/ }\`
-    * @since 1.6
-    */
-  def prop(propertyName: String, value_function: String): this.type = js.native
-  def prop(propertyName: String, value_function: js.Object): this.type = js.native
-  def prop(propertyName: String, value_function: js.Symbol): this.type = js.native
-  def prop(
-    propertyName: String,
-    value_function: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* oldPropertyValue */ js.Any, _]
-  ): this.type = js.native
-  def prop(propertyName: String, value_function: Boolean): this.type = js.native
-  def prop(propertyName: String, value_function: Double): this.type = js.native
   /**
     * Get the value of a property for the first element in the set of matched elements.
     * @param propertyName The name of the property to get.
@@ -9518,8 +9497,29 @@ trait JQuery_[TElement]
   </html>
   ```
     */
+  def prop(propertyName: String): js.Any = js.native
+  /**
+    * Set one or more properties for the set of matched elements.
+    * @param propertyName The name of the property to set.
+    * @param value_function _&#x40;param_ `value_function`
+    * <br>
+    * * `value` — A value to set for the property. <br>
+    * * `function` — A function returning the value to set. Receives the index position of the element in the set and the
+    *                old property value as arguments. Within the function, the keyword `this` refers to the current element.
+    * @see \`{@link https://api.jquery.com/prop/ }\`
+    * @since 1.6
+    */
+  def prop(propertyName: String, value_function: String): this.type = js.native
+  def prop(propertyName: String, value_function: js.Object): this.type = js.native
+  def prop(propertyName: String, value_function: js.Symbol): this.type = js.native
+  def prop(
+    propertyName: String,
+    value_function: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* oldPropertyValue */ js.Any, _]
+  ): this.type = js.native
+  def prop(propertyName: String, value_function: Boolean): this.type = js.native
+  def prop(propertyName: String, value_function: Double): this.type = js.native
   @JSName("prop")
-  def prop_Any(propertyName: String): js.Any = js.native
+  def prop_This(propertyName: String): this.type = js.native
   /**
     * Add a collection of DOM elements onto the jQuery stack.
     * @param elements An array of elements to push onto the stack and make into a new jQuery object.

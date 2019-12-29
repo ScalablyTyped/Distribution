@@ -1,6 +1,6 @@
 package typings.antd.libDrawerMod
 
-import typings.antd.antdNumbers.`false`
+import typings.antd.antdBooleans.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement

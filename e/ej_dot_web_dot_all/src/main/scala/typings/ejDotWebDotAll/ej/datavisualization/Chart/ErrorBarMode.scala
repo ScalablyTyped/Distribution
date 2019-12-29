@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Both
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Horizontal
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

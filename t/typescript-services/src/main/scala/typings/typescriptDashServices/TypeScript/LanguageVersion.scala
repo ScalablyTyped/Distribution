@@ -1,5 +1,6 @@
 package typings.typescriptDashServices.TypeScript
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +17,13 @@ object LanguageVersion extends js.Object {
   @js.native
   sealed trait EcmaScript5 extends LanguageVersion
   
-  /* 0 */ val EcmaScript3: typings.typescriptDashServices.TypeScript.LanguageVersion.EcmaScript3 with Double = js.native
-  /* 1 */ val EcmaScript5: typings.typescriptDashServices.TypeScript.LanguageVersion.EcmaScript5 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LanguageVersion with Double] = js.native
+  /* 0 */ @js.native
+  object EcmaScript3 extends TopLevel[EcmaScript3 with Double]
+  
+  /* 1 */ @js.native
+  object EcmaScript5 extends TopLevel[EcmaScript5 with Double]
+  
 }
 

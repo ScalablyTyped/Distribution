@@ -21,7 +21,8 @@ class VBE protected () extends js.Object {
   val Events: typings.activexDashVbide.VBIDE.Events = js.native
   val MainWindow: Window = js.native
   val SelectedVBComponent: VBComponent = js.native
-  var `VBIDE.VBE_typekey`: VBE = js.native
+  @JSName("VBIDE.VBE_typekey")
+  var VBIDEDotVBE_typekey: VBE = js.native
   @JSName("VBProjects")
   val VBProjects_Original: VBProjects = js.native
   val Version: String = js.native

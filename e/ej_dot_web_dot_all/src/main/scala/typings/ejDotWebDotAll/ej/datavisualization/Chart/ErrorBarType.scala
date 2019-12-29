@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.FixedValue
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.Percentage
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.StandardDeviation
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.StandardError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

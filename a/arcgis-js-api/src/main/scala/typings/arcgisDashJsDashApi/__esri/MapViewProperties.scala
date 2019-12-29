@@ -103,6 +103,7 @@ object MapViewProperties {
     highlightOptions: MapViewHighlightOptionsProperties = null,
     layerViews: CollectionProperties[LayerViewProperties] = null,
     map: MapProperties = null,
+    navigation: NavigationProperties = null,
     padding: ViewPadding = null,
     popup: PopupProperties = null,
     resizeAlign: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` = null,
@@ -130,6 +131,7 @@ object MapViewProperties {
     if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions.asInstanceOf[js.Any])
     if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (resizeAlign != null) __obj.updateDynamic("resizeAlign")(resizeAlign.asInstanceOf[js.Any])

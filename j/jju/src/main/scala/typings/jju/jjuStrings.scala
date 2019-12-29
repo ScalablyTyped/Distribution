@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object jjuStrings {
   @js.native
-  sealed trait _quote extends js.Object
+  sealed trait Apostrophe extends js.Object
   
   @js.native
-  sealed trait BACKSLASH extends js.Object
+  sealed trait Quotationmark extends js.Object
   
   @js.native
   sealed trait cjson extends js.Object
@@ -48,9 +48,9 @@ object jjuStrings {
   sealed trait whitespace extends js.Object
   
   @scala.inline
-  def _quote: _quote = "'".asInstanceOf[_quote]
+  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   @scala.inline
-  def BACKSLASH: BACKSLASH = "\"".asInstanceOf[BACKSLASH]
+  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   @scala.inline
   def cjson: cjson = "cjson".asInstanceOf[cjson]
   @scala.inline

@@ -1,8 +1,6 @@
 package typings.gulpDashChange
 
 import typings.eventDashStream.eventDashStreamMod.MapStream
-import typings.gulpDashChange.gulpDashChangeMod.Callback
-import typings.gulpDashChange.gulpDashChangeMod.ChangeFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

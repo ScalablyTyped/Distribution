@@ -1,9 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.SemicolonPreference.Ignore
-import typings.typescript.typescriptMod.SemicolonPreference.Insert
-import typings.typescript.typescriptMod.SemicolonPreference.Remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

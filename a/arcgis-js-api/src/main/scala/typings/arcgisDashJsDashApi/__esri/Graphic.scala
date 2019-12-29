@@ -71,6 +71,14 @@ trait Graphic
   def getEffectivePopupTemplate(): PopupTemplate = js.native
   def getEffectivePopupTemplate(defaultPopupTemplateEnabled: Boolean): PopupTemplate = js.native
   /**
+    * Returns the objectId of the feature associated with the graphic, if it exists
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#getObjectId)
+    *
+    *
+    */
+  def getObjectId(): Unit = js.native
+  /**
     * Sets a new value to the specified attribute.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#setAttribute)

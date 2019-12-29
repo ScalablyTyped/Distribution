@@ -1,6 +1,6 @@
 package typings.lokijs
 
-import typings.lokijs.lokijsNumbers.`true`
+import typings.lokijs.lokijsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

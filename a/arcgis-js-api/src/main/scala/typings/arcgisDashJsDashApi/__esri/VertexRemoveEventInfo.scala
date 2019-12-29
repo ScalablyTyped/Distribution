@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertex-remove`
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -20,7 +21,7 @@ trait VertexRemoveEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
     */
-  var `type`: String
+  var `type`: `vertex-remove`
 }
 
 object VertexRemoveEventInfo {
@@ -30,7 +31,7 @@ object VertexRemoveEventInfo {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     removed: js.Array[Graphic],
-    `type`: String
+    `type`: `vertex-remove`
   ): VertexRemoveEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -14,18 +14,19 @@ trait ParsedArgs
   /**
     * Contains all the arguments that didn't have an option associated with them
     */
-  var `_`: js.Array[String]
+  @JSName("_")
+  var _underscore: js.Array[String]
 }
 
 object ParsedArgs {
   @scala.inline
   def apply(
-    `_`: js.Array[String],
+    _underscore: js.Array[String],
     `--`: js.Array[String] = null,
     StringDictionary: /* arg */ StringDictionary[js.Any] = null
   ): ParsedArgs = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     if (`--` != null) __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ParsedArgs]

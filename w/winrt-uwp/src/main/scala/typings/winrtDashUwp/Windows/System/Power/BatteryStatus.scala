@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.System.Power
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.charging
-import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.discharging
-import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.idle
-import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.notPresent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

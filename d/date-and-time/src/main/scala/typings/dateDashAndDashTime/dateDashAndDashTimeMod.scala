@@ -1,7 +1,5 @@
 package typings.dateDashAndDashTime
 
-import typings.dateDashAndDashTime.dateDashAndDashTimeMod.Subtract
-import typings.dateDashAndDashTime.dateDashAndDashTimeMod.getDelta
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

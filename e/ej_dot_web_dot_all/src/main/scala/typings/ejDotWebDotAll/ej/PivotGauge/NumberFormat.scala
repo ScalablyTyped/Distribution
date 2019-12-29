@@ -1,13 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotGauge.NumberFormat.Currency
-import typings.ejDotWebDotAll.ej.PivotGauge.NumberFormat.Default
-import typings.ejDotWebDotAll.ej.PivotGauge.NumberFormat.Fraction
-import typings.ejDotWebDotAll.ej.PivotGauge.NumberFormat.Notation
-import typings.ejDotWebDotAll.ej.PivotGauge.NumberFormat.Percentage
-import typings.ejDotWebDotAll.ej.PivotGauge.NumberFormat.Scientific
-import typings.ejDotWebDotAll.ej.PivotGauge.NumberFormat.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SourceProviderAvailability.All
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SourceProviderAvailability.Hosted
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SourceProviderAvailability.OnPremises
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

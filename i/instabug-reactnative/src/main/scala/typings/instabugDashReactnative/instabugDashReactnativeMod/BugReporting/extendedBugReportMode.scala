@@ -1,9 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.extendedBugReportMode.disabled
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.extendedBugReportMode.enabledWithOptionalFields
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.extendedBugReportMode.enabledWithRequiredFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,21 +12,16 @@ sealed trait extendedBugReportMode extends js.Object
 @js.native
 object extendedBugReportMode extends js.Object {
   @js.native
-  sealed trait disabled
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.extendedBugReportMode
+  sealed trait disabled extends extendedBugReportMode
   
   @js.native
-  sealed trait enabledWithOptionalFields
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.extendedBugReportMode
+  sealed trait enabledWithOptionalFields extends extendedBugReportMode
   
   @js.native
-  sealed trait enabledWithRequiredFields
-    extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.extendedBugReportMode
+  sealed trait enabledWithRequiredFields extends extendedBugReportMode
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[
-    typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.extendedBugReportMode with Double
-  ] = js.native
+  def apply(value: Double): js.UndefOr[extendedBugReportMode with Double] = js.native
   /* 2 */ @js.native
   object disabled extends TopLevel[disabled with Double]
   

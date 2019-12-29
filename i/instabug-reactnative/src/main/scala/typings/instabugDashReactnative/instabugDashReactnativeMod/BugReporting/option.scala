@@ -1,10 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.commentFieldRequired
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.disablePostSendingDialog
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.emailFieldHidden
-import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.emailFieldOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

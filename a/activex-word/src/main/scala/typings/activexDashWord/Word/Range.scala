@@ -106,7 +106,8 @@ class Range protected () extends js.Object {
   var TwoLinesInOne: WdTwoLinesInOneType = js.native
   var Underline: WdUnderline = js.native
   val Updates: CoAuthUpdates = js.native
-  var `Word.Range_typekey`: Range = js.native
+  @JSName("Word.Range_typekey")
+  var WordDotRange_typekey: Range = js.native
   val WordOpenXML: String = js.native
   val Words: typings.activexDashWord.Word.Words = js.native
   val XMLNodes: typings.activexDashWord.Word.XMLNodes = js.native

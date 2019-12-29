@@ -1,8 +1,6 @@
 package typings.reduxDashStorageDashEngineDashLocalstorage
 
 import typings.reduxDashStorage.reduxDashStorageMod.StorageEngine
-import typings.reduxDashStorageDashEngineDashLocalstorage.reduxDashStorageDashEngineDashLocalstorageMod.Replacer
-import typings.reduxDashStorageDashEngineDashLocalstorage.reduxDashStorageDashEngineDashLocalstorageMod.Reviver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

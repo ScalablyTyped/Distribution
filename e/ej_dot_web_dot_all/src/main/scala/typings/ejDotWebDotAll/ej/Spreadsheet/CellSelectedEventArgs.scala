@@ -11,7 +11,7 @@ trait CellSelectedEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the selected range.
     */
   var selectedRange: js.UndefOr[js.Array[_]] = js.undefined
@@ -30,7 +30,7 @@ object CellSelectedEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     selectedRange: js.Array[_] = null,
     sheetIdx: Int | Double = null,
     target: HTMLElement = null,

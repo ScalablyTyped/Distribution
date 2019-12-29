@@ -1,6 +1,5 @@
 package typings.fleximap
 
-import typings.fleximap.fleximapMod.KeyChain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

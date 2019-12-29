@@ -10,7 +10,8 @@ class Views protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.Views_typekey`: Views = js.native
+  @JSName("Outlook.Views_typekey")
+  var OutlookDotViews_typekey: Views = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String, ViewType: OlViewType, SaveOption: OlViewSaveOption): View = js.native

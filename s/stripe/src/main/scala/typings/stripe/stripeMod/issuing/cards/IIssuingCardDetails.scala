@@ -1,6 +1,6 @@
 package typings.stripe.stripeMod.issuing.cards
 
-import typings.stripe.stripeStrings.issuingDOTcard_details
+import typings.stripe.stripeStrings.issuingDotcard_details
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ trait IIssuingCardDetails extends js.Object {
   /**
     * Value is "object.card"
     */
-  var `object`: issuingDOTcard_details
+  var `object`: issuingDotcard_details
 }
 
 object IIssuingCardDetails {
@@ -40,7 +40,7 @@ object IIssuingCardDetails {
     exp_month: Double,
     exp_year: Double,
     number: String,
-    `object`: issuingDOTcard_details
+    `object`: issuingDotcard_details
   ): IIssuingCardDetails = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], cvc = cvc.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])

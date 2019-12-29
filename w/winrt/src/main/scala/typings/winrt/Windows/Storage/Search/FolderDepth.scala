@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Search.FolderDepth.deep
-import typings.winrt.Windows.Storage.Search.FolderDepth.shallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

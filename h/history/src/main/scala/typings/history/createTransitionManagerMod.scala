@@ -1,8 +1,5 @@
 package typings.history
 
-import typings.history.createTransitionManagerMod.Prompt
-import typings.history.createTransitionManagerMod.PromptFunction
-import typings.history.createTransitionManagerMod.TransitionManager
 import typings.history.historyMod.Action
 import typings.history.historyMod.Location
 import typings.history.historyMod.LocationListener

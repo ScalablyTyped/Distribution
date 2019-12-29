@@ -1,10 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.MixBlend.add
-import typings.pixiDashSpine.PIXI.spine.core.MixBlend.first
-import typings.pixiDashSpine.PIXI.spine.core.MixBlend.replace
-import typings.pixiDashSpine.PIXI.spine.core.MixBlend.setup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

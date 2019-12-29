@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.TokenBindingKeyType.ecdsaP256
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.TokenBindingKeyType.rsa2048
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

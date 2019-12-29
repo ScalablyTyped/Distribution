@@ -1,9 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ConnectionType.CONNTYPE_BASIC
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ConnectionType.CONNTYPE_OP
-import typings.nodeDashSnap7.nodeDashSnap7Mod.ConnectionType.CONNTYPE_PG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

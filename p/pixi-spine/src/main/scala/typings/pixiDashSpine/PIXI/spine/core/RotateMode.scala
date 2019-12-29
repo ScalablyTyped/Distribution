@@ -1,9 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.RotateMode.Chain
-import typings.pixiDashSpine.PIXI.spine.core.RotateMode.ChainScale
-import typings.pixiDashSpine.PIXI.spine.core.RotateMode.Tangent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

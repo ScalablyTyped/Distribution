@@ -6,7 +6,7 @@ import typings.semanticDashUiDashPopup.SemanticUI.Popup.DelaySettings
 import typings.semanticDashUiDashPopup.SemanticUI.Popup.ErrorSettings
 import typings.semanticDashUiDashPopup.SemanticUI.Popup.MetadataSettings
 import typings.semanticDashUiDashPopup.SemanticUI.Popup.SelectorSettings
-import typings.semanticDashUiDashPopup.semanticDashUiDashPopupNumbers.`false`
+import typings.semanticDashUiDashPopup.semanticDashUiDashPopupBooleans.`false`
 import typings.semanticDashUiDashPopup.semanticDashUiDashPopupStrings.adjacent
 import typings.semanticDashUiDashPopup.semanticDashUiDashPopupStrings.auto
 import typings.semanticDashUiDashPopup.semanticDashUiDashPopupStrings.click
@@ -245,31 +245,31 @@ trait _Impl extends js.Object {
   /**
     * Callback on popup element creation, with created popup
     */
-  def onCreate(`this`: JQuery, $module: JQuery): Unit
+  def onCreate($module: JQuery): Unit
   /**
     * Callback after popup is hidden
     */
-  def onHidden(`this`: JQuery, $module: JQuery): Unit
+  def onHidden($module: JQuery): Unit
   /**
     * Callback before popup is hidden. Returning false from this callback will cancel the popup from hiding.
     */
-  def onHide(`this`: JQuery, $module: JQuery): `false` | Unit
+  def onHide($module: JQuery): `false` | Unit
   /**
     * Callback immediately before Popup is removed from DOM
     */
-  def onRemove(`this`: JQuery, $module: JQuery): Unit
+  def onRemove($module: JQuery): Unit
   /**
     * Callback before popup is shown. Returning false from this callback will cancel the popup from showing.
     */
-  def onShow(`this`: JQuery, $module: JQuery): `false` | Unit
+  def onShow($module: JQuery): `false` | Unit
   /**
     * Callback after popup cannot be placed on screen
     */
-  def onUnplaceable(`this`: JQuery, $module: JQuery): Unit
+  def onUnplaceable($module: JQuery): Unit
   /**
     * Callback after popup is shown
     */
-  def onVisible(`this`: JQuery, $module: JQuery): Unit
+  def onVisible($module: JQuery): Unit
 }
 
 object _Impl {
@@ -301,13 +301,13 @@ object _Impl {
     observeChanges: Boolean,
     offset: Double,
     on: focus | click | hover | manual,
-    onCreate: (JQuery, JQuery) => Unit,
-    onHidden: (JQuery, JQuery) => Unit,
-    onHide: (JQuery, JQuery) => `false` | Unit,
-    onRemove: (JQuery, JQuery) => Unit,
-    onShow: (JQuery, JQuery) => `false` | Unit,
-    onUnplaceable: (JQuery, JQuery) => Unit,
-    onVisible: (JQuery, JQuery) => Unit,
+    onCreate: JQuery => Unit,
+    onHidden: JQuery => Unit,
+    onHide: JQuery => `false` | Unit,
+    onRemove: JQuery => Unit,
+    onShow: JQuery => `false` | Unit,
+    onUnplaceable: JQuery => Unit,
+    onVisible: JQuery => Unit,
     performance: Boolean,
     popup: `false` | String | JQuery,
     position: String,
@@ -323,7 +323,7 @@ object _Impl {
     variation: String,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(addTouchEvents = addTouchEvents.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], distanceAway = distanceAway.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], hideOnScroll = hideOnScroll.asInstanceOf[js.Any], hoverable = hoverable.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], lastResort = lastResort.asInstanceOf[js.Any], maxSearchDepth = maxSearchDepth.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], movePopup = movePopup.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onCreate = js.Any.fromFunction2(onCreate), onHidden = js.Any.fromFunction2(onHidden), onHide = js.Any.fromFunction2(onHide), onRemove = js.Any.fromFunction2(onRemove), onShow = js.Any.fromFunction2(onShow), onUnplaceable = js.Any.fromFunction2(onUnplaceable), onVisible = js.Any.fromFunction2(onVisible), performance = performance.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], prefer = prefer.asInstanceOf[js.Any], preserve = preserve.asInstanceOf[js.Any], scrollContext = scrollContext.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], setFluidWidth = setFluidWidth.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], variation = variation.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addTouchEvents = addTouchEvents.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], distanceAway = distanceAway.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], hideOnScroll = hideOnScroll.asInstanceOf[js.Any], hoverable = hoverable.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], lastResort = lastResort.asInstanceOf[js.Any], maxSearchDepth = maxSearchDepth.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], movePopup = movePopup.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onCreate = js.Any.fromFunction1(onCreate), onHidden = js.Any.fromFunction1(onHidden), onHide = js.Any.fromFunction1(onHide), onRemove = js.Any.fromFunction1(onRemove), onShow = js.Any.fromFunction1(onShow), onUnplaceable = js.Any.fromFunction1(onUnplaceable), onVisible = js.Any.fromFunction1(onVisible), performance = performance.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], prefer = prefer.asInstanceOf[js.Any], preserve = preserve.asInstanceOf[js.Any], scrollContext = scrollContext.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], setFluidWidth = setFluidWidth.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], variation = variation.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
     __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }

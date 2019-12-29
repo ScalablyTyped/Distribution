@@ -13,7 +13,8 @@ class SeriesLines protected () extends js.Object {
   val Format: ChartFormat = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.SeriesLines_typekey`: SeriesLines = js.native
+  @JSName("Word.SeriesLines_typekey")
+  var WordDotSeriesLines_typekey: SeriesLines = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native
 }

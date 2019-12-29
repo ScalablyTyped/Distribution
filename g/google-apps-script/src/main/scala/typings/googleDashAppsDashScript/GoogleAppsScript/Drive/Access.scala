@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Drive
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.ANYONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.ANYONE_WITH_LINK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.DOMAIN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.DOMAIN_WITH_LINK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.PRIVATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

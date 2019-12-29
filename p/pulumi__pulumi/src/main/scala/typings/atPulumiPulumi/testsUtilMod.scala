@@ -1,6 +1,5 @@
 package typings.atPulumiPulumi
 
-import typings.atPulumiPulumi.testsUtilMod.MochaFunc
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

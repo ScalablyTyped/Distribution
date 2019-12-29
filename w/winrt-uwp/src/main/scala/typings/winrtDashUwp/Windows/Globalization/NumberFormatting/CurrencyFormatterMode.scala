@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Globalization.NumberFormatting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.CurrencyFormatterMode.useCurrencyCode
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.CurrencyFormatterMode.useSymbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAlt extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -38,14 +38,16 @@ trait Anon_AccesstokenAlt extends js.Object {
     *
     * If you don't specify the mime type, the default mime type will be PNG.
     */
-  var `thumbnailProperties.mimeType`: js.UndefOr[String] = js.native
+  @JSName("thumbnailProperties.mimeType")
+  var thumbnailPropertiesDotmimeType: js.UndefOr[String] = js.native
   /**
     * The optional thumbnail image size.
     *
     * If you don't specify the size, the server chooses a default size of the
     * image.
     */
-  var `thumbnailProperties.thumbnailSize`: js.UndefOr[String] = js.native
+  @JSName("thumbnailProperties.thumbnailSize")
+  var thumbnailPropertiesDotthumbnailSize: js.UndefOr[String] = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */

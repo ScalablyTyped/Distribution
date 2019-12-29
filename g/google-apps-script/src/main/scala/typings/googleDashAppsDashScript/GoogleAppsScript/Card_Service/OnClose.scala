@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.OnClose.NOTHING
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.OnClose.RELOAD_ADD_ON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

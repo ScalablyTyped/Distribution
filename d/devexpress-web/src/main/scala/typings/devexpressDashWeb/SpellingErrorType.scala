@@ -1,8 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.SpellingErrorType.Misspelling
-import typings.devexpressDashWeb.SpellingErrorType.Repeating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

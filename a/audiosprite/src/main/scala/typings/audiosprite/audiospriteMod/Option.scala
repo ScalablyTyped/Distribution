@@ -21,7 +21,8 @@ trait Option extends js.Object {
   var samplerate: js.UndefOr[Double] = js.undefined
   var silence: js.UndefOr[Double] = js.undefined
   var vbr: js.UndefOr[VBR] = js.undefined
-  var `vbr:vorbis`: js.UndefOr[VBR_Vorbis] = js.undefined
+  @JSName("vbr:vorbis")
+  var vbrColonvorbis: js.UndefOr[VBR_Vorbis] = js.undefined
 }
 
 object Option {
@@ -43,7 +44,7 @@ object Option {
     samplerate: Int | Double = null,
     silence: Int | Double = null,
     vbr: VBR = null,
-    `vbr:vorbis`: VBR_Vorbis = null
+    vbrColonvorbis: VBR_Vorbis = null
   ): Option = {
     val __obj = js.Dynamic.literal()
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
@@ -62,7 +63,7 @@ object Option {
     if (samplerate != null) __obj.updateDynamic("samplerate")(samplerate.asInstanceOf[js.Any])
     if (silence != null) __obj.updateDynamic("silence")(silence.asInstanceOf[js.Any])
     if (vbr != null) __obj.updateDynamic("vbr")(vbr.asInstanceOf[js.Any])
-    if (`vbr:vorbis` != null) __obj.updateDynamic("vbr:vorbis")(`vbr:vorbis`.asInstanceOf[js.Any])
+    if (vbrColonvorbis != null) __obj.updateDynamic("vbr:vorbis")(vbrColonvorbis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

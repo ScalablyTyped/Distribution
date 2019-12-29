@@ -1,15 +1,15 @@
 package typings.estree.estreeMod
 
-import typings.estree.estreeStrings.`-`
+import typings.estree.estreeStrings.`-_`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.estree.estreeStrings.`-`
-  - typings.estree.estreeStrings.`+`
-  - typings.estree.estreeStrings.`!`
-  - typings.estree.estreeStrings.`~`
+  - typings.estree.estreeStrings.`-_`
+  - typings.estree.estreeStrings.Plussign
+  - typings.estree.estreeStrings.Exclamationmark
+  - typings.estree.estreeStrings.Tilde
   - typings.estree.estreeStrings.typeof
   - typings.estree.estreeStrings.void
   - typings.estree.estreeStrings.delete
@@ -18,12 +18,13 @@ trait UnaryOperator extends js.Object
 
 object UnaryOperator {
   @scala.inline
-  def `!`: typings.estree.estreeStrings.`!` = this.cast("!")
+  def Exclamationmark: typings.estree.estreeStrings.Exclamationmark = this.cast("!")
   @scala.inline
-  def `+`: typings.estree.estreeStrings.`+` = this.cast("+")
-  @JSName("-")
+  def Plussign: typings.estree.estreeStrings.Plussign = this.cast("+")
   @scala.inline
-  def `-_`: `-` = this.cast("-")
+  def Tilde: typings.estree.estreeStrings.Tilde = this.cast("~")
+  @scala.inline
+  def _dash: `-_` = this.cast("-")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
@@ -32,7 +33,5 @@ object UnaryOperator {
   def typeof: typings.estree.estreeStrings.typeof = this.cast("typeof")
   @scala.inline
   def void: typings.estree.estreeStrings.void = this.cast("void")
-  @scala.inline
-  def `~`: typings.estree.estreeStrings.`~` = this.cast("~")
 }
 

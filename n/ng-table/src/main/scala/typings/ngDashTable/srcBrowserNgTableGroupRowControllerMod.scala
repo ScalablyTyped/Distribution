@@ -2,7 +2,6 @@ package typings.ngDashTable
 
 import typings.angular.angularMod.IPromise
 import typings.ngDashTable.srcBrowserNgTableControllerMod.ITableScope
-import typings.ngDashTable.srcBrowserNgTableGroupRowControllerMod.IScopeExtensions
 import typings.ngDashTable.srcBrowserPublicDashInterfacesMod.IColumnDef
 import typings.ngDashTable.srcCoreDataResultsMod.DataResult
 import typings.ngDashTable.srcCoreGroupingGroupingFuncMod.IGroupingFunc

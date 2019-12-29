@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Visio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Visio.ToolBarType.commandBar
-import typings.officeDashJsDashPreview.Visio.ToolBarType.pageNavigationBar
-import typings.officeDashJsDashPreview.Visio.ToolBarType.statusBar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

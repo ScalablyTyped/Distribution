@@ -1,7 +1,6 @@
 package typings.smoothDashScrollbar
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.smoothDashScrollbar.utilsTouchDashRecordMod.Tracker
 import typings.std.Touch
 import typings.std.TouchEvent
 import scala.scalajs.js

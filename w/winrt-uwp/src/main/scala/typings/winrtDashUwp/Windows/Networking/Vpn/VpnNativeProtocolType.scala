@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.ipsecIkev2
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.l2tp
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.pptp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

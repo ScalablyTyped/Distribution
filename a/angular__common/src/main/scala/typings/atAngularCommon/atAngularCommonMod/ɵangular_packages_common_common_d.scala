@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵangular_packages_common_common_d")
+@JSImport("@angular/common", "\u0275angular_packages_common_common_d")
 @js.native
 object ɵangular_packages_common_common_d
   extends TopLevel[

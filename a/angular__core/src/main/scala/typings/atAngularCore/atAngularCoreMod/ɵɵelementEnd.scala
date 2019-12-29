@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵɵelementEnd")
+@JSImport("@angular/core", "\u0275\u0275elementEnd")
 @js.native
 object ɵɵelementEnd extends js.Object {
   def apply(): Unit = js.native

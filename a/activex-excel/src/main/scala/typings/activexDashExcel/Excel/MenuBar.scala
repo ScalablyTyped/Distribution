@@ -11,7 +11,8 @@ class MenuBar protected () extends js.Object {
   val BuiltIn: Boolean = js.native
   var Caption: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.MenuBar_typekey`: MenuBar = js.native
+  @JSName("Excel.MenuBar_typekey")
+  var ExcelDotMenuBar_typekey: MenuBar = js.native
   val Index: Double = js.native
   @JSName("Menus")
   val Menus_Original: Menus = js.native

@@ -1,17 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotAnalysis.FilterType.Exclude
-import typings.ejDotWebDotAll.ej.PivotAnalysis.FilterType.Include
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder.Ascending
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder.Descending
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder.None
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SummaryType
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SummaryType.Average
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SummaryType.Count
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SummaryType.Max
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SummaryType.Min
-import typings.ejDotWebDotAll.ej.PivotAnalysis.SummaryType.Sum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

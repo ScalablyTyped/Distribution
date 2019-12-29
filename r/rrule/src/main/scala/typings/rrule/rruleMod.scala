@@ -2,7 +2,6 @@ package typings.rrule
 
 import typings.rrule.distEsmSrcNlpI18nMod.Language
 import typings.rrule.distEsmSrcRrulestrMod.RRuleStrOptions
-import typings.rrule.distEsmSrcTypesMod.Frequency
 import typings.rrule.distEsmSrcTypesMod.Options
 import typings.rrule.distEsmSrcWeekdayMod.WeekdayStr
 import typings.std.Partial
@@ -64,21 +63,21 @@ object rruleMod extends js.Object {
   /* static members */
   @js.native
   object RRule extends js.Object {
-    val DAILY: Frequency = js.native
+    val DAILY: String | Double = js.native
     val FR: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val FREQUENCIES: js.Array[String] = js.native
-    val HOURLY: Frequency = js.native
-    val MINUTELY: Frequency = js.native
+    val HOURLY: String | Double = js.native
+    val MINUTELY: String | Double = js.native
     val MO: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
-    val MONTHLY: Frequency = js.native
+    val MONTHLY: String | Double = js.native
     val SA: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
-    val SECONDLY: Frequency = js.native
+    val SECONDLY: String | Double = js.native
     val SU: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val TH: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val TU: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val WE: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
-    val WEEKLY: Frequency = js.native
-    val YEARLY: Frequency = js.native
+    val WEEKLY: String | Double = js.native
+    val YEARLY: String | Double = js.native
     @JSName("optionsToString")
     var optionsToString_Original: js.Function1[/* options */ Partial[Options], String] = js.native
     @JSName("parseString")
@@ -101,21 +100,21 @@ object rruleMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    val DAILY: Frequency = js.native
+    val DAILY: String | Double = js.native
     val FR: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val FREQUENCIES: js.Array[String] = js.native
-    val HOURLY: Frequency = js.native
-    val MINUTELY: Frequency = js.native
+    val HOURLY: String | Double = js.native
+    val MINUTELY: String | Double = js.native
     val MO: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
-    val MONTHLY: Frequency = js.native
+    val MONTHLY: String | Double = js.native
     val SA: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
-    val SECONDLY: Frequency = js.native
+    val SECONDLY: String | Double = js.native
     val SU: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val TH: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val TU: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
     val WE: typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
-    val WEEKLY: Frequency = js.native
-    val YEARLY: Frequency = js.native
+    val WEEKLY: String | Double = js.native
+    val YEARLY: String | Double = js.native
     @JSName("optionsToString")
     var optionsToString_Original: js.Function1[/* options */ Partial[Options], String] = js.native
     @JSName("parseString")

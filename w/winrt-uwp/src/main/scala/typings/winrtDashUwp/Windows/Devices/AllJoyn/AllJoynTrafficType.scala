@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynTrafficType.messages
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynTrafficType.rawReliable
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynTrafficType.rawUnreliable
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynTrafficType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

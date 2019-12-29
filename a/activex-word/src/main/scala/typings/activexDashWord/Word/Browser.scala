@@ -11,7 +11,8 @@ class Browser protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   var Target: WdBrowseTarget = js.native
-  var `Word.Browser_typekey`: Browser = js.native
+  @JSName("Word.Browser_typekey")
+  var WordDotBrowser_typekey: Browser = js.native
   def Next(): Unit = js.native
   def Previous(): Unit = js.native
 }

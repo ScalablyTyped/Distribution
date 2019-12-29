@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -71,46 +72,18 @@ class DOMElement protected ()
     * @param style If a string, will be set directly as the elements `style` property value. If a plain object, will be iterated and the values transferred. In both cases the values replacing whatever CSS styles may have been previously set.
     * @param innerText If given, will be set directly as the elements `innerText` property value, replacing whatever was there before.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, element: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, element: Element) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, element: String, style: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, element: String, style: js.Any) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, element: Element, style: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, element: Element, style: js.Any) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    element: String,
-    style: String,
-    innerText: String
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    element: String,
-    style: js.Any,
-    innerText: String
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    element: Element,
-    style: String,
-    innerText: String
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    x: Double,
-    y: Double,
-    element: Element,
-    style: js.Any,
-    innerText: String
-  ) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, x: Double) = this()
+  def this(scene: Scene, x: Double, y: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, element: String) = this()
+  def this(scene: Scene, x: Double, y: Double, element: Element) = this()
+  def this(scene: Scene, x: Double, y: Double, element: String, style: String) = this()
+  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any) = this()
+  def this(scene: Scene, x: Double, y: Double, element: Element, style: String) = this()
+  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any) = this()
+  def this(scene: Scene, x: Double, y: Double, element: String, style: String, innerText: String) = this()
+  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any, innerText: String) = this()
+  def this(scene: Scene, x: Double, y: Double, element: Element, style: String, innerText: String) = this()
+  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any, innerText: String) = this()
 }
 

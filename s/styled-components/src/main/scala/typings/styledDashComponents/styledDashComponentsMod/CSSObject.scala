@@ -506,115 +506,224 @@ import scala.scalajs.js.annotation._
 trait CSSObject
   extends _InterpolationValue
      with /* key */ StringDictionary[js.UndefOr[CSSObject | String | Double]] {
-  var `:-moz-any()`: js.UndefOr[CSSObject] = js.undefined
-  var `:-moz-any-link`: js.UndefOr[CSSObject] = js.undefined
-  var `:-moz-dir`: js.UndefOr[CSSObject] = js.undefined
-  var `:-moz-focusring`: js.UndefOr[CSSObject] = js.undefined
-  var `:-moz-full-screen`: js.UndefOr[CSSObject] = js.undefined
-  var `:-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
-  var `:-moz-read-only`: js.UndefOr[CSSObject] = js.undefined
-  var `:-moz-read-write`: js.UndefOr[CSSObject] = js.undefined
-  var `:-ms-fullscreen`: js.UndefOr[CSSObject] = js.undefined
-  var `:-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
-  var `:-webkit-any()`: js.UndefOr[CSSObject] = js.undefined
-  var `:-webkit-any-link`: js.UndefOr[CSSObject] = js.undefined
-  var `:-webkit-full-screen`: js.UndefOr[CSSObject] = js.undefined
-  var `::-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
-  var `::-moz-progress-bar`: js.UndefOr[CSSObject] = js.undefined
-  var `::-moz-range-progress`: js.UndefOr[CSSObject] = js.undefined
-  var `::-moz-range-thumb`: js.UndefOr[CSSObject] = js.undefined
-  var `::-moz-range-track`: js.UndefOr[CSSObject] = js.undefined
-  var `::-moz-selection`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-backdrop`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-browse`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-check`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-clear`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-fill`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-fill-lower`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-fill-upper`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-reveal`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-thumb`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-ticks-after`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-ticks-before`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-tooltip`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-track`: js.UndefOr[CSSObject] = js.undefined
-  var `::-ms-value`: js.UndefOr[CSSObject] = js.undefined
-  var `::-webkit-backdrop`: js.UndefOr[CSSObject] = js.undefined
-  var `::-webkit-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
-  var `::-webkit-progress-bar`: js.UndefOr[CSSObject] = js.undefined
-  var `::-webkit-progress-inner-value`: js.UndefOr[CSSObject] = js.undefined
-  var `::-webkit-progress-value`: js.UndefOr[CSSObject] = js.undefined
-  var `::-webkit-slider-runnable-track`: js.UndefOr[CSSObject] = js.undefined
-  var `::-webkit-slider-thumb`: js.UndefOr[CSSObject] = js.undefined
-  var `::after`: js.UndefOr[CSSObject] = js.undefined
-  var `::backdrop`: js.UndefOr[CSSObject] = js.undefined
-  var `::before`: js.UndefOr[CSSObject] = js.undefined
-  var `::cue`: js.UndefOr[CSSObject] = js.undefined
-  var `::first-letter`: js.UndefOr[CSSObject] = js.undefined
-  var `::first-line`: js.UndefOr[CSSObject] = js.undefined
-  var `::grammar-error`: js.UndefOr[CSSObject] = js.undefined
-  var `::marker`: js.UndefOr[CSSObject] = js.undefined
-  var `::part`: js.UndefOr[CSSObject] = js.undefined
-  var `::placeholder`: js.UndefOr[CSSObject] = js.undefined
-  var `::selection`: js.UndefOr[CSSObject] = js.undefined
-  var `::slotted`: js.UndefOr[CSSObject] = js.undefined
-  var `::spelling-error`: js.UndefOr[CSSObject] = js.undefined
-  var `:active`: js.UndefOr[CSSObject] = js.undefined
-  var `:after`: js.UndefOr[CSSObject] = js.undefined
-  var `:any-link`: js.UndefOr[CSSObject] = js.undefined
-  var `:before`: js.UndefOr[CSSObject] = js.undefined
-  var `:blank`: js.UndefOr[CSSObject] = js.undefined
-  var `:checked`: js.UndefOr[CSSObject] = js.undefined
-  var `:default`: js.UndefOr[CSSObject] = js.undefined
-  var `:defined`: js.UndefOr[CSSObject] = js.undefined
-  var `:dir`: js.UndefOr[CSSObject] = js.undefined
-  var `:disabled`: js.UndefOr[CSSObject] = js.undefined
-  var `:empty`: js.UndefOr[CSSObject] = js.undefined
-  var `:enabled`: js.UndefOr[CSSObject] = js.undefined
-  var `:first`: js.UndefOr[CSSObject] = js.undefined
-  var `:first-child`: js.UndefOr[CSSObject] = js.undefined
-  var `:first-letter`: js.UndefOr[CSSObject] = js.undefined
-  var `:first-line`: js.UndefOr[CSSObject] = js.undefined
-  var `:first-of-type`: js.UndefOr[CSSObject] = js.undefined
-  var `:focus`: js.UndefOr[CSSObject] = js.undefined
-  var `:focus-visible`: js.UndefOr[CSSObject] = js.undefined
-  var `:focus-within`: js.UndefOr[CSSObject] = js.undefined
-  var `:fullscreen`: js.UndefOr[CSSObject] = js.undefined
-  var `:has`: js.UndefOr[CSSObject] = js.undefined
-  var `:host`: js.UndefOr[CSSObject] = js.undefined
-  var `:host-context`: js.UndefOr[CSSObject] = js.undefined
-  var `:hover`: js.UndefOr[CSSObject] = js.undefined
-  var `:in-range`: js.UndefOr[CSSObject] = js.undefined
-  var `:indeterminate`: js.UndefOr[CSSObject] = js.undefined
-  var `:invalid`: js.UndefOr[CSSObject] = js.undefined
-  var `:is`: js.UndefOr[CSSObject] = js.undefined
-  var `:lang`: js.UndefOr[CSSObject] = js.undefined
-  var `:last-child`: js.UndefOr[CSSObject] = js.undefined
-  var `:last-of-type`: js.UndefOr[CSSObject] = js.undefined
-  var `:left`: js.UndefOr[CSSObject] = js.undefined
-  var `:link`: js.UndefOr[CSSObject] = js.undefined
-  var `:matches()`: js.UndefOr[CSSObject] = js.undefined
-  var `:not`: js.UndefOr[CSSObject] = js.undefined
-  var `:nth-child`: js.UndefOr[CSSObject] = js.undefined
-  var `:nth-last-child`: js.UndefOr[CSSObject] = js.undefined
-  var `:nth-last-of-type`: js.UndefOr[CSSObject] = js.undefined
-  var `:nth-of-type`: js.UndefOr[CSSObject] = js.undefined
-  var `:only-child`: js.UndefOr[CSSObject] = js.undefined
-  var `:only-of-type`: js.UndefOr[CSSObject] = js.undefined
-  var `:optional`: js.UndefOr[CSSObject] = js.undefined
-  var `:out-of-range`: js.UndefOr[CSSObject] = js.undefined
-  var `:placeholder-shown`: js.UndefOr[CSSObject] = js.undefined
-  var `:read-only`: js.UndefOr[CSSObject] = js.undefined
-  var `:read-write`: js.UndefOr[CSSObject] = js.undefined
-  var `:required`: js.UndefOr[CSSObject] = js.undefined
-  var `:right`: js.UndefOr[CSSObject] = js.undefined
-  var `:root`: js.UndefOr[CSSObject] = js.undefined
-  var `:scope`: js.UndefOr[CSSObject] = js.undefined
-  var `:target`: js.UndefOr[CSSObject] = js.undefined
-  var `:valid`: js.UndefOr[CSSObject] = js.undefined
-  var `:visited`: js.UndefOr[CSSObject] = js.undefined
-  var `:where`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-any-link")
+  var `Colon-moz-any-link`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-any()")
+  var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-dir")
+  var `Colon-moz-dir`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-focusring")
+  var `Colon-moz-focusring`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-full-screen")
+  var `Colon-moz-full-screen`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-placeholder")
+  var `Colon-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-read-only")
+  var `Colon-moz-read-only`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-moz-read-write")
+  var `Colon-moz-read-write`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-ms-fullscreen")
+  var `Colon-ms-fullscreen`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-ms-input-placeholder")
+  var `Colon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-webkit-any-link")
+  var `Colon-webkit-any-link`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-webkit-any()")
+  var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":-webkit-full-screen")
+  var `Colon-webkit-full-screen`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-moz-placeholder")
+  var `ColonColon-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-moz-progress-bar")
+  var `ColonColon-moz-progress-bar`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-moz-range-progress")
+  var `ColonColon-moz-range-progress`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-moz-range-thumb")
+  var `ColonColon-moz-range-thumb`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-moz-range-track")
+  var `ColonColon-moz-range-track`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-moz-selection")
+  var `ColonColon-moz-selection`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-backdrop")
+  var `ColonColon-ms-backdrop`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-browse")
+  var `ColonColon-ms-browse`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-check")
+  var `ColonColon-ms-check`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-clear")
+  var `ColonColon-ms-clear`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-fill")
+  var `ColonColon-ms-fill`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-fill-lower")
+  var `ColonColon-ms-fill-lower`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-fill-upper")
+  var `ColonColon-ms-fill-upper`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-input-placeholder")
+  var `ColonColon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-reveal")
+  var `ColonColon-ms-reveal`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-thumb")
+  var `ColonColon-ms-thumb`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-ticks-after")
+  var `ColonColon-ms-ticks-after`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-ticks-before")
+  var `ColonColon-ms-ticks-before`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-tooltip")
+  var `ColonColon-ms-tooltip`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-track")
+  var `ColonColon-ms-track`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-ms-value")
+  var `ColonColon-ms-value`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-webkit-backdrop")
+  var `ColonColon-webkit-backdrop`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-webkit-input-placeholder")
+  var `ColonColon-webkit-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-webkit-progress-bar")
+  var `ColonColon-webkit-progress-bar`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-webkit-progress-inner-value")
+  var `ColonColon-webkit-progress-inner-value`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-webkit-progress-value")
+  var `ColonColon-webkit-progress-value`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-webkit-slider-runnable-track")
+  var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::-webkit-slider-thumb")
+  var `ColonColon-webkit-slider-thumb`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::after")
+  var ColonColonafter: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::backdrop")
+  var ColonColonbackdrop: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::before")
+  var ColonColonbefore: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::cue")
+  var ColonColoncue: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::first-letter")
+  var `ColonColonfirst-letter`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::first-line")
+  var `ColonColonfirst-line`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::grammar-error")
+  var `ColonColongrammar-error`: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::marker")
+  var ColonColonmarker: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::part")
+  var ColonColonpart: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::placeholder")
+  var ColonColonplaceholder: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::selection")
+  var ColonColonselection: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::slotted")
+  var ColonColonslotted: js.UndefOr[CSSObject] = js.undefined
+  @JSName("::spelling-error")
+  var `ColonColonspelling-error`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":active")
+  var Colonactive: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":after")
+  var Colonafter: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":any-link")
+  var `Colonany-link`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":before")
+  var Colonbefore: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":blank")
+  var Colonblank: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":checked")
+  var Colonchecked: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":default")
+  var Colondefault: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":defined")
+  var Colondefined: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":dir")
+  var Colondir: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":disabled")
+  var Colondisabled: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":empty")
+  var Colonempty: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":enabled")
+  var Colonenabled: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":first")
+  var Colonfirst: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":first-child")
+  var `Colonfirst-child`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":first-letter")
+  var `Colonfirst-letter`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":first-line")
+  var `Colonfirst-line`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":first-of-type")
+  var `Colonfirst-of-type`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":focus")
+  var Colonfocus: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":focus-visible")
+  var `Colonfocus-visible`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":focus-within")
+  var `Colonfocus-within`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":fullscreen")
+  var Colonfullscreen: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":has")
+  var Colonhas: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":host")
+  var Colonhost: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":host-context")
+  var `Colonhost-context`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":hover")
+  var Colonhover: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":in-range")
+  var `Colonin-range`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":indeterminate")
+  var Colonindeterminate: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":invalid")
+  var Coloninvalid: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":is")
+  var Colonis: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":lang")
+  var Colonlang: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":last-child")
+  var `Colonlast-child`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":last-of-type")
+  var `Colonlast-of-type`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":left")
+  var Colonleft: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":link")
+  var Colonlink: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":matches()")
+  var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":not")
+  var Colonnot: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":nth-child")
+  var `Colonnth-child`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":nth-last-child")
+  var `Colonnth-last-child`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":nth-last-of-type")
+  var `Colonnth-last-of-type`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":nth-of-type")
+  var `Colonnth-of-type`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":only-child")
+  var `Colononly-child`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":only-of-type")
+  var `Colononly-of-type`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":optional")
+  var Colonoptional: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":out-of-range")
+  var `Colonout-of-range`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":placeholder-shown")
+  var `Colonplaceholder-shown`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":read-only")
+  var `Colonread-only`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":read-write")
+  var `Colonread-write`: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":required")
+  var Colonrequired: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":right")
+  var Colonright: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":root")
+  var Colonroot: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":scope")
+  var Colonscope: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":target")
+  var Colontarget: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":valid")
+  var Colonvalid: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":visited")
+  var Colonvisited: js.UndefOr[CSSObject] = js.undefined
+  @JSName(":where")
+  var Colonwhere: js.UndefOr[CSSObject] = js.undefined
   /**
     * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
     *
@@ -7469,115 +7578,115 @@ trait CSSObject
 object CSSObject {
   @scala.inline
   def apply(
-    `:-moz-any()`: CSSObject = null,
-    `:-moz-any-link`: CSSObject = null,
-    `:-moz-dir`: CSSObject = null,
-    `:-moz-focusring`: CSSObject = null,
-    `:-moz-full-screen`: CSSObject = null,
-    `:-moz-placeholder`: CSSObject = null,
-    `:-moz-read-only`: CSSObject = null,
-    `:-moz-read-write`: CSSObject = null,
-    `:-ms-fullscreen`: CSSObject = null,
-    `:-ms-input-placeholder`: CSSObject = null,
-    `:-webkit-any()`: CSSObject = null,
-    `:-webkit-any-link`: CSSObject = null,
-    `:-webkit-full-screen`: CSSObject = null,
-    `::-moz-placeholder`: CSSObject = null,
-    `::-moz-progress-bar`: CSSObject = null,
-    `::-moz-range-progress`: CSSObject = null,
-    `::-moz-range-thumb`: CSSObject = null,
-    `::-moz-range-track`: CSSObject = null,
-    `::-moz-selection`: CSSObject = null,
-    `::-ms-backdrop`: CSSObject = null,
-    `::-ms-browse`: CSSObject = null,
-    `::-ms-check`: CSSObject = null,
-    `::-ms-clear`: CSSObject = null,
-    `::-ms-fill`: CSSObject = null,
-    `::-ms-fill-lower`: CSSObject = null,
-    `::-ms-fill-upper`: CSSObject = null,
-    `::-ms-input-placeholder`: CSSObject = null,
-    `::-ms-reveal`: CSSObject = null,
-    `::-ms-thumb`: CSSObject = null,
-    `::-ms-ticks-after`: CSSObject = null,
-    `::-ms-ticks-before`: CSSObject = null,
-    `::-ms-tooltip`: CSSObject = null,
-    `::-ms-track`: CSSObject = null,
-    `::-ms-value`: CSSObject = null,
-    `::-webkit-backdrop`: CSSObject = null,
-    `::-webkit-input-placeholder`: CSSObject = null,
-    `::-webkit-progress-bar`: CSSObject = null,
-    `::-webkit-progress-inner-value`: CSSObject = null,
-    `::-webkit-progress-value`: CSSObject = null,
-    `::-webkit-slider-runnable-track`: CSSObject = null,
-    `::-webkit-slider-thumb`: CSSObject = null,
-    `::after`: CSSObject = null,
-    `::backdrop`: CSSObject = null,
-    `::before`: CSSObject = null,
-    `::cue`: CSSObject = null,
-    `::first-letter`: CSSObject = null,
-    `::first-line`: CSSObject = null,
-    `::grammar-error`: CSSObject = null,
-    `::marker`: CSSObject = null,
-    `::part`: CSSObject = null,
-    `::placeholder`: CSSObject = null,
-    `::selection`: CSSObject = null,
-    `::slotted`: CSSObject = null,
-    `::spelling-error`: CSSObject = null,
-    `:active`: CSSObject = null,
-    `:after`: CSSObject = null,
-    `:any-link`: CSSObject = null,
-    `:before`: CSSObject = null,
-    `:blank`: CSSObject = null,
-    `:checked`: CSSObject = null,
-    `:default`: CSSObject = null,
-    `:defined`: CSSObject = null,
-    `:dir`: CSSObject = null,
-    `:disabled`: CSSObject = null,
-    `:empty`: CSSObject = null,
-    `:enabled`: CSSObject = null,
-    `:first`: CSSObject = null,
-    `:first-child`: CSSObject = null,
-    `:first-letter`: CSSObject = null,
-    `:first-line`: CSSObject = null,
-    `:first-of-type`: CSSObject = null,
-    `:focus`: CSSObject = null,
-    `:focus-visible`: CSSObject = null,
-    `:focus-within`: CSSObject = null,
-    `:fullscreen`: CSSObject = null,
-    `:has`: CSSObject = null,
-    `:host`: CSSObject = null,
-    `:host-context`: CSSObject = null,
-    `:hover`: CSSObject = null,
-    `:in-range`: CSSObject = null,
-    `:indeterminate`: CSSObject = null,
-    `:invalid`: CSSObject = null,
-    `:is`: CSSObject = null,
-    `:lang`: CSSObject = null,
-    `:last-child`: CSSObject = null,
-    `:last-of-type`: CSSObject = null,
-    `:left`: CSSObject = null,
-    `:link`: CSSObject = null,
-    `:matches()`: CSSObject = null,
-    `:not`: CSSObject = null,
-    `:nth-child`: CSSObject = null,
-    `:nth-last-child`: CSSObject = null,
-    `:nth-last-of-type`: CSSObject = null,
-    `:nth-of-type`: CSSObject = null,
-    `:only-child`: CSSObject = null,
-    `:only-of-type`: CSSObject = null,
-    `:optional`: CSSObject = null,
-    `:out-of-range`: CSSObject = null,
-    `:placeholder-shown`: CSSObject = null,
-    `:read-only`: CSSObject = null,
-    `:read-write`: CSSObject = null,
-    `:required`: CSSObject = null,
-    `:right`: CSSObject = null,
-    `:root`: CSSObject = null,
-    `:scope`: CSSObject = null,
-    `:target`: CSSObject = null,
-    `:valid`: CSSObject = null,
-    `:visited`: CSSObject = null,
-    `:where`: CSSObject = null,
+    `Colon-moz-any-link`: CSSObject = null,
+    `Colon-moz-anyLeftparenthesisRightparenthesis`: CSSObject = null,
+    `Colon-moz-dir`: CSSObject = null,
+    `Colon-moz-focusring`: CSSObject = null,
+    `Colon-moz-full-screen`: CSSObject = null,
+    `Colon-moz-placeholder`: CSSObject = null,
+    `Colon-moz-read-only`: CSSObject = null,
+    `Colon-moz-read-write`: CSSObject = null,
+    `Colon-ms-fullscreen`: CSSObject = null,
+    `Colon-ms-input-placeholder`: CSSObject = null,
+    `Colon-webkit-any-link`: CSSObject = null,
+    `Colon-webkit-anyLeftparenthesisRightparenthesis`: CSSObject = null,
+    `Colon-webkit-full-screen`: CSSObject = null,
+    `ColonColon-moz-placeholder`: CSSObject = null,
+    `ColonColon-moz-progress-bar`: CSSObject = null,
+    `ColonColon-moz-range-progress`: CSSObject = null,
+    `ColonColon-moz-range-thumb`: CSSObject = null,
+    `ColonColon-moz-range-track`: CSSObject = null,
+    `ColonColon-moz-selection`: CSSObject = null,
+    `ColonColon-ms-backdrop`: CSSObject = null,
+    `ColonColon-ms-browse`: CSSObject = null,
+    `ColonColon-ms-check`: CSSObject = null,
+    `ColonColon-ms-clear`: CSSObject = null,
+    `ColonColon-ms-fill`: CSSObject = null,
+    `ColonColon-ms-fill-lower`: CSSObject = null,
+    `ColonColon-ms-fill-upper`: CSSObject = null,
+    `ColonColon-ms-input-placeholder`: CSSObject = null,
+    `ColonColon-ms-reveal`: CSSObject = null,
+    `ColonColon-ms-thumb`: CSSObject = null,
+    `ColonColon-ms-ticks-after`: CSSObject = null,
+    `ColonColon-ms-ticks-before`: CSSObject = null,
+    `ColonColon-ms-tooltip`: CSSObject = null,
+    `ColonColon-ms-track`: CSSObject = null,
+    `ColonColon-ms-value`: CSSObject = null,
+    `ColonColon-webkit-backdrop`: CSSObject = null,
+    `ColonColon-webkit-input-placeholder`: CSSObject = null,
+    `ColonColon-webkit-progress-bar`: CSSObject = null,
+    `ColonColon-webkit-progress-inner-value`: CSSObject = null,
+    `ColonColon-webkit-progress-value`: CSSObject = null,
+    `ColonColon-webkit-slider-runnable-track`: CSSObject = null,
+    `ColonColon-webkit-slider-thumb`: CSSObject = null,
+    ColonColonafter: CSSObject = null,
+    ColonColonbackdrop: CSSObject = null,
+    ColonColonbefore: CSSObject = null,
+    ColonColoncue: CSSObject = null,
+    `ColonColonfirst-letter`: CSSObject = null,
+    `ColonColonfirst-line`: CSSObject = null,
+    `ColonColongrammar-error`: CSSObject = null,
+    ColonColonmarker: CSSObject = null,
+    ColonColonpart: CSSObject = null,
+    ColonColonplaceholder: CSSObject = null,
+    ColonColonselection: CSSObject = null,
+    ColonColonslotted: CSSObject = null,
+    `ColonColonspelling-error`: CSSObject = null,
+    Colonactive: CSSObject = null,
+    Colonafter: CSSObject = null,
+    `Colonany-link`: CSSObject = null,
+    Colonbefore: CSSObject = null,
+    Colonblank: CSSObject = null,
+    Colonchecked: CSSObject = null,
+    Colondefault: CSSObject = null,
+    Colondefined: CSSObject = null,
+    Colondir: CSSObject = null,
+    Colondisabled: CSSObject = null,
+    Colonempty: CSSObject = null,
+    Colonenabled: CSSObject = null,
+    Colonfirst: CSSObject = null,
+    `Colonfirst-child`: CSSObject = null,
+    `Colonfirst-letter`: CSSObject = null,
+    `Colonfirst-line`: CSSObject = null,
+    `Colonfirst-of-type`: CSSObject = null,
+    Colonfocus: CSSObject = null,
+    `Colonfocus-visible`: CSSObject = null,
+    `Colonfocus-within`: CSSObject = null,
+    Colonfullscreen: CSSObject = null,
+    Colonhas: CSSObject = null,
+    Colonhost: CSSObject = null,
+    `Colonhost-context`: CSSObject = null,
+    Colonhover: CSSObject = null,
+    `Colonin-range`: CSSObject = null,
+    Colonindeterminate: CSSObject = null,
+    Coloninvalid: CSSObject = null,
+    Colonis: CSSObject = null,
+    Colonlang: CSSObject = null,
+    `Colonlast-child`: CSSObject = null,
+    `Colonlast-of-type`: CSSObject = null,
+    Colonleft: CSSObject = null,
+    Colonlink: CSSObject = null,
+    ColonmatchesLeftparenthesisRightparenthesis: CSSObject = null,
+    Colonnot: CSSObject = null,
+    `Colonnth-child`: CSSObject = null,
+    `Colonnth-last-child`: CSSObject = null,
+    `Colonnth-last-of-type`: CSSObject = null,
+    `Colonnth-of-type`: CSSObject = null,
+    `Colononly-child`: CSSObject = null,
+    `Colononly-of-type`: CSSObject = null,
+    Colonoptional: CSSObject = null,
+    `Colonout-of-range`: CSSObject = null,
+    `Colonplaceholder-shown`: CSSObject = null,
+    `Colonread-only`: CSSObject = null,
+    `Colonread-write`: CSSObject = null,
+    Colonrequired: CSSObject = null,
+    Colonright: CSSObject = null,
+    Colonroot: CSSObject = null,
+    Colonscope: CSSObject = null,
+    Colontarget: CSSObject = null,
+    Colonvalid: CSSObject = null,
+    Colonvisited: CSSObject = null,
+    Colonwhere: CSSObject = null,
     KhtmlBoxAlign: BoxAlignProperty = null,
     KhtmlBoxDirection: BoxDirectionProperty = null,
     KhtmlBoxFlex: GlobalsNumber = null,
@@ -7725,115 +7834,115 @@ object CSSObject {
     _InterpolationValue: _InterpolationValue = null
   ): CSSObject = {
     val __obj = js.Dynamic.literal()
-    if (`:-moz-any()` != null) __obj.updateDynamic(":-moz-any()")(`:-moz-any()`.asInstanceOf[js.Any])
-    if (`:-moz-any-link` != null) __obj.updateDynamic(":-moz-any-link")(`:-moz-any-link`.asInstanceOf[js.Any])
-    if (`:-moz-dir` != null) __obj.updateDynamic(":-moz-dir")(`:-moz-dir`.asInstanceOf[js.Any])
-    if (`:-moz-focusring` != null) __obj.updateDynamic(":-moz-focusring")(`:-moz-focusring`.asInstanceOf[js.Any])
-    if (`:-moz-full-screen` != null) __obj.updateDynamic(":-moz-full-screen")(`:-moz-full-screen`.asInstanceOf[js.Any])
-    if (`:-moz-placeholder` != null) __obj.updateDynamic(":-moz-placeholder")(`:-moz-placeholder`.asInstanceOf[js.Any])
-    if (`:-moz-read-only` != null) __obj.updateDynamic(":-moz-read-only")(`:-moz-read-only`.asInstanceOf[js.Any])
-    if (`:-moz-read-write` != null) __obj.updateDynamic(":-moz-read-write")(`:-moz-read-write`.asInstanceOf[js.Any])
-    if (`:-ms-fullscreen` != null) __obj.updateDynamic(":-ms-fullscreen")(`:-ms-fullscreen`.asInstanceOf[js.Any])
-    if (`:-ms-input-placeholder` != null) __obj.updateDynamic(":-ms-input-placeholder")(`:-ms-input-placeholder`.asInstanceOf[js.Any])
-    if (`:-webkit-any()` != null) __obj.updateDynamic(":-webkit-any()")(`:-webkit-any()`.asInstanceOf[js.Any])
-    if (`:-webkit-any-link` != null) __obj.updateDynamic(":-webkit-any-link")(`:-webkit-any-link`.asInstanceOf[js.Any])
-    if (`:-webkit-full-screen` != null) __obj.updateDynamic(":-webkit-full-screen")(`:-webkit-full-screen`.asInstanceOf[js.Any])
-    if (`::-moz-placeholder` != null) __obj.updateDynamic("::-moz-placeholder")(`::-moz-placeholder`.asInstanceOf[js.Any])
-    if (`::-moz-progress-bar` != null) __obj.updateDynamic("::-moz-progress-bar")(`::-moz-progress-bar`.asInstanceOf[js.Any])
-    if (`::-moz-range-progress` != null) __obj.updateDynamic("::-moz-range-progress")(`::-moz-range-progress`.asInstanceOf[js.Any])
-    if (`::-moz-range-thumb` != null) __obj.updateDynamic("::-moz-range-thumb")(`::-moz-range-thumb`.asInstanceOf[js.Any])
-    if (`::-moz-range-track` != null) __obj.updateDynamic("::-moz-range-track")(`::-moz-range-track`.asInstanceOf[js.Any])
-    if (`::-moz-selection` != null) __obj.updateDynamic("::-moz-selection")(`::-moz-selection`.asInstanceOf[js.Any])
-    if (`::-ms-backdrop` != null) __obj.updateDynamic("::-ms-backdrop")(`::-ms-backdrop`.asInstanceOf[js.Any])
-    if (`::-ms-browse` != null) __obj.updateDynamic("::-ms-browse")(`::-ms-browse`.asInstanceOf[js.Any])
-    if (`::-ms-check` != null) __obj.updateDynamic("::-ms-check")(`::-ms-check`.asInstanceOf[js.Any])
-    if (`::-ms-clear` != null) __obj.updateDynamic("::-ms-clear")(`::-ms-clear`.asInstanceOf[js.Any])
-    if (`::-ms-fill` != null) __obj.updateDynamic("::-ms-fill")(`::-ms-fill`.asInstanceOf[js.Any])
-    if (`::-ms-fill-lower` != null) __obj.updateDynamic("::-ms-fill-lower")(`::-ms-fill-lower`.asInstanceOf[js.Any])
-    if (`::-ms-fill-upper` != null) __obj.updateDynamic("::-ms-fill-upper")(`::-ms-fill-upper`.asInstanceOf[js.Any])
-    if (`::-ms-input-placeholder` != null) __obj.updateDynamic("::-ms-input-placeholder")(`::-ms-input-placeholder`.asInstanceOf[js.Any])
-    if (`::-ms-reveal` != null) __obj.updateDynamic("::-ms-reveal")(`::-ms-reveal`.asInstanceOf[js.Any])
-    if (`::-ms-thumb` != null) __obj.updateDynamic("::-ms-thumb")(`::-ms-thumb`.asInstanceOf[js.Any])
-    if (`::-ms-ticks-after` != null) __obj.updateDynamic("::-ms-ticks-after")(`::-ms-ticks-after`.asInstanceOf[js.Any])
-    if (`::-ms-ticks-before` != null) __obj.updateDynamic("::-ms-ticks-before")(`::-ms-ticks-before`.asInstanceOf[js.Any])
-    if (`::-ms-tooltip` != null) __obj.updateDynamic("::-ms-tooltip")(`::-ms-tooltip`.asInstanceOf[js.Any])
-    if (`::-ms-track` != null) __obj.updateDynamic("::-ms-track")(`::-ms-track`.asInstanceOf[js.Any])
-    if (`::-ms-value` != null) __obj.updateDynamic("::-ms-value")(`::-ms-value`.asInstanceOf[js.Any])
-    if (`::-webkit-backdrop` != null) __obj.updateDynamic("::-webkit-backdrop")(`::-webkit-backdrop`.asInstanceOf[js.Any])
-    if (`::-webkit-input-placeholder` != null) __obj.updateDynamic("::-webkit-input-placeholder")(`::-webkit-input-placeholder`.asInstanceOf[js.Any])
-    if (`::-webkit-progress-bar` != null) __obj.updateDynamic("::-webkit-progress-bar")(`::-webkit-progress-bar`.asInstanceOf[js.Any])
-    if (`::-webkit-progress-inner-value` != null) __obj.updateDynamic("::-webkit-progress-inner-value")(`::-webkit-progress-inner-value`.asInstanceOf[js.Any])
-    if (`::-webkit-progress-value` != null) __obj.updateDynamic("::-webkit-progress-value")(`::-webkit-progress-value`.asInstanceOf[js.Any])
-    if (`::-webkit-slider-runnable-track` != null) __obj.updateDynamic("::-webkit-slider-runnable-track")(`::-webkit-slider-runnable-track`.asInstanceOf[js.Any])
-    if (`::-webkit-slider-thumb` != null) __obj.updateDynamic("::-webkit-slider-thumb")(`::-webkit-slider-thumb`.asInstanceOf[js.Any])
-    if (`::after` != null) __obj.updateDynamic("::after")(`::after`.asInstanceOf[js.Any])
-    if (`::backdrop` != null) __obj.updateDynamic("::backdrop")(`::backdrop`.asInstanceOf[js.Any])
-    if (`::before` != null) __obj.updateDynamic("::before")(`::before`.asInstanceOf[js.Any])
-    if (`::cue` != null) __obj.updateDynamic("::cue")(`::cue`.asInstanceOf[js.Any])
-    if (`::first-letter` != null) __obj.updateDynamic("::first-letter")(`::first-letter`.asInstanceOf[js.Any])
-    if (`::first-line` != null) __obj.updateDynamic("::first-line")(`::first-line`.asInstanceOf[js.Any])
-    if (`::grammar-error` != null) __obj.updateDynamic("::grammar-error")(`::grammar-error`.asInstanceOf[js.Any])
-    if (`::marker` != null) __obj.updateDynamic("::marker")(`::marker`.asInstanceOf[js.Any])
-    if (`::part` != null) __obj.updateDynamic("::part")(`::part`.asInstanceOf[js.Any])
-    if (`::placeholder` != null) __obj.updateDynamic("::placeholder")(`::placeholder`.asInstanceOf[js.Any])
-    if (`::selection` != null) __obj.updateDynamic("::selection")(`::selection`.asInstanceOf[js.Any])
-    if (`::slotted` != null) __obj.updateDynamic("::slotted")(`::slotted`.asInstanceOf[js.Any])
-    if (`::spelling-error` != null) __obj.updateDynamic("::spelling-error")(`::spelling-error`.asInstanceOf[js.Any])
-    if (`:active` != null) __obj.updateDynamic(":active")(`:active`.asInstanceOf[js.Any])
-    if (`:after` != null) __obj.updateDynamic(":after")(`:after`.asInstanceOf[js.Any])
-    if (`:any-link` != null) __obj.updateDynamic(":any-link")(`:any-link`.asInstanceOf[js.Any])
-    if (`:before` != null) __obj.updateDynamic(":before")(`:before`.asInstanceOf[js.Any])
-    if (`:blank` != null) __obj.updateDynamic(":blank")(`:blank`.asInstanceOf[js.Any])
-    if (`:checked` != null) __obj.updateDynamic(":checked")(`:checked`.asInstanceOf[js.Any])
-    if (`:default` != null) __obj.updateDynamic(":default")(`:default`.asInstanceOf[js.Any])
-    if (`:defined` != null) __obj.updateDynamic(":defined")(`:defined`.asInstanceOf[js.Any])
-    if (`:dir` != null) __obj.updateDynamic(":dir")(`:dir`.asInstanceOf[js.Any])
-    if (`:disabled` != null) __obj.updateDynamic(":disabled")(`:disabled`.asInstanceOf[js.Any])
-    if (`:empty` != null) __obj.updateDynamic(":empty")(`:empty`.asInstanceOf[js.Any])
-    if (`:enabled` != null) __obj.updateDynamic(":enabled")(`:enabled`.asInstanceOf[js.Any])
-    if (`:first` != null) __obj.updateDynamic(":first")(`:first`.asInstanceOf[js.Any])
-    if (`:first-child` != null) __obj.updateDynamic(":first-child")(`:first-child`.asInstanceOf[js.Any])
-    if (`:first-letter` != null) __obj.updateDynamic(":first-letter")(`:first-letter`.asInstanceOf[js.Any])
-    if (`:first-line` != null) __obj.updateDynamic(":first-line")(`:first-line`.asInstanceOf[js.Any])
-    if (`:first-of-type` != null) __obj.updateDynamic(":first-of-type")(`:first-of-type`.asInstanceOf[js.Any])
-    if (`:focus` != null) __obj.updateDynamic(":focus")(`:focus`.asInstanceOf[js.Any])
-    if (`:focus-visible` != null) __obj.updateDynamic(":focus-visible")(`:focus-visible`.asInstanceOf[js.Any])
-    if (`:focus-within` != null) __obj.updateDynamic(":focus-within")(`:focus-within`.asInstanceOf[js.Any])
-    if (`:fullscreen` != null) __obj.updateDynamic(":fullscreen")(`:fullscreen`.asInstanceOf[js.Any])
-    if (`:has` != null) __obj.updateDynamic(":has")(`:has`.asInstanceOf[js.Any])
-    if (`:host` != null) __obj.updateDynamic(":host")(`:host`.asInstanceOf[js.Any])
-    if (`:host-context` != null) __obj.updateDynamic(":host-context")(`:host-context`.asInstanceOf[js.Any])
-    if (`:hover` != null) __obj.updateDynamic(":hover")(`:hover`.asInstanceOf[js.Any])
-    if (`:in-range` != null) __obj.updateDynamic(":in-range")(`:in-range`.asInstanceOf[js.Any])
-    if (`:indeterminate` != null) __obj.updateDynamic(":indeterminate")(`:indeterminate`.asInstanceOf[js.Any])
-    if (`:invalid` != null) __obj.updateDynamic(":invalid")(`:invalid`.asInstanceOf[js.Any])
-    if (`:is` != null) __obj.updateDynamic(":is")(`:is`.asInstanceOf[js.Any])
-    if (`:lang` != null) __obj.updateDynamic(":lang")(`:lang`.asInstanceOf[js.Any])
-    if (`:last-child` != null) __obj.updateDynamic(":last-child")(`:last-child`.asInstanceOf[js.Any])
-    if (`:last-of-type` != null) __obj.updateDynamic(":last-of-type")(`:last-of-type`.asInstanceOf[js.Any])
-    if (`:left` != null) __obj.updateDynamic(":left")(`:left`.asInstanceOf[js.Any])
-    if (`:link` != null) __obj.updateDynamic(":link")(`:link`.asInstanceOf[js.Any])
-    if (`:matches()` != null) __obj.updateDynamic(":matches()")(`:matches()`.asInstanceOf[js.Any])
-    if (`:not` != null) __obj.updateDynamic(":not")(`:not`.asInstanceOf[js.Any])
-    if (`:nth-child` != null) __obj.updateDynamic(":nth-child")(`:nth-child`.asInstanceOf[js.Any])
-    if (`:nth-last-child` != null) __obj.updateDynamic(":nth-last-child")(`:nth-last-child`.asInstanceOf[js.Any])
-    if (`:nth-last-of-type` != null) __obj.updateDynamic(":nth-last-of-type")(`:nth-last-of-type`.asInstanceOf[js.Any])
-    if (`:nth-of-type` != null) __obj.updateDynamic(":nth-of-type")(`:nth-of-type`.asInstanceOf[js.Any])
-    if (`:only-child` != null) __obj.updateDynamic(":only-child")(`:only-child`.asInstanceOf[js.Any])
-    if (`:only-of-type` != null) __obj.updateDynamic(":only-of-type")(`:only-of-type`.asInstanceOf[js.Any])
-    if (`:optional` != null) __obj.updateDynamic(":optional")(`:optional`.asInstanceOf[js.Any])
-    if (`:out-of-range` != null) __obj.updateDynamic(":out-of-range")(`:out-of-range`.asInstanceOf[js.Any])
-    if (`:placeholder-shown` != null) __obj.updateDynamic(":placeholder-shown")(`:placeholder-shown`.asInstanceOf[js.Any])
-    if (`:read-only` != null) __obj.updateDynamic(":read-only")(`:read-only`.asInstanceOf[js.Any])
-    if (`:read-write` != null) __obj.updateDynamic(":read-write")(`:read-write`.asInstanceOf[js.Any])
-    if (`:required` != null) __obj.updateDynamic(":required")(`:required`.asInstanceOf[js.Any])
-    if (`:right` != null) __obj.updateDynamic(":right")(`:right`.asInstanceOf[js.Any])
-    if (`:root` != null) __obj.updateDynamic(":root")(`:root`.asInstanceOf[js.Any])
-    if (`:scope` != null) __obj.updateDynamic(":scope")(`:scope`.asInstanceOf[js.Any])
-    if (`:target` != null) __obj.updateDynamic(":target")(`:target`.asInstanceOf[js.Any])
-    if (`:valid` != null) __obj.updateDynamic(":valid")(`:valid`.asInstanceOf[js.Any])
-    if (`:visited` != null) __obj.updateDynamic(":visited")(`:visited`.asInstanceOf[js.Any])
-    if (`:where` != null) __obj.updateDynamic(":where")(`:where`.asInstanceOf[js.Any])
+    if (`Colon-moz-any-link` != null) __obj.updateDynamic(":-moz-any-link")(`Colon-moz-any-link`.asInstanceOf[js.Any])
+    if (`Colon-moz-anyLeftparenthesisRightparenthesis` != null) __obj.updateDynamic(":-moz-any()")(`Colon-moz-anyLeftparenthesisRightparenthesis`.asInstanceOf[js.Any])
+    if (`Colon-moz-dir` != null) __obj.updateDynamic(":-moz-dir")(`Colon-moz-dir`.asInstanceOf[js.Any])
+    if (`Colon-moz-focusring` != null) __obj.updateDynamic(":-moz-focusring")(`Colon-moz-focusring`.asInstanceOf[js.Any])
+    if (`Colon-moz-full-screen` != null) __obj.updateDynamic(":-moz-full-screen")(`Colon-moz-full-screen`.asInstanceOf[js.Any])
+    if (`Colon-moz-placeholder` != null) __obj.updateDynamic(":-moz-placeholder")(`Colon-moz-placeholder`.asInstanceOf[js.Any])
+    if (`Colon-moz-read-only` != null) __obj.updateDynamic(":-moz-read-only")(`Colon-moz-read-only`.asInstanceOf[js.Any])
+    if (`Colon-moz-read-write` != null) __obj.updateDynamic(":-moz-read-write")(`Colon-moz-read-write`.asInstanceOf[js.Any])
+    if (`Colon-ms-fullscreen` != null) __obj.updateDynamic(":-ms-fullscreen")(`Colon-ms-fullscreen`.asInstanceOf[js.Any])
+    if (`Colon-ms-input-placeholder` != null) __obj.updateDynamic(":-ms-input-placeholder")(`Colon-ms-input-placeholder`.asInstanceOf[js.Any])
+    if (`Colon-webkit-any-link` != null) __obj.updateDynamic(":-webkit-any-link")(`Colon-webkit-any-link`.asInstanceOf[js.Any])
+    if (`Colon-webkit-anyLeftparenthesisRightparenthesis` != null) __obj.updateDynamic(":-webkit-any()")(`Colon-webkit-anyLeftparenthesisRightparenthesis`.asInstanceOf[js.Any])
+    if (`Colon-webkit-full-screen` != null) __obj.updateDynamic(":-webkit-full-screen")(`Colon-webkit-full-screen`.asInstanceOf[js.Any])
+    if (`ColonColon-moz-placeholder` != null) __obj.updateDynamic("::-moz-placeholder")(`ColonColon-moz-placeholder`.asInstanceOf[js.Any])
+    if (`ColonColon-moz-progress-bar` != null) __obj.updateDynamic("::-moz-progress-bar")(`ColonColon-moz-progress-bar`.asInstanceOf[js.Any])
+    if (`ColonColon-moz-range-progress` != null) __obj.updateDynamic("::-moz-range-progress")(`ColonColon-moz-range-progress`.asInstanceOf[js.Any])
+    if (`ColonColon-moz-range-thumb` != null) __obj.updateDynamic("::-moz-range-thumb")(`ColonColon-moz-range-thumb`.asInstanceOf[js.Any])
+    if (`ColonColon-moz-range-track` != null) __obj.updateDynamic("::-moz-range-track")(`ColonColon-moz-range-track`.asInstanceOf[js.Any])
+    if (`ColonColon-moz-selection` != null) __obj.updateDynamic("::-moz-selection")(`ColonColon-moz-selection`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-backdrop` != null) __obj.updateDynamic("::-ms-backdrop")(`ColonColon-ms-backdrop`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-browse` != null) __obj.updateDynamic("::-ms-browse")(`ColonColon-ms-browse`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-check` != null) __obj.updateDynamic("::-ms-check")(`ColonColon-ms-check`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-clear` != null) __obj.updateDynamic("::-ms-clear")(`ColonColon-ms-clear`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-fill` != null) __obj.updateDynamic("::-ms-fill")(`ColonColon-ms-fill`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-fill-lower` != null) __obj.updateDynamic("::-ms-fill-lower")(`ColonColon-ms-fill-lower`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-fill-upper` != null) __obj.updateDynamic("::-ms-fill-upper")(`ColonColon-ms-fill-upper`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-input-placeholder` != null) __obj.updateDynamic("::-ms-input-placeholder")(`ColonColon-ms-input-placeholder`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-reveal` != null) __obj.updateDynamic("::-ms-reveal")(`ColonColon-ms-reveal`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-thumb` != null) __obj.updateDynamic("::-ms-thumb")(`ColonColon-ms-thumb`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-ticks-after` != null) __obj.updateDynamic("::-ms-ticks-after")(`ColonColon-ms-ticks-after`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-ticks-before` != null) __obj.updateDynamic("::-ms-ticks-before")(`ColonColon-ms-ticks-before`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-tooltip` != null) __obj.updateDynamic("::-ms-tooltip")(`ColonColon-ms-tooltip`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-track` != null) __obj.updateDynamic("::-ms-track")(`ColonColon-ms-track`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-value` != null) __obj.updateDynamic("::-ms-value")(`ColonColon-ms-value`.asInstanceOf[js.Any])
+    if (`ColonColon-webkit-backdrop` != null) __obj.updateDynamic("::-webkit-backdrop")(`ColonColon-webkit-backdrop`.asInstanceOf[js.Any])
+    if (`ColonColon-webkit-input-placeholder` != null) __obj.updateDynamic("::-webkit-input-placeholder")(`ColonColon-webkit-input-placeholder`.asInstanceOf[js.Any])
+    if (`ColonColon-webkit-progress-bar` != null) __obj.updateDynamic("::-webkit-progress-bar")(`ColonColon-webkit-progress-bar`.asInstanceOf[js.Any])
+    if (`ColonColon-webkit-progress-inner-value` != null) __obj.updateDynamic("::-webkit-progress-inner-value")(`ColonColon-webkit-progress-inner-value`.asInstanceOf[js.Any])
+    if (`ColonColon-webkit-progress-value` != null) __obj.updateDynamic("::-webkit-progress-value")(`ColonColon-webkit-progress-value`.asInstanceOf[js.Any])
+    if (`ColonColon-webkit-slider-runnable-track` != null) __obj.updateDynamic("::-webkit-slider-runnable-track")(`ColonColon-webkit-slider-runnable-track`.asInstanceOf[js.Any])
+    if (`ColonColon-webkit-slider-thumb` != null) __obj.updateDynamic("::-webkit-slider-thumb")(`ColonColon-webkit-slider-thumb`.asInstanceOf[js.Any])
+    if (ColonColonafter != null) __obj.updateDynamic("::after")(ColonColonafter.asInstanceOf[js.Any])
+    if (ColonColonbackdrop != null) __obj.updateDynamic("::backdrop")(ColonColonbackdrop.asInstanceOf[js.Any])
+    if (ColonColonbefore != null) __obj.updateDynamic("::before")(ColonColonbefore.asInstanceOf[js.Any])
+    if (ColonColoncue != null) __obj.updateDynamic("::cue")(ColonColoncue.asInstanceOf[js.Any])
+    if (`ColonColonfirst-letter` != null) __obj.updateDynamic("::first-letter")(`ColonColonfirst-letter`.asInstanceOf[js.Any])
+    if (`ColonColonfirst-line` != null) __obj.updateDynamic("::first-line")(`ColonColonfirst-line`.asInstanceOf[js.Any])
+    if (`ColonColongrammar-error` != null) __obj.updateDynamic("::grammar-error")(`ColonColongrammar-error`.asInstanceOf[js.Any])
+    if (ColonColonmarker != null) __obj.updateDynamic("::marker")(ColonColonmarker.asInstanceOf[js.Any])
+    if (ColonColonpart != null) __obj.updateDynamic("::part")(ColonColonpart.asInstanceOf[js.Any])
+    if (ColonColonplaceholder != null) __obj.updateDynamic("::placeholder")(ColonColonplaceholder.asInstanceOf[js.Any])
+    if (ColonColonselection != null) __obj.updateDynamic("::selection")(ColonColonselection.asInstanceOf[js.Any])
+    if (ColonColonslotted != null) __obj.updateDynamic("::slotted")(ColonColonslotted.asInstanceOf[js.Any])
+    if (`ColonColonspelling-error` != null) __obj.updateDynamic("::spelling-error")(`ColonColonspelling-error`.asInstanceOf[js.Any])
+    if (Colonactive != null) __obj.updateDynamic(":active")(Colonactive.asInstanceOf[js.Any])
+    if (Colonafter != null) __obj.updateDynamic(":after")(Colonafter.asInstanceOf[js.Any])
+    if (`Colonany-link` != null) __obj.updateDynamic(":any-link")(`Colonany-link`.asInstanceOf[js.Any])
+    if (Colonbefore != null) __obj.updateDynamic(":before")(Colonbefore.asInstanceOf[js.Any])
+    if (Colonblank != null) __obj.updateDynamic(":blank")(Colonblank.asInstanceOf[js.Any])
+    if (Colonchecked != null) __obj.updateDynamic(":checked")(Colonchecked.asInstanceOf[js.Any])
+    if (Colondefault != null) __obj.updateDynamic(":default")(Colondefault.asInstanceOf[js.Any])
+    if (Colondefined != null) __obj.updateDynamic(":defined")(Colondefined.asInstanceOf[js.Any])
+    if (Colondir != null) __obj.updateDynamic(":dir")(Colondir.asInstanceOf[js.Any])
+    if (Colondisabled != null) __obj.updateDynamic(":disabled")(Colondisabled.asInstanceOf[js.Any])
+    if (Colonempty != null) __obj.updateDynamic(":empty")(Colonempty.asInstanceOf[js.Any])
+    if (Colonenabled != null) __obj.updateDynamic(":enabled")(Colonenabled.asInstanceOf[js.Any])
+    if (Colonfirst != null) __obj.updateDynamic(":first")(Colonfirst.asInstanceOf[js.Any])
+    if (`Colonfirst-child` != null) __obj.updateDynamic(":first-child")(`Colonfirst-child`.asInstanceOf[js.Any])
+    if (`Colonfirst-letter` != null) __obj.updateDynamic(":first-letter")(`Colonfirst-letter`.asInstanceOf[js.Any])
+    if (`Colonfirst-line` != null) __obj.updateDynamic(":first-line")(`Colonfirst-line`.asInstanceOf[js.Any])
+    if (`Colonfirst-of-type` != null) __obj.updateDynamic(":first-of-type")(`Colonfirst-of-type`.asInstanceOf[js.Any])
+    if (Colonfocus != null) __obj.updateDynamic(":focus")(Colonfocus.asInstanceOf[js.Any])
+    if (`Colonfocus-visible` != null) __obj.updateDynamic(":focus-visible")(`Colonfocus-visible`.asInstanceOf[js.Any])
+    if (`Colonfocus-within` != null) __obj.updateDynamic(":focus-within")(`Colonfocus-within`.asInstanceOf[js.Any])
+    if (Colonfullscreen != null) __obj.updateDynamic(":fullscreen")(Colonfullscreen.asInstanceOf[js.Any])
+    if (Colonhas != null) __obj.updateDynamic(":has")(Colonhas.asInstanceOf[js.Any])
+    if (Colonhost != null) __obj.updateDynamic(":host")(Colonhost.asInstanceOf[js.Any])
+    if (`Colonhost-context` != null) __obj.updateDynamic(":host-context")(`Colonhost-context`.asInstanceOf[js.Any])
+    if (Colonhover != null) __obj.updateDynamic(":hover")(Colonhover.asInstanceOf[js.Any])
+    if (`Colonin-range` != null) __obj.updateDynamic(":in-range")(`Colonin-range`.asInstanceOf[js.Any])
+    if (Colonindeterminate != null) __obj.updateDynamic(":indeterminate")(Colonindeterminate.asInstanceOf[js.Any])
+    if (Coloninvalid != null) __obj.updateDynamic(":invalid")(Coloninvalid.asInstanceOf[js.Any])
+    if (Colonis != null) __obj.updateDynamic(":is")(Colonis.asInstanceOf[js.Any])
+    if (Colonlang != null) __obj.updateDynamic(":lang")(Colonlang.asInstanceOf[js.Any])
+    if (`Colonlast-child` != null) __obj.updateDynamic(":last-child")(`Colonlast-child`.asInstanceOf[js.Any])
+    if (`Colonlast-of-type` != null) __obj.updateDynamic(":last-of-type")(`Colonlast-of-type`.asInstanceOf[js.Any])
+    if (Colonleft != null) __obj.updateDynamic(":left")(Colonleft.asInstanceOf[js.Any])
+    if (Colonlink != null) __obj.updateDynamic(":link")(Colonlink.asInstanceOf[js.Any])
+    if (ColonmatchesLeftparenthesisRightparenthesis != null) __obj.updateDynamic(":matches()")(ColonmatchesLeftparenthesisRightparenthesis.asInstanceOf[js.Any])
+    if (Colonnot != null) __obj.updateDynamic(":not")(Colonnot.asInstanceOf[js.Any])
+    if (`Colonnth-child` != null) __obj.updateDynamic(":nth-child")(`Colonnth-child`.asInstanceOf[js.Any])
+    if (`Colonnth-last-child` != null) __obj.updateDynamic(":nth-last-child")(`Colonnth-last-child`.asInstanceOf[js.Any])
+    if (`Colonnth-last-of-type` != null) __obj.updateDynamic(":nth-last-of-type")(`Colonnth-last-of-type`.asInstanceOf[js.Any])
+    if (`Colonnth-of-type` != null) __obj.updateDynamic(":nth-of-type")(`Colonnth-of-type`.asInstanceOf[js.Any])
+    if (`Colononly-child` != null) __obj.updateDynamic(":only-child")(`Colononly-child`.asInstanceOf[js.Any])
+    if (`Colononly-of-type` != null) __obj.updateDynamic(":only-of-type")(`Colononly-of-type`.asInstanceOf[js.Any])
+    if (Colonoptional != null) __obj.updateDynamic(":optional")(Colonoptional.asInstanceOf[js.Any])
+    if (`Colonout-of-range` != null) __obj.updateDynamic(":out-of-range")(`Colonout-of-range`.asInstanceOf[js.Any])
+    if (`Colonplaceholder-shown` != null) __obj.updateDynamic(":placeholder-shown")(`Colonplaceholder-shown`.asInstanceOf[js.Any])
+    if (`Colonread-only` != null) __obj.updateDynamic(":read-only")(`Colonread-only`.asInstanceOf[js.Any])
+    if (`Colonread-write` != null) __obj.updateDynamic(":read-write")(`Colonread-write`.asInstanceOf[js.Any])
+    if (Colonrequired != null) __obj.updateDynamic(":required")(Colonrequired.asInstanceOf[js.Any])
+    if (Colonright != null) __obj.updateDynamic(":right")(Colonright.asInstanceOf[js.Any])
+    if (Colonroot != null) __obj.updateDynamic(":root")(Colonroot.asInstanceOf[js.Any])
+    if (Colonscope != null) __obj.updateDynamic(":scope")(Colonscope.asInstanceOf[js.Any])
+    if (Colontarget != null) __obj.updateDynamic(":target")(Colontarget.asInstanceOf[js.Any])
+    if (Colonvalid != null) __obj.updateDynamic(":valid")(Colonvalid.asInstanceOf[js.Any])
+    if (Colonvisited != null) __obj.updateDynamic(":visited")(Colonvisited.asInstanceOf[js.Any])
+    if (Colonwhere != null) __obj.updateDynamic(":where")(Colonwhere.asInstanceOf[js.Any])
     if (KhtmlBoxAlign != null) __obj.updateDynamic("KhtmlBoxAlign")(KhtmlBoxAlign.asInstanceOf[js.Any])
     if (KhtmlBoxDirection != null) __obj.updateDynamic("KhtmlBoxDirection")(KhtmlBoxDirection.asInstanceOf[js.Any])
     if (KhtmlBoxFlex != null) __obj.updateDynamic("KhtmlBoxFlex")(KhtmlBoxFlex.asInstanceOf[js.Any])

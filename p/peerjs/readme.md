@@ -1,7 +1,7 @@
 
 # Scala.js typings for peerjs
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 PeerJS client

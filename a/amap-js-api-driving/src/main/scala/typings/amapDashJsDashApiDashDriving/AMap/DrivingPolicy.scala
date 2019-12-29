@@ -1,15 +1,6 @@
 package typings.amapDashJsDashApiDashDriving.AMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.FEE_HIGHWAY
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.FEE_TRAFFIC
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.HIGHWAY
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.LEAST_DISTANCE
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.LEAST_FEE
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.LEAST_TIME
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.MULTI_POLICIES
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.REAL_TRAFFIC
-import typings.amapDashJsDashApiDashDriving.AMap.DrivingPolicy.TRAFFIC_HIGHWAY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

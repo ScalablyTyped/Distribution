@@ -2,8 +2,8 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_Bottom
+import typings.victory.Anon_XY
 import typings.victory.Anon_XYD3Scale
-import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.end
 import typings.victory.victoryStrings.labels
@@ -123,8 +123,8 @@ object VictoryBarProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     labelComponent: ReactElement = null,
     labels: js.Array[String] | (js.Function1[/* data */ js.Any, String]) = null,
-    maxDomain: Double | Anon_XYNumberOptional = null,
-    minDomain: Double | Anon_XYNumberOptional = null,
+    maxDomain: Double | Anon_XY = null,
+    minDomain: Double | Anon_XY = null,
     name: String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,

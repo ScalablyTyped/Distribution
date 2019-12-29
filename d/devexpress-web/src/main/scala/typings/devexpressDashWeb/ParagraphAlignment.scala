@@ -1,10 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.ParagraphAlignment.Center
-import typings.devexpressDashWeb.ParagraphAlignment.Justify
-import typings.devexpressDashWeb.ParagraphAlignment.Left
-import typings.devexpressDashWeb.ParagraphAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

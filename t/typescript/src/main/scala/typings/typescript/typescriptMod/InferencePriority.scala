@@ -1,17 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.InferencePriority.AlwaysStrict
-import typings.typescript.typescriptMod.InferencePriority.Circularity
-import typings.typescript.typescriptMod.InferencePriority.HomomorphicMappedType
-import typings.typescript.typescriptMod.InferencePriority.LiteralKeyof
-import typings.typescript.typescriptMod.InferencePriority.MappedTypeConstraint
-import typings.typescript.typescriptMod.InferencePriority.MaxValue
-import typings.typescript.typescriptMod.InferencePriority.NakedTypeVariable
-import typings.typescript.typescriptMod.InferencePriority.NoConstraints
-import typings.typescript.typescriptMod.InferencePriority.PartialHomomorphicMappedType
-import typings.typescript.typescriptMod.InferencePriority.PriorityImpliesCombination
-import typings.typescript.typescriptMod.InferencePriority.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

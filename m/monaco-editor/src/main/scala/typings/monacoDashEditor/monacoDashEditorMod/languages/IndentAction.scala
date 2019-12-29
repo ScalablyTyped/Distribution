@@ -1,10 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.IndentAction.Indent
-import typings.monacoDashEditor.monacoDashEditorMod.languages.IndentAction.IndentOutdent
-import typings.monacoDashEditor.monacoDashEditorMod.languages.IndentAction.None
-import typings.monacoDashEditor.monacoDashEditorMod.languages.IndentAction.Outdent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

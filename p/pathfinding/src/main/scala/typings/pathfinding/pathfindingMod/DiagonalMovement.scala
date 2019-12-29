@@ -1,10 +1,6 @@
 package typings.pathfinding.pathfindingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pathfinding.pathfindingMod.DiagonalMovement.Always
-import typings.pathfinding.pathfindingMod.DiagonalMovement.IfAtMostOneObstacle
-import typings.pathfinding.pathfindingMod.DiagonalMovement.Never
-import typings.pathfinding.pathfindingMod.DiagonalMovement.OnlyWhenNoObstacles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -26,7 +26,8 @@ class ChartGroup protected () extends js.Object {
   val Index: Double = js.native
   var Overlap: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ChartGroup_typekey`: ChartGroup = js.native
+  @JSName("PowerPoint.ChartGroup_typekey")
+  var PowerPointDotChartGroup_typekey: ChartGroup = js.native
   val RadarAxisLabels: TickLabels = js.native
   var SecondPlotSize: Double = js.native
   val SeriesLines: typings.activexDashPowerpoint.PowerPoint.SeriesLines = js.native

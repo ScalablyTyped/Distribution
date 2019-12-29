@@ -1,7 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcInteractionsInteractionMod.Interaction
-import typings.plottable.buildSrcInteractionsKeyInteractionMod.KeyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

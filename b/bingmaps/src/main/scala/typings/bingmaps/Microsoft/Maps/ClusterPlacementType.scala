@@ -1,8 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.ClusterPlacementType.FirstLocation
-import typings.bingmaps.Microsoft.Maps.ClusterPlacementType.MeanAverage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

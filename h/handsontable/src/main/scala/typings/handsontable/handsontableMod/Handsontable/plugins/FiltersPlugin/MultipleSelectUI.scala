@@ -1,5 +1,6 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins.FiltersPlugin
 
+import typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
 import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.std.Element
 import scala.scalajs.js
@@ -25,7 +26,7 @@ object MultipleSelectUI {
     clearAllUI: BaseUI,
     destroy: () => Unit,
     element: () => Element,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     focus: () => Unit,
     getItems: () => Unit,
     getValue: () => js.Any,

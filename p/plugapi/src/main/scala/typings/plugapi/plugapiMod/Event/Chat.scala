@@ -1,12 +1,13 @@
 package typings.plugapi.plugapiMod.Event
 
 import typings.plugapi.plugapiMod.RawChatMessage
+import typings.plugapi.plugapiMod.User.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Chat extends js.Object {
-  var from: typings.plugapi.plugapiMod.User.User
+  var from: User
   var id: String
   var mentions: js.Array[_]
   var message: String
@@ -18,7 +19,7 @@ trait Chat extends js.Object {
 object Chat {
   @scala.inline
   def apply(
-    from: typings.plugapi.plugapiMod.User.User,
+    from: User,
     id: String,
     mentions: js.Array[_],
     message: String,

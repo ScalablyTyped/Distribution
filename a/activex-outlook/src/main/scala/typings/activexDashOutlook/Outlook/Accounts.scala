@@ -10,7 +10,8 @@ class Accounts protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.Accounts_typekey`: Accounts = js.native
+  @JSName("Outlook.Accounts_typekey")
+  var OutlookDotAccounts_typekey: Accounts = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Item(Index: js.Any): Account = js.native

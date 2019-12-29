@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object definitionsMod {
   import typings.atIonicCliDashFramework.Anon_Aliases
-  import typings.atIonicCliDashFramework.atIonicCliDashFrameworkNumbers.`true`
+  import typings.atIonicCliDashFramework.atIonicCliDashFrameworkBooleans.`true`
   import typings.atIonicUtilsDashObject.atIonicUtilsDashObjectMod.AliasedMap
   import typings.std.BooleanConstructor
   import typings.std.Required

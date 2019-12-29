@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "intl-relativeformat"
-version := "6.4.3-472117"
+version := "6.4.3-e91799"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.5.1-a564a7",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.6.0-ca20a8",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.5.3-f29c78",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.0.0-5ba995",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,10 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages.typescript
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.JsxEmit.None
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.JsxEmit.Preserve
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.JsxEmit.React
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.JsxEmit.ReactNative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

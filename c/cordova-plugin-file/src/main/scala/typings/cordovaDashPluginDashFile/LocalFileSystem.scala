@@ -1,8 +1,6 @@
 package typings.cordovaDashPluginDashFile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cordovaDashPluginDashFile.LocalFileSystem.PERSISTENT
-import typings.cordovaDashPluginDashFile.LocalFileSystem.TEMPORARY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

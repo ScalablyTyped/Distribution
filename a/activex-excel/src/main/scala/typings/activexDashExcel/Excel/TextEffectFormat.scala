@@ -14,7 +14,8 @@ class TextEffectFormat protected () extends js.Object {
   var Alignment: MsoTextEffectAlignment = js.native
   val Application: js.Any = js.native
   val Creator: Double = js.native
-  var `Excel.TextEffectFormat_typekey`: TextEffectFormat = js.native
+  @JSName("Excel.TextEffectFormat_typekey")
+  var ExcelDotTextEffectFormat_typekey: TextEffectFormat = js.native
   var FontBold: MsoTriState = js.native
   var FontItalic: MsoTriState = js.native
   var FontName: String = js.native

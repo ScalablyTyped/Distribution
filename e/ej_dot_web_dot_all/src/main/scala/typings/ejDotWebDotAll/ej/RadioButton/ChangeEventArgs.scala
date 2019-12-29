@@ -16,7 +16,7 @@ trait ChangeEventArgs extends js.Object {
   var isInteraction: js.UndefOr[Boolean] = js.undefined
   /** returns the RadioButton model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.RadioButton.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object ChangeEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     isChecked: js.UndefOr[Boolean] = js.undefined,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.RadioButton.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ChangeEventArgs = {
     val __obj = js.Dynamic.literal()

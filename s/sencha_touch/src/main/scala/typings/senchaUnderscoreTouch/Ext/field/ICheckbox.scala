@@ -32,7 +32,7 @@ trait ICheckbox extends IField {
   		* @returns String
   		*/
   @JSName("getValue")
-  var getValue_ICheckbox: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getValue_ICheckbox: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the checked state of the checkbox
   		* @returns Boolean true if checked, false otherwise.
   		*/
@@ -55,14 +55,14 @@ trait ICheckbox extends IField {
   		* @param value String The new value.
   		*/
   @JSName("setValue")
-  var setValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the checked state of the checkbox to false
   		* @returns Ext.field.Checkbox This checkbox.
   		*/
   var uncheck: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
   @JSName("value")
-  var value_ICheckbox: js.UndefOr[java.lang.String] = js.undefined
+  var value_ICheckbox: js.UndefOr[String] = js.undefined
 }
 
 object ICheckbox {
@@ -76,14 +76,14 @@ object ICheckbox {
     getChecked: () => _ = null,
     getGroupValues: () => Array = null,
     getSubmitValue: () => _ = null,
-    getValue: () => java.lang.String = null,
+    getValue: () => String = null,
     isChecked: () => Boolean = null,
     reset: () => IField = null,
     resetGroupValues: () => ICheckbox = null,
     setGroupValues: /* values */ js.UndefOr[Array] => ICheckbox = null,
-    setValue: /* value */ js.UndefOr[java.lang.String] => Unit = null,
+    setValue: /* value */ js.UndefOr[String] => Unit = null,
     uncheck: () => ICheckbox = null,
-    value: java.lang.String = null
+    value: String = null
   ): ICheckbox = {
     val __obj = js.Dynamic.literal()
     if (IField != null) js.Dynamic.global.Object.assign(__obj, IField)

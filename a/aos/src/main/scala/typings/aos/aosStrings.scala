@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 object aosStrings {
   @js.native
-  sealed trait `aos:in` extends AosEventType
+  sealed trait aosColonin extends AosEventType
   
   @js.native
-  sealed trait `aos:out` extends AosEventType
+  sealed trait aosColonout extends AosEventType
   
   @js.native
   sealed trait `bottom-bottom` extends anchorPlacementOptions
@@ -111,9 +111,9 @@ object aosStrings {
   sealed trait `top-top` extends anchorPlacementOptions
   
   @scala.inline
-  def `aos:in`: `aos:in` = "aos:in".asInstanceOf[`aos:in`]
+  def aosColonin: aosColonin = "aos:in".asInstanceOf[aosColonin]
   @scala.inline
-  def `aos:out`: `aos:out` = "aos:out".asInstanceOf[`aos:out`]
+  def aosColonout: aosColonout = "aos:out".asInstanceOf[aosColonout]
   @scala.inline
   def `bottom-bottom`: `bottom-bottom` = "bottom-bottom".asInstanceOf[`bottom-bottom`]
   @scala.inline

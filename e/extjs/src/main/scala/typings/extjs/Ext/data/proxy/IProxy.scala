@@ -5,6 +5,8 @@ import typings.extjs.Ext.IClass
 import typings.extjs.Ext.data.IBatch
 import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.data.IOperation
+import typings.extjs.Ext.data.reader.IReader
+import typings.extjs.Ext.data.writer.IWriter
 import typings.extjs.Ext.util.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +21,7 @@ trait IProxy extends IObservable {
   /** [Config Option] (Boolean) */
   var batchActions: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var batchOrder: js.UndefOr[java.lang.String] = js.undefined
+  var batchOrder: js.UndefOr[String] = js.undefined
   /** [Method] Performs the given create operation
   		* @param operation Ext.data.Operation The Operation to perform
   		* @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
@@ -53,11 +55,11 @@ trait IProxy extends IObservable {
   /** [Method] Returns the reader currently attached to this proxy instance
   		* @returns Ext.data.reader.Reader The Reader instance
   		*/
-  var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.undefined
+  var getReader: js.UndefOr[js.Function0[IReader]] = js.undefined
   /** [Method] Returns the writer currently attached to this proxy instance
   		* @returns Ext.data.writer.Writer The Writer instance
   		*/
-  var getWriter: js.UndefOr[js.Function0[typings.extjs.Ext.data.writer.IWriter]] = js.undefined
+  var getWriter: js.UndefOr[js.Function0[IWriter]] = js.undefined
   /** [Property] (Boolean) */
   var isProxy: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Boolean) */
@@ -90,16 +92,12 @@ trait IProxy extends IObservable {
   		* @param reader String/Object/Ext.data.reader.Reader The new Reader, which can be either a type string, a configuration object or an Ext.data.reader.Reader instance
   		* @returns Ext.data.reader.Reader The attached Reader object
   		*/
-  var setReader: js.UndefOr[
-    js.Function1[/* reader */ js.UndefOr[js.Any], typings.extjs.Ext.data.reader.IReader]
-  ] = js.undefined
+  var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[js.Any], IReader]] = js.undefined
   /** [Method] Sets the Proxy s Writer by string config object or Writer instance
   		* @param writer String/Object/Ext.data.writer.Writer The new Writer, which can be either a type string, a configuration object or an Ext.data.writer.Writer instance
   		* @returns Ext.data.writer.Writer The attached Writer object
   		*/
-  var setWriter: js.UndefOr[
-    js.Function1[/* writer */ js.UndefOr[js.Any], typings.extjs.Ext.data.writer.IWriter]
-  ] = js.undefined
+  var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[js.Any], IWriter]] = js.undefined
   /** [Method] Performs the given update operation
   		* @param operation Ext.data.Operation The Operation to perform
   		* @param callback Function Callback function to be called when the Operation has completed (whether successful or not)
@@ -127,7 +125,7 @@ object IProxy {
     alternateClassName: js.Any = null,
     batch: /* options */ js.UndefOr[js.Any] => IBatch = null,
     batchActions: js.UndefOr[Boolean] = js.undefined,
-    batchOrder: java.lang.String = null,
+    batchOrder: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -137,17 +135,17 @@ object IProxy {
     create: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     destroy: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getModel: () => IModel = null,
-    getReader: () => typings.extjs.Ext.data.reader.IReader = null,
-    getWriter: () => typings.extjs.Ext.data.writer.IWriter = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getReader: () => IReader = null,
+    getWriter: () => IWriter = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.data.proxy.IProxy = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IProxy = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     isProxy: js.UndefOr[Boolean] = js.undefined,
     isSynchronous: js.UndefOr[Boolean] = js.undefined,
@@ -159,21 +157,21 @@ object IProxy {
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     read: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     reader: js.Any = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     self: IClass = null,
     setModel: (/* model */ js.UndefOr[js.Any], /* setOnStore */ js.UndefOr[Boolean]) => Unit = null,
-    setReader: /* reader */ js.UndefOr[js.Any] => typings.extjs.Ext.data.reader.IReader = null,
-    setWriter: /* writer */ js.UndefOr[js.Any] => typings.extjs.Ext.data.writer.IWriter = null,
+    setReader: /* reader */ js.UndefOr[js.Any] => IReader = null,
+    setWriter: /* writer */ js.UndefOr[js.Any] => IWriter = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     update: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     writer: js.Any = null

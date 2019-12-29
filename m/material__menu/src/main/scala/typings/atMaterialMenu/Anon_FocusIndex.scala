@@ -10,9 +10,9 @@ trait Anon_FocusIndex extends js.Object {
 
 object Anon_FocusIndex {
   @scala.inline
-  def apply(focusIndex: Null = null): Anon_FocusIndex = {
+  def apply(focusIndex: js.UndefOr[scala.Nothing] = js.undefined): Anon_FocusIndex = {
     val __obj = js.Dynamic.literal()
-    if (focusIndex != null) __obj.updateDynamic("focusIndex")(focusIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusIndex)) __obj.updateDynamic("focusIndex")(focusIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FocusIndex]
   }
 }

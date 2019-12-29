@@ -1,9 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatRoomType.Friend
-import typings.steamDashClient.steamDashClientMod.EChatRoomType.Lobby
-import typings.steamDashClient.steamDashClientMod.EChatRoomType.MUC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

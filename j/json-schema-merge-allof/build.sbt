@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "json-schema-merge-allof"
-version := "0.6-dt-20191025Z-45ae83"
+version := "0.6-dt-20191025Z-c3c863"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-78ad87",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20191223Z-439809",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

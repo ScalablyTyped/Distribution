@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.`protected`
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.accessSuspended
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.licenseExpired
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.protectedToOtherIdentity
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.revoked
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

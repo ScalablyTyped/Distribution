@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSunburstChartElement
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, SunburstChart]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), SunburstChart] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), SunburstChart]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, SunburstChart] {
   var Locale: js.Any = js.native
   var fn: SunburstChart = js.native
 }

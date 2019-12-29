@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// end interface Objects
 /* Rewritten from type alias, can be one of: 
   - typings.iobroker.iobrokerStrings.silly
   - typings.iobroker.iobrokerStrings.debug

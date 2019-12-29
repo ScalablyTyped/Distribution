@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 object dos2unixStrings {
   @js.native
-  sealed trait convertDOTend extends js.Object
+  sealed trait convertDotend extends js.Object
   
   @js.native
-  sealed trait convertDOTerror extends js.Object
+  sealed trait convertDoterror extends js.Object
   
   @js.native
-  sealed trait convertDOTstart extends js.Object
+  sealed trait convertDotstart extends js.Object
   
   @js.native
   sealed trait end extends js.Object
@@ -21,38 +21,38 @@ object dos2unixStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait processingDOTend extends js.Object
+  sealed trait processingDotend extends js.Object
   
   @js.native
-  sealed trait processingDOTerror extends js.Object
+  sealed trait processingDoterror extends js.Object
   
   @js.native
-  sealed trait processingDOTskip extends js.Object
+  sealed trait processingDotskip extends js.Object
   
   @js.native
-  sealed trait processingDOTstart extends js.Object
+  sealed trait processingDotstart extends js.Object
   
   @js.native
   sealed trait start extends js.Object
   
   @scala.inline
-  def convertDOTend: convertDOTend = "convert.end".asInstanceOf[convertDOTend]
+  def convertDotend: convertDotend = "convert.end".asInstanceOf[convertDotend]
   @scala.inline
-  def convertDOTerror: convertDOTerror = "convert.error".asInstanceOf[convertDOTerror]
+  def convertDoterror: convertDoterror = "convert.error".asInstanceOf[convertDoterror]
   @scala.inline
-  def convertDOTstart: convertDOTstart = "convert.start".asInstanceOf[convertDOTstart]
+  def convertDotstart: convertDotstart = "convert.start".asInstanceOf[convertDotstart]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def processingDOTend: processingDOTend = "processing.end".asInstanceOf[processingDOTend]
+  def processingDotend: processingDotend = "processing.end".asInstanceOf[processingDotend]
   @scala.inline
-  def processingDOTerror: processingDOTerror = "processing.error".asInstanceOf[processingDOTerror]
+  def processingDoterror: processingDoterror = "processing.error".asInstanceOf[processingDoterror]
   @scala.inline
-  def processingDOTskip: processingDOTskip = "processing.skip".asInstanceOf[processingDOTskip]
+  def processingDotskip: processingDotskip = "processing.skip".asInstanceOf[processingDotskip]
   @scala.inline
-  def processingDOTstart: processingDOTstart = "processing.start".asInstanceOf[processingDOTstart]
+  def processingDotstart: processingDotstart = "processing.start".asInstanceOf[processingDotstart]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
 }

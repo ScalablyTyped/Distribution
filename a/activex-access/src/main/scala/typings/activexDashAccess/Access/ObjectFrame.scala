@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.ObjectFrame")
 @js.native
 class ObjectFrame protected () extends js.Object {
-  var `Access.ObjectFrame_typekey`: ObjectFrame = js.native
+  @JSName("Access.ObjectFrame_typekey")
+  var AccessDotObjectFrame_typekey: ObjectFrame = js.native
   var Action: Double = js.native
   var AfterUpdateMacro: String = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native

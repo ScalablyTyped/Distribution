@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation._
 
 object atMaterialSliderStrings {
   @js.native
-  sealed trait `DOTmdc-slider__pin-value-marker` extends js.Object
+  sealed trait `Dotmdc-slider__pin-value-marker` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-slider__thumb-container` extends js.Object
+  sealed trait `Dotmdc-slider__thumb-container` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-slider__track` extends js.Object
+  sealed trait `Dotmdc-slider__track` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-slider__track-marker-container` extends js.Object
+  sealed trait `Dotmdc-slider__track-marker-container` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-slider__track-marker:last-child` extends js.Object
+  sealed trait `Dotmdc-slider__track-markerColonlast-child` extends js.Object
   
   @js.native
-  sealed trait `MDCSlider:change` extends js.Object
+  sealed trait MDCSliderColonchange extends js.Object
   
   @js.native
-  sealed trait `MDCSlider:input` extends js.Object
+  sealed trait MDCSliderColoninput extends js.Object
   
   @js.native
   sealed trait `aria-disabled` extends js.Object
@@ -60,19 +60,19 @@ object atMaterialSliderStrings {
   sealed trait `mdc-slider--in-transit` extends js.Object
   
   @scala.inline
-  def `DOTmdc-slider__pin-value-marker`: `DOTmdc-slider__pin-value-marker` = ".mdc-slider__pin-value-marker".asInstanceOf[`DOTmdc-slider__pin-value-marker`]
+  def `Dotmdc-slider__pin-value-marker`: `Dotmdc-slider__pin-value-marker` = ".mdc-slider__pin-value-marker".asInstanceOf[`Dotmdc-slider__pin-value-marker`]
   @scala.inline
-  def `DOTmdc-slider__thumb-container`: `DOTmdc-slider__thumb-container` = ".mdc-slider__thumb-container".asInstanceOf[`DOTmdc-slider__thumb-container`]
+  def `Dotmdc-slider__thumb-container`: `Dotmdc-slider__thumb-container` = ".mdc-slider__thumb-container".asInstanceOf[`Dotmdc-slider__thumb-container`]
   @scala.inline
-  def `DOTmdc-slider__track`: `DOTmdc-slider__track` = ".mdc-slider__track".asInstanceOf[`DOTmdc-slider__track`]
+  def `Dotmdc-slider__track`: `Dotmdc-slider__track` = ".mdc-slider__track".asInstanceOf[`Dotmdc-slider__track`]
   @scala.inline
-  def `DOTmdc-slider__track-marker-container`: `DOTmdc-slider__track-marker-container` = ".mdc-slider__track-marker-container".asInstanceOf[`DOTmdc-slider__track-marker-container`]
+  def `Dotmdc-slider__track-marker-container`: `Dotmdc-slider__track-marker-container` = ".mdc-slider__track-marker-container".asInstanceOf[`Dotmdc-slider__track-marker-container`]
   @scala.inline
-  def `DOTmdc-slider__track-marker:last-child`: `DOTmdc-slider__track-marker:last-child` = ".mdc-slider__track-marker:last-child".asInstanceOf[`DOTmdc-slider__track-marker:last-child`]
+  def `Dotmdc-slider__track-markerColonlast-child`: `Dotmdc-slider__track-markerColonlast-child` = ".mdc-slider__track-marker:last-child".asInstanceOf[`Dotmdc-slider__track-markerColonlast-child`]
   @scala.inline
-  def `MDCSlider:change`: `MDCSlider:change` = "MDCSlider:change".asInstanceOf[`MDCSlider:change`]
+  def MDCSliderColonchange: MDCSliderColonchange = "MDCSlider:change".asInstanceOf[MDCSliderColonchange]
   @scala.inline
-  def `MDCSlider:input`: `MDCSlider:input` = "MDCSlider:input".asInstanceOf[`MDCSlider:input`]
+  def MDCSliderColoninput: MDCSliderColoninput = "MDCSlider:input".asInstanceOf[MDCSliderColoninput]
   @scala.inline
   def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
   @scala.inline

@@ -1,9 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.ListLevelType.bullet
-import typings.officeDashJs.Word.ListLevelType.number
-import typings.officeDashJs.Word.ListLevelType.picture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

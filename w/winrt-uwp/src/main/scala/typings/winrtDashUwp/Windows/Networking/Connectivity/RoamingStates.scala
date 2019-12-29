@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Connectivity.RoamingStates.none
-import typings.winrtDashUwp.Windows.Networking.Connectivity.RoamingStates.notRoaming
-import typings.winrtDashUwp.Windows.Networking.Connectivity.RoamingStates.roaming
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

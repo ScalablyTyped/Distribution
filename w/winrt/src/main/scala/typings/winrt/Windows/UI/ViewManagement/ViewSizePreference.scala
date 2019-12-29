@@ -1,12 +1,6 @@
 package typings.winrt.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference.default
-import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference.useHalf
-import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference.useLess
-import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference.useMinimum
-import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference.useMore
-import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference.useNone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

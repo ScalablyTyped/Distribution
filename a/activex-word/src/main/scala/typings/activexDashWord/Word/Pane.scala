@@ -25,7 +25,8 @@ class Pane protected () extends js.Object {
   val Selection: typings.activexDashWord.Word.Selection = js.native
   var VerticalPercentScrolled: Double = js.native
   val View: typings.activexDashWord.Word.View = js.native
-  var `Word.Pane_typekey`: Pane = js.native
+  @JSName("Word.Pane_typekey")
+  var WordDotPane_typekey: Pane = js.native
   val Zooms: typings.activexDashWord.Word.Zooms = js.native
   def Activate(): Unit = js.native
   def AutoScroll(Velocity: Double): Unit = js.native

@@ -1,17 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCRPageSetMode.OCRPSM_OSD_ONLY
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO_ONLY
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO_OSD
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_CIRCLE_WORD
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_BLOCK
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_BLOCK_VERT_TEXT
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_CHAR
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_COLUMN
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_LINE
-import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_WORD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

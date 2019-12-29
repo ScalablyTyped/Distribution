@@ -2,7 +2,6 @@ package typings.atBlueprintjsTable
 
 import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
 import typings.atBlueprintjsTable.libEsmCommonRectMod.Rect
-import typings.atBlueprintjsTable.libEsmLocatorMod.ILocator
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

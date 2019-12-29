@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.default
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square150x150
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square30x30
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square310x310
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square44x44
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square70x70
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square71x71
-import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.wide310x150
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

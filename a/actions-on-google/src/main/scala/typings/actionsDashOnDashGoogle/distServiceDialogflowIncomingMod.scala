@@ -5,8 +5,6 @@ import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.string
 import typings.actionsDashOnDashGoogle.distCommonMod.JsonObject
 import typings.actionsDashOnDashGoogle.distServiceDialogflowApiV1Mod.DialogflowV1Fulfillment
 import typings.actionsDashOnDashGoogle.distServiceDialogflowApiV2Mod.GoogleCloudDialogflowV2IntentMessage
-import typings.actionsDashOnDashGoogle.distServiceDialogflowIncomingMod.IncomingMessage
-import typings.actionsDashOnDashGoogle.distServiceDialogflowIncomingMod._IncomingMessage
 import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`

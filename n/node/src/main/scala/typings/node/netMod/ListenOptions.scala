@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait ListenOptions extends js.Object {
   var backlog: js.UndefOr[Double] = js.undefined
   var exclusive: js.UndefOr[Boolean] = js.undefined
-  var host: js.UndefOr[java.lang.String] = js.undefined
+  var host: js.UndefOr[String] = js.undefined
   /**
     * @default false
     */
   var ipv6Only: js.UndefOr[Boolean] = js.undefined
-  var path: js.UndefOr[java.lang.String] = js.undefined
+  var path: js.UndefOr[String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var readableAll: js.UndefOr[Boolean] = js.undefined
   var writableAll: js.UndefOr[Boolean] = js.undefined
@@ -23,9 +23,9 @@ object ListenOptions {
   def apply(
     backlog: Int | Double = null,
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    host: java.lang.String = null,
+    host: String = null,
     ipv6Only: js.UndefOr[Boolean] = js.undefined,
-    path: java.lang.String = null,
+    path: String = null,
     port: Int | Double = null,
     readableAll: js.UndefOr[Boolean] = js.undefined,
     writableAll: js.UndefOr[Boolean] = js.undefined

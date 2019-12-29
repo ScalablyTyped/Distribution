@@ -16,9 +16,6 @@ object mongodbStrings {
   sealed trait DEFAULT extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait FilterQuery extends js.Object
   
   @js.native
@@ -62,6 +59,9 @@ object mongodbStrings {
   
   @js.native
   sealed trait UpdateQuery extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait _id extends js.Object
@@ -188,8 +188,6 @@ object mongodbStrings {
   @scala.inline
   def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def FilterQuery: FilterQuery = "FilterQuery".asInstanceOf[FilterQuery]
   @scala.inline
   def GSSAPI: GSSAPI = "GSSAPI".asInstanceOf[GSSAPI]
@@ -219,6 +217,8 @@ object mongodbStrings {
   def SetFields: SetFields = "SetFields".asInstanceOf[SetFields]
   @scala.inline
   def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def _id: _id = "_id".asInstanceOf[_id]
   @scala.inline

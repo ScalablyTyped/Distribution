@@ -2,7 +2,6 @@ package typings.typedoc
 
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
 import typings.typedoc.distLibModelsTypesAbstractMod.Type
-import typings.typedoc.distLibModelsTypesReferenceMod.ReferenceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

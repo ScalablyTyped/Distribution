@@ -36,7 +36,8 @@ class TextFrame protected () extends js.Object {
   val ThreeD: ThreeDFormat = js.native
   var VerticalAnchor: MsoVerticalAnchor = js.native
   var WarpFormat: MsoWarpFormat = js.native
-  var `Word.TextFrame_typekey`: TextFrame = js.native
+  @JSName("Word.TextFrame_typekey")
+  var WordDotTextFrame_typekey: TextFrame = js.native
   var WordWrap: Double = js.native
   def BreakForwardLink(): Unit = js.native
   def DeleteText(): Unit = js.native

@@ -8,9 +8,9 @@ import typings.semanticDashUiDashReact.distCommonjsElementsIconIconMod.IconProps
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.HtmlIframeProps
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`16:9`
-import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`21:9`
-import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`4:3`
+import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`16Colon9`
+import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`21Colon9`
+import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`4Colon3`
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.vimeo
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.youtube
 import typings.std.HTMLDivElement
@@ -28,7 +28,7 @@ object EmbedProps {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     as: js.Any = null,
-    aspectRatio: `4:3` | `16:9` | `21:9` = null,
+    aspectRatio: `4Colon3` | `16Colon9` | `21Colon9` = null,
     autoplay: js.UndefOr[Boolean] = js.undefined,
     brandedUI: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,

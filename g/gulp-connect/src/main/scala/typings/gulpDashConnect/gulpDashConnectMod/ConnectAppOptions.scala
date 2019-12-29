@@ -1,6 +1,7 @@
 package typings.gulpDashConnect.gulpDashConnectMod
 
 import typings.connect.connectMod.HandleFunction
+import typings.gulpDashConnect.TypeofconnectModule
 import typings.node.httpMod.Server
 import typings.node.httpsMod.ServerOptions
 import scala.scalajs.js
@@ -47,7 +48,7 @@ object ConnectAppOptions {
     https: Boolean | ServerOptions = null,
     index: Boolean | String | js.Array[String] = null,
     livereload: Boolean | LiveReloadOptions = null,
-    middleware: (/* connect */ js.Function0[typings.connect.connectMod.Server], /* options */ ConnectAppOptions) => js.Array[HandleFunction | ConnectRouteHandler] = null,
+    middleware: (/* connect */ js.Function0[typings.connect.connectMod.Server] with TypeofconnectModule, /* options */ ConnectAppOptions) => js.Array[HandleFunction | ConnectRouteHandler] = null,
     name: String = null,
     port: Int | Double = null,
     root: String | js.Array[String] = null,

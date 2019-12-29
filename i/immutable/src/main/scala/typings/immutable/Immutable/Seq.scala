@@ -1,8 +1,6 @@
 package typings.immutable.Immutable
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.Immutable.Seq.Indexed
-import typings.immutable.Immutable.Seq.Keyed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

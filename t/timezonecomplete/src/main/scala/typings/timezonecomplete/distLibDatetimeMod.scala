@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.timezonecomplete.distLibBasicsMod.TimeStruct
 import typings.timezonecomplete.distLibBasicsMod.TimeUnit
 import typings.timezonecomplete.distLibBasicsMod.WeekDay
-import typings.timezonecomplete.distLibDatetimeMod.DateTime
 import typings.timezonecomplete.distLibDurationMod.Duration
 import typings.timezonecomplete.distLibJavascriptMod.DateFunctions
 import typings.timezonecomplete.distLibLocaleMod.PartialLocale
@@ -162,16 +161,6 @@ object distLibDatetimeMod extends js.Object {
       * Allow not using instanceof
       */
     var kind: String = js.native
-    /**
-      * UTC timestamp (lazily calculated)
-      * @throws nothing
-      */
-    var utcDate: js.Any = js.native
-    /**
-      * Local timestamp (lazily calculated)
-      * @throws nothing
-      */
-    var zoneDate: js.Any = js.native
     /**
       * Add an amount of time relative to UTC, as regularly as possible. Returns a new DateTime
       *
@@ -462,6 +451,12 @@ object distLibDatetimeMod extends js.Object {
       */
     def unixUtcMillis(): Double = js.native
     /**
+      * UTC timestamp (lazily calculated)
+      * @throws nothing
+      */
+    /* private */ def utcDate(): js.Any = js.native
+    /* private */ def utcDate(value: js.Any): js.Any = js.native
+    /**
       * @return The UTC day of the month 1-31
       * @throws nothing
       */
@@ -590,6 +585,12 @@ object distLibDatetimeMod extends js.Object {
       */
     def zoneAbbreviation(): String = js.native
     def zoneAbbreviation(dstDependent: Boolean): String = js.native
+    /**
+      * Local timestamp (lazily calculated)
+      * @throws nothing
+      */
+    /* private */ def zoneDate(): js.Any = js.native
+    /* private */ def zoneDate(value: js.Any): js.Any = js.native
   }
   
   def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = js.native

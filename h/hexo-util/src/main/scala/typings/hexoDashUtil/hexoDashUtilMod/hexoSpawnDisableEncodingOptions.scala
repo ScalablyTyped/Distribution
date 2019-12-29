@@ -1,8 +1,9 @@
 package typings.hexoDashUtil.hexoDashUtilMod
 
-import typings.hexoDashUtil.hexoDashUtilNumbers.`false`
-import typings.hexoDashUtil.hexoDashUtilStrings.Empty
+import typings.hexoDashUtil.hexoDashUtilBooleans.`false`
+import typings.hexoDashUtil.hexoDashUtilStrings._empty
 import typings.node.NodeJS.ProcessEnv
+import typings.node.childUnderscoreProcessMod.SerializationType
 import typings.node.childUnderscoreProcessMod.SpawnOptions
 import typings.node.childUnderscoreProcessMod.StdioOptions
 import scala.scalajs.js
@@ -10,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait hexoSpawnDisableEncodingOptions extends SpawnOptions {
-  var encoding: Empty | `false` | Null
+  var encoding: _empty | `false` | Null
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -20,9 +21,10 @@ object hexoSpawnDisableEncodingOptions {
     argv0: String = null,
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
-    encoding: Empty | `false` = null,
+    encoding: _empty | `false` = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
+    serialization: SerializationType = null,
     shell: Boolean | String = null,
     stdio: StdioOptions = null,
     timeout: Int | Double = null,
@@ -38,6 +40,7 @@ object hexoSpawnDisableEncodingOptions {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

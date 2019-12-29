@@ -84,7 +84,7 @@ trait Model extends js.Object {
   /** Bullet graph will render in the specified orientation.
     * @Default {horizontal}
     */
-  var orientation: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.Orientation | String] = js.undefined
+  var orientation: js.UndefOr[Orientation | String] = js.undefined
   /** Size of the qualitative range depends up on the specified value.
     * @Default {32}
     */
@@ -144,7 +144,7 @@ object Model {
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     load: /* e */ LoadEventArgs => Unit = null,
     locale: String = null,
-    orientation: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.Orientation | String = null,
+    orientation: Orientation | String = null,
     qualitativeRangeSize: Int | Double = null,
     qualitativeRanges: js.Array[QualitativeRange] = null,
     quantitativeScaleLength: Int | Double = null,

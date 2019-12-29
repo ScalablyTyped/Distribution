@@ -1,22 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.InternalSymbolName.Call
-import typings.typescript.typescriptMod.InternalSymbolName.Class
-import typings.typescript.typescriptMod.InternalSymbolName.Computed
-import typings.typescript.typescriptMod.InternalSymbolName.Constructor
-import typings.typescript.typescriptMod.InternalSymbolName.Default
-import typings.typescript.typescriptMod.InternalSymbolName.ExportEquals
-import typings.typescript.typescriptMod.InternalSymbolName.ExportStar
-import typings.typescript.typescriptMod.InternalSymbolName.Function
-import typings.typescript.typescriptMod.InternalSymbolName.Global
-import typings.typescript.typescriptMod.InternalSymbolName.Index
-import typings.typescript.typescriptMod.InternalSymbolName.JSXAttributes
-import typings.typescript.typescriptMod.InternalSymbolName.Missing
-import typings.typescript.typescriptMod.InternalSymbolName.New
-import typings.typescript.typescriptMod.InternalSymbolName.Object
-import typings.typescript.typescriptMod.InternalSymbolName.Resolving
-import typings.typescript.typescriptMod.InternalSymbolName.This
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,11 +17,11 @@ class EntityReferences protected () extends ValueBase {
   /**
     * Returns the type of value with namespace prefix.
     */
-  def getType(): java.lang.String = js.native
+  def getType(): String = js.native
   /**
     * Returns an Sdk.Collection of Sdk.EntityReference values.
     */
-  def getValues(): Collection[scala.Double] = js.native
+  def getValues(): Collection[Double] = js.native
   /**
     * Specifies the Long values to be compared in the query.
     * @param setValueArgs An array of Sdk.EntityReference values.

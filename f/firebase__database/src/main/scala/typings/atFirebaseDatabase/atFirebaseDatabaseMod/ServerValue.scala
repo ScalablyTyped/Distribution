@@ -1,6 +1,7 @@
 package typings.atFirebaseDatabase.atFirebaseDatabaseMod
 
 import typings.atFirebaseDatabase.Anon_Sv
+import typings.atFirebaseDatabase.Anon_SvAnonIncrement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,5 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ServerValue extends js.Object {
   var TIMESTAMP: Anon_Sv = js.native
+  def _increment(x: Double): Anon_SvAnonIncrement = js.native
 }
 

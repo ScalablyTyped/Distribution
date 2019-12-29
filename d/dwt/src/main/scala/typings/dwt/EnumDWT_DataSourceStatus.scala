@@ -1,10 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_DataSourceStatus.TWDSS_ACQUIRING
-import typings.dwt.EnumDWT_DataSourceStatus.TWDSS_CLOSED
-import typings.dwt.EnumDWT_DataSourceStatus.TWDSS_ENABLED
-import typings.dwt.EnumDWT_DataSourceStatus.TWDSS_OPENED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

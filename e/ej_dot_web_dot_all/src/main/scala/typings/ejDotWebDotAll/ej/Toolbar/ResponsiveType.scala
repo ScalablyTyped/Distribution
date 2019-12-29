@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Toolbar
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Toolbar.ResponsiveType.Inline
-import typings.ejDotWebDotAll.ej.Toolbar.ResponsiveType.Popup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

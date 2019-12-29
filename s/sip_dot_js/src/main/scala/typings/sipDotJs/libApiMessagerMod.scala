@@ -30,15 +30,9 @@ object libApiMessagerMod extends js.Object {
       contentType: String,
       options: MessagerOptions
     ) = this()
-    var _disposed: js.Any = js.native
     var logger: js.Any = js.native
     var request: js.Any = js.native
     var userAgent: js.Any = js.native
-    /**
-      * Destructor.
-      * @internal
-      */
-    def _dispose(): Unit = js.native
     /**
       * Send the message.
       */

@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 object atMaterialSelectStrings {
   @js.native
-  sealed trait `DOTmdc-floating-label` extends js.Object
+  sealed trait `Dotmdc-floating-label` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-line-ripple` extends js.Object
+  sealed trait `Dotmdc-line-ripple` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-select__native-control` extends js.Object
+  sealed trait `Dotmdc-select__native-control` extends js.Object
   
   @js.native
-  sealed trait `MDCSelect:change` extends js.Object
+  sealed trait MDCSelectColonchange extends js.Object
   
   @js.native
   sealed trait `mdc-select` extends js.Object
@@ -27,13 +27,13 @@ object atMaterialSelectStrings {
   sealed trait `mdc-select--disabled` extends js.Object
   
   @scala.inline
-  def `DOTmdc-floating-label`: `DOTmdc-floating-label` = ".mdc-floating-label".asInstanceOf[`DOTmdc-floating-label`]
+  def `Dotmdc-floating-label`: `Dotmdc-floating-label` = ".mdc-floating-label".asInstanceOf[`Dotmdc-floating-label`]
   @scala.inline
-  def `DOTmdc-line-ripple`: `DOTmdc-line-ripple` = ".mdc-line-ripple".asInstanceOf[`DOTmdc-line-ripple`]
+  def `Dotmdc-line-ripple`: `Dotmdc-line-ripple` = ".mdc-line-ripple".asInstanceOf[`Dotmdc-line-ripple`]
   @scala.inline
-  def `DOTmdc-select__native-control`: `DOTmdc-select__native-control` = ".mdc-select__native-control".asInstanceOf[`DOTmdc-select__native-control`]
+  def `Dotmdc-select__native-control`: `Dotmdc-select__native-control` = ".mdc-select__native-control".asInstanceOf[`Dotmdc-select__native-control`]
   @scala.inline
-  def `MDCSelect:change`: `MDCSelect:change` = "MDCSelect:change".asInstanceOf[`MDCSelect:change`]
+  def MDCSelectColonchange: MDCSelectColonchange = "MDCSelect:change".asInstanceOf[MDCSelectColonchange]
   @scala.inline
   def `mdc-select`: `mdc-select` = "mdc-select".asInstanceOf[`mdc-select`]
   @scala.inline

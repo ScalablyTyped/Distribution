@@ -12,7 +12,6 @@ class Writable ()
   def this(options: WritableOptions) = this()
   var _writableState: WritableState = js.native
   def _undestroy(): Unit = js.native
-  def destroy(error: Error): this.type = js.native
   def destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): this.type = js.native
 }
 

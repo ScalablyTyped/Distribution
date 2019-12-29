@@ -10,7 +10,7 @@ trait BeforeOpenEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the menu model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Menu.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the target element
     */
   var target: js.UndefOr[js.Any] = js.undefined
@@ -23,7 +23,7 @@ object BeforeOpenEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Menu.Model = null,
+    model: Model = null,
     target: js.Any = null,
     `type`: String = null
   ): BeforeOpenEventArgs = {

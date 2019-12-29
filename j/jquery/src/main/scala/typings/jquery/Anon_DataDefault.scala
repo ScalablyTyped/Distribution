@@ -2,7 +2,7 @@ package typings.jquery
 
 import typings.jquery.JQuery.TriggeredEvent
 import typings.jquery.JQuery._SpecialEventHook
-import typings.jquery.jqueryNumbers.`false`
+import typings.jquery.jqueryBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

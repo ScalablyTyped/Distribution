@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FingerprintStatic
-  extends Instantiable0[typings.fingerprintjs.FingerprintJs.Fingerprint]
+  extends Instantiable0[Fingerprint]
      with /**
   * Create Fingerprint object.
   */
 Instantiable1[
       (/* option */ FingerprintOption) | (/* hasher */ js.Function2[/* key */ String, /* seed */ Double, Double]), 
-      typings.fingerprintjs.FingerprintJs.Fingerprint
+      Fingerprint
     ]
 

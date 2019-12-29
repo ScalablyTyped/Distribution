@@ -13,7 +13,7 @@ trait AppointmentClickEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the object of appointmentClick event.
     */
   var `object`: js.UndefOr[js.Any] = js.undefined
@@ -27,7 +27,7 @@ object AppointmentClickEventArgs {
   def apply(
     appointment: js.Any = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     `object`: js.Any = null,
     `type`: String = null
   ): AppointmentClickEventArgs = {

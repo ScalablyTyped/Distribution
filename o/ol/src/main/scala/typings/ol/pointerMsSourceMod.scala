@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.pointerMsSourceMod.MsSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

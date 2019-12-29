@@ -5,8 +5,6 @@ import typings.electron.Electron.BrowserWindow
 import typings.electron.Electron.ContextMenuParams
 import typings.electron.Electron.Menu
 import typings.electron.Electron.WebviewTag
-import typings.electronDashSpellchecker.electronDashSpellcheckerMod.ContextMenuFormatter
-import typings.electronDashSpellchecker.electronDashSpellcheckerMod.SpellCheckHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

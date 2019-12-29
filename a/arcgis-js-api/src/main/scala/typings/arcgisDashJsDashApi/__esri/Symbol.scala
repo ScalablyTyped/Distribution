@@ -1,5 +1,19 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`label-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`line-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`mesh-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`picture-fill`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`picture-marker`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`polygon-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`shield-label-symbol`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-fill`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-line`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-marker`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`web-style`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cim
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,11 +31,11 @@ trait Symbol
     */
   var color: Color = js.native
   /**
-    * The symbol type.  **Possible values:** simple-marker | picture-marker | simple-line | simple-fill | picture-fill | text | shield-label-symbol | point-3d | line-3d | polygon-3d | mesh-3d | label-3d | cim
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#type)
     */
-  val `type`: String = js.native
+  val `type`: `simple-marker` | `picture-marker` | `simple-line` | `simple-fill` | `picture-fill` | text | `shield-label-symbol` | `point-3d` | `line-3d` | `polygon-3d` | `web-style` | `mesh-3d` | `label-3d` | cim = js.native
 }
 
 @JSGlobal("__esri.Symbol")

@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.microflows
 
+import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +12,7 @@ import scala.scalajs.js.annotation._
 abstract class ServerSideMicroflow protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.microflows.ServerSideMicroflow {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
@@ -23,6 +25,6 @@ abstract class ServerSideMicroflow protected ()
 @js.native
 object ServerSideMicroflow extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

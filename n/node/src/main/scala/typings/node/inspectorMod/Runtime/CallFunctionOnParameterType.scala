@@ -20,7 +20,7 @@ trait CallFunctionOnParameterType extends js.Object {
   /**
     * Declaration of the function to call.
     */
-  var functionDeclaration: java.lang.String
+  var functionDeclaration: String
   /**
     * Whether preview should be generated for the result.
     * @experimental
@@ -29,7 +29,7 @@ trait CallFunctionOnParameterType extends js.Object {
   /**
     * Symbolic group name that can be used to release multiple objects. If objectGroup is not specified and objectId is, objectGroup will be inherited from object.
     */
-  var objectGroup: js.UndefOr[java.lang.String] = js.undefined
+  var objectGroup: js.UndefOr[String] = js.undefined
   /**
     * Identifier of the object to call function on. Either objectId or executionContextId should be specified.
     */
@@ -51,12 +51,12 @@ trait CallFunctionOnParameterType extends js.Object {
 object CallFunctionOnParameterType {
   @scala.inline
   def apply(
-    functionDeclaration: java.lang.String,
+    functionDeclaration: String,
     arguments: js.Array[CallArgument] = null,
     awaitPromise: js.UndefOr[Boolean] = js.undefined,
     executionContextId: Int | Double = null,
     generatePreview: js.UndefOr[Boolean] = js.undefined,
-    objectGroup: java.lang.String = null,
+    objectGroup: String = null,
     objectId: RemoteObjectId = null,
     returnByValue: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,

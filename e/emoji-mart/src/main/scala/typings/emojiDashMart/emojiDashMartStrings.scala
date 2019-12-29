@@ -11,7 +11,7 @@ object emojiDashMartStrings {
   sealed trait EmojiEntry extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait activity extends CategoryName
@@ -73,7 +73,7 @@ object emojiDashMartStrings {
   @scala.inline
   def EmojiEntry: EmojiEntry = "EmojiEntry".asInstanceOf[EmojiEntry]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def activity: activity = "activity".asInstanceOf[activity]
   @scala.inline

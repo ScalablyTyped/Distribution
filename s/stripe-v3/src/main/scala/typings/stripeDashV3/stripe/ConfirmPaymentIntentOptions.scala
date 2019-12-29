@@ -16,10 +16,8 @@ trait ConfirmPaymentIntentOptions extends js.Object {
     */
   var receipt_email: js.UndefOr[String] = js.undefined
   /**
-    * A return_url may be supplied if you are not planning to use
-    * stripe.handleCardPayment to complete the payment. If you are
-    * handling next actions yourself, pass in a return_url. If the
-    * subsequent action is redirect_to_url, this URL will be used
+    * If you are handling next actions yourself, pass in a return_url.
+    * If the subsequent action is redirect_to_url, this URL will be used
     * on the return path for the redirect.
     */
   var return_url: js.UndefOr[String] = js.undefined
@@ -29,6 +27,10 @@ trait ConfirmPaymentIntentOptions extends js.Object {
     * customer. Default is false.
     */
   var save_payment_method: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Indicates that you intend to make future payments with this PaymentIntent's payment method.
+    */
+  var setup_future_usage: js.UndefOr[String] = js.undefined
   /**
     * The shipping details for the payment, if collected. [Recommended]
     */
@@ -42,6 +44,7 @@ object ConfirmPaymentIntentOptions {
     receipt_email: String = null,
     return_url: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
+    setup_future_usage: String = null,
     shipping: ShippingDetails = null
   ): ConfirmPaymentIntentOptions = {
     val __obj = js.Dynamic.literal()
@@ -49,6 +52,7 @@ object ConfirmPaymentIntentOptions {
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
     if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmPaymentIntentOptions]
   }

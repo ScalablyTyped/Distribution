@@ -1,8 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileAction.Completed
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileAction.Played
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

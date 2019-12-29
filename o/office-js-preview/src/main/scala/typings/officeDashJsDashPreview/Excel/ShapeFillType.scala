@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeFillType.gradient
-import typings.officeDashJsDashPreview.Excel.ShapeFillType.mixed
-import typings.officeDashJsDashPreview.Excel.ShapeFillType.noFill
-import typings.officeDashJsDashPreview.Excel.ShapeFillType.pattern
-import typings.officeDashJsDashPreview.Excel.ShapeFillType.pictureAndTexture
-import typings.officeDashJsDashPreview.Excel.ShapeFillType.solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassDatabase extends Instantiable1[/* repo_ */ Repo, Database] {
-  val ServerValue: Anon_TIMESTAMP = js.native
+  val ServerValue: Anon_IncrementTIMESTAMP = js.native
 }
 

@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-blur`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-clear`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-complete`
@@ -269,11 +268,11 @@ trait widgetsSearch
     * @param searchTerm This searchTerm can be a string, geometry, suggest candidate object, or an array of [longitude,latitude] coordinate pairs. If a geometry is supplied, then it will reverse geocode (locator) or findAddressCandidates with geometry instead of text.
     *
     */
-  def search(): IPromise[SearchResponse] = js.native
-  def search(searchTerm: String): IPromise[SearchResponse] = js.native
-  def search(searchTerm: js.Array[js.Array[Double]]): IPromise[SearchResponse] = js.native
-  def search(searchTerm: Geometry): IPromise[SearchResponse] = js.native
-  def search(searchTerm: SuggestResult): IPromise[SearchResponse] = js.native
+  def search(): js.Promise[SearchResponse] = js.native
+  def search(searchTerm: String): js.Promise[SearchResponse] = js.native
+  def search(searchTerm: js.Array[js.Array[Double]]): js.Promise[SearchResponse] = js.native
+  def search(searchTerm: Geometry): js.Promise[SearchResponse] = js.native
+  def search(searchTerm: SuggestResult): js.Promise[SearchResponse] = js.native
   /**
     * Performs a suggest() request on the active Locator. It also uses the current value of the widget or one that is passed in.  Suggestions are available if working with a 10.3 or greater geocoding service that has [suggest capability loaded](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-suggest.htm) or a 10.3 or greater feature layer that supports pagination, i.e. `supportsPagination = true`.
     *
@@ -282,8 +281,8 @@ trait widgetsSearch
     * @param value The string value used to suggest() on an active Locator or feature layer. If nothing is passed in, takes the current value of the widget.
     *
     */
-  def suggest(): IPromise[SuggestResponse] = js.native
-  def suggest(value: String): IPromise[SuggestResponse] = js.native
+  def suggest(): js.Promise[SuggestResponse] = js.native
+  def suggest(value: String): js.Promise[SuggestResponse] = js.native
 }
 
 @JSGlobal("__esri.widgetsSearch")

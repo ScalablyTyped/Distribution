@@ -2,6 +2,7 @@ package typings.reactDashMapDashGl.reactDashMapDashGlMod
 
 import typings.reactDashMapDashGl.Anon_Height
 import typings.reactDashMapDashGl.Anon_MaxPitch
+import typings.reactDashMapDashGl.reactDashMapDashGlStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +45,7 @@ trait InteractiveMapProps extends StaticMapProps {
   var touchAction: js.UndefOr[String] = js.undefined
   var touchRotate: js.UndefOr[Boolean] = js.undefined
   var touchZoom: js.UndefOr[Boolean] = js.undefined
-  var transitionDuration: js.UndefOr[Double] = js.undefined
+  var transitionDuration: js.UndefOr[Double | auto] = js.undefined
   var transitionEasing: js.UndefOr[EasingFunction] = js.undefined
   var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.undefined
   var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
@@ -109,7 +110,7 @@ object InteractiveMapProps {
     touchRotate: js.UndefOr[Boolean] = js.undefined,
     touchZoom: js.UndefOr[Boolean] = js.undefined,
     transformRequest: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => MapRequest = null,
-    transitionDuration: Int | Double = null,
+    transitionDuration: Double | auto = null,
     transitionEasing: /* t */ Double => Double = null,
     transitionInterpolator: TransitionInterpolator = null,
     transitionInterruption: TRANSITION_EVENTS = null,

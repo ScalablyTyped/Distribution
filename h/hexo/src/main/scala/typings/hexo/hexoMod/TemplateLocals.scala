@@ -19,7 +19,7 @@ trait TemplateLocals extends js.Object {
     * Underscore object
     */
   @JSName("_")
-  var __Original: UnderscoreStatic = js.native
+  var _underscore_Original: UnderscoreStatic = js.native
   /**
     * Site settings in `_config.yml`
     */
@@ -35,11 +35,13 @@ trait TemplateLocals extends js.Object {
   /**
     * Underscore object
     */
-  def `_`[T](value: T): Underscore[T, T] = js.native
+  @JSName("_")
+  def _underscore[T](value: T): Underscore[T, T] = js.native
   /**
     * Underscore object
     */
-  def `_`[T](value: js.Array[T]): Underscore[T, js.Array[T]] = js.native
+  @JSName("_")
+  def _underscore[T](value: js.Array[T]): Underscore[T, js.Array[T]] = js.native
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
@@ -48,11 +50,12 @@ trait TemplateLocals extends js.Object {
   /**
     * Underscore object
     */
-  def `_`[T](value: List[T]): Underscore[T, List[T]] = js.native
+  @JSName("_")
+  def _underscore[T](value: List[T]): Underscore[T, List[T]] = js.native
   /**
     * Underscore object
     */
   @JSName("_")
-  def __T_TypeOfDictionaryVV_DictionaryWildcard[T /* <: TypeOfDictionary[V] */, V /* <: Dictionary[_] */](value: V): Underscore[T, V] = js.native
+  def _underscore_T_TypeOfDictionaryVV_DictionaryWildcard[T /* <: TypeOfDictionary[V] */, V /* <: Dictionary[_] */](value: V): Underscore[T, V] = js.native
 }
 

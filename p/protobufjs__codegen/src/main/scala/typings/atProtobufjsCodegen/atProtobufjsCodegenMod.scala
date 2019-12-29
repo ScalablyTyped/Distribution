@@ -1,7 +1,6 @@
 package typings.atProtobufjsCodegen
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atProtobufjsCodegen.atProtobufjsCodegenMod.Codegen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.atPulumiQuery
 
-import typings.atPulumiQuery.asyncQueryableMod.AsyncQueryableImpl
 import typings.atPulumiQuery.baseMod.IterableBase
 import typings.atPulumiQuery.interfacesMod.AsyncIterableIterator
 import typings.atPulumiQuery.interfacesMod.AsyncQuerySource
@@ -140,13 +139,13 @@ object asyncQueryableMod extends js.Object {
       selector: js.Function2[/* t */ TSource, /* index */ Double, AsyncQuerySource[TInner]],
       resultSelector: js.Function2[/* t */ TSource, /* ti */ TInner, js.Promise[TResult] | TResult]
     ): AsyncQueryable[TResult] = js.native
-    def forEach(f: js.Function1[/* t */ TSource, Unit | js.Promise[Unit]]): js.Promise[Unit] = js.native
     /**
       * Evaluate a function `f` on each element of a sequence.
       * @param f Function to run on each element of the sequence.
       */
+    def forEach(f: js.Function1[TSource, Unit | js.Promise[Unit]]): Unit = js.native
     @JSName("forEach")
-    def forEach_Unit(f: js.Function1[TSource, Unit | js.Promise[Unit]]): Unit = js.native
+    def forEach_Promise(f: js.Function1[/* t */ TSource, Unit | js.Promise[Unit]]): js.Promise[Unit] = js.native
     /**
       * Collect elements in a sequence into groups whose keys match.
       * @param keySelector Maps an element of the sequence into the key used for grouping.

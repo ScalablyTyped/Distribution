@@ -1,6 +1,5 @@
 package typings.appDashBuilderDashLib
 
-import typings.appDashBuilderDashLib.outVmVmMod.VmManager
 import typings.builderDashUtil.builderDashUtilMod.DebugLogger
 import typings.builderDashUtil.builderDashUtilMod.ExtraSpawnOptions
 import typings.node.childUnderscoreProcessMod.ExecFileOptions

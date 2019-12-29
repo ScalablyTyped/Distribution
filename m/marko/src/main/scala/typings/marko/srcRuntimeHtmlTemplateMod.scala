@@ -3,9 +3,6 @@ package typings.marko
 import typings.asyncDashWriter.asyncDashWriterMod.AsyncWriter
 import typings.marko.srcRuntimeHtmlAsyncStreamMod.AsyncStream
 import typings.marko.srcRuntimeHtmlRenderResultMod.RenderResult
-import typings.marko.srcRuntimeHtmlTemplateMod.Readable
-import typings.marko.srcRuntimeHtmlTemplateMod.Renderable
-import typings.marko.srcRuntimeHtmlTemplateMod.Template
 import typings.marko.srcRuntimeVdomAsyncVDOMBuilderMod.AsyncVDOMBuilder
 import typings.node.NodeJS.WritableStream
 import typings.std.Error
@@ -46,8 +43,9 @@ object srcRuntimeHtmlTemplateMod extends js.Object {
   
   @js.native
   trait Template extends Renderable {
-    var `_`: js.Any = js.native
     var ___shouldBuffer: Boolean = js.native
+    @JSName("_")
+    var _underscore: js.Any = js.native
     var meta: js.Any = js.native
     var path: String = js.native
     def apply(path: String, renderFunc: js.Any, options: js.Any): Template = js.native

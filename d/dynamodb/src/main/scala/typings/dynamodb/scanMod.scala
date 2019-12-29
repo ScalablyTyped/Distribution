@@ -2,7 +2,6 @@ package typings.dynamodb
 
 import typings.dynamodb.callbackMod.Callback
 import typings.dynamodb.executeFilterMod.ExecuteFilter
-import typings.dynamodb.scanMod.Scan
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

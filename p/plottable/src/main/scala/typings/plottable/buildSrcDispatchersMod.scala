@@ -1,9 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcComponentsComponentMod.Component
-import typings.plottable.buildSrcDispatchersMod.Key
-import typings.plottable.buildSrcDispatchersMod.Mouse
-import typings.plottable.buildSrcDispatchersMod.Touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,8 +7,6 @@ import typings.vscode.vscodeMod.Location
 import typings.vscode.vscodeMod.LocationLink
 import typings.vscode.vscodeMod.Uri
 import typings.vscodeDashLanguageclient.libProtocolCompletionItemMod.default
-import typings.vscodeDashLanguageclient.libProtocolConverterMod.Converter
-import typings.vscodeDashLanguageclient.libProtocolConverterMod.URIConverter
 import typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentLink
 import typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction
@@ -46,7 +44,7 @@ object libProtocolConverterMod extends js.Object {
   @js.native
   trait Converter extends js.Object {
     def asCodeAction(): js.UndefOr[scala.Nothing] = js.native
-    def asCodeAction(item: CodeAction): js.UndefOr[typings.vscode.vscodeMod.CodeAction] = js.native
+    def asCodeAction(item: CodeAction): typings.vscode.vscodeMod.CodeAction = js.native
     def asCodeActionKind(): js.UndefOr[scala.Nothing] = js.native
     def asCodeActionKind(item: CodeActionKind): typings.vscode.vscodeMod.CodeActionKind = js.native
     @JSName("asCodeActionKind")
@@ -56,7 +54,7 @@ object libProtocolConverterMod extends js.Object {
     @JSName("asCodeActionKinds")
     def asCodeActionKinds_Union(item: js.Array[CodeActionKind]): js.UndefOr[js.Array[typings.vscode.vscodeMod.CodeActionKind]] = js.native
     @JSName("asCodeAction")
-    def asCodeAction_CodeAction(item: CodeAction): typings.vscode.vscodeMod.CodeAction = js.native
+    def asCodeAction_Union(item: CodeAction): js.UndefOr[typings.vscode.vscodeMod.CodeAction] = js.native
     def asCodeLens(): js.UndefOr[scala.Nothing] = js.native
     def asCodeLens(item: CodeLens): js.UndefOr[typings.vscode.vscodeMod.CodeLens] = js.native
     @JSName("asCodeLens")
@@ -193,9 +191,9 @@ object libProtocolConverterMod extends js.Object {
     def asTextEdits_Union(items: js.Array[TextEdit]): js.UndefOr[js.Array[typings.vscode.vscodeMod.TextEdit]] = js.native
     def asUri(value: String): Uri = js.native
     def asWorkspaceEdit(): js.UndefOr[scala.Nothing] = js.native
-    def asWorkspaceEdit(item: WorkspaceEdit): typings.vscode.vscodeMod.WorkspaceEdit = js.native
+    def asWorkspaceEdit(item: WorkspaceEdit): js.UndefOr[typings.vscode.vscodeMod.WorkspaceEdit] = js.native
     @JSName("asWorkspaceEdit")
-    def asWorkspaceEdit_Union(item: WorkspaceEdit): js.UndefOr[typings.vscode.vscodeMod.WorkspaceEdit] = js.native
+    def asWorkspaceEdit_WorkspaceEdit(item: WorkspaceEdit): typings.vscode.vscodeMod.WorkspaceEdit = js.native
   }
   
   def createConverter(): Converter = js.native

@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.BlendOption.OPAQUE
-import typings.cesium.cesiumMod.BlendOption.OPAQUE_AND_TRANSLUCENT
-import typings.cesium.cesiumMod.BlendOption.TRANSLUCENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

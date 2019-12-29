@@ -36,7 +36,8 @@ class TaskRequestUpdateItem protected () extends js.Object {
   var MessageClass: String = js.native
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
-  var `Outlook.TaskRequestUpdateItem_typekey`: TaskRequestUpdateItem = js.native
+  @JSName("Outlook.TaskRequestUpdateItem_typekey")
+  var OutlookDotTaskRequestUpdateItem_typekey: TaskRequestUpdateItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

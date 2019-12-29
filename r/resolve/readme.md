@@ -1,6 +1,7 @@
 
 # Scala.js typings for resolve
 
+Typings are for version 1.14.1
 
 ## Library description:
 resolve like require.resolve() on behalf of files asynchronously and synchronously

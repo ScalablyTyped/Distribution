@@ -1,10 +1,10 @@
 package typings.typescript.typescriptMod
 
-import typings.typescript.typescriptStrings.JS
 import typings.typescript.typescriptStrings.`non-relative`
 import typings.typescript.typescriptStrings.auto
 import typings.typescript.typescriptStrings.double
 import typings.typescript.typescriptStrings.index
+import typings.typescript.typescriptStrings.js_
 import typings.typescript.typescriptStrings.minimal
 import typings.typescript.typescriptStrings.relative
 import typings.typescript.typescriptStrings.single
@@ -16,7 +16,7 @@ trait UserPreferences extends js.Object {
   val allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.undefined
   val disableSuggestions: js.UndefOr[Boolean] = js.undefined
   /** Determines whether we import `foo/index.ts` as "foo", "foo/index", or "foo/index.js" */
-  val importModuleSpecifierEnding: js.UndefOr[minimal | index | JS] = js.undefined
+  val importModuleSpecifierEnding: js.UndefOr[minimal | index | js_] = js.undefined
   val importModuleSpecifierPreference: js.UndefOr[relative | `non-relative`] = js.undefined
   val includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined
   val includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +30,7 @@ object UserPreferences {
   def apply(
     allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.undefined,
     disableSuggestions: js.UndefOr[Boolean] = js.undefined,
-    importModuleSpecifierEnding: minimal | index | JS = null,
+    importModuleSpecifierEnding: minimal | index | js_ = null,
     importModuleSpecifierPreference: relative | `non-relative` = null,
     includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined,

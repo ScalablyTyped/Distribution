@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,8 +56,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def cancelJob(jobId: String): IPromise[JobInfo] = js.native
-  def cancelJob(jobId: String, requestOptions: js.Any): IPromise[JobInfo] = js.native
+  def cancelJob(jobId: String): js.Promise[JobInfo] = js.native
+  def cancelJob(jobId: String, requestOptions: js.Any): js.Promise[JobInfo] = js.native
   /**
     * Sends a request to the GP Task for the current state of the job identified by `jobId`.
     *
@@ -68,8 +67,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def checkJobStatus(jobId: String): IPromise[JobInfo] = js.native
-  def checkJobStatus(jobId: String, requestOptions: js.Any): IPromise[JobInfo] = js.native
+  def checkJobStatus(jobId: String): js.Promise[JobInfo] = js.native
+  def checkJobStatus(jobId: String, requestOptions: js.Any): js.Promise[JobInfo] = js.native
   /**
     * Sends a request to the server to execute a synchronous GP task.
     *
@@ -91,8 +90,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def execute(params: js.Any): IPromise[_] = js.native
-  def execute(params: js.Any, requestOptions: js.Any): IPromise[_] = js.native
+  def execute(params: js.Any): js.Promise[_] = js.native
+  def execute(params: js.Any, requestOptions: js.Any): js.Promise[_] = js.native
   /**
     * Sends a request to the GP Task to get the task result identified by `jobId` and `resultName`.
     *
@@ -103,8 +102,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def getResultData(jobId: String, resultName: String): IPromise[ParameterValue] = js.native
-  def getResultData(jobId: String, resultName: String, requestOptions: js.Any): IPromise[ParameterValue] = js.native
+  def getResultData(jobId: String, resultName: String): js.Promise[ParameterValue] = js.native
+  def getResultData(jobId: String, resultName: String, requestOptions: js.Any): js.Promise[ParameterValue] = js.native
   /**
     * Sends a request to the GP Task to get the task result identified by `jobId` and `resultName` as an image.
     *
@@ -116,8 +115,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def getResultImage(jobId: String, resultName: String, imageParams: ImageParameters): IPromise[ParameterValue] = js.native
-  def getResultImage(jobId: String, resultName: String, imageParams: ImageParameters, requestOptions: js.Any): IPromise[ParameterValue] = js.native
+  def getResultImage(jobId: String, resultName: String, imageParams: ImageParameters): js.Promise[ParameterValue] = js.native
+  def getResultImage(jobId: String, resultName: String, imageParams: ImageParameters, requestOptions: js.Any): js.Promise[ParameterValue] = js.native
   /**
     * Get the task result identified by `jobId` as an [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
     *
@@ -126,7 +125,7 @@ trait Geoprocessor extends Task {
     * @param jobId The jobId returned from [JobInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html).
     *
     */
-  def getResultMapImageLayer(jobId: String): IPromise[MapImageLayer] = js.native
+  def getResultMapImageLayer(jobId: String): js.Promise[MapImageLayer] = js.native
   /**
     * Submits a job to the server for asynchronous processing by the GP task. The method will resolve immediately after the job has been submitted to the server. Use [waitForJobCompletion()](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#waitForJobCompletion) to be notified when the job has completed and optionally periodic job status.  The task execution results can be retrieved using the [getResultData()](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#getResultData), [getResultImage()](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#getResultImage), or [getResultMapImageLayer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#getResultMapImageLayer) methods.
     *
@@ -148,8 +147,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def submitJob(params: js.Any): IPromise[JobInfo] = js.native
-  def submitJob(params: js.Any, requestOptions: js.Any): IPromise[JobInfo] = js.native
+  def submitJob(params: js.Any): js.Promise[JobInfo] = js.native
+  def submitJob(params: js.Any, requestOptions: js.Any): js.Promise[JobInfo] = js.native
   /**
     * Resolves when an asynchronous job has completed. Optionally job progress can be monitored.
     *
@@ -162,8 +161,8 @@ trait Geoprocessor extends Task {
     * @param options.statusCallback Callback function that is called at the specified interval. Use this method to monitor job status and messages.
     *
     */
-  def waitForJobCompletion(jobId: String): IPromise[JobInfo] = js.native
-  def waitForJobCompletion(jobId: String, options: GeoprocessorWaitForJobCompletionOptions): IPromise[JobInfo] = js.native
+  def waitForJobCompletion(jobId: String): js.Promise[JobInfo] = js.native
+  def waitForJobCompletion(jobId: String, options: GeoprocessorWaitForJobCompletionOptions): js.Promise[JobInfo] = js.native
 }
 
 @JSGlobal("__esri.Geoprocessor")

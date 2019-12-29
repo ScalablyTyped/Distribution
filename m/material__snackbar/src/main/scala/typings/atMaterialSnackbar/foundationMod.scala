@@ -1,8 +1,6 @@
 package typings.atMaterialSnackbar
 
 import typings.atMaterialSnackbar.adapterMod.MDCSnackbarAdapter
-import typings.atMaterialSnackbar.foundationMod.MDCSnackbarData
-import typings.atMaterialSnackbar.foundationMod.MDCSnackbarFoundation
 import typings.std.Event
 import typings.std.EventListener
 import scala.scalajs.js

@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.ASPxClientSpreadsheetEditMode.Cell
-import typings.devexpressDashWeb.ASPxClientSpreadsheetEditMode.Comment
-import typings.devexpressDashWeb.ASPxClientSpreadsheetEditMode.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

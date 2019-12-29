@@ -1,23 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_FileFormat.TWFF_BMP
-import typings.dwt.EnumDWT_FileFormat.TWFF_DEJAVU
-import typings.dwt.EnumDWT_FileFormat.TWFF_EXIF
-import typings.dwt.EnumDWT_FileFormat.TWFF_FPX
-import typings.dwt.EnumDWT_FileFormat.TWFF_JFIF
-import typings.dwt.EnumDWT_FileFormat.TWFF_JP2
-import typings.dwt.EnumDWT_FileFormat.TWFF_JPN
-import typings.dwt.EnumDWT_FileFormat.TWFF_JPX
-import typings.dwt.EnumDWT_FileFormat.TWFF_PDF
-import typings.dwt.EnumDWT_FileFormat.TWFF_PDFA
-import typings.dwt.EnumDWT_FileFormat.TWFF_PDFA2
-import typings.dwt.EnumDWT_FileFormat.TWFF_PICT
-import typings.dwt.EnumDWT_FileFormat.TWFF_PNG
-import typings.dwt.EnumDWT_FileFormat.TWFF_SPIFF
-import typings.dwt.EnumDWT_FileFormat.TWFF_TIFF
-import typings.dwt.EnumDWT_FileFormat.TWFF_TIFFMULTI
-import typings.dwt.EnumDWT_FileFormat.TWFF_XBM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.ISVGPathSegCurvetoQuadraticRel")
 @js.native
 class ISVGPathSegCurvetoQuadraticRel protected () extends js.Object {
-  var `MSHTML.ISVGPathSegCurvetoQuadraticRel_typekey`: ISVGPathSegCurvetoQuadraticRel = js.native
+  @JSName("MSHTML.ISVGPathSegCurvetoQuadraticRel_typekey")
+  var MSHTMLDotISVGPathSegCurvetoQuadraticRel_typekey: ISVGPathSegCurvetoQuadraticRel = js.native
   var x: Double = js.native
   var x1: Double = js.native
   var y: Double = js.native

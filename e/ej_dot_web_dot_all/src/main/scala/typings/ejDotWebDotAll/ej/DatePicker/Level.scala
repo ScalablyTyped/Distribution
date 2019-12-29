@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.DatePicker
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.DatePicker.Level.Century
-import typings.ejDotWebDotAll.ej.DatePicker.Level.Decade
-import typings.ejDotWebDotAll.ej.DatePicker.Level.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

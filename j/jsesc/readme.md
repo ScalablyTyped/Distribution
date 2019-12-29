@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsesc
 
-Typings are for version 0.4.3
+Typings are for version 2.5.2
 
 ## Library description:
 Given some data, jsesc returns the shortest possible stringified & ASCII-safe representation of that data.

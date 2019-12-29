@@ -19,7 +19,7 @@ trait GlideElement extends js.Object {
   def getDisplayValue(): String = js.native
   def getDisplayValue(maxCharacters: Double): String = js.native
   def getED(): GlideElementDescriptor = js.native
-  def getRefRecord(): typings.servicenow.servicenow.GlideRecord = js.native
+  def getRefRecord(): GlideRecord = js.native
   def getReferenceTable(): String = js.native
   def nil(): Boolean = js.native
   def setDisplayValue(value: js.Object): Unit = js.native

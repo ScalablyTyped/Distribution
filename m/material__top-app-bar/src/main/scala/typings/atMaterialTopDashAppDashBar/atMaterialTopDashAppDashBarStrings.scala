@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object atMaterialTopDashAppDashBarStrings {
   @js.native
-  sealed trait `DOTmdc-top-app-bar` extends js.Object
+  sealed trait `Dotmdc-top-app-bar` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-top-app-bar__action-item` extends js.Object
+  sealed trait `Dotmdc-top-app-bar__action-item` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-top-app-bar__navigation-icon` extends js.Object
+  sealed trait `Dotmdc-top-app-bar__navigation-icon` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-top-app-bar__title` extends js.Object
+  sealed trait `Dotmdc-top-app-bar__title` extends js.Object
   
   @js.native
-  sealed trait `MDCTopAppBar:nav` extends js.Object
+  sealed trait MDCTopAppBarColonnav extends js.Object
   
   @js.native
   sealed trait `mdc-top-app-bar--fixed` extends js.Object
@@ -36,15 +36,15 @@ object atMaterialTopDashAppDashBarStrings {
   sealed trait `mdc-top-app-bar--short-has-action-item` extends js.Object
   
   @scala.inline
-  def `DOTmdc-top-app-bar`: `DOTmdc-top-app-bar` = ".mdc-top-app-bar".asInstanceOf[`DOTmdc-top-app-bar`]
+  def `Dotmdc-top-app-bar`: `Dotmdc-top-app-bar` = ".mdc-top-app-bar".asInstanceOf[`Dotmdc-top-app-bar`]
   @scala.inline
-  def `DOTmdc-top-app-bar__action-item`: `DOTmdc-top-app-bar__action-item` = ".mdc-top-app-bar__action-item".asInstanceOf[`DOTmdc-top-app-bar__action-item`]
+  def `Dotmdc-top-app-bar__action-item`: `Dotmdc-top-app-bar__action-item` = ".mdc-top-app-bar__action-item".asInstanceOf[`Dotmdc-top-app-bar__action-item`]
   @scala.inline
-  def `DOTmdc-top-app-bar__navigation-icon`: `DOTmdc-top-app-bar__navigation-icon` = ".mdc-top-app-bar__navigation-icon".asInstanceOf[`DOTmdc-top-app-bar__navigation-icon`]
+  def `Dotmdc-top-app-bar__navigation-icon`: `Dotmdc-top-app-bar__navigation-icon` = ".mdc-top-app-bar__navigation-icon".asInstanceOf[`Dotmdc-top-app-bar__navigation-icon`]
   @scala.inline
-  def `DOTmdc-top-app-bar__title`: `DOTmdc-top-app-bar__title` = ".mdc-top-app-bar__title".asInstanceOf[`DOTmdc-top-app-bar__title`]
+  def `Dotmdc-top-app-bar__title`: `Dotmdc-top-app-bar__title` = ".mdc-top-app-bar__title".asInstanceOf[`Dotmdc-top-app-bar__title`]
   @scala.inline
-  def `MDCTopAppBar:nav`: `MDCTopAppBar:nav` = "MDCTopAppBar:nav".asInstanceOf[`MDCTopAppBar:nav`]
+  def MDCTopAppBarColonnav: MDCTopAppBarColonnav = "MDCTopAppBar:nav".asInstanceOf[MDCTopAppBarColonnav]
   @scala.inline
   def `mdc-top-app-bar--fixed`: `mdc-top-app-bar--fixed` = "mdc-top-app-bar--fixed".asInstanceOf[`mdc-top-app-bar--fixed`]
   @scala.inline

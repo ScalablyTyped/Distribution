@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLElement2")
 @js.native
 class IHTMLElement2 protected () extends js.Object {
-  var `MSHTML.IHTMLElement2_typekey`: IHTMLElement2 = js.native
+  @JSName("MSHTML.IHTMLElement2_typekey")
+  var MSHTMLDotIHTMLElement2_typekey: IHTMLElement2 = js.native
   var accessKey: String = js.native
   val behaviorUrns: js.Any = js.native
   val canHaveChildren: Boolean = js.native

@@ -11,7 +11,8 @@ class ErrorBars protected () extends js.Object {
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
   var EndStyle: XlEndStyleCap = js.native
-  var `Excel.ErrorBars_typekey`: ErrorBars = js.native
+  @JSName("Excel.ErrorBars_typekey")
+  var ExcelDotErrorBars_typekey: ErrorBars = js.native
   val Format: ChartFormat = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native

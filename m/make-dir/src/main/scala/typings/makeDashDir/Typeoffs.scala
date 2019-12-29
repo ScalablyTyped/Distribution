@@ -317,7 +317,7 @@ trait Typeoffs extends js.Object {
   def openSync(path: PathLike, flags: Double, mode: Double): Double = js.native
   def opendirSync(path: String): Dir = js.native
   def opendirSync(path: String, options: OpenDirOptions): Dir = js.native
-  def readFileSync(path: Double): Buffer = js.native
+  def readFileSync(path: Double): String | Buffer = js.native
   def readFileSync(path: Double, options: String): String | Buffer = js.native
   def readFileSync(path: Double, options: Anon_EncodingFlag): Buffer = js.native
   def readFileSync(path: Double, options: Anon_EncodingFlagNull): String | Buffer = js.native
@@ -327,9 +327,10 @@ trait Typeoffs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
-    * @param options An object that may contain an optional flag. If a flag is not provided, it defaults to `'r'`.
+    * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
+    * If a flag is not provided, it defaults to `'r'`.
     */
-  def readFileSync(path: PathLike): Buffer = js.native
+  def readFileSync(path: PathLike): String | Buffer = js.native
   def readFileSync(path: PathLike, options: String): String | Buffer = js.native
   def readFileSync(path: PathLike, options: Anon_EncodingFlag): Buffer = js.native
   def readFileSync(path: PathLike, options: Anon_EncodingFlagNull): String | Buffer = js.native
@@ -343,21 +344,20 @@ trait Typeoffs extends js.Object {
     */
   def readFileSync(path: PathLike, options: Anon_EncodingFlagString): String = js.native
   @JSName("readFileSync")
-  def readFileSync_String(path: Double, options: String): String = js.native
-  @JSName("readFileSync")
-  def readFileSync_String(path: PathLike, options: String): String = js.native
-  @JSName("readFileSync")
-  def readFileSync_Union(path: Double): String | Buffer = js.native
+  def readFileSync_Buffer(path: Double): Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
-    * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
-    * If a flag is not provided, it defaults to `'r'`.
+    * @param options An object that may contain an optional flag. If a flag is not provided, it defaults to `'r'`.
     */
   @JSName("readFileSync")
-  def readFileSync_Union(path: PathLike): String | Buffer = js.native
+  def readFileSync_Buffer(path: PathLike): Buffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_String(path: Double, options: String): String = js.native
+  @JSName("readFileSync")
+  def readFileSync_String(path: PathLike, options: String): String = js.native
   def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
   /**
     * Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
@@ -495,7 +495,7 @@ trait Typeoffs extends js.Object {
   def watch(
     filename: PathLike,
     options: Null,
-    listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
+    listener: js.Function2[/* event */ String, Buffer | String, Unit]
   ): FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.

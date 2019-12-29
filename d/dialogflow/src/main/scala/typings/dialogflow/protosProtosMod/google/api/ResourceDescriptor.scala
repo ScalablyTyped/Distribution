@@ -3,9 +3,6 @@ package typings.dialogflow.protosProtosMod.google.api
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History
-import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.FUTURE_MULTI_PATTERN
-import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.HISTORY_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.ORIGINALLY_SINGLE_PATTERN
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

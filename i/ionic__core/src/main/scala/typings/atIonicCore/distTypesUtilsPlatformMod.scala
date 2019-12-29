@@ -14,8 +14,6 @@ import typings.atIonicCore.atIonicCoreStrings.mobileweb
 import typings.atIonicCore.atIonicCoreStrings.phablet
 import typings.atIonicCore.atIonicCoreStrings.pwa
 import typings.atIonicCore.atIonicCoreStrings.tablet
-import typings.atIonicCore.distTypesUtilsPlatformMod.IsPlatformSignature
-import typings.atIonicCore.distTypesUtilsPlatformMod.Platforms
 import typings.std.RegExp
 import typings.std.Window
 import scala.scalajs.js

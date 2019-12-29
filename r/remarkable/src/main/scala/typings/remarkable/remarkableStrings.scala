@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object remarkableStrings {
   @js.native
-  sealed trait BACKSLASHn extends js.Object
+  sealed trait Linefeed extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait abbr_close extends js.Object
@@ -213,9 +213,9 @@ object remarkableStrings {
   sealed trait tr_open extends js.Object
   
   @scala.inline
-  def BACKSLASHn: BACKSLASHn = "\n".asInstanceOf[BACKSLASHn]
+  def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abbr_close: abbr_close = "abbr_close".asInstanceOf[abbr_close]
   @scala.inline

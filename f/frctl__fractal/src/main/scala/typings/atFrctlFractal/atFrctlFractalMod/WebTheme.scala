@@ -4,7 +4,7 @@ import typings.atFrctlFractal.Anon_HandleString
 import typings.atFrctlFractal.Anon_Mount
 import typings.atFrctlFractal.Anon_MountPath
 import typings.atFrctlFractal.Anon_Params
-import typings.atFrctlFractal.atFrctlFractalNumbers.`false`
+import typings.atFrctlFractal.atFrctlFractalBooleans.`false`
 import typings.atFrctlFractal.atFrctlFractalStrings.favicon
 import typings.atFrctlFractal.atFrctlFractalStrings.format
 import typings.atFrctlFractal.atFrctlFractalStrings.lang
@@ -14,7 +14,7 @@ import typings.atFrctlFractal.atFrctlFractalStrings.rtl
 import typings.atFrctlFractal.atFrctlFractalStrings.scripts
 import typings.atFrctlFractal.atFrctlFractalStrings.skin
 import typings.atFrctlFractal.atFrctlFractalStrings.static
-import typings.atFrctlFractal.atFrctlFractalStrings.staticDOTmount
+import typings.atFrctlFractal.atFrctlFractalStrings.staticDotmount
 import typings.atFrctlFractal.atFrctlFractalStrings.styles
 import typings.atFrctlFractal.atFrctlFractalStrings.version
 import typings.node.eventsMod.EventEmitter
@@ -61,7 +61,7 @@ class WebTheme protected () extends EventEmitter {
   @JSName("getOption")
   def getOption_static(key: static): Anon_Mount = js.native
   @JSName("getOption")
-  def getOption_staticmount(key: staticDOTmount): String = js.native
+  def getOption_staticmount(key: staticDotmount): String = js.native
   @JSName("getOption")
   def getOption_styles(key: styles): js.Array[String] = js.native
   @JSName("getOption")
@@ -98,7 +98,7 @@ class WebTheme protected () extends EventEmitter {
   @JSName("setOption")
   def setOption_static(key: static, value: Anon_Mount): this.type = js.native
   @JSName("setOption")
-  def setOption_staticmount(key: staticDOTmount, value: String): this.type = js.native
+  def setOption_staticmount(key: staticDotmount, value: String): this.type = js.native
   @JSName("setOption")
   def setOption_styles(key: styles, value: js.Array[String]): this.type = js.native
   @JSName("setOption")

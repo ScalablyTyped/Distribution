@@ -13,7 +13,6 @@ import typings.atAngularRouter.atAngularRouterMod.ActivatedRoute
 import typings.atAngularRouter.atAngularRouterMod.ChildrenOutletContexts
 import typings.atAngularRouter.atAngularRouterMod.OutletContext
 import typings.atAngularRouter.atAngularRouterMod.Router
-import typings.atIonicAngular.distDirectivesNavigationIonDashRouterDashOutletMod.IonRouterOutlet
 import typings.atIonicAngular.distProvidersConfigMod.Config
 import typings.atIonicAngular.distProvidersNavDashControllerMod.NavController
 import scala.scalajs.js

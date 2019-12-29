@@ -1,6 +1,7 @@
 package typings.highland.Highland
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.highland.Flattened
 import typings.highland.highlandStrings.done
 import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadWriteStream
@@ -338,10 +339,10 @@ trait Stream[R] extends EventEmitter {
   def flatFilter(f: js.Function1[/* x */ R, Stream[Boolean]]): Stream[R] = js.native
   /**
   		 * Creates a new Stream of values by applying each item in a Stream to an
-  		 * iterator function which may return a Stream. Each item on these result
-  		 * Streams are then emitted on a single output Stream.
-  		 *
-  		 * The same as calling `stream.map(f).flatten()`.
+  		 * iterator function which must return a (possibly empty) Stream. Each
+  		 * item on these result Streams are then emitted on a single output Stream.
+  		 * 
+  		 * This transform is functionally equivalent to `.map(f).sequence()`.
   		 *
   		 * @id flatMap
   		 * @section Streams
@@ -360,9 +361,7 @@ trait Stream[R] extends EventEmitter {
   		 * @name Stream.flatten()
   		 * @api public
   		 */
-  def flatten(): Stream[R] = js.native
-  @JSName("flatten")
-  def flatten_U[U](): Stream[U] = js.native
+  def flatten[U /* <: Flattened[R] */](): Stream[U] = js.native
   /**
   		 * Forks a stream, allowing you to add additional consumers with shared
   		 * back-pressure. A stream forked to multiple consumers will only pull values
@@ -465,7 +464,7 @@ trait Stream[R] extends EventEmitter {
   		 * _([txt, md]).merge();
   		 * // => contents of foo.txt, bar.txt and baz.txt in the order they were read
   		 */
-  def merge[U](`this`: Stream[Stream[U]]): Stream[U] = js.native
+  def merge[U](): Stream[U] = js.native
   /**
   		 * Observes a stream, allowing you to handle values as they are emitted, without
   		 * adding back-pressure or causing data to be pulled from the source. This can
@@ -500,7 +499,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Number} n - the maximum number of concurrent reads/buffers
   		 * @api public
   		 */
-  def parallel[U](`this`: Stream[Stream[U]], n: Double): Stream[U] = js.native
+  def parallel[U](n: Double): Stream[U] = js.native
   /**
   		 * Pauses the stream. All Highland Streams start in the paused state.
   		 *
@@ -659,7 +658,7 @@ trait Stream[R] extends EventEmitter {
   		 * @name Stream.sequence()
   		 * @api public
   		 */
-  def sequence[U](`this`: Stream[Stream[U]]): Stream[U] = js.native
+  def sequence[U](): Stream[U] = js.native
   /**
   		 * An alias for the [sequence](#sequence) method.
   		 *
@@ -668,7 +667,6 @@ trait Stream[R] extends EventEmitter {
   		 * @name Stream.series()
   		 * @api public
   		 */
-  // TODO figure out typing
   def series[U](): Stream[U] = js.native
   /**
   		 * Like the [errors](#errors) method, but emits a Stream end marker after

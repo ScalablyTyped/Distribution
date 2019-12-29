@@ -1,6 +1,5 @@
 package typings.reservoir
 
-import typings.reservoir.reservoirMod.ReservoirArray
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

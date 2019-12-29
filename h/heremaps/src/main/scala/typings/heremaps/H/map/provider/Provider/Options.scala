@@ -1,5 +1,6 @@
 package typings.heremaps.H.map.provider.Provider
 
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.ICopyright
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +15,7 @@ import scala.scalajs.js.annotation._
   * @property getCopyrights {(function(H.geo.Rect, number): ?Array<H.map.ICopyright>)=} - A function to replace the default implementation of H.map.provider.Provider#getCopyrights
   */
 trait Options extends js.Object {
-  var getCopyrights: js.UndefOr[
-    js.Function2[/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double, js.Array[ICopyright]]
-  ] = js.undefined
+  var getCopyrights: js.UndefOr[js.Function2[/* rect */ Rect, /* n */ Double, js.Array[ICopyright]]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
   var uri: js.UndefOr[String] = js.undefined
@@ -25,7 +24,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    getCopyrights: (/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double) => js.Array[ICopyright] = null,
+    getCopyrights: (/* rect */ Rect, /* n */ Double) => js.Array[ICopyright] = null,
     max: Int | Double = null,
     min: Int | Double = null,
     uri: String = null

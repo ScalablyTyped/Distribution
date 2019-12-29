@@ -3,13 +3,8 @@ package typings.milkcocoa.milkcocoa
 import org.scalablytyped.runtime.TopLevel
 import typings.milkcocoa.Anon_Id
 import typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount
-import typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount.AlreadyExist
-import typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount.FormatError
 import typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser
-import typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser.NotLoggedIn
 import typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login
-import typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.EmailNotVerificated
-import typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.LoginError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,8 +93,7 @@ object MilkCocoa extends js.Object {
       object EmailNotVerificated extends TopLevel[EmailNotVerificated with Double]
       
       /* 0 */ @js.native
-      object FormatError
-        extends TopLevel[typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.FormatError with Double]
+      object FormatError extends TopLevel[FormatError with Double]
       
       /* 1 */ @js.native
       object LoginError extends TopLevel[LoginError with Double]

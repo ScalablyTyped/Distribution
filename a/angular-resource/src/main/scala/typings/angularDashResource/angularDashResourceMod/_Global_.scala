@@ -1,7 +1,6 @@
 package typings.angularDashResource.angularDashResourceMod
 
 import typings.angular.angularMod.IPromise
-import typings.angularDashResource.angularDashResourceMod._Global_.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,8 @@ class AddressRuleCondition protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: Boolean = js.native
-  var `Outlook.AddressRuleCondition_typekey`: AddressRuleCondition = js.native
+  @JSName("Outlook.AddressRuleCondition_typekey")
+  var OutlookDotAddressRuleCondition_typekey: AddressRuleCondition = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

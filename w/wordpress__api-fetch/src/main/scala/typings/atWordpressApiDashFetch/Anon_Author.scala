@@ -1,6 +1,6 @@
 package typings.atWordpressApiDashFetch
 
-import typings.atWordpressApiDashFetch.atWordpressApiDashFetchNumbers.`true`
+import typings.atWordpressApiDashFetch.atWordpressApiDashFetchBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

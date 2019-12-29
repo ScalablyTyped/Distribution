@@ -13,7 +13,7 @@ trait CellDoubleClickEventArgs extends js.Object {
   var endTime: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the object of the resource.
     */
   var resources: js.UndefOr[js.Any] = js.undefined
@@ -33,7 +33,7 @@ object CellDoubleClickEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     endTime: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     resources: js.Any = null,
     startTime: js.Any = null,
     target: js.Any = null,

@@ -1,12 +1,6 @@
 package typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus
 
 import org.scalablytyped.runtime.TopLevel
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.ErrorTypeCase.DESERIALIZATION
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.ErrorTypeCase.ERRORTYPE_NOT_SET
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.ErrorTypeCase.EXECUTION
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.ErrorTypeCase.INVARIANT_VIOLATION
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.ErrorTypeCase.VALIDATION
-import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.ErrorTypeCase.VERIFICATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

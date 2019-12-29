@@ -1,10 +1,6 @@
 package typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberFormat.E164
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberFormat.INTERNATIONAL
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberFormat.NATIONAL
-import typings.intlDashTelDashInput.intlDashTelDashInputMod._Global_.intlTelInputUtils.numberFormat.RFC3966
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

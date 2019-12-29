@@ -1,7 +1,7 @@
 package typings.atAwsDashSdkClientDashGlacierDashNode.typesUnderscoreEncryptionMod
 
 import typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.AES256
-import typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.`aws:kms`
+import typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.awsColonkms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait _Encryption extends js.Object {
   /**
     * <p>The server-side encryption algorithm used when storing job results in Amazon S3, for example <code>AES256</code> or <code>aws:kms</code>.</p>
     */
-  var EncryptionType: js.UndefOr[`aws:kms` | AES256 | String] = js.undefined
+  var EncryptionType: js.UndefOr[awsColonkms | AES256 | String] = js.undefined
   /**
     * <p>Optional. If the encryption type is <code>aws:kms</code>, you can use this value to specify the encryption context for the job results.</p>
     */
@@ -24,7 +24,7 @@ trait _Encryption extends js.Object {
 object _Encryption {
   @scala.inline
   def apply(
-    EncryptionType: `aws:kms` | AES256 | String = null,
+    EncryptionType: awsColonkms | AES256 | String = null,
     KMSContext: String = null,
     KMSKeyId: String = null
   ): _Encryption = {

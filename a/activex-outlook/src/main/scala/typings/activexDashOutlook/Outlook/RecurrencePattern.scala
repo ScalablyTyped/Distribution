@@ -20,7 +20,8 @@ class RecurrencePattern protected () extends js.Object {
   var MonthOfYear: Double = js.native
   var NoEndDate: Boolean = js.native
   var Occurrences: Double = js.native
-  var `Outlook.RecurrencePattern_typekey`: RecurrencePattern = js.native
+  @JSName("Outlook.RecurrencePattern_typekey")
+  var OutlookDotRecurrencePattern_typekey: RecurrencePattern = js.native
   val Parent: js.Any = js.native
   var PatternEndDate: VarDate = js.native
   var PatternStartDate: VarDate = js.native

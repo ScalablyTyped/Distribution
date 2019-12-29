@@ -1,7 +1,6 @@
 package typings.chrome.chrome
 
 import typings.chrome.chrome.events.Event
-import typings.chrome.chrome.idle.IdleStateChangedEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

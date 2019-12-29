@@ -1,9 +1,6 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendEquation.ADD
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendEquation.REVERSE_SUBTRAC
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendEquation.SUBTRACT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

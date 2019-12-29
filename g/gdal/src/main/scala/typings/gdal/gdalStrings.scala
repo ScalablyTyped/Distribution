@@ -37,7 +37,7 @@ object gdalStrings {
   sealed trait r extends js.Object
   
   @js.native
-  sealed trait `r+` extends js.Object
+  sealed trait rPlussign extends js.Object
   
   @js.native
   sealed trait w extends js.Object
@@ -63,7 +63,7 @@ object gdalStrings {
   @scala.inline
   def r: r = "r".asInstanceOf[r]
   @scala.inline
-  def `r+`: `r+` = "r+".asInstanceOf[`r+`]
+  def rPlussign: rPlussign = "r+".asInstanceOf[rPlussign]
   @scala.inline
   def w: w = "w".asInstanceOf[w]
 }

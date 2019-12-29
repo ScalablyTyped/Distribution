@@ -2,8 +2,6 @@ package typings.reactDashDnd
 
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.RefObject
-import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
-import typings.reactDashDnd.libInterfacesConnectorsMod.DragElementWrapper
 import typings.reactDashDnd.libInterfacesOptionsMod.DragPreviewOptions
 import typings.reactDashDnd.libInterfacesOptionsMod.DragSourceOptions
 import typings.std.Element

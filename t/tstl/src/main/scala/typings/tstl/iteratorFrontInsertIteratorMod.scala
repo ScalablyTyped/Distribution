@@ -2,7 +2,6 @@ package typings.tstl
 
 import typings.tstl.baseDisposableIPartialContainersMod._IPushFront
 import typings.tstl.baseIteratorUnderscoreInsertIteratorMod._InsertIterator
-import typings.tstl.iteratorFrontInsertIteratorMod.FrontInsertIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

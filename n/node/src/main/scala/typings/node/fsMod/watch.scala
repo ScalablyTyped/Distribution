@@ -13,25 +13,22 @@ import scala.scalajs.js.annotation._
 @js.native
 object watch extends js.Object {
   def apply(filename: PathLike): FSWatcher = js.native
-  def apply(
-    filename: PathLike,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
-  ): FSWatcher = js.native
+  def apply(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
   def apply(
     filename: PathLike,
     options: js.UndefOr[scala.Nothing],
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, Unit]
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
   ): FSWatcher = js.native
-  def apply(filename: PathLike, options: java.lang.String): FSWatcher = js.native
+  def apply(filename: PathLike, options: String): FSWatcher = js.native
   def apply(
     filename: PathLike,
-    options: java.lang.String,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String | Buffer, Unit]
+    options: String,
+    listener: js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]
   ): FSWatcher = js.native
   def apply(
     filename: PathLike,
     options: Null,
-    listener: js.Function2[/* event */ java.lang.String, Buffer | (/* filename */ java.lang.String), Unit]
+    listener: js.Function2[/* event */ String, Buffer | String, Unit]
   ): FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
@@ -46,7 +43,7 @@ object watch extends js.Object {
   def apply(
     filename: PathLike,
     options: Anon_BufferEncodingPersistent,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ Buffer, Unit]
+    listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
   ): FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
@@ -71,18 +68,18 @@ object watch extends js.Object {
   def apply(
     filename: PathLike,
     options: Anon_EncodingPersistentRecursive,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String | Buffer, Unit]
+    listener: js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]
   ): FSWatcher = js.native
   def apply(
     filename: PathLike,
     options: Anon_EncodingPersistent,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, Unit]
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
   ): FSWatcher = js.native
   def apply(filename: PathLike, options: BufferEncoding): FSWatcher = js.native
   def apply(
     filename: PathLike,
     options: BufferEncoding,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, Unit]
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
   ): FSWatcher = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.pDashLimit
 
-import typings.pDashLimit.pDashLimitMod.Limit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

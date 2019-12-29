@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-loaded`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.failed
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
@@ -18,7 +17,19 @@ trait WebScene
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#applicationProperties)
     */
-  var applicationProperties: ApplicationProperties = js.native
+  var applicationProperties: websceneApplicationProperties = js.native
+  /**
+    * The name of the application that authored the WebScene.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringApp)
+    */
+  var authoringApp: String = js.native
+  /**
+    * The version of the application that authored the WebScene.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringAppVersion)
+    */
+  var authoringAppVersion: String = js.native
   /**
     * *This property only applies to local scenes.* Represents an optional clipping area used to define the bounds or [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of a local scene. If defined, only data (including the basemap) within the area will be displayed.  Set the [clippingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingEnabled) property to `true` to apply the specified clippingArea to the view.
     *
@@ -108,7 +119,7 @@ trait WebScene
     *
     *
     */
-  def load(): IPromise[_] = js.native
+  def load(): js.Promise[_] = js.native
   /**
     * Loads all the externally loadable resources associated with the webscene. For the webscene this will load the ground, basemap, layers and slide basemaps.
     *
@@ -116,7 +127,7 @@ trait WebScene
     *
     *
     */
-  def loadAll(): IPromise[WebScene] = js.native
+  def loadAll(): js.Promise[WebScene] = js.native
   /**
     * Saves the webscene to its associated portal item. The portal item to save to must already exist and be valid. This is a convenience method that will use [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#update) to store the webscene in the item. The web scene is saved according to [web scene specification](https://developers.arcgis.com/web-scene-specification/) standards.  Use [updateFrom](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom) to store the current view properties in the webscene before saving it.  Note that this saves the webscene to its existing item. Depending on how the scene is shared, users that do not own the scene may modify it. To save an existing scene as a new item owned by the user signed into the portal instance, use [saveAs()](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#saveAs).  The webscene will be automatically loaded if it is not already before saving.
     *
@@ -126,8 +137,8 @@ trait WebScene
     * @param options.ignoreUnsupported When `true`, the scene will save even if it contains unsupported content (layers, renderers, symbols). Any content that is not supported will not be saved and the scene may appear different when reloaded from its portal item.
     *
     */
-  def save(): IPromise[PortalItem] = js.native
-  def save(options: WebSceneSaveOptions): IPromise[PortalItem] = js.native
+  def save(): js.Promise[PortalItem] = js.native
+  def save(options: WebSceneSaveOptions): js.Promise[PortalItem] = js.native
   /**
     * Saves the webscene to a new portal item. If saving has completed successfully, then the saved portal item will be set in the portalItem property of the WebScene. This is a convenience method that will create a new [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html) and use [PortalUser.addItem()](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#addItem) to store the webscene in a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).  Use [updateFrom](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom) to store the current view properties in the webscene before saving it.  Note that this always saves the webscene as a new portal item owned by the user performing the edits and executing the `saveAs()` method. If you want to modify the existing item without changing its ownership use [save()](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#save).  The webscene will be automatically loaded if it is not already before saving.
     *
@@ -139,10 +150,10 @@ trait WebScene
     * @param options.ignoreUnsupported allow the scene to be saved even in the case it contains unsupported content (layers, renderers, symbols). Any content that is not supported will not be saved and the scene may appear different when reloaded from its portal item.
     *
     */
-  def saveAs(portalItem: PortalItem): IPromise[PortalItem] = js.native
-  def saveAs(portalItem: PortalItemProperties): IPromise[PortalItem] = js.native
-  def saveAs(portalItem: PortalItemProperties, options: WebSceneSaveAsOptions): IPromise[PortalItem] = js.native
-  def saveAs(portalItem: PortalItem, options: WebSceneSaveAsOptions): IPromise[PortalItem] = js.native
+  def saveAs(portalItem: PortalItem): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: PortalItemProperties): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: PortalItemProperties, options: WebSceneSaveAsOptions): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: PortalItem, options: WebSceneSaveAsOptions): js.Promise[PortalItem] = js.native
   /**
     * Converts an instance of [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide and the [web scene specification](https://developers.arcgis.com/web-scene-specification/) for more information.
     *
@@ -164,8 +175,8 @@ trait WebScene
     * @param options.thumbnailSize The size of the thumbnail. Defaults to 600x400 (ratio 1.5:1). Note that the thumbnail size may currently not be larger than the size of the view.
     *
     */
-  def updateFrom(view: SceneView): IPromise[_] = js.native
-  def updateFrom(view: SceneView, options: WebSceneUpdateFromOptions): IPromise[_] = js.native
+  def updateFrom(view: SceneView): js.Promise[_] = js.native
+  def updateFrom(view: SceneView, options: WebSceneUpdateFromOptions): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.WebScene")

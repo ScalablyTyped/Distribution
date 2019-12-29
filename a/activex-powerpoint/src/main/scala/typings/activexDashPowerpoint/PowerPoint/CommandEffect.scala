@@ -10,7 +10,8 @@ class CommandEffect protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   var Command: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.CommandEffect_typekey`: CommandEffect = js.native
+  @JSName("PowerPoint.CommandEffect_typekey")
+  var PowerPointDotCommandEffect_typekey: CommandEffect = js.native
   var Type: MsoAnimCommandType = js.native
   var bookmark: String = js.native
 }

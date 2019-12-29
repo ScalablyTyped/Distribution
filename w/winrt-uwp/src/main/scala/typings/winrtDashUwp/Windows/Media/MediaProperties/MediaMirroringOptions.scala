@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.horizontal
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.none
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

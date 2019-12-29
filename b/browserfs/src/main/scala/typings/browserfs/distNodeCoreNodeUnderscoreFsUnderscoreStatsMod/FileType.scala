@@ -1,9 +1,6 @@
 package typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod.FileType.DIRECTORY
-import typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod.FileType.FILE
-import typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod.FileType.SYMLINK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

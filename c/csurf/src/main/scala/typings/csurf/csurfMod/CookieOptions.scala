@@ -1,5 +1,8 @@
 package typings.csurf.csurfMod
 
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.lax
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.none
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreStrings.strict
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +23,7 @@ object CookieOptions {
     key: String = null,
     maxAge: Int | Double = null,
     path: String = null,
-    sameSite: Boolean | String = null,
+    sameSite: Boolean | lax | strict | none = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     signed: js.UndefOr[Boolean] = js.undefined
   ): CookieOptions = {

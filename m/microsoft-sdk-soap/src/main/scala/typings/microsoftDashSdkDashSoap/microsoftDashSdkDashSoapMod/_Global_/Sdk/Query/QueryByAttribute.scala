@@ -14,7 +14,7 @@ class QueryByAttribute protected () extends QueryBase {
     * @param entityName The logical name of the entity.
     *
     */
-  def this(entityName: java.lang.String) = this()
+  def this(entityName: String) = this()
   /// prototype methods
   /**
     * Adds the attribute with values to include in the query.
@@ -36,7 +36,7 @@ class QueryByAttribute protected () extends QueryBase {
     * @param errorIfNotFound Whether to throw an error when the attribute to remove is not found. The default is false.
     */
   def removeAttributeValue(attributeValue: AttributeBase): Unit = js.native
-  def removeAttributeValue(attributeValue: AttributeBase, errorIfNotFound: scala.Boolean): Unit = js.native
+  def removeAttributeValue(attributeValue: AttributeBase, errorIfNotFound: Boolean): Unit = js.native
   /**
     * Sets an Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
     * @param orders An Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.

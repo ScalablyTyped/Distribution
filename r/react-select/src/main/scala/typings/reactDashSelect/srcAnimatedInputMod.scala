@@ -2,7 +2,6 @@ package typings.reactDashSelect
 
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Ref
-import typings.reactDashSelect.srcAnimatedInputMod.AnimatedInputProps
 import typings.reactDashSelect.srcAnimatedTransitionsMod.fn
 import typings.reactDashSelect.srcComponentsInputMod.InputProps
 import typings.reactDashSelect.srcTypesMod.ClassNamesState

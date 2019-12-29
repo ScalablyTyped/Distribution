@@ -1,6 +1,5 @@
 package typings.keya
 
-import typings.keya.outNodeSqliteMod.SQLiteStore
 import typings.sqlite.sqliteMod.Database
 import scala.scalajs.js
 import scala.scalajs.js.`|`

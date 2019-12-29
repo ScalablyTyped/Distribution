@@ -123,7 +123,7 @@ object styledDashComponentsStrings {
   sealed trait disk extends js.Object
   
   @js.native
-  sealed trait `disk/memory` extends js.Object
+  sealed trait diskSlashmemory extends js.Object
   
   @js.native
   sealed trait div extends js.Object
@@ -624,7 +624,7 @@ object styledDashComponentsStrings {
   @scala.inline
   def disk: disk = "disk".asInstanceOf[disk]
   @scala.inline
-  def `disk/memory`: `disk/memory` = "disk/memory".asInstanceOf[`disk/memory`]
+  def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline

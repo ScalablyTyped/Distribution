@@ -24,7 +24,8 @@ class TableStyle protected () extends js.Object {
   var Spacing: Double = js.native
   var TableDirection: WdTableDirection = js.native
   var TopPadding: Double = js.native
-  var `Word.TableStyle_typekey`: TableStyle = js.native
+  @JSName("Word.TableStyle_typekey")
+  var WordDotTableStyle_typekey: TableStyle = js.native
   def Condition(ConditionCode: WdConditionCode): ConditionalStyle = js.native
 }
 

@@ -1,11 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupTypes.Channel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupTypes.ChannelClient
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupTypes.ChannelGroup
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupTypes.GlobalClient
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.PermissionGroupTypes.ServerGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

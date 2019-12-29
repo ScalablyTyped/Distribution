@@ -1,9 +1,6 @@
 package typings.sipDotJs.libApiUserDashAgentDashOptionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Required
-import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Supported
-import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

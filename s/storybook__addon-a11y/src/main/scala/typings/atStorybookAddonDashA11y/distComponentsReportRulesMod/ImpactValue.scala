@@ -1,10 +1,6 @@
 package typings.atStorybookAddonDashA11y.distComponentsReportRulesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.CRITICAL
-import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.MINOR
-import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.MODERATE
-import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.SERIOUS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

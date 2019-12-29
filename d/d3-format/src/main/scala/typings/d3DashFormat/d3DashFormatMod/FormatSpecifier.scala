@@ -1,18 +1,18 @@
 package typings.d3DashFormat.d3DashFormatMod
 
-import typings.d3DashFormat.d3DashFormatStrings.DOLLAR
-import typings.d3DashFormat.d3DashFormatStrings.Empty
+import typings.d3DashFormat.d3DashFormatStrings.$
+import typings.d3DashFormat.d3DashFormatStrings.Equalssign
+import typings.d3DashFormat.d3DashFormatStrings.Greaterthansign
+import typings.d3DashFormat.d3DashFormatStrings.Leftparenthesis
+import typings.d3DashFormat.d3DashFormatStrings.Lessthansign
+import typings.d3DashFormat.d3DashFormatStrings.Numbersign
+import typings.d3DashFormat.d3DashFormatStrings.Percentsign
+import typings.d3DashFormat.d3DashFormatStrings.Plussign
+import typings.d3DashFormat.d3DashFormatStrings.Space
 import typings.d3DashFormat.d3DashFormatStrings.X
-import typings.d3DashFormat.d3DashFormatStrings.` `
-import typings.d3DashFormat.d3DashFormatStrings.`#`
-import typings.d3DashFormat.d3DashFormatStrings.`%`
-import typings.d3DashFormat.d3DashFormatStrings.`(`
-import typings.d3DashFormat.d3DashFormatStrings.`+`
-import typings.d3DashFormat.d3DashFormatStrings.`-`
-import typings.d3DashFormat.d3DashFormatStrings.`<`
-import typings.d3DashFormat.d3DashFormatStrings.`=`
-import typings.d3DashFormat.d3DashFormatStrings.`>`
-import typings.d3DashFormat.d3DashFormatStrings.`_backtick^_backtick`
+import typings.d3DashFormat.d3DashFormatStrings.^
+import typings.d3DashFormat.d3DashFormatStrings._empty
+import typings.d3DashFormat.d3DashFormatStrings.`-_`
 import typings.d3DashFormat.d3DashFormatStrings.b
 import typings.d3DashFormat.d3DashFormatStrings.c
 import typings.d3DashFormat.d3DashFormatStrings.d
@@ -38,7 +38,7 @@ trait FormatSpecifier extends js.Object {
     * '^' - Forces the field to be centered within the available space.
     * '=' - Like '>', but with any sign and symbol to the left of any padding.
     */
-  var align: `>` | `<` | `_backtick^_backtick` | `=`
+  var align: Greaterthansign | Lessthansign | ^  | Equalssign
   /**
     * The comma (,) option enables the use of a group separator, such as a comma for thousands.
     */
@@ -65,7 +65,7 @@ trait FormatSpecifier extends js.Object {
     * ' ' (space) - a space for positive and a minus sign for negative.
     *
     */
-  var sign: `-` | `+` | `(` | (` `)
+  var sign: `-_` | Plussign | Leftparenthesis | Space
   /**
     * The symbol can be:
     *
@@ -73,7 +73,7 @@ trait FormatSpecifier extends js.Object {
     * '#' - for binary, octal, or hexadecimal notation, prefix by 0b, 0o, or 0x, respectively.
     * '' (none) - no symbol. (Default behavior.)
     */
-  var symbol: DOLLAR | `#` | Empty
+  var symbol: $ | Numbersign | _empty
   /**
     * The '~' option trims insignificant trailing zeros across all format types.
     * This is most commonly used in conjunction with types 'r', 'e', 's' and '%'.
@@ -100,7 +100,7 @@ trait FormatSpecifier extends js.Object {
     * the type 'n' is shorthand for ',g'. For the 'g', 'n' and '' (none) types,
     * decimal notation is used if the resulting string would have precision or fewer digits; otherwise, exponent notation is used.
     */
-  var `type`: e | f | g | r | s | `%` | p | b | o | d | x_ | X | c | Empty | n
+  var `type`: e | f | g | r | s | Percentsign | p | b | o | d | x_ | X | c | _empty | n
   /**
     * The width defines the minimum field width;
     * if not specified, then the width will be determined by the content.
@@ -115,13 +115,13 @@ trait FormatSpecifier extends js.Object {
 object FormatSpecifier {
   @scala.inline
   def apply(
-    align: `>` | `<` | `_backtick^_backtick` | `=`,
+    align: Greaterthansign | Lessthansign | ^  | Equalssign,
     comma: Boolean,
     fill: String,
-    sign: `-` | `+` | `(` | (` `),
-    symbol: DOLLAR | `#` | Empty,
+    sign: `-_` | Plussign | Leftparenthesis | Space,
+    symbol: $ | Numbersign | _empty,
     trim: Boolean,
-    `type`: e | f | g | r | s | `%` | p | b | o | d | x_ | X | c | Empty | n,
+    `type`: e | f | g | r | s | Percentsign | p | b | o | d | x_ | X | c | _empty | n,
     zero: Boolean,
     precision: Int | Double = null,
     width: Int | Double = null

@@ -13,6 +13,11 @@ trait GROOVY_KEYWORDS extends js.Object {
   /**
     *
     */
+  @JSName("package")
+  var _package: Double
+  /**
+    *
+    */
   var `abstract`: Double
   /**
     *
@@ -137,10 +142,6 @@ trait GROOVY_KEYWORDS extends js.Object {
   /**
     *
     */
-  var `package`: Double
-  /**
-    *
-    */
   var `private`: Double
   /**
     *
@@ -219,6 +220,7 @@ trait GROOVY_KEYWORDS extends js.Object {
 object GROOVY_KEYWORDS {
   @scala.inline
   def apply(
+    _package: Double,
     `abstract`: Double,
     assert: Double,
     boolean: Double,
@@ -250,7 +252,6 @@ object GROOVY_KEYWORDS {
     long: Double,
     native: Double,
     `new`: Double,
-    `package`: Double,
     `private`: Double,
     `protected`: Double,
     public: Double,
@@ -272,6 +273,7 @@ object GROOVY_KEYWORDS {
     `while`: Double
   ): GROOVY_KEYWORDS = {
     val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], break = break.asInstanceOf[js.Any], byte = byte.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], const = const.asInstanceOf[js.Any], continue = continue.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], goto = goto.asInstanceOf[js.Any], implements = implements.asInstanceOf[js.Any], instanceof = instanceof.asInstanceOf[js.Any], int = int.asInstanceOf[js.Any], interface = interface.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], strictfp = strictfp.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], synchronized = synchronized.asInstanceOf[js.Any], throws = throws.asInstanceOf[js.Any], transient = transient.asInstanceOf[js.Any], void = void.asInstanceOf[js.Any], volatile = volatile.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.updateDynamic("case")(`case`.asInstanceOf[js.Any])
     __obj.updateDynamic("catch")(`catch`.asInstanceOf[js.Any])
@@ -287,7 +289,6 @@ object GROOVY_KEYWORDS {
     __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
     __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
     __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
-    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])

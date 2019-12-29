@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.BadRequest
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.InvalidResolution
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.NotFound
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.Succeeded
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.UnsupportedConflictType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

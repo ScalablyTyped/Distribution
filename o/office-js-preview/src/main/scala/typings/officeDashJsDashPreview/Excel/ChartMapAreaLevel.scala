@@ -1,14 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.automatic
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.city
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.continent
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.country
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.county
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.dataOnly
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.state
-import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.world
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

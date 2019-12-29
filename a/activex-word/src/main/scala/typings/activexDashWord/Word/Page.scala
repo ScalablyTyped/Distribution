@@ -17,6 +17,7 @@ class Page protected () extends js.Object {
   val Rectangles: typings.activexDashWord.Word.Rectangles = js.native
   val Top: Double = js.native
   val Width: Double = js.native
-  var `Word.Page_typekey`: Page = js.native
+  @JSName("Word.Page_typekey")
+  var WordDotPage_typekey: Page = js.native
 }
 

@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`credential-create`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`dialog-create`
 import scala.scalajs.js
@@ -35,7 +34,7 @@ trait IdentityManager extends Evented {
     */
   var useSignInPage: Boolean = js.native
   /**
-    * Returns the [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) if the user has already signed in to access the given resource and is allowed to do so when using the given application id. If the user has not signed in or does not have access, then the promise will be rejected and its error callback will be called.
+    * Returns a [credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) if the user has already signed in to access the given resource and is allowed to do so when using the given application id. In addition, it also returns a `boolean`, `viewOnly`, property that indicates whether the app is only viewable. The default is `false`. If the user has not signed in or does not have access, then the promise will be rejected and its error callback will be called.
     * > This scenario is generally not common unless you are building a licensed app. Also, please note that this method should only be used if your application is on the same domain as `*.arcgis.com` or ArcGIS Enterprise Server and is only applicable to applications registered as items in the `Esri` organization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#checkAppAccess)
@@ -44,7 +43,7 @@ trait IdentityManager extends Evented {
     * @param appId The registered OAuth application id.
     *
     */
-  def checkAppAccess(resUrl: String, appId: String): IPromise[_] = js.native
+  def checkAppAccess(resUrl: String, appId: String): js.Promise[_] = js.native
   /**
     * Returns the [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) if the user has already signed in to access the given resource. If the user has not signed in, then the promise will be rejected and its error callback will be called.
     *
@@ -53,7 +52,7 @@ trait IdentityManager extends Evented {
     * @param resUrl The resource URL.
     *
     */
-  def checkSignInStatus(resUrl: String): IPromise[Credential] = js.native
+  def checkSignInStatus(resUrl: String): js.Promise[Credential] = js.native
   /**
     * Destroys all credentials. It is good practice to call this method if working with an application that contains sign-out functionality as any tokens generated via OAuth will automatically be revoked.
     *
@@ -104,8 +103,8 @@ trait IdentityManager extends Evented {
     * @param options.ssl Indicates if the server requires SSL.
     *
     */
-  def generateToken(serverInfo: ServerInfo, userInfo: js.Any): IPromise[_] = js.native
-  def generateToken(serverInfo: ServerInfo, userInfo: js.Any, options: IdentityManagerGenerateTokenOptions): IPromise[_] = js.native
+  def generateToken(serverInfo: ServerInfo, userInfo: js.Any): js.Promise[_] = js.native
+  def generateToken(serverInfo: ServerInfo, userInfo: js.Any, options: IdentityManagerGenerateTokenOptions): js.Promise[_] = js.native
   /**
     * Returns a [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) object that can be used to access the secured resource identified by the input URL.
     *
@@ -118,8 +117,8 @@ trait IdentityManager extends Evented {
     * @param options.token Token used for a previous unsuccessful attempt to fetch the given URL.
     *
     */
-  def getCredential(url: String): IPromise[Credential] = js.native
-  def getCredential(url: String, options: IdentityManagerGetCredentialOptions): IPromise[Credential] = js.native
+  def getCredential(url: String): js.Promise[Credential] = js.native
+  def getCredential(url: String, options: IdentityManagerGetCredentialOptions): js.Promise[Credential] = js.native
   /**
     * Call this method during application initialization with the JSON previously obtained from the [toJSON()](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#toJSON) method used to re-hydrate the state of IdentityManager.
     *

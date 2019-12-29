@@ -13,7 +13,7 @@ trait OnImportEventArgs extends js.Object {
   var importData: js.UndefOr[js.Any] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object OnImportEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     importData: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     `type`: String = null
   ): OnImportEventArgs = {
     val __obj = js.Dynamic.literal()

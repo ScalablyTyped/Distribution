@@ -1,16 +1,5 @@
 package typings.asciiDashArt
 
-import typings.asciiDashArt.asciiDashArtMod.Art
-import typings.asciiDashArt.asciiDashArtMod.ArtworkType
-import typings.asciiDashArt.asciiDashArtMod.Cb
-import typings.asciiDashArt.asciiDashArtMod.FontType
-import typings.asciiDashArt.asciiDashArtMod.ImageType
-import typings.asciiDashArt.asciiDashArtMod.JoinType
-import typings.asciiDashArt.asciiDashArtMod.LinesType
-import typings.asciiDashArt.asciiDashArtMod.OverlayType
-import typings.asciiDashArt.asciiDashArtMod.StringsType
-import typings.asciiDashArt.asciiDashArtMod.StyleType
-import typings.asciiDashArt.asciiDashArtMod.TableType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

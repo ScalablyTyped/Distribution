@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.empty
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.headCleaning
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.nearEnd
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.none
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

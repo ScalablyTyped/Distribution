@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.fancybox.fancyboxNumbers.`false`
+  - typings.fancybox.fancyboxBooleans.`false`
   - typings.fancybox.fancyboxStrings.close
   - typings.fancybox.fancyboxStrings.next
   - typings.fancybox.fancyboxStrings.nextOrClose
@@ -20,7 +20,7 @@ object FancyBoxInteractionTypes {
   @scala.inline
   def close: typings.fancybox.fancyboxStrings.close = this.cast("close")
   @scala.inline
-  def `false`: typings.fancybox.fancyboxNumbers.`false` = this.cast(false)
+  def `false`: typings.fancybox.fancyboxBooleans.`false` = this.cast(false)
   @scala.inline
   def next: typings.fancybox.fancyboxStrings.next = this.cast("next")
   @scala.inline

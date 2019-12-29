@@ -1,10 +1,6 @@
 package typings.googleDashLibphonenumber.libphonenumber
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberFormat.E164
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberFormat.INTERNATIONAL
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberFormat.NATIONAL
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberFormat.RFC3966
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

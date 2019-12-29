@@ -7,7 +7,7 @@ import typings.phaser.Phaser.Types.Core.LoaderConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileConfig
 import typings.phaser.integer
-import typings.phaser.phaserNumbers.`false`
+import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -52,7 +52,7 @@ trait Http2Stream extends Duplex {
   @JSName("emit")
   def emit_aborted(event: typings.node.nodeStrings.aborted): Boolean = js.native
   @JSName("emit")
-  def emit_data(event: data, chunk: java.lang.String): Boolean = js.native
+  def emit_data(event: data, chunk: String): Boolean = js.native
   @JSName("emit")
   def emit_data(event: data, chunk: Buffer): Boolean = js.native
   @JSName("emit")

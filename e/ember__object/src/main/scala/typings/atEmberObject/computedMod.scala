@@ -1,6 +1,5 @@
 package typings.atEmberObject
 
-import typings.atEmberObject.computedMod.ComputedProperty
 import typings.std.PropertyDecorator
 import typings.std.RegExp
 import scala.scalajs.js

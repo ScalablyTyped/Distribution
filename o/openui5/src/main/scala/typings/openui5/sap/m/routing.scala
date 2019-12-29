@@ -1,8 +1,5 @@
 package typings.openui5.sap.m
 
-import typings.openui5.sap.m.routing.RouteMatchedHandler
-import typings.openui5.sap.m.routing.Router
-import typings.openui5.sap.m.routing.TargetHandler
 import typings.openui5.sap.ui.base.Metadata
 import typings.openui5.sap.ui.core.UIComponent
 import scala.scalajs.js

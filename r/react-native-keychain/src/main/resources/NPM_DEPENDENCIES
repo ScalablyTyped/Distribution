@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-keychain" : "4.0.4"
+      "react-native-keychain" : "4.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-keychain" : "4.0.4"
+      "react-native-keychain" : "4.0.5"
     }
   ],
   "compile-devDependencies" : [

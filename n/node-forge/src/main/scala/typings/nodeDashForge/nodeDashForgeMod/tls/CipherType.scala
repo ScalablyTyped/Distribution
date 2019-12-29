@@ -1,9 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.aead
-import typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.block
-import typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

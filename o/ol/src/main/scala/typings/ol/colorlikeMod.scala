@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.colorMod.Color
-import typings.ol.colorlikeMod.ColorLike
 import typings.std.CanvasGradient
 import typings.std.CanvasPattern
 import scala.scalajs.js

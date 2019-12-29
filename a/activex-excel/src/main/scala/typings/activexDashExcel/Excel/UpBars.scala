@@ -10,7 +10,8 @@ class UpBars protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.UpBars_typekey`: UpBars = js.native
+  @JSName("Excel.UpBars_typekey")
+  var ExcelDotUpBars_typekey: UpBars = js.native
   val Fill: ChartFillFormat = js.native
   val Format: ChartFormat = js.native
   val Interior: typings.activexDashExcel.Excel.Interior = js.native

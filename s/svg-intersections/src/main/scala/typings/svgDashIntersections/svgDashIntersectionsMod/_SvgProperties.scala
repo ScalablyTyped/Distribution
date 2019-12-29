@@ -8,20 +8,20 @@ trait _SvgProperties[T /* <: SvgElements */] extends js.Object
 
 object _SvgProperties {
   @scala.inline
-  def PolygonProps[T /* <: SvgElements */](points: String): _SvgProperties[T] = {
-    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_SvgProperties[T]]
-  }
-  @scala.inline
   def PathProps[T /* <: SvgElements */](d: String): _SvgProperties[T] = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def EllipseProps[T /* <: SvgElements */](cx: Double, cy: Double, rx: Double, ry: Double): _SvgProperties[T] = {
-    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
+  def CircleProps[T /* <: SvgElements */](cx: Double, cy: Double, r: Double): _SvgProperties[T] = {
+    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_SvgProperties[T]]
+  }
+  @scala.inline
+  def PolygonProps[T /* <: SvgElements */](points: String): _SvgProperties[T] = {
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_SvgProperties[T]]
   }
@@ -46,8 +46,8 @@ object _SvgProperties {
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def CircleProps[T /* <: SvgElements */](cx: Double, cy: Double, r: Double): _SvgProperties[T] = {
-    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
+  def EllipseProps[T /* <: SvgElements */](cx: Double, cy: Double, rx: Double, ry: Double): _SvgProperties[T] = {
+    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_SvgProperties[T]]
   }

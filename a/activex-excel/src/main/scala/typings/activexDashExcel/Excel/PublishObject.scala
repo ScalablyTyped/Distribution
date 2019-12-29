@@ -11,7 +11,8 @@ class PublishObject protected () extends js.Object {
   var AutoRepublish: Boolean = js.native
   val Creator: XlCreator = js.native
   val DivID: String = js.native
-  var `Excel.PublishObject_typekey`: PublishObject = js.native
+  @JSName("Excel.PublishObject_typekey")
+  var ExcelDotPublishObject_typekey: PublishObject = js.native
   var Filename: String = js.native
   var HtmlType: XlHtmlType = js.native
   val Parent: js.Any = js.native

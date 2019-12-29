@@ -3,7 +3,6 @@ package typings.atMaterialMenuDashSurface
 import typings.atMaterialBase.foundationMod.MDCFoundation
 import typings.atMaterialMenuDashSurface.adapterMod.MDCMenuSurfaceAdapter
 import typings.atMaterialMenuDashSurface.constantsMod.Corner
-import typings.atMaterialMenuDashSurface.foundationMod.MDCMenuSurfaceFoundation
 import typings.atMaterialMenuDashSurface.typesMod.MDCMenuDistance
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent

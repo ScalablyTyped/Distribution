@@ -1,18 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.BILLING_INFORMATION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.DIRECTORY_SERVER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.GENDER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.HOBBY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.HOME
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.LANGUAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.MILEAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.OTHER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.PRIORITY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.SENSITIVITY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.USER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.ExtendedField.WORK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

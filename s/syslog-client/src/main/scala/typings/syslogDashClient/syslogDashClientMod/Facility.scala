@@ -1,19 +1,6 @@
 package typings.syslogDashClient.syslogDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.syslogDashClient.syslogDashClientMod.Facility.Alert
-import typings.syslogDashClient.syslogDashClientMod.Facility.Audit
-import typings.syslogDashClient.syslogDashClientMod.Facility.Kernel
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local0
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local1
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local2
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local3
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local4
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local5
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local6
-import typings.syslogDashClient.syslogDashClientMod.Facility.Local7
-import typings.syslogDashClient.syslogDashClientMod.Facility.System
-import typings.syslogDashClient.syslogDashClientMod.Facility.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

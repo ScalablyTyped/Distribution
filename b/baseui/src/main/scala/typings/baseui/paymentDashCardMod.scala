@@ -3,8 +3,6 @@ package typings.baseui
 import typings.baseui.inputMod.InputOverrides
 import typings.baseui.inputMod.InputProps
 import typings.baseui.inputMod.StatefulContainerProps
-import typings.baseui.paymentDashCardMod.PaymentCardProps
-import typings.baseui.paymentDashCardMod.StatefulPaymentCardProps
 import typings.cardDashValidator.Anon_MinLength
 import typings.cardDashValidator.Anon_Month
 import typings.cardDashValidator.cardDashValidatorMod.validExpirationDate

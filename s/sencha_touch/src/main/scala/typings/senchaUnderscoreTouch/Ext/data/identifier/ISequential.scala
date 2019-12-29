@@ -12,7 +12,7 @@ trait ISequential extends ISimple {
   		*/
   var getSeed: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (String) */
-  var prefix: js.UndefOr[java.lang.String] = js.undefined
+  var prefix: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var seed: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of seed
@@ -31,18 +31,18 @@ object ISequential {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getPrefix: () => java.lang.String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getPrefix: () => String = null,
     getSeed: () => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
-    prefix: java.lang.String = null,
+    prefix: String = null,
     seed: Int | Double = null,
     self: IClass = null,
-    setPrefix: /* prefix */ js.UndefOr[java.lang.String] => Unit = null,
+    setPrefix: /* prefix */ js.UndefOr[String] => Unit = null,
     setSeed: /* seed */ js.UndefOr[Double] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,

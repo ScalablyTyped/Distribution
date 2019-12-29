@@ -2,6 +2,7 @@ package typings.extjs.Ext.form
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IElement
+import typings.extjs.Ext.container.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,9 @@ import scala.scalajs.js.annotation._
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange
-- typings.extjs.Ext.form.ILabelable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined activeError, activeErrorsTpl, afterBodyEl, afterLabelTextTpl, afterLabelTpl, afterSubTpl, autoFitErrors, baseBodyCls, beforeBodyEl, beforeLabelTextTpl, beforeLabelTpl, beforeSubTpl, clearCls, errorMsgCls, fieldBodyCls, fieldLabel, formItemCls, hideEmptyLabel, hideLabel, invalidCls, labelAlign, labelAttrTpl, labelCls, labelClsExtra, labelPad, labelSeparator, labelStyle, labelWidth, msgTarget, preventMark, bodyEl, errorEl, isFieldLabelable, labelCell, labelEl, getActiveError, getActiveErrors, getFieldLabel, getInputId, getLabelWidth, getLabelableRenderData, getSubTplMarkup, hasActiveError, hasVisibleLabel, initLabelable, setActiveError, setActiveErrors, setFieldDefaults, setFieldLabel, trimLabelSeparator, unsetActiveError */ trait IFieldContainer
-  extends typings.extjs.Ext.container.IContainer {
+- typings.extjs.Ext.form.ILabelable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined activeError, activeErrorsTpl, afterBodyEl, afterLabelTextTpl, afterLabelTpl, afterSubTpl, autoFitErrors, baseBodyCls, beforeBodyEl, beforeLabelTextTpl, beforeLabelTpl, beforeSubTpl, clearCls, errorMsgCls, fieldBodyCls, fieldLabel, formItemCls, hideEmptyLabel, hideLabel, invalidCls, labelAlign, labelAttrTpl, labelCls, labelClsExtra, labelPad, labelSeparator, labelStyle, labelWidth, msgTarget, preventMark, bodyEl, errorEl, isFieldLabelable, labelCell, labelEl, getActiveError, getActiveErrors, getFieldLabel, getInputId, getLabelWidth, getLabelableRenderData, getSubTplMarkup, hasActiveError, hasVisibleLabel, initLabelable, setActiveError, setActiveErrors, setFieldDefaults, setFieldLabel, trimLabelSeparator, unsetActiveError */ trait IFieldContainer extends IContainer {
   /** [Config Option] (String) */
-  var activeError: js.UndefOr[java.lang.String] = js.undefined
+  var activeError: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/String[]/Ext.XTemplate) */
   var activeErrorsTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var autoFitErrors: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var baseBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  var baseBodyCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var beforeBodyEl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
   /** [Property] (Ext.Element) */
   var bodyEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var clearCls: js.UndefOr[java.lang.String] = js.undefined
+  var clearCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var combineErrors: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -47,19 +47,19 @@ import scala.scalajs.js.annotation._
   /** [Property] (Ext.Element) */
   var errorEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var errorMsgCls: js.UndefOr[java.lang.String] = js.undefined
+  var errorMsgCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var fieldBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  var fieldBodyCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var fieldDefaults: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var fieldLabel: js.UndefOr[java.lang.String] = js.undefined
+  var fieldLabel: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var formItemCls: js.UndefOr[java.lang.String] = js.undefined
+  var formItemCls: js.UndefOr[String] = js.undefined
   /** [Method] Gets the active error message for this component if any
   		* @returns String The active error message on the component; if there is no error, an empty string is returned.
   		*/
-  var getActiveError: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getActiveError: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets an Array of any active error messages currently applied to the field
   		* @returns String[] The active error messages on the component; if there are no errors, an empty Array is returned.
   		*/
@@ -72,11 +72,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the combined field label if combineLabels is set to true and if there is no set fieldLabel
   		* @returns String The label, or empty string if none.
   		*/
-  var getFieldLabel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFieldLabel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Get the input id if any for this component
   		* @returns String The input id
   		*/
-  var getInputId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getInputId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets the width of the label if visible
   		* @returns Number The label width
   		*/
@@ -88,7 +88,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Gets the markup to be inserted into the outer template s bodyEl
   		* @returns String The markup to be inserted
   		*/
-  var getSubTplMarkup: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSubTplMarkup: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Tells whether the field currently has an active error message
   		* @returns Boolean
   		*/
@@ -111,33 +111,33 @@ import scala.scalajs.js.annotation._
   @JSName("initRenderData")
   var initRenderData_IFieldContainer: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var invalidCls: js.UndefOr[java.lang.String] = js.undefined
+  var invalidCls: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var isFieldLabelable: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var labelAlign: js.UndefOr[java.lang.String] = js.undefined
+  var labelAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var labelAttrTpl: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Ext.Element) */
   var labelCell: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var labelCls: js.UndefOr[java.lang.String] = js.undefined
+  var labelCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelClsExtra: js.UndefOr[java.lang.String] = js.undefined
+  var labelClsExtra: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelConnector: js.UndefOr[java.lang.String] = js.undefined
+  var labelConnector: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var labelEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (Number) */
   var labelPad: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var labelSeparator: js.UndefOr[java.lang.String] = js.undefined
+  var labelSeparator: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var labelStyle: js.UndefOr[java.lang.String] = js.undefined
+  var labelStyle: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var labelWidth: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var msgTarget: js.UndefOr[java.lang.String] = js.undefined
+  var msgTarget: js.UndefOr[String] = js.undefined
   /** [Method] Called when a Ext form Labelable instance is added to the container s subtree
   		* @param labelable Ext.form.Labelable The instance that was added
   		*/
@@ -148,7 +148,7 @@ import scala.scalajs.js.annotation._
   		* @param error String The new active error message
   		*/
   var onFieldErrorChange: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Fired when the validity of any field within the container changes
   		* @param field Ext.form.field.Field The sub-field whose validity changed
@@ -167,7 +167,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the active error message to the given string
   		* @param msg String The error message
   		*/
-  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Set the active error message to an Array of error messages
   		* @param errors String[] The error messages
   		*/
@@ -179,11 +179,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Set the label of this field
   		* @param label String The new label. The labelSeparator will be automatically appended to the label string.
   		*/
-  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Returns the trimmed label by slicing off the label separator character
   		* @returns String The trimmed field label, or empty string if not defined
   		*/
-  var trimLabelSeparator: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var trimLabelSeparator: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Clears the active error message s */
   var unsetActiveError: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -191,37 +191,37 @@ import scala.scalajs.js.annotation._
 object IFieldContainer {
   @scala.inline
   def apply(
-    IContainer: typings.extjs.Ext.container.IContainer = null,
-    activeError: java.lang.String = null,
+    IContainer: IContainer = null,
+    activeError: String = null,
     activeErrorsTpl: js.Any = null,
     afterBodyEl: js.Any = null,
     afterLabelTextTpl: js.Any = null,
     afterLabelTpl: js.Any = null,
     afterSubTpl: js.Any = null,
     autoFitErrors: js.UndefOr[Boolean] = js.undefined,
-    baseBodyCls: java.lang.String = null,
+    baseBodyCls: String = null,
     beforeBodyEl: js.Any = null,
     beforeLabelTextTpl: js.Any = null,
     beforeLabelTpl: js.Any = null,
     beforeSubTpl: js.Any = null,
     bodyEl: IElement = null,
-    clearCls: java.lang.String = null,
+    clearCls: String = null,
     combineErrors: js.UndefOr[Boolean] = js.undefined,
     combineLabels: js.UndefOr[Boolean] = js.undefined,
     errorEl: IElement = null,
-    errorMsgCls: java.lang.String = null,
-    fieldBodyCls: java.lang.String = null,
+    errorMsgCls: String = null,
+    fieldBodyCls: String = null,
     fieldDefaults: js.Any = null,
-    fieldLabel: java.lang.String = null,
-    formItemCls: java.lang.String = null,
-    getActiveError: () => java.lang.String = null,
+    fieldLabel: String = null,
+    formItemCls: String = null,
+    getActiveError: () => String = null,
     getActiveErrors: () => Array = null,
     getCombinedErrors: /* invalidFields */ js.UndefOr[Array] => Array = null,
-    getFieldLabel: () => java.lang.String = null,
-    getInputId: () => java.lang.String = null,
+    getFieldLabel: () => String = null,
+    getInputId: () => String = null,
     getLabelWidth: () => Double = null,
     getLabelableRenderData: () => _ = null,
-    getSubTplMarkup: () => java.lang.String = null,
+    getSubTplMarkup: () => String = null,
     hasActiveError: () => Boolean = null,
     hasVisibleLabel: () => Boolean = null,
     hideEmptyLabel: js.UndefOr[Boolean] = js.undefined,
@@ -229,30 +229,30 @@ object IFieldContainer {
     initFieldAncestor: () => Unit = null,
     initLabelable: () => Unit = null,
     initRenderData: () => _ = null,
-    invalidCls: java.lang.String = null,
+    invalidCls: String = null,
     isFieldLabelable: js.UndefOr[Boolean] = js.undefined,
-    labelAlign: java.lang.String = null,
+    labelAlign: String = null,
     labelAttrTpl: js.Any = null,
     labelCell: IElement = null,
-    labelCls: java.lang.String = null,
-    labelClsExtra: java.lang.String = null,
-    labelConnector: java.lang.String = null,
+    labelCls: String = null,
+    labelClsExtra: String = null,
+    labelConnector: String = null,
     labelEl: IElement = null,
     labelPad: Int | Double = null,
-    labelSeparator: java.lang.String = null,
-    labelStyle: java.lang.String = null,
+    labelSeparator: String = null,
+    labelStyle: String = null,
     labelWidth: Int | Double = null,
-    msgTarget: java.lang.String = null,
+    msgTarget: String = null,
     onAdd: /* labelable */ js.UndefOr[ILabelable] => Unit = null,
-    onFieldErrorChange: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[java.lang.String]) => Unit = null,
+    onFieldErrorChange: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String]) => Unit = null,
     onFieldValidityChange: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit = null,
     onRemove: /* labelable */ js.UndefOr[ILabelable] => Unit = null,
     preventMark: js.UndefOr[Boolean] = js.undefined,
-    setActiveError: js.UndefOr[java.lang.String] => Unit = null,
+    setActiveError: js.UndefOr[String] => Unit = null,
     setActiveErrors: js.UndefOr[Array] => Unit = null,
     setFieldDefaults: js.UndefOr[js.Any] => Unit = null,
-    setFieldLabel: js.UndefOr[java.lang.String] => Unit = null,
-    trimLabelSeparator: () => java.lang.String = null,
+    setFieldLabel: js.UndefOr[String] => Unit = null,
+    trimLabelSeparator: () => String = null,
     unsetActiveError: () => Unit = null
   ): IFieldContainer = {
     val __obj = js.Dynamic.literal()

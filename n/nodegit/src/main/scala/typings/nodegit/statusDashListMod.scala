@@ -2,7 +2,6 @@ package typings.nodegit
 
 import typings.nodegit.diffDashPerfDashDataMod.DiffPerfdata
 import typings.nodegit.repositoryMod.Repository
-import typings.nodegit.statusDashListMod.StatusList
 import typings.nodegit.statusDashOptionsMod.StatusOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

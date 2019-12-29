@@ -3,8 +3,6 @@ package typings.rxjs
 import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.internalSchedulerAsyncActionMod.AsyncAction
 import typings.rxjs.internalSchedulerAsyncSchedulerMod.AsyncScheduler
-import typings.rxjs.internalSchedulerVirtualTimeSchedulerMod.VirtualAction
-import typings.rxjs.internalSchedulerVirtualTimeSchedulerMod.VirtualTimeScheduler
 import typings.rxjs.internalTypesMod.SchedulerAction
 import typings.rxjs.rxjsNumbers.`-1`
 import typings.rxjs.rxjsNumbers.`0`

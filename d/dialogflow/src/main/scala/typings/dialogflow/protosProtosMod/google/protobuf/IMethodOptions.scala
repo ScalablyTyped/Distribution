@@ -10,11 +10,14 @@ import scala.scalajs.js.annotation._
 /** Properties of a MethodOptions. */
 trait IMethodOptions extends js.Object {
   /** MethodOptions .google.api.http */
-  var `.google.api.http`: js.UndefOr[IHttpRule | Null] = js.undefined
+  @JSName(".google.api.http")
+  var DotgoogleDotapiDothttp: js.UndefOr[IHttpRule | Null] = js.undefined
   /** MethodOptions .google.api.methodSignature */
-  var `.google.api.methodSignature`: js.UndefOr[js.Array[String] | Null] = js.undefined
+  @JSName(".google.api.methodSignature")
+  var DotgoogleDotapiDotmethodSignature: js.UndefOr[js.Array[String] | Null] = js.undefined
   /** MethodOptions .google.longrunning.operationInfo */
-  var `.google.longrunning.operationInfo`: js.UndefOr[IOperationInfo | Null] = js.undefined
+  @JSName(".google.longrunning.operationInfo")
+  var DotgoogleDotlongrunningDotoperationInfo: js.UndefOr[IOperationInfo | Null] = js.undefined
   /** MethodOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   /** MethodOptions idempotencyLevel */
@@ -26,17 +29,17 @@ trait IMethodOptions extends js.Object {
 object IMethodOptions {
   @scala.inline
   def apply(
-    `.google.api.http`: IHttpRule = null,
-    `.google.api.methodSignature`: js.Array[String] = null,
-    `.google.longrunning.operationInfo`: IOperationInfo = null,
+    DotgoogleDotapiDothttp: IHttpRule = null,
+    DotgoogleDotapiDotmethodSignature: js.Array[String] = null,
+    DotgoogleDotlongrunningDotoperationInfo: IOperationInfo = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
     idempotencyLevel: IdempotencyLevel = null,
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.http` != null) __obj.updateDynamic(".google.api.http")(`.google.api.http`.asInstanceOf[js.Any])
-    if (`.google.api.methodSignature` != null) __obj.updateDynamic(".google.api.methodSignature")(`.google.api.methodSignature`.asInstanceOf[js.Any])
-    if (`.google.longrunning.operationInfo` != null) __obj.updateDynamic(".google.longrunning.operationInfo")(`.google.longrunning.operationInfo`.asInstanceOf[js.Any])
+    if (DotgoogleDotapiDothttp != null) __obj.updateDynamic(".google.api.http")(DotgoogleDotapiDothttp.asInstanceOf[js.Any])
+    if (DotgoogleDotapiDotmethodSignature != null) __obj.updateDynamic(".google.api.methodSignature")(DotgoogleDotapiDotmethodSignature.asInstanceOf[js.Any])
+    if (DotgoogleDotlongrunningDotoperationInfo != null) __obj.updateDynamic(".google.longrunning.operationInfo")(DotgoogleDotlongrunningDotoperationInfo.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
     if (idempotencyLevel != null) __obj.updateDynamic("idempotencyLevel")(idempotencyLevel.asInstanceOf[js.Any])
     if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])

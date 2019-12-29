@@ -30,10 +30,16 @@ object nextStrings {
   sealed trait push extends js.Object
   
   @js.native
+  sealed trait redirect extends js.Object
+  
+  @js.native
   sealed trait reload extends js.Object
   
   @js.native
   sealed trait replace extends js.Object
+  
+  @js.native
+  sealed trait rewrite extends js.Object
   
   @js.native
   sealed trait staticMarkup extends js.Object
@@ -58,9 +64,13 @@ object nextStrings {
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
+  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  @scala.inline
   def reload: reload = "reload".asInstanceOf[reload]
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
+  def rewrite: rewrite = "rewrite".asInstanceOf[rewrite]
   @scala.inline
   def staticMarkup: staticMarkup = "staticMarkup".asInstanceOf[staticMarkup]
   @scala.inline

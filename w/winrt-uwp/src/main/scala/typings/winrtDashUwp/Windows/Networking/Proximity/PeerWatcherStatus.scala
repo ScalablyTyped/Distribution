@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.aborted
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.created
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.enumerationCompleted
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.started
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.stopped
-import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.stopping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

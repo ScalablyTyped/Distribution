@@ -1,7 +1,7 @@
 
 # Scala.js typings for rxjs-compat
 
-Typings are for version 6.5.3
+Typings are for version 6.5.4
 
 ## Library description:
 <img src="doc/asset/Rx_Logo_S.png" alt="RxJS Logo" width="86" height="86"> RxJS: Reactive Extensions For JavaScript ======================================

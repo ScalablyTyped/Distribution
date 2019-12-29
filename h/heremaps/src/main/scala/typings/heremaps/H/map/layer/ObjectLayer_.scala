@@ -1,6 +1,7 @@
 package typings.heremaps.H.map.layer
 
 import typings.heremaps.H.clustering.Provider
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.ICopyright
 import typings.heremaps.H.map.layer.IMarkerLayer.Response
 import typings.heremaps.H.map.layer.IMarkerLayer.TiledResponse
@@ -48,7 +49,7 @@ class ObjectLayer_ protected ()
     * @returns {Array<H.map.ICopyright>} - a list of copyright information objects for the provided area and zoom level
     */
   /* InferMemberOverrides */
-  override def getCopyrights(bounds: typings.heremaps.H.geo.Rect, level: Double): js.Array[ICopyright] = js.native
+  override def getCopyrights(bounds: Rect, level: Double): js.Array[ICopyright] = js.native
   /**
     * This method returns current ObjectLayer's data provider
     * @returns {H.map.provider.ObjectProvider}
@@ -69,12 +70,7 @@ class ObjectLayer_ protected ()
     * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
     * @returns {(H.map.layer.IMarkerLayer.Response | H.map.layer.IMarkerLayer.TiledResponse)} - a response object containing the number of markers and the markers themselves
     */
-  def requestDomMarkers(
-    boundingRect: typings.heremaps.H.geo.Rect,
-    zoomLevel: Double,
-    cacheOnly: Boolean,
-    prioCenter: Point
-  ): Response | TiledResponse = js.native
+  def requestDomMarkers(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response | TiledResponse = js.native
   /**
     * This method requests marker objects for provided bounding rectangle.
     * @param boundingRect {H.geo.Rect} - the bounding rectangle for which marker are to be returned
@@ -83,12 +79,7 @@ class ObjectLayer_ protected ()
     * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
     * @returns {(H.map.layer.IMarkerLayer.Response | H.map.layer.IMarkerLayer.TiledResponse)} - a response object containing the number of markers and the markers themselves
     */
-  def requestMarkers(
-    boundingRect: typings.heremaps.H.geo.Rect,
-    zoomLevel: Double,
-    cacheOnly: Boolean,
-    prioCenter: Point
-  ): Response | TiledResponse = js.native
+  def requestMarkers(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response | TiledResponse = js.native
   /**
     * To request overlay objects for the passsed bounding rectangle. It returns all overlay objects which are contained within this bounding rectangle.
     * @param bounds {H.geo.Rect} - The bounding rectangle for which overlays are to be returned
@@ -97,7 +88,7 @@ class ObjectLayer_ protected ()
     * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
     * @returns {H.map.layer.ObjectLayer.OverlaysResponse}
     */
-  def requestOverlays(bounds: typings.heremaps.H.geo.Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): OverlaysResponse = js.native
+  def requestOverlays(bounds: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): OverlaysResponse = js.native
   /**
     * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
     * @param x {number} - tile row position
@@ -117,12 +108,7 @@ class ObjectLayer_ protected ()
     * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
     */
   /* InferMemberOverrides */
-  override def requestTiles(
-    boundingRect: typings.heremaps.H.geo.Rect,
-    zoomLevel: Double,
-    cacheOnly: Boolean,
-    prioCenter: Point
-  ): typings.heremaps.H.map.layer.ITileLayer.Response = js.native
+  override def requestTiles(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): typings.heremaps.H.map.layer.ITileLayer.Response = js.native
   /**
     * This method sets the maximum zoom level for which this layer will provide tiles.
     * @param max {number} - The new maximum zoom level of this layer

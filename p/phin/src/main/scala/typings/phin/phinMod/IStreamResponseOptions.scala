@@ -1,7 +1,7 @@
 package typings.phin.phinMod
 
 import typings.node.httpMod.ClientRequestArgs
-import typings.phin.phinNumbers.`true`
+import typings.phin.phinBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

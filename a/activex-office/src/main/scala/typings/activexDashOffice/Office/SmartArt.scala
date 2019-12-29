@@ -15,7 +15,8 @@ class SmartArt protected () extends js.Object {
   var Layout: SmartArtLayout = js.native
   @JSName("Nodes")
   val Nodes_Original: SmartArtNodes = js.native
-  var `Office.SmartArt_typekey`: SmartArt = js.native
+  @JSName("Office.SmartArt_typekey")
+  var OfficeDotSmartArt_typekey: SmartArt = js.native
   val Parent: js.Any = js.native
   var QuickStyle: SmartArtQuickStyle = js.native
   var Reverse: MsoTriState = js.native

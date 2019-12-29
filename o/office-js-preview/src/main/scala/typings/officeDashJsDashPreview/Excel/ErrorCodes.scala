@@ -1,24 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.accessDenied
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.apiNotFound
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.conflict
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.generalException
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.insertDeleteConflict
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.invalidArgument
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.invalidBinding
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.invalidOperation
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.invalidOperationInCellEditMode
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.invalidReference
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.invalidSelection
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.itemAlreadyExists
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.itemNotFound
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.nonBlankCellOffSheet
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.notImplemented
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.rangeExceedsLimit
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.requestAborted
-import typings.officeDashJsDashPreview.Excel.ErrorCodes.unsupportedOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

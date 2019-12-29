@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.domainmodels
 
+import typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +17,7 @@ import scala.scalajs.js.annotation._
 abstract class RemoteEntitySourceDocument protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.domainmodels.RemoteEntitySourceDocument {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
@@ -28,6 +30,6 @@ abstract class RemoteEntitySourceDocument protected ()
 @js.native
 object RemoteEntitySourceDocument extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
 }
 

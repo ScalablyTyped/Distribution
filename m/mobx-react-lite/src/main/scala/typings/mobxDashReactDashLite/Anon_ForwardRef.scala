@@ -1,6 +1,6 @@
 package typings.mobxDashReactDashLite
 
-import typings.mobxDashReactDashLite.mobxDashReactDashLiteNumbers.`true`
+import typings.mobxDashReactDashLite.mobxDashReactDashLiteBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

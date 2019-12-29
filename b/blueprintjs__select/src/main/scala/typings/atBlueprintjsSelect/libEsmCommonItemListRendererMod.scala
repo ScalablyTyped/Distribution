@@ -1,6 +1,5 @@
 package typings.atBlueprintjsSelect
 
-import typings.atBlueprintjsSelect.libEsmCommonItemListRendererMod.IItemListRendererProps
 import typings.atBlueprintjsSelect.libEsmCommonListItemsUtilsMod.ICreateNewItem
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element

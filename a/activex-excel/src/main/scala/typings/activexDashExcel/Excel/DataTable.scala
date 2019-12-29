@@ -11,7 +11,8 @@ class DataTable protected () extends js.Object {
   var AutoScaleFont: js.Any = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.DataTable_typekey`: DataTable = js.native
+  @JSName("Excel.DataTable_typekey")
+  var ExcelDotDataTable_typekey: DataTable = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Format: ChartFormat = js.native
   var HasBorderHorizontal: Boolean = js.native

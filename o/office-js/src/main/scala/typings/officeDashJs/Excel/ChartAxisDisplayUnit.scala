@@ -1,17 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.billions
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.custom
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundredMillions
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundredThousands
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundreds
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.millions
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.none
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.tenMillions
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.tenThousands
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.thousands
-import typings.officeDashJs.Excel.ChartAxisDisplayUnit.trillions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

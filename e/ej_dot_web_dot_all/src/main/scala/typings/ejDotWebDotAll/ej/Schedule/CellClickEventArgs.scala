@@ -16,7 +16,7 @@ trait CellClickEventArgs extends js.Object {
   var endTime: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns day, date and time information.
     */
   var quickString: js.UndefOr[String] = js.undefined
@@ -40,7 +40,7 @@ object CellClickEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     cellIndex: Int | Double = null,
     endTime: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     quickString: String = null,
     resources: js.Any = null,
     startTime: js.Any = null,

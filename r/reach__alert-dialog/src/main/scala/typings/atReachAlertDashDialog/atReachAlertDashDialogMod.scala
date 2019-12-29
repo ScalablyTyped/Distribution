@@ -1,7 +1,5 @@
 package typings.atReachAlertDashDialog
 
-import typings.atReachAlertDashDialog.atReachAlertDashDialogMod.AlertDialogContentProps
-import typings.atReachAlertDashDialog.atReachAlertDashDialogMod.AlertDialogProps
 import typings.atReachDialog.atReachDialogMod.DialogContentProps
 import typings.atReachDialog.atReachDialogMod.DialogProps
 import typings.react.reactMod.FC

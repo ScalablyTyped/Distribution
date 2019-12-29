@@ -3,12 +3,12 @@ package typings.extjs.Ext.grid.column
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.IElement
+import typings.extjs.Ext.grid.header.IContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IColumn
-  extends typings.extjs.Ext.grid.header.IContainer {
+trait IColumn extends IContainer {
   /** [Method] private Inform the header container about the resize
   		* @param width Object
   		* @param height Object
@@ -26,7 +26,7 @@ trait IColumn
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var align: js.UndefOr[java.lang.String] = js.undefined
+  var align: js.UndefOr[String] = js.undefined
   /** [Method] Sizes this Column to fit the max content width
   		* @param The Ext.grid.column.Column/Number header (or index of header) to auto size.
   		*/
@@ -34,7 +34,7 @@ trait IColumn
   /** [Config Option] (Object[]) */
   var columns: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var dataIndex: js.UndefOr[java.lang.String] = js.undefined
+  var dataIndex: js.UndefOr[String] = js.undefined
   /** [Method] When defined this will take precedence over the renderer config  */
   var defaultRenderer: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Function) */
@@ -42,7 +42,7 @@ trait IColumn
   /** [Config Option] (Object/String) */
   var editor: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var emptyCellText: js.UndefOr[java.lang.String] = js.undefined
+  var emptyCellText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object/String) */
   var field: js.UndefOr[js.Any] = js.undefined
   /** [Method] Retrieves the editing field for editing associated with this header
@@ -60,7 +60,7 @@ trait IColumn
   /** [Method] Returns the parameter to sort upon when sorting this header
   		* @returns String
   		*/
-  var getSortParam: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSortParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the index of this column in the list of visible columns only if this column is a base level Column
   		* @returns Number
   		*/
@@ -68,7 +68,7 @@ trait IColumn
   /** [Config Option] (Boolean) */
   var groupable: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var header: js.UndefOr[java.lang.String] = js.undefined
+  var header: js.UndefOr[String] = js.undefined
   /** [Method] Hides this Component setting it to invisible using the configured hideMode
   		* @param fromOwner Object
   		* @returns Ext.Component this
@@ -97,7 +97,7 @@ trait IColumn
   /** [Config Option] (Boolean) */
   var menuDisabled: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var menuText: js.UndefOr[java.lang.String] = js.undefined
+  var menuText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Function/String) */
   var renderer: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -112,7 +112,7 @@ trait IColumn
   /** [Method] Sets the header text for this Column
   		* @param text String The header to display on this Column.
   		*/
-  var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Shows this Component rendering it first if autoRender or floating are true
   		* @param fromOwner Object
   		* @param fromChild Object
@@ -123,15 +123,15 @@ trait IColumn
     js.Function2[/* fromOwner */ js.UndefOr[js.Any], /* fromChild */ js.UndefOr[js.Any], IComponent]
   ] = js.undefined
   /** [Config Option] (String) */
-  var tdCls: js.UndefOr[java.lang.String] = js.undefined
+  var tdCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var textEl: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (String) */
-  var tooltip: js.UndefOr[java.lang.String] = js.undefined
+  var tooltip: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var tooltipType: js.UndefOr[java.lang.String] = js.undefined
+  var tooltipType: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var triggerEl: js.UndefOr[IElement] = js.undefined
 }
@@ -139,23 +139,23 @@ trait IColumn
 object IColumn {
   @scala.inline
   def apply(
-    IContainer: typings.extjs.Ext.grid.header.IContainer = null,
+    IContainer: IContainer = null,
     afterComponentLayout: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* oldWidth */ js.UndefOr[js.Any], /* oldHeight */ js.UndefOr[js.Any]) => Unit = null,
-    align: java.lang.String = null,
+    align: String = null,
     autoSize: /* The */ js.UndefOr[js.Any] => Unit = null,
     columns: Array = null,
-    dataIndex: java.lang.String = null,
+    dataIndex: String = null,
     defaultRenderer: () => Unit = null,
     editRenderer: js.Any = null,
     editor: js.Any = null,
-    emptyCellText: java.lang.String = null,
+    emptyCellText: String = null,
     field: js.Any = null,
     getEditor: (/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any]) => _ = null,
     getIndex: () => Double = null,
-    getSortParam: () => java.lang.String = null,
+    getSortParam: () => String = null,
     getVisibleIndex: () => Double = null,
     groupable: js.UndefOr[Boolean] = js.undefined,
-    header: java.lang.String = null,
+    header: String = null,
     hide: /* fromOwner */ js.UndefOr[js.Any] => IComponent = null,
     hideable: js.UndefOr[Boolean] = js.undefined,
     initRenderData: () => _ = null,
@@ -166,18 +166,18 @@ object IColumn {
     lockable: js.UndefOr[Boolean] = js.undefined,
     locked: js.UndefOr[Boolean] = js.undefined,
     menuDisabled: js.UndefOr[Boolean] = js.undefined,
-    menuText: java.lang.String = null,
+    menuText: String = null,
     renderer: js.Any = null,
     resizable: js.UndefOr[Boolean] = js.undefined,
     scope: js.Any = null,
     setEditor: /* field */ js.UndefOr[js.Any] => Unit = null,
-    setText: /* text */ js.UndefOr[java.lang.String] => Unit = null,
+    setText: /* text */ js.UndefOr[String] => Unit = null,
     show: (/* fromOwner */ js.UndefOr[js.Any], /* fromChild */ js.UndefOr[js.Any]) => IComponent = null,
-    tdCls: java.lang.String = null,
-    text: java.lang.String = null,
+    tdCls: String = null,
+    text: String = null,
     textEl: IElement = null,
-    tooltip: java.lang.String = null,
-    tooltipType: java.lang.String = null,
+    tooltip: String = null,
+    tooltipType: String = null,
     triggerEl: IElement = null
   ): IColumn = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.koaDashSend.koaDashSendMod
 
-import typings.koaDashSend.koaDashSendNumbers.`false`
+import typings.koaDashSend.koaDashSendBooleans.`false`
 import typings.node.fsMod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,8 +1,6 @@
 package typings.heremaps.H.Map
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.Map.EngineType.P2D
-import typings.heremaps.H.Map.EngineType.PANORAMA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

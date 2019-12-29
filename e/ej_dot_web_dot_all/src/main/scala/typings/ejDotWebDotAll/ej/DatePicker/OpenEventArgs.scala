@@ -10,7 +10,7 @@ trait OpenEventArgs extends js.Object {
   var date: js.UndefOr[js.Any] = js.undefined
   /** returns the DatePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DatePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previously selected value.
     */
   var prevDate: js.UndefOr[String] = js.undefined
@@ -26,7 +26,7 @@ object OpenEventArgs {
   @scala.inline
   def apply(
     date: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.DatePicker.Model = null,
+    model: Model = null,
     prevDate: String = null,
     `type`: String = null,
     value: String = null

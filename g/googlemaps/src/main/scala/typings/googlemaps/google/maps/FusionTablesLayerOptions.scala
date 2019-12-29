@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait FusionTablesLayerOptions extends js.Object {
   var clickable: js.UndefOr[Boolean] = js.undefined
   var heatmap: js.UndefOr[FusionTablesHeatmap] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var query: js.UndefOr[FusionTablesQuery] = js.undefined
   var styles: js.UndefOr[js.Array[FusionTablesStyle]] = js.undefined
   var suppressInfoWindows: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +19,7 @@ object FusionTablesLayerOptions {
   def apply(
     clickable: js.UndefOr[Boolean] = js.undefined,
     heatmap: FusionTablesHeatmap = null,
-    map: Map = null,
+    map: Map[Element] = null,
     query: FusionTablesQuery = null,
     styles: js.Array[FusionTablesStyle] = null,
     suppressInfoWindows: js.UndefOr[Boolean] = js.undefined

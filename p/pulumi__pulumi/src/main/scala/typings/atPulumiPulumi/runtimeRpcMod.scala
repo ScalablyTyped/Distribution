@@ -8,7 +8,6 @@ import typings.atPulumiPulumi.atPulumiPulumiStrings.c44067f5952c0a294b673a41bacd
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Inputs
 import typings.atPulumiPulumi.resourceMod.Resource
-import typings.atPulumiPulumi.runtimeRpcMod.OutputResolvers
 import typings.std.Map
 import typings.std.Record
 import typings.std.Set

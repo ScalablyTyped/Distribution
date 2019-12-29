@@ -23,12 +23,12 @@ object Query extends js.Object {
   def exclude(field: js.Array[String]): Query = js.native
   def exclude(field: js.Array[String], value: Double): Query = js.native
   def exclude(query: js.Object): Query = js.native
-  def find[T /* <: Model */](`this`: Class[T]): js.Promise[js.Array[T]] = js.native
-  def find[T /* <: Model */](`this`: Class[T], query: js.Object): js.Promise[js.Array[T]] = js.native
-  def findById[T /* <: Model */](`this`: Class[T], id: String): js.Promise[T | Null] = js.native
-  def findById[T /* <: Model */](`this`: Class[T], id: js.Object): js.Promise[T | Null] = js.native
-  def findOne[T /* <: Model */](`this`: Class[T]): js.Promise[T | Null] = js.native
-  def findOne[T /* <: Model */](`this`: Class[T], query: js.Object): js.Promise[T | Null] = js.native
+  def find[T /* <: Model */](): js.Promise[js.Array[T]] = js.native
+  def find[T /* <: Model */](query: js.Object): js.Promise[js.Array[T]] = js.native
+  def findById[T /* <: Model */](id: String): js.Promise[T | Null] = js.native
+  def findById[T /* <: Model */](id: js.Object): js.Promise[T | Null] = js.native
+  def findOne[T /* <: Model */](): js.Promise[T | Null] = js.native
+  def findOne[T /* <: Model */](query: js.Object): js.Promise[T | Null] = js.native
    // TODO best parameter type
   def include(field: String): Query = js.native
   def include(field: String, value: Double): Query = js.native

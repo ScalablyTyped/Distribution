@@ -1,7 +1,6 @@
 package typings.atMaterialLineDashRipple
 
 import typings.atMaterialLineDashRipple.adapterMod.MDCLineRippleAdapter
-import typings.atMaterialLineDashRipple.foundationMod.MDCLineRippleFoundation
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

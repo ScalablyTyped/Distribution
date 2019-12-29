@@ -77,24 +77,10 @@ object ^ extends js.Object {
   var defaultLocale: String = js.native
   var formatters: formatters_info = js.native
   var locales: StringDictionary[locale_detail] = js.native
-  def UTC(year: Double, month: Double, day: Double): Double = js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double): Double = js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double): Double = js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: Double,
-    minutes: Double,
-    seconds: Double,
-    ms: Double
-  ): Double = js.native
   /*
     *Returns a milliseconds time since the epoch for the given UTC date
     */
-  @JSName("UTC")
-  def UTC_XDate(
+  def UTC(
     year: Double,
     month: Double,
     date: Double,
@@ -103,6 +89,20 @@ object ^ extends js.Object {
     seconds: Double,
     milliseconds: Double
   ): XDate = js.native
+  def UTC(year: Double, month: Double, day: Double): Double = js.native
+  def UTC(year: Double, month: Double, day: Double, hours: Double): Double = js.native
+  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double): Double = js.native
+  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
+  @JSName("UTC")
+  def UTC_Double(
+    year: Double,
+    month: Double,
+    day: Double,
+    hours: Double,
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
   //------------
   //Static function
   //------------

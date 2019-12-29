@@ -1,6 +1,6 @@
 package typings.atOctokitRest.atOctokitRestMod
 
-import typings.atOctokitRest.atOctokitRestStrings.`+1`
+import typings.atOctokitRest.atOctokitRestStrings.Plussign1
 import typings.atOctokitRest.atOctokitRestStrings.`-1`
 import typings.atOctokitRest.atOctokitRestStrings.confused
 import typings.atOctokitRest.atOctokitRestStrings.eyes
@@ -16,7 +16,7 @@ trait ReactionsCreateForIssueParamsDeprecatedNumber extends js.Object {
   /**
     * The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the issue.
     */
-  var content: `+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes
+  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes
   /**
     * @deprecated "number" parameter renamed to "issue_number"
     */
@@ -28,7 +28,7 @@ trait ReactionsCreateForIssueParamsDeprecatedNumber extends js.Object {
 object ReactionsCreateForIssueParamsDeprecatedNumber {
   @scala.inline
   def apply(
-    content: `+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes,
+    content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     number: Double,
     owner: String,
     repo: String

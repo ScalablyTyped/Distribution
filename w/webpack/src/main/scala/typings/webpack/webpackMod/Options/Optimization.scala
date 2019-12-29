@@ -1,7 +1,7 @@
 package typings.webpack.webpackMod.Options
 
+import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackMod.Plugin
-import typings.webpack.webpackNumbers.`false`
 import typings.webpack.webpackStrings.`total-size`
 import typings.webpack.webpackStrings.hashed
 import typings.webpack.webpackStrings.multiple

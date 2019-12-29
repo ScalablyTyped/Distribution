@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPsbt extends Instantiable1[/* tx */ Transaction, Psbt] {
-  def fromBase64[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Psbt */ js.Any */](`this`: T, data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
-  def fromBuffer[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Psbt */ js.Any */](`this`: T, buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
-  def fromHex[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Psbt */ js.Any */](`this`: T, data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+  def fromBase64[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Psbt */ js.Any */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+  def fromBuffer[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Psbt */ js.Any */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+  def fromHex[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Psbt */ js.Any */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
 }
 

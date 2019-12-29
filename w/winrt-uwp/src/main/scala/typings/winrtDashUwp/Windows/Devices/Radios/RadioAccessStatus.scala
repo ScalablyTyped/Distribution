@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Radios
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.allowed
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.deniedBySystem
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.deniedByUser
-import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

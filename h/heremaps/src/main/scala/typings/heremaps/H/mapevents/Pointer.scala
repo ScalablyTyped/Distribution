@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.Map
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.mapevents.Pointer.Button
-import typings.heremaps.H.mapevents.Pointer.Button.LEFT
-import typings.heremaps.H.mapevents.Pointer.Button.MIDDLE
-import typings.heremaps.H.mapevents.Pointer.Button.NONE
-import typings.heremaps.H.mapevents.Pointer.Button.RIGHT
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`

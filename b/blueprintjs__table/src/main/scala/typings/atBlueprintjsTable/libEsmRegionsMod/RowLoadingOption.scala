@@ -1,8 +1,6 @@
 package typings.atBlueprintjsTable.libEsmRegionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsTable.libEsmRegionsMod.RowLoadingOption.CELLS
-import typings.atBlueprintjsTable.libEsmRegionsMod.RowLoadingOption.HEADER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

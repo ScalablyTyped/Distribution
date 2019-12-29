@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   		*/
   var afterQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var allQuery: js.UndefOr[java.lang.String] = js.undefined
+  var allQuery: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var anyMatch: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -48,9 +48,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Object) */
   var defaultListConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var delimiter: js.UndefOr[java.lang.String] = js.undefined
+  var delimiter: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var displayField: js.UndefOr[java.lang.String] = js.undefined
+  var displayField: js.UndefOr[String] = js.undefined
   /** [Method] Executes a query to filter the dropdown list
   		* @param queryString String The string to use to filter available items by matching against the configured valueField.
   		* @param forceAll Boolean true to force the query to execute even if there are currently fewer characters in the field than the minimum specified by the minChars config option. It also clears any filter previously saved in the current store.
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation._
   		*/
   var doQuery: js.UndefOr[
     js.Function3[
-      /* queryString */ js.UndefOr[java.lang.String], 
+      /* queryString */ js.UndefOr[String], 
       /* forceAll */ js.UndefOr[Boolean], 
       /* rawQuery */ js.UndefOr[Boolean], 
       Boolean
@@ -75,7 +75,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.data.Model The matched record or false.
   		*/
   var findRecord: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], IModel]
+    js.Function2[/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], IModel]
   ] = js.undefined
   /** [Method] Finds the record by searching values in the displayField
   		* @param value Object The value to match the field against.
@@ -101,7 +101,7 @@ import scala.scalajs.js.annotation._
   		* @returns String The value to be submitted, or null.
   		*/
   @JSName("getSubmitValue")
-  var getSubmitValue_IComboBox: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSubmitValue_IComboBox: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the current data value of the field
   		* @returns Object value The field value
   		*/
@@ -110,9 +110,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var growToLongestValue: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var hiddenName: js.UndefOr[java.lang.String] = js.undefined
+  var hiddenName: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var lastQuery: js.UndefOr[java.lang.String] = js.undefined
+  var lastQuery: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var listConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number) */
@@ -139,9 +139,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Number) */
   var queryDelay: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var queryMode: js.UndefOr[java.lang.String] = js.undefined
+  var queryMode: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var queryParam: js.UndefOr[java.lang.String] = js.undefined
+  var queryParam: js.UndefOr[String] = js.undefined
   /** [Method] Selects an item by a Model or by a key value
   		* @param r Object
   		*/
@@ -153,7 +153,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (String/HTMLElement/Ext.Element) */
   var transform: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var triggerAction: js.UndefOr[java.lang.String] = js.undefined
+  var triggerAction: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var typeAhead: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Number) */
@@ -163,9 +163,9 @@ import scala.scalajs.js.annotation._
   		*/
   var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var valueField: js.UndefOr[java.lang.String] = js.undefined
+  var valueField: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var valueNotFoundText: js.UndefOr[java.lang.String] = js.undefined
+  var valueNotFoundText: js.UndefOr[String] = js.undefined
 }
 
 object IComboBox {
@@ -173,7 +173,7 @@ object IComboBox {
   def apply(
     IPicker: typings.extjs.Ext.form.field.IPicker = null,
     afterQuery: /* queryPlan */ js.UndefOr[js.Any] => Unit = null,
-    allQuery: java.lang.String = null,
+    allQuery: String = null,
     anyMatch: js.UndefOr[Boolean] = js.undefined,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     beforeBlur: () => Unit = null,
@@ -184,22 +184,22 @@ object IComboBox {
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     clearValue: () => Unit = null,
     defaultListConfig: js.Any = null,
-    delimiter: java.lang.String = null,
-    displayField: java.lang.String = null,
-    doQuery: (/* queryString */ js.UndefOr[java.lang.String], /* forceAll */ js.UndefOr[Boolean], /* rawQuery */ js.UndefOr[Boolean]) => Boolean = null,
+    delimiter: String = null,
+    displayField: String = null,
+    doQuery: (/* queryString */ js.UndefOr[String], /* forceAll */ js.UndefOr[Boolean], /* rawQuery */ js.UndefOr[Boolean]) => Boolean = null,
     enableRegEx: js.UndefOr[Boolean] = js.undefined,
     fieldSubTpl: IXTemplate = null,
-    findRecord: (/* field */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => IModel = null,
+    findRecord: (/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => IModel = null,
     findRecordByDisplay: /* value */ js.UndefOr[js.Any] => IModel = null,
     findRecordByValue: /* value */ js.UndefOr[js.Any] => IModel = null,
     forceSelection: js.UndefOr[Boolean] = js.undefined,
     getStore: () => IAbstractStore | IStore = null,
     getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
-    getSubmitValue: () => java.lang.String = null,
+    getSubmitValue: () => String = null,
     getValue: () => _ = null,
     growToLongestValue: js.UndefOr[Boolean] = js.undefined,
-    hiddenName: java.lang.String = null,
-    lastQuery: java.lang.String = null,
+    hiddenName: String = null,
+    lastQuery: String = null,
     listConfig: js.Any = null,
     minChars: Int | Double = null,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
@@ -208,18 +208,18 @@ object IComboBox {
     pageSize: Int | Double = null,
     queryCaching: js.UndefOr[Boolean] = js.undefined,
     queryDelay: Int | Double = null,
-    queryMode: java.lang.String = null,
-    queryParam: java.lang.String = null,
+    queryMode: String = null,
+    queryParam: String = null,
     select: /* r */ js.UndefOr[js.Any] => Unit = null,
     selectOnTab: js.UndefOr[Boolean] = js.undefined,
     store: js.Any = null,
     transform: js.Any = null,
-    triggerAction: java.lang.String = null,
+    triggerAction: String = null,
     typeAhead: js.UndefOr[Boolean] = js.undefined,
     typeAheadDelay: Int | Double = null,
     unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
-    valueField: java.lang.String = null,
-    valueNotFoundText: java.lang.String = null
+    valueField: String = null,
+    valueNotFoundText: String = null
   ): IComboBox = {
     val __obj = js.Dynamic.literal()
     if (IPicker != null) js.Dynamic.global.Object.assign(__obj, IPicker)

@@ -5,9 +5,7 @@ import typings.mongodb.mongodbMod.ObjectID
 import typings.mongoose.Anon_FlattenMaps
 import typings.mongoose.Anon_Noop
 import typings.mongoose.TypeofClassObjectID
-import typings.mongoose.mongooseMod.Types.Array
-import typings.mongoose.mongooseMod.Types.DocumentArray
-import typings.mongoose.mongooseMod.Types.ObjectId
+import typings.node.TypeofClassBuffer
 import typings.std.ArrayConstructor
 import typings.std.MapConstructor
 import typings.std.Record
@@ -121,8 +119,7 @@ object Types extends js.Object {
     * http://mongoosejs.com/docs/api.html#types-buffer-js
     */
   @js.native
-  trait Buffer
-    extends typings.node.TypeofClassBuffer {
+  trait Buffer extends TypeofClassBuffer {
     /**
       * Copies the buffer.
       * Buffer#copy does not mark target as modified so you must copy

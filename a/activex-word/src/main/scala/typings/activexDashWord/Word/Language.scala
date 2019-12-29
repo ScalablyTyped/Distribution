@@ -19,7 +19,8 @@ class Language protected () extends js.Object {
   val NameLocal: String = js.native
   val Parent: js.Any = js.native
   var SpellingDictionaryType: WdDictionaryType = js.native
-  var `Word.Language_typekey`: Language = js.native
+  @JSName("Word.Language_typekey")
+  var WordDotLanguage_typekey: Language = js.native
   val WritingStyleList: js.Any = js.native
 }
 

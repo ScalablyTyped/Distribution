@@ -1,9 +1,6 @@
 package typings.argon2DashBrowser.argon2DashBrowserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.argon2DashBrowser.argon2DashBrowserMod.ArgonType.Argon2d
-import typings.argon2DashBrowser.argon2DashBrowserMod.ArgonType.Argon2i
-import typings.argon2DashBrowser.argon2DashBrowserMod.ArgonType.Argon2id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

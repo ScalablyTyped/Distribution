@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.notSupported
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.optional
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

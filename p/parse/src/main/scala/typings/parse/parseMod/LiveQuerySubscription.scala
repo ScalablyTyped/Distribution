@@ -72,7 +72,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parse", "LiveQuerySubscription")
 @js.native
 class LiveQuerySubscription protected ()
-  extends typings.parse.nodeMod.LiveQuerySubscription {
+  extends typings.parse.parseMod._Global_.Parse.LiveQuerySubscription {
   /**
     * Creates an instance of LiveQuerySubscription.
     *

@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.HeaderFooterState.default
-import typings.officeDashJsDashPreview.Excel.HeaderFooterState.firstAndDefault
-import typings.officeDashJsDashPreview.Excel.HeaderFooterState.firstOddAndEven
-import typings.officeDashJsDashPreview.Excel.HeaderFooterState.oddAndEven
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

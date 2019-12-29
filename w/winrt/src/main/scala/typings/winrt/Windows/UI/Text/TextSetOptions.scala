@@ -1,13 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.TextSetOptions.applyRtfDocumentDefaults
-import typings.winrt.Windows.UI.Text.TextSetOptions.checkTextLimit
-import typings.winrt.Windows.UI.Text.TextSetOptions.formatRtf
-import typings.winrt.Windows.UI.Text.TextSetOptions.none
-import typings.winrt.Windows.UI.Text.TextSetOptions.unhide
-import typings.winrt.Windows.UI.Text.TextSetOptions.unicodeBidi
-import typings.winrt.Windows.UI.Text.TextSetOptions.unlink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

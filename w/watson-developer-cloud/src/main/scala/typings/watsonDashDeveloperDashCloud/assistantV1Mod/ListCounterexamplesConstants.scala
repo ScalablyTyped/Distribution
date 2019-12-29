@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListCounterexamplesConstants.Sort
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListCounterexamplesConstants.Sort.TEXT
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListCounterexamplesConstants.Sort.UPDATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

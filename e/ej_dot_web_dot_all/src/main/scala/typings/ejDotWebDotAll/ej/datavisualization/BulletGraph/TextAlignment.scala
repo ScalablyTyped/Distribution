@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextAlignment.Center
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextAlignment.Far
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TextAlignment.Near
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLDOMNode")
 @js.native
 class IHTMLDOMNode protected () extends js.Object {
-  var `MSHTML.IHTMLDOMNode_typekey`: IHTMLDOMNode = js.native
+  @JSName("MSHTML.IHTMLDOMNode_typekey")
+  var MSHTMLDotIHTMLDOMNode_typekey: IHTMLDOMNode = js.native
   val attributes: js.Any = js.native
   val childNodes: js.Any = js.native
   val firstChild: IHTMLDOMNode = js.native

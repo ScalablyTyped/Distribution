@@ -1,9 +1,6 @@
 package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.SenderPlatform.ANDROID
-import typings.chrome.chrome.cast.SenderPlatform.CHROME
-import typings.chrome.chrome.cast.SenderPlatform.IOS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

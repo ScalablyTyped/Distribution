@@ -2,7 +2,6 @@ package typings.appDashBuilderDashLib
 
 import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.Spaces
 import typings.appDashBuilderDashLib.outPublishS3BaseS3PublisherMod.BaseS3Publisher
-import typings.appDashBuilderDashLib.outPublishS3SpacesPublisherMod.SpacesPublisher
 import typings.builderDashUtilDashRuntime.outPublishOptionsMod.SpacesOptions
 import typings.electronDashPublish.electronDashPublishMod.PublishContext
 import scala.scalajs.js

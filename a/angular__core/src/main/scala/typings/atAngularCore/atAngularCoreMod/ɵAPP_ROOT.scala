@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵAPP_ROOT")
+@JSImport("@angular/core", "\u0275APP_ROOT")
 @js.native
 object ɵAPP_ROOT extends TopLevel[InjectionToken[Boolean]]
 

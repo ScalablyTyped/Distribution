@@ -1,6 +1,5 @@
 package typings.svgjsDotResize
 
-import typings.svgjsDotResize.svgjs.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

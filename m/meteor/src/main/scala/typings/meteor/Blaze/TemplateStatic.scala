@@ -9,13 +9,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TemplateStatic
-  extends Instantiable0[typings.meteor.Blaze.Template]
-     with Instantiable1[/* viewName */ String, typings.meteor.Blaze.Template]
-     with Instantiable2[
-      /* viewName */ String, 
-      /* renderFunction */ js.Function, 
-      typings.meteor.Blaze.Template
-    ] {
+  extends Instantiable0[Template]
+     with Instantiable1[/* viewName */ String, Template]
+     with Instantiable2[/* viewName */ String, /* renderFunction */ js.Function, Template] {
   def currentData(): js.Any = js.native
   def instance(): TemplateInstance = js.native
   def parentData(numLevels: Double): js.Any = js.native

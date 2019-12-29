@@ -1,6 +1,6 @@
 package typings.rollup.rollupMod
 
-import typings.rollup.rollupNumbers.`true`
+import typings.rollup.rollupBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

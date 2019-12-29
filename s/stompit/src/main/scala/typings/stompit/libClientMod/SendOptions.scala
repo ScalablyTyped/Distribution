@@ -23,14 +23,14 @@ object SendOptions {
     defaultEncoding: String = null,
     destroy: js.ThisFunction2[
       /* this */ Writable, 
-      /* error */ typings.node.Error | Null, 
-      /* callback */ js.Function1[/* error */ typings.node.Error | Null, Unit], 
+      /* error */ Error | Null, 
+      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ] = null,
     emitClose: js.UndefOr[Boolean] = js.undefined,
     `final`: js.ThisFunction1[
       /* this */ Writable, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[typings.node.Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null,
     highWaterMark: Int | Double = null,
@@ -39,13 +39,13 @@ object SendOptions {
       /* this */ Writable, 
       /* chunk */ js.Any, 
       /* encoding */ String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[typings.node.Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null,
     writev: js.ThisFunction2[
       /* this */ Writable, 
       /* chunks */ js.Array[Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[typings.node.Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null
   ): SendOptions = {

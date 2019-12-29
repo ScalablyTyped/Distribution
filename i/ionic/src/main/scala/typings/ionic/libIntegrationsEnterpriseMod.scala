@@ -2,8 +2,7 @@ package typings.ionic
 
 import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.BaseConfig
 import typings.ionic.definitionsMod.EnterpriseProjectIntegration
-import typings.ionic.ionicStrings.`Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform appsDOT`
-import typings.ionic.libIntegrationsEnterpriseMod.EnterpriseIntegrationConfig
+import typings.ionic.ionicStrings.`Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`
 import typings.ionic.libIntegrationsMod.BaseIntegration
 import typings.ionic.libIntegrationsMod.IntegationUnion
 import scala.scalajs.js
@@ -29,7 +28,7 @@ object libIntegrationsEnterpriseMod extends js.Object {
     var getPK: js.Any = js.native
     var registerKey: js.Any = js.native
     @JSName("summary")
-    val summary_Integration: `Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform appsDOT` = js.native
+    val summary_Integration: `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot` = js.native
     var updateNPMRC: js.Any = js.native
     var validatePK: js.Any = js.native
     @JSName("config")

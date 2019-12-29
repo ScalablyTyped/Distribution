@@ -10,7 +10,7 @@ trait ReminderEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the appointment object for which the reminder is raised.
     */
   var reminderAppointment: js.UndefOr[js.Any] = js.undefined
@@ -23,7 +23,7 @@ object ReminderEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     reminderAppointment: js.Any = null,
     `type`: String = null
   ): ReminderEventArgs = {

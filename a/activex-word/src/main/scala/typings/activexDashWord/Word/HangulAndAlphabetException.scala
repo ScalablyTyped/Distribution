@@ -12,7 +12,8 @@ class HangulAndAlphabetException protected () extends js.Object {
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.HangulAndAlphabetException_typekey`: HangulAndAlphabetException = js.native
+  @JSName("Word.HangulAndAlphabetException_typekey")
+  var WordDotHangulAndAlphabetException_typekey: HangulAndAlphabetException = js.native
   def Delete(): Unit = js.native
 }
 

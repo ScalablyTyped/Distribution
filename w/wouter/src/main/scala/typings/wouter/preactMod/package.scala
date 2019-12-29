@@ -9,8 +9,8 @@ package object preactMod {
   import typings.preact.srcJsxMod.JSXInternal.HTMLAttributes
   import typings.std.EventTarget
   import typings.std.Omit
-  import typings.wouter.wouterNumbers.`false`
-  import typings.wouter.wouterNumbers.`true`
+  import typings.wouter.wouterBooleans.`false`
+  import typings.wouter.wouterBooleans.`true`
   import typings.wouter.wouterStrings.href
 
   type DefaultParams = StringDictionary[String]

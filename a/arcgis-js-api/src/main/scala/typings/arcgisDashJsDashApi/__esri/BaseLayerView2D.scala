@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +44,7 @@ trait BaseLayerView2D extends LayerView {
     * @param y The y-coordinate in screen space of the desired hit.
     *
     */
-  def hitTest(x: Double, y: Double): IPromise[Graphic] = js.native
+  def hitTest(x: Double, y: Double): js.Promise[Graphic] = js.native
   /**
     * The method to implement that is responsible of drawing the content of the layer. This method is called every time the MapView's state changes, or if [requestRender()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#requestRender) has been called.
     *

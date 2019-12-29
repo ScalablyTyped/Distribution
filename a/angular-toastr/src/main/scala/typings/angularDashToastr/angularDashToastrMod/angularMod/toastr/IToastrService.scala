@@ -16,7 +16,7 @@ trait IToastrService extends js.Object {
     * @param {IToast} toast Optional toast object to delete
     */
   def clear(): Unit = js.native
-  def clear(toast: typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast): Unit = js.native
+  def clear(toast: IToast): Unit = js.native
   /**
     * Create error toast notification message.
     *
@@ -24,13 +24,9 @@ trait IToastrService extends js.Object {
     * @param {String} title Title to show on toast
     * @param {IToastOptions} options Override default toast options
     */
-  def error(message: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def error(message: String, title: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def error(
-    message: String,
-    title: String,
-    options: typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToastOptions
-  ): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
+  def error(message: String): IToast = js.native
+  def error(message: String, title: String): IToast = js.native
+  def error(message: String, title: String, options: IToastOptions): IToast = js.native
   /**
     * Create info toast notification message.
     *
@@ -38,13 +34,9 @@ trait IToastrService extends js.Object {
     * @param {String} title Title to show on toast
     * @param {IToastOptions} options Override default toast options
     */
-  def info(message: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def info(message: String, title: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def info(
-    message: String,
-    title: String,
-    options: typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToastOptions
-  ): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
+  def info(message: String): IToast = js.native
+  def info(message: String, title: String): IToast = js.native
+  def info(message: String, title: String, options: IToastOptions): IToast = js.native
   /**
     * Create success toast notification message.
     *
@@ -52,13 +44,9 @@ trait IToastrService extends js.Object {
     * @param {String} title Title to show on toast
     * @param {IToastOptions} options Override default toast options
     */
-  def success(message: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def success(message: String, title: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def success(
-    message: String,
-    title: String,
-    options: typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToastOptions
-  ): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
+  def success(message: String): IToast = js.native
+  def success(message: String, title: String): IToast = js.native
+  def success(message: String, title: String, options: IToastOptions): IToast = js.native
   /**
     * Create warning toast notification message.
     *
@@ -66,12 +54,8 @@ trait IToastrService extends js.Object {
     * @param {String} title Title to show on toast
     * @param {IToastOptions} options Override default toast options
     */
-  def warning(message: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def warning(message: String, title: String): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
-  def warning(
-    message: String,
-    title: String,
-    options: typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToastOptions
-  ): typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast = js.native
+  def warning(message: String): IToast = js.native
+  def warning(message: String, title: String): IToast = js.native
+  def warning(message: String, title: String, options: IToastOptions): IToast = js.native
 }
 

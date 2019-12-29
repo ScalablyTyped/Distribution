@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.System.Power
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.Power.PowerSupplyStatus.adequate
-import typings.winrtDashUwp.Windows.System.Power.PowerSupplyStatus.inadequate
-import typings.winrtDashUwp.Windows.System.Power.PowerSupplyStatus.notPresent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

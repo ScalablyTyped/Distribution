@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectionPolicyEvaluationResult.allowed
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectionPolicyEvaluationResult.blocked
-import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectionPolicyEvaluationResult.consentRequired
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

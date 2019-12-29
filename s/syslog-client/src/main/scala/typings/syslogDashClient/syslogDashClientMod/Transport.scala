@@ -1,8 +1,6 @@
 package typings.syslogDashClient.syslogDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.syslogDashClient.syslogDashClientMod.Transport.Tcp
-import typings.syslogDashClient.syslogDashClientMod.Transport.Udp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

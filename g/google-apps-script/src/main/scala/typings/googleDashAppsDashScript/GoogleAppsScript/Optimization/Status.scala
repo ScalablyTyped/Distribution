@@ -1,13 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Optimization
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.ABNORMAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.FEASIBLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.INFEASIBLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.MODEL_INVALID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.NOT_SOLVED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.OPTIMAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.UNBOUNDED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

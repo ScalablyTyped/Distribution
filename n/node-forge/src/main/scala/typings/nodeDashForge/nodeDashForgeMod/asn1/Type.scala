@@ -1,26 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.asn1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.BITSTRING
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.BMPSTRING
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.BOOLEAN
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.EMBEDDED
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.ENUMERATED
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.EXTERNAL
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.GENERALIZEDTIME
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.IA5STRING
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.INTEGER
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.NONE
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.NULL
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.OCTETSTRING
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.ODESC
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.PRINTABLESTRING
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.REAL
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.ROID
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.SEQUENCE
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.SET
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.UTCTIME
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Type.UTF8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -136,8 +116,7 @@ object Type extends js.Object {
   object ODESC extends TopLevel[ODESC with Double]
   
   /* 6 */ @js.native
-  object OID
-    extends TopLevel[typings.nodeDashForge.nodeDashForgeMod.asn1.Type.OID with Double]
+  object OID extends TopLevel[OID with Double]
   
   /* 19 */ @js.native
   object PRINTABLESTRING extends TopLevel[PRINTABLESTRING with Double]

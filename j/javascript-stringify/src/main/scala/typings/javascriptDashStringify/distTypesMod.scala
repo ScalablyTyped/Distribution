@@ -1,6 +1,5 @@
 package typings.javascriptDashStringify
 
-import typings.javascriptDashStringify.distTypesMod.Next
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`

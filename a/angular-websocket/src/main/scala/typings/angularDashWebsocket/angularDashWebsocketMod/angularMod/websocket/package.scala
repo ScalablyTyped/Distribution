@@ -13,12 +13,8 @@ package object websocket {
     */
   type IWebSocketProvider = js.Function3[
     /* url */ String, 
-    /* protocols */ js.UndefOr[
-      String | js.Array[String] | typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocketConfigOptions
-    ], 
-    /* options */ js.UndefOr[
-      typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocketConfigOptions
-    ], 
-    typings.angularDashWebsocket.angularDashWebsocketMod.angularMod.websocket.IWebSocket
+    /* protocols */ js.UndefOr[String | js.Array[String] | IWebSocketConfigOptions], 
+    /* options */ js.UndefOr[IWebSocketConfigOptions], 
+    IWebSocket
   ]
 }

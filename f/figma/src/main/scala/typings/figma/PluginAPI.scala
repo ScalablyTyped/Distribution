@@ -1,6 +1,6 @@
 package typings.figma
 
-import typings.figma.figmaStrings.`1DOT0DOT0`
+import typings.figma.figmaStrings.`1Dot0Dot0`
 import typings.figma.figmaStrings.close
 import typings.figma.figmaStrings.currentpagechange
 import typings.figma.figmaStrings.selectionchange
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PluginAPI extends js.Object {
-  val apiVersion: `1DOT0DOT0` = js.native
+  val apiVersion: `1Dot0Dot0` = js.native
   val clientStorage: ClientStorageAPI = js.native
   val command: String = js.native
   var currentPage: PageNode = js.native

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsGeographicalScope.cell
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsGeographicalScope.cellWithImmediateDisplay
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsGeographicalScope.locationArea
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsGeographicalScope.none
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsGeographicalScope.plmn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

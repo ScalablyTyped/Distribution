@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.fullyQualified
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.reserved
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.suffix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

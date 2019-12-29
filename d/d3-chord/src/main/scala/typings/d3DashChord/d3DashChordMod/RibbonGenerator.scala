@@ -18,7 +18,7 @@ trait RibbonGenerator[This, RibbonDatum, RibbonSubgroupDatum] extends js.Object 
     *
     * @param d The datum representing the chord for which the ribbon is to be generated.
     */
-  def apply(`this`: This, d: RibbonDatum, args: js.Any*): String | Null = js.native
+  def apply(d: RibbonDatum, args: js.Any*): String | Null = js.native
   /**
     * Returns the current rendering context, which defaults to null.
     */

@@ -25,7 +25,8 @@ class Assistant protected () extends js.Object {
   var MoveWhenInTheWay: Boolean = js.native
   val Name: String = js.native
   val NewBalloon: Balloon = js.native
-  var `Office.Assistant_typekey`: Assistant = js.native
+  @JSName("Office.Assistant_typekey")
+  var OfficeDotAssistant_typekey: Assistant = js.native
   var On: Boolean = js.native
   val Parent: js.Any = js.native
   var Reduced: Boolean = js.native

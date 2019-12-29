@@ -1,7 +1,6 @@
 package typings.baconjs
 
-import typings.baconjs.baconjsStrings.`<no-more>`
-import typings.baconjs.typesReplyMod.Reply
+import typings.baconjs.baconjsStrings.`Lessthansignno-moreGreaterthansign`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +10,6 @@ import scala.scalajs.js.annotation._
 object typesReplyMod extends js.Object {
   val more: Reply = js.native
   val noMore: Reply = js.native
-  type Reply = `<no-more>` | js.Any
+  type Reply = `Lessthansignno-moreGreaterthansign` | js.Any
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object ddDashTraceStrings {
   @js.native
-  sealed trait _dd1DOTsrDOTeausr extends js.Object
+  sealed trait _dd1DotsrDoteausr extends js.Object
   
   @js.native
   sealed trait `agent-exporter` extends js.Object
@@ -78,22 +78,22 @@ object ddDashTraceStrings {
   sealed trait http2 extends js.Object
   
   @js.native
-  sealed trait httpDOTmethod extends js.Object
+  sealed trait httpDotmethod extends js.Object
   
   @js.native
-  sealed trait httpDOTrequestDOTheaders extends js.Object
+  sealed trait httpDotrequestDotheaders extends js.Object
   
   @js.native
-  sealed trait httpDOTresponseDOTheaders extends js.Object
+  sealed trait httpDotresponseDotheaders extends js.Object
   
   @js.native
-  sealed trait httpDOTroute extends js.Object
+  sealed trait httpDotroute extends js.Object
   
   @js.native
-  sealed trait httpDOTstatus_code extends js.Object
+  sealed trait httpDotstatus_code extends js.Object
   
   @js.native
-  sealed trait httpDOTurl extends js.Object
+  sealed trait httpDoturl extends js.Object
   
   @js.native
   sealed trait http_headers extends js.Object
@@ -117,10 +117,10 @@ object ddDashTraceStrings {
   sealed trait `log-exporter` extends js.Object
   
   @js.native
-  sealed trait manualDOTdrop extends js.Object
+  sealed trait manualDotdrop extends js.Object
   
   @js.native
-  sealed trait manualDOTkeep extends js.Object
+  sealed trait manualDotkeep extends js.Object
   
   @js.native
   sealed trait memcached extends js.Object
@@ -165,7 +165,7 @@ object ddDashTraceStrings {
   sealed trait redis extends js.Object
   
   @js.native
-  sealed trait resourceDOTname extends js.Object
+  sealed trait resourceDotname extends js.Object
   
   @js.native
   sealed trait restify extends js.Object
@@ -174,19 +174,19 @@ object ddDashTraceStrings {
   sealed trait router extends js.Object
   
   @js.native
-  sealed trait samplingDOTpriority extends js.Object
+  sealed trait samplingDotpriority extends js.Object
   
   @js.native
   sealed trait server extends js.Object
   
   @js.native
-  sealed trait serviceDOTname extends js.Object
+  sealed trait serviceDotname extends js.Object
   
   @js.native
-  sealed trait spanDOTkind extends js.Object
+  sealed trait spanDotkind extends js.Object
   
   @js.native
-  sealed trait spanDOTtype extends js.Object
+  sealed trait spanDottype extends js.Object
   
   @js.native
   sealed trait tedious extends js.Object
@@ -204,7 +204,7 @@ object ddDashTraceStrings {
   sealed trait winston extends js.Object
   
   @scala.inline
-  def _dd1DOTsrDOTeausr: _dd1DOTsrDOTeausr = "_dd1.sr.eausr".asInstanceOf[_dd1DOTsrDOTeausr]
+  def _dd1DotsrDoteausr: _dd1DotsrDoteausr = "_dd1.sr.eausr".asInstanceOf[_dd1DotsrDoteausr]
   @scala.inline
   def `agent-exporter`: `agent-exporter` = "agent-exporter".asInstanceOf[`agent-exporter`]
   @scala.inline
@@ -252,17 +252,17 @@ object ddDashTraceStrings {
   @scala.inline
   def http2: http2 = "http2".asInstanceOf[http2]
   @scala.inline
-  def httpDOTmethod: httpDOTmethod = "http.method".asInstanceOf[httpDOTmethod]
+  def httpDotmethod: httpDotmethod = "http.method".asInstanceOf[httpDotmethod]
   @scala.inline
-  def httpDOTrequestDOTheaders: httpDOTrequestDOTheaders = "http.request.headers".asInstanceOf[httpDOTrequestDOTheaders]
+  def httpDotrequestDotheaders: httpDotrequestDotheaders = "http.request.headers".asInstanceOf[httpDotrequestDotheaders]
   @scala.inline
-  def httpDOTresponseDOTheaders: httpDOTresponseDOTheaders = "http.response.headers".asInstanceOf[httpDOTresponseDOTheaders]
+  def httpDotresponseDotheaders: httpDotresponseDotheaders = "http.response.headers".asInstanceOf[httpDotresponseDotheaders]
   @scala.inline
-  def httpDOTroute: httpDOTroute = "http.route".asInstanceOf[httpDOTroute]
+  def httpDotroute: httpDotroute = "http.route".asInstanceOf[httpDotroute]
   @scala.inline
-  def httpDOTstatus_code: httpDOTstatus_code = "http.status_code".asInstanceOf[httpDOTstatus_code]
+  def httpDotstatus_code: httpDotstatus_code = "http.status_code".asInstanceOf[httpDotstatus_code]
   @scala.inline
-  def httpDOTurl: httpDOTurl = "http.url".asInstanceOf[httpDOTurl]
+  def httpDoturl: httpDoturl = "http.url".asInstanceOf[httpDoturl]
   @scala.inline
   def http_headers: http_headers = "http_headers".asInstanceOf[http_headers]
   @scala.inline
@@ -278,9 +278,9 @@ object ddDashTraceStrings {
   @scala.inline
   def `log-exporter`: `log-exporter` = "log-exporter".asInstanceOf[`log-exporter`]
   @scala.inline
-  def manualDOTdrop: manualDOTdrop = "manual.drop".asInstanceOf[manualDOTdrop]
+  def manualDotdrop: manualDotdrop = "manual.drop".asInstanceOf[manualDotdrop]
   @scala.inline
-  def manualDOTkeep: manualDOTkeep = "manual.keep".asInstanceOf[manualDOTkeep]
+  def manualDotkeep: manualDotkeep = "manual.keep".asInstanceOf[manualDotkeep]
   @scala.inline
   def memcached: memcached = "memcached".asInstanceOf[memcached]
   @scala.inline
@@ -310,21 +310,21 @@ object ddDashTraceStrings {
   @scala.inline
   def redis: redis = "redis".asInstanceOf[redis]
   @scala.inline
-  def resourceDOTname: resourceDOTname = "resource.name".asInstanceOf[resourceDOTname]
+  def resourceDotname: resourceDotname = "resource.name".asInstanceOf[resourceDotname]
   @scala.inline
   def restify: restify = "restify".asInstanceOf[restify]
   @scala.inline
   def router: router = "router".asInstanceOf[router]
   @scala.inline
-  def samplingDOTpriority: samplingDOTpriority = "sampling.priority".asInstanceOf[samplingDOTpriority]
+  def samplingDotpriority: samplingDotpriority = "sampling.priority".asInstanceOf[samplingDotpriority]
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   @scala.inline
-  def serviceDOTname: serviceDOTname = "service.name".asInstanceOf[serviceDOTname]
+  def serviceDotname: serviceDotname = "service.name".asInstanceOf[serviceDotname]
   @scala.inline
-  def spanDOTkind: spanDOTkind = "span.kind".asInstanceOf[spanDOTkind]
+  def spanDotkind: spanDotkind = "span.kind".asInstanceOf[spanDotkind]
   @scala.inline
-  def spanDOTtype: spanDOTtype = "span.type".asInstanceOf[spanDOTtype]
+  def spanDottype: spanDottype = "span.type".asInstanceOf[spanDottype]
   @scala.inline
   def tedious: tedious = "tedious".asInstanceOf[tedious]
   @scala.inline

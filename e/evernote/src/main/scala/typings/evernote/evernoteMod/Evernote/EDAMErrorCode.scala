@@ -1,25 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.AUTH_EXPIRED
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.BAD_DATA_FORMAT
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.DATA_CONFLICT
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.DATA_REQUIRED
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.ENML_VALIDATION
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.INTERNAL_ERROR
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.INVALID_AUTH
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LEN_TOO_LONG
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LEN_TOO_SHORT
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LIMIT_REACHED
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.PERMISSION_DENIED
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.QUOTA_REACHED
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.RATE_LIMIT_REACHED
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.SHARD_UNAVAILABLE
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TAKEN_DOWN
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TOO_FEW
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TOO_MANY
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.UNKNOWN
-import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.UNSUPPORTED_OPERATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

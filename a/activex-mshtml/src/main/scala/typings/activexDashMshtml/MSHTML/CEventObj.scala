@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.CEventObj")
 @js.native
 class CEventObj protected () extends js.Object {
-  var `MSHTML.CEventObj_typekey`: CEventObj = js.native
+  @JSName("MSHTML.CEventObj_typekey")
+  var MSHTMLDotCEventObj_typekey: CEventObj = js.native
   val actionURL: String = js.native
   var altKey: Boolean = js.native
   var altLeft: Boolean = js.native

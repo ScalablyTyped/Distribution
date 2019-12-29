@@ -1,6 +1,5 @@
 package typings.phaser.Phaser
 
-import typings.phaser.Phaser.Core.TimeStep
 import typings.phaser.Phaser.DOM.RequestAnimationFrame
 import typings.phaser.Phaser.Display.Color
 import typings.phaser.Phaser.Scale.CenterType

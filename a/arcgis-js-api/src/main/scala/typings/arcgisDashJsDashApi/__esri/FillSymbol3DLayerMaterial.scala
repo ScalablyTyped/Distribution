@@ -1,6 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.HashMap
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multiply
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.replace
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tint
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +32,7 @@ trait FillSymbol3DLayerMaterial extends AnonymousAccessor {
     *
     * @default multiply
     */
-  var colorMixMode: js.UndefOr[String] = js.undefined
+  var colorMixMode: js.UndefOr[tint | replace | multiply] = js.undefined
 }
 
 object FillSymbol3DLayerMaterial {
@@ -39,7 +42,7 @@ object FillSymbol3DLayerMaterial {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     color: Color = null,
-    colorMixMode: String = null,
+    colorMixMode: tint | replace | multiply = null,
     get: /* propertyName */ String => _ = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, FillSymbol3DLayerMaterial]) with (js.Function1[/* props */ HashMap[_], FillSymbol3DLayerMaterial]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null

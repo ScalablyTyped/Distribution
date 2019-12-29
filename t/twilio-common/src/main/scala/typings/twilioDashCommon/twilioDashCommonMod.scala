@@ -3,7 +3,6 @@ package typings.twilioDashCommon
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import typings.std.Error
-import typings.twilioDashCommon.twilioDashCommonMod.AccessManager
 import typings.twilioDashCommon.twilioDashCommonStrings.error
 import typings.twilioDashCommon.twilioDashCommonStrings.tokenExpired
 import typings.twilioDashCommon.twilioDashCommonStrings.tokenUpdated

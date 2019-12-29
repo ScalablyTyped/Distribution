@@ -11,7 +11,8 @@ class OMathAutoCorrectEntries protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathAutoCorrectEntries_typekey`: OMathAutoCorrectEntries = js.native
+  @JSName("Word.OMathAutoCorrectEntries_typekey")
+  var WordDotOMathAutoCorrectEntries_typekey: OMathAutoCorrectEntries = js.native
   def Add(Name: String, Value: String): OMathAutoCorrectEntry = js.native
   def Item(Index: js.Any): OMathAutoCorrectEntry = js.native
 }

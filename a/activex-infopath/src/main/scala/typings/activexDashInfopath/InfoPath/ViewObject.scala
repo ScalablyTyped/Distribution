@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InfoPath.ViewObject")
 @js.native
 class ViewObject protected () extends js.Object {
-  var `InfoPath.ViewObject_typekey`: ViewObject = js.native
+  @JSName("InfoPath.ViewObject_typekey")
+  var InfoPathDotViewObject_typekey: ViewObject = js.native
   val Name: String = js.native
   val Window: typings.activexDashInfopath.InfoPath.Window = js.native
   def DisableAutoUpdate(): Unit = js.native

@@ -1,8 +1,8 @@
 package typings.reactDashRnd.reactDashRndMod
 
 import typings.react.reactMod.NativeMouseEvent
+import typings.reactDashDraggable.reactDashDraggableBooleans.`false`
 import typings.reactDashDraggable.reactDashDraggableMod.DraggableEvent
-import typings.reactDashDraggable.reactDashDraggableNumbers.`false`
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import typings.std.TouchEvent

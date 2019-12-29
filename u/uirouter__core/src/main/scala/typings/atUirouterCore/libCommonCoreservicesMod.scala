@@ -3,10 +3,6 @@ package typings.atUirouterCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.atUirouterCore.libCommonCommonMod.IInjectable
 import typings.atUirouterCore.libCommonCommonMod.Obj
-import typings.atUirouterCore.libCommonCoreservicesMod.$InjectorLike
-import typings.atUirouterCore.libCommonCoreservicesMod.$QLike
-import typings.atUirouterCore.libCommonCoreservicesMod.$QLikeDeferred
-import typings.atUirouterCore.libCommonCoreservicesMod.CoreServices
 import typings.atUirouterCore.libInterfaceMod.Disposable
 import typings.std.EventListener
 import scala.scalajs.js

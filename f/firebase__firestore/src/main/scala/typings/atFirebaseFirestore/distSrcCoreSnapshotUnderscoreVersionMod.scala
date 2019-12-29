@@ -1,7 +1,6 @@
 package typings.atFirebaseFirestore
 
 import typings.atFirebaseFirestore.distSrcApiTimestampMod.Timestamp
-import typings.atFirebaseFirestore.distSrcCoreSnapshotUnderscoreVersionMod.SnapshotVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

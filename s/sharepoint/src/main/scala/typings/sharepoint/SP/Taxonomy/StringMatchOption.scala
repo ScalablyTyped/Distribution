@@ -1,8 +1,6 @@
 package typings.sharepoint.SP.Taxonomy
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Taxonomy.StringMatchOption.exactMatch
-import typings.sharepoint.SP.Taxonomy.StringMatchOption.startsWith
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

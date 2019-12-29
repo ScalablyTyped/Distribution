@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ISortable extends IBase {
   /** [Config Option] (String) */
-  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
   var generateComparator: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
@@ -26,14 +26,10 @@ trait ISortable extends IBase {
   		* @returns Ext.util.Sorter[]
   		*/
   var sort: js.UndefOr[
-    js.Function2[
-      /* sorters */ js.UndefOr[js.Any], 
-      /* direction */ js.UndefOr[java.lang.String], 
-      Array
-    ]
+    js.Function2[/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], Array]
   ] = js.undefined
   /** [Config Option] (String) */
-  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  var sortRoot: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.util.Sorter[]/Object[]) */
   var sorters: js.UndefOr[js.Any] = js.undefined
 }
@@ -47,11 +43,11 @@ object ISortable {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    defaultSortDirection: java.lang.String = null,
-    extend: java.lang.String = null,
+    defaultSortDirection: String = null,
+    extend: String = null,
     generateComparator: () => Unit = null,
     getFirstSorter: () => ISorter = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ISortable = null,
     initSortable: () => Unit = null,
@@ -60,8 +56,8 @@ object ISortable {
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[java.lang.String]) => Array = null,
-    sortRoot: java.lang.String = null,
+    sort: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String]) => Array = null,
+    sortRoot: String = null,
     sorters: js.Any = null,
     statics: js.Any = null,
     uses: Array = null

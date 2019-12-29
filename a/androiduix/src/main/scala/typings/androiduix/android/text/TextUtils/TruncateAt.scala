@@ -1,11 +1,6 @@
 package typings.androiduix.android.text.TextUtils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.android.text.TextUtils.TruncateAt.END
-import typings.androiduix.android.text.TextUtils.TruncateAt.END_SMALL
-import typings.androiduix.android.text.TextUtils.TruncateAt.MARQUEE
-import typings.androiduix.android.text.TextUtils.TruncateAt.MIDDLE
-import typings.androiduix.android.text.TextUtils.TruncateAt.START
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

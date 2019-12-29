@@ -1,6 +1,6 @@
 package typings.turbostatus.turbostatusMod
 
-import typings.turbostatus.turbostatusNumbers.`false`
+import typings.turbostatus.turbostatusBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait ClientMetadata
   extends /* key */ StringDictionary[js.Any] {
+  var authorization_encrypted_response_alg: js.UndefOr[String] = js.undefined
+  var authorization_encrypted_response_enc: js.UndefOr[String] = js.undefined
+  var authorization_signed_response_alg: js.UndefOr[String] = js.undefined
   // important
   var client_id: String
   var client_secret: js.UndefOr[String] = js.undefined
@@ -39,6 +42,9 @@ object ClientMetadata {
   def apply(
     client_id: String,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    authorization_encrypted_response_alg: String = null,
+    authorization_encrypted_response_enc: String = null,
+    authorization_signed_response_alg: String = null,
     client_secret: String = null,
     default_max_age: Int | Double = null,
     id_token_encrypted_response_alg: String = null,
@@ -64,6 +70,9 @@ object ClientMetadata {
   ): ClientMetadata = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (authorization_encrypted_response_alg != null) __obj.updateDynamic("authorization_encrypted_response_alg")(authorization_encrypted_response_alg.asInstanceOf[js.Any])
+    if (authorization_encrypted_response_enc != null) __obj.updateDynamic("authorization_encrypted_response_enc")(authorization_encrypted_response_enc.asInstanceOf[js.Any])
+    if (authorization_signed_response_alg != null) __obj.updateDynamic("authorization_signed_response_alg")(authorization_signed_response_alg.asInstanceOf[js.Any])
     if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
     if (default_max_age != null) __obj.updateDynamic("default_max_age")(default_max_age.asInstanceOf[js.Any])
     if (id_token_encrypted_response_alg != null) __obj.updateDynamic("id_token_encrypted_response_alg")(id_token_encrypted_response_alg.asInstanceOf[js.Any])

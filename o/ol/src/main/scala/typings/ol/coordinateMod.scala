@@ -1,7 +1,5 @@
 package typings.ol
 
-import typings.ol.coordinateMod.Coordinate
-import typings.ol.coordinateMod.CoordinateFormat
 import typings.ol.geomCircleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.leafletDashDraw.leafletMod.Control
 
-import typings.leafletDashDraw.leafletDashDrawNumbers.`false`
+import typings.leafletDashDraw.leafletDashDrawBooleans.`false`
 import typings.leafletDashDraw.leafletMod.DrawOptions.CircleMarkerOptions
 import typings.leafletDashDraw.leafletMod.DrawOptions.CircleOptions
 import typings.leafletDashDraw.leafletMod.DrawOptions.MarkerOptions

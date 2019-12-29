@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fs", "Dir")
 @js.native
 class Dir () extends js.Object {
-  val path: java.lang.String = js.native
+  val path: String = js.native
   /**
     * Asynchronously close the directory's underlying resource handle.
     * Subsequent reads will result in errors.

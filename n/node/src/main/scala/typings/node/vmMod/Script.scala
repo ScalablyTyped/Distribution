@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("vm", "Script")
 @js.native
 class Script protected () extends js.Object {
-  def this(code: java.lang.String) = this()
-  def this(code: java.lang.String, options: ScriptOptions) = this()
+  def this(code: String) = this()
+  def this(code: String, options: ScriptOptions) = this()
   def createCachedData(): Buffer = js.native
   def runInContext(contextifiedSandbox: Context): js.Any = js.native
   def runInContext(contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native

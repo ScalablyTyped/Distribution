@@ -39,12 +39,6 @@ object vegaDashTypingsNumbers {
   @js.native
   sealed trait `900` extends FontWeight
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -67,9 +61,5 @@ object vegaDashTypingsNumbers {
   def `800`: `800` = 800.asInstanceOf[`800`]
   @scala.inline
   def `900`: `900` = 900.asInstanceOf[`900`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

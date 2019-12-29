@@ -31,12 +31,24 @@ object mongodbDashMemoryDashServerDashCoreMod extends js.Object {
   }
   
   @js.native
+  /**
+    * Create an Mongo-Memory-Sever Instance
+    *
+    * Note: because of JavaScript limitations, autoStart cannot be awaited here, use ".create" for async/await ability
+    * @param opts Mongo-Memory-Sever Options
+    */
   class MongoMemoryServer ()
     extends typings.mongodbDashMemoryDashServerDashCore.libMongoMemoryServerMod.default {
     def this(opts: MongoMemoryServerOptsT) = this()
   }
   
   @js.native
+  /**
+    * Create an Mongo-Memory-Sever Instance
+    *
+    * Note: because of JavaScript limitations, autoStart cannot be awaited here, use ".create" for async/await ability
+    * @param opts Mongo-Memory-Sever Options
+    */
   class default ()
     extends typings.mongodbDashMemoryDashServerDashCore.libMongoMemoryServerMod.default {
     def this(opts: MongoMemoryServerOptsT) = this()
@@ -63,6 +75,36 @@ object mongodbDashMemoryDashServerDashCoreMod extends js.Object {
     var childProcessList: js.Array[ChildProcess] = js.native
     def run(opts: MongodOps): js.Promise[
         typings.mongodbDashMemoryDashServerDashCore.libUtilMongoInstanceMod.MongoInstance
+      ] = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object MongoMemoryServer extends js.Object {
+    /**
+      * Create an Mongo-Memory-Sever Instance that can be awaited
+      * @param opts Mongo-Memory-Sever Options
+      */
+    def create(): js.Promise[
+        typings.mongodbDashMemoryDashServerDashCore.libMongoMemoryServerMod.MongoMemoryServer
+      ] = js.native
+    def create(opts: MongoMemoryServerOptsT): js.Promise[
+        typings.mongodbDashMemoryDashServerDashCore.libMongoMemoryServerMod.MongoMemoryServer
+      ] = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object default extends js.Object {
+    /**
+      * Create an Mongo-Memory-Sever Instance that can be awaited
+      * @param opts Mongo-Memory-Sever Options
+      */
+    def create(): js.Promise[
+        typings.mongodbDashMemoryDashServerDashCore.libMongoMemoryServerMod.MongoMemoryServer
+      ] = js.native
+    def create(opts: MongoMemoryServerOptsT): js.Promise[
+        typings.mongodbDashMemoryDashServerDashCore.libMongoMemoryServerMod.MongoMemoryServer
       ] = js.native
   }
   

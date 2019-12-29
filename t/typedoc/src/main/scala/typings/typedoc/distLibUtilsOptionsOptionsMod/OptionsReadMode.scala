@@ -1,8 +1,6 @@
 package typings.typedoc.distLibUtilsOptionsOptionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsReadMode.Fetch
-import typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsReadMode.Prefetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

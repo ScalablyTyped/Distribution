@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardTabKind.default
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardTabKind.email
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardTabKind.messaging
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardTabKind.phone
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardTabKind.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

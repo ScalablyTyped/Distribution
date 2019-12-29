@@ -1,6 +1,6 @@
 package typings.fsDashMerger
 
-import typings.fsDashMerger.fsDashMergerNumbers.`false`
+import typings.fsDashMerger.fsDashMergerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

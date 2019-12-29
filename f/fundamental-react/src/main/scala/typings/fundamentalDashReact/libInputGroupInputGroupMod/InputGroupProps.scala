@@ -16,6 +16,8 @@ trait InputGroupProps
   var addonPos: js.UndefOr[InputGroupAddonPosition] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var compact: js.UndefOr[Boolean] = js.undefined
+  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   var glyph: js.UndefOr[String] = js.undefined
   /* CSS class(es) to add to the `<input>` element. */
   var inputClassName: js.UndefOr[String] = js.undefined
@@ -48,6 +50,8 @@ object InputGroupProps {
     addonPos: InputGroupAddonPosition = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
+    customStyles: StringDictionary[js.Any] = null,
+    disableStyles: js.UndefOr[Boolean] = js.undefined,
     glyph: String = null,
     inputClassName: String = null,
     inputId: String = null,
@@ -68,6 +72,8 @@ object InputGroupProps {
     if (addonPos != null) __obj.updateDynamic("addonPos")(addonPos.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
     if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.vscodeDashLanguageserverDashProtocol.libProtocolDotWorkspaceFold
 
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationType
-import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotWorkspaceFoldersMod.DidChangeWorkspaceFoldersNotification.HandlerSignature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

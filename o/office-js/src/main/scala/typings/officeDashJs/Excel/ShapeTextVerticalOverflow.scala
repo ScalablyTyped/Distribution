@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ShapeTextVerticalOverflow.clip
-import typings.officeDashJs.Excel.ShapeTextVerticalOverflow.ellipsis
-import typings.officeDashJs.Excel.ShapeTextVerticalOverflow.overflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

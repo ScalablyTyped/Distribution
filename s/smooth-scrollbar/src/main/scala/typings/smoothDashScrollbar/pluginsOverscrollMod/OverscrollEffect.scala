@@ -1,8 +1,6 @@
 package typings.smoothDashScrollbar.pluginsOverscrollMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.smoothDashScrollbar.pluginsOverscrollMod.OverscrollEffect.BOUNCE
-import typings.smoothDashScrollbar.pluginsOverscrollMod.OverscrollEffect.GLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

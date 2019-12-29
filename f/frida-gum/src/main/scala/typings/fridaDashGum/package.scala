@@ -13,7 +13,6 @@ package object fridaDashGum {
   import typings.fridaDashGum.fridaDashGumStrings.exec
   import typings.fridaDashGum.fridaDashGumStrings.ret
   import typings.fridaDashGum.fridaDashGumStrings.stop
-  import typings.std.ArrayBuffer
 
   type AnyFunction = js.Function1[/* repeated */ js.Any, js.Any]
   /* Rewritten from type alias, can be one of: 

@@ -101,21 +101,21 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def foldr[R](callback: MemoIterator[T, R]): R = js.native
   def foldr[R](callback: MemoIterator[T, R], accumulator: R): R = js.native
   def foldr[R](callback: MemoIterator[T, R], accumulator: R, thisArg: js.Any): R = js.native
-  def forEach(): T = js.native
-  def forEach(callback: ObjectIterator[T, Unit]): T = js.native
-  def forEach(callback: ObjectIterator[T, Unit], thisArg: js.Any): T = js.native
-  @JSName("forEach")
-  def forEach_Dictionary(): Dictionary[T] = js.native
-  @JSName("forEach")
-  def forEach_Dictionary(callback: DictionaryIterator[T, Unit]): Dictionary[T] = js.native
-  @JSName("forEach")
-  def forEach_Dictionary(callback: DictionaryIterator[T, Unit], thisArg: js.Any): Dictionary[T] = js.native
+  def forEach(): Dictionary[T] = js.native
+  def forEach(callback: DictionaryIterator[T, Unit]): Dictionary[T] = js.native
+  def forEach(callback: DictionaryIterator[T, Unit], thisArg: js.Any): Dictionary[T] = js.native
   @JSName("forEach")
   def forEach_List(): List[T] = js.native
   @JSName("forEach")
   def forEach_List(callback: ListIterator[T, Unit]): List[T] = js.native
   @JSName("forEach")
   def forEach_List(callback: ListIterator[T, Unit], thisArg: js.Any): List[T] = js.native
+  @JSName("forEach")
+  def forEach_T(): T = js.native
+  @JSName("forEach")
+  def forEach_T(callback: ObjectIterator[T, Unit]): T = js.native
+  @JSName("forEach")
+  def forEach_T(callback: ObjectIterator[T, Unit], thisArg: js.Any): T = js.native
   def get(id: js.Any): T = js.native
   def groupBy(): Dictionary[js.Array[T]] = js.native
   def groupBy(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): Dictionary[js.Array[T]] = js.native

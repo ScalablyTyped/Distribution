@@ -1,12 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.api
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.api.FieldBehavior.FIELD_BEHAVIOR_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.api.FieldBehavior.IMMUTABLE
-import typings.dialogflow.protosProtosMod.google.api.FieldBehavior.INPUT_ONLY
-import typings.dialogflow.protosProtosMod.google.api.FieldBehavior.OPTIONAL
-import typings.dialogflow.protosProtosMod.google.api.FieldBehavior.OUTPUT_ONLY
-import typings.dialogflow.protosProtosMod.google.api.FieldBehavior.REQUIRED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

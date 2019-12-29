@@ -21,16 +21,16 @@ object opentracingStrings {
   sealed trait consumer extends js.Object
   
   @js.native
-  sealed trait dbDOTinstance extends js.Object
+  sealed trait dbDotinstance extends js.Object
   
   @js.native
-  sealed trait dbDOTstatement extends js.Object
+  sealed trait dbDotstatement extends js.Object
   
   @js.native
-  sealed trait dbDOTtype extends js.Object
+  sealed trait dbDottype extends js.Object
   
   @js.native
-  sealed trait dbDOTuser extends js.Object
+  sealed trait dbDotuser extends js.Object
   
   @js.native
   sealed trait error extends js.Object
@@ -39,49 +39,49 @@ object opentracingStrings {
   sealed trait follows_from extends js.Object
   
   @js.native
-  sealed trait httpDOTmethod extends js.Object
+  sealed trait httpDotmethod extends js.Object
   
   @js.native
-  sealed trait httpDOTstatus_code extends js.Object
+  sealed trait httpDotstatus_code extends js.Object
   
   @js.native
-  sealed trait httpDOTurl extends js.Object
+  sealed trait httpDoturl extends js.Object
   
   @js.native
   sealed trait http_headers extends js.Object
   
   @js.native
-  sealed trait message_busDOTdestination extends js.Object
+  sealed trait message_busDotdestination extends js.Object
   
   @js.native
-  sealed trait peerDOTaddress extends js.Object
+  sealed trait peerDotaddress extends js.Object
   
   @js.native
-  sealed trait peerDOThostname extends js.Object
+  sealed trait peerDothostname extends js.Object
   
   @js.native
-  sealed trait peerDOTipv4 extends js.Object
+  sealed trait peerDotipv4 extends js.Object
   
   @js.native
-  sealed trait peerDOTipv6 extends js.Object
+  sealed trait peerDotipv6 extends js.Object
   
   @js.native
-  sealed trait peerDOTport extends js.Object
+  sealed trait peerDotport extends js.Object
   
   @js.native
-  sealed trait peerDOTservice extends js.Object
+  sealed trait peerDotservice extends js.Object
   
   @js.native
   sealed trait producer extends js.Object
   
   @js.native
-  sealed trait samplingDOTpriority extends js.Object
+  sealed trait samplingDotpriority extends js.Object
   
   @js.native
   sealed trait server extends js.Object
   
   @js.native
-  sealed trait spanDOTkind extends js.Object
+  sealed trait spanDotkind extends js.Object
   
   @js.native
   sealed trait text_map extends js.Object
@@ -97,47 +97,47 @@ object opentracingStrings {
   @scala.inline
   def consumer: consumer = "consumer".asInstanceOf[consumer]
   @scala.inline
-  def dbDOTinstance: dbDOTinstance = "db.instance".asInstanceOf[dbDOTinstance]
+  def dbDotinstance: dbDotinstance = "db.instance".asInstanceOf[dbDotinstance]
   @scala.inline
-  def dbDOTstatement: dbDOTstatement = "db.statement".asInstanceOf[dbDOTstatement]
+  def dbDotstatement: dbDotstatement = "db.statement".asInstanceOf[dbDotstatement]
   @scala.inline
-  def dbDOTtype: dbDOTtype = "db.type".asInstanceOf[dbDOTtype]
+  def dbDottype: dbDottype = "db.type".asInstanceOf[dbDottype]
   @scala.inline
-  def dbDOTuser: dbDOTuser = "db.user".asInstanceOf[dbDOTuser]
+  def dbDotuser: dbDotuser = "db.user".asInstanceOf[dbDotuser]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def follows_from: follows_from = "follows_from".asInstanceOf[follows_from]
   @scala.inline
-  def httpDOTmethod: httpDOTmethod = "http.method".asInstanceOf[httpDOTmethod]
+  def httpDotmethod: httpDotmethod = "http.method".asInstanceOf[httpDotmethod]
   @scala.inline
-  def httpDOTstatus_code: httpDOTstatus_code = "http.status_code".asInstanceOf[httpDOTstatus_code]
+  def httpDotstatus_code: httpDotstatus_code = "http.status_code".asInstanceOf[httpDotstatus_code]
   @scala.inline
-  def httpDOTurl: httpDOTurl = "http.url".asInstanceOf[httpDOTurl]
+  def httpDoturl: httpDoturl = "http.url".asInstanceOf[httpDoturl]
   @scala.inline
   def http_headers: http_headers = "http_headers".asInstanceOf[http_headers]
   @scala.inline
-  def message_busDOTdestination: message_busDOTdestination = "message_bus.destination".asInstanceOf[message_busDOTdestination]
+  def message_busDotdestination: message_busDotdestination = "message_bus.destination".asInstanceOf[message_busDotdestination]
   @scala.inline
-  def peerDOTaddress: peerDOTaddress = "peer.address".asInstanceOf[peerDOTaddress]
+  def peerDotaddress: peerDotaddress = "peer.address".asInstanceOf[peerDotaddress]
   @scala.inline
-  def peerDOThostname: peerDOThostname = "peer.hostname".asInstanceOf[peerDOThostname]
+  def peerDothostname: peerDothostname = "peer.hostname".asInstanceOf[peerDothostname]
   @scala.inline
-  def peerDOTipv4: peerDOTipv4 = "peer.ipv4".asInstanceOf[peerDOTipv4]
+  def peerDotipv4: peerDotipv4 = "peer.ipv4".asInstanceOf[peerDotipv4]
   @scala.inline
-  def peerDOTipv6: peerDOTipv6 = "peer.ipv6".asInstanceOf[peerDOTipv6]
+  def peerDotipv6: peerDotipv6 = "peer.ipv6".asInstanceOf[peerDotipv6]
   @scala.inline
-  def peerDOTport: peerDOTport = "peer.port".asInstanceOf[peerDOTport]
+  def peerDotport: peerDotport = "peer.port".asInstanceOf[peerDotport]
   @scala.inline
-  def peerDOTservice: peerDOTservice = "peer.service".asInstanceOf[peerDOTservice]
+  def peerDotservice: peerDotservice = "peer.service".asInstanceOf[peerDotservice]
   @scala.inline
   def producer: producer = "producer".asInstanceOf[producer]
   @scala.inline
-  def samplingDOTpriority: samplingDOTpriority = "sampling.priority".asInstanceOf[samplingDOTpriority]
+  def samplingDotpriority: samplingDotpriority = "sampling.priority".asInstanceOf[samplingDotpriority]
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   @scala.inline
-  def spanDOTkind: spanDOTkind = "span.kind".asInstanceOf[spanDOTkind]
+  def spanDotkind: spanDotkind = "span.kind".asInstanceOf[spanDotkind]
   @scala.inline
   def text_map: text_map = "text_map".asInstanceOf[text_map]
 }

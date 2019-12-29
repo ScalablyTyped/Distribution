@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.preact.preactMod.Component
 import typings.preact.preactMod.ComponentChild
 import typings.preact.preactMod.VNode
-import typings.preactDashI18n.preactDashI18nMod.TextComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

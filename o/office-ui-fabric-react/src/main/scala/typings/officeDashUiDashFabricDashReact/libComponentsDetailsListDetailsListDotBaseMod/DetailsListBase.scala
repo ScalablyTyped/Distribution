@@ -82,6 +82,7 @@ class DetailsListBase protected ()
   var _setFocusToRow: js.Any = js.native
   var _setFocusToRowIfPending: js.Any = js.native
   var _sumColumnWidths: js.Any = js.native
+  var isRightArrow: js.Any = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MDetailsListBase(newProps: IDetailsListProps): Unit = js.native
   /* protected */ def _onRenderRow(props: IDetailsRowProps): Element = js.native
@@ -90,6 +91,9 @@ class DetailsListBase protected ()
   def componentDidUpdate_MDetailsListBase(prevProps: IDetailsListProps, prevState: IDetailsListState): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDetailsListBase(): Unit = js.native
+  /**
+    * Force the component to update.
+    */
   /* InferMemberOverrides */
   override def forceUpdate(): Unit = js.native
 }

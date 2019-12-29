@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
@@ -146,7 +145,7 @@ trait Sublayer extends Accessor {
     *
     *
     */
-  def createFeatureLayer(): IPromise[FeatureLayer] = js.native
+  def createFeatureLayer(): js.Promise[FeatureLayer] = js.native
   /**
     * Creates a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) object with default values representing the layer's state, including filters (definition expression) on the layer's features.
     *
@@ -165,11 +164,11 @@ trait Sublayer extends Accessor {
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatures(): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties, options: SublayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: SublayerQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   /**
     * Serialize the sublayer for usage in /export
     *

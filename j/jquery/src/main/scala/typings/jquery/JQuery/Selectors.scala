@@ -22,13 +22,14 @@ trait Selectors
     *
     * **Solution**: Rename any of the older usage to `jQuery.expr.pseudos`. The functionality is identical.
     */
-  var `:`: PseudoFunctions
+  @JSName(":")
+  var Colon: PseudoFunctions
 }
 
 object Selectors {
   @scala.inline
   def apply(
-    `:`: PseudoFunctions,
+    Colon: PseudoFunctions,
     attrHandle: AttrHandleFunctions,
     cacheLength: Double,
     createPseudo: CreatePseudoFunction => PseudoFunction,
@@ -40,7 +41,7 @@ object Selectors {
     setFilters: SetFilterFunctions
   ): Selectors = {
     val __obj = js.Dynamic.literal(attrHandle = attrHandle.asInstanceOf[js.Any], cacheLength = cacheLength.asInstanceOf[js.Any], createPseudo = js.Any.fromFunction1(createPseudo), filter = filter.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], preFilter = preFilter.asInstanceOf[js.Any], pseudos = pseudos.asInstanceOf[js.Any], setFilters = setFilters.asInstanceOf[js.Any])
-    __obj.updateDynamic(":")(`:`.asInstanceOf[js.Any])
+    __obj.updateDynamic(":")(Colon.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selectors]
   }

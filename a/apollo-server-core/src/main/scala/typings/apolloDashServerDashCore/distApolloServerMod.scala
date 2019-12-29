@@ -34,7 +34,7 @@ object distApolloServerMod extends js.Object {
     var initializeDocumentStore: js.Any = js.native
     var parseOptions: js.Any = js.native
     var playgroundOptions: js.UndefOr[RenderPageOptions] = js.native
-    var plugins: js.Array[ApolloServerPlugin] = js.native
+    var plugins: js.Array[ApolloServerPlugin[Record[String, _]]] = js.native
     var requestOptions: Partial[GraphQLServerOptions[_, _]] = js.native
     var schema: js.UndefOr[GraphQLSchema] = js.native
     var schemaDerivedData: js.Any = js.native

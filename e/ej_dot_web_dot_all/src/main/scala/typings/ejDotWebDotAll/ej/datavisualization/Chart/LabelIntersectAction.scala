@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Hide
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.MultipleRows
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.None
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Rotate45
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Rotate90
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Trim
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Wrap
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.WrapByword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

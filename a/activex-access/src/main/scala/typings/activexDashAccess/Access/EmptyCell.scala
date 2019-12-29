@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.EmptyCell")
 @js.native
 class EmptyCell protected () extends js.Object {
-  var `Access.EmptyCell_typekey`: EmptyCell = js.native
+  @JSName("Access.EmptyCell_typekey")
+  var AccessDotEmptyCell_typekey: EmptyCell = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BackColor: Double = js.native
   var BackShade: Double = js.native

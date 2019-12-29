@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.AlignmentPosition.CENTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.AlignmentPosition.HORIZONTAL_CENTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.AlignmentPosition.VERTICAL_CENTER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

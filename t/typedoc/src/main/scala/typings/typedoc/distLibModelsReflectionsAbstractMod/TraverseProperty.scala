@@ -1,14 +1,6 @@
 package typings.typedoc.distLibModelsReflectionsAbstractMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Children
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.GetSignature
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.IndexSignature
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Parameters
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.SetSignature
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Signatures
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeLiteral
-import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeParameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

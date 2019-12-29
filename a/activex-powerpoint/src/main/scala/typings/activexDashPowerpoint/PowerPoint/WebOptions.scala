@@ -18,7 +18,8 @@ class WebOptions protected () extends js.Object {
   var HTMLVersion: PpHTMLVersion = js.native
   var IncludeNavigation: MsoTriState = js.native
   var OrganizeInFolder: MsoTriState = js.native
-  var `PowerPoint.WebOptions_typekey`: WebOptions = js.native
+  @JSName("PowerPoint.WebOptions_typekey")
+  var PowerPointDotWebOptions_typekey: WebOptions = js.native
   var RelyOnVML: MsoTriState = js.native
   var ResizeGraphics: MsoTriState = js.native
   var ScreenSize: MsoScreenSize = js.native

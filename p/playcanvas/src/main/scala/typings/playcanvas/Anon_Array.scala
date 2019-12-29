@@ -1,5 +1,17 @@
 package typings.playcanvas
 
+import typings.playcanvas.playcanvasStrings.asset
+import typings.playcanvas.playcanvasStrings.boolean
+import typings.playcanvas.playcanvasStrings.curve
+import typings.playcanvas.playcanvasStrings.entity
+import typings.playcanvas.playcanvasStrings.json
+import typings.playcanvas.playcanvasStrings.number
+import typings.playcanvas.playcanvasStrings.rgb
+import typings.playcanvas.playcanvasStrings.rgba
+import typings.playcanvas.playcanvasStrings.string
+import typings.playcanvas.playcanvasStrings.vec2
+import typings.playcanvas.playcanvasStrings.vec3
+import typings.playcanvas.playcanvasStrings.vec4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +31,13 @@ trait Anon_Array extends js.Object {
   var size: js.UndefOr[Double] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
-  var `type`: String
+  var `type`: boolean | number | string | json | asset | entity | rgb | rgba | vec2 | vec3 | vec4 | curve
 }
 
 object Anon_Array {
   @scala.inline
   def apply(
-    `type`: String,
+    `type`: boolean | number | string | json | asset | entity | rgb | rgba | vec2 | vec3 | vec4 | curve,
     array: js.UndefOr[Boolean] = js.undefined,
     assetType: String = null,
     color: String = null,

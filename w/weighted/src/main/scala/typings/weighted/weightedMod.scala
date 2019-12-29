@@ -1,7 +1,6 @@
 package typings.weighted
 
 import typings.std.Number
-import typings.weighted.weightedMod.RandomFunc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

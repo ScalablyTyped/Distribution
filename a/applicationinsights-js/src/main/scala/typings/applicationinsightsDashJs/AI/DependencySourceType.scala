@@ -1,9 +1,6 @@
 package typings.applicationinsightsDashJs.AI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.applicationinsightsDashJs.AI.DependencySourceType.Aic
-import typings.applicationinsightsDashJs.AI.DependencySourceType.Apmc
-import typings.applicationinsightsDashJs.AI.DependencySourceType.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

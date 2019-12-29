@@ -12,7 +12,8 @@ class ValueChange protected () extends js.Object {
   val AllocationWeightExpression: String = js.native
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.ValueChange_typekey`: ValueChange = js.native
+  @JSName("Excel.ValueChange_typekey")
+  var ExcelDotValueChange_typekey: ValueChange = js.native
   val Order: Double = js.native
   val Parent: js.Any = js.native
   val PivotCell: typings.activexDashExcel.Excel.PivotCell = js.native

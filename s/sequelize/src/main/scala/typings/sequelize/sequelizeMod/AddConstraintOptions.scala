@@ -21,25 +21,17 @@ trait AddConstraintOptions extends js.Object
 
 object AddConstraintOptions {
   @scala.inline
-  def AddPrimaryKeyConstraintOptions(`type`: `primary key`, name: String = null): AddConstraintOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AddConstraintOptions]
-  }
-  @scala.inline
-  def AddCheckConstraintOptions(`type`: check, name: String = null, where: AnyWhereOptions = null): AddConstraintOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AddConstraintOptions]
-  }
-  @scala.inline
   def AddDefaultConstraintOptions(`type`: default, defaultValue: js.Any = null, name: String = null): AddConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AddConstraintOptions]
+  }
+  @scala.inline
+  def AddPrimaryKeyConstraintOptions(`type`: `primary key`, name: String = null): AddConstraintOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddConstraintOptions]
   }
@@ -55,6 +47,14 @@ object AddConstraintOptions {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AddConstraintOptions]
+  }
+  @scala.inline
+  def AddCheckConstraintOptions(`type`: check, name: String = null, where: AnyWhereOptions = null): AddConstraintOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddConstraintOptions]
   }
   @scala.inline

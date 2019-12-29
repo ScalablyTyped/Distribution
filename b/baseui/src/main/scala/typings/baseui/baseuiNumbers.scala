@@ -32,9 +32,6 @@ object baseuiNumbers {
   @js.native
   sealed trait `8` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -53,7 +50,5 @@ object baseuiNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

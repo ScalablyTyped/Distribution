@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassDocumentEditor
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), DocumentEditor]
+     with Instantiable2[
       (/* element */ Element) | (/* element */ JQuery), 
       /* options */ Model, 
       DocumentEditor
-    ]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), DocumentEditor] {
+    ] {
   var Locale: js.Any = js.native
   var fn: DocumentEditor = js.native
 }

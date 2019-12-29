@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation._
 
 trait UrlWithStringQuery extends Url {
   @JSName("query")
-  var query_UrlWithStringQuery: java.lang.String | Null
+  var query_UrlWithStringQuery: String | Null
 }
 
 object UrlWithStringQuery {
   @scala.inline
   def apply(
-    href: java.lang.String,
-    auth: java.lang.String = null,
-    hash: java.lang.String = null,
-    host: java.lang.String = null,
-    hostname: java.lang.String = null,
-    path: java.lang.String = null,
-    pathname: java.lang.String = null,
-    port: java.lang.String = null,
-    protocol: java.lang.String = null,
-    query: java.lang.String = null,
-    search: java.lang.String = null,
+    href: String,
+    auth: String = null,
+    hash: String = null,
+    host: String = null,
+    hostname: String = null,
+    path: String = null,
+    pathname: String = null,
+    port: String = null,
+    protocol: String = null,
+    query: String = null,
+    search: String = null,
     slashes: js.UndefOr[Boolean] = js.undefined
   ): UrlWithStringQuery = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])

@@ -1,10 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.JsxEmit.None
-import typings.typescript.typescriptMod.JsxEmit.Preserve
-import typings.typescript.typescriptMod.JsxEmit.React
-import typings.typescript.typescriptMod.JsxEmit.ReactNative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

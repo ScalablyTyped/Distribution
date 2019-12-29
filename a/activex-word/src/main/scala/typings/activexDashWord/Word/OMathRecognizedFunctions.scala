@@ -11,7 +11,8 @@ class OMathRecognizedFunctions protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathRecognizedFunctions_typekey`: OMathRecognizedFunctions = js.native
+  @JSName("Word.OMathRecognizedFunctions_typekey")
+  var WordDotOMathRecognizedFunctions_typekey: OMathRecognizedFunctions = js.native
   def Add(Name: String): OMathRecognizedFunction = js.native
   def Item(Index: js.Any): OMathRecognizedFunction = js.native
 }

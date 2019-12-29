@@ -42,7 +42,8 @@ class Shape protected () extends js.Object {
   var Name: String = js.native
   @JSName("Nodes")
   val Nodes_Original: ShapeNodes = js.native
-  var `Office.Shape_typekey`: Shape = js.native
+  @JSName("Office.Shape_typekey")
+  var OfficeDotShape_typekey: Shape = js.native
   val Parent: js.Any = js.native
   val ParentGroup: Shape = js.native
   val PictureFormat: typings.activexDashOffice.Office.PictureFormat = js.native

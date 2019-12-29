@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Path
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Square
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

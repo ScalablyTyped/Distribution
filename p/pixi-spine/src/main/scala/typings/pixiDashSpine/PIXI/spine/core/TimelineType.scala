@@ -1,21 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.attachment
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.color
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.deform
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.drawOrder
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.event
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.ikConstraint
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintMix
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintPosition
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintSpacing
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.rotate
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.scale
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.shear
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.transformConstraint
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.translate
-import typings.pixiDashSpine.PIXI.spine.core.TimelineType.twoColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.vscodeDashLanguageclient
 
 import typings.vscode.vscodeMod.CompletionItem
-import typings.vscodeDashLanguageclient.libProtocolCompletionItemMod.ProtocolCompletionItem
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`

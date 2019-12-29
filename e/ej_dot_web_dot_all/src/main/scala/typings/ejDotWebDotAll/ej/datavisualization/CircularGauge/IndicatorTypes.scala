@@ -1,25 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Circle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Cross
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Diamond
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Downarrow
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.HorizontalLine
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Image
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.InvertedTriangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Leftarrow
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Pentagon
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rightarrow
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.RoundedRectangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Star
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Text
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Trapezoid
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Triangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Uparrow
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Verticalline
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Wedge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

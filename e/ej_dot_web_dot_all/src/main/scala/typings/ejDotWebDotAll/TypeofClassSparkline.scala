@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassSparkline
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Sparkline]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Sparkline] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Sparkline]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Sparkline] {
   var Locale: js.Any = js.native
   var fn: Sparkline = js.native
 }

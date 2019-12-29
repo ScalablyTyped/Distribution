@@ -1,10 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.CELT_MONO
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_NARROWBAND
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_ULTRAWIDEBAND
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_WIDEBAND
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

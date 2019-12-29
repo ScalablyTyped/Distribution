@@ -2,7 +2,6 @@ package typings.tstl
 
 import typings.tstl.baseContainerContainerMod.Container
 import typings.tstl.baseContainerILinearContainerMod.ILinearContainer
-import typings.tstl.baseContainerSetContainerMod.SetContainer
 import typings.tstl.baseContainerSetContainerMod.SetContainer.InsertRet
 import typings.tstl.baseIteratorISetIteratorMod.ISetIterator
 import typings.tstl.baseIteratorISetIteratorMod.ISetReverseIterator
@@ -76,7 +75,7 @@ object baseContainerSetContainerMod extends js.Object {
       * @inheritDoc
       */
     @JSName("erase")
-    def erase_IteratorT(pos: IteratorT): IteratorT = js.native
+    def erase_Double(key: Key): Double = js.native
     /**
       * @inheritDoc
       */

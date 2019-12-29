@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atIonicDiscoverStrings {
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait Slash extends js.Object
   
   @js.native
   sealed trait connect extends js.Object
@@ -15,7 +15,7 @@ object atIonicDiscoverStrings {
   sealed trait error extends js.Object
   
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def Slash: Slash = "/".asInstanceOf[Slash]
   @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
   @scala.inline

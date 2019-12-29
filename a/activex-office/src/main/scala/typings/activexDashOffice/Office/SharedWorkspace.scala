@@ -21,7 +21,8 @@ class SharedWorkspace protected () extends js.Object {
   @JSName("Members")
   val Members_Original: SharedWorkspaceMembers = js.native
   var Name: String = js.native
-  var `Office.SharedWorkspace_typekey`: SharedWorkspace = js.native
+  @JSName("Office.SharedWorkspace_typekey")
+  var OfficeDotSharedWorkspace_typekey: SharedWorkspace = js.native
   val Parent: js.Any = js.native
   var SourceURL: String = js.native
   @JSName("Tasks")

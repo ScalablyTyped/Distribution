@@ -30,7 +30,8 @@ class Folder protected () extends js.Object {
   val ParentFolder: Folder = js.native
   /** Path to folder */
   val Path: String = js.native
-  var `Scripting.Folder_typekey`: Folder = js.native
+  @JSName("Scripting.Folder_typekey")
+  var ScriptingDotFolder_typekey: Folder = js.native
   /** Short name */
   val ShortName: String = js.native
   /** Short path */

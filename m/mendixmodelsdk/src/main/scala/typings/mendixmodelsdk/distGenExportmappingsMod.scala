@@ -1,10 +1,6 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
-import typings.mendixmodelsdk.distGenExportmappingsMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenExportmappingsMod.exportmappings.ExportMapping
-import typings.mendixmodelsdk.distGenExportmappingsMod.exportmappings.ExportObjectMappingElement
-import typings.mendixmodelsdk.distGenExportmappingsMod.exportmappings.ExportValueMappingElement
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.IMappingDocument
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.MappingDocument
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.ObjectMappingElement

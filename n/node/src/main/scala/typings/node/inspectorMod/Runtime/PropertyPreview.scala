@@ -11,19 +11,19 @@ trait PropertyPreview extends js.Object {
   /**
     * Property name.
     */
-  var name: java.lang.String
+  var name: String
   /**
     * Object subtype hint. Specified for <code>object</code> type values only.
     */
-  var subtype: js.UndefOr[java.lang.String] = js.undefined
+  var subtype: js.UndefOr[String] = js.undefined
   /**
     * Object type. Accessor means that the property itself is an accessor property.
     */
-  var `type`: java.lang.String
+  var `type`: String
   /**
     * User-friendly property value string.
     */
-  var value: js.UndefOr[java.lang.String] = js.undefined
+  var value: js.UndefOr[String] = js.undefined
   /**
     * Nested value preview.
     */
@@ -33,10 +33,10 @@ trait PropertyPreview extends js.Object {
 object PropertyPreview {
   @scala.inline
   def apply(
-    name: java.lang.String,
-    `type`: java.lang.String,
-    subtype: java.lang.String = null,
-    value: java.lang.String = null,
+    name: String,
+    `type`: String,
+    subtype: String = null,
+    value: String = null,
     valuePreview: ObjectPreview = null
   ): PropertyPreview = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])

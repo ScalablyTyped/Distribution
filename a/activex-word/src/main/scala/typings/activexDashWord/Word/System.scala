@@ -24,7 +24,8 @@ class System protected () extends js.Object {
   val QuickDrawInstalled: Boolean = js.native
   val Version: String = js.native
   val VerticalResolution: Double = js.native
-  var `Word.System_typekey`: System = js.native
+  @JSName("Word.System_typekey")
+  var WordDotSystem_typekey: System = js.native
   def Connect(Path: String): Unit = js.native
   def Connect(Path: String, Drive: js.Any): Unit = js.native
   def Connect(Path: String, Drive: js.Any, Password: js.Any): Unit = js.native

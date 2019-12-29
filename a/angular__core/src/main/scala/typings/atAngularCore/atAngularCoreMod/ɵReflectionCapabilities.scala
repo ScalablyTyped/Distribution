@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵReflectionCapabilities")
+@JSImport("@angular/core", "\u0275ReflectionCapabilities")
 @js.native
 class ɵReflectionCapabilities () extends PlatformReflectionCapabilities {
   def this(reflect: js.Any) = this()

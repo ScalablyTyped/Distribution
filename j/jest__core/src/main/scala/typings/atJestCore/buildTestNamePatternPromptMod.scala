@@ -1,6 +1,5 @@
 package typings.atJestCore
 
-import typings.atJestCore.buildTestNamePatternPromptMod.TestNamePatternPrompt
 import typings.atJestTestDashResult.buildTypesMod.TestResult
 import typings.node.NodeJS.WritableStream
 import typings.std.ScrollOptions

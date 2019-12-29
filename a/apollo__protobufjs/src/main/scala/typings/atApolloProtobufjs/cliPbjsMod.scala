@@ -1,6 +1,5 @@
 package typings.atApolloProtobufjs
 
-import typings.atApolloProtobufjs.cliPbjsMod.pbjsCallback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

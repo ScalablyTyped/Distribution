@@ -36,7 +36,7 @@ object Field extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Adds members to class  */
   def implement(): Unit = js.native
   /** [Method] Use a custom QuickTip instance separate from the main QuickTips singleton so that we can give it a custom frame style  */

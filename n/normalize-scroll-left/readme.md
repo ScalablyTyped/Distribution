@@ -1,7 +1,7 @@
 
 # Scala.js typings for normalize-scroll-left
 
-Typings are for version 0.1.2
+Typings are for version 0.2.0
 
 ## Library description:
 Utility library to determine and normalize Element.scrollLeft behavior

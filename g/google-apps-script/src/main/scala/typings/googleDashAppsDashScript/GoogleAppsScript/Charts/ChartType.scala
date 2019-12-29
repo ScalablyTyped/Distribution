@@ -1,26 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.AREA
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.BAR
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.BUBBLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.CANDLESTICK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.COLUMN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.COMBO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.GAUGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.GEO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.HISTOGRAM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.LINE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.ORG
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.PIE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.RADAR
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.SCATTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.SPARKLINE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.STEPPED_AREA
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.TABLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.TIMELINE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.TREEMAP
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartType.WATERFALL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

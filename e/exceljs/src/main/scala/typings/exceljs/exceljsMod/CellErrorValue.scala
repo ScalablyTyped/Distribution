@@ -1,23 +1,25 @@
 package typings.exceljs.exceljsMod
 
-import typings.exceljs.exceljsStrings.`#DIV/0!`
-import typings.exceljs.exceljsStrings.`#N/A`
-import typings.exceljs.exceljsStrings.`#NAME?`
-import typings.exceljs.exceljsStrings.`#NULL!`
-import typings.exceljs.exceljsStrings.`#NUM!`
-import typings.exceljs.exceljsStrings.`#REF!`
-import typings.exceljs.exceljsStrings.`#VALUE!`
+import typings.exceljs.exceljsStrings.NumbersignDIVSlash0Exclamationmark
+import typings.exceljs.exceljsStrings.NumbersignNAMEQuestionmark
+import typings.exceljs.exceljsStrings.NumbersignNSlashA
+import typings.exceljs.exceljsStrings.NumbersignNULLExclamationmark
+import typings.exceljs.exceljsStrings.NumbersignNUMExclamationmark
+import typings.exceljs.exceljsStrings.NumbersignREFExclamationmark
+import typings.exceljs.exceljsStrings.NumbersignVALUEExclamationmark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CellErrorValue extends _CellValue {
-  var error: `#N/A` | `#REF!` | `#NAME?` | `#DIV/0!` | `#NULL!` | `#VALUE!` | `#NUM!`
+  var error: NumbersignNSlashA | NumbersignREFExclamationmark | NumbersignNAMEQuestionmark | NumbersignDIVSlash0Exclamationmark | NumbersignNULLExclamationmark | NumbersignVALUEExclamationmark | NumbersignNUMExclamationmark
 }
 
 object CellErrorValue {
   @scala.inline
-  def apply(error: `#N/A` | `#REF!` | `#NAME?` | `#DIV/0!` | `#NULL!` | `#VALUE!` | `#NUM!`): CellErrorValue = {
+  def apply(
+    error: NumbersignNSlashA | NumbersignREFExclamationmark | NumbersignNAMEQuestionmark | NumbersignDIVSlash0Exclamationmark | NumbersignNULLExclamationmark | NumbersignVALUEExclamationmark | NumbersignNUMExclamationmark
+  ): CellErrorValue = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellErrorValue]

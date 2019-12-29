@@ -2,7 +2,6 @@ package typings.atGrpcGrpcDashJs
 
 import typings.atGrpcGrpcDashJs.buildSrcChannelDashCredentialsMod.ChannelCredentials
 import typings.atGrpcGrpcDashJs.buildSrcChannelDashOptionsMod.ChannelOptions
-import typings.atGrpcGrpcDashJs.buildSrcSubchannelDashPoolMod.SubchannelPool
 import typings.atGrpcGrpcDashJs.buildSrcSubchannelMod.Subchannel
 import scala.scalajs.js
 import scala.scalajs.js.`|`

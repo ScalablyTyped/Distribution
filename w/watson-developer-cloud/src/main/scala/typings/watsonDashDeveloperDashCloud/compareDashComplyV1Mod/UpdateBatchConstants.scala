@@ -1,12 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.UpdateBatchConstants.Action
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.UpdateBatchConstants.Action.CANCEL
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.UpdateBatchConstants.Action.RESCAN
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.UpdateBatchConstants.Model
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.UpdateBatchConstants.Model.CONTRACTS
-import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.UpdateBatchConstants.Model.TABLES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

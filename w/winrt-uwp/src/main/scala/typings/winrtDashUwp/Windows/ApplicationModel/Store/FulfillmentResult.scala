@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.nothingToFulfill
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchasePending
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchaseReverted
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.serverError
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

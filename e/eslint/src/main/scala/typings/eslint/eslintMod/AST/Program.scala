@@ -1,6 +1,7 @@
 package typings.eslint.eslintMod.AST
 
 import typings.estree.estreeMod.Comment
+import typings.estree.estreeMod.Directive
 import typings.estree.estreeMod.ModuleDeclaration
 import typings.estree.estreeMod.Statement
 import typings.estree.estreeStrings.module
@@ -17,7 +18,7 @@ trait Program
 object Program {
   @scala.inline
   def apply(
-    body: js.Array[Statement | ModuleDeclaration],
+    body: js.Array[Directive | Statement | ModuleDeclaration],
     sourceType: script | module,
     tokens: js.Array[Token],
     `type`: typings.estree.estreeStrings.Program,

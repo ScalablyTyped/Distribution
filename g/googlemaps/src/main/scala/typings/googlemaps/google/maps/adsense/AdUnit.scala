@@ -17,7 +17,7 @@ class AdUnit protected () extends MVCObject {
   def getChannelNumber(): String = js.native
   def getContainer(): Element = js.native
   def getFormat(): AdFormat = js.native
-  def getMap(): Map = js.native
+  def getMap(): Map[Element] = js.native
   def getPosition(): ControlPosition = js.native
   def getPublisherId(): String = js.native
   def getTextColor(): String = js.native
@@ -28,7 +28,7 @@ class AdUnit protected () extends MVCObject {
   def setChannelNumber(channelNumber: String): Unit = js.native
   def setFormat(format: AdFormat): Unit = js.native
   def setMap(): Unit = js.native
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map[Element]): Unit = js.native
   def setPosition(position: ControlPosition): Unit = js.native
   def setTextColor(textColor: String): Unit = js.native
   def setTitleColor(titleColor: String): Unit = js.native

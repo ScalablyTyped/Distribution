@@ -11,7 +11,8 @@ class ToOrFromRuleCondition protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: Boolean = js.native
-  var `Outlook.ToOrFromRuleCondition_typekey`: ToOrFromRuleCondition = js.native
+  @JSName("Outlook.ToOrFromRuleCondition_typekey")
+  var OutlookDotToOrFromRuleCondition_typekey: ToOrFromRuleCondition = js.native
   val Parent: js.Any = js.native
   val Recipients: typings.activexDashOutlook.Outlook.Recipients = js.native
   val Session: NameSpace = js.native

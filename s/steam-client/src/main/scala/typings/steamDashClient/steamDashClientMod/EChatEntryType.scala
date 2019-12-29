@@ -1,21 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.ChatMsg
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.Disconnected
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.Emote
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.Entered
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.HistoricalChat
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.Invalid
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.InviteGame
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.LeftConversation
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.LinkBlocked
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.LobbyGameStart
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.Reserved1
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.Reserved2
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.Typing
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.WasBanned
-import typings.steamDashClient.steamDashClientMod.EChatEntryType.WasKicked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

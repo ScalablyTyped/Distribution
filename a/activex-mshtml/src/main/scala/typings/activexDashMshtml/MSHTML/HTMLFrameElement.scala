@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLFrameElement")
 @js.native
 class HTMLFrameElement protected () extends js.Object {
-  var `MSHTML.HTMLFrameElement_typekey`: HTMLFrameElement = js.native
+  @JSName("MSHTML.HTMLFrameElement_typekey")
+  var MSHTMLDotHTMLFrameElement_typekey: HTMLFrameElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var allowTransparency: Boolean = js.native

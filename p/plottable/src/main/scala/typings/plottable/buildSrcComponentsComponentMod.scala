@@ -2,11 +2,6 @@ package typings.plottable
 
 import typings.d3DashSelection.d3DashSelectionMod.Selection
 import typings.plottable.buildSrcComponentsComponentContainerMod.ComponentContainer
-import typings.plottable.buildSrcComponentsComponentMod.Component
-import typings.plottable.buildSrcComponentsComponentMod.ComponentCallback
-import typings.plottable.buildSrcComponentsComponentMod.IResizeHandler
-import typings.plottable.buildSrcComponentsComponentMod.XAlignment
-import typings.plottable.buildSrcComponentsComponentMod.YAlignment
 import typings.plottable.buildSrcCoreInterfacesMod.Bounds
 import typings.plottable.buildSrcCoreInterfacesMod.Point
 import typings.plottable.buildSrcCoreInterfacesMod.SimpleSelection

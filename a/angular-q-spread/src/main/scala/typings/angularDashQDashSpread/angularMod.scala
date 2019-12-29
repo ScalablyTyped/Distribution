@@ -1,6 +1,5 @@
 package typings.angularDashQDashSpread
 
-import typings.angularDashQDashSpread.angularMod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

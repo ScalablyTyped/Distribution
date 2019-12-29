@@ -11,7 +11,8 @@ class Styles protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Styles_typekey`: Styles = js.native
+  @JSName("Word.Styles_typekey")
+  var WordDotStyles_typekey: Styles = js.native
   def Add(Name: String): Style = js.native
   def Add(Name: String, Type: js.Any): Style = js.native
   def Item(Index: js.Any): Style = js.native

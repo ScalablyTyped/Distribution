@@ -18,7 +18,8 @@ class FillFormat protected () extends js.Object {
   val GradientStops_Original: GradientStops = js.native
   val GradientStyle: MsoGradientStyle = js.native
   val GradientVariant: Double = js.native
-  var `Office.FillFormat_typekey`: FillFormat = js.native
+  @JSName("Office.FillFormat_typekey")
+  var OfficeDotFillFormat_typekey: FillFormat = js.native
   val Parent: js.Any = js.native
   val Pattern: MsoPatternType = js.native
   @JSName("PictureEffects")

@@ -1,8 +1,5 @@
 package typings.phaser.Phaser
 
-import typings.phaser.Phaser.Animations.Animation
-import typings.phaser.Phaser.Animations.AnimationFrame
-import typings.phaser.Phaser.Animations.AnimationManager
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Structs.Map
@@ -14,7 +11,7 @@ import typings.phaser.Phaser.Types.Animations.JSONAnimation
 import typings.phaser.Phaser.Types.Animations.JSONAnimationFrame
 import typings.phaser.Phaser.Types.Animations.JSONAnimations
 import typings.phaser.integer
-import typings.phaser.phaserNumbers.`false`
+import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

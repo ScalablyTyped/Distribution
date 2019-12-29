@@ -1,10 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.FilterUpdateType.ADD
-import typings.tableau.tableau.FilterUpdateType.ALL
-import typings.tableau.tableau.FilterUpdateType.REMOVE
-import typings.tableau.tableau.FilterUpdateType.REPLACE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

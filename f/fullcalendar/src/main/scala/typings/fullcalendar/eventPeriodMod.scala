@@ -1,6 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.eventPeriodMod.Default
 import typings.jquery.JQueryPromise
 import typings.moment.momentMod.Moment
 import scala.scalajs.js

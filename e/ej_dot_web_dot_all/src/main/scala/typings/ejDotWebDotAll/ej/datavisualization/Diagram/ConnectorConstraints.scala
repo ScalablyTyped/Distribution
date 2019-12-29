@@ -1,27 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.AllowDrop
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.BridgeObstacle
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.Bridging
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.CrispEdges
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.Default
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.Delete
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.Drag
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.DragLabel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.DragLimit
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.DragSegmentThumb
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.DragSourceEnd
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.DragTargetEnd
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.InheritBridging
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.InheritCrispEdges
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.InheritRouting
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.InheritTooltip
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.Interaction
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.PointerEvents
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.Routing
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ConnectorConstraints.Select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

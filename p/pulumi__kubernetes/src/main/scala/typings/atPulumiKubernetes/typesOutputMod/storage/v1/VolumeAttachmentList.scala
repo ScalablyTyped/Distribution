@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.storage.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.storageDotk8sDotioSlashv1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait VolumeAttachmentList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `storageDOTk8sDOTio/v1`
+  val apiVersion: storageDotk8sDotioSlashv1
   /**
     * Items is the list of VolumeAttachments
     */
@@ -38,7 +38,7 @@ trait VolumeAttachmentList extends js.Object {
 object VolumeAttachmentList {
   @scala.inline
   def apply(
-    apiVersion: `storageDOTk8sDOTio/v1`,
+    apiVersion: storageDotk8sDotioSlashv1,
     items: js.Array[VolumeAttachment],
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachmentList,
     metadata: ListMeta

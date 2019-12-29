@@ -2,8 +2,6 @@ package typings.typedDashGithubDashApi
 
 import typings.typedDashGithubDashApi.distApiDashInterfacesCommitMod.Commit
 import typings.typedDashGithubDashApi.distCommitDashRefMod.CommitRefClass
-import typings.typedDashGithubDashApi.distCommitMod.CommitSummaryClass
-import typings.typedDashGithubDashApi.distCommitMod.GitCommitSummaryClass
 import typings.typedDashGithubDashApi.distInterfacesCommitMod.CommitRef
 import typings.typedDashGithubDashApi.distInterfacesCommitMod.CommitSummary
 import typings.typedDashGithubDashApi.distInterfacesCommitMod.GitActor

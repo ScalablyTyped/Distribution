@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.AcquisitionAssignmentType.All
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.AcquisitionAssignmentType.Me
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.AcquisitionAssignmentType.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

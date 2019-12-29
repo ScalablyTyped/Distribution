@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassTile
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Tile]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Tile] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Tile]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Tile] {
   var Locale: js.Any = js.native
   var fn: Tile = js.native
 }

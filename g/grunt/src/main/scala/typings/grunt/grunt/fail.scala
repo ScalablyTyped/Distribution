@@ -1,14 +1,6 @@
 package typings.grunt.grunt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grunt.grunt.fail.ErrorCode
-import typings.grunt.grunt.fail.ErrorCode.Autocomplete
-import typings.grunt.grunt.fail.ErrorCode.Fatal
-import typings.grunt.grunt.fail.ErrorCode.MissingGruntfile
-import typings.grunt.grunt.fail.ErrorCode.NoError
-import typings.grunt.grunt.fail.ErrorCode.Task
-import typings.grunt.grunt.fail.ErrorCode.Template
-import typings.grunt.grunt.fail.ErrorCode.Warning
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,16 +17,16 @@ object fail extends js.Object {
     /**
       * Display a warning and abort Grunt immediately.
       */
-    def fatal(error: java.lang.String): Unit = js.native
-    def fatal(error: java.lang.String, errorCode: ErrorCode): Unit = js.native
+    def fatal(error: String): Unit = js.native
+    def fatal(error: String, errorCode: ErrorCode): Unit = js.native
     def fatal(error: Error): Unit = js.native
     def fatal(error: Error, errorCode: ErrorCode): Unit = js.native
     /**
       * Display a warning and abort Grunt immediately.
       * Grunt will continue processing tasks if the --force command-line option was specified.
       */
-    def warn(error: java.lang.String): Unit = js.native
-    def warn(error: java.lang.String, errorCode: ErrorCode): Unit = js.native
+    def warn(error: String): Unit = js.native
+    def warn(error: String, errorCode: ErrorCode): Unit = js.native
     def warn(error: Error): Unit = js.native
     def warn(error: Error, errorCode: ErrorCode): Unit = js.native
   }

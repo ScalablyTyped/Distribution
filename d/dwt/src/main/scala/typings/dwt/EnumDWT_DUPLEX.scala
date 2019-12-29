@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_DUPLEX.TWDX_1PASSDUPLEX
-import typings.dwt.EnumDWT_DUPLEX.TWDX_2PASSDUPLEX
-import typings.dwt.EnumDWT_DUPLEX.TWDX_NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

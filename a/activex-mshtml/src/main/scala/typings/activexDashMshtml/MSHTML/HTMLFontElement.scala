@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLFontElement")
 @js.native
 class HTMLFontElement protected () extends js.Object {
-  var `MSHTML.HTMLFontElement_typekey`: HTMLFontElement = js.native
+  @JSName("MSHTML.HTMLFontElement_typekey")
+  var MSHTMLDotHTMLFontElement_typekey: HTMLFontElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

@@ -1,9 +1,6 @@
 package typings.irc.ircMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.irc.ircMod.CommandType.error
-import typings.irc.ircMod.CommandType.normal
-import typings.irc.ircMod.CommandType.reply
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

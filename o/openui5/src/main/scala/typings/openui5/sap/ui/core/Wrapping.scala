@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.Wrapping.Hard
-import typings.openui5.sap.ui.core.Wrapping.None
-import typings.openui5.sap.ui.core.Wrapping.Off
-import typings.openui5.sap.ui.core.Wrapping.Soft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

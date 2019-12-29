@@ -1,22 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.DocumentPropertyItem.appName
-import typings.officeDashJs.Excel.DocumentPropertyItem.author
-import typings.officeDashJs.Excel.DocumentPropertyItem.category
-import typings.officeDashJs.Excel.DocumentPropertyItem.comments
-import typings.officeDashJs.Excel.DocumentPropertyItem.company
-import typings.officeDashJs.Excel.DocumentPropertyItem.creation
-import typings.officeDashJs.Excel.DocumentPropertyItem.format
-import typings.officeDashJs.Excel.DocumentPropertyItem.keywords
-import typings.officeDashJs.Excel.DocumentPropertyItem.lastAuth
-import typings.officeDashJs.Excel.DocumentPropertyItem.lastPrint
-import typings.officeDashJs.Excel.DocumentPropertyItem.lastSave
-import typings.officeDashJs.Excel.DocumentPropertyItem.manager
-import typings.officeDashJs.Excel.DocumentPropertyItem.revision
-import typings.officeDashJs.Excel.DocumentPropertyItem.subject
-import typings.officeDashJs.Excel.DocumentPropertyItem.template
-import typings.officeDashJs.Excel.DocumentPropertyItem.title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

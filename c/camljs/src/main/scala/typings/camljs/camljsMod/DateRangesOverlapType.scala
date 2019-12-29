@@ -1,11 +1,6 @@
 package typings.camljs.camljsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.camljs.camljsMod.DateRangesOverlapType.Day
-import typings.camljs.camljsMod.DateRangesOverlapType.Month
-import typings.camljs.camljsMod.DateRangesOverlapType.Now
-import typings.camljs.camljsMod.DateRangesOverlapType.Week
-import typings.camljs.camljsMod.DateRangesOverlapType.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

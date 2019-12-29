@@ -2,7 +2,6 @@ package typings.mongoose.mongooseMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongoose.Anon_Message
-import typings.mongoose.mongooseMod.Error.ValidatorError
 import typings.mongoose.mongooseStrings.MongooseError
 import typings.std.ErrorConstructor
 import scala.scalajs.js

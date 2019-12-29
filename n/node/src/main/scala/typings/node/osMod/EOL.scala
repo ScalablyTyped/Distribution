@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("os", "EOL")
 @js.native
-object EOL
-  extends TopLevel[java.lang.String]
+object EOL extends TopLevel[String]
 

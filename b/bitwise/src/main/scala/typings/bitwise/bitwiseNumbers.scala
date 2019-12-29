@@ -1,8 +1,8 @@
 package typings.bitwise
 
-import typings.bitwise.esmTypesMod.Bit
-import typings.bitwise.esmTypesMod.UInt4
-import typings.bitwise.esmTypesMod.UInt8
+import typings.bitwise.typesMod.Bit
+import typings.bitwise.typesMod.UInt4
+import typings.bitwise.typesMod.UInt8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,1318 +11,1318 @@ object bitwiseNumbers {
   @js.native
   sealed trait `0`
     extends Bit
-       with typings.bitwise.typesMod.Bit
+       with typings.bitwise.esmTypesMod.Bit
        with UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `1`
     extends Bit
-       with typings.bitwise.typesMod.Bit
+       with typings.bitwise.esmTypesMod.Bit
        with UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `10`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `100`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `101`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `102`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `103`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `104`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `105`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `106`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `107`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `108`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `109`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `11`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `110`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `111`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `112`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `113`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `114`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `115`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `116`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `117`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `118`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `119`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `12`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `120`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `121`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `122`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `123`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `124`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `125`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `126`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `127`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `128`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `129`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `13`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `130`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `131`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `132`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `133`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `134`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `135`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `136`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `137`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `138`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `139`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `14`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `140`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `141`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `142`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `143`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `144`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `145`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `146`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `147`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `148`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `149`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `15`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `150`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `151`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `152`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `153`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `154`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `155`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `156`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `157`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `158`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `159`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `16`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `160`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `161`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `162`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `163`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `164`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `165`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `166`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `167`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `168`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `169`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `17`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `170`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `171`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `172`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `173`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `174`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `175`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `176`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `177`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `178`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `179`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `18`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `180`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `181`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `182`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `183`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `184`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `185`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `186`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `187`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `188`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `189`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `19`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `190`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `191`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `192`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `193`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `194`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `195`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `196`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `197`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `198`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `199`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `2`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `20`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `200`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `201`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `202`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `203`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `204`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `205`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `206`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `207`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `208`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `209`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `21`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `210`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `211`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `212`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `213`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `214`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `215`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `216`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `217`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `218`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `219`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `22`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `220`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `221`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `222`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `223`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `224`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `225`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `226`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `227`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `228`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `229`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `23`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `230`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `231`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `232`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `233`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `234`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `235`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `236`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `237`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `238`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `239`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `24`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `240`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `241`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `242`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `243`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `244`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `245`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `246`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `247`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `248`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `249`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `25`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `250`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `251`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `252`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `253`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `254`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `255`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `26`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `27`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `28`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `29`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `3`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `30`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `31`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `32`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `33`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `34`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `35`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `36`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `37`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `38`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `39`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `4`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `40`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `41`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `42`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `43`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `44`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `45`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `46`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `47`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `48`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `49`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `5`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `50`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `51`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `52`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `53`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `54`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `55`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `56`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `57`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `58`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `59`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `6`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `60`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `61`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `62`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `63`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `64`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `65`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `66`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `67`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `68`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `69`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `7`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `70`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `71`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `72`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `73`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `74`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `75`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `76`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `77`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `78`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `79`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `8`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `80`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `81`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `82`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `83`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `84`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `85`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `86`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `87`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `88`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `89`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `9`
     extends UInt4
-       with typings.bitwise.typesMod.UInt4
+       with typings.bitwise.esmTypesMod.UInt4
        with UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `90`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `91`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `92`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `93`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `94`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `95`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `96`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `97`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `98`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @js.native
   sealed trait `99`
     extends UInt8
-       with typings.bitwise.typesMod.UInt8
+       with typings.bitwise.esmTypesMod.UInt8
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

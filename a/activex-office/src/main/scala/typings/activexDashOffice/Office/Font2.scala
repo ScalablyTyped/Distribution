@@ -29,7 +29,8 @@ class Font2 protected () extends js.Object {
   var NameComplexScript: String = js.native
   var NameFarEast: String = js.native
   var NameOther: String = js.native
-  var `Office.Font2_typekey`: Font2 = js.native
+  @JSName("Office.Font2_typekey")
+  var OfficeDotFont2_typekey: Font2 = js.native
   val Parent: js.Any = js.native
   val Reflection: ReflectionFormat = js.native
   val Shadow: ShadowFormat = js.native

@@ -42,7 +42,7 @@ trait SwipeProperties extends WidgetProperties {
     */
   var iconClass: js.UndefOr[String] = js.undefined
   /**
-    * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the left or top side of the Swipe widget. See the image in the [class description](#) at the top of the page. Currently, all layers are supported except VectorTileLayers.
+    * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the left or top side of the Swipe widget. See the image in the [class description](#) at the top of the page. Currently, all layers are supported except GroupLayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#leadingLayers)
     */
@@ -56,7 +56,7 @@ trait SwipeProperties extends WidgetProperties {
     */
   var position: js.UndefOr[Double] = js.undefined
   /**
-    * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the right or bottom side of the Swipe widget. See the image in the [class description](#) at the top of the page. Currently, all layers are supported except VectorTileLayers.
+    * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the right or bottom side of the Swipe widget. See the image in the [class description](#) at the top of the page. Currently, all layers are supported except GroupLayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#trailingLayers)
     */

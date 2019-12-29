@@ -1,9 +1,6 @@
 package typings.askmethatDashRating.askmethatDashRatingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.DecimalStep
-import typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.HalfStep
-import typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.OnePerOneStep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

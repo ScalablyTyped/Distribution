@@ -1,6 +1,5 @@
 package typings.fileDashSelector
 
-import typings.fileDashSelector.distFileMod.FileWithPath
 import typings.std.File
 import typings.std.Map
 import scala.scalajs.js

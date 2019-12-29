@@ -1,6 +1,6 @@
 package typings.parseDashMockdb
 
-import typings.parse.Parse.Cloud.BeforeSaveRequest
+import typings.parse.parseMod._Global_.Parse.Cloud.BeforeSaveRequest
 import typings.parseDashMockdb.ParseMockDB.HookType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

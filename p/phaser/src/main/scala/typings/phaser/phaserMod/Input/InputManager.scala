@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Input
 
+import typings.phaser.Phaser.Game
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +27,6 @@ class InputManager protected ()
     * @param game The Game instance that owns the Input Manager.
     * @param config The Input Configuration object, as set in the Game Config.
     */
-  def this(game: typings.phaser.Phaser.Game, config: js.Object) = this()
+  def this(game: Game, config: js.Object) = this()
 }
 

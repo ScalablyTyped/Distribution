@@ -1,10 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.asn1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.APPLICATION
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.CONTEXT_SPECIFIC
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.PRIVATE
-import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.UNIVERSAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

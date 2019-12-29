@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait LodashFlatMapDepth1x2 extends js.Object {
   def apply(iteratee: String): js.Array[_] = js.native
   def apply(iteratee: String, collection: js.Object): js.Array[_] = js.native
-  def apply(iteratee: js.Object): js.Array[Boolean] = js.native
+  def apply(iteratee: js.Object): LodashFlatMapDepth4x3 = js.native
   def apply(iteratee: js.Object, collection: js.Object): js.Array[Boolean] = js.native
   def apply(iteratee: __): LodashFlatMapDepth3x6 = js.native
   def apply(iteratee: __, collection: js.Object): LodashFlatMapDepth3x6 = js.native
@@ -22,7 +22,7 @@ trait LodashFlatMapDepth1x2 extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ]
-  ): LodashFlatMapDepth2x3[T, TResult] = js.native
+  ): js.Array[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 

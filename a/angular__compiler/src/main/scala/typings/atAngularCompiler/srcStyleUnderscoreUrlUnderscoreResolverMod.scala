@@ -1,6 +1,5 @@
 package typings.atAngularCompiler
 
-import typings.atAngularCompiler.srcStyleUnderscoreUrlUnderscoreResolverMod.StyleWithImports
 import typings.atAngularCompiler.srcUrlUnderscoreResolverMod.UrlResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ImageStyle.CIRCLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ImageStyle.SQUARE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

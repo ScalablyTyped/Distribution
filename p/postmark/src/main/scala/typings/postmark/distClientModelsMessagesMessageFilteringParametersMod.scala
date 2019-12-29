@@ -2,15 +2,6 @@ package typings.postmark
 
 import org.scalablytyped.runtime.TopLevel
 import typings.postmark.distClientModelsClientFilteringParametersMod.FilteringParameters
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Blocked
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Failed
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Processed
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Queued
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Scheduled
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Sent
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageTrackingFilteringParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -168,22 +159,13 @@ object distClientModelsMessagesMessageFilteringParametersMod extends js.Object {
     @JSBracketAccess
     def apply(value: String): js.UndefOr[OutboundMessageStatus with String] = js.native
     /* "processed" */ @js.native
-    object Processed
-      extends TopLevel[
-              typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Processed with String
-            ]
+    object Processed extends TopLevel[Processed with String]
     
     /* "queued" */ @js.native
-    object Queued
-      extends TopLevel[
-              typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Queued with String
-            ]
+    object Queued extends TopLevel[Queued with String]
     
     /* "sent" */ @js.native
-    object Sent
-      extends TopLevel[
-              typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Sent with String
-            ]
+    object Sent extends TopLevel[Sent with String]
     
   }
   

@@ -19,7 +19,7 @@ trait KeydownEventArgs extends js.Object {
   var keyCode: js.UndefOr[Double] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the event object.
     */
   var originalArgs: js.UndefOr[js.Any] = js.undefined
@@ -38,7 +38,7 @@ object KeydownEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     ctrlKey: js.UndefOr[Boolean] = js.undefined,
     keyCode: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     originalArgs: js.Any = null,
     shiftKey: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null

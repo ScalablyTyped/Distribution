@@ -10,7 +10,7 @@ trait HelperEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the autocomplete model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Resizable.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -18,11 +18,7 @@ trait HelperEventArgs extends js.Object {
 
 object HelperEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Resizable.Model = null,
-    `type`: String = null
-  ): HelperEventArgs = {
+  def apply(cancel: js.UndefOr[Boolean] = js.undefined, model: Model = null, `type`: String = null): HelperEventArgs = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])

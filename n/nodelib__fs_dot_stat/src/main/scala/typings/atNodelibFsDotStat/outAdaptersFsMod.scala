@@ -1,6 +1,5 @@
 package typings.atNodelibFsDotStat
 
-import typings.atNodelibFsDotStat.outAdaptersFsMod.FileSystemAdapter
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
 import typings.std.Partial

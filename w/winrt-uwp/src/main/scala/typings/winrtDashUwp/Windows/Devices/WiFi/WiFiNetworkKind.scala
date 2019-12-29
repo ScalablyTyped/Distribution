@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiNetworkKind.adhoc
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiNetworkKind.any
-import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiNetworkKind.infrastructure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

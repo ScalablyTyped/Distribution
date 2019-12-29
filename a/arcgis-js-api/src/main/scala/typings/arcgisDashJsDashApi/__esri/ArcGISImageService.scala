@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.all
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.any
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bilinear
@@ -227,8 +226,8 @@ trait ArcGISImageService extends js.Object {
     * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def fetchImage(extent: Extent, width: Double, height: Double): IPromise[_] = js.native
-  def fetchImage(extent: Extent, width: Double, height: Double, options: ArcGISImageServiceFetchImageOptions): IPromise[_] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[_] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double, options: ArcGISImageServiceFetchImageOptions): js.Promise[_] = js.native
   /**
     * Generates raster info for the specified rendering rule.
     *
@@ -237,7 +236,7 @@ trait ArcGISImageService extends js.Object {
     * @param renderingRule Rendering rule for the requested raster info.
     *
     */
-  def generateRasterInfo(renderingRule: RasterFunction): IPromise[RasterInfo] = js.native
+  def generateRasterInfo(renderingRule: RasterFunction): js.Promise[RasterInfo] = js.native
   /**
     * Gets the [image coordinate system](https://developers.arcgis.com/rest/services-reference/raster-ics.htm) information of a catalog item in an image service. The returned object can be used to set the 2D MapView's [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#spatialReference) and [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent) so that the image can be displayed in its original coordinate system. The image service must have a catalog capability.
     *
@@ -247,8 +246,8 @@ trait ArcGISImageService extends js.Object {
     * @param abortOptions Signal object that can be used to abort the asynchronous task.
     *
     */
-  def getCatalogItemICSInfo(rasterId: Double): IPromise[_] = js.native
-  def getCatalogItemICSInfo(rasterId: Double, abortOptions: AbortSignal): IPromise[_] = js.native
+  def getCatalogItemICSInfo(rasterId: Double): js.Promise[_] = js.native
+  def getCatalogItemICSInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[_] = js.native
   /**
     * Get the [raster info](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html) of a [catalog item](https://developers.arcgis.com/rest/services-reference/raster-catalog-item.htm) in an image service. Each raster catalog item represents a feature in the raster catalog. Each such feature has an associated raster. The image service must have a catalog capability.
     *
@@ -258,8 +257,8 @@ trait ArcGISImageService extends js.Object {
     * @param abortOptions Signal object that can be used to abort the asynchronous task.
     *
     */
-  def getCatalogItemRasterInfo(rasterId: Double): IPromise[RasterInfo] = js.native
-  def getCatalogItemRasterInfo(rasterId: Double, abortOptions: AbortSignal): IPromise[RasterInfo] = js.native
+  def getCatalogItemRasterInfo(rasterId: Double): js.Promise[RasterInfo] = js.native
+  def getCatalogItemRasterInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[RasterInfo] = js.native
 }
 
 @JSGlobal("__esri.ArcGISImageService")

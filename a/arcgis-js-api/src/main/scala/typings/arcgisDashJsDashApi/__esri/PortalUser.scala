@@ -1,10 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.english
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org_admin
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org_publisher
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org_user
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import typings.std.Date
 import scala.scalajs.js
@@ -80,11 +82,11 @@ trait PortalUser extends Accessor {
     */
   var region: String = js.native
   /**
-    * Defines the user's role in the organization. See [roleId](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#roleId) for more details about when user has a custom role.  **Possible Values:** org_admin | org_publisher | org_user
+    * Defines the user's role in the organization. See [roleId](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#roleId) for more details about when user has a custom role.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#role)
     */
-  var role: String = js.native
+  var role: org_admin | org_publisher | org_user = js.native
   /**
     * The ID of the user's role.  Only set if the user is assigned a custom role.  When present, the [role](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#role) will indicate the "base" role of the custom role based on the privileges the custom role contains. For example, if the custom role contains some publisher privileges, the [role](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#role) will be set to `org_publisher`.
     *
@@ -132,7 +134,7 @@ trait PortalUser extends Accessor {
     * @param params.folder The portal folder in which to store the item.
     *
     */
-  def addItem(params: PortalUserAddItemParams): IPromise[PortalItem] = js.native
+  def addItem(params: PortalUserAddItemParams): js.Promise[PortalItem] = js.native
   /**
     * Deletes an item from the user's portal content.
     *
@@ -141,7 +143,7 @@ trait PortalUser extends Accessor {
     * @param item The portal item to remove.
     *
     */
-  def deleteItem(item: PortalItem): IPromise[_] = js.native
+  def deleteItem(item: PortalItem): js.Promise[_] = js.native
   /**
     * Deletes items from the user's portal content.
     *
@@ -150,7 +152,7 @@ trait PortalUser extends Accessor {
     * @param items The portal items to remove.
     *
     */
-  def deleteItems(items: js.Array[PortalItem]): IPromise[_] = js.native
+  def deleteItems(items: js.Array[PortalItem]): js.Promise[_] = js.native
   /**
     * Fetches all of the user's folders used to organize portal content.
     *
@@ -158,7 +160,7 @@ trait PortalUser extends Accessor {
     *
     *
     */
-  def fetchFolders(): IPromise[js.Array[PortalFolder]] = js.native
+  def fetchFolders(): js.Promise[js.Array[PortalFolder]] = js.native
   /**
     * Fetches all the groups that the portal user has permission to access.
     *
@@ -166,7 +168,7 @@ trait PortalUser extends Accessor {
     *
     *
     */
-  def fetchGroups(): IPromise[js.Array[PortalGroup]] = js.native
+  def fetchGroups(): js.Promise[js.Array[PortalGroup]] = js.native
   /**
     * Retrieves all the items in the specified folder.
     *
@@ -180,8 +182,16 @@ trait PortalUser extends Accessor {
     * @param params.start The index of the first entry in the result set response. The index is 1-based.
     *
     */
-  def fetchItems(): IPromise[_] = js.native
-  def fetchItems(params: PortalUserFetchItemsParams): IPromise[_] = js.native
+  def fetchItems(): js.Promise[_] = js.native
+  def fetchItems(params: PortalUserFetchItemsParams): js.Promise[_] = js.native
+  /**
+    * Fetches the tag objects that have been created by the portal user.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchTags)
+    *
+    *
+    */
+  def fetchTags(): js.Promise[js.Array[_]] = js.native
   /**
     * Get the URL to the thumbnail image for the user.  Available width sizes: 150, 300 and 600.
     *
@@ -200,8 +210,8 @@ trait PortalUser extends Accessor {
     * @param queryParams The input query parameters defined in [PortalQueryParams](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html). This object may be [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting).
     *
     */
-  def queryFavorites(): IPromise[PortalQueryResult] = js.native
-  def queryFavorites(queryParams: PortalQueryParams): IPromise[PortalQueryResult] = js.native
+  def queryFavorites(): js.Promise[PortalQueryResult] = js.native
+  def queryFavorites(queryParams: PortalQueryParams): js.Promise[PortalQueryResult] = js.native
 }
 
 @JSGlobal("__esri.PortalUser")

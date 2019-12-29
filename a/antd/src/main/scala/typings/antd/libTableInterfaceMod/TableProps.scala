@@ -1,7 +1,7 @@
 package typings.antd.libTableInterfaceMod
 
 import typings.antd.Anon_ScrollToFirstRowOnChange
-import typings.antd.antdNumbers.`false`
+import typings.antd.antdBooleans.`false`
 import typings.antd.libPaginationPaginationMod.PaginationConfig
 import typings.antd.libSpinMod.SpinProps
 import typings.csstype.csstypeMod.TableLayoutProperty
@@ -9,6 +9,7 @@ import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.Partial
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,7 +49,7 @@ trait TableProps[T] extends js.Object {
   var onChange: js.UndefOr[
     js.Function4[
       /* pagination */ PaginationConfig, 
-      /* filters */ Record[String, js.Array[String]], 
+      /* filters */ Partial[Record[String, js.Array[String]]], 
       /* sorter */ SorterResult[T], 
       /* extra */ TableCurrentDataSource[T], 
       Unit
@@ -99,7 +100,7 @@ object TableProps {
     indentSize: Int | Double = null,
     loading: Boolean | SpinProps = null,
     locale: TableLocale = null,
-    onChange: (/* pagination */ PaginationConfig, /* filters */ Record[String, js.Array[String]], /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => Unit = null,
+    onChange: (/* pagination */ PaginationConfig, /* filters */ Partial[Record[String, js.Array[String]]], /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => Unit = null,
     onExpand: (/* expanded */ Boolean, /* record */ T) => Unit = null,
     onExpandedRowsChange: /* expandedRowKeys */ js.Array[Double | String] => Unit = null,
     onHeaderRow: /* columns */ js.Array[ColumnProps[T]] => TableEventListeners = null,

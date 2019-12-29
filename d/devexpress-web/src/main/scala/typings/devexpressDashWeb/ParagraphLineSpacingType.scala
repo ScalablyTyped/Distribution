@@ -1,12 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.ParagraphLineSpacingType.AtLeast
-import typings.devexpressDashWeb.ParagraphLineSpacingType.Double
-import typings.devexpressDashWeb.ParagraphLineSpacingType.Exactly
-import typings.devexpressDashWeb.ParagraphLineSpacingType.Multiple
-import typings.devexpressDashWeb.ParagraphLineSpacingType.Sesquialteral
-import typings.devexpressDashWeb.ParagraphLineSpacingType.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

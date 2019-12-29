@@ -4,8 +4,8 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.RegExp
 import typings.std.Window
+import typings.tinymce.tinymceBooleans.`false`
 import typings.tinymce.tinymceMod.settings.Menu
-import typings.tinymce.tinymceNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

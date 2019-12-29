@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing.OptionDetails.PrintOptionType.itemList
-import typings.winrtDashUwp.Windows.Graphics.Printing.OptionDetails.PrintOptionType.number
-import typings.winrtDashUwp.Windows.Graphics.Printing.OptionDetails.PrintOptionType.text
-import typings.winrtDashUwp.Windows.Graphics.Printing.OptionDetails.PrintOptionType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

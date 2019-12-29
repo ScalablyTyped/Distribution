@@ -2,7 +2,7 @@ package typings.i18next.i18nextMod
 
 import typings.i18next.Anon_AllowedHosts
 import typings.i18next.Anon_AltKey
-import typings.i18next.i18nextNumbers.`false`
+import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.all
 import typings.i18next.i18nextStrings.current
 import typings.i18next.i18nextStrings.currentOnly

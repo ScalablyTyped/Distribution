@@ -28,7 +28,8 @@ class ToggleButton protected () extends js.Object {
   var ForeColor: Double = js.native
   var GroupName: String = js.native
   var Locked: Boolean = js.native
-  var `MSForms.ToggleButton_typekey`: ToggleButton = js.native
+  @JSName("MSForms.ToggleButton_typekey")
+  var MSFormsDotToggleButton_typekey: ToggleButton = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var MultiSelect: fmMultiSelect = js.native

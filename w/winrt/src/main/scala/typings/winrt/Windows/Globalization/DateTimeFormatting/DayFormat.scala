@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.default
-import typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,7 @@ trait NavigateEventArgs extends js.Object {
   var date: js.UndefOr[js.Any] = js.undefined
   /** returns the DatePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DatePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previous view state of calendar.
     */
   var navigateFrom: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ object NavigateEventArgs {
   @scala.inline
   def apply(
     date: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.DatePicker.Model = null,
+    model: Model = null,
     navigateFrom: String = null,
     navigateTo: String = null,
     `type`: String = null,

@@ -1,8 +1,6 @@
 package typings.raspiDashI2c
 
 import typings.node.Buffer
-import typings.raspiDashI2c.raspiDashI2cMod.ReadCallback
-import typings.raspiDashI2c.raspiDashI2cMod.WriteCallback
 import typings.raspiDashPeripheral.raspiDashPeripheralMod.Peripheral
 import typings.std.Error
 import scala.scalajs.js

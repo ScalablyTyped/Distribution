@@ -44,12 +44,12 @@ trait KnockoutStatic extends js.Object {
   def command(param: CommandOptions): Command = js.native
   def editable[T](): KnockoutObservable[T | Null] = js.native
   def editable[T](value: T): KnockoutObservable[T] = js.native
-  def editableArray[T](): EditableArray[T] = js.native
-  def editableArray[T](value: js.Array[T]): EditableArray[T] = js.native
+  def editableArray[T](): typings.knockout.KnockoutObservableArray[T] = js.native
+  def editableArray[T](value: js.Array[T]): typings.knockout.KnockoutObservableArray[T] = js.native
   @JSName("editableArray")
-  def editableArray_T_KnockoutObservableArray[T](): typings.knockout.KnockoutObservableArray[T] = js.native
+  def editableArray_T_EditableArray[T](): EditableArray[T] = js.native
   @JSName("editableArray")
-  def editableArray_T_KnockoutObservableArray[T](value: js.Array[T]): typings.knockout.KnockoutObservableArray[T] = js.native
+  def editableArray_T_EditableArray[T](value: js.Array[T]): EditableArray[T] = js.native
   @JSName("editable")
   def editable_T_Editable[T](): Editable[T] = js.native
   @JSName("editable")

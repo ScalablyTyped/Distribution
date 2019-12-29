@@ -1,15 +1,6 @@
 package typings.socks.typingsCommonConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.socks.typingsCommonConstantsMod.Socks5Response.AddressNotSupported
-import typings.socks.typingsCommonConstantsMod.Socks5Response.CommandNotSupported
-import typings.socks.typingsCommonConstantsMod.Socks5Response.ConnectionRefused
-import typings.socks.typingsCommonConstantsMod.Socks5Response.Failure
-import typings.socks.typingsCommonConstantsMod.Socks5Response.Granted
-import typings.socks.typingsCommonConstantsMod.Socks5Response.HostUnreachable
-import typings.socks.typingsCommonConstantsMod.Socks5Response.NetworkUnreachable
-import typings.socks.typingsCommonConstantsMod.Socks5Response.NotAllowed
-import typings.socks.typingsCommonConstantsMod.Socks5Response.TTLExpired
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,6 @@ package typings.workboxDashRouting
 
 import typings.std.RegExp
 import typings.workboxDashRouting.regExpRouteMod.RegExpRoute
-import typings.workboxDashRouting.registerRouteMod.RegisterRouteCapture
 import typings.workboxDashRouting.routeMod.Route
 import typings.workboxDashRouting.typesHTTPMethodMod.HTTPMethod
 import typings.workboxDashRouting.typesRouteHandlerMod.RouteHandler

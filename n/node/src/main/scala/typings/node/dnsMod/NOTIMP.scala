@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dns", "NOTIMP")
 @js.native
-object NOTIMP
-  extends TopLevel[java.lang.String]
+object NOTIMP extends TopLevel[String]
 

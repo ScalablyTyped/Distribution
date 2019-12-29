@@ -15,6 +15,7 @@ class Shading protected () extends js.Object {
   var ForegroundPatternColorIndex: WdColorIndex = js.native
   val Parent: js.Any = js.native
   var Texture: WdTextureIndex = js.native
-  var `Word.Shading_typekey`: Shading = js.native
+  @JSName("Word.Shading_typekey")
+  var WordDotShading_typekey: Shading = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkTypes
 
-import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
 import typings.atAwsDashSdkTypes.buildResponseMod.MetadataBearer
 import typings.std.Error
 import scala.scalajs.js

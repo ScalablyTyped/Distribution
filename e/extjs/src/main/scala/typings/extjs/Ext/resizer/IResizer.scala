@@ -24,7 +24,7 @@ trait IResizer extends IObservable {
   		*/
   var getTarget: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var handles: js.UndefOr[java.lang.String] = js.undefined
+  var handles: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var height: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
@@ -80,14 +80,14 @@ object IResizer {
     dynamic: js.UndefOr[Boolean] = js.undefined,
     el: IElement = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getEl: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getTarget: () => _ = null,
-    handles: java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    handles: String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     height: Int | Double = null,
     heightIncrement: Int | Double = null,
@@ -106,8 +106,8 @@ object IResizer {
     originalTarget: js.Any = null,
     pinned: js.UndefOr[Boolean] = js.undefined,
     preserveRatio: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resizeTo: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit = null,
@@ -121,7 +121,7 @@ object IResizer {
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     target: js.Any = null,
     transparent: js.UndefOr[Boolean] = js.undefined,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     width: Int | Double = null,
     widthIncrement: Int | Double = null

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rawDashBodyMod {
-  import typings.rawDashBody.rawDashBodyNumbers.`true`
+  import typings.rawDashBody.rawDashBodyBooleans.`true`
 
   type Encoding = String | `true`
 }

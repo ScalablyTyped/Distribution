@@ -8,37 +8,37 @@ import scala.scalajs.js.annotation._
 
 object semverStrings {
   @js.native
-  sealed trait `!=` extends Operator
+  sealed trait `2Dot0Dot0` extends js.Object
   
   @js.native
-  sealed trait `!==` extends Operator
+  sealed trait Equalssign extends Operator
   
   @js.native
-  sealed trait `2DOT0DOT0` extends js.Object
+  sealed trait EqualssignEqualssign extends Operator
   
   @js.native
-  sealed trait `<` extends Operator
+  sealed trait EqualssignEqualssignEqualssign extends Operator
   
   @js.native
-  sealed trait `<=` extends Operator
+  sealed trait ExclamationmarkEqualssign extends Operator
   
   @js.native
-  sealed trait `=` extends Operator
+  sealed trait ExclamationmarkEqualssignEqualssign extends Operator
   
   @js.native
-  sealed trait `==` extends Operator
+  sealed trait Greaterthansign extends Operator
   
   @js.native
-  sealed trait `===` extends Operator
+  sealed trait GreaterthansignEqualssign extends Operator
   
   @js.native
-  sealed trait `>` extends Operator
+  sealed trait Lessthansign extends Operator
   
   @js.native
-  sealed trait `>=` extends Operator
+  sealed trait LessthansignEqualssign extends Operator
   
   @js.native
-  sealed trait Empty extends Operator
+  sealed trait _empty extends Operator
   
   @js.native
   sealed trait major extends ReleaseType
@@ -62,27 +62,27 @@ object semverStrings {
   sealed trait prerelease extends ReleaseType
   
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  def `2Dot0Dot0`: `2Dot0Dot0` = "2.0.0".asInstanceOf[`2Dot0Dot0`]
   @scala.inline
-  def `!==`: `!==` = "!==".asInstanceOf[`!==`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `2DOT0DOT0`: `2DOT0DOT0` = "2.0.0".asInstanceOf[`2DOT0DOT0`]
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
+  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
   @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `===`: `===` = "===".asInstanceOf[`===`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def major: major = "major".asInstanceOf[major]
   @scala.inline

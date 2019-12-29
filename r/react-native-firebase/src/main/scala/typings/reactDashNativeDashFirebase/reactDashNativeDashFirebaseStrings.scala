@@ -12,24 +12,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashFirebaseStrings {
   @js.native
-  sealed trait `<` extends QueryOperator
-  
-  @js.native
-  sealed trait `<=` extends QueryOperator
-  
-  @js.native
-  sealed trait `=` extends QueryOperator
-  
-  @js.native
-  sealed trait `==` extends QueryOperator
-  
-  @js.native
-  sealed trait `>` extends QueryOperator
-  
-  @js.native
-  sealed trait `>=` extends QueryOperator
-  
-  @js.native
   sealed trait ASC extends QueryDirection
   
   @js.native
@@ -48,10 +30,28 @@ object reactDashNativeDashFirebaseStrings {
   sealed trait ERROR extends js.Object
   
   @js.native
+  sealed trait Equalssign extends QueryOperator
+  
+  @js.native
+  sealed trait EqualssignEqualssign extends QueryOperator
+  
+  @js.native
   sealed trait GET extends HttpMethod
   
   @js.native
+  sealed trait Greaterthansign extends QueryOperator
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends QueryOperator
+  
+  @js.native
   sealed trait HEAD extends HttpMethod
+  
+  @js.native
+  sealed trait Lessthansign extends QueryOperator
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends QueryOperator
   
   @js.native
   sealed trait OPTIONS extends HttpMethod
@@ -288,18 +288,6 @@ object reactDashNativeDashFirebaseStrings {
   sealed trait week extends js.Object
   
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
-  @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
   @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
@@ -312,9 +300,21 @@ object reactDashNativeDashFirebaseStrings {
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  @scala.inline
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   @scala.inline

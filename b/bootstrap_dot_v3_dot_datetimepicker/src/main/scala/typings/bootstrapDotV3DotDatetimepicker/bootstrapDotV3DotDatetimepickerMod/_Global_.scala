@@ -1,9 +1,8 @@
 package typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerMod
 
-import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerMod._Global_.JQuery
 import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerStrings.DateTimePicker
-import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerStrings.dpDOTchange
-import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerStrings.dpDOTupdate
+import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerStrings.dpDotchange
+import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerStrings.dpDotupdate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,21 +26,21 @@ object _Global_ extends js.Object {
     def off(events: EventName, selector: String): JQuery = js.native
     def off(events: EventName, selector: String, handler: js.Function1[/* eventobject */ Event, _]): JQuery = js.native
     @JSName("off")
-    def off_dpchange(events: dpDOTchange): JQuery = js.native
+    def off_dpchange(events: dpDotchange): JQuery = js.native
     @JSName("off")
-    def off_dpchange(events: dpDOTchange, handler: js.Function1[/* eventobject */ ChangeEvent, _]): JQuery = js.native
+    def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEvent, _]): JQuery = js.native
     @JSName("off")
-    def off_dpchange(events: dpDOTchange, selector: String): JQuery = js.native
+    def off_dpchange(events: dpDotchange, selector: String): JQuery = js.native
     @JSName("off")
-    def off_dpchange(events: dpDOTchange, selector: String, handler: js.Function1[/* eventobject */ ChangeEvent, _]): JQuery = js.native
+    def off_dpchange(events: dpDotchange, selector: String, handler: js.Function1[/* eventobject */ ChangeEvent, _]): JQuery = js.native
     @JSName("off")
-    def off_dpupdate(events: dpDOTupdate): JQuery = js.native
+    def off_dpupdate(events: dpDotupdate): JQuery = js.native
     @JSName("off")
-    def off_dpupdate(events: dpDOTupdate, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
+    def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
     @JSName("off")
-    def off_dpupdate(events: dpDOTupdate, selector: String): JQuery = js.native
+    def off_dpupdate(events: dpDotupdate, selector: String): JQuery = js.native
     @JSName("off")
-    def off_dpupdate(events: dpDOTupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
+    def off_dpupdate(events: dpDotupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
     def on(events: EventName, handler: js.Function1[/* eventObject */ Event, _]): JQuery = js.native
     def on(events: EventName, selector: String, data: js.Any): JQuery = js.native
     def on(
@@ -52,31 +51,31 @@ object _Global_ extends js.Object {
     ): JQuery = js.native
     def on(events: EventName, selector: String, handler: js.Function1[/* eventobject */ Event, _]): JQuery = js.native
     @JSName("on")
-    def on_dpchange(events: dpDOTchange, handler: js.Function1[/* eventObject */ ChangeEvent, _]): JQuery = js.native
+    def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEvent, _]): JQuery = js.native
     @JSName("on")
-    def on_dpchange(events: dpDOTchange, selector: String, data: js.Any): JQuery = js.native
+    def on_dpchange(events: dpDotchange, selector: String, data: js.Any): JQuery = js.native
     @JSName("on")
     def on_dpchange(
-      events: dpDOTchange,
+      events: dpDotchange,
       selector: String,
       data: js.Any,
       handler: js.Function1[/* eventobject */ ChangeEvent, _]
     ): JQuery = js.native
     @JSName("on")
-    def on_dpchange(events: dpDOTchange, selector: String, handler: js.Function1[/* eventobject */ ChangeEvent, _]): JQuery = js.native
+    def on_dpchange(events: dpDotchange, selector: String, handler: js.Function1[/* eventobject */ ChangeEvent, _]): JQuery = js.native
     @JSName("on")
-    def on_dpupdate(events: dpDOTupdate, handler: js.Function1[/* eventObject */ UpdateEvent, _]): JQuery = js.native
+    def on_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventObject */ UpdateEvent, _]): JQuery = js.native
     @JSName("on")
-    def on_dpupdate(events: dpDOTupdate, selector: String, data: js.Any): JQuery = js.native
+    def on_dpupdate(events: dpDotupdate, selector: String, data: js.Any): JQuery = js.native
     @JSName("on")
     def on_dpupdate(
-      events: dpDOTupdate,
+      events: dpDotupdate,
       selector: String,
       data: js.Any,
       handler: js.Function1[/* eventobject */ UpdateEvent, _]
     ): JQuery = js.native
     @JSName("on")
-    def on_dpupdate(events: dpDOTupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
+    def on_dpupdate(events: dpDotupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
   }
   
 }

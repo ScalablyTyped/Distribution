@@ -19,7 +19,6 @@ import typings.plottable.buildSrcDrawersDrawerMod.ProxyDrawer
 import typings.plottable.buildSrcPlotsCommonsMod.IAccessorScaleBinding
 import typings.plottable.buildSrcPlotsCommonsMod.ILightweightPlotEntity
 import typings.plottable.buildSrcPlotsCommonsMod.IPlotEntity
-import typings.plottable.buildSrcPlotsPlotMod.Renderer
 import typings.plottable.buildSrcScalesScaleMod.Scale
 import typings.plottable.buildSrcUtilsEntityStoreMod.IEntityStore
 import typings.std.HTMLCanvasElement

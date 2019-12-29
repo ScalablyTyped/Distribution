@@ -3,7 +3,6 @@ package typings.reactDashSelect
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactNode
-import typings.reactDashSelect.srcAnimatedPlaceholderMod.AnimatedPlaceholderProps
 import typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps
 import typings.reactDashSelect.srcSelectMod.Props
 import typings.reactDashSelect.srcTypesMod.ActionTypes

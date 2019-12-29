@@ -1,8 +1,6 @@
 package typings.winrt.Windows.UI.ApplicationSettings
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation.left
-import typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Printer")
 @js.native
 class Printer protected () extends js.Object {
-  var `Access.Printer_typekey`: Printer = js.native
+  @JSName("Access.Printer_typekey")
+  var AccessDotPrinter_typekey: Printer = js.native
   var BottomMargin: Double = js.native
   var ColorMode: AcPrintColor = js.native
   var ColumnSpacing: Double = js.native

@@ -1,6 +1,6 @@
 package typings.jsonDashRpcDashWs.jsonDashRpcDashWsMod
 
-import typings.jsonDashRpcDashWs.jsonDashRpcDashWsStrings.`2DOT0`
+import typings.jsonDashRpcDashWs.jsonDashRpcDashWsStrings.`2Dot0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Payload[ParamType] extends js.Object {
   var error: js.UndefOr[js.Any] = js.undefined
   var id: String
-  var jsonrpc: js.UndefOr[`2DOT0`] = js.undefined
+  var jsonrpc: js.UndefOr[`2Dot0`] = js.undefined
   var method: String
   var params: js.UndefOr[ParamType] = js.undefined
   var result: js.UndefOr[js.Any] = js.undefined
@@ -20,7 +20,7 @@ object Payload {
     id: String,
     method: String,
     error: js.Any = null,
-    jsonrpc: `2DOT0` = null,
+    jsonrpc: `2Dot0` = null,
     params: ParamType = null,
     result: js.Any = null
   ): Payload[ParamType] = {

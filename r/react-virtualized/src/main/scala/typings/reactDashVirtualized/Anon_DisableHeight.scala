@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized
 
-import typings.reactDashVirtualized.reactDashVirtualizedNumbers.`false`
+import typings.reactDashVirtualized.reactDashVirtualizedBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

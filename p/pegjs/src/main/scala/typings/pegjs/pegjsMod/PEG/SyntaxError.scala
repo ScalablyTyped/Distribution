@@ -9,7 +9,7 @@ trait SyntaxError extends js.Object {
   var expected: js.Array[_]
   var found: js.Any
   var line: Double
-  var location: typings.pegjs.pegjsMod.PEG.LocationRange
+  var location: LocationRange
   var message: String
   var name: String
   var offset: Double
@@ -22,7 +22,7 @@ object SyntaxError {
     expected: js.Array[_],
     found: js.Any,
     line: Double,
-    location: typings.pegjs.pegjsMod.PEG.LocationRange,
+    location: LocationRange,
     message: String,
     name: String,
     offset: Double

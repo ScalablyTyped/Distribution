@@ -2,7 +2,6 @@ package typings.reactDashTestDashRenderer
 
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactInstance
-import typings.reactDashTestDashRenderer.shallowMod.ShallowRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

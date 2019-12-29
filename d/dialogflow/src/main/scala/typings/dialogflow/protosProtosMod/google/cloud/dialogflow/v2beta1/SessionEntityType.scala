@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.EntityType.IEntity
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode.ENTITY_OVERRIDE_MODE_OVERRIDE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode.ENTITY_OVERRIDE_MODE_SUPPLEMENT
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode.ENTITY_OVERRIDE_MODE_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

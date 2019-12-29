@@ -1,9 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.SponsoredGroupRole.GROUP_ADMIN
-import typings.evernote.evernoteMod.Evernote.SponsoredGroupRole.GROUP_MEMBER
-import typings.evernote.evernoteMod.Evernote.SponsoredGroupRole.GROUP_OWNER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

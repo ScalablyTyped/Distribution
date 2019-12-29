@@ -52,10 +52,10 @@ class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: String */] () extend
       _
     ]
   ): UnsubscribeFn = js.native
-  def once[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
-  @JSName("once")
-  def once_Name_ExtractStringString[Name /* <: Extract[String, String] */](eventName: Name): js.Promise[
+  def once[Name /* <: Extract[String, String] */](eventName: Name): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ] = js.native
+  @JSName("once")
+  def once_Name_EmptyEvents[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
 }
 

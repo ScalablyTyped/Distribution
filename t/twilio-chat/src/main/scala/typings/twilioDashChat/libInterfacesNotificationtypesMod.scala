@@ -1,11 +1,11 @@
 package typings.twilioDashChat
 
-import typings.twilioDashChat.twilioDashChatStrings.twilioDOTchannelDOTadded_to_channel
-import typings.twilioDashChat.twilioDashChatStrings.twilioDOTchannelDOTconsumption_update
-import typings.twilioDashChat.twilioDashChatStrings.twilioDOTchannelDOTinvited_to_channel
-import typings.twilioDashChat.twilioDashChatStrings.twilioDOTchannelDOTnew_message
-import typings.twilioDashChat.twilioDashChatStrings.twilioDOTchannelDOTremoved_from_channel
-import typings.twilioDashChat.twilioDashChatStrings.twilioDOTipmsgDOTtyping_indicator
+import typings.twilioDashChat.twilioDashChatStrings.twilioDotchannelDotadded_to_channel
+import typings.twilioDashChat.twilioDashChatStrings.twilioDotchannelDotconsumption_update
+import typings.twilioDashChat.twilioDashChatStrings.twilioDotchannelDotinvited_to_channel
+import typings.twilioDashChat.twilioDashChatStrings.twilioDotchannelDotnew_message
+import typings.twilioDashChat.twilioDashChatStrings.twilioDotchannelDotremoved_from_channel
+import typings.twilioDashChat.twilioDashChatStrings.twilioDotipmsgDottyping_indicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,12 +19,12 @@ object libInterfacesNotificationtypesMod extends js.Object {
   /* static members */
   @js.native
   object NotificationTypes extends js.Object {
-    val ADDED_TO_CHANNEL: twilioDOTchannelDOTadded_to_channel = js.native
-    val CONSUMPTION_UPDATE: twilioDOTchannelDOTconsumption_update = js.native
-    val INVITED_TO_CHANNEL: twilioDOTchannelDOTinvited_to_channel = js.native
-    val NEW_MESSAGE: twilioDOTchannelDOTnew_message = js.native
-    val REMOVED_FROM_CHANNEL: twilioDOTchannelDOTremoved_from_channel = js.native
-    val TYPING_INDICATOR: twilioDOTipmsgDOTtyping_indicator = js.native
+    val ADDED_TO_CHANNEL: twilioDotchannelDotadded_to_channel = js.native
+    val CONSUMPTION_UPDATE: twilioDotchannelDotconsumption_update = js.native
+    val INVITED_TO_CHANNEL: twilioDotchannelDotinvited_to_channel = js.native
+    val NEW_MESSAGE: twilioDotchannelDotnew_message = js.native
+    val REMOVED_FROM_CHANNEL: twilioDotchannelDotremoved_from_channel = js.native
+    val TYPING_INDICATOR: twilioDotipmsgDottyping_indicator = js.native
   }
   
 }

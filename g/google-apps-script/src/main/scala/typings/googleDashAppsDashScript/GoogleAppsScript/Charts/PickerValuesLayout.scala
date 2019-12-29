@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PickerValuesLayout.ASIDE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PickerValuesLayout.BELOW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PickerValuesLayout.BELOW_STACKED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PickerValuesLayout.BELOW_WRAPPING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

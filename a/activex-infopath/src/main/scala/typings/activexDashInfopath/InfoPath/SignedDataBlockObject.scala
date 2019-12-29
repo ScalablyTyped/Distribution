@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignedDataBlockObject protected () extends js.Object {
   val Caption: String = js.native
-  var `InfoPath.SignedDataBlockObject_typekey`: SignedDataBlockObject = js.native
+  @JSName("InfoPath.SignedDataBlockObject_typekey")
+  var InfoPathDotSignedDataBlockObject_typekey: SignedDataBlockObject = js.native
   val Name: String = js.native
   val SignatureContainer: IXMLDOMNode = js.native
   val SignatureRelation: XdSignatureRelation = js.native

@@ -1,14 +1,6 @@
 package typings.reactDashTouch.reactDashTouchMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashTouch.reactDashTouchMod.moves.DOWN
-import typings.reactDashTouch.reactDashTouchMod.moves.DOWNLEFT
-import typings.reactDashTouch.reactDashTouchMod.moves.DOWNRIGHT
-import typings.reactDashTouch.reactDashTouchMod.moves.LEFT
-import typings.reactDashTouch.reactDashTouchMod.moves.RIGHT
-import typings.reactDashTouch.reactDashTouchMod.moves.UP
-import typings.reactDashTouch.reactDashTouchMod.moves.UPLEFT
-import typings.reactDashTouch.reactDashTouchMod.moves.UPRIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

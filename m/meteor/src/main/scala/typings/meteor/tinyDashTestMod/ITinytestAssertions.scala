@@ -41,8 +41,8 @@ trait ITinytestAssertions extends js.Object {
   def isTrue(v: Boolean, msg: String): Unit = js.native
   def isUndefined(v: js.Any): Unit = js.native
   def isUndefined(v: js.Any, msg: String): Unit = js.native
-  def length(obj: typings.meteor.tinyDashTestMod.ILengthAble, expected_length: Double): Unit = js.native
-  def length(obj: typings.meteor.tinyDashTestMod.ILengthAble, expected_length: Double, msg: String): Unit = js.native
+  def length(obj: ILengthAble, expected_length: Double): Unit = js.native
+  def length(obj: ILengthAble, expected_length: Double, msg: String): Unit = js.native
   def matches(actual: js.Any, regexp: RegExp): Unit = js.native
   def matches(actual: js.Any, regexp: RegExp, message: String): Unit = js.native
   def notEqual[T](actual: T, expected: T): Unit = js.native

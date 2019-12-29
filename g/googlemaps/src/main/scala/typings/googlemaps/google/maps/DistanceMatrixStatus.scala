@@ -1,13 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.DistanceMatrixStatus.INVALID_REQUEST
-import typings.googlemaps.google.maps.DistanceMatrixStatus.MAX_DIMENSIONS_EXCEEDED
-import typings.googlemaps.google.maps.DistanceMatrixStatus.MAX_ELEMENTS_EXCEEDED
-import typings.googlemaps.google.maps.DistanceMatrixStatus.OK
-import typings.googlemaps.google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT
-import typings.googlemaps.google.maps.DistanceMatrixStatus.REQUEST_DENIED
-import typings.googlemaps.google.maps.DistanceMatrixStatus.UNKNOWN_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

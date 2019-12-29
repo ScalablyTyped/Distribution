@@ -1,6 +1,6 @@
 package typings.shelljs.shelljsMod
 
-import typings.shelljs.shelljsStrings.`+N`
+import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ trait PopDirFunction extends js.Object {
   	 * @param dir Removes the Nth directory (counting from the left of the list printed by dirs), starting with zero.
   	 * @return    Returns an array of paths in the stack.
   	 */
-  def apply(dir: `+N`): ShellArray = js.native
+  def apply(dir: PlussignN): ShellArray = js.native
   /**
   	 * When no arguments are given, popd removes the top directory from the stack
   	 * and performs a `cd` to the new top directory.
@@ -80,7 +80,7 @@ trait PopDirFunction extends js.Object {
   	 * @param dir     Removes the Nth directory (counting from the left of the list printed by dirs), starting with zero.
   	 * @return        Returns an array of paths in the stack.
   	 */
-  def apply(options: String, dir: `+N`): ShellArray = js.native
+  def apply(options: String, dir: PlussignN): ShellArray = js.native
   /**
   	 * When no arguments are given, popd removes the top directory from the stack
   	 * and performs a `cd` to the new top directory.

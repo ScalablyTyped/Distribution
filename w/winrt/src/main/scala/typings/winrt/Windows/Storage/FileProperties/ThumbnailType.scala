@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailType.icon
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailType.image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

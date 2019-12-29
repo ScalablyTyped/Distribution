@@ -1,6 +1,6 @@
 package typings.sparkly.sparklyMod
 
-import typings.sparkly.sparklyStrings.Empty
+import typings.sparkly.sparklyStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object ^ extends js.Object {
   //=> '▁▂▃▄▄'
   ```
   */
-  def apply(numbers: js.Array[Double | Empty]): String = js.native
-  def apply(numbers: js.Array[Double | Empty], options: Options): String = js.native
+  def apply(numbers: js.Array[Double | _empty]): String = js.native
+  def apply(numbers: js.Array[Double | _empty], options: Options): String = js.native
 }
 

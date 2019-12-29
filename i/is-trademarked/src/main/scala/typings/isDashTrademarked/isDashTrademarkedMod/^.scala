@@ -1,6 +1,6 @@
 package typings.isDashTrademarked.isDashTrademarkedMod
 
-import typings.isDashTrademarked.isDashTrademarkedNumbers.`false`
+import typings.isDashTrademarked.isDashTrademarkedBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

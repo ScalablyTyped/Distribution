@@ -10,7 +10,8 @@ class NavigationFolders protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.NavigationFolders_typekey`: NavigationFolders = js.native
+  @JSName("Outlook.NavigationFolders_typekey")
+  var OutlookDotNavigationFolders_typekey: NavigationFolders = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Folder: Folder): NavigationFolder = js.native

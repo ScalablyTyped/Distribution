@@ -13,7 +13,8 @@ class InlineShapes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.InlineShapes_typekey`: InlineShapes = js.native
+  @JSName("Word.InlineShapes_typekey")
+  var WordDotInlineShapes_typekey: InlineShapes = js.native
   /** @param Office.XlChartType [Type=-1] */
   def AddChart(): InlineShape = js.native
   def AddChart(Type: XlChartType): InlineShape = js.native

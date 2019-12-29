@@ -52,7 +52,8 @@ class SharingItem protected () extends js.Object {
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
   var OriginatorDeliveryReportRequested: Boolean = js.native
-  var `Outlook.SharingItem_typekey`: SharingItem = js.native
+  @JSName("Outlook.SharingItem_typekey")
+  var OutlookDotSharingItem_typekey: SharingItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

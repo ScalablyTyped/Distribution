@@ -22,9 +22,6 @@ import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeObjectType
 import typings.graphqlDashCompose.libSchemaComposerMod.AnyComposeType
 import typings.graphqlDashCompose.libSchemaComposerMod.AnyType
 import typings.graphqlDashCompose.libSchemaComposerMod.SchemaComposer
-import typings.graphqlDashCompose.libTypeMapperMod.TypeDefinitionString
-import typings.graphqlDashCompose.libTypeMapperMod.TypeNameString
-import typings.graphqlDashCompose.libTypeMapperMod.TypeWrappedString
 import typings.graphqlDashCompose.libTypeStorageMod.TypeStorage
 import typings.std.Map
 import scala.scalajs.js

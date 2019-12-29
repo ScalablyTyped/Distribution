@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasXMLFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
@@ -26,70 +27,46 @@ class AtlasXMLFile protected ()
     * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
     * @param atlasXhrSettings An XHR Settings configuration object for the atlas xml file. Used in replacement of the Loaders default XHR Settings.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AtlasXMLFileConfig) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, textureURL: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, textureURL: js.Array[String]) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AtlasXMLFileConfig, textureURL: String) = this()
+  def this(loader: LoaderPlugin, key: String) = this()
+  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig) = this()
+  def this(loader: LoaderPlugin, key: String, textureURL: String) = this()
+  def this(loader: LoaderPlugin, key: String, textureURL: js.Array[String]) = this()
+  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: String) = this()
+  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: js.Array[String]) = this()
+  def this(loader: LoaderPlugin, key: String, textureURL: String, atlasURL: String) = this()
+  def this(loader: LoaderPlugin, key: String, textureURL: js.Array[String], atlasURL: String) = this()
+  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: String, atlasURL: String) = this()
+  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: js.Array[String], atlasURL: String) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: AtlasXMLFileConfig,
-    textureURL: js.Array[String]
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    textureURL: String,
-    atlasURL: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    textureURL: js.Array[String],
-    atlasURL: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: AtlasXMLFileConfig,
-    textureURL: String,
-    atlasURL: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: AtlasXMLFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     textureURL: String,
     atlasURL: String,
     textureXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     textureURL: js.Array[String],
     atlasURL: String,
     textureXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AtlasXMLFileConfig,
     textureURL: String,
     atlasURL: String,
     textureXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AtlasXMLFileConfig,
     textureURL: js.Array[String],
     atlasURL: String,
     textureXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     textureURL: String,
     atlasURL: String,
@@ -97,7 +74,7 @@ class AtlasXMLFile protected ()
     atlasXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     textureURL: js.Array[String],
     atlasURL: String,
@@ -105,7 +82,7 @@ class AtlasXMLFile protected ()
     atlasXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AtlasXMLFileConfig,
     textureURL: String,
     atlasURL: String,
@@ -113,7 +90,7 @@ class AtlasXMLFile protected ()
     atlasXhrSettings: XHRSettingsObject
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: AtlasXMLFileConfig,
     textureURL: js.Array[String],
     atlasURL: String,

@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.FreshLogin
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.Login
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.NoOption
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.SelectAccount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

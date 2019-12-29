@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Devices.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Devices.Input.PointerDeviceType.mouse
-import typings.winrt.Windows.Devices.Input.PointerDeviceType.pen
-import typings.winrt.Windows.Devices.Input.PointerDeviceType.touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

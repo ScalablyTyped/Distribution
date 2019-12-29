@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADOX.Catalog")
 @js.native
 class Catalog protected () extends js.Object {
-  var `ADOX.Catalog_typekey`: Catalog = js.native
+  @JSName("ADOX.Catalog_typekey")
+  var ADOXDotCatalog_typekey: Catalog = js.native
   /** Can be set to a Connection object or a string. Returns the active Connection object, or `null` */
   var ActiveConnection: String | Connection | Null = js.native
   @JSName("Groups")

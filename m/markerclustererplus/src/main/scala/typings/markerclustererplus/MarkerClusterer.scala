@@ -5,6 +5,7 @@ import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.Map
 import typings.googlemaps.google.maps.Marker
 import typings.googlemaps.google.maps.OverlayView
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +19,9 @@ class MarkerClusterer protected () extends OverlayView {
     * @param [markers] The markers to be added to the cluster.
     * @param [options] The optional parameters.
     */
-  def this(map: Map) = this()
-  def this(map: Map, markers: js.Array[Marker]) = this()
-  def this(map: Map, markers: js.Array[Marker], options: MarkerClustererOptions) = this()
+  def this(map: Map[Element]) = this()
+  def this(map: Map[Element], markers: js.Array[Marker]) = this()
+  def this(map: Map[Element], markers: js.Array[Marker], options: MarkerClustererOptions) = this()
   /**
     * Adds a marker to the clusterer. The clusters are redrawn unless
     * <code>noDraw</code> is set to <code>true</code>.

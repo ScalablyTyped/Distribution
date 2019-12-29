@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.AutoFillSeries.ALTERNATE_SERIES
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.AutoFillSeries.DEFAULT_SERIES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

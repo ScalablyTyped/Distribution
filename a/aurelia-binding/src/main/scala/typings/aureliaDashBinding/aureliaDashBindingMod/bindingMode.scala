@@ -1,11 +1,6 @@
 package typings.aureliaDashBinding.aureliaDashBindingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.fromView
-import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.oneTime
-import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.oneWay
-import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.toView
-import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.twoWay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

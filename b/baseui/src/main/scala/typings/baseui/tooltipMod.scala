@@ -3,9 +3,6 @@ package typings.baseui
 import typings.baseui.popoverMod.PopoverProps
 import typings.baseui.popoverMod.StatefulPopoverContainerProps
 import typings.baseui.popoverMod.StatefulPopoverProps
-import typings.baseui.tooltipMod.StatefulTooltipContainerProps
-import typings.baseui.tooltipMod.StatefulTooltipProps
-import typings.baseui.tooltipMod.TooltipProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.FC
 import typings.styletronDashReact.styletronDashReactMod.StyletronComponent

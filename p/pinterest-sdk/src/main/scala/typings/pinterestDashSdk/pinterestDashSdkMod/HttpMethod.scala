@@ -1,10 +1,6 @@
 package typings.pinterestDashSdk.pinterestDashSdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.delete
-import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.get
-import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.post
-import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.put
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

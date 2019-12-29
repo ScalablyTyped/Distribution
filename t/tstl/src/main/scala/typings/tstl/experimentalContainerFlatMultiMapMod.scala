@@ -3,11 +3,10 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseContainerMultiTreeMapMod.MultiTreeMap
-import typings.tstl.experimentalContainerFlatMultiMapMod.FlatMultiMap
 import typings.tstl.experimentalContainerFlatMultiMapMod.FlatMultiMap.Iterator
 import typings.tstl.experimentalContainerFlatMultiMapMod.FlatMultiMap.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlNumbers.`false`
+import typings.tstl.tstlBooleans.`false`
 import typings.tstl.utilityIPairMod.IPair
 import scala.scalajs.js
 import scala.scalajs.js.`|`

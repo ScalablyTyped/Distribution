@@ -1,6 +1,6 @@
 package typings.jss.jssMod
 
-import typings.jss.jssNumbers.`false`
+import typings.jss.jssBooleans.`false`
 import typings.std.CSSRule
 import typings.std.CSSRuleList
 import typings.std.CSSStyleRule

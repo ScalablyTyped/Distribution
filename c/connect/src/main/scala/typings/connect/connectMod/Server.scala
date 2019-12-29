@@ -1,7 +1,6 @@
 package typings.connect.connectMod
 
 import typings.node.NodeJS.EventEmitter
-import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,15 +10,15 @@ import scala.scalajs.js.annotation._
 trait Server extends EventEmitter {
   var route: String = js.native
   var stack: js.Array[ServerStackItem] = js.native
-  def apply(req: IncomingMessage, res: ServerResponse): Unit = js.native
-  def apply(req: IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
+  def apply(req: typings.node.httpMod.IncomingMessage, res: ServerResponse): Unit = js.native
+  def apply(req: typings.node.httpMod.IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
   /**
     * Handle server requests, punting them down
     * the middleware stack.
     *
     * @private
     */
-  def handle(req: IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
+  def handle(req: typings.node.httpMod.IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
   def listen(handle: js.Any): typings.node.httpMod.Server = js.native
   def listen(handle: js.Any, listeningListener: js.Function): typings.node.httpMod.Server = js.native
   def listen(path: String): typings.node.httpMod.Server = js.native

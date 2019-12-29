@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMCustomEvent")
 @js.native
 class DOMCustomEvent protected () extends js.Object {
-  var `MSHTML.DOMCustomEvent_typekey`: DOMCustomEvent = js.native
+  @JSName("MSHTML.DOMCustomEvent_typekey")
+  var MSHTMLDotDOMCustomEvent_typekey: DOMCustomEvent = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   val cancelable: Boolean = js.native

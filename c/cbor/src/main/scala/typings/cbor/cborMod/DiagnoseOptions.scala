@@ -1,10 +1,10 @@
 package typings.cbor.cborMod
 
 import typings.node.Anon_Chunk
-import typings.node.Error
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
 import typings.node.streamMod.TransformOptions
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +40,7 @@ object DiagnoseOptions {
     max_depth: Int | Double = null,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit] = null,
+    readableHighWaterMark: Int | Double = null,
     readableObjectMode: js.UndefOr[Boolean] = js.undefined,
     separator: String = null,
     stream_errors: js.UndefOr[Boolean] = js.undefined,
@@ -50,6 +51,8 @@ object DiagnoseOptions {
       /* callback */ TransformCallback, 
       Unit
     ] = null,
+    writableCorked: Int | Double = null,
+    writableHighWaterMark: Int | Double = null,
     writableObjectMode: js.UndefOr[Boolean] = js.undefined,
     write: js.ThisFunction3[
       /* this */ Transform, 
@@ -79,10 +82,13 @@ object DiagnoseOptions {
     if (max_depth != null) __obj.updateDynamic("max_depth")(max_depth.asInstanceOf[js.Any])
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (readableHighWaterMark != null) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (!js.isUndefined(stream_errors)) __obj.updateDynamic("stream_errors")(stream_errors.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (writableCorked != null) __obj.updateDynamic("writableCorked")(writableCorked.asInstanceOf[js.Any])
+    if (writableHighWaterMark != null) __obj.updateDynamic("writableHighWaterMark")(writableHighWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(writableObjectMode)) __obj.updateDynamic("writableObjectMode")(writableObjectMode.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])

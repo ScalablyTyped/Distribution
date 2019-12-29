@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 - typings.senchaUnderscoreTouch.Ext.IBase because Already inherited
 - typings.senchaUnderscoreTouch.Ext.util.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined defaultSortDirection, isSortable, sortRoot, sorters, initSortable, sort */ trait IMixedCollection extends IAbstractMixedCollection {
   /** [Property] (String) */
-  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Boolean) */
@@ -28,13 +28,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.util.Sorter[]
   		*/
   var sort: js.UndefOr[
-    js.Function4[
-      js.UndefOr[js.Any], 
-      js.UndefOr[java.lang.String], 
-      js.UndefOr[java.lang.String], 
-      js.UndefOr[Boolean], 
-      Array
-    ]
+    js.Function4[js.UndefOr[js.Any], js.UndefOr[String], js.UndefOr[String], js.UndefOr[Boolean], Array]
   ] = js.undefined
   /** [Method] Sorts the collection by a single sorter function
   		* @param sorterFn Function The function to sort by.
@@ -44,11 +38,9 @@ import scala.scalajs.js.annotation._
   		* @param dir String Sorting direction: 'ASC' or 'DESC'.
   		* @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
   		*/
-  var sortByKey: js.UndefOr[
-    js.Function2[/* dir */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var sortByKey: js.UndefOr[js.Function2[/* dir */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Property] (String) */
-  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  var sortRoot: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.util.MixedCollection) */
   var sorters: js.UndefOr[IMixedCollection] = js.undefined
 }
@@ -56,12 +48,12 @@ import scala.scalajs.js.annotation._
 object IMixedCollection {
   @scala.inline
   def apply(
-    add: (/* key */ js.UndefOr[java.lang.String], /* obj */ js.UndefOr[js.Any]) => _ = null,
+    add: (/* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any]) => _ = null,
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addAll: /* objs */ js.UndefOr[js.Any] => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     allowFunctions: js.UndefOr[Boolean] = js.undefined,
@@ -73,23 +65,23 @@ object IMixedCollection {
     clear: () => Unit = null,
     clearListeners: () => Unit = null,
     clone: () => IMixedCollection = null,
-    collect: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* allowNull */ js.UndefOr[Boolean]) => Array = null,
+    collect: (/* property */ js.UndefOr[String], /* root */ js.UndefOr[String], /* allowNull */ js.UndefOr[Boolean]) => Array = null,
     config: js.Any = null,
     contains: /* o */ js.UndefOr[js.Any] => Boolean = null,
-    containsKey: /* key */ js.UndefOr[java.lang.String] => Boolean = null,
-    defaultSortDirection: java.lang.String = null,
+    containsKey: /* key */ js.UndefOr[String] => Boolean = null,
+    defaultSortDirection: String = null,
     destroy: () => Unit = null,
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     eachKey: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     filter: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => IMixedCollection = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
     findBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    findIndex: (/* property */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double = null,
+    findIndex: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double = null,
     findIndexBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     first: () => _ = null,
     get: /* key */ js.UndefOr[js.Any] => _ = null,
     getAt: /* index */ js.UndefOr[Double] => _ = null,
@@ -97,24 +89,24 @@ object IMixedCollection {
     getByKey: /* key */ js.UndefOr[js.Any] => _ = null,
     getCount: () => Double = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getKey: /* item */ js.UndefOr[js.Any] => _ = null,
     getListeners: () => _ = null,
     getRange: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     indexOf: /* o */ js.UndefOr[js.Any] => Double = null,
-    indexOfKey: /* key */ js.UndefOr[java.lang.String] => Double = null,
+    indexOfKey: /* key */ js.UndefOr[String] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initSortable: () => Unit = null,
-    insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[java.lang.String], /* obj */ js.UndefOr[js.Any]) => _ = null,
+    insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any]) => _ = null,
     isSortable: js.UndefOr[Boolean] = js.undefined,
     last: () => _ = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
@@ -123,26 +115,26 @@ object IMixedCollection {
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeAll: /* items */ js.UndefOr[Array] => IMixedCollection = null,
     removeAt: /* index */ js.UndefOr[Double] => _ = null,
-    removeAtKey: /* key */ js.UndefOr[java.lang.String] => _ = null,
+    removeAtKey: /* key */ js.UndefOr[String] => _ = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     reorder: /* mapping */ js.UndefOr[js.Any] => Unit = null,
-    replace: (/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any]) => _ = null,
+    replace: (/* key */ js.UndefOr[String], /* o */ js.UndefOr[js.Any]) => _ = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (js.UndefOr[js.Any], js.UndefOr[java.lang.String], js.UndefOr[java.lang.String], js.UndefOr[Boolean]) => Array = null,
+    sort: (js.UndefOr[js.Any], js.UndefOr[String], js.UndefOr[String], js.UndefOr[Boolean]) => Array = null,
     sortBy: /* sorterFn */ js.UndefOr[js.Any] => Unit = null,
-    sortByKey: (/* dir */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any]) => Unit = null,
-    sortRoot: java.lang.String = null,
+    sortByKey: (/* dir */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any]) => Unit = null,
+    sortRoot: String = null,
     sorters: IMixedCollection = null,
     statics: js.Any = null,
-    sum: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Double = null,
+    sum: (/* property */ js.UndefOr[String], /* root */ js.UndefOr[String], /* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Double = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

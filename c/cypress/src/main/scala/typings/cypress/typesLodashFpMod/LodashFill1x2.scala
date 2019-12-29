@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait LodashFill1x2 extends js.Object {
   def apply(start: Double): LodashFill1x3 = js.native
   def apply[T](start: Double, value: T): LodashFill1x7[T] = js.native
-  def apply[U](start: Double, value: __): LodashFill2x11[U] = js.native
+  def apply[U](start: Double, value: __): LodashFill1x11[U] = js.native
   def apply[U](start: Double, value: __, array: js.Array[U]): LodashFill1x11[U] = js.native
   def apply[U](start: Double, value: __, array: List[U]): LodashFill2x11[U] = js.native
   def apply[T](start: __, value: T): LodashFill1x6[T] = js.native

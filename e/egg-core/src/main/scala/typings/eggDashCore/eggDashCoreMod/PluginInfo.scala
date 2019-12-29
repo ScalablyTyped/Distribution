@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PluginInfo extends js.Object {
+  /** the package name of plugin */
+  @JSName("package")
+  var _package: String
   /** the dependent plugins, you can use the plugin name */
   var dependencies: js.Array[String]
   /** whether enabled */
@@ -17,8 +20,6 @@ trait PluginInfo extends js.Object {
   var name: String
   /** the optional dependent plugins. */
   var optionalDependencies: js.Array[String]
-  /** the package name of plugin */
-  var `package`: String
   /** the directory of the plugin package */
   var path: String
 }
@@ -26,17 +27,17 @@ trait PluginInfo extends js.Object {
 object PluginInfo {
   @scala.inline
   def apply(
+    _package: String,
     dependencies: js.Array[String],
     enable: Boolean,
     env: js.Array[String],
     from: String,
     name: String,
     optionalDependencies: js.Array[String],
-    `package`: String,
     path: String
   ): PluginInfo = {
     val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optionalDependencies = optionalDependencies.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginInfo]
   }
 }

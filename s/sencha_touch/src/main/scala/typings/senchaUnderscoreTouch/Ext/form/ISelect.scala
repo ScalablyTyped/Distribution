@@ -34,7 +34,7 @@ trait ISelect
   /** [Method] Returns the value of hiddenName
   		* @returns String
   		*/
-  var getHiddenName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getHiddenName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of options
   		* @returns Array
   		*/
@@ -52,7 +52,7 @@ trait ISelect
   		*/
   var getValueField: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
-  var hiddenName: js.UndefOr[java.lang.String] = js.undefined
+  var hiddenName: js.UndefOr[String] = js.undefined
   /** [Method] Called when the internal store s data has changed
   		* @param store Object
   		*/
@@ -78,7 +78,7 @@ trait ISelect
   /** [Method] Sets the value of hiddenName
   		* @param hiddenName String The new value.
   		*/
-  var setHiddenName: js.UndefOr[js.Function1[/* hiddenName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHiddenName: js.UndefOr[js.Function1[/* hiddenName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of options
   		* @param options Array The new value.
   		*/
@@ -122,19 +122,19 @@ object ISelect {
     getDefaultPhonePickerConfig: () => _ = null,
     getDefaultTabletPickerConfig: () => _ = null,
     getDisplayField: () => _ = null,
-    getHiddenName: () => java.lang.String = null,
+    getHiddenName: () => String = null,
     getOptions: () => Array = null,
     getStore: () => _ = null,
     getUsePicker: () => _ = null,
     getValueField: () => _ = null,
-    hiddenName: java.lang.String = null,
+    hiddenName: String = null,
     onStoreDataChanged: /* store */ js.UndefOr[js.Any] => Unit = null,
     options: Array = null,
     setAutoSelect: /* autoSelect */ js.UndefOr[Boolean] => Unit = null,
     setDefaultPhonePickerConfig: /* defaultPhonePickerConfig */ js.UndefOr[js.Any] => Unit = null,
     setDefaultTabletPickerConfig: /* defaultTabletPickerConfig */ js.UndefOr[js.Any] => Unit = null,
     setDisplayField: /* displayField */ js.UndefOr[js.Any] => Unit = null,
-    setHiddenName: /* hiddenName */ js.UndefOr[java.lang.String] => Unit = null,
+    setHiddenName: /* hiddenName */ js.UndefOr[String] => Unit = null,
     setOptions: /* options */ js.UndefOr[Array] => Unit = null,
     setStore: /* store */ js.UndefOr[js.Any] => Unit = null,
     setUsePicker: /* usePicker */ js.UndefOr[js.Any] => Unit = null,

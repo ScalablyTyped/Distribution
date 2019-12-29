@@ -19,12 +19,12 @@ class LinkEntity protected () extends js.Object {
     * @param entityAlias The string representing an alias for the linkToEntityName.
     */
   def this(
-    linkFromEntityName: java.lang.String,
-    linkToEntityName: java.lang.String,
-    linkFromAttributeName: java.lang.String,
-    linkToAttributeName: java.lang.String,
+    linkFromEntityName: String,
+    linkToEntityName: String,
+    linkFromAttributeName: String,
+    linkToAttributeName: String,
     joinOperator: JoinOperator,
-    entityAlias: java.lang.String
+    entityAlias: String
   ) = this()
   /**
     * Adds a linked entity.
@@ -38,7 +38,7 @@ class LinkEntity protected () extends js.Object {
   /**
     * Gets the alias for the entity.
     */
-  def getEntityAlias(): java.lang.String = js.native
+  def getEntityAlias(): String = js.native
   /**
     * Gets the join operator.
     */
@@ -54,29 +54,29 @@ class LinkEntity protected () extends js.Object {
   /**
     * Gets the logical name of the attribute of the entity that you are linking from.
     */
-  def getLinkFromAttributeName(): java.lang.String = js.native
+  def getLinkFromAttributeName(): String = js.native
   /**
     * Gets the logical name of the entity that you are linking from.
     */
-  def getLinkFromEntityName(): java.lang.String = js.native
+  def getLinkFromEntityName(): String = js.native
   /**
     * Gets the logical name of the attribute of the entity that you are linking to
     */
-  def getLinkToAttributeName(): java.lang.String = js.native
+  def getLinkToAttributeName(): String = js.native
   /**
     * Gets the logical name of the entity that you are linking to.
     */
-  def getLinkToEntityName(): java.lang.String = js.native
+  def getLinkToEntityName(): String = js.native
   /**
     * Sets the columns to include.
     * @param columns Pass each attribute logical name as an argument.
     */
-  def setColumns(columns: java.lang.String*): Unit = js.native
+  def setColumns(columns: String*): Unit = js.native
   /**
     * Sets the columns to include.
     * @param columns An Array of attribute logical names for the columns to return.
     */
-  def setColumns(columns: js.Array[java.lang.String]): Unit = js.native
+  def setColumns(columns: js.Array[String]): Unit = js.native
   /**
     * Sets the columns to include.
     * @param columns An Sdk.ColumnSet instance.
@@ -86,7 +86,7 @@ class LinkEntity protected () extends js.Object {
     * Sets the alias for the entity.
     * @param alias The alias for the entity.
     */
-  def setEntityAlias(alias: java.lang.String): Unit = js.native
+  def setEntityAlias(alias: String): Unit = js.native
   /**
     * Sets the join operator.
     * @param operator The join operator.
@@ -101,29 +101,29 @@ class LinkEntity protected () extends js.Object {
     * Sets the logical name of the attribute of the entity that you are linking from.
     * @param name The logical name of the attribute of the entity that you are linking from.
     */
-  def setLinkFromAttributeName(name: java.lang.String): Unit = js.native
+  def setLinkFromAttributeName(name: String): Unit = js.native
   /**
     * Sets the logical name of the entity that you are linking from.
     * @param name The logical name of the entity that you are linking from.
     */
-  def setLinkFromEntityName(name: java.lang.String): Unit = js.native
+  def setLinkFromEntityName(name: String): Unit = js.native
   /**
     * Sets the logical name of the attribute of the entity that you are linking to.
     * @param name The logical name of the attribute of the entity that you are linking to.
     */
-  def setLinkToAttributeName(name: java.lang.String): Unit = js.native
+  def setLinkToAttributeName(name: String): Unit = js.native
   /**
     * Sets the logical name of the entity that you are linking to.
     * @param name The logical name of the entity that you are linking to.
     */
-  def setLinkToEntityName(name: java.lang.String): Unit = js.native
+  def setLinkToEntityName(name: String): Unit = js.native
   /**
     * Gets the serialized link entity values.
     */
-  def toValueXml(): java.lang.String = js.native
+  def toValueXml(): String = js.native
   /**
     * Gets the serialized link entity.
     */
-  def toXml(): java.lang.String = js.native
+  def toXml(): String = js.native
 }
 

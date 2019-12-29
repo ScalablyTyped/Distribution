@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListSyncStatus.authenticationError
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListSyncStatus.idle
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListSyncStatus.manualAccountRemovalRequired
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListSyncStatus.policyError
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListSyncStatus.syncing
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListSyncStatus.unknownError
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactListSyncStatus.upToDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

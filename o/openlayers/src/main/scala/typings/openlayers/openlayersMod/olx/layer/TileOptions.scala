@@ -2,6 +2,7 @@ package typings.openlayers.openlayersMod.olx.layer
 
 import typings.openlayers.openlayersMod.Extent
 import typings.openlayers.openlayersMod.Map
+import typings.openlayers.openlayersMod.source.Tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait TileOptions extends js.Object {
   var minResolution: js.UndefOr[Double] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var preload: js.UndefOr[Double] = js.undefined
-  var source: typings.openlayers.openlayersMod.source.Tile
+  var source: Tile
   var useInterimTilesOnError: js.UndefOr[Boolean] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
   var zIndex: js.UndefOr[Double] = js.undefined
@@ -22,7 +23,7 @@ trait TileOptions extends js.Object {
 object TileOptions {
   @scala.inline
   def apply(
-    source: typings.openlayers.openlayersMod.source.Tile,
+    source: Tile,
     extent: Extent = null,
     map: Map = null,
     maxResolution: Int | Double = null,

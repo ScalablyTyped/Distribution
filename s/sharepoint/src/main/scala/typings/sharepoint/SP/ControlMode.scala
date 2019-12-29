@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.ControlMode.displayMode
-import typings.sharepoint.SP.ControlMode.editMode
-import typings.sharepoint.SP.ControlMode.invalid
-import typings.sharepoint.SP.ControlMode.newMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,7 @@ trait RemoteObject extends js.Object {
   /**
     * Object class (constructor) name. Specified for <code>object</code> type values only.
     */
-  var className: js.UndefOr[java.lang.String] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
   /**
     * @experimental
     */
@@ -19,7 +19,7 @@ trait RemoteObject extends js.Object {
   /**
     * String representation of the object.
     */
-  var description: js.UndefOr[java.lang.String] = js.undefined
+  var description: js.UndefOr[String] = js.undefined
   /**
     * Unique object identifier (for non-primitive values).
     */
@@ -32,11 +32,11 @@ trait RemoteObject extends js.Object {
   /**
     * Object subtype hint. Specified for <code>object</code> type values only.
     */
-  var subtype: js.UndefOr[java.lang.String] = js.undefined
+  var subtype: js.UndefOr[String] = js.undefined
   /**
     * Object type.
     */
-  var `type`: java.lang.String
+  var `type`: String
   /**
     * Primitive value which can not be JSON-stringified does not have <code>value</code>, but gets this property.
     */
@@ -50,13 +50,13 @@ trait RemoteObject extends js.Object {
 object RemoteObject {
   @scala.inline
   def apply(
-    `type`: java.lang.String,
-    className: java.lang.String = null,
+    `type`: String,
+    className: String = null,
     customPreview: CustomPreview = null,
-    description: java.lang.String = null,
+    description: String = null,
     objectId: RemoteObjectId = null,
     preview: ObjectPreview = null,
-    subtype: java.lang.String = null,
+    subtype: String = null,
     unserializableValue: UnserializableValue = null,
     value: js.Any = null
   ): RemoteObject = {

@@ -4,7 +4,6 @@ import typings.react.reactMod.Component
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.RefObject
 import typings.react.reactMod.WheelEvent
-import typings.reactDashMovable.libListMod.List
 import typings.reactDashMovable.libTypesMod.IProps
 import typings.reactDashMovable.libTypesMod.TEvent
 import typings.std.Element

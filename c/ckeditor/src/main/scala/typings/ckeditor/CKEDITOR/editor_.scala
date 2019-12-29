@@ -12,8 +12,8 @@ import typings.ckeditor.CKEDITOR.plugins.notification
 import typings.ckeditor.CKEDITOR.plugins.notification.`type`
 import typings.ckeditor.CKEDITOR.plugins.widget.repository
 import typings.ckeditor.CKEDITOR.style.definition
-import typings.ckeditor.ckeditorNumbers.`false`
-import typings.ckeditor.ckeditorNumbers.`true`
+import typings.ckeditor.ckeditorBooleans.`false`
+import typings.ckeditor.ckeditorBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

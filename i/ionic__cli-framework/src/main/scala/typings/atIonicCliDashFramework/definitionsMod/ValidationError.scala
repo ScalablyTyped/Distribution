@@ -1,6 +1,6 @@
 package typings.atIonicCliDashFramework.definitionsMod
 
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkNumbers.`true`
+import typings.atIonicCliDashFramework.atIonicCliDashFrameworkBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

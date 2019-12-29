@@ -18,7 +18,7 @@ trait Pie[This, Datum] extends js.Object {
     *
     * @param data Array of data elements.
     */
-  def apply(`this`: This, data: js.Array[Datum], args: js.Any*): js.Array[PieArcDatum[Datum]] = js.native
+  def apply(data: js.Array[Datum], args: js.Any*): js.Array[PieArcDatum[Datum]] = js.native
   /**
     * Returns the current end angle accessor, which defaults to a function returning a constant 2*pi.
     */

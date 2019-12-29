@@ -1,6 +1,5 @@
 package typings.smartDashFoxDashServer.SFS2X.Entities
 
-import typings.smartDashFoxDashServer.SFS2X.Entities.Variables.SFSUserVariable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,7 +15,8 @@ class PlaySettings protected () extends js.Object {
   val Parent: js.Any = js.native
   var PauseAnimation: MsoTriState = js.native
   var PlayOnEntry: MsoTriState = js.native
-  var `PowerPoint.PlaySettings_typekey`: PlaySettings = js.native
+  @JSName("PowerPoint.PlaySettings_typekey")
+  var PowerPointDotPlaySettings_typekey: PlaySettings = js.native
   var RewindMovie: MsoTriState = js.native
   var StopAfterSlides: Double = js.native
 }

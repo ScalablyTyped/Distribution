@@ -25,7 +25,8 @@ class WebOptions protected () extends js.Object {
   var ScreenSize: MsoScreenSize = js.native
   var TargetBrowser: MsoTargetBrowser = js.native
   var UseLongFileNames: Boolean = js.native
-  var `Word.WebOptions_typekey`: WebOptions = js.native
+  @JSName("Word.WebOptions_typekey")
+  var WordDotWebOptions_typekey: WebOptions = js.native
   def UseDefaultFolderSuffix(): Unit = js.native
 }
 

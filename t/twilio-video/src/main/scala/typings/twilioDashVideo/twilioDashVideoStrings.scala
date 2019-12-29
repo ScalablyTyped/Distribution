@@ -39,7 +39,7 @@ object twilioDashVideoStrings {
   sealed trait `Invalid Access Token header` extends js.Object
   
   @js.native
-  sealed trait `Invalid Access Token issuer/subject` extends js.Object
+  sealed trait `Invalid Access Token issuerSlashsubject` extends js.Object
   
   @js.native
   sealed trait `Invalid Access Token signature` extends js.Object
@@ -87,7 +87,7 @@ object twilioDashVideoStrings {
   sealed trait `Room contains too many Participants` extends js.Object
   
   @js.native
-  sealed trait `Room creation parameter(s) incompatible with the Room type` extends js.Object
+  sealed trait `Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type` extends js.Object
   
   @js.native
   sealed trait `Room exists` extends js.Object
@@ -132,7 +132,7 @@ object twilioDashVideoStrings {
   sealed trait `StatusCallbackMethod is invalid` extends js.Object
   
   @js.native
-  sealed trait `The server has reached capacity and cannot fulfill this requestDOT` extends js.Object
+  sealed trait `The server has reached capacity and cannot fulfill this requestDot` extends js.Object
   
   @js.native
   sealed trait `The subscription operation requested is not supported for the Room type` extends js.Object
@@ -270,7 +270,7 @@ object twilioDashVideoStrings {
   @scala.inline
   def `Invalid Access Token header`: `Invalid Access Token header` = "Invalid Access Token header".asInstanceOf[`Invalid Access Token header`]
   @scala.inline
-  def `Invalid Access Token issuer/subject`: `Invalid Access Token issuer/subject` = "Invalid Access Token issuer/subject".asInstanceOf[`Invalid Access Token issuer/subject`]
+  def `Invalid Access Token issuerSlashsubject`: `Invalid Access Token issuerSlashsubject` = "Invalid Access Token issuer/subject".asInstanceOf[`Invalid Access Token issuerSlashsubject`]
   @scala.inline
   def `Invalid Access Token signature`: `Invalid Access Token signature` = "Invalid Access Token signature".asInstanceOf[`Invalid Access Token signature`]
   @scala.inline
@@ -302,7 +302,7 @@ object twilioDashVideoStrings {
   @scala.inline
   def `Room contains too many Participants`: `Room contains too many Participants` = "Room contains too many Participants".asInstanceOf[`Room contains too many Participants`]
   @scala.inline
-  def `Room creation parameter(s) incompatible with the Room type`: `Room creation parameter(s) incompatible with the Room type` = "Room creation parameter(s) incompatible with the Room type".asInstanceOf[`Room creation parameter(s) incompatible with the Room type`]
+  def `Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type`: `Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type` = "Room creation parameter(s) incompatible with the Room type".asInstanceOf[`Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type`]
   @scala.inline
   def `Room exists`: `Room exists` = "Room exists".asInstanceOf[`Room exists`]
   @scala.inline
@@ -332,7 +332,7 @@ object twilioDashVideoStrings {
   @scala.inline
   def `StatusCallbackMethod is invalid`: `StatusCallbackMethod is invalid` = "StatusCallbackMethod is invalid".asInstanceOf[`StatusCallbackMethod is invalid`]
   @scala.inline
-  def `The server has reached capacity and cannot fulfill this requestDOT`: `The server has reached capacity and cannot fulfill this requestDOT` = "The server has reached capacity and cannot fulfill this request.".asInstanceOf[`The server has reached capacity and cannot fulfill this requestDOT`]
+  def `The server has reached capacity and cannot fulfill this requestDot`: `The server has reached capacity and cannot fulfill this requestDot` = "The server has reached capacity and cannot fulfill this request.".asInstanceOf[`The server has reached capacity and cannot fulfill this requestDot`]
   @scala.inline
   def `The subscription operation requested is not supported for the Room type`: `The subscription operation requested is not supported for the Room type` = "The subscription operation requested is not supported for the Room type".asInstanceOf[`The subscription operation requested is not supported for the Room type`]
   @scala.inline

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "bitcoinjs-lib"
-version := "5.1.6-a9eb24"
+version := "5.1.6-3e7355"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bip174" % "1.0.1-29fd38",
-  "org.scalablytyped" %%% "bip32" % "2.0.4-d19d52",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "bip174" % "1.0.1-0c8377",
+  "org.scalablytyped" %%% "bip32" % "2.0.4-5f76d7",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,6 @@
 package typings.itDashPushable
 
-import typings.itDashPushable.itDashPushableNumbers.`true`
+import typings.itDashPushable.itDashPushableBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.auto
-import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoHyperfocal
-import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoInfinity
-import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoMacro
-import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoNormal
-import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

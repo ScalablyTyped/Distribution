@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.TextButtonStyle.FILLED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.TextButtonStyle.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

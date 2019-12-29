@@ -1,19 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.AGENT_HUNG_UP
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.BAD_ADDRESS_AGENT
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.BAD_ADDRESS_CUSTOMER
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.DEFAULT
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.ERROR
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.FAILED_CONNECT_AGENT
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.FAILED_CONNECT_CUSTOMER
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.LINE_ENGAGED_AGENT
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.LINE_ENGAGED_CUSTOMER
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MISSED_CALL_AGENT
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MISSED_CALL_CUSTOMER
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MULTIPLE_CCP_WINDOWS
-import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.REALTIME_COMMUNICATION_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

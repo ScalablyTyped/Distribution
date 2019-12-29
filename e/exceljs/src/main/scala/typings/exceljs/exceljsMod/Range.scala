@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Range extends Location {
-  @JSName("$b$r")
-  var $b$r: String = js.native
   @JSName("$range")
   var $range: String = js.native
   @JSName("$shortRange")
   var $shortRange: String = js.native
+  @JSName("$b$r")
+  var DollarbDollarr: String = js.native
   @JSName("$t$l")
-  var $t$l: String = js.native
+  var DollartDollarl: String = js.native
   var br: String = js.native
   var count: Double = js.native
   var range: String = js.native

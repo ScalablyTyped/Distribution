@@ -15,22 +15,6 @@ class NamedNode protected ()
      with Term {
   def this(iri: String) = this()
   val id: String = js.native
-  /**
-    * Contains the constant "NamedNode".
-    */
-  /* CompleteClass */
-  override var termType: typings.rdfDashJs.rdfDashJsStrings.NamedNode = js.native
-  /**
-    * The IRI of the named node (example: `http://example.org/resource`)
-    */
-  /* CompleteClass */
-  override var value: String = js.native
-  /**
-    * @param other The term to compare with.
-    * @return True if and only if other has termType "NamedNode" and the same `value`.
-    */
-  /* CompleteClass */
-  override def equals(other: typings.rdfDashJs.rdfDashJsMod.Term): Boolean = js.native
   def toJSON(): js.Object = js.native
 }
 

@@ -13,7 +13,8 @@ class HiLoLines protected () extends js.Object {
   val Format: ChartFormat = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.HiLoLines_typekey`: HiLoLines = js.native
+  @JSName("Word.HiLoLines_typekey")
+  var WordDotHiLoLines_typekey: HiLoLines = js.native
   def Delete(): Unit = js.native
   def Select(): Unit = js.native
 }

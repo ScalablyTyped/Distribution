@@ -28,6 +28,7 @@ object ConfirmPaymentIntentWithoutElementsOptions {
     receipt_email: String = null,
     return_url: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
+    setup_future_usage: String = null,
     shipping: ShippingDetails = null
   ): ConfirmPaymentIntentWithoutElementsOptions = {
     val __obj = js.Dynamic.literal()
@@ -36,6 +37,7 @@ object ConfirmPaymentIntentWithoutElementsOptions {
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
     if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmPaymentIntentWithoutElementsOptions]
   }

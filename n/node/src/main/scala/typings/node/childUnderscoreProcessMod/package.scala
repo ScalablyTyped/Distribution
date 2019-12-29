@@ -11,6 +11,7 @@ package object childUnderscoreProcessMod {
   import typings.node.nodeStrings.pipe
   import typings.node.streamMod.Stream
 
+  type Serializable = String | js.Object | Double | Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.node.nodeStrings.pipe
     - typings.node.nodeStrings.ignore

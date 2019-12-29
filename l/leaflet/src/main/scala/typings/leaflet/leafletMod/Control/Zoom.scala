@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Zoom ()
   extends typings.leaflet.leafletMod.Control {
-  def this(options: typings.leaflet.leafletMod.Control.ZoomOptions) = this()
+  def this(options: ZoomOptions) = this()
   @JSName("options")
-  var options_Zoom: typings.leaflet.leafletMod.Control.ZoomOptions = js.native
+  var options_Zoom: ZoomOptions = js.native
 }
 

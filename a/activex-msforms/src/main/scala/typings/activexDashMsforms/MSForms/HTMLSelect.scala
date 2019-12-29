@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class HTMLSelect protected () extends js.Object {
   var DisplayValues: js.Any = js.native
   var HTMLName: String = js.native
-  var `MSForms.HTMLSelect_typekey`: HTMLSelect = js.native
+  @JSName("MSForms.HTMLSelect_typekey")
+  var MSFormsDotHTMLSelect_typekey: HTMLSelect = js.native
   var MultiSelect: Boolean = js.native
   var Selected: String = js.native
   var Size: Double = js.native

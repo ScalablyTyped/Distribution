@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IRulesApplied")
 @js.native
 class IRulesApplied protected () extends js.Object {
-  var `MSHTML.IRulesApplied_typekey`: IRulesApplied = js.native
+  @JSName("MSHTML.IRulesApplied_typekey")
+  var MSHTMLDotIRulesApplied_typekey: IRulesApplied = js.native
   @JSName("appliedRules")
   val appliedRules_Original: IHTMLStyleSheetRulesAppliedCollection = js.native
   val element: IHTMLElement = js.native

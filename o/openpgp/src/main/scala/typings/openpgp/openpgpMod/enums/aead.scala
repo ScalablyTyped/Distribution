@@ -1,9 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.aead.eax
-import typings.openpgp.openpgpMod.enums.aead.experimental_gcm
-import typings.openpgp.openpgpMod.enums.aead.ocb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

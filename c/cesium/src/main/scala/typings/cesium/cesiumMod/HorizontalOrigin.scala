@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.HorizontalOrigin.CENTER
-import typings.cesium.cesiumMod.HorizontalOrigin.LEFT
-import typings.cesium.cesiumMod.HorizontalOrigin.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

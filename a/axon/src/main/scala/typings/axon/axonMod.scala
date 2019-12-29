@@ -1,10 +1,6 @@
 package typings.axon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.axon.axonMod.ConnectionPort
-import typings.axon.axonMod.PubSocket
-import typings.axon.axonMod.Socket
-import typings.axon.axonMod.SubEmitterSocket
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.RegExp

@@ -21,6 +21,8 @@ import typings.stripe.stripeMod.accounts.IPerson
 import typings.stripe.stripeMod.accounts.IPersonCreateUpdateOptions
 import typings.stripe.stripeMod.accounts.IPersonListOptions
 import typings.stripe.stripeMod.accounts.IRejectReason
+import typings.stripe.stripeMod.bankAccounts.IBankAccount
+import typings.stripe.stripeMod.cards.ICard
 import typings.stripe.stripeMod.cards.ICardUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,9 +38,7 @@ class Accounts () extends StripeResource {
   def create(data: IAccountCreationOptions, options: HeaderOptions): js.Promise[IAccount] = js.native
   def create(data: IAccountCreationOptions, options: HeaderOptions, response: IResponseFn[IAccount]): js.Promise[IAccount] = js.native
   def create(data: IAccountCreationOptions, response: IResponseFn[IAccount]): js.Promise[IAccount] = js.native
-  def createExternalAccount(accId: String, data: IExternalAccountCreationOptions): js.Promise[
-    typings.stripe.stripeMod.cards.ICard | typings.stripe.stripeMod.bankAccounts.IBankAccount
-  ] = js.native
+  def createExternalAccount(accId: String, data: IExternalAccountCreationOptions): js.Promise[ICard | IBankAccount] = js.native
   /**
     * When you create a new bank account or credit card, you must specify a managed account to create it on.
     *
@@ -50,28 +50,14 @@ class Accounts () extends StripeResource {
     * default then it will not change. To change the default, you should set default_for_currency to true when creating a card for a
     * managed account.
     */
-  def createExternalAccount(accId: String, data: IExternalAccountCreationOptions, options: HeaderOptions): js.Promise[
-    typings.stripe.stripeMod.cards.ICard | typings.stripe.stripeMod.bankAccounts.IBankAccount
-  ] = js.native
+  def createExternalAccount(accId: String, data: IExternalAccountCreationOptions, options: HeaderOptions): js.Promise[ICard | IBankAccount] = js.native
   def createExternalAccount(
     accId: String,
     data: IExternalAccountCreationOptions,
     options: HeaderOptions,
-    response: IResponseFn[
-      typings.stripe.stripeMod.cards.ICard | typings.stripe.stripeMod.bankAccounts.IBankAccount
-    ]
-  ): js.Promise[
-    typings.stripe.stripeMod.cards.ICard | typings.stripe.stripeMod.bankAccounts.IBankAccount
-  ] = js.native
-  def createExternalAccount(
-    accId: String,
-    data: IExternalAccountCreationOptions,
-    response: IResponseFn[
-      typings.stripe.stripeMod.cards.ICard | typings.stripe.stripeMod.bankAccounts.IBankAccount
-    ]
-  ): js.Promise[
-    typings.stripe.stripeMod.cards.ICard | typings.stripe.stripeMod.bankAccounts.IBankAccount
-  ] = js.native
+    response: IResponseFn[ICard | IBankAccount]
+  ): js.Promise[ICard | IBankAccount] = js.native
+  def createExternalAccount(accId: String, data: IExternalAccountCreationOptions, response: IResponseFn[ICard | IBankAccount]): js.Promise[ICard | IBankAccount] = js.native
   /**
     * Creates a single-use login link for an Express account to access their Stripe dashboard.
     * You may only create login links for Express accounts connected to your platform.
@@ -139,42 +125,29 @@ class Accounts () extends StripeResource {
   def list(options: HeaderOptions): IListPromise[IAccount] = js.native
   def list(options: HeaderOptions, response: IResponseFn[IList[IAccount]]): IListPromise[IAccount] = js.native
   def list(response: IResponseFn[IList[IAccount]]): IListPromise[IAccount] = js.native
-  def listExternalAccounts(accId: String, data: IBankAccountListOptions): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def listExternalAccounts(accId: String, data: IBankAccountListOptions): IListPromise[IBankAccount] = js.native
   /**
     * You can see a list of the bank accounts belonging to a managed account. Note that the 10 most recent external accounts are always
     * available by default on the corresponding Stripe object. If you need more than those 10, you can use this API method and the limit
     * and starting_after parameters to page through additional bank accounts.
     */
-  def listExternalAccounts(accId: String, data: IBankAccountListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def listExternalAccounts(accId: String, data: IBankAccountListOptions, options: HeaderOptions): IListPromise[IBankAccount] = js.native
   def listExternalAccounts(
     accId: String,
     data: IBankAccountListOptions,
     options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.bankAccounts.IBankAccount]]
-  ): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def listExternalAccounts(
-    accId: String,
-    data: IBankAccountListOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.bankAccounts.IBankAccount]]
-  ): IListPromise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def listExternalAccounts(accId: String, data: ICardListOptions): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[IList[IBankAccount]]
+  ): IListPromise[IBankAccount] = js.native
+  def listExternalAccounts(accId: String, data: IBankAccountListOptions, response: IResponseFn[IList[IBankAccount]]): IListPromise[IBankAccount] = js.native
+  def listExternalAccounts(accId: String, data: ICardListOptions): IListPromise[ICard] = js.native
   /**
     * You can see a list of the cards belonging to a managed account. Note that the 10 most recent external accounts are available on the
     * account object. If you need more than those 10, you can use this API method and the limit and starting_after parameters to page
     * through additional cards.
     */
-  def listExternalAccounts(accId: String, data: ICardListOptions, options: HeaderOptions): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listExternalAccounts(
-    accId: String,
-    data: ICardListOptions,
-    options: HeaderOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
-  ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def listExternalAccounts(
-    accId: String,
-    data: ICardListOptions,
-    response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
-  ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def listExternalAccounts(accId: String, data: ICardListOptions, options: HeaderOptions): IListPromise[ICard] = js.native
+  def listExternalAccounts(accId: String, data: ICardListOptions, options: HeaderOptions, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
+  def listExternalAccounts(accId: String, data: ICardListOptions, response: IResponseFn[IList[ICard]]): IListPromise[ICard] = js.native
   def listPersons(accId: String): IListPromise[IPerson] = js.native
   def listPersons(accId: String, data: IPersonListOptions): IListPromise[IPerson] = js.native
   /**
@@ -212,36 +185,22 @@ class Accounts () extends StripeResource {
   def retrieve(options: HeaderOptions): js.Promise[IAccount] = js.native
   def retrieve(options: HeaderOptions, response: IResponseFn[IAccount]): js.Promise[IAccount] = js.native
   def retrieve(response: IResponseFn[IAccount]): js.Promise[IAccount] = js.native
-  def retrieveCard(accId: String, cardId: String): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def retrieveCard(accId: String, cardId: String): js.Promise[ICard] = js.native
   /**
     * You can always see the 10 most recent cards directly on a managed account; this method lets you retrieve details about a specific
     * card stored on the account.
     */
-  def retrieveCard(accId: String, cardId: String, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def retrieveCard(
-    accId: String,
-    cardId: String,
-    options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def retrieveCard(accId: String, cardId: String, response: IResponseFn[typings.stripe.stripeMod.cards.ICard]): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def retrieveExternalAccount(accId: String, bankAccId: String): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def retrieveCard(accId: String, cardId: String, options: HeaderOptions): js.Promise[ICard] = js.native
+  def retrieveCard(accId: String, cardId: String, options: HeaderOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def retrieveCard(accId: String, cardId: String, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
+  def retrieveExternalAccount(accId: String, bankAccId: String): js.Promise[IBankAccount] = js.native
   /**
     * By default, you can see the 10 most recent bank accounts stored on a managed account directly on the object, but you can also
     * retrieve details about a specific bank account stored on the Stripe account.
     */
-  def retrieveExternalAccount(accId: String, bankAccId: String, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def retrieveExternalAccount(
-    accId: String,
-    bankAccId: String,
-    options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def retrieveExternalAccount(
-    accId: String,
-    bankAccId: String,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def retrieveExternalAccount(accId: String, bankAccId: String, options: HeaderOptions): js.Promise[IBankAccount] = js.native
+  def retrieveExternalAccount(accId: String, bankAccId: String, options: HeaderOptions, response: IResponseFn[IBankAccount]): js.Promise[IBankAccount] = js.native
+  def retrieveExternalAccount(accId: String, bankAccId: String, response: IResponseFn[IBankAccount]): js.Promise[IBankAccount] = js.native
   def retrievePerson(accId: String, personId: String): js.Promise[IPerson] = js.native
   def retrievePerson(accId: String, personId: String, data: IDataOptions): js.Promise[IPerson] = js.native
   /**
@@ -269,26 +228,26 @@ class Accounts () extends StripeResource {
   def update(id: String, data: IAccountUpdateOptions, options: HeaderOptions): js.Promise[IAccount] = js.native
   def update(id: String, data: IAccountUpdateOptions, options: HeaderOptions, response: IResponseFn[IAccount]): js.Promise[IAccount] = js.native
   def update(id: String, data: IAccountUpdateOptions, response: IResponseFn[IAccount]): js.Promise[IAccount] = js.native
-  def updateExternalAccount(accId: String, bankAccId: String, data: IExternalAccountUpdateOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def updateExternalAccount(accId: String, bankAccId: String, data: IExternalAccountUpdateOptions): js.Promise[IBankAccount] = js.native
   /**
     * Updates the metadata of a bank account belonging to a managed account, and optionally sets it as the default for its currency.
     * Other bank account details are not editable by design.
     */
-  def updateExternalAccount(accId: String, bankAccId: String, data: IExternalAccountUpdateOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def updateExternalAccount(accId: String, bankAccId: String, data: IExternalAccountUpdateOptions, options: HeaderOptions): js.Promise[IBankAccount] = js.native
   def updateExternalAccount(
     accId: String,
     bankAccId: String,
     data: IExternalAccountUpdateOptions,
     options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+    response: IResponseFn[IBankAccount]
+  ): js.Promise[IBankAccount] = js.native
   def updateExternalAccount(
     accId: String,
     bankAccId: String,
     data: IExternalAccountUpdateOptions,
-    response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
-  ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
-  def updateExternalAccount(accId: String, cardId: String, data: ICardUpdateOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[IBankAccount]
+  ): js.Promise[IBankAccount] = js.native
+  def updateExternalAccount(accId: String, cardId: String, data: ICardUpdateOptions): js.Promise[ICard] = js.native
   /**
     * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the
     * full card details. Stripe also works directly with card networks so that your customers can continue using your service without
@@ -296,20 +255,15 @@ class Accounts () extends StripeResource {
     *
     * When you update a card, Stripe will automatically validate the card.
     */
-  def updateExternalAccount(accId: String, cardId: String, data: ICardUpdateOptions, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def updateExternalAccount(accId: String, cardId: String, data: ICardUpdateOptions, options: HeaderOptions): js.Promise[ICard] = js.native
   def updateExternalAccount(
     accId: String,
     cardId: String,
     data: ICardUpdateOptions,
     options: HeaderOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def updateExternalAccount(
-    accId: String,
-    cardId: String,
-    data: ICardUpdateOptions,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+    response: IResponseFn[ICard]
+  ): js.Promise[ICard] = js.native
+  def updateExternalAccount(accId: String, cardId: String, data: ICardUpdateOptions, response: IResponseFn[ICard]): js.Promise[ICard] = js.native
   /**
     * Updates an existing person.
     */

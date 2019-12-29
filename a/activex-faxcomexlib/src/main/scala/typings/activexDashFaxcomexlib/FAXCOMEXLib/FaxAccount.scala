@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class FaxAccount protected () extends js.Object {
   /** Name of the fax account */
   val AccountName: String = js.native
-  var `FAXCOMEXLib.FaxAccount_typekey`: FaxAccount = js.native
+  @JSName("FAXCOMEXLib.FaxAccount_typekey")
+  var FAXCOMEXLibDotFaxAccount_typekey: FaxAccount = js.native
   /** Folders belonging to the account */
   val Folders: FaxAccountFolders = js.native
   /** Events the fax account is listening to */

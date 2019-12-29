@@ -1,7 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcComponentsComponentMod.Component
-import typings.plottable.buildSrcComponentsLabelMod.Label
 import typings.plottable.buildSrcCoreInterfacesMod.SimpleSelection
 import typings.typesettable.typesettableMod.CacheMeasurer
 import typings.typesettable.typesettableMod.Wrapper

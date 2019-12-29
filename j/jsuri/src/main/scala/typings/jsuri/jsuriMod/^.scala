@@ -1,5 +1,6 @@
 package typings.jsuri.jsuriMod
 
+import typings.jsuri.jsuri.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +12,7 @@ import scala.scalajs.js.annotation._
   * @constructor
   * @param {string} str
   */
-class ^ ()
-  extends typings.jsuri.jsuri.Uri {
+class ^ () extends Uri {
   def this(str: String) = this()
 }
 

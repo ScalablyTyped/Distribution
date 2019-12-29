@@ -1,6 +1,5 @@
 package typings.randomDashSeed
 
-import typings.randomDashSeed.randomDashSeedMod.RandomSeed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

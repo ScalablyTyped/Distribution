@@ -1,7 +1,7 @@
 package typings.phaser.Phaser.Types.Cameras.Scene2D
 
 import typings.phaser.integer
-import typings.phaser.phaserNumbers.`false`
+import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,19 +18,23 @@ trait CameraConfig extends js.Object {
   /**
     * The height of the Camera bounds.
     */
-  var `bounds.height`: js.UndefOr[Double] = js.undefined
+  @JSName("bounds.height")
+  var boundsDotheight: js.UndefOr[Double] = js.undefined
   /**
     * The width of the Camera bounds.
     */
-  var `bounds.width`: js.UndefOr[Double] = js.undefined
+  @JSName("bounds.width")
+  var boundsDotwidth: js.UndefOr[Double] = js.undefined
   /**
     * The top-left extent of the Camera bounds.
     */
-  var `bounds.x`: js.UndefOr[Double] = js.undefined
+  @JSName("bounds.x")
+  var boundsDotx: js.UndefOr[Double] = js.undefined
   /**
     * The top-left extent of the Camera bounds.
     */
-  var `bounds.y`: js.UndefOr[Double] = js.undefined
+  @JSName("bounds.y")
+  var boundsDoty: js.UndefOr[Double] = js.undefined
   /**
     * The height of the Camera viewport.
     */
@@ -78,10 +82,10 @@ object CameraConfig {
   def apply(
     backgroundColor: `false` | String = null,
     bounds: js.Object = null,
-    `bounds.height`: Int | Double = null,
-    `bounds.width`: Int | Double = null,
-    `bounds.x`: Int | Double = null,
-    `bounds.y`: Int | Double = null,
+    boundsDotheight: Int | Double = null,
+    boundsDotwidth: Int | Double = null,
+    boundsDotx: Int | Double = null,
+    boundsDoty: Int | Double = null,
     height: Int | Double = null,
     name: String = null,
     rotation: Int | Double = null,
@@ -96,10 +100,10 @@ object CameraConfig {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (`bounds.height` != null) __obj.updateDynamic("bounds.height")(`bounds.height`.asInstanceOf[js.Any])
-    if (`bounds.width` != null) __obj.updateDynamic("bounds.width")(`bounds.width`.asInstanceOf[js.Any])
-    if (`bounds.x` != null) __obj.updateDynamic("bounds.x")(`bounds.x`.asInstanceOf[js.Any])
-    if (`bounds.y` != null) __obj.updateDynamic("bounds.y")(`bounds.y`.asInstanceOf[js.Any])
+    if (boundsDotheight != null) __obj.updateDynamic("bounds.height")(boundsDotheight.asInstanceOf[js.Any])
+    if (boundsDotwidth != null) __obj.updateDynamic("bounds.width")(boundsDotwidth.asInstanceOf[js.Any])
+    if (boundsDotx != null) __obj.updateDynamic("bounds.x")(boundsDotx.asInstanceOf[js.Any])
+    if (boundsDoty != null) __obj.updateDynamic("bounds.y")(boundsDoty.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])

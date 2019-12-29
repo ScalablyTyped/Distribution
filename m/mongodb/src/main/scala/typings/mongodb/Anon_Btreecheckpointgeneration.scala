@@ -18,7 +18,8 @@ trait Anon_Btreecheckpointgeneration extends js.Object {
   var `maximum leaf page size`: Double
   var `maximum leaf page value size`: Double
   var `maximum tree depth`: Double
-  var `number of key/value pairs`: Double
+  @JSName("number of key/value pairs")
+  var `number of keySlashvalue pairs`: Double
   var `overflow pages`: Double
   var `pages rewritten by compaction`: Double
   var `row-store internal pages`: Double
@@ -41,7 +42,7 @@ object Anon_Btreecheckpointgeneration {
     `maximum leaf page size`: Double,
     `maximum leaf page value size`: Double,
     `maximum tree depth`: Double,
-    `number of key/value pairs`: Double,
+    `number of keySlashvalue pairs`: Double,
     `overflow pages`: Double,
     `pages rewritten by compaction`: Double,
     `row-store internal pages`: Double,
@@ -61,7 +62,7 @@ object Anon_Btreecheckpointgeneration {
     __obj.updateDynamic("maximum leaf page size")(`maximum leaf page size`.asInstanceOf[js.Any])
     __obj.updateDynamic("maximum leaf page value size")(`maximum leaf page value size`.asInstanceOf[js.Any])
     __obj.updateDynamic("maximum tree depth")(`maximum tree depth`.asInstanceOf[js.Any])
-    __obj.updateDynamic("number of key/value pairs")(`number of key/value pairs`.asInstanceOf[js.Any])
+    __obj.updateDynamic("number of key/value pairs")(`number of keySlashvalue pairs`.asInstanceOf[js.Any])
     __obj.updateDynamic("overflow pages")(`overflow pages`.asInstanceOf[js.Any])
     __obj.updateDynamic("pages rewritten by compaction")(`pages rewritten by compaction`.asInstanceOf[js.Any])
     __obj.updateDynamic("row-store internal pages")(`row-store internal pages`.asInstanceOf[js.Any])

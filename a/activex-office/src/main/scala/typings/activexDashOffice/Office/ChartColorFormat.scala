@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class ChartColorFormat protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
-  var `Office.ChartColorFormat_typekey`: ChartColorFormat = js.native
+  @JSName("Office.ChartColorFormat_typekey")
+  var OfficeDotChartColorFormat_typekey: ChartColorFormat = js.native
   val Parent: js.Any = js.native
   var RGB: Double = js.native
   var SchemeColor: Double = js.native

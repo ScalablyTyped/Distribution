@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.inTransition
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.off
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.on
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.SignatureValidationResult.badMessage
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.SignatureValidationResult.invalidParameter
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.SignatureValidationResult.invalidSignature
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.SignatureValidationResult.otherErrors
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.SignatureValidationResult.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

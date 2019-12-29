@@ -18,6 +18,11 @@ import scala.scalajs.js.annotation._
     */
   var _isOverTheCounter: js.UndefOr[Element] = js.undefined
   /**
+    * Details about packaged medications
+    */
+  @JSName("package")
+  var _package: js.UndefOr[MedicationPackage] = js.undefined
+  /**
     * Contains extended information for property 'status'.
     */
   var _status: js.UndefOr[Element] = js.undefined
@@ -50,10 +55,6 @@ import scala.scalajs.js.annotation._
     */
   var manufacturer: js.UndefOr[Reference] = js.undefined
   /**
-    * Details about packaged medications
-    */
-  var `package`: js.UndefOr[MedicationPackage] = js.undefined
-  /**
     * active | inactive | entered-in-error
     */
   var status: js.UndefOr[code] = js.undefined
@@ -67,6 +68,7 @@ object Medication {
     _isBrand: Element = null,
     _isOverTheCounter: Element = null,
     _language: Element = null,
+    _package: MedicationPackage = null,
     _resourceType: Element = null,
     _status: Element = null,
     code: CodeableConcept = null,
@@ -83,7 +85,6 @@ object Medication {
     manufacturer: Reference = null,
     meta: Meta = null,
     modifierExtension: js.Array[Extension] = null,
-    `package`: MedicationPackage = null,
     resourceType: code = null,
     status: code = null,
     text: Narrative = null
@@ -94,6 +95,7 @@ object Medication {
     if (_isBrand != null) __obj.updateDynamic("_isBrand")(_isBrand.asInstanceOf[js.Any])
     if (_isOverTheCounter != null) __obj.updateDynamic("_isOverTheCounter")(_isOverTheCounter.asInstanceOf[js.Any])
     if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
+    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
     if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
@@ -110,7 +112,6 @@ object Medication {
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

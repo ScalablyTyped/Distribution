@@ -23,15 +23,6 @@ import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Geom.Triangle
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
-import typings.phaser.Phaser.Tilemaps.ImageCollection
-import typings.phaser.Phaser.Tilemaps.LayerData
-import typings.phaser.Phaser.Tilemaps.MapData
-import typings.phaser.Phaser.Tilemaps.ObjectLayer
-import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
-import typings.phaser.Phaser.Tilemaps.Tile
-import typings.phaser.Phaser.Tilemaps.Tilemap
-import typings.phaser.Phaser.Tilemaps.Tileset
 import typings.phaser.Phaser.Types.GameObjects.Sprite.SpriteConfig
 import typings.phaser.Phaser.Types.Tilemaps.FilteringOptions
 import typings.phaser.Phaser.Types.Tilemaps.MapDataConfig

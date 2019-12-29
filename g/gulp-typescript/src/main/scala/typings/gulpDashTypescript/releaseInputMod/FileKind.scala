@@ -1,8 +1,6 @@
 package typings.gulpDashTypescript.releaseInputMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.gulpDashTypescript.releaseInputMod.FileKind.Config
-import typings.gulpDashTypescript.releaseInputMod.FileKind.Source
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

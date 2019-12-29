@@ -1,6 +1,6 @@
 package typings.jsonDashSchemaDashMergeDashAllof
 
-import typings.jsonDashSchemaDashMergeDashAllof.jsonDashSchemaDashMergeDashAllofNumbers.`true`
+import typings.jsonDashSchemaDashMergeDashAllof.jsonDashSchemaDashMergeDashAllofBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

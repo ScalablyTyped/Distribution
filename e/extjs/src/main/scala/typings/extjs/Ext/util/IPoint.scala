@@ -35,7 +35,7 @@ trait IPoint extends IRegion {
   		* @returns String
   		*/
   @JSName("toString")
-  var toString_FIPoint: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIPoint: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Alias for translateBy
   		* @param x Ext.util.Offset/Object Object containing the x and y properties. Or the x value is using the two argument form.
   		* @param y Number The y value unless using an Offset object.
@@ -59,16 +59,16 @@ object IPoint {
     copy: () => IPoint = null,
     copyFrom: /* p */ js.UndefOr[IPoint] => IPoint = null,
     equals: /* p */ js.UndefOr[js.Any] => Boolean = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getOutOfBoundOffset: (/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[IPoint]) => IOffset = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getOutOfBoundOffset: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[IPoint]) => IOffset = null,
     getOutOfBoundOffsetX: /* p */ js.UndefOr[Double] => Double = null,
     getOutOfBoundOffsetY: /* p */ js.UndefOr[Double] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IPoint = null,
     intersect: /* region */ js.UndefOr[IPoint] => _ = null,
     isContainedBy: /* region */ js.UndefOr[js.Any] => Boolean = null,
-    isOutOfBound: (/* axis */ js.UndefOr[java.lang.String], /* p */ js.UndefOr[js.Any]) => Boolean = null,
+    isOutOfBound: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[js.Any]) => Boolean = null,
     isOutOfBoundX: /* p */ js.UndefOr[Double] => Boolean = null,
     isOutOfBoundY: /* p */ js.UndefOr[Double] => Boolean = null,
     isWithin: (/* p */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean = null,
@@ -79,7 +79,7 @@ object IPoint {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     translate: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IRegion = null,
     translateBy: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IPoint = null,
     union: /* region */ js.UndefOr[IPoint] => IPoint = null,

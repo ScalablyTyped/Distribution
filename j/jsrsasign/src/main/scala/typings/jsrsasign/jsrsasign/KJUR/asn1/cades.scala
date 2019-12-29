@@ -9,7 +9,6 @@ import typings.jsrsasign.Anon_Digalg
 import typings.jsrsasign.Anon_Hash
 import typings.jsrsasign.Anon_Length
 import typings.jsrsasign.Anon_Res
-import typings.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
 import scala.scalajs.js
 import scala.scalajs.js.`|`

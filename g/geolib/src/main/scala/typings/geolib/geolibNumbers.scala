@@ -32,9 +32,6 @@ object geolibNumbers {
   @js.native
   sealed trait `90` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
   @scala.inline
   def `-180`: `-180` = -180.asInstanceOf[`-180`]
   @scala.inline
@@ -51,7 +48,5 @@ object geolibNumbers {
   def `6378137`: `6378137` = 6378137.asInstanceOf[`6378137`]
   @scala.inline
   def `90`: `90` = 90.asInstanceOf[`90`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

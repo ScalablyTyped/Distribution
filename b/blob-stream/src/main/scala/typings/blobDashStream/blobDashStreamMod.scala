@@ -1,6 +1,5 @@
 package typings.blobDashStream
 
-import typings.blobDashStream.blobDashStreamMod.IBlobStream
 import typings.node.NodeJS.WritableStream
 import typings.std.Blob
 import scala.scalajs.js

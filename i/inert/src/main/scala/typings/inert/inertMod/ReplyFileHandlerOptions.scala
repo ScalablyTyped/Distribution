@@ -1,7 +1,7 @@
 package typings.inert.inertMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.inert.inertNumbers.`false`
+import typings.inert.inertBooleans.`false`
 import typings.inert.inertStrings.`inline`
 import typings.inert.inertStrings.attachment
 import typings.inert.inertStrings.hash

@@ -1,8 +1,8 @@
 package typings.atFirebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.`[MAX_NAME]`
-import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.`[MIN_NAME]`
+import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.LeftsquarebracketMAX_NAMERightsquarebracket
+import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.LeftsquarebracketMIN_NAMERightsquarebracket
 import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
 import typings.std.Error
 import typings.std.RegExp
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcCoreUtilUtilMod extends js.Object {
   val INTEGER_REGEXP_ : RegExp = js.native
-  val MAX_NAME: `[MAX_NAME]` = js.native
-  val MIN_NAME: `[MIN_NAME]` = js.native
+  val MAX_NAME: LeftsquarebracketMAX_NAMERightsquarebracket = js.native
+  val MIN_NAME: LeftsquarebracketMIN_NAMERightsquarebracket = js.native
   var logger: (js.Function1[/* a */ String, Unit]) | Null = js.native
   def LUIDGenerator(): Double = js.native
   def ObjectToUniqueKey(obj: js.Any): String = js.native

@@ -20,7 +20,8 @@ class Protection protected () extends js.Object {
   val AllowInsertingRows: Boolean = js.native
   val AllowSorting: Boolean = js.native
   val AllowUsingPivotTables: Boolean = js.native
-  var `Excel.Protection_typekey`: Protection = js.native
+  @JSName("Excel.Protection_typekey")
+  var ExcelDotProtection_typekey: Protection = js.native
   def AllowEditRanges(Index: String): AllowEditRange = js.native
   def AllowEditRanges(Index: Double): AllowEditRange = js.native
 }

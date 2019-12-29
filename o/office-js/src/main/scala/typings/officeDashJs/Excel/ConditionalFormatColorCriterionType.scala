@@ -1,13 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.formula
-import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.highestValue
-import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.invalid
-import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.lowestValue
-import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.number
-import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.percent
-import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.percentile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

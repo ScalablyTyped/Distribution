@@ -18,7 +18,7 @@ object ssh2Strings {
   sealed trait banner extends js.Object
   
   @js.native
-  sealed trait `cancel-streamlocal-forward@opensshDOTcom` extends js.Object
+  sealed trait `cancel-streamlocal-forward@opensshDotcom` extends js.Object
   
   @js.native
   sealed trait `cancel-tcpip-forward` extends js.Object
@@ -75,7 +75,7 @@ object ssh2Strings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait opensshDOTstreamlocal extends js.Object
+  sealed trait opensshDotstreamlocal extends js.Object
   
   @js.native
   sealed trait password extends js.Object
@@ -111,7 +111,7 @@ object ssh2Strings {
   sealed trait signal extends js.Object
   
   @js.native
-  sealed trait `streamlocal-forward@opensshDOTcom` extends js.Object
+  sealed trait `streamlocal-forward@opensshDotcom` extends js.Object
   
   @js.native
   sealed trait subsystem extends js.Object
@@ -143,7 +143,7 @@ object ssh2Strings {
   @scala.inline
   def banner: banner = "banner".asInstanceOf[banner]
   @scala.inline
-  def `cancel-streamlocal-forward@opensshDOTcom`: `cancel-streamlocal-forward@opensshDOTcom` = "cancel-streamlocal-forward@openssh.com".asInstanceOf[`cancel-streamlocal-forward@opensshDOTcom`]
+  def `cancel-streamlocal-forward@opensshDotcom`: `cancel-streamlocal-forward@opensshDotcom` = "cancel-streamlocal-forward@openssh.com".asInstanceOf[`cancel-streamlocal-forward@opensshDotcom`]
   @scala.inline
   def `cancel-tcpip-forward`: `cancel-tcpip-forward` = "cancel-tcpip-forward".asInstanceOf[`cancel-tcpip-forward`]
   @scala.inline
@@ -181,7 +181,7 @@ object ssh2Strings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def opensshDOTstreamlocal: opensshDOTstreamlocal = "openssh.streamlocal".asInstanceOf[opensshDOTstreamlocal]
+  def opensshDotstreamlocal: opensshDotstreamlocal = "openssh.streamlocal".asInstanceOf[opensshDotstreamlocal]
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   @scala.inline
@@ -205,7 +205,7 @@ object ssh2Strings {
   @scala.inline
   def signal: signal = "signal".asInstanceOf[signal]
   @scala.inline
-  def `streamlocal-forward@opensshDOTcom`: `streamlocal-forward@opensshDOTcom` = "streamlocal-forward@openssh.com".asInstanceOf[`streamlocal-forward@opensshDOTcom`]
+  def `streamlocal-forward@opensshDotcom`: `streamlocal-forward@opensshDotcom` = "streamlocal-forward@openssh.com".asInstanceOf[`streamlocal-forward@opensshDotcom`]
   @scala.inline
   def subsystem: subsystem = "subsystem".asInstanceOf[subsystem]
   @scala.inline

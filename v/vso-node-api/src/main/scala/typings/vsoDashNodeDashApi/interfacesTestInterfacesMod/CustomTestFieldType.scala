@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Bit
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.DateTime
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Float
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Guid
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Int
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.ethereumDashProtocol.ethereumDashProtocolMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.SolidityTypes.Address
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.SolidityTypes.Uint
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.SolidityTypes.Uint256
-import typings.ethereumDashProtocol.ethereumDashProtocolMod.SolidityTypes.Uint8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

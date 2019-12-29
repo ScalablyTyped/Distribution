@@ -1,22 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Aborted
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Blocked
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Error
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Failed
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.InProgress
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Inconclusive
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.MaxValue
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.None
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotApplicable
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotExecuted
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotImpacted
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Passed
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Paused
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Timeout
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Unspecified
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

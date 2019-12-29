@@ -59,6 +59,6 @@ class Field () extends ClientObject {
   def set_validationMessage(value: String): Unit = js.native
   def update(): Unit = js.native
   def updateAndPushChanges(pushChangesToLists: Boolean): Unit = js.native
-  def validateSetValue[T](item: typings.sharepoint.SP.ListItem[T], value: String): Unit = js.native
+  def validateSetValue[T](item: ListItem[T], value: String): Unit = js.native
 }
 

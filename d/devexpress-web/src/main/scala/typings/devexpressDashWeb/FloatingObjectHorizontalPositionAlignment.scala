@@ -1,12 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionAlignment.Center
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionAlignment.Inside
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionAlignment.Left
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionAlignment.None
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionAlignment.Outside
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

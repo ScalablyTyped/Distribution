@@ -1,8 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.BusinessUserRole.ADMIN
-import typings.evernote.evernoteMod.Evernote.BusinessUserRole.NORMAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

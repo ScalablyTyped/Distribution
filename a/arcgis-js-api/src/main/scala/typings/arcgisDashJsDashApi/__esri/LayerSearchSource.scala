@@ -35,6 +35,12 @@ trait LayerSearchSource extends SearchSource {
     */
   var name: String = js.native
   /**
+    * One or more field names used to order the query results. Specfiy `ASC` (ascending) or `DESC` (descending) after the field name to control the order. The default order is `ASC`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#orderByFields)
+    */
+  var orderByFields: js.Array[String] = js.native
+  /**
     * An array of string values representing the names of fields in the feature layer to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#searchFields)

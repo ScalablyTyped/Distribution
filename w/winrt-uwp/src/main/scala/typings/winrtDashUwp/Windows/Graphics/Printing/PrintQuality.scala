@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.automatic
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.default
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.draft
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.fax
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.high
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.normal
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.notAvailable
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.photographic
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.printerCustom
-import typings.winrtDashUwp.Windows.Graphics.Printing.PrintQuality.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

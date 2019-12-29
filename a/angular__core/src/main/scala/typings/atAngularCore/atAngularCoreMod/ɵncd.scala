@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵncd")
+@JSImport("@angular/core", "\u0275ncd")
 @js.native
 object ɵncd extends js.Object {
   def apply(ngContentIndex: Double, index: Double): NodeDef = js.native

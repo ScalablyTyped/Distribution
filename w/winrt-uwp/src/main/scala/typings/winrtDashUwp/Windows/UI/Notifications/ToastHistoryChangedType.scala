@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Notifications.ToastHistoryChangedType.added
-import typings.winrtDashUwp.Windows.UI.Notifications.ToastHistoryChangedType.cleared
-import typings.winrtDashUwp.Windows.UI.Notifications.ToastHistoryChangedType.expired
-import typings.winrtDashUwp.Windows.UI.Notifications.ToastHistoryChangedType.removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

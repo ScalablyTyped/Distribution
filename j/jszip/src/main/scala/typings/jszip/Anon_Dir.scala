@@ -1,6 +1,6 @@
 package typings.jszip
 
-import typings.jszip.jszipNumbers.`true`
+import typings.jszip.jszipBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("digibyte", "Networks.remove")
 @js.native
 object remove extends js.Object {
-  def apply(network: Network): scala.Unit = js.native
+  def apply(network: Network): Unit = js.native
 }
 

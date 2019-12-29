@@ -22,5 +22,6 @@ trait SinonSpyStatic extends js.Object {
     * The returned spy is the function object which replaced the original method. spy === object.method.
     */
   def apply[T](obj: T, method: String): SinonSpy = js.native
+  def apply[T](obj: T, method: String, types: js.Array[String]): SinonSpy = js.native
 }
 

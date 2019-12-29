@@ -2,7 +2,6 @@ package typings.pkijs
 
 import typings.asn1js.asn1jsMod.BitString
 import typings.asn1js.asn1jsMod.Sequence
-import typings.pkijs.srcCertificateRevocationListMod.CertificateRevocationList
 import typings.std.AlgorithmIdentifier
 import typings.std.ArrayBuffer
 import typings.std.CryptoKey

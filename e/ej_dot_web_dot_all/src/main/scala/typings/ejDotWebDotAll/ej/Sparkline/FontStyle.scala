@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sparkline
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sparkline.FontStyle.Italic
-import typings.ejDotWebDotAll.ej.Sparkline.FontStyle.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

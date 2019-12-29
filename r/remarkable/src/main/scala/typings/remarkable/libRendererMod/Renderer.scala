@@ -7,8 +7,8 @@ import typings.remarkable.libMod.Options
 import typings.remarkable.libMod.Remarkable
 import typings.remarkable.libMod.Rules
 import typings.remarkable.libMod.Token
-import typings.remarkable.remarkableStrings.BACKSLASHn
-import typings.remarkable.remarkableStrings.Empty
+import typings.remarkable.remarkableStrings.Linefeed
+import typings.remarkable.remarkableStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait Renderer extends js.Object {
     * The index of the token currently being processed.
     */
   idx: Double
-  ): Empty | BACKSLASHn = js.native
+  ): _empty | Linefeed = js.native
   def getBreak(
     /**
     * The list of tokens currently being processed.
@@ -53,7 +53,7 @@ trait Renderer extends js.Object {
     * The options given to remarkable.
     */
   options: Options
-  ): Empty | BACKSLASHn = js.native
+  ): _empty | Linefeed = js.native
   def getBreak(
     /**
     * The list of tokens currently being processed.
@@ -72,7 +72,7 @@ trait Renderer extends js.Object {
     * The key-value store created by the parsing rules.
     */
   env: Env
-  ): Empty | BACKSLASHn = js.native
+  ): _empty | Linefeed = js.native
   def getBreak(
     /**
     * The list of tokens currently being processed.
@@ -95,7 +95,7 @@ trait Renderer extends js.Object {
     * The possible instance of Remarkable. See `fence` renderer function.
     */
   instance: Remarkable
-  ): Empty | BACKSLASHn = js.native
+  ): _empty | Linefeed = js.native
   /**
     * Render a string of HTML with the given `tokens` and
     * `options`.

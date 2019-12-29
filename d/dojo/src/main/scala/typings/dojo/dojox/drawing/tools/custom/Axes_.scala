@@ -1,6 +1,7 @@
 package typings.dojo.dojox.drawing.tools.custom
 
 import typings.dojo.dojox.drawing.manager.Anchors
+import typings.dojo.dojox.drawing.stencil.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.drawing.tools.custom.Axes")
 @js.native
-class Axes_ protected ()
-  extends typings.dojo.dojox.drawing.stencil.Path {
+class Axes_ protected () extends Path {
   def this(options: js.Any) = this()
   /**
     *

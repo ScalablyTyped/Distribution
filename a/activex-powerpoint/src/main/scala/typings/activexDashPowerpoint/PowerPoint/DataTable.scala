@@ -17,7 +17,8 @@ class DataTable protected () extends js.Object {
   var HasBorderOutline: Boolean = js.native
   var HasBorderVertical: Boolean = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.DataTable_typekey`: DataTable = js.native
+  @JSName("PowerPoint.DataTable_typekey")
+  var PowerPointDotDataTable_typekey: DataTable = js.native
   var ShowLegendKey: Boolean = js.native
   def Delete(): Unit = js.native
   def Select(): Unit = js.native

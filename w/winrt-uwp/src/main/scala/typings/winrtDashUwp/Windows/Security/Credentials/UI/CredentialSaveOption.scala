@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Credentials.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.hidden
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.selected
-import typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.unselected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

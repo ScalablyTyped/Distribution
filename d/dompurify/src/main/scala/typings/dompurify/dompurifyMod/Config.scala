@@ -1,7 +1,7 @@
 package typings.dompurify.dompurifyMod
 
 import typings.dompurify.Anon_Html
-import typings.dompurify.dompurifyNumbers.`false`
+import typings.dompurify.dompurifyBooleans.`false`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

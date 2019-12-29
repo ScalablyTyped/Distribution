@@ -21,18 +21,20 @@ trait TypeSystemDefinitionNode extends DefinitionNode
 
 object TypeSystemDefinitionNode {
   @scala.inline
-  def InputObjectTypeDefinitionNode(
-    kind: InputObjectTypeDefinition,
+  def ObjectTypeDefinitionNode(
+    kind: ObjectTypeDefinition,
     name: NameNode,
     description: StringValueNode = null,
     directives: js.Array[DirectiveNode] = null,
-    fields: js.Array[InputValueDefinitionNode] = null,
+    fields: js.Array[FieldDefinitionNode] = null,
+    interfaces: js.Array[NamedTypeNode] = null,
     loc: Location = null
   ): TypeSystemDefinitionNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeSystemDefinitionNode]
   }
@@ -53,6 +55,22 @@ object TypeSystemDefinitionNode {
     __obj.asInstanceOf[TypeSystemDefinitionNode]
   }
   @scala.inline
+  def InputObjectTypeDefinitionNode(
+    kind: InputObjectTypeDefinition,
+    name: NameNode,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    fields: js.Array[InputValueDefinitionNode] = null,
+    loc: Location = null
+  ): TypeSystemDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeSystemDefinitionNode]
+  }
+  @scala.inline
   def SchemaDefinitionNode(
     kind: SchemaDefinition,
     operationTypes: js.Array[OperationTypeDefinitionNode],
@@ -61,6 +79,36 @@ object TypeSystemDefinitionNode {
   ): TypeSystemDefinitionNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], operationTypes = operationTypes.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeSystemDefinitionNode]
+  }
+  @scala.inline
+  def ScalarTypeDefinitionNode(
+    kind: ScalarTypeDefinition,
+    name: NameNode,
+    description: StringValueNode = null,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null
+  ): TypeSystemDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeSystemDefinitionNode]
+  }
+  @scala.inline
+  def DirectiveDefinitionNode(
+    kind: DirectiveDefinition,
+    locations: js.Array[NameNode],
+    name: NameNode,
+    repeatable: Boolean,
+    arguments: js.Array[InputValueDefinitionNode] = null,
+    description: StringValueNode = null,
+    loc: Location = null
+  ): TypeSystemDefinitionNode = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], repeatable = repeatable.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeSystemDefinitionNode]
   }
@@ -94,54 +142,6 @@ object TypeSystemDefinitionNode {
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypeSystemDefinitionNode]
-  }
-  @scala.inline
-  def DirectiveDefinitionNode(
-    kind: DirectiveDefinition,
-    locations: js.Array[NameNode],
-    name: NameNode,
-    repeatable: Boolean,
-    arguments: js.Array[InputValueDefinitionNode] = null,
-    description: StringValueNode = null,
-    loc: Location = null
-  ): TypeSystemDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], repeatable = repeatable.asInstanceOf[js.Any])
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypeSystemDefinitionNode]
-  }
-  @scala.inline
-  def ObjectTypeDefinitionNode(
-    kind: ObjectTypeDefinition,
-    name: NameNode,
-    description: StringValueNode = null,
-    directives: js.Array[DirectiveNode] = null,
-    fields: js.Array[FieldDefinitionNode] = null,
-    interfaces: js.Array[NamedTypeNode] = null,
-    loc: Location = null
-  ): TypeSystemDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypeSystemDefinitionNode]
-  }
-  @scala.inline
-  def ScalarTypeDefinitionNode(
-    kind: ScalarTypeDefinition,
-    name: NameNode,
-    description: StringValueNode = null,
-    directives: js.Array[DirectiveNode] = null,
-    loc: Location = null
-  ): TypeSystemDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeSystemDefinitionNode]
   }
 }

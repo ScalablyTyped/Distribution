@@ -3,6 +3,7 @@ package typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Collection
 import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Collection.Presentations.PagesCollection
 import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.BatchUpdatePresentationRequest
 import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.BatchUpdatePresentationResponse
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Presentation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,17 +33,17 @@ trait PresentationsCollection extends js.Object {
   // Otherwise, a new ID is generated. Other fields in the request, including
   // any provided content, are ignored.
   // Returns the created presentation.
-  def create(resource: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Presentation): typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Presentation
+  def create(resource: Presentation): Presentation
   // Gets the latest version of the specified presentation.
-  def get(presentationId: String): typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Presentation
+  def get(presentationId: String): Presentation
 }
 
 object PresentationsCollection {
   @scala.inline
   def apply(
     batchUpdate: (BatchUpdatePresentationRequest, String) => BatchUpdatePresentationResponse,
-    create: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Presentation => typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Presentation,
-    get: String => typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Presentation,
+    create: Presentation => Presentation,
+    get: String => Presentation,
     Pages: PagesCollection = null
   ): PresentationsCollection = {
     val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction2(batchUpdate), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))

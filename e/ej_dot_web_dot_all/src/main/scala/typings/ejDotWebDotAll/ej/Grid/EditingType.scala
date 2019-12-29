@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.EditingType.Boolean
-import typings.ejDotWebDotAll.ej.Grid.EditingType.Dropdown
-import typings.ejDotWebDotAll.ej.Grid.EditingType.Numeric
-import typings.ejDotWebDotAll.ej.Grid.EditingType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,12 +41,10 @@ object EditingType extends js.Object {
   object Boolean extends TopLevel[Boolean with Double]
   
   /* 4 */ @js.native
-  object DatePicker
-    extends TopLevel[typings.ejDotWebDotAll.ej.Grid.EditingType.DatePicker with Double]
+  object DatePicker extends TopLevel[DatePicker with Double]
   
   /* 5 */ @js.native
-  object DateTimePicker
-    extends TopLevel[typings.ejDotWebDotAll.ej.Grid.EditingType.DateTimePicker with Double]
+  object DateTimePicker extends TopLevel[DateTimePicker with Double]
   
   /* 3 */ @js.native
   object Dropdown extends TopLevel[Dropdown with Double]

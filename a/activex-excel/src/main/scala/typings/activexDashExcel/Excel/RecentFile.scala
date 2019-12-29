@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class RecentFile protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.RecentFile_typekey`: RecentFile = js.native
+  @JSName("Excel.RecentFile_typekey")
+  var ExcelDotRecentFile_typekey: RecentFile = js.native
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native

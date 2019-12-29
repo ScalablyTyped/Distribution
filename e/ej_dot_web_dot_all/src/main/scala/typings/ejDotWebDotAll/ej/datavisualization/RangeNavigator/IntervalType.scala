@@ -1,13 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.IntervalType.Days
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.IntervalType.Hours
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.IntervalType.Minutes
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.IntervalType.Months
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.IntervalType.Quarters
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.IntervalType.Weeks
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.IntervalType.Years
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

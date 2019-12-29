@@ -38,7 +38,8 @@ class Style protected () extends js.Object {
   val Type: WdStyleType = js.native
   var UnhideWhenUsed: Boolean = js.native
   var Visibility: Boolean = js.native
-  var `Word.Style_typekey`: Style = js.native
+  @JSName("Word.Style_typekey")
+  var WordDotStyle_typekey: Style = js.native
   def Delete(): Unit = js.native
   def LinkToListTemplate(ListTemplate: typings.activexDashWord.Word.ListTemplate): Unit = js.native
   def LinkToListTemplate(ListTemplate: typings.activexDashWord.Word.ListTemplate, ListLevelNumber: js.Any): Unit = js.native

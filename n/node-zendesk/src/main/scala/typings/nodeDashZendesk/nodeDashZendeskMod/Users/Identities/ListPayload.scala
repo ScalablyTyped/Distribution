@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListPayload extends PaginablePayload {
-  val identities: js.Array[typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.ResponseModel]
+  val identities: js.Array[ResponseModel]
 }
 
 object ListPayload {
   @scala.inline
   def apply(
     count: Double,
-    identities: js.Array[typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.ResponseModel],
+    identities: js.Array[ResponseModel],
     next_page: Int | Double = null,
     previous_page: Int | Double = null
   ): ListPayload = {

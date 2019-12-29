@@ -9,30 +9,27 @@ import scala.scalajs.js.annotation._
 
 trait PluralRules extends js.Object {
   def resolvedOptions(): ResolvedPluralRulesOptions
-  def select(n: Double): java.lang.String
+  def select(n: Double): String
 }
 
 @JSGlobal("Intl.PluralRules")
 @js.native
 object PluralRules
   extends Instantiable0[PluralRules]
+     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), PluralRules]
      with Instantiable2[
-      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      (/* locales */ js.Array[String]) | (/* locales */ String), 
       /* options */ PluralRulesOptions, 
-      PluralRules
-    ]
-     with Instantiable1[
-      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       PluralRules
     ] {
   def apply(): PluralRules = js.native
-  def apply(locales: java.lang.String): PluralRules = js.native
-  def apply(locales: java.lang.String, options: PluralRulesOptions): PluralRules = js.native
-  def apply(locales: js.Array[java.lang.String]): PluralRules = js.native
-  def apply(locales: js.Array[java.lang.String], options: PluralRulesOptions): PluralRules = js.native
-  def supportedLocalesOf(locales: java.lang.String): js.Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: java.lang.String, options: PluralRulesOptions): js.Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def supportedLocalesOf(locales: js.Array[java.lang.String], options: PluralRulesOptions): js.Array[java.lang.String] = js.native
+  def apply(locales: String): PluralRules = js.native
+  def apply(locales: String, options: PluralRulesOptions): PluralRules = js.native
+  def apply(locales: js.Array[String]): PluralRules = js.native
+  def apply(locales: js.Array[String], options: PluralRulesOptions): PluralRules = js.native
+  def supportedLocalesOf(locales: String): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String, options: PluralRulesOptions): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.Array[String], options: PluralRulesOptions): js.Array[String] = js.native
 }
 

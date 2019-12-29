@@ -1,13 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SelectionType.CURRENT_PAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SelectionType.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SelectionType.PAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SelectionType.PAGE_ELEMENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SelectionType.TABLE_CELL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SelectionType.TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SelectionType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

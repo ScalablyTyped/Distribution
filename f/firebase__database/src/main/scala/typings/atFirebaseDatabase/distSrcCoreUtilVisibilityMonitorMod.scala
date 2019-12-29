@@ -1,7 +1,6 @@
 package typings.atFirebaseDatabase
 
 import typings.atFirebaseDatabase.distSrcCoreUtilEventEmitterMod.EventEmitter
-import typings.atFirebaseDatabase.distSrcCoreUtilVisibilityMonitorMod.VisibilityMonitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

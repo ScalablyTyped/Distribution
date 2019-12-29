@@ -1,11 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.IconColor.Critical
-import typings.openui5.sap.ui.core.IconColor.Default
-import typings.openui5.sap.ui.core.IconColor.Negative
-import typings.openui5.sap.ui.core.IconColor.Neutral
-import typings.openui5.sap.ui.core.IconColor.Positive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

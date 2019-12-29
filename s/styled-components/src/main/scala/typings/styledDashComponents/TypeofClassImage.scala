@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactDashNative.reactDashNativeMod.Image
 import typings.reactDashNative.reactDashNativeMod.ImageResolvedAssetSource
 import typings.reactDashNative.reactDashNativeMod.ImageSourcePropType
-import typings.styledDashComponents.styledDashComponentsStrings.`disk/memory`
 import typings.styledDashComponents.styledDashComponentsStrings.disk
+import typings.styledDashComponents.styledDashComponentsStrings.diskSlashmemory
 import typings.styledDashComponents.styledDashComponentsStrings.memory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait TypeofClassImage extends Instantiable0[Image] {
   var queryCache: js.UndefOr[
     js.Function1[
       /* urls */ js.Array[String], 
-      js.Promise[StringDictionary[memory | disk | `disk/memory`]]
+      js.Promise[StringDictionary[memory | disk | diskSlashmemory]]
     ]
   ] = js.native
   def getSize(

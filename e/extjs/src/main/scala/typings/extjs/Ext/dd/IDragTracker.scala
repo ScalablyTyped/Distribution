@@ -18,7 +18,7 @@ trait IDragTracker extends IObservable {
   /** [Config Option] (Ext.util.Region/Ext.Element) */
   var constrainTo: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var delegate: js.UndefOr[java.lang.String] = js.undefined
+  var delegate: js.UndefOr[String] = js.undefined
   /** [Property] (HTMLElement) */
   var dragTarget: js.UndefOr[HTMLElement] = js.undefined
   /** [Method] Returns the drag target
@@ -29,7 +29,7 @@ trait IDragTracker extends IObservable {
   		* @param constrainMode String If omitted the true mouse position is returned. May be passed as point or dragTarget. See above.
   		* @returns Number[] The X, Y offset from the mousedown point, optionally constrained.
   		*/
-  var getOffset: js.UndefOr[js.Function1[/* constrainMode */ js.UndefOr[java.lang.String], Array]] = js.undefined
+  var getOffset: js.UndefOr[js.Function1[/* constrainMode */ js.UndefOr[String], Array]] = js.undefined
   /** [Method] Initializes the DragTracker on a given element
   		* @param el Ext.Element/HTMLElement The element
   		*/
@@ -51,7 +51,7 @@ trait IDragTracker extends IObservable {
   		*/
   var onStart: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var overCls: js.UndefOr[java.lang.String] = js.undefined
+  var overCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var preventDefault: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -79,16 +79,16 @@ object IDragTracker {
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
     constrainTo: js.Any = null,
-    delegate: java.lang.String = null,
+    delegate: String = null,
     dragTarget: HTMLElement = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getDragTarget: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getOffset: /* constrainMode */ js.UndefOr[java.lang.String] => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getOffset: /* constrainMode */ js.UndefOr[String] => Array = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IDragTracker = null,
@@ -103,10 +103,10 @@ object IDragTracker {
     onDrag: /* e */ js.UndefOr[IEventObject] => Unit = null,
     onEnd: /* e */ js.UndefOr[IEventObject] => Unit = null,
     onStart: /* e */ js.UndefOr[IEventObject] => Unit = null,
-    overCls: java.lang.String = null,
+    overCls: String = null,
     preventDefault: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -119,7 +119,7 @@ object IDragTracker {
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     tolerance: Int | Double = null,
     trackOver: js.UndefOr[Boolean] = js.undefined,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IDragTracker = {
     val __obj = js.Dynamic.literal()

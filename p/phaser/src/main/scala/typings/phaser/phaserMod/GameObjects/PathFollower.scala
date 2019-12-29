@@ -1,6 +1,7 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Curves.Path
+import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,22 +32,8 @@ class PathFollower protected ()
     * @param texture The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frame An optional frame from the Texture this Game Object is rendering with.
     */
-  def this(scene: typings.phaser.Phaser.Scene, path: Path, x: Double, y: Double, texture: String) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    path: Path,
-    x: Double,
-    y: Double,
-    texture: String,
-    frame: String
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    path: Path,
-    x: Double,
-    y: Double,
-    texture: String,
-    frame: integer
-  ) = this()
+  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String) = this()
+  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String, frame: String) = this()
+  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String, frame: integer) = this()
 }
 

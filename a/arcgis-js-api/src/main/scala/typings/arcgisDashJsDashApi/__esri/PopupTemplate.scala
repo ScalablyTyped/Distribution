@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,7 @@ trait PopupTemplate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content)
     */
-  var content: Content | js.Array[Content] | String | js.Function | IPromise[_] = js.native
+  var content: js.Array[Content] | String | js.Function | js.Promise[_] = js.native
   /**
     * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions.
     *
@@ -41,6 +40,7 @@ trait PopupTemplate
   var expressionInfos: js.Array[ExpressionInfo] = js.native
   /**
     * An array of [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) that defines how fields in the dataset or values from [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions participate in a popup. If no [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) are specified, nothing will display since the popup will only display the fields that are defined by this array. Each [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) contains properties for a single field or expression. This property can be set directly within the PopupTemplate or within the [fields content element](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html). If this is not set within the [fields content element](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html), it will default to whatever is specified directly within the `PopupTemplate.fieldInfos`. The image on the left is a result of using the first example snippet below, whereas the image on the right is a result of the second snippet.
+    * > Use this `fieldInfos` property to specify any formatting options for numbers displayed in chart or text elements.
     *
     * | **Content set using 'fields' type** | **Content referenced from fields set within fieldInfo**  |
     * | -------------------------- | --------------------------- |

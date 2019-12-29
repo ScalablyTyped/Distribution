@@ -5,7 +5,6 @@ import typings.shopifyDashPrime.distModelsChargeMod.Charge
 import typings.shopifyDashPrime.distOptionsBaseMod.DateOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.FieldOptions
 import typings.shopifyDashPrime.distOptionsBaseMod.ListOptions
-import typings.shopifyDashPrime.distServicesChargesMod.Charges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

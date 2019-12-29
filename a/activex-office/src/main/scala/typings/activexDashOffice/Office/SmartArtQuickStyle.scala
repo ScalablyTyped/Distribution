@@ -13,7 +13,8 @@ class SmartArtQuickStyle protected () extends js.Object {
   val Description: String = js.native
   val Id: String = js.native
   val Name: String = js.native
-  var `Office.SmartArtQuickStyle_typekey`: SmartArtQuickStyle = js.native
+  @JSName("Office.SmartArtQuickStyle_typekey")
+  var OfficeDotSmartArtQuickStyle_typekey: SmartArtQuickStyle = js.native
   val Parent: js.Any = js.native
 }
 

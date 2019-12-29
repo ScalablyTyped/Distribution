@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosPowerReportingType.advanced
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosPowerReportingType.standard
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosPowerReportingType.unknownPowerReportingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

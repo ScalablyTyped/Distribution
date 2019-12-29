@@ -26,13 +26,13 @@ trait FeatureLayerCapabilitiesEditing extends Object {
     */
   var supportsGeometryUpdate: Boolean
   /**
-    * Indicates if the `globalid` values provided by the client are used in [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits).
+    * Indicates if the `globalId` values provided by the client are used in [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsGlobalId: Boolean
   /**
-    * Indicates if the `rollbackOnFailure` parameter can be set to `true` or `false` when running the synchronizeReplica operation.
+    * Indicates if the `rollbackOnFailureEnabled` parameter can be set to `true` or `false` when editing features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */

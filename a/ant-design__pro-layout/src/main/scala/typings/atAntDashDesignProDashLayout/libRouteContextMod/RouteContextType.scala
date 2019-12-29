@@ -1,6 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libRouteContextMod
 
-import typings.atAntDashDesignProDashLayout.Anon_Locale
+import typings.atAntDashDesignProDashLayout.Anon_DefaultOpenAll
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 trait RouteContextType extends js.Object {
   var breadcrumb: js.UndefOr[BreadcrumbListReturn] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  var colorWeak: js.UndefOr[Boolean] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   var fixSiderbar: js.UndefOr[Boolean] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
@@ -22,7 +23,7 @@ trait RouteContextType extends js.Object {
   var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
-  var menu: js.UndefOr[Anon_Locale] = js.undefined
+  var menu: js.UndefOr[Anon_DefaultOpenAll] = js.undefined
   var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
   var navTheme: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
@@ -36,6 +37,7 @@ object RouteContextType {
   def apply(
     breadcrumb: BreadcrumbListReturn = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
+    colorWeak: js.UndefOr[Boolean] = js.undefined,
     contentWidth: ContentWidth = null,
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
@@ -43,7 +45,7 @@ object RouteContextType {
     isChildrenLayout: js.UndefOr[Boolean] = js.undefined,
     isMobile: js.UndefOr[Boolean] = js.undefined,
     layout: sidemenu | topmenu = null,
-    menu: Anon_Locale = null,
+    menu: Anon_DefaultOpenAll = null,
     menuData: js.Array[MenuDataItem] = null,
     navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
     primaryColor: String = null,
@@ -52,6 +54,7 @@ object RouteContextType {
     val __obj = js.Dynamic.literal()
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])

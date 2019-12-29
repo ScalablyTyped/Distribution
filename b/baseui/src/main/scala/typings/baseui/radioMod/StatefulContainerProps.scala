@@ -1,7 +1,7 @@
 package typings.baseui.radioMod
 
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.FormEventHandler
+import typings.react.reactMod.ChangeEvent
+import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
 import typings.std.Event
@@ -14,7 +14,7 @@ trait StatefulContainerProps extends js.Object {
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var initialState: js.UndefOr[State] = js.undefined
-  var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
   var stateReducer: StateReducer
 }
@@ -26,7 +26,7 @@ object StatefulContainerProps {
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     initialState: State = null,
-    onChange: FormEvent[HTMLInputElement] => Unit = null,
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
     overrides: RadioOverrides with RadioGroupOverrides = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal(stateReducer = js.Any.fromFunction4(stateReducer))

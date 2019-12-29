@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`cursor-update`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait MultipointDrawActionCursorUpdateEvent extends js.Object {
   var defaultPrevented: Boolean
   var preventDefault: js.Function
-  var `type`: String
+  var `type`: `cursor-update`
   var vertexIndex: Double
   var vertices: js.Array[js.Array[Double]]
 }
@@ -17,7 +18,7 @@ object MultipointDrawActionCursorUpdateEvent {
   def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
-    `type`: String,
+    `type`: `cursor-update`,
     vertexIndex: Double,
     vertices: js.Array[js.Array[Double]]
   ): MultipointDrawActionCursorUpdateEvent = {

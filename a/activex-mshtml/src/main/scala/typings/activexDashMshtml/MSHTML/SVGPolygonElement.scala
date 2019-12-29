@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGPolygonElement")
 @js.native
 class SVGPolygonElement protected () extends js.Object {
-  var `MSHTML.SVGPolygonElement_typekey`: SVGPolygonElement = js.native
+  @JSName("MSHTML.SVGPolygonElement_typekey")
+  var MSHTMLDotSVGPolygonElement_typekey: SVGPolygonElement = js.native
   var animatedPoints: SVGPointList = js.native
   val farthestViewportElement: ISVGElement = js.native
   var focusable: SVGAnimatedEnumeration = js.native

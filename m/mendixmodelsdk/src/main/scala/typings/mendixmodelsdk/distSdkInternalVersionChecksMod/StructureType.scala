@@ -1,9 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalVersionChecksMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.Element
-import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.ModelUnit
-import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.StructuralUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,7 @@
 package typings.knex.knexMod
 
-import typings.knex.knexMod.DeferredKeySelection.AddAliases
-import typings.knex.knexMod.DeferredKeySelection.AddKey
-import typings.knex.knexMod.DeferredKeySelection.ResolveOne
-import typings.knex.knexMod.DeferredKeySelection.SetBase
-import typings.knex.knexNumbers.`false`
-import typings.knex.knexNumbers.`true`
+import typings.knex.knexBooleans.`false`
+import typings.knex.knexBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

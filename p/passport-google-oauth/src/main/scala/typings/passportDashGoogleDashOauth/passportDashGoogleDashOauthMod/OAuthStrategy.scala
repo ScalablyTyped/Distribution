@@ -22,7 +22,6 @@ class OAuthStrategy protected () extends Strategy {
   ) = this()
   @JSName("name")
   var name_OAuthStrategy: String = js.native
-  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
   def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

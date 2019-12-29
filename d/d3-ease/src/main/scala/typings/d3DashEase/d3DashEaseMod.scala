@@ -1,8 +1,5 @@
 package typings.d3DashEase
 
-import typings.d3DashEase.d3DashEaseMod.BackEasingFactory
-import typings.d3DashEase.d3DashEaseMod.ElasticEasingFactory
-import typings.d3DashEase.d3DashEaseMod.PolynomialEasingFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

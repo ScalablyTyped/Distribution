@@ -104,9 +104,9 @@ object RadioManager extends js.Object {
   		* @returns Array The unique values
   		*/
   def collect(): Array = js.native
-  def collect(property: java.lang.String): Array = js.native
-  def collect(property: java.lang.String, root: java.lang.String): Array = js.native
-  def collect(property: java.lang.String, root: java.lang.String, allowBlank: Boolean): Array = js.native
+  def collect(property: String): Array = js.native
+  def collect(property: String, root: String): Array = js.native
+  def collect(property: String, root: String, allowBlank: Boolean): Array = js.native
   /** [Method] Returns true if the collection contains the passed Object as an item
   		* @param o Object The Object to look for in the collection.
   		* @returns Boolean True if the collection contains the Object as an item.
@@ -118,7 +118,7 @@ object RadioManager extends js.Object {
   		* @returns Boolean True if the collection contains the Object as a key.
   		*/
   def containsKey(): Boolean = js.native
-  def containsKey(key: java.lang.String): Boolean = js.native
+  def containsKey(key: String): Boolean = js.native
   /** [Method] Executes the specified function once for every item in the collection
   		* @param fn Function The function to execute for each item.
   		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
@@ -177,17 +177,11 @@ object RadioManager extends js.Object {
   		* @returns Number The matched index or -1
   		*/
   def findIndex(): Double = js.native
-  def findIndex(property: java.lang.String): Double = js.native
-  def findIndex(property: java.lang.String, value: js.Any): Double = js.native
-  def findIndex(property: java.lang.String, value: js.Any, start: Double): Double = js.native
-  def findIndex(property: java.lang.String, value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
-  def findIndex(
-    property: java.lang.String,
-    value: js.Any,
-    start: Double,
-    anyMatch: Boolean,
-    caseSensitive: Boolean
-  ): Double = js.native
+  def findIndex(property: String): Double = js.native
+  def findIndex(property: String, value: js.Any): Double = js.native
+  def findIndex(property: String, value: js.Any, start: Double): Double = js.native
+  def findIndex(property: String, value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
+  def findIndex(property: String, value: js.Any, start: Double, anyMatch: Boolean, caseSensitive: Boolean): Double = js.native
   /** [Method] Find the index of the first matching object in this collection by a function
   		* @param fn Function The function to be called.
   		* @param scope Object The scope (this reference) in which the function is executed. Defaults to this MixedCollection.
@@ -211,15 +205,15 @@ object RadioManager extends js.Object {
   		* @param args Object... Variable number of parameters are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
-  def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = js.native
+  def fireEvent(eventName: String, args: js.Any*): Boolean = js.native
   /** [Method] Fires the specified event with the passed parameter list
   		* @param eventName String The name of the event to fire.
   		* @param args Object[] An array of parameters which are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
   def fireEventArgs(): Boolean = js.native
-  def fireEventArgs(eventName: java.lang.String): Boolean = js.native
-  def fireEventArgs(eventName: java.lang.String, args: Array): Boolean = js.native
+  def fireEventArgs(eventName: String): Boolean = js.native
+  def fireEventArgs(eventName: String, args: Array): Boolean = js.native
   /** [Method] Returns the first item in the collection
   		* @returns Object the first item in the collection..
   		*/
@@ -257,7 +251,7 @@ object RadioManager extends js.Object {
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] A function which will be called passing a newly added object when the object is added without a separate id
   		* @param item Object The item for which to find the key.
   		* @returns Object The key for the passed item.
@@ -277,7 +271,7 @@ object RadioManager extends js.Object {
   		* @returns Boolean true if the event is being listened for or bubbles, else false
   		*/
   def hasListener(): Boolean = js.native
-  def hasListener(eventName: java.lang.String): Boolean = js.native
+  def hasListener(eventName: String): Boolean = js.native
   /** [Method] Returns index within the collection of the passed Object
   		* @param o Object The item to find the index of.
   		* @returns Number index of the item. Returns -1 if not found.
@@ -289,7 +283,7 @@ object RadioManager extends js.Object {
   		* @returns Number index of the key.
   		*/
   def indexOfKey(): Double = js.native
-  def indexOfKey(key: java.lang.String): Double = js.native
+  def indexOfKey(key: String): Double = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this
@@ -358,7 +352,7 @@ object RadioManager extends js.Object {
   def relayEvents(): js.Any = js.native
   def relayEvents(origin: js.Any): js.Any = js.native
   def relayEvents(origin: js.Any, events: Array): js.Any = js.native
-  def relayEvents(origin: js.Any, events: Array, prefix: java.lang.String): js.Any = js.native
+  def relayEvents(origin: js.Any, events: Array, prefix: String): js.Any = js.native
   /** [Method] Remove an item from the collection
   		* @param o Object The item to remove.
   		* @returns Object The item removed or false if no item was removed.
@@ -382,16 +376,16 @@ object RadioManager extends js.Object {
   		* @returns Object Only returned if removing at a specified key. The item removed or false if no item was removed.
   		*/
   def removeAtKey(): js.Any = js.native
-  def removeAtKey(key: java.lang.String): js.Any = js.native
+  def removeAtKey(key: String): js.Any = js.native
   /** [Method] Removes an event handler
   		* @param eventName String The type of event the handler was associated with.
   		* @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
   def removeListener(): Unit = js.native
-  def removeListener(eventName: java.lang.String): Unit = js.native
-  def removeListener(eventName: java.lang.String, fn: js.Any): Unit = js.native
-  def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  def removeListener(eventName: String): Unit = js.native
+  def removeListener(eventName: String, fn: js.Any): Unit = js.native
+  def removeListener(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes listeners that were added by the mon method
   		* @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
   		* @param ename Object/String The event name, or an object containing event name properties.
@@ -422,8 +416,8 @@ object RadioManager extends js.Object {
   		* @returns Object The new item.
   		*/
   def replace(): js.Any = js.native
-  def replace(key: java.lang.String): js.Any = js.native
-  def replace(key: java.lang.String, o: js.Any): js.Any = js.native
+  def replace(key: String): js.Any = js.native
+  def replace(key: String, o: js.Any): js.Any = js.native
   /** [Method] Resumes firing of the named event s
   		* @param eventName String... Multiple event names to resume.
   		*/
@@ -437,7 +431,7 @@ object RadioManager extends js.Object {
   		*/
   def sort(): Array = js.native
   def sort(sorters: js.Any): Array = js.native
-  def sort(sorters: js.Any, direction: java.lang.String): Array = js.native
+  def sort(sorters: js.Any, direction: String): Array = js.native
   /** [Method] Sorts the collection by a single sorter function
   		* @param sorterFn Function The function to sort by
   		*/
@@ -448,8 +442,8 @@ object RadioManager extends js.Object {
   		* @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
   		*/
   def sortByKey(): Unit = js.native
-  def sortByKey(direction: java.lang.String): Unit = js.native
-  def sortByKey(direction: java.lang.String, fn: js.Any): Unit = js.native
+  def sortByKey(direction: String): Unit = js.native
+  def sortByKey(direction: String, fn: js.Any): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
   		*/
@@ -462,10 +456,10 @@ object RadioManager extends js.Object {
   		* @returns Number The total
   		*/
   def sum(): Double = js.native
-  def sum(property: java.lang.String): Double = js.native
-  def sum(property: java.lang.String, root: java.lang.String): Double = js.native
-  def sum(property: java.lang.String, root: java.lang.String, start: Double): Double = js.native
-  def sum(property: java.lang.String, root: java.lang.String, start: Double, end: Double): Double = js.native
+  def sum(property: String): Double = js.native
+  def sum(property: String, root: String): Double = js.native
+  def sum(property: String, root: String, start: Double): Double = js.native
+  def sum(property: String, root: String, start: Double, end: Double): Double = js.native
   /** [Method] Suspends firing of the named event s
   		* @param eventName String... Multiple event names to suspend.
   		*/
@@ -481,9 +475,9 @@ object RadioManager extends js.Object {
   		* @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
   		*/
   def un(): Unit = js.native
-  def un(eventName: java.lang.String): Unit = js.native
-  def un(eventName: java.lang.String, fn: js.Any): Unit = js.native
-  def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
+  def un(eventName: String): Unit = js.native
+  def un(eventName: String, fn: js.Any): Unit = js.native
+  def un(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Change the key for an existing item in the collection
   		* @param oldKey Object The old key
   		* @param newKey Object The new key

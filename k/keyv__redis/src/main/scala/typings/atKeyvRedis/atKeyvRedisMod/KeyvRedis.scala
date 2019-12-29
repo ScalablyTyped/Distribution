@@ -1,6 +1,6 @@
 package typings.atKeyvRedis.atKeyvRedisMod
 
-import typings.atKeyvRedis.atKeyvRedisNumbers.`true`
+import typings.atKeyvRedis.atKeyvRedisBooleans.`true`
 import typings.keyv.keyvMod.Store
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js

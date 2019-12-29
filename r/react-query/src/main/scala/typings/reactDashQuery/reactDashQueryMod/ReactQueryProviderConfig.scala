@@ -1,6 +1,6 @@
 package typings.reactDashQuery.reactDashQueryMod
 
-import typings.reactDashQuery.reactDashQueryNumbers.`false`
+import typings.reactDashQuery.reactDashQueryBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

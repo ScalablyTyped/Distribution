@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/animations/browser/browser", "ɵCssKeyframesDriver")
+@JSImport("@angular/animations/browser/browser", "\u0275CssKeyframesDriver")
 @js.native
 class ɵCssKeyframesDriver () extends AnimationDriver {
   var _count: js.Any = js.native

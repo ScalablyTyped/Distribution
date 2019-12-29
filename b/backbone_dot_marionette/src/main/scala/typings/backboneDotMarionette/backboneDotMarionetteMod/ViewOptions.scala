@@ -3,7 +3,7 @@ package typings.backboneDotMarionette.backboneDotMarionetteMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.backboneMod.Collection
 import typings.backbone.backboneMod.Model
-import typings.backboneDotMarionette.backboneDotMarionetteNumbers.`false`
+import typings.backboneDotMarionette.backboneDotMarionetteBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

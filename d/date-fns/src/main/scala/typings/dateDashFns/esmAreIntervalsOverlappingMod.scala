@@ -10,8 +10,8 @@ object esmAreIntervalsOverlappingMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(
-      intervalLeft: typings.dateDashFns.dateDashFnsMod.Interval | Interval,
-      intervalRight: typings.dateDashFns.dateDashFnsMod.Interval | Interval
+      intervalLeft: Interval | typings.dateDashFns.dateDashFnsMod.Interval,
+      intervalRight: Interval | typings.dateDashFns.dateDashFnsMod.Interval
     ): Boolean = js.native
   }
   

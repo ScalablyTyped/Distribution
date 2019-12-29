@@ -1,6 +1,5 @@
 package typings.lazypipe
 
-import typings.lazypipe.lazypipeMod.IPipelineBuilder
 import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

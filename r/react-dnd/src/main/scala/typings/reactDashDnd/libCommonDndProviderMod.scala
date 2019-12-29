@@ -1,7 +1,6 @@
 package typings.reactDashDnd
 
 import typings.react.reactMod.FC
-import typings.reactDashDnd.libCommonDndProviderMod.DndProviderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

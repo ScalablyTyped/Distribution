@@ -11,7 +11,8 @@ class BuildingBlockTypes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.BuildingBlockTypes_typekey`: BuildingBlockTypes = js.native
+  @JSName("Word.BuildingBlockTypes_typekey")
+  var WordDotBuildingBlockTypes_typekey: BuildingBlockTypes = js.native
   def Item(Index: WdBuildingBlockTypes): BuildingBlockType = js.native
 }
 

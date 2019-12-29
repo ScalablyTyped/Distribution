@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.antdStrings.Empty
+import typings.antd.antdStrings._empty
 import typings.antd.antdStrings.error
 import typings.antd.antdStrings.success
 import typings.antd.antdStrings.validating
@@ -23,7 +23,7 @@ trait Anon_ extends js.Object {
   var label: Requireable[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]
   var labelCol: Requireable[js.Object]
   var prefixCls: Requireable[String]
-  var validateStatus: Requireable[Empty | error | success | warning | validating]
+  var validateStatus: Requireable[_empty | error | success | warning | validating]
   var wrapperCol: Requireable[js.Object]
 }
 
@@ -39,7 +39,7 @@ object Anon_ {
     label: Requireable[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray],
     labelCol: Requireable[js.Object],
     prefixCls: Requireable[String],
-    validateStatus: Requireable[Empty | error | success | warning | validating],
+    validateStatus: Requireable[_empty | error | success | warning | validating],
     wrapperCol: Requireable[js.Object]
   ): Anon_ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], colon = colon.asInstanceOf[js.Any], hasFeedback = hasFeedback.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelCol = labelCol.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], validateStatus = validateStatus.asInstanceOf[js.Any], wrapperCol = wrapperCol.asInstanceOf[js.Any])

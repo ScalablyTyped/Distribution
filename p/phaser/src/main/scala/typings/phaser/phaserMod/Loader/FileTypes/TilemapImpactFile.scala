@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.TilemapImpactFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import scala.scalajs.js
@@ -24,21 +25,11 @@ class TilemapImpactFile protected ()
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json".
     * @param xhrSettings Extra XHR Settings specifically for this file.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: TilemapImpactFileConfig) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: TilemapImpactFileConfig, url: String) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    url: String,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: TilemapImpactFileConfig,
-    url: String,
-    xhrSettings: XHRSettingsObject
-  ) = this()
+  def this(loader: LoaderPlugin, key: String) = this()
+  def this(loader: LoaderPlugin, key: TilemapImpactFileConfig) = this()
+  def this(loader: LoaderPlugin, key: String, url: String) = this()
+  def this(loader: LoaderPlugin, key: TilemapImpactFileConfig, url: String) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, xhrSettings: XHRSettingsObject) = this()
+  def this(loader: LoaderPlugin, key: TilemapImpactFileConfig, url: String, xhrSettings: XHRSettingsObject) = this()
 }
 

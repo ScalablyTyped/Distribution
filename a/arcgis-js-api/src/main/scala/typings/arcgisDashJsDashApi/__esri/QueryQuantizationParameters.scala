@@ -2,6 +2,8 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`lower-left`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`upper-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.edit
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.view
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -16,11 +18,11 @@ trait QueryQuantizationParameters extends Object {
     */
   var extent: js.UndefOr[Extent] = js.undefined
   /**
-    * Geometry coordinates are optimized for viewing and displaying of data.  **Possible Values:** view | edit
+    * Geometry coordinates are optimized for viewing and displaying of data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[view | edit] = js.undefined
   /**
     * The integer's coordinates will be returned relative to the origin position defined by this property value.
     *
@@ -46,7 +48,7 @@ object QueryQuantizationParameters {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     extent: Extent = null,
-    mode: String = null,
+    mode: view | edit = null,
     originPosition: `upper-left` | `lower-left` = null,
     tolerance: Int | Double = null
   ): QueryQuantizationParameters = {

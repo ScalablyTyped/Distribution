@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geoboundingBox
-import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geocircle
-import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geopath
-import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geopoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait ManualColumnMove extends Base {
   var backlight: BacklightUI
   var columnsMapper: MoveColumnsMapper
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var guideline: GuidelineUI
   var removedColumns: js.Array[_]
   def moveColumn(column: Double, target: Double): Unit
@@ -31,7 +31,7 @@ object ManualColumnMove {
     disablePlugin: () => Unit,
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     guideline: GuidelineUI,
     hot: Core,
     init: () => Unit,

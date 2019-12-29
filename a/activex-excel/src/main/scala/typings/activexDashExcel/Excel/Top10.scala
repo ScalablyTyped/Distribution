@@ -14,7 +14,8 @@ class Top10 protected () extends js.Object {
   val Borders_Original: Borders = js.native
   var CalcFor: XlCalcFor = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Top10_typekey`: Top10 = js.native
+  @JSName("Excel.Top10_typekey")
+  var ExcelDotTop10_typekey: Top10 = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Interior: typings.activexDashExcel.Excel.Interior = js.native
   var NumberFormat: String = js.native

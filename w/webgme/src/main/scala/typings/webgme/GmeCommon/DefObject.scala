@@ -20,31 +20,7 @@ trait DefObject extends js.Object
 
 object DefObject {
   @scala.inline
-  def DefFloatObject(`type`: float, enum: js.Array[Double] = null, max: Int | Double = null, min: Int | Double = null): DefObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DefObject]
-  }
-  @scala.inline
   def DefBoolObject(`type`: boolean): DefObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DefObject]
-  }
-  @scala.inline
-  def DefIntegerObject(`type`: integer, enum: js.Array[Double] = null, max: Int | Double = null, min: Int | Double = null): DefObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DefObject]
-  }
-  @scala.inline
-  def DefAssetObject(`type`: asset): DefObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefObject]
@@ -55,6 +31,30 @@ object DefObject {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefObject]
+  }
+  @scala.inline
+  def DefAssetObject(`type`: asset): DefObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefObject]
+  }
+  @scala.inline
+  def DefFloatObject(`type`: float, enum: js.Array[Double] = null, max: Int | Double = null, min: Int | Double = null): DefObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefObject]
+  }
+  @scala.inline
+  def DefIntegerObject(`type`: integer, enum: js.Array[Double] = null, max: Int | Double = null, min: Int | Double = null): DefObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefObject]
   }
 }

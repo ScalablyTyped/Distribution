@@ -14,8 +14,8 @@ trait Anon_ActionTextActiveOpacity extends js.Object {
   var title: String
   var triggerType: String
   def onDismiss(): Unit
-  def onOk(`_`: js.Any): Unit
-  def onVisibleChange(`_`: js.Any): Unit
+  def onOk(_underscore: js.Any): Unit
+  def onVisibleChange(_underscore: js.Any): Unit
 }
 
 object Anon_ActionTextActiveOpacity {

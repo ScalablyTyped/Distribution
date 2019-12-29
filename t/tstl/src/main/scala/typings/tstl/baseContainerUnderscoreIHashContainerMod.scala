@@ -2,8 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.tstl.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer
-import typings.tstl.baseContainerUnderscoreIHashContainerMod._Factory
-import typings.tstl.baseContainerUnderscoreIHashContainerMod._IHashContainer
 import typings.tstl.baseIteratorIteratorMod.Iterator
 import typings.tstl.baseIteratorReverseIteratorMod.IReverseIterator
 import scala.scalajs.js

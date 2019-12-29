@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassPivotGauge
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotGauge]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotGauge] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotGauge]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotGauge] {
   var Locale: js.Any = js.native
   var fn: PivotGauge = js.native
 }

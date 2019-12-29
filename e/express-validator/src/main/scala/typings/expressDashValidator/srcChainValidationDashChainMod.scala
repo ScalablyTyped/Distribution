@@ -4,7 +4,6 @@ import typings.expressDashValidator.srcBaseMod.Request
 import typings.expressDashValidator.srcChainContextDashHandlerMod.ContextHandler
 import typings.expressDashValidator.srcChainContextDashRunnerMod.ContextRunner
 import typings.expressDashValidator.srcChainSanitizersMod.Sanitizers
-import typings.expressDashValidator.srcChainValidationDashChainMod.ValidationChain
 import typings.expressDashValidator.srcChainValidatorsMod.Validators
 import typings.expressDashValidator.srcContextDashBuilderMod.ContextBuilder
 import scala.scalajs.js

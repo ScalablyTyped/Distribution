@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 object reactDashDynamicDashNumberStrings {
   @js.native
-  sealed trait ` ` extends js.Object
+  sealed trait Comma extends js.Object
   
   @js.native
-  sealed trait `,` extends js.Object
+  sealed trait Dot extends js.Object
   
   @js.native
-  sealed trait DOT extends js.Object
+  sealed trait Space extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait onChange extends js.Object
@@ -30,13 +30,13 @@ object reactDashDynamicDashNumberStrings {
   sealed trait value extends js.Object
   
   @scala.inline
-  def ` `: ` ` = " ".asInstanceOf[` `]
+  def Comma: Comma = ",".asInstanceOf[Comma]
   @scala.inline
-  def `,`: `,` = ",".asInstanceOf[`,`]
+  def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
-  def DOT: DOT = ".".asInstanceOf[DOT]
+  def Space: Space = " ".asInstanceOf[Space]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
   @scala.inline

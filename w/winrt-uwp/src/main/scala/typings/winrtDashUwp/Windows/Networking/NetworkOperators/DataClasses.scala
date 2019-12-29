@@ -1,21 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.cdma1xEvdo
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.cdma1xEvdoRevA
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.cdma1xEvdoRevB
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.cdma1xEvdv
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.cdma1xRtt
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.cdma3xRtt
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.cdmaUmb
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.custom
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.edge
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.gprs
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.hsdpa
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.hsupa
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.lteAdvanced
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.none
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.DataClasses.umts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

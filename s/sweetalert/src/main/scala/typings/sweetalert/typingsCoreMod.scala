@@ -1,8 +1,6 @@
 package typings.sweetalert
 
 import typings.std.Partial
-import typings.sweetalert.typingsCoreMod.SwalParams
-import typings.sweetalert.typingsCoreMod.SweetAlert
 import typings.sweetalert.typingsModulesOptionsMod.SwalOptions
 import typings.sweetalert.typingsModulesStateMod.ActionOptions
 import typings.sweetalert.typingsModulesStateMod.SwalState

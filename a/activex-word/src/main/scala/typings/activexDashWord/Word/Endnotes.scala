@@ -18,7 +18,8 @@ class Endnotes protected () extends js.Object {
   val Parent: js.Any = js.native
   val Separator: Range = js.native
   var StartingNumber: Double = js.native
-  var `Word.Endnotes_typekey`: Endnotes = js.native
+  @JSName("Word.Endnotes_typekey")
+  var WordDotEndnotes_typekey: Endnotes = js.native
   def Add(Range: Range): Endnote = js.native
   def Add(Range: Range, Reference: js.Any): Endnote = js.native
   def Add(Range: Range, Reference: js.Any, Text: js.Any): Endnote = js.native

@@ -2,8 +2,8 @@ package typings.reactDashNative.reactDashNativeMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.Component
-import typings.reactDashNative.reactDashNativeStrings.`disk/memory`
 import typings.reactDashNative.reactDashNativeStrings.disk
+import typings.reactDashNative.reactDashNativeStrings.diskSlashmemory
 import typings.reactDashNative.reactDashNativeStrings.memory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ class ImageBackground ()
   var queryCache: js.UndefOr[
     js.Function1[
       /* urls */ js.Array[String], 
-      js.Promise[StringDictionary[memory | disk | `disk/memory`]]
+      js.Promise[StringDictionary[memory | disk | diskSlashmemory]]
     ]
   ] = js.native
   var resizeMode: ImageResizeMode = js.native

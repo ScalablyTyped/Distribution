@@ -1,5 +1,6 @@
 package typings.protractor.protractorMod.protractor
 
+import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Builder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +11,5 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   */
-class BuilderCls ()
-  extends typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Builder
+class BuilderCls () extends Builder
 

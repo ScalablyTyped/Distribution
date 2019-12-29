@@ -38,7 +38,7 @@ trait IField
   /** [Method] Returns the name attribute of the field
   		* @returns string name The field name
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the parameter s that would be included in a standard form submit for this field
   		* @returns any A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -78,7 +78,7 @@ trait IField
   		*/
   var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Property] (Object) */
   var originalValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
@@ -122,16 +122,16 @@ object IField {
     clearInvalid: () => Unit = null,
     config: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     extractFileInput: () => _ = null,
     getErrors: /* value */ js.UndefOr[js.Any] => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getModelData: () => _ = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getSubmitData: () => _ = null,
     getValue: () => _ = null,
     inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.form.field.IField = null,
+    initConfig: /* config */ js.UndefOr[js.Any] => IField = null,
     initField: () => Unit = null,
     initValue: () => Unit = null,
     isDirty: () => _ = null,
@@ -141,7 +141,7 @@ object IField {
     isValid: () => _ = null,
     markInvalid: /* errors */ js.UndefOr[js.Any] => Unit = null,
     mixins: js.Any = null,
-    name: java.lang.String = null,
+    name: String = null,
     originalValue: js.Any = null,
     requires: Array = null,
     reset: () => Unit = null,

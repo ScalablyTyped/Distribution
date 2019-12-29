@@ -1,9 +1,6 @@
 package typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedPropertyType.ANIMATION
-import typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedPropertyType.DEFAULT
-import typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedPropertyType.LITERAL_ATTR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

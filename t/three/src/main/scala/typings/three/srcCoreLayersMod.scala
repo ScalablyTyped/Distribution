@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcCoreLayersMod.Layers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

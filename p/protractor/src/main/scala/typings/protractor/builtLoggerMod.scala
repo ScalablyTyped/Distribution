@@ -2,16 +2,6 @@ package typings.protractor
 
 import org.scalablytyped.runtime.TopLevel
 import typings.protractor.builtConfigMod.Config
-import typings.protractor.builtLoggerMod.LogLevel
-import typings.protractor.builtLoggerMod.LogLevel.DEBUG
-import typings.protractor.builtLoggerMod.LogLevel.ERROR
-import typings.protractor.builtLoggerMod.LogLevel.INFO
-import typings.protractor.builtLoggerMod.LogLevel.WARN
-import typings.protractor.builtLoggerMod.WriteTo
-import typings.protractor.builtLoggerMod.WriteTo.BOTH
-import typings.protractor.builtLoggerMod.WriteTo.CONSOLE
-import typings.protractor.builtLoggerMod.WriteTo.FILE
-import typings.protractor.builtLoggerMod.WriteTo.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

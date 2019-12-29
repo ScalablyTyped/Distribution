@@ -17,8 +17,6 @@ import typings.vexdb.outConstantsResponseObjectsMod.ResponseObject
 import typings.vexdb.outConstantsResponseObjectsMod.SeasonRankingsResponseObject
 import typings.vexdb.outConstantsResponseObjectsMod.SkillsResponseObject
 import typings.vexdb.outConstantsResponseObjectsMod.TeamsResponseObject
-import typings.vexdb.outMethodsLiveMod.LiveEventEmitter
-import typings.vexdb.outMethodsLiveMod.LiveRequestObject
 import typings.vexdb.vexdbStrings.awards
 import typings.vexdb.vexdbStrings.events
 import typings.vexdb.vexdbStrings.fetch

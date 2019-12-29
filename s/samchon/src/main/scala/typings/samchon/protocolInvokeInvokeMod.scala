@@ -1,7 +1,6 @@
 package typings.samchon
 
 import typings.samchon.protocolEntityEntityArrayMod.EntityArray
-import typings.samchon.protocolInvokeInvokeMod.Invoke
 import typings.samchon.protocolInvokeInvokeParameterMod.InvokeParameter
 import typings.std.Uint8Array
 import typings.sxml.sxmlMod.XML

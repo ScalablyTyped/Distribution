@@ -17,9 +17,9 @@ package object jsonDashSchemaDashCompareMod {
     */
   /* Rewritten from type alias, can be one of: 
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareMod.KnownKeys[typings.jsonDashSchema.jsonDashSchemaMod.JSONSchema4]
-    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.DOLLARid
-    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.DOLLARref
-    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.DOLLARschema
+    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.$id
+    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.$ref
+    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.$schema
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.multipleOf
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.maximum
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.exclusiveMaximum
@@ -55,7 +55,7 @@ package object jsonDashSchemaDashCompareMod {
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.default
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.examples
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.format
-    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.DOLLARcomment
+    - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.$comment
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.`if`
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.`then`
     - typings.jsonDashSchemaDashCompare.jsonDashSchemaDashCompareStrings.`else`

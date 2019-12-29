@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaPixelFormat.bgra8
-import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaPixelFormat.nv12
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,12 +9,12 @@ package object resolveMod {
   import typings.std.Error
 
   /**
-    * Callback invoked when checking if a file exists
+    * Callback invoked when checking if a file or directory exists
     *
     * @param error
-    * @param isFile If the given file exists
+    * @param exists If the given file or directory exists
     */
-  type isFileCallback = js.Function2[/* err */ Error | Null, /* isFile */ js.UndefOr[Boolean], Unit]
+  type existsCallback = js.Function2[/* err */ Error | Null, /* isFile */ js.UndefOr[Boolean], Unit]
   /**
     * Callback invoked when reading a file
     *

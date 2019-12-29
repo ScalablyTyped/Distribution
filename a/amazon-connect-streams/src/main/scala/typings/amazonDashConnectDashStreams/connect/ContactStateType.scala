@@ -1,14 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.CONNECTED
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.CONNECTING
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.ENDED
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.ERROR
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.INCOMING
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.INIT
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.MISSED
-import typings.amazonDashConnectDashStreams.connect.ContactStateType.PENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

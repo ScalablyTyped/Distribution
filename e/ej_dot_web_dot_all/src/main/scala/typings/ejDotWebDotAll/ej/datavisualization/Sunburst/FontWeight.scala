@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.FontWeight.Bold
-import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.FontWeight.Lighter
-import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.FontWeight.Regular
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.androiduix.androidui.image.NetDrawable
 
 import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.androidui.image.NetDrawable.TileMode.DEFAULT
-import typings.androiduix.androidui.image.NetDrawable.TileMode.REPEAT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

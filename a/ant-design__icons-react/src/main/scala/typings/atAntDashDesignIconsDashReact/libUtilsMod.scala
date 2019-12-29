@@ -2,11 +2,10 @@ package typings.atAntDashDesignIconsDashReact
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atAntDashDesignIcons.libTypesMod.AbstractNode
-import typings.atAntDashDesignIconsDashReact.atAntDashDesignIconsDashReactNumbers.`false`
+import typings.atAntDashDesignIconsDashReact.atAntDashDesignIconsDashReactBooleans.`false`
 import typings.atAntDashDesignIconsDashReact.atAntDashDesignIconsDashReactStrings.fill
 import typings.atAntDashDesignIconsDashReact.atAntDashDesignIconsDashReactStrings.outline
 import typings.atAntDashDesignIconsDashReact.atAntDashDesignIconsDashReactStrings.twotone
-import typings.atAntDashDesignIconsDashReact.libUtilsMod.Attrs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

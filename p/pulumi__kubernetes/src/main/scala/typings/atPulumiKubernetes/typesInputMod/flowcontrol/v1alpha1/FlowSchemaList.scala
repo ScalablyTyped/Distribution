@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.flowcontrol.v1alpha1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.flowcontrolDotapiserverDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait FlowSchemaList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1]] = js.undefined
   /**
     * `items` is a list of FlowSchemas.
     */
@@ -40,7 +40,7 @@ object FlowSchemaList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[FlowSchema]]],
-    apiVersion: Input[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = null,
+    apiVersion: Input[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.FlowSchemaList] = null,
     metadata: Input[ListMeta] = null
   ): FlowSchemaList = {

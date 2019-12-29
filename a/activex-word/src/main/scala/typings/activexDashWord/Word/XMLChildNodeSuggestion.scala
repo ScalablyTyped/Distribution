@@ -12,7 +12,8 @@ class XMLChildNodeSuggestion protected () extends js.Object {
   val Creator: Double = js.native
   val NamespaceURI: String = js.native
   val Parent: js.Any = js.native
-  var `Word.XMLChildNodeSuggestion_typekey`: XMLChildNodeSuggestion = js.native
+  @JSName("Word.XMLChildNodeSuggestion_typekey")
+  var WordDotXMLChildNodeSuggestion_typekey: XMLChildNodeSuggestion = js.native
   val XMLSchemaReference: typings.activexDashWord.Word.XMLSchemaReference = js.native
   def Insert(): XMLNode = js.native
   def Insert(Range: js.Any): XMLNode = js.native

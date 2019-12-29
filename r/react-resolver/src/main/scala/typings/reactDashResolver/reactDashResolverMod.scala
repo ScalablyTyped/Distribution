@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Factory
 import typings.react.reactMod.StatelessComponent
-import typings.reactDashResolver.reactDashResolverMod.ResolveFn
-import typings.reactDashResolver.reactDashResolverMod.Resolver
 import typings.std.Node
 import typings.std.Record
 import scala.scalajs.js

@@ -21,7 +21,8 @@ class Series protected () extends js.Object {
   @JSName("DataLabels")
   var DataLabels_Original: DataLabels with (js.Function1[/* Index */ Double, DataLabel]) = js.native
   val ErrorBars: typings.activexDashExcel.Excel.ErrorBars = js.native
-  var `Excel.Series_typekey`: Series = js.native
+  @JSName("Excel.Series_typekey")
+  var ExcelDotSeries_typekey: Series = js.native
   var Explosion: Double = js.native
   val Fill: ChartFillFormat = js.native
   val Format: ChartFormat = js.native

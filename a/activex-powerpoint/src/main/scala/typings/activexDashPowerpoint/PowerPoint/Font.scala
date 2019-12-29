@@ -23,7 +23,8 @@ class Font protected () extends js.Object {
   var NameFarEast: String = js.native
   var NameOther: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Font_typekey`: Font = js.native
+  @JSName("PowerPoint.Font_typekey")
+  var PowerPointDotFont_typekey: Font = js.native
   var Shadow: MsoTriState = js.native
   var Size: Double = js.native
   var Subscript: MsoTriState = js.native

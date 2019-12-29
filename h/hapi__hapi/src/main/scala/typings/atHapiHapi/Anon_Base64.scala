@@ -1,6 +1,6 @@
 package typings.atHapiHapi
 
-import typings.atHapiHapi.atHapiHapiNumbers.`false`
+import typings.atHapiHapi.atHapiHapiBooleans.`false`
 import typings.atHapiHapi.atHapiHapiStrings.Lax
 import typings.atHapiHapi.atHapiHapiStrings.Strict
 import typings.atHapiHapi.atHapiHapiStrings.base64

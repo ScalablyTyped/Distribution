@@ -66,7 +66,7 @@ object semanticDashUiDashReactStrings {
        with SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `16:9` extends js.Object
+  sealed trait `16Colon9` extends js.Object
   
   @js.native
   sealed trait `2`
@@ -74,7 +74,7 @@ object semanticDashUiDashReactStrings {
        with SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `21:9` extends js.Object
+  sealed trait `21Colon9` extends js.Object
   
   @js.native
   sealed trait `3`
@@ -87,7 +87,7 @@ object semanticDashUiDashReactStrings {
        with SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `4:3` extends js.Object
+  sealed trait `4Colon3` extends js.Object
   
   @js.native
   sealed trait `5`
@@ -128,9 +128,6 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait EXITING extends TRANSITION_STATUSES
-  
-  @js.native
-  sealed trait JS extends SemanticICONS
   
   @js.native
   sealed trait UNMOUNTED extends TRANSITION_STATUSES
@@ -2914,6 +2911,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait `js square` extends SemanticICONS
+  
+  @js.native
+  sealed trait js_ extends SemanticICONS
   
   @js.native
   sealed trait jsfiddle extends SemanticICONS
@@ -6008,17 +6008,17 @@ object semanticDashUiDashReactStrings {
   @scala.inline
   def `16`: `16` = "16".asInstanceOf[`16`]
   @scala.inline
-  def `16:9`: `16:9` = "16:9".asInstanceOf[`16:9`]
+  def `16Colon9`: `16Colon9` = "16:9".asInstanceOf[`16Colon9`]
   @scala.inline
   def `2`: `2` = "2".asInstanceOf[`2`]
   @scala.inline
-  def `21:9`: `21:9` = "21:9".asInstanceOf[`21:9`]
+  def `21Colon9`: `21Colon9` = "21:9".asInstanceOf[`21Colon9`]
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
   @scala.inline
   def `4`: `4` = "4".asInstanceOf[`4`]
   @scala.inline
-  def `4:3`: `4:3` = "4:3".asInstanceOf[`4:3`]
+  def `4Colon3`: `4Colon3` = "4:3".asInstanceOf[`4Colon3`]
   @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
   @scala.inline
@@ -6039,8 +6039,6 @@ object semanticDashUiDashReactStrings {
   def EXITED: EXITED = "EXITED".asInstanceOf[EXITED]
   @scala.inline
   def EXITING: EXITING = "EXITING".asInstanceOf[EXITING]
-  @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
   @scala.inline
   def UNMOUNTED: UNMOUNTED = "UNMOUNTED".asInstanceOf[UNMOUNTED]
   @scala.inline
@@ -7853,6 +7851,8 @@ object semanticDashUiDashReactStrings {
   def jpy: jpy = "jpy".asInstanceOf[jpy]
   @scala.inline
   def `js square`: `js square` = "js square".asInstanceOf[`js square`]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def jsfiddle: jsfiddle = "jsfiddle".asInstanceOf[jsfiddle]
   @scala.inline

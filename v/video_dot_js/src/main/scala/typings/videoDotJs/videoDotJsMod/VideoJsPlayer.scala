@@ -17,7 +17,7 @@ import typings.videoDotJs.videoDotJsMod.videojs.Tech
 import typings.videoDotJs.videoDotJsMod.videojs.Tech.SourceObject
 import typings.videoDotJs.videoDotJsMod.videojs.TextTrackOptions
 import typings.videoDotJs.videoDotJsMod.videojs.TimeRange
-import typings.videoDotJs.videoDotJsStrings.Empty
+import typings.videoDotJs.videoDotJsStrings._empty
 import typings.videoDotJs.videoDotJsStrings.maybe
 import typings.videoDotJs.videoDotJsStrings.probably
 import scala.scalajs.js
@@ -140,7 +140,7 @@ trait VideoJsPlayer extends Component {
     *
     * @return 'probably', 'maybe', or '' (empty string)
     */
-  def canPlayType(`type`: String): probably | maybe | Empty = js.native
+  def canPlayType(`type`: String): probably | maybe | _empty = js.native
   def cancelFullScreen(): Player = js.native
   def controls(): Boolean = js.native
   def controls(bool: Boolean): Unit = js.native

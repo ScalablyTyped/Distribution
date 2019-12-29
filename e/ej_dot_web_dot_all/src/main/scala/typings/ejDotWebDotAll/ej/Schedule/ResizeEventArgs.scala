@@ -16,7 +16,7 @@ trait ResizeEventArgs extends js.Object {
   var interval: js.UndefOr[Double] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object ResizeEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     element: js.Any = null,
     interval: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ResizeEventArgs = {
     val __obj = js.Dynamic.literal()

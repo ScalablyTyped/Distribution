@@ -3,7 +3,6 @@ package typings.sipDotJs
 import typings.sipDotJs.libCoreMod.Exception
 import typings.sipDotJs.libEnumsMod.SessionStatus
 import typings.sipDotJs.libEnumsMod.TypeStrings
-import typings.sipDotJs.libExceptionsMod.LegacyException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

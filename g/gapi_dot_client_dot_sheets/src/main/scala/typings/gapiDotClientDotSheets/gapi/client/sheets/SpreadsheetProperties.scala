@@ -31,6 +31,8 @@ trait SpreadsheetProperties extends js.Object {
     * Note: when updating this field, not all locales/languages are supported.
     */
   var locale: js.UndefOr[String] = js.undefined
+  /** Theme applied to the spreadsheet. */
+  var spreadsheetTheme: js.UndefOr[SpreadsheetTheme] = js.undefined
   /**
     * The time zone of the spreadsheet, in CLDR format such as
     * `America/New_York`. If the time zone isn't recognized, this may
@@ -48,6 +50,7 @@ object SpreadsheetProperties {
     defaultFormat: CellFormat = null,
     iterativeCalculationSettings: IterativeCalculationSettings = null,
     locale: String = null,
+    spreadsheetTheme: SpreadsheetTheme = null,
     timeZone: String = null,
     title: String = null
   ): SpreadsheetProperties = {
@@ -56,6 +59,7 @@ object SpreadsheetProperties {
     if (defaultFormat != null) __obj.updateDynamic("defaultFormat")(defaultFormat.asInstanceOf[js.Any])
     if (iterativeCalculationSettings != null) __obj.updateDynamic("iterativeCalculationSettings")(iterativeCalculationSettings.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (spreadsheetTheme != null) __obj.updateDynamic("spreadsheetTheme")(spreadsheetTheme.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetProperties]

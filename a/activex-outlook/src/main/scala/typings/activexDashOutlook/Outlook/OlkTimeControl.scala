@@ -24,7 +24,8 @@ class OlkTimeControl protected () extends js.Object {
   var Locked: Boolean = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkTimeControl_typekey`: OlkTimeControl = js.native
+  @JSName("Outlook.OlkTimeControl_typekey")
+  var OutlookDotOlkTimeControl_typekey: OlkTimeControl = js.native
   var ReferenceTime: VarDate = js.native
   var Style: OlTimeStyle = js.native
   var Text: String = js.native

@@ -1,6 +1,5 @@
 package typings.dndDashCore
 
-import typings.dndDashCore.libDragDropMonitorImplMod.DragDropMonitorImpl
 import typings.dndDashCore.libInterfacesMod.DragDropMonitor
 import typings.dndDashCore.libInterfacesMod.HandlerRegistry
 import typings.dndDashCore.libInterfacesMod.Listener

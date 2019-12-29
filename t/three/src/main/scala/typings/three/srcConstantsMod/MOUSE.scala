@@ -1,12 +1,6 @@
 package typings.three.srcConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcConstantsMod.MOUSE.DOLLY
-import typings.three.srcConstantsMod.MOUSE.LEFT
-import typings.three.srcConstantsMod.MOUSE.MIDDLE
-import typings.three.srcConstantsMod.MOUSE.PAN
-import typings.three.srcConstantsMod.MOUSE.RIGHT
-import typings.three.srcConstantsMod.MOUSE.ROTATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -19,8 +19,8 @@ object sign extends js.Object {
     * If `key` is not a [`KeyObject`][], this function behaves as if `key` had been
     * passed to [`crypto.createPrivateKey()`][].
     */
-  def apply(algorithm: java.lang.String, data: ArrayBufferView, key: KeyLike): Buffer = js.native
-  def apply(algorithm: java.lang.String, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
+  def apply(algorithm: String, data: ArrayBufferView, key: KeyLike): Buffer = js.native
+  def apply(algorithm: String, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
   def apply(algorithm: Null, data: ArrayBufferView, key: KeyLike): Buffer = js.native
   def apply(algorithm: Null, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
 }

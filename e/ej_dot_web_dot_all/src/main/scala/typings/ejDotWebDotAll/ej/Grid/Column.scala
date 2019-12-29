@@ -82,7 +82,7 @@ trait Column extends js.Object {
   /** Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See filterType
     * @Default {null}
     */
-  var filterType: js.UndefOr[typings.ejDotWebDotAll.ej.Grid.FilterType | String] = js.undefined
+  var filterType: js.UndefOr[FilterType | String] = js.undefined
   /** Gets or sets a value that indicates to define foreign key field name of the grid datasource.
     * @Default {null}
     */
@@ -177,7 +177,7 @@ object Column {
     enableGroupByFormat: js.UndefOr[Boolean] = js.undefined,
     field: String = null,
     filterBarTemplate: js.Any = null,
-    filterType: typings.ejDotWebDotAll.ej.Grid.FilterType | String = null,
+    filterType: FilterType | String = null,
     foreignKeyField: String = null,
     foreignKeyValue: String = null,
     format: String = null,

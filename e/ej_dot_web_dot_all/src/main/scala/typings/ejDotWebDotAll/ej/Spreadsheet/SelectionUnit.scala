@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.MultiRange
-import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.Range
-import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

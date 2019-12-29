@@ -1,24 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.atleastTwoWaypointRequired
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.cannotFindNearbyRoad
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.dataSourceNotFound
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.exceedMaxWaypointLimit
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.firstOrLastStoppointIsVia
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.hasEmptyWaypoint
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.invalidCredentials
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.noAvailableTransitTrip
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.noSolution
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.outOfTransitBounds
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.searchServiceFailed
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.success
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.timeOut
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.tooFar
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.transitStopsTooClose
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.unknownError
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.walkingBestAlternative
-import typings.bingmaps.Microsoft.Maps.Directions.RouteResponseCode.waypointDisambiguation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

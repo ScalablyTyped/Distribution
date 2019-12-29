@@ -1,15 +1,6 @@
 package typings.ejDotWebDotAll.ej.PdfViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.All
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.DownloadTool
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.MagnificationTools
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.PageNavigationTools
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.PrintTools
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.SelectionTool
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.SignatureTool
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.TextMarkupAnnotationTools
-import typings.ejDotWebDotAll.ej.PdfViewer.ToolbarItems.TextSearchTool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

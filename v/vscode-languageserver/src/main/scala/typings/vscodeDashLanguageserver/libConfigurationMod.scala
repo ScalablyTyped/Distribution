@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageserver
 
-import typings.vscodeDashLanguageserver.libConfigurationMod.Configuration
 import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod.Feature
 import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod._RemoteWorkspace
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotConfigurationMod.ConfigurationItem

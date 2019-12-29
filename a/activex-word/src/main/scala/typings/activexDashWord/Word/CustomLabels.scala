@@ -11,7 +11,8 @@ class CustomLabels protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.CustomLabels_typekey`: CustomLabels = js.native
+  @JSName("Word.CustomLabels_typekey")
+  var WordDotCustomLabels_typekey: CustomLabels = js.native
   def Add(Name: String): CustomLabel = js.native
   def Add(Name: String, DotMatrix: js.Any): CustomLabel = js.native
   def Item(Index: js.Any): CustomLabel = js.native

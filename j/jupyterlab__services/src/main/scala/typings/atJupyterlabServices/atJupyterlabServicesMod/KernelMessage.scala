@@ -42,7 +42,14 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/services", "KernelMessage")
 @js.native
 object KernelMessage extends js.Object {
-  def createMessage[T /* <: IErrorMsg */](options: IOptions[T]): T = js.native
+  /**
+    * @hidden
+    * #### Notes
+    * Debug messages are experimental messages that are not in the official
+    * kernel message specification. As such, this function is *NOT* considered
+    * part of the public API, and may change without notice.
+    */
+  def createMessage[T /* <: IDebugRequestMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
   def createMessage_T_IClearOutputMsg[T /* <: IClearOutputMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
@@ -83,17 +90,10 @@ object KernelMessage extends js.Object {
     */
   @JSName("createMessage")
   def createMessage_T_IDebugReplyMsg[T /* <: IDebugReplyMsg */](options: IOptions[T]): T = js.native
-  /**
-    * @hidden
-    * #### Notes
-    * Debug messages are experimental messages that are not in the official
-    * kernel message specification. As such, this function is *NOT* considered
-    * part of the public API, and may change without notice.
-    */
-  @JSName("createMessage")
-  def createMessage_T_IDebugRequestMsg[T /* <: IDebugRequestMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
   def createMessage_T_IDisplayDataMsg[T /* <: IDisplayDataMsg */](options: IOptions[T]): T = js.native
+  @JSName("createMessage")
+  def createMessage_T_IErrorMsg[T /* <: IErrorMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")
   def createMessage_T_IExecuteInputMsg[T /* <: IExecuteInputMsg */](options: IOptions[T]): T = js.native
   @JSName("createMessage")

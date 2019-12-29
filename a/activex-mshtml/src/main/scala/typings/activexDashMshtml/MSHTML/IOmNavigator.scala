@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IOmNavigator")
 @js.native
 class IOmNavigator protected () extends js.Object {
-  var `MSHTML.IOmNavigator_typekey`: IOmNavigator = js.native
+  @JSName("MSHTML.IOmNavigator_typekey")
+  var MSHTMLDotIOmNavigator_typekey: IOmNavigator = js.native
   val appCodeName: String = js.native
   val appMinorVersion: String = js.native
   val appName: String = js.native

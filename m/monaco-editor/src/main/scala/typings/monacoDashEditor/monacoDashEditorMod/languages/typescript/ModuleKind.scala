@@ -1,13 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages.typescript
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.AMD
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.CommonJS
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.ES2015
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.ESNext
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.None
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.System
-import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.UMD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

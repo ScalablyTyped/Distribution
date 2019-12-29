@@ -2,7 +2,7 @@ package typings.oauth2DashServer.oauth2DashServerMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
-import typings.oauth2DashServer.oauth2DashServerNumbers.`false`
+import typings.oauth2DashServer.oauth2DashServerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

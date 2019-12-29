@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 
 trait IWipeIn extends IAnimation {
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var easing: js.UndefOr[java.lang.String] = js.undefined
+  var easing: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of direction
   		* @returns String
   		*/
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of easing
   		* @returns String
   		*/
-  var getEasing: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getEasing: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of out
   		* @returns Boolean
   		*/
@@ -29,11 +29,11 @@ trait IWipeIn extends IAnimation {
   /** [Method] Sets the value of direction
   		* @param direction String The new value.
   		*/
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of easing
   		* @param easing String The new value.
   		*/
-  var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of out
   		* @param out Boolean The new value.
   		*/
@@ -50,12 +50,12 @@ object IWipeIn {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    direction: java.lang.String = null,
-    easing: java.lang.String = null,
-    extend: java.lang.String = null,
-    getDirection: () => java.lang.String = null,
-    getEasing: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    direction: String = null,
+    easing: String = null,
+    extend: String = null,
+    getDirection: () => String = null,
+    getEasing: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getOut: () => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
@@ -63,12 +63,12 @@ object IWipeIn {
     out: js.UndefOr[Boolean] = js.undefined,
     platformConfig: js.Any = null,
     self: IClass = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
-    setEasing: /* easing */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
+    setEasing: /* easing */ js.UndefOr[String] => Unit = null,
     setOut: /* out */ js.UndefOr[Boolean] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    `type`: java.lang.String = null,
+    `type`: String = null,
     uses: Array = null
   ): IWipeIn = {
     val __obj = js.Dynamic.literal()

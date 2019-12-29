@@ -1,6 +1,10 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.documenttemplates
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +17,12 @@ import scala.scalajs.js.annotation._
 class DataGridColumn protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.documenttemplates.DataGridColumn {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -27,7 +31,7 @@ class DataGridColumn protected ()
 @js.native
 object DataGridColumn extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new DataGridColumn instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

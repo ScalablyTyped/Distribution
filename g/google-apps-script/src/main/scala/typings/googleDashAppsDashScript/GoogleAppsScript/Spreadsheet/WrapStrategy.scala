@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.CLIP
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.OVERFLOW
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.WRAP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

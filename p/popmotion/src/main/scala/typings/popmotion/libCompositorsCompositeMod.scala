@@ -2,7 +2,6 @@ package typings.popmotion
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.popmotion.libActionMod.Action
-import typings.popmotion.libCompositorsCompositeMod.ActionMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

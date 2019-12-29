@@ -1,6 +1,5 @@
 package typings.atFirebaseStorage
 
-import typings.atFirebaseStorage.distSrcImplementationArgsMod.ArgSpec
 import typings.std.IArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`

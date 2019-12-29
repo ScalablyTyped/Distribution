@@ -1,13 +1,6 @@
 package typings.phaser.Phaser
 
 import typings.phaser.CenterFunction
-import typings.phaser.Phaser.Geom.Circle
-import typings.phaser.Phaser.Geom.Ellipse
-import typings.phaser.Phaser.Geom.Line
-import typings.phaser.Phaser.Geom.Point
-import typings.phaser.Phaser.Geom.Polygon
-import typings.phaser.Phaser.Geom.Rectangle
-import typings.phaser.Phaser.Geom.Triangle
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.integer
 import scala.scalajs.js

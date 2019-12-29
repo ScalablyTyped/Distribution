@@ -1,7 +1,6 @@
 package typings.atMaterialDashUiCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType

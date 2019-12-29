@@ -26,7 +26,8 @@ class TextEffectFormat protected () extends js.Object {
   var RotatedChars: MsoTriState = js.native
   var Text: String = js.native
   var Tracking: Double = js.native
-  var `Word.TextEffectFormat_typekey`: TextEffectFormat = js.native
+  @JSName("Word.TextEffectFormat_typekey")
+  var WordDotTextEffectFormat_typekey: TextEffectFormat = js.native
   def ToggleVerticalText(): Unit = js.native
 }
 

@@ -1,8 +1,6 @@
 package typings.chaiDashEnzyme
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chaiDashEnzyme.Chai.Assertion
-import typings.chaiDashEnzyme.Chai.EnzymeSelector
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.StatelessComponent

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class WindowsCollection protected () extends js.Object {
   val Count: Double = js.native
-  var `InfoPath.WindowsCollection_typekey`: WindowsCollection = js.native
+  @JSName("InfoPath.WindowsCollection_typekey")
+  var InfoPathDotWindowsCollection_typekey: WindowsCollection = js.native
   def Item(varIndex: js.Any): Window = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.tilecoordMod.TileCoord
 import typings.ol.tilegridTileGridMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

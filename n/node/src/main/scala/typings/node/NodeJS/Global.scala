@@ -10,6 +10,7 @@ import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
 import typings.std.DataViewConstructor
 import typings.std.DateConstructor
+import typings.std.ErrorConstructor
 import typings.std.EvalErrorConstructor
 import typings.std.Float32ArrayConstructor
 import typings.std.Float64ArrayConstructor
@@ -20,6 +21,7 @@ import typings.std.Int8ArrayConstructor
 import typings.std.MapConstructor
 import typings.std.NumberConstructor
 import typings.std.ObjectConstructor
+import typings.std.PromiseConstructor
 import typings.std.RangeErrorConstructor
 import typings.std.ReferenceErrorConstructor
 import typings.std.RegExpConstructor
@@ -31,6 +33,7 @@ import typings.std.URIErrorConstructor
 import typings.std.Uint16ArrayConstructor
 import typings.std.Uint32ArrayConstructor
 import typings.std.Uint8ArrayConstructor
+import typings.std.Uint8ClampedArrayConstructor
 import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
 import scala.scalajs.js
@@ -49,7 +52,7 @@ trait Global extends js.Object {
   @JSName("Date")
   var Date_Original: DateConstructor = js.native
   @JSName("Error")
-  var Error_Original: typings.std.ErrorConstructor = js.native
+  var Error_Original: ErrorConstructor = js.native
   @JSName("EvalError")
   var EvalError_Original: EvalErrorConstructor = js.native
   var Float32Array: Float32ArrayConstructor = js.native
@@ -70,7 +73,7 @@ trait Global extends js.Object {
   var Number_Original: NumberConstructor = js.native
   @JSName("Object")
   var Object_Original: ObjectConstructor = js.native
-  var Promise: js.Function = js.native
+  var Promise: PromiseConstructor = js.native
   @JSName("RangeError")
   var RangeError_Original: RangeErrorConstructor = js.native
   @JSName("ReferenceError")
@@ -90,32 +93,35 @@ trait Global extends js.Object {
   var Uint16Array: Uint16ArrayConstructor = js.native
   var Uint32Array: Uint32ArrayConstructor = js.native
   var Uint8Array: Uint8ArrayConstructor = js.native
-  var Uint8ClampedArray: js.Function = js.native
+  var Uint8ClampedArray: Uint8ClampedArrayConstructor = js.native
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
   var console: Console = js.native
   @JSName("decodeURIComponent")
-  var decodeURIComponent_Original: js.Function1[/* encodedURIComponent */ java.lang.String, java.lang.String] = js.native
+  var decodeURIComponent_Original: js.Function1[/* encodedURIComponent */ String, String] = js.native
   @JSName("decodeURI")
-  var decodeURI_Original: js.Function1[/* encodedURI */ java.lang.String, java.lang.String] = js.native
+  var decodeURI_Original: js.Function1[/* encodedURI */ String, String] = js.native
   @JSName("encodeURIComponent")
   var encodeURIComponent_Original: Fn_UriComponent = js.native
   @JSName("encodeURI")
-  var encodeURI_Original: js.Function1[/* uri */ java.lang.String, java.lang.String] = js.native
+  var encodeURI_Original: js.Function1[/* uri */ String, String] = js.native
   @JSName("eval")
-  var eval_Original: js.Function1[/* x */ java.lang.String, _] = js.native
+  var eval_Original: js.Function1[/* x */ String, _] = js.native
   var global: Global = js.native
   @JSName("isFinite")
   var isFinite_Original: js.Function1[/* number */ Double, Boolean] = js.native
   @JSName("isNaN")
   var isNaN_Original: js.Function1[/* number */ Double, Boolean] = js.native
   @JSName("parseFloat")
-  var parseFloat_Original: js.Function1[/* string */ java.lang.String, Double] = js.native
+  var parseFloat_Original: js.Function1[/* string */ String, Double] = js.native
   @JSName("parseInt")
   var parseInt_Original: Fn_Radix = js.native
   var process: Process = js.native
   @JSName("queueMicrotask")
   var queueMicrotask_Original: js.Function1[/* callback */ js.Function0[Unit], Unit] = js.native
+  /**
+    * @deprecated Use `global`.
+    */
   var root: Global = js.native
   var undefined: js.UndefOr[scala.Nothing] = js.native
   var v8debug: js.UndefOr[js.Any] = js.native
@@ -126,53 +132,53 @@ trait Global extends js.Object {
   def Array_T[T](arrayLength: Double): js.Array[T] = js.native
   def Boolean[T](): scala.Boolean = js.native
   def Boolean[T](value: T): scala.Boolean = js.native
-  def Date(): java.lang.String = js.native
+  def Date(): String = js.native
   def Error(): typings.std.Error = js.native
-  def Error(message: java.lang.String): typings.std.Error = js.native
+  def Error(message: String): typings.std.Error = js.native
   def EvalError(): typings.std.EvalError = js.native
-  def EvalError(message: java.lang.String): typings.std.EvalError = js.native
-  def Function(args: java.lang.String*): js.Function = js.native
+  def EvalError(message: String): typings.std.EvalError = js.native
+  def Function(args: String*): js.Function = js.native
   def Number(): Double = js.native
   def Number(value: js.Any): Double = js.native
   def Object(): js.Any = js.native
   def Object(value: js.Any): js.Any = js.native
   def RangeError(): typings.std.RangeError = js.native
-  def RangeError(message: java.lang.String): typings.std.RangeError = js.native
+  def RangeError(message: String): typings.std.RangeError = js.native
   def ReferenceError(): typings.std.ReferenceError = js.native
-  def ReferenceError(message: java.lang.String): typings.std.ReferenceError = js.native
-  def RegExp(pattern: java.lang.String): typings.std.RegExp = js.native
-  def RegExp(pattern: java.lang.String, flags: java.lang.String): typings.std.RegExp = js.native
+  def ReferenceError(message: String): typings.std.ReferenceError = js.native
+  def RegExp(pattern: String): typings.std.RegExp = js.native
+  def RegExp(pattern: String, flags: String): typings.std.RegExp = js.native
   def RegExp(pattern: typings.std.RegExp): typings.std.RegExp = js.native
-  def RegExp(pattern: typings.std.RegExp, flags: java.lang.String): typings.std.RegExp = js.native
+  def RegExp(pattern: typings.std.RegExp, flags: String): typings.std.RegExp = js.native
   def String(): java.lang.String = js.native
   def String(value: js.Any): java.lang.String = js.native
   def SyntaxError(): typings.std.SyntaxError = js.native
-  def SyntaxError(message: java.lang.String): typings.std.SyntaxError = js.native
+  def SyntaxError(message: String): typings.std.SyntaxError = js.native
   def TypeError(): typings.std.TypeError = js.native
-  def TypeError(message: java.lang.String): typings.std.TypeError = js.native
+  def TypeError(message: String): typings.std.TypeError = js.native
   def URIError(): typings.std.URIError = js.native
-  def URIError(message: java.lang.String): typings.std.URIError = js.native
+  def URIError(message: String): typings.std.URIError = js.native
   def clearImmediate(immediateId: Immediate): Unit = js.native
   def clearInterval(intervalId: Timeout): Unit = js.native
   def clearTimeout(timeoutId: Timeout): Unit = js.native
-  def decodeURI(encodedURI: java.lang.String): java.lang.String = js.native
-  def decodeURIComponent(encodedURIComponent: java.lang.String): java.lang.String = js.native
-  def encodeURI(uri: java.lang.String): java.lang.String = js.native
-  def encodeURIComponent(uriComponent: java.lang.String): java.lang.String = js.native
-  def encodeURIComponent(uriComponent: Boolean): java.lang.String = js.native
-  def encodeURIComponent(uriComponent: Double): java.lang.String = js.native
-  def escape(str: java.lang.String): java.lang.String = js.native
-  def eval(x: java.lang.String): js.Any = js.native
+  def decodeURI(encodedURI: String): String = js.native
+  def decodeURIComponent(encodedURIComponent: String): String = js.native
+  def encodeURI(uri: String): String = js.native
+  def encodeURIComponent(uriComponent: String): String = js.native
+  def encodeURIComponent(uriComponent: Boolean): String = js.native
+  def encodeURIComponent(uriComponent: Double): String = js.native
+  def escape(str: String): String = js.native
+  def eval(x: String): js.Any = js.native
   def gc(): Unit = js.native
   def isFinite(number: Double): Boolean = js.native
   def isNaN(number: Double): Boolean = js.native
-  def parseFloat(string: java.lang.String): Double = js.native
-  def parseInt(s: java.lang.String): Double = js.native
-  def parseInt(s: java.lang.String, radix: Double): Double = js.native
+  def parseFloat(string: String): Double = js.native
+  def parseInt(s: String): Double = js.native
+  def parseInt(s: String, radix: Double): Double = js.native
   def queueMicrotask(callback: js.Function0[Unit]): Unit = js.native
   def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Immediate = js.native
   def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timeout = js.native
   def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timeout = js.native
-  def unescape(str: java.lang.String): java.lang.String = js.native
+  def unescape(str: String): String = js.native
 }
 

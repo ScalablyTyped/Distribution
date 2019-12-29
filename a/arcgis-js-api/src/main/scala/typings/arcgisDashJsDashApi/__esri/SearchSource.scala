@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,7 +141,7 @@ trait SearchSource extends JSONSupport {
     *
     * @default null
     */
-  def getResults(params: js.Any): IPromise[js.Array[SearchResult]] = js.native
+  def getResults(params: js.Any): js.Promise[js.Array[SearchResult]] = js.native
   /**
     * Function used to get search suggestions. See [GetSuggestionsParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#GetSuggestionsParameters) for the function definition. When resolved, returns an object containing an array of [suggest results](esri-widgets-Search.html#SuggestResult).
     *
@@ -150,7 +149,7 @@ trait SearchSource extends JSONSupport {
     *
     * @default null
     */
-  def getSuggestions(params: js.Any): IPromise[js.Array[SuggestResult]] = js.native
+  def getSuggestions(params: js.Any): js.Promise[js.Array[SuggestResult]] = js.native
 }
 
 @JSGlobal("__esri.SearchSource")

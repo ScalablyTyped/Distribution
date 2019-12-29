@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LineJoin.Bevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LineJoin.Miter
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.LineJoin.Round
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

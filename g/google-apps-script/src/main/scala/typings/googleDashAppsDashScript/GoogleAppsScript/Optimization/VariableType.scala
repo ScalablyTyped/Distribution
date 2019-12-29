@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Optimization
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.VariableType.CONTINUOUS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.VariableType.INTEGER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

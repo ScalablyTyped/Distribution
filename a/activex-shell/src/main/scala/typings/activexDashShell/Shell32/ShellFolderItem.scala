@@ -31,7 +31,8 @@ class ShellFolderItem protected () extends js.Object {
   val Parent: js.Any = js.native
   /** Get the pathname to the item */
   val Path: String = js.native
-  var `Shell32.ShellFolderItem_typekey`: ShellFolderItem = js.native
+  @JSName("Shell32.ShellFolderItem_typekey")
+  var Shell32DotShellFolderItem_typekey: ShellFolderItem = js.native
   /** Size */
   val Size: Double = js.native
   /** Contains a string representation of the item's type */

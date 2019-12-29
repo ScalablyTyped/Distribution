@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A representation of an XML EntityReference node.
   */
-trait EntityRef
-  extends typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content {
+trait EntityRef extends Content {
   def getName(): String
   def getPublicId(): String
   def getSystemId(): String
@@ -27,7 +26,7 @@ object EntityRef {
     asEntityRef: () => EntityRef,
     asProcessingInstruction: () => ProcessingInstruction,
     asText: () => Text,
-    detach: () => typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content,
+    detach: () => Content,
     getName: () => String,
     getParentElement: () => Element,
     getPublicId: () => String,

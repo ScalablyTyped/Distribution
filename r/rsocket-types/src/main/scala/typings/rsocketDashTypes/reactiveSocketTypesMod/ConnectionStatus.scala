@@ -21,25 +21,25 @@ trait ConnectionStatus extends js.Object
 
 object ConnectionStatus {
   @scala.inline
-  def Anon_ERROR(error: Error, kind: ERROR): ConnectionStatus = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[ConnectionStatus]
-  }
-  @scala.inline
   def Anon_CLOSED(kind: CLOSED): ConnectionStatus = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionStatus]
   }
   @scala.inline
-  def Anon_CONNECTED(kind: CONNECTED): ConnectionStatus = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def Anon_ERROR(error: Error, kind: ERROR): ConnectionStatus = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionStatus]
   }
   @scala.inline
   def Anon_Kind(kind: NOT_CONNECTED): ConnectionStatus = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ConnectionStatus]
+  }
+  @scala.inline
+  def Anon_CONNECTED(kind: CONNECTED): ConnectionStatus = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionStatus]

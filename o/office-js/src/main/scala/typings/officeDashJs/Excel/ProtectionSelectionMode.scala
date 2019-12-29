@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ProtectionSelectionMode.none
-import typings.officeDashJs.Excel.ProtectionSelectionMode.normal
-import typings.officeDashJs.Excel.ProtectionSelectionMode.unlocked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

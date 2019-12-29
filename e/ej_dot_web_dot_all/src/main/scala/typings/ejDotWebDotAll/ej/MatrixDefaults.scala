@@ -1,13 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.MatrixDefaults.`type`
-import typings.ejDotWebDotAll.ej.MatrixDefaults.m11
-import typings.ejDotWebDotAll.ej.MatrixDefaults.m12
-import typings.ejDotWebDotAll.ej.MatrixDefaults.m21
-import typings.ejDotWebDotAll.ej.MatrixDefaults.m22
-import typings.ejDotWebDotAll.ej.MatrixDefaults.offsetX
-import typings.ejDotWebDotAll.ej.MatrixDefaults.offsetY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

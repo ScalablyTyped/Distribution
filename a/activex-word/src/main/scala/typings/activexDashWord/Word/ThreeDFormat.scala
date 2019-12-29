@@ -46,7 +46,8 @@ class ThreeDFormat protected () extends js.Object {
   var RotationY: Double = js.native
   var RotationZ: Double = js.native
   var Visible: MsoTriState = js.native
-  var `Word.ThreeDFormat_typekey`: ThreeDFormat = js.native
+  @JSName("Word.ThreeDFormat_typekey")
+  var WordDotThreeDFormat_typekey: ThreeDFormat = js.native
   var Z: Double = js.native
   def IncrementRotationHorizontal(Increment: Double): Unit = js.native
   def IncrementRotationVertical(Increment: Double): Unit = js.native

@@ -14,7 +14,7 @@ object createWriteStream extends js.Object {
     * URL support is _experimental_.
     */
   def apply(path: PathLike): WriteStream = js.native
-  def apply(path: PathLike, options: java.lang.String): WriteStream = js.native
+  def apply(path: PathLike, options: String): WriteStream = js.native
   def apply(path: PathLike, options: Anon_AutoCloseEncoding): WriteStream = js.native
 }
 

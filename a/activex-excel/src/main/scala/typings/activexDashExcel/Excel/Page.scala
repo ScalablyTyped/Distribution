@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Page protected () extends js.Object {
   val CenterFooter: HeaderFooter = js.native
   val CenterHeader: HeaderFooter = js.native
-  var `Excel.Page_typekey`: Page = js.native
+  @JSName("Excel.Page_typekey")
+  var ExcelDotPage_typekey: Page = js.native
   val LeftFooter: HeaderFooter = js.native
   val LeftHeader: HeaderFooter = js.native
   val RightFooter: HeaderFooter = js.native

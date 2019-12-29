@@ -1,25 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.PlacementType.Auto
-import typings.openui5.sap.m.PlacementType.Bottom
-import typings.openui5.sap.m.PlacementType.Horizontal
-import typings.openui5.sap.m.PlacementType.HorizontalPreferedLeft
-import typings.openui5.sap.m.PlacementType.HorizontalPreferedRight
-import typings.openui5.sap.m.PlacementType.HorizontalPreferredLeft
-import typings.openui5.sap.m.PlacementType.HorizontalPreferredRight
-import typings.openui5.sap.m.PlacementType.Left
-import typings.openui5.sap.m.PlacementType.PreferredBottomOrFlip
-import typings.openui5.sap.m.PlacementType.PreferredLeftOrFlip
-import typings.openui5.sap.m.PlacementType.PreferredRightOrFlip
-import typings.openui5.sap.m.PlacementType.PreferredTopOrFlip
-import typings.openui5.sap.m.PlacementType.Right
-import typings.openui5.sap.m.PlacementType.Top
-import typings.openui5.sap.m.PlacementType.Vertical
-import typings.openui5.sap.m.PlacementType.VerticalPreferedBottom
-import typings.openui5.sap.m.PlacementType.VerticalPreferedTop
-import typings.openui5.sap.m.PlacementType.VerticalPreferredBottom
-import typings.openui5.sap.m.PlacementType.VerticalPreferredTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

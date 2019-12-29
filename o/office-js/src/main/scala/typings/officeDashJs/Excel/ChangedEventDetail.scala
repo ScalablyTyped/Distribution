@@ -2,7 +2,7 @@ package typings.officeDashJs.Excel
 
 import typings.officeDashJs.officeDashJsStrings.Boolean
 import typings.officeDashJs.officeDashJsStrings.Double
-import typings.officeDashJs.officeDashJsStrings.Empty_
+import typings.officeDashJs.officeDashJsStrings.Empty
 import typings.officeDashJs.officeDashJsStrings.Error
 import typings.officeDashJs.officeDashJsStrings.Integer
 import typings.officeDashJs.officeDashJsStrings.RichValue
@@ -39,14 +39,14 @@ trait ChangedEventDetail extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueTypeAfter: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue
+  var valueTypeAfter: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue
   /**
     *
     * Represents the type of value before changed
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueTypeBefore: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue
+  var valueTypeBefore: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue
 }
 
 object ChangedEventDetail {
@@ -54,8 +54,8 @@ object ChangedEventDetail {
   def apply(
     valueAfter: js.Any,
     valueBefore: js.Any,
-    valueTypeAfter: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue,
-    valueTypeBefore: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue
+    valueTypeAfter: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue,
+    valueTypeBefore: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue
   ): ChangedEventDetail = {
     val __obj = js.Dynamic.literal(valueAfter = valueAfter.asInstanceOf[js.Any], valueBefore = valueBefore.asInstanceOf[js.Any], valueTypeAfter = valueTypeAfter.asInstanceOf[js.Any], valueTypeBefore = valueTypeBefore.asInstanceOf[js.Any])
   

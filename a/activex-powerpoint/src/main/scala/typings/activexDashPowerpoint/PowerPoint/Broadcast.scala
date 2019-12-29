@@ -11,7 +11,8 @@ class Broadcast protected () extends js.Object {
   val AttendeeUrl: String = js.native
   val IsBroadcasting: Boolean = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Broadcast_typekey`: Broadcast = js.native
+  @JSName("PowerPoint.Broadcast_typekey")
+  var PowerPointDotBroadcast_typekey: Broadcast = js.native
   def End(): Unit = js.native
   def Start(serverUrl: String): Unit = js.native
 }

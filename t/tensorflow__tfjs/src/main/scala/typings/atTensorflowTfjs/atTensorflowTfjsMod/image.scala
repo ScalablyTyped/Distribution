@@ -6,6 +6,7 @@ import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor1D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
+import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R4
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
@@ -40,6 +41,24 @@ object image extends js.Object {
     /* iouThreshold */ js.UndefOr[Double], 
     /* scoreThreshold */ js.UndefOr[Double], 
     js.Promise[Tensor1D]
+  ] = js.native
+  val nonMaxSuppressionWithScore: js.Function6[
+    /* boxes */ Tensor2D | TensorLike, 
+    /* scores */ Tensor1D | TensorLike, 
+    /* maxOutputSize */ Double, 
+    /* iouThreshold */ js.UndefOr[Double], 
+    /* scoreThreshold */ js.UndefOr[Double], 
+    /* softNmsSigma */ js.UndefOr[Double], 
+    NamedTensorMap
+  ] = js.native
+  val nonMaxSuppressionWithScoreAsync: js.Function6[
+    /* boxes */ Tensor2D | TensorLike, 
+    /* scores */ Tensor1D | TensorLike, 
+    /* maxOutputSize */ Double, 
+    /* iouThreshold */ js.UndefOr[Double], 
+    /* scoreThreshold */ js.UndefOr[Double], 
+    /* softNmsSigma */ js.UndefOr[Double], 
+    js.Promise[NamedTensorMap]
   ] = js.native
   @js.native
   object resizeBilinear extends js.Object {

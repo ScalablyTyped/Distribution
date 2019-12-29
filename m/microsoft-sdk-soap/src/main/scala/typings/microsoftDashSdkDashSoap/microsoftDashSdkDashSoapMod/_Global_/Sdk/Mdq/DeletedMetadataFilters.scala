@@ -1,10 +1,6 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.All
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.Attribute
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.Default
-import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.Relationship
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,40 +40,30 @@ object DeletedMetadataFilters extends js.Object {
   sealed trait Relationship extends DeletedMetadataFilters
   
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[DeletedMetadataFilters with scala.Double] = js.native
+  def apply(value: Double): js.UndefOr[DeletedMetadataFilters with Double] = js.native
   /* 0 */ @js.native
-  object All
-    extends TopLevel[All with scala.Double]
+  object All extends TopLevel[All with Double]
   
   /* 1 */ @js.native
-  object Attribute
-    extends TopLevel[Attribute with scala.Double]
+  object Attribute extends TopLevel[Attribute with Double]
   
   /* 2 */ @js.native
-  object Default
-    extends TopLevel[Default with scala.Double]
+  object Default extends TopLevel[Default with Double]
   
   /* 3 */ @js.native
-  object Entity
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.Entity with scala.Double
-        ]
+  object Entity extends TopLevel[Entity with Double]
   
   /* 4 */ @js.native
   object Label
     extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.Label with scala.Double
+          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.Label with Double
         ]
   
   /* 5 */ @js.native
-  object OptionSet
-    extends TopLevel[
-          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.DeletedMetadataFilters.OptionSet with scala.Double
-        ]
+  object OptionSet extends TopLevel[OptionSet with Double]
   
   /* 6 */ @js.native
-  object Relationship
-    extends TopLevel[Relationship with scala.Double]
+  object Relationship extends TopLevel[Relationship with Double]
   
 }
 

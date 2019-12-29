@@ -5,13 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StyleAttributes extends js.Object {
-  var `:-webkit-autofill`: js.UndefOr[StyleAttributes] = js.undefined
-  var `::-ms-clear`: js.UndefOr[MSClearAttributes] = js.undefined
-  var `::placeholder`: js.UndefOr[StyleAttributes] = js.undefined
-  var `::selection`: js.UndefOr[StyleAttributes] = js.undefined
-  var `:disabled`: js.UndefOr[StyleAttributes] = js.undefined
-  var `:focus`: js.UndefOr[StyleAttributes] = js.undefined
-  var `:hover`: js.UndefOr[StyleAttributes] = js.undefined
+  @JSName(":-webkit-autofill")
+  var `Colon-webkit-autofill`: js.UndefOr[StyleAttributes] = js.undefined
+  @JSName("::-ms-clear")
+  var `ColonColon-ms-clear`: js.UndefOr[MSClearAttributes] = js.undefined
+  @JSName("::placeholder")
+  var ColonColonplaceholder: js.UndefOr[StyleAttributes] = js.undefined
+  @JSName("::selection")
+  var ColonColonselection: js.UndefOr[StyleAttributes] = js.undefined
+  @JSName(":disabled")
+  var Colondisabled: js.UndefOr[StyleAttributes] = js.undefined
+  @JSName(":focus")
+  var Colonfocus: js.UndefOr[StyleAttributes] = js.undefined
+  @JSName(":hover")
+  var Colonhover: js.UndefOr[StyleAttributes] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[String] = js.undefined
@@ -39,13 +46,13 @@ trait StyleAttributes extends js.Object {
 object StyleAttributes {
   @scala.inline
   def apply(
-    `:-webkit-autofill`: StyleAttributes = null,
-    `::-ms-clear`: MSClearAttributes = null,
-    `::placeholder`: StyleAttributes = null,
-    `::selection`: StyleAttributes = null,
-    `:disabled`: StyleAttributes = null,
-    `:focus`: StyleAttributes = null,
-    `:hover`: StyleAttributes = null,
+    `Colon-webkit-autofill`: StyleAttributes = null,
+    `ColonColon-ms-clear`: MSClearAttributes = null,
+    ColonColonplaceholder: StyleAttributes = null,
+    ColonColonselection: StyleAttributes = null,
+    Colondisabled: StyleAttributes = null,
+    Colonfocus: StyleAttributes = null,
+    Colonhover: StyleAttributes = null,
     color: String = null,
     fontFamily: String = null,
     fontSize: String = null,
@@ -62,13 +69,13 @@ object StyleAttributes {
     textTransform: String = null
   ): StyleAttributes = {
     val __obj = js.Dynamic.literal()
-    if (`:-webkit-autofill` != null) __obj.updateDynamic(":-webkit-autofill")(`:-webkit-autofill`.asInstanceOf[js.Any])
-    if (`::-ms-clear` != null) __obj.updateDynamic("::-ms-clear")(`::-ms-clear`.asInstanceOf[js.Any])
-    if (`::placeholder` != null) __obj.updateDynamic("::placeholder")(`::placeholder`.asInstanceOf[js.Any])
-    if (`::selection` != null) __obj.updateDynamic("::selection")(`::selection`.asInstanceOf[js.Any])
-    if (`:disabled` != null) __obj.updateDynamic(":disabled")(`:disabled`.asInstanceOf[js.Any])
-    if (`:focus` != null) __obj.updateDynamic(":focus")(`:focus`.asInstanceOf[js.Any])
-    if (`:hover` != null) __obj.updateDynamic(":hover")(`:hover`.asInstanceOf[js.Any])
+    if (`Colon-webkit-autofill` != null) __obj.updateDynamic(":-webkit-autofill")(`Colon-webkit-autofill`.asInstanceOf[js.Any])
+    if (`ColonColon-ms-clear` != null) __obj.updateDynamic("::-ms-clear")(`ColonColon-ms-clear`.asInstanceOf[js.Any])
+    if (ColonColonplaceholder != null) __obj.updateDynamic("::placeholder")(ColonColonplaceholder.asInstanceOf[js.Any])
+    if (ColonColonselection != null) __obj.updateDynamic("::selection")(ColonColonselection.asInstanceOf[js.Any])
+    if (Colondisabled != null) __obj.updateDynamic(":disabled")(Colondisabled.asInstanceOf[js.Any])
+    if (Colonfocus != null) __obj.updateDynamic(":focus")(Colonfocus.asInstanceOf[js.Any])
+    if (Colonhover != null) __obj.updateDynamic(":hover")(Colonhover.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

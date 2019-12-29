@@ -11,6 +11,10 @@ trait OAuthCallbackChecks extends js.Object {
     */
   var code_verifier: js.UndefOr[String] = js.undefined
   /**
+    * This must be set to true when requesting JARM responses.
+    */
+  var jarm: js.UndefOr[Boolean] = js.undefined
+  /**
     * When provided the authorization response will be checked for presence of required parameters for a
     * given response_type. Use of this check is recommended.
     */
@@ -24,9 +28,15 @@ trait OAuthCallbackChecks extends js.Object {
 
 object OAuthCallbackChecks {
   @scala.inline
-  def apply(code_verifier: String = null, response_type: String = null, state: String = null): OAuthCallbackChecks = {
+  def apply(
+    code_verifier: String = null,
+    jarm: js.UndefOr[Boolean] = js.undefined,
+    response_type: String = null,
+    state: String = null
+  ): OAuthCallbackChecks = {
     val __obj = js.Dynamic.literal()
     if (code_verifier != null) __obj.updateDynamic("code_verifier")(code_verifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(jarm)) __obj.updateDynamic("jarm")(jarm.asInstanceOf[js.Any])
     if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthCallbackChecks]

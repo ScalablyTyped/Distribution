@@ -1,6 +1,10 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod.customwidgets
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCustomwidgetsMod.StructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +14,12 @@ import scala.scalajs.js.annotation._
 class WidgetObjectType protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.customwidgets.WidgetObjectType {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -24,7 +28,7 @@ class WidgetObjectType protected ()
 @js.native
 object WidgetObjectType extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenCustomwidgetsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

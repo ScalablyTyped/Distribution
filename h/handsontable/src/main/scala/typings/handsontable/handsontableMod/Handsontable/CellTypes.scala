@@ -78,7 +78,7 @@ object cellTypes extends js.Object {
       value: CellValue,
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
-    def validator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+    def validator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   }
   
   @js.native
@@ -131,7 +131,7 @@ object cellTypes extends js.Object {
       value: CellValue,
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
-    def validator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+    def validator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   }
   
   @js.native
@@ -159,7 +159,7 @@ object cellTypes extends js.Object {
       value: CellValue,
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
-    def validator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+    def validator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   }
   
   @js.native
@@ -213,7 +213,7 @@ object cellTypes extends js.Object {
       value: CellValue,
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
-    def validator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+    def validator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   }
   
   @js.native
@@ -292,7 +292,7 @@ object cellTypes extends js.Object {
       value: CellValue,
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
-    def validator(`this`: CellProperties, value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
+    def validator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   }
   
 }

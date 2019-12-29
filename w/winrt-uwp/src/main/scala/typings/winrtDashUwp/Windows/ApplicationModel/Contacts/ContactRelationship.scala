@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactRelationship.child
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactRelationship.other
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactRelationship.parent
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactRelationship.partner
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactRelationship.sibling
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactRelationship.spouse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

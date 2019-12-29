@@ -1,19 +1,20 @@
 package typings.ramda
 
-import typings.ramda.ramdaNumbers.`true`
+import typings.ramda.ramdaBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Functionalplaceholder extends js.Object {
-  var `@@functional/placeholder`: `true`
+  @JSName("@@functional/placeholder")
+  var `@@functionalSlashplaceholder`: `true`
 }
 
 object Anon_Functionalplaceholder {
   @scala.inline
-  def apply(`@@functional/placeholder`: `true`): Anon_Functionalplaceholder = {
+  def apply(`@@functionalSlashplaceholder`: `true`): Anon_Functionalplaceholder = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("@@functional/placeholder")(`@@functional/placeholder`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@@functional/placeholder")(`@@functionalSlashplaceholder`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Functionalplaceholder]
   }
 }

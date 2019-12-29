@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactDashGeosuggestStrings {
   @js.native
-  sealed trait `(cities)` extends QueryType
+  sealed trait LeftparenthesiscitiesRightparenthesis extends QueryType
   
   @js.native
-  sealed trait `(regions)` extends QueryType
+  sealed trait LeftparenthesisregionsRightparenthesis extends QueryType
   
   @js.native
   sealed trait address extends QueryType
@@ -22,9 +22,9 @@ object reactDashGeosuggestStrings {
   sealed trait geocode extends QueryType
   
   @scala.inline
-  def `(cities)`: `(cities)` = "(cities)".asInstanceOf[`(cities)`]
+  def LeftparenthesiscitiesRightparenthesis: LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[LeftparenthesiscitiesRightparenthesis]
   @scala.inline
-  def `(regions)`: `(regions)` = "(regions)".asInstanceOf[`(regions)`]
+  def LeftparenthesisregionsRightparenthesis: LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[LeftparenthesisregionsRightparenthesis]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   @scala.inline

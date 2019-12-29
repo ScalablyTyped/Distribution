@@ -1,6 +1,7 @@
 package typings.graphqlDashCompose.graphqlDashComposeMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.graphql.Anon_Description
 import typings.graphql.Anon_Directives
 import typings.graphql.Anon_MaxErrors
 import typings.graphql.errorFormatErrorMod.GraphQLFormattedError
@@ -374,7 +375,7 @@ object graphql extends js.Object {
   ): js.Array[DangerousChange] = js.native
   def findDeprecatedUsages(schema: typings.graphql.typeSchemaMod.GraphQLSchema, ast: DocumentNode): js.Array[typings.graphql.errorGraphQLErrorMod.GraphQLError] = js.native
   def formatError(error: typings.graphql.errorGraphQLErrorMod.GraphQLError): GraphQLFormattedError[Record[String, _]] = js.native
-  def getDescription(node: typings.graphql.Anon_Description, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
+  def getDescription(node: Anon_Description, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
   def getDirectiveValues(directiveDef: typings.graphql.typeDirectivesMod.GraphQLDirective, node: Anon_Directives): js.UndefOr[StringDictionary[js.Any]] = js.native
   def getDirectiveValues(
     directiveDef: typings.graphql.typeDirectivesMod.GraphQLDirective,

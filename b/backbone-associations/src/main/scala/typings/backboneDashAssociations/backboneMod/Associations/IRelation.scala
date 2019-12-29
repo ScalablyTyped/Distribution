@@ -16,7 +16,7 @@ trait IRelation extends js.Object {
   /** A transformation function to convert the value before it is assigned to the key on the relatedModel */
   var map: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   /** The type of model for this relationship */
-  var relatedModel: String | Instantiable0[typings.backboneDashAssociations.backboneMod.Associations.AssociatedModel]
+  var relatedModel: String | Instantiable0[AssociatedModel]
   /** Specify remoteKey to serialize the key to a different key name in toJSON() calls. Useful in ROR nested-attributes like scenarios. */
   var remoteKey: js.UndefOr[String] = js.undefined
   /** the attributes to serialize when calling toJSON */
@@ -30,7 +30,7 @@ object IRelation {
   @scala.inline
   def apply(
     key: String,
-    relatedModel: String | Instantiable0[typings.backboneDashAssociations.backboneMod.Associations.AssociatedModel],
+    relatedModel: String | Instantiable0[AssociatedModel],
     `type`: String,
     collectionType: String | Instantiable0[Collection[js.Any]] = null,
     isTransient: js.UndefOr[Boolean] = js.undefined,

@@ -1,10 +1,6 @@
 package typings.resourceDashLoader.resourceDashLoaderMod.Resource
 
 import org.scalablytyped.runtime.TopLevel
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.LOAD_TYPE.AUDIO
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.LOAD_TYPE.IMAGE
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.LOAD_TYPE.VIDEO
-import typings.resourceDashLoader.resourceDashLoaderMod.Resource.LOAD_TYPE.XHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory
-import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory.CUSTOM
-import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory.ENGINE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

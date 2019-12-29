@@ -1,6 +1,5 @@
 package typings.atPhosphorMessaging.atPhosphorMessagingMod
 
-import typings.atPhosphorMessaging.atPhosphorMessagingMod.MessageLoop.ExceptionHandler
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

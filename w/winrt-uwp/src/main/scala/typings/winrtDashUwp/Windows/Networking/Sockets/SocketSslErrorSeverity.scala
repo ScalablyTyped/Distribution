@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketSslErrorSeverity.fatal
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketSslErrorSeverity.ignorable
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketSslErrorSeverity.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,16 +2,7 @@ package typings.googleDashLibphonenumber.libphonenumber
 
 import org.scalablytyped.runtime.TopLevel
 import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType.EXACT_MATCH
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType.NOT_A_NUMBER
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType.NO_MATCH
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType.NSN_MATCH
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType.SHORT_NSN_MATCH
 import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.INVALID_COUNTRY_CODE
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.IS_POSSIBLE
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.TOO_LONG
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.TOO_SHORT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

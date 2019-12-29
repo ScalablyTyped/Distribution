@@ -1,8 +1,5 @@
 package typings.atReachDialog
 
-import typings.atReachDialog.atReachDialogMod.DialogContentProps
-import typings.atReachDialog.atReachDialogMod.DialogOverlayProps
-import typings.atReachDialog.atReachDialogMod.DialogProps
 import typings.react.reactMod.FC
 import typings.react.reactMod.HTMLProps
 import typings.std.HTMLDivElement

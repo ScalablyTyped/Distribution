@@ -1,6 +1,5 @@
 package typings.atEmberArray
 
-import typings.atEmberArray.dashPrivateEnumerableMod.Enumerable
 import typings.atEmberArray.dashPrivateNativeDashArrayMod.NativeArray
 import typings.atEmberObject.computedMod.ComputedProperty
 import scala.scalajs.js
@@ -23,7 +22,8 @@ object dashPrivateEnumerableMod extends js.Object {
       * this property, it will return this. If you set this property to a new
       * array, it will replace the current content.
       */
-    var `[]`: ComputedProperty[this.type, this.type] = js.native
+    @JSName("[]")
+    var LeftsquarebracketRightsquarebracket: ComputedProperty[this.type, this.type] = js.native
     /**
       * Returns `true` if the passed function returns true for every item in the
       * enumeration. This corresponds with the `every()` method in JavaScript 1.6.

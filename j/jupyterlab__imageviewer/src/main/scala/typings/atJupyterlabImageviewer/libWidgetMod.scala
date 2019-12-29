@@ -5,7 +5,6 @@ import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.ABCWidgetFacto
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
-import typings.atJupyterlabImageviewer.libWidgetMod.ImageViewer
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorMessaging.atPhosphorMessagingMod.Message
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget

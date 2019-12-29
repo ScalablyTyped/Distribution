@@ -1,9 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015EventObjectEEventPhaseMod.EEventPhase
-import typings.wonderDotJs.distEs2015EventObjectEEventPhaseMod.EEventPhase.BROADCAST
-import typings.wonderDotJs.distEs2015EventObjectEEventPhaseMod.EEventPhase.EMIT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

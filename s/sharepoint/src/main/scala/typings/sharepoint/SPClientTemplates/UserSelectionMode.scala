@@ -1,8 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientTemplates.UserSelectionMode.PeopleAndGroups
-import typings.sharepoint.SPClientTemplates.UserSelectionMode.PeopleOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

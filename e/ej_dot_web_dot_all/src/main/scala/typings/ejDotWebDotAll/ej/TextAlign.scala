@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TextAlign.Center
-import typings.ejDotWebDotAll.ej.TextAlign.Justify
-import typings.ejDotWebDotAll.ej.TextAlign.Left
-import typings.ejDotWebDotAll.ej.TextAlign.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

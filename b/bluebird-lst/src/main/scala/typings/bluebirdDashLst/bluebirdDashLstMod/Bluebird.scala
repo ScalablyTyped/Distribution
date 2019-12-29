@@ -1267,12 +1267,12 @@ trait Bluebird[R]
   def nodeify(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], Unit]): this.type = js.native
   def nodeify(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], Unit], options: SpreadOption): this.type = js.native
   def nodeify(sink: js.Any*): this.type = js.native
-  def props[T](`this`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = js.native
+  def props[T](): Bluebird[T] = js.native
   /**
     * Same as calling `Promise.props(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
   @JSName("props")
-  def props_KV[K, V](`this`: js.Thenable[Map[K, js.Thenable[V] | V]]): Bluebird[Map[K, V]] = js.native
+  def props_KV[K, V](): Bluebird[Map[K, V]] = js.native
   /**
     * Same as calling `Promise.race(thisPromise, count)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */

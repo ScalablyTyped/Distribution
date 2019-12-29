@@ -16,7 +16,8 @@ class CalendarSharing protected () extends js.Object {
   var IncludeAttachments: Boolean = js.native
   var IncludePrivateDetails: Boolean = js.native
   var IncludeWholeCalendar: Boolean = js.native
-  var `Outlook.CalendarSharing_typekey`: CalendarSharing = js.native
+  @JSName("Outlook.CalendarSharing_typekey")
+  var OutlookDotCalendarSharing_typekey: CalendarSharing = js.native
   val Parent: js.Any = js.native
   var RestrictToWorkingHours: Boolean = js.native
   val Session: NameSpace = js.native

@@ -13,7 +13,7 @@ trait BeforeLoadEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object BeforeLoadEventArgs {
   def apply(
     AjaxOptions: js.Any = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     `type`: String = null
   ): BeforeLoadEventArgs = {
     val __obj = js.Dynamic.literal()

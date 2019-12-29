@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atOctokitRestStrings {
   @js.native
-  sealed trait `+1` extends js.Object
-  
-  @js.native
   sealed trait `-1` extends js.Object
   
   @js.native
@@ -37,15 +34,6 @@ object atOctokitRestStrings {
   sealed trait APPROVE extends js.Object
   
   @js.native
-  sealed trait `BACKSLASHgh-pagesBACKSLASH` extends js.Object
-  
-  @js.native
-  sealed trait `BACKSLASHmaster /docsBACKSLASH` extends js.Object
-  
-  @js.native
-  sealed trait BACKSLASHmasterBACKSLASH extends js.Object
-  
-  @js.native
   sealed trait COMMENT extends js.Object
   
   @js.native
@@ -68,6 +56,18 @@ object atOctokitRestStrings {
   
   @js.native
   sealed trait PUT extends RequestMethod
+  
+  @js.native
+  sealed trait Plussign1 extends js.Object
+  
+  @js.native
+  sealed trait `Quotationmarkgh-pagesQuotationmark` extends js.Object
+  
+  @js.native
+  sealed trait `Quotationmarkmaster SlashdocsQuotationmark` extends js.Object
+  
+  @js.native
+  sealed trait QuotationmarkmasterQuotationmark extends js.Object
   
   @js.native
   sealed trait REQUEST_CHANGES extends js.Object
@@ -325,10 +325,10 @@ object atOctokitRestStrings {
   sealed trait reactions extends js.Object
   
   @js.native
-  sealed trait `reactions-+1` extends js.Object
+  sealed trait `reactions--1` extends js.Object
   
   @js.native
-  sealed trait `reactions--1` extends js.Object
+  sealed trait `reactions-Plussign1` extends js.Object
   
   @js.native
   sealed trait `reactions-heart` extends js.Object
@@ -421,8 +421,6 @@ object atOctokitRestStrings {
   sealed trait write extends js.Object
   
   @scala.inline
-  def `+1`: `+1` = "+1".asInstanceOf[`+1`]
-  @scala.inline
   def `-1`: `-1` = "-1".asInstanceOf[`-1`]
   @scala.inline
   def `040000`: `040000` = "040000".asInstanceOf[`040000`]
@@ -441,12 +439,6 @@ object atOctokitRestStrings {
   @scala.inline
   def APPROVE: APPROVE = "APPROVE".asInstanceOf[APPROVE]
   @scala.inline
-  def `BACKSLASHgh-pagesBACKSLASH`: `BACKSLASHgh-pagesBACKSLASH` = "\"gh-pages\"".asInstanceOf[`BACKSLASHgh-pagesBACKSLASH`]
-  @scala.inline
-  def `BACKSLASHmaster /docsBACKSLASH`: `BACKSLASHmaster /docsBACKSLASH` = "\"master /docs\"".asInstanceOf[`BACKSLASHmaster /docsBACKSLASH`]
-  @scala.inline
-  def BACKSLASHmasterBACKSLASH: BACKSLASHmasterBACKSLASH = "\"master\"".asInstanceOf[BACKSLASHmasterBACKSLASH]
-  @scala.inline
   def COMMENT: COMMENT = "COMMENT".asInstanceOf[COMMENT]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
@@ -462,6 +454,14 @@ object atOctokitRestStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
+  def Plussign1: Plussign1 = "+1".asInstanceOf[Plussign1]
+  @scala.inline
+  def `Quotationmarkgh-pagesQuotationmark`: `Quotationmarkgh-pagesQuotationmark` = "\"gh-pages\"".asInstanceOf[`Quotationmarkgh-pagesQuotationmark`]
+  @scala.inline
+  def `Quotationmarkmaster SlashdocsQuotationmark`: `Quotationmarkmaster SlashdocsQuotationmark` = "\"master /docs\"".asInstanceOf[`Quotationmarkmaster SlashdocsQuotationmark`]
+  @scala.inline
+  def QuotationmarkmasterQuotationmark: QuotationmarkmasterQuotationmark = "\"master\"".asInstanceOf[QuotationmarkmasterQuotationmark]
   @scala.inline
   def REQUEST_CHANGES: REQUEST_CHANGES = "REQUEST_CHANGES".asInstanceOf[REQUEST_CHANGES]
   @scala.inline
@@ -633,9 +633,9 @@ object atOctokitRestStrings {
   @scala.inline
   def reactions: reactions = "reactions".asInstanceOf[reactions]
   @scala.inline
-  def `reactions-+1`: `reactions-+1` = "reactions-+1".asInstanceOf[`reactions-+1`]
-  @scala.inline
   def `reactions--1`: `reactions--1` = "reactions--1".asInstanceOf[`reactions--1`]
+  @scala.inline
+  def `reactions-Plussign1`: `reactions-Plussign1` = "reactions-+1".asInstanceOf[`reactions-Plussign1`]
   @scala.inline
   def `reactions-heart`: `reactions-heart` = "reactions-heart".asInstanceOf[`reactions-heart`]
   @scala.inline

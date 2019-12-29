@@ -12,7 +12,8 @@ class ShadowFormat protected () extends js.Object {
   val Creator: Double = js.native
   var ForeColor: ColorFormat = js.native
   var Obscured: MsoTriState = js.native
-  var `Office.ShadowFormat_typekey`: ShadowFormat = js.native
+  @JSName("Office.ShadowFormat_typekey")
+  var OfficeDotShadowFormat_typekey: ShadowFormat = js.native
   var OffsetX: Double = js.native
   var OffsetY: Double = js.native
   val Parent: js.Any = js.native

@@ -1,18 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.RibbonTab.addIns
-import typings.officeDashJsDashPreview.Excel.RibbonTab.data
-import typings.officeDashJsDashPreview.Excel.RibbonTab.developer
-import typings.officeDashJsDashPreview.Excel.RibbonTab.draw
-import typings.officeDashJsDashPreview.Excel.RibbonTab.formulas
-import typings.officeDashJsDashPreview.Excel.RibbonTab.help
-import typings.officeDashJsDashPreview.Excel.RibbonTab.home
-import typings.officeDashJsDashPreview.Excel.RibbonTab.insert
-import typings.officeDashJsDashPreview.Excel.RibbonTab.others
-import typings.officeDashJsDashPreview.Excel.RibbonTab.pageLayout
-import typings.officeDashJsDashPreview.Excel.RibbonTab.review
-import typings.officeDashJsDashPreview.Excel.RibbonTab.view
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

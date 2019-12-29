@@ -1,10 +1,6 @@
 package typings.jsonquery
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsonquery.jsonqueryMod.BinaryQueryCondition
-import typings.jsonquery.jsonqueryMod.PathQuery
-import typings.jsonquery.jsonqueryMod.Query
-import typings.jsonquery.jsonqueryMod.QueryValue
 import typings.node.NodeJS.ReadWriteStream
 import typings.std.Partial
 import scala.scalajs.js

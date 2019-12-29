@@ -1,9 +1,6 @@
 package typings.jqueryDotFancytree.Fancytree
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.multi
-import typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.mutlti_hier
-import typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Core.CoreWindowActivationState.codeActivated
-import typings.winrt.Windows.UI.Core.CoreWindowActivationState.deactivated
-import typings.winrt.Windows.UI.Core.CoreWindowActivationState.pointerActivated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

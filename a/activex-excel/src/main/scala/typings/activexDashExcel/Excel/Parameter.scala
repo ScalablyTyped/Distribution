@@ -10,7 +10,8 @@ class Parameter protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var DataType: XlParameterDataType = js.native
-  var `Excel.Parameter_typekey`: Parameter = js.native
+  @JSName("Excel.Parameter_typekey")
+  var ExcelDotParameter_typekey: Parameter = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
   val PromptString: String = js.native

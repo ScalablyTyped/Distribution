@@ -1,7 +1,6 @@
 package typings.atUirouterAngularjs
 
 import typings.atUirouterAngularjs.libInterfaceMod.Ng1StateDeclaration
-import typings.atUirouterAngularjs.libStateProviderMod.StateProvider
 import typings.atUirouterCore.atUirouterCoreMod.StateRegistry
 import typings.atUirouterCore.atUirouterCoreMod.StateService
 import typings.atUirouterCore.libStateStateBuilderMod.BuilderFunction

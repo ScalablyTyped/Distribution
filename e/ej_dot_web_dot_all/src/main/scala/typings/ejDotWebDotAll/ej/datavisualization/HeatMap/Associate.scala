@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.MouseEnter
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.MouseFollow
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("leaflet", "esri.DynamicMapLayer")
 @js.native
-class DynamicMapLayer protected ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.RasterLayer {
+class DynamicMapLayer protected () extends RasterLayer {
   def this(options: DynamicMapLayerOptions) = this()
   /**
     * Uses the provided function to create a popup that will identify features whenever the map is clicked.
@@ -30,7 +29,7 @@ class DynamicMapLayer protected ()
     * Returns a new `L.esri.services.Find` object that can be used to find features. Your callback function
     * will be passed a GeoJSON FeatureCollection with the results or an error.
     */
-  def find(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Find = js.native
+  def find(): Find = js.native
   /**
     * Returns a JSON object representing the modified layer symbology being requested from the map service.
     */
@@ -51,11 +50,11 @@ class DynamicMapLayer protected ()
     * Returns a new `L.esri.services.IdentifyFeatures` object that can be used to identify features on this
     * layer. Your callback function will be passed a GeoJSON FeatureCollection with the results or an error.
     */
-  def identify(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.IdentifyFeatures = js.native
+  def identify(): IdentifyFeatures = js.native
   /**
     * Returns a new `L.esri.Query` object that can be used to query this service.
     */
-  def query(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Query = js.native
+  def query(): Query = js.native
   /**
     * Used to insert raw dynamicLayers JSON in situations where you'd like to modify layer symbology defined in
     * the service itself.
@@ -87,6 +86,6 @@ object dynamicMapLayer extends js.Object {
     * and pass back the image which was generated on the fly. They also expose capabilities for querying and
     * identifying individual features.
     */
-  def apply(options: DynamicMapLayerOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.DynamicMapLayer = js.native
+  def apply(options: DynamicMapLayerOptions): DynamicMapLayer = js.native
 }
 

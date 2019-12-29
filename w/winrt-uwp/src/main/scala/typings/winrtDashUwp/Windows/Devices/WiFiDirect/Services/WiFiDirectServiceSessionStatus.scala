@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionStatus.closed
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionStatus.initiated
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionStatus.open
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionStatus.requested
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

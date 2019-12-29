@@ -1,10 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.AutohideBehavior.all
-import typings.playerframework.PlayerFramework.AutohideBehavior.allowDuringPlaybackOnly
-import typings.playerframework.PlayerFramework.AutohideBehavior.none
-import typings.playerframework.PlayerFramework.AutohideBehavior.preventDuringInteractiveHover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

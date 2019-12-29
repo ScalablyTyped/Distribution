@@ -1,12 +1,12 @@
 package typings.gcpDashMetadata.gcpDashMetadataMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.gcpDashMetadata.gcpDashMetadataStrings.`http://169DOT254DOT169DOT254`
+import typings.gcpDashMetadata.gcpDashMetadataStrings.httpColonSlashSlash169Dot254Dot169Dot254
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("gcp-metadata", "HOST_ADDRESS")
 @js.native
-object HOST_ADDRESS extends TopLevel[`http://169DOT254DOT169DOT254`]
+object HOST_ADDRESS extends TopLevel[httpColonSlashSlash169Dot254Dot169Dot254]
 

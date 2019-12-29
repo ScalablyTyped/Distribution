@@ -1,7 +1,7 @@
 
 # Scala.js typings for scanf
 
-Typings are for version 1.0.2
+Typings are for version 1.1.1
 
 ## Library description:
 C like scanf/sscanf module for node.js.

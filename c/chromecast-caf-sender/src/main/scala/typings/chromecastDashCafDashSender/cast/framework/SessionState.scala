@@ -1,13 +1,6 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromecastDashCafDashSender.cast.framework.SessionState.NO_SESSION
-import typings.chromecastDashCafDashSender.cast.framework.SessionState.SESSION_ENDED
-import typings.chromecastDashCafDashSender.cast.framework.SessionState.SESSION_ENDING
-import typings.chromecastDashCafDashSender.cast.framework.SessionState.SESSION_RESUMED
-import typings.chromecastDashCafDashSender.cast.framework.SessionState.SESSION_STARTED
-import typings.chromecastDashCafDashSender.cast.framework.SessionState.SESSION_STARTING
-import typings.chromecastDashCafDashSender.cast.framework.SessionState.SESSION_START_FAILED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

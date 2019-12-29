@@ -1,9 +1,6 @@
 package typings.atGrpcGrpcDashJs.buildSrcPickerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.COMPLETE
-import typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.QUEUE
-import typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.TRANSIENT_FAILURE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

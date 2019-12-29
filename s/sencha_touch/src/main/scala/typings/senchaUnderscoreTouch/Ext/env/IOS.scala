@@ -13,9 +13,9 @@ trait IOS extends IBase {
   		* @param value String The OS name to check.
   		* @returns Boolean
   		*/
-  var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Property] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Version) */
   var version: js.UndefOr[IVersion] = js.undefined
 }
@@ -30,13 +30,13 @@ object IOS {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    is: /* value */ js.UndefOr[java.lang.String] => Boolean = null,
+    is: /* value */ js.UndefOr[String] => Boolean = null,
     mixins: js.Any = null,
-    name: java.lang.String = null,
+    name: String = null,
     platformConfig: js.Any = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

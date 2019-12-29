@@ -1,6 +1,5 @@
 package typings.semanticDashUiDashRating.SemanticUI.RatingSettings
 
-import typings.semanticDashUiDashRating.JQuery
 import typings.semanticDashUiDashRating.SemanticUI.Rating.ClassNameSettings
 import typings.semanticDashUiDashRating.SemanticUI.Rating.ErrorSettings
 import typings.semanticDashUiDashRating.SemanticUI.Rating.SelectorSettings
@@ -76,7 +75,7 @@ trait _Impl extends js.Object {
   /**
     * Is called after user selects a new rating
     */
-  def onRate(`this`: JQuery, value: Double): Unit
+  def onRate(value: Double): Unit
 }
 
 object _Impl {
@@ -91,13 +90,13 @@ object _Impl {
     interactive: Boolean,
     name: String,
     namespace: String,
-    onRate: (JQuery, Double) => Unit,
+    onRate: Double => Unit,
     performance: Boolean,
     selector: SelectorSettings,
     silent: Boolean,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fireOnInit = fireOnInit.asInstanceOf[js.Any], initialRating = initialRating.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onRate = js.Any.fromFunction2(onRate), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fireOnInit = fireOnInit.asInstanceOf[js.Any], initialRating = initialRating.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onRate = js.Any.fromFunction1(onRate), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

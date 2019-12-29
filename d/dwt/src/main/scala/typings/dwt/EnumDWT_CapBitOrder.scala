@@ -1,8 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapBitOrder.TWBO_LSBFIRST
-import typings.dwt.EnumDWT_CapBitOrder.TWBO_MSBFIRST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.jestDashResolve
 
 import typings.atJestTypes.buildConfigMod.Path
-import typings.jestDashResolve.buildDefaultResolverMod.ResolverOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

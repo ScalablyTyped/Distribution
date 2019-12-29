@@ -15,7 +15,8 @@ class ChartCharacters protected () extends js.Object {
   val Parent: js.Any = js.native
   var PhoneticCharacters: String = js.native
   var Text: String = js.native
-  var `Word.ChartCharacters_typekey`: ChartCharacters = js.native
+  @JSName("Word.ChartCharacters_typekey")
+  var WordDotChartCharacters_typekey: ChartCharacters = js.native
   def Delete(): js.Any = js.native
   def Insert(String: String): js.Any = js.native
 }

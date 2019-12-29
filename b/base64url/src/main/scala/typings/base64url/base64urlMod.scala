@@ -1,6 +1,5 @@
 package typings.base64url
 
-import typings.base64url.base64urlMod.Base64Url
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

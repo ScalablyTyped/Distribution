@@ -1,16 +1,6 @@
 package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.ihv
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.none
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.open80211
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.rsna
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.rsnaPsk
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.sharedKey80211
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.unknown
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.wpa
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.wpaNone
-import typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.wpaPsk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

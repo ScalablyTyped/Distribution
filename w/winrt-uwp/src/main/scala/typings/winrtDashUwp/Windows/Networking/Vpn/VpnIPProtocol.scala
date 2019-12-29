@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.icmp
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.igmp
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.ipv6Icmp
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.none
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.pgm
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.tcp
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.udp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

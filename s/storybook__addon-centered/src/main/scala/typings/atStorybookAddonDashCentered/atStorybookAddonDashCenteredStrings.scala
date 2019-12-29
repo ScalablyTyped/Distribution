@@ -9,7 +9,7 @@ object atStorybookAddonDashCenteredStrings {
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `100%` extends js.Object
+  sealed trait `100Percentsign` extends js.Object
   
   @js.native
   sealed trait auto extends js.Object
@@ -29,7 +29,7 @@ object atStorybookAddonDashCenteredStrings {
   @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]
   @scala.inline
-  def `100%`: `100%` = "100%".asInstanceOf[`100%`]
+  def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline

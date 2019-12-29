@@ -1,6 +1,6 @@
 package typings.proxyDashVerifier.proxyDashVerifierMod
 
-import typings.proxyDashVerifier.proxyDashVerifierNumbers.`true`
+import typings.proxyDashVerifier.proxyDashVerifierBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

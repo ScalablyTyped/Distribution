@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebServiceAdapterObject protected () extends js.Object {
   val ErrorsLocation: IXMLDOMNode = js.native
-  var `InfoPath.WebServiceAdapterObject_typekey`: WebServiceAdapterObject = js.native
+  @JSName("InfoPath.WebServiceAdapterObject_typekey")
+  var InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject = js.native
   var Input: String = js.native
   val Name: String = js.native
   var Operation: String = js.native

@@ -16,9 +16,21 @@ trait InjectableProvider extends js.Object
 
 object InjectableProvider {
   @scala.inline
-  def FactorySansProvider(useFactory: js.Function, deps: js.Array[_] = null): InjectableProvider = {
-    val __obj = js.Dynamic.literal(useFactory = useFactory.asInstanceOf[js.Any])
+  def ConstructorSansProvider(deps: js.Array[_] = null): InjectableProvider = {
+    val __obj = js.Dynamic.literal()
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InjectableProvider]
+  }
+  @scala.inline
+  def StaticClassSansProvider(deps: js.Array[_], useClass: Type[_]): InjectableProvider = {
+    val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[InjectableProvider]
+  }
+  @scala.inline
+  def ValueSansProvider(useValue: js.Any): InjectableProvider = {
+    val __obj = js.Dynamic.literal(useValue = useValue.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
@@ -34,21 +46,9 @@ object InjectableProvider {
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
-  def StaticClassSansProvider(deps: js.Array[_], useClass: Type[_]): InjectableProvider = {
-    val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[InjectableProvider]
-  }
-  @scala.inline
-  def ConstructorSansProvider(deps: js.Array[_] = null): InjectableProvider = {
-    val __obj = js.Dynamic.literal()
+  def FactorySansProvider(useFactory: js.Function, deps: js.Array[_] = null): InjectableProvider = {
+    val __obj = js.Dynamic.literal(useFactory = useFactory.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InjectableProvider]
-  }
-  @scala.inline
-  def ValueSansProvider(useValue: js.Any): InjectableProvider = {
-    val __obj = js.Dynamic.literal(useValue = useValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InjectableProvider]
   }
 }

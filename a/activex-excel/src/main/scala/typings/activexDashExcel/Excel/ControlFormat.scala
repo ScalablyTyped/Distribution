@@ -12,7 +12,8 @@ class ControlFormat protected () extends js.Object {
   val Creator: XlCreator = js.native
   var DropDownLines: Double = js.native
   var Enabled: Boolean = js.native
-  var `Excel.ControlFormat_typekey`: ControlFormat = js.native
+  @JSName("Excel.ControlFormat_typekey")
+  var ExcelDotControlFormat_typekey: ControlFormat = js.native
   var LargeChange: Double = js.native
   var LinkedCell: String = js.native
   var ListCount: Double = js.native

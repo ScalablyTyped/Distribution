@@ -19,27 +19,24 @@ object mkdtemp extends js.Object {
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     */
+  def apply(prefix: String, callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]): Unit = js.native
   def apply(
-    prefix: java.lang.String,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ java.lang.String, Unit]
-  ): Unit = js.native
-  def apply(
-    prefix: java.lang.String,
+    prefix: String,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ java.lang.String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
-    prefix: java.lang.String,
-    options: java.lang.String,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ java.lang.String | Buffer, Unit]
+    prefix: String,
+    options: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
   ): Unit = js.native
   def apply(
-    prefix: java.lang.String,
+    prefix: String,
     options: Null,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ java.lang.String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
-    prefix: java.lang.String,
+    prefix: String,
     options: Anon_BufferEncoding,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
   ): Unit = js.native
@@ -49,9 +46,9 @@ object mkdtemp extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def apply(
-    prefix: java.lang.String,
+    prefix: String,
     options: Anon_EncodingBufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ java.lang.String, Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
@@ -59,14 +56,14 @@ object mkdtemp extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def apply(
-    prefix: java.lang.String,
+    prefix: String,
     options: Anon_EncodingNull,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ java.lang.String | Buffer, Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
   ): Unit = js.native
   def apply(
-    prefix: java.lang.String,
+    prefix: String,
     options: BufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ java.lang.String, Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
@@ -74,7 +71,7 @@ object mkdtemp extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def apply(
-    prefix: java.lang.String,
+    prefix: String,
     options: buffer_,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
   ): Unit = js.native
@@ -83,18 +80,18 @@ object mkdtemp extends js.Object {
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def __promisify__(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
-  def __promisify__(prefix: java.lang.String, options: java.lang.String): js.Promise[java.lang.String | Buffer] = js.native
+  def __promisify__(prefix: String): js.Promise[String] = js.native
+  def __promisify__(prefix: String, options: String): js.Promise[String | Buffer] = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def __promisify__(prefix: java.lang.String, options: Anon_BufferEncoding): js.Promise[Buffer] = js.native
-  def __promisify__(prefix: java.lang.String, options: Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
-  def __promisify__(prefix: java.lang.String, options: Anon_EncodingNull): js.Promise[java.lang.String | Buffer] = js.native
-  def __promisify__(prefix: java.lang.String, options: BufferEncoding): js.Promise[java.lang.String] = js.native
+  def __promisify__(prefix: String, options: Anon_BufferEncoding): js.Promise[Buffer] = js.native
+  def __promisify__(prefix: String, options: Anon_EncodingBufferEncoding): js.Promise[String] = js.native
+  def __promisify__(prefix: String, options: Anon_EncodingNull): js.Promise[String | Buffer] = js.native
+  def __promisify__(prefix: String, options: BufferEncoding): js.Promise[String] = js.native
   @JSName("__promisify__")
-  def __promisify___buffer(prefix: java.lang.String, options: buffer_): js.Promise[Buffer] = js.native
+  def __promisify___buffer(prefix: String, options: buffer_): js.Promise[Buffer] = js.native
 }
 

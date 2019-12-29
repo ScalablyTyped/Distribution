@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object figmaStrings {
   @js.native
-  sealed trait `1DOT0DOT0` extends js.Object
+  sealed trait `1Dot0Dot0` extends js.Object
   
   @js.native
   sealed trait ANGLE extends HandleMirroring
@@ -331,7 +331,7 @@ object figmaStrings {
   sealed trait selectionchange extends js.Object
   
   @scala.inline
-  def `1DOT0DOT0`: `1DOT0DOT0` = "1.0.0".asInstanceOf[`1DOT0DOT0`]
+  def `1Dot0Dot0`: `1Dot0Dot0` = "1.0.0".asInstanceOf[`1Dot0Dot0`]
   @scala.inline
   def ANGLE: ANGLE = "ANGLE".asInstanceOf[ANGLE]
   @scala.inline

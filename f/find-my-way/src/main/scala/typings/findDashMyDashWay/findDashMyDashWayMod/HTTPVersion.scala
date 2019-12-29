@@ -1,8 +1,6 @@
 package typings.findDashMyDashWay.findDashMyDashWayMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.findDashMyDashWay.findDashMyDashWayMod.HTTPVersion.V1
-import typings.findDashMyDashWay.findDashMyDashWayMod.HTTPVersion.V2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

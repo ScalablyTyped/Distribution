@@ -2,7 +2,6 @@ package typings.sodiumjs
 
 import typings.sodiumjs.distTypingsSodiumCellMod.Cell
 import typings.sodiumjs.distTypingsSodiumStreamMod.Stream
-import typings.sodiumjs.distTypingsSodiumTimerSystemMod.TimerSystemImpl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,29 +7,29 @@ import scala.scalajs.js.annotation._
 
 object glDashReactDashDomStrings {
   @js.native
-  sealed trait `image/bmp` extends SupportedImage
+  sealed trait imageSlashbmp extends SupportedImage
   
   @js.native
-  sealed trait `image/ico` extends SupportedImage
+  sealed trait imageSlashico extends SupportedImage
   
   @js.native
-  sealed trait `image/jpeg` extends SupportedImage
+  sealed trait imageSlashjpeg extends SupportedImage
   
   @js.native
-  sealed trait `image/png` extends SupportedImage
+  sealed trait imageSlashpng extends SupportedImage
   
   @js.native
-  sealed trait `image/webp` extends SupportedImage
+  sealed trait imageSlashwebp extends SupportedImage
   
   @scala.inline
-  def `image/bmp`: `image/bmp` = "image/bmp".asInstanceOf[`image/bmp`]
+  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   @scala.inline
-  def `image/ico`: `image/ico` = "image/ico".asInstanceOf[`image/ico`]
+  def imageSlashico: imageSlashico = "image/ico".asInstanceOf[imageSlashico]
   @scala.inline
-  def `image/jpeg`: `image/jpeg` = "image/jpeg".asInstanceOf[`image/jpeg`]
+  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   @scala.inline
-  def `image/png`: `image/png` = "image/png".asInstanceOf[`image/png`]
+  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   @scala.inline
-  def `image/webp`: `image/webp` = "image/webp".asInstanceOf[`image/webp`]
+  def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
 }
 

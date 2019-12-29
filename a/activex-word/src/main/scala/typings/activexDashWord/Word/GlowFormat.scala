@@ -13,6 +13,7 @@ class GlowFormat protected () extends js.Object {
   val Parent: js.Any = js.native
   var Radius: Double = js.native
   var Transparency: Double = js.native
-  var `Word.GlowFormat_typekey`: GlowFormat = js.native
+  @JSName("Word.GlowFormat_typekey")
+  var WordDotGlowFormat_typekey: GlowFormat = js.native
 }
 

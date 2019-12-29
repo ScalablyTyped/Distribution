@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashConverterStrings {
   @js.native
-  sealed trait `1DOT4DOT0` extends js.Object
+  sealed trait `1Dot5Dot1` extends js.Object
   
   @js.native
-  sealed trait `?tfjs-format=file` extends js.Object
+  sealed trait `Questionmarktfjs-formatEqualssignfile` extends js.Object
   
   @js.native
   sealed trait arithmetic extends Category
@@ -23,7 +23,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait bool extends ParamType
   
   @js.native
-  sealed trait `bool[]` extends ParamType
+  sealed trait boolLeftsquarebracketRightsquarebracket extends ParamType
   
   @js.native
   sealed trait control extends Category
@@ -41,7 +41,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait dtype extends ParamType
   
   @js.native
-  sealed trait `dtype[]` extends ParamType
+  sealed trait dtypeLeftsquarebracketRightsquarebracket extends ParamType
   
   @js.native
   sealed trait dynamic extends Category
@@ -62,7 +62,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait matrices extends Category
   
   @js.native
-  sealed trait modelDOTjson extends js.Object
+  sealed trait modelDotjson extends js.Object
   
   @js.native
   sealed trait normalization extends Category
@@ -71,7 +71,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait number extends ParamType
   
   @js.native
-  sealed trait `number[]` extends ParamType
+  sealed trait numberLeftsquarebracketRightsquarebracket extends ParamType
   
   @js.native
   sealed trait reduction extends Category
@@ -80,7 +80,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait shape extends ParamType
   
   @js.native
-  sealed trait `shape[]` extends ParamType
+  sealed trait shapeLeftsquarebracketRightsquarebracket extends ParamType
   
   @js.native
   sealed trait slice_join extends Category
@@ -92,7 +92,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait string extends ParamType
   
   @js.native
-  sealed trait `string[]` extends ParamType
+  sealed trait stringLeftsquarebracketRightsquarebracket extends ParamType
   
   @js.native
   sealed trait tensor extends ParamType
@@ -104,9 +104,9 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait transformation extends Category
   
   @scala.inline
-  def `1DOT4DOT0`: `1DOT4DOT0` = "1.4.0".asInstanceOf[`1DOT4DOT0`]
+  def `1Dot5Dot1`: `1Dot5Dot1` = "1.5.1".asInstanceOf[`1Dot5Dot1`]
   @scala.inline
-  def `?tfjs-format=file`: `?tfjs-format=file` = "?tfjs-format=file".asInstanceOf[`?tfjs-format=file`]
+  def `Questionmarktfjs-formatEqualssignfile`: `Questionmarktfjs-formatEqualssignfile` = "?tfjs-format=file".asInstanceOf[`Questionmarktfjs-formatEqualssignfile`]
   @scala.inline
   def arithmetic: arithmetic = "arithmetic".asInstanceOf[arithmetic]
   @scala.inline
@@ -114,7 +114,7 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
-  def `bool[]`: `bool[]` = "bool[]".asInstanceOf[`bool[]`]
+  def boolLeftsquarebracketRightsquarebracket: boolLeftsquarebracketRightsquarebracket = "bool[]".asInstanceOf[boolLeftsquarebracketRightsquarebracket]
   @scala.inline
   def control: control = "control".asInstanceOf[control]
   @scala.inline
@@ -126,7 +126,7 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def dtype: dtype = "dtype".asInstanceOf[dtype]
   @scala.inline
-  def `dtype[]`: `dtype[]` = "dtype[]".asInstanceOf[`dtype[]`]
+  def dtypeLeftsquarebracketRightsquarebracket: dtypeLeftsquarebracketRightsquarebracket = "dtype[]".asInstanceOf[dtypeLeftsquarebracketRightsquarebracket]
   @scala.inline
   def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
   @scala.inline
@@ -140,19 +140,19 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def matrices: matrices = "matrices".asInstanceOf[matrices]
   @scala.inline
-  def modelDOTjson: modelDOTjson = "model.json".asInstanceOf[modelDOTjson]
+  def modelDotjson: modelDotjson = "model.json".asInstanceOf[modelDotjson]
   @scala.inline
   def normalization: normalization = "normalization".asInstanceOf[normalization]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
-  def `number[]`: `number[]` = "number[]".asInstanceOf[`number[]`]
+  def numberLeftsquarebracketRightsquarebracket: numberLeftsquarebracketRightsquarebracket = "number[]".asInstanceOf[numberLeftsquarebracketRightsquarebracket]
   @scala.inline
   def reduction: reduction = "reduction".asInstanceOf[reduction]
   @scala.inline
   def shape: shape = "shape".asInstanceOf[shape]
   @scala.inline
-  def `shape[]`: `shape[]` = "shape[]".asInstanceOf[`shape[]`]
+  def shapeLeftsquarebracketRightsquarebracket: shapeLeftsquarebracketRightsquarebracket = "shape[]".asInstanceOf[shapeLeftsquarebracketRightsquarebracket]
   @scala.inline
   def slice_join: slice_join = "slice_join".asInstanceOf[slice_join]
   @scala.inline
@@ -160,7 +160,7 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
-  def `string[]`: `string[]` = "string[]".asInstanceOf[`string[]`]
+  def stringLeftsquarebracketRightsquarebracket: stringLeftsquarebracketRightsquarebracket = "string[]".asInstanceOf[stringLeftsquarebracketRightsquarebracket]
   @scala.inline
   def tensor: tensor = "tensor".asInstanceOf[tensor]
   @scala.inline

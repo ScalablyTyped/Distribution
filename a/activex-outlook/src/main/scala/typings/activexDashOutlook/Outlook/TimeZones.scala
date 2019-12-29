@@ -12,7 +12,8 @@ class TimeZones protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
   val CurrentTimeZone: TimeZone = js.native
-  var `Outlook.TimeZones_typekey`: TimeZones = js.native
+  @JSName("Outlook.TimeZones_typekey")
+  var OutlookDotTimeZones_typekey: TimeZones = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def ConvertTime(SourceDateTime: VarDate, SourceTimeZone: TimeZone, DestinationTimeZone: TimeZone): VarDate = js.native

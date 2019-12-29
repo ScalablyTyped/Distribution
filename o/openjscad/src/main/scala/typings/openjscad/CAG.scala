@@ -1,7 +1,6 @@
 package typings.openjscad
 
 import typings.openjscad.CAG.Side
-import typings.openjscad.CAG.Vertex
 import typings.openjscad.CSG.ICircleOptions
 import typings.openjscad.CSG.IRectangleOptions
 import typings.openjscad.CSG.Matrix4x4

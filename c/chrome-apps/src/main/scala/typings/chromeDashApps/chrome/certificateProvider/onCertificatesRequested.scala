@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.certificateProvider
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object onCertificatesRequested
   extends TopLevel[
-      typings.chromeDashApps.chrome.events.Event[
+      Event[
         js.Function2[
           /* certificates */ js.Array[CertificateInfo], 
           /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 

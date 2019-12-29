@@ -1,6 +1,6 @@
 package typings.archiver.archiverMod
 
-import typings.archiver.archiverNumbers.`false`
+import typings.archiver.archiverBooleans.`false`
 import typings.archiver.archiverStrings.close
 import typings.archiver.archiverStrings.data
 import typings.archiver.archiverStrings.drain

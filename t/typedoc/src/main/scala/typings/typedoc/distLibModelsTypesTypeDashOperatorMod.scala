@@ -1,7 +1,6 @@
 package typings.typedoc
 
 import typings.typedoc.distLibModelsTypesAbstractMod.Type
-import typings.typedoc.distLibModelsTypesTypeDashOperatorMod.TypeOperatorType
 import typings.typedoc.typedocStrings.keyof
 import scala.scalajs.js
 import scala.scalajs.js.`|`

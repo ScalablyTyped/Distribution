@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Crop protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
-  var `Office.Crop_typekey`: Crop = js.native
+  @JSName("Office.Crop_typekey")
+  var OfficeDotCrop_typekey: Crop = js.native
   var PictureHeight: Double = js.native
   var PictureOffsetX: Double = js.native
   var PictureOffsetY: Double = js.native

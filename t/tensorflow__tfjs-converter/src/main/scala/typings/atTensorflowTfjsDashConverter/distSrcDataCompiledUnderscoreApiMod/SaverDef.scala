@@ -1,10 +1,6 @@
 package typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion
-import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.LEGACY
-import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.V1
-import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.V2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

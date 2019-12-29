@@ -12,6 +12,7 @@ class MailMergeFieldName protected () extends js.Object {
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.MailMergeFieldName_typekey`: MailMergeFieldName = js.native
+  @JSName("Word.MailMergeFieldName_typekey")
+  var WordDotMailMergeFieldName_typekey: MailMergeFieldName = js.native
 }
 

@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationOperations.audioCall
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationOperations.contactProfile
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationOperations.message
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationOperations.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationOperations.socialFeeds
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationOperations.videoCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

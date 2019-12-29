@@ -1,5 +1,6 @@
 package typings.heremaps.H.map.layer
 
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.ICopyright
 import typings.heremaps.H.map.layer.ITileLayer.Options
 import typings.heremaps.H.map.layer.ITileLayer.Response
@@ -45,7 +46,7 @@ class TileLayer protected ()
     * @returns {Array<H.map.ICopyright>} - a list of copyright information objects for the provided area and zoom level
     */
   /* InferMemberOverrides */
-  override def getCopyrights(bounds: typings.heremaps.H.geo.Rect, level: Double): js.Array[ICopyright] = js.native
+  override def getCopyrights(bounds: Rect, level: Double): js.Array[ICopyright] = js.native
   /**
     * This method checks if a zoom level can be served by this layer.
     * @param zoomLevel {number} - the zoom level to check
@@ -72,12 +73,7 @@ class TileLayer protected ()
     * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
     */
   /* InferMemberOverrides */
-  override def requestTiles(
-    boundingRect: typings.heremaps.H.geo.Rect,
-    zoomLevel: Double,
-    cacheOnly: Boolean,
-    prioCenter: Point
-  ): Response = js.native
+  override def requestTiles(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response = js.native
   /**
     * This method sets the maximum zoom level for which this layer will provide tiles.
     * @param max {number} - The new maximum zoom level of this layer

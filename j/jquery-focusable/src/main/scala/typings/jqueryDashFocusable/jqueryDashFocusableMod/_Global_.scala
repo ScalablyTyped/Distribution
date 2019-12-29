@@ -1,6 +1,5 @@
 package typings.jqueryDashFocusable.jqueryDashFocusableMod
 
-import typings.jqueryDashFocusable.jqueryDashFocusableMod._Global_.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

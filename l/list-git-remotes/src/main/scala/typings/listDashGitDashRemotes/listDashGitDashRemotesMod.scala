@@ -1,8 +1,6 @@
 package typings.listDashGitDashRemotes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.listDashGitDashRemotes.listDashGitDashRemotesMod.Callback
-import typings.listDashGitDashRemotes.listDashGitDashRemotesMod.Remotes
 import typings.node.childUnderscoreProcessMod.ExecException
 import typings.node.childUnderscoreProcessMod.ExecSyncOptions
 import scala.scalajs.js

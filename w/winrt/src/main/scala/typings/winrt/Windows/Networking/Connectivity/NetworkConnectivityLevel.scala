@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Connectivity.NetworkConnectivityLevel.constrainedInternetAccess
-import typings.winrt.Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess
-import typings.winrt.Windows.Networking.Connectivity.NetworkConnectivityLevel.localAccess
-import typings.winrt.Windows.Networking.Connectivity.NetworkConnectivityLevel.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

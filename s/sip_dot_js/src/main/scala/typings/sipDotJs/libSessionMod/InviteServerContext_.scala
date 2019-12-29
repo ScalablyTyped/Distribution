@@ -126,40 +126,40 @@ class InviteServerContext_ protected () extends Session {
   var waitingForPrackPromise: js.Any = js.native
   var waitingForPrackReject: js.Any = js.native
   var waitingForPrackResolve: js.Any = js.native
+  def accept(): js.Any = js.native
+  def accept(options: js.Any): js.Any = js.native
+  def accept(options: Options): this.type = js.native
   /**
     * Accept the incoming INVITE request to start a Session.
     * Replies to the INVITE request with a 200 Ok response.
     * @param options Options bucket.
     */
-  def accept(): this.type = js.native
-  def accept(options: js.Any): js.Any = js.native
-  def accept(options: Options): this.type = js.native
   @JSName("accept")
-  def accept_Any(): js.Any = js.native
+  def accept_This(): this.type = js.native
   /* protected */ def generateResponseOfferAnswer(options: Anon_Modifiers): js.Promise[js.UndefOr[Body]] = js.native
   /* protected */ def handlePrackOfferAnswer(request: IncomingPrackRequest, options: Anon_Modifiers): js.Promise[js.UndefOr[Body]] = js.native
   def onCancel(message: IncomingRequestMessage): Unit = js.native
+  def progress(): js.Any = js.native
+  def progress(options: js.Any): js.Any = js.native
+  def progress(options: Options): this.type = js.native
   /**
     * Report progress to the the caller.
     * Replies to the INVITE request with a 1xx provisional response.
     * @param options Options bucket.
     */
-  def progress(): this.type = js.native
-  def progress(options: js.Any): js.Any = js.native
-  def progress(options: Options): this.type = js.native
   @JSName("progress")
-  def progress_Any(): js.Any = js.native
-  def reject(): this.type = js.native
+  def progress_This(): this.type = js.native
+  def reject(): js.Any = js.native
   def reject(options: js.Any): js.Any = js.native
   def reject(options: Options): this.type = js.native
   @JSName("reject")
-  def reject_Any(): js.Any = js.native
-  def reply(): this.type = js.native
-  def reply(options: js.Any): this.type = js.native
+  def reject_This(): this.type = js.native
+  def reply(): js.Any = js.native
+  def reply(options: js.Any): js.Any = js.native
   @JSName("reply")
-  def reply_Any(): js.Any = js.native
+  def reply_This(): this.type = js.native
   @JSName("reply")
-  def reply_Any(options: js.Any): js.Any = js.native
+  def reply_This(options: js.Any): this.type = js.native
   /* protected */ def setupSessionDescriptionHandler(): SessionDescriptionHandler = js.native
 }
 

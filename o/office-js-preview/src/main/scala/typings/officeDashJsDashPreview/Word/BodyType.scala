@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.BodyType.footer
-import typings.officeDashJsDashPreview.Word.BodyType.header
-import typings.officeDashJsDashPreview.Word.BodyType.mainDoc
-import typings.officeDashJsDashPreview.Word.BodyType.section
-import typings.officeDashJsDashPreview.Word.BodyType.tableCell
-import typings.officeDashJsDashPreview.Word.BodyType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

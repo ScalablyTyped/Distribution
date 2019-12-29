@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.changeTrackingLost
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.created
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.deleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.modified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

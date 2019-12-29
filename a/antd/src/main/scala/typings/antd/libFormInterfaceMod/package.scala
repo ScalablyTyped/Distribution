@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object libFormInterfaceMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.antd.Anon_WrappedComponent
-  import typings.antd.antdNumbers.`true`
+  import typings.antd.antdBooleans.`true`
   import typings.antd.libFormFormMod.WrappedFormInternalProps
   import typings.antd.libUnderscoreUtilTypeMod.Omit
   import typings.react.reactMod.ComponentClass

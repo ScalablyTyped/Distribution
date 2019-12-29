@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListenRequest extends js.Object {
-  var addTarget: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Target
-  ] = js.undefined
+  var addTarget: js.UndefOr[Target] = js.undefined
   var labels: js.UndefOr[ApiClientObjectMap[String]] = js.undefined
   var removeTarget: js.UndefOr[Double] = js.undefined
 }
@@ -16,7 +14,7 @@ trait ListenRequest extends js.Object {
 object ListenRequest {
   @scala.inline
   def apply(
-    addTarget: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.Target = null,
+    addTarget: Target = null,
     labels: ApiClientObjectMap[String] = null,
     removeTarget: Int | Double = null
   ): ListenRequest = {

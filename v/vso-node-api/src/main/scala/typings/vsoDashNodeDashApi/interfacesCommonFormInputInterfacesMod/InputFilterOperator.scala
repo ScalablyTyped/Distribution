@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputFilterOperator.Equals
-import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputFilterOperator.NotEquals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

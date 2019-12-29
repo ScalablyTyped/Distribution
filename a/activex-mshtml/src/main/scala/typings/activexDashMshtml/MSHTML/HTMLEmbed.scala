@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLEmbed")
 @js.native
 class HTMLEmbed protected () extends js.Object {
-  var `MSHTML.HTMLEmbed_typekey`: HTMLEmbed = js.native
+  @JSName("MSHTML.HTMLEmbed_typekey")
+  var MSHTMLDotHTMLEmbed_typekey: HTMLEmbed = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

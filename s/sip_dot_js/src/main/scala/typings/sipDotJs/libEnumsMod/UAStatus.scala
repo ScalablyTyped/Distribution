@@ -1,11 +1,6 @@
 package typings.sipDotJs.libEnumsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_INIT
-import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_NOT_READY
-import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_READY
-import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_STARTING
-import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_USER_CLOSED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

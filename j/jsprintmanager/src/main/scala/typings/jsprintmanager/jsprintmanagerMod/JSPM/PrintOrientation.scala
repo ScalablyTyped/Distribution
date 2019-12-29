@@ -1,8 +1,6 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintOrientation.Landscape
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintOrientation.Portrait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

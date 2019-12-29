@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Playback.TimedMetadataTrackPresentationMode.applicationPresented
-import typings.winrtDashUwp.Windows.Media.Playback.TimedMetadataTrackPresentationMode.disabled
-import typings.winrtDashUwp.Windows.Media.Playback.TimedMetadataTrackPresentationMode.hidden
-import typings.winrtDashUwp.Windows.Media.Playback.TimedMetadataTrackPresentationMode.platformPresented
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

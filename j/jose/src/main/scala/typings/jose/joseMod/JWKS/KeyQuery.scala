@@ -12,7 +12,8 @@ trait KeyQuery extends BasicParameters {
   var crv: js.UndefOr[String] = js.undefined
   var kty: js.UndefOr[keyType] = js.undefined
   var x5t: js.UndefOr[String] = js.undefined
-  var `x5t#S256`: js.UndefOr[String] = js.undefined
+  @JSName("x5t#S256")
+  var x5tNumbersignS256: js.UndefOr[String] = js.undefined
 }
 
 object KeyQuery {
@@ -25,7 +26,7 @@ object KeyQuery {
     kty: keyType = null,
     use: use = null,
     x5t: String = null,
-    `x5t#S256`: String = null
+    x5tNumbersignS256: String = null
   ): KeyQuery = {
     val __obj = js.Dynamic.literal()
     if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
@@ -35,7 +36,7 @@ object KeyQuery {
     if (kty != null) __obj.updateDynamic("kty")(kty.asInstanceOf[js.Any])
     if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
+    if (x5tNumbersignS256 != null) __obj.updateDynamic("x5t#S256")(x5tNumbersignS256.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyQuery]
   }
 }

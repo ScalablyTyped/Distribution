@@ -2,8 +2,6 @@ package typings.protractor
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.blockingDashProxy.blockingDashProxyMod.BPClient
-import typings.protractor.builtBrowserMod.ElementHelper
-import typings.protractor.builtBrowserMod.ProtractorBrowser
 import typings.protractor.builtDebuggerMod.DebugHelper
 import typings.protractor.builtElementMod.ElementArrayFinder
 import typings.protractor.builtElementMod.ElementFinder
@@ -201,7 +199,7 @@ object builtBrowserMod extends js.Object {
       * @type {function(string): ElementArrayFinder}
       */
     @JSName("$$")
-    def $$(query: String): ElementArrayFinder = js.native
+    def DollarDollar(query: String): ElementArrayFinder = js.native
     /**
       * Add the base mock modules used for all Protractor tests.
       *

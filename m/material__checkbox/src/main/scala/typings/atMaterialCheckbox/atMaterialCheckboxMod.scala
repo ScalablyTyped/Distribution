@@ -1,7 +1,6 @@
 package typings.atMaterialCheckbox
 
 import typings.atMaterialCheckbox.adapterMod.MDCCheckboxAdapter
-import typings.atMaterialCheckbox.atMaterialCheckboxMod.MDCCheckbox
 import typings.atMaterialCheckbox.foundationMod.default
 import typings.atMaterialRipple.atMaterialRippleMod.MDCRipple
 import typings.std.Element

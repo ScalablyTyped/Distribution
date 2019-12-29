@@ -19,7 +19,8 @@ class LineFormat protected () extends js.Object {
   var EndArrowheadWidth: MsoArrowheadWidth = js.native
   var ForeColor: ColorFormat = js.native
   var InsetPen: MsoTriState = js.native
-  var `Office.LineFormat_typekey`: LineFormat = js.native
+  @JSName("Office.LineFormat_typekey")
+  var OfficeDotLineFormat_typekey: LineFormat = js.native
   val Parent: js.Any = js.native
   var Pattern: MsoPatternType = js.native
   var Style: MsoLineStyle = js.native

@@ -12,7 +12,8 @@ class Name protected () extends js.Object {
   var CategoryLocal: String = js.native
   var Comment: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Name_typekey`: Name = js.native
+  @JSName("Excel.Name_typekey")
+  var ExcelDotName_typekey: Name = js.native
   val Index: Double = js.native
   var MacroType: XlXLMMacroType = js.native
   var Name: String = js.native

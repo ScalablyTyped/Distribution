@@ -1,11 +1,11 @@
 package typings.gulpDashTypescript
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.gulpDashTypescript.gulpDashTypescriptNumbers.`false`
-import typings.gulpDashTypescript.gulpDashTypescriptStrings.JS
-import typings.gulpDashTypescript.gulpDashTypescriptStrings.`0DOT8`
-import typings.gulpDashTypescript.gulpDashTypescriptStrings.`3DOT7`
+import typings.gulpDashTypescript.gulpDashTypescriptBooleans.`false`
+import typings.gulpDashTypescript.gulpDashTypescriptStrings.`0Dot8`
+import typings.gulpDashTypescript.gulpDashTypescriptStrings.`3Dot7`
 import typings.gulpDashTypescript.gulpDashTypescriptStrings.dts
+import typings.gulpDashTypescript.gulpDashTypescriptStrings.js_
 import typings.typescript.Anon_Config
 import typings.typescript.Anon_Errors
 import typings.typescript.Anon_ErrorsOptions
@@ -355,12 +355,12 @@ trait Typeofts extends js.Object {
   var disableIncrementalParsing: Boolean = js.native
   val server: js.Any = js.native
   /** The version of the language service API */
-  val servicesVersion: `0DOT8` = js.native
+  val servicesVersion: `0Dot8` = js.native
   var sys: System = js.native
   var unchangedTextChangeRange: TextChangeRange = js.native
   /** The version of the TypeScript compiler release */
   val version: String = js.native
-  val versionMajorMinor: `3DOT7` = js.native
+  val versionMajorMinor: `3Dot7` = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -1839,26 +1839,26 @@ trait Typeofts extends js.Object {
     scriptKind: ScriptKind
   ): SourceFile = js.native
   def createLessThan(left: Expression, right: Expression): Expression = js.native
-  /** If a node is passed, creates a string literal whose source text is read from a source node during emit. */
-  def createLiteral(value: String): StringLiteral = js.native
+  def createLiteral(value: String): PrimaryExpression = js.native
   def createLiteral(value: Boolean): BooleanLiteral = js.native
-  def createLiteral(value: Double): PrimaryExpression = js.native
+  def createLiteral(value: Double): NumericLiteral = js.native
   def createLiteral(value: Identifier): StringLiteral = js.native
   def createLiteral(value: NoSubstitutionTemplateLiteral): StringLiteral = js.native
   def createLiteral(value: NumericLiteral): StringLiteral = js.native
-  def createLiteral(value: PseudoBigInt): PrimaryExpression = js.native
+  def createLiteral(value: PseudoBigInt): NumericLiteral = js.native
   def createLiteral(value: StringLiteral): StringLiteral = js.native
   def createLiteralTypeNode(literal: BooleanLiteral): LiteralTypeNode = js.native
   def createLiteralTypeNode(literal: LiteralExpression): LiteralTypeNode = js.native
   def createLiteralTypeNode(literal: PrefixUnaryExpression): LiteralTypeNode = js.native
   @JSName("createLiteral")
-  def createLiteral_NumericLiteral(value: Double): NumericLiteral = js.native
-  @JSName("createLiteral")
-  def createLiteral_NumericLiteral(value: PseudoBigInt): NumericLiteral = js.native
-  @JSName("createLiteral")
-  def createLiteral_PrimaryExpression(value: String): PrimaryExpression = js.native
-  @JSName("createLiteral")
   def createLiteral_PrimaryExpression(value: Boolean): PrimaryExpression = js.native
+  @JSName("createLiteral")
+  def createLiteral_PrimaryExpression(value: Double): PrimaryExpression = js.native
+  @JSName("createLiteral")
+  def createLiteral_PrimaryExpression(value: PseudoBigInt): PrimaryExpression = js.native
+  /** If a node is passed, creates a string literal whose source text is read from a source node during emit. */
+  @JSName("createLiteral")
+  def createLiteral_StringLiteral(value: String): StringLiteral = js.native
   def createLogicalAnd(left: Expression, right: Expression): BinaryExpression = js.native
   def createLogicalNot(operand: Expression): PrefixUnaryExpression = js.native
   def createLogicalOr(left: Expression, right: Expression): BinaryExpression = js.native
@@ -3380,9 +3380,9 @@ trait Typeofts extends js.Object {
   @JSName("createUnparsedSourceFile")
   def createUnparsedSourceFile_dts(inputFile: InputFiles, `type`: dts, stripInternal: Boolean): UnparsedSource = js.native
   @JSName("createUnparsedSourceFile")
-  def createUnparsedSourceFile_js(inputFile: InputFiles, `type`: JS): UnparsedSource = js.native
+  def createUnparsedSourceFile_js(inputFile: InputFiles, `type`: js_): UnparsedSource = js.native
   @JSName("createUnparsedSourceFile")
-  def createUnparsedSourceFile_js(inputFile: InputFiles, `type`: JS, stripInternal: Boolean): UnparsedSource = js.native
+  def createUnparsedSourceFile_js(inputFile: InputFiles, `type`: js_, stripInternal: Boolean): UnparsedSource = js.native
   def createVariableDeclaration(name: String): VariableDeclaration = js.native
   def createVariableDeclaration(name: String, `type`: TypeNode): VariableDeclaration = js.native
   def createVariableDeclaration(name: String, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
@@ -7050,53 +7050,15 @@ trait Typeofts extends js.Object {
     test: js.Function1[/* node */ Node, Boolean],
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): T = js.native
-  def visitNodes[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor): NodeArray[T] = js.native
-  def visitNodes[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
+  def visitNodes[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
+  def visitNodes[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
   def visitNodes[T /* <: Node */](
-    nodes: js.UndefOr[scala.Nothing],
-    visitor: Visitor,
-    test: js.Function1[/* node */ Node, Boolean],
-    start: Double
-  ): NodeArray[T] = js.native
-  def visitNodes[T /* <: Node */](
-    nodes: js.UndefOr[scala.Nothing],
-    visitor: Visitor,
-    test: js.Function1[/* node */ Node, Boolean],
-    start: Double,
-    count: Double
-  ): NodeArray[T] = js.native
-  /**
-    * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
-    *
-    * @param nodes The NodeArray to visit.
-    * @param visitor The callback used to visit a Node.
-    * @param test A node test to execute for each node.
-    * @param start An optional value indicating the starting offset at which to start visiting.
-    * @param count An optional value indicating the maximum number of nodes to visit.
-    */
-  def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): NodeArray[T] = js.native
-  def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
-  def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
-  def visitNodes[T /* <: Node */](
-    nodes: NodeArray[T],
-    visitor: Visitor,
-    test: js.Function1[/* node */ Node, Boolean],
-    start: Double,
-    count: Double
-  ): NodeArray[T] = js.native
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](
     nodes: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     test: js.Function1[/* node */ Node, Boolean],
     start: Double
   ): js.UndefOr[NodeArray[T]] = js.native
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](
+  def visitNodes[T /* <: Node */](
     nodes: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     test: js.Function1[/* node */ Node, Boolean],
@@ -7112,20 +7074,58 @@ trait Typeofts extends js.Object {
     * @param start An optional value indicating the starting offset at which to start visiting.
     * @param count An optional value indicating the maximum number of nodes to visit.
     */
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
-  @JSName("visitNodes")
-  def visitNodes_T_Node_Union[T /* <: Node */](
+  def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
+  def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
+  def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
+  def visitNodes[T /* <: Node */](
     nodes: NodeArray[T],
     visitor: Visitor,
     test: js.Function1[/* node */ Node, Boolean],
     start: Double,
     count: Double
   ): js.UndefOr[NodeArray[T]] = js.native
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor): NodeArray[T] = js.native
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](
+    nodes: js.UndefOr[scala.Nothing],
+    visitor: Visitor,
+    test: js.Function1[/* node */ Node, Boolean],
+    start: Double
+  ): NodeArray[T] = js.native
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](
+    nodes: js.UndefOr[scala.Nothing],
+    visitor: Visitor,
+    test: js.Function1[/* node */ Node, Boolean],
+    start: Double,
+    count: Double
+  ): NodeArray[T] = js.native
+  /**
+    * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
+    *
+    * @param nodes The NodeArray to visit.
+    * @param visitor The callback used to visit a Node.
+    * @param test A node test to execute for each node.
+    * @param start An optional value indicating the starting offset at which to start visiting.
+    * @param count An optional value indicating the maximum number of nodes to visit.
+    */
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): NodeArray[T] = js.native
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
+  @JSName("visitNodes")
+  def visitNodes_T_Node_NodeArray[T /* <: Node */](
+    nodes: NodeArray[T],
+    visitor: Visitor,
+    test: js.Function1[/* node */ Node, Boolean],
+    start: Double,
+    count: Double
+  ): NodeArray[T] = js.native
   def visitParameterList(nodes: js.UndefOr[scala.Nothing], visitor: Visitor, context: TransformationContext): NodeArray[ParameterDeclaration] = js.native
   def visitParameterList(
     nodes: js.UndefOr[scala.Nothing],

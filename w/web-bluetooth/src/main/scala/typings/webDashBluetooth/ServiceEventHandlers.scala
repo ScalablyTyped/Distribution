@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ServiceEventHandlers extends js.Object {
-  def onserviceadded(`this`: this.type, ev: Event): js.Any
-  def onservicechanged(`this`: this.type, ev: Event): js.Any
-  def onserviceremoved(`this`: this.type, ev: Event): js.Any
+  def onserviceadded(ev: Event): js.Any
+  def onservicechanged(ev: Event): js.Any
+  def onserviceremoved(ev: Event): js.Any
 }
 
 object ServiceEventHandlers {
   @scala.inline
   def apply(
-    onserviceadded: (ServiceEventHandlers, Event) => js.Any,
-    onservicechanged: (ServiceEventHandlers, Event) => js.Any,
-    onserviceremoved: (ServiceEventHandlers, Event) => js.Any
+    onserviceadded: Event => js.Any,
+    onservicechanged: Event => js.Any,
+    onserviceremoved: Event => js.Any
   ): ServiceEventHandlers = {
-    val __obj = js.Dynamic.literal(onserviceadded = js.Any.fromFunction2(onserviceadded), onservicechanged = js.Any.fromFunction2(onservicechanged), onserviceremoved = js.Any.fromFunction2(onserviceremoved))
+    val __obj = js.Dynamic.literal(onserviceadded = js.Any.fromFunction1(onserviceadded), onservicechanged = js.Any.fromFunction1(onservicechanged), onserviceremoved = js.Any.fromFunction1(onserviceremoved))
   
     __obj.asInstanceOf[ServiceEventHandlers]
   }

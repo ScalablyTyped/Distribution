@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.RangeUnderlineStyle.double
-import typings.officeDashJs.Excel.RangeUnderlineStyle.doubleAccountant
-import typings.officeDashJs.Excel.RangeUnderlineStyle.none
-import typings.officeDashJs.Excel.RangeUnderlineStyle.single
-import typings.officeDashJs.Excel.RangeUnderlineStyle.singleAccountant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

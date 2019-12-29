@@ -1,8 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_DEFAULT
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

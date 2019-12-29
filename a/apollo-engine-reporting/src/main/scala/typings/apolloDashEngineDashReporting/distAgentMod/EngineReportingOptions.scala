@@ -1,6 +1,6 @@
 package typings.apolloDashEngineDashReporting.distAgentMod
 
-import typings.apolloDashEngineDashReporting.apolloDashEngineDashReportingNumbers.`false`
+import typings.apolloDashEngineDashReporting.apolloDashEngineDashReportingBooleans.`false`
 import typings.apolloDashServerDashEnv.distFetchMod.RequestAgent
 import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.GraphQLRequestContext
 import typings.graphql.graphqlMod.GraphQLError

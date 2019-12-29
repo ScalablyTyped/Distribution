@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDrawerStrings {
   @js.native
-  sealed trait `DOTmdc-drawer-app-content` extends js.Object
+  sealed trait `Dotmdc-drawer-app-content` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-drawer-scrim` extends js.Object
+  sealed trait `Dotmdc-drawer-scrim` extends js.Object
   
   @js.native
-  sealed trait `MDCDrawer:closed` extends js.Object
+  sealed trait MDCDrawerColonclosed extends js.Object
   
   @js.native
-  sealed trait `MDCDrawer:opened` extends js.Object
+  sealed trait MDCDrawerColonopened extends js.Object
   
   @js.native
   sealed trait `mdc-drawer` extends js.Object
@@ -42,13 +42,13 @@ object atMaterialDrawerStrings {
   sealed trait onActivate extends js.Object
   
   @scala.inline
-  def `DOTmdc-drawer-app-content`: `DOTmdc-drawer-app-content` = ".mdc-drawer-app-content".asInstanceOf[`DOTmdc-drawer-app-content`]
+  def `Dotmdc-drawer-app-content`: `Dotmdc-drawer-app-content` = ".mdc-drawer-app-content".asInstanceOf[`Dotmdc-drawer-app-content`]
   @scala.inline
-  def `DOTmdc-drawer-scrim`: `DOTmdc-drawer-scrim` = ".mdc-drawer-scrim".asInstanceOf[`DOTmdc-drawer-scrim`]
+  def `Dotmdc-drawer-scrim`: `Dotmdc-drawer-scrim` = ".mdc-drawer-scrim".asInstanceOf[`Dotmdc-drawer-scrim`]
   @scala.inline
-  def `MDCDrawer:closed`: `MDCDrawer:closed` = "MDCDrawer:closed".asInstanceOf[`MDCDrawer:closed`]
+  def MDCDrawerColonclosed: MDCDrawerColonclosed = "MDCDrawer:closed".asInstanceOf[MDCDrawerColonclosed]
   @scala.inline
-  def `MDCDrawer:opened`: `MDCDrawer:opened` = "MDCDrawer:opened".asInstanceOf[`MDCDrawer:opened`]
+  def MDCDrawerColonopened: MDCDrawerColonopened = "MDCDrawer:opened".asInstanceOf[MDCDrawerColonopened]
   @scala.inline
   def `mdc-drawer`: `mdc-drawer` = "mdc-drawer".asInstanceOf[`mdc-drawer`]
   @scala.inline

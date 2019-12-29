@@ -2,9 +2,6 @@ package typings.expressDashValidator
 
 import typings.expressDashValidator.srcBaseMod.Request
 import typings.expressDashValidator.srcBaseMod.ValidationError
-import typings.expressDashValidator.srcValidationDashResultMod.ErrorFormatter
-import typings.expressDashValidator.srcValidationDashResultMod.Result
-import typings.expressDashValidator.srcValidationDashResultMod.ResultFactory
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

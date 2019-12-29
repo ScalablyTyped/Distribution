@@ -1,7 +1,6 @@
 package typings.streamDashMock
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.streamDashMock.libHelpersApplyMixinsMod.Constructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,7 +4,6 @@ import typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.HandlerResult
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler0
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType0
-import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotWorkspaceFoldersMod.WorkspaceFoldersRequest.HandlerSignature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

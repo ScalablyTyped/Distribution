@@ -1,12 +1,6 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendType.ADDITIVE
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendType.ADDITIVEALPHA
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendType.MULTIPLICATIVE
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendType.NONE
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendType.NORMAL
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EBlendType.PREMULTIPLIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

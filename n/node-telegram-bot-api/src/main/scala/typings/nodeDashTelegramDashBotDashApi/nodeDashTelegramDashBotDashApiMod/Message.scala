@@ -38,6 +38,7 @@ trait Message extends js.Object {
   var new_chat_members: js.UndefOr[js.Array[User]] = js.undefined
   var new_chat_photo: js.UndefOr[js.Array[PhotoSize]] = js.undefined
   var new_chat_title: js.UndefOr[String] = js.undefined
+  var passport_data: js.UndefOr[PassportData] = js.undefined
   var photo: js.UndefOr[js.Array[PhotoSize]] = js.undefined
   var pinned_message: js.UndefOr[Message] = js.undefined
   var poll: js.UndefOr[Poll] = js.undefined
@@ -89,6 +90,7 @@ object Message {
     new_chat_members: js.Array[User] = null,
     new_chat_photo: js.Array[PhotoSize] = null,
     new_chat_title: String = null,
+    passport_data: PassportData = null,
     photo: js.Array[PhotoSize] = null,
     pinned_message: Message = null,
     poll: Poll = null,
@@ -134,6 +136,7 @@ object Message {
     if (new_chat_members != null) __obj.updateDynamic("new_chat_members")(new_chat_members.asInstanceOf[js.Any])
     if (new_chat_photo != null) __obj.updateDynamic("new_chat_photo")(new_chat_photo.asInstanceOf[js.Any])
     if (new_chat_title != null) __obj.updateDynamic("new_chat_title")(new_chat_title.asInstanceOf[js.Any])
+    if (passport_data != null) __obj.updateDynamic("passport_data")(passport_data.asInstanceOf[js.Any])
     if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
     if (pinned_message != null) __obj.updateDynamic("pinned_message")(pinned_message.asInstanceOf[js.Any])
     if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])

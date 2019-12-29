@@ -1,23 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.VehicleType.BUS
-import typings.googlemaps.google.maps.VehicleType.CABLE_CAR
-import typings.googlemaps.google.maps.VehicleType.COMMUTER_TRAIN
-import typings.googlemaps.google.maps.VehicleType.FERRY
-import typings.googlemaps.google.maps.VehicleType.FUNICULAR
-import typings.googlemaps.google.maps.VehicleType.GONDOLA_LIFT
-import typings.googlemaps.google.maps.VehicleType.HEAVY_RAIL
-import typings.googlemaps.google.maps.VehicleType.HIGH_SPEED_TRAIN
-import typings.googlemaps.google.maps.VehicleType.INTERCITY_BUS
-import typings.googlemaps.google.maps.VehicleType.METRO_RAIL
-import typings.googlemaps.google.maps.VehicleType.MONORAIL
-import typings.googlemaps.google.maps.VehicleType.OTHER
-import typings.googlemaps.google.maps.VehicleType.RAIL
-import typings.googlemaps.google.maps.VehicleType.SHARE_TAXI
-import typings.googlemaps.google.maps.VehicleType.SUBWAY
-import typings.googlemaps.google.maps.VehicleType.TRAM
-import typings.googlemaps.google.maps.VehicleType.TROLLEYBUS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

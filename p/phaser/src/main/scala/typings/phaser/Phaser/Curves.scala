@@ -1,12 +1,5 @@
 package typings.phaser.Phaser
 
-import typings.phaser.Phaser.Curves.CubicBezier
-import typings.phaser.Phaser.Curves.Curve
-import typings.phaser.Phaser.Curves.Ellipse
-import typings.phaser.Phaser.Curves.Line
-import typings.phaser.Phaser.Curves.Path
-import typings.phaser.Phaser.Curves.QuadraticBezier
-import typings.phaser.Phaser.Curves.Spline
 import typings.phaser.Phaser.GameObjects.Graphics
 import typings.phaser.Phaser.Geom.Point
 import typings.phaser.Phaser.Geom.Rectangle

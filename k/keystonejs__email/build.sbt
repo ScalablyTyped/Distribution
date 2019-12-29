@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keystonejs__email"
-version := "5.0-dt-20191115Z-be744d"
+version := "5.0-dt-20191115Z-f08b21"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

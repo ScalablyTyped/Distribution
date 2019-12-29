@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multiply
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.replace
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tint
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -29,7 +32,7 @@ trait FillSymbol3DLayerMaterialProperties extends Object {
     *
     * @default multiply
     */
-  var colorMixMode: js.UndefOr[String] = js.undefined
+  var colorMixMode: js.UndefOr[tint | replace | multiply] = js.undefined
 }
 
 object FillSymbol3DLayerMaterialProperties {
@@ -39,7 +42,7 @@ object FillSymbol3DLayerMaterialProperties {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     color: Color | js.Array[Double] | String = null,
-    colorMixMode: String = null
+    colorMixMode: tint | replace | multiply = null
   ): FillSymbol3DLayerMaterialProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

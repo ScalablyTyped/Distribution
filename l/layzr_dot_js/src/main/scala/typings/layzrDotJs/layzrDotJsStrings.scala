@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object layzrDotJsStrings {
   @js.native
-  sealed trait `src:after` extends LayzrEvents
+  sealed trait srcColonafter extends LayzrEvents
   
   @js.native
-  sealed trait `src:before` extends LayzrEvents
+  sealed trait srcColonbefore extends LayzrEvents
   
   @scala.inline
-  def `src:after`: `src:after` = "src:after".asInstanceOf[`src:after`]
+  def srcColonafter: srcColonafter = "src:after".asInstanceOf[srcColonafter]
   @scala.inline
-  def `src:before`: `src:before` = "src:before".asInstanceOf[`src:before`]
+  def srcColonbefore: srcColonbefore = "src:before".asInstanceOf[srcColonbefore]
 }
 

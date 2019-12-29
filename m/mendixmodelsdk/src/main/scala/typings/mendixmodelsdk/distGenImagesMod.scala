@@ -1,11 +1,6 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
-import typings.mendixmodelsdk.distGenImagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenImagesMod.images.IImage
-import typings.mendixmodelsdk.distGenImagesMod.images.IImageCollection
-import typings.mendixmodelsdk.distGenImagesMod.images.Image
-import typings.mendixmodelsdk.distGenImagesMod.images.ImageCollection
 import typings.mendixmodelsdk.distGenProjectsMod.projects.Document
 import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument

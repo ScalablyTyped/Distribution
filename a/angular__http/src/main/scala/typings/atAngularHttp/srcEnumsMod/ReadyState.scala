@@ -1,12 +1,6 @@
 package typings.atAngularHttp.srcEnumsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularHttp.srcEnumsMod.ReadyState.Cancelled
-import typings.atAngularHttp.srcEnumsMod.ReadyState.Done
-import typings.atAngularHttp.srcEnumsMod.ReadyState.HeadersReceived
-import typings.atAngularHttp.srcEnumsMod.ReadyState.Loading
-import typings.atAngularHttp.srcEnumsMod.ReadyState.Open
-import typings.atAngularHttp.srcEnumsMod.ReadyState.Unsent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "filenamify-url" : "2.1.0"
+      "filenamify-url" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "filenamify-url" : "2.1.0"
+      "filenamify-url" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

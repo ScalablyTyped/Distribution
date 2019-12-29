@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.libPaginationMiniSelectMod.MiniSelect
 import typings.antd.libSelectMod.OptionProps
 import typings.react.reactMod.ClassicComponentClass
 import typings.react.reactMod.Component

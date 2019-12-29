@@ -19,6 +19,7 @@ class Mailer protected () extends js.Object {
   val SendDateTime: VarDate = js.native
   val Sender: String = js.native
   var Subject: String = js.native
-  var `Word.Mailer_typekey`: Mailer = js.native
+  @JSName("Word.Mailer_typekey")
+  var WordDotMailer_typekey: Mailer = js.native
 }
 

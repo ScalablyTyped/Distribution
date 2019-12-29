@@ -1,6 +1,5 @@
 package typings.jsonDashStringifyDashSafe
 
-import typings.jsonDashStringifyDashSafe.jsonDashStringifyDashSafeMod.EntryProcessor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

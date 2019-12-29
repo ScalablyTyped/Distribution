@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.XboxLive
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveSocketKind.datagram
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveSocketKind.none
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveSocketKind.stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

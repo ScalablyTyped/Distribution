@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.all
-import typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.decryption
-import typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.keyAgreement
-import typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.none
-import typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.signing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

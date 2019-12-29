@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("net", "isIP")
 @js.native
 object isIP extends js.Object {
-  def apply(input: java.lang.String): Double = js.native
+  def apply(input: String): Double = js.native
 }
 

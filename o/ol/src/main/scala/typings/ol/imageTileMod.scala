@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.imageTileMod.ImageTile
 import typings.ol.tileMod.LoadFunction
 import typings.ol.tileMod.Options
 import typings.ol.tileStateMod.TileState

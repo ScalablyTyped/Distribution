@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Visio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Visio.OverlayType.html
-import typings.officeDashJsDashPreview.Visio.OverlayType.image
-import typings.officeDashJsDashPreview.Visio.OverlayType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

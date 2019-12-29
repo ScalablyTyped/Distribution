@@ -1,6 +1,6 @@
 package typings.findDashPackageDashJson.findDashPackageDashJsonMod
 
-import typings.findDashPackageDashJson.findDashPackageDashJsonNumbers.`false`
+import typings.findDashPackageDashJson.findDashPackageDashJsonBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,21 +1,6 @@
 package typings.winrtDashUwp.Windows.Gaming.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.a
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.b
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.dpadDown
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.dpadLeft
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.dpadRight
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.dpadUp
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.leftShoulder
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.leftThumbstick
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.menu
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.none
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.rightShoulder
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.rightThumbstick
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.view
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.x
-import typings.winrtDashUwp.Windows.Gaming.Input.GamepadButtons.y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

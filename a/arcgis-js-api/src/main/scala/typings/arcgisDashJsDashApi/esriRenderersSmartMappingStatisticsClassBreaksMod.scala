@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object esriRenderersSmartMappingStatisticsClassBreaksMod
   extends TopLevel[
-      js.Function1[/* params */ classBreaksClassBreaksParams, IPromise[ClassBreaksResult]]
+      js.Function1[/* params */ classBreaksClassBreaksParams, js.Promise[ClassBreaksResult]]
     ]
 

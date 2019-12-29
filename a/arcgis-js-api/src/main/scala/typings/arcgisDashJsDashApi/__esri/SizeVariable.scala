@@ -11,12 +11,12 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.depth
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.diameter
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.distance
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.height
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.radius
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
@@ -132,7 +132,7 @@ trait SizeVariable extends VisualVariable {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueUnit)
     */
-  var valueUnit: unknown | inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees` = js.native
+  var valueUnit: unknown | inches | feet_ | yards | miles_ | `nautical-miles` | millimeters | centimeters | decimeters | meters_ | kilometers_ | `decimal-degrees` = js.native
   /**
     * Modifies the SizeVariable in place by flipping the sizes in the [stops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#stops). This is designed for scenarios where you want small numbers (such as rankings 1, 2, 3) to be rendered with larger icons. This function is particularly useful for flipping the sizes of a SizeVariable after it has been returned from a method in the [sizeRendererCreator](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html) module.
     *

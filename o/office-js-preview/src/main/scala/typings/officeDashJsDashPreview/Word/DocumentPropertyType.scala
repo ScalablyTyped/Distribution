@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.DocumentPropertyType.boolean
-import typings.officeDashJsDashPreview.Word.DocumentPropertyType.date
-import typings.officeDashJsDashPreview.Word.DocumentPropertyType.number
-import typings.officeDashJsDashPreview.Word.DocumentPropertyType.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

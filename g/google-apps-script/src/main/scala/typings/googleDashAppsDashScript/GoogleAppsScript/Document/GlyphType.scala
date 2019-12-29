@@ -1,14 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.BULLET
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.HOLLOW_BULLET
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.LATIN_LOWER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.LATIN_UPPER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.NUMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.ROMAN_LOWER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.ROMAN_UPPER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Document.GlyphType.SQUARE_BULLET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

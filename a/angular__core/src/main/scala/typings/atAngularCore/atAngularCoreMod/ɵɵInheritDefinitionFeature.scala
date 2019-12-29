@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵɵInheritDefinitionFeature")
+@JSImport("@angular/core", "\u0275\u0275InheritDefinitionFeature")
 @js.native
 object ɵɵInheritDefinitionFeature extends js.Object {
   def apply(definition: ɵComponentDef[_]): Unit = js.native

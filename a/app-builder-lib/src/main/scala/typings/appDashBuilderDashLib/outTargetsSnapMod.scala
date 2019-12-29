@@ -4,7 +4,6 @@ import typings.appDashBuilderDashLib.outCoreMod.Target
 import typings.appDashBuilderDashLib.outLinuxPackagerMod.LinuxPackager
 import typings.appDashBuilderDashLib.outOptionsSnapOptionsMod.SnapOptions
 import typings.appDashBuilderDashLib.outTargetsLinuxTargetHelperMod.LinuxTargetHelper
-import typings.appDashBuilderDashLib.outTargetsSnapMod.SnapTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

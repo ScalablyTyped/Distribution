@@ -5,14 +5,12 @@ import typings.sipDotJs.libApiInviterDashOptionsMod.InviterOptions
 import typings.sipDotJs.libApiInviterMod.Inviter
 import typings.sipDotJs.libApiReferrerMod.Referrer
 import typings.sipDotJs.libApiSessionDashDelegateMod.SessionDelegate
-import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerMod.BodyAndContentType
 import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler
 import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifier
 import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions
 import typings.sipDotJs.libApiSessionDashInviteDashOptionsMod.SessionInviteOptions
 import typings.sipDotJs.libApiSessionDashOptionsMod.SessionOptions
 import typings.sipDotJs.libApiSessionDashStateMod.SessionState
-import typings.sipDotJs.libApiSessionMod.Session
 import typings.sipDotJs.libApiUserDashAgentMod.UserAgent
 import typings.sipDotJs.libCoreMessagesBodyMod.Body
 import typings.sipDotJs.libCoreMessagesMethodsAckMod.IncomingAckRequest
@@ -45,25 +43,47 @@ object libApiSessionMod extends js.Object {
       */
     protected def this(userAgent: UserAgent) = this()
     protected def this(userAgent: UserAgent, options: SessionOptions) = this()
+    /** @internal */
+    var _assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
+    /** @internal */
+    var _contact: js.UndefOr[String] = js.native
+    /** @internal */
+    var _dialog: js.UndefOr[typings.sipDotJs.libCoreSessionSessionMod.Session] = js.native
+    /** @internal */
+    var _id: String = js.native
+    /** @internal */
+    var _referral: js.UndefOr[Inviter] = js.native
+    /** @internal */
+    var _referralInviterOptions: js.UndefOr[InviterOptions] = js.native
+    /** @internal */
+    var _referrer: js.UndefOr[Referrer] = js.native
+    /** @internal */
+    var _renderbody: js.UndefOr[String] = js.native
+    /** @internal */
+    var _rendertype: js.UndefOr[String] = js.native
+    /** @internal */
+    var _replacee: js.UndefOr[Session] = js.native
     /** Dialogs session description handler. */
     var _sessionDescriptionHandler: js.Any = js.native
+    /** @internal */
+    var _sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
+    /** @internal */
+    var _sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
     /** Session state. */
     var _state: js.Any = js.native
     /** Session state emitter. */
     var _stateEventEmitter: js.Any = js.native
-    /** @internal */
-    var assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
-    /** @internal */
-    var body: js.UndefOr[BodyAndContentType | String] = js.native
-    /** @internal */
-    var contact: js.UndefOr[String] = js.native
-    /** @internal */
-    var contentType: js.UndefOr[String] = js.native
+    /** User agent. */
+    var _userAgent: js.Any = js.native
+    /**
+      * The asserted identity of the remote user.
+      */
+    val assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
     /**
       * Property reserved for use by instance owner.
       * @defaultValue `undefined`
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.Any = js.native
     /**
       * The session delegate.
       * @defaultValue `undefined`
@@ -72,40 +92,30 @@ object libApiSessionMod extends js.Object {
     /**
       * The confirmed session dialog.
       */
-    var dialog: js.UndefOr[typings.sipDotJs.libCoreSessionSessionMod.Session] = js.native
+    val dialog: js.UndefOr[typings.sipDotJs.libCoreSessionSessionMod.Session] = js.native
     var getReasonHeaderValue: js.Any = js.native
     /**
-      * Unique identifier for this session.
-      * @internal
+      * A unique identifier for this session.
       */
-    var id: js.UndefOr[String] = js.native
-    /** @internal */
-    var localIdentity: NameAddrHeader = js.native
+    val id: String = js.native
+    /**
+      * The identity of the local user.
+      */
+    val localIdentity: NameAddrHeader = js.native
     /**
       * Logger.
-      * @internal
       */
     var logger: Logger = js.native
     /** True if there is a re-INVITE request outstanding. */
     var pendingReinvite: js.Any = js.native
-    /** @internal */
-    var referral: js.UndefOr[Inviter] = js.native
     /**
-      * Inviter options to use when following a REFER.
-      * FIXME: This is getting in the Inviter constructor, but not by Invitation (thus undefined).
-      * @internal
+      * The identity of the remote user.
       */
-    var referralInviterOptions: js.UndefOr[InviterOptions] = js.native
-    /** @internal */
-    var referrer: js.UndefOr[Referrer] = js.native
-    /** @internal */
-    var remoteIdentity: NameAddrHeader = js.native
-    /** @internal */
-    var renderbody: js.UndefOr[String] = js.native
-    /** @internal */
-    var rendertype: js.UndefOr[String] = js.native
-    /** @internal */
-    var replacee: js.UndefOr[Session] = js.native
+    val remoteIdentity: NameAddrHeader = js.native
+    /**
+      * The session being replace by this one.
+      */
+    val replacee: js.UndefOr[Session] = js.native
     /**
       * Session description handler.
       * @remarks
@@ -118,10 +128,6 @@ object libApiSessionMod extends js.Object {
       * Otherwise `undefined`.
       */
     val sessionDescriptionHandler: js.UndefOr[SessionDescriptionHandler] = js.native
-    /** @internal */
-    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
-    /** @internal */
-    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
     /**
       * Session state.
       */
@@ -130,8 +136,10 @@ object libApiSessionMod extends js.Object {
       * Session state change emitter.
       */
     val stateChange: Emitter[SessionState] = js.native
-    /** @internal */
-    var userAgent: UserAgent = js.native
+    /**
+      * The user agent.
+      */
+    val userAgent: UserAgent = js.native
     /**
       * Send BYE.
       * @param delegate - Request delegate.

@@ -1,26 +1,6 @@
 package typings.browserfs.distNodeBackendZipFSMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ACORN_RISC
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ALT_MVS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.AMIGA
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ATARI_ST
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.BEOS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.CP_M
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MAC
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MSDOS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MVS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.NTFS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OPENVMS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OS2_HPFS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OSX
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OS_400
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.TANDEM
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.UNIX
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VFAT
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VM_CMS
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VSE
-import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.Z_SYSTEM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

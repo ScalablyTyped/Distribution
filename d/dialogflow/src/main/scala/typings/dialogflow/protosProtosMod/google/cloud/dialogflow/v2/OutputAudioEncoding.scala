@@ -1,10 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.OutputAudioEncoding.OUTPUT_AUDIO_ENCODING_LINEAR_16
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.OutputAudioEncoding.OUTPUT_AUDIO_ENCODING_MP3
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.OutputAudioEncoding.OUTPUT_AUDIO_ENCODING_OGG_OPUS
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.OutputAudioEncoding.OUTPUT_AUDIO_ENCODING_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

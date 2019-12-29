@@ -108,7 +108,7 @@ object atAwsDashSdkClientDashGlacierDashNodeStrings {
   sealed trait `aws-exec-read` extends js.Object
   
   @js.native
-  sealed trait `aws:kms` extends js.Object
+  sealed trait awsColonkms extends js.Object
   
   @js.native
   sealed trait `bucket-owner-full-control` extends js.Object
@@ -194,7 +194,7 @@ object atAwsDashSdkClientDashGlacierDashNodeStrings {
   @scala.inline
   def `aws-exec-read`: `aws-exec-read` = "aws-exec-read".asInstanceOf[`aws-exec-read`]
   @scala.inline
-  def `aws:kms`: `aws:kms` = "aws:kms".asInstanceOf[`aws:kms`]
+  def awsColonkms: awsColonkms = "aws:kms".asInstanceOf[awsColonkms]
   @scala.inline
   def `bucket-owner-full-control`: `bucket-owner-full-control` = "bucket-owner-full-control".asInstanceOf[`bucket-owner-full-control`]
   @scala.inline

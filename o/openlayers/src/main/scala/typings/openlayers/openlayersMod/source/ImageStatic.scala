@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.ImageStatic")
 @js.native
-class ImageStatic protected ()
-  extends typings.openlayers.openlayersMod.source.Image {
+class ImageStatic protected () extends Image {
   /**
     * @classdesc
     * A layer source for displaying a single, static image.

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductType.consumable
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductType.durable
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

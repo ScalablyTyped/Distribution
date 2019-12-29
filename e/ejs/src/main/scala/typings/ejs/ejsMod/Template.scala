@@ -1,12 +1,6 @@
 package typings.ejs.ejsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejs.ejsMod.Template.modes
-import typings.ejs.ejsMod.Template.modes.COMMENT
-import typings.ejs.ejsMod.Template.modes.ESCAPED
-import typings.ejs.ejsMod.Template.modes.EVAL
-import typings.ejs.ejsMod.Template.modes.LITERAL
-import typings.ejs.ejsMod.Template.modes.RAW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

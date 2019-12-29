@@ -17,7 +17,8 @@ class Task protected () extends js.Object {
   var Visible: Boolean = js.native
   var Width: Double = js.native
   var WindowState: WdWindowState = js.native
-  var `Word.Task_typekey`: Task = js.native
+  @JSName("Word.Task_typekey")
+  var WordDotTask_typekey: Task = js.native
   def Activate(): Unit = js.native
   def Activate(Wait: js.Any): Unit = js.native
   def Close(): Unit = js.native

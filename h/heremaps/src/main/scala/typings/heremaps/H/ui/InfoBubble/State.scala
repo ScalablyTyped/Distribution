@@ -1,8 +1,6 @@
 package typings.heremaps.H.ui.InfoBubble
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.ui.InfoBubble.State.CLOSED
-import typings.heremaps.H.ui.InfoBubble.State.OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

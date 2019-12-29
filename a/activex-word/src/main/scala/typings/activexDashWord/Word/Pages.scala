@@ -11,7 +11,8 @@ class Pages protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Pages_typekey`: Pages = js.native
+  @JSName("Word.Pages_typekey")
+  var WordDotPages_typekey: Pages = js.native
   def Item(Index: Double): Page = js.native
 }
 

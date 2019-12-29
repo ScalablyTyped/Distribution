@@ -7,15 +7,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_XYDomainTuple extends _DomainPropType {
-  var x: DomainTuple
-  var y: js.UndefOr[DomainTuple] = js.undefined
+  var x: js.UndefOr[DomainTuple] = js.undefined
+  var y: DomainTuple
 }
 
 object Anon_XYDomainTuple {
   @scala.inline
-  def apply(x: DomainTuple, y: DomainTuple = null): Anon_XYDomainTuple = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+  def apply(y: DomainTuple, x: DomainTuple = null): Anon_XYDomainTuple = {
+    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_XYDomainTuple]
   }
 }

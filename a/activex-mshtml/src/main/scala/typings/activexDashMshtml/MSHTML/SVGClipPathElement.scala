@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGClipPathElement")
 @js.native
 class SVGClipPathElement protected () extends js.Object {
-  var `MSHTML.SVGClipPathElement_typekey`: SVGClipPathElement = js.native
+  @JSName("MSHTML.SVGClipPathElement_typekey")
+  var MSHTMLDotSVGClipPathElement_typekey: SVGClipPathElement = js.native
   val className: SVGAnimatedString = js.native
   var clipPathUnits: SVGAnimatedEnumeration = js.native
   val externalResourcesRequired: SVGAnimatedBoolean = js.native

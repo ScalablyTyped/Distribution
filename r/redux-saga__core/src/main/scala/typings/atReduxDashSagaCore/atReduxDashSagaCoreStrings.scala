@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atReduxDashSagaCoreStrings {
   @js.native
-  sealed trait `@@redux-saga/SELF_CANCELLATION` extends js.Object
+  sealed trait `@@redux-sagaSlashSELF_CANCELLATION` extends js.Object
   
   @js.native
   sealed trait ACTION_CHANNEL extends js.Object
@@ -75,7 +75,7 @@ object atReduxDashSagaCoreStrings {
   sealed trait spawn extends js.Object
   
   @scala.inline
-  def `@@redux-saga/SELF_CANCELLATION`: `@@redux-saga/SELF_CANCELLATION` = "@@redux-saga/SELF_CANCELLATION".asInstanceOf[`@@redux-saga/SELF_CANCELLATION`]
+  def `@@redux-sagaSlashSELF_CANCELLATION`: `@@redux-sagaSlashSELF_CANCELLATION` = "@@redux-saga/SELF_CANCELLATION".asInstanceOf[`@@redux-sagaSlashSELF_CANCELLATION`]
   @scala.inline
   def ACTION_CHANNEL: ACTION_CHANNEL = "ACTION_CHANNEL".asInstanceOf[ACTION_CHANNEL]
   @scala.inline
@@ -110,7 +110,6 @@ object atReduxDashSagaCoreStrings {
   def SET_CONTEXT: SET_CONTEXT = "SET_CONTEXT".asInstanceOf[SET_CONTEXT]
   @scala.inline
   def TAKE: TAKE = "TAKE".asInstanceOf[TAKE]
-  @JSName("apply")
   @scala.inline
   def apply: apply = "apply".asInstanceOf[apply]
   @scala.inline

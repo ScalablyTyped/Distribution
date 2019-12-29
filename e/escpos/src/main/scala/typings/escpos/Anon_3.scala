@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_3 extends js.Object {
   var LEN_OFFSET: `3`
   var LEVEL: Anon_CMD
-  var PIXEL_SIZE: Anon_112
+  var PIXEL_SIZE: Anon_1
   var PRINTBUF: Anon_1Q0
   var SAVEBUF: Anon_1P0
   var VERSION: Anon_116
@@ -19,7 +19,7 @@ object Anon_3 {
   def apply(
     LEN_OFFSET: `3`,
     LEVEL: Anon_CMD,
-    PIXEL_SIZE: Anon_112,
+    PIXEL_SIZE: Anon_1,
     PRINTBUF: Anon_1Q0,
     SAVEBUF: Anon_1P0,
     VERSION: Anon_116

@@ -12,7 +12,8 @@ class SignatureSetup protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val Id: String = js.native
-  var `Office.SignatureSetup_typekey`: SignatureSetup = js.native
+  @JSName("Office.SignatureSetup_typekey")
+  var OfficeDotSignatureSetup_typekey: SignatureSetup = js.native
   val ReadOnly: Boolean = js.native
   var ShowSignDate: Boolean = js.native
   val SignatureProvider: String = js.native

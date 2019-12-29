@@ -1,10 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.addCommentToFeature
-import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.allActions
-import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.reportBug
-import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.requestNewFeature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

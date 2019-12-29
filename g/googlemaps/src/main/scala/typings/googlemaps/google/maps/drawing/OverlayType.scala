@@ -1,11 +1,6 @@
 package typings.googlemaps.google.maps.drawing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.drawing.OverlayType.CIRCLE
-import typings.googlemaps.google.maps.drawing.OverlayType.MARKER
-import typings.googlemaps.google.maps.drawing.OverlayType.POLYGON
-import typings.googlemaps.google.maps.drawing.OverlayType.POLYLINE
-import typings.googlemaps.google.maps.drawing.OverlayType.RECTANGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

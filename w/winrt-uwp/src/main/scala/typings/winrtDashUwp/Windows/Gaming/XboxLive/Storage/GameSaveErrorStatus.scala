@@ -1,21 +1,6 @@
 package typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.abort
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.blobNotFound
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.containerNotInSync
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.containerSyncFailed
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.invalidContainerName
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.noAccess
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.noXboxLiveInfo
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.objectExpired
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ok
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.outOfLocalStorage
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.providedBufferTooSmall
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.quotaExceeded
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.updateTooBig
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.userCanceled
-import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.userHasNoXboxLiveInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

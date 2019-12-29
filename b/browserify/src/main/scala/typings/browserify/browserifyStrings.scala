@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object browserifyStrings {
   @js.native
-  sealed trait PACKAGE extends js.Object
+  sealed trait _package extends js.Object
   
   @js.native
   sealed trait bundle extends js.Object
@@ -21,7 +21,7 @@ object browserifyStrings {
   sealed trait transform extends js.Object
   
   @scala.inline
-  def PACKAGE: PACKAGE = "package".asInstanceOf[PACKAGE]
+  def _package: _package = "package".asInstanceOf[_package]
   @scala.inline
   def bundle: bundle = "bundle".asInstanceOf[bundle]
   @scala.inline

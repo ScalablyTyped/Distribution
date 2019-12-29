@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Alignment.Center
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Alignment.Far
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.Alignment.Near
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

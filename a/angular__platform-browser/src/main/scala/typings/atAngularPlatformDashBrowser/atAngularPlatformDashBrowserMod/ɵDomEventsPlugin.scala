@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵDomEventsPlugin")
+@JSImport("@angular/platform-browser", "\u0275DomEventsPlugin")
 @js.native
 class ɵDomEventsPlugin protected () extends ɵangular_packages_platform_browser_platform_browser_g {
   def this(doc: js.Any, ngZone: NgZone) = this()

@@ -30,7 +30,8 @@ class Application protected () extends js.Object {
   val IsTrusted: Boolean = js.native
   val LanguageSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
   val Name: String = js.native
-  var `Outlook.Application_typekey`: typings.activexDashOutlook.Outlook.Application = js.native
+  @JSName("Outlook.Application_typekey")
+  var OutlookDotApplication_typekey: typings.activexDashOutlook.Outlook.Application = js.native
   val Parent: js.Any = js.native
   val PickerDialog: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
   val ProductCode: String = js.native

@@ -1,6 +1,5 @@
 package typings.promiseDashRetry
 
-import typings.promiseDashRetry.promiseDashRetryMod.RetryableFn
 import typings.retry.retryMod.OperationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

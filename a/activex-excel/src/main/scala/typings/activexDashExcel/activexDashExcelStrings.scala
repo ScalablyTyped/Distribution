@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object activexDashExcelStrings {
   @js.native
-  sealed trait _quote extends js.Object
-  
-  @js.native
   sealed trait Activate extends js.Object
   
   @js.native
@@ -36,16 +33,16 @@ object activexDashExcelStrings {
   sealed trait AfterXmlImport extends js.Object
   
   @js.native
+  sealed trait Apostrophe extends js.Object
+  
+  @js.native
   sealed trait Arg1 extends js.Object
   
   @js.native
   sealed trait Arg2 extends js.Object
   
   @js.native
-  sealed trait BACKSLASH extends js.Object
-  
-  @js.native
-  sealed trait BACKSLASHBACKSLASH extends js.Object
+  sealed trait Backslash extends js.Object
   
   @js.native
   sealed trait BeforeClose extends js.Object
@@ -109,9 +106,6 @@ object activexDashExcelStrings {
   
   @js.native
   sealed trait ElementID extends js.Object
-  
-  @js.native
-  sealed trait Empty extends js.Object
   
   @js.native
   sealed trait Everyone extends js.Object
@@ -229,6 +223,9 @@ object activexDashExcelStrings {
   
   @js.native
   sealed trait QueryInterface extends js.Object
+  
+  @js.native
+  sealed trait Quotationmark extends js.Object
   
   @js.native
   sealed trait Reason extends js.Object
@@ -420,7 +417,10 @@ object activexDashExcelStrings {
   sealed trait WorkbookSync extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait cNames extends js.Object
@@ -474,8 +474,6 @@ object activexDashExcelStrings {
   sealed trait y extends js.Object
   
   @scala.inline
-  def _quote: _quote = "'".asInstanceOf[_quote]
-  @scala.inline
   def Activate: Activate = "Activate".asInstanceOf[Activate]
   @scala.inline
   def AddRef: AddRef = "AddRef".asInstanceOf[AddRef]
@@ -494,13 +492,13 @@ object activexDashExcelStrings {
   @scala.inline
   def AfterXmlImport: AfterXmlImport = "AfterXmlImport".asInstanceOf[AfterXmlImport]
   @scala.inline
+  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
+  @scala.inline
   def Arg1: Arg1 = "Arg1".asInstanceOf[Arg1]
   @scala.inline
   def Arg2: Arg2 = "Arg2".asInstanceOf[Arg2]
   @scala.inline
-  def BACKSLASH: BACKSLASH = "\"".asInstanceOf[BACKSLASH]
-  @scala.inline
-  def BACKSLASHBACKSLASH: BACKSLASHBACKSLASH = "\\".asInstanceOf[BACKSLASHBACKSLASH]
+  def Backslash: Backslash = "\\".asInstanceOf[Backslash]
   @scala.inline
   def BeforeClose: BeforeClose = "BeforeClose".asInstanceOf[BeforeClose]
   @scala.inline
@@ -543,8 +541,6 @@ object activexDashExcelStrings {
   def DragPlot: DragPlot = "DragPlot".asInstanceOf[DragPlot]
   @scala.inline
   def ElementID: ElementID = "ElementID".asInstanceOf[ElementID]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def Everyone: Everyone = "Everyone".asInstanceOf[Everyone]
   @scala.inline
@@ -623,6 +619,8 @@ object activexDashExcelStrings {
   def Pvw: Pvw = "Pvw".asInstanceOf[Pvw]
   @scala.inline
   def QueryInterface: QueryInterface = "QueryInterface".asInstanceOf[QueryInterface]
+  @scala.inline
+  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   @scala.inline
   def Reason: Reason = "Reason".asInstanceOf[Reason]
   @scala.inline
@@ -750,7 +748,9 @@ object activexDashExcelStrings {
   @scala.inline
   def WorkbookSync: WorkbookSync = "WorkbookSync".asInstanceOf[WorkbookSync]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def cNames: cNames = "cNames".asInstanceOf[cNames]
   @scala.inline

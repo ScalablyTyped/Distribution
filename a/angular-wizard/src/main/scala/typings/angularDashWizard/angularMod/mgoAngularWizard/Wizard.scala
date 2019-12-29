@@ -20,5 +20,6 @@ trait Wizard extends js.Object {
   def next(nextHandler: js.Function0[Boolean]): Unit = js.native
   def previous(): Unit = js.native
   def reset(): Unit = js.native
+  def totalStepCount(): Double = js.native
 }
 

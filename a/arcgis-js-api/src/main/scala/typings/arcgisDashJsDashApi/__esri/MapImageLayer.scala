@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-image`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bmp
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
@@ -172,23 +171,8 @@ trait MapImageLayer
     * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def fetchImage(extent: Extent, width: Double, height: Double): IPromise[HTMLImageElement] = js.native
-  def fetchImage(extent: Extent, width: Double, height: Double, options: MapImageLayerFetchImageOptions): IPromise[HTMLImageElement] = js.native
-  /**
-    * This method returns a URL to an image for a given extent, width and height.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#getImageUrl)
-    *
-    * @param extent The extent of the exported image.
-    * @param width The width of the view in pixels.
-    * @param height The height of the view in pixels.
-    * @param options The parameter options is an object with the following properties.
-    * @param options.pixelRatio The ratio of the resolution in physical pixels of the image to the resolution it will be displayed at.
-    * @param options.rotation The rotation in degrees of the exported image. Available since ArcGIS Server 10.3.
-    *
-    */
-  def getImageUrl(extent: Extent, width: Double, height: Double): IPromise[String] | String = js.native
-  def getImageUrl(extent: Extent, width: Double, height: Double, options: MapImageLayerGetImageUrlOptions): IPromise[String] | String = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[HTMLImageElement] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double, options: MapImageLayerFetchImageOptions): js.Promise[HTMLImageElement] = js.native
 }
 
 @JSGlobal("__esri.MapImageLayer")

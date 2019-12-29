@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.highestAvailable
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.large3M
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.mediumXga
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.smallVga
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.veryLarge5M
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.verySmallQvga
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -28,7 +28,7 @@ trait QueryCellInfoEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the name of the currently rendering element on the scheduler.
     */
   var requestType: js.UndefOr[String] = js.undefined
@@ -47,7 +47,7 @@ object QueryCellInfoEventArgs {
     currentAppointmentDate: js.Any = null,
     currentDay: js.Any = null,
     element: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     requestType: String = null,
     resource: js.Any = null
   ): QueryCellInfoEventArgs = {

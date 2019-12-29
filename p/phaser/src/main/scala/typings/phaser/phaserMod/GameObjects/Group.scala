@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import scala.scalajs.js
@@ -23,26 +24,23 @@ class Group protected ()
     * @param children Game Objects to add to this group; or the `config` argument.
     * @param config Settings for this group. If `key` is set, Phaser.GameObjects.Group#createMultiple is also called with these settings.
     */
-  def this(scene: typings.phaser.Phaser.Scene) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, children: js.Array[typings.phaser.Phaser.GameObjects.GameObject]) = this()
+  def this(scene: Scene, children: GroupConfig) = this()
+  def this(scene: Scene, children: GroupCreateConfig) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
-    children: js.Array[typings.phaser.Phaser.GameObjects.GameObject]
-  ) = this()
-  def this(scene: typings.phaser.Phaser.Scene, children: GroupConfig) = this()
-  def this(scene: typings.phaser.Phaser.Scene, children: GroupCreateConfig) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     children: js.Array[typings.phaser.Phaser.GameObjects.GameObject],
     config: GroupConfig
   ) = this()
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     children: js.Array[typings.phaser.Phaser.GameObjects.GameObject],
     config: GroupCreateConfig
   ) = this()
-  def this(scene: typings.phaser.Phaser.Scene, children: GroupConfig, config: GroupConfig) = this()
-  def this(scene: typings.phaser.Phaser.Scene, children: GroupConfig, config: GroupCreateConfig) = this()
-  def this(scene: typings.phaser.Phaser.Scene, children: GroupCreateConfig, config: GroupConfig) = this()
-  def this(scene: typings.phaser.Phaser.Scene, children: GroupCreateConfig, config: GroupCreateConfig) = this()
+  def this(scene: Scene, children: GroupConfig, config: GroupConfig) = this()
+  def this(scene: Scene, children: GroupConfig, config: GroupCreateConfig) = this()
+  def this(scene: Scene, children: GroupCreateConfig, config: GroupConfig) = this()
+  def this(scene: Scene, children: GroupCreateConfig, config: GroupCreateConfig) = this()
 }
 

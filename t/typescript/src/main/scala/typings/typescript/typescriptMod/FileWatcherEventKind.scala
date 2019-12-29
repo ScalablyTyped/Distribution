@@ -1,9 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.FileWatcherEventKind.Changed
-import typings.typescript.typescriptMod.FileWatcherEventKind.Created
-import typings.typescript.typescriptMod.FileWatcherEventKind.Deleted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

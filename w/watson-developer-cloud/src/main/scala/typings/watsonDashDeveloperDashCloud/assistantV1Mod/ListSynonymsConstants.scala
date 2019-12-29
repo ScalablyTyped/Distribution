@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort.SYNONYM
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort.UPDATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

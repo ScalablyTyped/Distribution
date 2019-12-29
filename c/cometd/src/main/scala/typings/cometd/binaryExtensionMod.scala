@@ -1,6 +1,5 @@
 package typings.cometd
 
-import typings.cometd.binaryExtensionMod.BinaryExtension
 import typings.cometd.cometdMod.Extension
 import typings.cometd.cometdMod.Listener
 import typings.cometd.cometdMod.Message

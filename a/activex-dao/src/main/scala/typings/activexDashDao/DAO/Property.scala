@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DAO.Property")
 @js.native
 class Property protected () extends js.Object {
-  var `DAO.Property_typekey`: Property = js.native
+  @JSName("DAO.Property_typekey")
+  var DAODotProperty_typekey: Property = js.native
   val Inherited: Boolean = js.native
   var Name: String = js.native
   @JSName("Properties")

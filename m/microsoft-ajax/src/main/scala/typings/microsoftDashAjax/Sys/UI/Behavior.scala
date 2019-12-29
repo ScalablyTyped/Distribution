@@ -23,14 +23,14 @@ class Behavior () extends Component {
   /**
     * Gets or sets the name of the Sys.UI.Behavior object.
     */
-  def get_name(): java.lang.String = js.native
+  def get_name(): String = js.native
   /*
     * Gets or sets the name of the Sys.UI.Behavior object.
     * If you do not explicitly set the name property, getting the property value sets it to its default value, which is equal to the type of the Behavior object. The name property remains null until it is accessed.
     * @param value
     *           A string value to use as the name.
     */
-  def set_name(value: java.lang.String): Unit = js.native
+  def set_name(value: String): Unit = js.native
 }
 
 /* static members */
@@ -42,7 +42,7 @@ object Behavior extends js.Object {
     * Gets a Sys.UI.Behavior instance with the specified name property from the specified HTML Document Object Model (DOM) element. This member a static member and can be invoked without creating an instance of the class.
     * @return The specified Behavior object, if found; otherwise, null.
     */
-  def getBehaviorByName(element: HTMLElement, name: java.lang.String): Behavior = js.native
+  def getBehaviorByName(element: HTMLElement, name: String): Behavior = js.native
   /**
     * Gets the Sys.UI.Behavior objects that are associated with the specified HTML Document Object Model (DOM) element. This member is static and can be invoked without creating an instance of the class.
     * @param element

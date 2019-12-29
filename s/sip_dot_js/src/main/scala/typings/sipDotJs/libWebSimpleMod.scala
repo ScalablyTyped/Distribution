@@ -6,12 +6,6 @@ import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext
 import typings.sipDotJs.libUAMod.UA
-import typings.sipDotJs.libWebSimpleMod.SimpleStatus
-import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_COMPLETED
-import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_CONNECTED
-import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_CONNECTING
-import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_NEW
-import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_NULL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

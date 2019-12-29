@@ -15,6 +15,7 @@ class ShapeNode protected () extends js.Object {
   val Parent: js.Any = js.native
   val Points: js.Any = js.native
   val SegmentType: MsoSegmentType = js.native
-  var `Word.ShapeNode_typekey`: ShapeNode = js.native
+  @JSName("Word.ShapeNode_typekey")
+  var WordDotShapeNode_typekey: ShapeNode = js.native
 }
 

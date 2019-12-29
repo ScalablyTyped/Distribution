@@ -1,5 +1,6 @@
 package typings.cesium
 
+import typings.cesium.cesiumBooleans.`false`
 import typings.cesium.cesiumMod.Clock
 import typings.cesium.cesiumMod.Globe
 import typings.cesium.cesiumMod.ImageryProvider
@@ -10,7 +11,6 @@ import typings.cesium.cesiumMod.ShadowMode
 import typings.cesium.cesiumMod.SkyAtmosphere
 import typings.cesium.cesiumMod.SkyBox
 import typings.cesium.cesiumMod.TerrainProvider
-import typings.cesium.cesiumNumbers.`false`
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

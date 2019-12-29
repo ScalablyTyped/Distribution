@@ -23,7 +23,7 @@ object googleapisDashCommonStrings {
   sealed trait boolean extends SchemaType
   
   @js.native
-  sealed trait `https://oauth2DOTgoogleapisDOTcom/tokeninfo` extends js.Object
+  sealed trait httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo extends js.Object
   
   @js.native
   sealed trait int32 extends js.Object
@@ -48,7 +48,7 @@ object googleapisDashCommonStrings {
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
-  def `https://oauth2DOTgoogleapisDOTcom/tokeninfo`: `https://oauth2DOTgoogleapisDOTcom/tokeninfo` = "https://oauth2.googleapis.com/tokeninfo".asInstanceOf[`https://oauth2DOTgoogleapisDOTcom/tokeninfo`]
+  def httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo: httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo = "https://oauth2.googleapis.com/tokeninfo".asInstanceOf[httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo]
   @scala.inline
   def int32: int32 = "int32".asInstanceOf[int32]
   @scala.inline

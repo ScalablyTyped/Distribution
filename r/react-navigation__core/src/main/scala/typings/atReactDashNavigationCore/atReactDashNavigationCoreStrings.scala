@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object atReactDashNavigationCoreStrings {
   @js.native
-  sealed trait `Navigation/JUMP_TO` extends js.Object
+  sealed trait NavigationSlashJUMP_TO extends js.Object
   
   @js.native
   sealed trait dark extends ThemeContextType
@@ -16,7 +16,7 @@ object atReactDashNavigationCoreStrings {
   sealed trait light extends ThemeContextType
   
   @scala.inline
-  def `Navigation/JUMP_TO`: `Navigation/JUMP_TO` = "Navigation/JUMP_TO".asInstanceOf[`Navigation/JUMP_TO`]
+  def NavigationSlashJUMP_TO: NavigationSlashJUMP_TO = "Navigation/JUMP_TO".asInstanceOf[NavigationSlashJUMP_TO]
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   @scala.inline

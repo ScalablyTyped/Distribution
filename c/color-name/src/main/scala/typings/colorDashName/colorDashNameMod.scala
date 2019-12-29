@@ -1,6 +1,5 @@
 package typings.colorDashName
 
-import typings.colorDashName.colorDashNameMod.RGB
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

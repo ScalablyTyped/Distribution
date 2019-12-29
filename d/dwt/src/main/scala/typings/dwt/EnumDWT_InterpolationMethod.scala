@@ -1,10 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_InterpolationMethod.IM_BESTQUALITY
-import typings.dwt.EnumDWT_InterpolationMethod.IM_BICUBIC
-import typings.dwt.EnumDWT_InterpolationMethod.IM_BILINEAR
-import typings.dwt.EnumDWT_InterpolationMethod.IM_NEARESTNEIGHBOUR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

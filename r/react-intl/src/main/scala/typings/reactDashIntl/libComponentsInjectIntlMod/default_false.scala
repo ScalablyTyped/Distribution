@@ -3,7 +3,7 @@ package typings.reactDashIntl.libComponentsInjectIntlMod
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.FC
 import typings.reactDashIntl.Anon_WrappedComponent
-import typings.reactDashIntl.reactDashIntlNumbers.`false`
+import typings.reactDashIntl.reactDashIntlBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

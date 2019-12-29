@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.XSLTemplate60")
 @js.native
 class XSLTemplate60 protected () extends js.Object {
-  var `MSXML2.XSLTemplate60_typekey`: XSLTemplate60 = js.native
+  @JSName("MSXML2.XSLTemplate60_typekey")
+  var MSXML2DotXSLTemplate60_typekey: XSLTemplate60 = js.native
   /** stylesheet to use with processors */
   var stylesheet: IXMLDOMNode = js.native
   /** create a new processor object */

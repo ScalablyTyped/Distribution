@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseContainerSetContainerMod.SetContainer
-import typings.tstl.baseContainerSetElementVectorMod.SetElementVector
 import typings.tstl.baseContainerSetElementVectorMod.SetElementVector.Iterator
 import typings.tstl.baseContainerSetElementVectorMod.SetElementVector.ReverseIterator
 import typings.tstl.baseContainerVectorContainerMod.VectorContainer

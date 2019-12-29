@@ -3,7 +3,6 @@ package typings.reactDashSpinners
 import typings.react.reactMod.Component
 import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps
 import typings.reactDashSpinners.interfacesMod.StyleFunctionWithIndex
-import typings.reactDashSpinners.scaleLoaderMod.Loader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

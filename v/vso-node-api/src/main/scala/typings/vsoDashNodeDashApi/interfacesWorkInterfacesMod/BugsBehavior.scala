@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BugsBehavior.AsRequirements
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BugsBehavior.AsTasks
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BugsBehavior.Off
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

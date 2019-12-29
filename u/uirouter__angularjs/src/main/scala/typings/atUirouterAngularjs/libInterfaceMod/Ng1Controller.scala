@@ -83,6 +83,6 @@ trait Ng1Controller extends js.Object {
     * });
     * ```
     */
-  def uiOnParamsChanged(newValues: js.Any, $transition$: Transition): Unit = js.native
+  def uiOnParamsChanged(newValues: js.Any, DollartransitionDollar: Transition): Unit = js.native
 }
 

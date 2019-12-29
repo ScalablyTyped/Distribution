@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ShapeProperties extends js.Object {
   var contentAlignment: js.UndefOr[String] = js.undefined
-  var link: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Link] = js.undefined
+  var link: js.UndefOr[Link] = js.undefined
   var outline: js.UndefOr[Outline] = js.undefined
   var shadow: js.UndefOr[Shadow] = js.undefined
   var shapeBackgroundFill: js.UndefOr[ShapeBackgroundFill] = js.undefined
@@ -16,7 +16,7 @@ object ShapeProperties {
   @scala.inline
   def apply(
     contentAlignment: String = null,
-    link: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Link = null,
+    link: Link = null,
     outline: Outline = null,
     shadow: Shadow = null,
     shapeBackgroundFill: ShapeBackgroundFill = null

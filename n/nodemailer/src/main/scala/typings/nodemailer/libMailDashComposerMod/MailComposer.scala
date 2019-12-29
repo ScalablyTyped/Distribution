@@ -2,7 +2,7 @@ package typings.nodemailer.libMailDashComposerMod
 
 import typings.nodemailer.libMailerMod.Attachment
 import typings.nodemailer.libMailerMod.Options
-import typings.nodemailer.nodemailerNumbers.`false`
+import typings.nodemailer.nodemailerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

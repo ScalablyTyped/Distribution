@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISpinner
-  extends typings.extjs.Ext.form.field.ITrigger {
+trait ISpinner extends ITrigger {
   /** [Config Option] (Boolean) */
   var keyNavEnabled: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -40,7 +39,7 @@ trait ISpinner
 object ISpinner {
   @scala.inline
   def apply(
-    ITrigger: typings.extjs.Ext.form.field.ITrigger = null,
+    ITrigger: ITrigger = null,
     keyNavEnabled: js.UndefOr[Boolean] = js.undefined,
     mouseWheelEnabled: js.UndefOr[Boolean] = js.undefined,
     onSpinDown: () => Unit = null,

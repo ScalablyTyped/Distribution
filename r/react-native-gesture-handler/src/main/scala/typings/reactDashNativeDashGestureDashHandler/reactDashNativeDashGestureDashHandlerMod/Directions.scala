@@ -1,10 +1,6 @@
 package typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.Directions.DOWN
-import typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.Directions.LEFT
-import typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.Directions.RIGHT
-import typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.Directions.UP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

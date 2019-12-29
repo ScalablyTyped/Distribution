@@ -1,10 +1,6 @@
 package typings.relayDashCompiler
 
 import typings.graphql.graphqlMod.GraphQLSchema
-import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.CompilerContextDocument
-import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.GraphQLCompilerContext
-import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.IRTransform
-import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.IRValidation
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Fragment
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Location
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Root

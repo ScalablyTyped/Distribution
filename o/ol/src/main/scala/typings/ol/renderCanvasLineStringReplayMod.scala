@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.renderCanvasLineStringReplayMod.CanvasLineStringReplay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

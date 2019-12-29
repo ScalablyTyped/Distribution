@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
-import typings.atPulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.rbacDotauthorizationDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.RoleRef
 import typings.atPulumiKubernetes.typesOutputMod.rbac.v1alpha1.Subject
@@ -39,7 +38,7 @@ object rbacV1alpha1ClusterRoleBindingMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`] = js.native
+    val apiVersion: Output[rbacDotauthorizationDotk8sDotioSlashv1alpha1] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In

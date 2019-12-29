@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollatorOptions extends js.Object {
-  var caseFirst: js.UndefOr[java.lang.String] = js.undefined
-  var ignorePunctuation: js.UndefOr[scala.Boolean] = js.undefined
-  var localeMatcher: js.UndefOr[java.lang.String] = js.undefined
-  var numeric: js.UndefOr[scala.Boolean] = js.undefined
-  var sensitivity: js.UndefOr[java.lang.String] = js.undefined
-  var usage: js.UndefOr[java.lang.String] = js.undefined
+  var caseFirst: js.UndefOr[String] = js.undefined
+  var ignorePunctuation: js.UndefOr[Boolean] = js.undefined
+  var localeMatcher: js.UndefOr[String] = js.undefined
+  var numeric: js.UndefOr[Boolean] = js.undefined
+  var sensitivity: js.UndefOr[String] = js.undefined
+  var usage: js.UndefOr[String] = js.undefined
 }
 
 object CollatorOptions {
   @scala.inline
   def apply(
-    caseFirst: java.lang.String = null,
-    ignorePunctuation: js.UndefOr[scala.Boolean] = js.undefined,
-    localeMatcher: java.lang.String = null,
-    numeric: js.UndefOr[scala.Boolean] = js.undefined,
-    sensitivity: java.lang.String = null,
-    usage: java.lang.String = null
+    caseFirst: String = null,
+    ignorePunctuation: js.UndefOr[Boolean] = js.undefined,
+    localeMatcher: String = null,
+    numeric: js.UndefOr[Boolean] = js.undefined,
+    sensitivity: String = null,
+    usage: String = null
   ): CollatorOptions = {
     val __obj = js.Dynamic.literal()
     if (caseFirst != null) __obj.updateDynamic("caseFirst")(caseFirst.asInstanceOf[js.Any])

@@ -17,7 +17,7 @@ class PropertyChangedEventArgs protected () extends EventArgs {
     * @param propertyName
     *           The name of the property that changed.
     */
-  def this(propertyName: java.lang.String) = this()
+  def this(propertyName: String) = this()
   //#endregion
   //#region Methods
   /**
@@ -25,6 +25,6 @@ class PropertyChangedEventArgs protected () extends EventArgs {
     * Use the propertyName property to determine the name of the property that changed.
     * @return A string that contains the name of the property that changed.
     */
-  def propertyName(): java.lang.String = js.native
+  def propertyName(): String = js.native
 }
 

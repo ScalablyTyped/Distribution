@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.BOTTOM
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.RIGHT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.TOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

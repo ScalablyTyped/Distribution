@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object types {
-  type ChromeSettingChangedEvent = typings.chromeDashApps.chrome.events.Event[DetailsCallback]
+  import typings.chromeDashApps.chrome.events.Event
+
+  type ChromeSettingChangedEvent = Event[DetailsCallback]
   /**
     * @param details Details of the currently effective value.
     */

@@ -2,10 +2,6 @@ package typings.googleDashLibphonenumber.libphonenumber
 
 import org.scalablytyped.runtime.TopLevel
 import typings.googleDashLibphonenumber.libphonenumber.PhoneNumber.CountryCodeSource
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumber.CountryCodeSource.FROM_DEFAULT_COUNTRY
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumber.CountryCodeSource.FROM_NUMBER_WITHOUT_PLUS_SIGN
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumber.CountryCodeSource.FROM_NUMBER_WITH_IDD
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumber.CountryCodeSource.FROM_NUMBER_WITH_PLUS_SIGN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -57,19 +57,29 @@ trait VictoryTooltipProps extends js.Object {
     */
   var flyoutComponent: js.UndefOr[ReactElement] = js.undefined
   /**
+    * The flyoutHeight prop defines the height of the tooltip flyout. This prop may be given as a positive number or a function of datum. If this prop
+    * is not set, flyoutHeight will be determined based on an approximate text size calculated from the text and style props provided to VictoryTooltip.
+    */
+  var flyoutHeight: js.UndefOr[NumberOrCallback] = js.undefined
+  /**
     * The style prop applies SVG style properties to the rendered flyout container. These props will be passed to the flyoutComponent.
     */
   var flyoutStyle: js.UndefOr[VictoryStyleObject] = js.undefined
+  /**
+    * The flyoutWidth prop defines the width of the tooltip flyout. This prop may be given as a positive number or a function of datum. If this prop is
+    * not set, flyoutWidth will be determined based on an approximate text size calculated from the text and style props provided to VictoryTooltip.
+    */
+  var flyoutWidth: js.UndefOr[NumberOrCallback] = js.undefined
   /**
     * The groupComponent prop takes a component instance which will be used to create group elements for use within container elements. This prop defaults to a <g> tag.
     * @default groupComponent={<g/>}
     */
   var groupComponent: js.UndefOr[ReactElement] = js.undefined
   /**
-    * The height prop defines the height of the tooltip flyout. This prop may be given as a positive number or a function of datum.
-    * If this prop is not set, height will be determined based on an approximate text size calculated from the text and style props provided to VictoryTooltip.
+    * This prop refers to the height of the svg that VictoryLabel is rendered within. This prop is passed from parents of VictoryLabel, and should not be set
+    * manually. In versions before ^33.0.0 this prop referred to the height of the tooltip flyout. Please use flyoutHeight instead
     */
-  var height: js.UndefOr[NumberOrCallback] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
   /**
     * The horizontal prop determines whether to plot the flyouts to the left / right of the (x, y) coordinate rather than top / bottom.
     * This is useful when an orientation prop is not provided, and data will determine the default orientation. i.e.
@@ -94,7 +104,7 @@ trait VictoryTooltipProps extends js.Object {
     * This prop can be given as “top”, “bottom”, “left”, “right”, or as a function of datum that returns one of these values.
     * If this prop is not provided it will be determined from the sign of the datum, and the value of the horizontal prop.
     */
-  var orientation: js.UndefOr[OrientationTypes] = js.undefined
+  var orientation: js.UndefOr[OrientationTypes | VictoryNumberCallback] = js.undefined
   /**
     * The pointerLength prop determines the length of the triangular pointer extending from the flyout. This prop may be given as a positive number or a function of datum.
     */
@@ -124,10 +134,10 @@ trait VictoryTooltipProps extends js.Object {
     */
   var theme: js.UndefOr[VictoryThemeDefinition] = js.undefined
   /**
-    * The width prop defines the width of the tooltip flyout. This prop may be given as a positive number or a function of datum.
-    * If this prop is not set, width will be determined based on an approximate text size calculated from the text and style props provided to VictoryTooltip.
+    * This prop refers to the width of the svg that VictoryLabel is rendered within. This prop is passed from parents of VictoryLabel,
+    * and should not be set manually. In versions before ^33.0.0 this prop referred to the width of the tooltip flyout. Please use flyoutWidth instead
     */
-  var width: js.UndefOr[NumberOrCallback] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
   /**
     * The x prop defines the x coordinate to use as a basis for horizontal positioning.
     */
@@ -151,20 +161,22 @@ object VictoryTooltipProps {
     dy: StringOrNumberOrCallback = null,
     events: js.Object = null,
     flyoutComponent: ReactElement = null,
+    flyoutHeight: NumberOrCallback = null,
     flyoutStyle: VictoryStyleObject = null,
+    flyoutWidth: NumberOrCallback = null,
     groupComponent: ReactElement = null,
-    height: NumberOrCallback = null,
+    height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     index: Double | String = null,
     labelComponent: ReactElement = null,
-    orientation: OrientationTypes = null,
+    orientation: OrientationTypes | VictoryNumberCallback = null,
     pointerLength: NumberOrCallback = null,
     pointerWidth: NumberOrCallback = null,
     renderInPortal: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     text: StringOrNumberOrCallback | (js.Array[Double | String]) = null,
     theme: VictoryThemeDefinition = null,
-    width: NumberOrCallback = null,
+    width: Int | Double = null,
     x: Int | Double = null,
     y: Int | Double = null
   ): VictoryTooltipProps = {
@@ -179,7 +191,9 @@ object VictoryTooltipProps {
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (flyoutComponent != null) __obj.updateDynamic("flyoutComponent")(flyoutComponent.asInstanceOf[js.Any])
+    if (flyoutHeight != null) __obj.updateDynamic("flyoutHeight")(flyoutHeight.asInstanceOf[js.Any])
     if (flyoutStyle != null) __obj.updateDynamic("flyoutStyle")(flyoutStyle.asInstanceOf[js.Any])
+    if (flyoutWidth != null) __obj.updateDynamic("flyoutWidth")(flyoutWidth.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])

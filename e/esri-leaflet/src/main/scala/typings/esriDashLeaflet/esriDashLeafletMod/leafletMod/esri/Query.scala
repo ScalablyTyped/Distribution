@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("leaflet", "esri.Query")
 @js.native
-class Query protected ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Task {
+class Query protected () extends Task {
   def this(options: QueryOptions) = this()
   /**
     * Queries features from the service that have a bounding box that intersects the bounding box of the passed
@@ -169,6 +168,6 @@ object query extends js.Object {
     * Note Depending on the type of service you are querying (Feature Layer, Map Service, Image Service) and the
     * version of ArcGIS Server that hosts the service some of these options may not be available.
     */
-  def apply(options: QueryOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Query = js.native
+  def apply(options: QueryOptions): Query = js.native
 }
 

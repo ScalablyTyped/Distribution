@@ -19,7 +19,8 @@ class Columns protected () extends js.Object {
   var PreferredWidthType: WdPreferredWidthType = js.native
   val Shading: typings.activexDashWord.Word.Shading = js.native
   var Width: Double = js.native
-  var `Word.Columns_typekey`: Columns = js.native
+  @JSName("Word.Columns_typekey")
+  var WordDotColumns_typekey: Columns = js.native
   def Add(): Column = js.native
   def Add(BeforeColumn: js.Any): Column = js.native
   def AutoFit(): Unit = js.native

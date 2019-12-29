@@ -1,10 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.DiagnosticSeverity.Error
-import typings.vscode.vscodeMod.DiagnosticSeverity.Hint
-import typings.vscode.vscodeMod.DiagnosticSeverity.Information
-import typings.vscode.vscodeMod.DiagnosticSeverity.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

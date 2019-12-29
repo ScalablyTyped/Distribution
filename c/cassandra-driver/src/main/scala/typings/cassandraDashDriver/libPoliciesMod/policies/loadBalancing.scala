@@ -5,7 +5,6 @@ import typings.cassandraDashDriver.cassandraDashDriverMod.EmptyCallback
 import typings.cassandraDashDriver.cassandraDashDriverMod.ExecutionOptions
 import typings.cassandraDashDriver.cassandraDashDriverMod.Host
 import typings.cassandraDashDriver.cassandraDashDriverMod.HostMap
-import typings.cassandraDashDriver.libPoliciesMod.policies.loadBalancing.LoadBalancingPolicy
 import typings.cassandraDashDriver.libTypesMod.types.distance
 import typings.std.Error
 import typings.std.Iterator

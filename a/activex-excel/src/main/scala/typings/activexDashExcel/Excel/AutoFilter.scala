@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class AutoFilter protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.AutoFilter_typekey`: AutoFilter = js.native
+  @JSName("Excel.AutoFilter_typekey")
+  var ExcelDotAutoFilter_typekey: AutoFilter = js.native
   val FilterMode: Boolean = js.native
   @JSName("Filters")
   val Filters_Original: Filters = js.native

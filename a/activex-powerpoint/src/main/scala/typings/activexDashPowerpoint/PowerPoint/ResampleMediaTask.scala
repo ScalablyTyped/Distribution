@@ -12,7 +12,8 @@ class ResampleMediaTask protected () extends js.Object {
   val ContainerType: String = js.native
   val IsEmbedded: Boolean = js.native
   val IsLinked: Boolean = js.native
-  var `PowerPoint.ResampleMediaTask_typekey`: ResampleMediaTask = js.native
+  @JSName("PowerPoint.ResampleMediaTask_typekey")
+  var PowerPointDotResampleMediaTask_typekey: ResampleMediaTask = js.native
   val SampleHeight: Double = js.native
   val SampleWidth: Double = js.native
   val Shape: typings.activexDashPowerpoint.PowerPoint.Shape = js.native

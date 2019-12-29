@@ -75,7 +75,7 @@ object atWordpressRichDashTextStrings {
   sealed trait colgroup extends js.Object
   
   @js.native
-  sealed trait `core/rich-text` extends js.Object
+  sealed trait `coreSlashrich-text` extends js.Object
   
   @js.native
   sealed trait data extends js.Object
@@ -412,7 +412,7 @@ object atWordpressRichDashTextStrings {
   @scala.inline
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   @scala.inline
-  def `core/rich-text`: `core/rich-text` = "core/rich-text".asInstanceOf[`core/rich-text`]
+  def `coreSlashrich-text`: `coreSlashrich-text` = "core/rich-text".asInstanceOf[`coreSlashrich-text`]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline

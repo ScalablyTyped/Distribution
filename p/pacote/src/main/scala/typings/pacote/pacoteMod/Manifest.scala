@@ -1,7 +1,7 @@
 package typings.pacote.pacoteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pacote.pacoteNumbers.`false`
+import typings.pacote.pacoteBooleans.`false`
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

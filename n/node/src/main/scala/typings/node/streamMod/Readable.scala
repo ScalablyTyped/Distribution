@@ -2,7 +2,6 @@ package typings.node.streamMod
 
 import typings.node.Anon_End
 import typings.node.BufferEncoding
-import typings.node.Error
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.nodeStrings.close
@@ -11,6 +10,7 @@ import typings.node.nodeStrings.end
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.readable
 import typings.std.AsyncIterable
+import typings.std.Error
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -105,7 +105,7 @@ class Readable ()
   @JSName("prependOnceListener")
   def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   def push(chunk: js.Any): Boolean = js.native
-  def push(chunk: js.Any, encoding: java.lang.String): Boolean = js.native
+  def push(chunk: js.Any, encoding: String): Boolean = js.native
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")

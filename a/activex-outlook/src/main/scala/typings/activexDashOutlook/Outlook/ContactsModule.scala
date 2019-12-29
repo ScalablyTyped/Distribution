@@ -12,7 +12,8 @@ class ContactsModule protected () extends js.Object {
   val Name: String = js.native
   val NavigationGroups: typings.activexDashOutlook.Outlook.NavigationGroups = js.native
   val NavigationModuleType: OlNavigationModuleType = js.native
-  var `Outlook.ContactsModule_typekey`: ContactsModule = js.native
+  @JSName("Outlook.ContactsModule_typekey")
+  var OutlookDotContactsModule_typekey: ContactsModule = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

@@ -3,33 +3,33 @@ package typings.angular.angularMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.Anon_Args
 import typings.angular.angularMod._Global_.Function
-import typings.angular.angularStrings.DOLLARanchorScroll
-import typings.angular.angularStrings.DOLLARcacheFactory
-import typings.angular.angularStrings.DOLLARcompile
-import typings.angular.angularStrings.DOLLARcontroller
-import typings.angular.angularStrings.DOLLARdocument
-import typings.angular.angularStrings.DOLLARexceptionHandler
-import typings.angular.angularStrings.DOLLARfilter
-import typings.angular.angularStrings.DOLLARhttp
-import typings.angular.angularStrings.DOLLARhttpBackend
-import typings.angular.angularStrings.DOLLARhttpParamSerializer
-import typings.angular.angularStrings.DOLLARhttpParamSerializerJQLike
-import typings.angular.angularStrings.DOLLARinterpolate
-import typings.angular.angularStrings.DOLLARinterval
-import typings.angular.angularStrings.DOLLARlocale
-import typings.angular.angularStrings.DOLLARlocation
-import typings.angular.angularStrings.DOLLARlog
-import typings.angular.angularStrings.DOLLARparse
-import typings.angular.angularStrings.DOLLARq
-import typings.angular.angularStrings.DOLLARrootElement
-import typings.angular.angularStrings.DOLLARrootScope
-import typings.angular.angularStrings.DOLLARsce
-import typings.angular.angularStrings.DOLLARsceDelegate
-import typings.angular.angularStrings.DOLLARtemplateCache
-import typings.angular.angularStrings.DOLLARtemplateRequest
-import typings.angular.angularStrings.DOLLARtimeout
-import typings.angular.angularStrings.DOLLARwindow
-import typings.angular.angularStrings.DOLLARxhrFactory
+import typings.angular.angularStrings.$anchorScroll
+import typings.angular.angularStrings.$cacheFactory
+import typings.angular.angularStrings.$compile
+import typings.angular.angularStrings.$controller
+import typings.angular.angularStrings.$document
+import typings.angular.angularStrings.$exceptionHandler
+import typings.angular.angularStrings.$filter
+import typings.angular.angularStrings.$http
+import typings.angular.angularStrings.$httpBackend
+import typings.angular.angularStrings.$httpParamSerializer
+import typings.angular.angularStrings.$httpParamSerializerJQLike
+import typings.angular.angularStrings.$interpolate
+import typings.angular.angularStrings.$interval
+import typings.angular.angularStrings.$locale
+import typings.angular.angularStrings.$location
+import typings.angular.angularStrings.$log
+import typings.angular.angularStrings.$parse
+import typings.angular.angularStrings.$q
+import typings.angular.angularStrings.$rootElement
+import typings.angular.angularStrings.$rootScope
+import typings.angular.angularStrings.$sce
+import typings.angular.angularStrings.$sceDelegate
+import typings.angular.angularStrings.$templateCache
+import typings.angular.angularStrings.$templateRequest
+import typings.angular.angularStrings.$timeout
+import typings.angular.angularStrings.$window
+import typings.angular.angularStrings.$xhrFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,59 +55,59 @@ object auto extends js.Object {
     def get[T](name: String): T = js.native
     def get[T](name: String, caller: String): T = js.native
     @JSName("get")
-    def get_anchorScroll(name: DOLLARanchorScroll): IAnchorScrollService = js.native
+    def get_anchorScroll(name: $anchorScroll): IAnchorScrollService = js.native
     @JSName("get")
-    def get_cacheFactory(name: DOLLARcacheFactory): ICacheFactoryService = js.native
+    def get_cacheFactory(name: $cacheFactory): ICacheFactoryService = js.native
     @JSName("get")
-    def get_compile(name: DOLLARcompile): ICompileService = js.native
+    def get_compile(name: $compile): ICompileService = js.native
     @JSName("get")
-    def get_controller(name: DOLLARcontroller): IControllerService = js.native
+    def get_controller(name: $controller): IControllerService = js.native
     @JSName("get")
-    def get_document(name: DOLLARdocument): IDocumentService = js.native
+    def get_document(name: $document): IDocumentService = js.native
     @JSName("get")
-    def get_exceptionHandler(name: DOLLARexceptionHandler): IExceptionHandlerService = js.native
+    def get_exceptionHandler(name: $exceptionHandler): IExceptionHandlerService = js.native
     @JSName("get")
-    def get_filter(name: DOLLARfilter): IFilterService = js.native
+    def get_filter(name: $filter): IFilterService = js.native
     @JSName("get")
-    def get_http(name: DOLLARhttp): IHttpService = js.native
+    def get_http(name: $http): IHttpService = js.native
     @JSName("get")
-    def get_httpBackend(name: DOLLARhttpBackend): IHttpBackendService = js.native
+    def get_httpBackend(name: $httpBackend): IHttpBackendService = js.native
     @JSName("get")
-    def get_httpParamSerializer(name: DOLLARhttpParamSerializer): IHttpParamSerializer = js.native
+    def get_httpParamSerializer(name: $httpParamSerializer): IHttpParamSerializer = js.native
     @JSName("get")
-    def get_httpParamSerializerJQLike(name: DOLLARhttpParamSerializerJQLike): IHttpParamSerializer = js.native
+    def get_httpParamSerializerJQLike(name: $httpParamSerializerJQLike): IHttpParamSerializer = js.native
     @JSName("get")
-    def get_interpolate(name: DOLLARinterpolate): IInterpolateService = js.native
+    def get_interpolate(name: $interpolate): IInterpolateService = js.native
     @JSName("get")
-    def get_interval(name: DOLLARinterval): IIntervalService = js.native
+    def get_interval(name: $interval): IIntervalService = js.native
     @JSName("get")
-    def get_locale(name: DOLLARlocale): ILocaleService = js.native
+    def get_locale(name: $locale): ILocaleService = js.native
     @JSName("get")
-    def get_location(name: DOLLARlocation): ILocationService = js.native
+    def get_location(name: $location): ILocationService = js.native
     @JSName("get")
-    def get_log(name: DOLLARlog): ILogService = js.native
+    def get_log(name: $log): ILogService = js.native
     @JSName("get")
-    def get_parse(name: DOLLARparse): IParseService = js.native
+    def get_parse(name: $parse): IParseService = js.native
     @JSName("get")
-    def get_q(name: DOLLARq): IQService = js.native
+    def get_q(name: $q): IQService = js.native
     @JSName("get")
-    def get_rootElement(name: DOLLARrootElement): IRootElementService = js.native
+    def get_rootElement(name: $rootElement): IRootElementService = js.native
     @JSName("get")
-    def get_rootScope(name: DOLLARrootScope): IRootScopeService = js.native
+    def get_rootScope(name: $rootScope): IRootScopeService = js.native
     @JSName("get")
-    def get_sce(name: DOLLARsce): ISCEService = js.native
+    def get_sce(name: $sce): ISCEService = js.native
     @JSName("get")
-    def get_sceDelegate(name: DOLLARsceDelegate): ISCEDelegateService = js.native
+    def get_sceDelegate(name: $sceDelegate): ISCEDelegateService = js.native
     @JSName("get")
-    def get_templateCache(name: DOLLARtemplateCache): ITemplateCacheService = js.native
+    def get_templateCache(name: $templateCache): ITemplateCacheService = js.native
     @JSName("get")
-    def get_templateRequest(name: DOLLARtemplateRequest): ITemplateRequestService = js.native
+    def get_templateRequest(name: $templateRequest): ITemplateRequestService = js.native
     @JSName("get")
-    def get_timeout(name: DOLLARtimeout): ITimeoutService = js.native
+    def get_timeout(name: $timeout): ITimeoutService = js.native
     @JSName("get")
-    def get_window(name: DOLLARwindow): IWindowService = js.native
+    def get_window(name: $window): IWindowService = js.native
     @JSName("get")
-    def get_xhrFactory[T](name: DOLLARxhrFactory): IXhrFactory[T] = js.native
+    def get_xhrFactory[T](name: $xhrFactory): IXhrFactory[T] = js.native
     def has(name: String): Boolean = js.native
     def instantiate[T](typeConstructor: Anon_Args[T]): T = js.native
     def instantiate[T](typeConstructor: Anon_Args[T], locals: js.Any): T = js.native

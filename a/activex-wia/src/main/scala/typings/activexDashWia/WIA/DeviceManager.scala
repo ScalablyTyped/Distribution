@@ -14,7 +14,8 @@ class DeviceManager protected () extends js.Object {
   /** A collection of all imaging devices connected to this computer */
   @JSName("DeviceInfos")
   val DeviceInfos_Original: DeviceInfos = js.native
-  var `WIA.DeviceManager_typekey`: DeviceManager = js.native
+  @JSName("WIA.DeviceManager_typekey")
+  var WIADotDeviceManager_typekey: DeviceManager = js.native
   def DeviceInfos(Index: String): DeviceInfo = js.native
   /** Returns the specified item in the collection either by position or Device ID */
   /** A collection of all imaging devices connected to this computer */

@@ -159,19 +159,18 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
   ): Double = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth. If no depth is provided, flat method defaults to the depth of 1.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](): js.Array[_] = js.native
-  def flat[U](depth: Double): js.Array[_] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
     *
     * @param depth The maximum recursion depth
     */
-  def flat[U](`this`: js.Array[js.Array[U]]): js.Array[U] = js.native
+  /**
+    * Returns a new array with all sub-array elements concatenated into it recursively up to the
+    * specified depth. If no depth is provided, flat method defaults to the depth of 1.
+    *
+    * @param depth The maximum recursion depth
+    */
+  def flat[U](): js.Array[U] = js.native
+  def flat[U](depth: Double): js.Array[_] = js.native
   /**
     * Calls a defined callback function on each element of an array. Then, flattens the result into
     * a new array.
@@ -208,9 +207,9 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_0[U](`this`: js.Array[U], depth: `0`): js.Array[U] = js.native
+  def flat_0[U](depth: `0`): js.Array[U] = js.native
   @JSName("flat")
-  def flat_1[U](`this`: js.Array[js.Array[U]], depth: `1`): js.Array[U] = js.native
+  def flat_1[U](depth: `1`): js.Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -218,7 +217,7 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_2[U](`this`: js.Array[js.Array[js.Array[U]]], depth: `2`): js.Array[U] = js.native
+  def flat_2[U](depth: `2`): js.Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -226,7 +225,7 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_3[U](`this`: js.Array[js.Array[js.Array[js.Array[U]]]], depth: `3`): js.Array[U] = js.native
+  def flat_3[U](depth: `3`): js.Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -234,7 +233,7 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_4[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]], depth: `4`): js.Array[U] = js.native
+  def flat_4[U](depth: `4`): js.Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -242,7 +241,7 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_5[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]], depth: `5`): js.Array[U] = js.native
+  def flat_5[U](depth: `5`): js.Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -250,7 +249,7 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_6[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]]], depth: `6`): js.Array[U] = js.native
+  def flat_6[U](depth: `6`): js.Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -258,10 +257,7 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
     * @param depth The maximum recursion depth
     */
   @JSName("flat")
-  def flat_7[U](
-    `this`: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]]]],
-    depth: `7`
-  ): js.Array[U] = js.native
+  def flat_7[U](depth: `7`): js.Array[U] = js.native
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.

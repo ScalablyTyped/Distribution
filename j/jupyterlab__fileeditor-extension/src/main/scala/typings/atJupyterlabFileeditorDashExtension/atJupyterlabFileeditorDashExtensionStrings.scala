@@ -9,40 +9,40 @@ object atJupyterlabFileeditorDashExtensionStrings {
   sealed trait Editor extends js.Object
   
   @js.native
-  sealed trait `fileeditor:change-font-size` extends js.Object
+  sealed trait `fileeditorColonchange-font-size` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:change-tabs` extends js.Object
+  sealed trait `fileeditorColonchange-tabs` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:create-console` extends js.Object
+  sealed trait `fileeditorColoncreate-console` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:create-new` extends js.Object
+  sealed trait `fileeditorColoncreate-new` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:create-new-markdown-file` extends js.Object
+  sealed trait `fileeditorColoncreate-new-markdown-file` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:markdown-preview` extends js.Object
+  sealed trait `fileeditorColonmarkdown-preview` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:run-all` extends js.Object
+  sealed trait `fileeditorColonrun-all` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:run-code` extends js.Object
+  sealed trait `fileeditorColonrun-code` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:toggle-autoclosing-brackets` extends js.Object
+  sealed trait `fileeditorColontoggle-autoclosing-brackets` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:toggle-line-numbers` extends js.Object
+  sealed trait `fileeditorColontoggle-line-numbers` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:toggle-line-wrap` extends js.Object
+  sealed trait `fileeditorColontoggle-line-wrap` extends js.Object
   
   @js.native
-  sealed trait `fileeditor:toggle-match-brackets` extends js.Object
+  sealed trait `fileeditorColontoggle-match-brackets` extends js.Object
   
   @js.native
   sealed trait `jp-MarkdownIcon` extends js.Object
@@ -53,29 +53,29 @@ object atJupyterlabFileeditorDashExtensionStrings {
   @scala.inline
   def Editor: Editor = "Editor".asInstanceOf[Editor]
   @scala.inline
-  def `fileeditor:change-font-size`: `fileeditor:change-font-size` = "fileeditor:change-font-size".asInstanceOf[`fileeditor:change-font-size`]
+  def `fileeditorColonchange-font-size`: `fileeditorColonchange-font-size` = "fileeditor:change-font-size".asInstanceOf[`fileeditorColonchange-font-size`]
   @scala.inline
-  def `fileeditor:change-tabs`: `fileeditor:change-tabs` = "fileeditor:change-tabs".asInstanceOf[`fileeditor:change-tabs`]
+  def `fileeditorColonchange-tabs`: `fileeditorColonchange-tabs` = "fileeditor:change-tabs".asInstanceOf[`fileeditorColonchange-tabs`]
   @scala.inline
-  def `fileeditor:create-console`: `fileeditor:create-console` = "fileeditor:create-console".asInstanceOf[`fileeditor:create-console`]
+  def `fileeditorColoncreate-console`: `fileeditorColoncreate-console` = "fileeditor:create-console".asInstanceOf[`fileeditorColoncreate-console`]
   @scala.inline
-  def `fileeditor:create-new`: `fileeditor:create-new` = "fileeditor:create-new".asInstanceOf[`fileeditor:create-new`]
+  def `fileeditorColoncreate-new`: `fileeditorColoncreate-new` = "fileeditor:create-new".asInstanceOf[`fileeditorColoncreate-new`]
   @scala.inline
-  def `fileeditor:create-new-markdown-file`: `fileeditor:create-new-markdown-file` = "fileeditor:create-new-markdown-file".asInstanceOf[`fileeditor:create-new-markdown-file`]
+  def `fileeditorColoncreate-new-markdown-file`: `fileeditorColoncreate-new-markdown-file` = "fileeditor:create-new-markdown-file".asInstanceOf[`fileeditorColoncreate-new-markdown-file`]
   @scala.inline
-  def `fileeditor:markdown-preview`: `fileeditor:markdown-preview` = "fileeditor:markdown-preview".asInstanceOf[`fileeditor:markdown-preview`]
+  def `fileeditorColonmarkdown-preview`: `fileeditorColonmarkdown-preview` = "fileeditor:markdown-preview".asInstanceOf[`fileeditorColonmarkdown-preview`]
   @scala.inline
-  def `fileeditor:run-all`: `fileeditor:run-all` = "fileeditor:run-all".asInstanceOf[`fileeditor:run-all`]
+  def `fileeditorColonrun-all`: `fileeditorColonrun-all` = "fileeditor:run-all".asInstanceOf[`fileeditorColonrun-all`]
   @scala.inline
-  def `fileeditor:run-code`: `fileeditor:run-code` = "fileeditor:run-code".asInstanceOf[`fileeditor:run-code`]
+  def `fileeditorColonrun-code`: `fileeditorColonrun-code` = "fileeditor:run-code".asInstanceOf[`fileeditorColonrun-code`]
   @scala.inline
-  def `fileeditor:toggle-autoclosing-brackets`: `fileeditor:toggle-autoclosing-brackets` = "fileeditor:toggle-autoclosing-brackets".asInstanceOf[`fileeditor:toggle-autoclosing-brackets`]
+  def `fileeditorColontoggle-autoclosing-brackets`: `fileeditorColontoggle-autoclosing-brackets` = "fileeditor:toggle-autoclosing-brackets".asInstanceOf[`fileeditorColontoggle-autoclosing-brackets`]
   @scala.inline
-  def `fileeditor:toggle-line-numbers`: `fileeditor:toggle-line-numbers` = "fileeditor:toggle-line-numbers".asInstanceOf[`fileeditor:toggle-line-numbers`]
+  def `fileeditorColontoggle-line-numbers`: `fileeditorColontoggle-line-numbers` = "fileeditor:toggle-line-numbers".asInstanceOf[`fileeditorColontoggle-line-numbers`]
   @scala.inline
-  def `fileeditor:toggle-line-wrap`: `fileeditor:toggle-line-wrap` = "fileeditor:toggle-line-wrap".asInstanceOf[`fileeditor:toggle-line-wrap`]
+  def `fileeditorColontoggle-line-wrap`: `fileeditorColontoggle-line-wrap` = "fileeditor:toggle-line-wrap".asInstanceOf[`fileeditorColontoggle-line-wrap`]
   @scala.inline
-  def `fileeditor:toggle-match-brackets`: `fileeditor:toggle-match-brackets` = "fileeditor:toggle-match-brackets".asInstanceOf[`fileeditor:toggle-match-brackets`]
+  def `fileeditorColontoggle-match-brackets`: `fileeditorColontoggle-match-brackets` = "fileeditor:toggle-match-brackets".asInstanceOf[`fileeditorColontoggle-match-brackets`]
   @scala.inline
   def `jp-MarkdownIcon`: `jp-MarkdownIcon` = "jp-MarkdownIcon".asInstanceOf[`jp-MarkdownIcon`]
   @scala.inline

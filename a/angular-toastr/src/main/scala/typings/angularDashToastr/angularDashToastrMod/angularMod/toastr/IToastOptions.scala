@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IToastOptions
-  extends typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToastBaseConfig {
+trait IToastOptions extends IToastBaseConfig {
   var iconClass: js.UndefOr[String] = js.undefined
   var target: js.UndefOr[String] = js.undefined
 }
@@ -21,9 +20,9 @@ object IToastOptions {
     extraData: js.Any = null,
     iconClass: String = null,
     messageClass: String = null,
-    onHidden: (/* wasClicked */ Boolean, /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast) => Unit = null,
-    onShown: /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast => Unit = null,
-    onTap: /* toast */ typings.angularDashToastr.angularDashToastrMod.angularMod.toastr.IToast => Unit = null,
+    onHidden: (/* wasClicked */ Boolean, /* toast */ IToast) => Unit = null,
+    onShown: /* toast */ IToast => Unit = null,
+    onTap: /* toast */ IToast => Unit = null,
     progressBar: js.UndefOr[Boolean] = js.undefined,
     tapToDismiss: js.UndefOr[Boolean] = js.undefined,
     target: String = null,

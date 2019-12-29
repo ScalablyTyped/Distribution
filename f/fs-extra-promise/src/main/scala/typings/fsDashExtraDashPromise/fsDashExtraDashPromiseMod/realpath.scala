@@ -44,7 +44,7 @@ object realpath extends js.Object {
   def apply(
     path: PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -54,7 +54,7 @@ object realpath extends js.Object {
   def apply(
     path: PathLike,
     options: Null,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -121,7 +121,7 @@ object realpath extends js.Object {
   def native(
     path: PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def native(
     path: PathLike,
@@ -131,7 +131,7 @@ object realpath extends js.Object {
   def native(
     path: PathLike,
     options: Null,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    callback: js.Function2[ErrnoException | Null, Buffer | String, Unit]
   ): Unit = js.native
   def native(
     path: PathLike,

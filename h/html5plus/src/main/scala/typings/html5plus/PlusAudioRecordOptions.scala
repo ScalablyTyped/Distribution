@@ -1,9 +1,9 @@
 package typings.html5plus
 
-import typings.html5plus.html5plusStrings.`_doc/`
-import typings.html5plus.html5plusStrings.`_documents/`
-import typings.html5plus.html5plusStrings.`_downloads/`
-import typings.html5plus.html5plusStrings.`_www/`
+import typings.html5plus.html5plusStrings._docSlash
+import typings.html5plus.html5plusStrings._documentsSlash
+import typings.html5plus.html5plusStrings._downloadsSlash
+import typings.html5plus.html5plusStrings._wwwSlash
 import typings.html5plus.html5plusStrings.mono
 import typings.html5plus.html5plusStrings.stereo
 import scala.scalajs.js
@@ -39,7 +39,7 @@ trait PlusAudioRecordOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */
-  var filename: js.UndefOr[`_www/` | `_doc/` | `_documents/` | `_downloads/`] = js.undefined
+  var filename: js.UndefOr[_wwwSlash | _docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   /**
     * 录音文件的格式
     * 需通过supportedFormats属性获取设备支持的录音格式，若设置无效的值，则使用系统默认的录音格式。
@@ -60,7 +60,7 @@ object PlusAudioRecordOptions {
   @scala.inline
   def apply(
     channels: mono | stereo = null,
-    filename: `_www/` | `_doc/` | `_documents/` | `_downloads/` = null,
+    filename: _wwwSlash | _docSlash | _documentsSlash | _downloadsSlash = null,
     format: String = null,
     samplerate: String = null
   ): PlusAudioRecordOptions = {

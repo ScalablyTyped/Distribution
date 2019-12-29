@@ -42,6 +42,14 @@ trait BasemapLayerList extends Widget {
     */
   var iconClass: String = js.native
   /**
+    * Indicates whether more than one list item may be selected by the user at a single time. Selected items are available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#selectedItems) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#multipleSelectionEnabled)
+    *
+    * @default false
+    */
+  var multipleSelectionEnabled: Boolean = js.native
+  /**
     * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing the [referenceLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#referenceLayers).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#referenceItems)

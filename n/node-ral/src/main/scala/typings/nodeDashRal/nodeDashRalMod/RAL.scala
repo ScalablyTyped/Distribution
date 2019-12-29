@@ -1,7 +1,6 @@
 package typings.nodeDashRal.nodeDashRalMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.nodeDashRal.nodeDashRalMod.RAL.RalRunner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

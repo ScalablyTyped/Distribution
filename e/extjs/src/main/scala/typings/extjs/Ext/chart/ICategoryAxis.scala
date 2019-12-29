@@ -11,7 +11,7 @@ trait ICategoryAxis
   /** [Config Option] (Boolean) */
   var calculateCategoryCount: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var categoryNames: js.UndefOr[java.lang.String] = js.undefined
+  var categoryNames: js.UndefOr[String] = js.undefined
 }
 
 object ICategoryAxis {
@@ -24,15 +24,15 @@ object ICategoryAxis {
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    categoryNames: java.lang.String = null,
+    categoryNames: String = null,
     config: js.Any = null,
     dashSize: Int | Double = null,
     drawAxis: /* init */ js.UndefOr[js.Any] => Unit = null,
     drawGrid: () => Unit = null,
     drawLabel: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     grid: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
@@ -42,13 +42,13 @@ object ICategoryAxis {
     majorTickSteps: Int | Double = null,
     minorTickSteps: Int | Double = null,
     mixins: js.Any = null,
-    position: java.lang.String = null,
+    position: String = null,
     requires: Array = null,
     self: IClass = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    title: java.lang.String = null,
+    title: String = null,
     uses: Array = null,
     width: Int | Double = null
   ): ICategoryAxis = {

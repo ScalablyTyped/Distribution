@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.RecycleBinItemState.firstStageRecycleBin
-import typings.sharepoint.SP.RecycleBinItemState.none
-import typings.sharepoint.SP.RecycleBinItemState.secondStageRecycleBin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -201,18 +201,18 @@ trait ReconnectingWebSocket extends EventTarget {
     */
   def close(code: Double, reason: String): Unit = js.native
   /** An event listener to be called when the WebSocket connection's `readyState` changes to `CLOSED`. */
-  def onclose(`this`: ReconnectingWebSocket, event: CloseEvent): Unit = js.native
+  def onclose(event: CloseEvent): Unit = js.native
   /** An event listener to be called when a connection begins being attempted. */
-  def onconnecting(`this`: ReconnectingWebSocket, event: ConnectingEvent): Unit = js.native
+  def onconnecting(event: ConnectingEvent): Unit = js.native
   /** An event listener to be called when an error occurs. */
-  def onerror(`this`: ReconnectingWebSocket, event: ErrorEvent): Unit = js.native
+  def onerror(event: ErrorEvent): Unit = js.native
   /** An event listener to be called when a message is received from the server. */
-  def onmessage(`this`: ReconnectingWebSocket, event: MessageEvent): Unit = js.native
+  def onmessage(event: MessageEvent): Unit = js.native
   /**
     * An event listener to be called when the WebSocket connection's `readyState` changes to `OPEN`;
     * this indicates that the connection is ready to send and receive data.
     */
-  def onopen(`this`: ReconnectingWebSocket, event: OpenEvent): Unit = js.native
+  def onopen(event: OpenEvent): Unit = js.native
   def open(): Unit = js.native
   def open(reconnectAttempt: Boolean): Unit = js.native
   /**

@@ -1,6 +1,5 @@
 package typings.mobx
 
-import typings.mobx.libApiObservabledecoratorMod.IObservableDecorator
 import typings.mobx.libTypesModifiersMod.IEnhancer
 import typings.std.PropertyDescriptor
 import scala.scalajs.js

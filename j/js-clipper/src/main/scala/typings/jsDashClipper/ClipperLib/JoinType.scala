@@ -1,9 +1,6 @@
 package typings.jsDashClipper.ClipperLib
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsDashClipper.ClipperLib.JoinType.jtMiter
-import typings.jsDashClipper.ClipperLib.JoinType.jtRound
-import typings.jsDashClipper.ClipperLib.JoinType.jtSquare
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

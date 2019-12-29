@@ -19,7 +19,8 @@ class Window protected () extends js.Object {
   var Top: Double = js.native
   val Type: vbext_WindowType = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
-  var `VBIDE.Window_typekey`: Window = js.native
+  @JSName("VBIDE.Window_typekey")
+  var VBIDEDotWindow_typekey: Window = js.native
   var Visible: Boolean = js.native
   var Width: Double = js.native
   var WindowState: vbext_WindowState = js.native

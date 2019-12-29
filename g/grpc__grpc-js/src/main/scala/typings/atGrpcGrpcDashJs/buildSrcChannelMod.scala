@@ -6,13 +6,6 @@ import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Deadline
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Http2CallStream
 import typings.atGrpcGrpcDashJs.buildSrcChannelDashCredentialsMod.ChannelCredentials
 import typings.atGrpcGrpcDashJs.buildSrcChannelDashOptionsMod.ChannelOptions
-import typings.atGrpcGrpcDashJs.buildSrcChannelMod.Channel
-import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState
-import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.CONNECTING
-import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.IDLE
-import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.READY
-import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.SHUTDOWN
-import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.TRANSIENT_FAILURE
 import typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata
 import typings.std.Date
 import typings.std.Error

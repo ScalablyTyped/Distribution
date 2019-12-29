@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +40,7 @@ class Arc protected ()
     * @param fillAlpha The alpha the arc will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
     */
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],
     radius: js.UndefOr[Double],

@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Accordion
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Auto
-import typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Content
-import typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Fill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

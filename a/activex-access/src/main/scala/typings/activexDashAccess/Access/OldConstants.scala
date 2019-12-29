@@ -55,24 +55,24 @@ import typings.activexDashAccess.activexDashAccessNumbers.`80`
 import typings.activexDashAccess.activexDashAccessNumbers.`8`
 import typings.activexDashAccess.activexDashAccessNumbers.`96`
 import typings.activexDashAccess.activexDashAccessNumbers.`9`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0401;CP=1256;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0405;CP=1250;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0408;CP=1253;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0409;CP=1252;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040A;CP=1252;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040B;CP=1252;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040D;CP=1255;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040E;CP=1250;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040F;CP=1252;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0413;CP=1252;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0414;CP=1252;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0415;CP=1250;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0419;CP=1251;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x041D;CP=1252;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x041F;CP=1254;COUNTRY=0`
-import typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text (*DOTtxt)`
-import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel (*DOTxls)`
-import typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format (*DOTrtf)`
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
+import typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
+import typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,9 +85,9 @@ import scala.scalajs.js.annotation._
   - typings.activexDashAccess.activexDashAccessNumbers.`6`
   - typings.activexDashAccess.activexDashAccessNumbers.`7`
   - typings.activexDashAccess.activexDashAccessNumbers.`4`
-  - typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format (*DOTrtf)`
-  - typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text (*DOTtxt)`
-  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel (*DOTxls)`
+  - typings.activexDashAccess.activexDashAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
+  - typings.activexDashAccess.activexDashAccessStrings.`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
   - typings.activexDashAccess.activexDashAccessNumbers.`11`
   - typings.activexDashAccess.activexDashAccessNumbers.`20`
   - typings.activexDashAccess.activexDashAccessNumbers.`5`
@@ -102,21 +102,21 @@ import scala.scalajs.js.annotation._
   - typings.activexDashAccess.activexDashAccessNumbers.`32`
   - typings.activexDashAccess.activexDashAccessNumbers.`128`
   - typings.activexDashAccess.activexDashAccessNumbers.`256`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0401;CP=1256;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0419;CP=1251;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0405;CP=1250;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0413;CP=1252;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0409;CP=1252;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0408;CP=1253;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040D;CP=1255;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040E;CP=1250;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040F;CP=1252;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x041D;CP=1252;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0414;CP=1252;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x0415;CP=1250;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040A;CP=1252;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x040B;CP=1252;COUNTRY=0`
-  - typings.activexDashAccess.activexDashAccessStrings.`;LANGID=0x041F;CP=1254;COUNTRY=0`
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
+  - typings.activexDashAccess.activexDashAccessStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
   - typings.activexDashAccess.activexDashAccessNumbers.`12`
   - typings.activexDashAccess.activexDashAccessNumbers.`240`
   - typings.activexDashAccess.activexDashAccessNumbers.`64`
@@ -206,11 +206,11 @@ object OldConstants {
   @scala.inline
   def A_FORM: `2` = this.cast(2)
   @scala.inline
-  def A_FORMATRTF: `Rich Text Format (*DOTrtf)` = this.cast("Rich Text Format (*.rtf)")
+  def A_FORMATRTF: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = this.cast("Rich Text Format (*.rtf)")
   @scala.inline
-  def A_FORMATTXT: `MS-DOS Text (*DOTtxt)` = this.cast("MS-DOS Text (*.txt)")
+  def A_FORMATTXT: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = this.cast("MS-DOS Text (*.txt)")
   @scala.inline
-  def A_FORMATXLS: `Microsoft Excel (*DOTxls)` = this.cast("Microsoft Excel (*.xls)")
+  def A_FORMATXLS: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = this.cast("Microsoft Excel (*.xls)")
   @scala.inline
   def A_FORMBAR: `0` = this.cast(0)
   @scala.inline
@@ -374,35 +374,35 @@ object OldConstants {
   @scala.inline
   def DB_INTEGER: `3` = this.cast(3)
   @scala.inline
-  def DB_LANG_ARABIC: `;LANGID=0x0401;CP=1256;COUNTRY=0` = this.cast(";LANGID=0x0401;CP=1256;COUNTRY=0")
+  def DB_LANG_ARABIC: SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0401;CP=1256;COUNTRY=0")
   @scala.inline
-  def DB_LANG_CYRILLIC: `;LANGID=0x0419;CP=1251;COUNTRY=0` = this.cast(";LANGID=0x0419;CP=1251;COUNTRY=0")
+  def DB_LANG_CYRILLIC: SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0419;CP=1251;COUNTRY=0")
   @scala.inline
-  def DB_LANG_CZECH: `;LANGID=0x0405;CP=1250;COUNTRY=0` = this.cast(";LANGID=0x0405;CP=1250;COUNTRY=0")
+  def DB_LANG_CZECH: SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0405;CP=1250;COUNTRY=0")
   @scala.inline
-  def DB_LANG_DUTCH: `;LANGID=0x0413;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x0413;CP=1252;COUNTRY=0")
+  def DB_LANG_DUTCH: SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0413;CP=1252;COUNTRY=0")
   @scala.inline
-  def DB_LANG_GENERAL: `;LANGID=0x0409;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x0409;CP=1252;COUNTRY=0")
+  def DB_LANG_GENERAL: SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0409;CP=1252;COUNTRY=0")
   @scala.inline
-  def DB_LANG_GREEK: `;LANGID=0x0408;CP=1253;COUNTRY=0` = this.cast(";LANGID=0x0408;CP=1253;COUNTRY=0")
+  def DB_LANG_GREEK: SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0408;CP=1253;COUNTRY=0")
   @scala.inline
-  def DB_LANG_HEBREW: `;LANGID=0x040D;CP=1255;COUNTRY=0` = this.cast(";LANGID=0x040D;CP=1255;COUNTRY=0")
+  def DB_LANG_HEBREW: SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040D;CP=1255;COUNTRY=0")
   @scala.inline
-  def DB_LANG_HUNGARIAN: `;LANGID=0x040E;CP=1250;COUNTRY=0` = this.cast(";LANGID=0x040E;CP=1250;COUNTRY=0")
+  def DB_LANG_HUNGARIAN: SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040E;CP=1250;COUNTRY=0")
   @scala.inline
-  def DB_LANG_ICELANDIC: `;LANGID=0x040F;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x040F;CP=1252;COUNTRY=0")
+  def DB_LANG_ICELANDIC: SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040F;CP=1252;COUNTRY=0")
   @scala.inline
-  def DB_LANG_NORDIC: `;LANGID=0x041D;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x041D;CP=1252;COUNTRY=0")
+  def DB_LANG_NORDIC: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x041D;CP=1252;COUNTRY=0")
   @scala.inline
-  def DB_LANG_NORWDAN: `;LANGID=0x0414;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x0414;CP=1252;COUNTRY=0")
+  def DB_LANG_NORWDAN: SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0414;CP=1252;COUNTRY=0")
   @scala.inline
-  def DB_LANG_POLISH: `;LANGID=0x0415;CP=1250;COUNTRY=0` = this.cast(";LANGID=0x0415;CP=1250;COUNTRY=0")
+  def DB_LANG_POLISH: SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x0415;CP=1250;COUNTRY=0")
   @scala.inline
-  def DB_LANG_SPANISH: `;LANGID=0x040A;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x040A;CP=1252;COUNTRY=0")
+  def DB_LANG_SPANISH: SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040A;CP=1252;COUNTRY=0")
   @scala.inline
-  def DB_LANG_SWEDFIN: `;LANGID=0x040B;CP=1252;COUNTRY=0` = this.cast(";LANGID=0x040B;CP=1252;COUNTRY=0")
+  def DB_LANG_SWEDFIN: SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x040B;CP=1252;COUNTRY=0")
   @scala.inline
-  def DB_LANG_TURKISH: `;LANGID=0x041F;CP=1254;COUNTRY=0` = this.cast(";LANGID=0x041F;CP=1254;COUNTRY=0")
+  def DB_LANG_TURKISH: SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 = this.cast(";LANGID=0x041F;CP=1254;COUNTRY=0")
   @scala.inline
   def DB_LONG: `4` = this.cast(4)
   @scala.inline

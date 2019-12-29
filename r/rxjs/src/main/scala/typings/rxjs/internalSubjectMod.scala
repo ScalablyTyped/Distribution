@@ -1,7 +1,6 @@
 package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.internalSubjectMod.Subject
 import typings.rxjs.internalSubscriberMod.Subscriber
 import typings.rxjs.internalTypesMod.Observer
 import typings.rxjs.internalTypesMod.SubscriptionLike

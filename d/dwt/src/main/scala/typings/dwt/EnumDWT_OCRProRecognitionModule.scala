@@ -1,10 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_AUTO
-import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_BALANCED
-import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_FASTEST
-import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_MOSTACCURATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.antdDashMobile.libListPropsTypeMod
 
-import typings.antdDashMobile.antdDashMobileStrings.Empty
+import typings.antdDashMobile.antdDashMobileStrings._empty
 import typings.antdDashMobile.antdDashMobileStrings.android
 import typings.antdDashMobile.antdDashMobileStrings.bottom
 import typings.antdDashMobile.antdDashMobileStrings.down
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 trait ListItemPropsType extends js.Object {
   var activeStyle: js.UndefOr[CSSProperties] = js.undefined
   var align: js.UndefOr[top | middle | bottom] = js.undefined
-  var arrow: js.UndefOr[horizontal | down | up | empty | Empty] = js.undefined
+  var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var extra: js.UndefOr[ReactNode] = js.undefined
@@ -34,7 +34,7 @@ object ListItemPropsType {
   def apply(
     activeStyle: CSSProperties = null,
     align: top | middle | bottom = null,
-    arrow: horizontal | down | up | empty | Empty = null,
+    arrow: horizontal | down | up | empty | _empty = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     extra: ReactNode = null,

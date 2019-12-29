@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Disabled
-import typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Enabled
-import typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

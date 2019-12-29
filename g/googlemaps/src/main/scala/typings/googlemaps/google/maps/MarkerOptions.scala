@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,7 +64,7 @@ trait MarkerOptions extends js.Object {
     * Map on which to display Marker.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#MarkerOptions.map Maps JavaScript API}
     */
-  var map: js.UndefOr[Map | StreetViewPanorama] = js.undefined
+  var map: js.UndefOr[Map[Element] | StreetViewPanorama] = js.undefined
   /**
     * The marker's opacity between 0.0 and 1.0.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#MarkerOptions.opacity Maps JavaScript API}
@@ -123,7 +124,7 @@ object MarkerOptions {
     draggable: js.UndefOr[Boolean] = js.undefined,
     icon: String | Icon | Symbol = null,
     label: String | MarkerLabel = null,
-    map: Map | StreetViewPanorama = null,
+    map: Map[Element] | StreetViewPanorama = null,
     opacity: Int | Double = null,
     optimized: js.UndefOr[Boolean] = js.undefined,
     position: LatLng | LatLngLiteral = null,

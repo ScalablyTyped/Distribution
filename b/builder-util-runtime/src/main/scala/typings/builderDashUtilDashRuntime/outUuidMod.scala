@@ -1,7 +1,6 @@
 package typings.builderDashUtilDashRuntime
 
-import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeNumbers.`false`
-import typings.builderDashUtilDashRuntime.outUuidMod.UUID
+import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeBooleans.`false`
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

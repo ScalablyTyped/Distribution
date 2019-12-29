@@ -1,7 +1,5 @@
 package typings.mobx
 
-import typings.mobx.libUtilsDecoratorsMod.BabelDescriptor
-import typings.mobx.libUtilsDecoratorsMod.PropertyCreator
 import typings.std.IArguments
 import typings.std.PropertyDescriptor
 import typings.std.PropertyKey

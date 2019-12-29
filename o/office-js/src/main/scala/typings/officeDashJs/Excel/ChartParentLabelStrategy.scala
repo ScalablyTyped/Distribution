@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartParentLabelStrategy.banner
-import typings.officeDashJs.Excel.ChartParentLabelStrategy.none
-import typings.officeDashJs.Excel.ChartParentLabelStrategy.overlapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

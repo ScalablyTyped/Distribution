@@ -12,17 +12,17 @@ trait IColor extends IComponent {
   /** [Method] Clears any selection and sets the value to null  */
   var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var clickEvent: js.UndefOr[java.lang.String] = js.undefined
+  var clickEvent: js.UndefOr[String] = js.undefined
   /** [Property] (String[]) */
   var colors: js.UndefOr[Array] = js.undefined
   /** [Method] Get the currently selected color value
   		* @returns String value The selected value. Null if nothing is selected.
   		*/
-  var getValue: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function) */
   var handler: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[java.lang.String] = js.undefined
+  var itemCls: js.UndefOr[String] = js.undefined
   /** [Method] Template method called when this Component s DOM structure is created  */
   @JSName("onRender")
   var onRender_IColor: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -33,16 +33,12 @@ trait IColor extends IComponent {
   		* @param suppressEvent Boolean True to stop the select event from firing.
   		*/
   var select: js.UndefOr[
-    js.Function2[
-      /* color */ js.UndefOr[java.lang.String], 
-      /* suppressEvent */ js.UndefOr[Boolean], 
-      Unit
-    ]
+    js.Function2[/* color */ js.UndefOr[String], /* suppressEvent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Config Option] (String) */
-  var selectedCls: js.UndefOr[java.lang.String] = js.undefined
+  var selectedCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var value: js.UndefOr[java.lang.String] = js.undefined
+  var value: js.UndefOr[String] = js.undefined
 }
 
 object IColor {
@@ -51,16 +47,16 @@ object IColor {
     IComponent: IComponent = null,
     allowReselect: js.UndefOr[Boolean] = js.undefined,
     clear: () => Unit = null,
-    clickEvent: java.lang.String = null,
+    clickEvent: String = null,
     colors: Array = null,
-    getValue: () => java.lang.String = null,
+    getValue: () => String = null,
     handler: js.Any = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     onRender: () => Unit = null,
     scope: js.Any = null,
-    select: (/* color */ js.UndefOr[java.lang.String], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
-    selectedCls: java.lang.String = null,
-    value: java.lang.String = null
+    select: (/* color */ js.UndefOr[String], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
+    selectedCls: String = null,
+    value: String = null
   ): IColor = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

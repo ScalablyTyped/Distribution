@@ -5,7 +5,6 @@ import typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObjec
 import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent
 import typings.wonderDotJs.distEs2015EventObjectEEventPhaseMod.EEventPhase
 import typings.wonderDotJs.distEs2015EventObjectEEventTypeMod.EEventType
-import typings.wonderDotJs.distEs2015EventObjectEventMod.Event
 import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,9 +1,10 @@
 package typings.cleanDashCss.cleanDashCssMod
 
+import typings.cleanDashCss.cleanDashCssBooleans.`false`
 import typings.cleanDashCss.cleanDashCssNumbers.`0`
 import typings.cleanDashCss.cleanDashCssNumbers.`1`
 import typings.cleanDashCss.cleanDashCssNumbers.`2`
-import typings.cleanDashCss.cleanDashCssNumbers.`false`
+import typings.cleanDashCss.cleanDashCssStrings.Asterisk
 import typings.cleanDashCss.cleanDashCssStrings.`keep-breaks`
 import typings.cleanDashCss.cleanDashCssStrings.beautify
 import typings.cleanDashCss.cleanDashCssStrings.ie7
@@ -22,9 +23,7 @@ trait OptionsBase extends js.Object {
     * Controls compatibility mode used; defaults to ie10+ using `'*'`.
     *  Compatibility hash exposes the following properties: `colors`, `properties`, `selectors`, and `units`
     */
-  var compatibility: js.UndefOr[
-    typings.cleanDashCss.cleanDashCssStrings.`*` | ie9 | ie8 | ie7 | CompatibilityOptions
-  ] = js.undefined
+  var compatibility: js.UndefOr[Asterisk | ie9 | ie8 | ie7 | CompatibilityOptions] = js.undefined
   /**
     * Controls a function for handling remote requests; Defaults to the build in `loadRemoteResource` function
     */
@@ -88,7 +87,7 @@ trait OptionsBase extends js.Object {
 object OptionsBase {
   @scala.inline
   def apply(
-    compatibility: typings.cleanDashCss.cleanDashCssStrings.`*` | ie9 | ie8 | ie7 | CompatibilityOptions = null,
+    compatibility: Asterisk | ie9 | ie8 | ie7 | CompatibilityOptions = null,
     fetch: (/* uri */ String, /* inlineRequest */ RequestOptions | typings.node.httpsMod.RequestOptions, /* inlineTimeout */ Double, /* done */ js.Function2[/* message */ String | Double, /* body */ String, Unit]) => Unit = null,
     format: beautify | `keep-breaks` | FormatOptions | `false` = null,
     `inline`: js.Array[String] | `false` = null,

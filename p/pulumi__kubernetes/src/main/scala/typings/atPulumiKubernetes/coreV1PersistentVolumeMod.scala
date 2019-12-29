@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1PersistentVolumeMod.PersistentVolume
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolumeSpec
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.PersistentVolumeStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta

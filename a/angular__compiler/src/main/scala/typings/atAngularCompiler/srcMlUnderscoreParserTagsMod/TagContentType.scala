@@ -1,9 +1,6 @@
 package typings.atAngularCompiler.srcMlUnderscoreParserTagsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagContentType.ESCAPABLE_RAW_TEXT
-import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagContentType.PARSABLE_DATA
-import typings.atAngularCompiler.srcMlUnderscoreParserTagsMod.TagContentType.RAW_TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

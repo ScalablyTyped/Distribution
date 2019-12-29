@@ -63,8 +63,7 @@ class Group ()
   def addWithUpdate(): Group = js.native
   def addWithUpdate(`object`: Object): Group = js.native
   /**
-  	 * Returns number representation of a collection complexity
-  	 * @return complexity
+  	 * Returns complexity of an instance
   	 */
   /* InferMemberOverrides */
   override def complexity(): Double = js.native

@@ -1,7 +1,6 @@
 package typings.nodegit
 
 import typings.nodegit.attrMod.Attr.STATES
-import typings.nodegit.blameMod.Blame.FLAG
 import typings.nodegit.branchMod.Branch.BRANCH
 import typings.nodegit.certMod.Cert.SSH
 import typings.nodegit.checkoutMod.Checkout.NOTIFY
@@ -14,7 +13,6 @@ import typings.nodegit.diffMod.Diff.FIND
 import typings.nodegit.diffMod.Diff.FORMAT
 import typings.nodegit.diffMod.Diff.FORMAT_EMAIL_FLAGS
 import typings.nodegit.diffMod.Diff.LINE
-import typings.nodegit.diffMod.Diff.OPTION
 import typings.nodegit.diffMod.Diff.STATS_FORMAT
 import typings.nodegit.enumsMod.Enums.CVAR
 import typings.nodegit.enumsMod.Enums.DIRECTION
@@ -24,7 +22,9 @@ import typings.nodegit.enumsMod.Enums.INDXENTRY_FLAG
 import typings.nodegit.errorMod.Error.CODE
 import typings.nodegit.errorMod.Error.ERROR
 import typings.nodegit.fetchMod.Fetch.PRUNE
+import typings.nodegit.filterMod.Filter.FLAG
 import typings.nodegit.filterMod.Filter.MODE
+import typings.nodegit.hashDashSigMod.Hashsig.OPTION
 import typings.nodegit.indexUnderscoreMod.Index.ADD_OPTION
 import typings.nodegit.indexUnderscoreMod.Index.CAP
 import typings.nodegit.libDashGit2Mod.Libgit2.OPT
@@ -155,7 +155,7 @@ object nodegitNumbers {
        with FIND
        with FLAG
        with typings.nodegit.pathDashSpecMod.Pathspec.FLAG
-       with typings.nodegit.filterMod.Filter.FLAG
+       with typings.nodegit.blameMod.Blame.FLAG
        with FLAGS
        with FORMAT_EMAIL_FLAGS
        with LOCAL
@@ -164,7 +164,7 @@ object nodegitNumbers {
        with NOTIFY
        with OPT
        with OPTION
-       with typings.nodegit.hashDashSigMod.Hashsig.OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with PREFERENCE
        with PRUNE
        with REBASE_OPERATION
@@ -176,9 +176,9 @@ object nodegitNumbers {
        with STATS_FORMAT
        with STATUS
        with STRATEGY
-       with typings.nodegit.certMod.Cert.TYPE
-       with typings.nodegit.referenceMod.Reference.TYPE
        with TYPE
+       with typings.nodegit.referenceMod.Reference.TYPE
+       with typings.nodegit.certMod.Cert.TYPE
        with UPDATE
        with WALK_MODE
   
@@ -201,10 +201,10 @@ object nodegitNumbers {
        with FILE_FAVOR
        with FILE_FLAGS
        with FIND
-       with typings.nodegit.diffMod.Diff.FLAG
        with FLAG
        with typings.nodegit.pathDashSpecMod.Pathspec.FLAG
-       with typings.nodegit.filterMod.Filter.FLAG
+       with typings.nodegit.diffMod.Diff.FLAG
+       with typings.nodegit.blameMod.Blame.FLAG
        with FLAGS
        with FORMAT
        with FORMAT_EMAIL_FLAGS
@@ -212,14 +212,14 @@ object nodegitNumbers {
        with IGNORE
        with LEVEL
        with LOCAL
-       with typings.nodegit.revDashParseMod.Revparse.MODE
        with MODE
+       with typings.nodegit.revDashParseMod.Revparse.MODE
        with NORMALIZE
        with NOTIFY
        with OPT
        with typings.nodegit.statusMod.Status.OPT
        with OPTION
-       with typings.nodegit.hashDashSigMod.Hashsig.OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with PREFERENCE
        with PRUNE
        with REBASE_OPERATION
@@ -233,11 +233,11 @@ object nodegitNumbers {
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
-       with typings.nodegit.resetMod.Reset.TYPE
-       with typings.nodegit.certMod.Cert.TYPE
-       with typings.nodegit.credMod.Cred.TYPE
-       with typings.nodegit.referenceMod.Reference.TYPE
        with TYPE
+       with typings.nodegit.referenceMod.Reference.TYPE
+       with typings.nodegit.certMod.Cert.TYPE
+       with typings.nodegit.resetMod.Reset.TYPE
+       with typings.nodegit.credMod.Cred.TYPE
        with UPDATE
        with WALK_MODE
   
@@ -250,18 +250,19 @@ object nodegitNumbers {
   @js.native
   sealed trait `1024`
     extends typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
   
   @js.native
   sealed trait `1048576`
-    extends OPTION
+    extends typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   
   @js.native
-  sealed trait `1073741824` extends OPTION
+  sealed trait `1073741824`
+    extends typings.nodegit.diffMod.Diff.OPTION
   
   @js.native
   sealed trait `11`
@@ -278,7 +279,7 @@ object nodegitNumbers {
     extends FILE_FLAGS
        with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
@@ -288,7 +289,7 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `131072`
-    extends OPTION
+    extends typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   
   @js.native
@@ -302,12 +303,12 @@ object nodegitNumbers {
     extends ERROR
        with FILE_FLAGS
        with FIND
-       with FLAG
        with typings.nodegit.pathDashSpecMod.Pathspec.FLAG
+       with typings.nodegit.blameMod.Blame.FLAG
        with IDXENTRY_EXTENDED_FLAG
        with NOTIFY
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
@@ -320,11 +321,12 @@ object nodegitNumbers {
        with IDXENTRY_EXTENDED_FLAG
        with INDXENTRY_FLAG
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with STATUS
   
   @js.native
-  sealed trait `16777216` extends OPTION
+  sealed trait `16777216`
+    extends typings.nodegit.diffMod.Diff.OPTION
   
   @js.native
   sealed trait `17` extends ERROR
@@ -352,9 +354,9 @@ object nodegitNumbers {
        with FILE_FAVOR
        with FILE_FLAGS
        with FIND
-       with typings.nodegit.diffMod.Diff.FLAG
-       with FLAG
        with typings.nodegit.pathDashSpecMod.Pathspec.FLAG
+       with typings.nodegit.diffMod.Diff.FLAG
+       with typings.nodegit.blameMod.Blame.FLAG
        with FLAGS
        with FORMAT
        with IDXENTRY_EXTENDED_FLAG
@@ -367,7 +369,7 @@ object nodegitNumbers {
        with OPT
        with typings.nodegit.statusMod.Status.OPT
        with OPTION
-       with typings.nodegit.hashDashSigMod.Hashsig.OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with PREFERENCE
        with PRUNE
        with REBASE_OPERATION
@@ -381,11 +383,11 @@ object nodegitNumbers {
        with STATUS
        with STRATEGY
        with STREAM
-       with typings.nodegit.resetMod.Reset.TYPE
-       with typings.nodegit.certMod.Cert.TYPE
-       with typings.nodegit.credMod.Cred.TYPE
-       with typings.nodegit.referenceMod.Reference.TYPE
        with TYPE
+       with typings.nodegit.referenceMod.Reference.TYPE
+       with typings.nodegit.certMod.Cert.TYPE
+       with typings.nodegit.resetMod.Reset.TYPE
+       with typings.nodegit.credMod.Cred.TYPE
        with UPDATE
   
   @js.native
@@ -394,14 +396,14 @@ object nodegitNumbers {
   @js.native
   sealed trait `2048`
     extends typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
   
   @js.native
   sealed trait `2097152`
-    extends OPTION
+    extends typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   
   @js.native
@@ -429,7 +431,7 @@ object nodegitNumbers {
   sealed trait `256`
     extends IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
@@ -441,7 +443,8 @@ object nodegitNumbers {
   sealed trait `262144` extends STRATEGY
   
   @js.native
-  sealed trait `268435456` extends OPTION
+  sealed trait `268435456`
+    extends typings.nodegit.diffMod.Diff.OPTION
   
   @js.native
   sealed trait `27` extends ERROR
@@ -468,10 +471,10 @@ object nodegitNumbers {
        with OPT
        with REBASE_OPERATION
        with STATES
-       with typings.nodegit.resetMod.Reset.TYPE
-       with typings.nodegit.certMod.Cert.TYPE
-       with typings.nodegit.referenceMod.Reference.TYPE
        with TYPE
+       with typings.nodegit.referenceMod.Reference.TYPE
+       with typings.nodegit.certMod.Cert.TYPE
+       with typings.nodegit.resetMod.Reset.TYPE
        with UPDATE
   
   @js.native
@@ -485,7 +488,7 @@ object nodegitNumbers {
        with IDXENTRY_EXTENDED_FLAG
        with LINE
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STRATEGY
        with typings.nodegit.credMod.Cred.TYPE
@@ -496,7 +499,7 @@ object nodegitNumbers {
        with IDXENTRY_EXTENDED_FLAG
        with INDXENTRY_FLAG
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with STATUS
   
   @js.native
@@ -506,7 +509,8 @@ object nodegitNumbers {
   sealed trait `33261` extends FILEMODE
   
   @js.native
-  sealed trait `33554432` extends OPTION
+  sealed trait `33554432`
+    extends typings.nodegit.diffMod.Diff.OPTION
   
   @js.native
   sealed trait `4`
@@ -519,9 +523,9 @@ object nodegitNumbers {
        with FEATURE
        with FILE_FLAGS
        with FIND
-       with typings.nodegit.diffMod.Diff.FLAG
-       with FLAG
        with typings.nodegit.pathDashSpecMod.Pathspec.FLAG
+       with typings.nodegit.diffMod.Diff.FLAG
+       with typings.nodegit.blameMod.Blame.FLAG
        with FLAGS
        with FORMAT
        with IDXENTRY_EXTENDED_FLAG
@@ -533,7 +537,7 @@ object nodegitNumbers {
        with OPT
        with typings.nodegit.statusMod.Status.OPT
        with OPTION
-       with typings.nodegit.hashDashSigMod.Hashsig.OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with REBASE_OPERATION
        with SORT
        with STATS_FORMAT
@@ -541,15 +545,15 @@ object nodegitNumbers {
        with STATUS
        with STRATEGY
        with STREAM
-       with typings.nodegit.credMod.Cred.TYPE
        with TYPE
+       with typings.nodegit.credMod.Cred.TYPE
        with UPDATE
   
   @js.native
   sealed trait `4096`
     extends FIND
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
@@ -559,7 +563,7 @@ object nodegitNumbers {
   
   @js.native
   sealed trait `4194304`
-    extends OPTION
+    extends typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   
   @js.native
@@ -586,7 +590,7 @@ object nodegitNumbers {
   sealed trait `512`
     extends IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
@@ -595,7 +599,8 @@ object nodegitNumbers {
   sealed trait `524288` extends STRATEGY
   
   @js.native
-  sealed trait `536870912` extends OPTION
+  sealed trait `536870912`
+    extends typings.nodegit.diffMod.Diff.OPTION
   
   @js.native
   sealed trait `57344` extends FILEMODE
@@ -624,7 +629,7 @@ object nodegitNumbers {
        with FIND
        with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STRATEGY
        with typings.nodegit.credMod.Cred.TYPE
@@ -635,14 +640,15 @@ object nodegitNumbers {
   @js.native
   sealed trait `65536`
     extends FIND
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   
   @js.native
   sealed trait `66` extends LINE
   
   @js.native
-  sealed trait `67108864` extends OPTION
+  sealed trait `67108864`
+    extends typings.nodegit.diffMod.Diff.OPTION
   
   @js.native
   sealed trait `7`
@@ -665,14 +671,14 @@ object nodegitNumbers {
        with ERROR
        with FILE_FLAGS
        with FIND
-       with typings.nodegit.diffMod.Diff.FLAG
-       with FLAG
        with typings.nodegit.pathDashSpecMod.Pathspec.FLAG
+       with typings.nodegit.diffMod.Diff.FLAG
+       with typings.nodegit.blameMod.Blame.FLAG
        with IDXENTRY_EXTENDED_FLAG
        with NOTIFY
        with OPT
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with STATS_FORMAT
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
@@ -683,13 +689,13 @@ object nodegitNumbers {
     extends FIND
        with IDXENTRY_EXTENDED_FLAG
        with typings.nodegit.statusMod.Status.OPT
-       with OPTION
+       with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STRATEGY
   
   @js.native
   sealed trait `8388608`
-    extends OPTION
+    extends typings.nodegit.diffMod.Diff.OPTION
        with STRATEGY
   
   @js.native

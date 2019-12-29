@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Bottomcenter
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Bottomleft
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Bottomright
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Center
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Centerleft
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Centerright
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.None
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Topcenter
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Topleft
-import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.Position.Topright
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

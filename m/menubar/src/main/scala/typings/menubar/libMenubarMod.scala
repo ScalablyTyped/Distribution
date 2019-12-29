@@ -7,7 +7,7 @@ import typings.electron.Electron.Rectangle
 import typings.electron.electronMod.BrowserWindow
 import typings.electron.electronMod.Tray
 import typings.menubar.libTypesMod.Options
-import typings.menubar.menubarNumbers.`false`
+import typings.menubar.menubarBooleans.`false`
 import typings.menubar.menubarStrings.bottomCenter
 import typings.menubar.menubarStrings.bottomLeft
 import typings.menubar.menubarStrings.bottomRight

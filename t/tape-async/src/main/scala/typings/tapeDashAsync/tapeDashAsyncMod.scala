@@ -2,10 +2,6 @@ package typings.tapeDashAsync
 
 import typings.node.NodeJS.ReadableStream
 import typings.std.Iterator
-import typings.tapeDashAsync.tapeDashAsyncMod.StreamOptions
-import typings.tapeDashAsync.tapeDashAsyncMod.Test
-import typings.tapeDashAsync.tapeDashAsyncMod.TestCase
-import typings.tapeDashAsync.tapeDashAsyncMod.TestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

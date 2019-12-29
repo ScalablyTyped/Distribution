@@ -12,7 +12,6 @@ package object html5plus {
     */
   /* Rewritten from type alias, can be one of: 
     - `js.undefined`
-    - scala.Nothing
     - typings.html5plus.html5plusNumbers.`0`
     - typings.html5plus.html5plusNumbers.`1`
     - typings.html5plus.html5plusNumbers.`2`
@@ -53,7 +52,6 @@ package object html5plus {
     */
   /* Rewritten from type alias, can be one of: 
     - `js.undefined`
-    - scala.Nothing
     - typings.html5plus.html5plusNumbers.`0`
     - typings.html5plus.html5plusNumbers.`1`
     - typings.html5plus.html5plusNumbers.`2`

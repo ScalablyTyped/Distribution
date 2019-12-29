@@ -20,7 +20,8 @@ class CustomXMLNode protected () extends js.Object {
   val NextSibling: CustomXMLNode = js.native
   val NodeType: MsoCustomXMLNodeType = js.native
   var NodeValue: String = js.native
-  var `Office.CustomXMLNode_typekey`: CustomXMLNode = js.native
+  @JSName("Office.CustomXMLNode_typekey")
+  var OfficeDotCustomXMLNode_typekey: CustomXMLNode = js.native
   val OwnerDocument: js.Any = js.native
   val OwnerPart: CustomXMLPart = js.native
   val Parent: js.Any = js.native

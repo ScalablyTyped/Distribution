@@ -1,6 +1,5 @@
 package typings.atNodelibFsDotStat
 
-import typings.atNodelibFsDotStat.atNodelibFsDotStatMod.Options
 import typings.atNodelibFsDotStat.outProvidersStatMod.AsyncCallback
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats

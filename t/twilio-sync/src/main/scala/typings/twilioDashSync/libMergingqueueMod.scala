@@ -1,8 +1,5 @@
 package typings.twilioDashSync
 
-import typings.twilioDashSync.libMergingqueueMod.InputReducer
-import typings.twilioDashSync.libMergingqueueMod.MergingQueue
-import typings.twilioDashSync.libMergingqueueMod.RequestFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

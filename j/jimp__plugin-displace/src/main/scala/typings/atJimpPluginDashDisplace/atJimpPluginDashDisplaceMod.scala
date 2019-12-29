@@ -2,7 +2,6 @@ package typings.atJimpPluginDashDisplace
 
 import typings.atJimpCore.typesEtcMod.ImageCallback
 import typings.atJimpCore.typesJimpMod.Jimp
-import typings.atJimpPluginDashDisplace.atJimpPluginDashDisplaceMod.Displace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

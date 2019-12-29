@@ -1,7 +1,6 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
 import typings.yandexDashMaps.Anon_CoordRendering
-import typings.yandexDashMaps.yandexDashMapsMod.geometry.LineString
 import typings.yandexDashMaps.yandexDashMapsStrings.evenOdd
 import typings.yandexDashMaps.yandexDashMapsStrings.nonZero
 import scala.scalajs.js

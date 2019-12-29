@@ -1,12 +1,12 @@
 package typings.reduxDashPersist
 
-import typings.reduxDashPersist.reduxDashPersistStrings.`persist/FLUSH`
-import typings.reduxDashPersist.reduxDashPersistStrings.`persist/PAUSE`
-import typings.reduxDashPersist.reduxDashPersistStrings.`persist/PERSIST`
-import typings.reduxDashPersist.reduxDashPersistStrings.`persist/PURGE`
-import typings.reduxDashPersist.reduxDashPersistStrings.`persist/REGISTER`
-import typings.reduxDashPersist.reduxDashPersistStrings.`persist/REHYDRATE`
-import typings.reduxDashPersist.reduxDashPersistStrings.`persist:`
+import typings.reduxDashPersist.reduxDashPersistStrings.persistColon
+import typings.reduxDashPersist.reduxDashPersistStrings.persistSlashFLUSH
+import typings.reduxDashPersist.reduxDashPersistStrings.persistSlashPAUSE
+import typings.reduxDashPersist.reduxDashPersistStrings.persistSlashPERSIST
+import typings.reduxDashPersist.reduxDashPersistStrings.persistSlashPURGE
+import typings.reduxDashPersist.reduxDashPersistStrings.persistSlashREGISTER
+import typings.reduxDashPersist.reduxDashPersistStrings.persistSlashREHYDRATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object libConstantsMod extends js.Object {
   val DEFAULT_VERSION: Double = js.native
-  val FLUSH: `persist/FLUSH` = js.native
-  val KEY_PREFIX: `persist:` = js.native
-  val PAUSE: `persist/PAUSE` = js.native
-  val PERSIST: `persist/PERSIST` = js.native
-  val PURGE: `persist/PURGE` = js.native
-  val REGISTER: `persist/REGISTER` = js.native
-  val REHYDRATE: `persist/REHYDRATE` = js.native
+  val FLUSH: persistSlashFLUSH = js.native
+  val KEY_PREFIX: persistColon = js.native
+  val PAUSE: persistSlashPAUSE = js.native
+  val PERSIST: persistSlashPERSIST = js.native
+  val PURGE: persistSlashPURGE = js.native
+  val REGISTER: persistSlashREGISTER = js.native
+  val REHYDRATE: persistSlashREHYDRATE = js.native
 }
 

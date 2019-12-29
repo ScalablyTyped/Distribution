@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Scanners
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.deviceIndependentBitmap
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.jpeg
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.openXps
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.pdf
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.png
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.tiff
-import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.xps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

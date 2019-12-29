@@ -3,7 +3,6 @@ package typings.atMaterialList
 import typings.atMaterialBase.foundationMod.default
 import typings.atMaterialList.adapterMod.MDCListAdapter
 import typings.atMaterialList.constantsMod.Index
-import typings.atMaterialList.foundationMod.MDCListFoundation
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -27,8 +27,8 @@ object UserInfo {
 @JSImport("os", "userInfo")
 @js.native
 object userInfo extends js.Object {
-  def apply(): UserInfo[java.lang.String] = js.native
+  def apply(): UserInfo[String] = js.native
   def apply(options: Anon_BufferEncoding): UserInfo[Buffer] = js.native
-  def apply(options: Anon_EncodingString): UserInfo[java.lang.String] = js.native
+  def apply(options: Anon_EncodingString): UserInfo[String] = js.native
 }
 

@@ -2,7 +2,6 @@ package typings.atTensorflowTfjsDashData
 
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.LazyIterator
-import typings.atTensorflowTfjsDashData.distIteratorsWebcamUnderscoreIteratorMod.WebcamIterator
 import typings.atTensorflowTfjsDashData.distTypesMod.WebcamConfig
 import typings.std.HTMLVideoElement
 import scala.scalajs.js

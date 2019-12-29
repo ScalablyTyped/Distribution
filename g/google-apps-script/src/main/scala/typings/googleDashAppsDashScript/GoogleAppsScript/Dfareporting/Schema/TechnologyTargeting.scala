@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TechnologyTargeting extends js.Object {
-  var browsers: js.UndefOr[
-    js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser]
-  ] = js.undefined
+  var browsers: js.UndefOr[js.Array[Browser]] = js.undefined
   var connectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.undefined
   var mobileCarriers: js.UndefOr[js.Array[MobileCarrier]] = js.undefined
   var operatingSystemVersions: js.UndefOr[js.Array[OperatingSystemVersion]] = js.undefined
@@ -18,7 +16,7 @@ trait TechnologyTargeting extends js.Object {
 object TechnologyTargeting {
   @scala.inline
   def apply(
-    browsers: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser] = null,
+    browsers: js.Array[Browser] = null,
     connectionTypes: js.Array[ConnectionType] = null,
     mobileCarriers: js.Array[MobileCarrier] = null,
     operatingSystemVersions: js.Array[OperatingSystemVersion] = null,

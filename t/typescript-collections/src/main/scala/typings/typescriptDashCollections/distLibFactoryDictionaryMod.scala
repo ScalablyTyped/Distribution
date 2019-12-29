@@ -1,6 +1,5 @@
 package typings.typescriptDashCollections
 
-import typings.typescriptDashCollections.distLibFactoryDictionaryMod.FactoryDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SmartCards
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.allow
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.disallow
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.requireAtLeastOne
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

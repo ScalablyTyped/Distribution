@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.custom1
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.custom2
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.custom3
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.custom4
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.custom5
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.custom6
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.cyan
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.full
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.magenta
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.none
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.primary
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCapabilities.yellow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

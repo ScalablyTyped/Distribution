@@ -9,13 +9,10 @@ import scala.scalajs.js.annotation._
 
 object atAngularCoreStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait `@angularSlashcommon` extends js.Object
   
   @js.native
-  sealed trait `@angular/common` extends js.Object
-  
-  @js.native
-  sealed trait `@angular/platform-browser` extends js.Object
+  sealed trait `@angularSlashplatform-browser` extends js.Object
   
   @js.native
   sealed trait Anon_ChangeDetection extends js.Object
@@ -30,6 +27,9 @@ object atAngularCoreStrings {
   sealed trait AnyDuringRendererMigration extends HelperFunction
   
   @js.native
+  sealed trait Asterisk extends js.Object
+  
+  @js.native
   sealed trait `Brand for OpaqueViewState that nothing will match` extends js.Object
   
   @js.native
@@ -37,9 +37,6 @@ object atAngularCoreStrings {
   
   @js.native
   sealed trait DOCUMENT extends js.Object
-  
-  @js.native
-  sealed trait Empty extends js.Object
   
   @js.native
   sealed trait Html extends BypassType
@@ -90,6 +87,9 @@ object atAngularCoreStrings {
   sealed trait __ngRendererSplitNamespaceHelper extends HelperFunction
   
   @js.native
+  sealed trait _empty extends js.Object
+  
+  @js.native
   sealed trait any extends js.Object
   
   @js.native
@@ -120,17 +120,15 @@ object atAngularCoreStrings {
   sealed trait window extends GlobalTargetName
   
   @js.native
-  sealed trait zoneDOTjs extends js.Object
+  sealed trait zoneDotjs extends js.Object
   
   @js.native
   sealed trait ɵɵBaseDef extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def `@angularSlashcommon`: `@angularSlashcommon` = "@angular/common".asInstanceOf[`@angularSlashcommon`]
   @scala.inline
-  def `@angular/common`: `@angular/common` = "@angular/common".asInstanceOf[`@angular/common`]
-  @scala.inline
-  def `@angular/platform-browser`: `@angular/platform-browser` = "@angular/platform-browser".asInstanceOf[`@angular/platform-browser`]
+  def `@angularSlashplatform-browser`: `@angularSlashplatform-browser` = "@angular/platform-browser".asInstanceOf[`@angularSlashplatform-browser`]
   @scala.inline
   def Anon_ChangeDetection: Anon_ChangeDetection = "Anon_ChangeDetection".asInstanceOf[Anon_ChangeDetection]
   @scala.inline
@@ -140,13 +138,13 @@ object atAngularCoreStrings {
   @scala.inline
   def AnyDuringRendererMigration: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
   @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  @scala.inline
   def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = "Brand for OpaqueViewState that nothing will match".asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
   @scala.inline
   def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]
   @scala.inline
   def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def Html: Html = "Html".asInstanceOf[Html]
   @scala.inline
@@ -180,6 +178,8 @@ object atAngularCoreStrings {
   @scala.inline
   def __ngRendererSplitNamespaceHelper: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
   @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
@@ -200,8 +200,8 @@ object atAngularCoreStrings {
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   @scala.inline
-  def zoneDOTjs: zoneDOTjs = "zone.js".asInstanceOf[zoneDOTjs]
+  def zoneDotjs: zoneDotjs = "zone.js".asInstanceOf[zoneDotjs]
   @scala.inline
-  def ɵɵBaseDef: ɵɵBaseDef = "ɵɵBaseDef".asInstanceOf[ɵɵBaseDef]
+  def ɵɵBaseDef: ɵɵBaseDef = "\u0275\u0275BaseDef".asInstanceOf[ɵɵBaseDef]
 }
 

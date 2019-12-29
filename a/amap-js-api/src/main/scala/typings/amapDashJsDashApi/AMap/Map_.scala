@@ -7,7 +7,7 @@ import typings.amapDashJsDashApi.AMap.Map.ViewMode
 import typings.amapDashJsDashApi.Anon_City
 import typings.amapDashJsDashApi.Anon_IdLocation
 import typings.amapDashJsDashApi.PartialStatus
-import typings.amapDashJsDashApi.amapDashJsDashApiNumbers.`false`
+import typings.amapDashJsDashApi.amapDashJsDashApiBooleans.`false`
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.all
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.circle
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.marker

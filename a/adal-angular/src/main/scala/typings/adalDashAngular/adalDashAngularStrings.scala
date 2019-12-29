@@ -17,10 +17,10 @@ object adalDashAngularStrings {
   sealed trait Completed extends js.Object
   
   @js.native
-  sealed trait `ERROR:` extends js.Object
+  sealed trait ERRORColon extends js.Object
   
   @js.native
-  sealed trait `INFO:` extends js.Object
+  sealed trait INFOColon extends js.Object
   
   @js.native
   sealed trait `In Progress` extends js.Object
@@ -35,55 +35,58 @@ object adalDashAngularStrings {
   sealed trait UNKNOWN extends RequestType
   
   @js.native
-  sealed trait `VERBOSE:` extends js.Object
+  sealed trait VERBOSEColon extends js.Object
   
   @js.native
-  sealed trait `WARNING:` extends js.Object
+  sealed trait Verticalline extends js.Object
+  
+  @js.native
+  sealed trait WARNINGColon extends js.Object
   
   @js.native
   sealed trait access_token extends js.Object
   
   @js.native
-  sealed trait adalDOTaccessDOTtokenDOTkey extends js.Object
+  sealed trait adalDotaccessDottokenDotkey extends js.Object
   
   @js.native
-  sealed trait adalDOTerror extends js.Object
+  sealed trait adalDoterror extends js.Object
   
   @js.native
-  sealed trait adalDOTerrorDOTdescription extends js.Object
+  sealed trait adalDoterrorDotdescription extends js.Object
   
   @js.native
-  sealed trait adalDOTexpirationDOTkey extends js.Object
+  sealed trait adalDotexpirationDotkey extends js.Object
   
   @js.native
-  sealed trait adalDOTidtoken extends js.Object
+  sealed trait adalDotidtoken extends js.Object
   
   @js.native
-  sealed trait adalDOTloginDOTerror extends js.Object
+  sealed trait adalDotloginDoterror extends js.Object
   
   @js.native
-  sealed trait adalDOTloginDOTrequest extends js.Object
+  sealed trait adalDotloginDotrequest extends js.Object
   
   @js.native
-  sealed trait adalDOTnonceDOTidtoken extends js.Object
+  sealed trait adalDotnonceDotidtoken extends js.Object
   
   @js.native
-  sealed trait adalDOTsessionDOTstate extends js.Object
+  sealed trait adalDotsessionDotstate extends js.Object
   
   @js.native
-  sealed trait adalDOTstateDOTlogin extends js.Object
+  sealed trait adalDotstateDotlogin extends js.Object
   
   @js.native
-  sealed trait adalDOTstateDOTrenew extends js.Object
+  sealed trait adalDotstateDotrenew extends js.Object
   
   @js.native
-  sealed trait adalDOTtokenDOTkeys extends js.Object
+  sealed trait adalDottokenDotkeys extends js.Object
   
   @js.native
-  sealed trait adalDOTtokenDOTrenewDOTstatus extends js.Object
+  sealed trait adalDottokenDotrenewDotstatus extends js.Object
   
   @js.native
-  sealed trait adalDOTusername extends js.Object
+  sealed trait adalDotusername extends js.Object
   
   @js.native
   sealed trait error_description extends js.Object
@@ -109,9 +112,6 @@ object adalDashAngularStrings {
   @js.native
   sealed trait token extends ResponseType
   
-  @js.native
-  sealed trait `|` extends js.Object
-  
   @scala.inline
   def `6000`: `6000` = "6000".asInstanceOf[`6000`]
   @scala.inline
@@ -119,9 +119,9 @@ object adalDashAngularStrings {
   @scala.inline
   def Completed: Completed = "Completed".asInstanceOf[Completed]
   @scala.inline
-  def `ERROR:`: `ERROR:` = "ERROR:".asInstanceOf[`ERROR:`]
+  def ERRORColon: ERRORColon = "ERROR:".asInstanceOf[ERRORColon]
   @scala.inline
-  def `INFO:`: `INFO:` = "INFO:".asInstanceOf[`INFO:`]
+  def INFOColon: INFOColon = "INFO:".asInstanceOf[INFOColon]
   @scala.inline
   def `In Progress`: `In Progress` = "In Progress".asInstanceOf[`In Progress`]
   @scala.inline
@@ -131,39 +131,41 @@ object adalDashAngularStrings {
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   @scala.inline
-  def `VERBOSE:`: `VERBOSE:` = "VERBOSE:".asInstanceOf[`VERBOSE:`]
+  def VERBOSEColon: VERBOSEColon = "VERBOSE:".asInstanceOf[VERBOSEColon]
   @scala.inline
-  def `WARNING:`: `WARNING:` = "WARNING:".asInstanceOf[`WARNING:`]
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
+  def WARNINGColon: WARNINGColon = "WARNING:".asInstanceOf[WARNINGColon]
   @scala.inline
   def access_token: access_token = "access_token".asInstanceOf[access_token]
   @scala.inline
-  def adalDOTaccessDOTtokenDOTkey: adalDOTaccessDOTtokenDOTkey = "adal.access.token.key".asInstanceOf[adalDOTaccessDOTtokenDOTkey]
+  def adalDotaccessDottokenDotkey: adalDotaccessDottokenDotkey = "adal.access.token.key".asInstanceOf[adalDotaccessDottokenDotkey]
   @scala.inline
-  def adalDOTerror: adalDOTerror = "adal.error".asInstanceOf[adalDOTerror]
+  def adalDoterror: adalDoterror = "adal.error".asInstanceOf[adalDoterror]
   @scala.inline
-  def adalDOTerrorDOTdescription: adalDOTerrorDOTdescription = "adal.error.description".asInstanceOf[adalDOTerrorDOTdescription]
+  def adalDoterrorDotdescription: adalDoterrorDotdescription = "adal.error.description".asInstanceOf[adalDoterrorDotdescription]
   @scala.inline
-  def adalDOTexpirationDOTkey: adalDOTexpirationDOTkey = "adal.expiration.key".asInstanceOf[adalDOTexpirationDOTkey]
+  def adalDotexpirationDotkey: adalDotexpirationDotkey = "adal.expiration.key".asInstanceOf[adalDotexpirationDotkey]
   @scala.inline
-  def adalDOTidtoken: adalDOTidtoken = "adal.idtoken".asInstanceOf[adalDOTidtoken]
+  def adalDotidtoken: adalDotidtoken = "adal.idtoken".asInstanceOf[adalDotidtoken]
   @scala.inline
-  def adalDOTloginDOTerror: adalDOTloginDOTerror = "adal.login.error".asInstanceOf[adalDOTloginDOTerror]
+  def adalDotloginDoterror: adalDotloginDoterror = "adal.login.error".asInstanceOf[adalDotloginDoterror]
   @scala.inline
-  def adalDOTloginDOTrequest: adalDOTloginDOTrequest = "adal.login.request".asInstanceOf[adalDOTloginDOTrequest]
+  def adalDotloginDotrequest: adalDotloginDotrequest = "adal.login.request".asInstanceOf[adalDotloginDotrequest]
   @scala.inline
-  def adalDOTnonceDOTidtoken: adalDOTnonceDOTidtoken = "adal.nonce.idtoken".asInstanceOf[adalDOTnonceDOTidtoken]
+  def adalDotnonceDotidtoken: adalDotnonceDotidtoken = "adal.nonce.idtoken".asInstanceOf[adalDotnonceDotidtoken]
   @scala.inline
-  def adalDOTsessionDOTstate: adalDOTsessionDOTstate = "adal.session.state".asInstanceOf[adalDOTsessionDOTstate]
+  def adalDotsessionDotstate: adalDotsessionDotstate = "adal.session.state".asInstanceOf[adalDotsessionDotstate]
   @scala.inline
-  def adalDOTstateDOTlogin: adalDOTstateDOTlogin = "adal.state.login".asInstanceOf[adalDOTstateDOTlogin]
+  def adalDotstateDotlogin: adalDotstateDotlogin = "adal.state.login".asInstanceOf[adalDotstateDotlogin]
   @scala.inline
-  def adalDOTstateDOTrenew: adalDOTstateDOTrenew = "adal.state.renew".asInstanceOf[adalDOTstateDOTrenew]
+  def adalDotstateDotrenew: adalDotstateDotrenew = "adal.state.renew".asInstanceOf[adalDotstateDotrenew]
   @scala.inline
-  def adalDOTtokenDOTkeys: adalDOTtokenDOTkeys = "adal.token.keys".asInstanceOf[adalDOTtokenDOTkeys]
+  def adalDottokenDotkeys: adalDottokenDotkeys = "adal.token.keys".asInstanceOf[adalDottokenDotkeys]
   @scala.inline
-  def adalDOTtokenDOTrenewDOTstatus: adalDOTtokenDOTrenewDOTstatus = "adal.token.renew.status".asInstanceOf[adalDOTtokenDOTrenewDOTstatus]
+  def adalDottokenDotrenewDotstatus: adalDottokenDotrenewDotstatus = "adal.token.renew.status".asInstanceOf[adalDottokenDotrenewDotstatus]
   @scala.inline
-  def adalDOTusername: adalDOTusername = "adal.username".asInstanceOf[adalDOTusername]
+  def adalDotusername: adalDotusername = "adal.username".asInstanceOf[adalDotusername]
   @scala.inline
   def error_description: error_description = "error_description".asInstanceOf[error_description]
   @scala.inline
@@ -180,7 +182,5 @@ object adalDashAngularStrings {
   def session_state: session_state = "session_state".asInstanceOf[session_state]
   @scala.inline
   def token: token = "token".asInstanceOf[token]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
 }
 

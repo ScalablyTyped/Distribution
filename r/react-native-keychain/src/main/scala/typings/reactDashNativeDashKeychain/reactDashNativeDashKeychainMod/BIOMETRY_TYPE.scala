@@ -1,9 +1,6 @@
 package typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod.BIOMETRY_TYPE.FACE_ID
-import typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod.BIOMETRY_TYPE.FINGERPRINT
-import typings.reactDashNativeDashKeychain.reactDashNativeDashKeychainMod.BIOMETRY_TYPE.TOUCH_ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

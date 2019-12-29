@@ -1,11 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.RosterItemEvent.Added
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.RosterItemEvent.Removed
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.RosterItemEvent.Subscribed
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.RosterItemEvent.Unsubscribed
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.RosterItemEvent.Updated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

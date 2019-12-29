@@ -1,22 +1,6 @@
 package typings.dwt.dynamsoft.BarcodeReader
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.AZTEC
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.All
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.CODABAR
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.CODE_128
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.CODE_39
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.CODE_93
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.DATAMATRIX
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.EAN_13
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.EAN_8
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.INDUSTRIAL_25
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.ITF
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.OneD
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.PDF417
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.QR_CODE
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.UPC_A
-import typings.dwt.dynamsoft.BarcodeReader.EnumBarcodeFormat.UPC_E
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

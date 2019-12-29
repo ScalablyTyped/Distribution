@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.cache
-import typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.network
-import typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

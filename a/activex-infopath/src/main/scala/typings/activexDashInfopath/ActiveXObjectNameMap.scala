@@ -8,22 +8,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var `InfoPath.Application`: Application
-  var `InfoPath.Editor`: InfoPathEditorObject
-  var `InfoPath.ExternalApplication`: ExternalApplication
+  @JSName("InfoPath.Application")
+  var InfoPathDotApplication: Application
+  @JSName("InfoPath.Editor")
+  var InfoPathDotEditor: InfoPathEditorObject
+  @JSName("InfoPath.ExternalApplication")
+  var InfoPathDotExternalApplication: ExternalApplication
 }
 
 object ActiveXObjectNameMap {
   @scala.inline
   def apply(
-    `InfoPath.Application`: Application,
-    `InfoPath.Editor`: InfoPathEditorObject,
-    `InfoPath.ExternalApplication`: ExternalApplication
+    InfoPathDotApplication: Application,
+    InfoPathDotEditor: InfoPathEditorObject,
+    InfoPathDotExternalApplication: ExternalApplication
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InfoPath.Application")(`InfoPath.Application`.asInstanceOf[js.Any])
-    __obj.updateDynamic("InfoPath.Editor")(`InfoPath.Editor`.asInstanceOf[js.Any])
-    __obj.updateDynamic("InfoPath.ExternalApplication")(`InfoPath.ExternalApplication`.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.Application")(InfoPathDotApplication.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.Editor")(InfoPathDotEditor.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.ExternalApplication")(InfoPathDotExternalApplication.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

@@ -1,6 +1,8 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
+import typings.typescriptDashServices.TypeScript.Services.EditorOptions
 import typings.typescriptDashServices.TypeScript.Services.Formatting.ITextSnapshot
+import typings.typescriptDashServices.TypeScript.SyntaxTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +12,10 @@ import scala.scalajs.js.annotation._
 class FormattingManager protected ()
   extends typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingManager {
   def this(
-    syntaxTree: typings.typescriptDashServices.TypeScript.SyntaxTree,
+    syntaxTree: SyntaxTree,
     snapshot: ITextSnapshot,
     rulesProvider: typings.typescriptDashServices.TypeScript.Services.Formatting.RulesProvider,
-    editorOptions: typings.typescriptDashServices.TypeScript.Services.EditorOptions
+    editorOptions: EditorOptions
   ) = this()
 }
 

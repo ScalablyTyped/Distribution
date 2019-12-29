@@ -75,10 +75,9 @@ package object rollupMod {
   ]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.rollup.rollupNumbers.`false`
+    - typings.rollup.rollupBooleans.`false`
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
     - typings.rollup.rollupMod.PartialResolvedId
   */
   type ResolveIdResult = js.UndefOr[_ResolveIdResult | String | Null]

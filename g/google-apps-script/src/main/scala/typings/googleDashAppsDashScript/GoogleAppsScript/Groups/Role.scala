@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Groups
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.INVITED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.MANAGER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.MEMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.OWNER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.PENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

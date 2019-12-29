@@ -25,7 +25,8 @@ class DoNotUseMeFolder protected () extends js.Object {
   val Items: typings.activexDashOutlook.Outlook.Items = js.native
   val MAPIOBJECT: js.Any = js.native
   var Name: String = js.native
-  var `Outlook.DoNotUseMeFolder_typekey`: DoNotUseMeFolder = js.native
+  @JSName("Outlook.DoNotUseMeFolder_typekey")
+  var OutlookDotDoNotUseMeFolder_typekey: DoNotUseMeFolder = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: typings.activexDashOutlook.Outlook.PropertyAccessor = js.native
   val Session: NameSpace = js.native

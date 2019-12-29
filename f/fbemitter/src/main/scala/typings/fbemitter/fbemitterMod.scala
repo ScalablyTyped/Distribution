@@ -1,6 +1,5 @@
 package typings.fbemitter
 
-import typings.fbemitter.fbemitterMod.EventSubscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

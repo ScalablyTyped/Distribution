@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MarkdownItConstructor
   extends Instantiable0[MarkdownIt]
-     with Instantiable2[commonmark | zero | default, /* options */ Options, MarkdownIt]
-     with Instantiable1[commonmark | zero | default | (/* options */ Options), MarkdownIt] {
+     with Instantiable1[commonmark | zero | default | (/* options */ Options), MarkdownIt]
+     with Instantiable2[commonmark | zero | default, /* options */ Options, MarkdownIt] {
   def apply(): MarkdownIt = js.native
   def apply(options: Options): MarkdownIt = js.native
   def apply(presetName: commonmark): MarkdownIt = js.native

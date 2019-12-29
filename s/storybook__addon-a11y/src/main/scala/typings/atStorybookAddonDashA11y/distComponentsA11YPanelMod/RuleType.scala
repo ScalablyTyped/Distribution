@@ -1,9 +1,6 @@
 package typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.INCOMPLETION
-import typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.PASS
-import typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.VIOLATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

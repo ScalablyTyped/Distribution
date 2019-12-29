@@ -1,6 +1,6 @@
 package typings.atFirebaseFirestore.distTestUnitSpecsSpecUnderscoreTestUnderscoreRunnerMod
 
-import typings.atFirebaseFirestore.atFirebaseFirestoreNumbers.`true`
+import typings.atFirebaseFirestore.atFirebaseFirestoreBooleans.`true`
 import typings.std.VisibilityState
 import scala.scalajs.js
 import scala.scalajs.js.`|`

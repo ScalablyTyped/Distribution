@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NthChild extends Nth {
+trait NthChild
+  extends NthSelectorAtom
+     with NthSelector
+     with Selector {
   @JSName("type")
   var type_NthChild: `nth-child`
 }

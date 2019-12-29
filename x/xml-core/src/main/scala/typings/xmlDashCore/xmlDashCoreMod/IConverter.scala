@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait IConverter[T] extends js.Object {
   /**
-    * Converts value from Object to Xmml element
-    * 
+    * Converts value from Object to Xml element
+    *
     * @memberOf IConverter
     */
   def get(value: T): js.UndefOr[String]
   /**
     * Converts value from Xml element to Object
-    * 
+    *
     * @memberOf IConverter
     */
   def set(value: String): T

@@ -1,17 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.ScriptTarget.ES2015
-import typings.typescript.typescriptMod.ScriptTarget.ES2016
-import typings.typescript.typescriptMod.ScriptTarget.ES2017
-import typings.typescript.typescriptMod.ScriptTarget.ES2018
-import typings.typescript.typescriptMod.ScriptTarget.ES2019
-import typings.typescript.typescriptMod.ScriptTarget.ES2020
-import typings.typescript.typescriptMod.ScriptTarget.ES3
-import typings.typescript.typescriptMod.ScriptTarget.ES5
-import typings.typescript.typescriptMod.ScriptTarget.ESNext
-import typings.typescript.typescriptMod.ScriptTarget.JSON
-import typings.typescript.typescriptMod.ScriptTarget.Latest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

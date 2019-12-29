@@ -1,14 +1,6 @@
 package typings.atAngularCompiler
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.Token
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Character
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Error
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Identifier
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Keyword
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Number
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Operator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

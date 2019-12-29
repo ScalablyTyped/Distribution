@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.LabelPlacement.Inside
-import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.LabelPlacement.Outside
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

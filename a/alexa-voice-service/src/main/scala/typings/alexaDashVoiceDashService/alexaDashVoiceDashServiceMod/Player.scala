@@ -1,14 +1,6 @@
 package typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.DEQUE
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.ENQUEUE
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.ERROR
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.LOG
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.PAUSE
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.PLAY
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.REPLAY
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.STOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

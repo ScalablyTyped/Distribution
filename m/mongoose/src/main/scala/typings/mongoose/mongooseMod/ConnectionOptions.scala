@@ -83,7 +83,7 @@ object ConnectionOptions {
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     bufferCommands: js.UndefOr[Boolean] = js.undefined,
     bufferMaxEntries: Int | Double = null,
-    checkServerIdentity: Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[typings.node.Error]]) = null,
+    checkServerIdentity: Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[typings.std.Error]]) = null,
     ciphers: String = null,
     config: Anon_AutoIndex = null,
     connectTimeoutMS: Int | Double = null,

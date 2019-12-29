@@ -13,23 +13,17 @@ import scala.scalajs.js.annotation._
     * Execute a callback for every contiguous range of entities within the block.
     */
   def findEntityRanges(
-    filterFn: js.Function1[
-      /* value */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata, 
-      Boolean
-    ],
+    filterFn: js.Function1[/* value */ CharacterMetadata, Boolean],
     callback: js.Function2[/* start */ Double, /* end */ Double, Unit]
   ): Unit
   /**
     * Execute a callback for every contiguous range of styles within the block.
     */
   def findStyleRanges(
-    filterFn: js.Function1[
-      /* value */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata, 
-      Boolean
-    ],
+    filterFn: js.Function1[/* value */ CharacterMetadata, Boolean],
     callback: js.Function2[/* start */ Double, /* end */ Double, Unit]
   ): Unit
-  def getCharacterList(): List[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata]
+  def getCharacterList(): List[CharacterMetadata]
   def getData(): Map[_, _]
   def getDepth(): Double
   def getEntityAt(offset: Double): String
@@ -43,15 +37,9 @@ import scala.scalajs.js.annotation._
 object ContentBlock {
   @scala.inline
   def apply(
-    findEntityRanges: (js.Function1[
-      /* value */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata, 
-      Boolean
-    ], js.Function2[/* start */ Double, /* end */ Double, Unit]) => Unit,
-    findStyleRanges: (js.Function1[
-      /* value */ typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata, 
-      Boolean
-    ], js.Function2[/* start */ Double, /* end */ Double, Unit]) => Unit,
-    getCharacterList: () => List[typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.CharacterMetadata],
+    findEntityRanges: (js.Function1[/* value */ CharacterMetadata, Boolean], js.Function2[/* start */ Double, /* end */ Double, Unit]) => Unit,
+    findStyleRanges: (js.Function1[/* value */ CharacterMetadata, Boolean], js.Function2[/* start */ Double, /* end */ Double, Unit]) => Unit,
+    getCharacterList: () => List[CharacterMetadata],
     getData: () => Map[_, _],
     getDepth: () => Double,
     getEntityAt: Double => String,

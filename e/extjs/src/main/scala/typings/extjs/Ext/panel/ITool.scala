@@ -18,7 +18,7 @@ trait ITool extends IComponent {
   		* @param type String The new type. See the type config.
   		* @returns Ext.panel.Tool this
   		*/
-  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], this.type]] = js.undefined
   /** [Config Option] (Boolean) */
   var stopEvent: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Ext.Component) */
@@ -26,9 +26,9 @@ trait ITool extends IComponent {
   /** [Config Option] (String/Object) */
   var tooltip: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var tooltipType: js.UndefOr[java.lang.String] = js.undefined
+  var tooltipType: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 
 object ITool {
@@ -39,12 +39,12 @@ object ITool {
     handler: js.Any = null,
     isTool: js.UndefOr[Boolean] = js.undefined,
     scope: js.Any = null,
-    setType: /* type */ js.UndefOr[java.lang.String] => ITool = null,
+    setType: /* type */ js.UndefOr[String] => ITool = null,
     stopEvent: js.UndefOr[Boolean] = js.undefined,
     toolOwner: IComponent = null,
     tooltip: js.Any = null,
-    tooltipType: java.lang.String = null,
-    `type`: java.lang.String = null
+    tooltipType: String = null,
+    `type`: String = null
   ): ITool = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

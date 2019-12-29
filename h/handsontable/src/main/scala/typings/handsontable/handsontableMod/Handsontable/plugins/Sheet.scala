@@ -15,11 +15,11 @@ trait Sheet extends js.Object {
   var t: RecordTranslator = js.native
   def applyChanges(row: Double, column: Double, newValue: js.Any): Unit = js.native
   def destroy(): Unit = js.native
-  def getCellAt(row: Double, column: Double): typings.handsontable.handsontableMod.Handsontable.plugins.CellValue | Unit = js.native
+  def getCellAt(row: Double, column: Double): CellValue | Unit = js.native
   def getCellDependencies(row: Double, column: Double): js.Array[_] = js.native
   def getVariable(name: String): js.Any = js.native
   def parseExpression(cellValue: js.Object, formula: String): Unit = js.native
-  def parseExpression(cellValue: typings.handsontable.handsontableMod.Handsontable.plugins.CellValue, formula: String): Unit = js.native
+  def parseExpression(cellValue: CellValue, formula: String): Unit = js.native
   def recalculate(): Unit = js.native
   def recalculateFull(): Unit = js.native
   def recalculateOptimized(): Unit = js.native

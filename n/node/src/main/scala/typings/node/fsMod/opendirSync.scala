@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fs", "opendirSync")
 @js.native
 object opendirSync extends js.Object {
-  def apply(path: java.lang.String): Dir = js.native
-  def apply(path: java.lang.String, options: OpenDirOptions): Dir = js.native
+  def apply(path: String): Dir = js.native
+  def apply(path: String, options: OpenDirOptions): Dir = js.native
 }
 

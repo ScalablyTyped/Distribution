@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Column
-import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Default
-import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Row
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

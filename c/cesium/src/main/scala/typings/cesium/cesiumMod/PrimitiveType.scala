@@ -1,13 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.PrimitiveType.LINES
-import typings.cesium.cesiumMod.PrimitiveType.LINE_LOOP
-import typings.cesium.cesiumMod.PrimitiveType.LINE_STRIP
-import typings.cesium.cesiumMod.PrimitiveType.POINTS
-import typings.cesium.cesiumMod.PrimitiveType.TRIANGLES
-import typings.cesium.cesiumMod.PrimitiveType.TRIANGLE_FAN
-import typings.cesium.cesiumMod.PrimitiveType.TRIANGLE_STRIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

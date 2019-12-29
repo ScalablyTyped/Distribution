@@ -2,8 +2,6 @@ package typings.xstate
 
 import typings.std.Iterable
 import typings.std.Map
-import typings.xstate.libStateUtilsMod.AdjList
-import typings.xstate.libStateUtilsMod.Configuration
 import typings.xstate.libTypesMod.EventObject
 import typings.xstate.libTypesMod.StateValue
 import typings.xstate.xstateMod.StateNode

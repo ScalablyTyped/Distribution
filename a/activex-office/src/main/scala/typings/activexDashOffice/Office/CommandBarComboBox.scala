@@ -30,7 +30,8 @@ class CommandBarComboBox protected () extends js.Object {
   var ListHeaderCount: Double = js.native
   var ListIndex: Double = js.native
   var OLEUsage: MsoControlOLEUsage = js.native
-  var `Office.CommandBarComboBox_typekey`: CommandBarComboBox = js.native
+  @JSName("Office.CommandBarComboBox_typekey")
+  var OfficeDotCommandBarComboBox_typekey: CommandBarComboBox = js.native
   var OnAction: String = js.native
   var Parameter: String = js.native
   val Parent: CommandBar = js.native

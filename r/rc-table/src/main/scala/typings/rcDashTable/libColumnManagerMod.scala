@@ -1,6 +1,5 @@
 package typings.rcDashTable
 
-import typings.rcDashTable.libColumnManagerMod.ColumnManager
 import typings.rcDashTable.libInterfaceMod.ColumnType
 import typings.rcDashTable.libInterfaceMod.DefaultValueType
 import typings.react.reactMod.ReactNode

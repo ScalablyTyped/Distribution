@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Security.Authentication.Web
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.errorHttp
-import typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.success
-import typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.userCancel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

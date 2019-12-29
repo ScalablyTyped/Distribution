@@ -1,8 +1,8 @@
 package typings.ajv.ajvMod
 
-import typings.ajv.ajvNumbers.`false`
-import typings.ajv.ajvNumbers.`true`
-import typings.ajv.ajvStrings.DOLLARid
+import typings.ajv.ajvBooleans.`false`
+import typings.ajv.ajvBooleans.`true`
+import typings.ajv.ajvStrings.$id
 import typings.ajv.ajvStrings.all
 import typings.ajv.ajvStrings.array
 import typings.ajv.ajvStrings.auto
@@ -51,7 +51,7 @@ trait Options extends js.Object {
   var passContext: js.UndefOr[Boolean] = js.native
   var processCode: js.UndefOr[js.Function1[/* code */ String, String]] = js.native
   var removeAdditional: js.UndefOr[Boolean | all | failing] = js.native
-  var schemaId: js.UndefOr[DOLLARid | id | auto] = js.native
+  var schemaId: js.UndefOr[$id | id | auto] = js.native
   var schemas: js.UndefOr[js.Array[js.Object] | js.Object] = js.native
   var serialize: js.UndefOr[(js.Function1[/* schema */ js.Object | Boolean, _]) | `false`] = js.native
   var sourceCode: js.UndefOr[Boolean] = js.native

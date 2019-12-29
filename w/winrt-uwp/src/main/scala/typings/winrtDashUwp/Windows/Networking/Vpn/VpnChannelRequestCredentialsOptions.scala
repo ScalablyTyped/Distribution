@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.none
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.retrying
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.useForSingleSignIn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

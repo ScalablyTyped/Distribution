@@ -18,13 +18,13 @@ import scala.scalajs.js.annotation._
 
 object ionicStrings {
   @js.native
-  sealed trait `0DOT0DOT0DOT0` extends js.Object
+  sealed trait `0Dot0Dot0Dot0` extends js.Object
   
   @js.native
-  sealed trait `@angular/cli` extends js.Object
+  sealed trait `@angularSlashcli` extends js.Object
   
   @js.native
-  sealed trait `@ionic/app-scripts` extends js.Object
+  sealed trait `@ionicSlashapp-scripts` extends js.Object
   
   @js.native
   sealed trait `Angular CLI` extends js.Object
@@ -66,7 +66,7 @@ object ionicStrings {
   sealed trait `Ionic App Scripts` extends js.Object
   
   @js.native
-  sealed trait `Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform appsDOT` extends js.Object
+  sealed trait `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot` extends js.Object
   
   @js.native
   sealed trait LOCAL_CLI_NOT_FOUND extends js.Object
@@ -105,7 +105,7 @@ object ionicStrings {
   sealed trait `Target native iOS and Android with Apache Cordova` extends js.Object
   
   @js.native
-  sealed trait `Target native iOS and Android with Capacitor, Ionic_quotes new native layer` extends js.Object
+  sealed trait `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer` extends js.Object
   
   @js.native
   sealed trait UNKNOWN_CONTENT_TYPE extends js.Object
@@ -138,7 +138,7 @@ object ionicStrings {
   sealed trait `app-scripts-update-available` extends js.Object
   
   @js.native
-  sealed trait `application/json` extends js.Object
+  sealed trait applicationSlashjson extends js.Object
   
   @js.native
   sealed trait bare extends ProjectType
@@ -153,10 +153,10 @@ object ionicStrings {
   sealed trait browser extends KnownPlatform
   
   @js.native
-  sealed trait `build:after` extends HookName
+  sealed trait buildColonafter extends HookName
   
   @js.native
-  sealed trait `build:before` extends HookName
+  sealed trait buildColonbefore extends HookName
   
   @js.native
   sealed trait canary extends DistTag
@@ -167,13 +167,13 @@ object ionicStrings {
        with IntegrationName
   
   @js.native
-  sealed trait capacitorDOTconfigDOTjson extends js.Object
+  sealed trait capacitorDotconfigDotjson extends js.Object
   
   @js.native
   sealed trait compile extends js.Object
   
   @js.native
-  sealed trait configDOTjson extends js.Object
+  sealed trait configDotjson extends js.Object
   
   @js.native
   sealed trait cordova
@@ -220,10 +220,10 @@ object ionicStrings {
   sealed trait guard extends js.Object
   
   @js.native
-  sealed trait `https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet` extends js.Object
+  sealed trait httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet extends js.Object
   
   @js.native
-  sealed trait `https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet/integration-cordovaDOTtarDOTgz` extends js.Object
+  sealed trait `httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz` extends js.Object
   
   @js.native
   sealed trait icon extends KnownResourceType
@@ -265,13 +265,13 @@ object ionicStrings {
   sealed trait ionic1 extends ProjectType
   
   @js.native
-  sealed trait `ionic:build` extends js.Object
+  sealed trait ionicColonbuild extends js.Object
   
   @js.native
-  sealed trait `ionic:serve` extends js.Object
+  sealed trait ionicColonserve extends js.Object
   
   @js.native
-  sealed trait ionicDOTconfigDOTjson extends js.Object
+  sealed trait ionicDotconfigDotjson extends js.Object
   
   @js.native
   sealed trait ios extends KnownPlatform
@@ -343,13 +343,13 @@ object ionicStrings {
   sealed trait run extends PkgManagerCommand
   
   @js.native
-  sealed trait `serve:after` extends HookName
+  sealed trait serveColonafter extends HookName
   
   @js.native
-  sealed trait `serve:before` extends HookName
+  sealed trait serveColonbefore extends HookName
   
   @js.native
-  sealed trait `serve:ready` extends js.Object
+  sealed trait serveColonready extends js.Object
   
   @js.native
   sealed trait splash extends KnownResourceType
@@ -400,11 +400,11 @@ object ionicStrings {
   sealed trait yarn_ extends NpmClient
   
   @scala.inline
-  def `0DOT0DOT0DOT0`: `0DOT0DOT0DOT0` = "0.0.0.0".asInstanceOf[`0DOT0DOT0DOT0`]
+  def `0Dot0Dot0Dot0`: `0Dot0Dot0Dot0` = "0.0.0.0".asInstanceOf[`0Dot0Dot0Dot0`]
   @scala.inline
-  def `@angular/cli`: `@angular/cli` = "@angular/cli".asInstanceOf[`@angular/cli`]
+  def `@angularSlashcli`: `@angularSlashcli` = "@angular/cli".asInstanceOf[`@angularSlashcli`]
   @scala.inline
-  def `@ionic/app-scripts`: `@ionic/app-scripts` = "@ionic/app-scripts".asInstanceOf[`@ionic/app-scripts`]
+  def `@ionicSlashapp-scripts`: `@ionicSlashapp-scripts` = "@ionic/app-scripts".asInstanceOf[`@ionicSlashapp-scripts`]
   @scala.inline
   def `Angular CLI`: `Angular CLI` = "Angular CLI".asInstanceOf[`Angular CLI`]
   @scala.inline
@@ -432,7 +432,7 @@ object ionicStrings {
   @scala.inline
   def `Ionic App Scripts`: `Ionic App Scripts` = "Ionic App Scripts".asInstanceOf[`Ionic App Scripts`]
   @scala.inline
-  def `Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform appsDOT`: `Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform appsDOT` = "Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform apps.".asInstanceOf[`Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform appsDOT`]
+  def `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`: `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot` = "Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform apps.".asInstanceOf[`Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`]
   @scala.inline
   def LOCAL_CLI_NOT_FOUND: LOCAL_CLI_NOT_FOUND = "LOCAL_CLI_NOT_FOUND".asInstanceOf[LOCAL_CLI_NOT_FOUND]
   @scala.inline
@@ -458,7 +458,7 @@ object ionicStrings {
   @scala.inline
   def `Target native iOS and Android with Apache Cordova`: `Target native iOS and Android with Apache Cordova` = "Target native iOS and Android with Apache Cordova".asInstanceOf[`Target native iOS and Android with Apache Cordova`]
   @scala.inline
-  def `Target native iOS and Android with Capacitor, Ionic_quotes new native layer`: `Target native iOS and Android with Capacitor, Ionic_quotes new native layer` = "Target native iOS and Android with Capacitor, Ionic's new native layer".asInstanceOf[`Target native iOS and Android with Capacitor, Ionic_quotes new native layer`]
+  def `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer`: `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer` = "Target native iOS and Android with Capacitor, Ionic's new native layer".asInstanceOf[`Target native iOS and Android with CapacitorComma IonicApostrophes new native layer`]
   @scala.inline
   def UNKNOWN_CONTENT_TYPE: UNKNOWN_CONTENT_TYPE = "UNKNOWN_CONTENT_TYPE".asInstanceOf[UNKNOWN_CONTENT_TYPE]
   @scala.inline
@@ -480,7 +480,7 @@ object ionicStrings {
   @scala.inline
   def `app-scripts-update-available`: `app-scripts-update-available` = "app-scripts-update-available".asInstanceOf[`app-scripts-update-available`]
   @scala.inline
-  def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
+  def applicationSlashjson: applicationSlashjson = "application/json".asInstanceOf[applicationSlashjson]
   @scala.inline
   def bare: bare = "bare".asInstanceOf[bare]
   @scala.inline
@@ -490,19 +490,19 @@ object ionicStrings {
   @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   @scala.inline
-  def `build:after`: `build:after` = "build:after".asInstanceOf[`build:after`]
+  def buildColonafter: buildColonafter = "build:after".asInstanceOf[buildColonafter]
   @scala.inline
-  def `build:before`: `build:before` = "build:before".asInstanceOf[`build:before`]
+  def buildColonbefore: buildColonbefore = "build:before".asInstanceOf[buildColonbefore]
   @scala.inline
   def canary: canary = "canary".asInstanceOf[canary]
   @scala.inline
   def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
   @scala.inline
-  def capacitorDOTconfigDOTjson: capacitorDOTconfigDOTjson = "capacitor.config.json".asInstanceOf[capacitorDOTconfigDOTjson]
+  def capacitorDotconfigDotjson: capacitorDotconfigDotjson = "capacitor.config.json".asInstanceOf[capacitorDotconfigDotjson]
   @scala.inline
   def compile: compile = "compile".asInstanceOf[compile]
   @scala.inline
-  def configDOTjson: configDOTjson = "config.json".asInstanceOf[configDOTjson]
+  def configDotjson: configDotjson = "config.json".asInstanceOf[configDotjson]
   @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   @scala.inline
@@ -532,9 +532,9 @@ object ionicStrings {
   @scala.inline
   def guard: guard = "guard".asInstanceOf[guard]
   @scala.inline
-  def `https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet`: `https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet` = "https://d2ql0qc7j8u4b2.cloudfront.net".asInstanceOf[`https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet`]
+  def httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet: httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet = "https://d2ql0qc7j8u4b2.cloudfront.net".asInstanceOf[httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnet]
   @scala.inline
-  def `https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet/integration-cordovaDOTtarDOTgz`: `https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet/integration-cordovaDOTtarDOTgz` = "https://d2ql0qc7j8u4b2.cloudfront.net/integration-cordova.tar.gz".asInstanceOf[`https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet/integration-cordovaDOTtarDOTgz`]
+  def `httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz`: `httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz` = "https://d2ql0qc7j8u4b2.cloudfront.net/integration-cordova.tar.gz".asInstanceOf[`httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz`]
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   @scala.inline
@@ -562,11 +562,11 @@ object ionicStrings {
   @scala.inline
   def ionic1: ionic1 = "ionic1".asInstanceOf[ionic1]
   @scala.inline
-  def `ionic:build`: `ionic:build` = "ionic:build".asInstanceOf[`ionic:build`]
+  def ionicColonbuild: ionicColonbuild = "ionic:build".asInstanceOf[ionicColonbuild]
   @scala.inline
-  def `ionic:serve`: `ionic:serve` = "ionic:serve".asInstanceOf[`ionic:serve`]
+  def ionicColonserve: ionicColonserve = "ionic:serve".asInstanceOf[ionicColonserve]
   @scala.inline
-  def ionicDOTconfigDOTjson: ionicDOTconfigDOTjson = "ionic.config.json".asInstanceOf[ionicDOTconfigDOTjson]
+  def ionicDotconfigDotjson: ionicDotconfigDotjson = "ionic.config.json".asInstanceOf[ionicDotconfigDotjson]
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   @scala.inline
@@ -614,11 +614,11 @@ object ionicStrings {
   @scala.inline
   def run: run = "run".asInstanceOf[run]
   @scala.inline
-  def `serve:after`: `serve:after` = "serve:after".asInstanceOf[`serve:after`]
+  def serveColonafter: serveColonafter = "serve:after".asInstanceOf[serveColonafter]
   @scala.inline
-  def `serve:before`: `serve:before` = "serve:before".asInstanceOf[`serve:before`]
+  def serveColonbefore: serveColonbefore = "serve:before".asInstanceOf[serveColonbefore]
   @scala.inline
-  def `serve:ready`: `serve:ready` = "serve:ready".asInstanceOf[`serve:ready`]
+  def serveColonready: serveColonready = "serve:ready".asInstanceOf[serveColonready]
   @scala.inline
   def splash: splash = "splash".asInstanceOf[splash]
   @scala.inline

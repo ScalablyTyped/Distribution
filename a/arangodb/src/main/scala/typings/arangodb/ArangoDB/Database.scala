@@ -1,7 +1,7 @@
 package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.arangodb.arangodbNumbers.`true`
+import typings.arangodb.arangodbBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

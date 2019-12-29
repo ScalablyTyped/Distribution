@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 
 trait IAnchorLayout extends IAuto {
   /** [Config Option] (String) */
-  var anchor: js.UndefOr[java.lang.String] = js.undefined
+  var anchor: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var defaultAnchor: js.UndefOr[java.lang.String] = js.undefined
+  var defaultAnchor: js.UndefOr[String] = js.undefined
   /** [Method] Returns an object describing how this layout manages the size of the given component
   		* @param item Object
   		* @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
@@ -29,7 +29,7 @@ object IAnchorLayout {
     afterRemove: /* item */ js.UndefOr[js.Any] => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    anchor: java.lang.String = null,
+    anchor: String = null,
     beginLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
     beginLayoutCycle: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
     calculate: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
@@ -40,19 +40,19 @@ object IAnchorLayout {
     completeLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
     config: js.Any = null,
     configureItem: /* item */ js.UndefOr[js.Any] => Unit = null,
-    defaultAnchor: java.lang.String = null,
+    defaultAnchor: String = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
     getContainerSize: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => _ = null,
     getElementTarget: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: /* item */ js.UndefOr[js.Any] => ISizePolicy = null,
     getLayoutItems: () => Array = null,
-    getOverflowXStyle: /* ownerContext */ js.UndefOr[IContextItem] => java.lang.String = null,
-    getOverflowYStyle: /* ownerContext */ js.UndefOr[IContextItem] => java.lang.String = null,
+    getOverflowXStyle: /* ownerContext */ js.UndefOr[IContextItem] => String = null,
+    getOverflowYStyle: /* ownerContext */ js.UndefOr[IContextItem] => String = null,
     getRenderTarget: () => IElement = null,
     getRenderedItems: () => Array = null,
     getTarget: () => IElement = null,
@@ -62,7 +62,7 @@ object IAnchorLayout {
     initLayout: () => Unit = null,
     isLayout: js.UndefOr[Boolean] = js.undefined,
     isValidParent: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     manageOverflow: js.UndefOr[Boolean] = js.undefined,
     managePadding: js.UndefOr[Boolean] = js.undefined,
     mixins: js.Any = null,

@@ -1,7 +1,6 @@
 package typings.appDashBuilderDashLib
 
 import typings.appDashBuilderDashLib.outTargetsNsisNsisTargetMod.NsisTarget
-import typings.appDashBuilderDashLib.outTargetsNsisNsisUtilMod.CopyElevateHelper
 import typings.builderDashUtil.outArchMod.Arch
 import typings.builderDashUtilDashRuntime.outUpdateInfoMod.PackageFileInfo
 import typings.lazyDashVal.lazyDashValMod.Lazy

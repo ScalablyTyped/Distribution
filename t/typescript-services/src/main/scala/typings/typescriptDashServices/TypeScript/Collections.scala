@@ -1,7 +1,5 @@
 package typings.typescriptDashServices.TypeScript
 
-import typings.typescriptDashServices.TypeScript.Collections.HashTable
-import typings.typescriptDashServices.TypeScript.Collections.StringTable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

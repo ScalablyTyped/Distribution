@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Effects
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.done
-import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.effectCurrentlyUnloaded
-import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.unknownError
-import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.unsupportedEncodingFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -54,7 +54,6 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
     /**
@@ -93,7 +92,6 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -101,7 +99,6 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       *
       * @return Iterator to the end.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* InferMemberOverrides */
@@ -136,6 +133,7 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[T] = js.native
     /* InferMemberOverrides */
     override def removeEventListener(`type`: Type, listener: Listener[T, Deque[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
@@ -146,11 +144,13 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def rend(): ReverseIterator[T] = js.native
     /**
       * Number of elements in the container.
       */
     /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

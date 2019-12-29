@@ -19,7 +19,8 @@ class Graphic protected () extends js.Object {
   var CropLeft: Double = js.native
   var CropRight: Double = js.native
   var CropTop: Double = js.native
-  var `Excel.Graphic_typekey`: Graphic = js.native
+  @JSName("Excel.Graphic_typekey")
+  var ExcelDotGraphic_typekey: Graphic = js.native
   var Filename: String = js.native
   var Height: Double = js.native
   var LockAspectRatio: MsoTriState = js.native

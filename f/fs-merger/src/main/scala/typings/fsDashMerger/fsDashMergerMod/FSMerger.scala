@@ -60,24 +60,24 @@ trait FSMerger extends js.Object {
   def readFileSync(filePath: String): js.UndefOr[FileContent] = js.native
   def readFileSync(filePath: String, options: String): js.UndefOr[FileContent] = js.native
   def readFileSync(filePath: String, options: Anon_Encoding): js.UndefOr[FileContent] = js.native
-  def readFileSync(path: Double): Buffer = js.native
+  def readFileSync(path: Double): String | Buffer = js.native
   def readFileSync(path: Double, options: String): String | Buffer = js.native
   def readFileSync(path: Double, options: Anon_EncodingFlag): Buffer = js.native
   def readFileSync(path: Double, options: Anon_EncodingFlagNull): String | Buffer = js.native
   def readFileSync(path: Double, options: Anon_EncodingFlagString): String = js.native
-  def readFileSync(path: PathLike): Buffer = js.native
+  def readFileSync(path: PathLike): String | Buffer = js.native
   def readFileSync(path: PathLike, options: String): String | Buffer = js.native
   def readFileSync(path: PathLike, options: Anon_EncodingFlag): Buffer = js.native
   def readFileSync(path: PathLike, options: Anon_EncodingFlagNull): String | Buffer = js.native
   def readFileSync(path: PathLike, options: Anon_EncodingFlagString): String = js.native
   @JSName("readFileSync")
+  def readFileSync_Buffer(path: Double): Buffer = js.native
+  @JSName("readFileSync")
+  def readFileSync_Buffer(path: PathLike): Buffer = js.native
+  @JSName("readFileSync")
   def readFileSync_String(path: Double, options: String): String = js.native
   @JSName("readFileSync")
   def readFileSync_String(path: PathLike, options: String): String = js.native
-  @JSName("readFileSync")
-  def readFileSync_Union(path: Double): String | Buffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_Union(path: PathLike): String | Buffer = js.native
   def readdir(
     dirPath: String,
     options: js.UndefOr[scala.Nothing],

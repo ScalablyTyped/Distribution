@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 - typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.DocumentSnapshot because Already inherited
 - typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesMod.QueryDocumentSnapshot because Inheritance from two classes. Inlined  */ @JSImport("@firebase/firestore/dist/src/api/database", "QueryDocumentSnapshot")
 @js.native
-class QueryDocumentSnapshot () extends DocumentSnapshot
+class QueryDocumentSnapshot[T] () extends DocumentSnapshot[T]
 

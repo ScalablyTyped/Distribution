@@ -10,7 +10,8 @@ class TableStyle protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val BuiltIn: Boolean = js.native
   val Creator: XlCreator = js.native
-  var `Excel.TableStyle_typekey`: TableStyle = js.native
+  @JSName("Excel.TableStyle_typekey")
+  var ExcelDotTableStyle_typekey: TableStyle = js.native
   val Name: String = js.native
   val NameLocal: String = js.native
   val Parent: js.Any = js.native

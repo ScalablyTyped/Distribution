@@ -1,7 +1,6 @@
 package typings.atMaterialTextfield
 
 import typings.atMaterialTextfield.helperDashTextAdapterMod.MDCTextFieldHelperTextAdapter
-import typings.atMaterialTextfield.helperDashTextFoundationMod.MDCTextFieldHelperTextFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

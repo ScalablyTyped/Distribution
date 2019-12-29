@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CoverageQueryFlags.BlockData
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CoverageQueryFlags.Functions
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CoverageQueryFlags.Modules
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

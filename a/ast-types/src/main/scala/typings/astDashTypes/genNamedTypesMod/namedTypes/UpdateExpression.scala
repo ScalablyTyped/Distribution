@@ -1,7 +1,7 @@
 package typings.astDashTypes.genNamedTypesMod.namedTypes
 
 import org.scalablytyped.runtime.TopLevel
-import typings.astDashTypes.astDashTypesStrings.`++`
+import typings.astDashTypes.astDashTypesStrings.PlussignPlussign
 import typings.astDashTypes.astDashTypesStrings.`--`
 import typings.astDashTypes.genKindsMod.ExpressionKind
 import typings.astDashTypes.genKindsMod.NodeKind
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
      with NodeKind
      with PrintableKind {
   var argument: ExpressionKind
-  var operator: `++` | `--`
+  var operator: PlussignPlussign | `--`
   var prefix: Boolean
   var `type`: typings.astDashTypes.astDashTypesStrings.UpdateExpression
 }

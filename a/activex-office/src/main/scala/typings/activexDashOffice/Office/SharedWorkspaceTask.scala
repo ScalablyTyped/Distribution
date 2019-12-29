@@ -17,7 +17,8 @@ class SharedWorkspaceTask protected () extends js.Object {
   var DueDate: VarDate = js.native
   val ModifiedBy: String = js.native
   val ModifiedDate: VarDate = js.native
-  var `Office.SharedWorkspaceTask_typekey`: SharedWorkspaceTask = js.native
+  @JSName("Office.SharedWorkspaceTask_typekey")
+  var OfficeDotSharedWorkspaceTask_typekey: SharedWorkspaceTask = js.native
   val Parent: js.Any = js.native
   var Priority: MsoSharedWorkspaceTaskPriority = js.native
   var Status: MsoSharedWorkspaceTaskStatus = js.native

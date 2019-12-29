@@ -1,8 +1,6 @@
 package typings.grammarkdown.distOptionsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grammarkdown.distOptionsMod.NewLineKind.CarriageReturnLineFeed
-import typings.grammarkdown.distOptionsMod.NewLineKind.LineFeed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

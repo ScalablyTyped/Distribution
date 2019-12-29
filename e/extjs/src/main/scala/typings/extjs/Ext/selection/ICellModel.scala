@@ -24,7 +24,7 @@ trait ICellModel extends IModel {
   var getCurrentPosition: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] ("SINGLE") */
   @JSName("mode")
-  var mode_ICellModel: js.UndefOr[java.lang.String] = js.undefined
+  var mode_ICellModel: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var preventWrap: js.UndefOr[Boolean] = js.undefined
   /** [Method] Selects a record instance by record instance or index
@@ -72,18 +72,18 @@ object ICellModel {
     deselectRange: (/* startRow */ js.UndefOr[js.Any], /* endRow */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     enableKeyNav: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getCount: () => Double = null,
     getCurrentPosition: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLastSelected: () => ICellModel = null,
     getSelection: () => Array = null,
-    getSelectionMode: () => java.lang.String = null,
+    getSelectionMode: () => String = null,
     getStore: () => IAbstractStore = null,
     getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hasSelection: () => Boolean = null,
     inheritableStatics: js.Any = null,
@@ -95,7 +95,7 @@ object ICellModel {
     isSelected: /* record */ js.UndefOr[js.Any] => Boolean = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
-    mode: java.lang.String = null,
+    mode: String = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
@@ -103,8 +103,8 @@ object ICellModel {
     onUnbindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     preventWrap: js.UndefOr[Boolean] = js.undefined,
     pruneRemoved: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -117,13 +117,13 @@ object ICellModel {
     setCurrentPosition: (/* position */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
     setLastFocused: /* record */ js.UndefOr[ICellModel] => Unit = null,
     setLocked: /* locked */ js.UndefOr[Boolean] => Unit = null,
-    setSelectionMode: /* selMode */ js.UndefOr[java.lang.String] => Unit = null,
+    setSelectionMode: /* selMode */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     toggleOnClick: js.UndefOr[Boolean] = js.undefined,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     uses: Array = null
   ): ICellModel = {

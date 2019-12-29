@@ -1,7 +1,7 @@
 package typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsNumbers.`true`
+import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsBooleans.`true`
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

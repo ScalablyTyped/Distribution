@@ -22,8 +22,7 @@ object ItemType extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ItemType with Double] = js.native
   /* 0 */ @js.native
-  object Button
-    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.ItemType.Button with Double]
+  object Button extends TopLevel[Button with Double]
   
   /* 1 */ @js.native
   object Tab

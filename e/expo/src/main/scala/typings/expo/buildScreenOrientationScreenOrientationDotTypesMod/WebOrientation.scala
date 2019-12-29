@@ -1,10 +1,6 @@
 package typings.expo.buildScreenOrientationScreenOrientationDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.LANDSCAPE_PRIMARY
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.LANDSCAPE_SECONDARY
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.PORTRAIT_PRIMARY
-import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.PORTRAIT_SECONDARY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

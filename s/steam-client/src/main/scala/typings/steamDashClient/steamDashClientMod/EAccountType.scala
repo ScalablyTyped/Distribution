@@ -1,18 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EAccountType.AnonGameServer
-import typings.steamDashClient.steamDashClientMod.EAccountType.AnonUser
-import typings.steamDashClient.steamDashClientMod.EAccountType.Chat
-import typings.steamDashClient.steamDashClientMod.EAccountType.Clan
-import typings.steamDashClient.steamDashClientMod.EAccountType.ConsoleUser
-import typings.steamDashClient.steamDashClientMod.EAccountType.ContentServer
-import typings.steamDashClient.steamDashClientMod.EAccountType.GameServer
-import typings.steamDashClient.steamDashClientMod.EAccountType.Individual
-import typings.steamDashClient.steamDashClientMod.EAccountType.Invalid
-import typings.steamDashClient.steamDashClientMod.EAccountType.Max
-import typings.steamDashClient.steamDashClientMod.EAccountType.Multiseat
-import typings.steamDashClient.steamDashClientMod.EAccountType.Pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

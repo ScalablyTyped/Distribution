@@ -1,7 +1,7 @@
 package typings.parse.reactDashNativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.parse.Parse.SessionConstructor
+import typings.parse.parseMod._Global_.Parse.SessionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

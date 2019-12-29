@@ -2,15 +2,8 @@ package typings.couchbase.couchbaseMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.couchbase.couchbaseMod.ViewQuery.ErrorMode
-import typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.CONTINUE
-import typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.STOP
 import typings.couchbase.couchbaseMod.ViewQuery.Order
-import typings.couchbase.couchbaseMod.ViewQuery.Order.ASCENDING
-import typings.couchbase.couchbaseMod.ViewQuery.Order.DESCENDING
 import typings.couchbase.couchbaseMod.ViewQuery.Update
-import typings.couchbase.couchbaseMod.ViewQuery.Update.AFTER
-import typings.couchbase.couchbaseMod.ViewQuery.Update.BEFORE
-import typings.couchbase.couchbaseMod.ViewQuery.Update.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

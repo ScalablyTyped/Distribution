@@ -1,6 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,13 +41,13 @@ trait BasemapLayerListViewModel extends Accessor {
     */
   var referenceListItemCreatedFunction: js.Function = js.native
   /**
-    * The view model's state.  **Possible Values:** ready | loading | disabled
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: ready | loading | disabled = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
     *

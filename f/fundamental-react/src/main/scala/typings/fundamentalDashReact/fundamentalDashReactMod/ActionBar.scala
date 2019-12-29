@@ -1,9 +1,8 @@
 package typings.fundamentalDashReact.fundamentalDashReactMod
 
-import typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarActionsProps
-import typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarBackProps
-import typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarHeaderProps
-import typings.fundamentalDashReact.libActionBarActionBarMod.default
+import org.scalablytyped.runtime.TopLevel
+import typings.fundamentalDashReact.Anon_ActionBar
+import typings.fundamentalDashReact.libActionBarActionBarMod.ActionBarProps
 import typings.react.reactMod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,14 +10,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fundamental-react", "ActionBar")
 @js.native
-class ActionBar () extends default
-
-/* static members */
-@JSImport("fundamental-react", "ActionBar")
-@js.native
-object ActionBar extends js.Object {
-  var Actions: FunctionComponent[ActionBarActionsProps] = js.native
-  var Back: FunctionComponent[ActionBarBackProps] = js.native
-  var Header: FunctionComponent[ActionBarHeaderProps] = js.native
-}
+object ActionBar extends TopLevel[FunctionComponent[ActionBarProps] with Anon_ActionBar]
 

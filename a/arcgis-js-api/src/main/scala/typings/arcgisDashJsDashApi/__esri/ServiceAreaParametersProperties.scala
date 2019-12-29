@@ -13,11 +13,11 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`true-shape`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.detailed
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.points
@@ -97,7 +97,7 @@ trait ServiceAreaParametersProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputGeometryPrecisionUnits)
     */
   var outputGeometryPrecisionUnits: js.UndefOr[
-    centimeters | `decimal-degrees` | decimeters | feet | inches | kilometers | meters | miles | millimeters | `nautical-miles` | points | yards
+    centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
   ] = js.undefined
   /**
     * The type of output lines to be generated in the result. The default is defined in the specific routing network layer used in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
@@ -267,7 +267,7 @@ trait ServiceAreaParametersProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#trimPolygonDistanceUnits)
     */
   var trimPolygonDistanceUnits: js.UndefOr[
-    centimeters | `decimal-degrees` | decimeters | feet | inches | kilometers | meters | miles | millimeters | `nautical-miles` | points | yards
+    centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
   ] = js.undefined
   /**
     * When `true`, the hierarchy attributes for the network will be used in the analysis. The default value is defined in the network layer. `useHierarchy` cannot be used in conjunction with [outputLines](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputLines). Requires an ArcGIS Server service version 10.1 or greater.
@@ -290,7 +290,7 @@ object ServiceAreaParametersProperties {
     mergeSimilarPolygonRanges: js.UndefOr[Boolean] = js.undefined,
     outSpatialReference: SpatialReferenceProperties = null,
     outputGeometryPrecision: Int | Double = null,
-    outputGeometryPrecisionUnits: centimeters | `decimal-degrees` | decimeters | feet | inches | kilometers | meters | miles | millimeters | `nautical-miles` | points | yards = null,
+    outputGeometryPrecisionUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = null,
     outputLines: none | straight | `true-shape` | `true-shape-with-measure` = null,
     outputPolygons: none | simplified | detailed = null,
     overlapLines: js.UndefOr[Boolean] = js.undefined,
@@ -311,7 +311,7 @@ object ServiceAreaParametersProperties {
     travelMode: String = null,
     trimOuterPolygon: js.UndefOr[Boolean] = js.undefined,
     trimPolygonDistance: Int | Double = null,
-    trimPolygonDistanceUnits: centimeters | `decimal-degrees` | decimeters | feet | inches | kilometers | meters | miles | millimeters | `nautical-miles` | points | yards = null,
+    trimPolygonDistanceUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = null,
     useHierarchy: js.UndefOr[Boolean] = js.undefined
   ): ServiceAreaParametersProperties = {
     val __obj = js.Dynamic.literal()

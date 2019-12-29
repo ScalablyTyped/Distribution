@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.None
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.System
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -33,7 +33,8 @@ class OMathFunction protected () extends js.Object {
   val ScrSubSup: OMathScrSubSup = js.native
   val ScrSup: OMathScrSup = js.native
   val Type: WdOMathFunctionType = js.native
-  var `Word.OMathFunction_typekey`: OMathFunction = js.native
+  @JSName("Word.OMathFunction_typekey")
+  var WordDotOMathFunction_typekey: OMathFunction = js.native
   def Remove(): OMathFunction = js.native
 }
 

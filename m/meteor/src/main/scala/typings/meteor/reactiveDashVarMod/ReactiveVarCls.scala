@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("meteor/reactive-var", "ReactiveVar")
 @js.native
-class ReactiveVarCls[T] protected ()
-  extends typings.meteor.reactiveDashVarMod.ReactiveVar[T] {
+class ReactiveVarCls[T] protected () extends ReactiveVar[T] {
   def this(initialValue: T) = this()
   def this(initialValue: T, equalsFunc: js.Function) = this()
   /* CompleteClass */

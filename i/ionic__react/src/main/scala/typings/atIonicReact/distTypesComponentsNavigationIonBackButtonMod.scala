@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.atIonicReact.atIonicReactStrings.icon
 import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
-import typings.atIonicReact.distTypesComponentsNavigationIonBackButtonMod.Props
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
 import typings.react.reactMod.Context
 import typings.std.Omit

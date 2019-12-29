@@ -5,32 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IDate
-  extends typings.extjs.Ext.form.field.IPicker {
+trait IDate extends IPicker {
   /** [Config Option] (String) */
-  var altFormats: js.UndefOr[java.lang.String] = js.undefined
+  var altFormats: js.UndefOr[String] = js.undefined
   /** [Method] private */
   @JSName("beforeBlur")
   var beforeBlur_IDate: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String[]) */
   var disabledDates: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var disabledDatesText: js.UndefOr[java.lang.String] = js.undefined
+  var disabledDatesText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number[]) */
   var disabledDays: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var disabledDaysText: js.UndefOr[java.lang.String] = js.undefined
+  var disabledDaysText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var format: js.UndefOr[java.lang.String] = js.undefined
+  var format: js.UndefOr[String] = js.undefined
   /** [Method] Initializes the field s value based on the initial config  */
   @JSName("initValue")
   var initValue_IDate: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var maxText: js.UndefOr[java.lang.String] = js.undefined
+  var maxText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Date/String) */
   var maxValue: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var minText: js.UndefOr[java.lang.String] = js.undefined
+  var minText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Date/String) */
   var minValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Attempts to parse a given string value using a given date format. ... */
@@ -62,7 +61,7 @@ trait IDate
   /** [Config Option] (Number) */
   var startDay: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var submitFormat: js.UndefOr[java.lang.String] = js.undefined
+  var submitFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var useStrict: js.UndefOr[Boolean] = js.undefined
 }
@@ -70,28 +69,28 @@ trait IDate
 object IDate {
   @scala.inline
   def apply(
-    IPicker: typings.extjs.Ext.form.field.IPicker = null,
-    altFormats: java.lang.String = null,
+    IPicker: IPicker = null,
+    altFormats: String = null,
     beforeBlur: () => Unit = null,
     disabledDates: Array = null,
-    disabledDatesText: java.lang.String = null,
+    disabledDatesText: String = null,
     disabledDays: Array = null,
-    disabledDaysText: java.lang.String = null,
-    format: java.lang.String = null,
+    disabledDaysText: String = null,
+    format: String = null,
     initValue: () => Unit = null,
-    maxText: java.lang.String = null,
+    maxText: String = null,
     maxValue: js.Any = null,
-    minText: java.lang.String = null,
+    minText: String = null,
     minValue: js.Any = null,
     safeParse: js.Any = null,
     setDisabledDates: /* disabledDates */ js.UndefOr[Array] => Unit = null,
     setDisabledDays: /* disabledDays */ js.UndefOr[Array] => Unit = null,
     setMaxValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     setMinValue: /* value */ js.UndefOr[js.Any] => Unit = null,
-    setValue: /* date */ js.UndefOr[js.Any] => typings.extjs.Ext.form.field.IDate = null,
+    setValue: /* date */ js.UndefOr[js.Any] => IDate = null,
     showToday: js.UndefOr[Boolean] = js.undefined,
     startDay: Int | Double = null,
-    submitFormat: java.lang.String = null,
+    submitFormat: String = null,
     useStrict: js.UndefOr[Boolean] = js.undefined
   ): IDate = {
     val __obj = js.Dynamic.literal()

@@ -10,7 +10,7 @@ trait CreateEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the TagCloud model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TagCloud.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -18,11 +18,7 @@ trait CreateEventArgs extends js.Object {
 
 object CreateEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.TagCloud.Model = null,
-    `type`: String = null
-  ): CreateEventArgs = {
+  def apply(cancel: js.UndefOr[Boolean] = js.undefined, model: Model = null, `type`: String = null): CreateEventArgs = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.systemjs.System
 
 import typings.std.Iterable
-import typings.systemjs.systemjsNumbers.`false`
+import typings.systemjs.systemjsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

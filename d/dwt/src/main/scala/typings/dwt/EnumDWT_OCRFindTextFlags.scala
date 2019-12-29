@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCRFindTextFlags.OCRFT_FUZZYMATCH
-import typings.dwt.EnumDWT_OCRFindTextFlags.OCRFT_MATCHCASE
-import typings.dwt.EnumDWT_OCRFindTextFlags.OCRFT_WHOLEWORD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

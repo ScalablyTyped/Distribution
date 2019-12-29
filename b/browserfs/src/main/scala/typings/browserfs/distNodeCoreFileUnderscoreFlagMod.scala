@@ -1,12 +1,6 @@
 package typings.browserfs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.browserfs.distNodeCoreFileUnderscoreFlagMod.ActionType
-import typings.browserfs.distNodeCoreFileUnderscoreFlagMod.ActionType.CREATE_FILE
-import typings.browserfs.distNodeCoreFileUnderscoreFlagMod.ActionType.NOP
-import typings.browserfs.distNodeCoreFileUnderscoreFlagMod.ActionType.THROW_EXCEPTION
-import typings.browserfs.distNodeCoreFileUnderscoreFlagMod.ActionType.TRUNCATE_FILE
-import typings.browserfs.distNodeCoreFileUnderscoreFlagMod.FileFlag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

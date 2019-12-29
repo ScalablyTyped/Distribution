@@ -2,7 +2,6 @@ package typings.atAntDashDesignReactDashNative
 
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.Icon
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.`Icon Example`
-import typings.atAntDashDesignReactDashNative.libIconDemoBasicMod.IConDemo
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

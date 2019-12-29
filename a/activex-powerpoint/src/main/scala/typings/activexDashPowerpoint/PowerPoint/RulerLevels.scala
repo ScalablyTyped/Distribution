@@ -10,7 +10,8 @@ class RulerLevels protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.RulerLevels_typekey`: RulerLevels = js.native
+  @JSName("PowerPoint.RulerLevels_typekey")
+  var PowerPointDotRulerLevels_typekey: RulerLevels = js.native
   def Item(Index: Double): RulerLevel = js.native
 }
 

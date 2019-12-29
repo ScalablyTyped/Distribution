@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ClockStep.SYSTEM_CLOCK
-import typings.cesium.cesiumMod.ClockStep.SYSTEM_CLOCK_MULTIPLIER
-import typings.cesium.cesiumMod.ClockStep.TICK_DEPENDENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

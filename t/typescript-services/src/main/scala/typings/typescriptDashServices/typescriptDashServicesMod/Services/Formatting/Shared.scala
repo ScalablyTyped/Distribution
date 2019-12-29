@@ -1,6 +1,7 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
 import typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.ITokenAccess
+import typings.typescriptDashServices.TypeScript.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,23 +22,19 @@ object Shared extends js.Object {
   @js.native
   class TokenRangeAccess protected ()
     extends typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRangeAccess {
-    def this(
-      from: typings.typescriptDashServices.TypeScript.SyntaxKind,
-      to: typings.typescriptDashServices.TypeScript.SyntaxKind,
-      except: js.Array[typings.typescriptDashServices.TypeScript.SyntaxKind]
-    ) = this()
+    def this(from: SyntaxKind, to: SyntaxKind, except: js.Array[SyntaxKind]) = this()
   }
   
   @js.native
   class TokenSingleValueAccess protected ()
     extends typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenSingleValueAccess {
-    def this(token: typings.typescriptDashServices.TypeScript.SyntaxKind) = this()
+    def this(token: SyntaxKind) = this()
   }
   
   @js.native
   class TokenValuesAccess protected ()
     extends typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenValuesAccess {
-    def this(tks: js.Array[typings.typescriptDashServices.TypeScript.SyntaxKind]) = this()
+    def this(tks: js.Array[SyntaxKind]) = this()
   }
   
   /* static members */
@@ -59,17 +56,10 @@ object Shared extends js.Object {
     var UnaryPrefixOperators: typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
     var UnaryPreincrementExpressions: typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
     def AllTokens(): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-    def FromRange(
-      f: typings.typescriptDashServices.TypeScript.SyntaxKind,
-      to: typings.typescriptDashServices.TypeScript.SyntaxKind
-    ): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-    def FromRange(
-      f: typings.typescriptDashServices.TypeScript.SyntaxKind,
-      to: typings.typescriptDashServices.TypeScript.SyntaxKind,
-      except: js.Array[typings.typescriptDashServices.TypeScript.SyntaxKind]
-    ): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-    def FromToken(token: typings.typescriptDashServices.TypeScript.SyntaxKind): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-    def FromTokens(tokens: js.Array[typings.typescriptDashServices.TypeScript.SyntaxKind]): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
+    def FromRange(f: SyntaxKind, to: SyntaxKind): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
+    def FromRange(f: SyntaxKind, to: SyntaxKind, except: js.Array[SyntaxKind]): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
+    def FromToken(token: SyntaxKind): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
+    def FromTokens(tokens: js.Array[SyntaxKind]): typings.typescriptDashServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
   }
   
 }

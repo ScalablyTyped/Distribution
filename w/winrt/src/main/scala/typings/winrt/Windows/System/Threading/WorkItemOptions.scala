@@ -1,8 +1,6 @@
 package typings.winrt.Windows.System.Threading
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.System.Threading.WorkItemOptions.none
-import typings.winrt.Windows.System.Threading.WorkItemOptions.timeSliced
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

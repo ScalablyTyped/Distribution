@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Required
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Supported
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

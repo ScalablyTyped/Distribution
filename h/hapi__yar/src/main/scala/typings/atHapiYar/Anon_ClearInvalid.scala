@@ -1,7 +1,7 @@
 package typings.atHapiYar
 
 import typings.atHapiHapi.atHapiHapiMod.Request
-import typings.atHapiYar.atHapiYarNumbers.`false`
+import typings.atHapiYar.atHapiYarBooleans.`false`
 import typings.atHapiYar.atHapiYarStrings.Lax
 import typings.atHapiYar.atHapiYarStrings.Strict
 import scala.scalajs.js

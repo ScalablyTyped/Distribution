@@ -16,11 +16,7 @@ object update extends js.Object {
     * @param properties The properties to update.
     * @param callback   Called when the properties are updated.
     */
-  def apply(socketId: integer, properties: typings.chromeDashApps.chrome.sockets.tcpServer.SocketProperties): Unit = js.native
-  def apply(
-    socketId: integer,
-    properties: typings.chromeDashApps.chrome.sockets.tcpServer.SocketProperties,
-    callback: js.Function0[Unit]
-  ): Unit = js.native
+  def apply(socketId: integer, properties: SocketProperties): Unit = js.native
+  def apply(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Provides options for configuring the prompt and identifying the binding that is created.
+  * Provides options for identifying the binding that is created.
   */
 trait AddBindingFromSelectionOptions extends js.Object {
   /**

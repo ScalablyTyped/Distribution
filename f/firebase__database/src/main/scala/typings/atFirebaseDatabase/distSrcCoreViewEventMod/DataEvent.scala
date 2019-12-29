@@ -1,9 +1,9 @@
 package typings.atFirebaseDatabase.distSrcCoreViewEventMod
 
-import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.` child_added`
-import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.` child_changed`
-import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.` child_moved`
-import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.` child_removed`
+import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.Spacechild_added
+import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.Spacechild_changed
+import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.Spacechild_moved
+import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.Spacechild_removed
 import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.value
 import typings.atFirebaseDatabase.distSrcApiDataSnapshotMod.DataSnapshot
 import typings.atFirebaseDatabase.distSrcCoreUtilPathMod.Path
@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/view/Event", "DataEvent")
 @js.native
 class DataEvent protected () extends Event {
-  def this(eventType: ` child_added`, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
-  def this(eventType: ` child_changed`, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
-  def this(eventType: ` child_moved`, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
-  def this(eventType: ` child_removed`, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
+  def this(eventType: Spacechild_added, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
+  def this(eventType: Spacechild_changed, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
+  def this(eventType: Spacechild_moved, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
+  def this(eventType: Spacechild_removed, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
   /**
     * @param {!string} eventType One of: value, child_added, child_changed, child_moved, child_removed
     * @param {!EventRegistration} eventRegistration The function to call to with the event data. User provided
@@ -27,32 +27,32 @@ class DataEvent protected () extends Event {
     */
   def this(eventType: value, eventRegistration: EventRegistration, snapshot: DataSnapshot) = this()
   def this(
-    eventType: ` child_added`,
+    eventType: Spacechild_added,
     eventRegistration: EventRegistration,
     snapshot: DataSnapshot,
     prevName: String
   ) = this()
   def this(
-    eventType: ` child_changed`,
+    eventType: Spacechild_changed,
     eventRegistration: EventRegistration,
     snapshot: DataSnapshot,
     prevName: String
   ) = this()
   def this(
-    eventType: ` child_moved`,
+    eventType: Spacechild_moved,
     eventRegistration: EventRegistration,
     snapshot: DataSnapshot,
     prevName: String
   ) = this()
   def this(
-    eventType: ` child_removed`,
+    eventType: Spacechild_removed,
     eventRegistration: EventRegistration,
     snapshot: DataSnapshot,
     prevName: String
   ) = this()
   def this(eventType: value, eventRegistration: EventRegistration, snapshot: DataSnapshot, prevName: String) = this()
   var eventRegistration: EventRegistration = js.native
-  var eventType: value | (` child_added`) | (` child_changed`) | (` child_moved`) | (` child_removed`) = js.native
+  var eventType: value | Spacechild_added | Spacechild_changed | Spacechild_moved | Spacechild_removed = js.native
   var prevName: js.UndefOr[String | Null] = js.native
   var snapshot: DataSnapshot = js.native
   /**

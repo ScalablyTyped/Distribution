@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Decrement
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Delete
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Increment
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.None
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

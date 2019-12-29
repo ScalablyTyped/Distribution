@@ -1,7 +1,6 @@
 package typings.baconjs
 
 import typings.baconjs.typesEventMod.Value
-import typings.baconjs.typesInternalPropertydispatcherMod.PropertyDispatcher
 import typings.baconjs.typesOptionalMod.Option
 import typings.baconjs.typesTypesMod.EventSink
 import typings.baconjs.typesTypesMod.Subscribe

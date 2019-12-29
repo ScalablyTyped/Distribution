@@ -1,7 +1,7 @@
 package typings.tweetnacl.tweetnaclMod
 
 import typings.std.Uint8Array
-import typings.tweetnacl.tweetnaclNumbers.`false`
+import typings.tweetnacl.tweetnaclBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

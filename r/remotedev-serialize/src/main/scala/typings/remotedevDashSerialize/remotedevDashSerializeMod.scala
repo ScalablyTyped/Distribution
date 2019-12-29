@@ -1,10 +1,5 @@
 package typings.remotedevDashSerialize
 
-import typings.remotedevDashSerialize.remotedevDashSerializeMod.DefaultReplacer
-import typings.remotedevDashSerialize.remotedevDashSerializeMod.DefaultReviver
-import typings.remotedevDashSerialize.remotedevDashSerializeMod.Refs
-import typings.remotedevDashSerialize.remotedevDashSerializeMod.Replacer
-import typings.remotedevDashSerialize.remotedevDashSerializeMod.Reviver
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

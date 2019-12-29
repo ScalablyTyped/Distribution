@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ViewInfosCollection protected () extends js.Object {
   val Count: Double = js.native
-  var `InfoPath.ViewInfosCollection_typekey`: ViewInfosCollection = js.native
+  @JSName("InfoPath.ViewInfosCollection_typekey")
+  var InfoPathDotViewInfosCollection_typekey: ViewInfosCollection = js.native
   def Item(varIndex: js.Any): ViewInfoObject = js.native
 }
 

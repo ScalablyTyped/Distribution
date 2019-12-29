@@ -16,7 +16,7 @@ trait BeforeCloseEventArgs extends js.Object {
   var isInteraction: js.UndefOr[Boolean] = js.undefined
   /** Instance of the dialog model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Dialog.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object BeforeCloseEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     event: js.Any = null,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Dialog.Model = null,
+    model: Model = null,
     `type`: String = null
   ): BeforeCloseEventArgs = {
     val __obj = js.Dynamic.literal()

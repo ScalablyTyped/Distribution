@@ -1,10 +1,6 @@
 package typings.amapDashJsDashSdk.AMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amapDashJsDashSdk.AMap.DrivingPolicy.LEAST_DISTANCE
-import typings.amapDashJsDashSdk.AMap.DrivingPolicy.LEAST_FEE
-import typings.amapDashJsDashSdk.AMap.DrivingPolicy.LEAST_TIME
-import typings.amapDashJsDashSdk.AMap.DrivingPolicy.REAL_TRAFFIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

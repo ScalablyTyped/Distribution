@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ssri", "fromStream")
 @js.native
 object fromStream extends js.Object {
-  def apply(stream: Readable): js.Promise[IntegrityMap] = js.native
+  def apply(stream: Readable): js.Thenable[IntegrityMap] = js.native
   def apply(stream: Readable, opts: Anon_Algorithms): js.Promise[IntegrityMap] = js.native
   def apply(stream: Readable, opts: Anon_AlgorithmsOptions): js.Thenable[IntegrityMap] = js.native
 }

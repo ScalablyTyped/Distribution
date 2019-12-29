@@ -17,13 +17,13 @@ object k6Strings {
   sealed trait BatchResponses extends js.Object
   
   @js.native
-  sealed trait `HTTP/1DOT0` extends Protocol
+  sealed trait HTTPSlash1Dot0 extends Protocol
   
   @js.native
-  sealed trait `HTTP/1DOT1` extends Protocol
+  sealed trait HTTPSlash1Dot1 extends Protocol
   
   @js.native
-  sealed trait `HTTP/2DOT0` extends Protocol
+  sealed trait HTTPSlash2Dot0 extends Protocol
   
   @js.native
   sealed trait TLS_AES_128_GCM_SHA256 extends CipherSuite
@@ -215,7 +215,7 @@ object k6Strings {
   sealed trait sha512_256 extends Algorithm
   
   @js.native
-  sealed trait ssl3DOT0 extends js.Object
+  sealed trait ssl3Dot0 extends js.Object
   
   @js.native
   sealed trait std extends Base64Variant
@@ -227,16 +227,16 @@ object k6Strings {
   sealed trait text extends ResponseType
   
   @js.native
-  sealed trait tls1DOT0 extends js.Object
+  sealed trait tls1Dot0 extends js.Object
   
   @js.native
-  sealed trait tls1DOT1 extends js.Object
+  sealed trait tls1Dot1 extends js.Object
   
   @js.native
-  sealed trait tls1DOT2 extends js.Object
+  sealed trait tls1Dot2 extends js.Object
   
   @js.native
-  sealed trait tls1DOT3 extends js.Object
+  sealed trait tls1Dot3 extends js.Object
   
   @js.native
   sealed trait unknown extends js.Object
@@ -250,11 +250,11 @@ object k6Strings {
   @scala.inline
   def BatchResponses: BatchResponses = "BatchResponses".asInstanceOf[BatchResponses]
   @scala.inline
-  def `HTTP/1DOT0`: `HTTP/1DOT0` = "HTTP/1.0".asInstanceOf[`HTTP/1DOT0`]
+  def HTTPSlash1Dot0: HTTPSlash1Dot0 = "HTTP/1.0".asInstanceOf[HTTPSlash1Dot0]
   @scala.inline
-  def `HTTP/1DOT1`: `HTTP/1DOT1` = "HTTP/1.1".asInstanceOf[`HTTP/1DOT1`]
+  def HTTPSlash1Dot1: HTTPSlash1Dot1 = "HTTP/1.1".asInstanceOf[HTTPSlash1Dot1]
   @scala.inline
-  def `HTTP/2DOT0`: `HTTP/2DOT0` = "HTTP/2.0".asInstanceOf[`HTTP/2DOT0`]
+  def HTTPSlash2Dot0: HTTPSlash2Dot0 = "HTTP/2.0".asInstanceOf[HTTPSlash2Dot0]
   @scala.inline
   def TLS_AES_128_GCM_SHA256: TLS_AES_128_GCM_SHA256 = "TLS_AES_128_GCM_SHA256".asInstanceOf[TLS_AES_128_GCM_SHA256]
   @scala.inline
@@ -382,7 +382,7 @@ object k6Strings {
   @scala.inline
   def sha512_256: sha512_256 = "sha512_256".asInstanceOf[sha512_256]
   @scala.inline
-  def ssl3DOT0: ssl3DOT0 = "ssl3.0".asInstanceOf[ssl3DOT0]
+  def ssl3Dot0: ssl3Dot0 = "ssl3.0".asInstanceOf[ssl3Dot0]
   @scala.inline
   def std: std = "std".asInstanceOf[std]
   @scala.inline
@@ -390,13 +390,13 @@ object k6Strings {
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
-  def tls1DOT0: tls1DOT0 = "tls1.0".asInstanceOf[tls1DOT0]
+  def tls1Dot0: tls1Dot0 = "tls1.0".asInstanceOf[tls1Dot0]
   @scala.inline
-  def tls1DOT1: tls1DOT1 = "tls1.1".asInstanceOf[tls1DOT1]
+  def tls1Dot1: tls1Dot1 = "tls1.1".asInstanceOf[tls1Dot1]
   @scala.inline
-  def tls1DOT2: tls1DOT2 = "tls1.2".asInstanceOf[tls1DOT2]
+  def tls1Dot2: tls1Dot2 = "tls1.2".asInstanceOf[tls1Dot2]
   @scala.inline
-  def tls1DOT3: tls1DOT3 = "tls1.3".asInstanceOf[tls1DOT3]
+  def tls1Dot3: tls1Dot3 = "tls1.3".asInstanceOf[tls1Dot3]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline

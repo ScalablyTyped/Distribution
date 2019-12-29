@@ -42,33 +42,33 @@ trait Calendar extends Proxy {
   /**
   			 * Creates an event in this calendar.
   			 */
-  def createEvent(properties: js.Any): typings.titanium.Titanium.Calendar.Event = js.native
+  def createEvent(properties: js.Any): Event = js.native
   /**
   			 * Gets the event with the specified identifier.
   			 */
-  def getEventById(id: Double): typings.titanium.Titanium.Calendar.Event = js.native
-  def getEventsBetweenDates(date1: String, date2: String): js.Array[typings.titanium.Titanium.Calendar.Event] = js.native
+  def getEventById(id: Double): Event = js.native
+  def getEventsBetweenDates(date1: String, date2: String): js.Array[Event] = js.native
   /**
   			 * Gets events that occur between two dates.
   			 */
-  def getEventsBetweenDates(date1: String, date2: Date): js.Array[typings.titanium.Titanium.Calendar.Event] = js.native
-  def getEventsBetweenDates(date1: Date, date2: String): js.Array[typings.titanium.Titanium.Calendar.Event] = js.native
+  def getEventsBetweenDates(date1: String, date2: Date): js.Array[Event] = js.native
+  def getEventsBetweenDates(date1: Date, date2: String): js.Array[Event] = js.native
   /**
   			 * Gets events that occur between two dates.
   			 */
-  def getEventsBetweenDates(date1: Date, date2: Date): js.Array[typings.titanium.Titanium.Calendar.Event] = js.native
+  def getEventsBetweenDates(date1: Date, date2: Date): js.Array[Event] = js.native
   /**
   			 * Gets events that occur on a specified date.
   			 */
-  def getEventsInDate(year: Double, month: Double, day: Double): js.Array[typings.titanium.Titanium.Calendar.Event] = js.native
+  def getEventsInDate(year: Double, month: Double, day: Double): js.Array[Event] = js.native
   /**
   			 * Gets events that occur during a specified month.
   			 */
-  def getEventsInMonth(year: Double, month: Double): js.Array[typings.titanium.Titanium.Calendar.Event] = js.native
+  def getEventsInMonth(year: Double, month: Double): js.Array[Event] = js.native
   /**
   			 * Gets all events that occur during a specified year.
   			 */
-  def getEventsInYear(year: Double): js.Array[typings.titanium.Titanium.Calendar.Event] = js.native
+  def getEventsInYear(year: Double): js.Array[Event] = js.native
   /**
   			 * Gets the value of the <Titanium.Calendar.Calendar.hidden> property.
   			 */

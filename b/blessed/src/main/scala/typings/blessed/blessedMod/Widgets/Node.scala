@@ -21,7 +21,8 @@ abstract class Node protected ()
   /**
     * An object for any miscellanous user data.
     */
-  var `_`: StringDictionary[js.Any] = js.native
+  @JSName("_")
+  var _underscore: StringDictionary[js.Any] = js.native
   /**
     * Array of node's children.
     */

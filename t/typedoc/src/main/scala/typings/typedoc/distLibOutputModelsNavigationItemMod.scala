@@ -1,7 +1,6 @@
 package typings.typedoc
 
 import typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
-import typings.typedoc.distLibOutputModelsNavigationItemMod.NavigationItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.WorksheetPositionType.after
-import typings.officeDashJsDashPreview.Excel.WorksheetPositionType.before
-import typings.officeDashJsDashPreview.Excel.WorksheetPositionType.beginning
-import typings.officeDashJsDashPreview.Excel.WorksheetPositionType.end
-import typings.officeDashJsDashPreview.Excel.WorksheetPositionType.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

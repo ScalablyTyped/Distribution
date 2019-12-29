@@ -1,23 +1,6 @@
 package typings.thrift.thriftMod.Thrift
 
 import org.scalablytyped.runtime.TopLevel
-import typings.thrift.thriftMod.Thrift.Type.BOOL
-import typings.thrift.thriftMod.Thrift.Type.BYTE
-import typings.thrift.thriftMod.Thrift.Type.DOUBLE
-import typings.thrift.thriftMod.Thrift.Type.I08
-import typings.thrift.thriftMod.Thrift.Type.I16
-import typings.thrift.thriftMod.Thrift.Type.I32
-import typings.thrift.thriftMod.Thrift.Type.I64
-import typings.thrift.thriftMod.Thrift.Type.LIST
-import typings.thrift.thriftMod.Thrift.Type.MAP
-import typings.thrift.thriftMod.Thrift.Type.SET
-import typings.thrift.thriftMod.Thrift.Type.STOP
-import typings.thrift.thriftMod.Thrift.Type.STRING
-import typings.thrift.thriftMod.Thrift.Type.STRUCT
-import typings.thrift.thriftMod.Thrift.Type.UTF16
-import typings.thrift.thriftMod.Thrift.Type.UTF7
-import typings.thrift.thriftMod.Thrift.Type.UTF8
-import typings.thrift.thriftMod.Thrift.Type.VOID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

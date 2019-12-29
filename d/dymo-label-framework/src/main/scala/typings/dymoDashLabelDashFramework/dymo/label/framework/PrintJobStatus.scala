@@ -1,16 +1,6 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.Error
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.Finished
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.InQueue
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.InvalidJobId
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.NotSpooled
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.PaperOut
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.PrinterBusy
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.Printing
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.ProcessingError
-import typings.dymoDashLabelDashFramework.dymo.label.framework.PrintJobStatus.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

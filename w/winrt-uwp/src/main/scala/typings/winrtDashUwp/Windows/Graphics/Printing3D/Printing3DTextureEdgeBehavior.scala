@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.clamp
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.mirror
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.none
-import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.wrap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Srch.DateTimeKind.local
-import typings.sharepoint.Srch.DateTimeKind.unspecified
-import typings.sharepoint.Srch.DateTimeKind.utc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

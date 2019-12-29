@@ -1,6 +1,6 @@
 package typings.estree.estreeMod
 
-import typings.estree.estreeNumbers.`true`
+import typings.estree.estreeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

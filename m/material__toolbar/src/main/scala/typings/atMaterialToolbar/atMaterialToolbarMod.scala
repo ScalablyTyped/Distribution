@@ -2,7 +2,6 @@ package typings.atMaterialToolbar
 
 import typings.atMaterialBase.atMaterialBaseMod.MDCComponent
 import typings.atMaterialToolbar.adapterMod.MDCToolbarAdapter
-import typings.atMaterialToolbar.atMaterialToolbarMod.MDCToolbar
 import typings.atMaterialToolbar.foundationMod.default
 import typings.std.Element
 import typings.std.HTMLElement

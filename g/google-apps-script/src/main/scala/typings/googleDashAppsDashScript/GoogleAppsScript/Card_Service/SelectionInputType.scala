@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.CHECK_BOX
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.DROPDOWN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.RADIO_BUTTON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

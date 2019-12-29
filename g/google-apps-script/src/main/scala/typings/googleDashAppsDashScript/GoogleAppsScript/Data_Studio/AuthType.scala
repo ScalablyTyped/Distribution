@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.KEY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.NONE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.OAUTH2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.USER_PASS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.USER_TOKEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

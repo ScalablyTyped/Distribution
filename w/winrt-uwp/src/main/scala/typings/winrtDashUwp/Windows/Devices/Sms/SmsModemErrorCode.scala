@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.deviceFailure
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.deviceNotReady
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.fixedDialingNumberRestricted
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.invalidSmscAddress
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.messageNotEncodedProperly
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.messageTooLarge
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.messagingNetworkError
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.networkFailure
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.networkNotReady
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.other
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.smsOperationNotSupportedByDevice
-import typings.winrtDashUwp.Windows.Devices.Sms.SmsModemErrorCode.smsServiceNotSupportedByNetwork
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

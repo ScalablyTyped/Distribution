@@ -11,7 +11,8 @@ class PropertyEffect protected () extends js.Object {
   var From: js.Any = js.native
   val Parent: js.Any = js.native
   val Points: AnimationPoints = js.native
-  var `PowerPoint.PropertyEffect_typekey`: PropertyEffect = js.native
+  @JSName("PowerPoint.PropertyEffect_typekey")
+  var PowerPointDotPropertyEffect_typekey: PropertyEffect = js.native
   var Property: MsoAnimProperty = js.native
   var To: js.Any = js.native
 }

@@ -20,13 +20,20 @@ object libPlatformWebSimpleDashUserSimpleDashUserMod extends js.Object {
   class SimpleUser protected () extends js.Object {
     /**
       * Constructs a new instance of the `SimpleUser` class.
-      * @param webSocketServerURL - SIP WebSocket Server URL.
+      * @param server - SIP WebSocket Server URL.
       * @param options - Options bucket. See {@link SimpleUserOptions} for details.
       */
-    def this(webSocketServerURL: String) = this()
-    def this(webSocketServerURL: String, options: SimpleUserOptions) = this()
+    def this(server: String) = this()
+    def this(server: String, options: SimpleUserOptions) = this()
+    /**
+      * Attempt reconnection up to `maxReconnectionAttempts` times.
+      * @param reconnectionAttempt - Current attempt number.
+      */
+    var attemptReconnection: js.Any = js.native
+    var attemptingReconnection: js.Any = js.native
     /** Helper function to remove media from html elements. */
     var cleanupMedia: js.Any = js.native
+    var connectRequested: js.Any = js.native
     /** Media constraints. */
     val constraints: js.Any = js.native
     /** Delegate. */
@@ -55,6 +62,7 @@ object libPlatformWebSimpleDashUserSimpleDashUserMod extends js.Object {
     val localVideoTrack: js.UndefOr[MediaStreamTrack] = js.native
     var logger: js.Any = js.native
     var options: js.Any = js.native
+    var registerRequested: js.Any = js.native
     var registerer: js.Any = js.native
     /** The remote audio track, if available. */
     val remoteAudioTrack: js.UndefOr[MediaStreamTrack] = js.native

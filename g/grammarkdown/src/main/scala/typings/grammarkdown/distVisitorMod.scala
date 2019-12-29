@@ -48,7 +48,7 @@ object distVisitorMod extends js.Object {
   @js.native
   abstract class NodeVisitor () extends js.Object {
     def visit[T /* <: Node[SyntaxKind] */](): js.UndefOr[T] = js.native
-    def visit[T /* <: Node[SyntaxKind] */](node: T): T = js.native
+    def visit[T /* <: Node[SyntaxKind] */](node: T): js.UndefOr[T] = js.native
     def visitArgument(node: Argument): Argument = js.native
     def visitArgumentList(node: ArgumentList): ArgumentList = js.native
     def visitButNotSymbol(node: ButNotSymbol): ButNotSymbol = js.native
@@ -89,7 +89,7 @@ object distVisitorMod extends js.Object {
     def visitUnicodeCharacterLiteral(node: UnicodeCharacterLiteral): UnicodeCharacterLiteral = js.native
     def visitUnicodeCharacterRange(node: UnicodeCharacterRange): UnicodeCharacterRange = js.native
     @JSName("visit")
-    def visit_T_NodeSyntaxKind_Union[T /* <: Node[SyntaxKind] */](node: T): js.UndefOr[T] = js.native
+    def visit_T_NodeSyntaxKind_T[T /* <: Node[SyntaxKind] */](node: T): T = js.native
   }
   
 }

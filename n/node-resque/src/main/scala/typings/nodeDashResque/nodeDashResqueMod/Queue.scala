@@ -1,7 +1,7 @@
 package typings.nodeDashResque.nodeDashResqueMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.nodeDashResque.Anon_RTimestamp
 import typings.nodeDashResque.nodeDashResqueStrings.error
 import typings.std.Error

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityTriggerReason.connectionAccepted
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityTriggerReason.keepAliveTimerExpired
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityTriggerReason.none
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityTriggerReason.socketActivity
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketActivityTriggerReason.socketClosed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

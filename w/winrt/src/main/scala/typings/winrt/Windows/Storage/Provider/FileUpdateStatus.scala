@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Provider.FileUpdateStatus.complete
-import typings.winrt.Windows.Storage.Provider.FileUpdateStatus.completeAndRenamed
-import typings.winrt.Windows.Storage.Provider.FileUpdateStatus.currentlyUnavailable
-import typings.winrt.Windows.Storage.Provider.FileUpdateStatus.failed
-import typings.winrt.Windows.Storage.Provider.FileUpdateStatus.incomplete
-import typings.winrt.Windows.Storage.Provider.FileUpdateStatus.userInputNeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

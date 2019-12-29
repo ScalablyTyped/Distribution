@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,8 +21,8 @@ trait symbolUtils extends js.Object {
     * @param options.resolution The [resolution](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#resolution) of the view at which the symbol is displayed.
     *
     */
-  def getDisplayedSymbol(graphic: Graphic): IPromise[Symbol] = js.native
-  def getDisplayedSymbol(graphic: Graphic, options: symbolUtilsGetDisplayedSymbolOptions): IPromise[Symbol] = js.native
+  def getDisplayedSymbol(graphic: Graphic): js.Promise[Symbol] = js.native
+  def getDisplayedSymbol(graphic: Graphic, options: symbolUtilsGetDisplayedSymbolOptions): js.Promise[Symbol] = js.native
   /**
     * Generates a preview image of a color ramp to display in a custom widget or other DOM element.
     *
@@ -31,7 +30,8 @@ trait symbolUtils extends js.Object {
     *
     * @param colors An array of colors from which to construct the color ramp.
     * @param options Formatting options for the color ramp.
-    * @param options.align Specifies the alignment of the color ramp.  **Possible Values:** horizontal | vertical
+    * @param options.align Specifies the alignment of the color ramp.
+    * @param options.gradient Indicates whether to render the color ramp with a continuous gradient. When `false`, distinct colors will appear in the ramp without a gradient.
     * @param options.width The width of the ramp in pixels.
     * @param options.height The height of the ramp in pixels.
     *
@@ -55,8 +55,8 @@ trait symbolUtils extends js.Object {
     * @param options.rotation The rotation of the symbol.
     *
     */
-  def renderPreviewHTML(symbol: Symbol): IPromise[HTMLElement] = js.native
-  def renderPreviewHTML(symbol: Symbol, options: symbolUtilsRenderPreviewHTMLOptions): IPromise[HTMLElement] = js.native
+  def renderPreviewHTML(symbol: Symbol): js.Promise[HTMLElement] = js.native
+  def renderPreviewHTML(symbol: Symbol, options: symbolUtilsRenderPreviewHTMLOptions): js.Promise[HTMLElement] = js.native
 }
 
 @JSGlobal("__esri.symbolUtils")

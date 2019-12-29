@@ -1,7 +1,7 @@
 package typings.jestDashDiff
 
 import typings.jestDashDiff.buildPrintDiffsMod._StringDiffResult
-import typings.jestDashDiff.jestDashDiffNumbers.`true`
+import typings.jestDashDiff.jestDashDiffBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

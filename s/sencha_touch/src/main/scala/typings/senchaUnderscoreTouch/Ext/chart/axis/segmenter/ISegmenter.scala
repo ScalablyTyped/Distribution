@@ -75,7 +75,7 @@ trait ISegmenter extends IBase {
   		* @returns String
   		*/
   var renderer: js.UndefOr[
-    js.Function2[/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any], java.lang.String]
+    js.Function2[/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any], String]
   ] = js.undefined
   /** [Method] Sets the value of axis
   		* @param axis Ext.chart.axis.Axis The new value.
@@ -97,16 +97,16 @@ object ISegmenter {
     config: js.Any = null,
     destroy: () => Unit = null,
     diff: (/* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Double = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     from: /* value */ js.UndefOr[js.Any] => _ = null,
     getAxis: () => IAxis = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     preferredStep: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => _ = null,
-    renderer: (/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any]) => java.lang.String = null,
+    renderer: (/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any]) => String = null,
     self: IClass = null,
     setAxis: /* axis */ js.UndefOr[IAxis] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

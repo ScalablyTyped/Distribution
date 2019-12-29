@@ -1,10 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.DiagnosticCategory.Error
-import typings.typescript.typescriptMod.DiagnosticCategory.Message
-import typings.typescript.typescriptMod.DiagnosticCategory.Suggestion
-import typings.typescript.typescriptMod.DiagnosticCategory.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

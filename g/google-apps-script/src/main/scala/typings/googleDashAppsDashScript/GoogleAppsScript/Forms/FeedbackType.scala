@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.FeedbackType.CORRECT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.FeedbackType.GENERAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.FeedbackType.INCORRECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

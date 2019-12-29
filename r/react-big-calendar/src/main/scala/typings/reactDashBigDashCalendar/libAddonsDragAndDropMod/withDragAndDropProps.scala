@@ -5,9 +5,9 @@ import typings.react.reactMod.HTMLAttributes
 import typings.reactDashBigDashCalendar.Anon_ActionDOWN
 import typings.reactDashBigDashCalendar.Anon_AllDay
 import typings.reactDashBigDashCalendar.Anon_AllDayEnd
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarBooleans.`false`
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarBooleans.`true`
 import typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod.Components
-import typings.reactDashBigDashCalendar.reactDashBigDashCalendarNumbers.`false`
-import typings.reactDashBigDashCalendar.reactDashBigDashCalendarNumbers.`true`
 import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.ignoreEvents
 import typings.std.Date
 import typings.std.Element

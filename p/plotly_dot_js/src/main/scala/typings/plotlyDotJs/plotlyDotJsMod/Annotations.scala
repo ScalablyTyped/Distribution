@@ -1,6 +1,6 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
-import typings.plotlyDotJs.plotlyDotJsNumbers.`false`
+import typings.plotlyDotJs.plotlyDotJsBooleans.`false`
 import typings.plotlyDotJs.plotlyDotJsStrings.auto
 import typings.plotlyDotJs.plotlyDotJsStrings.bottom
 import typings.plotlyDotJs.plotlyDotJsStrings.center

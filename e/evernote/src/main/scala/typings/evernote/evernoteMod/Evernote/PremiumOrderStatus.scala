@@ -1,12 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.PremiumOrderStatus.ACTIVE
-import typings.evernote.evernoteMod.Evernote.PremiumOrderStatus.CANCELED
-import typings.evernote.evernoteMod.Evernote.PremiumOrderStatus.CANCELLATION_PENDING
-import typings.evernote.evernoteMod.Evernote.PremiumOrderStatus.FAILED
-import typings.evernote.evernoteMod.Evernote.PremiumOrderStatus.NONE
-import typings.evernote.evernoteMod.Evernote.PremiumOrderStatus.PENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

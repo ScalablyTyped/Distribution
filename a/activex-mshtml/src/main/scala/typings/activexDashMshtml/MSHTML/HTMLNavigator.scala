@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLNavigator")
 @js.native
 class HTMLNavigator protected () extends js.Object {
-  var `MSHTML.HTMLNavigator_typekey`: HTMLNavigator = js.native
+  @JSName("MSHTML.HTMLNavigator_typekey")
+  var MSHTMLDotHTMLNavigator_typekey: HTMLNavigator = js.native
   val appCodeName: String = js.native
   val appMinorVersion: String = js.native
   val appName: String = js.native

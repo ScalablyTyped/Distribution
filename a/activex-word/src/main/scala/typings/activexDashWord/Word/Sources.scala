@@ -11,7 +11,8 @@ class Sources protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Sources_typekey`: Sources = js.native
+  @JSName("Word.Sources_typekey")
+  var WordDotSources_typekey: Sources = js.native
   def Add(Data: String): Unit = js.native
   def Item(Index: Double): Source = js.native
 }

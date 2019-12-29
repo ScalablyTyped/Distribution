@@ -1,7 +1,7 @@
 package typings.expo
 
 import typings.expo.buildUpdatesUpdatesMod.UpdateCheckResult
-import typings.expo.expoNumbers.`false`
+import typings.expo.expoBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

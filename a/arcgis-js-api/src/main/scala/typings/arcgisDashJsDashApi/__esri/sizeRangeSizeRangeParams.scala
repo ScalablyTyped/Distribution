@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait sizeRangeSizeRangeParams extends Object {
   /**
-    * The `polygon` layer for which to generate a suggested min/max size range based on scale for a size visual variable.
+    * The layer for which to generate a suggested min/max size range based on scale for a size visual variable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-heuristics-sizeRange.html#sizeRange)
     */

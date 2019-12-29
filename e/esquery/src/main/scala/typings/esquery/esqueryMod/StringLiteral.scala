@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StringLiteral extends Literal {
+//
+// Literals
+//
+trait StringLiteral
+  extends LiteralAtom
+     with Literal {
   @JSName("value")
   var value_StringLiteral: String
 }

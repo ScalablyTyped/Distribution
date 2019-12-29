@@ -5,39 +5,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResolvedDateTimeFormatOptions extends js.Object {
-  var calendar: java.lang.String
-  var day: js.UndefOr[java.lang.String] = js.undefined
-  var era: js.UndefOr[java.lang.String] = js.undefined
-  var hour: js.UndefOr[java.lang.String] = js.undefined
-  var hour12: js.UndefOr[scala.Boolean] = js.undefined
-  var locale: java.lang.String
-  var minute: js.UndefOr[java.lang.String] = js.undefined
-  var month: js.UndefOr[java.lang.String] = js.undefined
-  var numberingSystem: java.lang.String
-  var second: js.UndefOr[java.lang.String] = js.undefined
-  var timeZone: java.lang.String
-  var timeZoneName: js.UndefOr[java.lang.String] = js.undefined
-  var weekday: js.UndefOr[java.lang.String] = js.undefined
-  var year: js.UndefOr[java.lang.String] = js.undefined
+  var calendar: String
+  var day: js.UndefOr[String] = js.undefined
+  var era: js.UndefOr[String] = js.undefined
+  var hour: js.UndefOr[String] = js.undefined
+  var hour12: js.UndefOr[Boolean] = js.undefined
+  var locale: String
+  var minute: js.UndefOr[String] = js.undefined
+  var month: js.UndefOr[String] = js.undefined
+  var numberingSystem: String
+  var second: js.UndefOr[String] = js.undefined
+  var timeZone: String
+  var timeZoneName: js.UndefOr[String] = js.undefined
+  var weekday: js.UndefOr[String] = js.undefined
+  var year: js.UndefOr[String] = js.undefined
 }
 
 object ResolvedDateTimeFormatOptions {
   @scala.inline
   def apply(
-    calendar: java.lang.String,
-    locale: java.lang.String,
-    numberingSystem: java.lang.String,
-    timeZone: java.lang.String,
-    day: java.lang.String = null,
-    era: java.lang.String = null,
-    hour: java.lang.String = null,
-    hour12: js.UndefOr[scala.Boolean] = js.undefined,
-    minute: java.lang.String = null,
-    month: java.lang.String = null,
-    second: java.lang.String = null,
-    timeZoneName: java.lang.String = null,
-    weekday: java.lang.String = null,
-    year: java.lang.String = null
+    calendar: String,
+    locale: String,
+    numberingSystem: String,
+    timeZone: String,
+    day: String = null,
+    era: String = null,
+    hour: String = null,
+    hour12: js.UndefOr[Boolean] = js.undefined,
+    minute: String = null,
+    month: String = null,
+    second: String = null,
+    timeZoneName: String = null,
+    weekday: String = null,
+    year: String = null
   ): ResolvedDateTimeFormatOptions = {
     val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])

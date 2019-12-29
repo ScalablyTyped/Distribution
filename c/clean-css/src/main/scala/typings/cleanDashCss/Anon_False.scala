@@ -1,6 +1,6 @@
 package typings.cleanDashCss
 
-import typings.cleanDashCss.cleanDashCssNumbers.`false`
+import typings.cleanDashCss.cleanDashCssBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

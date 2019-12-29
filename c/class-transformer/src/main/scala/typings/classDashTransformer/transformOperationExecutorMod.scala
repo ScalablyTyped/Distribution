@@ -3,10 +3,6 @@ package typings.classDashTransformer
 import org.scalablytyped.runtime.TopLevel
 import typings.classDashTransformer.classTransformOptionsMod.ClassTransformOptions
 import typings.classDashTransformer.metadataTypeMetadataMod.TypeMetadata
-import typings.classDashTransformer.transformOperationExecutorMod.TransformationType
-import typings.classDashTransformer.transformOperationExecutorMod.TransformationType.CLASS_TO_CLASS
-import typings.classDashTransformer.transformOperationExecutorMod.TransformationType.CLASS_TO_PLAIN
-import typings.classDashTransformer.transformOperationExecutorMod.TransformationType.PLAIN_TO_CLASS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

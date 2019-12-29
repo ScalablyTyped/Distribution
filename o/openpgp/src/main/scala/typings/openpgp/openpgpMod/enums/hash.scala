@@ -1,13 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.hash.md5
-import typings.openpgp.openpgpMod.enums.hash.ripemd
-import typings.openpgp.openpgpMod.enums.hash.sha1
-import typings.openpgp.openpgpMod.enums.hash.sha224
-import typings.openpgp.openpgpMod.enums.hash.sha256
-import typings.openpgp.openpgpMod.enums.hash.sha384
-import typings.openpgp.openpgpMod.enums.hash.sha512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

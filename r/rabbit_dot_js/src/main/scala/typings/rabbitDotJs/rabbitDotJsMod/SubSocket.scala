@@ -16,9 +16,7 @@ class SubSocket protected ()
   def connect(source: String, topic: String): js.Any = js.native
   def connect(source: String, topic: String, callback: js.Function): js.Any = js.native
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
 }

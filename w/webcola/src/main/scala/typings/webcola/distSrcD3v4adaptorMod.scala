@@ -7,7 +7,6 @@ import typings.d3DashDrag.d3DashDragMod.SubjectPosition
 import typings.d3DashTimer.d3DashTimerMod.Timer
 import typings.std.EventTarget
 import typings.webcola.distSrcD3adaptorMod.ID3StyleLayoutAdaptor
-import typings.webcola.distSrcD3v4adaptorMod.D3Context
 import typings.webcola.distSrcLayoutMod.Event
 import typings.webcola.distSrcLayoutMod.Layout
 import scala.scalajs.js

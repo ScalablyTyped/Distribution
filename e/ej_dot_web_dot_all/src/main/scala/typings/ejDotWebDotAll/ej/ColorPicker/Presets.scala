@@ -1,17 +1,6 @@
 package typings.ejDotWebDotAll.ej.ColorPicker
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.Basic
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.CandyCrush
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.Citrus
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.FlatColors
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.Misty
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.MoonLight
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.PinkShades
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.Sandy
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.SeaWolf
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.Vintage
-import typings.ejDotWebDotAll.ej.ColorPicker.Presets.WebColors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

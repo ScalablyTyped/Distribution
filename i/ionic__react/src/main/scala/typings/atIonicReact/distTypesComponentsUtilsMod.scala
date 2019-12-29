@@ -17,7 +17,6 @@ import typings.atIonicReact.atIonicReactStrings.pwa
 import typings.atIonicReact.atIonicReactStrings.style
 import typings.atIonicReact.atIonicReactStrings.tablet
 import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
-import typings.atIonicReact.distTypesComponentsUtilsMod.IonicReactExternalProps
 import typings.react.reactMod.ForwardRefExoticComponent
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.PropsWithoutRef

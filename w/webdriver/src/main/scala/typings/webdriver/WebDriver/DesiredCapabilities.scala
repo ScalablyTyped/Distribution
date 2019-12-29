@@ -47,7 +47,8 @@ trait DesiredCapabilities extends Capabilities {
   var browserConnectionEnabled: js.UndefOr[Boolean] = js.undefined
   var browserSideLog: js.UndefOr[Boolean] = js.undefined
   // Browserstack w3c specific
-  var `bstack:options`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  @JSName("bstack:options")
+  var bstackColonoptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   // wdio-sauce-service specific
   var build: js.UndefOr[String] = js.undefined
   var bundleId: js.UndefOr[String] = js.undefined
@@ -93,16 +94,22 @@ trait DesiredCapabilities extends Capabilities {
   // Firefox
   var firefox_binary: js.UndefOr[String] = js.undefined
   var fullReset: js.UndefOr[Boolean] = js.undefined
-  var `goog:chromeOptions`: js.UndefOr[ChromeOptions] = js.undefined
+  @JSName("goog:chromeOptions")
+  var googColonchromeOptions: js.UndefOr[ChromeOptions] = js.undefined
   var gpsEnabled: js.UndefOr[Boolean] = js.undefined
   var handlesAlerts: js.UndefOr[Boolean] = js.undefined
   var host: js.UndefOr[String] = js.undefined
-  var `ie.browserCommandLineSwitches`: js.UndefOr[String] = js.undefined
-  var `ie.ensureCleanSession`: js.UndefOr[Boolean] = js.undefined
+  @JSName("ie.browserCommandLineSwitches")
+  var ieDotbrowserCommandLineSwitches: js.UndefOr[String] = js.undefined
+  @JSName("ie.ensureCleanSession")
+  var ieDotensureCleanSession: js.UndefOr[Boolean] = js.undefined
   // IE specific
-  var `ie.forceCreateProcessApi`: js.UndefOr[Boolean] = js.undefined
-  var `ie.setProxyByServer`: js.UndefOr[Boolean] = js.undefined
-  var `ie.usePerProcessProxy`: js.UndefOr[Boolean] = js.undefined
+  @JSName("ie.forceCreateProcessApi")
+  var ieDotforceCreateProcessApi: js.UndefOr[Boolean] = js.undefined
+  @JSName("ie.setProxyByServer")
+  var ieDotsetProxyByServer: js.UndefOr[Boolean] = js.undefined
+  @JSName("ie.usePerProcessProxy")
+  var ieDotusePerProcessProxy: js.UndefOr[Boolean] = js.undefined
   var ignoreProtectedModeSettings: js.UndefOr[Boolean] = js.undefined
   var ignoreUnimportantViews: js.UndefOr[Boolean] = js.undefined
   var ignoreZoomSetting: js.UndefOr[Boolean] = js.undefined
@@ -133,11 +140,15 @@ trait DesiredCapabilities extends Capabilities {
   var loggingPrefs: js.UndefOr[Anon_Browser] = js.undefined
   var maxInstances: js.UndefOr[Double] = js.undefined
   var mobileEmulationEnabled: js.UndefOr[Boolean] = js.undefined
-  var `moz:firefoxOptions`: js.UndefOr[FirefoxOptions] = js.undefined
-  var `ms:extensionPaths`: js.UndefOr[js.Array[String]] = js.undefined
+  @JSName("moz:firefoxOptions")
+  var mozColonfirefoxOptions: js.UndefOr[FirefoxOptions] = js.undefined
+  @JSName("ms:extensionPaths")
+  var msColonextensionPaths: js.UndefOr[js.Array[String]] = js.undefined
   // Edge specific
-  var `ms:inPrivate`: js.UndefOr[Boolean] = js.undefined
-  var `ms:startPage`: js.UndefOr[String] = js.undefined
+  @JSName("ms:inPrivate")
+  var msColoninPrivate: js.UndefOr[Boolean] = js.undefined
+  @JSName("ms:startPage")
+  var msColonstartPage: js.UndefOr[String] = js.undefined
   var nativeEvents: js.UndefOr[Boolean] = js.undefined
   var nativeInstrumentsLib: js.UndefOr[Boolean] = js.undefined
   var nativeWebScreenshot: js.UndefOr[Boolean] = js.undefined
@@ -166,17 +177,20 @@ trait DesiredCapabilities extends Capabilities {
   var requireWindowFocus: js.UndefOr[Boolean] = js.undefined
   var resetKeyboard: js.UndefOr[Boolean] = js.undefined
   var rotatable: js.UndefOr[Boolean] = js.undefined
-  // Safari specific
-  var `safari.options`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var safariAllowPopups: js.UndefOr[Boolean] = js.undefined
+  // Safari specific
+  @JSName("safari.options")
+  var safariDotoptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var safariIgnoreFraudWarning: js.UndefOr[Boolean] = js.undefined
   var safariInitialUrl: js.UndefOr[String] = js.undefined
   var safariOpenLinksInBackground: js.UndefOr[Boolean] = js.undefined
   // Saucelabs w3c specific
-  var `sauce:options`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  @JSName("sauce:options")
+  var sauceColonoptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var screenshotWaitTimeout: js.UndefOr[Double] = js.undefined
   // Selenese-Backed-WebDriver specific
-  var `selenium.server.url`: js.UndefOr[String] = js.undefined
+  @JSName("selenium.server.url")
+  var seleniumDotserverDoturl: js.UndefOr[String] = js.undefined
   // Grid-specific
   var seleniumProtocol: js.UndefOr[String] = js.undefined
   var sendKeyStrategy: js.UndefOr[String] = js.undefined
@@ -192,7 +206,8 @@ trait DesiredCapabilities extends Capabilities {
   var specs: js.UndefOr[js.Array[String]] = js.undefined
   var systemPort: js.UndefOr[Double] = js.undefined
   // Testingbot w3c specific
-  var `tb:options`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  @JSName("tb:options")
+  var tbColonoptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var timeoutInSeconds: js.UndefOr[Double] = js.undefined
   var trustAllSSLCertificates: js.UndefOr[Boolean] = js.undefined
   var udid: js.UndefOr[String] = js.undefined
@@ -209,9 +224,11 @@ trait DesiredCapabilities extends Capabilities {
   var version: js.UndefOr[String] = js.undefined
   var waitForAppScript: js.UndefOr[String] = js.undefined
   var webStorageEnabled: js.UndefOr[Boolean] = js.undefined
-  var `webdriver.remote.quietExceptions`: js.UndefOr[Boolean] = js.undefined
+  @JSName("webdriver.remote.quietExceptions")
+  var webdriverDotremoteDotquietExceptions: js.UndefOr[Boolean] = js.undefined
   // RemoteWebDriver specific
-  var `webdriver.remote.sessionid`: js.UndefOr[String] = js.undefined
+  @JSName("webdriver.remote.sessionid")
+  var webdriverDotremoteDotsessionid: js.UndefOr[String] = js.undefined
   var webkitDebugProxyPort: js.UndefOr[Double] = js.undefined
   var webkitResponseTimeout: js.UndefOr[Double] = js.undefined
   var webviewConnectRetries: js.UndefOr[Double] = js.undefined
@@ -258,7 +275,7 @@ object DesiredCapabilities {
     browserName: String = null,
     browserSideLog: js.UndefOr[Boolean] = js.undefined,
     browserVersion: String = null,
-    `bstack:options`: StringDictionary[js.Any] = null,
+    bstackColonoptions: StringDictionary[js.Any] = null,
     build: String = null,
     bundleId: String = null,
     calendarFormat: String = null,
@@ -298,15 +315,15 @@ object DesiredCapabilities {
     firefoxProfileTemplate: String = null,
     firefox_binary: String = null,
     fullReset: js.UndefOr[Boolean] = js.undefined,
-    `goog:chromeOptions`: ChromeOptions = null,
+    googColonchromeOptions: ChromeOptions = null,
     gpsEnabled: js.UndefOr[Boolean] = js.undefined,
     handlesAlerts: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
-    `ie.browserCommandLineSwitches`: String = null,
-    `ie.ensureCleanSession`: js.UndefOr[Boolean] = js.undefined,
-    `ie.forceCreateProcessApi`: js.UndefOr[Boolean] = js.undefined,
-    `ie.setProxyByServer`: js.UndefOr[Boolean] = js.undefined,
-    `ie.usePerProcessProxy`: js.UndefOr[Boolean] = js.undefined,
+    ieDotbrowserCommandLineSwitches: String = null,
+    ieDotensureCleanSession: js.UndefOr[Boolean] = js.undefined,
+    ieDotforceCreateProcessApi: js.UndefOr[Boolean] = js.undefined,
+    ieDotsetProxyByServer: js.UndefOr[Boolean] = js.undefined,
+    ieDotusePerProcessProxy: js.UndefOr[Boolean] = js.undefined,
     ignoreProtectedModeSettings: js.UndefOr[Boolean] = js.undefined,
     ignoreUnimportantViews: js.UndefOr[Boolean] = js.undefined,
     ignoreZoomSetting: js.UndefOr[Boolean] = js.undefined,
@@ -336,10 +353,10 @@ object DesiredCapabilities {
     loggingPrefs: Anon_Browser = null,
     maxInstances: Int | Double = null,
     mobileEmulationEnabled: js.UndefOr[Boolean] = js.undefined,
-    `moz:firefoxOptions`: FirefoxOptions = null,
-    `ms:extensionPaths`: js.Array[String] = null,
-    `ms:inPrivate`: js.UndefOr[Boolean] = js.undefined,
-    `ms:startPage`: String = null,
+    mozColonfirefoxOptions: FirefoxOptions = null,
+    msColonextensionPaths: js.Array[String] = null,
+    msColoninPrivate: js.UndefOr[Boolean] = js.undefined,
+    msColonstartPage: String = null,
     nativeEvents: js.UndefOr[Boolean] = js.undefined,
     nativeInstrumentsLib: js.UndefOr[Boolean] = js.undefined,
     nativeWebScreenshot: js.UndefOr[Boolean] = js.undefined,
@@ -371,14 +388,14 @@ object DesiredCapabilities {
     requireWindowFocus: js.UndefOr[Boolean] = js.undefined,
     resetKeyboard: js.UndefOr[Boolean] = js.undefined,
     rotatable: js.UndefOr[Boolean] = js.undefined,
-    `safari.options`: StringDictionary[js.Any] = null,
     safariAllowPopups: js.UndefOr[Boolean] = js.undefined,
+    safariDotoptions: StringDictionary[js.Any] = null,
     safariIgnoreFraudWarning: js.UndefOr[Boolean] = js.undefined,
     safariInitialUrl: String = null,
     safariOpenLinksInBackground: js.UndefOr[Boolean] = js.undefined,
-    `sauce:options`: StringDictionary[js.Any] = null,
+    sauceColonoptions: StringDictionary[js.Any] = null,
     screenshotWaitTimeout: Int | Double = null,
-    `selenium.server.url`: String = null,
+    seleniumDotserverDoturl: String = null,
     seleniumProtocol: String = null,
     sendKeyStrategy: String = null,
     setWindowRect: js.UndefOr[Boolean] = js.undefined,
@@ -392,7 +409,7 @@ object DesiredCapabilities {
     skipUnlock: js.UndefOr[Boolean] = js.undefined,
     specs: js.Array[String] = null,
     systemPort: Int | Double = null,
-    `tb:options`: StringDictionary[js.Any] = null,
+    tbColonoptions: StringDictionary[js.Any] = null,
     timeoutInSeconds: Int | Double = null,
     timeouts: Timeouts = null,
     trustAllSSLCertificates: js.UndefOr[Boolean] = js.undefined,
@@ -411,8 +428,8 @@ object DesiredCapabilities {
     version: String = null,
     waitForAppScript: String = null,
     webStorageEnabled: js.UndefOr[Boolean] = js.undefined,
-    `webdriver.remote.quietExceptions`: js.UndefOr[Boolean] = js.undefined,
-    `webdriver.remote.sessionid`: String = null,
+    webdriverDotremoteDotquietExceptions: js.UndefOr[Boolean] = js.undefined,
+    webdriverDotremoteDotsessionid: String = null,
     webkitDebugProxyPort: Int | Double = null,
     webkitResponseTimeout: Int | Double = null,
     webviewConnectRetries: Int | Double = null
@@ -456,7 +473,7 @@ object DesiredCapabilities {
     if (browserName != null) __obj.updateDynamic("browserName")(browserName.asInstanceOf[js.Any])
     if (!js.isUndefined(browserSideLog)) __obj.updateDynamic("browserSideLog")(browserSideLog.asInstanceOf[js.Any])
     if (browserVersion != null) __obj.updateDynamic("browserVersion")(browserVersion.asInstanceOf[js.Any])
-    if (`bstack:options` != null) __obj.updateDynamic("bstack:options")(`bstack:options`.asInstanceOf[js.Any])
+    if (bstackColonoptions != null) __obj.updateDynamic("bstack:options")(bstackColonoptions.asInstanceOf[js.Any])
     if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
     if (calendarFormat != null) __obj.updateDynamic("calendarFormat")(calendarFormat.asInstanceOf[js.Any])
@@ -496,15 +513,15 @@ object DesiredCapabilities {
     if (firefoxProfileTemplate != null) __obj.updateDynamic("firefoxProfileTemplate")(firefoxProfileTemplate.asInstanceOf[js.Any])
     if (firefox_binary != null) __obj.updateDynamic("firefox_binary")(firefox_binary.asInstanceOf[js.Any])
     if (!js.isUndefined(fullReset)) __obj.updateDynamic("fullReset")(fullReset.asInstanceOf[js.Any])
-    if (`goog:chromeOptions` != null) __obj.updateDynamic("goog:chromeOptions")(`goog:chromeOptions`.asInstanceOf[js.Any])
+    if (googColonchromeOptions != null) __obj.updateDynamic("goog:chromeOptions")(googColonchromeOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(gpsEnabled)) __obj.updateDynamic("gpsEnabled")(gpsEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(handlesAlerts)) __obj.updateDynamic("handlesAlerts")(handlesAlerts.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (`ie.browserCommandLineSwitches` != null) __obj.updateDynamic("ie.browserCommandLineSwitches")(`ie.browserCommandLineSwitches`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`ie.ensureCleanSession`)) __obj.updateDynamic("ie.ensureCleanSession")(`ie.ensureCleanSession`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`ie.forceCreateProcessApi`)) __obj.updateDynamic("ie.forceCreateProcessApi")(`ie.forceCreateProcessApi`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`ie.setProxyByServer`)) __obj.updateDynamic("ie.setProxyByServer")(`ie.setProxyByServer`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`ie.usePerProcessProxy`)) __obj.updateDynamic("ie.usePerProcessProxy")(`ie.usePerProcessProxy`.asInstanceOf[js.Any])
+    if (ieDotbrowserCommandLineSwitches != null) __obj.updateDynamic("ie.browserCommandLineSwitches")(ieDotbrowserCommandLineSwitches.asInstanceOf[js.Any])
+    if (!js.isUndefined(ieDotensureCleanSession)) __obj.updateDynamic("ie.ensureCleanSession")(ieDotensureCleanSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(ieDotforceCreateProcessApi)) __obj.updateDynamic("ie.forceCreateProcessApi")(ieDotforceCreateProcessApi.asInstanceOf[js.Any])
+    if (!js.isUndefined(ieDotsetProxyByServer)) __obj.updateDynamic("ie.setProxyByServer")(ieDotsetProxyByServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(ieDotusePerProcessProxy)) __obj.updateDynamic("ie.usePerProcessProxy")(ieDotusePerProcessProxy.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreProtectedModeSettings)) __obj.updateDynamic("ignoreProtectedModeSettings")(ignoreProtectedModeSettings.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUnimportantViews)) __obj.updateDynamic("ignoreUnimportantViews")(ignoreUnimportantViews.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreZoomSetting)) __obj.updateDynamic("ignoreZoomSetting")(ignoreZoomSetting.asInstanceOf[js.Any])
@@ -534,10 +551,10 @@ object DesiredCapabilities {
     if (loggingPrefs != null) __obj.updateDynamic("loggingPrefs")(loggingPrefs.asInstanceOf[js.Any])
     if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
     if (!js.isUndefined(mobileEmulationEnabled)) __obj.updateDynamic("mobileEmulationEnabled")(mobileEmulationEnabled.asInstanceOf[js.Any])
-    if (`moz:firefoxOptions` != null) __obj.updateDynamic("moz:firefoxOptions")(`moz:firefoxOptions`.asInstanceOf[js.Any])
-    if (`ms:extensionPaths` != null) __obj.updateDynamic("ms:extensionPaths")(`ms:extensionPaths`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`ms:inPrivate`)) __obj.updateDynamic("ms:inPrivate")(`ms:inPrivate`.asInstanceOf[js.Any])
-    if (`ms:startPage` != null) __obj.updateDynamic("ms:startPage")(`ms:startPage`.asInstanceOf[js.Any])
+    if (mozColonfirefoxOptions != null) __obj.updateDynamic("moz:firefoxOptions")(mozColonfirefoxOptions.asInstanceOf[js.Any])
+    if (msColonextensionPaths != null) __obj.updateDynamic("ms:extensionPaths")(msColonextensionPaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(msColoninPrivate)) __obj.updateDynamic("ms:inPrivate")(msColoninPrivate.asInstanceOf[js.Any])
+    if (msColonstartPage != null) __obj.updateDynamic("ms:startPage")(msColonstartPage.asInstanceOf[js.Any])
     if (!js.isUndefined(nativeEvents)) __obj.updateDynamic("nativeEvents")(nativeEvents.asInstanceOf[js.Any])
     if (!js.isUndefined(nativeInstrumentsLib)) __obj.updateDynamic("nativeInstrumentsLib")(nativeInstrumentsLib.asInstanceOf[js.Any])
     if (!js.isUndefined(nativeWebScreenshot)) __obj.updateDynamic("nativeWebScreenshot")(nativeWebScreenshot.asInstanceOf[js.Any])
@@ -569,14 +586,14 @@ object DesiredCapabilities {
     if (!js.isUndefined(requireWindowFocus)) __obj.updateDynamic("requireWindowFocus")(requireWindowFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(resetKeyboard)) __obj.updateDynamic("resetKeyboard")(resetKeyboard.asInstanceOf[js.Any])
     if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.asInstanceOf[js.Any])
-    if (`safari.options` != null) __obj.updateDynamic("safari.options")(`safari.options`.asInstanceOf[js.Any])
     if (!js.isUndefined(safariAllowPopups)) __obj.updateDynamic("safariAllowPopups")(safariAllowPopups.asInstanceOf[js.Any])
+    if (safariDotoptions != null) __obj.updateDynamic("safari.options")(safariDotoptions.asInstanceOf[js.Any])
     if (!js.isUndefined(safariIgnoreFraudWarning)) __obj.updateDynamic("safariIgnoreFraudWarning")(safariIgnoreFraudWarning.asInstanceOf[js.Any])
     if (safariInitialUrl != null) __obj.updateDynamic("safariInitialUrl")(safariInitialUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(safariOpenLinksInBackground)) __obj.updateDynamic("safariOpenLinksInBackground")(safariOpenLinksInBackground.asInstanceOf[js.Any])
-    if (`sauce:options` != null) __obj.updateDynamic("sauce:options")(`sauce:options`.asInstanceOf[js.Any])
+    if (sauceColonoptions != null) __obj.updateDynamic("sauce:options")(sauceColonoptions.asInstanceOf[js.Any])
     if (screenshotWaitTimeout != null) __obj.updateDynamic("screenshotWaitTimeout")(screenshotWaitTimeout.asInstanceOf[js.Any])
-    if (`selenium.server.url` != null) __obj.updateDynamic("selenium.server.url")(`selenium.server.url`.asInstanceOf[js.Any])
+    if (seleniumDotserverDoturl != null) __obj.updateDynamic("selenium.server.url")(seleniumDotserverDoturl.asInstanceOf[js.Any])
     if (seleniumProtocol != null) __obj.updateDynamic("seleniumProtocol")(seleniumProtocol.asInstanceOf[js.Any])
     if (sendKeyStrategy != null) __obj.updateDynamic("sendKeyStrategy")(sendKeyStrategy.asInstanceOf[js.Any])
     if (!js.isUndefined(setWindowRect)) __obj.updateDynamic("setWindowRect")(setWindowRect.asInstanceOf[js.Any])
@@ -590,7 +607,7 @@ object DesiredCapabilities {
     if (!js.isUndefined(skipUnlock)) __obj.updateDynamic("skipUnlock")(skipUnlock.asInstanceOf[js.Any])
     if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     if (systemPort != null) __obj.updateDynamic("systemPort")(systemPort.asInstanceOf[js.Any])
-    if (`tb:options` != null) __obj.updateDynamic("tb:options")(`tb:options`.asInstanceOf[js.Any])
+    if (tbColonoptions != null) __obj.updateDynamic("tb:options")(tbColonoptions.asInstanceOf[js.Any])
     if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
     if (timeouts != null) __obj.updateDynamic("timeouts")(timeouts.asInstanceOf[js.Any])
     if (!js.isUndefined(trustAllSSLCertificates)) __obj.updateDynamic("trustAllSSLCertificates")(trustAllSSLCertificates.asInstanceOf[js.Any])
@@ -609,8 +626,8 @@ object DesiredCapabilities {
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (waitForAppScript != null) __obj.updateDynamic("waitForAppScript")(waitForAppScript.asInstanceOf[js.Any])
     if (!js.isUndefined(webStorageEnabled)) __obj.updateDynamic("webStorageEnabled")(webStorageEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(`webdriver.remote.quietExceptions`)) __obj.updateDynamic("webdriver.remote.quietExceptions")(`webdriver.remote.quietExceptions`.asInstanceOf[js.Any])
-    if (`webdriver.remote.sessionid` != null) __obj.updateDynamic("webdriver.remote.sessionid")(`webdriver.remote.sessionid`.asInstanceOf[js.Any])
+    if (!js.isUndefined(webdriverDotremoteDotquietExceptions)) __obj.updateDynamic("webdriver.remote.quietExceptions")(webdriverDotremoteDotquietExceptions.asInstanceOf[js.Any])
+    if (webdriverDotremoteDotsessionid != null) __obj.updateDynamic("webdriver.remote.sessionid")(webdriverDotremoteDotsessionid.asInstanceOf[js.Any])
     if (webkitDebugProxyPort != null) __obj.updateDynamic("webkitDebugProxyPort")(webkitDebugProxyPort.asInstanceOf[js.Any])
     if (webkitResponseTimeout != null) __obj.updateDynamic("webkitResponseTimeout")(webkitResponseTimeout.asInstanceOf[js.Any])
     if (webviewConnectRetries != null) __obj.updateDynamic("webviewConnectRetries")(webviewConnectRetries.asInstanceOf[js.Any])

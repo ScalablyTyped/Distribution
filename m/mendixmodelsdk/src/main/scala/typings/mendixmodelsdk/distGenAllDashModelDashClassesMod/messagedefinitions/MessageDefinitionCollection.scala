@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.messagedefinitions
 
+import typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import scala.scalajs.js
@@ -29,7 +30,7 @@ class MessageDefinitionCollection protected ()
 @js.native
 object MessageDefinitionCollection extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates a new MessageDefinitionCollection unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.

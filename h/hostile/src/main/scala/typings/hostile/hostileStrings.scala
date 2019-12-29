@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object hostileStrings {
   @js.native
-  sealed trait `/etc/hosts` extends js.Object
+  sealed trait CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts extends js.Object
   
   @js.native
-  sealed trait `C:/Windows/System32/drivers/etc/hosts` extends js.Object
+  sealed trait SlashetcSlashhosts extends js.Object
   
   @scala.inline
-  def `/etc/hosts`: `/etc/hosts` = "/etc/hosts".asInstanceOf[`/etc/hosts`]
+  def CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts: CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts = "C:/Windows/System32/drivers/etc/hosts".asInstanceOf[CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts]
   @scala.inline
-  def `C:/Windows/System32/drivers/etc/hosts`: `C:/Windows/System32/drivers/etc/hosts` = "C:/Windows/System32/drivers/etc/hosts".asInstanceOf[`C:/Windows/System32/drivers/etc/hosts`]
+  def SlashetcSlashhosts: SlashetcSlashhosts = "/etc/hosts".asInstanceOf[SlashetcSlashhosts]
 }
 

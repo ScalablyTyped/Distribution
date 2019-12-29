@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.antd.libTableCreateStoreMod.Store
 import typings.antd.libTableInterfaceMod.CheckboxPropsCache
 import typings.antd.libTableInterfaceMod.TableProps
-import typings.antd.libTableTableMod.StoreTable
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

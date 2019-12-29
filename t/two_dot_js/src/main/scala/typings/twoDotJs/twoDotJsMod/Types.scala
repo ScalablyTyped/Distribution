@@ -1,9 +1,6 @@
 package typings.twoDotJs.twoDotJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.twoDotJs.twoDotJsMod.Types.canvas
-import typings.twoDotJs.twoDotJsMod.Types.svg
-import typings.twoDotJs.twoDotJsMod.Types.webgl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

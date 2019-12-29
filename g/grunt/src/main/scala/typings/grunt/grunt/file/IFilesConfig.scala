@@ -13,11 +13,11 @@ trait IFilesConfig extends IMinimatchOptions {
     * Patterns will be matched relative to this path, and all returned filepaths will
     * also be relative to this path.
     */
-  var cwd: js.UndefOr[java.lang.String] = js.undefined
+  var cwd: js.UndefOr[String] = js.undefined
   /**
     * Destination path prefix.
     */
-  var dest: js.UndefOr[java.lang.String] = js.undefined
+  var dest: js.UndefOr[String] = js.undefined
   /**
     * Process a dynamic src-dest file mapping,
     * @see {@link http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically for more information.
@@ -45,15 +45,15 @@ trait IFilesConfig extends IMinimatchOptions {
   /**
     * Pattern(s) to match, relative to the {@link IExpandedFilesConfig.cwd}.
     */
-  var src: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var src: js.UndefOr[js.Array[String]] = js.undefined
 }
 
 object IFilesConfig {
   @scala.inline
   def apply(
-    cwd: java.lang.String = null,
+    cwd: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    dest: java.lang.String = null,
+    dest: String = null,
     dot: js.UndefOr[Boolean] = js.undefined,
     expand: js.UndefOr[Boolean] = js.undefined,
     filter: js.Any = null,
@@ -66,7 +66,7 @@ object IFilesConfig {
     noglobstar: js.UndefOr[Boolean] = js.undefined,
     nonegate: js.UndefOr[Boolean] = js.undefined,
     nonull: js.UndefOr[Boolean] = js.undefined,
-    src: js.Array[java.lang.String] = null
+    src: js.Array[String] = null
   ): IFilesConfig = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])

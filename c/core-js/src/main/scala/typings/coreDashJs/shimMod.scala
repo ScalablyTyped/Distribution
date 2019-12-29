@@ -65,7 +65,8 @@ object shimMod extends js.Object {
   }
   
   val Dict: DictConstructor = js.native
-  val `_`: Boolean = js.native
+  @JSName("_")
+  val _underscore: Boolean = js.native
   val global: js.Any = js.native
   val version: java.lang.String = js.native
   @JSName("$for")

@@ -11,7 +11,8 @@ class Categories protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Categories_typekey`: Categories = js.native
+  @JSName("Word.Categories_typekey")
+  var WordDotCategories_typekey: Categories = js.native
   def Item(Index: js.Any): Category = js.native
 }
 

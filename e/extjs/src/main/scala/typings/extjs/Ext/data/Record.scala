@@ -43,7 +43,7 @@ object Record extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Returns the configured Proxy for this Model
   		* @returns Ext.data.proxy.Proxy The proxy
   		*/
@@ -52,8 +52,8 @@ object Record extends js.Object {
   		* @param rec Ext.data.Model The record being created. The record does not exist, it's a phantom.
   		* @returns String auto-generated string id, "ext-record-i++";
   		*/
-  def id(): java.lang.String = js.native
-  def id(rec: IModel): java.lang.String = js.native
+  def id(): String = js.native
+  def id(rec: IModel): String = js.native
   /** [Method] Adds members to class  */
   def implement(): Unit = js.native
   /** [Method] Asynchronously loads a model instance by id

@@ -3027,9 +3027,6 @@ object activexDashAccessNumbers {
     extends AcCommand
        with Constants
   
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
@@ -4494,7 +4491,5 @@ object activexDashAccessNumbers {
   def `98`: `98` = 98.asInstanceOf[`98`]
   @scala.inline
   def `99`: `99` = 99.asInstanceOf[`99`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

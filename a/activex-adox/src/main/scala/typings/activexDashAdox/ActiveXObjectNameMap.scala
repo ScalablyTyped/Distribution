@@ -12,34 +12,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var `ADOX.Catalog`: Catalog
-  var `ADOX.Column`: Column
-  var `ADOX.Group`: Group
-  var `ADOX.Index`: Index
-  var `ADOX.Key`: Key
-  var `ADOX.Table`: Table
-  var `ADOX.User`: User
+  @JSName("ADOX.Catalog")
+  var ADOXDotCatalog: Catalog
+  @JSName("ADOX.Column")
+  var ADOXDotColumn: Column
+  @JSName("ADOX.Group")
+  var ADOXDotGroup: Group
+  @JSName("ADOX.Index")
+  var ADOXDotIndex: Index
+  @JSName("ADOX.Key")
+  var ADOXDotKey: Key
+  @JSName("ADOX.Table")
+  var ADOXDotTable: Table
+  @JSName("ADOX.User")
+  var ADOXDotUser: User
 }
 
 object ActiveXObjectNameMap {
   @scala.inline
   def apply(
-    `ADOX.Catalog`: Catalog,
-    `ADOX.Column`: Column,
-    `ADOX.Group`: Group,
-    `ADOX.Index`: Index,
-    `ADOX.Key`: Key,
-    `ADOX.Table`: Table,
-    `ADOX.User`: User
+    ADOXDotCatalog: Catalog,
+    ADOXDotColumn: Column,
+    ADOXDotGroup: Group,
+    ADOXDotIndex: Index,
+    ADOXDotKey: Key,
+    ADOXDotTable: Table,
+    ADOXDotUser: User
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADOX.Catalog")(`ADOX.Catalog`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ADOX.Column")(`ADOX.Column`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ADOX.Group")(`ADOX.Group`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ADOX.Index")(`ADOX.Index`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ADOX.Key")(`ADOX.Key`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ADOX.Table")(`ADOX.Table`.asInstanceOf[js.Any])
-    __obj.updateDynamic("ADOX.User")(`ADOX.User`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Catalog")(ADOXDotCatalog.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Column")(ADOXDotColumn.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Group")(ADOXDotGroup.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Index")(ADOXDotIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Key")(ADOXDotKey.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Table")(ADOXDotTable.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.User")(ADOXDotUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

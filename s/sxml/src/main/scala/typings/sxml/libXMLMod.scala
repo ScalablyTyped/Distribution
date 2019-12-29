@@ -1,8 +1,6 @@
 package typings.sxml
 
 import typings.sxml.libXMLListMod.XMLList
-import typings.sxml.libXMLMod.XML
-import typings.sxml.libXMLMod.XML.ReverseIterator
 import typings.tstl.containerHashMapMod.HashMap.Iterator
 import typings.tstl.tstlMod.HashMap
 import scala.scalajs.js

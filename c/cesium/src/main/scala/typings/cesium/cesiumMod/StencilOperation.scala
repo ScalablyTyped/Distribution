@@ -1,14 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.StencilOperation.DECREMENT
-import typings.cesium.cesiumMod.StencilOperation.DECREMENT_WRAP
-import typings.cesium.cesiumMod.StencilOperation.INCREMENT
-import typings.cesium.cesiumMod.StencilOperation.INCREMENT_WRAP
-import typings.cesium.cesiumMod.StencilOperation.INVERT
-import typings.cesium.cesiumMod.StencilOperation.KEEP
-import typings.cesium.cesiumMod.StencilOperation.REPLACE
-import typings.cesium.cesiumMod.StencilOperation.ZERO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

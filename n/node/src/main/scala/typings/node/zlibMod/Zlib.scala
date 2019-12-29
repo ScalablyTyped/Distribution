@@ -9,7 +9,7 @@ trait Zlib extends js.Object {
   /** @deprecated Use bytesWritten instead. */
   val bytesRead: Double = js.native
   val bytesWritten: Double = js.native
-  var shell: js.UndefOr[Boolean | java.lang.String] = js.native
+  var shell: js.UndefOr[Boolean | String] = js.native
   def close(): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native
   def flush(): Unit = js.native

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IDOMEvent")
 @js.native
 class IDOMEvent protected () extends js.Object {
-  var `MSHTML.IDOMEvent_typekey`: IDOMEvent = js.native
+  @JSName("MSHTML.IDOMEvent_typekey")
+  var MSHTMLDotIDOMEvent_typekey: IDOMEvent = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   val cancelable: Boolean = js.native

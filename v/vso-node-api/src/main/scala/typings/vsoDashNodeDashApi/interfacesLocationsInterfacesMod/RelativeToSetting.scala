@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.RelativeToSetting.Context
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.RelativeToSetting.FullyQualified
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.RelativeToSetting.WebApplication
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

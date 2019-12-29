@@ -17,7 +17,6 @@ import typings.atUirouterCore.libTransitionInterfaceMod.RegisteredHooks
 import typings.atUirouterCore.libTransitionInterfaceMod.TransitionOptions
 import typings.atUirouterCore.libTransitionInterfaceMod.TreeChanges
 import typings.atUirouterCore.libTransitionRejectFactoryMod.Rejection
-import typings.atUirouterCore.libTransitionTransitionMod.Transition
 import typings.atUirouterCore.libViewInterfaceMod.ViewConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`

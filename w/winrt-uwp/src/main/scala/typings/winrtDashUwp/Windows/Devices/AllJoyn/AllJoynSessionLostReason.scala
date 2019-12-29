@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.linkTimeout
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.none
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.other
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.producerClosedAbruptly
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.producerLeftSession
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.removedByProducer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

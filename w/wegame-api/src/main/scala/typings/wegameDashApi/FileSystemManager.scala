@@ -94,14 +94,20 @@ class FileSystemManager () extends js.Object {
     */
   def readFile(param: ReadfileParams): Unit = js.native
   /**
-    * readFile 的同步版本
+    * readFile 的同步版本，读取并返回指定路径的文件的原始二进制内容
     * @param filePath 要读取的文件的路径
-    * @param encoding 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
     * @throws 指定的 filePath 所在目录不存在
     * @throws 指定的 filePath 路径没有读权限
     */
-  def readFileSync(filePath: String): String | ArrayBuffer = js.native
-  def readFileSync(filePath: String, encoding: FileContentEncoding): String | ArrayBuffer = js.native
+  def readFileSync(filePath: String): ArrayBuffer = js.native
+  /**
+    * readFile 的同步版本，读取并按指定字符编码返回字符串
+    * @param filePath 要读取的文件的路径
+    * @param encoding 指定读取文件的字符编码
+    * @throws 指定的 filePath 所在目录不存在
+    * @throws 指定的 filePath 路径没有读权限
+    */
+  def readFileSync(filePath: String, encoding: FileContentEncoding): String = js.native
   /**
     * 读取目录内文件列表
     */
@@ -188,16 +194,21 @@ class FileSystemManager () extends js.Object {
     */
   def writeFile(param: WritefileParams): Unit = js.native
   /**
-    * writeFile 的同步版本
+    * writeFile 的同步版本，写入文本字符串数据至文件
     * @param filePath 要写入的文件路径
-    * @param data 要写入的文本或二进制数据
-    * @param encoding 指定写入文件的字符编码
+    * @param data 要写入的文本内容
+    * @param encoding 指定写入的文本的字符编码格式
     * @throws 指定的 filePath 所在目录不存在
     * @throws 指定的 filePath 路径没有写权限
     */
-  def writeFileSync(filePath: String, data: String): Unit = js.native
   def writeFileSync(filePath: String, data: String, encoding: FileContentEncoding): Unit = js.native
+  /**
+    * writeFile 的同步版本，写入二进制原始文件数据
+    * @param filePath 要写入的文件路径
+    * @param data 要写入的二进制数据
+    * @throws 指定的 filePath 所在目录不存在
+    * @throws 指定的 filePath 路径没有写权限
+    */
   def writeFileSync(filePath: String, data: ArrayBuffer): Unit = js.native
-  def writeFileSync(filePath: String, data: ArrayBuffer, encoding: FileContentEncoding): Unit = js.native
 }
 

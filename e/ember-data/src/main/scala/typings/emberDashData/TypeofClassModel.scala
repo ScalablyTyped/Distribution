@@ -68,9 +68,8 @@ trait TypeofClassModel extends Instantiable0[Model] {
     * Iterates through the attributes of the model, calling the passed function on each
     * attribute.
     */
-  def eachAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */, M /* <: InstanceType[Class] */](`this`: Class, callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
+  def eachAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
   def eachAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */, M /* <: InstanceType[Class] */](
-    `this`: Class,
     callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit],
     binding: js.Any
   ): Unit = js.native
@@ -97,12 +96,8 @@ trait TypeofClassModel extends Instantiable0[Model] {
     * the passed function on each attribute. Note the callback will not be
     * called for any attributes that do not have an transformation type.
     */
+  def eachTransformedAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */](callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]): Unit = js.native
   def eachTransformedAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */](
-    `this`: Class,
-    callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]
-  ): Unit = js.native
-  def eachTransformedAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */](
-    `this`: Class,
     callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit],
     binding: js.Any
   ): Unit = js.native

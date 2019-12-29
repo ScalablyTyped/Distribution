@@ -2,7 +2,6 @@ package typings.atFirebaseUtil
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.atFirebaseUtil.distSrcCryptMod.Base64
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

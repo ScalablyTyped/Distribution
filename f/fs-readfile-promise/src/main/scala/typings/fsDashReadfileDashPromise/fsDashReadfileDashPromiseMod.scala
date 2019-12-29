@@ -1,7 +1,5 @@
 package typings.fsDashReadfileDashPromise
 
-import typings.fsDashReadfileDashPromise.fsDashReadfileDashPromiseMod.OptionsType
-import typings.fsDashReadfileDashPromise.fsDashReadfileDashPromiseMod.PathType
 import typings.node.Buffer
 import typings.node.fsMod.PathLike
 import scala.scalajs.js

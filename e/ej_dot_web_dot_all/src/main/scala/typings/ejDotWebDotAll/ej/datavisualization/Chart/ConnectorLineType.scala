@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ConnectorLineType.Bezier
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.ConnectorLineType.Line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

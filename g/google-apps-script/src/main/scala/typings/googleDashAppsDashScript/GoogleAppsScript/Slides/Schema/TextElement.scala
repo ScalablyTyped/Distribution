@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextElement extends js.Object {
-  var autoText: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.AutoText] = js.undefined
+  var autoText: js.UndefOr[AutoText] = js.undefined
   var endIndex: js.UndefOr[Double] = js.undefined
   var paragraphMarker: js.UndefOr[ParagraphMarker] = js.undefined
   var startIndex: js.UndefOr[Double] = js.undefined
@@ -15,7 +15,7 @@ trait TextElement extends js.Object {
 object TextElement {
   @scala.inline
   def apply(
-    autoText: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.AutoText = null,
+    autoText: AutoText = null,
     endIndex: Int | Double = null,
     paragraphMarker: ParagraphMarker = null,
     startIndex: Int | Double = null,

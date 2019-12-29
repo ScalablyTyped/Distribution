@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.PageNavigationType.CONTINUE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.PageNavigationType.GO_TO_PAGE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.PageNavigationType.RESTART
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.PageNavigationType.SUBMIT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

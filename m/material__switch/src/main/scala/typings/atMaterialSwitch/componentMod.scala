@@ -2,7 +2,6 @@ package typings.atMaterialSwitch
 
 import typings.atMaterialBase.componentMod.MDCComponent
 import typings.atMaterialBase.foundationMod.default
-import typings.atMaterialSwitch.componentMod.MDCSwitch
 import typings.atMaterialSwitch.foundationMod.MDCSwitchFoundation
 import typings.std.Element
 import typings.std.HTMLElement

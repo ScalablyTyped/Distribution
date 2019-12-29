@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Capture.VideoRotation.clockwise180Degrees
-import typings.winrt.Windows.Media.Capture.VideoRotation.clockwise270Degrees
-import typings.winrt.Windows.Media.Capture.VideoRotation.clockwise90Degrees
-import typings.winrt.Windows.Media.Capture.VideoRotation.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

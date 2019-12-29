@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Line")
 @js.native
 class Line protected () extends js.Object {
-  var `Access.Line_typekey`: Line = js.native
+  @JSName("Access.Line_typekey")
+  var AccessDotLine_typekey: Line = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BorderColor: Double = js.native
   var BorderLineStyle: Double = js.native

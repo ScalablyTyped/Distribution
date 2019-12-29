@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeLineStyle.single
-import typings.officeDashJsDashPreview.Excel.ShapeLineStyle.thickBetweenThin
-import typings.officeDashJsDashPreview.Excel.ShapeLineStyle.thickThin
-import typings.officeDashJsDashPreview.Excel.ShapeLineStyle.thinThick
-import typings.officeDashJsDashPreview.Excel.ShapeLineStyle.thinThin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

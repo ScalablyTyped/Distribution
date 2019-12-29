@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.CUSTOM_FUNCTION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.FULL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.LIMITED
-import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

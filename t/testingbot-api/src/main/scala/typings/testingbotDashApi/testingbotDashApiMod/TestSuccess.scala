@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.testingbotDashApi.testingbotDashApiNumbers.`true`
-  - typings.testingbotDashApi.testingbotDashApiNumbers.`false`
+  - typings.testingbotDashApi.testingbotDashApiBooleans.`true`
+  - typings.testingbotDashApi.testingbotDashApiBooleans.`false`
   - typings.testingbotDashApi.testingbotDashApiNumbers.`0`
   - typings.testingbotDashApi.testingbotDashApiNumbers.`1`
 */
@@ -20,8 +20,8 @@ object TestSuccess {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def `false`: typings.testingbotDashApi.testingbotDashApiNumbers.`false` = this.cast(false)
+  def `false`: typings.testingbotDashApi.testingbotDashApiBooleans.`false` = this.cast(false)
   @scala.inline
-  def `true`: typings.testingbotDashApi.testingbotDashApiNumbers.`true` = this.cast(true)
+  def `true`: typings.testingbotDashApi.testingbotDashApiBooleans.`true` = this.cast(true)
 }
 

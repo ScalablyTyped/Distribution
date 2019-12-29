@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationProtocol.challengeResponse
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationProtocol.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

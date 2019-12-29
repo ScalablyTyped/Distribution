@@ -364,7 +364,7 @@ trait ChaiJQueryStatic extends js.Object {
     *
     * @param value The value to search for.
     * @param array An array through which to search.
-    * @param fromIndex he index of the array at which to begin the search. The default is 0, which will search the whole array.
+    * @param fromIndex The index of the array at which to begin the search. The default is 0, which will search the whole array.
     */
   def inArray[T](value: T, array: js.Array[T]): Double = js.native
   def inArray[T](value: T, array: js.Array[T], fromIndex: Double): Double = js.native
@@ -407,7 +407,7 @@ trait ChaiJQueryStatic extends js.Object {
   /**
     * Check to see if a DOM node is within an XML document (or is an XML document).
     *
-    * @param node he DOM node that will be checked to see if it's in an XML document.
+    * @param node The DOM node that will be checked to see if it's in an XML document.
     */
   def isXMLDoc(node: Node): Boolean = js.native
   /**

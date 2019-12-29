@@ -1,12 +1,6 @@
 package typings.cfb.cfbMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cfb.cfbMod.CFB$EntryType.lockbytes
-import typings.cfb.cfbMod.CFB$EntryType.property
-import typings.cfb.cfbMod.CFB$EntryType.root
-import typings.cfb.cfbMod.CFB$EntryType.storage
-import typings.cfb.cfbMod.CFB$EntryType.stream
-import typings.cfb.cfbMod.CFB$EntryType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +30,6 @@ object CFB$EntryType extends js.Object {
   sealed trait unknown extends CFB$EntryType
   
   @JSBracketAccess
-  @JSName("CFB$EntryType")
   def apply(value: Double): js.UndefOr[CFB$EntryType with Double] = js.native
   /* 3 */ @js.native
   object lockbytes extends TopLevel[lockbytes with Double]

@@ -40,9 +40,6 @@ object openpgpStrings {
   sealed trait secp256k1 extends curve
   
   @js.native
-  sealed trait string extends js.Object
-  
-  @js.native
   sealed trait utf8 extends js.Object
   
   @js.native
@@ -70,8 +67,6 @@ object openpgpStrings {
   def p384: p384 = "p384".asInstanceOf[p384]
   @scala.inline
   def secp256k1: secp256k1 = "secp256k1".asInstanceOf[secp256k1]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
   @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
   @scala.inline

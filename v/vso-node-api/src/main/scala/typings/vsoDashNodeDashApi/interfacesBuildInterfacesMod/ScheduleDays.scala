@@ -1,15 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.All
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.Friday
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.Monday
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.None
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.Saturday
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.Sunday
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.Thursday
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.Tuesday
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ScheduleDays.Wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

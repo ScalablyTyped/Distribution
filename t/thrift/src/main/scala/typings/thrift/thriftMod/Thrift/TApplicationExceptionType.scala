@@ -1,17 +1,6 @@
 package typings.thrift.thriftMod.Thrift
 
 import org.scalablytyped.runtime.TopLevel
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.BAD_SEQUENCE_ID
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.INTERNAL_ERROR
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.INVALID_MESSAGE_TYPE
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.INVALID_PROTOCOL
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.INVALID_TRANSFORM
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.MISSING_RESULT
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.PROTOCOL_ERROR
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.UNKNOWN
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.UNKNOWN_METHOD
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.UNSUPPORTED_CLIENT_TYPE
-import typings.thrift.thriftMod.Thrift.TApplicationExceptionType.WRONG_METHOD_NAME
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,8 @@ class PickerDialog protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   var DataHandlerId: String = js.native
-  var `Office.PickerDialog_typekey`: PickerDialog = js.native
+  @JSName("Office.PickerDialog_typekey")
+  var OfficeDotPickerDialog_typekey: PickerDialog = js.native
   @JSName("Properties")
   val Properties_Original: PickerProperties = js.native
   var Title: String = js.native

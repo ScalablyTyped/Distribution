@@ -9,14 +9,9 @@ package object netMod {
   import typings.node.dnsMod.LookupOneOptions
 
   type LookupFunction = js.Function3[
-    /* hostname */ java.lang.String, 
+    /* hostname */ String, 
     /* options */ LookupOneOptions, 
-    /* callback */ js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* address */ java.lang.String, 
-      /* family */ Double, 
-      Unit
-    ], 
+    /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit], 
     Unit
   ]
 }

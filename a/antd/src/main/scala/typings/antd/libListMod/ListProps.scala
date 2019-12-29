@@ -1,6 +1,6 @@
 package typings.antd.libListMod
 
-import typings.antd.antdNumbers.`false`
+import typings.antd.antdBooleans.`false`
 import typings.antd.libPaginationPaginationMod.PaginationConfig
 import typings.antd.libSpinMod.SpinProps
 import typings.react.reactMod.CSSProperties

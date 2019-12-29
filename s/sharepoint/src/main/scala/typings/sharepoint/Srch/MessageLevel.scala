@@ -1,9 +1,6 @@
 package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Srch.MessageLevel.error
-import typings.sharepoint.Srch.MessageLevel.information
-import typings.sharepoint.Srch.MessageLevel.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

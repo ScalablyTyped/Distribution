@@ -1,6 +1,5 @@
 package typings.typescriptDashCollections
 
-import typings.typescriptDashCollections.distLibQueueMod.Queue
 import typings.typescriptDashCollections.distLibUtilMod.IEqualsFunction
 import typings.typescriptDashCollections.distLibUtilMod.ILoopFunction
 import scala.scalajs.js

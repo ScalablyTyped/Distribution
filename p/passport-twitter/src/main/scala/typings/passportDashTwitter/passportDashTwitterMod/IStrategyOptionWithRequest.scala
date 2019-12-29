@@ -1,6 +1,6 @@
 package typings.passportDashTwitter.passportDashTwitterMod
 
-import typings.passportDashTwitter.passportDashTwitterNumbers.`true`
+import typings.passportDashTwitter.passportDashTwitterBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

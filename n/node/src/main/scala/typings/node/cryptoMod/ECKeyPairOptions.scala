@@ -10,7 +10,7 @@ trait ECKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extend
   /**
     * Name of the curve to use.
     */
-  var namedCurve: java.lang.String
+  var namedCurve: String
   var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8Sec1
   var publicKeyEncoding: Anon_Format[PubF]
 }
@@ -18,7 +18,7 @@ trait ECKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extend
 object ECKeyPairOptions {
   @scala.inline
   def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
-    namedCurve: java.lang.String,
+    namedCurve: String,
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8Sec1,
     publicKeyEncoding: Anon_Format[PubF]
   ): ECKeyPairOptions[PubF, PrivF] = {

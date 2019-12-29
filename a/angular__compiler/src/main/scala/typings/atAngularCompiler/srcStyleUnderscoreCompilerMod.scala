@@ -2,8 +2,6 @@ package typings.atAngularCompiler
 
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileStylesheetMetadata
-import typings.atAngularCompiler.srcStyleUnderscoreCompilerMod.CompiledStylesheet
-import typings.atAngularCompiler.srcStyleUnderscoreCompilerMod.StylesCompileDependency
 import typings.atAngularCompiler.srcUrlUnderscoreResolverMod.UrlResolver
 import typings.atAngularCompiler.srcUtilMod.OutputContext
 import scala.scalajs.js

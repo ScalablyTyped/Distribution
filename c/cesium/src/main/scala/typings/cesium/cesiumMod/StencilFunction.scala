@@ -1,14 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.StencilFunction.ALWAYS
-import typings.cesium.cesiumMod.StencilFunction.EQUAL
-import typings.cesium.cesiumMod.StencilFunction.GREATER
-import typings.cesium.cesiumMod.StencilFunction.GREATER_OR_EQUAL
-import typings.cesium.cesiumMod.StencilFunction.LESS
-import typings.cesium.cesiumMod.StencilFunction.LESS_OR_EQUAL
-import typings.cesium.cesiumMod.StencilFunction.NEVER
-import typings.cesium.cesiumMod.StencilFunction.NOT_EQUAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

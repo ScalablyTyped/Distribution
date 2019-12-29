@@ -8,7 +8,7 @@ import typings.reactDashRnd.Anon_HeightWidth
 import typings.reactDashRnd.Anon_HeightWidthNumber
 import typings.reactDashRnd.Anon_Left
 import typings.reactDashRnd.Anon_X
-import typings.reactDashRnd.reactDashRndNumbers.`false`
+import typings.reactDashRnd.reactDashRndBooleans.`false`
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.MouseEvent

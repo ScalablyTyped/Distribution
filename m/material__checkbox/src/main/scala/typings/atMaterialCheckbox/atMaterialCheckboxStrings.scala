@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atMaterialCheckboxStrings {
   @js.native
-  sealed trait `DOTmdc-checkbox__native-control` extends js.Object
+  sealed trait `Dotmdc-checkbox__native-control` extends js.Object
   
   @js.native
   sealed trait `aria-checked` extends js.Object
@@ -57,7 +57,7 @@ object atMaterialCheckboxStrings {
   sealed trait unchecked extends js.Object
   
   @scala.inline
-  def `DOTmdc-checkbox__native-control`: `DOTmdc-checkbox__native-control` = ".mdc-checkbox__native-control".asInstanceOf[`DOTmdc-checkbox__native-control`]
+  def `Dotmdc-checkbox__native-control`: `Dotmdc-checkbox__native-control` = ".mdc-checkbox__native-control".asInstanceOf[`Dotmdc-checkbox__native-control`]
   @scala.inline
   def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
   @scala.inline

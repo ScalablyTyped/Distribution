@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAltBearertokenCallbackCollectionId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -30,7 +30,8 @@ trait Anon_AccesstokenAltBearertokenCallbackCollectionId extends js.Object {
     * The list of field paths in the mask. See Document.fields for a field
     * path syntax reference.
     */
-  var `mask.fieldPaths`: js.UndefOr[String] = js.native
+  @JSName("mask.fieldPaths")
+  var maskDotfieldPaths: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.native
   /** The order to sort results by. For example: `priority desc, name`. */

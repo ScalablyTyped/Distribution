@@ -1,9 +1,6 @@
 package typings.grpc.grpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grpc.grpcMod.logVerbosity.DEBUG
-import typings.grpc.grpcMod.logVerbosity.ERROR
-import typings.grpc.grpcMod.logVerbosity.INFO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.terser.terserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.terser.terserMod.OutputQuoteStyle.AlwaysDouble
-import typings.terser.terserMod.OutputQuoteStyle.AlwaysOriginal
-import typings.terser.terserMod.OutputQuoteStyle.AlwaysSingle
-import typings.terser.terserMod.OutputQuoteStyle.PreferDouble
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

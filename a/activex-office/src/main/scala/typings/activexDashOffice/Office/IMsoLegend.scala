@@ -19,7 +19,8 @@ class IMsoLegend protected () extends js.Object {
   val Interior: IMsoInterior = js.native
   var Left: Double = js.native
   val Name: String = js.native
-  var `Office.IMsoLegend_typekey`: IMsoLegend = js.native
+  @JSName("Office.IMsoLegend_typekey")
+  var OfficeDotIMsoLegend_typekey: IMsoLegend = js.native
   val Parent: js.Any = js.native
   var Position: XlLegendPosition = js.native
   var Shadow: Boolean = js.native

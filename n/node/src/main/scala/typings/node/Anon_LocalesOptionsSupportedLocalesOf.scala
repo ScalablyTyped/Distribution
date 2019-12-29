@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_LocalesOptionsSupportedLocalesOf
   extends Instantiable0[PluralRules]
+     with Instantiable1[
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      PluralRules
+    ]
      with Instantiable2[
       (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       /* options */ PluralRulesOptions, 
-      PluralRules
-    ]
-     with Instantiable1[
-      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       PluralRules
     ] {
   def apply(): PluralRules = js.native

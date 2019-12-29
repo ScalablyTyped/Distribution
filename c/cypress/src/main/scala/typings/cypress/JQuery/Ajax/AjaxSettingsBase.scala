@@ -3,8 +3,8 @@ package typings.cypress.JQuery.Ajax
 import typings.cypress.JQuery.PlainObject
 import typings.cypress.JQuery.TypeOrArray
 import typings.cypress.JQuery.jqXHR
-import typings.cypress.cypressNumbers.`false`
-import typings.cypress.cypressNumbers.`true`
+import typings.cypress.cypressBooleans.`false`
+import typings.cypress.cypressBooleans.`true`
 import typings.cypress.cypressStrings.html_
 import typings.cypress.cypressStrings.json_
 import typings.cypress.cypressStrings.jsonp

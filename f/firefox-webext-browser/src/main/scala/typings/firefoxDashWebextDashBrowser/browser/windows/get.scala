@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object get extends js.Object {
   /* windows functions */
   /** Gets details about a window. */
-  def apply(windowId: Double): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
-  def apply(windowId: Double, getInfo: GetInfo): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
+  def apply(windowId: Double): js.Promise[Window] = js.native
+  def apply(windowId: Double, getInfo: GetInfo): js.Promise[Window] = js.native
 }
 

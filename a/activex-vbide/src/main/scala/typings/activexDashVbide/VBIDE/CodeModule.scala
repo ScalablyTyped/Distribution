@@ -13,7 +13,8 @@ class CodeModule protected () extends js.Object {
   var Name: String = js.native
   val Parent: VBComponent = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
-  var `VBIDE.CodeModule_typekey`: CodeModule = js.native
+  @JSName("VBIDE.CodeModule_typekey")
+  var VBIDEDotCodeModule_typekey: CodeModule = js.native
   def AddFromFile(FileName: String): Unit = js.native
   def AddFromString(String: String): Unit = js.native
   def CreateEventProc(EventName: String, ObjectName: String): Double = js.native

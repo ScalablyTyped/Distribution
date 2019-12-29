@@ -13,7 +13,7 @@ trait OpenFailureEventArgs extends js.Object {
   var failureType: js.UndefOr[String] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the status index.
     */
   var status: js.UndefOr[Double] = js.undefined
@@ -30,7 +30,7 @@ object OpenFailureEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     failureType: String = null,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     status: Int | Double = null,
     statusText: String = null,
     `type`: String = null

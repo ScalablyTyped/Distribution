@@ -3,13 +3,13 @@ package typings.gapiDotCalendar.gapi.client.calendar
 import typings.gapi.gapi.client.HttpRequest
 import typings.gapiDotCalendar.Anon_Busy
 import typings.gapiDotCalendar.Anon_Calendars
-import typings.gapiDotCalendar.gapiDotCalendarStrings.`calendar#freeBusy`
+import typings.gapiDotCalendar.gapiDotCalendarStrings.calendarNumbersignfreeBusy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FreeBusy extends js.Object {
-  var kind: `calendar#freeBusy`
+  var kind: calendarNumbersignfreeBusy
   var timeMax: datetime
   var timeMin: datetime
   def calendars(key: String): Anon_Busy
@@ -21,7 +21,7 @@ object FreeBusy {
   def apply(
     calendars: String => Anon_Busy,
     groups: String => Anon_Calendars,
-    kind: `calendar#freeBusy`,
+    kind: calendarNumbersignfreeBusy,
     timeMax: datetime,
     timeMin: datetime
   ): FreeBusy = {

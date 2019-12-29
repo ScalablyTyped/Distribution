@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Approved
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Canceled
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Pending
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Reassigned
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Rejected
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Skipped
-import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

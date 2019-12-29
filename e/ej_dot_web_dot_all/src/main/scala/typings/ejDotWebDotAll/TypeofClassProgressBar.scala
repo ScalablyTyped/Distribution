@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassProgressBar
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ProgressBar]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), ProgressBar] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), ProgressBar]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ProgressBar] {
   var Locale: js.Any = js.native
   var fn: ProgressBar = js.native
 }

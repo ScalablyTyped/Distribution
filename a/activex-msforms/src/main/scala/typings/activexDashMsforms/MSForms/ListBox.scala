@@ -36,7 +36,8 @@ class ListBox protected () extends js.Object {
   var ListStyle: fmListStyle = js.native
   var ListWidth: js.Any = js.native
   var Locked: Boolean = js.native
-  var `MSForms.ListBox_typekey`: ListBox = js.native
+  @JSName("MSForms.ListBox_typekey")
+  var MSFormsDotListBox_typekey: ListBox = js.native
   var MatchEntry: fmMatchEntry = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native

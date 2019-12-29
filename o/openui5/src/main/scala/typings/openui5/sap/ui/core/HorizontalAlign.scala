@@ -1,11 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.HorizontalAlign.Begin
-import typings.openui5.sap.ui.core.HorizontalAlign.Center
-import typings.openui5.sap.ui.core.HorizontalAlign.End
-import typings.openui5.sap.ui.core.HorizontalAlign.Left
-import typings.openui5.sap.ui.core.HorizontalAlign.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

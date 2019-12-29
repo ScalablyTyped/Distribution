@@ -11,6 +11,7 @@ class ResizeObserver protected () extends js.Object {
   def this(callback: ResizeObserverCallback) = this()
   def disconnect(): Unit = js.native
   def observe(target: Element): Unit = js.native
+  def observe(target: Element, options: ResizeObserverOptions): Unit = js.native
   def unobserve(target: Element): Unit = js.native
 }
 

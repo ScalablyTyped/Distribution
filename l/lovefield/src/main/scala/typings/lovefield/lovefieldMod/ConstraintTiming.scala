@@ -1,8 +1,6 @@
 package typings.lovefield.lovefieldMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.lovefield.lovefieldMod.ConstraintTiming.DEFERRABLE
-import typings.lovefield.lovefieldMod.ConstraintTiming.IMMEDIATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

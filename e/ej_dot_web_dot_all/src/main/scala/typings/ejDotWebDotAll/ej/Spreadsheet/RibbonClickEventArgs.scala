@@ -17,7 +17,7 @@ trait RibbonClickEventArgs extends js.Object {
   var isChecked: js.UndefOr[Boolean] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns target information.
     */
   var prop: js.UndefOr[js.Any] = js.undefined
@@ -38,7 +38,7 @@ object RibbonClickEventArgs {
     Id: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     isChecked: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     prop: js.Any = null,
     status: js.UndefOr[Boolean] = js.undefined,
     target: HTMLElement = null,

@@ -1,12 +1,6 @@
 package typings.atBlueprintjsDatetime
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit
-import typings.atBlueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.HOUR_12
-import typings.atBlueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.HOUR_24
-import typings.atBlueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.MINUTE
-import typings.atBlueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.MS
-import typings.atBlueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.SECOND
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

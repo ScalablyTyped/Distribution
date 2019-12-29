@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Types.Loader.FileTypes.ImageFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.ImageFrameConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
@@ -26,59 +27,39 @@ class ImageFile protected ()
     * @param xhrSettings Extra XHR Settings specifically for this file.
     * @param frameConfig The frame configuration object. Only provided for, and used by, Sprite Sheets.
     */
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: ImageFileConfig) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: js.Array[String]) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: ImageFileConfig, url: String) = this()
-  def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: ImageFileConfig, url: js.Array[String]) = this()
+  def this(loader: LoaderPlugin, key: String) = this()
+  def this(loader: LoaderPlugin, key: ImageFileConfig) = this()
+  def this(loader: LoaderPlugin, key: String, url: String) = this()
+  def this(loader: LoaderPlugin, key: String, url: js.Array[String]) = this()
+  def this(loader: LoaderPlugin, key: ImageFileConfig, url: String) = this()
+  def this(loader: LoaderPlugin, key: ImageFileConfig, url: js.Array[String]) = this()
+  def this(loader: LoaderPlugin, key: String, url: String, xhrSettings: XHRSettingsObject) = this()
+  def this(loader: LoaderPlugin, key: String, url: js.Array[String], xhrSettings: XHRSettingsObject) = this()
+  def this(loader: LoaderPlugin, key: ImageFileConfig, url: String, xhrSettings: XHRSettingsObject) = this()
+  def this(loader: LoaderPlugin, key: ImageFileConfig, url: js.Array[String], xhrSettings: XHRSettingsObject) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    url: String,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: String,
-    url: js.Array[String],
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: ImageFileConfig,
-    url: String,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-    key: ImageFileConfig,
-    url: js.Array[String],
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     url: String,
     xhrSettings: XHRSettingsObject,
     frameConfig: ImageFrameConfig
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: String,
     url: js.Array[String],
     xhrSettings: XHRSettingsObject,
     frameConfig: ImageFrameConfig
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: ImageFileConfig,
     url: String,
     xhrSettings: XHRSettingsObject,
     frameConfig: ImageFrameConfig
   ) = this()
   def this(
-    loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+    loader: LoaderPlugin,
     key: ImageFileConfig,
     url: js.Array[String],
     xhrSettings: XHRSettingsObject,

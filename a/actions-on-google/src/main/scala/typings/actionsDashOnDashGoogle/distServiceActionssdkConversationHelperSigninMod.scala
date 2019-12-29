@@ -1,6 +1,6 @@
 package typings.actionsDashOnDashGoogle
 
-import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDOTintentDOTSIGN_IN
+import typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionsDotintentDotSIGN_IN
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2SignInValue
 import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2SignInValueSpec
 import typings.actionsDashOnDashGoogle.distServiceActionssdkConversationHelperHelperMod.Helper
@@ -18,7 +18,7 @@ object distServiceActionssdkConversationHelperSigninMod extends js.Object {
     *     "To check your account balance".
     * @public
     */
-  class SignIn () extends Helper[actionsDOTintentDOTSIGN_IN, GoogleActionsV2SignInValueSpec] {
+  class SignIn () extends Helper[actionsDotintentDotSIGN_IN, GoogleActionsV2SignInValueSpec] {
     def this(context: String) = this()
   }
   

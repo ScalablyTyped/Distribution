@@ -1,8 +1,8 @@
 package typings.webpack.webpackMod.SourceMapDevToolPlugin
 
 import typings.webpack.Anon_Exclude
+import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackMod.Condition
-import typings.webpack.webpackNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

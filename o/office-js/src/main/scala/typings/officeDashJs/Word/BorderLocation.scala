@@ -1,15 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.BorderLocation.all
-import typings.officeDashJs.Word.BorderLocation.bottom
-import typings.officeDashJs.Word.BorderLocation.inside
-import typings.officeDashJs.Word.BorderLocation.insideHorizontal
-import typings.officeDashJs.Word.BorderLocation.insideVertical
-import typings.officeDashJs.Word.BorderLocation.left
-import typings.officeDashJs.Word.BorderLocation.outside
-import typings.officeDashJs.Word.BorderLocation.right
-import typings.officeDashJs.Word.BorderLocation.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

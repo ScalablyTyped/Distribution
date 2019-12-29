@@ -26,13 +26,13 @@ object tmiDotJsStrings {
   sealed trait CONNECTING extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait OPEN extends js.Object
   
   @js.native
   sealed trait Prime extends SubMethod
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait action extends js.Object
@@ -335,11 +335,11 @@ object tmiDotJsStrings {
   @scala.inline
   def CONNECTING: CONNECTING = "CONNECTING".asInstanceOf[CONNECTING]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
   @scala.inline
   def Prime: Prime = "Prime".asInstanceOf[Prime]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   @scala.inline

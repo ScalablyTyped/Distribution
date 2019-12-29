@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportAccessMode.readAndDelete
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportAccessMode.readOnly
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportAccessMode.readWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

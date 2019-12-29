@@ -1,6 +1,5 @@
 package typings.keya
 
-import typings.keya.outNodeFilesystemMod.FileSystemStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,5 @@
 package typings.atEsfxDisposable
 
-import typings.atEsfxDisposable.distMod.AsyncDisposable
-import typings.atEsfxDisposable.distMod.Disposable
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

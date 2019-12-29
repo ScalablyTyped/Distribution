@@ -1,8 +1,5 @@
 package typings.flatbush
 
-import typings.flatbush.flatbushMod.Flatbush
-import typings.flatbush.flatbushMod.FlatbushClass
-import typings.flatbush.flatbushMod.TypedArrayConstructor
 import typings.std.ArrayBuffer
 import typings.std.Float32ArrayConstructor
 import typings.std.Float64ArrayConstructor

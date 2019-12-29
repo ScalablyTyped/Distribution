@@ -2,12 +2,6 @@ package typings.atFirebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseStorage.distSrcImplementationXhrioMod.ErrorCode
-import typings.atFirebaseStorage.distSrcImplementationXhrioMod.ErrorCode.ABORT
-import typings.atFirebaseStorage.distSrcImplementationXhrioMod.ErrorCode.NETWORK_ERROR
-import typings.atFirebaseStorage.distSrcImplementationXhrioMod.ErrorCode.NO_ERROR
-import typings.atFirebaseStorage.distSrcImplementationXhrioMod.Headers
-import typings.atFirebaseStorage.distSrcImplementationXhrioMod.XhrIo
 import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.std.EventTarget

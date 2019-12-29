@@ -35,7 +35,8 @@ class Template protected () extends js.Object {
   var Saved: Boolean = js.native
   val Type: WdTemplateType = js.native
   val VBProject: typings.activexDashVbide.VBIDE.VBProject = js.native
-  var `Word.Template_typekey`: Template = js.native
+  @JSName("Word.Template_typekey")
+  var WordDotTemplate_typekey: Template = js.native
   def BuiltInDocumentProperties(index: String): DocumentProperty[typings.activexDashWord.Word.Application] = js.native
   def BuiltInDocumentProperties(index: Double): DocumentProperty[typings.activexDashWord.Word.Application] = js.native
   def CustomDocumentProperties(index: String): DocumentProperty[typings.activexDashWord.Word.Application] = js.native

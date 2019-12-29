@@ -1,8 +1,8 @@
 package typings.jose.joseMod.JWK
 
+import typings.jose.joseBooleans.`false`
+import typings.jose.joseBooleans.`true`
 import typings.jose.joseMod.JWKOctKey
-import typings.jose.joseNumbers.`false`
-import typings.jose.joseNumbers.`true`
 import typings.jose.joseStrings.oct
 import typings.jose.joseStrings.secret
 import scala.scalajs.js

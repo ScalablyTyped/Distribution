@@ -787,7 +787,7 @@ import scala.scalajs.js.annotation._
   - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.jenkins
   - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.joget
   - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.joomla
-  - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.JS
+  - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.js_
   - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`js square`
   - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.jsfiddle
   - typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.keycdn
@@ -1261,8 +1261,6 @@ trait SemanticICONS extends js.Object
 object SemanticICONS {
   @scala.inline
   def `500px`: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`500px` = this.cast("500px")
-  @scala.inline
-  def JS: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.JS = this.cast("js")
   @scala.inline
   def accessible: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.accessible = this.cast("accessible")
   @scala.inline
@@ -2501,6 +2499,9 @@ object SemanticICONS {
   def jpy: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.jpy = this.cast("jpy")
   @scala.inline
   def `js square`: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`js square` = this.cast("js square")
+  @JSName("js")
+  @scala.inline
+  def js_ : typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.js_ = this.cast("js")
   @scala.inline
   def jsfiddle: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.jsfiddle = this.cast("jsfiddle")
   @scala.inline

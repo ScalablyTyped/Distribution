@@ -3,6 +3,7 @@ package typings.extjs.Ext.grid.feature
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
 import typings.extjs.Ext.data.IModel
+import typings.extjs.Ext.grid.IPanel
 import typings.extjs.Ext.view.ITable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait IGrouping extends IAbstractSummary {
   		* @param focus Boolean Pass true to focus the group after expand.
   		*/
   var collapse: js.UndefOr[
-    js.Function2[/* groupName */ js.UndefOr[java.lang.String], /* focus */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* groupName */ js.UndefOr[String], /* focus */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Collapse all groups */
   var collapseAll: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -31,7 +32,7 @@ trait IGrouping extends IAbstractSummary {
   		* @param focus Boolean Pass true to focus the group after expand.
   		*/
   var expand: js.UndefOr[
-    js.Function2[/* groupName */ js.UndefOr[java.lang.String], /* focus */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* groupName */ js.UndefOr[String], /* focus */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Expand all groups */
   var expandAll: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -41,7 +42,7 @@ trait IGrouping extends IAbstractSummary {
   		*/
   var getRecordGroup: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], _]] = js.undefined
   /** [Config Option] (String) */
-  var groupByText: js.UndefOr[java.lang.String] = js.undefined
+  var groupByText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Array/Ext.Template) */
   var groupHeaderTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -50,9 +51,9 @@ trait IGrouping extends IAbstractSummary {
   		* @param groupName String The group name as returned from getGroupString. This is usually the value of the groupField.
   		* @returns Boolean true if the group defined by that value is expanded.
   		*/
-  var isExpanded: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var isExpanded: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var showGroupsText: js.UndefOr[java.lang.String] = js.undefined
+  var showGroupsText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var startCollapsed: js.UndefOr[Boolean] = js.undefined
 }
@@ -70,7 +71,7 @@ object IGrouping {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
-    collapse: (/* groupName */ js.UndefOr[java.lang.String], /* focus */ js.UndefOr[Boolean]) => Unit = null,
+    collapse: (/* groupName */ js.UndefOr[String], /* focus */ js.UndefOr[Boolean]) => Unit = null,
     collapseAll: () => Unit = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
     config: js.Any = null,
@@ -81,41 +82,41 @@ object IGrouping {
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     enableGroupingMenu: js.UndefOr[Boolean] = js.undefined,
     enableNoGroups: js.UndefOr[Boolean] = js.undefined,
-    eventPrefix: java.lang.String = null,
-    eventSelector: java.lang.String = null,
-    expand: (/* groupName */ js.UndefOr[java.lang.String], /* focus */ js.UndefOr[Boolean]) => Unit = null,
+    eventPrefix: String = null,
+    eventSelector: String = null,
+    expand: (/* groupName */ js.UndefOr[String], /* focus */ js.UndefOr[Boolean]) => Unit = null,
     expandAll: () => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getFireEventArgs: (/* eventName */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any], /* featureTarget */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any]) => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getRecordGroup: /* record */ js.UndefOr[IModel] => _ = null,
-    grid: typings.extjs.Ext.grid.IPanel = null,
-    groupByText: java.lang.String = null,
+    grid: IPanel = null,
+    groupByText: String = null,
     groupHeaderTpl: js.Any = null,
     hasFeatureEvent: js.UndefOr[Boolean] = js.undefined,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hideGroupedHeader: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IGrouping = null,
-    isExpanded: /* groupName */ js.UndefOr[java.lang.String] => Boolean = null,
+    isExpanded: /* groupName */ js.UndefOr[String] => Boolean = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     listeners: js.Any = null,
     mixins: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    remoteRoot: java.lang.String = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    remoteRoot: String = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     self: IClass = null,
-    showGroupsText: java.lang.String = null,
+    showGroupsText: String = null,
     showSummaryRow: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
     startCollapsed: js.UndefOr[Boolean] = js.undefined,
@@ -123,7 +124,7 @@ object IGrouping {
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     toggleSummaryRow: /* visible */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     view: ITable = null
   ): IGrouping = {

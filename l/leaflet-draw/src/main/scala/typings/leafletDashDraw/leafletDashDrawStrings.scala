@@ -6,84 +6,84 @@ import scala.scalajs.js.annotation._
 
 object leafletDashDrawStrings {
   @js.native
-  sealed trait `draw:created` extends js.Object
+  sealed trait drawColoncreated extends js.Object
   
   @js.native
-  sealed trait `draw:deleted` extends js.Object
+  sealed trait drawColondeleted extends js.Object
   
   @js.native
-  sealed trait `draw:deletestart` extends js.Object
+  sealed trait drawColondeletestart extends js.Object
   
   @js.native
-  sealed trait `draw:deletestop` extends js.Object
+  sealed trait drawColondeletestop extends js.Object
   
   @js.native
-  sealed trait `draw:drawstart` extends js.Object
+  sealed trait drawColondrawstart extends js.Object
   
   @js.native
-  sealed trait `draw:drawstop` extends js.Object
+  sealed trait drawColondrawstop extends js.Object
   
   @js.native
-  sealed trait `draw:drawvertex` extends js.Object
+  sealed trait drawColondrawvertex extends js.Object
   
   @js.native
-  sealed trait `draw:edited` extends js.Object
+  sealed trait drawColonedited extends js.Object
   
   @js.native
-  sealed trait `draw:editmove` extends js.Object
+  sealed trait drawColoneditmove extends js.Object
   
   @js.native
-  sealed trait `draw:editresize` extends js.Object
+  sealed trait drawColoneditresize extends js.Object
   
   @js.native
-  sealed trait `draw:editstart` extends js.Object
+  sealed trait drawColoneditstart extends js.Object
   
   @js.native
-  sealed trait `draw:editstop` extends js.Object
+  sealed trait drawColoneditstop extends js.Object
   
   @js.native
-  sealed trait `draw:editvertex` extends js.Object
+  sealed trait drawColoneditvertex extends js.Object
   
   @js.native
-  sealed trait `draw:markercontext` extends js.Object
+  sealed trait drawColonmarkercontext extends js.Object
   
   @js.native
-  sealed trait `draw:toolbarclosed` extends js.Object
+  sealed trait drawColontoolbarclosed extends js.Object
   
   @js.native
-  sealed trait `draw:toolbaropened` extends js.Object
+  sealed trait drawColontoolbaropened extends js.Object
   
   @scala.inline
-  def `draw:created`: `draw:created` = "draw:created".asInstanceOf[`draw:created`]
+  def drawColoncreated: drawColoncreated = "draw:created".asInstanceOf[drawColoncreated]
   @scala.inline
-  def `draw:deleted`: `draw:deleted` = "draw:deleted".asInstanceOf[`draw:deleted`]
+  def drawColondeleted: drawColondeleted = "draw:deleted".asInstanceOf[drawColondeleted]
   @scala.inline
-  def `draw:deletestart`: `draw:deletestart` = "draw:deletestart".asInstanceOf[`draw:deletestart`]
+  def drawColondeletestart: drawColondeletestart = "draw:deletestart".asInstanceOf[drawColondeletestart]
   @scala.inline
-  def `draw:deletestop`: `draw:deletestop` = "draw:deletestop".asInstanceOf[`draw:deletestop`]
+  def drawColondeletestop: drawColondeletestop = "draw:deletestop".asInstanceOf[drawColondeletestop]
   @scala.inline
-  def `draw:drawstart`: `draw:drawstart` = "draw:drawstart".asInstanceOf[`draw:drawstart`]
+  def drawColondrawstart: drawColondrawstart = "draw:drawstart".asInstanceOf[drawColondrawstart]
   @scala.inline
-  def `draw:drawstop`: `draw:drawstop` = "draw:drawstop".asInstanceOf[`draw:drawstop`]
+  def drawColondrawstop: drawColondrawstop = "draw:drawstop".asInstanceOf[drawColondrawstop]
   @scala.inline
-  def `draw:drawvertex`: `draw:drawvertex` = "draw:drawvertex".asInstanceOf[`draw:drawvertex`]
+  def drawColondrawvertex: drawColondrawvertex = "draw:drawvertex".asInstanceOf[drawColondrawvertex]
   @scala.inline
-  def `draw:edited`: `draw:edited` = "draw:edited".asInstanceOf[`draw:edited`]
+  def drawColonedited: drawColonedited = "draw:edited".asInstanceOf[drawColonedited]
   @scala.inline
-  def `draw:editmove`: `draw:editmove` = "draw:editmove".asInstanceOf[`draw:editmove`]
+  def drawColoneditmove: drawColoneditmove = "draw:editmove".asInstanceOf[drawColoneditmove]
   @scala.inline
-  def `draw:editresize`: `draw:editresize` = "draw:editresize".asInstanceOf[`draw:editresize`]
+  def drawColoneditresize: drawColoneditresize = "draw:editresize".asInstanceOf[drawColoneditresize]
   @scala.inline
-  def `draw:editstart`: `draw:editstart` = "draw:editstart".asInstanceOf[`draw:editstart`]
+  def drawColoneditstart: drawColoneditstart = "draw:editstart".asInstanceOf[drawColoneditstart]
   @scala.inline
-  def `draw:editstop`: `draw:editstop` = "draw:editstop".asInstanceOf[`draw:editstop`]
+  def drawColoneditstop: drawColoneditstop = "draw:editstop".asInstanceOf[drawColoneditstop]
   @scala.inline
-  def `draw:editvertex`: `draw:editvertex` = "draw:editvertex".asInstanceOf[`draw:editvertex`]
+  def drawColoneditvertex: drawColoneditvertex = "draw:editvertex".asInstanceOf[drawColoneditvertex]
   @scala.inline
-  def `draw:markercontext`: `draw:markercontext` = "draw:markercontext".asInstanceOf[`draw:markercontext`]
+  def drawColonmarkercontext: drawColonmarkercontext = "draw:markercontext".asInstanceOf[drawColonmarkercontext]
   @scala.inline
-  def `draw:toolbarclosed`: `draw:toolbarclosed` = "draw:toolbarclosed".asInstanceOf[`draw:toolbarclosed`]
+  def drawColontoolbarclosed: drawColontoolbarclosed = "draw:toolbarclosed".asInstanceOf[drawColontoolbarclosed]
   @scala.inline
-  def `draw:toolbaropened`: `draw:toolbaropened` = "draw:toolbaropened".asInstanceOf[`draw:toolbaropened`]
+  def drawColontoolbaropened: drawColontoolbaropened = "draw:toolbaropened".asInstanceOf[drawColontoolbaropened]
 }
 

@@ -50,7 +50,7 @@ trait CarouselOptions extends js.Object {
     * Callback for when a new slide is cycled to
     * @default null
     */
-  def onCycleTo(`this`: Carousel, current: Element, dragged: Boolean): Unit
+  def onCycleTo(current: Element, dragged: Boolean): Unit
 }
 
 object CarouselOptions {
@@ -62,11 +62,11 @@ object CarouselOptions {
     indicators: Boolean,
     noWrap: Boolean,
     numVisible: Double,
-    onCycleTo: (Carousel, Element, Boolean) => Unit,
+    onCycleTo: (Element, Boolean) => Unit,
     padding: Double,
     shift: Double
   ): CarouselOptions = {
-    val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], indicators = indicators.asInstanceOf[js.Any], noWrap = noWrap.asInstanceOf[js.Any], numVisible = numVisible.asInstanceOf[js.Any], onCycleTo = js.Any.fromFunction3(onCycleTo), padding = padding.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], indicators = indicators.asInstanceOf[js.Any], noWrap = noWrap.asInstanceOf[js.Any], numVisible = numVisible.asInstanceOf[js.Any], onCycleTo = js.Any.fromFunction2(onCycleTo), padding = padding.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CarouselOptions]
   }

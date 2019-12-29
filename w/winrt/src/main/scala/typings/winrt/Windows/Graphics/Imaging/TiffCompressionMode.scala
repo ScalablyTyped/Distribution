@@ -1,14 +1,6 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.automatic
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.ccitt3
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.ccitt4
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.lzw
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.lzwhDifferencing
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.none
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.rle
-import typings.winrt.Windows.Graphics.Imaging.TiffCompressionMode.zip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

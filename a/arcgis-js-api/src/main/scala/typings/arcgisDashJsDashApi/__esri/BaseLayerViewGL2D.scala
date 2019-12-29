@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +15,7 @@ trait BaseLayerViewGL2D extends LayerView {
     */
   var context: WebGLRenderingContext | js.Any = js.native
   /**
-    * The array of [Tile](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Tile) objects computed to cover the MapView's visible area. This array is updated when the view is animating or the user is interacting with it. Then if tiles have been added or removed, [tilesChanged()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tilesChanged) is called.
+    * The array of module:esri/views/2d/layers/BaseLayerViewGL2D#Tile objects computed to cover the MapView's visible area. This array is updated when the view is animating or the user is interacting with it. Then if tiles have been added or removed, [tilesChanged()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tilesChanged) is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tiles)
     */
@@ -48,11 +47,11 @@ trait BaseLayerViewGL2D extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#hitTest)
     *
-    * @param x The x-coordinate in screen space of the desired hit.
-    * @param y The y-coordinate in screen space of the desired hit.
+    * @param x The `x`-coordinate in screen space of the desired hit.
+    * @param y The `y`-coordinate in screen space of the desired hit.
     *
     */
-  def hitTest(x: Double, y: Double): IPromise[Graphic] = js.native
+  def hitTest(x: Double, y: Double): js.Promise[Graphic] = js.native
   /**
     * The method to implement that is responsible of drawing the content of the layer. This method is called every time the MapView's state changes, or if [requestRender()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#requestRender) has been called.
     *
@@ -73,6 +72,54 @@ trait BaseLayerViewGL2D extends LayerView {
     *
     */
   def requestRender(): Unit = js.native
+  /**
+    * Tessellate an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) into a rectangle.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tessellateExtent)
+    *
+    * @param extent The input geometry.
+    *
+    */
+  def tessellateExtent(extent: Extent): js.Promise[TessellatedMesh] = js.native
+  /**
+    * Tessellate a [Multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) into quads (markers).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tessellateMultipoint)
+    *
+    * @param multipoint The input geometry. These are the geographic points where each marker will me anchored.
+    * @param footprint The rectangle that describes the geometry of each marker. Coordinates x and y can be thought as being in screen-space, relative to the screen-space projection of the geographic point.
+    *
+    */
+  def tessellateMultipoint(multipoint: Multipoint, footprint: Rect): js.Promise[TessellatedMesh] = js.native
+  /**
+    * Tessellate a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) into a quad (marker).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tessellatePoint)
+    *
+    * @param point The input geometry. This is the geographic point where the marker will me anchored.
+    * @param footprint The rectangle that describes the geometry of the marker. Coordinates `x` and `y` are the position of the upper-left corner of the marker, and can be thought as being in screen-space, relative to the screen-space projection of the geographic point; `width` and `height` are in pixels. See [Rect](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect) for a visual explanation of marker geometry.
+    *
+    */
+  def tessellatePoint(point: Point, footprint: Rect): js.Promise[TessellatedMesh] = js.native
+  /**
+    * Tessellate a [Polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) into triangles.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tessellatePolygon)
+    *
+    * @param polygon The input geometry. *The geometry must be simple*; if the input geometry is not simple, you must first create a simplified version of it using [geometryEngine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#simplify), and pass the simplified geometry to `tessellatePolygon`.
+    *
+    */
+  def tessellatePolygon(polygon: Polygon): js.Promise[TessellatedMesh] = js.native
+  /**
+    * Tessellate a [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) into triangles.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tessellatePolyline)
+    *
+    * @param polyline The input geometry. *The geometry must be simple*; if the input geometry is not simple, you must first create a simplified version of it using [geometryEngine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#simplify), and pass the simplified geometry to `tessellatePolyline`.
+    * @param width The width of the line; this will be used to scale xOffset and yOffset.
+    *
+    */
+  def tessellatePolyline(polyline: Polyline, width: Double): js.Promise[TessellatedMesh] = js.native
   /**
     * Method to implement, which notifies of tiles being added or removed for the current view state. This function can be implemented to start and stop fetching new data, or allocate and dispose resources.
     *

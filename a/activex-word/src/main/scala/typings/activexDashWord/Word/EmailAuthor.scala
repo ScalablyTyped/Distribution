@@ -11,6 +11,7 @@ class EmailAuthor protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val Style: typings.activexDashWord.Word.Style = js.native
-  var `Word.EmailAuthor_typekey`: EmailAuthor = js.native
+  @JSName("Word.EmailAuthor_typekey")
+  var WordDotEmailAuthor_typekey: EmailAuthor = js.native
 }
 

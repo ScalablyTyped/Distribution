@@ -20,7 +20,7 @@ trait KeyDownEventArgs extends js.Object {
   var isSheetRename: js.UndefOr[Boolean] = js.undefined
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the sheet index.
     */
   var sheetIndex: js.UndefOr[Double] = js.undefined
@@ -39,7 +39,7 @@ object KeyDownEventArgs {
     isCommentEdit: js.UndefOr[Boolean] = js.undefined,
     isEdit: js.UndefOr[Boolean] = js.undefined,
     isSheetRename: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     sheetIndex: Int | Double = null,
     target: HTMLElement = null,
     `type`: String = null

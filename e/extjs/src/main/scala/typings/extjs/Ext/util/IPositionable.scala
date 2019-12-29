@@ -18,7 +18,7 @@ trait IPositionable extends IBase {
   var alignTo: js.UndefOr[
     js.Function4[
       /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
+      /* position */ js.UndefOr[String], 
       /* offsets */ js.UndefOr[Array], 
       /* animate */ js.UndefOr[js.Any], 
       this.type
@@ -36,7 +36,7 @@ trait IPositionable extends IBase {
   var anchorTo: js.UndefOr[
     js.Function6[
       /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
+      /* position */ js.UndefOr[String], 
       /* offsets */ js.UndefOr[Array], 
       /* animate */ js.UndefOr[js.Any], 
       /* monitorScroll */ js.UndefOr[js.Any], 
@@ -69,7 +69,7 @@ trait IPositionable extends IBase {
   var getAlignToXY: js.UndefOr[
     js.Function3[
       /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
+      /* position */ js.UndefOr[String], 
       /* offsets */ js.UndefOr[Array], 
       Array
     ]
@@ -82,7 +82,7 @@ trait IPositionable extends IBase {
   		*/
   var getAnchorXY: js.UndefOr[
     js.Function3[
-      /* anchor */ js.UndefOr[java.lang.String], 
+      /* anchor */ js.UndefOr[String], 
       /* local */ js.UndefOr[Boolean], 
       /* size */ js.UndefOr[js.Any], 
       Array
@@ -154,7 +154,7 @@ trait IPositionable extends IBase {
   		*/
   var move: js.UndefOr[
     js.Function3[
-      /* direction */ js.UndefOr[java.lang.String], 
+      /* direction */ js.UndefOr[String], 
       /* distance */ js.UndefOr[Double], 
       /* animate */ js.UndefOr[js.Any], 
       Unit
@@ -232,20 +232,20 @@ object IPositionable {
   @scala.inline
   def apply(
     alias: Array = null,
-    alignTo: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable = null,
+    alignTo: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable = null,
     alternateClassName: js.Any = null,
-    anchorTo: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any], /* monitorScroll */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any]) => IPositionable = null,
+    anchorTo: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any], /* monitorScroll */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any]) => IPositionable = null,
     calculateConstrainedPosition: (/* constrainTo */ js.UndefOr[js.Any], /* proposedPosition */ js.UndefOr[Array], /* local */ js.UndefOr[Boolean], /* proposedSize */ js.UndefOr[Array]) => Array = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array = null,
-    getAnchorXY: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
+    extend: String = null,
+    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array]) => Array = null,
+    getAnchorXY: (/* anchor */ js.UndefOr[String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
     getBox: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => _ = null,
     getConstrainVector: (/* constrainTo */ js.UndefOr[js.Any], /* proposedPosition */ js.UndefOr[Array], /* proposedSize */ js.UndefOr[Array]) => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLocalX: () => Double = null,
     getLocalXY: () => Array = null,
     getLocalY: () => Double = null,
@@ -258,7 +258,7 @@ object IPositionable {
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IPositionable = null,
     mixins: js.Any = null,
-    move: (/* direction */ js.UndefOr[java.lang.String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Unit = null,
+    move: (/* direction */ js.UndefOr[String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Unit = null,
     removeAnchor: () => IPositionable = null,
     requires: Array = null,
     self: IClass = null,

@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResolvedCollatorOptions extends js.Object {
-  var caseFirst: java.lang.String
-  var collation: java.lang.String
-  var ignorePunctuation: scala.Boolean
-  var locale: java.lang.String
-  var numeric: scala.Boolean
-  var sensitivity: java.lang.String
-  var usage: java.lang.String
+  var caseFirst: String
+  var collation: String
+  var ignorePunctuation: Boolean
+  var locale: String
+  var numeric: Boolean
+  var sensitivity: String
+  var usage: String
 }
 
 object ResolvedCollatorOptions {
   @scala.inline
   def apply(
-    caseFirst: java.lang.String,
-    collation: java.lang.String,
-    ignorePunctuation: scala.Boolean,
-    locale: java.lang.String,
-    numeric: scala.Boolean,
-    sensitivity: java.lang.String,
-    usage: java.lang.String
+    caseFirst: String,
+    collation: String,
+    ignorePunctuation: Boolean,
+    locale: String,
+    numeric: Boolean,
+    sensitivity: String,
+    usage: String
   ): ResolvedCollatorOptions = {
     val __obj = js.Dynamic.literal(caseFirst = caseFirst.asInstanceOf[js.Any], collation = collation.asInstanceOf[js.Any], ignorePunctuation = ignorePunctuation.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], sensitivity = sensitivity.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
   

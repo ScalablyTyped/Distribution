@@ -20,11 +20,13 @@ trait LaunchOptions extends js.Object {
   /**
   		 * 来源小程序或公众号或App的 appId，详见下方说明
   		 */
-  var `referrerInfo.appId`: String
+  @JSName("referrerInfo.appId")
+  var referrerInfoDotappId: String
   /**
   		 * 来源小程序传过来的数据，scene=1037或1038时支持
   		 */
-  var `referrerInfo.extraData`: js.Object
+  @JSName("referrerInfo.extraData")
+  var referrerInfoDotextraData: js.Object
   /**
   		 * 打开小程序的[场景值]
   		 */
@@ -41,14 +43,14 @@ object LaunchOptions {
     path: String,
     query: js.Object,
     referrerInfo: js.Object,
-    `referrerInfo.appId`: String,
-    `referrerInfo.extraData`: js.Object,
+    referrerInfoDotappId: String,
+    referrerInfoDotextraData: js.Object,
     scene: Double,
     shareTicket: String
   ): LaunchOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
-    __obj.updateDynamic("referrerInfo.appId")(`referrerInfo.appId`.asInstanceOf[js.Any])
-    __obj.updateDynamic("referrerInfo.extraData")(`referrerInfo.extraData`.asInstanceOf[js.Any])
+    __obj.updateDynamic("referrerInfo.appId")(referrerInfoDotappId.asInstanceOf[js.Any])
+    __obj.updateDynamic("referrerInfo.extraData")(referrerInfoDotextraData.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]
   }
 }

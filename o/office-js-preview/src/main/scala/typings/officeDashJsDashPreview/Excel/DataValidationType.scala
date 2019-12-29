@@ -1,16 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.DataValidationType.custom
-import typings.officeDashJsDashPreview.Excel.DataValidationType.date
-import typings.officeDashJsDashPreview.Excel.DataValidationType.decimal
-import typings.officeDashJsDashPreview.Excel.DataValidationType.inconsistent
-import typings.officeDashJsDashPreview.Excel.DataValidationType.list
-import typings.officeDashJsDashPreview.Excel.DataValidationType.mixedCriteria
-import typings.officeDashJsDashPreview.Excel.DataValidationType.none
-import typings.officeDashJsDashPreview.Excel.DataValidationType.textLength
-import typings.officeDashJsDashPreview.Excel.DataValidationType.time
-import typings.officeDashJsDashPreview.Excel.DataValidationType.wholeNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

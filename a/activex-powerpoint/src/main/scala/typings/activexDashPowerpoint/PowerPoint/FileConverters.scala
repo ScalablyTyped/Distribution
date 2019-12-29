@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileConverters protected () extends js.Object {
   val Count: Double = js.native
-  var `PowerPoint.FileConverters_typekey`: FileConverters = js.native
+  @JSName("PowerPoint.FileConverters_typekey")
+  var PowerPointDotFileConverters_typekey: FileConverters = js.native
   def Item(Index: js.Any): FileConverter = js.native
 }
 

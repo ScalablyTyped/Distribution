@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.layerPropertyMod.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

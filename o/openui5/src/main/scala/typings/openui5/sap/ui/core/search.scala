@@ -1,7 +1,5 @@
 package typings.openui5.sap.ui.core
 
-import typings.openui5.sap.ui.core.search.OpenSearchProvider
-import typings.openui5.sap.ui.core.search.SearchProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

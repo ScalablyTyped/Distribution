@@ -20,7 +20,8 @@ class CalloutFormat protected () extends js.Object {
   val Creator: Double = js.native
   val Drop: Double = js.native
   val DropType: MsoCalloutDropType = js.native
-  var `Excel.CalloutFormat_typekey`: CalloutFormat = js.native
+  @JSName("Excel.CalloutFormat_typekey")
+  var ExcelDotCalloutFormat_typekey: CalloutFormat = js.native
   var Gap: Double = js.native
   val Length: Double = js.native
   val Parent: js.Any = js.native

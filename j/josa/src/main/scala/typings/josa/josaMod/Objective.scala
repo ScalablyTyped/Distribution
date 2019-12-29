@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.josa.josaStrings.BACKSLASHuC744
-  - typings.josa.josaStrings.BACKSLASHuB97C
+  - typings.josa.josaStrings.을
+  - typings.josa.josaStrings.를
 */
 trait Objective extends js.Object
 
 object Objective {
   @scala.inline
-  def BACKSLASHuB97C: typings.josa.josaStrings.BACKSLASHuB97C = this.cast("\uB97C")
-  @scala.inline
-  def BACKSLASHuC744: typings.josa.josaStrings.BACKSLASHuC744 = this.cast("\uC744")
-  @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def 를: typings.josa.josaStrings.를 = this.cast("\uB97C")
+  @scala.inline
+  def 을: typings.josa.josaStrings.을 = this.cast("\uC744")
 }
 

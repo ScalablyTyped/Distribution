@@ -1,6 +1,5 @@
 package typings.reactDashDnd
 
-import typings.reactDashDnd.libDecoratorsDisposablesMod.Disposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

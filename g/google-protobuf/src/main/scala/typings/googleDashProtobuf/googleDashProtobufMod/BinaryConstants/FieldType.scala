@@ -1,27 +1,6 @@
 package typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.BOOL
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.BYTES
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.DOUBLE
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.ENUM
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FHASH64
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FIXED32
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FIXED64
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FLOAT
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.GROUP
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INT32
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INT64
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INVALID
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.MESSAGE
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SFIXED32
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SFIXED64
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SINT32
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SINT64
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.STRING
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.UINT32
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.UINT64
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.VHASH64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

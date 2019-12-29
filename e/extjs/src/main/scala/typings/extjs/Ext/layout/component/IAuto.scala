@@ -9,8 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IAuto
-  extends typings.extjs.Ext.layout.component.IComponent {
+trait IAuto extends IComponent {
   /** [Method] Called to perform the calculations for this layout
   		* @param ownerContext Object
   		*/
@@ -39,10 +38,10 @@ object IAuto {
     configureItem: /* item */ js.UndefOr[typings.extjs.Ext.IComponent] => Unit = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: /* item */ js.UndefOr[typings.extjs.Ext.IComponent] => ISizePolicy = null,
     getLayoutItems: () => Unit = null,
     getRenderTarget: () => IElement = null,

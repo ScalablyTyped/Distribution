@@ -14,7 +14,8 @@ class Mailer protected () extends js.Object {
   var CCRecipients: js.Any = js.native
   val Creator: XlCreator = js.native
   var Enclosures: js.Any = js.native
-  var `Excel.Mailer_typekey`: Mailer = js.native
+  @JSName("Excel.Mailer_typekey")
+  var ExcelDotMailer_typekey: Mailer = js.native
   val Parent: js.Any = js.native
   val Received: Boolean = js.native
   val SendDateTime: VarDate = js.native

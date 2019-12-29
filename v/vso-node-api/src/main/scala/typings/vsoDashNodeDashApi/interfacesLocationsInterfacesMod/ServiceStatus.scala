@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Active
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Assigned
-import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Moving
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

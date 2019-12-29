@@ -20,7 +20,8 @@ class OlkCheckBox protected () extends js.Object {
   var ForeColor: OLE_COLOR = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkCheckBox_typekey`: OlkCheckBox = js.native
+  @JSName("Outlook.OlkCheckBox_typekey")
+  var OutlookDotOlkCheckBox_typekey: OlkCheckBox = js.native
   var TripleState: Boolean = js.native
   var Value: js.Any = js.native
   var WordWrap: Boolean = js.native

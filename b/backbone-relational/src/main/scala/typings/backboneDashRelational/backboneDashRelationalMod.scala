@@ -2,9 +2,6 @@ package typings.backboneDashRelational
 
 import typings.backbone.backboneMod.Collection
 import typings.backbone.backboneMod.EventsMixin
-import typings.backboneDashRelational.backboneDashRelationalMod.Model
-import typings.backboneDashRelational.backboneDashRelationalMod.Relation
-import typings.backboneDashRelational.backboneDashRelationalMod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

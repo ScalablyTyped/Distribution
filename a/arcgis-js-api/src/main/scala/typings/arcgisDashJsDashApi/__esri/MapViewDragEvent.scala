@@ -1,20 +1,26 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.added
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.drag
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.end
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.removed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.start
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MapViewDragEvent extends js.Object {
-  var action: String
+  var action: start | added | update | removed | end
   var angle: Double
-  var button: Double
+  var button: js.Any
   var buttons: Double
   var native: js.Any
   var origin: MapViewDragEventOrigin
   var radius: Double
   var stopPropagation: js.Function
   var timestamp: Double
-  var `type`: String
+  var `type`: drag
   var x: Double
   var y: Double
 }
@@ -22,16 +28,16 @@ trait MapViewDragEvent extends js.Object {
 object MapViewDragEvent {
   @scala.inline
   def apply(
-    action: String,
+    action: start | added | update | removed | end,
     angle: Double,
-    button: Double,
+    button: js.Any,
     buttons: Double,
     native: js.Any,
     origin: MapViewDragEventOrigin,
     radius: Double,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: String,
+    `type`: drag,
     x: Double,
     y: Double
   ): MapViewDragEvent = {

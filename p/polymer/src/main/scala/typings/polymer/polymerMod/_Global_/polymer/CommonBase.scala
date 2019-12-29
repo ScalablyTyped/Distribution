@@ -26,7 +26,7 @@ trait CommonBase extends js.Object {
   var $: js.UndefOr[js.Any] = js.native
   // Utils
   @JSName("$$")
-  var $$: js.UndefOr[js.Function1[/* selector */ String, Element]] = js.native
+  var DollarDollar: js.UndefOr[js.Function1[/* selector */ String, Element]] = js.native
   var arrayDelete: js.UndefOr[js.Function2[/* path */ String | js.Array[_], /* item */ js.Any, js.Array[_]]] = js.native
   var async: js.UndefOr[
     js.Function2[/* callback */ js.Function0[Unit], /* waitTime */ js.UndefOr[Double], Double]

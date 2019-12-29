@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var allowDepress: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var arrowAlign: js.UndefOr[java.lang.String] = js.undefined
+  var arrowAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var arrowCls: js.UndefOr[java.lang.String] = js.undefined
+  var arrowCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var baseParams: js.UndefOr[js.Any] = js.undefined
   /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   		*/
   var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (String) */
-  var clickEvent: js.UndefOr[java.lang.String] = js.undefined
+  var clickEvent: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var destroyMenu: js.UndefOr[Boolean] = js.undefined
   /** [Method] inherit docs
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation._
   @JSName("enable")
   var enable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var focusCls: js.UndefOr[java.lang.String] = js.undefined
+  var focusCls: js.UndefOr[String] = js.undefined
   /** [Method] This method returns an object which provides substitution parameters for the XTemplate used to create this Button s D
   		* @returns Object Substitution data for a Template. The default implementation which provides data for the default template returns an Object containing the following properties:
   		*/
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Gets the text for this Button
   		* @returns String The button text
   		*/
-  var getText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Number/String) */
   var glyph: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -70,38 +70,38 @@ import scala.scalajs.js.annotation._
   		*/
   var hideMenu: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
-  var href: js.UndefOr[java.lang.String] = js.undefined
+  var href: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var hrefTarget: js.UndefOr[java.lang.String] = js.undefined
+  var hrefTarget: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var iconAlign: js.UndefOr[java.lang.String] = js.undefined
+  var iconAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.undefined
+  var iconCls: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var isAction: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Ext.menu.Menu/String/Object) */
   var menu: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var menuActiveCls: js.UndefOr[java.lang.String] = js.undefined
+  var menuActiveCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var menuAlign: js.UndefOr[java.lang.String] = js.undefined
+  var menuAlign: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var overflowText: js.UndefOr[java.lang.String] = js.undefined
+  var overflowText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var params: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var pressed: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var pressedCls: js.UndefOr[java.lang.String] = js.undefined
+  var pressedCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var preventDefault: js.UndefOr[Boolean] = js.undefined
   /** [Method] Retrieves all descendant components which match the passed selector
   		* @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
   		* @returns Ext.Component[] Components which matched the selector
   		*/
-  var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.undefined
+  var query: js.UndefOr[js.Function1[js.UndefOr[String], Array]] = js.undefined
   /** [Method] Retrieves all descendant components which match the passed function
   		* @param fn Function The matcher function. It will be called with a single argument, the component being tested.
   		* @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
@@ -112,7 +112,7 @@ import scala.scalajs.js.annotation._
   		* @param id String The id to find
   		* @returns Ext.Component The matching id, null if not found
   		*/
-  var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
+  var queryById: js.UndefOr[js.Function1[js.UndefOr[String], IComponent]] = js.undefined
   /** [Config Option] (Boolean/Object) */
   var repeat: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] ("small"/"medium"/"large") */
@@ -135,17 +135,17 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the href of the embedded anchor element to the passed URL
   		* @param href String The URL to set in the anchor element.
   		*/
-  var setHref: js.UndefOr[js.Function1[/* href */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHref: js.UndefOr[js.Function1[/* href */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the background image inline style of the button
   		* @param icon String The path to an image to display in the button
   		* @returns Ext.button.Button this
   		*/
-  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Sets the CSS class that provides a background image to use as the button s icon
   		* @param cls String The CSS class providing the icon image
   		* @returns Ext.button.Button this
   		*/
-  var setIconCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setIconCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Sets the href of the link dynamically according to the params passed and any baseParams configured
   		* @param params Object Parameters to use in the href URL.
   		*/
@@ -153,16 +153,16 @@ import scala.scalajs.js.annotation._
   /** [Method] Method to change the scale of the button
   		* @param scale String The scale to change to.
   		*/
-  var setScale: js.UndefOr[js.Function1[/* scale */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setScale: js.UndefOr[js.Function1[/* scale */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets this Button s text
   		* @param text String The button text
   		* @returns Ext.button.Button this
   		*/
-  var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], this.type]] = js.undefined
+  var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Sets the text alignment for this button
   		* @param align String The new alignment of the button text. See textAlign.
   		*/
-  var setTextAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTextAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the tooltip for this Button
   		* @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
   		* @returns Ext.button.Button this
@@ -184,9 +184,9 @@ import scala.scalajs.js.annotation._
   /** [Property] (Ext.Template) */
   var template: js.UndefOr[ITemplate] = js.undefined
   /** [Config Option] (String) */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var textAlign: js.UndefOr[java.lang.String] = js.undefined
+  var textAlign: js.UndefOr[String] = js.undefined
   /** [Method] If a state it passed it becomes the pressed state otherwise the current state is toggled
   		* @param state Boolean Force a particular state
   		* @param suppressEvent Boolean True to stop events being fired when calling this method.
@@ -196,13 +196,13 @@ import scala.scalajs.js.annotation._
     js.Function2[/* state */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
   /** [Config Option] (String) */
-  var toggleGroup: js.UndefOr[java.lang.String] = js.undefined
+  var toggleGroup: js.UndefOr[String] = js.undefined
   /** [Config Option] (Function) */
   var toggleHandler: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Object) */
   var tooltip: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var tooltipType: js.UndefOr[java.lang.String] = js.undefined
+  var tooltipType: js.UndefOr[String] = js.undefined
 }
 
 object IButton {
@@ -210,66 +210,66 @@ object IButton {
   def apply(
     IComponent: IComponent = null,
     allowDepress: js.UndefOr[Boolean] = js.undefined,
-    arrowAlign: java.lang.String = null,
-    arrowCls: java.lang.String = null,
+    arrowAlign: String = null,
+    arrowCls: String = null,
     baseParams: js.Any = null,
     child: js.UndefOr[js.Any] => _ = null,
-    clickEvent: java.lang.String = null,
+    clickEvent: String = null,
     destroyMenu: js.UndefOr[Boolean] = js.undefined,
     disable: /* silent */ js.UndefOr[js.Any] => Unit = null,
     down: js.UndefOr[js.Any] => _ = null,
     enable: /* silent */ js.UndefOr[js.Any] => Unit = null,
     enableToggle: js.UndefOr[Boolean] = js.undefined,
-    focusCls: java.lang.String = null,
+    focusCls: String = null,
     getTemplateArgs: () => _ = null,
-    getText: () => java.lang.String = null,
+    getText: () => String = null,
     glyph: js.Any = null,
     handleMouseEvents: js.UndefOr[Boolean] = js.undefined,
     handler: js.Any = null,
     hasVisibleMenu: () => Boolean = null,
-    hideMenu: () => typings.extjs.Ext.button.IButton = null,
-    href: java.lang.String = null,
-    hrefTarget: java.lang.String = null,
-    icon: java.lang.String = null,
-    iconAlign: java.lang.String = null,
-    iconCls: java.lang.String = null,
+    hideMenu: () => IButton = null,
+    href: String = null,
+    hrefTarget: String = null,
+    icon: String = null,
+    iconAlign: String = null,
+    iconCls: String = null,
     isAction: js.UndefOr[Boolean] = js.undefined,
     menu: js.Any = null,
-    menuActiveCls: java.lang.String = null,
-    menuAlign: java.lang.String = null,
-    overflowText: java.lang.String = null,
+    menuActiveCls: String = null,
+    menuAlign: String = null,
+    overflowText: String = null,
     params: js.Any = null,
     pressed: js.UndefOr[Boolean] = js.undefined,
-    pressedCls: java.lang.String = null,
+    pressedCls: String = null,
     preventDefault: js.UndefOr[Boolean] = js.undefined,
-    query: js.UndefOr[java.lang.String] => Array = null,
+    query: js.UndefOr[String] => Array = null,
     queryBy: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array = null,
-    queryById: js.UndefOr[java.lang.String] => IComponent = null,
+    queryById: js.UndefOr[String] => IComponent = null,
     repeat: js.Any = null,
     scale: js.Any = null,
     scope: js.Any = null,
-    setGlyph: /* glyph */ js.UndefOr[js.Any] => typings.extjs.Ext.button.IButton = null,
-    setHandler: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.button.IButton = null,
-    setHref: /* href */ js.UndefOr[java.lang.String] => Unit = null,
-    setIcon: /* icon */ js.UndefOr[java.lang.String] => typings.extjs.Ext.button.IButton = null,
-    setIconCls: /* cls */ js.UndefOr[java.lang.String] => typings.extjs.Ext.button.IButton = null,
+    setGlyph: /* glyph */ js.UndefOr[js.Any] => IButton = null,
+    setHandler: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IButton = null,
+    setHref: /* href */ js.UndefOr[String] => Unit = null,
+    setIcon: /* icon */ js.UndefOr[String] => IButton = null,
+    setIconCls: /* cls */ js.UndefOr[String] => IButton = null,
     setParams: /* params */ js.UndefOr[js.Any] => Unit = null,
-    setScale: /* scale */ js.UndefOr[java.lang.String] => Unit = null,
-    setText: /* text */ js.UndefOr[java.lang.String] => typings.extjs.Ext.button.IButton = null,
-    setTextAlign: /* align */ js.UndefOr[java.lang.String] => Unit = null,
-    setTooltip: /* tooltip */ js.UndefOr[js.Any] => typings.extjs.Ext.button.IButton = null,
+    setScale: /* scale */ js.UndefOr[String] => Unit = null,
+    setText: /* text */ js.UndefOr[String] => IButton = null,
+    setTextAlign: /* align */ js.UndefOr[String] => Unit = null,
+    setTooltip: /* tooltip */ js.UndefOr[js.Any] => IButton = null,
     setUI: /* ui */ js.UndefOr[js.Any] => Unit = null,
     showEmptyMenu: js.UndefOr[Boolean] = js.undefined,
     showMenu: /* fromEvent */ js.UndefOr[js.Any] => Unit = null,
     tabIndex: Int | Double = null,
     template: ITemplate = null,
-    text: java.lang.String = null,
-    textAlign: java.lang.String = null,
-    toggle: (/* state */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => typings.extjs.Ext.button.IButton = null,
-    toggleGroup: java.lang.String = null,
+    text: String = null,
+    textAlign: String = null,
+    toggle: (/* state */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => IButton = null,
+    toggleGroup: String = null,
     toggleHandler: js.Any = null,
     tooltip: js.Any = null,
-    tooltipType: java.lang.String = null
+    tooltipType: String = null
   ): IButton = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

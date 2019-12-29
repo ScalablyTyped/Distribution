@@ -1,6 +1,5 @@
 package typings.jestDashJasmine2
 
-import typings.jestDashJasmine2.buildJasmineSpyStrategyMod.SpyStrategy
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

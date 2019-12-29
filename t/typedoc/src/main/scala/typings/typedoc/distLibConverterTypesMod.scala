@@ -24,8 +24,20 @@ object distLibConverterTypesMod extends js.Object {
     extends typings.typedoc.distLibConverterTypesBindingDashObjectMod.BindingObjectConverter
   
   @js.native
+  class ConditionalConverter ()
+    extends typings.typedoc.distLibConverterTypesConditionalMod.ConditionalConverter
+  
+  @js.native
   class EnumConverter ()
     extends typings.typedoc.distLibConverterTypesEnumMod.EnumConverter
+  
+  @js.native
+  class IndexedAccessConverter ()
+    extends typings.typedoc.distLibConverterTypesIndexedDashAccessMod.IndexedAccessConverter
+  
+  @js.native
+  class InferredConverter ()
+    extends typings.typedoc.distLibConverterTypesInferredMod.InferredConverter
   
   @js.native
   class IntrinsicConverter ()

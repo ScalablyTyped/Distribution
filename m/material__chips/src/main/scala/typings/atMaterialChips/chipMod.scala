@@ -2,7 +2,6 @@ package typings.atMaterialChips
 
 import typings.atMaterialChips.chipAdapterMod.MDCChipAdapter
 import typings.atMaterialChips.chipFoundationMod.default
-import typings.atMaterialChips.chipMod.MDCChip
 import typings.atMaterialRipple.atMaterialRippleMod.MDCRipple
 import typings.std.Element
 import scala.scalajs.js

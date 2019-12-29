@@ -48,7 +48,7 @@ trait IColor extends IBase {
   		* @returns String
   		*/
   @JSName("toString")
-  var toString_FIColor: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIColor: js.UndefOr[js.Function0[String]] = js.undefined
 }
 
 object IColor {
@@ -60,13 +60,13 @@ object IColor {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getBlue: () => Double = null,
     getDarker: /* factor */ js.UndefOr[Double] => _ = null,
     getGrayscale: () => Double = null,
     getGreen: () => Double = null,
     getHSL: () => Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLighter: /* factor */ js.UndefOr[Double] => _ = null,
     getRGB: () => Array = null,
     getRed: () => Double = null,
@@ -78,7 +78,7 @@ object IColor {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     uses: Array = null
   ): IColor = {
     val __obj = js.Dynamic.literal()

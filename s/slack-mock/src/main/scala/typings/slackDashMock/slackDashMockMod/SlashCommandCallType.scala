@@ -1,8 +1,6 @@
 package typings.slackDashMock.slackDashMockMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.slackDashMock.slackDashMockMod.SlashCommandCallType.response
-import typings.slackDashMock.slackDashMockMod.SlashCommandCallType.response_url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

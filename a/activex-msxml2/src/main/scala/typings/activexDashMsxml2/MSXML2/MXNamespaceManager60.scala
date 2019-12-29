@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.MXNamespaceManager60")
 @js.native
 class MXNamespaceManager60 protected () extends js.Object {
-  var `MSXML2.MXNamespaceManager60_typekey`: MXNamespaceManager60 = js.native
+  @JSName("MSXML2.MXNamespaceManager60_typekey")
+  var MSXML2DotMXNamespaceManager60_typekey: MXNamespaceManager60 = js.native
   var allowOverride: Boolean = js.native
   def declarePrefix(prefix: String, namespaceURI: String): Unit = js.native
   def getDeclaredPrefixes(): IMXNamespacePrefixes = js.native

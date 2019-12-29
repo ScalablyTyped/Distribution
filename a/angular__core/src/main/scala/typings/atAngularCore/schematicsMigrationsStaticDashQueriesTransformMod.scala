@@ -2,7 +2,6 @@ package typings.atAngularCore
 
 import typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod.NgQueryDefinition
 import typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod.QueryTiming
-import typings.atAngularCore.schematicsMigrationsStaticDashQueriesTransformMod.TransformedQueryResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

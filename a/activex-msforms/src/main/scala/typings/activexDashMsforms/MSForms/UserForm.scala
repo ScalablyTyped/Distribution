@@ -29,7 +29,8 @@ class UserForm protected () extends js.Object {
   val InsideHeight: Double = js.native
   val InsideWidth: Double = js.native
   var KeepScrollBarsVisible: fmScrollBars = js.native
-  var `MSForms.UserForm_typekey`: UserForm = js.native
+  @JSName("MSForms.UserForm_typekey")
+  var MSFormsDotUserForm_typekey: UserForm = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: fmMousePointer = js.native
   var Picture: StdPicture = js.native

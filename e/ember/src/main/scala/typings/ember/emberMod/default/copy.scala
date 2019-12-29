@@ -1,6 +1,6 @@
 package typings.ember.emberMod.default
 
-import typings.ember.emberNumbers.`true`
+import typings.ember.emberBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.passportDashAzureDashAd.commonMod
 
-import typings.passportDashAzureDashAd.passportDashAzureDashAdNumbers.`true`
+import typings.passportDashAzureDashAd.passportDashAzureDashAdBooleans.`true`
 import typings.passportDashAzureDashAd.passportDashAzureDashAdStrings.`0`
 import typings.passportDashAzureDashAd.passportDashAzureDashAdStrings.`1`
 import typings.passportDashAzureDashAd.passportDashAzureDashAdStrings.`2`

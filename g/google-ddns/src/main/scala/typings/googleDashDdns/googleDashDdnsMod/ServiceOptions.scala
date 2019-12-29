@@ -1,6 +1,6 @@
 package typings.googleDashDdns.googleDashDdnsMod
 
-import typings.googleDashDdns.googleDashDdnsNumbers.`false`
+import typings.googleDashDdns.googleDashDdnsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

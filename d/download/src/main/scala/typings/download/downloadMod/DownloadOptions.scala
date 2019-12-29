@@ -11,13 +11,15 @@ import typings.got.gotMod.RequestFunction
 import typings.got.gotMod.RetryOptions
 import typings.got.gotMod.TimeoutOptions
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.netMod.Socket
 import typings.node.streamMod.Readable
+import typings.node.tlsMod.KeyObject
+import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
 import typings.node.urlMod.URLSearchParams
+import typings.std.Error
 import typings.std.Record
 import typings.toughDashCookie.toughDashCookieMod.CookieJar
 import scala.scalajs.js
@@ -77,7 +79,7 @@ object DownloadOptions {
     hooks: Hooks[GotBodyOptions[String], String | Buffer | Readable] = null,
     host: String = null,
     hostname: String = null,
-    key: String | Buffer | (js.Array[Buffer | js.Object]) = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     localAddress: String = null,
     map: /* file */ File => File = null,
     maxVersion: SecureVersion = null,
@@ -85,9 +87,11 @@ object DownloadOptions {
     minVersion: SecureVersion = null,
     passphrase: String = null,
     path: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     plugins: js.Array[_] = null,
     port: Double | String = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
     protocol: String = null,
     proxy: String = null,
     query: (Record[String, _]) | URLSearchParams | String = null,
@@ -99,6 +103,7 @@ object DownloadOptions {
     servername: String = null,
     sessionIdContext: String = null,
     setHost: js.UndefOr[Boolean] = js.undefined,
+    sigalgs: String = null,
     socketPath: String = null,
     strip: Int | Double = null,
     throwHttpErrors: js.UndefOr[Boolean] = js.undefined,
@@ -145,6 +150,8 @@ object DownloadOptions {
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
@@ -156,6 +163,7 @@ object DownloadOptions {
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
     if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
     if (!js.isUndefined(throwHttpErrors)) __obj.updateDynamic("throwHttpErrors")(throwHttpErrors.asInstanceOf[js.Any])

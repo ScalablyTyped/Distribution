@@ -205,7 +205,7 @@ trait Model extends js.Object {
   /** An object that defines the description, appearance and alignments of tooltips
     * @Default {null}
     */
-  var tooltip: js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tooltip] = js.undefined
+  var tooltip: js.UndefOr[Tooltip] = js.undefined
   /** Specifies the width of the diagram
     * @Default {null}
     */
@@ -279,7 +279,7 @@ object Model {
     snapSettings: SnapSettings = null,
     textChange: /* e */ TextChangeEventArgs => Unit = null,
     tool: Tool | String = null,
-    tooltip: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Tooltip = null,
+    tooltip: Tooltip = null,
     width: String = null,
     zoomFactor: Int | Double = null
   ): Model = {

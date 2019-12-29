@@ -2,11 +2,6 @@ package typings.atPulumiPulumi
 
 import typings.atPulumiPulumi.atPulumiPulumiStrings.getProvider
 import typings.atPulumiPulumi.atPulumiPulumiStrings.urn
-import typings.atPulumiPulumi.queryableMod.ModifyOptionalProperties
-import typings.atPulumiPulumi.queryableMod.Resolved
-import typings.atPulumiPulumi.queryableMod.ResolvedArray
-import typings.atPulumiPulumi.queryableMod.ResolvedObject
-import typings.atPulumiPulumi.queryableMod.ResolvedSimple
 import typings.atPulumiPulumi.resourceMod.Resource
 import typings.std.Array
 import typings.std.Omit

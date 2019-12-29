@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.All
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Fields
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Links
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.None
-import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Relations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class AddIns protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.AddIns_typekey`: AddIns = js.native
+  @JSName("Word.AddIns_typekey")
+  var WordDotAddIns_typekey: AddIns = js.native
   def Add(FileName: String): AddIn = js.native
   def Add(FileName: String, Install: js.Any): AddIn = js.native
   def Item(Index: js.Any): AddIn = js.native

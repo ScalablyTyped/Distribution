@@ -1,23 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.ObjectFlags.Anonymous
-import typings.typescript.typescriptMod.ObjectFlags.ArrayLiteral
-import typings.typescript.typescriptMod.ObjectFlags.Class
-import typings.typescript.typescriptMod.ObjectFlags.ClassOrInterface
-import typings.typescript.typescriptMod.ObjectFlags.ContainsSpread
-import typings.typescript.typescriptMod.ObjectFlags.EvolvingArray
-import typings.typescript.typescriptMod.ObjectFlags.FreshLiteral
-import typings.typescript.typescriptMod.ObjectFlags.Instantiated
-import typings.typescript.typescriptMod.ObjectFlags.Interface
-import typings.typescript.typescriptMod.ObjectFlags.JSLiteral
-import typings.typescript.typescriptMod.ObjectFlags.Mapped
-import typings.typescript.typescriptMod.ObjectFlags.MarkerType
-import typings.typescript.typescriptMod.ObjectFlags.ObjectLiteral
-import typings.typescript.typescriptMod.ObjectFlags.ObjectLiteralPatternWithComputedProperties
-import typings.typescript.typescriptMod.ObjectFlags.Reference
-import typings.typescript.typescriptMod.ObjectFlags.ReverseMapped
-import typings.typescript.typescriptMod.ObjectFlags.Tuple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,13 +1,6 @@
 package typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.WireType.DELIMITED
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.WireType.END_GROUP
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.WireType.FIXED32
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.WireType.FIXED64
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.WireType.INVALID
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.WireType.START_GROUP
-import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.WireType.VARINT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

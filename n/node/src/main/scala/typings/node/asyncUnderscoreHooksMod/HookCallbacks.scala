@@ -31,7 +31,7 @@ trait HookCallbacks extends js.Object {
   var init: js.UndefOr[
     js.Function4[
       /* asyncId */ Double, 
-      /* type */ java.lang.String, 
+      /* type */ String, 
       /* triggerAsyncId */ Double, 
       /* resource */ js.Object, 
       Unit
@@ -51,7 +51,7 @@ object HookCallbacks {
     after: /* asyncId */ Double => Unit = null,
     before: /* asyncId */ Double => Unit = null,
     destroy: /* asyncId */ Double => Unit = null,
-    init: (/* asyncId */ Double, /* type */ java.lang.String, /* triggerAsyncId */ Double, /* resource */ js.Object) => Unit = null,
+    init: (/* asyncId */ Double, /* type */ String, /* triggerAsyncId */ Double, /* resource */ js.Object) => Unit = null,
     promiseResolve: /* asyncId */ Double => Unit = null
   ): HookCallbacks = {
     val __obj = js.Dynamic.literal()

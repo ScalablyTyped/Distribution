@@ -1,18 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.address
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.connectedServiceAccount
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.custom
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.email
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.importantDate
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.instantMessage
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.jobInfo
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.location
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.notes
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.phoneNumber
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.significantOther
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.website
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

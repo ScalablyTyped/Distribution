@@ -28,34 +28,34 @@ object grommetStrings {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `1/2` extends _BasisType
-  
-  @js.native
-  sealed trait `1/3` extends _BasisType
-  
-  @js.native
-  sealed trait `1/4` extends _BasisType
-  
-  @js.native
   sealed trait `12` extends js.Object
+  
+  @js.native
+  sealed trait `1Slash2` extends _BasisType
+  
+  @js.native
+  sealed trait `1Slash3` extends _BasisType
+  
+  @js.native
+  sealed trait `1Slash4` extends _BasisType
   
   @js.native
   sealed trait `2` extends js.Object
   
   @js.native
-  sealed trait `2/3` extends _BasisType
-  
-  @js.native
-  sealed trait `2/4` extends _BasisType
-  
-  @js.native
   sealed trait `24` extends js.Object
+  
+  @js.native
+  sealed trait `2Slash3` extends _BasisType
+  
+  @js.native
+  sealed trait `2Slash4` extends _BasisType
   
   @js.native
   sealed trait `3` extends js.Object
   
   @js.native
-  sealed trait `3/4` extends _BasisType
+  sealed trait `3Slash4` extends _BasisType
   
   @js.native
   sealed trait `4` extends js.Object
@@ -1077,25 +1077,25 @@ object grommetStrings {
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
   @scala.inline
-  def `1/2`: `1/2` = "1/2".asInstanceOf[`1/2`]
-  @scala.inline
-  def `1/3`: `1/3` = "1/3".asInstanceOf[`1/3`]
-  @scala.inline
-  def `1/4`: `1/4` = "1/4".asInstanceOf[`1/4`]
-  @scala.inline
   def `12`: `12` = "12".asInstanceOf[`12`]
+  @scala.inline
+  def `1Slash2`: `1Slash2` = "1/2".asInstanceOf[`1Slash2`]
+  @scala.inline
+  def `1Slash3`: `1Slash3` = "1/3".asInstanceOf[`1Slash3`]
+  @scala.inline
+  def `1Slash4`: `1Slash4` = "1/4".asInstanceOf[`1Slash4`]
   @scala.inline
   def `2`: `2` = "2".asInstanceOf[`2`]
   @scala.inline
-  def `2/3`: `2/3` = "2/3".asInstanceOf[`2/3`]
-  @scala.inline
-  def `2/4`: `2/4` = "2/4".asInstanceOf[`2/4`]
-  @scala.inline
   def `24`: `24` = "24".asInstanceOf[`24`]
+  @scala.inline
+  def `2Slash3`: `2Slash3` = "2/3".asInstanceOf[`2Slash3`]
+  @scala.inline
+  def `2Slash4`: `2Slash4` = "2/4".asInstanceOf[`2Slash4`]
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
   @scala.inline
-  def `3/4`: `3/4` = "3/4".asInstanceOf[`3/4`]
+  def `3Slash4`: `3Slash4` = "3/4".asInstanceOf[`3Slash4`]
   @scala.inline
   def `4`: `4` = "4".asInstanceOf[`4`]
   @scala.inline

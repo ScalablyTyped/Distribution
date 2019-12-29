@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.bgra8
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.gray16
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.gray8
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.nv12
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.rgba16
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.rgba8
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.unknown
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.yuy2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

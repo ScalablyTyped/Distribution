@@ -6,12 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait BatchGetDocumentsRequest extends js.Object {
   var documents: js.UndefOr[js.Array[String]] = js.undefined
-  var mask: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentMask
-  ] = js.undefined
-  var newTransaction: js.UndefOr[
-    typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.TransactionOptions
-  ] = js.undefined
+  var mask: js.UndefOr[DocumentMask] = js.undefined
+  var newTransaction: js.UndefOr[TransactionOptions] = js.undefined
   var readTime: js.UndefOr[String] = js.undefined
   var transaction: js.UndefOr[String] = js.undefined
 }
@@ -20,8 +16,8 @@ object BatchGetDocumentsRequest {
   @scala.inline
   def apply(
     documents: js.Array[String] = null,
-    mask: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.DocumentMask = null,
-    newTransaction: typings.atFirebaseFirestore.distSrcProtosFirestoreUnderscoreProtoUnderscoreApiMod.firestoreV1ApiClientInterfaces.TransactionOptions = null,
+    mask: DocumentMask = null,
+    newTransaction: TransactionOptions = null,
     readTime: String = null,
     transaction: String = null
   ): BatchGetDocumentsRequest = {

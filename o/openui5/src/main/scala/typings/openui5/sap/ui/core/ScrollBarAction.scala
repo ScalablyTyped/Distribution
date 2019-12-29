@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.ScrollBarAction.Drag
-import typings.openui5.sap.ui.core.ScrollBarAction.MouseWheel
-import typings.openui5.sap.ui.core.ScrollBarAction.Page
-import typings.openui5.sap.ui.core.ScrollBarAction.Step
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

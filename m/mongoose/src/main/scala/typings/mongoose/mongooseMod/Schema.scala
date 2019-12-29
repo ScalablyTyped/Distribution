@@ -6,7 +6,6 @@ import typings.mongoose.Anon_AutoIndexId
 import typings.mongoose.Anon_Expires
 import typings.mongoose.Anon_J
 import typings.mongoose.Anon_Length
-import typings.mongoose.mongooseMod.Schema.Types.Array
 import typings.mongoose.mongooseStrings._id
 import typings.mongoose.mongooseStrings.`throw`
 import typings.mongoose.mongooseStrings.aggregate

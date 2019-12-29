@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Both
-import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Child
-import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.None
-import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.reactDashFauxDashDom
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ReactElement
-import typings.reactDashFauxDashDom.reactDashFauxDashDomMod.Element
 import typings.std.CSSStyleDeclaration
 import typings.std.Exclude
 import typings.std.HTMLElement

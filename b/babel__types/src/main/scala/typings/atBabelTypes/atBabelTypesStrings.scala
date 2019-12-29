@@ -7,73 +7,16 @@ import scala.scalajs.js.annotation._
 
 object atBabelTypesStrings {
   @js.native
-  sealed trait `!` extends js.Object
-  
-  @js.native
-  sealed trait `!=` extends js.Object
-  
-  @js.native
-  sealed trait `!==` extends js.Object
-  
-  @js.native
-  sealed trait `%` extends js.Object
-  
-  @js.native
-  sealed trait `&` extends js.Object
-  
-  @js.native
-  sealed trait `&&` extends js.Object
-  
-  @js.native
-  sealed trait `*` extends js.Object
-  
-  @js.native
-  sealed trait `**` extends js.Object
-  
-  @js.native
-  sealed trait `+` extends js.Object
-  
-  @js.native
-  sealed trait `++` extends js.Object
-  
-  @js.native
-  sealed trait `-` extends js.Object
-  
-  @js.native
   sealed trait `--` extends js.Object
   
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait `-_` extends js.Object
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait Ampersand extends js.Object
   
   @js.native
-  sealed trait `<<` extends js.Object
-  
-  @js.native
-  sealed trait `<=` extends js.Object
-  
-  @js.native
-  sealed trait `==` extends js.Object
-  
-  @js.native
-  sealed trait `===` extends js.Object
-  
-  @js.native
-  sealed trait `>` extends js.Object
-  
-  @js.native
-  sealed trait `>=` extends js.Object
-  
-  @js.native
-  sealed trait `>>` extends js.Object
-  
-  @js.native
-  sealed trait `>>>` extends js.Object
-  
-  @js.native
-  sealed trait `??` extends js.Object
+  sealed trait AmpersandAmpersand extends js.Object
   
   @js.native
   sealed trait AnyTypeAnnotation extends js.Object
@@ -98,6 +41,12 @@ object atBabelTypesStrings {
   
   @js.native
   sealed trait AssignmentPattern extends js.Object
+  
+  @js.native
+  sealed trait Asterisk extends js.Object
+  
+  @js.native
+  sealed trait AsteriskAsterisk extends js.Object
   
   @js.native
   sealed trait AwaitExpression extends js.Object
@@ -262,6 +211,21 @@ object atBabelTypesStrings {
   sealed trait EnumSymbolBody extends js.Object
   
   @js.native
+  sealed trait EqualssignEqualssign extends js.Object
+  
+  @js.native
+  sealed trait EqualssignEqualssignEqualssign extends js.Object
+  
+  @js.native
+  sealed trait Exclamationmark extends js.Object
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssign extends js.Object
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssignEqualssign extends js.Object
+  
+  @js.native
   sealed trait ExistsTypeAnnotation extends js.Object
   
   @js.native
@@ -314,6 +278,18 @@ object atBabelTypesStrings {
   
   @js.native
   sealed trait GenericTypeAnnotation extends js.Object
+  
+  @js.native
+  sealed trait Greaterthansign extends js.Object
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends js.Object
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansign extends js.Object
+  
+  @js.native
+  sealed trait GreaterthansignGreaterthansignGreaterthansign extends js.Object
   
   @js.native
   sealed trait Identifier extends js.Object
@@ -403,6 +379,15 @@ object atBabelTypesStrings {
   sealed trait LabeledStatement extends js.Object
   
   @js.native
+  sealed trait Lessthansign extends js.Object
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends js.Object
+  
+  @js.native
+  sealed trait LessthansignLessthansign extends js.Object
+  
+  @js.native
   sealed trait LogicalExpression extends js.Object
   
   @js.native
@@ -484,6 +469,9 @@ object atBabelTypesStrings {
   sealed trait Pattern extends js.Object
   
   @js.native
+  sealed trait Percentsign extends js.Object
+  
+  @js.native
   sealed trait PipelineBareFunction extends js.Object
   
   @js.native
@@ -496,6 +484,12 @@ object atBabelTypesStrings {
   sealed trait Placeholder extends js.Object
   
   @js.native
+  sealed trait Plussign extends js.Object
+  
+  @js.native
+  sealed trait PlussignPlussign extends js.Object
+  
+  @js.native
   sealed trait PrivateName extends js.Object
   
   @js.native
@@ -503,6 +497,9 @@ object atBabelTypesStrings {
   
   @js.native
   sealed trait QualifiedTypeIdentifier extends js.Object
+  
+  @js.native
+  sealed trait QuestionmarkQuestionmark extends js.Object
   
   @js.native
   sealed trait RegExpLiteral extends js.Object
@@ -515,6 +512,9 @@ object atBabelTypesStrings {
   
   @js.native
   sealed trait SequenceExpression extends js.Object
+  
+  @js.native
+  sealed trait Slash extends js.Object
   
   @js.native
   sealed trait SpreadElement extends js.Object
@@ -742,6 +742,9 @@ object atBabelTypesStrings {
   sealed trait ThrowStatement extends js.Object
   
   @js.native
+  sealed trait Tilde extends js.Object
+  
+  @js.native
   sealed trait TryStatement extends js.Object
   
   @js.native
@@ -790,6 +793,12 @@ object atBabelTypesStrings {
   sealed trait Variance extends js.Object
   
   @js.native
+  sealed trait Verticalline extends js.Object
+  
+  @js.native
+  sealed trait VerticallineVerticalline extends js.Object
+  
+  @js.native
   sealed trait VoidTypeAnnotation extends js.Object
   
   @js.native
@@ -802,7 +811,7 @@ object atBabelTypesStrings {
   sealed trait YieldExpression extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
   
   @js.native
   sealed trait boolean extends js.Object
@@ -906,61 +915,14 @@ object atBabelTypesStrings {
   @js.native
   sealed trait void extends js.Object
   
-  @js.native
-  sealed trait `|` extends js.Object
-  
-  @js.native
-  sealed trait `||` extends js.Object
-  
-  @js.native
-  sealed trait `~` extends js.Object
-  
-  @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
-  @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
-  @scala.inline
-  def `!==`: `!==` = "!==".asInstanceOf[`!==`]
-  @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
-  @scala.inline
-  def `&`: `&` = "&".asInstanceOf[`&`]
-  @scala.inline
-  def `&&`: `&&` = "&&".asInstanceOf[`&&`]
-  @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
-  def `**`: `**` = "**".asInstanceOf[`**`]
-  @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
-  @scala.inline
-  def `++`: `++` = "++".asInstanceOf[`++`]
-  @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
   @scala.inline
   def `--`: `--` = "--".asInstanceOf[`--`]
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   @scala.inline
-  def `<<`: `<<` = "<<".asInstanceOf[`<<`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
-  @scala.inline
-  def `===`: `===` = "===".asInstanceOf[`===`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
-  @scala.inline
-  def `>>`: `>>` = ">>".asInstanceOf[`>>`]
-  @scala.inline
-  def `>>>`: `>>>` = ">>>".asInstanceOf[`>>>`]
-  @scala.inline
-  def `??`: `??` = "??".asInstanceOf[`??`]
+  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
   @scala.inline
   def AnyTypeAnnotation: AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[AnyTypeAnnotation]
   @scala.inline
@@ -977,6 +939,10 @@ object atBabelTypesStrings {
   def AssignmentExpression: AssignmentExpression = "AssignmentExpression".asInstanceOf[AssignmentExpression]
   @scala.inline
   def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  @scala.inline
+  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
   @scala.inline
   def AwaitExpression: AwaitExpression = "AwaitExpression".asInstanceOf[AwaitExpression]
   @scala.inline
@@ -1086,6 +1052,16 @@ object atBabelTypesStrings {
   @scala.inline
   def EnumSymbolBody: EnumSymbolBody = "EnumSymbolBody".asInstanceOf[EnumSymbolBody]
   @scala.inline
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  @scala.inline
+  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
+  @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  @scala.inline
+  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
+  @scala.inline
   def ExistsTypeAnnotation: ExistsTypeAnnotation = "ExistsTypeAnnotation".asInstanceOf[ExistsTypeAnnotation]
   @scala.inline
   def ExportAllDeclaration: ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[ExportAllDeclaration]
@@ -1121,6 +1097,14 @@ object atBabelTypesStrings {
   def FunctionTypeParam: FunctionTypeParam = "FunctionTypeParam".asInstanceOf[FunctionTypeParam]
   @scala.inline
   def GenericTypeAnnotation: GenericTypeAnnotation = "GenericTypeAnnotation".asInstanceOf[GenericTypeAnnotation]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
+  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
+  @scala.inline
+  def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
   @scala.inline
   def Identifier: Identifier = "Identifier".asInstanceOf[Identifier]
   @scala.inline
@@ -1180,6 +1164,12 @@ object atBabelTypesStrings {
   @scala.inline
   def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
   @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  @scala.inline
+  def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
+  @scala.inline
   def LogicalExpression: LogicalExpression = "LogicalExpression".asInstanceOf[LogicalExpression]
   @scala.inline
   def MemberExpression: MemberExpression = "MemberExpression".asInstanceOf[MemberExpression]
@@ -1234,6 +1224,8 @@ object atBabelTypesStrings {
   @scala.inline
   def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
   @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  @scala.inline
   def PipelineBareFunction: PipelineBareFunction = "PipelineBareFunction".asInstanceOf[PipelineBareFunction]
   @scala.inline
   def PipelinePrimaryTopicReference: PipelinePrimaryTopicReference = "PipelinePrimaryTopicReference".asInstanceOf[PipelinePrimaryTopicReference]
@@ -1242,11 +1234,17 @@ object atBabelTypesStrings {
   @scala.inline
   def Placeholder: Placeholder = "Placeholder".asInstanceOf[Placeholder]
   @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  @scala.inline
+  def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
+  @scala.inline
   def PrivateName: PrivateName = "PrivateName".asInstanceOf[PrivateName]
   @scala.inline
   def Program: Program = "Program".asInstanceOf[Program]
   @scala.inline
   def QualifiedTypeIdentifier: QualifiedTypeIdentifier = "QualifiedTypeIdentifier".asInstanceOf[QualifiedTypeIdentifier]
+  @scala.inline
+  def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
   @scala.inline
   def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
   @scala.inline
@@ -1255,6 +1253,8 @@ object atBabelTypesStrings {
   def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
   @scala.inline
   def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
+  @scala.inline
+  def Slash: Slash = "/".asInstanceOf[Slash]
   @scala.inline
   def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
   @scala.inline
@@ -1406,6 +1406,8 @@ object atBabelTypesStrings {
   @scala.inline
   def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
   @scala.inline
+  def Tilde: Tilde = "~".asInstanceOf[Tilde]
+  @scala.inline
   def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
   @scala.inline
   def TupleTypeAnnotation: TupleTypeAnnotation = "TupleTypeAnnotation".asInstanceOf[TupleTypeAnnotation]
@@ -1438,6 +1440,10 @@ object atBabelTypesStrings {
   @scala.inline
   def Variance: Variance = "Variance".asInstanceOf[Variance]
   @scala.inline
+  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
+  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
+  @scala.inline
   def VoidTypeAnnotation: VoidTypeAnnotation = "VoidTypeAnnotation".asInstanceOf[VoidTypeAnnotation]
   @scala.inline
   def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
@@ -1446,7 +1452,7 @@ object atBabelTypesStrings {
   @scala.inline
   def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
@@ -1515,11 +1521,5 @@ object atBabelTypesStrings {
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
   def void: void = "void".asInstanceOf[void]
-  @scala.inline
-  def `|`: `|` = "|".asInstanceOf[`|`]
-  @scala.inline
-  def `||`: `||` = "||".asInstanceOf[`||`]
-  @scala.inline
-  def `~`: `~` = "~".asInstanceOf[`~`]
 }
 

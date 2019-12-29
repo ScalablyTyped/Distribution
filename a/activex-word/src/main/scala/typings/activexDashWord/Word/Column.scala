@@ -22,7 +22,8 @@ class Column protected () extends js.Object {
   val Previous: Column = js.native
   val Shading: typings.activexDashWord.Word.Shading = js.native
   var Width: Double = js.native
-  var `Word.Column_typekey`: Column = js.native
+  @JSName("Word.Column_typekey")
+  var WordDotColumn_typekey: Column = js.native
   def AutoFit(): Unit = js.native
   def Delete(): Unit = js.native
   def Select(): Unit = js.native

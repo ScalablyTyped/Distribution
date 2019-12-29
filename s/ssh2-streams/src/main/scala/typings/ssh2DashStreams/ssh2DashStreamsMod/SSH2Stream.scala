@@ -2,7 +2,17 @@ package typings.ssh2DashStreams.ssh2DashStreamsMod
 
 import typings.node.Buffer
 import typings.node.streamMod.Transform
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_CLOSEColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_DATAColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_EOFColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_EXTENDED_DATAColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_FAILUREColon0
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_OPEN
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_OPEN_CONFIRMATIONColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_OPEN_FAILUREColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_REQUESTColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_SUCCESSColon0
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.CHANNEL_WINDOW_ADJUSTColon0
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.DEBUG
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.DISCONNECT
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.GLOBAL_REQUEST
@@ -19,16 +29,6 @@ import typings.ssh2DashStreams.ssh2DashStreamsStrings.USERAUTH_PASSWD_CHANGEREQ
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.USERAUTH_PK_OK
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.USERAUTH_REQUEST
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.USERAUTH_SUCCESS
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_CLOSE:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_DATA:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_EOF:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_EXTENDED_DATA:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_FAILURE:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_OPEN_CONFIRMATION:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_OPEN_FAILURE:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_REQUEST:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_SUCCESS:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_WINDOW_ADJUST:0`
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.close_
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.continue
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.end
@@ -289,30 +289,30 @@ class SSH2Stream () extends Transform {
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNELCLOSE0(event: `CHANNEL_CLOSE:0`, listener: js.Function0[Unit]): this.type = js.native
+  def on_CHANNELCLOSE0(event: CHANNEL_CLOSEColon0, listener: js.Function0[Unit]): this.type = js.native
   /**
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNELDATA0(event: `CHANNEL_DATA:0`, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  def on_CHANNELDATA0(event: CHANNEL_DATAColon0, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
   /**
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNELEOF0(event: `CHANNEL_EOF:0`, listener: js.Function0[Unit]): this.type = js.native
+  def on_CHANNELEOF0(event: CHANNEL_EOFColon0, listener: js.Function0[Unit]): this.type = js.native
   /**
     * (Client/Server)
     */
   @JSName("on")
   def on_CHANNELEXTENDEDDATA0(
-    event: `CHANNEL_EXTENDED_DATA:0`,
+    event: CHANNEL_EXTENDED_DATAColon0,
     listener: js.Function2[/* type */ Double, /* data */ Buffer, Unit]
   ): this.type = js.native
   /**
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNELFAILURE0(event: `CHANNEL_FAILURE:0`, listener: js.Function0[Unit]): this.type = js.native
+  def on_CHANNELFAILURE0(event: CHANNEL_FAILUREColon0, listener: js.Function0[Unit]): this.type = js.native
   /**
     * (Client/Server)
     */
@@ -323,7 +323,7 @@ class SSH2Stream () extends Transform {
     */
   @JSName("on")
   def on_CHANNELOPENCONFIRMATION0(
-    event: `CHANNEL_OPEN_CONFIRMATION:0`,
+    event: CHANNEL_OPEN_CONFIRMATIONColon0,
     listener: js.Function1[/* channelInfo */ ChannelOpenConfirmationInfo, Unit]
   ): this.type = js.native
   /**
@@ -331,24 +331,24 @@ class SSH2Stream () extends Transform {
     */
   @JSName("on")
   def on_CHANNELOPENFAILURE0(
-    event: `CHANNEL_OPEN_FAILURE:0`,
+    event: CHANNEL_OPEN_FAILUREColon0,
     listener: js.Function1[/* failInfo */ ChannelOpenFailureInfo, Unit]
   ): this.type = js.native
   /**
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNELREQUEST0(event: `CHANNEL_REQUEST:0`, listener: js.Function1[/* request */ ChannelRequest, Unit]): this.type = js.native
+  def on_CHANNELREQUEST0(event: CHANNEL_REQUESTColon0, listener: js.Function1[/* request */ ChannelRequest, Unit]): this.type = js.native
   /**
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNELSUCCESS0(event: `CHANNEL_SUCCESS:0`, listener: js.Function0[Unit]): this.type = js.native
+  def on_CHANNELSUCCESS0(event: CHANNEL_SUCCESSColon0, listener: js.Function0[Unit]): this.type = js.native
   /**
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNELWINDOWADJUST0(event: `CHANNEL_WINDOW_ADJUST:0`, listener: js.Function1[/* bytesToAdd */ Double, Unit]): this.type = js.native
+  def on_CHANNELWINDOWADJUST0(event: CHANNEL_WINDOW_ADJUSTColon0, listener: js.Function1[/* bytesToAdd */ Double, Unit]): this.type = js.native
   /**
     * (Client/Server)
     */

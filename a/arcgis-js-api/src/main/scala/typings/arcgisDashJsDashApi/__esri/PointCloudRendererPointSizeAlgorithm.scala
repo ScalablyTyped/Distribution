@@ -1,5 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`fixed-size`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.splat
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -26,7 +28,7 @@ trait PointCloudRendererPointSizeAlgorithm extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
     */
-  var `type`: String
+  var `type`: `fixed-size` | splat
   /**
     * Specifies whether `size` is in real world units or screen-space units. Applies to `fixed-size` only.
     *
@@ -41,7 +43,7 @@ object PointCloudRendererPointSizeAlgorithm {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String,
+    `type`: `fixed-size` | splat,
     scaleFactor: Int | Double = null,
     size: Int | Double = null,
     useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.undefined

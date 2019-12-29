@@ -1,10 +1,6 @@
 package typings.atFirebaseFirestore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel
-import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.DEBUG
-import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.ERROR
-import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.SILENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

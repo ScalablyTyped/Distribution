@@ -75,11 +75,11 @@ object Color extends js.Object {
   		* @returns Ext.draw.Color
   		*/
   def fromString(): IColor = js.native
-  def fromString(string: java.lang.String): IColor = js.native
+  def fromString(string: String): IColor = js.native
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Override members of this class
   		* @param members Object The properties to add to this class. This should be specified as an object literal containing one or more properties.
   		* @returns Ext.Base this class

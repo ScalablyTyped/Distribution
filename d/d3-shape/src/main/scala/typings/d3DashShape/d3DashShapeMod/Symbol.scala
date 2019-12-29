@@ -20,8 +20,8 @@ trait Symbol[This, Datum] extends js.Object {
     *
     * @param d The datum for which the symbol is to be generated.
     */
-  def apply(`this`: This): String | Null = js.native
-  def apply(`this`: This, d: Datum, args: js.Any*): String | Null = js.native
+  def apply(): String | Null = js.native
+  def apply(d: Datum, args: js.Any*): String | Null = js.native
   /**
     * Returns the current rendering context, which defaults to null.
     */

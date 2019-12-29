@@ -84,7 +84,8 @@ class Shape protected () extends js.Object {
   var Visible: MsoTriState = js.native
   var Width: Double = js.native
   var WidthRelative: Double = js.native
-  var `Word.Shape_typekey`: Shape = js.native
+  @JSName("Word.Shape_typekey")
+  var WordDotShape_typekey: Shape = js.native
   val WrapFormat: typings.activexDashWord.Word.WrapFormat = js.native
   val ZOrderPosition: Double = js.native
   def Activate(): Unit = js.native

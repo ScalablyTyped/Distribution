@@ -16,7 +16,7 @@ trait IJsonP extends IServer {
   /** [Config Option] (Boolean) */
   var autoAppendParams: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var callbackKey: js.UndefOr[java.lang.String] = js.undefined
+  var callbackKey: js.UndefOr[String] = js.undefined
   /** [Method] Performs the read request to the remote domain
   		* @param operation Ext.data.Operation The Operation object to execute.
   		* @param callback Function A callback function to execute when the Operation has been completed.
@@ -39,17 +39,17 @@ trait IJsonP extends IServer {
   /** [Method] Returns the value of callbackKey
   		* @returns String
   		*/
-  var getCallbackKey: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCallbackKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of defaultWriterType
   		* @returns String
   		*/
-  var getDefaultWriterType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDefaultWriterType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of recordParam
   		* @returns String
   		*/
-  var getRecordParam: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getRecordParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var recordParam: js.UndefOr[java.lang.String] = js.undefined
+  var recordParam: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of autoAppendParams
   		* @param autoAppendParams Boolean The new value.
   		*/
@@ -57,15 +57,15 @@ trait IJsonP extends IServer {
   /** [Method] Sets the value of callbackKey
   		* @param callbackKey String The new value.
   		*/
-  var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of defaultWriterType
   		* @param defaultWriterType String The new value.
   		*/
-  var setDefaultWriterType: js.UndefOr[js.Function1[/* defaultWriterType */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDefaultWriterType: js.UndefOr[js.Function1[/* defaultWriterType */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of recordParam
   		* @param recordParam String The new value.
   		*/
-  var setRecordParam: js.UndefOr[js.Function1[/* recordParam */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setRecordParam: js.UndefOr[js.Function1[/* recordParam */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IJsonP {
@@ -75,7 +75,7 @@ object IJsonP {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     afterRequest: (/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean]) => Unit = null,
     alias: Array = null,
@@ -84,123 +84,123 @@ object IJsonP {
     autoAppendParams: js.UndefOr[Boolean] = js.undefined,
     batch: /* options */ js.UndefOr[js.Any] => IBatch = null,
     batchActions: js.UndefOr[Boolean] = js.undefined,
-    batchOrder: java.lang.String = null,
+    batchOrder: String = null,
     bubbleEvents: js.Any = null,
     buildRequest: /* operation */ js.UndefOr[IOperation] => IRequest = null,
-    buildUrl: /* request */ js.UndefOr[IRequest] => java.lang.String = null,
-    cacheString: java.lang.String = null,
+    buildUrl: /* request */ js.UndefOr[IRequest] => String = null,
+    cacheString: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    callbackKey: java.lang.String = null,
+    callbackKey: String = null,
     clearListeners: () => Unit = null,
     config: js.Any = null,
     create: () => Unit = null,
     destroy: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    directionParam: java.lang.String = null,
+    directionParam: String = null,
     doRequest: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     enablePagingParams: js.UndefOr[Boolean] = js.undefined,
-    encodeFilters: /* filters */ js.UndefOr[Array] => java.lang.String = null,
-    encodeSorters: /* sorters */ js.UndefOr[Array] => java.lang.String = null,
-    extend: java.lang.String = null,
+    encodeFilters: /* filters */ js.UndefOr[Array] => String = null,
+    encodeSorters: /* sorters */ js.UndefOr[Array] => String = null,
+    extend: String = null,
     extraParams: js.Any = null,
-    filterParam: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    filterParam: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getApi: () => _ = null,
     getAutoAppendParams: () => Boolean = null,
     getBatchActions: () => Boolean = null,
-    getBatchOrder: () => java.lang.String = null,
+    getBatchOrder: () => String = null,
     getBubbleEvents: () => _ = null,
-    getCacheString: () => java.lang.String = null,
-    getCallbackKey: () => java.lang.String = null,
-    getDefaultWriterType: () => java.lang.String = null,
-    getDirectionParam: () => java.lang.String = null,
+    getCacheString: () => String = null,
+    getCallbackKey: () => String = null,
+    getDefaultWriterType: () => String = null,
+    getDirectionParam: () => String = null,
     getEnablePagingParams: () => Boolean = null,
     getExtraParams: () => _ = null,
-    getFilterParam: () => java.lang.String = null,
-    getGroupParam: () => java.lang.String = null,
+    getFilterParam: () => String = null,
+    getGroupParam: () => String = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getLimitParam: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getLimitParam: () => String = null,
     getListeners: () => _ = null,
     getModel: () => _ = null,
     getNoCache: () => Boolean = null,
-    getPageParam: () => java.lang.String = null,
+    getPageParam: () => String = null,
     getReader: () => _ = null,
-    getRecordParam: () => java.lang.String = null,
+    getRecordParam: () => String = null,
     getSimpleSortMode: () => Boolean = null,
-    getSortParam: () => java.lang.String = null,
-    getStartParam: () => java.lang.String = null,
+    getSortParam: () => String = null,
+    getStartParam: () => String = null,
     getTimeout: () => Double = null,
     getWriter: () => _ = null,
-    groupParam: java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    groupParam: String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    limitParam: java.lang.String = null,
+    limitParam: String = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     model: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     noCache: js.UndefOr[Boolean] = js.undefined,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    pageParam: java.lang.String = null,
+    pageParam: String = null,
     platformConfig: js.Any = null,
     processResponse: (/* success */ js.UndefOr[Boolean], /* operation */ js.UndefOr[IOperation], /* request */ js.UndefOr[IRequest], /* response */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     read: () => Unit = null,
     reader: js.Any = null,
-    recordParam: java.lang.String = null,
+    recordParam: String = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setApi: /* api */ js.UndefOr[js.Any] => Unit = null,
     setAutoAppendParams: /* autoAppendParams */ js.UndefOr[Boolean] => Unit = null,
     setBatchActions: /* batchActions */ js.UndefOr[Boolean] => Unit = null,
-    setBatchOrder: /* batchOrder */ js.UndefOr[java.lang.String] => Unit = null,
+    setBatchOrder: /* batchOrder */ js.UndefOr[String] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCacheString: /* cacheString */ js.UndefOr[java.lang.String] => Unit = null,
-    setCallbackKey: /* callbackKey */ js.UndefOr[java.lang.String] => Unit = null,
-    setDefaultWriterType: /* defaultWriterType */ js.UndefOr[java.lang.String] => Unit = null,
-    setDirectionParam: /* directionParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setCacheString: /* cacheString */ js.UndefOr[String] => Unit = null,
+    setCallbackKey: /* callbackKey */ js.UndefOr[String] => Unit = null,
+    setDefaultWriterType: /* defaultWriterType */ js.UndefOr[String] => Unit = null,
+    setDirectionParam: /* directionParam */ js.UndefOr[String] => Unit = null,
     setEnablePagingParams: /* enablePagingParams */ js.UndefOr[Boolean] => Unit = null,
-    setExtraParam: (/* name */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => Unit = null,
+    setExtraParam: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit = null,
     setExtraParams: /* extraParams */ js.UndefOr[js.Any] => Unit = null,
-    setFilterParam: /* filterParam */ js.UndefOr[java.lang.String] => Unit = null,
-    setGroupParam: /* groupParam */ js.UndefOr[java.lang.String] => Unit = null,
-    setLimitParam: /* limitParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setFilterParam: /* filterParam */ js.UndefOr[String] => Unit = null,
+    setGroupParam: /* groupParam */ js.UndefOr[String] => Unit = null,
+    setLimitParam: /* limitParam */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setModel: /* model */ js.UndefOr[js.Any] => Unit = null,
     setNoCache: /* noCache */ js.UndefOr[Boolean] => Unit = null,
-    setPageParam: /* pageParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setPageParam: /* pageParam */ js.UndefOr[String] => Unit = null,
     setReader: /* reader */ js.UndefOr[js.Any] => Unit = null,
-    setRecordParam: /* recordParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setRecordParam: /* recordParam */ js.UndefOr[String] => Unit = null,
     setSimpleSortMode: /* simpleSortMode */ js.UndefOr[Boolean] => Unit = null,
-    setSortParam: /* sortParam */ js.UndefOr[java.lang.String] => Unit = null,
-    setStartParam: /* startParam */ js.UndefOr[java.lang.String] => Unit = null,
+    setSortParam: /* sortParam */ js.UndefOr[String] => Unit = null,
+    setStartParam: /* startParam */ js.UndefOr[String] => Unit = null,
     setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
     setWriter: /* writer */ js.UndefOr[js.Any] => Unit = null,
     simpleSortMode: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sortParam: java.lang.String = null,
-    startParam: java.lang.String = null,
+    sortParam: String = null,
+    startParam: String = null,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
     timeout: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     update: () => Unit = null,
-    url: java.lang.String = null,
+    url: String = null,
     uses: Array = null,
     writer: js.Any = null
   ): IJsonP = {

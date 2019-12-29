@@ -37,7 +37,8 @@ class RemoteItem protected () extends js.Object {
   var MessageClass: String = js.native
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
-  var `Outlook.RemoteItem_typekey`: RemoteItem = js.native
+  @JSName("Outlook.RemoteItem_typekey")
+  var OutlookDotRemoteItem_typekey: RemoteItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

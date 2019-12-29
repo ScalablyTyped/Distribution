@@ -11,7 +11,8 @@ class TabStops protected () extends js.Object {
   val Count: Double = js.native
   var DefaultSpacing: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TabStops_typekey`: TabStops = js.native
+  @JSName("PowerPoint.TabStops_typekey")
+  var PowerPointDotTabStops_typekey: TabStops = js.native
   def Add(Type: PpTabStopType, Position: Double): TabStop = js.native
   def Item(Index: Double): TabStop = js.native
 }

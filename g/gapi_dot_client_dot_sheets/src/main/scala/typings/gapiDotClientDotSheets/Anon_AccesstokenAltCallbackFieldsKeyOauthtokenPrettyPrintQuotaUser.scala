@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotSheets
 
-import typings.gapiDotClientDotSheets.gapi.client.sheets.BatchUpdateValuesRequest
+import typings.gapiDotClientDotSheets.gapi.client.sheets.BatchGetValuesByDataFilterRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUser extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -27,8 +27,8 @@ trait Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUser extends
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.native
   /** Request body */
-  var resource: js.UndefOr[BatchUpdateValuesRequest] = js.native
-  /** The ID of the spreadsheet to update. */
+  var resource: BatchGetValuesByDataFilterRequest = js.native
+  /** The ID of the spreadsheet to retrieve data from. */
   var spreadsheetId: String = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.native

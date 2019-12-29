@@ -31,13 +31,13 @@ trait IAxis extends IAbstract {
   /** [Config Option] (Number) */
   var minorTickSteps: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var position: js.UndefOr[java.lang.String] = js.undefined
+  var position: js.UndefOr[String] = js.undefined
   /** [Method] Updates the title of this axis
   		* @param title String
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -56,9 +56,9 @@ object IAxis {
     drawAxis: /* init */ js.UndefOr[js.Any] => Unit = null,
     drawGrid: () => Unit = null,
     drawLabel: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     grid: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
@@ -68,13 +68,13 @@ object IAxis {
     majorTickSteps: Int | Double = null,
     minorTickSteps: Int | Double = null,
     mixins: js.Any = null,
-    position: java.lang.String = null,
+    position: String = null,
     requires: Array = null,
     self: IClass = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    title: java.lang.String = null,
+    title: String = null,
     uses: Array = null,
     width: Int | Double = null
   ): IAxis = {

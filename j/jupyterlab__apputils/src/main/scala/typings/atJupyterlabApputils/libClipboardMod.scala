@@ -2,7 +2,6 @@ package typings.atJupyterlabApputils
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsStrings.copy
 import typings.atJupyterlabApputils.atJupyterlabApputilsStrings.cut
-import typings.atJupyterlabApputils.libClipboardMod.ClipboardData
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.MimeData
 import typings.std.HTMLElement
 import scala.scalajs.js

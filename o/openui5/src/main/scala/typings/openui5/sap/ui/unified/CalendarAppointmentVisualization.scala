@@ -1,8 +1,6 @@
 package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.unified.CalendarAppointmentVisualization.Filled
-import typings.openui5.sap.ui.unified.CalendarAppointmentVisualization.Standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

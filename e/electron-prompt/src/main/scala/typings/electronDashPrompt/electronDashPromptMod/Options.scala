@@ -1,6 +1,6 @@
 package typings.electronDashPrompt.electronDashPromptMod
 
-import typings.electronDashPrompt.electronDashPromptStrings._quoteinput_quote
+import typings.electronDashPrompt.electronDashPromptStrings.ApostropheinputApostrophe
 import typings.electronDashPrompt.electronDashPromptStrings.select
 import typings.std.Record
 import scala.scalajs.js
@@ -49,7 +49,7 @@ trait Options extends js.Object {
     * The type of input field, either `'input'` for a standard text input
     * field or 'select' for a dropdown type input. Defaults to `'input'`.
     */
-  var `type`: js.UndefOr[_quoteinput_quote | select] = js.undefined
+  var `type`: js.UndefOr[ApostropheinputApostrophe | select] = js.undefined
   /**
     * Whether the label should be interpreted as HTML or not. Defaults to
     * `false`.
@@ -72,7 +72,7 @@ object Options {
     resizable: js.UndefOr[Boolean] = js.undefined,
     selectOptions: js.Object = null,
     title: String = null,
-    `type`: _quoteinput_quote | select = null,
+    `type`: ApostropheinputApostrophe | select = null,
     useHtmlLabel: js.UndefOr[Boolean] = js.undefined,
     value: String = null,
     width: Int | Double = null

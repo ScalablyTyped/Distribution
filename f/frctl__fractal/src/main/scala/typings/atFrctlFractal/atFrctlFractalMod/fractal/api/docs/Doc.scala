@@ -1,7 +1,7 @@
 package typings.atFrctlFractal.atFrctlFractalMod.fractal.api.docs
 
+import typings.atFrctlFractal.atFrctlFractalBooleans.`true`
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.Entity
-import typings.atFrctlFractal.atFrctlFractalNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hedron
 
-Typings are for version 0.7
+Typings are for version 1.0
 
 ## Library description:
 A no-frills flexbox grid system for React.

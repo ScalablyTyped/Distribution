@@ -1,11 +1,9 @@
 package typings.atUirouterCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atUirouterCore.atUirouterCoreNumbers.`false`
+import typings.atUirouterCore.atUirouterCoreBooleans.`false`
 import typings.atUirouterCore.libParamsInterfaceMod.RawParams
 import typings.atUirouterCore.libParamsParamMod.Param
-import typings.atUirouterCore.libPathPathNodeMod.GetParamsFn
-import typings.atUirouterCore.libPathPathNodeMod.PathNode
 import typings.atUirouterCore.libResolveResolvableMod.Resolvable
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
 import typings.atUirouterCore.libViewInterfaceMod.ViewConfig

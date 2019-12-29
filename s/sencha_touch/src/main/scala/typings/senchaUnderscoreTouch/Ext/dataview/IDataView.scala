@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation._
   		*/
   var doSelect: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[java.lang.String] = js.undefined
+  var emptyText: js.UndefOr[String] = js.undefined
   /** [Method] Returns the template node the passed child belongs to or null if it doesn t belong to one  */
   var findItemByChild: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the template node by the Ext EventObject or null if it is not found  */
@@ -85,7 +85,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the value of emptyText
   		* @returns String
   		*/
-  var getEmptyText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getEmptyText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of inline
   		* @returns Boolean/Object
   		*/
@@ -98,7 +98,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the value of itemCls
   		* @returns String
   		*/
-  var getItemCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getItemCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of itemConfig
   		* @returns Object
   		*/
@@ -127,7 +127,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the value of mode
   		* @returns String
   		*/
-  var getMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets a template node  */
   var getNode: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Gets a range nodes  */
@@ -135,7 +135,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the value of pressedCls
   		* @returns String
   		*/
-  var getPressedCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPressedCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of pressedDelay
   		* @returns Number
   		*/
@@ -149,7 +149,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the value of selectedCls
   		* @returns String
   		*/
-  var getSelectedCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSelectedCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Gets the currently selected nodes  */
   var getSelectedNodes: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Gets an array of the selected records  */
@@ -165,7 +165,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the selection mode currently used by this Selectable
   		* @returns String The current mode.
   		*/
-  var getSelectionMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getSelectionMode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of store
   		* @returns Ext.data.Store/Object
   		*/
@@ -173,11 +173,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the value of triggerCtEvent
   		* @returns String
   		*/
-  var getTriggerCtEvent: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTriggerCtEvent: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of triggerEvent
   		* @returns String
   		*/
-  var getTriggerEvent: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTriggerEvent: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of useComponents
   		* @returns Boolean
   		*/
@@ -206,7 +206,7 @@ import scala.scalajs.js.annotation._
   		*/
   var isSelected: js.UndefOr[js.Function1[js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[java.lang.String] = js.undefined
+  var itemCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var itemConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -220,7 +220,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Number) */
   var maxItemCache: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var mode: js.UndefOr[java.lang.String] = js.undefined
+  var mode: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var multiSelect: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -240,7 +240,7 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var pressedCls: js.UndefOr[java.lang.String] = js.undefined
+  var pressedCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var pressedDelay: js.UndefOr[Double] = js.undefined
   /** [Method] Refreshes the view by reloading the data from the store and re rendering the template  */
@@ -266,7 +266,7 @@ import scala.scalajs.js.annotation._
   		*/
   var selectRange: js.UndefOr[js.Function3[js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var selectedCls: js.UndefOr[java.lang.String] = js.undefined
+  var selectedCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var selectedItemCls: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of allowDeselect
@@ -293,7 +293,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of emptyText
   		* @param emptyText String The new value.
   		*/
-  var setEmptyText: js.UndefOr[js.Function1[/* emptyText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setEmptyText: js.UndefOr[js.Function1[/* emptyText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of inline
   		* @param inline Boolean/Object The new value.
   		*/
@@ -301,7 +301,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of itemCls
   		* @param itemCls String The new value.
   		*/
-  var setItemCls: js.UndefOr[js.Function1[/* itemCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setItemCls: js.UndefOr[js.Function1[/* itemCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of itemConfig
   		* @param itemConfig Object The new value.
   		*/
@@ -323,11 +323,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of mode
   		* @param mode String The new value.
   		*/
-  var setMode: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMode: js.UndefOr[js.Function1[js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pressedCls
   		* @param pressedCls String The new value.
   		*/
-  var setPressedCls: js.UndefOr[js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPressedCls: js.UndefOr[js.Function1[/* pressedCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pressedDelay
   		* @param pressedDelay Number The new value.
   		*/
@@ -339,7 +339,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of selectedCls
   		* @param selectedCls String The new value.
   		*/
-  var setSelectedCls: js.UndefOr[js.Function1[/* selectedCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setSelectedCls: js.UndefOr[js.Function1[/* selectedCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of store
   		* @param store Ext.data.Store/Object The new value.
   		*/
@@ -347,11 +347,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of triggerCtEvent
   		* @param triggerCtEvent String The new value.
   		*/
-  var setTriggerCtEvent: js.UndefOr[js.Function1[/* triggerCtEvent */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTriggerCtEvent: js.UndefOr[js.Function1[/* triggerCtEvent */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of triggerEvent
   		* @param triggerEvent String The new value.
   		*/
-  var setTriggerEvent: js.UndefOr[js.Function1[/* triggerEvent */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTriggerEvent: js.UndefOr[js.Function1[/* triggerEvent */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of useComponents
   		* @param useComponents Boolean The new value.
   		*/
@@ -365,9 +365,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var trackOver: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var triggerCtEvent: js.UndefOr[java.lang.String] = js.undefined
+  var triggerCtEvent: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var triggerEvent: js.UndefOr[java.lang.String] = js.undefined
+  var triggerEvent: js.UndefOr[String] = js.undefined
   /** [Method] Sets a record as the last focused record
   		* @param newRecord Ext.data.Record
   		* @param oldRecord Ext.data.Record
@@ -394,7 +394,7 @@ object IDataView {
     disableSelection: js.UndefOr[Boolean] = js.undefined,
     doDeselect: (js.UndefOr[js.Any], js.UndefOr[Boolean]) => Unit = null,
     doSelect: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit = null,
-    emptyText: java.lang.String = null,
+    emptyText: String = null,
     findItemByChild: () => Unit = null,
     findTargetByEvent: () => Unit = null,
     getAllowDeselect: () => Boolean = null,
@@ -403,32 +403,32 @@ object IDataView {
     getDeferEmptyText: () => Boolean = null,
     getDeselectOnContainerClick: () => Boolean = null,
     getDisableSelection: () => Boolean = null,
-    getEmptyText: () => java.lang.String = null,
+    getEmptyText: () => String = null,
     getInline: () => _ = null,
     getItemAt: /* index */ js.UndefOr[Double] => _ = null,
-    getItemCls: () => java.lang.String = null,
+    getItemCls: () => String = null,
     getItemConfig: () => _ = null,
     getItemIndex: /* item */ js.UndefOr[Double] => Double = null,
     getItemTpl: () => _ = null,
     getLastSelected: () => Array = null,
     getLoadingText: () => _ = null,
     getMaxItemCache: () => Double = null,
-    getMode: () => java.lang.String = null,
+    getMode: () => String = null,
     getNode: () => Unit = null,
     getNodes: () => Unit = null,
-    getPressedCls: () => java.lang.String = null,
+    getPressedCls: () => String = null,
     getPressedDelay: () => Double = null,
     getRecords: () => Unit = null,
     getScrollToTopOnRefresh: () => Boolean = null,
-    getSelectedCls: () => java.lang.String = null,
+    getSelectedCls: () => String = null,
     getSelectedNodes: () => Unit = null,
     getSelectedRecords: () => Unit = null,
     getSelection: () => Array = null,
     getSelectionCount: () => Double = null,
-    getSelectionMode: () => java.lang.String = null,
+    getSelectionMode: () => String = null,
     getStore: () => _ = null,
-    getTriggerCtEvent: () => java.lang.String = null,
-    getTriggerEvent: () => java.lang.String = null,
+    getTriggerCtEvent: () => String = null,
+    getTriggerEvent: () => String = null,
     getUseComponents: () => Boolean = null,
     getViewItems: () => _ = null,
     handleException: () => Unit = null,
@@ -437,18 +437,18 @@ object IDataView {
     `inline`: js.Any = null,
     isLocked: () => Boolean = null,
     isSelected: js.UndefOr[js.Any] => Boolean = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     itemConfig: js.Any = null,
     itemSelector: js.UndefOr[Boolean] = js.undefined,
     itemTpl: js.Any = null,
     loadingText: js.Any = null,
     locked: js.UndefOr[Boolean] = js.undefined,
     maxItemCache: Int | Double = null,
-    mode: java.lang.String = null,
+    mode: String = null,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     overItemCls: js.UndefOr[Boolean] = js.undefined,
     prepareData: (/* data */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => _ = null,
-    pressedCls: java.lang.String = null,
+    pressedCls: String = null,
     pressedDelay: Int | Double = null,
     refresh: () => Unit = null,
     refreshNode: () => Unit = null,
@@ -456,36 +456,36 @@ object IDataView {
     select: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit = null,
     selectAll: js.UndefOr[Boolean] => Unit = null,
     selectRange: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean]) => Unit = null,
-    selectedCls: java.lang.String = null,
+    selectedCls: String = null,
     selectedItemCls: js.UndefOr[Boolean] = js.undefined,
     setAllowDeselect: js.UndefOr[Boolean] => Unit = null,
     setData: /* data */ js.UndefOr[Array] => Unit = null,
     setDeferEmptyText: /* deferEmptyText */ js.UndefOr[Boolean] => Unit = null,
     setDeselectOnContainerClick: js.UndefOr[Boolean] => Unit = null,
     setDisableSelection: js.UndefOr[Boolean] => Unit = null,
-    setEmptyText: /* emptyText */ js.UndefOr[java.lang.String] => Unit = null,
+    setEmptyText: /* emptyText */ js.UndefOr[String] => Unit = null,
     setInline: /* inline */ js.UndefOr[js.Any] => Unit = null,
-    setItemCls: /* itemCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setItemCls: /* itemCls */ js.UndefOr[String] => Unit = null,
     setItemConfig: /* itemConfig */ js.UndefOr[js.Any] => Unit = null,
     setItemTpl: /* itemTpl */ js.UndefOr[js.Any] => Unit = null,
     setLastFocused: () => Unit = null,
     setLoadingText: /* loadingText */ js.UndefOr[js.Any] => Unit = null,
     setMaxItemCache: /* maxItemCache */ js.UndefOr[Double] => Unit = null,
-    setMode: js.UndefOr[java.lang.String] => Unit = null,
-    setPressedCls: /* pressedCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setMode: js.UndefOr[String] => Unit = null,
+    setPressedCls: /* pressedCls */ js.UndefOr[String] => Unit = null,
     setPressedDelay: /* pressedDelay */ js.UndefOr[Double] => Unit = null,
     setScrollToTopOnRefresh: /* scrollToTopOnRefresh */ js.UndefOr[Boolean] => Unit = null,
-    setSelectedCls: /* selectedCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setSelectedCls: /* selectedCls */ js.UndefOr[String] => Unit = null,
     setStore: /* store */ js.UndefOr[js.Any] => Unit = null,
-    setTriggerCtEvent: /* triggerCtEvent */ js.UndefOr[java.lang.String] => Unit = null,
-    setTriggerEvent: /* triggerEvent */ js.UndefOr[java.lang.String] => Unit = null,
+    setTriggerCtEvent: /* triggerCtEvent */ js.UndefOr[String] => Unit = null,
+    setTriggerEvent: /* triggerEvent */ js.UndefOr[String] => Unit = null,
     setUseComponents: /* useComponents */ js.UndefOr[Boolean] => Unit = null,
     simpleSelect: js.UndefOr[Boolean] = js.undefined,
     singleSelect: js.UndefOr[Boolean] = js.undefined,
     store: js.Any = null,
     trackOver: js.UndefOr[Boolean] = js.undefined,
-    triggerCtEvent: java.lang.String = null,
-    triggerEvent: java.lang.String = null,
+    triggerCtEvent: String = null,
+    triggerEvent: String = null,
     updateLastFocused: (js.UndefOr[IRecord], js.UndefOr[IRecord]) => Unit = null,
     useComponents: js.UndefOr[Boolean] = js.undefined
   ): IDataView = {

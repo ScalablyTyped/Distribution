@@ -30,6 +30,12 @@ trait KMLSublayerProperties extends js.Object {
     */
   var networkLink: js.UndefOr[js.Any] = js.undefined
   /**
+    * The raw KML data for this sublayer, in JSON format, as returned by the [KML utility service](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#kmlServiceUrl).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  /**
     * A collection of [KMLSublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html#sublayers)
@@ -56,6 +62,7 @@ object KMLSublayerProperties {
     id: Int | Double = null,
     layer: KMLLayerProperties = null,
     networkLink: js.Any = null,
+    sourceJSON: js.Any = null,
     sublayers: CollectionProperties[KMLSublayerProperties] = null,
     title: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
@@ -65,6 +72,7 @@ object KMLSublayerProperties {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     if (networkLink != null) __obj.updateDynamic("networkLink")(networkLink.asInstanceOf[js.Any])
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON.asInstanceOf[js.Any])
     if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])

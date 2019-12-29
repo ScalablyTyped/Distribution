@@ -1,6 +1,6 @@
 package typings.pinoDashHttp.pinoDashHttpMod.httpMod
 
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

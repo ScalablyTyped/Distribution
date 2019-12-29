@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.DateTimeFieldFriendlyFormatType.disabled
-import typings.sharepoint.SP.DateTimeFieldFriendlyFormatType.relative
-import typings.sharepoint.SP.DateTimeFieldFriendlyFormatType.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

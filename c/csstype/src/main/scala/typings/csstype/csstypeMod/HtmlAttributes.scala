@@ -1,678 +1,677 @@
 package typings.csstype.csstypeMod
 
-import typings.csstype.csstypeStrings.`[referrerpolicy]_`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`[-webkit-dropzone]`
-  - typings.csstype.csstypeStrings.`[-webkit-slot]`
-  - typings.csstype.csstypeStrings.`[abbr]`
-  - typings.csstype.csstypeStrings.`[accept-charset]`
-  - typings.csstype.csstypeStrings.`[accept]`
-  - typings.csstype.csstypeStrings.`[accesskey]`
-  - typings.csstype.csstypeStrings.`[action]`
-  - typings.csstype.csstypeStrings.`[align]`
-  - typings.csstype.csstypeStrings.`[alink]`
-  - typings.csstype.csstypeStrings.`[allow]`
-  - typings.csstype.csstypeStrings.`[allowfullscreen]`
-  - typings.csstype.csstypeStrings.`[allowpaymentrequest]`
-  - typings.csstype.csstypeStrings.`[alt]`
-  - typings.csstype.csstypeStrings.`[archive]`
-  - typings.csstype.csstypeStrings.`[async]`
-  - typings.csstype.csstypeStrings.`[autobuffer]`
-  - typings.csstype.csstypeStrings.`[autocapitalize]`
-  - typings.csstype.csstypeStrings.`[autocomplete]`
-  - typings.csstype.csstypeStrings.`[autofocus]`
-  - typings.csstype.csstypeStrings.`[autoplay]`
-  - typings.csstype.csstypeStrings.`[axis]`
-  - typings.csstype.csstypeStrings.`[background]`
-  - typings.csstype.csstypeStrings.`[behavior]`
-  - typings.csstype.csstypeStrings.`[bgcolor]`
-  - typings.csstype.csstypeStrings.`[border]`
-  - typings.csstype.csstypeStrings.`[bottommargin]`
-  - typings.csstype.csstypeStrings.`[buffered]`
-  - typings.csstype.csstypeStrings.`[cellpadding]`
-  - typings.csstype.csstypeStrings.`[cellspacing]`
-  - typings.csstype.csstypeStrings.`[char]`
-  - typings.csstype.csstypeStrings.`[charoff]`
-  - typings.csstype.csstypeStrings.`[charset]`
-  - typings.csstype.csstypeStrings.`[checked]`
-  - typings.csstype.csstypeStrings.`[cite]`
-  - typings.csstype.csstypeStrings.`[class]`
-  - typings.csstype.csstypeStrings.`[classid]`
-  - typings.csstype.csstypeStrings.`[clear]`
-  - typings.csstype.csstypeStrings.`[code]`
-  - typings.csstype.csstypeStrings.`[codebase]`
-  - typings.csstype.csstypeStrings.`[codetype]`
-  - typings.csstype.csstypeStrings.`[color]`
-  - typings.csstype.csstypeStrings.`[cols]`
-  - typings.csstype.csstypeStrings.`[colspan]`
-  - typings.csstype.csstypeStrings.`[command]`
-  - typings.csstype.csstypeStrings.`[compact]`
-  - typings.csstype.csstypeStrings.`[content]`
-  - typings.csstype.csstypeStrings.`[contenteditable]`
-  - typings.csstype.csstypeStrings.`[contextmenu]`
-  - typings.csstype.csstypeStrings.`[controls]`
-  - typings.csstype.csstypeStrings.`[coords]`
-  - typings.csstype.csstypeStrings.`[crossorigin]`
-  - typings.csstype.csstypeStrings.`[data]`
-  - typings.csstype.csstypeStrings.`[datafld]`
-  - typings.csstype.csstypeStrings.`[datasrc]`
-  - typings.csstype.csstypeStrings.`[datetime]`
-  - typings.csstype.csstypeStrings.`[declare]`
-  - typings.csstype.csstypeStrings.`[decoding]`
-  - typings.csstype.csstypeStrings.`[default]`
-  - typings.csstype.csstypeStrings.`[defer]`
-  - typings.csstype.csstypeStrings.`[dir]`
-  - typings.csstype.csstypeStrings.`[direction]`
-  - typings.csstype.csstypeStrings.`[disabled]`
-  - typings.csstype.csstypeStrings.`[download]`
-  - typings.csstype.csstypeStrings.`[draggable]`
-  - typings.csstype.csstypeStrings.`[dropzone]`
-  - typings.csstype.csstypeStrings.`[enctype]`
-  - typings.csstype.csstypeStrings.`[exportparts]`
-  - typings.csstype.csstypeStrings.`[face]`
-  - typings.csstype.csstypeStrings.`[for]`
-  - typings.csstype.csstypeStrings.`[form]`
-  - typings.csstype.csstypeStrings.`[formaction]`
-  - typings.csstype.csstypeStrings.`[formenctype]`
-  - typings.csstype.csstypeStrings.`[formmethod]`
-  - typings.csstype.csstypeStrings.`[formnovalidate]`
-  - typings.csstype.csstypeStrings.`[formtarget]`
-  - typings.csstype.csstypeStrings.`[frame]`
-  - typings.csstype.csstypeStrings.`[frameborder]`
-  - typings.csstype.csstypeStrings.`[headers]`
-  - typings.csstype.csstypeStrings.`[height]`
-  - typings.csstype.csstypeStrings.`[hidden]`
-  - typings.csstype.csstypeStrings.`[high]`
-  - typings.csstype.csstypeStrings.`[href]`
-  - typings.csstype.csstypeStrings.`[hreflang]`
-  - typings.csstype.csstypeStrings.`[hspace]`
-  - typings.csstype.csstypeStrings.`[http-equiv]`
-  - typings.csstype.csstypeStrings.`[icon]`
-  - typings.csstype.csstypeStrings.`[id]`
-  - typings.csstype.csstypeStrings.`[inputmode]`
-  - typings.csstype.csstypeStrings.`[integrity]`
-  - typings.csstype.csstypeStrings.`[intrinsicsize]`
-  - typings.csstype.csstypeStrings.`[is]`
-  - typings.csstype.csstypeStrings.`[ismap]`
-  - typings.csstype.csstypeStrings.`[itemid]`
-  - typings.csstype.csstypeStrings.`[itemprop]`
-  - typings.csstype.csstypeStrings.`[itemref]`
-  - typings.csstype.csstypeStrings.`[itemscope]`
-  - typings.csstype.csstypeStrings.`[itemtype]`
-  - typings.csstype.csstypeStrings.`[kind]`
-  - typings.csstype.csstypeStrings.`[label]`
-  - typings.csstype.csstypeStrings.`[lang]`
-  - typings.csstype.csstypeStrings.`[language]`
-  - typings.csstype.csstypeStrings.`[leftmargin]`
-  - typings.csstype.csstypeStrings.`[link]`
-  - typings.csstype.csstypeStrings.`[longdesc]`
-  - typings.csstype.csstypeStrings.`[loop]`
-  - typings.csstype.csstypeStrings.`[low]`
-  - typings.csstype.csstypeStrings.`[manifest]`
-  - typings.csstype.csstypeStrings.`[marginheight]`
-  - typings.csstype.csstypeStrings.`[marginwidth]`
-  - typings.csstype.csstypeStrings.`[max]`
-  - typings.csstype.csstypeStrings.`[maxlength]`
-  - typings.csstype.csstypeStrings.`[mayscript]`
-  - typings.csstype.csstypeStrings.`[media]`
-  - typings.csstype.csstypeStrings.`[method]`
-  - typings.csstype.csstypeStrings.`[methods]`
-  - typings.csstype.csstypeStrings.`[min]`
-  - typings.csstype.csstypeStrings.`[minlength]`
-  - typings.csstype.csstypeStrings.`[moz-opaque]`
-  - typings.csstype.csstypeStrings.`[mozallowfullscreen]`
-  - typings.csstype.csstypeStrings.`[mozbrowser]`
-  - typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]`
-  - typings.csstype.csstypeStrings.`[msallowfullscreen]`
-  - typings.csstype.csstypeStrings.`[multiple]`
-  - typings.csstype.csstypeStrings.`[muted]`
-  - typings.csstype.csstypeStrings.`[name]`
-  - typings.csstype.csstypeStrings.`[nohref]`
-  - typings.csstype.csstypeStrings.`[nomodule]`
-  - typings.csstype.csstypeStrings.`[noresize]`
-  - typings.csstype.csstypeStrings.`[noshade]`
-  - typings.csstype.csstypeStrings.`[novalidate]`
-  - typings.csstype.csstypeStrings.`[nowrap]`
-  - typings.csstype.csstypeStrings.`[object]`
-  - typings.csstype.csstypeStrings.`[onafterprint]`
-  - typings.csstype.csstypeStrings.`[onbeforeprint]`
-  - typings.csstype.csstypeStrings.`[onbeforeunload]`
-  - typings.csstype.csstypeStrings.`[onblur]`
-  - typings.csstype.csstypeStrings.`[onerror]`
-  - typings.csstype.csstypeStrings.`[onfocus]`
-  - typings.csstype.csstypeStrings.`[onhashchange]`
-  - typings.csstype.csstypeStrings.`[onlanguagechange]`
-  - typings.csstype.csstypeStrings.`[onload]`
-  - typings.csstype.csstypeStrings.`[onmessage]`
-  - typings.csstype.csstypeStrings.`[onoffline]`
-  - typings.csstype.csstypeStrings.`[ononline]`
-  - typings.csstype.csstypeStrings.`[onpopstate]`
-  - typings.csstype.csstypeStrings.`[onredo]`
-  - typings.csstype.csstypeStrings.`[onresize]`
-  - typings.csstype.csstypeStrings.`[onstorage]`
-  - typings.csstype.csstypeStrings.`[onundo]`
-  - typings.csstype.csstypeStrings.`[onunload]`
-  - typings.csstype.csstypeStrings.`[open]`
-  - typings.csstype.csstypeStrings.`[optimum]`
-  - typings.csstype.csstypeStrings.`[part]`
-  - typings.csstype.csstypeStrings.`[ping]`
-  - typings.csstype.csstypeStrings.`[placeholder]`
-  - typings.csstype.csstypeStrings.`[played]`
-  - typings.csstype.csstypeStrings.`[poster]`
-  - typings.csstype.csstypeStrings.`[prefetch]`
-  - typings.csstype.csstypeStrings.`[preload]`
-  - typings.csstype.csstypeStrings.`[profile]`
-  - typings.csstype.csstypeStrings.`[prompt]`
-  - typings.csstype.csstypeStrings.`[radiogroup]`
-  - typings.csstype.csstypeStrings.`[readonly]`
-  - typings.csstype.csstypeStrings.`[referrerPolicy]`
-  - typings.csstype.csstypeStrings.`[referrerpolicy]_`
-  - typings.csstype.csstypeStrings.`[rel]`
-  - typings.csstype.csstypeStrings.`[required]`
-  - typings.csstype.csstypeStrings.`[rev]`
-  - typings.csstype.csstypeStrings.`[reversed]`
-  - typings.csstype.csstypeStrings.`[rightmargin]`
-  - typings.csstype.csstypeStrings.`[rows]`
-  - typings.csstype.csstypeStrings.`[rowspan]`
-  - typings.csstype.csstypeStrings.`[rules]`
-  - typings.csstype.csstypeStrings.`[sandbox-allow-modals]`
-  - typings.csstype.csstypeStrings.`[sandbox-allow-popups-to-escape-sandbox]`
-  - typings.csstype.csstypeStrings.`[sandbox-allow-popups]`
-  - typings.csstype.csstypeStrings.`[sandbox-allow-presentation]`
-  - typings.csstype.csstypeStrings.`[sandbox-allow-storage-access-by-user-activation]`
-  - typings.csstype.csstypeStrings.`[sandbox-allow-top-navigation-by-user-activation]`
-  - typings.csstype.csstypeStrings.`[sandbox]`
-  - typings.csstype.csstypeStrings.`[scope]`
-  - typings.csstype.csstypeStrings.`[scoped]`
-  - typings.csstype.csstypeStrings.`[scrollamount]`
-  - typings.csstype.csstypeStrings.`[scrolldelay]`
-  - typings.csstype.csstypeStrings.`[scrolling]`
-  - typings.csstype.csstypeStrings.`[selected]`
-  - typings.csstype.csstypeStrings.`[shape]`
-  - typings.csstype.csstypeStrings.`[size]`
-  - typings.csstype.csstypeStrings.`[sizes]`
-  - typings.csstype.csstypeStrings.`[slot]`
-  - typings.csstype.csstypeStrings.`[span]`
-  - typings.csstype.csstypeStrings.`[spellcheck]`
-  - typings.csstype.csstypeStrings.`[src]`
-  - typings.csstype.csstypeStrings.`[srcdoc]`
-  - typings.csstype.csstypeStrings.`[srclang]`
-  - typings.csstype.csstypeStrings.`[srcset]`
-  - typings.csstype.csstypeStrings.`[standby]`
-  - typings.csstype.csstypeStrings.`[start]`
-  - typings.csstype.csstypeStrings.`[style]`
-  - typings.csstype.csstypeStrings.`[summary]`
-  - typings.csstype.csstypeStrings.`[tabindex]`
-  - typings.csstype.csstypeStrings.`[target]`
-  - typings.csstype.csstypeStrings.`[text]`
-  - typings.csstype.csstypeStrings.`[title]`
-  - typings.csstype.csstypeStrings.`[topmargin]`
-  - typings.csstype.csstypeStrings.`[translate]`
-  - typings.csstype.csstypeStrings.`[truespeed]`
-  - typings.csstype.csstypeStrings.`[type]`
-  - typings.csstype.csstypeStrings.`[typemustmatch]`
-  - typings.csstype.csstypeStrings.`[usemap]`
-  - typings.csstype.csstypeStrings.`[valign]`
-  - typings.csstype.csstypeStrings.`[value]`
-  - typings.csstype.csstypeStrings.`[valuetype]`
-  - typings.csstype.csstypeStrings.`[version]`
-  - typings.csstype.csstypeStrings.`[vlink]`
-  - typings.csstype.csstypeStrings.`[volume]`
-  - typings.csstype.csstypeStrings.`[vspace]`
-  - typings.csstype.csstypeStrings.`[webkitallowfullscreen]`
-  - typings.csstype.csstypeStrings.`[width]`
-  - typings.csstype.csstypeStrings.`[wrap]`
-  - typings.csstype.csstypeStrings.`[xmlns]`
+  - typings.csstype.csstypeStrings.`Leftsquarebracket-webkit-dropzoneRightsquarebracket`
+  - typings.csstype.csstypeStrings.`Leftsquarebracket-webkit-slotRightsquarebracket`
+  - typings.csstype.csstypeStrings.LeftsquarebracketabbrRightsquarebracket
+  - typings.csstype.csstypeStrings.`Leftsquarebracketaccept-charsetRightsquarebracket`
+  - typings.csstype.csstypeStrings.LeftsquarebracketacceptRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketaccesskeyRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketactionRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketalignRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketalinkRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketallowRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketallowfullscreenRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketallowpaymentrequestRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketaltRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketarchiveRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketasyncRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketautobufferRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketautocapitalizeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketautocompleteRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketautofocusRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketautoplayRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketaxisRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketbackgroundRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketbehaviorRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketbgcolorRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketborderRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketbottommarginRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketbufferedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcellpaddingRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcellspacingRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcharRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcharoffRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcharsetRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcheckedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketciteRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketclassRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketclassidRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketclearRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcodeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcodebaseRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcodetypeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcolorRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcolsRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcolspanRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcommandRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcompactRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcontentRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcontenteditableRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcontextmenuRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcontrolsRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcoordsRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketcrossoriginRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdataRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdatafldRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdatasrcRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdatetimeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdeclareRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdecodingRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdefaultRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdeferRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdirRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdirectionRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdisabledRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdownloadRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdraggableRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketdropzoneRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketenctypeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketexportpartsRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketfaceRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketforRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketformRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketformactionRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketformenctypeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketformmethodRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketformnovalidateRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketformtargetRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketframeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketframeborderRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketheadersRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketheightRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackethiddenRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackethighRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackethrefRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackethreflangRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackethspaceRightsquarebracket
+  - typings.csstype.csstypeStrings.`Leftsquarebrackethttp-equivRightsquarebracket`
+  - typings.csstype.csstypeStrings.LeftsquarebracketiconRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketidRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketinputmodeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketintegrityRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketintrinsicsizeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketisRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketismapRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketitemidRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketitempropRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketitemrefRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketitemscopeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketitemtypeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketkindRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketlabelRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketlangRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketlanguageRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketleftmarginRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketlinkRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketlongdescRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketloopRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketlowRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmanifestRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmarginheightRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmarginwidthRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmaxRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmaxlengthRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmayscriptRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmediaRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmethodRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmethodsRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketminRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketminlengthRightsquarebracket
+  - typings.csstype.csstypeStrings.`Leftsquarebracketmoz-opaqueRightsquarebracket`
+  - typings.csstype.csstypeStrings.LeftsquarebracketmozallowfullscreenRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmozbrowserRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmozcurrentsampleoffsetRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmsallowfullscreenRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmultipleRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketmutedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketnameRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketnohrefRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketnomoduleRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketnoresizeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketnoshadeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketnovalidateRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketnowrapRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketobjectRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonafterprintRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonbeforeprintRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonbeforeunloadRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonblurRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonerrorRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonfocusRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonhashchangeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonlanguagechangeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonloadRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonmessageRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonofflineRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketononlineRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonpopstateRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonredoRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonresizeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonstorageRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonundoRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketonunloadRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketopenRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketoptimumRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketpartRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketpingRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketplaceholderRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketplayedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketposterRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketprefetchRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketpreloadRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketprofileRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketpromptRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketradiogroupRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketreadonlyRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketreferrerPolicyRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketreferrerpolicyRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketrelRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketrequiredRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketrevRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketreversedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketrightmarginRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketrowsRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketrowspanRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketrulesRightsquarebracket
+  - typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-modalsRightsquarebracket`
+  - typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-popups-to-escape-sandboxRightsquarebracket`
+  - typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-popupsRightsquarebracket`
+  - typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-presentationRightsquarebracket`
+  - typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-storage-access-by-user-activationRightsquarebracket`
+  - typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-top-navigation-by-user-activationRightsquarebracket`
+  - typings.csstype.csstypeStrings.LeftsquarebracketsandboxRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketscopeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketscopedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketscrollamountRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketscrolldelayRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketscrollingRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketselectedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketshapeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketsizeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketsizesRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketslotRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketspanRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketspellcheckRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketsrcRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketsrcdocRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketsrclangRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketsrcsetRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketstandbyRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketstartRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketstyleRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketsummaryRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettabindexRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettargetRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettextRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettitleRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettopmarginRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettranslateRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettruespeedRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettypeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebrackettypemustmatchRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketusemapRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketvalignRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketvalueRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketvaluetypeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketversionRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketvlinkRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketvolumeRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketvspaceRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketwebkitallowfullscreenRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketwidthRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketwrapRightsquarebracket
+  - typings.csstype.csstypeStrings.LeftsquarebracketxmlnsRightsquarebracket
 */
 trait HtmlAttributes extends js.Object
 
 object HtmlAttributes {
   @scala.inline
-  def `[-webkit-dropzone]`: typings.csstype.csstypeStrings.`[-webkit-dropzone]` = this.cast("[-webkit-dropzone]")
+  def `Leftsquarebracket-webkit-dropzoneRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracket-webkit-dropzoneRightsquarebracket` = this.cast("[-webkit-dropzone]")
   @scala.inline
-  def `[-webkit-slot]`: typings.csstype.csstypeStrings.`[-webkit-slot]` = this.cast("[-webkit-slot]")
+  def `Leftsquarebracket-webkit-slotRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracket-webkit-slotRightsquarebracket` = this.cast("[-webkit-slot]")
   @scala.inline
-  def `[abbr]`: typings.csstype.csstypeStrings.`[abbr]` = this.cast("[abbr]")
+  def LeftsquarebracketabbrRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketabbrRightsquarebracket = this.cast("[abbr]")
   @scala.inline
-  def `[accept-charset]`: typings.csstype.csstypeStrings.`[accept-charset]` = this.cast("[accept-charset]")
+  def `Leftsquarebracketaccept-charsetRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketaccept-charsetRightsquarebracket` = this.cast("[accept-charset]")
   @scala.inline
-  def `[accept]`: typings.csstype.csstypeStrings.`[accept]` = this.cast("[accept]")
+  def LeftsquarebracketacceptRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketacceptRightsquarebracket = this.cast("[accept]")
   @scala.inline
-  def `[accesskey]`: typings.csstype.csstypeStrings.`[accesskey]` = this.cast("[accesskey]")
+  def LeftsquarebracketaccesskeyRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketaccesskeyRightsquarebracket = this.cast("[accesskey]")
   @scala.inline
-  def `[action]`: typings.csstype.csstypeStrings.`[action]` = this.cast("[action]")
+  def LeftsquarebracketactionRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketactionRightsquarebracket = this.cast("[action]")
   @scala.inline
-  def `[align]`: typings.csstype.csstypeStrings.`[align]` = this.cast("[align]")
+  def LeftsquarebracketalignRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketalignRightsquarebracket = this.cast("[align]")
   @scala.inline
-  def `[alink]`: typings.csstype.csstypeStrings.`[alink]` = this.cast("[alink]")
+  def LeftsquarebracketalinkRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketalinkRightsquarebracket = this.cast("[alink]")
   @scala.inline
-  def `[allow]`: typings.csstype.csstypeStrings.`[allow]` = this.cast("[allow]")
+  def LeftsquarebracketallowRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketallowRightsquarebracket = this.cast("[allow]")
   @scala.inline
-  def `[allowfullscreen]`: typings.csstype.csstypeStrings.`[allowfullscreen]` = this.cast("[allowfullscreen]")
+  def LeftsquarebracketallowfullscreenRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketallowfullscreenRightsquarebracket = this.cast("[allowfullscreen]")
   @scala.inline
-  def `[allowpaymentrequest]`: typings.csstype.csstypeStrings.`[allowpaymentrequest]` = this.cast("[allowpaymentrequest]")
+  def LeftsquarebracketallowpaymentrequestRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketallowpaymentrequestRightsquarebracket = this.cast("[allowpaymentrequest]")
   @scala.inline
-  def `[alt]`: typings.csstype.csstypeStrings.`[alt]` = this.cast("[alt]")
+  def LeftsquarebracketaltRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketaltRightsquarebracket = this.cast("[alt]")
   @scala.inline
-  def `[archive]`: typings.csstype.csstypeStrings.`[archive]` = this.cast("[archive]")
+  def LeftsquarebracketarchiveRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketarchiveRightsquarebracket = this.cast("[archive]")
   @scala.inline
-  def `[async]`: typings.csstype.csstypeStrings.`[async]` = this.cast("[async]")
+  def LeftsquarebracketasyncRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketasyncRightsquarebracket = this.cast("[async]")
   @scala.inline
-  def `[autobuffer]`: typings.csstype.csstypeStrings.`[autobuffer]` = this.cast("[autobuffer]")
+  def LeftsquarebracketautobufferRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketautobufferRightsquarebracket = this.cast("[autobuffer]")
   @scala.inline
-  def `[autocapitalize]`: typings.csstype.csstypeStrings.`[autocapitalize]` = this.cast("[autocapitalize]")
+  def LeftsquarebracketautocapitalizeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketautocapitalizeRightsquarebracket = this.cast("[autocapitalize]")
   @scala.inline
-  def `[autocomplete]`: typings.csstype.csstypeStrings.`[autocomplete]` = this.cast("[autocomplete]")
+  def LeftsquarebracketautocompleteRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketautocompleteRightsquarebracket = this.cast("[autocomplete]")
   @scala.inline
-  def `[autofocus]`: typings.csstype.csstypeStrings.`[autofocus]` = this.cast("[autofocus]")
+  def LeftsquarebracketautofocusRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketautofocusRightsquarebracket = this.cast("[autofocus]")
   @scala.inline
-  def `[autoplay]`: typings.csstype.csstypeStrings.`[autoplay]` = this.cast("[autoplay]")
+  def LeftsquarebracketautoplayRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketautoplayRightsquarebracket = this.cast("[autoplay]")
   @scala.inline
-  def `[axis]`: typings.csstype.csstypeStrings.`[axis]` = this.cast("[axis]")
+  def LeftsquarebracketaxisRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketaxisRightsquarebracket = this.cast("[axis]")
   @scala.inline
-  def `[background]`: typings.csstype.csstypeStrings.`[background]` = this.cast("[background]")
+  def LeftsquarebracketbackgroundRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketbackgroundRightsquarebracket = this.cast("[background]")
   @scala.inline
-  def `[behavior]`: typings.csstype.csstypeStrings.`[behavior]` = this.cast("[behavior]")
+  def LeftsquarebracketbehaviorRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketbehaviorRightsquarebracket = this.cast("[behavior]")
   @scala.inline
-  def `[bgcolor]`: typings.csstype.csstypeStrings.`[bgcolor]` = this.cast("[bgcolor]")
+  def LeftsquarebracketbgcolorRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketbgcolorRightsquarebracket = this.cast("[bgcolor]")
   @scala.inline
-  def `[border]`: typings.csstype.csstypeStrings.`[border]` = this.cast("[border]")
+  def LeftsquarebracketborderRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketborderRightsquarebracket = this.cast("[border]")
   @scala.inline
-  def `[bottommargin]`: typings.csstype.csstypeStrings.`[bottommargin]` = this.cast("[bottommargin]")
+  def LeftsquarebracketbottommarginRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketbottommarginRightsquarebracket = this.cast("[bottommargin]")
   @scala.inline
-  def `[buffered]`: typings.csstype.csstypeStrings.`[buffered]` = this.cast("[buffered]")
+  def LeftsquarebracketbufferedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketbufferedRightsquarebracket = this.cast("[buffered]")
   @scala.inline
-  def `[cellpadding]`: typings.csstype.csstypeStrings.`[cellpadding]` = this.cast("[cellpadding]")
+  def LeftsquarebracketcellpaddingRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcellpaddingRightsquarebracket = this.cast("[cellpadding]")
   @scala.inline
-  def `[cellspacing]`: typings.csstype.csstypeStrings.`[cellspacing]` = this.cast("[cellspacing]")
+  def LeftsquarebracketcellspacingRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcellspacingRightsquarebracket = this.cast("[cellspacing]")
   @scala.inline
-  def `[char]`: typings.csstype.csstypeStrings.`[char]` = this.cast("[char]")
+  def LeftsquarebracketcharRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcharRightsquarebracket = this.cast("[char]")
   @scala.inline
-  def `[charoff]`: typings.csstype.csstypeStrings.`[charoff]` = this.cast("[charoff]")
+  def LeftsquarebracketcharoffRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcharoffRightsquarebracket = this.cast("[charoff]")
   @scala.inline
-  def `[charset]`: typings.csstype.csstypeStrings.`[charset]` = this.cast("[charset]")
+  def LeftsquarebracketcharsetRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcharsetRightsquarebracket = this.cast("[charset]")
   @scala.inline
-  def `[checked]`: typings.csstype.csstypeStrings.`[checked]` = this.cast("[checked]")
+  def LeftsquarebracketcheckedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcheckedRightsquarebracket = this.cast("[checked]")
   @scala.inline
-  def `[cite]`: typings.csstype.csstypeStrings.`[cite]` = this.cast("[cite]")
+  def LeftsquarebracketciteRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketciteRightsquarebracket = this.cast("[cite]")
   @scala.inline
-  def `[class]`: typings.csstype.csstypeStrings.`[class]` = this.cast("[class]")
+  def LeftsquarebracketclassRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketclassRightsquarebracket = this.cast("[class]")
   @scala.inline
-  def `[classid]`: typings.csstype.csstypeStrings.`[classid]` = this.cast("[classid]")
+  def LeftsquarebracketclassidRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketclassidRightsquarebracket = this.cast("[classid]")
   @scala.inline
-  def `[clear]`: typings.csstype.csstypeStrings.`[clear]` = this.cast("[clear]")
+  def LeftsquarebracketclearRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketclearRightsquarebracket = this.cast("[clear]")
   @scala.inline
-  def `[code]`: typings.csstype.csstypeStrings.`[code]` = this.cast("[code]")
+  def LeftsquarebracketcodeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcodeRightsquarebracket = this.cast("[code]")
   @scala.inline
-  def `[codebase]`: typings.csstype.csstypeStrings.`[codebase]` = this.cast("[codebase]")
+  def LeftsquarebracketcodebaseRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcodebaseRightsquarebracket = this.cast("[codebase]")
   @scala.inline
-  def `[codetype]`: typings.csstype.csstypeStrings.`[codetype]` = this.cast("[codetype]")
+  def LeftsquarebracketcodetypeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcodetypeRightsquarebracket = this.cast("[codetype]")
   @scala.inline
-  def `[color]`: typings.csstype.csstypeStrings.`[color]` = this.cast("[color]")
+  def LeftsquarebracketcolorRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcolorRightsquarebracket = this.cast("[color]")
   @scala.inline
-  def `[cols]`: typings.csstype.csstypeStrings.`[cols]` = this.cast("[cols]")
+  def LeftsquarebracketcolsRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcolsRightsquarebracket = this.cast("[cols]")
   @scala.inline
-  def `[colspan]`: typings.csstype.csstypeStrings.`[colspan]` = this.cast("[colspan]")
+  def LeftsquarebracketcolspanRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcolspanRightsquarebracket = this.cast("[colspan]")
   @scala.inline
-  def `[command]`: typings.csstype.csstypeStrings.`[command]` = this.cast("[command]")
+  def LeftsquarebracketcommandRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcommandRightsquarebracket = this.cast("[command]")
   @scala.inline
-  def `[compact]`: typings.csstype.csstypeStrings.`[compact]` = this.cast("[compact]")
+  def LeftsquarebracketcompactRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcompactRightsquarebracket = this.cast("[compact]")
   @scala.inline
-  def `[content]`: typings.csstype.csstypeStrings.`[content]` = this.cast("[content]")
+  def LeftsquarebracketcontentRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcontentRightsquarebracket = this.cast("[content]")
   @scala.inline
-  def `[contenteditable]`: typings.csstype.csstypeStrings.`[contenteditable]` = this.cast("[contenteditable]")
+  def LeftsquarebracketcontenteditableRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcontenteditableRightsquarebracket = this.cast("[contenteditable]")
   @scala.inline
-  def `[contextmenu]`: typings.csstype.csstypeStrings.`[contextmenu]` = this.cast("[contextmenu]")
+  def LeftsquarebracketcontextmenuRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcontextmenuRightsquarebracket = this.cast("[contextmenu]")
   @scala.inline
-  def `[controls]`: typings.csstype.csstypeStrings.`[controls]` = this.cast("[controls]")
+  def LeftsquarebracketcontrolsRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcontrolsRightsquarebracket = this.cast("[controls]")
   @scala.inline
-  def `[coords]`: typings.csstype.csstypeStrings.`[coords]` = this.cast("[coords]")
+  def LeftsquarebracketcoordsRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcoordsRightsquarebracket = this.cast("[coords]")
   @scala.inline
-  def `[crossorigin]`: typings.csstype.csstypeStrings.`[crossorigin]` = this.cast("[crossorigin]")
+  def LeftsquarebracketcrossoriginRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketcrossoriginRightsquarebracket = this.cast("[crossorigin]")
   @scala.inline
-  def `[data]`: typings.csstype.csstypeStrings.`[data]` = this.cast("[data]")
+  def LeftsquarebracketdataRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdataRightsquarebracket = this.cast("[data]")
   @scala.inline
-  def `[datafld]`: typings.csstype.csstypeStrings.`[datafld]` = this.cast("[datafld]")
+  def LeftsquarebracketdatafldRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdatafldRightsquarebracket = this.cast("[datafld]")
   @scala.inline
-  def `[datasrc]`: typings.csstype.csstypeStrings.`[datasrc]` = this.cast("[datasrc]")
+  def LeftsquarebracketdatasrcRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdatasrcRightsquarebracket = this.cast("[datasrc]")
   @scala.inline
-  def `[datetime]`: typings.csstype.csstypeStrings.`[datetime]` = this.cast("[datetime]")
+  def LeftsquarebracketdatetimeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdatetimeRightsquarebracket = this.cast("[datetime]")
   @scala.inline
-  def `[declare]`: typings.csstype.csstypeStrings.`[declare]` = this.cast("[declare]")
+  def LeftsquarebracketdeclareRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdeclareRightsquarebracket = this.cast("[declare]")
   @scala.inline
-  def `[decoding]`: typings.csstype.csstypeStrings.`[decoding]` = this.cast("[decoding]")
+  def LeftsquarebracketdecodingRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdecodingRightsquarebracket = this.cast("[decoding]")
   @scala.inline
-  def `[default]`: typings.csstype.csstypeStrings.`[default]` = this.cast("[default]")
+  def LeftsquarebracketdefaultRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdefaultRightsquarebracket = this.cast("[default]")
   @scala.inline
-  def `[defer]`: typings.csstype.csstypeStrings.`[defer]` = this.cast("[defer]")
+  def LeftsquarebracketdeferRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdeferRightsquarebracket = this.cast("[defer]")
   @scala.inline
-  def `[dir]`: typings.csstype.csstypeStrings.`[dir]` = this.cast("[dir]")
+  def LeftsquarebracketdirRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdirRightsquarebracket = this.cast("[dir]")
   @scala.inline
-  def `[direction]`: typings.csstype.csstypeStrings.`[direction]` = this.cast("[direction]")
+  def LeftsquarebracketdirectionRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdirectionRightsquarebracket = this.cast("[direction]")
   @scala.inline
-  def `[disabled]`: typings.csstype.csstypeStrings.`[disabled]` = this.cast("[disabled]")
+  def LeftsquarebracketdisabledRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdisabledRightsquarebracket = this.cast("[disabled]")
   @scala.inline
-  def `[download]`: typings.csstype.csstypeStrings.`[download]` = this.cast("[download]")
+  def LeftsquarebracketdownloadRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdownloadRightsquarebracket = this.cast("[download]")
   @scala.inline
-  def `[draggable]`: typings.csstype.csstypeStrings.`[draggable]` = this.cast("[draggable]")
+  def LeftsquarebracketdraggableRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdraggableRightsquarebracket = this.cast("[draggable]")
   @scala.inline
-  def `[dropzone]`: typings.csstype.csstypeStrings.`[dropzone]` = this.cast("[dropzone]")
+  def LeftsquarebracketdropzoneRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketdropzoneRightsquarebracket = this.cast("[dropzone]")
   @scala.inline
-  def `[enctype]`: typings.csstype.csstypeStrings.`[enctype]` = this.cast("[enctype]")
+  def LeftsquarebracketenctypeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketenctypeRightsquarebracket = this.cast("[enctype]")
   @scala.inline
-  def `[exportparts]`: typings.csstype.csstypeStrings.`[exportparts]` = this.cast("[exportparts]")
+  def LeftsquarebracketexportpartsRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketexportpartsRightsquarebracket = this.cast("[exportparts]")
   @scala.inline
-  def `[face]`: typings.csstype.csstypeStrings.`[face]` = this.cast("[face]")
+  def LeftsquarebracketfaceRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketfaceRightsquarebracket = this.cast("[face]")
   @scala.inline
-  def `[for]`: typings.csstype.csstypeStrings.`[for]` = this.cast("[for]")
+  def LeftsquarebracketforRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketforRightsquarebracket = this.cast("[for]")
   @scala.inline
-  def `[form]`: typings.csstype.csstypeStrings.`[form]` = this.cast("[form]")
+  def LeftsquarebracketformRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketformRightsquarebracket = this.cast("[form]")
   @scala.inline
-  def `[formaction]`: typings.csstype.csstypeStrings.`[formaction]` = this.cast("[formaction]")
+  def LeftsquarebracketformactionRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketformactionRightsquarebracket = this.cast("[formaction]")
   @scala.inline
-  def `[formenctype]`: typings.csstype.csstypeStrings.`[formenctype]` = this.cast("[formenctype]")
+  def LeftsquarebracketformenctypeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketformenctypeRightsquarebracket = this.cast("[formenctype]")
   @scala.inline
-  def `[formmethod]`: typings.csstype.csstypeStrings.`[formmethod]` = this.cast("[formmethod]")
+  def LeftsquarebracketformmethodRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketformmethodRightsquarebracket = this.cast("[formmethod]")
   @scala.inline
-  def `[formnovalidate]`: typings.csstype.csstypeStrings.`[formnovalidate]` = this.cast("[formnovalidate]")
+  def LeftsquarebracketformnovalidateRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketformnovalidateRightsquarebracket = this.cast("[formnovalidate]")
   @scala.inline
-  def `[formtarget]`: typings.csstype.csstypeStrings.`[formtarget]` = this.cast("[formtarget]")
+  def LeftsquarebracketformtargetRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketformtargetRightsquarebracket = this.cast("[formtarget]")
   @scala.inline
-  def `[frame]`: typings.csstype.csstypeStrings.`[frame]` = this.cast("[frame]")
+  def LeftsquarebracketframeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketframeRightsquarebracket = this.cast("[frame]")
   @scala.inline
-  def `[frameborder]`: typings.csstype.csstypeStrings.`[frameborder]` = this.cast("[frameborder]")
+  def LeftsquarebracketframeborderRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketframeborderRightsquarebracket = this.cast("[frameborder]")
   @scala.inline
-  def `[headers]`: typings.csstype.csstypeStrings.`[headers]` = this.cast("[headers]")
+  def LeftsquarebracketheadersRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketheadersRightsquarebracket = this.cast("[headers]")
   @scala.inline
-  def `[height]`: typings.csstype.csstypeStrings.`[height]` = this.cast("[height]")
+  def LeftsquarebracketheightRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketheightRightsquarebracket = this.cast("[height]")
   @scala.inline
-  def `[hidden]`: typings.csstype.csstypeStrings.`[hidden]` = this.cast("[hidden]")
+  def LeftsquarebrackethiddenRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackethiddenRightsquarebracket = this.cast("[hidden]")
   @scala.inline
-  def `[high]`: typings.csstype.csstypeStrings.`[high]` = this.cast("[high]")
+  def LeftsquarebrackethighRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackethighRightsquarebracket = this.cast("[high]")
   @scala.inline
-  def `[href]`: typings.csstype.csstypeStrings.`[href]` = this.cast("[href]")
+  def LeftsquarebrackethrefRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackethrefRightsquarebracket = this.cast("[href]")
   @scala.inline
-  def `[hreflang]`: typings.csstype.csstypeStrings.`[hreflang]` = this.cast("[hreflang]")
+  def LeftsquarebrackethreflangRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackethreflangRightsquarebracket = this.cast("[hreflang]")
   @scala.inline
-  def `[hspace]`: typings.csstype.csstypeStrings.`[hspace]` = this.cast("[hspace]")
+  def LeftsquarebrackethspaceRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackethspaceRightsquarebracket = this.cast("[hspace]")
   @scala.inline
-  def `[http-equiv]`: typings.csstype.csstypeStrings.`[http-equiv]` = this.cast("[http-equiv]")
+  def `Leftsquarebrackethttp-equivRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebrackethttp-equivRightsquarebracket` = this.cast("[http-equiv]")
   @scala.inline
-  def `[icon]`: typings.csstype.csstypeStrings.`[icon]` = this.cast("[icon]")
+  def LeftsquarebracketiconRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketiconRightsquarebracket = this.cast("[icon]")
   @scala.inline
-  def `[id]`: typings.csstype.csstypeStrings.`[id]` = this.cast("[id]")
+  def LeftsquarebracketidRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketidRightsquarebracket = this.cast("[id]")
   @scala.inline
-  def `[inputmode]`: typings.csstype.csstypeStrings.`[inputmode]` = this.cast("[inputmode]")
+  def LeftsquarebracketinputmodeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketinputmodeRightsquarebracket = this.cast("[inputmode]")
   @scala.inline
-  def `[integrity]`: typings.csstype.csstypeStrings.`[integrity]` = this.cast("[integrity]")
+  def LeftsquarebracketintegrityRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketintegrityRightsquarebracket = this.cast("[integrity]")
   @scala.inline
-  def `[intrinsicsize]`: typings.csstype.csstypeStrings.`[intrinsicsize]` = this.cast("[intrinsicsize]")
+  def LeftsquarebracketintrinsicsizeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketintrinsicsizeRightsquarebracket = this.cast("[intrinsicsize]")
   @scala.inline
-  def `[is]`: typings.csstype.csstypeStrings.`[is]` = this.cast("[is]")
+  def LeftsquarebracketisRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketisRightsquarebracket = this.cast("[is]")
   @scala.inline
-  def `[ismap]`: typings.csstype.csstypeStrings.`[ismap]` = this.cast("[ismap]")
+  def LeftsquarebracketismapRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketismapRightsquarebracket = this.cast("[ismap]")
   @scala.inline
-  def `[itemid]`: typings.csstype.csstypeStrings.`[itemid]` = this.cast("[itemid]")
+  def LeftsquarebracketitemidRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketitemidRightsquarebracket = this.cast("[itemid]")
   @scala.inline
-  def `[itemprop]`: typings.csstype.csstypeStrings.`[itemprop]` = this.cast("[itemprop]")
+  def LeftsquarebracketitempropRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketitempropRightsquarebracket = this.cast("[itemprop]")
   @scala.inline
-  def `[itemref]`: typings.csstype.csstypeStrings.`[itemref]` = this.cast("[itemref]")
+  def LeftsquarebracketitemrefRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketitemrefRightsquarebracket = this.cast("[itemref]")
   @scala.inline
-  def `[itemscope]`: typings.csstype.csstypeStrings.`[itemscope]` = this.cast("[itemscope]")
+  def LeftsquarebracketitemscopeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketitemscopeRightsquarebracket = this.cast("[itemscope]")
   @scala.inline
-  def `[itemtype]`: typings.csstype.csstypeStrings.`[itemtype]` = this.cast("[itemtype]")
+  def LeftsquarebracketitemtypeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketitemtypeRightsquarebracket = this.cast("[itemtype]")
   @scala.inline
-  def `[kind]`: typings.csstype.csstypeStrings.`[kind]` = this.cast("[kind]")
+  def LeftsquarebracketkindRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketkindRightsquarebracket = this.cast("[kind]")
   @scala.inline
-  def `[label]`: typings.csstype.csstypeStrings.`[label]` = this.cast("[label]")
+  def LeftsquarebracketlabelRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketlabelRightsquarebracket = this.cast("[label]")
   @scala.inline
-  def `[lang]`: typings.csstype.csstypeStrings.`[lang]` = this.cast("[lang]")
+  def LeftsquarebracketlangRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketlangRightsquarebracket = this.cast("[lang]")
   @scala.inline
-  def `[language]`: typings.csstype.csstypeStrings.`[language]` = this.cast("[language]")
+  def LeftsquarebracketlanguageRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketlanguageRightsquarebracket = this.cast("[language]")
   @scala.inline
-  def `[leftmargin]`: typings.csstype.csstypeStrings.`[leftmargin]` = this.cast("[leftmargin]")
+  def LeftsquarebracketleftmarginRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketleftmarginRightsquarebracket = this.cast("[leftmargin]")
   @scala.inline
-  def `[link]`: typings.csstype.csstypeStrings.`[link]` = this.cast("[link]")
+  def LeftsquarebracketlinkRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketlinkRightsquarebracket = this.cast("[link]")
   @scala.inline
-  def `[longdesc]`: typings.csstype.csstypeStrings.`[longdesc]` = this.cast("[longdesc]")
+  def LeftsquarebracketlongdescRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketlongdescRightsquarebracket = this.cast("[longdesc]")
   @scala.inline
-  def `[loop]`: typings.csstype.csstypeStrings.`[loop]` = this.cast("[loop]")
+  def LeftsquarebracketloopRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketloopRightsquarebracket = this.cast("[loop]")
   @scala.inline
-  def `[low]`: typings.csstype.csstypeStrings.`[low]` = this.cast("[low]")
+  def LeftsquarebracketlowRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketlowRightsquarebracket = this.cast("[low]")
   @scala.inline
-  def `[manifest]`: typings.csstype.csstypeStrings.`[manifest]` = this.cast("[manifest]")
+  def LeftsquarebracketmanifestRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmanifestRightsquarebracket = this.cast("[manifest]")
   @scala.inline
-  def `[marginheight]`: typings.csstype.csstypeStrings.`[marginheight]` = this.cast("[marginheight]")
+  def LeftsquarebracketmarginheightRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmarginheightRightsquarebracket = this.cast("[marginheight]")
   @scala.inline
-  def `[marginwidth]`: typings.csstype.csstypeStrings.`[marginwidth]` = this.cast("[marginwidth]")
+  def LeftsquarebracketmarginwidthRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmarginwidthRightsquarebracket = this.cast("[marginwidth]")
   @scala.inline
-  def `[max]`: typings.csstype.csstypeStrings.`[max]` = this.cast("[max]")
+  def LeftsquarebracketmaxRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmaxRightsquarebracket = this.cast("[max]")
   @scala.inline
-  def `[maxlength]`: typings.csstype.csstypeStrings.`[maxlength]` = this.cast("[maxlength]")
+  def LeftsquarebracketmaxlengthRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmaxlengthRightsquarebracket = this.cast("[maxlength]")
   @scala.inline
-  def `[mayscript]`: typings.csstype.csstypeStrings.`[mayscript]` = this.cast("[mayscript]")
+  def LeftsquarebracketmayscriptRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmayscriptRightsquarebracket = this.cast("[mayscript]")
   @scala.inline
-  def `[media]`: typings.csstype.csstypeStrings.`[media]` = this.cast("[media]")
+  def LeftsquarebracketmediaRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmediaRightsquarebracket = this.cast("[media]")
   @scala.inline
-  def `[method]`: typings.csstype.csstypeStrings.`[method]` = this.cast("[method]")
+  def LeftsquarebracketmethodRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmethodRightsquarebracket = this.cast("[method]")
   @scala.inline
-  def `[methods]`: typings.csstype.csstypeStrings.`[methods]` = this.cast("[methods]")
+  def LeftsquarebracketmethodsRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmethodsRightsquarebracket = this.cast("[methods]")
   @scala.inline
-  def `[min]`: typings.csstype.csstypeStrings.`[min]` = this.cast("[min]")
+  def LeftsquarebracketminRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketminRightsquarebracket = this.cast("[min]")
   @scala.inline
-  def `[minlength]`: typings.csstype.csstypeStrings.`[minlength]` = this.cast("[minlength]")
+  def LeftsquarebracketminlengthRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketminlengthRightsquarebracket = this.cast("[minlength]")
   @scala.inline
-  def `[moz-opaque]`: typings.csstype.csstypeStrings.`[moz-opaque]` = this.cast("[moz-opaque]")
+  def `Leftsquarebracketmoz-opaqueRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketmoz-opaqueRightsquarebracket` = this.cast("[moz-opaque]")
   @scala.inline
-  def `[mozallowfullscreen]`: typings.csstype.csstypeStrings.`[mozallowfullscreen]` = this.cast("[mozallowfullscreen]")
+  def LeftsquarebracketmozallowfullscreenRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmozallowfullscreenRightsquarebracket = this.cast("[mozallowfullscreen]")
   @scala.inline
-  def `[mozbrowser]`: typings.csstype.csstypeStrings.`[mozbrowser]` = this.cast("[mozbrowser]")
+  def LeftsquarebracketmozbrowserRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmozbrowserRightsquarebracket = this.cast("[mozbrowser]")
   @scala.inline
-  def `[mozcurrentsampleoffset]`: typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]` = this.cast("[mozcurrentsampleoffset]")
+  def LeftsquarebracketmozcurrentsampleoffsetRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmozcurrentsampleoffsetRightsquarebracket = this.cast("[mozcurrentsampleoffset]")
   @scala.inline
-  def `[msallowfullscreen]`: typings.csstype.csstypeStrings.`[msallowfullscreen]` = this.cast("[msallowfullscreen]")
+  def LeftsquarebracketmsallowfullscreenRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmsallowfullscreenRightsquarebracket = this.cast("[msallowfullscreen]")
   @scala.inline
-  def `[multiple]`: typings.csstype.csstypeStrings.`[multiple]` = this.cast("[multiple]")
+  def LeftsquarebracketmultipleRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmultipleRightsquarebracket = this.cast("[multiple]")
   @scala.inline
-  def `[muted]`: typings.csstype.csstypeStrings.`[muted]` = this.cast("[muted]")
+  def LeftsquarebracketmutedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketmutedRightsquarebracket = this.cast("[muted]")
   @scala.inline
-  def `[name]`: typings.csstype.csstypeStrings.`[name]` = this.cast("[name]")
+  def LeftsquarebracketnameRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketnameRightsquarebracket = this.cast("[name]")
   @scala.inline
-  def `[nohref]`: typings.csstype.csstypeStrings.`[nohref]` = this.cast("[nohref]")
+  def LeftsquarebracketnohrefRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketnohrefRightsquarebracket = this.cast("[nohref]")
   @scala.inline
-  def `[nomodule]`: typings.csstype.csstypeStrings.`[nomodule]` = this.cast("[nomodule]")
+  def LeftsquarebracketnomoduleRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketnomoduleRightsquarebracket = this.cast("[nomodule]")
   @scala.inline
-  def `[noresize]`: typings.csstype.csstypeStrings.`[noresize]` = this.cast("[noresize]")
+  def LeftsquarebracketnoresizeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketnoresizeRightsquarebracket = this.cast("[noresize]")
   @scala.inline
-  def `[noshade]`: typings.csstype.csstypeStrings.`[noshade]` = this.cast("[noshade]")
+  def LeftsquarebracketnoshadeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketnoshadeRightsquarebracket = this.cast("[noshade]")
   @scala.inline
-  def `[novalidate]`: typings.csstype.csstypeStrings.`[novalidate]` = this.cast("[novalidate]")
+  def LeftsquarebracketnovalidateRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketnovalidateRightsquarebracket = this.cast("[novalidate]")
   @scala.inline
-  def `[nowrap]`: typings.csstype.csstypeStrings.`[nowrap]` = this.cast("[nowrap]")
+  def LeftsquarebracketnowrapRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketnowrapRightsquarebracket = this.cast("[nowrap]")
   @scala.inline
-  def `[object]`: typings.csstype.csstypeStrings.`[object]` = this.cast("[object]")
+  def LeftsquarebracketobjectRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketobjectRightsquarebracket = this.cast("[object]")
   @scala.inline
-  def `[onafterprint]`: typings.csstype.csstypeStrings.`[onafterprint]` = this.cast("[onafterprint]")
+  def LeftsquarebracketonafterprintRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonafterprintRightsquarebracket = this.cast("[onafterprint]")
   @scala.inline
-  def `[onbeforeprint]`: typings.csstype.csstypeStrings.`[onbeforeprint]` = this.cast("[onbeforeprint]")
+  def LeftsquarebracketonbeforeprintRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonbeforeprintRightsquarebracket = this.cast("[onbeforeprint]")
   @scala.inline
-  def `[onbeforeunload]`: typings.csstype.csstypeStrings.`[onbeforeunload]` = this.cast("[onbeforeunload]")
+  def LeftsquarebracketonbeforeunloadRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonbeforeunloadRightsquarebracket = this.cast("[onbeforeunload]")
   @scala.inline
-  def `[onblur]`: typings.csstype.csstypeStrings.`[onblur]` = this.cast("[onblur]")
+  def LeftsquarebracketonblurRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonblurRightsquarebracket = this.cast("[onblur]")
   @scala.inline
-  def `[onerror]`: typings.csstype.csstypeStrings.`[onerror]` = this.cast("[onerror]")
+  def LeftsquarebracketonerrorRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonerrorRightsquarebracket = this.cast("[onerror]")
   @scala.inline
-  def `[onfocus]`: typings.csstype.csstypeStrings.`[onfocus]` = this.cast("[onfocus]")
+  def LeftsquarebracketonfocusRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonfocusRightsquarebracket = this.cast("[onfocus]")
   @scala.inline
-  def `[onhashchange]`: typings.csstype.csstypeStrings.`[onhashchange]` = this.cast("[onhashchange]")
+  def LeftsquarebracketonhashchangeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonhashchangeRightsquarebracket = this.cast("[onhashchange]")
   @scala.inline
-  def `[onlanguagechange]`: typings.csstype.csstypeStrings.`[onlanguagechange]` = this.cast("[onlanguagechange]")
+  def LeftsquarebracketonlanguagechangeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonlanguagechangeRightsquarebracket = this.cast("[onlanguagechange]")
   @scala.inline
-  def `[onload]`: typings.csstype.csstypeStrings.`[onload]` = this.cast("[onload]")
+  def LeftsquarebracketonloadRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonloadRightsquarebracket = this.cast("[onload]")
   @scala.inline
-  def `[onmessage]`: typings.csstype.csstypeStrings.`[onmessage]` = this.cast("[onmessage]")
+  def LeftsquarebracketonmessageRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonmessageRightsquarebracket = this.cast("[onmessage]")
   @scala.inline
-  def `[onoffline]`: typings.csstype.csstypeStrings.`[onoffline]` = this.cast("[onoffline]")
+  def LeftsquarebracketonofflineRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonofflineRightsquarebracket = this.cast("[onoffline]")
   @scala.inline
-  def `[ononline]`: typings.csstype.csstypeStrings.`[ononline]` = this.cast("[ononline]")
+  def LeftsquarebracketononlineRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketononlineRightsquarebracket = this.cast("[ononline]")
   @scala.inline
-  def `[onpopstate]`: typings.csstype.csstypeStrings.`[onpopstate]` = this.cast("[onpopstate]")
+  def LeftsquarebracketonpopstateRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonpopstateRightsquarebracket = this.cast("[onpopstate]")
   @scala.inline
-  def `[onredo]`: typings.csstype.csstypeStrings.`[onredo]` = this.cast("[onredo]")
+  def LeftsquarebracketonredoRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonredoRightsquarebracket = this.cast("[onredo]")
   @scala.inline
-  def `[onresize]`: typings.csstype.csstypeStrings.`[onresize]` = this.cast("[onresize]")
+  def LeftsquarebracketonresizeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonresizeRightsquarebracket = this.cast("[onresize]")
   @scala.inline
-  def `[onstorage]`: typings.csstype.csstypeStrings.`[onstorage]` = this.cast("[onstorage]")
+  def LeftsquarebracketonstorageRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonstorageRightsquarebracket = this.cast("[onstorage]")
   @scala.inline
-  def `[onundo]`: typings.csstype.csstypeStrings.`[onundo]` = this.cast("[onundo]")
+  def LeftsquarebracketonundoRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonundoRightsquarebracket = this.cast("[onundo]")
   @scala.inline
-  def `[onunload]`: typings.csstype.csstypeStrings.`[onunload]` = this.cast("[onunload]")
+  def LeftsquarebracketonunloadRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketonunloadRightsquarebracket = this.cast("[onunload]")
   @scala.inline
-  def `[open]`: typings.csstype.csstypeStrings.`[open]` = this.cast("[open]")
+  def LeftsquarebracketopenRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketopenRightsquarebracket = this.cast("[open]")
   @scala.inline
-  def `[optimum]`: typings.csstype.csstypeStrings.`[optimum]` = this.cast("[optimum]")
+  def LeftsquarebracketoptimumRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketoptimumRightsquarebracket = this.cast("[optimum]")
   @scala.inline
-  def `[part]`: typings.csstype.csstypeStrings.`[part]` = this.cast("[part]")
+  def LeftsquarebracketpartRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketpartRightsquarebracket = this.cast("[part]")
   @scala.inline
-  def `[ping]`: typings.csstype.csstypeStrings.`[ping]` = this.cast("[ping]")
+  def LeftsquarebracketpingRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketpingRightsquarebracket = this.cast("[ping]")
   @scala.inline
-  def `[placeholder]`: typings.csstype.csstypeStrings.`[placeholder]` = this.cast("[placeholder]")
+  def LeftsquarebracketplaceholderRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketplaceholderRightsquarebracket = this.cast("[placeholder]")
   @scala.inline
-  def `[played]`: typings.csstype.csstypeStrings.`[played]` = this.cast("[played]")
+  def LeftsquarebracketplayedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketplayedRightsquarebracket = this.cast("[played]")
   @scala.inline
-  def `[poster]`: typings.csstype.csstypeStrings.`[poster]` = this.cast("[poster]")
+  def LeftsquarebracketposterRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketposterRightsquarebracket = this.cast("[poster]")
   @scala.inline
-  def `[prefetch]`: typings.csstype.csstypeStrings.`[prefetch]` = this.cast("[prefetch]")
+  def LeftsquarebracketprefetchRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketprefetchRightsquarebracket = this.cast("[prefetch]")
   @scala.inline
-  def `[preload]`: typings.csstype.csstypeStrings.`[preload]` = this.cast("[preload]")
+  def LeftsquarebracketpreloadRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketpreloadRightsquarebracket = this.cast("[preload]")
   @scala.inline
-  def `[profile]`: typings.csstype.csstypeStrings.`[profile]` = this.cast("[profile]")
+  def LeftsquarebracketprofileRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketprofileRightsquarebracket = this.cast("[profile]")
   @scala.inline
-  def `[prompt]`: typings.csstype.csstypeStrings.`[prompt]` = this.cast("[prompt]")
+  def LeftsquarebracketpromptRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketpromptRightsquarebracket = this.cast("[prompt]")
   @scala.inline
-  def `[radiogroup]`: typings.csstype.csstypeStrings.`[radiogroup]` = this.cast("[radiogroup]")
+  def LeftsquarebracketradiogroupRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketradiogroupRightsquarebracket = this.cast("[radiogroup]")
   @scala.inline
-  def `[readonly]`: typings.csstype.csstypeStrings.`[readonly]` = this.cast("[readonly]")
+  def LeftsquarebracketreadonlyRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketreadonlyRightsquarebracket = this.cast("[readonly]")
   @scala.inline
-  def `[referrerPolicy]`: typings.csstype.csstypeStrings.`[referrerPolicy]` = this.cast("[referrerPolicy]")
+  def LeftsquarebracketreferrerPolicyRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketreferrerPolicyRightsquarebracket = this.cast("[referrerPolicy]")
   @scala.inline
-  def `[referrerpolicy]`: `[referrerpolicy]_` = this.cast("[referrerpolicy]")
+  def LeftsquarebracketreferrerpolicyRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketreferrerpolicyRightsquarebracket = this.cast("[referrerpolicy]")
   @scala.inline
-  def `[rel]`: typings.csstype.csstypeStrings.`[rel]` = this.cast("[rel]")
+  def LeftsquarebracketrelRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketrelRightsquarebracket = this.cast("[rel]")
   @scala.inline
-  def `[required]`: typings.csstype.csstypeStrings.`[required]` = this.cast("[required]")
+  def LeftsquarebracketrequiredRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketrequiredRightsquarebracket = this.cast("[required]")
   @scala.inline
-  def `[rev]`: typings.csstype.csstypeStrings.`[rev]` = this.cast("[rev]")
+  def LeftsquarebracketrevRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketrevRightsquarebracket = this.cast("[rev]")
   @scala.inline
-  def `[reversed]`: typings.csstype.csstypeStrings.`[reversed]` = this.cast("[reversed]")
+  def LeftsquarebracketreversedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketreversedRightsquarebracket = this.cast("[reversed]")
   @scala.inline
-  def `[rightmargin]`: typings.csstype.csstypeStrings.`[rightmargin]` = this.cast("[rightmargin]")
+  def LeftsquarebracketrightmarginRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketrightmarginRightsquarebracket = this.cast("[rightmargin]")
   @scala.inline
-  def `[rows]`: typings.csstype.csstypeStrings.`[rows]` = this.cast("[rows]")
+  def LeftsquarebracketrowsRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketrowsRightsquarebracket = this.cast("[rows]")
   @scala.inline
-  def `[rowspan]`: typings.csstype.csstypeStrings.`[rowspan]` = this.cast("[rowspan]")
+  def LeftsquarebracketrowspanRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketrowspanRightsquarebracket = this.cast("[rowspan]")
   @scala.inline
-  def `[rules]`: typings.csstype.csstypeStrings.`[rules]` = this.cast("[rules]")
+  def LeftsquarebracketrulesRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketrulesRightsquarebracket = this.cast("[rules]")
   @scala.inline
-  def `[sandbox-allow-modals]`: typings.csstype.csstypeStrings.`[sandbox-allow-modals]` = this.cast("[sandbox-allow-modals]")
+  def `Leftsquarebracketsandbox-allow-modalsRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-modalsRightsquarebracket` = this.cast("[sandbox-allow-modals]")
   @scala.inline
-  def `[sandbox-allow-popups-to-escape-sandbox]`: typings.csstype.csstypeStrings.`[sandbox-allow-popups-to-escape-sandbox]` = this.cast("[sandbox-allow-popups-to-escape-sandbox]")
+  def `Leftsquarebracketsandbox-allow-popups-to-escape-sandboxRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-popups-to-escape-sandboxRightsquarebracket` = this.cast("[sandbox-allow-popups-to-escape-sandbox]")
   @scala.inline
-  def `[sandbox-allow-popups]`: typings.csstype.csstypeStrings.`[sandbox-allow-popups]` = this.cast("[sandbox-allow-popups]")
+  def `Leftsquarebracketsandbox-allow-popupsRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-popupsRightsquarebracket` = this.cast("[sandbox-allow-popups]")
   @scala.inline
-  def `[sandbox-allow-presentation]`: typings.csstype.csstypeStrings.`[sandbox-allow-presentation]` = this.cast("[sandbox-allow-presentation]")
+  def `Leftsquarebracketsandbox-allow-presentationRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-presentationRightsquarebracket` = this.cast("[sandbox-allow-presentation]")
   @scala.inline
-  def `[sandbox-allow-storage-access-by-user-activation]`: typings.csstype.csstypeStrings.`[sandbox-allow-storage-access-by-user-activation]` = this.cast("[sandbox-allow-storage-access-by-user-activation]")
+  def `Leftsquarebracketsandbox-allow-storage-access-by-user-activationRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-storage-access-by-user-activationRightsquarebracket` = this.cast("[sandbox-allow-storage-access-by-user-activation]")
   @scala.inline
-  def `[sandbox-allow-top-navigation-by-user-activation]`: typings.csstype.csstypeStrings.`[sandbox-allow-top-navigation-by-user-activation]` = this.cast("[sandbox-allow-top-navigation-by-user-activation]")
+  def `Leftsquarebracketsandbox-allow-top-navigation-by-user-activationRightsquarebracket`: typings.csstype.csstypeStrings.`Leftsquarebracketsandbox-allow-top-navigation-by-user-activationRightsquarebracket` = this.cast("[sandbox-allow-top-navigation-by-user-activation]")
   @scala.inline
-  def `[sandbox]`: typings.csstype.csstypeStrings.`[sandbox]` = this.cast("[sandbox]")
+  def LeftsquarebracketsandboxRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsandboxRightsquarebracket = this.cast("[sandbox]")
   @scala.inline
-  def `[scope]`: typings.csstype.csstypeStrings.`[scope]` = this.cast("[scope]")
+  def LeftsquarebracketscopeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketscopeRightsquarebracket = this.cast("[scope]")
   @scala.inline
-  def `[scoped]`: typings.csstype.csstypeStrings.`[scoped]` = this.cast("[scoped]")
+  def LeftsquarebracketscopedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketscopedRightsquarebracket = this.cast("[scoped]")
   @scala.inline
-  def `[scrollamount]`: typings.csstype.csstypeStrings.`[scrollamount]` = this.cast("[scrollamount]")
+  def LeftsquarebracketscrollamountRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketscrollamountRightsquarebracket = this.cast("[scrollamount]")
   @scala.inline
-  def `[scrolldelay]`: typings.csstype.csstypeStrings.`[scrolldelay]` = this.cast("[scrolldelay]")
+  def LeftsquarebracketscrolldelayRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketscrolldelayRightsquarebracket = this.cast("[scrolldelay]")
   @scala.inline
-  def `[scrolling]`: typings.csstype.csstypeStrings.`[scrolling]` = this.cast("[scrolling]")
+  def LeftsquarebracketscrollingRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketscrollingRightsquarebracket = this.cast("[scrolling]")
   @scala.inline
-  def `[selected]`: typings.csstype.csstypeStrings.`[selected]` = this.cast("[selected]")
+  def LeftsquarebracketselectedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketselectedRightsquarebracket = this.cast("[selected]")
   @scala.inline
-  def `[shape]`: typings.csstype.csstypeStrings.`[shape]` = this.cast("[shape]")
+  def LeftsquarebracketshapeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketshapeRightsquarebracket = this.cast("[shape]")
   @scala.inline
-  def `[size]`: typings.csstype.csstypeStrings.`[size]` = this.cast("[size]")
+  def LeftsquarebracketsizeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsizeRightsquarebracket = this.cast("[size]")
   @scala.inline
-  def `[sizes]`: typings.csstype.csstypeStrings.`[sizes]` = this.cast("[sizes]")
+  def LeftsquarebracketsizesRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsizesRightsquarebracket = this.cast("[sizes]")
   @scala.inline
-  def `[slot]`: typings.csstype.csstypeStrings.`[slot]` = this.cast("[slot]")
+  def LeftsquarebracketslotRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketslotRightsquarebracket = this.cast("[slot]")
   @scala.inline
-  def `[span]`: typings.csstype.csstypeStrings.`[span]` = this.cast("[span]")
+  def LeftsquarebracketspanRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketspanRightsquarebracket = this.cast("[span]")
   @scala.inline
-  def `[spellcheck]`: typings.csstype.csstypeStrings.`[spellcheck]` = this.cast("[spellcheck]")
+  def LeftsquarebracketspellcheckRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketspellcheckRightsquarebracket = this.cast("[spellcheck]")
   @scala.inline
-  def `[src]`: typings.csstype.csstypeStrings.`[src]` = this.cast("[src]")
+  def LeftsquarebracketsrcRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsrcRightsquarebracket = this.cast("[src]")
   @scala.inline
-  def `[srcdoc]`: typings.csstype.csstypeStrings.`[srcdoc]` = this.cast("[srcdoc]")
+  def LeftsquarebracketsrcdocRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsrcdocRightsquarebracket = this.cast("[srcdoc]")
   @scala.inline
-  def `[srclang]`: typings.csstype.csstypeStrings.`[srclang]` = this.cast("[srclang]")
+  def LeftsquarebracketsrclangRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsrclangRightsquarebracket = this.cast("[srclang]")
   @scala.inline
-  def `[srcset]`: typings.csstype.csstypeStrings.`[srcset]` = this.cast("[srcset]")
+  def LeftsquarebracketsrcsetRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsrcsetRightsquarebracket = this.cast("[srcset]")
   @scala.inline
-  def `[standby]`: typings.csstype.csstypeStrings.`[standby]` = this.cast("[standby]")
+  def LeftsquarebracketstandbyRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketstandbyRightsquarebracket = this.cast("[standby]")
   @scala.inline
-  def `[start]`: typings.csstype.csstypeStrings.`[start]` = this.cast("[start]")
+  def LeftsquarebracketstartRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketstartRightsquarebracket = this.cast("[start]")
   @scala.inline
-  def `[style]`: typings.csstype.csstypeStrings.`[style]` = this.cast("[style]")
+  def LeftsquarebracketstyleRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketstyleRightsquarebracket = this.cast("[style]")
   @scala.inline
-  def `[summary]`: typings.csstype.csstypeStrings.`[summary]` = this.cast("[summary]")
+  def LeftsquarebracketsummaryRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketsummaryRightsquarebracket = this.cast("[summary]")
   @scala.inline
-  def `[tabindex]`: typings.csstype.csstypeStrings.`[tabindex]` = this.cast("[tabindex]")
+  def LeftsquarebrackettabindexRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettabindexRightsquarebracket = this.cast("[tabindex]")
   @scala.inline
-  def `[target]`: typings.csstype.csstypeStrings.`[target]` = this.cast("[target]")
+  def LeftsquarebrackettargetRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettargetRightsquarebracket = this.cast("[target]")
   @scala.inline
-  def `[text]`: typings.csstype.csstypeStrings.`[text]` = this.cast("[text]")
+  def LeftsquarebrackettextRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettextRightsquarebracket = this.cast("[text]")
   @scala.inline
-  def `[title]`: typings.csstype.csstypeStrings.`[title]` = this.cast("[title]")
+  def LeftsquarebrackettitleRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettitleRightsquarebracket = this.cast("[title]")
   @scala.inline
-  def `[topmargin]`: typings.csstype.csstypeStrings.`[topmargin]` = this.cast("[topmargin]")
+  def LeftsquarebrackettopmarginRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettopmarginRightsquarebracket = this.cast("[topmargin]")
   @scala.inline
-  def `[translate]`: typings.csstype.csstypeStrings.`[translate]` = this.cast("[translate]")
+  def LeftsquarebrackettranslateRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettranslateRightsquarebracket = this.cast("[translate]")
   @scala.inline
-  def `[truespeed]`: typings.csstype.csstypeStrings.`[truespeed]` = this.cast("[truespeed]")
+  def LeftsquarebrackettruespeedRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettruespeedRightsquarebracket = this.cast("[truespeed]")
   @scala.inline
-  def `[type]`: typings.csstype.csstypeStrings.`[type]` = this.cast("[type]")
+  def LeftsquarebrackettypeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettypeRightsquarebracket = this.cast("[type]")
   @scala.inline
-  def `[typemustmatch]`: typings.csstype.csstypeStrings.`[typemustmatch]` = this.cast("[typemustmatch]")
+  def LeftsquarebrackettypemustmatchRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebrackettypemustmatchRightsquarebracket = this.cast("[typemustmatch]")
   @scala.inline
-  def `[usemap]`: typings.csstype.csstypeStrings.`[usemap]` = this.cast("[usemap]")
+  def LeftsquarebracketusemapRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketusemapRightsquarebracket = this.cast("[usemap]")
   @scala.inline
-  def `[valign]`: typings.csstype.csstypeStrings.`[valign]` = this.cast("[valign]")
+  def LeftsquarebracketvalignRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketvalignRightsquarebracket = this.cast("[valign]")
   @scala.inline
-  def `[value]`: typings.csstype.csstypeStrings.`[value]` = this.cast("[value]")
+  def LeftsquarebracketvalueRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketvalueRightsquarebracket = this.cast("[value]")
   @scala.inline
-  def `[valuetype]`: typings.csstype.csstypeStrings.`[valuetype]` = this.cast("[valuetype]")
+  def LeftsquarebracketvaluetypeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketvaluetypeRightsquarebracket = this.cast("[valuetype]")
   @scala.inline
-  def `[version]`: typings.csstype.csstypeStrings.`[version]` = this.cast("[version]")
+  def LeftsquarebracketversionRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketversionRightsquarebracket = this.cast("[version]")
   @scala.inline
-  def `[vlink]`: typings.csstype.csstypeStrings.`[vlink]` = this.cast("[vlink]")
+  def LeftsquarebracketvlinkRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketvlinkRightsquarebracket = this.cast("[vlink]")
   @scala.inline
-  def `[volume]`: typings.csstype.csstypeStrings.`[volume]` = this.cast("[volume]")
+  def LeftsquarebracketvolumeRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketvolumeRightsquarebracket = this.cast("[volume]")
   @scala.inline
-  def `[vspace]`: typings.csstype.csstypeStrings.`[vspace]` = this.cast("[vspace]")
+  def LeftsquarebracketvspaceRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketvspaceRightsquarebracket = this.cast("[vspace]")
   @scala.inline
-  def `[webkitallowfullscreen]`: typings.csstype.csstypeStrings.`[webkitallowfullscreen]` = this.cast("[webkitallowfullscreen]")
+  def LeftsquarebracketwebkitallowfullscreenRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketwebkitallowfullscreenRightsquarebracket = this.cast("[webkitallowfullscreen]")
   @scala.inline
-  def `[width]`: typings.csstype.csstypeStrings.`[width]` = this.cast("[width]")
+  def LeftsquarebracketwidthRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketwidthRightsquarebracket = this.cast("[width]")
   @scala.inline
-  def `[wrap]`: typings.csstype.csstypeStrings.`[wrap]` = this.cast("[wrap]")
+  def LeftsquarebracketwrapRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketwrapRightsquarebracket = this.cast("[wrap]")
   @scala.inline
-  def `[xmlns]`: typings.csstype.csstypeStrings.`[xmlns]` = this.cast("[xmlns]")
+  def LeftsquarebracketxmlnsRightsquarebracket: typings.csstype.csstypeStrings.LeftsquarebracketxmlnsRightsquarebracket = this.cast("[xmlns]")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

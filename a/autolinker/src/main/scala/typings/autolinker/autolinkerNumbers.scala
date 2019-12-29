@@ -1,7 +1,5 @@
 package typings.autolinker
 
-import typings.autolinker.distCommonjsAutolinkerMod.HashtagConfig
-import typings.autolinker.distCommonjsAutolinkerMod.MentionConfig
 import typings.autolinker.distCommonjsHtmlParserStateMod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -71,11 +69,6 @@ object autolinkerNumbers {
   @js.native
   sealed trait `9` extends State
   
-  @js.native
-  sealed trait `false`
-    extends HashtagConfig
-       with MentionConfig
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -118,7 +111,5 @@ object autolinkerNumbers {
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

@@ -12,7 +12,7 @@ object fileURLToPath extends js.Object {
     * well as ensuring a cross-platform valid absolute path string.
     * @param url The file URL string or URL object to convert to a path.
     */
-  def apply(url: java.lang.String): java.lang.String = js.native
-  def apply(url: URL): java.lang.String = js.native
+  def apply(url: String): String = js.native
+  def apply(url: URL): String = js.native
 }
 

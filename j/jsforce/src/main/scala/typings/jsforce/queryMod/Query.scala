@@ -28,11 +28,10 @@ class Query[T] ()
   def delete(`type`: String): js.Any = js.native
   def delete(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
   def destroy(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
-  def destroy(error: Error): Unit = js.native
   def destroy(`type`: String): js.Promise[js.Array[RecordResult]] = js.native
   def destroy(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
   @JSName("destroy")
-  def destroy_Unit(): Unit = js.native
+  def destroy_Promise(): js.Promise[js.Array[RecordResult]] = js.native
   def end(): Query[T] = js.native
   def exec(): Query[T] = js.native
   def exec(options: ExecuteOptions): Query[T] = js.native
@@ -50,9 +49,7 @@ class Query[T] ()
   def maxFetch(value: Double): Query[T] = js.native
   def offset(value: Double): Query[T] = js.native
   /* InferMemberOverrides */
-  /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
   def run(): Query[T] = js.native

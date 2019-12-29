@@ -1,8 +1,8 @@
 package typings.proxyDashVerifier.proxyDashVerifierMod
 
 import typings.proxyDashVerifier.Anon_Code
-import typings.proxyDashVerifier.proxyDashVerifierNumbers.`false`
-import typings.proxyDashVerifier.proxyDashVerifierNumbers.`true`
+import typings.proxyDashVerifier.proxyDashVerifierBooleans.`false`
+import typings.proxyDashVerifier.proxyDashVerifierBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

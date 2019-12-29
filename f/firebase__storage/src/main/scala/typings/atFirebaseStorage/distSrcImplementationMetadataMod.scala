@@ -2,8 +2,6 @@ package typings.atFirebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseStorage.distSrcImplementationAuthwrapperMod.AuthWrapper
-import typings.atFirebaseStorage.distSrcImplementationMetadataMod.Mapping
-import typings.atFirebaseStorage.distSrcImplementationMetadataMod.Mappings
 import typings.atFirebaseStorage.distSrcMetadataMod.Metadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`

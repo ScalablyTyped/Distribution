@@ -9,26 +9,26 @@ object metismenuStrings {
   sealed trait dispose extends js.Object
   
   @js.native
-  sealed trait hiddenDOTmetisMenu extends MetisMenuEvents
+  sealed trait hiddenDotmetisMenu extends MetisMenuEvents
   
   @js.native
-  sealed trait hideDOTmetisMenu extends MetisMenuEvents
+  sealed trait hideDotmetisMenu extends MetisMenuEvents
   
   @js.native
-  sealed trait showDOTmetisMenu extends MetisMenuEvents
+  sealed trait showDotmetisMenu extends MetisMenuEvents
   
   @js.native
-  sealed trait shownDOTmetisMenu extends MetisMenuEvents
+  sealed trait shownDotmetisMenu extends MetisMenuEvents
   
   @scala.inline
   def dispose: dispose = "dispose".asInstanceOf[dispose]
   @scala.inline
-  def hiddenDOTmetisMenu: hiddenDOTmetisMenu = "hidden.metisMenu".asInstanceOf[hiddenDOTmetisMenu]
+  def hiddenDotmetisMenu: hiddenDotmetisMenu = "hidden.metisMenu".asInstanceOf[hiddenDotmetisMenu]
   @scala.inline
-  def hideDOTmetisMenu: hideDOTmetisMenu = "hide.metisMenu".asInstanceOf[hideDOTmetisMenu]
+  def hideDotmetisMenu: hideDotmetisMenu = "hide.metisMenu".asInstanceOf[hideDotmetisMenu]
   @scala.inline
-  def showDOTmetisMenu: showDOTmetisMenu = "show.metisMenu".asInstanceOf[showDOTmetisMenu]
+  def showDotmetisMenu: showDotmetisMenu = "show.metisMenu".asInstanceOf[showDotmetisMenu]
   @scala.inline
-  def shownDOTmetisMenu: shownDOTmetisMenu = "shown.metisMenu".asInstanceOf[shownDOTmetisMenu]
+  def shownDotmetisMenu: shownDotmetisMenu = "shown.metisMenu".asInstanceOf[shownDotmetisMenu]
 }
 

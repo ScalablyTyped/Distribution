@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Signature
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Signature.SaveImageFormat.BMP
-import typings.ejDotWebDotAll.ej.Signature.SaveImageFormat.JPG
-import typings.ejDotWebDotAll.ej.Signature.SaveImageFormat.PNG
-import typings.ejDotWebDotAll.ej.Signature.SaveImageFormat.TIFF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.bip174
 
-import typings.bip174.bip174Strings.`{ pubkey: Buffer; signature: Buffer; }`
+import typings.bip174.bip174Strings.`Leftcurlybracket pubkeyColon BufferSemicolon signatureColon BufferSemicolon Rightcurlybracket`
 import typings.bip174.srcLibInterfacesMod.KeyValue
 import typings.bip174.srcLibInterfacesMod.PartialSig
 import typings.std.Set
@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofpartialSig extends js.Object {
-  val expected: `{ pubkey: Buffer; signature: Buffer; }`
+  val expected: `Leftcurlybracket pubkeyColon BufferSemicolon signatureColon BufferSemicolon Rightcurlybracket`
   def canAddToArray(array: js.Array[PartialSig], item: PartialSig, dupeSet: Set[String]): Boolean
   def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean
   def decode(keyVal: KeyValue): PartialSig
@@ -23,7 +23,7 @@ object TypeofpartialSig {
     check: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean,
     decode: KeyValue => PartialSig,
     encode: PartialSig => KeyValue,
-    expected: `{ pubkey: Buffer; signature: Buffer; }`
+    expected: `Leftcurlybracket pubkeyColon BufferSemicolon signatureColon BufferSemicolon Rightcurlybracket`
   ): TypeofpartialSig = {
     val __obj = js.Dynamic.literal(canAddToArray = js.Any.fromFunction3(canAddToArray), check = js.Any.fromFunction1(check), decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), expected = expected.asInstanceOf[js.Any])
   

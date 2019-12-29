@@ -1,10 +1,6 @@
 package typings.vortexDashWebDashClient.DDS
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vortexDashWebDashClient.DDS.DurabilityKind.Persistent
-import typings.vortexDashWebDashClient.DDS.DurabilityKind.Transient
-import typings.vortexDashWebDashClient.DDS.DurabilityKind.TransientLocal
-import typings.vortexDashWebDashClient.DDS.DurabilityKind.Volatile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

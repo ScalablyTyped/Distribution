@@ -62,7 +62,7 @@ trait Enumerable[T] extends js.Object {
   def distinctBy[TKey](keySelector: js.Function1[/* item */ T, TKey], comparer: EqualityComparer[TKey, TKey]): Enumerable[T] = js.native
   def distinctUntilChanged(): Enumerable[T] = js.native
   // if need to set comparer without keySelector
-  def distinctUntilChanged(`_`: Boolean, comparer: EqualityComparer[T, T]): Enumerable[T] = js.native
+  def distinctUntilChanged(_underscore: Boolean, comparer: EqualityComparer[T, T]): Enumerable[T] = js.native
   def distinctUntilChanged[TKey](keySelector: js.Function1[/* item */ T, TKey]): Enumerable[T] = js.native
   def distinctUntilChanged[TKey](keySelector: js.Function1[/* item */ T, TKey], comparer: EqualityComparer[TKey, TKey]): Enumerable[T] = js.native
   def `do`(onNext: js.Function1[/* value */ T, Unit]): Enumerable[T] = js.native
@@ -106,19 +106,19 @@ trait Enumerable[T] extends js.Object {
   // if need to set comparer without elementSelector and resultSelector
   def groupBy[TKey](
     keySelector: js.Function1[/* item */ T, TKey],
-    `_`: Boolean,
+    _underscore: Boolean,
     __ : Boolean,
     comparer: EqualityComparer[TKey, TKey]
   ): Enumerable[Grouping[TKey, T]] = js.native
   // if need to set resultSelector without elementSelector
   def groupBy[TKey, TResult](
     keySelector: js.Function1[/* item */ T, TKey],
-    `_`: Boolean,
+    _underscore: Boolean,
     resultSelector: js.Function2[/* key */ TKey, /* values */ Enumerable[T], TResult]
   ): Enumerable[TResult] = js.native
   def groupBy[TKey, TResult](
     keySelector: js.Function1[/* item */ T, TKey],
-    `_`: Boolean,
+    _underscore: Boolean,
     resultSelector: js.Function2[/* key */ TKey, /* values */ Enumerable[T], TResult],
     comparer: EqualityComparer[TKey, TKey]
   ): Enumerable[TResult] = js.native
@@ -130,7 +130,7 @@ trait Enumerable[T] extends js.Object {
   def groupBy[TKey, TElement](
     keySelector: js.Function1[/* item */ T, TKey],
     elementSelector: js.Function1[/* item */ T, TElement],
-    `_`: Boolean,
+    _underscore: Boolean,
     comparer: EqualityComparer[TKey, TKey]
   ): Enumerable[Grouping[TKey, TElement]] = js.native
   def groupBy[TKey, TElement, TResult](
@@ -250,7 +250,7 @@ trait Enumerable[T] extends js.Object {
   // if need to set comparer without elementSelector
   def toDictionary[TKey](
     keySelector: js.Function1[/* item */ T, TKey],
-    `_`: Boolean,
+    _underscore: Boolean,
     comparer: EqualityComparer[TKey, TKey]
   ): Dictionary[TKey, T] = js.native
   def toDictionary[TKey, TValue](keySelector: js.Function1[/* item */ T, TKey], elementSelector: js.Function1[/* item */ T, TValue]): Dictionary[TKey, TValue] = js.native
@@ -263,7 +263,7 @@ trait Enumerable[T] extends js.Object {
   // if need to set comparer without elementSelector
   def toLookup[TKey](
     keySelector: js.Function1[/* item */ T, TKey],
-    `_`: Boolean,
+    _underscore: Boolean,
     comparer: EqualityComparer[TKey, TKey]
   ): Lookup[TKey, T] = js.native
   def toLookup[TKey, TValue](keySelector: js.Function1[/* item */ T, TKey], elementSelector: js.Function1[/* item */ T, TValue]): Lookup[TKey, TValue] = js.native

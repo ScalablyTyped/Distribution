@@ -1,5 +1,6 @@
 package typings.fundamentalDashReact
 
+import typings.fundamentalDashReact.fundamentalDashReactStrings.Panel
 import typings.fundamentalDashReact.libPanelPanelMod.PanelActionsProps
 import typings.fundamentalDashReact.libPanelPanelMod.PanelBodyProps
 import typings.fundamentalDashReact.libPanelPanelMod.PanelFiltersProps
@@ -12,25 +13,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Actions extends js.Object {
-  var Actions: FunctionComponent[PanelActionsProps]
-  var Body: FunctionComponent[PanelBodyProps]
-  var Filters: FunctionComponent[PanelFiltersProps]
-  var Footer: FunctionComponent[PanelFooterProps]
-  var Head: FunctionComponent[PanelHeadProps]
-  var Header: FunctionComponent[PanelHeaderProps]
+  var Actions: FunctionComponent[PanelActionsProps] with Anon_DisplayNamePanelActions
+  var Body: FunctionComponent[PanelBodyProps] with Anon_DisplayNamePanelBody
+  var Filters: FunctionComponent[PanelFiltersProps] with Anon_DisplayNamePanelFilters
+  var Footer: FunctionComponent[PanelFooterProps] with Anon_DisplayNamePanelFooter
+  var Head: FunctionComponent[PanelHeadProps] with Anon_DisplayNamePanelHead
+  var Header: FunctionComponent[PanelHeaderProps] with Anon_DisplayNamePanelHeader
+  var displayName: Panel
 }
 
 object Anon_Actions {
   @scala.inline
   def apply(
-    Actions: FunctionComponent[PanelActionsProps],
-    Body: FunctionComponent[PanelBodyProps],
-    Filters: FunctionComponent[PanelFiltersProps],
-    Footer: FunctionComponent[PanelFooterProps],
-    Head: FunctionComponent[PanelHeadProps],
-    Header: FunctionComponent[PanelHeaderProps]
+    Actions: FunctionComponent[PanelActionsProps] with Anon_DisplayNamePanelActions,
+    Body: FunctionComponent[PanelBodyProps] with Anon_DisplayNamePanelBody,
+    Filters: FunctionComponent[PanelFiltersProps] with Anon_DisplayNamePanelFilters,
+    Footer: FunctionComponent[PanelFooterProps] with Anon_DisplayNamePanelFooter,
+    Head: FunctionComponent[PanelHeadProps] with Anon_DisplayNamePanelHead,
+    Header: FunctionComponent[PanelHeaderProps] with Anon_DisplayNamePanelHeader,
+    displayName: Panel
   ): Anon_Actions = {
-    val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Footer = Footer.asInstanceOf[js.Any], Head = Head.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Footer = Footer.asInstanceOf[js.Any], Head = Head.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Actions]
   }

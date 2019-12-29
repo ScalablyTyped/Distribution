@@ -1,13 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.RequestExecutorErrors.domainDoesNotMatch
-import typings.sharepoint.SP.RequestExecutorErrors.httpError
-import typings.sharepoint.SP.RequestExecutorErrors.iFrameLoadError
-import typings.sharepoint.SP.RequestExecutorErrors.noAppWeb
-import typings.sharepoint.SP.RequestExecutorErrors.noTrustedOrigins
-import typings.sharepoint.SP.RequestExecutorErrors.requestAbortedOrTimedout
-import typings.sharepoint.SP.RequestExecutorErrors.unexpectedResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

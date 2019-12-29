@@ -4,9 +4,9 @@ import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.AES2
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.REDUCED_REDUNDANCY
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.STANDARD
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.STANDARD_IA
-import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.`aws:kms`
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.`private`
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.`public-read`
+import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.awsColonkms
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.s3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait S3Options
   /**
     * Server-side encryption algorithm to use for the object.
     */
-  val encryption: js.UndefOr[AES256 | `aws:kms` | Null] = js.undefined
+  val encryption: js.UndefOr[AES256 | awsColonkms | Null] = js.undefined
   /**
     * The endpoint URI to send requests to. The default endpoint is built from the configured region.
     * The endpoint should be a string like `https://{service}.{region}.amazonaws.com`.
@@ -51,7 +51,7 @@ object S3Options {
     provider: s3,
     acl: `private` | `public-read` = null,
     channel: String = null,
-    encryption: AES256 | `aws:kms` = null,
+    encryption: AES256 | awsColonkms = null,
     endpoint: String = null,
     path: String = null,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,

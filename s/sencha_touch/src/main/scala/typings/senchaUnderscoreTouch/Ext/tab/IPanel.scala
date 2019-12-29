@@ -18,7 +18,7 @@ trait IPanel extends IContainer {
   		* @returns String
   		*/
   @JSName("getCls")
-  var getCls_IPanel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getCls_IPanel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of layout
   		* @returns Object
   		*/
@@ -30,12 +30,12 @@ trait IPanel extends IContainer {
   /** [Method] Returns the value of tabBarPosition
   		* @returns String
   		*/
-  var getTabBarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTabBarPosition: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of cls
   		* @param cls String The new value.
   		*/
   @JSName("setCls")
-  var setCls_IPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setCls_IPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of tabBar
   		* @param tabBar Object The new value.
   		*/
@@ -43,13 +43,13 @@ trait IPanel extends IContainer {
   /** [Method] Sets the value of tabBarPosition
   		* @param tabBarPosition String The new value.
   		*/
-  var setTabBarPosition: js.UndefOr[js.Function1[/* tabBarPosition */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTabBarPosition: js.UndefOr[js.Function1[/* tabBarPosition */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var tabBar: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var tabBarDock: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var tabBarPosition: js.UndefOr[java.lang.String] = js.undefined
+  var tabBarPosition: js.UndefOr[String] = js.undefined
   /** [Method] Updates the Ui for this component and the tabBar
   		* @param newUi Object
   		* @param oldUi Object
@@ -64,16 +64,16 @@ object IPanel {
   def apply(
     IContainer: IContainer = null,
     doTabChange: (/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any]) => Boolean = null,
-    getCls: () => java.lang.String = null,
+    getCls: () => String = null,
     getLayout: () => _ = null,
     getTabBar: () => _ = null,
-    getTabBarPosition: () => java.lang.String = null,
-    setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
+    getTabBarPosition: () => String = null,
+    setCls: /* cls */ js.UndefOr[String] => Unit = null,
     setTabBar: /* tabBar */ js.UndefOr[js.Any] => Unit = null,
-    setTabBarPosition: /* tabBarPosition */ js.UndefOr[java.lang.String] => Unit = null,
+    setTabBarPosition: /* tabBarPosition */ js.UndefOr[String] => Unit = null,
     tabBar: js.Any = null,
     tabBarDock: js.UndefOr[Boolean] = js.undefined,
-    tabBarPosition: java.lang.String = null,
+    tabBarPosition: String = null,
     updateUi: (/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any]) => Unit = null
   ): IPanel = {
     val __obj = js.Dynamic.literal()

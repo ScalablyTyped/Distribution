@@ -11,7 +11,8 @@ class Selection protected () extends js.Object {
   val ChildShapeRange: typings.activexDashPowerpoint.PowerPoint.ShapeRange = js.native
   val HasChildShapeRange: Boolean = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Selection_typekey`: Selection = js.native
+  @JSName("PowerPoint.Selection_typekey")
+  var PowerPointDotSelection_typekey: Selection = js.native
   val ShapeRange: typings.activexDashPowerpoint.PowerPoint.ShapeRange = js.native
   val SlideRange: typings.activexDashPowerpoint.PowerPoint.SlideRange = js.native
   val TextRange: typings.activexDashPowerpoint.PowerPoint.TextRange = js.native

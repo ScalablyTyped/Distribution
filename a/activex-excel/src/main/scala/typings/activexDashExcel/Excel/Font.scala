@@ -17,7 +17,8 @@ class Font protected () extends js.Object {
   var Color: XlRgbColor | Double = js.native
   var ColorIndex: Double | XlColorIndex = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Font_typekey`: Font = js.native
+  @JSName("Excel.Font_typekey")
+  var ExcelDotFont_typekey: Font = js.native
   var FontStyle: Regular | Italic | Bold | (`Bold Italic`) = js.native
   var Italic: Boolean = js.native
   var Name: String = js.native

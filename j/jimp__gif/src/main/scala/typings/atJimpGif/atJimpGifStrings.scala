@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object atJimpGifStrings {
   @js.native
-  sealed trait `image/gif` extends js.Object
+  sealed trait imageSlashgif extends js.Object
   
   @scala.inline
-  def `image/gif`: `image/gif` = "image/gif".asInstanceOf[`image/gif`]
+  def imageSlashgif: imageSlashgif = "image/gif".asInstanceOf[imageSlashgif]
 }
 

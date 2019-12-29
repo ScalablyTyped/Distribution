@@ -14,7 +14,7 @@ trait Resolver[R] extends js.Object {
     * Gives you a callback representation of the `PromiseResolver`. Note that this is not a method but a property.
     * The callback accepts error object in first argument and success values on the 2nd parameter and the rest, I.E. node js conventions.
     *
-    * If the the callback is called with multiple success values, the resolver fullfills its promise with an array of the values.
+    * If the the callback is called with multiple success values, the resolver fulfills its promise with an array of the values.
     */
   // TODO specify resolver callback
   def callback(err: js.Any, value: R, values: R*): Unit = js.native

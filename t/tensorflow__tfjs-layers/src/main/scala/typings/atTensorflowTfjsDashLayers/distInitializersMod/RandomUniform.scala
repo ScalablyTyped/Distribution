@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashLayers.distInitializersMod
 
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersNumbers.`-0DOT05`
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersNumbers.`0DOT05`
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersNumbers.`-0.05`
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersNumbers.`0.05`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class RandomUniform protected () extends Initializer {
   def this(args: RandomUniformArgs) = this()
-  val DEFAULT_MAXVAL: `0DOT05` = js.native
-  val DEFAULT_MINVAL: `-0DOT05` = js.native
+  val DEFAULT_MAXVAL: `0.05` = js.native
+  val DEFAULT_MINVAL: `-0.05` = js.native
   var maxval: js.Any = js.native
   var minval: js.Any = js.native
   var seed: js.Any = js.native

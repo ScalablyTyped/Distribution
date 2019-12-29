@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartMapLabelStrategy.bestFit
-import typings.officeDashJs.Excel.ChartMapLabelStrategy.none
-import typings.officeDashJs.Excel.ChartMapLabelStrategy.showAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

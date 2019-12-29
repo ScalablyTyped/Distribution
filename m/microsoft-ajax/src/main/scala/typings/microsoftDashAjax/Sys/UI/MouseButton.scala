@@ -1,9 +1,6 @@
 package typings.microsoftDashAjax.Sys.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.microsoftDashAjax.Sys.UI.MouseButton.leftButton
-import typings.microsoftDashAjax.Sys.UI.MouseButton.middleButton
-import typings.microsoftDashAjax.Sys.UI.MouseButton.rightButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

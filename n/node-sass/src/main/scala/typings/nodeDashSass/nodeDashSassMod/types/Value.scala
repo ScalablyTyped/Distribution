@@ -17,23 +17,6 @@ trait Value extends ReturnValue
 
 object Value {
   @scala.inline
-  def Number(
-    getUnit: () => java.lang.String,
-    getValue: () => Double,
-    setUnit: java.lang.String => Unit,
-    setValue: Double => Unit
-  ): Value = {
-    val __obj = js.Dynamic.literal(getUnit = js.Any.fromFunction0(getUnit), getValue = js.Any.fromFunction0(getValue), setUnit = js.Any.fromFunction1(setUnit), setValue = js.Any.fromFunction1(setValue))
-  
-    __obj.asInstanceOf[Value]
-  }
-  @scala.inline
-  def Boolean(getValue: () => scala.Boolean): Value = {
-    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
-  
-    __obj.asInstanceOf[Value]
-  }
-  @scala.inline
   def Map(
     getKey: Double => Value,
     getLength: () => Double,
@@ -46,20 +29,13 @@ object Value {
     __obj.asInstanceOf[Value]
   }
   @scala.inline
-  def Null(___NULL___ : js.Symbol): Value = {
-    val __obj = js.Dynamic.literal(___NULL___ = ___NULL___.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Value]
-  }
-  @scala.inline
-  def List(
-    getLength: () => Double,
-    getSeparator: () => scala.Boolean,
-    getValue: Double => Value,
-    setSeparator: scala.Boolean => Unit,
-    setValue: (Double, Value) => Unit
+  def Number(
+    getUnit: () => java.lang.String,
+    getValue: () => Double,
+    setUnit: java.lang.String => Unit,
+    setValue: Double => Unit
   ): Value = {
-    val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getSeparator = js.Any.fromFunction0(getSeparator), getValue = js.Any.fromFunction1(getValue), setSeparator = js.Any.fromFunction1(setSeparator), setValue = js.Any.fromFunction2(setValue))
+    val __obj = js.Dynamic.literal(getUnit = js.Any.fromFunction0(getUnit), getValue = js.Any.fromFunction0(getValue), setUnit = js.Any.fromFunction1(setUnit), setValue = js.Any.fromFunction1(setValue))
   
     __obj.asInstanceOf[Value]
   }
@@ -79,8 +55,32 @@ object Value {
     __obj.asInstanceOf[Value]
   }
   @scala.inline
+  def List(
+    getLength: () => Double,
+    getSeparator: () => scala.Boolean,
+    getValue: Double => Value,
+    setSeparator: scala.Boolean => Unit,
+    setValue: (Double, Value) => Unit
+  ): Value = {
+    val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getSeparator = js.Any.fromFunction0(getSeparator), getValue = js.Any.fromFunction1(getValue), setSeparator = js.Any.fromFunction1(setSeparator), setValue = js.Any.fromFunction2(setValue))
+  
+    __obj.asInstanceOf[Value]
+  }
+  @scala.inline
   def String(getValue: () => java.lang.String, setValue: java.lang.String => Unit): Value = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue), setValue = js.Any.fromFunction1(setValue))
+  
+    __obj.asInstanceOf[Value]
+  }
+  @scala.inline
+  def Null(___NULL___ : js.Symbol): Value = {
+    val __obj = js.Dynamic.literal(___NULL___ = ___NULL___.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Value]
+  }
+  @scala.inline
+  def Boolean(getValue: () => scala.Boolean): Value = {
+    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
   
     __obj.asInstanceOf[Value]
   }

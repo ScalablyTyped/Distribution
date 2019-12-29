@@ -1,10 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.RecipientType.DistributionList
-import typings.officeDashJs.Office.MailboxEnums.RecipientType.ExternalUser
-import typings.officeDashJs.Office.MailboxEnums.RecipientType.Other
-import typings.officeDashJs.Office.MailboxEnums.RecipientType.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

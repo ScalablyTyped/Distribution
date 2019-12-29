@@ -9,24 +9,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActiveXObjectNameMap extends js.Object {
-  var `Scripting.Signer`: Signer
+  @JSName("Scripting.Signer")
+  var ScriptingDotSigner: Signer
   var WSHController: typings.activexDashIwshruntimelibrary.WSHControllerLibrary.WSHController
-  var `WScript.Network`: WshNetwork
-  var `WScript.Shell`: WshShell
+  @JSName("WScript.Network")
+  var WScriptDotNetwork: WshNetwork
+  @JSName("WScript.Shell")
+  var WScriptDotShell: WshShell
 }
 
 object ActiveXObjectNameMap {
   @scala.inline
   def apply(
-    `Scripting.Signer`: Signer,
+    ScriptingDotSigner: Signer,
     WSHController: WSHController,
-    `WScript.Network`: WshNetwork,
-    `WScript.Shell`: WshShell
+    WScriptDotNetwork: WshNetwork,
+    WScriptDotShell: WshShell
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal(WSHController = WSHController.asInstanceOf[js.Any])
-    __obj.updateDynamic("Scripting.Signer")(`Scripting.Signer`.asInstanceOf[js.Any])
-    __obj.updateDynamic("WScript.Network")(`WScript.Network`.asInstanceOf[js.Any])
-    __obj.updateDynamic("WScript.Shell")(`WScript.Shell`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Scripting.Signer")(ScriptingDotSigner.asInstanceOf[js.Any])
+    __obj.updateDynamic("WScript.Network")(WScriptDotNetwork.asInstanceOf[js.Any])
+    __obj.updateDynamic("WScript.Shell")(WScriptDotShell.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

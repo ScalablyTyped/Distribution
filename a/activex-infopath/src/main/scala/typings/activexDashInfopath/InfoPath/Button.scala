@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InfoPath.Button")
 @js.native
 class Button protected () extends js.Object {
-  var `InfoPath.Button_typekey`: Button = js.native
+  @JSName("InfoPath.Button_typekey")
+  var InfoPathDotButton_typekey: Button = js.native
 }
 

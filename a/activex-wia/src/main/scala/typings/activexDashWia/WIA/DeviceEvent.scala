@@ -16,6 +16,7 @@ class DeviceEvent protected () extends js.Object {
   val Name: String = js.native
   /** Returns the Type of this Event */
   val Type: WiaEventFlag = js.native
-  var `WIA.DeviceEvent_typekey`: DeviceEvent = js.native
+  @JSName("WIA.DeviceEvent_typekey")
+  var WIADotDeviceEvent_typekey: DeviceEvent = js.native
 }
 

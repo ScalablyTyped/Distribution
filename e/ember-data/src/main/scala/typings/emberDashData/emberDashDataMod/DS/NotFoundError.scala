@@ -1,5 +1,6 @@
 package typings.emberDashData.emberDashDataMod.DS
 
+import typings.atEmberObject.atEmberObjectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.NotFoundError")
 @js.native
-class NotFoundError ()
-  extends typings.atEmberObject.atEmberObjectMod.default
+class NotFoundError () extends default
 

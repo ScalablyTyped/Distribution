@@ -1,13 +1,6 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkRegistrationState.denied
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkRegistrationState.deregistered
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkRegistrationState.home
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkRegistrationState.none
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkRegistrationState.partner
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkRegistrationState.roaming
-import typings.winrt.Windows.Networking.NetworkOperators.NetworkRegistrationState.searching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

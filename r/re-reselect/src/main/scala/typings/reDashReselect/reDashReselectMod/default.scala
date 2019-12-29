@@ -28,7 +28,7 @@ object default extends js.Object {
     js.Function2[/* res1 */ R1, /* res2 */ R2, T], 
     js.Tuple2[Selector[S, R1], Selector[S, R2]]
   ] = js.native
-  def apply[S1, P1, R1, T](selector: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = js.native
+  def apply[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = js.native
   def apply[S, P, R1, R2, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],

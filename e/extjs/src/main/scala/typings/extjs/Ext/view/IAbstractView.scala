@@ -49,7 +49,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var disableSelection: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[java.lang.String] = js.undefined
+  var emptyText: js.UndefOr[String] = js.undefined
   /** [Method] Returns the template node the passed child belongs to or null if it doesn t belong to one
   		* @param node HTMLElement
   		* @returns HTMLElement The template node
@@ -117,19 +117,19 @@ import scala.scalajs.js.annotation._
   		*/
   var isSelected: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[java.lang.String] = js.undefined
+  var itemCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var itemSelector: js.UndefOr[java.lang.String] = js.undefined
+  var itemSelector: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/String[]/Ext.XTemplate) */
   var itemTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean/Object) */
   var loadMask: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var loadingCls: js.UndefOr[java.lang.String] = js.undefined
+  var loadingCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var loadingHeight: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var loadingText: js.UndefOr[java.lang.String] = js.undefined
+  var loadingText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var multiSelect: js.UndefOr[Boolean] = js.undefined
   /** [Method] Template method it is called when a new store is bound to the current instance
@@ -155,7 +155,7 @@ import scala.scalajs.js.annotation._
     (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
   ] = js.undefined
   /** [Config Option] (String) */
-  var overItemCls: js.UndefOr[java.lang.String] = js.undefined
+  var overItemCls: js.UndefOr[String] = js.undefined
   /** [Method] Function which can be overridden to provide custom formatting for each Record that is used by this DataView s templat
   		* @param data Object/Object[] The raw data object that was used to create the Record.
   		* @param recordIndex Number the index number of the Record being prepared for rendering.
@@ -192,7 +192,7 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var selectedItemCls: js.UndefOr[java.lang.String] = js.undefined
+  var selectedItemCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var simpleSelect: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -220,7 +220,7 @@ object IAbstractView {
     deferInitialRefresh: js.UndefOr[Boolean] = js.undefined,
     deselect: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
     disableSelection: js.UndefOr[Boolean] = js.undefined,
-    emptyText: java.lang.String = null,
+    emptyText: String = null,
     findItemByChild: /* node */ js.UndefOr[HTMLElement] => HTMLElement = null,
     findTargetByEvent: /* e */ js.UndefOr[IEventObject] => Unit = null,
     getNode: /* nodeInfo */ js.UndefOr[js.Any] => HTMLElement = null,
@@ -235,13 +235,13 @@ object IAbstractView {
     getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
     indexOf: /* nodeInfo */ js.UndefOr[js.Any] => Double = null,
     isSelected: /* node */ js.UndefOr[js.Any] => Boolean = null,
-    itemCls: java.lang.String = null,
-    itemSelector: java.lang.String = null,
+    itemCls: String = null,
+    itemSelector: String = null,
     itemTpl: js.Any = null,
     loadMask: js.Any = null,
-    loadingCls: java.lang.String = null,
+    loadingCls: String = null,
     loadingHeight: Int | Double = null,
-    loadingText: java.lang.String = null,
+    loadingText: String = null,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     onBindStore: (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) | (js.Function3[
       /* store */ js.UndefOr[js.Any], 
@@ -251,13 +251,13 @@ object IAbstractView {
     ]) = null,
     onRender: () => Unit = null,
     onUnbindStore: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) = null,
-    overItemCls: java.lang.String = null,
+    overItemCls: String = null,
     prepareData: (/* data */ js.UndefOr[js.Any], /* recordIndex */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => _ = null,
     preserveScrollOnRefresh: js.UndefOr[Boolean] = js.undefined,
     refresh: () => Unit = null,
     refreshNode: /* index */ js.UndefOr[Double] => Unit = null,
     select: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
-    selectedItemCls: java.lang.String = null,
+    selectedItemCls: String = null,
     simpleSelect: js.UndefOr[Boolean] = js.undefined,
     singleSelect: js.UndefOr[Boolean] = js.undefined,
     store: IStore = null,

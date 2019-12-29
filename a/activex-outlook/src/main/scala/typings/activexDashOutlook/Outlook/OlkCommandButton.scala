@@ -17,7 +17,8 @@ class OlkCommandButton protected () extends js.Object {
   val Font: StdFont = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkCommandButton_typekey`: OlkCommandButton = js.native
+  @JSName("Outlook.OlkCommandButton_typekey")
+  var OutlookDotOlkCommandButton_typekey: OlkCommandButton = js.native
   var Picture: StdPicture = js.native
   var PictureAlignment: OlPictureAlignment = js.native
   var TextAlign: OlTextAlign = js.native

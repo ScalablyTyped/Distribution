@@ -42,7 +42,8 @@ class DistListItem protected () extends js.Object {
   var Mileage: String = js.native
   var NoAging: Boolean = js.native
   var OneOffMembers: js.Any = js.native
-  var `Outlook.DistListItem_typekey`: DistListItem = js.native
+  @JSName("Outlook.DistListItem_typekey")
+  var OutlookDotDistListItem_typekey: DistListItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

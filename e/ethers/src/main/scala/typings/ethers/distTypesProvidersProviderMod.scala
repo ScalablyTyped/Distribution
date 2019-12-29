@@ -1,6 +1,5 @@
 package typings.ethers
 
-import typings.ethers.distTypesProvidersProviderMod.Provider
 import typings.ethers.distTypesUtilsTypesMod.EventType
 import typings.ethers.distTypesUtilsTypesMod.Listener
 import typings.ethers.distTypesUtilsTypesMod.MinimalProvider

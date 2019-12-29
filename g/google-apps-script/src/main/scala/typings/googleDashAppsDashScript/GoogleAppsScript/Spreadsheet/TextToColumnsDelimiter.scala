@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.COMMA
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.PERIOD
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.SEMICOLON
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.SPACE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

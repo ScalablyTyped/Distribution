@@ -1,6 +1,5 @@
 package typings.dojo.dojo._base
 
-import typings.dojo.dojo._base.declare.__DeclareCreatedObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

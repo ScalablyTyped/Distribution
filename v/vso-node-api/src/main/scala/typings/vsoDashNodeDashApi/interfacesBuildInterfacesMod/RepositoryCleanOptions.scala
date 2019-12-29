@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.RepositoryCleanOptions.AllBuildDir
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.RepositoryCleanOptions.Source
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.RepositoryCleanOptions.SourceAndOutputDir
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.RepositoryCleanOptions.SourceDir
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

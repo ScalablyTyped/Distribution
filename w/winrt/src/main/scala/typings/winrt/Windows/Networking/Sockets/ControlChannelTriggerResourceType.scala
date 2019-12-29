@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResourceType.requestHardwareSlot
-import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResourceType.requestSoftwareSlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

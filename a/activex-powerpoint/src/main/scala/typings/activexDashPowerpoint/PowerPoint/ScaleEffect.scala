@@ -13,7 +13,8 @@ class ScaleEffect protected () extends js.Object {
   var FromX: Double = js.native
   var FromY: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ScaleEffect_typekey`: ScaleEffect = js.native
+  @JSName("PowerPoint.ScaleEffect_typekey")
+  var PowerPointDotScaleEffect_typekey: ScaleEffect = js.native
   var ToX: Double = js.native
   var ToY: Double = js.native
 }

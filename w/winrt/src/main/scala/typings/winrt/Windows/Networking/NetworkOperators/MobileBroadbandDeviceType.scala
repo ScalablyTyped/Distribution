@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandDeviceType.embedded
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandDeviceType.remote
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandDeviceType.removable
-import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandDeviceType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.kiiDashCloudDashSdk.KiiCloud
 
 import org.scalablytyped.runtime.TopLevel
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.FACEBOOK
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.GOOGLEPLUS
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.QQ
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.RENREN
-import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.TWITTER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

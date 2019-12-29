@@ -1,14 +1,6 @@
 package typings.promiseDashFtpDashCommon
 
 import org.scalablytyped.runtime.TopLevel
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.CONNECTED
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.CONNECTING
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.DISCONNECTED
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.DISCONNECTING
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.LOGGING_OUT
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.NOT_YET_CONNECTED
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.RECONNECTING
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

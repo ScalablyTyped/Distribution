@@ -1,11 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapFlash.TWFL_AUTO
-import typings.dwt.EnumDWT_CapFlash.TWFL_NONE
-import typings.dwt.EnumDWT_CapFlash.TWFL_OFF
-import typings.dwt.EnumDWT_CapFlash.TWFL_ON
-import typings.dwt.EnumDWT_CapFlash.TWFL_REDEYE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

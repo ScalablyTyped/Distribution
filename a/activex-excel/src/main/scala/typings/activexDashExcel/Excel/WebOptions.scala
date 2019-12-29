@@ -15,7 +15,8 @@ class WebOptions protected () extends js.Object {
   val Creator: XlCreator = js.native
   var DownloadComponents: Boolean = js.native
   var Encoding: MsoEncoding = js.native
-  var `Excel.WebOptions_typekey`: WebOptions = js.native
+  @JSName("Excel.WebOptions_typekey")
+  var ExcelDotWebOptions_typekey: WebOptions = js.native
   val FolderSuffix: String = js.native
   var LocationOfComponents: String = js.native
   var OrganizeInFolder: Boolean = js.native

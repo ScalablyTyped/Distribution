@@ -1,7 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,13 +49,13 @@ trait Histogram extends Widget {
   @JSName("labelFormatFunction")
   var labelFormatFunction_Original: LabelFormatter = js.native
   /**
-    * Determines the orientation of the Histogram widget.  **Possible Values:** vertical | horizontal
+    * Determines the orientation of the Histogram widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#layout)
     *
     * @default horizontal
     */
-  var layout: String = js.native
+  var layout: vertical | horizontal = js.native
   /**
     * The maximum value or bound of the entire histogram. This should match the maximum bound of the last [bin](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#bins).
     *
@@ -138,7 +139,7 @@ trait histogram extends js.Object {
     * @param params.features A subset of features for which to generate the histogram.
     *
     */
-  def histogram(params: histogramHistogramParams): IPromise[HistogramResult]
+  def histogram(params: histogramHistogramParams): js.Promise[HistogramResult]
 }
 
 @JSGlobal("__esri.Histogram")
@@ -148,5 +149,5 @@ object Histogram extends TopLevel[HistogramConstructor]
 @JSGlobal("__esri.histogram")
 @js.native
 object histogram
-  extends TopLevel[js.Function1[/* params */ histogramHistogramParams, IPromise[HistogramResult]]]
+  extends TopLevel[js.Function1[/* params */ histogramHistogramParams, js.Promise[HistogramResult]]]
 

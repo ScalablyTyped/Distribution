@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
   - typings.chromeDashApps.chromeDashAppsStrings.appview
   - typings.chromeDashApps.chromeDashAppsStrings.audio
   - typings.chromeDashApps.chromeDashAppsStrings.alwaysOnTopWindows
-  - typings.chromeDashApps.chromeDashAppsStrings.appDOTwindowDOTalwaysOnTop
-  - typings.chromeDashApps.chromeDashAppsStrings.appDOTwindowDOTfullscreen
-  - typings.chromeDashApps.chromeDashAppsStrings.appDOTwindowDOTfullscreenDOToverrideEsc
-  - typings.chromeDashApps.chromeDashAppsStrings.appDOTwindowDOTshape
+  - typings.chromeDashApps.chromeDashAppsStrings.appDotwindowDotalwaysOnTop
+  - typings.chromeDashApps.chromeDashAppsStrings.appDotwindowDotfullscreen
+  - typings.chromeDashApps.chromeDashAppsStrings.appDotwindowDotfullscreenDotoverrideEsc
+  - typings.chromeDashApps.chromeDashAppsStrings.appDotwindowDotshape
   - typings.chromeDashApps.chromeDashAppsStrings.audioCapture
   - typings.chromeDashApps.chromeDashAppsStrings.background
   - typings.chromeDashApps.chromeDashAppsStrings.browser
@@ -38,11 +38,11 @@ import scala.scalajs.js.annotation._
   - typings.chromeDashApps.chromeDashAppsStrings.serial
   - typings.chromeDashApps.chromeDashAppsStrings.storage
   - typings.chromeDashApps.chromeDashAppsStrings.syncFileSystem
-  - typings.chromeDashApps.chromeDashAppsStrings.systemDOTcpu
-  - typings.chromeDashApps.chromeDashAppsStrings.systemDOTdisplay
-  - typings.chromeDashApps.chromeDashAppsStrings.systemDOTmemory
-  - typings.chromeDashApps.chromeDashAppsStrings.systemDOTnetwork
-  - typings.chromeDashApps.chromeDashAppsStrings.systemDOTstorage
+  - typings.chromeDashApps.chromeDashAppsStrings.systemDotcpu
+  - typings.chromeDashApps.chromeDashAppsStrings.systemDotdisplay
+  - typings.chromeDashApps.chromeDashAppsStrings.systemDotmemory
+  - typings.chromeDashApps.chromeDashAppsStrings.systemDotnetwork
+  - typings.chromeDashApps.chromeDashAppsStrings.systemDotstorage
   - typings.chromeDashApps.chromeDashAppsStrings.tts
   - typings.chromeDashApps.chromeDashAppsStrings.unlimitedStorage
   - typings.chromeDashApps.chromeDashAppsStrings.usb_

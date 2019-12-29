@@ -1,10 +1,6 @@
 package typings.tsutils.utilUtilMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tsutils.utilUtilMod.SideEffectOptions.Constructor
-import typings.tsutils.utilUtilMod.SideEffectOptions.JsxElement
-import typings.tsutils.utilUtilMod.SideEffectOptions.None
-import typings.tsutils.utilUtilMod.SideEffectOptions.TaggedTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

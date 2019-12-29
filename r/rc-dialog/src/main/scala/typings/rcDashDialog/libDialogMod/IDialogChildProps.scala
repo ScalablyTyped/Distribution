@@ -3,7 +3,7 @@ package typings.rcDashDialog.libDialogMod
 import typings.rcDashDialog.Anon_X
 import typings.rcDashDialog.libIDialogPropTypesMod.IDialogPropTypes
 import typings.rcDashDialog.libIDialogPropTypesMod.IStringOrHtmlElement
-import typings.rcDashDialog.rcDashDialogNumbers.`false`
+import typings.rcDashDialog.rcDashDialogBooleans.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent

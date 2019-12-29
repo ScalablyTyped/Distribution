@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 object atPhenomnomnominalTsqueryStrings {
   @js.native
-  sealed trait `!=` extends js.Object
+  sealed trait Equalssign extends js.Object
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait ExclamationmarkEqualssign extends js.Object
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait Greaterthansign extends js.Object
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait GreaterthansignEqualssign extends js.Object
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait Lessthansign extends js.Object
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait LessthansignEqualssign extends js.Object
   
   @js.native
   sealed trait every extends js.Object
@@ -40,17 +40,17 @@ object atPhenomnomnominalTsqueryStrings {
   sealed trait `type` extends TSQueryAttributeOperatorType
   
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def every: every = "every".asInstanceOf[every]
   @scala.inline

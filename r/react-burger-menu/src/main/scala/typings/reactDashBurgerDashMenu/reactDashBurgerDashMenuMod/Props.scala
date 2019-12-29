@@ -2,7 +2,7 @@ package typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuMod
 
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod._Global_.JSX.Element
-import typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuNumbers.`false`
+import typings.reactDashBurgerDashMenu.reactDashBurgerDashMenuBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

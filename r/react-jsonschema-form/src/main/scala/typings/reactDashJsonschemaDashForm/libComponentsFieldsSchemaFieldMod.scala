@@ -1,7 +1,6 @@
 package typings.reactDashJsonschemaDashForm
 
 import typings.react.reactMod.Component
-import typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaFieldProps
 import typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormMod.FieldProps
 import typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormStrings.errorSchema
 import typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormStrings.formData

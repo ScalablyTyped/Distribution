@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.PdfViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PdfViewer.LinkTarget.Default
-import typings.ejDotWebDotAll.ej.PdfViewer.LinkTarget.NewTab
-import typings.ejDotWebDotAll.ej.PdfViewer.LinkTarget.NewWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

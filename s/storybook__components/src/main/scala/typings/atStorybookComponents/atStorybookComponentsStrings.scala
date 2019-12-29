@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object atStorybookComponentsStrings {
   @js.native
-  sealed trait `100%` extends Sizes
+  sealed trait `100Percentsign` extends Sizes
   
   @js.native
   sealed trait about extends js.Object
@@ -1161,7 +1161,7 @@ object atStorybookComponentsStrings {
   sealed trait wrap extends js.Object
   
   @scala.inline
-  def `100%`: `100%` = "100%".asInstanceOf[`100%`]
+  def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
   @scala.inline
   def about: about = "about".asInstanceOf[about]
   @scala.inline

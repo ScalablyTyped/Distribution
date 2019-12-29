@@ -1,10 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.Directions.RouteMode.driving
-import typings.bingmaps.Microsoft.Maps.Directions.RouteMode.transit
-import typings.bingmaps.Microsoft.Maps.Directions.RouteMode.truck
-import typings.bingmaps.Microsoft.Maps.Directions.RouteMode.walking
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.tstl
 import typings.tstl.iteratorIFakeMod.General
 import typings.tstl.iteratorIFakeMod.Writeonly
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.numericOperationsMod.BinaryOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

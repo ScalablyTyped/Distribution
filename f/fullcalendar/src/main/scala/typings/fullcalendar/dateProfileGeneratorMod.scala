@@ -1,6 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.dateProfileGeneratorMod.Default
 import typings.moment.momentMod.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`

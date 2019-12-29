@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +22,10 @@ trait FindTask extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def execute(params: FindParameters): IPromise[_] = js.native
-  def execute(params: FindParametersProperties): IPromise[_] = js.native
-  def execute(params: FindParametersProperties, requestOptions: js.Any): IPromise[_] = js.native
-  def execute(params: FindParameters, requestOptions: js.Any): IPromise[_] = js.native
+  def execute(params: FindParameters): js.Promise[_] = js.native
+  def execute(params: FindParametersProperties): js.Promise[_] = js.native
+  def execute(params: FindParametersProperties, requestOptions: js.Any): js.Promise[_] = js.native
+  def execute(params: FindParameters, requestOptions: js.Any): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.FindTask")

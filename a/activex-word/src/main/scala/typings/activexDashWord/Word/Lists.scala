@@ -11,7 +11,8 @@ class Lists protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Lists_typekey`: Lists = js.native
+  @JSName("Word.Lists_typekey")
+  var WordDotLists_typekey: Lists = js.native
   def Item(Index: Double): List = js.native
 }
 

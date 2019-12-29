@@ -27,7 +27,7 @@ trait ISizeModel extends IBase {
   /** [Property] (Boolean) */
   var fixed: js.UndefOr[Boolean] = js.undefined
   /** [Property] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Property] (Object) */
   var names: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Boolean) */
@@ -57,13 +57,13 @@ object ISizeModel {
     configured: js.UndefOr[Boolean] = js.undefined,
     constrainedMax: js.UndefOr[Boolean] = js.undefined,
     constrainedMin: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     fixed: js.UndefOr[Boolean] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ISizeModel = null,
     mixins: js.Any = null,
-    name: java.lang.String = null,
+    name: String = null,
     names: js.Any = null,
     natural: js.UndefOr[Boolean] = js.undefined,
     ordinal: Int | Double = null,

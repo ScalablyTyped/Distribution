@@ -1,7 +1,6 @@
 package typings.hexoDashLog
 
 import typings.hexoDashBunyan.hexoDashBunyanMod.^
-import typings.hexoDashLog.hexoDashLogMod.HexoLogger
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

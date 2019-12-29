@@ -75,12 +75,6 @@ class WebStorageSharedClientState protected () extends SharedClientState {
   var started: js.Any = js.native
   val storage: js.Any = js.native
   val storageListener: js.Any = js.native
-  /** Assembles the key for a client state in WebStorage */
-  var toWebStorageClientStateKey: js.Any = js.native
-  /** Assembles the key for a mutation batch in WebStorage */
-  var toWebStorageMutationBatchKey: js.Any = js.native
-  /** Assembles the key for a query state in WebStorage */
-  var toWebStorageQueryTargetMetadataKey: js.Any = js.native
   /* private */ def localClientState(): js.Any = js.native
 }
 

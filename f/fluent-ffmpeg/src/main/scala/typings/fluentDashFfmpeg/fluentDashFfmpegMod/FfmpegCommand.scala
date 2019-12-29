@@ -129,6 +129,7 @@ class FfmpegCommand () extends EventEmitter {
   // options/videosize
   def keepPixelAspect(): FfmpegCommand = js.native
   def kill(signal: String): FfmpegCommand = js.native
+  def loop(): FfmpegCommand = js.native
   def loop(duration: String): FfmpegCommand = js.native
   def loop(duration: Double): FfmpegCommand = js.native
   def map(spec: String): FfmpegCommand = js.native
@@ -215,7 +216,9 @@ class FfmpegCommand () extends EventEmitter {
   def usingPreset(proset: String): FfmpegCommand = js.native
   def usingPreset(proset: GetPreset): FfmpegCommand = js.native
   def videoBitrate(bitrate: String): FfmpegCommand = js.native
+  def videoBitrate(bitrate: String, constant: Boolean): FfmpegCommand = js.native
   def videoBitrate(bitrate: Double): FfmpegCommand = js.native
+  def videoBitrate(bitrate: Double, constant: Boolean): FfmpegCommand = js.native
   def videoCodec(codec: String): FfmpegCommand = js.native
   def videoFilter(filters: String): FfmpegCommand = js.native
   def videoFilter(filters: js.Array[AudioVideoFilter | String]): FfmpegCommand = js.native
@@ -273,7 +276,9 @@ class FfmpegCommand () extends EventEmitter {
   def withOutputOptions(options: js.Array[String]): FfmpegCommand = js.native
   def withSize(size: String): FfmpegCommand = js.native
   def withVideoBitrate(bitrate: String): FfmpegCommand = js.native
+  def withVideoBitrate(bitrate: String, constant: Boolean): FfmpegCommand = js.native
   def withVideoBitrate(bitrate: Double): FfmpegCommand = js.native
+  def withVideoBitrate(bitrate: Double, constant: Boolean): FfmpegCommand = js.native
   def withVideoCodec(codec: String): FfmpegCommand = js.native
   def withVideoFilter(filters: String): FfmpegCommand = js.native
   def withVideoFilter(filters: js.Array[AudioVideoFilter | String]): FfmpegCommand = js.native

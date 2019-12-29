@@ -1,9 +1,6 @@
 package typings.amapDashJsDashApiDashRiding.AMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amapDashJsDashApiDashRiding.AMap.RidingPolicy.DEFAULT
-import typings.amapDashJsDashApiDashRiding.AMap.RidingPolicy.FASTEST
-import typings.amapDashJsDashApiDashRiding.AMap.RidingPolicy.RECOMMENDED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.vsoDashNodeDashApi
 
 import typings.vsoDashNodeDashApi.clientApiBasesMod.ClientApiBase
-import typings.vsoDashNodeDashApi.dashboardApiMod.IDashboardApi
 import typings.vsoDashNodeDashApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
 import typings.vsoDashNodeDashApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
 import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.TeamContext

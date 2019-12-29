@@ -122,7 +122,7 @@ trait Model extends js.Object {
   /** Specifies the tabs and its groups. Also specifies the control details that has to be placed in the tab area in the ribbon control.
     * @Default {Array}
     */
-  var tabs: js.UndefOr[js.Array[typings.ejDotWebDotAll.ej.Ribbon.Tab]] = js.undefined
+  var tabs: js.UndefOr[js.Array[Tab]] = js.undefined
   /** Triggered when the expand/collapse button is clicked successfully .
     */
   var toggleButtonClick: js.UndefOr[js.Function1[/* e */ ToggleButtonClickEventArgs, Unit]] = js.undefined
@@ -167,7 +167,7 @@ object Model {
     tabCreate: /* e */ TabCreateEventArgs => Unit = null,
     tabRemove: /* e */ TabRemoveEventArgs => Unit = null,
     tabSelect: /* e */ TabSelectEventArgs => Unit = null,
-    tabs: js.Array[typings.ejDotWebDotAll.ej.Ribbon.Tab] = null,
+    tabs: js.Array[Tab] = null,
     toggleButtonClick: /* e */ ToggleButtonClickEventArgs => Unit = null,
     width: String | Double = null
   ): Model = {

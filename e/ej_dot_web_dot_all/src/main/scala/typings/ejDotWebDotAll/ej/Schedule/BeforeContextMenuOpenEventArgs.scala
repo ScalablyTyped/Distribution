@@ -22,7 +22,7 @@ trait BeforeContextMenuOpenEventArgs extends js.Object {
   var events: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the object of beforeContextMenuOpen event.
     */
   var `object`: js.UndefOr[js.Any] = js.undefined
@@ -42,7 +42,7 @@ object BeforeContextMenuOpenEventArgs {
     cellIndex: Int | Double = null,
     currentDate: js.Any = null,
     events: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     `object`: js.Any = null,
     resources: js.Any = null,
     `type`: String = null

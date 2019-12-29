@@ -1,6 +1,6 @@
 package typings.atStorybookAddonDashKnobs
 
-import typings.atStorybookAddonDashKnobs.atStorybookAddonDashKnobsNumbers.`true`
+import typings.atStorybookAddonDashKnobs.atStorybookAddonDashKnobsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

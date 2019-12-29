@@ -1,16 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.publicKey.aedh
-import typings.openpgp.openpgpMod.enums.publicKey.aedsa
-import typings.openpgp.openpgpMod.enums.publicKey.dsa
-import typings.openpgp.openpgpMod.enums.publicKey.ecdh
-import typings.openpgp.openpgpMod.enums.publicKey.ecdsa
-import typings.openpgp.openpgpMod.enums.publicKey.eddsa
-import typings.openpgp.openpgpMod.enums.publicKey.elgamal
-import typings.openpgp.openpgpMod.enums.publicKey.rsa_encrypt
-import typings.openpgp.openpgpMod.enums.publicKey.rsa_encrypt_sign
-import typings.openpgp.openpgpMod.enums.publicKey.rsa_sign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

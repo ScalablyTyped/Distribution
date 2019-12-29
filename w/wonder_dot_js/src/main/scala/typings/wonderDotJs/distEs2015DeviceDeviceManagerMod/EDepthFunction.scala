@@ -1,14 +1,6 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.ALWAYS
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.EQUAL
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.GEQUAL
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.GREATER
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.LEQUAL
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.LESS
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.NEVER
-import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.EDepthFunction.NOTEQUAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

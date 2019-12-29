@@ -12,7 +12,8 @@ class ProofreadingErrors protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val Type: WdProofreadingErrorType = js.native
-  var `Word.ProofreadingErrors_typekey`: ProofreadingErrors = js.native
+  @JSName("Word.ProofreadingErrors_typekey")
+  var WordDotProofreadingErrors_typekey: ProofreadingErrors = js.native
   def Item(Index: Double): Range = js.native
 }
 

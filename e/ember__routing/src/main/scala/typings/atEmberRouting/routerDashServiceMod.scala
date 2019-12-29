@@ -4,8 +4,6 @@ import typings.atEmberRouting.atEmberRoutingStrings.routeDidChange
 import typings.atEmberRouting.atEmberRoutingStrings.routeWillChange
 import typings.atEmberRouting.dashPrivateRouteDashInfoMod.RouteInfo
 import typings.atEmberRouting.dashPrivateTransitionMod.Transition
-import typings.atEmberRouting.routerDashServiceMod.RouteModel
-import typings.atEmberRouting.routerDashServiceMod.RouterService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

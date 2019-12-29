@@ -15,10 +15,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Cluster extends EventEmitter {
+  val SCHED_NONE: Double = js.native
+  val SCHED_RR: Double = js.native
   var Worker: typings.node.clusterMod.Worker = js.native
   var isMaster: Boolean = js.native
   var isWorker: Boolean = js.native
-  // TODO: cluster.schedulingPolicy
+  var schedulingPolicy: Double = js.native
   var settings: ClusterSettings = js.native
   var worker: js.UndefOr[Worker] = js.native
   var workers: js.UndefOr[StringDictionary[js.UndefOr[Worker]]] = js.native
@@ -27,7 +29,7 @@ trait Cluster extends EventEmitter {
   @JSName("addListener")
   def addListener_exit(
     event: exit,
-    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ java.lang.String, Unit]
+    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_fork(event: typings.node.nodeStrings.fork, listener: js.Function1[/* worker */ Worker, Unit]): this.type = js.native
@@ -48,7 +50,7 @@ trait Cluster extends EventEmitter {
   @JSName("emit")
   def emit_disconnect(event: typings.node.nodeStrings.disconnect, worker: Worker): Boolean = js.native
   @JSName("emit")
-  def emit_exit(event: exit, worker: Worker, code: Double, signal: java.lang.String): Boolean = js.native
+  def emit_exit(event: exit, worker: Worker, code: Double, signal: String): Boolean = js.native
   @JSName("emit")
   def emit_fork(event: typings.node.nodeStrings.fork, worker: Worker): Boolean = js.native
   @JSName("emit")
@@ -68,7 +70,7 @@ trait Cluster extends EventEmitter {
   @JSName("on")
   def on_exit(
     event: exit,
-    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ java.lang.String, Unit]
+    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ String, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_fork(event: typings.node.nodeStrings.fork, listener: js.Function1[/* worker */ Worker, Unit]): this.type = js.native
@@ -89,7 +91,7 @@ trait Cluster extends EventEmitter {
   @JSName("once")
   def once_exit(
     event: exit,
-    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ java.lang.String, Unit]
+    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_fork(event: typings.node.nodeStrings.fork, listener: js.Function1[/* worker */ Worker, Unit]): this.type = js.native
@@ -110,7 +112,7 @@ trait Cluster extends EventEmitter {
   @JSName("prependListener")
   def prependListener_exit(
     event: exit,
-    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ java.lang.String, Unit]
+    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ String, Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_fork(event: typings.node.nodeStrings.fork, listener: js.Function1[/* worker */ Worker, Unit]): this.type = js.native
@@ -131,7 +133,7 @@ trait Cluster extends EventEmitter {
   @JSName("prependOnceListener")
   def prependOnceListener_exit(
     event: exit,
-    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ java.lang.String, Unit]
+    listener: js.Function3[/* worker */ Worker, /* code */ Double, /* signal */ String, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_fork(event: typings.node.nodeStrings.fork, listener: js.Function1[/* worker */ Worker, Unit]): this.type = js.native

@@ -1,9 +1,6 @@
 package typings.htmlDashValidator.htmlDashValidatorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageTypes.`non-document-error`
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageTypes.error
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageTypes.info
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

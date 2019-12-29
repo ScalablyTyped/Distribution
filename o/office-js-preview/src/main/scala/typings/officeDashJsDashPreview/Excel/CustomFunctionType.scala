@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.CustomFunctionType.invalid
-import typings.officeDashJsDashPreview.Excel.CustomFunctionType.script
-import typings.officeDashJsDashPreview.Excel.CustomFunctionType.webService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

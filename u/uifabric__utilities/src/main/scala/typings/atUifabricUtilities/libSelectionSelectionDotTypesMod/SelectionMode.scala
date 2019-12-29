@@ -1,9 +1,6 @@
 package typings.atUifabricUtilities.libSelectionSelectionDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionMode.multiple
-import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionMode.none
-import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionMode.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

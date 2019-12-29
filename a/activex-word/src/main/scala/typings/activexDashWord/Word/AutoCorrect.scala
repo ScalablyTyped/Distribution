@@ -29,6 +29,7 @@ class AutoCorrect protected () extends js.Object {
   var ReplaceTextFromSpellingChecker: Boolean = js.native
   var TwoInitialCapsAutoAdd: Boolean = js.native
   val TwoInitialCapsExceptions: typings.activexDashWord.Word.TwoInitialCapsExceptions = js.native
-  var `Word.AutoCorrect_typekey`: AutoCorrect = js.native
+  @JSName("Word.AutoCorrect_typekey")
+  var WordDotAutoCorrect_typekey: AutoCorrect = js.native
 }
 

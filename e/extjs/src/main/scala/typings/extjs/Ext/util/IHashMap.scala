@@ -32,7 +32,7 @@ trait IHashMap extends IObservable {
   		* @param key String The key to check for.
   		* @returns Boolean True if they key exists in the hash.
   		*/
-  var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Executes the specified function once for each item in the hash
   		* @param fn Function The function to execute.
   		* @param scope Object The scope to execute in. Defaults to this.
@@ -45,7 +45,7 @@ trait IHashMap extends IObservable {
   		* @param key String The key to lookup.
   		* @returns Object The value at that key. If it doesn't exist, undefined is returned.
   		*/
-  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Gets the number of items in the hash
   		* @returns Number The number of items in the hash.
   		*/
@@ -54,7 +54,7 @@ trait IHashMap extends IObservable {
   		* @param o Object The object to get the key from
   		* @returns String The key to use.
   		*/
-  var getKey: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var getKey: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Return all of the keys in the hash
   		* @returns Array An array of keys.
   		*/
@@ -74,15 +74,13 @@ trait IHashMap extends IObservable {
   		* @param key String The key to remove.
   		* @returns Boolean True if the item was successfully removed.
   		*/
-  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Replaces an item in the hash
   		* @param key String The key of the item.
   		* @param value Object The new value for the item.
   		* @returns Object The new value of the item.
   		*/
-  var replace: js.UndefOr[
-    js.Function2[/* key */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], _]
-  ] = js.undefined
+  var replace: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], _]] = js.undefined
 }
 
 object IHashMap {
@@ -103,19 +101,19 @@ object IHashMap {
     clone: () => IHashMap = null,
     config: js.Any = null,
     contains: /* value */ js.UndefOr[js.Any] => Boolean = null,
-    containsKey: /* key */ js.UndefOr[java.lang.String] => Boolean = null,
+    containsKey: /* key */ js.UndefOr[String] => Boolean = null,
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IHashMap = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    get: /* key */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    get: /* key */ js.UndefOr[String] => _ = null,
     getCount: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getKey: /* o */ js.UndefOr[js.Any] => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getKey: /* o */ js.UndefOr[js.Any] => String = null,
     getKeys: () => Array = null,
     getValues: () => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IHashMap = null,
@@ -126,12 +124,12 @@ object IHashMap {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     remove: /* o */ js.UndefOr[js.Any] => Boolean = null,
-    removeAtKey: /* key */ js.UndefOr[java.lang.String] => Boolean = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeAtKey: /* key */ js.UndefOr[String] => Boolean = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    replace: (/* key */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any]) => _ = null,
+    replace: (/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => _ = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
@@ -140,7 +138,7 @@ object IHashMap {
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IHashMap = {
     val __obj = js.Dynamic.literal()

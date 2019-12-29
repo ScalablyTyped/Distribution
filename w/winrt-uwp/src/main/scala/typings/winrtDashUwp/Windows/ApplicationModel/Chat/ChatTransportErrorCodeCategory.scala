@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportErrorCodeCategory.http
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportErrorCodeCategory.mmsServer
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportErrorCodeCategory.network
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportErrorCodeCategory.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

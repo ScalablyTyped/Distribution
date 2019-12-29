@@ -43,11 +43,9 @@ trait Stack[This, Datum, Key] extends js.Object {
     keys: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, js.Array[Key]]
   ): this.type = js.native
   /**
-    * Reset the offset to use stackOffsetNone; this uses a zero baseline.
-    *
-    * @param offset null to set to the default stackOffsetNone.
+    * Returns the current offset accessor, which defaults to stackOffsetNone; this uses a zero baseline.
     */
-  def offset(): this.type = js.native
+  def offset(): js.Function2[/* series */ Series[Datum, Key], /* order */ js.Array[Double], Unit] = js.native
   /**
     * Sets the offset accessor to the specified function and returns this stack generator.
     *
@@ -56,16 +54,16 @@ trait Stack[This, Datum, Key] extends js.Object {
     */
   def offset(offset: js.Function2[/* series */ Series[Datum, Key], /* order */ js.Array[Double], Unit]): this.type = js.native
   /**
-    * Returns the current offset accessor, which defaults to stackOffsetNone; this uses a zero baseline.
+    * Reset the offset to use stackOffsetNone; this uses a zero baseline.
+    *
+    * @param offset null to set to the default stackOffsetNone.
     */
   @JSName("offset")
-  def offset_Function2(): js.Function2[/* series */ Series[Datum, Key], /* order */ js.Array[Double], Unit] = js.native
+  def offset_This(): this.type = js.native
   /**
-    * Reset the order to use stackOrderNone; this uses the order given by the key accessor.
-    *
-    * @param order null to set to the default stackOrderNone.
+    * Returns the current order accessor, which defaults to stackOrderNone; this uses the order given by the key accessor.
     */
-  def order(): this.type = js.native
+  def order(): js.Function1[/* series */ Series[Datum, Key], js.Array[Double]] = js.native
   /**
     * Sets the order accessor to the specified array and returns this stack generator.
     *
@@ -87,10 +85,12 @@ trait Stack[This, Datum, Key] extends js.Object {
     */
   def order(order: js.Function1[/* series */ Series[Datum, Key], js.Array[Double]]): this.type = js.native
   /**
-    * Returns the current order accessor, which defaults to stackOrderNone; this uses the order given by the key accessor.
+    * Reset the order to use stackOrderNone; this uses the order given by the key accessor.
+    *
+    * @param order null to set to the default stackOrderNone.
     */
   @JSName("order")
-  def order_Function1(): js.Function1[/* series */ Series[Datum, Key], js.Array[Double]] = js.native
+  def order_This(): this.type = js.native
   /**
     * Returns the current value accessor, which defaults to a function return the property corresponding to the relevant key from the data element.
     *

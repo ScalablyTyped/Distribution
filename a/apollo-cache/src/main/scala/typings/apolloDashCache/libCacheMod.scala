@@ -1,7 +1,5 @@
 package typings.apolloDashCache
 
-import typings.apolloDashCache.libCacheMod.ApolloCache
-import typings.apolloDashCache.libCacheMod.Transaction
 import typings.apolloDashCache.libTypesCacheMod.Cache.DiffOptions
 import typings.apolloDashCache.libTypesCacheMod.Cache.DiffResult
 import typings.apolloDashCache.libTypesCacheMod.Cache.EvictOptions

@@ -1,7 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.DestinationType.SPREADSHEET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

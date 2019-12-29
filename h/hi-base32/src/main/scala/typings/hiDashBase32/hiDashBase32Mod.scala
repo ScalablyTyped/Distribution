@@ -1,7 +1,5 @@
 package typings.hiDashBase32
 
-import typings.hiDashBase32.hiDashBase32Mod.Decode
-import typings.hiDashBase32.hiDashBase32Mod.Input
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js

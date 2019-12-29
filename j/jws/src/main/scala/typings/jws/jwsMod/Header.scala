@@ -23,7 +23,7 @@ object Header {
     typ: String = null,
     x5c: js.Array[String] = null,
     x5t: String = null,
-    `x5t#S256`: String = null,
+    x5tNumbersignS256: String = null,
     x5u: String = null
   ): Header = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object Header {
     if (typ != null) __obj.updateDynamic("typ")(typ.asInstanceOf[js.Any])
     if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
     if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
+    if (x5tNumbersignS256 != null) __obj.updateDynamic("x5t#S256")(x5tNumbersignS256.asInstanceOf[js.Any])
     if (x5u != null) __obj.updateDynamic("x5u")(x5u.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }

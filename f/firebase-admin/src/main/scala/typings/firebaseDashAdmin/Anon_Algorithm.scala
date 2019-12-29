@@ -51,7 +51,7 @@ trait Anon_Algorithm extends js.Object {
     * The salt separator in buffer bytes which is appended to salt when
     * verifying a password. This is only used by the `SCRYPT` algorithm.
     */
-  var saltSeparator: js.UndefOr[String] = js.undefined
+  var saltSeparator: js.UndefOr[Buffer] = js.undefined
 }
 
 object Anon_Algorithm {
@@ -64,7 +64,7 @@ object Anon_Algorithm {
     memoryCost: Int | Double = null,
     parallelization: Int | Double = null,
     rounds: Int | Double = null,
-    saltSeparator: String = null
+    saltSeparator: Buffer = null
   ): Anon_Algorithm = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])

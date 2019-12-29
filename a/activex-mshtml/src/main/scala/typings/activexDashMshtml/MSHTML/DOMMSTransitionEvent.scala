@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMMSTransitionEvent")
 @js.native
 class DOMMSTransitionEvent protected () extends js.Object {
-  var `MSHTML.DOMMSTransitionEvent_typekey`: DOMMSTransitionEvent = js.native
+  @JSName("MSHTML.DOMMSTransitionEvent_typekey")
+  var MSHTMLDotDOMMSTransitionEvent_typekey: DOMMSTransitionEvent = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   val cancelable: Boolean = js.native

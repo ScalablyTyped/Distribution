@@ -1,6 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod
 
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`false`
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactBooleans.`false`
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

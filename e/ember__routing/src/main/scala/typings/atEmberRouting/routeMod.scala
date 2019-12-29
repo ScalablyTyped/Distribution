@@ -2,7 +2,6 @@ package typings.atEmberRouting
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atEmberRouting.dashPrivateTransitionMod.Transition
-import typings.atEmberRouting.routeMod.Route
 import typings.atEmberRouting.typesMod.RenderOptions
 import typings.atEmberRouting.typesMod.RouteQueryParam
 import scala.scalajs.js

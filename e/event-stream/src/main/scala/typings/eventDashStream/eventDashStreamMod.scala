@@ -1,6 +1,5 @@
 package typings.eventDashStream
 
-import typings.eventDashStream.eventDashStreamMod.MapStream
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.node.streamMod.internal

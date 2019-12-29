@@ -1,10 +1,6 @@
 package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UserProfiles.SocialDataStoreExceptionCode.cannotCreatePersonalSite
-import typings.sharepoint.SP.UserProfiles.SocialDataStoreExceptionCode.noSocialFeatures
-import typings.sharepoint.SP.UserProfiles.SocialDataStoreExceptionCode.personalSiteNotFound
-import typings.sharepoint.SP.UserProfiles.SocialDataStoreExceptionCode.socialListNotFound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

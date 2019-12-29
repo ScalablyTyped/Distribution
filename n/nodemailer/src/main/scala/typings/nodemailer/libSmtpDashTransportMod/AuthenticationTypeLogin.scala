@@ -1,7 +1,7 @@
 package typings.nodemailer.libSmtpDashTransportMod
 
 import typings.nodemailer.libSmtpDashConnectionMod.Credentials
-import typings.nodemailer.nodemailerNumbers.`false`
+import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerStrings.LOGIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,8 +1,9 @@
 package typings.atJupyterlabDocumentsearch
 
-import typings.atJupyterlabDocumentsearch.atJupyterlabDocumentsearchNumbers.`false`
+import typings.atJupyterlabDocumentsearch.atJupyterlabDocumentsearchBooleans.`false`
 import typings.atJupyterlabDocumentsearch.libInterfacesMod.ISearchMatch
 import typings.atJupyterlabDocumentsearch.libInterfacesMod.ISearchProvider
+import typings.atJupyterlabNotebook.atJupyterlabNotebookMod.NotebookPanel
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import typings.std.RegExp
@@ -14,10 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libProvidersNotebooksearchproviderMod extends js.Object {
   @js.native
-  class NotebookSearchProvider ()
-    extends ISearchProvider[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotebookPanel */ js.Any
-        ] {
+  class NotebookSearchProvider () extends ISearchProvider[NotebookPanel] {
     var _cellsWithMatches: js.Any = js.native
     var _changed: js.Any = js.native
     var _cmSearchProviders: js.Any = js.native
@@ -43,12 +41,7 @@ object libProvidersNotebooksearchproviderMod extends js.Object {
       * Signal indicating that something in the search has changed, so the UI should update
       */
     /* CompleteClass */
-    override val changed: ISignal[
-        ISearchProvider[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotebookPanel */ js.Any
-        ], 
-        Unit
-      ] = js.native
+    override val changed: ISignal[ISearchProvider[NotebookPanel], Unit] = js.native
     /**
       * Signal indicating that something in the search has changed, so the UI should update
       */
@@ -109,9 +102,7 @@ object libProvidersNotebooksearchproviderMod extends js.Object {
       * @returns Initial value used to populate the search box.
       */
     /* CompleteClass */
-    override def getInitialQuery(
-      searchTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotebookPanel */ js.Any
-    ): js.Any = js.native
+    override def getInitialQuery(searchTarget: NotebookPanel): js.Any = js.native
     /**
       * Move the current match indicator to the next match.
       *
@@ -150,10 +141,7 @@ object libProvidersNotebooksearchproviderMod extends js.Object {
       * @returns A promise that resolves with a list of all matches
       */
     /* CompleteClass */
-    override def startQuery(
-      query: RegExp,
-      searchTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotebookPanel */ js.Any
-    ): js.Promise[js.Array[ISearchMatch]] = js.native
+    override def startQuery(query: RegExp, searchTarget: NotebookPanel): js.Promise[js.Array[ISearchMatch]] = js.native
   }
   
   /* static members */
@@ -162,7 +150,7 @@ object libProvidersNotebooksearchproviderMod extends js.Object {
     /**
       * Report whether or not this provider has the ability to search on the given object
       */
-    def canSearchOn(domain: Widget): /* is / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotebookPanel * / any */ Boolean = js.native
+    def canSearchOn(domain: Widget): /* is @jupyterlab/notebook.@jupyterlab/notebook.NotebookPanel */ Boolean = js.native
   }
   
 }

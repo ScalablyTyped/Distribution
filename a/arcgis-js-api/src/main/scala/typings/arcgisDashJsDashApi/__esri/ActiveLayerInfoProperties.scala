@@ -12,7 +12,7 @@ trait ActiveLayerInfoProperties extends js.Object {
     */
   var children: js.UndefOr[CollectionProperties[ActiveLayerInfoProperties]] = js.undefined
   /**
-    * Indicates if the legend's display of the layer's renderer is driven by the scale of the view. This is true of [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) renderers, any renderer that uses a `valueExpression` (Arcade expression), or another renderer such as [DotDensityRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html).
+    * Indicates if the legend's display of the layer's renderer is driven by the scale of the view. This is true of [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) renderers, any renderer that uses a `valueExpression` (Arcade expression), [DotDensityRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html), and layers that have [clustering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#featureReduction) enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#isScaleDriven)
     */

@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
+import typings.phaser.Phaser.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +40,7 @@ class Grid protected ()
     * @param outlineFillAlpha The alpha of the lines between the grid cells.
     */
   def this(
-    scene: typings.phaser.Phaser.Scene,
+    scene: Scene,
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],
     width: js.UndefOr[Double],

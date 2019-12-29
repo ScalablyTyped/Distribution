@@ -1,19 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapValueType.TWTY_BOOL
-import typings.dwt.EnumDWT_CapValueType.TWTY_FIX32
-import typings.dwt.EnumDWT_CapValueType.TWTY_FRAME
-import typings.dwt.EnumDWT_CapValueType.TWTY_INT16
-import typings.dwt.EnumDWT_CapValueType.TWTY_INT32
-import typings.dwt.EnumDWT_CapValueType.TWTY_INT8
-import typings.dwt.EnumDWT_CapValueType.TWTY_STR128
-import typings.dwt.EnumDWT_CapValueType.TWTY_STR255
-import typings.dwt.EnumDWT_CapValueType.TWTY_STR32
-import typings.dwt.EnumDWT_CapValueType.TWTY_STR64
-import typings.dwt.EnumDWT_CapValueType.TWTY_UINT16
-import typings.dwt.EnumDWT_CapValueType.TWTY_UINT8
-import typings.dwt.EnumDWT_CapValueType.TWTY_int
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

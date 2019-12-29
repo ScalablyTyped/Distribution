@@ -22,7 +22,8 @@ class TableOfContents protected () extends js.Object {
   var UseFields: Boolean = js.native
   var UseHeadingStyles: Boolean = js.native
   var UseHyperlinks: Boolean = js.native
-  var `Word.TableOfContents_typekey`: TableOfContents = js.native
+  @JSName("Word.TableOfContents_typekey")
+  var WordDotTableOfContents_typekey: TableOfContents = js.native
   def Delete(): Unit = js.native
   def Update(): Unit = js.native
   def UpdatePageNumbers(): Unit = js.native

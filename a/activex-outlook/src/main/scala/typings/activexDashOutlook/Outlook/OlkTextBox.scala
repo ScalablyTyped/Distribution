@@ -30,7 +30,8 @@ class OlkTextBox protected () extends js.Object {
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
   var MultiLine: Boolean = js.native
-  var `Outlook.OlkTextBox_typekey`: OlkTextBox = js.native
+  @JSName("Outlook.OlkTextBox_typekey")
+  var OutlookDotOlkTextBox_typekey: OlkTextBox = js.native
   var PasswordChar: String = js.native
   var Scrollbars: OlScrollBars = js.native
   var SelLength: Double = js.native

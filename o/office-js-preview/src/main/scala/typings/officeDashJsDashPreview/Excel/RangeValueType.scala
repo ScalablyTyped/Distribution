@@ -1,14 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.RangeValueType.boolean
-import typings.officeDashJsDashPreview.Excel.RangeValueType.double
-import typings.officeDashJsDashPreview.Excel.RangeValueType.empty
-import typings.officeDashJsDashPreview.Excel.RangeValueType.error
-import typings.officeDashJsDashPreview.Excel.RangeValueType.integer
-import typings.officeDashJsDashPreview.Excel.RangeValueType.richValue
-import typings.officeDashJsDashPreview.Excel.RangeValueType.string
-import typings.officeDashJsDashPreview.Excel.RangeValueType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

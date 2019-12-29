@@ -17,6 +17,7 @@ class Section protected () extends js.Object {
   val Parent: js.Any = js.native
   var ProtectedForForms: Boolean = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
-  var `Word.Section_typekey`: Section = js.native
+  @JSName("Word.Section_typekey")
+  var WordDotSection_typekey: Section = js.native
 }
 

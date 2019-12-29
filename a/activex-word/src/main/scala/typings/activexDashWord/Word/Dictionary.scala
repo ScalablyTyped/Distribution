@@ -16,7 +16,8 @@ class Dictionary protected () extends js.Object {
   val Path: String = js.native
   val ReadOnly: Boolean = js.native
   val Type: WdDictionaryType = js.native
-  var `Word.Dictionary_typekey`: Dictionary = js.native
+  @JSName("Word.Dictionary_typekey")
+  var WordDotDictionary_typekey: Dictionary = js.native
   def Delete(): Unit = js.native
 }
 

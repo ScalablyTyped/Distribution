@@ -18,7 +18,7 @@ trait LinkRadial[This, LinkDatum, NodeDatum] extends js.Object {
     *
     * @param d The datum for which the link is to be generated.
     */
-  def apply(`this`: This, d: LinkDatum, args: js.Any*): String | Null = js.native
+  def apply(d: LinkDatum, args: js.Any*): String | Null = js.native
   /**
     * Returns the current angle accessor, which defaults to a function accepting an number array
     * as its argument an returning the first element of the array.

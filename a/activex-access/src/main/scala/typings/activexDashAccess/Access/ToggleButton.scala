@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.ToggleButton")
 @js.native
 class ToggleButton protected () extends js.Object {
-  var `Access.ToggleButton_typekey`: ToggleButton = js.native
+  @JSName("Access.ToggleButton_typekey")
+  var AccessDotToggleButton_typekey: ToggleButton = js.native
   var AddColon: Boolean = js.native
   var AfterUpdate: String = js.native
   var AfterUpdateMacro: String = js.native

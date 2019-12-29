@@ -6,8 +6,6 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import typings.std.SVGGraphicsElement
 import typings.typesettable.buildSrcContextsCanvasMod.ICanvasFontStyle
-import typings.typesettable.buildSrcContextsMod.IPenFactoryContext
-import typings.typesettable.buildSrcContextsMod.IRulerFactoryContext
 import typings.typesettable.buildSrcMeasurersAbstractMeasurerMod.IDimensions
 import typings.typesettable.buildSrcMeasurersAbstractMeasurerMod.IRuler
 import typings.typesettable.buildSrcMeasurersAbstractMeasurerMod.IRulerFactory

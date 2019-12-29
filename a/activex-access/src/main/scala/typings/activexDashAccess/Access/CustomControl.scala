@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class CustomControl protected () extends js.Object {
   var About: String = js.native
-  var `Access.CustomControl_typekey`: CustomControl = js.native
+  @JSName("Access.CustomControl_typekey")
+  var AccessDotCustomControl_typekey: CustomControl = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var BorderColor: Double = js.native
   var BorderLineStyle: Double = js.native

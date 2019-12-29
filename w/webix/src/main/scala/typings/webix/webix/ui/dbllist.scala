@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("webix.ui.dbllist")
 @js.native
 class dbllist () extends baseview {
-  @JSName("$$")
-  var $$: js.Any = js.native
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
+  @JSName("$$")
+  var DollarDollar: js.Any = js.native
   @JSName("config")
   var config_dbllist: dbllistConfig = js.native
   @JSName("$onLoad")

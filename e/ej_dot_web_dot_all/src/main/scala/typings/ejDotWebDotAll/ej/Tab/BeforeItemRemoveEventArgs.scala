@@ -13,7 +13,7 @@ trait BeforeItemRemoveEventArgs extends js.Object {
   var index: js.UndefOr[Double] = js.undefined
   /** returns the tab model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Tab.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object BeforeItemRemoveEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
-    model: typings.ejDotWebDotAll.ej.Tab.Model = null,
+    model: Model = null,
     `type`: String = null
   ): BeforeItemRemoveEventArgs = {
     val __obj = js.Dynamic.literal()

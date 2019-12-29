@@ -1,11 +1,6 @@
 package typings.lovefield.lovefieldMod.schema
 
 import org.scalablytyped.runtime.TopLevel
-import typings.lovefield.lovefieldMod.schema.DataStoreType.FIREBASE
-import typings.lovefield.lovefieldMod.schema.DataStoreType.INDEXED_DB
-import typings.lovefield.lovefieldMod.schema.DataStoreType.LOCAL_STORAGE
-import typings.lovefield.lovefieldMod.schema.DataStoreType.MEMORY
-import typings.lovefield.lovefieldMod.schema.DataStoreType.WEB_SQL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

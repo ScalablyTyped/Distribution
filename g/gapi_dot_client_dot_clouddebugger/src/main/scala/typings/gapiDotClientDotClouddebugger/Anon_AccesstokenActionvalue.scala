@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenActionvalue extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Only breakpoints with the specified action will pass the filter. */
-  var `action.value`: js.UndefOr[String] = js.native
+  @JSName("action.value")
+  var actionDotvalue: js.UndefOr[String] = js.native
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.native
   /** OAuth bearer token. */

@@ -1,6 +1,6 @@
 package typings.atAntDashDesignReactDashNative.libListMod
 
-import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeNumbers.`false`
+import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeBooleans.`false`
 import typings.atAntDashDesignReactDashNative.libListPropsTypeMod.ListPropsType
 import typings.atAntDashDesignReactDashNative.libListStyleMod.ListStyle
 import typings.atAntDashDesignReactDashNative.libStyleMod.WithThemeStyles

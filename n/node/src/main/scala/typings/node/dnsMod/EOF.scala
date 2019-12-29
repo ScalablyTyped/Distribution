@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dns", "EOF")
 @js.native
-object EOF
-  extends TopLevel[java.lang.String]
+object EOF extends TopLevel[String]
 

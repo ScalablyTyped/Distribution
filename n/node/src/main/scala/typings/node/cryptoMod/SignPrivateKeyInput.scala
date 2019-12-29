@@ -15,10 +15,10 @@ trait SignPrivateKeyInput
 object SignPrivateKeyInput {
   @scala.inline
   def apply(
-    key: java.lang.String | Buffer,
+    key: String | Buffer,
     format: KeyFormat = null,
     padding: Int | Double = null,
-    passphrase: java.lang.String | Buffer = null,
+    passphrase: String | Buffer = null,
     saltLength: Int | Double = null,
     `type`: pkcs1 | pkcs8 | sec1 = null
   ): SignPrivateKeyInput = {

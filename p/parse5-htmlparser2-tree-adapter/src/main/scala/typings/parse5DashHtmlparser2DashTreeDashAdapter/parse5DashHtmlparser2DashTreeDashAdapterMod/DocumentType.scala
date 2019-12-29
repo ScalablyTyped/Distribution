@@ -1,6 +1,6 @@
 package typings.parse5DashHtmlparser2DashTreeDashAdapter.parse5DashHtmlparser2DashTreeDashAdapterMod
 
-import typings.parse5DashHtmlparser2DashTreeDashAdapter.parse5DashHtmlparser2DashTreeDashAdapterStrings.`!doctype`
+import typings.parse5DashHtmlparser2DashTreeDashAdapter.parse5DashHtmlparser2DashTreeDashAdapterStrings.Exclamationmarkdoctype
 import typings.parse5DashHtmlparser2DashTreeDashAdapter.parse5DashHtmlparser2DashTreeDashAdapterStrings.directive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait DocumentType extends Node {
   /**
     * Node name.
     */
-  var name: `!doctype`
+  var name: Exclamationmarkdoctype
   /**
     * The type of the node.
     */
@@ -41,7 +41,7 @@ object DocumentType {
   @scala.inline
   def apply(
     data: String,
-    name: `!doctype`,
+    name: Exclamationmarkdoctype,
     next: Node,
     nextSibling: Node,
     nodeType: Double,

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLDOMNode3")
 @js.native
 class IHTMLDOMNode3 protected () extends js.Object {
-  var `MSHTML.IHTMLDOMNode3_typekey`: IHTMLDOMNode3 = js.native
+  @JSName("MSHTML.IHTMLDOMNode3_typekey")
+  var MSHTMLDotIHTMLDOMNode3_typekey: IHTMLDOMNode3 = js.native
   val localName: js.Any = js.native
   val namespaceURI: js.Any = js.native
   var prefix: js.Any = js.native

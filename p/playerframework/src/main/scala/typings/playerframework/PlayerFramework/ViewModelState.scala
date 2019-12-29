@@ -1,10 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.ViewModelState.loading
-import typings.playerframework.PlayerFramework.ViewModelState.paused
-import typings.playerframework.PlayerFramework.ViewModelState.playing
-import typings.playerframework.PlayerFramework.ViewModelState.unloaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object chaiDashUuidStrings {
   @js.native
-  sealed trait Empty extends UuidVersion
+  sealed trait _empty extends UuidVersion
   
   @js.native
   sealed trait v1 extends UuidVersion
@@ -25,7 +25,7 @@ object chaiDashUuidStrings {
   sealed trait v5 extends UuidVersion
   
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
   @scala.inline

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.auto
-import typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.direct
-import typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.smooth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

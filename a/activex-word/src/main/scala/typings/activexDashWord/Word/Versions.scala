@@ -12,7 +12,8 @@ class Versions protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Versions_typekey`: Versions = js.native
+  @JSName("Word.Versions_typekey")
+  var WordDotVersions_typekey: Versions = js.native
   def Item(Index: Double): Version = js.native
   def Save(): Unit = js.native
   def Save(Comment: js.Any): Unit = js.native

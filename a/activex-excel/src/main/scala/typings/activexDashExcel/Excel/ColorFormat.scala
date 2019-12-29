@@ -13,7 +13,8 @@ class ColorFormat protected () extends js.Object {
   val Application: js.Any = js.native
   var Brightness: Double = js.native
   val Creator: Double = js.native
-  var `Excel.ColorFormat_typekey`: ColorFormat = js.native
+  @JSName("Excel.ColorFormat_typekey")
+  var ExcelDotColorFormat_typekey: ColorFormat = js.native
   var ObjectThemeColor: MsoThemeColorIndex = js.native
   val Parent: js.Any = js.native
   var RGB: MsoRGBType = js.native

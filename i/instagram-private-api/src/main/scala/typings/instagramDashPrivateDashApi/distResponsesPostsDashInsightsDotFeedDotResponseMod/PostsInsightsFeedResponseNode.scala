@@ -41,7 +41,7 @@ object PostsInsightsFeedResponseNode {
     shopping_outbound_click_count: Int | Double = null,
     shopping_product_click_count: Int | Double = null,
     value: Int | Double = null,
-    video_view_count: Null = null
+    video_view_count: js.UndefOr[scala.Nothing] = js.undefined
   ): PostsInsightsFeedResponseNode = {
     val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any])
     if (comment_count != null) __obj.updateDynamic("comment_count")(comment_count.asInstanceOf[js.Any])
@@ -58,7 +58,7 @@ object PostsInsightsFeedResponseNode {
     if (shopping_outbound_click_count != null) __obj.updateDynamic("shopping_outbound_click_count")(shopping_outbound_click_count.asInstanceOf[js.Any])
     if (shopping_product_click_count != null) __obj.updateDynamic("shopping_product_click_count")(shopping_product_click_count.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (video_view_count != null) __obj.updateDynamic("video_view_count")(video_view_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(video_view_count)) __obj.updateDynamic("video_view_count")(video_view_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseNode]
   }
 }

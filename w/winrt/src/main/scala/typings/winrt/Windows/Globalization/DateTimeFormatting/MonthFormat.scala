@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.abbreviated
-import typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.default
-import typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.full
-import typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.none
-import typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.numeric
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class ProtectedViewWindows protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.ProtectedViewWindows_typekey`: ProtectedViewWindows = js.native
+  @JSName("Word.ProtectedViewWindows_typekey")
+  var WordDotProtectedViewWindows_typekey: ProtectedViewWindows = js.native
   def Item(Index: js.Any): ProtectedViewWindow = js.native
   def Open(FileName: js.Any): ProtectedViewWindow = js.native
   def Open(FileName: js.Any, AddToRecentFiles: js.Any): ProtectedViewWindow = js.native

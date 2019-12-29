@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.geomGeometryLayoutMod.GeometryLayout
-import typings.ol.geomPolygonMod.Polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

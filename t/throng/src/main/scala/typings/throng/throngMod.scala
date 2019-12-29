@@ -1,8 +1,5 @@
 package typings.throng
 
-import typings.throng.throngMod.Options
-import typings.throng.throngMod.ProcessCallback
-import typings.throng.throngMod.WorkerCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

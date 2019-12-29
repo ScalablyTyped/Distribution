@@ -6,7 +6,6 @@ import typings.jestDashWorker.buildTypesMod.OnStart
 import typings.jestDashWorker.buildTypesMod.WorkerInterface
 import typings.jestDashWorker.buildTypesMod.WorkerOptions
 import typings.jestDashWorker.buildTypesMod.WorkerPoolInterface
-import typings.jestDashWorker.buildWorkerPoolMod.WorkerPool
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

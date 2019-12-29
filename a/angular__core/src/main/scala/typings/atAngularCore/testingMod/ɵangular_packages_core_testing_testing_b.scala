@@ -18,13 +18,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core/testing", "ɵangular_packages_core_testing_testing_b")
+@JSImport("@angular/core/testing", "\u0275angular_packages_core_testing_testing_b")
 @js.native
 class ɵangular_packages_core_testing_testing_b ()
   extends typings.atAngularCore.testingTestingMod.ɵangular_packages_core_testing_testing_b
 
 /* static members */
-@JSImport("@angular/core/testing", "ɵangular_packages_core_testing_testing_b")
+@JSImport("@angular/core/testing", "\u0275angular_packages_core_testing_testing_b")
 @js.native
 object ɵangular_packages_core_testing_testing_b extends js.Object {
   /**

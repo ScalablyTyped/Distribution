@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLMediaElement")
 @js.native
 class HTMLMediaElement protected () extends js.Object {
-  var `MSHTML.HTMLMediaElement_typekey`: HTMLMediaElement = js.native
+  @JSName("MSHTML.HTMLMediaElement_typekey")
+  var MSHTMLDotHTMLMediaElement_typekey: HTMLMediaElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

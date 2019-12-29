@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.ISVGViewSpec")
 @js.native
 class ISVGViewSpec protected () extends js.Object {
-  var `MSHTML.ISVGViewSpec_typekey`: ISVGViewSpec = js.native
+  @JSName("MSHTML.ISVGViewSpec_typekey")
+  var MSHTMLDotISVGViewSpec_typekey: ISVGViewSpec = js.native
 }
 

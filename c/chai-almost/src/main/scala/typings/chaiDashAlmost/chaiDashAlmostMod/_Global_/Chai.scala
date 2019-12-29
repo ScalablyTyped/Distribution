@@ -1,7 +1,6 @@
 package typings.chaiDashAlmost.chaiDashAlmostMod._Global_
 
 import typings.chai.Chai.Equal
-import typings.chaiDashAlmost.chaiDashAlmostMod._Global_.Chai.Assertion
 import typings.chaiDashAlmost.chaiDashAlmostMod._Global_.Chai.ChaiAlmost.Almost
 import typings.chaiDashAlmost.chaiDashAlmostMod._Global_.Chai.ChaiAlmost.DeepAlmost
 import scala.scalajs.js

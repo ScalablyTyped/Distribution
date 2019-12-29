@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.EventInit
 import typings.std.EventTarget
-import typings.xhrDashMock.libMockEventMod.MockEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

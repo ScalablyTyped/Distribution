@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Active
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.ByDesign
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Closed
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Fixed
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Pending
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Unknown
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.WontFix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.viewerjs.Viewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.viewerjs.Viewer.Visibility.Hidden
-import typings.viewerjs.Viewer.Visibility.Visible
-import typings.viewerjs.Viewer.Visibility.VisibleOnExtraLargeOrWiderScreen
-import typings.viewerjs.Viewer.Visibility.VisibleOnLargeOrWiderScreen
-import typings.viewerjs.Viewer.Visibility.VisibleOnMediumOrWiderScreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

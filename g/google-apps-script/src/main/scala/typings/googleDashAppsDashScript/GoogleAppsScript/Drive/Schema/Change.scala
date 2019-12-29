@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait Change extends js.Object {
   var deleted: js.UndefOr[Boolean] = js.undefined
-  var drive: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Drive] = js.undefined
+  var drive: js.UndefOr[Drive] = js.undefined
   var driveId: js.UndefOr[String] = js.undefined
-  var file: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.File] = js.undefined
+  var file: js.UndefOr[File] = js.undefined
   var fileId: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var kind: js.UndefOr[String] = js.undefined
@@ -23,9 +23,9 @@ object Change {
   @scala.inline
   def apply(
     deleted: js.UndefOr[Boolean] = js.undefined,
-    drive: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Drive = null,
+    drive: Drive = null,
     driveId: String = null,
-    file: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.File = null,
+    file: File = null,
     fileId: String = null,
     id: String = null,
     kind: String = null,

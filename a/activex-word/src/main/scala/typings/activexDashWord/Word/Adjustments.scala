@@ -11,7 +11,8 @@ class Adjustments protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Adjustments_typekey`: Adjustments = js.native
+  @JSName("Word.Adjustments_typekey")
+  var WordDotAdjustments_typekey: Adjustments = js.native
   def Item(Index: Double): Double = js.native
 }
 

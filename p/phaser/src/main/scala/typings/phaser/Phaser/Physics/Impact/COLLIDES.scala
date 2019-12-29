@@ -1,11 +1,6 @@
 package typings.phaser.Phaser.Physics.Impact
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.Phaser.Physics.Impact.COLLIDES.ACTIVE
-import typings.phaser.Phaser.Physics.Impact.COLLIDES.FIXED
-import typings.phaser.Phaser.Physics.Impact.COLLIDES.LITE
-import typings.phaser.Phaser.Physics.Impact.COLLIDES.NEVER
-import typings.phaser.Phaser.Physics.Impact.COLLIDES.PASSIVE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,11 +12,11 @@ package object Runtime {
   /**
     * Unique object identifier.
     */
-  type RemoteObjectId = java.lang.String
+  type RemoteObjectId = String
   /**
     * Unique script identifier.
     */
-  type ScriptId = java.lang.String
+  type ScriptId = String
   /**
     * Number of milliseconds since epoch.
     */
@@ -25,9 +25,9 @@ package object Runtime {
     * Unique identifier of current debugger.
     * @experimental
     */
-  type UniqueDebuggerId = java.lang.String
+  type UniqueDebuggerId = String
   /**
     * Primitive value which cannot be JSON-stringified.
     */
-  type UnserializableValue = java.lang.String
+  type UnserializableValue = String
 }

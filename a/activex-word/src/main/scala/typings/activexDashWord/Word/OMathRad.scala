@@ -13,6 +13,7 @@ class OMathRad protected () extends js.Object {
   val E: OMath = js.native
   var HideDeg: Boolean = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathRad_typekey`: OMathRad = js.native
+  @JSName("Word.OMathRad_typekey")
+  var WordDotOMathRad_typekey: OMathRad = js.native
 }
 

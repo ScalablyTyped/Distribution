@@ -64,6 +64,11 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
   var _getCurrentOptionStyles: js.Any = js.native
   var _getFirstSelectedIndex: js.Any = js.native
   /**
+    * Returns a string that concatenates all of the selected values
+    * for multiselect combobox.
+    */
+  var _getMultiselectDisplayString: js.Any = js.native
+  /**
     * Walk along the options starting at the index, stepping by the delta (positive or negative)
     * looking for the next valid selectable index (e.g. skipping headings and dividers)
     * @param index - the index to get the next selectable index from
@@ -78,6 +83,7 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
     * finding the index
     */
   var _getPendingSelectedIndex: js.Any = js.native
+  var _getPendingString: js.Any = js.native
   var _getPreviewText: js.Any = js.native
   /**
     * Get the indices of the options that are marked as selected
@@ -237,7 +243,6 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
   var _processInputChangeWithoutFreeform: js.Any = js.native
   var _processingClearPendingInfo: js.Any = js.native
   var _processingTouch: js.Any = js.native
-  var _removeZeroWidthSpaces: js.Any = js.native
   var _renderHeader: js.Any = js.native
   var _renderOption: js.Any = js.native
   var _renderSeparator: js.Any = js.native

@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Media.Protection
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Protection.RenewalStatus.appComponentsMayNeedUpdating
-import typings.winrt.Windows.Media.Protection.RenewalStatus.noComponentsFound
-import typings.winrt.Windows.Media.Protection.RenewalStatus.notStarted
-import typings.winrt.Windows.Media.Protection.RenewalStatus.updatesInProgress
-import typings.winrt.Windows.Media.Protection.RenewalStatus.userCancelled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

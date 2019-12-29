@@ -1,7 +1,6 @@
 package typings.atFirebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atFirebaseDatabase.distSrcCoreUtilImmutableTreeMod.ImmutableTree
 import typings.atFirebaseDatabase.distSrcCoreUtilPathMod.Path
 import typings.atFirebaseDatabase.distSrcCoreUtilSortedMapMod.SortedMap
 import scala.scalajs.js

@@ -1,9 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.MergeMode.JoinTables
-import typings.devexpressDashWeb.MergeMode.NewParagraph
-import typings.devexpressDashWeb.MergeMode.NewSection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,6 @@ package typings.parchment
 
 import typings.parchment.distSrcBlotAbstractBlotMod.Blot
 import typings.parchment.distSrcBlotAbstractBlotMod.Parent
-import typings.parchment.distSrcBlotAbstractContainerMod.ContainerBlot
 import typings.std.HTMLElement
 import typings.std.Node
 import scala.scalajs.js

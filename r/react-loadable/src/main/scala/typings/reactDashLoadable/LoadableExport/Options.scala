@@ -3,7 +3,7 @@ package typings.reactDashLoadable.LoadableExport
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactNode
 import typings.reactDashLoadable.Anon_Default
-import typings.reactDashLoadable.reactDashLoadableNumbers.`false`
+import typings.reactDashLoadable.reactDashLoadableBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

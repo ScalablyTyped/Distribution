@@ -1,6 +1,5 @@
 package typings.jsmediatags
 
-import typings.jsmediatags.build2BlobFileReaderMod.BlobFileReader
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLLinkElement")
 @js.native
 class HTMLLinkElement protected () extends js.Object {
-  var `MSHTML.HTMLLinkElement_typekey`: HTMLLinkElement = js.native
+  @JSName("MSHTML.HTMLLinkElement_typekey")
+  var MSHTMLDotHTMLLinkElement_typekey: HTMLLinkElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

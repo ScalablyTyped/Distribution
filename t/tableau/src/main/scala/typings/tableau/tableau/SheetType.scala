@@ -1,9 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.SheetType.DASHBOARD
-import typings.tableau.tableau.SheetType.STORY
-import typings.tableau.tableau.SheetType.WORKSHEET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

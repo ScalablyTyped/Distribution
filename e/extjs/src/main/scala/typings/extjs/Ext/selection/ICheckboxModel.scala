@@ -13,7 +13,7 @@ trait ICheckboxModel extends IRowModel {
   /** [Config Option] (Boolean) */
   var checkOnly: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var checkSelector: js.UndefOr[java.lang.String] = js.undefined
+  var checkSelector: js.UndefOr[String] = js.undefined
   /** [Method] Retrieve a configuration to be used in a HeaderContainer  */
   var getHeaderConfig: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Number/String) */
@@ -71,7 +71,7 @@ object ICheckboxModel {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     checkOnly: js.UndefOr[Boolean] = js.undefined,
-    checkSelector: java.lang.String = null,
+    checkSelector: String = null,
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
@@ -80,19 +80,19 @@ object ICheckboxModel {
     deselectRange: (/* startRow */ js.UndefOr[js.Any], /* endRow */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     enableKeyNav: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getCount: () => Double = null,
     getCurrentPosition: () => Unit = null,
     getHeaderConfig: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLastSelected: () => ICheckboxModel = null,
     getSelection: () => Array = null,
-    getSelectionMode: () => java.lang.String = null,
+    getSelectionMode: () => String = null,
     getStore: () => IAbstractStore = null,
     getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hasSelection: () => Boolean = null,
     ignoreRightMouseSelection: js.UndefOr[Boolean] = js.undefined,
@@ -114,8 +114,8 @@ object ICheckboxModel {
     onHeaderClick: (/* headerCt */ js.UndefOr[js.Any], /* header */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any]) => Unit = null,
     onUnbindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     pruneRemoved: js.UndefOr[Boolean] = js.undefined,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     renderer: (/* value */ js.UndefOr[js.Any], /* metaData */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any], /* rowIndex */ js.UndefOr[js.Any], /* colIndex */ js.UndefOr[js.Any], /* store */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
@@ -130,14 +130,14 @@ object ICheckboxModel {
     self: IClass = null,
     setLastFocused: /* record */ js.UndefOr[ICheckboxModel] => Unit = null,
     setLocked: /* locked */ js.UndefOr[Boolean] => Unit = null,
-    setSelectionMode: /* selMode */ js.UndefOr[java.lang.String] => Unit = null,
+    setSelectionMode: /* selMode */ js.UndefOr[String] => Unit = null,
     showHeaderCheckbox: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     toggleOnClick: js.UndefOr[Boolean] = js.undefined,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     uses: Array = null
   ): ICheckboxModel = {

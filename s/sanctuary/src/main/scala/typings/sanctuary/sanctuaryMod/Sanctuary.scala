@@ -12,7 +12,6 @@ import typings.sanctuary.Fn_R
 import typings.sanctuary.Fn_X
 import typings.sanctuary.Fn_XY
 import typings.sanctuary.Fn_Xs
-import typings.sanctuary.sanctuaryMod.Sanctuary.Static
 import typings.std.Date
 import typings.std.Error
 import typings.std.RegExp

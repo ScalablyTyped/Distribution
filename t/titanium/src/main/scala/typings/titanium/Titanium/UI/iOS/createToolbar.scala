@@ -10,7 +10,7 @@ object createToolbar extends js.Object {
   /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.Toolbar>.
   			 */
-  def apply(): typings.titanium.Titanium.UI.iOS.Toolbar = js.native
-  def apply(parameters: js.Any): typings.titanium.Titanium.UI.iOS.Toolbar = js.native
+  def apply(): Toolbar = js.native
+  def apply(parameters: js.Any): Toolbar = js.native
 }
 

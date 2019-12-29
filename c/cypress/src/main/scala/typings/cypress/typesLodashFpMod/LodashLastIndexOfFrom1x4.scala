@@ -1,6 +1,6 @@
 package typings.cypress.typesLodashFpMod
 
-import typings.cypress.cypressNumbers.`true`
+import typings.cypress.cypressBooleans.`true`
 import typings.cypress.typesLodashMod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`

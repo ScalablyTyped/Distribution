@@ -1,10 +1,6 @@
 package typings.jsDashClipper.ClipperLib
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsDashClipper.ClipperLib.PolyFillType.pftEvenOdd
-import typings.jsDashClipper.ClipperLib.PolyFillType.pftNegative
-import typings.jsDashClipper.ClipperLib.PolyFillType.pftNonZero
-import typings.jsDashClipper.ClipperLib.PolyFillType.pftPositive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

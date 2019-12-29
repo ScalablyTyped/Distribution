@@ -1,10 +1,6 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.BLOB
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.Base64
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.Text
-import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

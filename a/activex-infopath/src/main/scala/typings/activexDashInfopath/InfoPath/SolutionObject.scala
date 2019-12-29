@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SolutionObject protected () extends js.Object {
   val DOM: IXMLDOMDocument = js.native
-  var `InfoPath.SolutionObject_typekey`: SolutionObject = js.native
+  @JSName("InfoPath.SolutionObject_typekey")
+  var InfoPathDotSolutionObject_typekey: SolutionObject = js.native
   val PackageURL: String = js.native
   val URI: String = js.native
   val Version: String = js.native

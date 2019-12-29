@@ -27,21 +27,16 @@ trait IFileWriteStringOption extends IFileWriteOptions {
     ```
     */
   var process: js.UndefOr[
-    js.Function3[
-      /* contents */ java.lang.String, 
-      /* srcpath */ java.lang.String, 
-      /* destpath */ java.lang.String, 
-      java.lang.String | Boolean
-    ]
+    js.Function3[/* contents */ String, /* srcpath */ String, /* destpath */ String, String | Boolean]
   ] = js.undefined
 }
 
 object IFileWriteStringOption {
   @scala.inline
   def apply(
-    encoding: java.lang.String,
+    encoding: String,
     noProcess: js.Any = null,
-    process: (/* contents */ java.lang.String, /* srcpath */ java.lang.String, /* destpath */ java.lang.String) => java.lang.String | Boolean = null
+    process: (/* contents */ String, /* srcpath */ String, /* destpath */ String) => String | Boolean = null
   ): IFileWriteStringOption = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
     if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess.asInstanceOf[js.Any])

@@ -3,9 +3,6 @@ package typings.reduxDashThunk
 import typings.redux.reduxMod.Action
 import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Middleware
-import typings.reduxDashThunk.reduxDashThunkMod.ThunkAction
-import typings.reduxDashThunk.reduxDashThunkMod.ThunkDispatch
-import typings.reduxDashThunk.reduxDashThunkMod.ThunkMiddleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

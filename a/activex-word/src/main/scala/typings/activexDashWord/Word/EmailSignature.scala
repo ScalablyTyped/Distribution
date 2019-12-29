@@ -13,6 +13,7 @@ class EmailSignature protected () extends js.Object {
   var NewMessageSignature: String = js.native
   val Parent: js.Any = js.native
   var ReplyMessageSignature: String = js.native
-  var `Word.EmailSignature_typekey`: EmailSignature = js.native
+  @JSName("Word.EmailSignature_typekey")
+  var WordDotEmailSignature_typekey: EmailSignature = js.native
 }
 

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 /** Properties of a MethodOptions. */
 trait IMethodOptions extends js.Object {
   /** MethodOptions .google.api.http */
-  var `.google.api.http`: js.UndefOr[IHttpRule | Null] = js.undefined
+  @JSName(".google.api.http")
+  var DotgoogleDotapiDothttp: js.UndefOr[IHttpRule | Null] = js.undefined
   /** MethodOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   /** MethodOptions idempotencyLevel */
@@ -21,13 +22,13 @@ trait IMethodOptions extends js.Object {
 object IMethodOptions {
   @scala.inline
   def apply(
-    `.google.api.http`: IHttpRule = null,
+    DotgoogleDotapiDothttp: IHttpRule = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
     idempotencyLevel: IdempotencyLevel = null,
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.http` != null) __obj.updateDynamic(".google.api.http")(`.google.api.http`.asInstanceOf[js.Any])
+    if (DotgoogleDotapiDothttp != null) __obj.updateDynamic(".google.api.http")(DotgoogleDotapiDothttp.asInstanceOf[js.Any])
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
     if (idempotencyLevel != null) __obj.updateDynamic("idempotencyLevel")(idempotencyLevel.asInstanceOf[js.Any])
     if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])

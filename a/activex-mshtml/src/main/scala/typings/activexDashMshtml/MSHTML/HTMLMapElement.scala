@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLMapElement")
 @js.native
 class HTMLMapElement protected () extends js.Object {
-  var `MSHTML.HTMLMapElement_typekey`: HTMLMapElement = js.native
+  @JSName("MSHTML.HTMLMapElement_typekey")
+  var MSHTMLDotHTMLMapElement_typekey: HTMLMapElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   @JSName("areas")

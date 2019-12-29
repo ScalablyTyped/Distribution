@@ -1,14 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType.BYTE
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType.FLOAT
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType.INT
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType.SHORT
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType.UNSIGNED_BYTE
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType.UNSIGNED_INT
-import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType.UNSIGNED_SHORT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

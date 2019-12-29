@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ArrowheadLength.long
-import typings.officeDashJsDashPreview.Excel.ArrowheadLength.medium
-import typings.officeDashJsDashPreview.Excel.ArrowheadLength.short
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

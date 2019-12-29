@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait RectangleOptions extends js.Object {
   var editable: js.UndefOr[Boolean] = js.undefined
   var fillColor: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var strokeColor: js.UndefOr[String] = js.undefined
   var strokeOpacity: js.UndefOr[Double] = js.undefined
   var strokePosition: js.UndefOr[StrokePosition] = js.undefined
@@ -29,7 +30,7 @@ object RectangleOptions {
     editable: js.UndefOr[Boolean] = js.undefined,
     fillColor: String = null,
     fillOpacity: Int | Double = null,
-    map: Map = null,
+    map: Map[Element] = null,
     strokeColor: String = null,
     strokeOpacity: Int | Double = null,
     strokePosition: StrokePosition = null,

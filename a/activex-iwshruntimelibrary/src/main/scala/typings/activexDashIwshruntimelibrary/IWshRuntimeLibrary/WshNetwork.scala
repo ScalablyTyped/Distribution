@@ -1,6 +1,6 @@
 package typings.activexDashIwshruntimelibrary.IWshRuntimeLibrary
 
-import typings.activexDashIwshruntimelibrary.activexDashIwshruntimelibraryNumbers.`true`
+import typings.activexDashIwshruntimelibrary.activexDashIwshruntimelibraryBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class WshNetwork protected () extends js.Object {
   val ComputerName: String = js.native
-  var `IWshRuntimeLibrary.WshNetwork_typekey`: WshNetwork = js.native
+  @JSName("IWshRuntimeLibrary.WshNetwork_typekey")
+  var IWshRuntimeLibraryDotWshNetwork_typekey: WshNetwork = js.native
   val Organization: String = js.native
   val Site: String = js.native
   val UserDomain: String = js.native

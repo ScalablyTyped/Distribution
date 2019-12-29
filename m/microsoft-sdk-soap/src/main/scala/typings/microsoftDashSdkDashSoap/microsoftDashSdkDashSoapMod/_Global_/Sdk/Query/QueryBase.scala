@@ -13,12 +13,12 @@ class QueryBase protected () extends js.Object {
     * Internal Use Only.
     * @param type An Abstract class for different query classes to inherit from.
     */
-  def this(`type`: java.lang.String) = this()
+  def this(`type`: String) = this()
   /**
     * Adds the specified column to the column set.
     * @param columnName The logical name of the column to add.
     */
-  def addColumn(columnName: java.lang.String): Unit = js.native
+  def addColumn(columnName: String): Unit = js.native
   /**
     * Gets the columns to include.
     */
@@ -26,7 +26,7 @@ class QueryBase protected () extends js.Object {
   /**
     * Gets the logical name of the entity.
     */
-  def getEntityName(): java.lang.String = js.native
+  def getEntityName(): String = js.native
   /**
     * Gets an Sdk.Collection of Sdk.Query.OrderExpression instances that define the order in which the entity instances are returned from the query.
     */
@@ -38,28 +38,28 @@ class QueryBase protected () extends js.Object {
   /**
     *
     */
-  def getQueryType(): java.lang.String = js.native
+  def getQueryType(): String = js.native
   /**
     * Gets the number of rows to be returned.
     */
-  def getTopCount(): scala.Double = js.native
+  def getTopCount(): Double = js.native
   /**
     * Removes a column from the ColumnSet used by the query.
     * @param columnName The logical name of an attribute to be removed from the ColumnSet.
     * @param errorIfNotFound Whether to throw an error when the column to remove is not found. The default is false.
     */
-  def removeColumn(columnName: java.lang.String): Unit = js.native
-  def removeColumn(columnName: java.lang.String, errorIfNotFound: scala.Boolean): Unit = js.native
+  def removeColumn(columnName: String): Unit = js.native
+  def removeColumn(columnName: String, errorIfNotFound: Boolean): Unit = js.native
   /**
     * Sets the columns to include.
     * @param columns Pass each attribute logical name as an argument.
     */
-  def setColumnSet(columns: java.lang.String*): Unit = js.native
+  def setColumnSet(columns: String*): Unit = js.native
   /**
     * Sets the columns to include.
     * @param columns An array of attribute logical names for the columns to return.
     */
-  def setColumnSet(columns: js.Array[java.lang.String]): Unit = js.native
+  def setColumnSet(columns: js.Array[String]): Unit = js.native
   /**
     * Sets the columns to include.
     * @param columns An Sdk.ColumnSet instance.
@@ -69,7 +69,7 @@ class QueryBase protected () extends js.Object {
     * Sets the logical name of the entity.
     * @param name The logical name of the entity.
     */
-  def setEntityName(name: java.lang.String): Unit = js.native
+  def setEntityName(name: String): Unit = js.native
   /**
     * Sets the number of pages and the number of entity instances per page returned from the query.
     * @param pageInfo The number of pages and the number of entity instances per page returned from the query.
@@ -79,14 +79,14 @@ class QueryBase protected () extends js.Object {
     * Sets the number of rows to be returned.
     * @param count The number of rows to be returned.
     */
-  def setTopCount(count: scala.Double): Unit = js.native
+  def setTopCount(count: Double): Unit = js.native
   /**
     * Gets the serialized QueryExpression values.
     */
-  def toValueXml(): java.lang.String = js.native
+  def toValueXml(): String = js.native
   /**
     * Gets the serialized QueryExpression.
     */
-  def toXml(): java.lang.String = js.native
+  def toXml(): String = js.native
 }
 

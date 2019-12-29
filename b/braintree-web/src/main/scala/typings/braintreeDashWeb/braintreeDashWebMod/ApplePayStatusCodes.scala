@@ -1,14 +1,6 @@
 package typings.braintreeDashWeb.braintreeDashWebMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_FAILURE
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_INVALID_BILLING_POSTAL_ADDRESS
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_CONTACT
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_POSTAL_ADDRESS
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_PIN_INCORRECT
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_PIN_LOCKOUT
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_PIN_REQUIRED
-import typings.braintreeDashWeb.braintreeDashWebMod.ApplePayStatusCodes.STATUS_SUCCESS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

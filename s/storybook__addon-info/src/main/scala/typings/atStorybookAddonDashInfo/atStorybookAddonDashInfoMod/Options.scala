@@ -1,7 +1,7 @@
 package typings.atStorybookAddonDashInfo.atStorybookAddonDashInfoMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atStorybookAddonDashInfo.atStorybookAddonDashInfoNumbers.`false`
+import typings.atStorybookAddonDashInfo.atStorybookAddonDashInfoBooleans.`false`
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

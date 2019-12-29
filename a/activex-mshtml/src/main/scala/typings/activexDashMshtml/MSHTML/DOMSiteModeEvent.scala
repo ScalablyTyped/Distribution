@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMSiteModeEvent")
 @js.native
 class DOMSiteModeEvent protected () extends js.Object {
-  var `MSHTML.DOMSiteModeEvent_typekey`: DOMSiteModeEvent = js.native
+  @JSName("MSHTML.DOMSiteModeEvent_typekey")
+  var MSHTMLDotDOMSiteModeEvent_typekey: DOMSiteModeEvent = js.native
   val actionURL: String = js.native
   val bubbles: Boolean = js.native
   val buttonID: Double = js.native

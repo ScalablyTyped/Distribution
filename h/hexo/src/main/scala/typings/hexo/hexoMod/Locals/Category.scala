@@ -17,7 +17,7 @@ object Category {
     parent: String,
     path: String,
     permalink: String,
-    posts: Model[typings.hexo.hexoMod.Locals.Post],
+    posts: Model[Post],
     slug: String
   ): Category = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], permalink = permalink.asInstanceOf[js.Any], posts = posts.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])

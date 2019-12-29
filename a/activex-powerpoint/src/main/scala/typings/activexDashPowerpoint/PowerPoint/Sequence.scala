@@ -12,7 +12,8 @@ class Sequence protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Sequence_typekey`: Sequence = js.native
+  @JSName("PowerPoint.Sequence_typekey")
+  var PowerPointDotSequence_typekey: Sequence = js.native
   /**
     * @param PowerPoint.MsoAnimateByLevel [Level=0]
     * @param PowerPoint.MsoAnimTriggerType [trigger=1]

@@ -1,6 +1,6 @@
 package typings.qunitDashDom
 
-import typings.qunitDashDom.qunitDashDomNumbers.`true`
+import typings.qunitDashDom.qunitDashDomBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

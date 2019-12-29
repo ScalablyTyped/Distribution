@@ -1,20 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.basicConstraintsError
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.expired
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.incompleteChain
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidCertificateAuthorityPolicy
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidName
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidSignature
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.otherErrors
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revocationFailure
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revocationInformationMissing
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revoked
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.success
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.unknownCriticalExtension
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.untrusted
-import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.wrongUsage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

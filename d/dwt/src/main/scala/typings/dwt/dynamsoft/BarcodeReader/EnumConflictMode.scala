@@ -1,8 +1,6 @@
 package typings.dwt.dynamsoft.BarcodeReader
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.dynamsoft.BarcodeReader.EnumConflictMode.ECM_Ignore
-import typings.dwt.dynamsoft.BarcodeReader.EnumConflictMode.ECM_Overwrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

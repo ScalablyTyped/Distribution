@@ -1,8 +1,8 @@
 package typings.xstate.libTypesMod
 
 import typings.xstate.libStateNodeMod.StateNode
-import typings.xstate.xstateNumbers.`false`
-import typings.xstate.xstateNumbers.`true`
+import typings.xstate.xstateBooleans.`false`
+import typings.xstate.xstateBooleans.`true`
 import typings.xstate.xstateStrings.`final`
 import typings.xstate.xstateStrings.atomic
 import typings.xstate.xstateStrings.compound

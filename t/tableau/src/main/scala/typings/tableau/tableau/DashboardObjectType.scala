@@ -1,17 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.DashboardObjectType.ADDIN
-import typings.tableau.tableau.DashboardObjectType.BLANK
-import typings.tableau.tableau.DashboardObjectType.IMAGE
-import typings.tableau.tableau.DashboardObjectType.LEGEND
-import typings.tableau.tableau.DashboardObjectType.PAGE_FILTER
-import typings.tableau.tableau.DashboardObjectType.PARAMETER_CONTROL
-import typings.tableau.tableau.DashboardObjectType.QUICK_FILTER
-import typings.tableau.tableau.DashboardObjectType.TEXT
-import typings.tableau.tableau.DashboardObjectType.TITLE
-import typings.tableau.tableau.DashboardObjectType.WEB_PAGE
-import typings.tableau.tableau.DashboardObjectType.WORKSHEET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

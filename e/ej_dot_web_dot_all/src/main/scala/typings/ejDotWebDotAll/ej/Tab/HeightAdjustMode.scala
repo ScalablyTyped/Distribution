@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.Tab
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Tab.HeightAdjustMode.Auto
-import typings.ejDotWebDotAll.ej.Tab.HeightAdjustMode.Content
-import typings.ejDotWebDotAll.ej.Tab.HeightAdjustMode.Fill
-import typings.ejDotWebDotAll.ej.Tab.HeightAdjustMode.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

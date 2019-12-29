@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ImagePosition.ImageBottom
-import typings.ejDotWebDotAll.ej.ImagePosition.ImageLeft
-import typings.ejDotWebDotAll.ej.ImagePosition.ImageRight
-import typings.ejDotWebDotAll.ej.ImagePosition.ImageTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

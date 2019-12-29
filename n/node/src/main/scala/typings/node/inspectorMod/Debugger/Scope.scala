@@ -13,7 +13,7 @@ trait Scope extends js.Object {
     * Location in the source code where scope ends
     */
   var endLocation: js.UndefOr[Location] = js.undefined
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /**
     * Object representing the scope. For <code>global</code> and <code>with</code> scopes it represents the actual object; for the rest of the scopes, it is artificial transient object enumerating scope variables as its properties.
     */
@@ -25,16 +25,16 @@ trait Scope extends js.Object {
   /**
     * Scope type.
     */
-  var `type`: java.lang.String
+  var `type`: String
 }
 
 object Scope {
   @scala.inline
   def apply(
     `object`: RemoteObject,
-    `type`: java.lang.String,
+    `type`: String,
     endLocation: Location = null,
-    name: java.lang.String = null,
+    name: String = null,
     startLocation: Location = null
   ): Scope = {
     val __obj = js.Dynamic.literal()

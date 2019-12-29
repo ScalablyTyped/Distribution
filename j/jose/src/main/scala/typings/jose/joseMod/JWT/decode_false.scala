@@ -1,6 +1,6 @@
 package typings.jose.joseMod.JWT
 
-import typings.jose.joseNumbers.`false`
+import typings.jose.joseBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

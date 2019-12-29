@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.HeightReference.CLAMP_TO_GROUND
-import typings.cesium.cesiumMod.HeightReference.NONE
-import typings.cesium.cesiumMod.HeightReference.RELATIVE_TO_GROUND
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

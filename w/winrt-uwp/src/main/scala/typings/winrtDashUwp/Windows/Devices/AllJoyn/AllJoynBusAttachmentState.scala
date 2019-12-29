@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.connected
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.connecting
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.disconnected
-import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.disconnecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

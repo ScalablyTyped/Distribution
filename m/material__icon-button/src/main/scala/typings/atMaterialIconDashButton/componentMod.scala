@@ -2,7 +2,6 @@ package typings.atMaterialIconDashButton
 
 import typings.atMaterialBase.componentMod.MDCComponent
 import typings.atMaterialBase.foundationMod.default
-import typings.atMaterialIconDashButton.componentMod.MDCIconButtonToggle
 import typings.atMaterialIconDashButton.foundationMod.MDCIconButtonToggleFoundation
 import typings.std.HTMLElement
 import scala.scalajs.js

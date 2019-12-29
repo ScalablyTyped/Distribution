@@ -1,8 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.MapMode2D.INFINITE_SCROLL
-import typings.cesium.cesiumMod.MapMode2D.ROTATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

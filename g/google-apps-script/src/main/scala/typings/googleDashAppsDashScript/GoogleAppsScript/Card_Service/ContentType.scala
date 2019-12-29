@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.IMMUTABLE_HTML
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.MUTABLE_HTML
-import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

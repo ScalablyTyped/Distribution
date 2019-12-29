@@ -12,7 +12,8 @@ class OMathRecognizedFunction protected () extends js.Object {
   val Index: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathRecognizedFunction_typekey`: OMathRecognizedFunction = js.native
+  @JSName("Word.OMathRecognizedFunction_typekey")
+  var WordDotOMathRecognizedFunction_typekey: OMathRecognizedFunction = js.native
   def Delete(): Unit = js.native
 }
 

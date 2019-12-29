@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable
 import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTableCollection
-import typings.sharepoint.Srch.U.LoadScriptsProgress
-import typings.sharepoint.Srch.U.LoadScriptsProgress.failure
-import typings.sharepoint.Srch.U.LoadScriptsProgress.loading
-import typings.sharepoint.Srch.U.LoadScriptsProgress.success
 import typings.sharepoint.sharepointStrings.Body
 import typings.sharepoint.sharepointStrings.Group
 import typings.sharepoint.sharepointStrings.IsFirstPinnedResultBlock

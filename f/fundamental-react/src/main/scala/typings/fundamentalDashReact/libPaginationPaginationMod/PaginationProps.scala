@@ -9,8 +9,11 @@ import scala.scalajs.js.annotation._
 trait PaginationProps
   extends /* x */ StringDictionary[js.Any] {
   var className: js.UndefOr[String] = js.undefined
+  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   /* Set to **true** to show total number of items along with `totalText` string. */
   var displayTotal: js.UndefOr[Boolean] = js.undefined
+  var displayTotalProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /* Initial page to be selected. */
   var initialPage: js.UndefOr[Double] = js.undefined
   /* Number of items to display on page. */
@@ -36,7 +39,10 @@ object PaginationProps {
     onClick: Double => Unit,
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
     className: String = null,
+    customStyles: StringDictionary[js.Any] = null,
+    disableStyles: js.UndefOr[Boolean] = js.undefined,
     displayTotal: js.UndefOr[Boolean] = js.undefined,
+    displayTotalProps: StringDictionary[js.Any] = null,
     initialPage: Int | Double = null,
     itemsPerPage: Int | Double = null,
     linkProps: StringDictionary[js.Any] = null,
@@ -48,7 +54,10 @@ object PaginationProps {
     val __obj = js.Dynamic.literal(itemsTotal = itemsTotal.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(displayTotal)) __obj.updateDynamic("displayTotal")(displayTotal.asInstanceOf[js.Any])
+    if (displayTotalProps != null) __obj.updateDynamic("displayTotalProps")(displayTotalProps.asInstanceOf[js.Any])
     if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
     if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
     if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])

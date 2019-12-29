@@ -13,7 +13,7 @@ trait ActionBeforeSuccessEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Instance of the listbox model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ListBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Object of ListBox widget which contains DataManager arguments
     */
   var request: js.UndefOr[js.Any] = js.undefined
@@ -33,7 +33,7 @@ object ActionBeforeSuccessEventArgs {
   def apply(
     actual: js.Any = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.ListBox.Model = null,
+    model: Model = null,
     request: js.Any = null,
     result: js.Array[_] = null,
     `type`: String = null,

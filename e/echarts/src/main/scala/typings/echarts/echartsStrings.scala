@@ -144,7 +144,7 @@ object echartsStrings {
   sealed trait mousemove extends js.Object
   
   @js.native
-  sealed trait `mousemove|click` extends js.Object
+  sealed trait mousemoveVerticallineclick extends js.Object
   
   @js.native
   sealed trait multiple extends js.Object
@@ -351,7 +351,7 @@ object echartsStrings {
   @scala.inline
   def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   @scala.inline
-  def `mousemove|click`: `mousemove|click` = "mousemove|click".asInstanceOf[`mousemove|click`]
+  def mousemoveVerticallineclick: mousemoveVerticallineclick = "mousemove|click".asInstanceOf[mousemoveVerticallineclick]
   @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline

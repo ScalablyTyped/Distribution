@@ -1,9 +1,6 @@
 package typings.winrt.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Notifications.ToastDismissalReason.applicationHidden
-import typings.winrt.Windows.UI.Notifications.ToastDismissalReason.timedOut
-import typings.winrt.Windows.UI.Notifications.ToastDismissalReason.userCanceled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

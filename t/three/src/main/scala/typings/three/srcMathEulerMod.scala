@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcMathEulerMod.Euler
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathVector3Mod.Vector3

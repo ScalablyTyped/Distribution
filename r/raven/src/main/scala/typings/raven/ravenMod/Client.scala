@@ -3,7 +3,7 @@ package typings.raven.ravenMod
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.raven.ravenNumbers.`false`
+import typings.raven.ravenBooleans.`false`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

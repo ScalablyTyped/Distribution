@@ -1,8 +1,6 @@
 package typings.winrt.Windows.UI.Popups
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay
-import typings.winrt.Windows.UI.Popups.MessageDialogOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

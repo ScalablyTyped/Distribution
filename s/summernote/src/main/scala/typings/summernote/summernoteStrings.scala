@@ -66,85 +66,85 @@ object summernoteStrings {
   sealed trait disable extends js.Object
   
   @js.native
-  sealed trait editorDOTbold extends js.Object
+  sealed trait editorDotbold extends js.Object
   
   @js.native
-  sealed trait editorDOTcreateRange extends js.Object
+  sealed trait editorDotcreateRange extends js.Object
   
   @js.native
-  sealed trait editorDOTfocus extends js.Object
+  sealed trait editorDotfocus extends js.Object
   
   @js.native
-  sealed trait editorDOTfontSize extends js.Object
+  sealed trait editorDotfontSize extends js.Object
   
   @js.native
-  sealed trait editorDOTindent extends js.Object
+  sealed trait editorDotindent extends js.Object
   
   @js.native
-  sealed trait editorDOTinsertImage extends js.Object
+  sealed trait editorDotinsertImage extends js.Object
   
   @js.native
-  sealed trait editorDOTinsertNode extends js.Object
+  sealed trait editorDotinsertNode extends js.Object
   
   @js.native
-  sealed trait editorDOTinsertOrderedList extends js.Object
+  sealed trait editorDotinsertOrderedList extends js.Object
   
   @js.native
-  sealed trait editorDOTinsertText extends js.Object
+  sealed trait editorDotinsertText extends js.Object
   
   @js.native
-  sealed trait editorDOTinsertUnorderedList extends js.Object
+  sealed trait editorDotinsertUnorderedList extends js.Object
   
   @js.native
-  sealed trait editorDOTisEmpty extends js.Object
+  sealed trait editorDotisEmpty extends js.Object
   
   @js.native
-  sealed trait editorDOTitalic extends js.Object
+  sealed trait editorDotitalic extends js.Object
   
   @js.native
-  sealed trait editorDOTjustifyCenter extends js.Object
+  sealed trait editorDotjustifyCenter extends js.Object
   
   @js.native
-  sealed trait editorDOTjustifyFull extends js.Object
+  sealed trait editorDotjustifyFull extends js.Object
   
   @js.native
-  sealed trait editorDOTjustifyLeft extends js.Object
+  sealed trait editorDotjustifyLeft extends js.Object
   
   @js.native
-  sealed trait editorDOTjustifyRight extends js.Object
+  sealed trait editorDotjustifyRight extends js.Object
   
   @js.native
-  sealed trait editorDOToutdent extends js.Object
+  sealed trait editorDotoutdent extends js.Object
   
   @js.native
-  sealed trait editorDOTpasteHTML extends js.Object
+  sealed trait editorDotpasteHTML extends js.Object
   
   @js.native
-  sealed trait editorDOTredo extends js.Object
+  sealed trait editorDotredo extends js.Object
   
   @js.native
-  sealed trait editorDOTremoveFormat extends js.Object
+  sealed trait editorDotremoveFormat extends js.Object
   
   @js.native
-  sealed trait editorDOTrestoreRange extends js.Object
+  sealed trait editorDotrestoreRange extends js.Object
   
   @js.native
-  sealed trait editorDOTsaveRange extends js.Object
+  sealed trait editorDotsaveRange extends js.Object
   
   @js.native
-  sealed trait editorDOTstrikethrough extends js.Object
+  sealed trait editorDotstrikethrough extends js.Object
   
   @js.native
-  sealed trait editorDOTsubscript extends js.Object
+  sealed trait editorDotsubscript extends js.Object
   
   @js.native
-  sealed trait editorDOTsuperscript extends js.Object
+  sealed trait editorDotsuperscript extends js.Object
   
   @js.native
-  sealed trait editorDOTunderline extends js.Object
+  sealed trait editorDotunderline extends js.Object
   
   @js.native
-  sealed trait editorDOTundo extends js.Object
+  sealed trait editorDotundo extends js.Object
   
   @js.native
   sealed trait enable extends js.Object
@@ -425,59 +425,59 @@ object summernoteStrings {
   @scala.inline
   def disable: disable = "disable".asInstanceOf[disable]
   @scala.inline
-  def editorDOTbold: editorDOTbold = "editor.bold".asInstanceOf[editorDOTbold]
+  def editorDotbold: editorDotbold = "editor.bold".asInstanceOf[editorDotbold]
   @scala.inline
-  def editorDOTcreateRange: editorDOTcreateRange = "editor.createRange".asInstanceOf[editorDOTcreateRange]
+  def editorDotcreateRange: editorDotcreateRange = "editor.createRange".asInstanceOf[editorDotcreateRange]
   @scala.inline
-  def editorDOTfocus: editorDOTfocus = "editor.focus".asInstanceOf[editorDOTfocus]
+  def editorDotfocus: editorDotfocus = "editor.focus".asInstanceOf[editorDotfocus]
   @scala.inline
-  def editorDOTfontSize: editorDOTfontSize = "editor.fontSize".asInstanceOf[editorDOTfontSize]
+  def editorDotfontSize: editorDotfontSize = "editor.fontSize".asInstanceOf[editorDotfontSize]
   @scala.inline
-  def editorDOTindent: editorDOTindent = "editor.indent".asInstanceOf[editorDOTindent]
+  def editorDotindent: editorDotindent = "editor.indent".asInstanceOf[editorDotindent]
   @scala.inline
-  def editorDOTinsertImage: editorDOTinsertImage = "editor.insertImage".asInstanceOf[editorDOTinsertImage]
+  def editorDotinsertImage: editorDotinsertImage = "editor.insertImage".asInstanceOf[editorDotinsertImage]
   @scala.inline
-  def editorDOTinsertNode: editorDOTinsertNode = "editor.insertNode".asInstanceOf[editorDOTinsertNode]
+  def editorDotinsertNode: editorDotinsertNode = "editor.insertNode".asInstanceOf[editorDotinsertNode]
   @scala.inline
-  def editorDOTinsertOrderedList: editorDOTinsertOrderedList = "editor.insertOrderedList".asInstanceOf[editorDOTinsertOrderedList]
+  def editorDotinsertOrderedList: editorDotinsertOrderedList = "editor.insertOrderedList".asInstanceOf[editorDotinsertOrderedList]
   @scala.inline
-  def editorDOTinsertText: editorDOTinsertText = "editor.insertText".asInstanceOf[editorDOTinsertText]
+  def editorDotinsertText: editorDotinsertText = "editor.insertText".asInstanceOf[editorDotinsertText]
   @scala.inline
-  def editorDOTinsertUnorderedList: editorDOTinsertUnorderedList = "editor.insertUnorderedList".asInstanceOf[editorDOTinsertUnorderedList]
+  def editorDotinsertUnorderedList: editorDotinsertUnorderedList = "editor.insertUnorderedList".asInstanceOf[editorDotinsertUnorderedList]
   @scala.inline
-  def editorDOTisEmpty: editorDOTisEmpty = "editor.isEmpty".asInstanceOf[editorDOTisEmpty]
+  def editorDotisEmpty: editorDotisEmpty = "editor.isEmpty".asInstanceOf[editorDotisEmpty]
   @scala.inline
-  def editorDOTitalic: editorDOTitalic = "editor.italic".asInstanceOf[editorDOTitalic]
+  def editorDotitalic: editorDotitalic = "editor.italic".asInstanceOf[editorDotitalic]
   @scala.inline
-  def editorDOTjustifyCenter: editorDOTjustifyCenter = "editor.justifyCenter".asInstanceOf[editorDOTjustifyCenter]
+  def editorDotjustifyCenter: editorDotjustifyCenter = "editor.justifyCenter".asInstanceOf[editorDotjustifyCenter]
   @scala.inline
-  def editorDOTjustifyFull: editorDOTjustifyFull = "editor.justifyFull".asInstanceOf[editorDOTjustifyFull]
+  def editorDotjustifyFull: editorDotjustifyFull = "editor.justifyFull".asInstanceOf[editorDotjustifyFull]
   @scala.inline
-  def editorDOTjustifyLeft: editorDOTjustifyLeft = "editor.justifyLeft".asInstanceOf[editorDOTjustifyLeft]
+  def editorDotjustifyLeft: editorDotjustifyLeft = "editor.justifyLeft".asInstanceOf[editorDotjustifyLeft]
   @scala.inline
-  def editorDOTjustifyRight: editorDOTjustifyRight = "editor.justifyRight".asInstanceOf[editorDOTjustifyRight]
+  def editorDotjustifyRight: editorDotjustifyRight = "editor.justifyRight".asInstanceOf[editorDotjustifyRight]
   @scala.inline
-  def editorDOToutdent: editorDOToutdent = "editor.outdent".asInstanceOf[editorDOToutdent]
+  def editorDotoutdent: editorDotoutdent = "editor.outdent".asInstanceOf[editorDotoutdent]
   @scala.inline
-  def editorDOTpasteHTML: editorDOTpasteHTML = "editor.pasteHTML".asInstanceOf[editorDOTpasteHTML]
+  def editorDotpasteHTML: editorDotpasteHTML = "editor.pasteHTML".asInstanceOf[editorDotpasteHTML]
   @scala.inline
-  def editorDOTredo: editorDOTredo = "editor.redo".asInstanceOf[editorDOTredo]
+  def editorDotredo: editorDotredo = "editor.redo".asInstanceOf[editorDotredo]
   @scala.inline
-  def editorDOTremoveFormat: editorDOTremoveFormat = "editor.removeFormat".asInstanceOf[editorDOTremoveFormat]
+  def editorDotremoveFormat: editorDotremoveFormat = "editor.removeFormat".asInstanceOf[editorDotremoveFormat]
   @scala.inline
-  def editorDOTrestoreRange: editorDOTrestoreRange = "editor.restoreRange".asInstanceOf[editorDOTrestoreRange]
+  def editorDotrestoreRange: editorDotrestoreRange = "editor.restoreRange".asInstanceOf[editorDotrestoreRange]
   @scala.inline
-  def editorDOTsaveRange: editorDOTsaveRange = "editor.saveRange".asInstanceOf[editorDOTsaveRange]
+  def editorDotsaveRange: editorDotsaveRange = "editor.saveRange".asInstanceOf[editorDotsaveRange]
   @scala.inline
-  def editorDOTstrikethrough: editorDOTstrikethrough = "editor.strikethrough".asInstanceOf[editorDOTstrikethrough]
+  def editorDotstrikethrough: editorDotstrikethrough = "editor.strikethrough".asInstanceOf[editorDotstrikethrough]
   @scala.inline
-  def editorDOTsubscript: editorDOTsubscript = "editor.subscript".asInstanceOf[editorDOTsubscript]
+  def editorDotsubscript: editorDotsubscript = "editor.subscript".asInstanceOf[editorDotsubscript]
   @scala.inline
-  def editorDOTsuperscript: editorDOTsuperscript = "editor.superscript".asInstanceOf[editorDOTsuperscript]
+  def editorDotsuperscript: editorDotsuperscript = "editor.superscript".asInstanceOf[editorDotsuperscript]
   @scala.inline
-  def editorDOTunderline: editorDOTunderline = "editor.underline".asInstanceOf[editorDOTunderline]
+  def editorDotunderline: editorDotunderline = "editor.underline".asInstanceOf[editorDotunderline]
   @scala.inline
-  def editorDOTundo: editorDOTundo = "editor.undo".asInstanceOf[editorDOTundo]
+  def editorDotundo: editorDotundo = "editor.undo".asInstanceOf[editorDotundo]
   @scala.inline
   def enable: enable = "enable".asInstanceOf[enable]
   @scala.inline

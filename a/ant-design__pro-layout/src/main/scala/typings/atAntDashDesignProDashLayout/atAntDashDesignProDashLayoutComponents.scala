@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object atAntDashDesignProDashLayoutComponents extends atAntDashDesignProDashLayoutProps {
   @scala.inline
-  def BaseMenu: ComponentType[BaseMenuProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libSiderMenuBaseMenuMod.default].asInstanceOf[typings.react.reactMod.ComponentType[BaseMenuProps]]
+  def BaseMenu: ComponentType[BaseMenuProps] = typings.atAntDashDesignProDashLayout.libSiderMenuBaseMenuMod.default.asInstanceOf[typings.react.reactMod.ComponentType[BaseMenuProps]]
   @scala.inline
   def BasicLayout: ComponentType[BasicLayoutProps] = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.default.asInstanceOf[typings.react.reactMod.ComponentType[BasicLayoutProps]]
   @scala.inline
@@ -40,5 +40,7 @@ object atAntDashDesignProDashLayoutComponents extends atAntDashDesignProDashLayo
   def ThemeColor: ComponentType[ThemeColorProps] = typings.atAntDashDesignProDashLayout.libSettingDrawerThemeColorMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ThemeColorProps]]
   @scala.inline
   def TopNavHeader: ComponentType[TopNavHeaderProps] = typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[TopNavHeaderProps]]
+  @scala.inline
+  def WrapContent: ComponentType[WrapContentProps] = typings.atAntDashDesignProDashLayout.libWrapContentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[WrapContentProps]]
 }
 

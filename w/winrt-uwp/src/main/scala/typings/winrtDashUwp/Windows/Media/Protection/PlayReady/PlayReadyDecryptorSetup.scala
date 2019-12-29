@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyDecryptorSetup.onDemand
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyDecryptorSetup.uninitialized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

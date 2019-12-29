@@ -16,7 +16,7 @@ trait IRecognizer extends IIdentifiable {
   		* @returns String id
   		*/
   @JSName("getId")
-  var getId_IRecognizer: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getId_IRecognizer: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of onFailed
   		* @returns Object
   		*/
@@ -49,10 +49,10 @@ object IRecognizer {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getCallbackScope: () => _ = null,
-    getId: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getId: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getOnFailed: () => _ = null,
     getOnRecognized: () => _ = null,
     inheritableStatics: js.Any = null,

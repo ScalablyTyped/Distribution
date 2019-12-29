@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.highcharts.highchartsStrings.`application/pdf`
-  - typings.highcharts.highchartsStrings.`image/jpeg`
-  - typings.highcharts.highchartsStrings.`image/png`
-  - typings.highcharts.highchartsStrings.`image/svg+xml`
+  - typings.highcharts.highchartsStrings.applicationSlashpdf
+  - typings.highcharts.highchartsStrings.imageSlashjpeg
+  - typings.highcharts.highchartsStrings.imageSlashpng
+  - typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml
 */
 trait ExportingMimeTypeValue extends js.Object
 
 object ExportingMimeTypeValue {
   @scala.inline
-  def `application/pdf`: typings.highcharts.highchartsStrings.`application/pdf` = this.cast("application/pdf")
+  def applicationSlashpdf: typings.highcharts.highchartsStrings.applicationSlashpdf = this.cast("application/pdf")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def `image/jpeg`: typings.highcharts.highchartsStrings.`image/jpeg` = this.cast("image/jpeg")
+  def imageSlashjpeg: typings.highcharts.highchartsStrings.imageSlashjpeg = this.cast("image/jpeg")
   @scala.inline
-  def `image/png`: typings.highcharts.highchartsStrings.`image/png` = this.cast("image/png")
+  def imageSlashpng: typings.highcharts.highchartsStrings.imageSlashpng = this.cast("image/png")
   @scala.inline
-  def `image/svg+xml`: typings.highcharts.highchartsStrings.`image/svg+xml` = this.cast("image/svg+xml")
+  def imageSlashsvgPlussignxml: typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml = this.cast("image/svg+xml")
 }
 

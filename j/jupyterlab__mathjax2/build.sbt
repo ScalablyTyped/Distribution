@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__mathjax2"
-version := "1.2.0-862ab4"
+version := "1.2.0-904ba3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-2adef7",
-  "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-cad8ac",
-  "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-86b809",
-  "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-18e14c",
-  "org.scalablytyped" %%% "phosphor__disposable" % "1.3.1-0ffa92",
-  "org.scalablytyped" %%% "phosphor__messaging" % "1.3.0-815e08",
-  "org.scalablytyped" %%% "phosphor__signaling" % "1.3.1-9147b0",
-  "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-075c8c",
-  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-6381db",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-00c039",
+  "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-03ab75",
+  "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-08179c",
+  "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-9f6a55",
+  "org.scalablytyped" %%% "phosphor__disposable" % "1.3.1-854e3a",
+  "org.scalablytyped" %%% "phosphor__messaging" % "1.3.0-fd3816",
+  "org.scalablytyped" %%% "phosphor__signaling" % "1.3.1-a82dbc",
+  "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-6c3154",
+  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-b63cdd",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

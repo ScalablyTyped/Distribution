@@ -10,7 +10,8 @@ class Conversation protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val ConversationID: String = js.native
-  var `Outlook.Conversation_typekey`: Conversation = js.native
+  @JSName("Outlook.Conversation_typekey")
+  var OutlookDotConversation_typekey: Conversation = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def ClearAlwaysAssignCategories(Store: Store): Unit = js.native

@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.PdfViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PdfViewer.PdfService.Local
-import typings.ejDotWebDotAll.ej.PdfViewer.PdfService.Remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

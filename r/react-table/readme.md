@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-table
 
-Typings are for version 6.8
+Typings are for version 7.0
 
 ## Library description:
 A fast, lightweight, opinionated table and datagrid built on React

@@ -1,7 +1,5 @@
 package typings.protobufjs.protobufjsMod
 
-import typings.protobufjs.protobufjsMod.rpc.ServiceMethod
-import typings.protobufjs.protobufjsMod.rpc.ServiceMethodCallback
 import typings.protobufjs.protobufjsMod.util.EventEmitter
 import typings.std.Error
 import scala.scalajs.js

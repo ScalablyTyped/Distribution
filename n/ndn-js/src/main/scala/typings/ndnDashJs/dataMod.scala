@@ -2,14 +2,6 @@ package typings.ndnDashJs
 
 import org.scalablytyped.runtime.TopLevel
 import typings.ndnDashJs.blobMod.Blob
-import typings.ndnDashJs.dataMod.ContentType
-import typings.ndnDashJs.dataMod.ContentType.BLOB
-import typings.ndnDashJs.dataMod.ContentType.KEY
-import typings.ndnDashJs.dataMod.ContentType.LINK
-import typings.ndnDashJs.dataMod.ContentType.NACK
-import typings.ndnDashJs.dataMod.ContentType.OTHER_CODE
-import typings.ndnDashJs.dataMod.Data
-import typings.ndnDashJs.dataMod.MetaInfo
 import typings.ndnDashJs.nameMod.Name
 import typings.ndnDashJs.nameMod.Name.Component
 import typings.ndnDashJs.signatureMod.Signature

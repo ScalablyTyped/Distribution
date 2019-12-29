@@ -1,7 +1,5 @@
 package typings.winrtDashUwp.Windows.Devices
 
-import typings.winrtDashUwp.Windows.Devices.Power.Battery
-import typings.winrtDashUwp.Windows.Devices.Power.BatteryReport
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.TypedEventHandler

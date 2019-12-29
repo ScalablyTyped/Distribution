@@ -1,7 +1,6 @@
 package typings.atAwsDashSdkXmlDashBuilder
 
 import typings.atAwsDashSdkXmlDashBuilder.buildStringableMod.Stringable
-import typings.atAwsDashSdkXmlDashBuilder.buildXmlNodeMod.XmlNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

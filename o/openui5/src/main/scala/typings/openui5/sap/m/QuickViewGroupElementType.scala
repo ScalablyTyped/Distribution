@@ -1,12 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.QuickViewGroupElementType.email
-import typings.openui5.sap.m.QuickViewGroupElementType.link
-import typings.openui5.sap.m.QuickViewGroupElementType.mobile
-import typings.openui5.sap.m.QuickViewGroupElementType.pageLink
-import typings.openui5.sap.m.QuickViewGroupElementType.phone
-import typings.openui5.sap.m.QuickViewGroupElementType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

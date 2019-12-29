@@ -1,6 +1,5 @@
 package typings.atJestConsole
 
-import typings.atJestConsole.buildNullConsoleMod.NullConsole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

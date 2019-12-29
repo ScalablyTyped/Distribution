@@ -9,12 +9,6 @@ trait _Modifier extends js.Object
 
 object _Modifier {
   @scala.inline
-  def BeforeAfterModifier(after: Date, before: Date): _Modifier = {
-    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[_Modifier]
-  }
-  @scala.inline
   def AfterModifier(after: Date): _Modifier = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
   
@@ -29,6 +23,12 @@ object _Modifier {
   @scala.inline
   def DaysOfWeekModifier(daysOfWeek: js.Array[Double]): _Modifier = {
     val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_Modifier]
+  }
+  @scala.inline
+  def BeforeAfterModifier(after: Date, before: Date): _Modifier = {
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Modifier]
   }

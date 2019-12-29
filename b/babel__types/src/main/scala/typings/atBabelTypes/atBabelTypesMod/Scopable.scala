@@ -37,219 +37,6 @@ trait Scopable extends _Node
 
 object Scopable {
   @scala.inline
-  def CatchClause(
-    body: BlockStatement,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.CatchClause,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    param: Identifier = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
-  def BlockStatement(
-    body: js.Array[Statement],
-    directives: js.Array[Directive],
-    `type`: typings.atBabelTypes.atBabelTypesStrings.BlockStatement,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
-  def ArrowFunctionExpression(
-    async: Boolean,
-    body: BlockStatement | Expression,
-    generator: Boolean,
-    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
-    `type`: typings.atBabelTypes.atBabelTypesStrings.ArrowFunctionExpression,
-    end: Int | Double = null,
-    expression: js.UndefOr[Boolean] = js.undefined,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    returnType: TypeAnnotation | TSTypeAnnotation | Noop = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
-  def ClassDeclaration(
-    body: ClassBody,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.ClassDeclaration,
-    `abstract`: js.UndefOr[Boolean] = js.undefined,
-    declare: js.UndefOr[Boolean] = js.undefined,
-    decorators: js.Array[Decorator] = null,
-    end: Int | Double = null,
-    id: Identifier = null,
-    implements: js.Array[TSExpressionWithTypeArguments | ClassImplements] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    mixins: js.Any = null,
-    start: Int | Double = null,
-    superClass: Expression = null,
-    superTypeParameters: TypeParameterInstantiation | TSTypeParameterInstantiation = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
-    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
-    if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
-  def Program(
-    body: js.Array[Statement],
-    directives: js.Array[Directive],
-    sourceType: script | module,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.Program,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    interpreter: InterpreterDirective = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    sourceFile: String = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
-  def WhileStatement(
-    body: BlockStatement | Statement,
-    test: Expression,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.WhileStatement,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
-  def ForStatement(
-    body: Statement,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.ForStatement,
-    end: Int | Double = null,
-    init: VariableDeclaration | Expression = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    test: Expression = null,
-    trailingComments: js.Array[Comment] = null,
-    update: Expression = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
-  def ForInStatement(
-    body: Statement,
-    left: VariableDeclaration | LVal,
-    right: Expression,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.ForInStatement,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Scopable]
-  }
-  @scala.inline
   def ObjectMethod(
     async: Boolean,
     body: BlockStatement,
@@ -283,14 +70,14 @@ object Scopable {
     __obj.asInstanceOf[Scopable]
   }
   @scala.inline
-  def FunctionExpression(
+  def ArrowFunctionExpression(
     async: Boolean,
-    body: BlockStatement,
+    body: BlockStatement | Expression,
     generator: Boolean,
     params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
-    `type`: typings.atBabelTypes.atBabelTypesStrings.FunctionExpression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.ArrowFunctionExpression,
     end: Int | Double = null,
-    id: Identifier = null,
+    expression: js.UndefOr[Boolean] = js.undefined,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
@@ -302,7 +89,7 @@ object Scopable {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
@@ -313,25 +100,24 @@ object Scopable {
     __obj.asInstanceOf[Scopable]
   }
   @scala.inline
-  def ForOfStatement(
-    await: Boolean,
-    body: Statement,
-    left: VariableDeclaration | LVal,
-    right: Expression,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.ForOfStatement,
+  def CatchClause(
+    body: BlockStatement,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.CatchClause,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    param: Identifier = null,
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): Scopable = {
-    val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
@@ -393,6 +179,135 @@ object Scopable {
     __obj.asInstanceOf[Scopable]
   }
   @scala.inline
+  def WhileStatement(
+    body: BlockStatement | Statement,
+    test: Expression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.WhileStatement,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
+  def ForOfStatement(
+    await: Boolean,
+    body: Statement,
+    left: VariableDeclaration | LVal,
+    right: Expression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.ForOfStatement,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
+  def ClassDeclaration(
+    body: ClassBody,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.ClassDeclaration,
+    `abstract`: js.UndefOr[Boolean] = js.undefined,
+    declare: js.UndefOr[Boolean] = js.undefined,
+    decorators: js.Array[Decorator] = null,
+    end: Int | Double = null,
+    id: Identifier = null,
+    implements: js.Array[TSExpressionWithTypeArguments | ClassImplements] = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    mixins: js.Any = null,
+    start: Int | Double = null,
+    superClass: Expression = null,
+    superTypeParameters: TypeParameterInstantiation | TSTypeParameterInstantiation = null,
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
+    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
+    if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
+  def DoWhileStatement(
+    body: Statement,
+    test: Expression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.DoWhileStatement,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
+  def BlockStatement(
+    body: js.Array[Statement],
+    directives: js.Array[Directive],
+    `type`: typings.atBabelTypes.atBabelTypesStrings.BlockStatement,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
   def ClassPrivateMethod(
     async: Boolean,
     body: BlockStatement,
@@ -428,6 +343,36 @@ object Scopable {
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
+  def FunctionExpression(
+    async: Boolean,
+    body: BlockStatement,
+    generator: Boolean,
+    params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty],
+    `type`: typings.atBabelTypes.atBabelTypesStrings.FunctionExpression,
+    end: Int | Double = null,
+    id: Identifier = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    returnType: TypeAnnotation | TSTypeAnnotation | Noop = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null,
+    typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
@@ -477,10 +422,11 @@ object Scopable {
     __obj.asInstanceOf[Scopable]
   }
   @scala.inline
-  def DoWhileStatement(
+  def ForInStatement(
     body: Statement,
-    test: Expression,
-    `type`: typings.atBabelTypes.atBabelTypesStrings.DoWhileStatement,
+    left: VariableDeclaration | LVal,
+    right: Expression,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.ForInStatement,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
@@ -488,12 +434,39 @@ object Scopable {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): Scopable = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
+  def Program(
+    body: js.Array[Statement],
+    directives: js.Array[Directive],
+    sourceType: script | module,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.Program,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    interpreter: InterpreterDirective = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    sourceFile: String = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
@@ -550,6 +523,33 @@ object Scopable {
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scopable]
+  }
+  @scala.inline
+  def ForStatement(
+    body: Statement,
+    `type`: typings.atBabelTypes.atBabelTypesStrings.ForStatement,
+    end: Int | Double = null,
+    init: VariableDeclaration | Expression = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    test: Expression = null,
+    trailingComments: js.Array[Comment] = null,
+    update: Expression = null
+  ): Scopable = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scopable]
   }
 }

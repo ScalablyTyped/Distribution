@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.SigPolicyHash")
 @js.native
-class SigPolicyHash () extends DigestAlgAndValueType
+class SigPolicyHash ()
+  extends typings.xadesjs.buildTypesXmlMod.SigPolicyHash
 

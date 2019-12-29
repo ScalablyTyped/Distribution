@@ -20,7 +20,8 @@ class Filter protected () extends js.Object {
   /** A collection of all properties for this filter */
   @JSName("Properties")
   val Properties_Original: Properties = js.native
-  var `WIA.Filter_typekey`: Filter = js.native
+  @JSName("WIA.Filter_typekey")
+  var WIADotFilter_typekey: Filter = js.native
   def Properties(Index: String): Property = js.native
   /** Returns the specified item in the collection either by position or name. */
   /** A collection of all properties for this filter */

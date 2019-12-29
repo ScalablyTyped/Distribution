@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class ShellWindows protected () extends js.Object {
   /** Get count of open Shell windows */
   val Count: Double = js.native
-  var `SHDocVw.ShellWindows_typekey`: ShellWindows = js.native
+  @JSName("SHDocVw.ShellWindows_typekey")
+  var SHDocVwDotShellWindows_typekey: ShellWindows = js.native
   /** Find the window based on the location */
   def FindWindowSW(pvarloc: js.Any, pvarlocRoot: js.Any, swClass: Double, pHWND: Double, swfwOptions: Double): js.Any = js.native
   /** Return the shell window for the given index */

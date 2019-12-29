@@ -12,7 +12,7 @@ trait Invoice extends js.Object {
   var due_date: js.UndefOr[String] = js.undefined
   var external_id: js.UndefOr[String] = js.undefined
   var line_items: js.UndefOr[js.Array[LineItem]] = js.undefined
-  var transactions: js.UndefOr[js.Array[typings.chartmogulDashNode.chartmogulDashNodeMod.Invoice.Transaction]] = js.undefined
+  var transactions: js.UndefOr[js.Array[Transaction]] = js.undefined
   var uuid: js.UndefOr[String] = js.undefined
 }
 
@@ -26,7 +26,7 @@ object Invoice {
     due_date: String = null,
     external_id: String = null,
     line_items: js.Array[LineItem] = null,
-    transactions: js.Array[typings.chartmogulDashNode.chartmogulDashNodeMod.Invoice.Transaction] = null,
+    transactions: js.Array[Transaction] = null,
     uuid: String = null
   ): Invoice = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,5 @@
 package typings.atAwsDashSdkEventstreamDashMarshaller
 
-import typings.atAwsDashSdkEventstreamDashMarshaller.buildInt64Mod.Int64
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

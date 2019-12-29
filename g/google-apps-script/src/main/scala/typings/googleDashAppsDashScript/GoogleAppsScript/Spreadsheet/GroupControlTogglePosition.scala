@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.GroupControlTogglePosition.AFTER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.GroupControlTogglePosition.BEFORE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

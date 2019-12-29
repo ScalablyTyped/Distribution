@@ -2,7 +2,6 @@ package typings.simplecrawler
 
 import typings.node.eventsMod.EventEmitter
 import typings.simplecrawler.cacheDashBackendDashFsMod.FSBackend
-import typings.simplecrawler.cacheMod.Cache
 import typings.simplecrawler.queueMod.QueueItem
 import typings.std.Error
 import scala.scalajs.js

@@ -1,9 +1,6 @@
 package typings.openui5.sap.ui.layout
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.layout.GridPosition.Center
-import typings.openui5.sap.ui.layout.GridPosition.Left
-import typings.openui5.sap.ui.layout.GridPosition.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

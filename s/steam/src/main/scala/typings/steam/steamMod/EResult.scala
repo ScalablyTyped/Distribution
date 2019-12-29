@@ -1,7 +1,6 @@
 package typings.steam.steamMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steam.steamMod.EResult.AccountLogonDenied
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

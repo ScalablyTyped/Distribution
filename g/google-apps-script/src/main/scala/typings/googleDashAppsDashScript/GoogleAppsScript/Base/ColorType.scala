@@ -1,9 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ColorType.RGB
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ColorType.THEME
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ColorType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

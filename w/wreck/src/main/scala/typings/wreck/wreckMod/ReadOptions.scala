@@ -1,6 +1,6 @@
 package typings.wreck.wreckMod
 
-import typings.wreck.wreckNumbers.`true`
+import typings.wreck.wreckBooleans.`true`
 import typings.wreck.wreckStrings.force
 import typings.wreck.wreckStrings.strict
 import scala.scalajs.js

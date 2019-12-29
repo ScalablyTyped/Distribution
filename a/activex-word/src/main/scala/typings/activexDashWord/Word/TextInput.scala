@@ -15,7 +15,8 @@ class TextInput protected () extends js.Object {
   val Type: WdTextFormFieldType = js.native
   val Valid: Boolean = js.native
   var Width: Double = js.native
-  var `Word.TextInput_typekey`: TextInput = js.native
+  @JSName("Word.TextInput_typekey")
+  var WordDotTextInput_typekey: TextInput = js.native
   def Clear(): Unit = js.native
   def EditType(Type: WdTextFormFieldType): Unit = js.native
   def EditType(Type: WdTextFormFieldType, Default: js.Any): Unit = js.native

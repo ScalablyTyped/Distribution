@@ -14,6 +14,7 @@ class SmartTagRecognizer protected () extends js.Object {
   val FullName: String = js.native
   val Parent: js.Any = js.native
   val ProgID: String = js.native
-  var `Word.SmartTagRecognizer_typekey`: SmartTagRecognizer = js.native
+  @JSName("Word.SmartTagRecognizer_typekey")
+  var WordDotSmartTagRecognizer_typekey: SmartTagRecognizer = js.native
 }
 

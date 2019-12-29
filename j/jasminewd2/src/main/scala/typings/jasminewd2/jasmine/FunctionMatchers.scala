@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 trait FunctionMatchers[Fn /* <: js.Function1[/* repeated */ js.Any, _] */]
   extends Matchers[js.Any] {
   @JSName("toHaveBeenCalledWith")
-  def toHaveBeenCalledWith_Boolean(params: js.Any*): Boolean = js.native
+  def toHaveBeenCalledWith_Promise(params: js.Any*): js.Promise[Unit] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.gapiDotClientDotAdexchangeseller.gapi.client
 
-import typings.gapiDotClientDotAdexchangeseller.gapiDotClientDotAdexchangesellerStrings.v2DOT0
+import typings.gapiDotClientDotAdexchangeseller.gapiDotClientDotAdexchangesellerStrings.v2Dot0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ object load extends js.Object {
   /** Load Ad Exchange Seller API v2.0 */
   def apply(
     name: typings.gapiDotClientDotAdexchangeseller.gapiDotClientDotAdexchangesellerStrings.adexchangeseller,
-    version: v2DOT0
+    version: v2Dot0
   ): js.Thenable[Unit] = js.native
   def apply(
     name: typings.gapiDotClientDotAdexchangeseller.gapiDotClientDotAdexchangesellerStrings.adexchangeseller,
-    version: v2DOT0,
+    version: v2Dot0,
     callback: js.Function0[_]
   ): Unit = js.native
 }

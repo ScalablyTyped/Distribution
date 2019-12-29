@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignatureLineObject protected () extends js.Object {
   val Id: String = js.native
-  var `InfoPath.SignatureLineObject_typekey`: SignatureLineObject = js.native
+  @JSName("InfoPath.SignatureLineObject_typekey")
+  var InfoPathDotSignatureLineObject_typekey: SignatureLineObject = js.native
   val Signature: SignatureObject = js.native
   val SignatureAppearanceType: XdSignatureAppearanceType = js.native
   var SuggestedSigner: String = js.native

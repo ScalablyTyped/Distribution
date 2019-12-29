@@ -16,7 +16,7 @@ trait OnEventMetaData extends js.Object {
   var mfa_type: String
   var request_id: String
   var timestamp: String
-  var view_name: String
+  var view_name: ViewName
 }
 
 object OnEventMetaData {
@@ -33,7 +33,7 @@ object OnEventMetaData {
     mfa_type: String,
     request_id: String,
     timestamp: String,
-    view_name: String
+    view_name: ViewName
   ): OnEventMetaData = {
     val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any], error_type = error_type.asInstanceOf[js.Any], exit_status = exit_status.asInstanceOf[js.Any], institution_id = institution_id.asInstanceOf[js.Any], institution_name = institution_name.asInstanceOf[js.Any], institution_search_query = institution_search_query.asInstanceOf[js.Any], link_session_id = link_session_id.asInstanceOf[js.Any], mfa_type = mfa_type.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], view_name = view_name.asInstanceOf[js.Any])
   

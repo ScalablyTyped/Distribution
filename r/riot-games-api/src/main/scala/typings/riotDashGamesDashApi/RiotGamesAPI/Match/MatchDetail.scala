@@ -17,7 +17,7 @@ trait MatchDetail extends js.Object {
   var queueType: String
   var region: String
   var season: String
-  var teams: js.Array[typings.riotDashGamesDashApi.RiotGamesAPI.Match.Team]
+  var teams: js.Array[Team]
   var timeline: Timeline
 }
 
@@ -36,7 +36,7 @@ object MatchDetail {
     queueType: String,
     region: String,
     season: String,
-    teams: js.Array[typings.riotDashGamesDashApi.RiotGamesAPI.Match.Team],
+    teams: js.Array[Team],
     timeline: Timeline
   ): MatchDetail = {
     val __obj = js.Dynamic.literal(mapId = mapId.asInstanceOf[js.Any], matchCreation = matchCreation.asInstanceOf[js.Any], matchId = matchId.asInstanceOf[js.Any], matchMode = matchMode.asInstanceOf[js.Any], matchType = matchType.asInstanceOf[js.Any], matchVersion = matchVersion.asInstanceOf[js.Any], participantIdentities = participantIdentities.asInstanceOf[js.Any], participants = participants.asInstanceOf[js.Any], plateformId = plateformId.asInstanceOf[js.Any], queueType = queueType.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])

@@ -10,3 +10,10 @@ import scala.scalajs.js.annotation._
 class default ()
   extends Component[SearchInputProps, js.Object, js.Any]
 
+/* static members */
+@JSImport("fundamental-react/lib/SearchInput/SearchInput", JSImport.Default)
+@js.native
+object default extends js.Object {
+  var displayName: typings.fundamentalDashReact.fundamentalDashReactStrings.SearchInput = js.native
+}
+

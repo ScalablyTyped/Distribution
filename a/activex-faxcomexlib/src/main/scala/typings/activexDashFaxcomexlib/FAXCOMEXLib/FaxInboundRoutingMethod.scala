@@ -12,7 +12,8 @@ class FaxInboundRoutingMethod protected () extends js.Object {
   val ExtensionFriendlyName: String = js.native
   /** Image name of the extension exposing this method */
   val ExtensionImageName: String = js.native
-  var `FAXCOMEXLib.FaxInboundRoutingMethod_typekey`: FaxInboundRoutingMethod = js.native
+  @JSName("FAXCOMEXLib.FaxInboundRoutingMethod_typekey")
+  var FAXCOMEXLibDotFaxInboundRoutingMethod_typekey: FaxInboundRoutingMethod = js.native
   /** Internal function name */
   val FunctionName: String = js.native
   /** GUID of the method */

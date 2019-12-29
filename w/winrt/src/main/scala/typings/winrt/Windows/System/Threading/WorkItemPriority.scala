@@ -1,9 +1,6 @@
 package typings.winrt.Windows.System.Threading
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.System.Threading.WorkItemPriority.high
-import typings.winrt.Windows.System.Threading.WorkItemPriority.low
-import typings.winrt.Windows.System.Threading.WorkItemPriority.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

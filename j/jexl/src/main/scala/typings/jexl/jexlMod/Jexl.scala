@@ -1,6 +1,8 @@
 package typings.jexl.jexlMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jexl.expressionMod.Context
+import typings.jexl.expressionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,29 +58,50 @@ trait Jexl extends js.Object {
     */
   def addUnaryOp(operator: String, fn: UnaryOpFunction): Unit = js.native
   /**
+    * Creates an Expression object from the given Jexl expression string, and
+    * immediately compiles it. The returned Expression object can then be
+    * evaluated multiple times with new contexts, without generating any
+    * additional string processing overhead.
+    * @param expression The Jexl expression to be compiled
+    * @returns The compiled Expression object
+    */
+  def compile(expression: String): default = js.native
+  /**
+    * Constructs an Expression object from a Jexl expression string.
+    * @param expression The Jexl expression to be wrapped in an
+    *    Expression object
+    * @returns The Expression object representing the given string
+    */
+  def createExpression(expression: String): default = js.native
+  /**
     * Asynchronously evaluates a Jexl string within an optional context.
     * @param expression The Jexl expression to be evaluated
-    * @param [context] A mapping of variables to values, which will be
+    * @param context A mapping of variables to values, which will be
     *      made accessible to the Jexl expression when evaluating it
     * @returns resolves with the result of the evaluation.
     */
   def eval(expression: String): js.Promise[_] = js.native
-  def eval(expression: String, context: js.Object): js.Promise[_] = js.native
+  def eval(expression: String, context: Context): js.Promise[_] = js.native
   /**
     * Synchronously evaluates a Jexl string within an optional context.
     * @param expression The Jexl expression to be evaluated
-    * @param [context] A mapping of variables to values, which will be
+    * @param context A mapping of variables to values, which will be
     *      made accessible to the Jexl expression when evaluating it
     * @returns the result of the evaluation.
     * @throws on error
     */
   def evalSync(expression: String): js.Any = js.native
-  def evalSync(expression: String, context: js.Object): js.Any = js.native
+  def evalSync(expression: String, context: Context): js.Any = js.native
   /**
     * Retrieves a previously set transform function.
     * @param name The name of the transform function
     * @returns The transform function
     */
   def getTransform(name: String): TransformFunction = js.native
+  /**
+    * Removes a binary or unary operator from the Jexl grammar.
+    * @param operator The operator string to be removed
+    */
+  def removeOp(operator: String): Unit = js.native
 }
 

@@ -1,8 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.atAngularCoreMod.ChangeDetectionStrategy.Default
-import typings.atAngularCore.atAngularCoreMod.ChangeDetectionStrategy.OnPush
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

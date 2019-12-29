@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("esri/renderers/smartMapping/statistics/histogram", JSImport.Namespace)
 @js.native
 object esriRenderersSmartMappingStatisticsHistogramMod
-  extends TopLevel[js.Function1[/* params */ histogramHistogramParams, IPromise[HistogramResult]]]
+  extends TopLevel[js.Function1[/* params */ histogramHistogramParams, js.Promise[HistogramResult]]]
 

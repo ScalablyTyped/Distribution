@@ -1,26 +1,6 @@
 package typings.inboxsdk.inboxsdkMod.Router
 
 import org.scalablytyped.runtime.TopLevel
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.ALL_MAIL
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.ANY_LIST
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CHAT
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CHATS
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CONTACT
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CONTACTS
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.DONE
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.DRAFTS
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.IMPORTANT
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.INBOX
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.LABEL
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.REMINDERS
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SEARCH
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SENT
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SETTINGS
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SNOOZED
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SPAM
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.STARRED
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.THREAD
-import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.TRASH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

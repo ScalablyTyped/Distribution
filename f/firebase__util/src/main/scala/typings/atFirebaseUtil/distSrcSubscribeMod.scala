@@ -1,13 +1,5 @@
 package typings.atFirebaseUtil
 
-import typings.atFirebaseUtil.distSrcSubscribeMod.CompleteFn
-import typings.atFirebaseUtil.distSrcSubscribeMod.ErrorFn
-import typings.atFirebaseUtil.distSrcSubscribeMod.Executor
-import typings.atFirebaseUtil.distSrcSubscribeMod.NextFn
-import typings.atFirebaseUtil.distSrcSubscribeMod.Observer
-import typings.atFirebaseUtil.distSrcSubscribeMod.PartialObserver
-import typings.atFirebaseUtil.distSrcSubscribeMod.Subscribe
-import typings.atFirebaseUtil.distSrcSubscribeMod.Unsubscribe
 import typings.std.Error
 import typings.std.Partial
 import scala.scalajs.js

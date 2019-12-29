@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.FontStyle.Bold
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.FontStyle.Italic
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.FontStyle.Normal
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.FontStyle.Strikeout
-import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.FontStyle.Underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -23,8 +23,8 @@ import typings.chromeDashApps.Anon_NEWNOTE
 import typings.chromeDashApps.Anon_Partitions
 import typings.chromeDashApps.Anon_Tcp
 import typings.chromeDashApps.chrome.ToStringLiteral
+import typings.chromeDashApps.chromeDashAppsBooleans.`false`
 import typings.chromeDashApps.chromeDashAppsNumbers.`2`
-import typings.chromeDashApps.chromeDashAppsNumbers.`false`
 import typings.chromeDashApps.chromeDashAppsStrings.new_note
 import typings.std.Exclude
 import scala.scalajs.js

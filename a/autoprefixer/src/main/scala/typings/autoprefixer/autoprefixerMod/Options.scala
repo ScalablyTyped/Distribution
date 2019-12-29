@@ -1,6 +1,6 @@
 package typings.autoprefixer.autoprefixerMod
 
-import typings.autoprefixer.autoprefixerNumbers.`false`
+import typings.autoprefixer.autoprefixerBooleans.`false`
 import typings.autoprefixer.autoprefixerStrings.`no-2009`
 import typings.autoprefixer.autoprefixerStrings.`no-autoplace`
 import typings.autoprefixer.autoprefixerStrings.autoplace

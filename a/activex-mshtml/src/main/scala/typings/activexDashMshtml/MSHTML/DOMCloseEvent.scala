@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMCloseEvent")
 @js.native
 class DOMCloseEvent protected () extends js.Object {
-  var `MSHTML.DOMCloseEvent_typekey`: DOMCloseEvent = js.native
+  @JSName("MSHTML.DOMCloseEvent_typekey")
+  var MSHTMLDotDOMCloseEvent_typekey: DOMCloseEvent = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   val cancelable: Boolean = js.native

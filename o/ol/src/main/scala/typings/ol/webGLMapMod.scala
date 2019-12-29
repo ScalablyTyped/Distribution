@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.pluggableMapMod.MapOptions
-import typings.ol.webGLMapMod.WebGLMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

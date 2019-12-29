@@ -10,7 +10,7 @@ trait ActionCompleteEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Returns Spreadsheet model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Spreadsheet.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the request type.
     */
   var reqType: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ object ActionCompleteEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Spreadsheet.Model = null,
+    model: Model = null,
     reqType: String = null,
     selectedCell: js.Array[_] | js.Any = null,
     sheetIdx: Int | Double = null,

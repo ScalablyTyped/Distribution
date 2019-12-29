@@ -8,6 +8,6 @@ package object ImmutableData {
   import typings.immutable.Immutable.OrderedMap
   import typings.immutable.Immutable.OrderedSet
 
-  type BlockMap = OrderedMap[String, typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock]
+  type BlockMap = OrderedMap[String, ContentBlock]
   type DraftInlineStyle = OrderedSet[String]
 }

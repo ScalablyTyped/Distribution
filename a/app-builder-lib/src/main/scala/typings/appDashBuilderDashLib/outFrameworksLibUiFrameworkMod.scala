@@ -1,6 +1,6 @@
 package typings.appDashBuilderDashLib
 
-import typings.appDashBuilderDashLib.appDashBuilderDashLibNumbers.`false`
+import typings.appDashBuilderDashLib.appDashBuilderDashLibBooleans.`false`
 import typings.appDashBuilderDashLib.outConfigurationMod.AfterPackContext
 import typings.appDashBuilderDashLib.outCoreMod.Platform
 import typings.appDashBuilderDashLib.outFrameworkMod.Framework

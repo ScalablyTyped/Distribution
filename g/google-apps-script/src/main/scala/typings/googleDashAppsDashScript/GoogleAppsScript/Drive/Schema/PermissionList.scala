@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PermissionList extends js.Object {
   var etag: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[
-    js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Permission]
-  ] = js.undefined
+  var items: js.UndefOr[js.Array[Permission]] = js.undefined
   var kind: js.UndefOr[String] = js.undefined
   var nextPageToken: js.UndefOr[String] = js.undefined
   var selfLink: js.UndefOr[String] = js.undefined
@@ -18,7 +16,7 @@ object PermissionList {
   @scala.inline
   def apply(
     etag: String = null,
-    items: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Permission] = null,
+    items: js.Array[Permission] = null,
     kind: String = null,
     nextPageToken: String = null,
     selfLink: String = null

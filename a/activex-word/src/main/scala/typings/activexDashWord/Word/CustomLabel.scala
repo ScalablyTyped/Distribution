@@ -23,7 +23,8 @@ class CustomLabel protected () extends js.Object {
   val Valid: Boolean = js.native
   var VerticalPitch: Double = js.native
   var Width: Double = js.native
-  var `Word.CustomLabel_typekey`: CustomLabel = js.native
+  @JSName("Word.CustomLabel_typekey")
+  var WordDotCustomLabel_typekey: CustomLabel = js.native
   def Delete(): Unit = js.native
 }
 

@@ -34,7 +34,7 @@ object builderDashUtilDashRuntimeStrings {
   sealed trait STANDARD_IA extends js.Object
   
   @js.native
-  sealed trait `aws:kms` extends js.Object
+  sealed trait awsColonkms extends js.Object
   
   @js.native
   sealed trait base64 extends js.Object
@@ -64,13 +64,13 @@ object builderDashUtilDashRuntimeStrings {
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait installerDOTexe extends js.Object
+  sealed trait installerDotexe extends js.Object
   
   @js.native
   sealed trait latin1 extends js.Object
   
   @js.native
-  sealed trait packageDOT7z extends js.Object
+  sealed trait packageDot7z extends js.Object
   
   @js.native
   sealed trait prerelease extends js.Object
@@ -109,7 +109,7 @@ object builderDashUtilDashRuntimeStrings {
   @scala.inline
   def STANDARD_IA: STANDARD_IA = "STANDARD_IA".asInstanceOf[STANDARD_IA]
   @scala.inline
-  def `aws:kms`: `aws:kms` = "aws:kms".asInstanceOf[`aws:kms`]
+  def awsColonkms: awsColonkms = "aws:kms".asInstanceOf[awsColonkms]
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
@@ -129,11 +129,11 @@ object builderDashUtilDashRuntimeStrings {
   @scala.inline
   def https: https = "https".asInstanceOf[https]
   @scala.inline
-  def installerDOTexe: installerDOTexe = "installer.exe".asInstanceOf[installerDOTexe]
+  def installerDotexe: installerDotexe = "installer.exe".asInstanceOf[installerDotexe]
   @scala.inline
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
   @scala.inline
-  def packageDOT7z: packageDOT7z = "package.7z".asInstanceOf[packageDOT7z]
+  def packageDot7z: packageDot7z = "package.7z".asInstanceOf[packageDot7z]
   @scala.inline
   def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
   @scala.inline

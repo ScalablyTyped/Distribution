@@ -3,8 +3,6 @@ package typings.antd
 import typings.antd.libCheckboxCheckboxMod.AbstractCheckboxProps
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.libRadioInterfaceMod.RadioChangeEvent
-import typings.antd.libRadioRadioButtonMod.RadioButton
-import typings.antd.libRadioRadioButtonMod.RadioButtonProps
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js

@@ -6,31 +6,31 @@ import scala.scalajs.js.annotation._
 
 trait IPlugin extends js.Object {
   /** [Property] (String) */
-  var bufferedrenderer: js.UndefOr[java.lang.String] = js.undefined
+  var bufferedrenderer: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var cellediting: js.UndefOr[java.lang.String] = js.undefined
+  var cellediting: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var gridheaderresizer: js.UndefOr[java.lang.String] = js.undefined
+  var gridheaderresizer: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var gridviewdragdrop: js.UndefOr[java.lang.String] = js.undefined
+  var gridviewdragdrop: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var rowediting: js.UndefOr[java.lang.String] = js.undefined
+  var rowediting: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var rowexpander: js.UndefOr[java.lang.String] = js.undefined
+  var rowexpander: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var treeviewdragdrop: js.UndefOr[java.lang.String] = js.undefined
+  var treeviewdragdrop: js.UndefOr[String] = js.undefined
 }
 
 object IPlugin {
   @scala.inline
   def apply(
-    bufferedrenderer: java.lang.String = null,
-    cellediting: java.lang.String = null,
-    gridheaderresizer: java.lang.String = null,
-    gridviewdragdrop: java.lang.String = null,
-    rowediting: java.lang.String = null,
-    rowexpander: java.lang.String = null,
-    treeviewdragdrop: java.lang.String = null
+    bufferedrenderer: String = null,
+    cellediting: String = null,
+    gridheaderresizer: String = null,
+    gridviewdragdrop: String = null,
+    rowediting: String = null,
+    rowexpander: String = null,
+    treeviewdragdrop: String = null
   ): IPlugin = {
     val __obj = js.Dynamic.literal()
     if (bufferedrenderer != null) __obj.updateDynamic("bufferedrenderer")(bufferedrenderer.asInstanceOf[js.Any])

@@ -5,7 +5,6 @@ import typings.std.Uint32Array
 import typings.wonderDotJs.distEs2015RendererBufferCommonBufferMod.CommonBuffer
 import typings.wonderDotJs.distEs2015RendererBufferEBufferTypeMod.EBufferType
 import typings.wonderDotJs.distEs2015RendererBufferEBufferUsageMod.EBufferUsage
-import typings.wonderDotJs.distEs2015RendererBufferElementBufferMod.ElementBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

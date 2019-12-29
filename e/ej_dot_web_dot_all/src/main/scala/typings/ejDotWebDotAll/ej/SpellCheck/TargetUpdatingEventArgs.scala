@@ -13,7 +13,7 @@ trait TargetUpdatingEventArgs extends js.Object {
   var currentElement: js.UndefOr[js.Any] = js.undefined
   /** Returns the SpellCheck model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.SpellCheck.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the previous target element value.
     */
   var previousElement: js.UndefOr[js.Any] = js.undefined
@@ -30,7 +30,7 @@ object TargetUpdatingEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     currentElement: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.SpellCheck.Model = null,
+    model: Model = null,
     previousElement: js.Any = null,
     targetHtml: String = null,
     `type`: String = null

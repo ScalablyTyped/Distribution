@@ -17,11 +17,11 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var autoSync: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var batchUpdateMode: js.UndefOr[java.lang.String] = js.undefined
+  var batchUpdateMode: js.UndefOr[String] = js.undefined
   /** [Property] (String) */
-  var defaultProxyType: js.UndefOr[java.lang.String] = js.undefined
+  var defaultProxyType: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object[]) */
   var fields: js.UndefOr[Array] = js.undefined
   /** [Config Option] (Boolean) */
@@ -72,7 +72,7 @@ import scala.scalajs.js.annotation._
   		*/
   var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var model: js.UndefOr[java.lang.String] = js.undefined
+  var model: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Ext.data.proxy.Proxy/Object) */
   var proxy: js.UndefOr[js.Any] = js.undefined
   /** [Method] Reloads the store using the last options passed to the load method
@@ -103,17 +103,17 @@ import scala.scalajs.js.annotation._
   		* @param direction String The overall direction to sort the data by.
   		* @returns Ext.util.Sorter[]
   		*/
-  var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[java.lang.String], Array]] = js.undefined
+  var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[String], Array]] = js.undefined
   /** [Config Option] (Boolean) */
   var sortOnLoad: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  var sortRoot: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.util.Sorter[]/Object[]) */
   var sorters: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var statefulFilters: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var storeId: js.UndefOr[java.lang.String] = js.undefined
+  var storeId: js.UndefOr[String] = js.undefined
   /** [Method] Suspends automatically syncing the Store with its Proxy  */
   var suspendAutoSync: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Synchronizes the store with its proxy
@@ -133,31 +133,31 @@ object IAbstractStore {
     alternateClassName: js.Any = null,
     autoLoad: js.Any = null,
     autoSync: js.UndefOr[Boolean] = js.undefined,
-    batchUpdateMode: java.lang.String = null,
+    batchUpdateMode: String = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
-    defaultProxyType: java.lang.String = null,
-    defaultSortDirection: java.lang.String = null,
+    defaultProxyType: String = null,
+    defaultSortDirection: String = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: Array = null,
     filterOnLoad: js.UndefOr[Boolean] = js.undefined,
     filters: js.Any = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     generateComparator: () => Unit = null,
     getFirstSorter: () => ISorter = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getModifiedRecords: () => Array = null,
     getNewRecords: () => Array = null,
     getProxy: () => typings.extjs.Ext.data.proxy.IProxy = null,
     getRemovedRecords: () => Array = null,
     getUpdatedRecords: () => Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IAbstractStore = null,
@@ -170,17 +170,17 @@ object IAbstractStore {
     listeners: js.Any = null,
     load: /* options */ js.UndefOr[js.Any] => Unit = null,
     mixins: js.Any = null,
-    model: java.lang.String = null,
+    model: String = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     proxy: js.Any = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
     reload: /* options */ js.UndefOr[js.Any] => Unit = null,
     remoteFilter: js.UndefOr[Boolean] = js.undefined,
     remoteSort: js.UndefOr[Boolean] = js.undefined,
     removeAll: () => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removed: Array = null,
     requires: Array = null,
@@ -191,18 +191,18 @@ object IAbstractStore {
     self: IClass = null,
     setProxy: /* proxy */ js.UndefOr[js.Any] => typings.extjs.Ext.data.proxy.IProxy = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (js.UndefOr[js.Any], js.UndefOr[java.lang.String]) => Array = null,
+    sort: (js.UndefOr[js.Any], js.UndefOr[String]) => Array = null,
     sortOnLoad: js.UndefOr[Boolean] = js.undefined,
-    sortRoot: java.lang.String = null,
+    sortRoot: String = null,
     sorters: js.Any = null,
     statefulFilters: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    storeId: java.lang.String = null,
+    storeId: String = null,
     suspendAutoSync: () => Unit = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     sync: /* options */ js.UndefOr[js.Any] => IStore = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IAbstractStore = {
     val __obj = js.Dynamic.literal()

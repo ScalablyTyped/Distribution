@@ -1,8 +1,6 @@
 package typings.unlDashCore.unlDashCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.unlDashCore.unlDashCoreMod.ElevationType.floor
-import typings.unlDashCore.unlDashCoreMod.ElevationType.heightincm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

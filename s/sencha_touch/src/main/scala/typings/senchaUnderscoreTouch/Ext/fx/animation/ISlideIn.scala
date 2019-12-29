@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ISlideIn extends IAbstract {
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.undefined
+  var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of isElementBoxFit
   		* @returns Boolean
   		*/
@@ -33,11 +33,11 @@ trait ISlideIn extends IAbstract {
   /** [Method] Sets the value of containerBox
   		* @param containerBox String The new value.
   		*/
-  var setContainerBox: js.UndefOr[js.Function1[/* containerBox */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setContainerBox: js.UndefOr[js.Function1[/* containerBox */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of elementBox
   		* @param elementBox String The new value.
   		*/
-  var setElementBox: js.UndefOr[js.Function1[/* elementBox */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setElementBox: js.UndefOr[js.Function1[/* elementBox */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of isElementBoxFit
   		* @param isElementBoxFit Boolean The new value.
   		*/
@@ -62,7 +62,7 @@ object ISlideIn {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
@@ -74,26 +74,26 @@ object ISlideIn {
     clearListeners: () => Unit = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    direction: java.lang.String = null,
-    easing: java.lang.String = null,
+    direction: String = null,
+    easing: String = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     getAfter: () => _ = null,
     getBefore: () => _ = null,
     getBubbleEvents: () => _ = null,
     getDelay: () => Double = null,
-    getDirection: () => java.lang.String = null,
+    getDirection: () => String = null,
     getDuration: () => Double = null,
-    getEasing: () => java.lang.String = null,
+    getEasing: () => String = null,
     getElement: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getIsElementBoxFit: () => Boolean = null,
     getIteration: () => Double = null,
     getListeners: () => _ = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getOffset: () => Double = null,
     getOnBeforeEnd: () => _ = null,
     getOnBeforeStart: () => _ = null,
@@ -104,7 +104,7 @@ object ISlideIn {
     getReverse: () => _ = null,
     getScope: () => _ = null,
     getUseCssTransform: () => Boolean = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     listeners: js.Any = null,
@@ -112,7 +112,7 @@ object ISlideIn {
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     offset: Int | Double = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     out: js.UndefOr[Boolean] = js.undefined,
@@ -120,24 +120,24 @@ object ISlideIn {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
     setAfter: /* after */ js.UndefOr[js.Any] => Unit = null,
     setBefore: /* before */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setContainerBox: /* containerBox */ js.UndefOr[java.lang.String] => Unit = null,
+    setContainerBox: /* containerBox */ js.UndefOr[String] => Unit = null,
     setDelay: /* delay */ js.UndefOr[Double] => Unit = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     setDuration: /* duration */ js.UndefOr[Double] => Unit = null,
-    setEasing: /* easing */ js.UndefOr[java.lang.String] => Unit = null,
+    setEasing: /* easing */ js.UndefOr[String] => Unit = null,
     setElement: /* element */ js.UndefOr[js.Any] => Unit = null,
-    setElementBox: /* elementBox */ js.UndefOr[java.lang.String] => Unit = null,
+    setElementBox: /* elementBox */ js.UndefOr[String] => Unit = null,
     setIsElementBoxFit: /* isElementBoxFit */ js.UndefOr[Boolean] => Unit = null,
     setIteration: /* iteration */ js.UndefOr[Double] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
     setOffset: /* offset */ js.UndefOr[Double] => Unit = null,
     setOnBeforeEnd: /* onBeforeEnd */ js.UndefOr[js.Any] => Unit = null,
     setOnBeforeStart: /* onBeforeStart */ js.UndefOr[js.Any] => Unit = null,
@@ -151,7 +151,7 @@ object ISlideIn {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

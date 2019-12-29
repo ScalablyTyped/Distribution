@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGStringList")
 @js.native
 class SVGStringList protected () extends js.Object {
-  var `MSHTML.SVGStringList_typekey`: SVGStringList = js.native
+  @JSName("MSHTML.SVGStringList_typekey")
+  var MSHTMLDotSVGStringList_typekey: SVGStringList = js.native
   var numberOfItems: Double = js.native
   def appendItem(newItem: String): String = js.native
   def clear(): Unit = js.native

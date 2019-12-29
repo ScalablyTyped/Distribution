@@ -1,6 +1,5 @@
 package typings.fancyDashLog.fancyDashLogMod
 
-import typings.fancyDashLog.fancyDashLogMod.FancyLog.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

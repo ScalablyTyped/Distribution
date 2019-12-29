@@ -20,7 +20,8 @@ class OLEFormat protected () extends js.Object {
   val Parent: js.Any = js.native
   var PreserveFormattingOnUpdate: Boolean = js.native
   val ProgID: String = js.native
-  var `Word.OLEFormat_typekey`: OLEFormat = js.native
+  @JSName("Word.OLEFormat_typekey")
+  var WordDotOLEFormat_typekey: OLEFormat = js.native
   def Activate(): Unit = js.native
   def ActivateAs(ClassType: String): Unit = js.native
   def ConvertTo(): Unit = js.native

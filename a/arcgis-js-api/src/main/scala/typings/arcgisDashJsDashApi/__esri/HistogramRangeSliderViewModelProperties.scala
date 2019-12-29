@@ -6,8 +6,13 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`greater-than`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`less-than`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-between`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-equal`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.between
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.equal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,9 +65,9 @@ object HistogramRangeSliderViewModelProperties {
   def apply(
     average: Int | Double = null,
     bins: js.Array[Bin] = null,
-    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
-    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Double = null,
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
+    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double = null,
+    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
     max: Int | Double = null,
     min: Int | Double = null,
     precision: Int | Double = null,

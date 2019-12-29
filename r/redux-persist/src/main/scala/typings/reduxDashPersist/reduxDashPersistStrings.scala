@@ -6,39 +6,39 @@ import scala.scalajs.js.annotation._
 
 object reduxDashPersistStrings {
   @js.native
-  sealed trait `persist/FLUSH` extends js.Object
+  sealed trait persistColon extends js.Object
   
   @js.native
-  sealed trait `persist/PAUSE` extends js.Object
+  sealed trait persistSlashFLUSH extends js.Object
   
   @js.native
-  sealed trait `persist/PERSIST` extends js.Object
+  sealed trait persistSlashPAUSE extends js.Object
   
   @js.native
-  sealed trait `persist/PURGE` extends js.Object
+  sealed trait persistSlashPERSIST extends js.Object
   
   @js.native
-  sealed trait `persist/REGISTER` extends js.Object
+  sealed trait persistSlashPURGE extends js.Object
   
   @js.native
-  sealed trait `persist/REHYDRATE` extends js.Object
+  sealed trait persistSlashREGISTER extends js.Object
   
   @js.native
-  sealed trait `persist:` extends js.Object
+  sealed trait persistSlashREHYDRATE extends js.Object
   
   @scala.inline
-  def `persist/FLUSH`: `persist/FLUSH` = "persist/FLUSH".asInstanceOf[`persist/FLUSH`]
+  def persistColon: persistColon = "persist:".asInstanceOf[persistColon]
   @scala.inline
-  def `persist/PAUSE`: `persist/PAUSE` = "persist/PAUSE".asInstanceOf[`persist/PAUSE`]
+  def persistSlashFLUSH: persistSlashFLUSH = "persist/FLUSH".asInstanceOf[persistSlashFLUSH]
   @scala.inline
-  def `persist/PERSIST`: `persist/PERSIST` = "persist/PERSIST".asInstanceOf[`persist/PERSIST`]
+  def persistSlashPAUSE: persistSlashPAUSE = "persist/PAUSE".asInstanceOf[persistSlashPAUSE]
   @scala.inline
-  def `persist/PURGE`: `persist/PURGE` = "persist/PURGE".asInstanceOf[`persist/PURGE`]
+  def persistSlashPERSIST: persistSlashPERSIST = "persist/PERSIST".asInstanceOf[persistSlashPERSIST]
   @scala.inline
-  def `persist/REGISTER`: `persist/REGISTER` = "persist/REGISTER".asInstanceOf[`persist/REGISTER`]
+  def persistSlashPURGE: persistSlashPURGE = "persist/PURGE".asInstanceOf[persistSlashPURGE]
   @scala.inline
-  def `persist/REHYDRATE`: `persist/REHYDRATE` = "persist/REHYDRATE".asInstanceOf[`persist/REHYDRATE`]
+  def persistSlashREGISTER: persistSlashREGISTER = "persist/REGISTER".asInstanceOf[persistSlashREGISTER]
   @scala.inline
-  def `persist:`: `persist:` = "persist:".asInstanceOf[`persist:`]
+  def persistSlashREHYDRATE: persistSlashREHYDRATE = "persist/REHYDRATE".asInstanceOf[persistSlashREHYDRATE]
 }
 

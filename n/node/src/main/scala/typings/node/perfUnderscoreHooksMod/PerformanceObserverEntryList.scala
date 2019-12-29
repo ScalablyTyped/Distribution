@@ -14,12 +14,12 @@ trait PerformanceObserverEntryList extends js.Object {
     * @return a list of PerformanceEntry objects in chronological order with respect to performanceEntry.startTime
     * whose performanceEntry.name is equal to name, and optionally, whose performanceEntry.entryType is equal to type.
     */
-  def getEntriesByName(name: java.lang.String): js.Array[PerformanceEntry] = js.native
-  def getEntriesByName(name: java.lang.String, `type`: java.lang.String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByName(name: String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByName(name: String, `type`: String): js.Array[PerformanceEntry] = js.native
   /**
     * @return Returns a list of PerformanceEntry objects in chronological order with respect to performanceEntry.startTime
     * whose performanceEntry.entryType is equal to type.
     */
-  def getEntriesByType(`type`: java.lang.String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByType(`type`: String): js.Array[PerformanceEntry] = js.native
 }
 

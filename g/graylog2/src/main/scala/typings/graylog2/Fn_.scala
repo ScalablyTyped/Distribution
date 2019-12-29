@@ -11,14 +11,14 @@ trait Fn_ extends js.Object {
   def apply(message: String): Unit = js.native
   def apply(
     message: String,
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: js.UndefOr[scala.Nothing],
     timestamp: Double
   ): Unit = js.native
-  def apply(message: String, `_`: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+  def apply(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def apply(
     message: String,
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _],
     timestamp: Double
   ): Unit = js.native
@@ -26,7 +26,7 @@ trait Fn_ extends js.Object {
   def apply(
     message: String,
     additionalFields: Record[String, _],
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
     timestamp: Double
   ): Unit = js.native
   def apply(message: String, fullMessage: String): Unit = js.native
@@ -35,14 +35,14 @@ trait Fn_ extends js.Object {
   def apply(message: Error): Unit = js.native
   def apply(
     message: Error,
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: js.UndefOr[scala.Nothing],
     timestamp: Double
   ): Unit = js.native
-  def apply(message: Error, `_`: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+  def apply(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def apply(
     message: Error,
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _],
     timestamp: Double
   ): Unit = js.native
@@ -50,20 +50,24 @@ trait Fn_ extends js.Object {
   def apply(
     message: Error,
     additionalFields: Record[String, _],
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
     timestamp: Double
   ): Unit = js.native
   def apply(message: Record[String, _]): Unit = js.native
   def apply(
     message: Record[String, _],
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: js.UndefOr[scala.Nothing],
     timestamp: Double
   ): Unit = js.native
-  def apply(message: Record[String, _], `_`: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def apply(
     message: Record[String, _],
-    `_`: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
+    additionalFields: Record[String, _]
+  ): Unit = js.native
+  def apply(
+    message: Record[String, _],
+    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _],
     timestamp: Double
   ): Unit = js.native

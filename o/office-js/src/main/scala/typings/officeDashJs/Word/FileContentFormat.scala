@@ -1,9 +1,6 @@
 package typings.officeDashJs.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Word.FileContentFormat.base64
-import typings.officeDashJs.Word.FileContentFormat.html
-import typings.officeDashJs.Word.FileContentFormat.ooxml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

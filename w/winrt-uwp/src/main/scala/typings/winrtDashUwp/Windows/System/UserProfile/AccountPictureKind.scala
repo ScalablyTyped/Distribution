@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.System.UserProfile
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.UserProfile.AccountPictureKind.largeImage
-import typings.winrtDashUwp.Windows.System.UserProfile.AccountPictureKind.smallImage
-import typings.winrtDashUwp.Windows.System.UserProfile.AccountPictureKind.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object angularDashUiDashRouterStrings {
   @js.native
-  sealed trait uiDOTrouter extends js.Object
+  sealed trait uiDotrouter extends js.Object
   
   @scala.inline
-  def uiDOTrouter: uiDOTrouter = "ui.router".asInstanceOf[uiDOTrouter]
+  def uiDotrouter: uiDotrouter = "ui.router".asInstanceOf[uiDotrouter]
 }
 

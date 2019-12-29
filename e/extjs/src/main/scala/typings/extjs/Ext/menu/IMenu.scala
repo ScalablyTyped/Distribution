@@ -1,12 +1,12 @@
 package typings.extjs.Ext.menu
 
 import typings.extjs.Ext.IComponent
+import typings.extjs.Ext.panel.IPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IMenu
-  extends typings.extjs.Ext.panel.IPanel {
+trait IMenu extends IPanel {
   /** [Method] Invoked after the Component is shown after onShow is called */
   @JSName("afterShow")
   var afterShow_IMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -63,7 +63,7 @@ trait IMenu
 object IMenu {
   @scala.inline
   def apply(
-    IPanel: typings.extjs.Ext.panel.IPanel = null,
+    IPanel: IPanel = null,
     afterShow: () => Unit = null,
     allowOtherMenus: js.UndefOr[Boolean] = js.undefined,
     canActivateItem: /* item */ js.UndefOr[js.Any] => Boolean = null,

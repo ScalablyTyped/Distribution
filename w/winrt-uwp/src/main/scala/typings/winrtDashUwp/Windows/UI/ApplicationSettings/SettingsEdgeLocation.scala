@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ApplicationSettings
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ApplicationSettings.SettingsEdgeLocation.left
-import typings.winrtDashUwp.Windows.UI.ApplicationSettings.SettingsEdgeLocation.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

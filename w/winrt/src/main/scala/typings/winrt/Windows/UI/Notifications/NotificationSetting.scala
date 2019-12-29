@@ -1,11 +1,6 @@
 package typings.winrt.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Notifications.NotificationSetting.disabledByGroupPolicy
-import typings.winrt.Windows.UI.Notifications.NotificationSetting.disabledByManifest
-import typings.winrt.Windows.UI.Notifications.NotificationSetting.disabledForApplication
-import typings.winrt.Windows.UI.Notifications.NotificationSetting.disabledForUser
-import typings.winrt.Windows.UI.Notifications.NotificationSetting.enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

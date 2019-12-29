@@ -20,7 +20,7 @@ trait ProfileNode extends js.Object {
   /**
     * The reason of being not optimized. The function may be deoptimized or marked as don't optimize.
     */
-  var deoptReason: js.UndefOr[java.lang.String] = js.undefined
+  var deoptReason: js.UndefOr[String] = js.undefined
   /**
     * Number of samples where this node was on top of the call stack.
     */
@@ -41,7 +41,7 @@ object ProfileNode {
     callFrame: CallFrame,
     id: Double,
     children: js.Array[Double] = null,
-    deoptReason: java.lang.String = null,
+    deoptReason: String = null,
     hitCount: Int | Double = null,
     positionTicks: js.Array[PositionTickInfo] = null
   ): ProfileNode = {

@@ -8,11 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object show extends js.Object {
   def apply(title: String, text: String, buttons: js.Array[Button]): Unit = js.native
-  def apply(
-    title: String,
-    text: String,
-    buttons: js.Array[Button],
-    options: typings.ibmDashMobilefirst.WL.SimpleDialog.Options
-  ): Unit = js.native
+  def apply(title: String, text: String, buttons: js.Array[Button], options: Options): Unit = js.native
 }
 

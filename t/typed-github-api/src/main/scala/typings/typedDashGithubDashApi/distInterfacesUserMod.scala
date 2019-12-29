@@ -2,8 +2,6 @@ package typings.typedDashGithubDashApi
 
 import typings.moment.momentMod.Moment
 import typings.typedDashGithubDashApi.distInterfacesOwnerDashRefMod.OwnerRef
-import typings.typedDashGithubDashApi.distInterfacesUserMod.User
-import typings.typedDashGithubDashApi.distInterfacesUserMod.UserSummary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

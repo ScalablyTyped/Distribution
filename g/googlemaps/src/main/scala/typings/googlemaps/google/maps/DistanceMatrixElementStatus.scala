@@ -1,9 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.DistanceMatrixElementStatus.NOT_FOUND
-import typings.googlemaps.google.maps.DistanceMatrixElementStatus.OK
-import typings.googlemaps.google.maps.DistanceMatrixElementStatus.ZERO_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

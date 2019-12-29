@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnAuthenticationMethod.certificate
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnAuthenticationMethod.eap
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnAuthenticationMethod.mschapv2
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnAuthenticationMethod.presharedKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

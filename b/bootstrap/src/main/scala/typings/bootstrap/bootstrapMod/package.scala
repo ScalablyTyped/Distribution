@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object bootstrapMod {
-  import typings.bootstrap.bootstrapStrings.activateDOTbsDOTscrollspy
+  import typings.bootstrap.bootstrapStrings.activateDotbsDotscrollspy
 
-  type ScrollspyEvent = activateDOTbsDOTscrollspy
+  type ScrollspyEvent = activateDotbsDotscrollspy
 }

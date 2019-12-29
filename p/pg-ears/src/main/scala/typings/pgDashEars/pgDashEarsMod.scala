@@ -1,7 +1,6 @@
 package typings.pgDashEars
 
 import typings.pg.pgMod.ClientConfig
-import typings.pgDashEars.pgDashEarsMod.PgEars
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.brandingOptions
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.canDial
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.cellularDetails
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.displayColor
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.displayName
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.networkName
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.networkState
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.transport
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.voicemail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

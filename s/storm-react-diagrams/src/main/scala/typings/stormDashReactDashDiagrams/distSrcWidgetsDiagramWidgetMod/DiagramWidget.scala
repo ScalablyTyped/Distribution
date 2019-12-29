@@ -2,7 +2,6 @@ package typings.stormDashReactDashDiagrams.distSrcWidgetsDiagramWidgetMod
 
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.KeyboardEvent
-import typings.std.Window
 import typings.stormDashReactDashDiagrams.Anon_Element
 import typings.stormDashReactDashDiagrams.distSrcActionsBaseActionMod.BaseAction
 import typings.stormDashReactDashDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidget
@@ -31,7 +30,7 @@ class DiagramWidget protected () extends BaseWidget[DiagramProps, DiagramState] 
     */
   def getMouseElement(event: js.Any): Anon_Element = js.native
   def onKeyUp(event: js.Any): Unit = js.native
-  def onKeyUpPointer(`this`: Window, ev: KeyboardEvent): Unit = js.native
+  def onKeyUpPointer(ev: KeyboardEvent): Unit = js.native
   def onMouseMove(event: js.Any): Unit = js.native
   def onMouseUp(event: js.Any): Unit = js.native
   def startFiringAction(action: BaseAction): Unit = js.native

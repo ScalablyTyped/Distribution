@@ -1,12 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EUniverse.Beta
-import typings.steamDashClient.steamDashClientMod.EUniverse.Dev
-import typings.steamDashClient.steamDashClientMod.EUniverse.Internal
-import typings.steamDashClient.steamDashClientMod.EUniverse.Invalid
-import typings.steamDashClient.steamDashClientMod.EUniverse.Max
-import typings.steamDashClient.steamDashClientMod.EUniverse.Public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

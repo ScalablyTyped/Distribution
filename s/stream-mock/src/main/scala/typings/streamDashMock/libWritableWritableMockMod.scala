@@ -4,7 +4,6 @@ import typings.node.BufferEncoding
 import typings.node.streamMod.WritableOptions
 import typings.std.Error
 import typings.streamDashMock.libWritableIWritableMockMod.IWritableMock
-import typings.streamDashMock.libWritableWritableMockMod.WritableMock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

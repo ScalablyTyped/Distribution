@@ -1,17 +1,6 @@
 package typings.winrtDashUwp.Windows.Globalization.NumberFormatting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.none
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundAwayFromZero
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundDown
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundHalfAwayFromZero
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundHalfDown
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundHalfToEven
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundHalfToOdd
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundHalfTowardsZero
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundHalfUp
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundTowardsZero
-import typings.winrtDashUwp.Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundUp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

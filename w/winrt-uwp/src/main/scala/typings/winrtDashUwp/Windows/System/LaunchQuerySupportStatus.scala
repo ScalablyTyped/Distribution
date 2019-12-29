@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.LaunchQuerySupportStatus.appNotInstalled
-import typings.winrtDashUwp.Windows.System.LaunchQuerySupportStatus.appUnavailable
-import typings.winrtDashUwp.Windows.System.LaunchQuerySupportStatus.available
-import typings.winrtDashUwp.Windows.System.LaunchQuerySupportStatus.notSupported
-import typings.winrtDashUwp.Windows.System.LaunchQuerySupportStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

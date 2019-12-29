@@ -30,11 +30,7 @@ trait IDockingContainer extends IBase {
   		* @returns Ext.Component[] The array of docked components meeting the specified criteria.
   		*/
   var getDockedItems: js.UndefOr[
-    js.Function2[
-      /* selector */ js.UndefOr[java.lang.String], 
-      /* beforeBody */ js.UndefOr[Boolean], 
-      Array
-    ]
+    js.Function2[/* selector */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean], Array]
   ] = js.undefined
   /** [Method] Inserts docked item s to the panel at the indicated position
   		* @param pos Number The index at which the Component will be inserted
@@ -71,10 +67,10 @@ object IDockingContainer {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     defaultDockWeights: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getDockedComponent: /* comp */ js.UndefOr[js.Any] => IComponent = null,
-    getDockedItems: (/* selector */ js.UndefOr[java.lang.String], /* beforeBody */ js.UndefOr[Boolean]) => Array = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getDockedItems: (/* selector */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean]) => Array = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IDockingContainer = null,
     insertDocked: (/* pos */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any]) => Unit = null,

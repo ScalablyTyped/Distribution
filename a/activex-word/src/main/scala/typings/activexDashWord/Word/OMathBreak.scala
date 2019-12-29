@@ -12,7 +12,8 @@ class OMathBreak protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val Range: typings.activexDashWord.Word.Range = js.native
-  var `Word.OMathBreak_typekey`: OMathBreak = js.native
+  @JSName("Word.OMathBreak_typekey")
+  var WordDotOMathBreak_typekey: OMathBreak = js.native
   def Delete(): Unit = js.native
 }
 

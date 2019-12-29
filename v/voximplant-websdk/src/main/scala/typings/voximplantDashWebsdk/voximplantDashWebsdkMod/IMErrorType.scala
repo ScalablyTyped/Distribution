@@ -1,9 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMErrorType.Error
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMErrorType.RemoteFunctionError
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMErrorType.RosterError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

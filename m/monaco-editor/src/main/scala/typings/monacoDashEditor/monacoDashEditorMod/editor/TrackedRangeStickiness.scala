@@ -1,10 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TrackedRangeStickiness.AlwaysGrowsWhenTypingAtEdges
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TrackedRangeStickiness.GrowsOnlyWhenTypingAfter
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TrackedRangeStickiness.GrowsOnlyWhenTypingBefore
-import typings.monacoDashEditor.monacoDashEditorMod.editor.TrackedRangeStickiness.NeverGrowsWhenTypingAtEdges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.canceled
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.completed
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.deploying
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.downloading
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorLowBattery
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorWiFiRecommended
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorWiFiRequired
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.otherError
-import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

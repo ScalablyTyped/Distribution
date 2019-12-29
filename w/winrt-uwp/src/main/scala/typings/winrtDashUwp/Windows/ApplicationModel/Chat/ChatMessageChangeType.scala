@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.changeTrackingLost
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageCreated
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageDeleted
-import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

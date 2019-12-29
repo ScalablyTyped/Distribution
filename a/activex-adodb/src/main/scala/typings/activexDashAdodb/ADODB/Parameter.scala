@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADODB.Parameter")
 @js.native
 class Parameter protected () extends js.Object {
-  var `ADODB.Parameter_typekey`: Parameter = js.native
+  @JSName("ADODB.Parameter_typekey")
+  var ADODBDotParameter_typekey: Parameter = js.native
   /** Sum of one or more of the values in the **ParameterAttributesEnum** enum */
   var Attributes: ParameterAttributesEnum = js.native
   var Direction: ParameterDirectionEnum = js.native

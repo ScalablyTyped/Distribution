@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵDomAdapter")
+@JSImport("@angular/platform-browser", "\u0275DomAdapter")
 @js.native
 abstract class ɵDomAdapter () extends js.Object {
   /**

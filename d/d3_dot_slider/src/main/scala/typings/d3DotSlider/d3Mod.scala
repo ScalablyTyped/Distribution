@@ -4,7 +4,6 @@ import typings.d3DashSelection.d3DashSelectionMod.BaseType
 import typings.d3DashSelection.d3DashSelectionMod.Selection
 import typings.d3DotSlider.d3DotSliderStrings.slide
 import typings.d3DotSlider.d3DotSliderStrings.slideend
-import typings.d3DotSlider.d3Mod.Slider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

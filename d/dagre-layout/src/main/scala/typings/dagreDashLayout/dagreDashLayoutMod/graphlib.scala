@@ -3,7 +3,6 @@ package typings.dagreDashLayout.dagreDashLayoutMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.dagreDashLayout.Anon_Compound
 import typings.dagreDashLayout.Anon_Name
-import typings.dagreDashLayout.dagreDashLayoutMod.graphlib.Graph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

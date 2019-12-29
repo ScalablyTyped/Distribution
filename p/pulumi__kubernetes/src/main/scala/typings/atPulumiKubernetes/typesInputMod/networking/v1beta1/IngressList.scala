@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.networking.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`networkingDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.networkingDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ListMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait IngressList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`networkingDOTk8sDOTio/v1beta1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[networkingDotk8sDotioSlashv1beta1]] = js.undefined
   /**
     * Items is the list of Ingress.
     */
@@ -40,7 +40,7 @@ object IngressList {
   @scala.inline
   def apply(
     items: Input[js.Array[Input[Ingress]]],
-    apiVersion: Input[`networkingDOTk8sDOTio/v1beta1`] = null,
+    apiVersion: Input[networkingDotk8sDotioSlashv1beta1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.IngressList] = null,
     metadata: Input[ListMeta] = null
   ): IngressList = {

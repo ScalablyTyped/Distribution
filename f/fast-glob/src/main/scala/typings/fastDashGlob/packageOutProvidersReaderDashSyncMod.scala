@@ -2,7 +2,6 @@ package typings.fastDashGlob
 
 import typings.atMrmlncReaddirDashEnhanced.atMrmlncReaddirDashEnhancedMod.Options
 import typings.fastDashGlob.packageOutManagersTasksMod.ITask
-import typings.fastDashGlob.packageOutProvidersReaderDashSyncMod.ReaderSync
 import typings.fastDashGlob.packageOutTypesEntriesMod.Entry
 import typings.fastDashGlob.packageOutTypesEntriesMod.EntryItem
 import scala.scalajs.js

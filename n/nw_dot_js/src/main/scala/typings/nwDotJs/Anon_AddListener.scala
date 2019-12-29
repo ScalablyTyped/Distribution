@@ -1,6 +1,6 @@
 package typings.nwDotJs
 
-import typings.nwDotJs.NWJS_Helpers.CookiesOnChangedCallbackChangeInfo
+import typings.nwDotJs.nwDotJsMod._Global_.NWJS_Helpers.CookiesOnChangedCallbackChangeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

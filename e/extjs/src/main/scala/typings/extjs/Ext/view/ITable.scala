@@ -17,7 +17,7 @@ trait ITable extends IView {
   		* @param cls String
   		*/
   var addRowCls: js.UndefOr[
-    js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Sizes the passed header to fit the max content width
   		* @param header Ext.grid.column.Column/Number The header (or index of header) to auto size.
@@ -39,7 +39,7 @@ trait ITable extends IView {
   		*/
   var expandToFit: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var firstCls: js.UndefOr[java.lang.String] = js.undefined
+  var firstCls: js.UndefOr[String] = js.undefined
   /** [Method] Focuses a particular row and brings it into view
   		* @param row HTMLElement/String/Number/Ext.data.Model An HTMLElement template node, index of a template node, the id of a template node or the
   		* @param delay Boolean/Number Delay the focus this number of milliseconds (true for 10 milliseconds). record associated with the node.
@@ -70,7 +70,7 @@ trait ITable extends IView {
   		* @param id String The id of the feature
   		* @returns Ext.grid.feature.Feature The feature. Undefined if not found
   		*/
-  var getFeature: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], IFeature]] = js.undefined
+  var getFeature: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], IFeature]] = js.undefined
   /** [Method] Returns a CSS selector which selects items of the view rendered by the rowTpl */
   var getItemSelector: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns a CSS selector which selects the element which contains record nodes  */
@@ -106,11 +106,11 @@ trait ITable extends IView {
       /* index */ js.UndefOr[Double], 
       /* rowParams */ js.UndefOr[js.Any], 
       /* store */ js.UndefOr[IStore], 
-      java.lang.String
+      String
     ]
   ] = js.undefined
   /** [Config Option] (String) */
-  var lastCls: js.UndefOr[java.lang.String] = js.undefined
+  var lastCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var markDirty: js.UndefOr[Boolean] = js.undefined
   /** [Method] Removes a CSS Class from a specific row
@@ -118,7 +118,7 @@ trait ITable extends IView {
   		* @param cls String
   		*/
   var removeRowCls: js.UndefOr[
-    js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Config Option] (Boolean) */
   var stripeRows: js.UndefOr[Boolean] = js.undefined
@@ -142,27 +142,27 @@ object ITable {
   @scala.inline
   def apply(
     IView: IView = null,
-    addRowCls: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String]) => Unit = null,
+    addRowCls: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[String]) => Unit = null,
     autoSizeColumn: /* header */ js.UndefOr[js.Any] => Unit = null,
     collectData: (/* records */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[js.Any]) => Array = null,
     enableTextSelection: js.UndefOr[Boolean] = js.undefined,
     expandToFit: /* header */ js.UndefOr[js.Any] => Unit = null,
-    firstCls: java.lang.String = null,
+    firstCls: String = null,
     focus: (/* selectText */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any]) => IComponent = null,
     focusRow: (/* row */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any]) => Unit = null,
     getBodySelector: () => Unit = null,
     getCellSelector: /* header */ js.UndefOr[IColumn] => Unit = null,
     getColumnSizerSelector: /* header */ js.UndefOr[js.Any] => Unit = null,
     getDataRowSelector: () => Unit = null,
-    getFeature: /* id */ js.UndefOr[java.lang.String] => IFeature = null,
+    getFeature: /* id */ js.UndefOr[String] => IFeature = null,
     getItemSelector: () => Unit = null,
     getNode: (/* nodeInfo */ js.UndefOr[js.Any], /* dataRow */ js.UndefOr[Boolean]) => HTMLElement = null,
     getNodeContainerSelector: () => Unit = null,
     getPosition: (/* record */ js.UndefOr[js.Any], /* header */ js.UndefOr[js.Any]) => Array = null,
-    getRowClass: (/* record */ js.UndefOr[IModel], /* index */ js.UndefOr[Double], /* rowParams */ js.UndefOr[js.Any], /* store */ js.UndefOr[IStore]) => java.lang.String = null,
-    lastCls: java.lang.String = null,
+    getRowClass: (/* record */ js.UndefOr[IModel], /* index */ js.UndefOr[Double], /* rowParams */ js.UndefOr[js.Any], /* store */ js.UndefOr[IStore]) => String = null,
+    lastCls: String = null,
     markDirty: js.UndefOr[Boolean] = js.undefined,
-    removeRowCls: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeRowCls: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[String]) => Unit = null,
     stripeRows: js.UndefOr[Boolean] = js.undefined,
     walkRecs: (/* startRec */ js.UndefOr[IModel], /* distance */ js.UndefOr[Double]) => Unit = null,
     walkRows: (/* startRow */ js.UndefOr[Double], /* distance */ js.UndefOr[Double]) => Unit = null

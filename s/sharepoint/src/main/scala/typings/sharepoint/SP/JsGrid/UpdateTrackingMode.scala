@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.UpdateTrackingMode.PropBoth
-import typings.sharepoint.SP.JsGrid.UpdateTrackingMode.PropData
-import typings.sharepoint.SP.JsGrid.UpdateTrackingMode.PropLocalized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

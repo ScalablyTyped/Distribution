@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * @publicApi
   */
-@JSImport("@angular/core", "ɵComponentFactory")
+@JSImport("@angular/core", "\u0275ComponentFactory")
 @js.native
 abstract class ɵComponentFactory[C] () extends ComponentFactory[C]
 

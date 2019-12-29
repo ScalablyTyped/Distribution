@@ -10,7 +10,7 @@ trait ClickOnExpanderEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the splitter model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Splitter.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the target element from which click action is triggered.
     */
   var targetElement: js.UndefOr[js.Any] = js.undefined
@@ -23,7 +23,7 @@ object ClickOnExpanderEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Splitter.Model = null,
+    model: Model = null,
     targetElement: js.Any = null,
     `type`: String = null
   ): ClickOnExpanderEventArgs = {

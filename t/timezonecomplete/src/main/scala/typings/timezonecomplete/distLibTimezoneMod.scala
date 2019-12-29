@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import typings.timezonecomplete.distLibBasicsMod.TimeStruct
 import typings.timezonecomplete.distLibJavascriptMod.DateFunctions
-import typings.timezonecomplete.distLibTimezoneMod.TimeZone
-import typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind
-import typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind.Local
-import typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind.Offset
-import typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind.Proper
 import typings.timezonecomplete.distLibTzDashDatabaseMod.NormalizeOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`

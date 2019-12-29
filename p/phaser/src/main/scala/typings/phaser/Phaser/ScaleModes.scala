@@ -1,9 +1,6 @@
 package typings.phaser.Phaser
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.Phaser.ScaleModes.DEFAULT
-import typings.phaser.Phaser.ScaleModes.LINEAR
-import typings.phaser.Phaser.ScaleModes.NEAREST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

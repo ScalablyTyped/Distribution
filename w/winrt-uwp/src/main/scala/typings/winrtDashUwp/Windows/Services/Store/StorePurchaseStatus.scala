@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.alreadyPurchased
-import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.networkError
-import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.notPurchased
-import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.serverError
-import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

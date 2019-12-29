@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapFlip.horizontal
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapFlip.none
-import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapFlip.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

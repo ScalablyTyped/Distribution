@@ -1,26 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Office.EventType.ActiveViewChanged
-import typings.officeDashJsDashPreview.Office.EventType.AppointmentTimeChanged
-import typings.officeDashJsDashPreview.Office.EventType.AttachmentsChanged
-import typings.officeDashJsDashPreview.Office.EventType.BindingDataChanged
-import typings.officeDashJsDashPreview.Office.EventType.BindingSelectionChanged
-import typings.officeDashJsDashPreview.Office.EventType.DialogEventReceived
-import typings.officeDashJsDashPreview.Office.EventType.DialogMessageReceived
-import typings.officeDashJsDashPreview.Office.EventType.DocumentSelectionChanged
-import typings.officeDashJsDashPreview.Office.EventType.EnhancedLocationsChanged
-import typings.officeDashJsDashPreview.Office.EventType.ItemChanged
-import typings.officeDashJsDashPreview.Office.EventType.NodeDeleted
-import typings.officeDashJsDashPreview.Office.EventType.NodeInserted
-import typings.officeDashJsDashPreview.Office.EventType.NodeReplaced
-import typings.officeDashJsDashPreview.Office.EventType.OfficeThemeChanged
-import typings.officeDashJsDashPreview.Office.EventType.RecipientsChanged
-import typings.officeDashJsDashPreview.Office.EventType.RecurrenceChanged
-import typings.officeDashJsDashPreview.Office.EventType.ResourceSelectionChanged
-import typings.officeDashJsDashPreview.Office.EventType.SettingsChanged
-import typings.officeDashJsDashPreview.Office.EventType.TaskSelectionChanged
-import typings.officeDashJsDashPreview.Office.EventType.ViewSelectionChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

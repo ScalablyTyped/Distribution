@@ -1,12 +1,6 @@
 package typings.officeDashJs.Visio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Visio.ErrorCodes.accessDenied
-import typings.officeDashJs.Visio.ErrorCodes.generalException
-import typings.officeDashJs.Visio.ErrorCodes.invalidArgument
-import typings.officeDashJs.Visio.ErrorCodes.itemNotFound
-import typings.officeDashJs.Visio.ErrorCodes.notImplemented
-import typings.officeDashJs.Visio.ErrorCodes.unsupportedOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

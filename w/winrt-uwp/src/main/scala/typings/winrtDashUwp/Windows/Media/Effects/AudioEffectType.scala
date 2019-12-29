@@ -1,24 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Effects
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.acousticEchoCancellation
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.automaticGainControl
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.bassBoost
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.bassManagement
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.beamForming
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.constantToneRemoval
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.dynamicRangeCompression
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.environmentalEffects
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.equalizer
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.loudnessEqualizer
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.noiseSuppression
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.other
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.roomCorrection
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.speakerCompensation
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.speakerFill
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.speakerProtection
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.virtualHeadphones
-import typings.winrtDashUwp.Windows.Media.Effects.AudioEffectType.virtualSurround
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

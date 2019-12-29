@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.Alignment.centered
-import typings.officeDashJsDashPreview.Word.Alignment.justified
-import typings.officeDashJsDashPreview.Word.Alignment.left
-import typings.officeDashJsDashPreview.Word.Alignment.mixed
-import typings.officeDashJsDashPreview.Word.Alignment.right
-import typings.officeDashJsDashPreview.Word.Alignment.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

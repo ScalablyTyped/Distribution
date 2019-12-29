@@ -2,7 +2,6 @@ package typings.stoppable
 
 import typings.node.httpMod.Server
 import typings.std.Error
-import typings.stoppable.stoppableMod.StoppableServer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

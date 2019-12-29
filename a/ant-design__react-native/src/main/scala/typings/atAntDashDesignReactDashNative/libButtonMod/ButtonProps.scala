@@ -8,6 +8,7 @@ import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStri
 import typings.atAntDashDesignReactDashNative.libButtonStyleMod.ButtonStyles
 import typings.atAntDashDesignReactDashNative.libStyleMod.WithThemeStyles
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
@@ -51,7 +52,7 @@ import scala.scalajs.js.annotation._
 object ButtonProps {
   @scala.inline
   def apply(
-    accessibilityActions: js.Array[typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo] = null,
+    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,

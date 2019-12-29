@@ -59,20 +59,20 @@ trait IObservable extends IBase {
   		* @param args Object... Variable number of parameters are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
-  var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.undefined
+  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
   /** [Method] Fires the specified event with the passed parameter list
   		* @param eventName String The name of the event to fire.
   		* @param args Object[] An array of parameters which are passed to handlers.
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
   var fireEventArgs: js.UndefOr[
-    js.Function2[/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], Boolean]
+    js.Function2[/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], Boolean]
   ] = js.undefined
   /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
   		* @param eventName String The name of the event to check for
   		* @returns Boolean true if the event is being listened for or bubbles, else false
   		*/
-  var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Property] (Object) */
   var hasListeners: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Boolean) */
@@ -138,7 +138,7 @@ trait IObservable extends IBase {
     js.Function3[
       /* origin */ js.UndefOr[js.Any], 
       /* events */ js.UndefOr[Array], 
-      /* prefix */ js.UndefOr[java.lang.String], 
+      /* prefix */ js.UndefOr[String], 
       _
     ]
   ] = js.undefined
@@ -149,7 +149,7 @@ trait IObservable extends IBase {
   		*/
   var removeListener: js.UndefOr[
     js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
+      /* eventName */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       Unit
@@ -191,7 +191,7 @@ trait IObservable extends IBase {
   		*/
   var un: js.UndefOr[
     js.Function3[
-      /* eventName */ js.UndefOr[java.lang.String], 
+      /* eventName */ js.UndefOr[String], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
       Unit
@@ -214,11 +214,11 @@ object IObservable {
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IObservable = null,
@@ -228,8 +228,8 @@ object IObservable {
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
@@ -239,7 +239,7 @@ object IObservable {
     statics: js.Any = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IObservable = {
     val __obj = js.Dynamic.literal()

@@ -1,7 +1,7 @@
 package typings.ejs
 
-import typings.ejs.ejsNumbers.`false`
-import typings.ejs.ejsNumbers.`true`
+import typings.ejs.ejsBooleans.`false`
+import typings.ejs.ejsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

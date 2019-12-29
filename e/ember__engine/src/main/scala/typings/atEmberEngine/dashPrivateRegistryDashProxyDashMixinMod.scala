@@ -1,6 +1,5 @@
 package typings.atEmberEngine
 
-import typings.atEmberEngine.dashPrivateRegistryDashProxyDashMixinMod.RegistryProxyMixin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,8 +3,6 @@ package typings.koaDashLogger
 import typings.koa.koaMod.DefaultContext
 import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
-import typings.koaDashLogger.koaDashLoggerMod.Transporter
-import typings.koaDashLogger.koaDashLoggerMod.TransporterOpts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

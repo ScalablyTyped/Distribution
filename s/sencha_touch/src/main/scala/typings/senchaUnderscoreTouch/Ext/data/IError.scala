@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation._
 
 trait IError extends IBase {
   /** [Config Option] (String) */
-  var field: js.UndefOr[java.lang.String] = js.undefined
+  var field: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of field
   		* @returns String
   		*/
-  var getField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of message
   		* @returns String
   		*/
-  var getMessage: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMessage: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var message: js.UndefOr[java.lang.String] = js.undefined
+  var message: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of field
   		* @param field String The new value.
   		*/
-  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of message
   		* @param message String The new value.
   		*/
-  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IError {
@@ -40,19 +40,19 @@ object IError {
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    field: java.lang.String = null,
-    getField: () => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getMessage: () => java.lang.String = null,
+    extend: String = null,
+    field: String = null,
+    getField: () => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getMessage: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    message: java.lang.String = null,
+    message: String = null,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
-    setField: /* field */ js.UndefOr[java.lang.String] => Unit = null,
-    setMessage: /* message */ js.UndefOr[java.lang.String] => Unit = null,
+    setField: /* field */ js.UndefOr[String] => Unit = null,
+    setMessage: /* message */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     uses: Array = null

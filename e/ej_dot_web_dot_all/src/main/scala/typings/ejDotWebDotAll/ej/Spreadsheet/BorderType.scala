@@ -1,16 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.AllBorder
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.Bottom
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.Left
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.OutSide
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.Right
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.ThickBottom
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.ThickBox
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.Top
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.TopandBottom
-import typings.ejDotWebDotAll.ej.Spreadsheet.BorderType.TopandThickBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

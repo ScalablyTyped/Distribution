@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵNullViewportScroller")
+@JSImport("@angular/common", "\u0275NullViewportScroller")
 @js.native
 class ɵNullViewportScroller () extends ViewportScroller
 

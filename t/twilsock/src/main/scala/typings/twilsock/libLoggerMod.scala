@@ -1,6 +1,5 @@
 package typings.twilsock
 
-import typings.twilsock.libLoggerMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

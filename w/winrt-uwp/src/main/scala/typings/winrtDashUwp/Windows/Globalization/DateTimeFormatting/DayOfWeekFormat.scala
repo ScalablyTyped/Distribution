@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.abbreviated
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.default
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.full
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

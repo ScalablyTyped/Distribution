@@ -19,7 +19,8 @@ class MediaFormat protected () extends js.Object {
   val MediaBookmarks: typings.activexDashPowerpoint.PowerPoint.MediaBookmarks = js.native
   var Muted: Boolean = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.MediaFormat_typekey`: MediaFormat = js.native
+  @JSName("PowerPoint.MediaFormat_typekey")
+  var PowerPointDotMediaFormat_typekey: MediaFormat = js.native
   val ResamplingStatus: PpMediaTaskStatus = js.native
   val SampleHeight: Double = js.native
   val SampleWidth: Double = js.native

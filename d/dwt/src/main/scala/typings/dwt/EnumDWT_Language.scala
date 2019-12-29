@@ -1,15 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_Language.Arabic
-import typings.dwt.EnumDWT_Language.Chinese
-import typings.dwt.EnumDWT_Language.English
-import typings.dwt.EnumDWT_Language.French
-import typings.dwt.EnumDWT_Language.German
-import typings.dwt.EnumDWT_Language.Italian
-import typings.dwt.EnumDWT_Language.Portuguese
-import typings.dwt.EnumDWT_Language.Russian
-import typings.dwt.EnumDWT_Language.Spanish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

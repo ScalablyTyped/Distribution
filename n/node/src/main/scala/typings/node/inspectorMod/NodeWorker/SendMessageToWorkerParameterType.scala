@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SendMessageToWorkerParameterType extends js.Object {
-  var message: java.lang.String
+  var message: String
   /**
     * Identifier of the session.
     */
@@ -14,7 +14,7 @@ trait SendMessageToWorkerParameterType extends js.Object {
 
 object SendMessageToWorkerParameterType {
   @scala.inline
-  def apply(message: java.lang.String, sessionId: SessionID): SendMessageToWorkerParameterType = {
+  def apply(message: String, sessionId: SessionID): SendMessageToWorkerParameterType = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SendMessageToWorkerParameterType]

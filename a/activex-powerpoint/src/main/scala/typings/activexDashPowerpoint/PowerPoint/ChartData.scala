@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChartData protected () extends js.Object {
   val IsLinked: Boolean = js.native
-  var `PowerPoint.ChartData_typekey`: ChartData = js.native
+  @JSName("PowerPoint.ChartData_typekey")
+  var PowerPointDotChartData_typekey: ChartData = js.native
   val Workbook: js.Any = js.native
   def Activate(): Unit = js.native
   def BreakLink(): Unit = js.native

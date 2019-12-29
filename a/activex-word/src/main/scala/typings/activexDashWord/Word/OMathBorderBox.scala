@@ -19,6 +19,7 @@ class OMathBorderBox protected () extends js.Object {
   var StrikeH: Boolean = js.native
   var StrikeTLBR: Boolean = js.native
   var StrikeV: Boolean = js.native
-  var `Word.OMathBorderBox_typekey`: OMathBorderBox = js.native
+  @JSName("Word.OMathBorderBox_typekey")
+  var WordDotOMathBorderBox_typekey: OMathBorderBox = js.native
 }
 

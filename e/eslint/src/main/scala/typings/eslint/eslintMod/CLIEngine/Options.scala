@@ -1,10 +1,10 @@
 package typings.eslint.eslintMod.CLIEngine
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.eslint.eslintBooleans.`false`
 import typings.eslint.eslintMod.Linter.ParserOptions
 import typings.eslint.eslintMod.Linter.RuleLevel
 import typings.eslint.eslintMod.Linter.RuleLevelAndOptions
-import typings.eslint.eslintNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

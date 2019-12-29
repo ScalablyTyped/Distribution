@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Map.LayerType.Bing
-import typings.ejDotWebDotAll.ej.datavisualization.Map.LayerType.Geometry
-import typings.ejDotWebDotAll.ej.datavisualization.Map.LayerType.Osm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

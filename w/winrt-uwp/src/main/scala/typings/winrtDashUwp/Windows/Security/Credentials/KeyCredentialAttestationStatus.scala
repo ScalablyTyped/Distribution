@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.notSupported
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.success
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.temporaryFailure
-import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.unknownError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

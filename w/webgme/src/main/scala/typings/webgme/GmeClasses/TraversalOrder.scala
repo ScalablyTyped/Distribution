@@ -1,8 +1,6 @@
 package typings.webgme.GmeClasses
 
 import org.scalablytyped.runtime.TopLevel
-import typings.webgme.GmeClasses.TraversalOrder.BFS
-import typings.webgme.GmeClasses.TraversalOrder.DFS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

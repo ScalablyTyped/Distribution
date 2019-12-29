@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "ɵɵi18nPostprocess")
+@JSImport("@angular/core", "\u0275\u0275i18nPostprocess")
 @js.native
 object ɵɵi18nPostprocess extends js.Object {
   def apply(message: String): String = js.native

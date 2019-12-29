@@ -16,7 +16,8 @@ class DiskQuotaControl protected () extends js.Object {
   var DefaultQuotaThreshold: Double = js.native
   /** Default warning threshold applied to new volume users (text string) */
   val DefaultQuotaThresholdText: String = js.native
-  var `DiskQuotaTypeLibrary.DiskQuotaControl_typekey`: DiskQuotaControl = js.native
+  @JSName("DiskQuotaTypeLibrary.DiskQuotaControl_typekey")
+  var DiskQuotaTypeLibraryDotDiskQuotaControl_typekey: DiskQuotaControl = js.native
   /** Write event log entry when user exceeds quota limit */
   var LogQuotaLimit: Boolean = js.native
   /** Write event log entry when user exceeds quota warning threshold */

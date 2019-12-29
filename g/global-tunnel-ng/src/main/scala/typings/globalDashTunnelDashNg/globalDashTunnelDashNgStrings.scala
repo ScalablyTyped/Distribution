@@ -9,13 +9,13 @@ object globalDashTunnelDashNgStrings {
   sealed trait both extends js.Object
   
   @js.native
-  sealed trait `http:` extends js.Object
+  sealed trait httpColon extends js.Object
   
   @js.native
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait `https:` extends js.Object
+  sealed trait httpsColon extends js.Object
   
   @js.native
   sealed trait neither extends js.Object
@@ -23,11 +23,11 @@ object globalDashTunnelDashNgStrings {
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
-  def `http:`: `http:` = "http:".asInstanceOf[`http:`]
+  def httpColon: httpColon = "http:".asInstanceOf[httpColon]
   @scala.inline
   def https: https = "https".asInstanceOf[https]
   @scala.inline
-  def `https:`: `https:` = "https:".asInstanceOf[`https:`]
+  def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
   @scala.inline
   def neither: neither = "neither".asInstanceOf[neither]
 }

@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,8 +56,8 @@ trait Ground
     * @param options.noDataValue The value to use when there is no data available.
     *
     */
-  def createElevationSampler(extent: Extent): IPromise[ElevationSampler] = js.native
-  def createElevationSampler(extent: Extent, options: GroundCreateElevationSamplerOptions): IPromise[ElevationSampler] = js.native
+  def createElevationSampler(extent: Extent): js.Promise[ElevationSampler] = js.native
+  def createElevationSampler(extent: Extent, options: GroundCreateElevationSamplerOptions): js.Promise[ElevationSampler] = js.native
   /**
     * Loads all the externally loadable resources associated with the ground. For the ground this will load all the layers.
     *
@@ -66,9 +65,9 @@ trait Ground
     *
     *
     */
-  def loadAll(): IPromise[Ground] = js.native
-  def queryElevation(geometry: Multipoint): IPromise[ElevationQueryResult] = js.native
-  def queryElevation(geometry: Multipoint, options: GroundQueryElevationOptions): IPromise[ElevationQueryResult] = js.native
+  def loadAll(): js.Promise[Ground] = js.native
+  def queryElevation(geometry: Multipoint): js.Promise[ElevationQueryResult] = js.native
+  def queryElevation(geometry: Multipoint, options: GroundQueryElevationOptions): js.Promise[ElevationQueryResult] = js.native
   /**
     * Queries the ground layer services for elevation values for the given geometry. The returned result contains a copy of the geometry with z-values sampled from elevation data from the first layer that has data available.
     *
@@ -80,10 +79,10 @@ trait Ground
     * @param options.noDataValue The value that appears in the resulting geometry when there is no data available.
     *
     */
-  def queryElevation(geometry: Point): IPromise[ElevationQueryResult] = js.native
-  def queryElevation(geometry: Point, options: GroundQueryElevationOptions): IPromise[ElevationQueryResult] = js.native
-  def queryElevation(geometry: Polyline): IPromise[ElevationQueryResult] = js.native
-  def queryElevation(geometry: Polyline, options: GroundQueryElevationOptions): IPromise[ElevationQueryResult] = js.native
+  def queryElevation(geometry: Point): js.Promise[ElevationQueryResult] = js.native
+  def queryElevation(geometry: Point, options: GroundQueryElevationOptions): js.Promise[ElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline): js.Promise[ElevationQueryResult] = js.native
+  def queryElevation(geometry: Polyline, options: GroundQueryElevationOptions): js.Promise[ElevationQueryResult] = js.native
 }
 
 @JSGlobal("__esri.Ground")

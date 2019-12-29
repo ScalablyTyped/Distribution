@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialHandshake.none
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialHandshake.requestToSend
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialHandshake.requestToSendXOnXOff
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialHandshake.xonXOff
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

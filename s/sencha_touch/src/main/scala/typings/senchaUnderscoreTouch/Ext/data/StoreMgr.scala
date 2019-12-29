@@ -46,8 +46,8 @@ object StoreMgr extends js.Object {
   		* @returns Object The item added.
   		*/
   def add(): js.Any = js.native
-  def add(key: java.lang.String): js.Any = js.native
-  def add(key: java.lang.String, item: js.Any): js.Any = js.native
+  def add(key: String): js.Any = js.native
+  def add(key: String, item: js.Any): js.Any = js.native
   /** [Method] Adds all elements of an Array or an Object to the collection
   		* @param addItems Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if {@link} Ext.util.MixedCollection.allowFunctions allowFunctions} has been set to true.
   		*/
@@ -70,14 +70,14 @@ object StoreMgr extends js.Object {
   		*/
   def addSorter(): Unit = js.native
   def addSorter(sorter: js.Any): Unit = js.native
-  def addSorter(sorter: js.Any, defaultDirection: java.lang.String): Unit = js.native
+  def addSorter(sorter: js.Any, defaultDirection: String): Unit = js.native
   /** [Method] This method adds all the sorters in a passed array
   		* @param sorters Array An array with sorters. A sorter can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
   		* @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
   		*/
   def addSorters(): Unit = js.native
   def addSorters(sorters: Array): Unit = js.native
-  def addSorters(sorters: Array, defaultDirection: java.lang.String): Unit = js.native
+  def addSorters(sorters: Array, defaultDirection: String): Unit = js.native
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
   		* @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
   		* @returns Object Returns the result of calling the overridden method
@@ -109,7 +109,7 @@ object StoreMgr extends js.Object {
   		* @returns Boolean true if the collection contains the Object as a key.
   		*/
   def containsKey(): Boolean = js.native
-  def containsKey(key: java.lang.String): Boolean = js.native
+  def containsKey(key: String): Boolean = js.native
   /** [Method]  */
   def destroy(): Unit = js.native
   /** [Method] Executes the specified function once for every item in the collection
@@ -209,7 +209,7 @@ object StoreMgr extends js.Object {
   /** [Method] Returns the value of defaultSortDirection
   		* @returns String
   		*/
-  def getDefaultSortDirection(): java.lang.String = js.native
+  def getDefaultSortDirection(): String = js.native
   /** [Method] Returns an up to date sort function
   		* @returns Function sortFn The sort function.
   		*/
@@ -217,7 +217,7 @@ object StoreMgr extends js.Object {
   /** [Method] Returns the value of filterRoot
   		* @returns String
   		*/
-  def getFilterRoot(): java.lang.String = js.native
+  def getFilterRoot(): String = js.native
   /** [Method] Returns the value of filters
   		* @returns Array
   		*/
@@ -227,7 +227,7 @@ object StoreMgr extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] getKey implementation for MixedCollection
   		* @param o Object
   		* @returns Object The key for the passed item.
@@ -249,7 +249,7 @@ object StoreMgr extends js.Object {
   /** [Method] Returns the value of sortRoot
   		* @returns String
   		*/
-  def getSortRoot(): java.lang.String = js.native
+  def getSortRoot(): String = js.native
   /** [Method] Returns the value of sorters
   		* @returns Array
   		*/
@@ -265,7 +265,7 @@ object StoreMgr extends js.Object {
   		* @returns Number Index of the key.
   		*/
   def indexOfKey(): Double = js.native
-  def indexOfKey(key: java.lang.String): Double = js.native
+  def indexOfKey(key: String): Double = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -280,8 +280,8 @@ object StoreMgr extends js.Object {
   		*/
   def insert(): js.Any = js.native
   def insert(index: Double): js.Any = js.native
-  def insert(index: Double, key: java.lang.String): js.Any = js.native
-  def insert(index: Double, key: java.lang.String, item: js.Any): js.Any = js.native
+  def insert(index: Double, key: String): js.Any = js.native
+  def insert(index: Double, key: String, item: js.Any): js.Any = js.native
   /** [Method] This method adds a filter at a given index
   		* @param index Number The index at which to insert the filter.
   		* @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
@@ -306,7 +306,7 @@ object StoreMgr extends js.Object {
   def insertSorter(): Unit = js.native
   def insertSorter(index: Double): Unit = js.native
   def insertSorter(index: Double, sorter: js.Any): Unit = js.native
-  def insertSorter(index: Double, sorter: js.Any, defaultDirection: java.lang.String): Unit = js.native
+  def insertSorter(index: Double, sorter: js.Any, defaultDirection: String): Unit = js.native
   /** [Method] This method inserts all the sorters in the passed array at the given index
   		* @returns Ext.util.Collection this
   		*/
@@ -348,7 +348,7 @@ object StoreMgr extends js.Object {
   		* @returns Object/Boolean The item removed or false if no item was removed.
   		*/
   def removeAtKey(): js.Any = js.native
-  def removeAtKey(key: java.lang.String): js.Any = js.native
+  def removeAtKey(key: String): js.Any = js.native
   /** [Method] This method removes all the filters in a passed array
   		* @param filters Object
   		* @returns Ext.util.Collection this
@@ -372,8 +372,8 @@ object StoreMgr extends js.Object {
   		* @returns Object The new item.
   		*/
   def replace(): js.Any = js.native
-  def replace(oldKey: java.lang.String): js.Any = js.native
-  def replace(oldKey: java.lang.String, item: js.Any): js.Any = js.native
+  def replace(oldKey: String): js.Any = js.native
+  def replace(oldKey: String, item: js.Any): js.Any = js.native
   /** [Method] Sets the value of autoFilter
   		* @param autoFilter Boolean The new value.
   		*/
@@ -388,12 +388,12 @@ object StoreMgr extends js.Object {
   		* @param defaultSortDirection String The new value.
   		*/
   def setDefaultSortDirection(): Unit = js.native
-  def setDefaultSortDirection(defaultSortDirection: java.lang.String): Unit = js.native
+  def setDefaultSortDirection(defaultSortDirection: String): Unit = js.native
   /** [Method] Sets the value of filterRoot
   		* @param filterRoot String The new value.
   		*/
   def setFilterRoot(): Unit = js.native
-  def setFilterRoot(filterRoot: java.lang.String): Unit = js.native
+  def setFilterRoot(filterRoot: String): Unit = js.native
   /** [Method] Sets the value of filters
   		* @param filters Array The new value.
   		*/
@@ -403,7 +403,7 @@ object StoreMgr extends js.Object {
   		* @param sortRoot String The new value.
   		*/
   def setSortRoot(): Unit = js.native
-  def setSortRoot(sortRoot: java.lang.String): Unit = js.native
+  def setSortRoot(sortRoot: String): Unit = js.native
   /** [Method] Sets the value of sorters
   		* @param sorters Array The new value.
   		*/

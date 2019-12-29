@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Provider.CachedFileTarget.local
-import typings.winrt.Windows.Storage.Provider.CachedFileTarget.remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

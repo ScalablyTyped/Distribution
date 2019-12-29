@@ -21,11 +21,11 @@ class TweenMax protected () extends TweenLite {
   /** Updates tweening values on the fly so that they appear to seamlessly change course even if the tween is in-progress. */
   def updateTo(vars: js.Object): TweenMax = js.native
   def updateTo(vars: js.Object, resetDuration: Boolean): TweenMax = js.native
-  def yoyo(): TweenMax = js.native
-  def yoyo(value: Boolean): TweenMax = js.native
   /** Gets or sets the tween's yoyo state, where true causes the tween to go back and forth, alternating backward and forward on each repeat. */
+  def yoyo(): Boolean = js.native
+  def yoyo(value: Boolean): TweenMax = js.native
   @JSName("yoyo")
-  def yoyo_Boolean(): Boolean = js.native
+  def yoyo_TweenMax(): TweenMax = js.native
 }
 
 /* static members */

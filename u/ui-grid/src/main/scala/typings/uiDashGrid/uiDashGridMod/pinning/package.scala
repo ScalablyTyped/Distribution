@@ -5,9 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object pinning {
-  type columnPinHandler = js.Function2[
-    /* colDef */ typings.uiDashGrid.uiDashGridMod.pinning.IColumnDef, 
-    /* container */ String, 
-    Unit
-  ]
+  type columnPinHandler = js.Function2[/* colDef */ IColumnDef, /* container */ String, Unit]
 }

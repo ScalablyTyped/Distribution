@@ -11,7 +11,8 @@ class SmartTagRecognizers protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.SmartTagRecognizers_typekey`: SmartTagRecognizers = js.native
+  @JSName("Word.SmartTagRecognizers_typekey")
+  var WordDotSmartTagRecognizers_typekey: SmartTagRecognizers = js.native
   def Item(Index: js.Any): SmartTagRecognizer = js.native
   def ReloadRecognizers(): Unit = js.native
 }

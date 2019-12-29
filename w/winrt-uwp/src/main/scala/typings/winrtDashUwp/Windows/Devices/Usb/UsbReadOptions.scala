@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbReadOptions.allowPartialReads
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbReadOptions.autoClearStall
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbReadOptions.ignoreShortPacket
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbReadOptions.none
-import typings.winrtDashUwp.Windows.Devices.Usb.UsbReadOptions.overrideAutomaticBufferManagement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -32,21 +32,6 @@ import scala.scalajs.js.annotation._
 
 object gmStrings {
   @js.native
-  sealed trait `!` extends ResizeOption
-  
-  @js.native
-  sealed trait `%` extends ResizeOption
-  
-  @js.native
-  sealed trait `+` extends js.Object
-  
-  @js.native
-  sealed trait `<` extends ResizeOption
-  
-  @js.native
-  sealed trait `>` extends ResizeOption
-  
-  @js.native
   sealed trait `@` extends ResizeOption
   
   @js.native
@@ -221,6 +206,9 @@ object gmStrings {
   sealed trait EdgeDetect extends PreviewType
   
   @js.native
+  sealed trait Exclamationmark extends ResizeOption
+  
+  @js.native
   sealed trait Fax extends CompressionType
   
   @js.native
@@ -250,6 +238,9 @@ object gmStrings {
   sealed trait Grayscale_
     extends ImageType
        with PreviewType
+  
+  @js.native
+  sealed trait Greaterthansign extends ResizeOption
   
   @js.native
   sealed trait Green
@@ -308,6 +299,9 @@ object gmStrings {
   
   @js.native
   sealed trait `Latin 2` extends Encoding
+  
+  @js.native
+  sealed trait Lessthansign extends ResizeOption
   
   @js.native
   sealed trait Line extends InterlaceType
@@ -431,6 +425,9 @@ object gmStrings {
   sealed trait Partition extends InterlaceType
   
   @js.native
+  sealed trait Percentsign extends ResizeOption
+  
+  @js.native
   sealed trait Perceptual extends IntentType
   
   @js.native
@@ -444,6 +441,9 @@ object gmStrings {
   
   @js.native
   sealed trait Plus extends ComposeOperator
+  
+  @js.native
+  sealed trait Plussign extends js.Object
   
   @js.native
   sealed trait Point extends FilterType
@@ -655,7 +655,7 @@ object gmStrings {
   sealed trait Zip extends CompressionType
   
   @js.native
-  sealed trait `_backtick^_backtick` extends ResizeOption
+  sealed trait ^ extends ResizeOption
   
   @js.native
   sealed trait center_ extends js.Object
@@ -738,16 +738,6 @@ object gmStrings {
   @js.native
   sealed trait uniform extends NoiseType
   
-  @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
-  @scala.inline
-  def `%`: `%` = "%".asInstanceOf[`%`]
-  @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
-  @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
   @scala.inline
   def `@`: `@` = "@".asInstanceOf[`@`]
   @scala.inline
@@ -857,6 +847,8 @@ object gmStrings {
   @scala.inline
   def EdgeDetect: EdgeDetect = "EdgeDetect".asInstanceOf[EdgeDetect]
   @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  @scala.inline
   def Fax: Fax = "Fax".asInstanceOf[Fax]
   @scala.inline
   def Format: Format = "Format".asInstanceOf[Format]
@@ -874,6 +866,8 @@ object gmStrings {
   def Gray_ : Gray_ = "Gray".asInstanceOf[Gray_]
   @scala.inline
   def Grayscale_ : Grayscale_ = "Grayscale".asInstanceOf[Grayscale_]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
   def Green: Green = "Green".asInstanceOf[Green]
   @scala.inline
@@ -910,6 +904,8 @@ object gmStrings {
   def Lanczos: Lanczos = "Lanczos".asInstanceOf[Lanczos]
   @scala.inline
   def `Latin 2`: `Latin 2` = "Latin 2".asInstanceOf[`Latin 2`]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
   @scala.inline
@@ -985,6 +981,8 @@ object gmStrings {
   @scala.inline
   def Partition: Partition = "Partition".asInstanceOf[Partition]
   @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  @scala.inline
   def Perceptual: Perceptual = "Perceptual".asInstanceOf[Perceptual]
   @scala.inline
   def PixelsPerCentimeter: PixelsPerCentimeter = "PixelsPerCentimeter".asInstanceOf[PixelsPerCentimeter]
@@ -994,6 +992,8 @@ object gmStrings {
   def Plane: Plane = "Plane".asInstanceOf[Plane]
   @scala.inline
   def Plus: Plus = "Plus".asInstanceOf[Plus]
+  @scala.inline
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
   @scala.inline
   def Point: Point = "Point".asInstanceOf[Point]
   @scala.inline
@@ -1123,7 +1123,7 @@ object gmStrings {
   @scala.inline
   def Zip: Zip = "Zip".asInstanceOf[Zip]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def center_ : center_ = "center".asInstanceOf[center_]
   @scala.inline

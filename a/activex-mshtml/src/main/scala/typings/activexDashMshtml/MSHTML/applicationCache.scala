@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.applicationCache")
 @js.native
 class applicationCache protected () extends js.Object {
-  var `MSHTML.applicationCache_typekey`: applicationCache = js.native
+  @JSName("MSHTML.applicationCache_typekey")
+  var MSHTMLDotapplicationCache_typekey: applicationCache = js.native
   var oncached: js.Any = js.native
   var onchecking: js.Any = js.native
   var ondownloading: js.Any = js.native

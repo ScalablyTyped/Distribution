@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalTextOperator.beginsWith
-import typings.officeDashJs.Excel.ConditionalTextOperator.contains
-import typings.officeDashJs.Excel.ConditionalTextOperator.endsWith
-import typings.officeDashJs.Excel.ConditionalTextOperator.invalid
-import typings.officeDashJs.Excel.ConditionalTextOperator.notContains
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

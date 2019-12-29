@@ -10,7 +10,8 @@ class SlicerItem protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Caption: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.SlicerItem_typekey`: SlicerItem = js.native
+  @JSName("Excel.SlicerItem_typekey")
+  var ExcelDotSlicerItem_typekey: SlicerItem = js.native
   val HasData: Boolean = js.native
   val Name: String = js.native
   val Parent: SlicerCache = js.native

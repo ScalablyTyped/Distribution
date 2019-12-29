@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class BDCAdapterObject protected () extends js.Object {
   val EntityName: String = js.native
   val EntityNamespace: String = js.native
-  var `InfoPath.BDCAdapterObject_typekey`: BDCAdapterObject = js.native
+  @JSName("InfoPath.BDCAdapterObject_typekey")
+  var InfoPathDotBDCAdapterObject_typekey: BDCAdapterObject = js.native
   val LOBSystemInstance: String = js.native
   val Name: String = js.native
   val QueryAllowed: Boolean = js.native

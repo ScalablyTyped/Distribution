@@ -1,7 +1,6 @@
 package typings.wonderDashFrp
 
 import typings.wonderDashFrp.distEs2015CoreEntityMod.Entity
-import typings.wonderDashFrp.distEs2015DisposableGroupDisposableMod.GroupDisposable
 import typings.wonderDashFrp.distEs2015DisposableIDisposableMod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

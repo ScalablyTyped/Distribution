@@ -1,7 +1,5 @@
 package typings.expoDashLinearDashGradient
 
-import typings.expoDashLinearDashGradient.buildNativeLinearGradientDotAndroidMod.NativeLinearGradient
-import typings.expoDashLinearDashGradient.buildNativeLinearGradientDotAndroidMod.Props
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentProps
 import scala.scalajs.js

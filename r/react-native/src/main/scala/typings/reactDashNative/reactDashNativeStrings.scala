@@ -73,9 +73,6 @@ object reactDashNativeStrings {
   sealed trait Dragging extends js.Object
   
   @js.native
-  sealed trait Empty extends XMLHttpRequestResponseType
-  
-  @js.native
   sealed trait Event extends CameraRollGroupType
   
   @js.native
@@ -151,6 +148,9 @@ object reactDashNativeStrings {
   sealed trait Videos extends CameraRollAssetType
   
   @js.native
+  sealed trait _empty extends XMLHttpRequestResponseType
+  
+  @js.native
   sealed trait abort extends js.Object
   
   @js.native
@@ -195,73 +195,73 @@ object reactDashNativeStrings {
   sealed trait android extends PlatformOSType
   
   @js.native
-  sealed trait androidDOTpermissionDOTACCESS_COARSE_LOCATION extends Permission
+  sealed trait androidDotpermissionDotACCESS_COARSE_LOCATION extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTACCESS_FINE_LOCATION extends Permission
+  sealed trait androidDotpermissionDotACCESS_FINE_LOCATION extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTBODY_SENSORS extends Permission
+  sealed trait androidDotpermissionDotBODY_SENSORS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTCALL_PHONE extends Permission
+  sealed trait androidDotpermissionDotCALL_PHONE extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTCAMERA extends Permission
+  sealed trait androidDotpermissionDotCAMERA extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTGET_ACCOUNTS extends Permission
+  sealed trait androidDotpermissionDotGET_ACCOUNTS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTPROCESS_OUTGOING_CALLS extends Permission
+  sealed trait androidDotpermissionDotPROCESS_OUTGOING_CALLS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_CALENDAR extends Permission
+  sealed trait androidDotpermissionDotREAD_CALENDAR extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_CALL_LOG extends Permission
+  sealed trait androidDotpermissionDotREAD_CALL_LOG extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_CONTACTS extends Permission
+  sealed trait androidDotpermissionDotREAD_CONTACTS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_EXTERNAL_STORAGE extends Permission
+  sealed trait androidDotpermissionDotREAD_EXTERNAL_STORAGE extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_PHONE_STATE extends Permission
+  sealed trait androidDotpermissionDotREAD_PHONE_STATE extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_SMS extends Permission
+  sealed trait androidDotpermissionDotREAD_SMS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECEIVE_MMS extends Permission
+  sealed trait androidDotpermissionDotRECEIVE_MMS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECEIVE_SMS extends Permission
+  sealed trait androidDotpermissionDotRECEIVE_SMS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECEIVE_WAP_PUSH extends Permission
+  sealed trait androidDotpermissionDotRECEIVE_WAP_PUSH extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECORD_AUDIO extends Permission
+  sealed trait androidDotpermissionDotRECORD_AUDIO extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTSEND_SMS extends Permission
+  sealed trait androidDotpermissionDotSEND_SMS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTUSE_SIP extends Permission
+  sealed trait androidDotpermissionDotUSE_SIP extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_CALENDAR extends Permission
+  sealed trait androidDotpermissionDotWRITE_CALENDAR extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_CALL_LOG extends Permission
+  sealed trait androidDotpermissionDotWRITE_CALL_LOG extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_CONTACTS extends Permission
+  sealed trait androidDotpermissionDotWRITE_CONTACTS extends Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE extends Permission
+  sealed trait androidDotpermissionDotWRITE_EXTERNAL_STORAGE extends Permission
   
   @js.native
   sealed trait announcementFinished extends AccessibilityEventName
@@ -399,7 +399,7 @@ object reactDashNativeStrings {
   sealed trait `column-reverse` extends js.Object
   
   @js.native
-  sealed trait comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL extends Permission
+  sealed trait comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL extends Permission
   
   @js.native
   sealed trait combobox extends AccessibilityRole
@@ -478,7 +478,7 @@ object reactDashNativeStrings {
   sealed trait disk extends js.Object
   
   @js.native
-  sealed trait `disk/memory` extends js.Object
+  sealed trait diskSlashmemory extends js.Object
   
   @js.native
   sealed trait dismissedAction extends js.Object
@@ -1321,8 +1321,6 @@ object reactDashNativeStrings {
   @scala.inline
   def Dragging: Dragging = "Dragging".asInstanceOf[Dragging]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def Event: Event = "Event".asInstanceOf[Event]
   @scala.inline
   def Faces: Faces = "Faces".asInstanceOf[Faces]
@@ -1373,6 +1371,8 @@ object reactDashNativeStrings {
   @scala.inline
   def Videos: Videos = "Videos".asInstanceOf[Videos]
   @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
@@ -1401,51 +1401,51 @@ object reactDashNativeStrings {
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
-  def androidDOTpermissionDOTACCESS_COARSE_LOCATION: androidDOTpermissionDOTACCESS_COARSE_LOCATION = "android.permission.ACCESS_COARSE_LOCATION".asInstanceOf[androidDOTpermissionDOTACCESS_COARSE_LOCATION]
+  def androidDotpermissionDotACCESS_COARSE_LOCATION: androidDotpermissionDotACCESS_COARSE_LOCATION = "android.permission.ACCESS_COARSE_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_COARSE_LOCATION]
   @scala.inline
-  def androidDOTpermissionDOTACCESS_FINE_LOCATION: androidDOTpermissionDOTACCESS_FINE_LOCATION = "android.permission.ACCESS_FINE_LOCATION".asInstanceOf[androidDOTpermissionDOTACCESS_FINE_LOCATION]
+  def androidDotpermissionDotACCESS_FINE_LOCATION: androidDotpermissionDotACCESS_FINE_LOCATION = "android.permission.ACCESS_FINE_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_FINE_LOCATION]
   @scala.inline
-  def androidDOTpermissionDOTBODY_SENSORS: androidDOTpermissionDOTBODY_SENSORS = "android.permission.BODY_SENSORS".asInstanceOf[androidDOTpermissionDOTBODY_SENSORS]
+  def androidDotpermissionDotBODY_SENSORS: androidDotpermissionDotBODY_SENSORS = "android.permission.BODY_SENSORS".asInstanceOf[androidDotpermissionDotBODY_SENSORS]
   @scala.inline
-  def androidDOTpermissionDOTCALL_PHONE: androidDOTpermissionDOTCALL_PHONE = "android.permission.CALL_PHONE".asInstanceOf[androidDOTpermissionDOTCALL_PHONE]
+  def androidDotpermissionDotCALL_PHONE: androidDotpermissionDotCALL_PHONE = "android.permission.CALL_PHONE".asInstanceOf[androidDotpermissionDotCALL_PHONE]
   @scala.inline
-  def androidDOTpermissionDOTCAMERA: androidDOTpermissionDOTCAMERA = "android.permission.CAMERA".asInstanceOf[androidDOTpermissionDOTCAMERA]
+  def androidDotpermissionDotCAMERA: androidDotpermissionDotCAMERA = "android.permission.CAMERA".asInstanceOf[androidDotpermissionDotCAMERA]
   @scala.inline
-  def androidDOTpermissionDOTGET_ACCOUNTS: androidDOTpermissionDOTGET_ACCOUNTS = "android.permission.GET_ACCOUNTS".asInstanceOf[androidDOTpermissionDOTGET_ACCOUNTS]
+  def androidDotpermissionDotGET_ACCOUNTS: androidDotpermissionDotGET_ACCOUNTS = "android.permission.GET_ACCOUNTS".asInstanceOf[androidDotpermissionDotGET_ACCOUNTS]
   @scala.inline
-  def androidDOTpermissionDOTPROCESS_OUTGOING_CALLS: androidDOTpermissionDOTPROCESS_OUTGOING_CALLS = "android.permission.PROCESS_OUTGOING_CALLS".asInstanceOf[androidDOTpermissionDOTPROCESS_OUTGOING_CALLS]
+  def androidDotpermissionDotPROCESS_OUTGOING_CALLS: androidDotpermissionDotPROCESS_OUTGOING_CALLS = "android.permission.PROCESS_OUTGOING_CALLS".asInstanceOf[androidDotpermissionDotPROCESS_OUTGOING_CALLS]
   @scala.inline
-  def androidDOTpermissionDOTREAD_CALENDAR: androidDOTpermissionDOTREAD_CALENDAR = "android.permission.READ_CALENDAR".asInstanceOf[androidDOTpermissionDOTREAD_CALENDAR]
+  def androidDotpermissionDotREAD_CALENDAR: androidDotpermissionDotREAD_CALENDAR = "android.permission.READ_CALENDAR".asInstanceOf[androidDotpermissionDotREAD_CALENDAR]
   @scala.inline
-  def androidDOTpermissionDOTREAD_CALL_LOG: androidDOTpermissionDOTREAD_CALL_LOG = "android.permission.READ_CALL_LOG".asInstanceOf[androidDOTpermissionDOTREAD_CALL_LOG]
+  def androidDotpermissionDotREAD_CALL_LOG: androidDotpermissionDotREAD_CALL_LOG = "android.permission.READ_CALL_LOG".asInstanceOf[androidDotpermissionDotREAD_CALL_LOG]
   @scala.inline
-  def androidDOTpermissionDOTREAD_CONTACTS: androidDOTpermissionDOTREAD_CONTACTS = "android.permission.READ_CONTACTS".asInstanceOf[androidDOTpermissionDOTREAD_CONTACTS]
+  def androidDotpermissionDotREAD_CONTACTS: androidDotpermissionDotREAD_CONTACTS = "android.permission.READ_CONTACTS".asInstanceOf[androidDotpermissionDotREAD_CONTACTS]
   @scala.inline
-  def androidDOTpermissionDOTREAD_EXTERNAL_STORAGE: androidDOTpermissionDOTREAD_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE".asInstanceOf[androidDOTpermissionDOTREAD_EXTERNAL_STORAGE]
+  def androidDotpermissionDotREAD_EXTERNAL_STORAGE: androidDotpermissionDotREAD_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE".asInstanceOf[androidDotpermissionDotREAD_EXTERNAL_STORAGE]
   @scala.inline
-  def androidDOTpermissionDOTREAD_PHONE_STATE: androidDOTpermissionDOTREAD_PHONE_STATE = "android.permission.READ_PHONE_STATE".asInstanceOf[androidDOTpermissionDOTREAD_PHONE_STATE]
+  def androidDotpermissionDotREAD_PHONE_STATE: androidDotpermissionDotREAD_PHONE_STATE = "android.permission.READ_PHONE_STATE".asInstanceOf[androidDotpermissionDotREAD_PHONE_STATE]
   @scala.inline
-  def androidDOTpermissionDOTREAD_SMS: androidDOTpermissionDOTREAD_SMS = "android.permission.READ_SMS".asInstanceOf[androidDOTpermissionDOTREAD_SMS]
+  def androidDotpermissionDotREAD_SMS: androidDotpermissionDotREAD_SMS = "android.permission.READ_SMS".asInstanceOf[androidDotpermissionDotREAD_SMS]
   @scala.inline
-  def androidDOTpermissionDOTRECEIVE_MMS: androidDOTpermissionDOTRECEIVE_MMS = "android.permission.RECEIVE_MMS".asInstanceOf[androidDOTpermissionDOTRECEIVE_MMS]
+  def androidDotpermissionDotRECEIVE_MMS: androidDotpermissionDotRECEIVE_MMS = "android.permission.RECEIVE_MMS".asInstanceOf[androidDotpermissionDotRECEIVE_MMS]
   @scala.inline
-  def androidDOTpermissionDOTRECEIVE_SMS: androidDOTpermissionDOTRECEIVE_SMS = "android.permission.RECEIVE_SMS".asInstanceOf[androidDOTpermissionDOTRECEIVE_SMS]
+  def androidDotpermissionDotRECEIVE_SMS: androidDotpermissionDotRECEIVE_SMS = "android.permission.RECEIVE_SMS".asInstanceOf[androidDotpermissionDotRECEIVE_SMS]
   @scala.inline
-  def androidDOTpermissionDOTRECEIVE_WAP_PUSH: androidDOTpermissionDOTRECEIVE_WAP_PUSH = "android.permission.RECEIVE_WAP_PUSH".asInstanceOf[androidDOTpermissionDOTRECEIVE_WAP_PUSH]
+  def androidDotpermissionDotRECEIVE_WAP_PUSH: androidDotpermissionDotRECEIVE_WAP_PUSH = "android.permission.RECEIVE_WAP_PUSH".asInstanceOf[androidDotpermissionDotRECEIVE_WAP_PUSH]
   @scala.inline
-  def androidDOTpermissionDOTRECORD_AUDIO: androidDOTpermissionDOTRECORD_AUDIO = "android.permission.RECORD_AUDIO".asInstanceOf[androidDOTpermissionDOTRECORD_AUDIO]
+  def androidDotpermissionDotRECORD_AUDIO: androidDotpermissionDotRECORD_AUDIO = "android.permission.RECORD_AUDIO".asInstanceOf[androidDotpermissionDotRECORD_AUDIO]
   @scala.inline
-  def androidDOTpermissionDOTSEND_SMS: androidDOTpermissionDOTSEND_SMS = "android.permission.SEND_SMS".asInstanceOf[androidDOTpermissionDOTSEND_SMS]
+  def androidDotpermissionDotSEND_SMS: androidDotpermissionDotSEND_SMS = "android.permission.SEND_SMS".asInstanceOf[androidDotpermissionDotSEND_SMS]
   @scala.inline
-  def androidDOTpermissionDOTUSE_SIP: androidDOTpermissionDOTUSE_SIP = "android.permission.USE_SIP".asInstanceOf[androidDOTpermissionDOTUSE_SIP]
+  def androidDotpermissionDotUSE_SIP: androidDotpermissionDotUSE_SIP = "android.permission.USE_SIP".asInstanceOf[androidDotpermissionDotUSE_SIP]
   @scala.inline
-  def androidDOTpermissionDOTWRITE_CALENDAR: androidDOTpermissionDOTWRITE_CALENDAR = "android.permission.WRITE_CALENDAR".asInstanceOf[androidDOTpermissionDOTWRITE_CALENDAR]
+  def androidDotpermissionDotWRITE_CALENDAR: androidDotpermissionDotWRITE_CALENDAR = "android.permission.WRITE_CALENDAR".asInstanceOf[androidDotpermissionDotWRITE_CALENDAR]
   @scala.inline
-  def androidDOTpermissionDOTWRITE_CALL_LOG: androidDOTpermissionDOTWRITE_CALL_LOG = "android.permission.WRITE_CALL_LOG".asInstanceOf[androidDOTpermissionDOTWRITE_CALL_LOG]
+  def androidDotpermissionDotWRITE_CALL_LOG: androidDotpermissionDotWRITE_CALL_LOG = "android.permission.WRITE_CALL_LOG".asInstanceOf[androidDotpermissionDotWRITE_CALL_LOG]
   @scala.inline
-  def androidDOTpermissionDOTWRITE_CONTACTS: androidDOTpermissionDOTWRITE_CONTACTS = "android.permission.WRITE_CONTACTS".asInstanceOf[androidDOTpermissionDOTWRITE_CONTACTS]
+  def androidDotpermissionDotWRITE_CONTACTS: androidDotpermissionDotWRITE_CONTACTS = "android.permission.WRITE_CONTACTS".asInstanceOf[androidDotpermissionDotWRITE_CONTACTS]
   @scala.inline
-  def androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE: androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE = "android.permission.WRITE_EXTERNAL_STORAGE".asInstanceOf[androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE]
+  def androidDotpermissionDotWRITE_EXTERNAL_STORAGE: androidDotpermissionDotWRITE_EXTERNAL_STORAGE = "android.permission.WRITE_EXTERNAL_STORAGE".asInstanceOf[androidDotpermissionDotWRITE_EXTERNAL_STORAGE]
   @scala.inline
   def announcementFinished: announcementFinished = "announcementFinished".asInstanceOf[announcementFinished]
   @scala.inline
@@ -1533,7 +1533,7 @@ object reactDashNativeStrings {
   @scala.inline
   def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   @scala.inline
-  def comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL: comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL]
+  def comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL]
   @scala.inline
   def combobox: combobox = "combobox".asInstanceOf[combobox]
   @scala.inline
@@ -1579,7 +1579,7 @@ object reactDashNativeStrings {
   @scala.inline
   def disk: disk = "disk".asInstanceOf[disk]
   @scala.inline
-  def `disk/memory`: `disk/memory` = "disk/memory".asInstanceOf[`disk/memory`]
+  def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
   @scala.inline
   def dismissedAction: dismissedAction = "dismissedAction".asInstanceOf[dismissedAction]
   @scala.inline

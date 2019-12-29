@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Globalization
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Globalization.DayOfWeek.friday
-import typings.winrtDashUwp.Windows.Globalization.DayOfWeek.monday
-import typings.winrtDashUwp.Windows.Globalization.DayOfWeek.saturday
-import typings.winrtDashUwp.Windows.Globalization.DayOfWeek.sunday
-import typings.winrtDashUwp.Windows.Globalization.DayOfWeek.thursday
-import typings.winrtDashUwp.Windows.Globalization.DayOfWeek.tuesday
-import typings.winrtDashUwp.Windows.Globalization.DayOfWeek.wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

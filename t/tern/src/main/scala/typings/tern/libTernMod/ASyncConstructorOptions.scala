@@ -1,7 +1,7 @@
 package typings.tern.libTernMod
 
 import typings.std.Error
-import typings.tern.ternNumbers.`true`
+import typings.tern.ternBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

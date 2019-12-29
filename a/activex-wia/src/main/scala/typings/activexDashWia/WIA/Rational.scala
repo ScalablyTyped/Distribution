@@ -17,6 +17,7 @@ class Rational protected () extends js.Object {
   var Numerator: Double = js.native
   /** Returns the Rational Value as a Double */
   val Value: Double = js.native
-  var `WIA.Rational_typekey`: Rational = js.native
+  @JSName("WIA.Rational_typekey")
+  var WIADotRational_typekey: Rational = js.native
 }
 

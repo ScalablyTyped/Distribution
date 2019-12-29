@@ -1,10 +1,6 @@
 package typings.xmlbuilder.xmlbuilderMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xmlbuilder.xmlbuilderMod.WriterState.CloseTag
-import typings.xmlbuilder.xmlbuilderMod.WriterState.InsideTag
-import typings.xmlbuilder.xmlbuilderMod.WriterState.None
-import typings.xmlbuilder.xmlbuilderMod.WriterState.OpenTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

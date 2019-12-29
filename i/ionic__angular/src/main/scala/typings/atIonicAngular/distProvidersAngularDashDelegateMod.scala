@@ -5,7 +5,6 @@ import typings.atAngularCore.atAngularCoreMod.ComponentFactoryResolver
 import typings.atAngularCore.atAngularCoreMod.Injector
 import typings.atAngularCore.atAngularCoreMod.NgZone
 import typings.atAngularCore.atAngularCoreMod.ViewContainerRef
-import typings.atIonicAngular.distProvidersAngularDashDelegateMod.AngularFrameworkDelegate
 import typings.atIonicCore.atIonicCoreMod.FrameworkDelegate
 import typings.std.HTMLElement
 import typings.std.WeakMap

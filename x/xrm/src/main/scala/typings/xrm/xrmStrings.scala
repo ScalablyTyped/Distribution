@@ -1,32 +1,32 @@
 package typings.xrm
 
 import typings.xrm.Xrm.Attributes.AttributeFormat
-import typings.xrm.Xrm.Attributes.AttributeType
-import typings.xrm.Xrm.Attributes.DateAttributeFormat
-import typings.xrm.Xrm.Attributes.IntegerAttributeFormat
-import typings.xrm.Xrm.Attributes.OptionSetAttributeFormat
 import typings.xrm.Xrm.Attributes.RequirementLevel
-import typings.xrm.Xrm.Attributes.StringAttributeFormat
-import typings.xrm.Xrm.Client
-import typings.xrm.Xrm.ClientState
 import typings.xrm.Xrm.Controls.NotificationLevel
 import typings.xrm.Xrm.Controls._ControlType
 import typings.xrm.Xrm.Device.PickFileTypes
-import typings.xrm.Xrm.DisplayState
-import typings.xrm.Xrm.EntitySaveMode
-import typings.xrm.Xrm.FormNotificationLevel
-import typings.xrm.Xrm.ProcessFlow.ProcessStatus
-import typings.xrm.Xrm.ProcessFlow.StageChangeDirection
-import typings.xrm.Xrm.ProcessFlow.StageStatus
-import typings.xrm.Xrm.SubmitMode
-import typings.xrm.Xrm.Theme
-import typings.xrm.Xrm.Url.CmdBarDisplay
-import typings.xrm.Xrm.Url.NavBarDisplay
-import typings.xrm.Xrm.Url.ReportAction
 import typings.xrm.XrmEnum.AdvancedConfigSettingOption
 import typings.xrm.XrmEnum.AttributeRequirementLevel
+import typings.xrm.XrmEnum.AttributeType
+import typings.xrm.XrmEnum.Client
+import typings.xrm.XrmEnum.ClientState
+import typings.xrm.XrmEnum.CmdBarDisplay
+import typings.xrm.XrmEnum.DateAttributeFormat
 import typings.xrm.XrmEnum.DevicePickFileType
+import typings.xrm.XrmEnum.DisplayState
+import typings.xrm.XrmEnum.EntitySaveMode
+import typings.xrm.XrmEnum.FormNotificationLevel
+import typings.xrm.XrmEnum.IntegerAttributeFormat
+import typings.xrm.XrmEnum.NavBarDisplay
+import typings.xrm.XrmEnum.OptionSetAttributeFormat
+import typings.xrm.XrmEnum.ProcessStatus
+import typings.xrm.XrmEnum.ReportAction
+import typings.xrm.XrmEnum.StageChangeDirection
+import typings.xrm.XrmEnum.StageStatus
 import typings.xrm.XrmEnum.StandardControlType
+import typings.xrm.XrmEnum.StringAttributeFormat
+import typings.xrm.XrmEnum.SubmitMode
+import typings.xrm.XrmEnum.Theme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +35,13 @@ object xrmStrings {
   @js.native
   sealed trait ERROR
     extends FormNotificationLevel
-       with typings.xrm.XrmEnum.FormNotificationLevel
+       with typings.xrm.Xrm.FormNotificationLevel
        with NotificationLevel
   
   @js.native
   sealed trait INFO
     extends FormNotificationLevel
-       with typings.xrm.XrmEnum.FormNotificationLevel
+       with typings.xrm.Xrm.FormNotificationLevel
   
   @js.native
   sealed trait MaxChildIncidentNumber extends AdvancedConfigSettingOption
@@ -52,42 +52,42 @@ object xrmStrings {
   @js.native
   sealed trait Mobile
     extends Client
-       with typings.xrm.XrmEnum.Client
+       with typings.xrm.Xrm.Client
   
   @js.native
   sealed trait Next
     extends StageChangeDirection
-       with typings.xrm.XrmEnum.StageChangeDirection
+       with typings.xrm.Xrm.ProcessFlow.StageChangeDirection
   
   @js.native
   sealed trait Office12Blue
     extends Theme
-       with typings.xrm.XrmEnum.Theme
+       with typings.xrm.Xrm.Theme
   
   @js.native
   sealed trait Office14Silver
     extends Theme
-       with typings.xrm.XrmEnum.Theme
+       with typings.xrm.Xrm.Theme
   
   @js.native
   sealed trait Offline
     extends ClientState
-       with typings.xrm.XrmEnum.ClientState
+       with typings.xrm.Xrm.ClientState
   
   @js.native
   sealed trait Online
     extends ClientState
-       with typings.xrm.XrmEnum.ClientState
+       with typings.xrm.Xrm.ClientState
   
   @js.native
   sealed trait Outlook
     extends Client
-       with typings.xrm.XrmEnum.Client
+       with typings.xrm.Xrm.Client
   
   @js.native
   sealed trait Previous
     extends StageChangeDirection
-       with typings.xrm.XrmEnum.StageChangeDirection
+       with typings.xrm.Xrm.ProcessFlow.StageChangeDirection
   
   @js.native
   sealed trait RECOMMENDATION extends NotificationLevel
@@ -95,34 +95,34 @@ object xrmStrings {
   @js.native
   sealed trait UnifiedServiceDesk
     extends Client
-       with typings.xrm.XrmEnum.Client
+       with typings.xrm.Xrm.Client
   
   @js.native
   sealed trait WARNING
     extends FormNotificationLevel
-       with typings.xrm.XrmEnum.FormNotificationLevel
+       with typings.xrm.Xrm.FormNotificationLevel
   
   @js.native
   sealed trait Web
     extends Client
-       with typings.xrm.XrmEnum.Client
+       with typings.xrm.Xrm.Client
   
   @js.native
   sealed trait aborted
     extends ProcessStatus
-       with typings.xrm.XrmEnum.ProcessStatus
+       with typings.xrm.Xrm.ProcessFlow.ProcessStatus
   
   @js.native
   sealed trait active
     extends ProcessStatus
-       with typings.xrm.XrmEnum.ProcessStatus
+       with typings.xrm.Xrm.ProcessFlow.ProcessStatus
        with StageStatus
-       with typings.xrm.XrmEnum.StageStatus
+       with typings.xrm.Xrm.ProcessFlow.StageStatus
   
   @js.native
   sealed trait always
     extends SubmitMode
-       with typings.xrm.XrmEnum.SubmitMode
+       with typings.xrm.Xrm.SubmitMode
   
   @js.native
   sealed trait audio
@@ -132,83 +132,83 @@ object xrmStrings {
   @js.native
   sealed trait boolean
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait collapsed
     extends DisplayState
-       with typings.xrm.XrmEnum.DisplayState
+       with typings.xrm.Xrm.DisplayState
   
   @js.native
   sealed trait date
     extends AttributeFormat
        with DateAttributeFormat
-       with typings.xrm.XrmEnum.DateAttributeFormat
+       with typings.xrm.Xrm.Attributes.DateAttributeFormat
   
   @js.native
   sealed trait datetime
     extends AttributeFormat
        with AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
        with DateAttributeFormat
-       with typings.xrm.XrmEnum.DateAttributeFormat
+       with typings.xrm.Xrm.Attributes.DateAttributeFormat
   
   @js.native
   sealed trait decimal
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait default
     extends Theme
-       with typings.xrm.XrmEnum.Theme
+       with typings.xrm.Xrm.Theme
   
   @js.native
   sealed trait dirty
     extends SubmitMode
-       with typings.xrm.XrmEnum.SubmitMode
+       with typings.xrm.Xrm.SubmitMode
   
   @js.native
   sealed trait double
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait duration
     extends AttributeFormat
        with IntegerAttributeFormat
-       with typings.xrm.XrmEnum.IntegerAttributeFormat
+       with typings.xrm.Xrm.Attributes.IntegerAttributeFormat
   
   @js.native
   sealed trait email
     extends AttributeFormat
        with StringAttributeFormat
-       with typings.xrm.XrmEnum.StringAttributeFormat
+       with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
   sealed trait entity
     extends NavBarDisplay
-       with typings.xrm.XrmEnum.NavBarDisplay
+       with typings.xrm.Xrm.Url.NavBarDisplay
   
   @js.native
   sealed trait expanded
     extends DisplayState
-       with typings.xrm.XrmEnum.DisplayState
+       with typings.xrm.Xrm.DisplayState
   
   @js.native
   sealed trait `false`
     extends CmdBarDisplay
-       with typings.xrm.XrmEnum.CmdBarDisplay
+       with typings.xrm.Xrm.Url.CmdBarDisplay
   
   @js.native
   sealed trait filter
     extends ReportAction
-       with typings.xrm.XrmEnum.ReportAction
+       with typings.xrm.Xrm.Url.ReportAction
   
   @js.native
   sealed trait finished
     extends ProcessStatus
-       with typings.xrm.XrmEnum.ProcessStatus
+       with typings.xrm.Xrm.ProcessFlow.ProcessStatus
   
   @js.native
   sealed trait iframe
@@ -223,12 +223,12 @@ object xrmStrings {
   @js.native
   sealed trait inactive
     extends StageStatus
-       with typings.xrm.XrmEnum.StageStatus
+       with typings.xrm.Xrm.ProcessFlow.StageStatus
   
   @js.native
   sealed trait integer
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait kbsearch
@@ -239,29 +239,29 @@ object xrmStrings {
   sealed trait language
     extends AttributeFormat
        with OptionSetAttributeFormat
-       with typings.xrm.XrmEnum.OptionSetAttributeFormat
+       with typings.xrm.Xrm.Attributes.OptionSetAttributeFormat
   
   @js.native
   sealed trait lookup
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
        with _ControlType
   
   @js.native
   sealed trait memo
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait money
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait multioptionset
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait multiselectoptionset extends StandardControlType
@@ -269,14 +269,14 @@ object xrmStrings {
   @js.native
   sealed trait never
     extends SubmitMode
-       with typings.xrm.XrmEnum.SubmitMode
+       with typings.xrm.Xrm.SubmitMode
   
   @js.native
   sealed trait none
     extends AttributeFormat
        with AttributeRequirementLevel
        with IntegerAttributeFormat
-       with typings.xrm.XrmEnum.IntegerAttributeFormat
+       with typings.xrm.Xrm.Attributes.IntegerAttributeFormat
        with RequirementLevel
   
   @js.native
@@ -287,17 +287,17 @@ object xrmStrings {
   @js.native
   sealed trait off
     extends NavBarDisplay
-       with typings.xrm.XrmEnum.NavBarDisplay
+       with typings.xrm.Xrm.Url.NavBarDisplay
   
   @js.native
   sealed trait on
     extends NavBarDisplay
-       with typings.xrm.XrmEnum.NavBarDisplay
+       with typings.xrm.Xrm.Url.NavBarDisplay
   
   @js.native
   sealed trait optionset
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
        with _ControlType
   
@@ -305,7 +305,7 @@ object xrmStrings {
   sealed trait phone
     extends AttributeFormat
        with StringAttributeFormat
-       with typings.xrm.XrmEnum.StringAttributeFormat
+       with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
   sealed trait quickform extends StandardControlType
@@ -323,17 +323,17 @@ object xrmStrings {
   @js.native
   sealed trait run
     extends ReportAction
-       with typings.xrm.XrmEnum.ReportAction
+       with typings.xrm.Xrm.Url.ReportAction
   
   @js.native
   sealed trait saveandclose
     extends EntitySaveMode
-       with typings.xrm.XrmEnum.EntitySaveMode
+       with typings.xrm.Xrm.EntitySaveMode
   
   @js.native
   sealed trait saveandnew
     extends EntitySaveMode
-       with typings.xrm.XrmEnum.EntitySaveMode
+       with typings.xrm.Xrm.EntitySaveMode
   
   @js.native
   sealed trait standard
@@ -343,7 +343,7 @@ object xrmStrings {
   @js.native
   sealed trait string
     extends AttributeType
-       with typings.xrm.XrmEnum.AttributeType
+       with typings.xrm.Xrm.Attributes.AttributeType
   
   @js.native
   sealed trait subgrid
@@ -354,19 +354,19 @@ object xrmStrings {
   sealed trait text
     extends AttributeFormat
        with StringAttributeFormat
-       with typings.xrm.XrmEnum.StringAttributeFormat
+       with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
   sealed trait textarea
     extends AttributeFormat
        with StringAttributeFormat
-       with typings.xrm.XrmEnum.StringAttributeFormat
+       with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
   sealed trait tickersymbol
     extends AttributeFormat
        with StringAttributeFormat
-       with typings.xrm.XrmEnum.StringAttributeFormat
+       with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
   sealed trait timelinewall
@@ -382,18 +382,18 @@ object xrmStrings {
   sealed trait timezone
     extends AttributeFormat
        with OptionSetAttributeFormat
-       with typings.xrm.XrmEnum.OptionSetAttributeFormat
+       with typings.xrm.Xrm.Attributes.OptionSetAttributeFormat
   
   @js.native
   sealed trait `true`
     extends CmdBarDisplay
-       with typings.xrm.XrmEnum.CmdBarDisplay
+       with typings.xrm.Xrm.Url.CmdBarDisplay
   
   @js.native
   sealed trait url
     extends AttributeFormat
        with StringAttributeFormat
-       with typings.xrm.XrmEnum.StringAttributeFormat
+       with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
   sealed trait video

@@ -9,12 +9,11 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IPaging
-  extends typings.extjs.Ext.toolbar.IToolbar {
+- typings.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IPaging extends IToolbar {
   /** [Config Option] (String) */
-  var afterPageText: js.UndefOr[java.lang.String] = js.undefined
+  var afterPageText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var beforePageText: js.UndefOr[java.lang.String] = js.undefined
+  var beforePageText: js.UndefOr[String] = js.undefined
   /** [Method] Binds the paging toolbar to the specified Ext data Store deprecated
   		* @param store Ext.data.Store The data store to bind
   		*/
@@ -30,13 +29,13 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var displayInfo: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var displayMsg: js.UndefOr[java.lang.String] = js.undefined
+  var displayMsg: js.UndefOr[String] = js.undefined
   /** [Method] Refresh the current page has the same effect as clicking the refresh button  */
   var doRefresh: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var emptyMsg: js.UndefOr[java.lang.String] = js.undefined
+  var emptyMsg: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var firstText: js.UndefOr[java.lang.String] = js.undefined
+  var firstText: js.UndefOr[String] = js.undefined
   /** [Method] Gets the current store instance
   		* @returns Ext.data.AbstractStore The store, null if one does not exist.
   		*/
@@ -48,7 +47,7 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Number) */
   var inputItemWidth: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var lastText: js.UndefOr[java.lang.String] = js.undefined
+  var lastText: js.UndefOr[String] = js.undefined
   /** [Method] Move to the first page has the same effect as clicking the first button  */
   var moveFirst: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Move to the last page has the same effect as clicking the last button  */
@@ -58,7 +57,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Move to the previous page has the same effect as clicking the previous button  */
   var movePrevious: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var nextText: js.UndefOr[java.lang.String] = js.undefined
+  var nextText: js.UndefOr[String] = js.undefined
   /** [Method] Template method it is called when a new store is bound to the current instance
   		* @param store Ext.data.AbstractStore The store being bound
   		* @param initial Boolean True if this store is being bound as initialization of the instance.
@@ -72,9 +71,9 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var prependButtons: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var prevText: js.UndefOr[java.lang.String] = js.undefined
+  var prevText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var refreshText: js.UndefOr[java.lang.String] = js.undefined
+  var refreshText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.data.Store) */
   var store: js.UndefOr[IStore] = js.undefined
   /** [Method] Unbinds the paging toolbar from the specified Ext data Store deprecated
@@ -90,31 +89,31 @@ import scala.scalajs.js.annotation._
 object IPaging {
   @scala.inline
   def apply(
-    IToolbar: typings.extjs.Ext.toolbar.IToolbar = null,
-    afterPageText: java.lang.String = null,
-    beforePageText: java.lang.String = null,
+    IToolbar: IToolbar = null,
+    afterPageText: String = null,
+    beforePageText: String = null,
     bind: /* store */ js.UndefOr[IStore] => Unit = null,
     bindStore: js.UndefOr[js.Any] => Unit = null,
     bindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     displayInfo: js.UndefOr[Boolean] = js.undefined,
-    displayMsg: java.lang.String = null,
+    displayMsg: String = null,
     doRefresh: () => Unit = null,
-    emptyMsg: java.lang.String = null,
-    firstText: java.lang.String = null,
+    emptyMsg: String = null,
+    firstText: String = null,
     getStore: () => IAbstractStore = null,
     getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
     inputItemWidth: Int | Double = null,
-    lastText: java.lang.String = null,
+    lastText: String = null,
     moveFirst: () => Unit = null,
     moveLast: () => Unit = null,
     moveNext: () => Unit = null,
     movePrevious: () => Unit = null,
-    nextText: java.lang.String = null,
+    nextText: String = null,
     onBindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     onUnbindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     prependButtons: js.UndefOr[Boolean] = js.undefined,
-    prevText: java.lang.String = null,
-    refreshText: java.lang.String = null,
+    prevText: String = null,
+    refreshText: String = null,
     store: IStore = null,
     unbind: /* store */ js.UndefOr[IStore] => Unit = null,
     unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null

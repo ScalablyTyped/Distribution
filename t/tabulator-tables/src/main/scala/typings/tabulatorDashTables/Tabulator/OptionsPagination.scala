@@ -2,7 +2,7 @@ package typings.tabulatorDashTables.Tabulator
 
 import typings.std.HTMLElement
 import typings.std.Record
-import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`true`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`true`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.local
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.page
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.remote

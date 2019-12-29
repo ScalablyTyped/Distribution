@@ -1,6 +1,7 @@
 package typings.ember.emberMod.Ember
 
 import org.scalablytyped.runtime.TopLevel
+import typings.atEmberObject.atEmberObjectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,5 @@ trait ViewTargetActionSupport extends js.Object {
 
 @JSImport("ember", "Ember.ViewTargetActionSupport")
 @js.native
-object ViewTargetActionSupport
-  extends TopLevel[Mixin[ViewTargetActionSupport, typings.atEmberObject.atEmberObjectMod.default]]
+object ViewTargetActionSupport extends TopLevel[Mixin[ViewTargetActionSupport, default]]
 

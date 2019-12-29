@@ -17,7 +17,8 @@ class Table protected () extends js.Object {
   var LastCol: Boolean = js.native
   var LastRow: Boolean = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Table_typekey`: Table = js.native
+  @JSName("PowerPoint.Table_typekey")
+  var PowerPointDotTable_typekey: Table = js.native
   val Rows: typings.activexDashPowerpoint.PowerPoint.Rows = js.native
   val Style: TableStyle = js.native
   var TableDirection: PpDirection = js.native

@@ -5,31 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResolvedNumberFormatOptions extends js.Object {
-  var currency: js.UndefOr[java.lang.String] = js.undefined
-  var currencyDisplay: js.UndefOr[java.lang.String] = js.undefined
-  var locale: java.lang.String
+  var currency: js.UndefOr[String] = js.undefined
+  var currencyDisplay: js.UndefOr[String] = js.undefined
+  var locale: String
   var maximumFractionDigits: Double
   var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   var minimumFractionDigits: Double
   var minimumIntegerDigits: Double
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
-  var numberingSystem: java.lang.String
-  var style: java.lang.String
-  var useGrouping: scala.Boolean
+  var numberingSystem: String
+  var style: String
+  var useGrouping: Boolean
 }
 
 object ResolvedNumberFormatOptions {
   @scala.inline
   def apply(
-    locale: java.lang.String,
+    locale: String,
     maximumFractionDigits: Double,
     minimumFractionDigits: Double,
     minimumIntegerDigits: Double,
-    numberingSystem: java.lang.String,
-    style: java.lang.String,
-    useGrouping: scala.Boolean,
-    currency: java.lang.String = null,
-    currencyDisplay: java.lang.String = null,
+    numberingSystem: String,
+    style: String,
+    useGrouping: Boolean,
+    currency: String = null,
+    currencyDisplay: String = null,
     maximumSignificantDigits: Int | Double = null,
     minimumSignificantDigits: Int | Double = null
   ): ResolvedNumberFormatOptions = {

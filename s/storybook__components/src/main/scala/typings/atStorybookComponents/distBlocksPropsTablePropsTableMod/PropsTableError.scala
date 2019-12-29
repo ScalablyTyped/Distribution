@@ -1,8 +1,6 @@
 package typings.atStorybookComponents.distBlocksPropsTablePropsTableMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableError.NO_COMPONENT
-import typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableError.PROPS_UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,13 +3,13 @@ package typings.openlayers
 import typings.openlayers.openlayersMod.OverlayPositioning
 import typings.openlayers.openlayersMod.RasterOperationType
 import typings.openlayers.openlayersMod.RendererType
+import typings.openlayers.openlayersMod.control.ScaleLine.Units
 import typings.openlayers.openlayersMod.format.IGCZ
 import typings.openlayers.openlayersMod.geom.GeometryLayout
 import typings.openlayers.openlayersMod.geom.GeometryType
 import typings.openlayers.openlayersMod.layer.VectorTileRenderType
 import typings.openlayers.openlayersMod.olx.layer.VectorRenderType
 import typings.openlayers.openlayersMod.olx.style.TextPlacement
-import typings.openlayers.openlayersMod.proj.Units
 import typings.openlayers.openlayersMod.source.State
 import typings.openlayers.openlayersMod.source.WMTSRequestEncoding
 import typings.openlayers.openlayersMod.source.wms.ServerType
@@ -99,7 +99,7 @@ object openlayersStrings {
   @js.native
   sealed trait degrees
     extends Units
-       with typings.openlayers.openlayersMod.control.ScaleLine.Units
+       with typings.openlayers.openlayersMod.proj.Units
   
   @js.native
   sealed trait dom extends RendererType
@@ -111,7 +111,8 @@ object openlayersStrings {
   sealed trait fraction extends IconAnchorUnits
   
   @js.native
-  sealed trait ft extends Units
+  sealed trait ft
+    extends typings.openlayers.openlayersMod.proj.Units
   
   @js.native
   sealed trait geoserver extends ServerType
@@ -129,8 +130,7 @@ object openlayersStrings {
        with VectorTileRenderType
   
   @js.native
-  sealed trait imperial
-    extends typings.openlayers.openlayersMod.control.ScaleLine.Units
+  sealed trait imperial extends Units
   
   @js.native
   sealed trait line extends TextPlacement
@@ -139,18 +139,17 @@ object openlayersStrings {
   sealed trait loading extends State
   
   @js.native
-  sealed trait m extends Units
+  sealed trait m
+    extends typings.openlayers.openlayersMod.proj.Units
   
   @js.native
   sealed trait mapserver extends ServerType
   
   @js.native
-  sealed trait metric
-    extends typings.openlayers.openlayersMod.control.ScaleLine.Units
+  sealed trait metric extends Units
   
   @js.native
-  sealed trait nautical
-    extends typings.openlayers.openlayersMod.control.ScaleLine.Units
+  sealed trait nautical extends Units
   
   @js.native
   sealed trait none extends IGCZ
@@ -161,7 +160,7 @@ object openlayersStrings {
   @js.native
   sealed trait pixels
     extends IconAnchorUnits
-       with Units
+       with typings.openlayers.openlayersMod.proj.Units
   
   @js.native
   sealed trait point_ extends TextPlacement
@@ -173,7 +172,8 @@ object openlayersStrings {
   sealed trait ready extends State
   
   @js.native
-  sealed trait `tile-pixels` extends Units
+  sealed trait `tile-pixels`
+    extends typings.openlayers.openlayersMod.proj.Units
   
   @js.native
   sealed trait `top-center` extends OverlayPositioning
@@ -192,11 +192,11 @@ object openlayersStrings {
   sealed trait undefined extends State
   
   @js.native
-  sealed trait us
-    extends typings.openlayers.openlayersMod.control.ScaleLine.Units
+  sealed trait us extends Units
   
   @js.native
-  sealed trait `us-ft` extends Units
+  sealed trait `us-ft`
+    extends typings.openlayers.openlayersMod.proj.Units
   
   @js.native
   sealed trait vector

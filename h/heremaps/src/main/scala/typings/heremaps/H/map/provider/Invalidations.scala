@@ -1,13 +1,6 @@
 package typings.heremaps.H.map.provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.map.provider.Invalidations.Flag
-import typings.heremaps.H.map.provider.Invalidations.Flag.ADD
-import typings.heremaps.H.map.provider.Invalidations.Flag.NONE
-import typings.heremaps.H.map.provider.Invalidations.Flag.REMOVE
-import typings.heremaps.H.map.provider.Invalidations.Flag.SPATIAL
-import typings.heremaps.H.map.provider.Invalidations.Flag.VISUAL
-import typings.heremaps.H.map.provider.Invalidations.Flag.Z_ORDER
 import typings.heremaps.H.map.provider.Invalidations.Mark
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js

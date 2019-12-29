@@ -1,5 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotClient
 
+import typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +44,7 @@ trait DataSourceRow extends js.Object {
   /** Allows you to set the sorting order for the field members.
     * @Default {ej.PivotAnalysis.SortOrder.Ascending}
     */
-  var sortOrder: js.UndefOr[typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder | String] = js.undefined
+  var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
 }
 
 object DataSourceRow {
@@ -59,7 +60,7 @@ object DataSourceRow {
     formatString: String = null,
     isNamedSets: js.UndefOr[Boolean] = js.undefined,
     showSubTotal: js.UndefOr[Boolean] = js.undefined,
-    sortOrder: typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder | String = null
+    sortOrder: SortOrder | String = null
   ): DataSourceRow = {
     val __obj = js.Dynamic.literal()
     if (advancedFilter != null) __obj.updateDynamic("advancedFilter")(advancedFilter.asInstanceOf[js.Any])

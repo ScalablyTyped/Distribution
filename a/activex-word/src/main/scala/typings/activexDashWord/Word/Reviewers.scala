@@ -11,7 +11,8 @@ class Reviewers protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Reviewers_typekey`: Reviewers = js.native
+  @JSName("Word.Reviewers_typekey")
+  var WordDotReviewers_typekey: Reviewers = js.native
   def Item(Index: js.Any): Reviewer = js.native
 }
 

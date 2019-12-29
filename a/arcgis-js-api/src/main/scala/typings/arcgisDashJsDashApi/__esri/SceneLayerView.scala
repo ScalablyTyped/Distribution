@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.__esri
 
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,11 +68,11 @@ trait SceneLayerView extends LayerView {
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryExtent(): IPromise[_] = js.native
-  def queryExtent(query: Query): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties): IPromise[_] = js.native
-  def queryExtent(query: QueryProperties, options: SceneLayerViewQueryExtentOptions): IPromise[_] = js.native
-  def queryExtent(query: Query, options: SceneLayerViewQueryExtentOptions): IPromise[_] = js.native
+  def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: Query): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
+  def queryExtent(query: QueryProperties, options: SceneLayerViewQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(query: Query, options: SceneLayerViewQueryExtentOptions): js.Promise[_] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features in the layer view and returns the number of features that satisfy the query. If query parameters are not provided, the count of all loaded features is returned. Read more about queries in the [Query]() section of the [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) class description.  To query for the count of features directly from a Scene Service rather than those loaded for the current view, you must use the [SceneLayer.queryFeatureCount()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryFeatureCount) method.  For making attribute based queries on a SceneLayerView you need to specify the required fields in the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#outFields) property of the SceneLayer to ensure that attribute values are available on the client for querying. You can use [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#availableFields) to inspect which fields are available on the client.
     * > **Known Limitations**
@@ -92,11 +91,11 @@ trait SceneLayerView extends LayerView {
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatureCount(): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties): IPromise[Double] = js.native
-  def queryFeatureCount(query: QueryProperties, options: SceneLayerViewQueryFeatureCountOptions): IPromise[Double] = js.native
-  def queryFeatureCount(query: Query, options: SceneLayerViewQueryFeatureCountOptions): IPromise[Double] = js.native
+  def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: SceneLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query, options: SceneLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features in the layer view and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). If query parameters are not provided, all loaded features are returned.  To execute a query against all the features in a Scene Service rather than only those loaded for the current view, you must use the [SceneLayer.queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryFeatures) method.  For making attribute based queries on a SceneLayerView you need to specify the required fields in the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#outFields) property of the SceneLayer to ensure that attribute values are available on the client for querying. You can use [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#availableFields) to inspect which fields are available on the client.
     * > **Known Limitations**
@@ -115,11 +114,11 @@ trait SceneLayerView extends LayerView {
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryFeatures(): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: QueryProperties, options: SceneLayerViewQueryFeaturesOptions): IPromise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: SceneLayerViewQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: SceneLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: SceneLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features in the layer view and returns an array of the ObjectIDs of features that satisfy the input query. If query parameters are not provided, the ObjectIDs of all loaded features are returned.  To query for ObjectIDs of features directly from a Scene Service rather than those loaded for the current view, you must use the [SceneLayer.queryObjectIds()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryObjectIds) method.  For making attribute based queries on a SceneLayerView you need to specify the required fields in the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#outFields) property of the SceneLayer to ensure that attribute values are available on the client for querying. You can use [availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#availableFields) to inspect which fields are available on the client.
     * > **Known Limitations**
@@ -138,10 +137,10 @@ trait SceneLayerView extends LayerView {
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def queryObjectIds(): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: QueryProperties, options: SceneLayerViewQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query, options: SceneLayerViewQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: SceneLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query, options: SceneLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }
 

@@ -10,7 +10,7 @@ trait Comments extends Base {
   var contextMenuEvent: Boolean = js.native
   var displayDelay: Double = js.native
   var editor: CommentEditor = js.native
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager = js.native
+  var eventManager: EventManager = js.native
   var mouseDown: Boolean = js.native
   var range: CommentsRangeObject = js.native
   var timer: js.Any = js.native

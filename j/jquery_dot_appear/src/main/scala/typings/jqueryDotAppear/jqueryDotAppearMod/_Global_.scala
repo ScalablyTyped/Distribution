@@ -1,6 +1,5 @@
 package typings.jqueryDotAppear.jqueryDotAppearMod
 
-import typings.jqueryDotAppear.jqueryDotAppearMod._Global_.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

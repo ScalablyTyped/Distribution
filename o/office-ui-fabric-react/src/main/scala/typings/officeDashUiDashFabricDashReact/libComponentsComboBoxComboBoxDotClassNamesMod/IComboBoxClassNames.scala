@@ -15,6 +15,7 @@ trait IComboBoxClassNames extends js.Object {
   var optionsContainer: String
   var optionsContainerWrapper: String
   var root: String
+  var screenReaderText: String
 }
 
 object IComboBoxClassNames {
@@ -29,9 +30,10 @@ object IComboBoxClassNames {
     label: String,
     optionsContainer: String,
     optionsContainerWrapper: String,
-    root: String
+    root: String,
+    screenReaderText: String
   ): IComboBoxClassNames = {
-    val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], optionsContainer = optionsContainer.asInstanceOf[js.Any], optionsContainerWrapper = optionsContainerWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], optionsContainer = optionsContainer.asInstanceOf[js.Any], optionsContainerWrapper = optionsContainerWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], screenReaderText = screenReaderText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IComboBoxClassNames]
   }

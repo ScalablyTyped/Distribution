@@ -5,337 +5,337 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`:-moz-any()`
-  - typings.csstype.csstypeStrings.`:-moz-dir`
-  - typings.csstype.csstypeStrings.`:-webkit-any()`
-  - typings.csstype.csstypeStrings.`::cue`
-  - typings.csstype.csstypeStrings.`::part`
-  - typings.csstype.csstypeStrings.`::slotted`
-  - typings.csstype.csstypeStrings.`:dir`
-  - typings.csstype.csstypeStrings.`:has`
-  - typings.csstype.csstypeStrings.`:host`
-  - typings.csstype.csstypeStrings.`:host-context`
-  - typings.csstype.csstypeStrings.`:is`
-  - typings.csstype.csstypeStrings.`:lang`
-  - typings.csstype.csstypeStrings.`:matches()`
-  - typings.csstype.csstypeStrings.`:not`
-  - typings.csstype.csstypeStrings.`:nth-child`
-  - typings.csstype.csstypeStrings.`:nth-last-child`
-  - typings.csstype.csstypeStrings.`:nth-last-of-type`
-  - typings.csstype.csstypeStrings.`:nth-of-type`
-  - typings.csstype.csstypeStrings.`:where`
-  - typings.csstype.csstypeStrings.`:-moz-any-link`
-  - typings.csstype.csstypeStrings.`:-moz-focusring`
-  - typings.csstype.csstypeStrings.`:-moz-full-screen`
-  - typings.csstype.csstypeStrings.`:-moz-placeholder`
-  - typings.csstype.csstypeStrings.`:-moz-read-only`
-  - typings.csstype.csstypeStrings.`:-moz-read-write`
-  - typings.csstype.csstypeStrings.`:-ms-fullscreen`
-  - typings.csstype.csstypeStrings.`:-ms-input-placeholder`
-  - typings.csstype.csstypeStrings.`:-webkit-any-link`
-  - typings.csstype.csstypeStrings.`:-webkit-full-screen`
-  - typings.csstype.csstypeStrings.`::-moz-placeholder`
-  - typings.csstype.csstypeStrings.`::-moz-progress-bar`
-  - typings.csstype.csstypeStrings.`::-moz-range-progress`
-  - typings.csstype.csstypeStrings.`::-moz-range-thumb`
-  - typings.csstype.csstypeStrings.`::-moz-range-track`
-  - typings.csstype.csstypeStrings.`::-moz-selection`
-  - typings.csstype.csstypeStrings.`::-ms-backdrop`
-  - typings.csstype.csstypeStrings.`::-ms-browse`
-  - typings.csstype.csstypeStrings.`::-ms-check`
-  - typings.csstype.csstypeStrings.`::-ms-clear`
-  - typings.csstype.csstypeStrings.`::-ms-fill`
-  - typings.csstype.csstypeStrings.`::-ms-fill-lower`
-  - typings.csstype.csstypeStrings.`::-ms-fill-upper`
-  - typings.csstype.csstypeStrings.`::-ms-input-placeholder`
-  - typings.csstype.csstypeStrings.`::-ms-reveal`
-  - typings.csstype.csstypeStrings.`::-ms-thumb`
-  - typings.csstype.csstypeStrings.`::-ms-ticks-after`
-  - typings.csstype.csstypeStrings.`::-ms-ticks-before`
-  - typings.csstype.csstypeStrings.`::-ms-tooltip`
-  - typings.csstype.csstypeStrings.`::-ms-track`
-  - typings.csstype.csstypeStrings.`::-ms-value`
-  - typings.csstype.csstypeStrings.`::-webkit-backdrop`
-  - typings.csstype.csstypeStrings.`::-webkit-input-placeholder`
-  - typings.csstype.csstypeStrings.`::-webkit-progress-bar`
-  - typings.csstype.csstypeStrings.`::-webkit-progress-inner-value`
-  - typings.csstype.csstypeStrings.`::-webkit-progress-value`
-  - typings.csstype.csstypeStrings.`::-webkit-slider-runnable-track`
-  - typings.csstype.csstypeStrings.`::-webkit-slider-thumb`
-  - typings.csstype.csstypeStrings.`::after`
-  - typings.csstype.csstypeStrings.`::backdrop`
-  - typings.csstype.csstypeStrings.`::before`
-  - typings.csstype.csstypeStrings.`::first-letter`
-  - typings.csstype.csstypeStrings.`::first-line`
-  - typings.csstype.csstypeStrings.`::grammar-error`
-  - typings.csstype.csstypeStrings.`::marker`
-  - typings.csstype.csstypeStrings.`::placeholder`
-  - typings.csstype.csstypeStrings.`::selection`
-  - typings.csstype.csstypeStrings.`::spelling-error`
-  - typings.csstype.csstypeStrings.`:active`
-  - typings.csstype.csstypeStrings.`:after`
-  - typings.csstype.csstypeStrings.`:any-link`
-  - typings.csstype.csstypeStrings.`:before`
-  - typings.csstype.csstypeStrings.`:blank`
-  - typings.csstype.csstypeStrings.`:checked`
-  - typings.csstype.csstypeStrings.`:default`
-  - typings.csstype.csstypeStrings.`:defined`
-  - typings.csstype.csstypeStrings.`:disabled`
-  - typings.csstype.csstypeStrings.`:empty`
-  - typings.csstype.csstypeStrings.`:enabled`
-  - typings.csstype.csstypeStrings.`:first`
-  - typings.csstype.csstypeStrings.`:first-child`
-  - typings.csstype.csstypeStrings.`:first-letter`
-  - typings.csstype.csstypeStrings.`:first-line`
-  - typings.csstype.csstypeStrings.`:first-of-type`
-  - typings.csstype.csstypeStrings.`:focus`
-  - typings.csstype.csstypeStrings.`:focus-visible`
-  - typings.csstype.csstypeStrings.`:focus-within`
-  - typings.csstype.csstypeStrings.`:fullscreen`
-  - typings.csstype.csstypeStrings.`:hover`
-  - typings.csstype.csstypeStrings.`:in-range`
-  - typings.csstype.csstypeStrings.`:indeterminate`
-  - typings.csstype.csstypeStrings.`:invalid`
-  - typings.csstype.csstypeStrings.`:last-child`
-  - typings.csstype.csstypeStrings.`:last-of-type`
-  - typings.csstype.csstypeStrings.`:left`
-  - typings.csstype.csstypeStrings.`:link`
-  - typings.csstype.csstypeStrings.`:only-child`
-  - typings.csstype.csstypeStrings.`:only-of-type`
-  - typings.csstype.csstypeStrings.`:optional`
-  - typings.csstype.csstypeStrings.`:out-of-range`
-  - typings.csstype.csstypeStrings.`:placeholder-shown`
-  - typings.csstype.csstypeStrings.`:read-only`
-  - typings.csstype.csstypeStrings.`:read-write`
-  - typings.csstype.csstypeStrings.`:required`
-  - typings.csstype.csstypeStrings.`:right`
-  - typings.csstype.csstypeStrings.`:root`
-  - typings.csstype.csstypeStrings.`:scope`
-  - typings.csstype.csstypeStrings.`:target`
-  - typings.csstype.csstypeStrings.`:valid`
-  - typings.csstype.csstypeStrings.`:visited`
+  - typings.csstype.csstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis`
+  - typings.csstype.csstypeStrings.`Colon-moz-dir`
+  - typings.csstype.csstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`
+  - typings.csstype.csstypeStrings.ColonColoncue
+  - typings.csstype.csstypeStrings.ColonColonpart
+  - typings.csstype.csstypeStrings.ColonColonslotted
+  - typings.csstype.csstypeStrings.Colondir
+  - typings.csstype.csstypeStrings.Colonhas
+  - typings.csstype.csstypeStrings.Colonhost
+  - typings.csstype.csstypeStrings.`Colonhost-context`
+  - typings.csstype.csstypeStrings.Colonis
+  - typings.csstype.csstypeStrings.Colonlang
+  - typings.csstype.csstypeStrings.ColonmatchesLeftparenthesisRightparenthesis
+  - typings.csstype.csstypeStrings.Colonnot
+  - typings.csstype.csstypeStrings.`Colonnth-child`
+  - typings.csstype.csstypeStrings.`Colonnth-last-child`
+  - typings.csstype.csstypeStrings.`Colonnth-last-of-type`
+  - typings.csstype.csstypeStrings.`Colonnth-of-type`
+  - typings.csstype.csstypeStrings.Colonwhere
+  - typings.csstype.csstypeStrings.`Colon-moz-any-link`
+  - typings.csstype.csstypeStrings.`Colon-moz-focusring`
+  - typings.csstype.csstypeStrings.`Colon-moz-full-screen`
+  - typings.csstype.csstypeStrings.`Colon-moz-placeholder`
+  - typings.csstype.csstypeStrings.`Colon-moz-read-only`
+  - typings.csstype.csstypeStrings.`Colon-moz-read-write`
+  - typings.csstype.csstypeStrings.`Colon-ms-fullscreen`
+  - typings.csstype.csstypeStrings.`Colon-ms-input-placeholder`
+  - typings.csstype.csstypeStrings.`Colon-webkit-any-link`
+  - typings.csstype.csstypeStrings.`Colon-webkit-full-screen`
+  - typings.csstype.csstypeStrings.`ColonColon-moz-placeholder`
+  - typings.csstype.csstypeStrings.`ColonColon-moz-progress-bar`
+  - typings.csstype.csstypeStrings.`ColonColon-moz-range-progress`
+  - typings.csstype.csstypeStrings.`ColonColon-moz-range-thumb`
+  - typings.csstype.csstypeStrings.`ColonColon-moz-range-track`
+  - typings.csstype.csstypeStrings.`ColonColon-moz-selection`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-backdrop`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-browse`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-check`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-clear`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-fill`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-fill-lower`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-fill-upper`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-input-placeholder`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-reveal`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-thumb`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-ticks-after`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-ticks-before`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-tooltip`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-track`
+  - typings.csstype.csstypeStrings.`ColonColon-ms-value`
+  - typings.csstype.csstypeStrings.`ColonColon-webkit-backdrop`
+  - typings.csstype.csstypeStrings.`ColonColon-webkit-input-placeholder`
+  - typings.csstype.csstypeStrings.`ColonColon-webkit-progress-bar`
+  - typings.csstype.csstypeStrings.`ColonColon-webkit-progress-inner-value`
+  - typings.csstype.csstypeStrings.`ColonColon-webkit-progress-value`
+  - typings.csstype.csstypeStrings.`ColonColon-webkit-slider-runnable-track`
+  - typings.csstype.csstypeStrings.`ColonColon-webkit-slider-thumb`
+  - typings.csstype.csstypeStrings.ColonColonafter
+  - typings.csstype.csstypeStrings.ColonColonbackdrop
+  - typings.csstype.csstypeStrings.ColonColonbefore
+  - typings.csstype.csstypeStrings.`ColonColonfirst-letter`
+  - typings.csstype.csstypeStrings.`ColonColonfirst-line`
+  - typings.csstype.csstypeStrings.`ColonColongrammar-error`
+  - typings.csstype.csstypeStrings.ColonColonmarker
+  - typings.csstype.csstypeStrings.ColonColonplaceholder
+  - typings.csstype.csstypeStrings.ColonColonselection
+  - typings.csstype.csstypeStrings.`ColonColonspelling-error`
+  - typings.csstype.csstypeStrings.Colonactive
+  - typings.csstype.csstypeStrings.Colonafter
+  - typings.csstype.csstypeStrings.`Colonany-link`
+  - typings.csstype.csstypeStrings.Colonbefore
+  - typings.csstype.csstypeStrings.Colonblank
+  - typings.csstype.csstypeStrings.Colonchecked
+  - typings.csstype.csstypeStrings.Colondefault
+  - typings.csstype.csstypeStrings.Colondefined
+  - typings.csstype.csstypeStrings.Colondisabled
+  - typings.csstype.csstypeStrings.Colonempty
+  - typings.csstype.csstypeStrings.Colonenabled
+  - typings.csstype.csstypeStrings.Colonfirst
+  - typings.csstype.csstypeStrings.`Colonfirst-child`
+  - typings.csstype.csstypeStrings.`Colonfirst-letter`
+  - typings.csstype.csstypeStrings.`Colonfirst-line`
+  - typings.csstype.csstypeStrings.`Colonfirst-of-type`
+  - typings.csstype.csstypeStrings.Colonfocus
+  - typings.csstype.csstypeStrings.`Colonfocus-visible`
+  - typings.csstype.csstypeStrings.`Colonfocus-within`
+  - typings.csstype.csstypeStrings.Colonfullscreen
+  - typings.csstype.csstypeStrings.Colonhover
+  - typings.csstype.csstypeStrings.`Colonin-range`
+  - typings.csstype.csstypeStrings.Colonindeterminate
+  - typings.csstype.csstypeStrings.Coloninvalid
+  - typings.csstype.csstypeStrings.`Colonlast-child`
+  - typings.csstype.csstypeStrings.`Colonlast-of-type`
+  - typings.csstype.csstypeStrings.Colonleft
+  - typings.csstype.csstypeStrings.Colonlink
+  - typings.csstype.csstypeStrings.`Colononly-child`
+  - typings.csstype.csstypeStrings.`Colononly-of-type`
+  - typings.csstype.csstypeStrings.Colonoptional
+  - typings.csstype.csstypeStrings.`Colonout-of-range`
+  - typings.csstype.csstypeStrings.`Colonplaceholder-shown`
+  - typings.csstype.csstypeStrings.`Colonread-only`
+  - typings.csstype.csstypeStrings.`Colonread-write`
+  - typings.csstype.csstypeStrings.Colonrequired
+  - typings.csstype.csstypeStrings.Colonright
+  - typings.csstype.csstypeStrings.Colonroot
+  - typings.csstype.csstypeStrings.Colonscope
+  - typings.csstype.csstypeStrings.Colontarget
+  - typings.csstype.csstypeStrings.Colonvalid
+  - typings.csstype.csstypeStrings.Colonvisited
 */
 trait Pseudos extends js.Object
 
 object Pseudos {
   @scala.inline
-  def `:-moz-any()`: typings.csstype.csstypeStrings.`:-moz-any()` = this.cast(":-moz-any()")
+  def `Colon-moz-any-link`: typings.csstype.csstypeStrings.`Colon-moz-any-link` = this.cast(":-moz-any-link")
   @scala.inline
-  def `:-moz-any-link`: typings.csstype.csstypeStrings.`:-moz-any-link` = this.cast(":-moz-any-link")
+  def `Colon-moz-anyLeftparenthesisRightparenthesis`: typings.csstype.csstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis` = this.cast(":-moz-any()")
   @scala.inline
-  def `:-moz-dir`: typings.csstype.csstypeStrings.`:-moz-dir` = this.cast(":-moz-dir")
+  def `Colon-moz-dir`: typings.csstype.csstypeStrings.`Colon-moz-dir` = this.cast(":-moz-dir")
   @scala.inline
-  def `:-moz-focusring`: typings.csstype.csstypeStrings.`:-moz-focusring` = this.cast(":-moz-focusring")
+  def `Colon-moz-focusring`: typings.csstype.csstypeStrings.`Colon-moz-focusring` = this.cast(":-moz-focusring")
   @scala.inline
-  def `:-moz-full-screen`: typings.csstype.csstypeStrings.`:-moz-full-screen` = this.cast(":-moz-full-screen")
+  def `Colon-moz-full-screen`: typings.csstype.csstypeStrings.`Colon-moz-full-screen` = this.cast(":-moz-full-screen")
   @scala.inline
-  def `:-moz-placeholder`: typings.csstype.csstypeStrings.`:-moz-placeholder` = this.cast(":-moz-placeholder")
+  def `Colon-moz-placeholder`: typings.csstype.csstypeStrings.`Colon-moz-placeholder` = this.cast(":-moz-placeholder")
   @scala.inline
-  def `:-moz-read-only`: typings.csstype.csstypeStrings.`:-moz-read-only` = this.cast(":-moz-read-only")
+  def `Colon-moz-read-only`: typings.csstype.csstypeStrings.`Colon-moz-read-only` = this.cast(":-moz-read-only")
   @scala.inline
-  def `:-moz-read-write`: typings.csstype.csstypeStrings.`:-moz-read-write` = this.cast(":-moz-read-write")
+  def `Colon-moz-read-write`: typings.csstype.csstypeStrings.`Colon-moz-read-write` = this.cast(":-moz-read-write")
   @scala.inline
-  def `:-ms-fullscreen`: typings.csstype.csstypeStrings.`:-ms-fullscreen` = this.cast(":-ms-fullscreen")
+  def `Colon-ms-fullscreen`: typings.csstype.csstypeStrings.`Colon-ms-fullscreen` = this.cast(":-ms-fullscreen")
   @scala.inline
-  def `:-ms-input-placeholder`: typings.csstype.csstypeStrings.`:-ms-input-placeholder` = this.cast(":-ms-input-placeholder")
+  def `Colon-ms-input-placeholder`: typings.csstype.csstypeStrings.`Colon-ms-input-placeholder` = this.cast(":-ms-input-placeholder")
   @scala.inline
-  def `:-webkit-any()`: typings.csstype.csstypeStrings.`:-webkit-any()` = this.cast(":-webkit-any()")
+  def `Colon-webkit-any-link`: typings.csstype.csstypeStrings.`Colon-webkit-any-link` = this.cast(":-webkit-any-link")
   @scala.inline
-  def `:-webkit-any-link`: typings.csstype.csstypeStrings.`:-webkit-any-link` = this.cast(":-webkit-any-link")
+  def `Colon-webkit-anyLeftparenthesisRightparenthesis`: typings.csstype.csstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis` = this.cast(":-webkit-any()")
   @scala.inline
-  def `:-webkit-full-screen`: typings.csstype.csstypeStrings.`:-webkit-full-screen` = this.cast(":-webkit-full-screen")
+  def `Colon-webkit-full-screen`: typings.csstype.csstypeStrings.`Colon-webkit-full-screen` = this.cast(":-webkit-full-screen")
   @scala.inline
-  def `::-moz-placeholder`: typings.csstype.csstypeStrings.`::-moz-placeholder` = this.cast("::-moz-placeholder")
+  def `ColonColon-moz-placeholder`: typings.csstype.csstypeStrings.`ColonColon-moz-placeholder` = this.cast("::-moz-placeholder")
   @scala.inline
-  def `::-moz-progress-bar`: typings.csstype.csstypeStrings.`::-moz-progress-bar` = this.cast("::-moz-progress-bar")
+  def `ColonColon-moz-progress-bar`: typings.csstype.csstypeStrings.`ColonColon-moz-progress-bar` = this.cast("::-moz-progress-bar")
   @scala.inline
-  def `::-moz-range-progress`: typings.csstype.csstypeStrings.`::-moz-range-progress` = this.cast("::-moz-range-progress")
+  def `ColonColon-moz-range-progress`: typings.csstype.csstypeStrings.`ColonColon-moz-range-progress` = this.cast("::-moz-range-progress")
   @scala.inline
-  def `::-moz-range-thumb`: typings.csstype.csstypeStrings.`::-moz-range-thumb` = this.cast("::-moz-range-thumb")
+  def `ColonColon-moz-range-thumb`: typings.csstype.csstypeStrings.`ColonColon-moz-range-thumb` = this.cast("::-moz-range-thumb")
   @scala.inline
-  def `::-moz-range-track`: typings.csstype.csstypeStrings.`::-moz-range-track` = this.cast("::-moz-range-track")
+  def `ColonColon-moz-range-track`: typings.csstype.csstypeStrings.`ColonColon-moz-range-track` = this.cast("::-moz-range-track")
   @scala.inline
-  def `::-moz-selection`: typings.csstype.csstypeStrings.`::-moz-selection` = this.cast("::-moz-selection")
+  def `ColonColon-moz-selection`: typings.csstype.csstypeStrings.`ColonColon-moz-selection` = this.cast("::-moz-selection")
   @scala.inline
-  def `::-ms-backdrop`: typings.csstype.csstypeStrings.`::-ms-backdrop` = this.cast("::-ms-backdrop")
+  def `ColonColon-ms-backdrop`: typings.csstype.csstypeStrings.`ColonColon-ms-backdrop` = this.cast("::-ms-backdrop")
   @scala.inline
-  def `::-ms-browse`: typings.csstype.csstypeStrings.`::-ms-browse` = this.cast("::-ms-browse")
+  def `ColonColon-ms-browse`: typings.csstype.csstypeStrings.`ColonColon-ms-browse` = this.cast("::-ms-browse")
   @scala.inline
-  def `::-ms-check`: typings.csstype.csstypeStrings.`::-ms-check` = this.cast("::-ms-check")
+  def `ColonColon-ms-check`: typings.csstype.csstypeStrings.`ColonColon-ms-check` = this.cast("::-ms-check")
   @scala.inline
-  def `::-ms-clear`: typings.csstype.csstypeStrings.`::-ms-clear` = this.cast("::-ms-clear")
+  def `ColonColon-ms-clear`: typings.csstype.csstypeStrings.`ColonColon-ms-clear` = this.cast("::-ms-clear")
   @scala.inline
-  def `::-ms-fill`: typings.csstype.csstypeStrings.`::-ms-fill` = this.cast("::-ms-fill")
+  def `ColonColon-ms-fill`: typings.csstype.csstypeStrings.`ColonColon-ms-fill` = this.cast("::-ms-fill")
   @scala.inline
-  def `::-ms-fill-lower`: typings.csstype.csstypeStrings.`::-ms-fill-lower` = this.cast("::-ms-fill-lower")
+  def `ColonColon-ms-fill-lower`: typings.csstype.csstypeStrings.`ColonColon-ms-fill-lower` = this.cast("::-ms-fill-lower")
   @scala.inline
-  def `::-ms-fill-upper`: typings.csstype.csstypeStrings.`::-ms-fill-upper` = this.cast("::-ms-fill-upper")
+  def `ColonColon-ms-fill-upper`: typings.csstype.csstypeStrings.`ColonColon-ms-fill-upper` = this.cast("::-ms-fill-upper")
   @scala.inline
-  def `::-ms-input-placeholder`: typings.csstype.csstypeStrings.`::-ms-input-placeholder` = this.cast("::-ms-input-placeholder")
+  def `ColonColon-ms-input-placeholder`: typings.csstype.csstypeStrings.`ColonColon-ms-input-placeholder` = this.cast("::-ms-input-placeholder")
   @scala.inline
-  def `::-ms-reveal`: typings.csstype.csstypeStrings.`::-ms-reveal` = this.cast("::-ms-reveal")
+  def `ColonColon-ms-reveal`: typings.csstype.csstypeStrings.`ColonColon-ms-reveal` = this.cast("::-ms-reveal")
   @scala.inline
-  def `::-ms-thumb`: typings.csstype.csstypeStrings.`::-ms-thumb` = this.cast("::-ms-thumb")
+  def `ColonColon-ms-thumb`: typings.csstype.csstypeStrings.`ColonColon-ms-thumb` = this.cast("::-ms-thumb")
   @scala.inline
-  def `::-ms-ticks-after`: typings.csstype.csstypeStrings.`::-ms-ticks-after` = this.cast("::-ms-ticks-after")
+  def `ColonColon-ms-ticks-after`: typings.csstype.csstypeStrings.`ColonColon-ms-ticks-after` = this.cast("::-ms-ticks-after")
   @scala.inline
-  def `::-ms-ticks-before`: typings.csstype.csstypeStrings.`::-ms-ticks-before` = this.cast("::-ms-ticks-before")
+  def `ColonColon-ms-ticks-before`: typings.csstype.csstypeStrings.`ColonColon-ms-ticks-before` = this.cast("::-ms-ticks-before")
   @scala.inline
-  def `::-ms-tooltip`: typings.csstype.csstypeStrings.`::-ms-tooltip` = this.cast("::-ms-tooltip")
+  def `ColonColon-ms-tooltip`: typings.csstype.csstypeStrings.`ColonColon-ms-tooltip` = this.cast("::-ms-tooltip")
   @scala.inline
-  def `::-ms-track`: typings.csstype.csstypeStrings.`::-ms-track` = this.cast("::-ms-track")
+  def `ColonColon-ms-track`: typings.csstype.csstypeStrings.`ColonColon-ms-track` = this.cast("::-ms-track")
   @scala.inline
-  def `::-ms-value`: typings.csstype.csstypeStrings.`::-ms-value` = this.cast("::-ms-value")
+  def `ColonColon-ms-value`: typings.csstype.csstypeStrings.`ColonColon-ms-value` = this.cast("::-ms-value")
   @scala.inline
-  def `::-webkit-backdrop`: typings.csstype.csstypeStrings.`::-webkit-backdrop` = this.cast("::-webkit-backdrop")
+  def `ColonColon-webkit-backdrop`: typings.csstype.csstypeStrings.`ColonColon-webkit-backdrop` = this.cast("::-webkit-backdrop")
   @scala.inline
-  def `::-webkit-input-placeholder`: typings.csstype.csstypeStrings.`::-webkit-input-placeholder` = this.cast("::-webkit-input-placeholder")
+  def `ColonColon-webkit-input-placeholder`: typings.csstype.csstypeStrings.`ColonColon-webkit-input-placeholder` = this.cast("::-webkit-input-placeholder")
   @scala.inline
-  def `::-webkit-progress-bar`: typings.csstype.csstypeStrings.`::-webkit-progress-bar` = this.cast("::-webkit-progress-bar")
+  def `ColonColon-webkit-progress-bar`: typings.csstype.csstypeStrings.`ColonColon-webkit-progress-bar` = this.cast("::-webkit-progress-bar")
   @scala.inline
-  def `::-webkit-progress-inner-value`: typings.csstype.csstypeStrings.`::-webkit-progress-inner-value` = this.cast("::-webkit-progress-inner-value")
+  def `ColonColon-webkit-progress-inner-value`: typings.csstype.csstypeStrings.`ColonColon-webkit-progress-inner-value` = this.cast("::-webkit-progress-inner-value")
   @scala.inline
-  def `::-webkit-progress-value`: typings.csstype.csstypeStrings.`::-webkit-progress-value` = this.cast("::-webkit-progress-value")
+  def `ColonColon-webkit-progress-value`: typings.csstype.csstypeStrings.`ColonColon-webkit-progress-value` = this.cast("::-webkit-progress-value")
   @scala.inline
-  def `::-webkit-slider-runnable-track`: typings.csstype.csstypeStrings.`::-webkit-slider-runnable-track` = this.cast("::-webkit-slider-runnable-track")
+  def `ColonColon-webkit-slider-runnable-track`: typings.csstype.csstypeStrings.`ColonColon-webkit-slider-runnable-track` = this.cast("::-webkit-slider-runnable-track")
   @scala.inline
-  def `::-webkit-slider-thumb`: typings.csstype.csstypeStrings.`::-webkit-slider-thumb` = this.cast("::-webkit-slider-thumb")
+  def `ColonColon-webkit-slider-thumb`: typings.csstype.csstypeStrings.`ColonColon-webkit-slider-thumb` = this.cast("::-webkit-slider-thumb")
   @scala.inline
-  def `::after`: typings.csstype.csstypeStrings.`::after` = this.cast("::after")
+  def ColonColonafter: typings.csstype.csstypeStrings.ColonColonafter = this.cast("::after")
   @scala.inline
-  def `::backdrop`: typings.csstype.csstypeStrings.`::backdrop` = this.cast("::backdrop")
+  def ColonColonbackdrop: typings.csstype.csstypeStrings.ColonColonbackdrop = this.cast("::backdrop")
   @scala.inline
-  def `::before`: typings.csstype.csstypeStrings.`::before` = this.cast("::before")
+  def ColonColonbefore: typings.csstype.csstypeStrings.ColonColonbefore = this.cast("::before")
   @scala.inline
-  def `::cue`: typings.csstype.csstypeStrings.`::cue` = this.cast("::cue")
+  def ColonColoncue: typings.csstype.csstypeStrings.ColonColoncue = this.cast("::cue")
   @scala.inline
-  def `::first-letter`: typings.csstype.csstypeStrings.`::first-letter` = this.cast("::first-letter")
+  def `ColonColonfirst-letter`: typings.csstype.csstypeStrings.`ColonColonfirst-letter` = this.cast("::first-letter")
   @scala.inline
-  def `::first-line`: typings.csstype.csstypeStrings.`::first-line` = this.cast("::first-line")
+  def `ColonColonfirst-line`: typings.csstype.csstypeStrings.`ColonColonfirst-line` = this.cast("::first-line")
   @scala.inline
-  def `::grammar-error`: typings.csstype.csstypeStrings.`::grammar-error` = this.cast("::grammar-error")
+  def `ColonColongrammar-error`: typings.csstype.csstypeStrings.`ColonColongrammar-error` = this.cast("::grammar-error")
   @scala.inline
-  def `::marker`: typings.csstype.csstypeStrings.`::marker` = this.cast("::marker")
+  def ColonColonmarker: typings.csstype.csstypeStrings.ColonColonmarker = this.cast("::marker")
   @scala.inline
-  def `::part`: typings.csstype.csstypeStrings.`::part` = this.cast("::part")
+  def ColonColonpart: typings.csstype.csstypeStrings.ColonColonpart = this.cast("::part")
   @scala.inline
-  def `::placeholder`: typings.csstype.csstypeStrings.`::placeholder` = this.cast("::placeholder")
+  def ColonColonplaceholder: typings.csstype.csstypeStrings.ColonColonplaceholder = this.cast("::placeholder")
   @scala.inline
-  def `::selection`: typings.csstype.csstypeStrings.`::selection` = this.cast("::selection")
+  def ColonColonselection: typings.csstype.csstypeStrings.ColonColonselection = this.cast("::selection")
   @scala.inline
-  def `::slotted`: typings.csstype.csstypeStrings.`::slotted` = this.cast("::slotted")
+  def ColonColonslotted: typings.csstype.csstypeStrings.ColonColonslotted = this.cast("::slotted")
   @scala.inline
-  def `::spelling-error`: typings.csstype.csstypeStrings.`::spelling-error` = this.cast("::spelling-error")
+  def `ColonColonspelling-error`: typings.csstype.csstypeStrings.`ColonColonspelling-error` = this.cast("::spelling-error")
   @scala.inline
-  def `:active`: typings.csstype.csstypeStrings.`:active` = this.cast(":active")
+  def Colonactive: typings.csstype.csstypeStrings.Colonactive = this.cast(":active")
   @scala.inline
-  def `:after`: typings.csstype.csstypeStrings.`:after` = this.cast(":after")
+  def Colonafter: typings.csstype.csstypeStrings.Colonafter = this.cast(":after")
   @scala.inline
-  def `:any-link`: typings.csstype.csstypeStrings.`:any-link` = this.cast(":any-link")
+  def `Colonany-link`: typings.csstype.csstypeStrings.`Colonany-link` = this.cast(":any-link")
   @scala.inline
-  def `:before`: typings.csstype.csstypeStrings.`:before` = this.cast(":before")
+  def Colonbefore: typings.csstype.csstypeStrings.Colonbefore = this.cast(":before")
   @scala.inline
-  def `:blank`: typings.csstype.csstypeStrings.`:blank` = this.cast(":blank")
+  def Colonblank: typings.csstype.csstypeStrings.Colonblank = this.cast(":blank")
   @scala.inline
-  def `:checked`: typings.csstype.csstypeStrings.`:checked` = this.cast(":checked")
+  def Colonchecked: typings.csstype.csstypeStrings.Colonchecked = this.cast(":checked")
   @scala.inline
-  def `:default`: typings.csstype.csstypeStrings.`:default` = this.cast(":default")
+  def Colondefault: typings.csstype.csstypeStrings.Colondefault = this.cast(":default")
   @scala.inline
-  def `:defined`: typings.csstype.csstypeStrings.`:defined` = this.cast(":defined")
+  def Colondefined: typings.csstype.csstypeStrings.Colondefined = this.cast(":defined")
   @scala.inline
-  def `:dir`: typings.csstype.csstypeStrings.`:dir` = this.cast(":dir")
+  def Colondir: typings.csstype.csstypeStrings.Colondir = this.cast(":dir")
   @scala.inline
-  def `:disabled`: typings.csstype.csstypeStrings.`:disabled` = this.cast(":disabled")
+  def Colondisabled: typings.csstype.csstypeStrings.Colondisabled = this.cast(":disabled")
   @scala.inline
-  def `:empty`: typings.csstype.csstypeStrings.`:empty` = this.cast(":empty")
+  def Colonempty: typings.csstype.csstypeStrings.Colonempty = this.cast(":empty")
   @scala.inline
-  def `:enabled`: typings.csstype.csstypeStrings.`:enabled` = this.cast(":enabled")
+  def Colonenabled: typings.csstype.csstypeStrings.Colonenabled = this.cast(":enabled")
   @scala.inline
-  def `:first`: typings.csstype.csstypeStrings.`:first` = this.cast(":first")
+  def Colonfirst: typings.csstype.csstypeStrings.Colonfirst = this.cast(":first")
   @scala.inline
-  def `:first-child`: typings.csstype.csstypeStrings.`:first-child` = this.cast(":first-child")
+  def `Colonfirst-child`: typings.csstype.csstypeStrings.`Colonfirst-child` = this.cast(":first-child")
   @scala.inline
-  def `:first-letter`: typings.csstype.csstypeStrings.`:first-letter` = this.cast(":first-letter")
+  def `Colonfirst-letter`: typings.csstype.csstypeStrings.`Colonfirst-letter` = this.cast(":first-letter")
   @scala.inline
-  def `:first-line`: typings.csstype.csstypeStrings.`:first-line` = this.cast(":first-line")
+  def `Colonfirst-line`: typings.csstype.csstypeStrings.`Colonfirst-line` = this.cast(":first-line")
   @scala.inline
-  def `:first-of-type`: typings.csstype.csstypeStrings.`:first-of-type` = this.cast(":first-of-type")
+  def `Colonfirst-of-type`: typings.csstype.csstypeStrings.`Colonfirst-of-type` = this.cast(":first-of-type")
   @scala.inline
-  def `:focus`: typings.csstype.csstypeStrings.`:focus` = this.cast(":focus")
+  def Colonfocus: typings.csstype.csstypeStrings.Colonfocus = this.cast(":focus")
   @scala.inline
-  def `:focus-visible`: typings.csstype.csstypeStrings.`:focus-visible` = this.cast(":focus-visible")
+  def `Colonfocus-visible`: typings.csstype.csstypeStrings.`Colonfocus-visible` = this.cast(":focus-visible")
   @scala.inline
-  def `:focus-within`: typings.csstype.csstypeStrings.`:focus-within` = this.cast(":focus-within")
+  def `Colonfocus-within`: typings.csstype.csstypeStrings.`Colonfocus-within` = this.cast(":focus-within")
   @scala.inline
-  def `:fullscreen`: typings.csstype.csstypeStrings.`:fullscreen` = this.cast(":fullscreen")
+  def Colonfullscreen: typings.csstype.csstypeStrings.Colonfullscreen = this.cast(":fullscreen")
   @scala.inline
-  def `:has`: typings.csstype.csstypeStrings.`:has` = this.cast(":has")
+  def Colonhas: typings.csstype.csstypeStrings.Colonhas = this.cast(":has")
   @scala.inline
-  def `:host`: typings.csstype.csstypeStrings.`:host` = this.cast(":host")
+  def Colonhost: typings.csstype.csstypeStrings.Colonhost = this.cast(":host")
   @scala.inline
-  def `:host-context`: typings.csstype.csstypeStrings.`:host-context` = this.cast(":host-context")
+  def `Colonhost-context`: typings.csstype.csstypeStrings.`Colonhost-context` = this.cast(":host-context")
   @scala.inline
-  def `:hover`: typings.csstype.csstypeStrings.`:hover` = this.cast(":hover")
+  def Colonhover: typings.csstype.csstypeStrings.Colonhover = this.cast(":hover")
   @scala.inline
-  def `:in-range`: typings.csstype.csstypeStrings.`:in-range` = this.cast(":in-range")
+  def `Colonin-range`: typings.csstype.csstypeStrings.`Colonin-range` = this.cast(":in-range")
   @scala.inline
-  def `:indeterminate`: typings.csstype.csstypeStrings.`:indeterminate` = this.cast(":indeterminate")
+  def Colonindeterminate: typings.csstype.csstypeStrings.Colonindeterminate = this.cast(":indeterminate")
   @scala.inline
-  def `:invalid`: typings.csstype.csstypeStrings.`:invalid` = this.cast(":invalid")
+  def Coloninvalid: typings.csstype.csstypeStrings.Coloninvalid = this.cast(":invalid")
   @scala.inline
-  def `:is`: typings.csstype.csstypeStrings.`:is` = this.cast(":is")
+  def Colonis: typings.csstype.csstypeStrings.Colonis = this.cast(":is")
   @scala.inline
-  def `:lang`: typings.csstype.csstypeStrings.`:lang` = this.cast(":lang")
+  def Colonlang: typings.csstype.csstypeStrings.Colonlang = this.cast(":lang")
   @scala.inline
-  def `:last-child`: typings.csstype.csstypeStrings.`:last-child` = this.cast(":last-child")
+  def `Colonlast-child`: typings.csstype.csstypeStrings.`Colonlast-child` = this.cast(":last-child")
   @scala.inline
-  def `:last-of-type`: typings.csstype.csstypeStrings.`:last-of-type` = this.cast(":last-of-type")
+  def `Colonlast-of-type`: typings.csstype.csstypeStrings.`Colonlast-of-type` = this.cast(":last-of-type")
   @scala.inline
-  def `:left`: typings.csstype.csstypeStrings.`:left` = this.cast(":left")
+  def Colonleft: typings.csstype.csstypeStrings.Colonleft = this.cast(":left")
   @scala.inline
-  def `:link`: typings.csstype.csstypeStrings.`:link` = this.cast(":link")
+  def Colonlink: typings.csstype.csstypeStrings.Colonlink = this.cast(":link")
   @scala.inline
-  def `:matches()`: typings.csstype.csstypeStrings.`:matches()` = this.cast(":matches()")
+  def ColonmatchesLeftparenthesisRightparenthesis: typings.csstype.csstypeStrings.ColonmatchesLeftparenthesisRightparenthesis = this.cast(":matches()")
   @scala.inline
-  def `:not`: typings.csstype.csstypeStrings.`:not` = this.cast(":not")
+  def Colonnot: typings.csstype.csstypeStrings.Colonnot = this.cast(":not")
   @scala.inline
-  def `:nth-child`: typings.csstype.csstypeStrings.`:nth-child` = this.cast(":nth-child")
+  def `Colonnth-child`: typings.csstype.csstypeStrings.`Colonnth-child` = this.cast(":nth-child")
   @scala.inline
-  def `:nth-last-child`: typings.csstype.csstypeStrings.`:nth-last-child` = this.cast(":nth-last-child")
+  def `Colonnth-last-child`: typings.csstype.csstypeStrings.`Colonnth-last-child` = this.cast(":nth-last-child")
   @scala.inline
-  def `:nth-last-of-type`: typings.csstype.csstypeStrings.`:nth-last-of-type` = this.cast(":nth-last-of-type")
+  def `Colonnth-last-of-type`: typings.csstype.csstypeStrings.`Colonnth-last-of-type` = this.cast(":nth-last-of-type")
   @scala.inline
-  def `:nth-of-type`: typings.csstype.csstypeStrings.`:nth-of-type` = this.cast(":nth-of-type")
+  def `Colonnth-of-type`: typings.csstype.csstypeStrings.`Colonnth-of-type` = this.cast(":nth-of-type")
   @scala.inline
-  def `:only-child`: typings.csstype.csstypeStrings.`:only-child` = this.cast(":only-child")
+  def `Colononly-child`: typings.csstype.csstypeStrings.`Colononly-child` = this.cast(":only-child")
   @scala.inline
-  def `:only-of-type`: typings.csstype.csstypeStrings.`:only-of-type` = this.cast(":only-of-type")
+  def `Colononly-of-type`: typings.csstype.csstypeStrings.`Colononly-of-type` = this.cast(":only-of-type")
   @scala.inline
-  def `:optional`: typings.csstype.csstypeStrings.`:optional` = this.cast(":optional")
+  def Colonoptional: typings.csstype.csstypeStrings.Colonoptional = this.cast(":optional")
   @scala.inline
-  def `:out-of-range`: typings.csstype.csstypeStrings.`:out-of-range` = this.cast(":out-of-range")
+  def `Colonout-of-range`: typings.csstype.csstypeStrings.`Colonout-of-range` = this.cast(":out-of-range")
   @scala.inline
-  def `:placeholder-shown`: typings.csstype.csstypeStrings.`:placeholder-shown` = this.cast(":placeholder-shown")
+  def `Colonplaceholder-shown`: typings.csstype.csstypeStrings.`Colonplaceholder-shown` = this.cast(":placeholder-shown")
   @scala.inline
-  def `:read-only`: typings.csstype.csstypeStrings.`:read-only` = this.cast(":read-only")
+  def `Colonread-only`: typings.csstype.csstypeStrings.`Colonread-only` = this.cast(":read-only")
   @scala.inline
-  def `:read-write`: typings.csstype.csstypeStrings.`:read-write` = this.cast(":read-write")
+  def `Colonread-write`: typings.csstype.csstypeStrings.`Colonread-write` = this.cast(":read-write")
   @scala.inline
-  def `:required`: typings.csstype.csstypeStrings.`:required` = this.cast(":required")
+  def Colonrequired: typings.csstype.csstypeStrings.Colonrequired = this.cast(":required")
   @scala.inline
-  def `:right`: typings.csstype.csstypeStrings.`:right` = this.cast(":right")
+  def Colonright: typings.csstype.csstypeStrings.Colonright = this.cast(":right")
   @scala.inline
-  def `:root`: typings.csstype.csstypeStrings.`:root` = this.cast(":root")
+  def Colonroot: typings.csstype.csstypeStrings.Colonroot = this.cast(":root")
   @scala.inline
-  def `:scope`: typings.csstype.csstypeStrings.`:scope` = this.cast(":scope")
+  def Colonscope: typings.csstype.csstypeStrings.Colonscope = this.cast(":scope")
   @scala.inline
-  def `:target`: typings.csstype.csstypeStrings.`:target` = this.cast(":target")
+  def Colontarget: typings.csstype.csstypeStrings.Colontarget = this.cast(":target")
   @scala.inline
-  def `:valid`: typings.csstype.csstypeStrings.`:valid` = this.cast(":valid")
+  def Colonvalid: typings.csstype.csstypeStrings.Colonvalid = this.cast(":valid")
   @scala.inline
-  def `:visited`: typings.csstype.csstypeStrings.`:visited` = this.cast(":visited")
+  def Colonvisited: typings.csstype.csstypeStrings.Colonvisited = this.cast(":visited")
   @scala.inline
-  def `:where`: typings.csstype.csstypeStrings.`:where` = this.cast(":where")
+  def Colonwhere: typings.csstype.csstypeStrings.Colonwhere = this.cast(":where")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

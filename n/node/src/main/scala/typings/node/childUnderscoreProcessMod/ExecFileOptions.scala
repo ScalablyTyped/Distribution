@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 trait ExecFileOptions extends CommonOptions {
   var killSignal: js.UndefOr[Signals | Double] = js.undefined
   var maxBuffer: js.UndefOr[Double] = js.undefined
-  var shell: js.UndefOr[Boolean | java.lang.String] = js.undefined
+  var shell: js.UndefOr[Boolean | String] = js.undefined
   var windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
 }
 
 object ExecFileOptions {
   @scala.inline
   def apply(
-    cwd: java.lang.String = null,
+    cwd: String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
-    shell: Boolean | java.lang.String = null,
+    shell: Boolean | String = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,
     windowsHide: js.UndefOr[Boolean] = js.undefined,

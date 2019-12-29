@@ -6,9 +6,7 @@ import typings.androiduix.android.util.SparseMap
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
 import typings.androiduix.android.view.ViewGroup.MarginLayoutParams
-import typings.androiduix.android.widget.RelativeLayout.DependencyGraph
 import typings.androiduix.android.widget.RelativeLayout.DependencyGraph.Node
-import typings.androiduix.android.widget.RelativeLayout.LayoutParams
 import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class VPageBreak protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.VPageBreak_typekey`: VPageBreak = js.native
+  @JSName("Excel.VPageBreak_typekey")
+  var ExcelDotVPageBreak_typekey: VPageBreak = js.native
   val Extent: XlPageBreakExtent = js.native
   @JSName("Location")
   var Location_Original: Range = js.native

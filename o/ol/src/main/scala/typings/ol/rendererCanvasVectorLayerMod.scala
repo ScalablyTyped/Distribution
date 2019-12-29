@@ -2,7 +2,6 @@ package typings.ol
 
 import typings.ol.layerLayerMod.State
 import typings.ol.pluggableMapMod.FrameState
-import typings.ol.rendererCanvasVectorLayerMod.CanvasVectorLayerRenderer
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`

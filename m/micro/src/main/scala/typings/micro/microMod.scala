@@ -1,6 +1,5 @@
 package typings.micro
 
-import typings.micro.microMod.RequestHandler
 import typings.node.Buffer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server

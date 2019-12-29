@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("quixote", JSImport.Namespace)
 @js.native
-class ^ ()
-  extends typings.quixote.quixoteMod.Quixote {
+class ^ () extends Quixote {
   /* CompleteClass */
   override def createFrame(
     options: QuixoteFrameOptions,

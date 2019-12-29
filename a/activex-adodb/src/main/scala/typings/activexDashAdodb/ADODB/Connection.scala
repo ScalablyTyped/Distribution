@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADODB.Connection")
 @js.native
 class Connection protected () extends js.Object {
-  var `ADODB.Connection_typekey`: Connection = js.native
+  @JSName("ADODB.Connection_typekey")
+  var ADODBDotConnection_typekey: Connection = js.native
   /** Sum of one or more of the values in the **XactAttributeEnum** enum */
   var Attributes: XactAttributeEnum = js.native
   var CommandTimeout: Double = js.native

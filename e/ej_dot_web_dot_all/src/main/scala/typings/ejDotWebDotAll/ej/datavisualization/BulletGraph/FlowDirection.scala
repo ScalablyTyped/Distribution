@@ -1,8 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FlowDirection.Backward
-import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FlowDirection.Forward
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

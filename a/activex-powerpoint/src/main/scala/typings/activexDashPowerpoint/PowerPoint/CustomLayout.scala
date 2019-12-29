@@ -24,7 +24,8 @@ class CustomLayout protected () extends js.Object {
   var MatchingName: String = js.native
   var Name: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.CustomLayout_typekey`: CustomLayout = js.native
+  @JSName("PowerPoint.CustomLayout_typekey")
+  var PowerPointDotCustomLayout_typekey: CustomLayout = js.native
   var Preserved: MsoTriState = js.native
   val Shapes: typings.activexDashPowerpoint.PowerPoint.Shapes = js.native
   val SlideShowTransition: typings.activexDashPowerpoint.PowerPoint.SlideShowTransition = js.native

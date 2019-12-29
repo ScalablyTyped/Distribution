@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidReportType.feature
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidReportType.input
-import typings.winrtDashUwp.Windows.Devices.HumanInterfaceDevice.HidReportType.output
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.server
 
-import typings.server.serverNumbers.`false`
+import typings.server.serverBooleans.`false`
 import typings.server.typingsOptionsMod.CsurfOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

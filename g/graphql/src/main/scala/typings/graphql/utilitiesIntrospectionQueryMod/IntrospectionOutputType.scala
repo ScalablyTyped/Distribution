@@ -21,14 +21,19 @@ trait IntrospectionOutputType extends js.Object
 
 object IntrospectionOutputType {
   @scala.inline
-  def IntrospectionObjectType(
-    fields: js.Array[IntrospectionField],
-    interfaces: js.Array[IntrospectionNamedTypeRef[IntrospectionInterfaceType]],
-    kind: OBJECT,
+  def IntrospectionUnionType(
+    kind: UNION,
     name: String,
+    possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
     description: Maybe[String] = null
   ): IntrospectionOutputType = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionOutputType]
+  }
+  @scala.inline
+  def IntrospectionScalarType(kind: SCALAR, name: String, description: Maybe[String] = null): IntrospectionOutputType = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionOutputType]
   }
@@ -44,6 +49,18 @@ object IntrospectionOutputType {
     __obj.asInstanceOf[IntrospectionOutputType]
   }
   @scala.inline
+  def IntrospectionObjectType(
+    fields: js.Array[IntrospectionField],
+    interfaces: js.Array[IntrospectionNamedTypeRef[IntrospectionInterfaceType]],
+    kind: OBJECT,
+    name: String,
+    description: Maybe[String] = null
+  ): IntrospectionOutputType = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrospectionOutputType]
+  }
+  @scala.inline
   def IntrospectionInterfaceType(
     fields: js.Array[IntrospectionField],
     kind: INTERFACE,
@@ -52,23 +69,6 @@ object IntrospectionOutputType {
     description: Maybe[String] = null
   ): IntrospectionOutputType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IntrospectionOutputType]
-  }
-  @scala.inline
-  def IntrospectionUnionType(
-    kind: UNION,
-    name: String,
-    possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
-    description: Maybe[String] = null
-  ): IntrospectionOutputType = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IntrospectionOutputType]
-  }
-  @scala.inline
-  def IntrospectionScalarType(kind: SCALAR, name: String, description: Maybe[String] = null): IntrospectionOutputType = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionOutputType]
   }

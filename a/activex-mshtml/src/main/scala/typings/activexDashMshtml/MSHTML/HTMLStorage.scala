@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLStorage")
 @js.native
 class HTMLStorage protected () extends js.Object {
-  var `MSHTML.HTMLStorage_typekey`: HTMLStorage = js.native
+  @JSName("MSHTML.HTMLStorage_typekey")
+  var MSHTMLDotHTMLStorage_typekey: HTMLStorage = js.native
   val constructor: js.Any = js.native
   val length: Double = js.native
   val remainingSpace: Double = js.native

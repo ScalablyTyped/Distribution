@@ -28,6 +28,11 @@ trait IGrunt
   extends IConfigComponents
      with FailModule
      with ITaskComponents {
+  /**
+    * The current Grunt package.json metadata, as an object.
+    */
+  @JSName("package")
+  var _package: NodePackage = js.native
   @JSName("config")
   var config_Original: ConfigModule = js.native
   var event: EventModule = js.native
@@ -36,10 +41,6 @@ trait IGrunt
   var log: LogModule = js.native
   @JSName("option")
   var option_Original: OptionModule = js.native
-  /**
-    * The current Grunt package.json metadata, as an object.
-    */
-  var `package`: NodePackage = js.native
   var task: TaskModule = js.native
   var template: TemplateModule = js.native
   var util: UtilModule = js.native

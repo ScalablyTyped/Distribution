@@ -7,48 +7,48 @@ import scala.scalajs.js.annotation._
 trait IToggle
   extends typings.senchaUnderscoreTouch.Ext.field.ISlider {
   /** [Config Option] (String) */
-  var activeLabel: js.UndefOr[java.lang.String] = js.undefined
+  var activeLabel: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
   @JSName("cls")
-  var cls_IToggle: js.UndefOr[java.lang.String] = js.undefined
+  var cls_IToggle: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of activeLabel
   		* @returns String
   		*/
-  var getActiveLabel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getActiveLabel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of inactiveLabel
   		* @returns String
   		*/
-  var getInactiveLabel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getInactiveLabel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of maxValueCls
   		* @returns String
   		*/
-  var getMaxValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMaxValueCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of minValueCls
   		* @returns String
   		*/
-  var getMinValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMinValueCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
-  var inactiveLabel: js.UndefOr[java.lang.String] = js.undefined
+  var inactiveLabel: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var maxValueCls: js.UndefOr[java.lang.String] = js.undefined
+  var maxValueCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var minValueCls: js.UndefOr[java.lang.String] = js.undefined
+  var minValueCls: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of activeLabel
   		* @param activeLabel String The new value.
   		*/
-  var setActiveLabel: js.UndefOr[js.Function1[/* activeLabel */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setActiveLabel: js.UndefOr[js.Function1[/* activeLabel */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of inactiveLabel
   		* @param inactiveLabel String The new value.
   		*/
-  var setInactiveLabel: js.UndefOr[js.Function1[/* inactiveLabel */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setInactiveLabel: js.UndefOr[js.Function1[/* inactiveLabel */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of maxValueCls
   		* @param maxValueCls String The new value.
   		*/
-  var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of minValueCls
   		* @param minValueCls String The new value.
   		*/
-  var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of the toggle
   		* @param newValue Number 1 for toggled, 0 for untoggled.
   		* @returns Object this
@@ -65,19 +65,19 @@ object IToggle {
   @scala.inline
   def apply(
     ISlider: typings.senchaUnderscoreTouch.Ext.field.ISlider = null,
-    activeLabel: java.lang.String = null,
-    cls: java.lang.String = null,
-    getActiveLabel: () => java.lang.String = null,
-    getInactiveLabel: () => java.lang.String = null,
-    getMaxValueCls: () => java.lang.String = null,
-    getMinValueCls: () => java.lang.String = null,
-    inactiveLabel: java.lang.String = null,
-    maxValueCls: java.lang.String = null,
-    minValueCls: java.lang.String = null,
-    setActiveLabel: /* activeLabel */ js.UndefOr[java.lang.String] => Unit = null,
-    setInactiveLabel: /* inactiveLabel */ js.UndefOr[java.lang.String] => Unit = null,
-    setMaxValueCls: /* maxValueCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setMinValueCls: /* minValueCls */ js.UndefOr[java.lang.String] => Unit = null,
+    activeLabel: String = null,
+    cls: String = null,
+    getActiveLabel: () => String = null,
+    getInactiveLabel: () => String = null,
+    getMaxValueCls: () => String = null,
+    getMinValueCls: () => String = null,
+    inactiveLabel: String = null,
+    maxValueCls: String = null,
+    minValueCls: String = null,
+    setActiveLabel: /* activeLabel */ js.UndefOr[String] => Unit = null,
+    setInactiveLabel: /* inactiveLabel */ js.UndefOr[String] => Unit = null,
+    setMaxValueCls: /* maxValueCls */ js.UndefOr[String] => Unit = null,
+    setMinValueCls: /* minValueCls */ js.UndefOr[String] => Unit = null,
     setValue: /* newValue */ js.UndefOr[Double] => _ = null,
     toggle: () => _ = null
   ): IToggle = {

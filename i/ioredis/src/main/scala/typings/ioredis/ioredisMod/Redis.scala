@@ -15,8 +15,8 @@ import typings.ioredis.ioredisStrings.NOSAVE
 import typings.ioredis.ioredisStrings.REWRITE
 import typings.ioredis.ioredisStrings.SAVE
 import typings.ioredis.ioredisStrings.SET
+import typings.ioredis.ioredisStrings.Tilde
 import typings.ioredis.ioredisStrings.WITHSCORES
-import typings.ioredis.ioredisStrings.`~`
 import typings.ioredis.ioredisStrings.count_
 import typings.ioredis.ioredisStrings.group_
 import typings.ioredis.ioredisStrings.match_
@@ -653,11 +653,11 @@ trait Redis
   def xack(key: KeyType, group: String, ids: String*): js.Promise[Double] = js.native
   def xadd(key: KeyType, id: String, args: String*): js.Promise[String] = js.native
   @JSName("xadd")
-  def xadd_MAXLEN(key: KeyType, maxLenOption: MAXLEN, approximate: `~`, count: Double, args: String*): js.Promise[String] = js.native
+  def xadd_MAXLEN(key: KeyType, maxLenOption: MAXLEN, approximate: Tilde, count: Double, args: String*): js.Promise[String] = js.native
   @JSName("xadd")
   def xadd_MAXLEN(key: KeyType, maxLenOption: MAXLEN, count: Double, args: String*): js.Promise[String] = js.native
   @JSName("xadd")
-  def xadd_maxlen(key: KeyType, maxLenOption: maxlen_, approximate: `~`, count: Double, args: String*): js.Promise[String] = js.native
+  def xadd_maxlen(key: KeyType, maxLenOption: maxlen_, approximate: Tilde, count: Double, args: String*): js.Promise[String] = js.native
   @JSName("xadd")
   def xadd_maxlen(key: KeyType, maxLenOption: maxlen_, count: Double, args: String*): js.Promise[String] = js.native
   def xclaim(key: KeyType, group: String, consumer: String, minIdleTime: Double, args: ValueType*): js.Promise[js.Array[js.Tuple2[String, js.Array[String]]]] = js.native
@@ -734,6 +734,36 @@ trait Redis
     withScores: WITHSCORES,
     callback: js.Function2[/* err */ Error, /* res */ js.Array[String], Unit]
   ): Unit = js.native
+  def zrangebyscore(key: KeyType, min: String, max: String): js.Promise[js.Array[String]] = js.native
+  def zrangebyscore(
+    key: KeyType,
+    min: String,
+    max: String,
+    withScores: WITHSCORES,
+    limit: LIMIT,
+    offset: Double,
+    count: Double
+  ): js.Promise[js.Array[String]] = js.native
+  def zrangebyscore(key: KeyType, min: String, max: Double): js.Promise[js.Array[String]] = js.native
+  def zrangebyscore(
+    key: KeyType,
+    min: String,
+    max: Double,
+    withScores: WITHSCORES,
+    limit: LIMIT,
+    offset: Double,
+    count: Double
+  ): js.Promise[js.Array[String]] = js.native
+  def zrangebyscore(key: KeyType, min: Double, max: String): js.Promise[js.Array[String]] = js.native
+  def zrangebyscore(
+    key: KeyType,
+    min: Double,
+    max: String,
+    withScores: WITHSCORES,
+    limit: LIMIT,
+    offset: Double,
+    count: Double
+  ): js.Promise[js.Array[String]] = js.native
   def zrangebyscore(key: KeyType, min: Double, max: Double): js.Promise[js.Array[String]] = js.native
   def zrangebyscore(
     key: KeyType,
@@ -745,7 +775,19 @@ trait Redis
     count: Double
   ): js.Promise[js.Array[String]] = js.native
   @JSName("zrangebyscore")
+  def zrangebyscore_LIMIT(key: KeyType, min: String, max: String, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrangebyscore")
+  def zrangebyscore_LIMIT(key: KeyType, min: String, max: Double, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrangebyscore")
+  def zrangebyscore_LIMIT(key: KeyType, min: Double, max: String, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrangebyscore")
   def zrangebyscore_LIMIT(key: KeyType, min: Double, max: Double, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrangebyscore")
+  def zrangebyscore_WITHSCORES(key: KeyType, min: String, max: String, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
+  @JSName("zrangebyscore")
+  def zrangebyscore_WITHSCORES(key: KeyType, min: String, max: Double, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
+  @JSName("zrangebyscore")
+  def zrangebyscore_WITHSCORES(key: KeyType, min: Double, max: String, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
   @JSName("zrangebyscore")
   def zrangebyscore_WITHSCORES(key: KeyType, min: Double, max: Double, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
   def zrank(key: KeyType, member: String): js.Promise[Double | Null] = js.native
@@ -807,6 +849,36 @@ trait Redis
     withScores: WITHSCORES,
     callback: js.Function2[/* err */ Error, /* res */ js.Array[String], Unit]
   ): Unit = js.native
+  def zrevrangebyscore(key: KeyType, min: String, max: String): js.Promise[js.Array[String]] = js.native
+  def zrevrangebyscore(
+    key: KeyType,
+    min: String,
+    max: String,
+    withScores: WITHSCORES,
+    limit: LIMIT,
+    offset: Double,
+    count: Double
+  ): js.Promise[js.Array[String]] = js.native
+  def zrevrangebyscore(key: KeyType, min: String, max: Double): js.Promise[js.Array[String]] = js.native
+  def zrevrangebyscore(
+    key: KeyType,
+    min: String,
+    max: Double,
+    withScores: WITHSCORES,
+    limit: LIMIT,
+    offset: Double,
+    count: Double
+  ): js.Promise[js.Array[String]] = js.native
+  def zrevrangebyscore(key: KeyType, min: Double, max: String): js.Promise[js.Array[String]] = js.native
+  def zrevrangebyscore(
+    key: KeyType,
+    min: Double,
+    max: String,
+    withScores: WITHSCORES,
+    limit: LIMIT,
+    offset: Double,
+    count: Double
+  ): js.Promise[js.Array[String]] = js.native
   def zrevrangebyscore(key: KeyType, min: Double, max: Double): js.Promise[js.Array[String]] = js.native
   def zrevrangebyscore(
     key: KeyType,
@@ -818,7 +890,19 @@ trait Redis
     count: Double
   ): js.Promise[js.Array[String]] = js.native
   @JSName("zrevrangebyscore")
+  def zrevrangebyscore_LIMIT(key: KeyType, min: String, max: String, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrevrangebyscore")
+  def zrevrangebyscore_LIMIT(key: KeyType, min: String, max: Double, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrevrangebyscore")
+  def zrevrangebyscore_LIMIT(key: KeyType, min: Double, max: String, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrevrangebyscore")
   def zrevrangebyscore_LIMIT(key: KeyType, min: Double, max: Double, limit: LIMIT, offset: Double, count: Double): js.Promise[js.Array[String]] = js.native
+  @JSName("zrevrangebyscore")
+  def zrevrangebyscore_WITHSCORES(key: KeyType, min: String, max: String, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
+  @JSName("zrevrangebyscore")
+  def zrevrangebyscore_WITHSCORES(key: KeyType, min: String, max: Double, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
+  @JSName("zrevrangebyscore")
+  def zrevrangebyscore_WITHSCORES(key: KeyType, min: Double, max: String, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
   @JSName("zrevrangebyscore")
   def zrevrangebyscore_WITHSCORES(key: KeyType, min: Double, max: Double, withScores: WITHSCORES): js.Promise[js.Array[String]] = js.native
   def zrevrank(key: KeyType, member: String): js.Promise[Double | Null] = js.native

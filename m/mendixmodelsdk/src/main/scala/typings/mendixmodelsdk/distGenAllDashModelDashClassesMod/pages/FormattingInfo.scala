@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.pages
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.DataGridColumn
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.DynamicLabel
+import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -29,7 +30,7 @@ class FormattingInfo protected ()
 @js.native
 object FormattingInfo extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

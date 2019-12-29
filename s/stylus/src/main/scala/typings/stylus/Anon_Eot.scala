@@ -5,37 +5,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Eot extends js.Object {
-  var `.eot`: String
-  var `.gif`: String
-  var `.jpeg`: String
-  var `.jpg`: String
-  var `.png`: String
-  var `.svg`: String
-  var `.ttf`: String
-  var `.woff`: String
+  @JSName(".eot")
+  var Doteot: String
+  @JSName(".gif")
+  var Dotgif: String
+  @JSName(".jpeg")
+  var Dotjpeg: String
+  @JSName(".jpg")
+  var Dotjpg: String
+  @JSName(".png")
+  var Dotpng: String
+  @JSName(".svg")
+  var Dotsvg: String
+  @JSName(".ttf")
+  var Dotttf: String
+  @JSName(".woff")
+  var Dotwoff: String
 }
 
 object Anon_Eot {
   @scala.inline
   def apply(
-    `.eot`: String,
-    `.gif`: String,
-    `.jpeg`: String,
-    `.jpg`: String,
-    `.png`: String,
-    `.svg`: String,
-    `.ttf`: String,
-    `.woff`: String
+    Doteot: String,
+    Dotgif: String,
+    Dotjpeg: String,
+    Dotjpg: String,
+    Dotpng: String,
+    Dotsvg: String,
+    Dotttf: String,
+    Dotwoff: String
   ): Anon_Eot = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic(".eot")(`.eot`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".gif")(`.gif`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".jpeg")(`.jpeg`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".jpg")(`.jpg`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".png")(`.png`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".svg")(`.svg`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".ttf")(`.ttf`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".woff")(`.woff`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".eot")(Doteot.asInstanceOf[js.Any])
+    __obj.updateDynamic(".gif")(Dotgif.asInstanceOf[js.Any])
+    __obj.updateDynamic(".jpeg")(Dotjpeg.asInstanceOf[js.Any])
+    __obj.updateDynamic(".jpg")(Dotjpg.asInstanceOf[js.Any])
+    __obj.updateDynamic(".png")(Dotpng.asInstanceOf[js.Any])
+    __obj.updateDynamic(".svg")(Dotsvg.asInstanceOf[js.Any])
+    __obj.updateDynamic(".ttf")(Dotttf.asInstanceOf[js.Any])
+    __obj.updateDynamic(".woff")(Dotwoff.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Eot]
   }
 }

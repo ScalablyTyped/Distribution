@@ -3,10 +3,6 @@ package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.DONE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.PENDING
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.RUNNING
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State.STATE_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

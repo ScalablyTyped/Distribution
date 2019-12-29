@@ -1,6 +1,6 @@
 package typings.cacache
 
-import typings.cacache.cacacheNumbers.`false`
+import typings.cacache.cacacheBooleans.`false`
 import typings.cacache.enMod.CacheObject
 import typings.cacache.enMod.GetCacheObject
 import typings.cacache.enMod.get.HasContentObject

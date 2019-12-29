@@ -2,6 +2,7 @@ package typings.ember.emberMod.Ember
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
+import typings.atEmberError.atEmberErrorMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember", "Ember.Error")
 @js.native
-object Error
-  extends TopLevel[Instantiable0[typings.atEmberError.atEmberErrorMod.default]]
+object Error extends TopLevel[Instantiable0[default]]
 

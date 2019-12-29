@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityFlow.Control
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityFlow.Exception
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UMLActivityFlow.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

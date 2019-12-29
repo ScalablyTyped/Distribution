@@ -1,7 +1,7 @@
 package typings.nextDashServer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nextDashServer.nextDashServerNumbers.`false`
+import typings.nextDashServer.nextDashServerBooleans.`false`
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

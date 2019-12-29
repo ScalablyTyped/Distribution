@@ -18,7 +18,6 @@ import typings.officeDashJs.officeDashJsStrings.Csheet
 import typings.officeDashJs.officeDashJsStrings.Dash
 import typings.officeDashJs.officeDashJsStrings.DownThenOver
 import typings.officeDashJs.officeDashJsStrings.Dsheet
-import typings.officeDashJs.officeDashJsStrings.Empty
 import typings.officeDashJs.officeDashJsStrings.EndSheet
 import typings.officeDashJs.officeDashJsStrings.Envelope10
 import typings.officeDashJs.officeDashJsStrings.Envelope11
@@ -59,6 +58,7 @@ import typings.officeDashJs.officeDashJsStrings.Portrait
 import typings.officeDashJs.officeDashJsStrings.Quatro
 import typings.officeDashJs.officeDashJsStrings.Statement
 import typings.officeDashJs.officeDashJsStrings.Tabloid
+import typings.officeDashJs.officeDashJsStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,7 +106,7 @@ trait PageLayoutUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var firstPageNumber: js.UndefOr[Double | Empty] = js.undefined
+  var firstPageNumber: js.UndefOr[Double | _empty] = js.undefined
   /**
     *
     * Gets or sets the worksheet's footer margin, in points, for use when printing.
@@ -218,7 +218,7 @@ object PageLayoutUpdateData {
     centerHorizontally: js.UndefOr[Boolean] = js.undefined,
     centerVertically: js.UndefOr[Boolean] = js.undefined,
     draftMode: js.UndefOr[Boolean] = js.undefined,
-    firstPageNumber: Double | Empty = null,
+    firstPageNumber: Double | _empty = null,
     footerMargin: Int | Double = null,
     headerMargin: Int | Double = null,
     headersFooters: HeaderFooterGroupUpdateData = null,

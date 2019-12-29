@@ -123,7 +123,7 @@ object jestDashConfigStrings {
   sealed trait WeakSet extends js.Object
   
   @js.native
-  sealed trait `^DOT+BACKSLASHBACKSLASHDOT[jt]sx?DOLLAR` extends js.Object
+  sealed trait `^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$` extends js.Object
   
   @js.native
   sealed trait _replaceRootDirTags extends js.Object
@@ -171,7 +171,7 @@ object jestDashConfigStrings {
   sealed trait isNaN extends js.Object
   
   @js.native
-  sealed trait jestDOTconfigDOTjs extends js.Object
+  sealed trait jestDotconfigDotjs extends js.Object
   
   @js.native
   sealed trait `json-summary` extends js.Object
@@ -186,7 +186,7 @@ object jestDashConfigStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait packageDOTjson extends js.Object
+  sealed trait packageDotjson extends js.Object
   
   @js.native
   sealed trait parseFloat extends js.Object
@@ -303,7 +303,7 @@ object jestDashConfigStrings {
   @scala.inline
   def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
   @scala.inline
-  def `^DOT+BACKSLASHBACKSLASHDOT[jt]sx?DOLLAR`: `^DOT+BACKSLASHBACKSLASHDOT[jt]sx?DOLLAR` = "^.+\\.[jt]sx?$".asInstanceOf[`^DOT+BACKSLASHBACKSLASHDOT[jt]sx?DOLLAR`]
+  def `^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$`: `^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$` = "^.+\\.[jt]sx?$".asInstanceOf[`^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$`]
   @scala.inline
   def _replaceRootDirTags: _replaceRootDirTags = "_replaceRootDirTags".asInstanceOf[_replaceRootDirTags]
   @scala.inline
@@ -335,7 +335,7 @@ object jestDashConfigStrings {
   @scala.inline
   def isNaN: isNaN = "isNaN".asInstanceOf[isNaN]
   @scala.inline
-  def jestDOTconfigDOTjs: jestDOTconfigDOTjs = "jest.config.js".asInstanceOf[jestDOTconfigDOTjs]
+  def jestDotconfigDotjs: jestDotconfigDotjs = "jest.config.js".asInstanceOf[jestDotconfigDotjs]
   @scala.inline
   def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
   @scala.inline
@@ -345,7 +345,7 @@ object jestDashConfigStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def packageDOTjson: packageDOTjson = "package.json".asInstanceOf[packageDOTjson]
+  def packageDotjson: packageDotjson = "package.json".asInstanceOf[packageDotjson]
   @scala.inline
   def parseFloat: parseFloat = "parseFloat".asInstanceOf[parseFloat]
   @scala.inline

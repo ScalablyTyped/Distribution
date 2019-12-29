@@ -1,5 +1,6 @@
 package typings.chromeDashApps.chrome.sockets
 
+import typings.chromeDashApps.chrome.events.Event
 import typings.chromeDashApps.chrome.integer
 import typings.std.ArrayBuffer
 import scala.scalajs.js
@@ -22,7 +23,7 @@ object udp extends js.Object {
     *
     * @see https://developer.chrome.com/apps/sockets_udp#event-onReceive
     */
-  val onReceive: typings.chromeDashApps.chrome.events.Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
+  val onReceive: Event[js.Function1[/* args */ ReceiveEventArgs, Unit]] = js.native
   /**
     * Event raised when a network error occured while the runtime was waiting
     * for data on the socket address and port. Once this event is raised, the
@@ -31,7 +32,7 @@ object udp extends js.Object {
     *
     * @see https://developer.chrome.com/apps/sockets_udp#event-onReceiveError
     */
-  val onReceiveError: typings.chromeDashApps.chrome.events.Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
+  val onReceiveError: Event[js.Function1[/* args */ ReceiveErrorEventArgs, Unit]] = js.native
   /**
     * Binds the local address and port for the socket. For a client socket, it
     * is recommended to use port 0 to let the platform pick a free port.

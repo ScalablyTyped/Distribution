@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class SignatureObject protected () extends js.Object {
   val Certificate: CertificateObject = js.native
   val Comment: String = js.native
-  var `InfoPath.SignatureObject_typekey`: SignatureObject = js.native
+  @JSName("InfoPath.SignatureObject_typekey")
+  var InfoPathDotSignatureObject_typekey: SignatureObject = js.native
   val SignatureBlockXmlNode: IXMLDOMNode = js.native
   val Status: XdSignatureStatus = js.native
   def Sign(): Unit = js.native

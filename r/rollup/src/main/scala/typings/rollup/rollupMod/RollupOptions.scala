@@ -1,7 +1,7 @@
 package typings.rollup.rollupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rollup.rollupNumbers.`false`
+import typings.rollup.rollupBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

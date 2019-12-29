@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Foundation.Diagnostics.ErrorOptions.forceExceptions
-import typings.winrt.Windows.Foundation.Diagnostics.ErrorOptions.none
-import typings.winrt.Windows.Foundation.Diagnostics.ErrorOptions.suppressExceptions
-import typings.winrt.Windows.Foundation.Diagnostics.ErrorOptions.suppressSetErrorInfo
-import typings.winrt.Windows.Foundation.Diagnostics.ErrorOptions.useSetErrorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

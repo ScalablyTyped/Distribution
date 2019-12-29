@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Average
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Gap
-import typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

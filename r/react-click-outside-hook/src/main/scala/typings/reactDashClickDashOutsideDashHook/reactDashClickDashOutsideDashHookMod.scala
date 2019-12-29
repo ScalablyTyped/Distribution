@@ -1,6 +1,5 @@
 package typings.reactDashClickDashOutsideDashHook
 
-import typings.reactDashClickDashOutsideDashHook.reactDashClickDashOutsideDashHookMod.HookReturnTuple
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentStatus.Offline
-import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentStatus.Online
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

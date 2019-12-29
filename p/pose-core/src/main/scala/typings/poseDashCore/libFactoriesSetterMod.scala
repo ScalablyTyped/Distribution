@@ -1,6 +1,5 @@
 package typings.poseDashCore
 
-import typings.poseDashCore.libFactoriesSetterMod.SetterFactoryProps
 import typings.poseDashCore.libTypesMod.AddTransitionDelay
 import typings.poseDashCore.libTypesMod.ConvertTransitionDefinition
 import typings.poseDashCore.libTypesMod.GetInstantTransition

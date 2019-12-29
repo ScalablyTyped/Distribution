@@ -1,8 +1,6 @@
 package typings.chrome.chrome
 
 import typings.chrome.chrome.events.Event
-import typings.chrome.chrome.webstore.DownloadProgressEvent
-import typings.chrome.chrome.webstore.InstallationStageEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

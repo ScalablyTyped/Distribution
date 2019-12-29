@@ -16,7 +16,8 @@ class XMLSchemaReferences protected () extends js.Object {
   var IgnoreMixedContent: Boolean = js.native
   val Parent: js.Any = js.native
   var ShowPlaceholderText: Boolean = js.native
-  var `Word.XMLSchemaReferences_typekey`: XMLSchemaReferences = js.native
+  @JSName("Word.XMLSchemaReferences_typekey")
+  var WordDotXMLSchemaReferences_typekey: XMLSchemaReferences = js.native
   /** @param boolean [InstallForAllUsers=false] */
   def Add(NamespaceURI: js.Any, Alias: js.Any, FileName: js.Any): XMLSchemaReference = js.native
   def Add(NamespaceURI: js.Any, Alias: js.Any, FileName: js.Any, InstallForAllUsers: Boolean): XMLSchemaReference = js.native

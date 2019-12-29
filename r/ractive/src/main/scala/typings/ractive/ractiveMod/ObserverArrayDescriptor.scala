@@ -20,6 +20,6 @@ trait ObserverArrayDescriptor[T /* <: Ractive[T] */]
   /**
   	 * The observer callback.j
   	 */
-  def handler(`this`: T, changes: ArrayChanges): Unit | js.Promise[_] = js.native
+  def handler(changes: ArrayChanges): Unit | js.Promise[_] = js.native
 }
 

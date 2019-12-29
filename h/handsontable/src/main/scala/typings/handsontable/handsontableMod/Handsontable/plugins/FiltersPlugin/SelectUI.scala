@@ -1,5 +1,6 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins.FiltersPlugin
 
+import typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
 import typings.handsontable.handsontableMod.Handsontable.plugins.Menu
 import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.std.Element
@@ -23,7 +24,7 @@ object SelectUI {
     closeOptions: () => Unit,
     destroy: () => Unit,
     element: () => Element,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     focus: () => Unit,
     getValue: () => js.Any,
     hide: () => Unit,

@@ -1,6 +1,6 @@
 package typings.atOctokitRest.atOctokitRestMod
 
-import typings.atOctokitRest.atOctokitRestStrings.`+1`
+import typings.atOctokitRest.atOctokitRestStrings.Plussign1
 import typings.atOctokitRest.atOctokitRestStrings.`-1`
 import typings.atOctokitRest.atOctokitRestStrings.confused
 import typings.atOctokitRest.atOctokitRestStrings.eyes
@@ -17,7 +17,7 @@ trait ReactionsListForCommitCommentParams extends js.Object {
   /**
     * Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to a commit comment.
     */
-  var content: js.UndefOr[`+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
+  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
   var owner: String
   /**
     * Page number of the results to fetch.
@@ -36,7 +36,7 @@ object ReactionsListForCommitCommentParams {
     comment_id: Double,
     owner: String,
     repo: String,
-    content: `+1` | `-1` | laugh | confused | heart | hooray | rocket | eyes = null,
+    content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes = null,
     page: Int | Double = null,
     per_page: Int | Double = null
   ): ReactionsListForCommitCommentParams = {

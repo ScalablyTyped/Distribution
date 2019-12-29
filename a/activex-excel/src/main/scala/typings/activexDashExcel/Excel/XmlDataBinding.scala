@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class XmlDataBinding protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.XmlDataBinding_typekey`: XmlDataBinding = js.native
+  @JSName("Excel.XmlDataBinding_typekey")
+  var ExcelDotXmlDataBinding_typekey: XmlDataBinding = js.native
   val Parent: js.Any = js.native
   val SourceUrl: String = js.native
   val _Default: String = js.native

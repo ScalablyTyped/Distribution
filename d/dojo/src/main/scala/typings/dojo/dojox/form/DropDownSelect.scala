@@ -198,16 +198,16 @@ class DropDownSelect ()
   @JSName("get")
   def get_tooltipPosition(property: tooltipPosition): js.Object = js.native
   /**
+    *
+    */
+  def isLoaded(): js.Any = js.native
+  /**
     * Returns true if the dropdown exists and it's data is loaded.  This can
     * be overridden in order to force a call to loadDropDown().
     * 
     */
-  def isLoaded(): Boolean = js.native
-  /**
-    *
-    */
   @JSName("isLoaded")
-  def isLoaded_Any(): js.Any = js.native
+  def isLoaded_Boolean(): Boolean = js.native
   /**
     * Whether or not this is a valid value.  The only way a Select
     * can be invalid is when it's required but nothing is selected.

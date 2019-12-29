@@ -1,7 +1,7 @@
 
 # Scala.js typings for onoff
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 GPIO access and interrupt detection with Node.js

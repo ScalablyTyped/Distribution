@@ -11,7 +11,8 @@ class ErrorObject protected () extends js.Object {
   val ConditionName: js.Any = js.native
   var DetailedErrorMessage: String = js.native
   var ErrorCode: Double = js.native
-  var `InfoPath.ErrorObject_typekey`: ErrorObject = js.native
+  @JSName("InfoPath.ErrorObject_typekey")
+  var InfoPathDotErrorObject_typekey: ErrorObject = js.native
   val Node: IXMLDOMNode = js.native
   var ShortErrorMessage: String = js.native
   val Type: String = js.native

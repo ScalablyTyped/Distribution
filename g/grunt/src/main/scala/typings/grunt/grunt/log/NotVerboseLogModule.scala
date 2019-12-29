@@ -15,16 +15,16 @@ trait NotVerboseLogModule extends CommonLogging[NotVerboseLogModule] {
 object NotVerboseLogModule {
   @scala.inline
   def apply(
-    error: java.lang.String => NotVerboseLogModule,
-    errorlns: java.lang.String => NotVerboseLogModule,
-    ok: java.lang.String => NotVerboseLogModule,
-    oklns: java.lang.String => NotVerboseLogModule,
+    error: String => NotVerboseLogModule,
+    errorlns: String => NotVerboseLogModule,
+    ok: String => NotVerboseLogModule,
+    oklns: String => NotVerboseLogModule,
     or: VerboseLogModule,
-    subhead: java.lang.String => NotVerboseLogModule,
-    warn: java.lang.String => NotVerboseLogModule,
-    write: java.lang.String => NotVerboseLogModule,
+    subhead: String => NotVerboseLogModule,
+    warn: String => NotVerboseLogModule,
+    write: String => NotVerboseLogModule,
     writeflags: js.Any => NotVerboseLogModule,
-    writeln: java.lang.String => NotVerboseLogModule
+    writeln: String => NotVerboseLogModule
   ): NotVerboseLogModule = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), errorlns = js.Any.fromFunction1(errorlns), ok = js.Any.fromFunction1(ok), oklns = js.Any.fromFunction1(oklns), or = or.asInstanceOf[js.Any], subhead = js.Any.fromFunction1(subhead), warn = js.Any.fromFunction1(warn), write = js.Any.fromFunction1(write), writeflags = js.Any.fromFunction1(writeflags), writeln = js.Any.fromFunction1(writeln))
   

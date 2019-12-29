@@ -1,10 +1,6 @@
 package typings.wonderDashFrp
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDashFrp.distCommonjsTestingActionTypeMod.ActionType
-import typings.wonderDashFrp.distCommonjsTestingActionTypeMod.ActionType.COMPLETED
-import typings.wonderDashFrp.distCommonjsTestingActionTypeMod.ActionType.ERROR
-import typings.wonderDashFrp.distCommonjsTestingActionTypeMod.ActionType.NEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

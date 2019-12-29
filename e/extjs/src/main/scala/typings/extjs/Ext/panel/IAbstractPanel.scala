@@ -2,6 +2,8 @@ package typings.extjs.Ext.panel
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IComponent
+import typings.extjs.Ext.container.IContainer
+import typings.extjs.Ext.dom.IElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,15 +11,12 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.container.IDockingContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultDockWeights, addDocked, getDockedComponent, getDockedItems, insertDocked, onDockedAdd, onDockedRemove, removeDocked */ trait IAbstractPanel
-  extends typings.extjs.Ext.container.IContainer {
+- typings.extjs.Ext.container.IDockingContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultDockWeights, addDocked, getDockedComponent, getDockedItems, insertDocked, onDockedAdd, onDockedRemove, removeDocked */ trait IAbstractPanel extends IContainer {
   /** [Method] Adds a CSS class to the body element
   		* @param cls String The class to add
   		* @returns Ext.panel.Panel this
   		*/
-  var addBodyCls: js.UndefOr[
-    js.Function1[/* cls */ js.UndefOr[java.lang.String], typings.extjs.Ext.panel.IPanel]
-  ] = js.undefined
+  var addBodyCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], IPanel]] = js.undefined
   /** [Method] Adds docked item s to the container
   		* @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' parameter on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
   		* @param pos Number The index at which the Component will be added
@@ -30,7 +29,7 @@ import scala.scalajs.js.annotation._
   @JSName("addUIClsToElement")
   var addUIClsToElement_IAbstractPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Property] (Ext.dom.Element) */
-  var body: js.UndefOr[typings.extjs.Ext.dom.IElement] = js.undefined
+  var body: js.UndefOr[IElement] = js.undefined
   /** [Config Option] (Boolean) */
   var bodyBorder: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String/String[]) */
@@ -53,7 +52,7 @@ import scala.scalajs.js.annotation._
   		* @param beforeBody Boolean An optional flag to limit the set of items to only those before the body (true) or after the body (false). All components are returned by default.
   		* @returns Ext.Component[] The array of docked components meeting the specified criteria.
   		*/
-  var getDockedItems: js.UndefOr[js.Function2[js.UndefOr[java.lang.String], js.UndefOr[Boolean], Array]] = js.undefined
+  var getDockedItems: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[Boolean], Array]] = js.undefined
   /** [Method] Inserts docked item s to the panel at the indicated position
   		* @param pos Number The index at which the Component will be inserted
   		* @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' paramater on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
@@ -73,9 +72,7 @@ import scala.scalajs.js.annotation._
   		* @param cls String The class to remove
   		* @returns Ext.panel.Panel this
   		*/
-  var removeBodyCls: js.UndefOr[
-    js.Function1[/* cls */ js.UndefOr[java.lang.String], typings.extjs.Ext.panel.IPanel]
-  ] = js.undefined
+  var removeBodyCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], IPanel]] = js.undefined
   /** [Method] Removes the docked item from the panel
   		* @param item Ext.Component The Component to remove.
   		* @param autoDestroy Boolean Destroy the component after removal.
@@ -92,11 +89,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.panel.Panel this
   		*/
   var setBodyStyle: js.UndefOr[
-    js.Function2[
-      /* style */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
-      typings.extjs.Ext.panel.IPanel
-    ]
+    js.Function2[/* style */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], IPanel]
   ] = js.undefined
   /** [Config Option] (Boolean/Number) */
   var shrinkWrapDock: js.UndefOr[js.Any] = js.undefined
@@ -105,11 +98,11 @@ import scala.scalajs.js.annotation._
 object IAbstractPanel {
   @scala.inline
   def apply(
-    IContainer: typings.extjs.Ext.container.IContainer = null,
-    addBodyCls: /* cls */ js.UndefOr[java.lang.String] => typings.extjs.Ext.panel.IPanel = null,
+    IContainer: IContainer = null,
+    addBodyCls: /* cls */ js.UndefOr[String] => IPanel = null,
     addDocked: (js.UndefOr[js.Any], js.UndefOr[Double]) => Array = null,
     addUIClsToElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
-    body: typings.extjs.Ext.dom.IElement = null,
+    body: IElement = null,
     bodyBorder: js.UndefOr[Boolean] = js.undefined,
     bodyCls: js.Any = null,
     bodyPadding: js.Any = null,
@@ -117,15 +110,15 @@ object IAbstractPanel {
     defaultDockWeights: js.Any = null,
     dockedItems: js.Any = null,
     getDockedComponent: js.UndefOr[js.Any] => IComponent = null,
-    getDockedItems: (js.UndefOr[java.lang.String], js.UndefOr[Boolean]) => Array = null,
+    getDockedItems: (js.UndefOr[String], js.UndefOr[Boolean]) => Array = null,
     insertDocked: (js.UndefOr[Double], js.UndefOr[js.Any]) => Unit = null,
     isPanel: js.UndefOr[Boolean] = js.undefined,
     onDockedAdd: js.UndefOr[IComponent] => Unit = null,
     onDockedRemove: js.UndefOr[IComponent] => Unit = null,
-    removeBodyCls: /* cls */ js.UndefOr[java.lang.String] => typings.extjs.Ext.panel.IPanel = null,
+    removeBodyCls: /* cls */ js.UndefOr[String] => IPanel = null,
     removeDocked: (js.UndefOr[IComponent], js.UndefOr[Boolean]) => Unit = null,
     removeUIClsFromElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
-    setBodyStyle: (/* style */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.panel.IPanel = null,
+    setBodyStyle: (/* style */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IPanel = null,
     shrinkWrapDock: js.Any = null
   ): IAbstractPanel = {
     val __obj = js.Dynamic.literal()

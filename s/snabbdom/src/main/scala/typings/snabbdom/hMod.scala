@@ -1,8 +1,5 @@
 package typings.snabbdom
 
-import typings.snabbdom.hMod.ArrayOrElement
-import typings.snabbdom.hMod.VNodeChildElement
-import typings.snabbdom.hMod.VNodeChildren
 import typings.snabbdom.vnodeMod.VNode
 import typings.snabbdom.vnodeMod.VNodeData
 import scala.scalajs.js

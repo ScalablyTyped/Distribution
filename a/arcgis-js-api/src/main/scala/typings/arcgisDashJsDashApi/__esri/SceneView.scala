@@ -2,7 +2,11 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.global
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.high
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.local
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.low
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.medium
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -118,7 +122,7 @@ trait SceneView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#qualityProfile)
     */
-  var qualityProfile: String = js.native
+  var qualityProfile: low | medium | high = js.native
   /**
     * Represents an approximation of the map scale at the center of the view. Setting the scale immediately changes the current view. For animating the view, see [goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo).  When set in the constructor, this property overrides the [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#zoom) property. This property will be ignored if the [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewpoint), [camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#camera), or [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#extent) properties are also set in the constructor.
     *
@@ -139,7 +143,7 @@ trait SceneView
     *
     * @default global
     */
-  var viewingMode: String = js.native
+  var viewingMode: global | local = js.native
   /**
     * Represents the current view as a [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) or point of observation on the view. In SceneViews, [camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#camera) should be used in favor of viewpoint for watching or changing the point of view. Setting the viewpoint immediately changes the current view. For animating the view, see [goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo).  When set in the constructor, this property overrides the [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#extent), [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#center), [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale), and [zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#zoom) properties. This property will be ignored if [camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#camera) is also set in the constructor.  The viewpoint property contains an internal reference which may be modified in the future. To persist or modify the viewpoint, create a clone using [viewpoint.clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#clone).
     *
@@ -170,8 +174,8 @@ trait SceneView
     * @param options View transition options. See the specification defined in [GoToOptions3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D) for more information.
     *
     */
-  def goTo(target: GoToTarget3D): IPromise[_] = js.native
-  def goTo(target: GoToTarget3D, options: GoToOptions3D): IPromise[_] = js.native
+  def goTo(target: GoToTarget3D): js.Promise[_] = js.native
+  def goTo(target: GoToTarget3D, options: GoToOptions3D): js.Promise[_] = js.native
   /**
     * Returns graphics that intersect the specified screen coordinate. The following layer types will return a result if a hit is made on an intersecting feature: [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html), [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html) and [SceneView.graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#graphics).  If no options are specified, graphics that are behind the ground surface will not be returned unless the ground surface is semi-transparent. Otherwise, using the [map.ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground) in the include and exclude options determines whether the ground surface prevents hit testing graphics that are under it.  Starting with version 4.11, if a label intersects the specified screen coordinates then the result of the hitTest will contain the graphic associated with that label.
     *
@@ -183,10 +187,10 @@ trait SceneView
     * @param options.exclude A list of layers and graphics to include for intersection testing. No layers or graphics will be excluded if exclude is not specified.
     *
     */
-  def hitTest(screenPoint: SceneViewScreenPoint): IPromise[SceneViewHitTestResult] = js.native
-  def hitTest(screenPoint: SceneViewScreenPoint, options: SceneViewHitTestOptions): IPromise[SceneViewHitTestResult] = js.native
-  def hitTest(screenPoint: MouseEvent): IPromise[SceneViewHitTestResult] = js.native
-  def hitTest(screenPoint: MouseEvent, options: SceneViewHitTestOptions): IPromise[SceneViewHitTestResult] = js.native
+  def hitTest(screenPoint: SceneViewScreenPoint): js.Promise[SceneViewHitTestResult] = js.native
+  def hitTest(screenPoint: SceneViewScreenPoint, options: SceneViewHitTestOptions): js.Promise[SceneViewHitTestResult] = js.native
+  def hitTest(screenPoint: MouseEvent): js.Promise[SceneViewHitTestResult] = js.native
+  def hitTest(screenPoint: MouseEvent, options: SceneViewHitTestOptions): js.Promise[SceneViewHitTestResult] = js.native
   def on(`type`: String, modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
   def on(`type`: String, modifiersOrHandler: EventHandler, handler: EventHandler): IHandle = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
@@ -205,8 +209,8 @@ trait SceneView
     * @param options.ignorePadding Indicates whether view padding should be ignored. Set this property to `true` to allow padded areas to be included in the screenshot.
     *
     */
-  def takeScreenshot(): IPromise[SceneViewScreenshot] = js.native
-  def takeScreenshot(options: SceneViewTakeScreenshotOptions): IPromise[SceneViewScreenshot] = js.native
+  def takeScreenshot(): js.Promise[SceneViewScreenshot] = js.native
+  def takeScreenshot(options: SceneViewTakeScreenshotOptions): js.Promise[SceneViewScreenshot] = js.native
   /**
     * Converts the given screen point to a [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
     *

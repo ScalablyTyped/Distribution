@@ -19,7 +19,8 @@ class Inspector protected () extends js.Object {
   var Height: Double = js.native
   var Left: Double = js.native
   val ModifiedFormPages: js.Any = js.native
-  var `Outlook.Inspector_typekey`: Inspector = js.native
+  @JSName("Outlook.Inspector_typekey")
+  var OutlookDotInspector_typekey: Inspector = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   var Top: Double = js.native

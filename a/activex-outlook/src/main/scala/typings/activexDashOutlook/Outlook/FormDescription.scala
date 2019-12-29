@@ -22,7 +22,8 @@ class FormDescription protected () extends js.Object {
   var Name: String = js.native
   var Number: String = js.native
   var OneOff: Boolean = js.native
-  var `Outlook.FormDescription_typekey`: FormDescription = js.native
+  @JSName("Outlook.FormDescription_typekey")
+  var OutlookDotFormDescription_typekey: FormDescription = js.native
   val Parent: js.Any = js.native
   var Password: String = js.native
   val ScriptText: String = js.native

@@ -1,16 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.DocumentFormat.Doc
-import typings.devexpressDashWeb.DocumentFormat.Html
-import typings.devexpressDashWeb.DocumentFormat.Mht
-import typings.devexpressDashWeb.DocumentFormat.OpenDocument
-import typings.devexpressDashWeb.DocumentFormat.OpenXml
-import typings.devexpressDashWeb.DocumentFormat.PlainText
-import typings.devexpressDashWeb.DocumentFormat.Rtf
-import typings.devexpressDashWeb.DocumentFormat.Undefined
-import typings.devexpressDashWeb.DocumentFormat.WordML
-import typings.devexpressDashWeb.DocumentFormat.ePub
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

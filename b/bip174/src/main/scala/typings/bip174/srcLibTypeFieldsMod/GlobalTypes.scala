@@ -1,8 +1,6 @@
 package typings.bip174.srcLibTypeFieldsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bip174.srcLibTypeFieldsMod.GlobalTypes.GLOBAL_XPUB
-import typings.bip174.srcLibTypeFieldsMod.GlobalTypes.UNSIGNED_TX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

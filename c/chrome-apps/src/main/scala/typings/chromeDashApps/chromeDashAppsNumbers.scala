@@ -48,12 +48,6 @@ object chromeDashAppsNumbers {
   @js.native
   sealed trait `90` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
@@ -82,9 +76,5 @@ object chromeDashAppsNumbers {
   def `8192`: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
   def `90`: `90` = 90.asInstanceOf[`90`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

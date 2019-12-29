@@ -1,15 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.AbortedBySystem
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.Analyzed
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CanceledByUser
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CancellationInProgress
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CreatingEnvironment
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.None
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.PendingAnalysis
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.RunningTests
-import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.TimedOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.atMaterialRadio
 
 import typings.atMaterialRadio.adapterMod.MDCRadioAdapter
-import typings.atMaterialRadio.foundationMod.MDCRadioFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

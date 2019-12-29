@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 
 trait IBox extends IDefault {
   /** [Config Option] (String) */
-  var align: js.UndefOr[java.lang.String] = js.undefined
+  var align: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of align
   		* @returns String
   		*/
-  var getAlign: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAlign: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of orient
   		* @returns String
   		*/
-  var getOrient: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getOrient: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of pack
   		* @returns String
   		*/
-  var getPack: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPack: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method]
   		* @param item Object
   		* @param isInner Object
@@ -31,19 +31,19 @@ trait IBox extends IDefault {
     js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Config Option] (String) */
-  var pack: js.UndefOr[java.lang.String] = js.undefined
+  var pack: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of align
   		* @param align String The new value.
   		*/
-  var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of orient
   		* @param orient String The new value.
   		*/
-  var setOrient: js.UndefOr[js.Function1[/* orient */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setOrient: js.UndefOr[js.Function1[/* orient */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pack
   		* @param pack String The new value.
   		*/
-  var setPack: js.UndefOr[js.Function1[/* pack */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPack: js.UndefOr[js.Function1[/* pack */ js.UndefOr[String], Unit]] = js.undefined
 }
 
 object IBox {
@@ -52,10 +52,10 @@ object IBox {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
-    align: java.lang.String = null,
+    align: String = null,
     alternateClassName: js.Any = null,
     animation: typings.senchaUnderscoreTouch.Ext.fx.layout.ICard = null,
     bubbleEvents: js.Any = null,
@@ -66,47 +66,47 @@ object IBox {
     config: js.Any = null,
     destroy: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    getAlign: () => java.lang.String = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    getAlign: () => String = null,
     getAnimation: () => typings.senchaUnderscoreTouch.Ext.fx.layout.ICard = null,
     getBubbleEvents: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
-    getOrient: () => java.lang.String = null,
-    getPack: () => java.lang.String = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    getOrient: () => String = null,
+    getPack: () => String = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     listeners: js.Any = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onItemInnerStateChange: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit = null,
-    pack: java.lang.String = null,
+    pack: String = null,
     platformConfig: js.Any = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
-    setAlign: /* align */ js.UndefOr[java.lang.String] => Unit = null,
+    setAlign: /* align */ js.UndefOr[String] => Unit = null,
     setAnimation: /* animation */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.fx.layout.ICard] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setOrient: /* orient */ js.UndefOr[java.lang.String] => Unit = null,
-    setPack: /* pack */ js.UndefOr[java.lang.String] => Unit = null,
+    setOrient: /* orient */ js.UndefOr[String] => Unit = null,
+    setPack: /* pack */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

@@ -1,12 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.EVENT_HANDLER
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.FOLDER
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.FRAME
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.RESPONSE_CONDITION
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.SLOT
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.STANDARD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

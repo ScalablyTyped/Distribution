@@ -58,7 +58,7 @@ class Firestore protected () extends js.Object {
     * @param collectionPath A slash-separated path to a collection.
     * @return The `CollectionReference` instance.
     */
-  def collection(collectionPath: String): CollectionReference = js.native
+  def collection(collectionPath: String): CollectionReference[DocumentData] = js.native
   /**
     * Creates and returns a new Query that includes all documents in the
     * database that are contained in a collection or subcollection with the
@@ -69,7 +69,7 @@ class Firestore protected () extends js.Object {
     * will be included. Cannot contain a slash.
     * @return The created Query.
     */
-  def collectionGroup(collectionId: String): Query = js.native
+  def collectionGroup(collectionId: String): Query[DocumentData] = js.native
   /**
     * Disables network usage for this instance. It can be re-enabled via
     * {@link firebase.firestore.Firestore.enableNetwork `enableNetwork()`}. While
@@ -88,7 +88,7 @@ class Firestore protected () extends js.Object {
     * @param documentPath A slash-separated path to a document.
     * @return The `DocumentReference` instance.
     */
-  def doc(documentPath: String): DocumentReference = js.native
+  def doc(documentPath: String): DocumentReference[DocumentData] = js.native
   /**
     * Re-enables use of the network for this Firestore instance after a prior
     * call to {@link firebase.firestore.Firestore.disableNetwork

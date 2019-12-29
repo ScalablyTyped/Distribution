@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("firebase", "firestore.CollectionReference")
 @js.native
-class CollectionReference protected () extends Query {
+class CollectionReference[T] protected () extends Query[T] {
   /** The collection's identifier. */
   val id: String = js.native
   /**
     * A reference to the containing `DocumentReference` if this is a subcollection.
     * If this isn't a subcollection, the reference is null.
     */
-  val parent: DocumentReference | Null = js.native
+  val parent: DocumentReference[DocumentData] | Null = js.native
   /**
     * A string representing the path of the referenced collection (relative
     * to the root of the database).
@@ -27,7 +27,7 @@ class CollectionReference protected () extends Query {
     * @return A Promise resolved with a `DocumentReference` pointing to the
     * newly created document after it has been written to the backend.
     */
-  def add(data: DocumentData): js.Promise[DocumentReference] = js.native
+  def add(data: T): js.Promise[DocumentReference[T]] = js.native
   /**
     * Get a `DocumentReference` for the document within the collection at the
     * specified path. If no path is specified, an automatically-generated
@@ -36,14 +36,14 @@ class CollectionReference protected () extends Query {
     * @param documentPath A slash-separated path to a document.
     * @return The `DocumentReference` instance.
     */
-  def doc(): DocumentReference = js.native
-  def doc(documentPath: String): DocumentReference = js.native
+  def doc(): DocumentReference[T] = js.native
+  def doc(documentPath: String): DocumentReference[T] = js.native
   /**
     * Returns true if this `CollectionReference` is equal to the provided one.
     *
     * @param other The `CollectionReference` to compare against.
     * @return true if this `CollectionReference` is equal to the provided one.
     */
-  def isEqual(other: CollectionReference): Boolean = js.native
+  def isEqual(other: CollectionReference[T]): Boolean = js.native
 }
 

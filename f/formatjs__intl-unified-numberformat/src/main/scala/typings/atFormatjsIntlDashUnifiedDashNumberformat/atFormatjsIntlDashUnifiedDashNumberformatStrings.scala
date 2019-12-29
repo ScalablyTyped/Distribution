@@ -1,5 +1,6 @@
 package typings.atFormatjsIntlDashUnifiedDashNumberformat
 
+import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod._UnifiedNumberFormatPartTypes
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.libUnitsDashConstantsMod.Unit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,12 +45,26 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait code extends js.Object
   
   @js.native
-  sealed trait compact extends js.Object
+  sealed trait compact
+    extends _UnifiedNumberFormatPartTypes
+       with typings.atFormatjsIntlDashUnifiedDashNumberformat.libCoreMod._UnifiedNumberFormatPartTypes
+  
+  @js.native
+  sealed trait compactDisplay extends js.Object
+  
+  @js.native
+  sealed trait currency extends js.Object
+  
+  @js.native
+  sealed trait currencySign extends js.Object
   
   @js.native
   sealed trait day
     extends Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
+  
+  @js.native
+  sealed trait decimal extends js.Object
   
   @js.native
   sealed trait degree
@@ -61,6 +76,21 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   
   @js.native
   sealed trait exceptZero extends js.Object
+  
+  @js.native
+  sealed trait exponentInteger
+    extends _UnifiedNumberFormatPartTypes
+       with typings.atFormatjsIntlDashUnifiedDashNumberformat.libCoreMod._UnifiedNumberFormatPartTypes
+  
+  @js.native
+  sealed trait exponentMinusSign
+    extends _UnifiedNumberFormatPartTypes
+       with typings.atFormatjsIntlDashUnifiedDashNumberformat.libCoreMod._UnifiedNumberFormatPartTypes
+  
+  @js.native
+  sealed trait exponentSeparator
+    extends _UnifiedNumberFormatPartTypes
+       with typings.atFormatjsIntlDashUnifiedDashNumberformat.libCoreMod._UnifiedNumberFormatPartTypes
   
   @js.native
   sealed trait fahrenheit
@@ -206,6 +236,9 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait never extends js.Object
   
   @js.native
+  sealed trait notation extends js.Object
+  
+  @js.native
   sealed trait ounce
     extends Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
@@ -237,6 +270,9 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait short extends js.Object
   
   @js.native
+  sealed trait signDisplay extends js.Object
+  
+  @js.native
   sealed trait standard extends js.Object
   
   @js.native
@@ -256,6 +292,14 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait terabyte
     extends Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
+  
+  @js.native
+  sealed trait unit
+    extends _UnifiedNumberFormatPartTypes
+       with typings.atFormatjsIntlDashUnifiedDashNumberformat.libCoreMod._UnifiedNumberFormatPartTypes
+  
+  @js.native
+  sealed trait unitDisplay extends js.Object
   
   @js.native
   sealed trait week
@@ -293,13 +337,27 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]
   @scala.inline
+  def compactDisplay: compactDisplay = "compactDisplay".asInstanceOf[compactDisplay]
+  @scala.inline
+  def currency: currency = "currency".asInstanceOf[currency]
+  @scala.inline
+  def currencySign: currencySign = "currencySign".asInstanceOf[currencySign]
+  @scala.inline
   def day: day = "day".asInstanceOf[day]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
   def degree: degree = "degree".asInstanceOf[degree]
   @scala.inline
   def engineering: engineering = "engineering".asInstanceOf[engineering]
   @scala.inline
   def exceptZero: exceptZero = "exceptZero".asInstanceOf[exceptZero]
+  @scala.inline
+  def exponentInteger: exponentInteger = "exponentInteger".asInstanceOf[exponentInteger]
+  @scala.inline
+  def exponentMinusSign: exponentMinusSign = "exponentMinusSign".asInstanceOf[exponentMinusSign]
+  @scala.inline
+  def exponentSeparator: exponentSeparator = "exponentSeparator".asInstanceOf[exponentSeparator]
   @scala.inline
   def fahrenheit: fahrenheit = "fahrenheit".asInstanceOf[fahrenheit]
   @scala.inline
@@ -363,6 +421,8 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
+  def notation: notation = "notation".asInstanceOf[notation]
+  @scala.inline
   def ounce: ounce = "ounce".asInstanceOf[ounce]
   @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
@@ -377,6 +437,8 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @scala.inline
   def short: short = "short".asInstanceOf[short]
   @scala.inline
+  def signDisplay: signDisplay = "signDisplay".asInstanceOf[signDisplay]
+  @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
   def stone: stone = "stone".asInstanceOf[stone]
@@ -386,6 +448,10 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   def terabit: terabit = "terabit".asInstanceOf[terabit]
   @scala.inline
   def terabyte: terabyte = "terabyte".asInstanceOf[terabyte]
+  @scala.inline
+  def unit: unit = "unit".asInstanceOf[unit]
+  @scala.inline
+  def unitDisplay: unitDisplay = "unitDisplay".asInstanceOf[unitDisplay]
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   @scala.inline

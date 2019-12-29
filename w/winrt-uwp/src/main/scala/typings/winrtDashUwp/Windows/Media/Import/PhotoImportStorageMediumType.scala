@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStorageMediumType.fixed
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStorageMediumType.removable
-import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStorageMediumType.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

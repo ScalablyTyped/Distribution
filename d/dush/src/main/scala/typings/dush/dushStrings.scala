@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object dushStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
 }
 

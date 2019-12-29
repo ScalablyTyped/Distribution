@@ -1,8 +1,6 @@
 package typings.pinkyswear
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pinkyswear.PinkySwear.GenericPromise
-import typings.pinkyswear.PinkySwear.Promise
 import typings.std.TypeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,11 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.armor.multipart_last
-import typings.openpgp.openpgpMod.enums.armor.multipart_section
-import typings.openpgp.openpgpMod.enums.armor.private_key
-import typings.openpgp.openpgpMod.enums.armor.public_key
-import typings.openpgp.openpgpMod.enums.armor.signed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,8 +38,7 @@ object armor extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[armor with Double] = js.native
   /* 3 */ @js.native
-  object message
-    extends TopLevel[typings.openpgp.openpgpMod.enums.armor.message with Double]
+  object message extends TopLevel[message with Double]
   
   /* 1 */ @js.native
   object multipart_last extends TopLevel[multipart_last with Double]

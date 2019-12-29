@@ -1,10 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.MixBlend.add
-import typings.phaser.spine.MixBlend.first
-import typings.phaser.spine.MixBlend.replace
-import typings.phaser.spine.MixBlend.setup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

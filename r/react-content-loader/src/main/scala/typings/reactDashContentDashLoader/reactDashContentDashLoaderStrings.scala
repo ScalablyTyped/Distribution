@@ -6,99 +6,49 @@ import scala.scalajs.js.annotation._
 
 object reactDashContentDashLoaderStrings {
   @js.native
-  sealed trait none extends js.Object
+  sealed trait animate extends js.Object
   
   @js.native
-  sealed trait `xMaxYMax meet` extends js.Object
+  sealed trait height extends js.Object
   
   @js.native
-  sealed trait `xMaxYMax slice` extends js.Object
+  sealed trait preserveAspectRatio extends js.Object
   
   @js.native
-  sealed trait `xMaxYMid meet` extends js.Object
+  sealed trait primaryColor extends js.Object
   
   @js.native
-  sealed trait `xMaxYMid slice` extends js.Object
+  sealed trait rtl extends js.Object
   
   @js.native
-  sealed trait `xMaxYMin meet` extends js.Object
+  sealed trait secondaryColor extends js.Object
   
   @js.native
-  sealed trait `xMaxYMin slice` extends js.Object
+  sealed trait speed extends js.Object
   
   @js.native
-  sealed trait `xMidYMax meet` extends js.Object
+  sealed trait style extends js.Object
   
   @js.native
-  sealed trait `xMidYMax slice` extends js.Object
-  
-  @js.native
-  sealed trait `xMidYMid meet` extends js.Object
-  
-  @js.native
-  sealed trait `xMidYMid slice` extends js.Object
-  
-  @js.native
-  sealed trait `xMidYMin meet` extends js.Object
-  
-  @js.native
-  sealed trait `xMidYMin slice` extends js.Object
-  
-  @js.native
-  sealed trait `xMinYMax meet` extends js.Object
-  
-  @js.native
-  sealed trait `xMinYMax slice` extends js.Object
-  
-  @js.native
-  sealed trait `xMinYMid meet` extends js.Object
-  
-  @js.native
-  sealed trait `xMinYMid slice` extends js.Object
-  
-  @js.native
-  sealed trait `xMinYMin meet` extends js.Object
-  
-  @js.native
-  sealed trait `xMinYMin slice` extends js.Object
+  sealed trait width extends js.Object
   
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def animate: animate = "animate".asInstanceOf[animate]
   @scala.inline
-  def `xMaxYMax meet`: `xMaxYMax meet` = "xMaxYMax meet".asInstanceOf[`xMaxYMax meet`]
+  def height: height = "height".asInstanceOf[height]
   @scala.inline
-  def `xMaxYMax slice`: `xMaxYMax slice` = "xMaxYMax slice".asInstanceOf[`xMaxYMax slice`]
+  def preserveAspectRatio: preserveAspectRatio = "preserveAspectRatio".asInstanceOf[preserveAspectRatio]
   @scala.inline
-  def `xMaxYMid meet`: `xMaxYMid meet` = "xMaxYMid meet".asInstanceOf[`xMaxYMid meet`]
+  def primaryColor: primaryColor = "primaryColor".asInstanceOf[primaryColor]
   @scala.inline
-  def `xMaxYMid slice`: `xMaxYMid slice` = "xMaxYMid slice".asInstanceOf[`xMaxYMid slice`]
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
-  def `xMaxYMin meet`: `xMaxYMin meet` = "xMaxYMin meet".asInstanceOf[`xMaxYMin meet`]
+  def secondaryColor: secondaryColor = "secondaryColor".asInstanceOf[secondaryColor]
   @scala.inline
-  def `xMaxYMin slice`: `xMaxYMin slice` = "xMaxYMin slice".asInstanceOf[`xMaxYMin slice`]
+  def speed: speed = "speed".asInstanceOf[speed]
   @scala.inline
-  def `xMidYMax meet`: `xMidYMax meet` = "xMidYMax meet".asInstanceOf[`xMidYMax meet`]
+  def style: style = "style".asInstanceOf[style]
   @scala.inline
-  def `xMidYMax slice`: `xMidYMax slice` = "xMidYMax slice".asInstanceOf[`xMidYMax slice`]
-  @scala.inline
-  def `xMidYMid meet`: `xMidYMid meet` = "xMidYMid meet".asInstanceOf[`xMidYMid meet`]
-  @scala.inline
-  def `xMidYMid slice`: `xMidYMid slice` = "xMidYMid slice".asInstanceOf[`xMidYMid slice`]
-  @scala.inline
-  def `xMidYMin meet`: `xMidYMin meet` = "xMidYMin meet".asInstanceOf[`xMidYMin meet`]
-  @scala.inline
-  def `xMidYMin slice`: `xMidYMin slice` = "xMidYMin slice".asInstanceOf[`xMidYMin slice`]
-  @scala.inline
-  def `xMinYMax meet`: `xMinYMax meet` = "xMinYMax meet".asInstanceOf[`xMinYMax meet`]
-  @scala.inline
-  def `xMinYMax slice`: `xMinYMax slice` = "xMinYMax slice".asInstanceOf[`xMinYMax slice`]
-  @scala.inline
-  def `xMinYMid meet`: `xMinYMid meet` = "xMinYMid meet".asInstanceOf[`xMinYMid meet`]
-  @scala.inline
-  def `xMinYMid slice`: `xMinYMid slice` = "xMinYMid slice".asInstanceOf[`xMinYMid slice`]
-  @scala.inline
-  def `xMinYMin meet`: `xMinYMin meet` = "xMinYMin meet".asInstanceOf[`xMinYMin meet`]
-  @scala.inline
-  def `xMinYMin slice`: `xMinYMin slice` = "xMinYMin slice".asInstanceOf[`xMinYMin slice`]
+  def width: width = "width".asInstanceOf[width]
 }
 

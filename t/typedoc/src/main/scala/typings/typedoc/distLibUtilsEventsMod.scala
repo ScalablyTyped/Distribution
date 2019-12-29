@@ -1,10 +1,6 @@
 package typings.typedoc
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typedoc.distLibUtilsEventsMod.Event
-import typings.typedoc.distLibUtilsEventsMod.EventCallback
-import typings.typedoc.distLibUtilsEventsMod.EventDispatcher
-import typings.typedoc.distLibUtilsEventsMod.EventMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

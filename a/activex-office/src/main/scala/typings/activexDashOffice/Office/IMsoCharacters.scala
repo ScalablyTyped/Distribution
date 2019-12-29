@@ -12,7 +12,8 @@ class IMsoCharacters protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Font: ChartFont = js.native
-  var `Office.IMsoCharacters_typekey`: IMsoCharacters = js.native
+  @JSName("Office.IMsoCharacters_typekey")
+  var OfficeDotIMsoCharacters_typekey: IMsoCharacters = js.native
   val Parent: js.Any = js.native
   var PhoneticCharacters: String = js.native
   var Text: String = js.native

@@ -1,14 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_1A
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_1B
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_2A
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_2B
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_2U
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_3A
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_3B
-import typings.dwt.EnumDWT_OCRProPDFAVersion.OCRPPDFAV_3U
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

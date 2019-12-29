@@ -1,6 +1,5 @@
 package typings.mithril
 
-import typings.mithril.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

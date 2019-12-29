@@ -1,7 +1,5 @@
 package typings.atBlueprintjsTable
 
-import typings.atBlueprintjsTable.libEsmCommonRectMod.AnyRect
-import typings.atBlueprintjsTable.libEsmCommonRectMod.Rect
 import typings.react.reactMod.CSSProperties
 import typings.std.ClientRect
 import scala.scalajs.js

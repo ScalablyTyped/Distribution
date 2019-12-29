@@ -5,10 +5,6 @@ import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Dispatch
 import typings.redux.reduxMod.Middleware
 import typings.redux.reduxMod.Store
-import typings.reduxDashMockDashStore.reduxDashMockDashStoreMod.MockGetState
-import typings.reduxDashMockDashStore.reduxDashMockDashStoreMod.MockStore
-import typings.reduxDashMockDashStore.reduxDashMockDashStoreMod.MockStoreCreator
-import typings.reduxDashMockDashStore.reduxDashMockDashStoreMod.MockStoreEnhanced
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewSwitchingOptions.consolidateViews
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewSwitchingOptions.default
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewSwitchingOptions.skipAnimation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.officeDashJs.Office
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.Table.All
-import typings.officeDashJs.Office.Table.Data
-import typings.officeDashJs.Office.Table.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

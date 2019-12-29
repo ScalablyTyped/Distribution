@@ -2,7 +2,6 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
-import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreDirectGeometryMod.DirectGeometry
 import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcCoreGeometryMod.Geometry

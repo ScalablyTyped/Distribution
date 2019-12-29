@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreNumbers.`0DOT001`
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreNumbers.`0DOT1`
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreNumbers.`0.001`
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreNumbers.`0.1`
 import typings.atTensorflowTfjsDashCore.distTestUnderscoreUtilMod.DoneFn
 import typings.atTensorflowTfjsDashCore.distTypesMod.RecursiveArray
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core", "test_util")
 @js.native
 object test_util extends js.Object {
-  val TEST_EPSILON_FLOAT16: `0DOT1` = js.native
+  val TEST_EPSILON_FLOAT16: `0.1` = js.native
   def expectArrayBuffersEqual(actual: ArrayBuffer, expected: ArrayBuffer): Unit = js.native
   def expectArraysClose(actual: Double, expected: Double): Unit = js.native
   def expectArraysClose(actual: Double, expected: Double, epsilon: Double): Unit = js.native
@@ -40,6 +40,6 @@ object test_util extends js.Object {
   def expectPromiseToFail(fn: js.Function0[js.Promise[js.Object]], done: DoneFn): Unit = js.native
   def expectValuesInRange(actual: js.Array[Double], low: Double, high: Double): Unit = js.native
   def expectValuesInRange(actual: TypedArray, low: Double, high: Double): Unit = js.native
-  def testEpsilon(): `0DOT001` | `0DOT1` = js.native
+  def testEpsilon(): `0.001` | `0.1` = js.native
 }
 

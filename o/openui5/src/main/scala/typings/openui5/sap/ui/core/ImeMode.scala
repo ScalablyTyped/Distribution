@@ -1,10 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.ImeMode.Active
-import typings.openui5.sap.ui.core.ImeMode.Auto
-import typings.openui5.sap.ui.core.ImeMode.Disabled
-import typings.openui5.sap.ui.core.ImeMode.Inactive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

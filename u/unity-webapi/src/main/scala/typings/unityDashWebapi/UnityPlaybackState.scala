@@ -1,8 +1,6 @@
 package typings.unityDashWebapi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.unityDashWebapi.UnityPlaybackState.Paused
-import typings.unityDashWebapi.UnityPlaybackState.Playing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

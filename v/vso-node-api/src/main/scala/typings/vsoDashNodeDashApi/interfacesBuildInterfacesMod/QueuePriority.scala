@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueuePriority.AboveNormal
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueuePriority.BelowNormal
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueuePriority.High
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueuePriority.Low
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.QueuePriority.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

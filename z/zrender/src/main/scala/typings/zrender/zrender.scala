@@ -1,12 +1,6 @@
 package typings.zrender
 
 import org.scalablytyped.runtime.Instantiable6
-import typings.zrender.zrender.ColorStops
-import typings.zrender.zrender.GlobalCoords
-import typings.zrender.zrender.X
-import typings.zrender.zrender.X2
-import typings.zrender.zrender.Y
-import typings.zrender.zrender.Y2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,6 +2,7 @@ package typings.emberDashData.emberDashDataMod.DS
 
 import typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin
 import typings.atEmberObject.proxyMod.ObjectProxy
+import typings.atEmberObject.proxyMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DS.PromiseObject")
 @js.native
 class PromiseObject[T] ()
-  extends PromiseProxyMixin[T with typings.atEmberObject.proxyMod.default[js.Object]]
+  extends PromiseProxyMixin[T with default[js.Object]]
      with ObjectProxy[T]
 

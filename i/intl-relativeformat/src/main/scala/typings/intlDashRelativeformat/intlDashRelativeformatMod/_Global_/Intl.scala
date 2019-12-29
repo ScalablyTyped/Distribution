@@ -2,6 +2,7 @@ package typings.intlDashRelativeformat.intlDashRelativeformatMod._Global_
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.IntlRelativeTimeFormatOptions
+import typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.default
 import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.RelativeTimeLocaleData
 import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.UnpackedLocaleFieldsData
 import typings.intlDashRelativeformat.intlDashRelativeformatStrings.localeMatcher
@@ -15,14 +16,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object Intl extends js.Object {
   @js.native
-  class RelativeTimeFormat ()
-    extends typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.default
+  class RelativeTimeFormat () extends default
   
   @js.native
-  object RelativeTimeFormat
-    extends Instantiable0[
-          typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.default
-        ] {
+  object RelativeTimeFormat extends Instantiable0[default] {
     val __INTERNAL_SLOT_MAP__ : js.Any = js.native
     var __defaultLocale: js.Any = js.native
     var availableLocales: js.Any = js.native

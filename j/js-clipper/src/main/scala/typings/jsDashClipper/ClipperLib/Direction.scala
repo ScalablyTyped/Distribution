@@ -1,8 +1,6 @@
 package typings.jsDashClipper.ClipperLib
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsDashClipper.ClipperLib.Direction.dLeftToRight
-import typings.jsDashClipper.ClipperLib.Direction.dRightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,18 +9,18 @@ trait OneToManyRelationshipMetadata extends js.Object {
   var CascadeConfiguration: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.CascadeConfiguration
   var HasChanged: js.Any
   var IntroducedVersion: js.Any
-  var IsCustomRelationship: scala.Boolean
-  var IsCustomizable: ManagedProperty[scala.Boolean]
+  var IsCustomRelationship: Boolean
+  var IsCustomizable: ManagedProperty[Boolean]
   var IsHierarchical: js.Any
-  var IsManaged: scala.Boolean
-  var IsValidForAdvancedFind: scala.Boolean
-  var MetadataId: java.lang.String
-  var ReferencedAttribute: java.lang.String
-  var ReferencedEntity: java.lang.String
-  var ReferencingAttribute: java.lang.String
-  var ReferencingEntity: java.lang.String
-  var RelationshipType: java.lang.String
-  var SchemaName: java.lang.String
+  var IsManaged: Boolean
+  var IsValidForAdvancedFind: Boolean
+  var MetadataId: String
+  var ReferencedAttribute: String
+  var ReferencedEntity: String
+  var ReferencingAttribute: String
+  var ReferencingEntity: String
+  var RelationshipType: String
+  var SchemaName: String
   var SecurityTypes: js.Any
 }
 
@@ -31,18 +31,18 @@ object OneToManyRelationshipMetadata {
     CascadeConfiguration: CascadeConfiguration,
     HasChanged: js.Any,
     IntroducedVersion: js.Any,
-    IsCustomRelationship: scala.Boolean,
-    IsCustomizable: ManagedProperty[scala.Boolean],
+    IsCustomRelationship: Boolean,
+    IsCustomizable: ManagedProperty[Boolean],
     IsHierarchical: js.Any,
-    IsManaged: scala.Boolean,
-    IsValidForAdvancedFind: scala.Boolean,
-    MetadataId: java.lang.String,
-    ReferencedAttribute: java.lang.String,
-    ReferencedEntity: java.lang.String,
-    ReferencingAttribute: java.lang.String,
-    ReferencingEntity: java.lang.String,
-    RelationshipType: java.lang.String,
-    SchemaName: java.lang.String,
+    IsManaged: Boolean,
+    IsValidForAdvancedFind: Boolean,
+    MetadataId: String,
+    ReferencedAttribute: String,
+    ReferencedEntity: String,
+    ReferencingAttribute: String,
+    ReferencingEntity: String,
+    RelationshipType: String,
+    SchemaName: String,
     SecurityTypes: js.Any
   ): OneToManyRelationshipMetadata = {
     val __obj = js.Dynamic.literal(AssociatedMenuConfiguration = AssociatedMenuConfiguration.asInstanceOf[js.Any], CascadeConfiguration = CascadeConfiguration.asInstanceOf[js.Any], HasChanged = HasChanged.asInstanceOf[js.Any], IntroducedVersion = IntroducedVersion.asInstanceOf[js.Any], IsCustomRelationship = IsCustomRelationship.asInstanceOf[js.Any], IsCustomizable = IsCustomizable.asInstanceOf[js.Any], IsHierarchical = IsHierarchical.asInstanceOf[js.Any], IsManaged = IsManaged.asInstanceOf[js.Any], IsValidForAdvancedFind = IsValidForAdvancedFind.asInstanceOf[js.Any], MetadataId = MetadataId.asInstanceOf[js.Any], ReferencedAttribute = ReferencedAttribute.asInstanceOf[js.Any], ReferencedEntity = ReferencedEntity.asInstanceOf[js.Any], ReferencingAttribute = ReferencingAttribute.asInstanceOf[js.Any], ReferencingEntity = ReferencingEntity.asInstanceOf[js.Any], RelationshipType = RelationshipType.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any], SecurityTypes = SecurityTypes.asInstanceOf[js.Any])

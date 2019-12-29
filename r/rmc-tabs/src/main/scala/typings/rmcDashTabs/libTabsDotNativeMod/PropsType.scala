@@ -5,7 +5,7 @@ import typings.react.reactMod.ReactNode
 import typings.rmcDashTabs.Anon_TabBar
 import typings.rmcDashTabs.libModelsMod.Models.TabData
 import typings.rmcDashTabs.libPropsTypeMod.TabBarPropsType
-import typings.rmcDashTabs.rmcDashTabsNumbers.`false`
+import typings.rmcDashTabs.rmcDashTabsBooleans.`false`
 import typings.rmcDashTabs.rmcDashTabsStrings.bottom
 import typings.rmcDashTabs.rmcDashTabsStrings.horizontal
 import typings.rmcDashTabs.rmcDashTabsStrings.left

@@ -4,7 +4,6 @@ import typings.leaflet.leafletMod.Layer
 import typings.leafletDotMarkercluster.leafletMod.MarkerClusterGroupOptions
 import typings.reactDashLeaflet.reactDashLeafletMod.MapLayer
 import typings.reactDashLeaflet.reactDashLeafletMod.MapLayerProps
-import typings.reactDashLeafletDashMarkercluster.reactDashLeafletDashMarkerclusterMod.MarkerClusterGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.realm.Realm.Sync
 
 import org.scalablytyped.runtime.TopLevel
-import typings.realm.Realm.Sync.SubscriptionState.Complete
-import typings.realm.Realm.Sync.SubscriptionState.Creating
-import typings.realm.Realm.Sync.SubscriptionState.Error
-import typings.realm.Realm.Sync.SubscriptionState.Invalidated
-import typings.realm.Realm.Sync.SubscriptionState.Pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

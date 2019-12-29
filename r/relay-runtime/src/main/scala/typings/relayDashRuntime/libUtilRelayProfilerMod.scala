@@ -1,8 +1,6 @@
 package typings.relayDashRuntime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayDashRuntime.libUtilRelayProfilerMod.Handler
-import typings.relayDashRuntime.libUtilRelayProfilerMod.ProfileHandler
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -12,7 +12,8 @@ class PublishObject protected () extends js.Object {
   var FileName: String = js.native
   var HTMLVersion: PpHTMLVersion = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.PublishObject_typekey`: PublishObject = js.native
+  @JSName("PowerPoint.PublishObject_typekey")
+  var PowerPointDotPublishObject_typekey: PublishObject = js.native
   var RangeEnd: Double = js.native
   var RangeStart: Double = js.native
   var SlideShowName: String = js.native

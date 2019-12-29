@@ -1,18 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.ClanInfo
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.ClanTag
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.Facebook
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.GameDataBlob
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.GameExtraInfo
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.LastSeen
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.Metadata
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.PlayerName
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.Presence
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.QueryPort
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.SourceID
-import typings.steamDashClient.steamDashClientMod.EClientPersonaStateFlag.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

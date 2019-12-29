@@ -1,6 +1,5 @@
 package typings.postmark
 
-import typings.postmark.distClientAccountClientMod.AccountClient
 import typings.postmark.distClientModelsClientCallbackMod.Callback
 import typings.postmark.distClientModelsClientDefaultResponseMod.DefaultResponse
 import typings.postmark.distClientModelsDomainsDomainMod.DomainDetails

@@ -20,27 +20,27 @@ class $locationShim protected () extends js.Object {
     locationStrategy: LocationStrategy
   ) = this()
   @JSName("$$absUrl")
-  var $$absUrl: js.Any = js.native
+  var DollarDollarabsUrl: js.Any = js.native
   @JSName("$$changeListeners")
-  var $$changeListeners: js.Any = js.native
+  var DollarDollarchangeListeners: js.Any = js.native
   @JSName("$$hash")
-  var $$hash: js.Any = js.native
+  var DollarDollarhash: js.Any = js.native
   @JSName("$$host")
-  var $$host: js.Any = js.native
+  var DollarDollarhost: js.Any = js.native
   @JSName("$$path")
-  var $$path: js.Any = js.native
+  var DollarDollarpath: js.Any = js.native
   @JSName("$$port")
-  var $$port: js.Any = js.native
+  var DollarDollarport: js.Any = js.native
   @JSName("$$protocol")
-  var $$protocol: js.Any = js.native
+  var DollarDollarprotocol: js.Any = js.native
   @JSName("$$replace")
-  var $$replace: js.Any = js.native
+  var DollarDollarreplace: js.Any = js.native
   @JSName("$$search")
-  var $$search: js.Any = js.native
+  var DollarDollarsearch: js.Any = js.native
   @JSName("$$state")
-  var $$state: js.Any = js.native
+  var DollarDollarstate: js.Any = js.native
   @JSName("$$url")
-  var $$url: js.Any = js.native
+  var DollarDollarurl: js.Any = js.native
   /**
     * This function emulates the $browser.state() function from AngularJS. It will cause
     * history.state to be cached unless changed with deep equality check.
@@ -71,7 +71,7 @@ class $locationShim protected () extends js.Object {
     * @param url The URL string.
     */
   @JSName("$$parse")
-  def $$parse(url: String): Unit = js.native
+  def DollarDollarparse(url: String): Unit = js.native
   /**
     * Parses the provided URL and its relative URL.
     *
@@ -79,9 +79,9 @@ class $locationShim protected () extends js.Object {
     * @param relHref A URL string relative to the full URL string.
     */
   @JSName("$$parseLinkUrl")
-  def $$parseLinkUrl(url: String): Boolean = js.native
+  def DollarDollarparseLinkUrl(url: String): Boolean = js.native
   @JSName("$$parseLinkUrl")
-  def $$parseLinkUrl(url: String, relHref: String): Boolean = js.native
+  def DollarDollarparseLinkUrl(url: String, relHref: String): Boolean = js.native
   /**
     * Retrieves the full URL representation with all segments encoded according to
     * rules specified in
@@ -95,9 +95,6 @@ class $locationShim protected () extends js.Object {
     * ```
     */
   def absUrl(): String = js.native
-  def hash(): this.type = js.native
-  def hash(hash: String): this.type = js.native
-  def hash(hash: Double): this.type = js.native
   /**
     * Retrieves the current hash fragment, or changes the hash fragment and returns a reference to
     * its own instance.
@@ -108,8 +105,11 @@ class $locationShim protected () extends js.Object {
     * // => "hashValue"
     * ```
     */
+  def hash(): String = js.native
+  def hash(hash: String): this.type = js.native
+  def hash(hash: Double): this.type = js.native
   @JSName("hash")
-  def hash_String(): String = js.native
+  def hash_This(): this.type = js.native
   /**
     * Retrieves the protocol of the current URL.
     *
@@ -150,9 +150,6 @@ class $locationShim protected () extends js.Object {
     fn: js.Function4[/* url */ String, /* state */ js.Any, /* oldUrl */ String, /* oldState */ js.Any, Unit],
     err: js.Function1[/* e */ Error, Unit]
   ): Unit = js.native
-  def path(): this.type = js.native
-  def path(path: String): this.type = js.native
-  def path(path: Double): this.type = js.native
   /**
     * Retrieves the path of the current URL, or changes the path and returns a reference to its own
     * instance.
@@ -166,8 +163,11 @@ class $locationShim protected () extends js.Object {
     * // => "/some/path"
     * ```
     */
+  def path(): String = js.native
+  def path(path: String): this.type = js.native
+  def path(path: Double): this.type = js.native
   @JSName("path")
-  def path_String(): String = js.native
+  def path_This(): this.type = js.native
   /**
     * Retrieves the port of the current URL.
     *

@@ -1,10 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.Directions.TimeType.arrival
-import typings.bingmaps.Microsoft.Maps.Directions.TimeType.departure
-import typings.bingmaps.Microsoft.Maps.Directions.TimeType.firstAvailable
-import typings.bingmaps.Microsoft.Maps.Directions.TimeType.lastAvailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

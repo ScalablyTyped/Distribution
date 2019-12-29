@@ -35,13 +35,13 @@ trait Hotkey extends js.Object {
   /**
     * The function to execute when the key(s) are pressed. Passes along two arguments, event and hotkey
     */
-  def callback(event: Event, hotkey: typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey): Unit
+  def callback(event: Event, hotkey: Hotkey): Unit
 }
 
 object Hotkey {
   @scala.inline
   def apply(
-    callback: (Event, typings.angularDashHotkeys.angularDashHotkeysMod.angularMod.hotkeys.Hotkey) => Unit,
+    callback: (Event, Hotkey) => Unit,
     combo: String | js.Array[String],
     action: String = null,
     allowIn: js.Array[INPUT | SELECT | TEXTAREA] = null,

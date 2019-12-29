@@ -19,7 +19,8 @@ class CardView protected () extends js.Object {
   var LockUserChanges: Boolean = js.native
   var MultiLineFieldHeight: Double = js.native
   var Name: String = js.native
-  var `Outlook.CardView_typekey`: CardView = js.native
+  @JSName("Outlook.CardView_typekey")
+  var OutlookDotCardView_typekey: CardView = js.native
   val Parent: js.Any = js.native
   val SaveOption: OlViewSaveOption = js.native
   val Session: NameSpace = js.native

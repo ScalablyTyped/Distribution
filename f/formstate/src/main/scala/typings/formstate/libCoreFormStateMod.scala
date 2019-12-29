@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.formstate.formstateStrings.`object`
 import typings.formstate.formstateStrings.array
 import typings.formstate.formstateStrings.map
-import typings.formstate.libCoreFormStateMod.ValidatableMapOrArray
 import typings.formstate.libCoreTypesMod.ComposibleValidatable
 import typings.formstate.libCoreTypesMod.Validator
 import typings.std.Map

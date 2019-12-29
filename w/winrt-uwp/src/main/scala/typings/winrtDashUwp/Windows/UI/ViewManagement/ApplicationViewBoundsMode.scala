@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewBoundsMode.useCoreWindow
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewBoundsMode.useVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

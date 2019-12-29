@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`draw-complete`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait PolylineDrawActionDrawCompleteEvent extends js.Object {
   var defaultPrevented: Boolean
   var preventDefault: js.Function
-  var `type`: String
+  var `type`: `draw-complete`
   var vertices: js.Array[js.Array[Double]]
 }
 
@@ -16,7 +17,7 @@ object PolylineDrawActionDrawCompleteEvent {
   def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
-    `type`: String,
+    `type`: `draw-complete`,
     vertices: js.Array[js.Array[Double]]
   ): PolylineDrawActionDrawCompleteEvent = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])

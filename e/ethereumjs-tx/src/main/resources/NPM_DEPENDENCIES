@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ethereumjs-tx" : "2.1.1"
+      "ethereumjs-tx" : "2.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ethereumjs-tx" : "2.1.1"
+      "ethereumjs-tx" : "2.1.2"
     }
   ],
   "compile-devDependencies" : [

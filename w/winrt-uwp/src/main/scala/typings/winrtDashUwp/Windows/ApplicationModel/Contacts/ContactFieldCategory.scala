@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory.home
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory.mobile
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory.other
-import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory.work
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

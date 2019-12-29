@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Printers.Extensions
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidMaterialSelection
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidModel
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidPrintTicket
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.modelExceedsPrintBed
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.modelNotManifold
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.unknown
-import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.uploadFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

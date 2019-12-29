@@ -1,13 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapImageFilter.TWIF_AUTO
-import typings.dwt.EnumDWT_CapImageFilter.TWIF_BANDPASS
-import typings.dwt.EnumDWT_CapImageFilter.TWIF_FINELINE
-import typings.dwt.EnumDWT_CapImageFilter.TWIF_HIGHPASS
-import typings.dwt.EnumDWT_CapImageFilter.TWIF_LOWPASS
-import typings.dwt.EnumDWT_CapImageFilter.TWIF_NONE
-import typings.dwt.EnumDWT_CapImageFilter.TWIF_TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

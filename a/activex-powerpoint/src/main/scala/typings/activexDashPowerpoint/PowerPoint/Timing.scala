@@ -16,7 +16,8 @@ class Timing protected () extends js.Object {
   var Decelerate: Double = js.native
   var Duration: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Timing_typekey`: Timing = js.native
+  @JSName("PowerPoint.Timing_typekey")
+  var PowerPointDotTiming_typekey: Timing = js.native
   var RepeatCount: Double = js.native
   var RepeatDuration: Double = js.native
   var Restart: MsoAnimEffectRestart = js.native

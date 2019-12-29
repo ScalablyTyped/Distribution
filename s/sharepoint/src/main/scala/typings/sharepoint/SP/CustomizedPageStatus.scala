@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.CustomizedPageStatus.customized
-import typings.sharepoint.SP.CustomizedPageStatus.none
-import typings.sharepoint.SP.CustomizedPageStatus.uncustomized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

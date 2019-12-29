@@ -1,12 +1,6 @@
 package typings.evernote.evernoteMod.Evernote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.evernote.evernoteMod.Evernote.PrivilegeLevel.ADMIN
-import typings.evernote.evernoteMod.Evernote.PrivilegeLevel.MANAGER
-import typings.evernote.evernoteMod.Evernote.PrivilegeLevel.NORMAL
-import typings.evernote.evernoteMod.Evernote.PrivilegeLevel.PREMIUM
-import typings.evernote.evernoteMod.Evernote.PrivilegeLevel.SUPPORT
-import typings.evernote.evernoteMod.Evernote.PrivilegeLevel.VIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,11 @@
 package typings.aframe.aframeMod.THREE
 
+import typings.three.threeMod.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("aframe", "THREE.Geometry")
 @js.native
-class GeometryCls ()
-  extends typings.three.threeMod.Geometry
+class GeometryCls () extends Geometry
 

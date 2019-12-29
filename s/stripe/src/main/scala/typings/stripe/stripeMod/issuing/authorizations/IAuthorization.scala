@@ -6,7 +6,7 @@ import typings.stripe.stripeMod.balance.IBalanceTransaction
 import typings.stripe.stripeMod.issuing.cardholders.ICardholder
 import typings.stripe.stripeMod.issuing.cards.IIssuingCard
 import typings.stripe.stripeMod.issuing.transactions.ITransaction
-import typings.stripe.stripeStrings.issuingDOTauthorization
+import typings.stripe.stripeStrings.issuingDotauthorization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,7 +66,7 @@ trait IAuthorization extends IResourceObject {
     * String representing the object’s type. Objects of the same type share the same value.
     */
   @JSName("object")
-  var object_IAuthorization: issuingDOTauthorization
+  var object_IAuthorization: issuingDotauthorization
   /**
     * The amount the user is requesting to be authorized. This field will only be non-zero during an issuing.authorization.request webhook.
     */
@@ -115,7 +115,7 @@ object IAuthorization {
     livemode: Boolean,
     merchant_data: MerchantData,
     metadata: IMetadata,
-    `object`: issuingDOTauthorization,
+    `object`: issuingDotauthorization,
     pending_authorized_amount: Double,
     pending_held_amount: Double,
     request_history: js.Array[RequestHistory],

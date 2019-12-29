@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/forms", "ɵangular_packages_forms_forms_j")
+@JSImport("@angular/forms", "\u0275angular_packages_forms_forms_j")
 @js.native
 object ɵangular_packages_forms_forms_j
   extends TopLevel[InjectionToken[js.Any]]

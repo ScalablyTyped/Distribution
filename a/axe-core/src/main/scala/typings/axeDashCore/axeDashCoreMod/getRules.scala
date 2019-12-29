@@ -12,7 +12,7 @@ object getRules extends js.Object {
   	 * @param  {Array}  tags  Optional array of tags
   	 * @return {Array}  Array of rules
   	 */
-  def apply(): js.Array[js.Object] = js.native
-  def apply(tags: js.Array[String]): js.Array[js.Object] = js.native
+  def apply(): js.Array[RuleMetadata] = js.native
+  def apply(tags: js.Array[String]): js.Array[RuleMetadata] = js.native
 }
 

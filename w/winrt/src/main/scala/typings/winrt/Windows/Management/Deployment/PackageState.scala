@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Management.Deployment.PackageState.licenseInvalid
-import typings.winrt.Windows.Management.Deployment.PackageState.modified
-import typings.winrt.Windows.Management.Deployment.PackageState.normal
-import typings.winrt.Windows.Management.Deployment.PackageState.tampered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

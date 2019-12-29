@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangeKind.added
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangeKind.propertiesChanged
-import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangeKind.removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

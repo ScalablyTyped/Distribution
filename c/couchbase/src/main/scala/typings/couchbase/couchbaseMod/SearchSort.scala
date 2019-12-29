@@ -1,9 +1,5 @@
 package typings.couchbase.couchbaseMod
 
-import typings.couchbase.couchbaseMod.SearchSort.FieldSort
-import typings.couchbase.couchbaseMod.SearchSort.GeoDistanceSort
-import typings.couchbase.couchbaseMod.SearchSort.IdSort
-import typings.couchbase.couchbaseMod.SearchSort.ScoreSort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

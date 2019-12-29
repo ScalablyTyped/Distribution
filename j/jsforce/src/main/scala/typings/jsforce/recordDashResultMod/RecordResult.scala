@@ -1,7 +1,7 @@
 package typings.jsforce.recordDashResultMod
 
-import typings.jsforce.jsforceNumbers.`false`
-import typings.jsforce.jsforceNumbers.`true`
+import typings.jsforce.jsforceBooleans.`false`
+import typings.jsforce.jsforceBooleans.`true`
 import typings.jsforce.salesforceDashIdMod.SalesforceId
 import scala.scalajs.js
 import scala.scalajs.js.`|`

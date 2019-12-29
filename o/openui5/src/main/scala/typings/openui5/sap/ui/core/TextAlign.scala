@@ -1,12 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.TextAlign.Begin
-import typings.openui5.sap.ui.core.TextAlign.Center
-import typings.openui5.sap.ui.core.TextAlign.End
-import typings.openui5.sap.ui.core.TextAlign.Initial
-import typings.openui5.sap.ui.core.TextAlign.Left
-import typings.openui5.sap.ui.core.TextAlign.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

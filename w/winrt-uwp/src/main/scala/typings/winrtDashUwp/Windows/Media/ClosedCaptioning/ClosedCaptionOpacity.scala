@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.ClosedCaptioning
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.default
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.oneHundredPercent
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.seventyFivePercent
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.twentyFivePercent
-import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.zeroPercent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

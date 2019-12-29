@@ -2,7 +2,6 @@ package typings.wonderDotJs
 
 import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
 import typings.wonderDotJs.distEs2015EventObjectMouseEventMod.MouseEvent
-import typings.wonderDotJs.distEs2015EventObjectMousePointEventMod.MousePointEvent
 import typings.wonderDotJs.distEs2015EventObjectPointEventMod.PointEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

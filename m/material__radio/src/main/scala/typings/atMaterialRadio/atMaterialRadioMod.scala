@@ -1,7 +1,6 @@
 package typings.atMaterialRadio
 
 import typings.atMaterialRadio.adapterMod.MDCRadioAdapter
-import typings.atMaterialRadio.atMaterialRadioMod.MDCRadio
 import typings.atMaterialRadio.foundationMod.default
 import typings.atMaterialRipple.atMaterialRippleMod.MDCRipple
 import typings.std.Element

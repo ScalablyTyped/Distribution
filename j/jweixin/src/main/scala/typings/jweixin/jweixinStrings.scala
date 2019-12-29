@@ -91,73 +91,73 @@ object jweixinStrings {
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait `menuItem:addContact` extends menuBase
+  sealed trait menuItemColonaddContact extends menuBase
   
   @js.native
-  sealed trait `menuItem:copyUrl` extends menuProtected
+  sealed trait menuItemColoncopyUrl extends menuProtected
   
   @js.native
-  sealed trait `menuItem:dayMode` extends menuBase
+  sealed trait menuItemColondayMode extends menuBase
   
   @js.native
-  sealed trait `menuItem:delete` extends menuProtected
+  sealed trait menuItemColondelete extends menuProtected
   
   @js.native
-  sealed trait `menuItem:editTag` extends menuProtected
+  sealed trait menuItemColoneditTag extends menuProtected
   
   @js.native
-  sealed trait `menuItem:exposeArticle` extends menuBase
+  sealed trait menuItemColonexposeArticle extends menuBase
   
   @js.native
-  sealed trait `menuItem:favorite` extends menuShare
+  sealed trait menuItemColonfavorite extends menuShare
   
   @js.native
-  sealed trait `menuItem:nightMode` extends menuBase
+  sealed trait menuItemColonnightMode extends menuBase
   
   @js.native
-  sealed trait `menuItem:openWithQQBrowser` extends menuProtected
+  sealed trait menuItemColonopenWithQQBrowser extends menuProtected
   
   @js.native
-  sealed trait `menuItem:openWithSafari` extends menuProtected
+  sealed trait menuItemColonopenWithSafari extends menuProtected
   
   @js.native
-  sealed trait `menuItem:originPage` extends menuProtected
+  sealed trait menuItemColonoriginPage extends menuProtected
   
   @js.native
-  sealed trait `menuItem:profile` extends menuBase
+  sealed trait menuItemColonprofile extends menuBase
   
   @js.native
-  sealed trait `menuItem:readMode` extends menuProtected
+  sealed trait menuItemColonreadMode extends menuProtected
   
   @js.native
-  sealed trait `menuItem:refresh` extends menuBase
+  sealed trait menuItemColonrefresh extends menuBase
   
   @js.native
-  sealed trait `menuItem:setFont` extends menuBase
+  sealed trait menuItemColonsetFont extends menuBase
   
   @js.native
-  sealed trait `menuItem:share:QZone` extends menuShare
+  sealed trait menuItemColonshareColonQZone extends menuShare
   
   @js.native
-  sealed trait `menuItem:share:appMessage` extends menuShare
+  sealed trait menuItemColonshareColonappMessage extends menuShare
   
   @js.native
-  sealed trait `menuItem:share:brand` extends menuProtected
+  sealed trait menuItemColonshareColonbrand extends menuProtected
   
   @js.native
-  sealed trait `menuItem:share:email` extends menuProtected
+  sealed trait menuItemColonshareColonemail extends menuProtected
   
   @js.native
-  sealed trait `menuItem:share:facebook` extends menuShare
+  sealed trait menuItemColonshareColonfacebook extends menuShare
   
   @js.native
-  sealed trait `menuItem:share:qq` extends menuShare
+  sealed trait menuItemColonshareColonqq extends menuShare
   
   @js.native
-  sealed trait `menuItem:share:timeline` extends menuShare
+  sealed trait menuItemColonshareColontimeline extends menuShare
   
   @js.native
-  sealed trait `menuItem:share:weiboApp` extends menuShare
+  sealed trait menuItemColonshareColonweiboApp extends menuShare
   
   @js.native
   sealed trait music extends js.Object
@@ -238,7 +238,7 @@ object jweixinStrings {
   sealed trait uploadVoice extends ApiMethod
   
   @js.native
-  sealed trait videoBACKSLASHu6216link extends js.Object
+  sealed trait video或link extends js.Object
   
   @js.native
   sealed trait wgs84 extends js.Object
@@ -295,51 +295,51 @@ object jweixinStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
-  def `menuItem:addContact`: `menuItem:addContact` = "menuItem:addContact".asInstanceOf[`menuItem:addContact`]
+  def menuItemColonaddContact: menuItemColonaddContact = "menuItem:addContact".asInstanceOf[menuItemColonaddContact]
   @scala.inline
-  def `menuItem:copyUrl`: `menuItem:copyUrl` = "menuItem:copyUrl".asInstanceOf[`menuItem:copyUrl`]
+  def menuItemColoncopyUrl: menuItemColoncopyUrl = "menuItem:copyUrl".asInstanceOf[menuItemColoncopyUrl]
   @scala.inline
-  def `menuItem:dayMode`: `menuItem:dayMode` = "menuItem:dayMode".asInstanceOf[`menuItem:dayMode`]
+  def menuItemColondayMode: menuItemColondayMode = "menuItem:dayMode".asInstanceOf[menuItemColondayMode]
   @scala.inline
-  def `menuItem:delete`: `menuItem:delete` = "menuItem:delete".asInstanceOf[`menuItem:delete`]
+  def menuItemColondelete: menuItemColondelete = "menuItem:delete".asInstanceOf[menuItemColondelete]
   @scala.inline
-  def `menuItem:editTag`: `menuItem:editTag` = "menuItem:editTag".asInstanceOf[`menuItem:editTag`]
+  def menuItemColoneditTag: menuItemColoneditTag = "menuItem:editTag".asInstanceOf[menuItemColoneditTag]
   @scala.inline
-  def `menuItem:exposeArticle`: `menuItem:exposeArticle` = "menuItem:exposeArticle".asInstanceOf[`menuItem:exposeArticle`]
+  def menuItemColonexposeArticle: menuItemColonexposeArticle = "menuItem:exposeArticle".asInstanceOf[menuItemColonexposeArticle]
   @scala.inline
-  def `menuItem:favorite`: `menuItem:favorite` = "menuItem:favorite".asInstanceOf[`menuItem:favorite`]
+  def menuItemColonfavorite: menuItemColonfavorite = "menuItem:favorite".asInstanceOf[menuItemColonfavorite]
   @scala.inline
-  def `menuItem:nightMode`: `menuItem:nightMode` = "menuItem:nightMode".asInstanceOf[`menuItem:nightMode`]
+  def menuItemColonnightMode: menuItemColonnightMode = "menuItem:nightMode".asInstanceOf[menuItemColonnightMode]
   @scala.inline
-  def `menuItem:openWithQQBrowser`: `menuItem:openWithQQBrowser` = "menuItem:openWithQQBrowser".asInstanceOf[`menuItem:openWithQQBrowser`]
+  def menuItemColonopenWithQQBrowser: menuItemColonopenWithQQBrowser = "menuItem:openWithQQBrowser".asInstanceOf[menuItemColonopenWithQQBrowser]
   @scala.inline
-  def `menuItem:openWithSafari`: `menuItem:openWithSafari` = "menuItem:openWithSafari".asInstanceOf[`menuItem:openWithSafari`]
+  def menuItemColonopenWithSafari: menuItemColonopenWithSafari = "menuItem:openWithSafari".asInstanceOf[menuItemColonopenWithSafari]
   @scala.inline
-  def `menuItem:originPage`: `menuItem:originPage` = "menuItem:originPage".asInstanceOf[`menuItem:originPage`]
+  def menuItemColonoriginPage: menuItemColonoriginPage = "menuItem:originPage".asInstanceOf[menuItemColonoriginPage]
   @scala.inline
-  def `menuItem:profile`: `menuItem:profile` = "menuItem:profile".asInstanceOf[`menuItem:profile`]
+  def menuItemColonprofile: menuItemColonprofile = "menuItem:profile".asInstanceOf[menuItemColonprofile]
   @scala.inline
-  def `menuItem:readMode`: `menuItem:readMode` = "menuItem:readMode".asInstanceOf[`menuItem:readMode`]
+  def menuItemColonreadMode: menuItemColonreadMode = "menuItem:readMode".asInstanceOf[menuItemColonreadMode]
   @scala.inline
-  def `menuItem:refresh`: `menuItem:refresh` = "menuItem:refresh".asInstanceOf[`menuItem:refresh`]
+  def menuItemColonrefresh: menuItemColonrefresh = "menuItem:refresh".asInstanceOf[menuItemColonrefresh]
   @scala.inline
-  def `menuItem:setFont`: `menuItem:setFont` = "menuItem:setFont".asInstanceOf[`menuItem:setFont`]
+  def menuItemColonsetFont: menuItemColonsetFont = "menuItem:setFont".asInstanceOf[menuItemColonsetFont]
   @scala.inline
-  def `menuItem:share:QZone`: `menuItem:share:QZone` = "menuItem:share:QZone".asInstanceOf[`menuItem:share:QZone`]
+  def menuItemColonshareColonQZone: menuItemColonshareColonQZone = "menuItem:share:QZone".asInstanceOf[menuItemColonshareColonQZone]
   @scala.inline
-  def `menuItem:share:appMessage`: `menuItem:share:appMessage` = "menuItem:share:appMessage".asInstanceOf[`menuItem:share:appMessage`]
+  def menuItemColonshareColonappMessage: menuItemColonshareColonappMessage = "menuItem:share:appMessage".asInstanceOf[menuItemColonshareColonappMessage]
   @scala.inline
-  def `menuItem:share:brand`: `menuItem:share:brand` = "menuItem:share:brand".asInstanceOf[`menuItem:share:brand`]
+  def menuItemColonshareColonbrand: menuItemColonshareColonbrand = "menuItem:share:brand".asInstanceOf[menuItemColonshareColonbrand]
   @scala.inline
-  def `menuItem:share:email`: `menuItem:share:email` = "menuItem:share:email".asInstanceOf[`menuItem:share:email`]
+  def menuItemColonshareColonemail: menuItemColonshareColonemail = "menuItem:share:email".asInstanceOf[menuItemColonshareColonemail]
   @scala.inline
-  def `menuItem:share:facebook`: `menuItem:share:facebook` = "menuItem:share:facebook".asInstanceOf[`menuItem:share:facebook`]
+  def menuItemColonshareColonfacebook: menuItemColonshareColonfacebook = "menuItem:share:facebook".asInstanceOf[menuItemColonshareColonfacebook]
   @scala.inline
-  def `menuItem:share:qq`: `menuItem:share:qq` = "menuItem:share:qq".asInstanceOf[`menuItem:share:qq`]
+  def menuItemColonshareColonqq: menuItemColonshareColonqq = "menuItem:share:qq".asInstanceOf[menuItemColonshareColonqq]
   @scala.inline
-  def `menuItem:share:timeline`: `menuItem:share:timeline` = "menuItem:share:timeline".asInstanceOf[`menuItem:share:timeline`]
+  def menuItemColonshareColontimeline: menuItemColonshareColontimeline = "menuItem:share:timeline".asInstanceOf[menuItemColonshareColontimeline]
   @scala.inline
-  def `menuItem:share:weiboApp`: `menuItem:share:weiboApp` = "menuItem:share:weiboApp".asInstanceOf[`menuItem:share:weiboApp`]
+  def menuItemColonshareColonweiboApp: menuItemColonshareColonweiboApp = "menuItem:share:weiboApp".asInstanceOf[menuItemColonshareColonweiboApp]
   @scala.inline
   def music: music = "music".asInstanceOf[music]
   @scala.inline
@@ -393,7 +393,7 @@ object jweixinStrings {
   @scala.inline
   def uploadVoice: uploadVoice = "uploadVoice".asInstanceOf[uploadVoice]
   @scala.inline
-  def videoBACKSLASHu6216link: videoBACKSLASHu6216link = "video\u6216link".asInstanceOf[videoBACKSLASHu6216link]
+  def video或link: video或link = "video\u6216link".asInstanceOf[video或link]
   @scala.inline
   def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
   @scala.inline

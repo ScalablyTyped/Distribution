@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.libTableFilterDropdownMod.FilterMenu
 import typings.antd.libTableInterfaceMod.ColumnFilterItem
 import typings.antd.libTableInterfaceMod.ColumnProps
 import typings.antd.libTableInterfaceMod.FilterMenuProps

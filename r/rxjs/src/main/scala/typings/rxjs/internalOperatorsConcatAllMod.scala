@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/operators/concatAll", JSImport.Namespace)
 @js.native
 object internalOperatorsConcatAllMod extends js.Object {
-  def concatAll[T](): OperatorFunction[ObservableInput[T], T] = js.native
+  def concatAll[R](): OperatorFunction[_, R] = js.native
   @JSName("concatAll")
-  def concatAll_R[R](): OperatorFunction[_, R] = js.native
+  def concatAll_T[T](): OperatorFunction[ObservableInput[T], T] = js.native
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait IAction extends IBase {
   /** [Config Option] (String) */
-  var action: js.UndefOr[java.lang.String] = js.undefined
+  var action: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.app.Application) */
   var application: js.UndefOr[IApplication] = js.undefined
   /** [Config Option] (Array) */
@@ -23,7 +23,7 @@ trait IAction extends IBase {
   /** [Method] Returns the value of action
   		* @returns String
   		*/
-  var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAction: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of application
   		* @returns Ext.app.Application
   		*/
@@ -55,7 +55,7 @@ trait IAction extends IBase {
   /** [Method] Returns the value of url
   		* @returns String
   		*/
-  var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Resumes the execution of this Action or starts it if it had not been started already */
   var resume: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Object) */
@@ -63,7 +63,7 @@ trait IAction extends IBase {
   /** [Method] Sets the value of action
   		* @param action String The new value.
   		*/
-  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of application
   		* @param application Ext.app.Application The new value.
   		*/
@@ -95,15 +95,15 @@ trait IAction extends IBase {
   /** [Method] Sets the value of url
   		* @param url String The new value.
   		*/
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object IAction {
   @scala.inline
   def apply(
-    action: java.lang.String = null,
+    action: String = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     application: IApplication = null,
@@ -116,17 +116,17 @@ object IAction {
     controller: IController = null,
     destroy: () => Unit = null,
     execute: () => Unit = null,
-    extend: java.lang.String = null,
-    getAction: () => java.lang.String = null,
+    extend: String = null,
+    getAction: () => String = null,
     getApplication: () => IApplication = null,
     getArgs: () => Array = null,
     getBeforeFilters: () => Array = null,
     getController: () => IController = null,
     getData: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getScope: () => _ = null,
     getTitle: () => _ = null,
-    getUrl: () => java.lang.String = null,
+    getUrl: () => String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     mixins: js.Any = null,
@@ -134,7 +134,7 @@ object IAction {
     resume: () => Unit = null,
     scope: js.Any = null,
     self: IClass = null,
-    setAction: /* action */ js.UndefOr[java.lang.String] => Unit = null,
+    setAction: /* action */ js.UndefOr[String] => Unit = null,
     setApplication: /* application */ js.UndefOr[IApplication] => Unit = null,
     setArgs: /* args */ js.UndefOr[Array] => Unit = null,
     setBeforeFilters: /* beforeFilters */ js.UndefOr[Array] => Unit = null,
@@ -142,10 +142,10 @@ object IAction {
     setData: /* data */ js.UndefOr[js.Any] => Unit = null,
     setScope: /* scope */ js.UndefOr[js.Any] => Unit = null,
     setTitle: /* title */ js.UndefOr[js.Any] => Unit = null,
-    setUrl: /* url */ js.UndefOr[java.lang.String] => Unit = null,
+    setUrl: /* url */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    url: java.lang.String = null,
+    url: String = null,
     uses: Array = null
   ): IAction = {
     val __obj = js.Dynamic.literal()

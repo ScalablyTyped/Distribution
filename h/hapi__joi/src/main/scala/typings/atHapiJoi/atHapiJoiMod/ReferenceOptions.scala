@@ -1,7 +1,7 @@
 package typings.atHapiJoi.atHapiJoiMod
 
 import typings.atHapiJoi.Anon_Global
-import typings.atHapiJoi.atHapiJoiNumbers.`false`
+import typings.atHapiJoi.atHapiJoiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

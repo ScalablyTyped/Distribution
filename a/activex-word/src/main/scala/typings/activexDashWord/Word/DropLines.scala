@@ -13,7 +13,8 @@ class DropLines protected () extends js.Object {
   val Format: ChartFormat = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.DropLines_typekey`: DropLines = js.native
+  @JSName("Word.DropLines_typekey")
+  var WordDotDropLines_typekey: DropLines = js.native
   def Delete(): Unit = js.native
   def Select(): Unit = js.native
 }

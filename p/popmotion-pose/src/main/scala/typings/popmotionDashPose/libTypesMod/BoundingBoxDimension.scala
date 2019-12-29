@@ -1,12 +1,6 @@
 package typings.popmotionDashPose.libTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.bottom
-import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.height
-import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.left
-import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.right
-import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.top
-import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

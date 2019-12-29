@@ -12,7 +12,8 @@ class Tab protected () extends js.Object {
   var ControlTipText: String = js.native
   var Enabled: Boolean = js.native
   var Index: Double = js.native
-  var `MSForms.Tab_typekey`: Tab = js.native
+  @JSName("MSForms.Tab_typekey")
+  var MSFormsDotTab_typekey: Tab = js.native
   var Name: String = js.native
   var Tag: String = js.native
   var Visible: Boolean = js.native

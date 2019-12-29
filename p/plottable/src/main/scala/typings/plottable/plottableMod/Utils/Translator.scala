@@ -1,5 +1,6 @@
 package typings.plottable.plottableMod.Utils
 
+import typings.plottable.buildSrcComponentsComponentMod.Component
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -20,6 +21,6 @@ object Translator extends js.Object {
   /**
     * Is the event's target part of the given component's DOM tree?
     */
-  def isEventInside(component: typings.plottable.buildSrcComponentsComponentMod.Component, e: Event): Boolean = js.native
+  def isEventInside(component: Component, e: Event): Boolean = js.native
 }
 

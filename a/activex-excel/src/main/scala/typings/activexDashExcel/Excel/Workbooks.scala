@@ -1,5 +1,6 @@
 package typings.activexDashExcel.Excel
 
+import typings.activexDashExcel.activexDashExcelBooleans.`true`
 import typings.activexDashExcel.activexDashExcelNumbers.`0`
 import typings.activexDashExcel.activexDashExcelNumbers.`1`
 import typings.activexDashExcel.activexDashExcelNumbers.`2`
@@ -7,7 +8,6 @@ import typings.activexDashExcel.activexDashExcelNumbers.`3`
 import typings.activexDashExcel.activexDashExcelNumbers.`4`
 import typings.activexDashExcel.activexDashExcelNumbers.`5`
 import typings.activexDashExcel.activexDashExcelNumbers.`6`
-import typings.activexDashExcel.activexDashExcelNumbers.`true`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`

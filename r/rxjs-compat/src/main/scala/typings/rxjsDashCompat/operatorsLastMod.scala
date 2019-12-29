@@ -7,11 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operators/last", JSImport.Namespace)
 @js.native
 object operatorsLastMod extends js.Object {
-  def last[T, D](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
-  ): js.Any = js.native
+  def last[T, D](): js.Any = js.native
   def last[T, S /* <: T */](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -20,7 +17,6 @@ object operatorsLastMod extends js.Object {
     ]
   ): js.Any = js.native
   def last[T, S /* <: T */](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -29,14 +25,9 @@ object operatorsLastMod extends js.Object {
     ],
     defaultValue: S
   ): js.Any = js.native
-  def last[T, D](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
-    predicate: Null,
-    defaultValue: D
-  ): js.Any = js.native
+  def last[T, D](predicate: Null, defaultValue: D): js.Any = js.native
   @JSName("last")
   def last_TD[T, D](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -46,7 +37,6 @@ object operatorsLastMod extends js.Object {
   ): js.Any = js.native
   @JSName("last")
   def last_TD[T, D](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

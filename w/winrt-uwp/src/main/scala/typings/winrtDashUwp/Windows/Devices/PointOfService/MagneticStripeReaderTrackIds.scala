@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackIds.none
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackIds.track1
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackIds.track2
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackIds.track3
-import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderTrackIds.track4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

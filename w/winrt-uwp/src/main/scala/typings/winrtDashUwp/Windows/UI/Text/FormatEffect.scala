@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.off
-import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.on
-import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.toggle
-import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,5 @@
 package typings.d3DashAxis
 
-import typings.d3DashAxis.d3DashAxisMod.Axis
-import typings.d3DashAxis.d3DashAxisMod.AxisDomain
-import typings.d3DashAxis.d3DashAxisMod.AxisScale
-import typings.d3DashAxis.d3DashAxisMod.AxisTimeInterval
 import typings.d3DashSelection.d3DashSelectionMod.Selection
 import typings.d3DashSelection.d3DashSelectionMod.TransitionLike
 import typings.std.Date

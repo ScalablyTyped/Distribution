@@ -1,8 +1,7 @@
 package typings.readDashPackageDashTree
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.readDashPackageDashTree.readDashPackageDashTreeMod.Node
-import typings.readDashPackageDashTree.readDashPackageDashTreeNumbers.`true`
+import typings.readDashPackageDashTree.readDashPackageDashTreeBooleans.`true`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,12 +53,13 @@ object readDashPackageDashTreeMod extends js.Object {
       cache: StringDictionary[Node],
       fromLink: Boolean
     ) = this()
+    @JSName("package")
+    var _package: js.Any = js.native
     var children: js.Array[Node] = js.native
     var error: Error | Null = js.native
     var id: Double = js.native
     var isLink: Boolean = js.native
     var name: String = js.native
-    var `package`: js.Any = js.native
     var parent: Node | Null = js.native
     var path: String = js.native
     var realpath: String = js.native

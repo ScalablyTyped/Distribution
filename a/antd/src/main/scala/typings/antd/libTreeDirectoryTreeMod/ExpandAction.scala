@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.antd.antdNumbers.`false`
+  - typings.antd.antdBooleans.`false`
   - typings.antd.antdStrings.click
   - typings.antd.antdStrings.doubleClick
 */
@@ -19,6 +19,6 @@ object ExpandAction {
   @scala.inline
   def doubleClick: typings.antd.antdStrings.doubleClick = this.cast("doubleClick")
   @scala.inline
-  def `false`: typings.antd.antdNumbers.`false` = this.cast(false)
+  def `false`: typings.antd.antdBooleans.`false` = this.cast(false)
 }
 

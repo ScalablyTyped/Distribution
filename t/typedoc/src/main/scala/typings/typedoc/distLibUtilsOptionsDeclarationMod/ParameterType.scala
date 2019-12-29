@@ -1,12 +1,6 @@
 package typings.typedoc.distLibUtilsOptionsDeclarationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Array
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Boolean
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Map
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Mixed
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Number
-import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

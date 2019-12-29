@@ -31,7 +31,7 @@ trait IStore extends IEvented {
   		* @param field String The field in each record you want to get the average for.
   		* @returns Number The average value, if no items exist, 0.
   		*/
-  var average: js.UndefOr[js.Function1[/* field */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var average: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.undefined
   /** [Config Option] (Boolean) */
   var buffered: js.UndefOr[Boolean] = js.undefined
   /** [Method] Reverts to a view of the Record cache with no filtering applied
@@ -62,7 +62,7 @@ trait IStore extends IEvented {
   var filter: js.UndefOr[
     js.Function4[
       /* filters */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[String], 
       /* anyMatch */ js.UndefOr[Boolean], 
       /* caseSensitive */ js.UndefOr[Boolean], 
       Unit
@@ -86,7 +86,7 @@ trait IStore extends IEvented {
   		*/
   var find: js.UndefOr[
     js.Function6[
-      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* fieldName */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* startIndex */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
@@ -117,7 +117,7 @@ trait IStore extends IEvented {
   		*/
   var findExact: js.UndefOr[
     js.Function3[
-      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* fieldName */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* startIndex */ js.UndefOr[Double], 
       Double
@@ -134,7 +134,7 @@ trait IStore extends IEvented {
   		*/
   var findRecord: js.UndefOr[
     js.Function6[
-      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* fieldName */ js.UndefOr[String], 
       /* value */ js.UndefOr[js.Any], 
       /* startIndex */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
@@ -172,7 +172,7 @@ trait IStore extends IEvented {
   		* @param id String The id of the Record to find.
   		* @returns Ext.data.Model/undefined The Record with the passed id. Returns undefined if not found.
   		*/
-  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the value of clearOnPageLoad
   		* @returns Boolean
   		*/
@@ -200,11 +200,11 @@ trait IStore extends IEvented {
   /** [Method] Returns the value of groupDir
   		* @returns String
   		*/
-  var getGroupDir: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getGroupDir: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of groupField
   		* @returns String
   		*/
-  var getGroupField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getGroupField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function) */
   var getGroupString: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of grouper
@@ -215,11 +215,11 @@ trait IStore extends IEvented {
   		* @param groupName String Pass in an optional groupName argument to access a specific group as defined by grouper.
   		* @returns Object/Object[] The grouped data.
   		*/
-  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Returns the value of model
   		* @returns String
   		*/
-  var getModel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getModel: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of modelDefaults
   		* @returns Object
   		*/
@@ -271,7 +271,7 @@ trait IStore extends IEvented {
   /** [Method] Returns the value of storeId
   		* @returns String
   		*/
-  var getStoreId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getStoreId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of syncRemovedRecords
   		* @returns Boolean
   		*/
@@ -285,9 +285,9 @@ trait IStore extends IEvented {
   		*/
   var getUpdatedRecords: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (String) */
-  var groupDir: js.UndefOr[java.lang.String] = js.undefined
+  var groupDir: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var groupField: js.UndefOr[java.lang.String] = js.undefined
+  var groupField: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var grouper: js.UndefOr[js.Any] = js.undefined
   /** [Method] Get the index within the cache of the passed Record
@@ -299,7 +299,7 @@ trait IStore extends IEvented {
   		* @param id String The id of the Record to find.
   		* @returns Number The index of the Record. Returns -1 if not found.
   		*/
-  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Inserts Model instances into the Store at the given index and fires the add event
   		* @param index Number The start index at which to insert the passed Records.
   		* @param records Ext.data.Model[] An Array of Ext.data.Model objects to add to the cache.
@@ -371,14 +371,14 @@ trait IStore extends IEvented {
   		* @param field String The field in each record.
   		* @returns Object/undefined The maximum value, if no items exist, undefined.
   		*/
-  var max: js.UndefOr[js.Function1[/* field */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var max: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Gets the minimum value in the store
   		* @param field String The field in each record.
   		* @returns Object/undefined The minimum value, if no items exist, undefined.
   		*/
-  var min: js.UndefOr[js.Function1[/* field */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var min: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], _]] = js.undefined
   /** [Config Option] (String) */
-  var model: js.UndefOr[java.lang.String] = js.undefined
+  var model: js.UndefOr[String] = js.undefined
   /** [Method] Loads the next page in the current data set
   		* @param options Object See options for load.
   		*/
@@ -461,11 +461,11 @@ trait IStore extends IEvented {
   /** [Method] Sets the value of groupDir
   		* @param groupDir String The new value.
   		*/
-  var setGroupDir: js.UndefOr[js.Function1[/* groupDir */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setGroupDir: js.UndefOr[js.Function1[/* groupDir */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of groupField
   		* @param groupField String The new value.
   		*/
-  var setGroupField: js.UndefOr[js.Function1[/* groupField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setGroupField: js.UndefOr[js.Function1[/* groupField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of grouper
   		* @param grouper Object The new value.
   		*/
@@ -473,7 +473,7 @@ trait IStore extends IEvented {
   /** [Method] Sets the value of model
   		* @param model String The new value.
   		*/
-  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of modelDefaults
   		* @param modelDefaults Object The new value.
   		*/
@@ -513,7 +513,7 @@ trait IStore extends IEvented {
   /** [Method] Sets the value of storeId
   		* @param storeId String The new value.
   		*/
-  var setStoreId: js.UndefOr[js.Function1[/* storeId */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setStoreId: js.UndefOr[js.Function1[/* storeId */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of syncRemovedRecords
   		* @param syncRemovedRecords Boolean The new value.
   		*/
@@ -530,20 +530,20 @@ trait IStore extends IEvented {
   var sort: js.UndefOr[
     js.Function3[
       /* sorters */ js.UndefOr[js.Any], 
-      /* defaultDirection */ js.UndefOr[java.lang.String], 
-      /* where */ js.UndefOr[java.lang.String], 
+      /* defaultDirection */ js.UndefOr[String], 
+      /* where */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
   /** [Config Option] (Object[]) */
   var sorters: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var storeId: js.UndefOr[java.lang.String] = js.undefined
+  var storeId: js.UndefOr[String] = js.undefined
   /** [Method] Sums the value of property for each record between start and end and returns the result
   		* @param field String The field in each record.
   		* @returns Number The sum.
   		*/
-  var sum: js.UndefOr[js.Function1[/* field */ js.UndefOr[java.lang.String], Double]] = js.undefined
+  var sum: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Double]] = js.undefined
   /** [Method] Synchronizes the Store with its Proxy
   		* @param options Object
   		* @returns Object
@@ -563,14 +563,14 @@ object IStore {
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addData: /* data */ js.UndefOr[Array] => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     applyData: /* data */ js.UndefOr[js.Any] => Unit = null,
     autoLoad: js.Any = null,
     autoSync: js.UndefOr[Boolean] = js.undefined,
-    average: /* field */ js.UndefOr[java.lang.String] => Double = null,
+    average: /* field */ js.UndefOr[String] => Double = null,
     bubbleEvents: js.Any = null,
     buffered: js.UndefOr[Boolean] = js.undefined,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -586,17 +586,17 @@ object IStore {
     destroyRemovedRecords: js.UndefOr[Boolean] = js.undefined,
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fields: js.Any = null,
-    filter: (/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Unit = null,
+    filter: (/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Unit = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     filters: Array = null,
-    find: (/* fieldName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => Double = null,
+    find: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => Double = null,
     findBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double = null,
-    findExact: (/* fieldName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double = null,
-    findRecord: (/* fieldName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IModel = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    findExact: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double = null,
+    findRecord: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IModel = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     first: () => _ = null,
     getAllCount: () => Double = null,
     getAt: /* index */ js.UndefOr[Double] => _ = null,
@@ -604,22 +604,22 @@ object IStore {
     getAutoSync: () => Boolean = null,
     getBubbleEvents: () => _ = null,
     getBuffered: () => Boolean = null,
-    getById: /* id */ js.UndefOr[java.lang.String] => _ = null,
+    getById: /* id */ js.UndefOr[String] => _ = null,
     getClearOnPageLoad: () => Boolean = null,
     getCount: () => Double = null,
     getData: () => _ = null,
     getDestroyRemovedRecords: () => Boolean = null,
     getFields: () => _ = null,
     getGetGroupString: () => _ = null,
-    getGroupDir: () => java.lang.String = null,
-    getGroupField: () => java.lang.String = null,
+    getGroupDir: () => String = null,
+    getGroupField: () => String = null,
     getGroupString: js.Any = null,
     getGrouper: () => _ = null,
-    getGroups: /* groupName */ js.UndefOr[java.lang.String] => _ = null,
+    getGroups: /* groupName */ js.UndefOr[String] => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
-    getModel: () => java.lang.String = null,
+    getModel: () => String = null,
     getModelDefaults: () => _ = null,
     getNewRecords: () => Array = null,
     getPageSize: () => Double = null,
@@ -631,16 +631,16 @@ object IStore {
     getRemoteGroup: () => Boolean = null,
     getRemoteSort: () => Boolean = null,
     getRemovedRecords: () => Array = null,
-    getStoreId: () => java.lang.String = null,
+    getStoreId: () => String = null,
     getSyncRemovedRecords: () => Boolean = null,
     getTotalCount: () => Double = null,
     getUpdatedRecords: () => Array = null,
-    groupDir: java.lang.String = null,
-    groupField: java.lang.String = null,
+    groupDir: String = null,
+    groupField: String = null,
     grouper: js.Any = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     indexOf: /* record */ js.UndefOr[IModel] => Double = null,
-    indexOfId: /* id */ js.UndefOr[java.lang.String] => Double = null,
+    indexOfId: /* id */ js.UndefOr[String] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     insert: (/* index */ js.UndefOr[Double], /* records */ js.UndefOr[Array]) => _ = null,
@@ -656,14 +656,14 @@ object IStore {
     loadData: (/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean]) => Unit = null,
     loadPage: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     loadRecords: /* model */ js.UndefOr[js.Any] => Array = null,
-    max: /* field */ js.UndefOr[java.lang.String] => _ = null,
-    min: /* field */ js.UndefOr[java.lang.String] => _ = null,
+    max: /* field */ js.UndefOr[String] => _ = null,
+    min: /* field */ js.UndefOr[String] => _ = null,
     mixins: js.Any = null,
-    model: java.lang.String = null,
+    model: String = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     nextPage: /* options */ js.UndefOr[js.Any] => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     pageSize: Int | Double = null,
@@ -682,7 +682,7 @@ object IStore {
     removeAll: /* silent */ js.UndefOr[Boolean] => Unit = null,
     removeAt: /* index */ js.UndefOr[Double] => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
@@ -696,11 +696,11 @@ object IStore {
     setFields: /* fields */ js.UndefOr[js.Any] => _ = null,
     setFilters: /* filters */ js.UndefOr[Array] => Unit = null,
     setGetGroupString: /* getGroupString */ js.UndefOr[js.Any] => Unit = null,
-    setGroupDir: /* groupDir */ js.UndefOr[java.lang.String] => Unit = null,
-    setGroupField: /* groupField */ js.UndefOr[java.lang.String] => Unit = null,
+    setGroupDir: /* groupDir */ js.UndefOr[String] => Unit = null,
+    setGroupField: /* groupField */ js.UndefOr[String] => Unit = null,
     setGrouper: /* grouper */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setModel: /* model */ js.UndefOr[java.lang.String] => Unit = null,
+    setModel: /* model */ js.UndefOr[String] => Unit = null,
     setModelDefaults: /* modelDefaults */ js.UndefOr[js.Any] => Unit = null,
     setPageSize: /* pageSize */ js.UndefOr[Double] => Unit = null,
     setParams: /* params */ js.UndefOr[js.Any] => Unit = null,
@@ -710,20 +710,20 @@ object IStore {
     setRemoteGroup: /* remoteGroup */ js.UndefOr[Boolean] => Unit = null,
     setRemoteSort: /* remoteSort */ js.UndefOr[Boolean] => Unit = null,
     setSorters: /* sorters */ js.UndefOr[Array] => Unit = null,
-    setStoreId: /* storeId */ js.UndefOr[java.lang.String] => Unit = null,
+    setStoreId: /* storeId */ js.UndefOr[String] => Unit = null,
     setSyncRemovedRecords: /* syncRemovedRecords */ js.UndefOr[Boolean] => Unit = null,
     setTotalCount: /* totalCount */ js.UndefOr[Double] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (/* sorters */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String], /* where */ js.UndefOr[java.lang.String]) => Unit = null,
+    sort: (/* sorters */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[String], /* where */ js.UndefOr[String]) => Unit = null,
     sorters: Array = null,
     statics: js.Any = null,
-    storeId: java.lang.String = null,
-    sum: /* field */ js.UndefOr[java.lang.String] => Double = null,
+    storeId: String = null,
+    sum: /* field */ js.UndefOr[String] => Double = null,
     suspendEvents: () => Unit = null,
     sync: /* options */ js.UndefOr[js.Any] => _ = null,
     syncRemovedRecords: js.UndefOr[Boolean] = js.undefined,
     totalCount: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null

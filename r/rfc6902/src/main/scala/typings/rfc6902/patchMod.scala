@@ -7,9 +7,6 @@ import typings.rfc6902.diffMod.Operation
 import typings.rfc6902.diffMod.RemoveOperation
 import typings.rfc6902.diffMod.ReplaceOperation
 import typings.rfc6902.diffMod.TestOperation
-import typings.rfc6902.patchMod.InvalidOperationError
-import typings.rfc6902.patchMod.MissingError
-import typings.rfc6902.patchMod.TestError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

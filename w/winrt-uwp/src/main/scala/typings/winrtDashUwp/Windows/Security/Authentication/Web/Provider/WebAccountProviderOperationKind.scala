@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.addAccount
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.deleteAccount
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.getTokenSilently
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.manageAccount
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.requestToken
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.retrieveCookies
-import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.signOutAccount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,10 +8,9 @@ trait Anon_Collections extends js.Object {
   var collections: js.UndefOr[js.Array[String]] = js.undefined
   var count: js.UndefOr[Double] = js.undefined
   var featured: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
+  var orientation: js.UndefOr[String] = js.undefined
   var query: js.UndefOr[String] = js.undefined
   var username: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_Collections {
@@ -20,19 +19,17 @@ object Anon_Collections {
     collections: js.Array[String] = null,
     count: Int | Double = null,
     featured: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    orientation: String = null,
     query: String = null,
-    username: String = null,
-    width: Int | Double = null
+    username: String = null
   ): Anon_Collections = {
     val __obj = js.Dynamic.literal()
     if (collections != null) __obj.updateDynamic("collections")(collections.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (!js.isUndefined(featured)) __obj.updateDynamic("featured")(featured.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Collections]
   }
 }

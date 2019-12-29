@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Http.Filters
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheWriteBehavior.default
-import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheWriteBehavior.noCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

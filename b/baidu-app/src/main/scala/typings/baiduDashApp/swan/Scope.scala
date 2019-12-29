@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 // 开放接口-----设置
 /* Rewritten from type alias, can be one of: 
-  - typings.baiduDashApp.baiduDashAppStrings.scopeDOTuserInfo
-  - typings.baiduDashApp.baiduDashAppStrings.scopeDOTuserLocation
-  - typings.baiduDashApp.baiduDashAppStrings.scopeDOTaddress
-  - typings.baiduDashApp.baiduDashAppStrings.scopeDOTinvoiceTitle
-  - typings.baiduDashApp.baiduDashAppStrings.scopeDOTwerun
-  - typings.baiduDashApp.baiduDashAppStrings.scopeDOTrecord
-  - typings.baiduDashApp.baiduDashAppStrings.scopeDOTwritePhotosAlbum
+  - typings.baiduDashApp.baiduDashAppStrings.scopeDotuserInfo
+  - typings.baiduDashApp.baiduDashAppStrings.scopeDotuserLocation
+  - typings.baiduDashApp.baiduDashAppStrings.scopeDotaddress
+  - typings.baiduDashApp.baiduDashAppStrings.scopeDotinvoiceTitle
+  - typings.baiduDashApp.baiduDashAppStrings.scopeDotwerun
+  - typings.baiduDashApp.baiduDashAppStrings.scopeDotrecord
+  - typings.baiduDashApp.baiduDashAppStrings.scopeDotwritePhotosAlbum
 */
 trait Scope extends js.Object
 
@@ -20,18 +20,18 @@ object Scope {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def scopeDOTaddress: typings.baiduDashApp.baiduDashAppStrings.scopeDOTaddress = this.cast("scope.address")
+  def scopeDotaddress: typings.baiduDashApp.baiduDashAppStrings.scopeDotaddress = this.cast("scope.address")
   @scala.inline
-  def scopeDOTinvoiceTitle: typings.baiduDashApp.baiduDashAppStrings.scopeDOTinvoiceTitle = this.cast("scope.invoiceTitle")
+  def scopeDotinvoiceTitle: typings.baiduDashApp.baiduDashAppStrings.scopeDotinvoiceTitle = this.cast("scope.invoiceTitle")
   @scala.inline
-  def scopeDOTrecord: typings.baiduDashApp.baiduDashAppStrings.scopeDOTrecord = this.cast("scope.record")
+  def scopeDotrecord: typings.baiduDashApp.baiduDashAppStrings.scopeDotrecord = this.cast("scope.record")
   @scala.inline
-  def scopeDOTuserInfo: typings.baiduDashApp.baiduDashAppStrings.scopeDOTuserInfo = this.cast("scope.userInfo")
+  def scopeDotuserInfo: typings.baiduDashApp.baiduDashAppStrings.scopeDotuserInfo = this.cast("scope.userInfo")
   @scala.inline
-  def scopeDOTuserLocation: typings.baiduDashApp.baiduDashAppStrings.scopeDOTuserLocation = this.cast("scope.userLocation")
+  def scopeDotuserLocation: typings.baiduDashApp.baiduDashAppStrings.scopeDotuserLocation = this.cast("scope.userLocation")
   @scala.inline
-  def scopeDOTwerun: typings.baiduDashApp.baiduDashAppStrings.scopeDOTwerun = this.cast("scope.werun")
+  def scopeDotwerun: typings.baiduDashApp.baiduDashAppStrings.scopeDotwerun = this.cast("scope.werun")
   @scala.inline
-  def scopeDOTwritePhotosAlbum: typings.baiduDashApp.baiduDashAppStrings.scopeDOTwritePhotosAlbum = this.cast("scope.writePhotosAlbum")
+  def scopeDotwritePhotosAlbum: typings.baiduDashApp.baiduDashAppStrings.scopeDotwritePhotosAlbum = this.cast("scope.writePhotosAlbum")
 }
 

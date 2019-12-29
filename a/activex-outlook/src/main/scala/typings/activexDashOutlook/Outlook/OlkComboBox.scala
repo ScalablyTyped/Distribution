@@ -27,7 +27,8 @@ class OlkComboBox protected () extends js.Object {
   var MaxLength: Double = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkComboBox_typekey`: OlkComboBox = js.native
+  @JSName("Outlook.OlkComboBox_typekey")
+  var OutlookDotOlkComboBox_typekey: OlkComboBox = js.native
   var SelLength: Double = js.native
   var SelStart: Double = js.native
   val SelText: String = js.native

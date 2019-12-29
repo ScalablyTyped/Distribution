@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.TabLeader.dashes
-import typings.winrtDashUwp.Windows.UI.Text.TabLeader.dots
-import typings.winrtDashUwp.Windows.UI.Text.TabLeader.equals
-import typings.winrtDashUwp.Windows.UI.Text.TabLeader.lines
-import typings.winrtDashUwp.Windows.UI.Text.TabLeader.spaces
-import typings.winrtDashUwp.Windows.UI.Text.TabLeader.thickLines
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

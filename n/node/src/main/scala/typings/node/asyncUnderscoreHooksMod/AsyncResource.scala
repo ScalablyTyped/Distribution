@@ -20,9 +20,9 @@ class AsyncResource protected () extends js.Object {
     *   this async event (default: `executionAsyncId()`), or an
     *   AsyncResourceOptions object (since 9.3)
     */
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, triggerAsyncId: Double) = this()
-  def this(`type`: java.lang.String, triggerAsyncId: AsyncResourceOptions) = this()
+  def this(`type`: String) = this()
+  def this(`type`: String, triggerAsyncId: Double) = this()
+  def this(`type`: String, triggerAsyncId: AsyncResourceOptions) = this()
   /**
     * @return the unique ID assigned to this AsyncResource instance.
     */

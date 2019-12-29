@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnPacketBufferStatus.invalidBufferSize
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnPacketBufferStatus.ok
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

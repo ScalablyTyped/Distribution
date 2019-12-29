@@ -1,9 +1,6 @@
 package typings.realm.Realm
 
 import org.scalablytyped.runtime.TopLevel
-import typings.realm.Realm.UpdateMode.All
-import typings.realm.Realm.UpdateMode.Modified
-import typings.realm.Realm.UpdateMode.Never
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.RotateMode.Chain
-import typings.phaser.spine.RotateMode.ChainScale
-import typings.phaser.spine.RotateMode.Tangent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

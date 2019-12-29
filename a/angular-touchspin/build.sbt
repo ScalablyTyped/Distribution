@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-touchspin"
-version := "2.0.0-68d879"
+version := "2.0.0-4387d7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

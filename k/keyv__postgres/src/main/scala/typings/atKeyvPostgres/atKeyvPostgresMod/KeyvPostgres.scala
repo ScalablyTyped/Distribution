@@ -1,6 +1,6 @@
 package typings.atKeyvPostgres.atKeyvPostgresMod
 
-import typings.atKeyvPostgres.atKeyvPostgresNumbers.`false`
+import typings.atKeyvPostgres.atKeyvPostgresBooleans.`false`
 import typings.keyv.keyvMod.Store
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js

@@ -1,8 +1,6 @@
 package typings.propertiesDashReader
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.propertiesDashReader.propertiesDashReaderMod.Reader
-import typings.propertiesDashReader.propertiesDashReaderMod.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

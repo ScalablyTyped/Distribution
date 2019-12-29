@@ -10,7 +10,7 @@ object pouchdbDashCoreStrings {
   sealed trait Buffer extends js.Object
   
   @js.native
-  sealed trait `This should be passed to PouchDBDOTplugin()` extends js.Object
+  sealed trait `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis` extends js.Object
   
   @js.native
   sealed trait all extends js.Object
@@ -54,7 +54,7 @@ object pouchdbDashCoreStrings {
   @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   @scala.inline
-  def `This should be passed to PouchDBDOTplugin()`: `This should be passed to PouchDBDOTplugin()` = "This should be passed to PouchDB.plugin()".asInstanceOf[`This should be passed to PouchDBDOTplugin()`]
+  def `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`: `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis` = "This should be passed to PouchDB.plugin()".asInstanceOf[`This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

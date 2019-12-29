@@ -18,7 +18,8 @@ object ^ extends js.Object {
   /**
   	Create a clickable link in the terminal's stdout.
   	[Supported terminals.](https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda)
-  	For unsupported terminals, the link will be printed in parens after the text: `My website (https://sindresorhus.com)`.
+  	For unsupported terminals, the link will be printed in parens after the text: `My website (https://sindresorhus.com)`,
+  	unless the fallback is disabled by setting the `fallback` option to `false`.
   	@param text - Text to linkify.
   	@param url - URL to link to.
   	@example

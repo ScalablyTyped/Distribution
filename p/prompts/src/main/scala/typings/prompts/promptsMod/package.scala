@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object promptsMod {
-  import typings.prompts.promptsNumbers.`false`
+  import typings.prompts.promptsBooleans.`false`
 
   type Answers[T /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ id in T ]: any}

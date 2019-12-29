@@ -1,9 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Label.LABEL_OPTIONAL
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REPEATED
-import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REQUIRED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

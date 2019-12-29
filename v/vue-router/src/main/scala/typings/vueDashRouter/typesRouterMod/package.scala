@@ -16,7 +16,7 @@ package object typesRouterMod {
   import typings.vue.typesOptionsMod.PropsDefinition
   import typings.vue.typesVueMod.Vue
   import typings.vue.typesVueMod.VueConstructor
-  import typings.vueDashRouter.vueDashRouterNumbers.`false`
+  import typings.vueDashRouter.vueDashRouterBooleans.`false`
 
   type Component = (ComponentOptions[
     Vue, 

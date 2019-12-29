@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class List[T] () extends SecurableObject {
   /** Creates a new list item in the list. */
-  def addItem(parameters: ListItemCreationInformation): typings.sharepoint.SP.ListItem[T] = js.native
+  def addItem(parameters: ListItemCreationInformation): ListItem[T] = js.native
   /** Deletes the list. */
   def deleteObject(): Unit = js.native
   /** Returns the collection of changes from the change log that have occurred within the list, based on the specified query. */
   def getChanges(query: ChangeQuery): ChangeCollection = js.native
   /** Gets item by id. */
-  def getItemById(id: Double): typings.sharepoint.SP.ListItem[T] = js.native
+  def getItemById(id: Double): ListItem[T] = js.native
   /** Returns collection of list items based on the specified CAML query. */
   def getItems(query: CamlQuery): ListItemCollection[T] = js.native
   /** Returns array of items describing changes since time specified in the query */

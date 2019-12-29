@@ -32,7 +32,8 @@ class MobileItem protected () extends js.Object {
   var Mileage: String = js.native
   val MobileFormat: OlMobileFormat = js.native
   var NoAging: Boolean = js.native
-  var `Outlook.MobileItem_typekey`: MobileItem = js.native
+  @JSName("Outlook.MobileItem_typekey")
+  var OutlookDotMobileItem_typekey: MobileItem = js.native
   val OutlookInternalVersion: Double = js.native
   val OutlookVersion: String = js.native
   val Parent: js.Any = js.native

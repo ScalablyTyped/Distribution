@@ -5,7 +5,6 @@ import typings.atUirouterCore.libParamsParamMod.Param
 import typings.atUirouterCore.libParamsParamTypesMod.ParamTypes
 import typings.atUirouterCore.libUrlInterfaceMod.UrlMatcherCompileConfig
 import typings.atUirouterCore.libUrlUrlMatcherFactoryMod.ParamFactory
-import typings.atUirouterCore.libUrlUrlMatcherMod.UrlMatcher
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -15,52 +15,49 @@ import scala.scalajs.js.annotation._
 
 object atOracleOraclejetStrings {
   @js.native
+  sealed trait $and extends CompoundOperator
+  
+  @js.native
+  sealed trait $co extends AttributeOperator
+  
+  @js.native
+  sealed trait $eq extends AttributeOperator
+  
+  @js.native
+  sealed trait $ew extends AttributeOperator
+  
+  @js.native
+  sealed trait $ge extends AttributeOperator
+  
+  @js.native
+  sealed trait $gt extends AttributeOperator
+  
+  @js.native
+  sealed trait $le extends AttributeOperator
+  
+  @js.native
+  sealed trait $lt extends AttributeOperator
+  
+  @js.native
+  sealed trait $ne extends AttributeOperator
+  
+  @js.native
+  sealed trait $or extends CompoundOperator
+  
+  @js.native
+  sealed trait $pr extends AttributeOperator
+  
+  @js.native
+  sealed trait $regex extends AttributeOperator
+  
+  @js.native
+  sealed trait $sw extends AttributeOperator
+  
+  @js.native
   sealed trait `2-digit` extends js.Object
   
   @js.native
   sealed trait `@firstInvalidShown` extends js.Object
-  
-  @js.native
-  sealed trait DOLLARand extends CompoundOperator
-  
-  @js.native
-  sealed trait DOLLARco extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLAReq extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARew extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARge extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARgt extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARle extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARlt extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARne extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARor extends CompoundOperator
-  
-  @js.native
-  sealed trait DOLLARpr extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARregex extends AttributeOperator
-  
-  @js.native
-  sealed trait DOLLARsw extends AttributeOperator
-  
-  @js.native
-  sealed trait Empty extends js.Object
   
   @js.native
   sealed trait HALF_DOWN extends js.Object
@@ -70,6 +67,9 @@ object atOracleOraclejetStrings {
   
   @js.native
   sealed trait HALF_UP extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait abbreviated extends js.Object
@@ -3711,43 +3711,43 @@ object atOracleOraclejetStrings {
   sealed trait zulu extends js.Object
   
   @scala.inline
+  def $and: $and = "$and".asInstanceOf[$and]
+  @scala.inline
+  def $co: $co = "$co".asInstanceOf[$co]
+  @scala.inline
+  def $eq: $eq = "$eq".asInstanceOf[$eq]
+  @scala.inline
+  def $ew: $ew = "$ew".asInstanceOf[$ew]
+  @scala.inline
+  def $ge: $ge = "$ge".asInstanceOf[$ge]
+  @scala.inline
+  def $gt: $gt = "$gt".asInstanceOf[$gt]
+  @scala.inline
+  def $le: $le = "$le".asInstanceOf[$le]
+  @scala.inline
+  def $lt: $lt = "$lt".asInstanceOf[$lt]
+  @scala.inline
+  def $ne: $ne = "$ne".asInstanceOf[$ne]
+  @scala.inline
+  def $or: $or = "$or".asInstanceOf[$or]
+  @scala.inline
+  def $pr: $pr = "$pr".asInstanceOf[$pr]
+  @scala.inline
+  def $regex: $regex = "$regex".asInstanceOf[$regex]
+  @scala.inline
+  def $sw: $sw = "$sw".asInstanceOf[$sw]
+  @scala.inline
   def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
   @scala.inline
   def `@firstInvalidShown`: `@firstInvalidShown` = "@firstInvalidShown".asInstanceOf[`@firstInvalidShown`]
-  @scala.inline
-  def DOLLARand: DOLLARand = "$and".asInstanceOf[DOLLARand]
-  @scala.inline
-  def DOLLARco: DOLLARco = "$co".asInstanceOf[DOLLARco]
-  @scala.inline
-  def DOLLAReq: DOLLAReq = "$eq".asInstanceOf[DOLLAReq]
-  @scala.inline
-  def DOLLARew: DOLLARew = "$ew".asInstanceOf[DOLLARew]
-  @scala.inline
-  def DOLLARge: DOLLARge = "$ge".asInstanceOf[DOLLARge]
-  @scala.inline
-  def DOLLARgt: DOLLARgt = "$gt".asInstanceOf[DOLLARgt]
-  @scala.inline
-  def DOLLARle: DOLLARle = "$le".asInstanceOf[DOLLARle]
-  @scala.inline
-  def DOLLARlt: DOLLARlt = "$lt".asInstanceOf[DOLLARlt]
-  @scala.inline
-  def DOLLARne: DOLLARne = "$ne".asInstanceOf[DOLLARne]
-  @scala.inline
-  def DOLLARor: DOLLARor = "$or".asInstanceOf[DOLLARor]
-  @scala.inline
-  def DOLLARpr: DOLLARpr = "$pr".asInstanceOf[DOLLARpr]
-  @scala.inline
-  def DOLLARregex: DOLLARregex = "$regex".asInstanceOf[DOLLARregex]
-  @scala.inline
-  def DOLLARsw: DOLLARsw = "$sw".asInstanceOf[DOLLARsw]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def HALF_DOWN: HALF_DOWN = "HALF_DOWN".asInstanceOf[HALF_DOWN]
   @scala.inline
   def HALF_EVEN: HALF_EVEN = "HALF_EVEN".asInstanceOf[HALF_EVEN]
   @scala.inline
   def HALF_UP: HALF_UP = "HALF_UP".asInstanceOf[HALF_UP]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abbreviated: abbreviated = "abbreviated".asInstanceOf[abbreviated]
   @scala.inline

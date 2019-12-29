@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("leaflet", "esri.FeatureLayerService")
 @js.native
-class FeatureLayerService protected ()
-  extends typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Service {
+class FeatureLayerService protected () extends Service {
   def this(options: FeatureLayerServiceOptions) = this()
   /**
     * Adds a new feature to the feature layer. this also adds the feature to the map if creation is successful.
@@ -59,7 +58,7 @@ class FeatureLayerService protected ()
   /**
     * Returns a new `L.esri.Query` object that can be used to query this layer.
     */
-  def query(): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Query = js.native
+  def query(): Query = js.native
   /**
     * Update the provided feature on the Feature Layer. This also updates the feature on the map.
     *
@@ -83,6 +82,6 @@ object featureLayerService extends js.Object {
     * and ArcGIS Server that allows you to make requests to the API, as well as query, add, update and remove
     * features from the service.
     */
-  def apply(options: FeatureLayerServiceOptions): typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.FeatureLayerService = js.native
+  def apply(options: FeatureLayerServiceOptions): FeatureLayerService = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.autolinker.autolinkerNumbers.`false`
+  - typings.autolinker.autolinkerBooleans.`false`
   - typings.autolinker.autolinkerStrings.twitter
   - typings.autolinker.autolinkerStrings.facebook
   - typings.autolinker.autolinkerStrings.instagram
@@ -18,7 +18,7 @@ object HashtagConfig {
   @scala.inline
   def facebook: typings.autolinker.autolinkerStrings.facebook = this.cast("facebook")
   @scala.inline
-  def `false`: typings.autolinker.autolinkerNumbers.`false` = this.cast(false)
+  def `false`: typings.autolinker.autolinkerBooleans.`false` = this.cast(false)
   @scala.inline
   def instagram: typings.autolinker.autolinkerStrings.instagram = this.cast("instagram")
   @scala.inline

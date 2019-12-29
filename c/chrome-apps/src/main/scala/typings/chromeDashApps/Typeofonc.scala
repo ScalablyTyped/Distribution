@@ -10,7 +10,7 @@ import typings.chromeDashApps.chrome.networking.onc.NetworkConfigProperties
 import typings.chromeDashApps.chrome.networking.onc.NetworkProperties
 import typings.chromeDashApps.chrome.networking.onc.NetworkStateProperties
 import typings.chromeDashApps.chrome.networking.onc.NetworkType
-import typings.chromeDashApps.chromeDashAppsNumbers.`false`
+import typings.chromeDashApps.chromeDashAppsBooleans.`false`
 import typings.chromeDashApps.chromeDashAppsStrings.full
 import typings.chromeDashApps.chromeDashAppsStrings.setter
 import typings.chromeDashApps.chromeDashAppsStrings.unmanaged

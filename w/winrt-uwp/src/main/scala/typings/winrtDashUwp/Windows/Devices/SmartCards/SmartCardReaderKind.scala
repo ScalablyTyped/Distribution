@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SmartCards
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.any
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.generic
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.nfc
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.tpm
-import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.uicc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

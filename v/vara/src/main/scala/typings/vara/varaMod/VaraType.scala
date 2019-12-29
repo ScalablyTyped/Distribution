@@ -6,7 +6,7 @@ import typings.std.SVGGElement
 import typings.vara.Anon_BreakPoints
 import typings.vara.Anon_XY
 import typings.vara.Anon_XYBoolean
-import typings.vara.varaNumbers.`false`
+import typings.vara.varaBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

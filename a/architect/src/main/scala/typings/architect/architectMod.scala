@@ -1,9 +1,5 @@
 package typings.architect
 
-import typings.architect.architectMod.Architect
-import typings.architect.architectMod.Config
-import typings.architect.architectMod.Plugin
-import typings.architect.architectMod.Service
 import typings.architect.architectStrings.error
 import typings.architect.architectStrings.plugin
 import typings.architect.architectStrings.ready

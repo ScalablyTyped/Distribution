@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseContainerAdaptorContainerMod.AdaptorContainer
 import typings.tstl.baseDisposableIPartialContainersMod._IEmpty
 import typings.tstl.baseDisposableIPartialContainersMod._IPush
 import typings.tstl.baseDisposableIPartialContainersMod._ISize

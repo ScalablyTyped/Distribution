@@ -16,15 +16,15 @@ object SavedFeedResponseInItem {
   @scala.inline
   def apply(
     position: js.Array[Double | String],
-    duration_in_video_in_sec: Null = null,
+    duration_in_video_in_sec: js.UndefOr[scala.Nothing] = js.undefined,
     product: SavedFeedResponseProduct = null,
-    start_time_in_video_in_sec: Null = null,
+    start_time_in_video_in_sec: js.UndefOr[scala.Nothing] = js.undefined,
     user: SavedFeedResponseUser = null
   ): SavedFeedResponseInItem = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-    if (duration_in_video_in_sec != null) __obj.updateDynamic("duration_in_video_in_sec")(duration_in_video_in_sec.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration_in_video_in_sec)) __obj.updateDynamic("duration_in_video_in_sec")(duration_in_video_in_sec.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (start_time_in_video_in_sec != null) __obj.updateDynamic("start_time_in_video_in_sec")(start_time_in_video_in_sec.asInstanceOf[js.Any])
+    if (!js.isUndefined(start_time_in_video_in_sec)) __obj.updateDynamic("start_time_in_video_in_sec")(start_time_in_video_in_sec.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseInItem]
   }

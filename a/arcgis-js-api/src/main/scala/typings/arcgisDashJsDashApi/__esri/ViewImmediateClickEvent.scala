@@ -1,17 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`immediate-click`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ViewImmediateClickEvent extends js.Object {
-  var button: Double
+  var button: js.Any
   var buttons: Double
   var mapPoint: Point
   var native: js.Any
   var stopPropagation: js.Function
   var timestamp: Double
-  var `type`: String
+  var `type`: `immediate-click`
   var x: Double
   var y: Double
 }
@@ -19,13 +20,13 @@ trait ViewImmediateClickEvent extends js.Object {
 object ViewImmediateClickEvent {
   @scala.inline
   def apply(
-    button: Double,
+    button: js.Any,
     buttons: Double,
     mapPoint: Point,
     native: js.Any,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: String,
+    `type`: `immediate-click`,
     x: Double,
     y: Double
   ): ViewImmediateClickEvent = {

@@ -1,7 +1,7 @@
 package typings.rrule.distEsmSrcCacheMod
 
 import typings.rrule.distEsmSrcIterresultMod.IterArgs
-import typings.rrule.rruleNumbers.`false`
+import typings.rrule.rruleBooleans.`false`
 import typings.rrule.rruleStrings.all
 import typings.std.Date
 import typings.std.Partial

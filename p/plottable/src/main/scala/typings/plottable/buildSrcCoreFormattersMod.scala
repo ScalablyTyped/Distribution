@@ -1,7 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcCoreDatasetMod.Dataset
-import typings.plottable.buildSrcCoreFormattersMod.Formatter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

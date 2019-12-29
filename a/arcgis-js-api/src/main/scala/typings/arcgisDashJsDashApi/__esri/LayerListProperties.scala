@@ -19,6 +19,14 @@ trait LayerListProperties extends WidgetProperties {
     */
   var listItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.undefined
   /**
+    * Indicates whether more than one list item may be selected by the user at a single time. You must first set [selectionEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled) to `true` for this property to have an effect on the widget.  Selected items are available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#multipleSelectionEnabled)
+    *
+    * @default false
+    */
+  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * Indicates whether list items may be selected by the user. Selected items may be reordered in the list by dragging gestures with the mouse or touch screen, or with arrow keys on the keyboard.  Selected items are available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled)
@@ -57,6 +65,7 @@ object LayerListProperties {
     id: String = null,
     label: String = null,
     listItemCreatedFunction: /* event */ js.Any => Unit = null,
+    multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined,
     selectionEnabled: js.UndefOr[Boolean] = js.undefined,
     statusIndicatorsVisible: js.UndefOr[Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
@@ -69,6 +78,7 @@ object LayerListProperties {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (listItemCreatedFunction != null) __obj.updateDynamic("listItemCreatedFunction")(js.Any.fromFunction1(listItemCreatedFunction))
+    if (!js.isUndefined(multipleSelectionEnabled)) __obj.updateDynamic("multipleSelectionEnabled")(multipleSelectionEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(selectionEnabled)) __obj.updateDynamic("selectionEnabled")(selectionEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(statusIndicatorsVisible)) __obj.updateDynamic("statusIndicatorsVisible")(statusIndicatorsVisible.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])

@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleCellRanges
-import typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleColRanges
-import typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleRowRanges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typings.atEmberArray
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.atEmberArray.dashPrivateNativeDashArrayMod.NativeArray
 import typings.atEmberArray.mutableMod.MutableArray
 import typings.atEmberObject.dashPrivateCopyableMod.Copyable
 import typings.atEmberObject.observableMod.Observable
@@ -30,7 +29,7 @@ object dashPrivateNativeDashArrayMod extends js.Object {
     * at anytime by calling `Ember.NativeArray.apply(Array.prototype)`.
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Array because var conflicts: length. Inlined iterator, unscopables, concat, copyWithin, copyWithin, entries, fill, fill, fill, filter_S_T, filter_S_T, findIndex, findIndex, flat, flat, flat, flatMap, flatMap, flat_0, flat_1, flat_2, flat_3, flat_4, flat_5, flat_6, flat_7, join, join, keys, pop, push, reduceRight, reduceRight, reduceRight_U_U, reduce_U_U, reverse, shift, some, some, sort, sort, splice, splice, splice, unshift, values */ @js.native
+  - typings.std.Array because var conflicts: length. Inlined iterator, unscopables, concat, copyWithin, copyWithin, entries, fill, fill, fill, filter_S_T, filter_S_T, findIndex, findIndex, flat, flat, flatMap, flatMap, flat_0, flat_1, flat_2, flat_3, flat_4, flat_5, flat_6, flat_7, join, join, keys, pop, push, reduceRight, reduceRight, reduceRight_U_U, reduce_U_U, reverse, shift, some, some, sort, sort, splice, splice, splice, unshift, values */ @js.native
   trait NativeArray[T]
     extends MutableArray[T]
        with Observable
@@ -94,19 +93,18 @@ object dashPrivateNativeDashArrayMod extends js.Object {
     def findIndex(predicate: js.Function3[T, /* index */ Double, /* obj */ js.Array[T], _], thisArg: js.Any): Double = js.native
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth. If no depth is provided, flat method defaults to the depth of 1.
-      *
-      * @param depth The maximum recursion depth
-      */
-    def flat[U](): js.Array[_] = js.native
-    def flat[U](depth: Double): js.Array[_] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
       *
       * @param depth The maximum recursion depth
       */
-    def flat[U](`this`: js.Array[js.Array[U]]): js.Array[U] = js.native
+    /**
+      * Returns a new array with all sub-array elements concatenated into it recursively up to the
+      * specified depth. If no depth is provided, flat method defaults to the depth of 1.
+      *
+      * @param depth The maximum recursion depth
+      */
+    def flat[U](): js.Array[U] = js.native
+    def flat[U](depth: Double): js.Array[_] = js.native
     /**
       * Calls a defined callback function on each element of an array. Then, flattens the result into
       * a new array.
@@ -131,9 +129,9 @@ object dashPrivateNativeDashArrayMod extends js.Object {
       * @param depth The maximum recursion depth
       */
     @JSName("flat")
-    def flat_0[U](`this`: js.Array[U], depth: `0`): js.Array[U] = js.native
+    def flat_0[U](depth: `0`): js.Array[U] = js.native
     @JSName("flat")
-    def flat_1[U](`this`: js.Array[js.Array[U]], depth: `1`): js.Array[U] = js.native
+    def flat_1[U](depth: `1`): js.Array[U] = js.native
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
@@ -141,7 +139,7 @@ object dashPrivateNativeDashArrayMod extends js.Object {
       * @param depth The maximum recursion depth
       */
     @JSName("flat")
-    def flat_2[U](`this`: js.Array[js.Array[js.Array[U]]], depth: `2`): js.Array[U] = js.native
+    def flat_2[U](depth: `2`): js.Array[U] = js.native
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
@@ -149,7 +147,7 @@ object dashPrivateNativeDashArrayMod extends js.Object {
       * @param depth The maximum recursion depth
       */
     @JSName("flat")
-    def flat_3[U](`this`: js.Array[js.Array[js.Array[js.Array[U]]]], depth: `3`): js.Array[U] = js.native
+    def flat_3[U](depth: `3`): js.Array[U] = js.native
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
@@ -157,7 +155,7 @@ object dashPrivateNativeDashArrayMod extends js.Object {
       * @param depth The maximum recursion depth
       */
     @JSName("flat")
-    def flat_4[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]], depth: `4`): js.Array[U] = js.native
+    def flat_4[U](depth: `4`): js.Array[U] = js.native
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
@@ -165,7 +163,7 @@ object dashPrivateNativeDashArrayMod extends js.Object {
       * @param depth The maximum recursion depth
       */
     @JSName("flat")
-    def flat_5[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]], depth: `5`): js.Array[U] = js.native
+    def flat_5[U](depth: `5`): js.Array[U] = js.native
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
@@ -173,7 +171,7 @@ object dashPrivateNativeDashArrayMod extends js.Object {
       * @param depth The maximum recursion depth
       */
     @JSName("flat")
-    def flat_6[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]]], depth: `6`): js.Array[U] = js.native
+    def flat_6[U](depth: `6`): js.Array[U] = js.native
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
       * specified depth.
@@ -181,10 +179,7 @@ object dashPrivateNativeDashArrayMod extends js.Object {
       * @param depth The maximum recursion depth
       */
     @JSName("flat")
-    def flat_7[U](
-      `this`: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]]]],
-      depth: `7`
-    ): js.Array[U] = js.native
+    def flat_7[U](depth: `7`): js.Array[U] = js.native
     /**
       * Adds all the elements of an array separated by the specified separator string.
       * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.

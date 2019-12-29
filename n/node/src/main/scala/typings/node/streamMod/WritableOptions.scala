@@ -1,7 +1,7 @@
 package typings.node.streamMod
 
 import typings.node.Anon_Chunk
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait WritableOptions extends js.Object {
   var autoDestroy: js.UndefOr[Boolean] = js.undefined
   var decodeStrings: js.UndefOr[Boolean] = js.undefined
-  var defaultEncoding: js.UndefOr[java.lang.String] = js.undefined
+  var defaultEncoding: js.UndefOr[String] = js.undefined
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ Writable, 
@@ -32,7 +32,7 @@ trait WritableOptions extends js.Object {
     js.ThisFunction3[
       /* this */ Writable, 
       /* chunk */ js.Any, 
-      /* encoding */ java.lang.String, 
+      /* encoding */ String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -52,7 +52,7 @@ object WritableOptions {
   def apply(
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: java.lang.String = null,
+    defaultEncoding: String = null,
     destroy: js.ThisFunction2[
       /* this */ Writable, 
       /* error */ Error | Null, 
@@ -70,7 +70,7 @@ object WritableOptions {
     write: js.ThisFunction3[
       /* this */ Writable, 
       /* chunk */ js.Any, 
-      /* encoding */ java.lang.String, 
+      /* encoding */ String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null,

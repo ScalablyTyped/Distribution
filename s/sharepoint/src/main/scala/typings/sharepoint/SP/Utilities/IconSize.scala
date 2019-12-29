@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Utilities.IconSize.size16
-import typings.sharepoint.SP.Utilities.IconSize.size256
-import typings.sharepoint.SP.Utilities.IconSize.size32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

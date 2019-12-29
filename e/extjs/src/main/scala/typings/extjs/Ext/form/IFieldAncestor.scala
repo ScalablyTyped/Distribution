@@ -17,7 +17,7 @@ trait IFieldAncestor extends IBase {
   		* @param error String The new active error message
   		*/
   var onFieldErrorChange: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Fired when the validity of any field within the container changes
   		* @param field Ext.form.field.Field The sub-field whose validity changed
@@ -41,14 +41,14 @@ object IFieldAncestor {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fieldDefaults: js.Any = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IFieldAncestor = null,
     initFieldAncestor: () => Unit = null,
     mixins: js.Any = null,
-    onFieldErrorChange: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[java.lang.String]) => Unit = null,
+    onFieldErrorChange: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String]) => Unit = null,
     onFieldValidityChange: (/* field */ js.UndefOr[typings.extjs.Ext.form.field.IField], /* valid */ js.UndefOr[Boolean]) => Unit = null,
     requires: Array = null,
     self: IClass = null,

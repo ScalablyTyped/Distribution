@@ -1,10 +1,7 @@
 package typings.pigpio
 
-import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadableStream
-import typings.pigpio.pigpioMod.Gpio
-import typings.pigpio.pigpioMod.GpioBank
-import typings.pigpio.pigpioMod.Notifier
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

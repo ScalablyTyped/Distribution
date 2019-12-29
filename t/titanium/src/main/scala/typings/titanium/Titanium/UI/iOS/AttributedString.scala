@@ -15,7 +15,7 @@ trait AttributedString extends Proxy {
   /**
   				 * An array of attributes to add.
   				 */
-  var attributes: js.Array[typings.titanium.Titanium.UI.iOS.Attribute]
+  var attributes: js.Array[Attribute]
   /**
   				 * The text applied to the attributed string.
   				 */
@@ -23,11 +23,11 @@ trait AttributedString extends Proxy {
   /**
   				 * Adds an [attribute](Attribute) with the given name and value to the characters in the specified range.
   				 */
-  def addAttribute(attribute: typings.titanium.Titanium.UI.iOS.Attribute): Unit
+  def addAttribute(attribute: Attribute): Unit
   /**
   				 * Gets the value of the <Titanium.UI.iOS.AttributedString.attributes> property.
   				 */
-  def getAttributes(): js.Array[typings.titanium.Titanium.UI.iOS.Attribute]
+  def getAttributes(): js.Array[Attribute]
   /**
   				 * Gets the value of the <Titanium.UI.iOS.AttributedString.text> property.
   				 */
@@ -35,7 +35,7 @@ trait AttributedString extends Proxy {
   /**
   				 * Sets the value of the <Titanium.UI.iOS.AttributedString.attributes> property.
   				 */
-  def setAttributes(attributes: js.Array[typings.titanium.Titanium.UI.iOS.Attribute]): Unit
+  def setAttributes(attributes: js.Array[Attribute]): Unit
   /**
   				 * Sets the value of the <Titanium.UI.iOS.AttributedString.text> property.
   				 */
@@ -45,19 +45,19 @@ trait AttributedString extends Proxy {
 object AttributedString {
   @scala.inline
   def apply(
-    addAttribute: typings.titanium.Titanium.UI.iOS.Attribute => Unit,
+    addAttribute: Attribute => Unit,
     addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
     apiName: String,
     applyProperties: js.Any => Unit,
-    attributes: js.Array[typings.titanium.Titanium.UI.iOS.Attribute],
+    attributes: js.Array[Attribute],
     bubbleParent: Boolean,
     fireEvent: (String, js.Any) => Unit,
     getApiName: () => String,
-    getAttributes: () => js.Array[typings.titanium.Titanium.UI.iOS.Attribute],
+    getAttributes: () => js.Array[Attribute],
     getBubbleParent: () => Boolean,
     getText: () => String,
     removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setAttributes: js.Array[typings.titanium.Titanium.UI.iOS.Attribute] => Unit,
+    setAttributes: js.Array[Attribute] => Unit,
     setBubbleParent: Boolean => Unit,
     setText: String => Unit,
     text: String,

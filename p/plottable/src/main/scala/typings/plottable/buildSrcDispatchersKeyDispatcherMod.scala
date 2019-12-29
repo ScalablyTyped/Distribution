@@ -1,7 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcDispatchersDispatcherMod.Dispatcher
-import typings.plottable.buildSrcDispatchersKeyDispatcherMod.KeyCallback
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

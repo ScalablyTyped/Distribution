@@ -10,7 +10,8 @@ class DocumentWindows protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.DocumentWindows_typekey`: DocumentWindows = js.native
+  @JSName("PowerPoint.DocumentWindows_typekey")
+  var PowerPointDotDocumentWindows_typekey: DocumentWindows = js.native
   /** @param PowerPoint.PpArrangeStyle [arrangeStyle=1] */
   def Arrange(): Unit = js.native
   def Arrange(arrangeStyle: PpArrangeStyle): Unit = js.native

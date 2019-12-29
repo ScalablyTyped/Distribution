@@ -32,9 +32,6 @@ object aphroditeNumbers {
   @js.native
   sealed trait `900` extends js.Object
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
   @scala.inline
   def `100`: `100` = 100.asInstanceOf[`100`]
   @scala.inline
@@ -53,7 +50,5 @@ object aphroditeNumbers {
   def `800`: `800` = 800.asInstanceOf[`800`]
   @scala.inline
   def `900`: `900` = 900.asInstanceOf[`900`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

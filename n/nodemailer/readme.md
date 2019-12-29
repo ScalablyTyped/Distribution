@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodemailer
 
-Typings are for version 6.2
+Typings are for version 6.4
 
 ## Library description:
 Easy as cake e-mail sending from your Node.js applications

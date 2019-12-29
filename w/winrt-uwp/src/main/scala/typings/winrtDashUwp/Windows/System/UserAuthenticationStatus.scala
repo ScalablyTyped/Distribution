@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.UserAuthenticationStatus.locallyAuthenticated
-import typings.winrtDashUwp.Windows.System.UserAuthenticationStatus.remotelyAuthenticated
-import typings.winrtDashUwp.Windows.System.UserAuthenticationStatus.unauthenticated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

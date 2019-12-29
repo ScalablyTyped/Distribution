@@ -14,6 +14,7 @@ object StyleSheet extends js.Object {
   val absoluteFill: RegisteredStyle[AbsoluteFillStyle] = js.native
   val absoluteFillObject: AbsoluteFillStyle = js.native
   val hairlineWidth: Double = js.native
+  def compose[T](style1: StyleProp[T], style2: StyleProp[T]): StyleProp[T] = js.native
   def create[T /* <: NamedStyles[_ | T] */](styles: T): T = js.native
   def create[T /* <: NamedStyles[_ | T] */](styles: NamedStyles[T]): T = js.native
   def flatten[T](): T = js.native

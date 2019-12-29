@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WIA.CommonDialog")
 @js.native
 class CommonDialog protected () extends js.Object {
-  var `WIA.CommonDialog_typekey`: CommonDialog = js.native
+  @JSName("WIA.CommonDialog_typekey")
+  var WIADotCommonDialog_typekey: CommonDialog = js.native
   /**
     * Displays one or more dialog boxes that enable the user to acquire an image from a hardware device for image acquisition and returns an ImageFile
     * object on success, otherwise Nothing

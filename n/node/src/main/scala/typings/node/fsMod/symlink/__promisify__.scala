@@ -16,6 +16,6 @@ object __promisify__ extends js.Object {
     * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
     */
   def apply(target: PathLike, path: PathLike): js.Promise[Unit] = js.native
-  def apply(target: PathLike, path: PathLike, `type`: java.lang.String): js.Promise[Unit] = js.native
+  def apply(target: PathLike, path: PathLike, `type`: String): js.Promise[Unit] = js.native
 }
 

@@ -1,8 +1,6 @@
 package typings.s3DashUploadDashStream
 
 import typings.node.streamMod.Writable
-import typings.s3DashUploadDashStream.s3DashUploadDashStreamMod.S3StreamUploader
-import typings.s3DashUploadDashStream.s3DashUploadDashStreamMod.S3WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

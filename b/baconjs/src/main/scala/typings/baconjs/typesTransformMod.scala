@@ -5,7 +5,6 @@ import typings.baconjs.typesEventMod.Event
 import typings.baconjs.typesObservableMod.EventStream
 import typings.baconjs.typesObservableMod.Property
 import typings.baconjs.typesReplyMod.Reply
-import typings.baconjs.typesTransformMod.Transformer
 import typings.baconjs.typesTypesMod.EventSink
 import scala.scalajs.js
 import scala.scalajs.js.`|`

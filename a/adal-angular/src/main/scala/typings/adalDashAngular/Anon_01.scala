@@ -1,23 +1,23 @@
 package typings.adalDashAngular
 
-import typings.adalDashAngular.adalDashAngularStrings.`ERROR:`
-import typings.adalDashAngular.adalDashAngularStrings.`INFO:`
-import typings.adalDashAngular.adalDashAngularStrings.`VERBOSE:`
-import typings.adalDashAngular.adalDashAngularStrings.`WARNING:`
+import typings.adalDashAngular.adalDashAngularStrings.ERRORColon
+import typings.adalDashAngular.adalDashAngularStrings.INFOColon
+import typings.adalDashAngular.adalDashAngularStrings.VERBOSEColon
+import typings.adalDashAngular.adalDashAngularStrings.WARNINGColon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_01 extends js.Object {
-  var `0`: `ERROR:`
-  var `1`: `WARNING:`
-  var `2`: `INFO:`
-  var `3`: `VERBOSE:`
+  var `0`: ERRORColon
+  var `1`: WARNINGColon
+  var `2`: INFOColon
+  var `3`: VERBOSEColon
 }
 
 object Anon_01 {
   @scala.inline
-  def apply(`0`: `ERROR:`, `1`: `WARNING:`, `2`: `INFO:`, `3`: `VERBOSE:`): Anon_01 = {
+  def apply(`0`: ERRORColon, `1`: WARNINGColon, `2`: INFOColon, `3`: VERBOSEColon): Anon_01 = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])

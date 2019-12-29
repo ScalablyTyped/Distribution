@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.DOWN
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.NEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.PREVIOUS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.UP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

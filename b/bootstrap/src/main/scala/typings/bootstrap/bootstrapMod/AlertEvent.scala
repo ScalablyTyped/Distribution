@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.bootstrap.bootstrapStrings.closeDOTbsDOTalert
-  - typings.bootstrap.bootstrapStrings.closedDOTbsDOTalert
+  - typings.bootstrap.bootstrapStrings.closeDotbsDotalert
+  - typings.bootstrap.bootstrapStrings.closedDotbsDotalert
 */
 trait AlertEvent extends js.Object
 
@@ -14,8 +14,8 @@ object AlertEvent {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def closeDOTbsDOTalert: typings.bootstrap.bootstrapStrings.closeDOTbsDOTalert = this.cast("close.bs.alert")
+  def closeDotbsDotalert: typings.bootstrap.bootstrapStrings.closeDotbsDotalert = this.cast("close.bs.alert")
   @scala.inline
-  def closedDOTbsDOTalert: typings.bootstrap.bootstrapStrings.closedDOTbsDOTalert = this.cast("closed.bs.alert")
+  def closedDotbsDotalert: typings.bootstrap.bootstrapStrings.closedDotbsDotalert = this.cast("closed.bs.alert")
 }
 

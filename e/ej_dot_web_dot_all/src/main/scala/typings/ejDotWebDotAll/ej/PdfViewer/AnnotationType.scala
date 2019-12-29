@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.PdfViewer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PdfViewer.AnnotationType.Highlight
-import typings.ejDotWebDotAll.ej.PdfViewer.AnnotationType.Strikethrough
-import typings.ejDotWebDotAll.ej.PdfViewer.AnnotationType.Underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

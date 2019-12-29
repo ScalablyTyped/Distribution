@@ -28,7 +28,8 @@ class LineFormat protected () extends js.Object {
   var InsetPen: MsoTriState = js.native
   val Parent: js.Any = js.native
   var Pattern: MsoPatternType = js.native
-  var `PowerPoint.LineFormat_typekey`: LineFormat = js.native
+  @JSName("PowerPoint.LineFormat_typekey")
+  var PowerPointDotLineFormat_typekey: LineFormat = js.native
   var Style: MsoLineStyle = js.native
   var Transparency: Double = js.native
   var Visible: MsoTriState = js.native

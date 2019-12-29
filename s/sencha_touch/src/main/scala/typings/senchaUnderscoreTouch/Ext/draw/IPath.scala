@@ -127,7 +127,7 @@ trait IPath extends IBase {
   /** [Method] Feed the path from svg path string
   		* @param pathString String
   		*/
-  var fromSvgString: js.UndefOr[js.Function1[/* pathString */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var fromSvgString: js.UndefOr[js.Function1[/* pathString */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Get the bounding box of this matrix
   		* @param target Object Optional object to receive the result.
   		* @returns Object Object with x, y, width and height
@@ -191,7 +191,7 @@ trait IPath extends IBase {
   		* @returns String
   		*/
   @JSName("toString")
-  var toString_FIPath: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIPath: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Convert path to bezier curve stripes
   		* @param target Array The optional array to receive the result.
   		* @returns Array
@@ -221,12 +221,12 @@ object IPath {
     config: js.Any = null,
     destroy: () => Unit = null,
     ellipse: (/* cx */ js.UndefOr[Double], /* cy */ js.UndefOr[Double], /* radiusX */ js.UndefOr[Double], /* radiusY */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     fromStripes: /* stripes */ js.UndefOr[Array] => Unit = null,
-    fromSvgString: /* pathString */ js.UndefOr[java.lang.String] => Unit = null,
+    fromSvgString: /* pathString */ js.UndefOr[String] => Unit = null,
     getDimension: /* target */ js.UndefOr[js.Any] => _ = null,
     getDimensionWithTransform: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     isPointInPath: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean = null,
@@ -239,7 +239,7 @@ object IPath {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     toStripes: /* target */ js.UndefOr[Array] => Array = null,
     transform: /* matrix */ js.UndefOr[IMatrix] => Unit = null,
     uses: Array = null

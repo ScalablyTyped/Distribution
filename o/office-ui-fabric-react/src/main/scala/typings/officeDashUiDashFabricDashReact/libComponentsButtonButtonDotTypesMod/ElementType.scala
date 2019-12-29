@@ -1,8 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ElementType.anchor
-import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ElementType.button
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

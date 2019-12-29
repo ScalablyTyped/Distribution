@@ -2,8 +2,6 @@ package typings.jestDashDiff
 
 import typings.chalk.chalkMod.Chalk
 import typings.jestDashDiff.buildCleanupSemanticMod.Diff
-import typings.jestDashDiff.buildPrintDiffsMod.StringDiffResult
-import typings.jestDashDiff.buildPrintDiffsMod._StringDiffResult
 import typings.jestDashDiff.buildTypesMod.DiffOptions
 import typings.std.RegExp
 import scala.scalajs.js

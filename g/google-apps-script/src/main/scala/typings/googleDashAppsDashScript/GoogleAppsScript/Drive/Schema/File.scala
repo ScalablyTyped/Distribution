@@ -36,7 +36,7 @@ trait File extends js.Object {
   var isAppAuthorized: js.UndefOr[Boolean] = js.undefined
   var kind: js.UndefOr[String] = js.undefined
   var labels: js.UndefOr[FileLabels] = js.undefined
-  var lastModifyingUser: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
+  var lastModifyingUser: js.UndefOr[User] = js.undefined
   var lastModifyingUserName: js.UndefOr[String] = js.undefined
   var lastViewedByMeDate: js.UndefOr[String] = js.undefined
   var markedViewedByMeDate: js.UndefOr[String] = js.undefined
@@ -48,19 +48,17 @@ trait File extends js.Object {
   var originalFilename: js.UndefOr[String] = js.undefined
   var ownedByMe: js.UndefOr[Boolean] = js.undefined
   var ownerNames: js.UndefOr[js.Array[String]] = js.undefined
-  var owners: js.UndefOr[js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User]] = js.undefined
+  var owners: js.UndefOr[js.Array[User]] = js.undefined
   var parents: js.UndefOr[js.Array[ParentReference]] = js.undefined
   var permissionIds: js.UndefOr[js.Array[String]] = js.undefined
-  var permissions: js.UndefOr[
-    js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Permission]
-  ] = js.undefined
+  var permissions: js.UndefOr[js.Array[Permission]] = js.undefined
   var properties: js.UndefOr[js.Array[Property]] = js.undefined
   var quotaBytesUsed: js.UndefOr[String] = js.undefined
   var selfLink: js.UndefOr[String] = js.undefined
   var shareable: js.UndefOr[Boolean] = js.undefined
   var shared: js.UndefOr[Boolean] = js.undefined
   var sharedWithMeDate: js.UndefOr[String] = js.undefined
-  var sharingUser: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
+  var sharingUser: js.UndefOr[User] = js.undefined
   var spaces: js.UndefOr[js.Array[String]] = js.undefined
   var teamDriveId: js.UndefOr[String] = js.undefined
   var thumbnail: js.UndefOr[FileThumbnail] = js.undefined
@@ -68,8 +66,8 @@ trait File extends js.Object {
   var thumbnailVersion: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var trashedDate: js.UndefOr[String] = js.undefined
-  var trashingUser: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
-  var userPermission: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Permission] = js.undefined
+  var trashingUser: js.UndefOr[User] = js.undefined
+  var userPermission: js.UndefOr[Permission] = js.undefined
   var version: js.UndefOr[String] = js.undefined
   var videoMediaMetadata: js.UndefOr[FileVideoMediaMetadata] = js.undefined
   var webContentLink: js.UndefOr[String] = js.undefined
@@ -111,7 +109,7 @@ object File {
     isAppAuthorized: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
     labels: FileLabels = null,
-    lastModifyingUser: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User = null,
+    lastModifyingUser: User = null,
     lastModifyingUserName: String = null,
     lastViewedByMeDate: String = null,
     markedViewedByMeDate: String = null,
@@ -123,17 +121,17 @@ object File {
     originalFilename: String = null,
     ownedByMe: js.UndefOr[Boolean] = js.undefined,
     ownerNames: js.Array[String] = null,
-    owners: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User] = null,
+    owners: js.Array[User] = null,
     parents: js.Array[ParentReference] = null,
     permissionIds: js.Array[String] = null,
-    permissions: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Permission] = null,
+    permissions: js.Array[Permission] = null,
     properties: js.Array[Property] = null,
     quotaBytesUsed: String = null,
     selfLink: String = null,
     shareable: js.UndefOr[Boolean] = js.undefined,
     shared: js.UndefOr[Boolean] = js.undefined,
     sharedWithMeDate: String = null,
-    sharingUser: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User = null,
+    sharingUser: User = null,
     spaces: js.Array[String] = null,
     teamDriveId: String = null,
     thumbnail: FileThumbnail = null,
@@ -141,8 +139,8 @@ object File {
     thumbnailVersion: String = null,
     title: String = null,
     trashedDate: String = null,
-    trashingUser: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.User = null,
-    userPermission: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Schema.Permission = null,
+    trashingUser: User = null,
+    userPermission: Permission = null,
     version: String = null,
     videoMediaMetadata: FileVideoMediaMetadata = null,
     webContentLink: String = null,

@@ -28,7 +28,8 @@ class CellFormat protected () extends js.Object {
   @JSName("Borders")
   var Borders_Original: Borders = js.native
   val Creator: XlCreator = js.native
-  var `Excel.CellFormat_typekey`: CellFormat = js.native
+  @JSName("Excel.CellFormat_typekey")
+  var ExcelDotCellFormat_typekey: CellFormat = js.native
   var Font: typings.activexDashExcel.Excel.Font = js.native
   var FormulaHidden: Boolean | Null = js.native
   var HorizontalAlignment: HorizontalAlignments = js.native

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait ToastProps extends js.Object {
   var appearance: AppearanceTypes = js.native
   var autoDismiss: Boolean | Double = js.native
+   // inherited from ToastProvider
   var autoDismissTimeout: Double = js.native
    // inherited from ToastProvider
   var children: ReactNode = js.native

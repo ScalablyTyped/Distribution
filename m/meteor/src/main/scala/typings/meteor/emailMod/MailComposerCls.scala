@@ -6,9 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("meteor/email", "MailComposer")
 @js.native
-class MailComposerCls protected ()
-  extends typings.meteor.emailMod.MailComposer {
-  def this(options: typings.meteor.emailMod.MailComposerOptions) = this()
+class MailComposerCls protected () extends MailComposer {
+  def this(options: MailComposerOptions) = this()
   /* CompleteClass */
   override def addHeader(name: String, value: String): Unit = js.native
   /* CompleteClass */

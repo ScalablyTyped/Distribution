@@ -1,23 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.ContentControlType.buildingBlockGallery
-import typings.officeDashJsDashPreview.Word.ContentControlType.checkBox
-import typings.officeDashJsDashPreview.Word.ContentControlType.comboBox
-import typings.officeDashJsDashPreview.Word.ContentControlType.datePicker
-import typings.officeDashJsDashPreview.Word.ContentControlType.dropDownList
-import typings.officeDashJsDashPreview.Word.ContentControlType.picture
-import typings.officeDashJsDashPreview.Word.ContentControlType.plainText
-import typings.officeDashJsDashPreview.Word.ContentControlType.plainTextInline
-import typings.officeDashJsDashPreview.Word.ContentControlType.plainTextParagraph
-import typings.officeDashJsDashPreview.Word.ContentControlType.repeatingSection
-import typings.officeDashJsDashPreview.Word.ContentControlType.richText
-import typings.officeDashJsDashPreview.Word.ContentControlType.richTextInline
-import typings.officeDashJsDashPreview.Word.ContentControlType.richTextParagraphs
-import typings.officeDashJsDashPreview.Word.ContentControlType.richTextTable
-import typings.officeDashJsDashPreview.Word.ContentControlType.richTextTableCell
-import typings.officeDashJsDashPreview.Word.ContentControlType.richTextTableRow
-import typings.officeDashJsDashPreview.Word.ContentControlType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.StreamType.BUFFERED
-import typings.chrome.chrome.cast.media.StreamType.LIVE
-import typings.chrome.chrome.cast.media.StreamType.OTHER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsonstreamMod {
-  import typings.jsonstream.jsonstreamNumbers.`false`
+  import typings.jsonstream.jsonstreamBooleans.`false`
 
   type NewlineOnlyIndicator = `false`
 }

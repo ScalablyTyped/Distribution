@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ISortable extends IBase {
   /** [Property] (String) */
-  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Boolean) */
@@ -24,14 +24,14 @@ trait ISortable extends IBase {
   var sort: js.UndefOr[
     js.Function4[
       /* sorters */ js.UndefOr[js.Any], 
-      /* direction */ js.UndefOr[java.lang.String], 
-      /* where */ js.UndefOr[java.lang.String], 
+      /* direction */ js.UndefOr[String], 
+      /* where */ js.UndefOr[String], 
       /* doSort */ js.UndefOr[Boolean], 
       Array
     ]
   ] = js.undefined
   /** [Property] (String) */
-  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  var sortRoot: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.util.MixedCollection) */
   var sorters: js.UndefOr[IMixedCollection] = js.undefined
 }
@@ -45,10 +45,10 @@ object ISortable {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    defaultSortDirection: java.lang.String = null,
+    defaultSortDirection: String = null,
     destroy: () => Unit = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initSortable: () => Unit = null,
@@ -57,8 +57,8 @@ object ISortable {
     platformConfig: js.Any = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[java.lang.String], /* where */ js.UndefOr[java.lang.String], /* doSort */ js.UndefOr[Boolean]) => Array = null,
-    sortRoot: java.lang.String = null,
+    sort: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], /* where */ js.UndefOr[String], /* doSort */ js.UndefOr[Boolean]) => Array = null,
+    sortRoot: String = null,
     sorters: IMixedCollection = null,
     statics: js.Any = null,
     uses: Array = null

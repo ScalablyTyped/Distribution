@@ -2,20 +2,20 @@ package typings.baseui
 
 import typings.baseui.baseuiStrings.AD
 import typings.baseui.baseuiStrings.Andorra
-import typings.baseui.baseuiStrings.`+376`
+import typings.baseui.baseuiStrings.Plussign376
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_376 extends js.Object {
-  var dialCode: `+376`
+  var dialCode: Plussign376
   var id: AD
   var label: Andorra
 }
 
 object Anon_376 {
   @scala.inline
-  def apply(dialCode: `+376`, id: AD, label: Andorra): Anon_376 = {
+  def apply(dialCode: Plussign376, id: AD, label: Andorra): Anon_376 = {
     val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_376]

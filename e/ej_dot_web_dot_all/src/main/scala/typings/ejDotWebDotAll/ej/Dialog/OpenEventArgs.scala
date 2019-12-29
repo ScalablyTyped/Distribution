@@ -10,7 +10,7 @@ trait OpenEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** Instance of the dialog model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Dialog.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -18,11 +18,7 @@ trait OpenEventArgs extends js.Object {
 
 object OpenEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Dialog.Model = null,
-    `type`: String = null
-  ): OpenEventArgs = {
+  def apply(cancel: js.UndefOr[Boolean] = js.undefined, model: Model = null, `type`: String = null): OpenEventArgs = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])

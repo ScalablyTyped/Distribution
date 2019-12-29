@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Core.VideoStabilizationEffectEnabledChangedReason.pixelRateTooHigh
-import typings.winrtDashUwp.Windows.Media.Core.VideoStabilizationEffectEnabledChangedReason.programmatic
-import typings.winrtDashUwp.Windows.Media.Core.VideoStabilizationEffectEnabledChangedReason.runningSlowly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

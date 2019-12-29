@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLSemanticElement")
 @js.native
 class HTMLSemanticElement protected () extends js.Object {
-  var `MSHTML.HTMLSemanticElement_typekey`: HTMLSemanticElement = js.native
+  @JSName("MSHTML.HTMLSemanticElement_typekey")
+  var MSHTMLDotHTMLSemanticElement_typekey: HTMLSemanticElement = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var ariaActivedescendant: String = js.native

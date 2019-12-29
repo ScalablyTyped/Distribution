@@ -1,8 +1,6 @@
 package typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Orient.AUTO
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Orient.AUTO_START_REVERSE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,15 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.bluetoothEncryptionAllowNullAuthentication
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.bluetoothEncryptionWithAuthentication
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.plainSocket
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.ssl
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.ssl3AllowWeakEncryption
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.sslAllowNullEncryption
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls10
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls11
-import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls12
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

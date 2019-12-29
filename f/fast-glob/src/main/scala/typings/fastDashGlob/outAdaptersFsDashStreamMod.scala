@@ -1,6 +1,5 @@
 package typings.fastDashGlob
 
-import typings.fastDashGlob.outAdaptersFsDashStreamMod.FileSystemStream
 import typings.fastDashGlob.outTypesEntriesMod.Entry
 import typings.fastDashGlob.outTypesPatternsMod.Pattern
 import typings.node.NodeJS.ReadableStream

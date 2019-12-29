@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.NeedleType.Arrow
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.NeedleType.Image
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.NeedleType.Rectangle
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.NeedleType.Trapezoid
-import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.NeedleType.Triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

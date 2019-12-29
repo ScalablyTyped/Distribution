@@ -2,7 +2,6 @@ package typings.jqueryDashFocusDashExit.jqueryDashFocusDashExitMod
 
 import typings.jquery.JQuery.TriggeredEvent
 import typings.jqueryDashFocusDashExit.Anon_Debug
-import typings.jqueryDashFocusDashExit.jqueryDashFocusDashExitMod._Global_.JQuery
 import typings.jqueryDashFocusDashExit.jqueryDashFocusDashExitStrings.focusExit
 import typings.jqueryDashFocusDashExit.jqueryDashFocusDashExitStrings.focusin
 import typings.std.HTMLElement

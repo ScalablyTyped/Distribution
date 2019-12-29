@@ -1,13 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.RoleType.administrator
-import typings.sharepoint.SP.RoleType.contributor
-import typings.sharepoint.SP.RoleType.editor
-import typings.sharepoint.SP.RoleType.guest
-import typings.sharepoint.SP.RoleType.none
-import typings.sharepoint.SP.RoleType.reader
-import typings.sharepoint.SP.RoleType.webDesigner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

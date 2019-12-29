@@ -1,6 +1,6 @@
 package typings.smtpapi.smtpapiMod
 
-import typings.smtpapi.smtpapiStrings.Empty
+import typings.smtpapi.smtpapiStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Header extends js.Object {
   var filters: js.Object
   var ip_pool: String
   var section: js.Object
-  var send_at: Empty | Double
+  var send_at: _empty | Double
   var send_each_at: js.Array[Double]
   var sub: js.Object
   var to: js.Array[String]
@@ -26,7 +26,7 @@ object Header {
     filters: js.Object,
     ip_pool: String,
     section: js.Object,
-    send_at: Empty | Double,
+    send_at: _empty | Double,
     send_each_at: js.Array[Double],
     sub: js.Object,
     to: js.Array[String],

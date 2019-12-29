@@ -1,12 +1,6 @@
 package typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.Equal
-import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.GreaterThan
-import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.GreaterThanEqual
-import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.LessThan
-import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.LessThanEqual
-import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.NotEqual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

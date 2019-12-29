@@ -20,7 +20,8 @@ class OLEDBConnection protected () extends js.Object {
   var Connection: String = js.native
   val Creator: XlCreator = js.native
   var EnableRefresh: Boolean = js.native
-  var `Excel.OLEDBConnection_typekey`: OLEDBConnection = js.native
+  @JSName("Excel.OLEDBConnection_typekey")
+  var ExcelDotOLEDBConnection_typekey: OLEDBConnection = js.native
   val IsConnected: Boolean = js.native
   var LocalConnection: String = js.native
   var LocaleID: Double = js.native

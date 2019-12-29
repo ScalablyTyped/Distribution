@@ -1,18 +1,6 @@
 package typings.googleDashLibphonenumber.libphonenumber
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.FIXED_LINE
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.FIXED_LINE_OR_MOBILE
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.MOBILE
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.PAGER
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.PERSONAL_NUMBER
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.PREMIUM_RATE
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.SHARED_COST
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.TOLL_FREE
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.UAN
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.UNKNOWN
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.VOICEMAIL
-import typings.googleDashLibphonenumber.libphonenumber.PhoneNumberType.VOIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

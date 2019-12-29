@@ -1,15 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.MapTypeId.aerial
-import typings.bingmaps.Microsoft.Maps.MapTypeId.birdseye
-import typings.bingmaps.Microsoft.Maps.MapTypeId.canvasDark
-import typings.bingmaps.Microsoft.Maps.MapTypeId.canvasLight
-import typings.bingmaps.Microsoft.Maps.MapTypeId.grayscale
-import typings.bingmaps.Microsoft.Maps.MapTypeId.mercator
-import typings.bingmaps.Microsoft.Maps.MapTypeId.ordnanceSurvey
-import typings.bingmaps.Microsoft.Maps.MapTypeId.road
-import typings.bingmaps.Microsoft.Maps.MapTypeId.streetside
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

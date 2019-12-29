@@ -1,6 +1,5 @@
 package typings.dragDashTimetable
 
-import typings.dragDashTimetable.dragDashTimetableMod.TimetableInstance
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

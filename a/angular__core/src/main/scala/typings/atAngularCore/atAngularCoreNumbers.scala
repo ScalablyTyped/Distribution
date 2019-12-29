@@ -302,12 +302,6 @@ object atAngularCoreNumbers {
   @js.native
   sealed trait _4294901760 extends PreOrderHookFlags
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -412,9 +406,5 @@ object atAngularCoreNumbers {
   def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
   @scala.inline
   def _4294901760: _4294901760 = 4294901760.0.asInstanceOf[_4294901760]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

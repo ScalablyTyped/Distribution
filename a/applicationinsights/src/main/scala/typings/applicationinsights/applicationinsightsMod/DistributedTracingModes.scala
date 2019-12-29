@@ -1,8 +1,6 @@
 package typings.applicationinsights.applicationinsightsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.applicationinsights.applicationinsightsMod.DistributedTracingModes.AI
-import typings.applicationinsights.applicationinsightsMod.DistributedTracingModes.AI_AND_W3C
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

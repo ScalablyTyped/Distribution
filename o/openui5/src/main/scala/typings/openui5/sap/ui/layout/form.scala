@@ -6,16 +6,6 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.LayoutData
 import typings.openui5.sap.ui.core.Title
 import typings.openui5.sap.ui.core.Toolbar
-import typings.openui5.sap.ui.layout.form.Form
-import typings.openui5.sap.ui.layout.form.FormContainer
-import typings.openui5.sap.ui.layout.form.FormElement
-import typings.openui5.sap.ui.layout.form.FormLayout
-import typings.openui5.sap.ui.layout.form.GridContainerData
-import typings.openui5.sap.ui.layout.form.GridElementData
-import typings.openui5.sap.ui.layout.form.GridLayout
-import typings.openui5.sap.ui.layout.form.ResponsiveGridLayout
-import typings.openui5.sap.ui.layout.form.SimpleForm
-import typings.openui5.sap.ui.layout.form.SimpleFormLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -86,7 +86,8 @@ class Presentation protected () extends js.Object {
   val Path: String = js.native
   @JSName("Permission")
   val Permission_Original: Permission = js.native
-  var `PowerPoint.Presentation_typekey`: Presentation = js.native
+  @JSName("PowerPoint.Presentation_typekey")
+  var PowerPointDotPresentation_typekey: Presentation = js.native
   val PrintOptions: typings.activexDashPowerpoint.PowerPoint.PrintOptions = js.native
   val PublishObjects: typings.activexDashPowerpoint.PowerPoint.PublishObjects = js.native
   val ReadOnly: MsoTriState = js.native

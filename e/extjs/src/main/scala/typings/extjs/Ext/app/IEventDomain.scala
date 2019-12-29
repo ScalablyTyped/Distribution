@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait IEventDomain extends IBase {
   /** [Config Option] (String) */
-  var idProperty: js.UndefOr[java.lang.String] = js.undefined
+  var idProperty: js.UndefOr[String] = js.undefined
   /** [Property] (Object) */
   var instances: js.UndefOr[js.Any] = js.undefined
   /** [Method] This method matches the firer of the event the target to the given selector
@@ -18,11 +18,7 @@ trait IEventDomain extends IBase {
   		* @returns Boolean true if the target matches the selector.
   		*/
   var `match`: js.UndefOr[
-    js.Function2[
-      /* target */ js.UndefOr[js.Any], 
-      /* selector */ js.UndefOr[java.lang.String], 
-      Boolean
-    ]
+    js.Function2[/* target */ js.UndefOr[js.Any], /* selector */ js.UndefOr[String], Boolean]
   ] = js.undefined
   /** [Method] This method is called by the derived class to monitor fireEvent calls
   		* @param observable Ext.Class The Observable to monitor for events.
@@ -39,13 +35,13 @@ object IEventDomain {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    idProperty: java.lang.String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    idProperty: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IEventDomain = null,
     instances: js.Any = null,
-    `match`: (/* target */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean = null,
+    `match`: (/* target */ js.UndefOr[js.Any], /* selector */ js.UndefOr[String]) => Boolean = null,
     mixins: js.Any = null,
     monitor: /* observable */ js.UndefOr[IClass] => Unit = null,
     requires: Array = null,

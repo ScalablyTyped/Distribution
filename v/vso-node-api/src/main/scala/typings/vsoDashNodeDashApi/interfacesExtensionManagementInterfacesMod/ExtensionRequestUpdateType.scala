@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Approved
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Created
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Deleted
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Rejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.VerticalOrigin.BOTTOM
-import typings.cesium.cesiumMod.VerticalOrigin.CENTER
-import typings.cesium.cesiumMod.VerticalOrigin.TOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,8 @@ class FreeformBuilder protected () extends js.Object {
   val Application: typings.activexDashWord.Word.Application = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.FreeformBuilder_typekey`: FreeformBuilder = js.native
+  @JSName("Word.FreeformBuilder_typekey")
+  var WordDotFreeformBuilder_typekey: FreeformBuilder = js.native
   /**
     * @param number [X2=0]
     * @param number [Y2=0]

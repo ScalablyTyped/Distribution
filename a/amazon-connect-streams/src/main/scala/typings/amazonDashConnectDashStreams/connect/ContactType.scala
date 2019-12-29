@@ -1,8 +1,6 @@
 package typings.amazonDashConnectDashStreams.connect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.amazonDashConnectDashStreams.connect.ContactType.QUEUE_CALLBACK
-import typings.amazonDashConnectDashStreams.connect.ContactType.VOICE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

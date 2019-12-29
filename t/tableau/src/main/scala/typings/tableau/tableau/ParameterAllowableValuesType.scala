@@ -1,9 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.ParameterAllowableValuesType.ALL
-import typings.tableau.tableau.ParameterAllowableValuesType.LIST
-import typings.tableau.tableau.ParameterAllowableValuesType.RANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

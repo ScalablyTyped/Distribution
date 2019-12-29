@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.SAXAttributes60")
 @js.native
 class SAXAttributes60 protected () extends js.Object {
-  var `MSXML2.SAXAttributes60_typekey`: SAXAttributes60 = js.native
+  @JSName("MSXML2.SAXAttributes60_typekey")
+  var MSXML2DotSAXAttributes60_typekey: SAXAttributes60 = js.native
   /** Add an attribute to the end of the list. */
   def addAttribute(strURI: String, strLocalName: String, strQName: String, strType: String, strValue: String): Unit = js.native
   /** Add an attribute, whose value is equal to the indexed attribute in the input attributes object, to the end of the list. */

@@ -1,6 +1,5 @@
 package typings.safeDashJsonDashStringify
 
-import typings.safeDashJsonDashStringify.safeDashJsonDashStringifyMod.ReplacerFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.dropboxjs.Dropbox
 
 import typings.dropboxjs.Anon_Cancelable
-import typings.dropboxjs.Dropbox.Util.EventSource
-import typings.dropboxjs.Dropbox.Util.Oauth
-import typings.dropboxjs.Dropbox.Util.Xhr
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.XMLHttpRequest

@@ -2,8 +2,6 @@ package typings.gulpDashSequence
 
 import typings.gulp.gulpMod.Gulp
 import typings.gulp.gulpMod.TaskFunction
-import typings.gulpDashSequence.gulpDashSequenceMod.Done
-import typings.gulpDashSequence.gulpDashSequenceMod.Step
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

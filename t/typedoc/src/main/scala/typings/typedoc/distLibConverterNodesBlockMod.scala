@@ -3,9 +3,6 @@ package typings.typedoc
 import org.scalablytyped.runtime.TopLevel
 import typings.typedoc.distLibConverterComponentsMod.ConverterNodeComponent
 import typings.typedoc.distLibConverterContextMod.Context
-import typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode
-import typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode.File
-import typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode.Modules
 import typings.typedoc.distLibModelsMod.Reflection
 import typings.typescript.typescriptMod.Block
 import typings.typescript.typescriptMod.ModuleBlock

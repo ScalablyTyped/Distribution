@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassComboBox
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ComboBox]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), ComboBox] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), ComboBox]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, ComboBox] {
   var Locale: js.Any = js.native
   var fn: ComboBox = js.native
 }

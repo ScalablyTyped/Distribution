@@ -6,8 +6,6 @@ import typings.atUirouterCore.libCommonTraceMod.Trace
 import typings.atUirouterCore.libGlobalsMod.UIRouterGlobals
 import typings.atUirouterCore.libInterfaceMod.Disposable
 import typings.atUirouterCore.libInterfaceMod.UIRouterPlugin
-import typings.atUirouterCore.libRouterMod.PluginFactory
-import typings.atUirouterCore.libRouterMod.UIRouter
 import typings.atUirouterCore.libStateStateRegistryMod.StateRegistry
 import typings.atUirouterCore.libStateStateServiceMod.StateService
 import typings.atUirouterCore.libTransitionTransitionServiceMod.TransitionService

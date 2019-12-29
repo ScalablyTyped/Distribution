@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("firebase", "firestore.DocumentSnapshot")
 @js.native
-class DocumentSnapshot protected () extends js.Object {
+class DocumentSnapshot[T] protected () extends js.Object {
   /**
     * Property of the `DocumentSnapshot` that signals whether or not the data
     * exists. True if the document exists.
@@ -24,7 +24,7 @@ class DocumentSnapshot protected () extends js.Object {
   /**
     * The `DocumentReference` for the document included in the `DocumentSnapshot`.
     */
-  val ref: DocumentReference = js.native
+  val ref: DocumentReference[T] = js.native
   /**
     * Retrieves all fields in the document as an Object. Returns 'undefined' if
     * the document doesn't exist.
@@ -39,8 +39,8 @@ class DocumentSnapshot protected () extends js.Object {
     * @return An Object containing all fields in the document or 'undefined' if
     * the document doesn't exist.
     */
-  def data(): js.UndefOr[DocumentData] = js.native
-  def data(options: SnapshotOptions): js.UndefOr[DocumentData] = js.native
+  def data(): js.UndefOr[T] = js.native
+  def data(options: SnapshotOptions): js.UndefOr[T] = js.native
   /**
     * Retrieves the field specified by `fieldPath`. Returns `undefined` if the
     * document or field doesn't exist.
@@ -66,6 +66,6 @@ class DocumentSnapshot protected () extends js.Object {
     * @param other The `DocumentSnapshot` to compare against.
     * @return true if this `DocumentSnapshot` is equal to the provided one.
     */
-  def isEqual(other: DocumentSnapshot): Boolean = js.native
+  def isEqual(other: DocumentSnapshot[T]): Boolean = js.native
 }
 

@@ -1,10 +1,6 @@
 package typings.uglifyDashJs.uglifyDashJsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.uglifyDashJs.uglifyDashJsMod.InlineFunctions.Disabled
-import typings.uglifyDashJs.uglifyDashJsMod.InlineFunctions.SimpleFunctions
-import typings.uglifyDashJs.uglifyDashJsMod.InlineFunctions.WithArguments
-import typings.uglifyDashJs.uglifyDashJsMod.InlineFunctions.WithArgumentsAndVariables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

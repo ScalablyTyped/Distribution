@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class TaskPanesCollection protected () extends js.Object {
   val Count: Double = js.native
-  var `InfoPath.TaskPanesCollection_typekey`: TaskPanesCollection = js.native
+  @JSName("InfoPath.TaskPanesCollection_typekey")
+  var InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection = js.native
   def Item(varIndex: js.Any): TaskPaneObject = js.native
 }
 

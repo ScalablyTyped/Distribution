@@ -1,13 +1,6 @@
 package typings.rrule.distEsmSrcTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rrule.distEsmSrcTypesMod.Frequency.DAILY
-import typings.rrule.distEsmSrcTypesMod.Frequency.HOURLY
-import typings.rrule.distEsmSrcTypesMod.Frequency.MINUTELY
-import typings.rrule.distEsmSrcTypesMod.Frequency.MONTHLY
-import typings.rrule.distEsmSrcTypesMod.Frequency.SECONDLY
-import typings.rrule.distEsmSrcTypesMod.Frequency.WEEKLY
-import typings.rrule.distEsmSrcTypesMod.Frequency.YEARLY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -175,7 +175,7 @@ object SeriesAreasplinerangeOptions {
     showInNavigator: js.UndefOr[Boolean] = js.undefined,
     skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     softThreshold: js.UndefOr[Boolean] = js.undefined,
-    stack: Double | String = null,
+    stack: Double | scala.Nothing | String = null,
     states: PlotAreasplinerangeStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: js.Any = null,

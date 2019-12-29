@@ -54,8 +54,9 @@ class Global protected () extends js.Object {
   val Templates: typings.activexDashWord.Word.Templates = js.native
   val VBE: typings.activexDashVbide.VBIDE.VBE = js.native
   val Windows: typings.activexDashWord.Word.Windows = js.native
-  var `Word.Global_typekey`: Global = js.native
   val WordBasic: js.Any = js.native
+  @JSName("Word.Global_typekey")
+  var WordDotGlobal_typekey: Global = js.native
   def BuildKeyCode(Arg1: WdKey): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any): Double = js.native

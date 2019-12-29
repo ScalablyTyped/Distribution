@@ -1,6 +1,5 @@
 package typings.atEmberRunloop
 
-import typings.atEmberRunloop.atEmberRunloopMod.RunNamespace
 import typings.atEmberRunloop.dashPrivateTypesMod.EmberRunQueues
 import typings.atEmberRunloop.dashPrivateTypesMod.RunMethod
 import typings.atEmberRunloop.typesMod.EmberRunTimer

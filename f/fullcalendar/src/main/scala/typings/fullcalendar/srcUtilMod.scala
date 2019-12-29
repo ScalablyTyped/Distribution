@@ -1,6 +1,6 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.fullcalendarNumbers.`false`
+import typings.fullcalendar.fullcalendarBooleans.`false`
 import typings.moment.momentMod.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`

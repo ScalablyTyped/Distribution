@@ -5,8 +5,6 @@ import typings.std.Error
 import typings.web3DashCore.web3DashCoreMod.PromiEvent
 import typings.web3DashCore.web3DashCoreMod.TransactionConfig
 import typings.web3DashEthDashContract.web3DashEthDashContractMod.Contract
-import typings.web3DashEthDashEns.web3DashEthDashEnsMod.Ens
-import typings.web3DashEthDashEns.web3DashEthDashEnsMod.Registry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

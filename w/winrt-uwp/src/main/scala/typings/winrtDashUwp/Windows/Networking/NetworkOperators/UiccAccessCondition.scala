@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.administrative5
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.administrative6
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.alwaysAllowed
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.neverAllowed
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.pin1
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.pin2
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.pin3
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAccessCondition.pin4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

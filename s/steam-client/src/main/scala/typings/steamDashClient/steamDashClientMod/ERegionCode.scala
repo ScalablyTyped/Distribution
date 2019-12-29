@@ -1,15 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ERegionCode.Africa
-import typings.steamDashClient.steamDashClientMod.ERegionCode.Asia
-import typings.steamDashClient.steamDashClientMod.ERegionCode.Australia
-import typings.steamDashClient.steamDashClientMod.ERegionCode.Europe
-import typings.steamDashClient.steamDashClientMod.ERegionCode.MiddleEast
-import typings.steamDashClient.steamDashClientMod.ERegionCode.SouthAmerica
-import typings.steamDashClient.steamDashClientMod.ERegionCode.USEast
-import typings.steamDashClient.steamDashClientMod.ERegionCode.USWest
-import typings.steamDashClient.steamDashClientMod.ERegionCode.World
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -29,12 +29,12 @@ package object utilsMod {
     - typings.grommet.grommetStrings.xlarge
     - typings.grommet.grommetStrings.xxlarge
     - typings.grommet.grommetStrings.full
-    - typings.grommet.grommetStrings.`1/2`
-    - typings.grommet.grommetStrings.`1/3`
-    - typings.grommet.grommetStrings.`2/3`
-    - typings.grommet.grommetStrings.`1/4`
-    - typings.grommet.grommetStrings.`2/4`
-    - typings.grommet.grommetStrings.`3/4`
+    - typings.grommet.grommetStrings.`1Slash2`
+    - typings.grommet.grommetStrings.`1Slash3`
+    - typings.grommet.grommetStrings.`2Slash3`
+    - typings.grommet.grommetStrings.`1Slash4`
+    - typings.grommet.grommetStrings.`2Slash4`
+    - typings.grommet.grommetStrings.`3Slash4`
     - typings.grommet.grommetStrings.auto
     - java.lang.String
   */
@@ -112,8 +112,8 @@ package object utilsMod {
     - typings.grommet.grommetStrings.medium
     - typings.grommet.grommetStrings.strong
     - java.lang.String
-    - typings.grommet.grommetNumbers.`true`
-    - typings.grommet.grommetNumbers.`false`
+    - typings.grommet.grommetBooleans.`true`
+    - typings.grommet.grommetBooleans.`false`
     - scala.Double
   */
   type OpacityType = _OpacityType | String | Double

@@ -10,6 +10,7 @@ import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.GuidResult
 import typings.sharepoint.SP.IntResult
 import typings.sharepoint.SP.List
+import typings.sharepoint.SP.ListItem
 import typings.sharepoint.SP.ListItemCollection
 import typings.sharepoint.SP.StringResult
 import typings.sharepoint.SP.UserCollection
@@ -31,8 +32,8 @@ class Utility () extends js.Object {
 @js.native
 object Utility extends js.Object {
   def createEmailBodyForInvitation(context: ClientRuntimeContext, pageAddress: String): StringResult = js.native
-  def createNewDiscussion[T](context: ClientRuntimeContext, list: List[_], title: String): typings.sharepoint.SP.ListItem[T] = js.native
-  def createNewDiscussionReply[T](context: ClientRuntimeContext, parent: typings.sharepoint.SP.ListItem[T]): typings.sharepoint.SP.ListItem[T] = js.native
+  def createNewDiscussion[T](context: ClientRuntimeContext, list: List[_], title: String): ListItem[T] = js.native
+  def createNewDiscussionReply[T](context: ClientRuntimeContext, parent: ListItem[T]): ListItem[T] = js.native
   def createWikiPageInContextWeb(context: ClientRuntimeContext, parameters: WikiPageCreationInformation): File = js.native
   def formatDateTime(context: ClientRuntimeContext, web: Web, datetime: Date, format: DateTimeFormat): StringResult = js.native
   def getAppLicenseDeploymentId(context: ClientRuntimeContext): GuidResult = js.native
@@ -56,7 +57,7 @@ object Utility extends js.Object {
     appSubtype: Double
   ): Unit = js.native
   def isUserLicensedForEntityInContext(context: ClientRuntimeContext, licensableEntity: String): BooleanResult = js.native
-  def localizeWebPartGallery(context: ClientRuntimeContext, items: ListItemCollection[_]): ClientObjectList[typings.sharepoint.SP.ListItem[_]] = js.native
+  def localizeWebPartGallery(context: ClientRuntimeContext, items: ListItemCollection[_]): ClientObjectList[ListItem[_]] = js.native
   def logCustomAppError(context: ClientRuntimeContext, error: String): IntResult = js.native
   def logCustomRemoteAppError(context: ClientRuntimeContext, productId: Guid, error: String): IntResult = js.native
   def markDiscussionAsFeatured(context: ClientRuntimeContext, listID: String, topicIDs: String): Unit = js.native

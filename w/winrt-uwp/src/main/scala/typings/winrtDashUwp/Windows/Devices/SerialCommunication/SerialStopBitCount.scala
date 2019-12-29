@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialStopBitCount.one
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialStopBitCount.onePointFive
-import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialStopBitCount.two
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

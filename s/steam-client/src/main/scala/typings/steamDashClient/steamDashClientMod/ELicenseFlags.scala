@@ -1,19 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.CancelledByAdmin
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.CancelledByFriendlyFraudLock
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.CancelledByUser
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.Expired
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.ForceRunRestriction
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.ImportedFromSteam2
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.LowViolenceContent
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.None
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.NotActivated
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.Pending
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.RegionRestrictionExpired
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.Renew
-import typings.steamDashClient.steamDashClientMod.ELicenseFlags.RenewalFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

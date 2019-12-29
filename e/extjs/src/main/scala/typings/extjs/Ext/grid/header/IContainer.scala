@@ -1,6 +1,7 @@
 package typings.extjs.Ext.grid.header
 
 import typings.extjs.Ext.Array
+import typings.extjs.Ext.grid.column.IColumn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,9 +36,7 @@ trait IContainer
   		* @param header Ext.grid.column.Column The header to find the index of
   		* @returns Number The index of the specified column header
   		*/
-  var getHeaderIndex: js.UndefOr[
-    js.Function1[/* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn], Double]
-  ] = js.undefined
+  var getHeaderIndex: js.UndefOr[js.Function1[/* header */ js.UndefOr[IColumn], Double]] = js.undefined
   /** [Method] Returns an array of menu items to be placed into the shared menu across all headers in this header container
   		* @returns Array menuItems
   		*/
@@ -71,7 +70,7 @@ object IContainer {
     getFullWidth: () => Unit = null,
     getGridColumns: (/* inResult */ js.UndefOr[js.Any], /* hiddenAncestor */ js.UndefOr[js.Any]) => Array = null,
     getHeaderAtIndex: /* index */ js.UndefOr[Double] => Unit = null,
-    getHeaderIndex: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double = null,
+    getHeaderIndex: /* header */ js.UndefOr[IColumn] => Double = null,
     getMenuItems: () => Array = null,
     getVisibleGridColumns: () => Array = null,
     getVisibleHeaderClosestToIndex: /* index */ js.UndefOr[Double] => Unit = null,

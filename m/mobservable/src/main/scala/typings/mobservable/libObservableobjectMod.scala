@@ -6,7 +6,6 @@ import typings.mobservable.libDnodeMod.DataNode
 import typings.mobservable.libInterfacesMod.IContextInfoStruct
 import typings.mobservable.libInterfacesMod.IObjectChange
 import typings.mobservable.libInterfacesMod.Lambda
-import typings.mobservable.libObservableobjectMod.ObservableObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.atUifabricUtilities
 
-import typings.atUifabricUtilities.libCreateRefMod.RefObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

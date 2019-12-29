@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.OK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.OK_CANCEL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.YES_NO
-import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.YES_NO_CANCEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

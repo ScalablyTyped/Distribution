@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object fuzzaldrinDashPlusStrings {
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait Backslash extends js.Object
   
   @js.native
-  sealed trait BACKSLASHBACKSLASH extends js.Object
+  sealed trait Slash extends js.Object
   
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def Backslash: Backslash = "\\".asInstanceOf[Backslash]
   @scala.inline
-  def BACKSLASHBACKSLASH: BACKSLASHBACKSLASH = "\\".asInstanceOf[BACKSLASHBACKSLASH]
+  def Slash: Slash = "/".asInstanceOf[Slash]
 }
 

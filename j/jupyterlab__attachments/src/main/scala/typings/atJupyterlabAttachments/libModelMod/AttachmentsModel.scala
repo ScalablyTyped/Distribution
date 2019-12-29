@@ -1,6 +1,5 @@
 package typings.atJupyterlabAttachments.libModelMod
 
-import typings.atJupyterlabAttachments.libModelMod.AttachmentsModel.ContentFactory
 import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModel.ChangedArgs
 import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModel.IContentFactory
 import typings.atJupyterlabAttachments.libModelMod.IAttachmentsModel.IOptions

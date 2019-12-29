@@ -1,8 +1,6 @@
 package typings.agDashGrid.distLibFilterBaseFilterMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.agDashGrid.distLibFilterBaseFilterMod.FilterConditionType.CONDITION
-import typings.agDashGrid.distLibFilterBaseFilterMod.FilterConditionType.MAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

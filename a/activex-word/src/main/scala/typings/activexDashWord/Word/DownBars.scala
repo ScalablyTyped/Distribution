@@ -15,7 +15,8 @@ class DownBars protected () extends js.Object {
   val Interior: typings.activexDashWord.Word.Interior = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `Word.DownBars_typekey`: DownBars = js.native
+  @JSName("Word.DownBars_typekey")
+  var WordDotDownBars_typekey: DownBars = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native
 }

@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.storageDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait VolumeAttachment extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: `storageDOTk8sDOTio/v1beta1`
+  val apiVersion: storageDotk8sDotioSlashv1beta1
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -47,7 +47,7 @@ trait VolumeAttachment extends js.Object {
 object VolumeAttachment {
   @scala.inline
   def apply(
-    apiVersion: `storageDOTk8sDOTio/v1beta1`,
+    apiVersion: storageDotk8sDotioSlashv1beta1,
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.VolumeAttachment,
     metadata: ObjectMeta,
     spec: VolumeAttachmentSpec,

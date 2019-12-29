@@ -39,7 +39,7 @@ trait IText extends IField {
   /** [Method] Returns the value of placeHolder
   		* @returns String
   		*/
-  var getPlaceHolder: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPlaceHolder: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of readOnly
   		* @returns Boolean
   		*/
@@ -47,7 +47,7 @@ trait IText extends IField {
   /** [Config Option] (Number) */
   var maxLength: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var placeHolder: js.UndefOr[java.lang.String] = js.undefined
+  var placeHolder: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   /** [Method] Resets the current field value back to the original value on this field when it was created
@@ -83,7 +83,7 @@ trait IText extends IField {
   /** [Method] Sets the value of placeHolder
   		* @param placeHolder String The new value.
   		*/
-  var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of readOnly
   		* @param readOnly Boolean The new value.
   		*/
@@ -105,10 +105,10 @@ object IText {
     getAutoComplete: () => Boolean = null,
     getAutoCorrect: () => Boolean = null,
     getMaxLength: () => Double = null,
-    getPlaceHolder: () => java.lang.String = null,
+    getPlaceHolder: () => String = null,
     getReadOnly: () => Boolean = null,
     maxLength: Int | Double = null,
-    placeHolder: java.lang.String = null,
+    placeHolder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     reset: () => IField = null,
     select: () => IText = null,
@@ -117,7 +117,7 @@ object IText {
     setAutoCorrect: /* autoCorrect */ js.UndefOr[Boolean] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[Array] => Unit = null,
     setMaxLength: /* maxLength */ js.UndefOr[Double] => Unit = null,
-    setPlaceHolder: /* placeHolder */ js.UndefOr[java.lang.String] => Unit = null,
+    setPlaceHolder: /* placeHolder */ js.UndefOr[String] => Unit = null,
     setReadOnly: /* readOnly */ js.UndefOr[Boolean] => Unit = null,
     startValue: js.Any = null
   ): IText = {

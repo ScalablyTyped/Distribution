@@ -1,7 +1,5 @@
 package typings.prex
 
-import typings.prex.outLibListMod.LinkedList
-import typings.prex.outLibListMod.LinkedListNode
 import typings.std.Iterable
 import typings.std.IterableIterator
 import typings.std.Iterator

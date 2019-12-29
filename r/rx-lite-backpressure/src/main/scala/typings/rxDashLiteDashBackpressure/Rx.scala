@@ -1,9 +1,6 @@
 package typings.rxDashLiteDashBackpressure
 
 import typings.rxDashCore.Rx.IDisposable
-import typings.rxDashLiteDashBackpressure.Rx.ControlledObservable
-import typings.rxDashLiteDashBackpressure.Rx.Observable
-import typings.rxDashLiteDashBackpressure.Rx.PausableObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

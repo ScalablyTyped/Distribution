@@ -25,7 +25,7 @@ trait IContainer extends js.Object {
     *           The ID of the Component object to search for.
     * @return The Component instance with the specified ID.
     */
-  def findComponent(id: java.lang.String): Component
+  def findComponent(id: String): Component
   /**
     * Returns an array of all objects in the current container that inherit from Component.
     * Implement this method for an object that will contain one or more component objects so that the components in that container are available. Types that implement this method should return a copy of the list of components so that modifying the array does not change the contents of the container.
@@ -44,7 +44,7 @@ object IContainer {
   @scala.inline
   def apply(
     addComponent: Component => Unit,
-    findComponent: java.lang.String => Component,
+    findComponent: String => Component,
     getComponents: () => js.Array[Component],
     removeComponent: Component => Unit
   ): IContainer = {

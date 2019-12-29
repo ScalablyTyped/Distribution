@@ -11,7 +11,8 @@ class AutoTextEntries protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.AutoTextEntries_typekey`: AutoTextEntries = js.native
+  @JSName("Word.AutoTextEntries_typekey")
+  var WordDotAutoTextEntries_typekey: AutoTextEntries = js.native
   def Add(Name: String, Range: Range): AutoTextEntry = js.native
   def AppendToSpike(Range: Range): AutoTextEntry = js.native
   def Item(Index: js.Any): AutoTextEntry = js.native

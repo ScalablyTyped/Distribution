@@ -2,9 +2,9 @@ package typings.html5plus
 
 import typings.html5plus.html5plusStrings.GET
 import typings.html5plus.html5plusStrings.POST
-import typings.html5plus.html5plusStrings.`_doc/`
-import typings.html5plus.html5plusStrings.`_documents/`
-import typings.html5plus.html5plusStrings.`_downloads/`
+import typings.html5plus.html5plusStrings._docSlash
+import typings.html5plus.html5plusStrings._documentsSlash
+import typings.html5plus.html5plusStrings._downloadsSlash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ trait PlusDownloaderDownloadOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var filename: js.UndefOr[`_doc/` | `_documents/` | `_downloads/`] = js.undefined
+  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   /**
     * 网络请求类型
     * 支持http协议的“GET”、“POST”，默认为“GET”请求。
@@ -80,7 +80,7 @@ object PlusDownloaderDownloadOptions {
   @scala.inline
   def apply(
     data: String = null,
-    filename: `_doc/` | `_documents/` | `_downloads/` = null,
+    filename: _docSlash | _documentsSlash | _downloadsSlash = null,
     method: GET | POST = null,
     priority: Int | Double = null,
     retry: Int | Double = null,

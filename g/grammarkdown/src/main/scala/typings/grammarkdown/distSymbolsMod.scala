@@ -1,12 +1,6 @@
 package typings.grammarkdown
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grammarkdown.distSymbolsMod.Symbol
-import typings.grammarkdown.distSymbolsMod.SymbolKind
-import typings.grammarkdown.distSymbolsMod.SymbolKind.Parameter
-import typings.grammarkdown.distSymbolsMod.SymbolKind.Production
-import typings.grammarkdown.distSymbolsMod.SymbolKind.SourceFile
-import typings.grammarkdown.distSymbolsMod.SymbolTable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,13 +14,13 @@ import scala.scalajs.js.annotation._
 trait ArrayType[T]
   extends Type
      with Instantiable0[Anon_Buffer[T]]
+     with Instantiable1[
+      (/* data */ js.Array[Double]) | (/* data */ Buffer) | (/* length */ Double), 
+      Anon_Buffer[T]
+    ]
      with Instantiable2[
       (/* data */ js.Array[Double]) | (/* data */ Buffer), 
       /* length */ Double, 
-      Anon_Buffer[T]
-    ]
-     with Instantiable1[
-      (/* data */ js.Array[Double]) | (/* data */ Buffer) | (/* length */ Double), 
       Anon_Buffer[T]
     ] {
   var BYTES_PER_ELEMENT: Double = js.native

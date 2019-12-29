@@ -1,7 +1,5 @@
 package typings.atAngularHttp
 
-import typings.atAngularHttp.srcUrlUnderscoreSearchUnderscoreParamsMod.QueryEncoder
-import typings.atAngularHttp.srcUrlUnderscoreSearchUnderscoreParamsMod.URLSearchParams
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`

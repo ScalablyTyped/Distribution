@@ -3,7 +3,7 @@ package typings.ionic
 import typings.ionic.definitionsMod.ProjectIntegration
 import typings.ionic.definitionsMod.ProjectType
 import typings.ionic.ionicStrings.`Target native iOS and Android with Apache Cordova`
-import typings.ionic.ionicStrings.`https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet/integration-cordovaDOTtarDOTgz`
+import typings.ionic.ionicStrings.`httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz`
 import typings.ionic.libIntegrationsCordovaConfigMod.CordovaConfig
 import typings.ionic.libIntegrationsMod.BaseIntegration
 import typings.ionic.libIntegrationsMod.IntegationUnion
@@ -20,7 +20,7 @@ object libIntegrationsCordovaMod extends js.Object {
     extends BaseIntegration[ProjectIntegration]
        with IntegationUnion {
     @JSName("archiveUrl")
-    val archiveUrl_Integration: `https://d2ql0qc7j8u4b2DOTcloudfrontDOTnet/integration-cordovaDOTtarDOTgz` = js.native
+    val archiveUrl_Integration: `httpsColonSlashSlashd2ql0qc7j8u4b2DotcloudfrontDotnetSlashintegration-cordovaDottarDotgz` = js.native
     @JSName("summary")
     val summary_Integration: `Target native iOS and Android with Apache Cordova` = js.native
     @JSName("config")

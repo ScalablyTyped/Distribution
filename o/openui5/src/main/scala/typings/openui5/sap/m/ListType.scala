@@ -1,11 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ListType.Active
-import typings.openui5.sap.m.ListType.Detail
-import typings.openui5.sap.m.ListType.DetailAndActive
-import typings.openui5.sap.m.ListType.Inactive
-import typings.openui5.sap.m.ListType.Navigation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

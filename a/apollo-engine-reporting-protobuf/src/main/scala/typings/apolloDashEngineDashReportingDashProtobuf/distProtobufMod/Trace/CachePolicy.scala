@@ -3,9 +3,6 @@ package typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.CachePolicy.Scope
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.CachePolicy.Scope.PRIVATE
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.CachePolicy.Scope.PUBLIC
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.CachePolicy.Scope.UNKNOWN
 import typings.atApolloProtobufjs.atApolloProtobufjsMod.IConversionOptions
 import typings.atApolloProtobufjs.atApolloProtobufjsMod.Reader
 import typings.atApolloProtobufjs.atApolloProtobufjsMod.Writer

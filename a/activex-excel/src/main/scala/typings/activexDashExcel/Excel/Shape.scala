@@ -43,7 +43,8 @@ class Shape protected () extends js.Object {
   val Diagram: typings.activexDashExcel.Excel.Diagram = js.native
   val DiagramNode: typings.activexDashExcel.Excel.DiagramNode = js.native
   val DrawingObject: js.Any = js.native
-  var `Excel.Shape_typekey`: Shape = js.native
+  @JSName("Excel.Shape_typekey")
+  var ExcelDotShape_typekey: Shape = js.native
   val Fill: FillFormat = js.native
   val FormControlType: XlFormControl = js.native
   val Glow: GlowFormat = js.native

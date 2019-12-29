@@ -3,7 +3,6 @@ package typings.baseui
 import typings.baseui.blockMod.BlockProps
 import typings.baseui.blockMod.Responsive
 import typings.baseui.blockMod.Scale
-import typings.baseui.flexDashGridMod.FlexGridProps
 import typings.react.reactMod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`

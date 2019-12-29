@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.libTypographyMod.TypographyProps
 import typings.antd.libTypographyParagraphMod.ParagraphProps
 import typings.antd.libTypographyTextMod.TextProps
 import typings.antd.libTypographyTitleMod.TitleProps

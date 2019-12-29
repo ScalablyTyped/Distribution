@@ -1,7 +1,6 @@
 package typings.atMaterialMenu
 
 import typings.atMaterialMenu.adapterMod.MDCMenuAdapter
-import typings.atMaterialMenu.atMaterialMenuMod.MDCMenu
 import typings.atMaterialMenu.foundationMod.AnchorMargin
 import typings.atMaterialMenu.foundationMod.default
 import typings.std.Element

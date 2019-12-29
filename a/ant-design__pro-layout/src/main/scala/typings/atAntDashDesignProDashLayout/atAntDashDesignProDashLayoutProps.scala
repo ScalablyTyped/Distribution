@@ -55,5 +55,8 @@ trait atAntDashDesignProDashLayoutProps {
   @scala.inline
   def TopNavHeaderProps: typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeaderProps.type = typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeaderProps
   type TopNavHeaderProps = typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeaderProps
+  @scala.inline
+  def WrapContentProps: Anon_ClassName.type = typings.atAntDashDesignProDashLayout.Anon_ClassName
+  type WrapContentProps = Anon_ClassName
 }
 

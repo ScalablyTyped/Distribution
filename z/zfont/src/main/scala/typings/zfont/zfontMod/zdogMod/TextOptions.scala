@@ -1,10 +1,10 @@
 package typings.zfont.zfontMod.zdogMod
 
+import typings.zdog.zdogBooleans.`false`
 import typings.zdog.zdogMod.Anchor
 import typings.zdog.zdogMod.PathCommand
 import typings.zdog.zdogMod.ShapeOptions
 import typings.zdog.zdogMod.VectorOptions
-import typings.zdog.zdogNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

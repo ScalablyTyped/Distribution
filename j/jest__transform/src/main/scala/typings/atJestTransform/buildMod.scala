@@ -1,6 +1,6 @@
 package typings.atJestTransform
 
-import typings.atJestTransform.atJestTransformStrings.`ObjectDOT<anonymous>`
+import typings.atJestTransform.atJestTransformStrings.ObjectDotLessthansignanonymousGreaterthansign
 import typings.atJestTransform.buildScriptTransformerMod.default
 import typings.atJestTransform.buildTypesMod.ShouldInstrumentOptions
 import typings.atJestTypes.buildConfigMod.Path
@@ -21,7 +21,7 @@ object buildMod extends js.Object {
   /* static members */
   @js.native
   object ScriptTransformer extends js.Object {
-    var EVAL_RESULT_VARIABLE: `ObjectDOT<anonymous>` = js.native
+    var EVAL_RESULT_VARIABLE: ObjectDotLessthansignanonymousGreaterthansign = js.native
   }
   
 }

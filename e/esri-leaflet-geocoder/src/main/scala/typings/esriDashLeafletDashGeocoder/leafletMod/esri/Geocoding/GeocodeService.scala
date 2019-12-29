@@ -1,13 +1,13 @@
 package typings.esriDashLeafletDashGeocoder.leafletMod.esri.Geocoding
 
-import typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("leaflet", "esri.Geocoding.GeocodeService")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service * / any */ @JSImport("leaflet", "esri.Geocoding.GeocodeService")
 @js.native
-class GeocodeService () extends Service {
+class GeocodeService () extends js.Object {
   def this(options: GeocodeServiceOptions) = this()
   def geocode(): Geocode = js.native
   def reverse(): ReverseGeocode = js.native

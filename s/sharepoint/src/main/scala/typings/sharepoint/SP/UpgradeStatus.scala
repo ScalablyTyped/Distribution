@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UpgradeStatus.completed
-import typings.sharepoint.SP.UpgradeStatus.failed
-import typings.sharepoint.SP.UpgradeStatus.inProgress
-import typings.sharepoint.SP.UpgradeStatus.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

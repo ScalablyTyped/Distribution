@@ -1,6 +1,6 @@
 package typings.reactDashDraggable.reactDashDraggableMod
 
-import typings.reactDashDraggable.reactDashDraggableNumbers.`false`
+import typings.reactDashDraggable.reactDashDraggableBooleans.`false`
 import typings.reactDashDraggable.reactDashDraggableStrings.both
 import typings.reactDashDraggable.reactDashDraggableStrings.none
 import typings.reactDashDraggable.reactDashDraggableStrings.x

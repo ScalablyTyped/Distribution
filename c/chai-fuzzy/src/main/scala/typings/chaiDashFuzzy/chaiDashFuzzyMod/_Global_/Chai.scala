@@ -1,6 +1,5 @@
 package typings.chaiDashFuzzy.chaiDashFuzzyMod._Global_
 
-import typings.chaiDashFuzzy.chaiDashFuzzyMod._Global_.Chai.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

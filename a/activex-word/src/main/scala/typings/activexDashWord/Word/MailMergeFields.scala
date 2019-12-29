@@ -11,7 +11,8 @@ class MailMergeFields protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.MailMergeFields_typekey`: MailMergeFields = js.native
+  @JSName("Word.MailMergeFields_typekey")
+  var WordDotMailMergeFields_typekey: MailMergeFields = js.native
   def Add(Range: Range, Name: String): MailMergeField = js.native
   def AddAsk(Range: Range, Name: String): MailMergeField = js.native
   def AddAsk(Range: Range, Name: String, Prompt: js.Any): MailMergeField = js.native

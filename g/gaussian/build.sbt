@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gaussian"
-version := "1.1-dt-20180214Z-8c846d"
+version := "1.1-dt-20180214Z-5bf74b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

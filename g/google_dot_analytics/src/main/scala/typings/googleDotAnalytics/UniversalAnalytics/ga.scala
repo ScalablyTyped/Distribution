@@ -36,11 +36,7 @@ trait ga extends js.Object {
   def apply(
     command: provide,
     pluginName: String,
-    pluginConstructor: js.Function2[
-      /* tracker */ typings.googleDotAnalytics.UniversalAnalytics.Tracker, 
-      /* pluginOptions */ js.UndefOr[js.Object], 
-      Unit
-    ]
+    pluginConstructor: js.Function2[/* tracker */ Tracker, /* pluginOptions */ js.UndefOr[js.Object], Unit]
   ): Unit = js.native
   def apply(command: remove): Unit = js.native
   def apply(command: require, pluginName: String): Unit = js.native
@@ -72,20 +68,15 @@ trait ga extends js.Object {
   def apply(command: send, hitType: social, socialNetwork: String, socialAction: String, socialTarget: String): Unit = js.native
   def apply(command: send, hitType: timing, fieldsObject: Anon_TimingCategory): Unit = js.native
   def apply(command: send, hitType: timing, timingCategory: String, timingVar: String, timingValue: Double): Unit = js.native
-  def apply(
-    readyCallback: js.Function1[
-      /* defaultTracker */ js.UndefOr[typings.googleDotAnalytics.UniversalAnalytics.Tracker], 
-      Unit
-    ]
-  ): Unit = js.native
-  def create(trackingId: String): typings.googleDotAnalytics.UniversalAnalytics.Tracker = js.native
-  def create(trackingId: String, cookieDomain: String): typings.googleDotAnalytics.UniversalAnalytics.Tracker = js.native
-  def create(trackingId: String, cookieDomain: String, fieldsObject: FieldsObject): typings.googleDotAnalytics.UniversalAnalytics.Tracker = js.native
-  def create(trackingId: String, cookieDomain: String, name: String): typings.googleDotAnalytics.UniversalAnalytics.Tracker = js.native
-  def create(trackingId: String, cookieDomain: String, name: String, fieldsObject: FieldsObject): typings.googleDotAnalytics.UniversalAnalytics.Tracker = js.native
-  def create(trackingId: String, fieldsObject: FieldsObject): typings.googleDotAnalytics.UniversalAnalytics.Tracker = js.native
-  def getAll(): js.Array[typings.googleDotAnalytics.UniversalAnalytics.Tracker] = js.native
-  def getByName(name: String): typings.googleDotAnalytics.UniversalAnalytics.Tracker = js.native
+  def apply(readyCallback: js.Function1[/* defaultTracker */ js.UndefOr[Tracker], Unit]): Unit = js.native
+  def create(trackingId: String): Tracker = js.native
+  def create(trackingId: String, cookieDomain: String): Tracker = js.native
+  def create(trackingId: String, cookieDomain: String, fieldsObject: FieldsObject): Tracker = js.native
+  def create(trackingId: String, cookieDomain: String, name: String): Tracker = js.native
+  def create(trackingId: String, cookieDomain: String, name: String, fieldsObject: FieldsObject): Tracker = js.native
+  def create(trackingId: String, fieldsObject: FieldsObject): Tracker = js.native
+  def getAll(): js.Array[Tracker] = js.native
+  def getByName(name: String): Tracker = js.native
   def remove(name: String): Unit = js.native
 }
 

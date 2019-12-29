@@ -11,7 +11,8 @@ class BalloonLabel protected () extends js.Object {
   val Creator: Double = js.native
   val Item: String = js.native
   val Name: String = js.native
-  var `Office.BalloonLabel_typekey`: BalloonLabel = js.native
+  @JSName("Office.BalloonLabel_typekey")
+  var OfficeDotBalloonLabel_typekey: BalloonLabel = js.native
   val Parent: js.Any = js.native
   var Text: String = js.native
 }

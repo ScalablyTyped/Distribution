@@ -14,7 +14,8 @@ class SlideShowWindow protected () extends js.Object {
   val IsFullScreen: MsoTriState = js.native
   var Left: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.SlideShowWindow_typekey`: SlideShowWindow = js.native
+  @JSName("PowerPoint.SlideShowWindow_typekey")
+  var PowerPointDotSlideShowWindow_typekey: SlideShowWindow = js.native
   val Presentation: typings.activexDashPowerpoint.PowerPoint.Presentation = js.native
   var Top: Double = js.native
   val View: SlideShowView = js.native

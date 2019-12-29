@@ -2,10 +2,6 @@ package typings.openui5.sap.ui.core
 
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.mvc.View
-import typings.openui5.sap.ui.core.tmpl.DOMAttribute
-import typings.openui5.sap.ui.core.tmpl.DOMElement
-import typings.openui5.sap.ui.core.tmpl.Template
-import typings.openui5.sap.ui.core.tmpl.TemplateControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

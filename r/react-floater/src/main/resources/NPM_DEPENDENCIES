@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-floater" : "0.6.5"
+      "react-floater" : "0.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-floater" : "0.6.5"
+      "react-floater" : "0.7.2"
     }
   ],
   "compile-devDependencies" : [

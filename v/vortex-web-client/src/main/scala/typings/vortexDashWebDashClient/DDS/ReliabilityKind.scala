@@ -1,8 +1,6 @@
 package typings.vortexDashWebDashClient.DDS
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vortexDashWebDashClient.DDS.ReliabilityKind.BestEffort
-import typings.vortexDashWebDashClient.DDS.ReliabilityKind.Reliable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

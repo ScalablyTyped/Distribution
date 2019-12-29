@@ -9,9 +9,7 @@ trait Table extends js.Object {
   var horizontalBorderRows: js.UndefOr[js.Array[TableBorderRow]] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
   var tableColumns: js.UndefOr[js.Array[TableColumnProperties]] = js.undefined
-  var tableRows: js.UndefOr[
-    js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.TableRow]
-  ] = js.undefined
+  var tableRows: js.UndefOr[js.Array[TableRow]] = js.undefined
   var verticalBorderRows: js.UndefOr[js.Array[TableBorderRow]] = js.undefined
 }
 
@@ -22,7 +20,7 @@ object Table {
     horizontalBorderRows: js.Array[TableBorderRow] = null,
     rows: Int | Double = null,
     tableColumns: js.Array[TableColumnProperties] = null,
-    tableRows: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.TableRow] = null,
+    tableRows: js.Array[TableRow] = null,
     verticalBorderRows: js.Array[TableBorderRow] = null
   ): Table = {
     val __obj = js.Dynamic.literal()

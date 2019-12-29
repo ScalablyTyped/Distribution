@@ -35,7 +35,8 @@ class Borders protected () extends js.Object {
   var Shadow: Boolean = js.native
   var SurroundFooter: Boolean = js.native
   var SurroundHeader: Boolean = js.native
-  var `Word.Borders_typekey`: Borders = js.native
+  @JSName("Word.Borders_typekey")
+  var WordDotBorders_typekey: Borders = js.native
   def ApplyPageBordersToAllSections(): Unit = js.native
   def Item(Index: WdBorderType): Border = js.native
 }

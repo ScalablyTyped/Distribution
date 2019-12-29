@@ -10,10 +10,10 @@ package object VueI18n {
   import typings.vue.typesVueMod.Vue
 
   type Choice = Double
-  type DateTimeFormat = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.DateTimeFormatOptions]
+  type DateTimeFormat = StringDictionary[DateTimeFormatOptions]
   type DateTimeFormatOptions = typings.std.Intl.DateTimeFormatOptions | SpecificDateTimeFormatOptions
   type DateTimeFormatResult = String
-  type DateTimeFormats = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.DateTimeFormat]
+  type DateTimeFormats = StringDictionary[DateTimeFormat]
   type Locale = String
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -21,16 +21,16 @@ package object VueI18n {
     - typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessageArray
   */
   type LocaleMessage = _LocaleMessage | String
-  type LocaleMessages = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessageObject]
+  type LocaleMessages = StringDictionary[LocaleMessageObject]
   type MissingHandler = js.Function4[
-    /* locale */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale, 
-    /* key */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Path, 
+    /* locale */ Locale, 
+    /* key */ Path, 
     /* vm */ Vue | Null, 
     /* values */ js.Any, 
     String | Unit
   ]
   type Modifiers = StringDictionary[js.Function1[/* str */ String, String]]
-  type NumberFormat = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormatOptions]
+  type NumberFormat = StringDictionary[NumberFormatOptions]
   /* Rewritten from type alias, can be one of: 
     - typings.std.Intl.NumberFormatOptions
     - typings.vueDashI18n.vueDashI18nMod.VueI18n.SpecificNumberFormatOptions
@@ -39,7 +39,7 @@ package object VueI18n {
   type NumberFormatOptions = _NumberFormatOptions | typings.std.Intl.NumberFormatOptions
   type NumberFormatResult = String
   type NumberFormatToPartsResult = NumberDictionary[FormattedNumberPart]
-  type NumberFormats = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormat]
+  type NumberFormats = StringDictionary[NumberFormat]
   type Path = String
   type PluralizationRulesMap = /**
     * @param choice {number} a choice index given by the input to $tc: `$tc('path.to.rule', choiceIndex)`
@@ -47,6 +47,6 @@ package object VueI18n {
     * @returns a final choice index
     */
   StringDictionary[js.Function2[/* choice */ Double, /* choicesLength */ Double, Double]]
-  type TranslateResult = String | typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages
+  type TranslateResult = String | LocaleMessages
   type Values = js.Array[js.Any] | StringDictionary[js.Any]
 }

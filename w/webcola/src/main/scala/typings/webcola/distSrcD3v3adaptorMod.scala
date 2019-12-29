@@ -1,7 +1,6 @@
 package typings.webcola
 
 import typings.webcola.distSrcD3adaptorMod.ID3StyleLayoutAdaptor
-import typings.webcola.distSrcD3v3adaptorMod.D3StyleLayoutAdaptor
 import typings.webcola.distSrcLayoutMod.Event
 import typings.webcola.distSrcLayoutMod.Layout
 import scala.scalajs.js

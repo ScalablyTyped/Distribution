@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashCore
 
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.`downloads://`
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.downloadsColonSlashSlash
 import typings.atTensorflowTfjsDashCore.distIoRouterUnderscoreRegistryMod.IORouter
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.IOHandler
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.ModelArtifacts
@@ -31,7 +31,7 @@ object distIoBrowserUnderscoreFilesMod extends js.Object {
   /* static members */
   @js.native
   object BrowserDownloads extends js.Object {
-    val URL_SCHEME: `downloads://` = js.native
+    val URL_SCHEME: downloadsColonSlashSlash = js.native
   }
   
 }

@@ -23,14 +23,14 @@ object GeneralNameParam {
     __obj.asInstanceOf[GeneralNameParam]
   }
   @scala.inline
-  def Anon_Uri(uri: String): GeneralNameParam = {
-    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+  def Anon_Ldapdn(ldapdn: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(ldapdn = ldapdn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeneralNameParam]
   }
   @scala.inline
-  def Anon_Rfc822(rfc822: String): GeneralNameParam = {
-    val __obj = js.Dynamic.literal(rfc822 = rfc822.asInstanceOf[js.Any])
+  def Anon_Uri(uri: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeneralNameParam]
   }
@@ -41,8 +41,8 @@ object GeneralNameParam {
     __obj.asInstanceOf[GeneralNameParam]
   }
   @scala.inline
-  def Anon_Ldapdn(ldapdn: String): GeneralNameParam = {
-    val __obj = js.Dynamic.literal(ldapdn = ldapdn.asInstanceOf[js.Any])
+  def Anon_Dn(dn: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(dn = dn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeneralNameParam]
   }
@@ -53,8 +53,8 @@ object GeneralNameParam {
     __obj.asInstanceOf[GeneralNameParam]
   }
   @scala.inline
-  def Anon_Dn(dn: String): GeneralNameParam = {
-    val __obj = js.Dynamic.literal(dn = dn.asInstanceOf[js.Any])
+  def Anon_Rfc822(rfc822: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(rfc822 = rfc822.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeneralNameParam]
   }

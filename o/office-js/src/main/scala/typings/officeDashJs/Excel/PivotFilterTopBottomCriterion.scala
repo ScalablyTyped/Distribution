@@ -1,13 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomItems
-import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomPercent
-import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomSum
-import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.invalid
-import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topItems
-import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topPercent
-import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topSum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

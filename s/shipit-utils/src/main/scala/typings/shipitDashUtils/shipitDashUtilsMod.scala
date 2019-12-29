@@ -1,7 +1,5 @@
 package typings.shipitDashUtils
 
-import typings.shipitDashUtils.shipitDashUtilsMod.EmptyCallback
-import typings.shipitDashUtils.shipitDashUtilsMod.GruntOrShipit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

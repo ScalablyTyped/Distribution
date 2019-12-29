@@ -8,6 +8,8 @@ package object screeps {
   import org.scalablytyped.runtime.NumberDictionary
   import org.scalablytyped.runtime.StringDictionary
   import typings.screeps.Tag.OpaqueTag
+  import typings.screeps.screepsBooleans.`false`
+  import typings.screeps.screepsBooleans.`true`
   import typings.screeps.screepsNumbers.`-10`
   import typings.screeps.screepsNumbers.`-11`
   import typings.screeps.screepsNumbers.`-12`
@@ -67,8 +69,6 @@ package object screeps {
   import typings.screeps.screepsNumbers.`7`
   import typings.screeps.screepsNumbers.`8`
   import typings.screeps.screepsNumbers.`9`
-  import typings.screeps.screepsNumbers.`false`
-  import typings.screeps.screepsNumbers.`true`
   import typings.screeps.screepsStrings.G
   import typings.screeps.screepsStrings.GH
   import typings.screeps.screepsStrings.GH2O

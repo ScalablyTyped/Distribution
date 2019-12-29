@@ -1,6 +1,6 @@
 package typings.moonjs.moonjsMod
 
-import typings.moonjs.moonjsStrings.`#text`
+import typings.moonjs.moonjsStrings.Numbersigntext
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +21,8 @@ trait CreateElement extends js.Object {
     metadata: js.Any,
     children: js.Array[VDomElement]
   ): VDomElement = js.native
-  def apply(tag: `#text`, attrs: Record[String, _]): VDomElement = js.native
-  def apply(tag: `#text`, attrs: Record[String, _], metadata: js.Any): VDomElement = js.native
-  def apply(tag: `#text`, attrs: Record[String, _], metadata: js.Any, children: String): VDomElement = js.native
+  def apply(tag: Numbersigntext, attrs: Record[String, _]): VDomElement = js.native
+  def apply(tag: Numbersigntext, attrs: Record[String, _], metadata: js.Any): VDomElement = js.native
+  def apply(tag: Numbersigntext, attrs: Record[String, _], metadata: js.Any, children: String): VDomElement = js.native
 }
 

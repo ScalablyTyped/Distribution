@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.CompletionTriggerKind.Invoke
-import typings.vscode.vscodeMod.CompletionTriggerKind.TriggerCharacter
-import typings.vscode.vscodeMod.CompletionTriggerKind.TriggerForIncompleteCompletions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

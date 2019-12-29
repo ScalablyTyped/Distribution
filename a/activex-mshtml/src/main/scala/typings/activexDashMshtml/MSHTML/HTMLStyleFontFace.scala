@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLStyleFontFace")
 @js.native
 class HTMLStyleFontFace protected () extends js.Object {
-  var `MSHTML.HTMLStyleFontFace_typekey`: HTMLStyleFontFace = js.native
+  @JSName("MSHTML.HTMLStyleFontFace_typekey")
+  var MSHTMLDotHTMLStyleFontFace_typekey: HTMLStyleFontFace = js.native
   var cssText: String = js.native
   var fontsrc: String = js.native
   val parentRule: IHTMLCSSRule = js.native

@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewOrientation.landscape
-import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewOrientation.portrait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

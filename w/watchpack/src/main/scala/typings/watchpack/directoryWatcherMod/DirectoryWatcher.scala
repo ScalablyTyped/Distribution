@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.gracefulDashFs.gracefulDashFsMod.Stats
 import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.FSWatcher
+import typings.watchpack.watchpackBooleans.`true`
 import typings.watchpack.watchpackMod.WatcherOptions
-import typings.watchpack.watchpackNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

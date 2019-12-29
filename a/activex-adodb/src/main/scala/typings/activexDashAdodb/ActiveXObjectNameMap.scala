@@ -13,14 +13,21 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ActiveXObjectNameMap extends js.Object {
-  var `ADODB.Command`: Command = js.native
-  var `ADODB.Connection`: Connection = js.native
-  var `ADODB.Parameter`: Parameter = js.native
-  var `ADODB.Record`: Record = js.native
+  @JSName("ADODB.Command")
+  var ADODBDotCommand: Command = js.native
+  @JSName("ADODB.Connection")
+  var ADODBDotConnection: Connection = js.native
+  @JSName("ADODB.Parameter")
+  var ADODBDotParameter: Parameter = js.native
+  @JSName("ADODB.Record")
+  var ADODBDotRecord: Record = js.native
   @JSName("ADODB.Recordset")
-  var `ADODB.Recordset_Original`: Recordset = js.native
-  var `ADODB.Stream`: Stream = js.native
-  def `ADODB.Recordset`(FieldIndex: String): Field = js.native
-  def `ADODB.Recordset`(FieldIndex: Double): Field = js.native
+  var ADODBDotRecordset_Original: Recordset = js.native
+  @JSName("ADODB.Stream")
+  var ADODBDotStream: Stream = js.native
+  @JSName("ADODB.Recordset")
+  def ADODBDotRecordset(FieldIndex: String): Field = js.native
+  @JSName("ADODB.Recordset")
+  def ADODBDotRecordset(FieldIndex: Double): Field = js.native
 }
 

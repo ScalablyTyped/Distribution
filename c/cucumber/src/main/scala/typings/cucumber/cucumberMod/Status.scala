@@ -1,12 +1,6 @@
 package typings.cucumber.cucumberMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cucumber.cucumberMod.Status.AMBIGUOUS
-import typings.cucumber.cucumberMod.Status.FAILED
-import typings.cucumber.cucumberMod.Status.PASSED
-import typings.cucumber.cucumberMod.Status.PENDING
-import typings.cucumber.cucumberMod.Status.SKIPPED
-import typings.cucumber.cucumberMod.Status.UNDEFINED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

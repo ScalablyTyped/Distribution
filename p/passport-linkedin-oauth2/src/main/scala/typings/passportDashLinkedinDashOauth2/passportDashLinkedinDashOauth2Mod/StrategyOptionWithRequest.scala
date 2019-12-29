@@ -1,6 +1,6 @@
 package typings.passportDashLinkedinDashOauth2.passportDashLinkedinDashOauth2Mod
 
-import typings.passportDashLinkedinDashOauth2.passportDashLinkedinDashOauth2Numbers.`true`
+import typings.passportDashLinkedinDashOauth2.passportDashLinkedinDashOauth2Booleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Aggregation
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Association
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Class
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Composition
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Dependency
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Enumeration
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Inheritance
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

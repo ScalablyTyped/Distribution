@@ -1,11 +1,6 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState
-import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Initial
-import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.NotifyWait
-import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Subscribed
-import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,19 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT1
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT3
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT4
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT5
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT6
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.DARK1
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.DARK2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.FOLLOWED_HYPERLINK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.HYPERLINK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.LIGHT1
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.LIGHT2
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

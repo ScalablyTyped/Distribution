@@ -1,20 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Banned
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.ClanDisabled
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.CommunityBan
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.DoesntExist
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Error
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Full
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Limited
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.MemberBlockedYou
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NoRankingDataLobby
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NoRankingDataUser
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NotAllowed
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.RankOutOfRange
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Success
-import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.YouBlockedMember
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

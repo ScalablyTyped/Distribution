@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class FolderItemVerbs protected () extends js.Object {
   /** Get count of open folder windows */
   val Count: Double = js.native
-  var `Shell32.FolderItemVerbs_typekey`: FolderItemVerbs = js.native
+  @JSName("Shell32.FolderItemVerbs_typekey")
+  var Shell32DotFolderItemVerbs_typekey: FolderItemVerbs = js.native
   /** Return the specified verb */
   def Item(): FolderItemVerb = js.native
   def Item(index: js.Any): FolderItemVerb = js.native

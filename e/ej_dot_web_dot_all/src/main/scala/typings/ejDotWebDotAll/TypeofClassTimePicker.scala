@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassTimePicker
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, TimePicker]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), TimePicker] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), TimePicker]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, TimePicker] {
   var Locale: js.Any = js.native
   var fn: TimePicker = js.native
 }

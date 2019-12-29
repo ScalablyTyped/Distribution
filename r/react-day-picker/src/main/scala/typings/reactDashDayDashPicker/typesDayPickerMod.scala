@@ -1,7 +1,6 @@
 package typings.reactDashDayDashPicker
 
 import typings.react.reactMod.Component
-import typings.reactDashDayDashPicker.typesDayPickerMod.DayPicker
 import typings.reactDashDayDashPicker.typesPropsMod.DayPickerProps
 import typings.std.Date
 import typings.std.HTMLDivElement

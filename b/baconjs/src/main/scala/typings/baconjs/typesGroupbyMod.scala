@@ -1,6 +1,5 @@
 package typings.baconjs
 
-import typings.baconjs.typesGroupbyMod.GroupTransformer
 import typings.baconjs.typesObservableMod.EventStream
 import typings.baconjs.typesObservableMod.default
 import scala.scalajs.js

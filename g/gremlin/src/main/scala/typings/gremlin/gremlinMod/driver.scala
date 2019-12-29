@@ -1,8 +1,5 @@
 package typings.gremlin.gremlinMod
 
-import typings.gremlin.gremlinMod.driver.RemoteConnection
-import typings.gremlin.gremlinMod.driver.RemoteTraversal
-import typings.gremlin.gremlinMod.driver.auth.Authenticator
 import typings.gremlin.gremlinMod.process.Bytecode
 import typings.gremlin.gremlinMod.process.Traversal
 import typings.gremlin.gremlinMod.process.TraversalSideEffects

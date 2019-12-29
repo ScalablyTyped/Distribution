@@ -14,7 +14,8 @@ class View protected () extends js.Object {
   var Language: String = js.native
   var LockUserChanges: Boolean = js.native
   var Name: String = js.native
-  var `Outlook.View_typekey`: View = js.native
+  @JSName("Outlook.View_typekey")
+  var OutlookDotView_typekey: View = js.native
   val Parent: js.Any = js.native
   val SaveOption: OlViewSaveOption = js.native
   val Session: NameSpace = js.native

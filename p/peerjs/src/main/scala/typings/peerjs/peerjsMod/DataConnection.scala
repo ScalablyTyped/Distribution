@@ -34,6 +34,8 @@ trait DataConnection extends js.Object {
   def on_error(event: error, cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   @JSName("on")
   def on_open(event: open, cb: js.Function0[Unit]): Unit = js.native
+  def parse(data: String): js.Any = js.native
   def send(data: js.Any): Unit = js.native
+  def stringify(data: js.Any): String = js.native
 }
 

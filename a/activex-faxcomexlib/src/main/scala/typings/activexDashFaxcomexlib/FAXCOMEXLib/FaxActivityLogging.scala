@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class FaxActivityLogging protected () extends js.Object {
   /** Activity log database files path */
   var DatabasePath: String = js.native
-  var `FAXCOMEXLib.FaxActivityLogging_typekey`: FaxActivityLogging = js.native
+  @JSName("FAXCOMEXLib.FaxActivityLogging_typekey")
+  var FAXCOMEXLibDotFaxActivityLogging_typekey: FaxActivityLogging = js.native
   /** Does the server log incoming fax activity */
   var LogIncoming: Boolean = js.native
   /** Does the server log outgoing fax activity */

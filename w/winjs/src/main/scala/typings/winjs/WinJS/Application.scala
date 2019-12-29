@@ -2,7 +2,6 @@ package typings.winjs.WinJS
 
 import typings.std.CustomEvent
 import typings.winjs.IOHelper
-import typings.winjs.WinJS.Application.IPromiseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

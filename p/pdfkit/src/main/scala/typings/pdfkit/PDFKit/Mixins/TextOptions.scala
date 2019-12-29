@@ -35,6 +35,8 @@ trait TextOptions extends js.Object {
   var continued: js.UndefOr[Boolean] = js.undefined
   /** The character to display at the end of the text when it is too long. Set to true to use the default character. */
   var ellipsis: js.UndefOr[Boolean | String] = js.undefined
+  /** an array of OpenType feature tags to apply. If not provided, a set of defaults is used. */
+  var features: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
   /** whether to fill the text (true by default) */
   var fill: js.UndefOr[Boolean] = js.undefined
   /**  The maximum height that text should be clipped to */
@@ -73,6 +75,7 @@ object TextOptions {
     columns: Int | Double = null,
     continued: js.UndefOr[Boolean] = js.undefined,
     ellipsis: Boolean | String = null,
+    features: js.Array[OpenTypeFeatures] = null,
     fill: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
     indent: Int | Double = null,
@@ -95,6 +98,7 @@ object TextOptions {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (!js.isUndefined(continued)) __obj.updateDynamic("continued")(continued.asInstanceOf[js.Any])
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])

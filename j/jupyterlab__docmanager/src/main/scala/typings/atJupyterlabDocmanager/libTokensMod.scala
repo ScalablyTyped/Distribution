@@ -1,7 +1,6 @@
 package typings.atJupyterlabDocmanager
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
 import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentRegistry
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel

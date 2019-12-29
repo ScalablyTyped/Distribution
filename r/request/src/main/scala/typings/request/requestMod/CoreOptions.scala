@@ -46,7 +46,7 @@ trait CoreOptions extends js.Object {
   var multipart: js.UndefOr[js.Array[RequestPart] | Multipart] = js.undefined
   var oauth: js.UndefOr[OAuthOptions] = js.undefined
   var passphrase: js.UndefOr[String] = js.undefined
-  var pool: js.UndefOr[js.Any] = js.undefined
+  var pool: js.UndefOr[PoolOptions] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var postambleCRLF: js.UndefOr[Boolean] = js.undefined
   var preambleCRLF: js.UndefOr[Boolean] = js.undefined
@@ -101,7 +101,7 @@ object CoreOptions {
     multipart: js.Array[RequestPart] | Multipart = null,
     oauth: OAuthOptions = null,
     passphrase: String = null,
-    pool: js.Any = null,
+    pool: PoolOptions = null,
     port: Int | Double = null,
     postambleCRLF: js.UndefOr[Boolean] = js.undefined,
     preambleCRLF: js.UndefOr[Boolean] = js.undefined,

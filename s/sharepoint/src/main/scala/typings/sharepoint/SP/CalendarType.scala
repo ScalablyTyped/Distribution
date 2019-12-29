@@ -1,22 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.CalendarType.chineseLunar
-import typings.sharepoint.SP.CalendarType.gregorian
-import typings.sharepoint.SP.CalendarType.gregorianArabic
-import typings.sharepoint.SP.CalendarType.gregorianMEFrench
-import typings.sharepoint.SP.CalendarType.gregorianXLITEnglish
-import typings.sharepoint.SP.CalendarType.gregorianXLITFrench
-import typings.sharepoint.SP.CalendarType.hebrew
-import typings.sharepoint.SP.CalendarType.hijri
-import typings.sharepoint.SP.CalendarType.japan
-import typings.sharepoint.SP.CalendarType.korea
-import typings.sharepoint.SP.CalendarType.koreaJapanLunar
-import typings.sharepoint.SP.CalendarType.none
-import typings.sharepoint.SP.CalendarType.sakaEra
-import typings.sharepoint.SP.CalendarType.taiwan
-import typings.sharepoint.SP.CalendarType.thai
-import typings.sharepoint.SP.CalendarType.umAlQura
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

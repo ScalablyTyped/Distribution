@@ -1,13 +1,6 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.Linear
-import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMap
-import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapLinearLinear
-import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapLinearNearest
-import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapNearestLinear
-import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapNearestNearest
-import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.Nearest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

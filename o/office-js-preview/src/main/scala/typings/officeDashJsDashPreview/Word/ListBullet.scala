@@ -1,13 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.ListBullet.arrow
-import typings.officeDashJsDashPreview.Word.ListBullet.checkmark
-import typings.officeDashJsDashPreview.Word.ListBullet.custom
-import typings.officeDashJsDashPreview.Word.ListBullet.diamonds
-import typings.officeDashJsDashPreview.Word.ListBullet.hollow
-import typings.officeDashJsDashPreview.Word.ListBullet.solid
-import typings.officeDashJsDashPreview.Word.ListBullet.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

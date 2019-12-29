@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.DatePicker
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.None
-import typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.Week
-import typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.WorkDays
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

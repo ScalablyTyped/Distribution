@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Available
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Offline
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.validatorjs.validatorjsMod
 
-import typings.validatorjs.validatorjsNumbers.`false`
+import typings.validatorjs.validatorjsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

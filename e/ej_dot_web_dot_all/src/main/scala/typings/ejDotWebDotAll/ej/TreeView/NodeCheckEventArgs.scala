@@ -28,7 +28,7 @@ trait NodeCheckEventArgs extends js.Object {
   var isChecked: js.UndefOr[Boolean] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the id of the parent element of current element of the node clicked
     */
   var parentId: js.UndefOr[String] = js.undefined
@@ -50,7 +50,7 @@ object NodeCheckEventArgs {
     event: js.Any = null,
     id: String = null,
     isChecked: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     parentId: String = null,
     `type`: String = null,
     value: String = null

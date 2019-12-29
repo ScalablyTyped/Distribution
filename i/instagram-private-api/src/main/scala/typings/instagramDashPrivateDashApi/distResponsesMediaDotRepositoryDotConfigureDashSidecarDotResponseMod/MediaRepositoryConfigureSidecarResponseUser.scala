@@ -37,7 +37,7 @@ object MediaRepositoryConfigureSidecarResponseUser {
     has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined,
     is_unpublished: js.UndefOr[Boolean] = js.undefined,
     is_verified: js.UndefOr[Boolean] = js.undefined,
-    latest_reel_media: Null = null,
+    latest_reel_media: js.UndefOr[scala.Nothing] = js.undefined,
     reel_auto_archive: String = null,
     show_insights_terms: js.UndefOr[Boolean] = js.undefined
   ): MediaRepositoryConfigureSidecarResponseUser = {
@@ -48,7 +48,7 @@ object MediaRepositoryConfigureSidecarResponseUser {
     if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture.asInstanceOf[js.Any])
     if (!js.isUndefined(is_unpublished)) __obj.updateDynamic("is_unpublished")(is_unpublished.asInstanceOf[js.Any])
     if (!js.isUndefined(is_verified)) __obj.updateDynamic("is_verified")(is_verified.asInstanceOf[js.Any])
-    if (latest_reel_media != null) __obj.updateDynamic("latest_reel_media")(latest_reel_media.asInstanceOf[js.Any])
+    if (!js.isUndefined(latest_reel_media)) __obj.updateDynamic("latest_reel_media")(latest_reel_media.asInstanceOf[js.Any])
     if (reel_auto_archive != null) __obj.updateDynamic("reel_auto_archive")(reel_auto_archive.asInstanceOf[js.Any])
     if (!js.isUndefined(show_insights_terms)) __obj.updateDynamic("show_insights_terms")(show_insights_terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRepositoryConfigureSidecarResponseUser]

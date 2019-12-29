@@ -1,9 +1,6 @@
 package typings.apolloDashReact.libParserMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.apolloDashReact.libParserMod.DocumentType.Mutation
-import typings.apolloDashReact.libParserMod.DocumentType.Query
-import typings.apolloDashReact.libParserMod.DocumentType.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

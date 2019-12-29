@@ -1,13 +1,6 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashSnap7.nodeDashSnap7Mod.SubBlockType.SubBlk_DB
-import typings.nodeDashSnap7.nodeDashSnap7Mod.SubBlockType.SubBlk_FB
-import typings.nodeDashSnap7.nodeDashSnap7Mod.SubBlockType.SubBlk_FC
-import typings.nodeDashSnap7.nodeDashSnap7Mod.SubBlockType.SubBlk_OB
-import typings.nodeDashSnap7.nodeDashSnap7Mod.SubBlockType.SubBlk_SDB
-import typings.nodeDashSnap7.nodeDashSnap7Mod.SubBlockType.SubBlk_SFB
-import typings.nodeDashSnap7.nodeDashSnap7Mod.SubBlockType.SubBlk_SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

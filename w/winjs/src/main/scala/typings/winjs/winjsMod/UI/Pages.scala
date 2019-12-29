@@ -1,6 +1,7 @@
 package typings.winjs.winjsMod.UI
 
 import typings.std.HTMLElement
+import typings.winjs.WinJS.Promise
 import typings.winjs.WinJS.UI.Pages.IPageControlMembers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +27,7 @@ object Pages extends js.Object {
     /* element */ js.UndefOr[HTMLElement], 
     /* options */ js.UndefOr[js.Any], 
     /* complete */ js.UndefOr[js.Function1[/* page */ js.Any, Unit]], 
-    /* parentedPromise */ js.UndefOr[typings.winjs.WinJS.Promise[_]], 
+    /* parentedPromise */ js.UndefOr[Promise[_]], 
     Unit
   ] = js.native
   /**
@@ -38,7 +39,7 @@ object Pages extends js.Object {
     /* element */ js.UndefOr[HTMLElement], 
     /* options */ js.UndefOr[js.Any], 
     /* complete */ js.UndefOr[js.Function1[/* page */ js.Any, Unit]], 
-    /* parentedPromise */ js.UndefOr[typings.winjs.WinJS.Promise[_]], 
+    /* parentedPromise */ js.UndefOr[Promise[_]], 
     Unit
   ] = js.native
   /**
@@ -49,14 +50,9 @@ object Pages extends js.Object {
     * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
     * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
     **/
-  def render(uri: String): typings.winjs.WinJS.Promise[_] = js.native
-  def render(uri: String, element: HTMLElement): typings.winjs.WinJS.Promise[_] = js.native
-  def render(uri: String, element: HTMLElement, options: js.Any): typings.winjs.WinJS.Promise[_] = js.native
-  def render(
-    uri: String,
-    element: HTMLElement,
-    options: js.Any,
-    parentedPromise: typings.winjs.WinJS.Promise[_]
-  ): typings.winjs.WinJS.Promise[_] = js.native
+  def render(uri: String): Promise[_] = js.native
+  def render(uri: String, element: HTMLElement): Promise[_] = js.native
+  def render(uri: String, element: HTMLElement, options: js.Any): Promise[_] = js.native
+  def render(uri: String, element: HTMLElement, options: js.Any, parentedPromise: Promise[_]): Promise[_] = js.native
 }
 

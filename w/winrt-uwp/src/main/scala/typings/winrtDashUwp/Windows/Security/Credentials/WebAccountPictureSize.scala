@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountPictureSize.size1080x1080
-import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountPictureSize.size208x208
-import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountPictureSize.size424x424
-import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountPictureSize.size64x64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

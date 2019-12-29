@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.Generic
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.ServiceHost
-import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.TeamProject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

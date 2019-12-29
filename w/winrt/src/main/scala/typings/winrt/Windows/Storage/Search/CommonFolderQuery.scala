@@ -1,19 +1,6 @@
 package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.defaultQuery
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAlbum
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAlbumArtist
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByArtist
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAuthor
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByComposer
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByGenre
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByMonth
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByPublishedYear
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByRating
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByTag
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByType
-import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByYear
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.antlr4
 
-import typings.antlr4.tokenMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

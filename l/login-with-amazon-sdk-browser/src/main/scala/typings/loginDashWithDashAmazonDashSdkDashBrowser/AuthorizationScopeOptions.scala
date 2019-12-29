@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 /* Rewritten from type alias, can be one of: 
   - typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.profile
-  - typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.`profile:user_id`
+  - typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.profileColonuser_id
   - typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.postal_code
 */
 trait AuthorizationScopeOptions extends js.Object
@@ -23,6 +23,6 @@ object AuthorizationScopeOptions {
   @scala.inline
   def profile: typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.profile = this.cast("profile")
   @scala.inline
-  def `profile:user_id`: typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.`profile:user_id` = this.cast("profile:user_id")
+  def profileColonuser_id: typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.profileColonuser_id = this.cast("profile:user_id")
 }
 

@@ -1,6 +1,5 @@
 package typings.apolloDashUtilities
 
-import typings.apolloDashUtilities.libUtilMergeDeepMod.TupleToIntersection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

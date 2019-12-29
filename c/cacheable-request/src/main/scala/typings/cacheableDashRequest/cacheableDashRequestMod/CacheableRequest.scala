@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CacheableRequest
-  extends Instantiable2[
+  extends Instantiable1[
       /* requestFn */ RequestFn, 
-      (/* storageAdapter */ StorageAdapter) | (/* storageAdapter */ String), 
       js.Function2[
         (RequestOptions with typings.httpDashCacheDashSemantics.httpDashCacheDashSemanticsMod.Options) | String | URL, 
         js.UndefOr[js.Function1[ServerResponse | typings.responselike.responselikeMod.^ , Unit]], 
         Emitter
       ]
     ]
-     with Instantiable1[
+     with Instantiable2[
       /* requestFn */ RequestFn, 
+      (/* storageAdapter */ StorageAdapter) | (/* storageAdapter */ String), 
       js.Function2[
         (RequestOptions with typings.httpDashCacheDashSemantics.httpDashCacheDashSemanticsMod.Options) | String | URL, 
         js.UndefOr[js.Function1[ServerResponse | typings.responselike.responselikeMod.^ , Unit]], 

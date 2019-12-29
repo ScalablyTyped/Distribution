@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorExhaustMapMod extends js.Object {
   def exhaustMap[T, R](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 

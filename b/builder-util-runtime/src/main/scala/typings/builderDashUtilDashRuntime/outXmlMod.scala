@@ -1,7 +1,6 @@
 package typings.builderDashUtilDashRuntime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.builderDashUtilDashRuntime.outXmlMod.XElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

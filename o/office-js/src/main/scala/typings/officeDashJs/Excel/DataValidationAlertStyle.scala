@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.DataValidationAlertStyle.information
-import typings.officeDashJs.Excel.DataValidationAlertStyle.stop
-import typings.officeDashJs.Excel.DataValidationAlertStyle.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

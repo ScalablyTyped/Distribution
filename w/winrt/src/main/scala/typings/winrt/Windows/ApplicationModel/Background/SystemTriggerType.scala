@@ -1,19 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.controlChannelReset
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.internetAvailable
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.invalid
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.lockScreenApplicationAdded
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.lockScreenApplicationRemoved
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.networkStateChange
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.onlineIdConnectedStateChange
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.servicingComplete
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.sessionConnected
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.smsReceived
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.timeZoneChange
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.userAway
-import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.userPresent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

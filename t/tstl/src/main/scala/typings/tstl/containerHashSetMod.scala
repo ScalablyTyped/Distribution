@@ -2,14 +2,13 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerSetContainerMod.SetContainer
-import typings.tstl.baseContainerSetContainerMod.SetContainer.InsertRet
 import typings.tstl.baseContainerUniqueSetMod.UniqueSet
 import typings.tstl.baseHashUnderscoreSetHashBucketsMod._SetHashBuckets
-import typings.tstl.containerHashSetMod.HashSet
 import typings.tstl.containerHashSetMod.HashSet.Iterator
 import typings.tstl.containerHashSetMod.HashSet.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlNumbers.`true`
+import typings.tstl.tstlBooleans.`true`
+import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,15 +89,15 @@ object containerHashSetMod extends js.Object {
       * @hidden
       */
     /* protected */ def _Handle_erase(
-      first: (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]) | Iterator[Key],
-      last: (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]) | Iterator[Key]
+      first: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]),
+      last: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]])
     ): Unit = js.native
     /**
       * @hidden
       */
     /* protected */ def _Handle_insert(
-      first: (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]) | Iterator[Key],
-      last: (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]) | Iterator[Key]
+      first: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]),
+      last: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]])
     ): Unit = js.native
     /**
       * @hidden
@@ -109,13 +108,7 @@ object containerHashSetMod extends js.Object {
       * @hidden
       */
     @JSName("_Insert_by_key")
-    /* protected */ def _Insert_by_key_InsertRet(key: Key): InsertRet[
-        Key, 
-        `true`, 
-        HashSet[Key], 
-        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]], 
-        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `true`, HashSet[Key]]
-      ] = js.native
+    /* protected */ def _Insert_by_key_Pair(key: Key): Pair[Iterator[Key], Boolean] = js.native
     /**
       * Iterator to the first element in a specific bucket.
       *
@@ -180,6 +173,10 @@ object containerHashSetMod extends js.Object {
     /**
       * @inheritDoc
       */
+    def erase(key: Key): Double = js.native
+    /**
+      * @inheritDoc
+      */
     @JSName("find")
     def find_Iterator(key: Key): Iterator[Key] = js.native
     /**
@@ -236,7 +233,7 @@ object containerHashSetMod extends js.Object {
       * @inheritDoc
       */
     @JSName("rbegin")
-    def rbegin_ReverseIterator(): typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `true`, HashSet[Key]] = js.native
+    def rbegin_ReverseIterator(): ReverseIterator[Key] = js.native
     /**
       * @inheritDoc
       */
@@ -254,7 +251,7 @@ object containerHashSetMod extends js.Object {
       * @inheritDoc
       */
     @JSName("rend")
-    def rend_ReverseIterator(): typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `true`, HashSet[Key]] = js.native
+    def rend_ReverseIterator(): ReverseIterator[Key] = js.native
     /**
       * @inheritDoc
       */

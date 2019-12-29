@@ -22,12 +22,9 @@ trait PromiEvent[T] extends Promise[T] {
   @JSName("on")
   def on_error(`type`: error, handler: js.Function1[(/* error */ Error) | String | TransactionReceipt, Unit]): PromiEvent[T] = js.native
   @JSName("on")
-  def on_receipt(`type`: receipt, handler: js.Function1[Error | String | (/* receipt */ TransactionReceipt), Unit]): PromiEvent[T] = js.native
+  def on_receipt(`type`: receipt, handler: js.Function1[Error | String | TransactionReceipt, Unit]): PromiEvent[T] = js.native
   @JSName("on")
-  def on_transactionHash(
-    `type`: transactionHash,
-    handler: js.Function1[Error | (/* receipt */ String) | TransactionReceipt, Unit]
-  ): PromiEvent[T] = js.native
+  def on_transactionHash(`type`: transactionHash, handler: js.Function1[Error | String | TransactionReceipt, Unit]): PromiEvent[T] = js.native
   @JSName("once")
   def once_confirmation(`type`: confirmation, handler: js.Function1[/* error */ Error | TransactionReceipt | String, Unit]): PromiEvent[T] = js.native
   @JSName("once")
@@ -38,11 +35,8 @@ trait PromiEvent[T] extends Promise[T] {
   @JSName("once")
   def once_error(`type`: error, handler: js.Function1[(/* error */ Error) | String | TransactionReceipt, Unit]): PromiEvent[T] = js.native
   @JSName("once")
-  def once_receipt(`type`: receipt, handler: js.Function1[Error | String | (/* receipt */ TransactionReceipt), Unit]): PromiEvent[T] = js.native
+  def once_receipt(`type`: receipt, handler: js.Function1[Error | String | TransactionReceipt, Unit]): PromiEvent[T] = js.native
   @JSName("once")
-  def once_transactionHash(
-    `type`: transactionHash,
-    handler: js.Function1[Error | (/* receipt */ String) | TransactionReceipt, Unit]
-  ): PromiEvent[T] = js.native
+  def once_transactionHash(`type`: transactionHash, handler: js.Function1[Error | String | TransactionReceipt, Unit]): PromiEvent[T] = js.native
 }
 

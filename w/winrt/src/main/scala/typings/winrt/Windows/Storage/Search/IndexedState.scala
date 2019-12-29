@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Search.IndexedState.fullyIndexed
-import typings.winrt.Windows.Storage.Search.IndexedState.notIndexed
-import typings.winrt.Windows.Storage.Search.IndexedState.partiallyIndexed
-import typings.winrt.Windows.Storage.Search.IndexedState.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

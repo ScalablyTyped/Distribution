@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.auto
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.candlelight
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.cloudy
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.daylight
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.flash
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.fluorescent
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.manual
-import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.tungsten
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

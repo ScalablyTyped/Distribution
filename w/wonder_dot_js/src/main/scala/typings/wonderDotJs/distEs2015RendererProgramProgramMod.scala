@@ -3,7 +3,6 @@ package typings.wonderDotJs
 import typings.std.Float32Array
 import typings.wonderDotJs.distEs2015CoreEntityMod.Entity
 import typings.wonderDotJs.distEs2015RendererBufferArrayBufferMod.ArrayBuffer
-import typings.wonderDotJs.distEs2015RendererProgramProgramMod.Program
 import typings.wonderDotJs.distEs2015RendererShaderShaderShaderMod.Shader
 import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType
 import scala.scalajs.js

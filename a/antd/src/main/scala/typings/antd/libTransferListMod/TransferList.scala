@@ -1,7 +1,7 @@
 package typings.antd.libTransferListMod
 
 import typings.antd.Anon_FilteredItems
-import typings.antd.antdNumbers.`false`
+import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.all
 import typings.antd.antdStrings.none
 import typings.antd.antdStrings.part

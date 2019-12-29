@@ -1,10 +1,6 @@
 package typings.classnames
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.classnames.typesMod.ClassArray
-import typings.classnames.typesMod.ClassDictionary
-import typings.classnames.typesMod.ClassNamesFn
-import typings.classnames.typesMod.ClassValue
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

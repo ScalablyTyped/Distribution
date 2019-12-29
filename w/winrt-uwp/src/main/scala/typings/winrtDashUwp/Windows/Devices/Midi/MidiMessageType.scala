@@ -1,25 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Midi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.activeSensing
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.channelPressure
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.continue
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.controlChange
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.midiTimeCode
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.none
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.noteOff
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.noteOn
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.pitchBendChange
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.polyphonicKeyPressure
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.programChange
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.songPositionPointer
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.songSelect
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.start
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.stop
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.systemExclusive
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.systemReset
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.timingClock
-import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.tuneRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

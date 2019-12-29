@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.FileAttributes.archive
-import typings.winrt.Windows.Storage.FileAttributes.directory
-import typings.winrt.Windows.Storage.FileAttributes.normal
-import typings.winrt.Windows.Storage.FileAttributes.readOnly
-import typings.winrt.Windows.Storage.FileAttributes.temporary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

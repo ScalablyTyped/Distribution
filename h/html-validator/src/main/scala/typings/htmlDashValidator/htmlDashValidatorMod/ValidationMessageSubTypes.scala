@@ -1,11 +1,6 @@
 package typings.htmlDashValidator.htmlDashValidatorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.fatal
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.internal
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.io
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.schema
-import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

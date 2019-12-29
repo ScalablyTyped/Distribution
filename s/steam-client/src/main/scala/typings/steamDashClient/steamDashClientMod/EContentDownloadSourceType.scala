@@ -1,13 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EContentDownloadSourceType.CDN
-import typings.steamDashClient.steamDashClientMod.EContentDownloadSourceType.CS
-import typings.steamDashClient.steamDashClientMod.EContentDownloadSourceType.Invalid
-import typings.steamDashClient.steamDashClientMod.EContentDownloadSourceType.LANPeer
-import typings.steamDashClient.steamDashClientMod.EContentDownloadSourceType.LCS
-import typings.steamDashClient.steamDashClientMod.EContentDownloadSourceType.Max
-import typings.steamDashClient.steamDashClientMod.EContentDownloadSourceType.ProxyCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

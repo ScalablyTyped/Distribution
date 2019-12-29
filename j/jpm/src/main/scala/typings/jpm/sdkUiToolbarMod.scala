@@ -4,8 +4,6 @@ import typings.jpm.jpmStrings.attach
 import typings.jpm.jpmStrings.detach
 import typings.jpm.jpmStrings.hide
 import typings.jpm.jpmStrings.show
-import typings.jpm.sdkUiToolbarMod.Toolbar
-import typings.jpm.sdkUiToolbarMod.ToolbarItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

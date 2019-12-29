@@ -1,10 +1,6 @@
 package typings.jqueryDashCropbox.jQueryCropBox
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jqueryDashCropbox.jQueryCropBox.ShowControls.always
-import typings.jqueryDashCropbox.jQueryCropBox.ShowControls.auto
-import typings.jqueryDashCropbox.jQueryCropBox.ShowControls.hover
-import typings.jqueryDashCropbox.jQueryCropBox.ShowControls.never
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,5 @@
 package typings.sourcemapDashCodec
 
-import typings.sourcemapDashCodec.sourcemapDashCodecMod.SourceMapLine
-import typings.sourcemapDashCodec.sourcemapDashCodecMod.SourceMapMappings
-import typings.sourcemapDashCodec.sourcemapDashCodecMod.SourceMapSegment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,6 +2,7 @@ package typings.videoDotJs.videoDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Partial
+import typings.videoDotJs.videoDotJsBooleans.`false`
 import typings.videoDotJs.videoDotJsMod.videojs.Child
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
 import typings.videoDotJs.videoDotJsMod.videojs.ControlBarOptions
@@ -9,7 +10,6 @@ import typings.videoDotJs.videoDotJsMod.videojs.LanguageTranslations
 import typings.videoDotJs.videoDotJsMod.videojs.Tech.SourceObject
 import typings.videoDotJs.videoDotJsMod.videojs.TextTrackOptions
 import typings.videoDotJs.videoDotJsMod.videojs.TextTrackSettingsOptions
-import typings.videoDotJs.videoDotJsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

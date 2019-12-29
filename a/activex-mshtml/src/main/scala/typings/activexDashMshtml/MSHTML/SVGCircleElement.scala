@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGCircleElement")
 @js.native
 class SVGCircleElement protected () extends js.Object {
-  var `MSHTML.SVGCircleElement_typekey`: SVGCircleElement = js.native
+  @JSName("MSHTML.SVGCircleElement_typekey")
+  var MSHTMLDotSVGCircleElement_typekey: SVGCircleElement = js.native
   var cx: SVGAnimatedLength = js.native
   var cy: SVGAnimatedLength = js.native
   val farthestViewportElement: ISVGElement = js.native

@@ -2,8 +2,6 @@ package typings.pump
 
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
-import typings.pump.pumpMod.Callback
-import typings.pump.pumpMod.Stream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

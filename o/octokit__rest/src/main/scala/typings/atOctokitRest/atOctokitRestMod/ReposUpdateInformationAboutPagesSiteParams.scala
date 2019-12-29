@@ -1,8 +1,8 @@
 package typings.atOctokitRest.atOctokitRestMod
 
-import typings.atOctokitRest.atOctokitRestStrings.BACKSLASHmasterBACKSLASH
-import typings.atOctokitRest.atOctokitRestStrings.`BACKSLASHgh-pagesBACKSLASH`
-import typings.atOctokitRest.atOctokitRestStrings.`BACKSLASHmaster /docsBACKSLASH`
+import typings.atOctokitRest.atOctokitRestStrings.QuotationmarkmasterQuotationmark
+import typings.atOctokitRest.atOctokitRestStrings.`Quotationmarkgh-pagesQuotationmark`
+import typings.atOctokitRest.atOctokitRestStrings.`Quotationmarkmaster SlashdocsQuotationmark`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait ReposUpdateInformationAboutPagesSiteParams extends js.Object {
     * Update the source for the repository. Must include the branch name, and may optionally specify the subdirectory `/docs`. Possible values are `"gh-pages"`, `"master"`, and `"master /docs"`.
     */
   var source: js.UndefOr[
-    `BACKSLASHgh-pagesBACKSLASH` | BACKSLASHmasterBACKSLASH | (`BACKSLASHmaster /docsBACKSLASH`)
+    `Quotationmarkgh-pagesQuotationmark` | QuotationmarkmasterQuotationmark | (`Quotationmarkmaster SlashdocsQuotationmark`)
   ] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object ReposUpdateInformationAboutPagesSiteParams {
     owner: String,
     repo: String,
     cname: String = null,
-    source: `BACKSLASHgh-pagesBACKSLASH` | BACKSLASHmasterBACKSLASH | (`BACKSLASHmaster /docsBACKSLASH`) = null
+    source: `Quotationmarkgh-pagesQuotationmark` | QuotationmarkmasterQuotationmark | (`Quotationmarkmaster SlashdocsQuotationmark`) = null
   ): ReposUpdateInformationAboutPagesSiteParams = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])

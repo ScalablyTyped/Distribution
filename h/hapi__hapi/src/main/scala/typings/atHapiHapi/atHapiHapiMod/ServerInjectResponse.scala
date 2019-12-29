@@ -1,6 +1,7 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atHapiShot.Anon_Req
 import typings.atHapiShot.atHapiShotMod.Headers
 import typings.node.Buffer
 import scala.scalajs.js
@@ -25,7 +26,7 @@ object ServerInjectResponse {
   def apply(
     headers: Headers,
     payload: String,
-    raw: typings.atHapiShot.Anon_Req,
+    raw: Anon_Req,
     rawPayload: Buffer,
     request: Request,
     statusCode: Double,

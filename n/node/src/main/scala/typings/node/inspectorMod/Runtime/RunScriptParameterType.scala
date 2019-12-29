@@ -24,7 +24,7 @@ trait RunScriptParameterType extends js.Object {
   /**
     * Symbolic group name that can be used to release multiple objects.
     */
-  var objectGroup: js.UndefOr[java.lang.String] = js.undefined
+  var objectGroup: js.UndefOr[String] = js.undefined
   /**
     * Whether the result is expected to be a JSON object which should be sent by value.
     */
@@ -47,7 +47,7 @@ object RunScriptParameterType {
     executionContextId: Int | Double = null,
     generatePreview: js.UndefOr[Boolean] = js.undefined,
     includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined,
-    objectGroup: java.lang.String = null,
+    objectGroup: String = null,
     returnByValue: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined
   ): RunScriptParameterType = {

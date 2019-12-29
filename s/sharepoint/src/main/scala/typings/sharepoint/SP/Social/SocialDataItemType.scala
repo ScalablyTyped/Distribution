@@ -1,11 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialDataItemType.document
-import typings.sharepoint.SP.Social.SocialDataItemType.link
-import typings.sharepoint.SP.Social.SocialDataItemType.site
-import typings.sharepoint.SP.Social.SocialDataItemType.tag
-import typings.sharepoint.SP.Social.SocialDataItemType.user
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

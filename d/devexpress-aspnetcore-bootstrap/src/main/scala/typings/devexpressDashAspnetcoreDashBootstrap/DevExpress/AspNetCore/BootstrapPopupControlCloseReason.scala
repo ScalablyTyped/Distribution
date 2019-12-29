@@ -1,11 +1,6 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapPopupControlCloseReason.API
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapPopupControlCloseReason.CloseButton
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapPopupControlCloseReason.Escape
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapPopupControlCloseReason.MouseOut
-import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapPopupControlCloseReason.OuterMouseClick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

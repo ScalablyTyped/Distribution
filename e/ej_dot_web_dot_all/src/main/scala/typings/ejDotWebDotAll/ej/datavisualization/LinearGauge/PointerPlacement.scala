@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Center
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Far
-import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Near
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

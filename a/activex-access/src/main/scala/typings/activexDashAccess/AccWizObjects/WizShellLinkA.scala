@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AccWizObjects.WizShellLinkA")
 @js.native
 class WizShellLinkA protected () extends js.Object {
-  var `AccWizObjects.WizShellLinkA_typekey`: WizShellLinkA = js.native
+  @JSName("AccWizObjects.WizShellLinkA_typekey")
+  var AccWizObjectsDotWizShellLinkA_typekey: WizShellLinkA = js.native
   /** GetArguments */
   def GetArguments(pszArgs: String, cchMaxPath: Double): Unit = js.native
   /** GetDescription */

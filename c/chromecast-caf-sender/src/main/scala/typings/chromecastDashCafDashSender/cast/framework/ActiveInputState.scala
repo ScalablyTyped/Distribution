@@ -1,9 +1,6 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromecastDashCafDashSender.cast.framework.ActiveInputState.ACTIVE_INPUT_STATE_NO
-import typings.chromecastDashCafDashSender.cast.framework.ActiveInputState.ACTIVE_INPUT_STATE_UNKNOWN
-import typings.chromecastDashCafDashSender.cast.framework.ActiveInputState.ACTIVE_INPUT_STATE_YES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

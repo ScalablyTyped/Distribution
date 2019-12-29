@@ -3,7 +3,6 @@ package typings.atPhosphorKeyboard.atPhosphorKeyboardMod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.atPhosphorKeyboard.atPhosphorKeyboardMod.KeycodeLayout.CodeMap
-import typings.atPhosphorKeyboard.atPhosphorKeyboardMod.KeycodeLayout.KeySet
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

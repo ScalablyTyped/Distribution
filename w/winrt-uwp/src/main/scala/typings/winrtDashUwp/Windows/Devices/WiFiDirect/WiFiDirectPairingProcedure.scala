@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure.groupOwnerNegotiation
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure.invitation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 object autolinkerStrings {
   @js.native
-  sealed trait `3DOT11DOT1` extends js.Object
+  sealed trait `3Dot11Dot1` extends js.Object
   
   @js.native
   sealed trait end extends js.Object
@@ -56,7 +56,7 @@ object autolinkerStrings {
   sealed trait www extends UrlMatchTypeOptions
   
   @scala.inline
-  def `3DOT11DOT1`: `3DOT11DOT1` = "3.11.1".asInstanceOf[`3DOT11DOT1`]
+  def `3Dot11Dot1`: `3Dot11Dot1` = "3.11.1".asInstanceOf[`3Dot11Dot1`]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline

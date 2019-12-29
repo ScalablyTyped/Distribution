@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.add
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.remove
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.winrt.Windows.UI.Popups
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Popups.Placement.above
-import typings.winrt.Windows.UI.Popups.Placement.below
-import typings.winrt.Windows.UI.Popups.Placement.default
-import typings.winrt.Windows.UI.Popups.Placement.left
-import typings.winrt.Windows.UI.Popups.Placement.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

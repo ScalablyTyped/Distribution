@@ -4,7 +4,6 @@ import typings.smartDashFoxDashServer.SFS2X.Entities.Match.MatchExpression
 import typings.smartDashFoxDashServer.SFS2X.Entities.SFSRoom
 import typings.smartDashFoxDashServer.SFS2X.Entities.SFSUser
 import typings.smartDashFoxDashServer.SFS2X.IINVITATION
-import typings.smartDashFoxDashServer.SFS2X.Requests.Game.SFSGameSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Devices.AudioDeviceRole.communications
-import typings.winrt.Windows.Media.Devices.AudioDeviceRole.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

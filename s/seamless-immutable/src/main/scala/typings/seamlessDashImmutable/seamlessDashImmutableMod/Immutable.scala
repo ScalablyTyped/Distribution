@@ -1,8 +1,5 @@
 package typings.seamlessDashImmutable.seamlessDashImmutableMod
 
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.Immutable.AlreadyImmutable
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.Immutable.AnyFunction
-import typings.seamlessDashImmutable.seamlessDashImmutableMod.Immutable.Primitive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

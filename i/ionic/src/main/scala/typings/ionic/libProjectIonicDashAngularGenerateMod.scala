@@ -3,7 +3,6 @@ package typings.ionic
 import typings.ionic.definitionsMod.IonicAngularGenerateOptions
 import typings.ionic.libGenerateMod.GenerateRunner
 import typings.ionic.libGenerateMod.GenerateRunnerDeps
-import typings.ionic.libProjectIonicDashAngularGenerateMod.IonicAngularGenerateRunnerDeps
 import typings.ionic.libProjectIonicDashAngularMod.IonicAngularProject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlaybackItemErrorCode.aborted
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlaybackItemErrorCode.decodeError
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlaybackItemErrorCode.encryptionError
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlaybackItemErrorCode.networkError
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlaybackItemErrorCode.none
-import typings.winrtDashUwp.Windows.Media.Playback.MediaPlaybackItemErrorCode.sourceNotSupportedError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

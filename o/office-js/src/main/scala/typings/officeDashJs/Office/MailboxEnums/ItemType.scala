@@ -33,12 +33,10 @@ object ItemType extends js.Object {
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ItemType with String] = js.native
   /* "appointment" */ @js.native
-  object Appointment
-    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.ItemType.Appointment with String]
+  object Appointment extends TopLevel[Appointment with String]
   
   /* "message" */ @js.native
-  object Message
-    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.ItemType.Message with String]
+  object Message extends TopLevel[Message with String]
   
 }
 

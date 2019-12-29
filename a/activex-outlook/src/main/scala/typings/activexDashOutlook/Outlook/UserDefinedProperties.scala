@@ -10,7 +10,8 @@ class UserDefinedProperties protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.UserDefinedProperties_typekey`: UserDefinedProperties = js.native
+  @JSName("Outlook.UserDefinedProperties_typekey")
+  var OutlookDotUserDefinedProperties_typekey: UserDefinedProperties = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String, Type: OlUserPropertyType): UserDefinedProperty = js.native

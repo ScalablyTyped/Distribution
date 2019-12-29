@@ -1,6 +1,5 @@
 package typings.fossilDashDelta
 
-import typings.fossilDashDelta.fossilDashDeltaMod.ByteArray
 import typings.node.Buffer
 import typings.std.Uint8Array
 import scala.scalajs.js

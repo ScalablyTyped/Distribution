@@ -1,32 +1,6 @@
 package typings.typedDashRestDashClient.httpClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.BadGateway
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.BadRequest
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.Conflict
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.Forbidden
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.GatewayTimeout
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.Gone
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.InternalServerError
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.MethodNotAllowed
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.MovedPermanently
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.MultipleChoices
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.NotAcceptable
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.NotFound
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.NotImplemented
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.NotModified
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.OK
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.PaymentRequired
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.PermanentRedirect
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.ProxyAuthenticationRequired
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.RequestTimeout
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.ResourceMoved
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.SeeOther
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.ServiceUnavailable
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.SwitchProxy
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.TemporaryRedirect
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.Unauthorized
-import typings.typedDashRestDashClient.httpClientMod.HttpCodes.UseProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -110,6 +84,9 @@ object HttpCodes extends js.Object {
   sealed trait TemporaryRedirect extends HttpCodes
   
   @js.native
+  sealed trait TooManyRequests extends HttpCodes
+  
+  @js.native
   sealed trait Unauthorized extends HttpCodes
   
   @js.native
@@ -188,6 +165,9 @@ object HttpCodes extends js.Object {
   
   /* 307 */ @js.native
   object TemporaryRedirect extends TopLevel[TemporaryRedirect with Double]
+  
+  /* 429 */ @js.native
+  object TooManyRequests extends TopLevel[TooManyRequests with Double]
   
   /* 401 */ @js.native
   object Unauthorized extends TopLevel[Unauthorized with Double]

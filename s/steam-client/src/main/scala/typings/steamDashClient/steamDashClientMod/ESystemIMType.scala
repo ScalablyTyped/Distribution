@@ -1,17 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.CardWillExpire
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.GiftRevoked
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.GuestPassGranted
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.GuestPassReceived
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.InvalidCard
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.Max
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.RawText
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.RecurringPurchaseFailed
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.SubscriptionExpired
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.SupportMessage
-import typings.steamDashClient.steamDashClientMod.ESystemIMType.SupportMessageClearAlert
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

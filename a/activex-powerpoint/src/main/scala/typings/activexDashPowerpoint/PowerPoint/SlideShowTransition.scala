@@ -17,7 +17,8 @@ class SlideShowTransition protected () extends js.Object {
   var Hidden: MsoTriState = js.native
   var LoopSoundUntilNext: MsoTriState = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.SlideShowTransition_typekey`: SlideShowTransition = js.native
+  @JSName("PowerPoint.SlideShowTransition_typekey")
+  var PowerPointDotSlideShowTransition_typekey: SlideShowTransition = js.native
   val SoundEffect: typings.activexDashPowerpoint.PowerPoint.SoundEffect = js.native
   var Speed: PpTransitionSpeed = js.native
 }

@@ -1,6 +1,6 @@
 package typings.oauthDashShim
 
-import typings.oauthDashShim.oauthDashShimNumbers.`false`
+import typings.oauthDashShim.oauthDashShimBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

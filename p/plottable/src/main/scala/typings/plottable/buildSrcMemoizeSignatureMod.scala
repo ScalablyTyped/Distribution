@@ -2,11 +2,6 @@ package typings.plottable
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.plottable.buildSrcCoreDatasetMod.Dataset
-import typings.plottable.buildSrcMemoizeSignatureMod.ArraySignature
-import typings.plottable.buildSrcMemoizeSignatureMod.ISignatureRecord
-import typings.plottable.buildSrcMemoizeSignatureMod.ObjectSignature
-import typings.plottable.buildSrcMemoizeSignatureMod.ReferenceSignature
-import typings.plottable.buildSrcMemoizeSignatureMod.Signature
 import typings.plottable.buildSrcScalesScaleMod.Scale
 import typings.std.Record
 import scala.scalajs.js

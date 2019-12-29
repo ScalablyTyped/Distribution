@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accent
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark1
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark2
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark3
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight1
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight2
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight3
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.background
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.complement
-import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.foreground
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

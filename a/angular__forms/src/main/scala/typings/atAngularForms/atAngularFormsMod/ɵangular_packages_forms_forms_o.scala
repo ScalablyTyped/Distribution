@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/forms", "ɵangular_packages_forms_forms_o")
+@JSImport("@angular/forms", "\u0275angular_packages_forms_forms_o")
 @js.native
 class ɵangular_packages_forms_forms_o () extends js.Object {
   var _accessors: js.Any = js.native

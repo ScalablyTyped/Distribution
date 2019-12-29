@@ -12,7 +12,7 @@ trait IGrouper extends ISorter {
   		* @param instance Ext.data.Model The Model instance
   		* @returns String The group string for this model
   		*/
-  var getGroupString: js.UndefOr[js.Function1[/* instance */ js.UndefOr[IModel], java.lang.String]] = js.undefined
+  var getGroupString: js.UndefOr[js.Function1[/* instance */ js.UndefOr[IModel], String]] = js.undefined
 }
 
 object IGrouper {
@@ -24,18 +24,18 @@ object IGrouper {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    direction: java.lang.String = null,
-    extend: java.lang.String = null,
-    getGroupString: /* instance */ js.UndefOr[IModel] => java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    direction: String = null,
+    extend: String = null,
+    getGroupString: /* instance */ js.UndefOr[IModel] => String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IGrouper = null,
     mixins: js.Any = null,
-    property: java.lang.String = null,
+    property: String = null,
     requires: Array = null,
-    root: java.lang.String = null,
+    root: String = null,
     self: IClass = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
+    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     sorterFn: js.Any = null,
     statics: js.Any = null,

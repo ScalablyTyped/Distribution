@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Storage.Pickers.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Pickers.Provider.FileSelectionMode.multiple
-import typings.winrt.Windows.Storage.Pickers.Provider.FileSelectionMode.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

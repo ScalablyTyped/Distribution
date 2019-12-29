@@ -46,7 +46,7 @@ trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
   ] = js.undefined
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
   var persistedQueries: js.UndefOr[PersistedQueryOptions] = js.undefined
-  var plugins: js.UndefOr[js.Array[ApolloServerPlugin]] = js.undefined
+  var plugins: js.UndefOr[js.Array[ApolloServerPlugin[Record[String, _]]]] = js.undefined
   var rootValue: js.UndefOr[(js.Function1[/* document */ DocumentNode, _]) | js.Any] = js.undefined
   var schema: GraphQLSchema
   var tracing: js.UndefOr[Boolean] = js.undefined
@@ -70,7 +70,7 @@ object GraphQLRequestPipelineConfig {
     formatResponse: (/* response */ GraphQLResponse | Null, /* requestContext */ GraphQLRequestContext[TContext]) => GraphQLResponse = null,
     parseOptions: GraphQLParseOptions = null,
     persistedQueries: PersistedQueryOptions = null,
-    plugins: js.Array[ApolloServerPlugin] = null,
+    plugins: js.Array[ApolloServerPlugin[Record[String, _]]] = null,
     rootValue: (js.Function1[/* document */ DocumentNode, _]) | js.Any = null,
     tracing: js.UndefOr[Boolean] = js.undefined,
     validationRules: js.Array[ValidationRule] = null

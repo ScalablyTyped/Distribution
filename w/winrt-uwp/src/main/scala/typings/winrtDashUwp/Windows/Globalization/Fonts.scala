@@ -1,6 +1,5 @@
 package typings.winrtDashUwp.Windows.Globalization
 
-import typings.winrtDashUwp.Windows.Globalization.Fonts.LanguageFont
 import typings.winrtDashUwp.Windows.UI.Text.FontStretch
 import typings.winrtDashUwp.Windows.UI.Text.FontStyle
 import typings.winrtDashUwp.Windows.UI.Text.FontWeight

@@ -1,10 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SpeechModelVariant.SPEECH_MODEL_VARIANT_UNSPECIFIED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SpeechModelVariant.USE_BEST_AVAILABLE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SpeechModelVariant.USE_ENHANCED
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SpeechModelVariant.USE_STANDARD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,13 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.ContentType.CDATA
-import typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.ContentType.COMMENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.ContentType.DOCTYPE
-import typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.ContentType.ELEMENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.ContentType.ENTITYREF
-import typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.ContentType.PROCESSINGINSTRUCTION
-import typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.ContentType.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

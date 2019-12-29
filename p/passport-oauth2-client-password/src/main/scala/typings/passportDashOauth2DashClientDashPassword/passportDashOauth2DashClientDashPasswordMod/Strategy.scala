@@ -12,7 +12,6 @@ class Strategy protected ()
   extends typings.passport.passportMod.Strategy {
   def this(verify: VerifyFunction) = this()
   def this(options: StrategyOptionsWithRequestInterface, verify: VerifyFunctionWithRequest) = this()
-  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
   def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

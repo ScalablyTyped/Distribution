@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.ColumnResizeMode.FixedColumns
-import typings.ejDotWebDotAll.ej.TreeGrid.ColumnResizeMode.NextColumn
-import typings.ejDotWebDotAll.ej.TreeGrid.ColumnResizeMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

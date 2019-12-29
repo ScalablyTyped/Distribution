@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object connectMod {
-  import typings.node.httpMod.IncomingMessage
   import typings.node.httpMod.ServerResponse
 
   type ErrorHandleFunction = js.Function4[

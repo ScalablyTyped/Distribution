@@ -1,6 +1,6 @@
 package typings.ajv.ajvMod
 
-import typings.ajv.ajvNumbers.`true`
+import typings.ajv.ajvBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

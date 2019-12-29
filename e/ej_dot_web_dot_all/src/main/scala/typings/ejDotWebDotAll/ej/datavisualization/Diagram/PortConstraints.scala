@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortConstraints.Connect
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortConstraints.ConnectOnDrag
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortConstraints.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

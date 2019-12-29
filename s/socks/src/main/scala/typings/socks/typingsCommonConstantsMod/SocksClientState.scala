@@ -1,19 +1,6 @@
 package typings.socks.typingsCommonConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.socks.typingsCommonConstantsMod.SocksClientState.BoundWaitingForConnection
-import typings.socks.typingsCommonConstantsMod.SocksClientState.Connected
-import typings.socks.typingsCommonConstantsMod.SocksClientState.Connecting
-import typings.socks.typingsCommonConstantsMod.SocksClientState.Created
-import typings.socks.typingsCommonConstantsMod.SocksClientState.Disconnected
-import typings.socks.typingsCommonConstantsMod.SocksClientState.Error
-import typings.socks.typingsCommonConstantsMod.SocksClientState.Established
-import typings.socks.typingsCommonConstantsMod.SocksClientState.ReceivedAuthenticationResponse
-import typings.socks.typingsCommonConstantsMod.SocksClientState.ReceivedFinalResponse
-import typings.socks.typingsCommonConstantsMod.SocksClientState.ReceivedInitialHandshakeResponse
-import typings.socks.typingsCommonConstantsMod.SocksClientState.SentAuthentication
-import typings.socks.typingsCommonConstantsMod.SocksClientState.SentFinalHandshake
-import typings.socks.typingsCommonConstantsMod.SocksClientState.SentInitialHandshake
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

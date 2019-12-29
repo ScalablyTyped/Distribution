@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object gcsDashResumableDashUploadStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
   sealed trait authenticatedRead extends PredefinedAcl
@@ -34,7 +34,7 @@ object gcsDashResumableDashUploadStrings {
   sealed trait publicRead extends PredefinedAcl
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
   @scala.inline

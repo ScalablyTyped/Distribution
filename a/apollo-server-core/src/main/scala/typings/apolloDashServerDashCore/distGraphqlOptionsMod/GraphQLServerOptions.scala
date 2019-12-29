@@ -49,7 +49,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   ] = js.undefined
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
   var persistedQueries: js.UndefOr[PersistedQueryOptions] = js.undefined
-  var plugins: js.UndefOr[js.Array[ApolloServerPlugin]] = js.undefined
+  var plugins: js.UndefOr[js.Array[ApolloServerPlugin[Record[String, _]]]] = js.undefined
   var reporting: js.UndefOr[Boolean] = js.undefined
   var rootValue: js.UndefOr[(js.Function1[/* parsedQuery */ DocumentNode, TRootValue]) | TRootValue] = js.undefined
   var schema: GraphQLSchema
@@ -77,7 +77,7 @@ object GraphQLServerOptions {
     formatResponse: (/* response */ GraphQLResponse | Null, /* requestContext */ GraphQLRequestContext[TContext]) => GraphQLResponse = null,
     parseOptions: GraphQLParseOptions = null,
     persistedQueries: PersistedQueryOptions = null,
-    plugins: js.Array[ApolloServerPlugin] = null,
+    plugins: js.Array[ApolloServerPlugin[Record[String, _]]] = null,
     reporting: js.UndefOr[Boolean] = js.undefined,
     rootValue: (js.Function1[/* parsedQuery */ DocumentNode, TRootValue]) | TRootValue = null,
     tracing: js.UndefOr[Boolean] = js.undefined,

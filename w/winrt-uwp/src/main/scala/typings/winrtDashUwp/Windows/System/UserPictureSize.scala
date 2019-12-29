@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.UserPictureSize.size1080x1080
-import typings.winrtDashUwp.Windows.System.UserPictureSize.size208x208
-import typings.winrtDashUwp.Windows.System.UserPictureSize.size424x424
-import typings.winrtDashUwp.Windows.System.UserPictureSize.size64x64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

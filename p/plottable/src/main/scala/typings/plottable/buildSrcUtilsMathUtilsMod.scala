@@ -2,8 +2,6 @@ package typings.plottable
 
 import typings.plottable.buildSrcCoreInterfacesMod.Bounds
 import typings.plottable.buildSrcCoreInterfacesMod.Point
-import typings.plottable.buildSrcUtilsMathUtilsMod.ICssTransformMatrix
-import typings.plottable.buildSrcUtilsMathUtilsMod.ITranslateVector
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

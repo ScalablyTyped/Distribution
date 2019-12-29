@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ValidationResult.Error
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ValidationResult.OK
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ValidationResult.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

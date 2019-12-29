@@ -38,7 +38,8 @@ object Cell extends js.Object {
     * Cell satisfies the Functor, Apply, Applicative categories
     * @see {@link https://github.com/fantasyland/fantasy-land} for more info
     */
-  def `fantasy-land/of`[A](a: A): typings.sodiumjs.distTypingsSodiumCellMod.Cell[A] = js.native
+  @JSName("fantasy-land/of")
+  def `fantasy-landSlashof`[A](a: A): typings.sodiumjs.distTypingsSodiumCellMod.Cell[A] = js.native
   /**
     * Lift an array of cells into a cell of an array.
     */

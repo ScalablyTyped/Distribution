@@ -1,6 +1,6 @@
 package typings.lusca.luscaMod
 
-import typings.lusca.luscaNumbers.`false`
+import typings.lusca.luscaBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

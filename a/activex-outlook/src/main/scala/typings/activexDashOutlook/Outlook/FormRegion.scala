@@ -19,7 +19,8 @@ class FormRegion protected () extends js.Object {
   val IsExpanded: Boolean = js.native
   val Item: js.Any = js.native
   val Language: Double = js.native
-  var `Outlook.FormRegion_typekey`: FormRegion = js.native
+  @JSName("Outlook.FormRegion_typekey")
+  var OutlookDotFormRegion_typekey: FormRegion = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   var SuppressControlReplacement: Boolean = js.native

@@ -115,6 +115,14 @@ trait relationshipCreateRendererParams extends Object {
     */
   var relationshipScheme: js.UndefOr[RelationshipScheme] = js.undefined
   /**
+    * For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#createRenderer)
+    *
+    * @default false
+    */
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * The type of symbol to generate. This depends on the view in which you are working and the desired visualization. This parameter does not need to be specified for layers with a `mesh` geometry type. Possible values are described below.
     *
     *   | Value | Description |
@@ -156,6 +164,7 @@ object relationshipCreateRendererParams {
     numClasses: Int | Double = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     relationshipScheme: RelationshipScheme = null,
+    sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     symbolType: String = null
   ): relationshipCreateRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
@@ -168,6 +177,7 @@ object relationshipCreateRendererParams {
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
     if (relationshipScheme != null) __obj.updateDynamic("relationshipScheme")(relationshipScheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipCreateRendererParams]
   }

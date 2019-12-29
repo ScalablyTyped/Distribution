@@ -2,7 +2,6 @@ package typings.atMaterialTabDashIndicator
 
 import typings.atMaterialBase.foundationMod.MDCFoundation
 import typings.atMaterialTabDashIndicator.adapterMod.MDCTabIndicatorAdapter
-import typings.atMaterialTabDashIndicator.foundationMod.MDCTabIndicatorFoundation
 import typings.std.ClientRect
 import typings.std.Partial
 import scala.scalajs.js

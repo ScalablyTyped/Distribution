@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/notebook" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/notebook" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

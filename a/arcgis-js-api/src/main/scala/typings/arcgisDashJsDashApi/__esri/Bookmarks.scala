@@ -2,7 +2,6 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`select-bookmark`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -64,7 +63,7 @@ trait Bookmarks
     * @param Bookmark The bookmark to zoom to.
     *
     */
-  def goTo(Bookmark: Bookmark): IPromise[_] = js.native
+  def goTo(Bookmark: Bookmark): js.Promise[_] = js.native
   @JSName("on")
   def on_selectbookmark(name: `select-bookmark`, eventHandler: BookmarksSelectBookmarkEventHandler): IHandle = js.native
 }

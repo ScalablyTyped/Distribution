@@ -818,9 +818,9 @@ class PhotoView protected ()
   /* InferMemberOverrides */
   override def setOnKeyListener(l: OnKeyListener): Unit = js.native
   /* InferMemberOverrides */
-  override def setOnLongClickListener(listener: OnLongClickListener): Unit = js.native
-  /* InferMemberOverrides */
   override def setOnLongClickListener(l: js.Function1[/* v */ this.type, Boolean]): Unit = js.native
+  /* InferMemberOverrides */
+  override def setOnLongClickListener(l: OnLongClickListener): Unit = js.native
   /* InferMemberOverrides */
   override def setOnTouchListener(l: js.Function2[/* v */ this.type, /* event */ MotionEvent, Unit]): Unit = js.native
   /* InferMemberOverrides */

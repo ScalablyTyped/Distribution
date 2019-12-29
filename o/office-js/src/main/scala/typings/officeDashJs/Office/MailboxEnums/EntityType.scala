@@ -1,9 +1,6 @@
 package typings.officeDashJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Office.MailboxEnums.EntityType.Address
-import typings.officeDashJs.Office.MailboxEnums.EntityType.EmailAddress
-import typings.officeDashJs.Office.MailboxEnums.EntityType.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,25 +66,19 @@ object EntityType extends js.Object {
   object Address extends TopLevel[Address with String]
   
   /* "contact" */ @js.native
-  object Contact
-    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.EntityType.Contact with String]
+  object Contact extends TopLevel[Contact with String]
   
   /* "emailAddress" */ @js.native
   object EmailAddress extends TopLevel[EmailAddress with String]
   
   /* "meetingSuggestion" */ @js.native
-  object MeetingSuggestion
-    extends TopLevel[
-          typings.officeDashJs.Office.MailboxEnums.EntityType.MeetingSuggestion with String
-        ]
+  object MeetingSuggestion extends TopLevel[MeetingSuggestion with String]
   
   /* "phoneNumber" */ @js.native
-  object PhoneNumber
-    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.EntityType.PhoneNumber with String]
+  object PhoneNumber extends TopLevel[PhoneNumber with String]
   
   /* "taskSuggestion" */ @js.native
-  object TaskSuggestion
-    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.EntityType.TaskSuggestion with String]
+  object TaskSuggestion extends TopLevel[TaskSuggestion with String]
   
   /* "url" */ @js.native
   object Url extends TopLevel[Url with String]

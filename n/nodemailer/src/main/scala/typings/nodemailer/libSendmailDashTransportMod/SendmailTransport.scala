@@ -1,9 +1,9 @@
 package typings.nodemailer.libSendmailDashTransportMod
 
 import typings.nodemailer.libSharedMod.Logger
+import typings.nodemailer.nodemailerBooleans.`false`
+import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerMod.Transport
-import typings.nodemailer.nodemailerNumbers.`false`
-import typings.nodemailer.nodemailerNumbers.`true`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

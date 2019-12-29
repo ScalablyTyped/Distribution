@@ -1,6 +1,6 @@
 package typings.fastifyDashAccepts
 
-import typings.fastifyDashAccepts.fastifyDashAcceptsNumbers.`false`
+import typings.fastifyDashAccepts.fastifyDashAcceptsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

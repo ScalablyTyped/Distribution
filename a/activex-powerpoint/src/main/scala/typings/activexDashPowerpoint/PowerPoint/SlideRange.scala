@@ -33,7 +33,8 @@ class SlideRange protected () extends js.Object {
   var Name: String = js.native
   val NotesPage: SlideRange = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.SlideRange_typekey`: SlideRange = js.native
+  @JSName("PowerPoint.SlideRange_typekey")
+  var PowerPointDotSlideRange_typekey: SlideRange = js.native
   val PrintSteps: Double = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native

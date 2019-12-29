@@ -1,6 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.clamp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mirror
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.repeat
 import typings.std.Object
 import typings.std.PropertyKey
@@ -14,13 +15,13 @@ trait SeparableWrapModes extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
     */
-  var horizontal: clamp | repeat
+  var horizontal: clamp | repeat | mirror
   /**
     * Vertical wrapping mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
     */
-  var vertical: clamp | repeat
+  var vertical: clamp | repeat | mirror
 }
 
 object SeparableWrapModes {
@@ -28,9 +29,9 @@ object SeparableWrapModes {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    horizontal: clamp | repeat,
+    horizontal: clamp | repeat | mirror,
     propertyIsEnumerable: PropertyKey => Boolean,
-    vertical: clamp | repeat
+    vertical: clamp | repeat | mirror
   ): SeparableWrapModes = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), horizontal = horizontal.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertical = vertical.asInstanceOf[js.Any])
   

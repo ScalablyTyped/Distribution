@@ -27,15 +27,15 @@ object libApiSubscriberMod extends js.Object {
     def this(userAgent: UserAgent, targetURI: URI, eventType: String) = this()
     def this(userAgent: UserAgent, targetURI: URI, eventType: String, options: SubscriberOptions) = this()
     var body: js.Any = js.native
-    var context: js.Any = js.native
     var event: js.Any = js.native
     var expires: js.Any = js.native
     var extraHeaders: js.Any = js.native
     var id: js.Any = js.native
-    var initContext: js.Any = js.native
+    var initSubscriberRequest: js.Any = js.native
     var logger: js.Any = js.native
-    var request: js.Any = js.native
+    var outgoingRequestMessage: js.Any = js.native
     var retryAfterTimer: js.Any = js.native
+    var subscriberRequest: js.Any = js.native
     var targetURI: js.Any = js.native
     /**
       * Sends a re-SUBSCRIBE request if the subscription is "active".

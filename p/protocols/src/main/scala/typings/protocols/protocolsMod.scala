@@ -1,7 +1,7 @@
 package typings.protocols
 
-import typings.protocols.protocolsNumbers.`false`
-import typings.protocols.protocolsNumbers.`true`
+import typings.protocols.protocolsBooleans.`false`
+import typings.protocols.protocolsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

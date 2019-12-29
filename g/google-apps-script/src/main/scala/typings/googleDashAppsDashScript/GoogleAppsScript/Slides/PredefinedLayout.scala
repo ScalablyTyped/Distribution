@@ -1,18 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.BIG_NUMBER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.BLANK
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.CAPTION_ONLY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.MAIN_POINT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.ONE_COLUMN_TEXT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.SECTION_HEADER
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.SECTION_TITLE_AND_DESCRIPTION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_AND_BODY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_AND_TWO_COLUMNS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_ONLY
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

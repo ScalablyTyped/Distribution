@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object prettyDashTimeStrings {
   @js.native
-  sealed trait BACKSLASHu03BCs extends Increment
-  
-  @js.native
   sealed trait d extends Increment
   
   @js.native
@@ -99,8 +96,9 @@ object prettyDashTimeStrings {
   @js.native
   sealed trait wk extends Increment
   
-  @scala.inline
-  def BACKSLASHu03BCs: BACKSLASHu03BCs = "\u03BCs".asInstanceOf[BACKSLASHu03BCs]
+  @js.native
+  sealed trait μs extends Increment
+  
   @scala.inline
   def d: d = "d".asInstanceOf[d]
   @scala.inline
@@ -161,5 +159,7 @@ object prettyDashTimeStrings {
   def weeks: weeks = "weeks".asInstanceOf[weeks]
   @scala.inline
   def wk: wk = "wk".asInstanceOf[wk]
+  @scala.inline
+  def μs: μs = "\u03BCs".asInstanceOf[μs]
 }
 

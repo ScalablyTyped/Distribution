@@ -1,7 +1,7 @@
 package typings.ractive.ractiveMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ractive.ractiveNumbers.`true`
+import typings.ractive.ractiveBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

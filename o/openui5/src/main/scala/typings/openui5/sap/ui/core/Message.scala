@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.base.Object
-import typings.openui5.sap.ui.core.message.MessageProcessor
 import typings.openui5.sap.ui.model.ListBinding
 import scala.scalajs.js
 import scala.scalajs.js.`|`

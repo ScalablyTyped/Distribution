@@ -1,7 +1,7 @@
 package typings.babelDashTypes.babelDashTypesMod
 
-import typings.babelDashTypes.babelDashTypesStrings.`&&`
-import typings.babelDashTypes.babelDashTypesStrings.`||`
+import typings.babelDashTypes.babelDashTypesStrings.AmpersandAmpersand
+import typings.babelDashTypes.babelDashTypesStrings.VerticallineVerticalline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait LogicalExpression
      with Binary
      with Expression {
   var left: Expression
-  var operator: `||` | `&&`
+  var operator: VerticallineVerticalline | AmpersandAmpersand
   var right: Expression
   @JSName("type")
   var type_LogicalExpression: typings.babelDashTypes.babelDashTypesStrings.LogicalExpression
@@ -23,7 +23,7 @@ object LogicalExpression {
     end: Double,
     left: Expression,
     loc: SourceLocation,
-    operator: `||` | `&&`,
+    operator: VerticallineVerticalline | AmpersandAmpersand,
     right: Expression,
     start: Double,
     `type`: typings.babelDashTypes.babelDashTypesStrings.LogicalExpression,
@@ -44,11 +44,11 @@ object LogicalExpression {
 @js.native
 object logicalExpression extends js.Object {
   def apply(): LogicalExpression = js.native
-  def apply(operator: `&&`): LogicalExpression = js.native
-  def apply(operator: `&&`, left: Expression): LogicalExpression = js.native
-  def apply(operator: `&&`, left: Expression, right: Expression): LogicalExpression = js.native
-  def apply(operator: `||`): LogicalExpression = js.native
-  def apply(operator: `||`, left: Expression): LogicalExpression = js.native
-  def apply(operator: `||`, left: Expression, right: Expression): LogicalExpression = js.native
+  def apply(operator: AmpersandAmpersand): LogicalExpression = js.native
+  def apply(operator: AmpersandAmpersand, left: Expression): LogicalExpression = js.native
+  def apply(operator: AmpersandAmpersand, left: Expression, right: Expression): LogicalExpression = js.native
+  def apply(operator: VerticallineVerticalline): LogicalExpression = js.native
+  def apply(operator: VerticallineVerticalline, left: Expression): LogicalExpression = js.native
+  def apply(operator: VerticallineVerticalline, left: Expression, right: Expression): LogicalExpression = js.native
 }
 

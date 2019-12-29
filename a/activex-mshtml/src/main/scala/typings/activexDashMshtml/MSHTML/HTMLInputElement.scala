@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLInputElement")
 @js.native
 class HTMLInputElement protected () extends js.Object {
-  var `MSHTML.HTMLInputElement_typekey`: HTMLInputElement = js.native
+  @JSName("MSHTML.HTMLInputElement_typekey")
+  var MSHTMLDotHTMLInputElement_typekey: HTMLInputElement = js.native
   var accept: String = js.native
   var accessKey: String = js.native
   var align: String = js.native

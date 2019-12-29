@@ -1,6 +1,6 @@
 package typings.transducersDotJs.transducersDotJsMod
 
-import typings.transducersDotJs.transducersDotJsNumbers.`true`
+import typings.transducersDotJs.transducersDotJsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +10,10 @@ import scala.scalajs.js.annotation._
 class ReducedCls[T] protected () extends Reduced[T] {
   def this(value: T) = this()
   /* CompleteClass */
-  override var `@@transducer/reduced`: `true` = js.native
+  @JSName("@@transducer/reduced")
+  override var `@@transducerSlashreduced`: `true` = js.native
   /* CompleteClass */
-  override var `@@transducer/value`: T = js.native
+  @JSName("@@transducer/value")
+  override var `@@transducerSlashvalue`: T = js.native
 }
 

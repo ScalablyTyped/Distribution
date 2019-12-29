@@ -30,9 +30,6 @@ object html5plusStrings {
   sealed trait Apple extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait GET extends js.Object
   
   @js.native
@@ -57,16 +54,19 @@ object html5plusStrings {
   sealed trait WKWebview extends js.Object
   
   @js.native
-  sealed trait `_doc/` extends js.Object
+  sealed trait _docSlash extends js.Object
   
   @js.native
-  sealed trait `_documents/` extends js.Object
+  sealed trait _documentsSlash extends js.Object
   
   @js.native
-  sealed trait `_downloads/` extends js.Object
+  sealed trait _downloadsSlash extends js.Object
   
   @js.native
-  sealed trait `_www/` extends js.Object
+  sealed trait _empty extends js.Object
+  
+  @js.native
+  sealed trait _wwwSlash extends js.Object
   
   @js.native
   sealed trait absolute extends js.Object
@@ -324,10 +324,10 @@ object html5plusStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait `text/html` extends js.Object
+  sealed trait textSlashhtml extends js.Object
   
   @js.native
-  sealed trait `text/plain` extends js.Object
+  sealed trait textSlashplain extends js.Object
   
   @js.native
   sealed trait top extends js.Object
@@ -373,8 +373,6 @@ object html5plusStrings {
   @scala.inline
   def Apple: Apple = "Apple".asInstanceOf[Apple]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def Google: Google = "Google".asInstanceOf[Google]
@@ -391,13 +389,15 @@ object html5plusStrings {
   @scala.inline
   def WKWebview: WKWebview = "WKWebview".asInstanceOf[WKWebview]
   @scala.inline
-  def `_doc/`: `_doc/` = "_doc/".asInstanceOf[`_doc/`]
+  def _docSlash: _docSlash = "_doc/".asInstanceOf[_docSlash]
   @scala.inline
-  def `_documents/`: `_documents/` = "_documents/".asInstanceOf[`_documents/`]
+  def _documentsSlash: _documentsSlash = "_documents/".asInstanceOf[_documentsSlash]
   @scala.inline
-  def `_downloads/`: `_downloads/` = "_downloads/".asInstanceOf[`_downloads/`]
+  def _downloadsSlash: _downloadsSlash = "_downloads/".asInstanceOf[_downloadsSlash]
   @scala.inline
-  def `_www/`: `_www/` = "_www/".asInstanceOf[`_www/`]
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
+  def _wwwSlash: _wwwSlash = "_www/".asInstanceOf[_wwwSlash]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
@@ -569,9 +569,9 @@ object html5plusStrings {
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
-  def `text/html`: `text/html` = "text/html".asInstanceOf[`text/html`]
+  def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
   @scala.inline
-  def `text/plain`: `text/plain` = "text/plain".asInstanceOf[`text/plain`]
+  def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

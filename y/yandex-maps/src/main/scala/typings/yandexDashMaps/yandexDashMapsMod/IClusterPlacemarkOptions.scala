@@ -1,16 +1,16 @@
 package typings.yandexDashMaps.yandexDashMapsMod
 
 import typings.yandexDashMaps.Anon_Href
-import typings.yandexDashMaps.yandexDashMapsStrings.`cluster#balloonAccordion`
-import typings.yandexDashMaps.yandexDashMapsStrings.`cluster#balloonCarousel`
-import typings.yandexDashMaps.yandexDashMapsStrings.`cluster#balloonTwoColumns`
+import typings.yandexDashMaps.yandexDashMapsStrings.clusterNumbersignballoonAccordion
+import typings.yandexDashMaps.yandexDashMapsStrings.clusterNumbersignballoonCarousel
+import typings.yandexDashMaps.yandexDashMapsStrings.clusterNumbersignballoonTwoColumns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IClusterPlacemarkOptions extends js.Object {
   var balloonContentLayout: js.UndefOr[
-    `cluster#balloonTwoColumns` | `cluster#balloonCarousel` | `cluster#balloonAccordion` | String | IClassConstructor[ILayout]
+    clusterNumbersignballoonTwoColumns | clusterNumbersignballoonCarousel | clusterNumbersignballoonAccordion | String | IClassConstructor[ILayout]
   ] = js.undefined
   var balloonContentLayoutHeight: js.UndefOr[Double] = js.undefined
   var balloonContentLayoutWidth: js.UndefOr[Double] = js.undefined
@@ -35,7 +35,7 @@ trait IClusterPlacemarkOptions extends js.Object {
 object IClusterPlacemarkOptions {
   @scala.inline
   def apply(
-    balloonContentLayout: `cluster#balloonTwoColumns` | `cluster#balloonCarousel` | `cluster#balloonAccordion` | String | IClassConstructor[ILayout] = null,
+    balloonContentLayout: clusterNumbersignballoonTwoColumns | clusterNumbersignballoonCarousel | clusterNumbersignballoonAccordion | String | IClassConstructor[ILayout] = null,
     balloonContentLayoutHeight: Int | Double = null,
     balloonContentLayoutWidth: Int | Double = null,
     balloonItemContentLayout: ILayout | String = null,

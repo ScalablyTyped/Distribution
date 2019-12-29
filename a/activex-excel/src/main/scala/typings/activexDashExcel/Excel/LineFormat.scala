@@ -24,7 +24,8 @@ class LineFormat protected () extends js.Object {
   var EndArrowheadLength: MsoArrowheadLength = js.native
   var EndArrowheadStyle: MsoArrowheadStyle = js.native
   var EndArrowheadWidth: MsoArrowheadWidth = js.native
-  var `Excel.LineFormat_typekey`: LineFormat = js.native
+  @JSName("Excel.LineFormat_typekey")
+  var ExcelDotLineFormat_typekey: LineFormat = js.native
   var ForeColor: ColorFormat = js.native
   var InsetPen: MsoTriState = js.native
   val Parent: js.Any = js.native

@@ -1,7 +1,7 @@
 package typings.node.streamMod
 
 import typings.node.Anon_Chunk
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait TransformOptions extends DuplexOptions {
     js.ThisFunction3[
       /* this */ Transform, 
       /* chunk */ js.Any, 
-      /* encoding */ java.lang.String, 
+      /* encoding */ String, 
       /* callback */ TransformCallback, 
       Unit
     ]
@@ -41,7 +41,7 @@ trait TransformOptions extends DuplexOptions {
     js.ThisFunction3[
       /* this */ Transform, 
       /* chunk */ js.Any, 
-      /* encoding */ java.lang.String, 
+      /* encoding */ String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -63,7 +63,7 @@ object TransformOptions {
     allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: java.lang.String = null,
+    defaultEncoding: String = null,
     destroy: js.ThisFunction2[
       /* this */ Transform, 
       /* error */ Error | Null, 
@@ -71,7 +71,7 @@ object TransformOptions {
       Unit
     ] = null,
     emitClose: js.UndefOr[Boolean] = js.undefined,
-    encoding: java.lang.String = null,
+    encoding: String = null,
     `final`: js.ThisFunction1[
       /* this */ Transform, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
@@ -81,19 +81,22 @@ object TransformOptions {
     highWaterMark: Int | Double = null,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit] = null,
+    readableHighWaterMark: Int | Double = null,
     readableObjectMode: js.UndefOr[Boolean] = js.undefined,
     transform: js.ThisFunction3[
       /* this */ Transform, 
       /* chunk */ js.Any, 
-      /* encoding */ java.lang.String, 
+      /* encoding */ String, 
       /* callback */ TransformCallback, 
       Unit
     ] = null,
+    writableCorked: Int | Double = null,
+    writableHighWaterMark: Int | Double = null,
     writableObjectMode: js.UndefOr[Boolean] = js.undefined,
     write: js.ThisFunction3[
       /* this */ Transform, 
       /* chunk */ js.Any, 
-      /* encoding */ java.lang.String, 
+      /* encoding */ String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null,
@@ -117,8 +120,11 @@ object TransformOptions {
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (readableHighWaterMark != null) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (writableCorked != null) __obj.updateDynamic("writableCorked")(writableCorked.asInstanceOf[js.Any])
+    if (writableHighWaterMark != null) __obj.updateDynamic("writableHighWaterMark")(writableHighWaterMark.asInstanceOf[js.Any])
     if (!js.isUndefined(writableObjectMode)) __obj.updateDynamic("writableObjectMode")(writableObjectMode.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])

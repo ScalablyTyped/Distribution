@@ -1,7 +1,6 @@
 package typings.antlr4
 
 import typings.antlr4.errorErrorsMod.RecognitionException
-import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.ruleContextMod.RuleContext
 import typings.antlr4.tokenMod.Token
 import typings.antlr4.treeTreeMod.ErrorNode

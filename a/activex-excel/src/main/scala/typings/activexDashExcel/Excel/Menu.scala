@@ -11,7 +11,8 @@ class Menu protected () extends js.Object {
   var Caption: String = js.native
   val Creator: XlCreator = js.native
   var Enabled: Boolean = js.native
-  var `Excel.Menu_typekey`: Menu = js.native
+  @JSName("Excel.Menu_typekey")
+  var ExcelDotMenu_typekey: Menu = js.native
   val Index: Double = js.native
   @JSName("MenuItems")
   val MenuItems_Original: MenuItems = js.native

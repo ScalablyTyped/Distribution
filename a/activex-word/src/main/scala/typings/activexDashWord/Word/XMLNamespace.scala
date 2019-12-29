@@ -11,7 +11,8 @@ class XMLNamespace protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val URI: String = js.native
-  var `Word.XMLNamespace_typekey`: XMLNamespace = js.native
+  @JSName("Word.XMLNamespace_typekey")
+  var WordDotXMLNamespace_typekey: XMLNamespace = js.native
   val XSLTransforms: typings.activexDashWord.Word.XSLTransforms = js.native
   /** @param boolean [AllUsers=false] */
   def Alias(): String = js.native

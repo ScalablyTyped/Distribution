@@ -1,5 +1,6 @@
 package typings.reactDashMdl.reactDashMdlMod
 
+import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
@@ -77,7 +78,7 @@ object TextfieldProps {
     controls: js.UndefOr[Boolean] = js.undefined,
     coords: String = null,
     crossOrigin: String = null,
-    dangerouslySetInnerHTML: typings.react.Anon_Html = null,
+    dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
     dateTime: String = null,
     default: js.UndefOr[Boolean] = js.undefined,

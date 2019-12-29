@@ -18,7 +18,8 @@ class DeviceInfo protected () extends js.Object {
   val Properties_Original: Properties = js.native
   /** Returns the Type of Device */
   val Type: WiaDeviceType = js.native
-  var `WIA.DeviceInfo_typekey`: DeviceInfo = js.native
+  @JSName("WIA.DeviceInfo_typekey")
+  var WIADotDeviceInfo_typekey: DeviceInfo = js.native
   /** Establish a connection with this device and return a Device object */
   def Connect(): Device = js.native
   def Properties(Index: String): Property = js.native

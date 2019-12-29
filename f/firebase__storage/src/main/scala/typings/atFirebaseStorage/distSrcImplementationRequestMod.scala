@@ -1,6 +1,5 @@
 package typings.atFirebaseStorage
 
-import typings.atFirebaseStorage.distSrcImplementationRequestMod.Request
 import typings.atFirebaseStorage.distSrcImplementationRequestinfoMod.RequestInfo
 import typings.atFirebaseStorage.distSrcImplementationXhrioMod.Headers
 import typings.atFirebaseStorage.distSrcImplementationXhrioMod.XhrIo

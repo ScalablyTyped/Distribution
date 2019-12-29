@@ -1,13 +1,6 @@
 package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.unified.ContentSwitcherAnimation.Fade
-import typings.openui5.sap.ui.unified.ContentSwitcherAnimation.None
-import typings.openui5.sap.ui.unified.ContentSwitcherAnimation.Rotate
-import typings.openui5.sap.ui.unified.ContentSwitcherAnimation.SlideOver
-import typings.openui5.sap.ui.unified.ContentSwitcherAnimation.SlideRight
-import typings.openui5.sap.ui.unified.ContentSwitcherAnimation.ZoomIn
-import typings.openui5.sap.ui.unified.ContentSwitcherAnimation.ZoomOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

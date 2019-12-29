@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object Chance {
   import org.scalablytyped.runtime.StringDictionary
   import typings.chance.Anon_All
+  import typings.chance.Anon_Array
   import typings.chance.Anon_Length
 
   type MixinDescriptor = StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
@@ -17,4 +18,5 @@ package object Chance {
   type PrefixOptions = Anon_All with SuffixOptions
   type Seed = Double | String
   type StringOptions = CharacterOptions with Anon_Length
+  type UniqueOptions[T] = Anon_Array[T] with Options
 }

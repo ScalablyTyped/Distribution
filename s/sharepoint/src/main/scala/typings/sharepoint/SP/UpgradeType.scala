@@ -1,8 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.UpgradeType.buildUpgrade
-import typings.sharepoint.SP.UpgradeType.versionUpgrade
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object atMaterialSnackbarStrings {
   @js.native
-  sealed trait `DOTmdc-snackbar__action-button` extends js.Object
+  sealed trait `Dotmdc-snackbar__action-button` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-snackbar__action-wrapper` extends js.Object
+  sealed trait `Dotmdc-snackbar__action-wrapper` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-snackbar__text` extends js.Object
+  sealed trait `Dotmdc-snackbar__text` extends js.Object
   
   @js.native
-  sealed trait `MDCSnackbar:hide` extends js.Object
+  sealed trait MDCSnackbarColonhide extends js.Object
   
   @js.native
-  sealed trait `MDCSnackbar:show` extends js.Object
+  sealed trait MDCSnackbarColonshow extends js.Object
   
   @js.native
   sealed trait `mdc-snackbar` extends js.Object
@@ -42,15 +42,15 @@ object atMaterialSnackbarStrings {
   sealed trait `mdc-snackbar__text` extends js.Object
   
   @scala.inline
-  def `DOTmdc-snackbar__action-button`: `DOTmdc-snackbar__action-button` = ".mdc-snackbar__action-button".asInstanceOf[`DOTmdc-snackbar__action-button`]
+  def `Dotmdc-snackbar__action-button`: `Dotmdc-snackbar__action-button` = ".mdc-snackbar__action-button".asInstanceOf[`Dotmdc-snackbar__action-button`]
   @scala.inline
-  def `DOTmdc-snackbar__action-wrapper`: `DOTmdc-snackbar__action-wrapper` = ".mdc-snackbar__action-wrapper".asInstanceOf[`DOTmdc-snackbar__action-wrapper`]
+  def `Dotmdc-snackbar__action-wrapper`: `Dotmdc-snackbar__action-wrapper` = ".mdc-snackbar__action-wrapper".asInstanceOf[`Dotmdc-snackbar__action-wrapper`]
   @scala.inline
-  def `DOTmdc-snackbar__text`: `DOTmdc-snackbar__text` = ".mdc-snackbar__text".asInstanceOf[`DOTmdc-snackbar__text`]
+  def `Dotmdc-snackbar__text`: `Dotmdc-snackbar__text` = ".mdc-snackbar__text".asInstanceOf[`Dotmdc-snackbar__text`]
   @scala.inline
-  def `MDCSnackbar:hide`: `MDCSnackbar:hide` = "MDCSnackbar:hide".asInstanceOf[`MDCSnackbar:hide`]
+  def MDCSnackbarColonhide: MDCSnackbarColonhide = "MDCSnackbar:hide".asInstanceOf[MDCSnackbarColonhide]
   @scala.inline
-  def `MDCSnackbar:show`: `MDCSnackbar:show` = "MDCSnackbar:show".asInstanceOf[`MDCSnackbar:show`]
+  def MDCSnackbarColonshow: MDCSnackbarColonshow = "MDCSnackbar:show".asInstanceOf[MDCSnackbarColonshow]
   @scala.inline
   def `mdc-snackbar`: `mdc-snackbar` = "mdc-snackbar".asInstanceOf[`mdc-snackbar`]
   @scala.inline

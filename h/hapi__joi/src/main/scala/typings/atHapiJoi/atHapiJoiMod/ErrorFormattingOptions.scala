@@ -1,6 +1,6 @@
 package typings.atHapiJoi.atHapiJoiMod
 
-import typings.atHapiJoi.atHapiJoiNumbers.`false`
+import typings.atHapiJoi.atHapiJoiBooleans.`false`
 import typings.atHapiJoi.atHapiJoiStrings.key
 import typings.atHapiJoi.atHapiJoiStrings.path
 import scala.scalajs.js

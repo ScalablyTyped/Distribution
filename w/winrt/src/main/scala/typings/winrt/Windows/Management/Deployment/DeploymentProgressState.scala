@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Management.Deployment.DeploymentProgressState.processing
-import typings.winrt.Windows.Management.Deployment.DeploymentProgressState.queued
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

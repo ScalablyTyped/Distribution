@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object javascriptDashStringifyStrings {
   @js.native
-  sealed trait BACKTICK extends js.Object
+  sealed trait Graveaccent extends js.Object
   
   @scala.inline
-  def BACKTICK: BACKTICK = "`".asInstanceOf[BACKTICK]
+  def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
 }
 

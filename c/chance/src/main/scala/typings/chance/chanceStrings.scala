@@ -8,25 +8,19 @@ import scala.scalajs.js.annotation._
 
 object chanceStrings {
   @js.native
-  sealed trait `!` extends js.Object
-  
-  @js.native
-  sealed trait `*` extends LastNameNationalities
-  
-  @js.native
-  sealed trait `:` extends js.Object
-  
-  @js.native
-  sealed trait `;` extends js.Object
-  
-  @js.native
-  sealed trait `?` extends js.Object
+  sealed trait Asterisk extends LastNameNationalities
   
   @js.native
   sealed trait Chance extends js.Object
   
   @js.native
-  sealed trait DOT extends js.Object
+  sealed trait Colon extends js.Object
+  
+  @js.native
+  sealed trait Dot extends js.Object
+  
+  @js.native
+  sealed trait Exclamationmark extends js.Object
   
   @js.native
   sealed trait Friday extends js.Object
@@ -35,7 +29,13 @@ object chanceStrings {
   sealed trait Monday extends js.Object
   
   @js.native
+  sealed trait Questionmark extends js.Object
+  
+  @js.native
   sealed trait Saturday extends js.Object
+  
+  @js.native
+  sealed trait Semicolon extends js.Object
   
   @js.native
   sealed trait Sunday extends js.Object
@@ -123,25 +123,25 @@ object chanceStrings {
   sealed trait us_states_and_dc extends js.Object
   
   @scala.inline
-  def `!`: `!` = "!".asInstanceOf[`!`]
-  @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
-  def `:`: `:` = ":".asInstanceOf[`:`]
-  @scala.inline
-  def `;`: `;` = ";".asInstanceOf[`;`]
-  @scala.inline
-  def `?`: `?` = "?".asInstanceOf[`?`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def Chance: Chance = "Chance".asInstanceOf[Chance]
   @scala.inline
-  def DOT: DOT = ".".asInstanceOf[DOT]
+  def Colon: Colon = ":".asInstanceOf[Colon]
+  @scala.inline
+  def Dot: Dot = ".".asInstanceOf[Dot]
+  @scala.inline
+  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   @scala.inline
   def Friday: Friday = "Friday".asInstanceOf[Friday]
   @scala.inline
   def Monday: Monday = "Monday".asInstanceOf[Monday]
   @scala.inline
+  def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
+  @scala.inline
   def Saturday: Saturday = "Saturday".asInstanceOf[Saturday]
+  @scala.inline
+  def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
   @scala.inline
   def Sunday: Sunday = "Sunday".asInstanceOf[Sunday]
   @scala.inline

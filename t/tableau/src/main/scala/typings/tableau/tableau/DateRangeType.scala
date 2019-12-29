@@ -1,12 +1,6 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tableau.tableau.DateRangeType.CURRENT
-import typings.tableau.tableau.DateRangeType.LAST
-import typings.tableau.tableau.DateRangeType.LASTN
-import typings.tableau.tableau.DateRangeType.NEXT
-import typings.tableau.tableau.DateRangeType.NEXTN
-import typings.tableau.tableau.DateRangeType.TODATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

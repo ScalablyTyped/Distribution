@@ -1,11 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ObjectMarkerType.Draft
-import typings.openui5.sap.m.ObjectMarkerType.Favorite
-import typings.openui5.sap.m.ObjectMarkerType.Flagged
-import typings.openui5.sap.m.ObjectMarkerType.Locked
-import typings.openui5.sap.m.ObjectMarkerType.Unsaved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

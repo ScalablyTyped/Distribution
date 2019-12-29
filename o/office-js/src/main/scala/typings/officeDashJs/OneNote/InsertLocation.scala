@@ -1,8 +1,6 @@
 package typings.officeDashJs.OneNote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.OneNote.InsertLocation.after
-import typings.officeDashJs.OneNote.InsertLocation.before
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

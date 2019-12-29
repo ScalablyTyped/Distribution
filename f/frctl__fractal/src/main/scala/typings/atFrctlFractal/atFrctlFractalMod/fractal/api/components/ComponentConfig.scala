@@ -9,13 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait ComponentConfig extends js.Object {
   var default: js.UndefOr[ComponentDefaultConfig] = js.undefined
-  var `default.collated`: js.UndefOr[Boolean] = js.undefined
-  var `default.collator`: js.UndefOr[Collator] = js.undefined
-  var `default.context`: js.UndefOr[js.Any] = js.undefined
-  var `default.display`: js.UndefOr[js.Any] = js.undefined
-  var `default.prefix`: js.UndefOr[String] = js.undefined
-  var `default.preview`: js.UndefOr[String] = js.undefined
-  var `default.status`: js.UndefOr[String] = js.undefined
+  @JSName("default.collated")
+  var defaultDotcollated: js.UndefOr[Boolean] = js.undefined
+  @JSName("default.collator")
+  var defaultDotcollator: js.UndefOr[Collator] = js.undefined
+  @JSName("default.context")
+  var defaultDotcontext: js.UndefOr[js.Any] = js.undefined
+  @JSName("default.display")
+  var defaultDotdisplay: js.UndefOr[js.Any] = js.undefined
+  @JSName("default.prefix")
+  var defaultDotprefix: js.UndefOr[String] = js.undefined
+  @JSName("default.preview")
+  var defaultDotpreview: js.UndefOr[String] = js.undefined
+  @JSName("default.status")
+  var defaultDotstatus: js.UndefOr[String] = js.undefined
   var ext: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var path: js.UndefOr[String] = js.undefined
@@ -28,13 +35,13 @@ object ComponentConfig {
   @scala.inline
   def apply(
     default: ComponentDefaultConfig = null,
-    `default.collated`: js.UndefOr[Boolean] = js.undefined,
-    `default.collator`: (/* markup */ String, /* item */ Anon_Handle) => String = null,
-    `default.context`: js.Any = null,
-    `default.display`: js.Any = null,
-    `default.prefix`: String = null,
-    `default.preview`: String = null,
-    `default.status`: String = null,
+    defaultDotcollated: js.UndefOr[Boolean] = js.undefined,
+    defaultDotcollator: (/* markup */ String, /* item */ Anon_Handle) => String = null,
+    defaultDotcontext: js.Any = null,
+    defaultDotdisplay: js.Any = null,
+    defaultDotprefix: String = null,
+    defaultDotpreview: String = null,
+    defaultDotstatus: String = null,
     ext: String = null,
     label: String = null,
     path: String = null,
@@ -44,13 +51,13 @@ object ComponentConfig {
   ): ComponentConfig = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(`default.collated`)) __obj.updateDynamic("default.collated")(`default.collated`.asInstanceOf[js.Any])
-    if (`default.collator` != null) __obj.updateDynamic("default.collator")(js.Any.fromFunction2(`default.collator`))
-    if (`default.context` != null) __obj.updateDynamic("default.context")(`default.context`.asInstanceOf[js.Any])
-    if (`default.display` != null) __obj.updateDynamic("default.display")(`default.display`.asInstanceOf[js.Any])
-    if (`default.prefix` != null) __obj.updateDynamic("default.prefix")(`default.prefix`.asInstanceOf[js.Any])
-    if (`default.preview` != null) __obj.updateDynamic("default.preview")(`default.preview`.asInstanceOf[js.Any])
-    if (`default.status` != null) __obj.updateDynamic("default.status")(`default.status`.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultDotcollated)) __obj.updateDynamic("default.collated")(defaultDotcollated.asInstanceOf[js.Any])
+    if (defaultDotcollator != null) __obj.updateDynamic("default.collator")(js.Any.fromFunction2(defaultDotcollator))
+    if (defaultDotcontext != null) __obj.updateDynamic("default.context")(defaultDotcontext.asInstanceOf[js.Any])
+    if (defaultDotdisplay != null) __obj.updateDynamic("default.display")(defaultDotdisplay.asInstanceOf[js.Any])
+    if (defaultDotprefix != null) __obj.updateDynamic("default.prefix")(defaultDotprefix.asInstanceOf[js.Any])
+    if (defaultDotpreview != null) __obj.updateDynamic("default.preview")(defaultDotpreview.asInstanceOf[js.Any])
+    if (defaultDotstatus != null) __obj.updateDynamic("default.status")(defaultDotstatus.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

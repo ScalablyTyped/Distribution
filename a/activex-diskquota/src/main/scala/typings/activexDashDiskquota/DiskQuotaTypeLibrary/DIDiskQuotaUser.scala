@@ -12,7 +12,8 @@ class DIDiskQuotaUser protected () extends js.Object {
   val AccountContainerName: String = js.native
   /** Status of user's account */
   val AccountStatus: AccountStatusConstants = js.native
-  var `DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey`: DIDiskQuotaUser = js.native
+  @JSName("DiskQuotaTypeLibrary.DIDiskQuotaUser_typekey")
+  var DiskQuotaTypeLibraryDotDIDiskQuotaUser_typekey: DIDiskQuotaUser = js.native
   /** User's display name */
   val DisplayName: String = js.native
   /** Unique ID number */

@@ -25,10 +25,10 @@ object Rule {
     RuleName: String,
     SubscriptionName: String,
     TopicName: String,
-    `_`: Anon_Author
+    _underscore: Anon_Author
   ): Rule = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SubscriptionName = SubscriptionName.asInstanceOf[js.Any], TopicName = TopicName.asInstanceOf[js.Any])
-    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
 }

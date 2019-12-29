@@ -19,7 +19,25 @@ object Convert extends js.Object {
   def FromBase64(base64Text: String): Uint8Array = js.native
   def FromBase64Url(base64url: String): Uint8Array = js.native
   def FromBinary(text: String): Uint8Array = js.native
+  /**
+    * Converts Date to string
+    *
+    * @static
+    * @param {Date} dateTime
+    * @returns {string}
+    *
+    * @memberOf Convert
+    */
   def FromDateTime(dateTime: Date): String = js.native
+  /**
+    * Converts HEX string to buffer
+    *
+    * @static
+    * @param {string} hexString
+    * @returns {Uint8Array}
+    *
+    * @memberOf Convert
+    */
   def FromHex(hexString: String): Uint8Array = js.native
   def FromString(str: String): Uint8Array = js.native
   def FromString(str: String, enc: XmlBufferEncoding): Uint8Array = js.native
@@ -27,7 +45,21 @@ object Convert extends js.Object {
   def ToBase64(buf: Uint8Array): String = js.native
   def ToBase64Url(data: Uint8Array): String = js.native
   def ToBinary(buffer: Uint8Array): String = js.native
+  /**
+    * Converts string to Date
+    *
+    * @static
+    * @param {string} dateTime
+    * @returns {Date}
+    *
+    * @memberOf Convert
+    */
   def ToDateTime(dateTime: String): Date = js.native
+  /**
+    * Converts buffer to HEX string
+    * @param  {BufferSource} buffer Incoming buffer
+    * @returns string
+    */
   def ToHex(buffer: Uint8Array): String = js.native
   def ToString(buffer: BufferSource): String = js.native
   def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = js.native

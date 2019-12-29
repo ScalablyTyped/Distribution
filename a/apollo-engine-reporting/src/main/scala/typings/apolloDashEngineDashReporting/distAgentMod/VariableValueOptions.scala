@@ -1,6 +1,6 @@
 package typings.apolloDashEngineDashReporting.distAgentMod
 
-import typings.apolloDashEngineDashReporting.apolloDashEngineDashReportingNumbers.`true`
+import typings.apolloDashEngineDashReporting.apolloDashEngineDashReportingBooleans.`true`
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +20,14 @@ object VariableValueOptions {
     __obj.asInstanceOf[VariableValueOptions]
   }
   @scala.inline
-  def Anon_ExceptNames(exceptNames: js.Array[String]): VariableValueOptions = {
-    val __obj = js.Dynamic.literal(exceptNames = exceptNames.asInstanceOf[js.Any])
+  def Anon_OnlyNames(onlyNames: js.Array[String]): VariableValueOptions = {
+    val __obj = js.Dynamic.literal(onlyNames = onlyNames.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[VariableValueOptions]
+  }
+  @scala.inline
+  def Anon_Options(transform: VariableValueTransformOptions => Record[String, _]): VariableValueOptions = {
+    val __obj = js.Dynamic.literal(transform = js.Any.fromFunction1(transform))
   
     __obj.asInstanceOf[VariableValueOptions]
   }
@@ -32,14 +38,8 @@ object VariableValueOptions {
     __obj.asInstanceOf[VariableValueOptions]
   }
   @scala.inline
-  def Anon_OnlyNames(onlyNames: js.Array[String]): VariableValueOptions = {
-    val __obj = js.Dynamic.literal(onlyNames = onlyNames.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[VariableValueOptions]
-  }
-  @scala.inline
-  def Anon_Options(transform: VariableValueTransformOptions => Record[String, _]): VariableValueOptions = {
-    val __obj = js.Dynamic.literal(transform = js.Any.fromFunction1(transform))
+  def Anon_ExceptNames(exceptNames: js.Array[String]): VariableValueOptions = {
+    val __obj = js.Dynamic.literal(exceptNames = exceptNames.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VariableValueOptions]
   }

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.COpsProfile")
 @js.native
 class COpsProfile protected () extends js.Object {
-  var `MSHTML.COpsProfile_typekey`: COpsProfile = js.native
+  @JSName("MSHTML.COpsProfile_typekey")
+  var MSHTMLDotCOpsProfile_typekey: COpsProfile = js.native
   def addReadRequest(name: String): Boolean = js.native
   def addReadRequest(name: String, reserved: js.Any): Boolean = js.native
   def addRequest(name: String): Boolean = js.native

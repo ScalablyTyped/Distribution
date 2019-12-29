@@ -1,7 +1,6 @@
 package typings.atFeathersjsSocketDashCommons.atFeathersjsSocketDashCommonsMod
 
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.HookContext
-import typings.atFeathersjsSocketDashCommons.atFeathersjsSocketDashCommonsMod.atFeathersjsFeathersMod.Application
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

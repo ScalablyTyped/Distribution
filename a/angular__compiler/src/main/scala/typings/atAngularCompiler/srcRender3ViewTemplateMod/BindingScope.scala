@@ -1,6 +1,6 @@
 package typings.atAngularCompiler.srcRender3ViewTemplateMod
 
-import typings.atAngularCompiler.atAngularCompilerNumbers.`true`
+import typings.atAngularCompiler.atAngularCompilerBooleans.`true`
 import typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.LocalResolver
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ReadVarExpr

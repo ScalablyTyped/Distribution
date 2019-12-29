@@ -1,8 +1,8 @@
 package typings.activexDashExcel.Excel
 
+import typings.activexDashExcel.activexDashExcelBooleans.`true`
 import typings.activexDashExcel.activexDashExcelNumbers.`0`
 import typings.activexDashExcel.activexDashExcelNumbers.`1`
-import typings.activexDashExcel.activexDashExcelNumbers.`true`
 import typings.std.SafeArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +33,8 @@ class Window protected () extends js.Object {
   var DisplayWorkbookTabs: Boolean = js.native
   var DisplayZeros: Boolean = js.native
   var EnableResize: Boolean = js.native
-  var `Excel.Window_typekey`: Window = js.native
+  @JSName("Excel.Window_typekey")
+  var ExcelDotWindow_typekey: Window = js.native
   var FreezePanes: Boolean = js.native
   var GridlineColor: Double = js.native
   var GridlineColorIndex: XlColorIndex = js.native

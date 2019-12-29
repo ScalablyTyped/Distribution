@@ -71,15 +71,15 @@ trait ConfigTypes extends js.Object {
   @JSName("init-module")
   var `init-module_Original`: StringConstructor = js.native
   @JSName("init.author.email")
-  var `init.author.email_Original`: StringConstructor = js.native
+  var initDotauthorDotemail_Original: StringConstructor = js.native
   @JSName("init.author.name")
-  var `init.author.name_Original`: StringConstructor = js.native
+  var initDotauthorDotname_Original: StringConstructor = js.native
   @JSName("init.author.url")
-  var `init.author.url_Original`: StringConstructor = js.native
+  var initDotauthorDoturl_Original: StringConstructor = js.native
   @JSName("init.license")
-  var `init.license_Original`: StringConstructor = js.native
+  var initDotlicense_Original: StringConstructor = js.native
   @JSName("init.version")
-  var `init.version_Original`: StringConstructor = js.native
+  var initDotversion_Original: StringConstructor = js.native
   @JSName("json")
   var json_Original: BooleanConstructor = js.native
   var key: js.Array[_] = js.native
@@ -220,16 +220,26 @@ trait ConfigTypes extends js.Object {
   def `ignore-scripts`[T](value: T): Boolean = js.native
   def `init-module`(): String = js.native
   def `init-module`(value: js.Any): String = js.native
-  def `init.author.email`(): String = js.native
-  def `init.author.email`(value: js.Any): String = js.native
-  def `init.author.name`(): String = js.native
-  def `init.author.name`(value: js.Any): String = js.native
-  def `init.author.url`(): String = js.native
-  def `init.author.url`(value: js.Any): String = js.native
-  def `init.license`(): String = js.native
-  def `init.license`(value: js.Any): String = js.native
-  def `init.version`(): String = js.native
-  def `init.version`(value: js.Any): String = js.native
+  @JSName("init.author.email")
+  def initDotauthorDotemail(): String = js.native
+  @JSName("init.author.email")
+  def initDotauthorDotemail(value: js.Any): String = js.native
+  @JSName("init.author.name")
+  def initDotauthorDotname(): String = js.native
+  @JSName("init.author.name")
+  def initDotauthorDotname(value: js.Any): String = js.native
+  @JSName("init.author.url")
+  def initDotauthorDoturl(): String = js.native
+  @JSName("init.author.url")
+  def initDotauthorDoturl(value: js.Any): String = js.native
+  @JSName("init.license")
+  def initDotlicense(): String = js.native
+  @JSName("init.license")
+  def initDotlicense(value: js.Any): String = js.native
+  @JSName("init.version")
+  def initDotversion(): String = js.native
+  @JSName("init.version")
+  def initDotversion(value: js.Any): String = js.native
   def json[T](): Boolean = js.native
   def json[T](value: T): Boolean = js.native
   def link[T](): Boolean = js.native

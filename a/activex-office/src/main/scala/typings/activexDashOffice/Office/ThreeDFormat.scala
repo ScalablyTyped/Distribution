@@ -22,7 +22,8 @@ class ThreeDFormat protected () extends js.Object {
   var ExtrusionColorType: MsoExtrusionColorType = js.native
   var FieldOfView: Double = js.native
   var LightAngle: Double = js.native
-  var `Office.ThreeDFormat_typekey`: ThreeDFormat = js.native
+  @JSName("Office.ThreeDFormat_typekey")
+  var OfficeDotThreeDFormat_typekey: ThreeDFormat = js.native
   val Parent: js.Any = js.native
   var Perspective: MsoTriState = js.native
   val PresetCamera: MsoPresetCamera = js.native

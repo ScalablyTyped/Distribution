@@ -1,7 +1,5 @@
 package typings.atUifabricMergeDashStyles
 
-import typings.atUifabricMergeDashStyles.libIStyleSetMod.Diff
-import typings.atUifabricMergeDashStyles.libIStyleSetMod.IStyleSet
 import typings.std.Extract
 import typings.std.Partial
 import typings.std.Pick

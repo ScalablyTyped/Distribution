@@ -13,7 +13,8 @@ class AutoFormatRule protected () extends js.Object {
   var Filter: String = js.native
   var Font: ViewFont = js.native
   var Name: String = js.native
-  var `Outlook.AutoFormatRule_typekey`: AutoFormatRule = js.native
+  @JSName("Outlook.AutoFormatRule_typekey")
+  var OutlookDotAutoFormatRule_typekey: AutoFormatRule = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val Standard: Boolean = js.native

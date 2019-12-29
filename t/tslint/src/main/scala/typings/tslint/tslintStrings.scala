@@ -17,13 +17,16 @@ object tslintStrings {
   sealed trait NoInfer extends js.Object
   
   @js.native
-  sealed trait `Shorthand method assignments have been disallowedDOT` extends js.Object
+  sealed trait `Shorthand method assignments have been disallowedDot` extends js.Object
   
   @js.native
-  sealed trait `Shorthand property and method assignments have been disallowedDOT` extends js.Object
+  sealed trait `Shorthand property and method assignments have been disallowedDot` extends js.Object
   
   @js.native
-  sealed trait `Shorthand property assignments have been disallowedDOT` extends js.Object
+  sealed trait `Shorthand property assignments have been disallowedDot` extends js.Object
+  
+  @js.native
+  sealed trait Tildenil extends js.Object
   
   @js.native
   sealed trait after extends js.Object
@@ -131,10 +134,10 @@ object tslintStrings {
   sealed trait tags extends js.Object
   
   @js.native
-  sealed trait `tslint:recommended` extends js.Object
+  sealed trait tslintColonrecommended extends js.Object
   
   @js.native
-  sealed trait tslintDOTjson extends js.Object
+  sealed trait tslintDotjson extends js.Object
   
   @js.native
   sealed trait types extends _DocType
@@ -169,17 +172,16 @@ object tslintStrings {
   @js.native
   sealed trait warning extends RuleSeverity
   
-  @js.native
-  sealed trait `~nil` extends js.Object
-  
   @scala.inline
   def NoInfer: NoInfer = "NoInfer".asInstanceOf[NoInfer]
   @scala.inline
-  def `Shorthand method assignments have been disallowedDOT`: `Shorthand method assignments have been disallowedDOT` = "Shorthand method assignments have been disallowed.".asInstanceOf[`Shorthand method assignments have been disallowedDOT`]
+  def `Shorthand method assignments have been disallowedDot`: `Shorthand method assignments have been disallowedDot` = "Shorthand method assignments have been disallowed.".asInstanceOf[`Shorthand method assignments have been disallowedDot`]
   @scala.inline
-  def `Shorthand property and method assignments have been disallowedDOT`: `Shorthand property and method assignments have been disallowedDOT` = "Shorthand property and method assignments have been disallowed.".asInstanceOf[`Shorthand property and method assignments have been disallowedDOT`]
+  def `Shorthand property and method assignments have been disallowedDot`: `Shorthand property and method assignments have been disallowedDot` = "Shorthand property and method assignments have been disallowed.".asInstanceOf[`Shorthand property and method assignments have been disallowedDot`]
   @scala.inline
-  def `Shorthand property assignments have been disallowedDOT`: `Shorthand property assignments have been disallowedDOT` = "Shorthand property assignments have been disallowed.".asInstanceOf[`Shorthand property assignments have been disallowedDOT`]
+  def `Shorthand property assignments have been disallowedDot`: `Shorthand property assignments have been disallowedDot` = "Shorthand property assignments have been disallowed.".asInstanceOf[`Shorthand property assignments have been disallowedDot`]
+  @scala.inline
+  def Tildenil: Tildenil = "~nil".asInstanceOf[Tildenil]
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
@@ -251,9 +253,9 @@ object tslintStrings {
   @scala.inline
   def tags: tags = "tags".asInstanceOf[tags]
   @scala.inline
-  def `tslint:recommended`: `tslint:recommended` = "tslint:recommended".asInstanceOf[`tslint:recommended`]
+  def tslintColonrecommended: tslintColonrecommended = "tslint:recommended".asInstanceOf[tslintColonrecommended]
   @scala.inline
-  def tslintDOTjson: tslintDOTjson = "tslint.json".asInstanceOf[tslintDOTjson]
+  def tslintDotjson: tslintDotjson = "tslint.json".asInstanceOf[tslintDotjson]
   @scala.inline
   def types: types = "types".asInstanceOf[types]
   @scala.inline
@@ -276,7 +278,5 @@ object tslintStrings {
   def warn: warn = "warn".asInstanceOf[warn]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def `~nil`: `~nil` = "~nil".asInstanceOf[`~nil`]
 }
 

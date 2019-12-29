@@ -3,8 +3,6 @@ package typings.atFirebaseFirestore
 import typings.atFirebaseFirestore.distSrcApiTimestampMod.Timestamp
 import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.FieldValue
 import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.NumberValue
-import typings.atFirebaseFirestore.distSrcModelTransformUnderscoreOperationMod.ServerTimestampTransform
-import typings.atFirebaseFirestore.distSrcModelTransformUnderscoreOperationMod.TransformOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

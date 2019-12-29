@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.System
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.arm
-import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.neutral
-import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.unknown
-import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.x64
-import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.x86
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

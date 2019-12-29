@@ -1,6 +1,5 @@
 package typings.agDashGrid
 
-import typings.agDashGrid.distLibRenderingCellRenderersGroupCellRendererMod.GroupCellRendererParams
 import typings.agDashGrid.distLibRenderingCellRenderersICellRendererMod.ICellRenderer
 import typings.agDashGrid.distLibRenderingCellRenderersICellRendererMod.ICellRendererParams
 import typings.agDashGrid.distLibWidgetsComponentMod.Component

@@ -1,16 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.certificate
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.certificate_request
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.certificate_verify
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.client_hello
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.client_key_exchange
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.finished
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.hello_request
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.server_hello
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.server_hello_done
-import typings.nodeDashForge.nodeDashForgeMod.tls.HandshakeType.server_key_exchange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

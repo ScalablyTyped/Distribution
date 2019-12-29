@@ -1,11 +1,6 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.DEBUG
-import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.ERROR
-import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.INFO
-import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.NONE
-import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.WARNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

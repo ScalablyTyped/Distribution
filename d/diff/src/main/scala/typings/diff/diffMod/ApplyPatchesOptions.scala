@@ -1,7 +1,7 @@
 package typings.diff.diffMod
 
-import typings.diff.diffStrings.` `
-import typings.diff.diffStrings.`-`
+import typings.diff.diffStrings.Space
+import typings.diff.diffStrings.`-_`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object ApplyPatchesOptions {
     complete: js.Any => Unit,
     loadFile: (ParsedDiff, js.Function2[/* err */ js.Any, /* data */ String, Unit]) => Unit,
     patched: (ParsedDiff, String, js.Function1[/* err */ js.Any, Unit]) => Unit,
-    compareLine: (/* lineNumber */ Double, /* line */ String, /* operation */ `-` | (` `), /* patchContent */ String) => Boolean = null,
+    compareLine: (/* lineNumber */ Double, /* line */ String, /* operation */ `-_` | Space, /* patchContent */ String) => Boolean = null,
     fuzzFactor: Int | Double = null
   ): ApplyPatchesOptions = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), loadFile = js.Any.fromFunction2(loadFile), patched = js.Any.fromFunction3(patched))

@@ -1,6 +1,6 @@
 package typings.jenkins
 
-import typings.jenkins.jenkinsNumbers.`true`
+import typings.jenkins.jenkinsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object textDashTableStrings {
   @js.native
-  sealed trait DOT extends js.Object
+  sealed trait Dot extends js.Object
   
   @js.native
   sealed trait c extends js.Object
@@ -18,7 +18,7 @@ object textDashTableStrings {
   sealed trait r extends js.Object
   
   @scala.inline
-  def DOT: DOT = ".".asInstanceOf[DOT]
+  def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
   def c: c = "c".asInstanceOf[c]
   @scala.inline

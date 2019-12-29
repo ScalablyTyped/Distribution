@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IDOMTreeWalker")
 @js.native
 class IDOMTreeWalker protected () extends js.Object {
-  var `MSHTML.IDOMTreeWalker_typekey`: IDOMTreeWalker = js.native
+  @JSName("MSHTML.IDOMTreeWalker_typekey")
+  var MSHTMLDotIDOMTreeWalker_typekey: IDOMTreeWalker = js.native
   var currentNode: js.Any = js.native
   val expandEntityReferences: Boolean = js.native
   val filter: js.Any = js.native

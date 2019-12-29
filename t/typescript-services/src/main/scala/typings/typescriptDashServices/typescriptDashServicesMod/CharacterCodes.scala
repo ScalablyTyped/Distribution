@@ -14,10 +14,10 @@ object CharacterCodes extends js.Object {
   /* 70 */ val F: typings.typescriptDashServices.TypeScript.CharacterCodes.F with Double = js.native
   /* 88 */ val X: typings.typescriptDashServices.TypeScript.CharacterCodes.X with Double = js.native
   /* 90 */ val Z: typings.typescriptDashServices.TypeScript.CharacterCodes.Z with Double = js.native
-  /* 95 */ val `_`: typings.typescriptDashServices.TypeScript.CharacterCodes.`_` with Double = js.native
   /* 48 */ val _0: typings.typescriptDashServices.TypeScript.CharacterCodes._0 with Double = js.native
   /* 55 */ val _7: typings.typescriptDashServices.TypeScript.CharacterCodes._7 with Double = js.native
   /* 57 */ val _9: typings.typescriptDashServices.TypeScript.CharacterCodes._9 with Double = js.native
+  /* 95 */ val _underscore: typings.typescriptDashServices.TypeScript.CharacterCodes._underscore with Double = js.native
   /* 97 */ val a: typings.typescriptDashServices.TypeScript.CharacterCodes.a with Double = js.native
   /* 38 */ val ampersand: typings.typescriptDashServices.TypeScript.CharacterCodes.ampersand with Double = js.native
   /* 42 */ val asterisk: typings.typescriptDashServices.TypeScript.CharacterCodes.asterisk with Double = js.native
@@ -44,7 +44,7 @@ object CharacterCodes extends js.Object {
   /* 8192 */ val enQuad: typings.typescriptDashServices.TypeScript.CharacterCodes.enQuad with Double = js.native
   /* 8194 */ val enSpace: typings.typescriptDashServices.TypeScript.CharacterCodes.enSpace with Double = js.native
   /* 61 */ @JSName("equals")
-  val equals_FCharacterCodes: equals with Double = js.native
+  val equals_ : equals with Double = js.native
   /* 33 */ val exclamation: typings.typescriptDashServices.TypeScript.CharacterCodes.exclamation with Double = js.native
   /* 102 */ val f: typings.typescriptDashServices.TypeScript.CharacterCodes.f with Double = js.native
   /* 8199 */ val figureSpace: typings.typescriptDashServices.TypeScript.CharacterCodes.figureSpace with Double = js.native

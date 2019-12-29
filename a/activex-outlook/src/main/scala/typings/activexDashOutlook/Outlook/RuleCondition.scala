@@ -11,7 +11,8 @@ class RuleCondition protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val ConditionType: OlRuleConditionType = js.native
   var Enabled: Boolean = js.native
-  var `Outlook.RuleCondition_typekey`: RuleCondition = js.native
+  @JSName("Outlook.RuleCondition_typekey")
+  var OutlookDotRuleCondition_typekey: RuleCondition = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
 }

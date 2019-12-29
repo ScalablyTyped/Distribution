@@ -19,7 +19,8 @@ class IFind protected () extends js.Object {
   var ListBy: MsoFileFindListBy = js.native
   var MatchCase: Boolean = js.native
   var Name: String = js.native
-  var `Office.IFind_typekey`: IFind = js.native
+  @JSName("Office.IFind_typekey")
+  var OfficeDotIFind_typekey: IFind = js.native
   var Options: MsoFileFindOptions = js.native
   var PatternMatch: Boolean = js.native
   @JSName("Results")

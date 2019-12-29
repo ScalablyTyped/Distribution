@@ -1,13 +1,6 @@
 package typings.sodiumjs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sodiumjs.distTypingsSodiumVertexMod.Color
-import typings.sodiumjs.distTypingsSodiumVertexMod.Color.black
-import typings.sodiumjs.distTypingsSodiumVertexMod.Color.gray
-import typings.sodiumjs.distTypingsSodiumVertexMod.Color.purple
-import typings.sodiumjs.distTypingsSodiumVertexMod.Color.white
-import typings.sodiumjs.distTypingsSodiumVertexMod.Source
-import typings.sodiumjs.distTypingsSodiumVertexMod.Vertex
 import typings.typescriptDashCollections.typescriptDashCollectionsMod.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`

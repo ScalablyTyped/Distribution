@@ -1,8 +1,6 @@
 package typings.dojo.dojo
 
 import typings.dojo.dojo.promise.Promise
-import typings.dojo.dojo.store.JsonRest
-import typings.dojo.dojo.store.Memory
 import typings.dojo.dojo.store.api.Store
 import typings.dojo.dojo.store.api.Store.PutDirectives
 import typings.dojo.dojo.store.api.Store.QueryOptions

@@ -1,7 +1,7 @@
 package typings.wxDashServerDashSdk
 
+import typings.wxDashServerDashSdk.wxDashServerDashSdkBooleans.`true`
 import typings.wxDashServerDashSdk.wxDashServerDashSdkMod.Point
-import typings.wxDashServerDashSdk.wxDashServerDashSdkNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

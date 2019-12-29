@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.interactionPropertyMod.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

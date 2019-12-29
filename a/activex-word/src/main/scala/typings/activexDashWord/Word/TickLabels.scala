@@ -23,7 +23,8 @@ class TickLabels protected () extends js.Object {
   var Orientation: XlTickLabelOrientation = js.native
   val Parent: js.Any = js.native
   var ReadingOrder: Double = js.native
-  var `Word.TickLabels_typekey`: TickLabels = js.native
+  @JSName("Word.TickLabels_typekey")
+  var WordDotTickLabels_typekey: TickLabels = js.native
   def Delete(): js.Any = js.native
   def Select(): js.Any = js.native
 }

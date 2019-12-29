@@ -25,6 +25,11 @@ trait IModalProps
      with IWithResponsiveModeState
      with IAccessiblePopupProps {
   /**
+    * Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.
+    * @defaultvalue false
+    */
+  var allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined
+  /**
     * Optional class name to be added to the root class
     */
   var className: js.UndefOr[String] = js.undefined
@@ -115,6 +120,7 @@ trait IModalProps
 object IModalProps {
   @scala.inline
   def apply(
+    allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     closeButtonAriaLabel: String = null,
     componentRef: IRefObject[IModal] = null,
@@ -145,6 +151,7 @@ object IModalProps {
     topOffsetFixed: js.UndefOr[Boolean] = js.undefined
   ): IModalProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowTouchBodyScroll)) __obj.updateDynamic("allowTouchBodyScroll")(allowTouchBodyScroll.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])

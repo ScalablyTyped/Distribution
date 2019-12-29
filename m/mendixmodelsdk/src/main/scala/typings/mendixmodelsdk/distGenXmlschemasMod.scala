@@ -8,13 +8,6 @@ import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenWebservicesMod.webservices.WsdlDescription
-import typings.mendixmodelsdk.distGenXmlschemasMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.IMxSchema
-import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.MxSchema
-import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.XmlElement
-import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.XmlPrimitiveType
-import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.XmlSchema
-import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.XmlSchemaEntry
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractEnum

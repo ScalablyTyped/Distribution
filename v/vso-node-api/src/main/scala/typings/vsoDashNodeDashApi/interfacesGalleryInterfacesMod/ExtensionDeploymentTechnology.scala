@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Exe
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Msi
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.ReferralLink
-import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Vsix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

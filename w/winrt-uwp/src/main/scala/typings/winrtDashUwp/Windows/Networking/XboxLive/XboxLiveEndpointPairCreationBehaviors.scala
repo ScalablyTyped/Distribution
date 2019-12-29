@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.XboxLive
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.none
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.reevaluatePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

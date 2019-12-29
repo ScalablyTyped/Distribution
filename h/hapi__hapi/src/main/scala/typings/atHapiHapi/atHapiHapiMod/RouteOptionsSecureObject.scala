@@ -2,8 +2,8 @@ package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiHapi.Anon_Allowfrom
 import typings.atHapiHapi.Anon_IncludeSubDomains
-import typings.atHapiHapi.atHapiHapiNumbers.`false`
-import typings.atHapiHapi.atHapiHapiNumbers.`true`
+import typings.atHapiHapi.atHapiHapiBooleans.`false`
+import typings.atHapiHapi.atHapiHapiBooleans.`true`
 import typings.atHapiHapi.atHapiHapiStrings.deny
 import typings.atHapiHapi.atHapiHapiStrings.sameorigin
 import scala.scalajs.js

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jjve"
-version := "v0.4.0-dt-20190322Z-1c66dd"
+version := "v0.4.0-dt-20190322Z-54f16f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jjv" % "v1.0.2-dt-20190322Z-042e66",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "jjv" % "v1.0.2-dt-20190322Z-5c3888",
+  "org.scalablytyped" %%% "std" % "3.7-953338")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,9 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_MagType.TWMD_INVALID
-import typings.dwt.EnumDWT_MagType.TWMD_MICR
-import typings.dwt.EnumDWT_MagType.TWMD_RAW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

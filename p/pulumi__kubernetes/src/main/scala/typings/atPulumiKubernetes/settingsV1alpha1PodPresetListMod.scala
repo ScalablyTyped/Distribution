@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`settingsDOTk8sDOTio/v1alpha1`
-import typings.atPulumiKubernetes.settingsV1alpha1PodPresetListMod.PodPresetList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.settingsDotk8sDotioSlashv1alpha1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiKubernetes.typesOutputMod.settings.v1alpha1.PodPreset
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object settingsV1alpha1PodPresetListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`settingsDOTk8sDOTio/v1alpha1`] = js.native
+    val apiVersion: Output[settingsDotk8sDotioSlashv1alpha1] = js.native
     /**
       * Items is a list of schema objects.
       */

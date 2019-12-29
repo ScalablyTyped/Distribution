@@ -1,7 +1,5 @@
 package typings.tweenDotJs
 
-import typings.tweenDotJs.TWEEN.Group
-import typings.tweenDotJs.TWEEN.Tween
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,7 +12,8 @@ class CustomProperty protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   var Value: String = js.native
-  var `Word.CustomProperty_typekey`: CustomProperty = js.native
+  @JSName("Word.CustomProperty_typekey")
+  var WordDotCustomProperty_typekey: CustomProperty = js.native
   def Delete(): Unit = js.native
 }
 

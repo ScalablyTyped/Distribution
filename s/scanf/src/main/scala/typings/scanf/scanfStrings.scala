@@ -6,34 +6,34 @@ import scala.scalajs.js.annotation._
 
 object scanfStrings {
   @js.native
-  sealed trait `%S` extends js.Object
+  sealed trait PercentsignS extends js.Object
   
   @js.native
-  sealed trait `%d` extends js.Object
+  sealed trait Percentsignd extends js.Object
   
   @js.native
-  sealed trait `%f` extends js.Object
+  sealed trait Percentsignf extends js.Object
   
   @js.native
-  sealed trait `%o` extends js.Object
+  sealed trait Percentsigno extends js.Object
   
   @js.native
-  sealed trait `%s_` extends js.Object
+  sealed trait Percentsigns extends js.Object
   
   @js.native
-  sealed trait `%x` extends js.Object
+  sealed trait Percentsignx extends js.Object
   
   @scala.inline
-  def `%S`: `%S` = "%S".asInstanceOf[`%S`]
+  def PercentsignS: PercentsignS = "%S".asInstanceOf[PercentsignS]
   @scala.inline
-  def `%d`: `%d` = "%d".asInstanceOf[`%d`]
+  def Percentsignd: Percentsignd = "%d".asInstanceOf[Percentsignd]
   @scala.inline
-  def `%f`: `%f` = "%f".asInstanceOf[`%f`]
+  def Percentsignf: Percentsignf = "%f".asInstanceOf[Percentsignf]
   @scala.inline
-  def `%o`: `%o` = "%o".asInstanceOf[`%o`]
+  def Percentsigno: Percentsigno = "%o".asInstanceOf[Percentsigno]
   @scala.inline
-  def `%s_`: `%s_` = "%s".asInstanceOf[`%s_`]
+  def Percentsigns: Percentsigns = "%s".asInstanceOf[Percentsigns]
   @scala.inline
-  def `%x`: `%x` = "%x".asInstanceOf[`%x`]
+  def Percentsignx: Percentsignx = "%x".asInstanceOf[Percentsignx]
 }
 

@@ -1,16 +1,6 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.Connected
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.Disconnected
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.Failed
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.ICETimeout
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.InfoReceived
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.MessageReceived
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.ProgressToneStart
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.ProgressToneStop
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.TransferComplete
-import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.CallEvents.TransferFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

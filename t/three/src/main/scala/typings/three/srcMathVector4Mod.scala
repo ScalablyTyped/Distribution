@@ -6,8 +6,7 @@ import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathVector2Mod.Vector
-import typings.three.srcMathVector4Mod.Vector4
-import typings.three.threeNumbers.`true`
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

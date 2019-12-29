@@ -54,7 +54,6 @@ import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkIt
 import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeTemplate
 import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeTemplateUpdateModel
 import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemUpdate
-import typings.vsoDashNodeDashApi.workItemTrackingApiMod.IWorkItemTrackingApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

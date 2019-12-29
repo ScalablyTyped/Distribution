@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class Corners protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.Corners_typekey`: Corners = js.native
+  @JSName("Excel.Corners_typekey")
+  var ExcelDotCorners_typekey: Corners = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
   def Select(): js.Any = js.native

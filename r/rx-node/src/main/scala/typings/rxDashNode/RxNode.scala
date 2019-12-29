@@ -6,7 +6,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.rxDashLite.Rx.Disposable
 import typings.rxDashLiteDashAggregates.Rx.Observable
-import typings.rxDashNode.RxNode.PublishableEventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -16,7 +16,7 @@ object option extends js.Object {
       * Returns the options as an array of command line parameters.
       */
     var flags: js.Array[IFlag] = js.native
-    def apply[T](key: java.lang.String): T = js.native
+    def apply[T](key: String): T = js.native
     /**
       * Gets or sets an option.
       * Boolean options can be negated by prepending no- onto the key. For example:
@@ -25,7 +25,7 @@ object option extends js.Object {
       * var isDev = grunt.option('no-staging');
       * assert(isDev === true)
       */
-    def apply[T](key: java.lang.String, value: T): Unit = js.native
+    def apply[T](key: String, value: T): Unit = js.native
     /**
       * Initialize grunt.option.
       * If initObject is omitted option will be initialized to an empty object

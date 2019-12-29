@@ -10,7 +10,8 @@ class Player protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   var CurrentPosition: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Player_typekey`: Player = js.native
+  @JSName("PowerPoint.Player_typekey")
+  var PowerPointDotPlayer_typekey: Player = js.native
   val State: PpPlayerState = js.native
   def GoToNextBookmark(): Unit = js.native
   def GoToPreviousBookmark(): Unit = js.native

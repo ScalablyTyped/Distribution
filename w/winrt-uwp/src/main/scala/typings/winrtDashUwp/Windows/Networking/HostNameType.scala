@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.HostNameType.bluetooth
-import typings.winrtDashUwp.Windows.Networking.HostNameType.domainName
-import typings.winrtDashUwp.Windows.Networking.HostNameType.ipv4
-import typings.winrtDashUwp.Windows.Networking.HostNameType.ipv6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

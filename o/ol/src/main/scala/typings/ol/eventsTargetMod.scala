@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.eventsMod.ListenerFunction
-import typings.ol.eventsTargetMod.Target
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

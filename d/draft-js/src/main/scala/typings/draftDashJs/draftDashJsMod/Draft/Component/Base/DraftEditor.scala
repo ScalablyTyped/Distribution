@@ -1,5 +1,6 @@
 package typings.draftDashJs.draftDashJsMod.Draft.Component.Base
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DraftEditor
-  extends typings.react.reactMod.Component[DraftEditorProps, js.Object, js.Any] {
+  extends Component[DraftEditorProps, js.Object, js.Any] {
   // Remove focus from the editor node.
   def blur(): Unit = js.native
   // Force focus back onto the editor node.

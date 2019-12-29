@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.AttrAuthoritiesCertValues")
 @js.native
-class AttrAuthoritiesCertValues () extends CertificateValues
+class AttrAuthoritiesCertValues ()
+  extends typings.xadesjs.buildTypesXmlMod.AttrAuthoritiesCertValues
 

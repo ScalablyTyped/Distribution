@@ -11,7 +11,8 @@ class CaptionLabels protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.CaptionLabels_typekey`: CaptionLabels = js.native
+  @JSName("Word.CaptionLabels_typekey")
+  var WordDotCaptionLabels_typekey: CaptionLabels = js.native
   def Add(Name: String): CaptionLabel = js.native
   def Item(Index: js.Any): CaptionLabel = js.native
 }

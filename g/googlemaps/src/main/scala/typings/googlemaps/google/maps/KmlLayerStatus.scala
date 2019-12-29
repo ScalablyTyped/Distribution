@@ -1,15 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.KmlLayerStatus.DOCUMENT_NOT_FOUND
-import typings.googlemaps.google.maps.KmlLayerStatus.DOCUMENT_TOO_LARGE
-import typings.googlemaps.google.maps.KmlLayerStatus.FETCH_ERROR
-import typings.googlemaps.google.maps.KmlLayerStatus.INVALID_DOCUMENT
-import typings.googlemaps.google.maps.KmlLayerStatus.INVALID_REQUEST
-import typings.googlemaps.google.maps.KmlLayerStatus.LIMITS_EXCEEDED
-import typings.googlemaps.google.maps.KmlLayerStatus.OK
-import typings.googlemaps.google.maps.KmlLayerStatus.TIMED_OUT
-import typings.googlemaps.google.maps.KmlLayerStatus.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

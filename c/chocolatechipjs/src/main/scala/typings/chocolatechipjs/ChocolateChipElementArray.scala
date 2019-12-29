@@ -132,12 +132,12 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def css(propertyName: String, value: String): ChocolateChipElementArray = js.native
   /**
-    * Store arbitrary data associated with the matched element.
+    * Return the value at the named data store for the first element in the element collection, as set by
+    * data(name).
     *
-    * @param key A string naming the piece of data to set.
-    * @param value The new data value; it can be any Javascript type including Array or Object.
+    * @param key Name of the data stored.
     */
-  def data(key: String): ChocolateChipElementArray = js.native
+  def data(key: String): js.Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     *
@@ -146,13 +146,13 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def data(key: String, value: js.Any): ChocolateChipElementArray = js.native
   /**
-    * Return the value at the named data store for the first element in the element collection, as set by
-    * data(name).
+    * Store arbitrary data associated with the matched element.
     *
-    * @param key Name of the data stored.
+    * @param key A string naming the piece of data to set.
+    * @param value The new data value; it can be any Javascript type including Array or Object.
     */
   @JSName("data")
-  def data_Any(key: String): js.Any = js.native
+  def data_ChocolateChipElementArray(key: String): ChocolateChipElementArray = js.native
   /**
     * Retrieve a dataset key's value for the first element in the element collection.
     *

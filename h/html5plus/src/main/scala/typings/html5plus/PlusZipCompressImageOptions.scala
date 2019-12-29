@@ -1,12 +1,12 @@
 package typings.html5plus
 
+import typings.html5plus.html5plusStrings._docSlash
+import typings.html5plus.html5plusStrings._documentsSlash
+import typings.html5plus.html5plusStrings._downloadsSlash
+import typings.html5plus.html5plusStrings._wwwSlash
 import typings.html5plus.html5plusStrings.`180`
 import typings.html5plus.html5plusStrings.`270`
 import typings.html5plus.html5plusStrings.`90`
-import typings.html5plus.html5plusStrings.`_doc/`
-import typings.html5plus.html5plusStrings.`_documents/`
-import typings.html5plus.html5plusStrings.`_downloads/`
-import typings.html5plus.html5plusStrings.`_www/`
 import typings.html5plus.html5plusStrings.jpg
 import typings.html5plus.html5plusStrings.png
 import scala.scalajs.js
@@ -43,7 +43,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var dst: js.UndefOr[`_doc/` | `_documents/` | `_downloads/`] = js.undefined
+  var dst: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   /**
     * 压缩转换后的图片格式
     * 支持"jpg"、"png",如果未指定则使用源图片的格式。
@@ -105,7 +105,7 @@ trait PlusZipCompressImageOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var src: js.UndefOr[`_www/` | `_doc/` | `_documents/` | `_downloads/`] = js.undefined
+  var src: js.UndefOr[_wwwSlash | _docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   /**
     * 缩放图片的宽度
     * 支持像素值（如"100px"）、百分比（如"50%"）、自动计算（如"auto"，即根据height与源图高的缩放比例计算，若未设置height则使用源图高度）；
@@ -121,13 +121,13 @@ object PlusZipCompressImageOptions {
   @scala.inline
   def apply(
     clip: PlusZipClipImageOptions = null,
-    dst: `_doc/` | `_documents/` | `_downloads/` = null,
+    dst: _docSlash | _documentsSlash | _downloadsSlash = null,
     format: jpg | png = null,
     height: String = null,
     overwrite: js.UndefOr[Boolean] = js.undefined,
     quality: Int | Double = null,
     rotate: `90` | `180` | `270` = null,
-    src: `_www/` | `_doc/` | `_documents/` | `_downloads/` = null,
+    src: _wwwSlash | _docSlash | _documentsSlash | _downloadsSlash = null,
     width: String = null
   ): PlusZipCompressImageOptions = {
     val __obj = js.Dynamic.literal()

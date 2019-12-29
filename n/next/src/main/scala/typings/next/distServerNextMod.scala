@@ -1,7 +1,6 @@
 package typings.next
 
 import typings.next.distNextDashServerServerNextDashServerMod.ServerConstructor
-import typings.next.distServerNextMod.NextServerConstructor
 import typings.next.nextStrings.staticMarkup
 import typings.std.Omit
 import scala.scalajs.js

@@ -5,7 +5,7 @@ import typings.backbone.backboneMod.Model
 import typings.backboneDotMarionette.Anon_Args
 import typings.backboneDotMarionette.Anon_ArgsAny
 import typings.backboneDotMarionette.Anon_PreventRender
-import typings.backboneDotMarionette.backboneDotMarionetteNumbers.`false`
+import typings.backboneDotMarionette.backboneDotMarionetteBooleans.`false`
 import typings.std.DocumentFragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`

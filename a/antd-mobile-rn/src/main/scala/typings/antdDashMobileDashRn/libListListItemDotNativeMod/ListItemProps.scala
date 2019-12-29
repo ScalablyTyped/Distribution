@@ -1,7 +1,7 @@
 package typings.antdDashMobileDashRn.libListListItemDotNativeMod
 
 import typings.antdDashMobileDashRn.Anon_Arrow
-import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.Empty
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings._empty
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.android
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.bottom
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.down
@@ -32,7 +32,7 @@ object ListItemProps {
   def apply(
     activeStyle: StyleProp[ViewStyle] = null,
     align: top | middle | bottom = null,
-    arrow: horizontal | down | up | empty | Empty = null,
+    arrow: horizontal | down | up | empty | _empty = null,
     children: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,

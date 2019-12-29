@@ -1,8 +1,6 @@
 package typings.protractor.builtPluginsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.protractor.builtPluginsMod.PromiseType.Q
-import typings.protractor.builtPluginsMod.PromiseType.WEBDRIVER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

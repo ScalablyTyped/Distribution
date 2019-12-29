@@ -27,10 +27,10 @@ trait ServerHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
-  def altsvc(alt: java.lang.String, originOrStream: java.lang.String): Unit = js.native
-  def altsvc(alt: java.lang.String, originOrStream: Double): Unit = js.native
-  def altsvc(alt: java.lang.String, originOrStream: AlternativeServiceOptions): Unit = js.native
-  def altsvc(alt: java.lang.String, originOrStream: URL): Unit = js.native
+  def altsvc(alt: String, originOrStream: String): Unit = js.native
+  def altsvc(alt: String, originOrStream: Double): Unit = js.native
+  def altsvc(alt: String, originOrStream: AlternativeServiceOptions): Unit = js.native
+  def altsvc(alt: String, originOrStream: URL): Unit = js.native
   @JSName("emit")
   def emit_connect(event: typings.node.nodeStrings.connect, session: ServerHttp2Session, socket: Socket): Boolean = js.native
   @JSName("emit")
@@ -67,7 +67,7 @@ trait ServerHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
-  def origin(args: (java.lang.String | URL | Anon_Origin)*): Unit = js.native
+  def origin(args: (String | URL | Anon_Origin)*): Unit = js.native
   @JSName("prependListener")
   def prependListener_connect(
     event: typings.node.nodeStrings.connect,

@@ -9,7 +9,6 @@ package object restifyDashPluginsMod {
     - typings.restifyDashPlugins.restifyDashPluginsStrings.close
     - typings.restifyDashPlugins.restifyDashPluginsStrings.aborted
     - `js.undefined`
-    - scala.Nothing
   */
   type TMetricsCallback = js.UndefOr[_TMetricsCallback]
 }

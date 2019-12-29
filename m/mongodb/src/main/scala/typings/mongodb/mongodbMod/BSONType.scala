@@ -1,21 +1,6 @@
 package typings.mongodb.mongodbMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mongodb.mongodbMod.BSONType.Array
-import typings.mongodb.mongodbMod.BSONType.BinData
-import typings.mongodb.mongodbMod.BSONType.Boolean
-import typings.mongodb.mongodbMod.BSONType.DBPointer
-import typings.mongodb.mongodbMod.BSONType.Date
-import typings.mongodb.mongodbMod.BSONType.Decimal
-import typings.mongodb.mongodbMod.BSONType.Int
-import typings.mongodb.mongodbMod.BSONType.JavaScript
-import typings.mongodb.mongodbMod.BSONType.JavaScriptWithScope
-import typings.mongodb.mongodbMod.BSONType.Null
-import typings.mongodb.mongodbMod.BSONType.Object
-import typings.mongodb.mongodbMod.BSONType.Regex
-import typings.mongodb.mongodbMod.BSONType.String
-import typings.mongodb.mongodbMod.BSONType.Symbol
-import typings.mongodb.mongodbMod.BSONType.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

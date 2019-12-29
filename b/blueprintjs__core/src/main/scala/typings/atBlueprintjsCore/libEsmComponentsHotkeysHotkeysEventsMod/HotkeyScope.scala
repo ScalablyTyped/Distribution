@@ -1,8 +1,6 @@
 package typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysEventsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysEventsMod.HotkeyScope.GLOBAL
-import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysEventsMod.HotkeyScope.LOCAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

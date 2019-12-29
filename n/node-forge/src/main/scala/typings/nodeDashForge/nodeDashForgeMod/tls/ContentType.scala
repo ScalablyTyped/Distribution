@@ -1,11 +1,6 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
 import org.scalablytyped.runtime.TopLevel
-import typings.nodeDashForge.nodeDashForgeMod.tls.ContentType.alert
-import typings.nodeDashForge.nodeDashForgeMod.tls.ContentType.application_data
-import typings.nodeDashForge.nodeDashForgeMod.tls.ContentType.change_cipher_spec
-import typings.nodeDashForge.nodeDashForgeMod.tls.ContentType.handshake
-import typings.nodeDashForge.nodeDashForgeMod.tls.ContentType.heartbeat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

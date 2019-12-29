@@ -1,21 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.ScriptElementKindModifier.abstractModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.ambientModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.dtsModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.exportedModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.jsModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.jsonModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.jsxModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.none
-import typings.typescript.typescriptMod.ScriptElementKindModifier.optionalModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.privateMemberModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.protectedMemberModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.publicMemberModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.staticModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.tsModifier
-import typings.typescript.typescriptMod.ScriptElementKindModifier.tsxModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

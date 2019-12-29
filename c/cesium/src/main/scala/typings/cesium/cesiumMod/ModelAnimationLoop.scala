@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.ModelAnimationLoop.MIRRORED_REPEAT
-import typings.cesium.cesiumMod.ModelAnimationLoop.NONE
-import typings.cesium.cesiumMod.ModelAnimationLoop.REPEAT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

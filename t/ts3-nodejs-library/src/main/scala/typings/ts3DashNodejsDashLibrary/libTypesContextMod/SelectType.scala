@@ -1,9 +1,6 @@
 package typings.ts3DashNodejsDashLibrary.libTypesContextMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.NONE
-import typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.PORT
-import typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.SID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

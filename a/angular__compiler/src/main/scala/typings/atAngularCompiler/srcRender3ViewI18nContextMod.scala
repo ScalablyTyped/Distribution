@@ -3,7 +3,6 @@ package typings.atAngularCompiler
 import typings.atAngularCompiler.srcI18nI18nUnderscoreAstMod.AST
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ReadVarExpr
-import typings.atAngularCompiler.srcRender3ViewI18nContextMod.I18nContext
 import typings.std.Map
 import typings.std.Set
 import scala.scalajs.js

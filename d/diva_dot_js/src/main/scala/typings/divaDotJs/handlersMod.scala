@@ -1,6 +1,5 @@
 package typings.divaDotJs
 
-import typings.divaDotJs.handlersMod.ViewHandler
 import typings.divaDotJs.interfacesMod.Offset
 import typings.divaDotJs.viewerDashCoreMod.default
 import typings.std.Event

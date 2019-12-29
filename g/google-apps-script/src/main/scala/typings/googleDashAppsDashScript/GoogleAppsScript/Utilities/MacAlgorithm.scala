@@ -1,11 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Utilities
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_MD5
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_1
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_256
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_384
-import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,29 +15,22 @@ sealed trait MacAlgorithm extends js.Object
 @js.native
 object MacAlgorithm extends js.Object {
   @js.native
-  sealed trait HMAC_MD5
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
+  sealed trait HMAC_MD5 extends MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_1
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
+  sealed trait HMAC_SHA_1 extends MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_256
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
+  sealed trait HMAC_SHA_256 extends MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_384
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
+  sealed trait HMAC_SHA_384 extends MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_512
-    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
+  sealed trait HMAC_SHA_512 extends MacAlgorithm
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[
-    typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm with Double
-  ] = js.native
+  def apply(value: Double): js.UndefOr[MacAlgorithm with Double] = js.native
   /* 0 */ @js.native
   object HMAC_MD5 extends TopLevel[HMAC_MD5 with Double]
   

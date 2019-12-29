@@ -10,7 +10,8 @@ class DropLines protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
-  var `Excel.DropLines_typekey`: DropLines = js.native
+  @JSName("Excel.DropLines_typekey")
+  var ExcelDotDropLines_typekey: DropLines = js.native
   val Format: ChartFormat = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native

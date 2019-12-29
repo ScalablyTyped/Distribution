@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.BindingType.range
-import typings.officeDashJsDashPreview.Excel.BindingType.table
-import typings.officeDashJsDashPreview.Excel.BindingType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

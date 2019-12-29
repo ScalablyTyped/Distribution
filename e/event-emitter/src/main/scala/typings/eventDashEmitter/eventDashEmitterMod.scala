@@ -1,8 +1,5 @@
 package typings.eventDashEmitter
 
-import typings.eventDashEmitter.eventDashEmitterMod.Emitter
-import typings.eventDashEmitter.eventDashEmitterMod.EmitterMethod
-import typings.eventDashEmitter.eventDashEmitterMod.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

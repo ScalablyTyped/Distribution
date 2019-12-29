@@ -1,6 +1,5 @@
 package typings.iri
 
-import typings.iri.iriMod.IRI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

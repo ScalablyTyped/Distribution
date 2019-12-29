@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassGrid
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Grid]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), Grid] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Grid]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Grid] {
   var Locale: js.Any = js.native
   var fn: Grid = js.native
 }

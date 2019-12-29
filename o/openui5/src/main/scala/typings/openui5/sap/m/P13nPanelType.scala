@@ -1,11 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.P13nPanelType.columns
-import typings.openui5.sap.m.P13nPanelType.dimeasure
-import typings.openui5.sap.m.P13nPanelType.filter
-import typings.openui5.sap.m.P13nPanelType.group
-import typings.openui5.sap.m.P13nPanelType.sort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

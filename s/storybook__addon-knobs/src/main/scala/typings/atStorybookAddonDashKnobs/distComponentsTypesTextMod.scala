@@ -1,8 +1,5 @@
 package typings.atStorybookAddonDashKnobs
 
-import typings.atStorybookAddonDashKnobs.distComponentsTypesTextMod.TextType
-import typings.atStorybookAddonDashKnobs.distComponentsTypesTextMod.TextTypeKnobValue
-import typings.atStorybookAddonDashKnobs.distComponentsTypesTextMod.TextTypeProps
 import typings.atStorybookAddonDashKnobs.distComponentsTypesTypesMod.KnobControlConfig
 import typings.atStorybookAddonDashKnobs.distComponentsTypesTypesMod.KnobControlProps
 import typings.react.reactMod.ChangeEvent

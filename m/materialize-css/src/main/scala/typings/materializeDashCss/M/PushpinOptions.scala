@@ -25,14 +25,14 @@ trait PushpinOptions extends js.Object {
     */
   var top: Double = js.native
   @JSName("onPositionChange")
-  def onPositionChange_pinbottom(`this`: Pushpin, position: `pin-bottom`): Unit = js.native
+  def onPositionChange_pinbottom(position: `pin-bottom`): Unit = js.native
   /**
     * Callback function called when pushpin position changes. You are provided with a position string
     * @default null
     */
   @JSName("onPositionChange")
-  def onPositionChange_pinned(`this`: Pushpin, position: pinned): Unit = js.native
+  def onPositionChange_pinned(position: pinned): Unit = js.native
   @JSName("onPositionChange")
-  def onPositionChange_pintop(`this`: Pushpin, position: `pin-top`): Unit = js.native
+  def onPositionChange_pintop(position: `pin-top`): Unit = js.native
 }
 

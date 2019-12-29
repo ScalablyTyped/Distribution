@@ -1,6 +1,5 @@
 package typings.semanticDashUiDashShape.SemanticUI.ShapeSettings
 
-import typings.semanticDashUiDashShape.JQuery
 import typings.semanticDashUiDashShape.SemanticUI.Shape.ClassNameSettings
 import typings.semanticDashUiDashShape.SemanticUI.Shape.ErrorSettings
 import typings.semanticDashUiDashShape.SemanticUI.Shape.SelectorSettings
@@ -77,17 +76,17 @@ trait _Impl extends js.Object {
   /**
     * Is called before side change
     */
-  def beforeChange(`this`: JQuery): Unit
+  def beforeChange(): Unit
   /**
     * Is called after visible side change
     */
-  def onChange(`this`: JQuery): Unit
+  def onChange(): Unit
 }
 
 object _Impl {
   @scala.inline
   def apply(
-    beforeChange: JQuery => Unit,
+    beforeChange: () => Unit,
     className: ClassNameSettings,
     debug: Boolean,
     duration: Double,
@@ -95,14 +94,14 @@ object _Impl {
     height: next | initial | Double,
     name: String,
     namespace: String,
-    onChange: JQuery => Unit,
+    onChange: () => Unit,
     performance: Boolean,
     selector: SelectorSettings,
     silent: Boolean,
     verbose: Boolean,
     width: next | initial | Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal(beforeChange = js.Any.fromFunction1(beforeChange), className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beforeChange = js.Any.fromFunction0(beforeChange), className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

@@ -1,8 +1,6 @@
 package typings.varuintDashBitcoin
 
 import typings.node.Buffer
-import typings.varuintDashBitcoin.varuintDashBitcoinMod.Decode
-import typings.varuintDashBitcoin.varuintDashBitcoinMod.Encode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

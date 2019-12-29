@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.IXSLProcessor")
 @js.native
 class IXSLProcessor protected () extends js.Object {
-  var `MSXML2.IXSLProcessor_typekey`: IXSLProcessor = js.native
+  @JSName("MSXML2.IXSLProcessor_typekey")
+  var MSXML2DotIXSLProcessor_typekey: IXSLProcessor = js.native
   /** XML input tree to transform */
   var input: js.Any = js.native
   /** custom stream object for transform output */

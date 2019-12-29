@@ -2,10 +2,6 @@ package typings.heremaps.H.map
 
 import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.map.HitArea.ShapeType
-import typings.heremaps.H.map.HitArea.ShapeType.CIRCLE
-import typings.heremaps.H.map.HitArea.ShapeType.NONE
-import typings.heremaps.H.map.HitArea.ShapeType.POLYGON
-import typings.heremaps.H.map.HitArea.ShapeType.RECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

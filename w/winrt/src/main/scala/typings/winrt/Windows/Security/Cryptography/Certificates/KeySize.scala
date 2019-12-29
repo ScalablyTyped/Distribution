@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.invalid
-import typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.rsa2048
-import typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.rsa4096
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

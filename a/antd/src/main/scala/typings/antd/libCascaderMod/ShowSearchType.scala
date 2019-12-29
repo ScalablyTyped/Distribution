@@ -1,6 +1,6 @@
 package typings.antd.libCascaderMod
 
-import typings.antd.antdNumbers.`false`
+import typings.antd.antdBooleans.`false`
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,13 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatMemberStateChange.Banned
-import typings.steamDashClient.steamDashClientMod.EChatMemberStateChange.Disconnected
-import typings.steamDashClient.steamDashClientMod.EChatMemberStateChange.Entered
-import typings.steamDashClient.steamDashClientMod.EChatMemberStateChange.Kicked
-import typings.steamDashClient.steamDashClientMod.EChatMemberStateChange.Left
-import typings.steamDashClient.steamDashClientMod.EChatMemberStateChange.VoiceDoneSpeaking
-import typings.steamDashClient.steamDashClientMod.EChatMemberStateChange.VoiceSpeaking
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

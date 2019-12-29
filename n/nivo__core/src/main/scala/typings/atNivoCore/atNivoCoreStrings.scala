@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 object atNivoCoreStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
   sealed trait ascending extends StackOrder
@@ -154,7 +154,7 @@ object atNivoCoreStrings {
   sealed trait y extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline

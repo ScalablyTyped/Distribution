@@ -1,12 +1,6 @@
 package typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.SummaryPos.Bottom
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.SummaryPos.BottomLeft
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.SummaryPos.BottomRight
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.SummaryPos.Top
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.SummaryPos.TopLeft
-import typings.reactDashBigDashScheduler.reactDashBigDashSchedulerMod.SummaryPos.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

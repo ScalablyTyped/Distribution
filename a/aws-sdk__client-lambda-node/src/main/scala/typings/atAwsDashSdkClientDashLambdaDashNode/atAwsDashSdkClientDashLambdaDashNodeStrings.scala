@@ -129,16 +129,16 @@ object atAwsDashSdkClientDashLambdaDashNodeStrings {
   sealed trait UnsupportedMediaTypeException extends js.Object
   
   @js.native
-  sealed trait dotnetcore1DOT0 extends js.Object
+  sealed trait dotnetcore1Dot0 extends js.Object
   
   @js.native
-  sealed trait dotnetcore2DOT0 extends js.Object
+  sealed trait dotnetcore2Dot0 extends js.Object
   
   @js.native
-  sealed trait dotnetcore2DOT1 extends js.Object
+  sealed trait dotnetcore2Dot1 extends js.Object
   
   @js.native
-  sealed trait go1DOTx extends js.Object
+  sealed trait go1Dotx extends js.Object
   
   @js.native
   sealed trait java8 extends js.Object
@@ -147,22 +147,22 @@ object atAwsDashSdkClientDashLambdaDashNodeStrings {
   sealed trait nodejs extends js.Object
   
   @js.native
-  sealed trait nodejs4DOT3 extends js.Object
+  sealed trait nodejs4Dot3 extends js.Object
   
   @js.native
-  sealed trait `nodejs4DOT3-edge` extends js.Object
+  sealed trait `nodejs4Dot3-edge` extends js.Object
   
   @js.native
-  sealed trait nodejs6DOT10 extends js.Object
+  sealed trait nodejs6Dot10 extends js.Object
   
   @js.native
-  sealed trait nodejs8DOT10 extends js.Object
+  sealed trait nodejs8Dot10 extends js.Object
   
   @js.native
-  sealed trait python2DOT7 extends js.Object
+  sealed trait python2Dot7 extends js.Object
   
   @js.native
-  sealed trait python3DOT6 extends js.Object
+  sealed trait python3Dot6 extends js.Object
   
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
@@ -247,28 +247,28 @@ object atAwsDashSdkClientDashLambdaDashNodeStrings {
   @scala.inline
   def UnsupportedMediaTypeException: UnsupportedMediaTypeException = "UnsupportedMediaTypeException".asInstanceOf[UnsupportedMediaTypeException]
   @scala.inline
-  def dotnetcore1DOT0: dotnetcore1DOT0 = "dotnetcore1.0".asInstanceOf[dotnetcore1DOT0]
+  def dotnetcore1Dot0: dotnetcore1Dot0 = "dotnetcore1.0".asInstanceOf[dotnetcore1Dot0]
   @scala.inline
-  def dotnetcore2DOT0: dotnetcore2DOT0 = "dotnetcore2.0".asInstanceOf[dotnetcore2DOT0]
+  def dotnetcore2Dot0: dotnetcore2Dot0 = "dotnetcore2.0".asInstanceOf[dotnetcore2Dot0]
   @scala.inline
-  def dotnetcore2DOT1: dotnetcore2DOT1 = "dotnetcore2.1".asInstanceOf[dotnetcore2DOT1]
+  def dotnetcore2Dot1: dotnetcore2Dot1 = "dotnetcore2.1".asInstanceOf[dotnetcore2Dot1]
   @scala.inline
-  def go1DOTx: go1DOTx = "go1.x".asInstanceOf[go1DOTx]
+  def go1Dotx: go1Dotx = "go1.x".asInstanceOf[go1Dotx]
   @scala.inline
   def java8: java8 = "java8".asInstanceOf[java8]
   @scala.inline
   def nodejs: nodejs = "nodejs".asInstanceOf[nodejs]
   @scala.inline
-  def nodejs4DOT3: nodejs4DOT3 = "nodejs4.3".asInstanceOf[nodejs4DOT3]
+  def nodejs4Dot3: nodejs4Dot3 = "nodejs4.3".asInstanceOf[nodejs4Dot3]
   @scala.inline
-  def `nodejs4DOT3-edge`: `nodejs4DOT3-edge` = "nodejs4.3-edge".asInstanceOf[`nodejs4DOT3-edge`]
+  def `nodejs4Dot3-edge`: `nodejs4Dot3-edge` = "nodejs4.3-edge".asInstanceOf[`nodejs4Dot3-edge`]
   @scala.inline
-  def nodejs6DOT10: nodejs6DOT10 = "nodejs6.10".asInstanceOf[nodejs6DOT10]
+  def nodejs6Dot10: nodejs6Dot10 = "nodejs6.10".asInstanceOf[nodejs6Dot10]
   @scala.inline
-  def nodejs8DOT10: nodejs8DOT10 = "nodejs8.10".asInstanceOf[nodejs8DOT10]
+  def nodejs8Dot10: nodejs8Dot10 = "nodejs8.10".asInstanceOf[nodejs8Dot10]
   @scala.inline
-  def python2DOT7: python2DOT7 = "python2.7".asInstanceOf[python2DOT7]
+  def python2Dot7: python2Dot7 = "python2.7".asInstanceOf[python2Dot7]
   @scala.inline
-  def python3DOT6: python3DOT6 = "python3.6".asInstanceOf[python3DOT6]
+  def python3Dot6: python3Dot6 = "python3.6".asInstanceOf[python3Dot6]
 }
 

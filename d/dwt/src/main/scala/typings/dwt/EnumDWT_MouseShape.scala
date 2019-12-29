@@ -1,10 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_MouseShape.Crosshair
-import typings.dwt.EnumDWT_MouseShape.Default
-import typings.dwt.EnumDWT_MouseShape.Hand
-import typings.dwt.EnumDWT_MouseShape.Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

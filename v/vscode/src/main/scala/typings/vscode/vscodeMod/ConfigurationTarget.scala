@@ -1,8 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.ConfigurationTarget.Global
-import typings.vscode.vscodeMod.ConfigurationTarget.Workspace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

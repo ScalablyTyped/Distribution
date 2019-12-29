@@ -14,7 +14,8 @@ class ShapeNode protected () extends js.Object {
   val EditingType: MsoEditingType = js.native
   val Parent: js.Any = js.native
   val Points: js.Any = js.native
-  var `PowerPoint.ShapeNode_typekey`: ShapeNode = js.native
+  @JSName("PowerPoint.ShapeNode_typekey")
+  var PowerPointDotShapeNode_typekey: ShapeNode = js.native
   val SegmentType: MsoSegmentType = js.native
 }
 

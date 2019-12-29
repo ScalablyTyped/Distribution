@@ -17,7 +17,6 @@ package object typesCommonMod {
     - typings.reactDashDayDashPicker.typesCommonMod.DaysOfWeekModifier
     - typings.reactDashDayDashPicker.typesCommonMod.FunctionModifier
     - `js.undefined`
-    - scala.Nothing
   */
   type Modifier = js.UndefOr[_Modifier | Date | FunctionModifier]
 }

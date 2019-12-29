@@ -14,6 +14,7 @@ class OMathGroupChar protected () extends js.Object {
   val Creator: Double = js.native
   val E: OMath = js.native
   val Parent: js.Any = js.native
-  var `Word.OMathGroupChar_typekey`: OMathGroupChar = js.native
+  @JSName("Word.OMathGroupChar_typekey")
+  var WordDotOMathGroupChar_typekey: OMathGroupChar = js.native
 }
 

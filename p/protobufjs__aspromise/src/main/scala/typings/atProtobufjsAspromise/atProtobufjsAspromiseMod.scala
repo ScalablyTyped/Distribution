@@ -1,6 +1,5 @@
 package typings.atProtobufjsAspromise
 
-import typings.atProtobufjsAspromise.atProtobufjsAspromiseMod.asPromiseCallback
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

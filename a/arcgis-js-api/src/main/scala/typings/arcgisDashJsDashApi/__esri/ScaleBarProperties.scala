@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`non-metric`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dual
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.line
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ruler
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,19 +12,19 @@ import scala.scalajs.js.annotation._
 
 trait ScaleBarProperties extends WidgetProperties {
   /**
-    * The style for the scale bar. When `unit` is set to `dual`, the style will always be `line`.  **Possible Values:** ruler | line
+    * The style for the scale bar. When `unit` is set to `dual`, the style will always be `line`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#style)
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[ruler | line] = js.undefined
   /**
-    * Units to use for the scale bar. When using `dual`, the scale bar displays both metric and non-metric units. Metric values show either kilometers or meters depending on the scale, and non-metric values show either miles or feet depending on the scale.  **Possible Values:** non-metric | metric | dual
+    * Units to use for the scale bar. When using `dual`, the scale bar displays both metric and non-metric units. Metric values show either kilometers or meters depending on the scale, and non-metric values show either miles or feet depending on the scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
     *
     * @default non-metric
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[`non-metric` | metric | dual] = js.undefined
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
     *
@@ -41,8 +46,8 @@ object ScaleBarProperties {
     destroyed: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     label: String = null,
-    style: String = null,
-    unit: String = null,
+    style: ruler | line = null,
+    unit: `non-metric` | metric | dual = null,
     view: MapViewProperties = null,
     viewModel: ScaleBarViewModelProperties = null
   ): ScaleBarProperties = {

@@ -1,11 +1,6 @@
 package typings.mongoose.mongooseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mongoose.mongooseMod.ConnectionStates.connected
-import typings.mongoose.mongooseMod.ConnectionStates.connecting
-import typings.mongoose.mongooseMod.ConnectionStates.disconnected
-import typings.mongoose.mongooseMod.ConnectionStates.disconnecting
-import typings.mongoose.mongooseMod.ConnectionStates.uninitialized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

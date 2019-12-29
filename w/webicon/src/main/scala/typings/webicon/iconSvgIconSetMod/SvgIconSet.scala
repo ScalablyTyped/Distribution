@@ -1,7 +1,7 @@
 package typings.webicon.iconSvgIconSetMod
 
 import typings.webicon.iconSvgIconMod.SvgIcon
-import typings.webicon.webiconNumbers.`false`
+import typings.webicon.webiconBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

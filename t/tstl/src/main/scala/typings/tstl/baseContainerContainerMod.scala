@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseContainerContainerMod.Container
 import typings.tstl.baseContainerIContainerMod.IContainer
 import typings.tstl.baseIteratorIteratorMod.Iterator
 import typings.tstl.baseIteratorReverseIteratorMod.IReverseIterator

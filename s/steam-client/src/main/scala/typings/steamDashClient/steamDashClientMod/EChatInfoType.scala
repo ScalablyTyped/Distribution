@@ -1,9 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EChatInfoType.InfoUpdate
-import typings.steamDashClient.steamDashClientMod.EChatInfoType.MemberLimitChange
-import typings.steamDashClient.steamDashClientMod.EChatInfoType.StateChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

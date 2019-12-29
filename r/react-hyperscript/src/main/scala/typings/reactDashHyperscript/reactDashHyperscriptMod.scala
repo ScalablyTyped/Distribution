@@ -5,7 +5,6 @@ import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.StatelessComponent
-import typings.reactDashHyperscript.reactDashHyperscriptMod.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,7 +11,8 @@ class CoAuthors protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.CoAuthors_typekey`: CoAuthors = js.native
+  @JSName("Word.CoAuthors_typekey")
+  var WordDotCoAuthors_typekey: CoAuthors = js.native
   def Item(Index: js.Any): CoAuthor = js.native
 }
 

@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait jsonStatic
-  extends Instantiable2[
-      (/* conditionsOrPath */ js.Object) | (/* conditionsOrPath */ String), 
-      (/* value */ Boolean) | (/* value */ Double) | (/* value */ String), 
-      json
-    ]
-     with /**
+  extends /**
   * Creates an object representing nested where conditions for postgres's json data-type.
   * @see {Model#find}
   *
@@ -24,4 +19,9 @@ trait jsonStatic
   *     '<value>'".
   */
 Instantiable1[(/* conditionsOrPath */ js.Object) | (/* conditionsOrPath */ String), json]
+     with Instantiable2[
+      (/* conditionsOrPath */ js.Object) | (/* conditionsOrPath */ String), 
+      (/* value */ Boolean) | (/* value */ Double) | (/* value */ String), 
+      json
+    ]
 

@@ -11,6 +11,7 @@ class TaskPane protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   var Visible: Boolean = js.native
-  var `Word.TaskPane_typekey`: TaskPane = js.native
+  @JSName("Word.TaskPane_typekey")
+  var WordDotTaskPane_typekey: TaskPane = js.native
 }
 

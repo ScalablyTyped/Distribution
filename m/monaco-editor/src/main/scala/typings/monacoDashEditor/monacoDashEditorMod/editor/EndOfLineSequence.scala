@@ -1,8 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLineSequence.CRLF
-import typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLineSequence.LF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

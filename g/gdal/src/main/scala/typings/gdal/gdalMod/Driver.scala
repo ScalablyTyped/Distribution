@@ -1,7 +1,7 @@
 package typings.gdal.gdalMod
 
-import typings.gdal.gdalStrings.`r+`
 import typings.gdal.gdalStrings.r
+import typings.gdal.gdalStrings.rPlussign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,9 +40,9 @@ trait Driver extends js.Object {
   def getMetadata(domain: String): js.Object = js.native
   def open(path: String): Dataset = js.native
   @JSName("open")
-  def open_r(path: String, mode: `r+`): Dataset = js.native
-  @JSName("open")
   def open_r(path: String, mode: r): Dataset = js.native
+  @JSName("open")
+  def open_r(path: String, mode: rPlussign): Dataset = js.native
   def rename(new_name: String, old_name: String): Unit = js.native
 }
 

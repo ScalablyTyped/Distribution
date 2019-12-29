@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.LineThrough
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.None
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.Overline
-import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.Underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

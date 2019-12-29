@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADODB.Command")
 @js.native
 class Command protected () extends js.Object {
-  var `ADODB.Command_typekey`: Command = js.native
+  @JSName("ADODB.Command_typekey")
+  var ADODBDotCommand_typekey: Command = js.native
   /**
     * Sets or returns a String value that contains a definition for a connection if the connection is closed, or a Variant containing the current Connection object if the connection is open. Default is a null object reference.
     */

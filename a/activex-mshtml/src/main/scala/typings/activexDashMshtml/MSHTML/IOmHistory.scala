@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IOmHistory")
 @js.native
 class IOmHistory protected () extends js.Object {
-  var `MSHTML.IOmHistory_typekey`: IOmHistory = js.native
+  @JSName("MSHTML.IOmHistory_typekey")
+  var MSHTMLDotIOmHistory_typekey: IOmHistory = js.native
   val length: Double = js.native
   def back(): Unit = js.native
   def back(pvargdistance: js.Any): Unit = js.native

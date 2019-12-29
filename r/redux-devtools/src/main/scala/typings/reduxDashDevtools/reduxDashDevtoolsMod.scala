@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod._Global_.JSX.ElementClass
 import typings.redux.reduxMod.StoreEnhancer
-import typings.reduxDashDevtools.reduxDashDevtoolsMod.IDevTools
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

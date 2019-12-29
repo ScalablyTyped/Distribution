@@ -45,6 +45,9 @@ object atMaterialDashUiLabStrings {
   sealed trait assertive extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait avatar extends AvatarGroupClassKey
   
   @js.native
@@ -264,6 +267,9 @@ object atMaterialDashUiLabStrings {
   sealed trait mixed extends js.Object
   
   @js.native
+  sealed trait mouse extends js.Object
+  
+  @js.native
   sealed trait mouseEnter extends OpenReason
   
   @js.native
@@ -438,6 +444,9 @@ object atMaterialDashUiLabStrings {
   sealed trait `top-start` extends js.Object
   
   @js.native
+  sealed trait touch extends js.Object
+  
+  @js.native
   sealed trait tree extends js.Object
   
   @js.native
@@ -473,6 +482,8 @@ object atMaterialDashUiLabStrings {
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def avatar: avatar = "avatar".asInstanceOf[avatar]
   @scala.inline
@@ -614,6 +625,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
+  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  @scala.inline
   def mouseEnter: mouseEnter = "mouseEnter".asInstanceOf[mouseEnter]
   @scala.inline
   def mouseLeave: mouseLeave = "mouseLeave".asInstanceOf[mouseLeave]
@@ -719,6 +732,8 @@ object atMaterialDashUiLabStrings {
   def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
   @scala.inline
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
+  @scala.inline
+  def touch: touch = "touch".asInstanceOf[touch]
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline

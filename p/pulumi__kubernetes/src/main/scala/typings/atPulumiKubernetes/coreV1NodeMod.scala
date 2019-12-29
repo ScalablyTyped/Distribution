@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1NodeMod.Node
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.NodeSpec
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.NodeStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta

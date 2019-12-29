@@ -1,9 +1,6 @@
 package typings.reactDashDndDashTouchDashBackend.libInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.keyboard
-import typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.mouse
-import typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

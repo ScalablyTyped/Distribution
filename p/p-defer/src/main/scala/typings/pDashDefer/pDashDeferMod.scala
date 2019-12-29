@@ -1,6 +1,5 @@
 package typings.pDashDefer
 
-import typings.pDashDefer.pDashDeferMod.DeferredPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

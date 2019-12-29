@@ -1,9 +1,6 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
-import typings.mendixmodelsdk.distGenJsonstructuresMod.StructureVersionInfo
-import typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.JsonElement
-import typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.JsonStructure
 import typings.mendixmodelsdk.distGenMappingsMod.mappings.Element
 import typings.mendixmodelsdk.distGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase

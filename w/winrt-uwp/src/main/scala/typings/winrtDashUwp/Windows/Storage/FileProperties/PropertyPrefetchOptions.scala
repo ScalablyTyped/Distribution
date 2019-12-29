@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.basicProperties
-import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.documentProperties
-import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.imageProperties
-import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.musicProperties
-import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.none
-import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.videoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

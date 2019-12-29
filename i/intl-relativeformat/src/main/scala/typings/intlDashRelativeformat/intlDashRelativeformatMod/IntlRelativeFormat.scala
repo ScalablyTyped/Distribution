@@ -14,12 +14,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IntlRelativeFormat
   extends Instantiable0[IntlRelativeFormat]
+     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), IntlRelativeFormat]
      with Instantiable2[
       (/* locales */ js.Array[String]) | (/* locales */ String), 
       /* opts */ IntlRelativeFormatOptions, 
       IntlRelativeFormat
-    ]
-     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), IntlRelativeFormat] {
+    ] {
   var __localeData__ : Record[String, LocaleData] = js.native
   var defaultLocale: String = js.native
   var thresholds: Record[String, Double] = js.native

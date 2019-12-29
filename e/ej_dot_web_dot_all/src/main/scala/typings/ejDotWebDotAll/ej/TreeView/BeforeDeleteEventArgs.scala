@@ -13,7 +13,7 @@ trait BeforeDeleteEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the given target node values
     */
   var nodeDetails: js.UndefOr[js.Any] = js.undefined
@@ -39,7 +39,7 @@ object BeforeDeleteEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     nodeDetails: js.Any = null,
     parentDetails: js.Any = null,
     parentElement: js.Any = null,

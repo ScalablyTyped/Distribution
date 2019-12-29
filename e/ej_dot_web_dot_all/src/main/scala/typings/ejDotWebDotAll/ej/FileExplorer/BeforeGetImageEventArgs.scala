@@ -13,7 +13,7 @@ trait BeforeGetImageEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the FileExplorer model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.FileExplorer.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the selected item details.
     */
   var selectedItems: js.UndefOr[js.Any] = js.undefined
@@ -30,7 +30,7 @@ object BeforeGetImageEventArgs {
   def apply(
     canCompress: js.UndefOr[Boolean] = js.undefined,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.FileExplorer.Model = null,
+    model: Model = null,
     selectedItems: js.Any = null,
     size: js.Any = null,
     `type`: String = null

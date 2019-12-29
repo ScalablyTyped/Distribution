@@ -1,8 +1,6 @@
 package typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod.QueryTiming.DYNAMIC
-import typings.atAngularCore.schematicsMigrationsStaticDashQueriesAngularQueryDashDefinitionMod.QueryTiming.STATIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

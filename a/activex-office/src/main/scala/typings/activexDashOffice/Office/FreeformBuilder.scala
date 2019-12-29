@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class FreeformBuilder protected () extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
-  var `Office.FreeformBuilder_typekey`: FreeformBuilder = js.native
+  @JSName("Office.FreeformBuilder_typekey")
+  var OfficeDotFreeformBuilder_typekey: FreeformBuilder = js.native
   val Parent: js.Any = js.native
   /**
     * @param X2 [X2=0]

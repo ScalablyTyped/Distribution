@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Adc.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Adc.Provider.ProviderAdcChannelMode.differential
-import typings.winrtDashUwp.Windows.Devices.Adc.Provider.ProviderAdcChannelMode.singleEnded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

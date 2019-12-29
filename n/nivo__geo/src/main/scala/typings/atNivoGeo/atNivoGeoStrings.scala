@@ -34,7 +34,7 @@ object atNivoGeoStrings {
   sealed trait stereographic extends GeoProjectionType
   
   @js.native
-  sealed trait `string |BACKSLASHu00A0number` extends js.Object
+  sealed trait `string VerticallineNobreakspacenumber` extends js.Object
   
   @js.native
   sealed trait transverseMercator extends GeoProjectionType
@@ -58,7 +58,7 @@ object atNivoGeoStrings {
   @scala.inline
   def stereographic: stereographic = "stereographic".asInstanceOf[stereographic]
   @scala.inline
-  def `string |BACKSLASHu00A0number`: `string |BACKSLASHu00A0number` = "string |\u00A0number".asInstanceOf[`string |BACKSLASHu00A0number`]
+  def `string VerticallineNobreakspacenumber`: `string VerticallineNobreakspacenumber` = "string |\u00A0number".asInstanceOf[`string VerticallineNobreakspacenumber`]
   @scala.inline
   def transverseMercator: transverseMercator = "transverseMercator".asInstanceOf[transverseMercator]
 }

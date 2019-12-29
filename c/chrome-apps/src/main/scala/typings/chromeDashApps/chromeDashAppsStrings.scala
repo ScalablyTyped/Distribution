@@ -67,13 +67,7 @@ import scala.scalajs.js.annotation._
 
 object chromeDashAppsStrings {
   @js.native
-  sealed trait `*` extends js.Object
-  
-  @js.native
   sealed trait `8021X` extends EthernetAuthenticationType
-  
-  @js.native
-  sealed trait `<all_urls>` extends UrlMatches
   
   @js.native
   sealed trait ABORT extends js.Object
@@ -98,6 +92,9 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait All extends NetworkType
+  
+  @js.native
+  sealed trait Asterisk extends js.Object
   
   @js.native
   sealed trait BLUETOOTH extends DeviceType
@@ -181,9 +178,6 @@ object chromeDashAppsStrings {
   sealed trait EditResponseCookie extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait Enabled extends DeviceState
   
   @js.native
@@ -202,7 +196,7 @@ object chromeDashAppsStrings {
   sealed trait GOOG extends DisallowedKeys
   
   @js.native
-  sealed trait GOOGDOT extends DisallowedKeys
+  sealed trait GOOGDot extends DisallowedKeys
   
   @js.native
   sealed trait GOOGLE extends DisallowedKeys
@@ -260,6 +254,9 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait LINEOUT extends DeviceType
+  
+  @js.native
+  sealed trait Lessthansignall_urlsGreaterthansign extends UrlMatches
   
   @js.native
   sealed trait MAX_ATTEMPTS_EXCEEDED extends js.Object
@@ -490,6 +487,9 @@ object chromeDashAppsStrings {
   sealed trait Wireless extends NetworkType
   
   @js.native
+  sealed trait _empty extends js.Object
+  
+  @js.native
   sealed trait abnormal extends ExitEventReason
   
   @js.native
@@ -562,22 +562,22 @@ object chromeDashAppsStrings {
   sealed trait animationstart extends js.Object
   
   @js.native
-  sealed trait appDOTwindowDOTalpha extends DevOnly
+  sealed trait appDotwindowDotalpha extends DevOnly
   
   @js.native
-  sealed trait appDOTwindowDOTalwaysOnTop extends Permission
+  sealed trait appDotwindowDotalwaysOnTop extends Permission
   
   @js.native
-  sealed trait appDOTwindowDOTfullscreen extends Permission
+  sealed trait appDotwindowDotfullscreen extends Permission
   
   @js.native
-  sealed trait appDOTwindowDOTfullscreenDOToverrideEsc extends Permission
+  sealed trait appDotwindowDotfullscreenDotoverrideEsc extends Permission
   
   @js.native
-  sealed trait appDOTwindowDOTime extends UndocumentedPermissions
+  sealed trait appDotwindowDotime extends UndocumentedPermissions
   
   @js.native
-  sealed trait appDOTwindowDOTshape extends Permission
+  sealed trait appDotwindowDotshape extends Permission
   
   @js.native
   sealed trait app_launcher extends js.Object
@@ -747,7 +747,7 @@ object chromeDashAppsStrings {
   sealed trait chrome extends js.Object
   
   @js.native
-  sealed trait `chrome://favicon/` extends UrlMatches
+  sealed trait chromeColonSlashSlashfaviconSlash extends UrlMatches
   
   @js.native
   sealed trait chrome_internal extends js.Object
@@ -921,91 +921,91 @@ object chromeDashAppsStrings {
   sealed trait debugger extends NotAllowedAsOptionalPermissions
   
   @js.native
-  sealed trait declarativeContentDOTPageStateMatcher extends js.Object
+  sealed trait declarativeContentDotPageStateMatcher extends js.Object
   
   @js.native
-  sealed trait declarativeContentDOTonAuthRequired extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonAuthRequired extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonBeforeRedirect extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonBeforeRedirect extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonBeforeRequest extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonBeforeRequest extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonBeforeSendHeaders extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonBeforeSendHeaders extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonCompleted extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonCompleted extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonErrorOccured extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonErrorOccured extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonHeadersReceived extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonHeadersReceived extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonMessage extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonMessage extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonRequest extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonRequest extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonResponseStarted extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonResponseStarted extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonSendHeaders extends DeclarativeWebRequestEventList
+  sealed trait declarativeContentDotonSendHeaders extends DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeWebRequestDOTAddRequestCookie extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotAddRequestCookie extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTAddResponseCookie extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotAddResponseCookie extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTAddResponseHeader extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotAddResponseHeader extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTCancelRequest extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotCancelRequest extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTEditRequestCookie extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotEditRequestCookie extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTEditResponseCookie extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotEditResponseCookie extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTIgnoreRules extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotIgnoreRules extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectByRegEx extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRedirectByRegEx extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectRequest extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRedirectRequest extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectToEmptyDocument extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRedirectToEmptyDocument extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectToTransparentImage extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRedirectToTransparentImage extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveRequestCookie extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRemoveRequestCookie extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveRequestHeader extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRemoveRequestHeader extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveResponseCookie extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRemoveResponseCookie extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveResponseHeader extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotRemoveResponseHeader extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTSendMessageToExtension extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotSendMessageToExtension extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTSetRequestHeader extends DeclarativeWebRequestActionsList
+  sealed trait declarativeWebRequestDotSetRequestHeader extends DeclarativeWebRequestActionsList
   
   @js.native
   sealed trait deleted_ extends js.Object
@@ -1190,10 +1190,10 @@ object chromeDashAppsStrings {
   sealed trait endpoint extends js.Object
   
   @js.native
-  sealed trait enterpriseDOTdeviceAttributes extends ChromeOSOnlyPermissions
+  sealed trait enterpriseDotdeviceAttributes extends ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait enterpriseDOTplatformKeys extends ChromeOSOnlyPermissions
+  sealed trait enterpriseDotplatformKeys extends ChromeOSOnlyPermissions
   
   @js.native
   sealed trait eo
@@ -1329,10 +1329,10 @@ object chromeDashAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait `file:///*/*` extends UrlMatches
+  sealed trait fileBrowserHandler extends ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait fileBrowserHandler extends ChromeOSOnlyPermissions
+  sealed trait fileColonSlashSlashSlashAsteriskSlashAsterisk extends UrlMatches
   
   @js.native
   sealed trait fileSystem extends Permission
@@ -1451,7 +1451,7 @@ object chromeDashAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait googDOT_ extends DisallowedKeys
+  sealed trait googDot extends DisallowedKeys
   
   @js.native
   sealed trait goog_ extends DisallowedKeys
@@ -1512,16 +1512,16 @@ object chromeDashAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait `http://*/*` extends UrlMatches
+  sealed trait httpColonSlashSlashAsteriskSlashAsterisk extends UrlMatches
   
   @js.native
-  sealed trait `https://*/*` extends UrlMatches
+  sealed trait httpsColonSlashSlashAsteriskSlashAsterisk extends UrlMatches
   
   @js.native
-  sealed trait `https://wwwDOTgoogle-analyticsDOTcom/*` extends UrlMatches
+  sealed trait `httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk` extends UrlMatches
   
   @js.native
-  sealed trait `https://wwwDOTgoogleapisDOTcom/*` extends UrlMatches
+  sealed trait httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk extends UrlMatches
   
   @js.native
   sealed trait hu
@@ -1979,10 +1979,10 @@ object chromeDashAppsStrings {
   sealed trait network extends js.Object
   
   @js.native
-  sealed trait networkingDOTconfig extends ChromeOSOnlyPermissions
+  sealed trait networkingDotconfig extends ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait networkingDOTonc extends KioskOnlyPermissions
+  sealed trait networkingDotonc extends KioskOnlyPermissions
   
   @js.native
   sealed trait new_background_tab extends WindowOpenDisposition
@@ -2172,8 +2172,8 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait phone
-    extends typings.chromeDashApps.chrome.signedInDevices.DeviceType
-       with typings.chromeDashApps.chrome.bluetooth.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
+       with typings.chromeDashApps.chrome.signedInDevices.DeviceType
   
   @js.native
   sealed trait ping extends ResourceType
@@ -2566,22 +2566,22 @@ object chromeDashAppsStrings {
   sealed trait system extends js.Object
   
   @js.native
-  sealed trait systemDOTcpu extends Permission
+  sealed trait systemDotcpu extends Permission
   
   @js.native
-  sealed trait systemDOTdisplay extends Permission
+  sealed trait systemDotdisplay extends Permission
   
   @js.native
-  sealed trait systemDOTmemory extends Permission
+  sealed trait systemDotmemory extends Permission
   
   @js.native
-  sealed trait systemDOTnetwork extends Permission
+  sealed trait systemDotnetwork extends Permission
   
   @js.native
-  sealed trait systemDOTpowerSource extends KioskOnlyPermissions
+  sealed trait systemDotpowerSource extends KioskOnlyPermissions
   
   @js.native
-  sealed trait systemDOTstorage extends Permission
+  sealed trait systemDotstorage extends Permission
   
   @js.native
   sealed trait system_error
@@ -2601,8 +2601,8 @@ object chromeDashAppsStrings {
   
   @js.native
   sealed trait tablet
-    extends typings.chromeDashApps.chrome.signedInDevices.DeviceType
-       with typings.chromeDashApps.chrome.bluetooth.DeviceType
+    extends typings.chromeDashApps.chrome.bluetooth.DeviceType
+       with typings.chromeDashApps.chrome.signedInDevices.DeviceType
   
   @js.native
   sealed trait te
@@ -2657,13 +2657,13 @@ object chromeDashAppsStrings {
   sealed trait tls1 extends js.Object
   
   @js.native
-  sealed trait tls1DOT1 extends js.Object
+  sealed trait tls1Dot1 extends js.Object
   
   @js.native
-  sealed trait tls1DOT2 extends js.Object
+  sealed trait tls1Dot2 extends js.Object
   
   @js.native
-  sealed trait tls1DOT3 extends js.Object
+  sealed trait tls1Dot3 extends js.Object
   
   @js.native
   sealed trait to
@@ -2942,11 +2942,7 @@ object chromeDashAppsStrings {
        with kLanguageInfoTable
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
   def `8021X`: `8021X` = "8021X".asInstanceOf[`8021X`]
-  @scala.inline
-  def `<all_urls>`: `<all_urls>` = "<all_urls>".asInstanceOf[`<all_urls>`]
   @scala.inline
   def ABORT: ABORT = "ABORT".asInstanceOf[ABORT]
   @scala.inline
@@ -2963,6 +2959,8 @@ object chromeDashAppsStrings {
   def AddResponseHeader: AddResponseHeader = "AddResponseHeader".asInstanceOf[AddResponseHeader]
   @scala.inline
   def All: All = "All".asInstanceOf[All]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def BLUETOOTH: BLUETOOTH = "BLUETOOTH".asInstanceOf[BLUETOOTH]
   @scala.inline
@@ -3018,8 +3016,6 @@ object chromeDashAppsStrings {
   @scala.inline
   def EditResponseCookie: EditResponseCookie = "EditResponseCookie".asInstanceOf[EditResponseCookie]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
   @scala.inline
   def Enabling: Enabling = "Enabling".asInstanceOf[Enabling]
@@ -3032,7 +3028,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def GOOG: GOOG = "GOOG".asInstanceOf[GOOG]
   @scala.inline
-  def GOOGDOT: GOOGDOT = "GOOG.".asInstanceOf[GOOGDOT]
+  def GOOGDot: GOOGDot = "GOOG.".asInstanceOf[GOOGDot]
   @scala.inline
   def GOOGLE: GOOGLE = "GOOGLE".asInstanceOf[GOOGLE]
   @scala.inline
@@ -3071,6 +3067,8 @@ object chromeDashAppsStrings {
   def KEYBOARD_MIC: KEYBOARD_MIC = "KEYBOARD_MIC".asInstanceOf[KEYBOARD_MIC]
   @scala.inline
   def LINEOUT: LINEOUT = "LINEOUT".asInstanceOf[LINEOUT]
+  @scala.inline
+  def Lessthansignall_urlsGreaterthansign: Lessthansignall_urlsGreaterthansign = "<all_urls>".asInstanceOf[Lessthansignall_urlsGreaterthansign]
   @scala.inline
   def MAX_ATTEMPTS_EXCEEDED: MAX_ATTEMPTS_EXCEEDED = "MAX_ATTEMPTS_EXCEEDED".asInstanceOf[MAX_ATTEMPTS_EXCEEDED]
   @scala.inline
@@ -3224,6 +3222,8 @@ object chromeDashAppsStrings {
   @scala.inline
   def Wireless: Wireless = "Wireless".asInstanceOf[Wireless]
   @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
   def abnormal: abnormal = "abnormal".asInstanceOf[abnormal]
   @scala.inline
   def abort_ : abort_ = "abort".asInstanceOf[abort_]
@@ -3266,17 +3266,17 @@ object chromeDashAppsStrings {
   @scala.inline
   def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   @scala.inline
-  def appDOTwindowDOTalpha: appDOTwindowDOTalpha = "app.window.alpha".asInstanceOf[appDOTwindowDOTalpha]
+  def appDotwindowDotalpha: appDotwindowDotalpha = "app.window.alpha".asInstanceOf[appDotwindowDotalpha]
   @scala.inline
-  def appDOTwindowDOTalwaysOnTop: appDOTwindowDOTalwaysOnTop = "app.window.alwaysOnTop".asInstanceOf[appDOTwindowDOTalwaysOnTop]
+  def appDotwindowDotalwaysOnTop: appDotwindowDotalwaysOnTop = "app.window.alwaysOnTop".asInstanceOf[appDotwindowDotalwaysOnTop]
   @scala.inline
-  def appDOTwindowDOTfullscreen: appDOTwindowDOTfullscreen = "app.window.fullscreen".asInstanceOf[appDOTwindowDOTfullscreen]
+  def appDotwindowDotfullscreen: appDotwindowDotfullscreen = "app.window.fullscreen".asInstanceOf[appDotwindowDotfullscreen]
   @scala.inline
-  def appDOTwindowDOTfullscreenDOToverrideEsc: appDOTwindowDOTfullscreenDOToverrideEsc = "app.window.fullscreen.overrideEsc".asInstanceOf[appDOTwindowDOTfullscreenDOToverrideEsc]
+  def appDotwindowDotfullscreenDotoverrideEsc: appDotwindowDotfullscreenDotoverrideEsc = "app.window.fullscreen.overrideEsc".asInstanceOf[appDotwindowDotfullscreenDotoverrideEsc]
   @scala.inline
-  def appDOTwindowDOTime: appDOTwindowDOTime = "app.window.ime".asInstanceOf[appDOTwindowDOTime]
+  def appDotwindowDotime: appDotwindowDotime = "app.window.ime".asInstanceOf[appDotwindowDotime]
   @scala.inline
-  def appDOTwindowDOTshape: appDOTwindowDOTshape = "app.window.shape".asInstanceOf[appDOTwindowDOTshape]
+  def appDotwindowDotshape: appDotwindowDotshape = "app.window.shape".asInstanceOf[appDotwindowDotshape]
   @scala.inline
   def app_launcher: app_launcher = "app_launcher".asInstanceOf[app_launcher]
   @scala.inline
@@ -3368,7 +3368,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]
   @scala.inline
-  def `chrome://favicon/`: `chrome://favicon/` = "chrome://favicon/".asInstanceOf[`chrome://favicon/`]
+  def chromeColonSlashSlashfaviconSlash: chromeColonSlashSlashfaviconSlash = "chrome://favicon/".asInstanceOf[chromeColonSlashSlashfaviconSlash]
   @scala.inline
   def chrome_internal: chrome_internal = "chrome_internal".asInstanceOf[chrome_internal]
   @scala.inline
@@ -3466,63 +3466,63 @@ object chromeDashAppsStrings {
   @scala.inline
   def debugger: debugger = "debugger".asInstanceOf[debugger]
   @scala.inline
-  def declarativeContentDOTPageStateMatcher: declarativeContentDOTPageStateMatcher = "declarativeContent.PageStateMatcher".asInstanceOf[declarativeContentDOTPageStateMatcher]
+  def declarativeContentDotPageStateMatcher: declarativeContentDotPageStateMatcher = "declarativeContent.PageStateMatcher".asInstanceOf[declarativeContentDotPageStateMatcher]
   @scala.inline
-  def declarativeContentDOTonAuthRequired: declarativeContentDOTonAuthRequired = "declarativeContent.onAuthRequired".asInstanceOf[declarativeContentDOTonAuthRequired]
+  def declarativeContentDotonAuthRequired: declarativeContentDotonAuthRequired = "declarativeContent.onAuthRequired".asInstanceOf[declarativeContentDotonAuthRequired]
   @scala.inline
-  def declarativeContentDOTonBeforeRedirect: declarativeContentDOTonBeforeRedirect = "declarativeContent.onBeforeRedirect".asInstanceOf[declarativeContentDOTonBeforeRedirect]
+  def declarativeContentDotonBeforeRedirect: declarativeContentDotonBeforeRedirect = "declarativeContent.onBeforeRedirect".asInstanceOf[declarativeContentDotonBeforeRedirect]
   @scala.inline
-  def declarativeContentDOTonBeforeRequest: declarativeContentDOTonBeforeRequest = "declarativeContent.onBeforeRequest".asInstanceOf[declarativeContentDOTonBeforeRequest]
+  def declarativeContentDotonBeforeRequest: declarativeContentDotonBeforeRequest = "declarativeContent.onBeforeRequest".asInstanceOf[declarativeContentDotonBeforeRequest]
   @scala.inline
-  def declarativeContentDOTonBeforeSendHeaders: declarativeContentDOTonBeforeSendHeaders = "declarativeContent.onBeforeSendHeaders".asInstanceOf[declarativeContentDOTonBeforeSendHeaders]
+  def declarativeContentDotonBeforeSendHeaders: declarativeContentDotonBeforeSendHeaders = "declarativeContent.onBeforeSendHeaders".asInstanceOf[declarativeContentDotonBeforeSendHeaders]
   @scala.inline
-  def declarativeContentDOTonCompleted: declarativeContentDOTonCompleted = "declarativeContent.onCompleted".asInstanceOf[declarativeContentDOTonCompleted]
+  def declarativeContentDotonCompleted: declarativeContentDotonCompleted = "declarativeContent.onCompleted".asInstanceOf[declarativeContentDotonCompleted]
   @scala.inline
-  def declarativeContentDOTonErrorOccured: declarativeContentDOTonErrorOccured = "declarativeContent.onErrorOccured".asInstanceOf[declarativeContentDOTonErrorOccured]
+  def declarativeContentDotonErrorOccured: declarativeContentDotonErrorOccured = "declarativeContent.onErrorOccured".asInstanceOf[declarativeContentDotonErrorOccured]
   @scala.inline
-  def declarativeContentDOTonHeadersReceived: declarativeContentDOTonHeadersReceived = "declarativeContent.onHeadersReceived".asInstanceOf[declarativeContentDOTonHeadersReceived]
+  def declarativeContentDotonHeadersReceived: declarativeContentDotonHeadersReceived = "declarativeContent.onHeadersReceived".asInstanceOf[declarativeContentDotonHeadersReceived]
   @scala.inline
-  def declarativeContentDOTonMessage: declarativeContentDOTonMessage = "declarativeContent.onMessage".asInstanceOf[declarativeContentDOTonMessage]
+  def declarativeContentDotonMessage: declarativeContentDotonMessage = "declarativeContent.onMessage".asInstanceOf[declarativeContentDotonMessage]
   @scala.inline
-  def declarativeContentDOTonRequest: declarativeContentDOTonRequest = "declarativeContent.onRequest".asInstanceOf[declarativeContentDOTonRequest]
+  def declarativeContentDotonRequest: declarativeContentDotonRequest = "declarativeContent.onRequest".asInstanceOf[declarativeContentDotonRequest]
   @scala.inline
-  def declarativeContentDOTonResponseStarted: declarativeContentDOTonResponseStarted = "declarativeContent.onResponseStarted".asInstanceOf[declarativeContentDOTonResponseStarted]
+  def declarativeContentDotonResponseStarted: declarativeContentDotonResponseStarted = "declarativeContent.onResponseStarted".asInstanceOf[declarativeContentDotonResponseStarted]
   @scala.inline
-  def declarativeContentDOTonSendHeaders: declarativeContentDOTonSendHeaders = "declarativeContent.onSendHeaders".asInstanceOf[declarativeContentDOTonSendHeaders]
+  def declarativeContentDotonSendHeaders: declarativeContentDotonSendHeaders = "declarativeContent.onSendHeaders".asInstanceOf[declarativeContentDotonSendHeaders]
   @scala.inline
-  def declarativeWebRequestDOTAddRequestCookie: declarativeWebRequestDOTAddRequestCookie = "declarativeWebRequest.AddRequestCookie".asInstanceOf[declarativeWebRequestDOTAddRequestCookie]
+  def declarativeWebRequestDotAddRequestCookie: declarativeWebRequestDotAddRequestCookie = "declarativeWebRequest.AddRequestCookie".asInstanceOf[declarativeWebRequestDotAddRequestCookie]
   @scala.inline
-  def declarativeWebRequestDOTAddResponseCookie: declarativeWebRequestDOTAddResponseCookie = "declarativeWebRequest.AddResponseCookie".asInstanceOf[declarativeWebRequestDOTAddResponseCookie]
+  def declarativeWebRequestDotAddResponseCookie: declarativeWebRequestDotAddResponseCookie = "declarativeWebRequest.AddResponseCookie".asInstanceOf[declarativeWebRequestDotAddResponseCookie]
   @scala.inline
-  def declarativeWebRequestDOTAddResponseHeader: declarativeWebRequestDOTAddResponseHeader = "declarativeWebRequest.AddResponseHeader".asInstanceOf[declarativeWebRequestDOTAddResponseHeader]
+  def declarativeWebRequestDotAddResponseHeader: declarativeWebRequestDotAddResponseHeader = "declarativeWebRequest.AddResponseHeader".asInstanceOf[declarativeWebRequestDotAddResponseHeader]
   @scala.inline
-  def declarativeWebRequestDOTCancelRequest: declarativeWebRequestDOTCancelRequest = "declarativeWebRequest.CancelRequest".asInstanceOf[declarativeWebRequestDOTCancelRequest]
+  def declarativeWebRequestDotCancelRequest: declarativeWebRequestDotCancelRequest = "declarativeWebRequest.CancelRequest".asInstanceOf[declarativeWebRequestDotCancelRequest]
   @scala.inline
-  def declarativeWebRequestDOTEditRequestCookie: declarativeWebRequestDOTEditRequestCookie = "declarativeWebRequest.EditRequestCookie".asInstanceOf[declarativeWebRequestDOTEditRequestCookie]
+  def declarativeWebRequestDotEditRequestCookie: declarativeWebRequestDotEditRequestCookie = "declarativeWebRequest.EditRequestCookie".asInstanceOf[declarativeWebRequestDotEditRequestCookie]
   @scala.inline
-  def declarativeWebRequestDOTEditResponseCookie: declarativeWebRequestDOTEditResponseCookie = "declarativeWebRequest.EditResponseCookie".asInstanceOf[declarativeWebRequestDOTEditResponseCookie]
+  def declarativeWebRequestDotEditResponseCookie: declarativeWebRequestDotEditResponseCookie = "declarativeWebRequest.EditResponseCookie".asInstanceOf[declarativeWebRequestDotEditResponseCookie]
   @scala.inline
-  def declarativeWebRequestDOTIgnoreRules: declarativeWebRequestDOTIgnoreRules = "declarativeWebRequest.IgnoreRules".asInstanceOf[declarativeWebRequestDOTIgnoreRules]
+  def declarativeWebRequestDotIgnoreRules: declarativeWebRequestDotIgnoreRules = "declarativeWebRequest.IgnoreRules".asInstanceOf[declarativeWebRequestDotIgnoreRules]
   @scala.inline
-  def declarativeWebRequestDOTRedirectByRegEx: declarativeWebRequestDOTRedirectByRegEx = "declarativeWebRequest.RedirectByRegEx".asInstanceOf[declarativeWebRequestDOTRedirectByRegEx]
+  def declarativeWebRequestDotRedirectByRegEx: declarativeWebRequestDotRedirectByRegEx = "declarativeWebRequest.RedirectByRegEx".asInstanceOf[declarativeWebRequestDotRedirectByRegEx]
   @scala.inline
-  def declarativeWebRequestDOTRedirectRequest: declarativeWebRequestDOTRedirectRequest = "declarativeWebRequest.RedirectRequest".asInstanceOf[declarativeWebRequestDOTRedirectRequest]
+  def declarativeWebRequestDotRedirectRequest: declarativeWebRequestDotRedirectRequest = "declarativeWebRequest.RedirectRequest".asInstanceOf[declarativeWebRequestDotRedirectRequest]
   @scala.inline
-  def declarativeWebRequestDOTRedirectToEmptyDocument: declarativeWebRequestDOTRedirectToEmptyDocument = "declarativeWebRequest.RedirectToEmptyDocument".asInstanceOf[declarativeWebRequestDOTRedirectToEmptyDocument]
+  def declarativeWebRequestDotRedirectToEmptyDocument: declarativeWebRequestDotRedirectToEmptyDocument = "declarativeWebRequest.RedirectToEmptyDocument".asInstanceOf[declarativeWebRequestDotRedirectToEmptyDocument]
   @scala.inline
-  def declarativeWebRequestDOTRedirectToTransparentImage: declarativeWebRequestDOTRedirectToTransparentImage = "declarativeWebRequest.RedirectToTransparentImage".asInstanceOf[declarativeWebRequestDOTRedirectToTransparentImage]
+  def declarativeWebRequestDotRedirectToTransparentImage: declarativeWebRequestDotRedirectToTransparentImage = "declarativeWebRequest.RedirectToTransparentImage".asInstanceOf[declarativeWebRequestDotRedirectToTransparentImage]
   @scala.inline
-  def declarativeWebRequestDOTRemoveRequestCookie: declarativeWebRequestDOTRemoveRequestCookie = "declarativeWebRequest.RemoveRequestCookie".asInstanceOf[declarativeWebRequestDOTRemoveRequestCookie]
+  def declarativeWebRequestDotRemoveRequestCookie: declarativeWebRequestDotRemoveRequestCookie = "declarativeWebRequest.RemoveRequestCookie".asInstanceOf[declarativeWebRequestDotRemoveRequestCookie]
   @scala.inline
-  def declarativeWebRequestDOTRemoveRequestHeader: declarativeWebRequestDOTRemoveRequestHeader = "declarativeWebRequest.RemoveRequestHeader".asInstanceOf[declarativeWebRequestDOTRemoveRequestHeader]
+  def declarativeWebRequestDotRemoveRequestHeader: declarativeWebRequestDotRemoveRequestHeader = "declarativeWebRequest.RemoveRequestHeader".asInstanceOf[declarativeWebRequestDotRemoveRequestHeader]
   @scala.inline
-  def declarativeWebRequestDOTRemoveResponseCookie: declarativeWebRequestDOTRemoveResponseCookie = "declarativeWebRequest.RemoveResponseCookie".asInstanceOf[declarativeWebRequestDOTRemoveResponseCookie]
+  def declarativeWebRequestDotRemoveResponseCookie: declarativeWebRequestDotRemoveResponseCookie = "declarativeWebRequest.RemoveResponseCookie".asInstanceOf[declarativeWebRequestDotRemoveResponseCookie]
   @scala.inline
-  def declarativeWebRequestDOTRemoveResponseHeader: declarativeWebRequestDOTRemoveResponseHeader = "declarativeWebRequest.RemoveResponseHeader".asInstanceOf[declarativeWebRequestDOTRemoveResponseHeader]
+  def declarativeWebRequestDotRemoveResponseHeader: declarativeWebRequestDotRemoveResponseHeader = "declarativeWebRequest.RemoveResponseHeader".asInstanceOf[declarativeWebRequestDotRemoveResponseHeader]
   @scala.inline
-  def declarativeWebRequestDOTSendMessageToExtension: declarativeWebRequestDOTSendMessageToExtension = "declarativeWebRequest.SendMessageToExtension".asInstanceOf[declarativeWebRequestDOTSendMessageToExtension]
+  def declarativeWebRequestDotSendMessageToExtension: declarativeWebRequestDotSendMessageToExtension = "declarativeWebRequest.SendMessageToExtension".asInstanceOf[declarativeWebRequestDotSendMessageToExtension]
   @scala.inline
-  def declarativeWebRequestDOTSetRequestHeader: declarativeWebRequestDOTSetRequestHeader = "declarativeWebRequest.SetRequestHeader".asInstanceOf[declarativeWebRequestDOTSetRequestHeader]
+  def declarativeWebRequestDotSetRequestHeader: declarativeWebRequestDotSetRequestHeader = "declarativeWebRequest.SetRequestHeader".asInstanceOf[declarativeWebRequestDotSetRequestHeader]
   @scala.inline
   def deleted_ : deleted_ = "deleted".asInstanceOf[deleted_]
   @scala.inline
@@ -3630,9 +3630,9 @@ object chromeDashAppsStrings {
   @scala.inline
   def endpoint: endpoint = "endpoint".asInstanceOf[endpoint]
   @scala.inline
-  def enterpriseDOTdeviceAttributes: enterpriseDOTdeviceAttributes = "enterprise.deviceAttributes".asInstanceOf[enterpriseDOTdeviceAttributes]
+  def enterpriseDotdeviceAttributes: enterpriseDotdeviceAttributes = "enterprise.deviceAttributes".asInstanceOf[enterpriseDotdeviceAttributes]
   @scala.inline
-  def enterpriseDOTplatformKeys: enterpriseDOTplatformKeys = "enterprise.platformKeys".asInstanceOf[enterpriseDOTplatformKeys]
+  def enterpriseDotplatformKeys: enterpriseDotplatformKeys = "enterprise.platformKeys".asInstanceOf[enterpriseDotplatformKeys]
   @scala.inline
   def eo: eo = "eo".asInstanceOf[eo]
   @scala.inline
@@ -3696,9 +3696,9 @@ object chromeDashAppsStrings {
   @scala.inline
   def fil: fil = "fil".asInstanceOf[fil]
   @scala.inline
-  def `file:///*/*`: `file:///*/*` = "file:///*/*".asInstanceOf[`file:///*/*`]
-  @scala.inline
   def fileBrowserHandler: fileBrowserHandler = "fileBrowserHandler".asInstanceOf[fileBrowserHandler]
+  @scala.inline
+  def fileColonSlashSlashSlashAsteriskSlashAsterisk: fileColonSlashSlashSlashAsteriskSlashAsterisk = "file:///*/*".asInstanceOf[fileColonSlashSlashSlashAsteriskSlashAsterisk]
   @scala.inline
   def fileSystem: fileSystem = "fileSystem".asInstanceOf[fileSystem]
   @scala.inline
@@ -3760,7 +3760,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def gn: gn = "gn".asInstanceOf[gn]
   @scala.inline
-  def googDOT_ : googDOT_ = "goog.".asInstanceOf[googDOT_]
+  def googDot: googDot = "goog.".asInstanceOf[googDot]
   @scala.inline
   def goog_ : goog_ = "goog".asInstanceOf[goog_]
   @scala.inline
@@ -3790,13 +3790,13 @@ object chromeDashAppsStrings {
   @scala.inline
   def ht: ht = "ht".asInstanceOf[ht]
   @scala.inline
-  def `http://*/*`: `http://*/*` = "http://*/*".asInstanceOf[`http://*/*`]
+  def httpColonSlashSlashAsteriskSlashAsterisk: httpColonSlashSlashAsteriskSlashAsterisk = "http://*/*".asInstanceOf[httpColonSlashSlashAsteriskSlashAsterisk]
   @scala.inline
-  def `https://*/*`: `https://*/*` = "https://*/*".asInstanceOf[`https://*/*`]
+  def httpsColonSlashSlashAsteriskSlashAsterisk: httpsColonSlashSlashAsteriskSlashAsterisk = "https://*/*".asInstanceOf[httpsColonSlashSlashAsteriskSlashAsterisk]
   @scala.inline
-  def `https://wwwDOTgoogle-analyticsDOTcom/*`: `https://wwwDOTgoogle-analyticsDOTcom/*` = "https://www.google-analytics.com/*".asInstanceOf[`https://wwwDOTgoogle-analyticsDOTcom/*`]
+  def `httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`: `httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk` = "https://www.google-analytics.com/*".asInstanceOf[`httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`]
   @scala.inline
-  def `https://wwwDOTgoogleapisDOTcom/*`: `https://wwwDOTgoogleapisDOTcom/*` = "https://www.googleapis.com/*".asInstanceOf[`https://wwwDOTgoogleapisDOTcom/*`]
+  def httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk: httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk = "https://www.googleapis.com/*".asInstanceOf[httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk]
   @scala.inline
   def hu: hu = "hu".asInstanceOf[hu]
   @scala.inline
@@ -4040,9 +4040,9 @@ object chromeDashAppsStrings {
   @scala.inline
   def network: network = "network".asInstanceOf[network]
   @scala.inline
-  def networkingDOTconfig: networkingDOTconfig = "networking.config".asInstanceOf[networkingDOTconfig]
+  def networkingDotconfig: networkingDotconfig = "networking.config".asInstanceOf[networkingDotconfig]
   @scala.inline
-  def networkingDOTonc: networkingDOTonc = "networking.onc".asInstanceOf[networkingDOTonc]
+  def networkingDotonc: networkingDotonc = "networking.onc".asInstanceOf[networkingDotonc]
   @scala.inline
   def new_background_tab: new_background_tab = "new_background_tab".asInstanceOf[new_background_tab]
   @scala.inline
@@ -4378,17 +4378,17 @@ object chromeDashAppsStrings {
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   @scala.inline
-  def systemDOTcpu: systemDOTcpu = "system.cpu".asInstanceOf[systemDOTcpu]
+  def systemDotcpu: systemDotcpu = "system.cpu".asInstanceOf[systemDotcpu]
   @scala.inline
-  def systemDOTdisplay: systemDOTdisplay = "system.display".asInstanceOf[systemDOTdisplay]
+  def systemDotdisplay: systemDotdisplay = "system.display".asInstanceOf[systemDotdisplay]
   @scala.inline
-  def systemDOTmemory: systemDOTmemory = "system.memory".asInstanceOf[systemDOTmemory]
+  def systemDotmemory: systemDotmemory = "system.memory".asInstanceOf[systemDotmemory]
   @scala.inline
-  def systemDOTnetwork: systemDOTnetwork = "system.network".asInstanceOf[systemDOTnetwork]
+  def systemDotnetwork: systemDotnetwork = "system.network".asInstanceOf[systemDotnetwork]
   @scala.inline
-  def systemDOTpowerSource: systemDOTpowerSource = "system.powerSource".asInstanceOf[systemDOTpowerSource]
+  def systemDotpowerSource: systemDotpowerSource = "system.powerSource".asInstanceOf[systemDotpowerSource]
   @scala.inline
-  def systemDOTstorage: systemDOTstorage = "system.storage".asInstanceOf[systemDOTstorage]
+  def systemDotstorage: systemDotstorage = "system.storage".asInstanceOf[systemDotstorage]
   @scala.inline
   def system_error: system_error = "system_error".asInstanceOf[system_error]
   @scala.inline
@@ -4428,11 +4428,11 @@ object chromeDashAppsStrings {
   @scala.inline
   def tls1: tls1 = "tls1".asInstanceOf[tls1]
   @scala.inline
-  def tls1DOT1: tls1DOT1 = "tls1.1".asInstanceOf[tls1DOT1]
+  def tls1Dot1: tls1Dot1 = "tls1.1".asInstanceOf[tls1Dot1]
   @scala.inline
-  def tls1DOT2: tls1DOT2 = "tls1.2".asInstanceOf[tls1DOT2]
+  def tls1Dot2: tls1Dot2 = "tls1.2".asInstanceOf[tls1Dot2]
   @scala.inline
-  def tls1DOT3: tls1DOT3 = "tls1.3".asInstanceOf[tls1DOT3]
+  def tls1Dot3: tls1Dot3 = "tls1.3".asInstanceOf[tls1Dot3]
   @scala.inline
   def to: to = "to".asInstanceOf[to]
   @scala.inline

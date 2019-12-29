@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait SelectEventArgs extends js.Object {
   /** returns the color picker model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ColorPicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -18,11 +18,7 @@ trait SelectEventArgs extends js.Object {
 
 object SelectEventArgs {
   @scala.inline
-  def apply(
-    model: typings.ejDotWebDotAll.ej.ColorPicker.Model = null,
-    `type`: String = null,
-    value: String = null
-  ): SelectEventArgs = {
+  def apply(model: Model = null, `type`: String = null, value: String = null): SelectEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

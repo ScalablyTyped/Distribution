@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerArrayContainerMod.ArrayContainer
 import typings.tstl.baseIteratorArrayIteratorMod.ArrayIterator
 import typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator
-import typings.tstl.containerDequeMod.Deque
 import typings.tstl.containerDequeMod.Deque.Iterator
 import typings.tstl.containerDequeMod.Deque.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator

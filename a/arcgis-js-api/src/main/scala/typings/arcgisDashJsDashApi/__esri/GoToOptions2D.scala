@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`ease-in-out`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`ease-in`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`ease-out`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ease
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.linear
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
@@ -25,9 +30,9 @@ trait GoToOptions2D extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GoToOptions2D)
     */
-  var easing: js.UndefOr[String | js.Function] = js.undefined
+  var easing: js.UndefOr[linear | ease | `ease-in` | `ease-out` | `ease-in-out` | js.Function] = js.undefined
   /**
-    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the animation. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).  **Possible Values:** linear | ease | ease-in | ease-out | ease-in-out
+    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the animation. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GoToOptions2D)
     */
@@ -42,7 +47,7 @@ object GoToOptions2D {
     propertyIsEnumerable: PropertyKey => Boolean,
     animate: js.UndefOr[Boolean] = js.undefined,
     duration: Int | Double = null,
-    easing: String | js.Function = null,
+    easing: linear | ease | `ease-in` | `ease-out` | `ease-in-out` | js.Function = null,
     signal: AbortSignal = null
   ): GoToOptions2D = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))

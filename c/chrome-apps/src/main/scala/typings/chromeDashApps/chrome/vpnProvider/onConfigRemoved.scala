@@ -1,6 +1,7 @@
 package typings.chromeDashApps.chrome.vpnProvider
 
 import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.vpnProvider.onConfigRemoved")
 @js.native
 object onConfigRemoved
-  extends TopLevel[typings.chromeDashApps.chrome.events.Event[js.Function1[/* id */ String, Unit]]]
+  extends TopLevel[Event[js.Function1[/* id */ String, Unit]]]
 

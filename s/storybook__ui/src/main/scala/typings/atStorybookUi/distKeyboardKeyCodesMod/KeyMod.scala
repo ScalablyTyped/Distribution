@@ -1,10 +1,6 @@
 package typings.atStorybookUi.distKeyboardKeyCodesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.Alt
-import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.CtrlCmd
-import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.Shift
-import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.WinCtrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

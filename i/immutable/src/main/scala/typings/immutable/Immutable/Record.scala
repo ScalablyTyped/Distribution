@@ -2,7 +2,6 @@ package typings.immutable.Immutable
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.immutable.Immutable.Record.Factory
 import typings.immutable.Immutable.Seq.Keyed
 import typings.std.Iterable
 import typings.std.IterableIterator

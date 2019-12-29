@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object iterallMod extends js.Object {
   @JSName("$$asyncIterator")
-  var $$asyncIterator: js.Symbol = js.native
+  var DollarDollarasyncIterator: js.Symbol = js.native
   @JSName("$$iterator")
-  var $$iterator: js.Symbol = js.native
+  var DollarDollariterator: js.Symbol = js.native
   def createAsyncIterator(collection: js.Any): Unit | (AsyncIterator[_, _, js.UndefOr[scala.Nothing]]) = js.native
   def createAsyncIterator(collection: Anon_Length): AsyncIterator[_, _, js.UndefOr[scala.Nothing]] = js.native
   def createAsyncIterator[TValue](collection: AsyncIterable[TValue]): AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native

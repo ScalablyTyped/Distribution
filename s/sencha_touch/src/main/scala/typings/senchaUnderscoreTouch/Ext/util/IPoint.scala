@@ -49,7 +49,7 @@ trait IPoint extends IBase {
   		* @returns String For example Point[12,8].
   		*/
   @JSName("toString")
-  var toString_FIPoint: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIPoint: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Translate this point by the given amounts
   		* @param x Number Amount to translate in the x-axis.
   		* @param y Number Amount to translate in the y-axis.
@@ -72,8 +72,8 @@ object IPoint {
     copyFrom: /* point */ js.UndefOr[js.Any] => IPoint = null,
     destroy: () => Unit = null,
     equals: /* point */ js.UndefOr[js.Any] => Boolean = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     isCloseTo: (/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean = null,
@@ -84,7 +84,7 @@ object IPoint {
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     translate: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean = null,
     uses: Array = null
   ): IPoint = {

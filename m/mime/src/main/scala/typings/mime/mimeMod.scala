@@ -1,8 +1,6 @@
 package typings.mime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mime.mimeMod.Mime
-import typings.mime.mimeMod.TypeMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

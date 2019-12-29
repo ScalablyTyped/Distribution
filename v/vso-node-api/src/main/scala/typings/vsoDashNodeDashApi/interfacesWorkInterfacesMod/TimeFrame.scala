@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimeFrame.Current
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimeFrame.Future
-import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimeFrame.Past
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

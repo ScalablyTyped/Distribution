@@ -16,7 +16,7 @@ trait ContentLoadEventArgs extends js.Object {
   var contentType: js.UndefOr[js.Any] = js.undefined
   /** Instance of the dialog model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Dialog.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object ContentLoadEventArgs {
     URL: String = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     contentType: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Dialog.Model = null,
+    model: Model = null,
     `type`: String = null
   ): ContentLoadEventArgs = {
     val __obj = js.Dynamic.literal()

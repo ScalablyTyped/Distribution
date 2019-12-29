@@ -1,16 +1,6 @@
 package typings.bip174.srcLibTypeFieldsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.BIP32_DERIVATION
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.FINAL_SCRIPTSIG
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.FINAL_SCRIPTWITNESS
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.NON_WITNESS_UTXO
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.PARTIAL_SIG
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.POR_COMMITMENT
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.REDEEM_SCRIPT
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.SIGHASH_TYPE
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.WITNESS_SCRIPT
-import typings.bip174.srcLibTypeFieldsMod.InputTypes.WITNESS_UTXO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

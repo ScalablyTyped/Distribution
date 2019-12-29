@@ -1,10 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ChartSplitType.splitByCustomSplit
-import typings.officeDashJs.Excel.ChartSplitType.splitByPercentValue
-import typings.officeDashJs.Excel.ChartSplitType.splitByPosition
-import typings.officeDashJs.Excel.ChartSplitType.splitByValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

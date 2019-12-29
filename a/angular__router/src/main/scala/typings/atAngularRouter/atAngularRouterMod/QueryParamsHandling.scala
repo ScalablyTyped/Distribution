@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.atAngularRouter.atAngularRouterStrings.merge
   - typings.atAngularRouter.atAngularRouterStrings.preserve
-  - typings.atAngularRouter.atAngularRouterStrings.Empty
+  - typings.atAngularRouter.atAngularRouterStrings._empty
 */
 trait QueryParamsHandling extends js.Object
 
 object QueryParamsHandling {
   @scala.inline
-  def Empty: typings.atAngularRouter.atAngularRouterStrings.Empty = this.cast("")
+  def _empty: typings.atAngularRouter.atAngularRouterStrings._empty = this.cast("")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

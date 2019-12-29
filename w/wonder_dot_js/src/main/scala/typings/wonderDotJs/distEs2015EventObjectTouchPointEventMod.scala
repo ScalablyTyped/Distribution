@@ -3,7 +3,6 @@ package typings.wonderDotJs
 import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
 import typings.wonderDotJs.distEs2015EventObjectPointEventMod.PointEvent
 import typings.wonderDotJs.distEs2015EventObjectTouchEventMod.TouchEvent
-import typings.wonderDotJs.distEs2015EventObjectTouchPointEventMod.TouchPointEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

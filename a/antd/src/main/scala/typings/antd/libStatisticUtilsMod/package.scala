@@ -8,7 +8,7 @@ package object libStatisticUtilsMod {
   import typings.react.reactMod.ReactNode
 
   /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdNumbers.`false`
+    - typings.antd.antdBooleans.`false`
     - typings.antd.antdStrings.number
     - typings.antd.antdStrings.countdown
     - js.Function2[

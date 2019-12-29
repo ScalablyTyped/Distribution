@@ -1,7 +1,7 @@
 package typings.atBabelTypes.atBabelTypesMod
 
-import typings.atBabelTypes.atBabelTypesNumbers.`false`
-import typings.atBabelTypes.atBabelTypesNumbers.`true`
+import typings.atBabelTypes.atBabelTypesBooleans.`false`
+import typings.atBabelTypes.atBabelTypesBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

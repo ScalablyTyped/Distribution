@@ -1,13 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DeleteOptions.All
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DeleteOptions.Details
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DeleteOptions.DropLocation
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DeleteOptions.Label
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DeleteOptions.None
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DeleteOptions.Symbols
-import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DeleteOptions.TestResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

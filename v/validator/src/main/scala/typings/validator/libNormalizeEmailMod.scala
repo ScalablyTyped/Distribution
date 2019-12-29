@@ -1,7 +1,7 @@
 package typings.validator
 
+import typings.validator.validatorBooleans.`false`
 import typings.validator.validatorMod.validator.NormalizeEmailOptions
-import typings.validator.validatorNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

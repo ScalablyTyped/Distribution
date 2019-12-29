@@ -23,7 +23,8 @@ class FillFormat protected () extends js.Object {
   val Application: js.Any = js.native
   var BackColor: ColorFormat = js.native
   val Creator: Double = js.native
-  var `Excel.FillFormat_typekey`: FillFormat = js.native
+  @JSName("Excel.FillFormat_typekey")
+  var ExcelDotFillFormat_typekey: FillFormat = js.native
   var ForeColor: ColorFormat = js.native
   var GradientAngle: Double = js.native
   val GradientColorType: MsoGradientColorType = js.native

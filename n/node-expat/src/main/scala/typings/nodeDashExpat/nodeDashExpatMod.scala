@@ -2,7 +2,6 @@ package typings.nodeDashExpat
 
 import typings.node.Buffer
 import typings.node.streamMod.internal
-import typings.nodeDashExpat.nodeDashExpatMod.Parser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

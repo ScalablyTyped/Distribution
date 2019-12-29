@@ -1,6 +1,6 @@
 package typings.instagramDashPrivateDashApi.distTypesMediaDotConfigureDashStoryDotOptionsMod
 
-import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiNumbers.`true`
+import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiBooleans.`true`
 import typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.text_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

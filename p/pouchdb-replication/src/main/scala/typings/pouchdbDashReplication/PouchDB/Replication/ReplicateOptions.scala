@@ -2,7 +2,7 @@ package typings.pouchdbDashReplication.PouchDB.Replication
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pouchdbDashFind.PouchDB.Find.Selector
-import typings.pouchdbDashReplication.pouchdbDashReplicationNumbers.`false`
+import typings.pouchdbDashReplication.pouchdbDashReplicationBooleans.`false`
 import typings.pouchdbDashReplication.pouchdbDashReplicationStrings.source
 import typings.pouchdbDashReplication.pouchdbDashReplicationStrings.target
 import scala.scalajs.js

@@ -1,10 +1,6 @@
 package typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.ipc
-import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.pipe
-import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.socket
-import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.stdio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class MergeEventObject protected () extends js.Object {
   val Count: Double = js.native
   val DOM: IXMLDOMDocument = js.native
-  var `InfoPath.MergeEventObject_typekey`: MergeEventObject = js.native
+  @JSName("InfoPath.MergeEventObject_typekey")
+  var InfoPathDotMergeEventObject_typekey: MergeEventObject = js.native
   var ReturnStatus: Boolean = js.native
   var RollBack: Boolean = js.native
   val XDocument: _XDocument = js.native

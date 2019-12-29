@@ -1,12 +1,7 @@
 package typings.heremaps.H
 
 import org.scalablytyped.runtime.TopLevel
-import typings.heremaps.H.data.AbstractReader
 import typings.heremaps.H.data.AbstractReader.State
-import typings.heremaps.H.data.AbstractReader.State.ERROR
-import typings.heremaps.H.data.AbstractReader.State.LOADING
-import typings.heremaps.H.data.AbstractReader.State.READY
-import typings.heremaps.H.data.AbstractReader.State.VISIT
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.map.layer.ObjectLayer
 import typings.heremaps.H.util.EventTarget

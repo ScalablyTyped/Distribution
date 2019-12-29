@@ -1,6 +1,6 @@
 package typings.atHapiWreck.atHapiWreckMod
 
-import typings.atHapiWreck.atHapiWreckNumbers.`true`
+import typings.atHapiWreck.atHapiWreckBooleans.`true`
 import typings.atHapiWreck.atHapiWreckStrings.force
 import typings.atHapiWreck.atHapiWreckStrings.strict
 import scala.scalajs.js

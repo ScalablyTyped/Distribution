@@ -30,7 +30,7 @@ object watch extends js.Object {
   def apply(
     filename: PathLike,
     options: Null,
-    listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
+    listener: js.Function2[/* event */ String, Buffer | String, Unit]
   ): FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.

@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.TextEditorLineNumbersStyle.Off
-import typings.vscode.vscodeMod.TextEditorLineNumbersStyle.On
-import typings.vscode.vscodeMod.TextEditorLineNumbersStyle.Relative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

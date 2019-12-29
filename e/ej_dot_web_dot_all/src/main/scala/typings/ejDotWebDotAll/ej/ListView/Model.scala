@@ -18,7 +18,7 @@ trait Model extends js.Object {
   /** Specifies the ajaxSettings option to load the items to the ListView control.
     * @Default {null}
     */
-  var ajaxSettings: js.UndefOr[typings.ejDotWebDotAll.ej.ListView.AjaxSettings] = js.undefined
+  var ajaxSettings: js.UndefOr[AjaxSettings] = js.undefined
   /** Event triggers after the AJAX content loaded successfully.
     */
   var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
@@ -153,7 +153,7 @@ object Model {
     ajaxBeforeLoad: /* e */ AjaxBeforeLoadEventArgs => Unit = null,
     ajaxComplete: /* e */ AjaxCompleteEventArgs => Unit = null,
     ajaxError: /* e */ AjaxErrorEventArgs => Unit = null,
-    ajaxSettings: typings.ejDotWebDotAll.ej.ListView.AjaxSettings = null,
+    ajaxSettings: AjaxSettings = null,
     ajaxSuccess: /* e */ AjaxSuccessEventArgs => Unit = null,
     allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined,
     checkedIndices: js.Array[_] = null,

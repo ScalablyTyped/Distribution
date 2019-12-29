@@ -11,8 +11,8 @@ trait GeoCircleGenerator[This, Datum] extends js.Object {
     * Returns a new GeoJSON geometry object of type “Polygon” approximating a circle on the surface of a sphere,
     * with the current center, radius and precision. Any arguments are passed to the accessors.
     */
-  def apply(`this`: This): Polygon = js.native
-  def apply(`this`: This, d: Datum, args: js.Any*): Polygon = js.native
+  def apply(): Polygon = js.native
+  def apply(d: Datum, args: js.Any*): Polygon = js.native
   /**
     * Returns the current center accessor, which defaults to a function returning [0, 0].
     */

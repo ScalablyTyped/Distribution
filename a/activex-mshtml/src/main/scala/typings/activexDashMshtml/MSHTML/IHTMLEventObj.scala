@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLEventObj")
 @js.native
 class IHTMLEventObj protected () extends js.Object {
-  var `MSHTML.IHTMLEventObj_typekey`: IHTMLEventObj = js.native
+  @JSName("MSHTML.IHTMLEventObj_typekey")
+  var MSHTMLDotIHTMLEventObj_typekey: IHTMLEventObj = js.native
   val altKey: Boolean = js.native
   val button: Double = js.native
   var cancelBubble: Boolean = js.native

@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.bar
-import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.center
-import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.decimal
-import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.left
-import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

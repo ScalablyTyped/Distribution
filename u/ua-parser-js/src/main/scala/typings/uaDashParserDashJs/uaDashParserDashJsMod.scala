@@ -6,7 +6,6 @@ import typings.uaDashParserDashJs.IUAParser.IDevice
 import typings.uaDashParserDashJs.IUAParser.IEngine
 import typings.uaDashParserDashJs.IUAParser.IOS
 import typings.uaDashParserDashJs.IUAParser.IResult
-import typings.uaDashParserDashJs.uaDashParserDashJsMod.UAParser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

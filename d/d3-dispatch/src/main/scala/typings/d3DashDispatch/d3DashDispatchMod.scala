@@ -1,6 +1,5 @@
 package typings.d3DashDispatch
 
-import typings.d3DashDispatch.d3DashDispatchMod.Dispatch
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

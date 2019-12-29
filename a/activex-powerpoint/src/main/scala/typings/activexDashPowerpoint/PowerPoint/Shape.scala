@@ -64,7 +64,8 @@ class Shape protected () extends js.Object {
   val ParentGroup: Shape = js.native
   val PictureFormat: typings.activexDashPowerpoint.PowerPoint.PictureFormat = js.native
   val PlaceholderFormat: typings.activexDashPowerpoint.PowerPoint.PlaceholderFormat = js.native
-  var `PowerPoint.Shape_typekey`: Shape = js.native
+  @JSName("PowerPoint.Shape_typekey")
+  var PowerPointDotShape_typekey: Shape = js.native
   val RTF: String = js.native
   val Reflection: ReflectionFormat = js.native
   var Rotation: Double = js.native

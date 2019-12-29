@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Input.CrossSlidingState.completed
-import typings.winrtDashUwp.Windows.UI.Input.CrossSlidingState.dragging
-import typings.winrtDashUwp.Windows.UI.Input.CrossSlidingState.rearranging
-import typings.winrtDashUwp.Windows.UI.Input.CrossSlidingState.selectSpeedBumping
-import typings.winrtDashUwp.Windows.UI.Input.CrossSlidingState.selecting
-import typings.winrtDashUwp.Windows.UI.Input.CrossSlidingState.speedBumping
-import typings.winrtDashUwp.Windows.UI.Input.CrossSlidingState.started
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

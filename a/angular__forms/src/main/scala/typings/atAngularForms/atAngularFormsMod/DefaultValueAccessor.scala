@@ -19,7 +19,7 @@ class DefaultValueAccessor protected () extends ControlValueAccessor {
     * @description
     * The registered callback function called when an input event occurs on the input element.
     */
-  def onChange(`_`: js.Any): Unit = js.native
+  def onChange(_underscore: js.Any): Unit = js.native
   /**
     * @description
     * The registered callback function called when a blur event occurs on the input element.

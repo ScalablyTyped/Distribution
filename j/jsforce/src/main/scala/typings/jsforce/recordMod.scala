@@ -2,7 +2,6 @@ package typings.jsforce
 
 import typings.jsforce.connectionMod.Connection
 import typings.jsforce.recordDashResultMod.RecordResult
-import typings.jsforce.recordMod.Record
 import typings.jsforce.salesforceDashIdMod.SalesforceId
 import typings.node.streamMod.Stream
 import typings.std.Error

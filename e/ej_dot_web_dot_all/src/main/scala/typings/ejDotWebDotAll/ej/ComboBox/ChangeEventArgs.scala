@@ -19,7 +19,7 @@ trait ChangeEventArgs extends js.Object {
   var isInteracted: js.UndefOr[Boolean] = js.undefined
   /** Instance of the combobox model object.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.ComboBox.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Name of the event.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -35,7 +35,7 @@ object ChangeEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     e: js.Any = null,
     isInteracted: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.ComboBox.Model = null,
+    model: Model = null,
     `type`: String = null,
     value: String | Double = null
   ): ChangeEventArgs = {

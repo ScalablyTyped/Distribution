@@ -42,6 +42,7 @@ class LetterContent protected () extends js.Object {
   var SenderName: String = js.native
   var SenderReference: String = js.native
   var Subject: String = js.native
-  var `Word.LetterContent_typekey`: LetterContent = js.native
+  @JSName("Word.LetterContent_typekey")
+  var WordDotLetterContent_typekey: LetterContent = js.native
 }
 

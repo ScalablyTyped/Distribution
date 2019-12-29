@@ -14,6 +14,7 @@ class OMathAutoCorrect protected () extends js.Object {
   val Parent: js.Any = js.native
   var ReplaceText: Boolean = js.native
   var UseOutsideOMath: Boolean = js.native
-  var `Word.OMathAutoCorrect_typekey`: OMathAutoCorrect = js.native
+  @JSName("Word.OMathAutoCorrect_typekey")
+  var WordDotOMathAutoCorrect_typekey: OMathAutoCorrect = js.native
 }
 

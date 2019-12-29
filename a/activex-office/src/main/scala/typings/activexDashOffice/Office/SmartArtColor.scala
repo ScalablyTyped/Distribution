@@ -13,7 +13,8 @@ class SmartArtColor protected () extends js.Object {
   val Description: String = js.native
   val Id: String = js.native
   val Name: String = js.native
-  var `Office.SmartArtColor_typekey`: SmartArtColor = js.native
+  @JSName("Office.SmartArtColor_typekey")
+  var OfficeDotSmartArtColor_typekey: SmartArtColor = js.native
   val Parent: js.Any = js.native
 }
 

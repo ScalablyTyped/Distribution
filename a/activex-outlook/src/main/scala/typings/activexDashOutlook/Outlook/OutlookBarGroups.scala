@@ -10,7 +10,8 @@ class OutlookBarGroups protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   val Count: Double = js.native
-  var `Outlook.OutlookBarGroups_typekey`: OutlookBarGroups = js.native
+  @JSName("Outlook.OutlookBarGroups_typekey")
+  var OutlookDotOutlookBarGroups_typekey: OutlookBarGroups = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String): OutlookBarGroup = js.native

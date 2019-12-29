@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat.mp4
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat.wmv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

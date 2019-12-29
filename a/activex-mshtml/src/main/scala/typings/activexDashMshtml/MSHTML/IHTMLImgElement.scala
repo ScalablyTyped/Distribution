@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLImgElement")
 @js.native
 class IHTMLImgElement protected () extends js.Object {
-  var `MSHTML.IHTMLImgElement_typekey`: IHTMLImgElement = js.native
+  @JSName("MSHTML.IHTMLImgElement_typekey")
+  var MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement = js.native
   var align: String = js.native
   var alt: String = js.native
   var border: js.Any = js.native

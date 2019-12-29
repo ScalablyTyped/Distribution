@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.entered
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.exited
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.none
-import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

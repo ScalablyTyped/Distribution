@@ -1,9 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.FileChangeType.Changed
-import typings.vscode.vscodeMod.FileChangeType.Created
-import typings.vscode.vscodeMod.FileChangeType.Deleted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

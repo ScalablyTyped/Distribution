@@ -1,10 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.editor.OverviewRulerLane.Center
-import typings.monacoDashEditor.monacoDashEditorMod.editor.OverviewRulerLane.Full
-import typings.monacoDashEditor.monacoDashEditorMod.editor.OverviewRulerLane.Left
-import typings.monacoDashEditor.monacoDashEditorMod.editor.OverviewRulerLane.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

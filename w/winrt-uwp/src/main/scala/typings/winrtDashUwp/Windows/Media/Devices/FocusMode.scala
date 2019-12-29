@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.FocusMode.auto
-import typings.winrtDashUwp.Windows.Media.Devices.FocusMode.continuous
-import typings.winrtDashUwp.Windows.Media.Devices.FocusMode.manual
-import typings.winrtDashUwp.Windows.Media.Devices.FocusMode.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,6 @@
 package typings.three.srcConstantsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcConstantsMod.TOUCH.DOLLY_PAN
-import typings.three.srcConstantsMod.TOUCH.DOLLY_ROTATE
-import typings.three.srcConstantsMod.TOUCH.PAN
-import typings.three.srcConstantsMod.TOUCH.ROTATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

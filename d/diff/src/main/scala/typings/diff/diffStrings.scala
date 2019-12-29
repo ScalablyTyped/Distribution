@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object diffStrings {
   @js.native
-  sealed trait ` ` extends js.Object
+  sealed trait `-_` extends js.Object
   
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait Space extends js.Object
   
   @scala.inline
-  def ` `: ` ` = " ".asInstanceOf[` `]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def Space: Space = " ".asInstanceOf[Space]
 }
 

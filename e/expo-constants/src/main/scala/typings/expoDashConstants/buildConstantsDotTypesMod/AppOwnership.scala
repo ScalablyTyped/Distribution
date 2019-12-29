@@ -1,9 +1,6 @@
 package typings.expoDashConstants.buildConstantsDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Expo
-import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Guest
-import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Standalone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

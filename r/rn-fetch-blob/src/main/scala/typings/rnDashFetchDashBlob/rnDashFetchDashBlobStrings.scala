@@ -11,9 +11,6 @@ object rnDashFetchDashBlobStrings {
   sealed trait DELETE extends Methods
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait GET extends Methods
   
   @js.native
@@ -21,6 +18,9 @@ object rnDashFetchDashBlobStrings {
   
   @js.native
   sealed trait PUT extends Methods
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait ascii extends Encoding
@@ -64,13 +64,13 @@ object rnDashFetchDashBlobStrings {
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
   @scala.inline

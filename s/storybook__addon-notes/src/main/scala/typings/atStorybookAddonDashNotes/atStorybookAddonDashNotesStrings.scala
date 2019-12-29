@@ -9,11 +9,11 @@ object atStorybookAddonDashNotesStrings {
   sealed trait notes extends js.Object
   
   @js.native
-  sealed trait `storybookjs/notes` extends js.Object
+  sealed trait storybookjsSlashnotes extends js.Object
   
   @scala.inline
   def notes: notes = "notes".asInstanceOf[notes]
   @scala.inline
-  def `storybookjs/notes`: `storybookjs/notes` = "storybookjs/notes".asInstanceOf[`storybookjs/notes`]
+  def storybookjsSlashnotes: storybookjsSlashnotes = "storybookjs/notes".asInstanceOf[storybookjsSlashnotes]
 }
 

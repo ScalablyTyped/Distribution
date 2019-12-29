@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSXML2.IVBSAXContentHandler")
 @js.native
 class IVBSAXContentHandler protected () extends js.Object {
-  var `MSXML2.IVBSAXContentHandler_typekey`: IVBSAXContentHandler = js.native
+  @JSName("MSXML2.IVBSAXContentHandler_typekey")
+  var MSXML2DotIVBSAXContentHandler_typekey: IVBSAXContentHandler = js.native
   /** Receive an object for locating the origin of SAX document events. */
   val documentLocator: IVBSAXLocator = js.native
   /** Receive notification of character data. */

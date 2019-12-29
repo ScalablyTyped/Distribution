@@ -1,50 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.A
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.B
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.C
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.D
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Delete
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Down
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.E
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Enter
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Escape
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.F
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.G
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.H
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.I
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.J
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.K
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.L
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Left
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.M
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.N
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number0
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number1
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number2
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number3
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number4
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number5
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number6
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number7
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number8
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Number9
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.O
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.P
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Q
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.R
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Right
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.S
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.T
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.U
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Up
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.V
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.W
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.X
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Y
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Z
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -349,8 +305,7 @@ object Keys extends js.Object {
   object T extends TopLevel[T with Double]
   
   /* 43 */ @js.native
-  object Tab
-    extends TopLevel[typings.ejDotWebDotAll.ej.datavisualization.Diagram.Keys.Tab with Double]
+  object Tab extends TopLevel[Tab with Double]
   
   /* 21 */ @js.native
   object U extends TopLevel[U with Double]

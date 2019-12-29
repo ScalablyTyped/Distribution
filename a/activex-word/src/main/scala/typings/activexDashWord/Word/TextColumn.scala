@@ -12,6 +12,7 @@ class TextColumn protected () extends js.Object {
   val Parent: js.Any = js.native
   var SpaceAfter: Double = js.native
   var Width: Double = js.native
-  var `Word.TextColumn_typekey`: TextColumn = js.native
+  @JSName("Word.TextColumn_typekey")
+  var WordDotTextColumn_typekey: TextColumn = js.native
 }
 

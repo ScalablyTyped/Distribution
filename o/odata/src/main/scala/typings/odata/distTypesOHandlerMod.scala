@@ -1,6 +1,5 @@
 package typings.odata
 
-import typings.odata.distTypesOHandlerMod.BodyType
 import typings.odata.distTypesORequestMod.ORequest
 import typings.odata.distTypesOdataConfigMod.OdataConfig
 import typings.odata.distTypesOdataQueryMod.OdataQuery

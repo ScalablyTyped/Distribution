@@ -2,7 +2,6 @@ package typings.plottable
 
 import typings.plottable.buildSrcCoreInterfacesMod.Point
 import typings.plottable.buildSrcInteractionsInteractionMod.Interaction
-import typings.plottable.buildSrcInteractionsPointerInteractionMod.PointerCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

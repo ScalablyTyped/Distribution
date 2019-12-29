@@ -19,25 +19,25 @@ trait PageOptions
   		 * 需要在页面对应的 .json 配置文件中配置 "pullRefresh": true 选项，才能开启下拉刷新事件。
   		 * 当处理完数据刷新后，调用 my.stopPullDownRefresh 可以停止当前页面的下拉刷新。
   		 */
-  var onPullDownRefresh: js.UndefOr[js.ThisFunction0[/* this */ typings.aliDashApp.my.Page, Unit]] = js.undefined
-  def onError(`this`: typings.aliDashApp.my.Page): Unit
-  def onHide(`this`: typings.aliDashApp.my.Page): Unit
-  def onLaunch(`this`: typings.aliDashApp.my.Page, options: Options): Unit
-  def onShow(`this`: typings.aliDashApp.my.Page, options: Options): Unit
+  var onPullDownRefresh: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
+  def onError(): Unit
+  def onHide(): Unit
+  def onLaunch(options: Options): Unit
+  def onShow(options: Options): Unit
 }
 
 object PageOptions {
   @scala.inline
   def apply(
     data: js.Any,
-    onError: typings.aliDashApp.my.Page => Unit,
-    onHide: typings.aliDashApp.my.Page => Unit,
-    onLaunch: (typings.aliDashApp.my.Page, Options) => Unit,
-    onShow: (typings.aliDashApp.my.Page, Options) => Unit,
+    onError: () => Unit,
+    onHide: () => Unit,
+    onLaunch: Options => Unit,
+    onShow: Options => Unit,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    onPullDownRefresh: js.ThisFunction0[/* this */ typings.aliDashApp.my.Page, Unit] = null
+    onPullDownRefresh: js.ThisFunction0[/* this */ Page, Unit] = null
   ): PageOptions = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError), onHide = js.Any.fromFunction1(onHide), onLaunch = js.Any.fromFunction2(onLaunch), onShow = js.Any.fromFunction2(onShow))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], onError = js.Any.fromFunction0(onError), onHide = js.Any.fromFunction0(onHide), onLaunch = js.Any.fromFunction1(onLaunch), onShow = js.Any.fromFunction1(onShow))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageOptions]

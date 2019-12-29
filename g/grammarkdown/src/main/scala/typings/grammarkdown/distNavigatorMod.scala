@@ -1,7 +1,6 @@
 package typings.grammarkdown
 
 import typings.grammarkdown.distCoreMod.Position
-import typings.grammarkdown.distNavigatorMod.NodeNavigator
 import typings.grammarkdown.distNodesMod.Node
 import typings.grammarkdown.distNodesMod.SourceFile
 import typings.grammarkdown.distTokensMod.SyntaxKind

@@ -1,7 +1,6 @@
 package typings.reactDashPose
 
 import typings.react.reactMod.Component
-import typings.reactDashPose.libComponentsTransitionPoseGroupMod.PoseGroup
 import typings.reactDashPose.libComponentsTransitionTypesMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`

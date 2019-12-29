@@ -3,7 +3,6 @@ package typings.wolfy87DashEventemitter.wolfy87DashEventemitterMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import typings.wolfy87DashEventemitter.Anon_Listener
-import typings.wolfy87DashEventemitter.wolfy87DashEventemitterMod.Wolfy87EventEmitter.MultipleEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

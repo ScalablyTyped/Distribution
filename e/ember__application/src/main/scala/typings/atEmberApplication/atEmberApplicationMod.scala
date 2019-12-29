@@ -1,6 +1,5 @@
 package typings.atEmberApplication
 
-import typings.atEmberApplication.atEmberApplicationMod.Application
 import typings.atEmberApplication.typesMod.EventDispatcherEvents
 import typings.std.HTMLElement
 import scala.scalajs.js

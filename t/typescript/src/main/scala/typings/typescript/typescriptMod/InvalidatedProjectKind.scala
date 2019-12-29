@@ -1,9 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.InvalidatedProjectKind.Build
-import typings.typescript.typescriptMod.InvalidatedProjectKind.UpdateBundle
-import typings.typescript.typescriptMod.InvalidatedProjectKind.UpdateOutputFileStamps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

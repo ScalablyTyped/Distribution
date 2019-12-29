@@ -4,7 +4,6 @@ import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractComponent2
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
 import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType
-import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantStackMod.ITableQuadrantStackProps
 import typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption
 import typings.react.reactMod.EventHandler
 import typings.react.reactMod.SyntheticEvent

@@ -1,7 +1,7 @@
 package typings.xstate.libTypesMod
 
 import typings.xstate.libStateNodeMod.StateNode
-import typings.xstate.xstateNumbers.`false`
+import typings.xstate.xstateBooleans.`false`
 import typings.xstate.xstateStrings.`final`
 import typings.xstate.xstateStrings.deep
 import typings.xstate.xstateStrings.shallow

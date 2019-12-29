@@ -1,7 +1,7 @@
 
 # Scala.js typings for unsplash-js
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 A Universal JavaScript wrapper for the Unsplash API

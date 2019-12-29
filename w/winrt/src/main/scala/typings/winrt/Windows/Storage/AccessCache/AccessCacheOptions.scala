@@ -1,11 +1,6 @@
 package typings.winrt.Windows.Storage.AccessCache
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.disallowUserInput
-import typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.fastLocationsOnly
-import typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.none
-import typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.suppressAccessTimeUpdate
-import typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.useReadOnlyCachedCopy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

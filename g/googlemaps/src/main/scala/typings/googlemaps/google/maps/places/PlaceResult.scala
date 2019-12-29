@@ -21,12 +21,19 @@ trait PlaceResult extends js.Object {
   var permanently_closed: js.UndefOr[Boolean] = js.undefined
   var photos: js.UndefOr[js.Array[PlacePhoto]] = js.undefined
   var place_id: js.UndefOr[String] = js.undefined
+  var plus_code: js.UndefOr[PlacePlusCode] = js.undefined
   var price_level: js.UndefOr[Double] = js.undefined
   var rating: js.UndefOr[Double] = js.undefined
   var reviews: js.UndefOr[js.Array[PlaceReview]] = js.undefined
   var types: js.UndefOr[js.Array[String]] = js.undefined
   var url: js.UndefOr[String] = js.undefined
+  var user_ratings_total: js.UndefOr[Double] = js.undefined
+  /**
+    * @deprecated utc_offset is deprecated as of November 2019 and will be turned off in November 2020.
+    *      Use PlaceResult.utc_offset_minutes instead.
+    */
   var utc_offset: js.UndefOr[Double] = js.undefined
+  var utc_offset_minutes: js.UndefOr[Double] = js.undefined
   var vicinity: js.UndefOr[String] = js.undefined
   var website: js.UndefOr[String] = js.undefined
 }
@@ -49,12 +56,15 @@ object PlaceResult {
     permanently_closed: js.UndefOr[Boolean] = js.undefined,
     photos: js.Array[PlacePhoto] = null,
     place_id: String = null,
+    plus_code: PlacePlusCode = null,
     price_level: Int | Double = null,
     rating: Int | Double = null,
     reviews: js.Array[PlaceReview] = null,
     types: js.Array[String] = null,
     url: String = null,
+    user_ratings_total: Int | Double = null,
     utc_offset: Int | Double = null,
+    utc_offset_minutes: Int | Double = null,
     vicinity: String = null,
     website: String = null
   ): PlaceResult = {
@@ -73,12 +83,15 @@ object PlaceResult {
     if (!js.isUndefined(permanently_closed)) __obj.updateDynamic("permanently_closed")(permanently_closed.asInstanceOf[js.Any])
     if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
     if (place_id != null) __obj.updateDynamic("place_id")(place_id.asInstanceOf[js.Any])
+    if (plus_code != null) __obj.updateDynamic("plus_code")(plus_code.asInstanceOf[js.Any])
     if (price_level != null) __obj.updateDynamic("price_level")(price_level.asInstanceOf[js.Any])
     if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
     if (reviews != null) __obj.updateDynamic("reviews")(reviews.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (user_ratings_total != null) __obj.updateDynamic("user_ratings_total")(user_ratings_total.asInstanceOf[js.Any])
     if (utc_offset != null) __obj.updateDynamic("utc_offset")(utc_offset.asInstanceOf[js.Any])
+    if (utc_offset_minutes != null) __obj.updateDynamic("utc_offset_minutes")(utc_offset_minutes.asInstanceOf[js.Any])
     if (vicinity != null) __obj.updateDynamic("vicinity")(vicinity.asInstanceOf[js.Any])
     if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceResult]

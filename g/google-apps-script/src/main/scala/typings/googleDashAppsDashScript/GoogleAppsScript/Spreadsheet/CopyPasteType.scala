@@ -1,14 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_COLUMN_WIDTHS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_CONDITIONAL_FORMATTING
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_DATA_VALIDATION
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_FORMAT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_FORMULA
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_NORMAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_NO_BORDERS
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.CopyPasteType.PASTE_VALUES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

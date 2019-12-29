@@ -12,7 +12,8 @@ class UserProperty protected () extends js.Object {
   var Formula: String = js.native
   val IsUserProperty: Boolean = js.native
   val Name: String = js.native
-  var `Outlook.UserProperty_typekey`: UserProperty = js.native
+  @JSName("Outlook.UserProperty_typekey")
+  var OutlookDotUserProperty_typekey: UserProperty = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val Type: OlUserPropertyType = js.native

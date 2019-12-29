@@ -1,26 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.Currencies
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.CurrencyName
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.CurrencySymbol
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.DateFormat
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.DateTimeFormat
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.DayPeriodsFormat
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.DayPeriodsStandalone
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.DaysFormat
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.DaysStandalone
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.Eras
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.ExtraData
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.FirstDayOfWeek
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.LocaleId
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.MonthsFormat
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.MonthsStandalone
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.NumberFormats
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.NumberSymbols
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.PluralCase
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.TimeFormat
-import typings.atAngularCore.atAngularCoreMod.ɵLocaleDataIndex.WeekendRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ɵLocaleDataIndex extends js.Object
 
-@JSImport("@angular/core", "ɵLocaleDataIndex")
+@JSImport("@angular/core", "\u0275LocaleDataIndex")
 @js.native
 object ɵLocaleDataIndex extends js.Object {
   @js.native

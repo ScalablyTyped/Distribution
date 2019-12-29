@@ -1,10 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SsmlVoiceGender.SSML_VOICE_GENDER_FEMALE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SsmlVoiceGender.SSML_VOICE_GENDER_MALE
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SsmlVoiceGender.SSML_VOICE_GENDER_NEUTRAL
-import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.SsmlVoiceGender.SSML_VOICE_GENDER_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

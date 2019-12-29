@@ -1,18 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dash
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dashDot
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dashDotDot
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDash
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDashDot
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDashDotDot
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.roundDot
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.solid
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.squareDot
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDash
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDashDot
-import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

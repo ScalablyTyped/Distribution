@@ -9,7 +9,7 @@ trait Autofill extends Base {
   var addingStarted: Boolean
   var autoInsertRow: Boolean
   var directions: js.Array[String]
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var handleDraggedCells: Double
   var mouseDownOnCellCorner: Boolean
   var mouseDragOutside: Boolean
@@ -28,7 +28,7 @@ object Autofill {
     disablePlugin: () => Unit,
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     handleDraggedCells: Double,
     hot: Core,
     init: () => Unit,

@@ -1,10 +1,6 @@
 package typings.chayns.chayns
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chayns.chayns.storage.accessMode
-import typings.chayns.chayns.storage.accessMode.PRIVATE
-import typings.chayns.chayns.storage.accessMode.PROTECTED
-import typings.chayns.chayns.storage.accessMode.PUBLIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

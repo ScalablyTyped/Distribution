@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Deferred[T] extends js.Object {
-  var promise: typings.rsvp.rsvpMod.RSVP.Promise[T] = js.native
+  var promise: Promise[T] = js.native
   def reject(): Unit = js.native
   def reject(reason: js.Any): Unit = js.native
   def resolve(): Unit = js.native

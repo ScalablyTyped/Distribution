@@ -1,9 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalVersionChecksMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.LifeCycleState.AVAILABLE
-import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.LifeCycleState.REMOVED
-import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.LifeCycleState.UNAVAILABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

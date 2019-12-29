@@ -17,7 +17,8 @@ class Diagram protected () extends js.Object {
   val Parent: js.Any = js.native
   var Reverse: MsoTriState = js.native
   val Type: MsoDiagramType = js.native
-  var `Word.Diagram_typekey`: Diagram = js.native
+  @JSName("Word.Diagram_typekey")
+  var WordDotDiagram_typekey: Diagram = js.native
   def Convert(Type: MsoDiagramType): Unit = js.native
   def FitText(): Unit = js.native
 }

@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Gpio
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinEdge.fallingEdge
-import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinEdge.risingEdge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

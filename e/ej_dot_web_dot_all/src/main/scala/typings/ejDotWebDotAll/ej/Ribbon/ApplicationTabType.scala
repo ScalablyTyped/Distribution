@@ -1,7 +1,6 @@
 package typings.ejDotWebDotAll.ej.Ribbon
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Ribbon.ApplicationTabType.Backstage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,8 +25,7 @@ object ApplicationTabType extends js.Object {
   object Backstage extends TopLevel[Backstage with Double]
   
   /* 0 */ @js.native
-  object Menu
-    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.ApplicationTabType.Menu with Double]
+  object Menu extends TopLevel[Menu with Double]
   
 }
 

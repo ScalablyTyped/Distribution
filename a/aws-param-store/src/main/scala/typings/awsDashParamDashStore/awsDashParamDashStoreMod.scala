@@ -1,6 +1,5 @@
 package typings.awsDashParamDashStore
 
-import typings.awsDashParamDashStore.awsDashParamDashStoreMod.ParameterQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,21 +53,21 @@ object awsDashParamDashStoreMod extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.GetParametersResult */ _
   ] = js.native
   def getParametersByPath(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
   ] = js.native
   def getParametersByPath(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
   ] = js.native
   def getParametersByPathSync(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
   ): js.Any = js.native
   def getParametersByPathSync(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Any = js.native
   def getParametersSync(

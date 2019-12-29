@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 class PivotFormula protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
-  var `Excel.PivotFormula_typekey`: PivotFormula = js.native
+  @JSName("Excel.PivotFormula_typekey")
+  var ExcelDotPivotFormula_typekey: PivotFormula = js.native
   var Formula: String = js.native
   var Index: Double = js.native
   val Parent: js.Any = js.native

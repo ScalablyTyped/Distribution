@@ -5,7 +5,7 @@ import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chrome.events.Event
 import typings.chromeDashApps.chrome.integer
 import typings.chromeDashApps.chrome.notifications.NotificationOptions
-import typings.chromeDashApps.chromeDashAppsNumbers.`true`
+import typings.chromeDashApps.chromeDashAppsBooleans.`true`
 import typings.std.Exclude
 import typings.std.Partial
 import scala.scalajs.js

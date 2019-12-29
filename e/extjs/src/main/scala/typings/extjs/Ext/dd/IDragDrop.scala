@@ -13,19 +13,19 @@ trait IDragDrop extends IBase {
   /** [Method] Lets you specify a css class of elements that will not initiate a drag
   		* @param cssClass String the class of the elements you wish to ignore
   		*/
-  var addInvalidHandleClass: js.UndefOr[js.Function1[/* cssClass */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var addInvalidHandleClass: js.UndefOr[js.Function1[/* cssClass */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Lets you to specify an element id for a child of a drag handle that should not initiate a drag
   		* @param id String the element id of the element you wish to ignore
   		*/
-  var addInvalidHandleId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var addInvalidHandleId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Allows you to specify a tag name that should not start a drag operation when clicked
   		* @param tagName String the type of element to exclude
   		*/
-  var addInvalidHandleType: js.UndefOr[js.Function1[/* tagName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var addInvalidHandleType: js.UndefOr[js.Function1[/* tagName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Adds this instance to a group of related drag drop objects
   		* @param sGroup String the name of the group
   		*/
-  var addToGroup: js.UndefOr[js.Function1[/* sGroup */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var addToGroup: js.UndefOr[js.Function1[/* sGroup */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Applies the configuration parameters that were passed into the constructor  */
   var applyConfig: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Boolean) */
@@ -68,7 +68,7 @@ trait IDragDrop extends IBase {
   /** [Property] (Boolean) */
   var hasOuterHandles: js.UndefOr[Boolean] = js.undefined
   /** [Property] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   /** [Property] (Boolean) */
   var ignoreSelf: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets up the DragDrop object
@@ -78,8 +78,8 @@ trait IDragDrop extends IBase {
   		*/
   var init: js.UndefOr[
     js.Function3[
-      /* id */ js.UndefOr[java.lang.String], 
-      /* sGroup */ js.UndefOr[java.lang.String], 
+      /* id */ js.UndefOr[String], 
+      /* sGroup */ js.UndefOr[String], 
       /* config */ js.UndefOr[js.Any], 
       Unit
     ]
@@ -91,8 +91,8 @@ trait IDragDrop extends IBase {
   		*/
   var initTarget: js.UndefOr[
     js.Function3[
-      /* id */ js.UndefOr[java.lang.String], 
-      /* sGroup */ js.UndefOr[java.lang.String], 
+      /* id */ js.UndefOr[String], 
+      /* sGroup */ js.UndefOr[String], 
       /* config */ js.UndefOr[js.Any], 
       Unit
     ]
@@ -165,19 +165,19 @@ trait IDragDrop extends IBase {
   /** [Method] Removes this instance from the supplied interaction group
   		* @param sGroup String The group to drop
   		*/
-  var removeFromGroup: js.UndefOr[js.Function1[/* sGroup */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var removeFromGroup: js.UndefOr[js.Function1[/* sGroup */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Unsets an invalid css class
   		* @param cssClass String the class of the element(s) you wish to re-enable
   		*/
-  var removeInvalidHandleClass: js.UndefOr[js.Function1[/* cssClass */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var removeInvalidHandleClass: js.UndefOr[js.Function1[/* cssClass */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Unsets an invalid handle id
   		* @param id String the id of the element to re-enable
   		*/
-  var removeInvalidHandleId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var removeInvalidHandleId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Unsets an excluded tag name set by addInvalidHandleType
   		* @param tagName String the type of element to unexclude
   		*/
-  var removeInvalidHandleType: js.UndefOr[js.Function1[/* tagName */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var removeInvalidHandleType: js.UndefOr[js.Function1[/* tagName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Must be called if you manually reposition a dd element
   		* @param maintainOffset Boolean
   		*/
@@ -185,11 +185,11 @@ trait IDragDrop extends IBase {
   /** [Method] Allows you to specify that an element other than the linked element will be moved with the cursor during a drag
   		* @param id String the id of the element that will be used to initiate the drag
   		*/
-  var setDragElId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDragElId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Allows you to specify a child of the linked element that should be used to initiate the drag operation
   		* @param id String the id of the element that will be used to initiate the drag.
   		*/
-  var setHandleElId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHandleElId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Stores the initial placement of the linked element
   		* @param diffX Number the X offset, default 0
   		* @param diffY Number the Y offset, default 0
@@ -200,7 +200,7 @@ trait IDragDrop extends IBase {
   /** [Method] Allows you to set an element outside of the linked element as a drag handle
   		* @param id String the id of the element that will be used to initiate the drag
   		*/
-  var setOuterHandleElId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setOuterHandleElId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Configures the padding for the target zone in px
   		* @param iTop Number Top pad
   		* @param iRight Number Right pad
@@ -251,7 +251,7 @@ trait IDragDrop extends IBase {
   		* @returns String string representation of the dd obj
   		*/
   @JSName("toString")
-  var toString_FIDragDrop: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var toString_FIDragDrop: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Unlocks this instace */
   var unlock: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Removes all drag and drop hooks for this element */
@@ -265,10 +265,10 @@ trait IDragDrop extends IBase {
 object IDragDrop {
   @scala.inline
   def apply(
-    addInvalidHandleClass: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
-    addInvalidHandleId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    addInvalidHandleType: /* tagName */ js.UndefOr[java.lang.String] => Unit = null,
-    addToGroup: /* sGroup */ js.UndefOr[java.lang.String] => Unit = null,
+    addInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
+    addInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
+    addInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
+    addToGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     applyConfig: () => Unit = null,
@@ -283,18 +283,18 @@ object IDragDrop {
     defaultPadding: js.Any = null,
     destroy: () => Unit = null,
     endDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    extend: java.lang.String = null,
+    extend: String = null,
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
-    id: java.lang.String = null,
+    id: String = null,
     ignoreSelf: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    init: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
+    init: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IDragDrop = null,
-    initTarget: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
+    initTarget: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
     invalidHandleClasses: Array = null,
     invalidHandleIds: js.Any = null,
     invalidHandleTypes: js.Any = null,
@@ -316,24 +316,24 @@ object IDragDrop {
     onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
-    removeFromGroup: /* sGroup */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleClass: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    removeInvalidHandleType: /* tagName */ js.UndefOr[java.lang.String] => Unit = null,
+    removeFromGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
+    removeInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
     requires: Array = null,
     resetConstraints: /* maintainOffset */ js.UndefOr[Boolean] => Unit = null,
     self: IClass = null,
-    setDragElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
-    setHandleElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setDragElId: /* id */ js.UndefOr[String] => Unit = null,
+    setHandleElId: /* id */ js.UndefOr[String] => Unit = null,
     setInitPosition: (/* diffX */ js.UndefOr[Double], /* diffY */ js.UndefOr[Double]) => Unit = null,
-    setOuterHandleElId: /* id */ js.UndefOr[java.lang.String] => Unit = null,
+    setOuterHandleElId: /* id */ js.UndefOr[String] => Unit = null,
     setPadding: (/* iTop */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iBot */ js.UndefOr[Double], /* iLeft */ js.UndefOr[Double]) => Unit = null,
     setXConstraint: (/* iLeft */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
     setYConstraint: (/* iUp */ js.UndefOr[Double], /* iDown */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     startDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
     statics: js.Any = null,
-    toString: () => java.lang.String = null,
+    toString: () => String = null,
     unlock: () => Unit = null,
     unreg: () => Unit = null,
     uses: Array = null,

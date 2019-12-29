@@ -1,7 +1,6 @@
 package typings.rotDashJs
 
 import typings.rotDashJs.libFovFovMod.VisibilityCallback
-import typings.rotDashJs.libFovRecursiveDashShadowcastingMod.RecursiveShadowcasting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

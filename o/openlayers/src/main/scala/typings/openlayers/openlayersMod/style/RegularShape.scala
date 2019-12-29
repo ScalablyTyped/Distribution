@@ -19,8 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "style.RegularShape")
 @js.native
-class RegularShape protected ()
-  extends typings.openlayers.openlayersMod.style.Image {
+class RegularShape protected () extends Image {
   /**
     * @classdesc
     * Set regular shape style for vector features. The resulting shape will be
@@ -52,7 +51,7 @@ class RegularShape protected ()
     * @inheritDoc
     * @api
     */
-  def getImage(pixelRatio: Double): HTMLCanvasElement | HTMLVideoElement | typings.openlayers.openlayersMod.style.Image = js.native
+  def getImage(pixelRatio: Double): HTMLCanvasElement | HTMLVideoElement | Image = js.native
   /**
     * @inheritDoc
     * @api

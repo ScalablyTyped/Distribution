@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNSubProcessTypes.Event
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNSubProcessTypes.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNSubProcessTypes.Transaction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

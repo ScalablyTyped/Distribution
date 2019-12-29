@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 
 trait IView extends IContainer {
   /** [Config Option] (String) */
-  var defaultBackButtonText: js.UndefOr[java.lang.String] = js.undefined
+  var defaultBackButtonText: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of defaultBackButtonText
   		* @returns String
   		*/
-  var getDefaultBackButtonText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDefaultBackButtonText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of layout
   		* @returns Object
   		*/
@@ -48,7 +48,7 @@ trait IView extends IContainer {
   /** [Method] Sets the value of defaultBackButtonText
   		* @param defaultBackButtonText String The new value.
   		*/
-  var setDefaultBackButtonText: js.UndefOr[js.Function1[/* defaultBackButtonText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDefaultBackButtonText: js.UndefOr[js.Function1[/* defaultBackButtonText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of navigationBar
   		* @param navigationBar Boolean/Object The new value.
   		*/
@@ -65,8 +65,8 @@ object IView {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    defaultBackButtonText: java.lang.String = null,
-    getDefaultBackButtonText: () => java.lang.String = null,
+    defaultBackButtonText: String = null,
+    getDefaultBackButtonText: () => String = null,
     getLayout: () => _ = null,
     getNavigationBar: () => _ = null,
     getPreviousItem: () => _ = null,
@@ -75,7 +75,7 @@ object IView {
     pop: /* count */ js.UndefOr[js.Any] => IComponent = null,
     push: /* view */ js.UndefOr[js.Any] => IComponent = null,
     reset: () => IComponent = null,
-    setDefaultBackButtonText: /* defaultBackButtonText */ js.UndefOr[java.lang.String] => Unit = null,
+    setDefaultBackButtonText: /* defaultBackButtonText */ js.UndefOr[String] => Unit = null,
     setNavigationBar: /* navigationBar */ js.UndefOr[js.Any] => Unit = null,
     setUseTitleForBackButtonText: /* useTitleForBackButtonText */ js.UndefOr[Boolean] => Unit = null,
     useTitleForBackButtonText: js.UndefOr[Boolean] = js.undefined

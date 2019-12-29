@@ -3,11 +3,10 @@ package typings.tstl
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseContainerMultiMapMod.MultiMap
-import typings.tstl.containerHashMultiMapMod.HashMultiMap
 import typings.tstl.containerHashMultiMapMod.HashMultiMap.Iterator
 import typings.tstl.containerHashMultiMapMod.HashMultiMap.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlNumbers.`false`
+import typings.tstl.tstlBooleans.`false`
 import typings.tstl.utilityIPairMod.IPair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -170,6 +169,10 @@ object containerHashMultiMapMod extends js.Object {
       */
     @JSName("end")
     def end_Iterator(index: Double): Iterator[Key, T] = js.native
+    /**
+      * @inheritDoc
+      */
+    def erase(key: Key): Double = js.native
     /**
       * @inheritDoc
       */

@@ -1,23 +1,6 @@
 package typings.grpc.grpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grpc.grpcMod.status.ABORTED
-import typings.grpc.grpcMod.status.ALREADY_EXISTS
-import typings.grpc.grpcMod.status.CANCELLED
-import typings.grpc.grpcMod.status.DATA_LOSS
-import typings.grpc.grpcMod.status.DEADLINE_EXCEEDED
-import typings.grpc.grpcMod.status.FAILED_PRECONDITION
-import typings.grpc.grpcMod.status.INTERNAL
-import typings.grpc.grpcMod.status.INVALID_ARGUMENT
-import typings.grpc.grpcMod.status.NOT_FOUND
-import typings.grpc.grpcMod.status.OK
-import typings.grpc.grpcMod.status.OUT_OF_RANGE
-import typings.grpc.grpcMod.status.PERMISSION_DENIED
-import typings.grpc.grpcMod.status.RESOURCE_EXHAUSTED
-import typings.grpc.grpcMod.status.UNAUTHENTICATED
-import typings.grpc.grpcMod.status.UNAVAILABLE
-import typings.grpc.grpcMod.status.UNIMPLEMENTED
-import typings.grpc.grpcMod.status.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

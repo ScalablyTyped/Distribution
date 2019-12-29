@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Application protected () extends js.Object {
   val ActiveWindow: Window = js.native
-  var `InfoPath.Application_typekey`: Application = js.native
+  @JSName("InfoPath.Application_typekey")
+  var InfoPathDotApplication_typekey: Application = js.native
   val LanguageSettings: js.Any = js.native
   val MachineOnlineState: XdMachineOnlineState = js.native
   val Name: String = js.native

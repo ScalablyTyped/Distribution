@@ -10,7 +10,8 @@ class Rows protected () extends js.Object {
   val Application: typings.activexDashPowerpoint.PowerPoint.Application = js.native
   val Count: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.Rows_typekey`: Rows = js.native
+  @JSName("PowerPoint.Rows_typekey")
+  var PowerPointDotRows_typekey: Rows = js.native
   /** @param number [BeforeRow=-1] */
   def Add(): Row = js.native
   def Add(BeforeRow: Double): Row = js.native

@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionWhichAction.PickSourceAction
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionWhichAction.PickTargetAction
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionWhichAction.Undecided
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

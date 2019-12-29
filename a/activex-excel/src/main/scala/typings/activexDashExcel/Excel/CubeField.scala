@@ -20,7 +20,8 @@ class CubeField protected () extends js.Object {
   var DragToPage: Boolean = js.native
   var DragToRow: Boolean = js.native
   var EnableMultiplePageItems: Boolean = js.native
-  var `Excel.CubeField_typekey`: CubeField = js.native
+  @JSName("Excel.CubeField_typekey")
+  var ExcelDotCubeField_typekey: CubeField = js.native
   var FlattenHierarchies: Boolean = js.native
   val HasMemberProperties: Boolean = js.native
   var HiddenLevels: Double = js.native

@@ -24,7 +24,8 @@ class RuleActions protected () extends js.Object {
   val NewItemAlert: NewItemAlertRuleAction = js.native
   val NotifyDelivery: RuleAction = js.native
   val NotifyRead: RuleAction = js.native
-  var `Outlook.RuleActions_typekey`: RuleActions = js.native
+  @JSName("Outlook.RuleActions_typekey")
+  var OutlookDotRuleActions_typekey: RuleActions = js.native
   val Parent: js.Any = js.native
   val PlaySound: PlaySoundRuleAction = js.native
   val Redirect: SendRuleAction = js.native

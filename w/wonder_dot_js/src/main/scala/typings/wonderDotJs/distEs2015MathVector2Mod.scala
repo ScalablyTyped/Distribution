@@ -1,7 +1,6 @@
 package typings.wonderDotJs
 
 import typings.std.Float32Array
-import typings.wonderDotJs.distEs2015MathVector2Mod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

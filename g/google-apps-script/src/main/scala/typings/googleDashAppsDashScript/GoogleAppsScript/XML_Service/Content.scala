@@ -32,7 +32,7 @@ trait Content extends js.Object {
   def asEntityRef(): EntityRef
   def asProcessingInstruction(): ProcessingInstruction
   def asText(): Text
-  def detach(): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content
+  def detach(): Content
   def getParentElement(): Element
   def getType(): ContentType
   def getValue(): String
@@ -48,7 +48,7 @@ object Content {
     asEntityRef: () => EntityRef,
     asProcessingInstruction: () => ProcessingInstruction,
     asText: () => Text,
-    detach: () => typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content,
+    detach: () => Content,
     getParentElement: () => Element,
     getType: () => ContentType,
     getValue: () => String

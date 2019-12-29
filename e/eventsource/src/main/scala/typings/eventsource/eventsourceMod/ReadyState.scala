@@ -1,9 +1,6 @@
 package typings.eventsource.eventsourceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.eventsource.eventsourceMod.ReadyState.CLOSED
-import typings.eventsource.eventsourceMod.ReadyState.CONNECTING
-import typings.eventsource.eventsourceMod.ReadyState.OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,8 +2,6 @@ package typings.openui5.sap.ui.test
 
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.Control
-import typings.openui5.sap.ui.test.actions.Action
-import typings.openui5.sap.ui.test.actions.EnterText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

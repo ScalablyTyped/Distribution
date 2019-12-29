@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.FileFormats.BMP
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.FileFormats.JPG
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.FileFormats.PNG
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.FileFormats.SVG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

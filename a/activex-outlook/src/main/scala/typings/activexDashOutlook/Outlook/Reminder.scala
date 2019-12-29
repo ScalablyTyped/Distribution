@@ -15,7 +15,8 @@ class Reminder protected () extends js.Object {
   val Item: js.Any = js.native
   val NextReminderDate: VarDate = js.native
   val OriginalReminderDate: VarDate = js.native
-  var `Outlook.Reminder_typekey`: Reminder = js.native
+  @JSName("Outlook.Reminder_typekey")
+  var OutlookDotReminder_typekey: Reminder = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Dismiss(): Unit = js.native

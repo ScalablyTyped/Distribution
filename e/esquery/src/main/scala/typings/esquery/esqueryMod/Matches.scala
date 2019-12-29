@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Matches extends MultiSelector {
+trait Matches
+  extends MultiSelectorAtom
+     with MultiSelector
+     with Selector {
   @JSName("type")
   var type_Matches: typings.esquery.esqueryStrings.matches
 }
@@ -13,7 +16,7 @@ trait Matches extends MultiSelector {
 object Matches {
   @scala.inline
   def apply(
-    selectors: js.Array[Selector],
+    selectors: js.Array[SubjectSelector],
     `type`: typings.esquery.esqueryStrings.matches,
     subject: js.UndefOr[Boolean] = js.undefined
   ): Matches = {

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassTreeMap
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, TreeMap]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), TreeMap] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), TreeMap]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, TreeMap] {
   var Locale: js.Any = js.native
   var fn: TreeMap = js.native
 }

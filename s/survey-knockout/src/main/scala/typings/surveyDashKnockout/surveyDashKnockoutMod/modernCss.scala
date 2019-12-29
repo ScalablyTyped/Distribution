@@ -35,6 +35,7 @@ object modernCss extends js.Object {
   var comment: Anon_RootSmall = js.native
   var completedPage: String = js.native
   var container: String = js.native
+  var description: String = js.native
   var dropdown: Anon_ControlOnError = js.native
   var error: Anon_Icon = js.native
   var expression: String = js.native
@@ -64,6 +65,7 @@ object modernCss extends js.Object {
   var row: String = js.native
   var saveData: Anon_Error = js.native
   var text: Anon_OnError = js.native
+  var title: String = js.native
   var window: Anon_Body = js.native
 }
 

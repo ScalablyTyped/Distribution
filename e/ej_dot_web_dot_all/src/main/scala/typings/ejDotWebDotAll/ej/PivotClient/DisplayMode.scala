@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotClient
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.PivotClient.DisplayMode.ChartAndGrid
-import typings.ejDotWebDotAll.ej.PivotClient.DisplayMode.ChartOnly
-import typings.ejDotWebDotAll.ej.PivotClient.DisplayMode.GridOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

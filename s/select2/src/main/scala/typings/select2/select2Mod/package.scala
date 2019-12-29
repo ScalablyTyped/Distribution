@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object select2Mod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.jquery.JQueryAjaxSettings
-  import typings.select2.select2Numbers.`false`
+  import typings.select2.select2Booleans.`false`
   import typings.select2.select2Strings.url
   import typings.std.Pick
 

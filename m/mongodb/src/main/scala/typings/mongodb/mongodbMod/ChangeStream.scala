@@ -9,9 +9,13 @@ import scala.scalajs.js.annotation._
 @JSImport("mongodb", "ChangeStream")
 @js.native
 class ChangeStream protected () extends Readable {
-  def this(changeDomain: Collection[Default], pipeline: js.Array[js.Object]) = this()
+  def this(changeDomain: Collection[DefaultSchema], pipeline: js.Array[js.Object]) = this()
   def this(changeDomain: Db, pipeline: js.Array[js.Object]) = this()
-  def this(changeDomain: Collection[Default], pipeline: js.Array[js.Object], options: ChangeStreamOptions) = this()
+  def this(
+    changeDomain: Collection[DefaultSchema],
+    pipeline: js.Array[js.Object],
+    options: ChangeStreamOptions
+  ) = this()
   def this(changeDomain: Db, pipeline: js.Array[js.Object], options: ChangeStreamOptions) = this()
   var resumeToken: ResumeToken = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#close */

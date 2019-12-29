@@ -1,15 +1,6 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dwt.EnumDWT_CapORientation.TWOR_AUTO
-import typings.dwt.EnumDWT_CapORientation.TWOR_AUTOPICTURE
-import typings.dwt.EnumDWT_CapORientation.TWOR_AUTOTEXT
-import typings.dwt.EnumDWT_CapORientation.TWOR_LANDSCAPE
-import typings.dwt.EnumDWT_CapORientation.TWOR_PORTRAIT
-import typings.dwt.EnumDWT_CapORientation.TWOR_ROT0
-import typings.dwt.EnumDWT_CapORientation.TWOR_ROT180
-import typings.dwt.EnumDWT_CapORientation.TWOR_ROT270
-import typings.dwt.EnumDWT_CapORientation.TWOR_ROT90
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

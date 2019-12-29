@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLAppBehavior")
 @js.native
 class HTMLAppBehavior protected () extends js.Object {
-  var `MSHTML.HTMLAppBehavior_typekey`: HTMLAppBehavior = js.native
+  @JSName("MSHTML.HTMLAppBehavior_typekey")
+  var MSHTMLDotHTMLAppBehavior_typekey: HTMLAppBehavior = js.native
   var applicationName: String = js.native
   var border: String = js.native
   var borderStyle: String = js.native

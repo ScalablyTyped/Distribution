@@ -1,7 +1,6 @@
 package typings.jquery.JQuery
 
 import typings.jquery.JQuery.Deferred.Callback
-import typings.jquery.JQuery.Deferred.CallbackBase
 import typings.jquery.jqueryStrings.pending
 import typings.jquery.jqueryStrings.rejected
 import typings.jquery.jqueryStrings.resolved

@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.ContentType.ImageBoth
-import typings.ejDotWebDotAll.ej.ContentType.ImageOnly
-import typings.ejDotWebDotAll.ej.ContentType.ImageTextImage
-import typings.ejDotWebDotAll.ej.ContentType.TextAndImage
-import typings.ejDotWebDotAll.ej.ContentType.TextOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.EditActorReadType.Both
-import typings.sharepoint.SP.JsGrid.EditActorReadType.DataOnly
-import typings.sharepoint.SP.JsGrid.EditActorReadType.LocalizedOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

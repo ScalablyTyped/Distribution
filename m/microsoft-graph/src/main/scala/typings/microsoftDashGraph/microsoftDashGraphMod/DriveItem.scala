@@ -5,6 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DriveItem extends BaseItem {
+  /**
+    * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
+    * contexts and folders in others. Read-only.
+    */
+  @JSName("package")
+  var _package: js.UndefOr[Package] = js.undefined
   // Analytics about the view activities that took place on this item.
   var analytics: js.UndefOr[ItemAnalytics] = js.undefined
   // Audio metadata, if the item is an audio file. Read-only.
@@ -35,11 +41,6 @@ trait DriveItem extends BaseItem {
   var listItem: js.UndefOr[ListItem] = js.undefined
   // Location metadata, if the item has location data. Read-only.
   var location: js.UndefOr[GeoCoordinates] = js.undefined
-  /**
-    * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
-    * contexts and folders in others. Read-only.
-    */
-  var `package`: js.UndefOr[Package] = js.undefined
   // The set of permissions for the item. Read-only. Nullable.
   var permissions: js.UndefOr[js.Array[Permission]] = js.undefined
   // Photo metadata, if the item is a photo. Read-only.
@@ -86,6 +87,7 @@ trait DriveItem extends BaseItem {
 object DriveItem {
   @scala.inline
   def apply(
+    _package: Package = null,
     analytics: ItemAnalytics = null,
     audio: Audio = null,
     cTag: String = null,
@@ -108,7 +110,6 @@ object DriveItem {
     listItem: ListItem = null,
     location: GeoCoordinates = null,
     name: String = null,
-    `package`: Package = null,
     parentReference: ItemReference = null,
     permissions: js.Array[Permission] = null,
     photo: Photo = null,
@@ -129,6 +130,7 @@ object DriveItem {
     workbook: Workbook = null
   ): DriveItem = {
     val __obj = js.Dynamic.literal()
+    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
     if (cTag != null) __obj.updateDynamic("cTag")(cTag.asInstanceOf[js.Any])
@@ -151,7 +153,6 @@ object DriveItem {
     if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (parentReference != null) __obj.updateDynamic("parentReference")(parentReference.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.__all
-  - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.forDOTDOTDOTof
-  - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDOTprototypeDOTsticky
-  - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDOTprototypeDOTunicode
+  - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.forDotDotDotof
+  - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDotprototypeDotsticky
+  - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDotprototypeDotunicode
   - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.const
   - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.let
   - typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.Destructuring
@@ -47,9 +47,9 @@ object ES2015Syntax {
   @scala.inline
   def `Octal literals`: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.`Octal literals` = this.cast("Octal literals")
   @scala.inline
-  def RegExpDOTprototypeDOTsticky: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDOTprototypeDOTsticky = this.cast("RegExp.prototype.sticky")
+  def RegExpDotprototypeDotsticky: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDotprototypeDotsticky = this.cast("RegExp.prototype.sticky")
   @scala.inline
-  def RegExpDOTprototypeDOTunicode: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDOTprototypeDOTunicode = this.cast("RegExp.prototype.unicode")
+  def RegExpDotprototypeDotunicode: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.RegExpDotprototypeDotunicode = this.cast("RegExp.prototype.unicode")
   @scala.inline
   def `Rest parameters`: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.`Rest parameters` = this.cast("Rest parameters")
   @scala.inline
@@ -71,7 +71,7 @@ object ES2015Syntax {
   @scala.inline
   def const: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.const = this.cast("const")
   @scala.inline
-  def forDOTDOTDOTof: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.forDOTDOTDOTof = this.cast("for...of")
+  def forDotDotDotof: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.forDotDotDotof = this.cast("for...of")
   @scala.inline
   def let: typings.esDashFeatureDashDetection.esDashFeatureDashDetectionStrings.let = this.cast("let")
 }

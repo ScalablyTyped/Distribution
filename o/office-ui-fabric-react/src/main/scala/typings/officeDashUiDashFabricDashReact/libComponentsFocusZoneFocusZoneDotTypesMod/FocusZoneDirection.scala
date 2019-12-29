@@ -1,10 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.bidirectional
-import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.domOrder
-import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.horizontal
-import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.FocusZoneDirection.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.gapiDotDrive
 
-import typings.gapiDotDrive.gapiDotDriveStrings.`drive#user`
+import typings.gapiDotDrive.gapiDotDriveStrings.driveNumbersignuser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Anon_DisplayName extends js.Object {
   var displayName: String
   var emailAddress: String
   var isAuthenticatedUser: Boolean
-  var kind: `drive#user`
+  var kind: driveNumbersignuser
   var permissionId: String
   var picture: Anon_Url
 }
@@ -20,7 +20,7 @@ object Anon_DisplayName {
     displayName: String,
     emailAddress: String,
     isAuthenticatedUser: Boolean,
-    kind: `drive#user`,
+    kind: driveNumbersignuser,
     permissionId: String,
     picture: Anon_Url
   ): Anon_DisplayName = {

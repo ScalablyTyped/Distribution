@@ -18,8 +18,8 @@ import typings.nodemailer.libSmtpDashConnectionMod.AuthenticationType
 import typings.nodemailer.libSmtpDashConnectionMod.CustomAuthenticationHandlers
 import typings.nodemailer.libSmtpDashConnectionMod.DSNOptions
 import typings.nodemailer.libSmtpDashConnectionMod.ms
+import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerMod.TransportOptions
-import typings.nodemailer.nodemailerNumbers.`true`
 import typings.nodemailer.nodemailerStrings.high
 import typings.nodemailer.nodemailerStrings.low
 import typings.nodemailer.nodemailerStrings.normal

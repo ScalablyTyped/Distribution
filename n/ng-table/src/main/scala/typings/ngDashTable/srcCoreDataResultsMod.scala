@@ -1,6 +1,5 @@
 package typings.ngDashTable
 
-import typings.ngDashTable.srcCoreDataResultsMod.IDataRowGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -21,7 +21,8 @@ class FaxOutgoingQueue protected () extends js.Object {
   var DiscountRateEnd: VarDate = js.native
   /** Start of the discount rate period */
   var DiscountRateStart: VarDate = js.native
-  var `FAXCOMEXLib.FaxOutgoingQueue_typekey`: FaxOutgoingQueue = js.native
+  @JSName("FAXCOMEXLib.FaxOutgoingQueue_typekey")
+  var FAXCOMEXLibDotFaxOutgoingQueue_typekey: FaxOutgoingQueue = js.native
   /** Is the queue paused */
   var Paused: Boolean = js.native
   /** Number of retries */

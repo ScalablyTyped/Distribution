@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.libTableCreateBodyRowMod.BodyRowClass
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ReactType

@@ -27,7 +27,8 @@ class FaxConfiguration protected () extends js.Object {
   var DiscountRateEnd: VarDate = js.native
   /** Start of the discount rate period */
   var DiscountRateStart: VarDate = js.native
-  var `FAXCOMEXLib.FaxConfiguration_typekey`: FaxConfiguration = js.native
+  @JSName("FAXCOMEXLib.FaxConfiguration_typekey")
+  var FAXCOMEXLibDotFaxConfiguration_typekey: FaxConfiguration = js.native
   /** High quota water mark */
   var HighQuotaWaterMark: Double = js.native
   /** Are incoming faxes viewable by everyone */

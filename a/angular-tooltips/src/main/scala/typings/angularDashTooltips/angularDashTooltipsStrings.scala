@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object angularDashTooltipsStrings {
   @js.native
-  sealed trait `720kbDOTtooltips` extends js.Object
+  sealed trait `720kbDottooltips` extends js.Object
   
   @js.native
   sealed trait bottom extends js.Object
@@ -48,7 +48,7 @@ object angularDashTooltipsStrings {
   sealed trait `top right` extends js.Object
   
   @scala.inline
-  def `720kbDOTtooltips`: `720kbDOTtooltips` = "720kb.tooltips".asInstanceOf[`720kbDOTtooltips`]
+  def `720kbDottooltips`: `720kbDottooltips` = "720kb.tooltips".asInstanceOf[`720kbDottooltips`]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline

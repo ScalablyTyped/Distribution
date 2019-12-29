@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortVisibility.Connect
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortVisibility.Default
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortVisibility.Hidden
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortVisibility.Hover
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortVisibility.Visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

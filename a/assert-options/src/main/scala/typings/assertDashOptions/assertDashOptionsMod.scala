@@ -1,7 +1,6 @@
 package typings.assertDashOptions
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.assertDashOptions.assertDashOptionsMod.NamedValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

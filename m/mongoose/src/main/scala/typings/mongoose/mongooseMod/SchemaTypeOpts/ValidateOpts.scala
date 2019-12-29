@@ -1,6 +1,6 @@
 package typings.mongoose.mongooseMod.SchemaTypeOpts
 
-import typings.mongoose.mongooseNumbers.`false`
+import typings.mongoose.mongooseBooleans.`false`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

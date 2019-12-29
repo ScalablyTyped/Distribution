@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.click
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.freehand
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hybrid
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -19,7 +22,7 @@ trait SketchCreateCreateOptions extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[hybrid | freehand | click] = js.undefined
 }
 
 object SketchCreateCreateOptions {
@@ -28,7 +31,7 @@ object SketchCreateCreateOptions {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    mode: String = null
+    mode: hybrid | freehand | click = null
   ): SketchCreateCreateOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

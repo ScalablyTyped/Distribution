@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-engine-reporting" : "1.4.11"
+      "apollo-engine-reporting" : "1.4.13"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-engine-reporting" : "1.4.11"
+      "apollo-engine-reporting" : "1.4.13"
     }
   ],
   "compile-devDependencies" : [

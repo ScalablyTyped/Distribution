@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNMessageFlows.Default
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNMessageFlows.InitiatingMessage
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNMessageFlows.NonInitiatingMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

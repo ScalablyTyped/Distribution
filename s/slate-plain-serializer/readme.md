@@ -1,7 +1,7 @@
 
 # Scala.js typings for slate-plain-serializer
 
-Typings are for version 0.6
+Typings are for version 0.7
 
 ## Library description:
 A plain text serializer for Slate editors.

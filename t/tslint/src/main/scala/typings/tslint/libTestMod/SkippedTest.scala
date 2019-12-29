@@ -1,6 +1,6 @@
 package typings.tslint.libTestMod
 
-import typings.tslint.tslintNumbers.`true`
+import typings.tslint.tslintBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 object algoliasearchDashHelperStrings {
   @js.native
-  sealed trait `!=` extends Operator
+  sealed trait Equalssign extends Operator
   
   @js.native
-  sealed trait `<` extends Operator
+  sealed trait ExclamationmarkEqualssign extends Operator
   
   @js.native
-  sealed trait `<=` extends Operator
+  sealed trait Greaterthansign extends Operator
   
   @js.native
-  sealed trait `=` extends Operator
+  sealed trait GreaterthansignEqualssign extends Operator
   
   @js.native
-  sealed trait `>` extends Operator
+  sealed trait Lessthansign extends Operator
   
   @js.native
-  sealed trait `>=` extends Operator
+  sealed trait LessthansignEqualssign extends Operator
   
   @js.native
   sealed trait ManagedParameters extends js.Object
@@ -133,17 +133,17 @@ object algoliasearchDashHelperStrings {
   sealed trait word extends js.Object
   
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def ManagedParameters: ManagedParameters = "ManagedParameters".asInstanceOf[ManagedParameters]
   @scala.inline

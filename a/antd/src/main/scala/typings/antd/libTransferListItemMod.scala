@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.libTransferListItemMod.ListItem
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

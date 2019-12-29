@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "colorette"
-version := "1.1.0-88f883"
+version := "1.1.0-2dcaa5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

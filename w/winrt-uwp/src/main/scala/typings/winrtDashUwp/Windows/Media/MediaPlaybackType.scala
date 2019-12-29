@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.MediaPlaybackType.image
-import typings.winrtDashUwp.Windows.Media.MediaPlaybackType.music
-import typings.winrtDashUwp.Windows.Media.MediaPlaybackType.unknown
-import typings.winrtDashUwp.Windows.Media.MediaPlaybackType.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 
 trait IDate extends IComponent {
   /** [Config Option] (String) */
-  var ariaTitle: js.UndefOr[java.lang.String] = js.undefined
+  var ariaTitle: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var ariaTitleDateFormat: js.UndefOr[java.lang.String] = js.undefined
+  var ariaTitleDateFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (String[]) */
   var dayNames: js.UndefOr[Array] = js.undefined
   /** [Config Option] (Boolean) */
   var disableAnim: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var disabledCellCls: js.UndefOr[java.lang.String] = js.undefined
+  var disabledCellCls: js.UndefOr[String] = js.undefined
   /** [Config Option] (String[]) */
   var disabledDates: js.UndefOr[Array] = js.undefined
   /** [Config Option] (RegExp) */
   var disabledDatesRE: js.UndefOr[RegExp] = js.undefined
   /** [Config Option] (String) */
-  var disabledDatesText: js.UndefOr[java.lang.String] = js.undefined
+  var disabledDatesText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number[]) */
   var disabledDays: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var disabledDaysText: js.UndefOr[java.lang.String] = js.undefined
+  var disabledDaysText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var focusOnShow: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var format: js.UndefOr[java.lang.String] = js.undefined
+  var format: js.UndefOr[String] = js.undefined
   /** [Method] Gets a single character to represent the day of the week
   		* @param value Object
   		* @returns String The character
   		*/
-  var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Gets the current selected value of the date field
   		* @returns Date The selected date
   		*/
@@ -51,25 +51,25 @@ trait IDate extends IComponent {
   /** [Config Option] (Object) */
   var keyNavConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var longDayFormat: js.UndefOr[java.lang.String] = js.undefined
+  var longDayFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (Date) */
   var maxDate: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var maxText: js.UndefOr[java.lang.String] = js.undefined
+  var maxText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Date) */
   var minDate: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var minText: js.UndefOr[java.lang.String] = js.undefined
+  var minText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String[]) */
   var monthNames: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
-  var monthYearFormat: js.UndefOr[java.lang.String] = js.undefined
+  var monthYearFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var monthYearText: js.UndefOr[java.lang.String] = js.undefined
+  var monthYearText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var nextText: js.UndefOr[java.lang.String] = js.undefined
+  var nextText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var prevText: js.UndefOr[java.lang.String] = js.undefined
+  var prevText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the current value to today
@@ -77,7 +77,7 @@ trait IDate extends IComponent {
   		*/
   var selectToday: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
-  var selectedCls: js.UndefOr[java.lang.String] = js.undefined
+  var selectedCls: js.UndefOr[String] = js.undefined
   /** [Method] Replaces any existing disabled dates with new values and refreshes the DatePicker
   		* @param disabledDates String[]/RegExp An array of date strings (see the disabledDates config for details on supported values), or a JavaScript regular expression used to disable a pattern of dates.
   		* @returns Ext.picker.Date this
@@ -131,59 +131,59 @@ trait IDate extends IComponent {
   /** [Config Option] (Number) */
   var startDay: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var todayText: js.UndefOr[java.lang.String] = js.undefined
+  var todayText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var todayTip: js.UndefOr[java.lang.String] = js.undefined
+  var todayTip: js.UndefOr[String] = js.undefined
 }
 
 object IDate {
   @scala.inline
   def apply(
     IComponent: IComponent = null,
-    ariaTitle: java.lang.String = null,
-    ariaTitleDateFormat: java.lang.String = null,
+    ariaTitle: String = null,
+    ariaTitleDateFormat: String = null,
     dayNames: Array = null,
     disableAnim: js.UndefOr[Boolean] = js.undefined,
-    disabledCellCls: java.lang.String = null,
+    disabledCellCls: String = null,
     disabledDates: Array = null,
     disabledDatesRE: RegExp = null,
-    disabledDatesText: java.lang.String = null,
+    disabledDatesText: String = null,
     disabledDays: Array = null,
-    disabledDaysText: java.lang.String = null,
+    disabledDaysText: String = null,
     focusOnShow: js.UndefOr[Boolean] = js.undefined,
-    format: java.lang.String = null,
-    getDayInitial: /* value */ js.UndefOr[js.Any] => java.lang.String = null,
+    format: String = null,
+    getDayInitial: /* value */ js.UndefOr[js.Any] => String = null,
     getValue: () => _ = null,
     handler: js.Any = null,
-    hideMonthPicker: /* animate */ js.UndefOr[Boolean] => typings.extjs.Ext.picker.IDate = null,
+    hideMonthPicker: /* animate */ js.UndefOr[Boolean] => IDate = null,
     keyNavConfig: js.Any = null,
-    longDayFormat: java.lang.String = null,
+    longDayFormat: String = null,
     maxDate: js.Any = null,
-    maxText: java.lang.String = null,
+    maxText: String = null,
     minDate: js.Any = null,
-    minText: java.lang.String = null,
+    minText: String = null,
     monthNames: Array = null,
-    monthYearFormat: java.lang.String = null,
-    monthYearText: java.lang.String = null,
-    nextText: java.lang.String = null,
-    prevText: java.lang.String = null,
+    monthYearFormat: String = null,
+    monthYearText: String = null,
+    nextText: String = null,
+    prevText: String = null,
     scope: js.Any = null,
-    selectToday: () => typings.extjs.Ext.picker.IDate = null,
-    selectedCls: java.lang.String = null,
-    setDisabledDates: /* disabledDates */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate = null,
-    setDisabledDays: /* disabledDays */ js.UndefOr[Array] => typings.extjs.Ext.picker.IDate = null,
-    setMaxDate: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate = null,
-    setMinDate: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate = null,
-    setValue: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate = null,
-    showMonthPicker: /* animate */ js.UndefOr[Boolean] => typings.extjs.Ext.picker.IDate = null,
-    showNextMonth: /* e */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate = null,
-    showNextYear: () => typings.extjs.Ext.picker.IDate = null,
-    showPrevMonth: /* e */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate = null,
-    showPrevYear: () => typings.extjs.Ext.picker.IDate = null,
+    selectToday: () => IDate = null,
+    selectedCls: String = null,
+    setDisabledDates: /* disabledDates */ js.UndefOr[js.Any] => IDate = null,
+    setDisabledDays: /* disabledDays */ js.UndefOr[Array] => IDate = null,
+    setMaxDate: /* value */ js.UndefOr[js.Any] => IDate = null,
+    setMinDate: /* value */ js.UndefOr[js.Any] => IDate = null,
+    setValue: /* value */ js.UndefOr[js.Any] => IDate = null,
+    showMonthPicker: /* animate */ js.UndefOr[Boolean] => IDate = null,
+    showNextMonth: /* e */ js.UndefOr[js.Any] => IDate = null,
+    showNextYear: () => IDate = null,
+    showPrevMonth: /* e */ js.UndefOr[js.Any] => IDate = null,
+    showPrevYear: () => IDate = null,
     showToday: js.UndefOr[Boolean] = js.undefined,
     startDay: Int | Double = null,
-    todayText: java.lang.String = null,
-    todayTip: java.lang.String = null
+    todayText: String = null,
+    todayTip: String = null
   ): IDate = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

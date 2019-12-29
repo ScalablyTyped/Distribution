@@ -1,14 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.ELicenseType.LimitedUseDelayedActivation
-import typings.steamDashClient.steamDashClientMod.ELicenseType.NoLicense
-import typings.steamDashClient.steamDashClientMod.ELicenseType.RecurringCharge
-import typings.steamDashClient.steamDashClientMod.ELicenseType.RecurringChargeLimitedUse
-import typings.steamDashClient.steamDashClientMod.ELicenseType.RecurringChargeLimitedUseWithOverages
-import typings.steamDashClient.steamDashClientMod.ELicenseType.RecurringOption
-import typings.steamDashClient.steamDashClientMod.ELicenseType.SinglePurchase
-import typings.steamDashClient.steamDashClientMod.ELicenseType.SinglePurchaseLimitedUse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

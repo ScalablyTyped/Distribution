@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Template method before a field is reset  */
   var beforeReset: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (String) */
-  var blankText: js.UndefOr[java.lang.String] = js.undefined
+  var blankText: js.UndefOr[String] = js.undefined
   /** [Method] Checks whether the value of the field has changed since the last time it was checked  */
   var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Checks the isDirty state of the field and if it has changed since the last time it was checked fires the dirtychange  */
@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Returns the name attribute of the field
   		* @returns String name The field name
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Don t return any data for submit the form will get the info from the individual checkboxes themselves
   		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -83,7 +83,7 @@ import scala.scalajs.js.annotation._
   		*/
   var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Method] When a checkbox is added to the group monitor it for changes
   		* @param field Object
   		*/
@@ -131,7 +131,7 @@ object ICheckboxGroup {
     allowBlank: js.UndefOr[Boolean] = js.undefined,
     batchChanges: js.UndefOr[js.Any] => Unit = null,
     beforeReset: () => Unit = null,
-    blankText: java.lang.String = null,
+    blankText: String = null,
     checkChange: () => Unit = null,
     checkDirty: () => Unit = null,
     clearInvalid: () => Unit = null,
@@ -140,7 +140,7 @@ object ICheckboxGroup {
     getChecked: () => Array = null,
     getErrors: js.Function0[Array] | (js.Function1[/* value */ js.UndefOr[js.Any], _]) = null,
     getModelData: () => _ = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getSubmitData: () => _ = null,
     getValue: () => _ | Unit = null,
     initField: () => Unit = null,
@@ -151,7 +151,7 @@ object ICheckboxGroup {
     isFormField: js.UndefOr[Boolean] = js.undefined,
     isValid: () => _ | Boolean = null,
     markInvalid: js.UndefOr[js.Any] => Unit = null,
-    name: java.lang.String = null,
+    name: String = null,
     onAdd: /* field */ js.UndefOr[js.Any] => Unit = null,
     onRemove: /* item */ js.UndefOr[js.Any] => Unit = null,
     originalValue: js.Any = null,

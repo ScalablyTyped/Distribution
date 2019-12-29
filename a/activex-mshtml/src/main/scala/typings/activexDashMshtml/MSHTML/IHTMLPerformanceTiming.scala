@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.IHTMLPerformanceTiming")
 @js.native
 class IHTMLPerformanceTiming protected () extends js.Object {
-  var `MSHTML.IHTMLPerformanceTiming_typekey`: IHTMLPerformanceTiming = js.native
+  @JSName("MSHTML.IHTMLPerformanceTiming_typekey")
+  var MSHTMLDotIHTMLPerformanceTiming_typekey: IHTMLPerformanceTiming = js.native
   val connectEnd: Double = js.native
   val connectStart: Double = js.native
   val domComplete: Double = js.native

@@ -1,10 +1,10 @@
 package typings.atUifabricMergeDashStyles
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesBooleans.`false`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`0`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`1`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`2`
-import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`false`
 import typings.atUifabricMergeDashStyles.libIRawStyleBaseMod.IFontFace
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricMergeDashStyles.libIStyleMod.IStyle

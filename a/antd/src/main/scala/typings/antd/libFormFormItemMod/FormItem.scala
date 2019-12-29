@@ -1,6 +1,6 @@
 package typings.antd.libFormFormItemMod
 
-import typings.antd.antdStrings.Empty
+import typings.antd.antdStrings._empty
 import typings.antd.antdStrings.error
 import typings.antd.antdStrings.success
 import typings.antd.antdStrings.validating
@@ -26,7 +26,7 @@ trait FormItem
   def getId(): js.Any = js.native
   def getMeta(): js.Any = js.native
   def getOnlyControl(): ReactElement | Null = js.native
-  def getValidateStatus(): Empty | error | success | validating = js.native
+  def getValidateStatus(): _empty | error | success | validating = js.native
   def isRequired(): js.Any = js.native
   def onHelpAnimEnd(_key: String, helpShow: Boolean): Unit = js.native
   def onLabelClick(): Unit = js.native

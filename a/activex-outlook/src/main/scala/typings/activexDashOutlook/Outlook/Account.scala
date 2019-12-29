@@ -18,7 +18,8 @@ class Account protected () extends js.Object {
   val ExchangeConnectionMode: OlExchangeConnectionMode = js.native
   val ExchangeMailboxServerName: String = js.native
   val ExchangeMailboxServerVersion: String = js.native
-  var `Outlook.Account_typekey`: Account = js.native
+  @JSName("Outlook.Account_typekey")
+  var OutlookDotAccount_typekey: Account = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val SmtpAddress: String = js.native

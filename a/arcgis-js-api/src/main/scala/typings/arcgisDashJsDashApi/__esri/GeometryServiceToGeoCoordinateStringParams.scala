@@ -1,5 +1,13 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`geo-ref`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dd
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ddm
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dms
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gars
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mgrs
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.usng
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.utm
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -20,11 +28,11 @@ trait GeometryServiceToGeoCoordinateStringParams extends Object {
     */
   var conversionMode: js.UndefOr[String] = js.undefined
   /**
-    * The conversion type of the input strings.  **Possible values:** mgrs | usng | utm | geo-ref | gars | dms | ddm | dd
+    * The conversion type of the input strings.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#toGeoCoordinateString)
     */
-  var conversionType: String
+  var conversionType: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd
   /**
     * An array of XY-coordinates (in JSON format) to be converted.
     *
@@ -57,7 +65,7 @@ object GeometryServiceToGeoCoordinateStringParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    conversionType: String,
+    conversionType: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd,
     coordinates: js.Array[js.Array[Double]],
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,

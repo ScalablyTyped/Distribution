@@ -1,14 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.Character
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.Column
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.InsideMargin
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.LeftMargin
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.Margin
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.OutsideMargin
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.Page
-import typings.devexpressDashWeb.FloatingObjectHorizontalPositionType.RightMargin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

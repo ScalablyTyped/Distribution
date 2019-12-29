@@ -2,7 +2,6 @@ package typings.ionic
 
 import typings.atIonicCliDashFramework.definitionsMod.CommandLineInputs
 import typings.atIonicCliDashFramework.definitionsMod.CommandLineOptions
-import typings.ionic.commandsServeMod.ServeCommand
 import typings.ionic.definitionsMod.CommandInstanceInfo
 import typings.ionic.libCommandMod.Command
 import scala.scalajs.js

@@ -6,7 +6,6 @@ import typings.reactDashSpinners.interfacesMod.CalcFunction
 import typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
 import typings.reactDashSpinners.interfacesMod.StyleFunctionWithIndex
-import typings.reactDashSpinners.pacmanLoaderMod.Loader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

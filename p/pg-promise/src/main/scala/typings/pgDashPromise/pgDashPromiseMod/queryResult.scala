@@ -1,10 +1,6 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pgDashPromise.pgDashPromiseMod.queryResult.any
-import typings.pgDashPromise.pgDashPromiseMod.queryResult.many
-import typings.pgDashPromise.pgDashPromiseMod.queryResult.none
-import typings.pgDashPromise.pgDashPromiseMod.queryResult.one
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

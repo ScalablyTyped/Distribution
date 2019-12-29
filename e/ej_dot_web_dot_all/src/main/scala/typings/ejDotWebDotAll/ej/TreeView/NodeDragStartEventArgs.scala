@@ -16,7 +16,7 @@ trait NodeDragStartEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   /** returns the TreeView model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.TreeView.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the current dragging parent TreeView node
     */
   var parentElement: js.UndefOr[js.Any] = js.undefined
@@ -40,7 +40,7 @@ object NodeDragStartEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     dragTarget: js.Any = null,
     event: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.TreeView.Model = null,
+    model: Model = null,
     parentElement: js.Any = null,
     parentElementData: js.Any = null,
     target: js.Any = null,

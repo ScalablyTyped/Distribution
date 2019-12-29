@@ -1,7 +1,5 @@
 package typings.atUirouterCore
 
-import typings.atUirouterCore.libInterfaceMod.Disposable
-import typings.atUirouterCore.libInterfaceMod.UIRouterPlugin
 import typings.atUirouterCore.libRouterMod.UIRouter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

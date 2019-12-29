@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tar", "types")
 @js.native
 object types extends js.Object {
-  var Empty: String = js.native
   var `0`: String = js.native
   var `1`: String = js.native
   var `2`: String = js.native
@@ -37,6 +36,8 @@ object types extends js.Object {
   var N: String = js.native
   var NextFileHasLonLinkPath: String = js.native
   var NextFileHasLongPath: String = js.native
+  @JSName("\u0000")
+  var Null: String = js.native
   var OldExtendedHeader: String = js.native
   var OldFile: String = js.native
   var S: String = js.native
@@ -45,6 +46,8 @@ object types extends js.Object {
   var TapeVolumeHeader: String = js.native
   var V: String = js.native
   var X: String = js.native
+  @JSName("")
+  var _empty: String = js.native
   var g: String = js.native
   var x: String = js.native
 }

@@ -1,10 +1,6 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pgDashPromise.pgDashPromiseMod.isolationLevel.none
-import typings.pgDashPromise.pgDashPromiseMod.isolationLevel.readCommitted
-import typings.pgDashPromise.pgDashPromiseMod.isolationLevel.repeatableRead
-import typings.pgDashPromise.pgDashPromiseMod.isolationLevel.serializable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

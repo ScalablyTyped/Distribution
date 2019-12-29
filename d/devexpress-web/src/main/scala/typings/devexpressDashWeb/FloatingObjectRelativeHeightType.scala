@@ -1,12 +1,6 @@
 package typings.devexpressDashWeb
 
 import org.scalablytyped.runtime.TopLevel
-import typings.devexpressDashWeb.FloatingObjectRelativeHeightType.BottomMargin
-import typings.devexpressDashWeb.FloatingObjectRelativeHeightType.InsideMargin
-import typings.devexpressDashWeb.FloatingObjectRelativeHeightType.Margin
-import typings.devexpressDashWeb.FloatingObjectRelativeHeightType.OutsideMargin
-import typings.devexpressDashWeb.FloatingObjectRelativeHeightType.Page
-import typings.devexpressDashWeb.FloatingObjectRelativeHeightType.TopMargin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

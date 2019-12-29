@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLFrameBase")
 @js.native
 class HTMLFrameBase protected () extends js.Object {
-  var `MSHTML.HTMLFrameBase_typekey`: HTMLFrameBase = js.native
+  @JSName("MSHTML.HTMLFrameBase_typekey")
+  var MSHTMLDotHTMLFrameBase_typekey: HTMLFrameBase = js.native
   var accessKey: String = js.native
   val all: js.Any = js.native
   var allowTransparency: Boolean = js.native

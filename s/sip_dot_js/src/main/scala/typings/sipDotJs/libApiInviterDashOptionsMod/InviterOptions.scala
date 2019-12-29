@@ -12,14 +12,10 @@ import scala.scalajs.js.annotation._
 trait InviterOptions extends SessionOptions {
   /** If true, an anonymous call. */
   var anonymous: js.UndefOr[Boolean] = js.undefined
-  /** @deprecated TODO: provide alternative. */
-  var body: js.UndefOr[String] = js.undefined
-  /** @deprecated TODO: provide alternative. */
-  var contentType: js.UndefOr[String] = js.undefined
   /**
     * If true, the first answer to the local offer is immediately utilized for media.
     * Requires that the INVITE request MUST NOT fork.
-    * Has no effect if `inviteWtihoutSdp` is true.
+    * Has no effect if `inviteWithoutSdp` is true.
     * Default is false.
     */
   var earlyMedia: js.UndefOr[Boolean] = js.undefined
@@ -43,8 +39,6 @@ object InviterOptions {
   @scala.inline
   def apply(
     anonymous: js.UndefOr[Boolean] = js.undefined,
-    body: String = null,
-    contentType: String = null,
     delegate: SessionDelegate = null,
     earlyMedia: js.UndefOr[Boolean] = js.undefined,
     extraHeaders: js.Array[String] = null,
@@ -57,8 +51,6 @@ object InviterOptions {
   ): InviterOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (!js.isUndefined(earlyMedia)) __obj.updateDynamic("earlyMedia")(earlyMedia.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])

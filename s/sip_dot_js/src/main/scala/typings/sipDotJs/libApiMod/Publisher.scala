@@ -12,6 +12,7 @@ class Publisher protected ()
   extends typings.sipDotJs.libApiPublisherMod.Publisher {
   /**
     * Constructs a new instance of the `Publisher` class.
+    *
     * @param userAgent - User agent. See {@link UserAgent} for details.
     * @param targetURI - Request URI identifying the target of the message.
     * @param eventType - The event type identifying the published document.

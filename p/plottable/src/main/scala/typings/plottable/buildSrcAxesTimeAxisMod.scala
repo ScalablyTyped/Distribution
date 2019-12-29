@@ -1,11 +1,6 @@
 package typings.plottable
 
 import typings.plottable.buildSrcAxesAxisMod.Axis
-import typings.plottable.buildSrcAxesTimeAxisMod.TierLabelPosition
-import typings.plottable.buildSrcAxesTimeAxisMod.TimeAxisConfiguration
-import typings.plottable.buildSrcAxesTimeAxisMod.TimeAxisOrientation
-import typings.plottable.buildSrcAxesTimeAxisMod.TimeAxisTierConfiguration
-import typings.plottable.buildSrcAxesTimeAxisMod.TimeInterval
 import typings.plottable.buildSrcCoreFormattersMod.Formatter
 import typings.std.Date
 import scala.scalajs.js

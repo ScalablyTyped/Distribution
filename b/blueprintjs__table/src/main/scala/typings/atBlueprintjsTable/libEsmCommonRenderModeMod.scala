@@ -1,10 +1,6 @@
 package typings.atBlueprintjsTable
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atBlueprintjsTable.libEsmCommonRenderModeMod.RenderMode
-import typings.atBlueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH
-import typings.atBlueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH_ON_UPDATE
-import typings.atBlueprintjsTable.libEsmCommonRenderModeMod.RenderMode.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

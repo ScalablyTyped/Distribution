@@ -1,7 +1,7 @@
 
 # Scala.js typings for mini-css-extract-plugin
 
-Typings are for version 0.8
+Typings are for version 0.9
 
 ## Library description:
 extracts CSS into separate files

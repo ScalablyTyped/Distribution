@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.mapEventMod.MapEvent
 import typings.ol.pluggableMapMod.FrameState
 import scala.scalajs.js
 import scala.scalajs.js.`|`

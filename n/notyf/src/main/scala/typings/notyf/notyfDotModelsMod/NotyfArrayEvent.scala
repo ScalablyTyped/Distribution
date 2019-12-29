@@ -1,8 +1,6 @@
 package typings.notyf.notyfDotModelsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.notyf.notyfDotModelsMod.NotyfArrayEvent.Add
-import typings.notyf.notyfDotModelsMod.NotyfArrayEvent.Remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

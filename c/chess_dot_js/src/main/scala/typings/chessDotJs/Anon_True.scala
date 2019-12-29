@@ -1,6 +1,6 @@
 package typings.chessDotJs
 
-import typings.chessDotJs.chessDotJsNumbers.`true`
+import typings.chessDotJs.chessDotJsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

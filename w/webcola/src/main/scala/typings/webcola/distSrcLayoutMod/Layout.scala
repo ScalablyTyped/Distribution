@@ -59,11 +59,11 @@ class Layout () extends js.Object {
   def jaccardLinkLengths(idealLength: Double): this.type = js.native
   def jaccardLinkLengths(idealLength: Double, w: Double): this.type = js.native
   /* protected */ def kick(): Unit = js.native
-  def linkDistance(): Double = js.native
+  def linkDistance(): LinkNumericPropertyAccessor = js.native
   def linkDistance(x: Double): this.type = js.native
   def linkDistance(x: LinkNumericPropertyAccessor): this.type = js.native
   @JSName("linkDistance")
-  def linkDistance_LinkNumericPropertyAccessor(): LinkNumericPropertyAccessor = js.native
+  def linkDistance_Double(): Double = js.native
   def linkType(f: js.Function): this.type = js.native
   def linkType(f: Double): this.type = js.native
   def links(): js.Array[Link[Node | Double]] = js.native

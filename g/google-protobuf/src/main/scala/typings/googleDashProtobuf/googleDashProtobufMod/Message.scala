@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.googleDashProtobuf.Anon_T
 import typings.googleDashProtobuf.TypeofClassMessage
 import typings.googleDashProtobuf.googleDashProtobufMod.Message.MessageArray
-import typings.googleDashProtobuf.googleDashProtobufMod.Message.StaticToObject
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

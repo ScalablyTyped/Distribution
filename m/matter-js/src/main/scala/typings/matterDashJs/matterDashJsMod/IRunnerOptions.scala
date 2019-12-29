@@ -16,6 +16,13 @@ trait IRunnerOptions extends js.Object {
     */
   var delta: js.UndefOr[Double] = js.undefined
   /**
+    * A flag that specifies whether the runner is running or not.
+    * @property enabled
+    * @type boolean
+    * @default true
+    */
+  var enabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * A `Boolean` that specifies if the runner should use a fixed timestep (otherwise it is variable).
     * If timing is fixed, then the apparent simulation speed will change depending on the frame rate (but behaviour will be deterministic).
     * If the timing is variable, then the apparent simulation speed will be constant (approximately, but at the cost of determininism).
@@ -29,9 +36,14 @@ trait IRunnerOptions extends js.Object {
 
 object IRunnerOptions {
   @scala.inline
-  def apply(delta: Int | Double = null, isFixed: js.UndefOr[Boolean] = js.undefined): IRunnerOptions = {
+  def apply(
+    delta: Int | Double = null,
+    enabled: js.UndefOr[Boolean] = js.undefined,
+    isFixed: js.UndefOr[Boolean] = js.undefined
+  ): IRunnerOptions = {
     val __obj = js.Dynamic.literal()
     if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRunnerOptions]
   }

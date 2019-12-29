@@ -22,7 +22,8 @@ class PlotArea protected () extends js.Object {
   val Name: String = js.native
   val Parent: js.Any = js.native
   var Position: XlChartElementPosition = js.native
-  var `PowerPoint.PlotArea_typekey`: PlotArea = js.native
+  @JSName("PowerPoint.PlotArea_typekey")
+  var PowerPointDotPlotArea_typekey: PlotArea = js.native
   var Top: Double = js.native
   var Width: Double = js.native
   def ClearFormats(): js.Any = js.native

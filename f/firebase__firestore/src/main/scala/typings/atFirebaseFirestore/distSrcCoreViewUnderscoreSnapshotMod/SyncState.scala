@@ -1,8 +1,6 @@
 package typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.SyncState.Local
-import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.SyncState.Synced
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

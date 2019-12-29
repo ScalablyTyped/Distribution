@@ -1,12 +1,6 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.CRYPTO_KEY_VERSION_STATE_UNSPECIFIED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DESTROYED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DESTROY_SCHEDULED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DISABLED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.ENABLED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.PENDING_GENERATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

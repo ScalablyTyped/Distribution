@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.cassanknex.cassanknexStrings.`=`
-  - typings.cassanknex.cassanknexStrings.`<`
-  - typings.cassanknex.cassanknexStrings.`>`
-  - typings.cassanknex.cassanknexStrings.`<=`
-  - typings.cassanknex.cassanknexStrings.`>=`
+  - typings.cassanknex.cassanknexStrings.Equalssign
+  - typings.cassanknex.cassanknexStrings.Lessthansign
+  - typings.cassanknex.cassanknexStrings.Greaterthansign
+  - typings.cassanknex.cassanknexStrings.LessthansignEqualssign
+  - typings.cassanknex.cassanknexStrings.GreaterthansignEqualssign
 */
 trait ComparisonRestriction extends js.Object
 
 object ComparisonRestriction {
   @scala.inline
-  def `<`: typings.cassanknex.cassanknexStrings.`<` = this.cast("<")
+  def Equalssign: typings.cassanknex.cassanknexStrings.Equalssign = this.cast("=")
   @scala.inline
-  def `<=`: typings.cassanknex.cassanknexStrings.`<=` = this.cast("<=")
+  def Greaterthansign: typings.cassanknex.cassanknexStrings.Greaterthansign = this.cast(">")
   @scala.inline
-  def `=`: typings.cassanknex.cassanknexStrings.`=` = this.cast("=")
+  def GreaterthansignEqualssign: typings.cassanknex.cassanknexStrings.GreaterthansignEqualssign = this.cast(">=")
   @scala.inline
-  def `>`: typings.cassanknex.cassanknexStrings.`>` = this.cast(">")
+  def Lessthansign: typings.cassanknex.cassanknexStrings.Lessthansign = this.cast("<")
   @scala.inline
-  def `>=`: typings.cassanknex.cassanknexStrings.`>=` = this.cast(">=")
+  def LessthansignEqualssign: typings.cassanknex.cassanknexStrings.LessthansignEqualssign = this.cast("<=")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

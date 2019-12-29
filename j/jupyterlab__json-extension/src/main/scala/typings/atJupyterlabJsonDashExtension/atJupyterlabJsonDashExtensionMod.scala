@@ -1,7 +1,7 @@
 package typings.atJupyterlabJsonDashExtension
 
 import typings.atJupyterlabApputils.libPrintingMod.Printing.IPrintable
-import typings.atJupyterlabJsonDashExtension.atJupyterlabJsonDashExtensionStrings.`application/json`
+import typings.atJupyterlabJsonDashExtension.atJupyterlabJsonDashExtensionStrings.applicationSlashjson
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IExtension
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IRenderer
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IRendererFactory
@@ -342,7 +342,7 @@ object atJupyterlabJsonDashExtensionMod extends js.Object {
     override def update(): Unit = js.native
   }
   
-  val MIME_TYPE: `application/json` = js.native
+  val MIME_TYPE: applicationSlashjson = js.native
   val default: IExtension | js.Array[IExtension] = js.native
   val rendererFactory: IRendererFactory = js.native
 }

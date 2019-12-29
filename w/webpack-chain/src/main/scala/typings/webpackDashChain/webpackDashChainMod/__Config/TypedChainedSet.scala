@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TypedChainedSet[Parent, Value]
-  extends typings.webpackDashChain.webpackDashChainMod.__Config.Chained[Parent] {
+trait TypedChainedSet[Parent, Value] extends Chained[Parent] {
   def add(value: Value): this.type = js.native
   def clear(): this.type = js.native
   def delete(key: String): this.type = js.native

@@ -1,10 +1,6 @@
 package typings.vscode.vscodeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscode.vscodeMod.OverviewRulerLane.Center
-import typings.vscode.vscodeMod.OverviewRulerLane.Full
-import typings.vscode.vscodeMod.OverviewRulerLane.Left
-import typings.vscode.vscodeMod.OverviewRulerLane.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

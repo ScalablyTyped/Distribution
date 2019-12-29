@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ndarray[T] extends js.Object {
-  var T: typings.ndarray.ndarrayMod.ndarray[T]
+  var T: ndarray[T]
   var data: Data[T]
   var dimension: Double
   var dtype: DataType
@@ -15,37 +15,37 @@ trait ndarray[T] extends js.Object {
   var size: Double
   var stride: js.Array[Double]
   def get(args: Double*): T
-  def hi(args: Double*): typings.ndarray.ndarrayMod.ndarray[T]
+  def hi(args: Double*): ndarray[T]
   def index(args: Double*): T
-  def lo(args: Double*): typings.ndarray.ndarrayMod.ndarray[T]
-  def pick(args: (Double | Null)*): typings.ndarray.ndarrayMod.ndarray[T]
-  def reshape(shapes: Double*): typings.ndarray.ndarrayMod.ndarray[T]
+  def lo(args: Double*): ndarray[T]
+  def pick(args: (Double | Null)*): ndarray[T]
+  def reshape(shapes: Double*): ndarray[T]
   def set(args: Double*): T
-  def step(args: Double*): typings.ndarray.ndarrayMod.ndarray[T]
-  def transpose(args: Double*): typings.ndarray.ndarrayMod.ndarray[T]
+  def step(args: Double*): ndarray[T]
+  def transpose(args: Double*): ndarray[T]
 }
 
 object ndarray {
   @scala.inline
   def apply[T](
-    T: typings.ndarray.ndarrayMod.ndarray[T],
+    T: ndarray[T],
     data: Data[T],
     dimension: Double,
     dtype: DataType,
     get: /* repeated */ Double => T,
-    hi: /* repeated */ Double => typings.ndarray.ndarrayMod.ndarray[T],
+    hi: /* repeated */ Double => ndarray[T],
     index: /* repeated */ Double => T,
-    lo: /* repeated */ Double => typings.ndarray.ndarrayMod.ndarray[T],
+    lo: /* repeated */ Double => ndarray[T],
     offset: Double,
     order: js.Array[Double],
-    pick: /* repeated */ Double | Null => typings.ndarray.ndarrayMod.ndarray[T],
-    reshape: /* repeated */ Double => typings.ndarray.ndarrayMod.ndarray[T],
+    pick: /* repeated */ Double | Null => ndarray[T],
+    reshape: /* repeated */ Double => ndarray[T],
     set: /* repeated */ Double => T,
     shape: js.Array[Double],
     size: Double,
-    step: /* repeated */ Double => typings.ndarray.ndarrayMod.ndarray[T],
+    step: /* repeated */ Double => ndarray[T],
     stride: js.Array[Double],
-    transpose: /* repeated */ Double => typings.ndarray.ndarrayMod.ndarray[T]
+    transpose: /* repeated */ Double => ndarray[T]
   ): ndarray[T] = {
     val __obj = js.Dynamic.literal(T = T.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dimension = dimension.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), hi = js.Any.fromFunction1(hi), index = js.Any.fromFunction1(index), lo = js.Any.fromFunction1(lo), offset = offset.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pick = js.Any.fromFunction1(pick), reshape = js.Any.fromFunction1(reshape), set = js.Any.fromFunction1(set), shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], step = js.Any.fromFunction1(step), stride = stride.asInstanceOf[js.Any], transpose = js.Any.fromFunction1(transpose))
   

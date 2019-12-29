@@ -2,7 +2,6 @@ package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.tstl.baseContainerAdaptorContainerMod.AdaptorContainer
-import typings.tstl.containerStackMod.Stack
 import typings.tstl.containerVectorMod.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`

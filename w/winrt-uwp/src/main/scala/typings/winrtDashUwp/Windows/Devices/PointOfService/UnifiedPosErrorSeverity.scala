@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.assistanceRequired
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.fatal
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.recoverable
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.unknownErrorSeverity
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.unrecoverable
-import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,7 @@
 package typings.node.childUnderscoreProcessMod
 
-import typings.node.Error
 import typings.node.NodeJS.Signals
 import typings.node.eventsMod.EventEmitter
-import typings.node.netMod.Server
-import typings.node.netMod.Socket
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.error
@@ -13,6 +10,7 @@ import typings.node.nodeStrings.message
 import typings.node.streamMod.Pipe
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +42,7 @@ trait ChildProcess extends EventEmitter {
   @JSName("addListener")
   def addListener_message(
     event: message,
-    listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
   ): this.type = js.native
   def disconnect(): Unit = js.native
   @JSName("emit")
@@ -62,9 +60,7 @@ trait ChildProcess extends EventEmitter {
   @JSName("emit")
   def emit_exit(event: exit, code: Null, signal: Signals): Boolean = js.native
   @JSName("emit")
-  def emit_message(event: message, message: js.Any, sendHandle: Server): Boolean = js.native
-  @JSName("emit")
-  def emit_message(event: message, message: js.Any, sendHandle: Socket): Boolean = js.native
+  def emit_message(event: message, message: Serializable, sendHandle: SendHandle): Boolean = js.native
   def kill(): Unit = js.native
   def kill(signal: Double): Unit = js.native
   def kill(signal: Signals): Unit = js.native
@@ -79,7 +75,7 @@ trait ChildProcess extends EventEmitter {
   @JSName("on")
   def on_message(
     event: message,
-    listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
@@ -92,7 +88,7 @@ trait ChildProcess extends EventEmitter {
   @JSName("once")
   def once_message(
     event: message,
-    listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
@@ -105,7 +101,7 @@ trait ChildProcess extends EventEmitter {
   @JSName("prependListener")
   def prependListener_message(
     event: message,
-    listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
@@ -118,26 +114,21 @@ trait ChildProcess extends EventEmitter {
   @JSName("prependOnceListener")
   def prependOnceListener_message(
     event: message,
-    listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
   ): this.type = js.native
   def ref(): Unit = js.native
-  def send(message: js.Any): Boolean = js.native
-  def send(message: js.Any, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
-  def send(message: js.Any, sendHandle: Server): Boolean = js.native
-  def send(message: js.Any, sendHandle: Server, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
-  def send(message: js.Any, sendHandle: Server, options: MessageOptions): Boolean = js.native
+  def send(message: Serializable): Boolean = js.native
+  def send(message: Serializable, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
+  def send(message: Serializable, sendHandle: SendHandle): Boolean = js.native
   def send(
-    message: js.Any,
-    sendHandle: Server,
-    options: MessageOptions,
+    message: Serializable,
+    sendHandle: SendHandle,
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Boolean = js.native
-  def send(message: js.Any, sendHandle: Socket): Boolean = js.native
-  def send(message: js.Any, sendHandle: Socket, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
-  def send(message: js.Any, sendHandle: Socket, options: MessageOptions): Boolean = js.native
+  def send(message: Serializable, sendHandle: SendHandle, options: MessageOptions): Boolean = js.native
   def send(
-    message: js.Any,
-    sendHandle: Socket,
+    message: Serializable,
+    sendHandle: SendHandle,
     options: MessageOptions,
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Boolean = js.native

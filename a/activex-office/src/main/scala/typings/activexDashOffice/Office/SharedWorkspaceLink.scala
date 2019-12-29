@@ -16,7 +16,8 @@ class SharedWorkspaceLink protected () extends js.Object {
   val ModifiedBy: String = js.native
   val ModifiedDate: VarDate = js.native
   var Notes: String = js.native
-  var `Office.SharedWorkspaceLink_typekey`: SharedWorkspaceLink = js.native
+  @JSName("Office.SharedWorkspaceLink_typekey")
+  var OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink = js.native
   val Parent: js.Any = js.native
   var URL: String = js.native
   def Delete(): Unit = js.native

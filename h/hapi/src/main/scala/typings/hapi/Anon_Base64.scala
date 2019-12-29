@@ -1,6 +1,6 @@
 package typings.hapi
 
-import typings.hapi.hapiNumbers.`false`
+import typings.hapi.hapiBooleans.`false`
 import typings.hapi.hapiStrings.Lax
 import typings.hapi.hapiStrings.Strict
 import typings.hapi.hapiStrings.base64

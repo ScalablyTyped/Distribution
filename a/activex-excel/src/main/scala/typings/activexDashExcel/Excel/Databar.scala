@@ -17,7 +17,8 @@ class Databar protected () extends js.Object {
   var BarFillType: XlDataBarFillType = js.native
   val Creator: XlCreator = js.native
   var Direction: Double = js.native
-  var `Excel.Databar_typekey`: Databar = js.native
+  @JSName("Excel.Databar_typekey")
+  var ExcelDotDatabar_typekey: Databar = js.native
   var Formula: String = js.native
   val MaxPoint: ConditionValue = js.native
   val MinPoint: ConditionValue = js.native

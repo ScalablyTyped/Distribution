@@ -1,6 +1,7 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
+import typings.dojo.dojoStrings.date
 import typings.std.Date
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -29,12 +30,12 @@ class SpinWheelTimePicker () extends SpinWheel {
     */
   var date: Date = js.native
   @JSName("get")
-  def get_date(property: typings.dojo.dojoStrings.date): Date = js.native
+  def get_date(property: date): Date = js.native
   @JSName("set")
-  def set_date(property: typings.dojo.dojoStrings.date, value: Date): Unit = js.native
+  def set_date(property: date, value: Date): Unit = js.native
   @JSName("watch")
   def watch_date(
-    property: typings.dojo.dojoStrings.date,
+    property: date,
     callback: js.Function3[
       /* property */ js.UndefOr[String], 
       /* oldValue */ js.UndefOr[Date], 

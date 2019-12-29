@@ -19,7 +19,7 @@ trait DistanceMatrixResponse extends js.Object {
     * contains an array of addresses as returned by the API from your original request.
     * These are formatted by the geocoder and localized according to the language parameter passed with the request.
     */
-  var origin_addresses: String
+  var origin_addresses: js.Array[String]
   /** contains an array of elements, which in turn each contain a status, duration, and distance element. */
   var rows: js.Array[DistanceMatrixRow]
   /** contains metadata on the request. See Status Codes below. */
@@ -31,7 +31,7 @@ object DistanceMatrixResponse {
   def apply(
     destination_addresses: js.Array[String],
     error_message: String,
-    origin_addresses: String,
+    origin_addresses: js.Array[String],
     rows: js.Array[DistanceMatrixRow],
     status: DistanceMatrixResponseTopLevelStatus
   ): DistanceMatrixResponse = {

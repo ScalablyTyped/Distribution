@@ -39,7 +39,7 @@ trait UserAgentOptions extends js.Object {
     * If `true`, the user agent calls the `start()` method in the constructor.
     * @defaultValue `false`
     * @remarks
-    * The call to start() resovles when the user agent connects, so if this
+    * The call to start() resolves when the user agent connects, so if this
     * option is set to `true` an alternative method of connection detection
     * must be used.
     */
@@ -100,7 +100,7 @@ trait UserAgentOptions extends js.Object {
     */
   var logConfiguration: js.UndefOr[Boolean] = js.undefined
   /**
-    * A function which will be called everytime a log is generated.
+    * A function which will be called every time a log is generated.
     * @defaultValue A noop
     */
   var logConnector: js.UndefOr[LogConnector] = js.undefined
@@ -120,11 +120,13 @@ trait UserAgentOptions extends js.Object {
     */
   var preloadedRouteSet: js.UndefOr[js.Array[String]] = js.undefined
   /**
+    * @deprecated
     * Maximum number of times to attempt to reconnect when the transport connection drops.
-    * @defaultValue 3
+    * @defaultValue 0
     */
   var reconnectionAttempts: js.UndefOr[Double] = js.undefined
   /**
+    * @deprecated
     * Seconds to wait between reconnection attempts when the transport connection drops.
     * @defaultValue 4
     */
@@ -134,13 +136,13 @@ trait UserAgentOptions extends js.Object {
     * @remarks
     * The factory will be passed a `Session` object for the current session
     * and the `sessionDescriptionHandlerFactoryOptions` object.
-    * @defaultValue `Web.SessionDesecriptionHandler.defaultFactory`
+    * @defaultValue `Web.SessionDescriptionHandler.defaultFactory`
     */
   var sessionDescriptionHandlerFactory: js.UndefOr[SessionDescriptionHandlerFactory] = js.undefined
   /**
     * Options to passed to `sessionDescriptionHandlerFactory`.
     * @remarks
-    * See `Web.SessionDesecriptionHandlerOptions` for details.
+    * See `Web.SessionDescriptionHandlerOptions` for details.
     * @defaultValue `{}`
     */
   var sessionDescriptionHandlerFactoryOptions: js.UndefOr[js.Object] = js.undefined

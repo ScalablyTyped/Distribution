@@ -16,7 +16,8 @@ class ShellLinkObject protected () extends js.Object {
   var Hotkey: Double = js.native
   /** Fully qualified path of the link */
   var Path: String = js.native
-  var `Shell32.ShellLinkObject_typekey`: ShellLinkObject = js.native
+  @JSName("Shell32.ShellLinkObject_typekey")
+  var Shell32DotShellLinkObject_typekey: ShellLinkObject = js.native
   /** Get the Show Command for the link */
   var ShowCommand: LinkShowWindowState = js.native
   /** Get the target of a link object */

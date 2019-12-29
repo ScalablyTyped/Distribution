@@ -14,25 +14,6 @@ class BlankNode protected ()
      with Term {
   def this(name: String) = this()
   val id: String = js.native
-  /**
-    * Contains the constant "BlankNode".
-    */
-  /* CompleteClass */
-  override var termType: typings.rdfDashJs.rdfDashJsStrings.BlankNode = js.native
-  /**
-    * Blank node name as a string, without any serialization specific prefixes,
-    * e.g. when parsing,
-    * if the data was sourced from Turtle, remove _:,
-    * if it was sourced from RDF/XML, do not change the blank node name (example: blank3).
-    */
-  /* CompleteClass */
-  override var value: String = js.native
-  /**
-    * @param other The term to compare with.
-    * @return True if and only if other has termType "BlankNode" and the same `value`.
-    */
-  /* CompleteClass */
-  override def equals(other: typings.rdfDashJs.rdfDashJsMod.Term): Boolean = js.native
   def toJSON(): js.Object = js.native
 }
 

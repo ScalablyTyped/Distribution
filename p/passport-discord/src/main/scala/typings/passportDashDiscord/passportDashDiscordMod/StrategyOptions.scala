@@ -1,7 +1,7 @@
 package typings.passportDashDiscord.passportDashDiscordMod
 
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.passportDashDiscord.passportDashDiscordNumbers.`false`
+import typings.passportDashDiscord.passportDashDiscordBooleans.`false`
 import typings.passportDashOauth2.passportDashOauth2Mod.StateStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`

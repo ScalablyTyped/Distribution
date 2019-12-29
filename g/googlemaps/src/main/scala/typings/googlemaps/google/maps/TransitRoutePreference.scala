@@ -1,8 +1,6 @@
 package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googlemaps.google.maps.TransitRoutePreference.FEWER_TRANSFERS
-import typings.googlemaps.google.maps.TransitRoutePreference.LESS_WALKING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

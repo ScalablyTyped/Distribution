@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccesstokenAltBearertokenCallback extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.native
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
@@ -25,7 +25,8 @@ trait Anon_AccesstokenAltBearertokenCallback extends js.Object {
     * The list of field paths in the mask. See Document.fields for a field
     * path syntax reference.
     */
-  var `mask.fieldPaths`: js.UndefOr[String] = js.native
+  @JSName("mask.fieldPaths")
+  var maskDotfieldPaths: js.UndefOr[String] = js.native
   /**
     * The resource name of the Document to get. In the format:
     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.

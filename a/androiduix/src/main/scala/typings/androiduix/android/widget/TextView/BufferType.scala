@@ -1,9 +1,6 @@
 package typings.androiduix.android.widget.TextView
 
 import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.android.widget.TextView.BufferType.EDITABLE
-import typings.androiduix.android.widget.TextView.BufferType.NORMAL
-import typings.androiduix.android.widget.TextView.BufferType.SPANNABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

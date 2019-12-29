@@ -22,12 +22,10 @@ object ControlPlacement extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ControlPlacement with Double] = js.native
   /* 0 */ @js.native
-  object Tab
-    extends TopLevel[typings.ejDotWebDotAll.ej.PivotClient.ControlPlacement.Tab with Double]
+  object Tab extends TopLevel[Tab with Double]
   
   /* 1 */ @js.native
-  object Tile
-    extends TopLevel[typings.ejDotWebDotAll.ej.PivotClient.ControlPlacement.Tile with Double]
+  object Tile extends TopLevel[Tile with Double]
   
 }
 

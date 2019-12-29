@@ -11,7 +11,8 @@ class SmartTagOptions protected () extends js.Object {
   val Creator: XlCreator = js.native
   var DisplaySmartTags: XlSmartTagDisplayMode = js.native
   var EmbedSmartTags: Boolean = js.native
-  var `Excel.SmartTagOptions_typekey`: SmartTagOptions = js.native
+  @JSName("Excel.SmartTagOptions_typekey")
+  var ExcelDotSmartTagOptions_typekey: SmartTagOptions = js.native
   val Parent: js.Any = js.native
 }
 

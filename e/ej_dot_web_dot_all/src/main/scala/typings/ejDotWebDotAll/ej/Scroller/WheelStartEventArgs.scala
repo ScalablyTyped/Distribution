@@ -10,7 +10,7 @@ trait WheelStartEventArgs extends js.Object {
   var cancel: js.UndefOr[Boolean] = js.undefined
   /** returns the scroller model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Scroller.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the original event name and its event properties of the current event.
     */
   var originalEvent: js.UndefOr[js.Any] = js.undefined
@@ -26,7 +26,7 @@ object WheelStartEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Scroller.Model = null,
+    model: Model = null,
     originalEvent: js.Any = null,
     scrollData: js.Any = null,
     `type`: String = null

@@ -16,6 +16,7 @@ class OlkCategory protected () extends js.Object {
   var ForeColor: OLE_COLOR = js.native
   var MouseIcon: StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
-  var `Outlook.OlkCategory_typekey`: OlkCategory = js.native
+  @JSName("Outlook.OlkCategory_typekey")
+  var OutlookDotOlkCategory_typekey: OlkCategory = js.native
 }
 

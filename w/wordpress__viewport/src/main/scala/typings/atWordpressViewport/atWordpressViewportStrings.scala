@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object atWordpressViewportStrings {
   @js.native
-  sealed trait `core/viewport` extends js.Object
+  sealed trait coreSlashviewport extends js.Object
   
   @scala.inline
-  def `core/viewport`: `core/viewport` = "core/viewport".asInstanceOf[`core/viewport`]
+  def coreSlashviewport: coreSlashviewport = "core/viewport".asInstanceOf[coreSlashviewport]
 }
 

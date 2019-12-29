@@ -1,8 +1,6 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vscodeDashLanguageclient.libClientMod.CloseAction.DoNotRestart
-import typings.vscodeDashLanguageclient.libClientMod.CloseAction.Restart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

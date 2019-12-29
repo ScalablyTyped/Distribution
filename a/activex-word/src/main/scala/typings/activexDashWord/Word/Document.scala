@@ -239,7 +239,8 @@ class Document protected () extends js.Object {
   val Versions: typings.activexDashWord.Word.Versions = js.native
   val WebOptions: typings.activexDashWord.Word.WebOptions = js.native
   val Windows: typings.activexDashWord.Word.Windows = js.native
-  var `Word.Document_typekey`: Document = js.native
+  @JSName("Word.Document_typekey")
+  var WordDotDocument_typekey: Document = js.native
   val WordOpenXML: String = js.native
   val Words: typings.activexDashWord.Word.Words = js.native
   val WritePassword: String = js.native

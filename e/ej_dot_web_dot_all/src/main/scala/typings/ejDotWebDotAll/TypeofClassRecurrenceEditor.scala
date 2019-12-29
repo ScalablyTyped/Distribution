@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassRecurrenceEditor
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), RecurrenceEditor]
+     with Instantiable2[
       (/* element */ Element) | (/* element */ JQuery), 
       /* options */ Model, 
       RecurrenceEditor
-    ]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), RecurrenceEditor] {
+    ] {
   var Locale: js.Any = js.native
   var fn: RecurrenceEditor = js.native
 }

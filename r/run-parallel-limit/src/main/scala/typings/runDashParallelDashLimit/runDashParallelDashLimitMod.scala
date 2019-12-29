@@ -1,9 +1,5 @@
 package typings.runDashParallelDashLimit
 
-import typings.runDashParallelDashLimit.runDashParallelDashLimitMod.Callback
-import typings.runDashParallelDashLimit.runDashParallelDashLimitMod.Task
-import typings.runDashParallelDashLimit.runDashParallelDashLimitMod.TaskCallback
-import typings.runDashParallelDashLimit.runDashParallelDashLimitMod.TaskObj
 import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js

@@ -1,8 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.and
-import typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.or
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

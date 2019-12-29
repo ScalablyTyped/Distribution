@@ -12,7 +12,8 @@ class XMLSchemaReference protected () extends js.Object {
   val Location: String = js.native
   val NamespaceURI: String = js.native
   val Parent: js.Any = js.native
-  var `Word.XMLSchemaReference_typekey`: XMLSchemaReference = js.native
+  @JSName("Word.XMLSchemaReference_typekey")
+  var WordDotXMLSchemaReference_typekey: XMLSchemaReference = js.native
   def Delete(): Unit = js.native
   def Reload(): Unit = js.native
 }

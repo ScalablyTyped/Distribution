@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`batch/v2alpha1`
-import typings.atPulumiKubernetes.batchV2alpha1CronJobMod.CronJob
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.batchSlashv2alpha1
 import typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJobSpec
 import typings.atPulumiKubernetes.typesOutputMod.batch.v2alpha1.CronJobStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
@@ -39,7 +38,7 @@ object batchV2alpha1CronJobMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`batch/v2alpha1`] = js.native
+    val apiVersion: Output[batchSlashv2alpha1] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In

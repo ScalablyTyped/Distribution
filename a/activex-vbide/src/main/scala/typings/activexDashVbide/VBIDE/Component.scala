@@ -12,7 +12,8 @@ class Component protected () extends js.Object {
   var Name: String = js.native
   @JSName("Parent")
   val Parent_Original: Components = js.native
-  var `VBIDE.Component_typekey`: Component = js.native
+  @JSName("VBIDE.Component_typekey")
+  var VBIDEDotComponent_typekey: Component = js.native
   def Parent(index: js.Any): Component = js.native
 }
 

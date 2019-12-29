@@ -19,7 +19,8 @@ class ChartArea protected () extends js.Object {
   var Left: Double = js.native
   val Name: String = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ChartArea_typekey`: ChartArea = js.native
+  @JSName("PowerPoint.ChartArea_typekey")
+  var PowerPointDotChartArea_typekey: ChartArea = js.native
   var Shadow: Boolean = js.native
   var Top: Double = js.native
   var Width: Double = js.native

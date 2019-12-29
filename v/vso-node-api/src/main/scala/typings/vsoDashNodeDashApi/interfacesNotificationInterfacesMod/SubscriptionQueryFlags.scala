@@ -1,11 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.AlwaysReturnBasicInformation
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeDeletedSubscriptions
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeFilterDetails
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeInvalidSubscriptions
-import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

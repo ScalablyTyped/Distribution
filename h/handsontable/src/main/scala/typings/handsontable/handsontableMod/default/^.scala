@@ -11,6 +11,7 @@ import typings.handsontable.handsontableMod.Handsontable.I18n.Internationalizati
 import typings.handsontable.handsontableMod.Handsontable.Plugins
 import typings.handsontable.handsontableMod.Handsontable.Renderers
 import typings.handsontable.handsontableMod.Handsontable.Validators
+import typings.handsontable.handsontableStrings.handsontable
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +35,7 @@ object ^ extends js.Object {
   var helper: Helper = js.native
   var hooks: Methods = js.native
   var languages: Internationalization = js.native
-  var packageName: typings.handsontable.handsontableStrings.handsontable = js.native
+  var packageName: handsontable = js.native
   var plugins: Plugins = js.native
   var renderers: Renderers = js.native
   var validators: Validators = js.native

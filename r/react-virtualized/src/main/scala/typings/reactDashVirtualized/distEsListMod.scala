@@ -5,8 +5,6 @@ import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellPosition
 import typings.reactDashVirtualized.distEsGridMod.GridCellProps
 import typings.reactDashVirtualized.distEsGridMod.GridCoreProps
-import typings.reactDashVirtualized.distEsListMod.ListProps
-import typings.reactDashVirtualized.distEsListMod.ListRowProps
 import typings.reactDashVirtualized.reactDashVirtualizedStrings.rowIndex
 import typings.std.Exclude
 import typings.std.Partial

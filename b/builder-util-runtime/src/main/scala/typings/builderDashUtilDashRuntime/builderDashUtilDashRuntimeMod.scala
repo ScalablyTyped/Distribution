@@ -1,14 +1,14 @@
 package typings.builderDashUtilDashRuntime
 
-import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeNumbers.`false`
+import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeBooleans.`false`
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.DELETE
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.GET
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.PUT
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.base64
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.hex
-import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.installerDOTexe
+import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.installerDotexe
 import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.latin1
-import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.packageDOT7z
+import typings.builderDashUtilDashRuntime.builderDashUtilDashRuntimeStrings.packageDot7z
 import typings.builderDashUtilDashRuntime.outProgressCallbackTransformMod.ProgressInfo
 import typings.builderDashUtilDashRuntime.outPublishOptionsMod.GithubOptions
 import typings.builderDashUtilDashRuntime.outPublishOptionsMod.PublishConfiguration
@@ -81,8 +81,8 @@ object builderDashUtilDashRuntimeMod extends js.Object {
     def this(name: String) = this()
   }
   
-  val CURRENT_APP_INSTALLER_FILE_NAME: installerDOTexe = js.native
-  val CURRENT_APP_PACKAGE_FILE_NAME: packageDOT7z = js.native
+  val CURRENT_APP_INSTALLER_FILE_NAME: installerDotexe = js.native
+  val CURRENT_APP_PACKAGE_FILE_NAME: packageDot7z = js.native
   def asArray[T](): js.Array[T] = js.native
   def asArray[T](v: T): js.Array[T] = js.native
   def asArray[T](v: js.Array[T]): js.Array[T] = js.native

@@ -12,6 +12,6 @@ object pathToFileURL extends js.Object {
     * control characters are correctly encoded when converting into a File URL.
     * @param url The path to convert to a File URL.
     */
-  def apply(url: java.lang.String): URL = js.native
+  def apply(url: String): URL = js.native
 }
 

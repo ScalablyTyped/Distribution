@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common", "ɵregisterLocaleData")
+@JSImport("@angular/common", "\u0275registerLocaleData")
 @js.native
 object ɵregisterLocaleData extends js.Object {
   /**

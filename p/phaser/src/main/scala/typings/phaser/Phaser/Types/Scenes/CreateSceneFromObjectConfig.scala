@@ -16,7 +16,8 @@ trait CreateSceneFromObjectConfig extends js.Object {
   /**
     * Any values, which will be merged into the Scene's Data Manager store.
     */
-  var `extend.data`: js.UndefOr[js.Any] = js.undefined
+  @JSName("extend.data")
+  var extendDotdata: js.UndefOr[js.Any] = js.undefined
   /**
     * The scene's init callback.
     */
@@ -36,7 +37,7 @@ object CreateSceneFromObjectConfig {
   def apply(
     create: /* data */ js.Object => Unit = null,
     extend: js.Any = null,
-    `extend.data`: js.Any = null,
+    extendDotdata: js.Any = null,
     init: /* data */ js.Object => Unit = null,
     preload: () => Unit = null,
     update: js.Function = null
@@ -44,7 +45,7 @@ object CreateSceneFromObjectConfig {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (`extend.data` != null) __obj.updateDynamic("extend.data")(`extend.data`.asInstanceOf[js.Any])
+    if (extendDotdata != null) __obj.updateDynamic("extend.data")(extendDotdata.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (preload != null) __obj.updateDynamic("preload")(js.Any.fromFunction0(preload))
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])

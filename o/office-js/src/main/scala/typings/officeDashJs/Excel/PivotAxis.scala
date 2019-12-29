@@ -1,11 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.PivotAxis.column
-import typings.officeDashJs.Excel.PivotAxis.data
-import typings.officeDashJs.Excel.PivotAxis.filter
-import typings.officeDashJs.Excel.PivotAxis.row
-import typings.officeDashJs.Excel.PivotAxis.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

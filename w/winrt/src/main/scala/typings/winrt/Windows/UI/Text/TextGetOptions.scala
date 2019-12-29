@@ -1,14 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.TextGetOptions.adjustCrlf
-import typings.winrt.Windows.UI.Text.TextGetOptions.allowFinalEop
-import typings.winrt.Windows.UI.Text.TextGetOptions.formatRtf
-import typings.winrt.Windows.UI.Text.TextGetOptions.includeNumbering
-import typings.winrt.Windows.UI.Text.TextGetOptions.noHidden
-import typings.winrt.Windows.UI.Text.TextGetOptions.none
-import typings.winrt.Windows.UI.Text.TextGetOptions.useCrlf
-import typings.winrt.Windows.UI.Text.TextGetOptions.useObjectText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

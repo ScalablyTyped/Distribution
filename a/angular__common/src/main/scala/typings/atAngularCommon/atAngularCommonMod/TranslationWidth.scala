@@ -1,10 +1,6 @@
 package typings.atAngularCommon.atAngularCommonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCommon.atAngularCommonMod.TranslationWidth.Abbreviated
-import typings.atAngularCommon.atAngularCommonMod.TranslationWidth.Narrow
-import typings.atAngularCommon.atAngularCommonMod.TranslationWidth.Short
-import typings.atAngularCommon.atAngularCommonMod.TranslationWidth.Wide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

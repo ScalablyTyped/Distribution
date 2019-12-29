@@ -1,12 +1,12 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
-import typings.plotlyDotJs.plotlyDotJsStrings.`-`
+import typings.plotlyDotJs.plotlyDotJsStrings.`-_`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.plotlyDotJs.plotlyDotJsStrings.`-`
+  - typings.plotlyDotJs.plotlyDotJsStrings.`-_`
   - typings.plotlyDotJs.plotlyDotJsStrings.linear
   - typings.plotlyDotJs.plotlyDotJsStrings.log
   - typings.plotlyDotJs.plotlyDotJsStrings.date
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
 trait AxisType extends js.Object
 
 object AxisType {
-  @JSName("-")
   @scala.inline
-  def `-_`: `-` = this.cast("-")
+  def _dash: `-_` = this.cast("-")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

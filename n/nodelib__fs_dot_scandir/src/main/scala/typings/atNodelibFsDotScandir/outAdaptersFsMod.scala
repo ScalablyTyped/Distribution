@@ -1,7 +1,6 @@
 package typings.atNodelibFsDotScandir
 
 import typings.atNodelibFsDotScandir.atNodelibFsDotScandirStrings.buffer
-import typings.atNodelibFsDotScandir.outAdaptersFsMod.FileSystemAdapter
 import typings.node.Anon_BufferEncodingFalse
 import typings.node.Anon_EncodingFalse
 import typings.node.Anon_EncodingFalseWithFileTypes

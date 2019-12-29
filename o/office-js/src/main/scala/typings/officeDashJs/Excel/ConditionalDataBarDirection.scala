@@ -1,9 +1,6 @@
 package typings.officeDashJs.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.Excel.ConditionalDataBarDirection.context
-import typings.officeDashJs.Excel.ConditionalDataBarDirection.leftToRight
-import typings.officeDashJs.Excel.ConditionalDataBarDirection.rightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

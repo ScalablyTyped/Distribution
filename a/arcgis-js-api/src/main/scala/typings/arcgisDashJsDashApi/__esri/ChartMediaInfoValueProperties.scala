@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 trait ChartMediaInfoValueProperties extends js.Object {
   /**
     * An array of strings, with each string containing the name of a field to display in the chart.
-    * > In order to work with related fields within a chart, the fields must also be set in the  [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
+    * > In order to work with related fields within a chart, the fields must either be set as a [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) element in the [PopupTemplate's content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) or as [popupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property outside of the PopupTemplate's content.
+    * > Set the [popupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property for any fields that need to have number formatting for chart/text elements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#fields)
     */
@@ -25,7 +26,7 @@ trait ChartMediaInfoValueProperties extends js.Object {
     */
   var series: js.UndefOr[js.Array[ChartMediaInfoValueSeriesProperties]] = js.undefined
   /**
-    * String value indicating the tooltip for a chart specified from another field. This field is needed when related records are not used. It is used for showing tooltips from another field in the same layer or related layer/table.
+    * String value indicating the tooltip for a chart specified from another field. It is used for showing tooltips from another field in the same layer or related layer/table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#tooltipField)
     */

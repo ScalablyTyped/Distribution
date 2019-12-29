@@ -1,16 +1,6 @@
 package typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.CONNECT
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.DELETE
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.GET
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.HEAD
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.OPTIONS
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.PATCH
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.POST
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.PUT
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.TRACE
-import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

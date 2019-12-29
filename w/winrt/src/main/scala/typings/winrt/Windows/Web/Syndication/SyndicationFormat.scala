@@ -1,12 +1,6 @@
 package typings.winrt.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Web.Syndication.SyndicationFormat.atom03
-import typings.winrt.Windows.Web.Syndication.SyndicationFormat.atom10
-import typings.winrt.Windows.Web.Syndication.SyndicationFormat.rss091
-import typings.winrt.Windows.Web.Syndication.SyndicationFormat.rss092
-import typings.winrt.Windows.Web.Syndication.SyndicationFormat.rss10
-import typings.winrt.Windows.Web.Syndication.SyndicationFormat.rss20
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

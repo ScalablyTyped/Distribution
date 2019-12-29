@@ -1,6 +1,5 @@
 package typings.geolib
 
-import typings.geolib.esGetPathLengthMod.DistanceFn
 import typings.geolib.esTypesMod.GeolibInputCoordinates
 import scala.scalajs.js
 import scala.scalajs.js.`|`

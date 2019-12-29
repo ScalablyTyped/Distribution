@@ -1,6 +1,5 @@
 package typings.tarn
 
-import typings.tarn.libResourceMod.Resource
 import typings.tarn.libUtilsMod.Deferred
 import scala.scalajs.js
 import scala.scalajs.js.`|`

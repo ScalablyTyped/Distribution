@@ -18,7 +18,8 @@ class WorkflowTask protected () extends js.Object {
   val Id: String = js.native
   val ListID: String = js.native
   val Name: String = js.native
-  var `Office.WorkflowTask_typekey`: WorkflowTask = js.native
+  @JSName("Office.WorkflowTask_typekey")
+  var OfficeDotWorkflowTask_typekey: WorkflowTask = js.native
   val WorkflowID: String = js.native
   def Show(): Double = js.native
 }

@@ -1,6 +1,5 @@
 package typings.promiseDashSequential
 
-import typings.promiseDashSequential.promiseDashSequentialMod.PromiseFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

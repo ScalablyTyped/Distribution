@@ -1,6 +1,6 @@
 package typings.edgeDashJs.edgeDashJsMod
 
-import typings.edgeDashJs.edgeDashJsNumbers.`true`
+import typings.edgeDashJs.edgeDashJsBooleans.`true`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

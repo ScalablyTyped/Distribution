@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.MarkerStyle.minus
-import typings.winrtDashUwp.Windows.UI.Text.MarkerStyle.noNumber
-import typings.winrtDashUwp.Windows.UI.Text.MarkerStyle.parentheses
-import typings.winrtDashUwp.Windows.UI.Text.MarkerStyle.parenthesis
-import typings.winrtDashUwp.Windows.UI.Text.MarkerStyle.period
-import typings.winrtDashUwp.Windows.UI.Text.MarkerStyle.plain
-import typings.winrtDashUwp.Windows.UI.Text.MarkerStyle.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

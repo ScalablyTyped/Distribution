@@ -10,8 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IBorder
-  extends typings.extjs.Ext.layout.container.IContainer {
+trait IBorder extends IContainer {
   /** [Method] Called to perform the calculations for this layout
   		* @param ownerContext Object
   		*/
@@ -51,12 +50,12 @@ object IBorder {
     configureItem: /* item */ js.UndefOr[js.Any] => Unit = null,
     destroy: () => Unit = null,
     done: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
+    extend: String = null,
     finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     finishedLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     getContainerSize: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => _ = null,
     getElementTarget: () => IElement = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getItemSizePolicy: /* item */ js.UndefOr[js.Any] => ISizePolicy = null,
     getLayoutItems: () => Array = null,
     getRenderTarget: () => IElement = null,
@@ -68,7 +67,7 @@ object IBorder {
     initLayout: () => Unit = null,
     isLayout: js.UndefOr[Boolean] = js.undefined,
     isValidParent: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit = null,
-    itemCls: java.lang.String = null,
+    itemCls: String = null,
     mixins: js.Any = null,
     notifyOwner: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     onContentChange: /* child */ js.UndefOr[IComponent] => Boolean = null,

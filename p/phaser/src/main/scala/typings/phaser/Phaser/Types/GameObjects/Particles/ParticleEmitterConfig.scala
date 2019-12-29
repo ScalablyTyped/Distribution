@@ -97,11 +97,13 @@ trait ParticleEmitterConfig extends js.Object {
   /**
     * x-coordinate of the offset.
     */
-  var `followOffset.x`: js.UndefOr[Double] = js.undefined
+  @JSName("followOffset.x")
+  var followOffsetDotx: js.UndefOr[Double] = js.undefined
   /**
     * y-coordinate of the offset.
     */
-  var `followOffset.y`: js.UndefOr[Double] = js.undefined
+  @JSName("followOffset.y")
+  var followOffsetDoty: js.UndefOr[Double] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#frames}.
     */
@@ -246,8 +248,8 @@ object ParticleEmitterConfig {
     emitZone: js.Object = null,
     follow: GameObject = null,
     followOffset: js.Object = null,
-    `followOffset.x`: Int | Double = null,
-    `followOffset.y`: Int | Double = null,
+    followOffsetDotx: Int | Double = null,
+    followOffsetDoty: Int | Double = null,
     frame: Double | (js.Array[Double | Frame | String]) | String | Frame | ParticleEmitterFrameConfig = null,
     frequency: Int | Double = null,
     gravityX: Int | Double = null,
@@ -300,8 +302,8 @@ object ParticleEmitterConfig {
     if (emitZone != null) __obj.updateDynamic("emitZone")(emitZone.asInstanceOf[js.Any])
     if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
     if (followOffset != null) __obj.updateDynamic("followOffset")(followOffset.asInstanceOf[js.Any])
-    if (`followOffset.x` != null) __obj.updateDynamic("followOffset.x")(`followOffset.x`.asInstanceOf[js.Any])
-    if (`followOffset.y` != null) __obj.updateDynamic("followOffset.y")(`followOffset.y`.asInstanceOf[js.Any])
+    if (followOffsetDotx != null) __obj.updateDynamic("followOffset.x")(followOffsetDotx.asInstanceOf[js.Any])
+    if (followOffsetDoty != null) __obj.updateDynamic("followOffset.y")(followOffsetDoty.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (gravityX != null) __obj.updateDynamic("gravityX")(gravityX.asInstanceOf[js.Any])

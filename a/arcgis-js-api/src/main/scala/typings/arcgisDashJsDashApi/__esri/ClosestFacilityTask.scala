@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +16,8 @@ trait ClosestFacilityTask extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def solve(params: ClosestFacilityParameters): IPromise[ClosestFacilitySolveResult] = js.native
-  def solve(params: ClosestFacilityParameters, requestOptions: js.Any): IPromise[ClosestFacilitySolveResult] = js.native
+  def solve(params: ClosestFacilityParameters): js.Promise[ClosestFacilitySolveResult] = js.native
+  def solve(params: ClosestFacilityParameters, requestOptions: js.Any): js.Promise[ClosestFacilitySolveResult] = js.native
 }
 
 @JSGlobal("__esri.ClosestFacilityTask")

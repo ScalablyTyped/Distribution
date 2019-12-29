@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   - typings.convertDashUnits.convertDashUnitsStrings.GHz
   - typings.convertDashUnits.convertDashUnitsStrings.THz
   - typings.convertDashUnits.convertDashUnitsStrings.rpm
-  - typings.convertDashUnits.convertDashUnitsStrings.`deg/s`
-  - typings.convertDashUnits.convertDashUnitsStrings.`rad/s`
+  - typings.convertDashUnits.convertDashUnitsStrings.degSlashs
+  - typings.convertDashUnits.convertDashUnitsStrings.radSlashs
 */
 trait uFrequency extends js.Object
 
@@ -30,13 +30,13 @@ object uFrequency {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def `deg/s`: typings.convertDashUnits.convertDashUnitsStrings.`deg/s` = this.cast("deg/s")
+  def degSlashs: typings.convertDashUnits.convertDashUnitsStrings.degSlashs = this.cast("deg/s")
   @scala.inline
   def kHz: typings.convertDashUnits.convertDashUnitsStrings.kHz = this.cast("kHz")
   @scala.inline
   def mHz: mHz_ = this.cast("mHz")
   @scala.inline
-  def `rad/s`: typings.convertDashUnits.convertDashUnitsStrings.`rad/s` = this.cast("rad/s")
+  def radSlashs: typings.convertDashUnits.convertDashUnitsStrings.radSlashs = this.cast("rad/s")
   @scala.inline
   def rpm: typings.convertDashUnits.convertDashUnitsStrings.rpm = this.cast("rpm")
 }

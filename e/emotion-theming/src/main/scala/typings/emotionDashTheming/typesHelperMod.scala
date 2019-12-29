@@ -1,6 +1,5 @@
 package typings.emotionDashTheming
 
-import typings.emotionDashTheming.typesHelperMod.Omit
 import typings.react.reactMod.ComponentPropsWithRef
 import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
 import typings.std.Exclude

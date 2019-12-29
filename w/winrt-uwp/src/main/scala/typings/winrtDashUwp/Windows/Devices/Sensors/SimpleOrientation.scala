@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.facedown
-import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.faceup
-import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.notRotated
-import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated180DegreesCounterclockwise
-import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated270DegreesCounterclockwise
-import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated90DegreesCounterclockwise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINES
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINE_LOOP
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINE_STRIP
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.POINTS
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRANGLE_FAN
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRIANGLES
-import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRIANGLE_STRIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

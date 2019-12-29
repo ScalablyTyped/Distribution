@@ -18,7 +18,7 @@ trait IItem extends IComponent {
   @JSName("focus")
   var focus_IItem: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Config Option] (String) */
-  var overflowText: js.UndefOr[java.lang.String] = js.undefined
+  var overflowText: js.UndefOr[String] = js.undefined
 }
 
 object IItem {
@@ -28,7 +28,7 @@ object IItem {
     disable: () => Unit = null,
     enable: () => Unit = null,
     focus: () => IComponent = null,
-    overflowText: java.lang.String = null
+    overflowText: String = null
   ): IItem = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)

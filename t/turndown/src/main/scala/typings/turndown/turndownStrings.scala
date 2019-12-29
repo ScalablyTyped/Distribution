@@ -7,25 +7,28 @@ import scala.scalajs.js.annotation._
 
 object turndownStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait `-_` extends js.Object
   
   @js.native
-  sealed trait `**` extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait `+` extends js.Object
+  sealed trait AsteriskAsterisk extends js.Object
   
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait GraveaccentGraveaccentGraveaccent extends js.Object
   
   @js.native
-  sealed trait BACKTICKBACKTICKBACKTICK extends js.Object
+  sealed trait Plussign extends js.Object
   
   @js.native
-  sealed trait Underscore extends js.Object
+  sealed trait TildeTildeTilde extends js.Object
   
   @js.native
   sealed trait __ extends js.Object
+  
+  @js.native
+  sealed trait _underscore extends js.Object
   
   @js.native
   sealed trait a extends TagName
@@ -411,23 +414,22 @@ object turndownStrings {
   @js.native
   sealed trait wbr extends TagName
   
-  @js.native
-  sealed trait `~~~` extends js.Object
-  
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
+  def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def `**`: `**` = "**".asInstanceOf[`**`]
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `+`: `+` = "+".asInstanceOf[`+`]
+  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
   @scala.inline
-  def `-`: `-` = "-".asInstanceOf[`-`]
+  def GraveaccentGraveaccentGraveaccent: GraveaccentGraveaccentGraveaccent = "```".asInstanceOf[GraveaccentGraveaccentGraveaccent]
   @scala.inline
-  def BACKTICKBACKTICKBACKTICK: BACKTICKBACKTICKBACKTICK = "```".asInstanceOf[BACKTICKBACKTICKBACKTICK]
+  def Plussign: Plussign = "+".asInstanceOf[Plussign]
   @scala.inline
-  def Underscore: Underscore = "_".asInstanceOf[Underscore]
+  def TildeTildeTilde: TildeTildeTilde = "~~~".asInstanceOf[TildeTildeTilde]
   @scala.inline
   def __ : __ = "__".asInstanceOf[__]
+  @scala.inline
+  def _underscore: _underscore = "_".asInstanceOf[_underscore]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -684,7 +686,5 @@ object turndownStrings {
   def video: video = "video".asInstanceOf[video]
   @scala.inline
   def wbr: wbr = "wbr".asInstanceOf[wbr]
-  @scala.inline
-  def `~~~`: `~~~` = "~~~".asInstanceOf[`~~~`]
 }
 

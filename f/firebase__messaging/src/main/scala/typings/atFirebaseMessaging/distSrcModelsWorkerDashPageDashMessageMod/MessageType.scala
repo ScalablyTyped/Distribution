@@ -1,8 +1,6 @@
 package typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod.MessageType.NOTIFICATION_CLICKED
-import typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod.MessageType.PUSH_MSG_RECEIVED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

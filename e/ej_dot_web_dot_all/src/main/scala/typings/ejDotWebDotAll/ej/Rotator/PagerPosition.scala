@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.Rotator
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Rotator.PagerPosition.BottomLeft
-import typings.ejDotWebDotAll.ej.Rotator.PagerPosition.BottomRight
-import typings.ejDotWebDotAll.ej.Rotator.PagerPosition.Outside
-import typings.ejDotWebDotAll.ej.Rotator.PagerPosition.TopCenter
-import typings.ejDotWebDotAll.ej.Rotator.PagerPosition.TopLeft
-import typings.ejDotWebDotAll.ej.Rotator.PagerPosition.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

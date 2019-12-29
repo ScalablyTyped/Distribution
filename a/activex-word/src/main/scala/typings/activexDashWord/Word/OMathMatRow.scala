@@ -12,7 +12,8 @@ class OMathMatRow protected () extends js.Object {
   val Creator: Double = js.native
   val Parent: js.Any = js.native
   val RowIndex: Double = js.native
-  var `Word.OMathMatRow_typekey`: OMathMatRow = js.native
+  @JSName("Word.OMathMatRow_typekey")
+  var WordDotOMathMatRow_typekey: OMathMatRow = js.native
   def Delete(): Unit = js.native
 }
 

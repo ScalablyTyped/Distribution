@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlaceAttribute extends js.Object {
-  var `app:id`: String
+  @JSName("app:id")
+  var appColonid: String
   var iso3: String
   var locality: String
   var phone: String
@@ -19,7 +20,7 @@ trait PlaceAttribute extends js.Object {
 object PlaceAttribute {
   @scala.inline
   def apply(
-    `app:id`: String,
+    appColonid: String,
     iso3: String,
     locality: String,
     phone: String,
@@ -30,7 +31,7 @@ object PlaceAttribute {
     url: String
   ): PlaceAttribute = {
     val __obj = js.Dynamic.literal(iso3 = iso3.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], postal_code = postal_code.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], street_address = street_address.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("app:id")(`app:id`.asInstanceOf[js.Any])
+    __obj.updateDynamic("app:id")(appColonid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAttribute]
   }
 }

@@ -11,7 +11,8 @@ class FaxOutboundRoutingGroup protected () extends js.Object {
   /** Ordered collection of device IDs */
   @JSName("DeviceIds")
   val DeviceIds_Original: FaxDeviceIds = js.native
-  var `FAXCOMEXLib.FaxOutboundRoutingGroup_typekey`: FaxOutboundRoutingGroup = js.native
+  @JSName("FAXCOMEXLib.FaxOutboundRoutingGroup_typekey")
+  var FAXCOMEXLibDotFaxOutboundRoutingGroup_typekey: FaxOutboundRoutingGroup = js.native
   /** Name of the group */
   val Name: String = js.native
   /** Status of the group */

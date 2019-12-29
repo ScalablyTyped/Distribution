@@ -19,7 +19,7 @@ trait AppointmentWindowOpenEventArgs extends js.Object {
   var endTime: js.UndefOr[js.Any] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the object of appointmentWindowOpen event while selecting the detail option from quick window or edit appointment or edit series option.
     */
   var `object`: js.UndefOr[js.Any] = js.undefined
@@ -44,7 +44,7 @@ object AppointmentWindowOpenEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     edit: js.UndefOr[Boolean] = js.undefined,
     endTime: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     `object`: js.Any = null,
     originalEventType: String = null,
     startTime: js.Any = null,

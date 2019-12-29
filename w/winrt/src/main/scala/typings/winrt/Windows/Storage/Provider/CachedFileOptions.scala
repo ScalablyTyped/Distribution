@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Provider.CachedFileOptions.denyAccessWhenOffline
-import typings.winrt.Windows.Storage.Provider.CachedFileOptions.none
-import typings.winrt.Windows.Storage.Provider.CachedFileOptions.requireUpdateOnAccess
-import typings.winrt.Windows.Storage.Provider.CachedFileOptions.useCachedFileWhenOffline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,6 @@
 package typings.atAngularHttp.srcEnumsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularHttp.srcEnumsMod.ResponseType.Basic
-import typings.atAngularHttp.srcEnumsMod.ResponseType.Cors
-import typings.atAngularHttp.srcEnumsMod.ResponseType.Default
-import typings.atAngularHttp.srcEnumsMod.ResponseType.Error
-import typings.atAngularHttp.srcEnumsMod.ResponseType.Opaque
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

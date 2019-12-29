@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLTable")
 @js.native
 class HTMLTable protected () extends js.Object {
-  var `MSHTML.HTMLTable_typekey`: HTMLTable = js.native
+  @JSName("MSHTML.HTMLTable_typekey")
+  var MSHTMLDotHTMLTable_typekey: HTMLTable = js.native
   var accessKey: String = js.native
   var align: String = js.native
   val all: js.Any = js.native

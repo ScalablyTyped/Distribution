@@ -1,22 +1,6 @@
 package typings.msDashRest.msDashRestMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.msDashRest.msDashRestMod.MapperType.Base64Url
-import typings.msDashRest.msDashRestMod.MapperType.Boolean
-import typings.msDashRest.msDashRestMod.MapperType.ByteArray
-import typings.msDashRest.msDashRestMod.MapperType.Composite
-import typings.msDashRest.msDashRestMod.MapperType.Date
-import typings.msDashRest.msDashRestMod.MapperType.DateTime
-import typings.msDashRest.msDashRestMod.MapperType.DateTimeRfc1123
-import typings.msDashRest.msDashRestMod.MapperType.Dictionary
-import typings.msDashRest.msDashRestMod.MapperType.Enum
-import typings.msDashRest.msDashRestMod.MapperType.Number
-import typings.msDashRest.msDashRestMod.MapperType.Object
-import typings.msDashRest.msDashRestMod.MapperType.Sequence
-import typings.msDashRest.msDashRestMod.MapperType.Stream
-import typings.msDashRest.msDashRestMod.MapperType.String
-import typings.msDashRest.msDashRestMod.MapperType.TimeSpan
-import typings.msDashRest.msDashRestMod.MapperType.UnixTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

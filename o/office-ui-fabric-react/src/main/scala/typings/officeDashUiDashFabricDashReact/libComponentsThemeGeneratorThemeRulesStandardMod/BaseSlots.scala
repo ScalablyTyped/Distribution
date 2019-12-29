@@ -1,9 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.BaseSlots.backgroundColor
-import typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.BaseSlots.foregroundColor
-import typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.BaseSlots.primaryColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

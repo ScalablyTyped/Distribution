@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`web-style`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,8 +46,8 @@ trait WebStyleSymbol
     * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def fetchSymbol(): IPromise[PointSymbol3D] = js.native
-  def fetchSymbol(options: WebStyleSymbolFetchSymbolOptions): IPromise[PointSymbol3D] = js.native
+  def fetchSymbol(): js.Promise[PointSymbol3D] = js.native
+  def fetchSymbol(options: WebStyleSymbolFetchSymbolOptions): js.Promise[PointSymbol3D] = js.native
 }
 
 @JSGlobal("__esri.WebStyleSymbol")

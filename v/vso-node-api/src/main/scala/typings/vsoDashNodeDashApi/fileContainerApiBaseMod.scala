@@ -1,7 +1,6 @@
 package typings.vsoDashNodeDashApi
 
 import typings.vsoDashNodeDashApi.clientApiBasesMod.ClientApiBase
-import typings.vsoDashNodeDashApi.fileContainerApiBaseMod.IFileContainerApiBase
 import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.VssJsonCollectionWrapperV
 import typings.vsoDashNodeDashApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
 import typings.vsoDashNodeDashApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions

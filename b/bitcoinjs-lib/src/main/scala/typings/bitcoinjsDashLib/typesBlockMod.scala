@@ -1,6 +1,5 @@
 package typings.bitcoinjsDashLib
 
-import typings.bitcoinjsDashLib.typesBlockMod.Block
 import typings.bitcoinjsDashLib.typesTransactionMod.Transaction
 import typings.node.Buffer
 import typings.std.Date

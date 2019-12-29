@@ -17,6 +17,6 @@ object addListener extends js.Object {
     *   6. online
     *   7. setup
     */
-  def apply(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, Unit]): Cluster = js.native
+  def apply(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Cluster = js.native
 }
 

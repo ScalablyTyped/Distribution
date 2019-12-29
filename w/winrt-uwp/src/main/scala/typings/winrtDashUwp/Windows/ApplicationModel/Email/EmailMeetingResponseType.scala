@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMeetingResponseType.accept
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMeetingResponseType.decline
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMeetingResponseType.tentative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

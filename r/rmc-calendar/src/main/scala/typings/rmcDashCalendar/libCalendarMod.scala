@@ -2,8 +2,6 @@ package typings.rmcDashCalendar
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.reactMod.Component
-import typings.rmcDashCalendar.libCalendarMod.Calendar
-import typings.rmcDashCalendar.libCalendarMod.StateType
 import typings.rmcDashCalendar.libCalendarPropsMod.PropsType
 import typings.std.Date
 import scala.scalajs.js

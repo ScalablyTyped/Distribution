@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.XboxLive
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairState.creatingInbound
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairState.creatingOutbound
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairState.deleted
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairState.deletingLocally
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairState.invalid
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairState.ready
-import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairState.remoteEndpointTerminating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

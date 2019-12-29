@@ -5,6 +5,7 @@ import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.AttributeWidget
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.DataGridColumn
 import typings.mendixmodelsdk.distGenDocumenttemplatesMod.documenttemplates.GridSortItem
+import typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenExpressionsMod.expressions.VariableRefExpression
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.SortItem
 import typings.mendixmodelsdk.distGenPagesMod.pages.ClientTemplateParameter
@@ -14,6 +15,9 @@ import typings.mendixmodelsdk.distGenPagesMod.pages.MemberWidget
 import typings.mendixmodelsdk.distGenPagesMod.pages.RangeSearchField
 import typings.mendixmodelsdk.distGenPagesMod.pages.SingleSearchField
 import typings.mendixmodelsdk.distGenPagesMod.pages.StaticOrDynamicString
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,12 +30,12 @@ import scala.scalajs.js.annotation._
 class AttributeRef protected ()
   extends typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.domainmodels.AttributeRef {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalMod.AbstractModel,
+    model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: typings.mendixmodelsdk.distSdkInternalMod.ModelUnit,
-    container: typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
+    unit: ModelUnit,
+    container: AbstractElement
   ) = this()
 }
 
@@ -40,7 +44,7 @@ class AttributeRef protected ()
 @js.native
 object AttributeRef extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenDomainmodelsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

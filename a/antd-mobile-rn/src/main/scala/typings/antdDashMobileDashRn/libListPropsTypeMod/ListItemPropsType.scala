@@ -1,6 +1,6 @@
 package typings.antdDashMobileDashRn.libListPropsTypeMod
 
-import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.Empty
+import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings._empty
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.android
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.bottom
 import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.down
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 trait ListItemPropsType extends js.Object {
   var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var align: js.UndefOr[top | middle | bottom] = js.undefined
-  var arrow: js.UndefOr[horizontal | down | up | empty | Empty] = js.undefined
+  var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +36,7 @@ object ListItemPropsType {
   def apply(
     activeStyle: StyleProp[ViewStyle] = null,
     align: top | middle | bottom = null,
-    arrow: horizontal | down | up | empty | Empty = null,
+    arrow: horizontal | down | up | empty | _empty = null,
     children: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,

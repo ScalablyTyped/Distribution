@@ -1,7 +1,6 @@
 package typings.atAwsDashSdkConfigDashResolver
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atAwsDashSdkConfigDashResolver.atAwsDashSdkConfigDashResolverMod.IndexedObject
 import typings.atAwsDashSdkTypes.buildClientMod.ConfigurationDefinition
 import typings.atAwsDashSdkTypes.buildMiddlewareMod.MiddlewareStack
 import scala.scalajs.js

@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.formatGML2Mod.GML2
 import typings.ol.formatGMLBaseMod.Options
 import typings.std.Element
 import typings.std.Node

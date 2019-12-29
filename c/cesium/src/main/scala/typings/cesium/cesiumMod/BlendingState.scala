@@ -1,10 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.BlendingState.ADDITIVE_BLEND
-import typings.cesium.cesiumMod.BlendingState.ALPHA_BLEND
-import typings.cesium.cesiumMod.BlendingState.DISABLED
-import typings.cesium.cesiumMod.BlendingState.PRE_MULTIPLIED_ALPHA_BLEND
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

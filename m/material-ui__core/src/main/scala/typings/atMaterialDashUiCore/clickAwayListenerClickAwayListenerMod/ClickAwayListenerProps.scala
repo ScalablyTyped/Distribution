@@ -1,6 +1,6 @@
 package typings.atMaterialDashUiCore.clickAwayListenerClickAwayListenerMod
 
-import typings.atMaterialDashUiCore.atMaterialDashUiCoreNumbers.`false`
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreBooleans.`false`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.onClick
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.onMouseDown
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.onMouseUp

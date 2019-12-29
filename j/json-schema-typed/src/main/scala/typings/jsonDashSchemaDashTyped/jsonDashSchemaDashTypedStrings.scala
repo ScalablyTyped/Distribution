@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 
 object jsonDashSchemaDashTypedStrings {
   @js.native
+  sealed trait $comment extends js.Object
+  
+  @js.native
+  sealed trait $id extends js.Object
+  
+  @js.native
+  sealed trait $ref extends js.Object
+  
+  @js.native
+  sealed trait $schema extends js.Object
+  
+  @js.native
   sealed trait `7bit` extends JSONSchemaContentEncodingName
   
   @js.native
   sealed trait `8bit` extends JSONSchemaContentEncodingName
-  
-  @js.native
-  sealed trait DOLLARcomment extends js.Object
-  
-  @js.native
-  sealed trait DOLLARid extends js.Object
-  
-  @js.native
-  sealed trait DOLLARref extends js.Object
-  
-  @js.native
-  sealed trait DOLLARschema extends js.Object
   
   @js.native
   sealed trait additionalItems extends js.Object
@@ -251,17 +251,17 @@ object jsonDashSchemaDashTypedStrings {
   sealed trait `x-token` extends JSONSchemaContentEncodingName
   
   @scala.inline
+  def $comment: $comment = "$comment".asInstanceOf[$comment]
+  @scala.inline
+  def $id: $id = "$id".asInstanceOf[$id]
+  @scala.inline
+  def $ref: $ref = "$ref".asInstanceOf[$ref]
+  @scala.inline
+  def $schema: $schema = "$schema".asInstanceOf[$schema]
+  @scala.inline
   def `7bit`: `7bit` = "7bit".asInstanceOf[`7bit`]
   @scala.inline
   def `8bit`: `8bit` = "8bit".asInstanceOf[`8bit`]
-  @scala.inline
-  def DOLLARcomment: DOLLARcomment = "$comment".asInstanceOf[DOLLARcomment]
-  @scala.inline
-  def DOLLARid: DOLLARid = "$id".asInstanceOf[DOLLARid]
-  @scala.inline
-  def DOLLARref: DOLLARref = "$ref".asInstanceOf[DOLLARref]
-  @scala.inline
-  def DOLLARschema: DOLLARschema = "$schema".asInstanceOf[DOLLARschema]
   @scala.inline
   def additionalItems: additionalItems = "additionalItems".asInstanceOf[additionalItems]
   @scala.inline

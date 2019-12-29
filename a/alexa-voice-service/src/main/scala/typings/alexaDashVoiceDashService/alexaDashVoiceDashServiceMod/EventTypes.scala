@@ -1,15 +1,6 @@
 package typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.ERROR
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOG
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOGIN
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOGOUT
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.RECORD_START
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.RECORD_STOP
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.REFRESH_TOKEN_SET
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.TOKEN_INVALID
-import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.TOKEN_SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

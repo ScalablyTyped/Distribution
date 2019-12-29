@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object typedDashGithubDashApiStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait APPROVED extends js.Object
   
   @js.native
-  sealed trait APPROVED extends js.Object
+  sealed trait Asterisk extends js.Object
   
   @js.native
   sealed trait CHANGES_REQUESTED extends js.Object
@@ -138,9 +138,9 @@ object typedDashGithubDashApiStrings {
   sealed trait valid extends js.Object
   
   @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
-  @scala.inline
   def APPROVED: APPROVED = "APPROVED".asInstanceOf[APPROVED]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def CHANGES_REQUESTED: CHANGES_REQUESTED = "CHANGES_REQUESTED".asInstanceOf[CHANGES_REQUESTED]
   @scala.inline

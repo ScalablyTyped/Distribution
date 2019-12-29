@@ -1,7 +1,6 @@
 package typings.atFirebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atFirebaseDatabase.distSrcCoreSnapIndexMapMod.IndexMap
 import typings.atFirebaseDatabase.distSrcCoreSnapIndexesIndexMod.Index
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.NamedNode
 import typings.atFirebaseDatabase.distSrcCoreSnapNodeMod.Node
@@ -40,7 +39,7 @@ object distSrcCoreSnapIndexMapMod extends js.Object {
     /**
       * The default IndexMap for nodes without a priority
       */
-    val Default: IndexMap = js.native
+    def Default(): IndexMap = js.native
   }
   
 }

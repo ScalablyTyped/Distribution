@@ -38,8 +38,8 @@ object Inflector extends js.Object {
   		* @param word String The word to classify
   		* @returns String The classified version of the word
   		*/
-  def classify(): java.lang.String = js.native
-  def classify(word: java.lang.String): java.lang.String = js.native
+  def classify(): String = js.native
+  def classify(word: String): String = js.native
   /** [Method] Removes all registered pluralization rules */
   def clearPlurals(): Unit = js.native
   /** [Method] Removes all registered singularization rules */
@@ -51,7 +51,7 @@ object Inflector extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -63,39 +63,39 @@ object Inflector extends js.Object {
   		* @returns Boolean True if the word is transnumeral
   		*/
   def isTransnumeral(): Boolean = js.native
-  def isTransnumeral(word: java.lang.String): Boolean = js.native
+  def isTransnumeral(word: String): Boolean = js.native
   /** [Method] Ordinalizes a given number by adding a prefix such as st nd rd or th based on the last digit of the number
   		* @param number Number The number to ordinalize
   		* @returns String The ordinalized number
   		*/
-  def ordinalize(): java.lang.String = js.native
-  def ordinalize(number: Double): java.lang.String = js.native
+  def ordinalize(): String = js.native
+  def ordinalize(number: Double): String = js.native
   /** [Method] Adds a new pluralization rule to the Inflector
   		* @param matcher RegExp The matcher regex
   		* @param replacer String The replacement string, which can reference matches from the matcher argument
   		*/
   def plural(): Unit = js.native
   def plural(matcher: RegExp): Unit = js.native
-  def plural(matcher: RegExp, replacer: java.lang.String): Unit = js.native
+  def plural(matcher: RegExp, replacer: String): Unit = js.native
   /** [Method] Returns the pluralized form of a word e g
   		* @param word String The word to pluralize
   		* @returns String The pluralized form of the word
   		*/
-  def pluralize(): java.lang.String = js.native
-  def pluralize(word: java.lang.String): java.lang.String = js.native
+  def pluralize(): String = js.native
+  def pluralize(word: String): String = js.native
   /** [Method] Adds a new singularization rule to the Inflector
   		* @param matcher RegExp The matcher regex
   		* @param replacer String The replacement string, which can reference matches from the matcher argument
   		*/
   def singular(): Unit = js.native
   def singular(matcher: RegExp): Unit = js.native
-  def singular(matcher: RegExp, replacer: java.lang.String): Unit = js.native
+  def singular(matcher: RegExp, replacer: String): Unit = js.native
   /** [Method] Returns the singularized form of a word e g
   		* @param word String The word to singularize
   		* @returns String The singularized form of the word
   		*/
-  def singularize(): java.lang.String = js.native
-  def singularize(word: java.lang.String): java.lang.String = js.native
+  def singularize(): String = js.native
+  def singularize(word: String): String = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
   		* @returns Ext.Class
   		*/

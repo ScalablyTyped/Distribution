@@ -1,12 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.EventType.complete
-import typings.phaser.spine.EventType.dispose
-import typings.phaser.spine.EventType.end
-import typings.phaser.spine.EventType.event
-import typings.phaser.spine.EventType.interrupt
-import typings.phaser.spine.EventType.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

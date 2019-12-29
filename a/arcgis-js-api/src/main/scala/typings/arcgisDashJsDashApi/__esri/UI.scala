@@ -79,6 +79,15 @@ trait UI extends Accessor {
     */
   def empty(): Unit = js.native
   def empty(position: String): Unit = js.native
+  /**
+    * Find a component by widget or DOM ID.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#find)
+    *
+    * @param the component's ID
+    *
+    */
+  def find(the: String): HTMLElement | Widget = js.native
   def move(component: String): Unit = js.native
   def move(component: String, position: String): Unit = js.native
   def move(component: js.Array[_]): Unit = js.native

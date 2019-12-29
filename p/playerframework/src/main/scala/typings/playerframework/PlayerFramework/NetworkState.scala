@@ -1,10 +1,6 @@
 package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.TopLevel
-import typings.playerframework.PlayerFramework.NetworkState.empty
-import typings.playerframework.PlayerFramework.NetworkState.idle
-import typings.playerframework.PlayerFramework.NetworkState.loading
-import typings.playerframework.PlayerFramework.NetworkState.noSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

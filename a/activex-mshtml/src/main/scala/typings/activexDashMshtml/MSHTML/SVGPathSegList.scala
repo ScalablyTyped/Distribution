@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.SVGPathSegList")
 @js.native
 class SVGPathSegList protected () extends js.Object {
-  var `MSHTML.SVGPathSegList_typekey`: SVGPathSegList = js.native
+  @JSName("MSHTML.SVGPathSegList_typekey")
+  var MSHTMLDotSVGPathSegList_typekey: SVGPathSegList = js.native
   var numberOfItems: Double = js.native
   def appendItem(newItem: SVGPathSeg): SVGPathSeg = js.native
   def clear(): Unit = js.native

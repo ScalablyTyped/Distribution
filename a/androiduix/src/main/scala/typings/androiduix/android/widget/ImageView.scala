@@ -6,14 +6,6 @@ import typings.androiduix.android.graphics.Matrix
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.view.View
 import typings.androiduix.android.widget.ImageView.ScaleType
-import typings.androiduix.android.widget.ImageView.ScaleType.CENTER
-import typings.androiduix.android.widget.ImageView.ScaleType.CENTER_CROP
-import typings.androiduix.android.widget.ImageView.ScaleType.CENTER_INSIDE
-import typings.androiduix.android.widget.ImageView.ScaleType.FIT_CENTER
-import typings.androiduix.android.widget.ImageView.ScaleType.FIT_END
-import typings.androiduix.android.widget.ImageView.ScaleType.FIT_START
-import typings.androiduix.android.widget.ImageView.ScaleType.FIT_XY
-import typings.androiduix.android.widget.ImageView.ScaleType.MATRIX
 import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js

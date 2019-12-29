@@ -189,18 +189,18 @@ class _DateTimeTextBox () extends RangeBoundTextBox {
     */
   def loadDropDown(loadCallback: js.Function): Unit = js.native
   /**
-    * 
-    * @param callback             
-    */
-  def openDropDown(): Unit = js.native
-  def openDropDown(callback: js.Function): Unit = js.native
-  /**
     * Opens the dropdown for this widget.   To be called only when this.dropDown
     * has been created and is ready to display (ie, it's data is loaded).
     * 
     */
+  def openDropDown(): js.Any = js.native
+  def openDropDown(callback: js.Function): Unit = js.native
+  /**
+    * 
+    * @param callback             
+    */
   @JSName("openDropDown")
-  def openDropDown_Any(): js.Any = js.native
+  def openDropDown_Unit(): Unit = js.native
   /**
     * Builds the regular needed to parse a localized date
     * 

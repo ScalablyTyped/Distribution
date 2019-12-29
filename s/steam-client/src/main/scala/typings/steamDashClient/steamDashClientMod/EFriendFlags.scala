@@ -1,19 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.Blocked
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.ChatMember
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.ClanMember
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.FlagAll
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.FriendshipRequested
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.Ignored
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.IgnoredFriend
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.Immediate
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.None
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.OnGameServer
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.RequestingFriendship
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.RequestingInfo
-import typings.steamDashClient.steamDashClientMod.EFriendFlags.Suggested
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

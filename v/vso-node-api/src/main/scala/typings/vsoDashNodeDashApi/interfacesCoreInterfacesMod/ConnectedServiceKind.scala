@@ -1,10 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.AzureSubscription
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Chef
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Custom
-import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Generic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

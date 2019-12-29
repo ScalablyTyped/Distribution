@@ -1,6 +1,6 @@
 package typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareMod
 
-import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareNumbers.`true`
+import typings.reduxDashApiDashMiddleware.reduxDashApiDashMiddlewareBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

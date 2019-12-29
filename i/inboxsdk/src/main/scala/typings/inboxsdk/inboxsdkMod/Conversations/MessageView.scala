@@ -4,6 +4,7 @@ import typings.inboxsdk.Anon_MessageView
 import typings.inboxsdk.inboxsdkMod.Common.Contact
 import typings.inboxsdk.inboxsdkStrings.contactHover
 import typings.inboxsdk.inboxsdkStrings.destroy
+import typings.inboxsdk.inboxsdkStrings.load
 import typings.inboxsdk.inboxsdkStrings.viewStateChange
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -36,7 +37,7 @@ trait MessageView extends js.Object {
   @JSName("on")
   def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
-  def on_load(name: typings.inboxsdk.inboxsdkStrings.load, cb: js.Function0[Unit]): Unit = js.native
+  def on_load(name: load, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_viewStateChange(name: viewStateChange, cb: js.Function1[/* event */ Anon_MessageView, Unit]): Unit = js.native
 }

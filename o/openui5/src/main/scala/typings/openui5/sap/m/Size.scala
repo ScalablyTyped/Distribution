@@ -1,11 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.Size.Auto
-import typings.openui5.sap.m.Size.L
-import typings.openui5.sap.m.Size.M
-import typings.openui5.sap.m.Size.S
-import typings.openui5.sap.m.Size.XS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,6 +11,7 @@ class TextStyleLevel protected () extends js.Object {
   val Font: typings.activexDashPowerpoint.PowerPoint.Font = js.native
   val ParagraphFormat: typings.activexDashPowerpoint.PowerPoint.ParagraphFormat = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.TextStyleLevel_typekey`: TextStyleLevel = js.native
+  @JSName("PowerPoint.TextStyleLevel_typekey")
+  var PowerPointDotTextStyleLevel_typekey: TextStyleLevel = js.native
 }
 

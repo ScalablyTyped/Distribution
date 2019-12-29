@@ -1,11 +1,7 @@
 package typings.hostile
 
-import typings.hostile.hostileMod.Callback
-import typings.hostile.hostileMod.GetCallback
-import typings.hostile.hostileMod.Line
-import typings.hostile.hostileMod.Lines
-import typings.hostile.hostileStrings.`/etc/hosts`
-import typings.hostile.hostileStrings.`C:/Windows/System32/drivers/etc/hosts`
+import typings.hostile.hostileStrings.CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts
+import typings.hostile.hostileStrings.SlashetcSlashhosts
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hostile", JSImport.Namespace)
 @js.native
 object hostileMod extends js.Object {
-  val HOSTS: `C:/Windows/System32/drivers/etc/hosts` | `/etc/hosts` = js.native
+  val HOSTS: CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts | SlashetcSlashhosts = js.native
   def get(preserveFormatting: Boolean): Unit | Lines = js.native
   def get(preserveFormatting: Boolean, cb: GetCallback): Unit | Lines = js.native
   def getFile(filePath: String, preserveFormatting: Boolean): Unit | Lines = js.native

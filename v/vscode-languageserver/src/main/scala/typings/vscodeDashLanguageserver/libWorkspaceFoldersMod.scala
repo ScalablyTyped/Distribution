@@ -2,7 +2,6 @@ package typings.vscodeDashLanguageserver
 
 import typings.vscodeDashJsonrpc.libEventsMod.Disposable
 import typings.vscodeDashJsonrpc.libEventsMod.Event
-import typings.vscodeDashLanguageserver.libWorkspaceFoldersMod.WorkspaceFolders
 import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod.Feature
 import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod._RemoteWorkspace
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotWorkspaceFoldersMod.WorkspaceFolder

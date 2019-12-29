@@ -1,6 +1,6 @@
 package typings.react.reactMod
 
-import typings.react.reactStrings.Empty
+import typings.react.reactStrings._empty
 import typings.react.reactStrings.`after-edge`
 import typings.react.reactStrings.`before-edge`
 import typings.react.reactStrings.`text-after-edge`
@@ -88,7 +88,7 @@ trait SVGAttributes[T]
   var colorRendering: js.UndefOr[Double | String] = js.undefined
   var contentScriptType: js.UndefOr[Double | String] = js.undefined
   var contentStyleType: js.UndefOr[Double | String] = js.undefined
-  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | Empty] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   var cursor: js.UndefOr[Double | String] = js.undefined
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
@@ -353,7 +353,7 @@ object SVGAttributes {
     colorRendering: Double | String = null,
     contentScriptType: Double | String = null,
     contentStyleType: Double | String = null,
-    crossOrigin: anonymous | `use-credentials` | Empty = null,
+    crossOrigin: anonymous | `use-credentials` | _empty = null,
     cursor: Double | String = null,
     cx: Double | String = null,
     cy: Double | String = null,

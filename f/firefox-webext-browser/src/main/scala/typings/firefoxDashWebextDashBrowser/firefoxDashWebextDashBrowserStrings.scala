@@ -36,7 +36,6 @@ import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.CSSOrigin
 import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.ImageFormat
 import typings.firefoxDashWebextDashBrowser.browser.extensionTypes.RunAt
 import typings.firefoxDashWebextDashBrowser.browser.geckoProfiler.ProfilerFeature
-import typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
 import typings.firefoxDashWebextDashBrowser.browser.idle.IdleState
 import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionDisabledReason
 import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionInstallType
@@ -59,7 +58,6 @@ import typings.firefoxDashWebextDashBrowser.browser.runtime.RequestUpdateCheckSt
 import typings.firefoxDashWebextDashBrowser.browser.tabs.MutedInfoReason
 import typings.firefoxDashWebextDashBrowser.browser.tabs.TabStatus
 import typings.firefoxDashWebextDashBrowser.browser.tabs.UpdatePropertyName
-import typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
 import typings.firefoxDashWebextDashBrowser.browser.tabs.ZoomSettingsMode
 import typings.firefoxDashWebextDashBrowser.browser.tabs.ZoomSettingsScope
 import typings.firefoxDashWebextDashBrowser.browser.tabs._QueryScreen
@@ -70,6 +68,7 @@ import typings.firefoxDashWebextDashBrowser.browser.types.SettingScope
 import typings.firefoxDashWebextDashBrowser.browser.urlbar.ResultType
 import typings.firefoxDashWebextDashBrowser.browser.urlbar.SourceType
 import typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionQualifier
+import typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.CertificateTransparencyStatus
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnAuthRequiredOptions
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnBeforeRequestOptions
@@ -81,6 +80,7 @@ import typings.firefoxDashWebextDashBrowser.browser.webRequest._SecurityInfoProt
 import typings.firefoxDashWebextDashBrowser.browser.webRequest._SecurityInfoState
 import typings.firefoxDashWebextDashBrowser.browser.windows.CreateType
 import typings.firefoxDashWebextDashBrowser.browser.windows.WindowState
+import typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,9 +94,6 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait `4g` extends _NetworkLinkInfoType
-  
-  @js.native
-  sealed trait `<all_urls>` extends js.Object
   
   @js.native
   sealed trait Alt
@@ -118,9 +115,6 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait Ctrl
     extends _OnClickDataModifiers
        with typings.firefoxDashWebextDashBrowser.browser.menus._OnClickDataModifiers
-  
-  @js.native
-  sealed trait Empty extends js.Object
   
   @js.native
   sealed trait FILE_ACCESS_DENIED extends InterruptReason
@@ -156,7 +150,7 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait GET extends _DownloadMethod
   
   @js.native
-  sealed trait JS extends ProfilerFeature
+  sealed trait Lessthansignall_urlsGreaterthansign extends js.Object
   
   @js.native
   sealed trait MacCtrl
@@ -211,13 +205,13 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait TLSv1 extends _SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait TLSv1DOT1 extends _SecurityInfoProtocolVersion
+  sealed trait TLSv1Dot1 extends _SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait TLSv1DOT2 extends _SecurityInfoProtocolVersion
+  sealed trait TLSv1Dot2 extends _SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait TLSv1DOT3 extends _SecurityInfoProtocolVersion
+  sealed trait TLSv1Dot3 extends _SecurityInfoProtocolVersion
   
   @js.native
   sealed trait USER_CANCELED extends InterruptReason
@@ -227,6 +221,9 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait Window extends _QueryScreen
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait accepted extends DangerType
@@ -287,7 +284,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait app
     extends WindowType
-       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
   
   @js.native
   sealed trait app_update extends OnRestartRequiredReason
@@ -321,15 +318,16 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait auto_bookmark
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait auto_subframe
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
-  sealed trait auto_toplevel extends TransitionType
+  sealed trait auto_toplevel
+    extends typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait automatic extends ZoomSettingsMode
@@ -516,7 +514,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait devtools
     extends WindowType
-       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
        with _Permission
   
   @js.native
@@ -574,7 +572,7 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait downloads extends _OptionalPermission
   
   @js.native
-  sealed trait downloadsDOTopen extends _OptionalPermission
+  sealed trait downloadsDotopen extends _OptionalPermission
   
   @js.native
   sealed trait dweb extends _ProtocolHandlerProtocol
@@ -628,7 +626,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait form_submit
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait forward_back extends TransitionQualifier
@@ -650,7 +648,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait generated
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait geo extends _ProtocolHandlerProtocol
@@ -739,12 +737,15 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait isarticle_ extends UpdatePropertyName
   
   @js.native
-  sealed trait java extends ProfilerFeature
+  sealed trait java_ extends ProfilerFeature
   
   @js.native
   sealed trait jpeg
     extends ImageFormat
        with _SetImageData
+  
+  @js.native
+  sealed trait js_ extends ProfilerFeature
   
   @js.native
   sealed trait jsallocations extends ProfilerFeature
@@ -755,13 +756,13 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait keyword
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
        with _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
   sealed trait keyword_generated
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait launcher
@@ -791,7 +792,7 @@ object firefoxDashWebextDashBrowserStrings {
     extends ContextType
        with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
        with TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait linux extends PlatformOs
@@ -837,7 +838,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait manual_subframe
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait `match` extends DescriptionStyleType
@@ -855,7 +856,7 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait menus extends _Permission
   
   @js.native
-  sealed trait menusDOToverrideContext extends _OptionalPermission
+  sealed trait menusDotoverrideContext extends _OptionalPermission
   
   @js.native
   sealed trait minimized extends WindowState
@@ -928,7 +929,7 @@ object firefoxDashWebextDashBrowserStrings {
        with typings.firefoxDashWebextDashBrowser.browser.menus.ItemType
        with WindowState
        with WindowType
-       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
   
   @js.native
   sealed trait normandyAddonStudy extends _Permission
@@ -990,7 +991,7 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait panel
     extends CreateType
        with WindowType
-       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
   
   @js.native
   sealed trait password
@@ -1040,7 +1041,7 @@ object firefoxDashWebextDashBrowserStrings {
     extends CreateType
        with ViewType
        with WindowType
-       with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
+       with typings.firefoxDashWebextDashBrowser.browser.tabs.WindowType
        with _UndefinedViewType
   
   @js.native
@@ -1101,7 +1102,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait reload
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait remote_tab extends ResultType
@@ -1225,8 +1226,7 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait stackwalk extends ProfilerFeature
   
   @js.native
-  sealed trait start_page
-    extends typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+  sealed trait start_page extends TransitionType
   
   @js.native
   sealed trait startup extends js.Object
@@ -1330,7 +1330,7 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait typed
     extends TransitionType
-       with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
+       with typings.firefoxDashWebextDashBrowser.browser.history.TransitionType
   
   @js.native
   sealed trait uncommon extends DangerType
@@ -1457,8 +1457,6 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   @scala.inline
-  def `<all_urls>`: `<all_urls>` = "<all_urls>".asInstanceOf[`<all_urls>`]
-  @scala.inline
   def Alt: Alt = "Alt".asInstanceOf[Alt]
   @scala.inline
   def Application: Application = "Application".asInstanceOf[Application]
@@ -1468,8 +1466,6 @@ object firefoxDashWebextDashBrowserStrings {
   def Command: Command = "Command".asInstanceOf[Command]
   @scala.inline
   def Ctrl: Ctrl = "Ctrl".asInstanceOf[Ctrl]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def FILE_ACCESS_DENIED: FILE_ACCESS_DENIED = "FILE_ACCESS_DENIED".asInstanceOf[FILE_ACCESS_DENIED]
   @scala.inline
@@ -1493,7 +1489,7 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
-  def JS: JS = "js".asInstanceOf[JS]
+  def Lessthansignall_urlsGreaterthansign: Lessthansignall_urlsGreaterthansign = "<all_urls>".asInstanceOf[Lessthansignall_urlsGreaterthansign]
   @scala.inline
   def MacCtrl: MacCtrl = "MacCtrl".asInstanceOf[MacCtrl]
   @scala.inline
@@ -1527,17 +1523,19 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   @scala.inline
-  def TLSv1DOT1: TLSv1DOT1 = "TLSv1.1".asInstanceOf[TLSv1DOT1]
+  def TLSv1Dot1: TLSv1Dot1 = "TLSv1.1".asInstanceOf[TLSv1Dot1]
   @scala.inline
-  def TLSv1DOT2: TLSv1DOT2 = "TLSv1.2".asInstanceOf[TLSv1DOT2]
+  def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
   @scala.inline
-  def TLSv1DOT3: TLSv1DOT3 = "TLSv1.3".asInstanceOf[TLSv1DOT3]
+  def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
   @scala.inline
   def USER_CANCELED: USER_CANCELED = "USER_CANCELED".asInstanceOf[USER_CANCELED]
   @scala.inline
   def USER_SHUTDOWN: USER_SHUTDOWN = "USER_SHUTDOWN".asInstanceOf[USER_SHUTDOWN]
   @scala.inline
   def Window: Window = "Window".asInstanceOf[Window]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
@@ -1749,7 +1747,7 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def downloads: downloads = "downloads".asInstanceOf[downloads]
   @scala.inline
-  def downloadsDOTopen: downloadsDOTopen = "downloads.open".asInstanceOf[downloadsDOTopen]
+  def downloadsDotopen: downloadsDotopen = "downloads.open".asInstanceOf[downloadsDotopen]
   @scala.inline
   def dweb: dweb = "dweb".asInstanceOf[dweb]
   @scala.inline
@@ -1847,9 +1845,11 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def isarticle_ : isarticle_ = "isarticle".asInstanceOf[isarticle_]
   @scala.inline
-  def java: java = "java".asInstanceOf[java]
+  def java_ : java_ = "java".asInstanceOf[java_]
   @scala.inline
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  @scala.inline
+  def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
   def jsallocations: jsallocations = "jsallocations".asInstanceOf[jsallocations]
   @scala.inline
@@ -1913,7 +1913,7 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def menus: menus = "menus".asInstanceOf[menus]
   @scala.inline
-  def menusDOToverrideContext: menusDOToverrideContext = "menus.overrideContext".asInstanceOf[menusDOToverrideContext]
+  def menusDotoverrideContext: menusDotoverrideContext = "menus.overrideContext".asInstanceOf[menusDotoverrideContext]
   @scala.inline
   def minimized: minimized = "minimized".asInstanceOf[minimized]
   @scala.inline

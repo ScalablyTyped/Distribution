@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class InputParameterCollection protected () extends js.Object {
   val Count: Double = js.native
-  var `InfoPath.InputParameterCollection_typekey`: InputParameterCollection = js.native
+  @JSName("InfoPath.InputParameterCollection_typekey")
+  var InfoPathDotInputParameterCollection_typekey: InputParameterCollection = js.native
   def Item(varIndex: js.Any): InputParameterObject = js.native
 }
 

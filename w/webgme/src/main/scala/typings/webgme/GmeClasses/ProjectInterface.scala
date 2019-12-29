@@ -9,6 +9,7 @@ import typings.webgme.GmeCommon.MetadataHash
 import typings.webgme.GmeCommon.Name
 import typings.webgme.GmeCommon.Path
 import typings.webgme.GmeCommon.ResultCallback
+import typings.webgme.GmeConfig.GmeConfig
 import typings.webgme.GmeStorage.CommitHash
 import typings.webgme.GmeStorage.CommitObject
 import typings.webgme.GmeStorage.CommitResult

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AddHeapSnapshotChunkEventDataType extends js.Object {
-  var chunk: java.lang.String
+  var chunk: String
 }
 
 object AddHeapSnapshotChunkEventDataType {
   @scala.inline
-  def apply(chunk: java.lang.String): AddHeapSnapshotChunkEventDataType = {
+  def apply(chunk: String): AddHeapSnapshotChunkEventDataType = {
     val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddHeapSnapshotChunkEventDataType]

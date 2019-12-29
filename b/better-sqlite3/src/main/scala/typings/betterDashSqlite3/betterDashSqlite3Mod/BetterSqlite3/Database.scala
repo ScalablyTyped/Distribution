@@ -32,7 +32,7 @@ trait Database extends js.Object {
   def pragma(source: String): js.Any = js.native
   def pragma(source: String, options: PragmaOptions): js.Any = js.native
   // tslint:disable-next-line no-unnecessary-generics
-  def prepare[BindParameters /* <: js.Array[_] | js.Object */](source: String): typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters] = js.native
-  def transaction[F /* <: VariableArgFunction */](fn: F): typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Transaction[F] = js.native
+  def prepare[BindParameters /* <: js.Array[_] | js.Object */](source: String): Statement[js.Array[BindParameters] | BindParameters] = js.native
+  def transaction[F /* <: VariableArgFunction */](fn: F): Transaction[F] = js.native
 }
 

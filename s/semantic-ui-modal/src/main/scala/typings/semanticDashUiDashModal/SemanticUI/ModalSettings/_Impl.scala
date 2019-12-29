@@ -5,7 +5,7 @@ import typings.semanticDashUiDashModal.JQuery
 import typings.semanticDashUiDashModal.SemanticUI.Modal.ClassNameSettings
 import typings.semanticDashUiDashModal.SemanticUI.Modal.ErrorSettings
 import typings.semanticDashUiDashModal.SemanticUI.Modal.SelectorSettings
-import typings.semanticDashUiDashModal.semanticDashUiDashModalNumbers.`false`
+import typings.semanticDashUiDashModal.semanticDashUiDashModalBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -124,29 +124,29 @@ trait _Impl extends js.Object {
   /**
     * Is called after a positive, approve or ok button is pressed. If the function returns false, the modal will not hide.
     */
-  def onApprove(`this`: JQuery, $element: JQuery): `false` | Unit
+  def onApprove($element: JQuery): `false` | Unit
   /**
     * Is called after a negative, deny or cancel button is pressed. If the function returns false the modal will not hide.
     */
-  def onDeny(`this`: JQuery, $element: JQuery): `false` | Unit
+  def onDeny($element: JQuery): `false` | Unit
   /**
     * Is called after a modal has finished hiding animation.
     */
-  def onHidden(`this`: JQuery): Unit
+  def onHidden(): Unit
   /**
     * Is called after a modal starts to hide. If the function returns false, the modal will not hide.
     */
-  def onHide(`this`: JQuery, $element: JQuery): `false` | Unit
+  def onHide($element: JQuery): `false` | Unit
   // endregion
   // region Callbacks
   /**
     * Is called when a modal starts to show.
     */
-  def onShow(`this`: JQuery): Unit
+  def onShow(): Unit
   /**
     * Is called after a modal has finished showing animating.
     */
-  def onVisible(`this`: JQuery): Unit
+  def onVisible(): Unit
 }
 
 object _Impl {
@@ -167,12 +167,12 @@ object _Impl {
     namespace: String,
     observeChanges: Boolean,
     offset: Double,
-    onApprove: (JQuery, JQuery) => `false` | Unit,
-    onDeny: (JQuery, JQuery) => `false` | Unit,
-    onHidden: JQuery => Unit,
-    onHide: (JQuery, JQuery) => `false` | Unit,
-    onShow: JQuery => Unit,
-    onVisible: JQuery => Unit,
+    onApprove: JQuery => `false` | Unit,
+    onDeny: JQuery => `false` | Unit,
+    onHidden: () => Unit,
+    onHide: JQuery => `false` | Unit,
+    onShow: () => Unit,
+    onVisible: () => Unit,
     performance: Boolean,
     queue: Boolean,
     selector: SelectorSettings,
@@ -180,7 +180,7 @@ object _Impl {
     transition: String,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], detachable = detachable.asInstanceOf[js.Any], dimmerSettings = dimmerSettings.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onApprove = js.Any.fromFunction2(onApprove), onDeny = js.Any.fromFunction2(onDeny), onHidden = js.Any.fromFunction1(onHidden), onHide = js.Any.fromFunction2(onHide), onShow = js.Any.fromFunction1(onShow), onVisible = js.Any.fromFunction1(onVisible), performance = performance.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], detachable = detachable.asInstanceOf[js.Any], dimmerSettings = dimmerSettings.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onApprove = js.Any.fromFunction1(onApprove), onDeny = js.Any.fromFunction1(onDeny), onHidden = js.Any.fromFunction0(onHidden), onHide = js.Any.fromFunction1(onHide), onShow = js.Any.fromFunction0(onShow), onVisible = js.Any.fromFunction0(onVisible), performance = performance.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

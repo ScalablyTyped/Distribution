@@ -14,6 +14,7 @@ class DeviceCommand protected () extends js.Object {
   val Description: String = js.native
   /** Returns the command Name */
   val Name: String = js.native
-  var `WIA.DeviceCommand_typekey`: DeviceCommand = js.native
+  @JSName("WIA.DeviceCommand_typekey")
+  var WIADotDeviceCommand_typekey: DeviceCommand = js.native
 }
 

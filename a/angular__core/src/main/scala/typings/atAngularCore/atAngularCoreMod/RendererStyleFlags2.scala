@@ -1,8 +1,6 @@
 package typings.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularCore.atAngularCoreMod.RendererStyleFlags2.DashCase
-import typings.atAngularCore.atAngularCoreMod.RendererStyleFlags2.Important
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

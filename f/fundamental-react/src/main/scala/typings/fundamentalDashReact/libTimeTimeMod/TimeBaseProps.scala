@@ -1,11 +1,14 @@
 package typings.fundamentalDashReact.libTimeTimeMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalDashReact.Anon_0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TimeBaseProps extends js.Object {
+  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   /* Set to **true** to use the 12-hour clock (hours ranging from 01 to 12) and to display a meridiem control. */
   var format12Hours: js.UndefOr[Boolean] = js.undefined
   /* Enables the input for hours. */
@@ -26,6 +29,8 @@ trait TimeBaseProps extends js.Object {
 object TimeBaseProps {
   @scala.inline
   def apply(
+    customStyles: StringDictionary[js.Any] = null,
+    disableStyles: js.UndefOr[Boolean] = js.undefined,
     format12Hours: js.UndefOr[Boolean] = js.undefined,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMinute: js.UndefOr[Boolean] = js.undefined,
@@ -34,6 +39,8 @@ object TimeBaseProps {
     time: Anon_0 = null
   ): TimeBaseProps = {
     val __obj = js.Dynamic.literal()
+    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(format12Hours)) __obj.updateDynamic("format12Hours")(format12Hours.asInstanceOf[js.Any])
     if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
     if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])

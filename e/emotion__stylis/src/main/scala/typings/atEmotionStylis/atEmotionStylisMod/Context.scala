@@ -1,12 +1,6 @@
 package typings.atEmotionStylis.atEmotionStylisMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atEmotionStylis.atEmotionStylisMod.Context.ATRUL
-import typings.atEmotionStylis.atEmotionStylisMod.Context.BLCKS
-import typings.atEmotionStylis.atEmotionStylisMod.Context.POSTS
-import typings.atEmotionStylis.atEmotionStylisMod.Context.PREPS
-import typings.atEmotionStylis.atEmotionStylisMod.Context.PROPS
-import typings.atEmotionStylis.atEmotionStylisMod.Context.UNKWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

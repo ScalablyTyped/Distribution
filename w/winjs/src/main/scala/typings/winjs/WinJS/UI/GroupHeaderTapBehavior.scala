@@ -1,8 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winjs.WinJS.UI.GroupHeaderTapBehavior.invoke
-import typings.winjs.WinJS.UI.GroupHeaderTapBehavior.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

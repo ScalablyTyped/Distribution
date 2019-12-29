@@ -18,7 +18,8 @@ class ListObject protected () extends js.Object {
   val DataBodyRange_Original: Range = js.native
   var DisplayName: String = js.native
   val DisplayRightToLeft: Boolean = js.native
-  var `Excel.ListObject_typekey`: ListObject = js.native
+  @JSName("Excel.ListObject_typekey")
+  var ExcelDotListObject_typekey: ListObject = js.native
   @JSName("HeaderRowRange")
   val HeaderRowRange_Original: Range = js.native
   @JSName("InsertRowRange")

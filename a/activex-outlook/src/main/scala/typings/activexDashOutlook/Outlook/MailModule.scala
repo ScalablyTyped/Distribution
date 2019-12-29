@@ -12,7 +12,8 @@ class MailModule protected () extends js.Object {
   val Name: String = js.native
   val NavigationGroups: typings.activexDashOutlook.Outlook.NavigationGroups = js.native
   val NavigationModuleType: OlNavigationModuleType = js.native
-  var `Outlook.MailModule_typekey`: MailModule = js.native
+  @JSName("Outlook.MailModule_typekey")
+  var OutlookDotMailModule_typekey: MailModule = js.native
   val Parent: js.Any = js.native
   var Position: Double = js.native
   val Session: NameSpace = js.native

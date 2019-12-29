@@ -18,7 +18,8 @@ class MultiPage protected () extends js.Object {
   var FontUnderline: Boolean = js.native
   var FontWeight: Double = js.native
   var ForeColor: Double = js.native
-  var `MSForms.MultiPage_typekey`: MultiPage = js.native
+  @JSName("MSForms.MultiPage_typekey")
+  var MSFormsDotMultiPage_typekey: MultiPage = js.native
   var MultiRow: Boolean = js.native
   @JSName("Pages")
   val Pages_Original: Pages = js.native

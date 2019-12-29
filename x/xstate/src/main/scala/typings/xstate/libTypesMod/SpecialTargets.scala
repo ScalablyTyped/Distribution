@@ -1,8 +1,6 @@
 package typings.xstate.libTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xstate.libTypesMod.SpecialTargets.Internal
-import typings.xstate.libTypesMod.SpecialTargets.Parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

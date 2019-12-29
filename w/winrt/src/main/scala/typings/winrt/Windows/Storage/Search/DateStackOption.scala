@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Storage.Search.DateStackOption.month
-import typings.winrt.Windows.Storage.Search.DateStackOption.none
-import typings.winrt.Windows.Storage.Search.DateStackOption.year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

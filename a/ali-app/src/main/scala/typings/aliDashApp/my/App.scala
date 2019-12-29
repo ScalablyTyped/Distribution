@@ -11,14 +11,14 @@ trait App
   /**
   		 * 获取当前页面
   		 */
-  def getCurrentPage(): typings.aliDashApp.my.Page
+  def getCurrentPage(): Page
 }
 
 object App {
   @scala.inline
   def apply(
     data: js.Any,
-    getCurrentPage: () => typings.aliDashApp.my.Page,
+    getCurrentPage: () => Page,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): App = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getCurrentPage = js.Any.fromFunction0(getCurrentPage))

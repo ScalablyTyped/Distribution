@@ -1,6 +1,5 @@
 package typings.pDashFilter
 
-import typings.pDashFilter.pDashFilterMod.Options
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

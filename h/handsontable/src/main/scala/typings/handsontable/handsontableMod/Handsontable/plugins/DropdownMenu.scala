@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DropdownMenu extends Base {
   var SEPARATOR: SeparatorObject
   var commandExecutor: CommandExecutor
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var itemsFactory: ItemsFactory | Unit
   var menu: Menu | Unit
   def close(): Unit
@@ -30,7 +30,7 @@ object DropdownMenu {
     disablePlugin: () => Unit,
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     executeCommand: (String, /* repeated */ js.Any) => Unit,
     hot: Core,
     init: () => Unit,

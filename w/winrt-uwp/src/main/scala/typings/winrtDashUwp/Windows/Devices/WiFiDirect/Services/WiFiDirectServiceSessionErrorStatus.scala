@@ -1,12 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.disassociated
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.localClose
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.noResponseFromRemote
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.ok
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.remoteClose
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.systemFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

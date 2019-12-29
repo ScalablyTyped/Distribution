@@ -4,8 +4,9 @@ import typings.senchaUnderscoreTouch.Ext.Array
 import typings.senchaUnderscoreTouch.Ext.IClass
 import typings.senchaUnderscoreTouch.Ext.IComponent
 import typings.senchaUnderscoreTouch.Ext.IContainer
-import typings.senchaUnderscoreTouch.Ext.IElement
 import typings.senchaUnderscoreTouch.Ext.data.IModel
+import typings.senchaUnderscoreTouch.Ext.dataview.IList
+import typings.senchaUnderscoreTouch.Ext.dom.IElement
 import typings.senchaUnderscoreTouch.Ext.mixin.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,23 +22,23 @@ trait IPullRefresh extends IComponent {
   /** [Method] Returns the value of lastUpdatedDateFormat
   		* @returns String
   		*/
-  var getLastUpdatedDateFormat: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLastUpdatedDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of lastUpdatedText
   		* @returns String
   		*/
-  var getLastUpdatedText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLastUpdatedText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of list
   		* @returns Ext.dataview.List
   		*/
-  var getList: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.dataview.IList]] = js.undefined
+  var getList: js.UndefOr[js.Function0[IList]] = js.undefined
   /** [Method] Returns the value of loadedText
   		* @returns String
   		*/
-  var getLoadedText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLoadedText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of loadingText
   		* @returns String
   		*/
-  var getLoadingText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLoadingText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of overpullSnapBackDuration
   		* @returns Number
   		*/
@@ -45,7 +46,7 @@ trait IPullRefresh extends IComponent {
   /** [Method] Returns the value of pullText
   		* @returns String
   		*/
-  var getPullText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getPullText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of pullTpl
   		* @returns Ext.XTemplate/String/Array
   		*/
@@ -53,7 +54,7 @@ trait IPullRefresh extends IComponent {
   /** [Method] Returns the value of releaseText
   		* @returns String
   		*/
-  var getReleaseText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getReleaseText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of scrollerAutoRefresh
   		* @returns Boolean
   		*/
@@ -67,27 +68,27 @@ trait IPullRefresh extends IComponent {
   		*/
   var getTranslatable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String) */
-  var lastUpdatedDateFormat: js.UndefOr[java.lang.String] = js.undefined
+  var lastUpdatedDateFormat: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var lastUpdatedText: js.UndefOr[java.lang.String] = js.undefined
+  var lastUpdatedText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.dataview.List) */
-  var list: js.UndefOr[typings.senchaUnderscoreTouch.Ext.dataview.IList] = js.undefined
+  var list: js.UndefOr[IList] = js.undefined
   /** [Config Option] (String) */
-  var loadedText: js.UndefOr[java.lang.String] = js.undefined
+  var loadedText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var loadingText: js.UndefOr[java.lang.String] = js.undefined
+  var loadingText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var overpullSnapBackDuration: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var pullRefreshText: js.UndefOr[java.lang.String] = js.undefined
+  var pullRefreshText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var pullReleaseText: js.UndefOr[java.lang.String] = js.undefined
+  var pullReleaseText: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var pullText: js.UndefOr[java.lang.String] = js.undefined
+  var pullText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.XTemplate/String/Array) */
   var pullTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var releaseText: js.UndefOr[java.lang.String] = js.undefined
+  var releaseText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var scrollerAutoRefresh: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of autoSnapBack
@@ -97,25 +98,23 @@ trait IPullRefresh extends IComponent {
   /** [Method] Sets the value of lastUpdatedDateFormat
   		* @param lastUpdatedDateFormat String The new value.
   		*/
-  var setLastUpdatedDateFormat: js.UndefOr[js.Function1[/* lastUpdatedDateFormat */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLastUpdatedDateFormat: js.UndefOr[js.Function1[/* lastUpdatedDateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of lastUpdatedText
   		* @param lastUpdatedText String The new value.
   		*/
-  var setLastUpdatedText: js.UndefOr[js.Function1[/* lastUpdatedText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLastUpdatedText: js.UndefOr[js.Function1[/* lastUpdatedText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of list
   		* @param list Ext.dataview.List The new value.
   		*/
-  var setList: js.UndefOr[
-    js.Function1[/* list */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.dataview.IList], Unit]
-  ] = js.undefined
+  var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[IList], Unit]] = js.undefined
   /** [Method] Sets the value of loadedText
   		* @param loadedText String The new value.
   		*/
-  var setLoadedText: js.UndefOr[js.Function1[/* loadedText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLoadedText: js.UndefOr[js.Function1[/* loadedText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of loadingText
   		* @param loadingText String The new value.
   		*/
-  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of overpullSnapBackDuration
   		* @param overpullSnapBackDuration Number The new value.
   		*/
@@ -123,11 +122,11 @@ trait IPullRefresh extends IComponent {
   /** [Method] Updates the PullRefreshText
   		* @param text String
   		*/
-  var setPullRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPullRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pullText
   		* @param pullText String The new value.
   		*/
-  var setPullText: js.UndefOr[js.Function1[/* pullText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setPullText: js.UndefOr[js.Function1[/* pullText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pullTpl
   		* @param pullTpl Ext.XTemplate/String/Array The new value.
   		*/
@@ -135,11 +134,11 @@ trait IPullRefresh extends IComponent {
   /** [Method] Updates the ReleaseRefreshText
   		* @param text String
   		*/
-  var setReleaseRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setReleaseRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of releaseText
   		* @param releaseText String The new value.
   		*/
-  var setReleaseText: js.UndefOr[js.Function1[/* releaseText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setReleaseText: js.UndefOr[js.Function1[/* releaseText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of scrollerAutoRefresh
   		* @param scrollerAutoRefresh Boolean The new value.
   		*/
@@ -165,14 +164,14 @@ object IPullRefresh {
   def apply(
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
+    addCls: (/* cls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
     autoSnapBack: js.UndefOr[Boolean] = js.undefined,
-    baseCls: java.lang.String = null,
+    baseCls: String = null,
     border: js.Any = null,
     bottom: js.Any = null,
     bubbleEvents: js.Any = null,
@@ -182,30 +181,30 @@ object IPullRefresh {
     centered: js.UndefOr[Boolean] = js.undefined,
     clearListeners: () => Unit = null,
     cls: js.Any = null,
-    componentCls: java.lang.String = null,
+    componentCls: String = null,
     config: js.Any = null,
     contentEl: js.Any = null,
     data: js.Any = null,
     destroy: () => Unit = null,
     disable: () => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledCls: java.lang.String = null,
-    dock: java.lang.String = null,
-    docked: java.lang.String = null,
+    disabledCls: String = null,
+    dock: String = null,
+    docked: String = null,
     enable: () => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     enterAnimation: js.Any = null,
     exitAnimation: js.Any = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
     flex: Int | Double = null,
     floating: js.UndefOr[Boolean] = js.undefined,
-    floatingCls: java.lang.String = null,
+    floatingCls: String = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     getAlignmentInfo: (/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any]) => Unit = null,
     getAutoSnapBack: () => Boolean = null,
-    getBaseCls: () => java.lang.String = null,
+    getBaseCls: () => String = null,
     getBorder: () => _ = null,
     getBottom: () => _ = null,
     getBubbleEvents: () => _ = null,
@@ -214,28 +213,28 @@ object IPullRefresh {
     getContentEl: () => _ = null,
     getData: () => _ = null,
     getDisabled: () => Boolean = null,
-    getDisabledCls: () => java.lang.String = null,
-    getDocked: () => java.lang.String = null,
-    getEl: () => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    getDisabledCls: () => String = null,
+    getDocked: () => String = null,
+    getEl: () => IElement = null,
     getEnterAnimation: () => _ = null,
     getExitAnimation: () => _ = null,
     getFlex: () => Double = null,
-    getFloatingCls: () => java.lang.String = null,
+    getFloatingCls: () => String = null,
     getHeight: () => _ = null,
     getHidden: () => Boolean = null,
-    getHiddenCls: () => java.lang.String = null,
+    getHiddenCls: () => String = null,
     getHideAnimation: () => _ = null,
     getHtml: () => _ = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getItemId: () => java.lang.String = null,
-    getLastUpdatedDateFormat: () => java.lang.String = null,
-    getLastUpdatedText: () => java.lang.String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
+    getItemId: () => String = null,
+    getLastUpdatedDateFormat: () => String = null,
+    getLastUpdatedText: () => String = null,
     getLeft: () => _ = null,
-    getList: () => typings.senchaUnderscoreTouch.Ext.dataview.IList = null,
+    getList: () => IList = null,
     getListeners: () => _ = null,
-    getLoadedText: () => java.lang.String = null,
-    getLoadingText: () => java.lang.String = null,
+    getLoadedText: () => String = null,
+    getLoadingText: () => String = null,
     getMargin: () => _ = null,
     getMaxHeight: () => _ = null,
     getMaxWidth: () => _ = null,
@@ -245,52 +244,52 @@ object IPullRefresh {
     getPadding: () => _ = null,
     getParent: () => IPullRefresh = null,
     getPlugins: () => _ = null,
-    getPullText: () => java.lang.String = null,
+    getPullText: () => String = null,
     getPullTpl: () => _ = null,
     getRecord: () => IModel = null,
-    getReleaseText: () => java.lang.String = null,
-    getRenderTo: () => IElement = null,
+    getReleaseText: () => String = null,
+    getRenderTo: () => typings.senchaUnderscoreTouch.Ext.IElement = null,
     getRight: () => _ = null,
     getScrollerAutoRefresh: () => Boolean = null,
     getShowAnimation: () => _ = null,
     getSize: () => _ = null,
     getSnappingAnimationDuration: () => Double = null,
     getStyle: () => _ = null,
-    getStyleHtmlCls: () => java.lang.String = null,
+    getStyleHtmlCls: () => String = null,
     getStyleHtmlContent: () => Boolean = null,
     getTop: () => _ = null,
     getTpl: () => _ = null,
-    getTplWriteMode: () => java.lang.String = null,
+    getTplWriteMode: () => String = null,
     getTranslatable: () => Boolean = null,
-    getUi: () => java.lang.String = null,
+    getUi: () => String = null,
     getWidth: () => _ = null,
-    getXTypes: () => java.lang.String = null,
+    getXTypes: () => String = null,
     getZIndex: () => Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasParent: () => Boolean = null,
     height: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    hiddenCls: java.lang.String = null,
+    hiddenCls: String = null,
     hide: /* animation */ js.UndefOr[js.Any] => IPullRefresh = null,
     hideAnimation: js.Any = null,
     hideOnMaskTap: js.UndefOr[Boolean] = js.undefined,
     html: js.Any = null,
-    id: java.lang.String = null,
+    id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     initialize: () => Unit = null,
     isDisabled: () => Boolean = null,
     isHidden: () => Boolean = null,
-    isXType: (/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean]) => Boolean = null,
-    itemId: java.lang.String = null,
-    lastUpdatedDateFormat: java.lang.String = null,
-    lastUpdatedText: java.lang.String = null,
+    isXType: (/* xtype */ js.UndefOr[String], /* shallow */ js.UndefOr[Boolean]) => Boolean = null,
+    itemId: String = null,
+    lastUpdatedDateFormat: String = null,
+    lastUpdatedText: String = null,
     layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined,
     left: js.Any = null,
-    list: typings.senchaUnderscoreTouch.Ext.dataview.IList = null,
+    list: IList = null,
     listeners: js.Any = null,
-    loadedText: java.lang.String = null,
-    loadingText: java.lang.String = null,
+    loadedText: String = null,
+    loadingText: String = null,
     margin: js.Any = null,
     maxHeight: js.Any = null,
     maxWidth: js.Any = null,
@@ -301,27 +300,27 @@ object IPullRefresh {
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     monitorOrientation: js.UndefOr[Boolean] = js.undefined,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     overpullSnapBackDuration: Int | Double = null,
     padding: js.Any = null,
     platformConfig: js.Any = null,
     plugins: js.Any = null,
-    pullRefreshText: java.lang.String = null,
-    pullReleaseText: java.lang.String = null,
-    pullText: java.lang.String = null,
+    pullRefreshText: String = null,
+    pullReleaseText: String = null,
+    pullText: String = null,
     pullTpl: js.Any = null,
     record: IModel = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    releaseText: java.lang.String = null,
+    releaseText: String = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeCls: (/* cls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    renderTo: IElement = null,
-    replaceCls: (/* oldCls */ js.UndefOr[java.lang.String], /* newCls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
+    renderTo: typings.senchaUnderscoreTouch.Ext.IElement = null,
+    replaceCls: (/* oldCls */ js.UndefOr[String], /* newCls */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => Unit = null,
     resetFloating: () => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
     right: js.Any = null,
@@ -329,7 +328,7 @@ object IPullRefresh {
     scrollerAutoRefresh: js.UndefOr[Boolean] = js.undefined,
     self: IClass = null,
     setAutoSnapBack: /* autoSnapBack */ js.UndefOr[Boolean] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setBaseCls: /* baseCls */ js.UndefOr[String] => Unit = null,
     setBorder: /* border */ js.UndefOr[js.Any] => Unit = null,
     setBottom: /* bottom */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
@@ -338,27 +337,27 @@ object IPullRefresh {
     setContentEl: /* contentEl */ js.UndefOr[js.Any] => Unit = null,
     setData: /* data */ js.UndefOr[js.Any] => Unit = null,
     setDisabled: /* disabled */ js.UndefOr[Boolean] => Unit = null,
-    setDisabledCls: /* disabledCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setDocked: /* docked */ js.UndefOr[java.lang.String] => Unit = null,
+    setDisabledCls: /* disabledCls */ js.UndefOr[String] => Unit = null,
+    setDocked: /* docked */ js.UndefOr[String] => Unit = null,
     setDraggable: /* draggable */ js.UndefOr[js.Any] => Unit = null,
     setEnterAnimation: /* enterAnimation */ js.UndefOr[js.Any] => Unit = null,
     setExitAnimation: /* exitAnimation */ js.UndefOr[js.Any] => Unit = null,
     setFlex: /* flex */ js.UndefOr[Double] => Unit = null,
     setFloating: /* floating */ js.UndefOr[Boolean] => Unit = null,
-    setFloatingCls: /* floatingCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setFloatingCls: /* floatingCls */ js.UndefOr[String] => Unit = null,
     setHeight: /* height */ js.UndefOr[js.Any] => Unit = null,
     setHidden: /* hidden */ js.UndefOr[Boolean] => Unit = null,
-    setHiddenCls: /* hiddenCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setHiddenCls: /* hiddenCls */ js.UndefOr[String] => Unit = null,
     setHideAnimation: /* hideAnimation */ js.UndefOr[js.Any] => Unit = null,
     setHtml: /* html */ js.UndefOr[js.Any] => Unit = null,
-    setItemId: /* itemId */ js.UndefOr[java.lang.String] => Unit = null,
-    setLastUpdatedDateFormat: /* lastUpdatedDateFormat */ js.UndefOr[java.lang.String] => Unit = null,
-    setLastUpdatedText: /* lastUpdatedText */ js.UndefOr[java.lang.String] => Unit = null,
+    setItemId: /* itemId */ js.UndefOr[String] => Unit = null,
+    setLastUpdatedDateFormat: /* lastUpdatedDateFormat */ js.UndefOr[String] => Unit = null,
+    setLastUpdatedText: /* lastUpdatedText */ js.UndefOr[String] => Unit = null,
     setLeft: /* left */ js.UndefOr[js.Any] => Unit = null,
-    setList: /* list */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.dataview.IList] => Unit = null,
+    setList: /* list */ js.UndefOr[IList] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setLoadedText: /* loadedText */ js.UndefOr[java.lang.String] => Unit = null,
-    setLoadingText: /* loadingText */ js.UndefOr[java.lang.String] => Unit = null,
+    setLoadedText: /* loadedText */ js.UndefOr[String] => Unit = null,
+    setLoadingText: /* loadingText */ js.UndefOr[String] => Unit = null,
     setMargin: /* margin */ js.UndefOr[js.Any] => Unit = null,
     setMaxHeight: /* maxHeight */ js.UndefOr[js.Any] => Unit = null,
     setMaxWidth: /* maxWidth */ js.UndefOr[js.Any] => Unit = null,
@@ -367,13 +366,13 @@ object IPullRefresh {
     setOverpullSnapBackDuration: /* overpullSnapBackDuration */ js.UndefOr[Double] => Unit = null,
     setPadding: /* padding */ js.UndefOr[js.Any] => Unit = null,
     setPlugins: /* plugins */ js.UndefOr[js.Any] => Unit = null,
-    setPullRefreshText: /* text */ js.UndefOr[java.lang.String] => Unit = null,
-    setPullText: /* pullText */ js.UndefOr[java.lang.String] => Unit = null,
+    setPullRefreshText: /* text */ js.UndefOr[String] => Unit = null,
+    setPullText: /* pullText */ js.UndefOr[String] => Unit = null,
     setPullTpl: /* pullTpl */ js.UndefOr[js.Any] => Unit = null,
     setRecord: /* record */ js.UndefOr[IModel] => Unit = null,
-    setReleaseRefreshText: /* text */ js.UndefOr[java.lang.String] => Unit = null,
-    setReleaseText: /* releaseText */ js.UndefOr[java.lang.String] => Unit = null,
-    setRenderTo: /* renderTo */ js.UndefOr[IElement] => Unit = null,
+    setReleaseRefreshText: /* text */ js.UndefOr[String] => Unit = null,
+    setReleaseText: /* releaseText */ js.UndefOr[String] => Unit = null,
+    setRenderTo: /* renderTo */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.IElement] => Unit = null,
     setRight: /* right */ js.UndefOr[js.Any] => Unit = null,
     setScrollable: () => Unit = null,
     setScrollerAutoRefresh: /* scrollerAutoRefresh */ js.UndefOr[Boolean] => Unit = null,
@@ -381,40 +380,40 @@ object IPullRefresh {
     setSize: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit = null,
     setSnappingAnimationDuration: /* snappingAnimationDuration */ js.UndefOr[Double] => Unit = null,
     setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
-    setStyleHtmlCls: /* styleHtmlCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setStyleHtmlCls: /* styleHtmlCls */ js.UndefOr[String] => Unit = null,
     setStyleHtmlContent: /* styleHtmlContent */ js.UndefOr[Boolean] => Unit = null,
     setTop: /* top */ js.UndefOr[js.Any] => Unit = null,
     setTpl: /* tpl */ js.UndefOr[js.Any] => Unit = null,
-    setTplWriteMode: /* tplWriteMode */ js.UndefOr[java.lang.String] => Unit = null,
+    setTplWriteMode: /* tplWriteMode */ js.UndefOr[String] => Unit = null,
     setTranslatable: /* translatable */ js.UndefOr[Boolean] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
+    setUi: /* ui */ js.UndefOr[String] => Unit = null,
     setWidth: /* width */ js.UndefOr[js.Any] => Unit = null,
     setZIndex: /* zIndex */ js.UndefOr[Double] => Unit = null,
     show: /* animation */ js.UndefOr[js.Any] => IPullRefresh = null,
     showAnimation: js.Any = null,
-    showBy: (/* component */ js.UndefOr[IPullRefresh], /* alignment */ js.UndefOr[java.lang.String]) => Unit = null,
+    showBy: (/* component */ js.UndefOr[IPullRefresh], /* alignment */ js.UndefOr[String]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     snapBack: /* force */ js.UndefOr[Boolean] => Unit = null,
     snappingAnimationDuration: Int | Double = null,
     statics: js.Any = null,
     stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined,
     style: js.Any = null,
-    styleHtmlCls: java.lang.String = null,
+    styleHtmlCls: String = null,
     styleHtmlContent: js.UndefOr[Boolean] = js.undefined,
     suspendEvents: () => Unit = null,
     top: js.Any = null,
     tpl: js.Any = null,
-    tplWriteMode: java.lang.String = null,
-    ui: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    tplWriteMode: String = null,
+    ui: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    up: /* selector */ js.UndefOr[java.lang.String] => IContainer = null,
+    up: /* selector */ js.UndefOr[String] => IContainer = null,
     update: () => Unit = null,
     updateStyleHtmlCls: (/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
     width: js.Any = null,
-    xtype: java.lang.String = null,
+    xtype: String = null,
     zIndex: Int | Double = null
   ): IPullRefresh = {
     val __obj = js.Dynamic.literal()

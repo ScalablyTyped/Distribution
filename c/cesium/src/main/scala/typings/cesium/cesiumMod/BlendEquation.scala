@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.BlendEquation.ADD
-import typings.cesium.cesiumMod.BlendEquation.REVERSE_SUBTRACT
-import typings.cesium.cesiumMod.BlendEquation.SUBTRACT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

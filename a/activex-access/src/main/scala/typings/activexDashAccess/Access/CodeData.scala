@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.CodeData")
 @js.native
 class CodeData protected () extends js.Object {
-  var `Access.CodeData_typekey`: CodeData = js.native
+  @JSName("Access.CodeData_typekey")
+  var AccessDotCodeData_typekey: CodeData = js.native
   @JSName("AllDatabaseDiagrams")
   val AllDatabaseDiagrams_Original: AccessObjects = js.native
   @JSName("AllFunctions")

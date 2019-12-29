@@ -1,10 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.PrintErrorType.asDisplayed
-import typings.officeDashJsDashPreview.Excel.PrintErrorType.blank
-import typings.officeDashJsDashPreview.Excel.PrintErrorType.dash
-import typings.officeDashJsDashPreview.Excel.PrintErrorType.notAvailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

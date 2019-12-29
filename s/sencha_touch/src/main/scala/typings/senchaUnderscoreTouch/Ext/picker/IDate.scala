@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IDate
-  extends typings.senchaUnderscoreTouch.Ext.picker.IPicker {
+trait IDate extends IPicker {
   /** [Config Option] (String) */
-  var dayText: js.UndefOr[java.lang.String] = js.undefined
+  var dayText: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of dayText
   		* @returns String
   		*/
-  var getDayText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDayText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of monthText
   		* @returns String
   		*/
-  var getMonthText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getMonthText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of slotOrder
   		* @returns Array
   		*/
@@ -28,21 +27,21 @@ trait IDate
   /** [Method] Returns the value of yearText
   		* @returns String
   		*/
-  var getYearText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getYearText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of yearTo
   		* @returns Number
   		*/
   var getYearTo: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (String) */
-  var monthText: js.UndefOr[java.lang.String] = js.undefined
+  var monthText: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of dayText
   		* @param dayText String The new value.
   		*/
-  var setDayText: js.UndefOr[js.Function1[/* dayText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDayText: js.UndefOr[js.Function1[/* dayText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of monthText
   		* @param monthText String The new value.
   		*/
-  var setMonthText: js.UndefOr[js.Function1[/* monthText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setMonthText: js.UndefOr[js.Function1[/* monthText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of slotOrder
   		* @param slotOrder Array The new value.
   		*/
@@ -67,7 +66,7 @@ trait IDate
   /** [Method] Sets the value of yearText
   		* @param yearText String The new value.
   		*/
-  var setYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of yearTo
   		* @param yearTo Number The new value.
   		*/
@@ -99,7 +98,7 @@ trait IDate
   /** [Config Option] (Number) */
   var yearFrom: js.UndefOr[Double] = js.undefined
   /** [Config Option] (String) */
-  var yearText: js.UndefOr[java.lang.String] = js.undefined
+  var yearText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var yearTo: js.UndefOr[Double] = js.undefined
 }
@@ -107,21 +106,21 @@ trait IDate
 object IDate {
   @scala.inline
   def apply(
-    IPicker: typings.senchaUnderscoreTouch.Ext.picker.IPicker = null,
-    dayText: java.lang.String = null,
-    getDayText: () => java.lang.String = null,
-    getMonthText: () => java.lang.String = null,
+    IPicker: IPicker = null,
+    dayText: String = null,
+    getDayText: () => String = null,
+    getMonthText: () => String = null,
     getSlotOrder: () => Array = null,
     getYearFrom: () => Double = null,
-    getYearText: () => java.lang.String = null,
+    getYearText: () => String = null,
     getYearTo: () => Double = null,
-    monthText: java.lang.String = null,
-    setDayText: /* dayText */ js.UndefOr[java.lang.String] => Unit = null,
-    setMonthText: /* monthText */ js.UndefOr[java.lang.String] => Unit = null,
+    monthText: String = null,
+    setDayText: /* dayText */ js.UndefOr[String] => Unit = null,
+    setMonthText: /* monthText */ js.UndefOr[String] => Unit = null,
     setSlotOrder: /* slotOrder */ js.UndefOr[Array] => Unit = null,
     setValue: (/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.IPicker = null,
     setYearFrom: /* yearFrom */ js.UndefOr[Double] => Unit = null,
-    setYearText: /* yearText */ js.UndefOr[java.lang.String] => Unit = null,
+    setYearText: /* yearText */ js.UndefOr[String] => Unit = null,
     setYearTo: /* yearTo */ js.UndefOr[Double] => Unit = null,
     slotOrder: Array = null,
     updateDayText: (/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any]) => Unit = null,
@@ -130,7 +129,7 @@ object IDate {
     updateYearText: /* yearText */ js.UndefOr[js.Any] => Unit = null,
     updateYearTo: () => Unit = null,
     yearFrom: Int | Double = null,
-    yearText: java.lang.String = null,
+    yearText: String = null,
     yearTo: Int | Double = null
   ): IDate = {
     val __obj = js.Dynamic.literal()

@@ -2,7 +2,7 @@ package typings.next
 
 import typings.next.distNextDashServerServerRouterMod.Params
 import typings.next.distNextDashServerServerRouterMod.RouteMatch
-import typings.next.nextNumbers.`false`
+import typings.next.nextBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

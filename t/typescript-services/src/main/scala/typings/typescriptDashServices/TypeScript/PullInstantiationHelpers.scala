@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.TypeScript
 
-import typings.typescriptDashServices.TypeScript.PullInstantiationHelpers.MutableTypeArgumentMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

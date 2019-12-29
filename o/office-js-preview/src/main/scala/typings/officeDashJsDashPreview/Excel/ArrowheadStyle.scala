@@ -1,12 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.diamond
-import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.none
-import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.open
-import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.oval
-import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.stealth
-import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

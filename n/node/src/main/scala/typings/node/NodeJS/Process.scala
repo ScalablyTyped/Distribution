@@ -3,8 +3,6 @@ package typings.node.NodeJS
 import typings.node.Anon_Debug
 import typings.node.Anon_SwallowErrors
 import typings.node.Anon_Targetdefaults
-import typings.node.Error
-import typings.node.NodeModule
 import typings.node.nodeStrings.beforeExit
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.exit
@@ -18,6 +16,7 @@ import typings.node.nodeStrings.unhandledRejection
 import typings.node.nodeStrings.warning
 import typings.node.processMod._Global_.NodeJS.ReadStream
 import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.std.Error
 import typings.std.ReadonlySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,22 +29,22 @@ trait Process extends EventEmitter {
     * read-only `Set` of flags allowable within the [`NODE_OPTIONS`][]
     * environment variable.
     */
-  var allowedNodeEnvironmentFlags: ReadonlySet[java.lang.String] = js.native
-  var arch: java.lang.String = js.native
-  var argv: js.Array[java.lang.String] = js.native
-  var argv0: java.lang.String = js.native
+  var allowedNodeEnvironmentFlags: ReadonlySet[String] = js.native
+  var arch: String = js.native
+  var argv: js.Array[String] = js.native
+  var argv0: String = js.native
   var config: Anon_Targetdefaults = js.native
   var connected: Boolean = js.native
   var debugPort: Double = js.native
   var domain: Domain = js.native
   var env: ProcessEnv = js.native
-  var execArgv: js.Array[java.lang.String] = js.native
-  var execPath: java.lang.String = js.native
+  var execArgv: js.Array[String] = js.native
+  var execPath: String = js.native
   var exitCode: js.UndefOr[Double] = js.native
   var features: Anon_Debug = js.native
   @JSName("hrtime")
   var hrtime_Original: HRTime = js.native
-  var mainModule: js.UndefOr[NodeModule] = js.native
+  var mainModule: js.UndefOr[Module] = js.native
   var pid: Double = js.native
   var platform: Platform = js.native
   var ppid: Double = js.native
@@ -73,8 +72,8 @@ trait Process extends EventEmitter {
     * Can also be a tty.WriteStream, not typed due to limitation.s
     */
   var stdout: WriteStream = js.native
-  var title: java.lang.String = js.native
-  var version: java.lang.String = js.native
+  var title: String = js.native
+  var version: String = js.native
   var versions: ProcessVersions = js.native
   def abort(): Unit = js.native
   def addListener(event: Signals, listener: SignalsListener): this.type = js.native
@@ -114,18 +113,18 @@ trait Process extends EventEmitter {
   def addListener_unhandledRejection(event: unhandledRejection, listener: UnhandledRejectionListener): this.type = js.native
   @JSName("addListener")
   def addListener_warning(event: warning, listener: WarningListener): this.type = js.native
-  def chdir(directory: java.lang.String): Unit = js.native
+  def chdir(directory: String): Unit = js.native
   def cpuUsage(): CpuUsage = js.native
   def cpuUsage(previousValue: CpuUsage): CpuUsage = js.native
-  def cwd(): java.lang.String = js.native
+  def cwd(): String = js.native
   def disconnect(): Unit = js.native
   def emit(event: Signals, signal: Signals): Boolean = js.native
-  def emitWarning(warning: java.lang.String): Unit = js.native
-  def emitWarning(warning: java.lang.String, name: java.lang.String): Unit = js.native
-  def emitWarning(warning: java.lang.String, name: java.lang.String, ctor: js.Function): Unit = js.native
+  def emitWarning(warning: String): Unit = js.native
+  def emitWarning(warning: String, name: String): Unit = js.native
+  def emitWarning(warning: String, name: String, ctor: js.Function): Unit = js.native
   def emitWarning(warning: Error): Unit = js.native
-  def emitWarning(warning: Error, name: java.lang.String): Unit = js.native
-  def emitWarning(warning: Error, name: java.lang.String, ctor: js.Function): Unit = js.native
+  def emitWarning(warning: Error, name: String): Unit = js.native
+  def emitWarning(warning: Error, name: String, ctor: js.Function): Unit = js.native
   @JSName("emit")
   def emit_beforeExit(event: beforeExit, code: Double): Boolean = js.native
   @JSName("emit")
@@ -137,21 +136,13 @@ trait Process extends EventEmitter {
   @JSName("emit")
   def emit_multipleResolves(event: multipleResolves, listener: MultipleResolveListener): this.type = js.native
   @JSName("emit")
-  def emit_newListener(
-    event: newListener,
-    eventName: java.lang.String,
-    listener: js.Function1[/* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def emit_newListener(event: newListener, eventName: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("emit")
   def emit_newListener(event: newListener, eventName: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("emit")
   def emit_rejectionHandled(event: rejectionHandled, promise: js.Promise[_]): Boolean = js.native
   @JSName("emit")
-  def emit_removeListener(
-    event: removeListener,
-    eventName: java.lang.String,
-    listener: js.Function1[/* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def emit_removeListener(event: removeListener, eventName: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("emit")
   def emit_uncaughtException(event: uncaughtException, error: Error): Boolean = js.native
   @JSName("emit")
@@ -169,7 +160,7 @@ trait Process extends EventEmitter {
   def hrtime(): js.Tuple2[Double, Double] = js.native
   def hrtime(time: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
   def kill(pid: Double): Unit = js.native
-  def kill(pid: Double, signal: java.lang.String): Unit = js.native
+  def kill(pid: Double, signal: String): Unit = js.native
   def kill(pid: Double, signal: Double): Unit = js.native
   def listeners(event: Signals): js.Array[SignalsListener] = js.native
   @JSName("listeners")
@@ -292,14 +283,14 @@ trait Process extends EventEmitter {
   def resourceUsage(): ResourceUsage = js.native
   def setUncaughtExceptionCaptureCallback(): Unit = js.native
   def setUncaughtExceptionCaptureCallback(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def setegid(id: java.lang.String): Unit = js.native
+  def setegid(id: String): Unit = js.native
   def setegid(id: Double): Unit = js.native
-  def seteuid(id: java.lang.String): Unit = js.native
+  def seteuid(id: String): Unit = js.native
   def seteuid(id: Double): Unit = js.native
-  def setgid(id: java.lang.String): Unit = js.native
+  def setgid(id: String): Unit = js.native
   def setgid(id: Double): Unit = js.native
-  def setgroups(groups: js.Array[java.lang.String | Double]): Unit = js.native
-  def setuid(id: java.lang.String): Unit = js.native
+  def setgroups(groups: js.Array[String | Double]): Unit = js.native
+  def setuid(id: String): Unit = js.native
   def setuid(id: Double): Unit = js.native
   /**
     * Can only be set if not in worker thread.

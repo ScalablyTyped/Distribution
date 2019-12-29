@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-lite
 
-Typings are for version 0.4.1
+Typings are for version 0.6.0
 
 ## Library description:
 A tiny javascript type testing tool

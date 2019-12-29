@@ -1,6 +1,6 @@
 package typings.elasticsearch.elasticsearchMod
 
-import typings.elasticsearch.elasticsearchStrings.Empty
+import typings.elasticsearch.elasticsearchStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait IndicesAnalyzeParams extends GenericParams {
   var explain: js.UndefOr[Boolean] = js.undefined
   var field: js.UndefOr[String] = js.undefined
   var filter: js.UndefOr[NameList] = js.undefined
-  var format: js.UndefOr[Empty] = js.undefined
+  var format: js.UndefOr[_empty] = js.undefined
   var index: js.UndefOr[String] = js.undefined
   var perferLocal: js.UndefOr[Boolean] = js.undefined
   var text: js.UndefOr[NameList] = js.undefined
@@ -30,7 +30,7 @@ object IndicesAnalyzeParams {
     field: String = null,
     filter: NameList = null,
     filterPath: String | js.Array[String] = null,
-    format: Empty = null,
+    format: _empty = null,
     ignore: Double | js.Array[Double] = null,
     index: String = null,
     maxRetries: Int | Double = null,

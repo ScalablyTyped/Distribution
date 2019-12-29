@@ -1,11 +1,6 @@
 package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.ui.core.MessageType.Error
-import typings.openui5.sap.ui.core.MessageType.Information
-import typings.openui5.sap.ui.core.MessageType.None
-import typings.openui5.sap.ui.core.MessageType.Success
-import typings.openui5.sap.ui.core.MessageType.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

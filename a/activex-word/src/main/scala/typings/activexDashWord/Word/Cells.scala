@@ -20,7 +20,8 @@ class Cells protected () extends js.Object {
   val Shading: typings.activexDashWord.Word.Shading = js.native
   var VerticalAlignment: WdCellVerticalAlignment = js.native
   var Width: Double = js.native
-  var `Word.Cells_typekey`: Cells = js.native
+  @JSName("Word.Cells_typekey")
+  var WordDotCells_typekey: Cells = js.native
   def Add(): Cell = js.native
   def Add(BeforeCell: js.Any): Cell = js.native
   def AutoFit(): Unit = js.native

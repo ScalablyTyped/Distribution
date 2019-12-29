@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm.aes
-import typings.winrtDashUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm.notAes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

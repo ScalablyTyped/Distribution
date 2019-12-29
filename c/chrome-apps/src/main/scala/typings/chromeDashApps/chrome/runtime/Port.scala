@@ -1,5 +1,6 @@
 package typings.chromeDashApps.chrome.runtime
 
+import typings.chromeDashApps.chrome.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +12,9 @@ import scala.scalajs.js.annotation._
 trait Port extends js.Object {
   var name: String
   /** An object which allows the addition and removal of listeners for a Chrome event. */
-  var onDisconnect: typings.chromeDashApps.chrome.events.Event[js.Function1[/* port */ this.type, Unit]]
+  var onDisconnect: Event[js.Function1[/* port */ this.type, Unit]]
   /** An object which allows the addition and removal of listeners for a Chrome event. */
-  var onMessage: typings.chromeDashApps.chrome.events.Event[js.Function2[/* message */ _, /* port */ this.type, Unit]]
+  var onMessage: Event[js.Function2[/* message */ _, /* port */ this.type, Unit]]
   /**
     * Optional.
     * This property will only be present on ports passed to onConnect/onConnectExternal listeners.
@@ -28,8 +29,8 @@ object Port {
   def apply(
     disconnect: () => Unit,
     name: String,
-    onDisconnect: typings.chromeDashApps.chrome.events.Event[js.Function1[Port, Unit]],
-    onMessage: typings.chromeDashApps.chrome.events.Event[js.Function2[/* message */ _, Port, Unit]],
+    onDisconnect: Event[js.Function1[Port, Unit]],
+    onMessage: Event[js.Function2[/* message */ _, Port, Unit]],
     postMessage: js.Object => Unit,
     sender: MessageSender = null
   ): Port = {

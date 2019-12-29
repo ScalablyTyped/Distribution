@@ -72,6 +72,14 @@ trait colorCreateAgeRendererParams extends Object {
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createAgeRenderer)
+    *
+    * @default false
+    */
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * The name of the field, or a date value representing the start time in the age calculation. If a date value is specified, then the `endTime` parameter must reference a Date field in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createAgeRenderer)
@@ -142,6 +150,7 @@ object colorCreateAgeRendererParams {
     defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined,
     legendOptions: colorCreateAgeRendererParamsLegendOptions = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     statistics: SummaryStatisticsResult = null,
     symbolType: String = null,
     theme: String = null,
@@ -154,6 +163,7 @@ object colorCreateAgeRendererParams {
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

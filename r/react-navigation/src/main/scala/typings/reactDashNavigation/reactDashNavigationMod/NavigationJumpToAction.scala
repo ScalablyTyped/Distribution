@@ -1,6 +1,6 @@
 package typings.reactDashNavigation.reactDashNavigationMod
 
-import typings.reactDashNavigation.reactDashNavigationStrings.`Navigation/JUMP_TO`
+import typings.reactDashNavigation.reactDashNavigationStrings.NavigationSlashJUMP_TO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait NavigationJumpToAction extends js.Object {
   var params: js.UndefOr[NavigationParams] = js.undefined
   var preserveFocus: Boolean
   var routeName: String
-  var `type`: `Navigation/JUMP_TO`
+  var `type`: NavigationSlashJUMP_TO
 }
 
 object NavigationJumpToAction {
@@ -19,7 +19,7 @@ object NavigationJumpToAction {
     key: String,
     preserveFocus: Boolean,
     routeName: String,
-    `type`: `Navigation/JUMP_TO`,
+    `type`: NavigationSlashJUMP_TO,
     params: NavigationParams = null
   ): NavigationJumpToAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], preserveFocus = preserveFocus.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])

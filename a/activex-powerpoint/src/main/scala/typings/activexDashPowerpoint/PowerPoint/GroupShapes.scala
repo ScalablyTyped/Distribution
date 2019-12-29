@@ -11,7 +11,8 @@ class GroupShapes protected () extends js.Object {
   val Count: Double = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.GroupShapes_typekey`: GroupShapes = js.native
+  @JSName("PowerPoint.GroupShapes_typekey")
+  var PowerPointDotGroupShapes_typekey: GroupShapes = js.native
   def Item(Index: js.Any): Shape = js.native
   def Range(Index: js.Any): ShapeRange = js.native
 }

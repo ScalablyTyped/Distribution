@@ -8,8 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICompositeElementLite
-  extends typings.senchaUnderscoreTouch.Ext.dom.IElement {
+trait ICompositeElementLite extends IElement {
   /** [Method] Adds elements to this Composite object
   		* @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an Array of DOM elements to add, or another Composite object who's elements should be added.
   		* @param root HTMLElement/String The root element of the query or id of the root.
@@ -27,10 +26,10 @@ trait ICompositeElementLite
   @JSName("addCls")
   var addCls_ICompositeElementLite: js.UndefOr[
     js.Function3[
-      /* names */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
+      /* names */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
+      IElement
     ]
   ] = js.undefined
   /** [Method] fixes scope with flyweight
@@ -55,25 +54,19 @@ trait ICompositeElementLite
   		* @returns Ext.dom.Element This element.
   		*/
   @JSName("appendChild")
-  var appendChild_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var appendChild_ICompositeElementLite: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Appends this element to the passed element
   		* @param el String/HTMLElement/Ext.dom.Element The new parent element. The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.Element This element.
   		*/
   @JSName("appendTo")
-  var appendTo_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] More flexible version of setStyle for setting style properties
   		* @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("applyStyles")
-  var applyStyles_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* styles */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var applyStyles_ICompositeElementLite: js.UndefOr[js.Function1[/* styles */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Removes all elements  */
   var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Creates the passed DomHelper config and appends it to this element or optionally inserts it before the passed child e
@@ -88,7 +81,7 @@ trait ICompositeElementLite
       /* config */ js.UndefOr[js.Any], 
       /* insertBefore */ js.UndefOr[HTMLElement], 
       /* returnDom */ js.UndefOr[Boolean], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
+      IElement
     ]
   ] = js.undefined
   /** [Method] Calls the passed function for each element in this composite
@@ -125,25 +118,19 @@ trait ICompositeElementLite
   		* @returns Ext.dom.Element This element.
   		*/
   @JSName("insertAfter")
-  var insertAfter_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Inserts this element before the passed element in the DOM
   		* @param el String/HTMLElement/Ext.dom.Element The element before which this element will be inserted. The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.Element This element.
   		*/
   @JSName("insertBefore")
-  var insertBefore_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Inserts an element as the first child of this element
   		* @param element String/HTMLElement/Ext.dom.Element The id or element to insert.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("insertFirst")
-  var insertFirst_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var insertFirst_ICompositeElementLite: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Inserts or creates the passed element or DomHelper config as a sibling of this element
   		* @param el String/HTMLElement/Ext.dom.Element/Object/Array The id, element to insert or a DomHelper config to create and insert or an array of any of those.
   		* @param where String 'before' or 'after'.
@@ -154,26 +141,22 @@ trait ICompositeElementLite
   var insertSibling_ICompositeElementLite: js.UndefOr[
     js.Function3[
       /* el */ js.UndefOr[js.Any], 
-      /* where */ js.UndefOr[java.lang.String], 
+      /* where */ js.UndefOr[String], 
       /* returnDom */ js.UndefOr[Boolean], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
+      IElement
     ]
   ] = js.undefined
   /** [Method] Returns a flyweight Element of the dom element object at the specified index
   		* @param index Number
   		* @returns Ext.dom.Element
   		*/
-  var item: js.UndefOr[
-    js.Function1[/* index */ js.UndefOr[Double], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], IElement]] = js.undefined
   /** [Method] Adds one or more CSS classes to this element and removes the same class es from all siblings
   		* @param className String/String[] The CSS class to add, or an array of classes.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("radioCls")
-  var radioCls_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* className */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var radioCls_ICompositeElementLite: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Removes the given CSS class es from this Element
   		* @param names String The CSS class(es) to remove from this element.
   		* @param prefix String Prefix to prepend to each class to be removed.
@@ -183,10 +166,10 @@ trait ICompositeElementLite
   @JSName("removeCls")
   var removeCls_ICompositeElementLite: js.UndefOr[
     js.Function3[
-      /* names */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
+      /* names */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
+      IElement
     ]
   ] = js.undefined
   /** [Method] Removes the specified element s
@@ -201,7 +184,7 @@ trait ICompositeElementLite
   		* @returns Ext.dom.Element this
   		*/
   @JSName("repaint")
-  var repaint_ICompositeElementLite: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.dom.IElement]] = js.undefined
+  var repaint_ICompositeElementLite: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Replaces a CSS class on the element with another
   		* @param oldName String The CSS class to replace.
   		* @param newName String The replacement CSS class.
@@ -212,11 +195,11 @@ trait ICompositeElementLite
   @JSName("replaceCls")
   var replaceCls_ICompositeElementLite: js.UndefOr[
     js.Function4[
-      /* oldName */ js.UndefOr[java.lang.String], 
-      /* newName */ js.UndefOr[java.lang.String], 
-      /* prefix */ js.UndefOr[java.lang.String], 
-      /* suffix */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
+      /* oldName */ js.UndefOr[String], 
+      /* newName */ js.UndefOr[String], 
+      /* prefix */ js.UndefOr[String], 
+      /* suffix */ js.UndefOr[String], 
+      IElement
     ]
   ] = js.undefined
   /** [Method] Replaces the specified element with the passed element
@@ -238,17 +221,13 @@ trait ICompositeElementLite
   		* @returns Ext.dom.Element This element.
   		*/
   @JSName("replaceWith")
-  var replaceWith_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Replaces the passed element with this element
   		* @param element String/HTMLElement/Ext.dom.Element The element to replace. The id of the node, a DOM Node or an existing Element.
   		* @returns Ext.dom.Element This element.
   		*/
   @JSName("replace")
-  var replace_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var replace_ICompositeElementLite: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
   		* @param selector String/HTMLElement[] The CSS selector or an array of elements
   		* @param composite Boolean Return a CompositeElement as opposed to a CompositeElementLite. Defaults to false.
@@ -262,82 +241,55 @@ trait ICompositeElementLite
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setBottom")
-  var setBottom_ICompositeElementLite: js.UndefOr[
-    js.Function1[
-      /* bottom */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
-  ] = js.undefined
+  var setBottom_ICompositeElementLite: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[String], IElement]] = js.undefined
   /** [Method] Sets the element s box
   		* @param box Object The box to fill, for example: {  left: ...,  top: ...,  width: ...,  height: ... }
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setBox")
-  var setBox_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* box */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Set the height of this Element
   		* @param height Number/String The new height.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setHeight")
-  var setHeight_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Sets the element s left position directly using CSS style instead of setX
   		* @param left String The left CSS property value.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setLeft")
-  var setLeft_ICompositeElementLite: js.UndefOr[
-    js.Function1[
-      /* left */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
-  ] = js.undefined
+  var setLeft_ICompositeElementLite: js.UndefOr[js.Function1[/* left */ js.UndefOr[String], IElement]] = js.undefined
   /** [Method] Set the maximum height of this Element
   		* @param height Number/String The new maximum height.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setMaxHeight")
-  var setMaxHeight_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMaxHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Set the maximum width of this Element
   		* @param width Number/String The new maximum width.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setMaxWidth")
-  var setMaxWidth_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMaxWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Set the minimum height of this Element
   		* @param height Number/String The new minimum height.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setMinHeight")
-  var setMinHeight_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMinHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Set the minimum width of this Element
   		* @param width Number/String The new minimum width.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setMinWidth")
-  var setMinWidth_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMinWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Sets the element s CSS right style
   		* @param right String The right CSS property value.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setRight")
-  var setRight_ICompositeElementLite: js.UndefOr[
-    js.Function1[
-      /* right */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
-  ] = js.undefined
+  var setRight_ICompositeElementLite: js.UndefOr[js.Function1[/* right */ js.UndefOr[String], IElement]] = js.undefined
   /** [Method] Set the size of this Element
   		* @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used. A size object in the format {width: widthValue, height: heightValue}.
   		* @param height Number/String The new height. This may be one of:  A Number specifying the new height in this Element's defaultUnits (by default, pixels). A String used to set the CSS height style. Animation may not be used.
@@ -345,11 +297,7 @@ trait ICompositeElementLite
   		*/
   @JSName("setSize")
   var setSize_ICompositeElementLite: js.UndefOr[
-    js.Function2[
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
+    js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], IElement]
   ] = js.undefined
   /** [Method] Wrapper for setting style properties also takes single object parameter of multiple styles
   		* @param property String/Object The style property to be set, or an object of multiple styles.
@@ -358,31 +306,20 @@ trait ICompositeElementLite
   		*/
   @JSName("setStyle")
   var setStyle_ICompositeElementLite: js.UndefOr[
-    js.Function2[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
+    js.Function2[/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], IElement]
   ] = js.undefined
   /** [Method] Sets the element s top position directly using CSS style instead of setY
   		* @param top String The top CSS property value.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setTop")
-  var setTop_ICompositeElementLite: js.UndefOr[
-    js.Function1[
-      /* top */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
-  ] = js.undefined
+  var setTop_ICompositeElementLite: js.UndefOr[js.Function1[/* top */ js.UndefOr[String], IElement]] = js.undefined
   /** [Method] Use this to change the visibility mode between VISIBILITY DISPLAY or OFFSETS
   		* @param mode Object
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setVisibilityMode")
-  var setVisibilityMode_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* mode */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setVisibilityMode_ICompositeElementLite: js.UndefOr[js.Function1[/* mode */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Sets the visibility of the element see details
   		* @param visible Boolean Whether the element is visible.
   		* @returns Ext.Element this
@@ -396,33 +333,25 @@ trait ICompositeElementLite
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setWidth")
-  var setWidth_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], IElement]] = js.undefined
   /** [Method] Sets the position of the element in page coordinates regardless of how the element is positioned
   		* @param pos Number[] Contains X &amp; Y [x, y] values for new position (coordinates are page-based).
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setXY")
-  var setXY_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* pos */ js.UndefOr[Array], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setXY_ICompositeElementLite: js.UndefOr[js.Function1[/* pos */ js.UndefOr[Array], IElement]] = js.undefined
   /** [Method] Sets the X position of the element based on page coordinates
   		* @param x Number The X position of the element
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setX")
-  var setX_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* x */ js.UndefOr[Double], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setX_ICompositeElementLite: js.UndefOr[js.Function1[/* x */ js.UndefOr[Double], IElement]] = js.undefined
   /** [Method] Sets the Y position of the element based on page coordinates
   		* @param y Number The Y position of the element.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("setY")
-  var setY_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* y */ js.UndefOr[Double], typings.senchaUnderscoreTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setY_ICompositeElementLite: js.UndefOr[js.Function1[/* y */ js.UndefOr[Double], IElement]] = js.undefined
   /** [Method] Sets the passed attributes as attributes of this element a style attribute can be a string object or function
   		* @param attributes Object The object with the attributes.
   		* @param useSet Boolean false to override the default setAttribute to use expandos.
@@ -430,23 +359,14 @@ trait ICompositeElementLite
   		*/
   @JSName("set")
   var set_ICompositeElementLite: js.UndefOr[
-    js.Function2[
-      /* attributes */ js.UndefOr[js.Any], 
-      /* useSet */ js.UndefOr[Boolean], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
+    js.Function2[/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean], IElement]
   ] = js.undefined
   /** [Method] Toggles the specified CSS class on this element removes it if it already exists otherwise adds it
   		* @param className String The CSS class to toggle.
   		* @returns Ext.dom.Element this
   		*/
   @JSName("toggleCls")
-  var toggleCls_ICompositeElementLite: js.UndefOr[
-    js.Function1[
-      /* className */ js.UndefOr[java.lang.String], 
-      typings.senchaUnderscoreTouch.Ext.dom.IElement
-    ]
-  ] = js.undefined
+  var toggleCls_ICompositeElementLite: js.UndefOr[js.Function1[/* className */ js.UndefOr[String], IElement]] = js.undefined
 }
 
 object ICompositeElementLite {
@@ -455,69 +375,69 @@ object ICompositeElementLite {
     DISPLAY: Int | Double = null,
     OFFSETS: Int | Double = null,
     VISIBILITY: Int | Double = null,
-    add: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
+    add: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => ICompositeElementLite = null,
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    addCls: (/* names */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => IElement = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => ICompositeElementLite = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    appendChild: /* element */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    appendTo: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    applyStyles: /* styles */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    appendChild: /* element */ js.UndefOr[js.Any] => IElement = null,
+    appendTo: /* el */ js.UndefOr[js.Any] => IElement = null,
+    applyStyles: /* styles */ js.UndefOr[js.Any] => IElement = null,
     bubbleEvents: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    child: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     clear: () => Unit = null,
     clearListeners: () => Unit = null,
     config: js.Any = null,
     contains: /* element */ js.UndefOr[js.Any] => Boolean = null,
-    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => IElement = null,
     cssTranslate: () => Unit = null,
-    defaultUnit: java.lang.String = null,
+    defaultUnit: String = null,
     destroy: () => Unit = null,
     dom: HTMLElement = null,
-    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
+    down: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ICompositeElementLite = null,
     elements: Array = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fill: /* els */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
-    filter: /* selector */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
-    findParent: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    findParentNode: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array = null,
-    getAnchorXY: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
-    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    extend: String = null,
+    fill: /* els */ js.UndefOr[js.Any] => ICompositeElementLite = null,
+    filter: /* selector */ js.UndefOr[js.Any] => ICompositeElementLite = null,
+    findParent: (/* simpleSelector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    findParentNode: (/* simpleSelector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    first: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array]) => Array = null,
+    getAnchorXY: (/* anchor */ js.UndefOr[String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
+    getAttribute: (/* name */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => String = null,
+    getBorderWidth: /* side */ js.UndefOr[String] => Double = null,
     getBottom: () => Double = null,
     getBox: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => _ = null,
     getBubbleEvents: () => _ = null,
     getCount: () => Double = null,
-    getHTML: () => java.lang.String = null,
+    getHTML: () => String = null,
     getHeight: /* contentHeight */ js.UndefOr[Boolean] => Double = null,
-    getHtml: () => java.lang.String = null,
+    getHtml: () => String = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLeft: () => Double = null,
     getListeners: () => _ = null,
-    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
+    getMargin: /* sides */ js.UndefOr[String] => _ = null,
     getOffsetsTo: /* element */ js.UndefOr[js.Any] => Array = null,
     getOuterHeight: () => Unit = null,
     getOuterWidth: () => Unit = null,
-    getPadding: /* side */ js.UndefOr[java.lang.String] => Double = null,
+    getPadding: /* side */ js.UndefOr[String] => Double = null,
     getPageBox: /* asRegion */ js.UndefOr[Boolean] => _ = null,
     getRight: () => Double = null,
     getScrollParent: () => Unit = null,
     getSize: /* contentSize */ js.UndefOr[Boolean] => _ = null,
-    getStyle: /* prop */ js.UndefOr[java.lang.String] => java.lang.String = null,
+    getStyle: /* prop */ js.UndefOr[String] => String = null,
     getTop: () => Double = null,
     getValue: /* asNumber */ js.UndefOr[Boolean] => _ = null,
     getViewSize: () => _ = null,
@@ -525,94 +445,94 @@ object ICompositeElementLite {
     getX: () => Double = null,
     getXY: () => Array = null,
     getY: () => Double = null,
-    hasCls: /* name */ js.UndefOr[java.lang.String] => Boolean = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasCls: /* name */ js.UndefOr[String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hide: () => Unit = null,
-    id: java.lang.String = null,
+    id: String = null,
     indexOf: /* el */ js.UndefOr[js.Any] => Double = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    insertAfter: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    insertBefore: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    insertFirst: /* element */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    is: /* selector */ js.UndefOr[java.lang.String] => Boolean = null,
+    insertAfter: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertBefore: /* el */ js.UndefOr[js.Any] => IElement = null,
+    insertFirst: /* element */ js.UndefOr[js.Any] => IElement = null,
+    insertHtml: (/* where */ js.UndefOr[String], /* html */ js.UndefOr[String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
+    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => IElement = null,
+    is: /* selector */ js.UndefOr[String] => Boolean = null,
     isDescendent: () => Unit = null,
-    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean = null,
-    isTransparent: /* prop */ js.UndefOr[java.lang.String] => Boolean = null,
-    item: /* index */ js.UndefOr[Double] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    isStyle: (/* style */ js.UndefOr[String], /* value */ js.UndefOr[String]) => Boolean = null,
+    isTransparent: /* prop */ js.UndefOr[String] => Boolean = null,
+    item: /* index */ js.UndefOr[Double] => IElement = null,
+    last: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     listeners: js.Any = null,
     mask: () => Unit = null,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    next: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    parent: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     platformConfig: js.Any = null,
-    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
+    prev: (/* selector */ js.UndefOr[String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
     purgeAllListeners: () => Unit = null,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    radioCls: /* className */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    query: /* selector */ js.UndefOr[String] => Array = null,
+    radioCls: /* className */ js.UndefOr[js.Any] => IElement = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     remove: () => Unit = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeAllListeners: () => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    removeElement: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeCls: (/* names */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => IElement = null,
+    removeElement: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => ICompositeElementLite = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    repaint: () => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    replace: /* element */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    replaceCls: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    replaceElement: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
-    replaceWith: /* el */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    repaint: () => IElement = null,
+    replace: /* element */ js.UndefOr[js.Any] => IElement = null,
+    replaceCls: (/* oldName */ js.UndefOr[String], /* newName */ js.UndefOr[String], /* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => IElement = null,
+    replaceElement: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => ICompositeElementLite = null,
+    replaceWith: /* el */ js.UndefOr[js.Any] => IElement = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    select: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.ICompositeElementLite = null,
+    select: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => ICompositeElementLite = null,
     self: IClass = null,
-    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
-    set: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setBottom: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setBox: /* box */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    serializeForm: /* form */ js.UndefOr[js.Any] => String = null,
+    set: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => IElement = null,
+    setBottom: /* bottom */ js.UndefOr[String] => IElement = null,
+    setBox: /* box */ js.UndefOr[js.Any] => IElement = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setCls: /* className */ js.UndefOr[js.Any] => Unit = null,
-    setHTML: /* html */ js.UndefOr[java.lang.String] => Unit = null,
-    setHeight: /* height */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setHtml: /* html */ js.UndefOr[java.lang.String] => Unit = null,
-    setLeft: /* left */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    setHTML: /* html */ js.UndefOr[String] => Unit = null,
+    setHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setHtml: /* html */ js.UndefOr[String] => Unit = null,
+    setLeft: /* left */ js.UndefOr[String] => IElement = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMaxHeight: /* height */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setMaxWidth: /* width */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setMinHeight: /* height */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setMinWidth: /* width */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setRight: /* right */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setTop: /* top */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    setMaxHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setMaxWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    setMinHeight: /* height */ js.UndefOr[js.Any] => IElement = null,
+    setMinWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    setRight: /* right */ js.UndefOr[String] => IElement = null,
+    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => IElement = null,
+    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IElement = null,
+    setTop: /* top */ js.UndefOr[String] => IElement = null,
     setTopLeft: () => Unit = null,
-    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => IElement = null,
     setVisible: /* visible */ js.UndefOr[Boolean] => typings.senchaUnderscoreTouch.Ext.IElement = null,
-    setWidth: /* width */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setX: /* x */ js.UndefOr[Double] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setXY: /* pos */ js.UndefOr[Array] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
-    setY: /* y */ js.UndefOr[Double] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    setWidth: /* width */ js.UndefOr[js.Any] => IElement = null,
+    setX: /* x */ js.UndefOr[Double] => IElement = null,
+    setXY: /* pos */ js.UndefOr[Array] => IElement = null,
+    setY: /* y */ js.UndefOr[Double] => IElement = null,
     show: () => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    toggleCls: /* className */ js.UndefOr[java.lang.String] => typings.senchaUnderscoreTouch.Ext.dom.IElement = null,
+    toggleCls: /* className */ js.UndefOr[String] => IElement = null,
     translatePoints: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => _ = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unmask: () => Unit = null,
-    up: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any]) => _ = null,
-    update: /* html */ js.UndefOr[java.lang.String] => Unit = null,
+    up: (/* simpleSelector */ js.UndefOr[String], /* maxDepth */ js.UndefOr[js.Any]) => _ = null,
+    update: /* html */ js.UndefOr[String] => Unit = null,
     uses: Array = null,
     wrap: (/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[Boolean]) => _ = null
   ): ICompositeElementLite = {

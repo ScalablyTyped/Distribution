@@ -1,10 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.CONFIDENTIAL
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.DEFAULT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.PRIVATE
-import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.PUBLIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

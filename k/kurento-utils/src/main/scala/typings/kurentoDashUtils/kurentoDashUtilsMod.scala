@@ -1,6 +1,5 @@
 package typings.kurentoDashUtils
 
-import typings.kurentoDashUtils.kurentoDashUtilsMod.WebRtcPeer
 import typings.kurentoDashUtils.kurentoDashUtilsStrings.recv
 import typings.kurentoDashUtils.kurentoDashUtilsStrings.send
 import typings.kurentoDashUtils.kurentoDashUtilsStrings.sendRecv

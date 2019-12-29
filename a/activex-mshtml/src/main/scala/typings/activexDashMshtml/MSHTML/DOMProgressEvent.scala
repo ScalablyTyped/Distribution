@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.DOMProgressEvent")
 @js.native
 class DOMProgressEvent protected () extends js.Object {
-  var `MSHTML.DOMProgressEvent_typekey`: DOMProgressEvent = js.native
+  @JSName("MSHTML.DOMProgressEvent_typekey")
+  var MSHTMLDotDOMProgressEvent_typekey: DOMProgressEvent = js.native
   val bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   val cancelable: Boolean = js.native

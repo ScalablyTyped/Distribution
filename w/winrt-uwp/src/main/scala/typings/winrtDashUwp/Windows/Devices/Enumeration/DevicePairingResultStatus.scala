@@ -1,26 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.accessDenied
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.alreadyPaired
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.authenticationFailure
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.authenticationNotAllowed
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.authenticationTimeout
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.connectionRejected
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.failed
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.hardwareFailure
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.invalidCeremonyData
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.noSupportedProfiles
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.notPaired
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.notReadyToPair
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.operationAlreadyInProgress
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.paired
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.pairingCanceled
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.protectionLevelCouldNotBeMet
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.rejectedByHandler
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.remoteDeviceHasAssociation
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.requiredHandlerNotRegistered
-import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePairingResultStatus.tooManyConnections
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

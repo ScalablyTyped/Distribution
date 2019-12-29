@@ -10,11 +10,11 @@ package object languages {
   type delphi = delphi_
   type django = django_
   type groovy = groovy_
-  type html = typings.dojo.dojox.highlight.languages.html_
+  type html = html_
   type java = java_
   type javascript = javascript_
   type python = python_
-  type sql = typings.dojo.dojox.highlight.languages.sql_
+  type sql = sql_
   type xml = xml_
   type xquery = xquery_
 }

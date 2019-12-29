@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`base-tile`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bing-maps`
 import typings.std.HTMLCanvasElement
@@ -44,7 +43,7 @@ trait BaseTileLayer
     * @param promiseToLoad A promise that must resolve for the layer to resolve and move from the `loading` [status](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#loadStatus) to being [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#loaded).
     *
     */
-  def addResolvingPromise(promiseToLoad: IPromise[_]): IPromise[_] = js.native
+  def addResolvingPromise(promiseToLoad: js.Promise[_]): js.Promise[_] = js.native
   /**
     * This method fetches a tile for the given level, row and column present in the view. Override this method if the data or image returned from the server needs to be processed before it can be displayed.
     *
@@ -55,11 +54,11 @@ trait BaseTileLayer
     * @param col The column (x) position of the tile to fetch. This value is provided by [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html).
     * @param options Optional settings for the tile request. The options have the following properties.
     * @param options.timestamp Number to append to the tile request to prevent fetching the tile from the browser cache.
-    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request. When overriding fetchTile, `signal` should be handled, for example by passing it on to [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html) or by aborting pending operations. An aborted call to fetchTile should reject its returned promise with an instance of [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html).
     *
     */
-  def fetchTile(level: Double, row: Double, col: Double): IPromise[HTMLImageElement | HTMLCanvasElement] = js.native
-  def fetchTile(level: Double, row: Double, col: Double, options: BaseTileLayerFetchTileOptions): IPromise[HTMLImageElement | HTMLCanvasElement] = js.native
+  def fetchTile(level: Double, row: Double, col: Double): js.Promise[HTMLImageElement | HTMLCanvasElement] = js.native
+  def fetchTile(level: Double, row: Double, col: Double, options: BaseTileLayerFetchTileOptions): js.Promise[HTMLImageElement | HTMLCanvasElement] = js.native
   /**
     * Returns the bounds of the tile as an array of four numbers that be readily converted to an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object. The value for each item in the array is described in the following table:
     *

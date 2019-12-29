@@ -1,6 +1,6 @@
 package typings.nodemailer
 
-import typings.nodemailer.nodemailerNumbers.`true`
+import typings.nodemailer.nodemailerBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

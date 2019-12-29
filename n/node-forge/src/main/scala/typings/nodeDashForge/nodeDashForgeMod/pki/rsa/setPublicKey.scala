@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "pki.rsa.setPublicKey")
 @js.native
 object setPublicKey extends js.Object {
-  def apply(n: BigInteger, e: BigInteger): typings.nodeDashForge.nodeDashForgeMod.pki.rsa.PublicKey = js.native
+  def apply(n: BigInteger, e: BigInteger): PublicKey = js.native
 }
 

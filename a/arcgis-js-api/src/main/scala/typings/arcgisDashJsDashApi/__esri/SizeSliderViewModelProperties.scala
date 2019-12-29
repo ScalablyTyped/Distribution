@@ -1,10 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.average
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tick
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SizeSliderViewModelProperties extends SliderViewModelProperties {
+trait SizeSliderViewModelProperties extends SmartMappingSliderViewModelProperties {
   /**
     * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
     *
@@ -16,15 +21,17 @@ trait SizeSliderViewModelProperties extends SliderViewModelProperties {
 object SizeSliderViewModelProperties {
   @scala.inline
   def apply(
-    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
-    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Double = null,
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
+    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double = null,
+    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
     max: Int | Double = null,
     min: Int | Double = null,
     precision: Int | Double = null,
     stops: js.Array[SizeStopProperties] = null,
     thumbsConstrained: js.UndefOr[Boolean] = js.undefined,
-    values: js.Array[Double] = null
+    values: js.Array[Double] = null,
+    zoomOptions: SmartMappingSliderViewModelZoomOptions = null,
+    zoomingEnabled: js.UndefOr[Boolean] = js.undefined
   ): SizeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (inputFormatFunction != null) __obj.updateDynamic("inputFormatFunction")(js.Any.fromFunction3(inputFormatFunction))
@@ -36,6 +43,8 @@ object SizeSliderViewModelProperties {
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomingEnabled)) __obj.updateDynamic("zoomingEnabled")(zoomingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeSliderViewModelProperties]
   }
 }

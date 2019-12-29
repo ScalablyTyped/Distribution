@@ -1,7 +1,7 @@
 package typings.ionic.libStartMod
 
 import typings.ionic.definitionsMod.ProjectType
-import typings.ionic.ionicNumbers.`false`
+import typings.ionic.ionicBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.viewMod.Default
 import typings.moment.momentMod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`

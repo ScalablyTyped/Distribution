@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/platform-browser", "ɵBrowserPlatformLocation")
+@JSImport("@angular/platform-browser", "\u0275BrowserPlatformLocation")
 @js.native
 class ɵBrowserPlatformLocation protected () extends PlatformLocation {
   def this(_doc: js.Any) = this()

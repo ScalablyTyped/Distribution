@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.AsyncStatus.canceled
-import typings.winrtDashUwp.Windows.Foundation.AsyncStatus.completed
-import typings.winrtDashUwp.Windows.Foundation.AsyncStatus.error
-import typings.winrtDashUwp.Windows.Foundation.AsyncStatus.started
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

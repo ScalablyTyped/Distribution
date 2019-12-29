@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.TreeWalker")
 @js.native
 class TreeWalker protected () extends js.Object {
-  var `MSHTML.TreeWalker_typekey`: TreeWalker = js.native
+  @JSName("MSHTML.TreeWalker_typekey")
+  var MSHTMLDotTreeWalker_typekey: TreeWalker = js.native
   var currentNode: js.Any = js.native
   val expandEntityReferences: Boolean = js.native
   val filter: js.Any = js.native

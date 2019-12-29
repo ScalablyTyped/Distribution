@@ -1,7 +1,11 @@
 package typings.atMaterialDashUiLab.useAutocompleteUseAutocompleteMod
 
+import typings.atMaterialDashUiLab.atMaterialDashUiLabBooleans.`false`
+import typings.atMaterialDashUiLab.atMaterialDashUiLabBooleans.`true`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.input
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mouse
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.reset
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.touch
 import typings.react.reactMod.ChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +28,15 @@ trait UseAutocompleteProps extends js.Object {
     * a different option or changes the character string in the input.
     */
   var autoSelect: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Control if the input should be blurred when an option is selected:
+    *
+    * - `false` the input is not blurred.
+    * - `true` the input is always blurred.
+    * - `touch` the input is blurred after a touch event.
+    * - `mouse` the input is blurred after a mouse event.
+    */
+  var blurOnSelect: js.UndefOr[touch | mouse | `true` | `false`] = js.undefined
   /**
     * If `true`, clear all values when the user presses escape and the popup is closed.
     */
@@ -130,7 +143,7 @@ trait UseAutocompleteProps extends js.Object {
     *
     * @param {object} event The event source of the callback.
     * @param {string} value The new value of the text input
-    * @param {string} reason One of "input" (user input) or "reset" (programmatic change)
+    * @param {string} reason Can be: "input" (user input), "reset" (programmatic change), `"clear"`.
     */
   var onInputChange: js.UndefOr[
     js.Function3[
@@ -170,6 +183,7 @@ object UseAutocompleteProps {
     autoComplete: js.UndefOr[Boolean] = js.undefined,
     autoHighlight: js.UndefOr[Boolean] = js.undefined,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
+    blurOnSelect: touch | mouse | `true` | `false` = null,
     clearOnEscape: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
     defaultValue: js.Any = null,
@@ -200,6 +214,7 @@ object UseAutocompleteProps {
     if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
     if (!js.isUndefined(autoHighlight)) __obj.updateDynamic("autoHighlight")(autoHighlight.asInstanceOf[js.Any])
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
+    if (blurOnSelect != null) __obj.updateDynamic("blurOnSelect")(blurOnSelect.asInstanceOf[js.Any])
     if (!js.isUndefined(clearOnEscape)) __obj.updateDynamic("clearOnEscape")(clearOnEscape.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])

@@ -1,16 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketCanceled
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketInvalid
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketInvalidAlreadyUsed
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.LoggedInElseWhere
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.NoLicenseOrExpired
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.OK
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.PublisherIssuedBan
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.UserNotConnectedToSteam
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.VACBanned
-import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.VACCheckTimedOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

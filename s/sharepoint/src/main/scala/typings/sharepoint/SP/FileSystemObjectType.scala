@@ -1,10 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.FileSystemObjectType.file
-import typings.sharepoint.SP.FileSystemObjectType.folder
-import typings.sharepoint.SP.FileSystemObjectType.invalid
-import typings.sharepoint.SP.FileSystemObjectType.web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

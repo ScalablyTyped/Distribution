@@ -1,13 +1,6 @@
 package typings.pako.pakoMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pako.pakoMod.ReturnCodes.Z_BUF_ERROR
-import typings.pako.pakoMod.ReturnCodes.Z_DATA_ERROR
-import typings.pako.pakoMod.ReturnCodes.Z_ERRNO
-import typings.pako.pakoMod.ReturnCodes.Z_NEED_DICT
-import typings.pako.pakoMod.ReturnCodes.Z_OK
-import typings.pako.pakoMod.ReturnCodes.Z_STREAM_END
-import typings.pako.pakoMod.ReturnCodes.Z_STREAM_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

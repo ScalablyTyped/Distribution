@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.auto
-import typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.hdr
-import typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,7 +3,6 @@ package typings.jscodeshift
 import typings.astDashTypes.genNodesMod.ASTNode
 import typings.astDashTypes.genNodesMod.VariableDeclarator
 import typings.jscodeshift.srcCollectionMod.Collection
-import typings.jscodeshift.srcCollectionsNodeMod.ASTPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

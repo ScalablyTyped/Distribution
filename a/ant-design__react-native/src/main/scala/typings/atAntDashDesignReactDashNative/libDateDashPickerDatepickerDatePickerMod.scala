@@ -1,6 +1,5 @@
 package typings.atAntDashDesignReactDashNative
 
-import typings.atAntDashDesignReactDashNative.libDateDashPickerDatepickerDatePickerMod.DatePicker
 import typings.atAntDashDesignReactDashNative.libDateDashPickerDatepickerDatePickerPropsMod.DatePickerProps
 import typings.react.reactMod.Component
 import typings.std.Date

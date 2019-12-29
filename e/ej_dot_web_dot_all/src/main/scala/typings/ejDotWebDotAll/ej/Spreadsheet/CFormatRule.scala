@@ -1,12 +1,6 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.Between
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.DateOccurs
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.EqualTo
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.GreaterThan
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.LessThan
-import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.TextContains
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

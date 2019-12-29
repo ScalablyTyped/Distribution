@@ -1,10 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.error
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.errorLoaded
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.loaded
-import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.notLoaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

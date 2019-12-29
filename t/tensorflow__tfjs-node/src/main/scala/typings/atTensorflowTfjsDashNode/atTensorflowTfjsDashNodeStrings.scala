@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashNodeStrings {
   @js.native
-  sealed trait `1DOT4DOT0` extends js.Object
-  
-  @js.native
-  sealed trait Empty extends js.Object
+  sealed trait `1Dot5Dot1` extends js.Object
   
   @js.native
   sealed trait NCDHW extends js.Object
@@ -28,6 +25,9 @@ object atTensorflowTfjsDashNodeStrings {
   
   @js.native
   sealed trait NWC extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait avg extends js.Object
@@ -63,7 +63,7 @@ object atTensorflowTfjsDashNodeStrings {
   sealed trait euclidean extends js.Object
   
   @js.native
-  sealed trait `file://` extends js.Object
+  sealed trait fileColonSlashSlash extends js.Object
   
   @js.native
   sealed trait float32 extends js.Object
@@ -87,7 +87,7 @@ object atTensorflowTfjsDashNodeStrings {
   sealed trait max extends js.Object
   
   @js.native
-  sealed trait modelDOTjson extends js.Object
+  sealed trait modelDotjson extends js.Object
   
   @js.native
   sealed trait nearest extends js.Object
@@ -105,18 +105,16 @@ object atTensorflowTfjsDashNodeStrings {
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait tensorflowjsDOTpb extends js.Object
+  sealed trait tensorflowjsDotpb extends js.Object
   
   @js.native
   sealed trait valid extends js.Object
   
   @js.native
-  sealed trait weightsDOTbin extends js.Object
+  sealed trait weightsDotbin extends js.Object
   
   @scala.inline
-  def `1DOT4DOT0`: `1DOT4DOT0` = "1.4.0".asInstanceOf[`1DOT4DOT0`]
-  @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
+  def `1Dot5Dot1`: `1Dot5Dot1` = "1.5.1".asInstanceOf[`1Dot5Dot1`]
   @scala.inline
   def NCDHW: NCDHW = "NCDHW".asInstanceOf[NCDHW]
   @scala.inline
@@ -129,6 +127,8 @@ object atTensorflowTfjsDashNodeStrings {
   def NHWC: NHWC = "NHWC".asInstanceOf[NHWC]
   @scala.inline
   def NWC: NWC = "NWC".asInstanceOf[NWC]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline
@@ -152,7 +152,7 @@ object atTensorflowTfjsDashNodeStrings {
   @scala.inline
   def euclidean: euclidean = "euclidean".asInstanceOf[euclidean]
   @scala.inline
-  def `file://`: `file://` = "file://".asInstanceOf[`file://`]
+  def fileColonSlashSlash: fileColonSlashSlash = "file://".asInstanceOf[fileColonSlashSlash]
   @scala.inline
   def float32: float32 = "float32".asInstanceOf[float32]
   @scala.inline
@@ -168,7 +168,7 @@ object atTensorflowTfjsDashNodeStrings {
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
-  def modelDOTjson: modelDOTjson = "model.json".asInstanceOf[modelDOTjson]
+  def modelDotjson: modelDotjson = "model.json".asInstanceOf[modelDotjson]
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline
@@ -180,10 +180,10 @@ object atTensorflowTfjsDashNodeStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
-  def tensorflowjsDOTpb: tensorflowjsDOTpb = "tensorflowjs.pb".asInstanceOf[tensorflowjsDOTpb]
+  def tensorflowjsDotpb: tensorflowjsDotpb = "tensorflowjs.pb".asInstanceOf[tensorflowjsDotpb]
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
   @scala.inline
-  def weightsDOTbin: weightsDOTbin = "weights.bin".asInstanceOf[weightsDOTbin]
+  def weightsDotbin: weightsDotbin = "weights.bin".asInstanceOf[weightsDotbin]
 }
 

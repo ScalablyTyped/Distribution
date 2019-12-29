@@ -17,6 +17,15 @@ import typings.videoDotJs.Anon_OptionsPlayerReady
 import typings.videoDotJs.TypeofComponent
 import typings.videoDotJs.videoDotJsMod.videojs.Component.ReadyCallback
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
+import typings.videoDotJs.videoDotJsMod.videojs.Player
+import typings.videoDotJs.videoDotJsStrings.Button
+import typings.videoDotJs.videoDotJsStrings.ClickableComponent
+import typings.videoDotJs.videoDotJsStrings.Menu
+import typings.videoDotJs.videoDotJsStrings.MenuButton
+import typings.videoDotJs.videoDotJsStrings.MenuItem
+import typings.videoDotJs.videoDotJsStrings.ModalDialog
+import typings.videoDotJs.videoDotJsStrings.MouseTimeDisplay
+import typings.videoDotJs.videoDotJsStrings.Spacer
 import typings.videoDotJs.videoDotJsStrings.TimeTooltip
 import typings.videoDotJs.videoDotJsStrings.button_
 import typings.videoDotJs.videoDotJsStrings.clickablecomponent_
@@ -54,13 +63,9 @@ class ^ protected ()
     * @param [ready]
     *        Function that gets called when the `Component` is ready.
     */
-  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
-  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: ComponentOptions) = this()
-  def this(
-    player: typings.videoDotJs.videoDotJsMod.videojs.Player,
-    options: ComponentOptions,
-    ready: ReadyCallback
-  ) = this()
+  def this(player: Player) = this()
+  def this(player: Player, options: ComponentOptions) = this()
+  def this(player: Player, options: ComponentOptions, ready: ReadyCallback) = this()
 }
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Component")
@@ -84,15 +89,12 @@ object ^
   * @param [ready]
   *        Function that gets called when the `Component` is ready.
   */
-Instantiable1[
-        /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
-        typings.videoDotJs.videoDotJsMod.videojs.Component
-      ]) with (Instantiable2[
-        /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Component]) with (Instantiable2[
+        /* player */ Player, 
         /* options */ ComponentOptions, 
         typings.videoDotJs.videoDotJsMod.videojs.Component
       ]) with (Instantiable3[
-        /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+        /* player */ Player, 
         /* options */ ComponentOptions, 
         /* ready */ ReadyCallback, 
         typings.videoDotJs.videoDotJsMod.videojs.Component
@@ -113,25 +115,25 @@ Instantiable1[
     *             return that if it exists.
     */
   @JSName("getComponent")
-  def getComponent_Button(name: typings.videoDotJs.videoDotJsStrings.Button): Anon_Options = js.native
+  def getComponent_Button(name: Button): Anon_Options = js.native
   @JSName("getComponent")
-  def getComponent_ClickableComponent(name: typings.videoDotJs.videoDotJsStrings.ClickableComponent): Anon_OptionsPlayer = js.native
+  def getComponent_ClickableComponent(name: ClickableComponent): Anon_OptionsPlayer = js.native
   @JSName("getComponent")
   def getComponent_Component(name: typings.videoDotJs.videoDotJsStrings.Component): TypeofComponent = js.native
   @JSName("getComponent")
-  def getComponent_Menu(name: typings.videoDotJs.videoDotJsStrings.Menu): Anon_OptionsPlayerMenu = js.native
+  def getComponent_Menu(name: Menu): Anon_OptionsPlayerMenu = js.native
   @JSName("getComponent")
-  def getComponent_MenuButton(name: typings.videoDotJs.videoDotJsStrings.MenuButton): Anon_OptionsPlayerMenuButton = js.native
+  def getComponent_MenuButton(name: MenuButton): Anon_OptionsPlayerMenuButton = js.native
   @JSName("getComponent")
-  def getComponent_MenuItem(name: typings.videoDotJs.videoDotJsStrings.MenuItem): Anon_OptionsPlayerMenuItem = js.native
+  def getComponent_MenuItem(name: MenuItem): Anon_OptionsPlayerMenuItem = js.native
   @JSName("getComponent")
-  def getComponent_ModalDialog(name: typings.videoDotJs.videoDotJsStrings.ModalDialog): Anon_OptionsPlayerModalDialog = js.native
+  def getComponent_ModalDialog(name: ModalDialog): Anon_OptionsPlayerModalDialog = js.native
   @JSName("getComponent")
-  def getComponent_MouseTimeDisplay(name: typings.videoDotJs.videoDotJsStrings.MouseTimeDisplay): Anon_OptionsPlayerComponentOptions = js.native
+  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): Anon_OptionsPlayerComponentOptions = js.native
   @JSName("getComponent")
   def getComponent_Player(name: typings.videoDotJs.videoDotJsStrings.Player): Anon_GetTagSettings = js.native
   @JSName("getComponent")
-  def getComponent_Spacer(name: typings.videoDotJs.videoDotJsStrings.Spacer): Anon_OptionsPlayerReady = js.native
+  def getComponent_Spacer(name: Spacer): Anon_OptionsPlayerReady = js.native
   @JSName("getComponent")
   def getComponent_TimeTooltip(name: TimeTooltip): Anon_OptionsPlayerComponentOptionsTimeToolTip = js.native
   @JSName("getComponent")

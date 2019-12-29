@@ -18,7 +18,8 @@ class DataTable protected () extends js.Object {
   var HasBorderVertical: Boolean = js.native
   val Parent: js.Any = js.native
   var ShowLegendKey: Boolean = js.native
-  var `Word.DataTable_typekey`: DataTable = js.native
+  @JSName("Word.DataTable_typekey")
+  var WordDotDataTable_typekey: DataTable = js.native
   def Delete(): Unit = js.native
   def Select(): Unit = js.native
 }

@@ -12,7 +12,7 @@ trait IDateColumn
   @JSName("defaultRenderer")
   var defaultRenderer_IDateColumn: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
-  var format: js.UndefOr[java.lang.String] = js.undefined
+  var format: js.UndefOr[String] = js.undefined
 }
 
 object IDateColumn {
@@ -20,7 +20,7 @@ object IDateColumn {
   def apply(
     IColumn: typings.extjs.Ext.grid.column.IColumn = null,
     defaultRenderer: /* value */ js.UndefOr[js.Any] => Unit = null,
-    format: java.lang.String = null
+    format: String = null
   ): IDateColumn = {
     val __obj = js.Dynamic.literal()
     if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)

@@ -1,9 +1,6 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListDialogNodesConstants.Sort
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListDialogNodesConstants.Sort.DIALOG_NODE
-import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListDialogNodesConstants.Sort.UPDATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

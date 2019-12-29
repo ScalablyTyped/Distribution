@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.std.Partial
-import typings.tstl.baseDisposableIListAlgorithmMod._IListAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

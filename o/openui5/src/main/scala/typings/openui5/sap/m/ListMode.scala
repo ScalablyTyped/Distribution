@@ -1,12 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.ListMode.Delete
-import typings.openui5.sap.m.ListMode.MultiSelect
-import typings.openui5.sap.m.ListMode.None
-import typings.openui5.sap.m.ListMode.SingleSelect
-import typings.openui5.sap.m.ListMode.SingleSelectLeft
-import typings.openui5.sap.m.ListMode.SingleSelectMaster
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

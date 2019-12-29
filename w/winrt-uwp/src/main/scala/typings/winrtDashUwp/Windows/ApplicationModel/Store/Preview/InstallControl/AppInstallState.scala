@@ -1,20 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.acquiringLicense
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.canceled
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.completed
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.downloading
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.error
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.installing
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.paused
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedLowBattery
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedWiFiRecommended
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedWiFiRequired
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pending
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.readyToDownload
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.restoringData
-import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.starting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

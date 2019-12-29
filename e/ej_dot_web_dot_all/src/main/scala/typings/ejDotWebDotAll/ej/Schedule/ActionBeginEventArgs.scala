@@ -19,7 +19,7 @@ trait ActionBeginEventArgs extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the action begin request type.
     */
   var requestType: js.UndefOr[String] = js.undefined
@@ -35,7 +35,7 @@ object ActionBeginEventArgs {
     currentAction: String = null,
     data: js.Any = null,
     id: String = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     requestType: String = null,
     `type`: String = null
   ): ActionBeginEventArgs = {

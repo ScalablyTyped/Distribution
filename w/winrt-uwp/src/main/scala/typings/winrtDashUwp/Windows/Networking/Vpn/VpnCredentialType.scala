@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.protectedCertificate
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.smartCard
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.unProtectedCertificate
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernameOtpPin
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePassword
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePasswordAndPin
-import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePasswordChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

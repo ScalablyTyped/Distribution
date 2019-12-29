@@ -2,6 +2,7 @@ package typings.extjs.Ext.form
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
+import typings.extjs.Ext.container.IContainer
 import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.util.IMixedCollection
 import typings.extjs.Ext.util.IObservable
@@ -48,7 +49,7 @@ trait IBasic extends IObservable {
   		* @param id String The value to search for (specify either a id or name or hiddenName).
   		* @returns any The first matching field, or null if none was found.
   		*/
-  var findField: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var findField: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Retrieves the fields in the form as a set of key value pairs using their getModelData  method to collect the values
   		* @param dirtyOnly Boolean If true, only fields that are dirty will be included in the result.
   		* @returns Object
@@ -110,9 +111,9 @@ trait IBasic extends IObservable {
   		*/
   var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (String) */
-  var method: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.container.Container) */
-  var owner: js.UndefOr[typings.extjs.Ext.container.IContainer] = js.undefined
+  var owner: js.UndefOr[IContainer] = js.undefined
   /** [Config Option] (String/String[]) */
   var paramOrder: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -146,11 +147,11 @@ trait IBasic extends IObservable {
   		*/
   var updateRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.undefined
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/HTMLElement/Ext.Element) */
   var waitMsgTarget: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var waitTitle: js.UndefOr[java.lang.String] = js.undefined
+  var waitTitle: js.UndefOr[String] = js.undefined
 }
 
 object IBasic {
@@ -178,17 +179,17 @@ object IBasic {
     doAction: (/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IBasic = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     errorReader: js.Any = null,
-    extend: java.lang.String = null,
-    findField: /* id */ js.UndefOr[java.lang.String] => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    extend: String = null,
+    findField: /* id */ js.UndefOr[String] => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
     getFieldValues: /* dirtyOnly */ js.UndefOr[Boolean] => _ = null,
     getFields: () => IMixedCollection = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getRecord: () => IModel = null,
     getValues: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => _ = null,
     hasInvalidField: () => Unit = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hasUpload: () => Boolean = null,
     inheritableStatics: js.Any = null,
@@ -201,17 +202,17 @@ object IBasic {
     load: /* options */ js.UndefOr[js.Any] => IBasic = null,
     loadRecord: /* record */ js.UndefOr[IModel] => IBasic = null,
     markInvalid: /* errors */ js.UndefOr[js.Any] => IBasic = null,
-    method: java.lang.String = null,
+    method: String = null,
     mixins: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    owner: typings.extjs.Ext.container.IContainer = null,
+    owner: IContainer = null,
     paramOrder: js.Any = null,
     paramsAsHash: js.UndefOr[Boolean] = js.undefined,
     reader: js.Any = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     reset: /* resetRecord */ js.UndefOr[Boolean] => IBasic = null,
@@ -227,12 +228,12 @@ object IBasic {
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     timeout: Int | Double = null,
     trackResetOnLoad: js.UndefOr[Boolean] = js.undefined,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     updateRecord: /* record */ js.UndefOr[IModel] => IBasic = null,
-    url: java.lang.String = null,
+    url: String = null,
     uses: Array = null,
     waitMsgTarget: js.Any = null,
-    waitTitle: java.lang.String = null
+    waitTitle: String = null
   ): IBasic = {
     val __obj = js.Dynamic.literal()
     if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))

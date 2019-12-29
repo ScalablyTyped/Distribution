@@ -1,7 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsNumbers.`false`
+import typings.screeps.screepsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

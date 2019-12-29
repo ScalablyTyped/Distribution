@@ -1,6 +1,5 @@
 package typings.gaeDotChannelDotApi
 
-import typings.gaeDotChannelDotApi.goog.appengine.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

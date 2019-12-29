@@ -18,7 +18,8 @@ class BuildingBlock protected () extends js.Object {
   val Parent: js.Any = js.native
   val Type: BuildingBlockType = js.native
   var Value: String = js.native
-  var `Word.BuildingBlock_typekey`: BuildingBlock = js.native
+  @JSName("Word.BuildingBlock_typekey")
+  var WordDotBuildingBlock_typekey: BuildingBlock = js.native
   def Delete(): Unit = js.native
   def Insert(Where: Range): Range = js.native
   def Insert(Where: Range, RichText: js.Any): Range = js.native

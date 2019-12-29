@@ -4,8 +4,6 @@ import typings.atStorybookClientDashApi.atStorybookClientDashApiMod.ClientApi
 import typings.atStorybookClientDashApi.atStorybookClientDashApiMod.StoryStore
 import typings.atStorybookClientDashApi.distTypesMod.StoreItem
 import typings.atStorybookReactDashNative.distPreviewComponentsSharedThemeMod.EmotionProps
-import typings.atStorybookReactDashNative.distPreviewMod.Params
-import typings.atStorybookReactDashNative.distPreviewMod.Preview
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

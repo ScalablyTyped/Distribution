@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.approximate
-import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.high
-import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.unknown
-import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.unreliable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

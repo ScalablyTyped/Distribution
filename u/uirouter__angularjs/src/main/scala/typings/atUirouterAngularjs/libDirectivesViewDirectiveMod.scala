@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation._
 object libDirectivesViewDirectiveMod extends js.Object {
   @js.native
   trait UIViewAnimData extends js.Object {
-    @JSName("$$animLeave")
-    var $$animLeave: Anon_Resolve = js.native
     @JSName("$animEnter")
     var $animEnter: js.Promise[_] = js.native
     @JSName("$animLeave")
     var $animLeave: js.Promise[_] = js.native
+    @JSName("$$animLeave")
+    var DollarDollaranimLeave: Anon_Resolve = js.native
   }
   
   @js.native

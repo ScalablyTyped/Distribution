@@ -1,5 +1,6 @@
 package typings.emberDashData.emberDashDataMod.DS
 
+import typings.atEmberObject.atEmberObjectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.InvalidError")
 @js.native
-class InvalidError protected ()
-  extends typings.atEmberObject.atEmberObjectMod.default {
+class InvalidError protected () extends default {
   def this(errors: js.Array[_]) = this()
 }
 

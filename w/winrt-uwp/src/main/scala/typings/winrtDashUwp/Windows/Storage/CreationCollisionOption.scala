@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Storage
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.failIfExists
-import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.generateUniqueName
-import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.openIfExists
-import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.replaceExisting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

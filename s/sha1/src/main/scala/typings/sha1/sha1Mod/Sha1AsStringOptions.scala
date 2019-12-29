@@ -1,6 +1,6 @@
 package typings.sha1.sha1Mod
 
-import typings.sha1.sha1Numbers.`false`
+import typings.sha1.sha1Booleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

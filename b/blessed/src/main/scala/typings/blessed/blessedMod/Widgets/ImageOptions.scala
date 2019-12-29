@@ -8,6 +8,7 @@ import typings.blessed.blessedStrings.bg
 import typings.blessed.blessedStrings.bottom
 import typings.blessed.blessedStrings.center
 import typings.blessed.blessedStrings.left
+import typings.blessed.blessedStrings.line
 import typings.blessed.blessedStrings.middle
 import typings.blessed.blessedStrings.overlay
 import typings.blessed.blessedStrings.right
@@ -40,7 +41,7 @@ object ImageOptions {
     bg: String = null,
     bindings: js.Any = null,
     bold: String = null,
-    border: Border | typings.blessed.blessedStrings.line | bg = null,
+    border: Border | line | bg = null,
     bottom: TPosition = null,
     ch: String = null,
     children: js.Array[Node] = null,

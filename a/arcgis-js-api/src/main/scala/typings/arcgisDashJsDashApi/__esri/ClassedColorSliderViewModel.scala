@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ClassedColorSliderViewModel extends SliderViewModel {
+trait ClassedColorSliderViewModel extends SmartMappingSliderViewModel {
   /**
     * An array of class breaks with associated colors. The colors mapped to each break can be used to update the renderer of a layer. A minimum of two breaks must be provided to the slider.
     *

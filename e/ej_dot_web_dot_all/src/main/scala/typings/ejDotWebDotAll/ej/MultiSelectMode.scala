@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.MultiSelectMode.Delimiter
-import typings.ejDotWebDotAll.ej.MultiSelectMode.None
-import typings.ejDotWebDotAll.ej.MultiSelectMode.VisualMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

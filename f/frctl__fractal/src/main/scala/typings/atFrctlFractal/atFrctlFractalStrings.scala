@@ -33,7 +33,7 @@ object atFrctlFractalStrings {
   sealed trait static extends js.Object
   
   @js.native
-  sealed trait staticDOTmount extends js.Object
+  sealed trait staticDotmount extends js.Object
   
   @js.native
   sealed trait styles extends js.Object
@@ -60,7 +60,7 @@ object atFrctlFractalStrings {
   @scala.inline
   def static: static = "static".asInstanceOf[static]
   @scala.inline
-  def staticDOTmount: staticDOTmount = "static.mount".asInstanceOf[staticDOTmount]
+  def staticDotmount: staticDotmount = "static.mount".asInstanceOf[staticDotmount]
   @scala.inline
   def styles: styles = "styles".asInstanceOf[styles]
   @scala.inline

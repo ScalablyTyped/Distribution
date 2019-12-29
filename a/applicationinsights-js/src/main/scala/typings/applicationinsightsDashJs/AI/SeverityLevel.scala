@@ -1,11 +1,6 @@
 package typings.applicationinsightsDashJs.AI
 
 import org.scalablytyped.runtime.TopLevel
-import typings.applicationinsightsDashJs.AI.SeverityLevel.Critical
-import typings.applicationinsightsDashJs.AI.SeverityLevel.Error
-import typings.applicationinsightsDashJs.AI.SeverityLevel.Information
-import typings.applicationinsightsDashJs.AI.SeverityLevel.Verbose
-import typings.applicationinsightsDashJs.AI.SeverityLevel.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

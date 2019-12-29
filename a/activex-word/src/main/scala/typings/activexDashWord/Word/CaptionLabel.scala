@@ -18,7 +18,8 @@ class CaptionLabel protected () extends js.Object {
   val Parent: js.Any = js.native
   var Position: WdCaptionPosition = js.native
   var Separator: WdSeparatorType = js.native
-  var `Word.CaptionLabel_typekey`: CaptionLabel = js.native
+  @JSName("Word.CaptionLabel_typekey")
+  var WordDotCaptionLabel_typekey: CaptionLabel = js.native
   def Delete(): Unit = js.native
 }
 

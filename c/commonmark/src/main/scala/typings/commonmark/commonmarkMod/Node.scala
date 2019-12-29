@@ -1,7 +1,7 @@
 package typings.commonmark.commonmarkMod
 
-import typings.commonmark.commonmarkStrings.DOT
-import typings.commonmark.commonmarkStrings.`)`
+import typings.commonmark.commonmarkStrings.Dot
+import typings.commonmark.commonmarkStrings.Rightparenthesis
 import typings.commonmark.commonmarkStrings.bullet
 import typings.commonmark.commonmarkStrings.ordered
 import scala.scalajs.js
@@ -46,7 +46,7 @@ class Node protected () extends js.Object {
   /**
     * a String, either ) or . for an ordered list.
     */
-  var listDelimiter: `)` | DOT = js.native
+  var listDelimiter: Rightparenthesis | Dot = js.native
   /**
     * a Number, the starting number of an ordered list.
     */

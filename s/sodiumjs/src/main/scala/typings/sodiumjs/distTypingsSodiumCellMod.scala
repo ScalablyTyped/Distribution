@@ -1,6 +1,5 @@
 package typings.sodiumjs
 
-import typings.sodiumjs.distTypingsSodiumCellMod.Cell
 import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda1
 import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda2
 import typings.sodiumjs.distTypingsSodiumLambdaMod.Lambda3
@@ -38,8 +37,10 @@ object distTypingsSodiumCellMod extends js.Object {
       * as its eq function. I.E. calling calmRefEq() is the same as calm((a,b) => a === b).
       */
     def calmRefEq(): Cell[A] = js.native
-    def `fantasy-land/ap`[B](cf: Cell[js.Function1[/* a */ A, B]]): Cell[B] = js.native
-    def `fantasy-land/map`[B](f: js.Function1[/* a */ A, B]): Cell[B] = js.native
+    @JSName("fantasy-land/ap")
+    def `fantasy-landSlashap`[B](cf: Cell[js.Function1[/* a */ A, B]]): Cell[B] = js.native
+    @JSName("fantasy-land/map")
+    def `fantasy-landSlashmap`[B](f: js.Function1[/* a */ A, B]): Cell[B] = js.native
     def getStream__(): Stream[A] = js.native
     def getVertex__(): Vertex = js.native
     /**
@@ -170,7 +171,8 @@ object distTypingsSodiumCellMod extends js.Object {
       * Cell satisfies the Functor, Apply, Applicative categories
       * @see {@link https://github.com/fantasyland/fantasy-land} for more info
       */
-    def `fantasy-land/of`[A](a: A): Cell[A] = js.native
+    @JSName("fantasy-land/of")
+    def `fantasy-landSlashof`[A](a: A): Cell[A] = js.native
     /**
       * Lift an array of cells into a cell of an array.
       */

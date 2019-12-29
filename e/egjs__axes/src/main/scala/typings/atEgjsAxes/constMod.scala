@@ -1,15 +1,6 @@
 package typings.atEgjsAxes
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atEgjsAxes.constMod.DIRECTION
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_ALL
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_DOWN
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_HORIZONTAL
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_LEFT
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_NONE
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_RIGHT
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_UP
-import typings.atEgjsAxes.constMod.DIRECTION.DIRECTION_VERTICAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

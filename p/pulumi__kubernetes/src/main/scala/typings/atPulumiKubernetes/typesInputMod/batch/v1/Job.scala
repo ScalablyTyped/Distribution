@@ -1,6 +1,6 @@
 package typings.atPulumiKubernetes.typesInputMod.batch.v1
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`batch/v1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.batchSlashv1
 import typings.atPulumiKubernetes.typesInputMod.meta.v1.ObjectMeta
 import typings.atPulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait Job extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[`batch/v1`]] = js.undefined
+  var apiVersion: js.UndefOr[Input[batchSlashv1]] = js.undefined
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -40,7 +40,7 @@ trait Job extends js.Object {
 object Job {
   @scala.inline
   def apply(
-    apiVersion: Input[`batch/v1`] = null,
+    apiVersion: Input[batchSlashv1] = null,
     kind: Input[typings.atPulumiKubernetes.atPulumiKubernetesStrings.Job] = null,
     metadata: Input[ObjectMeta] = null,
     spec: Input[JobSpec] = null

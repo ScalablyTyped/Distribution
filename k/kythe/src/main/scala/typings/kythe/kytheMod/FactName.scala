@@ -1,25 +1,6 @@
 package typings.kythe.kytheMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.kythe.kytheMod.FactName.BUILD_CONFIG
-import typings.kythe.kytheMod.FactName.CODE
-import typings.kythe.kytheMod.FactName.COMPLETE
-import typings.kythe.kytheMod.FactName.CONTEXT_URL
-import typings.kythe.kytheMod.FactName.DETAILS
-import typings.kythe.kytheMod.FactName.DOC_URI
-import typings.kythe.kytheMod.FactName.LABEL
-import typings.kythe.kytheMod.FactName.LOC_END
-import typings.kythe.kytheMod.FactName.LOC_START
-import typings.kythe.kytheMod.FactName.MESSAGE
-import typings.kythe.kytheMod.FactName.NODE_KIND
-import typings.kythe.kytheMod.FactName.PARAM_DEFAULT
-import typings.kythe.kytheMod.FactName.RULE_CLASS
-import typings.kythe.kytheMod.FactName.SNIPPET_END
-import typings.kythe.kytheMod.FactName.SNIPPET_START
-import typings.kythe.kytheMod.FactName.SUBKIND
-import typings.kythe.kytheMod.FactName.TEXT
-import typings.kythe.kytheMod.FactName.TEXT_ENCODING
-import typings.kythe.kytheMod.FactName.VISIBILITY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

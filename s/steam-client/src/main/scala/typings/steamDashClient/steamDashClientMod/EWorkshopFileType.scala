@@ -1,24 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Art
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Collection
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Community
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Concept
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.ControllerBinding
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.First
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Game
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.GameManagedItem
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.IntegratedGuide
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Max
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Merch
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Microtransaction
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Screenshot
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Software
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.SteamVideo
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.SteamworksAccessInvite
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Video
-import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.WebGuide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

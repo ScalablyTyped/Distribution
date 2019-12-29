@@ -99,9 +99,6 @@ object mysqlNumbers {
   @js.native
   sealed trait `0xff` extends Types
   
-  @js.native
-  sealed trait `false` extends js.Object
-  
   @scala.inline
   def `0x00`: `0x00` = 0x00.asInstanceOf[`0x00`]
   @scala.inline
@@ -164,7 +161,5 @@ object mysqlNumbers {
   def `0xfe`: `0xfe` = 0xfe.asInstanceOf[`0xfe`]
   @scala.inline
   def `0xff`: `0xff` = 0xff.asInstanceOf[`0xff`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

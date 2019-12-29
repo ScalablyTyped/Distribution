@@ -14,6 +14,10 @@ trait RecurrenceSpecObjLit extends js.Object {
   var minute: js.UndefOr[RecurrenceSegment] = js.undefined
   var month: js.UndefOr[RecurrenceSegment] = js.undefined
   var second: js.UndefOr[RecurrenceSegment] = js.undefined
+  /**
+    * Timezone
+    */
+  var tz: js.UndefOr[Timezone] = js.undefined
   var year: js.UndefOr[RecurrenceSegment] = js.undefined
 }
 
@@ -26,6 +30,7 @@ object RecurrenceSpecObjLit {
     minute: RecurrenceSegment = null,
     month: RecurrenceSegment = null,
     second: RecurrenceSegment = null,
+    tz: Timezone = null,
     year: RecurrenceSegment = null
   ): RecurrenceSpecObjLit = {
     val __obj = js.Dynamic.literal()
@@ -35,6 +40,7 @@ object RecurrenceSpecObjLit {
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
     if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceSpecObjLit]
   }

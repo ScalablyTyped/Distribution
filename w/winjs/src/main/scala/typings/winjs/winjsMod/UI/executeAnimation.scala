@@ -1,6 +1,7 @@
 package typings.winjs.winjsMod.UI
 
 import typings.std.HTMLElement
+import typings.winjs.WinJS.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +15,6 @@ object executeAnimation extends js.Object {
     * @param animation The animation description or an array of animation descriptions to apply to element. An animation description is a JavaScript object with specific properties, listed below. There are two types of animation descriptions: one for keyframe-based animations and one for explicit animations. These types are distinguished by whether the keyframe property has a defined value. The following properties are required for both types of animation descriptions: property (string), delay (number), duration (number), timing (string). If an animation has a keyframe property with a defined, non-null value, then the animation is a keyframe-based animation. A keyframe-based animation description requires the following property in addition to those mentioned above: keyframe (string). If an animation does not have a keyframe property, or if the value of the property is null or undefined, then the animation is an explicit animation. An explicit animation description requires the following properties in addition to the common properties mentioned above: from, to. The values given in the from and to properties must be valid for the CSS property specified by the property property. For example, if the CSS property is "opacity", then the from and to properties must be numbers between 0 and 1 (inclusive).
     * @returns Returns a Promise object that completes when the CSS animation is complete.
     **/
-  def apply(element: HTMLElement, animation: js.Any): typings.winjs.WinJS.Promise[_] = js.native
+  def apply(element: HTMLElement, animation: js.Any): Promise[_] = js.native
 }
 

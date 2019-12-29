@@ -1,6 +1,6 @@
 package typings.chromeDashApps.chrome.runtime
 
-import typings.chromeDashApps.chromeDashAppsNumbers.`true`
+import typings.chromeDashApps.chromeDashAppsBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

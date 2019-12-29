@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.featureMod.FeatureLike
-import typings.ol.rendererCanvasVectorTileLayerMod.CanvasVectorTileLayerRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

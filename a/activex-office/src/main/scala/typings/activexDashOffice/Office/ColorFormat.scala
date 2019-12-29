@@ -11,7 +11,8 @@ class ColorFormat protected () extends js.Object {
   var Brightness: Double = js.native
   val Creator: Double = js.native
   var ObjectThemeColor: MsoThemeColorIndex = js.native
-  var `Office.ColorFormat_typekey`: ColorFormat = js.native
+  @JSName("Office.ColorFormat_typekey")
+  var OfficeDotColorFormat_typekey: ColorFormat = js.native
   val Parent: js.Any = js.native
   var RGB: Double = js.native
   var SchemeColor: Double = js.native

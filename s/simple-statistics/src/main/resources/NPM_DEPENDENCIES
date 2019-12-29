@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "simple-statistics" : "6.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "simple-statistics" : "6.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

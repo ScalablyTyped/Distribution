@@ -1,6 +1,6 @@
 package typings.atBabelTypes.atBabelTypesMod
 
-import typings.atBabelTypes.atBabelTypesNumbers.`true`
+import typings.atBabelTypes.atBabelTypesBooleans.`true`
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

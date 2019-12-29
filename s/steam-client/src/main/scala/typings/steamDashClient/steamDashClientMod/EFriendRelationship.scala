@@ -1,15 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.Blocked
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.Friend
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.Ignored
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.IgnoredFriend
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.Max
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.None
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.RequestInitiator
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.RequestRecipient
-import typings.steamDashClient.steamDashClientMod.EFriendRelationship.SuggestedFriend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

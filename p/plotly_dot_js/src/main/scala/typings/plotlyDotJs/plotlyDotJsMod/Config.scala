@@ -1,15 +1,15 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
 import typings.plotlyDotJs.Anon_Filename
+import typings.plotlyDotJs.plotlyDotJsBooleans.`false`
 import typings.plotlyDotJs.plotlyDotJsNumbers.`0`
 import typings.plotlyDotJs.plotlyDotJsNumbers.`1`
 import typings.plotlyDotJs.plotlyDotJsNumbers.`2`
-import typings.plotlyDotJs.plotlyDotJsNumbers.`false`
-import typings.plotlyDotJs.plotlyDotJsStrings.`reset+autosize`
 import typings.plotlyDotJs.plotlyDotJsStrings.autosize
 import typings.plotlyDotJs.plotlyDotJsStrings.hover
 import typings.plotlyDotJs.plotlyDotJsStrings.opaque
 import typings.plotlyDotJs.plotlyDotJsStrings.reset
+import typings.plotlyDotJs.plotlyDotJsStrings.resetPlussignautosize
 import typings.plotlyDotJs.plotlyDotJsStrings.transparent
 import typings.std.Partial
 import scala.scalajs.js
@@ -24,7 +24,7 @@ trait Config extends js.Object {
   /** add the plotly logo on the end of the mode bar */
   var displaylogo: Boolean
   /** double click interaction (false, 'reset', 'autosize' or 'reset+autosize') */
-  var doubleClick: `reset+autosize` | reset | autosize | `false`
+  var doubleClick: resetPlussignautosize | reset | autosize | `false`
   /** we can edit titles, move annotations, etc */
   var editable: Boolean
   var edits: Partial[Edits]
@@ -99,7 +99,7 @@ object Config {
     autosizable: Boolean,
     displayModeBar: hover | Boolean,
     displaylogo: Boolean,
-    doubleClick: `reset+autosize` | reset | autosize | `false`,
+    doubleClick: resetPlussignautosize | reset | autosize | `false`,
     editable: Boolean,
     edits: Partial[Edits],
     fillFrame: Boolean,

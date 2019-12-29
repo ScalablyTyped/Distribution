@@ -1,6 +1,5 @@
 package typings.senchaUnderscoreTouch.Ext
 
-import typings.senchaUnderscoreTouch.Ext.behavior.IBehavior
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

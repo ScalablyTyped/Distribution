@@ -1,16 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.connectingToServer
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.detectingProxy
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.negotiatingSsl
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.none
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.receivingContent
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.receivingHeaders
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.resolvingName
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.sendingContent
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.sendingHeaders
-import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.waitingForResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

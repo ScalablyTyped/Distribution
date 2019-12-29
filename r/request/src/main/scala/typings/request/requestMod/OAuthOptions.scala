@@ -1,6 +1,6 @@
 package typings.request.requestMod
 
-import typings.request.requestNumbers.`true`
+import typings.request.requestBooleans.`true`
 import typings.request.requestStrings.body
 import typings.request.requestStrings.header
 import typings.request.requestStrings.query

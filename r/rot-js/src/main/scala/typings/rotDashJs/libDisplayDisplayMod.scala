@@ -2,7 +2,6 @@ package typings.rotDashJs
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.rotDashJs.libDisplayDisplayMod.Display
 import typings.rotDashJs.libDisplayTypesMod.DisplayData
 import typings.rotDashJs.libDisplayTypesMod.DisplayOptions
 import typings.std.HTMLElement

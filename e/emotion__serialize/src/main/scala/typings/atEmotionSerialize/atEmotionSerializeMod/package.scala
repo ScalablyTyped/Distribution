@@ -13,7 +13,6 @@ package object atEmotionSerializeMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
     - scala.Boolean
     - scala.Double
     - java.lang.String
@@ -39,7 +38,6 @@ package object atEmotionSerializeMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - `js.undefined`
-    - scala.Nothing
     - scala.Boolean
     - scala.Double
     - java.lang.String

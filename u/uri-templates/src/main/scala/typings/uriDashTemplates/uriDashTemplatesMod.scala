@@ -1,7 +1,6 @@
 package typings.uriDashTemplates
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.uriDashTemplates.uriDashTemplatesMod.URITemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

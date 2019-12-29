@@ -2,7 +2,6 @@ package typings.graphql
 
 import typings.graphql.typeSchemaMod.GraphQLSchema
 import typings.graphql.typeSchemaMod.GraphQLSchemaValidationOptions
-import typings.graphql.utilitiesBuildClientSchemaMod.Options
 import typings.graphql.utilitiesIntrospectionQueryMod.IntrospectionQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`

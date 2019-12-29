@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.extended
-import typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.off
-import typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.offOrOffline
-import typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.offline
-import typings.winrtDashUwp.Windows.Devices.PointOfService.CashDrawerStatusKind.online
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

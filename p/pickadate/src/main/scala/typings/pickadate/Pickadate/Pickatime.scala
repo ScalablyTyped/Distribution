@@ -1,8 +1,8 @@
 package typings.pickadate.Pickadate
 
 import typings.pickadate.JQuery
-import typings.pickadate.pickadateStrings.DOLLARnode
-import typings.pickadate.pickadateStrings.DOLLARroot
+import typings.pickadate.pickadateStrings.$node
+import typings.pickadate.pickadateStrings.$root
 import typings.pickadate.pickadateStrings._hidden
 import typings.pickadate.pickadateStrings.picker
 import typings.std.HTMLInputElement
@@ -25,8 +25,8 @@ trait Pickatime extends js.Object {
     * Invoke API methods after time picker initialization.
     */
   def apply(methodName: String, arguments: js.Any*): js.Any = js.native
-  def apply(objectName: DOLLARnode): JQuery = js.native
-  def apply(objectName: DOLLARroot): JQuery = js.native
+  def apply(objectName: $node): JQuery = js.native
+  def apply(objectName: $root): JQuery = js.native
   def apply(objectName: _hidden): HTMLInputElement = js.native
   def apply(options: TimeOptions): JQuery = js.native
 }

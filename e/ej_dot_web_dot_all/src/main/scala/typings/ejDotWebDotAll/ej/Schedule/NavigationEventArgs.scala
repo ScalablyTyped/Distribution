@@ -16,7 +16,7 @@ trait NavigationEventArgs extends js.Object {
   var currentView: js.UndefOr[String] = js.undefined
   /** Returns the Schedule model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** Returns the previous date of the Schedule.
     */
   var previousDate: js.UndefOr[js.Any] = js.undefined
@@ -40,7 +40,7 @@ object NavigationEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     currentDate: js.Any = null,
     currentView: String = null,
-    model: typings.ejDotWebDotAll.ej.Schedule.Model = null,
+    model: Model = null,
     previousDate: js.Any = null,
     previousView: String = null,
     requestType: String = null,

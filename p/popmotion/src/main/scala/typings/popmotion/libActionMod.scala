@@ -1,6 +1,5 @@
 package typings.popmotion
 
-import typings.popmotion.libActionMod.Action
 import typings.popmotion.libActionTypesMod.ActionInit
 import typings.popmotion.libActionTypesMod.ActionProps
 import typings.popmotion.libActionTypesMod.ColdSubscription

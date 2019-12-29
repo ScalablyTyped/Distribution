@@ -1,5 +1,6 @@
 package typings.openui5.sap.ui.test
 
+import typings.jquery.JQueryStatic
 import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.core.routing.HashChanger
 import scala.scalajs.js
@@ -67,7 +68,7 @@ class Opa5 () extends Object {
     * Returns the jQuery object of the IFrame. If the IFrame is not loaded it will return null.
     * @returns The jQuery object
     */
-  def getJQuery(): typings.jquery.JQueryStatic = js.native
+  def getJQuery(): JQueryStatic = js.native
   /**
     * Returns the Opa plugin used for retrieving controls. If an IFrame is used it will return the
     * iFrame's plugin.

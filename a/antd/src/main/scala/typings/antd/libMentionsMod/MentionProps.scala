@@ -2,7 +2,7 @@ package typings.antd.libMentionsMod
 
 import typings.rcDashMentions.libMentionsMod.MentionsProps
 import typings.rcDashMentions.libMentionsMod.Placement
-import typings.rcDashMentions.rcDashMentionsNumbers.`false`
+import typings.rcDashMentions.rcDashMentionsBooleans.`false`
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.ReactNode

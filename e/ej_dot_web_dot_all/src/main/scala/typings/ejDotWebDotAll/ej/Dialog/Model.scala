@@ -17,7 +17,7 @@ trait Model extends js.Object {
   /** Specifies the ajaxSettings option to load the content to the Dialog control.
     * @Default {null}
     */
-  var ajaxSettings: js.UndefOr[typings.ejDotWebDotAll.ej.Dialog.AjaxSettings] = js.undefined
+  var ajaxSettings: js.UndefOr[AjaxSettings] = js.undefined
   /** This event is triggered whenever the AJAX request to retrieve the dialog content, gets succeed.
     */
   var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
@@ -187,7 +187,7 @@ object Model {
     actionButtonClick: /* e */ ActionButtonClickEventArgs => Unit = null,
     actionButtons: js.Array[String] = null,
     ajaxError: /* e */ AjaxErrorEventArgs => Unit = null,
-    ajaxSettings: typings.ejDotWebDotAll.ej.Dialog.AjaxSettings = null,
+    ajaxSettings: AjaxSettings = null,
     ajaxSuccess: /* e */ AjaxSuccessEventArgs => Unit = null,
     allowDraggable: js.UndefOr[Boolean] = js.undefined,
     allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,

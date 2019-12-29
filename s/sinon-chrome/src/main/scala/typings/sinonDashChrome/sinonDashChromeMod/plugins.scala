@@ -3,7 +3,6 @@ package typings.sinonDashChrome.sinonDashChromeMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.chrome.chrome.cookies.Cookie
 import typings.sinonDashChrome.Anon_Description
-import typings.sinonDashChrome.sinonDashChromeMod.plugins.Translations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

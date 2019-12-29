@@ -16,7 +16,8 @@ class TextStream protected () extends js.Object {
   val Column: Double = js.native
   /** Current line number */
   val Line: Double = js.native
-  var `Scripting.TextStream_typekey`: TextStream = js.native
+  @JSName("Scripting.TextStream_typekey")
+  var ScriptingDotTextStream_typekey: TextStream = js.native
   /** Close a text stream */
   def Close(): Unit = js.native
   /** Read a specific number of characters into a string */

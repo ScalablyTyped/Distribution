@@ -1,10 +1,6 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsCommentFieldRequired
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsDisablePostSendingDialog
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsEmailFieldHidden
-import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsEmailFieldOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -4,7 +4,7 @@ import typings.imap.imapMod.AppendOptions
 import typings.imap.imapMod.FetchOptions
 import typings.imap.imapMod.MailBoxes
 import typings.imap.imapMod.^
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

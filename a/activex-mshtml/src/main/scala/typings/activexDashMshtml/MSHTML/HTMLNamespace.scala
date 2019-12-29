@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MSHTML.HTMLNamespace")
 @js.native
 class HTMLNamespace protected () extends js.Object {
-  var `MSHTML.HTMLNamespace_typekey`: HTMLNamespace = js.native
+  @JSName("MSHTML.HTMLNamespace_typekey")
+  var MSHTMLDotHTMLNamespace_typekey: HTMLNamespace = js.native
   val constructor: js.Any = js.native
   val name: String = js.native
   var onreadystatechange: js.Any = js.native

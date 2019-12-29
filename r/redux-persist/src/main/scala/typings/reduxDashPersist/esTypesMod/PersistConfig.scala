@@ -1,6 +1,6 @@
 package typings.reduxDashPersist.esTypesMod
 
-import typings.reduxDashPersist.reduxDashPersistNumbers.`false`
+import typings.reduxDashPersist.reduxDashPersistBooleans.`false`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

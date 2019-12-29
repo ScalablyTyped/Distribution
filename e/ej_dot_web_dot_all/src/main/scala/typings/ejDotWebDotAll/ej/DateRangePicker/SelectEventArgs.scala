@@ -10,7 +10,7 @@ trait SelectEventArgs extends js.Object {
   var endDate: js.UndefOr[js.Any] = js.undefined
   /** returns the DateRangePicker model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DateRangePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the selected date object.
     */
   var startDate: js.UndefOr[js.Any] = js.undefined
@@ -21,12 +21,7 @@ trait SelectEventArgs extends js.Object {
 
 object SelectEventArgs {
   @scala.inline
-  def apply(
-    endDate: js.Any = null,
-    model: typings.ejDotWebDotAll.ej.DateRangePicker.Model = null,
-    startDate: js.Any = null,
-    `type`: String = null
-  ): SelectEventArgs = {
+  def apply(endDate: js.Any = null, model: Model = null, startDate: js.Any = null, `type`: String = null): SelectEventArgs = {
     val __obj = js.Dynamic.literal()
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])

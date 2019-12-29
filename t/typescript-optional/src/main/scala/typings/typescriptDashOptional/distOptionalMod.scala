@@ -1,7 +1,6 @@
 package typings.typescriptDashOptional
 
 import typings.std.NonNullable
-import typings.typescriptDashOptional.distOptionalMod.Optional
 import typings.typescriptDashOptional.distTypesMod.Cases
 import typings.typescriptDashOptional.distTypesMod.Option
 import scala.scalajs.js

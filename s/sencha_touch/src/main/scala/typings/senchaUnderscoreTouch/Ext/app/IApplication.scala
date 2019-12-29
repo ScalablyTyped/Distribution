@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait IApplication extends IController {
   /** [Config Option] (String) */
-  var appFolder: js.UndefOr[java.lang.String] = js.undefined
+  var appFolder: js.UndefOr[String] = js.undefined
   /** [Config Option] (Array) */
   var controllers: js.UndefOr[Array] = js.undefined
   /** [Config Option] (Ext.app.Profile) */
@@ -24,7 +24,7 @@ trait IApplication extends IController {
   /** [Method] Returns the value of appFolder
   		* @returns String
   		*/
-  var getAppFolder: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getAppFolder: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the Controller instance for the given controller name
   		* @param name String The name of the Controller.
   		* @param profileName String Optional profile name. If passed, this is the same as calling getController('profileName.controllerName').
@@ -32,11 +32,7 @@ trait IApplication extends IController {
   		*/
   @JSName("getController")
   var getController_IApplication: js.UndefOr[
-    js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* profileName */ js.UndefOr[java.lang.String], 
-      IController
-    ]
+    js.Function2[/* name */ js.UndefOr[String], /* profileName */ js.UndefOr[String], IController]
   ] = js.undefined
   /** [Method] Returns the value of controllers
   		* @returns Array
@@ -57,7 +53,7 @@ trait IApplication extends IController {
   /** [Method] Returns the value of name
   		* @returns String
   		*/
-  var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of profiles
   		* @returns Array
   		*/
@@ -69,7 +65,7 @@ trait IApplication extends IController {
   /** [Method] Returns the value of router
   		* @returns Ext.app.Router
   		*/
-  var getRouter: js.UndefOr[js.Function0[typings.senchaUnderscoreTouch.Ext.app.IRouter]] = js.undefined
+  var getRouter: js.UndefOr[js.Function0[IRouter]] = js.undefined
   /** [Method] Returns the value of themeVariation
   		* @returns String/Function
   		*/
@@ -77,11 +73,11 @@ trait IApplication extends IController {
   /** [Method] Returns the value of themeVariationPrefix
   		* @returns String
   		*/
-  var getThemeVariationPrefix: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getThemeVariationPrefix: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of themeVariationTransitionCls
   		* @returns String
   		*/
-  var getThemeVariationTransitionCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getThemeVariationTransitionCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Boolean) */
   var glossOnIcon: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Ext.app.History) */
@@ -91,11 +87,11 @@ trait IApplication extends IController {
   /** [Config Option] (Boolean) */
   var isIconPrecomposed: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var phoneIcon: js.UndefOr[java.lang.String] = js.undefined
+  var phoneIcon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var phoneStartupScreen: js.UndefOr[java.lang.String] = js.undefined
+  var phoneStartupScreen: js.UndefOr[String] = js.undefined
   /** [Config Option] (Array) */
   var profiles: js.UndefOr[Array] = js.undefined
   /** [Method] Redirects the browser to the given url
@@ -106,11 +102,11 @@ trait IApplication extends IController {
   /** [Config Option] (String[]) */
   var requires: js.UndefOr[Array] = js.undefined
   /** [Config Option] (Ext.app.Router) */
-  var router: js.UndefOr[typings.senchaUnderscoreTouch.Ext.app.IRouter] = js.undefined
+  var router: js.UndefOr[IRouter] = js.undefined
   /** [Method] Sets the value of appFolder
   		* @param appFolder String The new value.
   		*/
-  var setAppFolder: js.UndefOr[js.Function1[/* appFolder */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setAppFolder: js.UndefOr[js.Function1[/* appFolder */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of controllers
   		* @param controllers Array The new value.
   		*/
@@ -130,7 +126,7 @@ trait IApplication extends IController {
   /** [Method] Sets the value of name
   		* @param name String The new value.
   		*/
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of profiles
   		* @param profiles Array The new value.
   		*/
@@ -142,9 +138,7 @@ trait IApplication extends IController {
   /** [Method] Sets the value of router
   		* @param router Ext.app.Router The new value.
   		*/
-  var setRouter: js.UndefOr[
-    js.Function1[/* router */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.app.IRouter], Unit]
-  ] = js.undefined
+  var setRouter: js.UndefOr[js.Function1[/* router */ js.UndefOr[IRouter], Unit]] = js.undefined
   /** [Method] Sets the value of themeVariation
   		* @param themeVariation String/Function The new value.
   		*/
@@ -152,27 +146,25 @@ trait IApplication extends IController {
   /** [Method] Sets the value of themeVariationPrefix
   		* @param themeVariationPrefix String The new value.
   		*/
-  var setThemeVariationPrefix: js.UndefOr[js.Function1[/* themeVariationPrefix */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setThemeVariationPrefix: js.UndefOr[js.Function1[/* themeVariationPrefix */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of themeVariationTransitionCls
   		* @param themeVariationTransitionCls String The new value.
   		*/
-  var setThemeVariationTransitionCls: js.UndefOr[
-    js.Function1[/* themeVariationTransitionCls */ js.UndefOr[java.lang.String], Unit]
-  ] = js.undefined
+  var setThemeVariationTransitionCls: js.UndefOr[js.Function1[/* themeVariationTransitionCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var startupImage: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var statusBarStyle: js.UndefOr[java.lang.String] = js.undefined
+  var statusBarStyle: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var tabletIcon: js.UndefOr[java.lang.String] = js.undefined
+  var tabletIcon: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var tabletStartupScreen: js.UndefOr[java.lang.String] = js.undefined
+  var tabletStartupScreen: js.UndefOr[String] = js.undefined
   /** [Config Option] (String/Function) */
   var themeVariation: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var themeVariationPrefix: js.UndefOr[java.lang.String] = js.undefined
+  var themeVariationPrefix: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var themeVariationTransitionCls: js.UndefOr[java.lang.String] = js.undefined
+  var themeVariationTransitionCls: js.UndefOr[String] = js.undefined
 }
 
 object IApplication {
@@ -181,11 +173,11 @@ object IApplication {
     addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     alias: Array = null,
     alternateClassName: js.Any = null,
-    appFolder: java.lang.String = null,
+    appFolder: String = null,
     application: IApplication = null,
     before: js.Any = null,
     bubbleEvents: js.Any = null,
@@ -200,37 +192,37 @@ object IApplication {
     destroy: () => Unit = null,
     dispatch: (/* action */ js.UndefOr[IAction], /* addToHistory */ js.UndefOr[Boolean]) => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    getAppFolder: () => java.lang.String = null,
+    extend: String = null,
+    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    getAppFolder: () => String = null,
     getApplication: () => IApplication = null,
     getBefore: () => _ = null,
     getBubbleEvents: () => _ = null,
     getControl: () => _ = null,
-    getController: (/* name */ js.UndefOr[java.lang.String], /* profileName */ js.UndefOr[java.lang.String]) => IController = null,
+    getController: (/* name */ js.UndefOr[String], /* profileName */ js.UndefOr[String]) => IController = null,
     getControllers: () => Array = null,
     getCurrentProfile: () => IProfile = null,
     getHistory: () => IHistory = null,
     getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getLaunch: () => _ = null,
     getListeners: () => _ = null,
-    getModel: /* modelName */ js.UndefOr[java.lang.String] => _ = null,
+    getModel: /* modelName */ js.UndefOr[String] => _ = null,
     getModels: () => Array = null,
-    getName: () => java.lang.String = null,
+    getName: () => String = null,
     getProfiles: () => Array = null,
     getRefs: () => _ = null,
     getRequires: () => Array = null,
-    getRouter: () => typings.senchaUnderscoreTouch.Ext.app.IRouter = null,
+    getRouter: () => IRouter = null,
     getRoutes: () => _ = null,
     getStores: () => Array = null,
     getThemeVariation: () => _ = null,
-    getThemeVariationPrefix: () => java.lang.String = null,
-    getThemeVariationTransitionCls: () => java.lang.String = null,
+    getThemeVariationPrefix: () => String = null,
+    getThemeVariationTransitionCls: () => String = null,
     getViews: () => Array = null,
     glossOnIcon: js.UndefOr[Boolean] = js.undefined,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     history: IHistory = null,
     icon: js.Any = null,
     inheritableStatics: js.Any = null,
@@ -243,12 +235,12 @@ object IApplication {
     models: Array = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    name: java.lang.String = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    name: String = null,
+    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    phoneIcon: java.lang.String = null,
-    phoneStartupScreen: java.lang.String = null,
+    phoneIcon: String = null,
+    phoneStartupScreen: String = null,
     platformConfig: js.Any = null,
     profiles: Array = null,
     redirectTo: /* url */ js.UndefOr[js.Any] => Unit = null,
@@ -256,14 +248,14 @@ object IApplication {
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    router: typings.senchaUnderscoreTouch.Ext.app.IRouter = null,
+    router: IRouter = null,
     routes: js.Any = null,
     self: IClass = null,
-    setAppFolder: /* appFolder */ js.UndefOr[java.lang.String] => Unit = null,
+    setAppFolder: /* appFolder */ js.UndefOr[String] => Unit = null,
     setApplication: /* application */ js.UndefOr[IApplication] => Unit = null,
     setBefore: /* before */ js.UndefOr[js.Any] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
@@ -274,29 +266,29 @@ object IApplication {
     setLaunch: /* launch */ js.UndefOr[js.Any] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setModels: /* models */ js.UndefOr[Array] => Unit = null,
-    setName: /* name */ js.UndefOr[java.lang.String] => Unit = null,
+    setName: /* name */ js.UndefOr[String] => Unit = null,
     setProfiles: /* profiles */ js.UndefOr[Array] => Unit = null,
     setRefs: /* refs */ js.UndefOr[js.Any] => Unit = null,
     setRequires: /* requires */ js.UndefOr[Array] => Unit = null,
-    setRouter: /* router */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.app.IRouter] => Unit = null,
+    setRouter: /* router */ js.UndefOr[IRouter] => Unit = null,
     setRoutes: /* routes */ js.UndefOr[js.Any] => Unit = null,
     setStores: /* stores */ js.UndefOr[Array] => Unit = null,
     setThemeVariation: /* themeVariation */ js.UndefOr[js.Any] => Unit = null,
-    setThemeVariationPrefix: /* themeVariationPrefix */ js.UndefOr[java.lang.String] => Unit = null,
-    setThemeVariationTransitionCls: /* themeVariationTransitionCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setThemeVariationPrefix: /* themeVariationPrefix */ js.UndefOr[String] => Unit = null,
+    setThemeVariationTransitionCls: /* themeVariationTransitionCls */ js.UndefOr[String] => Unit = null,
     setViews: /* views */ js.UndefOr[Array] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     startupImage: js.Any = null,
     statics: js.Any = null,
-    statusBarStyle: java.lang.String = null,
+    statusBarStyle: String = null,
     stores: Array = null,
     suspendEvents: () => Unit = null,
-    tabletIcon: java.lang.String = null,
-    tabletStartupScreen: java.lang.String = null,
+    tabletIcon: String = null,
+    tabletStartupScreen: String = null,
     themeVariation: js.Any = null,
-    themeVariationPrefix: java.lang.String = null,
-    themeVariationTransitionCls: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
+    themeVariationPrefix: String = null,
+    themeVariationTransitionCls: String = null,
+    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,

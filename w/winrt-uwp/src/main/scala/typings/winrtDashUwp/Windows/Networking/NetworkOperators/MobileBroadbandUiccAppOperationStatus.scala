@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.accessConditionNotHeld
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.invalidUiccFilePath
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.success
-import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.uiccBusy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

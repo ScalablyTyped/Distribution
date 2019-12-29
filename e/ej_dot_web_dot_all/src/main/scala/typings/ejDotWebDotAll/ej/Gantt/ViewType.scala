@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.ViewType.HistogramView
-import typings.ejDotWebDotAll.ej.Gantt.ViewType.ProjectView
-import typings.ejDotWebDotAll.ej.Gantt.ViewType.ResourceView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,9 +11,9 @@ trait IJsonReader
   /** [Property] (Object) */
   var jsonData: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var metaProperty: js.UndefOr[java.lang.String] = js.undefined
+  var metaProperty: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var record: js.UndefOr[java.lang.String] = js.undefined
+  var record: js.UndefOr[String] = js.undefined
   /** [Config Option] (Boolean) */
   var useSimpleAccessors: js.UndefOr[Boolean] = js.undefined
 }
@@ -33,23 +33,23 @@ object IJsonReader {
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
     enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    extend: String = null,
+    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
+    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getResponseData: /* response */ js.UndefOr[js.Any] => IResultSet = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
+    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
-    idProperty: java.lang.String = null,
+    idProperty: String = null,
     implicitIncludes: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IJsonReader = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     jsonData: js.Any = null,
     listeners: js.Any = null,
-    messageProperty: java.lang.String = null,
+    messageProperty: String = null,
     metaData: js.Any = null,
-    metaProperty: java.lang.String = null,
+    metaProperty: String = null,
     mixins: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
@@ -58,22 +58,22 @@ object IJsonReader {
     read: /* response */ js.UndefOr[js.Any] => IResultSet = null,
     readRecords: /* data */ js.UndefOr[js.Any] => IResultSet = null,
     readRecordsOnFailure: js.UndefOr[Boolean] = js.undefined,
-    record: java.lang.String = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    record: String = null,
+    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
+    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
-    root: java.lang.String = null,
+    root: String = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    successProperty: java.lang.String = null,
+    successProperty: String = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    totalProperty: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
+    totalProperty: String = null,
+    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     useSimpleAccessors: js.UndefOr[Boolean] = js.undefined,
     uses: Array = null
   ): IJsonReader = {

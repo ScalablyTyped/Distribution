@@ -1,13 +1,6 @@
 package typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.BOOL_VALUE
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.KIND_NOT_SET
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.LIST_VALUE
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.NULL_VALUE
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.NUMBER_VALUE
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.STRING_VALUE
-import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.STRUCT_VALUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LineSuffix extends _Doc {
-  var contents: typings.prettier.prettierMod.doc.builders.Doc
+  var contents: Doc
   var `type`: `line-suffix`
 }
 
 object LineSuffix {
   @scala.inline
-  def apply(contents: typings.prettier.prettierMod.doc.builders.Doc, `type`: `line-suffix`): LineSuffix = {
+  def apply(contents: Doc, `type`: `line-suffix`): LineSuffix = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineSuffix]
@@ -22,6 +22,6 @@ object LineSuffix {
 @JSImport("prettier", "doc.builders.lineSuffix")
 @js.native
 object lineSuffix extends js.Object {
-  def apply(contents: typings.prettier.prettierMod.doc.builders.Doc): LineSuffix = js.native
+  def apply(contents: Doc): LineSuffix = js.native
 }
 

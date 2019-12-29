@@ -134,7 +134,7 @@ object microsoftDashSdkDashSoapStrings {
   sealed trait None extends SecurityType
   
   @js.native
-  sealed trait NoneBACKSLASHtOrganizationOwned extends js.Object
+  sealed trait NoneCharactertabulationOrganizationOwned extends js.Object
   
   @js.native
   sealed trait OneToManyRelationship extends RelationshipType
@@ -179,7 +179,7 @@ object microsoftDashSdkDashSoapStrings {
   sealed trait State extends js.Object
   
   @js.native
-  sealed trait StateTypeBACKSLASHtStatusType extends js.Object
+  sealed trait StateTypeCharactertabulationStatusType extends js.Object
   
   @js.native
   sealed trait Status extends js.Object
@@ -188,7 +188,7 @@ object microsoftDashSdkDashSoapStrings {
   sealed trait StringType extends js.Object
   
   @js.native
-  sealed trait TeamOwnedBACKSLASHtUserOwned extends js.Object
+  sealed trait TeamOwnedCharactertabulationUserOwned extends js.Object
   
   @js.native
   sealed trait Uniqueidentifier extends js.Object
@@ -297,7 +297,7 @@ object microsoftDashSdkDashSoapStrings {
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
-  def NoneBACKSLASHtOrganizationOwned: NoneBACKSLASHtOrganizationOwned = "None\tOrganizationOwned".asInstanceOf[NoneBACKSLASHtOrganizationOwned]
+  def NoneCharactertabulationOrganizationOwned: NoneCharactertabulationOrganizationOwned = "None\tOrganizationOwned".asInstanceOf[NoneCharactertabulationOrganizationOwned]
   @scala.inline
   def OneToManyRelationship: OneToManyRelationship = "OneToManyRelationship".asInstanceOf[OneToManyRelationship]
   @scala.inline
@@ -327,13 +327,13 @@ object microsoftDashSdkDashSoapStrings {
   @scala.inline
   def State: State = "State".asInstanceOf[State]
   @scala.inline
-  def StateTypeBACKSLASHtStatusType: StateTypeBACKSLASHtStatusType = "StateType\tStatusType".asInstanceOf[StateTypeBACKSLASHtStatusType]
+  def StateTypeCharactertabulationStatusType: StateTypeCharactertabulationStatusType = "StateType\tStatusType".asInstanceOf[StateTypeCharactertabulationStatusType]
   @scala.inline
   def Status: Status = "Status".asInstanceOf[Status]
   @scala.inline
   def StringType: StringType = "StringType".asInstanceOf[StringType]
   @scala.inline
-  def TeamOwnedBACKSLASHtUserOwned: TeamOwnedBACKSLASHtUserOwned = "TeamOwned\tUserOwned".asInstanceOf[TeamOwnedBACKSLASHtUserOwned]
+  def TeamOwnedCharactertabulationUserOwned: TeamOwnedCharactertabulationUserOwned = "TeamOwned\tUserOwned".asInstanceOf[TeamOwnedCharactertabulationUserOwned]
   @scala.inline
   def Uniqueidentifier: Uniqueidentifier = "Uniqueidentifier".asInstanceOf[Uniqueidentifier]
   @scala.inline

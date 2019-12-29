@@ -19,7 +19,8 @@ class ConnectorFormat protected () extends js.Object {
   val EndConnectionSite: Double = js.native
   val Parent: js.Any = js.native
   var Type: MsoConnectorType = js.native
-  var `Word.ConnectorFormat_typekey`: ConnectorFormat = js.native
+  @JSName("Word.ConnectorFormat_typekey")
+  var WordDotConnectorFormat_typekey: ConnectorFormat = js.native
   def BeginConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit = js.native
   def BeginDisconnect(): Unit = js.native
   def EndConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit = js.native

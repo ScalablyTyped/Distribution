@@ -4,13 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.plottable.buildSrcCoreInterfacesMod.Bounds
 import typings.plottable.buildSrcCoreInterfacesMod.IEntityBounds
 import typings.plottable.buildSrcCoreInterfacesMod.Point
-import typings.plottable.buildSrcUtilsRTreeMod.IDistanceFunction
-import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult
-import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.FAIL
-import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS
-import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE
-import typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds
-import typings.plottable.buildSrcUtilsRTreeMod.RTreeNode
 import typings.plottable.buildSrcUtilsRTreeSplitStrategiesMod.IRTreeSplitStrategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`

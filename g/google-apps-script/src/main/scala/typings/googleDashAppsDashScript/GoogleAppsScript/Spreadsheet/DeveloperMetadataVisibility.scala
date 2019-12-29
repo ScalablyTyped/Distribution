@@ -1,8 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility.DOCUMENT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility.PROJECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

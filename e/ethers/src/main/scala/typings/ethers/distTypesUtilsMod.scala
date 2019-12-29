@@ -14,7 +14,7 @@ import typings.ethers.distTypesUtilsTypesMod.Signature
 import typings.ethers.distTypesUtilsTypesMod.Transaction
 import typings.ethers.distTypesUtilsTypesMod.UnsignedTransaction
 import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm
-import typings.ethers.ethersStrings.BACKSLASHu039E
+import typings.ethers.ethersStrings.Ξ
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ object distTypesUtilsMod extends js.Object {
   }
   
   val defaultAbiCoder: typings.ethers.distTypesUtilsAbiDashCoderMod.AbiCoder = js.native
-  val etherSymbol: BACKSLASHu039E = js.native
+  val etherSymbol: Ξ = js.native
   def arrayify(value: Arrayish): Uint8Array = js.native
   def arrayify(value: BigNumber): Uint8Array = js.native
   def bigNumberify(value: BigNumberish): BigNumber = js.native

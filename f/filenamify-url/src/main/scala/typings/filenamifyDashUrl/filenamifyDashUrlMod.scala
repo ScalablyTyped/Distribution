@@ -1,6 +1,5 @@
 package typings.filenamifyDashUrl
 
-import typings.filenamifyDashUrl.filenamifyDashUrlMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object filenamifyDashUrlMod extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function filenamifyUrl(input: string, options?: Options): string;
+  // declare function filenamifyUrl(url: string, options?: Options): string;
   // export = filenamifyUrl;
   var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof filenamifyUrl */ js.Any = js.native
   /**
   	Convert a URL to a valid filename.
-  	@param input - A URL to convert to a valid filename.
-  	@returns A valid filename for `input`.
+  	@param url - A URL to convert to a valid filename.
+  	@returns A valid filename for `url`.
   	@example
   	```
   	import filenamifyUrl = require('filenamify-url');
@@ -25,8 +24,8 @@ object filenamifyDashUrlMod extends js.Object {
   	//=> 'sindresorhus.com🐴foo'
   	```
   	*/
-  def apply(input: String): String = js.native
-  def apply(input: String, options: Options): String = js.native
+  def apply(url: String): String = js.native
+  def apply(url: String, options: Options): String = js.native
   type Options = typings.filenamify.filenamifyMod.Options
 }
 

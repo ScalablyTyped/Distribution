@@ -2,7 +2,7 @@ package typings.javascriptDashStringify
 
 import typings.javascriptDashStringify.distTypesMod.Next
 import typings.javascriptDashStringify.distTypesMod.ToString
-import typings.javascriptDashStringify.javascriptDashStringifyStrings.BACKTICK
+import typings.javascriptDashStringify.javascriptDashStringifyStrings.Graveaccent
 import typings.std.PropertyKey
 import typings.std.RegExp
 import typings.std.RegExpExecArray
@@ -56,7 +56,7 @@ object distFunctionMod extends js.Object {
     /**
       * Advance the parser past a template string.
       */
-    def consumeTemplate(): js.UndefOr[BACKTICK] = js.native
+    def consumeTemplate(): js.UndefOr[Graveaccent] = js.native
     /**
       * Advance the parser past any whitespace or comments.
       */

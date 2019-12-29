@@ -1,6 +1,6 @@
 package typings.webpack.webpackMod.Options
 
-import typings.webpack.webpackNumbers.`false`
+import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackStrings.error
 import typings.webpack.webpackStrings.warning
 import scala.scalajs.js

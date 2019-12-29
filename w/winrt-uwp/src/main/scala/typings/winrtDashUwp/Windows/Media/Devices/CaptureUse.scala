@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.none
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.photo
-import typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

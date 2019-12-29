@@ -1,13 +1,6 @@
 package typings.steamDashClient.steamDashClientMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.steamDashClient.steamDashClientMod.EServerFlags.Active
-import typings.steamDashClient.steamDashClientMod.EServerFlags.Dedicated
-import typings.steamDashClient.steamDashClientMod.EServerFlags.Linux
-import typings.steamDashClient.steamDashClientMod.EServerFlags.None
-import typings.steamDashClient.steamDashClientMod.EServerFlags.Passworded
-import typings.steamDashClient.steamDashClientMod.EServerFlags.Private
-import typings.steamDashClient.steamDashClientMod.EServerFlags.Secure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

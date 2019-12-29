@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADOX.Key")
 @js.native
 class Key protected () extends js.Object {
-  var `ADOX.Key_typekey`: Key = js.native
+  @JSName("ADOX.Key_typekey")
+  var ADOXDotKey_typekey: Key = js.native
   @JSName("Columns")
   val Columns_Original: Columns = js.native
   var DeleteRule: RuleEnum = js.native

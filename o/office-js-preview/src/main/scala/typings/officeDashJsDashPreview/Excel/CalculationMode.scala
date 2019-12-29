@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.CalculationMode.automatic
-import typings.officeDashJsDashPreview.Excel.CalculationMode.automaticExceptTables
-import typings.officeDashJsDashPreview.Excel.CalculationMode.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

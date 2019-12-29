@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReactiveVarStatic
-  extends Instantiable1[
-      /* initialValue */ js.Object, 
-      typings.meteor.reactiveDashVarMod.ReactiveVar[js.Object]
-    ]
-     with Instantiable2[
-      /* initialValue */ js.Object, 
-      /* equalsFunc */ js.Function, 
-      typings.meteor.reactiveDashVarMod.ReactiveVar[js.Object]
-    ]
+  extends Instantiable1[/* initialValue */ js.Object, ReactiveVar[js.Object]]
+     with Instantiable2[/* initialValue */ js.Object, /* equalsFunc */ js.Function, ReactiveVar[js.Object]]
 

@@ -3,7 +3,7 @@ package typings.winstonDashSyslog.winstonDashSyslogMod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.dgramMod.Socket
-import typings.winstonDashSyslog.winstonDashSyslogNumbers.`true`
+import typings.winstonDashSyslog.winstonDashSyslogBooleans.`true`
 import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`

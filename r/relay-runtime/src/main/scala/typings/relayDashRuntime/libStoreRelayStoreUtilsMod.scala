@@ -1,7 +1,6 @@
 package typings.relayDashRuntime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayDashRuntime.libStoreRelayStoreUtilsMod.Arguments
 import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationArgument
 import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationField
 import typings.relayDashRuntime.libUtilNormalizationNodeMod.NormalizationHandle

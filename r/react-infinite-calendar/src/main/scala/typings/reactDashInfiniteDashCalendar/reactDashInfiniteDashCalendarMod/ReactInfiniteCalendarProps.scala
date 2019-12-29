@@ -4,6 +4,7 @@ import typings.reactDashInfiniteDashCalendar.Anon_0
 import typings.reactDashInfiniteDashCalendar.Anon_AccentColor
 import typings.reactDashInfiniteDashCalendar.Anon_End
 import typings.reactDashInfiniteDashCalendar.Anon_HideYearsOnSelect
+import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarBooleans.`false`
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumbers.`0`
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumbers.`1`
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumbers.`2`
@@ -11,8 +12,7 @@ import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumber
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumbers.`4`
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumbers.`5`
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumbers.`6`
-import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarNumbers.`false`
-import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarStrings.`100%`
+import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarStrings.`100Percentsign`
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarStrings.auto
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarStrings.days
 import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarStrings.years
@@ -43,7 +43,7 @@ trait ReactInfiniteCalendarProps extends js.Object {
   var selected: js.UndefOr[DateType | `false` | Anon_End] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var theme: js.UndefOr[Anon_AccentColor] = js.undefined
-  var width: js.UndefOr[Double | auto | `100%`] = js.undefined
+  var width: js.UndefOr[Double | auto | `100Percentsign`] = js.undefined
 }
 
 object ReactInfiniteCalendarProps {
@@ -70,7 +70,7 @@ object ReactInfiniteCalendarProps {
     selected: DateType | `false` | Anon_End = null,
     tabIndex: Int | Double = null,
     theme: Anon_AccentColor = null,
-    width: Double | auto | `100%` = null
+    width: Double | auto | `100Percentsign` = null
   ): ReactInfiniteCalendarProps = {
     val __obj = js.Dynamic.literal()
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])

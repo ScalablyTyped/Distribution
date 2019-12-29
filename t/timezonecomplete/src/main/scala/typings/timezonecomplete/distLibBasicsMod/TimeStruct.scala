@@ -32,27 +32,27 @@ class TimeStruct protected () extends js.Object {
     * The time value in unix milliseconds
     */
   var _unixMillis: js.Any = js.native
-  val components: TimeComponents = js.native
-  val day: Double = js.native
-  val hour: Double = js.native
-  val milli: Double = js.native
-  val minute: Double = js.native
-  val month: Double = js.native
-  val second: Double = js.native
-  val unixMillis: Double = js.native
-  val year: Double = js.native
+  def components(): TimeComponents = js.native
+  def day(): Double = js.native
   /**
     * Equality function
     * @param other
     * @throws TypeError if other is not an Object
     */
   def equals(other: TimeStruct): Boolean = js.native
+  def hour(): Double = js.native
+  def milli(): Double = js.native
+  def minute(): Double = js.native
+  def month(): Double = js.native
+  def second(): Double = js.native
+  def unixMillis(): Double = js.native
   /**
     * Validate a timestamp. Filters out non-existing values for all time components
     * @returns true iff the timestamp is valid
     * @throws nothing
     */
   def validate(): Boolean = js.native
+  def year(): Double = js.native
   /**
     * The day-of-year 0-365
     * @throws nothing

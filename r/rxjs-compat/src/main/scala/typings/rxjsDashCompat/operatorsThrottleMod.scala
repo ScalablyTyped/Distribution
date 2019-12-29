@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorsThrottleMod extends js.Object {
   def throttle[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     durationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _
     ]
   ): js.Any = js.native
   def throttle[T](
-    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     durationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _

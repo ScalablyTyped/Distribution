@@ -1,7 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.Underscore
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings._underscore
 import typings.react.reactMod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ object libComponentsTextFieldMod extends js.Object {
     def this(props: ITextFieldProps) = this()
   }
   
-  val DEFAULT_MASK_CHAR: Underscore = js.native
+  val DEFAULT_MASK_CHAR: _underscore = js.native
   val TextField: StatelessComponent[ITextFieldProps] = js.native
   /* static members */
   @js.native

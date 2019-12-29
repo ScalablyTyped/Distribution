@@ -1,10 +1,6 @@
 package typings.pgDashMinify.pgDashMinifyMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pgDashMinify.pgDashMinifyMod.parsingErrorCode.multiLineQI
-import typings.pgDashMinify.pgDashMinifyMod.parsingErrorCode.unclosedMLC
-import typings.pgDashMinify.pgDashMinifyMod.parsingErrorCode.unclosedQI
-import typings.pgDashMinify.pgDashMinifyMod.parsingErrorCode.unclosedText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

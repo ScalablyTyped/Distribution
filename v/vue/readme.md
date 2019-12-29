@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue
 
-Typings are for version 2.6.10
+Typings are for version 2.6.11
 
 ## Library description:
 Reactive, component-oriented view layer for modern web interfaces.

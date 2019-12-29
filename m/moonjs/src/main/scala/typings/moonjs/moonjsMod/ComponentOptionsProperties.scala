@@ -1,6 +1,6 @@
 package typings.moonjs.moonjsMod
 
-import typings.moonjs.moonjsNumbers.`true`
+import typings.moonjs.moonjsBooleans.`true`
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

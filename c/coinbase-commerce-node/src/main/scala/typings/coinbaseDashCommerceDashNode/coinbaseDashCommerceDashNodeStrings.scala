@@ -89,7 +89,7 @@ object coinbaseDashCommerceDashNodeStrings {
   sealed trait USDC extends CryptoCurrency
   
   @js.native
-  sealed trait `application/json` extends js.Object
+  sealed trait applicationSlashjson extends js.Object
   
   @js.native
   sealed trait asc extends js.Object
@@ -104,22 +104,22 @@ object coinbaseDashCommerceDashNodeStrings {
   sealed trait charge extends js.Object
   
   @js.native
-  sealed trait `charge:confirmed` extends js.Object
+  sealed trait chargeColonconfirmed extends js.Object
   
   @js.native
-  sealed trait `charge:created` extends js.Object
+  sealed trait chargeColoncreated extends js.Object
   
   @js.native
-  sealed trait `charge:delayed` extends js.Object
+  sealed trait chargeColondelayed extends js.Object
   
   @js.native
-  sealed trait `charge:failed` extends js.Object
+  sealed trait chargeColonfailed extends js.Object
   
   @js.native
-  sealed trait `charge:pending` extends js.Object
+  sealed trait chargeColonpending extends js.Object
   
   @js.native
-  sealed trait `charge:resolved` extends js.Object
+  sealed trait chargeColonresolved extends js.Object
   
   @js.native
   sealed trait checkout extends js.Object
@@ -207,7 +207,7 @@ object coinbaseDashCommerceDashNodeStrings {
   @scala.inline
   def USDC: USDC = "USDC".asInstanceOf[USDC]
   @scala.inline
-  def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
+  def applicationSlashjson: applicationSlashjson = "application/json".asInstanceOf[applicationSlashjson]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
@@ -217,17 +217,17 @@ object coinbaseDashCommerceDashNodeStrings {
   @scala.inline
   def charge: charge = "charge".asInstanceOf[charge]
   @scala.inline
-  def `charge:confirmed`: `charge:confirmed` = "charge:confirmed".asInstanceOf[`charge:confirmed`]
+  def chargeColonconfirmed: chargeColonconfirmed = "charge:confirmed".asInstanceOf[chargeColonconfirmed]
   @scala.inline
-  def `charge:created`: `charge:created` = "charge:created".asInstanceOf[`charge:created`]
+  def chargeColoncreated: chargeColoncreated = "charge:created".asInstanceOf[chargeColoncreated]
   @scala.inline
-  def `charge:delayed`: `charge:delayed` = "charge:delayed".asInstanceOf[`charge:delayed`]
+  def chargeColondelayed: chargeColondelayed = "charge:delayed".asInstanceOf[chargeColondelayed]
   @scala.inline
-  def `charge:failed`: `charge:failed` = "charge:failed".asInstanceOf[`charge:failed`]
+  def chargeColonfailed: chargeColonfailed = "charge:failed".asInstanceOf[chargeColonfailed]
   @scala.inline
-  def `charge:pending`: `charge:pending` = "charge:pending".asInstanceOf[`charge:pending`]
+  def chargeColonpending: chargeColonpending = "charge:pending".asInstanceOf[chargeColonpending]
   @scala.inline
-  def `charge:resolved`: `charge:resolved` = "charge:resolved".asInstanceOf[`charge:resolved`]
+  def chargeColonresolved: chargeColonresolved = "charge:resolved".asInstanceOf[chargeColonresolved]
   @scala.inline
   def checkout: checkout = "checkout".asInstanceOf[checkout]
   @scala.inline

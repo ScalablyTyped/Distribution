@@ -1,6 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseContainerITreeMapMod.ITreeMap
 import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseIteratorIMapIteratorMod.IMapIterator
 import typings.tstl.baseIteratorIMapIteratorMod.IMapReverseIterator

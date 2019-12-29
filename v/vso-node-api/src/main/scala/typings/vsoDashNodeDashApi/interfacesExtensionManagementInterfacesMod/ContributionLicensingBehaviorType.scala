@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.AlwaysInclude
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfLicensed
-import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfUnlicensed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

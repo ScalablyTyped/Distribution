@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 object kytheStrings {
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait Slash extends js.Object
   
   @js.native
   sealed trait ordinal extends js.Object
   
   @scala.inline
-  def `/`: `/` = "/".asInstanceOf[`/`]
+  def Slash: Slash = "/".asInstanceOf[Slash]
   @scala.inline
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
 }

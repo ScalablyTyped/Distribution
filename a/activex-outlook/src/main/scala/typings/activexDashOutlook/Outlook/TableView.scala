@@ -29,7 +29,8 @@ class TableView protected () extends js.Object {
   var MultiLine: OlMultiLine = js.native
   var MultiLineWidth: Double = js.native
   var Name: String = js.native
-  var `Outlook.TableView_typekey`: TableView = js.native
+  @JSName("Outlook.TableView_typekey")
+  var OutlookDotTableView_typekey: TableView = js.native
   val Parent: js.Any = js.native
   val RowFont: ViewFont = js.native
   val SaveOption: OlViewSaveOption = js.native

@@ -2,7 +2,7 @@ package typings.saslDashPlain.saslDashPlainMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.saslDashPlain.TypeofClassPlainMechanism
-import typings.saslDashPlain.saslDashPlainNumbers.`true`
+import typings.saslDashPlain.saslDashPlainBooleans.`true`
 import typings.saslDashPlain.saslDashPlainStrings.PLAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -25,13 +25,13 @@ trait TaskModule extends CommonTaskModule {
     * This method is used internally by the multi task system this.files / grunt.task.current.files property.
     */
   def normalizeMultiTaskFiles(data: IProjectConfig): js.Array[IFileMap] = js.native
-  def normalizeMultiTaskFiles(data: IProjectConfig, targetname: java.lang.String): js.Array[IFileMap] = js.native
-  def run(task: java.lang.String, thenTasks: java.lang.String*): Unit = js.native
+  def normalizeMultiTaskFiles(data: IProjectConfig, targetname: String): js.Array[IFileMap] = js.native
+  def run(task: String, thenTasks: String*): Unit = js.native
   /**
     * Enqueue one or more tasks.
     * Every specified task in taskList will be run immediately after the current task completes,
     * in the order specified. The task list can be an array of tasks or individual task arguments.
     */
-  def run(tasks: js.Array[java.lang.String]): Unit = js.native
+  def run(tasks: js.Array[String]): Unit = js.native
 }
 

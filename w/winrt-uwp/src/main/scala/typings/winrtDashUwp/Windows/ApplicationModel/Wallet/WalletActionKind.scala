@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletActionKind.message
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletActionKind.moreTransactions
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletActionKind.openItem
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletActionKind.transaction
-import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletActionKind.verb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

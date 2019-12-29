@@ -1,13 +1,6 @@
 package typings.phaser.spine
 
 import org.scalablytyped.runtime.TopLevel
-import typings.phaser.spine.TextureFilter.Linear
-import typings.phaser.spine.TextureFilter.MipMap
-import typings.phaser.spine.TextureFilter.MipMapLinearLinear
-import typings.phaser.spine.TextureFilter.MipMapLinearNearest
-import typings.phaser.spine.TextureFilter.MipMapNearestLinear
-import typings.phaser.spine.TextureFilter.MipMapNearestNearest
-import typings.phaser.spine.TextureFilter.Nearest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,9 +2,6 @@ package typings.plottable
 
 import org.scalablytyped.runtime.TopLevel
 import typings.plottable.buildSrcComponentsComponentMod.Component
-import typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode
-import typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.PIXEL
-import typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.VALUE
 import typings.plottable.buildSrcCoreInterfacesMod.Bounds
 import typings.plottable.buildSrcCoreInterfacesMod.SimpleSelection
 import typings.plottable.buildSrcScalesQuantitativeScaleMod.QuantitativeScale

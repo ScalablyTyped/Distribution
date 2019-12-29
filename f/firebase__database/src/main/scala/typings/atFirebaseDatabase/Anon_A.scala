@@ -27,7 +27,7 @@ trait Anon_A extends js.Object {
     /* path */ Path, 
     typings.atFirebaseDatabase.distSrcApiReferenceMod.Reference
   ] = js.native
-  var ServerValue: Anon_TIMESTAMP = js.native
+  var ServerValue: Anon_IncrementTIMESTAMP = js.native
   var TEST_ACCESS: TypeofTEST_ACCESS = js.native
   def enableLogging(): Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = js.native

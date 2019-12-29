@@ -8,7 +8,7 @@ trait LoggerInterface extends js.Object {
   def debug(args: js.Any*): LoggerInterface
   def error(args: js.Any*): LoggerInterface
   def info(args: js.Any*): LoggerInterface
-  def level(`_`: Double): Double | LoggerInterface
+  def level(_underscore: Double): Double | LoggerInterface
   def warn(args: js.Any*): LoggerInterface
 }
 

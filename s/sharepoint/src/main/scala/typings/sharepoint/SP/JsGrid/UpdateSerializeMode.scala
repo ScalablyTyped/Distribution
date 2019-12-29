@@ -1,11 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.JsGrid.UpdateSerializeMode.Cancel
-import typings.sharepoint.SP.JsGrid.UpdateSerializeMode.Default
-import typings.sharepoint.SP.JsGrid.UpdateSerializeMode.PropBoth
-import typings.sharepoint.SP.JsGrid.UpdateSerializeMode.PropDataOnly
-import typings.sharepoint.SP.JsGrid.UpdateSerializeMode.PropLocalizedOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

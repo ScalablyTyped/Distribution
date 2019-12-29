@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,8 @@ trait workers extends js.Object {
     * local | The module is loaded in the main thread. Use this strategy if when using the worker framework API while disabling the use of workers.
     *
     */
-  def open(modulePath: String): IPromise[Connection] = js.native
-  def open(modulePath: String, options: workersOpenOptions): IPromise[Connection] = js.native
+  def open(modulePath: String): js.Promise[Connection] = js.native
+  def open(modulePath: String, options: workersOpenOptions): js.Promise[Connection] = js.native
 }
 
 @JSGlobal("__esri.workers")

@@ -43,7 +43,7 @@ object Record extends js.Object {
   /** [Method] Get the current class name in string format
   		* @returns String className
   		*/
-  def getName(): java.lang.String = js.native
+  def getName(): String = js.native
   /** [Method] Asynchronously loads a model instance by id
   		* @param id Number The id of the model to load
   		* @param config Object Config object containing fields:

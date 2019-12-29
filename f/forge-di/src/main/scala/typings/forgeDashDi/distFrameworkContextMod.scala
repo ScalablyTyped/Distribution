@@ -1,6 +1,5 @@
 package typings.forgeDashDi
 
-import typings.forgeDashDi.distFrameworkContextMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

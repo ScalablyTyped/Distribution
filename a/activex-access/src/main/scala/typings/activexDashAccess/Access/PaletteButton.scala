@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.PaletteButton")
 @js.native
 class PaletteButton protected () extends js.Object {
-  var `Access.PaletteButton_typekey`: PaletteButton = js.native
+  @JSName("Access.PaletteButton_typekey")
+  var AccessDotPaletteButton_typekey: PaletteButton = js.native
   var AddColon: Boolean = js.native
   var AfterUpdate: String = js.native
   var AfterUpdateMacro: String = js.native

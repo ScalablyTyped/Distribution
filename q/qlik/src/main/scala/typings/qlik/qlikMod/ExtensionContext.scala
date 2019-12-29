@@ -23,7 +23,6 @@ trait ExtensionContext extends js.Object {
   var selectionsEnabled: Boolean = js.native
   // TODO: options: ExtensionOptions;
   def paint(
-    `this`: ExtensionContext,
     $element: js.UndefOr[JQuery[HTMLElement]],
     layout: js.UndefOr[Layout],
     qDimensionInfo: js.UndefOr[NxDimensionInfo],

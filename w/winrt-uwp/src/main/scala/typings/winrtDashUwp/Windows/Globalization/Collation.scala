@@ -4,7 +4,6 @@ import typings.std.Array
 import typings.winrtDashUwp.Anon_Index
 import typings.winrtDashUwp.Anon_ItemsReturnValueCharacterGrouping
 import typings.winrtDashUwp.Windows.Foundation.Collections.IIterator
-import typings.winrtDashUwp.Windows.Globalization.Collation.CharacterGrouping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

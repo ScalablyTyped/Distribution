@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterStatusKind.extended
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterStatusKind.off
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterStatusKind.offOrOffline
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterStatusKind.offline
-import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterStatusKind.online
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.trustedDashTypes.trustedDashTypesMod._Global_
 
-import typings.trustedDashTypes.trustedDashTypesNumbers.`true`
+import typings.trustedDashTypes.trustedDashTypesBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

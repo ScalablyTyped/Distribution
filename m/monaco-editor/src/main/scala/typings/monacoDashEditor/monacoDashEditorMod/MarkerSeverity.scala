@@ -1,10 +1,6 @@
 package typings.monacoDashEditor.monacoDashEditorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.monacoDashEditor.monacoDashEditorMod.MarkerSeverity.Error
-import typings.monacoDashEditor.monacoDashEditorMod.MarkerSeverity.Hint
-import typings.monacoDashEditor.monacoDashEditorMod.MarkerSeverity.Info
-import typings.monacoDashEditor.monacoDashEditorMod.MarkerSeverity.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

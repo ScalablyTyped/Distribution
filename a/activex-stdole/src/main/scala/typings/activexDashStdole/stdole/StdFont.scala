@@ -15,6 +15,7 @@ class StdFont protected () extends js.Object {
   val Strikethrough: Boolean = js.native
   val Underline: Boolean = js.native
   val Weight: Double = js.native
-  var `stdole.StdFont_typekey`: StdFont = js.native
+  @JSName("stdole.StdFont_typekey")
+  var stdoleDotStdFont_typekey: StdFont = js.native
 }
 

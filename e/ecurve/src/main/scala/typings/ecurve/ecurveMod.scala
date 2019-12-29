@@ -1,8 +1,6 @@
 package typings.ecurve
 
 import typings.bigi.bigiMod.^
-import typings.ecurve.ecurveMod.Curve
-import typings.ecurve.ecurveMod.Point
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

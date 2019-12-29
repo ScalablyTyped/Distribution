@@ -1,7 +1,5 @@
 package typings.typescriptDashCollections
 
-import typings.typescriptDashCollections.distLibUtilMod.ICompareFunction
-import typings.typescriptDashCollections.distLibUtilMod.IEqualsFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

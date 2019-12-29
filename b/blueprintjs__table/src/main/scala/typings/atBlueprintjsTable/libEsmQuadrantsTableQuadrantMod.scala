@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractComponent2
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
-import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.ITableQuadrantProps
-import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType
-import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.LEFT
-import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.MAIN
-import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.TOP
-import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.TOP_LEFT
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.EventHandler
 import typings.react.reactMod.UIEvent

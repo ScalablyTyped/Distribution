@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 class Workspace protected () extends js.Object {
   @JSName("Connections")
   val Connections_Original: Connections = js.native
-  var `DAO.Workspace_typekey`: Workspace = js.native
+  @JSName("DAO.Workspace_typekey")
+  var DAODotWorkspace_typekey: Workspace = js.native
   @JSName("Databases")
   val Databases_Original: Databases = js.native
   var DefaultCursorDriver: Double = js.native

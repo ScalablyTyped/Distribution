@@ -16,7 +16,7 @@ trait TooltipChangeEventArgs extends js.Object {
   var isInteraction: js.UndefOr[Boolean] = js.undefined
   /** returns the slider model.
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.Slider.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns current handle number or index
     */
   var sliderIndex: js.UndefOr[Double] = js.undefined
@@ -34,7 +34,7 @@ object TooltipChangeEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    model: typings.ejDotWebDotAll.ej.Slider.Model = null,
+    model: Model = null,
     sliderIndex: Int | Double = null,
     `type`: String = null,
     value: Int | Double = null

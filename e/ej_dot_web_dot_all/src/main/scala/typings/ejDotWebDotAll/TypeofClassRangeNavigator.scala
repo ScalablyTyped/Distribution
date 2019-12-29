@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassRangeNavigator
-  extends Instantiable2[
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), RangeNavigator]
+     with Instantiable2[
       (/* element */ Element) | (/* element */ JQuery), 
       /* options */ Model, 
       RangeNavigator
-    ]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), RangeNavigator] {
+    ] {
   var Locale: js.Any = js.native
   var fn: RangeNavigator = js.native
 }

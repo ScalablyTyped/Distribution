@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object parse5DashHtmlparser2DashTreeDashAdapterStrings {
   @js.native
-  sealed trait `!doctype` extends js.Object
+  sealed trait Exclamationmarkdoctype extends js.Object
   
   @js.native
   sealed trait comment extends js.Object
@@ -21,7 +21,7 @@ object parse5DashHtmlparser2DashTreeDashAdapterStrings {
   sealed trait text extends js.Object
   
   @scala.inline
-  def `!doctype`: `!doctype` = "!doctype".asInstanceOf[`!doctype`]
+  def Exclamationmarkdoctype: Exclamationmarkdoctype = "!doctype".asInstanceOf[Exclamationmarkdoctype]
   @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
   @scala.inline

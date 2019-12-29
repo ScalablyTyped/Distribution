@@ -1,7 +1,6 @@
 package typings.eslintDashVisitorDashKeys
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.eslintDashVisitorDashKeys.eslintDashVisitorDashKeysMod.VisitorKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

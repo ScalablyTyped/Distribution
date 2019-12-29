@@ -1,18 +1,6 @@
 package typings.winrt.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.all
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.delegate
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.enum
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.event
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.field
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.interface
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.interfaceImpl
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.method
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.parameter
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.property
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.runtimeClass
-import typings.winrt.Windows.Foundation.Metadata.AttributeTargets.struct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

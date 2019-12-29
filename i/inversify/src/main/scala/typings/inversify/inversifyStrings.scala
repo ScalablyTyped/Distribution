@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 
 object inversifyStrings {
   @js.native
-  sealed trait `Ambiguous match found for serviceIdentifier:` extends js.Object
+  sealed trait `Ambiguous match found for serviceIdentifierColon` extends js.Object
   
   @js.native
-  sealed trait `Cannot apply @injectable decorator multiple timesDOT` extends js.Object
+  sealed trait `Cannot apply @injectable decorator multiple timesDot` extends js.Object
   
   @js.native
   sealed trait `Cannot apply @postConstruct decorator multiple times in the same class` extends js.Object
   
   @js.native
-  sealed trait `Circular dependency found:` extends js.Object
+  sealed trait `Circular dependency foundColon` extends js.Object
   
   @js.native
   sealed trait ClassProperty extends TargetType
@@ -33,7 +33,7 @@ object inversifyStrings {
   sealed trait ConstructorArgument extends TargetType
   
   @js.native
-  sealed trait `Could not unbind serviceIdentifier:` extends js.Object
+  sealed trait `Could not unbind serviceIdentifierColon` extends js.Object
   
   @js.native
   sealed trait DynamicValue extends BindingType
@@ -51,10 +51,10 @@ object inversifyStrings {
   sealed trait Invalid extends BindingType
   
   @js.native
-  sealed trait `Invalid binding type:` extends js.Object
+  sealed trait `Invalid binding typeColon` extends js.Object
   
   @js.native
-  sealed trait `Invalid return type in middlewareDOT Middleware must return!` extends js.Object
+  sealed trait `Invalid return type in middlewareDot Middleware must returnExclamationmark` extends js.Object
   
   @js.native
   sealed trait `Key Not Found` extends js.Object
@@ -63,22 +63,22 @@ object inversifyStrings {
   sealed trait `Maximum call stack size exceeded` extends js.Object
   
   @js.native
-  sealed trait `Metadata key was used more than once in a parameter:` extends js.Object
+  sealed trait `Metadata key was used more than once in a parameterColon` extends js.Object
   
   @js.native
-  sealed trait `Missing required @inject or @multiInject annotation in:` extends js.Object
+  sealed trait `Missing required @inject or @multiInject annotation inColon` extends js.Object
   
   @js.native
-  sealed trait `Missing required @injectable annotation in:` extends js.Object
+  sealed trait `Missing required @injectable annotation inColon` extends js.Object
   
   @js.native
   sealed trait `NULL argument` extends js.Object
   
   @js.native
-  sealed trait `No matching bindings found for serviceIdentifier:` extends js.Object
+  sealed trait `No matching bindings found for serviceIdentifierColon` extends js.Object
   
   @js.native
-  sealed trait `No snapshot available to restoreDOT` extends js.Object
+  sealed trait `No snapshot available to restoreDot` extends js.Object
   
   @js.native
   sealed trait Provider extends BindingType
@@ -90,31 +90,31 @@ object inversifyStrings {
   sealed trait Singleton extends BindingScope
   
   @js.native
-  sealed trait `Sorry, this feature is not fully implemented yetDOT` extends js.Object
+  sealed trait `SorryComma this feature is not fully implemented yetDot` extends js.Object
   
   @js.native
   sealed trait Transient extends BindingScope
   
   @js.native
-  sealed trait `Value provided to function binding must be a function!` extends js.Object
+  sealed trait `Value provided to function binding must be a functionExclamationmark` extends js.Object
   
   @js.native
   sealed trait Variable extends TargetType
   
   @js.native
-  sealed trait `design:paramtypes` extends js.Object
+  sealed trait designColonparamtypes extends js.Object
   
   @js.native
   sealed trait inject extends js.Object
   
   @js.native
-  sealed trait `inversify:paramtypes` extends js.Object
+  sealed trait inversifyColonparamtypes extends js.Object
   
   @js.native
-  sealed trait `inversify:tagged` extends js.Object
+  sealed trait inversifyColontagged extends js.Object
   
   @js.native
-  sealed trait `inversify:tagged_props` extends js.Object
+  sealed trait inversifyColontagged_props extends js.Object
   
   @js.native
   sealed trait multi_inject extends js.Object
@@ -135,13 +135,13 @@ object inversifyStrings {
   sealed trait unmanaged extends js.Object
   
   @scala.inline
-  def `Ambiguous match found for serviceIdentifier:`: `Ambiguous match found for serviceIdentifier:` = "Ambiguous match found for serviceIdentifier:".asInstanceOf[`Ambiguous match found for serviceIdentifier:`]
+  def `Ambiguous match found for serviceIdentifierColon`: `Ambiguous match found for serviceIdentifierColon` = "Ambiguous match found for serviceIdentifier:".asInstanceOf[`Ambiguous match found for serviceIdentifierColon`]
   @scala.inline
-  def `Cannot apply @injectable decorator multiple timesDOT`: `Cannot apply @injectable decorator multiple timesDOT` = "Cannot apply @injectable decorator multiple times.".asInstanceOf[`Cannot apply @injectable decorator multiple timesDOT`]
+  def `Cannot apply @injectable decorator multiple timesDot`: `Cannot apply @injectable decorator multiple timesDot` = "Cannot apply @injectable decorator multiple times.".asInstanceOf[`Cannot apply @injectable decorator multiple timesDot`]
   @scala.inline
   def `Cannot apply @postConstruct decorator multiple times in the same class`: `Cannot apply @postConstruct decorator multiple times in the same class` = "Cannot apply @postConstruct decorator multiple times in the same class".asInstanceOf[`Cannot apply @postConstruct decorator multiple times in the same class`]
   @scala.inline
-  def `Circular dependency found:`: `Circular dependency found:` = "Circular dependency found:".asInstanceOf[`Circular dependency found:`]
+  def `Circular dependency foundColon`: `Circular dependency foundColon` = "Circular dependency found:".asInstanceOf[`Circular dependency foundColon`]
   @scala.inline
   def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
   @scala.inline
@@ -151,7 +151,7 @@ object inversifyStrings {
   @scala.inline
   def ConstructorArgument: ConstructorArgument = "ConstructorArgument".asInstanceOf[ConstructorArgument]
   @scala.inline
-  def `Could not unbind serviceIdentifier:`: `Could not unbind serviceIdentifier:` = "Could not unbind serviceIdentifier:".asInstanceOf[`Could not unbind serviceIdentifier:`]
+  def `Could not unbind serviceIdentifierColon`: `Could not unbind serviceIdentifierColon` = "Could not unbind serviceIdentifier:".asInstanceOf[`Could not unbind serviceIdentifierColon`]
   @scala.inline
   def DynamicValue: DynamicValue = "DynamicValue".asInstanceOf[DynamicValue]
   @scala.inline
@@ -163,25 +163,25 @@ object inversifyStrings {
   @scala.inline
   def Invalid: Invalid = "Invalid".asInstanceOf[Invalid]
   @scala.inline
-  def `Invalid binding type:`: `Invalid binding type:` = "Invalid binding type:".asInstanceOf[`Invalid binding type:`]
+  def `Invalid binding typeColon`: `Invalid binding typeColon` = "Invalid binding type:".asInstanceOf[`Invalid binding typeColon`]
   @scala.inline
-  def `Invalid return type in middlewareDOT Middleware must return!`: `Invalid return type in middlewareDOT Middleware must return!` = "Invalid return type in middleware. Middleware must return!".asInstanceOf[`Invalid return type in middlewareDOT Middleware must return!`]
+  def `Invalid return type in middlewareDot Middleware must returnExclamationmark`: `Invalid return type in middlewareDot Middleware must returnExclamationmark` = "Invalid return type in middleware. Middleware must return!".asInstanceOf[`Invalid return type in middlewareDot Middleware must returnExclamationmark`]
   @scala.inline
   def `Key Not Found`: `Key Not Found` = "Key Not Found".asInstanceOf[`Key Not Found`]
   @scala.inline
   def `Maximum call stack size exceeded`: `Maximum call stack size exceeded` = "Maximum call stack size exceeded".asInstanceOf[`Maximum call stack size exceeded`]
   @scala.inline
-  def `Metadata key was used more than once in a parameter:`: `Metadata key was used more than once in a parameter:` = "Metadata key was used more than once in a parameter:".asInstanceOf[`Metadata key was used more than once in a parameter:`]
+  def `Metadata key was used more than once in a parameterColon`: `Metadata key was used more than once in a parameterColon` = "Metadata key was used more than once in a parameter:".asInstanceOf[`Metadata key was used more than once in a parameterColon`]
   @scala.inline
-  def `Missing required @inject or @multiInject annotation in:`: `Missing required @inject or @multiInject annotation in:` = "Missing required @inject or @multiInject annotation in:".asInstanceOf[`Missing required @inject or @multiInject annotation in:`]
+  def `Missing required @inject or @multiInject annotation inColon`: `Missing required @inject or @multiInject annotation inColon` = "Missing required @inject or @multiInject annotation in:".asInstanceOf[`Missing required @inject or @multiInject annotation inColon`]
   @scala.inline
-  def `Missing required @injectable annotation in:`: `Missing required @injectable annotation in:` = "Missing required @injectable annotation in:".asInstanceOf[`Missing required @injectable annotation in:`]
+  def `Missing required @injectable annotation inColon`: `Missing required @injectable annotation inColon` = "Missing required @injectable annotation in:".asInstanceOf[`Missing required @injectable annotation inColon`]
   @scala.inline
   def `NULL argument`: `NULL argument` = "NULL argument".asInstanceOf[`NULL argument`]
   @scala.inline
-  def `No matching bindings found for serviceIdentifier:`: `No matching bindings found for serviceIdentifier:` = "No matching bindings found for serviceIdentifier:".asInstanceOf[`No matching bindings found for serviceIdentifier:`]
+  def `No matching bindings found for serviceIdentifierColon`: `No matching bindings found for serviceIdentifierColon` = "No matching bindings found for serviceIdentifier:".asInstanceOf[`No matching bindings found for serviceIdentifierColon`]
   @scala.inline
-  def `No snapshot available to restoreDOT`: `No snapshot available to restoreDOT` = "No snapshot available to restore.".asInstanceOf[`No snapshot available to restoreDOT`]
+  def `No snapshot available to restoreDot`: `No snapshot available to restoreDot` = "No snapshot available to restore.".asInstanceOf[`No snapshot available to restoreDot`]
   @scala.inline
   def Provider: Provider = "Provider".asInstanceOf[Provider]
   @scala.inline
@@ -189,23 +189,23 @@ object inversifyStrings {
   @scala.inline
   def Singleton: Singleton = "Singleton".asInstanceOf[Singleton]
   @scala.inline
-  def `Sorry, this feature is not fully implemented yetDOT`: `Sorry, this feature is not fully implemented yetDOT` = "Sorry, this feature is not fully implemented yet.".asInstanceOf[`Sorry, this feature is not fully implemented yetDOT`]
+  def `SorryComma this feature is not fully implemented yetDot`: `SorryComma this feature is not fully implemented yetDot` = "Sorry, this feature is not fully implemented yet.".asInstanceOf[`SorryComma this feature is not fully implemented yetDot`]
   @scala.inline
   def Transient: Transient = "Transient".asInstanceOf[Transient]
   @scala.inline
-  def `Value provided to function binding must be a function!`: `Value provided to function binding must be a function!` = "Value provided to function binding must be a function!".asInstanceOf[`Value provided to function binding must be a function!`]
+  def `Value provided to function binding must be a functionExclamationmark`: `Value provided to function binding must be a functionExclamationmark` = "Value provided to function binding must be a function!".asInstanceOf[`Value provided to function binding must be a functionExclamationmark`]
   @scala.inline
   def Variable: Variable = "Variable".asInstanceOf[Variable]
   @scala.inline
-  def `design:paramtypes`: `design:paramtypes` = "design:paramtypes".asInstanceOf[`design:paramtypes`]
+  def designColonparamtypes: designColonparamtypes = "design:paramtypes".asInstanceOf[designColonparamtypes]
   @scala.inline
   def inject: inject = "inject".asInstanceOf[inject]
   @scala.inline
-  def `inversify:paramtypes`: `inversify:paramtypes` = "inversify:paramtypes".asInstanceOf[`inversify:paramtypes`]
+  def inversifyColonparamtypes: inversifyColonparamtypes = "inversify:paramtypes".asInstanceOf[inversifyColonparamtypes]
   @scala.inline
-  def `inversify:tagged`: `inversify:tagged` = "inversify:tagged".asInstanceOf[`inversify:tagged`]
+  def inversifyColontagged: inversifyColontagged = "inversify:tagged".asInstanceOf[inversifyColontagged]
   @scala.inline
-  def `inversify:tagged_props`: `inversify:tagged_props` = "inversify:tagged_props".asInstanceOf[`inversify:tagged_props`]
+  def inversifyColontagged_props: inversifyColontagged_props = "inversify:tagged_props".asInstanceOf[inversifyColontagged_props]
   @scala.inline
   def multi_inject: multi_inject = "multi_inject".asInstanceOf[multi_inject]
   @scala.inline

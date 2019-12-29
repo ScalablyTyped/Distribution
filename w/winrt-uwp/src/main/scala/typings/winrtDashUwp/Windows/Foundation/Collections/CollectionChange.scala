@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Foundation.Collections
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Foundation.Collections.CollectionChange.itemChanged
-import typings.winrtDashUwp.Windows.Foundation.Collections.CollectionChange.itemInserted
-import typings.winrtDashUwp.Windows.Foundation.Collections.CollectionChange.itemRemoved
-import typings.winrtDashUwp.Windows.Foundation.Collections.CollectionChange.reset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

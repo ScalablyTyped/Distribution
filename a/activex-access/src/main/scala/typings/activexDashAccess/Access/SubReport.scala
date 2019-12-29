@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.SubReport")
 @js.native
 class SubReport protected () extends js.Object {
-  var `Access.SubReport_typekey`: SubReport = js.native
+  @JSName("Access.SubReport_typekey")
+  var AccessDotSubReport_typekey: SubReport = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   val Form: typings.activexDashAccess.Access.Form = js.native
   val Parent: js.Any = js.native

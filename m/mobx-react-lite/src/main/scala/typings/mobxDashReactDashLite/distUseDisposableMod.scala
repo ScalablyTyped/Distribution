@@ -1,6 +1,5 @@
 package typings.mobxDashReactDashLite
 
-import typings.mobxDashReactDashLite.distUseDisposableMod.TDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

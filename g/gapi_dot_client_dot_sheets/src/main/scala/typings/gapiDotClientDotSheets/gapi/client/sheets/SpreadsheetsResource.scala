@@ -1,17 +1,20 @@
 package typings.gapiDotClientDotSheets.gapi.client.sheets
 
+import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallback
 import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsIncludeGridData
-import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId
 import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType
+import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadTypeUploadprotocol
 import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType
+import typings.gapiDotClientDotSheets.Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserUploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpreadsheetsResource extends js.Object {
-  var developerMetadata: DeveloperMetadataResource
-  var sheets: SheetsResource
-  var values: ValuesResource
+  var developerMetadata: DeveloperMetadataResource = js.native
+  var sheets: SheetsResource = js.native
+  var values: ValuesResource = js.native
   /**
     * Applies one or more updates to the spreadsheet.
     *
@@ -33,9 +36,16 @@ trait SpreadsheetsResource extends js.Object {
     * collaborator changes. If there are no collaborators, the spreadsheet
     * should reflect your changes.
     */
-  def batchUpdate(request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId): typings.gapiDotClient.gapi.client.Request[BatchUpdateSpreadsheetResponse]
+  def batchUpdate(
+    request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType
+  ): typings.gapiDotClient.gapi.client.Request[BatchUpdateSpreadsheetResponse] = js.native
+  def batchUpdate(request: Anon_AccesstokenAltCallback, body: BatchUpdateSpreadsheetRequest): typings.gapiDotClient.gapi.client.Request[BatchUpdateSpreadsheetResponse] = js.native
   /** Creates a spreadsheet, returning the newly created spreadsheet. */
-  def create(request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType): typings.gapiDotClient.gapi.client.Request[Spreadsheet]
+  def create(request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType): typings.gapiDotClient.gapi.client.Request[Spreadsheet] = js.native
+  def create(
+    request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserUploadType,
+    body: Spreadsheet
+  ): typings.gapiDotClient.gapi.client.Request[Spreadsheet] = js.native
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -59,7 +69,7 @@ trait SpreadsheetsResource extends js.Object {
     * return only the portions of the spreadsheet that intersect the requested
     * ranges. Ranges are specified using A1 notation.
     */
-  def get(request: Anon_AccesstokenAltCallbackFieldsIncludeGridData): typings.gapiDotClient.gapi.client.Request[Spreadsheet]
+  def get(request: Anon_AccesstokenAltCallbackFieldsIncludeGridData): typings.gapiDotClient.gapi.client.Request[Spreadsheet] = js.native
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -85,24 +95,8 @@ trait SpreadsheetsResource extends js.Object {
     * fields of the spreadsheet that you want.
     */
   def getByDataFilter(
-    request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType
-  ): typings.gapiDotClient.gapi.client.Request[Spreadsheet]
-}
-
-object SpreadsheetsResource {
-  @scala.inline
-  def apply(
-    batchUpdate: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetId => typings.gapiDotClient.gapi.client.Request[BatchUpdateSpreadsheetResponse],
-    create: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceUploadType => typings.gapiDotClient.gapi.client.Request[Spreadsheet],
-    developerMetadata: DeveloperMetadataResource,
-    get: Anon_AccesstokenAltCallbackFieldsIncludeGridData => typings.gapiDotClient.gapi.client.Request[Spreadsheet],
-    getByDataFilter: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadType => typings.gapiDotClient.gapi.client.Request[Spreadsheet],
-    sheets: SheetsResource,
-    values: ValuesResource
-  ): SpreadsheetsResource = {
-    val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), developerMetadata = developerMetadata.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), getByDataFilter = js.Any.fromFunction1(getByDataFilter), sheets = sheets.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[SpreadsheetsResource]
-  }
+    request: Anon_AccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResourceSpreadsheetIdUploadTypeUploadprotocol
+  ): typings.gapiDotClient.gapi.client.Request[Spreadsheet] = js.native
+  def getByDataFilter(request: Anon_AccesstokenAltCallback, body: GetSpreadsheetByDataFilterRequest): typings.gapiDotClient.gapi.client.Request[Spreadsheet] = js.native
 }
 

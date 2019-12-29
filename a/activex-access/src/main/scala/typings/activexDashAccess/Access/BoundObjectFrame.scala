@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.BoundObjectFrame")
 @js.native
 class BoundObjectFrame protected () extends js.Object {
-  var `Access.BoundObjectFrame_typekey`: BoundObjectFrame = js.native
+  @JSName("Access.BoundObjectFrame_typekey")
+  var AccessDotBoundObjectFrame_typekey: BoundObjectFrame = js.native
   var Action: Double = js.native
   var AddColon: Boolean = js.native
   var AfterUpdate: String = js.native

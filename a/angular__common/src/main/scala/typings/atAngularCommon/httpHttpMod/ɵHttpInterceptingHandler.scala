@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/common/http/http", "ɵHttpInterceptingHandler")
+@JSImport("@angular/common/http/http", "\u0275HttpInterceptingHandler")
 @js.native
 class ɵHttpInterceptingHandler protected () extends HttpHandler {
   def this(backend: HttpBackend, injector: Injector) = this()

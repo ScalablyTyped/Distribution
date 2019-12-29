@@ -1,11 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration
-import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType
-import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.exchange
-import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.imap
-import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.pop
 import typings.winrtDashUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation

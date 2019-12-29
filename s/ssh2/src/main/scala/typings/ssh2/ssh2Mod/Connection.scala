@@ -1,16 +1,16 @@
 package typings.ssh2.ssh2Mod
 
 import typings.node.eventsMod.EventEmitter
-import typings.ssh2.ssh2Strings.`cancel-streamlocal-forward@opensshDOTcom`
+import typings.ssh2.ssh2Strings.`cancel-streamlocal-forward@opensshDotcom`
 import typings.ssh2.ssh2Strings.`cancel-tcpip-forward`
-import typings.ssh2.ssh2Strings.`streamlocal-forward@opensshDOTcom`
+import typings.ssh2.ssh2Strings.`streamlocal-forward@opensshDotcom`
 import typings.ssh2.ssh2Strings.`tcpip-forward`
 import typings.ssh2.ssh2Strings.authentication
 import typings.ssh2.ssh2Strings.close
 import typings.ssh2.ssh2Strings.continue
 import typings.ssh2.ssh2Strings.end
 import typings.ssh2.ssh2Strings.error
-import typings.ssh2.ssh2Strings.opensshDOTstreamlocal
+import typings.ssh2.ssh2Strings.opensshDotstreamlocal
 import typings.ssh2.ssh2Strings.ready
 import typings.ssh2.ssh2Strings.rekey
 import typings.ssh2.ssh2Strings.request
@@ -59,7 +59,7 @@ trait Connection extends EventEmitter {
     listener: js.Function4[
       (/* accept */ js.Function0[Unit]) | (/* accept */ js.Function1[/* chosenPort */ js.UndefOr[Double], Unit]), 
       /* reject */ js.Function0[Unit], 
-      `cancel-streamlocal-forward@opensshDOTcom` | `cancel-tcpip-forward` | `streamlocal-forward@opensshDOTcom` | `tcpip-forward`, 
+      `cancel-streamlocal-forward@opensshDotcom` | `cancel-tcpip-forward` | `streamlocal-forward@opensshDotcom` | `tcpip-forward`, 
       (/* info */ SocketBindInfo) | (/* info */ TcpipBindInfo), 
       Unit
     ]
@@ -95,7 +95,7 @@ trait Connection extends EventEmitter {
     */
   @JSName("on")
   def on_opensshstreamlocal(
-    event: opensshDOTstreamlocal,
+    event: opensshDotstreamlocal,
     listener: js.Function3[
       /* accept */ js.Function0[ServerChannel], 
       /* reject */ js.Function0[Boolean], 

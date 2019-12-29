@@ -44,7 +44,7 @@ object Analytics extends js.Object {
   		* @returns Object/Mixed
   		*/
   def getInitialConfig(): js.Any = js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  def getInitialConfig(name: String): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param instanceConfig Object
   		* @returns Object mixins The mixin prototypes as key - value pairs
@@ -55,7 +55,7 @@ object Analytics extends js.Object {
   		* @param accountID String Your Google Analytics account ID
   		*/
   def registerAccount(): Unit = js.native
-  def registerAccount(accountID: java.lang.String): Unit = js.native
+  def registerAccount(accountID: String): Unit = js.native
   /** [Method] Sets the value of accountID
   		* @param accountID Object The new value.
   		*/
@@ -74,6 +74,6 @@ object Analytics extends js.Object {
   		* @param config String The page you want to track (must start with a slash).
   		*/
   def trackPageview(): Unit = js.native
-  def trackPageview(config: java.lang.String): Unit = js.native
+  def trackPageview(config: String): Unit = js.native
 }
 

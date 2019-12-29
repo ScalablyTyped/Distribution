@@ -1,7 +1,6 @@
 package typings.node.streamMod
 
 import typings.node.Anon_Chunk
-import typings.node.Error
 import typings.node.NodeJS.WritableStream
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.drain
@@ -9,6 +8,7 @@ import typings.node.nodeStrings.error
 import typings.node.nodeStrings.finish
 import typings.node.nodeStrings.pipe
 import typings.node.nodeStrings.unpipe
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +27,7 @@ class Writable ()
     ]
   ] = js.native
   var destroyed: Boolean = js.native
+  val writableCorked: Double = js.native
   val writableEnded: Boolean = js.native
   val writableFinished: Boolean = js.native
   val writableHighWaterMark: Double = js.native
@@ -37,7 +38,7 @@ class Writable ()
   def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _write(
     chunk: js.Any,
-    encoding: java.lang.String,
+    encoding: String,
     callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
   /**
@@ -79,8 +80,8 @@ class Writable ()
   def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: js.Any, encoding: java.lang.String): Unit = js.native
-  def end(chunk: js.Any, encoding: java.lang.String, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: String): Unit = js.native
+  def end(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -141,15 +142,11 @@ class Writable ()
   def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  def setDefaultEncoding(encoding: java.lang.String): this.type = js.native
+  def setDefaultEncoding(encoding: String): this.type = js.native
   def uncork(): Unit = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(chunk: js.Any, encoding: java.lang.String): Boolean = js.native
-  def write(
-    chunk: js.Any,
-    encoding: java.lang.String,
-    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-  ): Boolean = js.native
+  def write(chunk: js.Any, encoding: String): Boolean = js.native
+  def write(chunk: js.Any, encoding: String, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
 

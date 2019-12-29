@@ -1,9 +1,6 @@
 package typings.cesium.cesiumMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cesium.cesiumMod.CullFace.BACK
-import typings.cesium.cesiumMod.CullFace.FRONT
-import typings.cesium.cesiumMod.CullFace.FRONT_AND_BACK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

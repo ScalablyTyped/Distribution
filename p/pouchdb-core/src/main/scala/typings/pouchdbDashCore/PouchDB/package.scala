@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PouchDB {
-  import typings.pouchdbDashCore.pouchdbDashCoreStrings.`This should be passed to PouchDBDOTplugin()`
+  import typings.pouchdbDashCore.pouchdbDashCoreStrings.`This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`
 
   /**
     * Pass this to `PouchDB.plugin()`.
     */
-  type Plugin = `This should be passed to PouchDBDOTplugin()`
+  type Plugin = `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`
 }

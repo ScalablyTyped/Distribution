@@ -1,7 +1,7 @@
 package typings.jquery.JQuery
 
-import typings.jquery.jqueryNumbers.`false`
-import typings.jquery.jqueryNumbers.`true`
+import typings.jquery.jqueryBooleans.`false`
+import typings.jquery.jqueryBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

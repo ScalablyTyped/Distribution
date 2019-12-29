@@ -49,7 +49,8 @@ class ShellBrowserWindow protected () extends js.Object {
   var RegisterAsDropTarget: Boolean = js.native
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
-  var `SHDocVw.ShellBrowserWindow_typekey`: ShellBrowserWindow = js.native
+  @JSName("SHDocVw.ShellBrowserWindow_typekey")
+  var SHDocVwDotShellBrowserWindow_typekey: ShellBrowserWindow = js.native
   /** Controls if any dialog boxes can be shown */
   var Silent: Boolean = js.native
   /** Turn on or off the statusbar. */

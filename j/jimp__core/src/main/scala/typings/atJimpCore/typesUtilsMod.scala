@@ -3,11 +3,6 @@ package typings.atJimpCore
 import typings.atJimpCore.typesEtcMod.Image
 import typings.atJimpCore.typesPluginsMod.JimpPlugin
 import typings.atJimpCore.typesPluginsMod.JimpType
-import typings.atJimpCore.typesUtilsMod.FunctionRet
-import typings.atJimpCore.typesUtilsMod.GetPluginFuncArrValues
-import typings.atJimpCore.typesUtilsMod.GetPluginVal
-import typings.atJimpCore.typesUtilsMod.UnionToIntersection
-import typings.atJimpCore.typesUtilsMod.WellFormedValues
 import typings.std.Exclude
 import typings.std.Pick
 import scala.scalajs.js

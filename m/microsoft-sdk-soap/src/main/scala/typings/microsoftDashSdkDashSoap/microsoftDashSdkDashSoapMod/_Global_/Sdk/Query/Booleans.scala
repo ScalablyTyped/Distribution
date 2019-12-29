@@ -12,19 +12,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Sdk.Query.Booleans")
 @js.native
 class Booleans protected () extends ValueBase {
-  def this(args: js.Array[scala.Boolean]) = this()
+  def this(args: js.Array[Boolean]) = this()
   /**
     * Returns the type of value with namespace prefix.
     */
-  def getType(): java.lang.String = js.native
+  def getType(): String = js.native
   /**
     * Returns an Sdk.Collection of boolean values.
     */
-  def getValues(): Collection[scala.Boolean] = js.native
+  def getValues(): Collection[Boolean] = js.native
   /**
     * Specifies a Boolean value to be compared in the query.
     * @param setValueArgs An array of boolean values.
     */
-  def setValues(setValueArgs: js.Array[scala.Boolean]): Unit = js.native
+  def setValues(setValueArgs: js.Array[Boolean]): Unit = js.native
 }
 

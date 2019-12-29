@@ -1,7 +1,5 @@
 package typings.xstate
 
-import typings.xstate.libMatchMod.StatePatternTuple
-import typings.xstate.libMatchMod.ValueFromStateGetter
 import typings.xstate.libStateMod.State
 import typings.xstate.libTypesMod.EventObject
 import typings.xstate.libTypesMod.StateValue

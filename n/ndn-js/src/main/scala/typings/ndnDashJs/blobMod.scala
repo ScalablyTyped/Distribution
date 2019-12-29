@@ -1,6 +1,5 @@
 package typings.ndnDashJs
 
-import typings.ndnDashJs.blobMod.Blob
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

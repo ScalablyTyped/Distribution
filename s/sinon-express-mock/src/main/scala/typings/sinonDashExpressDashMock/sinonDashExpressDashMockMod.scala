@@ -4,8 +4,6 @@ import typings.express.expressMod.Request
 import typings.express.expressMod.Response
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.sinon.sinonMod.SinonStub
-import typings.sinonDashExpressDashMock.sinonDashExpressDashMockMod.mockReq.MockReq
-import typings.sinonDashExpressDashMock.sinonDashExpressDashMockMod.mockRes.MockRes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

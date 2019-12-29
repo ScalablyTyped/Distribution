@@ -51,12 +51,13 @@ abstract class HttpTransferCodingHeaderValueCollection () extends Array[HttpTran
   @JSName("indexOf")
   def indexOf_Anon_Index(value: HttpTransferCodingHeaderValue): Anon_Index = js.native
   /**
-    * Determines whether an element is in the collection.
-    * @param item The item to find in the collection.
-    * @return true if the item was found in the collection; otherwise, false.
+    * Determines the index of a specific item in the collection.
+    * @param item The object to locate in the collection.
+    * @return The index of item if found in the collection; otherwise, –1.
     */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Boolean(item: HttpTransferCodingHeaderValue): Boolean = js.native
+  def indexOf_Double(item: HttpTransferCodingHeaderValue): Double = js.native
   /**
     * Inserts an HttpTransferCodingHeaderValue into the collection at the specified index.
     * @param index The zero-based index at which value should be inserted.

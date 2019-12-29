@@ -1,6 +1,7 @@
 package typings.node
 
 import typings.node.NodeJS.CallSite
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

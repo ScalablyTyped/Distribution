@@ -9,16 +9,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IXml
-  extends typings.extjs.Ext.data.writer.IWriter {
+trait IXml extends IWriter {
   /** [Config Option] (String) */
-  var defaultDocumentRoot: js.UndefOr[java.lang.String] = js.undefined
+  var defaultDocumentRoot: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var documentRoot: js.UndefOr[java.lang.String] = js.undefined
+  var documentRoot: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var header: js.UndefOr[java.lang.String] = js.undefined
+  var header: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var record: js.UndefOr[java.lang.String] = js.undefined
+  var record: js.UndefOr[String] = js.undefined
 }
 
 object IXml {
@@ -30,18 +29,18 @@ object IXml {
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
     config: js.Any = null,
-    dateFormat: java.lang.String = null,
-    defaultDocumentRoot: java.lang.String = null,
-    documentRoot: java.lang.String = null,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
+    dateFormat: String = null,
+    defaultDocumentRoot: String = null,
+    documentRoot: String = null,
+    extend: String = null,
+    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getRecordData: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _ = null,
-    header: java.lang.String = null,
+    header: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IXml = null,
     mixins: js.Any = null,
-    nameProperty: java.lang.String = null,
-    record: java.lang.String = null,
+    nameProperty: String = null,
+    record: String = null,
     requires: Array = null,
     self: IClass = null,
     singleton: js.UndefOr[Boolean] = js.undefined,

@@ -1,8 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.AggregationType.Daily
-import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.AggregationType.Hourly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

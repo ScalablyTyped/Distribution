@@ -1,5 +1,6 @@
 package typings.heremaps.H.map.layer
 
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.ICopyright
 import typings.heremaps.H.map.layer.Layer.Options
 import typings.heremaps.H.util.EventTarget
@@ -26,7 +27,7 @@ class Layer_ () extends EventTarget {
     * @param level {number} - the zoom level for which to retrieve the copyright information
     * @returns {Array<H.map.ICopyright>} - a list of copyright information objects for the provided area and zoom level
     */
-  def getCopyrights(bounds: typings.heremaps.H.geo.Rect, level: Double): js.Array[ICopyright] = js.native
+  def getCopyrights(bounds: Rect, level: Double): js.Array[ICopyright] = js.native
   /**
     * This method checks if a zoom level can be served by this layer.
     * @param zoomLevel {number} - the zoom level to check

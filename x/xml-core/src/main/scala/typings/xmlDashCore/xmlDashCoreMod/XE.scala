@@ -1,24 +1,6 @@
 package typings.xmlDashCore.xmlDashCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xmlDashCore.xmlDashCoreMod.XE.ALGORITHM_NOT_SUPPORTED
-import typings.xmlDashCore.xmlDashCoreMod.XE.ALGORITHM_WRONG_NAME
-import typings.xmlDashCore.xmlDashCoreMod.XE.ATTRIBUTE_MISSING
-import typings.xmlDashCore.xmlDashCoreMod.XE.COLLECTION_LIMIT
-import typings.xmlDashCore.xmlDashCoreMod.XE.CONVERTER_UNSUPPORTED
-import typings.xmlDashCore.xmlDashCoreMod.XE.CRYPTOGRAPHIC
-import typings.xmlDashCore.xmlDashCoreMod.XE.CRYPTOGRAPHIC_NO_MODULE
-import typings.xmlDashCore.xmlDashCoreMod.XE.CRYPTOGRAPHIC_UNKNOWN_TRANSFORM
-import typings.xmlDashCore.xmlDashCoreMod.XE.DECORATOR_NULL_PARAM
-import typings.xmlDashCore.xmlDashCoreMod.XE.ELEMENT_MALFORMED
-import typings.xmlDashCore.xmlDashCoreMod.XE.ELEMENT_MISSING
-import typings.xmlDashCore.xmlDashCoreMod.XE.METHOD_NOT_IMPLEMENTED
-import typings.xmlDashCore.xmlDashCoreMod.XE.METHOD_NOT_SUPPORTED
-import typings.xmlDashCore.xmlDashCoreMod.XE.NONE
-import typings.xmlDashCore.xmlDashCoreMod.XE.NULL_PARAM
-import typings.xmlDashCore.xmlDashCoreMod.XE.NULL_REFERENCE
-import typings.xmlDashCore.xmlDashCoreMod.XE.PARAM_REQUIRED
-import typings.xmlDashCore.xmlDashCoreMod.XE.XML_EXCEPTION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +22,9 @@ object XE extends js.Object {
   
   @js.native
   sealed trait COLLECTION_LIMIT extends XE
+  
+  @js.native
+  sealed trait CONTENT_MISSING extends XE
   
   @js.native
   sealed trait CONVERTER_UNSUPPORTED extends XE
@@ -85,10 +70,10 @@ object XE extends js.Object {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[XE with Double] = js.native
-  /* 15 */ @js.native
+  /* 16 */ @js.native
   object ALGORITHM_NOT_SUPPORTED extends TopLevel[ALGORITHM_NOT_SUPPORTED with Double]
   
-  /* 16 */ @js.native
+  /* 17 */ @js.native
   object ALGORITHM_WRONG_NAME extends TopLevel[ALGORITHM_WRONG_NAME with Double]
   
   /* 11 */ @js.native
@@ -97,16 +82,19 @@ object XE extends js.Object {
   /* 4 */ @js.native
   object COLLECTION_LIMIT extends TopLevel[COLLECTION_LIMIT with Double]
   
+  /* 12 */ @js.native
+  object CONTENT_MISSING extends TopLevel[CONTENT_MISSING with Double]
+  
   /* 8 */ @js.native
   object CONVERTER_UNSUPPORTED extends TopLevel[CONVERTER_UNSUPPORTED with Double]
   
-  /* 12 */ @js.native
+  /* 13 */ @js.native
   object CRYPTOGRAPHIC extends TopLevel[CRYPTOGRAPHIC with Double]
   
-  /* 13 */ @js.native
+  /* 14 */ @js.native
   object CRYPTOGRAPHIC_NO_MODULE extends TopLevel[CRYPTOGRAPHIC_NO_MODULE with Double]
   
-  /* 14 */ @js.native
+  /* 15 */ @js.native
   object CRYPTOGRAPHIC_UNKNOWN_TRANSFORM extends TopLevel[CRYPTOGRAPHIC_UNKNOWN_TRANSFORM with Double]
   
   /* 3 */ @js.native
@@ -136,7 +124,7 @@ object XE extends js.Object {
   /* 7 */ @js.native
   object PARAM_REQUIRED extends TopLevel[PARAM_REQUIRED with Double]
   
-  /* 17 */ @js.native
+  /* 18 */ @js.native
   object XML_EXCEPTION extends TopLevel[XML_EXCEPTION with Double]
   
 }

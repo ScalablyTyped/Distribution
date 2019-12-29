@@ -1,11 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.formula
-import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.invalid
-import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.number
-import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.percent
-import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.percentile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

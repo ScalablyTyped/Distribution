@@ -3,7 +3,6 @@ package typings.plottable
 import typings.plottable.buildSrcComponentsComponentMod.Component
 import typings.plottable.buildSrcCoreInterfacesMod.Point
 import typings.plottable.buildSrcDispatchersDispatcherMod.Dispatcher
-import typings.plottable.buildSrcDispatchersMouseDispatcherMod.MouseCallback
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

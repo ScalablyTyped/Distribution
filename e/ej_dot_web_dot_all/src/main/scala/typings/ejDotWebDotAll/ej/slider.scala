@@ -1,10 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.slider.sliderType
-import typings.ejDotWebDotAll.ej.slider.sliderType.Default
-import typings.ejDotWebDotAll.ej.slider.sliderType.MinRange
-import typings.ejDotWebDotAll.ej.slider.sliderType.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

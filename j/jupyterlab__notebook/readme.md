@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__notebook
 
-Typings are for version 0.19.2
+Typings are for version 1.2.2
 
 ## Library description:
 JupyterLab - Notebook

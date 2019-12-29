@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Sunburst
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstClickAction.None
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstClickAction.ToggleSegmentSelection
-import typings.ejDotWebDotAll.ej.Sunburst.SunburstClickAction.ToggleSegmentVisibility
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

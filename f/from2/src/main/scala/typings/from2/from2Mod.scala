@@ -1,15 +1,6 @@
 package typings.from2
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.from2.from2Mod.Chunk
-import typings.from2.from2Mod.From2Ctor
-import typings.from2.from2Mod.NextCallback
-import typings.from2.from2Mod.NextObjectCallback
-import typings.from2.from2Mod.ObjectModeOptions
-import typings.from2.from2Mod.Options
-import typings.from2.from2Mod.ReadCallback
-import typings.from2.from2Mod.ReadInput
-import typings.from2.from2Mod.ReadObjectInput
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.ReadableOptions

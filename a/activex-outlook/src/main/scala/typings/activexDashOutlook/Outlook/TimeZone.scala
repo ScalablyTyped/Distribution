@@ -16,7 +16,8 @@ class TimeZone protected () extends js.Object {
   val DaylightDesignation: String = js.native
   val ID: String = js.native
   val Name: String = js.native
-  var `Outlook.TimeZone_typekey`: TimeZone = js.native
+  @JSName("Outlook.TimeZone_typekey")
+  var OutlookDotTimeZone_typekey: TimeZone = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val StandardBias: Double = js.native

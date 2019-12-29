@@ -2,7 +2,6 @@ package typings.appDashBuilderDashLib
 
 import typings.appDashBuilderDashLib.outCoreMod.Target
 import typings.appDashBuilderDashLib.outOptionsMsiOptionsMod.MsiOptions
-import typings.appDashBuilderDashLib.outTargetsMsiTargetMod.MsiTarget
 import typings.appDashBuilderDashLib.outWinPackagerMod.WinPackager
 import scala.scalajs.js
 import scala.scalajs.js.`|`

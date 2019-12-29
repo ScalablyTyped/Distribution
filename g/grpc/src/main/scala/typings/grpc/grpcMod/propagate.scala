@@ -1,11 +1,6 @@
 package typings.grpc.grpcMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grpc.grpcMod.propagate.CANCELLATION
-import typings.grpc.grpcMod.propagate.CENSUS_STATS_CONTEXT
-import typings.grpc.grpcMod.propagate.CENSUS_TRACING_CONTEXT
-import typings.grpc.grpcMod.propagate.DEADLINE
-import typings.grpc.grpcMod.propagate.DEFAULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

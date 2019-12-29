@@ -1,10 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageOperation.copy
-import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageOperation.link
-import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageOperation.move
-import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageOperation.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

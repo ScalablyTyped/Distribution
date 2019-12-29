@@ -1,17 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.InputType.Date
-import typings.openui5.sap.m.InputType.Datetime
-import typings.openui5.sap.m.InputType.DatetimeLocale
-import typings.openui5.sap.m.InputType.Email
-import typings.openui5.sap.m.InputType.Month
-import typings.openui5.sap.m.InputType.Number
-import typings.openui5.sap.m.InputType.Password
-import typings.openui5.sap.m.InputType.Tel
-import typings.openui5.sap.m.InputType.Time
-import typings.openui5.sap.m.InputType.Url
-import typings.openui5.sap.m.InputType.Week
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

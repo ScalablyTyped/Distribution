@@ -1,12 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Approved
-import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Broken
-import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.NotApplicable
-import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Queued
-import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Rejected
-import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Running
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

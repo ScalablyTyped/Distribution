@@ -57,7 +57,8 @@ class PivotTable protected () extends js.Object {
   var EnableWizard: Boolean = js.native
   var EnableWriteback: Boolean = js.native
   var ErrorString: String = js.native
-  var `Excel.PivotTable_typekey`: PivotTable = js.native
+  @JSName("Excel.PivotTable_typekey")
+  var ExcelDotPivotTable_typekey: PivotTable = js.native
   var FieldListSortAscending: Boolean = js.native
   var GrandTotalName: String = js.native
   var HasAutoFormat: Boolean = js.native

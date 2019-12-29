@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.SubtotalLocationType.atBottom
-import typings.officeDashJsDashPreview.Excel.SubtotalLocationType.atTop
-import typings.officeDashJsDashPreview.Excel.SubtotalLocationType.off
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

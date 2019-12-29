@@ -1,11 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.UI.Text.SelectionType.inlineShape
-import typings.winrt.Windows.UI.Text.SelectionType.insertionPoint
-import typings.winrt.Windows.UI.Text.SelectionType.none
-import typings.winrt.Windows.UI.Text.SelectionType.normal
-import typings.winrt.Windows.UI.Text.SelectionType.shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

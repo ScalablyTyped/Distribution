@@ -2,7 +2,6 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.srcCoreObject3DMod.Object3D
-import typings.three.srcMathBox3Mod.Box3
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathSphereMod.Sphere

@@ -17,8 +17,8 @@ package object datavisualization {
   type Map = Map_
   type Overview = Overview_
   type RangeNavigator = RangeNavigator_
-  type Sparkline = typings.ejDotWebDotAll.ej.datavisualization.Sparkline_
-  type SunburstChart = typings.ejDotWebDotAll.ej.datavisualization.SunburstChart_
+  type Sparkline = Sparkline_
+  type SunburstChart = SunburstChart_
   type SymbolPalette = SymbolPalette_
   type TreeMap = TreeMap_
 }

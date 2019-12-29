@@ -10,7 +10,8 @@ class MultiThreadedCalculation protected () extends js.Object {
   val Application: typings.activexDashExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   var Enabled: Boolean = js.native
-  var `Excel.MultiThreadedCalculation_typekey`: MultiThreadedCalculation = js.native
+  @JSName("Excel.MultiThreadedCalculation_typekey")
+  var ExcelDotMultiThreadedCalculation_typekey: MultiThreadedCalculation = js.native
   val Parent: js.Any = js.native
   var ThreadCount: Double = js.native
   var ThreadMode: XlThreadMode = js.native

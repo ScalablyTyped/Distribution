@@ -1,7 +1,6 @@
 package typings.ydnDashDb.ydn.db
 
 import typings.std.Error
-import typings.ydnDashDb.ydn.db.events.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

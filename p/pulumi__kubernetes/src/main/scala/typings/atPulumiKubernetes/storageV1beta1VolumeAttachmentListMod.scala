@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.storageV1beta1VolumeAttachmentListMod.VolumeAttachmentList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.storageDotk8sDotioSlashv1beta1
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.VolumeAttachment
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -38,7 +37,7 @@ object storageV1beta1VolumeAttachmentListMod extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: Output[`storageDOTk8sDOTio/v1beta1`] = js.native
+    val apiVersion: Output[storageDotk8sDotioSlashv1beta1] = js.native
     /**
       * Items is the list of VolumeAttachments
       */

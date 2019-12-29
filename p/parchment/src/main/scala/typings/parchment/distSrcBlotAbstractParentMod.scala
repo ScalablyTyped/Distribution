@@ -2,7 +2,6 @@ package typings.parchment
 
 import typings.parchment.distSrcBlotAbstractBlotMod.Blot
 import typings.parchment.distSrcBlotAbstractBlotMod.Parent
-import typings.parchment.distSrcBlotAbstractParentMod.ParentBlot
 import typings.parchment.distSrcRegistryMod.BlotConstructor
 import typings.std.HTMLElement
 import typings.std.Node

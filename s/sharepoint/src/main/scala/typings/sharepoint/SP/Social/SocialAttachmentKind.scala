@@ -1,9 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.Social.SocialAttachmentKind.document
-import typings.sharepoint.SP.Social.SocialAttachmentKind.image
-import typings.sharepoint.SP.Social.SocialAttachmentKind.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver", "ProposedFeatures")
 @js.native
 object ProposedFeatures extends js.Object {
-  val all: Features[`_`, `_`, `_`, `_`, `_`, `_`] = js.native
+  val all: Features[_underscore, _underscore, _underscore, _underscore, _underscore, _underscore] = js.native
 }
 

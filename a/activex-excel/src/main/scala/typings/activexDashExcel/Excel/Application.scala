@@ -1,12 +1,12 @@
 package typings.activexDashExcel.Excel
 
+import typings.activexDashExcel.activexDashExcelBooleans.`false`
+import typings.activexDashExcel.activexDashExcelBooleans.`true`
 import typings.activexDashExcel.activexDashExcelNumbers.`1`
 import typings.activexDashExcel.activexDashExcelNumbers.`2`
 import typings.activexDashExcel.activexDashExcelNumbers.`3`
 import typings.activexDashExcel.activexDashExcelNumbers.`4`
-import typings.activexDashExcel.activexDashExcelNumbers.`false`
-import typings.activexDashExcel.activexDashExcelNumbers.`true`
-import typings.activexDashExcel.activexDashExcelStrings.Empty
+import typings.activexDashExcel.activexDashExcelStrings._empty
 import typings.activexDashOffice.Office.COMAddIn
 import typings.activexDashOffice.Office.COMAddIns
 import typings.activexDashOffice.Office.CommandBar
@@ -136,11 +136,12 @@ class Application protected () extends js.Object {
   var EnableSound: Boolean = js.native
   var EnableTipWizard: Boolean = js.native
   val ErrorCheckingOptions: typings.activexDashExcel.Excel.ErrorCheckingOptions = js.native
-  var `Excel.Application_typekey`: typings.activexDashExcel.Excel.Application = js.native
   @JSName("Excel4IntlMacroSheets")
   val Excel4IntlMacroSheets_Original: Sheets[Sheet] = js.native
   @JSName("Excel4MacroSheets")
   val Excel4MacroSheets_Original: Sheets[Sheet] = js.native
+  @JSName("Excel.Application_typekey")
+  var ExcelDotApplication_typekey: typings.activexDashExcel.Excel.Application = js.native
   var ExtendList: Boolean = js.native
   var FeatureInstall: MsoFeatureInstall = js.native
   @JSName("FileExportConverters")
@@ -616,7 +617,7 @@ class Application protected () extends js.Object {
   def RecentFiles(Index: Double): RecentFile = js.native
   def RecordMacro(BasicCode: String): Unit = js.native
   /** This overload prevents recording */
-  def RecordMacro(BasicCode: Empty, XlmCode: Empty): Unit = js.native
+  def RecordMacro(BasicCode: _empty, XlmCode: _empty): Unit = js.native
   def RegisterXLL(Filename: String): Boolean = js.native
   def RegisteredFunctions(): SafeArray[_] | Null = js.native
   def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: String): SafeArray[_] | Null = js.native

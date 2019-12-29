@@ -1,6 +1,6 @@
 package typings.invariant.invariantMod
 
-import typings.invariant.invariantNumbers.`false`
+import typings.invariant.invariantBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

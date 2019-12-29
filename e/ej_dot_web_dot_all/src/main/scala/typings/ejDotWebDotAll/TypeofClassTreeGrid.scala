@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassTreeGrid
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, TreeGrid]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), TreeGrid] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), TreeGrid]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, TreeGrid] {
   var Locale: js.Any = js.native
   var fn: TreeGrid = js.native
 }

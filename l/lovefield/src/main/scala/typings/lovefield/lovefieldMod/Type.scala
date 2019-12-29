@@ -1,13 +1,6 @@
 package typings.lovefield.lovefieldMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.lovefield.lovefieldMod.Type.ARRAY_BUFFER
-import typings.lovefield.lovefieldMod.Type.BOOLEAN
-import typings.lovefield.lovefieldMod.Type.DATE_TIME
-import typings.lovefield.lovefieldMod.Type.INTEGER
-import typings.lovefield.lovefieldMod.Type.NUMBER
-import typings.lovefield.lovefieldMod.Type.OBJECT
-import typings.lovefield.lovefieldMod.Type.STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

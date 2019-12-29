@@ -1,6 +1,6 @@
 package typings.shelljs
 
-import typings.shelljs.shelljsNumbers.`false`
+import typings.shelljs.shelljsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

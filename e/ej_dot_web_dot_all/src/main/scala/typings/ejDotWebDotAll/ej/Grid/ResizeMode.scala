@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.Grid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Grid.ResizeMode.Control
-import typings.ejDotWebDotAll.ej.Grid.ResizeMode.NextColumn
-import typings.ejDotWebDotAll.ej.Grid.ResizeMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

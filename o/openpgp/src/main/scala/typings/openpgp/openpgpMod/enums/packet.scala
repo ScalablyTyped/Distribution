@@ -1,21 +1,6 @@
 package typings.openpgp.openpgpMod.enums
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openpgp.openpgpMod.enums.packet.compressed
-import typings.openpgp.openpgpMod.enums.packet.marker
-import typings.openpgp.openpgpMod.enums.packet.modificationDetectionCode
-import typings.openpgp.openpgpMod.enums.packet.onePassSignature
-import typings.openpgp.openpgpMod.enums.packet.publicKeyEncryptedSessionKey
-import typings.openpgp.openpgpMod.enums.packet.publicSubkey
-import typings.openpgp.openpgpMod.enums.packet.secretKey
-import typings.openpgp.openpgpMod.enums.packet.secretSubkey
-import typings.openpgp.openpgpMod.enums.packet.symEncryptedAEADProtected
-import typings.openpgp.openpgpMod.enums.packet.symEncryptedIntegrityProtected
-import typings.openpgp.openpgpMod.enums.packet.symEncryptedSessionKey
-import typings.openpgp.openpgpMod.enums.packet.symmetricallyEncrypted
-import typings.openpgp.openpgpMod.enums.packet.trust
-import typings.openpgp.openpgpMod.enums.packet.userAttribute
-import typings.openpgp.openpgpMod.enums.packet.userid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,79 +15,61 @@ sealed trait packet extends js.Object
 @js.native
 object packet extends js.Object {
   @js.native
-  sealed trait compressed
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait compressed extends packet
   
   @js.native
-  sealed trait literal
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait literal extends packet
   
   @js.native
-  sealed trait marker
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait marker extends packet
   
   @js.native
-  sealed trait modificationDetectionCode
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait modificationDetectionCode extends packet
   
   @js.native
-  sealed trait onePassSignature
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait onePassSignature extends packet
   
   @js.native
-  sealed trait publicKey
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait publicKey extends packet
   
   @js.native
-  sealed trait publicKeyEncryptedSessionKey
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait publicKeyEncryptedSessionKey extends packet
   
   @js.native
-  sealed trait publicSubkey
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait publicSubkey extends packet
   
   @js.native
-  sealed trait secretKey
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait secretKey extends packet
   
   @js.native
-  sealed trait secretSubkey
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait secretSubkey extends packet
   
   @js.native
-  sealed trait signature
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait signature extends packet
   
   @js.native
-  sealed trait symEncryptedAEADProtected
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait symEncryptedAEADProtected extends packet
   
   @js.native
-  sealed trait symEncryptedIntegrityProtected
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait symEncryptedIntegrityProtected extends packet
   
   @js.native
-  sealed trait symEncryptedSessionKey
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait symEncryptedSessionKey extends packet
   
   @js.native
-  sealed trait symmetricallyEncrypted
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait symmetricallyEncrypted extends packet
   
   @js.native
-  sealed trait trust
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait trust extends packet
   
   @js.native
-  sealed trait userAttribute
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait userAttribute extends packet
   
   @js.native
-  sealed trait userid
-    extends typings.openpgp.openpgpMod.enums.packet
+  sealed trait userid extends packet
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openpgp.openpgpMod.enums.packet with Double] = js.native
+  def apply(value: Double): js.UndefOr[packet with Double] = js.native
   /* 8 */ @js.native
   object compressed extends TopLevel[compressed with Double]
   

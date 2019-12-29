@@ -1,10 +1,6 @@
 package typings.winrt.Windows.Media.Capture
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.highDefinition
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.highestAvailable
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.lowDefinition
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.standardDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

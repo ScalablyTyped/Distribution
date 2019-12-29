@@ -1,7 +1,5 @@
 package typings.seleniumDashWebdriver
 
-import typings.seleniumDashWebdriver.safariMod.Driver
-import typings.seleniumDashWebdriver.safariMod.Options
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Capabilities
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebDriver
 import scala.scalajs.js
@@ -18,7 +16,16 @@ object safariMod extends js.Object {
   class Driver () extends WebDriver
   
   @js.native
-  class Options () extends Capabilities
+  class Options () extends Capabilities {
+    /**
+      * Instruct the SafariDriver to use the Safari Technology Preview if true.
+      * Otherwise, use the release version of Safari. Defaults to using the release version of Safari.
+      *
+      * @param {boolean} useTechnologyPreview
+      * @return {!Options} A self reference.
+      */
+    def setTechnologyPreview(useTechnologyPreview: Boolean): Options = js.native
+  }
   
   @js.native
   class Server () extends js.Object

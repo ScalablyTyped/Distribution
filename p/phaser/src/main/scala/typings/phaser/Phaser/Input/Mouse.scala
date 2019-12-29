@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Input
 
-import typings.phaser.Phaser.Input.Mouse.MouseManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

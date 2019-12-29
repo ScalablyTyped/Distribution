@@ -1,10 +1,6 @@
 package typings.atTanemSvgDashInjector
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts
-import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Always
-import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Never
-import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Once
 import typings.std.Element
 import typings.std.Error
 import scala.scalajs.js

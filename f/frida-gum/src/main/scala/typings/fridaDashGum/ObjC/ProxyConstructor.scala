@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ProxyConstructor
-  extends Instantiable2[
+  extends Instantiable1[(/* target */ NativePointer) | (/* target */ Object), ProxyInstance]
+     with Instantiable2[
       (/* target */ NativePointer) | (/* target */ Object), 
       /* data */ InstanceData, 
       ProxyInstance
     ]
-     with Instantiable1[(/* target */ NativePointer) | (/* target */ Object), ProxyInstance]
 

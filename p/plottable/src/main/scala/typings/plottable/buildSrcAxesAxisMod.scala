@@ -1,7 +1,6 @@
 package typings.plottable
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.plottable.buildSrcAxesAxisMod.AxisOrientation
 import typings.plottable.buildSrcComponentsComponentMod.Component
 import typings.plottable.buildSrcCoreFormattersMod.Formatter
 import typings.plottable.buildSrcCoreInterfacesMod.SimpleSelection

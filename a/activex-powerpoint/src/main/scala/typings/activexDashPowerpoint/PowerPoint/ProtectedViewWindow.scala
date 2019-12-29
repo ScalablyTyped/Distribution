@@ -14,7 +14,8 @@ class ProtectedViewWindow protected () extends js.Object {
   var Height: Double = js.native
   var Left: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.ProtectedViewWindow_typekey`: ProtectedViewWindow = js.native
+  @JSName("PowerPoint.ProtectedViewWindow_typekey")
+  var PowerPointDotProtectedViewWindow_typekey: ProtectedViewWindow = js.native
   val Presentation: typings.activexDashPowerpoint.PowerPoint.Presentation = js.native
   val SourceName: String = js.native
   val SourcePath: String = js.native

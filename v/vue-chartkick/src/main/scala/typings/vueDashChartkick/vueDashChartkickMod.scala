@@ -1,7 +1,6 @@
 package typings.vueDashChartkick
 
 import typings.vue.typesPluginMod.PluginObject
-import typings.vueDashChartkick.vueDashChartkickMod.VueChartkickPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

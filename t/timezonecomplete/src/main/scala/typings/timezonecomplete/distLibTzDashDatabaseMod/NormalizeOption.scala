@@ -1,8 +1,6 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.timezonecomplete.distLibTzDashDatabaseMod.NormalizeOption.Down
-import typings.timezonecomplete.distLibTzDashDatabaseMod.NormalizeOption.Up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

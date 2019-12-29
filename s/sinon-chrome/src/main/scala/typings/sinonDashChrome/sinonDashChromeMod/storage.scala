@@ -1,7 +1,6 @@
 package typings.sinonDashChrome.sinonDashChromeMod
 
 import typings.sinonDashChrome.sinonDashChromeMod.events.Event
-import typings.sinonDashChrome.sinonDashChromeMod.storage.StubbedStorageArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

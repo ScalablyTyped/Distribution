@@ -1,9 +1,6 @@
 package typings.aureliaDashBinding.aureliaDashBindingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.bubbling
-import typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.capturing
-import typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

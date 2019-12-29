@@ -7,8 +7,6 @@ import typings.algoliasearch.algoliasearchMod.MultiResponse
 import typings.algoliasearch.algoliasearchMod.QueryParameters
 import typings.algoliasearch.algoliasearchMod.SearchForFacetValues.Parameters
 import typings.algoliasearch.algoliasearchMod.SearchForFacetValues.Response
-import typings.algoliasearch.liteMod.Client
-import typings.algoliasearch.liteMod.Index
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

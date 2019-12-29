@@ -6,8 +6,6 @@ import typings.node.streamMod.Readable
 import typings.std.Date
 import typings.yauzl.yauzlMod.Options
 import typings.yauzl.yauzlMod.ZipFileOptions
-import typings.yauzlDashPromise.yauzlDashPromiseMod.Entry
-import typings.yauzlDashPromise.yauzlDashPromiseMod.ZipFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

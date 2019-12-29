@@ -2,9 +2,6 @@ package typings.phaser.Phaser.Input
 
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Game
-import typings.phaser.Phaser.Input.Keyboard.Key
-import typings.phaser.Phaser.Input.Keyboard.KeyCombo
-import typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.Input.Keyboard.CursorKeys
 import typings.phaser.Phaser.Types.Input.Keyboard.KeyComboConfig

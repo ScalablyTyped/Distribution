@@ -19,7 +19,8 @@ class FileSearch protected () extends js.Object {
   var LookIn: String = js.native
   var MatchAllWordForms: Boolean = js.native
   var MatchTextExactly: Boolean = js.native
-  var `Office.FileSearch_typekey`: FileSearch = js.native
+  @JSName("Office.FileSearch_typekey")
+  var OfficeDotFileSearch_typekey: FileSearch = js.native
   @JSName("PropertyTests")
   val PropertyTests_Original: PropertyTests = js.native
   @JSName("SearchFolders")

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
   var isFront: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[String | Double | ContentRenderer[_] | ReactElement] = js.undefined
+  var position: js.UndefOr[ReferenceLinePosition] = js.undefined
   var shape: js.UndefOr[
     (ContentRenderer[
       EventAttributes with (Partial[PresentationAttributes[Double | String, Double | String]]) with Anon_X1
@@ -36,6 +37,7 @@ object ReferenceLineProps {
     ifOverflow: IfOverflowType = null,
     isFront: js.UndefOr[Boolean] = js.undefined,
     label: String | Double | ContentRenderer[_] | ReactElement = null,
+    position: ReferenceLinePosition = null,
     shape: (ContentRenderer[
       EventAttributes with (Partial[PresentationAttributes[Double | String, Double | String]]) with Anon_X1
     ]) | ReactElement = null,
@@ -53,6 +55,7 @@ object ReferenceLineProps {
     if (ifOverflow != null) __obj.updateDynamic("ifOverflow")(ifOverflow.asInstanceOf[js.Any])
     if (!js.isUndefined(isFront)) __obj.updateDynamic("isFront")(isFront.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.reactDashScroll
 
 import typings.react.reactMod.Component
 import typings.react.reactMod.HTMLProps
-import typings.reactDashScroll.modulesComponentsButtonMod.ButtonProps
 import typings.reactDashScroll.modulesComponentsLinkMod.ReactScrollLinkProps
 import typings.std.HTMLButtonElement
 import scala.scalajs.js

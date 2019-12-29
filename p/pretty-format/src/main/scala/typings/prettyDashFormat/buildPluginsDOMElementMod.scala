@@ -1,6 +1,5 @@
 package typings.prettyDashFormat
 
-import typings.prettyDashFormat.buildPluginsDOMElementMod.HandledType
 import typings.prettyDashFormat.buildTypesMod.Config
 import typings.prettyDashFormat.buildTypesMod.NewPlugin
 import typings.prettyDashFormat.buildTypesMod.Printer

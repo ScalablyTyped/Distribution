@@ -1,7 +1,7 @@
 package typings.passportDashOauth2.passportDashOauth2Mod
 
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.passportDashOauth2.passportDashOauth2Numbers.`false`
+import typings.passportDashOauth2.passportDashOauth2Booleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

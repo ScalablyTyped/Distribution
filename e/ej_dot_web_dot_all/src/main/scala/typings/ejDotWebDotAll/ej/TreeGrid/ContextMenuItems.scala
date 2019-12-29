@@ -1,9 +1,6 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Add
-import typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Delete
-import typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Edit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

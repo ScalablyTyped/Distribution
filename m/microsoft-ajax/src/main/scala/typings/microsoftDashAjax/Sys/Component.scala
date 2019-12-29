@@ -57,7 +57,7 @@ class Component () extends js.Object {
     * @return
     *       The id
     */
-  def get_id(): java.lang.String = js.native
+  def get_id(): String = js.native
   /**
     * Gets a value indicating whether the current Component object is initialized.
     * @return
@@ -80,7 +80,7 @@ class Component () extends js.Object {
     * @param propertyName
     *               The name of the property that changed.
     */
-  def raisePropertyChanged(propertyName: java.lang.String): Unit = js.native
+  def raisePropertyChanged(propertyName: String): Unit = js.native
   /**
     * Raised when the dispose method is called for a component.
     */
@@ -93,7 +93,7 @@ class Component () extends js.Object {
     * Sets the ID of the current Component object.
     * @param value A string that contains the ID of the component.
     */
-  def set_id(value: java.lang.String): Unit = js.native
+  def set_id(value: String): Unit = js.native
   /**
     * Called by the endUpdate method as a placeholder for additional logic in derived classes.
     * Override the updated method in a derived class to add custom post-update logic.

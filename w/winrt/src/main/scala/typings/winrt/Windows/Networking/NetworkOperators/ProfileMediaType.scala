@@ -1,8 +1,6 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Networking.NetworkOperators.ProfileMediaType.wlan
-import typings.winrt.Windows.Networking.NetworkOperators.ProfileMediaType.wwan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

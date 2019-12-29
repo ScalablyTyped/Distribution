@@ -1,10 +1,6 @@
 package typings.typescript.typescriptMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.typescript.typescriptMod.OutliningSpanKind.Code
-import typings.typescript.typescriptMod.OutliningSpanKind.Comment
-import typings.typescript.typescriptMod.OutliningSpanKind.Imports
-import typings.typescript.typescriptMod.OutliningSpanKind.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

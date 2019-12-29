@@ -1,20 +1,20 @@
 package typings.polished
 
 import typings.polished.libTypesModularScaleRatioMod.ModularScaleRatio
-import typings.polished.polishedNumbers.`1DOT067`
-import typings.polished.polishedNumbers.`1DOT125`
-import typings.polished.polishedNumbers.`1DOT25`
-import typings.polished.polishedNumbers.`1DOT2`
-import typings.polished.polishedNumbers.`1DOT333`
-import typings.polished.polishedNumbers.`1DOT414`
-import typings.polished.polishedNumbers.`1DOT5`
-import typings.polished.polishedNumbers.`1DOT618`
-import typings.polished.polishedNumbers.`1DOT667`
-import typings.polished.polishedNumbers.`1DOT6`
-import typings.polished.polishedNumbers.`1DOT778`
-import typings.polished.polishedNumbers.`1DOT875`
-import typings.polished.polishedNumbers.`2DOT5`
-import typings.polished.polishedNumbers.`2DOT667`
+import typings.polished.polishedNumbers.`1.067`
+import typings.polished.polishedNumbers.`1.125`
+import typings.polished.polishedNumbers.`1.25`
+import typings.polished.polishedNumbers.`1.2`
+import typings.polished.polishedNumbers.`1.333`
+import typings.polished.polishedNumbers.`1.414`
+import typings.polished.polishedNumbers.`1.5`
+import typings.polished.polishedNumbers.`1.618`
+import typings.polished.polishedNumbers.`1.667`
+import typings.polished.polishedNumbers.`1.6`
+import typings.polished.polishedNumbers.`1.778`
+import typings.polished.polishedNumbers.`1.875`
+import typings.polished.polishedNumbers.`2.5`
+import typings.polished.polishedNumbers.`2.667`
 import typings.polished.polishedNumbers.`2`
 import typings.polished.polishedNumbers.`3`
 import typings.polished.polishedNumbers.`4`
@@ -32,23 +32,23 @@ object libHelpersModularScaleMod extends js.Object {
   def default(steps: Double, base: Double, ratio: ModularScaleRatio): String = js.native
   @js.native
   object ratioNames extends js.Object {
-    var augFourth: `1DOT414` = js.native
+    var augFourth: `1.414` = js.native
     var doubleOctave: `4` = js.native
-    var goldenSection: `1DOT618` = js.native
-    var majorEleventh: `2DOT667` = js.native
-    var majorSecond: `1DOT125` = js.native
-    var majorSeventh: `1DOT875` = js.native
-    var majorSixth: `1DOT667` = js.native
-    var majorTenth: `2DOT5` = js.native
-    var majorThird: `1DOT25` = js.native
+    var goldenSection: `1.618` = js.native
+    var majorEleventh: `2.667` = js.native
+    var majorSecond: `1.125` = js.native
+    var majorSeventh: `1.875` = js.native
+    var majorSixth: `1.667` = js.native
+    var majorTenth: `2.5` = js.native
+    var majorThird: `1.25` = js.native
     var majorTwelfth: `3` = js.native
-    var minorSecond: `1DOT067` = js.native
-    var minorSeventh: `1DOT778` = js.native
-    var minorSixth: `1DOT6` = js.native
-    var minorThird: `1DOT2` = js.native
+    var minorSecond: `1.067` = js.native
+    var minorSeventh: `1.778` = js.native
+    var minorSixth: `1.6` = js.native
+    var minorThird: `1.2` = js.native
     var octave: `2` = js.native
-    var perfectFifth: `1DOT5` = js.native
-    var perfectFourth: `1DOT333` = js.native
+    var perfectFifth: `1.5` = js.native
+    var perfectFourth: `1.333` = js.native
   }
   
 }

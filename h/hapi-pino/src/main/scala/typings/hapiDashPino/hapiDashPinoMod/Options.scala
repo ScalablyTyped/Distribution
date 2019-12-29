@@ -2,7 +2,7 @@ package typings.hapiDashPino.hapiDashPinoMod
 
 import typings.atHapiHapi.atHapiHapiMod.Request
 import typings.hapiDashPino.Anon_Key
-import typings.hapiDashPino.hapiDashPinoNumbers.`false`
+import typings.hapiDashPino.hapiDashPinoBooleans.`false`
 import typings.node.processMod._Global_.NodeJS.WriteStream
 import typings.pino.pinoMod.Level
 import typings.pino.pinoMod.Logger

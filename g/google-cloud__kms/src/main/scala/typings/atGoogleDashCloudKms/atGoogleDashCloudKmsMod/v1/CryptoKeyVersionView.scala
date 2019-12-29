@@ -1,8 +1,6 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionView.CRYPTO_KEY_VERSION_VIEW_UNSPECIFIED
-import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionView.FULL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

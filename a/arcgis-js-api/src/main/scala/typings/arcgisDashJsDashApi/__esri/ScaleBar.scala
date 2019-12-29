@@ -1,6 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`non-metric`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dual
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.line
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ruler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,19 +13,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ScaleBar extends Widget {
   /**
-    * The style for the scale bar. When `unit` is set to `dual`, the style will always be `line`.  **Possible Values:** ruler | line
+    * The style for the scale bar. When `unit` is set to `dual`, the style will always be `line`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#style)
     */
-  var style: String = js.native
+  var style: ruler | line = js.native
   /**
-    * Units to use for the scale bar. When using `dual`, the scale bar displays both metric and non-metric units. Metric values show either kilometers or meters depending on the scale, and non-metric values show either miles or feet depending on the scale.  **Possible Values:** non-metric | metric | dual
+    * Units to use for the scale bar. When using `dual`, the scale bar displays both metric and non-metric units. Metric values show either kilometers or meters depending on the scale, and non-metric values show either miles or feet depending on the scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
     *
     * @default non-metric
     */
-  var unit: String = js.native
+  var unit: `non-metric` | metric | dual = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
     *

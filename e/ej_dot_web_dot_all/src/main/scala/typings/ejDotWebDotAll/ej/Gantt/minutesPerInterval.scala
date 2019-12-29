@@ -1,11 +1,6 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.Gantt.minutesPerInterval.Auto
-import typings.ejDotWebDotAll.ej.Gantt.minutesPerInterval.FifteenMinutes
-import typings.ejDotWebDotAll.ej.Gantt.minutesPerInterval.FiveMinutes
-import typings.ejDotWebDotAll.ej.Gantt.minutesPerInterval.OneMinute
-import typings.ejDotWebDotAll.ej.Gantt.minutesPerInterval.ThirtyMinutes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

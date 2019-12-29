@@ -1,6 +1,6 @@
 package typings.passportDashClientDashCert.passportDashClientDashCertMod
 
-import typings.passportDashClientDashCert.passportDashClientDashCertNumbers.`true`
+import typings.passportDashClientDashCert.passportDashClientDashCertBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

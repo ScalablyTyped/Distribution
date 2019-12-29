@@ -11,7 +11,7 @@ import typings.rxjs.internalTypesMod.PartialObserver
 import typings.rxjs.internalTypesMod.SchedulerLike
 import typings.rxjs.internalTypesMod.SubscribableOrPromise
 import typings.rxjs.internalTypesMod.UnaryFunction
-import typings.rxjs.rxjsNumbers.`false`
+import typings.rxjs.rxjsBooleans.`false`
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -151,9 +151,9 @@ object operators extends js.Object {
     v6: ObservableInput[T6],
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
-  def concatAll[T](): OperatorFunction[ObservableInput[T], T] = js.native
+  def concatAll[R](): OperatorFunction[_, R] = js.native
   @JSName("concatAll")
-  def concatAll_R[R](): OperatorFunction[_, R] = js.native
+  def concatAll_T[T](): OperatorFunction[ObservableInput[T], T] = js.native
   def concatMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def concatMap[T, R, O /* <: ObservableInput[_] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
@@ -253,7 +253,7 @@ object operators extends js.Object {
     ],
     thisArg: js.Any
   ): OperatorFunction[T, Boolean] = js.native
-  def exhaust[T](): OperatorFunction[ObservableInput[T], T] = js.native
+  def exhaust[R](): OperatorFunction[_, R] = js.native
   def exhaustMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def exhaustMap[T, I, R](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[I]],
@@ -266,7 +266,7 @@ object operators extends js.Object {
     ]
   ): OperatorFunction[T, R] = js.native
   @JSName("exhaust")
-  def exhaust_R[R](): OperatorFunction[_, R] = js.native
+  def exhaust_T[T](): OperatorFunction[ObservableInput[T], T] = js.native
   def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]]): MonoTypeOperatorFunction[T] = js.native
   def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]], concurrent: Double): MonoTypeOperatorFunction[T] = js.native
   def expand[T](
@@ -843,9 +843,9 @@ object operators extends js.Object {
   def startWith[T, D, E, F, G, H, I](v1: D, v2: E, v3: F, v4: G, v5: H, v6: I, scheduler: SchedulerLike): OperatorFunction[T, T | D | E | F | G | H | I] = js.native
   def subscribeOn[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def subscribeOn[T](scheduler: SchedulerLike, delay: Double): MonoTypeOperatorFunction[T] = js.native
-  def switchAll[T](): OperatorFunction[ObservableInput[T], T] = js.native
+  def switchAll[R](): OperatorFunction[_, R] = js.native
   @JSName("switchAll")
-  def switchAll_R[R](): OperatorFunction[_, R] = js.native
+  def switchAll_T[T](): OperatorFunction[ObservableInput[T], T] = js.native
   def switchMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def switchMap[T, R, O /* <: ObservableInput[_] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],

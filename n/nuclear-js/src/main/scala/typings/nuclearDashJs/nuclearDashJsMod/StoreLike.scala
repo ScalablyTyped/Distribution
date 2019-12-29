@@ -35,24 +35,24 @@ trait StoreLike[T] extends js.Object {
   /**
     * Gets the initial state for this type of store
     */
-  def getInitialState(`this`: Store[T]): T
+  def getInitialState(): T
   /**
     * Sets up message handlers via `this.on` and to set up the initial
     * state.
     */
-  def initialize(`this`: Store[T]): Unit
+  def initialize(): Unit
 }
 
 object StoreLike {
   @scala.inline
   def apply[T](
-    getInitialState: Store[T] => T,
-    initialize: Store[T] => Unit,
+    getInitialState: () => T,
+    initialize: () => Unit,
     deserialize: js.ThisFunction1[/* this */ Store[T], /* state */ js.Any, T] = null,
     handleReset: js.ThisFunction1[/* this */ Store[T], /* state */ T, T] = null,
     serialize: js.ThisFunction1[/* this */ Store[T], /* state */ T, _] = null
   ): StoreLike[T] = {
-    val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction1(getInitialState), initialize = js.Any.fromFunction1(initialize))
+    val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction0(getInitialState), initialize = js.Any.fromFunction0(initialize))
     if (deserialize != null) __obj.updateDynamic("deserialize")(deserialize.asInstanceOf[js.Any])
     if (handleReset != null) __obj.updateDynamic("handleReset")(handleReset.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])

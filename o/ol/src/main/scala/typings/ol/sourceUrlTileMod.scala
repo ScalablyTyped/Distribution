@@ -8,8 +8,6 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.sourceStateMod.State
 import typings.ol.sourceTileMod.TileSourceEvent
-import typings.ol.sourceUrlTileMod.Options
-import typings.ol.sourceUrlTileMod.UrlTile
 import typings.ol.tileMod.LoadFunction
 import typings.ol.tileMod.Tile
 import typings.ol.tileMod.UrlFunction

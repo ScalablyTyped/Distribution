@@ -5,8 +5,8 @@ import typings.mathjs.Anon_L
 import typings.mathjs.Anon_LR
 import typings.mathjs.Anon_Q
 import typings.mathjs.Anon_Simplify
-import typings.mathjs.mathjsNumbers.`false`
-import typings.mathjs.mathjsNumbers.`true`
+import typings.mathjs.mathjsBooleans.`false`
+import typings.mathjs.mathjsBooleans.`true`
 import typings.mathjs.mathjsStrings.asc
 import typings.mathjs.mathjsStrings.biased
 import typings.mathjs.mathjsStrings.dense
@@ -1073,7 +1073,7 @@ trait MathJsStatic extends FactoryDependencies {
   def gamma(n: Double): Double | MathArray | Matrix = js.native
   def gamma(n: MathArray): Double | MathArray | Matrix = js.native
   def gamma(n: Matrix): Double | MathArray | Matrix = js.native
-  def gcd(args: Matrix*): Matrix = js.native
+  def gcd(args: Fraction*): Fraction = js.native
   @JSName("gcd")
   def gcd_BigNumber(args: BigNumber*): BigNumber = js.native
   /**
@@ -1085,9 +1085,9 @@ trait MathJsStatic extends FactoryDependencies {
   @JSName("gcd")
   def gcd_Double(args: Double*): Double = js.native
   @JSName("gcd")
-  def gcd_Fraction(args: Fraction*): Fraction = js.native
-  @JSName("gcd")
   def gcd_MathArray(args: MathArray*): MathArray = js.native
+  @JSName("gcd")
+  def gcd_Matrix(args: Matrix*): Matrix = js.native
   /**
     * Retrieve help on a function or data type. Help files are retrieved
     * from the documentation in math.expression.docs.
@@ -2020,9 +2020,18 @@ trait MathJsStatic extends FactoryDependencies {
     */
   def range(str: String): Matrix = js.native
   def range(str: String, includeEnd: Boolean): Matrix = js.native
-  def rationalize(expr: String): Anon_Coefficients = js.native
-  def rationalize(expr: String, optional: js.Object): Anon_Coefficients = js.native
-  def rationalize(expr: String, optional: Boolean): Anon_Coefficients = js.native
+  def rationalize(expr: String): MathNode = js.native
+  def rationalize(expr: String, optional: js.Object): MathNode = js.native
+  def rationalize(expr: String, optional: Boolean): MathNode = js.native
+  def rationalize(expr: MathNode): MathNode = js.native
+  def rationalize(expr: MathNode, optional: js.Object): MathNode = js.native
+  def rationalize(expr: MathNode, optional: Boolean): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_Anon_Coefficients(expr: String): Anon_Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_Anon_Coefficients(expr: String, optional: js.Object): Anon_Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_Anon_Coefficients(expr: String, optional: Boolean): Anon_Coefficients = js.native
   /**
     * Transform a rationalizable expression in a rational fraction. If
     * rational fraction is one variable polynomial then converts the
@@ -2035,21 +2044,12 @@ trait MathJsStatic extends FactoryDependencies {
     * expression node (default)
     * @returns The rational polynomial of expr
     */
-  def rationalize(expr: MathNode): Anon_Coefficients = js.native
-  def rationalize(expr: MathNode, optional: js.Object): Anon_Coefficients = js.native
-  def rationalize(expr: MathNode, optional: Boolean): Anon_Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_MathNode(expr: String): MathNode = js.native
+  def rationalize_Anon_Coefficients(expr: MathNode): Anon_Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_MathNode(expr: String, optional: js.Object): MathNode = js.native
+  def rationalize_Anon_Coefficients(expr: MathNode, optional: js.Object): Anon_Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_MathNode(expr: String, optional: Boolean): MathNode = js.native
-  @JSName("rationalize")
-  def rationalize_MathNode(expr: MathNode): MathNode = js.native
-  @JSName("rationalize")
-  def rationalize_MathNode(expr: MathNode, optional: js.Object): MathNode = js.native
-  @JSName("rationalize")
-  def rationalize_MathNode(expr: MathNode, optional: Boolean): MathNode = js.native
+  def rationalize_Anon_Coefficients(expr: MathNode, optional: Boolean): Anon_Coefficients = js.native
   @JSName("rationalize")
   def rationalize_false(expr: String, optional: js.Object, detailed: `false`): MathNode = js.native
   @JSName("rationalize")

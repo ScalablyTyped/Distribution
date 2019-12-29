@@ -1,7 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.antd.libUnderscoreUtilRafMod.RafMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

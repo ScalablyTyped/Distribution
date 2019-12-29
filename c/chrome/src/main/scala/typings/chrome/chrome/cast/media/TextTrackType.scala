@@ -1,11 +1,6 @@
 package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.TopLevel
-import typings.chrome.chrome.cast.media.TextTrackType.CAPTIONS
-import typings.chrome.chrome.cast.media.TextTrackType.CHAPTERS
-import typings.chrome.chrome.cast.media.TextTrackType.DESCRIPTIONS
-import typings.chrome.chrome.cast.media.TextTrackType.METADATA
-import typings.chrome.chrome.cast.media.TextTrackType.SUBTITLES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

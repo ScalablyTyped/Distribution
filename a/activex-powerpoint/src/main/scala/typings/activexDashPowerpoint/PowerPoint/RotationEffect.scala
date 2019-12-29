@@ -11,7 +11,8 @@ class RotationEffect protected () extends js.Object {
   var By: Double = js.native
   var From: Double = js.native
   val Parent: js.Any = js.native
-  var `PowerPoint.RotationEffect_typekey`: RotationEffect = js.native
+  @JSName("PowerPoint.RotationEffect_typekey")
+  var PowerPointDotRotationEffect_typekey: RotationEffect = js.native
   var To: Double = js.native
 }
 

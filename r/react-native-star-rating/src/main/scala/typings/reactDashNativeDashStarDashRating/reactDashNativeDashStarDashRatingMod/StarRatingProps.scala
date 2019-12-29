@@ -3,6 +3,16 @@ package typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRat
 import typings.reactDashNative.reactDashNativeMod.ImageURISource
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.bounce
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.flash
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.jello
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.pulse
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.rotate
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.rubberBand
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.shake
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.swing
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.tada
+import typings.reactDashNativeDashStarDashRating.reactDashNativeDashStarDashRatingStrings.wobble
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +23,12 @@ trait StarRatingProps extends js.Object {
     * Default is 0.2
     */
   var activeOpacity: js.UndefOr[Double] = js.undefined
+  /**
+    * Add an animation to the stars upon selection.
+    */
+  var animation: js.UndefOr[
+    bounce | flash | jello | pulse | rotate | rubberBand | shake | swing | tada | wobble
+  ] = js.undefined
   /**
     * Style of the button containing the star.
     */
@@ -120,6 +136,7 @@ object StarRatingProps {
   @scala.inline
   def apply(
     activeOpacity: Int | Double = null,
+    animation: bounce | flash | jello | pulse | rotate | rubberBand | shake | swing | tada | wobble = null,
     buttonStyle: StyleProp[ViewStyle] = null,
     containerStyle: StyleProp[ViewStyle] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -140,6 +157,7 @@ object StarRatingProps {
   ): StarRatingProps = {
     val __obj = js.Dynamic.literal()
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])

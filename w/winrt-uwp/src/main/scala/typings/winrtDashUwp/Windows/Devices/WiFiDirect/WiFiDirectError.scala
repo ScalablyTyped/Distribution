@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.radioNotAvailable
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.resourceInUse
-import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

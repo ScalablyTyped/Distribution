@@ -30,7 +30,7 @@ object googleDashGaxStrings {
   sealed trait int64 extends js.Object
   
   @js.native
-  sealed trait longrunningDOTgoogleapisDOTcom extends js.Object
+  sealed trait longrunningDotgoogleapisDotcom extends js.Object
   
   @js.native
   sealed trait optional extends js.Object
@@ -79,7 +79,7 @@ object googleDashGaxStrings {
   @scala.inline
   def int64: int64 = "int64".asInstanceOf[int64]
   @scala.inline
-  def longrunningDOTgoogleapisDOTcom: longrunningDOTgoogleapisDOTcom = "longrunning.googleapis.com".asInstanceOf[longrunningDOTgoogleapisDOTcom]
+  def longrunningDotgoogleapisDotcom: longrunningDotgoogleapisDotcom = "longrunning.googleapis.com".asInstanceOf[longrunningDotgoogleapisDotcom]
   @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
   @scala.inline

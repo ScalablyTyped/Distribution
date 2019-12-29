@@ -12,7 +12,8 @@ class Fields protected () extends js.Object {
   val Creator: Double = js.native
   var Locked: Double = js.native
   val Parent: js.Any = js.native
-  var `Word.Fields_typekey`: Fields = js.native
+  @JSName("Word.Fields_typekey")
+  var WordDotFields_typekey: Fields = js.native
   def Add(Range: Range): Field = js.native
   def Add(Range: Range, Type: js.Any): Field = js.native
   def Add(Range: Range, Type: js.Any, Text: js.Any): Field = js.native

@@ -1,14 +1,6 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.Complex
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.EventBased
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.Exclusive
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.ExclusiveEventBased
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.Inclusive
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.None
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.Parallel
-import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNGateways.ParallelEventBased
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,6 @@
 package typings.allureDashJsDashCommons.allureDashJsDashCommonsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.allureDashJsDashCommons.allureDashJsDashCommonsMod.TYPE.HTML
-import typings.allureDashJsDashCommons.allureDashJsDashCommonsMod.TYPE.MARKDOWN
-import typings.allureDashJsDashCommons.allureDashJsDashCommonsMod.TYPE.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

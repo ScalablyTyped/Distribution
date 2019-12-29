@@ -16,7 +16,7 @@ trait INestedList extends IContainer {
   /** [Config Option] (Object) */
   var backButton: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var backText: js.UndefOr[java.lang.String] = js.undefined
+  var backText: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var clearSelectionDelay: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Ext.Component) */
@@ -24,9 +24,9 @@ trait INestedList extends IContainer {
   /** [Config Option] (Ext.Container) */
   var detailContainer: js.UndefOr[IContainer] = js.undefined
   /** [Config Option] (String) */
-  var displayField: js.UndefOr[java.lang.String] = js.undefined
+  var displayField: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[java.lang.String] = js.undefined
+  var emptyText: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of allowDeselect
   		* @returns Boolean
   		*/
@@ -38,7 +38,7 @@ trait INestedList extends IContainer {
   /** [Method] Returns the value of backText
   		* @returns String
   		*/
-  var getBackText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getBackText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of clearSelectionOnListChange
   		* @returns Boolean
   		*/
@@ -54,11 +54,11 @@ trait INestedList extends IContainer {
   /** [Method] Returns the value of displayField
   		* @returns String
   		*/
-  var getDisplayField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDisplayField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of emptyText
   		* @returns String
   		*/
-  var getEmptyText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getEmptyText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of itemHeight
   		* @returns Number
   		*/
@@ -67,7 +67,7 @@ trait INestedList extends IContainer {
   		* @param node Ext.data.Record
   		* @returns String
   		*/
-  var getItemTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], java.lang.String]] = js.undefined
+  var getItemTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], String]] = js.undefined
   /** [Method] Returns the value of listConfig
   		* @returns Object
   		*/
@@ -75,7 +75,7 @@ trait INestedList extends IContainer {
   /** [Method] Returns the value of loadingText
   		* @returns String
   		*/
-  var getLoadingText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getLoadingText: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of onItemDisclosure
   		* @returns Boolean/Function
   		*/
@@ -89,12 +89,12 @@ trait INestedList extends IContainer {
   /** [Method] Returns the value of title
   		* @returns String
   		*/
-  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Override this method to provide custom template rendering of titles back buttons when useTitleAsBackText is enabled
   		* @param node Ext.data.Record
   		* @returns String
   		*/
-  var getTitleTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], java.lang.String]] = js.undefined
+  var getTitleTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], String]] = js.undefined
   /** [Method] Returns the value of toolbar
   		* @returns Ext.Toolbar/Object/Boolean
   		*/
@@ -132,7 +132,7 @@ trait INestedList extends IContainer {
   /** [Config Option] (Object) */
   var listConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var loadingText: js.UndefOr[java.lang.String] = js.undefined
+  var loadingText: js.UndefOr[String] = js.undefined
   /** [Method] Called when the backButton has been tapped  */
   var onBackTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Boolean/Function) */
@@ -165,7 +165,7 @@ trait INestedList extends IContainer {
   /** [Method] Sets the value of backText
   		* @param backText String The new value.
   		*/
-  var setBackText: js.UndefOr[js.Function1[/* backText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setBackText: js.UndefOr[js.Function1[/* backText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of clearSelectionOnListChange
   		* @param clearSelectionOnListChange Boolean The new value.
   		*/
@@ -181,11 +181,11 @@ trait INestedList extends IContainer {
   /** [Method] Sets the value of displayField
   		* @param displayField String The new value.
   		*/
-  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of emptyText
   		* @param emptyText String The new value.
   		*/
-  var setEmptyText: js.UndefOr[js.Function1[/* emptyText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setEmptyText: js.UndefOr[js.Function1[/* emptyText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of itemHeight
   		* @param itemHeight Number The new value.
   		*/
@@ -197,7 +197,7 @@ trait INestedList extends IContainer {
   /** [Method] Sets the value of loadingText
   		* @param loadingText String The new value.
   		*/
-  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of onItemDisclosure
   		* @param onItemDisclosure Boolean/Function The new value.
   		*/
@@ -209,7 +209,7 @@ trait INestedList extends IContainer {
   /** [Method] Sets the value of title
   		* @param title String The new value.
   		*/
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of toolbar
   		* @param toolbar Ext.Toolbar/Object/Boolean The new value.
   		*/
@@ -242,7 +242,7 @@ trait INestedList extends IContainer {
   /** [Config Option] (Ext.data.TreeStore/String) */
   var store: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   /** [Config Option] (Ext.Toolbar/Object/Boolean) */
   var toolbar: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
@@ -263,29 +263,29 @@ object INestedList {
     IContainer: IContainer = null,
     allowDeselect: js.UndefOr[Boolean] = js.undefined,
     backButton: js.Any = null,
-    backText: java.lang.String = null,
+    backText: String = null,
     clearSelectionDelay: Int | Double = null,
     detailCard: IComponent = null,
     detailContainer: IContainer = null,
-    displayField: java.lang.String = null,
-    emptyText: java.lang.String = null,
+    displayField: String = null,
+    emptyText: String = null,
     getAllowDeselect: () => Boolean = null,
     getBackButton: () => _ = null,
-    getBackText: () => java.lang.String = null,
+    getBackText: () => String = null,
     getClearSelectionOnListChange: () => Boolean = null,
     getDetailCard: () => IComponent = null,
     getDetailContainer: () => IContainer = null,
-    getDisplayField: () => java.lang.String = null,
-    getEmptyText: () => java.lang.String = null,
+    getDisplayField: () => String = null,
+    getEmptyText: () => String = null,
     getItemHeight: () => Double = null,
-    getItemTextTpl: /* node */ js.UndefOr[IRecord] => java.lang.String = null,
+    getItemTextTpl: /* node */ js.UndefOr[IRecord] => String = null,
     getListConfig: () => _ = null,
-    getLoadingText: () => java.lang.String = null,
+    getLoadingText: () => String = null,
     getOnItemDisclosure: () => _ = null,
     getStore: () => _ = null,
     getSubList: () => Unit = null,
-    getTitle: () => java.lang.String = null,
-    getTitleTextTpl: /* node */ js.UndefOr[IRecord] => java.lang.String = null,
+    getTitle: () => String = null,
+    getTitleTextTpl: /* node */ js.UndefOr[IRecord] => String = null,
     getToolbar: () => _ = null,
     getUpdateTitleText: () => Boolean = null,
     getUseSimpleItems: () => Boolean = null,
@@ -296,24 +296,24 @@ object INestedList {
     goToNode: /* node */ js.UndefOr[INodeInterface] => Unit = null,
     itemHeight: Int | Double = null,
     listConfig: js.Any = null,
-    loadingText: java.lang.String = null,
+    loadingText: String = null,
     onBackTap: () => Unit = null,
     onItemDisclosure: js.Any = null,
     onItemTap: (/* list */ js.UndefOr[typings.senchaUnderscoreTouch.Ext.IList], /* index */ js.UndefOr[Double], /* target */ js.UndefOr[IElement], /* record */ js.UndefOr[IRecord], /* e */ js.UndefOr[IEvent]) => Unit = null,
     setAllowDeselect: /* allowDeselect */ js.UndefOr[Boolean] => Unit = null,
     setBackButton: /* backButton */ js.UndefOr[js.Any] => Unit = null,
-    setBackText: /* backText */ js.UndefOr[java.lang.String] => Unit = null,
+    setBackText: /* backText */ js.UndefOr[String] => Unit = null,
     setClearSelectionOnListChange: /* clearSelectionOnListChange */ js.UndefOr[Boolean] => Unit = null,
     setDetailCard: /* detailCard */ js.UndefOr[IComponent] => Unit = null,
     setDetailContainer: /* detailContainer */ js.UndefOr[IContainer] => Unit = null,
-    setDisplayField: /* displayField */ js.UndefOr[java.lang.String] => Unit = null,
-    setEmptyText: /* emptyText */ js.UndefOr[java.lang.String] => Unit = null,
+    setDisplayField: /* displayField */ js.UndefOr[String] => Unit = null,
+    setEmptyText: /* emptyText */ js.UndefOr[String] => Unit = null,
     setItemHeight: /* itemHeight */ js.UndefOr[Double] => Unit = null,
     setListConfig: /* listConfig */ js.UndefOr[js.Any] => Unit = null,
-    setLoadingText: /* loadingText */ js.UndefOr[java.lang.String] => Unit = null,
+    setLoadingText: /* loadingText */ js.UndefOr[String] => Unit = null,
     setOnItemDisclosure: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit = null,
     setStore: /* store */ js.UndefOr[js.Any] => Unit = null,
-    setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
+    setTitle: /* title */ js.UndefOr[String] => Unit = null,
     setToolbar: /* toolbar */ js.UndefOr[js.Any] => Unit = null,
     setUi: /* ui */ js.UndefOr[js.Any] => Unit = null,
     setUpdateTitleText: /* updateTitleText */ js.UndefOr[Boolean] => Unit = null,
@@ -322,7 +322,7 @@ object INestedList {
     setUseToolbar: /* useToolbar */ js.UndefOr[Boolean] => Unit = null,
     setVariableHeights: /* variableHeights */ js.UndefOr[Boolean] => Unit = null,
     store: js.Any = null,
-    title: java.lang.String = null,
+    title: String = null,
     toolbar: js.Any = null,
     updateTitleText: js.UndefOr[Boolean] = js.undefined,
     useSimpleItems: js.UndefOr[Boolean] = js.undefined,

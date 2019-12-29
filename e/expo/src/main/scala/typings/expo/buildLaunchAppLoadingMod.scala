@@ -1,7 +1,5 @@
 package typings.expo
 
-import typings.expo.buildLaunchAppLoadingMod.AppLoading
-import typings.expo.buildLaunchAppLoadingMod.Props
 import typings.fbemitter.fbemitterMod.EventEmitter
 import typings.react.reactMod.Component
 import scala.scalajs.js

@@ -3,9 +3,6 @@ package typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENT
-import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer

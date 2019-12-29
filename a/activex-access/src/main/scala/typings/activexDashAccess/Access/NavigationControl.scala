@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.NavigationControl")
 @js.native
 class NavigationControl protected () extends js.Object {
-  var `Access.NavigationControl_typekey`: NavigationControl = js.native
+  @JSName("Access.NavigationControl_typekey")
+  var AccessDotNavigationControl_typekey: NavigationControl = js.native
   var AllowedText: Double = js.native
   val Application: typings.activexDashAccess.Access.Application = js.native
   var AutoTab: Boolean = js.native

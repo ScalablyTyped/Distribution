@@ -1,10 +1,6 @@
 package typings.navermaps.naver.maps.drawing
 
 import org.scalablytyped.runtime.TopLevel
-import typings.navermaps.naver.maps.drawing.DrawingStyle.HORIZONTAL
-import typings.navermaps.naver.maps.drawing.DrawingStyle.HORIZONTAL_2
-import typings.navermaps.naver.maps.drawing.DrawingStyle.VERTICAL
-import typings.navermaps.naver.maps.drawing.DrawingStyle.VERTICAL_2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

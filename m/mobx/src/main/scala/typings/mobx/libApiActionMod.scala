@@ -1,6 +1,5 @@
 package typings.mobx
 
-import typings.mobx.libApiActionMod.IActionFactory
 import typings.mobx.libCoreActionMod.IAction
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
@@ -13,13 +12,8 @@ object libApiActionMod extends js.Object {
   @js.native
   trait IActionFactory extends js.Object {
     def apply(): Null with IAction = js.native
-    def apply(customName: String): js.Function3[
-        /* target */ js.Object, 
-        /* key */ String | js.Symbol, 
-        /* baseDescriptor */ js.UndefOr[PropertyDescriptor], 
-        Unit
-      ] = js.native
     def apply(fn: js.Function): js.Function with IAction = js.native
+    def apply(name: String): Null with IAction = js.native
     def apply(name: String, fn: js.Function): js.Function with IAction = js.native
     def apply(target: js.Object, propertyKey: String): Unit = js.native
     def apply(target: js.Object, propertyKey: String, descriptor: PropertyDescriptor): Unit = js.native

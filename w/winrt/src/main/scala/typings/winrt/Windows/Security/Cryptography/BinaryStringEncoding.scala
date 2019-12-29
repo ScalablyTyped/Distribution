@@ -1,9 +1,6 @@
 package typings.winrt.Windows.Security.Cryptography
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrt.Windows.Security.Cryptography.BinaryStringEncoding.utf16BE
-import typings.winrt.Windows.Security.Cryptography.BinaryStringEncoding.utf16LE
-import typings.winrt.Windows.Security.Cryptography.BinaryStringEncoding.utf8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

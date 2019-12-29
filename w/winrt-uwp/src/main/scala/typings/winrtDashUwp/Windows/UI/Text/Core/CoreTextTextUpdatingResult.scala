@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text.Core
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextTextUpdatingResult.failed
-import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextTextUpdatingResult.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

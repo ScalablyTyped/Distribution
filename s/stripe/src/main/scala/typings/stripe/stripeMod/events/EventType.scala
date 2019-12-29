@@ -5,458 +5,458 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.stripe.stripeStrings.`*`
-  - typings.stripe.stripeStrings.accountDOTupdated
-  - typings.stripe.stripeStrings.accountDOTapplicationDOTauthorized
-  - typings.stripe.stripeStrings.accountDOTapplicationDOTdeauthorized
-  - typings.stripe.stripeStrings.accountDOTexternal_accountDOTcreated
-  - typings.stripe.stripeStrings.accountDOTexternal_accountDOTdeleted
-  - typings.stripe.stripeStrings.accountDOTexternal_accountDOTupdated
-  - typings.stripe.stripeStrings.application_feeDOTcreated
-  - typings.stripe.stripeStrings.application_feeDOTrefunded
-  - typings.stripe.stripeStrings.application_feeDOTrefundDOTupdated
-  - typings.stripe.stripeStrings.balanceDOTavailable
-  - typings.stripe.stripeStrings.capabilityDOTupdated
-  - typings.stripe.stripeStrings.chargeDOTcaptured
-  - typings.stripe.stripeStrings.chargeDOTexpired
-  - typings.stripe.stripeStrings.chargeDOTfailed
-  - typings.stripe.stripeStrings.chargeDOTpending
-  - typings.stripe.stripeStrings.chargeDOTrefunded
-  - typings.stripe.stripeStrings.chargeDOTsucceeded
-  - typings.stripe.stripeStrings.chargeDOTupdated
-  - typings.stripe.stripeStrings.chargeDOTdisputeDOTclosed
-  - typings.stripe.stripeStrings.chargeDOTdisputeDOTcreated
-  - typings.stripe.stripeStrings.chargeDOTdisputeDOTfunds_reinstated
-  - typings.stripe.stripeStrings.chargeDOTdisputeDOTfunds_withdrawn
-  - typings.stripe.stripeStrings.chargeDOTdisputeDOTupdated
-  - typings.stripe.stripeStrings.chargeDOTrefundDOTupdated
-  - typings.stripe.stripeStrings.checkoutDOTsessionDOTcompleted
-  - typings.stripe.stripeStrings.couponDOTcreated
-  - typings.stripe.stripeStrings.couponDOTdeleted
-  - typings.stripe.stripeStrings.couponDOTupdated
-  - typings.stripe.stripeStrings.credit_noteDOTcreated
-  - typings.stripe.stripeStrings.credit_noteDOTupdated
-  - typings.stripe.stripeStrings.credit_noteDOTvoided
-  - typings.stripe.stripeStrings.customerDOTcreated
-  - typings.stripe.stripeStrings.customerDOTdeleted
-  - typings.stripe.stripeStrings.customerDOTupdated
-  - typings.stripe.stripeStrings.customerDOTdiscountDOTcreated
-  - typings.stripe.stripeStrings.customerDOTdiscountDOTdeleted
-  - typings.stripe.stripeStrings.customerDOTdiscountDOTupdated
-  - typings.stripe.stripeStrings.customerDOTsourceDOTcreated
-  - typings.stripe.stripeStrings.customerDOTsourceDOTdeleted
-  - typings.stripe.stripeStrings.customerDOTsourceDOTexpiring
-  - typings.stripe.stripeStrings.customerDOTsourceDOTupdated
-  - typings.stripe.stripeStrings.customerDOTsubscriptionDOTcreated
-  - typings.stripe.stripeStrings.customerDOTsubscriptionDOTdeleted
-  - typings.stripe.stripeStrings.customerDOTsubscriptionDOTtrial_will_end
-  - typings.stripe.stripeStrings.customerDOTsubscriptionDOTupdated
-  - typings.stripe.stripeStrings.customerDOTtax_idDOTcreated
-  - typings.stripe.stripeStrings.customerDOTtax_idDOTdeleted
-  - typings.stripe.stripeStrings.customerDOTtax_idDOTupdated
-  - typings.stripe.stripeStrings.fileDOTcreated
-  - typings.stripe.stripeStrings.invoiceDOTcreated
-  - typings.stripe.stripeStrings.invoiceDOTdeleted
-  - typings.stripe.stripeStrings.invoiceDOTfinalized
-  - typings.stripe.stripeStrings.invoiceDOTmarked_uncollectible
-  - typings.stripe.stripeStrings.invoiceDOTpayment_action_required
-  - typings.stripe.stripeStrings.invoiceDOTpayment_failed
-  - typings.stripe.stripeStrings.invoiceDOTpayment_succeeded
-  - typings.stripe.stripeStrings.invoiceDOTsent
-  - typings.stripe.stripeStrings.invoiceDOTupcoming
-  - typings.stripe.stripeStrings.invoiceDOTupdated
-  - typings.stripe.stripeStrings.invoiceDOTvoided
-  - typings.stripe.stripeStrings.invoiceitemDOTcreated
-  - typings.stripe.stripeStrings.invoiceitemDOTdeleted
-  - typings.stripe.stripeStrings.invoiceitemDOTupdated
-  - typings.stripe.stripeStrings.issuing_authorizationDOTcreated
-  - typings.stripe.stripeStrings.issuing_authorizationDOTrequest
-  - typings.stripe.stripeStrings.issuing_authorizationDOTupdated
-  - typings.stripe.stripeStrings.issuing_cardDOTcreated
-  - typings.stripe.stripeStrings.issuing_cardDOTupdated
-  - typings.stripe.stripeStrings.issuing_cardholderDOTcreated
-  - typings.stripe.stripeStrings.issuing_cardholderDOTupdated
-  - typings.stripe.stripeStrings.issuing_disputeDOTcreated
-  - typings.stripe.stripeStrings.issuing_disputeDOTupdated
-  - typings.stripe.stripeStrings.issuing_settlementDOTcreated
-  - typings.stripe.stripeStrings.issuing_settlementDOTupdated
-  - typings.stripe.stripeStrings.issuing_transactionDOTcreated
-  - typings.stripe.stripeStrings.issuing_transactionDOTupdated
-  - typings.stripe.stripeStrings.mandateDOTupdated
-  - typings.stripe.stripeStrings.orderDOTcreated
-  - typings.stripe.stripeStrings.orderDOTpayment_failed
-  - typings.stripe.stripeStrings.orderDOTpayment_succeeded
-  - typings.stripe.stripeStrings.orderDOTupdated
-  - typings.stripe.stripeStrings.order_returnDOTcreated
-  - typings.stripe.stripeStrings.payment_intentDOTamount_capturable_updated
-  - typings.stripe.stripeStrings.payment_intentDOTcanceled
-  - typings.stripe.stripeStrings.payment_intentDOTcreated
-  - typings.stripe.stripeStrings.payment_intentDOTpayment_failed
-  - typings.stripe.stripeStrings.payment_intentDOTsucceeded
-  - typings.stripe.stripeStrings.payment_methodDOTattached
-  - typings.stripe.stripeStrings.payment_methodDOTcard_automatically_updated
-  - typings.stripe.stripeStrings.payment_methodDOTdetached
-  - typings.stripe.stripeStrings.payment_methodDOTupdated
-  - typings.stripe.stripeStrings.payoutDOTcanceled
-  - typings.stripe.stripeStrings.payoutDOTcreated
-  - typings.stripe.stripeStrings.payoutDOTfailed
-  - typings.stripe.stripeStrings.payoutDOTpaid
-  - typings.stripe.stripeStrings.payoutDOTupdated
-  - typings.stripe.stripeStrings.personDOTcreated
-  - typings.stripe.stripeStrings.personDOTdeleted
-  - typings.stripe.stripeStrings.personDOTupdated
-  - typings.stripe.stripeStrings.planDOTcreated
-  - typings.stripe.stripeStrings.planDOTdeleted
-  - typings.stripe.stripeStrings.planDOTupdated
-  - typings.stripe.stripeStrings.productDOTcreated
-  - typings.stripe.stripeStrings.productDOTdeleted
-  - typings.stripe.stripeStrings.productDOTupdated
-  - typings.stripe.stripeStrings.radarDOTearly_fraud_warningDOTcreated
-  - typings.stripe.stripeStrings.radarDOTearly_fraud_warningDOTupdated
-  - typings.stripe.stripeStrings.recipientDOTcreated
-  - typings.stripe.stripeStrings.recipientDOTdeleted
-  - typings.stripe.stripeStrings.recipientDOTupdated
-  - typings.stripe.stripeStrings.reportingDOTreport_runDOTfailed
-  - typings.stripe.stripeStrings.reportingDOTreport_runDOTsucceeded
-  - typings.stripe.stripeStrings.reportingDOTreport_typeDOTupdated
-  - typings.stripe.stripeStrings.reviewDOTclosed
-  - typings.stripe.stripeStrings.reviewDOTopened
-  - typings.stripe.stripeStrings.setup_intentDOTcanceled
-  - typings.stripe.stripeStrings.setup_intentDOTcreated
-  - typings.stripe.stripeStrings.setup_intentDOTsetup_failed
-  - typings.stripe.stripeStrings.setup_intentDOTsucceeded
-  - typings.stripe.stripeStrings.sigmaDOTscheduled_query_runDOTcreated
-  - typings.stripe.stripeStrings.skuDOTcreated
-  - typings.stripe.stripeStrings.skuDOTdeleted
-  - typings.stripe.stripeStrings.skuDOTupdated
-  - typings.stripe.stripeStrings.sourceDOTcanceled
-  - typings.stripe.stripeStrings.sourceDOTchargeable
-  - typings.stripe.stripeStrings.sourceDOTfailed
-  - typings.stripe.stripeStrings.sourceDOTmandate_notification
-  - typings.stripe.stripeStrings.sourceDOTrefund_attributes_required
-  - typings.stripe.stripeStrings.sourceDOTtransactionDOTcreated
-  - typings.stripe.stripeStrings.sourceDOTtransactionDOTupdated
-  - typings.stripe.stripeStrings.subscription_scheduleDOTaborted
-  - typings.stripe.stripeStrings.subscription_scheduleDOTcanceled
-  - typings.stripe.stripeStrings.subscription_scheduleDOTcompleted
-  - typings.stripe.stripeStrings.subscription_scheduleDOTcreated
-  - typings.stripe.stripeStrings.subscription_scheduleDOTexpiring
-  - typings.stripe.stripeStrings.subscription_scheduleDOTreleased
-  - typings.stripe.stripeStrings.subscription_scheduleDOTupdated
-  - typings.stripe.stripeStrings.tax_rateDOTcreated
-  - typings.stripe.stripeStrings.tax_rateDOTupdated
-  - typings.stripe.stripeStrings.topupDOTcreated
-  - typings.stripe.stripeStrings.topupDOTfailed
-  - typings.stripe.stripeStrings.topupDOTreversed
-  - typings.stripe.stripeStrings.topupDOTsucceeded
-  - typings.stripe.stripeStrings.transferDOTcreated
-  - typings.stripe.stripeStrings.transferDOTfailed
-  - typings.stripe.stripeStrings.transferDOTpaid
-  - typings.stripe.stripeStrings.transferDOTreversed
-  - typings.stripe.stripeStrings.transferDOTupdated
+  - typings.stripe.stripeStrings.Asterisk
+  - typings.stripe.stripeStrings.accountDotupdated
+  - typings.stripe.stripeStrings.accountDotapplicationDotauthorized
+  - typings.stripe.stripeStrings.accountDotapplicationDotdeauthorized
+  - typings.stripe.stripeStrings.accountDotexternal_accountDotcreated
+  - typings.stripe.stripeStrings.accountDotexternal_accountDotdeleted
+  - typings.stripe.stripeStrings.accountDotexternal_accountDotupdated
+  - typings.stripe.stripeStrings.application_feeDotcreated
+  - typings.stripe.stripeStrings.application_feeDotrefunded
+  - typings.stripe.stripeStrings.application_feeDotrefundDotupdated
+  - typings.stripe.stripeStrings.balanceDotavailable
+  - typings.stripe.stripeStrings.capabilityDotupdated
+  - typings.stripe.stripeStrings.chargeDotcaptured
+  - typings.stripe.stripeStrings.chargeDotexpired
+  - typings.stripe.stripeStrings.chargeDotfailed
+  - typings.stripe.stripeStrings.chargeDotpending
+  - typings.stripe.stripeStrings.chargeDotrefunded
+  - typings.stripe.stripeStrings.chargeDotsucceeded
+  - typings.stripe.stripeStrings.chargeDotupdated
+  - typings.stripe.stripeStrings.chargeDotdisputeDotclosed
+  - typings.stripe.stripeStrings.chargeDotdisputeDotcreated
+  - typings.stripe.stripeStrings.chargeDotdisputeDotfunds_reinstated
+  - typings.stripe.stripeStrings.chargeDotdisputeDotfunds_withdrawn
+  - typings.stripe.stripeStrings.chargeDotdisputeDotupdated
+  - typings.stripe.stripeStrings.chargeDotrefundDotupdated
+  - typings.stripe.stripeStrings.checkoutDotsessionDotcompleted
+  - typings.stripe.stripeStrings.couponDotcreated
+  - typings.stripe.stripeStrings.couponDotdeleted
+  - typings.stripe.stripeStrings.couponDotupdated
+  - typings.stripe.stripeStrings.credit_noteDotcreated
+  - typings.stripe.stripeStrings.credit_noteDotupdated
+  - typings.stripe.stripeStrings.credit_noteDotvoided
+  - typings.stripe.stripeStrings.customerDotcreated
+  - typings.stripe.stripeStrings.customerDotdeleted
+  - typings.stripe.stripeStrings.customerDotupdated
+  - typings.stripe.stripeStrings.customerDotdiscountDotcreated
+  - typings.stripe.stripeStrings.customerDotdiscountDotdeleted
+  - typings.stripe.stripeStrings.customerDotdiscountDotupdated
+  - typings.stripe.stripeStrings.customerDotsourceDotcreated
+  - typings.stripe.stripeStrings.customerDotsourceDotdeleted
+  - typings.stripe.stripeStrings.customerDotsourceDotexpiring
+  - typings.stripe.stripeStrings.customerDotsourceDotupdated
+  - typings.stripe.stripeStrings.customerDotsubscriptionDotcreated
+  - typings.stripe.stripeStrings.customerDotsubscriptionDotdeleted
+  - typings.stripe.stripeStrings.customerDotsubscriptionDottrial_will_end
+  - typings.stripe.stripeStrings.customerDotsubscriptionDotupdated
+  - typings.stripe.stripeStrings.customerDottax_idDotcreated
+  - typings.stripe.stripeStrings.customerDottax_idDotdeleted
+  - typings.stripe.stripeStrings.customerDottax_idDotupdated
+  - typings.stripe.stripeStrings.fileDotcreated
+  - typings.stripe.stripeStrings.invoiceDotcreated
+  - typings.stripe.stripeStrings.invoiceDotdeleted
+  - typings.stripe.stripeStrings.invoiceDotfinalized
+  - typings.stripe.stripeStrings.invoiceDotmarked_uncollectible
+  - typings.stripe.stripeStrings.invoiceDotpayment_action_required
+  - typings.stripe.stripeStrings.invoiceDotpayment_failed
+  - typings.stripe.stripeStrings.invoiceDotpayment_succeeded
+  - typings.stripe.stripeStrings.invoiceDotsent
+  - typings.stripe.stripeStrings.invoiceDotupcoming
+  - typings.stripe.stripeStrings.invoiceDotupdated
+  - typings.stripe.stripeStrings.invoiceDotvoided
+  - typings.stripe.stripeStrings.invoiceitemDotcreated
+  - typings.stripe.stripeStrings.invoiceitemDotdeleted
+  - typings.stripe.stripeStrings.invoiceitemDotupdated
+  - typings.stripe.stripeStrings.issuing_authorizationDotcreated
+  - typings.stripe.stripeStrings.issuing_authorizationDotrequest
+  - typings.stripe.stripeStrings.issuing_authorizationDotupdated
+  - typings.stripe.stripeStrings.issuing_cardDotcreated
+  - typings.stripe.stripeStrings.issuing_cardDotupdated
+  - typings.stripe.stripeStrings.issuing_cardholderDotcreated
+  - typings.stripe.stripeStrings.issuing_cardholderDotupdated
+  - typings.stripe.stripeStrings.issuing_disputeDotcreated
+  - typings.stripe.stripeStrings.issuing_disputeDotupdated
+  - typings.stripe.stripeStrings.issuing_settlementDotcreated
+  - typings.stripe.stripeStrings.issuing_settlementDotupdated
+  - typings.stripe.stripeStrings.issuing_transactionDotcreated
+  - typings.stripe.stripeStrings.issuing_transactionDotupdated
+  - typings.stripe.stripeStrings.mandateDotupdated
+  - typings.stripe.stripeStrings.orderDotcreated
+  - typings.stripe.stripeStrings.orderDotpayment_failed
+  - typings.stripe.stripeStrings.orderDotpayment_succeeded
+  - typings.stripe.stripeStrings.orderDotupdated
+  - typings.stripe.stripeStrings.order_returnDotcreated
+  - typings.stripe.stripeStrings.payment_intentDotamount_capturable_updated
+  - typings.stripe.stripeStrings.payment_intentDotcanceled
+  - typings.stripe.stripeStrings.payment_intentDotcreated
+  - typings.stripe.stripeStrings.payment_intentDotpayment_failed
+  - typings.stripe.stripeStrings.payment_intentDotsucceeded
+  - typings.stripe.stripeStrings.payment_methodDotattached
+  - typings.stripe.stripeStrings.payment_methodDotcard_automatically_updated
+  - typings.stripe.stripeStrings.payment_methodDotdetached
+  - typings.stripe.stripeStrings.payment_methodDotupdated
+  - typings.stripe.stripeStrings.payoutDotcanceled
+  - typings.stripe.stripeStrings.payoutDotcreated
+  - typings.stripe.stripeStrings.payoutDotfailed
+  - typings.stripe.stripeStrings.payoutDotpaid
+  - typings.stripe.stripeStrings.payoutDotupdated
+  - typings.stripe.stripeStrings.personDotcreated
+  - typings.stripe.stripeStrings.personDotdeleted
+  - typings.stripe.stripeStrings.personDotupdated
+  - typings.stripe.stripeStrings.planDotcreated
+  - typings.stripe.stripeStrings.planDotdeleted
+  - typings.stripe.stripeStrings.planDotupdated
+  - typings.stripe.stripeStrings.productDotcreated
+  - typings.stripe.stripeStrings.productDotdeleted
+  - typings.stripe.stripeStrings.productDotupdated
+  - typings.stripe.stripeStrings.radarDotearly_fraud_warningDotcreated
+  - typings.stripe.stripeStrings.radarDotearly_fraud_warningDotupdated
+  - typings.stripe.stripeStrings.recipientDotcreated
+  - typings.stripe.stripeStrings.recipientDotdeleted
+  - typings.stripe.stripeStrings.recipientDotupdated
+  - typings.stripe.stripeStrings.reportingDotreport_runDotfailed
+  - typings.stripe.stripeStrings.reportingDotreport_runDotsucceeded
+  - typings.stripe.stripeStrings.reportingDotreport_typeDotupdated
+  - typings.stripe.stripeStrings.reviewDotclosed
+  - typings.stripe.stripeStrings.reviewDotopened
+  - typings.stripe.stripeStrings.setup_intentDotcanceled
+  - typings.stripe.stripeStrings.setup_intentDotcreated
+  - typings.stripe.stripeStrings.setup_intentDotsetup_failed
+  - typings.stripe.stripeStrings.setup_intentDotsucceeded
+  - typings.stripe.stripeStrings.sigmaDotscheduled_query_runDotcreated
+  - typings.stripe.stripeStrings.skuDotcreated
+  - typings.stripe.stripeStrings.skuDotdeleted
+  - typings.stripe.stripeStrings.skuDotupdated
+  - typings.stripe.stripeStrings.sourceDotcanceled
+  - typings.stripe.stripeStrings.sourceDotchargeable
+  - typings.stripe.stripeStrings.sourceDotfailed
+  - typings.stripe.stripeStrings.sourceDotmandate_notification
+  - typings.stripe.stripeStrings.sourceDotrefund_attributes_required
+  - typings.stripe.stripeStrings.sourceDottransactionDotcreated
+  - typings.stripe.stripeStrings.sourceDottransactionDotupdated
+  - typings.stripe.stripeStrings.subscription_scheduleDotaborted
+  - typings.stripe.stripeStrings.subscription_scheduleDotcanceled
+  - typings.stripe.stripeStrings.subscription_scheduleDotcompleted
+  - typings.stripe.stripeStrings.subscription_scheduleDotcreated
+  - typings.stripe.stripeStrings.subscription_scheduleDotexpiring
+  - typings.stripe.stripeStrings.subscription_scheduleDotreleased
+  - typings.stripe.stripeStrings.subscription_scheduleDotupdated
+  - typings.stripe.stripeStrings.tax_rateDotcreated
+  - typings.stripe.stripeStrings.tax_rateDotupdated
+  - typings.stripe.stripeStrings.topupDotcreated
+  - typings.stripe.stripeStrings.topupDotfailed
+  - typings.stripe.stripeStrings.topupDotreversed
+  - typings.stripe.stripeStrings.topupDotsucceeded
+  - typings.stripe.stripeStrings.transferDotcreated
+  - typings.stripe.stripeStrings.transferDotfailed
+  - typings.stripe.stripeStrings.transferDotpaid
+  - typings.stripe.stripeStrings.transferDotreversed
+  - typings.stripe.stripeStrings.transferDotupdated
 */
 trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  def `*`: typings.stripe.stripeStrings.`*` = this.cast("*")
+  def Asterisk: typings.stripe.stripeStrings.Asterisk = this.cast("*")
   @scala.inline
-  def accountDOTapplicationDOTauthorized: typings.stripe.stripeStrings.accountDOTapplicationDOTauthorized = this.cast("account.application.authorized")
+  def accountDotapplicationDotauthorized: typings.stripe.stripeStrings.accountDotapplicationDotauthorized = this.cast("account.application.authorized")
   @scala.inline
-  def accountDOTapplicationDOTdeauthorized: typings.stripe.stripeStrings.accountDOTapplicationDOTdeauthorized = this.cast("account.application.deauthorized")
+  def accountDotapplicationDotdeauthorized: typings.stripe.stripeStrings.accountDotapplicationDotdeauthorized = this.cast("account.application.deauthorized")
   @scala.inline
-  def accountDOTexternal_accountDOTcreated: typings.stripe.stripeStrings.accountDOTexternal_accountDOTcreated = this.cast("account.external_account.created")
+  def accountDotexternal_accountDotcreated: typings.stripe.stripeStrings.accountDotexternal_accountDotcreated = this.cast("account.external_account.created")
   @scala.inline
-  def accountDOTexternal_accountDOTdeleted: typings.stripe.stripeStrings.accountDOTexternal_accountDOTdeleted = this.cast("account.external_account.deleted")
+  def accountDotexternal_accountDotdeleted: typings.stripe.stripeStrings.accountDotexternal_accountDotdeleted = this.cast("account.external_account.deleted")
   @scala.inline
-  def accountDOTexternal_accountDOTupdated: typings.stripe.stripeStrings.accountDOTexternal_accountDOTupdated = this.cast("account.external_account.updated")
+  def accountDotexternal_accountDotupdated: typings.stripe.stripeStrings.accountDotexternal_accountDotupdated = this.cast("account.external_account.updated")
   @scala.inline
-  def accountDOTupdated: typings.stripe.stripeStrings.accountDOTupdated = this.cast("account.updated")
+  def accountDotupdated: typings.stripe.stripeStrings.accountDotupdated = this.cast("account.updated")
   @scala.inline
-  def application_feeDOTcreated: typings.stripe.stripeStrings.application_feeDOTcreated = this.cast("application_fee.created")
+  def application_feeDotcreated: typings.stripe.stripeStrings.application_feeDotcreated = this.cast("application_fee.created")
   @scala.inline
-  def application_feeDOTrefundDOTupdated: typings.stripe.stripeStrings.application_feeDOTrefundDOTupdated = this.cast("application_fee.refund.updated")
+  def application_feeDotrefundDotupdated: typings.stripe.stripeStrings.application_feeDotrefundDotupdated = this.cast("application_fee.refund.updated")
   @scala.inline
-  def application_feeDOTrefunded: typings.stripe.stripeStrings.application_feeDOTrefunded = this.cast("application_fee.refunded")
+  def application_feeDotrefunded: typings.stripe.stripeStrings.application_feeDotrefunded = this.cast("application_fee.refunded")
   @scala.inline
-  def balanceDOTavailable: typings.stripe.stripeStrings.balanceDOTavailable = this.cast("balance.available")
+  def balanceDotavailable: typings.stripe.stripeStrings.balanceDotavailable = this.cast("balance.available")
   @scala.inline
-  def capabilityDOTupdated: typings.stripe.stripeStrings.capabilityDOTupdated = this.cast("capability.updated")
+  def capabilityDotupdated: typings.stripe.stripeStrings.capabilityDotupdated = this.cast("capability.updated")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def chargeDOTcaptured: typings.stripe.stripeStrings.chargeDOTcaptured = this.cast("charge.captured")
+  def chargeDotcaptured: typings.stripe.stripeStrings.chargeDotcaptured = this.cast("charge.captured")
   @scala.inline
-  def chargeDOTdisputeDOTclosed: typings.stripe.stripeStrings.chargeDOTdisputeDOTclosed = this.cast("charge.dispute.closed")
+  def chargeDotdisputeDotclosed: typings.stripe.stripeStrings.chargeDotdisputeDotclosed = this.cast("charge.dispute.closed")
   @scala.inline
-  def chargeDOTdisputeDOTcreated: typings.stripe.stripeStrings.chargeDOTdisputeDOTcreated = this.cast("charge.dispute.created")
+  def chargeDotdisputeDotcreated: typings.stripe.stripeStrings.chargeDotdisputeDotcreated = this.cast("charge.dispute.created")
   @scala.inline
-  def chargeDOTdisputeDOTfunds_reinstated: typings.stripe.stripeStrings.chargeDOTdisputeDOTfunds_reinstated = this.cast("charge.dispute.funds_reinstated")
+  def chargeDotdisputeDotfunds_reinstated: typings.stripe.stripeStrings.chargeDotdisputeDotfunds_reinstated = this.cast("charge.dispute.funds_reinstated")
   @scala.inline
-  def chargeDOTdisputeDOTfunds_withdrawn: typings.stripe.stripeStrings.chargeDOTdisputeDOTfunds_withdrawn = this.cast("charge.dispute.funds_withdrawn")
+  def chargeDotdisputeDotfunds_withdrawn: typings.stripe.stripeStrings.chargeDotdisputeDotfunds_withdrawn = this.cast("charge.dispute.funds_withdrawn")
   @scala.inline
-  def chargeDOTdisputeDOTupdated: typings.stripe.stripeStrings.chargeDOTdisputeDOTupdated = this.cast("charge.dispute.updated")
+  def chargeDotdisputeDotupdated: typings.stripe.stripeStrings.chargeDotdisputeDotupdated = this.cast("charge.dispute.updated")
   @scala.inline
-  def chargeDOTexpired: typings.stripe.stripeStrings.chargeDOTexpired = this.cast("charge.expired")
+  def chargeDotexpired: typings.stripe.stripeStrings.chargeDotexpired = this.cast("charge.expired")
   @scala.inline
-  def chargeDOTfailed: typings.stripe.stripeStrings.chargeDOTfailed = this.cast("charge.failed")
+  def chargeDotfailed: typings.stripe.stripeStrings.chargeDotfailed = this.cast("charge.failed")
   @scala.inline
-  def chargeDOTpending: typings.stripe.stripeStrings.chargeDOTpending = this.cast("charge.pending")
+  def chargeDotpending: typings.stripe.stripeStrings.chargeDotpending = this.cast("charge.pending")
   @scala.inline
-  def chargeDOTrefundDOTupdated: typings.stripe.stripeStrings.chargeDOTrefundDOTupdated = this.cast("charge.refund.updated")
+  def chargeDotrefundDotupdated: typings.stripe.stripeStrings.chargeDotrefundDotupdated = this.cast("charge.refund.updated")
   @scala.inline
-  def chargeDOTrefunded: typings.stripe.stripeStrings.chargeDOTrefunded = this.cast("charge.refunded")
+  def chargeDotrefunded: typings.stripe.stripeStrings.chargeDotrefunded = this.cast("charge.refunded")
   @scala.inline
-  def chargeDOTsucceeded: typings.stripe.stripeStrings.chargeDOTsucceeded = this.cast("charge.succeeded")
+  def chargeDotsucceeded: typings.stripe.stripeStrings.chargeDotsucceeded = this.cast("charge.succeeded")
   @scala.inline
-  def chargeDOTupdated: typings.stripe.stripeStrings.chargeDOTupdated = this.cast("charge.updated")
+  def chargeDotupdated: typings.stripe.stripeStrings.chargeDotupdated = this.cast("charge.updated")
   @scala.inline
-  def checkoutDOTsessionDOTcompleted: typings.stripe.stripeStrings.checkoutDOTsessionDOTcompleted = this.cast("checkout.session.completed")
+  def checkoutDotsessionDotcompleted: typings.stripe.stripeStrings.checkoutDotsessionDotcompleted = this.cast("checkout.session.completed")
   @scala.inline
-  def couponDOTcreated: typings.stripe.stripeStrings.couponDOTcreated = this.cast("coupon.created")
+  def couponDotcreated: typings.stripe.stripeStrings.couponDotcreated = this.cast("coupon.created")
   @scala.inline
-  def couponDOTdeleted: typings.stripe.stripeStrings.couponDOTdeleted = this.cast("coupon.deleted")
+  def couponDotdeleted: typings.stripe.stripeStrings.couponDotdeleted = this.cast("coupon.deleted")
   @scala.inline
-  def couponDOTupdated: typings.stripe.stripeStrings.couponDOTupdated = this.cast("coupon.updated")
+  def couponDotupdated: typings.stripe.stripeStrings.couponDotupdated = this.cast("coupon.updated")
   @scala.inline
-  def credit_noteDOTcreated: typings.stripe.stripeStrings.credit_noteDOTcreated = this.cast("credit_note.created")
+  def credit_noteDotcreated: typings.stripe.stripeStrings.credit_noteDotcreated = this.cast("credit_note.created")
   @scala.inline
-  def credit_noteDOTupdated: typings.stripe.stripeStrings.credit_noteDOTupdated = this.cast("credit_note.updated")
+  def credit_noteDotupdated: typings.stripe.stripeStrings.credit_noteDotupdated = this.cast("credit_note.updated")
   @scala.inline
-  def credit_noteDOTvoided: typings.stripe.stripeStrings.credit_noteDOTvoided = this.cast("credit_note.voided")
+  def credit_noteDotvoided: typings.stripe.stripeStrings.credit_noteDotvoided = this.cast("credit_note.voided")
   @scala.inline
-  def customerDOTcreated: typings.stripe.stripeStrings.customerDOTcreated = this.cast("customer.created")
+  def customerDotcreated: typings.stripe.stripeStrings.customerDotcreated = this.cast("customer.created")
   @scala.inline
-  def customerDOTdeleted: typings.stripe.stripeStrings.customerDOTdeleted = this.cast("customer.deleted")
+  def customerDotdeleted: typings.stripe.stripeStrings.customerDotdeleted = this.cast("customer.deleted")
   @scala.inline
-  def customerDOTdiscountDOTcreated: typings.stripe.stripeStrings.customerDOTdiscountDOTcreated = this.cast("customer.discount.created")
+  def customerDotdiscountDotcreated: typings.stripe.stripeStrings.customerDotdiscountDotcreated = this.cast("customer.discount.created")
   @scala.inline
-  def customerDOTdiscountDOTdeleted: typings.stripe.stripeStrings.customerDOTdiscountDOTdeleted = this.cast("customer.discount.deleted")
+  def customerDotdiscountDotdeleted: typings.stripe.stripeStrings.customerDotdiscountDotdeleted = this.cast("customer.discount.deleted")
   @scala.inline
-  def customerDOTdiscountDOTupdated: typings.stripe.stripeStrings.customerDOTdiscountDOTupdated = this.cast("customer.discount.updated")
+  def customerDotdiscountDotupdated: typings.stripe.stripeStrings.customerDotdiscountDotupdated = this.cast("customer.discount.updated")
   @scala.inline
-  def customerDOTsourceDOTcreated: typings.stripe.stripeStrings.customerDOTsourceDOTcreated = this.cast("customer.source.created")
+  def customerDotsourceDotcreated: typings.stripe.stripeStrings.customerDotsourceDotcreated = this.cast("customer.source.created")
   @scala.inline
-  def customerDOTsourceDOTdeleted: typings.stripe.stripeStrings.customerDOTsourceDOTdeleted = this.cast("customer.source.deleted")
+  def customerDotsourceDotdeleted: typings.stripe.stripeStrings.customerDotsourceDotdeleted = this.cast("customer.source.deleted")
   @scala.inline
-  def customerDOTsourceDOTexpiring: typings.stripe.stripeStrings.customerDOTsourceDOTexpiring = this.cast("customer.source.expiring")
+  def customerDotsourceDotexpiring: typings.stripe.stripeStrings.customerDotsourceDotexpiring = this.cast("customer.source.expiring")
   @scala.inline
-  def customerDOTsourceDOTupdated: typings.stripe.stripeStrings.customerDOTsourceDOTupdated = this.cast("customer.source.updated")
+  def customerDotsourceDotupdated: typings.stripe.stripeStrings.customerDotsourceDotupdated = this.cast("customer.source.updated")
   @scala.inline
-  def customerDOTsubscriptionDOTcreated: typings.stripe.stripeStrings.customerDOTsubscriptionDOTcreated = this.cast("customer.subscription.created")
+  def customerDotsubscriptionDotcreated: typings.stripe.stripeStrings.customerDotsubscriptionDotcreated = this.cast("customer.subscription.created")
   @scala.inline
-  def customerDOTsubscriptionDOTdeleted: typings.stripe.stripeStrings.customerDOTsubscriptionDOTdeleted = this.cast("customer.subscription.deleted")
+  def customerDotsubscriptionDotdeleted: typings.stripe.stripeStrings.customerDotsubscriptionDotdeleted = this.cast("customer.subscription.deleted")
   @scala.inline
-  def customerDOTsubscriptionDOTtrial_will_end: typings.stripe.stripeStrings.customerDOTsubscriptionDOTtrial_will_end = this.cast("customer.subscription.trial_will_end")
+  def customerDotsubscriptionDottrial_will_end: typings.stripe.stripeStrings.customerDotsubscriptionDottrial_will_end = this.cast("customer.subscription.trial_will_end")
   @scala.inline
-  def customerDOTsubscriptionDOTupdated: typings.stripe.stripeStrings.customerDOTsubscriptionDOTupdated = this.cast("customer.subscription.updated")
+  def customerDotsubscriptionDotupdated: typings.stripe.stripeStrings.customerDotsubscriptionDotupdated = this.cast("customer.subscription.updated")
   @scala.inline
-  def customerDOTtax_idDOTcreated: typings.stripe.stripeStrings.customerDOTtax_idDOTcreated = this.cast("customer.tax_id.created")
+  def customerDottax_idDotcreated: typings.stripe.stripeStrings.customerDottax_idDotcreated = this.cast("customer.tax_id.created")
   @scala.inline
-  def customerDOTtax_idDOTdeleted: typings.stripe.stripeStrings.customerDOTtax_idDOTdeleted = this.cast("customer.tax_id.deleted")
+  def customerDottax_idDotdeleted: typings.stripe.stripeStrings.customerDottax_idDotdeleted = this.cast("customer.tax_id.deleted")
   @scala.inline
-  def customerDOTtax_idDOTupdated: typings.stripe.stripeStrings.customerDOTtax_idDOTupdated = this.cast("customer.tax_id.updated")
+  def customerDottax_idDotupdated: typings.stripe.stripeStrings.customerDottax_idDotupdated = this.cast("customer.tax_id.updated")
   @scala.inline
-  def customerDOTupdated: typings.stripe.stripeStrings.customerDOTupdated = this.cast("customer.updated")
+  def customerDotupdated: typings.stripe.stripeStrings.customerDotupdated = this.cast("customer.updated")
   @scala.inline
-  def fileDOTcreated: typings.stripe.stripeStrings.fileDOTcreated = this.cast("file.created")
+  def fileDotcreated: typings.stripe.stripeStrings.fileDotcreated = this.cast("file.created")
   @scala.inline
-  def invoiceDOTcreated: typings.stripe.stripeStrings.invoiceDOTcreated = this.cast("invoice.created")
+  def invoiceDotcreated: typings.stripe.stripeStrings.invoiceDotcreated = this.cast("invoice.created")
   @scala.inline
-  def invoiceDOTdeleted: typings.stripe.stripeStrings.invoiceDOTdeleted = this.cast("invoice.deleted")
+  def invoiceDotdeleted: typings.stripe.stripeStrings.invoiceDotdeleted = this.cast("invoice.deleted")
   @scala.inline
-  def invoiceDOTfinalized: typings.stripe.stripeStrings.invoiceDOTfinalized = this.cast("invoice.finalized")
+  def invoiceDotfinalized: typings.stripe.stripeStrings.invoiceDotfinalized = this.cast("invoice.finalized")
   @scala.inline
-  def invoiceDOTmarked_uncollectible: typings.stripe.stripeStrings.invoiceDOTmarked_uncollectible = this.cast("invoice.marked_uncollectible")
+  def invoiceDotmarked_uncollectible: typings.stripe.stripeStrings.invoiceDotmarked_uncollectible = this.cast("invoice.marked_uncollectible")
   @scala.inline
-  def invoiceDOTpayment_action_required: typings.stripe.stripeStrings.invoiceDOTpayment_action_required = this.cast("invoice.payment_action_required")
+  def invoiceDotpayment_action_required: typings.stripe.stripeStrings.invoiceDotpayment_action_required = this.cast("invoice.payment_action_required")
   @scala.inline
-  def invoiceDOTpayment_failed: typings.stripe.stripeStrings.invoiceDOTpayment_failed = this.cast("invoice.payment_failed")
+  def invoiceDotpayment_failed: typings.stripe.stripeStrings.invoiceDotpayment_failed = this.cast("invoice.payment_failed")
   @scala.inline
-  def invoiceDOTpayment_succeeded: typings.stripe.stripeStrings.invoiceDOTpayment_succeeded = this.cast("invoice.payment_succeeded")
+  def invoiceDotpayment_succeeded: typings.stripe.stripeStrings.invoiceDotpayment_succeeded = this.cast("invoice.payment_succeeded")
   @scala.inline
-  def invoiceDOTsent: typings.stripe.stripeStrings.invoiceDOTsent = this.cast("invoice.sent")
+  def invoiceDotsent: typings.stripe.stripeStrings.invoiceDotsent = this.cast("invoice.sent")
   @scala.inline
-  def invoiceDOTupcoming: typings.stripe.stripeStrings.invoiceDOTupcoming = this.cast("invoice.upcoming")
+  def invoiceDotupcoming: typings.stripe.stripeStrings.invoiceDotupcoming = this.cast("invoice.upcoming")
   @scala.inline
-  def invoiceDOTupdated: typings.stripe.stripeStrings.invoiceDOTupdated = this.cast("invoice.updated")
+  def invoiceDotupdated: typings.stripe.stripeStrings.invoiceDotupdated = this.cast("invoice.updated")
   @scala.inline
-  def invoiceDOTvoided: typings.stripe.stripeStrings.invoiceDOTvoided = this.cast("invoice.voided")
+  def invoiceDotvoided: typings.stripe.stripeStrings.invoiceDotvoided = this.cast("invoice.voided")
   @scala.inline
-  def invoiceitemDOTcreated: typings.stripe.stripeStrings.invoiceitemDOTcreated = this.cast("invoiceitem.created")
+  def invoiceitemDotcreated: typings.stripe.stripeStrings.invoiceitemDotcreated = this.cast("invoiceitem.created")
   @scala.inline
-  def invoiceitemDOTdeleted: typings.stripe.stripeStrings.invoiceitemDOTdeleted = this.cast("invoiceitem.deleted")
+  def invoiceitemDotdeleted: typings.stripe.stripeStrings.invoiceitemDotdeleted = this.cast("invoiceitem.deleted")
   @scala.inline
-  def invoiceitemDOTupdated: typings.stripe.stripeStrings.invoiceitemDOTupdated = this.cast("invoiceitem.updated")
+  def invoiceitemDotupdated: typings.stripe.stripeStrings.invoiceitemDotupdated = this.cast("invoiceitem.updated")
   @scala.inline
-  def issuing_authorizationDOTcreated: typings.stripe.stripeStrings.issuing_authorizationDOTcreated = this.cast("issuing_authorization.created")
+  def issuing_authorizationDotcreated: typings.stripe.stripeStrings.issuing_authorizationDotcreated = this.cast("issuing_authorization.created")
   @scala.inline
-  def issuing_authorizationDOTrequest: typings.stripe.stripeStrings.issuing_authorizationDOTrequest = this.cast("issuing_authorization.request")
+  def issuing_authorizationDotrequest: typings.stripe.stripeStrings.issuing_authorizationDotrequest = this.cast("issuing_authorization.request")
   @scala.inline
-  def issuing_authorizationDOTupdated: typings.stripe.stripeStrings.issuing_authorizationDOTupdated = this.cast("issuing_authorization.updated")
+  def issuing_authorizationDotupdated: typings.stripe.stripeStrings.issuing_authorizationDotupdated = this.cast("issuing_authorization.updated")
   @scala.inline
-  def issuing_cardDOTcreated: typings.stripe.stripeStrings.issuing_cardDOTcreated = this.cast("issuing_card.created")
+  def issuing_cardDotcreated: typings.stripe.stripeStrings.issuing_cardDotcreated = this.cast("issuing_card.created")
   @scala.inline
-  def issuing_cardDOTupdated: typings.stripe.stripeStrings.issuing_cardDOTupdated = this.cast("issuing_card.updated")
+  def issuing_cardDotupdated: typings.stripe.stripeStrings.issuing_cardDotupdated = this.cast("issuing_card.updated")
   @scala.inline
-  def issuing_cardholderDOTcreated: typings.stripe.stripeStrings.issuing_cardholderDOTcreated = this.cast("issuing_cardholder.created")
+  def issuing_cardholderDotcreated: typings.stripe.stripeStrings.issuing_cardholderDotcreated = this.cast("issuing_cardholder.created")
   @scala.inline
-  def issuing_cardholderDOTupdated: typings.stripe.stripeStrings.issuing_cardholderDOTupdated = this.cast("issuing_cardholder.updated")
+  def issuing_cardholderDotupdated: typings.stripe.stripeStrings.issuing_cardholderDotupdated = this.cast("issuing_cardholder.updated")
   @scala.inline
-  def issuing_disputeDOTcreated: typings.stripe.stripeStrings.issuing_disputeDOTcreated = this.cast("issuing_dispute.created")
+  def issuing_disputeDotcreated: typings.stripe.stripeStrings.issuing_disputeDotcreated = this.cast("issuing_dispute.created")
   @scala.inline
-  def issuing_disputeDOTupdated: typings.stripe.stripeStrings.issuing_disputeDOTupdated = this.cast("issuing_dispute.updated")
+  def issuing_disputeDotupdated: typings.stripe.stripeStrings.issuing_disputeDotupdated = this.cast("issuing_dispute.updated")
   @scala.inline
-  def issuing_settlementDOTcreated: typings.stripe.stripeStrings.issuing_settlementDOTcreated = this.cast("issuing_settlement.created")
+  def issuing_settlementDotcreated: typings.stripe.stripeStrings.issuing_settlementDotcreated = this.cast("issuing_settlement.created")
   @scala.inline
-  def issuing_settlementDOTupdated: typings.stripe.stripeStrings.issuing_settlementDOTupdated = this.cast("issuing_settlement.updated")
+  def issuing_settlementDotupdated: typings.stripe.stripeStrings.issuing_settlementDotupdated = this.cast("issuing_settlement.updated")
   @scala.inline
-  def issuing_transactionDOTcreated: typings.stripe.stripeStrings.issuing_transactionDOTcreated = this.cast("issuing_transaction.created")
+  def issuing_transactionDotcreated: typings.stripe.stripeStrings.issuing_transactionDotcreated = this.cast("issuing_transaction.created")
   @scala.inline
-  def issuing_transactionDOTupdated: typings.stripe.stripeStrings.issuing_transactionDOTupdated = this.cast("issuing_transaction.updated")
+  def issuing_transactionDotupdated: typings.stripe.stripeStrings.issuing_transactionDotupdated = this.cast("issuing_transaction.updated")
   @scala.inline
-  def mandateDOTupdated: typings.stripe.stripeStrings.mandateDOTupdated = this.cast("mandate.updated")
+  def mandateDotupdated: typings.stripe.stripeStrings.mandateDotupdated = this.cast("mandate.updated")
   @scala.inline
-  def orderDOTcreated: typings.stripe.stripeStrings.orderDOTcreated = this.cast("order.created")
+  def orderDotcreated: typings.stripe.stripeStrings.orderDotcreated = this.cast("order.created")
   @scala.inline
-  def orderDOTpayment_failed: typings.stripe.stripeStrings.orderDOTpayment_failed = this.cast("order.payment_failed")
+  def orderDotpayment_failed: typings.stripe.stripeStrings.orderDotpayment_failed = this.cast("order.payment_failed")
   @scala.inline
-  def orderDOTpayment_succeeded: typings.stripe.stripeStrings.orderDOTpayment_succeeded = this.cast("order.payment_succeeded")
+  def orderDotpayment_succeeded: typings.stripe.stripeStrings.orderDotpayment_succeeded = this.cast("order.payment_succeeded")
   @scala.inline
-  def orderDOTupdated: typings.stripe.stripeStrings.orderDOTupdated = this.cast("order.updated")
+  def orderDotupdated: typings.stripe.stripeStrings.orderDotupdated = this.cast("order.updated")
   @scala.inline
-  def order_returnDOTcreated: typings.stripe.stripeStrings.order_returnDOTcreated = this.cast("order_return.created")
+  def order_returnDotcreated: typings.stripe.stripeStrings.order_returnDotcreated = this.cast("order_return.created")
   @scala.inline
-  def payment_intentDOTamount_capturable_updated: typings.stripe.stripeStrings.payment_intentDOTamount_capturable_updated = this.cast("payment_intent.amount_capturable_updated")
+  def payment_intentDotamount_capturable_updated: typings.stripe.stripeStrings.payment_intentDotamount_capturable_updated = this.cast("payment_intent.amount_capturable_updated")
   @scala.inline
-  def payment_intentDOTcanceled: typings.stripe.stripeStrings.payment_intentDOTcanceled = this.cast("payment_intent.canceled")
+  def payment_intentDotcanceled: typings.stripe.stripeStrings.payment_intentDotcanceled = this.cast("payment_intent.canceled")
   @scala.inline
-  def payment_intentDOTcreated: typings.stripe.stripeStrings.payment_intentDOTcreated = this.cast("payment_intent.created")
+  def payment_intentDotcreated: typings.stripe.stripeStrings.payment_intentDotcreated = this.cast("payment_intent.created")
   @scala.inline
-  def payment_intentDOTpayment_failed: typings.stripe.stripeStrings.payment_intentDOTpayment_failed = this.cast("payment_intent.payment_failed")
+  def payment_intentDotpayment_failed: typings.stripe.stripeStrings.payment_intentDotpayment_failed = this.cast("payment_intent.payment_failed")
   @scala.inline
-  def payment_intentDOTsucceeded: typings.stripe.stripeStrings.payment_intentDOTsucceeded = this.cast("payment_intent.succeeded")
+  def payment_intentDotsucceeded: typings.stripe.stripeStrings.payment_intentDotsucceeded = this.cast("payment_intent.succeeded")
   @scala.inline
-  def payment_methodDOTattached: typings.stripe.stripeStrings.payment_methodDOTattached = this.cast("payment_method.attached")
+  def payment_methodDotattached: typings.stripe.stripeStrings.payment_methodDotattached = this.cast("payment_method.attached")
   @scala.inline
-  def payment_methodDOTcard_automatically_updated: typings.stripe.stripeStrings.payment_methodDOTcard_automatically_updated = this.cast("payment_method.card_automatically_updated")
+  def payment_methodDotcard_automatically_updated: typings.stripe.stripeStrings.payment_methodDotcard_automatically_updated = this.cast("payment_method.card_automatically_updated")
   @scala.inline
-  def payment_methodDOTdetached: typings.stripe.stripeStrings.payment_methodDOTdetached = this.cast("payment_method.detached")
+  def payment_methodDotdetached: typings.stripe.stripeStrings.payment_methodDotdetached = this.cast("payment_method.detached")
   @scala.inline
-  def payment_methodDOTupdated: typings.stripe.stripeStrings.payment_methodDOTupdated = this.cast("payment_method.updated")
+  def payment_methodDotupdated: typings.stripe.stripeStrings.payment_methodDotupdated = this.cast("payment_method.updated")
   @scala.inline
-  def payoutDOTcanceled: typings.stripe.stripeStrings.payoutDOTcanceled = this.cast("payout.canceled")
+  def payoutDotcanceled: typings.stripe.stripeStrings.payoutDotcanceled = this.cast("payout.canceled")
   @scala.inline
-  def payoutDOTcreated: typings.stripe.stripeStrings.payoutDOTcreated = this.cast("payout.created")
+  def payoutDotcreated: typings.stripe.stripeStrings.payoutDotcreated = this.cast("payout.created")
   @scala.inline
-  def payoutDOTfailed: typings.stripe.stripeStrings.payoutDOTfailed = this.cast("payout.failed")
+  def payoutDotfailed: typings.stripe.stripeStrings.payoutDotfailed = this.cast("payout.failed")
   @scala.inline
-  def payoutDOTpaid: typings.stripe.stripeStrings.payoutDOTpaid = this.cast("payout.paid")
+  def payoutDotpaid: typings.stripe.stripeStrings.payoutDotpaid = this.cast("payout.paid")
   @scala.inline
-  def payoutDOTupdated: typings.stripe.stripeStrings.payoutDOTupdated = this.cast("payout.updated")
+  def payoutDotupdated: typings.stripe.stripeStrings.payoutDotupdated = this.cast("payout.updated")
   @scala.inline
-  def personDOTcreated: typings.stripe.stripeStrings.personDOTcreated = this.cast("person.created")
+  def personDotcreated: typings.stripe.stripeStrings.personDotcreated = this.cast("person.created")
   @scala.inline
-  def personDOTdeleted: typings.stripe.stripeStrings.personDOTdeleted = this.cast("person.deleted")
+  def personDotdeleted: typings.stripe.stripeStrings.personDotdeleted = this.cast("person.deleted")
   @scala.inline
-  def personDOTupdated: typings.stripe.stripeStrings.personDOTupdated = this.cast("person.updated")
+  def personDotupdated: typings.stripe.stripeStrings.personDotupdated = this.cast("person.updated")
   @scala.inline
-  def planDOTcreated: typings.stripe.stripeStrings.planDOTcreated = this.cast("plan.created")
+  def planDotcreated: typings.stripe.stripeStrings.planDotcreated = this.cast("plan.created")
   @scala.inline
-  def planDOTdeleted: typings.stripe.stripeStrings.planDOTdeleted = this.cast("plan.deleted")
+  def planDotdeleted: typings.stripe.stripeStrings.planDotdeleted = this.cast("plan.deleted")
   @scala.inline
-  def planDOTupdated: typings.stripe.stripeStrings.planDOTupdated = this.cast("plan.updated")
+  def planDotupdated: typings.stripe.stripeStrings.planDotupdated = this.cast("plan.updated")
   @scala.inline
-  def productDOTcreated: typings.stripe.stripeStrings.productDOTcreated = this.cast("product.created")
+  def productDotcreated: typings.stripe.stripeStrings.productDotcreated = this.cast("product.created")
   @scala.inline
-  def productDOTdeleted: typings.stripe.stripeStrings.productDOTdeleted = this.cast("product.deleted")
+  def productDotdeleted: typings.stripe.stripeStrings.productDotdeleted = this.cast("product.deleted")
   @scala.inline
-  def productDOTupdated: typings.stripe.stripeStrings.productDOTupdated = this.cast("product.updated")
+  def productDotupdated: typings.stripe.stripeStrings.productDotupdated = this.cast("product.updated")
   @scala.inline
-  def radarDOTearly_fraud_warningDOTcreated: typings.stripe.stripeStrings.radarDOTearly_fraud_warningDOTcreated = this.cast("radar.early_fraud_warning.created")
+  def radarDotearly_fraud_warningDotcreated: typings.stripe.stripeStrings.radarDotearly_fraud_warningDotcreated = this.cast("radar.early_fraud_warning.created")
   @scala.inline
-  def radarDOTearly_fraud_warningDOTupdated: typings.stripe.stripeStrings.radarDOTearly_fraud_warningDOTupdated = this.cast("radar.early_fraud_warning.updated")
+  def radarDotearly_fraud_warningDotupdated: typings.stripe.stripeStrings.radarDotearly_fraud_warningDotupdated = this.cast("radar.early_fraud_warning.updated")
   @scala.inline
-  def recipientDOTcreated: typings.stripe.stripeStrings.recipientDOTcreated = this.cast("recipient.created")
+  def recipientDotcreated: typings.stripe.stripeStrings.recipientDotcreated = this.cast("recipient.created")
   @scala.inline
-  def recipientDOTdeleted: typings.stripe.stripeStrings.recipientDOTdeleted = this.cast("recipient.deleted")
+  def recipientDotdeleted: typings.stripe.stripeStrings.recipientDotdeleted = this.cast("recipient.deleted")
   @scala.inline
-  def recipientDOTupdated: typings.stripe.stripeStrings.recipientDOTupdated = this.cast("recipient.updated")
+  def recipientDotupdated: typings.stripe.stripeStrings.recipientDotupdated = this.cast("recipient.updated")
   @scala.inline
-  def reportingDOTreport_runDOTfailed: typings.stripe.stripeStrings.reportingDOTreport_runDOTfailed = this.cast("reporting.report_run.failed")
+  def reportingDotreport_runDotfailed: typings.stripe.stripeStrings.reportingDotreport_runDotfailed = this.cast("reporting.report_run.failed")
   @scala.inline
-  def reportingDOTreport_runDOTsucceeded: typings.stripe.stripeStrings.reportingDOTreport_runDOTsucceeded = this.cast("reporting.report_run.succeeded")
+  def reportingDotreport_runDotsucceeded: typings.stripe.stripeStrings.reportingDotreport_runDotsucceeded = this.cast("reporting.report_run.succeeded")
   @scala.inline
-  def reportingDOTreport_typeDOTupdated: typings.stripe.stripeStrings.reportingDOTreport_typeDOTupdated = this.cast("reporting.report_type.updated")
+  def reportingDotreport_typeDotupdated: typings.stripe.stripeStrings.reportingDotreport_typeDotupdated = this.cast("reporting.report_type.updated")
   @scala.inline
-  def reviewDOTclosed: typings.stripe.stripeStrings.reviewDOTclosed = this.cast("review.closed")
+  def reviewDotclosed: typings.stripe.stripeStrings.reviewDotclosed = this.cast("review.closed")
   @scala.inline
-  def reviewDOTopened: typings.stripe.stripeStrings.reviewDOTopened = this.cast("review.opened")
+  def reviewDotopened: typings.stripe.stripeStrings.reviewDotopened = this.cast("review.opened")
   @scala.inline
-  def setup_intentDOTcanceled: typings.stripe.stripeStrings.setup_intentDOTcanceled = this.cast("setup_intent.canceled")
+  def setup_intentDotcanceled: typings.stripe.stripeStrings.setup_intentDotcanceled = this.cast("setup_intent.canceled")
   @scala.inline
-  def setup_intentDOTcreated: typings.stripe.stripeStrings.setup_intentDOTcreated = this.cast("setup_intent.created")
+  def setup_intentDotcreated: typings.stripe.stripeStrings.setup_intentDotcreated = this.cast("setup_intent.created")
   @scala.inline
-  def setup_intentDOTsetup_failed: typings.stripe.stripeStrings.setup_intentDOTsetup_failed = this.cast("setup_intent.setup_failed")
+  def setup_intentDotsetup_failed: typings.stripe.stripeStrings.setup_intentDotsetup_failed = this.cast("setup_intent.setup_failed")
   @scala.inline
-  def setup_intentDOTsucceeded: typings.stripe.stripeStrings.setup_intentDOTsucceeded = this.cast("setup_intent.succeeded")
+  def setup_intentDotsucceeded: typings.stripe.stripeStrings.setup_intentDotsucceeded = this.cast("setup_intent.succeeded")
   @scala.inline
-  def sigmaDOTscheduled_query_runDOTcreated: typings.stripe.stripeStrings.sigmaDOTscheduled_query_runDOTcreated = this.cast("sigma.scheduled_query_run.created")
+  def sigmaDotscheduled_query_runDotcreated: typings.stripe.stripeStrings.sigmaDotscheduled_query_runDotcreated = this.cast("sigma.scheduled_query_run.created")
   @scala.inline
-  def skuDOTcreated: typings.stripe.stripeStrings.skuDOTcreated = this.cast("sku.created")
+  def skuDotcreated: typings.stripe.stripeStrings.skuDotcreated = this.cast("sku.created")
   @scala.inline
-  def skuDOTdeleted: typings.stripe.stripeStrings.skuDOTdeleted = this.cast("sku.deleted")
+  def skuDotdeleted: typings.stripe.stripeStrings.skuDotdeleted = this.cast("sku.deleted")
   @scala.inline
-  def skuDOTupdated: typings.stripe.stripeStrings.skuDOTupdated = this.cast("sku.updated")
+  def skuDotupdated: typings.stripe.stripeStrings.skuDotupdated = this.cast("sku.updated")
   @scala.inline
-  def sourceDOTcanceled: typings.stripe.stripeStrings.sourceDOTcanceled = this.cast("source.canceled")
+  def sourceDotcanceled: typings.stripe.stripeStrings.sourceDotcanceled = this.cast("source.canceled")
   @scala.inline
-  def sourceDOTchargeable: typings.stripe.stripeStrings.sourceDOTchargeable = this.cast("source.chargeable")
+  def sourceDotchargeable: typings.stripe.stripeStrings.sourceDotchargeable = this.cast("source.chargeable")
   @scala.inline
-  def sourceDOTfailed: typings.stripe.stripeStrings.sourceDOTfailed = this.cast("source.failed")
+  def sourceDotfailed: typings.stripe.stripeStrings.sourceDotfailed = this.cast("source.failed")
   @scala.inline
-  def sourceDOTmandate_notification: typings.stripe.stripeStrings.sourceDOTmandate_notification = this.cast("source.mandate_notification")
+  def sourceDotmandate_notification: typings.stripe.stripeStrings.sourceDotmandate_notification = this.cast("source.mandate_notification")
   @scala.inline
-  def sourceDOTrefund_attributes_required: typings.stripe.stripeStrings.sourceDOTrefund_attributes_required = this.cast("source.refund_attributes_required")
+  def sourceDotrefund_attributes_required: typings.stripe.stripeStrings.sourceDotrefund_attributes_required = this.cast("source.refund_attributes_required")
   @scala.inline
-  def sourceDOTtransactionDOTcreated: typings.stripe.stripeStrings.sourceDOTtransactionDOTcreated = this.cast("source.transaction.created")
+  def sourceDottransactionDotcreated: typings.stripe.stripeStrings.sourceDottransactionDotcreated = this.cast("source.transaction.created")
   @scala.inline
-  def sourceDOTtransactionDOTupdated: typings.stripe.stripeStrings.sourceDOTtransactionDOTupdated = this.cast("source.transaction.updated")
+  def sourceDottransactionDotupdated: typings.stripe.stripeStrings.sourceDottransactionDotupdated = this.cast("source.transaction.updated")
   @scala.inline
-  def subscription_scheduleDOTaborted: typings.stripe.stripeStrings.subscription_scheduleDOTaborted = this.cast("subscription_schedule.aborted")
+  def subscription_scheduleDotaborted: typings.stripe.stripeStrings.subscription_scheduleDotaborted = this.cast("subscription_schedule.aborted")
   @scala.inline
-  def subscription_scheduleDOTcanceled: typings.stripe.stripeStrings.subscription_scheduleDOTcanceled = this.cast("subscription_schedule.canceled")
+  def subscription_scheduleDotcanceled: typings.stripe.stripeStrings.subscription_scheduleDotcanceled = this.cast("subscription_schedule.canceled")
   @scala.inline
-  def subscription_scheduleDOTcompleted: typings.stripe.stripeStrings.subscription_scheduleDOTcompleted = this.cast("subscription_schedule.completed")
+  def subscription_scheduleDotcompleted: typings.stripe.stripeStrings.subscription_scheduleDotcompleted = this.cast("subscription_schedule.completed")
   @scala.inline
-  def subscription_scheduleDOTcreated: typings.stripe.stripeStrings.subscription_scheduleDOTcreated = this.cast("subscription_schedule.created")
+  def subscription_scheduleDotcreated: typings.stripe.stripeStrings.subscription_scheduleDotcreated = this.cast("subscription_schedule.created")
   @scala.inline
-  def subscription_scheduleDOTexpiring: typings.stripe.stripeStrings.subscription_scheduleDOTexpiring = this.cast("subscription_schedule.expiring")
+  def subscription_scheduleDotexpiring: typings.stripe.stripeStrings.subscription_scheduleDotexpiring = this.cast("subscription_schedule.expiring")
   @scala.inline
-  def subscription_scheduleDOTreleased: typings.stripe.stripeStrings.subscription_scheduleDOTreleased = this.cast("subscription_schedule.released")
+  def subscription_scheduleDotreleased: typings.stripe.stripeStrings.subscription_scheduleDotreleased = this.cast("subscription_schedule.released")
   @scala.inline
-  def subscription_scheduleDOTupdated: typings.stripe.stripeStrings.subscription_scheduleDOTupdated = this.cast("subscription_schedule.updated")
+  def subscription_scheduleDotupdated: typings.stripe.stripeStrings.subscription_scheduleDotupdated = this.cast("subscription_schedule.updated")
   @scala.inline
-  def tax_rateDOTcreated: typings.stripe.stripeStrings.tax_rateDOTcreated = this.cast("tax_rate.created")
+  def tax_rateDotcreated: typings.stripe.stripeStrings.tax_rateDotcreated = this.cast("tax_rate.created")
   @scala.inline
-  def tax_rateDOTupdated: typings.stripe.stripeStrings.tax_rateDOTupdated = this.cast("tax_rate.updated")
+  def tax_rateDotupdated: typings.stripe.stripeStrings.tax_rateDotupdated = this.cast("tax_rate.updated")
   @scala.inline
-  def topupDOTcreated: typings.stripe.stripeStrings.topupDOTcreated = this.cast("topup.created")
+  def topupDotcreated: typings.stripe.stripeStrings.topupDotcreated = this.cast("topup.created")
   @scala.inline
-  def topupDOTfailed: typings.stripe.stripeStrings.topupDOTfailed = this.cast("topup.failed")
+  def topupDotfailed: typings.stripe.stripeStrings.topupDotfailed = this.cast("topup.failed")
   @scala.inline
-  def topupDOTreversed: typings.stripe.stripeStrings.topupDOTreversed = this.cast("topup.reversed")
+  def topupDotreversed: typings.stripe.stripeStrings.topupDotreversed = this.cast("topup.reversed")
   @scala.inline
-  def topupDOTsucceeded: typings.stripe.stripeStrings.topupDOTsucceeded = this.cast("topup.succeeded")
+  def topupDotsucceeded: typings.stripe.stripeStrings.topupDotsucceeded = this.cast("topup.succeeded")
   @scala.inline
-  def transferDOTcreated: typings.stripe.stripeStrings.transferDOTcreated = this.cast("transfer.created")
+  def transferDotcreated: typings.stripe.stripeStrings.transferDotcreated = this.cast("transfer.created")
   @scala.inline
-  def transferDOTfailed: typings.stripe.stripeStrings.transferDOTfailed = this.cast("transfer.failed")
+  def transferDotfailed: typings.stripe.stripeStrings.transferDotfailed = this.cast("transfer.failed")
   @scala.inline
-  def transferDOTpaid: typings.stripe.stripeStrings.transferDOTpaid = this.cast("transfer.paid")
+  def transferDotpaid: typings.stripe.stripeStrings.transferDotpaid = this.cast("transfer.paid")
   @scala.inline
-  def transferDOTreversed: typings.stripe.stripeStrings.transferDOTreversed = this.cast("transfer.reversed")
+  def transferDotreversed: typings.stripe.stripeStrings.transferDotreversed = this.cast("transfer.reversed")
   @scala.inline
-  def transferDOTupdated: typings.stripe.stripeStrings.transferDOTupdated = this.cast("transfer.updated")
+  def transferDotupdated: typings.stripe.stripeStrings.transferDotupdated = this.cast("transfer.updated")
 }
 

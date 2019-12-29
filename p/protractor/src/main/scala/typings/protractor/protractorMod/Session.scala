@@ -16,6 +16,6 @@ class Session protected ()
     *     capabilities.
     * @constructor
     */
-  def this(id: String, capabilities: typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Capabilities) = this()
+  def this(id: String, capabilities: typings.seleniumDashWebdriver.libCapabilitiesMod.Capabilities) = this()
 }
 

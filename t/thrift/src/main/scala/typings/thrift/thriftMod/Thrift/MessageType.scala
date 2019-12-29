@@ -1,10 +1,6 @@
 package typings.thrift.thriftMod.Thrift
 
 import org.scalablytyped.runtime.TopLevel
-import typings.thrift.thriftMod.Thrift.MessageType.CALL
-import typings.thrift.thriftMod.Thrift.MessageType.EXCEPTION
-import typings.thrift.thriftMod.Thrift.MessageType.ONEWAY
-import typings.thrift.thriftMod.Thrift.MessageType.REPLY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

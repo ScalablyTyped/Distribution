@@ -4,7 +4,7 @@ import typings.semanticDashUiDashVisibility.JQuery
 import typings.semanticDashUiDashVisibility.SemanticUI.Visibility.ClassNameSettings
 import typings.semanticDashUiDashVisibility.SemanticUI.Visibility.ElementCalculations
 import typings.semanticDashUiDashVisibility.SemanticUI.Visibility.ErrorSettings
-import typings.semanticDashUiDashVisibility.semanticDashUiDashVisibilityNumbers.`false`
+import typings.semanticDashUiDashVisibility.semanticDashUiDashVisibilityBooleans.`false`
 import typings.semanticDashUiDashVisibility.semanticDashUiDashVisibilityStrings.fixed
 import typings.semanticDashUiDashVisibility.semanticDashUiDashVisibilityStrings.image
 import scala.scalajs.js
@@ -148,23 +148,23 @@ trait _Impl extends js.Object {
     *
     * @since 2.2
     */
-  def onAllLoaded(`this`: JQuery): Unit
+  def onAllLoaded(): Unit
   /**
     * Element's bottom edge has passed top of screen
     */
-  def onBottomPassed(`this`: JQuery): Unit
+  def onBottomPassed(): Unit
   /**
     * Element's bottom edge has not passed top of screen
     */
-  def onBottomPassedReverse(`this`: JQuery): Unit
+  def onBottomPassedReverse(): Unit
   /**
     * Element's bottom edge has passed bottom of screen
     */
-  def onBottomVisible(`this`: JQuery): Unit
+  def onBottomVisible(): Unit
   /**
     * Element's bottom edge has not passed bottom of screen
     */
-  def onBottomVisibleReverse(`this`: JQuery): Unit
+  def onBottomVisibleReverse(): Unit
   // endregion
   // region Fixed Callbacks
   /**
@@ -172,7 +172,7 @@ trait _Impl extends js.Object {
     *
     * @since 2.2
     */
-  def onFixed(`this`: JQuery): Unit
+  def onFixed(): Unit
   // endregion
   // region Image Callbacks
   /**
@@ -180,51 +180,51 @@ trait _Impl extends js.Object {
     *
     * @since 2.2
     */
-  def onLoad(`this`: JQuery): Unit
-  def onOffScreen(`this`: JQuery): Unit
-  def onOnScreen(`this`: JQuery): Unit
+  def onLoad(): Unit
+  def onOffScreen(): Unit
+  def onOnScreen(): Unit
   /**
     * Any part of an element is visible on screen
     */
-  def onPassing(`this`: JQuery): Unit
+  def onPassing(): Unit
   /**
     * Element's top has not passed top of screen but bottom has
     */
-  def onPassingReverse(`this`: JQuery): Unit
+  def onPassingReverse(): Unit
   /**
     * Occurs whenever element's visibility is refreshed
     */
-  def onRefresh(`this`: JQuery): Unit
+  def onRefresh(): Unit
   /**
     * Element's top edge has passed top of the screen
     */
-  def onTopPassed(`this`: JQuery): Unit
+  def onTopPassed(): Unit
   /**
     * Element's top edge has not passed top of the screen
     */
-  def onTopPassedReverse(`this`: JQuery): Unit
+  def onTopPassedReverse(): Unit
   // endregion
   // region Visibility Callbacks
   /**
     * Element's top edge has passed bottom of screen
     */
-  def onTopVisible(`this`: JQuery): Unit
+  def onTopVisible(): Unit
   /**
     * Element's top edge has not passed bottom of screen
     */
-  def onTopVisibleReverse(`this`: JQuery): Unit
+  def onTopVisibleReverse(): Unit
   /**
     * Occurs after element has been removed from fixed position
     *
     * @since 2.2
     */
-  def onUnfixed(`this`: JQuery): Unit
+  def onUnfixed(): Unit
   // endregion
   // region Utility Callbacks
   /**
     * Occurs each time an elements calculations are updated
     */
-  def onUpdate(`this`: JQuery, calculations: ElementCalculations): Unit
+  def onUpdate(calculations: ElementCalculations): Unit
 }
 
 object _Impl {
@@ -243,24 +243,24 @@ object _Impl {
     namespace: String,
     observeChanges: Boolean,
     offset: Double,
-    onAllLoaded: JQuery => Unit,
-    onBottomPassed: JQuery => Unit,
-    onBottomPassedReverse: JQuery => Unit,
-    onBottomVisible: JQuery => Unit,
-    onBottomVisibleReverse: JQuery => Unit,
-    onFixed: JQuery => Unit,
-    onLoad: JQuery => Unit,
-    onOffScreen: JQuery => Unit,
-    onOnScreen: JQuery => Unit,
-    onPassing: JQuery => Unit,
-    onPassingReverse: JQuery => Unit,
-    onRefresh: JQuery => Unit,
-    onTopPassed: JQuery => Unit,
-    onTopPassedReverse: JQuery => Unit,
-    onTopVisible: JQuery => Unit,
-    onTopVisibleReverse: JQuery => Unit,
-    onUnfixed: JQuery => Unit,
-    onUpdate: (JQuery, ElementCalculations) => Unit,
+    onAllLoaded: () => Unit,
+    onBottomPassed: () => Unit,
+    onBottomPassedReverse: () => Unit,
+    onBottomVisible: () => Unit,
+    onBottomVisibleReverse: () => Unit,
+    onFixed: () => Unit,
+    onLoad: () => Unit,
+    onOffScreen: () => Unit,
+    onOnScreen: () => Unit,
+    onPassing: () => Unit,
+    onPassingReverse: () => Unit,
+    onRefresh: () => Unit,
+    onTopPassed: () => Unit,
+    onTopPassedReverse: () => Unit,
+    onTopVisible: () => Unit,
+    onTopVisibleReverse: () => Unit,
+    onUnfixed: () => Unit,
+    onUpdate: ElementCalculations => Unit,
     once: Boolean,
     performance: Boolean,
     refreshOnLoad: Boolean,
@@ -272,7 +272,7 @@ object _Impl {
     verbose: Boolean,
     zIndex: Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], continuous = continuous.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], includeMargin = includeMargin.asInstanceOf[js.Any], initialCheck = initialCheck.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onAllLoaded = js.Any.fromFunction1(onAllLoaded), onBottomPassed = js.Any.fromFunction1(onBottomPassed), onBottomPassedReverse = js.Any.fromFunction1(onBottomPassedReverse), onBottomVisible = js.Any.fromFunction1(onBottomVisible), onBottomVisibleReverse = js.Any.fromFunction1(onBottomVisibleReverse), onFixed = js.Any.fromFunction1(onFixed), onLoad = js.Any.fromFunction1(onLoad), onOffScreen = js.Any.fromFunction1(onOffScreen), onOnScreen = js.Any.fromFunction1(onOnScreen), onPassing = js.Any.fromFunction1(onPassing), onPassingReverse = js.Any.fromFunction1(onPassingReverse), onRefresh = js.Any.fromFunction1(onRefresh), onTopPassed = js.Any.fromFunction1(onTopPassed), onTopPassedReverse = js.Any.fromFunction1(onTopPassedReverse), onTopVisible = js.Any.fromFunction1(onTopVisible), onTopVisibleReverse = js.Any.fromFunction1(onTopVisibleReverse), onUnfixed = js.Any.fromFunction1(onUnfixed), onUpdate = js.Any.fromFunction2(onUpdate), once = once.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], refreshOnLoad = refreshOnLoad.asInstanceOf[js.Any], refreshOnResize = refreshOnResize.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], throttle = throttle.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], continuous = continuous.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], includeMargin = includeMargin.asInstanceOf[js.Any], initialCheck = initialCheck.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onAllLoaded = js.Any.fromFunction0(onAllLoaded), onBottomPassed = js.Any.fromFunction0(onBottomPassed), onBottomPassedReverse = js.Any.fromFunction0(onBottomPassedReverse), onBottomVisible = js.Any.fromFunction0(onBottomVisible), onBottomVisibleReverse = js.Any.fromFunction0(onBottomVisibleReverse), onFixed = js.Any.fromFunction0(onFixed), onLoad = js.Any.fromFunction0(onLoad), onOffScreen = js.Any.fromFunction0(onOffScreen), onOnScreen = js.Any.fromFunction0(onOnScreen), onPassing = js.Any.fromFunction0(onPassing), onPassingReverse = js.Any.fromFunction0(onPassingReverse), onRefresh = js.Any.fromFunction0(onRefresh), onTopPassed = js.Any.fromFunction0(onTopPassed), onTopPassedReverse = js.Any.fromFunction0(onTopPassedReverse), onTopVisible = js.Any.fromFunction0(onTopVisible), onTopVisibleReverse = js.Any.fromFunction0(onTopVisibleReverse), onUnfixed = js.Any.fromFunction0(onUnfixed), onUpdate = js.Any.fromFunction1(onUpdate), once = once.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], refreshOnLoad = refreshOnLoad.asInstanceOf[js.Any], refreshOnResize = refreshOnResize.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], throttle = throttle.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }

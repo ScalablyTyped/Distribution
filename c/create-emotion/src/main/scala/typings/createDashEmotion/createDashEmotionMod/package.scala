@@ -18,7 +18,6 @@ package object createDashEmotionMod {
   ]
   /* Rewritten from type alias, can be one of: 
     - `js.undefined`
-    - scala.Nothing
     - scala.Null
     - scala.Boolean
     - java.lang.String

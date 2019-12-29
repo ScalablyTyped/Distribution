@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object activexDashFaxcomexlibStrings {
   @js.native
-  sealed trait `<All Devices>` extends FaxConstants
-  
-  @js.native
   sealed trait AddRef extends js.Object
   
   @js.native
@@ -23,6 +20,9 @@ object activexDashFaxcomexlibStrings {
   
   @js.native
   sealed trait Invoke extends js.Object
+  
+  @js.native
+  sealed trait `LessthansignAll DevicesGreaterthansign` extends FaxConstants
   
   @js.native
   sealed trait OnActivityLoggingConfigChange extends js.Object
@@ -217,8 +217,6 @@ object activexDashFaxcomexlibStrings {
   sealed trait wFlags extends js.Object
   
   @scala.inline
-  def `<All Devices>`: `<All Devices>` = "<All Devices>".asInstanceOf[`<All Devices>`]
-  @scala.inline
   def AddRef: AddRef = "AddRef".asInstanceOf[AddRef]
   @scala.inline
   def GetIDsOfNames: GetIDsOfNames = "GetIDsOfNames".asInstanceOf[GetIDsOfNames]
@@ -228,6 +226,8 @@ object activexDashFaxcomexlibStrings {
   def GetTypeInfoCount: GetTypeInfoCount = "GetTypeInfoCount".asInstanceOf[GetTypeInfoCount]
   @scala.inline
   def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
+  @scala.inline
+  def `LessthansignAll DevicesGreaterthansign`: `LessthansignAll DevicesGreaterthansign` = "<All Devices>".asInstanceOf[`LessthansignAll DevicesGreaterthansign`]
   @scala.inline
   def OnActivityLoggingConfigChange: OnActivityLoggingConfigChange = "OnActivityLoggingConfigChange".asInstanceOf[OnActivityLoggingConfigChange]
   @scala.inline

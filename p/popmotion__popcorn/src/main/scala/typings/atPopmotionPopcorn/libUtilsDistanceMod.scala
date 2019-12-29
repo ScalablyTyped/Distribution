@@ -1,7 +1,6 @@
 package typings.atPopmotionPopcorn
 
 import typings.atPopmotionPopcorn.libTypesMod.Point
-import typings.atPopmotionPopcorn.libUtilsDistanceMod._Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

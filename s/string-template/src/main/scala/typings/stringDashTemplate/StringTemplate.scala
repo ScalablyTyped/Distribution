@@ -1,6 +1,5 @@
 package typings.stringDashTemplate
 
-import typings.stringDashTemplate.StringTemplate.Template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

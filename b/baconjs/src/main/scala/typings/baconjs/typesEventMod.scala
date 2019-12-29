@@ -1,11 +1,5 @@
 package typings.baconjs
 
-import typings.baconjs.typesEventMod.End
-import typings.baconjs.typesEventMod.Event
-import typings.baconjs.typesEventMod.Initial
-import typings.baconjs.typesEventMod.Next
-import typings.baconjs.typesEventMod.NoValue
-import typings.baconjs.typesEventMod.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

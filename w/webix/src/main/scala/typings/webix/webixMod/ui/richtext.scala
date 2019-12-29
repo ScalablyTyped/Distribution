@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class richtext ()
   extends typings.webix.webix.ui.baseview {
-  @JSName("$$")
-  var $$: js.Any = js.native
   @JSName("$skin")
   var $skin_Original_richtext: WebixCallback = js.native
+  @JSName("$$")
+  var DollarDollar: js.Any = js.native
   @JSName("config")
   var config_richtext: richtextConfig = js.native
   def attachEvent(`type`: richtextEventName, functor: WebixCallback): String | Double = js.native

@@ -1,9 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.tcp
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.transportAgnostic
-import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.udp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

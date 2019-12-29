@@ -1,7 +1,6 @@
 package typings.atPulumiKubernetes
 
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.v1
-import typings.atPulumiKubernetes.coreV1PodMod.Pod
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.PodSpec
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.PodStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta

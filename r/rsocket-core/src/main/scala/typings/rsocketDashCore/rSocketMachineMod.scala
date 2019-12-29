@@ -2,7 +2,6 @@ package typings.rsocketDashCore
 
 import typings.rsocketDashCore.rSocketLeaseMod.RequesterLeaseHandler
 import typings.rsocketDashCore.rSocketLeaseMod.ResponderLeaseHandler
-import typings.rsocketDashCore.rSocketMachineMod.RSocketMachine
 import typings.rsocketDashCore.rSocketSerializationMod.PayloadSerializers
 import typings.rsocketDashTypes.reactiveSocketTypesMod.DuplexConnection
 import typings.rsocketDashTypes.reactiveSocketTypesMod.Frame

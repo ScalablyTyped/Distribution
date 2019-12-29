@@ -1,9 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SP.EventReceiverSynchronization.asynchronous
-import typings.sharepoint.SP.EventReceiverSynchronization.defaultSynchronization
-import typings.sharepoint.SP.EventReceiverSynchronization.synchronous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

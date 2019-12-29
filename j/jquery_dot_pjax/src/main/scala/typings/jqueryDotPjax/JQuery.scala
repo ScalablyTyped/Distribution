@@ -1,6 +1,6 @@
 package typings.jqueryDotPjax
 
-import typings.jqueryDotPjax.jqueryDotPjaxStrings.`pjax:popstate`
+import typings.jqueryDotPjax.jqueryDotPjaxStrings.pjaxColonpopstate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   @JSName("on")
-  def on_pjaxpopstate(event: `pjax:popstate`, handler: js.Function1[/* e */ PjaxPopStateEventObject, Unit]): this.type = js.native
+  def on_pjaxpopstate(event: pjaxColonpopstate, handler: js.Function1[/* e */ PjaxPopStateEventObject, Unit]): this.type = js.native
   /**
     * Tell PJAX to listen links with delegation selector that, when click on them, fetches the href with ajax into the container.
     * Tries to make sure the back button and ctrl+click work the way you'd expect.

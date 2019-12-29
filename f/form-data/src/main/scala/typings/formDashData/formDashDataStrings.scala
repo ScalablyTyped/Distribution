@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 object formDashDataStrings {
   @js.native
-  sealed trait `http:` extends js.Object
+  sealed trait httpColon extends js.Object
   
   @js.native
-  sealed trait `https:` extends js.Object
+  sealed trait httpsColon extends js.Object
   
   @scala.inline
-  def `http:`: `http:` = "http:".asInstanceOf[`http:`]
+  def httpColon: httpColon = "http:".asInstanceOf[httpColon]
   @scala.inline
-  def `https:`: `https:` = "https:".asInstanceOf[`https:`]
+  def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
 }
 

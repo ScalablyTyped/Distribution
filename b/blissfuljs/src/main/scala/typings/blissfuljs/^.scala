@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   @JSName("$")
   var $: BlissStatic = js.native
-  @JSName("$$")
-  var $$: BlissStaticCollection = js.native
   var Bliss: BlissStatic = js.native
+  @JSName("$$")
+  var DollarDollar: BlissStaticCollection = js.native
 }
 

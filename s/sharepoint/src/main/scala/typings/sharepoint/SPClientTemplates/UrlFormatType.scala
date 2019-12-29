@@ -1,8 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.SPClientTemplates.UrlFormatType.Hyperlink
-import typings.sharepoint.SPClientTemplates.UrlFormatType.Image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

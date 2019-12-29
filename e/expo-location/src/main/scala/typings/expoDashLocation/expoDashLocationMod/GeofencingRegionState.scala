@@ -1,9 +1,6 @@
 package typings.expoDashLocation.expoDashLocationMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Inside
-import typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Outside
-import typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

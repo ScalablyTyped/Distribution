@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassDropDownList
-  extends Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, DropDownList]
-     with Instantiable1[(/* element */ Element) | (/* element */ JQuery), DropDownList] {
+  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), DropDownList]
+     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, DropDownList] {
   var Locale: js.Any = js.native
   var fn: DropDownList = js.native
 }

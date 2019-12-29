@@ -1,6 +1,5 @@
 package typings.prando
 
-import typings.prando.prandoMod.Prando
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

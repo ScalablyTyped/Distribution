@@ -49,7 +49,8 @@ class InternetExplorerMedium protected () extends js.Object {
   var RegisterAsDropTarget: Boolean = js.native
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
-  var `SHDocVw.InternetExplorerMedium_typekey`: InternetExplorerMedium = js.native
+  @JSName("SHDocVw.InternetExplorerMedium_typekey")
+  var SHDocVwDotInternetExplorerMedium_typekey: InternetExplorerMedium = js.native
   /** Controls if any dialog boxes can be shown */
   var Silent: Boolean = js.native
   /** Turn on or off the statusbar. */

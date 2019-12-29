@@ -14,12 +14,13 @@ trait SpawnOptionsWithoutStdio extends SpawnOptions {
 object SpawnOptionsWithoutStdio {
   @scala.inline
   def apply(
-    argv0: java.lang.String = null,
-    cwd: java.lang.String = null,
+    argv0: String = null,
+    cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
     env: ProcessEnv = null,
     gid: Int | Double = null,
-    shell: Boolean | java.lang.String = null,
+    serialization: SerializationType = null,
+    shell: Boolean | String = null,
     stdio: pipe | (js.Array[js.UndefOr[Null | pipe]]) = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,
@@ -32,6 +33,7 @@ object SpawnOptionsWithoutStdio {
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

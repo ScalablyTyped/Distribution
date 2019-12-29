@@ -1,14 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Bad
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Blob
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Commit
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Ext2
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.OfsDelta
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.RefDelta
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Tag
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Tree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

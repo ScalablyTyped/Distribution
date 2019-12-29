@@ -12,7 +12,7 @@ trait Template extends js.Object {
   var $: js.Any = js.native
   var created: js.Function = js.native
   var destroyed: js.Function = js.native
-  var head: typings.meteor.blazeMod.Blaze.Template = js.native
+  var head: Template = js.native
   var renderFunction: js.Function = js.native
   var rendered: js.Function = js.native
   var viewName: String = js.native
@@ -28,6 +28,5 @@ trait Template extends js.Object {
 
 @JSImport("meteor/blaze", "Blaze.Template")
 @js.native
-object Template
-  extends TopLevel[typings.meteor.blazeMod.Blaze.TemplateStatic]
+object Template extends TopLevel[TemplateStatic]
 

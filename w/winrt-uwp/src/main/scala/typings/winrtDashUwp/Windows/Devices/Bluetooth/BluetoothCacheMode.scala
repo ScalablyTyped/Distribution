@@ -1,8 +1,6 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothCacheMode.cached
-import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothCacheMode.uncached
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

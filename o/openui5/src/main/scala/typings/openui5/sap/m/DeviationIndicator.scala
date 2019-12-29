@@ -1,9 +1,6 @@
 package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openui5.sap.m.DeviationIndicator.Down
-import typings.openui5.sap.m.DeviationIndicator.None
-import typings.openui5.sap.m.DeviationIndicator.Up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

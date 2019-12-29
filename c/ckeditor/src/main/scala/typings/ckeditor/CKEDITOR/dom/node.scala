@@ -17,7 +17,7 @@ class node protected () extends domObject {
   def getAscendant(reference: String): node = js.native
   def getAscendant(reference: String, includeSelf: Boolean): node = js.native
   def getCommonAncestor(node: node): Unit = js.native
-  def getDocument(): typings.ckeditor.CKEDITOR.dom.document = js.native
+  def getDocument(): document = js.native
   def getIndex(): Double = js.native
   def getIndex(normalized: Boolean): Double = js.native
   def getNext(): node = js.native

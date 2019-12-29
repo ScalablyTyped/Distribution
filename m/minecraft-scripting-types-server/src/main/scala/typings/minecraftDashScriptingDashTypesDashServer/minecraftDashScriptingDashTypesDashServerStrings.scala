@@ -6,236 +6,236 @@ import scala.scalajs.js.annotation._
 
 object minecraftDashScriptingDashTypesDashServerStrings {
   @js.native
-  sealed trait `minecraft:armor_container` extends MinecraftComponent
+  sealed trait minecraftColonarmor_container extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:attack` extends MinecraftComponent
+  sealed trait minecraftColonattack extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:block_destruction_started` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonblock_destruction_started extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:block_destruction_stopped` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonblock_destruction_stopped extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:block_interacted_with` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonblock_interacted_with extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:collision_box` extends MinecraftComponent
+  sealed trait minecraftColoncollision_box extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:damage_sensor` extends MinecraftComponent
+  sealed trait minecraftColondamage_sensor extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:display_chat_event` extends SendToMinecraftServer
+  sealed trait minecraftColondisplay_chat_event extends SendToMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_acquired_item` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_acquired_item extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_carried_item_changed` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_carried_item_changed extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_created` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_created extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_death` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_death extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_dropped_item` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_dropped_item extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_equipped_armor` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_equipped_armor extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_start_riding` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_start_riding extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_stop_riding` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_stop_riding extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_tick` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_tick extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:entity_use_item` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonentity_use_item extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:equipment` extends MinecraftComponent
+  sealed trait minecraftColonequipment extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:equippable` extends MinecraftComponent
+  sealed trait minecraftColonequippable extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:execute_command` extends SendToMinecraftServer
+  sealed trait minecraftColonexecute_command extends SendToMinecraftServer
   
   @js.native
-  sealed trait `minecraft:explode` extends MinecraftComponent
+  sealed trait minecraftColonexplode extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:hand_container` extends MinecraftComponent
+  sealed trait minecraftColonhand_container extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:healable` extends MinecraftComponent
+  sealed trait minecraftColonhealable extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:health` extends MinecraftComponent
+  sealed trait minecraftColonhealth extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:hotbar_container` extends MinecraftComponent
+  sealed trait minecraftColonhotbar_container extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:interact` extends MinecraftComponent
+  sealed trait minecraftColoninteract extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:inventory` extends MinecraftComponent
+  sealed trait minecraftColoninventory extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:inventory_container` extends MinecraftComponent
+  sealed trait minecraftColoninventory_container extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:lookat` extends MinecraftComponent
+  sealed trait minecraftColonlookat extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:nameable` extends MinecraftComponent
+  sealed trait minecraftColonnameable extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:piston_moved_block` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonpiston_moved_block extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:play_sound`
+  sealed trait minecraftColonplay_sound
     extends ReceiveFromMinecraftServer
        with SendToMinecraftServer
   
   @js.native
-  sealed trait `minecraft:player_attacked_entity` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonplayer_attacked_entity extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:player_destroyed_block` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonplayer_destroyed_block extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:player_placed_block` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonplayer_placed_block extends ReceiveFromMinecraftServer
   
   @js.native
-  sealed trait `minecraft:position` extends MinecraftComponent
+  sealed trait minecraftColonposition extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:rotation` extends MinecraftComponent
+  sealed trait minecraftColonrotation extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:script_logger_config` extends SendToMinecraftServer
+  sealed trait minecraftColonscript_logger_config extends SendToMinecraftServer
   
   @js.native
-  sealed trait `minecraft:shooter` extends MinecraftComponent
+  sealed trait minecraftColonshooter extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:spawn_entity` extends MinecraftComponent
+  sealed trait minecraftColonspawn_entity extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:spawn_particle_attached_entity` extends SendToMinecraftServer
+  sealed trait minecraftColonspawn_particle_attached_entity extends SendToMinecraftServer
   
   @js.native
-  sealed trait `minecraft:spawn_particle_in_world` extends SendToMinecraftServer
+  sealed trait minecraftColonspawn_particle_in_world extends SendToMinecraftServer
   
   @js.native
-  sealed trait `minecraft:teleport` extends MinecraftComponent
+  sealed trait minecraftColonteleport extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:tick_world` extends MinecraftComponent
+  sealed trait minecraftColontick_world extends MinecraftComponent
   
   @js.native
-  sealed trait `minecraft:weather_changed` extends ReceiveFromMinecraftServer
+  sealed trait minecraftColonweather_changed extends ReceiveFromMinecraftServer
   
   @scala.inline
-  def `minecraft:armor_container`: `minecraft:armor_container` = "minecraft:armor_container".asInstanceOf[`minecraft:armor_container`]
+  def minecraftColonarmor_container: minecraftColonarmor_container = "minecraft:armor_container".asInstanceOf[minecraftColonarmor_container]
   @scala.inline
-  def `minecraft:attack`: `minecraft:attack` = "minecraft:attack".asInstanceOf[`minecraft:attack`]
+  def minecraftColonattack: minecraftColonattack = "minecraft:attack".asInstanceOf[minecraftColonattack]
   @scala.inline
-  def `minecraft:block_destruction_started`: `minecraft:block_destruction_started` = "minecraft:block_destruction_started".asInstanceOf[`minecraft:block_destruction_started`]
+  def minecraftColonblock_destruction_started: minecraftColonblock_destruction_started = "minecraft:block_destruction_started".asInstanceOf[minecraftColonblock_destruction_started]
   @scala.inline
-  def `minecraft:block_destruction_stopped`: `minecraft:block_destruction_stopped` = "minecraft:block_destruction_stopped".asInstanceOf[`minecraft:block_destruction_stopped`]
+  def minecraftColonblock_destruction_stopped: minecraftColonblock_destruction_stopped = "minecraft:block_destruction_stopped".asInstanceOf[minecraftColonblock_destruction_stopped]
   @scala.inline
-  def `minecraft:block_interacted_with`: `minecraft:block_interacted_with` = "minecraft:block_interacted_with".asInstanceOf[`minecraft:block_interacted_with`]
+  def minecraftColonblock_interacted_with: minecraftColonblock_interacted_with = "minecraft:block_interacted_with".asInstanceOf[minecraftColonblock_interacted_with]
   @scala.inline
-  def `minecraft:collision_box`: `minecraft:collision_box` = "minecraft:collision_box".asInstanceOf[`minecraft:collision_box`]
+  def minecraftColoncollision_box: minecraftColoncollision_box = "minecraft:collision_box".asInstanceOf[minecraftColoncollision_box]
   @scala.inline
-  def `minecraft:damage_sensor`: `minecraft:damage_sensor` = "minecraft:damage_sensor".asInstanceOf[`minecraft:damage_sensor`]
+  def minecraftColondamage_sensor: minecraftColondamage_sensor = "minecraft:damage_sensor".asInstanceOf[minecraftColondamage_sensor]
   @scala.inline
-  def `minecraft:display_chat_event`: `minecraft:display_chat_event` = "minecraft:display_chat_event".asInstanceOf[`minecraft:display_chat_event`]
+  def minecraftColondisplay_chat_event: minecraftColondisplay_chat_event = "minecraft:display_chat_event".asInstanceOf[minecraftColondisplay_chat_event]
   @scala.inline
-  def `minecraft:entity_acquired_item`: `minecraft:entity_acquired_item` = "minecraft:entity_acquired_item".asInstanceOf[`minecraft:entity_acquired_item`]
+  def minecraftColonentity_acquired_item: minecraftColonentity_acquired_item = "minecraft:entity_acquired_item".asInstanceOf[minecraftColonentity_acquired_item]
   @scala.inline
-  def `minecraft:entity_carried_item_changed`: `minecraft:entity_carried_item_changed` = "minecraft:entity_carried_item_changed".asInstanceOf[`minecraft:entity_carried_item_changed`]
+  def minecraftColonentity_carried_item_changed: minecraftColonentity_carried_item_changed = "minecraft:entity_carried_item_changed".asInstanceOf[minecraftColonentity_carried_item_changed]
   @scala.inline
-  def `minecraft:entity_created`: `minecraft:entity_created` = "minecraft:entity_created".asInstanceOf[`minecraft:entity_created`]
+  def minecraftColonentity_created: minecraftColonentity_created = "minecraft:entity_created".asInstanceOf[minecraftColonentity_created]
   @scala.inline
-  def `minecraft:entity_death`: `minecraft:entity_death` = "minecraft:entity_death".asInstanceOf[`minecraft:entity_death`]
+  def minecraftColonentity_death: minecraftColonentity_death = "minecraft:entity_death".asInstanceOf[minecraftColonentity_death]
   @scala.inline
-  def `minecraft:entity_dropped_item`: `minecraft:entity_dropped_item` = "minecraft:entity_dropped_item".asInstanceOf[`minecraft:entity_dropped_item`]
+  def minecraftColonentity_dropped_item: minecraftColonentity_dropped_item = "minecraft:entity_dropped_item".asInstanceOf[minecraftColonentity_dropped_item]
   @scala.inline
-  def `minecraft:entity_equipped_armor`: `minecraft:entity_equipped_armor` = "minecraft:entity_equipped_armor".asInstanceOf[`minecraft:entity_equipped_armor`]
+  def minecraftColonentity_equipped_armor: minecraftColonentity_equipped_armor = "minecraft:entity_equipped_armor".asInstanceOf[minecraftColonentity_equipped_armor]
   @scala.inline
-  def `minecraft:entity_start_riding`: `minecraft:entity_start_riding` = "minecraft:entity_start_riding".asInstanceOf[`minecraft:entity_start_riding`]
+  def minecraftColonentity_start_riding: minecraftColonentity_start_riding = "minecraft:entity_start_riding".asInstanceOf[minecraftColonentity_start_riding]
   @scala.inline
-  def `minecraft:entity_stop_riding`: `minecraft:entity_stop_riding` = "minecraft:entity_stop_riding".asInstanceOf[`minecraft:entity_stop_riding`]
+  def minecraftColonentity_stop_riding: minecraftColonentity_stop_riding = "minecraft:entity_stop_riding".asInstanceOf[minecraftColonentity_stop_riding]
   @scala.inline
-  def `minecraft:entity_tick`: `minecraft:entity_tick` = "minecraft:entity_tick".asInstanceOf[`minecraft:entity_tick`]
+  def minecraftColonentity_tick: minecraftColonentity_tick = "minecraft:entity_tick".asInstanceOf[minecraftColonentity_tick]
   @scala.inline
-  def `minecraft:entity_use_item`: `minecraft:entity_use_item` = "minecraft:entity_use_item".asInstanceOf[`minecraft:entity_use_item`]
+  def minecraftColonentity_use_item: minecraftColonentity_use_item = "minecraft:entity_use_item".asInstanceOf[minecraftColonentity_use_item]
   @scala.inline
-  def `minecraft:equipment`: `minecraft:equipment` = "minecraft:equipment".asInstanceOf[`minecraft:equipment`]
+  def minecraftColonequipment: minecraftColonequipment = "minecraft:equipment".asInstanceOf[minecraftColonequipment]
   @scala.inline
-  def `minecraft:equippable`: `minecraft:equippable` = "minecraft:equippable".asInstanceOf[`minecraft:equippable`]
+  def minecraftColonequippable: minecraftColonequippable = "minecraft:equippable".asInstanceOf[minecraftColonequippable]
   @scala.inline
-  def `minecraft:execute_command`: `minecraft:execute_command` = "minecraft:execute_command".asInstanceOf[`minecraft:execute_command`]
+  def minecraftColonexecute_command: minecraftColonexecute_command = "minecraft:execute_command".asInstanceOf[minecraftColonexecute_command]
   @scala.inline
-  def `minecraft:explode`: `minecraft:explode` = "minecraft:explode".asInstanceOf[`minecraft:explode`]
+  def minecraftColonexplode: minecraftColonexplode = "minecraft:explode".asInstanceOf[minecraftColonexplode]
   @scala.inline
-  def `minecraft:hand_container`: `minecraft:hand_container` = "minecraft:hand_container".asInstanceOf[`minecraft:hand_container`]
+  def minecraftColonhand_container: minecraftColonhand_container = "minecraft:hand_container".asInstanceOf[minecraftColonhand_container]
   @scala.inline
-  def `minecraft:healable`: `minecraft:healable` = "minecraft:healable".asInstanceOf[`minecraft:healable`]
+  def minecraftColonhealable: minecraftColonhealable = "minecraft:healable".asInstanceOf[minecraftColonhealable]
   @scala.inline
-  def `minecraft:health`: `minecraft:health` = "minecraft:health".asInstanceOf[`minecraft:health`]
+  def minecraftColonhealth: minecraftColonhealth = "minecraft:health".asInstanceOf[minecraftColonhealth]
   @scala.inline
-  def `minecraft:hotbar_container`: `minecraft:hotbar_container` = "minecraft:hotbar_container".asInstanceOf[`minecraft:hotbar_container`]
+  def minecraftColonhotbar_container: minecraftColonhotbar_container = "minecraft:hotbar_container".asInstanceOf[minecraftColonhotbar_container]
   @scala.inline
-  def `minecraft:interact`: `minecraft:interact` = "minecraft:interact".asInstanceOf[`minecraft:interact`]
+  def minecraftColoninteract: minecraftColoninteract = "minecraft:interact".asInstanceOf[minecraftColoninteract]
   @scala.inline
-  def `minecraft:inventory`: `minecraft:inventory` = "minecraft:inventory".asInstanceOf[`minecraft:inventory`]
+  def minecraftColoninventory: minecraftColoninventory = "minecraft:inventory".asInstanceOf[minecraftColoninventory]
   @scala.inline
-  def `minecraft:inventory_container`: `minecraft:inventory_container` = "minecraft:inventory_container".asInstanceOf[`minecraft:inventory_container`]
+  def minecraftColoninventory_container: minecraftColoninventory_container = "minecraft:inventory_container".asInstanceOf[minecraftColoninventory_container]
   @scala.inline
-  def `minecraft:lookat`: `minecraft:lookat` = "minecraft:lookat".asInstanceOf[`minecraft:lookat`]
+  def minecraftColonlookat: minecraftColonlookat = "minecraft:lookat".asInstanceOf[minecraftColonlookat]
   @scala.inline
-  def `minecraft:nameable`: `minecraft:nameable` = "minecraft:nameable".asInstanceOf[`minecraft:nameable`]
+  def minecraftColonnameable: minecraftColonnameable = "minecraft:nameable".asInstanceOf[minecraftColonnameable]
   @scala.inline
-  def `minecraft:piston_moved_block`: `minecraft:piston_moved_block` = "minecraft:piston_moved_block".asInstanceOf[`minecraft:piston_moved_block`]
+  def minecraftColonpiston_moved_block: minecraftColonpiston_moved_block = "minecraft:piston_moved_block".asInstanceOf[minecraftColonpiston_moved_block]
   @scala.inline
-  def `minecraft:play_sound`: `minecraft:play_sound` = "minecraft:play_sound".asInstanceOf[`minecraft:play_sound`]
+  def minecraftColonplay_sound: minecraftColonplay_sound = "minecraft:play_sound".asInstanceOf[minecraftColonplay_sound]
   @scala.inline
-  def `minecraft:player_attacked_entity`: `minecraft:player_attacked_entity` = "minecraft:player_attacked_entity".asInstanceOf[`minecraft:player_attacked_entity`]
+  def minecraftColonplayer_attacked_entity: minecraftColonplayer_attacked_entity = "minecraft:player_attacked_entity".asInstanceOf[minecraftColonplayer_attacked_entity]
   @scala.inline
-  def `minecraft:player_destroyed_block`: `minecraft:player_destroyed_block` = "minecraft:player_destroyed_block".asInstanceOf[`minecraft:player_destroyed_block`]
+  def minecraftColonplayer_destroyed_block: minecraftColonplayer_destroyed_block = "minecraft:player_destroyed_block".asInstanceOf[minecraftColonplayer_destroyed_block]
   @scala.inline
-  def `minecraft:player_placed_block`: `minecraft:player_placed_block` = "minecraft:player_placed_block".asInstanceOf[`minecraft:player_placed_block`]
+  def minecraftColonplayer_placed_block: minecraftColonplayer_placed_block = "minecraft:player_placed_block".asInstanceOf[minecraftColonplayer_placed_block]
   @scala.inline
-  def `minecraft:position`: `minecraft:position` = "minecraft:position".asInstanceOf[`minecraft:position`]
+  def minecraftColonposition: minecraftColonposition = "minecraft:position".asInstanceOf[minecraftColonposition]
   @scala.inline
-  def `minecraft:rotation`: `minecraft:rotation` = "minecraft:rotation".asInstanceOf[`minecraft:rotation`]
+  def minecraftColonrotation: minecraftColonrotation = "minecraft:rotation".asInstanceOf[minecraftColonrotation]
   @scala.inline
-  def `minecraft:script_logger_config`: `minecraft:script_logger_config` = "minecraft:script_logger_config".asInstanceOf[`minecraft:script_logger_config`]
+  def minecraftColonscript_logger_config: minecraftColonscript_logger_config = "minecraft:script_logger_config".asInstanceOf[minecraftColonscript_logger_config]
   @scala.inline
-  def `minecraft:shooter`: `minecraft:shooter` = "minecraft:shooter".asInstanceOf[`minecraft:shooter`]
+  def minecraftColonshooter: minecraftColonshooter = "minecraft:shooter".asInstanceOf[minecraftColonshooter]
   @scala.inline
-  def `minecraft:spawn_entity`: `minecraft:spawn_entity` = "minecraft:spawn_entity".asInstanceOf[`minecraft:spawn_entity`]
+  def minecraftColonspawn_entity: minecraftColonspawn_entity = "minecraft:spawn_entity".asInstanceOf[minecraftColonspawn_entity]
   @scala.inline
-  def `minecraft:spawn_particle_attached_entity`: `minecraft:spawn_particle_attached_entity` = "minecraft:spawn_particle_attached_entity".asInstanceOf[`minecraft:spawn_particle_attached_entity`]
+  def minecraftColonspawn_particle_attached_entity: minecraftColonspawn_particle_attached_entity = "minecraft:spawn_particle_attached_entity".asInstanceOf[minecraftColonspawn_particle_attached_entity]
   @scala.inline
-  def `minecraft:spawn_particle_in_world`: `minecraft:spawn_particle_in_world` = "minecraft:spawn_particle_in_world".asInstanceOf[`minecraft:spawn_particle_in_world`]
+  def minecraftColonspawn_particle_in_world: minecraftColonspawn_particle_in_world = "minecraft:spawn_particle_in_world".asInstanceOf[minecraftColonspawn_particle_in_world]
   @scala.inline
-  def `minecraft:teleport`: `minecraft:teleport` = "minecraft:teleport".asInstanceOf[`minecraft:teleport`]
+  def minecraftColonteleport: minecraftColonteleport = "minecraft:teleport".asInstanceOf[minecraftColonteleport]
   @scala.inline
-  def `minecraft:tick_world`: `minecraft:tick_world` = "minecraft:tick_world".asInstanceOf[`minecraft:tick_world`]
+  def minecraftColontick_world: minecraftColontick_world = "minecraft:tick_world".asInstanceOf[minecraftColontick_world]
   @scala.inline
-  def `minecraft:weather_changed`: `minecraft:weather_changed` = "minecraft:weather_changed".asInstanceOf[`minecraft:weather_changed`]
+  def minecraftColonweather_changed: minecraftColonweather_changed = "minecraft:weather_changed".asInstanceOf[minecraftColonweather_changed]
 }
 

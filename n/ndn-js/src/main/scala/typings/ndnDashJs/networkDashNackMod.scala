@@ -2,11 +2,6 @@ package typings.ndnDashJs
 
 import org.scalablytyped.runtime.TopLevel
 import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason
-import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.CONGESTION
-import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.DUPLICATE
-import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.NONE
-import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.NO_ROUTE
-import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.OTHER_CODE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

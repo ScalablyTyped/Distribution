@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 
 object atGoogleDashCloudFirestoreStrings {
   @js.native
-  sealed trait `<` extends WhereFilterOp
+  sealed trait EqualssignEqualssign extends WhereFilterOp
   
   @js.native
-  sealed trait `<=` extends WhereFilterOp
+  sealed trait Greaterthansign extends WhereFilterOp
   
   @js.native
-  sealed trait `==` extends WhereFilterOp
+  sealed trait GreaterthansignEqualssign extends WhereFilterOp
   
   @js.native
-  sealed trait `>` extends WhereFilterOp
+  sealed trait Lessthansign extends WhereFilterOp
   
   @js.native
-  sealed trait `>=` extends WhereFilterOp
+  sealed trait LessthansignEqualssign extends WhereFilterOp
   
   @js.native
   sealed trait added extends DocumentChangeType
@@ -48,15 +48,15 @@ object atGoogleDashCloudFirestoreStrings {
   sealed trait removed extends DocumentChangeType
   
   @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
+  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline
-  def `==`: `==` = "==".asInstanceOf[`==`]
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def added: added = "added".asInstanceOf[added]
   @scala.inline

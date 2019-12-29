@@ -1,7 +1,6 @@
 package typings.eventemitter3.eventemitter3Mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.eventemitter3.eventemitter3Strings.`_backtick^_backtick`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^[EventTypes /* <: String | js.Symbol | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof EventTypes ]: std.Array<any>}
-  */ `_backtick^_backtick` with js.Any) */] () extends EventEmitter[EventTypes]
+  */ typings.eventemitter3.eventemitter3Strings.^  with js.Any) */] () extends EventEmitter[EventTypes]
 
 @JSImport("eventemitter3", JSImport.Namespace)
 @js.native

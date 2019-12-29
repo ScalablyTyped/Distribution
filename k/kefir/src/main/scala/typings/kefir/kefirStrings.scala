@@ -9,7 +9,7 @@ object kefirStrings {
   sealed trait Fn_ extends js.Object
   
   @js.native
-  sealed trait `_backtick^_backtick` extends js.Object
+  sealed trait ^ extends js.Object
   
   @js.native
   sealed trait combine extends js.Object
@@ -26,7 +26,7 @@ object kefirStrings {
   @scala.inline
   def Fn_ : Fn_ = "Fn_".asInstanceOf[Fn_]
   @scala.inline
-  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline
   def combine: combine = "combine".asInstanceOf[combine]
   @scala.inline

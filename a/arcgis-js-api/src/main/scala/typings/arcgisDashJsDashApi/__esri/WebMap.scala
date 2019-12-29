@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-loaded`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.failed
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
@@ -14,11 +13,23 @@ trait WebMap
   extends Map
      with corePromise {
   /**
-    * Object responsible for containing the viewing and editing properties of the WebMap.
+    * The applicationProperties contains the viewing properties of the WebMap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#applicationProperties)
     */
-  var applicationProperties: js.Any = js.native
+  var applicationProperties: ApplicationProperties = js.native
+  /**
+    * The name of the application that authored the WebMap.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringApp)
+    */
+  var authoringApp: String = js.native
+  /**
+    * The version of the application that authored the WebMap.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringAppVersion)
+    */
+  var authoringAppVersion: String = js.native
   /**
     * An array of saved geographic extents that allow end users to quickly navigate to a particular area of interest.
     *
@@ -88,6 +99,12 @@ trait WebMap
     */
   var tables: js.Array[_] = js.native
   /**
+    * The URL to the thumbnail used for the webmap. The `thumbnailUrl` will default to the thumbnail URL from the portal item associated to the webmap. The thumbnail of the webmap may be updated by changing the thumbnail URL and saving the webmap. Use [updateFrom](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom) to update the thumbnail automatically from a specified view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#thumbnailUrl)
+    */
+  var thumbnailUrl: String = js.native
+  /**
     * The widgets object contains widgets that should be exposed to the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets)
@@ -100,7 +117,7 @@ trait WebMap
     *
     *
     */
-  def load(): IPromise[_] = js.native
+  def load(): js.Promise[_] = js.native
   /**
     * Loads all the externally loadable resources associated with the webmap. For the webmap this will load the ground, basemap and layers.
     *
@@ -108,7 +125,57 @@ trait WebMap
     *
     *
     */
-  def loadAll(): IPromise[WebMap] = js.native
+  def loadAll(): js.Promise[WebMap] = js.native
+  /**
+    * Saves the webmap to its associated portal item. The portal item must already exist and be valid. This is a convenience method that will use [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#update) to store the webmap in the item. The webmap is saved according to [web map specification](https://developers.arcgis.com/web-map-specification/) standards.  Use [updateFrom](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom) to store the current view properties in the webmap before saving it.  Note that this saves the webmap to its existing item. Depending on how the webmap is shared, users that do not own the webmap may be able to modify it. To save an existing webmap as a new item owned by the user signed into the portal instance, use [saveAs()](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs).  The webmap will be automatically loaded if it is not already before saving.
+    * > **Known Limitations**
+    *   * [FeatureLayers](esri-layers-FeatureLayer.html#creating-a-featurelayer) created from non-spatial tables will not be saved.
+    *   * For [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html), [KMLLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html), [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html), and [WMSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html) the following rules will apply:
+    *   * Any new layers of these types added to the webmap will not be saved.
+    *   * For existing layers only modifications to the following properties will saved: maxScale, minScale, opacity, title, visibility.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#save)
+    *
+    * @param options Additional options.
+    * @param options.ignoreUnsupported When `true`, the webmap will save even if it contains unsupported content (layers, renderers, symbols). Any content that is not supported will not be saved and the webmap may appear different when reloaded from its portal item.
+    *
+    */
+  def save(): js.Promise[PortalItem] = js.native
+  def save(options: WebMapSaveOptions): js.Promise[PortalItem] = js.native
+  /**
+    * Saves the webmap to a new [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html). If saving has completed successfully, then the saved portal item will be set in the [portalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#portalItem) property of the WebMap. This is a convenience method that will create a new [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html) and use [PortalUser.addItem()](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#addItem) to store the webmap in a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).  Use [updateFrom](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom) to store the current view properties in the webmap before saving it.  Note that this always saves the webmap as a new portal item owned by the user signed into the portal instance that executes the `saveAs()` method. If you want to modify an existing item without changing its ownership, use [save()](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#save).  The webmap will be automatically loaded if it is not already before saving.
+    * > **Known Limitations**
+    *   * [FeatureLayers](esri-layers-FeatureLayer.html#creating-a-featurelayer) created from non-spatial tables will not be saved.
+    *   * For [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html), [KMLLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html), [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html), and [WMSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html) the following rules will apply:
+    *   * Any new layers of these types added to the webmap will not be saved.
+    *   * For existing layers only modifications to the following properties will saved: maxScale, minScale, opacity, title, visibility.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs)
+    *
+    * @param portalItem The new portal item to which the webmap will be saved.  Portal item properties such as the title or description need to be explicitly set on the item and will not be automatically copied from the current associated webmap portal item (if any).
+    * @param options Additional save options.
+    * @param options.folder The folder in which to save the item.
+    * @param options.ignoreUnsupported Allow the webmap to be saved even in the case it contains unsupported content (layers, renderers, symbols). Any content that is not supported will not be saved and the webmap may appear different when reloaded from its portal item.
+    *
+    */
+  def saveAs(portalItem: PortalItem): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: PortalItemProperties): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: PortalItemProperties, options: WebMapSaveAsOptions): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: PortalItem, options: WebMapSaveAsOptions): js.Promise[PortalItem] = js.native
+  /**
+    * Update properties of the WebMap related to the view. This should usually be called just before saving a webmap. The following properties are updated from the view: 1. [InitialViewProperties.spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#spatialReference)  Depending on the provided options, the following properties are also updated:  2. [InitialViewProperties.viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) 3. The `thumbnail` of the [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html)
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+    *
+    * @param view The view to update from.
+    * @param options Update options.
+    * @param options.viewpointExcluded When `true`, the initial viewpoint of the view will be updated for the webmap. Defaults to `false`.
+    * @param options.thumbnailExcluded When `true`, the thumbnail will not be updated for the webmap. Defaults to `false`.
+    * @param options.thumbnailSize The size of the thumbnail. Defaults to 600x400 (ratio 1.5:1). Note that the thumbnail size may currently not be larger than the size of the view.
+    *
+    */
+  def updateFrom(view: MapView): js.Promise[_] = js.native
+  def updateFrom(view: MapView, options: WebMapUpdateFromOptions): js.Promise[_] = js.native
 }
 
 @JSGlobal("__esri.WebMap")

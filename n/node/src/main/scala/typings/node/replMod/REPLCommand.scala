@@ -14,10 +14,10 @@ trait REPLCommand extends js.Object {
   /**
     * Help text to be displayed when `.help` is entered.
     */
-  var help: js.UndefOr[java.lang.String] = js.native
+  var help: js.UndefOr[String] = js.native
   /**
     * The function to execute, optionally accepting a single string argument.
     */
-  def action(`this`: REPLServer, text: java.lang.String): Unit = js.native
+  def action(text: String): Unit = js.native
 }
 

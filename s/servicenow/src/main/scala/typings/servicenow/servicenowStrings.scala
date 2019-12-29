@@ -9,24 +9,6 @@ import scala.scalajs.js.annotation._
 
 object servicenowStrings {
   @js.native
-  sealed trait `!=` extends QueryOperator
-  
-  @js.native
-  sealed trait `<` extends QueryOperator
-  
-  @js.native
-  sealed trait `<=` extends QueryOperator
-  
-  @js.native
-  sealed trait `=` extends QueryOperator
-  
-  @js.native
-  sealed trait `>` extends QueryOperator
-  
-  @js.native
-  sealed trait `>=` extends QueryOperator
-  
-  @js.native
   sealed trait CONTAINS extends QueryOperator
   
   @js.native
@@ -36,10 +18,28 @@ object servicenowStrings {
   sealed trait ENDSWITH extends QueryOperator
   
   @js.native
+  sealed trait Equalssign extends QueryOperator
+  
+  @js.native
+  sealed trait ExclamationmarkEqualssign extends QueryOperator
+  
+  @js.native
+  sealed trait Greaterthansign extends QueryOperator
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends QueryOperator
+  
+  @js.native
   sealed trait IN extends QueryOperator
   
   @js.native
   sealed trait INSTANCEOF extends QueryOperator
+  
+  @js.native
+  sealed trait Lessthansign extends QueryOperator
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends QueryOperator
   
   @js.native
   sealed trait STARTSWITH extends QueryOperator
@@ -83,27 +83,27 @@ object servicenowStrings {
   sealed trait update extends GlideRecordOperation
   
   @scala.inline
-  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
-  @scala.inline
-  def `<`: `<` = "<".asInstanceOf[`<`]
-  @scala.inline
-  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
-  @scala.inline
-  def `=`: `=` = "=".asInstanceOf[`=`]
-  @scala.inline
-  def `>`: `>` = ">".asInstanceOf[`>`]
-  @scala.inline
-  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
-  @scala.inline
   def CONTAINS: CONTAINS = "CONTAINS".asInstanceOf[CONTAINS]
   @scala.inline
   def DOESNOTCONTAIN: DOESNOTCONTAIN = "DOESNOTCONTAIN".asInstanceOf[DOESNOTCONTAIN]
   @scala.inline
   def ENDSWITH: ENDSWITH = "ENDSWITH".asInstanceOf[ENDSWITH]
   @scala.inline
+  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  @scala.inline
+  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  @scala.inline
+  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  @scala.inline
+  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
   @scala.inline
   def INSTANCEOF: INSTANCEOF = "INSTANCEOF".asInstanceOf[INSTANCEOF]
+  @scala.inline
+  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  @scala.inline
+  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
   def STARTSWITH: STARTSWITH = "STARTSWITH".asInstanceOf[STARTSWITH]
   @scala.inline

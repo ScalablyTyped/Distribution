@@ -12,7 +12,8 @@ class SpinButton protected () extends js.Object {
   var Delay: Double = js.native
   var Enabled: Boolean = js.native
   var ForeColor: Double = js.native
-  var `MSForms.SpinButton_typekey`: SpinButton = js.native
+  @JSName("MSForms.SpinButton_typekey")
+  var MSFormsDotSpinButton_typekey: SpinButton = js.native
   var Max: Double = js.native
   var Min: Double = js.native
   var MouseIcon: StdPicture = js.native

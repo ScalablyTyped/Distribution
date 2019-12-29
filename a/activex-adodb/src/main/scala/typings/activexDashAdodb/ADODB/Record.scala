@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ADODB.Record")
 @js.native
 class Record protected () extends js.Object {
-  var `ADODB.Record_typekey`: Record = js.native
+  @JSName("ADODB.Record_typekey")
+  var ADODBDotRecord_typekey: Record = js.native
   /**
     * Sets or returns a String value that contains a definition for a connection if the connection is closed, or a Variant containing the current Connection object if the connection is open. Default is a null object reference.
     */

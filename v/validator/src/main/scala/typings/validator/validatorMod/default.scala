@@ -2,6 +2,7 @@ package typings.validator.validatorMod
 
 import typings.std.Date
 import typings.std.RegExp
+import typings.validator.validatorBooleans.`false`
 import typings.validator.validatorMod.validator.AlphaLocale
 import typings.validator.validatorMod.validator.AlphanumericLocale
 import typings.validator.validatorMod.validator.FloatLocale
@@ -27,7 +28,6 @@ import typings.validator.validatorMod.validator.NormalizeEmailOptions
 import typings.validator.validatorMod.validator.PostalCodeLocale
 import typings.validator.validatorNumbers.`3`
 import typings.validator.validatorNumbers.`5`
-import typings.validator.validatorNumbers.`false`
 import typings.validator.validatorStrings.`10`
 import typings.validator.validatorStrings.`13`
 import typings.validator.validatorStrings.`4`

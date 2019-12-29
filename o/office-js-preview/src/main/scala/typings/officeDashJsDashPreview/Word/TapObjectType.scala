@@ -1,13 +1,6 @@
 package typings.officeDashJsDashPreview.Word
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Word.TapObjectType.chart
-import typings.officeDashJsDashPreview.Word.TapObjectType.image
-import typings.officeDashJsDashPreview.Word.TapObjectType.ole
-import typings.officeDashJsDashPreview.Word.TapObjectType.slide
-import typings.officeDashJsDashPreview.Word.TapObjectType.smartArt
-import typings.officeDashJsDashPreview.Word.TapObjectType.table
-import typings.officeDashJsDashPreview.Word.TapObjectType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,14 +2,14 @@ package typings.node.tlsMod
 
 import typings.node.Anon_RejectUnauthorizedRequestCert
 import typings.node.Buffer
-import typings.node.Error
 import typings.node.netMod.Socket
-import typings.node.nodeNumbers.`false`
-import typings.node.nodeNumbers.`true`
+import typings.node.nodeBooleans.`false`
+import typings.node.nodeBooleans.`true`
 import typings.node.nodeStrings.OCSPResponse
 import typings.node.nodeStrings.keylog
 import typings.node.nodeStrings.secureConnect
 import typings.node.nodeStrings.session
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class TLSSocket protected () extends Socket {
     * String containing the selected ALPN protocol.
     * When ALPN has no selected protocol, tlsSocket.alpnProtocol equals false.
     */
-  var alpnProtocol: js.UndefOr[java.lang.String] = js.native
+  var alpnProtocol: js.UndefOr[String] = js.native
   /**
     * The reason why the peer's certificate has not been verified.
     * This property becomes available only when tlsSocket.authorized === false.
@@ -49,6 +49,12 @@ class TLSSocket protected () extends Socket {
   def addListener_secureConnect(event: secureConnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_session(event: session, listener: js.Function1[/* session */ Buffer, Unit]): this.type = js.native
+  /**
+    * Disables TLS renegotiation for this TLSSocket instance. Once called,
+    * attempts to renegotiate will trigger an 'error' event on the
+    * TLSSocket.
+    */
+  def disableRenegotiation(): Unit = js.native
   @JSName("emit")
   def emit_OCSPResponse(event: OCSPResponse, response: Buffer): Boolean = js.native
   @JSName("emit")
@@ -68,15 +74,53 @@ class TLSSocket protected () extends Socket {
     */
   def enableTrace(): Unit = js.native
   /**
+    * Returns an object representing the local certificate. The returned
+    * object has some properties corresponding to the fields of the
+    * certificate.
+    *
+    * See tls.TLSSocket.getPeerCertificate() for an example of the
+    * certificate structure.
+    *
+    * If there is no local certificate, an empty object will be returned.
+    * If the socket has been destroyed, null will be returned.
+    */
+  def getCertificate(): PeerCertificate | js.Object | Null = js.native
+  /**
     * Returns an object representing the cipher name and the SSL/TLS protocol version of the current connection.
     * @returns Returns an object representing the cipher name
     * and the SSL/TLS protocol version of the current connection.
     */
   def getCipher(): CipherNameAndProtocol = js.native
-  def getPeerCertificate(): PeerCertificate = js.native
+  /**
+    * Returns an object representing the type, name, and size of parameter
+    * of an ephemeral key exchange in Perfect Forward Secrecy on a client
+    * connection. It returns an empty object when the key exchange is not
+    * ephemeral. As this is only supported on a client socket; null is
+    * returned if called on a server socket. The supported types are 'DH'
+    * and 'ECDH'. The name property is available only when type is 'ECDH'.
+    *
+    * For example: { type: 'ECDH', name: 'prime256v1', size: 256 }.
+    */
+  def getEphemeralKeyInfo(): EphemeralKeyInfo | js.Object | Null = js.native
+  /**
+    * Returns the latest Finished message that has
+    * been sent to the socket as part of a SSL/TLS handshake, or undefined
+    * if no Finished message has been sent yet.
+    *
+    * As the Finished messages are message digests of the complete
+    * handshake (with a total of 192 bits for TLS 1.0 and more for SSL
+    * 3.0), they can be used for external authentication procedures when
+    * the authentication provided by SSL/TLS is not desired or is not
+    * enough.
+    *
+    * Corresponds to the SSL_get_finished routine in OpenSSL and may be
+    * used to implement the tls-unique channel binding from RFC 5929.
+    */
+  def getFinished(): js.UndefOr[Buffer] = js.native
+  def getPeerCertificate(): PeerCertificate | DetailedPeerCertificate = js.native
   def getPeerCertificate(detailed: Boolean): PeerCertificate | DetailedPeerCertificate = js.native
   @JSName("getPeerCertificate")
-  def getPeerCertificate_Union(): PeerCertificate | DetailedPeerCertificate = js.native
+  def getPeerCertificate_PeerCertificate(): PeerCertificate = js.native
   @JSName("getPeerCertificate")
   def getPeerCertificate_false(detailed: `false`): PeerCertificate = js.native
   /**
@@ -91,24 +135,48 @@ class TLSSocket protected () extends Socket {
   @JSName("getPeerCertificate")
   def getPeerCertificate_true(detailed: `true`): DetailedPeerCertificate = js.native
   /**
+    * Returns the latest Finished message that is expected or has actually
+    * been received from the socket as part of a SSL/TLS handshake, or
+    * undefined if there is no Finished message so far.
+    *
+    * As the Finished messages are message digests of the complete
+    * handshake (with a total of 192 bits for TLS 1.0 and more for SSL
+    * 3.0), they can be used for external authentication procedures when
+    * the authentication provided by SSL/TLS is not desired or is not
+    * enough.
+    *
+    * Corresponds to the SSL_get_peer_finished routine in OpenSSL and may
+    * be used to implement the tls-unique channel binding from RFC 5929.
+    */
+  def getPeerFinished(): js.UndefOr[Buffer] = js.native
+  /**
     * Returns a string containing the negotiated SSL/TLS protocol version of the current connection.
     * The value `'unknown'` will be returned for connected sockets that have not completed the handshaking process.
     * The value `null` will be returned for server sockets or disconnected client sockets.
     * See https://www.openssl.org/docs/man1.0.2/ssl/SSL_get_version.html for more information.
     * @returns negotiated SSL/TLS protocol version of the current connection
     */
-  def getProtocol(): java.lang.String | Null = js.native
+  def getProtocol(): String | Null = js.native
   /**
     * Could be used to speed up handshake establishment when reconnecting to the server.
     * @returns ASN.1 encoded TLS session or undefined if none was negotiated.
     */
   def getSession(): js.UndefOr[Buffer] = js.native
   /**
+    * Returns a list of signature algorithms shared between the server and
+    * the client in the order of decreasing preference.
+    */
+  def getSharedSigalgs(): js.Array[String] = js.native
+  /**
     * NOTE: Works only with client TLS sockets.
     * Useful only for debugging, for session reuse provide session option to tls.connect().
     * @returns TLS session ticket or undefined if none was negotiated.
     */
   def getTLSTicket(): js.UndefOr[Buffer] = js.native
+  /**
+    * Returns true if the session was reused, false otherwise.
+    */
+  def isSessionReused(): Boolean = js.native
   @JSName("on")
   def on_OCSPResponse(event: OCSPResponse, listener: js.Function1[/* response */ Buffer, Unit]): this.type = js.native
   @JSName("on")

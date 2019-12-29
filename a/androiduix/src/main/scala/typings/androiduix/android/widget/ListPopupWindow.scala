@@ -12,7 +12,6 @@ import typings.androiduix.android.view.animation.Animation
 import typings.androiduix.android.widget.AbsListView.OnScrollListener
 import typings.androiduix.android.widget.AdapterView.OnItemClickListener
 import typings.androiduix.android.widget.AdapterView.OnItemSelectedListener
-import typings.androiduix.android.widget.ListPopupWindow.ForwardingListener
 import typings.androiduix.android.widget.PopupWindow.OnDismissListener
 import typings.androiduix.java.lang.Runnable
 import typings.std.Map

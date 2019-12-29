@@ -3,7 +3,6 @@ package typings.mendixmodelsdk
 import typings.mendixmodelsdk.distGenAppservicesMod.appservices.IAppServiceAction
 import typings.mendixmodelsdk.distGenAppservicesMod.appservices.IAppServiceActionParameter
 import typings.mendixmodelsdk.distGenAppservicesMod.appservices.IConsumedAppService
-import typings.mendixmodelsdk.distGenBaseDashModelMod.IBaseModel
 import typings.mendixmodelsdk.distGenCodeactionsMod.codeactions.ICodeAction
 import typings.mendixmodelsdk.distGenConstantsMod.constants.IConstant
 import typings.mendixmodelsdk.distGenDatasetsMod.datasets.IDataSet

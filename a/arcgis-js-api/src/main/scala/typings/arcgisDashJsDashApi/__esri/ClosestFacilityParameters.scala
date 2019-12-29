@@ -18,11 +18,11 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.complete
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.end
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.points
@@ -74,7 +74,7 @@ trait ClosestFacilityParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsLengthUnits)
     */
-  var directionsLengthUnits: centimeters | `decimal-degrees` | decimeters | feet | inches | kilometers | meters | miles | millimeters | `nautical-miles` | points | yards = js.native
+  var directionsLengthUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = js.native
   /**
     * Defines the amount of direction information returned. The default value is standard.
     *
@@ -136,7 +136,7 @@ trait ClosestFacilityParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outputGeometryPrecisionUnits)
     */
-  var outputGeometryPrecisionUnits: centimeters | `decimal-degrees` | decimeters | feet | inches | kilometers | meters | miles | millimeters | `nautical-miles` | points | yards = js.native
+  var outputGeometryPrecisionUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = js.native
   /**
     * The type of output lines to be generated in the result. The default is defined in the specific routing network layer used in your RouteTask.
     *

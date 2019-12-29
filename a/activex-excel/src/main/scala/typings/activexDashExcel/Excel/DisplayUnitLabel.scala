@@ -12,7 +12,8 @@ class DisplayUnitLabel protected () extends js.Object {
   val Border: typings.activexDashExcel.Excel.Border = js.native
   var Caption: String = js.native
   val Creator: XlCreator = js.native
-  var `Excel.DisplayUnitLabel_typekey`: DisplayUnitLabel = js.native
+  @JSName("Excel.DisplayUnitLabel_typekey")
+  var ExcelDotDisplayUnitLabel_typekey: DisplayUnitLabel = js.native
   val Fill: ChartFillFormat = js.native
   val Font: typings.activexDashExcel.Excel.Font = js.native
   val Format: ChartFormat = js.native

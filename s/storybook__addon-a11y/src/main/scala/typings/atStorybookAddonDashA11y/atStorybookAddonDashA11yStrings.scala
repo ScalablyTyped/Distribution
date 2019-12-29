@@ -30,7 +30,7 @@ object atStorybookAddonDashA11yStrings {
   sealed trait running extends js.Object
   
   @js.native
-  sealed trait `storybook/a11y` extends js.Object
+  sealed trait storybookSlasha11y extends js.Object
   
   @scala.inline
   def ADD_ELEMENT: ADD_ELEMENT = "ADD_ELEMENT".asInstanceOf[ADD_ELEMENT]
@@ -49,6 +49,6 @@ object atStorybookAddonDashA11yStrings {
   @scala.inline
   def running: running = "running".asInstanceOf[running]
   @scala.inline
-  def `storybook/a11y`: `storybook/a11y` = "storybook/a11y".asInstanceOf[`storybook/a11y`]
+  def storybookSlasha11y: storybookSlasha11y = "storybook/a11y".asInstanceOf[storybookSlasha11y]
 }
 

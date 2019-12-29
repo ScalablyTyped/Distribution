@@ -14,7 +14,8 @@ class Point protected () extends js.Object {
   val Border: typings.activexDashExcel.Excel.Border = js.native
   val Creator: XlCreator = js.native
   val DataLabel: typings.activexDashExcel.Excel.DataLabel = js.native
-  var `Excel.Point_typekey`: Point = js.native
+  @JSName("Excel.Point_typekey")
+  var ExcelDotPoint_typekey: Point = js.native
   var Explosion: Double = js.native
   val Fill: ChartFillFormat = js.native
   val Format: ChartFormat = js.native

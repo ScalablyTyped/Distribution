@@ -1,7 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +16,8 @@ trait request extends js.Object {
     * @param options The options specified by the user in the data request. See [RequestOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions) for available properties.
     *
     */
-  def esriRequest(url: String): IPromise[RequestResponse] = js.native
-  def esriRequest(url: String, options: RequestOptions): IPromise[RequestResponse] = js.native
+  def esriRequest(url: String): js.Promise[RequestResponse] = js.native
+  def esriRequest(url: String, options: RequestOptions): js.Promise[RequestResponse] = js.native
 }
 
 @JSGlobal("__esri.request")
@@ -28,7 +27,7 @@ object request
       js.Function2[
         /* url */ String, 
         /* options */ js.UndefOr[RequestOptions], 
-        IPromise[RequestResponse]
+        js.Promise[RequestResponse]
       ]
     ]
 

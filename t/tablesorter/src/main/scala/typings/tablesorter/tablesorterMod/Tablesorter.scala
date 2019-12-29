@@ -26,10 +26,10 @@ import typings.tablesorter.systemTablesorterConfigurationMod.TablesorterConfigur
 import typings.tablesorter.systemTablesorterConfigurationStoreMod.TablesorterConfigurationStore
 import typings.tablesorter.systemTablesorterHeadingMod.TablesorterHeading
 import typings.tablesorter.systemTriggerCallbackHandlerMod.TriggerCallbackHandler
+import typings.tablesorter.tablesorterBooleans.`false`
+import typings.tablesorter.tablesorterBooleans.`true`
 import typings.tablesorter.tablesorterMod._Global_.HTMLElement
 import typings.tablesorter.tablesorterMod._Global_.JQuery
-import typings.tablesorter.tablesorterNumbers.`false`
-import typings.tablesorter.tablesorterNumbers.`true`
 import typings.tablesorter.tablesorterStrings.all
 import typings.tablesorter.tablesorterStrings.dateFormat
 import typings.tablesorter.tablesorterStrings.empty

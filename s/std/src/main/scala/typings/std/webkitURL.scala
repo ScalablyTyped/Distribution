@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("webkitURL")
 @js.native
 object webkitURL
-  extends Instantiable2[/* url */ java.lang.String, (/* base */ java.lang.String) | (/* base */ URL), URL]
-     with Instantiable1[/* url */ java.lang.String, URL] {
+  extends Instantiable1[/* url */ java.lang.String, URL]
+     with Instantiable2[/* url */ java.lang.String, (/* base */ java.lang.String) | (/* base */ URL), URL] {
   def createObjectURL(`object`: js.Any): java.lang.String = js.native
   def revokeObjectURL(url: java.lang.String): Unit = js.native
 }

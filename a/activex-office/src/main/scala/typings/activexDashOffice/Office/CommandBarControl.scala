@@ -24,7 +24,8 @@ class CommandBarControl protected () extends js.Object {
   val IsPriorityDropped: Boolean = js.native
   val Left: Double = js.native
   var OLEUsage: MsoControlOLEUsage = js.native
-  var `Office.CommandBarControl_typekey`: CommandBarControl = js.native
+  @JSName("Office.CommandBarControl_typekey")
+  var OfficeDotCommandBarControl_typekey: CommandBarControl = js.native
   var OnAction: String = js.native
   var Parameter: String = js.native
   val Parent: CommandBar = js.native

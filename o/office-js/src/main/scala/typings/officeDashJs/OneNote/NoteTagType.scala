@@ -1,18 +1,6 @@
 package typings.officeDashJs.OneNote
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJs.OneNote.NoteTagType.address
-import typings.officeDashJs.OneNote.NoteTagType.contact
-import typings.officeDashJs.OneNote.NoteTagType.critical
-import typings.officeDashJs.OneNote.NoteTagType.idea
-import typings.officeDashJs.OneNote.NoteTagType.important
-import typings.officeDashJs.OneNote.NoteTagType.phoneNumber
-import typings.officeDashJs.OneNote.NoteTagType.question
-import typings.officeDashJs.OneNote.NoteTagType.toDo
-import typings.officeDashJs.OneNote.NoteTagType.toDoPriority1
-import typings.officeDashJs.OneNote.NoteTagType.toDoPriority2
-import typings.officeDashJs.OneNote.NoteTagType.unknown
-import typings.officeDashJs.OneNote.NoteTagType.website
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,9 +17,6 @@ import scala.scalajs.js.annotation._
 
 object arangodbStrings {
   @js.native
-  sealed trait `(unused)` extends HttpStatus
-  
-  @js.native
   sealed trait COMMUNICATOR_DISABLED extends ErrorName
   
   @js.native
@@ -935,6 +932,9 @@ object arangodbStrings {
   sealed trait HS512 extends JwtAlgorithm
   
   @js.native
+  sealed trait LeftparenthesisunusedRightparenthesis extends HttpStatus
+  
+  @js.native
   sealed trait OPTIONS extends HttpMethod
   
   @js.native
@@ -974,7 +974,7 @@ object arangodbStrings {
   sealed trait any extends EdgeDirection
   
   @js.native
-  sealed trait `application/json` extends js.Object
+  sealed trait applicationSlashjson extends js.Object
   
   @js.native
   sealed trait arangosearch extends js.Object
@@ -1055,7 +1055,7 @@ object arangodbStrings {
   sealed trait `http version not supported` extends HttpStatus
   
   @js.native
-  sealed trait `i_quotem a teapot` extends HttpStatus
+  sealed trait `iApostrophem a teapot` extends HttpStatus
   
   @js.native
   sealed trait id extends js.Object
@@ -1255,8 +1255,6 @@ object arangodbStrings {
   @js.native
   sealed trait `variant also negotiates` extends HttpStatus
   
-  @scala.inline
-  def `(unused)`: `(unused)` = "(unused)".asInstanceOf[`(unused)`]
   @scala.inline
   def COMMUNICATOR_DISABLED: COMMUNICATOR_DISABLED = "COMMUNICATOR_DISABLED".asInstanceOf[COMMUNICATOR_DISABLED]
   @scala.inline
@@ -1868,6 +1866,8 @@ object arangodbStrings {
   @scala.inline
   def HS512: HS512 = "HS512".asInstanceOf[HS512]
   @scala.inline
+  def LeftparenthesisunusedRightparenthesis: LeftparenthesisunusedRightparenthesis = "(unused)".asInstanceOf[LeftparenthesisunusedRightparenthesis]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
@@ -1894,7 +1894,7 @@ object arangodbStrings {
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
-  def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
+  def applicationSlashjson: applicationSlashjson = "application/json".asInstanceOf[applicationSlashjson]
   @scala.inline
   def arangosearch: arangosearch = "arangosearch".asInstanceOf[arangosearch]
   @scala.inline
@@ -1948,7 +1948,7 @@ object arangodbStrings {
   @scala.inline
   def `http version not supported`: `http version not supported` = "http version not supported".asInstanceOf[`http version not supported`]
   @scala.inline
-  def `i_quotem a teapot`: `i_quotem a teapot` = "i'm a teapot".asInstanceOf[`i_quotem a teapot`]
+  def `iApostrophem a teapot`: `iApostrophem a teapot` = "i'm a teapot".asInstanceOf[`iApostrophem a teapot`]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline

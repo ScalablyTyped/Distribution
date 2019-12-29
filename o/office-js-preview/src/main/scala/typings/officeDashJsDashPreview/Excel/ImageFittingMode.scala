@@ -1,9 +1,6 @@
 package typings.officeDashJsDashPreview.Excel
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashJsDashPreview.Excel.ImageFittingMode.fill
-import typings.officeDashJsDashPreview.Excel.ImageFittingMode.fit
-import typings.officeDashJsDashPreview.Excel.ImageFittingMode.fitAndCenter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

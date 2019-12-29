@@ -1,15 +1,6 @@
 package typings.ejDotWebDotAll.ej
 
 import org.scalablytyped.runtime.TopLevel
-import typings.ejDotWebDotAll.ej.FilterType.Contains
-import typings.ejDotWebDotAll.ej.FilterType.StartsWith
-import typings.ejDotWebDotAll.ej.filterType.EndsWith
-import typings.ejDotWebDotAll.ej.filterType.Equal
-import typings.ejDotWebDotAll.ej.filterType.GreaterThan
-import typings.ejDotWebDotAll.ej.filterType.GreaterThanOrEqual
-import typings.ejDotWebDotAll.ej.filterType.LessThan
-import typings.ejDotWebDotAll.ej.filterType.LessThanOrEqual
-import typings.ejDotWebDotAll.ej.filterType.NotEqual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,8 +65,7 @@ object filterType extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[filterType with Double] = js.native
   /* 1 */ @js.native
-  object Contains
-    extends TopLevel[typings.ejDotWebDotAll.ej.filterType.Contains with Double]
+  object Contains extends TopLevel[Contains with Double]
   
   /* 2 */ @js.native
   object EndsWith extends TopLevel[EndsWith with Double]
@@ -99,8 +89,7 @@ object filterType extends js.Object {
   object NotEqual extends TopLevel[NotEqual with Double]
   
   /* 0 */ @js.native
-  object StartsWith
-    extends TopLevel[typings.ejDotWebDotAll.ej.filterType.StartsWith with Double]
+  object StartsWith extends TopLevel[StartsWith with Double]
   
 }
 

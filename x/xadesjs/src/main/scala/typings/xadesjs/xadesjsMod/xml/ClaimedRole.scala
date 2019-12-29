@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.ClaimedRole")
 @js.native
-class ClaimedRole () extends Any
+class ClaimedRole ()
+  extends typings.xadesjs.buildTypesXmlMod.ClaimedRole
 

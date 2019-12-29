@@ -1,13 +1,6 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
 import org.scalablytyped.runtime.TopLevel
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DASH
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DASH_DOT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DOT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.LONG_DASH
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.LONG_DASH_DOT
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.SOLID
-import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

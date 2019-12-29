@@ -1,8 +1,6 @@
 package typings.tsmonad.libSrcMaybeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tsmonad.libSrcMaybeMod.MaybeType.Just
-import typings.tsmonad.libSrcMaybeMod.MaybeType.Nothing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

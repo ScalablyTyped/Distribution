@@ -4,8 +4,6 @@ import typings.d3DashColor.d3DashColorMod.Color
 import typings.d3DashColor.d3DashColorMod.ColorCommonInstance
 import typings.d3DashColor.d3DashColorMod.ColorSpaceObject
 import typings.d3DashColor.d3DashColorMod.RGBColor
-import typings.d3DashHsv.d3DashHsvMod.HSVColor
-import typings.d3DashHsv.d3DashHsvMod.HSVColorFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

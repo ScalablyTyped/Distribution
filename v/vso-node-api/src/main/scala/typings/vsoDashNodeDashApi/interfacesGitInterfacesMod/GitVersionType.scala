@@ -1,9 +1,6 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionType.Branch
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionType.Commit
-import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionType.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

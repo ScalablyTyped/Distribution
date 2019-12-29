@@ -22,7 +22,7 @@ trait IUrlMatcherFactory extends js.Object {
     *
     * @returns {IUrlMatcher} The UrlMatcher.
     */
-  def compile(pattern: String): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher = js.native
+  def compile(pattern: String): IUrlMatcher = js.native
   /**
     * Sets the default behavior when generating or matching URLs with default parameter values
     *
@@ -53,7 +53,7 @@ trait IUrlMatcherFactory extends js.Object {
     *
     * @returns {IType} The type definition
     */
-  def `type`(name: String): typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IType = js.native
+  def `type`(name: String): IType = js.native
   /**
     * Registers a custom Type object that can be used to generate URLs with typed parameters.
     *
@@ -62,22 +62,8 @@ trait IUrlMatcherFactory extends js.Object {
     *
     * @returns {IUrlMatcherFactory} Returns $urlMatcherFactoryProvider.
     */
-  def `type`(
-    name: String,
-    definition: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IType
-  ): IUrlMatcherFactory = js.native
-  def `type`(
-    name: String,
-    definition: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IType,
-    definitionFn: js.Function1[
-      /* repeated */ js.Any, 
-      typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IType
-    ]
-  ): IUrlMatcherFactory = js.native
-  def `type`(
-    name: String,
-    definition: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IType,
-    inlineAnnotedDefinitionFn: js.Array[_]
-  ): IUrlMatcherFactory = js.native
+  def `type`(name: String, definition: IType): IUrlMatcherFactory = js.native
+  def `type`(name: String, definition: IType, definitionFn: js.Function1[/* repeated */ js.Any, IType]): IUrlMatcherFactory = js.native
+  def `type`(name: String, definition: IType, inlineAnnotedDefinitionFn: js.Array[_]): IUrlMatcherFactory = js.native
 }
 

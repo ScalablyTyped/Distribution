@@ -1,10 +1,6 @@
 package typings.wonderDotJs
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wonderDotJs.distEs2015EventObjectEMouseButtonMod.EMouseButton
-import typings.wonderDotJs.distEs2015EventObjectEMouseButtonMod.EMouseButton.CENTER
-import typings.wonderDotJs.distEs2015EventObjectEMouseButtonMod.EMouseButton.LEFT
-import typings.wonderDotJs.distEs2015EventObjectEMouseButtonMod.EMouseButton.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,7 +2,6 @@ package typings.jestDashSnapshot
 
 import typings.atJestTypes.buildConfigMod.Path
 import typings.atJestTypes.buildConfigMod.ProjectConfig
-import typings.jestDashSnapshot.buildSnapshotUnderscoreResolverMod.SnapshotResolver
 import typings.jestDashSnapshot.jestDashSnapshotStrings.snap
 import scala.scalajs.js
 import scala.scalajs.js.`|`

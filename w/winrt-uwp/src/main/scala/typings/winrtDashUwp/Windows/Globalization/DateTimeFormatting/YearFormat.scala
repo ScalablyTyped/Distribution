@@ -1,10 +1,6 @@
 package typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.abbreviated
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.default
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.full
-import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

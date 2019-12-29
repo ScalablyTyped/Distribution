@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait CloseEventArgs extends js.Object {
   /** returns the TimePicker model
     */
-  var model: js.UndefOr[typings.ejDotWebDotAll.ej.DateTimePicker.Model] = js.undefined
+  var model: js.UndefOr[Model] = js.undefined
   /** returns the previously selected date time value
     */
   var prevDateTime: js.UndefOr[String] = js.undefined
@@ -21,12 +21,7 @@ trait CloseEventArgs extends js.Object {
 
 object CloseEventArgs {
   @scala.inline
-  def apply(
-    model: typings.ejDotWebDotAll.ej.DateTimePicker.Model = null,
-    prevDateTime: String = null,
-    `type`: String = null,
-    value: String = null
-  ): CloseEventArgs = {
+  def apply(model: Model = null, prevDateTime: String = null, `type`: String = null, value: String = null): CloseEventArgs = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (prevDateTime != null) __obj.updateDynamic("prevDateTime")(prevDateTime.asInstanceOf[js.Any])

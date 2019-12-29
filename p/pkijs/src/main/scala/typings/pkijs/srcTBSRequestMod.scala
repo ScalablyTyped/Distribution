@@ -1,6 +1,5 @@
 package typings.pkijs
 
-import typings.pkijs.srcTBSRequestMod.TBSRequest
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

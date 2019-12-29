@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait PageBackgroundFill extends js.Object {
   var propertyState: js.UndefOr[String] = js.undefined
-  var solidFill: js.UndefOr[typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.undefined
+  var solidFill: js.UndefOr[SolidFill] = js.undefined
   var stretchedPictureFill: js.UndefOr[StretchedPictureFill] = js.undefined
 }
 
@@ -14,7 +14,7 @@ object PageBackgroundFill {
   @scala.inline
   def apply(
     propertyState: String = null,
-    solidFill: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.SolidFill = null,
+    solidFill: SolidFill = null,
     stretchedPictureFill: StretchedPictureFill = null
   ): PageBackgroundFill = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,6 @@
 package typings.jestDashCli
 
-import typings.jestDashCli.jestDashCliNumbers.`true`
+import typings.jestDashCli.jestDashCliBooleans.`true`
 import typings.jestDashCli.jestDashCliStrings.array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

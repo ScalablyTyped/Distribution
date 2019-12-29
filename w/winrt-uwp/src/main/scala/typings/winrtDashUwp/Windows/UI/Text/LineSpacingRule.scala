@@ -1,14 +1,6 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.atLeast
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.double
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.exactly
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.multiple
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.oneAndHalf
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.percent
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.single
-import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

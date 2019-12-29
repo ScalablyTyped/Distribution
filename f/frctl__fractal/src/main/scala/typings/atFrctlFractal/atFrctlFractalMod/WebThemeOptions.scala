@@ -15,7 +15,8 @@ trait WebThemeOptions extends js.Object {
   var scripts: js.UndefOr[js.Array[String]] = js.undefined
   var skin: js.UndefOr[String] = js.undefined
   var static: js.UndefOr[Anon_Mount] = js.undefined
-  var `static.mount`: String
+  @JSName("static.mount")
+  var staticDotmount: String
   var styles: js.UndefOr[js.Array[String]] = js.undefined
   var version: js.UndefOr[String] = js.undefined
 }
@@ -24,7 +25,7 @@ object WebThemeOptions {
   @scala.inline
   def apply(
     rtl: Boolean,
-    `static.mount`: String,
+    staticDotmount: String,
     favicon: String = null,
     format: String = null,
     lang: String = null,
@@ -37,7 +38,7 @@ object WebThemeOptions {
     version: String = null
   ): WebThemeOptions = {
     val __obj = js.Dynamic.literal(rtl = rtl.asInstanceOf[js.Any])
-    __obj.updateDynamic("static.mount")(`static.mount`.asInstanceOf[js.Any])
+    __obj.updateDynamic("static.mount")(staticDotmount.asInstanceOf[js.Any])
     if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])

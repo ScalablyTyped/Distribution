@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait MultipleSelectionHandles extends Base {
   var dragged: js.Array[_]
-  var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
+  var eventManager: EventManager
   var lastSetCell: HTMLElement | Unit
   def getCurrentRangeCoords(
     selectedRange: CellRange,
@@ -33,7 +33,7 @@ object MultipleSelectionHandles {
     dragged: js.Array[_],
     enablePlugin: () => Unit,
     enabled: Boolean,
-    eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
+    eventManager: EventManager,
     getCurrentRangeCoords: (CellRange, CellCoords, String, String, String) => js.Object,
     hot: Core,
     init: () => Unit,

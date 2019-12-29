@@ -1,11 +1,5 @@
 package typings.box2d.Box2D
 
-import typings.box2d.Box2D.Common.Math.b2Mat22
-import typings.box2d.Box2D.Common.Math.b2Mat33
-import typings.box2d.Box2D.Common.Math.b2Sweep
-import typings.box2d.Box2D.Common.Math.b2Transform
-import typings.box2d.Box2D.Common.Math.b2Vec2
-import typings.box2d.Box2D.Common.Math.b2Vec3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

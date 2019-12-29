@@ -1,8 +1,5 @@
 package typings.elgamal
 
-import typings.elgamal.elgamalMod.DecryptedValue
-import typings.elgamal.elgamalMod.ElGamal
-import typings.elgamal.elgamalMod.EncryptedValue
 import typings.jsbn.jsbnMod.BigInteger
 import typings.jsbn.jsbnMod.RandomGenerator
 import typings.std.Error

@@ -2,7 +2,6 @@ package typings.dayjs.pluginQuarterOfYearMod
 
 import typings.dayjs.dayjsMod.ConfigType
 import typings.dayjs.dayjsMod.QUnitType
-import typings.dayjs.pluginQuarterOfYearMod.dayjsMod.Dayjs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

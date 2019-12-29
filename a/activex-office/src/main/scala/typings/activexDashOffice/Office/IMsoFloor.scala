@@ -14,7 +14,8 @@ class IMsoFloor protected () extends js.Object {
   val Format: IMsoChartFormat = js.native
   val Interior: IMsoInterior = js.native
   val Name: String = js.native
-  var `Office.IMsoFloor_typekey`: IMsoFloor = js.native
+  @JSName("Office.IMsoFloor_typekey")
+  var OfficeDotIMsoFloor_typekey: IMsoFloor = js.native
   val Parent: js.Any = js.native
   var PictureType: js.Any = js.native
   var Thickness: Double = js.native

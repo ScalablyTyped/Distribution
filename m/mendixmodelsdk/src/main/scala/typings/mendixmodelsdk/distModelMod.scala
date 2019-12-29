@@ -2,8 +2,6 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.BaseModel
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IModule
-import typings.mendixmodelsdk.distModelMod.IModel
-import typings.mendixmodelsdk.distModelMod.Model
 import typings.mendixmodelsdk.distModelSdkClientImplMod.ModelSdkClientImpl
 import typings.mendixmodelsdk.distSdkConfigurationMod.configuration.ISdkConfig
 import scala.scalajs.js

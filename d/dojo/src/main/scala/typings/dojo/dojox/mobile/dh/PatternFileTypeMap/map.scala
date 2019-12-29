@@ -13,19 +13,21 @@ trait map extends js.Object {
   /**
     *
     */
-  var `.*.html`: String
+  @JSName(".*.html")
+  var DotAsteriskDothtml: String
   /**
     *
     */
-  var `.*.json`: String
+  @JSName(".*.json")
+  var DotAsteriskDotjson: String
 }
 
 object map {
   @scala.inline
-  def apply(`.*.html`: String, `.*.json`: String): map = {
+  def apply(DotAsteriskDothtml: String, DotAsteriskDotjson: String): map = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic(".*.html")(`.*.html`.asInstanceOf[js.Any])
-    __obj.updateDynamic(".*.json")(`.*.json`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".*.html")(DotAsteriskDothtml.asInstanceOf[js.Any])
+    __obj.updateDynamic(".*.json")(DotAsteriskDotjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[map]
   }
 }

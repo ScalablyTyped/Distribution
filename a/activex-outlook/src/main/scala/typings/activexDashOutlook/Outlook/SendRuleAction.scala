@@ -11,7 +11,8 @@ class SendRuleAction protected () extends js.Object {
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
   val Class: OlObjectClass = js.native
   var Enabled: Boolean = js.native
-  var `Outlook.SendRuleAction_typekey`: SendRuleAction = js.native
+  @JSName("Outlook.SendRuleAction_typekey")
+  var OutlookDotSendRuleAction_typekey: SendRuleAction = js.native
   val Parent: js.Any = js.native
   val Recipients: typings.activexDashOutlook.Outlook.Recipients = js.native
   val Session: NameSpace = js.native

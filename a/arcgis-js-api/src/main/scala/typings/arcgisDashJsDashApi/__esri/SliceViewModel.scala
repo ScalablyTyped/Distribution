@@ -15,10 +15,12 @@ trait SliceViewModel extends Accessor {
     * Indicates whether the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) and layers that are draped on the ground surface are excluded from the slice.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludeGroundSurface)
+    *
+    * @default false
     */
   var excludeGroundSurface: Boolean = js.native
   /**
-    * Add layers to this collection to exclude them from the slice. Layers that are draped on the ground surface are not affected by this property and can be excluded from the slice using [excludeGroundSurface](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludeGroundSurface).
+    * Add layers to this collection to exclude them from the slice. Layers that are draped on the ground surface are not affected by this property
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludedLayers)
     */
@@ -39,6 +41,12 @@ trait SliceViewModel extends Accessor {
     * @default disabled
     */
   val state: disabled | ready | slicing | sliced = js.native
+  /**
+    * The view from which the widget will operate.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#view)
+    */
+  var view: SceneView = js.native
   /**
     * Clears the current slice.
     *

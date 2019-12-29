@@ -1,7 +1,6 @@
 package typings.rmcDashCascader
 
 import typings.react.reactMod.Component
-import typings.rmcDashCascader.libCascaderMod.Cascader
 import typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

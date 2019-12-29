@@ -4,8 +4,8 @@ import typings.twilioDashChat.libChannelMod.Channel.NotificationLevel
 import typings.twilioDashChat.libChannelMod.Channel.Status
 import typings.twilioDashChat.libDataChannelsMod.Channels.DataSource
 import typings.twilioDashChat.libMemberMod.Member.Type
+import typings.twilioDashChat.libMessageMod.Message.UpdateReason
 import typings.twilioDashChat.libUserMod.User.SubscriptionState
-import typings.twilioDashChat.libUserMod.User.UpdateReason
 import typings.twilioDashChat.twilioDashChatMod.Client.ChannelSortingCriteria
 import typings.twilioDashChat.twilioDashChatMod.Client.ChannelSortingOrder
 import typings.twilioDashChat.twilioDashChatMod.Client._LogLevel
@@ -21,16 +21,14 @@ object twilioDashChatStrings {
   sealed trait attributes
     extends UpdateReason
        with typings.twilioDashChat.libMemberMod.Member.UpdateReason
+       with typings.twilioDashChat.libUserMod.User.UpdateReason
        with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
-       with typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
-  sealed trait author
-    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
+  sealed trait author extends UpdateReason
   
   @js.native
-  sealed trait body
-    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
+  sealed trait body extends UpdateReason
   
   @js.native
   sealed trait chat
@@ -48,9 +46,9 @@ object twilioDashChatStrings {
   
   @js.native
   sealed trait dateUpdated
-    extends typings.twilioDashChat.libMemberMod.Member.UpdateReason
+    extends UpdateReason
+       with typings.twilioDashChat.libMemberMod.Member.UpdateReason
        with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
-       with typings.twilioDashChat.libMessageMod.Message.UpdateReason
   
   @js.native
   sealed trait debug extends _LogLevel
@@ -67,7 +65,7 @@ object twilioDashChatStrings {
   @js.native
   sealed trait friendlyName
     extends ChannelSortingCriteria
-       with UpdateReason
+       with typings.twilioDashChat.libUserMod.User.UpdateReason
        with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
@@ -100,8 +98,7 @@ object twilioDashChatStrings {
        with typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
-  sealed trait lastUpdatedBy
-    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
+  sealed trait lastUpdatedBy extends UpdateReason
   
   @js.native
   sealed trait media
@@ -111,14 +108,16 @@ object twilioDashChatStrings {
   sealed trait muted extends NotificationLevel
   
   @js.native
-  sealed trait notifiable extends UpdateReason
+  sealed trait notifiable
+    extends typings.twilioDashChat.libUserMod.User.UpdateReason
   
   @js.native
   sealed trait notificationLevel
     extends typings.twilioDashChat.libChannelMod.Channel.UpdateReason
   
   @js.native
-  sealed trait online extends UpdateReason
+  sealed trait online
+    extends typings.twilioDashChat.libUserMod.User.UpdateReason
   
   @js.native
   sealed trait `private`
@@ -156,33 +155,32 @@ object twilioDashChatStrings {
     extends typings.twilioDashChat.libMessageMod.Message.Type
   
   @js.native
-  sealed trait timestamp
-    extends typings.twilioDashChat.libMessageMod.Message.UpdateReason
+  sealed trait timestamp extends UpdateReason
   
   @js.native
   sealed trait trace extends _LogLevel
   
   @js.native
-  sealed trait twilioDOTchannelDOTadded_to_channel
+  sealed trait twilioDotchannelDotadded_to_channel
     extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
-  sealed trait twilioDOTchannelDOTconsumption_update extends js.Object
+  sealed trait twilioDotchannelDotconsumption_update extends js.Object
   
   @js.native
-  sealed trait twilioDOTchannelDOTinvited_to_channel
+  sealed trait twilioDotchannelDotinvited_to_channel
     extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
-  sealed trait twilioDOTchannelDOTnew_message
+  sealed trait twilioDotchannelDotnew_message
     extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
-  sealed trait twilioDOTchannelDOTremoved_from_channel
+  sealed trait twilioDotchannelDotremoved_from_channel
     extends typings.twilioDashChat.libPushnotificationMod.PushNotification.Type
   
   @js.native
-  sealed trait twilioDOTipmsgDOTtyping_indicator extends js.Object
+  sealed trait twilioDotipmsgDottyping_indicator extends js.Object
   
   @js.native
   sealed trait uniqueName
@@ -280,17 +278,17 @@ object twilioDashChatStrings {
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
   @scala.inline
-  def twilioDOTchannelDOTadded_to_channel: twilioDOTchannelDOTadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[twilioDOTchannelDOTadded_to_channel]
+  def twilioDotchannelDotadded_to_channel: twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[twilioDotchannelDotadded_to_channel]
   @scala.inline
-  def twilioDOTchannelDOTconsumption_update: twilioDOTchannelDOTconsumption_update = "twilio.channel.consumption_update".asInstanceOf[twilioDOTchannelDOTconsumption_update]
+  def twilioDotchannelDotconsumption_update: twilioDotchannelDotconsumption_update = "twilio.channel.consumption_update".asInstanceOf[twilioDotchannelDotconsumption_update]
   @scala.inline
-  def twilioDOTchannelDOTinvited_to_channel: twilioDOTchannelDOTinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[twilioDOTchannelDOTinvited_to_channel]
+  def twilioDotchannelDotinvited_to_channel: twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[twilioDotchannelDotinvited_to_channel]
   @scala.inline
-  def twilioDOTchannelDOTnew_message: twilioDOTchannelDOTnew_message = "twilio.channel.new_message".asInstanceOf[twilioDOTchannelDOTnew_message]
+  def twilioDotchannelDotnew_message: twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[twilioDotchannelDotnew_message]
   @scala.inline
-  def twilioDOTchannelDOTremoved_from_channel: twilioDOTchannelDOTremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[twilioDOTchannelDOTremoved_from_channel]
+  def twilioDotchannelDotremoved_from_channel: twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[twilioDotchannelDotremoved_from_channel]
   @scala.inline
-  def twilioDOTipmsgDOTtyping_indicator: twilioDOTipmsgDOTtyping_indicator = "twilio.ipmsg.typing_indicator".asInstanceOf[twilioDOTipmsgDOTtyping_indicator]
+  def twilioDotipmsgDottyping_indicator: twilioDotipmsgDottyping_indicator = "twilio.ipmsg.typing_indicator".asInstanceOf[twilioDotipmsgDottyping_indicator]
   @scala.inline
   def uniqueName: uniqueName = "uniqueName".asInstanceOf[uniqueName]
   @scala.inline

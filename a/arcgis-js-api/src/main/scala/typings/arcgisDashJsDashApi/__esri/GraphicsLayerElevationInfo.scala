@@ -1,5 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`absolute-height`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`on-the-ground`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`relative-to-ground`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`relative-to-scene`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles_
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -26,7 +36,7 @@ trait GraphicsLayerElevationInfo extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#elevationInfo)
     */
-  var mode: String
+  var mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`
   /**
     * An elevation offset, which is added to the vertical position of the graphic. If `unit` is not defined, the offset is in `meters`. When `mode = "on-the-ground"`, this property has no effect.
     *
@@ -34,11 +44,11 @@ trait GraphicsLayerElevationInfo extends Object {
     */
   var offset: js.UndefOr[Double] = js.undefined
   /**
-    * The unit for `featureExpressionInfo` and `offset` values. It doesn't apply to z-values.  **Possible Values:** feet | meters | kilometers | miles | us-feet | yards
+    * The unit for `featureExpressionInfo` and `offset` values. It doesn't apply to z-values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#elevationInfo)
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards] = js.undefined
 }
 
 object GraphicsLayerElevationInfo {
@@ -46,11 +56,11 @@ object GraphicsLayerElevationInfo {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    mode: String,
+    mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`,
     propertyIsEnumerable: PropertyKey => Boolean,
     featureExpressionInfo: GraphicsLayerElevationInfoFeatureExpressionInfo = null,
     offset: Int | Double = null,
-    unit: String = null
+    unit: feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards = null
   ): GraphicsLayerElevationInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (featureExpressionInfo != null) __obj.updateDynamic("featureExpressionInfo")(featureExpressionInfo.asInstanceOf[js.Any])

@@ -33,10 +33,10 @@ trait LevelUp[DB, Iterator] extends EventEmitter {
     options: js.Any,
     callback: js.Function1[/* err */ js.UndefOr[js.Any], _]
   ): Unit = js.native
-  def close(): js.Promise[Unit] = js.native
+  def close(): Unit = js.native
   def close(callback: ErrorCallback): Unit = js.native
   @JSName("close")
-  def close_Unit(): Unit = js.native
+  def close_Promise(): js.Promise[Unit] = js.native
   def createKeyStream(): ReadableStream = js.native
   def createKeyStream(options: AbstractIteratorOptions[_]): ReadableStream = js.native
   def createReadStream(): ReadableStream = js.native
@@ -80,9 +80,9 @@ trait LevelUp[DB, Iterator] extends EventEmitter {
   def on_put(event: put, cb: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_ready(event: ready, cb: js.Function0[Unit]): this.type = js.native
-  def open(): js.Promise[Unit] = js.native
+  def open(): Unit = js.native
   def open(callback: ErrorCallback): Unit = js.native
   @JSName("open")
-  def open_Unit(): Unit = js.native
+  def open_Promise(): js.Promise[Unit] = js.native
 }
 

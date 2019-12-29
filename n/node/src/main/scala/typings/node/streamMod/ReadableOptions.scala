@@ -1,6 +1,6 @@
 package typings.node.streamMod
 
-import typings.node.Error
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait ReadableOptions extends js.Object {
       Unit
     ]
   ] = js.undefined
-  var encoding: js.UndefOr[java.lang.String] = js.undefined
+  var encoding: js.UndefOr[String] = js.undefined
   var highWaterMark: js.UndefOr[Double] = js.undefined
   var objectMode: js.UndefOr[Boolean] = js.undefined
   var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.undefined
@@ -31,7 +31,7 @@ object ReadableOptions {
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ] = null,
-    encoding: java.lang.String = null,
+    encoding: String = null,
     highWaterMark: Int | Double = null,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null

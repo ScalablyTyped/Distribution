@@ -1,7 +1,7 @@
 package typings.rollup.rollupMod
 
 import typings.node.Buffer
-import typings.rollup.rollupNumbers.`true`
+import typings.rollup.rollupBooleans.`true`
 import typings.rollup.rollupStrings.asset
 import scala.scalajs.js
 import scala.scalajs.js.`|`

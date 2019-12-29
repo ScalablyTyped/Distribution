@@ -1,13 +1,6 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.TopLevel
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.deletedItems
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.drafts
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.inbox
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.none
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.outbox
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.root
-import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.sent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

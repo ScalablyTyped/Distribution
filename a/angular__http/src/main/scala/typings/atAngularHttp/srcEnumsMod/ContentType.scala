@@ -1,13 +1,6 @@
 package typings.atAngularHttp.srcEnumsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atAngularHttp.srcEnumsMod.ContentType.ARRAY_BUFFER
-import typings.atAngularHttp.srcEnumsMod.ContentType.BLOB
-import typings.atAngularHttp.srcEnumsMod.ContentType.FORM
-import typings.atAngularHttp.srcEnumsMod.ContentType.FORM_DATA
-import typings.atAngularHttp.srcEnumsMod.ContentType.JSON
-import typings.atAngularHttp.srcEnumsMod.ContentType.NONE
-import typings.atAngularHttp.srcEnumsMod.ContentType.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

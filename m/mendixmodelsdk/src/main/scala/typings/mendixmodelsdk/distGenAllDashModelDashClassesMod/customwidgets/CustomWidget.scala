@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.customwidgets
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCustomwidgetsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenNativepagesMod.nativepages.NativeLayout
 import typings.mendixmodelsdk.distGenNativepagesMod.nativepages.NativeLayoutCallArgument
 import typings.mendixmodelsdk.distGenPagesMod.pages.BuildingBlock
@@ -54,7 +55,7 @@ class CustomWidget protected ()
 @js.native
 object CustomWidget extends js.Object {
   var structureTypeName: String = js.native
-  var versionInfo: typings.mendixmodelsdk.distGenCustomwidgetsMod.StructureVersionInfo = js.native
+  var versionInfo: StructureVersionInfo = js.native
   /**
     * Creates and returns a new CustomWidget instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".

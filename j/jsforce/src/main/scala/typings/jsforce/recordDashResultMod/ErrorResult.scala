@@ -1,6 +1,6 @@
 package typings.jsforce.recordDashResultMod
 
-import typings.jsforce.jsforceNumbers.`false`
+import typings.jsforce.jsforceBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

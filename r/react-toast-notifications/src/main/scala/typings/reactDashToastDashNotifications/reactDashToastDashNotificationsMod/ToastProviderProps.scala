@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ToastProviderProps extends js.Object {
+  var autoDismiss: js.UndefOr[Boolean | Double] = js.undefined
   var autoDismissTimeout: js.UndefOr[Double] = js.undefined
   var children: ReactNode
   var components: js.UndefOr[Anon_Toast] = js.undefined
@@ -17,6 +18,7 @@ trait ToastProviderProps extends js.Object {
 object ToastProviderProps {
   @scala.inline
   def apply(
+    autoDismiss: Boolean | Double = null,
     autoDismissTimeout: Int | Double = null,
     children: ReactNode = null,
     components: Anon_Toast = null,
@@ -24,6 +26,7 @@ object ToastProviderProps {
     transitionDuration: Int | Double = null
   ): ToastProviderProps = {
     val __obj = js.Dynamic.literal()
+    if (autoDismiss != null) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
     if (autoDismissTimeout != null) __obj.updateDynamic("autoDismissTimeout")(autoDismissTimeout.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])

@@ -1,9 +1,6 @@
 package typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.AdmissionControlStatusCode.ACCEPTED
-import typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.AdmissionControlStatusCode.BLACKLISTED
-import typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.AdmissionControlStatusCode.REJECTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

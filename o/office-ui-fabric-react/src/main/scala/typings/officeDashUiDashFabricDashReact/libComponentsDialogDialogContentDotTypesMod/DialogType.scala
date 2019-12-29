@@ -1,9 +1,6 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.close
-import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.largeHeader
-import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
